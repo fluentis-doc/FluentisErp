@@ -1,9 +1,7 @@
 ---
-title: Origine Contatto
+title: origine contatto
 sidebar_position: 4
 ---
 
-E' una tabella descrittiva per indicare da dove ha avuto **Origine** un contatto del CRM e può essere utilizzata nei *Contatti* del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione dell’origine, e da una griglia in cui appunto verranno elencati tutte le origini inserite.
-
-
+Es una tabla descriptiva para indicar de dónde ha tenido **origine** un contacto del CRM y se puede utilizar en los *contatti* del CRM. Es común a todas las empresas presentes en la base de datos y está constituida por una simple tabla de código/descripción.  
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción del origen, y por una cuadrícula en la que, efectivamente, se enumerarán todos los orígenes introducidos.

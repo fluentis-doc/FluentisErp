@@ -1,17 +1,17 @@
 ---
-title: Associazione tipi listini di vendita
+title: associazione tipi listini di vendita
 sidebar_position: 1
 ---
 
-In questa procedura sono visualizzate le associazioni dei listini di vendita collegate alle categorie commerciali.     
-Nella prima griglia sono presenti i riferimenti dell'associazione e la categoria commerciale collegata. Questo legame indica che il gruppo di tipologie di listini facente parte dell'[Associazione](/docs/sales/sales-price-list/procedures/category-association) è valido per la categoria commerciale scelta.      
-Nella seconda griglia, invece, è possibile inserire degli **Sconti** validi per l'associazione selezionata nella prima griglia.         
+En este procedimiento se visualizan las asociaciones de listas de venta vinculadas a las categorías comerciales.    
+En la primera cuadrícula están los referentes de la asociación y la categoría comercial relacionada. Este vínculo indica que el grupo de tipos de listas que forma parte de la [Asociación (Associazione)](/docs/sales/sales-price-list/procedures/category-association) es válido para la categoría comercial elegida.    
+En la segunda cuadrícula, en cambio, es posible ingresar **sconti** válidos para la asociación seleccionada en la primera cuadrícula.         
 
-Facendo doppio click su una riga della prima griglia, è possibile aprire in modifica l'**Associazione**.      
-Nella maschera che si apre è possibile inserire nella parte superiore il **Tipo associazione**, formato da un codice e una descrizione, e una **Data inizio validità** da proporre nei listini. Sono presenti poi dei bottoni per proporre priorità e sconto nelle righe listino.       
-Nella griglia si inseriscono le tipologie di listino da considerare in questa associazione. E' possibile inserire manualmente le tipologie oppure proporre i listini generali con il bottone della ribbon bar **Proponi i listini generali**.      
-Il flag **Predefinito** indica che tra tutte questa tipologia è di default.     
-Il flag **Se stesso** permette di considerare un listino personalizzato in anagrafica cliente, quando avverrà l'associazione.     
+Haciendo doble clic en una fila de la primera cuadrícula, es posible abrir para modificar la **associazione**.    
+En la máscara que se abre, se puede ingresar en la parte superior el **tipo associazione**, compuesto por un código y una descripción, y una **data inizio validità** que se propondrá en las listas. Luego hay botones para proponer prioridad y descuento en las filas de la lista.       
+En la cuadrícula se ingresan los tipos de lista a considerar en esta asociación. Es posible ingresar manualmente los tipos o proponer las listas generales con el botón de la barra de ribbon **proponi i listini generali**.      
+El indicador **predefinito** indica que entre todos, este tipo es el predeterminado.     
+El indicador **se stesso** permite considerar una lista personalizada en el registro del cliente, cuando se realice la asociación.     
 
-A questo punto il gruppo di tipologie di listino presenti nell'associazione risulta valido per la categoria commerciale inserita.
-Se necessario associare massivamente queste tipologie di listino nell'anagrafica cliente, si utilizza la procedura [Associazione listini clienti per categoria commerciale](/docs/sales/sales-price-list/procedures/category-association).
+En este punto, el grupo de tipos de lista presentes en la asociación resulta válido para la categoría comercial ingresada.  
+Si es necesario asociar masivamente estos tipos de lista en el registro del cliente, se utiliza el procedimiento [Asociación de listas de clientes por categoría comercial (Associazione listini clienti per categoria commerciale)](/docs/sales/sales-price-list/procedures/category-association).

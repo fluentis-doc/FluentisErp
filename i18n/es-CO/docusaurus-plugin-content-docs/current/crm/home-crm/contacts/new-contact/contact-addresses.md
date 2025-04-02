@@ -1,32 +1,32 @@
 ---
-title: Indirizzi Contatto
+title: Direcciones de Contacto (Indirizzi Contatto)
 sidebar_position: 4
 ---
 
-Questa è la terza tab dei **Contatti CRM**.
+Esta es la tercera pestaña de **contatti crm**.
 
-In questa tab è possibile inserire e visualizzare eventuali indirizzi alternativi rispetto a quello principale indicato sul contatto. Ogni indirizzo è composto dai seguenti campi:
+En esta pestaña es posible ingresar y visualizar direcciones alternativas respecto a la principal indicada en el contacto. Cada dirección consta de los siguientes campos:
 
-**Descrizione**: campo a compilazione libera.
+**descrizione**: campo de libre llenado.
 
-**Telefono**: è il numero di telefono relativo all’indirizzo indicato.
+**telefono**: es el número de teléfono relacionado con la dirección indicada.
 
-**Fax**: è il numero di fax relativo all’indirizzo indicato.
+**fax**: es el número de fax relacionado con la dirección indicada.
 
-**Email**: è l’indirizzo mail associato all’indirizzo indicato.
+**email**: es la dirección de correo electrónico asociada con la dirección indicada.
 
-**Sito web**: è il sito web associato all’indirizzo indicato.
+**sito web**: es el sitio web asociado con la dirección indicada.
 
-**Tipo indirizzo**: è la tipologia di indirizzo a cui fare riferimento, come da [tabella](/docs/configurations/tables/general-settings/address-types).
+**tipo indirizzo**: es la tipología de dirección a la que hacer referencia, como se indica en la [tabla (tabella)](/docs/configurations/tables/general-settings/address-types).
 
-**Indirizzo**: è l’indirizzo effettivo.
+**indirizzo**: es la dirección efectiva.
 
-**CAP**: è il codice di avviamento postale relativo all’indirizzo.
+**cap**: es el código de aviamiento postal relacionado con la dirección.
 
-**Città**: è la città relativa all’indirizzo.
+**città**: es la ciudad relacionada con la dirección.
 
-**Provincia**: è la provincia relativa all’indirizzo.
+**provincia**: es la provincia relacionada con la dirección.
 
-**Nazione**: è la nazione riferita all’indirizzo.
+**nazione**: es la nación referida a la dirección.
 
-**Regione**: è la regione riferita all’indirizzo.
+**regione**: es la región referida a la dirección.

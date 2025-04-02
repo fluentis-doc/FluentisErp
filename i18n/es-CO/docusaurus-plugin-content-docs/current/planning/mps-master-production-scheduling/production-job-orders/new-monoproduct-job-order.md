@@ -1,86 +1,85 @@
 ---
-title: Commessa Monoprodotto
+title: Orden de Producto Único (Commessa Monoprodotto)
 sidebar_position: 4
 ---
 
-La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sull'pulsante **Inserisci commessa**.  
+El formulario se abre a través de la ruta **Planificación > Órdenes de producción (Pianificazione > Commesse di produzione)** haciendo clic en el botón **inserisci commessa** en el formulario **commesse di produzione**.  
 
-## Pulsanti specifici
+## Botones específicos
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;      
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): a través de este botón es posible abrir la pantalla relacionada con los parámetros MRP del artículo;  
+> [Lista de materiales](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite abrir la pantalla relacionada con la lista de materiales del artículo;  
+> [Ciclos de trabajo](/docs/erp-home/registers/production/routes/new-route): permite visualizar el ciclo de trabajo y las fases de producción relacionadas con el artículo.
 
-## Gestione commesse monoprodotto
+## Gestión de órdenes de producto único (Gestione commesse monoprodotto)
 
-All'interno di questo tab si vanno ad indicare i dati principali che deve contenere la commessa di produzione.
+Dentro de esta pestaña se indican los principales datos que debe contener la orden de producción.
 
-**Tipo commessa**: viene proposto il tipo predefinito come tipo di default con il *codice standard CP* (che indica la commessa di produzione) presente nella tabella [Tipo documenti](/docs/configurations/tables/production/documents-types/);    
+**tipo commessa**: se propone el tipo predeterminado como tipo por defecto con el *código estándar CP* (que indica la orden de producción) presente en la tabla [Tipo de documentos](/docs/configurations/tables/production/documents-types/);  
 
-**Numero**: indica il numero progressivo della commessa, che viene proposto in automatico;     
+**numero**: indica el número secuencial de la orden, que se propone automáticamente;  
 
-**Anno**: viene proposto in automatico quello corrente;   
+**anno**: se propone automáticamente el actual;  
 
-**Cliente**: indica i riferimenti di conto / sottoconto e descrizione del cliente;    
+**cliente**: indica las referencias de cuenta / subcuenta y la descripción del cliente;  
 
-**Data**: viene proposta in automatico quella corrente;        
+**data**: se propone automáticamente la actual;  
 
-**Tassativa**: se attivo, rende tassativa la commessa e tutti gli ordini pianificati generati da questa saranno tassativi e verranno considerati nella [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling);    
+**tassativa**: si está activo, hace que la orden sea obligatoria y todos los pedidos planificados generados por esta serán obligatorios y se considerarán en la [Programación con capacidad finita (Schedulazione a capacità finita)](/docs/planning/ms-master-scheduling/finite-capacityscheduling);  
 
-**Stato commessa**: il sistema in automatico propone come *Non esaminata*, stato che la commessa assume appena creata;   
+**stato commessa**: el sistema propone automáticamente como *non esaminata*, estado que la orden asume apenas se crea;  
 
-Gli altri stati che può assumere sono:
+Los otros estados que puede asumir son:
 
-- **Pianificata**: la commessa passa in questo stato dopo che ha subito il processo di Pianificazione  Generale;  
-- **Lanciata**: la commessa passa in questo stato dopo che almeno uno degli ordini pianificati di produzione da essa generati durante la [Pianificazione Generale](/docs/planning/ms-master-scheduling/general-schedule) sono stati rilasciati (non devono essere stati rilasciati altri ordini pianificati di tipo acquisto o conto lavoro altrimenti la commessa passa in stato esecutivo);      
-- **Esecutiva**: la commessa passa in questo stato dopo che almeno uno degli ordini di produzione da essa generati è stato rilasciato ed è diventato esecutivo, oppure dopo che almeno uno degli ordini pianificati di acquisto o conto lavoro da essa generati è stato rilasciato;   
-- **Evasa**: la commessa passa in questo stato dopo che l'ordine di livello uno generato per l'articolo oggetto della commessa è passato in stato *Evaso*;   
-- **Storicizzata**: la commessa può essere messa in questo stato manualmente per fare in modo che non esca più quando si effettua una ricerca delle commesse *Evase*;  
-- **Annullata**: la commessa può essere messa in questo stato manualmente, anziché eliminarla del tutto, per indicare che la commessa, che inizialmente era stata prevista, non è poi stata portata in produzione.
+- **pianificata**: la orden pasa a este estado después de haber sido sometida al proceso de Planificación General;  
+- **lanciata**: la orden pasa a este estado después de que al menos uno de los pedidos planificados de producción generados a partir de ella durante la [Planificación General (Pianificazione Generale)](/docs/planning/ms-master-scheduling/general-schedule) haya sido liberado (no deben haberse liberado otros pedidos planificados de tipo compra o trabajo por encargo, de lo contrario la orden pasa a estado ejecutivo);  
+- **esecutiva**: la orden pasa a este estado después de que al menos uno de los pedidos de producción generados haya sido liberado y ha pasado a ser ejecutivo, o después de que al menos uno de los pedidos planificados de compra o trabajo por encargo generados haya sido liberado;  
+- **evasa**: la orden pasa a este estado después de que el pedido de nivel uno generado para el artículo objeto de la orden haya pasado a estado *evaso*;  
+- **storicizzata**: la orden puede ser puesta en este estado manualmente para asegurarse de que no aparezca más cuando se realiza una búsqueda de las órdenes *evase*;  
+- **annullata**: la orden puede ser puesta en este estado manualmente, en lugar de eliminarla por completo, para indicar que la orden, que inicialmente había sido prevista, no se ha llevado a producción.
 
-**Descrizione**: permette di inserire una descrizione relativa alla commessa;        
+**descrizione**: permite ingresar una descripción relacionada con la orden;  
 
-**Tipo approvvigionamento**: generalmente coincide con il tipo di approvvigionamento dell'articolo inserito nella commessa di produzione. Il tipo di approvvigionamento dell'articolo viene indicato all'interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) di quest'ultimo;     
+**tipo approvvigionamento**: generalmente coincide con el tipo de aprovisionamiento del artículo ingresado en la orden de producción. El tipo de aprovisionamiento del artículo se indica dentro de los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) de este último;  
 
-**Priorità approvvigionamento**: indica la priorità dell'approvvigionamento;           
-       
-**Progetti**: indica il progetto in cui è inserita la commessa;       
+**priorità approvvigionamento**: indica la prioridad del aprovisionamiento;  
 
-**Sito Produzione**: indica il sito di produzione in cui verrà prodotta la commessa. Su questo campo è presente un controllo che, nel caso in cui la commessa nasca da un ordine cliente, verifica che il magazzino indicato sulla riga dell’ordine cliente appartenga allo stesso sito produttivo indicato nella commessa di produzione.  
+**progetti**: indica el proyecto en el que está inserta la orden;  
 
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;      
+**sito produzione**: indica el sitio de producción en el que se producirá la orden. En este campo hay un control que, en caso de que la orden provenga de un pedido de cliente, verifica que el almacén indicado en la línea del pedido de cliente pertenezca al mismo sitio productivo indicado en la orden de producción.  
 
-**Data suggerita**: un campo in cui compare la data suggerita dal sistema nel caso in cui l'utente abbia schedulato la commessa utilizzando il parametro *Controlla documenti in ritardo con ATP* e avendo impostato, sempre nei parametri di *Pianificazione generale*, una *Data Inizio MS* (Master Scheduling). La data suggerita è quella che poi l'utente ha la facoltà di decidere che diventi la data di prevista fine della commessa;
+**data merce pronta**: en esta columna se muestra la fecha de la mercancía lista que se ha establecido en la línea del pedido de cliente del cual se expone el detalle;  
 
-**Data lavorazione prevista Inizio/Fine**: in questi campi compaiono le date di previsto inizio/fine della *Commessa di produzione*. Fino a quando la Commessa di Produzione resta in stato *Non esaminata*, queste date sono identiche tra loro ed uguali alla data di merce pronta della riga dell'Ordine Cliente da cui la commessa è stata generata, oppure uguali alla data di fine della Previsione di Vendita da cui la commessa è stata generata. Dopo che la Commessa di Produzione è stata schedulata, la data di previsto inizio della commessa coincide con la data di previsto inizio del primo ordine pianificato che viene generato dalla schedulazione della commessa. Infine, si ricorda che in caso di inserimento manuale della Commessa di Produzione, l'utente è tenuto ad inserire questo dato manualmente, pena l'impossibilità di salvare la commessa stessa;
+**data suggerita**: un campo en el que aparece la fecha sugerida por el sistema en caso de que el usuario haya programado la orden utilizando el parámetro *Verificar documentos atrasados con ATP* y habiendo establecido, también en los parámetros de *Programación general*, una *Fecha de Inicio MS* (Master Scheduling). La fecha sugerida es la que el usuario tiene la facultad de decidir si se convierte en la fecha de finalización prevista de la orden;
 
-**Data Lavorazione effettiva Inizio/Fine**: in questi campi compaiono le date di Inizio/Fine della lavorazione effettiva, cioè rispettivamente la data della prima segnalazione di produzione di un ordine di produzione generato dalla commessa e la data dell'ultima segnalazione di produzione che ha causato la chiusura definitiva dell'ordine di produzione il cui articolo è lo stesso della Commessa di Produzione. Ovviamente la data di effettiva fine è presente solo nel caso in cui la commessa si trovi nello stato di *Evasa*;
+**Fecha de trabajo prevista Inicio/Fín (Data lavorazione prevista Inizio/Fine)**: en estos campos aparecen las fechas de previsto inicio/fín de la *commessa di produzione*. Mientras la Orden de Producción esté en estado *non esaminata*, estas fechas son idénticas entre sí y iguales a la fecha de mercancía lista de la línea del Pedido de Cliente a partir del cual se generó la orden, o iguales a la fecha de fin de la Previsión de Venta a partir de la cual se generó la orden. Después de que la Orden de Producción ha sido programada, la fecha de previsto inicio de la orden coincide con la fecha de previsto inicio del primer pedido planificado que se genera a partir de la programación de la orden. Finalmente, se recuerda que en caso de inserción manual de la Orden de Producción, el usuario debe ingresar este dato manualmente, de lo contrario no podrá guardar la orden;  
 
-*Campi obbligatori per la generazione della commessa di produzione*: **Articolo** (con il suo relative classe, codice e descrizione), **Versione**, **Quantità** della commessa e la relativa **Unità di misura**.  
-Infine vi sono una serie di campi che vengono tutti ripresi dai [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'articolo selezionato quali: il **Ciclo**, il **Lotto economico** con i relativi **Multipli**, il **Lead time**, la **Percentuale di scarto** sulla quantità e il **Tipo approvvigionamento**.
-I campi **Inizio / Fine previsione** indicano l'inizio e fine del periodo preso in considerazione della previsione di vendita che ha generato quella commessa. 
+**Fecha de trabajo efectiva Inicio/Fín (Data Lavorazione effettiva Inizio/Fine)**: en estos campos aparecen las fechas de Inicio/Fín del trabajo efectivo, es decir, respectivamente la fecha del primer reporte de producción de un pedido de producción generado por la orden y la fecha del último reporte de producción que ha causado el cierre definitivo del pedido de producción cuyo artículo es el mismo que el de la Orden de Producción. Obviamente, la fecha de fin efectiva está presente solo en caso de que la orden esté en estado de *evasa*;
 
-È importante tenere presente che lo stato di testata della commessa multiprodotto è influenzato automaticamente dagli stati delle singole righe. Lo stato di testata sarà pari a quello più avanzato delle singole righe tra: non esaminata, pianificata, lanciata ed esecutiva.
-Mentre, la testata, assumerà lo stato di evasa quando tutte le righe saranno evase; lo stesso vale per gli stati storicizzata e annullata.
+*Campos obligatorios para la generación de la orden de producción*: **articolo** (con su respectiva clase, código y descripción), **versione**, **quantità** de la orden y la respectiva **unità di misura**.  
+Finalmente, hay una serie de campos que son todos tomados de los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del artículo seleccionado, como: **ciclo**, el **lotto economico** con los respectivos **multipli**, el **Lead time**, el **percentuale di scarto** sobre la cantidad y el **tipo approvvigionamento**. 
+Los campos **Inicio / Fin de previsión (Inizio / Fine previsione)** indican el inicio y fin del período considerado de la previsión de venta que ha generado dicha orden. 
 
-### Riferimenti ordini clienti
+Es importante tener en cuenta que el estado de encabezado de la orden de producto múltiple se ve afectado automáticamente por los estados de las líneas individuales. El estado de encabezado será igual al más avanzado de las líneas individuales entre: no examinada, planificada, iniciada y ejecutiva. Mientras que, el encabezado asumirá el estado de cumplido cuando todas las líneas hayan sido cumplidas; lo mismo ocurre para los estados de historizada y cancelada.
 
-Il tab contiene una griglia di sola lettura, in cui compaiono gli ordini clienti collegati alla commessa di produzione di riferimento quando la commessa è stata generata da una o più righe ordini clienti.  
-**Tipo/Anno/Numero**: in queste colonne vengono visualizzati il *Tipo/Anno/Numero* dell'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio;  
-**N./Quantità/Unità di misura**: in questa colonna viene visualizzata la quantità della riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Conto**: in questa colonna vengono visualizzati conto e sottoconto del cliente a cui è intestato l'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio.
+### Referencias de pedidos de clientes
 
-### Extra data
+La pestaña contiene una cuadrícula de solo lectura, en la que aparecen los pedidos de clientes conectados a la orden de producción de referencia cuando la orden ha sido generada a partir de una o más líneas de pedidos de clientes.  
+**Tipo/Año/Número**: en estas columnas se visualizan el *Tipo/Año/Número* del pedido de cliente en el que se contiene la línea de la cual se expone el detalle;  
+**N./Cantidad/Unidad de medida**: en esta columna se muestra la cantidad de la línea del pedido de cliente de la cual se expone el detalle;  
+**data merce pronta**: en esta columna se muestra la fecha de la mercancía lista que ha sido establecida en la línea del pedido de cliente de la cual se expone el detalle;  
+**conto**: en esta columna se visualizan la cuenta y subcuenta del cliente a cuyo nombre está el pedido de cliente en el que se contiene la línea de la cual se expone el detalle.
 
-Anche questo tab è costituito da una griglia in cui verranno riportati tutti gli extra data collegati all'articolo presente nella commessa di produzione.
+### Datos extra (Extra data)
 
-##  Costificazione
+También esta pestaña está constituida por una cuadrícula en la que se mostrarán todos los datos adicionales asociados al artículo presente en la orden de producción.
 
-Tutte le informazioni relative alla **Costificazione** si possono consultare nella pagina [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+## Costificación 
 
-## Extra data
+Toda la información relacionada con la **Costificación** se puede consultar en la página [Costificación](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
-Questo tab, che affianca il tab *Gestione commesse monoprodotto*, contiene tutto l'insieme degli [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) collegati alla commessa di produzione.
+## Datos extra (Extra data)
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Esta pestaña, que acompaña a la pestaña *gestione commesse monoprodotto*, contiene todo el conjunto de [datos extra](/docs/configurations/utility/extra-data/extradata/search-extradata) relacionados con la orden de producción.
+
+Para los detalles sobre el funcionamiento común de los formularios, consultar el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

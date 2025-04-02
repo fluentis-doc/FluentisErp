@@ -1,30 +1,30 @@
 ---
-title: Anteprima e stampa
+title: Vista previa e impresión (Anteprima e stampa)
 sidebar_position: 6
 ---
 
-La procedura permette di visualizzare e stampare i documenti, secondo i criteri di filtro specificati (tipo, descrizione, numero, data, articolo, ecc).
+El procedimiento permite visualizar e imprimir documentos, de acuerdo con los criterios de filtro especificados (tipo, descripción, número, fecha, artículo, etc.).
 
-Le stampe che contengono liste di documenti si possono ordinare anche in base ai loro campi specifici: tipo, numero, data inserimento o per l'articolo.
+Las impresiones que contienen listas de documentos también se pueden ordenar según sus campos específicos: tipo, número, fecha de ingreso o por el artículo.
 
-| **Funzione** | Significato |
+| **funzione** | Significado |
 | --- | --- |
-| ![](/img/neutral/common/combo.png)| Permette di scegliere il report da stampare. |
-| ![](/img/neutral/common/preview.png) **Anteprima**| Pulsante per eseguire l'anteprima di stampa dei documenti. Aprirà una nuova form con i pulsanti che spieghiamo in seguito. |
-| ![](/img/neutral/common/print.png) Stampa| Pulsante per eseguire la stampa secondo i filtri impostati e la configurazione della stampante. |
-|**Stampa**| Pulsante per impostare la pagina e per stampare il documento |
-|**Stampa veloce**| Pulsante per stampare il documento con le impostazioni predefinite della pagina usando la stampante predefinite di sistema. |
-|**Impostazione pagina**| Pulsante per impostare la pagina tramite la form che si apre premendo questo pulsante. |
-|**Impostazioni stampante**| Pulsante per impostare la stampante. |
-|**Disegno**| Pulsante per aprire in modifica la stampa. |
-|**Prima pagina**| Pulsante che porta l'utente nella prima pagina del documento/i da stampare. |
-|**Pagina precedente**| Pulsante che porta l'utente nella pagina precedente a quella corrente del documento/i da stampare. |
-|**Prossima pagina**| Pulsante che porta l'utente nella pagina successiva a quella corrente del documento/i da stampare. |
-|**Ultima pagina**| Pulsante che porta l'utente all'ultima pagina del documento/i da stampare. |
-|**Zoom indietro**| Pulsante per vedere maggiori informazioni a dimensioni ridotte. |
-|**Zoom**| Pulsante per cambiare la corrente visualizzazione di zoom dell'anteprima del documento. |
-|**Zoom avanti**| Pulsante per una visione del dettaglio del documento. |
-|**Export**| Pulsante per esportare il documento in uno dei formati disponibili e per salvarlo in un file sul disco. |
-|**Send**| Pulsante per spedire il documento in uno dei formati disponibili e per salvarlo in un file sul disco. |
-|**Parametri**| Pulsante per visualizzare o nascondere il panel dei parametri dove l'utente può personalizzare i valori dei parametri della stampa. |
-|**Filigrana**| Pulsante che apre una nuova form per inserire un testo e/o un'immagine in trasparenza, dietro il contenuto della pagina. |
+| ![](/img/neutral/common/combo.png)| Permite elegir el informe a imprimir. |
+| ![](/img/neutral/common/preview.png) **anteprima**| Botón para ejecutar la vista previa de impresión de los documentos. Abrirá un nuevo formulario con los botones que explicamos a continuación. |
+| ![](/img/neutral/common/print.png) **stampa**| Botón para ejecutar la impresión según los filtros establecidos y la configuración de la impresora. |
+| **stampa**| Botón para establecer la página y para imprimir el documento. |
+| **stampa veloce**| Botón para imprimir el documento con la configuración predeterminada de la página usando la impresora predeterminada del sistema. |
+| **Configuración de página (Impostazione pagina)**| Botón para establecer la página a través del formulario que se abre al presionar este botón. |
+| **impostazioni stampante**| Botón para configurar la impresora. |
+| **disegno**| Botón para abrir y editar la impresión. |
+| **prima pagina**| Botón que lleva al usuario a la primera página del documento/s a imprimir. |
+| **pagina precedente**| Botón que lleva al usuario a la página anterior a la actual del documento/s a imprimir. |
+| **prossima pagina**| Botón que lleva al usuario a la página siguiente a la actual del documento/s a imprimir. |
+| **ultima pagina**| Botón que lleva al usuario a la última página del documento/s a imprimir. |
+| **zoom indietro**| Botón para ver más información a un tamaño reducido. |
+| **zoom**| Botón para cambiar la actual visualización de zoom de la vista previa del documento. |
+| **zoom avanti**| Botón para una vista detallada del documento. |
+| **export**| Botón para exportar el documento en uno de los formatos disponibles y guardarlo en un archivo en el disco. |
+| **Enviar (Send)**| Botón para enviar el documento en uno de los formatos disponibles y guardarlo en un archivo en el disco. |
+| **parametri**| Botón para mostrar u ocultar el panel de parámetros donde el usuario puede personalizar los valores de los parámetros de impresión. |
+| **filigrana**| Botón que abre un nuevo formulario para insertar un texto y/o una imagen en transparencia, detrás del contenido de la página. |

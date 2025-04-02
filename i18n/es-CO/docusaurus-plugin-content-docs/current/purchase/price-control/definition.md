@@ -1,28 +1,27 @@
 ---
-title: Definizione politiche sconti
+title: definizione politiche sconti
 sidebar_position: 1
 ---
 
-In questa maschera vengono definite le politiche di sconto in base alle impostazioni inserite nelle altre maschere del gruppo 
-**Gestione prezzi**.     
+En esta pantalla se definen las políticas de descuento según las configuraciones ingresadas en otras pantallas del grupo **gestione prezzi**.
 
-Nella prima griglia sono presenti le seguenti colonne:  
+En la primera cuadrícula están presentes las siguientes columnas:
 
->- **Descrizione conto**: contiene l'anagrafica destinataria della politica di sconto.        
->- **Classe**: riguarda la classe articolo destinataria della politica di sconto; è un campo facoltativo.        
->- **Categoria sconto acquisti**: permette di scegliere la categoria sconto acquisti da associare all'anagrafica tra quelle codificate nella tabella [Categoria sconto acquisti](/docs/configurations/tables/purchase/category-discounts-price-management/).    
->- **Dettaglio categoria sconti**: se l'utente vuole gestire anche la *Sottocategoria di sconto* deve riportare in questo campo lo stesso codice utilizzato dal fornitore.  
->- **Data validità**: contiene la validità della politica di sconto; questo permette di applicare diverse politiche in diversi periodi dell'anno.
+>- **descrizione conto**: contiene el registro del destinatario de la política de descuento.  
+>- **classe**: se refiere a la clase de artículo destinataria de la política de descuento; es un campo opcional.  
+>- **categoria sconto acquisti**: permite elegir la categoría de descuento de compras para asociar al registro entre las codificadas en la tabla [Categoría de descuento de compras (Categoria sconto acquisti)](/docs/configurations/tables/purchase/category-discounts-price-management/).  
+>- **dettaglio categoria sconti**: si el usuario desea gestionar también la *Subcategoría de descuento (Sottocategoria di sconto)*, debe ingresar en este campo el mismo código utilizado por el proveedor.  
+>- **data validità**: contiene la validez de la política de descuento; esto permite aplicar diversas políticas en diferentes períodos del año.
 
-Nella seconda griglia vengono definiti gli **Sconti** da proporre per le combinazioni della prima griglia. Gli sconti verranno proposti nei documenti intestati all'anagrafica per quella determinata classe articolo. 
+En la segunda cuadrícula se definen los **Descuentos** que se propondrán para las combinaciones de la primera cuadrícula. Los descuentos se propondrán en los documentos dirigidos al registro de esa clase de artículo determinada.
 
-### Gestione categorie sconto nei documenti
+### Gestión de categorías de descuento en los documentos (Gestione categorie sconto nei documenti)
 
-È possibile assegnare degli sconti per categoria articolo che siano poi ripresi all'interno dei documenti di acquisto. Per fare questo sono necessari alcuni passaggi.
+Es posible asignar descuentos por categoría de artículo que luego se tomarán en cuenta dentro de los documentos de compra. Para hacer esto, se requieren algunos pasos.
 
-1. Nell'*Anagrafica articolo* > tab *Categoria sconti acquisti* deve essere inserita la categoria di sconto con la *Data inizio validità*;  
-2. Nell'*Anagrafica fornitore* > tab *Listini* deve essere inserito il *Listino*, con il flag di **Gestione prezzi** attivo;  
-3. Nella *Definizione politiche sconti* deve essere inserito il *Fornitore*, la stessa **Categoria sconto acquisti** inserita nell'anagrafica articolo, la *Data di validità*, lo *Sconto* ed eventualmente la *Classe articoli* a cui associare lo sconto; 
-4. Deve inoltre esserci un **Listino fornitore** valido alla data di validità della politica di sconto che contenga gli articoli che hanno in anagrafica la categoria sconto, per la ripresa del prezzo base. 
+1. En *anagrafica articolo* > pestaña *categoria sconti acquisti*, se debe ingresar la categoría de descuento con la *data inizio validità*;  
+2. En *Registro de proveedor (Anagrafica fornitore)* > pestaña *listini*, se debe ingresar la *listino*, con el indicador de **gestione prezzi** activo;  
+3. En *definizione politiche sconti*, se debe ingresar el *Proveedor*, la misma **categoria sconto acquisti** ingresada en el registro de artículo, la *Fecha de validez (Data di validità)*, el *sconto* y, eventualmente, la *Clase de artículos (Classe articoli)* a la que asociar el descuento;  
+4. Además, debe haber un **listino fornitore** válida en la fecha de validez de la política de descuento que contenga los artículos que tienen en su registro la categoría de descuento, para la recuperación del precio base.
 
-A questo punto all'inserimento di un documento di acquisto saranno proposti anche gli sconti per categoria sconto.
+En este punto, al ingresar un documento de compra, también se propondrán los descuentos por categoría de descuento.

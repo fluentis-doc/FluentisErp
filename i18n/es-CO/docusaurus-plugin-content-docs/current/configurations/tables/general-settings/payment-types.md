@@ -1,54 +1,53 @@
 ---
-title: Tipi pagamento
+title: tipi pagamento
 sidebar_position: 7
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está interesada en el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-La tabella contiene le tipologie di pagamento da utilizzare nel gestionale.
+La tabla contiene los tipos de pago que se deben utilizar en el sistema de gestión.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-Per inserire nuovi record cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para insertar nuevos registros, haga clic en la primera fila vacía en la cuadrícula superior o presione el botón **nuovo**. 
 
-## Tipo pagamento
+## Tipo de pago (Tipo pagamento)
 
-**Pagamento**: è il codice alfanumerico di riconoscimento;
+**pagamento**: es el código alfanumérico de reconocimiento;  
 
-**Descrizione**: è la descrizione del pagamento, riportata normalmente nelle varie stampe del ciclo attivo/passivo;
+**descrizione**: es la descripción del pago, normalmente reportada en varios impresos del ciclo activo/pasivo;  
 
-**Importo di bollo**: importo del bollo;
+**importo di bollo**: importe del timbre;  
 
-**Percentuale Pagamento**: consente di associare una tipologia (richiamandola dalla tabella Tipi Sconto) e la relativa percentuale di sconto alle righe articolo del documento in relazione alla tipologia di pagamento; Ad esempio è possibile definire uno sconto 5% nel caso venga utilizzato il tipo pagamento Contanti.
+**Porcentaje de Pago (Percentuale Pagamento)**: permite asociar un tipo (llamándolo desde la tabla Tipos de Descuento) y el porcentaje de descuento asociado a las líneas del artículo del documento en relación con el tipo de pago; por ejemplo, es posible definir un descuento del 5% en caso de que se utilice el tipo de pago Efectivo (Contanti).
 
 :::note Nota
-Questo è uno sconto che va ad abbattere l’imponibile di riga, insieme agli altri sconti derivanti da listini e condizioni commerciali in anagrafica.
+Este es un descuento que reduce la base imponible de la línea, junto con otros descuentos derivados de listas de precios y condiciones comerciales en el registro.
 :::
 
-**Tipo sconto finanziario / Valore sconto finanziario:** legati alla scadenza fattura, che non vanno a toccare quindi il totale documento ma vengono applicati all’atto della registrazione d’incasso
+**Tipo de descuento financiero / Valor de descuento financiero (Tipo sconto finanziario / Valore sconto finanziario)**: relacionados con la fecha de vencimiento de la factura, que no afectan el total del documento pero se aplican al momento de registro del cobro.
 
+**natura effetto**: permite definir el tipo de efecto eventualmente conectado o de otro tipo de pago. Actualmente, el campo tiene solo valor informativo sin automatizaciones particulares relacionadas, excepto para el tipo Recibo bancario (Ricevuta bancaria) que identifica el tipo de pago adecuado para la posterior gestión de la creación del efecto.
 
-**Natura effetto**: consente di definire la tipologia di effetto eventualmente connesso o di altro tipo di pagamento. Attualmente il campo ha solo valenza informativa senza particolari automazioni connesse ad eccezione del tipo Ricevuta bancaria che identifica il tipo pagamento adatto alla successiva gestione della creazione effetto.
+**Código intra serv. (Cod. intra serv.)**: código del pago a ingresar en las declaraciones intrastat.
 
-**Cod. intra serv.** : codice del pagamento da inserire nelle dichiarazioni intrastat
+**codice per fatture elettroniche**: código identificativo del tipo de pago para las facturas electrónicas y las facturas a la administración pública (por ejemplo, MP01, MP02, etc... ver instrucciones ministeriales para la elaboración de facturas electrónicas).
 
-**Codice per fatture elettroniche** : codice identificativo del tipo pagamento per le fatture elettroniche e le fatture alla pubblica amministrazione (esempio. MP01, MP02 ecc... vedere istruzioni ministeriali per la compilazione delle fatture elettroniche)
+**nazione**: filtro para hacer visible ese tipo de pago solo a las empresas de la base de datos que tengan la nacionalidad especificada (útil ya que la tabla, al ser básica, es visible para todas las empresas de la misma base de datos).
 
-**Nazione**: filtro per rendere visibile quel tipo pagamento solo alle società del database che hanno la nazionalità specificata (utile in quanto la tabella essendo di base è visibile a tutte le società della stessa base dati).
+### Idiomas (Lingue)
 
-### Lingue
+Para cada tipo de pago seleccionado en la cuadrícula superior, se pueden definir descripciones en idioma: utilizables para impresiones personalizadas.
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile definire delle descrizioni in lingua: utilizzabile per stampe personalizzate.
+### Tipos de efectos (Tipi effetti)
 
-### Tipi effetti
+Para cada tipo de pago seleccionado en la cuadrícula superior, es posible preconfigurar el tipo de efecto a crear desde la partida/vencimiento en el módulo *portafoglio effetti*.
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile preimpostare il tipo di effetto da creare dalla partita/scadenza nel modulo *Portafoglio effetti*.
-
-:::danger Attenzione
-L'associazione pagamento - effetto serve per fare in modo che nella maschera di creazione effetti vengano visualizzate solo le partite coerenti per la creazione delle effetto. Ad esempio il corretto settaggio potrebbe essere quello di associare al tipo pagamento RiBa la tipologia di effetto Ricevuta Bancaria, e al tipo pagamento Cambiale il tipo effetto Cambiale, in questo modo non verranno visualizzate ad esempio le partite aperte con tipo pagamento Bonifico nella maschera di creazione effetti dalle partite o dalle scadenze evitando di generare dati incoerenti.
+:::danger Atención
+La asociación pago - efecto sirve para que en la máscara de creación de efectos solo se visualicen las partidas coherentes para la creación del efecto. Por ejemplo, la configuración correcta podría ser asociar al tipo de pago RiBa la tipología de efecto Recibo Bancario, y al tipo de pago Cambiale el tipo de efecto Cambiale; de este modo, no se visualizarán, por ejemplo, las partidas abiertas con el tipo de pago Transferencia (Bonifico) en la máscara de creación de efectos desde las partidas o las fechas, evitando generar datos incoherentes.
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

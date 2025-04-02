@@ -1,108 +1,99 @@
 ---
-title: Articoli
+title: articoli
 sidebar_position: 3
 ---
 
-In questa tab è possibile inserire gli articoli del progetto. Il pulsante nella ribbon bar ![](/img/neutral/common/new.png) permette di inserire una nuova riga articolo, mentre il pulsante ![](/img/neutral/common/delete.png) permette di cancellarne. Per costruire lo scheletro del pogetto, sono disponibili i pulsanti specifici:
-![](/img/neutral/common/new-child.png)  Nuovo figlio: permette di inserire una riga progetto figlia della riga selezionata;    
-![](/img/neutral/common/new-brother.png) Nuovo fratello: permette di inserire una riga progetto nello stesso livello della riga selezionata;
-![](/img/neutral/common/wbs.png)  Sostituisci il numero WBS: permette di incorporare al Numero WBS delle righe anche il Numero del progetto;
-per visualizzare lo scheletro del progetto, sono disponibili i pulsanti:
-![](/img/neutral/common/implode.png)  Implodi: consente di nascondere le righe dello scheletro;
-![](/img/neutral/common/implode.png)  Esplodi: consente di visualizzare le righe.
+En esta pestaña es posible insertar los artículos del proyecto. El botón en la barra de herramientas ![](/img/neutral/common/new.png) permite agregar una nueva línea de artículo, mientras que el botón ![](/img/neutral/common/delete.png) permite eliminarla. Para construir la estructura del proyecto, hay botones específicos disponibles:  
+![](/img/neutral/common/new-child.png)  Nuevo hijo: permite insertar una línea de proyecto hija de la línea seleccionada;  
+![](/img/neutral/common/new-brother.png) Nuevo hermano: permite insertar una línea de proyecto al mismo nivel que la línea seleccionada;  
+![](/img/neutral/common/wbs.png)  Reemplazar el número WBS: permite incorporar al Número WBS de las líneas también el Número del proyecto;  
+Para visualizar la estructura del proyecto, hay botones disponibles:  
+![](/img/neutral/common/implode.png)  Implosionar: permite ocultar las líneas de la estructura;  
+![](/img/neutral/common/implode.png)  Explosión: permite visualizar las líneas.
 
-Le caratteristiche dell’articolo vanno inserite nella **tab Attività** in basso:
+Las características del artículo deben insertarse en la **pestaña Actividades (tab Attività)** en la parte inferior:
 
-**Numero riga/Numero WBS**: contiene i numeri della riga e della WBS e viene impostato automaticamente, anche se è liberamente modificabile;       
-**Tipo Nodo**: indica se la riga è un **Root Node**(nodo principale), un **Activity Node**(relativo alle attività) o un **Work Package Node**(nodo finale di progetto, l’unico che può contenere dei codici articolo specifici);       
-**Tipo riga**: indica la tipologia di articolo tra Codificato, Non codificato, Spese o Note (quest’ultimo di default);      
-**Articolo**: riporta Classe, Codice e Descrizione dell’articolo eventualmente selezionato;        
-**Descrizione**: contiene la descrizione dell’articolo di default se selezionato, ma può essere liberamente modificata;           
-**Tipo Lavoro**: identifica nell’ambito organizzativo un livello di progetto non ancora quotato (visibile nelle offerte, per separarlo dalle attività facenti parte del contratto), quindi indica un nuovo lavoro che ancora non è stato gestito dal project manager ma che proviene dalle varie operazioni del progetto;
-**Articolo preventivo**:           
-**Quantità/UM/Prezzo**: contiene eventuali dati dell’articolo selezionato;        
-**Costo materiale/Costo totale**: è possibile indicare eventuali costi;          
-**Costo risorse**: è possibile indicare un eventuale costo per le risorse;              
-**IVA**: indica l’IVA da applicare;             
-**Tipo fatturato vendite**: indica il fatturato vendite dell’articolo;            
-**Livello non visibile**: con questo flag il livello viene considerato concluso, quindi a valle il ramo del progetto non potrà essere utilizzato per associare ulteriori attività;                       
-**Categoria di attività**: indica l’eventuale categoria di attività, impostata in **Tabelle > Gestione Progetti > Categoria di Attività**.
+**Número de línea/Número WBS (Numero riga/Numero WBS)**: contiene los números de la línea y de la WBS y se establece automáticamente, aunque se puede modificar libremente;  
+**tipo nodo**: indica si la línea es un **root node**, un **activity node** o un **work package node** (nodo final de proyecto, el único que puede contener códigos de artículo específicos);  
+**tipo riga**: indica la tipología de artículo entre Codificado, No codificado, Gastos o Notas (este último por defecto);  
+**articolo**: muestra Clase, Código y Descripción del artículo si está seleccionado;  
+**descrizione**: contiene la descripción del artículo por defecto si está seleccionado, pero puede ser modificada libremente;  
+**tipo lavoro**: identifica dentro del ámbito organizativo un nivel de proyecto no cotizado aún (visible en las ofertas para separarlo de las actividades del contrato), indicando así un nuevo trabajo que aún no ha sido gestionado por el gerente de proyecto, pero que proviene de las diversas operaciones del proyecto;  
+**articolo preventivo**:  
+**Cantidad/UM/Precio (Quantità/UM/Prezzo)**: contiene los datos del artículo seleccionado;  
+**Costo material/Costo total (Costo materiale/Costo totale)**: se pueden indicar costos;  
+**costo risorse**: se puede indicar un costo para los recursos;  
+**IVA**: indica el IVA a aplicar;  
+**tipo fatturato vendite**: indica el facturado de ventas del artículo;  
+**livello non visibile**: con este indicador, el nivel se considera concluido, por lo que el ramo del proyecto no podrá ser utilizado para asociar más actividades;  
+**categoria di attività**: indica la categoría de actividad, configurada en **Tablas > Gestión de Proyectos > Categoría de Actividad**.
 
-I dati riportati inseriti verranno inseriti nelle righe del progetto e si aggiorneranno man mano che verranno compilate anche le altre tab.
-Le informazioni si aggregano a livello superiore, quindi il Root Node conterrà la sistesi dei suoi rami figli.
+Los datos ingresados se incluirán en las líneas del proyecto y se actualizarán a medida que se completen las otras pestañas.  
+La información se agrega a un nivel superior, por lo que el Nodo Raíz contendrá la síntesis de sus ramas hijas.
 
-Nella tab Articolo troviamo poi la **tab Pianificazione servizio**, i cui dati da riportare per la riga articolo selezionata sono:
+En la pestaña Artículo encontramos la **pestaña Planificación de Servicio (tab Pianificazione servizio)**, cuyos datos que se deben proporcionar para la línea de artículo seleccionada son:
 
-**Data inizio/Data fine**: indicano le date pianificate per l’attività; 
->Le date verranno aggiornate in automatico a condizione di:
-- flag attivo "Ricalcolo data inizio-fine" nella tabella dei tipi progetto
-- se l'unità di misura utilizzata corrisponde all'unità di misura giorni nei parametri progetto, e si modifica la quantità di riga, la data fine verrà ricalcolata
-- inserendo nuove risorse con data anteriore a quella di inizio o successiva a quella di fine, le date di inizio-fine verranno aggiornate in automatico in base alla data minima e massima presente nella tab risorse.   
+**Fecha inicio/Fecha fin (Data inizio/Data fine)**: indican las fechas planificadas para la actividad;  
+>Las fechas se actualizarán automáticamente bajo las condiciones de:  
+- indicador activo "Recalcular fecha inicio-fin" en la tabla de tipos de proyecto;  
+- si la unidad de medida utilizada corresponde a la unidad de medida de días en los parámetros del proyecto, y se modifica la cantidad de la línea, la fecha final se recalculará;  
+- al ingresar nuevos recursos con fecha anterior a la de inicio o posterior a la de fin, las fechas de inicio y fin se actualizarán automáticamente según la fecha mínima y máxima presente en la pestaña de recursos.  
 
-**Da data Milestone/A Data Milestone**:               
-**Lavoro completato(perc.)/Stima**: è possibile indicare una percentuale di avanzamento lavori o una relativa stima;              
-**Tipo richiesta intervento**: è possibile indicare una tipologia di richiesta intervento collegata che verrà usata nella generazione di nuove richieste intervento legate alla riga progetto;              
-**Tipo intervento pianificato**: è possibile indicare una tipologia di intervento pianificato collegato, che verrà usato nella generazione di nuovi interventi pianificati legati alla riga progetto;    
-**Anagrafica impianti**: è possibile collegare un impianto, il quale conterrà per esempio una serie di informazioni legate al progetto di manutenzione dello stesso;            
-**Manager**: è possibile indicare una risorsa progetto;          
-**Chiuso forzatamente**: è possibile indicare un’eventuale data di chiusura forzata del progetto;               
-**Evase forzatamente**:                         
-**Criteri di fatturazione**: è possibile scegliere il criterio di fatturazione del progetto scegliendo di non fatturare alcune attività, effettuando quindi un controllo a vale; la scelta è tra Tutte le attività o Attività contrattuali; scegliendo quest’ultima opzione, verranno considerate fatturabili solo la Quantità di attività prevista nel tab Attività, mentre le attività necessarie eccedenti non verranno fatturate;               
-**Attività fatturabile**: se il flag è presente, indica che l’attività è fatturabile; l’attivazione di questo flag in automatico dipende dal Template inserito, oppure dall’anagrafica della Categoria di attività inserita nella tab Attività.                           
+**Fecha de hito inicial/Fecha de hito final (Da data Milestone/A Data Milestone)**:  
+**Trabajo completado (perc.)/Estimación (Lavoro completato(perc.)/Stima)**: se puede indicar un porcentaje de avance de trabajos o una estimación correspondiente;  
+**tipo richiesta intervento**: se puede indicar una tipología de solicitud de intervención relacionada que se usará en la generación de nuevas solicitudes de intervención vinculadas a la línea del proyecto;  
+**tipo intervento pianificato**: se puede indicar una tipología de intervención planificada relacionada, que se utilizará en la generación de nuevas intervenciones planificadas relacionadas con la línea del proyecto;  
+**anagrafica impianti**: se puede vincular una instalación, la cual contendrá por ejemplo una serie de informaciones relacionadas con el proyecto de mantenimiento de la misma;  
+**manager**: se puede indicar un recurso del proyecto;  
+**chiuso forzatamente**: se puede indicar una fecha de cierre forzada del proyecto;  
+**evase forzatamente**:  
+**criteri di fatturazione**: se puede elegir el criterio de facturación del proyecto, optando por no facturar algunas actividades, realizando así un control por valor; la elección es entre Todas las actividades o Actividades contractuales; eligiendo esta última opción, solo se considerará facturable la Cantidad de actividades prevista en la pestaña Actividades, mientras que las actividades necesarias excedentes no se facturarán;  
+**attività fatturabile**: si el indicador está presente, indica que la actividad es facturable; la activación de este indicador depende automáticamente de la plantilla ingresada o del registro de la Categoría de actividad ingresada en la pestaña Actividades.  
 
-Nella **tab Risorse** è possibile allocare le risorse per la riga articolo selezionata:
+En la **pestaña Recursos (tab Risorse)** se pueden asignar recursos para la línea de artículo seleccionada:
 
-**Data inserimento**: viene copilata con la data di inserimento della risorsa nel progetto;           
-**Risorsa**: contiene la risorsa, precedentemente codificata;              
-**Centro aziendale**: viene assegnato il centro aziendale collegato alla risorsa, ma è possibile modificarlo;               
-**Unità di misura**: contiene l’unità di misura per la quantificazione del tempo giornaliero della risorsa;                
-**Quantità**: indica le ore giornaliere;             
-**Costo unitario**: indica il costo della risorsa per singola unità di misura;    
+**data inserimento**: se llena con la fecha de inserción del recurso en el proyecto;  
+**risorsa**: contiene el recurso, previamente codificado;  
+**centro aziendale**: se asigna el centro de empresa vinculado al recurso, pero se puede modificar;  
+**unità di misura**: contiene la unidad de medida para la cuantificación del tiempo diario del recurso;  
+**quantità**: indica las horas diarias;  
+**costo unitario**: indica el costo del recurso por unidad de medida;  
 :::note[Nota]
-Assegnando la risorsa nella riga di progetto, viene proposto il costo orario della risorsa nell’apposito campo. 
-Il costo dipenderà anche dall’unità di misura: 
--	se l’UM è ora, il valore rimane invariato.
--	Se l’UM corrisponde ai giorni (impostazione nei Parametri Progetti), verrà fatta la conversione sulla base dell’Orario di lavoro impostato in anagrafica risorse. 
--	Se l’UM è diversa dai due casi precedenti, si cercherà il fattore di conversione, che se non presente darà messaggio di errore all’utente “Impossibile effettuare conversione del costo orario unitario risorsa con l’unità di misura della risorsa nel progetto. Costo della risorsa nel progetto non calcolato”
+Al asignar el recurso en la línea del proyecto, se propone el costo horario del recurso en el campo correspondiente.  
+El costo dependerá también de la unidad de medida:  
+- si la UM es hora, el valor permanece invariable.  
+- Si la UM corresponde a días (configuración en los Parámetros Proyectos), se realizará la conversión en base al Horario de trabajo establecido en el registro de recursos.  
+- Si la UM es diferente a los dos casos anteriores, se buscará el factor de conversión, que si no está presente dará un mensaje de error al usuario “Imposible realizar conversión del costo horario unitario recurso con la unidad de medida de la recurso en el proyecto. Costo de la recurso en el proyecto no calculado”.  
 :::
 
-:::note[Criteri ottenimento costi specifici in riga progetto]
-Se la risorsa prevede un costo differenziato per le giornate di straordinario/festività etc, la ricerca del costo corrispondente verrà fatta con la seguente logica: 
-1. La data di inizio inserita nella riga di progetto rientra in una delle giornate segnate nel Calendario dei giorni non lavorativi? 
->Se sì, verrà assegnato il valore impostato nel “Tipo costo: Festività” - Verrà comunque richiesta una notifica di conferma all’utente
-2.	Se la data di inizio non dovesse rientrate nel Calendario dei giorni non lavorativi, si prosegue il controllo nella griglia di Giorni lavorativi previsti per la risorsa
->Se la data di inizio non rientra né nei festivi né nei giorni lavorativi per la risorsa, verrà chiesto di aggiornare con il costo marcato come “Default giorno non lavorativo” se presente. Nel caso non ci fosse un costo così marcato, verrà preso in alternativa il costo “Straordinario”. 
-3. Se la data di inizio rientra in una di quelle lavorative ordinarie, viene verificato se: 
->rientra nel turno principale. 
->>Se il turno principale è marcato come “notturno”, viene chiesto di aggiornare con il costo notturno; nel caso non fosse notturno, viene considerato il costo di testata risorsa;
-4. Se non rientra nel turno principale, viene verificato se rientra nel turno alternativo.
->se il turno alternativo ha un costo dedicato, viene considerato questo valore
->>se il turno alternativo è marcato come “notturno”, viene chiesto di aggiornare con il costo notturno; nel caso non fosse notturno, viene considerato il costo di testata risorsa;
+:::note[Criterios para obtener costos específicos en la línea del proyecto]
+Si el recurso tiene un costo diferenciado para días de horas extra/festivos, la búsqueda del costo correspondiente se realizará con la siguiente lógica:  
+1. ¿La fecha de inicio ingresada en la línea del proyecto cae en uno de los días marcados en el Calendario de días no laborables?  
+>Si es así, se asignará el valor establecido en “Tipo costo: Festividad”. - Se solicitará una notificación de confirmación al usuario.  
+2. Si la fecha de inicio no cae dentro del Calendario de días no laborables, se continúa el control en la cuadrícula de Días laborables previstos para el recurso.  
+>Si la fecha de inicio no cae ni en festivos ni en días laborables para el recurso, se pedirá que se actualice con el costo marcado como “Default día no laborable” si está presente. Si no hay un costo así marcado, se tomará alternativamente el costo “Horas Extra”.  
+3. Si la fecha de inicio cae en uno de los días laborables ordinarios, se verifica si:  
+> cae en el turno principal.  
+>>Si el turno principal está marcado como “nocturno”, se pedirá que se actualice con el costo nocturno; si no es nocturno, se considera el costo de la cabeza del recurso;  
+4. Si no cae en el turno principal, se verifica si cae en el turno alternativo.  
+> si el turno alternativo tiene un costo dedicado, se considera este valor.  
+>>si el turno alternativo está marcado como “nocturno”, se pedirá que se actualice con el costo nocturno; si no es nocturno, se considera el costo de la cabeza del recurso;  
 :::
 
-**Data inizio**: contiene la data nella quale verrà stanziata la risorsa, con l’orario di inizio lavorativo;                 
-**Ora inizio pausa**: contiene l’eventuali data e ora di inizio della pausa;             
-**Ora fine pausa**: contiene l’eventuali data e ora di fine della pausa;                 
-**Data fine**: contiene la data nella quale verrà stanziata la risorsa, con l’orario di termine lavorativo;                               
-**Tempo effettiva**: è un campo calcolato in base agli orari delle colonne precedenti, che modifica anche il campo Quantità dello stesso valore;       
-**Note**: è possibile inserire eventuali note;             
-**Tipo Richiesta intervento**: è possibile inserire un’eventuale [richiesta d’intervento] collegata, con le sue caratteristiche, come la Descrizione e il Numero.         
+**data inizio**: contiene la fecha en la que se asignará el recurso, con la hora de inicio laboral;  
+**ora inizio pausa**: contiene la fecha y hora de inicio de la pausa;  
+**ora fine pausa**: contiene la fecha y hora de fin de la pausa;  
+**data fine**: contiene la fecha en la que se asignará el recurso, con la hora de fin laboral;  
+**Tiempo efectivo (Tempo effettiva)**: es un campo calculado en base a los horarios de las columnas anteriores, que modifica también el campo Cantidad con el mismo valor;  
+**note**: es posible insertar notas adicionales;  
+**tipo richiesta intervento**: es posible ingresar una solicitud de [intervención] relacionada, con sus características, como la Descripción y el Número.  
 
-Ogni riga di questa griglia conterrà una giornata lavorativa della risorsa: il numero delle giornate lavorative è stato indicato nella tab Attività degli articoli. 
+Cada línea de esta cuadrícula contendrá un día laborable del recurso: el número de días laborables fue indicado en la pestaña Actividades de los artículos.  
 
-Il pulsante specifico della ribbon bar ![](/img/it-it/project-management/projects/resources-navigator.png)
- Navigatore risorse permette di andare a verificare la disponibilità delle varie risorse e prenotare le giornate. Si aprirà una finestra; le eventuali date che si prenotano vengono riportate nella tab Risorse e vanno a incidere sui costi del progetto. 
+El botón específico de la barra de herramientas ![](/img/it-it/project-management/projects/resources-navigator.png)  
+Navegador de recursos permite verificar la disponibilidad de los diversos recursos y reservar los días. Se abrirá una ventana; las fechas que se reservan se registran en la pestaña Recursos y afectan los costos del proyecto.  
 
-Con il pulsante ![](/img/neutral/common/new-visit-report.png) Creazione Richiesta di intervento è possibile, selezionando una Risorsa, creare direttamente la Richiesta di intervento collegata al progetto o effettuarne il rollback con il pulsante   Rollback Richiesta di intervento.
+Con el botón ![](/img/neutral/common/new-visit-report.png) Creación de Solicitud de intervención es posible, al seleccionar un Recurso, crear directamente la Solicitud de intervención vinculada al proyecto o realizar su reversión con el botón  Reversar Solicitud de intervención.
 
-Nel **tab Materiali** vengono indicati i materiali necessari per l’avanzamento del progetto, con le relative caratteristiche degli articoli codificati. Il costo di questi materiali inciderà nella riga articolo Costo materiali. Il costo è proposto in base all'impostazione prevista nel campo "Tipo costo", il cui valore predefinito è impostabile nei parametri per progetto. Nel caso di "costo ultimo" o "costo medio" la data di riferimento è la data progetto. 
-Da questa schermata è possibile creare per i Materiali direttamente una Richiesta di acquisto, tramite il pulsante nella ribbon bar **Creazione RDA**.
-
-
-
-
-
-
-
-
-
+En la **pestaña Materiales (tab Materiali)** se indican los materiales necesarios para el avance del proyecto, con las características correspondientes de los artículos codificados. El costo de estos materiales impactará en la línea de artículo Costo materiales. El costo se propone en base a la configuración establecida en el campo "Tipo costo", cuyo valor predeterminado es ajustable en los parámetros del proyecto. En el caso de "costo último" o "costo medio", la fecha de referencia es la fecha del proyecto.  
+Desde esta pantalla es posible crear directamente una Solicitud de compra para los Materiales, a través del botón en la barra de herramientas **creazione rda**.

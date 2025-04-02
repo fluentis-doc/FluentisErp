@@ -1,160 +1,160 @@
 ---
-title: Pianificazione generale
+title: pianificazione generale
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La pianificazione generale in Fluentis è un processo che opera con il presupposto di capacità infinita, il che significa che la pianificazione non tiene conto di limitazioni fisiche nei centri di lavoro o nelle risorse disponibili. Questa metodologia permette di schedulare le operazioni produttive con una certa flessibilità.
+:::important ¿Para qué sirve? (A cosa serve)
+La planificación general en Fluentis es un proceso que opera con el supuesto de capacidad infinita, lo que significa que la planificación no tiene en cuenta las limitaciones físicas en los centros de trabajo o en los recursos disponibles. Esta metodología permite programar las operaciones productivas con cierta flexibilidad.
 
-La pianificazione può essere eseguita utilizzando due logiche distinte: **al più presto** e **al più tardi**. La logica ***al più presto*** mira a iniziare le operazioni non appena possibile, mentre la logica **al più tardi** pianifica le operazioni il più tardi possibile senza compromettere le scadenze. Questi approcci consentono un'analisi ottimizzata delle esigenze produttive e la gestione dei tempi di lavorazione in base alle priorità aziendali e alle necessità operative
+La planificación puede realizarse utilizando dos lógicas distintas: **tan pronto como sea posible (al più presto)** y **tan tarde como sea posible (al più tardi)**. La lógica ***tan pronto como sea posible (al più presto)*** busca iniciar las operaciones lo antes posible, mientras que la lógica **tan tarde como sea posible (al più tardi)** programa las operaciones lo más tarde posible sin comprometer las fechas límite. Estos enfoques permiten un análisis optimizado de las necesidades productivas y la gestión de los tiempos de trabajo según las prioridades empresariales y las necesidades operativas.
 :::
 
-La form si compone di quattro tab: *Commesse*, *Parametri generali*, *Monitor* e *Storico*.         
+El formulario se compone de cuatro pestañas: *commesse*, *parametri generali*, *monitor* y *storico*.
 
-## Commesse
+## Órdenes (Commesse)
 
-Il tab commesse, si compone di un’area di filtro che permette di filtrare le commesse che saranno poi visualizzate nella griglia dei risultati sottostante.       
-Oltre ai filtri per articolo, anno e numero commessa, sono presenti anche un filtro sul Tipo commessa: che permette di visualizzare le commesse monoprodotto, multiprodotto oppure entrambe.
+La pestaña de órdenes consta de un área de filtro que permite filtrar las órdenes que luego serán visualizadas en la cuadrícula de resultados a continuación.        
+Además de los filtros por artículo, año y número de orden, también hay un filtro por tipo de orden que permite visualizar las órdenes de producto único, de múltiples productos o ambas.
 
-È presente anche il filtro per *Sito produzione* in modo tale da poter pianificare solo le commesse di un determinato sito produttivo, e una serie di flag: *In ritardo*, *Scadute*, *Lanciate* ed *Esecutive*, che consentono di scegliere se si vogliono visualizzare anche le commesse in ritardo rispetto alla data, oppure scadute, e solo se nei **Parametri generali della pianificazione** è stato attivato il flag *pianificazione commesse lanciate o esecutive*, verranno attivati a loro volta anche i flag *Lanciate* ed *Esecutive*; altrimenti questi due campi risultano sempre non essere attivi.          
-Se il flag *pianificazione commesse lanciate o esecutive* non è attivo, nella griglia verranno visualizzate solamente commesse in stato di *non esaminate* o *pianificate*.       
-Selezionando una o più commesse, in base ai parametri di pianificazione impostati nel relativo tab, tramite il pulsante pianificazione generale la procedura va a creare gli ordini pianificati dei tre tipi previsti: produzione, acquisto e conto lavoro, partendo dalle informazioni presenti nelle commesse e incrociando i dati con le relative distinte basi e cicli di lavoro.
+También hay un filtro para *sito produzione*, de modo que se puedan planificar solo las órdenes de un determinado sitio productivo, y una serie de indicadores: *in ritardo*, *scadute*, *lanciate* y *esecutive*, que permiten optar por visualizar también las órdenes que están retrasadas respecto a la fecha, o vencidas, y solo si en los **Parámetros generales de planificación (Parametri generali della pianificazione)** se ha activado el indicador *planificación de órdenes lanzadas o ejecutivas (pianificazione commesse lanciate o esecutive)*, se activarán también los indicadores *lanciate* y *esecutive*; de lo contrario, estos dos campos siempre estarán inactivos.        
+Si el indicador *planificación de órdenes lanzadas o ejecutivas* no está activo, en la cuadrícula solo se mostrarán órdenes en estado de *non esaminate* o *pianificate*.        
+Al seleccionar una o más órdenes, basándose en los parámetros de planificación establecidos en la pestaña correspondiente, a través del botón de planificación general, el procedimiento generará las órdenes planificadas de los tres tipos previstos: producción, compra y trabajo por encargo, partiendo de la información presente en las órdenes y cruzando los datos con las respectivas listas de materiales y ciclos de trabajo.
 
-Una volta creati, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), oppure questa form può essere aperta tramite il pulsante **Apri ricerca ordini pianificati**. 
-Nel caso in cui sia selezionata una commessa nella griglia dei risultati e vengo poi premuto il pulsante **Apri ricerca ordini pianificati**, la form degli ordini pianificati verrà aperta filtrando già i risultati per quella commessa.
+Una vez creadas, las órdenes planificadas se podrán visualizar en el formulario [Búsqueda de órdenes planificadas](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), o este formulario puede abrirse a través del botón **apri ricerca ordini pianificati**. 
+En caso de que se seleccione una orden en la cuadrícula de resultados y luego se presione el botón **Abrir búsqueda de órdenes planificadas**, el formulario de órdenes planificadas se abrirá filtrando ya los resultados para esa orden.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Pianificazione generale**: consente al sistema di schedulare le commesse selezionate;  
-> **Apri ricerca ordini pianificati**: questo pulsante consente di aprire la schermata di  [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders); nel caso in cui, prima di premere questo pulsante, venga selezionata una riga di commessa la form degli ordini pianificati si aprirà già pre filtrata su quella commessa;               
-> **Cambia data fine prevista con data suggerita**: questo pulsante consente di aggiornare la *data fine prevista* con la *data suggerita* calcolata dalla pianificazione nel caso in cui fosse lanciata con il flag **Controlla documenti in ritardo con ATP** attivo;     
-> **Sequenza commesse**: tramite questa funzionalità si può accedere alla sequenza commesse, all'interno della quale si potranno visualizzare le commesse in base alla sequenza che gli è stata attribuita, anche tramite un grafico.
+> **pianificazione generale**: permite al sistema programar las órdenes seleccionadas;  
+> **apri ricerca ordini pianificati**: este botón permite abrir la pantalla de [Búsqueda de órdenes planificadas](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders); si antes de presionar este botón se selecciona una fila de orden, el formulario de órdenes planificadas se abrirá ya prefiltrado para esa orden;               
+> **cambia data fine prevista con data suggerita**: este botón permite actualizar la *fecha de finalización proyectada* con la *fecha sugerida* calculada por la planificación en caso de que haya sido lanzada con el indicador **controlla documenti in ritardo con atp** activo;     
+> **sequenza commesse**: mediante esta funcionalidad se puede acceder a la secuencia de órdenes, dentro de la cual se podrán visualizar las órdenes según la secuencia que se les haya asignado, incluso mediante un gráfico.
 
-*Filtri specifici*:
+*Filtros específicos*:
 
-**Tipo commessa**: tramite questa combo è possibile andare a selezionare il tipo di commessa che si vuole visualizzare, se le commesse monoprodotto, le commesse multiprodotto oppure entrambe;
+**tipo commessa**: a través de esta combinación, es posible seleccionar el tipo de orden que se desea visualizar, ya sea órdenes de producto único, de múltiples productos o ambas;
 
-**Sito produzione**: si possono andare a visualizzare le commesse in base al sito di produzione in cui vanno prodotte, selezionandolo tramite l'apposita combo;
+**sito produzione**: se pueden visualizar las órdenes según el sitio de producción en el que deben ser producidas, seleccionándolo mediante la combinación correspondiente;
 
-**In ritardo/Scadute/Lanciate/Esecutive**: questi flag consentono di scegliere se si vogliono visualizzare anche le commesse in ritardo rispetto alla data oppure scadute e solo se nei  [Parametri generali di pianificazione ](/docs/planning/ms-master-scheduling/general-schedule) è settato il flag *pianificazione commesse lanciate o esecutive*, altrimenti i due campi risultano non essere attivi; altrimenti come spiegato nell'articolo sui parametri di pianificazione , nel tab commesse si potranno vedere solamente in stato di non esaminate o di schedulate, ma queste assumono lo stato di lanciate  e/o esecutive se questo flag non viene settato non si potranno visualizzare le commesse all'interno di questo tab.
+**Retrasados/Vencidos/Lanzados/Ejecutivos (In ritardo/Scadute/Lanciate/Esecutive)**: estos indicadores permiten elegir si se desean mostrar también las órdenes que están retrasadas o vencidas y solo si en los [Parámetros generales de planificación (Parametri generali di pianificazione)](/docs/planning/ms-master-scheduling/general-schedule) está configurado el indicador *planificación de órdenes lanzadas o ejecutivas*, de lo contrario, los dos campos estarán inactivos; de lo contrario, como se explicó en el artículo sobre los parámetros de planificación, en la pestaña de órdenes solo se podrán ver en estado de no examinadas o planificadas, pero estas asumen el estado de lanzadas y/o ejecutivas si este indicador no se establece, no se podrán visualizar las órdenes dentro de esta pestaña.
 
-*Campi specifici nella griglia dei Risultati*
+*Campos específicos en la cuadrícula de resultados*
 
-**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di pianificazione, attivando un particolare flag chiamato  [Controlla documenti in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) la procedura di pianificazione andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista, il sistema andrà a cancellare tutti gli ordini creati e ripartirà a calcolarli dalla **Data inizio MS** (che viene definita sempre nei parametri e che si attiva solo settando il flag **Controllo documenti in ritardo con ATP**) con la logica *al più presto* e proporrà la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
+**data suggerita**: como se explicó en el artículo relativo a los parámetros generales de planificación, al activar un indicador particular llamado [Verificar documentos retrasados con ATP (Controlla documenti in ritardo con ATP)](/docs/planning/ms-master-scheduling/general-schedule) el procedimiento de planificación realizará un razonamiento tal que si incluso una sola de las órdenes que se están programando y generando está retrasada respecto a la fecha prevista, el sistema anulará todas las órdenes creadas y volverá a calcularlas desde la **data inizio ms** (que se define siempre en los parámetros y que se activa solo configurando el indicador **Verificar documentos retrasados con ATP (Controllo documenti in ritardo con ATP)**) con la lógica de *tan pronto como sea posible* y propondrá la nueva fecha para las órdenes exactamente en el campo *Fecha sugerida* presente en la cuadrícula de resultados.
 
-### Procedura Pianificazione generale
+### Procedimiento de Planificación General
 
-Una volta selezionate le commesse che si vogliono schedulare, si attiverà il pulsante **Pianificazione generale** presente nella ribbon bar della form, e cliccando su quel pulsante il sistema procederà con la pianificazione delle commesse selezionate.
+Una vez seleccionadas las órdenes que se desean programar, se activará el botón **pianificazione generale** presente en la barra de herramientas del formulario, y haciendo clic en ese botón, el sistema procederá con la planificación de las órdenes seleccionadas.
 
-Per visualizzare tutte le schedulazioni effettuate e i relativi ordini di produzione creati per ogni commessa, basterà spostarsi nel tab **Storico**.
+Para visualizar todas las programaciones realizadas y los respectivos órdenes de producción creados para cada orden, basta con desplazarse a la pestaña **storico**.
 
 :::danger Nota    
-Le commesse create manualmente vengono sempre prodotte indipendentemente dalla disponibilità dell'articolo da produrre.    
+Las órdenes creadas manualmente siempre se producen independientemente de la disponibilidad del artículo a producir.    
 :::   
 
-## Parametri di Pianificazione generale
+## Parámetros de Planificación General
 
 :::note Nota
-Prima di procedere con la pianificazione, è importante settare all'interno di questo tab i parametri da seguire per eseguire la pianificazione .
+Antes de proceder con la planificación, es importante establecer dentro de esta pestaña los parámetros a seguir para llevar a cabo la planificación.
 ::: 
 
-**Pianificare fino al**: indicare la data entro la quale il sistema dovrà andare a considerare i documenti inseriti. Questa data è calcolata dal sistema come la data odierna più il valore in mesi inserito nel campo  **Numero massimo di mesi per la pianificazione** presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);       
+**pianificare fino al**: indicar la fecha hasta la cual el sistema deberá considerar los documentos ingresados. Esta fecha es calculada por el sistema como la fecha actual más el valor en meses ingresado en el campo **numero massimo di mesi per la pianificazione** presente en los [Parámetros de MS (Parametri MS)](/docs/configurations/parameters/production/mps-parameters);       
 
-**Materiali / Risorse**: attivando il flag **Materiali**, all’interno degli ordini pianificati creati vengono riportati i materiali da consumare. Mentre, attivando il flag **Risorse**, all’interno degli ordini pianificati creati vengono riportate anche le fasi di lavorazione. Nel caso uno o entrambi i flag non fossero attivi, gli ordini pianificati verranno comunque creati ma senza rispettivamente i materiali o le fasi di lavorazione all’interno;
+**Materiales / Recursos (Materiali / Risorse)**: al activar el indicador **materiali**, en las órdenes planificadas creadas se incluyen los materiales a consumir. Mientras que, al activar el indicador **risorse**, en las órdenes planificadas creadas se incluirán también las fases de trabajo. En caso de que uno o ambos indicadores no estén activos, las órdenes planificadas se crearán de todos modos, pero sin los materiales o las fases de trabajo; 
 
-**Ordini pianificati di**: attraverso i 3 flag si va ad indicare se si vuole che il sistemare generi tutti e tre i tipi di ordini previsti quindi produzione, acquisto e conto lavoro; in questo modo questi tipi di ordine avranno il legame diretto con la commessa; (per esempio se non viene messo il flag su Acquisto, però viene mantenuto il flag su Esecuzione MRP, il sistema andrà comunque a creare anche gli ordini di acquisto ma questi risulteranno slegati dalla commessa);
+**Órdenes planificadas de (Ordini pianificati di)**: a través de los 3 indicadores se indica si se desea que el sistema genere todos los tres tipos de órdenes previstos, es decir, producción, compra y trabajo por encargo; de esta manera, estos tipos de órdenes tendrán el vínculo directo con la orden; (por ejemplo, si no se activa el indicador de compra, pero se mantiene el indicador de ejecución de MRP, el sistema aún creará los órdenes de compra, pero estos estarán desvinculados de la orden);
 
-**Genera solo ordini pianificati per livelli**: in questo caso si andranno ad indicare i livelli (1-2...) per i quali si vuole vengano generati gli ordini pianificati;
+**Generar solo órdenes planificadas para niveles (Genera solo ordini pianificati per livelli)**: en este caso, se deben indicar los niveles (1-2...) para los cuales se desean generar las órdenes planificadas;
 
-**Ordini fornitori o Richieste d'acquisto e ordini cliente**: in questo caso, se vi sono presenti a sistema documenti privi di data di impegno e disponibilità, si può dire al sistema che vada a considerare come data quella che si potrà indicare nell'apposito campo, oppure dire al sistema che non vada a considerarli del tutto;
+**Órdenes de proveedores o Solicitudes de compra y órdenes de cliente (Ordini fornitori o Richieste d'acquisto e ordini cliente)**: en este caso, si hay documentos en el sistema sin fecha de compromiso y disponibilidad, se puede indicar al sistema que considere como fecha la que se podrá indicar en el campo correspondiente, o decir al sistema que no los considere en absoluto;
 
-**Raggruppamento ordini pianificati per**: nel caso in cui si lavori a commessa, in questo campo va impostata la voce *Nessun raggruppamento*; altrimenti si può andare a selezionare tramite l'apposita combo il tipo di raggruppamento che si intende applicare ma in questo caso il legame tra ordini pianificati e commessa si andrebbe a perdere;
+**Agrupamiento de órdenes planificadas por (Raggruppamento ordini pianificati per)**: en caso de que se trabaje por orden, en este campo se debe establecer la opción *nessun raggruppamento*; de lo contrario, se puede seleccionar a través de la combinación correspondiente el tipo de agrupamiento que se desea aplicar, pero en este caso el vínculo entre las órdenes planificadas y la orden se perdería;
 
-**Raggruppamento al più tardi o al più presto**: in questo caso si può scegliere se andare a raggruppare gli ordini al più tardi (quindi in base all'ultimo) o al più presto (che è il più consigliato) e nel campo successivo chiamato **Per un periodo in giorni** di si andranno ad indicare il numero di giorni all'interno del quale fare il raggruppamento;
+**Agrupamiento tan tarde como sea posible o tan pronto como sea posible (Raggruppamento al più tardi o al più presto)**: en este caso, se puede elegir agrupar las órdenes tan tarde como sea posible (es decir, según el último) o tan pronto como sea posible (la opción más recomendada) y en el campo siguiente llamado **Por un período en días (Per un periodo in giorni)** se debe indicar el número de días dentro del cual se realizará el agrupamiento;
 
-**Considera le quantità in base al lotto economico/Considera i multipli del lotto economico**: settando il primo parametro si va ad indicare che durante la pianificazione si vuole tenere conto anche del lotto economico dell'articolo, e di conseguenza si attiverà il flag che permetterà di decidere se si vuole vengano tenuti in considerazione anche i multipli del lotto economico. 
-Per l’articolo esaminato verranno considerati i valori del lotto economico e i suoi multipli, se e solo se sono attivi i rispettivi flag all’interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell’articolo. Nel caso in cui si tratti di un articolo con tipo approvvigionamento di produzione, i valori del lotto economico e i multipli verranno presi dal tab produzione dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell’articolo stesso, mentre si si tratta di un articolo di tipo approvvigionamento acquisto, verranno presi dal fornitore di default presente nel tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item) della sua anagrafica.
+**Considerar las cantidades en función del lote económico / Considerar los múltiplos del lote económico (Considera le quantità in base al lotto economico/Considera i multipli del lotto economico)**: al establecer el primer parámetro, se indica que durante la planificación se desea tener en cuenta también el lote económico del artículo, y en consecuencia se activará el indicador que permitirá decidir si se desean considerar también los múltiplos del lote económico. 
+Para el artículo examinado se considerarán los valores del lote económico y sus múltiplos, si y solo si están activos los respectivos indicadores dentro de los [Parámetros de MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del artículo. En caso de que se trate de un artículo con tipo de aprovisionamiento de producción, los valores del lote económico y los múltiplos se tomarán de la pestaña de producción de los [Parámetros de MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del mismo artículo, mientras que si se trata de un artículo de tipo de aprovisionamiento de compra, se tomarán del proveedor predeterminado presente en la pestaña [Proveedores preferenciales (Fornitori preferenziali)](/docs/erp-home/registers/items/create-new-item) de su registro.
 
-**Compatta/separa ordini**: in questo caso si va a scegliere se si vuole venga tenuto o meno un giorno di lasco tra la fine della produzione dell'ordine di 1 livello e quello del livello successivo;
+**Compactar/separar órdenes (Compatta/separa ordini)**: en este caso se elige si se desea o no mantener un día de margen entre la finalización de la producción de la orden de un nivel y la del siguiente nivel;
 
-**Esecuzione del MRP dopo pianificazione e Articoli a scorta**: si va ad indicare che si vuole che il sistema, dopo una prima pianificazione, vada ad analizzare comunque con l'M R P tutti i codici articolo della Distinta Base dell’articolo, che hanno politica di gestione diversa da quella a commessa, in modo da verificarne la copertura ed eventualmente generare degli ordini pianificati ma senza legame con la commessa. Attivando anche Articoli a scorta la procedura MRP prenderà in considerazione anche tutti gli articoli con politica di gestione a scorta nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters); 
+**Ejecución del MRP después de la planificación y Artículos de stock (Esecuzione del MRP dopo pianificazione e Articoli a scorta)**: se indica que se desea que el sistema, después de una primera planificación, analice también con el MRP todos los códigos de artículo de la lista de materiales del artículo, que tienen una política de gestión diferente a la de órdenes, con el fin de verificar su cobertura y, si es necesario, generar órdenes planificadas pero sin vínculo con la orden. Al activar también Artículos de stock, el procedimiento MRP tomará en cuenta también todos los artículos con política de gestión de stock en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters); 
 
-**pianificazione per zona consegna**: settando questo flag il sistema va a vedere quando l'ordine va consegnato in base alla sua zona di consegna e andrà a schedulare l'ordine per prima rispetto al giorno della consegna;
+**pianificazione per zona consegna**: al activar este indicador, el sistema verifica cuándo se debe entregar la orden en función de su zona de entrega y programará la orden primero con respecto al día de entrega;
 
-**Controlla documenti in ritardo con ATP**: se si va ad abilitare questo flag si andrà ad abilitare contemporaneamente anche il campo successivo chiamato **Data inizio MS**; a questo punto la procedura di pianificazione andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono pianificati e generati risulta essere in ritardo rispetto alla data prevista, il sistema andrà a cancellare tutti gli ordini creati e ripartirà a calcolarli dalla **Data inizio MS** con la logica *al più presto* e proporrà la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato. A questo punto, tramite il pulsante dedicato **Cambia data fine prevista con data suggerita** (presente nel tab commesse della *Pianificazione generale*), è possibile sostituire la data di fine prevista con la data suggerita appena calcolata per poi lanciare nuovamente la pianificazione in modo da avere ora tutti gli ordini pianificati nel modo corretto;
+**controlla documenti in ritardo con atp**: si se habilita este indicador, se activará simultáneamente el campo siguiente llamado **data inizio ms**; en este punto, el procedimiento de planificación realizará un razonamiento tal que si incluso una sola de las órdenes que se están planificando y generando está retrasada respecto a la fecha prevista, el sistema anulará todas las órdenes creadas y volverá a calcularlas desde la **data inizio ms** con la lógica de *tan pronto como sea posible* y propondrá la nueva fecha para las órdenes exactamente en el campo *Fecha sugerida* presente en la cuadrícula de resultados. En este punto, a través del botón dedicado **cambia data fine prevista con data suggerita** (presente en la pestaña de órdenes de la *pianificazione generale*), es posible reemplazar la fecha de finalización proyectada con la fecha sugerida recién calculada para luego lanzar nuevamente la planificación y así tener todas las órdenes planificadas de la manera correcta;
 
-**Rilascio automatico ordini pianificati**: se si decide di abilitare questo parametro, la pianificazione oltre a generare gli ordini come pianificati, li andrà anche a rilasciare automaticamente e quindi gli ordini pianificati di produzione diventeranno ordini di produzione, gli ordini pianificati di acquisto diventeranno RDA (richieste d'acquisto) e gli ordini pianificati di conto lavoro diventeranno ordini di conto lavoro;
+**Liberación automática de órdenes planificadas (Rilascio automatico ordini pianificati)**: si se decide habilitar este parámetro, la planificación, además de generar las órdenes como se planificaron, las liberará automáticamente, de modo que las órdenes planificadas de producción se convertirán en órdenes de producción, las órdenes planificadas de compra se convertirán en RDA (solicitudes de compra) y las órdenes planificadas de trabajo por encargo se convertirán en órdenes de trabajo por encargo;
 
-**pianificazione al più presto o al più tardi**: l’utente può decidere con quale logica deve essere eseguire la pianificazione generale tra: al più presto e al più tardi. La logica al più presto mira a iniziare le operazioni non appena possibile, quindi partire dalla data odierna; mentre, la logica al più tardi pianifica le operazioni il più tardi possibile senza ovviamente compromettere le scadenze, quindi partendo dalla data di consegna e andando a ritroso nel tempo. 
+**Planificación tan pronto como sea posible o tan tarde como sea posible (pianificazione al più presto o al più tardi)**: el usuario puede decidir con qué lógica debe ejecutarse la planificación general: ya sea tan pronto como sea posible o tan tarde como sea posible. La lógica de tan pronto como sea posible tiene como objetivo comenzar las operaciones lo antes posible, por lo tanto, partir de la fecha actual; mientras que la lógica de tan tarde como sea posible programa las operaciones lo más tarde posible sin comprometer las fechas límite, por lo tanto, comenzando desde la fecha de entrega y retrocediendo en el tiempo. 
 
-**pianificazione commesse lanciate o esecutive**: permette di abilitare i flag: lanciati ed esecutivi presenti nel tab *commesse*; a questo punto attivandoli sarà possibile visualizzare e selezionare anche le commesse in stato lanciato ed esecutivo per poi pianificarle nuovamente. È importante tenere presente che, per le commesse in stato lanciato o esecutivo, verranno ripianificati solamente quegli ordini pianificati che non sono già stati rilasciati;
+**Planificación de órdenes lanzadas o ejecutivas (pianificazione commesse lanciate o esecutive)**: permite habilitar los indicadores: lanzadas (lanciati) y ejecutivas (esecutivi) presentes en la pestaña *commesse*; al activarlos, será posible visualizar y seleccionar también las órdenes en estado lanzado y ejecutivo para luego planificarlas nuevamente. Es importante tener en cuenta que, para las órdenes en estado lanzado o ejecutivo, solo se volverán a planificar aquellos órdenes planificadas que aún no se han liberado;
 
-**Versione**: la procedura pianificherà le commesse nella versione che viene impostata in questo campo, se nella commessa di produzione non trova una versione inserita. La versione inserita nella commessa di produzione avrà una priorità maggiore rispetto alla versione inserita nei parametri della *Pianificazione generale*. Questo è un campo che deve essere valorizzato obbligatoriamente, altrimenti non sarà possibile procedere con la pianificazione;
+**versione**: el procedimiento planificará las órdenes en la versión que se establece en este campo, si en la orden de producción no encuentra una versión ingresada. La versión ingresada en la orden de producción tendrá una mayor prioridad que la versión ingresada en los parámetros de la *pianificazione generale*; este es un campo que debe ser completado obligatoriamente, de lo contrario no será posible proceder con la planificación;
 
-**Considera la disponibilità**: se attivo questo flag indica alla procedura che nel processo di pianificazione dovrà tenere conto della disponibilità proveniente dai magazzini indicati nella griglia sottostante, che sono quelli definiti all’interno della form [Calcolo Disponibilità](/docs/erp-home/registers/items/calculate-availability/); 
+**considera la disponibilità**: si se activa este indicador, indica al procedimiento que en el proceso de planificación deberá tener en cuenta la disponibilidad proveniente de los almacenes indicados en la cuadrícula siguiente, que son los definidos dentro del formulario [Cálculo de Disponibilidad (Calcolo Disponibilità)](/docs/erp-home/registers/items/calculate-availability/); 
 
-**Considera disponibilità al data fabbisogno o la minima nel periodo**: questi flag si attivano solamente se è attivo il flag **Considera la disponibilità**; Alla **data fabbisogno** significa che la procedura dovrà considerare la disponibilità nel momento in cui devo produrre l'ordine, mentre, nel caso della data **minima nel periodo** la procedura andrà a considerare la disponibilità minima nel periodo fino alla data impostata nel parametro *Pianificazione fino al*.
+**Considerar disponibilidad a la fecha de necesidad o la mínima en el período (Considera disponibilità al data fabbisogno o la minima nel periodo)**: estos indicadores se activan solo si está activo el indicador **considera la disponibilità**; a **la fecha de necesidad (data fabbisogno)** significa que el procedimiento deberá considerar la disponibilidad en el momento en que se deba producir la orden, mientras que, en el caso de **minima nel periodo**, el procedimiento tomará en cuenta la disponibilidad mínima en el período hasta la fecha establecida en el parámetro *pianificare fino al*.
 
-**Considera lotti in stato non disponibile**: anche questo flag si attiva solamente se è attivo il flag **Considera la disponibilità**; se attivo, la procedura dovrà considerare i lotti in stato non disponibile;      
+**considera lotti in stato non disponibile**: también este indicador se activa solo si está activo el flag **considera la disponibilità**; si se activa, el procedimiento deberá considerar los lotes en estado no disponible;      
 
-**Considera disponibilità anche per il primo livello**: anche questo flag si attiva solamente se è attivo il flag **Considera la disponibilità**; se attivo, la procedura dovrà considerare la disponibilità anche per il primo livello (quindi per l'articolo presente nella commessa di produzione);
+**considera disponibilità anche per il primo livello**: también este indicador se activa solo si está activo el indicador **considera la disponibilità**; si se activa, el procedimiento deberá considerar la disponibilidad también para el primer nivel (es decir, para el artículo presente en la orden de producción);
 
-**Considera anche disponibilità negativa**: se attivo, la procedura dovrà considerare anche le disponibilità negative al momento della pianificazione per l'articolo di primo livello; infatti, è possibile abilitare questo flag solo se è attivo il flag **Considera disponibilità anche per il primo livello**;      
+**considera anche disponibilità negativa**: si se activa, el procedimiento deberá considerar también las disponibilidades negativas al momento de la planificación para el artículo de primer nivel; de hecho, es posible habilitar este indicador solo si está activo el indicador **considera disponibilità anche per il primo livello**;      
 
-**Considera disponibilità provenienti da**: anche questi flag diventano attivabili solamente se attivato il flag **Considera la disponibilità** e permettono di indicare se si vuole che la procedura consideri le disponibilità provenienti dagli acquisti, dalle vendite, dal magazzino, dal conto lavoro e dalla produzione;
+**Considerar disponibilidad proveniente de (Considera disponibilità provenienti da)**: también estos indicadores se activan solo si está activo el indicador **considera la disponibilità** y permiten indicar si se desea que el procedimiento considere las disponibilidades provenientes de compras, ventas, almacén, trabajo por encargo y producción;
 
-**Reintegro scorta minima dell'articolo e reintegro punto di riordino dell'articolo**: il primo flag si attiva solamente se si va a settare il secondo. Questi due flag vanno ad indicare che la procedura dovrà prevedere il reintegro del punto di riordino stabilito per quell'articolo e se si vuole anche il reintegro della scorta minima dell'articolo; entrambi questi dati vengono inseriti nel tab [Approvvigionamento](/docs/erp-home/registers/items/create-new-item) dell'anagrafica;
+**Reabastecimiento del stock mínimo del artículo y reabastecimiento del punto de reorden del artículo (Reintegro scorta minima dell'articolo e reintegro punto di riordino dell'articolo)**: el primer indicador se activa solo si se establece el segundo. Estos dos indicadores indican que el procedimiento deberá prever el reabastecimiento del punto de reorden establecido para ese artículo y si también se desea el reabastecimiento del stock mínimo del artículo; ambos estos datos se ingresan en la pestaña [Aprovisionamiento (Approvvigionamento)](/docs/erp-home/registers/items/create-new-item) de su registro; 
 
-**Considera l'indice di copertura**: se il flag è attivo, la procedura dovrà tenere conto dell'indice di copertura che viene stabilito sempre nel tab *Approvvigionamento* dell'articolo;
+**considera l'indice di copertura**: si el indicador está activo, el procedimiento deberá tener en cuenta el índice de cobertura que se establece siempre en la pestaña *approvvigionamento* del artículo;
 
-**Considera anche le alternative dei materiali**: se attivo, nel momento della pianificazione della commessa la procedura dovrà andare a considerare anche le alternative dei materiali,presenti nel tab *alternative* della [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management), nel caso in cui non ci sia disponibilità sufficiente per il materiale principale indicato in distinta;            
+**Considerar también las alternativas de los materiales (Considera anche disponibilità negative)**: si se activa, al momento de la planificación de la orden el procedimiento deberá considerar también las alternativas de materiales presentes en la pestaña *alternativas* de la [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management), en caso de que no haya suficiente disponibilidad para el material principal indicado en la lista;            
 
-**Considera solo materiali alternativi**: si attiva solamente quando il flag **Considera anche le alternative dei materiali** è attivo; se attivo questo flag, viene verificata prima la disponibilità dei componenti alternativi in base alla priorità degli stessi, se non sufficiente verifica poi quella del componente principale; viene abilitato solo se è attivo il flag **Considera la disponibilità**;    
+**considera solo materiali alternativi**: se activa solo cuando el indicador **considera anche le alternative dei materiali** está activo; si se activa este indicador, se verifica primero la disponibilidad de los componentes alternativos según la prioridad de los mismos, si no es suficiente, luego se verifica la disponibilidad del componente principal; se activa solo si está activo el indicador **considera la disponibilità**;    
 
 :::note Nota
-I materiali alternativi vengono inseriti nel tab **Alternative**, relativo al materiale principale, presente nella [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+Los materiales alternativos se ingresan en la pestaña **alternative**, relacionada con el material principal, presente en la [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 :::
 
-**Considera le fasi alternative**: se attivo, questo flag indica che al momento della pianificazione bisognerà andare a considerare anche le fasi di lavoro alternative; attivando questo flag si attiverà il campo editabile successivo chiamato **Tolleranza per l'occupazione del C.d.L. %**, nel quale si potrà andare ad indicare la tolleranza di occupazione del centro di lavoro in %, oltre alla quale la procedura dovrà andare a considerare le fasi alternative alla fase di default.
+**considera le fasi alternative**: si se activa, este indicador indica que al momento de la planificación también se deberán considerar las fases de trabajo alternativas; al activar this flag se activará el campo editable siguiente llamado **Tolerancia para la ocupación del C.d.L. % (Tolleranza per l'occupazione del C.d.L. %)**, en el que se podrá indicar la tolerancia de ocupación del centro de trabajo en %, más allá de la cual el procedimiento deberá considerar las fases alternativas a la fase predeterminada.
 
-## Monitor
+## Monitoreo (Monitor)
 
-In questo tab, tramite l'attivazione o meno dei flag presenti, l'utente ha la possibilità di scegliere la visualizzazione dei risultati della pianificazione nel tab **Storico**.
+En esta pestaña, mediante la activación o desactivación de los indicadores presentes, el usuario tiene la posibilidad de elegir la visualización de los resultados de la planificación en la pestaña **storico**.
 
-Si può decidere se visualizzare i **Calendari** presi in considerazione (il Calendario di *Fabbrica* e il calendario delle *Capacità produttive*); si può decidere che venga segnalato se nella pianificazione erano presenti **Articoli privi di** *Parametri MRP*, privi di *Distinta base* o di *Ciclo di lavoro*, privi di *Fornitore preferenziale* (nel caso di ordini di acquisto), privi di *Terzista preferenziale* (per gli ordini di conto lavoro) e privi dell'indicazione della scorta minima per tutti quegli articoli che sono gestiti a scorta. Per ogni **Commessa di produzione** si può scegliere di visualizzare nello storico, il *Numero di righe schedulate* e il dettaglio di queste righe, le commesse in ritardo e le commesse scadute.
+Se puede decidir si visualizar los **calendari** considerados (el calendario de *fabbrica* y el calendario de *Capacidades productivas (Capacità produttive)*); se puede decidir que se señale si en la planificación había **Artículos sin** *Parámetros de MRP*, sin *distinta base* o sin *Ciclo de trabajo*, sin *Proveedor preferencial* (en el caso de órdenes de compra), sin *Terciario preferencial* (para órdenes de trabajo por encargo) y sin la indicación de la reserva mínima para todos aquellos artículos que se gestionan a stock. Para cada **commessa di produzione** se puede elegir visualizar en el histórico, el *Número de líneas programadas (Numero di righe schedulate)* y el detalle de estas líneas, las órdenes retrasadas y las órdenes vencidas.
 
-Per quanto riguarda gli **Ordini pianificati**, si può scegliere se visualizzare nello storico, il *Numero di ordini generati* e il loro *Dettaglio*, gli ordini *In ritardo* e *Scaduti*, le *Alternative materiali*; si può scegliere anche di essere avvisati nel caso in cui ci siano **Ordini pianificati privi di** *Materiale*, di *Fasi di lavorazione*, del *Fornitore* (per l'acquisto) e il *Terzista* (per il conto lavoro).
+En cuanto a los **Órdenes planificadas**, se puede elegir visualizar en el histórico, el *Número de órdenes generadas (Numero di ordini generati)* y su *dettaglio*, los órdenes *in ritardo* y *scaduti*, las *alternative materiali*; también se puede elegir ser notificado en caso de que haya **Órdenes planificadas sin** *materiale*, sin *fasi di lavorazione*, sin *fornitore* (para la compra) y sin *terzista* (para trabajo por encargo).
 
-**Legenda**: i flag attivi permettono di ricevere l'avviso e i dettagli riguardanti le voci selezionate.
+**Leyenda**: los indicadores activos permiten recibir la advertencia y los detalles relacionados con los elementos seleccionados.
 
-## Storico
+## Histórico (Storico)
 
-Nella griglia di questo tab vengono visualizzate tutte le informazioni riepilogative relative alla pianificazione della commessa.
+En la cuadrícula de esta pestaña se visualiza toda la información resumida relacionada con la planificación de la orden.
 
-**Progr. sched.**: visualizza un semplice progressivo dell'operazione di pianificazione lanciata dall'utente;
+**Progr. programada (Progr. sched.)**: visualiza un simple número progresivo de la operación de planificación lanzada por el usuario;
 
-**Operatore**: visualizza l'utente che ha lanciato la pianificazione ;
+**operatore**: visualiza al usuario que lanzó la planificación;
 
-**No. errori**: visualizza il numero degli errori registrati durante la procedura di pianificazione ;
+**No. errores (No. errori)**: visualiza el número de errores registrados durante el procedimiento de planificación;
 
-**Data inizio**: visualizza data e ora di inizio del processo di pianificazione ;
+**data inizio**: visualiza la fecha y hora de inicio del proceso de planificación;
 
-**Data fine**: visualizza data e ora di fine del processo di pianificazione ;
+**data fine**: visualiza la fecha y hora de finalización del proceso de planificación;
 
-**Dati schedulati provenienti da**: visualizza l'origine precisa dei dati schedulati;
+**Datos programados provenientes de (Dati schedulati provenienti da)**: visualiza el origen preciso de los datos programados;
 
-**Previsionale**: visualizza se i dati provengano dalle Previsioni di Vendita oppure dal Piano Principale di Produzione;
+**previsionale**: visualiza si los datos provienen de las Previsiones de Venta o del Plan Principal de Producción;
 
-**Periodo**: visualizza il tipo di previsione, settimanale o mensile;
+**periodo**: visualiza el tipo de previsión, semanal o mensual;
 
-**Giorno**: visualizza il giorno della settimana designato come giorno in cui deve cadere la data di fine della commessa di produzione schedulata direttamente da Definizione MPS.
+**giorno**: visualiza el día de la semana designado como el día en que debe caer la fecha de finalización de la orden de producción programada directamente desde Definición MPS.
 
-Tutte le altre colonne della griglia visualizzano le impostazioni utilizzate nel tab **Parametri** della *Pianificazione generale* relativa alla riga selezionata.
+Todas las demás columnas de la cuadrícula visualizan las configuraciones utilizadas en la pestaña **parametri** de la *pianificazione generale* relativa a la fila seleccionada.
 
-**Risultato pianificazione **
+**Resultado de la planificación (Risultato pianificazione)**
 
-In base alla riga selezionata nella griglia, in questa sezione compariranno i dettagli richiesti dall'utente nel tab **Monitor**.
+En función de la fila seleccionada en la cuadrícula, en esta sección aparecerán los detalles solicitados por el usuario en la pestaña **monitor**.
 
-Nel risultato della pianificazione , si possono vedere il numero della commessa appena pianificata, il numero degli ordini pianificati che sono stati generati da quella commessa e il dettaglio degli ordini pianificati che sono stati generati.
+En el resultado de la planificación, se pueden ver el número de la orden recién planificada, el número de las órdenes planificadas que se han generado a partir de esa orden y el detalle de las órdenes planificadas que se han generado.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para obtener más detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -3,261 +3,255 @@ title: MES
 sidebar_position: 5
 ---
 
-:::important A cosa serve
-La forma principale del Modulo di Esecuzione della Produzione (MES) di Fluentis è progettata per ottimizzare e semplificare il processo di dichiarazione delle attività produttive. Questa interfaccia consente agli operatori di monitorare e gestire in tempo reale le risorse di produzione, facilitando l'inserimento dei dati relativi alle fasi di lavorazione e alle quantità prodotte.
+:::important ¿Para qué sirve? (A cosa serve)
+La forma principal del Módulo de Ejecución de la Producción (MES) de Fluentis está diseñada para optimizar y simplificar el proceso de declaración de las actividades productivas. Esta interfaz permite a los operadores monitorizar y gestionar en tiempo real los recursos de producción, facilitando la inserción de datos relacionados con las fases de trabajo y las cantidades producidas.
 
-Gli operatori possono gestire facilmente l'inserimento e la modifica dei dati, grazie a funzionalità come il barcode Tokenizer e l'abilitazione di controlli specifici per garantire la correttezza delle registrazioni. Inoltre, il sistema supporta diversi metodi di ripartizione del tempo e delle quantità, consentendo un'analisi dettagliata delle performance produttive e garantendo una gestione efficiente delle risorse impiegate.
+Los operadores pueden gestionar fácilmente la inserción y modificación de datos, gracias a funcionalidades como el *tokenizador de códigos de barras* y la habilitación de controles específicos para garantizar la exactitud de los registros. Además, el sistema soporta diferentes métodos de asignación del tiempo y las cantidades, permitiendo un análisis detallado del rendimiento productivo y asegurando una gestión eficiente de los recursos utilizados.
 
-Questo approccio integrato non solo migliora la visibilità delle operazioni, ma contribuisce anche a ottimizzare i flussi di lavoro e la produttività complessiva dell'impresa.
+Este enfoque integrado no solo mejora la visibilidad de las operaciones, sino que también contribuye a optimizar los flujos de trabajo y la productividad general de la empresa.
 :::
 
-## *Pulsanti specifici*:  
-
-**Navigabilità**
-> *Precedente*: permette di passare al tab precedente;     
-> *Successivo*: permette di passare al tab successivo;     
-> *Aggiorna*: permette di aggiornare tutti i dati della form, da usare nel caso in cui vengano fatte modifiche sulla risorsa utilizzata;      
-> *Cancella selezione*: permette di annullare la selezioni delle fasi presenti nella griglia principale.     
-
-**Conferma segnalazione**
-> *Inizia*: permette di creare una segnalazione di produzione di apertura;    
-> *Avanza*: permette di creare una segnalazione di produzione di avanzamento;    
-> *Sospendi*: permette di creare una segnalazione di produzione di sospensione;    
-> *Riprendi*: permette di creare una segnalazione di produzione di ripresa;    
-> *Chiudi*: permette di creare una segnalazione di produzione di chiusura;    
-> *Annulla*: permette di azzerare tutti i dati inseriti in Fluentis MES.                   
-
-## Form principale
-
-La form principale si compone di una sezione con i seguenti campi ed una griglia contenente le fasi in lavoro: 
-
-- **Codice barcode**      
-Gran parte delle operazioni che possono essere effettuate in Fluentis MES, possono essere agevolate e velocizzate grazie all’utilizzo del campo *Codice barcode*, che se opportunamente configurato, rielabora in maniera intelligente i dati acquisiti tramite la lettura del barcode e autonomamente va ad inserire i valori nei campi corrispondenti.    
-Questo da un grande vantaggio all’operatore sia in termini di velocità di inserimento che di efficienza, dato che dovrà leggere i dati sempre nello stesso campo *Codice barcode* senza avere il problema di dover cambiare il focus.     
-I Barcode possono essere configurati all’interno della form Barcode tokenizer, presente in: Tabelle > Impostazioni generali > Barcode tokenizer.               
-Quindi, questo campo *Codice barcode*, nel MES, può essere utilizzato dall’operatore per aggiungere singole fasi o gruppi di fasi, o ad esempio anche le fasi di un intero ordine di produzione, oppure ancora caricare i lotti e/o serial number dei materiali da scaricare, il tutto semplicemente leggendo i vari barcode. 
-
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
-- **Workstation**      
-La procedura è in grado di riconoscere la workstation su cui sta lavorando e se a questa è stato associato un centro di lavoro, caricherà in automatico tutte le fasi che erano in lavorazione su quel centro di lavoro, a quel punto l’operatore può scegliere se proseguire con la segnalazione di quelle fasi o ad esempio aggiungerne altre. Tutte le ulteriori informazioni si possono consultare nella sezione dedicata alla [Workstation](/docs/production/mes/workstation).     
-
-- **Risorsa**      
-Il campo *Risorsa*, viene utilizzato per inserire un qualsiasi tipo di risorsa di produzione.     
-Nel caso in cui venga inserita una risorsa di tipo *Centro di lavoro*, questo verrà sostituito automaticamente anche nel relativo campo del *Centro di lavoro*, andando di conseguenza a caricare le fasi inerenti al nuovo centro appena inserito.    
-Nel caso in cui, invece venga inserita una risorsa di tipo *Dipendente*, questo sarà utilizzato come utente di dichiarazione. L'inserimento di una risorsa di tipo dipendente è richiesto obbligatoriamente nel caso in cui sia attivo il flag *Operatore obbligatorio* presente nel tab *Generali* delle [Risorse di produzione](/docs/production/mes/production-resources).        
-
-- **Centro di lavoro**
-Indica il centro di lavoro su cui l'operatore sta facendo la dichiarazione; è possibile visualizzare solo i centri di lavoro legati alla *Workstation*. Nel caso in cui, la *Workstation* non sia stata inserita, oppure non sia stato associato nessun *Centro di lavoro* alla *Workstation*, sarà possibile visualizzare tutte le *Risorse di produzione* di tipo *Centro di lavoro*.    
-
-- **Fasi in lavoro**
-Le fasi possono essere aggiunte all'interno della griglia tramite il campo *Codice barcode*, oppure utilizzando il pulsante specifico *Seleziona nuove fasi* presente nel menù di destra. La griglia contiene una serie di informazioni relative alla commessa, all'ordine di produzione, al progetto, alla variante, ecc... 
-Tutte queste informazioni possono essere rese visibili o nascoste tramite la gestione nel tab *Layout* delle [Risorse di produzione](/docs/production/mes/production-resources).   
-Per la riga selezionata, sulla parte destra della griglia, è possibile visualizzare l'immagine di default inserita nell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item); inoltre, con il doppio click verrà visualizzata a tutto schermo.       
-                
-### Tab Produzione      
-
-*Pulsanti specifici*:
-
-> *Pulisci risorsa*: permette di rimuovere il valore inserito nel campo *Risorsa*;    
-> *Seleziona nuove fasi*: permette di aprire un help per selezionare nuove fasi da aggiungere a quelle presenti nella griglia principale;      
-> *Elimina fase*: permette di rimuove la fase o le fasi selezionate dalla griglia principale.    
-
-Il tab **Produzione** è dedicato all'inserimento delle informazioni relative ai tempi di produzione / setup e alle quantità prodotte / scartate. Questo è l'unico che non può essere reso invisibile e si compone dei seguenti campi:
-> **Macchina**: in questo campo viene proposta di default la *Macchina* che è indicata nel *Centro di lavoro* se la fase deve essere ancora iniziata, mentre se sono già state inserite delle dichiarazioni, propone quella della dichiarazione precedente. Inoltre, è comunque possibile variarla manualmente, ma solo con una delle macchine alternative indicate nell'anagrafica della macchina principale;      
-> **Tempo lavoro**: permette di visualizzare / modificare manualmente il tempo di lavoro; è possibile variarne il comportamento tramite i flag *Inserimento tempo manuale* e *Tempo proposto* presenti in [Risorse di produzione](/docs/production/mes/production-resources). Il tempo viene calcolato automaticamente come differenza tra il tempo della dichiarazione attuale e della precedente;                   
-> **Tempo setup**: permette di inserire / modificare manualmente il tempo di lavoro;         
-> **Quantità prodotta**: permette di inserire la quantità prodotta con quella dichiarazione;         
-> **Quantità alternativa**: permette di inserire la quantità alternativa prodotta con quella dichiarazione;      
-> **Magazzino versamento**: indica il magazzino di carico dei prodotti realizzati con la dichiarazione;       
-> **Causale versamento**: indica la causale di carico dei prodotti realizzati con la dichiarazione;       
-> **Ubicazione versamento**: indica l'ubicazione di carico dei prodotti realizzati con la dichiarazione;       
-> **Magazzino versamento scarto**: indica il magazzino di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Causale versamento scarto**: indica la causale di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Ubicazione versamento scarto**: indica l'ubicazione di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Difetto**: indica il difetto di scarico dei prodotti realizzati e scartati con la dichiarazione; è attivabile un controllo dedicato tramite il flag *Difetto obbligatorio se dichiarato scarto* presente in [Risorse di produzione](/docs/production/mes/production-resources);           
-> **Causale di sospensione**: indica la causale di sospensione che viene utilizzata nella dichiarazione; nel caso in cui un operatore crei una sospensione, senza indicare la causale di sospensione, verrà utilizzata la causale di default indicata nel campo *Causale di sospensione proposta* presente nella form delle [Risorse di produzione](/docs/production/mes/production-resources).       
-
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).      
-
-### Tab Controlli qualità
-
-*Pulsanti specifici*:
-
-> *Seleziona articoli*: permette di selezionare quali articoli inserire nella tabella dei controlli qualità tra quelli prodotti o scartati;       
-> *Importa tutti*: permette di inserire nella tabella dei controlli qualitàtutti gli articoli prodotti o scartati;     
-> *Elimina controllo*: permette di eliminare il controllo selezionato;           
-> *Duplica prova*: permette di duplicare la prova selezionata;       
-> *Elimina prova*: permette di eliminare la prova selezionata.   
-
-Questo tab permette di gestire i controlli della qualità per gli articoli prodotti e/o scartati. 
-
-Le righe possono essere inserite all'interno della tabella *Controlli qualità* tramite i due pulsanti specifici.          
-In questa tabella vengono riportati i seguenti dati:
-> *Classe*: indica la classe dell'articolo;          
-> *Codice articolo*: indica il codice dell'articolo;          
-> *Variante*: indica la variante dell'articolo;    
-> *Dettaglio articolo da considerare*: indica il massimo dettaglio dell'articolo che si va a considerare per effettuare i test (Nessuno, Lotto, S.N., U.D.C.). Questo viene selezionato nel tab *Controlli Qualità* della gestione delle [Risorse di produzione](/docs/production/mes/production-resources);             
-> *Rifer. dettaglio*: indica il valore del *Dettaglio articolo da considerare*, ad esempio il numero del lotto;          
-> *U.M.*: indica l'unità di misura dell'articolo;    
-> *Quantità*: indica quantità dell'articolo;    
-> *Scarto*: se attivo, indica che la quantità indicata è di tipo scarto; se non attivo, invece, indica che la quantità prodotta e non scarta;             
-> *Descrizione articolo*: indica la descrizione dell'articolo;          
-> *Descrizione variante*: indica la descrizione della variante.      
-
-Se nell'ordine di produzione legato a quella fase, la fase è soggetta al controllo qualità e abbiamo già associato un piano di controllo (che viene ereditato dalla fase del ciclo di lavoro standard, ma ovviamente può essere variato manualmente sia nell'ordine pianificato che nell'ordine di produzione), le prove legate al piano di controllo indicato verranno riportate automaticamente all'interno della tabella *Prove*.      
-
-La tabella *Prove* si compone dei seguenti campi:         
-> *Sequenza*: indica la sequenza delle prove da effettuare;          
-> *Tipo di Prova*: indica il codice della prova da effettuare;         
-> *Descrizione tipo di prova*: indica la descrizione della prova da effettuare;           
-> *Categoria strumento*: indica la categoria dello strumento utilizzato;         
-> *Tipo valore*: indica se il valore è di tipo *Testo*, di tipo *Si/No* oppure di tipo *Numerico*;      
-> *Tipo limite*: permette di indicare un *Tipo limite*; si abilita solo se il *Tipo valore* è *Numerico*;       
-> *Valore Unità di misura*: indica l'unità di misura dei valori;           
-> *Valore nominale*: indica il valore numerico che deve avere la prova;      
-> *Limite minimo* / *Limite massimo*: indicano il limite minimo e massimo di errore che può avere la prova, in percentuale o valore assoluto in base al flag *%*; il *Limite minimo* va sottratto al *Valore nominale*, mentre il *Limite massimo* va sommato;       
-> *L. min (toll-/+)* / *L. Max (toll-/+)*: indica le tolleranze sui limiti minimo e massimo che si aggiungono alle tolleranze precedenti; può essere presente per esempio l'incertezza sull'unità di misura; è un valore percentuale;                
-> *%*: indica se i valori sono espressi in percentuale o sono assoluti;               
-> *Tipo controllo prova*: indica il tipo di controllo della prova;        
-> *Frequenza*: indica la frequenza del controllo;       
-> *Strumento di misura*: indica lo strumento utilizzato, nel caso siano presenti valori da rilevare; è composto da un Codice/Categoria;      
-> *Valore rilevato*: indica il valore rilevato (viene utilizzato se ho un valore puntuale);      
-> *Media valori rilevati*: indica la media dei valori rilevati (viene valorizzato in base ai valori inseriti nella tabella **Rilevazione valori multipli**);      
-> *Esito*: indica l'esito della prova e viene determinato in automatico in base ai parametri inseriti;       
-> *Quantità non conforme*: indica la quantità che è stata rilevata non conferme;        
-> *Magazzino*: indica il magazzino in cui sono presenti gli articoli non conformi; questo valore viene riportato automaticamente in base a quanto indicato nel *Tipo di controllo articolo*;                    
-> *Causale magazzino per articoli non conformi*: indica la causale con la quale saranno scaricati gli articoli non conformi;questo valore viene riportato automaticamente in base a quanto indicato nel *Tipo di controllo articolo*. Questa movimentazione viene effettuata al momento della registrazione della dichiarazione di produzione;                    
-> *Note*: permette di inserire una nota libera.       
+## *Botones específicos*:  
+
+**Navegación**  
+> *Anterior*: permite pasar a la pestaña anterior;  
+> *Siguiente*: permite pasar a la pestaña siguiente;  
+> *Actualizar*: permite actualizar todos los datos del formulario, a usar en caso de que se hagan modificaciones en el recurso utilizado;  
+> *Cancelar selección*: permite anular la selección de las fases presentes en la cuadrícula principal.  
+
+**Confirmar informe**  
+> *Iniciar*: permite crear un informe de producción de apertura;  
+> *Avanzar*: permite crear un informe de producción de avance;  
+> *Suspender*: permite crear un informe de producción de suspensión;  
+> *Reanudar*: permite crear un informe de producción de reanudación;  
+> *Cerrar*: permite crear un informe de producción de cierre;  
+> *Cancelar*: permite reiniciar todos los datos ingresados en Fluentis MES.  
+
+## Formulario principal
+
+El formulario principal se compone de una sección con los siguientes campos y una cuadrícula conteniendo las fases en trabajo: 
+
+- **codice barcode**    
+La mayor parte de las operaciones que pueden realizarse en Fluentis MES pueden ser facilitadas y aceleradas gracias al uso del campo *codice barcode*, que si está correctamente configurado, procesa de manera inteligente los datos adquiridos a través de la lectura del código de barras e inserta automáticamente los valores en los campos correspondientes.  
+Esto brinda una gran ventaja al operador tanto en términos de velocidad de inserción como de eficiencia, dado que solo tendrá que leer los datos siempre en el mismo campo *codice barcode* sin tener el problema de tener que cambiar el enfoque.  
+Los códigos de barras pueden ser configurados dentro del formulario *tokenizador de códigos de barras*, que se encuentra en: Tablas > Configuración general > Tokenizador de códigos de barras.  
+Por lo tanto, este campo *codice barcode* en el MES puede ser utilizado por el operador para agregar fases individuales o grupos de fases, o, por ejemplo, también las fases de una orden de producción completa, o incluso cargar los lotes y/o números de serie de los materiales a descargar, todo simplemente leyendo los diferentes códigos de barras.  
+
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode**, consulte la página relacionada con el [Tokenizador de códigos de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).
+
+- **workstation**  
+La procedimiento es capaz de reconocer la estación de trabajo en la que está trabajando y si se ha asociado un centro de trabajo, cargará automáticamente todas las fases que estaban en proceso en dicho centro de trabajo. En ese punto, el operador puede elegir si continuar con el informe de esas fases o, por ejemplo, agregar otras. Toda la información adicional se puede consultar en la sección dedicada a la [Estación de trabajo (Workstation)](/docs/production/mes/workstation).  
+
+- **risorsa**  
+El campo *risorsa* se utiliza para ingresar cualquier tipo de recurso de producción.  
+En el caso de que se ingrese un recurso del tipo *centro di lavoro*, este se reemplazará automáticamente también en el campo correspondiente de *centro di lavoro*, cargando así las fases relacionadas con el nuevo centro recién insertado.  
+En el caso de que, en cambio, se ingrese un recurso del tipo *dipendente*, este será utilizado como usuario de declaración. La inserción de un recurso de tipo empleado es obligatoria en caso de que esté activada la opción *Operador obligatorio* presente en la pestaña *generali* de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
+
+- **centro di lavoro**  
+Indica el centro de trabajo sobre el cual el operador está haciendo la declaración; es posible visualizar únicamente los centros de trabajo relacionados con la *workstation*. En caso de que no se haya ingresado la *workstation* o no se haya asociado ningún *centro di lavoro* a la *workstation*, será posible visualizar todos los *risorse di produzione* del tipo *centro di lavoro*.  
+
+- **Fases en trabajo**  
+Las fases pueden ser añadidas dentro de la cuadrícula a través del campo *codice barcode*, o utilizando el botón específico *seleziona nuove fasi* presente en el menú de la derecha. La cuadrícula contiene una serie de informaciones relacionadas con la orden, el pedido de producción, el proyecto, la variante, etc.  
+Toda esta información puede ser visible u oculta a través de la gestión en la pestaña *layout* de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
+Para la línea seleccionada, en la parte derecha de la cuadrícula, es posible visualizar la imagen por defecto incluida en el [Registro de artículos (Anagrafica articolo)](/docs/erp-home/registers/items/create-new-item); además, al hacer doble clic se visualizará a pantalla completa.  
+
+### Pestaña Producción  
+
+*Botones específicos*:  
+
+> *Limpiar recurso*: permite eliminar el valor ingresado en el campo *risorsa*;  
+> *Seleccionar nuevas fases*: permite abrir una ayuda para seleccionar nuevas fases para agregar a las presentes en la cuadrícula principal;  
+> *Eliminar fase*: permite eliminar la fase o fases seleccionadas de la cuadrícula principal.  
+
+La pestaña **Producción** está dedicada a la inserción de información relativa a los tiempos de producción/puesta en marcha y a las cantidades producidas/descartadas. Este es el único que no puede hacerse invisible y se compone de los siguientes campos:  
+> **macchina**: en este campo se propone por defecto la *macchina* que está indicada en el *centro di lavoro* si la fase debe comenzar, mientras que si ya se han ingresado declaraciones, propone la de la declaración anterior. Además, es posible variar manualmente, pero solo con una de las máquinas alternativas indicadas en el registro de la máquina principal;  
+> **Tiempo de trabajo (Tempo lavoro)**: permite visualizar/modificar manualmente el tiempo de trabajo; se puede variar su comportamiento a través de las opciones *inserimento tempo manuale* y *tempo proposto* presentes en los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources). El tiempo se calcula automáticamente como la diferencia entre el tiempo de la declaración actual y la anterior;  
+> **Tiempo de configuración (Tempo setup)**: permite ingresar/modificar manualmente el tiempo de trabajo;  
+> **quantità prodotta**: permite ingresar la cantidad producida con esa declaración;  
+> **quantità alternativa**: permite ingresar la cantidad alternativa producida con esa declaración;  
+> **magazzino versamento**: indica el almacén de carga de los productos realizados con la declaración;  
+> **causale versamento**: indica la causa de carga de los productos realizados con la declaración;  
+> **ubicazione versamento**: indica la ubicación de carga de los productos realizados con la declaración;  
+> **magazzino versamento scarto**: indica el almacén de descarga de los productos realizados y descartados con la declaración;  
+> **causale versamento scarto**: indica la causa de descarga de los productos realizados y descartados con la declaración;  
+> **ubicazione versamento scarto**: indica la ubicación de descarga de los productos realizados y descartados con la declaración;  
+> **difetto**: indica el defecto de descarga de los productos realizados y descartados con la declaración; se puede activar un control dedicado a través de la opción *difetto obbligatorio se dichiarato scarto* presente en los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources);  
+> **causale di sospensione**: indica la causa de suspensión que se utiliza en la declaración; en caso de que un operador cree una suspensión sin indicar la causa de suspensión, se utilizará la causa por defecto indicada en el campo *causale di sospensione proposta* presente en el formulario de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
+
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
+
+### Pestaña Controles de calidad
+
+*Botones específicos*:  
+
+> *Seleccionar artículos*: permite seleccionar qué artículos incluir en la tabla de controles de calidad entre los producidos o descartados;  
+> *Importar todos*: permite insertar en la tabla de controles de calidad todos los artículos producidos o descartados;  
+> *Eliminar control*: permite eliminar el control seleccionado;  
+> *Duplicar prueba*: permite duplicar la prueba seleccionada;  
+> *Eliminar prueba*: permite eliminar la prueba seleccionada.  
+
+Esta pestaña permite gestionar los controles de calidad para los artículos producidos y/o descartados.  
+
+Las líneas pueden ser insertadas dentro de la tabla *Controles de calidad* a través de los dos botones específicos.  
+En esta tabla se reportan los siguientes datos:  
+> *classe*: indica la clase del artículo;  
+> *codice articolo*: indica el código del artículo;  
+> *variante*: indica la variante del artículo;  
+> *dettaglio articolo da considerare*: indica el máximo detalle del artículo que se considera para realizar las pruebas (Ninguno, Lote, S.N., U.D.C.). Esto se selecciona en la pestaña *Controles de Calidad* de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources);  
+> *Referencia detalle (Rifer. dettaglio)*: indica el valor del *dettaglio articolo da considerare*, por ejemplo, el número del lote;  
+> *u.m.*: indica la unidad de medida del artículo;  
+> *quantità*: indica la cantidad del artículo;  
+> *scarto*: si está activo, indica que la cantidad indicada es de tipo descarte; si no está activo, indica que es la cantidad producida y no descartada;  
+> *descrizione articolo*: indica la descripción del artículo;  
+> *descrizione variante*: indica la descripción de la variante.  
+
+Si en el pedido de producción relacionado con esa fase, la fase está sujeta a control de calidad y ya hemos asociado un plan de control (que se hereda de la fase del ciclo de trabajo estándar, pero puede ser modificado manualmente tanto en el pedido planificado como en el pedido de producción), las pruebas relacionadas con el plan de control indicado se reportarán automáticamente dentro de la tabla *Pruebas*.  
+
+La tabla *Pruebas* se compone de los siguientes campos:  
+> *sequenza*: indica la secuencia de las pruebas a realizar;  
+> *tipo di prova*: indica el código de la prueba a realizar;  
+> *Descripción del tipo de prueba (Descrizione tipo di prova)*: indica la descripción de la prueba a realizar;  
+> *categoria strumento*: indica la categoría del instrumento utilizado;  
+> *tipo valore*: indica si el valor es de tipo *Texto*, de tipo *Sí/No* o de tipo *Numérico*;  
+> *tipo limite*: permite indicar un *Tipo límite*; se habilita solo si el *Tipo valor* es *Numérico*;  
+> *Valor Unidad de medida (Valore Unità di misura)*: indica la unidad de medida de los valores;  
+> *valore nominale*: indica el valor numérico que debe tener la prueba;  
+> *Límite mínimo (Limite minimo) / Límite máximo (Limite massimo)*: indican el límite mínimo y máximo de error que puede tener la prueba, en porcentaje o valor absoluto en base a la opción *%*; el *Límite mínimo* se resta del *Valor nominal*, mientras que el *Límite máximo* se suma;  
+> *L. min (toll-/+) / L. Max (toll-/+)*: indica las tolerancias sobre los límites mínimo y máximo que se suman a las tolerancias anteriores; puede estar presente, por ejemplo, la incertidumbre sobre la unidad de medida; es un valor porcentual;  
+> *%*: indica si los valores están expresados en porcentaje o son absolutos;  
+> *tipo controllo prova*: indica el tipo de control de la prueba;  
+> *frequenza*: indica la frecuencia del control;  
+> *strumento di misura*: indica el instrumento utilizado, en caso de que haya valores por recoger; se compone de un Código/Categoría;  
+> *valore rilevato*: indica el valor recogido (se utiliza si tengo un valor puntual);  
+> *media valori rilevati*: indica la media de los valores recogidos (se valora en base a los valores ingresados en la tabla **Detección de valores múltiples**);  
+> *esito*: indica el resultado de la prueba y se determina automáticamente según los parámetros ingresados;  
+> *Cantidad no conforme (Quantità non conforme)*: indica la cantidad que ha sido detectada como no conforme;  
+> *magazzino*: indica el almacén en el que se encuentran los artículos no conformes; este valor se reporta automáticamente en base a lo indicado en el *Tipo de control de artículo*;  
+> *Causa de almacén para artículos no conformes (Causale magazzino per articoli non conformi)*: indica la causa con la cual serán descargados los artículos no conformes; este valor se reporta automáticamente en base a lo indicado en el *Tipo de control de artículo*. Esta movimentación se realiza al momento del registro de declaración de producción;  
+> *note*: permite ingresar una nota libre.  
 
-La tabella **Rilevazione valori multipli** viene utilizzata nel caso in cui siano rilevati più valori e questi concorreranno a determinare la *Media valori rilevati*.
-Questa si compone delle seguenti colonne:
-> *Sequenza*: indica la sequenza dei valori rilevati;      
-> *Posizione*: è un campo descrittivo che permette di indicare in quale posizione è stata effettuata la misurazione;       
-> *Strumento di misura*: indica lo strumento utilizzato per quella rilevazione;            
-> *Valore rilevato*: indica il valore rilevato;            
-> *Note*: permette di inserire una nota libera.  
+La tabla **Detección de valores múltiples** se utiliza en el caso de que se registren múltiples valores y estos contribuyan a determinar la *Media de valores recogidos*.  
+Esta se compone de las siguientes columnas:  
+> *sequenza*: indica la secuencia de los valores recogidos;  
+> *posizione*: es un campo descriptivo que permite indicar en qué posición se realizó la medición;  
+> *strumento di misura*: indica el instrumento utilizado para esa medición;  
+> *valore rilevato*: indica el valor recogido;  
+> *note*: permite ingresar una nota libre.  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources). 
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-Maggiori dettagli sull'area relativa alla gestione della qualità sono presenti in [Qualità](/docs/quality/quality-intro).          
+Más detalles sobre el área relacionada con la gestión de calidad están presentes en [Calidad (Qualità)](/docs/quality/quality-intro).  
 
-### Tab Lotti e S/N
+### Pestaña Lotes y N/S
 
-*Pulsanti specifici*:
+*Botones específicos*:  
 
-> *Genera*: permette di generare i lotti e i serial number;        
-> *Elimina*: permette di eliminare il lotto / serial number selezionato.       
+> *Generar*: permite generar los lotes y los números de serie;  
+> *Eliminar*: permite eliminar el lote/número de serie seleccionado.  
 
-In questo tab è possibile visualizzare tutti gli articoli realizzati con l'indicazione delle relative quantità prodotte e scartate; inoltre, attraverso le apposite griglie è possibile inserire / modificare le informazioni relative ai *Lotti* e *Serial number*.         
+En esta pestaña es posible visualizar todos los artículos realizados con la indicación de las respectivas cantidades producidas y descartadas; además, a través de las cuadrículas adecuadas es posible ingresar/modificar la información relativa a los *lotti* y *serial number*.  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab Etichette
+### Pestaña Etiquetas
 
-*Pulsanti specifici*:
+*Botones específicos*:  
 
-> *Nuova*: permette di creare una riga per l'inserimento una nuova etichetta;          
-> *Cancella*: permette di cancellare la riga dell'etichetta selezionata;       
-> *Nuova UDC*: permette di rigenerare il codice dell'UDC selezionata;      
-> *Stampa selezione*: permette di stampare solo le etichette selezionate;       
-> *Stampa tutto*: permette di stampare tutte le etichette.          
+> *Nueva*: permite crear una línea para la inserción de una nueva etiqueta;  
+> *Eliminar*: permite eliminar la línea de la etiqueta seleccionada;  
+> *Nuevo UDC*: permite regenerar el código del UDC seleccionado;  
+> *Imprimir selección*: permite imprimir solo las etiquetas seleccionadas;  
+> *Imprimir todo*: permite imprimir todas las etiquetas.  
 
-Nel tab **Etichette** vengono create automaticamente le etichette inerenti agli articoli prodotti.
-La quantità di articoli per ciascuna etichetta è determinata dalle informazioni inserite nell'anagrafica articolo come segue:
-1. Tab *Confezionamento*: considera l'UDC e la quantità inserite nella riga con il flag "Unità di carico obbligatoria" attivo;       
-2. Tab *Peso/Dimensioni*: considera l'UDC e la quantità inserite nei campi *Tipo unità di carico* e *Numero articoli per unità di carico*;    
-3. Tab *Peso/Dimensioni* > *Numero colli*: considera la quantità inserita in *Articoli presenti in un collo*; in questo caso non verrà proposta l'UDC.
+En la pestaña **Etiquetas** se crean automáticamente las etiquetas relacionadas con los artículos producidos.  
+La cantidad de artículos por cada etiqueta es determinada por la información ingresada en el registro del artículo de la siguiente manera:  
+1. Pestaña *confezionamento*: considera el UDC y la cantidad ingresada en la línea con la opción "Unidad de carga obligatoria" activada;  
+2. Pestaña *Peso/Dimensiones (Peso/Dimensioni)*: considera el UDC y la cantidad ingresada en los campos *Tipo de unidad de carga* y *Número de artículos por unidad de carga*;  
+3. Pestaña *Peso/Dimensiones* > *numero colli*: considera la cantidad ingresada en *Artículos presentes en un bulto*; en este caso no se propondrá el UDC.
 
-Inoltre, l'operatore potrà inserire manualmente o tramite il campo *Codice barcode* *Lotti* e *Serial number* se necessari.      
-Il campo **Stato stampa** può assumere i valori di *Non stampato*, *Stampato* o *Ristampato* in base al numero di volte che l'etichetta è stata stampata.
+Además, el operador podrá ingresar manualmente o mediante el campo *codice barcode* *Lotes* y *Números de serie* si son necesarios.  
+El campo **stato stampa** puede asumir los valores de *No impreso*, *Impreso* o *Reimpreso* en base al número de veces que la etiqueta ha sido impresa.
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab Materiali
+### Pestaña Materiales
 
-Nel tab **Materiali** vengono riportati automaticamente i materiali consumati in base alla quantità dell'articolo padre da produrre e alla sua distinta base; solo nel caso in cui sia attivo il flag **Dichiarazione quantità materiale obbligatoria** presente nel tab *Generali* della gestione delle [Risorse di produzione](/docs/production/mes/production-resources), il materiale verrà proposto evidenziato in giallo con quantità zero e l'operatore sarà costretto ad inserirlo manualmente.   
-Inoltre, è possibile indicare le quantità scartate di ogni singolo materiale con anche magazzino e causale di scarto; attraverso le apposite griglie è possibile inserire / modificare le informazioni relative ai *Lotti* e *Serial number* relativi al singolo materiale selezionato.            
+En la pestaña **Materiales** se reportan automáticamente los materiales consumidos en base a la cantidad del artículo padre a producir y a su lista de materiales; solo en caso de que esté activada la opción **dichiarazione quantità materiale obbligatoria** presente en la pestaña *generali* de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources), el material se propondrá resaltado en amarillo con cantidad cero y el operador estará obligado a ingresarlo manualmente.  
+Además, es posible indicar las cantidades descartadas de cada material individualmente, junto con el almacén y la causa de descarte; a través de las cuadrículas adecuadas se pueden ingresar/modificar las informaciones relacionadas a los *lotti* y *serial number* relativos al material seleccionado.  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab Squadra
+### Pestaña Equipo
 
-*Pulsanti specifici*:
+*Botones específicos*:  
 
-> *Entra in squadra*: permette di inserire un o più operatori all'interno della squadra di lavoro;        
-> *Esci da squadra*: permette di fare uscire un o più operatori dalla squadra di lavoro;      
-> *Sostituisce operatore*: permette di sostituire un operatore (attivo) con un altro mantenendo le date/ore di ingresso e uscita dalla squadra;        
-> *Rimuovi da squadra*: permette di rimuovere la riga relativa all'operatore selezionato.        
+> *entra in squadra*: permite insertar uno o más operadores dentro del equipo de trabajo;  
+> *esci da squadra*: permite hacer salir a uno o más operadores del equipo de trabajo;  
+> *Reemplazar operador (Sostituisce operatore)*: permite sustituir un operador (activo) por otro manteniendo las fechas/hours de entrada y salida del equipo;  
+> *rimuovi da squadra*: permite eliminar la línea relativa al operador seleccionado.  
 
-Il tab **Squadra** si compone di due sezioni:
-> Elenco operatori attivi: permette di inserire e visualizzare gli operatori attivi nella dichiarazione di produzione; il primo operatore inserito assume il flag di *Capo squadra* (che può essere cambiato manualmente);            
-> Elenco operatori non attivi: permette di visualizzare gli operatori non più attivi (che hanno lavorato su questa o queste fasi nelle dichiarazioni precedenti).
+La pestaña **Equipo** se compone de dos secciones:  
+> Lista de operadores activos: permite insertar y visualizar los operadores activos en la declaración de producción; el primer operador insertado asume el flag de *capo squadra* (que puede ser cambiado manualmente);  
+> Lista de operadores inactivos: permite visualizar a los operadores que ya no son activos (que han trabajado en esta o esas fases en declaraciones anteriores).  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab Analisi
+### Pestaña Análisis
 
-Il tab **Analisi** è dedicato alla visualizzazione e consultazione dei dati relativi alle performance dell'attività di produzione; questo si compone di tre sezioni:
-- Diagrammi OEE
-- Diagrammi a barre: **Analisi quantità** e **Analisi tempo**
-- Tabelle: **Valori quantità** e **Valori tempi** 
+La pestaña **Análisis** está dedicada a la visualización y consulta de datos relacionados con el rendimiento de la actividad de producción; se compone de tres secciones: 
+- Diagramas OEE 
+- Diagramas de barras: **analisi quantità** y **analisi tempo** 
+- Tablas: **valori quantità** y **valori tempi** 
 
-L'**OEE**, **Overall Equipment Effectiveness** (Efficienza complessiva della risorsa produttiva) è un indice di performance (KPI) per misurare la capacità produttiva di una azienda di produzione.
+El **OEE**, **Overall Equipment Effectiveness (Eficiencia global del recurso productivo)** es un índice de rendimiento (KPI) para medir la capacidad productiva de una empresa de producción.
 
-Il valore **OEE** è costituito dai seguenti tre fattori:
-- **Disponibilità operativa (Availability)**: percentuale del tempo lavorato (B) rispetto al tempo disponibile (A).
-Si utilizza il rapporto tra il tempo disponibile di lavoro dell'impianto (A) rispetto al reale tempo in cui l'impianto ha prodotto (B).
-- **Tempi lavorazione (Performance) - Efficienza**: percentuale tra gli articoli realmente lavorati (D) rispetto agli articoli teoricamente lavorabili (C).
-Nella pianificazione vengono calcolati gli articoli lavorabili a regime ottimale (C), eventuali riduzioni di tali performance indicano un calo produttivo (D).
-- **Qualità del prodotto (Quality)**: è il rapporto percentuale tra gli articoli conformi (F) rispetto agli articoli prodotti (E).
-Si evidenziano in tal modo cali produttivi relativi a scarti o rilavorazioni che incidono sull'inefficienza generale.
-- **Efficienza complessiva (OEE)**: deriva dal calcolo dalle tre precedenti analisi ed è dato da: 
+El valor **OEE** está constituido por los siguientes tres factores: 
+- **Disponibilidad operativa (Availability)**: porcentaje del tiempo trabajado (B) con respecto al tiempo disponible (A). Se utiliza la relación entre el tiempo de disponibilidad de trabajo de la planta (A) con respecto al tiempo real en que la planta ha producido (B). 
+- **Tiempos de procesamiento (Performance) - Eficiencia**: porcentaje entre los artículos realmente trabajados (D) con respecto a los artículos teóricamente trabajables (C). Durante la planificación, se calculan los artículos trabajables en régimen óptimo (C), cualquier reducción de dicha eficiencia indica una caída en la producción (D). 
+- **Calidad del producto (Quality)**: es la relación porcentual entre los artículos conformes (F) con respecto a los artículos producidos (E). Se evidencian así las caídas productivas relativas a desperdicios o reprocesos que inciden en la ineficiencia general. 
+- **oee**: deriva del cálculo de los tres análisis anteriores y está dada por:
 
-OEE = Availability x Performance x Quality x 100 = B/A x D/C x F/E x 100
+OEE = Disponibilidad x Rendimiento x Calidad x 100 = B/A x D/C x F/E x 100
 
-L'indice di **Efficienza complessiva** può essere calcolato con o senza l'attrezzaggio.
+El índice de **Eficiencia global** puede ser calculado con o sin el montaje.
 
-Nella sezione dei diagrammi a barre sono presenti i diagrammi **Analisi quantità** e **Analisi tempo** nei quali è possibile visualizzare i dati di quantità e tempi preventivi e quelli  
-consuntivi dichiarati fino a quel momento.      
+En la sección de diagramas de barras están presentes los diagramas de **Análisis de cantidades** y **Análisis de tiempo** en los cuales es posible visualizar los datos de cantidades y tiempos preventivos y los que se han declarado hasta ese momento.
 
-Nelle tabelle presenti nell'ultima sezione, è ancora possibile visualizzare i dati di quantità e tempi preventivi e quelli consuntivi dichiarati fino a quel momento, ma in questo caso sottoforma di dati tabellari.
+En las tablas presentes en la última sección, también es posible visualizar los datos de cantidades y tiempos preventivos y aquellos que se han declarado hasta ese momento, pero en este caso en forma de datos tabulares.
 
-I dati riportati in tutte le sezioni del tab **Analisi** sono relativi alle fasi selezionate, nel caso in cui non sia selezionata nessuna delle fasi i dati riportatati rappresenteranno il totale di tutte le fasi presenti nella griglia *Fasi in lavoro*.
+Los datos reportados en todas las secciones de la pestaña **Análisis** son relativos a las fases seleccionadas, en caso de que no se seleccione ninguna de las fases, los datos reportados representarán el total de todas las fases presentes en la cuadrícula *Fases en trabajo*.
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab Documenti e Istruzioni operative
+### Pestaña Documentos e Instrucciones operativas
 
-Questo tab si compone delle sezioni **Documenti** e **Istruzioni operative**.
+Esta pestaña se compone de las secciones **documenti** e **istruzioni operative**.
 
-La sezione **Documenti**, a sua volta si suddivide in:
-> **Documenti allegati alla fase selezionata**: permette di visualizzare tutti i documenti allegati all'*Anagrafica articolo*, all'*Ordine cliente*, alla *Commessa di produzione*, all'*Ordine di produzione*, in accordo con quanto indicato nella tab *Gestione documentale* presente nelle [Risorse di produzione](/docs/production/mes/production-resources);       
-> **Documenti allegati alla segnalazione della fase selezionata**: permette di consultare o allegare direttamente alla dichiarazione dei nuovi documenti anche tramite drag & drop;       
-> **Istruzioni operative**: permette di visualizzare tutti i documenti allegati alla fase del ciclo di produzione.          
+La sección **Documentos** se subdivide a su vez en:  
+> **Documentos adjuntos a la fase seleccionada**: permite visualizar todos los documentos adjuntos al *anagrafica articolo*, al *ordine cliente*, a la *ordine di produzione*, en acuerdo con lo indicado en la pestaña *gestione documentale* presente en los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources);  
+> **Documentos adjuntos a la declaración de la fase seleccionada**: permite consultar o adjuntar directamente a la declaración nuevos documentos incluso mediante arrastrar y soltar (drag & drop);  
+> **Instrucciones operativas**: permite visualizar todos los documentos adjuntos a la fase del ciclo de producción.  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab Note
+### Pestaña Notas
 
-Il tab si compone di due sezioni:            
-> **Elenco note (seleziona una fase)**: permette di consultare e visualizzare le note relative alla fase selezionata; le note che vengono visualizzate in questa tabella sono prese direttamente dalle fasi del ciclo di lavoro e più precisamente dal tab *Annotazioni*;                
-> **Elenco note segnalazione**: permette di inserire e consultare le note relative alla dichiarazione in corso.     
+La pestaña se compone de dos secciones:  
+> **Lista de notas (seleccionar una fase)**: permite consultar y visualizar las notas relativas a la fase seleccionada; las notas que se visualizan en esta tabla son tomadas directamente de las fases del ciclo de trabajo y más precisamente de la pestaña *annotazioni*;  
+> **Lista de notas de declaración (Elenco note segnalazione)**: permite ingresar y consultar las notas relativas a la declaración en curso.  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab Segnalazioni precedenti
+### Pestaña Informes anteriores
 
-Questo tab permette di visualizzare tutte le segnalazioni precedenti relative alla fase selezionata.
+Esta pestaña permite visualizar todos los informes anteriores relacionados con la fase seleccionada.
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).  
 
-### Tab ExtraData
+### Pestaña ExtraData
 
-Questo tab si compone di due griglie:
-> *Elenco extra data (selezionare una fase)*: permette di gestire gli extra data relativi alla fase selezionata;       
-> *Elenco extra data segnalazione*: permette di gestire gli extra data relativi alla dichiarazione che si sta eseguendo.       
+Esta pestaña se compone de dos cuadrículas:  
+> *Lista de datos extra (Elenco extra data) (seleccionar una fase)*: permite gestionar los datos extra relativos a la fase seleccionada;  
+> *Lista de datos extra de declaración (Elenco extra data segnalazione)*: permite gestionar los datos extra relativos a la declaración que se está realizando.  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
-
-
+Es posible modificar el funcionamiento y el layout del formulario a través de la gestión de los [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).

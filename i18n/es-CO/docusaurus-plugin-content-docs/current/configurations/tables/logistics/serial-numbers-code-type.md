@@ -1,32 +1,32 @@
 ---
-title: Tipo codice serial number
+title: tipo codice serial number
 sidebar_position: 27
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipo codice serial number**.
+La tabla se encuentra en la ruta **Tablas > Logística > tipo codice serial number** (Tabelle > Logistica > Tipo codice serial number).
 
-In questa tabella è possibile codificare i *Tipi di codici serial number* da gestire poi nel database.
+En esta tabla es posible codificar los *Tipos de códigos de número de serie* para luego gestionarlos en la base de datos.
 
-**Ricerca Tipi codice serial number**
+**Búsqueda de Tipos de código número de serie (Ricerca Tipi codice serial number)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati nell'aria di risultato.
+El formulario consta de un área de filtro y de una de resultados. Una vez configurados los filtros deseados, solo será necesario hacer clic en el botón **ricerca** para visualizar los resultados en el área de resultados.
 
-**Inserimento Tipi codice serial number**
+**Inserción de Tipos de código número de serie (Inserimento Tipi codice serial number)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. Inserire il **Codice** e la **Descrizione** del tipo codice serial number, salvare la riga e decidere quali parametri si vogliono utilizzare per la composizione del tipo codice serial number appena creato.
+Para poder ingresar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**. Ingrese el **Código** y la **Descripción** del tipo de código de número de serie, guarde la línea y decida qué parámetros se desean utilizar para la composición del tipo de código de número de serie recién creado.
 
-Per ogni parametro utilizzato si può decidere da quanti caratteri deve essere formato ed eventualmente anche il carattere di riempimento da utilizzare. Per esempio, con il parametro “Numero progressivo” impostando come carattere di riempimento lo “0” e come Lunghezza 5 verranno creati lotti con come primo numero lo 00000, poi lo 00001, poi lo 00002 e così via. 
+Para cada parámetro utilizado, se puede decidir de cuántos caracteres debe estar formado y, eventualmente, también el carácter de relleno a utilizar. Por ejemplo, con el parámetro “Número progresivo (Numero progressivo)” configurando el carácter de relleno como “0” y la Longitud en 5, se crearán lotes con el primer número como 00000, luego 00001, luego 00002 y así sucesivamente.
 
-Il **Tipo codice serial number** deve poi essere agganciato all'*Anagrafica articolo* nel campo omonimo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-item), in modo che nelle procedure che creano automaticamente il codice serial number per l'articolo in questione il SN stesso venga generato secondo le regole impostate qui.
+El **tipo codice serial number** debe luego ser vinculado al *anagrafica articolo* en el campo del mismo nombre situado en la pestaña [Lotes y número de serie (Lotti e serial number)](/docs/erp-home/registers/items/create-new-item), de modo que en los procedimientos que crean automáticamente el código de número de serie para el artículo en cuestión, el SN mismo se genere de acuerdo con las reglas establecidas aquí.
 
-#### Dettagli tipo codice serial number 
+#### Detalles del tipo de código número de serie (Dettagli tipo codice serial number)
 
-> *Classe*: riporta la classe dell'articolo;    
-> *Matricola*: riporta il codice articolo;     
-> *Caratteristica*: riporta la caratteristica dell'anagrafica articolo;     
-> *Cat. Merceologica*: riporta la categoria merceologica dell'anagrafica articolo;    
-> *Tipo Articolo*: riporta il tipo articolo dell'anagrafica articolo;    
-> *Variante*: riporta la variante dell'articolo;     
-> *Caratteri alfabetici*:  permette di inserire dei caratteri alfabetici.        
+> *Clase*: reporta la clase del artículo;    
+> *Matrícula*: reporta el código del artículo;     
+> *Característica*: reporta la característica del registro del artículo;     
+> *Cat. Mercantil*: reporta la categoría mercantil del registro del artículo;    
+> *Tipo de Artículo*: reporta el tipo de artículo del registro del artículo;    
+> *Variante*: reporta la variante del artículo;     
+> *Caracteres alfabéticos*: permite ingresar caracteres alfabéticos.        
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

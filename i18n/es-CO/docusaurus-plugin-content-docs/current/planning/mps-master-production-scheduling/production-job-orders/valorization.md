@@ -1,190 +1,189 @@
 ---
-title: Costificazione
+title: costificazione
 sidebar_position: 6
 ---
 
-:::important A cosa serve
-La **Costificazione** delle commesse di produzione rappresenta un elemento cruciale nella gestione efficace dei processi produttivi aziendali.         
-Questo sistema di gestione permette di stabilire, monitorare e confrontare i costi previsti ed effettivi associati a una commessa, fornendo un quadro chiaro e dettagliato delle risorse impiegate.         
-Attraverso un'interfaccia strutturata, il sistema consente di impostare parametri preliminari, gestire documenti e inserire o modificare costi aggiuntivi, sia a livello globale che specifico per ogni commessa.          
-La possibilità di analizzare i costi in maniera sintetica e analitica, e di apportare correzioni e risparmi, rende la **Costificazione** uno strumento essenziale per mantenere la competitività e l'efficienza produttiva.
+:::important ¿Para qué sirve? (A cosa serve)  
+La **costificazione** de los pedidos de producción representa un elemento crucial en la gestión efectiva de los procesos productivos empresariales.  
+Este sistema de gestión permite establecer, monitorear y comparar los costos previstos y reales asociados a un pedido, proporcionando un cuadro claro y detallado de los recursos empleados.  
+A través de una interfaz estructurada, el sistema permite configurar parámetros preliminares, gestionar documentos e ingresar o modificar costos adicionales, tanto a nivel global como específico para cada pedido.  
+La posibilidad de analizar los costos de manera sintética y analítica, y de realizar correcciones y ahorros, convierte la **costificazione** en una herramienta esencial para mantener la competitividad y la eficiencia productiva.
 :::
 
-**Parametrizzazioni preliminari**   
+**Parametrizaciones preliminares** (Parametrizzazioni preliminari)  
 
-Prima di procedere vedasi quando indicato nelle seguenti pagine in merito alla *Costificazione delle commesse di produzione*:    
+Antes de proceder, consulte lo indicado en las siguientes páginas respecto a la *costificazione de los pedidos de producción*:  
 
-> [Parametri MS -> tab costificazione commessa](/docs/configurations/parameters/production/mps-parameters)  
-> [Tipo costificazione commessa](/docs/configurations/tables/production/production-job-order-cost-type)      
-> [Tipi documenti](/docs/configurations/tables/production/documents-types)     
-> [Parametri conto lavoro -> Valor. lavorazione materiali a costo](/docs/configurations/parameters/production/subcontractor-parameters/)       
+> [Parámetros MS -> pestaña costificación del pedido](/docs/configurations/parameters/production/mps-parameters)  
+> [Tipo costificación del pedido](/docs/configurations/tables/production/production-job-order-cost-type)  
+> [Tipos de documentos](/docs/configurations/tables/production/documents-types)  
+> [Parámetros de trabajo por encargo -> Valorización. tratamiento de materiales a costo](/docs/configurations/parameters/production/subcontractor-parameters/)  
 
-*Pulsanti specifici*:
- 
-> **Costi aggiuntivi**: permette di inserire dei costi aggiuntivi che possono essere proposti di default in ogni successiva costificazione (questi costi non sono legati alla singola commessa, ma sono globali). Tali costi si dividono in *Costi diretti*, *Costi generali* e *Altri costi*. Questi verranno riportati di default nelle corrispondenti sezioni di costi preventivi e consuntivi nel tab *Costi totali*;     
-> **Esegui costificazione**: permette di lanciare la procedura di costificazione commesse;    
-> **Inserisci costificazione**: permette di inserire una nuova costificazione; in automatico verranno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono essere variati manualmente per la singola costificazione;     
-> **Cancella costificazione**: permette di cancellare una costificazione già creata;     
-> **Esplodi costificazione**: permette di esplodere l'albero dei documenti di una costificazione già creata. 
+*Botones específicos* (Pulsanti specifici):
 
-:::note Nota
-Il tab **Costificazione** è presente nella gestione sia delle commesse monoprodotto che in quella delle multiprodotto; nel caso delle multiprodotto la costificazione perderà in esame tutti gli articoli presenti in quella commessa.
-::: 
-
-Questo tab si compone di una sezione di testata contenente le informazioni relative alla costificazione selezionata e da una serie di tab sottostanti: **Dettaglio costi**, **Costi totali** e **Analisi costi**.          
-Nella seziona di testata è presente una griglia contenente l'elenco di tutte le valorizzazioni lanciate per quella commessa, mentre nella parte destra vengono mostrate le informazioni generali relative alla costificazione selezionata.             
-Nella ribbon bar sono presenti i pulsanti che permettono di aprire i [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, la [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) e il [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route). 
-Tramite il pulsante **Inserisci costificazione**, in automatico sarà creata una nuova costificazione e verranno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono ancora essere variati manualmente per la singola riga.           
-Selezionando una riga di costificazione è possibile esplodere l'albero dei documenti tramite il pulsante **Esplodi costificazione**, oppure eliminarla con il pulsante **Cancella costificaizone**.        
-Tramite il pulsante **Costi aggiuntivi**, invece, è possibile inserire dei costi aggiuntivi che possono essere proposti di default in ogni successiva costificazione (questi costi non sono legati alla singola commessa, ma sono globali). Tali costi si dividono in *Costi diretti, Costi generali e Altri costi*. Questi verranno riportati di default nelle corrispondenti sezioni di costi preventivi e consuntivi nel tab **Costi totali**. Altrimenti sarà sempre possibile inserirli o modificarli manualmente nella relativa sezione del tab costi totali.           
-Una volta decisi tutti i parametri, per eseguire o rieseguire una costificazione, sarà sufficiente selezionarla e premere il pulsante **Esegue costificazione**.
-
-## Dettaglio costi
-
-
-Nel tab dettaglio costi vengono mostrate le informazioni di dettaglio dei costi relativi alla costificazione selezionata nella parte superiore della form. 
-Nella tabella di sinistra è possibile visualizzare l'albero dei documenti che compongono la costificazione con le seguenti informazioni:
-**Tipo documento**: indica la tipologia del documento;    
-**Anno**: indica l'anno del documento;     
-**Numero**: indica il numero del documento;     
-**Lotto**: indica il numero di lotto del documento (se presente);     
-**Tipo**: indica il codice della tipologia del documento;    
-**Classe**: indica la classe dell'articolo presente nel documento;     
-**Codice articolo**: indica il codice dell'articolo presente nel documento;    
-**Variante**: indica la variante dell'articolo presente nel documento;      
-**U.M.**: indica l'unità di misura dell'articolo presente nel documento;      
-**Quantità**: indica la quantità dell'articolo presente nel documento;      
-**Cst. tot. previsto**: indica il costo totale previsto (preventivo) dell'articolo presente nel documento;      
-**Cst. tot. effettivo**: indica il costo totale effettivo (consuntivo) dell'articolo presente nel documento;      
-**Descrizione articolo**: indica la descrizione dell'articolo presente nel documento;      
-**Descrizione variante**: indica la descrizione della variante dell'articolo presente nel documento.      
-
-Una volta selezionato un documento dall'albero, nella parte destra della form vengono visualizzate tutte le informazioni di dettaglio relative allo stesso, suddivise per:
-
-#### *Lavorazioni interne*  
-
-**C.D.L.**: indica il codice del centro di lavoro;    
-**Macchina**: indica il codice della macchina;     
-**Grp MDO**: indica il codice del gruppo manodopera;     
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M. Tempi**: indica l'unità di misura dei tempi;    
-**T. Setup previsto**: indica il tempo di setup previsto;     
-**T. Setup effettivo**: indica il tempo di setup effettivo;    
-**T. Macchina previsto**: indica il tempo macchina previsto;    
-**T. Macchina effettivo**: indica il tempo macchina effettivo;     
-**T. MDO previsto**: indica il tempo manodopera previsto;    
-**T. MDO effettivo**: indica il tempo manodopera effettivo;    
-**Descrizione C.D.L.**: indica la descrizione dell'articolo del centro di lavoro; 
-**Descrizione macchina**: indica la descrizione dalla macchina;     
-**Descrizione Grp. MDO**: indica la descrizione del gruppo manodopera;        
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto. 
+> **costi aggiuntivi**: permite ingresar costos adicionales que pueden ser propuestos por defecto en cada costificación futura (estos costos no están relacionados con un pedido específico, sino que son globales). Dichos costos se dividen en *Costos directos*, *Costos generales* y *Otros costos*. Estos se reportarán por defecto en las correspondientes secciones de costos previstos y consumidos en la pestaña *Costos totales*.  
+> **Ejecutar costificación (Esegui costificazione)**: permite iniciar el procedimiento de costificación de pedidos;  
+> **inserisci costificazione**: permite ingresar una nueva costificación; automáticamente se insertarán todos los datos por defecto ingresados en la fase de parametrización preliminar, los cuales pueden ser modificados manualmente para cada costificación;  
+> **cancella costificazione**: permite eliminar una costificación ya creada;  
+> **esplodi costificazione**: permite desglosar el árbol de documentos de una costificación ya creada.  
 
 :::note Nota
-Nel caso in cui il centro di lavoro effettivo sia diverso da quello previsto, in questa tabella verranno visualizzate due righe, una con il centro di lavoro previsto con i relativi costi ed una con il centro di lavoro effettivo. 
+La pestaña **costificazione** está presente tanto en la gestión de pedidos mono producto como en la de múltiples productos; en el caso de los múltiples productos, la costificación tendrá en cuenta todos los artículos presentes en ese pedido.
 ::: 
 
-#### *Lavorazioni esterne*
+Esta pestaña se compone de una sección de encabezado que contiene la información relativa a la costificación seleccionada y una serie de pestañas subordinadas: **Detalles de costos**, **Costos totales** y **Análisis de costos**.  
+En la sección de encabezado hay una cuadrícula que contiene la lista de todas las valorizaciones lanzadas para ese pedido, mientras que en la parte derecha se muestran las informaciones generales relativas a la costificación seleccionada.  
+En la barra de herramientas, hay botones que permiten abrir los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo, la [Lista de materiales](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) y el [Ciclo de trabajo](/docs/erp-home/registers/production/routes/new-route).  
+A través del botón **Ingresar costificación**, se creará automáticamente una nueva costificación y se insertarán todos los datos por defecto que se ingresaron en la fase de parametrización preliminar, los cuales pueden ser modificados manualmente para cada fila.  
+Al seleccionar una fila de costificación, se puede desglosar el árbol de documentos a través del botón **Explosión de costificación**, o eliminarla con el botón **Eliminar costificación**.  
+A través del botón **Costos adicionales**, se pueden ingresar costos adicionales que pueden ser propuestos por defecto en cada costificación futura (estos costos no están relacionados con un pedido específico, sino que son globales). Dichos costos se dividen en *Costos directos, Costos generales y Otros costos*. Estos se reportarán por defecto en las correspondientes secciones de costos previstos y consumidos en la pestaña **Costos totales**. De lo contrario, siempre será posible ingresarlos o modificarlos manualmente en la sección correspondiente de la pestaña de costos totales.  
+Una vez determinados todos los parámetros, para ejecutar o volver a ejecutar una costificación, será suficiente seleccionarla y presionar el botón **Ejecutar costificación**.
 
-**Terzista**: indica il terzista;     
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M.**: indica l'unità di misura gestionale;    
-**Q.tà prevista**: indica la quantità prevista da produrre;    
-**Q.tà effettiva**: indica la quantità effettiva prodotta;    
-**Prz. unit. previsto**: indica il prezzo unitario previsto;    
-**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;    
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto.    
+## Detalle de costos (Dettaglio costi)
 
-#### *Materiali*    
+En la pestaña de detalle de costos se muestran las informaciones detalladas de los costos relativos a la costificación seleccionada en la parte superior del formulario.  
+En la tabla de la izquierda, es posible visualizar el árbol de documentos que componen la costificación con la siguiente información:  
+**Tipo de documento**: indica la tipología del documento;  
+**Año**: indica el año del documento;  
+**Número**: indica el número del documento;  
+**Lote**: indica el número de lote del documento (si está presente);  
+**Tipo**: indica el código de la tipología del documento;  
+**Clase**: indica la clase del artículo presente en el documento;  
+**Código de artículo**: indica el código del artículo presente en el documento;  
+**Variante**: indica la variante del artículo presente en el documento;  
+**U.M.**: indica la unidad de medida del artículo presente en el documento;  
+**Cantidad**: indica la cantidad del artículo presente en el documento;  
+**Cst. tot. previsto**: indica el costo total previsto (presupuestado) del artículo presente en el documento;  
+**Cst. tot. efectivo**: indica el costo total efectivo (real) del artículo presente en el documento;  
+**Descripción de artículo**: indica la descripción del artículo presente en el documento;  
+**Descripción de variante**: indica la descripción de la variante del artículo presente en el documento.  
 
-**Classe**: indica la classe dell'articolo;     
-**Codice articolo**: indica il codice dell'articolo;    
-**Descrizione articolo**: indica la descrizione dell'articolo;      
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M.**: indica l'unità di misura gestionale;    
-**Q.tà prevista**: indica la quantità prevista da acquistare;    
-**Q.tà effettiva**: indica la quantità effettiva acquistata;    
-**Prz. unit. previsto**: indica il prezzo unitario previsto;    
-**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;     
-**Variante**: indica la variante dell'articolo;     
-**Descrizione variante**: indica la descrizione della variante dell'articolo;   
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto.   
+Una vez seleccionado un documento del árbol, en la parte derecha del formulario se visualizan todas las informaciones de detalle relativas al mismo, divididas por:
 
-Nella parte inferiore della form è presente un expander denominato **Dettaglio costo documento** nel quale vengono riportate le seguenti informazioni:
+#### *Trabajos internos* (Lavorazioni interne)  
 
-**Costo materiali preventivo / effettivo unitario**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
-**Costo lavorazione preventivo / effettivo unitario**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
-**Totale costo preventivo / effettivo unitario**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;    
-**Costo materiali preventivo / effettivo totale**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
-**Costo lavorazione preventivo / effettivo totale**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
-**Totale costo preventivo / effettivo totale**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;  
-
-## Costi totali
-
-In questo tab sono riportati in maniera riepilogativa i costi preventivi e consuntivi relativi alla costificazione selezionata.     
-Nello specifico, per ciascuna sezione (preventivo e consuntivo), sono riportati i seguenti campi:     
-**Costo industriale**: totale dei costi materiali e costo lavorazioni (interne ed esterne);     
-**Totale costi diretti**: totale dei costi inseriti nella sezione **Costi diretti**;    
-**Totale costo diretto commessa**: totale del *Costo industriale* e del *Totale costi diretti*;     
-**Ricarico**: permette di indicare il tipo di ricarico se a percentuale o a valore ed anche il valore stesso;    
-**Totale costo ricaricato**: totale del *Totale costo diretto commessa* e del *Ricarico*;     
-**Totale costi generali**: totale dei costi inseriti nella sezione **Costi generali**;      
-**Totale altri costi**: totale dei costi inseriti nella sezione **Altri costi**;     
-**Correzione**: permette di inserire un valore per correggere il *Totale costo ricaricato*;      
-**Arrotondamento**: permette di decidere se arrotondare per eccesso o difetto e l'ordine di grandezza;     
-**Totale costo commessa**: totale del *Totale costo ricaricato*, *Totale costi generali*, *Totale altri costi*, *Correzione* ed *Arrotondamento*. Il *Totale costo commessa* viene evidenziato in rosso nella sezione dei *Costi consuntivi* quando questo è superiore quello presente nella sezione dei *Costi preventivi*.           
+**C.D.L.**: indica el código del centro de trabajo;  
+**Máquina**: indica el código de la máquina;  
+**Grp MDO**: indica el código del grupo de mano de obra;  
+**Ref. Documento**: indica el referente del documento;  
+**U.M. Tiempos**: indica la unidad de medida de los tiempos;  
+**T. Setup previsto**: indica el tiempo de configuración previsto;  
+**T. Setup efectivo**: indica el tiempo de configuración efectivo;  
+**T. Máquina previsto**: indica el tiempo de máquina previsto;  
+**T. Máquina efectivo**: indica el tiempo de máquina efectivo;  
+**T. MDO previsto**: indica el tiempo de mano de obra previsto;  
+**T. MDO efectivo**: indica el tiempo de mano de obra efectivo;  
+**Descripción C.D.L.**: indica la descripción del artículo del centro de trabajo;  
+**Descripción máquina**: indica la descripción de la máquina;  
+**Descripción Grp. MDO**: indica la descripción del grupo de mano de obra;  
+**Cst. tot. previsto**: indica el costo total previsto;  
+**Cst. tot. efectivo**: indica el costo total efectivo.  
 
 :::note Nota
-I campi che vengono riportati ed allineati in automatico, tra la sezione dei *Costi preventivi* e quella dei *Costi consuntivi*, sono: il *Ricarico* (tipo di ricarico e valore), *Correzione* ed *Arrotondamento* (tipo di arrotondamento e valore). In ogni caso nella sezione dei *Costi consuntivi* è possibile variarli manualmente per diversificarli dai valori inseriti nella sezione dei *Costi preventivi*.
+En caso de que el centro de trabajo efectivo sea diferente del previsto, en esta tabla se mostrarán dos filas: una con el centro de trabajo previsto con sus costos relacionados y otra con el centro de trabajo efectivo.
 ::: 
 
-Tramite il pulsante **Costi aggiuntivi** è possibile inserire dei *Costi diretti*, *Costi generali* e *Altri costi* che possono essere proposti di default, sia nei costi preventivi che nei costi consuntivi.      
-Per ciascuno di questi costi è possibile definire se sia di tipo percentuale o a valore, indicandone anche il valore stesso.    
+#### *Trabajos externos* (Lavorazioni esterne)
 
-Per tutte le informazioni necessarie alla creazione di questi costi, consultare la pagina relativa a [Voci di costo](/docs/configurations/tables/general-settings/cost-elements).         
+**terzista**: indica el tercero;  
+**Ref. Documento**: indica el referente del documento;  
+**U.M.**: indica la unidad de medida operativa;  
+**Q.tà prevista**: indica la cantidad prevista a producir;  
+**Q.tà efectiva**: indica la cantidad efectiva producida;  
+**Prz. unit. previsto**: indica el precio unitario previsto;  
+**Prz. Unit. efectivo**: indica el precio unitario efectivo;  
+**Cst. tot. previsto**: indica el costo total previsto;  
+**Cst. tot. efectivo**: indica el costo total efectivo.  
 
-## Analisi costi
+#### *Materiales* (Materiali) 
 
-In questo tab vengono messe in evidenza tutte le componenti di costo per quanto riguarda i costi preventivi e consuntivi, utilizzando due tipi di analisi:      
+**Clase**: indica la clase del artículo;  
+**Código de artículo**: indica el código del artículo;  
+**Descripción de artículo**: indica la descripción del artículo;  
+**Ref. Documento**: indica el referente del documento;  
+**U.M.**: indica la unidad de medida operativa;  
+**Q.tà prevista**: indica la cantidad prevista a adquirir;  
+**Q.tà efectiva**: indica la cantidad efectiva adquirida;  
+**Prz. unit. previsto**: indica el precio unitario previsto;  
+**Prz. Unit. efectivo**: indica el precio unitario efectivo;  
+**Variante**: indica la variante del artículo;  
+**Descripción variante**: indica la descripción de la variante del artículo;  
+**Cst. tot. previsto**: indica el costo total previsto;  
+**Cst. tot. efectivo**: indica el costo total efectivo.  
 
-> **Sintetica**: in questa tipologia di analisi viene riportato il *Costo industriale*, quindi come somma dei costi materiali e dei costi di lavorazione, inoltre sono riportati i *Costi diretti*, *Costi generali* e *Altri costi* ed infine il totale di *Ricarichi* e *Correzioni*;     
-> **Analitica**: in questa tipologia, invece, vengono riportate nel grafico tutte le voci singolarmente, quindi il *Costo industriale* viene suddiviso in *Costo materiali*, *Costo lavorazione interne* e *Costo lavorazioni esterne*; anche le voci relative a *Ricarichi* e *Correzioni* vengono riportate separatamente; ovviamente vengono poi riportati anche i *Costi diretti*, *Costi generali* e *Altri costi*.       
+En la parte inferior del formulario hay un expander denominado **Detalle de costo del documento** en el cual se reportan las siguientes informaciones:  
 
-Queste due tipologie di analisi possono essere confrontate tramite una *ripartizione dei costi* con un diagramma a torta, oppure con un *raffronto dei costi* utilizzando un diagramma a barre.
+**Costo de materiales preventivo / efectivo unitario**: indica el costo unitario de los materiales preventivo / efectivo relacionado con el documento seleccionado;  
+**Costo de trabajo preventivo / efectivo unitario**: indica el costo unitario de los trabajos (internos y externos) preventivo / efectivo relacionado con el documento seleccionado;  
+**Total costo preventivo / efectivo unitario**: indica el total del costo unitario (materiales y trabajos) preventivo / efectivo relacionado con el documento seleccionado;  
+**Costo de materiales preventivo / efectivo total**: indica el costo total de los materiales preventivo / efectivo relacionado con el documento seleccionado;  
+**Costo de trabajo preventivo / efectivo total**: indica el costo total de los trabajos (internos y externos) preventivo / efectivo relacionado con el documento seleccionado;  
+**Total costo preventivo / efectivo total**: indica el total del costo total (materiales y trabajos) preventivo / efectivo relacionado con el documento seleccionado;  
 
-## Modalità di calcolo dei costi preventivi e effettivi (consuntivi)
+## Costos totales (Costi totali)
 
-I documenti preventivi che concorrono al calcolo dei costi preventivi sono: 
-- Commessa
-- Ordine pianificato
-- Richiesta di acquisto
-- Ordine fornitore
-- Ordine di produzione 
-- Ordine di conto lavoro
+En esta pestaña se reportan de manera resumida los costos previstos y consumidos relacionados con la costificación seleccionada.  
+En específico, para cada sección (previsto y consumido), se reportan los siguientes campos:  
+**Costo industrial**: total de los costos de materiales y costos de trabajos (internos y externos);  
+**Total costos directos**: total de los costos ingresados en la sección **Costos directos**;  
+**Total costo directo del pedido**: total del *Costo industrial* y del *Total costos directos*;  
+**Recargo**: permite indicar el tipo de recargo, ya sea en porcentaje o en valor, así como el valor mismo;  
+**Total costo recargado**: total del *Total costo directo del pedido* y del *Recargo*;  
+**Total costos generales**: total de los costos ingresados en la sección **Costos generales**;  
+**Total otros costos**: total de los costos ingresados en la sección **Otros costos**;  
+**Corrección**: permite ingresar un valor para corregir el *Total costo recargado*;  
+**Redondeo**: permite decidir si redondear al alza o a la baja y el orden de magnitud;  
+**Total costo del pedido**: total del *Total costo recargado*, *Total costos generales*, *Total otros costos*, *Corrección* y *Redondeo*. El *Total costo del pedido* se resalta en rojo en la sección de *Costos consumidos* cuando este es superior al presente en la sección de *Costos previstos*.  
 
-I documenti effettivi che concorrono al calcolo dei costi effettivi sono: 
-- DDT di consegna materiale
-- Rientri di conto lavoro
-- Dichiarazioni di produzione
+:::note Nota
+Los campos que se reportan y alinean automáticamente entre la sección de *Costos previstos* y la de *Costos consumidos* son: el *Recargo* (tipo de recargo y valor), *Corrección* y *Redondeo* (tipo de redondeo y valor). En cualquier caso, en la sección de *Costos consumidos* es posible variarlos manualmente para diferenciarlos de los valores ingresados en la sección de *Costos previstos*.
+::: 
 
-### Lavorazioni interne
+A través del botón **Costos adicionales** es posible ingresar *Costos directos*, *Costos generales* y *Otros costos* que pueden ser propuestos por defecto, tanto en costos previstos como en costos consumidos.  
+Para cada uno de estos costos, es posible definir si son de tipo porcentual o a valor, indicando también el valor mismo.  
 
-I costi delle lavorazioni interne vengono presi dalla [Macchina](/docs/configurations/tables/production/machines) e dal [Gruppo manodopera](/docs/configurations/tables/production/labour-group) che sono stati previsti di utilizzare nel ciclo di lavoro per i costi preventivi e da quelli che sono stati effettivamente utilizzati nelle dichiarazioni di produzione per i costi effettivi.         
-Alla [Macchina](/docs/configurations/tables/production/machines) e al [Gruppo manodopera](/docs/configurations/tables/production/labour-group) viene associato un [Centro di costo](/docs/configurations/tables/production/cost-center) nelle rispettive tabelle, dove a questo [Centro di costo](/docs/configurations/tables/production/cost-center) è associata una certa tariffa.         
-Ovviamente, il costo indicato nel [Centro di costo](/docs/configurations/tables/production/cost-center) verrà moltiplicato per il tempo indicato nel ciclo di lavoro per i costi preventivi, mentre per i costi effettivi verrà moltiplicato per il tempo effettivamente impiegato riportato nelle dichiarazioni di produzione.
-Inoltre, è importate avere inserito il numero di macchine e il numero di operatoti sia nel ciclo che poi nella dichiarazione di produzione; aver generato il [Calendario di fabbrica](/docs/configurations/tables/production/factory-calendar) e quelli delle [Capacità produttive](/docs/configurations/tables/production/productive-capacity-calendar); ed anche aver indicato all'interno dei [Centri di lavoro](/docs/erp-home/registers/production/routes/work-center) i relativi orari di inizio e fine (compresa la pausa).
+Para toda la información necesaria para la creación de estos costos, consulte la página relativa a [Elementos de costo](/docs/configurations/tables/general-settings/cost-elements).  
 
-### Lavorazioni esterne
+## Análisis de costos (Analisi costi)
 
-Il costo preventivo si basa sul prezzo di listino di conto lavoro (fintanto che non è stato creato l'ordine di conto lavoro), nel momento in cui viene creato l'ordine di conto lavoro si baserà sul prezzo indicato nella riga dell'articolo.      
-Per quanto riguarda il costo effettivo, il costo viene preso dal valore indicato nel documento di rientro di conto lavoro.       
+En esta pestaña se destacan todos los componentes de costo en relación con los costos previstos y consumidos, utilizando dos tipos de análisis:  
 
-### Materiali
+> **sintetica**: en este tipo de análisis se reporta el *Costo industrial*, como suma de los costos de materiales y de los costos de trabajo; además, se reportan los *Costos directos*, *Costos generales* y *Otros costos* y, finalmente, el total de *Recargos* y *Correcciones*;  
+> **analitica**: en este tipo, sin embargo, se reportan en el gráfico todas las partidas individualmente, por lo que el *Costo industrial* se desglosa en *Costo de materiales*, *Costo de trabajos internos* y *Costo de trabajos externos*; igualmente, las partidas relacionadas con *Recargos* y *Correcciones* se reportan separadamente; obviamente, también se reportan los *Costos directos*, *Costos generales* y *Otros costos*.  
 
-Il costo del materiali si basa sul **Tipo costo** che abbiamo selezionato nella costificazione, quindi ultimo, medio o standard.          
-Inoltre, si basa anche sui flag **Costo del lotto** e **Costo della commessa**. Se sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag *aggiorna costo ultimo o medio* (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di *interesse fiscale* attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.         
-Nel caso del costo preventivo i valori verranno presi dalla [Richiesta di acquisto](/docs/purchase/purchase-requests/general-overview) e dall'[Ordine fornitore](/docs/purchase/purchase-orders/general-overview) e moltiplicati per i consumi previsti nella [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/new-assemble); mentre per i costi effettivi verranno presi dai [DDT di acquisto](/docs/purchase/purchase-delivery-note/general-overview) del materiale e moltiplicati per le quantità impiegate nelle [Dichiarazioni di produzione](/docs/production/pp-production-in-progress/signals/sisgnals).
+Estos dos tipos de análisis pueden ser comparados mediante una *distribución de costos* con un diagrama de pastel, o con un *comparativo de costos* utilizando un diagrama de barras.
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+## Modo de cálculo de costos previstos y reales (consumidos)
+
+Los documentos previstos que contribuyen al cálculo de los costos previstos son:  
+- Pedido  
+- Orden planificada  
+- Solicitud de compra  
+- Orden de proveedor  
+- Orden de producción  
+- Orden de trabajo por encargo  
+
+Los documentos efectivos que contribuyen al cálculo de los costos efectivos son:  
+- DDT de entrega de material  
+- Devoluciones de trabajo por encargo  
+- Declaraciones de producción  
+
+### Trabajos internos (Lavorazioni interne)
+
+Los costos de los trabajos internos se obtienen de la [Máquina](/docs/configurations/tables/production/machines) y del [Grupo de mano de obra](/docs/configurations/tables/production/labour-group) que se previó utilizar en el ciclo de trabajo para los costos previstos y de aquellos que se utilizaron efectivamente en las declaraciones de producción para los costos efectivos.  
+A la [Máquina](/docs/configurations/tables/production/machines) y al [Grupo de mano de obra](/docs/configurations/tables/production/labour-group) se les asocia un [Centro de costo](/docs/configurations/tables/production/cost-center) en sus respectivas tablas, donde a este [Centro de costo](/docs/configurations/tables/production/cost-center) se le asocia una tarifa determinada.  
+Obviamente, el costo indicado en el [Centro de costo](/docs/configurations/tables/production/cost-center) se multiplicará por el tiempo indicado en el ciclo de trabajo para los costos previstos, mientras que para los costos efectivos se multiplicará por el tiempo realmente empleado reportado en las declaraciones de producción.  
+Además, es importante haber ingresado el número de máquinas y el número de operadores tanto en el ciclo como luego en la declaración de producción; haber generado el [Calendario de fábrica](/docs/configurations/tables/production/factory-calendar) y aquellos de [Capacidades productivas](/docs/configurations/tables/production/productive-capacity-calendar); y también haber indicado dentro de los [Centros de trabajo](/docs/erp-home/registers/production/routes/work-center) los respectivos horarios de inicio y fin (incluso el descanso).
+
+### Trabajos externos (Lavorazioni esterne)
+
+El costo previsto se basa en el precio de lista de trabajo por encargo (mientras no se haya creado la orden de trabajo por encargo); en el momento en que se crea la orden de trabajo por encargo, se basará en el precio indicado en la fila del artículo.  
+En lo que respecta al costo efectivo, el costo se obtiene del valor indicado en el documento de devolución de trabajo por encargo.  
+
+### Materiales (Materiali)
+
+El costo de los materiales se basa en el **Tipo de costo** que seleccionamos en la costificación, ya sea último, promedio o estándar.  
+Además, también se basa en los indicadores **Costo del lote** y **Costo del pedido**. Si ambos están activados, el procedimiento valorizará el costo del material según el tipo de costo seleccionado, considerando los valores solo de ese pedido específico y para ese lote específico, obviamente entre los movimientos realizados con causales de carga con el indicador *actualiza costo último o promedio* (dependiendo del valor indicado en el campo **Tipo de costo**) y el indicador de *interés fiscal* activos; si no se encuentra ningún movimiento con estas características, buscará entre los movimientos que han cargado ese lote; si tampoco encuentra estos, buscará entre todos los movimientos de ese artículo. Si no hay ningún movimiento de carga para ese artículo, consultará los respectivos campos de costo último, promedio y estándar de la base de datos del artículo.  
+En el caso del costo previsto, los valores se obtendrán de la [Solicitud de compra](/docs/purchase/purchase-requests/general-overview) y de la [Orden de proveedor](/docs/purchase/purchase-orders/general-overview) y se multiplicarán por los consumos previstos en la [Lista de materiales](/docs/erp-home/registers/production/bill-of-materials/assemblies/new-assemble); mientras que para los costos efectivos se obtendrán de los [DDT de compra](/docs/purchase/purchase-delivery-note/general-overview) del material y se multiplicarán por las cantidades empleadas en las [Declaraciones de producción](/docs/production/pp-production-in-progress/signals/sisgnals).
+
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funciones, botones y campos comunes](/docs/guide/common).

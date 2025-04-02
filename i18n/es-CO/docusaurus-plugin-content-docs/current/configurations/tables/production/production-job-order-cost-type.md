@@ -1,22 +1,22 @@
 ---
-title: Tipo costificazione commessa
+title: tipo costificazione commessa
 sidebar_position: 19
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo costificazione commessa*.
+La tabla permite gestionar la codificación de las diferentes tipologías de *tipo costificazione commessa*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo costificazione commessa**
+**Búsqueda de tipo costificazione commessa (Ricerca Tipo costificazione commessa)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultado. Una vez ajustados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipo costificazione commessa**    
+**Inserción de tipo costificazione commessa (Inserimento Tipo costificazione commessa)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.
 
 :::note Nota
-Per ogni nuovo inserimento è necessario indicare un *Codice* e *Descrizione* del tipo costificazione e la relativa *Numerazione*; dopo di che in automatico vengono riportati i dati di *Tipo costo*, *Costo del lotto*, *Costo della commessa* e *Tipo ricarico* indicati nella sezione *costificazione commessa* dei [Parametri MS](/docs/configurations/parameters/production/mps-parameters), ovviamente possono essere poi modificati manualmente in base alle esigenze.     
-:::    
+Para cada nueva inserción es necesario indicar un *codice* y *descrizione* del tipo de costificación y la correspondiente *numerazione*; después de esto, se cargarán automáticamente los datos de *tipo costo*, *costo del lotto*, *costo della commessa* y *tipo ricarico* indicados en la sección de *costificazione commessa* de los [Parámetros MS](/docs/configurations/parameters/production/mps-parameters), los cuales pueden ser modificados manualmente según las necesidades.
+:::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).     
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

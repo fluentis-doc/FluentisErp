@@ -3,15 +3,14 @@ title: BizLink
 sidebar_position: 1
 ---
 
+**BizLink** (BizLink) permite al operador configurar y monitorear flujos de importación y exportación de datos desde y hacia otros sistemas externos al sistema de gestión.
 
-**BizLink** consente all'operatore di configurare e monitorare flussi di importazione ed esportazione dati da e verso altri sistemi esterni al gestionale.
+Es gracias a esta aplicación de tipo **ESB** (Enterprise Service Bus) que **Fluentis** (Fluentis) ha podido estandarizar todas las interacciones con otros procedimientos externos, tanto para la importación como para la exportación de datos, pero sobre todo también para el consumo de procesos externos desde otras aplicaciones.
 
-E' infatti grazie a questo applicativo di tipo **ESB** (Enterprise Service Bus) che **Fluentis** ha potuto portare a standard tutte le interazioni con le altre procedure esterne, sia per l'importazione che per l'esportazione dei dati, ma soprattutto anche per il consumo di processi esterni da altre applicazioni. 
+A través de este procedimiento, **BizLink** (Bizlink) es muy sencillo configurar la lectura de cualquier archivo CSV, TXT, XML y varios otros formatos, con el fin de interpretar, leer y/o también escribir los propios archivos. Todo esto se rastrea en los oportunos **REGISTROS de Entrada y de Salida** (LOG di Entrata e di Uscita) de la información, con el fin de informar al operador si un proceso de importación o exportación ha sido exitoso o no.
 
-Tramite questa procedura **Bizlink** è molto semplice configurare la lettura di un qualsiasi file CSV, TXT, XML e vari altri formati, al fine di interpretare, leggere e/o anche scrivere i file stessi. Tutto questo viene tracciato in opportuni **LOG di Entrata e di Uscita** dell'informazione in modo da dare all'operatore l'evidenza se un processo di importazione o esportazione è andato a buon fine o meno.
+También en **BizLink** (BizLink) encontramos el área de **Importaciones OnDemand** (Importazioni OnDemand), muy útil para todas las empresas que necesitan importar datos, especialmente en la fase inicial de configuración del producto. Es precisamente a través del área de importaciones On Demand, más específicamente desde *foglio elettronico*, que al activar este procedimiento es posible importar y actualizar fácilmente los registros básicos como Artículos, Listas de materiales (Distinte), Ciclos, Clientes, Proveedores, etc., incluso documentos como pedidos, facturas, listas de precios, etc.
 
-Sempre in **BizLink** troviamo l'area delle **Importazioni OnDemand**, molto utile a tutte le aziende che devono importare dati soprattutto nella fase iniziale di configurazione del prodotto. E' infatti tramite l'area di importazioni On Demand, più specificatamente da *foglio elettronico*, che attivando tale procedura è possibile facilmente importare ed aggiornare gli archivi di base quali Articoli, Distinte, Cicli, Clienti, Fornitori, ecc. addirittura anche documenti quali ordini, fatture, listini ecc.
+El módulo es accesible desde el panel lateral de **Fluentis** (Fluentis) a través de la siguiente ruta [**strumenti** > **BizLink**].
 
-Il modulo è accessibile dal pannello laterale di **Fluentis** tramite il seguente percorso [**Strumenti**>**BizLink**].
-
-Più informazioni sul funzionamento del modulo trovate nei prossimi articoli.
+Más información sobre el funcionamiento del módulo se encuentra en los próximos artículos.

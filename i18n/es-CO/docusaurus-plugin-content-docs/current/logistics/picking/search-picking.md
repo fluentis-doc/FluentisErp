@@ -1,16 +1,16 @@
 ---
-title: Ricerca Picking
+title: Búsqueda de Picking (Ricerca Picking)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Logistica > Picking**.
+El formulario se abre a través de la ruta **Logística > Picking (Logistica > Picking)**.
 
 import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Pulsanti specifici*  
-**DDT**: esegue la procedura per creare il documento DDT partendo da un picking.  
-**Fattura**: esegue la procedura per creare il documento fattura partendo da un picking. 
+*Botones específicos (Pulsanti specifici)*  
+**DDT**: ejecuta el procedimiento para crear el documento DDT a partir de un picking.  
+**fattura**: ejecuta el procedimiento para crear el documento factura a partir de un picking.  
 
-Sempre da questa form è possibile [Creare un nuovo picking](/docs/logistics/picking/picking-management), cliccando sul pulsante **Nuovo**. 
+Desde este formulario también es posible [Crear un nuevo picking (Creare un nuovo picking)](/docs/logistics/picking/picking-management), haciendo clic en el botón **nuovo**.

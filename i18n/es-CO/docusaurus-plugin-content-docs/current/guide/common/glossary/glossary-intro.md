@@ -1,328 +1,302 @@
 ---
-title: Glossario
+title: Glosario (Glossario)
 sidebar_position: 5
 ---
 
-In questa sezione verranno raccolte le definizioni dei campi più utilizzati e ricorrenti presenti nelle varie form del gestionale.
+En esta sección se recopilarán las definiciones de los campos más utilizados y recurrentes presentes en los diversos formularios del sistema de gestión.
 
-Per ricercare la spiegazione dettagliata di un campo, basterà posizionarsi sull'articolo relativo alla lettera iniziale del campo che si vuole ricercare.
+Para buscar la explicación detallada de un campo, basta con posicionarse sobre el artículo relativo a la letra inicial del campo que se desea buscar.
 
 ### A
 
-#### Anno
-Questo campo è un campo generico che si troverà all'interno di moltissime form in cui comparirà l'anno in cui viene creato il documento o in cui viene svolta una determinata operazione; nella maggior parte delle form è un campo che si compila in automatico;
+#### Año (Anno)
+Este campo es un campo genérico que se encontrará dentro de muchísimos formularios donde aparecerá el año en el que se crea el documento o en el que se lleva a cabo una determinada operación; en la mayoría de los formularios es un campo que se completa automáticamente.
 
-#### Annullata/o  
-Il flag attivo permette di annullare il documento.
+#### Anulada/o (Annullata/o)  
+El indicador activo permite anular el documento.
 
-#### Articolo
-Campo generico che si troverà in moltissime form in cui comparirà la classe, il codice e la descrizione dell'articolo (materiale) che si desidera creare, visualizzare, movimentare, acquistare, produrre, vendere.
+#### Artículo (Articolo)
+Campo genérico que se encontrará en muchos formularios donde aparecerá la clase, el código y la descripción del artículo (material) que se desea crear, visualizar, mover, comprar, producir, vender.
 
-#### Articolo codificato
-E' un tipo riga che identifica gli articoli codificati; per articoli codificati si intendono tutti quegli articoli che sono codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino;
+#### Artículo codificado (Articolo codificato)
+Es un tipo de línea que identifica los artículos codificados; por artículos codificados se entienden todos aquellos artículos que están codificados en el registro y pueden ser contabilizados en contabilidad analítica y registrados en el almacén.
 
-#### Articolo non codificato
-E' un tipo riga che identifica gli articoli non codificati; per articoli non codificati si intendono tutti quegli articoli che sono descrittivi e che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati in magazzino;
+#### Artículo no codificado (Articolo non codificato)
+Es un tipo de línea que identifica los artículos no codificados; por artículos no codificados se entienden todos aquellos artículos que son descriptivos y que pueden ser contabilizados en contabilidad analítica, pero no pueden ser movidos en el almacén.
 
-#### Articolo omaggio
-E' un tipo riga che identifica gli articoli omaggio; per articolo omaggio si intende un articolo che viene gestito come un articolo codificato e non codificato ai fini fiscali e di magazzino ma essendo omaggio viene conteggiato separatamente nei riepiloghi del DDT;
+#### Artículo omaggio (Articolo omaggio)
+Es un tipo de línea que identifica los artículos de obsequio; por artículo omaggio se entiende un artículo que se gestiona como un artículo codificado y no codificado a efectos fiscales y de almacén, pero dado que es un obsequio, se contabiliza por separado en los resúmenes del DDT.
 
-#### Articolo note
-E' un tipo riga che è una semplice nota, non incide sulla contabilità e sul magazzino; in questo campo di possono scrivere note relative agli articoli che si vuole vengano riportare nei documenti di vendita/acquisto.
+#### Artículo note (Articolo note)
+Es un tipo de línea que es una simple nota, no afecta la contabilidad y el almacén; en este campo se pueden escribir notas relativas a los artículos que se desea que se registren en los documentos de venta / compra.
 
-#### Articolo spese
-E' un tipo riga che identifica gli articoli codificati o non-codificati che vengono però riassunti in modo distinto nei riepiloghi dei documenti; se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se non è codificato oppure non ha interesse fiscale non verrà movimentato in magazzino;
+#### Artículo spese (Articolo spese)
+Es un tipo de línea que identifica los artículos codificados o no codificados que se resumen de manera distinta en los resúmenes de los documentos; si el artículo de gasto está codificado y tiene interés fiscal, se moverá en el almacén; si no está codificado o no tiene interés fiscal, no se moverá en el almacén.
 
-#### Audit trail
-Questa sezione la possiamo trovare in diverse form e serve per la tracciabilità delle operazioni; solitamente in questa sezione si può vedere l'utente che ha creato un documento e/o effettuato l'ultima modifica insieme alle date di inserimento/creazione e modifica.
+#### Auditoría (Audit trail)
+Esta sección se puede encontrar en diferentes formularios y sirve para la trazabilidad de las operaciones; normalmente en esta sección se puede ver el usuario que creó un documento y/o realizó la última modificación junto con las fechas de inserción / creación y modificación.
 
 ### B
 
-
-
-
 ### C
 
-#### Cambio {#currency-exchange}
-Se la valuta della società è uguale a quella del documento, il valore riportato sarà 1, altrimenti il valore sarà ripreso dalla tabella *Cambi valute* oppure dalla tabella *Cambi fissi per l'EURO* che si trovano nel percorso *Configurazione > Tabelle > Amministrazione*.
+#### Cambio (Cambio) {#currency-exchange}
+Si la moneda de la empresa es igual a la del documento, el valor informado será 1; de lo contrario, el valor será tomado de la tabla *Tipos de cambio* o de la tabla *Tipos fijos para el EURO* que se encuentran en la ruta *Configuración > Tablas > Administración*.
 
-#### Caricata/o
-Questo flag, se attivo sta ad indicare che gli articoli del DDT e/o fattura di acquisto sono stati caricati a magazzino tramite la procedura di [Carico DDT di acquisto a magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) e [Carico fatture di acquisto a magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse). Per le procedure di carico dei documenti si rimanda ai relativi articoli. 
+#### Cargada/o (Caricata/o)
+Este indicador, si está activo, indica que los artículos del DDT y/o factura de compra se han cargado en almacén mediante el procedimiento de [Carga DDT de compra en almacén](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) y [Carga de facturas de compra en almacén](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse). Para los procedimientos de carga de documentos, se remite a los artículos correspondientes.
 
-#### Causale di magazzino
-Questo campo fa riferimento ai valori precodificati nella relativa tabella che si trova nel percorso Home >  Tabelle >  Logistica; in questo campo si troverà la causale di magazzino relativa all'operazione di magazzino che intende eseguire; nei documenti questo campo, insieme al campo **Descrizione causale di magazzino** vengono riportati in automatico se presenti nei Parametri MRP dell'anagrafica articolo, nel tab **Magazzini**.
+#### Causale de almacén (Causale di magazzino)
+Este campo hace referencia a los valores precodificados en la tabla correspondiente que se encuentra en la ruta *Inicio > Tablas > Logística*; en este campo se encontrará la causa de almacén relativa a la operación de almacén que se quiere ejecutar; en los documentos, este campo, junto con el campo **Descripción de la causa de almacén**, se reporta automáticamente si están presentes en los Parámetros MRP del registro del artículo, en la pestaña **Almacenes**.
 
 #### CIG
-Codice identificativo gara; al fine di rintracciare l'effettiva tracciabilità dei pagamenti da parte delle pubbliche amministrazioni, le fatture elettroniche emesse verso le pubbliche amministrazioni devono contenere il codice CIG e il codice CUP; questo è un codice alfanumerico univoco che identifica un dato appalto o un dato lotto e che si trova nelle fatture di vendita e negli ordini di vendita. 
+Código identificativo de la licitación; con el fin de rastrear la efectiva trazabilidad de los pagos por parte de las administraciones públicas, las facturas electrónicas emitidas a las administraciones públicas deben contener el código CIG y el código CUP; este es un código alfanumérico único que identifica un determinado contrato o lote y que se encuentra en las facturas de venta y en los pedidos de venta.
 
-#### Classe articolo {#item-class}
-Questo campo comprende informazioni obbligatorie dell'articolo; con classe si intende la classe di appartenenza dell'articolo all'interno del data base (esempi di classe: Materia prima, Semilavorato, Prodotto finito, etc.); le classi in cui si decide di raggruppare gli articoli e tra cui si può scegliere nel momento di creazione/duplica di un articolo vengono precodificate all'interno della relativa tabella **Classi** che si trova nel percorso **Tabelle > Logistica**. In tutti i documenti l'articolo comparirà con la sua classe e descrizione.
+#### Clase artículo (Classe articolo) {#item-class}
+Este campo comprende información obligatoria del artículo; con clase se entiende la clase a la que pertenece el artículo dentro de la base de datos (ejemplos de clase: Materia prima, Semilavorado, Prodotto finito, etc.); las clases en las que se decide agrupar los artículos y las que se pueden elegir al momento de crear / duplicar un artículo son precodificadas dentro de la tabla correspondiente **Clases** que se encuentra en la ruta **Tablas > Logística**. En todos los documentos, el artículo aparecerá con su clase y descripción.
 
-#### Codice articolo {#item-code}
-Questo campo rappresenta un codice specifico alfanumerico che codifica l'articolo in base alle sue caratteristiche specifiche; il codice insieme alla classe costituiscono il *nome* dell'articolo che deve essere univoco;
+#### Código artículo (Codice articolo) {#item-code}
+Este campo representa un código alfanumérico específico que codifica el artículo en base a sus características específicas; el código junto con la clase constituyen el *nombre* del artículo que debe ser único.
 
 #### Combo box
-Anche definito campo "a tendina" è un campo che impone di scegliere la voce da un elenco a discesa. Le voci che possono essere selezionate possono essere fisse (l'utente non può aggiungere nuove voci, tipicamente perchè la relativa tabella è riservata alle logiche di base del sistema) oppure possono essere aggiunte e/o modificate (l'utente può accedere alla tabella che alimenta la combo box e che solitamente presenta lo stesso nome; per comodità, anzichè cercare la tabella, può anche eseguire click con tasto destro e *Apri form*)
+También definido como campo "desplegable", es un campo que impone elegir una opción de una lista desplegable. Las opciones que pueden ser seleccionadas pueden ser fijas (el usuario no puede agregar nuevas opciones, típicamente porque la tabla correspondiente está reservada para las lógicas básicas del sistema) o pueden ser agregadas y/o modificadas (el usuario puede acceder a la tabla que alimenta la combo box y que generalmente tiene el mismo nombre; para comodidad, en lugar de buscar la tabla, también puede hacer clic con el botón derecho y *Abrir formulario*).
 
 #### Commessa
-Questo campo fa riferimento alla commessa di vendita; lo troviamo nei documenti di vendita e di acquisto e permette di collegare il documento a una commessa di vendita esistente;
+Este campo se refiere a la orden de venta; lo encontramos en los documentos de venta y compra y permite conectar el documento a una orden de venta existente.
 
 #### Commessa di produzione
-Questo campo fa riferimento alle commesse di produzione; lo troviamo nell'area di produzione e nei documenti legati alla produzione, e nella fattura di acquisto.
+Este campo se refiere a las órdenes de producción; lo encontramos en el área de producción y en los documentos relacionados con la producción, y en la factura de compra.
 
-#### Contabilizzata
-Flag che si trova nella testata di una fattura di vendita e di acquisto e che, se attivo, sta ad indicare che quella fattura è stata contabilizzata attraverso la procedura di  [Contabilizzazione delle fatture di vendita](/docs/sales/sales-invoices/accounting/sales-invoices-accounting)  e di 'Contabilizzazione delle fatture di acquisto'. Per la spiegazione di questa procedura si rimanda ai relativi articoli;
+#### Contabilizada (Contabilizzata)
+Indicador que se encuentra en la cabecera de una factura de venta y de compra y que, si está activo, indica que esa factura ha sido contabilizada a través del procedimiento de [Contabilización de las facturas de venta](/docs/sales/sales-invoices/accounting/sales-invoices-accounting) y 'Contabilización de facturas de compra'. Para la explicación de este procedimiento, se remite a los artículos correspondientes.
 
 #### CUP
-Codice unico di progetto; al fine di assicurare l'effettiva tracciabilità dei pagamenti da parte delle pubbliche amministrazioni, le fatture elettroniche emesse verso le pubbliche amministrazioni devono contenere il codice CUP e il codice CIG; questo codice è rappresentato da una stringa alfanumerica di 15 caratteri generata tramite il sistema CUP; tale stringa resta immodificabile in quanto identifica e accompagna un progetto pubblico a partire dal momento della sua nascita. Lo troviamo unitamente al codice CIG nelle fatture di vendita e negli ordini di vendita.
+Código único de proyecto; con el fin de asegurar la efectiva trazabilidad de los pagos por parte de las administraciones públicas, las facturas electrónicas emitidas a las administraciones públicas deben contener el código CUP y el código CIG; este código se representa como una cadena alfanumérica de 15 caracteres generada a través del sistema CUP; esta cadena permanece inalterable ya que identifica y acompaña un proyecto público desde el momento de su creación. Lo encontramos junto con el código CIG en las facturas de venta y en los pedidos de venta.
 
-**Come si ottiene la quantità alternativa**: per quanto riguarda il calcolo della quantità espressa nell'unità di misura alternativa questa può essere eseguita dividendo oppure moltiplicando la quantità gestionale per il fattore di conversione a seconda dell'opzione scelta. Questo parametro viene definito ed è valido per tutti gli articoli. Il fattore di conversione viene impostato a livello di anagrafica articoli per ogni unità di misura alternativa impostata nell'anagrafica stessa.
-
+**Cómo se obtiene la cantidad alternativa**: en lo que respecta al cálculo de la cantidad expresada en la unidad de medida alternativa, esto puede hacerse dividiendo o multiplicando la cantidad de gestión por el factor de conversión según la opción elegida. Este parámetro se define y es válido para todos los artículos. El factor de conversión se establece a nivel del registro de artículos para cada unidad de medida alternativa configurada en el propio registro.
 
 ### D
 
+#### De número....A número (Da numero....A numero)
+Estos campos comunes en muchas áreas de filtrado de los diversos formularios se utilizan para poder filtrar los documentos según su número identificativo; con estos campos se establece de qué número a qué número se desean visualizar los resultados.
 
+#### Fecha de llegada (Data arrivo)
+En este campo se indica la fecha de llegada de la mercancía comprada; encontramos este campo en los documentos de compra como facturas y DDT de compra, o DDT y facturas de retorno.
 
-#### Da numero....A numero
-Questi campi comuni a molte aree di filtro della varie form, vengo utilizzati per poter filtrare i documenti in base al loro numero identificativo; con questi campi di va quindi a stabilire da quale a quale numero numero documento si vogliono visualizzare i risultati.
+#### Fecha de carga (Data carico)
+En este campo se indica la fecha en que se carga en almacén la mercancía recibida; encontramos este campo en los documentos de compra como facturas y DDT de compra o DDT y facturas de retorno.
 
-#### Data arrivo
-In questo campo viene indicata la data di arrivo della merce acquistata; troviamo questo campo nei documenti di acquisto quali fatture e DDT di acquisto, o DDT e fatture di reso.
+#### De fecha de inserción...A fecha de inserción (Da data inserimento...A data inserimento)
+Estos campos comunes en muchas áreas de filtrado de los diversos formularios se utilizan para poder filtrar los documentos según el periodo de inserción en el sistema; con estos campos se define el periodo de búsqueda.
 
-#### Data carico
-In questo campo viene indicata la data in cui viene caricata a magazzino la merce ricevuta; troviamo questo campo nei documenti di acquisto quali fatture e DDT di acquisto o DDT e fatture di reso.
+#### Fecha documento (Data documento)
+Fecha del documento (ejemplo, factura de compra); campo presente en los documentos del ciclo activo y pasivo y en las registraciones contables. También podría estar presente (con un significado más genérico) en documentos de tipo no fiscal.
 
-#### Da data inserimento...A data inserimento
-Questi campi comuni a molte aree di filtro delle varie form, vengono utilizzati per poter filtrare i documenti in base al periodo di inserimento a sistema; con questi campi si va quindi a definire il periodo di ricerca.
+#### Fecha mercancía lista (Data merce pronta)
 
-#### Data documento
-Data del documento (esempio fattura di acquisto); campo presente nei documenti del ciclo attivo e passivo e nelle registrazioni contabili. Potrebbe essere presente (con un significato più generico) anche in documenti di tipo non fiscale.
+#### Fecha inicio / fecha fin de validez (Data inizio/data fine validità) {#validity-date}
+En estos dos campos encontraremos la fecha de inicio de validez de la lista de precios (por lo tanto desde cuándo los precios de esa lista entrarán en vigor en los diversos documentos) y la fecha de fin de validez (es decir, cuándo los precios de esa lista terminan su validez y serán sustituidos por nuevos precios en una nueva lista).
 
-#### Data merce pronta
+#### Fecha de vencimiento (Data scadenza)
+Fecha de vencimiento del pago calculada a partir de las condiciones de pago o impuesta manualmente. Este campo está presente generalmente en los documentos del ciclo activo y pasivo (pedidos, DDT, facturas, etc.). El cálculo de la fecha verifica las condiciones de pago (insertadas en la cabecera) y, en particular, la solución de pago (por ejemplo, 30 días a partir de la fecha de la factura) y les suma el valor del campo **(Fecha) de inicio** (este último también presente en el documento - abriendo el expander 'Envío'). Ver también **Vencimiento**.
 
-#### Data inizio/data fine validità {#validity-date}
-In questi due campi troveremo la data di inizio validità del listino (quindi da quanto i prezzi di quel listino entreranno in vigore nei vari documenti) e la data fine validità (ovvero quando i prezzi di quel listino terminano la loro validità e verranno sostituiti da nuovi prezzi in un nuovo listino).
+#### Fecha de moneda (Data valuta) {#currency-date}
+Fecha en la que se calcula el valor del cambio como relación entre la moneda de la empresa y la del proveedor / cliente, de acuerdo con la configuración de la tabla *Tipos de cambio* que se encuentra en el recorrido *Configuración > Tablas > Administración*.
 
-#### Data scadenza
-Data di scadenza del pagamento calcolata a partire dalle condizioni di pagamento o imposta manualmente. Questo campo è presente in genere nei documenti del ciclo attivo e passivo (ordini, DDT, fatture ecc.). Il calcolo della data verifica le condizioni di pagamento (inserite nella testata) ed in particolare la soluzione di pagamento (esempio 30 giorni da data fattura) e li somma al valore del campo **(Data) decorrenza** (anche quest'ultimo presente nel documento - aprendo l'expander 'Spedizione'). Vedere anche **Scadenza.**
+#### Inicio de validez (Decorrenza (data))
+Campo presente en los documentos del ciclo activo y pasivo (ejemplo, facturas). Al momento de la creación del documento, se establece automáticamente igual a la fecha del documento, pero puede luego ser modificado manualmente. Según este campo se calcula el vencimiento (o vencimientos) de pago basado en las condiciones de pago (tipo y solución) establecidas para el documento.
 
-#### Data valuta {#currency-date}
-Data in cui viene calcolato il valore del cambio come rapporto tra la moneta della società e quella del fornitore/cliente, secondo le impostazioni della tabella *Cambi valute* che si trova nel percorso *Configurazione > Tabelle >Amministrazione*.
+#### Destinatario (Destinatario) {#recipient}
+En los pedidos de clientes / proveedores, en las DDT de compra / venta y en las facturas de compra / venta, este campo se completa automáticamente con el destinatario por defecto que se insertó previamente en *Registros de contactos > pestaña Datos contables > pestaña Entrega*.  
+En caso de que el destinatario sea diferente del por defecto, se podrá modificar la información directamente en el campo **Destinatario** de los documentos.
 
-#### Decorrenza (data)
-Campo presente nei documenti del ciclo attivo e passivo (esempio fatture). Al momento della creazione del documento si imposta automaticamente pari alla data documento, ma può essere poi variato manualmente. In base a questo campo viene calcolata la scadenza (o scadenze) di pagamento in base alle condizioni di pagamento (tipo e soluzione) impostate per il documento.
+#### Destinación (Destinazione) {#destination}
+En los pedidos de clientes / proveedores, en las DDT de compra / venta y en las facturas de compra / venta, este campo se completa automáticamente con la destinación por defecto que se chequeó previamente en *Registros de contactos > pestaña Datos contables > pestaña Entrega*.  
+En caso de que la destinación sea diferente de la predeterminada, se podrá modificar la información directamente en el campo **Destinación** de los documentos.  
+La destinación de la mercancía puede *coincidir* con el Destinatario, pero también puede ser diferente en caso de que el destinatario tenga, por ejemplo, más sedes o más almacenes.
 
-#### Destinatario {#recipient}
-Negli ordini clienti/fornitori, nelle DDT di acquisto/vendita e nelle fatture di acquisto/vendita, questo campo viene compilato automaticamente con il destinatario di default che si è precedentemente inserito in *Anagrafiche contatti> tab Dati contabili > tab Consegna*.  
-Nel caso il destinatario sia diverso da quello di default si potrà andare a modificare l'informazione direttamente nel campo **Destinatario** dei documenti.
+#### Divisa (Divisa) {#currency}
+Las divisas se codifican en la tabla correspondiente **Divisas** que se encuentra en la ruta *Configuración > Tablas > Configuración General*. En los documentos, se propone por defecto la información ingresada en *Registros de contactos > pestaña Datos contables > pestaña Administración* para indicar la divisa por defecto para los artículos relacionados con el sujeto.
 
-#### Destinazione {#destination}
-Negli ordini clienti/fornitori, nelle DDT di acquisto/vendita e nelle fatture di acquisto/vendita, questo campo viene compilato automaticamente con il destinatario di default che si è precedentemente inserito in *Anagrafiche contatti> tab Dati contabili > tab Consegna*.  
-Nel caso la destinazione sia diversa da quella di default si potrà andare a modificare l'informazione direttamente nel campo **Destinazione** dei documenti.  
-La destinazione della merce può *coincidere* con il Destinatario, ma può anche essere diversa nel caso il destinatario abbia per esempio più sedi o più magazzini.
-
-#### Divisa {#currency}
-Le divise vengono codificate nella relativa tabella **Divise** che si trova nel percorso *Configurazione > Tabelle >Impostazioni Generali*.   Nei documenti viene proposta di default l'informazione inserita in *Anagrafiche contatti> tab Dati contabili > tab Amministrazione* per indicare la divisa di default per gli articoli relativi al soggetto. 
-
-#### Documenti allegati
-In questa sezione, presente in diverse form, vengono visualizzati i documenti che sono stati allegati e che sono relativi alla form in cui ci trova;
-
+#### Documentos adjuntos (Documenti allegati)
+En esta sección, presente en diferentes formularios, se visualizan los documentos que han sido adjuntados y que son relativos al formulario en el que nos encontramos.
 
 ### E
 
-
 #### EDI
-Il sistema EDI (Electronic Data Interchange) consente l'interscambio di documenti tra i sistemi informativi delle diverse aziende attraverso un canale dedicato e in un formato definito in modo da non richiedere l'intervento umano salvo in alcuni casi eccezionali; consente quindi l'invio attraverso questo sistema di documenti quali ordini clienti, fatture, listini etc, che prima venivano inviati via mail, fax o posta.
+El sistema EDI (Intercambio Electrónico de Datos) permite el intercambio de documentos entre los sistemas de información de diferentes empresas a través de un canal dedicado y en un formato definido de manera que no requiera la intervención humana, salvo en algunos casos excepcionales; por lo tanto, permite el envío a través de este sistema de documentos tales como pedidos de clientes, facturas, listas, etc., que antes se enviaban por correo electrónico, fax o correos.
 
-#### Expander {#expander}
-Sono rappresentati da due piccole frecce e permettono di visualizzare (aperto ![](/img/it-it/guide/glossary/e/image01.png)) oppure di nascondere (chiuso ![](/img/it-it/guide/glossary/e/image02.png)) i dati che li contengono.
-
+#### Expander (Expander) {#expander}
+Son representados por dos pequeñas flechas y permiten visualizar (abierto ![](/img/it-it/guide/glossary/e/image01.png)) o esconder (cerrado ![](/img/it-it/guide/glossary/e/image02.png)) los datos que los contienen.
 
 ### F
 
+#### Fatturato acquisti (Fatturato acquisti)
+En este campo se propone el dato ingresado en la pestaña 'Generalidades' del registro de artículos. Se propone así el tipo de facturación de compras que se conecta a los subcuentas contables para la contabilización de las facturas de compra. Si esto no está presente, no se propone ningún dato, pero, en el momento de la contabilización de la factura, se considerará el valor insertado en el campo 'Costo / Ingreso de contrapartida predeterminada del registro de proveedor).
 
-#### Fatturato acquisti
-In questo campo viene proposto il dato inserito nel tab 'Generalità' dell'anagrafica articoli. viene quindi proposto il tipo fatturato acquisti che si collega ai sottoconti contabili per la contabilizzazione delle fatture di acquisto. Se questo non è presente, non viene proposto nessun dato, ma, al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo 'Costo/Ricavo di contropartita predefinito dell'anagrafica fornitore; 
+#### Fatturato vendite (Fatturato vendite)
+En este campo se propone el dato ingresado en la pestaña 'Generalidades' del registro de artículos. Se propone así el tipo de facturación de ventas que se conecta a los subcuentas contables para la contabilización de las facturas de venta. Si esto no está presente, no se propone ningún dato, pero, en el momento de la contabilización de la factura, se considerará el valor insertado en el campo 'Costo / Ingreso de contrapartida predeterminada del registro de clientes).
 
-#### Fatturato vendite
-In questo campo viene proposto il dato inserito nel tab 'Generalità' dell'anagrafica articoli. viene quindi proposto il tipo fatturato vendite che si collega ai sottoconti contabili per la contabilizzazione delle fatture di vendita. Se questo non è presente, non viene proposto nessun dato, ma, al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo 'Costo/Ricavo di contropartita predefinito dell'anagrafica clienti; 
-
-#### Form
-Maschera operativa del programma;
-
+#### Form (Form)
+Máscara operativa del programa.
 
 ### G
 
-#### Giorni di pagamento merce deperibile
-E' collegato all'articolo 62; per la merce deperibile la fattura deve essere creata e pagata entro una scadenza di 30/60 giorni in base al tipo di articolo. In questo caso questo controllo viene fatto sia sull'articolo, sia sul tipo di pagamento che viene inserito in modo che non si possano emettere fatture con data decorrenza maggiore rispetto a quella indicata.
-
+#### Giorni di pagamento merce deperibile (Giorni di pagamento merce deperibile)
+Está relacionado con el artículo 62; para la mercancía perecedera, la factura debe ser creada y pagada dentro de un plazo de 30/60 días según el tipo de artículo. En este caso, este control se realiza tanto en el artículo como en el tipo de pago que se inserta, de modo que no se puedan emitir facturas con fecha de inicio mayor a la indicada.
 
 ### I
 
-#### Imballo {#packing}
-I tipi di imballo vengono codificate nella relativa tabella **Imballi** che si trova nel percorso *Configurazione > Tabelle > Logistica*. Ulteriormente questo dato può essere inserito in *Anagrafiche contatti> tab Dati contabili > tab Consegna* per indicare l'imballo di default per gli articoli relativi al soggetto.  
-Se questo dato è *presente* nell'[Anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), verrà *proposto* di default in tutti i *documenti* relativi a quel soggetto.
+#### Imballo (Imballo) {#packing}
+Los tipos de embalaje se codifican en la tabla correspondiente **Embalajes** que se encuentra en la ruta *Configuración > Tablas > Logística*. Además, este dato puede ser ingresado en *Registros de contactos > pestaña Datos contables > pestaña Entrega* para indicar el embalaje por defecto para los artículos relacionados con el sujeto.  
+Si este dato está *presente* en el [Registro](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), se propondrá *por defecto* en todos los *documentos* relacionados con ese sujeto.
 
-#### Importo riga
-Campo che troviamo nei documenti di vendita e acquisto, in cui viene riportato l'importo 'semplice' della riga articolo (quantità x prezzo) che non tiene conto dell'IVA e di eventuali sconti.
+#### Importe línea (Importo riga)
+Campo que encontramos en los documentos de venta y compra, donde se informa el importe 'simple' de la línea del artículo (cantidad x precio) que no tiene en cuenta el IVA y eventuales descuentos.
 
-#### Imponibile
+#### Imponible (Imponibile)
 
 #### IVA
-E' un dato obbligatorio e lo troviamo in tutti i documenti di vendita/acquisto.
-
+Es un dato obligatorio y lo encontramos en todos los documentos de venta / compra.
 
 ### L
 
-#### Lingua {#language}
-Le Lingue vengono codificate nella relativa tabella **Lingue** che si trova nel percorso *Configurazione > Tabelle > Impostazioni Generali*.
-Questo dato si può inserire in *Anagrafiche contatti > tab Generale* e corrisponde alla lingua di emissione dei documenti.  
-Se questo dato è *presente* nell'anagrafica, verrà *proposto* di default in tutti i *documenti* relativi a quel soggetto.
+#### Lingua (Lingua) {#language}
+Los idiomas se codifican en la tabla correspondiente **Idiomas** que se encuentra en la ruta *Configuración > Tablas > Configuración General*.  
+Este dato se puede insertar en *Registros de contactos > pestaña General* y corresponde al idioma de emisión de los documentos.  
+Si este dato está *presente* en el registro, se propondrá *por defecto* en todos los *documentos* relacionados con ese sujeto.
 
-#### Listino fornitore {#purchase-price-list}
-Nei documenti di acquisti Viene proposta l'informazione inserita in *Anagrafica fornitore > tab Listini*, ma solo se esiste un listino di default (tabella di riferimento 'Listini fornitori');
+#### Listino fornitore (Listino fornitore) {#purchase-price-list}
+En los documentos de compras se propone la información ingresada en *Registro de proveedores > pestaña Listas*, pero solo si existe una lista por defecto (tabla de referencia 'Listas de proveedores').
 
-#### Listino cliente {#sales-price-list}
-Nei documenti di vendita viene proposta l'informazione inserita in *Anagrafica cliente > tab Listini*, ma solo se esiste un listino di default (tabella di riferimento 'Listini di vendita');
+#### Listino cliente (Listino cliente) {#sales-price-list}
+En los documentos de venta se propone la información ingresada en *Registro de clientes > pestaña Listas*, pero solo si existe una lista por defecto (tabla de referencia 'Listas de venta').
 
-#### Lotti
-In questo campo viene riportato il codice lotto dell'articolo, se l'articolo viene gestito tramite la Gestione lotti che viene impostata nell'anagrafica articolo nel tab 'Lotti e S/N'.
-
+#### Lotti (Lotti)
+En este campo se informa el código de lote del artículo, si el artículo se gestiona a través de la Gestión de lotes que se establece en el registro del artículo en la pestaña 'Lotes y S/N'.
 
 ### M
 
-#### Magazzino
-In questo campo, presente in diverse form, verrà riportato il codice magazzino che si è scelto di impostare per quello specifico articolo insieme alla causale di magazzino in base al tipo di movimentazione che si andrà a eseguire;
+#### Magazzino (Magazzino)
+En este campo, presente en diversos formularios, se informará el código de almacén que se ha elegido establecer para ese artículo específico junto con la causa de almacén según el tipo de movimiento que se va a realizar.
 
 ### N
 
-#### Natura articolo {#item-nature}
-Viene utilizzato in alcune procedure. Nella combo troviamo la lista delle varie nature che possiamo attribuire all'articolo:
- - *Attrezzatura/utensile/macchina* > gruppo di articoli per la parte di produzione;
- - *Famiglia articoli* > definisce l'articolo per le previsioni di vendita;
- - *Imballo* > serve per la gestione degli imballi a rendere, per la contabilità (per capire quanti imballi ho in casa e quanti ne ho dati al cliente o al fornitore e quindi capire quanti me ne devono rendere);
- - *Servizi* > per la gestione degli interventi post vendita;
- - *Prestito d'uso/impianti/componente impianto* > servono per la gestione delle manutenzioni.
+#### Natura articolo (Natura articolo) {#item-nature}
+Se utiliza en algunos procedimientos. En la combo encontramos la lista de las diversas naturalezas que podemos atribuir al artículo:
+ - *Equipo / herramienta / máquina* > grupo de artículos para la parte de producción;
+ - *Familia de artículos* > define el artículo para las previsiones de venta;
+ - *Embalaje* > sirve para la gestión de emprendimientos de devolución, para la contabilidad (para entender cuántos embalajes tengo en casa y cuántos he dado al cliente o proveedor y, por lo tanto, entender cuántos me deben devolver);
+ - *Servicios* > para la gestión de las intervenciones post venta;
+ - *Préstamo de uso / instalaciones / componente de instalación* > sirven para la gestión del mantenimiento.
 
-#### Nazione {#country}
-Le Nazioni vengono codificate nella relativa tabella **Nazioni** che si trova nel percorso *Configurazione > Tabelle >Impostazioni Generali*. Questo dato si può inserire in *Anagrafiche contatti > tab Generale* e indica il paese di provenienza del soggetto.  
-Se questo dato è *presente* nell'anagrafica, verrà *proposto* di default in tutti i *documenti* relativi a quel soggetto.
+#### Nazione (Nazione) {#country}
+Los países se codifican en la tabla correspondiente **Países** que se encuentra en la ruta *Configuración > Tablas > Configuración General*. Este dato se puede insertar en *Registros de contactos > pestaña General* y indica el país de origen del sujeto.  
+Si este dato está *presente* en el registro, se propondrá *por defecto* en todos los *documentos* relacionados con ese sujeto.
 
-#### Nomenclatura
-In questo campo viene selezionata attraverso l'help, la nomenclatura (ovvero la voce doganale dell'articolo) utile ai fini l'intrastat per la dichiarazione delle merci all'importazione o all'esportazione nonché ai fini statici per il commercio degli articoli all'interno dell'UE.
+#### Nomenclatura (Nomenclatura)
+En este campo se selecciona a través de la ayuda, la nomenclatura (es decir, el código arancelario del artículo) útil para fines intrastat para la declaración de mercancías en importación o exportación y también para fines estadísticos para el comercio de artículos dentro de la UE.
 
-#### Nostro/Vostro riferimento
+#### Nostro / Vostro riferimento (Nostro/Vostro riferimento)
 
-#### Note iniziali {#initial-note}
-Permette di selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo l'utente deve effettuare doppio click sul campo **Note iniziale** per aprire *Help note codificate* e selezionare i dati, oppure con il tasto destro del mouse può aprire una finestra per poter specificare un testo molto lungo di nota. Se il campo contiene un valore, viene cambiato il colore dello sfondo del campo.
+#### Note iniziali (Note iniziali) {#initial-note}
+Permite seleccionar las notas que se han ingresado anteriormente en la tabla homónima que se encuentra en la ruta *Configuración > Utilidades > Gestión de notas codificadas*. Para esto, el usuario debe hacer doble clic en el campo **Nota inicial** para abrir *Ayuda de notas codificadas* y seleccionar los datos, o con el botón derecho del ratón puede abrir una ventana para especificar un texto muy largo de nota. Si el campo contiene un valor, el color de fondo del campo se cambia.
 
-**Numero riga**: questo campo si compilerà automaticamente all'inserimento dei dati nella riga, in modo progressivo;
+**Número de línea**: este campo se completará automáticamente al ingresar los datos en la línea, de manera progresiva.
 
 ### O
 
-#### Operatore {#user}
-
+#### Operador (Operatore) {#user}
 import User from './../../../import/fields/user.md'
 
 <User />
 
 ### P
 
-#### Pagamento
-In questo campo viene riportato il termine di pagamento associato al soggetto nell'anagrafica clienti/fornitori/agents nel tab 'Dati contabili' nella sezione Amministrazione
+#### Pago (Pagamento)
+En este campo se informa el término de pago asociado al sujeto en el registro de clientes / proveedores / agentes en la pestaña 'Datos contables' en la sección Administración.
 
-#### Porto {#carriage}
-I tipi di porto vengono codificati nella relativa tabella **Porto** che si trova nel percorso *Configurazione > Tabelle > Impostazioni Generali*. Ulteriormente questo dato può essere inserito in *Anagrafiche contatti> tab Dati contabili > tab Consegna* per indicare il porto di default per gli articoli relativi al soggetto.  
-Se questo dato è *presente* nell'[Anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), verrà *proposto* di default in tutti i *documenti* relativi a quel soggetto.
+#### Porto (Porto) {#carriage}
+Los tipos de flete se codifican en la tabla correspondiente **Flete** que se encuentra en la ruta *Configuración > Tablas > Configuración General*. Además, este dato puede ser ingresado en *Registros de contactos > pestaña Datos contables > pestaña Entrega* para indicar el flete por defecto para los artículos relacionados con el sujeto.  
+Si este dato está *presente* en el [Registro](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), se propondrá *por defecto* en todos los *documentos* relacionados con ese sujeto.
 
-#### Prezzo Ivato
-In questo campo visualizza il prezzo comprensivo dell'aliquota Iva.
-
+#### Precio con IVA (Prezzo Ivato)
+En este campo se muestra el precio que incluye la tasa de IVA.
 
 ### Q
 
-
 ### R
 
-#### Riepiloghi IVA
-Griglia nella quale viene proposto il riepilogo IVA del documento, per ogni codice IVA;
+#### Riepiloghi IVA (Riepiloghi IVA)
+Rejilla en la que se propone el resumen del IVA del documento, por cada código IVA.
 
-#### Rivalsa IVA
-Se settata, l'IVA dell'articolo-omaggio viene considerata per il totale documento.
-
+#### Rivalsa IVA (Rivalsa IVA)
+Si se configura, el IVA del artículo de obsequio se considera para el total del documento.
 
 ### S
 
+#### Scadenza (Scadenza)
+Fecha de vencimiento calculada a partir de las condiciones de pago o impuesta manualmente. Este campo está presente dentro de las partidas. Ver también la Fecha de vencimiento.
 
-#### Scadenza
-Data di scadenza calcolata a partire dalle condizioni di pagamento o imposta manualmente. Questo campo è presente all'interno delle partite. Vedere anche Data scadenza.
+#### Scaricata (Scaricata)
+Este indicador, presente en los documentos de venta / compra como facturas y DDT, representa uno de los tipos de estado del documento. Si está activo, este indicador indica que el material presente en el documento ha sido descargado en el almacén.
 
-#### Scaricata
-Questo flag, è presente nei documenti di vendita/acquisto quali fatture e DDT, e rappresenta uno dei tipi di stato documento. Se attivo, questo flag sta ad indicare che il materiale presente nel documento è stato scaricato a magazzino.
+#### Serial Number (S/N) (Serial Number (S/N))
+Campo en el que se informa el código de serie específico de ese artículo, en caso de que en la definición de ese artículo en Lotes y S/N se haya optado por la gestión del artículo por número de serie.
 
-#### Serial Number (S/N)
-Campo in cui viene riportato il codice di serie specifico di quell'articolo, nel caso in cui nell'anagrafica di quell'articolo nel Lotti e S/N si sia optato per la gestione dell'articolo a serial number.
+#### Spedizione (Spedizione) {#shipment}
+Los tipos de envío se codifican en la tabla correspondiente **Envíos** que se encuentra en la ruta *Configuración > Tablas > Configuración General*. Además, este dato puede ser ingresado en *Registros de contactos > pestaña Datos contables > pestaña Entrega* para indicar el envío por defecto para los artículos relacionados con el sujeto.  
+Si este dato está *presente* en el [Registro](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), se propondrá *por defecto* en todos los *documentos* relacionados con ese sujeto.
 
-#### Spedizione {#shipment}
-I tipi di spedizione vengono codificati nella relativa tabella **Spedizioni** che si trova nel percorso *Configurazione > Tabelle >Impostazioni Generali*. Ulteriormente questo dato può essere inserito in *Anagrafiche contatti> tab Dati contabili > tab Consegna* per indicare la spedizione di default per gli articoli relativi al soggetto.  
-Se questo dato è *presente* nell'[Anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), verrà *proposto* di default in tutti i *documenti* relativi a quel soggetto.
+#### Estado documento (Stato documento)
+El dato se refiere a la tabla de estados de documento, y está presente en documentos de venta y compra. El estado del documento se define por una serie de indicadores que son configurados dentro del documento por el usuario o automáticamente cuando se inician ciertos procedimientos (ej. contabilización, cumplimiento de pedidos, etc.); los tipos de estado pueden ser diferentes según el documento en el que se encuentren (por ejemplo, impresa, autorizada, archivada, contabilizada, confirmada, etc.). Este campo puede ser utilizado por los procedimientos de replicación del sistema de gestión instalados para la gestión de una sede con puntos de venta.
 
-#### Stato documento
-Il dato si riferisce alla tabella degli stati documento, ed è presente nei documenti di vendita e acquisto. Lo stato del documento è definito da una serie dil flag che vengono settati all'interno del documento da parte dell'utente oppure automaticamente quando vengono lanciate determinate procedure (es. contabilizzazione, evasione da ordine etc.); i tipi di stato possono essere diversi in base al documento in cui ci si trova (alcuni es sono Stampata, autorizzata, archiviata, contabilizzata, confermata etc.). Questo campo può essere utilizzato dalle procedure di replicazione del gestionale installate per la gestione di una sede con dei punti vendita.
+#### Estado de cumplimiento (Stato evasione)
+Este campo presente en los pedidos de compra / venta y trabajo por encargo, muestra el estado de cumplimiento del documento. El pedido se considerará cumplido cuando se creen los documentos DDT o facturas, y su estado de cumplimiento cambia automáticamente de no cumplido a parcialmente cumplido (si no se han cumplido todas las líneas del pedido) o cumplido. El usuario también tiene la opción de forzar el cumplimiento de un pedido no completamente cumplido cambiando manualmente el estado del pedido a 'Cumplido forzosamente'.
 
-#### Stato evasione
-Questo campo presente, negli ordini di acquisto/vendita e conto lavoro, mostra lo stato di evasione del documento. L'ordine risulterà evaso quando verranno creati i documenti DDT o fatture, e il suo stato evasione cambia automaticamente da non evaso a parzialmente evaso (se non sono state evase tutte le righe ordine) o evaso. L'utente ha anche la possibilità di forzare l'evasione di un ordine non totalmente evaso cambiando manualmente lo stato dell'ordine in 'Forzatamente evaso'. 
-
-#### Stampata/o
-Il flag si attiva quando viene lanciata la stampa del documento.  
-
+#### Stampata/o (Stampata/o)
+El indicador se activa cuando se inicia la impresión del documento.
 
 ### T
 
-#### Testata
-Con questo termine si intende in alternativa:
- 1. Nelle form di ricerca, la parte alta della form (subito sotto la **Ribbon bar** ) dove è collocata la zona del filtro di ricerca (appositamente delimitata anche graficamente) con i relativi campi utilizzabili per raffinare la ricerca. Più informazioni saranno inserite e più la ricerca sarà mirata poiché i campi interagiscono tra loro.
- 2. Nelle form di inserimento (ad esempio di documenti oppure di registrazioni contabili ecc.) la parte alta del documento  (in alto nella form subito sotto la **Ribbon bar**) che accoglie i dati generali e comuni del documento (o della registrazione) quali ad esempio numero, data, sottoconto del cliente o fornitore al quale il documento è intestato ecc. Questa zona è ben definita (anche graficamente) rispetto alla zone centrale del documento (e quindi della form) che accoglie i dati di dettaglio quali ad esempio gli articoli inseriti nel documento oppure re righe di dettaglio di una registrazione ecc. Per alcuni tipi di documento la zona di testata può occupare l'intero spazio della form e dunque viene identificata, rispetto al dettaglio, da una apposita **Tab** 
+#### Testata (Testata)
+Con este término se entiende, alternativamente:
+ 1. En los formularios de búsqueda, la parte superior del formulario (justo debajo de la **Ribbon bar**) donde se encuentra la zona de filtro de búsqueda (delimitada gráficamente) con los campos relacionados para afinar la búsqueda. Cuantas más informaciones se ingresen, más precisa será la búsqueda, ya que los campos interactúan entre sí.
+ 2. En los formularios de ingreso (por ejemplo, de documentos o de registraciones contables, etc.) la parte superior del documento (en la parte alta del formulario justo debajo de la **Ribbon bar**) que acoge los datos generales y comunes del documento (o de la registración) como número, fecha, subcuenta del cliente o proveedor a quien se destina dicho documento, etc. Esta zona está bien definida (también gráficamente) en comparación con la zona central del documento (y por lo tanto del formulario) que acoge los datos de detalle como los artículos ingresados en el documento o las líneas de detalle de una registración, etc. Para ciertos tipos de documentos, la zona de cabecera puede ocupar el espacio total del formulario y, por lo tanto, se identifica, en comparación con el detalle, mediante una **Pestaña** adecuada.
 
+#### Número de seguimiento (Tracking number)
+Este campo lo podemos encontrar en la factura de venta, en la pestaña de transporte y sirve para indicar el número de seguimiento relacionado con el envío para facilitar la trazabilidad de la mercancía durante el envío.
 
-#### Tracking number
-Questo campo lo possiamo trovare nella fattura di vendita, nel tab trasporto e serve per indicare il tracking number relativo alla spedizione per favorire la tracciabilità della merce durante la spedizione.
+#### Tipo línea (Tipo riga)
+El tipo de línea identifica la tipología del artículo. Pueden ser de varios tipos:
 
-#### Tipo riga
-Il tipo riga identifica la tipologia dell'articolo. Possono essere di vari tipi:
-
-1-*Articolo codificato*: articoli codificati in anagrafica che caricano/scaricano il magazzino e possono essere contabilizzati in contabilità analitica;  
-2-*Articolo non codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica, ma NON movimentano il magazzino;  
-4-*Articolo note*: sono note descrittive riportate nella stampa del documento; non incide sulla contabilità e sul magazzino;  
-5-*Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento.
-
+1-*Artículo codificado*: artículos codificados en el registro que cargan / descargan el almacén y pueden ser contabilizados en contabilidad analítica;  
+2-*Artículo no codificado*: son artículos descriptivos que pueden ser contabilizados en contabilidad analítica, pero NO mueven el almacén;  
+4-*Notas de artículo*: son notas descriptivas que se reportan en la impresión del documento; no afectan la contabilidad y el almacén;  
+5-*Artículo de obsequio*: el artículo de obsequio se gestiona como un artículo codificado o no codificado para fines fiscales y de almacén, pero al ser un obsequio se contabiliza por separado en los resúmenes del documento.
 
 ### U
 
+#### Unità di misura (Unidad de medida) {#unit-of-measurement}
+A través de esta combo se selecciona la unidad de medida de gestión relativa al artículo.
 
-#### Unità di misura {#unit-of-measurement}
-Attraverso questa combo si seleziona l'unità di misura gestionale relativa all'articolo.
+#### Usuario predeterminado (Utente predefinito)
+Se encuentra en el formulario de conexión a la aplicación.
 
-#### Utente predefinito
-Si trova nella form di connessione all'applicazione.
-
-#### Utente
-vedi [Operatore](#user)
-
+#### Usuario (Utente)
+ver [Operador](#user)
 
 ### V
 
-
-#### V.I.E.S.
-Il VIES (VAT Information Exchange System) è un sistema di scambio di informazioni tra i Paesi dell'UE per una corretta fiscalità. Nello specifico è un sistema informatizzato che consente alle aziende di ottenere una verifica rapida della Partita Iva dei suoi clienti. Ovviamente si potranno verificare solamente le partite Iva dei clienti che si sono iscritti a questo sistema (sarà probabile che i piccoli artigiani e commercianti che non hanno scambi intracomunitari di merce non abbiamo registrato la loro società all'interno di questo sistema). Dall'anagrafica articoli quindi, inserendo la P.Iva e cliccando sul pulsante Proponi dati si potrà andare ad interrogare questo sistema che verificherà la validità e correttezza della partita iva del soggetto in uso. eventuali ricerche prive di risultato potranno dipendere a volte da un momentaneo disservizio del sistema che si sta interrogando.
-
+#### V.I.E.S. (V.I.E.S.)
+El VIES (Sistema de Intercambio de Información sobre el IVA) es un sistema de intercambio de información entre los países de la UE para una correcta fiscalidad. En concreto, es un sistema informatizado que permite a las empresas obtener una verificación rápida del número de IVA de sus clientes. Obviamente, sólo se podrán verificar los números de IVA de los clientes que se han inscrito en este sistema (es probable que los pequeños artesanos y comerciantes que no tienen intercambios intracomunitarios de mercancías no hayan registrado su empresa en este sistema). Desde el registro de artículos, al ingresar el P.Iva y haciendo clic en el botón Proponer datos, se puede interrogar a este sistema que verificará la validez y corrección del número de IVA del sujeto en uso. Cualquier búsqueda sin resultados puede deberse a un fallo momentáneo del sistema que se está interrogando.
 
 ### Z
 
-#### Zona {#zone}
-Le zone vengono codificate nella relativa tabella **Zone** che si trova nel percorso *Configurazione > Tabelle > Impostazioni Generali*. Ulteriormente questo dato può essere inserito in *Anagrafiche contatti> tab Dati contabili > tab Consegna* per indicare la zona di provenienza del soggetto.  
-Se questo dato è *presente* nell'Anagrafica, verrà *proposto* di default in tutti i *documenti* relativi a quel soggetto.
+#### Zona (Zona) {#zone}
+Las zonas se codifican en la tabla correspondiente **Zonas** que se encuentra en la ruta *Configuración > Tablas > Configuración General*. Además, este dato puede ser ingresado en *Registros de contactos > pestaña Datos contables > pestaña Entrega* para indicar la zona de origen del sujeto.  
+Si este dato está *presente* en el Registro, se propondrá *por defecto* en todos los *documentos* relacionados con ese sujeto.
 
-#### Zone consegna {#delivery-zone}
-Le zone di consegna vengono codificate nella relativa tabella **Zone consegna** che si trova nel percorso *Configurazione > Tabelle >Impostazioni Generali*. Ulteriormente questo dato può essere inserito in *Anagrafiche contatti> tab Dati contabili > tab Consegna* per indicare indicare la zona di consegna della merce.  
-Se questo dato è *presente* nell'Anagrafica, verrà *proposto* di default in tutti i *documenti* relativi a quel soggetto.
+#### Zonas de entrega (Zone consegna) {#delivery-zone}
+Las zonas de entrega se codifican en la tabla correspondiente **Zonas de entrega** que se encuentra en la ruta *Configuración > Tablas > Configuración General*. Además, este dato puede ser ingresado en *Registros de contactos > pestaña Datos contables > pestaña Entrega* para indicar la zona de entrega de la mercancía.  
+Si este dato está *presente* en el Registro, se propondrá *por defecto* en todos los *documentos* relacionados con ese sujeto.

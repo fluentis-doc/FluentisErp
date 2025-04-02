@@ -1,13 +1,13 @@
 ---
-title: Causali di Assenza
+title: causali di assenza
 sidebar_position: 2
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Causali di assenza** e contiene le motivazioni di assenza associate alla società. Per ricercarle premere ![](/img/neutral/common/search.png) Ricerca nella ribbon bar dopo aver inserito i filtri.
- I dati da inserire sono:
+Esta tabla es accesible desde **Tablas > Gestión de Proyectos > Causales de ausencia (Tabelle > Gestione Progetti > Causali di assenza)** y contiene las motivaciones de ausencia asociadas a la empresa. Para buscarlas, presione ![](/img/neutral/common/search.png) Buscar en la barra de ribbon después de haber ingresado los filtros.  
+Los datos a ingresar son:
 
-**Codice**: contiene il codice della causale;
+**codice**: contiene el código de la causal;  
 
-**Motivo**: contiene la descrizione del motivo;
+**motivo**: contiene la descripción del motivo;  
 
-**Società**: contiene la società in cui validare la causale, con la relativa **Descrizione**.
+**società**: contiene la empresa en la que validar la causal, con la correspondiente **descrizione**.

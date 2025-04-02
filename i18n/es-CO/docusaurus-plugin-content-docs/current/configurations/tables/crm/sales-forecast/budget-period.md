@@ -1,12 +1,8 @@
 ---
-title: Periodo Budget
+title: periodo budget
 sidebar_position: 3
 ---
 
-In questa tabella è necessario definire le tipologie di Periodo da utilizzare nella creazione dei [Marketing Budget](/docs/crm/sales-forecast-crm/marketing-budget).     
-Ogni tipologia può essere associata ad un Codice e Descrizione univoci. Inoltre, con il relativo flag sarà necessario decidere, per ogni tipologia, se il periodo budget dovrà essere su base Annuale, Semestrale, Quadrimestrale, Trimestrale, Mensile o Settimanale. 
-In base al flag selezionato, durante la creazione del Budget l'anno verrà automaticamente suddiviso in periodi e gli importi saranno distribuiti tra questi periodi. Ad esempio, se viene selezionato il flag mensile, l'importo del budget sarà suddiviso in 12 mesi all'interno della relativa tabella.
-
-
-
-
+En esta tabla se deben definir los tipos de período a utilizar en la creación de los [Presupuestos de Marketing (Marketing Budget)](/docs/crm/sales-forecast-crm/marketing-budget).  
+Cada tipo puede estar asociado a un Código y Descripción únicos. Además, con el indicador correspondiente, será necesario decidir, para cada tipo, si el período de presupuesto debe ser anual, semestral, cuatrimestral, trimestral, mensual o semanal.  
+Según el indicador seleccionado, durante la creación del presupuesto, el año se dividirá automáticamente en períodos y los montos se distribuirán entre estos períodos. Por ejemplo, si se selecciona el indicador mensual, el monto del presupuesto se dividirá en 12 meses dentro de la tabla correspondiente.

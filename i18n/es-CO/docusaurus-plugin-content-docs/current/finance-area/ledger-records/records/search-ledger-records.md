@@ -1,52 +1,51 @@
 ---
-title: Ricerca registrazioni contabili
+title: ricerca registrazioni contabili
 sidebar_position: 7
 ---
 
-La presente form permette di ricercare le registrazioni contabili precedentemente inserite ed eventualmente di entrare in modifica (o in visualizzazione) delle stesse selezionando la riga corrispondente ed effettuando un doppio click.
+Este formulario permite buscar los registros contables ingresados anteriormente y eventualmente entrar en modificación (o en visualización) de los mismos seleccionando la línea correspondiente y realizando un doble clic.
 
+#### Botones específicos en la Ribbon Bar
 
-#### Pulsanti specifici nella Ribbon Bar
+> **ricerca**: permite iniciar la búsqueda de los registros contables ingresados según los filtros establecidos.  
+> **nuovo**: permite ingresar un nuevo registro contable.  
+> **modifica**: permite modificar un registro contable previamente ingresado.  
+> **visualizzazione**: permite visualizar un registro contable previamente ingresado. En esta situación, los datos NO son modificables.  
 
-> **Ricerca**: permette di avviare la ricerca delle registrazioni contabili inserite secondo i filtri impostati   
-> **Nuovo**: permette di inserire una nuova registrazione contabile.  
-> **Modifica**: permette di modificare una registrazione contabile precedentemente inserita.  
-> **Visualizzazione**: permette di visualizzare una registrazione contabile precedentemente inserita. In questa situazione i dati NON sono modificabili 
+> **elimina**: permite cancelar un registro contable previamente ingresado. En algunos casos, la operación será impedida (por ejemplo, si una factura ha sido contabilizada automáticamente) solicitando realizar la operación de Rollback (Restauración) relacionada con el procedimiento mediante el cual se creó el registro.
 
-> **Elimina**: permette di cancellare una registrazione contabile precedentemente inserita. In alcuni casi l'operazione verrà impedita (ad esempio se una fattura è stata contabilizzata automaticamente) chiedendo di eseguire l'operazione di Rollback (Ripristino) connessa alla procedura con cui la registrazione è stata creata.
+> **Documento origen (Documento origine)**: permite recuperar el documento de origen del cual se originó el registro contable.  
+> **duplica**: permite crear un duplicado del registro contable con el fin de crear uno similar, modificando los elementos pertinentes, sin tener que ingresarlo desde cero.  
 
-> **Documento origine**: permette di richiamare il documento di origine dal quale si è originata la registrazione contabile.  
-> **Duplica**: permette di creare un duplicato della registrazione contabile al fine di crearne una simile, modificando gli elementi opportuni, senza doverla inserire da capo.  
+### Filtros específicos
 
-### Filtri specifici
+**causale contabile**: el cuadro combinado (como es habitual en Fluentis) permite seleccionar más de una causa a la vez manteniendo presionada la tecla Ctrl.
 
-**Causale contabile**: la combo box (come di consueto in Fluentis) consente di selezionare anche più di una causale alla volta tenendo premuto il tasto Ctrl.
+**Desde / Hasta fecha de registro + Desde / Hasta fecha de competencia (Da / A data registrazione + Da / A data competenza)**: son las fechas de referencia de los registros contables; atención, los filtros operan con una condición AND y, por lo tanto, el refinamiento de la búsqueda se acumula. En caso de desalineamiento involuntario de la fecha de registro y la fecha de competencia (contable), para encontrar el registro deseado, es recomendable quitar alternativamente el filtro de competencia o el de fecha de registro.
 
-**Da / A data registrazione + Da / A data competenza**: sono le date di riferimento delle registrazioni contabili; attenzione, i filtri operano con una condizione AND e quindi il raffinamento della ricerca si somma. In caso di disallineamento involontario della data di registrazione e della data di competenza (contabile) per ritrovare la registrazione desiderata è opportuno togliere in alternativa il filtro per competenza oppure quello per data registrazione.
+**numero registrazione**: se trata del número presente en el encabezado y referido al libro diario (normalmente la numeración es anual o diaria).
 
-**Numero registrazione**: si tratta del numero presente nella testata e riferito al libro giornale (solitamente la numerazione è annuale o giornaliera)
+**Fecha / Número de documento (Data / Numero documento)**: referido al encabezado del registro, campo que alberga el número y la fecha de la factura, generalmente.
 
-**Data / Numero documento**: riferito alla testata della registrazione, campo che accoglie il numero e la data fattura, generalmente 
+**tipo documento**: campo presente en el encabezado del registro y referido, por ejemplo, a Factura, Nota de crédito, o Genérico para registros de primera entrada.
 
-**Tipo Documento**: campo presente nella testata della registrazione e riferito ad esempio a Fattura, Nota di accredito, oppure Generico per registrazioni di prima nota
+**conto registrazione**: se trata del subcuenta ingresada en el encabezado del registro (Cliente o proveedor).
 
-**Conto Registrazione**: si tratta del sottoconto inserito nella testata della registrazione (Cliente o fornitore).
+**conto dettaglio**: se trata de los subcuentas ingresadas en la sección del libro diario (movimientos contables). Normalmente se utiliza en combinación con el filtro anterior para buscar, por ejemplo, en relación con un subcuenta de cliente o proveedor particular, los registros que contienen un subcuenta de costo o ingreso particular.
 
-**Conto Dettaglio**: si tratta dei sottoconti inseriti nella sezione del libro giornale (movimenti contabili). Normalmente si utilizza in combinazione con il filtro precedente per ricercare, ad esempio, relativamente ad un particolare sottoconto cliente o fornitore, le registrazioni che contengono un particolare sottoconto di costo o ricavo.
+**tipo conto**: permite seleccionar uno (o más de uno manteniendo presionada la tecla Ctrl) de los tipos de cuenta (Costos / Ingresos / activo / pasivo o cuentas de registro como Clientes, Proveedores, Bancos y Agentes). Además, al abrir el **expansor**, es posible **excluir tipos** de cuentas de registro.
 
-**Tipo conto**: permette di selezionare uno (o più di uno tenendo premuto Ctrl) de tipi conto (Costi / Ricavi / attivo / passivo o conti di anagrafica come Clienti, Fornitori, Banche ed Agenti). Inoltre aprendo **l'expander** è possibile **escludere le tipologie** di conti di anagrafica.
+**registro iva**: en esta sección (abriendo el expansor) es posible filtrar los registros referidos a un registro de IVA específico y a un intervalo de protocolos de IVA.
 
-**Registro IVA**: in questa sezione (aprendo l'expander) è possibile filtrare le registrazioni riferite ad uno specifico registro iva e ad un intervallo di protocolli iva.
+### Sección expansible (expander) *Búsqueda avanzada*
 
-### Sezione espandibile (expander) *Ricerca Avanzata*
+En esta sección es posible buscar también:
 
-In questa sezione è possibile ricercare anche: 
+- los [registros en estado provisional](/docs/finance-area/ledger-records/records/procedures/bridged-recording) (además de definitivo)  
+- por descripción del registro (en el diario) y del movimiento de detalle individual (descripción de contrapartida)  
+- en un intervalo numérico de valores referidos a la sección de Debe / Haber  
+- registros automáticos de cierre / apertura de cuentas  
 
-- le [registrazioni in stato provvisorio](/docs/finance-area/ledger-records/records/procedures/bridged-recording) (oltre che definitivo)
-- per descrizione della registrazione (sul giornale) e del singolo movimento di dettaglio (descrizione di contropartita)
-- in un intervallo numerico di valori riferiti alla sezione Dare / Avere
-- registrazioni automatiche di chiusura / apertura conti
+### Campos específicos en la cuadrícula de resultados
 
-### Campi specifici nella griglia di risultato
-
-**Stato SdI**: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI.  
+**stato sdi**: alberga la descripción del estado del documento, reportando tanto el estado de gestión interno de Fluentis como el estado reportado por Fluentis Business Hub y adquirido directamente de SdI.

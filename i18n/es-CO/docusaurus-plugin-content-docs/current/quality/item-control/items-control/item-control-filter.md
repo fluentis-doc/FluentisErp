@@ -1,23 +1,23 @@
 ---
-title: Ricerca Controlli articolo
+title: Búsqueda de Controles de Artículos (Ricerca Controlli articolo)
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Controlli articolo**.   
+El filtro se encuentra en la ruta **Calidad > Controles de artículo > Controles de artículo**.
 
-Il filtro dati consente di inserire nuovi *Controlli articolo* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
-I diversi colori delle righe si possono impostare nei **Parametri controlli articoli > Controlli Articoli**.   
+El filtro de datos permite ingresar nuevos *Controles de artículo* o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.  
+Los diferentes colores de las filas se pueden configurar en **Parámetros de controles de artículos > Controles de Artículos**.
 
-### ![](/img/neutral/common/search.png) Ricerca Controlli articolo
+### ![](/img/neutral/common/search.png) Búsqueda de Controles de Artículo
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario consta de un área de filtro y otra de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/new.png) Inserimento Controlli articolo
+### ![](/img/neutral/common/new.png) Inserción de Controles de Artículo
 
-Per poter inserire nuovi *Controlli articoli* è necessario premere il pulsante **Importa articoli da controllare**.   
+Para poder ingresar nuevos *Controles de artículos*, es necesario presionar el botón **importa articoli da controllare**.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Controlli articolo
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Controles de Artículo
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

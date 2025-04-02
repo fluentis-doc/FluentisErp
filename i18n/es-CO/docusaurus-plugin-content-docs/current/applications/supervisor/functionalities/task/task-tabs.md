@@ -1,21 +1,21 @@
 ---
-title: Tabs del Task 
-sidebar_label: Tabs del Task
+title: Tabs del Task (Tabs del Task)
+sidebar_label: Tabs del Task (Tabs del Task)
 sidebar_position: 1
 ---
 
-La form riguardante i task è suddivisa in ulteriori tre tab.  
-In particolare:
+El formulario relacionado con las tareas está dividido en tres pestañas adicionales.  
+En particular:
 
-Tab **Script**
-In questo tab è possibile:
-* scegliere la modalità di creazione dello script (editor visuale Blockly piuttosto che editor testuale).
-* compilare lo script attraverso l'apposito pulsante.
-  
-Tab **Parametri**
-Possono essere definiti e gestiti diversi parametri di input e di output che l'utente però valorizzare in diverse madalità.
+Pestaña **script**  
+En esta pestaña es posible:  
+* elegir el modo de creación del script (editor visual Blockly o editor de texto).  
+* compilar el script a través del botón correspondiente.  
 
-Tab **Logs Esecuzione**
-In questo tab vengono visualizzati tutti i log relativi all'esecuzione dello script.
+Pestaña **parametri**  
+Se pueden definir y gestionar diferentes parámetros de entrada y de salida que el usuario debe valorar de diversas maneras.  
 
-![alt text](/img/it-it/applications/supervisor/supervisor9.png) 
+Pestaña **Registros de Ejecución (Logs Esecuzione)**  
+En esta pestaña se visualizan todos los registros relacionados con la ejecución del script.  
+
+![alt text (alt text)](/img/it-it/applications/supervisor/supervisor9.png)

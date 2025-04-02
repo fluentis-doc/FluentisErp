@@ -1,13 +1,11 @@
 ---
-title: Testata
+title: testata
 sidebar_position: 2
 ---
 
-In questa tab possono essere definiti dei dati generali del progetto, come la **Divisa**, le modalità di **Spedizione**, un’eventuale **Data di chiusura**, la **Nazione**. Lo **Stato evasione** diventa necessario per indicare il progetto evaso in altri documenti, mentre le **Annotazioni cliente** riportano alcuni riferimenti per il cliente, come un eventuale progetto collegato o delle note iniziali.
+En esta pestaña se pueden definir datos generales del proyecto, como la **divisa**, los métodos de **spedizione**, una posible **data di chiusura** y el **nazione**. El **stato evasione** se vuelve necesario para indicar el proyecto cumplido en otros documentos, mientras que las **annotazioni cliente** reportan algunas referencias para el cliente, como un posible proyecto relacionado o notas iniciales.
 
 ![](/img/it-it/project-management/projects/header.png)
 
-La Testata contiene a sua volta diversi tab, che riportano i dati presenti di default nell’anagrafica cliente, ma possono essere anche liberamente compilati: Pagamenti, Sconti, Agenti, Destinazione, Extra Data, Permessi Utente.
-In quest’ultima tab è possibile elencare gli utenti e i relativi diritti di Read Only o Read Write, se nella tabella Tipi progetto è abilitato il flag **Sicurezza del progetto abilitata**; in caso contrario, tutti gli utenti avranno diritti Read Write.
-
-
+El testata (Testata) contiene a su vez varias pestañas, que muestran los datos presentes de forma predeterminada en el registro del cliente, pero pueden ser también completados libremente: Pagos (Pagamenti), Descuentos (Sconti), Agentes (Agenti), Destino (Destinazione), Datos Extra (Extra Data), Permisos de Usuario (Permessi Utente).  
+En esta última pestaña es posible enumerar los usuarios y sus respectivos derechos de Solo Lectura (Read Only) o Lectura y Escritura (Read Write), si en la tabla Tipos de proyecto (Tipi progetto) está habilitado el indicador **sicurezza del progetto abilitata**; de lo contrario, todos los usuarios tendrán derechos de Lectura y Escritura (Read Write).

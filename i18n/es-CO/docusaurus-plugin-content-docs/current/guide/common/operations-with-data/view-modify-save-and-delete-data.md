@@ -1,34 +1,34 @@
 ---
-title: Visualizzazione, modifica, salvataggio e cancellazione dati
+title: Visualización, modificación, guardado y eliminación de datos (Visualizzazione, modifica, salvataggio e cancellazione dati)
 sidebar_position: 5
 ---
 
-**Visualizzazione dati**
+**Visualización de datos (Visualizzazione dati)**
 
-Se desiderate visualizzare i dati utilizzate il pulsante ![](/img/neutral/common/view.png). Questa procedura non permette la modifica dei dati.
+Si desea visualizar los datos, utilice el botón ![](/img/neutral/common/view.png). Este procedimiento no permite la modificación de los datos.
 
-**Modifica dati**
+**Modificación de datos (Modifica dati)**
 
-Se desiderate aprire un record per apportare delle modifiche usate il pulsante ![](/img/neutral/common/edit.png).
+Si desea abrir un registro para realizar cambios, utilice el botón ![](/img/neutral/common/edit.png).
 
-**Salvataggio dati**
+**Guardado de datos (Salvataggio dati)**
 
-Si può realizzare usando il pulsante ![](/img/neutral/common/save.png) oppure la combinazione di tasti CTRL+S dalla tastiera. In certe tabelle il salvataggio si realizza semplicemente spostandosi su un'altra riga.
+Se puede llevar a cabo usando el botón ![](/img/neutral/common/save.png) o la combinación de teclas CTRL+S desde el teclado. En ciertas tablas, el guardado se realiza simplemente desplazándose a otra fila.
 
-**Cancellazione dati**
+**Eliminación de datos (Cancellazione dati)**
 
-Selezionate i dati da cancellare e premette il pulsante ![](/img/neutral/common/delete.png) oppure usate il tasto 'Canc' della tastiera. L'applicazione lancera un messaggio per confermare l'operazione. Se scegliete Sì i dati selezionati verranno cancellati.
+Seleccione los datos que desea eliminar y presione el botón ![](/img/neutral/common/delete.png) o use la tecla 'Supr' de su teclado. La aplicación mostrará un mensaje para confirmar la operación. Si elige "Sí", los datos seleccionados serán eliminados.
 
 :::note Nota
-Ci sono registrazioni che non possono essere cancellate prima di cancellare i suoi collegamenti ad altre registrazioni.
+Hay registros que no pueden ser eliminados antes de que se eliminen sus vínculos a otros registros.
 :::
 
-Per più dettagli:
+Para más detalles:
 
-- Consultare  [Ricerca dati](/docs/guide/common/operations-with-data/data-search-in-read-only-forms)  e  [Inserimento e selezione dati](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  per impostare correttamente i campi.
+- Consulte [Búsqueda de datos (Ricerca dati)](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) y [Ingreso y selección de datos (Inserimento e selezione dati)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) para configurar correctamente los campos.
 
-- Consultare  [Stampe ](/docs/guide/common/operations-with-data/reports) per impostare diverse opzioni di stampa dei documenti.
+- Consulte [Impresiones (Stampe)](/docs/guide/common/operations-with-data/reports) para configurar diversas opciones de impresión de documentos.
 
-- Consultare  [Campi comuni](/docs/guide/common/glossary/glossary-intro)  e  [Pulsanti comuni](/docs/guide/common/common-buttons)  per la descrizione dei campi di filtro/pulsanti comuni alla maggior parte delle form.
+- Consulte [Campos comunes (Campi comuni)](/docs/guide/common/glossary/glossary-intro) y [Botones comunes (Pulsanti comuni)](/docs/guide/common/common-buttons) para la descripción de los campos de filtro/botones comunes en la mayoría de los formularios.
 
-- Consultare  [Navigazione e acceleratori](/docs/guide/common/operations-with-data/navigation-and-accelerators)  per navigare rapidamente nell'applicazione.
+- Consulte [Navegación y aceleradores (Navigazione e acceleratori)](/docs/guide/common/operations-with-data/navigation-and-accelerators) para navegar rápidamente en la aplicación.

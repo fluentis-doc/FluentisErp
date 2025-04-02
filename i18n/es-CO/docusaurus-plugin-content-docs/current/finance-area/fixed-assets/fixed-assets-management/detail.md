@@ -1,62 +1,47 @@
 ---
-title: Dettaglio
+title: dettaglio
 sidebar_position: 1
 ---
 
-**Stato cespite**: viene gestito automaticamente sulla base delle operazioni collegate al cespite e non va forzato. In caso di cespite pregresso inserendo anche il fondo ammortamento lo stato passerà a Parzialmente/Totalmente ammortizzato. Per il corretto inserimento di un cespite pregresso vedere  [**l'allegato all'articolo sulla registrazione contabile di un cespite**.](/docs/finance-area/ledger-records/records/ledger-record) 
+**stato cespite**: se gestiona automáticamente en función de las operaciones relacionadas con el activo y no debe forzarse. En caso de un activo previo, al ingresar también el fondo de amortización, el estado pasará a Parcialmente/Totalmente amortizado. Para la correcta inserción de un activo previo, consulte [**el anexo del artículo sobre el registro contable de un activo**](/docs/finance-area/ledger-records/records/ledger-record).
 
+La **fecha de inicio de actividad (data d'inizio attività)**, propuesta como la fecha actual, es la fecha en la cual el activo ha entrado efectivamente en uso en la empresa: solo a partir de esta fecha será posible amortizar el activo. La **fecha de fin de actividad (data di fine attività)** normalmente no debe configurarse a menos que haya casos especiales para bloquear el cálculo de la amortización y ya no visualizar el activo en el libro de activos; en la gestión normal, al completar la amortización residual, el activo no será amortizado de todos modos. Las **fechas** relativas a las **garantías** tienen una función informativa no relacionada con ningún automatismo.
 
+En el campo **cespite** se reporta automáticamente la cuenta patrimonial de referencia para la categoría de activo seleccionada; el siguiente código del proveedor no es gestionado automáticamente por el programa, ya que los proveedores y clientes de referencia de las diversas operaciones se indicarán específicamente dentro de estas. La subcuenta industrial se refiere en detalle al plan de cuentas industrial, que normalmente no se utiliza.
 
-La **data d'inizio attività**, proposta come data odierna, è la data alla quale il cespite è effettivamente entrato in uso nella società: solo a partire da questa data sarà possibile ammortizzare il cespite. La **data di fine attività** normalmente non va impostata se non in casi particolari per bloccare il calcolo dell'ammortamento e non visualizzare più il cespite a libro cespiti: nella gestione normale, infatti, al completamento dell'ammortamento residuo il cespite non sarà comunque più ammortizzato. Le **date** relative alle **garanzie** hanno una funzione informativa non collegata ad alcun automatismo.
+El campo **ubicazione** hace referencia a la tabla homónima y sirve para guardar dónde se encuentra físicamente el activo (por ejemplo, una sede empresarial) mientras que **matricola** es un campo de texto libre, donde anotar la ubicación y la matrícula del activo; el código **dipendente** puede permitir almacenar el sujeto que utiliza el activo.
 
-
-
-Nel campo **Cespite** viene riportato automaticamente il sottoconto patrimoniale di riferimento per la categoria cespite selezionata; il successivo codice del fornitore non viene gestito automaticamente dal programma, in quanto i fornitori e i clienti di riferimento delle varie operazioni saranno indicati specificatamente all'interno di queste. Il sottoconto industriale fa riferimento in dettaglio del piano dei conti industriale, normalmente non utilizzato.
-
-Il campo **Ubicazione** richiama la tabella omonima e serve per memorizzare dove si trova fisicamente il cespite (ad es. una sede aziendale) mentre **Matricola** è un campo testuale libero, dove annotare l'ubicazione e la matricola del cespite; il codice **dipendente** può consentire di memorizzare il soggetto che ha in uso il cespite.
-
-A seconda delle impostazioni dei parametri (Configurazione > Utilità > Parametri Cespiti), può essere visibile inoltre una **percentuale di ammortamento** civile 'personalizzata' per il singolo cespite, da utilizzare in via prioritaria rispetto a quella della categoria d'appartenenza come anche l'unità di misura per le quantità valorizzate nella scheda cespite.
+Dependiendo de la configuración de los parámetros (Configuración > Utilidades > Parámetros de Activos), también puede ser visible un **porcentaje de amortización** civil 'personalizado' para el activo individual, que se utilizará prioritariamente en comparación con el de la categoría a la que pertenece, al igual que la unidad de medida para las cantidades valoradas en la ficha del activo.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image01.png)
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image02.png)
 
- 
 
-Nel campo **Tipi Deducibilità** si può associare al singolo cespite il suo tipo prioritario di deducibilità fiscale degli ammortamenti. La combo box rinvia alla specifica tabella dove codificare il codice e descrizione dei possibili tipi di deducibilità e nella griglia inferiore la relativa percentuale di deducibilità che sarà utilizzata, durante il calcolo della quota di ammortamento, per calcolare la quota deducibile fiscalmente. I campi data inizio / data fine permettono di gestire eventuali cambiamenti di aliquota tenendo traccia dei precedenti.
+En el campo **tipi deducibilità** se puede asociar al activo individual su tipo prioritario de deducibilidad fiscal de las amortizaciones. La combo box remite a la tabla específica donde se codifican el código y la descripción de los posibles tipos de deducibilidad, y en la cuadrícula inferior la correspondiente porcentaje de deducibilidad que se utilizará, durante el cálculo de la cuota de amortización, para calcular la cuota deducible fiscalmente. Los campos de fecha de inicio / fecha de fin permiten gestionar eventuales cambios de alícuota manteniendo un registro de los anteriores.
 
-La sezione dei **Centri di costo**: consente di attribuire una percentuale di valorizzazione automatica degli ammortamenti ai vari centri di costo definiti nella società.
-Per abilitarne la lettura occorre attivare, all'interno della form Parametri > Amministrazione > Parametri cespiti, il **flag Abilitazione centro contabilità**
+La sección de **centri di costo**: permite atribuir un porcentaje de valorización automática de las amortizaciones a los diversos centros de costos definidos en la empresa. Para habilitar su lectura, es necesario activar, dentro del formulario Parámetros > Administración > Parámetros de activos, el **indicador de habilitación de centro contable (flag Abilitazione centro contabilità)**.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image03.png)
 
- 
 
-Sono poi presenti una serie di check box visibili aprendo l'Expander Extra Data: 
+Luego hay una serie de casillas de verificación visibles al abrir el Expander Datos Extra:
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image04.png)
 
- 
 
-il default del cespite **in uso** (se il flag non è presente, il cespite non potrà essere ammortizzato), lo stato di cespite **usato** (se il flag è impostato, l'ammortamento anticipato sarà applicato solo il primo anno di acquisto e il flag Ammortamento primo anno (presente nella tabella delle ** [Categorie cespiti](/docs/configurations/tables/finance/fixed-asset-category) **) non avrà effetto, per cui le percentuali di applicazione  degli ammortamenti del primo anno non saranno dimezzate); 
+el estado del activo **in uso** (si el indicador no está presente, el activo no podrá ser amortizado), el estado del activo **usato** (si el indicador está activado, la amortización anticipada se aplicará solo el primer año de compra y el indicador de Amortización del primer año (presente en la tabla de **[Categorías de activos (Categorie cespiti)](/docs/configurations/tables/finance/fixed-asset-category)**) no tendrá efecto, por lo que los porcentajes de aplicación de las amortizaciones del primer año no serán reducidos); 
 
-**In manutenzione** significa che il cespite è da conteggiare nella stampa manutenzioni; 
+**in manutenzione** significa que el activo debe ser contabilizado en el informe de mantenimiento; 
 
-**Cessato** è un flag attivo solo per categorie cespiti immateriali e serve ad escluderne la stampa a libro cespiti nel caso in cui il valore patrimoniale sia stato stornato dal bilancio (ammortamento diretto in conto e non a fondo); 
+**cessato** es un indicador activo solo para categorías de activos intangibles y se utiliza para excluir su impresión en el libro de activos en caso de que el valor patrimonial haya sido retirado del balance (amortización directa en cuenta y no en fondo); 
 
-**Amm**. **Totale** consente di attribuire al cespite l'ammortamento al 100% direttamente al primo anno: al salvataggio del cespite ERP sarà effettuata una verifica della correttezza di questa impostazione in relazione al limite impostato in categoria cespite; sarà visibile lo stato di cespite stampato o meno, che indicherà la non modificabilità dei riferimenti di testata del cespite nel caso in cui questo sia già stato inserito in una stampa definitiva del libro cespiti ammortizzabili;
+**Amortización total (Amm. Totale)** permite atribuir al activo la amortización del 100% directamente en el primer año: al guardar el activo, el ERP realizará una verificación de la corrección de esta configuración en relación con el límite establecido en la categoría de activo; será visible el estado del activo impreso o no, lo que indicará la no modificabilidad de las referencias de cabecera del activo en caso de que ya haya sido incluido en una impresión definitiva del libro de activos amortizables;
 
-Per concludere, i flag **Ricavometro** e **Studi di settore** servono per identificare i cespiti da considerare per questi adempimenti fiscali.
-
+Para concluir, los indicadores **Ricavometro** y **Studi di settore** sirven para identificar los activos a considerar para estos requisitos fiscales.
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Salva | Salva il cespite, obbligatorio per assegnare un numero al cespite e attivare i vari tab. |
-|  [Documenti](/docs/guide/common/operations-with-data/document-manager)  | Gestione dell'archiviazione documentale associata alla maschera in uso. |
-
-
-
-
-
-
+| Guardar (Salva) | Guarda el activo, obligatorio para asignar un número al activo y activar las diversas pestañas. |
+|  [Documentos (Documenti)](/docs/guide/common/operations-with-data/document-manager)  | Gestión del archivo documental asociado al formulario en uso. |

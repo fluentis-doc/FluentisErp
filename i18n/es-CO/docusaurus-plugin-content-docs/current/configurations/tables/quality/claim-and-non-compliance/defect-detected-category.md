@@ -1,28 +1,28 @@
 ---
-title: Categorie difetto riscontrato
+title: Categorías de defectos encontrados (Categorie difetto riscontrato)
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Categorie difetto riscontrato**.
+La tabla se encuentra en la ruta **Tablas > Calidad > General > Categorías de defectos encontrados (Categorie difetto riscontrato)**.
 
-In questa tabella è possibile codificare i metodi utilizzati per la ricezione o l'invio di documenti.   
-Un esempio di utilizzo lo troviamo nella tabella **Difetti riscontrati**.   
+En esta tabla es posible codificar los métodos utilizados para la recepción o el envío de documentos.  
+Un ejemplo de uso lo encontramos en la tabla **difetti riscontrati**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Categorie difetto riscontrato**
+**Búsqueda de Categorías de defectos encontrados (Ricerca Categorie difetto riscontrato)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo será necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Categorie difetto riscontrato**
+**Inserción de Categorías de defectos encontrados (Inserimento Categorie difetto riscontrato)**
 
-Per poter inserire nuove *Categorie difetto riscontrato* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *Categorías de defectos encontrados (Categorie difetto riscontrato)*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*: 
 
-> **Codice**: è il codice della *Categoria difetto riscontrato*.   
-> **Descrizione**: è la descrizione della *Categoria difetto riscontrato*.   
-> **Note**: annotazioni libere.
+> **codice**: es el código de la *categoria difetto riscontrato*.  
+> **descrizione**: es la descripción de la *categoria difetto riscontrato*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

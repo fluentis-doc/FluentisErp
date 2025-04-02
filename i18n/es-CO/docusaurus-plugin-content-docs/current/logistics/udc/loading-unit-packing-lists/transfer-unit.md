@@ -1,75 +1,76 @@
 ---
-title: Liste di Trasferimento UDC (versione WPF e WMS)
+title: Listas de Transferencia UDC (versión WPF y WMS) (Liste di Trasferimento UDC (versione WPF e WMS))
 sidebar_position: 2
 ---
 
-### Liste di Trasferimento UDC (versione WPF)
+### Listas de Transferencia UDC (versión WPF) (Liste di Trasferimento UDC (versione WPF))
 
-:::important A cosa serve
-La Lista Trasferimento UDC di Fluentis è uno strumento progettato per gestire le movimentazioni delle Unità Di Carico (UDC) all'interno dei propri magazzini, offrendo un metodo sistematico e intuitivo per il trasferimento di merce. A differenza della Lista di Prelievo UDC, che è utilizzata per la spedizione ai clienti, la lista di trasferimento si concentra sull'ottimizzazione dei flussi interni delle UDC tra le varie ubicazioni del magazzino.
+:::important ¿Para qué sirve? (A cosa serve)
+La Lista de Transferencia UDC de Fluentis es una herramienta diseñada para gestionar los movimientos de las Unidades De Carga (UDC) dentro de sus almacenes, ofreciendo un método sistemático e intuitivo para la transferencia de mercancía. A diferencia de la Lista de Recogida UDC, que se utiliza para el envío a clientes, la lista de transferencia se centra en la optimización de los flujos internos de las UDC entre las diversas ubicaciones del almacén.
 
-Per creare una nuova lista di trasferimento, gli utenti devono semplicemente inserire i dettagli necessari, come la tipologia di picking, il magazzino di origine e l'utente coinvolto. La selezione delle unità di carico da trasferire può essere effettuata facilmente attraverso l'interfaccia, anche in questo caso grazie al pulsante Help UDC, che assiste nella ricerca delle UDC da includere nel trasferimento.
+Para crear una nueva lista de transferencia, los usuarios deben simplemente ingresar los detalles necesarios, como la tipología de picking, el almacén de origen y el usuario involucrado. La selección de las unidades de carga a transferir puede hacerse fácilmente a través de la interfaz, también en este caso gracias al botón de Ayuda UDC, que asiste en la búsqueda de las UDC a incluir en la transferencia.
 
-Questa procedura consente anche di visualizzare gli articoli collegati a specifici ordini cliente, fornendo una panoramica chiara dei dettagli delle UDC selezionate. Una volta completata la lista di trasferimento, è possibile generare un DDT (Documento di Trasporto) direttamente dalla lista stessa, garantendo che tutte le informazioni relative agli articoli e alle unità di carico siano riportate in modo accurato e completo. Questo approccio non solo semplifica la gestione delle movimentazioni interne, ma contribuisce anche a mantenere una tracciabilità precisa delle scorte.
+Este procedimiento también permite visualizar los artículos relacionados con órdenes de cliente específicas, proporcionando una visión clara de los detalles de las UDC seleccionadas. Una vez completada la lista de transferencia, es posible generar un DDT (Documento de Transporte) directamente desde la lista misma, garantizando que toda la información relacionada con los artículos y las unidades de carga se registre de manera precisa y completa. Este enfoque no solo simplifica la gestión de los movimientos internos, sino que también contribuye a mantener un seguimiento preciso de los inventarios.
 :::
 
-Le **Liste di Trasferimento UDC** sono molto simili alle [Liste di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la differenza che vengono utilizzate nel caso di movimentazioni di UDC all’interno dei propri magazzini, mentre **Liste di prelievo UDC / Packing list** sono impiegate nel caso in cui si voglia spedire la merce ad un cliente.     
+Las **Listas de Transferencia UDC (Liste di Trasferimento UDC)** son muy similares a las [Listas de Recogida UDC / Packing list (Liste di prelievo UDC / Packing list)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la diferencia de que se utilizan en caso de movimientos de UDC dentro de sus propios almacenes, mientras que las **Listas de Recogida UDC / Packing list** son empleadas cuando se desea enviar la mercancía a un cliente.  
 
-Dalla maschera di **Ricerca** è possibile ricercare le liste precedentemente inserite.     
+Desde la pantalla de **ricerca** es posible buscar listas previamente ingresadas.  
 
-Per creare una nuova lista cliccare **Nuovo**.          
-I dati obbligatori da inserire sono:         
-**Tipo picking**: inserire la tipologia di [picking](/docs/logistics/picking/picking-management) da utilizzare;       
-**Utente**: inserire il dipendente codificato che crea il documento;      
-**Utente per conf.**: inserire il dipendente che ha il diritto di confermare la lista.    
+Para crear una nueva lista, haga clic en **nuovo**.          
+Los datos obligatorios a ingresar son:         
+**tipo picking**: ingrese la tipología de [picking](/docs/logistics/picking/picking-management) a utilizar;       
+**utente**: ingrese el empleado codificado que crea el documento;      
+**utente per conf.**: ingrese el empleado que tiene derecho a confirmar la lista.    
 
-Dopo aver inserito questi dati e gli altri se necessario è possibile salvare la Lista di trasferimento. Dato che si tratta di un trasferimento, è necessario inserire anche il **Magazzino di partenza** e il **Magazzino di destinazione**.       
+Después de haber ingresado estos datos y otros si es necesario, es posible guardar la Lista de transferencias. Dado que se trata de una transferencia, también es necesario ingresar el **Almacén de origen (Magazzino di partenza)** y el **magazzino di destinazione**.       
 
-*Pulsanti specifici presenti nella form di dettaglio:*
+*Botones específicos presentes en el formulario de detalle:*
 
-> **Cancella UDC**: permette di cancellare un'unità di carico presente nella lista;      
-> **Rollback trasferimento**: permette di fare la rollback del movimento di conferma trasferimento; quindi, viene cancellato il movimento di carico creato con la conferma del traferimento e viene sostituito con un movimento di carico sul magazzino di partenza;         
-> **Help UDC**: permette di aggiungere nuove uni di carico tramite l'help.
+> **cancella udc**: permite eliminar una unidad de carga presente en la lista;      
+> **Reversar transferencia (Rollback trasferimento)**: permite realizar la reversión del movimiento de confirmación de transferencia; por lo tanto, se elimina el movimiento de carga creado con la confirmación de la transferencia y se sustituye por un movimiento de carga en el almacén de origen;         
+> **help udc**: permite agregar nuevas unidades de carga a través de la ayuda.
 
-*Pulsanti specifici presenti nel filtro:*
+*Botones específicos presentes en el filtro:*
 
-> **Gestione UDC**: selezionando una Lista di trasferimento e cliccando questo bottone viene aperta la maschera **Gestione UDC** in cui vengono proposti le UDC disponibili per il trasferimento. E' possibile trasferire l'UDC con il pulsante **Sposta UDC**.             
-> **DDT**: crea il DDT dalla **Liste di Trasferimento UDC** selezionata.    
+> **gestione udc**: al seleccionar una Lista de transferencia y hacer clic en este botón se abre la pantalla de **Gestión UDC** en la que se propondrán las UDC disponibles para la transferencia. Es posible transferir la UDC con el botón **sposta udc**.             
+> **DDT**: crea el DDT desde la **Lista de Transferencia UDC (Liste di Trasferimento UDC)** seleccionada.    
 
-Per tutte le informazioni su come utilizzare questa form da WMS consultare le [Liste di Trasferimento UDC](/docs/logistics/wms/udc/loading-unit-transfer-list)
+Para toda la información sobre cómo utilizar este formulario desde WMS, consulte las [Listas de Transferencia UDC](/docs/logistics/wms/udc/loading-unit-transfer-list).
 
-### Liste trasferimento UDC (versione WMS)
+### Listas de Transferencia UDC (versión WMS) (Liste trasferimento UDC (versione WMS))
 
-:::important A cosa serve
-La funzione Liste di Trasferimento UDC del WMS di Fluentis consente di gestire le movimentazioni delle unità di carico all'interno dei magazzini, facilitando l'organizzazione e la tracciabilità delle UDC durante i trasferimenti tra diverse ubicazioni.        
-Questa funzionalità permette di creare e modificare liste di trasferimento in modo efficiente, migliorando così la gestione logistica interna
+:::important ¿Para qué sirve? (A cosa serve)
+La función Listas de Transferencia UDC del WMS de Fluentis permite gestionar los movimientos de las unidades de carga dentro de los almacenes, facilitando la organización y el seguimiento de las UDC durante las transferencias entre diferentes ubicaciones.        
+Esta funcionalidad permite crear y modificar listas de transferencia de manera eficiente, mejorando así la gestión logística interna.
 :::
 
-Questa procedura è utilizzata per la creazione di liste di trasferimento con unità di carico.         
-Le **Liste di Trasferimento UDC** sono molto simili alle [Liste di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la differenza che vengono utilizzate nel caso di movimentazioni di unità di carico all’interno dei propri magazzini, mentre **Liste di prelievo UDC / Packing list** sono impiegate nel caso in cui si voglia spedire la merce ad un cliente.          
-Nella form di filtro è possibile ricercare le liste di interesse filtrando: per *tipo*, *data inserimento*, *data spedizione* e anche per lo *stato* della lista di prelievo; una volta selezionata, è possibile aprire la lista con il pulsante **Apri**, all’interno della quale, l’utente ha la possibilità di modificare le unità di carico contenute nel tab **Dettaglio UDC**.       
-In questo tab è possibile: selezionare un’unità di carico esistente ed eliminarla dalla lista con il pulsante **Cancella UDC**; oppure, aggiungerne una nuova semplicemente leggendo il relativo barcode.            
-Una volta ultimate le modifiche è necessario salvare la lista tramite il pulsante **Salva**.           
-Dal filtro è possibile anche creare una nuova lista con il pulsante **Nuovo**.        
-In automatico vengono proposte: la *data odierna* ed il *magazzino d partenza* indicato nella tabella [Parametri Magazzino Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping); quindi l'operatore dovrà inserire i dati relativi a magazzino ed ubicazione di destinazione.           
-Inoltre, con l’inserimento del *tipo picking* viene proposto anche il numero della lista.        
-A questo punto, l’utente può inserire, nel tab *Dettaglio UDC*, le unità di carico da aggiungere alla lista tramite la lettura dei relativi barcode.          
-Ultimato l’inserimento sarà sufficiente salvare la lista con l’apposito pulsante **Salva**.
-Sempre dal tab di filtro, è possibile: aprire una lista selezionata in sola visualizzazione con il pulsante **Visualizzazione**, ed eliminarne una con il pulsante **Elimina**.
+Este procedimiento se utiliza para la creación de listas de transferencia con unidades de carga.         
+Las **Listas de Transferencia UDC (Liste di Trasferimento UDC)** son muy similares a las [Listas de Recogida UDC / Packing list (Liste di prelievo UDC / Packing list)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la diferencia de que se utilizan en caso de movimientos de unidades de carga dentro de sus propios almacenes, mientras que las **Listas de Recogida UDC / Packing list** se emplean cuando se desea enviar la mercancía a un cliente.          
 
-Il relativo movimento di magazzino verrà generato solo tramite la procedura di [Conferma trasferimento](/docs/logistics/wms/udc/confirm-transfer). 
+En el formulario de filtro se pueden buscar las listas de interés filtrando: por *tipo*, *fecha de ingreso*, *fecha de envío* y también por el *estado* de la lista de recogida; una vez seleccionada, es posible abrir la lista con el botón **apri**, dentro de la cual el usuario tiene la posibilidad de modificar las unidades de carga contenidas en la pestaña **dettaglio udc**.       
+En esta pestaña, es posible: seleccionar una unidad de carga existente y eliminarla de la lista con el botón **cancella udc**; o agregar una nueva simplemente leyendo el código de barras correspondiente.            
+Una vez realizadas las modificaciones, es necesario guardar la lista a través del botón **salva**.           
+Desde el filtro también se puede crear una nueva lista con el botón **nuovo**.        
+Automáticamente se proponen: la *fecha actual* y el *almacén de partida* indicado en la tabla [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping); por lo tanto, el operador deberá ingresar los datos relativos al almacén y ubicación de destino.           
+Además, al ingresar el *tipo de picking*, se propone también el número de la lista.        
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+En este punto, el usuario puede ingresar, en la pestaña *dettaglio udc*, las unidades de carga a agregar a la lista mediante la lectura de los códigos de barras correspondientes.          
+Una vez completada la entrada, basta con guardar la lista con el botón correspondiente **salva**. 
+Desde la pestaña de filtro, también es posible: abrir una lista seleccionada en solo visualización con el botón **Visualización** (Visualizzazione), y eliminar una con el botón **Eliminar** (Elimina).
 
-| Area | Modulo | Form |
+El movimiento de almacén correspondiente se generará solo a través del procedimiento de [Confirmar transferencia (Conferma trasferimento)](/docs/logistics/wms/udc/confirm-transfer). 
+
+**Parámetros de carga/descarga** a ingresar en la tabla [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+
+| Área | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | TransferPickingList |
 
-Per questo parametro la casuale di magazzino può essere lasciata vuota.
+Para este parámetro, la causal de almacén puede dejarse vacía.
 
 :::note Nota
-Se nei [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) è associato per quell’utente, un solo magazzino, viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti.
+Si en los [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) se asocia para ese usuario, un solo almacén, se propone por defecto ese, de lo contrario, si hay más de uno asociado, por defecto no se propone ninguno y el usuario puede elegir solo entre los ingresados.
 :::
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode**, consulte la página relativa al [Tokenizador de Códigos de Barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

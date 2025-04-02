@@ -1,76 +1,76 @@
 ---
-title: Tipi POS
+title: Tipos de POS (Tipi POS)
 sidebar_position: 25
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de querer configurarlo manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi POS**.
+La tabla se abre a través de la ruta **Tablas > Ventas > Tipos POS**.
 
-### Ricerca POS
+### Búsqueda de POS (Ricerca POS)
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y otra de resultado. Una vez establecidos todos los filtros deseados, solo basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per modificare/visualizzare un tipo POS basta fare doppio click sulla riga desiderata oppure premere il pulsante **Modifica**.
+Para modificar/visualizar un tipo POS, simplemente haga doble clic en la fila deseada o presione el botón **modifica**.
 
-Per inserire nuovi record è necessario premere il pulsante **Nuovo** che aprirà una nuova form di inserimento. 
+Para ingresar nuevos registros, es necesario presionar el botón **nuovo** que abrirá un nuevo formulario de entrada. 
 
-### Inserimento/Modifica POS
+### Ingreso/Modificación de POS (Inserimento/Modifica POS)
 
-In questa form si andranno ad inserire tutti i dati relativi al nuovo tipo di POS che si vuole inserire, quali:
+En este formulario se ingresarán todos los datos relacionados con el nuevo tipo de POS que se desea añadir, tales como:
 
-**Tipo e descrizione**: in questi campi di dovrà andare a definire il tipo e la descrizione del POS;
+**Tipo y descripción (Tipo e descrizione)**: en estos campos se deberá definir el tipo y la descripción del POS;  
 
-**Numerazione**: in questo campo si andrà ad inserire il codice della numerazione appropriato. Per approfondimenti sulle numerazioni del gestionale riferimento all'articolo  [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations); 
+**numerazione**: en este campo se ingresará el código de la numeración apropiada. Para más detalles sobre las numeraciones del sistema, consulte el artículo [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations); 
 
-**Default**: se attivo, questo flag indica il tipo POS di default che viene proposto alla creazione di un nuovo POS;
+**default**: si está activo, este indicador indica el tipo de POS por defecto que se propone al crear un nuevo POS;  
 
-**Note**: questo è un campo di testo libero nel quale si potranno andare ad inserire eventuali note descrittive che verranno poi visualizzate nelle relative stampe;
+**note**: este es un campo de texto libre en el cual se pueden insertar notas descriptivas que luego se visualizarán en las impresiones correspondientes;  
 
-**Prezzo Ivato**: se attivo, i prezzi presenti nell'offerta verranno riportati comprendendo l'IVA;
+**prezzo ivato**: si está activo, los precios presentes en la oferta se mostrarán incluyendo el IVA;  
 
-**Acconto**: se attivo, questo flag indica che il POS è di tipo acconto e potrà essere stornato con una transazione con un tipo di POS ordinario;
+**acconto**: si está activo, este indicador indica que el POS es de tipo anticipo y podrá ser cancelado con una transacción de un tipo de POS ordinario;  
 
-**Server P.O.S/Database/Tabella**: in questi campi si andrà a selezionare il Server, il Database e la Tabella dove leggere e/o scrivere i dati dei POS;
+**Servidor P.O.S/ Base de datos/ Tabla (Server P.O.S/Database/Tabella)**: en estos campos se seleccionará el Servidor, la Base de datos y la Tabla donde leer y/o escribir los datos de los POS;  
 
-**Tabella coll. documenti**: tabella dove leggere e/o scrivere i dati dei documenti collegati ai POS;
+**Tabla de documentos relacionados (Tabella coll. documenti)**: tabla donde se leen y/o escriben los datos de los documentos vinculados a los POS;  
 
-**UM arr.**: UM utilizzata nella creazione di DDT e fatture da POS;
+**UM llegada (UM arr.)**: UM utilizada en la creación de DDT y facturas desde el POS;  
 
-**IVA arr./Descrizione IVA**: codice IVA utilizzato nella creazione di DDT e fatture da POS;
+**IVA llegada/ Descripción IVA (IVA arr./Descrizione IVA)**: código IVA utilizado en la creación de DDT y facturas desde el POS;  
 
-**Punto vendita**: punto vendita in cui vengono creati i POS;
+**Punto de venta (Punto vendita)**: punto de venta en el que se crean los POS;  
 
-**Cassa**:  in questo campo va indicato il codice della cassa da collegare ai POS;
+**cassa**: en este campo se debe especificar el código de la caja a vincular a los POS;  
 
-**Cat. merc.**: in questo campo viene riportata la categoria merceologica riportata sull'ordine;
+**cat. merc.**: en este campo se indica la categoría mercantil del pedido;  
 
-**IVA**: codice IVA da utilizzare nei POS;
+**iva**: código IVA a utilizar en los POS;  
 
-**Magazzino**: in questo campo va indicato il magazzino di impegno della merce contenuta in POS di questo tipo;
+**magazzino**: en este campo se debe especificar el almacén de compromiso de la mercancía contenida en los POS de este tipo;  
 
-**Causale**: in questo campo va indicata la causale di movimentazione della merce impegnata contenuta in POS di questo tipo;
+**causale**: en este campo se debe indicar la causa de movilización de la mercancía comprometida contenida en los POS de este tipo;  
 
-**Tipo pagamento**: in questo campo viene proposto il tipo pagamento proposto nei POS di questo tipo;
+**tipo pagamento**: en este campo se propone el tipo de pago sugerido en los POS de este tipo;  
 
-**Soluzione di pagamento**: in questo campo va indicata la soluzione di pagamento proposta nei POS di questo tipo;
+**soluzione di pagamento**: en este campo se debe indicar la solución de pago sugerida en los POS de este tipo;  
 
-**Listino**: in questo campo viene indicato il codice listino generale da cui vengono ripresi i prezzi degli articoli da inserire nel POS;
+**listino**: en este campo se indica el código de la lista de precios general desde la cual se recuperan los precios de los artículos a incluir en el POS;  
 
-**Data validità**: qui verrà riportata la data validità del listino generale;
+**data validità**: aquí se indicará la fecha de validez de la lista de precios general;  
 
-**Scarico automatico alla chiusura del corrispettivo**: se attivo, quando il POS viene stampato viene automaticamente anche scaricato da magazzino, altrimenti bisognerà procedere con lo scarico manuale;
+**scarico automatico alla chiusura del corrispettivo**: si está activo, cuando el POS se imprime, también se descontará automáticamente del almacén, de lo contrario, será necesario proceder con la descarga manual;  
 
-**E' necessario il registratore di cassa**: se attivo, questo flag indica che per utilizzare i POS è necessario il collegamento con un registratore di cassa per la stampa dello scontrino fiscale;
+**e' necessario il registratore di cassa**: si está activo, este indicador señala que para utilizar los POS es necesario la conexión con un registrador de caja para la impresión del recibo fiscal;  
 
-**Visualizza varianti**: se attivo, possono essere utilizzate anche le varianti articolo;
+**visualizza varianti**: si está activo, también se pueden usar las variantes de artículo;  
 
-**Visualizza attributi**: se attivo, possono essere utilizzati anche gli attributi articolo.
+**visualizza attributi**: si está activo, también se pueden usar los atributos de artículo.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

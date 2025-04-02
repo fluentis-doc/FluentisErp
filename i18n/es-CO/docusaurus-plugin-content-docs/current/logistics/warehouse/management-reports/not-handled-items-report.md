@@ -1,10 +1,10 @@
 ---
-title: Articoli non movimentati
+title: articoli non movimentati
 sidebar_position: 1
 ---
 
-La stampa si trova sul percorso **Logistica > Magazzino  >  Stampe gestionali > Articoli non movimentati** e permette all'utente di interrogare facilmente il sistema ed estrapolare velocemente informazioni riguardanti gli articoli non movimentati a magazzino. Tale stampa permette di creare quindi delle statistiche di stampo logistico sugli articoli.
+La impresión se encuentra en la ruta **Logística > Almacén > Impresiones de gestión > articoli non movimentati (Logistica > Magazzino > Stampe gestionali > Articoli non movimentati)** y permite al usuario interrogar fácilmente el sistema y extraer rápidamente información sobre los artículos no movidos en el almacén. Esta impresión permite crear estadísticas logísticas sobre los artículos.
 
-Dopo l'inserimento dei filtri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+Después de ingresar los filtros deseados, es posible imprimir informes estándar o personalizados (previa mapeo en la gestión de impresiones). En caso de que se desee imprimir un informe personalizado, es necesario seleccionarlo del listado en los parámetros de impresión.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

@@ -1,1 +1,1 @@
-- **Cancella centri di costo**: permette di cancellare la riga centro di costo selezionata
+- **cancella centri di costo**: permite eliminar la línea del centro de costo seleccionada.

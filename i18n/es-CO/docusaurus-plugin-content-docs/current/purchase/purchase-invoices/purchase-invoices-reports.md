@@ -1,50 +1,50 @@
 ---
-title: Stampe
+title: stampe
 sidebar_position: 6
 ---
 
-Sono disponibili diverse **Stampe** standard. Per visualizzare un'anteprima di ciascuna stampa, serve impostare i filtri desiderati e premere il pulsante *Anteprima* sulla barra degli strumenti. Questa operazione mostrerà la stampa a video senza modificare lo stato del documento. Se necessario procedere con la stampa cartacea o salvarla su file, serve invece cliccare sul pulsante *Stampa*.
+Están disponibles diferentes **stampe** estándar. Para visualizar una vista previa de cada impresión, es necesario establecer los filtros deseados y presionar el botón *anteprima* en la barra de herramientas. Esta operación mostrará la impresión en pantalla sin modificar el estado del documento. Si es necesario proceder con la impresión en papel o guardarla en un archivo, se debe hacer clic en el botón *stampa*.
 
-### Stampa Fatture di Acquisto
+### Impresión de Facturas de Compra (Stampa Fatture di Acquisto)
 
-Questo report serve per stampare massivamente le fatture di acquisto già inserite a sistema, secondo i filtri specificati nella form iniziale. La prima scelta che viene richiesta è quella tra la stampa *Temporanea* e quella *Definitiva*: la differenza tra le due tipologie è che quella temporanea non ha alcun effetto sullo stato della fattura, mentre la stampa cartacea o digitale effettuata in definitiva porta il documento allo stato *Controllato*.   
-I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, quali il *tipo fattura*, il *numero documento*, il *fornitore* e il *progetto*.   
-Nella groupbox *Ricerca avanzata* si possono spuntare gli stati della fattura su cui effettuare il filtro.   
-Nella groupbox *Articolo* è invece possibile filtrare, oltre che sul codice dell’articolo, anche su altre informazioni relative alle righe del corpo del documento, quali il *Bar Code*, la *descrizione articolo* o se sia presente un progetto collegato alla riga articolo.   
+Este informe sirve para imprimir masivamente las facturas de compra ya ingresadas en el sistema, según los filtros especificados en el formulario inicial. La primera opción que se solicita es la elección entre la impresión *Temporal (Temporanea)* y la impresión *definitiva*: la diferencia entre los dos tipos es que la temporal no tiene ningún efecto en el estado de la factura, mientras que la impresión en papel o digital realizada en definitiva lleva el documento al estado *controllato*.  
+Los primeros filtros que se nos muestran son los relativos a la información del encabezado de los documentos, como el *tipo fattura*, el *numero documento*, el *fornitore* y el *progetto*.  
+En el grupo de búsqueda *ricerca avanzata* se pueden seleccionar los estados de la factura sobre los cuales realizar el filtrado.  
+En el grupo *articolo* se puede filtrar, además del código del artículo, también sobre otra información relativa a las líneas del cuerpo del documento, como el *bar code*, la *descrizione articolo* o si hay un proyecto vinculado a la línea del artículo.
 
-Con questa stampa, ogni fattura viene impaginata separatamente, ognuna con le seguenti sezioni:
-- Intestazione con Logo e informazioni aziendali
-- Informazioni sulla fattura (tipologia, numero, data, ecc.)
-- Informazioni sul fornitore (partita iva, condizioni di pagamento, ecc.)
-- Dettagli della fattura (codice articolo, quantità, prezzo, ecc.)
-- Riepilogo della fattura (totale merce, spese, totale imposta, ecc.)
+Con esta impresión, cada factura se paginará por separado, cada una con las siguientes secciones:
+- Encabezado con logo e información de la empresa
+- Información de la factura (tipo, número, fecha, etc.)
+- Información sobre el proveedor (número de identificación fiscal, condiciones de pago, etc.)
+- Detalles de la factura (código de artículo, cantidad, precio, etc.)
+- Resumen de la factura (total mercancía, gastos, total impuesto, etc.)
 
-### Lista Fatture di Acquisto
+### Lista de Facturas de Compra (Lista Fatture di Acquisto)
 
-Con questa stampa è possibile stampare un elenco delle fatture inserite a sistema.    
-I filtri presentati sono i medesimi della stampa precedente, ai quali si aggiunge la possibilità di selezionare un *Ordinamento* delle fatture mostrate, a scelta tra *fornitore*, *numero fattura* e *tipo fattura*.    
+Con esta impresión se puede imprimir una lista de las facturas ingresadas en el sistema.  
+Los filtros presentados son los mismos que en la impresión anterior, a los que se suma la posibilidad de seleccionar un *ordinamento* de las facturas mostradas, a elegir entre *fornitore*, *numero fattura* y *tipo fattura*.
 
-La stampa mostra il dettaglio delle singole righe delle fatture, con indicazioni relative anche alle quantità ed al valore dei vari articoli contenuti nella fattura.
+La impresión muestra el detalle de las líneas individuales de las facturas, con indicaciones relativas también a las cantidades y al valor de los diversos artículos contenidos en la factura.
 
-### Fatturato acquisti
+### Facturación de Compras (Fatturato acquisti)
 
-Il report analizza il fatturato acquisti prodotto da tutti i [Tipi fattura](/docs/configurations/tables/purchase/purchase-invoices-type/) con il flag *In statistica* attivo, mostrando il valore del fatturato e la percentuale di incidenza sul totale di ogni singola riga articolo stampata.        
-Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati, ma ci sono alcune possibilità proprie di questo report.   
-Nella groupbox *Opzioni* sono presenti alcuni flag con i quali è possibile mostrare alcuni dati e includere o escludere alcune tipologie di righe articolo nel calcolo: spuntando la voce *Quantità* verranno mostrate nella stampa, oltre al valore, anche le quantità delle singole righe; *Solo articoli codificati* farà in modo che la stampa prenda in considerazione solo le righe di tipo Articolo codificato, mentre *Anche articoli spese* fa rientrare nei conteggi anche le righe di tipo spesa.   
-La combo box *Modalità ordinamento* dà la possibilità di scegliere l’ordinamento con cui verranno mostrati i dati tra: la *descrizione* del fornitore, il *codice* fornitore o l’importo del *fatturato*.   
-Infine nella griglia *Raggruppa* è possibile impostare i raggruppamenti, a scalare, con cui dovrà essere mostrata la stampa. Per popolare la tabella è sufficiente selezionare il raggruppamento desiderato nella tabella *Proprietà* e trascinarlo nella tabella dei raggruppamenti. Nel caso in cui si voglia svuotare la tabella dei raggruppamenti è sufficiente premere sul pulsante della barra degli strumenti *Rimuovi raggruppamenti*.
+El informe analiza la facturación de compras producida por todos los [Tipos de factura (Tipi fattura)](/docs/configurations/tables/purchase/purchase-invoices-type/) con el indicador *in statistica* activo, mostrando el valor de la facturación y el porcentaje de incidencia sobre el total de cada línea de artículo impresa.  
+En el formulario inicial se muestran algunos filtros relativos al encabezado de los documentos a extraer, análogos a los de los informes ya analizados, pero hay algunas posibilidades propias de este informe.  
+En el grupo *opzioni* hay algunos indicadores con los cuales es posible mostrar ciertos datos e incluir o excluir ciertos tipos de líneas de artículo en el cálculo: al marcar la opción *quantità* se mostrarán en la impresión, además del valor, también las cantidades de las líneas individuales; *solo articoli codificati* hará que la impresión considere solo las líneas de tipo Artículo codificado, mientras que *anche articoli spese* incluirá en los cálculos también las líneas de tipo gasto.  
+La caja combinada *modalità ordinamento* permite elegir el orden en que se mostrarán los datos entre: la *descrizione* del proveedor, el *codice* del proveedor o el importe de la *fatturato*.  
+Finalmente, en la cuadrícula *raggruppa* es posible establecer los agrupamientos, de forma escalonada, con los que deberá mostrarse la impresión. Para llenar la tabla, basta con seleccionar el agrupamiento deseado en la tabla *proprietà* y arrastrarlo a la tabla de agrupamientos. En caso de querer vaciar la tabla de agrupamientos, simplemente presione el botón de la barra de herramientas *rimuovi raggruppamenti*.
 
-### Stampe Conai
+### stampe Conai (Stampe Conai)
 
-Il documento di dichiarazione **CONAI** (Consorzio Nazionale Imballaggi) è un modulo che le aziende italiane devono compilare per dichiarare i dati relativi agli imballaggi che immettono sul mercato. Questo documento è fondamentale per calcolare il contributo ambientale CONAI, che è un costo che le imprese devono pagare per sostenere la raccolta differenziata e il riciclo degli imballaggi.    
+El documento de declaración **CONAI** (Consorcio Nacional de Envases) es un formulario que las empresas italianas deben completar para declarar los datos relativos a los envases que introducen en el mercado. Este documento es fundamental para calcular la contribución ambiental CONAI, que es un costo que las empresas deben pagar para apoyar la recolección selectiva y el reciclaje de los envases.  
 
-Questa stampa presenta a sua volta i filtri già presentati con le altre stampe, più altri nuovi: in aggiunta è possibile filtrare per *Tipo materiale*, *Tipo partner Conai*, *Stato della fattura elettronica*; è inoltre possibile raggruppare i risultati per *Materiale*, *Fornitore* o *Articolo*.    
+Esta impresión presenta a su vez los filtros ya presentados con las otras impresiones, más otros nuevos: además, es posible filtrar por *Tipo de material*, *Tipo de socio Conai*, *Estado de la factura electrónica*; también se pueden agrupar los resultados por *Material*, *Proveedor* o *Artículo*.  
 
-Il documento comprende diverse sezioni:
-- Periodo di riferimento
-- Dati anagrafici
-- Peso degli imballaggi
-- Contributo ambientale
-- Esenzione
+El documento comprende varias secciones:
+- Período de referencia
+- Datos de identificación
+- Peso de los envases
+- Contribución ambiental
+- Exención
 
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports)
+Más detalles sobre este tema en los artículos: [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports)

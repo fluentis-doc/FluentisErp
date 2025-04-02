@@ -1,38 +1,30 @@
 ---
-title: Ricerca cash flow
+title: ricerca cash flow
 sidebar_position: 1
 ---
 
-LINK:
+ENLACE:
 
-** [Tabelle preliminari da gestire](/docs/treasury/cash-flow/general-overview) **
+**[Tablas preliminares a gestionar (Tabelle preliminari da gestire)](/docs/treasury/cash-flow/general-overview)**
 
-** [Elaborazione automatica](/docs/treasury/cash-flow/procedures) **
+**[Elaboración automática (Elaborazione automatica)](/docs/treasury/cash-flow/procedures)**
 
-** [Stampa](/docs/treasury/cash-flow/reports) **
+**[Impresión (Stampa)](/docs/treasury/cash-flow/reports)**
 
- 
+ 
 
- 
+Desde este formulario, es posible buscar y modificar elaboraciones ingresadas previamente. 
 
-Dalla presente form è possibile ricercare e modificare elaborazioni inserite precedentemente. 
+También es posible ingresar una nueva elaboración que sería, en este caso, completamente manual (y, por lo tanto, de escaso uso práctico).
 
-E' anche possibile inserire una nuova elaborazione che risulterebbe, in questo caso, completamente manuale (e quindi di scarso utilizzo pratico).
-
-Si consiglia di creare il cash flow dalla procedura ** [Generazione automatica cash flow](/docs/treasury/cash-flow/procedures) **.
+Se recomienda crear el flujo de efectivo a partir del procedimiento **[Generación automática de flujo de efectivo (Generazione automatica cash flow)](/docs/treasury/cash-flow/procedures)**.
 
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Ricerca**: Pulsante per applicare i filtri di ricerca all'intero database dei cash flow inseriti.  
-> **Nuovo**: Richiama la procedura per inserire un nuovo cash flow.  
-> **Modifica**: Richiama la procedura per modificare un cash flow precedentemente inserito.  
-> **Visualizza**: Richiama la procedura per visualizzare un cash flow precedentemente inserito.  
-> **Cancella**: Esegue la procedura per cancellare un cash flow precedentemente inserito.  
-> **Analisi cash flow**: Richiama la procedura per stampare un cash flow.  
-
-
-
-
-
-
+> **ricerca**: Botón para aplicar los filtros de búsqueda a toda la base de datos de flujos de efectivo ingresados.  
+> **nuovo**: Invoca el procedimiento para ingresar un nuevo flujo de efectivo.  
+> **modifica**: Invoca el procedimiento para modificar un flujo de efectivo ingresado previamente.  
+> **visualizza**: Invoca el procedimiento para visualizar un flujo de efectivo ingresado previamente.  
+> **cancella**: Ejecuta el procedimiento para eliminar un flujo de efectivo ingresado previamente.  
+> **analisi cash flow**: Invoca el procedimiento para imprimir un flujo de efectivo.

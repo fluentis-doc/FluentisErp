@@ -1,41 +1,40 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-
-## I documenti gestiti
+## Los documentos gestionados (I documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management">Documenti di origine esterna</Link>
-        <p>La gestione dei documenti di origine esterna permette: la catalogazione, la gestione delle edizioni/revisioni e la loro distribuzione (sia in formato cartaceo che elettronico) alle funzioni aziendali che sono interessate nel visionare tali documenti.</p>
-        <p>Elenchiamo alcuni esempi di documenti di origine esterna che possono essere catalogati: *Manuali d'uso e manutenzione macchinari e impianti*, *Normative*, *Leggi*, *Rivista specifiche*, ecc.</p>
-        <p>Le informazioni di dove siano depositati gli originali e la possibilità di allegare loro copie elettroniche, permette una loro immediata rintracciabilità e consultazione con un semplice click del mouse.</p>
-        <p>A standard sono disponibili le reportistiche di: *Documento interno* e *Documenti allegati al documentale*.</p>
+###     <Link to="/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management">Documentos de origen externa (Documenti di origine esterna)</Link>
+        <p>La gestión de los documentos de origen externa permite: la catalogación, la gestión de ediciones/revisiones y su distribución (tanto en formato físico como electrónico) a las funciones empresariales interesadas en revisar dichos documentos.</p>
+        <p>Enumeramos algunos ejemplos de documentos de origen externa que pueden ser catalogados: *Manuales de uso y mantenimiento de maquinaria e instalaciones (Manuali d'uso e manutenzione macchinari e impianti)*, *Normativas (Normative)*, *Leyes (Leggi)*, *Revistas específicas (Rivista specifiche)*, etc.</p>
+        <p>La información sobre dónde están depositados los originales y la posibilidad de adjuntar copias electrónicas permite su inmediata localización y consulta con un simple clic del ratón.</p>
+        <p>Por defecto, están disponibles los reportes de: *documento interno* y *documenti allegati al documentale*.</p>
     </div>
 </div>
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/external-origin-documents/norms-and-lows">Norme e Leggi</Link>
-        <p>In questa gestione è possibile codificare le normative e le leggi di interesse aziendale.</p>
+###     <Link to="/docs/quality/external-origin-documents/norms-and-lows">Normas y Leyes (Norme e Leggi)</Link>
+        <p>En esta gestión es posible codificar las normativas y leyes de interés empresarial.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Para empezar a utilizar (Per iniziare ad utilizzare) 
 
-i **Documenti di origine esterna**:
-- devi definire una [*Categoria Documento di orgine esterna*](/docs/configurations/tables/quality/documents/external-document-category)   
-- devi inserire un nuovo [*Documento di orgine esterna*](/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management)   
+los **Documentos de origen externa**:
+- debes definir una [*Categoría de Documento de origen externa*](/docs/configurations/tables/quality/documents/external-document-category)   
+- debes ingresar un nuevo [*Documento de origen externa*](/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management)   
 
-le **Norme e Leggi**:
-- devi definire un [*Tipo Norma e Legge*](/docs/configurations/tables/quality/documents/norms-and-lows-type)   
-- devi inserire una nuova [*Norma e Legge*](/docs/quality/external-origin-documents/norms-and-lows)   
+las **Normas y Leyes**:
+- debes definir un [*Tipo de Norma y Ley*](/docs/configurations/tables/quality/documents/norms-and-lows-type)   
+- debes ingresar una nueva [*Norma y Ley*](/docs/quality/external-origin-documents/norms-and-lows)   
 
 
-## Collegamenti con altri moduli
-Le *Norme e Leggi* vengono utilizzate nelle [*Schede tecniche*](/docs/quality/item-control/data-sheets/data-sheet-management) del modulo [*Controllo articoli*](/docs/quality/item-control/item-control-intro).   
+## Conexiones con otros módulos (Collegamenti con altri moduli)
+Las *Normas y Leyes (Norme e Leggi)* se utilizan en las [*schede tecniche*](/docs/quality/item-control/data-sheets/data-sheet-management) del módulo [*Control de artículos (Controllo articoli)*](/docs/quality/item-control/item-control-intro).

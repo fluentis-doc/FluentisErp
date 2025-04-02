@@ -1,28 +1,28 @@
 ---
-title: Tipi di dichiarazione
+title: tipi di dichiarazione
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi di dichirazione**.
+La tabla se encuentra en la ruta **dichiarazione**.  
 
-In questa tabella è possibile codificare le diverse tipologie di Dichiarazione di non responsabilità.   
-Alcuni esempi di utilizzo dei *Tipi di dichiarazione* lo troviamo nella gestione **Dichiarazione di non responsabilità**.
+En esta tabla es posible codificar las diferentes tipologías de Declaración de no responsabilidad.  
+Algunos ejemplos de uso de los *tipi di dichiarazione* los encontramos en la gestión de **dichiarazione di non responsabilità**.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.  
 
-**Ricerca Tipi di dichiarazione**
+**Búsqueda de tipi di dichiarazione (Ricerca Tipi di dichiarazione)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-**Inserimento Tipi di dichiarazione**
+**Inserción de tipi di dichiarazione (Inserimento Tipi di dichiarazione)**
 
-Per poter inserire nuovi *Tipi di dichiarazione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi di dichiarazione* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*:  
 
-> **Codice tipo**: è il codice del *Tipo di dichiarazione*.   
-> **Descrizione tipo**: è la descrizione del *Tipo di dichiarazione*.   
-> **Note**: annotazioni libere.
+> **codice tipo**: es el código del *tipo di dichiarazione*.  
+> **descrizione tipo**: es la descripción del *tipo di dichiarazione*.  
+> **note**: anotaciones libres.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

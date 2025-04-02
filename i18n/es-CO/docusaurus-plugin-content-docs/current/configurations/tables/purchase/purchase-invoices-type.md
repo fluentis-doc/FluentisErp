@@ -1,50 +1,50 @@
 ---
-title: Tipi fatture di acquisto
+title: tipi fatture di acquisto
 sidebar_position: 6
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di fatture di acquisto disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi fatture di acquisto*.    
+Esta tabla es fundamental para definir los diferentes tipos de facturas de compra disponibles, cada una con sus propias características. Se puede acceder desde *Configuración > Tablas > Compras > tipi fatture di acquisto*.
 
-I campi presenti sono:
+Los campos presentes son:
 
-**Codice/Descrizione**: sono campi obbligatori necessari per definire il tipo fattura.
+**codice/descrizione**: son campos obligatorios necesarios para definir el tipo de factura.
 
-**Numerazione/Descrizione**: determina la [Numerazione](/docs/configurations/tables/fluentis-numerations) che è associata al tipo fattura.
+**Numeración/Descripción (Numerazione/Descrizione)**: determina la [Numeración](/docs/configurations/tables/fluentis-numerations) que está asociada al tipo de factura.
 
-**Natura fattura**: questo valore deve essere selezionato da un elenco e indica la natura della fattura: fattura, ricevuta fiscale, ricevuta fiscale riepilogativa, nota accredito da fornitore, nota addebito da fornitore.
+**natura fattura**: este valor debe ser seleccionado de una lista e indica la naturaleza de la factura: factura, recibo fiscal, recibo fiscal resumido, nota de crédito de proveedor, nota de cargo de proveedor.
 
-**Causale/Descrizione causale**: [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates) utilizzata per contabilizzare la fattura. Verrà utilizzata questa causale qualora non ci fosse un fatturato acquisti oppure un conto di contropartita di default inserito in anagrafica fornitore.
+**Causa/Descripción de la causa (Causale/Descrizione causale)**: [causa contable](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates) utilizada para contabilizar la factura. Esta causa será utilizada si no hay un ingreso por compras o una cuenta de contrapartida predeterminada ingresada en el registro del proveedor.
 
-**Tran. codice**: serve per indicare il codice di raggruppamento dei documenti per la dichiarazione Intrastat e deve essere compilato nei casi di fatture o documenti di variazione CEE.
+**Código de transacción (Tran. codice)**: sirve para indicar el código de agrupamiento de los documentos para la declaración Intrastat y debe ser completado en los casos de facturas o documentos de variación CEE.
 
-**Magazzino/Descrizione** e **Causale magazzino/Descrizione**: sono proposti nell'inserimento delle righe della fattura accompagnatoria, dove possono essere poi variati e determinano il magazzino e la causale con cui verrà caricata la merce al momento del ricevimento.
+**Almacén/Descripción (Magazzino/Descrizione)** y **Causa del almacén/Descripción (Causale magazzino/Descrizione)**: se proponen durante la inserción de las líneas de la factura acompañatoria, donde pueden ser modificados y determinan el almacén y la causa con la que se cargará la mercancía en el momento de la recepción.
 
-**Da ordine**: se attivo, la fattura con questo tipo può evadere ordini fornitori.
+**da ordine**: si está activo, la factura de este tipo puede cumplir pedidos de proveedores.
 
-**Fattura immediata**: se attivo, la fattura con questo tipo è di tipo immediato e dovranno essere compilati, nella fattura, anche i dati per il trasporto.
+**Factura inmediata (Fattura immediata)**: si está activo, la factura de este tipo es de tipo inmediato y deberán completarse, en la factura, también los datos para el transporte.
 
-**Intracomunitaria**: se attivo, il sistema verifica che la nazione del cliente sia una nazione CEE. Questo flag andrà impostato solo su tipi fattura Intracomunitari. Qualora non ci fosse il link tra cliente e tipo fattura intracomunitaria, il sistema ritornerà un messaggio di avviso.
+**intracomunitaria**: si está activo, el sistema verifica que el país del cliente sea un país CEE. Esta opción deberá configurarse solo en tipos de facturas intracomunitarias. Si no hay el vínculo entre cliente y tipo de factura intracomunitaria, el sistema devolverá un mensaje de aviso.
 
-**In statistica**: se attivo, la fattura con questo tipo viene riportata nelle statistiche quindi sarà visibile nelle stampe *Fatturato*.
+**in statistica**: si está activo, la factura de este tipo se incluirá en las estadísticas por lo que será visible en las impresiones de *Facturación*.
 
-**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario della fattura, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.
+**Control de proveedor (Controllo fornitore)**: sirve para activar un control que, en el momento de seleccionar el sujeto a nombre de quien se emite la factura, la procedimiento permitirá seleccionar solo cuentas de tipo proveedor y no de tipo cliente.
 
-**Raggruppamenti partite**: se settato, in fase di contabilizzazione della fattura le partite verranno raggruppate e si utilizzerà quindi la modalità raggruppamento partite.
+**raggruppamenti partite**: si está configurado, en la contabilización de la factura, las partidas se agruparán y se utilizará por lo tanto el modo de agrupamiento de partidas.
 
-**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine/DDT con quantità parziali all'interno della stessa fattura, questo flag consentirà di riportare le quantità evase suddivise per riga articolo senza sommare le quantità.
+**evasione quantità articolo non sommata**: si está configurado, en el momento de cumplir líneas de pedido/DDT con cantidades parciales dentro de la misma factura, este indicador permitirá reportar las cantidades cumplidas divididas por línea de artículo sin sumar las cantidades.
 
-**Agricola acquisti IVA**: se attivo, in fase di creazione fattura, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola. Se non esiste viene preso il codice IVA presente nell'articolo.
+**Compras de agricultura IVA (Agricola acquisti IVA)**: si está activo, en la creación de la factura, el sistema verifica si existe un código de IVA agrícola para el artículo utilizado. Si no existe, se toma el código de IVA presente en el artículo.
 
-**Causale competenza economica**: è legata alla gestione delle fatture da ricevere e quindi alla possibilità di rilevare automaticamente i risconti per eventuali righe di costo che avessero un range di date competenza al di fuori dell'esercizio contabile.
+**Causa de competencia económica (Causale competenza economica)**: está relacionada con la gestión de las facturas por recibir y, por lo tanto, con la posibilidad de registrar automáticamente los ajustes para posibles líneas de costo que tengan un rango de fechas de competencia fuera del ejercicio contable.
 
-**Gestione matrici extra data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo Tab e la conseguente matrice.
+**gestione matrici extra data**: si está activo, permite visualizar en el caso de gestión de artículos con matriz, una pestaña adicional para la imputación de los valores de la cantidad por cada celda de la matriz. Si no está activo, esta pestaña y la correspondiente matriz no se visualizarán.
 
-**Fatture da ricevere** e **Storno fatture da ricevere**: sono visualizzate solo per retro compatibilità con le versioni precedenti e sono ormai obsolete e non più utilizzate.
+**fatture da ricevere** y **Anulación de facturas por recibir (Storno fatture da ricevere)**: se visualizan solo por retrocompatibilidad con versiones anteriores y están obsoletas y no se utilizan más.
 
-**Stampa**: permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della fattura e, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa. La stampa delle fatture d'acquisto in realtà non è di esteso utilizzo in quanto la fattura viene ricevuta dal fornitore e quindi non necessita di essere ulteriormente stampata da Fluentis.
+**stampa**: permite indicar el modelo de impresión que se utilizará en la fase de impresión de la factura y, mediante el campo **Número de copias (Numero copie)**, el número de copias del documento que se propondrá de forma predeterminada para la impresión. La impresión de las facturas de compra en realidad no es de uso extendido, ya que la factura es recibida por el proveedor y, por lo tanto, no necesita ser impresa nuevamente por Fluentis.
 
-**Gestione Conai**: questo flag permette di attivare la gestione Conai per ciascun di tipo fattura. Per maggiori dettagli sulla gestione delle spese relative al [Conai](/docs/sales/sales-flow/conai) si rimanda all'apposita pagina della documentazione.
+**gestione conai**: este indicador permite activar la gestión Conai para cada tipo de factura. Para más detalles sobre la gestión de los gastos relacionados con el [Conai](/docs/sales/sales-flow/conai), se remite a la página correspondiente de la documentación.
 
-**Controllo qualità**: se attivo, questo flag rende visibili i tipi fattura nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+**controllo qualità**: si está activo, este indicador hace visibles los tipos de facturas en el formulario [Importar artículos para controlar (Importa articoli da controllare)](/docs/quality/item-control/items-control/item-control-import/) ubicado en el área *Calidad*.
 
-**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione**, che nel caso degli acquisti sarà sempre un *Costo originario*.    
+**gestione cespiti**: este indicador permite habilitar la [Gestión de activos fijos (Gestione cespiti)](/docs/finance-area/fixed-assets/general-overview) para ese tipo de pedido y seleccionar el **Tipo de operación**, que en el caso de las compras será siempre un *Costo originario*.

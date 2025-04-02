@@ -1,36 +1,32 @@
 ---
-title:  Ricerca Plafond
+title: ricerca plafond
 sidebar_position: 3
 ---
 
-La form della ricerca Plafond 
+El formulario de búsqueda de Plafond 
 
-- si trova in Amministrazione > Dichiarazioni > Plafond
+- se encuentra en Administración (Amministrazione) > Declaraciones (Dichiarazioni) > Plafond
 
-- permette all'utente di ricercare i calcoli del Plafond creati precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+- permite al usuario buscar los cálculos de Plafond creados anteriormente con el propósito de visualizarlos, modificarlos y, eventualmente, eliminarlos.
 
-Da questa form è possibile anche inserire manualmente un nuovo calcolo Plafond tramite il bottone [**Nuovo plafond**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
+Desde este formulario también es posible ingresar manualmente un nuevo cálculo de Plafond a través del botón [**nuovo plafond**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
 
+## Botones de la Ribbon Bar
 
+> - **Buscar (Ricerca):** Botón para buscar los cálculos de Plafond según los filtros de búsqueda establecidos en el encabezado del formulario.  
+> - **Nuevo (Nuovo):** Abre el formulario para ingresar un nuevo cálculo.  
+> - **Modificar (Modifica):** Permite modificar un cálculo ingresado previamente.  
+> - **Visualización (Visualizzazione):** Permite visualizar un cálculo ingresado previamente.  
+> - **Eliminar (Elimina):** Elimina un cálculo ingresado previamente.  
 
-## Pulsanti della Ribbon Bar
+## Tablas y parámetros preliminares para la gestión del Plafond
 
-> - **Ricerca:** Pulsante per ricercare i calcoli di Plafond secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo:** Richiama la form per inserire un nuovo calcolo.
-> - **Modifica:** Permette di modificare un calcolo precedentemente inserito.
-> - **Visualizzazione:** Permette di visualizzare un calcolo precedentemente inserito.
-> - **Elimina:** Cancella un calcolo precedentemente inserito.
+La configuración del cálculo del plafond deriva únicamente de la tabla [**Tasas de IVA (Aliquote modalità IVA)**](/docs/configurations/tables/finance/vat-rates):  
 
+Los campos de la tabla que están involucrados son:
 
-## Tabelle e Parametri preliminari per la gestione del Plafond
+**Plafond**: el indicador define qué tasas están vinculadas a las declaraciones de intención: este indicador identifica la tasa que "**consume (consuma)**" mes a mes el plafond general disponible como exportadores habituales.  
 
-L'impostazione del calcolo plafond deriva unicamente dalla tabella [**Aliquote modalità IVA**](/docs/configurations/tables/finance/vat-rates): 
+**vendita estera per plafond**: con este indicador se identifican las tasas de IVA, presentes en los registros de ventas del año yyyy, que **incrementan (incrementano)** el plafond disponible para el año yyyy+1 como exportador habitual.  
 
-I campi della tabella interessati sono:
-
-**Plafond**: il flag definisce quali aliquote sono collegate alle dichiarazioni di intento: questo flag identifica l’aliquota che "**consuma**" mese per mese il plafond generale disponibile in qualità di esportatori abituali.
-
-**Vendita Estera per Plafond**: con questo flag si identificano le aliquote iva, presenti nelle registrazioni di vendita dell’anno yyyy, che **incrementano** il plafond disponibile per l’anno yyyy+1 in qualità di esportatore abituale.
-
-Non ha rilevanza la causale di contabilità e l'anagrafica intestataria della registrazione. Le note di credito, stornano dai movimenti gli importi relativi.
-
+No tiene relevancia la causa contable y el registro titular de la anotación. Las notas de crédito, deducen de los movimientos los montos relacionados.

@@ -1,29 +1,29 @@
 ---
-title: Tipi di spedizione
+title: Tipos de envío (Tipi di spedizione)
 sidebar_position: 60
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi di spedizione**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Logística (Logistica) > Tipos de envío (Tipi di spedizione)**.
 
-In questa tabella è possibile codificare i *Tipi di spedizione* che potranno essere selezionati nella [spedizioni](/docs/logistics/shipping/shippings-intro)
+En esta tabla es posible codificar los *Tipos de envío* que podrán ser seleccionados en las [envíos (spedizioni)](/docs/logistics/shipping/shippings-intro).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi di spedizione**
+**Búsqueda de Tipos de envío (Ricerca Tipi di spedizione)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi di spedizione**
+**Inserción de Tipos de envío (Inserimento Tipi di spedizione)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, la **Descrizione** e la **Numerazione**.
+Para poder insertar nuevos, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice**, la **descrizione** y la **numerazione**.
 
-#### Campi specifici  
+#### Campos específicos (Campi specifici)
 
-> **Codice**: è il codice del *Tipo di spedizione*.   
-> **Descrizione**: è la descrizione del *Tipo di spedizione*.   
-> **Nota**: annotazioni libere.   
-> **Numerazione**: è il codice della numerazione del *Tipo di spedizione*.   
-> **Descrizione**: è la descrizione della numerazione del *Tipo di spedizione*.   
+> **codice**: es el código del *Tipo de envío*.  
+> **descrizione**: es la descripción del *Tipo de envío*.  
+> **Nota**: anotaciones libres.  
+> **numerazione**: es el código de la numeración del *Tipo de envío*.  
+> **descrizione**: es la descripción de la numeración del *Tipo de envío*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

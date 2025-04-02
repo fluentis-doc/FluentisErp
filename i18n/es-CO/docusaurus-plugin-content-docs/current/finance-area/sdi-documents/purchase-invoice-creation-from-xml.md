@@ -1,78 +1,76 @@
 ---
-title: Creazione fattura di acquisto da xml
+title: Creación de factura de compra desde xml (Creazione fattura di acquisto da xml)
 sidebar_position: 4
 ---
 
-Il bottone **Creazione fattura di acquisto** è disponibile nella ribbon bar del Registro documenti Sdi, accessibile da Applications > BizLink > Documenti SDI > Documenti acquisto in entrata.
+El botón **Creación de factura de compra (Creazione fattura di acquisto)** está disponible en la barra de herramientas del Registro de documentos Sdi, accesible a través de Applications > BizLink > Documentos SDI > Documentos de compra entrante.
 
 :::note Nota
-Per attivare il bottone si deve settare da SQL nella tabella fluentis.SDI_CompanyConfiguration il flag SDICFC_PurchaseInvoiceCreation.
+Para activar el botón, se debe configurar desde SQL en la tabla fluentis.SDI_CompanyConfiguration el indicador SDICFC_PurchaseInvoiceCreation.
 :::
 
-Una volta selezionata una riga, esso permette di creare una fattura nei documenti del ciclo passivo dopo aver importato o ricevuto da FBH il documento sdi in formato xml. 
-E' quindi possibile procedere per poterla agganciare all’evasione di DDT e ordini ai quali fa riferimento.
+Una vez seleccionada una fila, permite crear una factura en los documentos del ciclo pasivo después de haber importado o recibido de FBH el documento sdi en formato xml. 
+Por lo tanto, es posible proceder para vincularla al cumplimiento de DDT y pedidos a los que hace referencia.
 
-Una volta cliccato il bottone di Creazione fattura di acquisto, si aprirà una finestra in cui indicare il conto del fornitore da utilizzare. Se il conto non esiste, sarà possibile crearlo.
-Una volta confermato il conto, si aprirà un’ulteriore finestra Valori da utilizzare, nella quale vengono richiesti i seguenti dati:
+Una vez clicado el botón de Creación de factura de compra, se abrirá una ventana donde se debe indicar la cuenta del proveedor a utilizar. Si la cuenta no existe, será posible crearla.  
+Una vez confirmada la cuenta, se abrirá una ventana adicional con Valores a utilizar, donde se solicitan los siguientes datos:
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img1.png)
 
-**Tipo fattura di acquisto:** indicare la tipologia di documento da creare;
+**Tipo de factura de compra (Tipo fattura di acquisto)**: indicar la tipología de documento a crear;  
 
-**Articoli:** indicare gli articoli che andranno a far parte della fattura di acquisto;
+**articoli**: indicar los artículos que formarán parte de la factura de compra;  
 
-**IVA:** indicare l’aliquota da applicare;
+**IVA**: indicar la tasa a aplicar;  
 
-**Tipo pagamento:** contiene la tipologia di pagamento da inserire nel documento per il fornitore.
+**tipo pagamento**: contiene la tipología de pago a ingresar en el documento para el proveedor.
 
-Tutti questi dati possono essere impostati come default da proporre per le volte successive con il flag **Salva impostazioni**, presente accanto ad ogni dato da utilizzare.
+Todos estos datos pueden configurarse como predeterminados para las siguientes ocasiones con el indicador **salva impostazioni**, presente al lado de cada dato a utilizar.
 
-Una volta impostati tutti i campi e premuto OK, si aprirà la fattura di acquisto creata; essa avrà la tipologia, l’articolo e l’IVA prescelti. Se l’articolo non viene riconosciuto come codificato, verrà inserito un articolo non codificato. 
-Gli altri dati vengono presi di default dall’anagrafica del fornitore. È possibile modificare manualmente la fattura e salvarla.
+Una vez completados todos los campos y presionado OK, se abrirá la factura de compra creada; esta tendrá la tipología, el artículo y el IVA seleccionados. Si el artículo no se reconoce como codificado, se insertará un artículo no codificado.  
+Los demás datos se toman por defecto del registro del proveedor. Es posible modificar manualmente la factura y guardarla.
 
 ---
 
-Per la creazione di fattura con **ARTICOLI CODIFICATI** (riconoscimento automatico delle anagrafiche articoli presenti su Fluentis) è necessario procedere come segue al fine di permettere il riconoscimento, diversamente sarà creata una fattura con righe di tipo 2 (non codificato).
+Para la creación de factura con **articoli codificati** (reconocimiento automático de las bases de datos de artículos presentes en Fluentis), es necesario proceder de la siguiente manera para permitir el reconocimiento; de lo contrario, se creará una factura con líneas de tipo 2 (no codificado).
 
-Le anagrafiche articolo potranno avere una codifica interna anche diversa da quella usata dal fornitore che sta inviando la fattura.
+Los registros de artículos podrán tener una codificación interna diferente de la utilizada por el proveedor que está enviando la factura.
 
-Esempio: Codice - MATCH1  Descrizione - PT 2,5 BU
-Dentro questa anagrafica dovrà essere valorizzata la sezione del *fornitore preferenziale* con indicazione del fornitore in questione e relativa codifica adottata dal fornitore per questo articolo.
+Ejemplo: Código - MATCH1 Descripción - PT 2,5 BU  
+Dentro de este registro, se deberá completar la sección del *proveedor preferencial* indicando el proveedor en cuestión y la codificación adoptada por el proveedor para este artículo.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img5.png)
 
-Il fornitore potrebbe adottare un tipo di codifica o anche più di uno come visibile nell'immagine.
+El proveedor podría adoptar un tipo de codificación o incluso más de uno, como se observa en la imagen.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img3.png)
 
-Ad esempio una codifica EAN o di altro tipo.
+Por ejemplo, una codificación EAN o de otro tipo.
 
-:::danger Attenzione
-Verrà letta la prima codifica presente nel documento xml, nell'esempio la codifica di tipo SA mentre la codifica EAN sarà ignorata, dunque dovrà essere gestito questo primo riferimento
+:::danger Atención
+Se leerá la primera codificación presente en el documento xml; en este caso, la codificación de tipo SA, mientras que la codificación EAN será ignorada, por lo que se deberá gestionar esta primera referencia.
 :::
 
-All'interno dell'anagrafica del fornitore dovrà dunque essere inserito il codice del tipo codifica valido per il fornitore stesso (tab *Informazioni fiscali*)
+Dentro del registro del proveedor, se deberá ingresar el código del tipo de codificación válido para el mismo proveedor (pestaña *Información fiscal*).
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img6.png)
 
-Se le configurazioni vengono fatte correttamente il risultato della creazione della fattura è il seguente, dove si può notare che è presente una riga non codificata per le spese di trasporto non previste a priori.
+Si las configuraciones se realizan correctamente, el resultado de la creación de la factura es el siguiente, donde se puede notar que hay una línea no codificada para los gastos de transporte no previstos a priori.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img4.png)
 
 ---
 
-Nella ribbon bar della testata è presente il bottone **Sdi – Chiusura documenti** che permette di agganciare un ddt di acquisto alla fattura di acquisto appena creata. 
+En la barra de herramientas del encabezado se encuentra el botón **sdi – chiusura documenti** que permite vincular un ddt de compra a la factura de compra recién creada. 
 
-Una volta cliccato il bottone si aprirà una finestra in cui sono presenti dei filtri da impostare per avere una ricerca più mirata dei ddt di acquisto da abbinare: è possibile inserire il Tipo DDT di acquisto, il numero, il Fornitore, ecc.
+Una vez clicado el botón, se abrirá una ventana en la que hay filtros que se deben configurar para realizar una búsqueda más precisa de los ddt de compra a asociar: es posible ingresar el Tipo de DDT de compra, el número, el Proveedor, etc.
 
-Premendo il tasto Ricerca, nelle griglie sottostanti verranno presentati i ddt di acquisto sulla sinistra, e le fatture di acquisto sulla destra, che è possibile abbinare. 
+Al presionar el botón Buscar, en las cuadrículas de abajo se presentarán los ddt de compra a la izquierda y las facturas de compra a la derecha, que se pueden vincular. 
 
-Selezionando i documenti o le singole righe nella griglie e cliccando il tasto **Collegamenti** nella ribbon bar, verrà effettuato il collegamento tra i documenti. 
+Seleccionando los documentos o las filas individuales en las cuadrículas y clicando el botón **collegamenti** en la barra de herramientas, se realizará el enlace entre los documentos. 
 
-Uscirà una finestra per avvisare l’Operazione completata ed un’altra finestra Riepilogo Sdi –
-Documenti di chiusura con i dettagli del collegamento
-
+Aparecerá una ventana para avisar que la Operación ha sido completada y otra ventana con Resumen Sdi – Documentos de cierre con los detalles del enlace.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img2.png)
 
-Da questo momento il ddt di acquisto e la fattura sono collegati. È possibile verificare il collegamento all’interno della Fattura di acquisto, che contiene il riferimento al ddt nel tab Articoli
+A partir de este momento, el ddt de compra y la factura están vinculados. Es posible verificar el enlace dentro de la Factura de compra, que contiene la referencia al ddt en la pestaña Artículos.

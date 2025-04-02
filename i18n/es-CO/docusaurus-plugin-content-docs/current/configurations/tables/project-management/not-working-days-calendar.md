@@ -1,11 +1,11 @@
 ---
-title: Calendario giorni festivi
+title: calendario giorni festivi
 sidebar_position: 3
 ---
 
-In questa tabella vengono configurate le giornate festive o non lavorative aziendali. In fase di dichiarazione attività, le date qui inserite non verranno proposte, e nel calcolo cedolini paga la giornata verrà considerata festiva di default. 
-Inoltre se configurato nei parametri Progetti, il piano di fatturazione potrebbe subire delle variazioni di calcolo. 
+En esta tabla se configuran los días festivos o no laborables de la empresa. En la fase de declaración de actividades, las fechas aquí ingresadas no serán propuestas, y en el cálculo de nóminas, el día se considerará festivo por defecto.  
+Además, si está configurado en los parámetros de Proyectos, el plan de facturación podría sufrir variaciones en su cálculo.
 
-**Giorno Libero**: indicare la data della giornata festiva o non lavorativa aziendale. 
+**giorno libero**: indicar la fecha del día festivo o no laborable de la empresa.  
 
-**Note**: eventuale nota o descrizione relativa alla data inserita. 
+**note**: nota o descripción relacionada con la fecha ingresada.

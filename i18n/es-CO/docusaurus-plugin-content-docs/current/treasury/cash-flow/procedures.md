@@ -1,67 +1,66 @@
 ---
-title: Generazione automatica CashFlow
+title: generazione automatica cashflow
 sidebar_position: 4
 ---
 
-Normalmente la simulazione di cash flow viene creata attraverso questa maschera, che consente di definire i parametri di gestione per ogni tipo flusso. 
+Normalmente, la simulación de cash flow se crea a través de esta máscara, que permite definir los parámetros de gestión para cada tipo de flujo.
 
-Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero**, assegnato automaticamente. E' possibile inoltre associare una **Descrizione** di dettaglio.
+Cada nueva elaboración guardará el cálculo asociado al campo **Número**, asignado automáticamente. También es posible asociar una **Descripción** de detalle.
 
-*Campi specifici*
+*Campos específicos*
 
-**Tipo / Descrizione flusso:** ripresi dalla tabella Tipi flusso
+**Tipo / Descripción de flujo (Tipo / Descrizione flusso):** tomados de la tabla Tipos de flujo.
 
-**Da Data / A Data:** Range di date di filtro che agiscono secondo la logica specifica di ogni tipo flusso (vedere qui sotto)
+**Desde Fecha / Hasta Fecha (Da Data / A Data):** Rango de fechas de filtro que actúan según la lógica específica de cada tipo de flujo (ver más abajo).
 
-**Abilitato:** flag che gestisce l'effettivo utilizzo del tipo flusso corrispondente nel calcolo che si sta per lanciare
+**Habilitado (Abilitato):** indicador que gestiona el uso efectivo del tipo de flujo correspondiente en el cálculo que se va a ejecutar.
 
-**Registrazioni provvisorie:** considera o meno anche i dati collegati a registrazioni contabili in stato *Provvisorio*
+**Registros provisionales (Registrazioni provvisorie):** considera o no los datos relacionados con registros contables en estado *provvisorio*.
 
-**Non pagabili:** considera i meno anche le partite aperte nello stato *Non pagabile*
+**No pagables (Non pagabili):** considera también las partidas abiertas en estado *non pagabile*.
 
-**Usa q.ta residua:** permette di considerare gli ordini secondo la quantità residua da evadere
+**Usar cantidad residual (Usa q.ta residua):** permite considerar los pedidos según la cantidad residual por cumplir.
 
-**Usa nella disp. attuale:** legge gli effetti in portafoglio PRESENTATI e non insoluti con scadenze superiori ad oggi e li espone alla data di oggi nel conto ORDINARIO presente nella distinta di presentazione (anche se contabilmente l’accredito sarà solo al dopo incasso)
+**Usar en la disposición actual (Usa nella disp. attuale):** lee los efectos en cartera PRESENTADOS y no insolutos con vencimientos superiores a hoy y los muestra en la fecha de hoy en la cuenta ORDINARIA presente en la lista de presentación (aunque contablemente el abono será solo después del cobro).
 
-**Usa in scad. nel castelletto:** permette di considerare anche gli effetti presentati al salvo buon fine. In particolare usa il conto bancario di appoggio per il s.b.f. (salvo buon fine) inserito nella distinta di presentazione (anzichè il conto del cliente così come fa quando l'effetto è soltanto *Emesso*) e lo movimenta in dare in base a quanto presentato nelle varie date di scadenza degli effetti inseriti in distinta.
+**Usar en vencimiento en el castelletto (Usa in scad. nel castelletto):** permite considerar también los efectos presentados al salvo buen fin. En particular, usa la cuenta bancaria de respaldo para el s.b.f. (salvo buen fin) ingresado en la lista de presentación (en lugar de la cuenta del cliente como lo hace cuando el efecto es solo *emesso*) y lo mueve en debe, según lo presentado en las diversas fechas de vencimiento de los efectos incluidos en la lista.
 
-:::danger ATTENZIONE
-Gli effetti inseriti in distinta saranno visibili solo se hanno il flag **Contabilizzato** attivo al loro interno (inquanto è stata effettuata la contabilizzazione dell'emissione). Poichè è comunque possibile inserirli in distinta per la presentazione in banca anche se non stati contabilizzati si consiglia di fare attenzione.
+:::danger ATENCIÓN (ATTENZIONE)
+Los efectos ingresados en la lista solo serán visibles si tienen el indicador **contabilizzato** activo (ya que se ha realizado la contabilización de la emisión). Aunque es posible incluirlos en la lista para su presentación en el banco, incluso si no han sido contabilizados, se recomienda tener cuidado.
 
-Altra condizione importante è il filtro che esclude (indipendentemente dalla data di filtro impostata prima del lancio del calcolo) gli effetti con data scadenza precedente ad "oggi" ovvero la data di elaborazione del cashflow in questione
+Otra condición importante es el filtro que excluye (independientemente de la fecha de filtro establecida antes de lanzar el cálculo) los efectos con fecha de vencimiento anterior a "hoy", es decir, la fecha de elaboración del cash flow en cuestión.
 :::
 
-Se abilitato in relazione al tipo flusso **Anticipi**, va a rilevare gli importi delle distinte di anticipo fatture non contabilizzate per l'importo anticipato sul conto bancario, con data uguale alla data scadenza anticipata.
+Si está habilitado en relación con el tipo de flujo **anticipi**, va a detectar los importes de las listas de anticipos de facturas no contabilizadas por el importe anticipado en la cuenta bancaria, con fecha igual a la fecha de vencimiento anticipada.
 
-**ATTENZIONE:**
-Se viene scelta questa opzione NON devono essere inseriti anche i conti d'appoggio utilizzati per il s.b.f. nella consistenza finanziaria iniziale (tramite la gestione dei *tipi conto finanziario*,) altrimenti il dato (in termini di flusso di cassa positivo) verrà duplicato e dunque il risultato sarà falsato e non attendibile.
+**ATENCIÓN (ATTENZIONE):**
+Si se elige esta opción, NO se deben ingresar también las cuentas de apoyo utilizadas para el s.b.f. en la consistencia financiera inicial (a través de la gestión de *tipos de cuenta financiera*), de lo contrario, los datos (en términos de flujo de caja positivo) se duplicarán y, por lo tanto, el resultado será distorsionado y no confiable.
 
+*Detalle de las lógicas aplicadas a los tipos de flujo*:
 
-*Dettaglio delle logiche applicate ai tipi flusso*:
+**Saldo contable (Saldo contabile):** el rango de fechas se utiliza para calcular el saldo contable según la fecha de registro contable.
 
-**Saldo contabile**: il range di date viene utilizzato per calcolare il saldo contabile secondo la data registrazione contabile;
+**Partidas (Partite):** el rango de fechas se utiliza para filtrar sobre las fechas de vencimiento de las partidas. También hay indicadores para considerar las partidas relacionadas con registros provisionales, así como las partidas no pagables.
 
-**Partite**: il range di date viene utilizzato per filtrare sulle date scadenza delle partite. Sono presenti poi flag per considerare le partite collegate a registrazioni provvisorie così come le partite non pagabili;
+**Pedidos de clientes/proveedores (Ordini clienti/fornitori):** el rango de fechas filtra por la fecha del pedido. Solo se consideran los tipos con el indicador *cash flow* configurado, impresos y confirmados. Se recomienda establecer el indicador *usar cantidades residuales (usa Qta residue)* para simular un pedido según la cantidad residual a entregar/recibir. Se calculan las fechas de vencimiento hipotéticas basadas en las configuraciones de tipo/solución de pago establecidas en la cabecera, tomando como fecha de inicio la fecha de entrega de la línea (si falta, la fecha de entrega de la cabecera del pedido) o la fecha de hoy si esta es anterior a hoy.
 
-**Ordini clienti/fornitori**: il range di date filtra sulla data ordine. Sono considerati solo le tipologie con flag *cash flow* impostato, stampate e confermate. Si consiglia di impostare il flag *usa Qta residue* in modo da simulare un ordine secondo la quantità residua da consegnare/ricevere. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, prendendo come data di partenza la data di consegna della riga (se mancante la data consegna di testata dell'ordine) o la data odierna se questa è antecedente a oggi;
+**DDT de compra/venta (DDT di acquisto/vendita):** el rango de fechas filtra por la fecha del DDT. Solo se consideran los tipos establecidos de ‘cash flow’, impresos o controlados, no ya valorados en factura. Se calculan las fechas de vencimiento hipotéticas basadas en las configuraciones de tipo/solución de pago establecidas en la cabecera, a partir de la fecha del DDT.
 
-**DDT di acquisto/vendita**: il range di date filtra sulla data DDT. Sono considerati solo le tipologie impostate di ‘cash flow', stampate o controllate, non già valorizzate in fattura. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, a partire dalla data DDT;
+**Facturas de compra/venta (Fatture di acquisto/vendita):** el rango de fechas filtra por la fecha de vencimiento en factura. Se consideran los documentos no proforma, impresos o controlados, no ya contabilizados.
 
-**Fatture di acquisto/vendita**: il range di date filtra sulla data scadenza in fattura. Sono considerati i documenti non proforma, stampate o controllate, non già contabilizzate;
+**Pedidos de trabajo (Ordini di conto lavoro):** el rango de fechas filtra por la fecha del pedido, solo pedidos impresos no cumplidos. Se crean fechas de vencimiento hipotéticas según el residual no retornado y el costo del trabajo.
 
-**Ordini di conto lavoro**: il range di date filtra sulla data ordine, solo ordini stampati non evasi. Vengono create scadenze ipotetiche sulla base del residuo non rientrato e il costo della lavorazione;
+**Devoluciones de trabajo (Rientri di conto lavoro):** el rango de fechas filtra por la fecha de regreso, solo devoluciones impresas no facturadas. 
 
-**Rientri di conto lavoro**: il range di date filtra sulla data rientro, solo rientri stampati non fatturati.
+Las devoluciones deben generarse cumpliendo el pedido de trabajo y no deben ingresarse manualmente, de lo contrario no serán visibles.
 
-I rientri devono essere generati evadendo l'ordine di conto lavoro e non inseriti manualmente altrimenti non saranno visibili;
+**Extracontable (Extracontabile):** el rango de fechas filtra por la fecha de vencimiento extracontable.
 
-**Extracontabile**: il range di date filtra sulla data scadenza extracontabile.
+Los parámetros de ejecución se almacenan: solo la fecha final del tipo de flujo saldo contable se vuelve a proponer como fecha de hoy al abrirse. Una vez que se ha establecido la descripción del cash flow, será posible presionar el botón de cálculo. Teniendo en cuenta los movimientos de los pedidos, para los cuales el sistema debe hacer una simulación línea por línea, la elaboración puede ser particularmente larga dependiendo de la cantidad de datos presentes en el filtro establecido. Una vez completada la elaboración, se podrá abrir el cash flow a través del botón de gestión correspondiente.
 
-I parametri di esecuzione sono memorizzati: solo la data finale del tipo flusso saldo contabile viene sempre riproposto come data odierna all'apertura. Una volta impostata la descrizione del cash flow sarà possibile premere il pulsante di calcolo. In considerazione dei movimenti degli ordini, per i quali il sistema deve fare una simulazione riga ordine per riga ordine, l'elaborazione può essere particolarmente lunga a seconda della numerosità dei dati presenti nel filtro impostato. Una volta completata l'elaborazione sarà possibile aprire il cash flow attraverso il pulsante di gestione relativo.
+**Cartera activa (Portafoglio attivo):** ATENCIÓN: en relación con el flujo de las listas SBF, se debe tener cuidado con los efectos presentados pero no contabilizados (contabilización de la emisión), la situación puede surgir, por ejemplo, emitiéndolos a partir de las fechas de las facturas y luego ingresándolos en la lista sin contabilizar la emisión. En tal situación, los efectos no se incluirán en el cash flow. Otra condición a tener en cuenta es que, independientemente del filtro, la fecha de vencimiento del efecto debe ser mayor o igual a "hoy" (fecha de elaboración del cash flow).
 
-**Portafoglio attivo**: ATTENZIONE: in merito al flusso delle distinte SBF bisogna fare attenzione agli effetti presentati ma non contabilizzati (contabilizzazione dell'emissione), la situazione può generarsi ad esempio emettendoli dalle scadenze fatture e poi inserendoli in distinta senza contabilizzare l'emissione. In tale situazione gli effetti non saranno inseriti nel cashflow. Altra condizione di cui tenere conto è il fatto che indipendentemente dal filtro, la data scadenza effetto deve essere maggiore o uguale a "oggi" (data elaborazione cashflow)
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Creazione | Esegue la procedura di generazione del cash flow secondo le impostazioni inserite nella maschera. |
-| Modifica | Apre in modifica il cash flow creato. |
+| Creación (Creazione) | Ejecuta el procedimiento de generación del cash flow según las configuraciones ingresadas en la máscara. |
+| Modificación (Modifica) | Abre en modificación el cash flow creado. |

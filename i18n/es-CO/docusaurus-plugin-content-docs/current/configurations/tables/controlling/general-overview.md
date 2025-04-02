@@ -1,27 +1,26 @@
 ---
-title: Generalità
+title: generalità
 sidebar_position: 1
 ---
 
-Le Tabelle dell'Area Controlling concernono i diversi moduli della suddetta Area. 
+Las Tablas del Área de Control (Area Controlling) conciernen a los diferentes módulos de la mencionada área. 
 
-**Esse accolgono i dati di base e le configurazioni che saranno richiamate in tutte le procedure operative**. 
+**Ellas acogen los datos básicos y las configuraciones que serán requeridas en todos los procedimientos operativos (Esse accolgono i dati di base e le configurazioni che saranno richiamate in tutte le procedure operative)**. 
 
-
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
+:::danger[Atención (Attenzione)]
+Una falta de gestión de estos datos básicos puede impedir el uso efectivo del ERP en el área afectada.
 :::
 
-Una opportuna e necessaria parametrizzazione consentirà sia la definizione della gestione del modulo relativo sia l'opportunità di poter usufruire di determinati automatismi.
+Una parametrización adecuada y necesaria permitirá tanto la definición de la gestión del módulo correspondiente como la oportunidad de poder beneficiarse de ciertos automatismos.
 
-Le tabelle del Controlling si trovano in **Configurazione > Tabelle > Controlling**.
+Las tablas de Control (Controlling) se encuentran en **Configuración > Tablas > Control (Configurazione > Tabelle > Controlling)**.
 
-L'area controlling è interessata dai benefici derivanti dall'attivazione della procedura di [**Fast Start**](/docs/guide/fast-start), in particolar modo per quanto riguarda la possibilità di eseguire riclassificazioni di Bilancio su modelli standard come quello della IV Direttiva.
+El área de control se beneficia de las ventajas derivadas de la activación del procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start), especialmente en lo que respecta a la posibilidad de realizar reclasificaciones de Balance en modelos estándar como el de la IV Directiva.
 
 :::tip nota
-Il vero e proprio Controllo di gestione, con la contabilità analitica e gestionale, necessita invece di una configurazione specifica ritagliata sulle esigenze della singola realtà. Se siete interessati a seguire un percorso logico di analisi dei temi da affrontare per implementare il controlling, suggeriamo di partire da [questa overview](/docs/controlling/general-overview-controlling/general-overview).
+El verdadero Control de Gestión, con la contabilidad analítica y de gestión, requiere una configuración específica ajustada a las necesidades de cada realidad. Si están interesados en seguir un camino lógico de análisis de los temas a abordar para implementar el control, sugerimos partir de [esta visión general (questa overview)](/docs/controlling/general-overview-controlling/general-overview).
 :::
 
-Si invita a fare riferimento al link sopra per ulteriori dettagli.
+Se invita a consultar el enlace anterior para más detalles.
 
-In particolare la pagina linkata fa riferimento al dettaglio delle tabelle interessate e nel caso in cui si intenda procedere con una configurazione manuale offre una check list per la configurazione.
+En particular, la página enlazada hace referencia al detalle de las tablas afectadas y, en caso de que se pretenda proceder con una configuración manual, ofrece una lista de verificación para la configuración.

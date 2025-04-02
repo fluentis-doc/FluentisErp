@@ -1,21 +1,21 @@
 ---
-title: Chiavi SAP
+title: chiavi sap
 sidebar_position: 11
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Chiavi SAP**.  
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Logística (Logistica) > chiavi sap (Chiavi SAP)**.  
 
-In questa tabella è possibile codificare le diverse tipologie di *Chiavi SAP*.
+En esta tabla es posible codificar los diferentes tipos de *chiavi sap*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Chiavi SAP**
+**Búsqueda de chiavi sap (Ricerca Chiavi SAP)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se hayan configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Chiavi SAP**
+**Inserción de chiavi sap (Inserimento Chiavi SAP)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

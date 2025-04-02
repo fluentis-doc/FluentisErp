@@ -1,104 +1,103 @@
 ---
-title: Rilascio Ordini Pianificati
+title: rilascio ordini pianificati
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-La funzione di **Rilascio Ordini Pianificati** nel sistema Fluentis è progettata per facilitare il passaggio degli ordini pianificati ai loro rispettivi stati operativi. Una volta che gli ordini pianificati sono stati generati, è possibile procedere al loro rilascio utilizzando specifici pulsanti nella ribbon bar. Questo processo varia a seconda del tipo di ordine: produzione, acquisto o conto lavoro.
+:::important ¿Para qué sirve? (A cosa serve)
+La función de **rilascio ordini pianificati** en el sistema Fluentis está diseñada para facilitar el paso de los pedidos planificados a sus respectivos estados operativos. Una vez que se han generado los pedidos planificados, es posible proceder a su liberación utilizando botones específicos en la barra de herramientas. Este proceso varía según el tipo de orden: producción, compra o trabajo por encargo.
 
-Quando si rilascia un ordine pianificato di produzione, esso diventa un ordine di produzione operativo. Gli ordini pianificati di acquisto generano delle richieste d'acquisto (RDA), mentre gli ordini di conto lavoro pianificati vengono trasformati in ordini di conto lavoro operativi. 
+Cuando se libera un pedido planificado de producción, este se convierte en un pedido de producción operativo. Los pedidos planificados de compra generan solicitudes de compra (RDA), mientras que los pedidos planificados de trabajo por encargo se transforman en pedidos operativos de trabajo por encargo.
 :::
 
-La form permette la creazione di:
+El formulario permite la creación de:
 
-- *richieste di acquisto*, eventualmente già autorizzate tramite un opportuno parametro, nel caso di ordini pianificati di acquisto;  
-- *ordini di conto lavoro* nel caso di ordini pianificati di conto lavoro, o nel caso in cui nella lista fasi di un ordine pianificato di produzione sia presente una fase esterna;  
-- *ordini di produzione*, *lanciati* o *esecutivi* a seconda dell'attivazione di un apposito parametro, nel caso di ordini pianificati di produzione.
+- *solicitudes de compra*, posiblemente ya autorizadas mediante un parámetro adecuado, en el caso de órdenes planificadas de compra;  
+- *pedidos de trabajo por encargo* en el caso de órdenes planificadas de trabajo por encargo, o si en la lista de fases de un pedido planificado de producción hay una fase externa;  
+- *pedidos de producción*, *lanzados* o *ejecutivos* dependiendo de la activación de un parámetro específico, en el caso de órdenes planificadas de producción.
 
-Il rilascio degli ordini comporta che questi non siano più visibili tra gli [Ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e, di conseguenza, non può essere generata una nuova [Pianificazione](/docs/planning/ms-master-scheduling/general-schedule) della commessa di produzione da cui gli ordini pianificati erano stati eventualmente generati tramite pianificazione generale. Gli ordini pianificati presenti nella griglia generati manualmente o tramite elaborazione MPR non presentano alcun legame con le commesse di produzione.
+La liberación de los pedidos implica que estos ya no son visibles entre los [Pedidos planificados](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) y, por consiguiente, no se puede generar una nueva [Planificación](/docs/planning/ms-master-scheduling/general-schedule) de la orden de producción de la cual los pedidos planificados habían sido generados previamente mediante planificación general. Los pedidos planificados en la cuadrícula generados manualmente o mediante procesamiento MRP no tienen ningún vínculo con las órdenes de producción.
 
 ## Filtro
 
-In questo tab è possibile visualizzare la lista degli ordini pianificati che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+En esta pestaña es posible visualizar la lista de los pedidos planificados que aún deben ser liberados y se pueden filtrar a través de una serie de criterios de selección.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar** presente en la *barra de herramientas (ribbon bar)* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-*Pulsanti specifici*: 
+*Botones específicos*: 
 
-> **Rilascio**: questo pulsante si attiva solamente se viene selezionata almeno una riga nella griglia dei risultati da rilasciare; cliccando su questa funzionalità il sistema eseguirà:
-il rilascio degli *ordini pianificati di produzione* in *ordini di produzione lanciati o esecutivi*, a seconda di come siano stati impostati i parametri all'interno dei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di acquisto* in *Richieste d'Acquisto* *autorizzare* oppure *non autorizzate*, a seconda di come si sia scelto di impostare il parametri all'interno dei  [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di conto lavoro* in *ordini di Conto Lavoro*.                  
-> **Apri ricerca ordini di produzione**: tramite questo pulsante sarà possibile aprire la Ricerca Ordini di Produzione filtrati con gli stessi criteri utilizzati nella sezione di filtro di questa finestra. Ad esempio se si filtrano gli ordini pianificati in questa schermata in base al numero di commessa 3 dell'anno 2018, la finestra di ricerca ordini di produzione di aprirà già filtrata per la commessa 3 dell'anno 2018.
+> **rilascio**: este botón se activa solamente si se selecciona al menos una fila en la cuadrícula de resultados para liberar; al hacer clic en esta funcionalidad, el sistema ejecutará la liberación de los *pedidos planificados de producción* en *pedidos de producción lanzados o ejecutivos*, dependiendo de cómo se hayan establecido los parámetros en los [Parámetros de Requerimientos de Materiales](/docs/configurations/parameters/production/resource-requirements-parameters); la liberación de las *órdenes planificadas de compra* en *Solicitudes de Compra* *autorizadas* o *no autorizadas*, dependiendo de cómo se haya elegido establecer el parámetro dentro de los [Parámetros de Requerimientos de Materiales](/docs/configurations/parameters/production/resource-requirements-parameters); la liberación de los *pedidos planificados de trabajo por encargo* en *pedidos de Trabajo por Encargo*.             
+> **apri ricerca ordini di produzione**: mediante este botón será posible abrir la Búsqueda de Órdenes de Producción filtradas con los mismos criterios utilizados en la sección de filtro de esta ventana. Por ejemplo, si filtra los pedidos planificados en esta pantalla en función del número de orden 3 del año 2018, la ventana de búsqueda de órdenes de producción se abrirá ya filtrada por la orden 3 del año 2018.
 
-*Campi specifici*:
+*Campos específicos*:
 
-**Anno**: indica l'anno dell'ordine pianificato;     
-**Ordine**: indica il numero dell'ordine pianificato;           
-**Livello**: indica il livello dell'articolo oggetto dell'ordine all'interno della distinta base;  
-**Anno/Numero/Codice/Descrizione commessa di produzione**: i campi risulteranno essere vuoti se l'ordine pianificato è stato generato manualmente oppure tramite MRP;  
-**Data di inizio prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo;  
-**Data di fine prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
-**Quantità confermata**: sarà diversa da zero solamente se l'elaborazione è avvenuta tramite l'MRP; 
-**Cliente conto, sottoconto e decsrizione**: indica il cliente collegato nel caso degli ordini di produzione;  
-**Fornitore conto, sottoconto e decsrizione**: indica il fornitore collegato nel caso degli ordini di acquisto e di conto lavoro;  
-**Anno/Numero/Tipo ordine cliente**: rappresenta l'ordine cliente da cui è stata generata la commessa da cui è stato schedulato l'ordine pianificato in oggetto.
+**anno**: indica el año del pedido planificado;  
+**ordine**: indica el número del pedido planificado;  
+**livello**: indica el nivel del artículo objeto del pedido dentro de la lista de materiales;  
+**Año/Número/Código/Descripción de la orden de producción**: los campos resultarán ser vacíos si el pedido planificado ha sido generado manualmente o mediante MRP;  
+**Fecha de inicio prevista (Data di inizio prevista)**: si se trata de un pedido planificado de compra o de trabajo por encargo, esta fecha representa el momento en que debe enviarse al proveedor el pedido de compra que será generado posteriormente con la liberación del pedido mismo; si se trata de un pedido planificado de producción, esta fecha representa la fecha prevista de inicio de la primera fase de procesamiento del ciclo del artículo;  
+**Fecha de finalización prevista (Data di fine prevista)**: si se trata de un pedido planificado de compra o de trabajo por encargo, esta fecha representa el momento en que debe recibirse el suministro y, por lo tanto, coincidirá con la fecha prevista de recepción de la línea del pedido del proveedor que será generada posteriormente con la liberación del pedido mismo; si se trata de un pedido planificado de producción, esta fecha representa la fecha prevista de finalización de la última fase de procesamiento del ciclo del artículo;  
+**quantità confermata**: será diferente de cero solamente si el procesamiento se ha realizado mediante el MRP;  
+**Cuenta cliente, subcuenta y descripción**: indica el cliente relacionado en el caso de los pedidos de producción;  
+**Cuenta proveedor, subcuenta y descripción**: indica el proveedor relacionado en el caso de los pedidos de compra y de trabajo por encargo;  
+**Año/Número/Tipo de orden de cliente**: representa el pedido de cliente del que se generó la orden de producción que programó el pedido planificado en cuestión.
 
-Dopo aver individuato gli ordini che si vogliono rilasciare, per procedere con il **Rilascio** bisognerà utilizzare uno dei pulsanti presenti nella *ribbon bar*, in base al tipo ordine che si deve rilasciare: **Rilascio Ordini Pianificati di produzione**, **Rilascio ordini pianificati di Acquisto** oppure **Rilascio ordini pianificati di Conto Lavoro**. Questi pulsanti si abiliteranno rispettivamente a quanto inserito nel campo **Rilascio ordini pianificati a**.
+Después de identificar los pedidos que se desean liberar, para proceder con la **Liberación**, será necesario utilizar uno de los botones presentes en la *barra de herramientas* (ribbon bar), dependiendo del tipo de orden que se debe liberar: **rilascio ordini pianificati de producción**, **Liberación de pedidos planificados de Compra** o **Liberación de pedidos planificados de Trabajo por Encargo**. Estos botones se habilitarán respectivamente de acuerdo con lo ingresado en el campo **Liberación de pedidos planificados a**.
 
-E' anche possibile entrare in **Visualizzazione dei dettagli dell'ordine pianificato** presente nella griglia, facendo semplicemente doppio click con il mouse sopra la riga dell'ordine pianficato che si desidera visualizzare, prima di procedere al rilascio. 
+También es posible ingresar en **Visualización de los detalles del pedido planificado** presente en la cuadrícula, haciendo simplemente doble clic con el mouse sobre la fila del pedido planificado que desea visualizar, antes de proceder a la liberación.
 
-## Parametri
+## Parámetros
 
-In questo tab è possibile impostare e salvare i parametri che servono per il rilascio degli ordini pianificati.  
+En esta pestaña es posible establecer y guardar los parámetros que se requieren para la liberación de los pedidos planificados.
 
-### Ordini di Produzione
+### Órdenes de Producción
 
-In questa sezione è possibile:
+En esta sección es posible:
 
-- tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
+- mediante la activación del indicador **Generación de órdenes de trabajo por encargo para operaciones externas**, decidir que, si en la lista de fases del pedido planificado de producción que se está liberando hay una fase externa, se genere en consecuencia un pedido de trabajo por encargo para la fase externa. Por lo general, este indicador se mantiene activo.
 
-- **Rilascio ordini di produzione esecutivi**; se attivo, permette di fare in modo che gli *ordini di produzione* generati tramite il rilascio degli *ordini pianificati di produzione* siano creati già nello stato di *Esecutivi* e quindi non richiedano un'ulteriore procedura di Rilascio.
+- **rilascio ordini di produzione esecutivi**; si está activo, permite que los *pedidos de producción* generados mediante la liberación de los *pedidos planificados de producción* sean creados ya en estado de *Ejecutivos* y, por lo tanto, no requieran un procedimiento adicional de liberación.
 
-### Richieste d'acquisto
+### Solicitudes de compra
 
-Nella sezione è possibile:
+En la sección es posible:
 
-- impostare, tramite l'apposita combo box, il **Tipo di richiesta di acquisto** che deve essere generata dal rilascio ordine pianificati di acquisto. In questa combo box viene proposto automaticamente il tipo richiesta di acquisto già impostato nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters) nella sezione Parametri per il rilascio degli ordini pianificati;      
-- attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità indicata nella commessa a cui sono legate; 
-- **Rilascio richieste d'acquisto autorizzate**: se attivo, permette di fare in modo che le richieste di acquisto generate tramite il rilascio degli ordini pianificati di acquisto siano create con il flag di *Autorizzato* attivato automaticamente. Diversamente, l'utente che deve generare ordini fornitori da RDA sarà costretto ad autorizzare tutte le righe della richiesta di acquisto prima di poter generare un ordine da essa. È possibile comunque autorizzare solo alcune delle righe della RdA e quindi procedere alla generazione ordini fornitori partendo solo dalle righe autorizzate;    
-- fare in modo, attivando il flag **Arrotonda richiesta di acquisto**',che la procedura di rilascio ordine pianificato di acquisto arrotondi all'intero superiore la quantità che viene inserita nella riga della richiesta di acquisto che viene generata dal rilascio degli ordini pianificati di acquisto, nel caso in cui siano presenti quantità con decimali;  
-- decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppa al più presto**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di acquisto generati per lo stesso articolo; nella casella **Per un periodo in giorni di** si imposta il numero di giorni di range entro il quale può essere effettuato il raggruppamento, considerando le date di previsto ricevimento degli articoli, quindi le date di fine ordine pianificato di acquisto;  
-- decidere, nel caso non sia presente il fornitore nell'ordine pianificato di acquisto, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il  fornitore** oppure **Accettare come fornitore il seguente conto** specificato nelle apposite caselle.
+- establecer, mediante el cuadro combinado correspondiente, el **Tipo de solicitud de compra** que debe ser generada por la liberación de pedidos planificados de compra. En este cuadro combinado se propone automáticamente el tipo de solicitud de compra ya establecido en los [Parámetros de Requerimientos de Materiales](/docs/configurations/parameters/production/resource-requirements-parameters) en la sección Parámetros para la liberación de los pedidos planificados;  
+- al activar el indicador **Propiedades de aprovisionamiento de Parámetros MRP del artículo**, la procedimiento creará las *solicitudes de compra* ingresando la prioridad indicada en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo en particular; mientras que si no está activo, las *solicitudes de compra* serán creadas con la prioridad indicada en la orden a la que están vinculadas;  
+- **Liberación de solicitudes de compra autorizadas**: si está activo, permite que las solicitudes de compra generadas mediante la liberación de los pedidos planificados de compra sean creadas con el indicador de *Autorizado* activado automáticamente. De lo contrario, el usuario que debe generar pedidos a proveedores desde RDA se verá obligado a autorizar todas las líneas de la solicitud de compra antes de poder generar un pedido a partir de ella. No obstante, es posible autorizar solo algunas de las líneas de la RDA y, por lo tanto, proceder a la generación de pedidos a proveedores partiendo únicamente de las líneas autorizadas;  
+- hacer que, al activar el indicador **Redondear solicitud de compra (Arrotonda richiesta di acquisto)**, la procedimiento de liberación del pedido planificado de compra redondee al entero superior la cantidad que se inserte en la línea de la solicitud de compra que se genera a partir de la liberación de los pedidos planificados de compra, en caso de que haya cantidades con decimales;  
+- decidir el método de agrupamiento: al activar el indicador **raggruppa al più presto**, la procedimiento de liberación realiza un agrupamiento de los pedidos planificados de compra generados para el mismo artículo; en la casilla **Por un período de días de (Per un periodo in giorni di)** se establece el número de días del rango dentro del cual puede llevarse a cabo el agrupamiento, considerando las fechas de recepción previstas de los artículos, es decir, las fechas de finalización del pedido planificado de compra;  
+- decidir, en caso de que no esté presente el proveedor en el pedido planificado de compra, si **Aceptar pedidos sin proveedor**, **Omitir pedidos sin proveedor** o **Aceptar como proveedor la siguiente cuenta especificada en las casillas adecuadas.**
 
-### Ordini di conto lavoro
+### Órdenes de trabajo por encargo
 
-Nella sezione è possibile:
+En la sección es posible:
 
-- impostare, tramite la combo box del **Tipo Ordine** e il campo **Anno**, se l'ordine di conto lavoro da generare debba essere di tipo *Chiuso* o *Aperto* e di che anno debba essere;  
-- decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppare gli ordini dello stesso terzista**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di conto lavoro, inserendo nello stesso ordine di conto lavoro gli articoli che devono essere lavorati dallo stesso terzista;     
-- decidere se attivare il flag **Considera quantità fissa da distinta**, che nel caso in cui l'articolo da produrre abbia una quantità fissa in distinta base, in fase di rilascio verrà creato un ordine di conto lavoro con tante righe in base alla quantità fissa, come avviene già per gli ordini di produzione. Se non è attivato verrà generato un ordine di conto lavoro con una sola riga con la quantità totale.         
-- decidere, nel caso non sia presente il terzista nell'ordine pianificato di conto lavoro, se **Tralasciare gli ordini senza il terzista** oppure **Accettare come terzista il seguente conto** specificato nelle apposite caselle.
+- establecer, mediante el cuadro combinado del **Tipo de Orden** y el campo **Año**, si el pedido de trabajo por encargo que se va a generar debe ser de tipo *Cerrado* o *Abierto* y de qué año debe ser;  
+- decidir el método de agrupamiento: al activar el indicador **raggruppare gli ordini dello stesso terzista**, la procedimiento de liberación realiza un agrupamiento de los pedidos planificados de trabajo por encargo, insertando en el mismo pedido de trabajo por encargo los artículos que deben ser procesados por el mismo subcontratista;  
+- decidir si activar el indicador **Considerar cantidad fija de la lista de materiales (Considera quantità fissa da distinta)**, que en el caso de que el artículo a producir tenga una cantidad fija en la lista de materiales, durante la liberación se creará un pedido de trabajo por encargo con tantas líneas según la cantidad fija, como ya ocurre para los pedidos de producción. Si no está activado, se generará un pedido de trabajo por encargo con una sola línea con la cantidad total.  
+- decidir, en caso de que no esté presente el subcontratista en el pedido planificado de trabajo por encargo, si **Omitir pedidos sin el subcontratista** o **Aceptar como subcontratista la siguiente cuenta** especificada en las casillas adecuadas.
 
-*Pulsante specifico*:  
-> **Salva le modifiche**: consente di salvare  i parametri come sono stati impostati.
+*Botón específico*:  
+> **salva le modifiche**: permite guardar los parámetros tal como se han establecido.
 
-### Ripristino
+### Restauración (Ripristino)
 
-In questo tab è possibile eseguire la procedura di ripristino ordine pianificato che consente di annullare il rilascio precedentemente effettuato, ripristinando la situazione antecedente al rilascio stesso. 
+En esta pestaña es posible ejecutar el procedimiento de restauración del pedido planificado que permite anular la liberación previamente realizada, restableciendo la situación anterior a la liberación misma.
 
-Vengono visualizzati gli ordini pianificati della stessa tipologia specificata nel campo **Rilascio ordini pianificati a** del tab **Filtro**.
+Se visualizan los pedidos planificados del mismo tipo especificado en el campo **Liberación de pedidos planificados a** de la pestaña **Filtro**.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.  
+Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar** presente en la *barra de herramientas* (ribbon bar) para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-Tenendo selezionata una delle righe presenti nella griglia di risultato, viene visualizzato in uno dei tre tab inferiori, **Ordini di produzione**, **Richieste d'acquisto** oppure **Ordini di conto lavoro**, il documento generato dal rilascio dell'ordine pianificato selezionato.
+Manteniendo seleccionada una de las filas presentes en la cuadrícula de resultados, se visualizará en una de las tres pestañas inferiores, **Órdenes de producción**, **Solicitudes de compra** o **Órdenes de trabajo por encargo**, el documento generado por la liberación del pedido planificado seleccionado.
 
-Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino ordini**. 
+Para iniciar la restauración, seleccione uno o más pedidos y haga clic en el botón **ripristino ordini**. 
 
-*Condizioni per la procedura di ripristino*:
+*Condiciones para el procedimiento de restauración*:
 
-Per l'**ordine pianificato di produzione**: solo se l'ordine di produzione generato si trova nello stato di *Lanciato*; nel caso in cui l'ordine di produzione sia *Esecutivo* è necessario eseguire il ripristino del rilascio dell'ordine di produzione, mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine pianificato, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazione di produzione;  
-Per l'**ordine pianificato di acquisto**: solo se la riga di richiesta di acquisto generata si trova nello stato di *Non Evasa*; nel caso in cui la riga di richiesta di acquisto sia già stata evasa con la creazione di un ordine fornitore, sarà necessario procedere a ritroso partendo dal documento di acquisto fino al quale si è già arrivati;  
-Per l'**ordine pianificato di conto lavoro**: solo se la riga dell'ordine di conto lavoro generato non sia stata ancora evasa, oppure non sia stato generato una DDT di consegna per il materiale relativo a quella riga di ordine di conto lavoro.
+Para el **pedido planificado de producción**: solamente si el pedido de producción generado se encuentra en el estado de *Lanzado*; en caso de que el pedido de producción sea *Ejecutivo*, es necesario ejecutar la restauración de la liberación del pedido de producción, mientras que si ya está *Entregado*, no es posible realizar la restauración del pedido planificado, a menos que se proceda hacia atrás comenzando desde el retroceso del registro de la declaración de producción;  
+Para la **orden planificada de compra**: solo si la línea de solicitud de compra generada se encuentra en el estado de *No Entregado*; en caso de que la línea de solicitud de compra ya ha sido entregada con la creación de un pedido a proveedor, será necesario proceder a retroceder desde el documento de compra hasta el punto en que se ha llegado;  
+Para el **pedido planificado de trabajo por encargo**: solo si la línea del pedido de trabajo por encargo generado no ha sido aún entregada, o no se ha generado un DDT de entrega para el material relacionado con esa línea del pedido de trabajo por encargo.
 
-Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
+Al ejecutar este procedimiento, los pedidos restaurados serán nuevamente visibles en la pestaña de **Filtro** donde será posible volver a realizar la liberación.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,8 +1,8 @@
 ---
-title: Articoli
+title: articoli
 sidebar_position: 1
 ---
 
-La form si trova sul percorso **Logistica > Articoli > Articoli**, ma anche sul percorso **Home > Articoli > Articoli**.
+El formulario se encuentra en la ruta **Logística > articoli > articoli (Logistica > Articoli > Articoli)**, pero también en la ruta **Inicio > articoli > articoli (Home > Articoli > Articoli)**.  
 
-Per la spiegazione dettagliata relativa al funzionamento di questa form si rimanda agli articoli: [Ricerca articoli](/docs/erp-home/registers/items/search-items) e [Crea nuovi articoli](/docs/erp-home/registers/items/create-new-item).
+Para una explicación detallada sobre el funcionamiento de este formulario, se remite a los artículos: [Búsqueda de artículos (Ricerca articoli)](/docs/erp-home/registers/items/search-items) y [Crear nuevos artículos (Crea nuovi articoli)](/docs/erp-home/registers/items/create-new-item).

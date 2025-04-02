@@ -1,13 +1,13 @@
 ---
-title: Ricerca POS
+title: ricerca pos
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Vendite > POS > Ricerca POS**.
+El formulario se abre a través de la ruta **Ventas > POS > ricerca pos (Vendite > POS > Ricerca POS)**. 
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Para la explicación de las funcionalidades comunes a los documentos de venta, consulte la sección [Ventas (Vendite)](/docs/sales/sales-intro).
 
-### Pulsanti specifici  
+### Botones específicos (Pulsanti specifici)  
 
-> - **Creazione DDT**: la procedura permette di creare un DDT direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo DDT da creare e il cliente al quale intestare il documento.     
-> - **Creazione fatture**: la procedura permette di creare una fattura direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo fattura da creare e il cliente al quale intestare il documento.     
+> - **creazione ddt**: el procedimiento permite crear un DDT directamente desde uno o más POS; aparecerá un pop-up en el cual se debe ingresar el Tipo de DDT a crear y el cliente a quien se destinará el documento.  
+> - **creazione fatture**: el procedimiento permite crear una factura directamente desde uno o más POS; aparecerá un pop-up en el cual se debe ingresar el Tipo de factura a crear y el cliente a quien se destinará el documento.

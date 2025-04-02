@@ -1,31 +1,30 @@
 ---
-title: Nuovo Stato Avanzamento Lavori
+title: Nuevo Estado de Avance de Trabajos (Nuovo Stato Avanzamento Lavori)
 sidebar_position: 1
 ---
 
-In questa maschera è possibile inserire manualmente i dati di un nuovo **Stato avanzamento lavori** o meglio consultare i risultati derivanti dalle procedure di creazione dei SAL. Questo documento aggrega profitti e costi derivanti dai progetti. I dati sono:
+En esta pantalla es posible ingresar manualmente los datos de un nuevo **stato avanzamento lavori** o, mejor aún, consultar los resultados derivados de los procedimientos de creación de los SAL. Este documento agrega ganancias y costos derivados de los proyectos. Los datos son:
 
-**Tipo**: contiene la tipologia di avanzamento; rimanda alla tabella **Tipo avanzamento lavori**, che li identifica con un Codice, una Descrizione e una Numerazione;
+**tipo**: contiene la tipología de avance; remite a la tabla **tipo avanzamento lavori**, que los identifica con un Código, una Descripción y una Numeración;  
 
-**Progetto**: contiene il [Progetto](/docs/project-management/projects/search-projects-intro/) collegato;
+**progetto**: contiene el [Proyecto (Progetto)](/docs/project-management/projects/search-projects-intro/) relacionado;  
 
-**Comparabile**: indica se il documento potrà essere comparato in futuro;
+**comparabile**: indica si el documento podrá ser comparado en el futuro;  
 
-**Visualizza in analisi**: rende il documento visualizzabile nelle analisi;
+**visualizza in analisi**: hace que el documento sea visible en los análisis;  
 
-**Nota**: contiene eventuali note;
+**nota**: contiene notas adicionales;  
 
-**Numero/Data**: contiene il numero e la data del documento;
+**numero/data**: contiene el número y la fecha del documento;  
 
-**Data conferma**: contiene la data di conferma dello stato avanzamento lavori;
+**data conferma**: contiene la fecha de confirmación del estado de avance de trabajos;  
 
-**Qtà orig. Costi/UM orig. Costi**: indica la quantità e l’unità di misura dei costi originari del progetto;
+**Cant. orig. Costos/UM orig. Costos (Qtà orig. Costi/UM orig. Costi)**: indica la cantidad y la unidad de medida de los costos originales del proyecto;  
 
-**Qtà calc. Costi/UM calc. Costi**: indica la quantità e l’unità di misura calcolate del progetto;
+**Cant. calc. Costos/UM calc. Costos (Qtà calc. Costi/UM calc. Costi)**: indica la cantidad y la unidad de medida calculadas del proyecto;  
 
-**Qtà orig. Profitto/UM orig. Profitto**: indica la quantià e l’unità di misura dei profitti originari del progetto;
+**Cant. orig. Ganancia/UM orig. Ganancia (Qtà orig. Profitto/UM orig. Profitto)**: indica la cantidad y la unidad de medida de las ganancias originales del proyecto;  
 
-**Qtà calc. Profitto/UM calc. Profitto**: indica la quantità e l’unità di misura calcolati del progetto.
+**Cant. calc. Ganancia/UM calc. Ganancia (Qtà calc. Profitto/UM calc. Profitto)**: indica la cantidad y la unidad de medida calculadas del proyecto.  
 
-Sono poi presenti due griglie, **Riepiloghi** e **Dettagli**, che contengono le informazioni di dettaglio degli interventi del progetto. 
-
+Luego hay dos cuadrículas, **riepiloghi** y **dettagli**, que contienen la información detallada de las intervenciones del proyecto.

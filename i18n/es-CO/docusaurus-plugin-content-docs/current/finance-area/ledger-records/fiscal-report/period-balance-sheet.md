@@ -1,48 +1,36 @@
 ---
-title: Bilancio d'esercizio
+title: Balance del ejercicio (Bilancio d'esercizio)
 sidebar_position: 1
 ---
 
-Questo report ha la funzione di presentare un prospetto base del bilancio aziendale, suddividendo di default le quattro sezioni attivo/passivo/costi/ricavi tipiche. Si sottolinea che il report funziona unicamente per data competenza contabile inserita nella testata della registrazione, indipendentemente quindi dalla data di registrazione della stessa a libro giornale.
+Este informe tiene la función de presentar un resumen básico del balance empresarial, dividiendo por defecto las cuatro secciones típicas activo/pasivo/costos/ingresos. Se destaca que el informe funciona únicamente para la fecha de competencia contable ingresada en el encabezado del registro, independientemente de la fecha de registro en el libro diario.
 
-Inoltre bisogna tener presente che le date di competenza sono state distinte per i conti dello stato patrimoniale, rispetto a quelli economici.
+Además, es importante tener en cuenta que las fechas de competencia se han diferenciado para las cuentas del estado patrimonial, en comparación con las económicas.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-balance-sheet/image01.png)
 
-In questo modo è possibile, e raccomandato, mantenere il range di date economiche all'interno dell'anno in corso (esempio 01/01/2018 - 31/12/2018) e portare la data di inizio della competenza contabile patrimoniale fino all'ultima apertura conti (esempio 01/01/2017) nel caso in cui l'anno precedente (2017) non sia stato ancora chiuso. Ciò è necessario in tale situazione per ottenere il corretto saldo attuale dei conti in assenza dei valori di apertura per l'anno in corso che verrebbero altrimenti omessi filtrando normalmente.
+De este modo, es posible, y se recomienda, mantener el rango de fechas económicas dentro del año en curso (por ejemplo, 01/01/2018 - 31/12/2018) y llevar la fecha de inicio de la competencia contable patrimonial hasta la última apertura de cuentas (por ejemplo, 01/01/2017) en caso de que el año anterior (2017) no haya sido cerrado aún. Esto es necesario en tal situación para obtener el saldo actual correcto de las cuentas en ausencia de los valores de apertura para el año en curso que de otro modo serían omitidos al filtrar normalmente.
 
- 
+Los distintos diseños son posibles, entre los cuales una representación en secciones opuestas y una con agrupamiento a fin de obtener los totales por cuenta y por nivel de la estructura del plan de cuentas. La impresión deseada se puede seleccionar desde el menú desplegable en la parte superior izquierda.
 
-Sono possibili vari layout tra i quali una rappresentazione a sezioni contrapposte ed una con raggruppamento al fine di ottenere i totali per conto e per livello della struttura del piano dei conti. La stampa desiderata si può selezionare dalla tendina in alto a sinistra.
+**visualizzazione importi segno negativo**: si se activa, la aplicación insertará cada subcuenta en la sección correspondiente (según su tipo de cuenta) con el signo negativo cuando el saldo esté en la sección opuesta. Si el indicador no está activado, como es por defecto, cada subcuenta se mostrará en la sección relacionada con su saldo;
 
- 
+**Detalle de las entidades (Dettaglio della anagrafiche)**: por defecto, la aplicación excluye todo el detalle de los subcuentas vinculados a clientes/proveedores y agentes. Solo con el indicador correspondiente se visualizarán los detalles de estas subcuentas de entidades;
 
+**escludi conti d'ordine**: las cuentas de orden se visualizan al final de las secciones de activo y pasivo. Con este indicador, las cuentas de orden no se mostrarán en el informe. Se recuerda, en particular, que las cuentas de orden nunca son objeto de cierre/apertura de cuentas en el procedimiento automático de la aplicación;
 
+**comparazione anno precedente**: con esta opción se mostrará la columna del año en curso y una por el saldo del mismo período pero del año anterior al que está configurado como filtro.
 
+**escludi causale**: en caso de que se hayan registrado los cierres de cuentas, para obtener los saldos del balance será necesario excluir los movimientos basados en la causal de cierre. Ejecutar el informe sin excluir esto dará un informe con todos los saldos en cero (salvo las cuentas de orden por lo mencionado anteriormente): esto puede ser utilizado como un control de verificación del buen término de las operaciones de cierre de cuentas realizadas;
 
+Es posible incluir en la impresión también los movimientos derivados de los registros provisionales.
 
-**Visualizzazione importi segno negativo**: se impostato l'applicativo inserirà ogni sottoconto nella sezione di appartenenza (secondo il suo tipo conto) con eventualmente il segno negativo quando il saldo sia nella sezione opposta. Se il flag non è inserito, come di default, ogni sottoconto sarà visualizzato nella sezione relativa al suo saldo;
-
-**Dettaglio della anagrafiche**: di default l'applicativo esclude tutto il dettaglio dei sottoconti collegati ai clienti/fornitori e agli agenti. Solo con il flag relativo saranno visualizzati i dettagli di questi sottoconti di anagrafica;
-
-**Escludi conti d'ordine**: i conti d'ordine sono visualizzati in calce alle sezioni dell'attivo e passivo. Con questo flag i conti d'ordine non saranno visualizzati nel report. Si ricorda, in particolare, che i conti d'ordine non sono mai oggetto di chiusura/apertura conti nella procedura automatica dell'applicativo;
-
-**Comparazione anno precedente**: con questa opzione sarà visualizzata la colonna dell'anno in corso e una per il saldo dello stesso periodo ma dell'anno precedente a quello impostato come filtro
-
-**Escludi causale**: nel caso in cui siano state rilevate le registrazioni di chiusura dei conti, per ottenere i saldi di bilancio sarà necessario escludere i movimenti basati sulla causale di chiusura stessa. Eseguire il report senza escludere questa darà un report con tutti i saldi a zero (salvo i conti d'ordine per quanto detto sopra): questa può essere utilizzato come controllo di verifica dell'effettivo buon fine delle operazioni di chiusura conti effettuate;
-
-È possibile inserire nella stampa anche i movimenti derivanti dalle registrazioni provvisorie.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ---
 
-### Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE)
+### Reclasificación de balance para la elaboración del balance civil (schema CEE) (Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE))
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important También ver
+[**TUTORIALES EN VIDEO SOBRE IMPRESIONES FISCALES (VIDEO TUTORIALS SULLE STAMPE FISCALI)**](/docs/video/finance/intro)
 :::
-
-
-
-

@@ -1,12 +1,6 @@
 ---
-title: Stampa Lista insoluti
+title: Impresión de la lista de deudas (Stampa Lista insoluti)
 sidebar_position: 3
 ---
 
-Da questa finestra è possibile stampare la lista degli insoluti presenti nel sistema secondo il filtro impostato. In particolare, è d'interesse il filtro per insoluti ‘Non incassati' e il criterio di raggruppamento per cliente o per agente.
-
-
-
-
-
-
+Desde esta ventana es posible imprimir la lista de deudas presentes en el sistema según el filtro establecido. En particular, es de interés el filtro para deudas 'No cobradas (Non incassati)' y el criterio de agrupamiento por cliente o por agente.

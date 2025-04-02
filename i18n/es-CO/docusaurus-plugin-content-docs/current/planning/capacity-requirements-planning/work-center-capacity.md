@@ -1,52 +1,52 @@
 ---
-title: Capacità centri di lavoro
+title: capacità centri di lavoro
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La funzione **Capacità centri di lavoro** in Fluentis offre un panorama chiaro e immediato dei carichi di lavoro nei centri produttivi, evidenziando picchi di sovraccarico o inefficienze. Attraverso una form organizzata in quattro sezioni, gli operatori possono filtrare e visualizzare gli ordini per reparto, data o stato (pianificato, lanciato, esecutivo) e intervenire con facilità tramite il drag & drop per spostare, posticipare o modificare le lavorazioni.     
-La visualizzazione grafica illustra la capacità massima e l'impegno giornaliero dei centri, consentendo una gestione visiva e interattiva delle fasi produttive. Pulsanti specifici rendono possibile modificare le fasi, cambiare date e navigare attraverso il dettaglio temporale del carico di lavoro, ottimizzando in tal modo l'efficienza operativa dell'intero processo produttivo.
+:::important ¿Para qué sirve? (A cosa serve)
+La función **capacità centri di lavoro** en Fluentis ofrece una visión clara e inmediata de las cargas de trabajo en los centros productivos, destacando picos de sobrecarga o ineficiencias. A través de un formulario organizado en cuatro secciones, los operadores pueden filtrar y visualizar los pedidos por departamento, fecha o estado (planificado, lanzado, ejecutivo) e intervenir fácilmente mediante drag & drop para mover, posponer o modificar las operaciones.  
+La visualización gráfica ilustra la capacidad máxima y el compromiso diario de los centros, permitiendo una gestión visual e interactiva de las fases productivas. Botones específicos hacen posible modificar las fases, cambiar fechas y navegar a través del detalle temporal de la carga de trabajo, optimizando así la eficiencia operativa de todo el proceso productivo.
 :::
 
-L’operatore può ottenere una visualizzazione immediata dei carichi di ciascun centro di lavoro attivo nell’ambito dei singoli reparti per un determinato periodo temporale, permettendogli di conoscere in modo immediato gli eventuali picchi di sovraccarico o di inefficienza produttiva. 
-Con un semplice *drag & drop* l’operatore può anticipare, posticipare o cambiare centro di lavoro ad una lavorazione, e con un doppio click nell’ambito della singola barra di capacità, è possibile conoscere nel dettaglio le informazioni relative a quali ordini di lavoro impegnano il centro nella specifica data selezionata.
+El operador puede obtener una visualización inmediata de las cargas de cada centro de trabajo activo en los distintos departamentos durante un período de tiempo determinado, permitiéndole conocer de forma instantánea los picos de sobrecarga o ineficiencia productiva.  
+Con un simple *drag & drop*, el operador puede anticipar, posponer o cambiar el centro de trabajo de una operación, y con un doble clic en la barra de capacidad individual, es posible conocer en detalle la información relacionada con qué órdenes de trabajo están comprometidas con el centro en la fecha específica seleccionada.
 
-Questa form, è costituita da 4 sezioni: 
+Este formulario está compuesto por 4 secciones: 
 
-- la prima permette di filtrare per *Reparto* e/o per *Centro di lavoro* e di visualizzare i risultati nella griglia sottostante;  
+- la primera permite filtrar por *reparto* y/o por *centro di lavoro* y visualizar los resultados en la cuadrícula inferior;  
 
-- nella seconda è possibile filtrare gli ordini per *Data inizio* e *Data fine* ed inoltre, decidere se visualizzare gli ordini: 
+- en la segunda, es posible filtrar los pedidos por *data inizio* y *data fine* y, además, decidir si visualizar los pedidos:  
 
-> *Pianificati*: mostra gli ordini pianificati di produzione;              
-> *Lanciati*: mostra gli ordini di produzione in stato lanciato;                
-> *Esecutivi*: mostra gli ordini di produzione in stato esecutivo.          
+> *pianificati*: muestra los pedidos planificados de producción;              
+> *lanciati*: muestra los pedidos de producción en estado lanzado;                
+> *esecutivi*: muestra los pedidos de producción en estado ejecutivo.          
 
-Inoltre, è possibile visualizzare tutti i dati relativi ai centri di lavoro selezionati nella prima sezione.
+Además, es posible visualizar todos los datos relacionados con los centros de trabajo seleccionados en la primera sección.
 
-- nella terza sezione è possibile visualizzare una riga per ogni fase degli ordini pianificati e/o di produzione filtrati corrispondenti ai centri di lavoro selezionati nella prima sezione con tutti i dettagli relativi.
+- en la tercera sección, se puede visualizar una línea para cada fase de los pedidos planificados y/o de producción filtrados correspondientes a los centros de trabajo seleccionados en la primera sección, con todos los detalles relativos.
 
-- nella quarta sezione denominata **Dati di dettaglio Fase selezionata** è possibile visualizzare graficamente i carichi di lavoro relativi ai centri di lavoro selezionati nella prima sezione. 
+- en la cuarta sección, denominada **dati di dettaglio fase selezionata**, es posible visualizar gráficamente las cargas de trabajo relacionadas con los centros de trabajo seleccionados en la primera sección. 
 
-**Dati di dettaglio Fase selezionata**
+**dati di dettaglio fase selezionata**
 
-All'interno della parte grafica, la linea arancione rappresenta la capacità produttiva massima giornaliera del centro di lavoro, mentre in blu viene rappresentato l'impegno del centro di lavoro in una certa giornata. In rosso, invece, viene evidenziata la sovrallocazione del centro stesso.
-Selezionando una fase nella terza sezione, questa viene visualizzata in giallo all'interno della sezione grafica.
+Dentro de la parte gráfica, la línea naranja representa la capacidad productiva máxima diaria del centro de trabajo, mientras que en azul se representa el compromiso del centro de trabajo en un día determinado. En rojo, se resalta la sobreasignación del mismo centro.  
+Al seleccionar una fase en la tercera sección, esta se visualizará en amarillo dentro de la sección gráfica.
 
-Inoltre, tramite drag & drop è possibile selezionare una fase dalla griglia e trascinarla all'interno della sezione grafica e rilasciarla per variarne la data di inizio e di conseguenza quella di fine. Selezionando più centri di lavoro alternativi vi è la possibilità di spostare le fasi da un centro ad un altro in modo da ottimizzare la produzione.
+Además, mediante drag & drop, es posible seleccionar una fase de la cuadrícula y arrastrarla a la sección gráfica y soltarla para variar su fecha de inicio y, en consecuencia, la de fin. Al seleccionar varios centros de trabajo alternativos, hay la posibilidad de mover las fases de un centro a otro para optimizar la producción.
 
-Esercitando un semplice doppio click sulla riga della griglia delle fasi, l'utente entra direttamente nel documento (ordine pianificato o ordine di produzione) che contiene la fase rappresentata nella riga da cui si è partiti, con la possibilità, subordinata alla presenza dei diritti utente, di modificare il documento e vedere, dopo aver dato un refresh della visualizzazione, la situazione aggiornata anche dal punto di vista grafico.
-Invece, con un doppio click su un elemento del grafico viene aperto un pop-up contenente l'elenco della fasi di lavoro che contribuiscono a determinarne l'impegno.
+Al hacer un simple doble clic en la línea de la cuadrícula de fases, el usuario accede directamente al documento (pedido planificado o pedido de producción) que contiene la fase representada en la línea de origen, con la posibilidad, sujeta a la existencia de derechos de usuario, de modificar el documento y ver, tras actualizar la visualización, la situación actualizada también desde el punto de vista gráfico.  
+En cambio, al hacer un doble clic en un elemento del gráfico, se abre un pop-up que contiene el listado de las fases de trabajo que contribuyen a determinar su compromiso.
 
-*Pulsanti specifici*:  
+*Botones específicos*:  
 
-> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionando la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
-> **Cambio date**: permette di variare la data di inizio della fase selezionata;         
-> **Zoom in**: permette di diminuire il dettaglio temporale nel grafico;          
-> **Zoom alla finestra**: permette di visualizzare il dettaglio temporale nel grafico sulla base delle *Date Inizio/Fine* indicate nei filtri;                    
-> **Zoom out**: permette di aumentare il dettaglio temporale nel grafico;              
-> **Zoom settimana**: permette di visualizzare un arco temporale di una settimana nel grafico a partire dalla *Data Inizio*;              
-> **Zoom 2 settimane**: permette di visualizzare un arco temporale di due settimane nel grafico a partire dalla *Data Inizio*;     
-> **Zoom mese**: permette di visualizzare un arco temporale di un mese nel grafico a partire dalla *Data Inizio*;     
-> **Zoom data**: permette di visualizzare un arco temporale indicando *Date Inizio* e *Data fine* dello stesso.
+> **cambia fasi**: una vez seleccionada una fase, este comando permite *Actualizar* la fase misma variando: fase, máquina, centro de trabajo, total del tiempo de máquina, del tiempo de operario y del tiempo de preparación. Además, al seleccionar la opción *inserisci* se puede añadir una nueva fase, o bien, mediante la opción *cancella*, eliminarla definitivamente;            
+> **cambio date**: permite variar la fecha de inicio de la fase seleccionada;         
+> **Zoom in**: permite disminuir el detalle temporal en el gráfico;          
+> **zoom alla finestra**: permite visualizar el detalle temporal en el gráfico según las *Fechas de inicio/fin (Date Inizio/Fine)* indicadas en los filtros;                    
+> **Zoom out**: permite aumentar el detalle temporal en el gráfico;              
+> **Zoom semana**: permite visualizar un arco temporal de una semana en el gráfico a partir de la *data inizio*;              
+> **zoom 2 settimane**: permite visualizar un arco temporal de dos semanas en el gráfico a partir de la *data inizio*;     
+> **zoom mese**: permite visualizar un arco temporal de un mes en el gráfico a partir de la *data inizio*;     
+> **zoom data**: permite visualizar un arco temporal indicando *Fechas de inicio (Date Inizio)* y *data fine* de las mismas.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,31 +1,25 @@
 ---
-title: Ricerca Distinta Anticipo
+title: Búsqueda de Anticipos (Ricerca Distinta Anticipo)
 sidebar_position: 2
 ---
 
-Da questa posizione vengono ricercate le distinte di anticipo già presenti a sistema, le quali possono essere aperte per visione o modifica con un doppio click.
+Desde esta posición se buscan las listas de anticipos ya presentes en el sistema, las cuales pueden abrirse para visualización o modificación con un doble clic.
 
-E' possibile anche procedere all'inserimento di una nuova distinta con il bottone ***Nuovo***.
+También es posible proceder a la inserción de una nueva lista con el botón **nuovo***.
 
-Nella testata della form sono presenti i **filtri** per la ricerca relativi a: 
+En el encabezado del formulario se encuentran los **filtros** para la búsqueda relacionados con:
 
-- conti correnti (ordinari) 
-- conti d'appoggio per l'anticipo da parte della banca 
-- numero distinta 
-- data presentazione 
-- tipo di calcolo 
-- stato della distinta.
+- cuentas corrientes (ordinarias)  
+- cuentas de apoyo para el anticipo por parte del banco  
+- número de la lista  
+- fecha de presentación  
+- tipo de cálculo  
+- estado de la lista.  
 
-Il flag **Contabilizzata** contrassegna e filtra distinte per le quali è già stata lanciata la procedura di [**contabilizzazione**](/docs/treasury/advance/accounting/advances-list-accounting) o meno.
+El indicador **contabilizzata** marca y filtra listas para las cuales ya se ha lanzado el proceso de [**contabilizzazione**](/docs/treasury/advance/accounting/advances-list-accounting) o no.
 
-Nella form sono visibili anche:
+En el formulario también son visibles:
 
-**Totale Distinta:** Campo calcolato che rappresenta la somma del totale delle fatture anticipate
+**Total de la lista (Totale Distinta):** Campo calculado que representa la suma total de las facturas anticipadas.
 
-**Totale Anticipato:** Campo calcolato che rappresenta la somma della quota anticipata dalla banca per ogni fattura
-
-
-
-
-
-
+**Total anticipado (Totale Anticipato):** Campo calculado que representa la suma de la porción anticipada por el banco para cada factura.

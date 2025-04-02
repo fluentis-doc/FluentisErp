@@ -1,6 +1,6 @@
 ---
-title: Proprietà anagrafica
+title: proprietà anagrafica
 sidebar_position: 49
 ---
 
-La tabella consente di creare una struttura ad albero di proprietà libere da associare ai clienti/fornitori.
+La tabla permite crear una estructura de árbol de propiedades libres para asociar a clientes/proveedores.

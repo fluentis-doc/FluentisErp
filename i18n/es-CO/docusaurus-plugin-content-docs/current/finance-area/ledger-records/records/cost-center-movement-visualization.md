@@ -1,32 +1,24 @@
 ---
-title: Visualizzazione dei movimenti dei centri aziendali.
+title: visualizzazione dei movimenti dei centri aziendali.
 sidebar_position: 11
 ---
 
-Questa maschera permette di visualizzare, per ogni sottoconto selezionato (principalmente di tipo economico) i relativi movimenti dei centri aziendali collegati.
+Este formulario permite visualizar, para cada subcuenta seleccionada (principalmente de tipo económico), los movimientos correspondientes de los centros empresariales conectados.
 
 ![](/img/it-it/finance-area/ledger-records/records/cost-center-movement-visualization/image01.png)
 
-Nell'area di filtro superiore è possibile inserire dati relativi sia alle registrazioni contabili, sia al centro di costo al fine di raffinare la ricerca.
+En el área de filtro superior, es posible ingresar datos relacionados tanto con las registraciones contables como con el centro de costos para refinar la búsqueda.
 
-La griglia dei risultati (sotto) presenta, per ogni conto contabile, il relativo movimento dei centri aziendali (uno o più di uno) collegati, oltre ad altri dettagli sulla registrazione contabile. Per il significato dei campi specifici si rinvia al **[Glossario](/docs/guide/common/glossary/glossary-intro)**.
+La cuadrícula de resultados (abajo) presenta, para cada cuenta contable, el movimiento correspondiente de los centros empresariales (uno o más) conectados, además de otros detalles sobre la registración contable. Para el significado de los campos específicos, se remite al **[Glosario](/docs/guide/common/glossary/glossary-intro)**.
 
-In basso, sotto la griglia dei risultati, sono presenti quattro campi con i totali, rispettivamente per le sezioni Dare e Avere.
+En la parte inferior, bajo la cuadrícula de resultados, hay cuatro campos con los totales, respectivamente para las secciones Deber (Dare) y Haber (Avere).
 
-I primi due sono riferiti ai totali per le sole righe selezionate (una o più di una tramite le modalità illustrate nella parte generale). I secondi sono riferiti in ogni caso al totale delle righe presenti nella griglia dei risultati e visualizzate dalla ricerca eseguita.
+Los dos primeros se refieren a los totales solo para las filas seleccionadas (una o más a través de las modalidades ilustradas en la parte general). Los segundos se refieren en cualquier caso al total de las filas presentes en la cuadrícula de resultados y visualizadas por la búsqueda realizada.
 
-**Ribbon bar**:
+**Barra de ribbon (Ribbon bar)**:
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Ricerca | Avvia la ricerca dei risultati secondo i dati inseriti nell'area di filtro. |
-| Modifica | Entra direttamente in modifica della registrazione contabile che ha originato il movimento del centro aziendale selezionato. |
-| Visualizza | Entra direttamente in visualizzazione della registrazione contabile che ha originato il movimento del centro aziendale selezionato. Non sarà possibile salvare modifiche. |
-
-
-
-
-
-
+| Buscar (Ricerca) | Inicia la búsqueda de resultados según los datos ingresados en el área de filtro. |
+| Editar (Modifica) | Entra directamente en la edición de la registración contable que originó el movimiento del centro empresarial seleccionado. |
+| Ver (Visualizza) | Entra directamente en la visualización de la registración contable que originó el movimiento del centro empresarial seleccionado. No será posible guardar cambios. |

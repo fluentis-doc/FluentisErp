@@ -1,57 +1,57 @@
 ---
-title: Valorizzazione magazzino
+title: valorizzazione magazzino
 sidebar_position: 6
 ---
 
-:::important A cosa serve
-L'introduzione alla valorizzazione di magazzino di Fluentis è un elemento fondamentale nella gestione delle scorte e nella determinazione del valore dei beni stoccati. Questa funzionalità consente agli operatori di effettuare chiusure di magazzino a una data specificata, registrando le rimanenze e consentendo l'allineamento delle informazioni logistiche con quelle contabili, garantendo così una gestione accurata delle risorse e dei costi associati.
+:::important ¿Para qué sirve? (A cosa serve)
+La introducción a la valorización de inventario de Fluentis es un elemento fundamental en la gestión de existencias y en la determinación del valor de los bienes almacenados. Esta funcionalidad permite a los operadores realizar cierres de inventario en una fecha específica, registrando las existencias y permitiendo el alineamiento de la información logística con la contable, garantizando así una gestión precisa de los recursos y de los costos asociados.
 
-La procedura di valorizzazione permette di configurare diversi parametri, come la causale di movimentazione per le rimanenze, e offre la flessibilità di selezionare i criteri di valorizzazione adeguati, come il costo ultimo o il costo medio. In questo modo, è possibile tenere conto delle movimentazioni effettuate nel corso dell'anno per ciascun magazzino, ottenendo così una panoramica dettagliata e aggiornata del valore delle scorte.
+El procedimiento de valorización permite configurar diversos parámetros, como la causa de movimiento para los saldos, y ofrece flexibilidad para seleccionar los criterios de valorización adecuados, como el costo más reciente o el costo promedio. De este modo, es posible tener en cuenta los movimientos realizados a lo largo del año para cada inventario, obteniendo así una visión detallada y actualizada del valor de las existencias.
 
-Inoltre, la procedura non solo esegue la chiusura di magazzino, ma crea automaticamente una registrazione di apertura per il giorno successivo, garantendo la continuità delle operazioni logistiche. Gli utenti possono anche monitorare le chiusure effettuate attraverso uno storico, che riporta i dati relativi ai costi e alle quantità valorizzate, facilitando così analisi e decisioni strategiche per il miglioramento delle performance aziendali.
+Además, el procedimiento no solo ejecuta el cierre de inventario, sino que también crea automáticamente un registro de apertura para el día siguiente, asegurando la continuidad de las operaciones logísticas. Los usuarios también pueden monitorear los cierres realizados a través de un historial, que reporta los datos relativos a los costos y las cantidades valorizadas, facilitando así análisis y decisiones estratégicas para la mejora del rendimiento empresarial.
 :::
 
-La procedura permette di effettuare la chiusura di magazzino ad una certa data che deve essere inserita dall'utente nel campo **Data chiusura**.
-Di default, come **Data chiusura** è proposta la data odierna.
-Inoltre, la procedura creerà anche un movimento di apertura con tutte le rimanenze con data uguale a **Data chiusura** più un giorno, utilizzando la causale presente nelle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) con il flag **Rimanenze** attivo.
+El procedimiento permite realizar el cierre de inventario en una cierta fecha que debe ser ingresada por el usuario en el campo **data chiusura**.  
+Por defecto, como **data chiusura** se propone la fecha actual.  
+Además, el procedimiento también creará un movimiento de apertura con todas las existencias con fecha igual a **data chiusura** más un día, utilizando la causa presente en las [Causas de inventario (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates) con el indicador **rimanenze** activo.
 
-*Pulsanti specifici*  
-> **Chiusura**: permette di lanciare la procedura di chiusura che effettua una serie di controlli sulla congruenza dei dati di magazzino segnalando eventuali errori che dovranno poi essere corretti manualmente dall'operatore prima di procedere nuovamente; nel caso in cui non vi sia nessun errore la procedura effettuerà la chiusura di magazzino alla **Data chiusura** e l'apertura il giorno successivo con le rimanenze;             
-> **Crea valorizzazione**: è utilizzato nelle localizzazioni estere tipo Romania/Croazia dove i movimenti di magazzino devono essere registrati anche in contabilità (vedasi documentazione sottostante);      
-> **Ripristina chiusura**: permette di ripristinare l'ultima chiusura effettuata;     
-> **Allineamento con la contabilità**: è utilizzato nelle localizzazioni estere tipo Romania/Croazia dove i movimenti di magazzino devono essere registrati anche in contabilità (vedasi documentazione sottostante).
+*Botones específicos (Pulsanti specifici)*  
+> **chiusura**: permite lanzar el procedimiento de cierre que efectúa una serie de controles sobre la congruencia de los datos de inventario, señalando eventuales errores que deberán ser corregidos manualmente por el operador antes de proceder nuevamente; en caso de que no haya ningún error, el procedimiento realizará el cierre de inventario en la **data chiusura** y la apertura al día siguiente con las existencias;             
+> **crea valorizzazione**: se utiliza en localizaciones extranjeras como Rumania/Croacia donde los movimientos de inventario deben registrarse también en contabilidad (ver la documentación adicional);      
+> **ripristina chiusura**: permite restaurar el último cierre realizado;     
+> **allineamento con la contabilità**: se utiliza en localizaciones extranjeras como Rumania/Croacia donde los movimientos de inventario deben registrarse también en contabilidad (ver la documentación adicional).
 
-:::note CONSIGLIATO
-L’attività di chiusura del magazzino è consigliata in particolare nel caso in cui vi sia un elevato numero di movimenti, perchè questa permette di mantenere nell’archivio i movimenti per una consultazione, ma allo stesso tempo le elaborazioni di calcolo giacenza, disponibilità e costi vengono snellite in quanto i calcoli partiranno dal giorno successivo all’ultima chiusura effettuata.
+:::note RECOMENDADO (CONSIGLIATO)
+Se recomienda realizar la actividad de cierre del inventario en particular en caso de que haya un elevado número de movimientos, ya que esto permite mantener en el archivo los movimientos para una consulta, pero al mismo tiempo las elaboraciones de cálculo de existencias, disponibilidad y costos se simplifican, ya que los cálculos comenzarán desde el día siguiente al último cierre realizado.
 :::
 
-<u>Le seguenti procedure sono specifiche per localizzazioni estere come Romania e Croazia.</u> 
+<u>Los siguientes procedimientos son específicos para localizaciones extranjeras como Rumania y Croacia.</u> 
 
-## Crea valorizzazione
+## Crear valorización (Crea valorizzazione)
 
-La procedura **Crea valorizzazione** calcola i prezzi e modifica i valori nei movimenti di magazzino.        
-Viene utilizzata nei casi di documenti di magazzino incompleti, non finalizzati o non conciliati.     
-Questo accade principalmente a causa di dati insufficienti (prezzo e quantità) durante l'inserimento dei documenti di magazzino, errori del fornitore o inserimenti errati dell'utente, ritardi nella consegna dei documenti di magazzino o inserimenti successivi di modifiche nei documenti esistenti.     
-Avviando questa procedura, l'applicazione ricalcola nuovamente i nuovi valori degli articoli (FIFO) e li inserisce direttamente nel documento esistente.      
-Quindi, ricapitolando, la procedura modifica i valori nei documenti esistenti, non crea nuovi documenti che rimuovono/aumentano il valore. Di conseguenza, la procedura è irreversibile e non è possibile ripristinare i dati esistenti prima dell'esecuzione della procedura.      
-Questa funzionalità si applica principalmente al periodo durante il quale viene eseguita la valorizzazione.      
-Il ricalcolo (FIFO) e la modifica dei valori nei documenti iniziano dalla data di chiusura del magazzino.     
+El procedimiento **crea valorizzazione** calcula los precios y modifica los valores en los movimientos de inventario.        
+Se utiliza en casos de documentos de inventario incompletos, no finalizados o no conciliados.     
+Esto ocurre principalmente debido a datos insuficientes (precio y cantidad) durante la entrada de los documentos de inventario, errores del proveedor o entradas incorrectas del usuario, retrasos en la entrega de documentos de inventario o entradas posteriores de modificaciones en documentos existentes.     
+Al iniciar este procedimiento, la aplicación recalcula los nuevos valores de los artículos (FIFO) y los inserta directamente en el documento existente.      
+Por lo tanto, para resumir, el procedimiento modifica los valores en los documentos existentes, no crea nuevos documentos que eliminen/aumenten el valor. Como resultado, el procedimiento es irreversible y no es posible restaurar los datos existentes antes de la ejecución del procedimiento.      
+Esta funcionalidad se aplica principalmente al período durante el cual se ejecuta la valorización.      
+El recálculo (FIFO) y la modificación de los valores en los documentos comienzan desde la fecha de cierre del inventario.     
 
-:::danger ATTENZIONE
-È importante prestare molta attenzione alle impostazioni nei [Parametri iniziali magazzino](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters), specialmente se la data di chiusura del magazzino è nell'anno precedente.       
+:::danger ATENCIÓN
+Es importante prestar mucha atención a las configuraciones en los [Parámetros iniciales de inventario (Parametri iniziali magazzino)](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters), especialmente si la fecha de cierre del inventario es en el año anterior.       
 :::
 
-Ad esempio, la Data inizio è il 01.10.2023, mentre la data odierna potrebbe essere, ad esempio, il 28.3.2024.       
-Avviando la procedura **Crea valorizzazione**, i valori nei documenti di magazzino sarebbero modificati dal 01.10.2023 fino alla data odierna. Quindi, poiché il 2023 è passato ed è probabilmente già chiuso finanziariamente, i valori nei documenti di magazzino dal 1.10.2023 al 31.12.2023 verrebbero modificati, alterando notevolmente i report già conclusi per il 2023.      
+Por ejemplo, la Fecha de inicio es el 01.10.2023, mientras que la fecha actual podría ser, por ejemplo, el 28.3.2024.       
+Al iniciar el procedimiento **crea valorizzazione**, los valores en los documentos de inventario se modificarían desde el 01.10.2023 hasta la fecha actual. Entonces, dado que el 2023 ya ha pasado y probablemente ya ha sido cerrado financieramente, los valores en los documentos de inventario desde el 01.10.2023 hasta el 31.12.2023 se modificarían, alterando notablemente los informes ya concluidos para el 2023.      
 
-## Allineamento con la contabilità
+## Alineación con la contabilidad (Allineamento con la contabilità)
 
-La procedura di **Allineamento con la contabilità** viene eseguita dopo la procedura di **Crea valorizzazione**.        
-Dopo che la procedura di **Crea valorizzazione** è stata completata e i valori nei documenti di magazzino sono stati modificati, è necessario apportare modifiche anche ai documenti contabili correlati.        
-In questa fase, la procedura di **Allineamento con la contabilità** allinea le modifiche apportate dalla valorizzazione del magazzino e modifica i valori nei registri contabili per garantire l'allineamento finanziario con i valori nei documenti di magazzino.       
+El procedimiento de **allineamento con la contabilità** se ejecuta después del procedimiento de **crea valorizzazione**.        
+Después de que el procedimiento de **crea valorizzazione** se haya completado y los valores en los documentos de inventario hayan sido modificados, también es necesario realizar cambios en los documentos contables relacionados.        
+En esta etapa, el procedimiento de **allineamento con la contabilità** alinea los cambios realizados por la valorización del inventario y modifica los valores en los registros contables para garantizar la alineación financiera con los valores en los documentos de inventario.       
 
-:::danger ATTENZIONE
-Anche questa procedura è irreversibile e modifica gli importi nei documenti esistenti.        
+:::danger ATENCIÓN
+Este procedimiento también es irreversible y modifica los montos en los documentos existentes.        
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

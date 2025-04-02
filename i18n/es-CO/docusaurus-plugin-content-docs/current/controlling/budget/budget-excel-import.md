@@ -1,35 +1,33 @@
 ---
-title: Importazione excel delle registrazioni extracontabili di Budget
+title: Importación excel de las registraciones extracontables de Presupuesto (Importazione excel delle registrazioni extracontabili di Budget)
 sidebar_position: 3
 ---
 
-Nel menù degli strumenti, all'interno del gruppo **Bizlink**, troviamo le ***Importazioni on demand*** e quindi le ***Importazioni excel***: fra queste abbiamo a disposizione l'import con codice **OffBalanceRecordsForArea**, che consente di importare facilmente le registrazioni Extracontabili di Area, quindi sia registrazioni dell'area gestionale che saranno utilizzati in integrazione all'area dei consuntivi di periodo (ad esempio, registrazioni dei compensi collegio sindacale che si caricano ad inizio anno, piuttosto che valorizzazioni extracontabili delle paghe del singolo mese) che registrazioni da utilizzare per elaborare il dettaglio del Budget di periodo.
+En el menú de herramientas, dentro del grupo **Bizlink**, encontramos las **importazioni on demand*** y, por lo tanto, las **importazioni excel***: entre estas, tenemos disponible la importación con código **OffBalanceRecordsForArea**, que permite importar fácilmente las registraciones Extracontables de Área, tanto las registraciones del área de gestión que se utilizarán en integración con el área de los resultados de período (por ejemplo, registraciones de compensaciones del consejo de vigilancia que se cargan al inicio del año, así como valorizaciones extracontables de los pagos del mes individual) como registraciones para utilizar en el detalle del Presupuesto de período.
 
-I campi disponibili sono i seguenti:
-- ***Data registrazione***: obbligatorio, è la data registrazione da assegnare
+Los campos disponibles son los siguientes:
+- **data registrazione***: obligatorio, es la fecha de registración a asignar.
 
-- ***Data competenza***: obbligatorio, è la data competenza della registrazione, sarà sempre uguale alla data precedente
+- **data competenza***: obligatorio, es la fecha de competencia de la registración, que siempre será igual a la fecha anterior.
 
-- ***Numero registrazione***: obbligatorio, si consiglia di impostare un numero registrazione alto, in modo da non rischiare di sovrapporsi con eventuali registrazioni già presenti alla data, create magari automaticamente da procedure di contabilizzazione (es. l'elaborazione degli ammortamenti del controlling, piuttosto che la Contabilizzazione rimanenze delle Chiusure infrannuali)
+- **numero registrazione***: obligatorio, se recomienda establecer un número de registración alto, para no arriesgarse a superponerse con eventuales registraciones ya presentes en la fecha, creadas quizás automáticamente por procedimientos de contabilización (p. ej., el procesamiento de las amortizaciones del controlling, o la Contabilización de existencias de los cierres interanuales).
 
-- ***Causale***: la causale del movimento, obbligatoria, che deve gestire i centri di costo
+- **causale***: la causa del movimiento, obligatoria, que debe gestionar los centros de costo.
 
-- ***Conto e SottoConto***: obbligatorio, il conto/sottoconto da assegnare al movimento
+- ***Cuenta y Subcuenta (Conto e SottoConto)***: obligatorio, la cuenta/subcuenta que se asignará al movimiento.
 
-- [***CENTRO AZIENDALE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obbligatorio, il centro aziendale da assegnare 
+- [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obligatorio, el centro empresarial a asignar.
 
-- ***Tipo-Numero interno-Anno-Numero WBS***: opzionalmente l'eventuale aggancio ad un progetto
+- ***Tipo-Número interno-Año-Número WBS (Tipo-Numero interno-Anno-Numero WBS)***: opcionalmente el posible vínculo a un proyecto.
 
-- ***Importo dare***: da valorizzare (magari a zero) obbligatoriamente
+- **importo dare***: debe asignarse (quizás a cero) obligatoriamente.
 
-- ***Importo avere***: da valorizzare (magari a zero) obbligatoriamente
+- **importo avere***: debe asignarse (quizás a cero) obligatoriamente.
 
-- ***Da data competenza***: la data iniziale di competenza economica della riga, non obbligatoria ma da valorizzare sempre quando si tratta di movimenti economici
+- **da data competenza***: la fecha inicial de competencia económica de la línea, no obligatoria pero siempre debe valorizarse cuando se trata de movimientos económicos.
 
-- ***A data competenza***: la data finale di competenza economica della riga, non obbligatoria ma da valorizzare sempre quando si tratta di movimenti economici
+- **a data competenza***: la fecha final de competencia económica de la línea, no obligatoria pero siempre debe valorizarse cuando se trata de movimientos económicos.
 
-- ***Divisione***: non obbligatoria, se non indicata sarà utilizzata quella dei parametri d'importazione, di default quella attiva
+- **divisione***: no obligatoria, si no se indica, se utilizará la de los parámetros de importación, de forma predeterminada la activa.
 
-Una volta inseriti tutti i campi necessari, si potrà validare il range dei dati inseriti al fine di verificare eventuali codici mancanti o errati (pulsante ***Valida range di dati***), piuttosto che lanciare direttamente l'import con il pulsante ***Importa foglio excel***: verrà richiesta la valorizzazione dell'**Area** da utilizzare e della divisa di riferimento dell'operazione.
-
-
+Una vez ingresados todos los campos necesarios, se podrá validar el rango de los datos ingresados para verificar eventuales códigos faltantes o erróneos (botón **valida range di dati***), o lanzar directamente la importación con el botón **importa foglio excel***: se solicitará la valorización del **Área** a utilizar y de la divisa de referencia de la operación.

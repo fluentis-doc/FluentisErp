@@ -1,66 +1,60 @@
 ---
-title: Calcolo Risconto Maxicanone
+title: Cálculo de Risconto Maxicanone (Calcolo Risconto Maxicanone)
 sidebar_position: 1
 ---
 
-Da questa form è possibile ricercare i risconti già calcolati e procedere al calcolo di nuovi risconti annuali per quanto riguarda il maxicanone.
+Desde este formulario, es posible buscar los risconti ya calculados y proceder al cálculo de nuevos riscontos anuales en lo que respecta al maxicanone.
 
-La procedura, in modo simile rispetto alle procedure per le scritture di assestamento del modulo Contabilità, prevedono di eseguire **prima** il **calcolo** del risconto da questa posizione e **poi** di procedere alla sua **contabilizzazione** tramite l'apposita procedura contabile del modulo.
+El procedimiento, de manera similar a los procedimientos para las asientos de ajuste del módulo de Contabilidad, requiere ejecutar **primero** el **cálculo** del risconto desde esta posición y **luego** proceder a su **contabilización** a través del procedimiento contable apropiado del módulo.
 
-Premendo il tasto nuovo si inizializza la form di inserimento parametri per il calcolo.
+Al presionar el botón nuevo, se inicializa el formulario de entrada de parámetros para el cálculo.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image01.png)
 
-E' necessario specificare l'**Anno** contabile, la **Causale** da utilizzare per la scrittura di rettifica, la **Data** registrazione e di competenza contabile che sarà inserita nella scrittura.
+Es necesario especificar el **Año** contable, la **Causa** a utilizar para la escritura de ajuste, la **Fecha** de registro y de competencia contable que se insertará en la escritura.
 
-Nonostante l'inserimento della casuale, lo schema della scrittura contabile sarà pilotato dalla logica della procedura.
+A pesar de la inserción de la causa, el esquema de la escritura contable será guiado por la lógica del procedimiento.
 
-Dopo aver salvato è possibile premere Calcola per ottenere la proposta dei valori che potranno essere confermati tramite la spunta (spunta tutto per confermare i risconti relativi ai vari leasing presenti) per poi procedere a contabilizzarli.
+Después de guardar, es posible presionar Calcular para obtener la propuesta de los valores, que podrán ser confirmados mediante la marca (marcar todo para confirmar los riscontos relacionados con los diversos leasing presentes) y luego proceder a contabilizarlos.
 
-I valori proposti dal calcolo sono editabili e pertanto possono essere forzati nel caso in cui il calcolo ottenuto necessiti di leggeri aggiustamenti ad esempio nel numero di giorni di competenza calcolati o nei valori risultanti.
+Los valores propuestos por el cálculo son editables y, por lo tanto, pueden ser forzados en caso de que el cálculo obtenido necesite ligeros ajustes, por ejemplo, en el número de días de competencia calculados o en los valores resultantes.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image02.png)
 
-Vengono ripresi **Tipo Leasing**, **Data di stipula**, **Numero Leasing**, **Descrizione** e **Data di estinzione**.
+Se recuperan **Tipo de Leasing**, **Fecha de suscripción**, **Número de Leasing**, **Descripción** y **Fecha de extinción**.
 
-**Totale giorni**: = differenza in giorni tra **data stipula** e **data estinzione**
+**Total de días**: = diferencia en días entre **fecha de suscripción** y **fecha de extinción**.
 
-**Costo giornaliero**: = Valore totale del contratto / Totale giorni:  (dove Valore totale del contratto = Maxicanone + Spese istruttorie e pratica + Sommatoria di (Quota capitale + Quota interessi + Spese per ogni singolo canone)).
+**Costo diario**: = Valor total del contrato / Total de días: (donde el Valor total del contrato = Maxicanone + Gastos de instrucción y práctica + Suma de (Cuota de capital + Cuota de intereses + Gastos por cada canón)).
 
-**Giorni di competenza**: = numero di giorni intercorrenti tra (la più recente tra data stipula e data inizio esercizio) e Data registrazione impostata per il risconto del maxicanone.
+**Días de competencia**: = número de días transcurridos entre (la más reciente entre la fecha de suscripción y la fecha de inicio del ejercicio) y la Fecha de registro establecida para el risconto del maxicanone.
 
-**Costo di competenza**: = Costo giornaliero * Giorni di competenza
+**Costo de competencia**: = Costo diario * Días de competencia.
 
-**Pagato contab. **: calcolo di quanto pagato nell'esercizio dal punto di vista contabile (canoni contabilizzati + Maxicanone se contabilizzato) 
+**Pagado contable (Pagato contab.)**: cálculo de lo pagado en el ejercicio desde el punto de vista contable (canones contabilizados + Maxicanone si está contabilizado) 
 
-= Sommatoria del Maxicanone contabilizzato e dei canoni (quota capitale + quota interessi + spese) aventi il flag Contabilizzato attivo (a seguito di manovra di contabilizzazione o impostato manualmente) e la data prevista scadenza per il canone, indicata sulla riga di dettaglio del piano di ammortamento del leasing, minore rispetto alla data di registrazione del risconto maxicanone.
+= Suma del Maxicanone contabilizado y de los canones (cuota de capital + cuota de intereses + gastos) que tienen el indicador Contabilizado activo (a raíz de la maniobra de contabilización o ajustado manualmente) y cuya fecha prevista de vencimiento para el canón, indicada en la línea de detalle del plan de amortización del leasing, es menor que la fecha de registro del risconto del maxicanone.
 
-Viene verificato anche che l'anno contenuto nelle date dei canoni e nella testata del leasing (data stipula) siano compatibili, rispetto alla data della contabilizzazione del risconto, con la presenza dei parametri contabili per l'anno in questione.
+También se verifica que el año contenido en las fechas de los canones y en el encabezado del leasing (fecha de suscripción) sean compatibles, con respecto a la fecha de contabilización del risconto, con la presencia de los parámetros contables para el año en cuestión.
 
-**Risconto anno precedente**: in questo campo viene riportato il valore del campo Valore risconto relativo all'anno precedente e pertanto il primo anno in cui viene caricato il contratto di leasing a sistema risulterà zero.
+**Risconto del año anterior**: en este campo se reporta el valor del campo Valor risconto correspondiente al año anterior, por lo que el primer año en el que se carga el contrato de leasing en el sistema resultará ser cero.
 
-**Valore risconto**: in questo campo viene calcolato il valore del risconto da applicare:
+**Valor risconto**: en este campo se calcula el valor del risconto a aplicar:
 
-= Pagato contab. + Risconto anno prec. - Costo di competenza
+= Pagado contab. + Risconto año anterior - Costo de competencia.
 
-**Controllata**: apporre il flag in corrispondenza della riga per abilitare la possibilità di contabilizzare il risconto in quanto approvato il calcolo automatico o dopo aver editato i campi manualmente.
+**controllata**: marcar el indicador en la línea para habilitar la posibilidad de contabilizar el risconto ya que se aprobó el cálculo automático o después de editar manualmente los campos.
 
-E' possibile mettere il flag su Spunta tutto (sopra la griglia) per approvare massivamente tutti i risconti proposti.
+Es posible marcar el indicador en Marcar todo (arriba de la cuadrícula) para aprobar masivamente todos los riscontos propuestos.
 
-**Contabilizzata**: il flag si attiva in seguito al lancio della contabilizzazione del risconto proposto ed approvato. Vengono inseriti i riferimenti alla scrittura contabile generata.
+**contabilizzata**: el indicador se activa tras el lanzamiento de la contabilización del risconto propuesto y aprobado. Se insertan las referencias a la escritura contable generada.
 
-La procedura di contabilizzazione può essere eseguita dalla presente form attraverso i bottoni sulla ribbon bar oppure, indifferentemente utilizzando la procedura accessibile dal menù delle procedure contabili del modulo.
+El procedimiento de contabilización puede ejecutarse desde este formulario a través de los botones en la barra de herramientas o, de manera indiferente, utilizando el procedimiento accesible desde el menú de procedimientos contables del módulo.
 
-Sempre da questa posizione è possibile eseguire anche il ripristino della procedura di contabilizzazione.
+Desde esta posición, también es posible ejecutar la restauración del procedimiento de contabilización.
 
-Il risconto Maxicanone calcolato e contabilizzato come sopra illustrato può essere gestito automaticamente anche nella fase di riapertura automatica conti (attivabile dalla **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) attivando il flag Giroconto scritture di assestamento.
+El risconto Maxicanone calculado y contabilizado como se ha ilustrado anteriormente puede ser gestionado automáticamente también en la fase de reapertura automática de cuentas (activable desde la **[Cierre automático de cuentas](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) activando el indicador Giroconto escrituras de ajuste.
 
-In questo caso saranno eseguite automaticamente le consuete scritture di riapertura dei risconti per maxicanone, accodandole alle altre scritture automatiche di apertura saldi e giroconti degli altri ratei e risconti attivi e passivi.
+En este caso, se ejecutarán automáticamente las habituales escrituras de reapertura de los riscontos para maxicanone, acumulándolos a las demás escrituras automáticas de apertura de saldos y girocontos de los otros devengos y riscontos activos y pasivos.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image03.png)
-
-
-
-
-
-

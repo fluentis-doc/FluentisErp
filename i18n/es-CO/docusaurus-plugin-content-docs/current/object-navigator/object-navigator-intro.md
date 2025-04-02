@@ -1,8 +1,8 @@
 ---
-title: Object Navigator
+title: object navigator
 sidebar_position: 1
 ---
 
-L'**Object Navigator** rappresenta la visualizzazione ad albero delle proprietà dell'oggetto relativo alla form corrente.
+El **object navigator** representa la visualización en árbol de las propiedades del objeto relacionado con el formulario actual.
 
-Questa visualizzazione è interattiva e permette all'utente di creare e salvare delle viste personalizzate.
+Esta visualización es interactiva y permite al usuario crear y guardar vistas personalizadas.

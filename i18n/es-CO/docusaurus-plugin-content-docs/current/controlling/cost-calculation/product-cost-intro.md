@@ -1,6 +1,6 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-La procedura di **Calcolo costo** presente nel Controlling permette di calcolare i costi degli articoli in base alla distinta base e ai cicli di lavoro.
+El procedimiento de **calcolo costo** presente en el Controlling permite calcular los costos de los artículos en función de la lista de materiales y los ciclos de trabajo.

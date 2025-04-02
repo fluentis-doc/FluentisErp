@@ -1,23 +1,23 @@
 ---
-title: Valorizzazione assiemi
+title: Valoración de conjuntos (Valorizzazione assiemi)
 sidebar_position: 8
 ---
 
-Questa form permette di lanciare un report che consente di visualizzare le distinte base, filtrate in base ad una serie di parametri, valorizzate secondo le scelte impostate nelle apposite sezioni
+Este formulario permite lanzar un informe que permite visualizar las listas de materiales, filtradas según una serie de parámetros, valoradas de acuerdo con las elecciones establecidas en las secciones correspondientes.
 
-Essa è composta da 6 sezioni:
+Está compuesto por 6 secciones:
 
-**Filtri**: per inserire manualmente o tramite **Help articolo** la distinta base di cui visualizzare la struttura. **Versione** e **Opzione** sono predeterminate in base ai dati di default inseriti nelle relative tabelle; la data validità non è proposta automaticamente ma può essere inserita manualmente. Le altre informazioni da inserire sono appunto legate all'articolo, e si tratta di classe, codice, descrizione e variante, ma si può decidere di filtrare anche per componente. Inoltre è possibile decidere il massimo livello di esplosione per il quale visualizzare le informazioni per le distinte da visualizzare, si può decidere di esplodere anche gli assiemi di acquisto e di effettuare la valorizzazione decidendo di utilizzare i costi presi dal listino del fornitore preferenziale, che si può impostare nell'apposito box di selezione;
+**filtri**: para ingresar manualmente o mediante **Ayuda de artículo (Help articolo)** la lista de materiales de la que se desea visualizar la estructura. **versione** y **opzione** están predeterminadas según los datos predeterminados ingresados en las tablas correspondientes; la fecha de validez no se propone automáticamente pero puede ser ingresada manualmente. Las otras informaciones a ingresar están relacionadas con el artículo, que incluyen clase, código, descripción y variante, pero también se puede decidir filtrar por componente. Además, es posible decidir el nivel máximo de desglose por el cual visualizar la información de las listas a mostrar, y se puede optar por desglozar también los conjuntos de compra y realizar la valoración decidiendo utilizar los costos tomados de la lista del proveedor preferencial, que se puede establecer en el cuadro de selección correspondiente;  
 
-**Opzioni**: per decidere se visualizzare anche le varianti degli articoli e se visualizzare, per ogni componente, la quantità totale da utilizzare;
+**opzioni**: para decidir si también se deben visualizar las variantes de los artículos y si se debe mostrar, para cada componente, la cantidad total a utilizar;  
 
-**Valorizzazione a**: per decidere quale sia il costo che debba essere presentato nella stampa vicino alla riga dell'articolo visualizzato. Le opzioni utilizzabili sono Costo ultimo, Costo medio, Costo standard, Prezzo di vendita e Costo standard anno prossimo. Si tratta di una serie di campi presenti nel tab Costi dell'Anagrafica Articolo;
+**valorizzazione a**: para decidir cuál es el costo que debe presentarse en la impresión junto a la línea del artículo visualizado. Las opciones disponibles son Costo último, Costo medio, Costo estándar, Precio de venta y Costo estándar año próximo. Se trata de una serie de campos presentes en la pestaña Costos (Costi) del Registro de Artículos (Anagrafica Articolo);  
 
-**Tipo valorizzazione**: per decidere se la valorizzazione dei livelli della distinta debba essere eseguita in base al costo dell'articolo (ed in questo caso in corrispondenza dell'articolo visualizzato si presenterebbe semplicemente il costo ultimo, o medio, o standard, etc. presente nella sua anagrafica) o in base al costo dei materiali (e in questo caso in corrispondenza dell'articolo visualizzato si presenterebbe la somma dei costi dei materiali di livello inferiore);
+**tipo valorizzazione**: para decidir si la valoración de los niveles de la lista de materiales debe realizarse en función del costo del artículo (y en este caso, junto al artículo visualizado se presentaría simplemente el costo último, o medio, o estándar, etc., presente en su registro) o en función del costo de los materiales (y en este caso, junto al artículo visualizado se presentaría la suma de los costos de los materiales de nivel inferior);  
 
-**Tipo stampa**: per decidere fino a quale livello di dettaglio si vuole visualizzare la lista dei componenti delle distinte base. La stampa può essere infatti 'Analitica' o 'Riepilogata', e a seconda dell'opzione che si sceglie si ottengono maggiori o minori informazioni sul report di stampa;
+**tipo stampa**: para decidir hasta qué nivel de detalle se desea visualizar la lista de componentes de las listas de materiales. La impresión puede ser 'Analítica (Analitica)' o 'Resumen (Riepilogata)', y dependiendo de la opción elegida, se obtienen más o menos información en el informe de impresión;  
 
-**Griglia di risultato**: in questa sezione verranno visualizzati i risultati derivanti dalle opzioni di filtro immesse nella sezione precedente; 
-Per lanciare il report basterà cliccare su **Anteprima** (in questo caso si vedrà un'anteprima del report e si potrà decidere se stampare, quante pagine e copie stampare o se esportare il file) oppure cliccare su **Stampa** (in questo caso verrà lanciata direttamente la stampa del report).
+**Cuadrícula de resultados (Griglia di risultato)**: en esta sección se visualizarán los resultados derivados de las opciones de filtro ingresadas en la sección anterior;  
+Para lanzar el informe, basta con hacer clic en **anteprima** (en este caso se verá una vista previa del informe y se podrá decidir si imprimir, cuántas páginas y copias imprimir o si exportar el archivo) o hacer clic en **stampa** (en este caso se lanzará directamente la impresión del informe).
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

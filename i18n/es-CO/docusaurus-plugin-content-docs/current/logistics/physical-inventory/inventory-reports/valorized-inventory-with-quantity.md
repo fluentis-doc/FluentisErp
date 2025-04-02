@@ -1,82 +1,81 @@
 ---
-title: Inventario quantità valorizzato
+title: inventario quantità valorizzato
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-Il report "Inventario quantità valorizzato" di Fluentis rappresenta uno strumento chiave per la gestione e il monitoraggio delle giacenze di magazzino, permettendo alle aziende di avere una visione chiara e dettagliata delle proprie scorte. Attraverso questo report, gli utenti possono accedere a informazioni complete non solo sulle quantità fisiche degli articoli presenti in magazzino, ma anche sul loro valore, ottenuto mediante diverse logiche di valorizzazione come costo medio, costo ultimo, FIFO e LIFO.
+:::important ¿Para qué sirve? (A cosa serve)
+El informe "inventario quantità valorizzato" de Fluentis representa una herramienta clave para la gestión y el monitoreo de las existencias en el almacén, permitiendo a las empresas tener una visión clara y detallada de sus inventarios. A través de este informe, los usuarios pueden acceder a información completa no solo sobre las cantidades físicas de los artículos presentes en el almacén, sino también sobre su valor, obtenido mediante diferentes lógicas de valorización como costo promedio, costo último, FIFO y LIFO.
 
-La generazione del report avviene tramite filtri personalizzabili, che consentono di visualizzare dati specifici per magazzino, articolo, categoria merceologica e altro, facilitando l'analisi e la gestione delle scorte. Gli utenti possono anche raggruppare e ordinare i dati in base a parametri significativi, rendendo l'intero processo di controllo inventariale più efficiente e informato.
+La generación del informe se realiza a través de filtros personalizables, que permiten visualizar datos específicos por almacén, artículo, categoría mercantil y más, facilitando el análisis y la gestión de las existencias. Los usuarios también pueden agrupar y ordenar los datos según parámetros significativos, haciendo que todo el proceso de control de inventarios sea más eficiente e informado.
 
-Questo report non solo supporta le decisioni operative quotidiane, ma è anche cruciale per garantire la compliance normativa e per effettuare analisi finanziarie e di performance all'interno dell'organizzazione.
+Este informe no solo apoya las decisiones operativas diarias, sino que también es crucial para garantizar el cumplimiento normativo y para realizar análisis financieros y de rendimiento dentro de la organización.
 :::
 
-La stampa permette all'utente di visualizzare un report contenente le informazioni relative all'inventario.
-La form si compone di una parte superiore contenente una serie di filtri (magazzino, causale, artciolo/variante, tipo articolo, categoria fiscale, categoria merceologica,...) che permettono di visualizzare i dati desiderati.
+La impresión permite al usuario visualizar un informe que contiene la información relacionada con el inventario.  
+El formulario se compone de una parte superior que contiene una serie de filtros (almacén, motivo, artículo/variante, tipo de artículo, categoría fiscal, categoría mercantil,...) que permiten visualizar los datos deseados.
 
-Inoltre, tramite una serie di box dedicati è possibile:
+Además, a través de una serie de cuadros dedicados es posible:
 
-- raggruppare i dati per articolo o magazzino;      
-- ordinarli per articolo, caratteristica, descrizione e categoria merceologica;     
-- avere un dettaglio per variante, ubicazione, commessa, lotto o cliente/fornitore;       
-- visualizzare gli articoli con giacenza positiva, nulla o negativa.
+- agrupar los datos por artículo o almacén;  
+- ordenarlos por artículo, característica, descripción y categoría mercantil;  
+- tener un detalle por variante, ubicación, proyecto, lote o cliente/proveedor;  
+- visualizar los artículos con saldo positivo, cero o negativo.
 
-Attivando il box **Con valorizzazione al**, verrà inserito all'interno del report dell'inventario anche il valore del singolo articolo sulla base dei seguenti flags:
+Activando el cuadro **con valorizzazione al**, se insertará dentro del informe del inventario también el valor del artículo individual en base a los siguientes indicadores:
 
-- **Costo medio**: se attivo, gli articoli vengono valorizzati con il costo medio calcolato in base ai movimenti di magazzino (se il flag **Da anagrafica articolo** è disabilitato);    
-- **Costo ultimo**: se attivo, gli articoli vengono valorizzati con il costo ultimo calcolato in base ai movimenti di magazzino (se il flag **Da anagrafica articolo** è disabilitato);    
-- **FIFO a scatti annuali**: se attivo, gli articoli vengono valorizzati con la logica FIFO a scatti annuali;        
-- **LIFO a scatti annuali**: se attivo, gli articoli vengono valorizzati con la logica LIFO a scatti annuali;        
-- **Area gestionale**: se attivo, gli articoli vengono valorizzati in base all'area gestionale indicata per quel magazzino all'interno della tabella [Magazzini](/docs/configurations/tables/logistics/warehouses/);          
-- **Da costo effettivo lotti**: se attivo, gli articoli vengono valorizzati con il valore indicato in anagrafica lotti;      
-- **Da anagrafica articolo**: se attivo, in concomitanza dei flag **Costo medio** o **Costo ultimo**, gli articoli vengono valorizzati rispettivamente a costo medio o ultimo, ma sulla base dei relativi costi inseriti nell'anagrafica articolo;         
-- **Storicizzazione inventario**: se attivo, i dati dell'elaborazione verranno salvati nello [Storico magazzino](/docs/logistics/physical-inventory/warehouse-history);      
-- **Da storicizzazione**: se attivo, gli articoli vengono valorizzati con i valori presenti nella [Storico magazzino](/docs/logistics/physical-inventory/warehouse-history) con data pari a quella indicata nel campo **Data costo storico**;      
-- **Data costo storico**: si abilita solo se il flag **Da storicizzazione** è attivo, permette di inserire la data del costo storico da utilizzare per la valorizzazione.
+- **costo medio**: si está activo, los artículos se valoran con el costo medio calculado en función de los movimientos de almacén (si el indicador **Desde registro de artículo (Da anagrafica articolo)** está desactivado);  
+- **costo ultimo**: si está activo, los artículos se valoran con el costo último calculado en función de los movimientos de almacén (si el indicador **Desde registro de artículo (Da anagrafica articolo)** está desactivado);  
+- **fifo a scatti annuali**: si está activo, los artículos se valoran con la lógica FIFO a escalones anuales;  
+- **lifo a scatti annuali**: si está activo, los artículos se valoran con la lógica LIFO a escalones anuales;  
+- **area gestionale**: si está activo, los artículos se valoran en función del área de gestión indicada para ese almacén dentro de la tabla [Almacenes (Magazzini)](/docs/configurations/tables/logistics/warehouses/);  
+- **da costo effettivo lotti**: si está activo, los artículos se valoran con el valor indicado en el registro de lotes;  
+- **Desde registro de artículo (Da anagrafica articolo)**: si está activo, en conjunto con los indicadores **costo medio** o **costo ultimo**, los artículos se valorarán respectivamente a costo medio o último, pero sobre la base de los costos correspondientes registrados en el registro de artículos;  
+- **storicizzazione inventario**: si está activo, los datos del procesamiento se guardarán en el [Historial de almacén (Storico magazzino)](/docs/logistics/physical-inventory/warehouse-history);  
+- **da storicizzazione**: si está activo, los artículos se valoran con los valores presentes en el [Historial de almacén (Storico magazzino)](/docs/logistics/physical-inventory/warehouse-history) con fecha igual a la indicada en el campo **data costo storico**;  
+- **data costo storico**: se habilita solo si el indicador **da storicizzazione** está activo, permite ingresar la fecha del costo histórico a utilizar para la valorización.
 
-Dopo l'inserimento dei parametri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+Después de la inserción de los parámetros deseados, es posible imprimir informes estándar o personalizados (previa mapeo en la gestión de impresiones). En caso de querer imprimir un informe personalizado, es necesario elegirlo desde el listado en los parámetros de impresión.
 
-A standard sono disponibili i seguenti report:
+Están disponibles los siguientes informes estándar:
 
-- **Stampa FIFO**: si tratta di un report con logica FIFO per gli inventari (da utilizzare in concomitanza dell'utilizzo del flag **FIFO a scatti annuali**);              
-- **Stampa inventario**: si tratta di un report standard per gli inventari;       
-- **Stampa LIFO**: si tratta di un report con logica LIFO per gli inventari (da utilizzare in concomitanza dell'utilizzo del flag **LIFO a scatti annuali**).
+- **stampa fifo**: se trata de un informe con lógica FIFO para los inventarios (a utilizar en conjunto con el uso del indicador **fifo a scatti annuali**);  
+- **stampa inventario**: se trata de un informe estándar para los inventarios;  
+- **stampa lifo**: se trata de un informe con lógica LIFO para los inventarios (a utilizar en conjunto con el uso del indicador **lifo a scatti annuali**).
 
+**lifo a scatti annuali**
 
-**LIFO a scatti annuali**
+El LIFO a escalones anuales ejecutado sin considerar el indicador *da anagrafica articoli* o *area gestionale* funciona de la siguiente manera:
 
-Il LIFO a scatti annuali eseguito senza considerare il flag *Da Anagrafica Articoli* o *Area Gestionale* funziona in questo modo: 
+En el año en curso, es decir, desde la fecha del último cierre hasta la fecha *Inventario Al*, se calcula el saldo y el costo medio.  
 
-Nell’anno in corso, cioè dalla data ultima chiusura alla data *Inventario Al* viene calcolata la giacenza e il costo medio. 
+Para el cálculo del costo medio ponderado se consideran todos los movimientos de artículos con impacto fiscal activo de los registros de almacén con motivo que actualiza el costo medio y de impacto fiscal.
 
-Per il calcolo del costo medio ponderato vengono considerati  tutti i movimenti di articoli con flag interesse fiscale attivo delle registrazioni di magazzino con causale che aggiorna il costo medio e di interesse fiscale.
+Para el cálculo del saldo se consideran todos los movimientos de artículos con impacto fiscal activo de los registros de almacén con motivo de impacto fiscal.
 
-Per il calcolo della giacenza vengono considerati  tutti i movimenti di articoli con flag interesse fiscale attivo delle registrazioni di magazzino con causale di interesse fiscale. 
-
-Ottenuta la giacenza a fine periodo vengono verificati le stratificazioni LIFO nello *Storico di magazzino*, andando a calcolare all’indietro le rimanenza di ogni anno, poi per ogni anno si moltiplica la rimanenza dell’anno per il costo medio dell’anno e sommando i valori di ogni anno della stratificazione si ottiene il costo FIFO di ogni articolo. 
-Se nello *Storico di magazzino* ci sono anni con rimanenza 0 la ricerca delle stratificazioni LIFO si ferma e si valorizza dall’anno stratificato successivo.
+Una vez obtenido el saldo al final del período, se verifican las estratificaciones LIFO en el *Historial de almacén (Storico di magazzino)*, calculando hacia atrás los saldos de cada año; luego, para cada año, se multiplica el saldo del año por el costo medio del año, y al sumar los valores de cada año de la estratificación se obtiene el costo FIFO de cada artículo.  
+Si en el *Historial de almacén (Storico di magazzino)* hay años con saldo 0, la búsqueda de estratificaciones LIFO se detiene y se valora desde el año estratificado siguiente.
 
 :::note Nota
-Per tutti gli anni precedenti all'ultima chiusura di magazzino viene considerata la giacenza a fine anno, senza suddividerla per magazzino.   
-Di conseguenza, per le stampe LIFO e FIFO è possibile applicare il filtro di *raggruppamento per magazzino* solo per l'anno corrente, ovvero per tutte le registrazioni effettuate dopo la data di ultima chiusura del magazzino.
+Para todos los años anteriores al último cierre de almacén, se considera el saldo al final del año, sin desglosarlo por almacén.  
+Por lo tanto, para las impresiones LIFO y FIFO se puede aplicar el filtro de *agrupamiento por almacén* solo para el año corriente, es decir, para todos los registros realizados después de la fecha del último cierre del almacén.
 :::
 
-Facciamo un esempio:
+Hagamos un ejemplo:
 
-la chiusura di magazzino è con data 31/12/2023
-oggi facciamo la stampa inventario valorizzato dell’articolo A che ha giacenza al 23/05/2024 di 170 e costo medio al 23/05/2024 di 3 euro
-Nello storico per l’articolo A troviamo:
+el cierre de almacén es con fecha 31/12/2023  
+hoy hacemos la impresión de inventario valorizado del artículo A que tiene un saldo al 23/05/2024 de 170 y un costo medio al 23/05/2024 de 3 euros.  
+En el historial para el artículo A encontramos:
 
-| Anno | Rimanenza | Costo medio |
+| Año | Saldo | Costo medio |
 | :-- | :-: | :-: |
 | 2020 | 100 | 2 |
 | 2021 |   0 | 0 |
 | 2022 |  60 | 1,5 |
 | 2023 | 100 | 2,5 |         
 
-Il calcolo viene fatto così:
-170 di oggi sono sicuramente 100 del 2023, dei 100 del 2023 60 sono sicuramente del 2022, non possono essere del 2021 perché la giacenza era 0.
-Allora il costo LIFO al 23/05/2024 è:
+El cálculo se realiza así:  
+170 de hoy son seguramente 100 del 2023, de los 100 del 2023, 60 son seguramente del 2022, no pueden ser del 2021 porque el saldo era 0.  
+Entonces, el costo LIFO al 23/05/2024 es:  
 ((60 * 1,5) + (40 * 2,5) +(70 * 3)) /170 = 2,35
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

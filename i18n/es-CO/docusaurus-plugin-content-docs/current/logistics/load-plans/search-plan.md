@@ -1,18 +1,18 @@
 ---
-title: Piani di carico
+title: piani di carico
 sidebar_position: 1
 ---
 
-Nella maschera di **Ricerca piani di carico** è possibile consultare i piani di carico precedentemente inseriti, oltre a creare liste UDC, picking, fatture e DDT a partire dal piano di carico selezionato, mediante i pulsanti presenti nella testata.
+En la máscara de **Búsqueda de planes de carga (Ricerca piani di carico)** es posible consultar los planes de carga previamente ingresados, además de crear listas UDC, picking, facturas y DDT a partir del plan de carga seleccionado, mediante los botones presentes en la cabecera.
 
-*Pulsanti specifici*               
-**Creazione Lista UDC**: crea la Lista UDC a partire dal piano di carico selezionato;            
-**Creazione picking**: crea il picking a partire dal piano di carico selezionato;             
-**Creazione fattura**: crea la fattura UDC a partire dal piano di carico selezionato;              
-**Creazione DDT**: crea il DDT a partire dal piano di carico selezionato.
+*Botones específicos*  
+**creazione lista udc**: crea la lista UDC a partir del plan de carga seleccionado;  
+**creazione picking**: crea el picking a partir del plan de carga seleccionado;  
+**Creación de factura (Creazione fattura)**: crea la factura UDC a partir del plan de carga seleccionado;  
+**creazione ddt**: crea el DDT a partir del plan de carga seleccionado.
 
 
-:::note Ricorda
-Per poter effettuare la *Creazione Picking* dal Piano di carico è necessario aver prima specificato le dimensioni del piano.    
-Le dimesnsioni vengono calcolate in automatico sulla base delle dimensioni, dei pesi e del volume inseriti per ciascun articolo nel tab [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) della sua anagrafica. 
+:::note Recuerda (Ricorda)
+Para poder realizar la *creazione picking* del plan de carga, es necesario haber especificado primero las dimensiones del plan.  
+Las dimensiones se calculan automáticamente en función de las dimensiones, los pesos y el volumen ingresados para cada artículo en la pestaña [Pesos/Dimensiones (Pesi/Dimensioni)](/docs/erp-home/registers/items/create-new-item) de su registro.    
 :::

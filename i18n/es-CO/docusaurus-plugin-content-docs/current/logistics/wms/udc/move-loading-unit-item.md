@@ -1,36 +1,36 @@
 ---
-title: Spostamento articoli tra due unità di carico
+title: Movimiento de artículos entre dos unidades de carga (Spostamento articoli tra due unità di carico)
 sidebar_position: 7
 ---
 
-:::important A cosa serve
-La funzione Spostamento Articoli tra Due Unità di Carico del WMS di Fluentis permette di trasferire facilmente articoli da un'unità di carico di partenza a una di destinazione.     
-Attraverso la scansione dei codici a barre, l'operatore può visualizzare gli articoli contenuti nella prima UDC e, dopo aver selezionato la UDC di destinazione, è in grado di spostare rapidamente le quantità desiderate, rendendo il processo di movimentazione più efficiente.
+:::important ¿Para qué sirve? (A cosa serve)
+La función de Movimiento de Artículos entre Dos Unidades de Carga del WMS de Fluentis permite transferir fácilmente artículos de una unidad de carga de partida a una de destino.  
+A través de la escaneo de códigos de barras, el operador puede visualizar los artículos contenidos en la primera UDC y, después de seleccionar la UDC de destino, puede mover rápidamente las cantidades deseadas, haciendo que el proceso de movimiento sea más eficiente.
 :::  
 
-Alla lettura della prima unità di carico, questa viene inserita come unità di carico di partenza e vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno, con l’indicazione di: *codice articolo*, *quantità*, *lotto* e *descrizione articolo*.        
-La seconda lettura, invece, va ad inserire l'unità di carico di destinazione ed ogni successiva lettura di unità di carico verrà considerata come la nuova destinazione.      
-Lo step successivo è quello di leggere l'articolo da spostare (che in automatico viene flaggato nella griglia sottostante) ed inserire la quantità; anche in questa form se l'articolo è gestito a lotti viene visualizzato anche il relativo campo di inserimento.      
-Dopo di che sarà sufficiente premere il pulsante **Sposta** per effettuare il movimento di scarico dall'unità di carico di partenza e di carico nell'unità di carico di destinazione.           
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
+Al escanear la primera unidad de carga, esta se introduce como unidad de carga de partida y se visualizan en la cuadrícula inferior todos los artículos contenidos en su interior, con la indicación de: *código de artículo*, *cantidad*, *lote* y *descripción del artículo*.  
+La segunda lectura, en cambio, introduce la unidad de carga de destino y cada lectura subsiguiente de unidad de carga se considerará como la nueva destino.  
+El siguiente paso es leer el artículo a mover (que automáticamente se marca en la cuadrícula inferior) e ingresar la cantidad; también en este formulario, si el artículo se gestiona por lotes, se visualizará el campo correspondiente de entrada.  
+Después de eso, basta con presionar el botón **sposta** para realizar el movimiento de descarga de la unidad de carga de partida y de carga en la unidad de carga de destino.  
+El botón **pulisci tutto** permite vaciar el formulario de todos los datos ingresados.  
 
-:::note Regole da tenere presente per il corretto utilizzo della form:
-- Le unità di carico di partenza e arrivo devono essere valide.
-- La unità di carico di partenza deve essere caricata.
-- L'articolo scansionato deve essere all'interno dell'unità di carico di partenza (inclusi eventuali lotti).
-- L'unità di carico destinazione può non essere caricata solo se è vuota o se le quantità di tutti gli articoli al suo interno sono pari a zero; se le quantità degli articoli al suo interno sono maggiori di zero, quella unità di carico deve essere caricata.
-- Non è possibile superare la quantità presenti nell'unità di carico di partenza.
-- Per la creazione del movimento di magazzino viene controllata la disponibilità per l'articolo e il lotto.
-- Le unità di carico di partenza e di destinazione non devono essere contenute in una **Lista di prelievo UDC / Packing list** o in una **Lista di trasferimento UDC**. 
+:::note Reglas a tener en cuenta para el correcto uso del formulario:
+- Las unidades de carga de partida y llegada deben ser válidas.
+- La unidad de carga de partida debe estar cargada.
+- El artículo escaneado debe estar dentro de la unidad de carga de partida (incluidos los posibles lotes).
+- La unidad de carga de destino puede no estar cargada solo si está vacía o si las cantidades de todos los artículos en su interior son iguales a cero; si las cantidades de los artículos en su interior son mayores que cero, esa unidad de carga debe estar cargada.
+- No se puede superar la cantidad presente en la unidad de carga de partida.
+- Para la creación del movimiento de almacén se verifica la disponibilidad del artículo y del lote.
+- Las unidades de carga de partida y de destino no deben estar contenidas en una **Lista de extracción UDC / Packing list** o en una **Lista de transferencia UDC**. 
 :::
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que deben ingresarse en la tabla [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Área | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | MoveLoadingUnitItem |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | MoveLoadingUnitItem |
 
-I parametri sono inseriti due volte poiché la form utilizza una causale di scarico dall'unità di carico di partenza e una di carico nell'unità di carico di destinazione.
+Los parámetros se ingresan dos veces porque el formulario utiliza una causal de descarga desde la unidad de carga de partida y una de carga en la unidad de carga de destino.
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barra que deben leerse en el campo **codice barcode**, consulte la página relacionada con el [Tokenizador de códigos de barra (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

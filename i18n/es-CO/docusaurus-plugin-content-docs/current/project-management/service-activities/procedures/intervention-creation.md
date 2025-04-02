@@ -1,17 +1,16 @@
 ---
-title: Creazione Interventi da Richieste o Interventi Pianificati
+title: creazione interventi da richieste o interventi pianificati
 sidebar_position: 2
 ---
 
-Questa procedura permette di creare gli Interventi dalle Richieste o dagli Interventi Pianificati. 
+Este procedimiento permite crear las Intervenciones a partir de las Solicitudes o de las Intervenciones Planificadas.
 
-I pulsanti specifici della ribbon bar sono:
+Los botones específicos de la barra de herramientas son:
 
-![](/img/neutral/common/select-all.png) Seleziona tutti: seleziona tutte le righe della griglia;
+![](/img/neutral/common/select-all.png) Seleccionar todo (Seleziona tutti): selecciona todas las filas de la cuadrícula;  
 
-![](/img/neutral/common/deselect.png) Deseleziona tutti: deseleziona tutte le righe della griglia;
+![](/img/neutral/common/deselect.png) Deseleccionar todo (Deseleziona tutti): deselecciona todas las filas de la cuadrícula;  
 
-![](/img/neutral/common/intervention-search.png) Ricerca interventi: apre la maschera di Ricerca interventi per controllare i risultati ottenuti.
+![](/img/neutral/common/intervention-search.png) Buscar intervenciones (Ricerca interventi): abre la máscara de Búsqueda de intervenciones para verificar los resultados obtenidos.
 
-Dopo aver selezionato le richieste o gli interventi pianificati da valorizzare, basterà premere  **Creazione** nella ribbon bar per creare l’**Intervento**.
-
+Después de haber seleccionado las solicitudes o las intervenciones planificadas que se deben valorar, simplemente hay que presionar **creazione** en la barra de herramientas para crear la **intervento**.

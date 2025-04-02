@@ -1,23 +1,15 @@
 ---
-title: Operazioni economiche
+title: operazioni economiche
 sidebar_position: 3
 ---
 
-Nella scheda 'Operazioni economiche' è possibile memorizzare i costi di gestione del cespite che non vanno a libro cespiti (es. le schede carburanti di una macchina, le manutenzioni ordinarie degli impianti ecc.): normalmente non viene utilizzata, anche perché richiederebbe una causale contabile specifica di movimentazione e complicherebbe un po' la rilevazione di contabilità.
+En la pestaña 'operazioni economiche (Operazioni economiche)' es posible almacenar los costos de gestión del activo que no van al libro de activos (por ejemplo, las tarjetas de combustible de un automóvil, el mantenimiento ordinario de las instalaciones, etc.): normalmente no se utiliza, también porque requeriría una causa contable específica de movimiento y complicaría un poco la detección de contabilidad.
 
-Vedere anche l'articolo corrispondente nella sezione **[Registrazioni contabili](/docs/finance-area/ledger-records/records/ledger-record).**
-
-
+Ver también el artículo correspondiente en la sección **[Registros contables (Registrazioni contabili)](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Nuova operazione economica | Attiva il cursore nella prima griglia delle operazioni economiche. |
-| Cancella | Cancella l'operazione economica selezionata nella griglia. |
-
-
-
-
-
-
+| Nueva operación económica (Nuova operazione economica) | Activa el cursor en la primera cuadrícula de las operaciones económicas. |
+| Eliminar (Cancella) | Elimina la operación económica seleccionada en la cuadrícula. |

@@ -1,68 +1,68 @@
 ---
-title: Nuova Newsletter
+title: Nueva Newsletter (Nuova Newsletter)
 sidebar_position: 2
 ---
 
-La procedura di creazione di una nuova **Newsletter** permette di andare a definire quali saranno le caratteristiche della Newsletter che verrà inviata, dal Template alle liste di distribuzione.
+El procedimiento para crear una nueva **newsletter** permite definir cuáles serán las características de la Newsletter que se enviará, desde la Plantilla (Template) hasta las listas de distribución.
 
-La form è divisa in due parti.
+El formulario está dividido en dos partes.
 
-Nella parte superiore sono presenti i seguenti campi:
+En la parte superior se encuentran los siguientes campos:
 
-**Titolo**: corrisponde al codice della Newsletter;
+**titolo**: corresponde al código de la Newsletter;  
 
-**Descrizione**: campo alfanumerico per indicare nel dettaglio il significato della Newsletter;
+**descrizione**: campo alfanumérico para indicar en detalle el significado de la Newsletter;  
 
-**Template**: serve per selezionare il [Template](/docs/crm/budget-marketing-automation/template/new-template);
+**template**: sirve para seleccionar la [Plantilla (Template)](/docs/crm/budget-marketing-automation/template/new-template);  
 
-**Autore**: viene indicato l’utente che ha creato la newsletter;
+**autore**: se indica el usuario que ha creado la Newsletter;  
 
-**Da**: in questo campo deve essere indicato l’indirizzo mail da cui risulterà inviata la Newsletter per chi la riceverà;
+**da**: en este campo debe indicarse la dirección de correo electrónico desde la cual se enviará la Newsletter a los destinatarios;  
 
-**Data creazione**: corrisponde alla data di creazione della newsletter;
+**data creazione**: corresponde a la fecha de creación de la Newsletter;  
 
-**Data e ora programmata**: corrispondono alla data e ora programmati per l’invio della newsletter (campo puramente indicativo);
+**data e ora programmata**: corresponden a la fecha y hora programadas para el envío de la Newsletter (campo puramente indicativo);  
 
-**Soggetto**: corrisponde a quello che viene solitamente chiamato Oggetto della mail;
+**soggetto**: corresponde a lo que normalmente se llama el Asunto del correo;  
 
-**Schedulata**: questo flag serve per indicare che l’invio della newsletter è stato schedulato (campo puramente indicativo);
+**schedulata**: este indicador sirve para indicar que el envío de la Newsletter ha sido programado (campo puramente indicativo);  
 
-**Inviati**: questo flag indica che la Newsletter è stata inviata.
+**inviati**: este indicador indica que la Newsletter ha sido enviada. 
 
 ![](/img/it-it/applications/crm/newsletter/new-newsletter.png)
 
-Nella parte inferiore della form devono essere invece selezionate le liste di distribuzione contenenti i soggetti ed i relativi indirizzi mail a cui dovrà essere inviata la newsletter.
+En la parte inferior del formulario se deben seleccionar las listas de distribución que contienen los sujetos y las respectivas direcciones de correo electrónico a las que se debe enviar la Newsletter.
 
 ![](/img/it-it/applications/crm/newsletter/distribution-list.png)
 
-Premendo sul pulsante ![](/img/neutral/common/plus.png) alla sinistra della singola lista sarà possibile visualizzare i contatti appartenenti a tale lista:
+Al presionar el botón ![](/img/neutral/common/plus.png) a la izquierda de la lista individual, será posible visualizar los contactos pertenecientes a dicha lista:
 
 ![](/img/it-it/applications/crm/newsletter/contacts.png)
 
-Per inviare la Newsletter, una volta indicati i parametri mostrati in precedenza, è necessario premere sul pulsante Invia ![](/img/neutral/common/send.png) presente sulla Ribbon bar.
-In tal modo si aprirà la form effettiva di invio della Newsletter, che presenta i tab **Home**, **Insert** e **Merge Data**, già presenti nella sezione Template Documento (per maggiori informazioni a riguardo fare riferimento alla sezione [Template](/docs/crm/budget-marketing-automation/template/new-template)), oltre alla tab **Email** che presenta le seguenti funzioni:
+Para enviar la Newsletter, una vez indicados los parámetros mostrados anteriormente, es necesario presionar el botón Enviar ![](/img/neutral/common/send.png) presente en la barra de Ribbon.  
+De este modo, se abrirá el formulario real de envío de la Newsletter, que presenta las pestañas **home**, **Insertar (Insert)** y **Combinar Datos (Merge Data)**, ya presentes en la sección Plantilla de Documento (Template Document) (para más información al respecto, consulte la sección [Plantilla (Template)](/docs/crm/budget-marketing-automation/template/new-template)), además de la pestaña **email** que presenta las siguientes funciones:
 
-**Stampa** Pulsante per effettuare la stampa fisica della newsletter;  
-**Anteprima di stampa** Pulsante per effettuare l’anteprima di stampa della newsletter;  
-**Salva** Pulsante per salvare le modifiche alla Newsletter;  
-**Invia** Pulsante per inviare la Newsletter;  
-**Undo** Pulsante per cancellare l’ultima modifica alla newsletter;  
-**Redo** Pulsante per ripristinare l’ultima modifica alla newsletter  
+**stampa**: botón para realizar la impresión física de la Newsletter;  
+**anteprima di stampa**: botón para generar una vista previa de impresión de la Newsletter;  
+**salva**: botón para guardar los cambios en la Newsletter;  
+**invia**: botón para enviar la Newsletter;  
+**undo**: botón para cancelar la última modificación a la Newsletter;  
+**redo**: botón para restaurar la última modificación a la Newsletter.  
 
 ![](/img/it-it/applications/crm/newsletter/email.png)
 
-Nella sezione sottostante vengono sono presenti alcuni campi, alcuni dei quali  riportati dalla form precedente:
+En la sección inferior se encuentran algunos campos, algunos de los cuales están replicados del formulario anterior:
 
-**Destinatari**: il campo permette di indicare i destinatari della mail selezionandoli tra i riferimenti dei contatti CRM o tra gli utenti di Fluentis;
+**destinatari**: el campo permite indicar los destinatarios del correo seleccionándolos entre los contactos del CRM o entre los usuarios de Fluentis;  
 
-**Soggetto**: corrisponde a quello che viene solitamente chiamato Oggetto della mail;
+**soggetto**: corresponde a lo que normalmente se llama el Asunto del correo;  
 
-**Mail Template**: serve per selezionare il [Template](/docs/crm/budget-marketing-automation/template/new-template);
+**mail template**: sirve para seleccionar la [Plantilla (Template)](/docs/crm/budget-marketing-automation/template/new-template);  
 
-**Cc**: serve per indicare gli indirizzi mail che dovranno ricevere la mail in copia conoscenza;
+**Cc**: sirve para indicar las direcciones de correo electrónico que deben recibir el correo en copia;  
 
-**Bcc**: serve per indicare gli indirizzi mail che dovranno ricevere la mail in conoscenza nascosta. Fluentis compila automaticamente questo campo con gli indirizzi mail dei contatti CRM di Fluentis in modo tale che ogni soggetto che riceve la newsletter non veda gli indirizzi mail degli altri destinatari;
+**Bcc**: sirve para indicar las direcciones de correo electrónico que deben recibir el correo en copia oculta. Fluentis completa automáticamente este campo con las direcciones de correo de los contactos del CRM de Fluentis, de modo que cada destinatario que recibe la Newsletter no vea las direcciones de correo de los otros destinatarios;  
 
-**Embedded Image**: mettendo questo flag le eventuali immagini presenti nel template non verranno inseriti come allegati alla mail creata ma come veri e propri elementi della mail;
+**embedded image**: al marcar este indicador, las imágenes presentes en la plantilla no se adjuntarán como archivos adjuntos al correo creado, sino como verdaderos elementos del correo;  
 
-**Allegati**: vengono mostrati i file che verranno allegati alla Newsletter.
+**allegati**: se muestran los archivos que se adjuntarán a la Newsletter.

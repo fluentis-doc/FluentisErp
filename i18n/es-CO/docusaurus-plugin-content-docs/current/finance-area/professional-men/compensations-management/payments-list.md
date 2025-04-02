@@ -1,35 +1,23 @@
 ---
-title: Lista pagamento
+title: Lista de pagos (Lista pagamento)
 sidebar_position: 3
 ---
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/payments-list/image01.png)
 
-**Griglia superiore**: presenta l'impostazione le condizioni di pagamento così come proposte tramite l'anagrafica agente o fornitore di riferimento, oppure inseribili o modificabili direttamente in questa form. Sono inoltre presenti i campi per inserire la Banca d'appoggio del percipiente (in caso di pagamento tramite bonifico) oppure della nostra società (in caso ad esempio di pagamento Ri.Ba.).
+**Cuadrícula superior (Griglia superiore)**: presenta la configuración de las condiciones de pago tal como se proponen a través del registro del agente o proveedor de referencia, o que pueden ser ingresadas o modificadas directamente en este formulario. También hay campos para ingresar el Banco de apoyo del beneficiario (en caso de pago mediante transferencia) o de nuestra empresa (en caso, por ejemplo, de pago Ri.Ba.).
 
+**Cuadrícula inferior (Griglia inferiore)**: presenta la lista de plazos a pagar calculados en base a las condiciones de la cuadrícula superior.
 
+La partida que se abrirá al guardar la compensación (también en forma de aviso de factura) puede ser bloqueada para el pago activando el **indicador No pagable (flag Non pagabile)** y se puede agregar una nota relacionada.
 
-**Griglia inferiore**: presenta la lista delle scadenze da pagare calcolate in base alle condizioni della griglia superiore.
+El funcionamiento es del todo similar a la cuadrícula presente en las **[registraciones de primera nota (registrazioni di prima nota)](/docs/finance-area/ledger-records/records/ledger-record)** a la que se remite.
 
-La partita che verrà aperta al salvataggio del compenso (anche sotto forma di preavviso di parcella) può essere bloccata per il pagamento attivando il **flag Non pagabile** e può essere aggiunta una nota relativa.
+Para el módulo de beneficiarios, es obligatorio que se haya cargado al menos un plazo; de lo contrario, no será posible pagar la compensación (y por lo tanto registrar la retención) ni contabilizar la compensación.
 
-Il funzionamento è del tutto simile alla griglia presente nelle ** [registrazioni di prima nota](/docs/finance-area/ledger-records/records/ledger-record) ** a cui si rinvia.
-
- 
-
-Per il modulo percipienti è obbligatorio che sia stata caricata almeno una scadenza, altrimenti non sarà possibile pagare il compenso (e rilevare la ritenuta quindi) né contabilizzare il compenso.
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Nuovo pagamento | Inserisce il cursore nell'inserimento di una nuova riga condizione di pagamento nella griglia superiore. |
-| Cancella pagamenti | Cancella i pagamenti selezionati nella prima griglia superiore. |
-| Nuove scadenze | Inserisce il cursore nell'inserimento di una nuova riga scadenze nella griglia inferiore. |
-| Cancella scadenze | Cancella le scadenze selezionate nella griglia inferiore. |
-
-
-
-
-
-
+| Nuevo pago (Nuovo pagamento) | Inserta el cursor en la entrada de una nueva fila de condición de pago en la cuadrícula superior. |
+| Eliminar pagos (Cancella pagamenti) | Elimina los pagos seleccionados en la primera cuadrícula superior. |
+| Nuevos plazos (Nuove scadenze) | Inserta el cursor en la entrada de una nueva fila de plazos en la cuadrícula inferior. |
+| Eliminar plazos (Cancella scadenze) | Elimina los plazos seleccionados en la cuadrícula inferior. |

@@ -1,50 +1,48 @@
 ---
-title: Gestione Royalties
+title: Gestión de Regalías (Gestione Royalties)
 sidebar_position: 9
 ---
 
-La gestione delle royalties è simile a quella delle provvigioni agenti, della quale condivide in parte le impostazioni.
+La gestión de las regalías es similar a la de las comisiones de agentes, de la cual comparte en parte las configuraciones.
 
-### Configurazione anagrafica articoli
+### Configuración de registro de artículos (Configurazione anagrafica articoli)
 
-Le anagrafiche degli articoli che sono soggetti a diritti d’autore/royalties devono avere il relativo flag (*Diritti d'autore*) nella scheda **Generalità**
+Los registros de los artículos que están sujetos a derechos de autor/regalías deben tener el correspondiente indicador (*Derechos de autor*) en la pestaña **Generalidades**.
 
-All’inserimento dell' articolo contrassegnato nei documenti di vendita, solo per gli articoli che hanno questo flag Fluentis procederà ad identificare il relativo designer (agente) che detiene i diritti d’autore sullo stesso.
+Al ingresar el artículo marcado en los documentos de venta, solo para los artículos que tienen este indicador, Fluentis procederá a identificar al diseñador correspondiente (agente) que posee los derechos de autor sobre el mismo.
 
-### Configurazione anagrafica agente
+### Configuración de registro de agente (Configurazione anagrafica agente)
 
-La configurazione del soggetto che detiene i diritti d’autore sui vari articoli si effettua tramite la definizione di una anagrafica di tipo agente. 
+La configuración del sujeto que posee los derechos de autor sobre los diferentes artículos se realiza mediante la definición de un registro de tipo agente.
 
-Normalmente questi soggetti non sono soggetti a ritenuta d'acconto né a contribuzione Enasarco, pertanto sarà necessario creare una [**Categoria agenti**](/docs/configurations/tables/sales/agent-category/) e un [**Tipo ritenuta**](/docs/configurations/tables/finance/withholding-tax-types/) specifici che non prevedano né contribuzione né percentuali di ritenute.
+Normalmente, estos sujetos no están sujetos a retención de impuestos ni a contribuciones de Enasarco, por lo tanto, será necesario crear una [**Categoría de agentes (Categoria agenti)**](/docs/configurations/tables/sales/agent-category/) y un [**tipo ritenuta**](/docs/configurations/tables/finance/withholding-tax-types/) específicos que no prevean ni contribuciones ni porcentajes de retenciones.
 
-Nella scheda **Liquidazione**  indicheremo il tipo ritenuta (da creare eventualmente o selezionare, come detto sopra, un tipo con percentuale zero) e poi il criterio di maturazione della provvigione come avviene per l'agente.
+En la pestaña **liquidazione** indicaremos el tipo de retención (que se debe crear o seleccionar, como se mencionó anteriormente, un tipo con porcentaje cero) y luego el criterio de maduración de la comisión como ocurre para el agente.
 
-
-:::tip ATTENZIONE
-La specificità dell’impostazione si trova all’interno della scheda **Provv. dirette**, dove andremo a codificare il tipo di provvigione **23 – Royalties**
+:::tip ATENCIÓN
+La especificidad de la configuración se encuentra dentro de la pestaña **provv. dirette**, donde codificaremos el tipo de comisión **23 – Regalías (Royalties)**.
 :::
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/tipo23.png)
 
-Entrando poi nei dettagli di questa tipologia (tramite il bottone **Dettaglio percentuali selezionate**), sarà possibile seguire due strade differenti:
+Al entrar en los detalles de este tipo (a través del botón **dettaglio percentuali selezionate**), será posible seguir dos caminos diferentes:
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/dettaglio.png)
 
-- Inserire la lista dettagliata degli articoli sottoposti a diritti d’autore (Fluentis non consentirà di inserire articoli che non abbiano questo flag inserito) 
+- Ingresar la lista detallada de los artículos sujetos a derechos de autor (Fluentis no permitirá ingresar artículos que no tengan este indicador activado).
 
-- oppure la linea prodotto che contiene gli articoli sottoposti a royalties, nell’ipotesi che la linea prodotto identifichi il design (o l'elemento) soggetto a diritto: **saranno comunque solo gli articoli che hanno il flag royalties ad essere soggetti alla relativa percentuale**, non è sufficiente che siano legati alla linea impostata in anagrafica agente.
+- O bien, la línea de producto que contiene los artículos sujetos a regalías, en la hipótesis de que la línea de producto identifique el diseño (o el elemento) sujeto a derecho: **solo los artículos que tienen el indicador de regalías estarán sujetos al porcentaje correspondiente**, no es suficiente que estén relacionados con la línea establecida en el registro del agente.
 
-:::danger ATTENZIONE
-Non sarà consentito inserire nell’agente X un articolo (o una linea) se lo stesso articolo è gestito in altra anagrafica agente (come articolo o come linea di appartenenza): non è consentito, infatti, che sullo stesso articolo maturino royalties più designer.
+:::danger ATENCIÓN
+No se permitirá ingresar en el agente X un artículo (o una línea) si el mismo artículo es gestionado en otro registro de agente (como artículo o como línea de pertenencia): no se permite, de hecho, que sobre el mismo artículo maduren regalías más de un diseñador.
 :::
 
-### Logica di utilizzo
+### Lógica de uso (Logica di utilizzo)
 
-Eseguite le impostazioni in anagrafica articoli e nell’agente, la logica di funzionamento è la seguente: all’inserimento di un articolo nei documenti di vendita, Fluentis verificherà se è soggetto a royalties o meno, nel primo caso andrà a ricercare qual è l’agente che ha le impostazioni (specifiche o per la linea articolo relativa) provvigionali nei dettagli del tipo ’23 - Royalties’ e aggiungerà la conseguente riga provvigionale nel documento.
+Una vez realizadas las configuraciones en el registro de artículos y en el agente, la lógica de funcionamiento es la siguiente: al ingresar un artículo en los documentos de venta, Fluentis verificará si está sujeto a regalías o no; en el primer caso, buscará cuál es el agente que tiene las configuraciones (específicas o para la línea de artículo correspondiente) de comisiones en los detalles del tipo '23 - Regalías (Royalties)' y añadirá la correspondiente línea de comisión en el documento.
 
-La logica a valle di questa valorizzazione sarà la stessa di un agente qualsiasi, con le stampe riepilogative agenti e i calcoli delle liquidazioni a maturazione. 
+La lógica posterior a esta valorización será la misma que la de cualquier agente, con los informes resumidos de agentes y cálculos de liquidaciones a maduración. 
 
 :::tip Nota
-La differenza sostanziale tra un agente e un titolare di diritti d’autore, è che per il secondo non è necessario il suo inserimento in ogni anagrafica cliente per far si che Fluentis identifichi la sua percentuale da applicare alla vendita, cosa invece obbligatoria per gli agenti ordinari.
+La diferencia sustancial entre un agente y un titular de derechos de autor es que, para el segundo, no es necesario su ingreso en cada registro de cliente para que Fluentis identifique su porcentaje a aplicar a la venta, lo cual sí es obligatorio para los agentes ordinarios.
 :::
-

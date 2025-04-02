@@ -1,204 +1,144 @@
 ---
-title: Spesometro 2017 trimestrale
+title: Spesómetro 2017 trimestral (Spesometro 2017 trimestrale)
 sidebar_position: 8
 ---
 
-Da questa form è possibile ricercare le elaborazioni dello Spesometro trimestrale già elaborate e presenti nella base dati, oppure procedere alla creazione di un nuovo Spesometro.
+Desde este formulario es posible buscar las elaboraciones del Spesómetro trimestral ya procesadas y presentes en la base de datos, o proceder a la creación de un nuevo Spesómetro.
 
-PREMESSA:
+PREMISAS:
 
-L'obbligo dello Spesometro è stato introdotto dall'art. 21 del DL 31 maggio 2010, n. 78, che ha previsto l'invio telematico di tutte le operazioni attive e passive rilevanti ai fini Iva (cessioni ed acquisti di beni, prestazioni di servizi rese e ricevute). 
+La obligación del Spesómetro fue introducida por el art. 21 del DL 31 de mayo de 2010, n. 78, que previó el envío telemático de todas las operaciones activas y pasivas relevantes a efectos IVA (ventas y compras de bienes, prestaciones de servicios realizadas y recibidas).
 
-  
+Desde 2017, el decreto 193/2016 ha introducido la obligación de comunicación trimestral.
 
-Dal 2017 il decreto 193/2016 ha introdotto l'obbligo di comunicazione trimestrale.
+**Documentos que no entran en el spesómetro trimestral**:
 
-**Documenti che non rientrano nello spesometro trimestrale**:
+- No deben comunicarse los datos de las facturas electrónicas, emitidas y recibidas, que hayan pasado a través del Sistema de Intercambio (SdI). En caso de que no todas las facturas emitidas y recibidas transiten por el SdI, el contribuyente podrá limitarse a enviar telemáticamente los datos de las otras facturas, o, si le resulta más conveniente, podrá enviar los datos relativos a todas las facturas, incluidas las electrónicas;
 
-- Non devono essere comunicati i dati delle fatture elettroniche, emesse e ricevute, che sono transitate mediante il Sistema di Interscambio (SdI). Nel caso in cui non tutte le fatture emesse e ricevute transitino dallo SdI il contribuente potrà limitarsi a inviare telematicamente i dati delle altre fatture, oppure, nel caso fosse per lui più comodo, potrà inviare comunque i dati relativi a tutte le fatture, comprese quelle elettroniche;
+- No se deben comunicar los datos contenidos en documentos diferentes a las facturas (como por ejemplo los datos de las hojas de combustible).
 
-- Non vanno comunicati i dati contenuti in documenti diversi dalle fatture (come ad esempio i dati delle schede carburante).
+ACTIVIDADES PRELIMINARES:
 
-ATTIVITA' PRELIMINARI:
+Para proceder con la correcta generación del archivo (de tipo xml para cargar en el portal correspondiente para el intercambio con la Agencia de Ingresos) es necesario preparar algunos archivos básicos dentro de las tablas de Fluentis.
 
-Al fine di procedere con la corretta generazione del file (di tipo xml da caricare sull'apposito portale per l'interscambio con l'Agenzia delle Entrate) è necessario predisporre alcuni archivi di base all'interno delle tabelle di Fluentis. 
+- ** [Tipos de Documento](/docs/configurations/tables/general-settings/document-types) **
 
- 
-
-- ** [Tipi Documento](/docs/configurations/tables/general-settings/document-types) **
-
-- ** [Aliquote/Modalità Iva ](/docs/configurations/tables/finance/vat-rates) **
+- ** [Tipos de IVA/Modalidades ](/docs/configurations/tables/finance/vat-rates) **
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image01.png)
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image02.png)
 
-All'interno delle tabelle di cui sopra è necessario, in particolare, gestire i campi **Codice P.A.** (i medesimi che vengono gestiti per la fatturazione elettronica nei confronti delle Pubbliche Amministrazioni - trattandosi di un sistema di interscambio similare).
+Dentro de las tablas mencionadas es necesario, en particular, gestionar los campos **Código P.A.** (los mismos que se gestionan para la facturación electrónica a las Administraciones Públicas - tratándose de un sistema de intercambio similar).
 
-La codifica da adottare è stata pubblicata dall'Agenzia delle Entrate nell'ambito della documentazione tecnica per la creazione del file telematico e la riportiamo di seguito:
+La codificación a adoptar ha sido publicada por la Agencia de Ingresos en la documentación técnica para la creación del archivo telemático y se presenta a continuación:
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image03.png)
 
-INDICAZIONI OPERATIVE:
+INDICACIONES OPERATIVAS:
 
- 
+**Todas las operaciones que transitan por movimientos de IVA se incluyen en la declaración: si es necesario (p. ej.: hojas de combustible), estas pueden ser eliminadas manualmente de la declaración.**
 
-**Tutte le operazioni che transitano per movimenti iva sono inserite nella dichiarazione: in caso sia necessario (es.: schede carburanti), queste possono essere cancellate dalla dichiarazione manualmente.**
+Las facturas intracomunitarias se incluirán automáticamente, en función del tipo de movimiento de IVA de la causa utilizada, con código de documento TD10 (las notas de crédito intracomunitarias mantienen código TD04): si se trata de servicios, será necesario intervenir en la línea de la declaración con una corrección manual.
 
-Le fatture intracomunitarie saranno inserite automaticamente, sulla base del tipo movimento IVA della causale utilizzata, con codice documento TD10 (le note di credito intracomunitarie restano con codice TD04): in caso siano servizi sarà necessario intervenire nella riga della dichiarazione con una rettifica manuale. 
+Las tasas de IVA utilizadas en las compras en reverse charge, desde el año 2021, ya no deben enviarse con código N6 y, por lo tanto, ya no se completan automáticamente con este código de exención (el automatismo permanece activo para los años anteriores): en este caso, sin embargo, el código de exención está disponible en el procedimiento para modificaciones manuales.
 
- 
+Los códigos relativos a la exigibilidad del IVA ([I] IVA a exigibilidad inmediata, [D] IVA a exigibilidad diferida, [S] IVA con escisión de pagos (split payment)), son asignados automáticamente por el tipo de movimiento de IVA de la causa contable.
 
-Le aliquote iva utilizzate negli acquisti in reverse charge, dall'anno 2021, non vanno più inviate con codice N6 e quindi non vengono più automaticamente compilate con questo codice di esenzione (l'automatismo permare attivo per gli anni precedenti): anche in questo caso, comunque, il codice d'esenzione è disponibile nella procedura per modifiche manuali. 
+Los datos de la deducibilidad/deducibilidad del IVA indicado, siempre indicados como no obligatorios en el trazado, no son gestionados.
 
- 
+PROCEDIMIENTO DE CREACIÓN:
 
-I codici relativi all'esigibilità iva ([I] iva ad esigibilità immediata, [D] iva ad esigibilità differita, [S] iva con scissione dei pagamenti (split payment)), sono assegnati automaticamente dal tipo di movimento IVA della causale contabile. 
+**Datos de encabezado**:
 
- 
+Indicar el año y el trimestre para el cual generar el archivo.
 
-I dati della detraibilità/deducibilità dell'iva indicata, indicati sempre come non obbligatori nel tracciato, non sono gestiti. 
+Los demás campos de la cabecera deben ser valorados solo si el sujeto obligado a la comunicación de los datos de la factura no coincide con el sujeto pasivo de IVA al que se refieren los datos.
 
- 
+NO deben ser valorados si el sujeto transmisor:
 
-PROCEDURA DI CREAZIONE:
+- coincide con el sujeto de IVA al que se refieren los datos;
 
-**Dati di testata**:
+- está vinculado por contrato con el sujeto de IVA al que se refieren los datos;
 
-Indicare l'anno e il trimestre per il quale generare il file.
+- es un intermediario.
 
- 
-
-Gli altri campi della tstata  vanno valorizzati solo se il soggetto obbligato alla comunicazione dei dati fattura non coincide con il soggetto passivo IVA al quale i dati si riferiscono.
-
-NON devono essere valorizzati se il soggetto trasmittente:
-
- 
-
-- coincide  con il soggetto IVA al quale i dati si riferiscono;
-
-- è legato da vincolo di incarico con il soggetto IVA al quale i dati si riferiscono;
-
-- è un intermediario. 
-
- 
-
-**Percorso file:** permette di specificare un percorso locale per il salvataggio del file da inviare telematicamente. Il file verrà comunque salvato nel documentale di Fluentis e sarà possibile scaricarne una copia sul pc locale.
+**Ruta del archivo:** permite especificar una ruta local para el guardar el archivo que se enviará telemáticamente. El archivo se guardará en los documentos de Fluentis y será posible descargar una copia en el PC local.
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image04.png)
 
-**Dati Fatture**:
+**Datos de Facturas**:
 
-Premere il pulsante **Calcola** nella ribbon bar per riprendere i dati iva del trimestre, che saranno suddivisi nella sezione delle fatture emesse e in quelle ricevute.
+Pulse el botón **Calcular** en la barra de herramientas para recuperar los datos de IVA del trimestre, que se dividirán en la sección de facturas emitidas y en las recibidas.
 
-In questa fase, il sistema provvederà a verificare se sono presenti più documenti di quanti il ministero ha previsto che se ne possano inserire in ogni file (1000 clienti e 1000 fatture per ognuno per le emesse, 1000 fornitori e 1000 fatture per ognuno per le ricevute). 
+En esta fase, el sistema comprobará si hay más documentos de los que el ministerio ha previsto que se puedan incluir en cada archivo (1000 clientes y 1000 facturas por cada uno para las emitidas, 1000 proveedores y 1000 facturas por cada uno para las recibidas).
 
- 
+Si se supera este límite, Fluentis avisará al usuario de que será necesario crear otra declaración para incluir los documentos restantes (se pueden enviar N archivos).
 
-Nel caso in cui tale limite venga superato, Fluentis provvederà ad avvisare l'utente che sarà necessario creare un'altra dichiarazione per inserire i rimanenti documenti (si possono inviare N file).  
+Además, se codificará el nombre del archivo según la nomenclatura prevista (campos Nombre de archivo y No. Progresivo).
 
- 
+El campo "Identificador de archivo" sirve para almacenar en el sistema el recibo que el sistema telemático del ministerio devolverá: una vez almacenado, esta sección no será más editable.
 
-Inoltre, verrà già codificato il nome file secondo la nomenclatura prevista (campi Nome file e No. Progressivo).  
-
- 
-
-Il campo “Identificativo file” serve per memorizzare a sistema la ricevuta che il sistema telematico del ministero restituirà: una volta memorizzato tale campo, la sezione non sarà più editabile. 
-
- 
-
-Visto che è possibile indicare fino a 1000 documenti per ogni controparte, le righe vengono numerate progressivamente in ordine di partita iva della controparte, non essendo di alcuna rilevanza la protocollazione dei registri iva originari.
+Dado que es posible indicar hasta 1000 documentos por cada contraparte, las líneas se numeran progresivamente en orden de número de IVA de la contraparte, no siendo relevante la numeración de los registros de IVA originales.
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image05.png)
 
-**SEZIONE DTE / DTR (fatture emesse / ricevute)**
+**SECCIÓN DTE / DTR (facturas emitidas / recibidas)**
 
- 
+Los datos a enviar para la sección DTE y los clientes son los siguientes (desde 2018): 
 
-I dati da inviare per la sezione DTE e i clienti sono i seguenti (dal 2018): 
+Código de país de la partida IVA (editable en la cuadrícula)
 
- 
+Partida IVA (o alternativamente el código fiscal) (partida IVA editable en la cuadrícula)
 
-Codice nazione della partita iva (editabile in griglia)
+El subcuenta de referencia (y la respectiva registración conectada) son modificables en la cuadrícula
 
-Partita iva (o in alternativa il codice fiscale) (partita iva editabile in griglia)
+Para cada documento, se deben indicar: 
 
-Il sottoconto di riferimento (e la relativa anagrafica collegata) sono modificabili in griglia
+El código del tipo de documento (recuperado de la tabla Tipos de documento pero editable en la cuadrícula)
 
- 
+La fecha y el número del documento de venta (editables en la cuadrícula) 
 
-Per ogni documento, sono da indicare: 
+En la cuadrícula inferior se indican los datos de IVA de la registración, se deben indicar: 
 
- 
+Base imponible
 
-Il codice del tipo documento (ripreso dalla tabella Tipi documento ma editabile in griglia)
+Importe IVA
 
-La data e il numero del documento di vendita (editabili in griglia) 
+Porcentaje IVA
 
- 
+Código de exención (obligatorio en caso de no haber IVA) 
 
-Nella griglia in basso vengono indicati i dati iva della registrazione, si devono indicare: 
+En esta sección, los datos son detallados, en el archivo serán agrupados por porcentaje/código de exención.
 
- 
+**RECLAMACIONES/ANULACIONES**
 
-Imponibile
+En caso de que sea necesario enviar una rectificación para un documento ya enviado, será necesario crear una nueva declaración: no se permite incluir, en un archivo, más de una rectificación o anulación (es decir, una rectificación de DTE en su archivo, una rectificación de DTR en su archivo, una anulación en la sección ANN), por lo que será necesario crear N declaraciones.
 
-Importo iva
+Para crear una rectificación de una registración ya enviada, por lo tanto, es suficiente con crear una nueva declaración y utilizar el botón ‘Inserción manual de una rectificación’ para buscar las registraciones ya enviadas para el trimestre indicado.
 
-Percentuale iva
+![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image06.png)
 
-Codice di esenzione (obbligatorio nel caso non ci sia iva) 
-
- 
-
-In questa sezione i dati sono dettagliati, nel file saranno raggruppati per percentuale/codice esenzione.
-
-**RETTIFICHE/ANNULLAMENTI**
-
- 
-
-Nel caso in cui sia necessario inviare una rettifica per un documento già inviato, sarà necessario creare una nuova dichiarazione: non è consentito inserire, in un file, più di una rettifica o annullamento (cioè una rettifica di DTE nel suo file, una rettifica di DTR nel suo file, un annullamento nella sezione ANN), per cui sarà necessario creare N dichiarazioni. 
-
- 
-
-Per creare una rettifica di una registrazione già inviata, quindi, è sufficiente creare una nuova dichiarazione e utilizzare il pulsante ‘Inserimento manuale di una rettifica' per andare alla ricerca delle registrazioni già inviate per il trimestre indicato. 
-
- ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image06.png)
-
-
-
- Una volta selezionato da questa ricerca, Fluentis riporterà la riga nella dichiarazione valorizzando nella stessa anche il campo dell'identificativo file e il numero progressivo all'interno del dichiarativo:
+Una vez seleccionado de esta búsqueda, Fluentis devolverá la línea en la declaración valorizando en la misma también el campo del identificador de archivo y el número progresivo dentro de la declaración:
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image07.png)
 
-E' comunque possibile valorizzare questi dati manualmente e/o modificarli. La sezione dell'annullamento prevede i soli dati dell'identificativo file e numero da annullare come di seguito evidenziato:
+De todos modos, es posible valorar estos datos manualmente y/o modificarlos. La sección de anulación solo requiere los datos del identificador de archivo y número a anular, como se resalta a continuación:
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image08.png)
 
-**CREAZIONE DEL FILE**
+**CREACIÓN DEL ARCHIVO**
 
- 
-
-Una volta completata la dichiarazione del trimestre, sarà possibile procedere alla creazione del file attraverso il pulsante **Crea file**
+Una vez completada la declaración del trimestre, será posible proceder a la creación del archivo a través del botón **Crear archivo**.
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image09.png)
 
-Una volta completata l'operazione, i file saranno allegati alla dichiarazione stessa e saranno scaricabili dal documentale come di seguito visualizzato nell'immagine.
+Una vez completada la operación, los archivos estarán adjuntos a la declaración misma y serán descargables desde los documentos como se visualiza en la imagen a continuación.
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image10.png)
 
-**ERRORI NEL TRACCIATO**
+**ERRORES EN EL TRAZADO**
 
- 
+Los archivos visualizados como adjuntos con el nombre ‘...Errors’ son utilizados para fines de control interno y señalan posibles errores en los datos presentes en la declaración (números de IVA faltantes, etc.).
 
-I file visualizzati come allegato con nome ‘...Errors' vengono valorizzati a scopo di controllo interno e segnalano possibili errori nei dati presenti nella dichiarazione (partite iva mancanti ecc...).
-
-ATTENZIONE: i files contenenti gli errori rappresentano una indicazione di massima e NON sostituiscono la procedura di controllo ufficiale dell'Agenzia delle Entrate, tale procedura è liberamente scaricabile dal sito internet dell'Agenzia Entrate. Vedere in tal senso l'allegato al presente articolo. 
-
-
-
-
-
-
-
-
+ATENCIÓN: los archivos que contienen errores representan una indicación general y NO reemplazan el procedimiento de control oficial de la Agencia de Ingresos, este procedimiento es descargable libremente desde el sitio web de la Agencia de Ingresos. Ver en este sentido el anexo a este artículo.

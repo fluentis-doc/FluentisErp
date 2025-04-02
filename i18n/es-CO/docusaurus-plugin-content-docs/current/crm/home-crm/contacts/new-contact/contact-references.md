@@ -1,24 +1,24 @@
 ---
-title: Riferimenti Contatto
+title: Referencias de Contacto (Riferimenti Contatto)
 sidebar_position: 3
 ---
 
-Questa è la seconda tab dei **Contatti CRM**.
+Esta es la segunda pestaña de **contatti crm**.
 
-Per inserire un nuovo Riferimento, è necessario premere sul pulsante della ribbon bar *Nuovo riferimento*, che compare nel momento in cui si è all’interno di questa tab. Per inserire invece un Riferimento già esistente sarà necessario usare il pulsante *Ricerca*. 
+Para agregar una nueva Referencia, es necesario presionar el botón de la barra de herramientas *nuovo riferimento*, que aparece cuando se está dentro de esta pestaña. Para agregar una Referencia ya existente, será necesario utilizar el botón *ricerca*.
 
-Nella maschera di inserimento del nuovo riferimento sono presenti i seguenti campi:
+En el formulario de inserción de la nueva referencia, se encuentran los siguientes campos:
 
-**Cognome**: è il cognome del riferimento.
+**cognome**: es el apellido de la referencia.  
 
-**Nome**: è il nome del riferimento.
+**nome**: es el nombre de la referencia.  
 
-**Operatore**: viene riportato l'eventuale operatore associato in anagrafica riferimento.      
+**operatore**: se indica el posible operador asociado en el registro de referencia.  
 
-**Ruolo**: campo dove viene riportato il ruolo del riferimento all’interno dell’azienda del contatto.
+**ruolo**: campo donde se indica el rol de la referencia dentro de la empresa del contacto.  
 
-**Telefono**: è il telefono fisso principale del riferimento.
+**telefono**: es el teléfono fijo principal de la referencia.  
 
-**Fax**: è il numero di fax del riferimento.
+**fax**: es el número de fax de la referencia.  
 
-**Email**: è la mail aziendale del riferimento.
+**email**: es el correo electrónico empresarial de la referencia.

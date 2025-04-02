@@ -1,137 +1,131 @@
 ---
-title: Parametri Progetti
+title: parametri progetti
 sidebar_position: 1
 ---
 
-## Generale
+## General (Generale)
 
-Questi parametri vengono utilizzati di default se per il cliente o per il tipo documento non sono state effettuate configurazioni predefinite. 
+Estos parámetros se utilizan por defecto si no se han realizado configuraciones predeterminadas para el cliente o el tipo de documento.
 
-**Unità di misura predefinita per il servizio**: UM di default da considerare per i servizi negli interventi. 
+**Unidad de medida predeterminada para el servicio (Unità di misura predefinita per il servizio)**: UM predeterminada a considerar para los servicios en las intervenciones.
 
-**Unità di Misura Ore**: UM che identifica le Ore nell'area progetti. In caso di conversione tra UM sarà evidente se la quantità è riferita alle ore di lavoro. 
+**unità di misura ore**: UM que identifica las Horas en el área de proyectos. En caso de conversión entre UM será evidente si la cantidad se refiere a las horas de trabajo.
 
-**Unità di Misura Giorni**: UM che identifica i giorni nell'area progetti. In caso di conversione tra UM sarà evidente se la quantità è riferita ai giorni di lavoro. 
+**unità di misura giorni**: UM que identifica los días en el área de proyectos. En caso de conversión entre UM será evidente si la cantidad se refiere a los días de trabajo.
 
-**Ore giornaliere**: indica la durata standard della giornata lavorativa aziendale. Configurabile nella tabella [Orari di lavoro](/docs/configurations/tables/employee/working-hours)
+**ore giornaliere**: indica la duración estándar de la jornada laboral de la empresa. Configurable en la tabla [Horarios de trabajo](/docs/configurations/tables/employee/working-hours).
 
-**Articolo**: articolo da utilizzare di default nei documenti in assenza di altre impostazioni. 
+**articolo**: artículo a utilizar por defecto en los documentos en ausencia de otras configuraciones.
 
-**Turno di lavoro**: indicare il turno di lavoro principale per l'azienda. I valori sono configurabili nella tabella  [Turno di lavoro](/docs/configurations/tables/employee/working-hours) per ogni giorno della settimana. Il totale delle ore della giornata verrà considerato per effettuare la conversione tra Ore - Giorni. Se ad es. l'azienda prevede 7 ore giornaliere, 1 Giorno = 7 ore, e su questa base verranno fatte le conversioni ad es. nei servizi di un intervento. 
+**turno di lavoro**: indicar el turno de trabajo principal para la empresa. Los valores son configurables en la tabla [Turno de trabajo](/docs/configurations/tables/employee/working-hours) para cada día de la semana. El total de horas de la jornada se considerará para realizar la conversión entre Horas - Días. Por ejemplo, si la empresa prevé 7 horas diarias, 1 Día = 7 horas, y sobre esta base se harán las conversiones, por ejemplo, en los servicios de una intervención.
 
-**Tipo Attività**: tipologia di attività predefinita utilizzata ad es. nella creazione automatica di attività da intervento. 
+**tipo attività**: tipo de actividad predeterminada utilizada, por ejemplo, en la creación automática de actividades a partir de intervenciones.
 
-**Tipo Attività per Richiesta ferie/permessi**: tipologia di attività utilizzata in fase di conferma periodo ferie, per generare le relative dichiarazioni attività della risorsa. 
+**tipo attività per richiesta ferie/permessi**: tipo de actividad utilizada en el proceso de confirmación del período de vacaciones, para generar las respectivas declaraciones de actividad del recurso.
 
-**Tipo Sprint predefinito**: tipologia di sprint da utilizzare di default se non specificato per il tipo documento. 
+**tipo sprint predefinito**: tipo de sprint a utilizar por defecto si no se especifica para el tipo de documento.
 
-**Costo predefinito Materiali Progetto**: è possibile scegliere un valore tra Nessuno, Costo ultimo, Costo medio, Costo standard. Quanto configurato verrà utilizzato come regola di base per reperire il costo articolo inserito nella tab Materiali dei Progetti. 
+**costo predefinito materiali progetto**: se puede elegir un valor entre Ninguno, Costo último, Costo medio, Costo estándar. Lo configurado se utilizará como regla básica para obtener el costo del artículo ingresado en la tabla Materiales de Proyectos.
 
-**Tipo Intervento pianificato predefinito**: tipologia di intervento pianificato da utilizzare di default, ad esempio nella creazione di nuovi pianificati direttamente da Wbs Assegnazione risorse. 
+**tipo intervento pianificato predefinito**: tipo de intervención planificada a utilizar por defecto, por ejemplo, en la creación de nuevos planificados directamente desde Wbs Asignación de recursos.
 
-**Tipo Richiesta intervento predefinita**: tipologia di richiesta intervento da utilizzare di default, ad esempio nella creazione di nuove richieste intervento da Wbs Assegnazione risorse. 
+**Tipo de Solicitud de intervención predeterminado (Tipo Richiesta intervento predefinita)**: tipo de solicitud de intervención a utilizar por defecto, por ejemplo, en la creación de nuevas solicitudes de intervención desde Wbs Asignación de recursos.
 
-**Turno di lavoro**: indica il turno di lavoro specifico, codificato nella tabella **Turno di Lavoro**.
+**turno di lavoro**: indica el turno de trabajo específico, codificado en la tabla **Turno de Trabajo**.
 
+## Intervenciones (Interventi)
 
-## Interventi
+**tipo intervento interno**: tipo de intervención identificada como intervención interna.
 
-**Tipo intervento interno**: tipologia di intervento identificata come intervento interno
+**tipo intervento esterno**: tipo de intervención identificada como intervención externa.
 
-**Tipo intervento esterno**: tipologia di intervento identificata come intervento esterno
+**tipo intervento predefinito**: tipo de intervención a utilizar por defecto, por ejemplo, en la generación automática de intervenciones a partir de actividades marcadas como facturables.
 
-**Tipo Intervento predefinito** tipologia di intervento da utilizzare di default, ad es. nella generazione automatica di intervento da attività marcate come fatturabili. 
+**dipendente predefinito**: empleado a utilizar por defecto si no hay otro valor presente.
 
-**Dipendente predefinito**: dipendente da utilizzare di default se non presente altro valore 
+**articolo righe fuori orario nel piano di fatturazione**: artículo a emplear por defecto para insertar las líneas que resultaron fuera de horario en los cálculos del plan de facturación de una intervención.
 
-**Articolo righe fuori Orario nel Piano di fatturazione**: articolo da usare di default per inserire le righe risultate fuori orario nei calcoli del piano di fatturazione di un intervento. 
+**articolo di storno fattura di anticipo**: artículo a utilizar por defecto para insertar las líneas de anulación de las facturas de anticipos en una factura generada por la valorización de intervenciones.
 
-**Articolo di storno Fattura di Anticipo**: articolo da usare di default per inserire le righe di storno delle fatture di acconto in una fattura generata dalla valorizzazione interventi. 
+**descrizione riga di storno fattura di anticipo**: descripción a utilizar por defecto para insertar las líneas de anulación de las facturas de anticipos en una factura generada por la valorización de intervenciones.
 
-**Descrizione riga di storno Fattura di Anticipo**: descrizione da usare di default per inserire le righe di storno delle fatture di acconto in una fattura generata dalla valorizzazione interventi. 
+**proponi fattura di anticipo nei servizi**: si está habilitado, en cada guardado de intervención se verifica si existe una factura de anticipo asociada al proyecto indicado en el documento. Si el valor residual de la factura de anticipo es suficiente para cubrir el servicio, se conectará automáticamente a la línea de servicio de la intervención en el campo correspondiente.
 
-**Proponi Fattura di Anticipo nei servizi**: se abilitato, ad ogni salvataggio intervento effettua una verifica se presente una fattura di anticipo associata al progetto indicato nel documento.
-Se il valore residuo della fattura di anticipo è sufficiente a coprire il servizio, verrà collegato in automatico alla riga di servizio dell'intervento nell'apposito campo. 
+**proponi fattura di anticipo nei materiali**: si está habilitado, en cada guardado de intervención se verifica si existe una factura de anticipo asociada al proyecto indicado en el documento. Si el valor residual de la factura de anticipo es suficiente para cubrir el valor del material, se conectará automáticamente a la línea de material de la intervención en el campo correspondiente.
 
-**Proponi Fattura di Anticipo nei materiali**: se abilitato, ad ogni salvataggio intervento effettua una verifica se presente una fattura di anticipo associata al progetto indicato nel documento.
-Se il valore residuo della fattura di anticipo è sufficiente a coprire il valore del materiale, verrà collegato in automatico alla riga di materiale dell'intervento nell'apposito campo. 
+**proponi fattura di anticipo nelle spese di viaggio**: si está habilitado, en cada guardado de intervención se verifica si existe una factura de anticipo asociada al proyecto indicado en el documento. Si el valor residual de la factura de anticipo es suficiente para cubrir el gasto de viaje, se conectará automáticamente a la línea de gasto de viaje de la intervención en el campo correspondiente.
 
-**Proponi Fattura di Anticipo nelle spese di viaggio**: se abilitato, ad ogni salvataggio intervento effettua una verifica se presente una fattura di anticipo associata al progetto indicato nel documento.
-Se il valore residuo della fattura di anticipo è sufficiente a coprire la spesa di viaggio, verrà collegata in automatico alla riga di spesa di viaggio dell'intervento nell'apposito campo. 
+### Ajustes valorización de intervenciones (Impostazioni valorizzazione interventi)
 
-### Impostazioni valorizzazione interventi
+**Utilizar referencias de intervención (Utilizza riferimenti intervento)**: si está habilitado, en la factura generada por la valorización de intervenciones se insertará una línea descriptiva antes de la línea de la intervención, que contendrá la descripción configurada por el usuario.
 
-**Utilizza riferimenti intervento**: se abilitato, nella fattura generata dalla valorizzazione interventi verrà inserita una riga descrittiva prima della riga dell'intervento, contenente la descrizione configurata dall'utente. 
+**aggiungi data intervento nella riga del servizio**: si está habilitado, inserta la fecha del servicio en el campo de descripción de la línea correspondiente al servicio.
 
-**Aggiungi data intervento nella riga del servizio** se abilitato, inserisce la data del servizio nel campo descrizione della riga relativa al servizio. 
+**proponi descrizioni codice articolo**: si está habilitado, inserta la descripción del código de artículo en el campo de descripción del servicio.
 
-**Proponi descrizioni codice articolo**: se abilitato, inserisce la descrizione del codice articolo nel campo descrizione del servizio. 
+**raggruppa per progetto**: si está habilitado, realiza el agrupamiento por cabecera de proyecto en la factura generada por la valorización de intervenciones.
 
-**Raggruppa per progetto**: se abilitato, effettua il raggruppamento per testata progetto nella fattura generata dalla valorizzazione interventi. 
+**raggruppa per wbs**: si está habilitado, realiza el agrupamiento por wbs de proyecto en la factura generada por la valorización de intervenciones.
 
-**Raggruppa per WBS**: se abilitato, effettua il raggruppamento per wbs progetto nella fattura generata dalla valorizzazione interventi. 
+**raggruppa servizi e spese**: si está habilitado, realiza el agrupamiento de servicios y gastos en la factura generada por la valorización de intervenciones.
 
-**Raggruppa Servizi e Spese**: se abilitato, effettua il raggruppamento di servizi e spese nella fattura generata dalla valorizzazione interventi. 
+**considera i giorni festivi come tempo extra**: si está habilitado, en el plan de facturación se verificará si el día del servicio corresponde a alguna de las fechas configuradas como festivas. Las fechas no laborables se pueden configurar en *Configuración > Tablas > Gestión de Proyectos* > [Calendario días festivos](/docs/configurations/tables/project-management/not-working-days-calendar).
 
-**Considera i giorni festivi come tempo extra**: se abilitato, nel piano di fatturazione verrà verificato se la giornata del servizio rientra in una delle date configurare come festive. Le date non lavorative possono essere configurate da *Configurazione > Tabelle > Gestione Progetti* > [Calendario giorni festivi](/docs/configurations/tables/project-management/not-working-days-calendar)
+**priorità di inserimento delle informazioni**: indicar el orden en que se deben ingresar los datos en las facturas generadas por la valorización de intervenciones.
 
-**Priorità di inserimento delle informazioni**: indicare l'ordine con cui inserire i dati nelle fatture generate dalla valorizzazione interventi. 
+### PLAN DE FACTURACIÓN (PIANO DI FATTURAZIONE)
 
-### PIANO DI FATTURAZIONE
+Las reglas a aplicar al plan de facturación de la intervención pueden establecerse en los parámetros generales de la Gestión de Proyectos y ser válidas para todos los clientes, o específicas para un cliente. La procedura de cálculo del plan de facturación comprobará primero la existencia de configuraciones específicas para el cliente, y si no están presentes, considerará las que se encuentren en los parámetros generales.
 
-Le regole da applicare al piano di fatturazione dell'intervento possono essere stabilite nei parametri generali della Gestione Progetti, ed essere quindi valide per tutti i clienti, oppure specifiche per cliente.  
-La procedura di calcolo del piano di fatturazione controllerà prima la presenza di configurazioni specifiche per il cliente, e se non presenti, considererà quelle presenti nei parametri generali.  
+**sede di lavoro** y **tipo intervento**: utilizados como filtro; si están vacíos se consideran válidos para todas las sedes de trabajo y para todos los tipos de intervenciones. Si en cambio están configurados, solo se tendrán en cuenta en correspondencia con la sede de trabajo configurada en el registro del recurso que realiza la intervención y el tipo de intervención utilizado.
 
-**Sede di Lavoro** e **Tipo intervento** : utilizzati come filtro; se vuoti vengono considerati validi per tutte le sedi di lavoro e per tutti i tipi interventi. Se invece configurati, verranno presi in considerazione solamente in corrispondenza della sede di lavoro configurata nell'anagrafica della risorsa che svolge l'intervento, e del tipo intervento utilizzato. 
+**tipo fascia oraria**: indica la franja horaria de trabajo acordada con el cliente, y el total de horas diarias.
+:::note[Observación]
+Se puede establecer que para un cliente el total de horas diarias sean 7 horas, mientras que para otro 8. Las horas indicadas en la franja horaria se utilizarán en la conversión entre diferentes unidades de medida temporales:
+- por ejemplo, si hemos trabajado 7 horas para el cliente y su franja corresponde a 7 horas, en la conversión a Días obtendremos como cantidad 1.
+- si en cambio hemos trabajado 7 horas para el cliente y su franja corresponde a 8 horas, en la conversión a Días obtendremos como cantidad 0.875.
 
-**Tipo fascia oraria**: indica la fascia oraria di lavoro concordata con il cliente, ed il monte ore giornaliero. 
-:::note[Osservazione] 
-Si potrà stabilire che per un cliente il monte ore giornaliero sono 7 ore, mentre per un altro 8. Le ore indicate nella fascia oraria verranno utilizzate nella conversione tra diverse unità di misura temporali: 
-- es. se abbiamo svolto 7 ore dal cliente e la sua fascia corrisponde a 7 ore, nella conversione in Giorni avremo come quantità 1. 
-- se invece abbiamo svolto 7 ore dal cliente e la sua fascia corrisponde a 8 ore, nella conversione in Giorni avremo come quantità 0.875. 
-
-La fascia verrà inoltre considerata per il calcolo del fuori orario da tariffare con prezzo diverso, sia per il superamento del monte ore totale sia degli orari stabiliti. 
+La franja también se considerará para el cálculo del fuera de horario que se deberá facturar a un precio diferente, tanto por el excedente del total de horas como por los horarios establecidos.
 :::
 
-**Tipo fascia oraria notturna**: il funzionamento è analogo come per il campo "Tipo Fascia oraria" ma verrà utilizzato nel caso di effettuazione servizi sia diurni che notturni, per permettere diversa tariffazione. 
+**tipo fascia oraria notturna**: el funcionamiento es similar al del campo "Tipo Franja horaria", pero se utilizará en el caso de realizar servicios tanto diurnos como nocturnos, para permitir una tarifación diferente.
 
-**Tipo arrotondamento**: indica la regola matematica con cui arrotondare le ore di lavoro. L'arrotondamento verrà poi applicato sulle ore complessive dell'intervento. Es. totale ore 7,45 h, se previsto arrotondamento alla mezz'ora, le ore fatturate saranno 8. 
+**tipo arrotondamento**: indica la regla matemática con la que redondear las horas de trabajo. El redondeo se aplicará luego a las horas totales de la intervención. Ej. total horas 7,45 h, si se prevé redondeo a la media hora, las horas facturadas serán 8.
 
-**Categoria commerciale**: ulteriore filtro per la selezione della regola per il piano di fatturazione. Se vuoto verrà considerato valido per tutte le categorie commerciali clienti, nel caso di indicazione specifica verrà selezionata quella corrispondente inserita in anagrafica cliente - tab Amministrazione
+**categoria commerciale**: filtro adicional para la selección de la regla para el plan de facturación. Si está vacío se considerará válido para todas las categorías comerciales de clientes; en caso de una indicación específica, se seleccionará la correspondiente ingresada en el registro del cliente - pestaña Administración.
 
-**Includi ore viaggio nei servizi**: permette di considerare le ore di viaggio presenti nell'intervento nella tab "Spese da fatturare", come se fossero delle ore di servizio. Di conseguenza tutte le regole di fatturazione (fascia oraria, arrotondamenti, etc) verranno applicate anche alle ore di viaggio, come appunto fossero un servizio svolto. 
+**Incluir horas de viaje en los servicios (Includi ore viaggio nei servizi)**: permite considerar las horas de viaje presentes en la intervención en la pestaña "Gastos a facturar", como si fueran horas de servicio. En consecuencia, todas las reglas de facturación (franja horaria, redondeos, etc.) se aplicarán también a las horas de viaje, como si fueran un servicio realizado.
 
-**Escludi arrotondamenti**: se abilitato, non verranno applicati arrotondamenti nel piano di fatturazione. 
+**escludi arrotondamenti**: si está habilitado, no se aplicarán redondeos en el plan de facturación.
 
-**Escludi calcolo Fuori Orario**: se abilitato, non verrà calcolato il fuori orario nel piano di fatturazione. Per la conversione tra diverse unità di misura temporali (es. da ore a giorni) verrà utilizzato il monte ore indicato nel campo "Turno di lavoro" nei parametri generali della Gestione Progetti. 
+**escludi calcolo fuori orario**: si está habilitado, no se calculará el fuera de horario en el plan de facturación. Para la conversión entre diferentes unidades de medida temporales (por ejemplo, de horas a días) se utilizará el total de horas indicado en el campo "Turno de trabajo" en los parámetros generales de la Gestión de Proyectos.
 
-**Considera tutte le fasce orarie calcolo fuori Orario**: se abilitato nel calcolo del fuori orario vengono prese in considerazione sia la fascia oraria diurna che la fascia oraria notturna. Verrà considerato fuori orario solo ciò che è al di fuori di entrambe le fasce o supera il monte ore giornaliero. Se disabilitato, verrà considerata solo una fascia oraria (notturna o diurna in base all'orario di inizio del servizio) e tutto ciò che è fuori da questa fascia oraria considerata, sarà tariffato fuori orario. 
+**considera tutte le fasce orarie calcolo fuori orario**: si está habilitado, en el cálculo del fuera de horario se tomarán en cuenta tanto la franja horaria diurna como la nocturna. Solo se considerará fuera de horario lo que esté fuera de ambas franjas o que supere el total de horas diarias. Si está deshabilitado, solo se considerará una franja horaria (nocturna o diurna, según la hora de inicio del servicio) y todo lo que esté fuera de esta franja horaria considerada será tarifado como fuera de horario.
 
-:::note[Esempio]
-Fascia diurna 7.00 - 18.00
-Fascia oraria notturna 20.00 - 5.00
+:::note[Ejemplo]
+Franja diurna 7.00 - 18.00
+Franja horaria nocturna 20.00 - 5.00
 
-orario servizio: 3.00 - 8.00
-con flag abilitato il piano di fatturazione sarà: 
-- riga servizio 3.00 - 5.00 con tariffa notturna
-- riga servizio 05.00 - 07.00 con tariffa fuori orario
-- riga servizio 07.00 - 08.00 con tariffa diurna
-(vengono considerate per il calcolo entrambe  le fasce orarie, risulta in fuori orario solamente quello che non rientra in nessuna delle due)
+horario de servicio: 3.00 - 8.00
+con la opción habilitada, el plan de facturación será: 
+- línea de servicio 3.00 - 5.00 con tarifa nocturna
+- línea de servicio 05.00 - 07.00 con tarifa fuera de horario
+- línea de servicio 07.00 - 08.00 con tarifa diurna
+(ambas franjas horarias se consideran para el cálculo; solo se considera fuera de horario lo que no entra en ninguna de las dos)
 
-con flag disabilitato il piano di fatturazione sarà:
-- riga con servizio 3.00 - 5.00 con tariffa notturna
-- riga con servizio 05.00 - 08.00 con tariffa fuori orario 
-(viene considerato per il calcolo solo la fascia di orario notturna, che è di riferimento per il servizio iniziato in quella fascia)
+con la opción deshabilitada, el plan de facturación será:
+- línea con servicio 3.00 - 5.00 con tarifa nocturna
+- línea con servicio 05.00 - 08.00 con tarifa fuera de horario 
+(se considera para el cálculo solo la franja horaria nocturna, que es la referencia para el servicio iniciado en esa franja)
 
 :::
 
-## Attività
+## Actividades (Attività)
 
-**Controlla attività mancanti negli ultimi: numero mesi**: indicare il numero di mesi, per i quali in fase di dichiarazione attività, verranno controllate eventuali dichiarazioni attività mancanti (ore/giorni) e verranno proposti in automatico in fase di dichiarazione. 
+**controlla attività mancanti negli ultimi: numero mesi**: indicar el número de meses, durante los cuales en la fase de declaración de actividades, se verificará si hay declaraciones de actividades faltantes (horas/días) y se propondrán automáticamente en la fase de declaración.
 
-Valore di default = 0, nella dichiarazione attività verrà sempre proposta la data odierna senza alcun controllo per le dichiarazioni mancanti nei mesi passati
+Valor por defecto = 0, en la declaración de actividades siempre se propondrá la fecha actual sin ningún control para las declaraciones faltantes en los meses anteriores.
 
-Valore "1": verrà controllato il periodo dato da data odierna fino al mese precedente. es. 05/06 - 05/07
-ad es. se la dichiarazione del 20/06 è mancante, all'inserimento della nuova dichiarazione attività, la data proposta sarà 20/06
+Valor "1": se verificará el período comprendido desde la fecha actual hasta el mes anterior. Por ejemplo, 05/06 - 05/07. Si la declaración del 20/06 está faltante, al ingresar la nueva declaración de actividades, la fecha propuesta será 20/06.
 
-Aumentando il numero di mesi, si estende il range dei mesi passati da controllare. 
+Al aumentar el número de meses, se amplía el rango de meses pasados a verificar.

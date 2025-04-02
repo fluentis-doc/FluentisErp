@@ -1,82 +1,82 @@
 ---
-title: Barcode tokenizer
+title: barcode tokenizer
 sidebar_position: 48
 ---
 
-Gran parte delle operazioni che possono essere effettuate in Fluentis WMS, possono essere agevolate e velocizzate grazie all’utilizzo del campo *Codice barcode*, che se opportunamente configurato, rielabora in maniera intelligente i dati acquisiti tramite la lettura del barcode e autonomamente va ad inserire i valori nei campi corrispondenti.
-Questo da un grande vantaggio all’operatore sia in termini di velocità di inserimento che di efficienza, dato che dovrà leggere i dati sempre nello stesso campo *Codice barcode* senza avere il problema di dover cambiare il focus. 
+Gran parte de las operaciones que se pueden realizar en Fluentis WMS pueden ser facilitadas y aceleradas gracias al uso del campo *Código de código de barras*, que si se configura adecuadamente, reinterpreta de manera inteligente los datos adquiridos a través de la lectura del código de barras e inserta automáticamente los valores en los campos correspondientes.  
+Esto proporciona una gran ventaja al operador tanto en términos de velocidad de entrada como de eficiencia, ya que solo tendrá que leer los datos siempre en el mismo campo *Código de código de barras* sin tener el problema de tener que cambiar el enfoque.
 
-Nella tabella di testata i campi da inserire sono: 
+En la tabla de encabezado, los campos a ingresar son:
 
-> **Codice**: indica il prefisso del barcode tokenizer;        
-> **Descrizione**: indica la descrizione del barcode tokenizer;        
-> **Separatore**: indica il carattere separatore del barcode tokenizer.
+> **codice**: indica el prefijo del tokenizador de código de barras;        
+> **descrizione**: indica la descripción del tokenizador de código de barras;        
+> **separatore**: indica el carácter separador del tokenizador de código de barras.
 
-Nella tabella di dettaglio vanno definiti gli oggetti e le proprietà che andremo a leggere nel barcode.
+En la tabla de detalle se deben definir los objetos y las propiedades que vamos a leer del código de barras.
 
-Il barcode deve essere creato utilizzando **CodiceBarcode** + **Separatore** + **OggettoBusiness.Proprietà** [ + **Separatore** + **OggettoBusiness.Proprietà** ]  
+El código de barras debe ser creado utilizando **CódigoDeBarras (CodiceBarcode)** + **Separador** + **ObjetoBusiness.Propiedad (OggettoBusiness.Proprietà)** [ + **Separador** + **ObjetoBusiness.Propiedad** ]  
 
-L’ultima parte **OggettoBusiness.Proprietà** può essere ripetuta più volte, sarà la Lunghezza o il **Separatore** definito in tabella che permetterà di individuare i valori corretti.       
- 
-Di norma, in un barcode tokenizer, è presente un solo **Oggetto principale**, il quale può essere composto a sua volta da più **Oggetti business**.      
-Questi **Oggetti business** posso essere proprietà dirette dell'**Oggetto principale** (in questo caso l'**Oggetto business** sarà uguale all'**Oggetto principale**) oppure possono essere proprietà appartenenti ad altri **Oggetti business**, ma comunque referenziati nell'**Oggetto principale**.          
-Possiamo dire che l'**Oggetto principale** che viene restituito dalla lettura del barcode è costituito dalla composizione di tutte le proprietà degli **Oggetti business** inseriti.     
+La última parte **ObjetoBusiness.Propiedad** puede repetirse varias veces; será la Longitud o el **Separador** definido en la tabla que permitirá identificar los valores correctos.      
+
+Normalmente, en un tokenizador de código de barras, hay un solo **Objeto principal**, el cual puede estar compuesto por varios **Objetos de negocio**.      
+Estos **Objetos de negocio** pueden ser propiedades directas del **Objeto principal** (en este caso, el **Objeto de negocio** será igual al **Objeto principal**) o pueden ser propiedades pertenecientes a otros **Objetos de negocio**, pero referenciados en el **Objeto principal**.          
+Podemos decir que el **Objeto principal** que se devuelve de la lectura del código de barras está constituido por la composición de todas las propiedades de los **Objetos de negocio** ingresados.     
 
 :::note Nota
-Ovviamente a seconda del set di dati su cui viene utilizzato, bisogna assicurarsi che la configurazione individui un unico risultato.
+Obviamente, dependiendo del conjunto de datos en el que se utilice, se debe asegurar que la configuración identifique un único resultado.
 :::
 
-Di seguito alcuni esempi di costruzione del Barcode Tokenizer:
+A continuación, algunos ejemplos de construcción del Tokenizador de Código de Barras:
 
-Esempio: Item-MOB-ART
+Ejemplo: Item-MOB-ART
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Código | Descripción | Separador | Objeto de negocio | Propiedad | Longitud | Separador | Secuencia | Objeto principal |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
-| Item | Item Barcode | - | FSItemClass | Code | 3 | - | 10 | FSItem |
-| Item | Item Barcode | - | FSItem | Code | 50 | - | 20 | FSItem |
+| Item | Código de artículo | - | FSItemClass | Código | 3 | - | 10 | FSItem |
+| Item | Código de artículo | - | FSItem | Código | 50 | - | 20 | FSItem |
 
-Esempio: Loc-01-L1
+Ejemplo: Loc-01-L1
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Código | Descripción | Separador | Objeto de negocio | Propiedad | Longitud | Separador | Secuencia | Objeto principal |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
-| Loc | Location Barcode | - | FSWarehouse | Code | 10 | - | 10 | FSLocation |
-| Loc | Location Barcode | - | FSLocation | CodeLocation | 100 | - | 20 | FSLocation |
+| Loc | Código de ubicación | - | FSWarehouse | Código | 10 | - | 10 | FSLocation |
+| Loc | Código de ubicación | - | FSLocation | CódigoUbicación | 100 | - | 20 | FSLocation |
 
-Esempio: UDC-2023-5-21
+Ejemplo: UDC-2023-5-21
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Código | Descripción | Separador | Objeto de negocio | Propiedad | Longitud | Separador | Secuencia | Objeto principal |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
-| UDC | UDC Barcode | - | FSLoadingUnit | Year | 4 | - | 10 | FSLoadingUnit |
-| UDC | UDC Barcode | - | FSLoadingUnit | Group | 4 | - | 20 | FSLoadingUnit |
-| UDC | UDC Barcode | - | FSLoadingUnit | Number | 4 | - | 30 | FSLoadingUnit |
+| UDC | Código de UDC | - | FSLoadingUnit | Año | 4 | - | 10 | FSLoadingUnit |
+| UDC | Código de UDC | - | FSLoadingUnit | Grupo | 4 | - | 20 | FSLoadingUnit |
+| UDC | Código de UDC | - | FSLoadingUnit | Número | 4 | - | 30 | FSLoadingUnit |
 
-Esempio: Lot-MOB-ART-123
+Ejemplo: Lot-MOB-ART-123
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Código | Descripción | Separador | Objeto de negocio | Propiedad | Longitud | Separador | Secuencia | Objeto principal |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
-| Lot | Lotto | - | FSItemClass | Code | 3 | - | 10 | FSBatchRegister |
-| Lot | Lotto | - | FSItem | Code | 50 | - | 20 | FSBatchRegister |
-| Lot | Lotto | - | FSLotRegister | Code | 05 | - | 30 | FSBatchRegister |
+| Lot | Lote | - | FSItemClass | Código | 3 | - | 10 | FSBatchRegister |
+| Lot | Lote | - | FSItem | Código | 50 | - | 20 | FSBatchRegister |
+| Lot | Lote | - | FSLotRegister | Código | 05 | - | 30 | FSBatchRegister |
 
-Esempio: MesPop-10824
+Ejemplo: MesPop-10824
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Código | Descripción | Separador | Objeto de negocio | Propiedad | Longitud | Separador | Secuencia | Objeto principal |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
-| MesPop | Production Order Phase | - | FSProductionOrderPhase | Id |  | - | 10 | FSProductionOrderPhase |
+| MesPop | Fase de orden de producción | - | FSProductionOrderPhase | Id |  | - | 10 | FSProductionOrderPhase |
 
-Esempio: Qta-50
+Ejemplo: Qta-50
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Código | Descripción | Separador | Objeto de negocio | Propiedad | Longitud | Separador | Secuencia | Objeto principal |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
-| Qta | Quantity | - |  |  | 100 | - | 10 |  |
+| Qta | Cantidad | - |  |  | 100 | - | 10 |  |
 
-Esempio: ItemQta-MOB-ART-35
+Ejemplo: ItemQta-MOB-ART-35
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Código | Descripción | Separador | Objeto de negocio | Propiedad | Longitud | Separador | Secuencia | Objeto principal |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
-| ItemQta | Item Quantity | - | FSItemClass | Code | 3 | - | 10 | FSItem |
-| ItemQta | Item Quantity | - | FSItem | Code | 50 | - | 20 | FSItem |
-| ItemQta | Item Quantity | - |  |  | 100 | - | 30 |  |
+| ItemQta | Cantidad del artículo | - | FSItemClass | Código | 3 | - | 10 | FSItem |
+| ItemQta | Cantidad del artículo | - | FSItem | Código | 50 | - | 20 | FSItem |
+| ItemQta | Cantidad del artículo | - |  |  | 100 | - | 30 |  |
 
-Gli ultimi esempi non rientrano nella logica descritta per il barcode tokenizer, questo perché si voleva avere un modo per mappare nel barcode anche la quantità che però non è attribuibile a nessun Oggetto/Proprietà nel momento della lettura.
-Ovviamente questa logica va implementata nelle singole form.
+Los últimos ejemplos no entran en la lógica descrita para el tokenizador de código de barras, esto porque se quería tener una manera de mapear en el código de barras también la cantidad que, sin embargo, no se atribuye a ningún Objeto/Propiedad en el momento de la lectura.  
+Obviamente, esta lógica debe implementarse en los formularios individuales.

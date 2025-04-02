@@ -1,10 +1,10 @@
 ---
-title: Stampa liquidazioni provvigioni
+title: Impresión de liquidaciones de comisiones (Stampa liquidazioni provvigioni)
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Stampe*.
+El formulario se abre a través de la ruta *Ventas (Vendite) > Agentes (Agenti) > Liquidaciones de agentes (Liquidazioni agenti) > Impresiones (Stampe)*.
 
-La stampa consente di ottenere un report da inviare all'agente con il dettaglio dei documenti che sono andati in maturazione nella liquidazione stampata. È possibile visualizzare anche il dettaglio maturato sul singolo articolo dei documenti presenti in liquidazione.
+La impresión permite obtener un informe para enviar al agente con el detalle de los documentos que han madurado en la liquidación impresa. También es posible visualizar el detalle madurado sobre cada artículo de los documentos presentes en la liquidación.
 
-Più dettagli su questo argomento negli articoli: [Ricerca dati nelle form di sola lettura ](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) e [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Más detalles sobre este tema en los artículos: [Búsqueda de datos en formularios de solo lectura (Ricerca dati nelle form di sola lettura)](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) y [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

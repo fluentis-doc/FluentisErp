@@ -1,12 +1,12 @@
 ---
-title: Assegni
+title: assegni
 sidebar_position: 3
 ---
 
-Questa scheda è una rubrica manuale dove indicare il dettaglio delle matrici assegni e dei riferimenti dei singoli assegni emessi.
+Esta ficha es una agenda manual donde se indica el detalle de las matrices de cheques y de los referencias de los cheques emitidos.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/cheques/image01.png)
 
-*Pulsanti specifici*:
-> **Cancella matrici**: per cancellare la matrice selezionata.  
-> **Cancella dett. matrici**: per cancellare il dettaglio degli assegni selezionati. 
+*Botones específicos (Pulsanti specifici)*:  
+> **cancella matrici**: para eliminar la matriz seleccionada.  
+> **cancella dett. matrici**: para eliminar el detalle de los cheques seleccionados.

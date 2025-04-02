@@ -1,10 +1,10 @@
 ---
-title: Gestione cicli e fasi di lavoro
+title: gestione cicli e fasi di lavoro
 sidebar_position: 4
 ---
 
-Questa form permette di modificare in maniera veloce i cicli creati in precedenza, dando la possibilità di modificare i valori direttamente dalla griglia di ricerca.
+Este formulario permite modificar rápidamente los ciclos creados previamente, dando la posibilidad de cambiar los valores directamente desde la cuadrícula de búsqueda.
 
-Una volta impostati i filtri e cliccato sul pulsante di **Ricerca**, nella griglia dei risultati vengono visualizzati i cicli che rispettano i vincoli della ricerca.
+Una vez establecidos los filtros y hecho clic en el botón de **ricerca**, en la cuadrícula de resultados se muestran los ciclos que cumplen con las condiciones de la búsqueda.
 
-A questo punto i risultati si possono modificare direttamente all'interno della griglia.
+En este punto, los resultados se pueden modificar directamente dentro de la cuadrícula.

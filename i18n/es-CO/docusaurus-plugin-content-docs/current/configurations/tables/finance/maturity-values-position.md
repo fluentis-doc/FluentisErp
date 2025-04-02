@@ -1,17 +1,16 @@
 ---
-title: Posizione partite
+title: posizione partite
 sidebar_position: 17
 ---
 
-Questa tabella, permette di definire, liberamente, delle voci da attribuire alle partite al fine di contrassegnarne, ad esempio, una situazione o uno stato particolare.
+Esta tabla permite definir, libremente, entradas que se pueden atribuir a las partidas con el fin de marcar, por ejemplo, una situación o un estado particular.
 
-A titolo di esempio: Contestata, sospesa, da verificare ec....
+A modo de ejemplo: Contestada, suspendida, por verificar, etc...
 
-La posizione viene assegnata alle partite (anche massivamente) dalla form *Partite* attraverso il pulsante (nella ribbon bar) *Cambia posizione partite*.
+La posición se asigna a las partidas (incluso masivamente) desde el formulario *partite* a través del botón (en la barra de ribbon) *Cambiar posición de partidas (Cambia posizione partite)*.
 
-#### Campi specifici
+#### Campos específicos (Campi specifici)
 
-**Codice**: codice della posizione delle partite.
+**codice**: código de la posición de las partidas.
 
-**Descrizione**: descrizione della posizione delle partite.
-
+**descrizione**: descripción de la posición de las partidas.

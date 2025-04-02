@@ -1,32 +1,32 @@
 ---
-title: Calendario di fabbrica
+title: calendario di fabbrica
 sidebar_position: 4
 ---
 
-Attraverso questa finestra è possibile generare e/o modificare il *Calendario di fabbrica* dell'azienda, elemento fondamentale che viene tenuto in considerazione dalle procedure di **Pianificazione generale**, **Schedulazione a capacità finita** ed **MRP**.
+A través de esta ventana es posible generar y/o modificar el *calendario di fabbrica* de la empresa, un elemento fundamental que se tiene en cuenta en los procedimientos de **pianificazione generale**, **Programación a capacidad finita (Schedulazione a capacità finita)** y **MRP**.
 
-La finestra si presenta come una tabella all'interno della quale vengono visualizzate tante caselle quanti sono i giorni del mese selezionato in alto a destra.  
-Nel primo campo si troverà il **Mese** e l'**Anno** di riferimento, che potranno essere selezionati tramite la combo e il campo editabile a lato o cliccando sui pulsanti **Anno precedente/Successivo** e **Mese precedente/successivo**.
+La ventana se presenta como una tabla dentro de la cual se visualizan tantas casillas como días tiene el mes seleccionado en la parte superior derecha.  
+En el primer campo se encontrará el **Mes** y el **Año** de referencia, que pueden seleccionarse a través de la combinación y el campo editable al lado o haciendo clic en los botones **Año anterior/Siguiente (Anno precedente/Successivo)** y **Mes anterior/Siguiente (Mese precedente/successivo)**.
 
-In ogni casella è presente un flag, che, se attivato, indica che il giorno in questione è *Festivo*.  
-Il fatto che un determinato giorno sia designato come *Festivo* consente all'utente di fare in modo che quando esegua la generazione del [Calendario delle capacità produttive](/docs/configurations/tables/production/productive-capacity-calendar)  l'applicazione generi in automatico una disponibilità della *Risorse produttiva* solo per i giorni che nel *Calendario di fabbrica* sono identificati appunto come non festivi.  
-Inoltre, l'indicazione relativa alla festività è importante anche quando si definiscono i *Tempi di approvvigionamento dei fornitori preferenziali*, che devono essere quindi indicati considerando il *Calendario di fabbrica*.  
-*Esempio*:
-Se vengono considerati festivi il sabato e la domenica, impostando un valore di 10 giorni come tempo di approvvigionamento si sottintende un tempo complessivo di circa 2 settimane, considerato il fatto che la settimana lavorativa è in questo caso composta di soli 5 giorni di calendario.
+En cada casilla hay un indicador, que, si está activado, indica que el día en cuestión es *Festivo (Festivo)*.  
+El hecho de que un día determinado esté designado como *Festivo (Festivo)* permite al usuario asegurarse de que, al generar el [Calendario de capacidades productivas (Calendario delle capacità produttive)](/docs/configurations/tables/production/productive-capacity-calendar), la aplicación genere automáticamente una disponibilidad de la *Recurso productiva (Risorse produttiva)* solo para los días que en el *calendario di fabbrica* están identificados como no festivos.  
+Además, la indicación relacionada con la festividad es importante también al definir los *Tiempos de aprovisionamiento de los proveedores preferenciales (Tempi di approvvigionamento dei fornitori preferenziali)*, que deben indicarse considerando el *calendario di fabbrica*.  
+*Ejemplo*:  
+Si se consideran festivos el sábado y el domingo, al establecer un valor de 10 días como tiempo de aprovisionamiento, se entiende un tiempo total de alrededor de 2 semanas, considerando que la semana laboral en este caso está compuesta solo por 5 días de calendario.
 
-Una volta settati i vari campi, basterà cliccare il pulsante **Salva**.
+Una vez configurados los diversos campos, basta con hacer clic en el botón **salva**.
 
-I flag che indicano la festività possono essere impostati:
-- **manualmente** dall'utente  
-oppure, come di solito avviene,   
-- utilizzando il pulsante della ribbon chiamato **Generazione calendario di fabbrica**. Alla pressione di questo tasto si apre una finestra di pop up chiamata **Generazione calendario**.
+Los indicadores que indican la festividad pueden establecerse:  
+- **manualmente (manualmente)** por el usuario  
+o, como suele ser el caso,  
+- utilizando el botón de la cinta llamado **generazione calendario di fabbrica**. Al presionar este botón se abre una ventana emergente llamada **generazione calendario**.
 
-In questa finestra pop up l'utente può decidere di generare automaticamente il calendario di fabbrica per un determinato anno, che può impostare nell'apposito campo **Generazione calendario per l'anno**.  
-Dopo aver deciso quali dovranno essere i giorni festivi della settimana e se considerare o meno le impostazioni eseguite nella tabella *Festività annuali*, si può cliccare sul pulsante **OK** per eseguire in automatico la creazione del calendario di fabbrica per l'anno indicato.
+En esta ventana emergente, el usuario puede decidir generar automáticamente el calendario de fábrica para un determinado año, que puede configurar en el campo correspondiente **generazione calendario per l'anno**.  
+Después de decidir qué días de la semana serán festivos y si considerar o no las configuraciones realizadas en la tabla *Festividades anuales (Festività annuali)*, se puede hacer clic en el botón **OK** para ejecutar automáticamente la creación del calendario de fábrica para el año indicado.
 
-Una volta generato il calendario, l'utente dovrà cliccare di nuovo sul pulsante Salva e chiudere la finestra relativa al calendario di fabbrica.
+Una vez generado el calendario, el usuario deberá hacer clic de nuevo en el botón Guardar y cerrar la ventana relacionada con el calendario de fábrica.
 
-*Pulsante specifico*:  
-> **Generazione calendario di fabbrica**: permette di aprire la finestra pop up per la generazione automatica del calendario di fabbrica per l'intero anno.
+*Botón específico*:  
+> **generazione calendario di fabbrica**: permite abrir la ventana emergente para la generación automática del calendario de fábrica para todo el año.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

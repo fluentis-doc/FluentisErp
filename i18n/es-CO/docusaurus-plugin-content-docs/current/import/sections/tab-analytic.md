@@ -1,3 +1,3 @@
-Può contenere informazioni sui centri di costo/profitto sui quali sono distribuiti i valori degli articoli.
+Puede contener información sobre los centros de costos/beneficios en los cuales se distribuyen los valores de los artículos.
 
-Questi dati possono essere inseriti manualmente oppure *automaticamente* (nel caso in cui i centri di costo/profitto siano stati inseriti precedentemente nell'*anagrafica contatto*, *anagrafica articolo* oppure nel *piano dei conti*).
+Estos datos pueden ser ingresados manualmente o *automáticamente (automaticamente)* (en caso de que los centros de costos/beneficios hayan sido ingresados previamente en la *base de datos de contactos (anagrafica contatto)*, *anagrafica articolo* o en el *piano dei conti*).

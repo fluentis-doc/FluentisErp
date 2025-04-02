@@ -1,96 +1,95 @@
 ---
-title: Centri aziendali
+title: centri aziendali
 sidebar_position: 4
 ---
 
-
-La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Centri aziendali**
-
-:::tip Nota
-La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
-:::
-
-La tabella consente la definizione della struttura, anche su diversi livelli, e le caratteristiche dei centri aziendali.
-
-#### Pulsanti specifici
-
-**Nuovo CDC**: permette di effettuare l'inserimento di un nuovo centro di costo. |
-**Nuovo legame CDC**: permette di effettuare l'inserimento di un sotto-livello rispetto a quello su cui si è posizionati. |
-**Cancella legame CDC**: permette di effettuare la cancellazione del sotto-livello del CDC. |
-
-
-:::tip **Modalità di inserimento nuovi centri**
-La struttura ad albero creata per organizzare i centri, ed i centri nel dettaglio, sono visibili nella griglia centrale della form, ma i nuovi centri vengono inseriti compilando i campi nella zona inferiore della maschera.
-ATTENZIONE: alcuni campi sono, tuttavia, modificabili agendo direttamente sulla riga della griglia superiore dopo aver inserito il nuovo centro (es. il campo *Cost driver*) 
-:::
-
-## Impostazioni generali
-
-### Campi obbligatori della colonna di sinistra  
-- [**DIMENSIONE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) di appartenenza
-- **CODICE** alfanumerico, possibili 15 caratteri
-- **DESCRIZIONE** del centro
-- **CATEGORIA** del centro
-
-### Campi non obbligatori della colonna di sinistra  
-- **SECONDA DESCRIZIONE**
-- **TIPOLOGIA DEL CENTRO** (diretto/indiretto) scelta che non ha una qualche influenza a livello di elaborazioni
-
-### Campi non obbligatori della colonna di destra  
-- **DATA INIZIO**/**DATA FINE VALIDITA’** impostando queste date andremo a verificare se il centro di costo è valido alla data di registrazione (o alla data del documento), cioè il menù a tendina dei centri mostrerà solo quelli validi alla data (o con range di validità vuoto)
-- FLAG **VALORIZZABILE**: indica se il centro può essere valorizzato in contabilità o nei documenti o se è un centro di struttura logica
-- FLAG **VISIBILE IN PRODUZIONE**: questo rende visibile quel centro nella tabella [Centri di costo](/docs/configurations/tables/production/cost-center) presente in produzione;
-- **CENTRO DI RESPONSABILITA’**. È una tabella libera dove indico chi è il responsabile di quel centro, non ha influenza nelle logiche di gestione della contabilità analitica, ma può essere utilizzato per segnalare tramite supervisor eventuali sforamenti di budget al dipendente collegato.
-
-## Impostazioni di controllo
-
-- **CONTI DA RIASSEGNARE**: solo un centro può avere questo flag impostato (nella stessa società). Andiamo ad utilizzare questo flag all’interno dei centri di comodo, in particolare in un centro generico “VALORI CON ATTRIBUZIONE NEL CONTROLLING”. 
-Questo flag identifica una specie di centro di default dove la contabilità generale assegna quei costi che non sa attribuire in modo preciso. Potrebbero altresì esserci logiche di cui la contabilità non ha elementi certi per valorizzare i dati al momento della registrazione, o che richiederebbero troppo tempo per essere gestiti.
+El formulario se encuentra en la ruta: **Tablas > Control (Tabelle) > Controlling > Contabilidad analítica (Contabilità analitica) > centri aziendali (Centri aziendali)**
 
 :::tip Nota
-Esempio: il costo degli affitti potrebbe essere gestibile già nel piano dei conti con delle percentuali fisse, ma passando per questo centro generico abbiamo la possibilità di gestire un *cost driver* nel quale impostare magari i metri quadri dei vari centri e da qui derivare la mia percentuale. Variando il driver, andremo a valorizzare (solo nel controlling) la nuova percentuale senza dover intervenire sullo storico già movimentato in contabilità.
-Oppure il consumo in kwh delle varie macchine, dati che la contabilità non sa dove reperire, per i quali quindi torna comodo parcheggiare i valori in questo centro generico e poi a fine periodo, una volta che so quanto è stato consumato, andrò a valorizzare la logica solo nel controlling demandandola ad un *cost driver*.
+La tabla es de interés solo en las empresas con el indicador *controlling* activo.
 :::
 
-- **CENTRO DEFAULT PATRIMONIALE**: Identifica un centro generico al quale assegnare tutti i movimenti patrimoniali della contabilità. Normalmente tutta la gestione dell’analitica viene legata solo all’economico, ma potrebbe essere interesse dell’azienda avere una quadratura completi di dati di bilancio nell’analitica. Il centro va di pari passo con il flag di valorizzazione del patrimoniale nel Controlling disponibile all'interno della *Divisione*.
+La tabla permite la definición de la estructura, incluso en diferentes niveles, y las características de los centros empresariales.
 
-- **CENTRO DI DEFAULT PER I PROGETTI** identifica quello che è il centro aziendale generico che accoglie i costi/ricavi diretti di progetto/commessa. Come abbiamo spiegato a livello di tabella *Dimensioni*, abbiamo una specifica dimensione di analisi dei valori a progetto: dato che ci deve sempre essere un centro nell’analitica, quando valorizzo un costo ed un ricavo diretto di progetto/commessa potrò utilizzare il centro generico con questo FLAG oppure dovrò valorizzare più centri commessa impostando la [TABELLA ASSOCIAZIONE CENTRI/COMMESSE](/docs/configurations/tables/controlling/analytical-accounting/projects-centers-association).
+#### Botones específicos
 
-- [**MODELLO DI RICLASSIFICAZIONE**](/docs/controlling/reclassifications/create-reclassification-model): permette di abbinare al centro aziendale un modello di riclassificazione al fine di determinare il totale dei costi assegnati al centro per ottenere l’ indice di costo del centro stesso. Questo perchè alcuni centri (in genere produttivi) sono tipicamente valorizzati in termini di grandezze fisiche (es. ore di lavoro o numero di pezzi utilizzati) ed è necessario determinare la tariffa di valorizzazione per il costo della singola ora di lavoro o del singolo pezzo. Il modello di riclassificazione tipicamente determinerà i costi totali del centro che saranno suddivisi per il valore totale delle ore (ad esempio, o dei pezzi), caricati sul centro stesso.
+**Nuevo CDC (Nuovo CDC)**: permite insertar un nuevo centro de costo. |  
+**nuovo legame cdc**: permite insertar un subnivel respecto al nivel en el que se encuentra. |  
+**cancella legame cdc**: permite eliminar el subnivel del CDC. |
+
+
+:::tip **Modo de inserción de nuevos centros**
+La estructura en árbol creada para organizar los centros y los centros en detalle son visibles en la cuadrícula central del formulario, pero los nuevos centros se insertan completando los campos en la zona inferior de la máscara.
+ATENCIÓN: algunos campos son, sin embargo, modificables actuando directamente sobre la fila de la cuadrícula superior después de haber insertado el nuevo centro (por ejemplo, el campo *Cost driver*).
+:::
+
+## Configuraciones generales
+
+### Campos obligatorios de la columna izquierda  
+- [**dimensione**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) de pertenencia  
+- **codice** alfanumérico, máximo 15 caracteres  
+- **descrizione** del centro  
+- **categoria** del centro  
+
+### Campos no obligatorios de la columna izquierda  
+- **seconda descrizione**  
+- **TIPOLOGÍA DEL CENTRO (TIPOLOGIA DEL CENTRO)** (directo/indirecto) selección que no influye en las elaboraciones a nivel general  
+
+### Campos no obligatorios de la columna derecha  
+- **data inizio**/**FECHA FIN DE VALIDEZ (DATA FINE VALIDITA’)** estableciendo estas fechas, verificaremos si el centro de costo es válido en la fecha de registro (o en la fecha del documento), es decir, el menú desplegable de los centros mostrará solo los válidos para esa fecha (o con rango de validez vacío)  
+- INDICADOR **valorizzabile**: indica si el centro puede ser valorizado en contabilidad o en documentos, o si es un centro de estructura lógica  
+- INDICADOR **visibile in produzione**: esto hace que el centro sea visible en la tabla [Centros de costo (Centri di costo)](/docs/configurations/tables/production/cost-center) presente en producción;  
+- **CENTRO DE RESPONSABILIDAD (CENTRO DI RESPONSABILITA’)**. Es una tabla libre donde indico quién es el responsable de ese centro, no influye en las lógicas de gestión de la contabilidad analítica, pero puede ser utilizado para notificar, mediante supervisor, eventuales sobrecostos al empleado conectado.  
+
+## Configuraciones de control
+
+- **conti da riassegnare**: solo un centro puede tener este indicador activo (en la misma empresa). Utilizaremos este indicador dentro de los centros de conveniencia, en particular en un centro genérico “VALORES CON ATRIBUCIÓN EN CONTROL (VALORI CON ATTRIBUZIONE NEL CONTROLLING)”.  
+Este indicador identifica una especie de centro predeterminado donde la contabilidad general asigna aquellos costos que no sabe atribuir de manera precisa. También podrían existir lógicas que la contabilidad no tiene elementos ciertos para valorar los datos en el momento de la registración, o que requerirían demasiado tiempo para gestionarse.  
+
 :::tip Nota
-Il modello di riclassificazione da abbinare al centro aziendale per la determinazione della tariffa può dipendere dall'impostazione teorica che si vuole dare al proprio sistema di controllo di gestione, in ogni caso, comunque, sarà un modello che tende a determinare il costo complessivo del centro anche attraverso l'attribuzione di quota parte dei costi indiretti e comuni. Nel dettaglio del modello di riclassificazione è previsto di indicare tramite apposito flag il nodo (la riga) che espone il risultato della riclassificazione e dunque il totale dei costi del centro che diventerà il numeratore del quoziente (esempio Totale cosi del centro / totale ore di lavoro del centro) al fine di determinare ad esempio il costo orario del centro. Nelle immagini si può vedere un esempio di modello specifico denominato Quadro controllo costi. Tale modello è configurato per gestire come numeratore del rapporto la riga Totale costi di Funzionamento.
+Ejemplo: el costo de los alquileres podría manejarse ya en el plan de cuentas con porcentajes fijos, pero al pasar por este centro genérico, tenemos la posibilidad de gestionar un *cost driver* donde establecer, por ejemplo, los metros cuadrados de los varios centros y de ahí derivar mi porcentaje. Al variar el driver, valoraremos (solo en control) el nuevo porcentaje sin tener que intervenir sobre el histórico ya registrado en contabilidad.  
+O el consumo en kWh de las varias máquinas, datos que la contabilidad no sabe dónde obtener, por lo cual resulta conveniente estacionar los valores en este centro genérico y luego, al final del período, una vez que sepa cuánto se ha consumido, valoraré la lógica solo en control, derivándola a un *cost driver*.
 :::
 
-![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/corporate-center-model-connection.png)
+- **centro default patrimoniale**: Identifica un centro genérico al que se asignan todos los movimientos patrimoniales de la contabilidad. Normalmente, toda la gestión de la analítica se relaciona solo con el ámbito económico, pero podría ser interés de la empresa tener un cuadro completo de datos de balance en la analítica. El centro va de la mano con el indicador de valorización patrimonial en Control disponible dentro de la *divisione*.
 
-![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/QCC-model.png)
+- **centro di default per i progetti** identifica el centro empresarial genérico que acoge los costos/ingresos directos de proyecto/encargo. Como hemos explicado a nivel de la tabla *dimensioni*, tenemos una dimensión específica para analizar los valores del proyecto: dado que siempre debe haber un centro en la analítica, cuando valorizo un costo y un ingreso directo de proyecto/encargo, podré utilizar el centro genérico con este INDICADOR o deberé valorar más centros de encargo configurando la [TABLA ASOCIACIÓN CENTROS/ENCARGOS (TABELLA ASSOCIAZIONE CENTRI/COMMESSE)](/docs/configurations/tables/controlling/analytical-accounting/projects-centers-association).  
 
-- **TIPO MISURAZIONE**: possiamo misurare con tre metodologie
-    - *in dimensione fisica*
-    - *in percentuale*
-    - *in percentuale e grandezza fisica*.
+- [**modello di riclassificazione**](/docs/controlling/reclassifications/create-reclassification-model): permite asociar al centro empresarial un modelo de reclasificación con el fin de determinar el total de los costos asignados al centro para obtener el índice de costo del mismo. Esto porque algunos centros (generalmente productivos) están típicamente valorizados en términos de magnitudes físicas (por ejemplo, horas de trabajo o número de piezas utilizadas) y es necesario determinar la tarifa de valorización para el costo de la hora de trabajo o de la pieza única. El modelo de reclasificación determinará los costos totales del centro que se dividirán por el valor total de las horas (por ejemplo, o de las piezas), cargados en el centro mismo.  
+:::tip Nota
+El modelo de reclasificación que se debe asociar al centro empresarial para la determinación de la tarifa puede depender de la configuración teórica que se desea dar a su sistema de control de gestión, en todo caso, será un modelo que tiende a determinar el costo total del centro también a través de la atribución de una parte de los costos indirectos y comunes. En el detalle del modelo de reclasificación se debe indicar mediante un indicador específico el nodo (la fila) que expone el resultado de la reclasificación y por lo tanto el total de los costos del centro que se convertirá en el numerador de la relación (ejemplo Total de costos del centro / total horas de trabajo del centro) con el fin de determinar, por ejemplo, el costo horario del centro. En las imágenes se puede ver un ejemplo de modelo específico denominado Cuadro de control de costos. Este modelo está configurado para gestionar como numerador de la relación la fila Total costos de Funcionamiento.
+:::
 
-Se selezioniamo quest’ultima in modo da visualizzare tutte le opzioni disponibili, avremo
+![Imagen](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/corporate-center-model-connection.png)
 
-- **FILTRO VALORI DENOMINATORE**: con questo campo, per calcoli a percentuale, andiamo a definire con che logica calcolare il denominatore per il calcolo indici percentuale. Le opzioni disponibili sono
-    - *02 Totale dare*
-    - *03 Totale avere*
-    - *04 Margini*
-    - *05 Su sottoconto selezionato*
-    - *06 Su conto selezionato*
-    - *07 Ad esclusione dei sottoconti selezionati*
-    - *08 Ad esclusione dei conti selezionati*
+![Imagen](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/QCC-model.png)
 
-Selezionando il codice 02 Totale dare, ad esempio, andremo a sommare solo il dare dei centri indicati nella griglia in basso a sinistra, con il codice 03 l’avere, 04 i margini cioè la differenza dare-avere, le opzioni successive abiliteranno anche la griglia di destra per filtrare in modo opportuno i dati dei centri.
+- **tipo misurazione**: podemos medir con tres metodologías  
+    - *en dimensión física (in dimensione fisica)*  
+    - *in percentuale*  
+    - *en porcentaje y magnitud física (in percentuale e grandezza fisica)*.  
 
-- [**UNITA' DI MISURA 1** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), [**UNITA' DI MISURA 2**], **PARTE FISSA** e **PARTE VARIABILE**. Sono 4 campi legati al tipo di calcolo a quantità, dove andare a definire qual è l’unità di misura da ricercare per ottenere il totale della quantità da mettere a denominatore dell’indice fisico: possiamo quindi indicare due unità di misura (UM1 e UM2) per il calcolo di un doppio indice, mentre è chiaramente la stessa unità di misura che si usa per la quota fissa e la quota variabile del primo o secondo indice.
+Si seleccionamos esta última para visualizar todas las opciones disponibles, tendremos  
+
+- **filtro valori denominatore**: con este campo, para cálculos porcentuales, definimos con qué lógica calcular el denominador para el cálculo de índices porcentuales. Las opciones disponibles son  
+    - *totale dare*  
+    - *totale avere*  
+    - *04 Márgenes (Margini)*  
+    - *05 En subcuenta seleccionada (Su sottoconto selezionato)*  
+    - *06 En cuenta seleccionada (Su conto selezionato)*  
+    - *07 Excluyendo las subcuentas seleccionadas (Ad esclusione dei sottoconti selezionati)*  
+    - *08 Excluyendo las cuentas seleccionadas (Ad esclusione dei conti selezionati)*  
+
+Seleccionando el código 02 Total debe, por ejemplo, sumaremos solo el debe de los centros indicados en la cuadrícula en la parte inferior izquierda, con el código 03 el haber, 04 los márgenes, es decir, la diferencia debe-haber, las opciones siguientes habilitarán también la cuadrícula de la derecha para filtrar adecuadamente los datos de los centros.  
+
+- [**UNIDAD DE MEDIDA 1 (UNITA' DI MISURA 1)**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), [**UNIDAD DE MEDIDA 2 (UNITA' DI MISURA 2)**], **PARTE FIJA (PARTE FISSA)** y **PARTE VARIABLE (PARTE VARIABILE)**. Son 4 campos relacionados con el tipo de cálculo por cantidad, donde definimos cuál es la unidad de medida a buscar para obtener el total de la cantidad que se pondrá en el denominador del índice físico: podemos así indicar dos unidades de medida (UM1 y UM2) para el cálculo de un doble índice, mientras que claramente es la misma unidad de medida que se usa para la parte fija y la parte variable del primer o segundo índice.
 
 :::tip Nota
-Il calcolo su grandezza fisica, tipico dei centri produttivi, consentirà di ottenere le tariffe di costo dei centri come € per ora macchina o ore uomo, al fine di poter calcolare e verificare i costi standard utilizzati nel Costo prodotto per creare le stime di costo in distinta base piuttosto che un preventivo.
+El cálculo sobre magnitud física, típico de los centros productivos, permitirá obtener las tarifas de costo de los centros como € por hora máquina o horas hombre, con el fin de poder calcular y verificar los costos estándar utilizados en el Costo del producto para crear las estimaciones de costo en la lista de materiales en lugar de un presupuesto.
 :::
 
-- **RIFERIMENTO DI MISURAZIONE DEL CENTRO**: possiamo indicare quali campi dello storico movimenti fisici andare a filtrare per identificare le quantità del nostro centro: potrà essere in particolare il centro di origine, il centro di destinazione, oppure in via prioritaria la destinazione altrimenti l’origine.
+- **riferimento di misurazione del centro**: podemos indicar qué campos del histórico de movimientos físicos filtrar para identificar las cantidades de nuestro centro: puede ser, en particular, el centro de origen, el centro de destino, o prioritariamente el destino, de lo contrario el origen.
 
-## Localizzazioni
+## Localizaciones
 
-In caso di installazione con localizzazioni geografiche differenziate, è possibile sfruttare la sezione Localizzazioni al fine di gestire descrizioni in lingua alternativa, che sarà possibile sfruttare per esempio nella stampa dell’Analisi centri di costo.
+En caso de instalaciones con localizaciones geográficas diferenciadas, es posible aprovechar la sección Localizaciones para gestionar descripciones en idiomas alternativos, que se podrán utilizar, por ejemplo, en la impresión del Análisis de centros de costo.

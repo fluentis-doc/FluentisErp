@@ -1,22 +1,12 @@
 ---
-title: Precedenti
+title: precedenti
 sidebar_position: 4
 ---
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+Desde la pestaña de precedentes, es posible proceder con la anulación de las contabilizaciones realizadas. La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutados). Un doble clic en la sección de registros permitirá visualizar la contabilización correspondiente.
 
-
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Ricerca la lista delle creazioni eseguite. |
-| Rollback contabilizzazione | Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i compensi associati. |
-| Rollback registrazioni | Il pulsante esegue il ripristino della registrazione selezionata. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Busca la lista de las creaciones realizadas. |
+| Deshacer contabilización (Rollback contabilizzazione) | Con este botón se eliminará toda la contabilización realizada, junto con todos los compensos asociados. |
+| Deshacer registros (Rollback registrazioni) | El botón restaura la contabilización seleccionada. |

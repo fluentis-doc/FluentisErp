@@ -1,51 +1,48 @@
 ---
-title: Utilizzo fidi
+title: utilizzo fidi
 sidebar_position: 3
 ---
 
-La maschera **Utilizzo fidi** consente di creare e memorizzare un calcolo di utilizzo del fido cliente per ogni conto cliente e visualizzarne quindi una serie storica. Nella lista dei calcoli visualizzata nella maschera saranno visualizzate in rosso le righe con scostamento.
+La máscara **utilizzo fidi** permite crear y almacenar un cálculo de uso del crédito del cliente para cada cuenta cliente y visualizar, por lo tanto, una serie histórica. En la lista de cálculos visualizada en la máscara, las filas con desvío se mostrarán en rojo.
 
-Per elaborare un nuovo calcolo premere il tasto **Nuovo**.
+Para elaborar un nuevo cálculo, presione el botón **nuovo**.
 
-All'apertura della maschera di dettaglio inserire il conto del cliente da analizzare.
+Al abrir la máscara de detalle, ingrese la cuenta del cliente a analizar.
 
-Inserire o modificare la data di inizio calcolo che rappresentala data dalla quale vengono letti i dati utilizzati nel calcolo.
+Ingrese o modifique la fecha de inicio del cálculo que representa la fecha desde la cual se leen los datos utilizados en el cálculo.
 
-Premere quindi il pulsante **Calcola**.
+Presione entonces el botón **calcola**.
 
-Il calcolo può essere salvato con il comando **Salva**.
+El cálculo se puede guardar con el comando **salva**.
 
-La **data di riferimento** costituisce il gorno in riferimento al quale viene calcolato il fido disponibile.
+La **data di riferimento** constituye el día respecto al cual se calcula el crédito disponible.
 
-ATTENZIONE: nel caso, ad esempio did ricevute bancarie emesse e presentate al salvo buon fine, anche laddove queste siano state accreditate con l'apposita procedura contabile, ai fini del fido cliente l'importo si considera ancora impegnato fino alla data di scadenza della partita che ha generato la ricevuta bancaria. Pertanto modificando la data di riferimento del calcolo oltre detta data si potrà notare che il valore del fido viene liberato per l'importo corrispondente.
+ATENCIÓN: en el caso, por ejemplo, de recibos bancarios emitidos y presentados para su aceptación, incluso cuando estos se hayan acreditado con el procedimiento contable correspondiente, a efectos del crédito del cliente, el monto se considera aún comprometido hasta la fecha de vencimiento de la partida que generó el recibo bancario. Por lo tanto, al modificar la fecha de referencia del cálculo más allá de dicha fecha, se podrá notar que el valor del crédito se libera por el monto correspondiente.
 
-All'interno dei documenti di vendita, ad esempio l'ordine cliente, invece, il calcolo del fido disponibile (visibile sulla testata) è sempre vincolato alla data odierna, senza poter effettuare modifiche della data di riferimento, pertanto un nuovo ordine, se fuori fido, ,non sarà evadibile (salvo percorso autorizzativo) fino al giorno della scadenza dell'ipotetico effetto che nel ibera un valore sufficiente.
+Dentro de los documentos de venta, como en el pedido del cliente, sin embargo, el cálculo del crédito disponible (visible en el encabezado) siempre está vinculado a la fecha de hoy, sin poder realizar modificaciones a la fecha de referencia, por lo que un nuevo pedido, si excede el crédito, no podrá ser cumplido (salvo por procedimiento de autorización) hasta el día de vencimiento del hipotético efecto que libere un valor suficiente.
 
+El botón **aggiorna fido cliente** actualiza el registro del cliente ingresado en el encabezado del cálculo y establece en la base de datos el valor que se lee en el campo **fido stimato**.
 
-Il Pulsante **Aggiorna fido cliente** va ad aggiornare l'anagrafica del cliente inserito nella testata del calcolo e imposta in anagrafica il valore che legge nel campo **Fido stimato**.
+Este campo, a su vez, se poblado por el comando Calcular aplicando el valor del campo **moltiplicatore valutazione fido** (por ejemplo, 1) a un cálculo (ponderado) basado en el facturado del período considerado para ese cliente.
 
-Questo campo, a sua volta viene popolato dal comando Calcola applicando il valore del campo **Moltiplicatore valutazione fido** (ad es. 1) ad un calcolo (ponderato) basato sul fatturato del periodo considerato per quel cliente.
+En detalle, el cálculo se desarrolla de la siguiente manera:
 
-In dettaglio il calcolo è così sviluppato:
+Facturado 12M” / 365 * “Multiplicador” * “Días de dilación promedio”, donde estos últimos se calculan a partir de los vencimientos de las facturas de los últimos 12 meses, como “(suma(Importe vencimiento *DíasDilacion))/(suma total vencimientos).
 
-Fatturato 12M” / 365 * “Moltiplicatore” * “Giorni dilazione medi”, dove questi ultimi sono a loro volta calcolati sulle scadenze delle fatture degli ultimi 12 mesi, come “(somma(Importo scadenza *GiorniDilazione))/(somma totale scadenze).
+**OTROS CAMPOS DEL FORMULARIO:**
 
-**ALTRI CAMPI DELLA FORM:**
+**Fact. 12 m (Fatt 12 m)**: facturado de los doce meses anteriores.
 
-**Fatt 12 m**. = fatturato dei dodici mesi precedenti
+**partite**: deudor y respectivo saldo.
 
-**Partite** dare avere e relativo saldo
+**Deber / Haber (Dare / avere)**: movimientos de cobro de registros provisionales (dato informativo).
 
-**Dare / avere** = movimenti di incasso da registrazioni provvisorie (dato informativo)
+**Saldo Deber / Haber (Saldo dare / avere)**: movimiento contable si se ha elegido el modo contable.
 
-**Saldo dare / avere** = movimento contabile se è stata scelta la modalità contabile
+**Fact. por contabilizar (Fatt. da contabilizzare)**: no contabilizadas (haber porque hay Notas de Crédito). Adelantos es un deudor para facturas con líneas de adelanto.
 
-**Fatt. da contabilizzare** = non ancora contabilizzate,  (avere perché ci sono le Note di Credito) Acconti è un di cui per fatture con righe acconti
+**DDT por facturar (DDT da fatturare)**: (haber si DDT de devolución).
 
-**DDT da fatturare** (avere se DDT di reso)
+**Valor y número de impagos (Valore e nr insoluti)**: estadístico que no entra en el cálculo.
 
-**Valore e nr insoluti** (statistico non entra nel calcolo)
-
-**Scaduto** = quanto delle partite aperte sono scadute 
-
-
+**scaduto**: cuánto de las partidas abiertas ha vencido.

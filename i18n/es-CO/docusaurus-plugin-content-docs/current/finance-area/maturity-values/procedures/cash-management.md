@@ -1,119 +1,115 @@
 ---
-title: Gestione Liquidità
+title: Gestión de Liquidez (Gestione Liquidità)
 sidebar_position: 6
 ---
 
-L’utilità della presente form è quello di dare un quadro semplice e veloce della situazione bancaria in modo da verificare la disponibilità per ogni conto bancario ed eventualmente spostare/ritardare l'impegno o cambiare la banca.
+La utilidad de este formulario es proporcionar un panorama simple y rápido de la situación bancaria para verificar la disponibilidad en cada cuenta bancaria y, si es necesario, trasladar/retrasar el compromiso o cambiar de banco.
 
+### Modalidades Operativas:
 
-### Modalità Operative: 
+Existen dos posibles modalidades: con o sin el anclaje a un flujo de caja (cash flow).
 
-Sono presenti due possibili modalità: con o senza l’aggancio ad un cash flow. 
+A través del flujo de caja es posible considerar también los datos extraídos del ciclo activo/pasivo, con el fin de extender el periodo de análisis más allá de las evidencias contables de los deudores.
 
-Tramite il cash flow è possibile prendere in considerazione anche i dati prelevati dal ciclo attivo/passivo, in modo da estendere il periodo di analisi oltre a quelle che sono le sole evidenze contabili dei partitari. 
+Si no se utiliza el flujo de caja, solo se leerán los saldos contables (para las disponibilidades) y los deudores (por esta razón, la misma entrada de menú se ha colocado tanto en el menú de partidas como en el módulo de flujo de caja…).
 
-Se non si usa il cash flow, si leggeranno solo saldi contabili (per le disponibilità) ed i partitari (per questo motivo la stessa entry di menù è stata collocata sia nel menu delle partite che nel modulo cash flow…).
-
-:::danger Attenzione
-Quello che l’utente vede all’apertura della maschera è l’ultima situazione salvata, così come l’ha gestita l’ultima volta. Le modifiche che dovesse fare ai valori o ai dati, se vengono confermati con un nuovo salvataggio, andranno a storicizzare la situazione di partenza e a memorizzare i nuovi dati, che saranno riproposti riaprendo la maschera in seguito. 
-Le precedenti elaborazioni fatte vengono memorizzate nel database ma, attualmente, non è ancora prevista la possibilità di consultare le versioni precedenti.
+:::danger Atención
+Lo que el usuario ve al abrir la máscara es la última situación guardada, tal y como fue gestionada la última vez. Los cambios que se realicen en los valores o datos, si se confirman con un nuevo guardado, irán a historicizar la situación inicial y a almacenar los nuevos datos, que serán presentados nuevamente al reabrir la máscara más tarde. 
+Las elaboraciones anteriores realizadas se almacenan en la base de datos, pero actualmente no se prevé la posibilidad de consultar versiones anteriores.
 :::
 
+### Lógicas específicas del flujo de caja
+Si ya existe un flujo de caja calculado y abrimos por primera vez la máscara de Gestión de liquidez, el usuario puede seleccionar el flujo de caja del cual obtener los datos procesados.
 
-### Logiche specifiche del cash flow
-Se è già presente un cash flow  calcolato ed apriamo per la prima volta la maschera di Gestione liquidità, l’utente può selezionare il cash flow dal quale recepire i dati elaborati.
+Una vez seleccionado un flujo de caja, Fluentis tomará los saldos de las cuentas financieras para insertarlos en la cuadrícula superior de las disponibilidades.
 
-Una volta selezionato un cash flow, Fluentis prenderà i saldi dei conti finanziari per inserirli nella griglia superiore delle disponibilità.
-
-
-**ATTENZIONE: occorre aprire l’expander *Liquidità disponibile* per vedere la lista dei conti bancari, con i valori dei fidi e degli utilizzi nel portafoglio.**
+**ATENCIÓN: es necesario abrir el expander *Liquidez disponible* para ver la lista de cuentas bancarias, con los valores de los créditos y de los usos en la cartera.**
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-1.png)
 
-tutti gli altri valori saranno da riprendere dal pannello laterale *Cash flow*, ricercando con il pulsante di ***Ricerca cash flow***, selezionando le righe e aggiungendole con il pulsante ***Crea dal flusso di cassa***.
+Todos los demás valores se tomarán del panel lateral *Flujo de caja*, buscando con el botón de ***Buscar flujo de caja***, seleccionando las filas y agregándolas con el botón ***Crear desde el flujo de caja***.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-2.png)
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-3.png)
 
-L’utente può creare un nuovo cash flow tramite il pulsante ***Calcola cash flow***, che va a creare una nuova simulazione con i parametri di default salvati (in modo simile a quanto avviene per creare i dati da esportare su altri software di tesoreria come DocFinance: 
-l'elaborazione è equivalente all' apertura della maschera di *creazione automatica cash flow*, aggiunta di una descrizione e avvio dell'elaborazione senza aggiunta di altri parametri): 
+El usuario puede crear un nuevo flujo de caja mediante el botón ***Calcular flujo de caja***, que generará una nueva simulación con los parámetros predeterminados guardados (de manera similar a como se hace para crear datos que se exportarán a otros software de tesorería como DocFinance: la elaboración es equivalente a abrir la máscara de *creación automática de flujo de caja*, añadir una descripción y comenzar la elaboración sin añadir otros parámetros): 
 
-in questo caso, completata l’elaborazione, Fluentis chiederà se si vogliono aggiornare i dati o meno nella *Gestione della liquidità* attiva. 
+en este caso, completada la elaboración, Fluentis preguntará si se desea actualizar los datos o no en la *Gestión de liquidez* activa. 
 
-In alternativa l’utente può anche creare dal cash flow una nuova simulazione e poi riaprire la maschera di gestione della liquidità: in questo caso, all’apertura della *Gestione della liquidità*, avrà un messaggio che chiede se si vuole aggiornare i dati con quelli del nuovo cash flow o meno.
+Alternativamente, el usuario también puede crear desde el flujo de caja una nueva simulación y luego volver a abrir la máscara de gestión de liquidez: en este caso, al abrir la *Gestión de liquidez*, tendrá un mensaje que pregunta si se desean actualizar los datos con los del nuevo flujo de caja o no.
 
-In entrambi i casi, se non si aggiornano i dati non succederà nulla, mentre, se vengono aggiornati, Fluentis andrà a verificare i cambiamenti alle righe precedenti, per andare ad aggiornare i valori: i dati della liquidità saranno aggiornati con quelli nuovi disponibili dal nuovo previsionale, mentre per quanto riguarda partite e altri flussi Fluentis verifica se la riga esiste ancora, in modo da cancellare il record se non esiste più la partita, oppure aggiornerà i valori (se il residuo è cambiato o la data scadenza è cambiata). 
+En ambos casos, si no se actualizan los datos no pasará nada, mientras que si se actualizan, Fluentis verificará los cambios en las filas anteriores para actualizar los valores: los datos de la liquidez se actualizarán con los nuevos disponibles del nuevo pronóstico, mientras que en lo que respecta a las partidas y otros flujos, Fluentis verifica si la fila aún existe, para eliminar el registro si ya no existe la partida, o actualizará los valores (si el remanente ha cambiado o la fecha de vencimiento ha cambiado). 
 
-Non vengono sovrascritte dai nuovi dati quelle impostazioni fatte a mano in precedenza dall’ utente (ad esempio nel campo ‘importo da pagare’, o nella data prevista) per non perdere tali dati.
+No se sobrescribirán con los nuevos datos aquellas configuraciones hechas manualmente anteriormente por el usuario (por ejemplo, en el campo ‘importe a pagar’, o en la fecha prevista) para no perder dichos datos.
 
-Fatto questo l’utente potrà leggere dal pannello cash flow i nuovi record previsionali ed aggiungerli alla gestione corrente
+Hecho esto, el usuario podrá leer desde el panel de flujo de caja los nuevos registros pronosticados y agregarlos a la gestión actual.
 
-### Logiche specifiche quando non c’è il cash flow
-In questo caso non accade nulla all’apertura della maschera.
-L’utente ha a disposizione il pulsante ***Aggiorna partite*** che consente di fare un allineamento dei record di simulazione (la griglia in basso) rispetto alla situazione attuale delle partite. Se la partita è chiusa allora sarà eliminata dalla gestione, altrimenti sarà aggiornata con il nuovo residuo o le nuove date.
+### Lógicas específicas cuando no hay flujo de caja
+En este caso, no ocurre nada al abrir la máscara.
+El usuario dispone del botón ***Actualizar partidas*** que permite hacer un alineamiento de los registros de simulación (la cuadrícula inferior) respecto a la situación actual de las partidas. Si la partida está cerrada, será eliminada de la gestión, de lo contrario, será actualizada con el nuevo remanente o las nuevas fechas.
 
-### Logiche generali
-#### Griglia in alto
-L’utente può riprendere dal pannello *Record* i saldi dei conti che preferisce, per inserirli tra le disponibilità. Questo pannello mostra la *visualizzazione conti*, con le righe di dettaglio dei vari movimenti: selezionando una riga e premendo sul pulsante ***Creazione da registrazioni*** Fluentis prenderà il conto ed inserirà una riga con il <u>saldo ad oggi</u>, <u>**non con l’importo del movimento specifico selezionato**</u>.
-E' possibile anche inserire manualmente i record delle disponibilità, o sovrascrivere l’importo valuta e/o euro.
+### Lógicas generales
+#### Cuadrícula superior
+El usuario puede tomar desde el panel *Registros* los saldos de las cuentas que prefiera, para insertarlos entre las disponibilidades. Este panel muestra la *visualización de cuentas*, con las filas de detalle de los varios movimientos: seleccionando una fila y presionando el botón ***Creación desde registros***, Fluentis tomará la cuenta e insertará una fila con el <u>saldos hasta hoy</u>, <u>**no con el importe del movimiento específico seleccionado**</u>.
+Es posible también ingresar manualmente los registros de disponibilidad, o sobrescribir el importe en moneda y/o euros.
 
-:::note Altri campi della griglia
+:::note Otros campos de la cuadrícula
 
-**Linea di credito globale**: è il castelletto globale dell’anagrafica banca
+**Línea de crédito global**: es el total global del registro bancario.  
 
-**Linea di credito anticipi**: è il castelletto anticipi dell’anagrafica banca
+**Línea de crédito anticipos**: es el monto anticipado del registro bancario.  
 
-**Linea di credito effetti SBF**: è il castelletto sbf dell’anagrafica banca
+**Línea de crédito efectos SBF**: es el monto del SBF del registro bancario.  
 
-**Saldo Anticipi**: rappresenta un ‘Saldo anticipi su fattura’, è il totale presentato nel modulo *anticipi e incassi* (con data scadenza superiore ad ‘oggi’)
+**Saldo Anticipos**: representa un ‘Saldo anticipos sobre factura’, es el total presentado en el módulo *anticipos y recaudaciones* (con fecha de vencimiento mayor a ‘hoy’).  
 
-**Saldo SBF**: rappresenta il ‘Saldo effetti presentati’, il totale degli effetti presentati nel portafoglio (con data scadenza superiore ad ‘oggi’)
+**Saldo SBF**: representa el ‘Saldo de efectos presentados’, el total de los efectos presentados en la cartera (con fecha de vencimiento mayor a ‘hoy’).  
 
-**Residuo per Anticipi**: rappresenta il ‘Castelletto residuo per anticipi’, la differenza dei due valori precedenti relativi agli anticipi su fattura
+**Remanente para Anticipos**: representa el ‘Saldo remanente para anticipos’, la diferencia de los dos valores anteriores relativos a los anticipos sobre factura.  
 
-**Residuo per SBF**: rappresenta il ‘Castelletto residuo per presentazione sbf’, la differenza dei due valori precedenti relativi agli effetti
+**Remanente para SBF**: representa el ‘Saldo remanente para la presentación del SBF’, la diferencia de los dos valores anteriores relativos a los efectos.  
 
-**Liquidità disponibile**: somma di importo del saldo contabile + effetti presentati
+**Liquidez disponible**: suma del importe del saldo contable + efectos presentados.  
 
-**Liquidità disponibile progressiva**: è un progressivo di riga del valore precedente. Il valore dell’ultima riga è quello che si vede in testata dell’expander.
+**Liquidez disponible progresiva**: es un progresivo de fila del valor anterior. El valor de la última fila es el que se ve en la cabecera del expander.
 :::
 
-#### Griglia in basso
-Anche in questa griglia l’utente può inserire nuove righe manualmente, anche senza collegare alcun conto (ad esempio per rilevare uscite/entrate extracontabili come paghe o iva da versare). 
+#### Cuadrícula inferior
+En esta cuadrícula, el usuario también puede insertar nuevas filas manualmente, incluso sin conectar ninguna cuenta (por ejemplo, para registrar salidas/entradas extracontables como sueldos o IVA por pagar). 
 
-I campi modificabili sono quelli della *Data prevista*, del *Numero sequenziale*, *importo monetario da pagare*, i flag *Escludi* e *Nascondi*. 
+Los campos modificables son los de *Fecha prevista*, *Número secuencial*, *importe monetario a pagar*, los indicadores *Excluir* y *Ocultar*.  
 
-Le righe diventano rosse quando il residuo progressivo di riga va in negativo.
+Las filas se vuelven rojas cuando el remanente progresivo de la fila se vuelve negativo.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-4.png)
 
-La **data prevista** è la *data prevista* presente all'interno della partita (oppure è impostata uguale ad oggi se questa è inferiore): modificare il valore in questa griglia della presente form va ad aggiornare la data prevista all'interno della partita collegata (al salvataggio). 
+La **fecha prevista** es la *fecha prevista* presente dentro de la partida (o se establece igual a hoy si esta es anterior): modificar el valor en esta cuadrícula del presente formulario actualizará la fecha prevista dentro de la partida conectada (al guardar).
 
-Se la riga arriva dal cash flow sarà presa dalla data prevista che c’è nella riga di cash flow (o oggi se antecedente).
+Si la fila proviene del flujo de caja, será tomada de la fecha prevista que hay en la fila de flujo de caja (o hoy si es anterior).
 
-La **data scadenza** è la data ufficiale della partita (o del flusso di cash flow).
+La **fecha de vencimiento** es la fecha oficial de la partida (o del flujo de caja).
 
-Il **Numero sequenziale** è quello che mette in ordine di pagamento le righe: lo si può cambiare scrivendo a mano il nuovo valore o indirettamente tramite il pulsante **Modifica la data prevista**. Questo pulsante fa riposizionare le partite selezionate dopo quelle che già esistono alla data impostata, modificandone il numero con un valore superiore.
+El **Número secuencial** es el que ordena de pago las filas: se puede cambiar escribiendo manualmente el nuevo valor o indirectamente a través del botón **Modificar la fecha prevista**. Este botón reposiciona las partidas seleccionadas después de las que ya existen a la fecha establecida, modificando su número con un valor superior.
 
-**Conto/sottoconto** è editabile nelle righe manuali, non quelle che arrivano da partite/flussi
+**Cuenta/subcuenta** es editable en las filas manuales, no en las que provienen de partidas/flujos.
 
-**Nota** è compilata con la ragione sociale del cliente/fornitore, altrimenti sarà scritta manualmente la descrizione del flusso extracontabile che si sta inserendo manualmente
-gli importi non sono modificabili se sono legati a righe che arrivano da partite/flussi finanziari
+**Nota** se completa con la razón social del cliente/proveedor, de lo contrario se escribirá manualmente la descripción del flujo extracontable que se está insertando manualmente. 
+Los importes no son modificables si están ligados a filas que provienen de partidas/flujos financieros.
 
-il campo ***conto*** più a destra è il conto della banca d’appoggio (presa dalla partita o dal flusso di cash flow),
+El campo ***cuenta*** más a la derecha es la cuenta del banco de apoyo (tomada de la partida o del flujo de caja),
 
-il flag **Escludi**  esclude la riga dal calcolo, pur lasciandola visibile
+el indicador **Excluir** excluye la fila del cálculo, pero la deja visible.
 
-il flag **Nascondi** imposta automaticamente anche il flag *escludi* e serve a non conteggiare la riga e a non renderla visibile (tramite il flag di filtro in testata **Escludi** **nascosti**,  togliendo tale flag tornano visibili).
+El indicador **Ocultar** establece automáticamente también el indicador *excluir* y sirve para no contabilizar la fila y no hacerla visible (a través del filtro en la cabecera **Excluir** **ocultos**, al quitar este indicador regresan a ser visibles).
 
-I campi più a destra sono collegati al [**Livello autorizzativo**](/docs/configurations/tables/finance/authorization-levels/) (**data autorizzazione, nome, descrizione, codice, descrizione e nota di autorizzazione**).
+Los campos más a la derecha están relacionados con el [**Nivel de autorización**](/docs/configurations/tables/finance/authorization-levels/) (**fecha de autorización, nombre, descripción, código, descripción y nota de autorización**).
 
-### Altre opzioni:
-- il filtro per **conto banca** (in testata), in modo da avere nella griglia superiore le disponibilità di quella banca e nella inferiore le relative righe canalizzate su questo istituto;
+### Otras opciones:
+- el filtro por **cuenta bancaria** (en la cabecera), para que en la cuadrícula superior se tengan las disponibilidades de ese banco y en la inferior las filas canalizadas a esta institución;
 
-- il pulsante **Cambia banca** per cambiare massivamente la banca di riferimento delle righe selezionate
+- el botón **Cambiar banco** para cambiar masivamente el banco de referencia de las filas seleccionadas.
 
-- il pulsante **Autorizza le partite** , per procedere alle autorizzazioni (disponibile se l’utente può dare l’autorizzazione alla riga selezionata, (secondo il suo [**Livello autorizzativo**](/docs/configurations/tables/finance/authorization-levels/) già raggiunto)
+- el botón **Autorizar partidas**, para proceder a las autorizaciones (disponible si el usuario puede otorgar la autorización a la fila seleccionada, (según su [**Nivel de autorización**](/docs/configurations/tables/finance/authorization-levels/) ya alcanzado).
 
-- il pulsante **Crea pagamenti** che consente di creare la distinta del modulo *Pagamenti fornitori*, se le righe selezionate sono pagabili.
+- el botón **Crear pagos** que permite crear la lista del módulo *Pagos proveedores*, si las filas seleccionadas son pagables.

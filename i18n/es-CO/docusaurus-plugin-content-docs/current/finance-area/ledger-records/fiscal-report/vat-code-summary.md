@@ -1,34 +1,29 @@
 ---
-title: Riepilogo per codici iva
+title: Resumen por códigos IVA (Riepilogo per codici iva)
 sidebar_position: 10
 ---
 
-La stampa permette di estrarre e raggruppare, utilizzando varie possibilità di filtro e criteri di raggruppamento, movimenti iva.
+La impresión permite extraer y agrupar, utilizando varias opciones de filtro y criterios de agrupamiento, movimientos de IVA.
 
-La form è suddivisa in due zone: l'area dei filtri per la ricerca dei dati e la zona per la scelta dei criteri di raggruppamento.
+El formulario está dividido en dos zonas: el área de filtros para la búsqueda de datos y la zona para la elección de criterios de agrupamiento.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/vat-code-summary/image01.png)
 
-Tra i filtri principali, relativi alla finalità principale della stampa, si segnalano il codice iva (per ricercare i movimenti relativi) Da / A data competenza (IVA), il registro IVA e al data della registrazione contabile.
+Entre los filtros principales, relacionados con el propósito principal de la impresión, se destacan el código IVA (para buscar los movimientos relacionados), la fecha de competencia (Da / A data competenza (IVA)), el registro de IVA y la fecha de la anotación contable.
 
-Per utilizzare uno o più (a cascata) criteri di raggruppamento, effettuare un drag and drop dalla zona di destra verso quella di sinistra.
+Para utilizar uno o más (en cascada) criterios de agrupamiento, realice un arrastre y suelte desde la zona derecha hacia la izquierda.
 
-La stampa mostrerà a quel punto i dati raggruppandoli a seconda del criterio o dei criteri attivi.
+La impresión mostrará en ese momento los datos agrupándolos según el criterio o los criterios activos.
 
-I criteri di raggruppamento possono essere poi rimossi o riorganizzati nella posizione (si ricorda che la priorità è dall'alto verso il basso) con i comandi post nella ribbon bar.
+Los criterios de agrupamiento pueden ser luego eliminados o reorganizados en la posición (se recuerda que la prioridad es de arriba hacia abajo) con los comandos en la barra de cinta.
 
-- Cancella: toglie il criterio di raggruppamento 
-- Rimuovi raggruppamenti: toglie tutti i raggruppamenti
-- Sposta su: in presenza di più criteri sposta quello selezionato più in alto in modo da dare maggiore priorità
-- Sposta giù: in presenza di più criteri sposta quello selezionato più in basso in modo da dare minore priorità
+- Eliminar (Cancella): quita el criterio de agrupamiento 
+- Remover agrupamientos (Rimuovi raggruppamenti): quita todos los agrupamientos
+- Mover arriba (Sposta su): en presencia de más criterios, mueve el seleccionado más arriba para darle mayor prioridad
+- Mover abajo (Sposta giù): en presencia de más criterios, mueve el seleccionado más abajo para darle menor prioridad
 
-Per ulteriori informazioni sul raggruppamento vedere **[Riepilogo movimenti per causale](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
+Para más información sobre el agrupamiento, consulte **[Resumen de movimientos por causal (Riepilogo movimenti per causale)](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
 
-
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important Ver También
+[**VIDEO TUTORIALES SOBRE IMPRESIONES FISCALES (VIDEO TUTORIALS SULLE STAMPE FISCALI)**](/docs/video/finance/intro)
 :::
-
-
-

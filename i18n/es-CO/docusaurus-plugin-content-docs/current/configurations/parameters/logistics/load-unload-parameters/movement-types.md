@@ -1,52 +1,52 @@
 ---
-title: Tipi movimento
+title: Tipos de movimiento (Tipi movimento)
 sidebar_position: 2
 ---
 
-I tipi movimento determinano qual è la funzione abilitata. 
+Los tipos de movimiento determinan cuál es la función habilitada. 
 
-Di seguito si specifica per ogni tipo movimento la funzione collegata:
+A continuación se especifica para cada tipo de movimiento la función conectada:
 
-**Carico**: funzione di WMS Mobile che permette di creare una registrazione di magazzino di carico;
+**carico**: función de WMS Mobile que permite crear un registro de carga de almacén;  
 
-**Scarico**: funzione di WMS Mobile che permette di creare una registrazione di magazzino di scarico;
+**scarico**: función de WMS Mobile que permite crear un registro de descarga de almacén;  
 
-**Versamento Produzione**: funzione di WMS Mobile che permette di dichiarare la produzione di un prodotto finito o semilavorato;
+**Vertido de producción (Versamento Produzione)**: función de WMS Mobile que permite declarar la producción de un producto terminado o semielaborado;  
 
-**Prelievo produzione**: funzione di WMS Mobile che permette di scaricare da magazzino i materiali necessari per la produzione;
+**Retiro de producción (Prelievo produzione)**: función de WMS Mobile que permite descargar del almacén los materiales necesarios para la producción;  
 
-**Reso Produzione**: funzione di WMS Mobile che permette di dichiarare i resi di produzione con una registrazione di carico a magazzino;
+**Devolución de producción (Reso Produzione)**: función de WMS Mobile que permite declarar las devoluciones de producción con un registro de carga en el almacén;  
 
-**Rettifica di carico**: funzione di WMS Mobile che permette di effettuare una rettifica di magazzino positiva;
+**Ajuste de carga (Rettifica di carico)**: función de WMS Mobile que permite realizar un ajuste positivo en el almacén;  
 
-**Rettifica di scarico**: funzione di WMS Mobile che permette di effettuare una rettifica di magazzino negativa;
+**Ajuste de descarga (Rettifica di scarico)**: función de WMS Mobile que permite realizar un ajuste negativo en el almacén;  
 
-**Carico Pallet**: funzione di WMS Mobile e di ERP che permette di effettuare il carico a magazzino dell'UDC;
+**Carga de Palet (Carico Pallet)**: función de WMS Mobile y ERP que permite realizar la carga en el almacén de la UDC;  
 
-**Scarico Pallet**: funzione di WMS Mobile e di ERP che permette di effettuare lo scarico da magazzino dell'UDC;
+**Descarga de Palet (Scarico Pallet)**: función de WMS Mobile y ERP que permite realizar la descarga desde el almacén de la UDC;  
 
-**Rientri**: funzione di WMS Mobile per la gestione del rientro materiale;
+**rientri**: función de WMS Mobile para la gestión del reingreso de material;  
 
-**Conferma trasferimento**: funzione di WMS Mobile per la conferma dei Picking di trasferimento;
+**conferma trasferimento**: función de WMS Mobile para la confirmación de las transferencias de Picking;  
 
-**Assegna ubicazione**: funzione di WMS Mobile che scarica l'articolo da un'ubicazione di default e carica l'articolo nell'ubicazione desiderata;
+**assegna ubicazione**: función de WMS Mobile que descarga el artículo de una ubicación predeterminada y carga el artículo en la ubicación deseada;  
 
-**Spostamento articoli**: funzione di WMS Mobile che permette di spostare gli articoli da un'ubicazione ad un'altra. La causale di magazzino da agganciare dovrà essere di scarico con contropartita;
+**Movimiento de artículos (Spostamento articoli)**: función de WMS Mobile que permite mover artículos de una ubicación a otra. La causa de almacén que se debe asociar deberá ser de descarga con contrapartida;  
 
-**Acquisto**: funzione di WMS Mobile per creare il DDT di acquisto a fronte di un ordine cliente e il relativo carico a magazzino degli articoli;
+**acquisto**: función de WMS Mobile para crear el DDT de compra a partir de un pedido de cliente y la carga correspondiente en el almacén de los artículos;  
 
-**Sposta lotto non buono**: funzione di WMS Mobile che permette lo spostamento di lotti scaduti;
+**Mover lote no bueno (Sposta lotto non buono)**: función de WMS Mobile que permite el movimiento de lotes caducados;  
 
-**Accettazione materiali gestiti a lotti**: funzione di WMS Mobile per creare il DDT di acquisto a fronte di un ordine cliente e il relativo carico a magazzino degli articoli gestiti a lotti;
+**Aceptación de materiales gestionados por lotes (Accettazione materiali gestiti a lotti)**: función de WMS Mobile para crear el DDT de compra a partir de un pedido de cliente y la carga correspondiente en el almacén de los artículos gestionados por lotes;  
 
-**Togli da UDC**: funzione di WMS Mobil che permette di togliere articoli da un UDC precedentemente creata;
+**Retirar de UDC (Togli da UDC)**: función de WMS Mobile que permite retirar artículos de una UDC previamente creada;  
 
-**Vendite**: funzione di WMS Mobile per creare il DDT di vendita a fronte di un ordine cliente o manuale e il relativo scarico da magazzino degli articoli;
+**vendite**: función de WMS Mobile para crear el DDT de venta a partir de un pedido de cliente o manual y la descarga correspondiente del almacén de los artículos;  
 
-**Picking**: funzione di WMS Mobile per creare un nuovo picking o per confermarne uno creato precedentemente;
+**picking**: función de WMS Mobile para crear un nuevo picking o confirmar uno creado anteriormente;  
 
-**Inventario UDC**: funzione di WMS Mobile per la creazione di un inventario UDC;
+**inventario udc**: función de WMS Mobile para la creación de un inventario UDC;  
 
-**Trasferimento UDC**: funzione di WMS Mobile per la creazione o la conferma delle liste di trasferimento UDC;
+**Transferencia UDC (Trasferimento UDC)**: función de WMS Mobile para la creación o confirmación de las listas de transferencia UDC;  
 
-**Carico UDC da creazione UDC**: funzione di WMS Mobile e ERP per la creazione delle UDC e relativo carico a magazzino.
+**Carga UDC desde creación de UDC (Carico UDC da creazione UDC)**: función de WMS Mobile y ERP para la creación de UDC y la correspondiente carga en el almacén.

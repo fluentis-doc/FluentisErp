@@ -1,24 +1,18 @@
 ---
-title: Ammortamento Cespiti
+title: ammortamento cespiti
 sidebar_position: 1
 ---
 
-LINK:
+ENLACE: (LINK):
 
-**[Tab Ammortamento](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation)**
+**[Pestaña Amortización (Tab Ammortamento)](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation)**
 
-**[Tab Ripristina](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/restore)**
+**[Pestaña Restaurar (Tab Ripristina)](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/restore)**
 
- 
+ 
 
-La procedura di Ammortamento cespiti consente di calcolare gli ammortamenti annuali per le righe visualizzate e selezionate, secondo le percentuali e le tipologie standard previste nelle categorie cespiti.
+El procedimiento de Amortización de activos permite calcular las amortizaciones anuales para las líneas visualizadas y seleccionadas, de acuerdo con los porcentajes y tipos estándar previstos en las categorías de activos.
 
-E' la procedura standard consigliata in quanto permette di operare massivamente sui cespiti (senza elaborare la manovra per ogni singolo cespite) e di operare, se necessario, un ripristino del calcolo.
+Es el procedimiento estándar recomendado, ya que permite operar masivamente en los activos (sin necesidad de procesar la maniobra para cada activo individual) y, si es necesario, realizar una restauración del cálculo.
 
-Una volta Elaborato il calcolo, sarà possibile procedere alla funzione di **[contabilizzazione](/docs/finance-area/fixed-assets/accounting/depreciation)**, anch'essa di tipo massivo.
-
-
-
-
-
-
+Una vez que se ha procesado el cálculo, será posible proceder a la función de **[contabilización (contabilizzazione)](/docs/finance-area/fixed-assets/accounting/depreciation)**, que también es de tipo masivo.

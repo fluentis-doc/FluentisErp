@@ -1,217 +1,212 @@
 ---
-title: Piano dei conti
+title: piano dei conti
 sidebar_position: 1
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está afectada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consultar la lista de verificación de la página vinculada.
 :::
 
-### RIBBON BAR:
-:::note Bottoni della Ribbon Bar
+### BARRA DE HERRAMIENTAS:
+:::note Botones de la Barra de Herramientas
 
-| Funzione | Significato |
+| Función | Significado |
 | --- | --- |
-| Ricerca | Esegue la ricerca dei conti/sottoconti all'interno del gruppo selezionato. |
-| Nuovo conto | Imposta il cursore all'inserimento di un nuovo sottoconto all'interno della griglia di dettaglio. |
-| Spostamento  conti | Apre una maschera per spostare un conto da un gruppo ad un altro. |
-| Apri anagrafiche | Apre l'anagrafica associata al sottoconto cliente/fornitore/banca/agente selezionato. |
-| Nuovo raggruppamento | Esegue l'inserimento di un nuovo gruppo ‘radice' nella struttura del piano dei conti, indipendentemente dal gruppo selezionato. |
-| Nuovo gruppo | Esegue l'inserimento di un gruppo all'interno di quello selezionato. Non è possibile inserire gruppi all'interno di uno che ha già cont/sottoconti associati. |
-| Cancella conto | Esegue la cancellazione del conto selezionato. Per cancellare è anche possibile selezionarlo e premere il tasto CANC sulla tastiera. Non è possibile cancellare un sottoconto se questo è stato utilizzato nel sistema. (impostare in questo caso una data di fine validità per renderlo invisibile all'utente.) |
-| Cancella gruppo | Esegue la cancellazione del gruppo selezionato. |
-| Esplodi l'albero | Esplode l'albero sottostante al gruppo selezionato. |
-| Implodi l'albero | Implode l'albero sottostante al gruppo selezionato. |
-| Nuovo CdC | Imposta il cursore all'inserimento di un nuovo centro di costo per il sottoconto selezionato. |
-| Cancella C.d.C. | Cancella il centro di costo selezionato. |
-| Nuovo CdP | Imposta il cursore all'inserimento di un nuovo centro di profitto per il sottoconto selezionato. |
-| Cancella C.d.P. | Cancella il centro di profitto selezionato. |
-| Nuova automatica conti | Imposta il cursore all'inserimento di un nuovo sottoconto automatico per il sottoconto selezionato |
-| Cancella automatica conti | Cancella il sottoconto automatico selezionato |
+| Búsqueda | Realiza la búsqueda de cuentas/subcuentas dentro del grupo seleccionado. |
+| Nueva cuenta | Coloca el cursor para la inserción de una nueva subcuenta dentro de la cuadrícula de detalle. |
+| Movimiento de cuentas | Abre un formulario para mover una cuenta de un grupo a otro. |
+| Abrir registros | Abre el registro asociado a la subcuenta de cliente/proveedor/banco/agente seleccionado. |
+| Nuevo agrupamiento | Realiza la inserción de un nuevo grupo ‘raíz' en la estructura del plan de cuentas, independientemente del grupo seleccionado. |
+| Nuevo grupo | Realiza la inserción de un grupo dentro del seleccionado. No es posible insertar grupos dentro de uno que ya tenga cuentas/subcuentas asociadas. |
+| Eliminar cuenta | Realiza la eliminación de la cuenta seleccionada. Para eliminar, también se puede seleccionarla y presionar la tecla SUPR en el teclado. No es posible eliminar una subcuenta si ha sido utilizada en el sistema. (en este caso, establecer una fecha de fin de validez para hacerla invisible al usuario.) |
+| Eliminar grupo | Realiza la eliminación del grupo seleccionado. |
+| Expandir árbol | Expande el árbol subyacente al grupo seleccionado. |
+| Colapsar árbol | Colapsa el árbol subyacente al grupo seleccionado. |
+| Nueva Cc | Coloca el cursor para la inserción de un nuevo centro de costos para la subcuenta seleccionada. |
+| Eliminar C.c. | Elimina el centro de costo seleccionado. |
+| Nuevo Cp | Coloca el cursor para la inserción de un nuevo centro de beneficios para la subcuenta seleccionada. |
+| Eliminar C.p. | Elimina el centro de beneficios seleccionado. |
+| Nueva subcuenta automática | Coloca el cursor para la inserción de una nueva subcuenta automática para la subcuenta seleccionada. |
+| Eliminar subcuenta automática | Elimina la subcuenta automática seleccionada. |
 
 :::
 
 ---
 
-### Collegamento con altre tabelle
-La codifica del piano dei conti coinvolge il completamento di una serie di tabelle:  [Tipi conto](/docs/configurations/tables/finance/account-types) ,  [Anagrafiche contatti](/docs/erp-home/registers/contacts/registers-management), [Voce di spesa](/docs/configurations/tables/finance/charge-item), Tipi periodicità budget, Centri di costo, Centri di profitto, Divisioni, Scritture di rettifica/integrazione, Scritture da diff. budget,  [Causali automatiche](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) , Tipo importo
+### Conexión con otras tablas
+La codificación del plan de cuentas implica el completado de una serie de tablas: [Tipos de cuenta](/docs/configurations/tables/finance/account-types), [Registros de contactos](/docs/erp-home/registers/contacts/registers-management), [Ítem de gasto](/docs/configurations/tables/finance/charge-item), Tipos de periodicidad del presupuesto, Centros de costos, Centros de beneficios, Divisiones, Escritos de ajuste/integración, Escritos de varia presupuesto, [Causales automáticas](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates), Tipo de monto.
 
+### Inserción de la estructura del plan de cuentas
 
-### Inserimento della struttura del piano dei conti
-
-La codifica del piano dei conti prevede di partire dall'inserimento della lista dei gruppi nella sezione superiore della maschera: 
+La codificación del plan de cuentas requiere comenzar con la inserción de la lista de grupos en la sección superior del formulario: 
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image01.png)
 
-Attraverso i pulsanti di inserimento raggruppamenti/gruppi si potranno inserire nuovi primi livelli o livelli inferiori a quello selezionato, attribuendo ad ognuno un codice alfanumerico univoco, una descrizione ed un tipo conto.
+A través de los botones de inserción de agrupamientos/grupos, se podrán insertar nuevos niveles primarios o niveles inferiores al seleccionado, asignando a cada uno un código alfanumérico único, una descripción y un tipo de cuenta.
+
+**Nuevo Agrupamiento**: actúa solamente para insertar un nuevo **nivel cero** (un grupo sin padres encima de él).
+
+**Nuevo Grupo**: actúa para insertar un grupo hijo del grupo seleccionado. 
+
+**Estructura**: campo completado automáticamente por el sistema para representar una concatenación de los códigos de los grupos y agrupamientos en los que está contenida la línea;
+
+**Descr. alternativa**: permite asignar una descripción adicional que puede ser utilizada, por ejemplo, en la impresión del balance (personalizándola con las herramientas específicas). Podría, por ejemplo, insertarse una traducción en otro idioma de la descripción de la cuenta.
+
+**Naturaleza del grupo**: recoge el tipo de cuenta del grupo. El combo box está vinculado a la tabla Tipo de cuenta. Se recomienda completar el tipo de cuenta también para los grupos y agrupamientos, como se hace en la fase de inserción de las subcuentas de detalle descrita a continuación.
 
 
+### Inserción del detalle del plan de cuentas
 
-**Nuovo Raggruppamento**: agisce solamente per inserire un nuovo** livello zero** (un gruppo senza padri sopra di esso).
-
-**Nuovo Gruppo**: agisce per inserire un gruppo figlio del gruppo selezionato. 
-
-**Struttura**: campo compilato automaticamente dal sistema per rappresentare una concatenazione dei codici dei gruppi e raggruppamenti in cui la riga è contenuta;
-
-**Descr. alternativa**: permette di assegnare una descrizione ulteriore che può essere ripresa ad esempio nella stampa bilancio (personalizzandola con gli strumenti specifici). Potrebbe essere inserita ad esempio una traduzione in lingua della descrizione conto.
-
-**Natura gruppo**: accoglie il tipo conto del gruppo. La combo box è collegata alla tabella Tipo conto. Si raccomanda di compilare il tipo conto anche per i gruppi e raggruppamenti così come viene fatto nella fase di inserimento dei sottoconti di dettaglio descritta sotto.
-
-
-### Inserimento del dettaglio del piano dei conti
-
-Una volta selezionato il gruppo di livello più basso si attiverà, nella griglia sottostante, la lista dei conti e sottoconti inseriti all'interno di questo. 
+Una vez seleccionado el grupo de nivel más bajo, se activará en la cuadrícula inferior la lista de cuentas y subcuentas insertadas dentro de este. 
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image03.png)
 
-Questa **griglia inferiore viene compilata inserendo direttamente i dati** nelle righe. Si nota sempre l'ultima riga disponibile all'inserimento di un nuovo input e contrassegnata dal simbolo dell'asterisco nella zona azzurra all'estrema sinistra.
+Esta **cuadrícula inferior se completa insertando directamente los datos** en las líneas. Siempre se nota la última línea disponible para la inserción de una nueva entrada, y está marcada con el símbolo del asterisco en la zona azul en la extrema izquierda.
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image04.png)
 
-**ATTENZIONE: la struttura del piano dei conti prevede che sia inserito, per ogni gruppo di livello più basso del quale stiamo inserendo il dettaglio, almento un conto ("mastro") senza sottoconto che funge da ultimo raggruppamento di dettaglio dei sottoconti operativi. Si ricorda che solo i conti con sottoconto possono essere utilizzati nelle registrazioni contabili.**
+**ATENCIÓN: la estructura del plan de cuentas requiere que se inserte, para cada grupo de nivel más bajo del cual estamos insertando el detalle, al menos una cuenta ("maestra") sin subcuenta que funcione como el último agrupamiento de detalle de las subcuentas operativas. Se recuerda que solo las cuentas con subcuenta pueden ser utilizadas en los registros contables.**
 
-Si consiglia di seguire un criterio numerico progressivo con uniformità di caratteri (es. tutti i conti a 4 caratteri, tutti i sottoconti a 3).
+Se recomienda seguir un criterio numérico progresivo con uniformidad de caracteres (por ejemplo, todas las cuentas a 4 caracteres, todas las subcuentas a 3).
 
-ATTENZIONE: in fase di inserimento dei sottoconti di dettaglio è attivo un contatore che incrementa il sottoconto automaticamente di uno rispetto all'ultimo inserito per quel gruppo; si sconsiglia di lasciare "buchi" nella numerazione poichè questi non saranno recuperati in automatico in nessun caso.
+ATENCIÓN: en la fase de inserción de las subcuentas de detalle, hay un contador activo que incrementa la subcuenta automáticamente en uno en relación a la última insertada para ese grupo; se desaconseja dejar "huecos" en la numeración, ya que estos no serán recuperados automáticamente en ningún caso.
 
+Proceder en orden insertando el **tipo de cuenta**, luego la **cuenta** (sin subcuenta si se desea crear un nuevo "maestra") y luego la **subcuenta** (si la subcuenta se inserta por primera vez para ese grupo, ingresar manualmente el número también definiendo el número de caracteres, por ejemplo 1 o 01 o 001; en la siguiente inserción, el número será incrementado automáticamente).
 
+**Fecha de inserción**: es la fecha de creación de la cuenta/subcuenta;
 
-Procedere in ordine inserendo il **tipo conto**, poi il **conto** (senza sottoconto se si intende creare un nuovo "mastro") e poi il **sottoconto **(se il sottoconto viene inserito per la prima volta per quel gruppo inserire manualmente il numero anche definendo il numero di caratteri, ad esempio 1 oppure 01 oppure 001, al successivo inserimento il numero sarà incrementato automaticamente).
+**Fecha de última modificación**: es la fecha de última modificación del código de cuenta/subcuenta, actualizada automáticamente por el sistema;
 
-**Data di inserimento**: è la data di creazione del conto/sottoconto;
+**Apertura de partidas**: indicador que indica, para las cuentas vinculadas a registros de clientes y proveedores, si se gestiona la apertura de partidas para esa cuenta. El indicador se recoge, y debe gestionarse, dentro del registro. Es posible activar el indicador desde aquí para cuentas NO registradas (costos, ingresos, etc.) con el fin de abrir partidas en concomitancia con el registro contable (raro). En este caso, la causal contable utilizada deberá tener activo el parámetro para la apertura de partidas. En este caso, el indicador activo en la cuenta permite, en particular, realizar el control de cuadratura entre el movimiento contable y la partida abierta. En cualquier caso, la apertura de partidas en cuentas no registradas deberá ser hecha manualmente y no podrá suceder automáticamente.
 
-**Data ultima variazione**: è la data di ultima modifica del codice di conto/sottoconto, aggiornata automaticamente dal sistema;
+**Tipo / Solución de pago**: en combinación con el anterior indicador de apertura de partidas, en caso de que se use en cuentas NO registradas (por ejemplo, costos, ingresos, patrimoniales, etc.) permite especificar las condiciones de pago a utilizar en la fase de apertura de la partida.
 
-**Apertura partite**: flag che indica, per i conti collegati ad anagrafiche clienti e fornitori, se viene gestita l'apertura partite per quel conto. Il flag è ripreso, e va gestito, all'interno dell'anagarafica. E possibile attivare il flag da qui per conti NON di anagrafica (costi, ricavi ecc...) al fine di aprire partite in concomitanza con la registrazione contabile (raro). In questo caso la causale contabile utilizzata dovrà avere attivo il parametro per l'apertura partite. In questo caso il flag attivo sul conto permette, in particolare, di operare il controllo di quadratura tra il movimento contabile e la partita aperta. In ogni caso l'apertura partite su conti non di anagrafica dovrà essere fatta manualmente e non potrà avvenire automaticamente.
+**Gestión de costos empresariales**: al activar este indicador, será posible gestionar centros de costos también en cuentas patrimoniales (raro); por ejemplo, incrementos por trabajos internos en economía, etc.
 
-**Tipo / Soluzione di pagamento**: in abbinamento con il precedente flag di apertura partite, nel caso in cui venga utilizzato su conti NON di anagrafica (ad esempio costi ricavi, patrimoniali ecc...) permettono di specificare le condizioni di pagamento da utilizzare in fase di apertura partita.
+**Gestión de divisas**: Indicador que habilita la cuenta para:
+- Gestión en el procedimiento de Regularización de divisas (Administración > Registros contables > Procedimientos > Regularización de divisas)
+- Gestión del monto en divisas en el cierre y reapertura de cuentas
 
-**Gestione c. aziendali**: attivando questo flag sarà possibile gestire centri di costo anche su conti patrimoniali (raro); esempio incrementi per lavori interni in economia ecc...
-
-**Gestione Divisa**: Flag che abilita il conto per:
-- Gestione nella procedura di Regolarizzazione valuta (Amministrazione > Registrazioni contabili > Procedure > Regolarizzazione valuta)
-- Gestione dell'importo in divisa nella chiusura e riapertura dei conti
-
-:::danger[Attenzione]
-Il flag si abilita automaticamente nella fase di inserimento di una nuova anagrafica ed associazione con il tipo conto per la creazione del nuovo sottoconto nel piano dei conti. Si consiglia di non disabilitarlo (se in anagrafica viene associata un divisa estera) altrimenti la chiusura de conti perderà, per quel conto, la gestione del valore in divisa anche se nei parametri della chiusura è abilitata in generale questa gestione della divisa. Dunque la possibilità di disattivarlo è riservata ad una volontaria gestione particolare du un determinato conto che pur valorizzato in divisa deve poi essere chiuso ricalcolando tutto in euro, senza stanziamento delle differenze cambi.
+:::danger[Atención]
+El indicador se habilita automáticamente en la fase de inserción de un nuevo registro y asociación con el tipo de cuenta para la creación de una nueva subcuenta en el plan de cuentas. Se recomienda no desactivarlo (si en el registro se asocia una divisa extranjera), de lo contrario, el cierre de cuentas perderá, para esa cuenta, la gestión del valor en divisa, incluso si en los parámetros del cierre está habilitada en general esta gestión de la divisa. Por lo tanto, la posibilidad de desactivarlo está reservada para una gestión particular voluntaria de una cuenta determinada que, aunque valorada en divisa, debe luego ser cerrada recalculando todo en euros, sin asignación de las diferencias de cambio.
 :::
 
-**Data di fine validità**: serve **per bloccare l'utilizzo del sottoconto in nuove registrazioni** (a partire dalla data inserita), mantenendo la visibilità dei movimenti precedentemente inseriti;
+**Fecha de fin de validez**: sirve **para bloquear el uso de la subcuenta en nuevos registros** (a partir de la fecha ingresada), manteniendo la visibilidad de los movimientos previamente ingresados;
 
-**Ulteriore descrizione**: vedere Descr. alternativa sopra;
+**Descripción adicional**: ver Descr. alternativa arriba;
 
-**Ratei / Risconti - attivi / passivi - Conto / Sottoconto / Descrizione**: Campi che permettono di inserire, rispettivamente per ratei e risconti attivi e passivi, un sottoconto specifico sul quale saranno contabilizzate, con priorità rispetto ai sottoconti generici per ratei e risconti attivi e passivi ineriti nei [parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters), le scritture di rettifica ed integrazione relative al sottoconto di costo o ricavo che stiamo compilando. Si ricorda che per la gestione automatica dei ratei e risconti il conto di costo o ricavo oggetto di rettifiche deve avere un particolare tipo conto (es. "da rettificare") avente il flag servizio attivo nella tabella [Tipo conto](/docs/configurations/tables/finance/account-types).
-
-
-**Conto / sottoconto / descrizione Non Deducibile**: Gestito prevalentemente per localizzazioni non italiane dove c'è la necessità di contabilizzare la quota di iva non detraibile su un conto separato
+**Ajustes / Reintegros - activos / pasivos - Cuenta / Subcuenta / Descripción**: Campos que permiten insertar, respectivamente para ajustes y reintegros activos y pasivos, una subcuenta específica sobre la cual serán contabilizados, con prioridad sobre las subcuentas genéricas para ajustes y reintegros activos y pasivos insertados en [parámetros contables](/docs/configurations/parameters/finance/accounting-parameters), los escritos de ajuste e integración relacionados con la subcuenta de costo o ingreso que estamos completando. Se recuerda que para la gestión automática de ajustes y reintegros, la cuenta de costo o ingreso objeto de ajustes debe tener un tipo de cuenta particular (por ejemplo, "a ajustar") que tenga el indicador de servicio activo en la tabla [Tipo de cuenta](/docs/configurations/tables/finance/account-types).
 
 
-**Percentuale indetraibilità**: Gestito prevalentemente per localizzazioni non italiane dove c'è la necessità di contabilizzare la quota di iva non detraibile su un conto separato Campo connesso all'utilizzo del precedente. Permette la definizione della percentuale di indetraibilità IVA direttamente sul conto contabile anzichè sul codice iva utilizzato.
+**Cuenta / subcuenta / descripción No Deducible**: Gestionado principalmente para localizaciones no italianas donde hay necesidad de contabilizar la cuota de IVA no deducible en una cuenta separada.
 
 
-**Voci di spesa / Descrizione**: combo box collegato alla tabella ** [Voci di spesa](/docs/configurations/tables/finance/charge-item) **; permette il collegamento ad un dato statistico utile nel controllo di gestione.
+**Porcentaje de no deducibilidad**: Gestionado principalmente para localizaciones no italianas donde hay necesidad de contabilizar la cuota de IVA no deducible en una cuenta separada. Campo relacionado con el uso del anterior. Permite la definición del porcentaje de no deducibilidad de IVA directamente en la cuenta contable en lugar de en el código de IVA utilizado.
 
-**Variabilità**: questo campo, collegato alle griglie, presenti sulla destra della form, *Attribuzione Cdc* e *Variabilità Cdc* (necessarie per l'inserimento dei legami tra sottoconti contabili e centri aziendali al fine di ripartire automaticamente i movimenti contabili sui centri) viene **movimentato in particolare quando il movimento contabile è collegato a più di un centro aziendale**. Così come l'omonimo campo presente nella griglia Variabilità Cdc accoglie un valore in percentuale che **definisce se il costo è un costo fisso** (variabilità 0%) **oppure un costo** totalmente **variabile** (variabilità 100%) o parzialmente variabile (es. 70%). Si veda immagine sosttostante per una corretta compilazione.
 
-NOTA: da non confondere con il campo Percentuale (presente nella griglia Attribuzione Cdc) che serve ad indicare la percentuale del movimento contabile da imputare a quel centro (esempio un costo ripartito tra due centri al 50% oppure 70% e 30%).
+**Ítems de gasto / Descripción**: combo box vinculado a la tabla **[Ítems de gasto](/docs/configurations/tables/finance/charge-item)**; permite la conexión a un dato estadístico útil en el control de gestión.
 
-Il campo **Variabilità** presente nella griglia principale in commento è prioritario rispetto a quello presente nella griglia *Variabilità Cdc*. Per questo motivo, se viene popolato solo il campo nella griglia principale, il dato sarà utilizzato per entrambi (o tutti) i Centri associati al conto selezionato.
+**Variabilidad**: este campo, vinculado a las cuadrículas, presentes a la derecha del formulario, *Asignación Cdc* y *Variabilidad Cdc* (necesarias para la inserción de los vínculos entre subcuentas contables y centros empresariales con el fin de repartir automáticamente los movimientos contables en los centros) se **mueve en particular cuando el movimiento contable está vinculado a más de un centro empresarial**. Así como el homónimo campo presente en la cuadrícula Variabilidad Cdc acepta un valor en porcentaje que **define si el costo es un costo fijo** (variabilidad 0%) **o un costo** totalmente **variable** (variabilidad 100%) o parcialmente variable (por ejemplo, 70%). Véase la imagen a continuación para una correcta compilación.
+
+NOTA: no confundir con el campo Porcentaje (presente en la cuadrícula Asignación Cdc) que se utiliza para indicar el porcentaje del movimiento contable a imputar a ese centro (por ejemplo, un costo repartido entre dos centros al 50% o 70% y 30%).
+
+El campo **Variabilidad** presente en la cuadrícula principal en comentario es prioritario respecto al que está presente en la cuadrícula *Variabilidad Cdc*. Por esta razón, si se completa solo el campo en la cuadrícula principal, el dato será utilizado para ambos (o todos) los Centros asociados a la cuenta seleccionada.
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image05.png)
 
-**Non utilizzare in controlling**: il flag, utilizzato solo se sono attive le funzioni avanzate per il controlling nella tabella società, permette di escludere (se attivato) i movimenti contabili presenti per il conto selezionato dalle elaborazioni specifiche del controlling (quali ad esempio reversioni in base a cost driver, formule ed ammortamenti tecnici specifici per il controlling). In questo modo sarà possibile operare manualmente tramite le funzioni specifiche del modulo controlling.
+**No utilizar en controlling**: el indicador, utilizado solo si están activadas las funciones avanzadas para el controlling en la tabla de sociedades, permite excluir (si se activa) los movimientos contables presentes para la cuenta seleccionada de los procesos específicos del controlling (como, por ejemplo, reversiones en base a controladores de costos, fórmulas y amortizaciones técnicas específicas para el controlling). De este modo, será posible operar manualmente a través de las funciones específicas del módulo controlling.
 
-Esempio: se si desidera utilizzare ai fini delle elaborazioni del controlling gli ammortamenti specifici definiti nell'ambito delle funzioni del controlling stesso anziché partire dal dato contabile. Altro esempio: si desidera rilevare manualmente il costo del collegio sindacale stanziandolo manualmente con le funzioni del controlling per gestire budget e consuntivi, anziché attendere la rilevazione del relativo costo in contabilità (tipicamente a posteriori e quindi non in tempo utile).
+Ejemplo: si se desea utilizar a efectos de los procesos del controlling las amortizaciones específicas definidas en el ámbito de las funciones del controlling en lugar de partir del dato contable. Otro ejemplo: se desea registrar manualmente el costo del consejo de vigilancia asignándolo manualmente con las funciones del controlling para gestionar presupuestos y reales, en lugar de esperar la detección del costo correspondiente en contabilidad (típicamente a posteriori y, por lo tanto, no a tiempo útil).
 
-Nota: il movimento contabile sarà comunque incluso nelle chiusure dei conti infrannuali (Controlling > Chiusure infrannuali).
+Nota: el movimiento contable será, sin embargo, incluido en los cierres de cuentas intermedias (Controlling > Cierres intermedios).
 
-La **metodologia** qui sopra descritta determina la necessità, periodicamente, di procedere a dei **conguagli** per quadrare i movimenti contabili (che confluiscono nel bilancio) con i movimenti della contabilità gestionale (propri del controlling). Tali conguagli saranno rappresentati nella reportistica specifica del controlling mediante rettifiche (con segno positivo o negativo a seconda dei casi) specifiche e distintamente indicate che riconciliano i totali di bilancio con i totali della contabilità gestionale (i quali sono frutto dei movimenti gestiti manualmente, o comunque non a partire dal dato contabile).
+La **metodología** aquí descrita determina la necesidad, periódicamente, de proceder a **ajustes** para cuadrar los movimientos contables (que confluyen en el balance) con los movimientos de la contabilidad de gestión (propios del controlling). Dichos ajustes se representarán en la reportística específica del controlling mediante rectificaciones (con signo positivo o negativo según los casos) específicas y distintamente indicadas que reconcilien los totales de balance con los totales de la contabilidad de gestión (los cuales son fruto de los movimientos gestionados manualmente, o de alguna manera no a partir del dato contable).
 
-I successivi due campi sono funzionali a questa manovra:
+Los siguientes dos campos son funcionales a esta maniobra:
 
-**Tempi di bilanciamento**: la combo box permette di scegliere se il conguaglio di cui sopra avverrà annualmente, oppure con cadenza infrannuale, oppure sia disabilitato (scegliendo nessuno)
+**Tiempos de balanceo**: el combo box permite elegir si el ajuste mencionado se realizará anualmente, o con una frecuencia intermedia, o si está deshabilitado (eligiendo ninguno).
 
-**Tipi di bilanciamento**: la combo box permette di scegliere tra due differenti metodologie di conguaglio:
+**Tipos de balanceo**: el combo box permite elegir entre dos diferentes metodologías de ajuste:
 
-   - **Riproporziona gestionale**: parte dal movimento contabile e lo riproporziona (inserendo le rettifiche) utilizzando le logiche della contabilità analitica (ovvero l'attribuzione ai centri aziendali) per gestire la differenza;
+- **Reproporcionar gestión**: parte del movimiento contable y lo reproporciona (insertando las rectificaciones) utilizando las lógicas de la contabilidad analítica (es decir, la asignación a los centros empresariales) para gestionar la diferencia;
 
-   - **Differenze analitica**: parte dalla contabilità gestionale (controlling) e lo riallinea al dato contabile inserendo le rettifiche con segno positivo o negativo.
+- **Diferencias analíticas**: parte de la contabilidad de gestión (controlling) y lo realinea al dato contable insertando las rectificaciones con signo positivo o negativo.
 
-**Percentuali di variazione / descrizione**: la combo box, collegata alla tabella [Percentuali di variazione](/docs/configurations/tables/controlling/analytical-accounting/variation-percentages), permette di definire, per ogni sottoconto, delle percentuali (predefinitite e categorizzate all'interno della tabella collegata) da applicare in varie elaborazione del controlling, quali ad esempio il budget preventivo a partire dal consuntivo dell'anno precedente, applicando degli incrementi o decrementi.
+**Porcentajes de variación / descripción**: el combo box, vinculado a la tabla [Porcentajes de variación](/docs/configurations/tables/controlling/analytical-accounting/variation-percentages), permite definir, para cada subcuenta, porcentajes (predefinidos y categorizados dentro de la tabla vinculada) a aplicar en varios procesos del controlling, como por ejemplo el presupuesto preventivo a partir del real del año anterior, aplicando incrementos o decrementos.
 
-**Distribuzione periodi / Descrizione**: la combo box, collegata alla tabella [Distribuzione periodi](/docs/configurations/tables/controlling/managerial-accounting/periods-distribution), permette di assegnare, ad ogni sottoconto, una logica di ripartizione specifica del movimento contabile sui singoli periodi in fase di elaborazione delle chiusure infrannuali.
+**Distribución de períodos / Descripción**: el combo box, vinculado a la tabla [Distribución de períodos](/docs/configurations/tables/controlling/managerial-accounting/periods-distribution), permite asignar, a cada subcuenta, una lógica de distribución específica del movimiento contable en los diferentes períodos en la fase de elaboración de los cierres intermedios.
 
-**Gruppi di conguaglio / Descrizione**: la combo box è collegata alla tabella [Gruppi di conguaglio](/docs/configurations/tables/controlling/analytical-accounting/adjustments-groups), all'interno della quale è possibile codificare dei raggruppamenti di conti utili per la gestione della reportistica specifica per il controlling. Il campo non ha altra valenza operativa e non genera ulteriori automatismi.
+**Grupos de ajuste / Descripción**: el combo box está vinculado a la tabla [Grupos de ajuste](/docs/configurations/tables/controlling/analytical-accounting/adjustments-groups), dentro de la cual es posible codificar agrupaciones de cuentas útiles para la gestión de la reportística específica para el controlling. El campo no tiene otra valencia operativa y no genera automatismos adicionales.
 
-**Descrizione estesa 1 / 2 / 3**: ulteriori campi per accogliere descrizioni alternative (ad esempio in lingua). Possono essere, ad esempio, successivamente inserite nella stampa del bilancio mediante personalizzazione della stessa.
+**Descripción extendida 1 / 2 / 3**: campos adicionales para contener descripciones alternativas (por ejemplo, en otro idioma). Pueden ser, por ejemplo, posteriormente insertadas en la impresión del balance mediante la personalización de la misma.
 
-**Crisi d'impresa:** vedere pagina specifica relativa a questa funzionalità. Si tratta del modulo specifico, integrato in Fluentis, per la gestione degli indici da calcolare per adempiere alla normativa sulla prevenzione delle crisi di impresa. Tali indici sono gestiti attraverso il modulo CPM di Fluentis (che permette più in generale il calcolo di indicatori di performance)
+**Crisis empresarial**: ver página específica relacionada con esta funcionalidad. Se trata del módulo específico, integrado en Fluentis, para la gestión de los índices a calcular para cumplir con la normativa sobre la prevención de crisis empresariales. Dichos índices son gestionados a través del módulo CPM de Fluentis (que permite más en general el cálculo de indicadores de rendimiento).
 
-Poiché gli indicatori per la crisi di impresa fanno alcune considerazioni e calcoli relativamente ad alcuni conti o sottoconti specifici, all’atto della configurazione del modulo per il suo utilizzo occorre agganciare alle varie categorie specifiche previste dalla combo box, e riferendosi alla documentazione teorica specifica di questa normativa, i conti opportuni.
+Dado que los indicadores para la crisis empresarial hacen algunas consideraciones y cálculos relativos a algunas cuentas o subcuentas específicas, al momento de configurar el módulo para su uso, es necesario vincular a las varias categorías específicas previstas por el combo box, y refiriéndose a la documentación teórica específica de esta normativa, las cuentas pertinentes.
 
 
-### INSERIMENTO DEL COLLEGAMENTO SOTTOCONTI - CENTRI AZIENDALI
+### INSERCIÓN DE LA CONEXIÓN SUBCUENTAS - CENTROS EMPRESARIALES
 
-Il collegamento viene effettuato semplicemente selezionando il sottoconto di riferimento e inserendo la lista dei cdc/cdp nelle due griglie apposite: è possibile collegare la valorizzazione su divisioni aziendali differenti, ma normalmente la divisione non viene compilata. Non c'è alcun controllo che la somma delle percentuali inserite sia uguale al 100%.
+La conexión se realiza simplemente seleccionando la subcuenta de referencia e insertando la lista de cdc/cdp en las dos cuadrículas correspondientes: es posible vincular la valorización en divisiones empresariales diferentes, pero normalmente la división no se completa. No hay ningún control que la suma de los porcentajes ingresados sea igual a 100%.
 
-NOTA: Attivando le funzioni avanzate per il controlling nella tabella [società](/docs/configurations/tables/general-settings/company) , si opererà secondo le nuove logiche in cui non ha più rilevanza l'utilizzo dei centri di profitto ma si utilizzano i cdc (nella loro denominazione di centri Aziendali) sui quali si attribuiranno componenti negativi o positivi per procedere poi ad elaborazioni evolute quali reversioni e confronti per determinare margini ecc...
+NOTA: Al activar las funciones avanzadas para el controlling en la tabla [sociedades](/docs/configurations/tables/general-settings/company), se operará de acuerdo con las nuevas lógicas en las que ya no tiene relevancia el uso de los centros de beneficios, sino que se utilizan los cdc (bajo su denominación de centros Empresariales) sobre los cuales se asignarán componentes negativos o positivos para luego proceder a elaboraciones avanzadas como reversiones y comparaciones para determinar márgenes, etc.
 
-Per questo motivo la griglia dei **centri di profitto** (mantenuta per utilizzare le logiche standard) è stata spostata nella tab **Altro** (relativa alla griglia Attribuzione Cdc).
+Por esta razón, la cuadrícula de **centros de beneficios** (mantenida para utilizar las lógicas estándar) ha sido movida a la pestaña **Otro** (relativa a la cuadrícula Asignación Cdc).
 
-Si ricorda, inoltre che vi sono ulteriori punti di codifica dei Centri di costo/Profitto: anagrafiche clienti/fornitori/agents, anagrafiche articoli, magazzini, cespiti. La priorità di valorizzazione viene definita normalmente nei parametri di gestione del singolo modulo.
+Además, se recuerda que hay otros puntos de codificación de los Centros de costo/Beneficio: registros de clientes/proveedores/agentes, registros de artículos, almacenes, activos. La prioridad de valorización se define normalmente en los parámetros de gestión del módulo individual.
 
-### Griglia Attribuzione CDC
+### Cuadrícula Asignación Cdc
 
-**N**: Progressivo di riga
+**N**: Progresivo de línea
 
-**Cdc / Descrizione**: combo box collegata alla tabella **Centri aziendali **, necessaria per richiamare il centro desiderato;
+**Cdc / Descripción**: combo box vinculado a la tabla **Centros empresariales**, necesario para recuperar el centro deseado;
 
-**Percentuale %**: inserire qui la percentuale di attribuzione del movimento contabile al centro inserito nella riga. Ad es. inserendo il valore 100 il movimento contabile sarà attribuito per il 100% a questo centro, inserendo 50 sarà attribuito al 50% e dunque il residuo sarà attribuito (eventualmente) ad altri centri inseriti nelle righe sottostanti.
+**Porcentaje %**: insertar aquí el porcentaje de atribución del movimiento contable al centro insertado en la línea. Por ejemplo, al ingresar el valor 100, el movimiento contable será atribuido al 100% a este centro, al ingresar 50 será atribuido al 50% y por lo tanto el residuo será atribuido (eventualmente) a otros centros insertados en las líneas siguientes.
 
-**Divisione / Descrizione**: il legame può essere inserito eventualmente differenziando per singola divisione.
+**División / Descripción**: el vínculo puede ser insertado eventualmente diferenciando por cada división.
 
-**Data inizio validità**: indica la data dalla quale è attiva l'attribuzione automatica del movimento al centro.
+**Fecha de inicio de validez**: indica la fecha a partir de la cual está activa la atribución automática del movimiento al centro.
 
-**Data fine validità**: indica la data di fine validità dalla quale l'attribuzione automatica del movimento al centro non avrà più effetto.
+**Fecha de fin de validez**: indica la fecha de fin de validez a partir de la cual la atribución automática del movimiento al centro ya no tendrá efecto.
 
-**Dimensione / Descrizione**: combo box necessaria per attribuire al centro aziendale che si sta inserendo la relativa dimensione di analisi (questo concetto è introdotto e disponibile soltanto attivando le funzioni avanzate per il controlling dalla tabella società).
+**Dimensión / Descripción**: combo box necesaria para atribuir al centro empresarial que se está insertando la correspondiente dimensión de análisis (este concepto se introduce y está disponible solo al activar las funciones avanzadas para el controlling desde la tabla de sociedades).
 
-**Categoria centro di costo / Descrizione**: la combo box, collegata alla tabella **Categorie centri** aziendali permette di associare ad ogni **Dimensione** di analisi del controlling una categoria che a sua volta è collegata a diversi centri aziendali (essendo la categoria un campo obbligatorio nella codifica di ogni centro aziendale). In questo modo è possibile, in fase di inserimento del movimento contabile, permettere all'operatore la scelta di una serie di centri di aziendali predefiniti. Questo può essere fatto in alternativa ad una rigida definizione del centro associato al conto (possibile attivando il parametro "Vincolo conto / centro" all'interno della dimensione).
+**Categoría del centro de costo / Descripción**: el combo box, vinculado a la tabla **Categorías de centros** empresariales permite asociar a cada **Dimensión** de análisis del controlling una categoría que a su vez está vinculada a diferentes centros empresariales (siendo la categoría un campo obligatorio en la codificación de cada centro empresarial). De este modo, en la fase de inserción del movimiento contable, se permite al operador la elección de una serie de centros empresariales predefinidos. Esto puede hacerse como alternativa a una definición rígida del centro asociado a la cuenta (posible al activar el parámetro "Vinculo cuenta / centro" dentro de la dimensión).
 
-### Griglia Sottoconti automatici
+### Cuadrícula Subcuentas automáticas
 
-In questa griglia è possibile inserire, per ogni sottoconto che sarà richiamato in una scrittura contabile inserita tramite una causale contabile avente una seconda causale automatica agganciata, un sottoconto specifico da utilizzare nella scrittura riferita alla seconda causale automatica.
+En esta cuadrícula es posible insertar, para cada subcuenta que será llamada en un registro contable insertado a través de una causal contable que tenga una segunda causal automática asociada, una subcuenta específica a utilizar en la escritura relacionada con la segunda causal automática.
 
-In questo modo è possibile far variare "dinamicamente" i sottoconti utilizzati dalla seconda causale, a seconda del sottoconto che viene sostituito al conto generico (tipicamente inserito nel template della causale principale) nel momento della creazione della scrittura contabile grazie agli automatismi del programma.
+De este modo es posible hacer variar "dinámicamente" las subcuentas utilizadas por la segunda causal, dependiendo de la subcuenta que se sustituye a la cuenta genérica (típicamente insertada en la plantilla de la causal principal) en el momento de la creación del registro contable gracias a los automatismos del programa.
 
-E' necessario inserire, oltre al codice del sottoconto, anche il tipo importo e la sezione dare o avere (vedere la documentazione relativa alla gestione delle causali contabili).
+Es necesario insertar, además del código de la subcuenta, también el tipo de monto y la sección deudora o acreedora (ver la documentación relacionada con la gestión de las causales contables).
 
 :::note Nota
 
-In particolare la logica di funzionamento prevede:
+En particular, la lógica de funcionamiento prevé:
 
-- che il sottoconto sia utilizzato nella sezione Iva della registrazione;
+- que la subcuenta sea utilizada en la sección IVA del registro;
 
-- che la registrazione si basi su una causale che prevede una causale automatica;
+- que el registro se base en una causal que prevea una causal automática;
 
-- a queste condizioni l'ERP andrà ad aggiungere, nella registrazione automatica, i sottoconti automatici che sono collegati ai sottoconti;
+- bajo estas condiciones, el ERP añadirá, en el registro automático, las subcuentas automáticas que están conectadas a las subcuentas;
 
-- la valorizzazione di questi sottoconti utilizzerà il tipo importo della sezione ‘sottoconti automatici' ma applicandola alla riga IVA d'origine.
+- la valorización de estas subcuentas utilizará el tipo de monto de la sección ‘subcuentas automáticas' pero aplicándola a la línea IVA original.
 :::
 
 
-**Esempio di utilizzo può essere la registrazione di sottoconti per i quali debbano essere valorizzati in dare/avere conti d'ordine.**
+**Un ejemplo de uso puede ser el registro de subcuentas para las cuales deben ser valoradas en el debe/haber cuentas de orden.**
 
 ---
 
-### Extra Data: 
-si rinvia alla documentazione relativa agli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata)
+### Datos Adicionales: 
+se remite a la documentación relacionada con los [Datos Adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata)
 
 ---
 
-### VIDEO TUTORIALS
+### VIDEOS TUTORIALES
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SUL PIANO DEI CONTI**](/docs/video/finance/intro)
+:::important Ver También
+[**VIDEOS TUTORIALES SOBRE EL PLAN DE CUENTAS**](/docs/video/finance/intro)
 :::

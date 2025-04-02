@@ -1,17 +1,12 @@
 ---
-title: Lista Partite
+title: lista partite
 sidebar_position: 3
 ---
 
-Da questa form è possibile lanciare la stampa di una lista di partite aperte (o partite in uno degli altri stati possbili) secondo i parametri di filtro impostati.
+Desde este formulario es posible lanzar la impresión de una lista de partidas abiertas (o partidas en uno de los otros estados posibles) según los parámetros de filtro establecidos.
 
-Il funzionamento della form è il medesimo previsto per ** [altre stampe del modulo alle quali si rinvia](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).**
+El funcionamiento del formulario es el mismo que el previsto para **[otros informes del módulo a los que se referencia](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**.
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

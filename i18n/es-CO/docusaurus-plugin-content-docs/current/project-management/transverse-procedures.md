@@ -1,34 +1,28 @@
 ---
-title: Pianificazione a calendario delle risorse
+title: Planificación a calendario de los recursos (Pianificazione a calendario delle risorse)
 sidebar_position: 9
 ---
 
-Dopo la configurazione del calendario, si può procedere con la sincronizzazione del calendario per l'utilizzo della **Gestione Progetti** e quindi la **Pianificazione a calendario delle risorse**:
+Después de la configuración del calendario, se puede proceder con la sincronización del calendario para el uso de la **gestione progetti** y, por lo tanto, la **Planificación a calendario de los recursos (Pianificazione a calendario delle risorse)**:
 
 ![](/img/it-it/project-management/transverse-procedures/image01.png)
 
-:::note Nota
-Nella form **Dipendente**, il campo *Operatore* deve essere compilato associandolo all'utente inserito in **ARM**:
+:::note Nota (Nota)
+En el formulario **dipendente**, el campo *operatore* debe ser completado asociándolo al usuario ingresado en **ARM**:
 :::
 
 ![](/img/it-it/project-management/transverse-procedures/image02.png)
 
-Dal modulo **Gestione Progetti**, nella *Gestione Calendari*, vediamo che il calendario della risorsa è stato opportunatamente inserito: 
+Desde el módulo **gestione progetti**, en la *gestione calendari*, vemos que el calendario del recurso ha sido adecuadamente insertado: 
 
 ![](/img/it-it/project-management/transverse-procedures/image03.png)
 
-Prossimo step è quello di creare la risorsa in **Gestione Progetti**: inserendo il campo dell'Operatore, viene preso il collegamento con il calendario creato e che si trova in **Gestione Calendari**. In questa maschera è possibile, per ogni dipendente, definire chi sono gli operatori che hanno diritto sul calendario, per la modifica degli interventi, la creazione o l'eliminazione:
+El siguiente paso es crear el recurso en **gestione progetti**: al ingresar el campo del Operador, se establece la conexión con el calendario creado que se encuentra en **gestione calendari**. En esta máscara es posible, para cada empleado, definir quiénes son los operadores que tienen derecho sobre el calendario, para la modificación de intervenciones, la creación o la eliminación:
 
 ![](/img/it-it/project-management/transverse-procedures/image04.png)
 
-La risorsa che ha il diritto sui calendari dei dipendenti può avere accesso direttamente alla visualizzazione dei calendari attraverso il **Planner**, visualizzando gli interventi:
+El recurso que tiene derecho sobre los calendarios de los empleados puede acceder directamente a la visualización de los calendarios a través del **planner**, visualizando las intervenciones:
 
 ![](/img/it-it/project-management/transverse-procedures/image05.png)
 
-Una volta rilasciati gli interventi pianificati in **Interventi**, la risorsa si troverà l'intervento a calendario Fluentis e Outlook.
-
-
-
-
-
-
+Una vez liberadas las intervenciones planificadas en **interventi**, el recurso encontrará la intervención en el calendario de Fluentis y Outlook.

@@ -1,16 +1,16 @@
 ---
-title: Implosione componenti
+title: implosione componenti
 sidebar_position: 9
 ---
 
-Questa form permette di lanciare un report che consente visualizzare le distinte in cui è contenuto un determinato articolo.
+Este formulario permite ejecutar un reporte que muestra las listas de materiales que contienen un determinado artículo.
 
-Essa è composta da due sezioni:
+Está compuesto por dos secciones:
 
-**Filtri**: per filtrare per il componente di cui si vuole eseguire l'implosione. La versione è predeterminata in base ai dati di default inseriti nella rispettiva tabella di gestione; la data validità è proposta automaticamente come uguale alla data odierna. Si può inserire eventualmente anche la variante e decidere se si vuole che l'operazione di implosione del componente avvenga sul prodotto finito.
+**filtri**: para filtrar por el componente del cual se desea realizar la implosión. La versión se predetermina según los datos de default ingresados en la respectiva tabla de gestión; la fecha de validez se propone automáticamente como igual a la fecha de hoy. También se puede ingresar eventualmente la variante y decidir si se quiere que la operación de implosión del componente se realice sobre el producto terminado.
 
-**Griglia di risultato**: in questa sezione verranno visualizzati i risultati derivanti dalle opzioni di filtro immesse nella sezione precedente; oltre al componente di visualizzeranno anche le informazioni legate all'insieme di riferimento.
+**Cuadrícula de resultados (Griglia di risultato)**: en esta sección se visualizarán los resultados derivados de las opciones de filtro ingresadas en la sección anterior; además del componente, se mostrarán también las informaciones relacionadas con el conjunto de referencia.
 
-Per lanciare il report basterà cliccare su **Anteprima** (in questo caso si vedrà un'anteprima del report e si potrà decidere se stampare, quante pagine e copie stampare o se esportare il file) oppure cliccare su **Stampa** (in questo caso verrà lanciata direttamente la stampa del report).
+Para lanzar el reporte, basta con hacer clic en **anteprima** (en este caso se verá una vista previa del reporte y se podrá decidir si imprimir, cuántas páginas y copias imprimir o si exportar el archivo) o hacer clic en **stampa** (en este caso se lanzará directamente la impresión del reporte).
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,112 +1,106 @@
 ---
-title: Nuovo Leasing
+title: nuovo leasing
 sidebar_position: 3
 ---
 
-Inserendo un nuovo contratto di leasing è necessario definire, oltre ai campi indicati con la crocetta rossa, prima di tutto il **Tipo Leasing**. Questo campo rimanda alla tabella **[Tipo leasing](/docs/finance-area/leasing/search)**  (vedere dettaglio nella documentazione della form Ricerca) dove precedentemente devono essere state definite una o più tipologie.
+Al ingresar un nuevo contrato de leasing, es necesario definir, además de los campos indicados con la cruz roja, primero el **tipo leasing**. Este campo se refiere a la tabla **[Tipo de leasing](/docs/finance-area/leasing/search)** (ver detalles en la documentación del formulario de Búsqueda), donde previamente se deben haber definido uno o más tipos.
 
-Richiamando un Tipo Leasing vengono proposti i dati relativi nei campi per l'aliquota iva ed i conti da utilizzare per contabilizzare i canoni (quota capitale) gli interessi (quota interessi dei canoni) ed i costi (esempio spese di incasso dei singoli canoni).
+Al llamar un Tipo de Leasing, se proponen los datos relacionados en los campos para la alícuota del IVA y las cuentas a utilizar para contabilizar los cánones (cuota de capital), los intereses (cuota de intereses de los cánones) y los costos (por ejemplo, gastos de cobro de los cánones individuales).
 
 ![](/img/it-it/finance-area/leasing/new/image01.png)
 
 ![](/img/it-it/finance-area/leasing/new/image02.png)
 
-## TESTATA:
+## ENCABEZADO (TESTATA):
 
-Devono essere inseriti i campi relativi a:
+Deben ser ingresados los campos relacionados con:
 
-**Conto/ sottoconto Banca**: relativo alla banca che sarà utilizzta nelle scritture di pagamento dei canoni;
+**Cuenta/Subcuenta de Banco (Conto/ sottoconto Banca)**: relacionada con el banco que será utilizado en los asientos de pago de los cánones;
 
-**Conto / sottoconto società concedente**: relativo al conto del fornitore (società di leasing concedente) che sarà utilizzato nelle scritture relative ai canoni pagati;
+**Cuenta/Subcuenta de la sociedad concedente (Conto / sottoconto società concedente)**: relacionada con la cuenta del proveedor (sociedad de leasing concedente) que será utilizada en los asientos relativos a los cánones pagados;
 
-**Data stipula**: proposta di default come data odierna (modificabile) rappresenta la data dalla quale saranno calcolati i giorni di competenza del leasing;
+**data stipula**: propuesta por defecto como la fecha actual (modificable), representa la fecha a partir de la cual se calcularán los días de competencia del leasing;
 
-**Numero**: numero interno del contratto di leasing gestito da un numeratore Fluentis;
+**numero**: número interno del contrato de leasing gestionado por un numerador de Fluentis;
 
-**Descrizione**: descrizione del contratto;
+**descrizione**: descripción del contrato;
 
-**Data estinzione**: inserire la data prevista per l'estinzione al fine di permettere il calcolo automatico dei giorni totali di contratto e dunque dei giorni di competenza per il risconto del maxicanone e delle quote non di competenza.
+**data estinzione**: ingresar la fecha prevista para la extinción a fin de permitir el cálculo automático de los días totales del contrato y, por lo tanto, de los días de competencia para el prorrateo del maxicanón y de las cuotas no de competencia.
 
-:::danger Attenzione
-Tale data, anche se inserita dall'utente, dovrebbe coincidere normalmente con la data finale del piano di ammortamento, pertanto è stato posto un controllo con messaggio di avviso quando si utilizza la procedura di calcolo automatico piano di ammortamento. Il disallineamento di queste date potrebbe portare ad un calcolo del risconto annuo del maxicanone (e della quota non di competenza) non corretto
+:::danger Atención
+Dicha fecha, aunque ingresada por el usuario, debería coincidir normalmente con la fecha final del plan de amortización. Por lo tanto, se ha puesto un control con mensaje de aviso cuando se utiliza el procedimiento de cálculo automático del plan de amortización. El desalineamiento de estas fechas podría llevar a un cálculo incorrecto del prorrateo anual del maxicanón (y de la cuota no de competencia).
 :::
 
-**Tasso interno di attualizzazione**: permette di utilizzare il tasso indicato per calcolare automaticamente il piano di ammortamento del leasing (ammortamento a rata costante) inserire il tasso annuo, questo tasso sarà automaticamente calcolato per determinare il tasso periodale in base alla periodicità delle rate ed alla durata del leasing.
+**tasso interno di attualizzazione**: permite utilizar la tasa indicada para calcular automáticamente el plan de amortización del leasing (amortización a cuota constante). Ingrese la tasa anual, esta tasa se calculará automáticamente para determinar la tasa periódica en función de la periodicidad de las cuotas y la duración del leasing.
 
-**Valore del Bene**: Valore del bene concesso in leasing.
+**valore del bene**: Valor del bien concedido en leasing.
 
-**Valore di Riscatto**: Normalmente al termine del leasing è previsto un corrispettivo per acquisire la proprietà definitiva del bene.
+**valore di riscatto**: Normalmente, al término del leasing se prevé un pago por adquirir la propiedad definitiva del bien.
 
-**Spese riscatto**: Eventuali spese accessorie per il riscatto.
+**spese riscatto**: Cualquier gasto accesorio para el rescate.
 
-**Maxicanone iniziale**: Normalmente nei contratti di leasing è previsto un maxicanone iniziale.
+**maxicanone iniziale**: Normalmente, en los contratos de leasing se prevé un maxicanón inicial.
 
-**Spese istruttoria e pratica**: Accessorie rispetto al maxicanone ed eventualmente previste una tantum all'inizio del contratto.
+**spese istruttoria e pratica**: Accesorios respecto al maxicanón y, eventualmente, previstos una sola vez al inicio del contrato.
 
+## CAMPOS NO EDITABLES (calculados):
 
+**debito residuo**: Valor del bien menos la suma de las cuotas de capital de los cánones pagados (detecta la presencia del indicador Contabilizado en la correspondencia de la cuota de canon).
 
-## CAMPI NON EDITABILI (calcolati):
+**Valor total del contrato (Valore totale del contratto)**: Maxicanón inicial + gastos de instrucción y trámite + suma de los cánones (cuota de capital + cuota de intereses + gastos de cobro/gastos de la cuota).
 
-**Debito residuo**: Valore del bene al netto della sommatoria delle quote capitale dei canoni pagate (rileva la presenza del flag Contabilizzato in corrispondenza della rata di canone).
+**importo finanziato**: Valor del bien neto (menos) del maxicanón inicial.
 
-**Valore totale del contratto**: Maxicanone iniziale + spese istruttoria e pratica + Sommatoria dei canoni (quota capitale + quota interessi + spese incasso / spese della rata)
+## CUADRO DE DETALLES (GRIGLIA DI DETTAGLIO):
 
-**Importo finanziato**: Valore del bene al netto (meno) del Maxicanone iniziale.
-
-
-
-## GRIGLIA DI DETTAGLIO:
-
-In questa sezione è possibile inserire manualmente il piano di ammortamento dei canoni di leasing (escluso il maxicanone iniziale già indicato nei dati di testata). In alternativa è disponibile nella ribbon bar l'apposita procedura per calcolare automaticamente il piano di ammortamento a partire dai dati di base del leasing già inseriti nella testata.
+En esta sección es posible ingresar manualmente el plan de amortización de los cánones de leasing (excluido el maxicanón inicial ya indicado en los datos del encabezado). Alternativamente, está disponible en la barra de herramientas un procedimiento específico para calcular automáticamente el plan de amortización a partir de los datos básicos del leasing ya ingresados en el encabezado.
 
 ![](/img/it-it/finance-area/leasing/new/image03.png)
 
-**Data**: la data da inserire è quella prevista per la scadenza del canone, sarà utilizzata per proporla nella registrazione contabile con la quale viene rilevato il ricevimento della fattura per il canone da parte della società concedente;
+**data**: la fecha a ingresar es la prevista para la fecha de vencimiento del canon, se utilizará para proponerla en el registro contable con el cual se registra la recepción de la factura por el canon por parte de la sociedad concedente;
 
-**Quota capitale**, rappresenta la quota in linea capitale della rata e sarà contabilizzata sul conto contabile definito nella tabella Tipi Leasing;
+**quota capitale**: representa la porción de capital de la cuota y será contabilizada en la cuenta contable definida en la tabla Tipos de Leasing;
 
-**Quota interessi,** rappresenta la componente degli interessi relativi alla rata e sarà contabilizzata sullo specifico conto definito nella tabella Tipi leasing;
+**quota interessi**: representa la componente de los intereses relativos a la cuota y será contabilizada en la cuenta específica definida en la tabla Tipos de Leasing;
 
-**Costo rata**, rappresenta ad esempio la quota addebitata a titolo di spese di incasso e sarà contabilizzata anch'essa nello specifico conto definito nella tabella Tipi Leasing;
+**costo rata**: representa, por ejemplo, la parte cobrada como gastos de cobro y también será contabilizada en la cuenta específica definida en la tabla Tipos de Leasing;
 
-**Totale**: non editabile calcola il totale delle coponenti della rata;
+**totale**: no editable, calcula el total de las componentes de la cuota;
 
-**Contabilizzata**: il flag si attiva quando viene eseguita la contabilizzazione del canone e influenza sia il calcolo del debito residuo sia il calcolo del risconto del maxicanone;
+**contabilizzata**: el indicador se activa cuando se realiza la contabilización del canon y afecta tanto el cálculo de la deuda residual como el cálculo del prorrateo del maxicanón;
 
-**Numero / Data Registrazione**: vengono riportati i riferimenti della registrazione generata dalla procedura di contabilizzazione canoni.
+**Número/Fecha de Registro (Numero / Data Registrazione)**: se hacen constar las referencias del registro generado por el procedimiento de contabilización de cánones.
 
+## PROCEDIMIENTOS ACTIVABLES DESDE LA BARRA DE HERRAMIENTAS (RIBBON BAR):
 
+### Los procedimientos **contables** 
 
-## PROCEDURE ATTIVABILI DALLA RIBBON BAR:
+activables desde dentro del formulario de Detalles de Leasing son los mismos accesibles también desde la lista de procedimientos contables relativos al módulo de Leasing.
 
-### Le procedure **contabili** 
+La diferencia consiste en que desde esta posición se operará solo en el leasing específico del cual se ha entrado en detalles, mientras que en el caso de los procedimientos contables del módulo, en el formulario dedicado relacionado, serán buscables y seleccionables todos los cánones aún por vencer de todos los leasing presentes en la base de datos.
 
-attivabili dall'interno della form Dettagli Leasing sono le stesse accessibili anche dalla lista delle procedure contabili relative al modulo Leasing.
+La contabilización del maxicanón se realiza una sola vez (incluso después e independientemente de la contabilización de cánones).
 
-La differenza consiste nel fatto che da questa posizione si andrà ad operare solo sullo specifico leasing del quale siamo entrati nel dettaglio, mentre nel caso delle procedure contabili del modulo, nella relativa form dedicata, saranno ricercabili e selezionabili tutti i canoni ancora da scadere di tutti i leasing presenti nella base dati.
+Para la contabilización de cánones, es posible seleccionar la cuota a contabilizar y, una vez confirmado proceder, se solicitará completar un cuadro de diálogo con el número de documento y la fecha del documento en el que ingresar las referencias a la factura recibida por el canon próximo a vencer.
 
-La contabilizzazione del maxicanone viene eseguita una volta sola (anche dopo e indipendentemente dalla contabilizzazione canoni).
+La causal contable a utilizar se ha definido en la tabla Tipos de leasing, pero el esquema del registro es fijo y guiado por la lógica del procedimiento.
 
-Per la contabilizzazione canoni è possibile selezionare la rata da contabilizzare e, una volta confermato di procedere sarà richiesto di compilare un dialog box con il nr documento e data documento nel quale inserire i riferimenti alla fattura ricevuta per canone in scadenza.
+Ambos procedimientos son restaurables también desde esta posición con las lógicas habituales de reversión.
 
-La causale contabile da utilizzare è stata definita nella tabella Tipi leasing, ma lo schema della registrazione è fisso e guidato dalla logica della procedura.
+### Calcular plan de amortización (Calcola piano di ammortamento)
 
-Entrambe le procedure sono ripristinabili anche da questa posizione con le consuete logiche di rollback.
+Al presionar este botón, el procedimiento, basado en los campos principales del encabezado, es decir, fecha de firma, número de cuotas, valor del bien y tasa de interés (tasa interna de actualización), calculará el plan de amortización utilizando el método de cuota constante (amortización a la francesa).
 
-### Calcola piano di ammortamento
-
-Premendo questo tasto la procedura, sulla base dei campi principale della testata ovvero data stipula, numero rate valore del bene, tasso di interesse (tass interno di attualizzazione)  andrà a calcolare il piano di ammortamento con il metodo della rata costante (ammortamento alla francese).
-
-:::tip ATTENZIONE:
- non prende in considerazione il maxicanone inserito in testata che va considerato come un canone iniziale anticipato ulteriore (spesso pari ad uno o due canoni in termini di valore).
+:::tip ATENCIÓN:
+no tiene en cuenta el maxicanón ingresado en el encabezado, que debe considerarse como un canon inicial anticipado adicional (a menudo igual a uno o dos cánones en términos de valor).
 :::
 
-Si apre un dialogo in cui inserire (nuovamente se diversa da quella già inserita in testata) la **data del primo canone**, il numero di **mesi di scostamento** tra una rata e l'altra (che determina la periodicità della rata, ad esempio 1 = mensile, 2 = bimestrale, 3= trimestrale ecc...). ATTENZIONE la periodicità tiene conto del tempo tra una rata e l'altra e calcola comunque tante rate quante sono state inserite nella testata.
+Se abre un diálogo en el que se debe ingresar (nuevamente si es diferente de la ya ingresada en el encabezado) la **fecha del primer canon**, el número de **meses de variación** entre una cuota y otra (que determina la periodicidad de la cuota, por ejemplo, 1 = mensual, 2 = bimestral, 3 = trimestral, etc.). ATENCIÓN, la periodicidad tiene en cuenta el tiempo entre una cuota y otra y calcula, de todos modos, tantas cuotas como se inserten en el encabezado.
 
-Il **costo rata**: ad esempio spese di incasso ecc... che vengono aggiunte per ogni rata nell'apposita colonna del dettaglio. 
+El **costo de la cuota**: por ejemplo, gastos de cobro, etc., que se agregarán por cada cuota en la columna correspondiente del detalle.
 
-Questo bottone può essere utilizzato anche per ricalcolare, aggiornando, il piano di ammortamento, a patto che non siano stati ancora contabilizzati i canoni.
+Este botón también se puede utilizar para recalcular, actualizando, el plan de amortización, siempre que los cánones no hayan sido contabilizados aún.
 
-**Cambia date rate**: serve per variare unicamente le date dei canoni e/o la relativa periodicità senza ricalcolare l'intero piano (dove potrebbero essere state fatte anche variazioni manuali nei valori). Vengono richiesti unicamente la data primo canone e la periodicità
+**cambia date rate**: sirve para variar únicamente las fechas de los cánones y/o la respectiva periodicidad sin recalcular todo el plan (donde también se podrían haber hecho variaciones manuales en los valores). Se solicitan únicamente la fecha del primer canon y la periodicidad.
 
-**Aggiorna spese rata**: serve per cambiare la commissione (esempio spese incasso rata) su tutte le righe senza ricalcolare tutto il piano o  dover aggiornare manualmente tutte le righe (sempre possibile). Il dialogo richiede unicamente il nuovo valore della commissione rata (Costo rata).
+**aggiorna spese rata**: sirve para cambiar la comisión (por ejemplo, gastos de cobro de cuota) en todas las líneas sin recalcular todo el plan o tener que actualizar manualmente todas las líneas (siempre posible). El diálogo requiere únicamente el nuevo valor de la comisión de cuota (Costo rata).

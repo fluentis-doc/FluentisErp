@@ -1,36 +1,34 @@
 ---
-title: Ordini interni DDMRP
+title: ordini interni ddmrp
 sidebar_position: 4
 ---
 
-Gli Ordini Interni DDMRP sono ordini emessi da una facility (qualunque facility esclusa la fabbrica), verso un'altra facility (compresa la fabbrica) che dovrà fornire la merce richiesta.
+Los **ordini interni ddmrp** son pedidos emitidos por una instalación (cualquier instalación excluida la fábrica) hacia otra instalación (incluida la fábrica) que deberá proporcionar la mercancía solicitada.
 
-La facility richiedente agirà come cliente nei confronti della facility fornitrice che agirà appunto da fornitore.
+La instalación solicitante actuará como cliente frente a la instalación proveedora, la cual actuará como proveedor.
 
-Questi ordini hanno pertanto la duplice natura di ordini di approvvigionamento nella facility che deve ricevere la merce, e di ordini che generano fabbisogno nella facility che deve spedire la merce.
+Estos pedidos tienen, por lo tanto, la doble naturaleza de pedidos de aprovisionamiento en la instalación que debe recibir la mercancía, y de pedidos que generan necesidad en la instalación que debe enviar la mercancía.
 
-La testata ordine contiene il magazzino di destinazione, che corrisponde alla facility che deve ricevere la merce e che quindi ne fa richiesta, ed il magazzino di provenienza che corrisponde alla facility che deve fornire la merce.
+El encabezado del pedido contiene el almacén de destino, que corresponde a la instalación que debe recibir la mercancía y que, por lo tanto, la solicita, y el almacén de origen que corresponde a la instalación que debe proporcionar la mercancía.
 
-Il sistema di pianificazione genera degli ordini interni pianificati a seguito del calcolo della posizione di flusso netta (NFP), che sono già completi di tutti i dati necessari e che possono essere trasformati in ordini effettivi tramite la relativa procedura (apportando eventualmente delle modifiche).
+El sistema de planificación genera pedidos internos planificados como resultado del cálculo de la posición de flujo neto (NFP), que ya están completos con todos los datos necesarios y que pueden convertirse en pedidos reales a través del procedimiento correspondiente (realizando eventualmente algunas modificaciones).
 
-Gli ordini interni Ddmrp pianificati non generano fabbisogno nelle facilities fornitrici, solo quelli confermati generano fabbisogno.
+Los **pedidos internos DDMRP planificados** no generan necesidad en las instalaciones proveedoras; solo los confirmados generan necesidad.
 
-Questa scelta fa si che le proposte d'ordine Ddmrp non generano fabbisogno nelle facility fornitrici fintanto che non vengono analizzate e trasformate in ordini effettivi dai relativi responsabili, secondo un processo di pianificazione a livelli.
+Esta elección hace que las propuestas de pedido DDMRP no generen necesidad en las instalaciones proveedoras mientras no sean analizadas y transformadas en pedidos reales por los responsables correspondientes, de acuerdo con un proceso de planificación por niveles.
 
-Per questa ragione la fabbrica è l'unità logistica che va pianificata per ultima, dopo aver pianificato e confermato gli ordini delle unità logistiche di distribuzione e vendita merci.
+Por esta razón, la fábrica es la unidad logística que debe ser planificada en última instancia, después de haber planificado y confirmado los pedidos de las unidades logísticas de distribución y venta de mercancías.
 
-Ovviamente si possono creare degli ordini interni Ddmrp manualmente senza restrizioni.
+Obviamente, se pueden crear pedidos internos DDMRP manualmente sin restricciones.
 
-La data dell'ordine è considerata come data del fabbisogno (equivalente alla data inizio di un ordine di produzione), uguale per ciascun articolo dell'ordine, la data consegna viene invece specificata per ogni articolo dell'ordine poichè può differire.
+La fecha del pedido se considera como la fecha de necesidad (equivalente a la fecha de inicio de un pedido de producción), igual para cada artículo del pedido; la fecha de entrega, en cambio, se especifica para cada artículo del pedido ya que puede diferir.
 
-Infatti, se la facility di destinazione viene rifornita da una facility che non è la fabbrica, il tempo di consegna degli articoli nella destinazione è lo stesso per tutti e pari al lead time inserito nella tabella delle Facilities per la facility destinazione (a meno di eccezioni stabilite nella tabella parametri Ddmrp per qualche articolo).
+De hecho, si la instalación de destino es abastecida por una instalación que no es la fábrica, el tiempo de entrega de los artículos en el destino es el mismo para todos y es igual al **lead time** ingresado en la tabla de instalaciones para la instalación de destino (salvo excepciones establecidas en la tabla de parámetros DDMRP para algún artículo).
 
-Se invece la facility fornitrice è la fabbrica, normalmente il DLT di ciascun articolo nella facility destinazione varia perchè è dovuto alla somma del tempo di trasporto dalla fabbrica (uguale per tutti gli articoli a buffer nell'unità di destinazione), e del DLT dell'articolo in fabbrica che è pari al tempo necessario alla sua produzione, se l'articolo non è un buffer in quest'ultima.
+Si, por otro lado, la instalación proveedora es la fábrica, normalmente el **DLT (Delivery Lead Time)** de cada artículo en la instalación de destino varía porque se debe a la suma del tiempo de transporte desde la fábrica (igual para todos los artículos a **buffer** en la unidad de destino), y del **DLT** del artículo en la fábrica que es igual al tiempo necesario para su producción, si el artículo no es un **buffer** en esta última.
 
-Per ogni articolo nell'ordine risulta visibile la quantità ordinata, spedita e ricevuta.
+Para cada artículo en el pedido se puede ver la cantidad ordenada, enviada y recibida.
 
-Quando il tempo di spedizione non è trascurabile, durante il trasporto sarà aggiornata la quantità spedita ma non quella ricevuta che verrà aggiornata solo all'atto della ricezione della merce.
+Cuando el tiempo de envío no es despreciable, durante el transporte se actualizará la cantidad enviada, pero no la recibida, que se actualizará únicamente al momento de la recepción de la mercancía.
 
-Le causali di versamento e di prelievo sono specificate nella tabella delle facilities (struttura logistica).
-
-
+Las causales de depósito y de extracción se especifican en la tabla de instalaciones (estructura logística).

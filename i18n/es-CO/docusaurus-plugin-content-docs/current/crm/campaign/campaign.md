@@ -1,42 +1,42 @@
 ---
-title: Gestione della Campagna Marketing
+title: Gestión de la Campaña de Marketing (Gestione della Campagna Marketing)
 sidebar_position: 3
 ---
 
-La gestione delle campagne marketing in Fluentis è altamente strutturata e flessibile, permettendo di creare workflow personalizzati, definire budget e costi, selezionare i contatti destinatari e gestire l’esecuzione delle campagne in maniera automatizzata o manuale. Di seguito viene spiegato tecnicamente come viene gestito questo processo all'interno del gestionale.
+La gestión de las campañas de marketing en Fluentis es altamente estructurada y flexible, permitiendo crear flujos de trabajo personalizados, definir presupuestos y costos, seleccionar los contactos destinatarios y gestionar la ejecución de las campañas de manera automatizada o manual. A continuación se explica técnicamente cómo se gestiona este proceso dentro del sistema.
 
-**Creazione del Workflow della Campagna Marketing**
-In Fluentis, la gestione delle campagne marketing si basa sulla creazione di un workflow, che rappresenta il flusso di lavoro della campagna. Il workflow è suddiviso in vari stati, ognuno dei quali può prevedere azioni specifiche, come l'invio di email, la registrazione di interazioni o l'avvio di altre attività di marketing.
+**Creación del Flujo de Trabajo de la Campaña de Marketing (Creazione del Workflow della Campagna Marketing)**  
+En Fluentis, la gestión de las campañas de marketing se basa en la creación de un flujo de trabajo, que representa el flujo de trabajo de la campaña. El flujo está dividido en varios estados, cada uno de los cuales puede prever acciones específicas, como el envío de correos electrónicos, el registro de interacciones o el inicio de otras actividades de marketing.
 
-*Stati del Workflow*: Ogni stato del workflow rappresenta una fase della campagna. Per esempio, lo stato iniziale potrebbe essere "Preparazione", seguito da "Invio Email", "Follow-up", "Analisi Risultati", ecc.
+*Estados del Flujo de Trabajo (Stati del Workflow)*: Cada estado del flujo representa una fase de la campaña. Por ejemplo, el estado inicial podría ser "Preparación", seguido de "Envío de Correo Electrónico", "Seguimiento", "Análisis de Resultados", etc.
 
-*Azioni Predefinite*: All'interno di ogni stato, è possibile definire azioni specifiche. Ad esempio, nello stato "Invio Email", si può programmare l’invio automatico di una email a tutti i contatti selezionati. Le azioni possono includere anche attività come l'aggiornamento del CRM, la registrazione delle risposte o il passaggio a uno stato successivo del workflow in base ai risultati ottenuti.
+*Acciones Predeterminadas (Azioni Predefinite)*: Dentro de cada estado, es posible definir acciones específicas. Por ejemplo, en el estado "Envío de Correo Electrónico", se puede programar el envío automático de un correo a todos los contactos seleccionados. Las acciones pueden incluir también actividades como la actualización del CRM, el registro de respuestas o el paso a un estado siguiente del flujo en función de los resultados obtenidos.
 
-*Automazione*: Il workflow può essere configurato per eseguire automaticamente determinate azioni al verificarsi di condizioni specifiche. Ad esempio, se un contatto non risponde a una email entro un certo periodo, il sistema può inviare automaticamente un promemoria o aggiornare lo stato del contatto nel CRM.
+*Automatización (Automazione)*: El flujo puede configurarse para ejecutar automáticamente determinadas acciones cuando se verifican condiciones específicas. Por ejemplo, si un contacto no responde a un correo electrónico dentro de un cierto período, el sistema puede enviar automáticamente un recordatorio o actualizar el estado del contacto en el CRM.
 
-**Compilazione della Campagna Marketing**
-Durante la creazione della campagna marketing, Fluentis permette di compilare tutti i dettagli rilevanti per la gestione e il monitoraggio della campagna.
+**Compilación de la Campaña de Marketing (Compilazione della Campagna Marketing)**  
+Durante la creación de la campaña de marketing, Fluentis permite compilar todos los detalles relevantes para la gestión y el seguimiento de la campaña.
 
-*Definizione del Budget*: È possibile specificare il budget totale disponibile per la campagna. Questo budget viene monitorato durante l’esecuzione della campagna per garantire che le spese rimangano entro i limiti definiti.
+*Definición del Presupuesto (Definizione del Budget)*: Es posible especificar el presupuesto total disponible para la campaña. Este presupuesto se monitorea durante la ejecución de la campaña para garantizar que los gastos se mantengan dentro de los límites definidos.
 
-*Registrazione dei Costi*: Man mano che la campagna procede, è possibile registrare i costi associati a ciascuna attività (come costi per l'acquisto di liste di contatti, spese per il design delle email, ecc.). Fluentis permette di confrontare i costi effettivi con il budget pianificato, fornendo una visione chiara delle spese.
+*Registro de Costos (Registrazione dei Costi)*: A medida que la campaña avanza, es posible registrar los costos asociados a cada actividad (como costos por la compra de listas de contactos, gastos por el diseño de correos electrónicos, etc.). Fluentis permite comparar los costos reales con el presupuesto planeado, proporcionando una visión clara de los gastos.
 
-*Obiettivi della Campagna*: Oltre ai costi, è possibile definire gli obiettivi della campagna, come il numero di lead generati, il tasso di conversione atteso, o il ritorno sull'investimento (ROI). Questi parametri aiutano a valutare l'efficacia della campagna una volta completata.
+*Objetivos de la Campaña (Obiettivi della Campagna)*: Además de los costos, es posible definir los objetivos de la campaña, como el número de clientes potenciales generados, la tasa de conversión esperada o el retorno de inversión (ROI). Estos parámetros ayudan a evaluar la efectividad de la campaña una vez completada.
 
-**Scelta della Lista di Distribuzione e Selezione dei Contatti**
-Una volta definito il workflow e i dettagli della campagna, è necessario selezionare i destinatari della campagna.
+**Selección de la Lista de Distribución y Selección de Contactos (Scelta della Lista di Distribuzione e Selezione dei Contatti)**  
+Una vez definido el flujo de trabajo y los detalles de la campaña, es necesario seleccionar a los destinatarios de la campaña.
 
-*Creazione della Lista di Distribuzione*: Fluentis consente di creare liste di distribuzione basate su segmentazioni avanzate dei contatti. Queste liste possono essere generate utilizzando criteri specifici, come la demografia, lo storico degli acquisti, l'interesse per determinati prodotti o servizi, e altro ancora.
+*Creación de la Lista de Distribución (Creazione della Lista di Distribuzione)*: Fluentis permite crear listas de distribución basadas en segmentaciones avanzadas de contactos. Estas listas pueden generarse utilizando criterios específicos, como la demografía, el historial de compras, el interés por determinados productos o servicios, y más.
 
-*Selezione dei Contatti*: Dalla lista di distribuzione, è possibile selezionare i contatti che riceveranno la campagna. Questa selezione può essere ulteriormente raffinata manualmente o tramite filtri aggiuntivi, per assicurare che i messaggi raggiungano il pubblico più appropriato.
+*Selección de Contactos (Selezione dei Contatti)*: Desde la lista de distribución, es posible seleccionar los contactos que recibirán la campaña. Esta selección puede refinarse manualmente o mediante filtros adicionales, para asegurar que los mensajes lleguen al público más apropiado.
 
-Personalizzazione*: Fluentis permette anche di personalizzare i contenuti della campagna in base ai dati dei singoli contatti, migliorando l'efficacia del messaggio.
+*personalizzazione*: Fluentis también permite personalizar los contenidos de la campaña en función de los datos de los contactos individuales, mejorando la efectividad del mensaje.
 
-**Esecuzione del Workflow o Invio Manuale delle Email**
-L'ultima fase della gestione della campagna riguarda l'esecuzione del workflow e l'invio delle comunicazioni ai contatti selezionati.
+**Ejecución del Flujo de Trabajo o Envío Manual de Correos Electrónicos (Esecuzione del Workflow o Invio Manuale delle Email)**  
+La última fase de la gestión de la campaña implica la ejecución del flujo de trabajo y el envío de las comunicaciones a los contactos seleccionados.
 
-*Esecuzione Automatica del Workflow*: Se il workflow è stato configurato per l'automazione, Fluentis eseguirà le azioni predefinite in ciascuno stato del workflow senza bisogno di intervento manuale. Questo include l'invio di email, la gestione delle risposte, e il passaggio automatico tra gli stati del workflow in base alle condizioni impostate.
+*Ejecución Automática del Flujo de Trabajo (Esecuzione Automatica del Workflow)*: Si el flujo se ha configurado para la automatización, Fluentis ejecutará las acciones predeterminadas en cada estado del flujo sin necesidad de intervención manual. Esto incluye el envío de correos electrónicos, la gestión de respuestas y el paso automático entre los estados del flujo en función de las condiciones establecidas.
 
-*Invio Manuale delle Email*: Se preferito, è possibile gestire l’invio delle email manualmente. Questo può essere utile in situazioni in cui si desidera avere un controllo più diretto sul momento esatto in cui vengono inviate le comunicazioni, o per invii ad hoc non pianificati nel workflow automatico.
+*Envío Manual de Correos Electrónicos (Invio Manuale delle Email)*: Si se prefiere, es posible gestionar el envío de correos electrónicos manualmente. Esto puede ser útil en situaciones donde se desea tener un control más directo sobre el momento exacto en que se envían las comunicaciones, o para envíos ad hoc no planificados en el flujo automático.
 
-*Monitoraggio in Tempo Reale*: Durante l'esecuzione, Fluentis permette di monitorare in tempo reale lo stato della campagna, visualizzando quali email sono state inviate, aperte, o se ci sono state interazioni da parte dei destinatari.
+*Monitoreo en Tiempo Real (Monitoraggio in Tempo Reale)*: Durante la ejecución, Fluentis permite monitorear en tiempo real el estado de la campaña, visualizando qué correos han sido enviados, abiertos o si ha habido interacciones por parte de los destinatarios.

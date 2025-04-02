@@ -1,14 +1,14 @@
 ---
-title: Ricerca Parametri MRP
+title: Búsqueda de Parámetros MRP (Ricerca Parametri MRP)
 sidebar_position: 1
 ---
 
-Si tratta della finestra di ricerca dei [Parametri MRP](/docs/erp-home/registers/items/create-new-item) degli articoli presenti nel database. Per ciascun articolo viene creata l'anagrafica dei parametri MRP non appena viene inserita la sua anagrafica “principale”, cliccando sul pulsante **Parametri MRP** che si trova nella ribbon bar della form *Anagrafica articoli*.
+Se trata de la ventana de búsqueda de los [Parámetros MRP](/docs/erp-home/registers/items/create-new-item) de los artículos presentes en la base de datos. Para cada artículo se crea el registro de los parámetros MRP tan pronto como se inserta su "registro principal", haciendo clic en el botón **parametri mrp** que se encuentra en la barra de menú del formulario *anagrafica articoli*.
 
-#### Pulsanti specifici
+#### Botones específicos (Pulsanti specifici)
 
-> **Modifica parametri**: richiama la procedura per modificare i parametri MRP di un articolo precedentemente inserito. Una volta selezionata la riga dell'articolo a cui si vogliono modificare i parametri, cliccando su questo pulsante si entrerà nella finestra di dettaglio e si potrà procedere alla modifica.  
-> **Visualizza parametri**: richiama la procedura per visualizzare i parametri MRP di un articolo precedentemente inserito. Una volta selezionata la riga dell'articolo per cui si vogliono visualizzare i Parametri, cliccando su questo pulsante si aprirà la schermata di dettaglio dove sarà solamente possibile la visualizzazione e non sarà abilitata la modifica di nessun dato.  
-> **Sostituzione parametri**: apre una finestra che permette di decidere quali informazioni relative all'articolo modificare. Questo pulsante si abilita solamente quando si vanno a selezionare più articoli (non solo uno) a cui si vogliono cambiare massivamente le stesse informazioni. Nella finestra che si aprirà compariranno tutti i parametri MRP presenti nel tab *Dati Generali* e si potranno vedere le informazioni come sono impostate e modificare solo i dati di interesse. Non sarà possibile modificare i dati presenti nel tab *Magazzini* in modo massivo.
+> **modifica parametri**: llama al procedimiento para modificar los parámetros MRP de un artículo previamente ingresado. Una vez seleccionada la línea del artículo cuyos parámetros se desean modificar, al hacer clic en este botón se entrará en la ventana de detalle y se podrá proceder a la modificación.  
+> **visualizza parametri**: llama al procedimiento para visualizar los parámetros MRP de un artículo previamente ingresado. Una vez seleccionada la línea del artículo cuyos parámetros se desean visualizar, al hacer clic en este botón se abrirá la pantalla de detalle donde solo será posible la visualización y no estará habilitada la modificación de ningún dato.  
+> **sostituzione parametri**: abre una ventana que permite decidir qué información relacionada con el artículo modificar. Este botón solo se habilita cuando se seleccionan varios artículos (no solo uno) a los que se desean cambiar masivamente la misma información. En la ventana que se abrirá aparecerán todos los parámetros MRP presentes en la pestaña *dati generali* y se podrán ver cómo están configuradas las informaciones y modificar solo los datos de interés. No será posible modificar los datos presentes en la pestaña *magazzini* de manera masiva.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

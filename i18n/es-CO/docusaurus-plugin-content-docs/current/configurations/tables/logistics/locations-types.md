@@ -1,18 +1,18 @@
 ---
-title: Tipi ubicazioni
+title: tipi ubicazioni
 sidebar_position: 36
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo ubicazioni*.
+La tabla permite gestionar la codificación de las diferentes tipologías de *Tipo de ubicaciones (Tipo ubicazioni)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo ubicazioni**
+**Búsqueda de tipi ubicazioni (Ricerca Tipo ubicazioni)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Tipo ubicazioni**
+**Inserción de tipi ubicazioni (Inserimento Tipo ubicazioni)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, refiérase al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

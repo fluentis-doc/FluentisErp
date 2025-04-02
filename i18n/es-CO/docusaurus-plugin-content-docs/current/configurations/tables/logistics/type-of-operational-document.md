@@ -1,18 +1,18 @@
 ---
-title: Tipo documento gestionale
+title: tipo documento gestionale
 sidebar_position: 54
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo documento gestionale* (documento per la dogana).
+La tabla permite gestionar la codificación de las diferentes tipologías de *tipo documento gestionale (documento para la dogana)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo documento gestionale**
+**Búsqueda de tipo documento gestionale (Ricerca Tipo documento gestionale)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultado. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipo documento gestionale**
+**Inserción de tipo documento gestionale (Inserimento Tipo documento gestionale)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

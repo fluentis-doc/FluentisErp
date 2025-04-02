@@ -1,137 +1,137 @@
 ---
-title: Nuova chiusura automatica
+title: Nueva cierre automática (Nuova chiusura automatica)
 sidebar_position: 2
 ---
 
-La procedura di Chiusura automatica conti gestisce la chiusura di bilancio e la successiva riapertura: si tratta del solo movimento contabile, senza alcuna influenza dal punto di vista dei partitari.
+El procedimiento de Cierre automático de cuentas gestiona el cierre de balance y la posterior reapertura: se trata del único movimiento contable, sin ninguna influencia desde el punto de vista de las cuentas por cobrar.
 
-La form si compone di una serie di tab e di un'area di testata comune in cui inserire i dati principali quali la data della chiusura e la descrizione.
+El formulario se compone de una serie de pestañas y de un área de encabezado común en la que insertar los datos principales, como la fecha del cierre y la descripción.
 
-## Dati obbligatori
+## Datos obligatorios (Dati obbligatori)
 
-Una volta lanciata la nuova chiusura, all'apertura della form vengono proposti in automatico la data di chiusura (data odierna) ed il numero di versione (progressivo), campi comunque editabili.
+Una vez lanzado el nuevo cierre, al abrir el formulario se proponen automáticamente la fecha de cierre (fecha de hoy) y el número de versión (progresivo), campos que son editables.
 
-E' necessario inserire una descrizione e **compilare i campi obbligatori presenti nella Tab Parametri prima di procedere a Salvare** la chiusura.
+Es necesario insertar una descripción y **completar los campos obligatorios presentes en la pestaña Parámetros antes de proceder a Guardar** el cierre.
 
-Il salvataggio è necessario per abilitare i comandi presenti nella ribbon bar per l'elaborazione del calcolo, **Ripresa valori sottoconti**, e la contabilizzazione, **Crea registrazione per la chiusura dei conti.**
+El guardado es necesario para habilitar los comandos presentes en la barra de herramientas para el cálculo, **Recuperar valores de subcuentas**, y la contabilización, **Crear registro para el cierre de cuentas.**
 
-### Parametri
+### Parámetros (Parametri)
 
-Nel tab ‘parametri' è necessario inserire: 
+En la pestaña ‘parámetros’ es necesario insertar: 
 
-- dati per filtrare i movimenti contabili che saranno oggetto di chiusura dei conti; le **date registrazione e competenza** individuano quali registrazioni riportare nel saldo contabile: in particolare le date di competenza saranno relative al periodo di bilancio (1/1/….-31/12/….), mentre il campo ‘a data registrazione' potrebbe slittare nell'esercizio successivo per ricomprendere le scritture di rettifica:** si consiglia più semplicemente di non impostare il filtro per date registrazione**.
+- datos para filtrar los movimientos contables que serán objeto de cierre de cuentas; las **fechas de registro y de competencia** determinan cuáles registros incluir en el saldo contable: en particular, las fechas de competencia serán relativas al período de balance (1/1/….-31/12/….), mientras que el campo ‘a fecha de registro’ podría desplazarse al ejercicio siguiente para incluir los asientos de ajuste: **se recomienda, más simplemente, no establecer el filtro por fechas de registro**.
 
-- i codici di sottoconto, causale da utilizzare e data di registrazione e di competenza contabile delle scritture di chiusura del libro giornale; tali dati (tranne le date di registrazione) vengono riportati automaticamente se inseriti all'interno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)** (tab ‘Conti');
+- los códigos de subcuenta, la causal a utilizar y la fecha de registro y de competencia contable de los asientos de cierre del libro diario; dichos datos (salvo las fechas de registro) se incorporan automáticamente si se insertan dentro de los **[parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters)** (pestaña ‘Cuentas’);
 
-- (opzionale) la scelta di gestire contestualmente anche la riapertura dei conti anziché gestirla separatamente con **[l'apposito comando](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/new)**. 
+- (opcional) la elección de gestionar simultáneamente también la reapertura de cuentas en lugar de gestionarla separadamente con **[el comando específico](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/new)**. 
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/parameters-tab/image01.png)
 
-**Anno contabile**: richiama il corrispondente anno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, serve per la gestione della riapertura delle scritture di assestamento, da attivare alla base della maschera con il flag **Giroconto scritture di assestamento**: si tratta di gestire, in coda alla riapertura conti, i movimenti di riattribuzione dei risconti e dei ratei (a patto che questi siano già stati elaborati con la procedura **[Scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**) ai costi/ricavi relativi (i risconti saranno registrati alla stessa data dell'apertura conti, i ratei invece alla data della registrazione del documento d'origine).
+**Año contable**: hace referencia al año correspondiente de los **[parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters)**, sirve para la gestión de la reapertura de los asientos de ajuste, que se debe activar al pie del formulario con el indicador **Reasignación de asientos de ajuste**: se trata de gestionar, al final de la reapertura de cuentas, los movimientos de reasignación de anticipos y diferidos (siempre que estos hayan sido ya elaborados con el procedimiento **[Asientos de ajuste](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**) a los costos/ingresos relativos (los anticipos se registrarán en la misma fecha de la apertura de cuentas, los diferidos en la fecha de registro del documento de origen).
 
-Flag **Gestione saldo** (di chiusura e riapertura) **per divisa di movimentazione**: se attivato il programma inserisce una riga per ogni divisa di movimentazione del sottoconto specifico, mantenendo chiaramente il totale in divisa della società corretto. Tale possibilità si rende necessaria per garantire la correttezza dei saldi iniziali della stampa ‘Estratto conto in valuta'.
- 
-ATTENZIONE: Prima di avviare il calcolo è bene verificare le impostazioni della tabella **[Tipi conto](/docs/configurations/tables/finance/account-types)**: 
+Indicador **Gestión de saldo** (de cierre y reapertura) **por moneda de movimiento**: si está activado, el programa inserta una línea por cada moneda de movimiento del subcuenta específica, manteniendo claramente el total en moneda de la empresa correcto. Esta posibilidad es necesaria para garantizar la corrección de los saldos iniciales de la impresión ‘Extracto de cuenta en moneda'.
 
-in particolare i tipi conto di anagrafica cliente-fornitore-agente-banche oltre ad avere un flag sulle relative colonne debbono averne un secondo in una delle prime due colonne, relative all'attivo e al passivo patrimoniale. 
+ ATENCIÓN: Antes de iniciar el cálculo, es recomendable verificar los ajustes de la tabla **[Tipos de cuenta](/docs/configurations/tables/finance/account-types)**: 
 
-E' quindi possibile dare il via alla **Ripresa valori sottoconti** con il pulsante relativo, in modo da far calcolare al programma il saldo di ogni sottoconto e di presentare nelle tab Profitti e perdite e Patrimoniale i dati relativi. Una volta sicuri dei risultati è possibile passare all'ultima fase della procedura: rientrando nella scheda parametri, infatti, possiamo cliccare il pulsante Crea registrazione per la chiusura conti, che creerà le registrazioni contabili relative e inserirà il flag su **Contabilizzata**.
+en particular, los tipos de cuenta de los registros de cliente-proveedor-agente-bancos, además de tener un indicador en las columnas correspondientes, deben tener un segundo indicador en alguna de las dos primeras columnas, relativas al activo y al pasivo patrimonial. 
+
+Así, es posible dar inicio a la **Recuperación de valores de subcuentas** con el botón correspondiente, para que el programa calcule el saldo de cada subcuenta y presente en las pestañas de Pérdidas y Ganancias y Patrimonial los datos relacionados. Una vez seguros de los resultados, es posible pasar a la última fase del procedimiento: ingresando nuevamente en la pestaña de parámetros, podemos hacer clic en el botón Crear registro para el cierre de cuentas, que creará los registros contables correspondientes e insertará el indicador en **Contabilizado**.
 
 :::note
-Se il flag **Giroconto scritture di assestamento** è stato attivato, quando si lancia il comando **Ripresa valori sottoconti**, diventerà visibile una ulteriore tab **[Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
+Si el indicador **Reasignación de asientos de ajuste** ha sido activado, al lanzar el comando **Recuperación de valores de subcuentas**, se hará visible una pestaña adicional **[Reapertura de asientos de ajuste](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
 :::
- 
-#### Pulsanti specifici  
-> **Salva**: permette di salvare la testata della chiusura conti, attivabile dopo aver inserito la descrizione.  
-> **Ripresa valori sottoconti**: permette di far calcolare al programma il saldo di ogni sottoconto e di presentare nelle schede ‘profitti e perdite' e ‘patrimoniale' i dati relativi.  
-> **Crea registrazione per la chiusura conti**: permette di creare la registrazione di chiusura conti.  
-> **Ripristina contabilizzazione**: permette di annullare  ripristinando la contabilizzazione della chiusura conti.  
 
-### Profitti e Perdite
+#### Botones específicos  
+> **salva**: permite guardar el encabezado del cierre de cuentas, activable después de haber ingresado la descripción.  
+> **ripresa valori sottoconti**: permite que el programa calcule el saldo de cada subcuenta y presente en las pestañas ‘pérdidas y ganancias' y ‘patrimonial' los datos relacionados.  
+> **crea registrazione per la chiusura conti**: permite crear el registro de cierre de cuentas.  
+> **ripristina contabilizzazione**: permite anular restaurando la contabilización del cierre de cuentas.  
 
-Nel tab Profitti e Perdite verranno epilogati i componenti di reddito negativi e positivi con evidenza del risultato d'esercizio e la possibilità di filtrare i conti presenti nelle sezioni Componenti positivi di reddito e Componenti negativi di reddito tramite i campi Sottoconto costi, Sottoconto ricavi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
+### Pérdidas y Ganancias (Profitti e Perdite)
+
+En la pestaña de Pérdidas y Ganancias se resumirán los componentes de ingresos negativos y positivos, con evidenciación del resultado del ejercicio y la posibilidad de filtrar las cuentas presentes en las secciones de Componentes positivos de ingreso y Componentes negativos de ingreso a través de los campos de Subcuenta de costos, Subcuenta de ingresos y los botones de búsqueda ubicados en la barra de herramientas (ver tabla a continuación).
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/profit-and-loss-tab/image01.png)
 
-#### Pulsanti specifici  
-> **Ricerca componenti positivi di reddito sottoconti**: permette di cercare all'interno della chiusura i conti di ricavo desiderati.  
-> **Ricerca componenti positivi di reddito sottoconti**: permette di cercare all'interno della chiusura i conti di costo desiderati.  
+#### Botones específicos  
+> **Buscar componentes positivos de ingreso subcuentas (Ricerca componenti positivi di reddito sottoconti)**: permite buscar dentro del cierre las cuentas de ingreso deseadas.  
+> **Buscar componentes negativos de ingreso subcuentas (Ricerca componenti positivi di reddito sottoconti)**: permite buscar dentro del cierre las cuentas de costo deseadas.  
 
-### Patrimoniale
+### Patrimonial (Patrimoniale)
 
-Nel Tab **Patrimoniale** verranno epilogati i componenti attivi e passivi  con evidenza del risultato d'esercizio e la possibilità di di filtrare (analogamente a quanto previsto per la tab **[Profitti e perdite](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) i conti presenti nelle due sezioni sottostanti tramite i campi appositi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
+En la pestaña **Patrimonial**, se resumirán los componentes activos y pasivos con evidenciación del resultado del ejercicio y la posibilidad de filtrar (de manera análoga a lo previsto para la pestaña **[Pérdidas y ganancias](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) las cuentas presentes en las dos secciones siguientes a través de los campos correspondientes y los botones de búsqueda ubicados en la barra de herramientas (ver tabla a continuación).
 
-#### Pulsanti specifici  
-> **Ricerca patrimoniale attivo**: permette di cercare all'interno della chiusura i conti attivi desiderati.  
-> **Ricerca patrimoniale passivo**: permette di cercare all'interno della chiusura i conti passivi desiderati.  
+#### Botones específicos  
+> **ricerca patrimoniale attivo**: permite buscar dentro del cierre las cuentas activas deseadas.  
+> **ricerca patrimoniale passivo**: permite buscar dentro del cierre las cuentas pasivas deseadas.  
 
-### Registrazione
+### Registro (Registrazione)
 
-Le registrazioni (visualizzabili con un doppio click) sono in particolare le seguenti: 
+Los registros (visibles con un doble clic) son, en particular, los siguientes: 
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image01.png)
 
-#### Nella prima griglia  
+#### En la primera cuadrícula  
 
-- la prima registrazione chiude i ricavi, 
+- la primera registración cierra los ingresos, 
 
-- la seconda i costi, 
+- la segunda los costos, 
 
-- la terza rileva l'utile o la perdita chiudendo il conto economico, 
+- la tercera registra la utilidad o pérdida cerrando la cuenta de resultados, 
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image02.png)
 
-#### Nella seconda griglia  
+#### En la segunda cuadrícula  
 
-- la quarta chiude il passivo 
+- la cuarta cierra el pasivo 
 
-- la quinta l'attivo (comprensivi dei conti di utile o perdita);  
+- la quinta el activo (incluyendo las cuentas de utilidad o pérdida);  
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image03.png)
 
-#### Nella terza griglia  
+#### En la tercera cuadrícula  
 
-sono riportate le tre registrazioni dell'apertura: 
+se reflejan los tres registros de la apertura: 
 
-- la prima apre il passivo, 
+- el primero abre el pasivo, 
 
-- la seconda l'attivo, 
+- el segundo el activo, 
 
-- la terza gira il conto utile/perdita d'esercizio all'utile/perdita dell'esercizio precedente.
+- el tercero transfiere la cuenta de utilidad/pérdida del ejercicio a la utilidad/pérdida del ejercicio anterior.
 
 :::note Nota
 
-Eventuali errori che fossero rilevati in seguito possono essere risolti in questi modi: 
+Cualquier error que se pueda detectar posteriormente puede resolverse de las siguientes maneras: 
 
-- è possibile cancellare direttamente la chiusura conti effettuata e, alla richiesta del programma, cancellare anche le registrazioni ad essa collegate al fine di ripartire da zero nella procedura; 
+- es posible eliminar directamente el cierre de cuentas realizado y, tras la solicitud del programa, eliminar también los registros relacionados para reiniciar el procedimiento desde cero; 
 
-- in alternativa è presente un pulsante di *rollback*  **Ripristina contabilizzazione** della contabilizzazione (nella tab Parametri). 
+- alternativamente, hay un botón de *rollback* **Restaurar contabilización** de la contabilización (en la pestaña Parámetros). 
 :::
 
-Esistono specifici permessi utente per la contabilizzazione e l'annullamento della stessa. 
+Existen permisos específicos de usuario para la contabilización y la anulación de la misma. 
 
-:::danger Attenzione  
-La chiusura conti bloccherà le registrazioni comprese nel range di date impostato e, inoltre, non sarà più possibile inserire registrazioni all'interno di quel range di date.
+:::danger Atención  
+El cierre de cuentas bloqueará las registraciones comprendidas en el rango de fechas establecido y, además, no será posible insertar registros dentro de ese rango de fechas.
 
-I **conti d'ordine** non sono mai oggetto di chiusura e riapertura conti in questa procedura.
+Los **cuentas de orden** nunca son objeto de cierre y reapertura de cuentas en este procedimiento.
 ::: 
 
-### Riapertura Scriture di Assestamento
+### Reapertura de Asientos de Ajuste (Riapertura Scriture di Assestamento)
 
-In questa maschera è visibile il risultato dell'opzione di giroconto automatico delle operazioni di assestamento in coda alle registrazioni di riapertura conti. Con questa opzione l'applicativo procederà a rilevare, alla data di riapertura, lo storno delle rettifiche **mentre opererà il giroconto delle integrazioni alla data della registrazione d'origine** dell'assestamento stesso.
+En esta máscara se puede ver el resultado de la opción de reasignación automática de las operaciones de ajuste al final de los registros de reapertura de cuentas. Con esta opción, la aplicación procederá a registrar, en la fecha de reapertura, el reverso de los ajustes **mientras operará la reasignación de las adiciones en la fecha del registro de origen** del ajuste mismo.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image01.png)
 
- Facendo doppio clic sulle righe è possibile visualizzare il dettaglio delle registrazioni eseguite.
+ Al hacer doble clic en las filas, es posible visualizar el detalle de los registros realizados.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image02.png)
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image03.png)
 
 :::tip Info
-Generare la scrittura di riapertura delle scritture di integrazione (ratei attivi e passivi) alla data della scrittura di origine della rettifica è necessario, rispetto ad esempio a riaprire semplicemente all' 1/1 , al fine di gestire correttamente anche i calcoli delle chiusure infrannuali possibili con Fluentis.
+Generar el registro de reapertura de los asientos de adición (diferidos activos y pasivos) en la fecha del registro de origen del ajuste es necesario, en comparación, por ejemplo, a simplemente reabrir el 1/1, para gestionar correctamente también los cálculos de los cierres intermedios posibles con Fluentis.
 
-Si pensi ad esempio di aver registrato il 15/04/2023 un costo che ha competenza 01/11/2022 31/03/2023, quindi verrà registrato il rateo passivo al 31/12 di 2 mesi. Registrando la sua registrazione opposta (lo storno) in data 01/01 dipenderebbe molto da come sono filtrati e gestisti ratei/risconti per la chiusura infrannuale, si rischia in sostanza di avere solo lo storno costi (ovvero la riapertura del rateo) e non la fattura del costo nel bilancio infrannuale. 
+Piense, por ejemplo, en haber registrado el 15/04/2023 un costo que tiene competencia del 01/11/2022 al 31/03/2023, por lo que se registrará el diferido pasivo al 31/12 de 2 meses. Registrar su registro opuesto (el reverso) en fecha 01/01 dependería mucho de cómo se filtren y gestionen los diferidos/anticipos para el cierre intermedio, corriendo el riesgo, en esencia, de tener solo el reverso de costos (es decir, la reapertura del diferido) y no la factura del costo en el balance intermedio. 
 
-Registrando invece lo storno nello stesso giorno della fattura, qualsiasi sia il filtraggio successivo per l'estrazione dei saldi della chiusura infrannuale le due registrazioni "viaggeranno assieme" garantendo l'effetto che ci si attende (in questo caso un impatto neutro sul bilancio essendo il costo già stato anticipato all'esercizio precedente)
+Registrar en cambio el reverso el mismo día de la factura, cualquiera sea el filtrado posterior para la extracción de los saldos del cierre intermedio, aseguraría que ambos registros "viajen juntos" garantizando el efecto esperado (en este caso un impacto neutro en el balance, ya que el costo ya se había anticipado al ejercicio anterior).
 :::

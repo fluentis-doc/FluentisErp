@@ -1,18 +1,18 @@
 ---
-title: Impostazioni
+title: impostazioni
 sidebar_position: 1
 ---
 
-Fluentis offre la possibilità di impostare diverse funzionalità e parametri:
+Fluentis ofrece la posibilidad de configurar diversas funcionalidades y parámetros:
 
-- [Strumenti](/docs/applications/applications-intro): contiene le applicazioni complementari; 
+- [Herramientas (Strumenti)](/docs/applications/applications-intro): contiene las aplicaciones complementarias;
 
-- [Object Navigator](/docs/object-navigator/object-navigator-intro): contiene tutte le proprietà dell'oggetto corrente utile a personalizzare le form con l'aggiunta di ulteriori dati o informazioni;
+- [Navegador de Objetos (Object Navigator)](/docs/object-navigator/object-navigator-intro): contiene todas las propiedades del objeto actual útiles para personalizar los formularios con la adición de más datos o información;
 
-- [Configurazioni](/docs/configurations/configuration): contiene le configurazioni dei parametri, delle tabelle e utilità;  
+- [impostazioni (Configurazioni)](/docs/configurations/configuration): contiene las configuraciones de los parámetros, de las tablas y utilidades;
 
-- **Context Panel**: rappresenta una sorta di DashBoard contestualizzata alla selezione attiva;
+- **context panel**: representa una especie de Dashboard contextualizado a la selección activa;
 
-- **Fluentis Chat**: permette di interagire con gli utenti abilitati a tale servizio di comunicazione, sia interno nel contesto aziendale, sia esterno per accedere al supporto di Fluentis;  
+- **fluentis chat**: permite interactuar con los usuarios habilitados para este servicio de comunicación, tanto interno en el contexto empresarial, como externo para acceder al soporte de Fluentis;
 
-- [Form Navigator](/docs/form-navigator/form-navigator-intro).
+- [Navegador de Formularios (Form Navigator)](/docs/form-navigator/form-navigator-intro).

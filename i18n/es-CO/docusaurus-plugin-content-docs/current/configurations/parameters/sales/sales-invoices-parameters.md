@@ -1,80 +1,80 @@
 ---
-title: Parametri fatture di vendita
+title: parametri fatture di vendita
 sidebar_position: 5
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está interesada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-I parametri delle fatture di vendita permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra relativa a questi parametri si compone di 4 diversi tab: Generale, Evasione, Scarico e Analitica.
+Los parámetros de las facturas de venta permiten la configuración básica para gestionarlas correctamente y de acuerdo con las solicitudes específicas de cada empresa. La ventana relacionada con estos parámetros consta de 4 pestañas diferentes: General (Generale), Cumplimiento (Evasione), Descarga (Scarico) y Analítica (Analitica).
 
-### Generale
+### General (Generale)
 
-**Gestione doppia unità misura**: se attivo, nelle righe fattura verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.      
+**gestione doppia unità misura**: si está activo, las líneas de la factura mostrarán las dos columnas UM Alternativa y Cantidad Alternativa, por lo que será posible gestionar la doble unidad de medida, considerando siempre que es la unidad de medida principal sobre la cual se realizan los controles para el cumplimiento. 
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli della fattura l'unità di misura alternativa impostata nell'anagrafica articolo, nell’apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.      
+**Propuesta automática UM alternativa (Proposta automatica UM alternativa)**: este indicador se vuelve editablesolo si se ha activado el indicador de gestión de la doble unidad de medida y permite mostrar en la pestaña de artículos de la factura la unidad de medida alternativa establecida en el registro del artículo, en la columna correspondiente 'UM alternativa'; si no está activo, no se propone la unidad de medida.
 
-**Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
+**Control de Disponibilidad (Controllo Disponibilità)**: este indicador y los otros relacionados con el control, visualización y obligatoriedad en relación al área, en la versión actual no son gestionados.
 
-**Unità di misura volume/pesi predefinita**: queste unità di misura vengono considerate come UM di default da proporre nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT, come unità di misura di volume e pesi; il dato è modificabile nei documenti. 
+**Unidad de medida de volumen/pesos predeterminada (Unità di misura volume/pesi predefinita)**: estas unidades de medida se consideran como UM predeterminadas para proponer en la pestaña [Transporte (Trasporto)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT, como unidad de medida de volumen y pesos; el dato es modificable en los documentos.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di una fattura, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+**ricerca prezzi articoli in tutti i listini predefiniti**: cuando se buscan el precio y los descuentos para un artículo dentro de una factura, el sistema sigue reglas basadas en las configuraciones establecidas en el registro del cliente, en la sección *Listinos*. Si está activada la opción 'predeterminada' en un determinado tipo de lista, la búsqueda de precios y descuentos se centrará solo en ese tipo específico; si el indicador "predeterminado" no está activo, el sistema extenderá la búsqueda a todos los tipos de listas presentes, siguiendo un orden de prioridad. En práctica, con el indicador 'predeterminado' activo, el sistema primero buscará una lista válida para el tipo predeterminado; si no encuentra resultados, pasará a verificar las otras tipos de lista en orden de prioridad. Sin embargo, si en el registro del cliente no hay ningún tipo de lista configurada como 'predeterminada' y solo hay prioridades, este parámetro no influirá en la búsqueda, incluso si está activo.
 
-**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
+**proponi provvigione per gli articoli omaggio**: con este indicador se propondrán las comisiones del agente también para las líneas de artículo de tipo regalo, como ocurre para las líneas de tipo Artículo Codificado.
 
-**Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/sales-invoice).
+**Inserción de comisiones en los tipos 6 y 7 (Acantidad/Storno) (Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno))**: si está activo, permite la inserción y gestión de las comisiones también para los tipos de línea 6 y 7 de las facturas. Para más detalles, consulte el artículo relacionado con la [inserción de la factura (inserimento della fattura)](/docs/sales/sales-invoices/invoicing/sales-invoice).
 
-**Consentire sconti per gli articoli omaggio**: con questo flag saranno calcolati gli sconti anche per gli articoli omaggio e incideranno sui totali.
+**consentire sconti per gli articoli omaggio**: con este indicador se calcularán los descuentos también para los artículos de regalo y afectarán los totales.
 
-**Prezzi negativi delle note di credito**: se attivo, il sistema notificherà un avviso qualora ci fossero dei prezzi positivi all'interno di note di accredito. Se non attivo, il sistema non farà nessun controllo e non restituirà nessun avviso.
+**Precios negativos de las notas de crédito (Prezzi negativi delle note di credito)**: si está activo, el sistema notificará una advertencia en caso de que haya precios positivos dentro de las notas de crédito. Si no está activo, el sistema no hará ningún control y no devolverá ninguna advertencia.
 
-**Verifica articoli in esaurimento**: con questo flag viene attivata la gestione degli articoli in esaurimento; se in anagrafica articolo è presente una Data esaurimento e il relativo flag, Fluentis avviserà l'utente con un pop up se l'articolo viene inserito nel documento.    
+**verifica articoli in esaurimento**: con este indicador se activa la gestión de artículos en agotamiento; si en el registro del artículo hay una Fecha de agotamiento y el indicador correspondiente, Fluentis advertirá al usuario con un pop up si el artículo se inserta en el documento.
 
-**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di fattura quale tipo di sconto utilizzare.     
+**[Habilitar Widget de descuentos simplificado (Abilita Widget sconti semplificato)](/docs/sales/sales-flow/discount-widget)**: al activar este indicador en la sección Artículos se mostrarán dos nuevas columnas: *sconti articolo* y *sconti finali articolo*. La columna *sconti articolo* es modificable y muestra los descuentos aplicados automáticamente según las configuraciones relacionadas con el cliente, el artículo, la lista o la categoría de descuento. El usuario tiene la posibilidad de ingresar, modificar o eliminar los descuentos directamente en esta columna. Para utilizar este widget es necesario que, además de activar el indicador, se especifique en el tipo de factura qué tipo de descuento utilizar.
 
-**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli della fattura, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
+**uso articolo cliente**: si se establece, este indicador insertará, en la cuadrícula de artículos de la factura, las columnas para el Código y la Descripción del cliente ingresados en el registro del artículo, pestaña Cliente.
 
-**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli della fattura, la colonna per riportare il barcode dell'articolo.     
+**uso barcode**: si se establece, este indicador insertará, en la cuadrícula de artículos de la factura, la columna para mostrar el código de barras del artículo.
 
-**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
+**codice operatore obbligatorio**: este indicador hace que sea obligatorio completar el campo *operatore* en la cabecera.
 
-**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+**blocca inserimento documento in date festive da calendario di fabbrica**: si está activo, el sistema no permite la inserción de la oferta en días festivos (primero se controla el Calendario de Producción de la empresa, luego el Calendario de Capacidades Productivas); si no está activo, el sistema no realiza ningún control y permite la inserción del documento.
 
-**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-invoices/invoicing/sales-invoice) della fattura vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
+**ricalcola trasporto**: este indicador asegura que en la pestaña [Transporte (Trasporto)](/docs/sales/sales-invoices/invoicing/sales-invoice) de la factura se muestren los totales de peso, volumen y paquetes de las líneas del documento; sin este indicador, los campos no se completarán.
 
-**Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine/DDT alle righe fattura.
+**riferimenti esterni ordine**: este indicador asegura que los campos *Nuestro (Nostro)* y *vostro riferimento* se transfieran de las líneas de pedido/DDT a las líneas de la factura.
 
-**Mantieni prezzi da ordini per gli scaglioni**: è utilizzato nell'evasione degli ordini in fattura nel caso in cui la quantità evasa sia diversa (solitamente parziale) della quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso in cui l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
+**mantieni prezzi da ordini per gli scaglioni**: se utiliza en el cumplimiento de los pedidos en la factura en caso de que la cantidad despachada sea diferente (normalmente parcial) a la cantidad ordenada para la cual se ha ingresado un precio o un descuento en escalonia de cantidad. Si el precio o el descuento no dependen de la cantidad entregada, sino solo de la cantidad en orden, este indicador debe estar activo; si el precio o el descuento en escalón no debe ser ingresado en el documento de entrega en caso de que la entrega no se realice por la cantidad total del pedido, el indicador no debe ser activado.
 
-### Evasione
+### Evasión (Evasione)
 
-**Pagamento**: specifica il valore usato per il pagamento della fattura cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**pagamento**: especifica el valor usado para el pago de la factura del cliente en caso de cumplimiento múltiple de la orden de venta: *primo ordine*, *anagrafica* o *selezione manuale*.
 
-**Destinatario**: specifica il valore usato per il destinatario dell'ordine cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**destinatario**: especifica el valor usado para el destinatario del pedido del cliente en caso de cumplimiento múltiple de la orden de venta: *primo ordine*, *anagrafica* o *selezione manuale*.
 
-**Ricalcola CDC/CDP**: nel caso in cui si sia scelto di generare la fattura partendo dall'ordine cliente con l'apposta procedura, attivando questo flag, il sistema andrà a ricalcolare i centri di costo e di profitto nella fattura, non considerando quelli impostati nell'ordine di vendita. Se non attivo il sistema non ricalcolerà questi dati ma terrà quelli inseriti nell'ordine cliente;
+**Recalcular CDC/CDP (Ricalcola CDC/CDP)**: en caso de haber elegido generar la factura a partir del pedido del cliente con el procedimiento correspondiente, al activar este indicador, el sistema recalculará los centros de costo y de beneficio en la factura, sin considerar los que se establecieron en la orden de venta. Si no está activo, el sistema no recalculará estos datos, sino que mantendrá los ingresados en el pedido del cliente.
 
-**Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ddt di vendita.      
+**Visualización de la cuadrícula de cumplimiento (Visualizzazione griglia evasione)**: si está activo, el indicador habilita la modalidad de cuadrícula en el formulario de cumplimiento de DDT de venta.
 
-**Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ddt di vendita.
+**Visualización de árbol de cumplimiento (Visualizzazione tree evasione)**: si está activo, el indicador habilita la modalidad de árbol en el formulario de cumplimiento de DDT de venta.
 
-### Scarico
+### Descarga (Scarico)
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data della fattura, e non sarà necessario specificare la data registrazione nella form di scarico. Se non attivo, sarà necessario specificare la data nella form di scarico della fattura;
+**crea registrazione con la data del documento**: si está activo, el registro de almacén se realiza con la misma fecha de la factura, y no será necesario especificar la fecha de registro en el formulario de descarga. Si no está activo, será necesario especificar la fecha en el formulario de descarga de la factura.
 
-**Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe della fattura mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (Magazzino e Causale di magazzino);
+**Prioridad de almacén y causal de descarga en las líneas de artículos de los DDT (Priorità magazzino e causale di scarico alle righe articoli dei DDT)**: si está activo, el almacén y la causal de descarga se leen desde las líneas de la factura; si no se activa, se utilizarán el almacén y la causal ingresadas en los campos siguientes (Almacén y Causal de almacén).
 
-**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante presente nella ribbon bar della form di inserimento fattura (vedi [Inserimento fatture di vendita](/docs/sales/sales-invoices/invoicing/sales-invoice)) oppure con l'apposita procedura;
+**carico/scarico automatico**: si está activo, la descarga del DDT se realizará automáticamente al activar el indicador Impreso (Stampata). Si no está activo, la descarga debe hacerse con el botón correspondiente presente en la barra de ribbon del formulario de inserción de facturas (ver [Inserción de facturas de venta (Inserimento fatture di vendita)](/docs/sales/sales-invoices/invoicing/sales-invoice)) o con el procedimiento correspondiente.
 
-**Avviso articoli fittizi**: se attivo, durante lo scarico della fattura il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutta la fattura verrà scaricata (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa la fattura NON verrà scaricata.
+**avviso articoli fittizi**: si está activo, durante la descarga de la factura, el sistema controlará si hay artículos ficticios y, en caso de haberlos, aparecerá un mensaje que permitirá al usuario elegir si completar el procedimiento o no; en caso de respuesta afirmativa, toda la factura será descargada (excepto los artículos ficticios), mientras que en caso de respuesta negativa, la factura NO será descargada.
 
-### Analitica
+### Analítica (Analitica)
 
-Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga documento.      
-È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).      
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover);         
-Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in anagrafica Cliente. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.      
-Il flag **Valuta la priorità di ogni dimensione** fa in modo che nei documenti i CDC/CDP vengano raggruppati per dimensione, nel tab Analitica. 
+Esta pestaña especifica con qué prioridad se recupera el Centro de Costos (CDC) o el Centro de Beneficios (CDP) en la línea del documento.  
+Es posible modificar las prioridades utilizando los botones **sposta su**![](/img/neutral/common/move-up.png) y **sposta giù**![](/img/neutral/common/delete-cc.png).  
+*Valores predeterminados (Valori di default)*: el CDC o CDP se recupera del [Tipo de facturación (Tipo fatturato)](/docs/configurations/tables/sales/sales-turnover) si está presente. Para más detalles, consulte la tabla [Tipo de facturación (Tipo fatturato)](/docs/configurations/tables/sales/sales-turnover).  
+Si no está presente en el tipo de facturación, el sistema lo buscará en el registro del cliente (anagrafica Cliente). Si no está presente, se buscará en el registro del artículo y, posteriormente, a nivel de almacén.  
+El indicador **Evalúa la prioridad de cada dimensión (Valuta la priorità di ogni dimensione)** asegura que en los documentos los CDC/CDP se agrupen por dimensión, en la pestaña Analítica.

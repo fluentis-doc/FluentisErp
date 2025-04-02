@@ -1,70 +1,70 @@
 ---
-title: Nuovo automezzo
+title: Nuevo vehículo (Nuovo automezzo)
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Logistica > Automezzi > Nuovo automezzo**.
+La tabla se encuentra en la ruta **Logística > Vehículos > Nuevo vehículo** (Logistica > Automezzi > Nuovo automezzo).
 
-In questa tabella è possibile codificare i diversi *Automezzi* utilizzati e le dimensioni di ciascuno di essi.
+En esta tabla es posible codificar los diferentes *Vehículos* utilizados y las dimensiones de cada uno de ellos.
 
-Un esempio di utilizzo degli automezzi codificati in questa tabella lo si trova nei [Piani di Carico](/docs/logistics/load-plans/create-plan/), nel tabulatore *Preparazione piano di carico*.
+Un ejemplo de uso de los vehículos codificados en esta tabla se encuentra en los [Planes de Carga](/docs/logistics/load-plans/create-plan/), en la pestaña *Preparación del plan de carga* (Preparazione piano di carico).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Automezzi**
+**Búsqueda de Vehículos (Ricerca Automezzi)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Automezzi**
+**Inserción de Vehículos (Inserimento Automezzi)**
 
-Per poter inserire nuovi *Automezzi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: 
+Para poder insertar nuevos *Vehículos*, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**. 
+Para el nuevo registro se deben ingresar al menos los campos obligatorios solicitados por el programa: 
 
-- **Tipo automezzo**: indica la tipologia del mezzo inserita nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-Type);          
-- **Codice**: indica il codice del mezzo;       
-- **Targa**: indica il numero di targa del mezzo;      
-- **Data registrazione**: indica la data di registrazione del mezzo;          
-- **Tipo carburanti autoveicolo**: indica il [Tipo di carburante](/docs/configurations/tables/logistics/motorvehicle-gas-type) usato dal mezzo.
+- **tipo automezzo**: indica la tipología del medio ingresada en la tabla [Tipo de vehículo](/docs/configurations/tables/logistics/motorvehicle-Type);          
+- **codice**: indica el código del vehículo;       
+- **targa**: indica el número de matrícula del vehículo;      
+- **data registrazione**: indica la fecha de registro del vehículo;          
+- **Tipo de combustible del vehículo (Tipo carburanti autoveicolo)**: indica el [Tipo de combustible](/docs/configurations/tables/logistics/motorvehicle-gas-type) utilizado por el vehículo.
 
-Inoltre è possibile inserire non obbligatori, tra cui:
+Además, se pueden ingresar otros campos no obligatorios, entre los que se incluyen:
 
-- **Marca**: indica la marca del mezzo presente nella tabella [Marchi automezzi](/docs/configurations/tables/logistics/motorvehicle-brands);             
-- **Modello**: indica il modello del mezzo presente nella tabella [Marchi automezzi](/docs/configurations/tables/logistics/motorvehicle-brands);        
-- **Data inizio**: indica la data di inizio di utilizzo dell'automezzo;     
-- **Data scadenza contratto**: indica la data di scadenza del contratto dell'automezzo;     
-- **Data chiusura**: indica la data dalla quale non è più possibile utilizzare l'automezzo;     
-- **Descrizione**: permette di inserire una descrizione libera dell'automezzo;       
-- **Conto**: permette di inserire il conto del cliente dell'automezzo;        
-- **Proprietà autoveicolo**: permette di indicare la tipologia [Proprietà dell'autoveicolo](/docs/configurations/tables/logistics/motorvehicle-ownership);        
-- **Autista assegnato**: permette di indicare l'[Autista assegnato](/docs/logistics/motorvehicles/motorvehicle-drivers) all'automezzo;        
-- **Filiale aziendale**: permette di indicare la filiale aziendale;        
-- **Progetto**: permette di indicare il progetto assegnato all'automezzo.        
+- **marca**: indica la marca del vehículo presente en la tabla [Marcas de vehículos](/docs/configurations/tables/logistics/motorvehicle-brands);             
+- **modello**: indica el modelo del vehículo presente en la tabla [Marcas de vehículos](/docs/configurations/tables/logistics/motorvehicle-brands);        
+- **data inizio**: indica la fecha de inicio de uso del vehículo;     
+- **Fecha de vencimiento del contrato (Data scadenza contratto)**: indica la fecha de vencimiento del contrato del vehículo;     
+- **data chiusura**: indica la fecha a partir de la cual no es posible utilizar el vehículo;     
+- **descrizione**: permite ingresar una descripción libre del vehículo;       
+- **conto**: permite ingresar la cuenta del cliente del vehículo;        
+- **Propiedad del vehículo (Proprietà autoveicolo)**: permite indicar la tipología [Propiedad del vehículo](/docs/configurations/tables/logistics/motorvehicle-ownership);        
+- **Conductor asignado (Autista assegnato)**: permite indicar el [Conductor asignado](/docs/logistics/motorvehicles/motorvehicle-drivers) al vehículo;        
+- **filiale aziendale**: permite indicar la sucursal empresarial;        
+- **progetto**: permite indicar el proyecto asignado al vehículo.        
 
-Una volta terminato l'inserimento dei valori di testata, nella parte inferiore della form sono presenti i seguenti tab:
+Una vez terminado el ingreso de los valores de encabezado, en la parte inferior del formulario están presentes las siguientes pestañas:
 
-**Dettagli** dell'automezzo, che contiene i seguenti valori:
+**dettagli** del vehículo, que contiene los siguientes valores:
 
-- **Vano**: indica il vano dell'automezzo;                  
-- **Targa**: indica la targa dell'automezzo;             
-- **Unità di misura portata**: indica la capacità massima dell'automezzo espressa nell'**Unità di misura portata**;         
-- **Portata massima**: indica la capacità massima dell'automezzo espressa nell'**Unità di misura portata**;                  
-- **Unità di misura dimensioni**: indica l'unità di misura con cui sono espresse **Altezza**, **Larghezza**, **Profondità** e le relative tolleranze;      
-- **Altezza**: indica l'altezza dell'automezzo espresso nell'**Unità di misura dimensioni**;         
-- **Larghezza**: indica la larghezza dell'automezzo espresso nell'**Unità di misura dimensioni**;                 
-- **Profondità**: indica la profondità dell'automezzo espresso nell'**Unità di misura dimensioni**;                 
-- **Tolleranza in altezza**: indica la tolleranza in altezza dell'automezzo espresso nell'**Unità di misura dimensioni**;           
-- **Tolleranza in larghezza**: indica la tolleranza in larghezza dell'automezzo espresso nell'**Unità di misura dimensioni**;       
-- **UM volume**: indica l'unità di misura con cui è espresso il **Volume**;                    
-- **Volume**: indica il volume dell'automezzo espresso nell'**Unità di misura volume**;                 
-- **Numero unità di carico contenibili**: indica il numero massimo di unità di carico che possono essere contenute nell'automezzo;
-- **Numero strati**: indica il numero di strati che possono essere caricati nell'automezzo.
+- **vano**: indica el uso del vehículo;                  
+- **targa**: indica la matrícula del vehículo;             
+- **Unidad de medida de capacidad (Unità di misura portata)**: indica la capacidad máxima del vehículo expresada en **Unidad de medida de capacidad**;         
+- **portata massima**: indica la capacidad máxima del vehículo expresada en **Unidad de medida de capacidad**;                  
+- **Unidad de medida de dimensiones (Unità di misura dimensioni)**: indica la unidad de medida con la que se expresan **Altura**, **Anchura**, **Profundidad** y las respectivas tolerancias;      
+- **altezza**: indica la altura del vehículo expresada en **Unidad de medida de dimensiones**;         
+- **larghezza**: indica la anchura del vehículo expresada en **Unidad de medida de dimensiones**;                 
+- **profondità**: indica la profundidad del vehículo expresada en **Unidad de medida de dimensiones**;                 
+- **tolleranza in altezza**: indica la tolerancia en altura del vehículo expresada en **Unidad de medida de dimensiones**;           
+- **tolleranza in larghezza**: indica la tolerancia en anchura del vehículo expresada en **Unidad de medida de dimensiones**;       
+- **um volume**: indica la unidad de medida con la que se expresa el **Volumen**;                    
+- **volume**: indica el volumen del vehículo expresado en **Unidad de medida de volumen**;                 
+- **Número de unidades de carga contenibles (Numero unità di carico contenibili)**: indica el número máximo de unidades de carga que pueden ser contenidas en el vehículo; 
+- **numero strati**: indica el número de capas que pueden ser cargadas en el vehículo.
 
-**Periodo inattività automezzo** che permette di inserire i periodi di inattività del mezzo, i quali verranno riportati nel [Planning](/docs/logistics/shipping/calendar).
-Quindi si possono inserire i seguenti valori:
+**Periodo de inactividad del vehículo (Periodo inattività automezzo)** que permite ingresar los períodos de inactividad del medio, los cuales se informarán en el [Planificación](/docs/logistics/shipping/calendar). 
+Por lo tanto, se pueden ingresar los siguientes valores:
 
-- **Descrizione**: permette di indicare la descrizione del periodo di inattività dell'automezzo;          
-- **Da data**: permette di indicare la data di inizio del periodo di inattività dell'automezzo;          
-- **A data**: permette di indicare la data di fine del periodo di inattività dell'automezzo;          
-- **Motivo**: permette di inserire la motivazione codificata in [Motivi di assenza del conducente](/docs/configurations/tables/logistics/driver-off-time-reasons/)
+- **descrizione**: permite indicar la descripción del período de inactividad del vehículo;          
+- **da data**: permite indicar la fecha de inicio del período de inactividad del vehículo;          
+- **a data**: permite indicar la fecha de fin del período de inactividad del vehículo;          
+- **motivo**: permite ingresar la motivación codificada en [Motivos de ausencia del conductor](/docs/configurations/tables/logistics/driver-off-time-reasons/)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,29 +1,19 @@
 ---
-title: Filtro
+title: filtro
 sidebar_position: 2
 ---
 
-Nella prima scheda si ricercano e selezionano le scadenze compensi da pagare: è consentita la modifica manuale degli importi da pagare, che causerà un ricalcolo della quota relativa della ritenuta.
+En la primera pestaña se buscan y seleccionan los vencimientos de compensaciones a pagar: se permite la modificación manual de los importes a pagar, lo que causará un re-cálculo de la cuota correspondiente de la retención.
 
-Alla successiva apertura della maschera verà visualizzato in tal caso il residuo da pagare.
+En la próxima apertura del formulario, se visualizará en ese caso el saldo a pagar.
 
  
 
-ATTENZIONE: prima di eseguire il comando di contabilizzazione verificare i parametri nella tab ** [Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).**
+ATENCIÓN: antes de ejecutar el comando de contabilización, verifique los parámetros en la pestaña **[Parámetros (Parametri)](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**.
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/filter/image01.png)
 
-
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca pagamenti | Ricerca la lista dei pagamenti da effettuare. |
-| Contabilizzazione pagamenti | Esegue la contabilizzazione dei pagamenti selezionati. |
-
-
-
-
-
-
+| Búsqueda de pagos (Ricerca pagamenti) | Busca la lista de los pagos a realizar. |
+| Contabilización de pagos (Contabilizzazione pagamenti) | Ejecuta la contabilización de los pagos seleccionados. |

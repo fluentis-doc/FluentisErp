@@ -1,254 +1,207 @@
 ---
-title: Stati dei documenti in Fluentis
+title: Estados de los documentos en Fluentis (Stati dei documenti in Fluentis)
 sidebar_position: 5
 ---
 
-L’invio e la ricezione dei documenti elettronici del ciclo attivo e passivo prevede la gestione, da parte 
-dell’utente, di una serie di STATI operativi che definiscono il flusso di gestione del documento di fattura, dalla 
-sua generazione fino all’invio a Fluentis Business Hub per l’effettivo trasferimento al SdI.
-Gli stati potranno essere gestiti singolarmente, quindi all’interno della gestione di unico documento, oppure 
-in modalità massive; ogni stato può prevedere il passaggio ad uno stato PRECEDENTE di gestione oppure ad 
-uno SUCCESSIVO. Le azioni e la gestione dei documenti elettronici può essere subordinata a restrizioni 
-operative che possono riservare la gestione degli stati dei documenti solo a ruoli e/o utenti predefinito, 
-configurando opportunamente la ribbon menu delle azioni relative.
-La normativa attuale relativa alle comunicazioni da inviare all’Agenzia delle Entrate prevede che i soggetti 
-passivi ai fini IVA comunichino i dati relativi alle operazioni di cessione beni/prestazioni servizi effettuate 
-(Gestione del ciclo attivo) e RICEVUTE anche da soggetti NON identificati/non residenti nel territorio dello 
-Stato utilizzando lo stesso tracciato previsto per le fatture elettroniche italiane. Se per i documenti EMESSI 
-è possibile utilizzare il medesimo tracciato previsto per le fatture elettroniche italiane, per l’invio al Sdi dei 
-documenti di acquisto di fornitori esteri è previsto un tracciato apposito e la firma per questi file è 
-obbligatoria.
-In Fluentis la generazione del file XML di questa tipologia è possibile a fronte della registrazione contabile 
-del documento ricevuto e la successiva gestione, all’interno della registrazione contabile, della generazione 
-del file XML e suo invio al SdI con le medesime operazioni di cambio stato previste per il ciclo attivo, oppure 
-attraverso la gestione dei file dalla funzione Fatturazione elettronica con soggetti non residenti.
-       
-Il significato dei vari stati nel dettaglio:
+El envío y la recepción de documentos electrónicos del ciclo activo y pasivo requiere que el usuario gestione una serie de ESTADOS operativos que definen el flujo de gestión del documento de factura, desde su generación hasta el envío a Fluentis Business Hub para la transferencia efectiva al SdI.  
+Los estados se pueden gestionar de forma individual, es decir, dentro de la gestión de un único documento, o de manera masiva; cada estado puede prever el paso a un estado ANTERIOR de gestión o a uno SUCESIVO. Las acciones y la gestión de los documentos electrónicos pueden estar sujetas a restricciones operativas que pueden reservar la gestión de los estados de los documentos solo a roles y/o usuarios predefinidos, configurando adecuadamente el menú de acciones relativo.  
+La normativa actual relativa a las comunicaciones que deben enviarse a la Agencia de Impuestos establece que los sujetos pasivos a efectos de IVA deben comunicar los datos relacionados con las operaciones de entrega de bienes/prestación de servicios realizadas (Gestión del ciclo activo) y RECIBIDAS también de sujetos NO identificados/no residentes en el territorio del Estado utilizando el mismo formato previsto para las facturas electrónicas italianas.  
+Si para los documentos EMITIDOS es posible utilizar el mismo formato previsto para las facturas electrónicas italianas, para el envío al SdI de los documentos de compra de proveedores extranjeros se requiere un formato específico y la firma para estos archivos es obligatoria.  
+En Fluentis, la generación del archivo XML de este tipo es posible tras el registro contable del documento recibido y la posterior gestión, dentro del registro contable, de la generación del archivo XML y su envío al SdI con las mismas operaciones de cambio de estado previstas para el ciclo activo, o a través de la gestión de los archivos desde la función de Facturación electrónica con sujetos no residentes.
 
-| Stato documento | Descrizione | Azioni possibili |
+El significado de los diferentes estados en detalle:
+
+| Estado documento | Descripción | Acciones posibles |
 | :-- | :-- | :-- | 
-| Non esaminata | Il documento è stato generato e ancora non sono state fatte azioni relative alla gestione del documento elettronico | *Successive*: Controllato, Annullata, Esclusa. *Precedenti*: Eliminazione manuale del documento dalla gestione | 
-| Controllato | Il documento è stato sottoposto ai controlli preliminari da parte dell’operatore | *Successive*: Generata, Annullata, Esclusa. *Precedenti*: Non esaminata (torno allo stato iniziale del documento) | 
-| Generata | E' stato creato il file XML relativo al documento elettronico. Da questo momento è possibile procedere con gli stati successivi per inviare il file al Fluentis Business Hub oppure scaricare il file XML per gestioni esterne. Il documento in questo stato può essere contabilizzato | *Successive*: Firmata, Da spedire, Annullata, Esclusa. *Precedenti*: Controllata | 
-| Firmata | Il documento è stato firmato esternamente con certificato di firma Cadeso Xades e reimportato in Fluentis nel nuovo formato | *Successive*: Da spedire, Annullata, Esclusa. *Precedenti*: Generata | 
-| Da spedire | Questo stato, da utilizzare nel caso in cui sia correttamente configurato il canale Fluentis Business Hub, accoda il documento alla lista documenti che BizLink dovrà processare per l’invio a Sdi. PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS QUESTO CAMBIO STATO BLOCCA LA FATTURA A QUALSIASI ALTRA AZIONE | *Successive*: NESSUNA AZIONE MANUALE. Lo stato viene aggiornato da Fluentis Business HubNON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS | 
-| Annullata | Il documento non deve essere inviato al cliente finale ma resta comunque valido ai fini IVA | *Successive*: NESSUNA AZIONE MANUALE. *Precedenti*: Non esaminata | 
-| Esclusa | Il documento è stato creato ma non rientra tra quelli da inviare al SdI (es. nota di storno interna o cliente non residente in italia e non soggetto a fatturazione elettronica con invio a SdI) | *Successive*: NESSUNA AZIONE MANUALE. *Precedenti*: Non esaminata | 
-| Non abbinata (ciclo passivo) | Il documento è stato ricevuto dal servizio Fluentis Business Hub e non è stato abbinato ad alcun elemento contabile (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS) | *Successive*: Ricevuta | 
-| Ricevuta (ciclo passivo) | Il documento è stato abbinato alla registrazione contabile/documento di acquisto/documento compenso (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS) | *Precedenti*: Non abbinata | 
+| No examinada (Non esaminata) | El documento ha sido generado y aún no se han realizado acciones relacionadas con la gestión del documento electrónico | *Sucesivas*: Controlado, Anulada, Excluida. *Precedentes*: Eliminación manual del documento de la gestión | 
+| Controlado (Controllato) | El documento ha sido sometido a controles preliminares por parte del operador | *Sucesivas*: Generada, Anulada, Excluida. *Precedentes*: No examinada (vuelvo al estado inicial del documento) | 
+| Generada (Generata) | Se ha creado el archivo XML relativo al documento electrónico. A partir de este momento es posible proceder con los estados sucesivos para enviar el archivo al Fluentis Business Hub o descargar el archivo XML para gestiones externas. El documento en este estado puede ser contabilizado | *Sucesivas*: Firmada, A enviar, Anulada, Excluida. *Precedentes*: Controlada | 
+| Firmada (Firmata) | El documento ha sido firmado externamente con un certificado de firma Cadeso Xades y reimportado en Fluentis en el nuevo formato | *Sucesivas*: A enviar, Anulada, Excluida. *Precedentes*: Generada | 
+| A enviar (Da spedire) | Este estado, que debe utilizarse en caso de que el canal Fluentis Business Hub esté correctamente configurado, coloca el documento en la lista de documentos que BizLink debe procesar para el envío al SdI. PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS, ESTE CAMBIO DE ESTADO BLOQUEA LA FACTURA A CUALQUIER OTRA ACCIÓN | *Sucesivas*: NINGUNA ACCIÓN MANUAL. El estado se actualiza por Fluentis Business Hub NO GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS | 
+| Anulada (Annullata) | El documento no debe ser enviado al cliente final, pero sigue siendo válido a efectos de IVA | *Sucesivas*: NINGUNA ACCIÓN MANUAL. *Precedentes*: No examinada | 
+| Excluida (Esclusa) | El documento ha sido creado pero no se incluye entre los que se deben enviar al SdI (por ejemplo, nota de abono interna o cliente no residente en Italia y no sujeto a facturación electrónica con envío a SdI) | *Sucesivas*: NINGUNA ACCIÓN MANUAL. *Precedentes*: No examinada | 
+| No vinculada (Non abbinata) (ciclo pasivo) | El documento ha sido recibido por el servicio Fluentis Business Hub y no ha sido vinculado a ningún elemento contable (NO GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS) | *Sucesivas*: Recibida | 
+| Recibida (Ricevuta) (ciclo pasivo) | El documento ha sido vinculado a la inscripción contable/documento de compra/documento de compensación (NO GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS) | *Precedentes*: No vinculada | 
 
-Se l'invio viene fatto tramite Fluentis Business Hub, dopo aver contrassegnato il documento creato con lo 
-stato “Da spedire”, gli stati successivi acquisiti direttamente dal Fluentis Business Hub possono essere:          
+Si el envío se realiza a través de Fluentis Business Hub, después de marcar el documento creado con el estado "A enviar", los estados sucesivos adquiridos directamente del Fluentis Business Hub pueden ser:
 
-QUESTI STATI NON SONO GESTITI PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FBH CON FLUENTIS           
+ESTOS ESTADOS NO SON GESTIONADOS PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FBH CON FLUENTIS
 
-
-| Stato documento | Descrizione | Azioni possibili | Notifica XML da SDI |
+| Estado documento | Descripción | Acciones posibles | Notificación XML del SDI |
 | :-- | :-- | :-- | :-- |
-| In Fluentis Business Hub | Il documento è stato recepito in Fluentis Business Hub e in attesa del prelevo da parte del SdI | E’ necessario attendere un riscontro dal SdI che verificherà ed eventualmente preleverà il file | NO |
-| In SDI | Il documento è stato recepito dal SdI | *Successive*: Non conforme, Emessa | NO |
-| Non conforme | Il documento NON ha passato i controlli formali previsti da SdI e dovrà essere riemesso. I cambi di stato successivi sono MANUALI e a cura dell’utente | *Precedenti*: Non esaminata, Annullata, Esclusa | SI |
-| Consegnata | Il documento è stato consegnato al destinatario | Il ciclo di invio è concluso | SI |
-| Mancata consegna | Il SdI non è riuscito a consegnare il documento al destinatario e lo metterà a disposizione nella sua area riservata (es. per indisponibilità dell'indirizzo telematico di ricezione o perché tale indirizzo non è stato indicato in fattura) | *Successive*: Notifica cliente | SI |
-| Notifica cliente |  A fronte della mancata consegna da parte del SdI, viene fatta una notifica manuale al cliente della fattura. Questo stato è MANUALE e a cura dell’utente | Il ciclo di invio è concluso | NO | 
-| Documento emesso (Solo PA) | Il documento è stato considerato valido da SdI che procede con i tentativi di consegna verso la PA | *Successive*: Consegnata, Mancata consegna | NO | 
-| Respinta (solo PA) |  Il documento rivolto alla PA è stato Rifiutato dall’Amministrazione Pubblica | *Precedenti*: Da esaminare | SI |
-| Approvata | Il documento rivolto alla PA è stato Accettao dall’Amministrazione Pubblica | Il ciclo di invio è concluso | SI |
-| Accettata per decorrenza | Se entro il termine dei 15 giorni dal ricevimento della fattura il SdI non riceve alcuna comunicazione, il SdI inoltra notifica di DECORRENZA DEI TERMINI sia al soggetto trasmittente sia al soggetto ricevente | | SI |
+| En Fluentis Business Hub (In Fluentis Business Hub) | El documento ha sido recibido en Fluentis Business Hub y está a la espera de ser recogido por el SdI | Es necesario esperar una respuesta del SdI que verificará y, eventualmente, recogerá el archivo | NO |
+| En SDI (In SDI) | El documento ha sido recibido por el SdI | *Sucesivas*: No conforme, Emitida | NO |
+| No conforme (Non conforme) | El documento NO ha pasado los controles formales previstos por el SdI y deberá ser reemitido. Los cambios de estado sucesivos son MANUALES y a cargo del usuario | *Precedentes*: No examinada, Anulada, Excluida | SI |
+| Entregada (Consegnata) | El documento ha sido entregado al destinatario | El ciclo de envío se ha completado | SI |
+| Falta de entrega (Mancata consegna) | El SdI no pudo entregar el documento al destinatario y lo pondrá a disposición en su área reservada (por ejemplo, por indisponibilidad de la dirección telemática de recepción o porque dicha dirección no ha sido indicada en la factura) | *Sucesivas*: Notificación al cliente | SI |
+| Notificación al cliente (Notifica cliente) | A raíz de la falta de entrega por parte del SdI, se realiza una notificación manual al cliente de la factura. Este estado es MANUAL y a cargo del usuario | El ciclo de envío se ha completado | NO | 
+| Documento emitido (Documento emesso) (Solo PA) | El documento ha sido considerado válido por el SdI que procede con los intentos de entrega hacia la PA | *Sucesivas*: Entregada, Falta de entrega | NO | 
+| Rechazada (Respinta) (solo PA) | El documento destinado a la PA ha sido rechazado por la Administración Pública | *Precedentes*: Por examinar | SI |
+| Aprobada (Approvata) | El documento destinado a la PA ha sido aceptado por la Administración Pública | El ciclo de envío se ha completado | SI |
+| Aceptada por caducidad (Accettata per decorrenza) | Si dentro del plazo de 15 días desde la recepción de la factura, el SdI no recibe ninguna comunicación, el SdI enviará una notificación de CADUCIDAD DE PLAZOS tanto al sujeto transmisor como al sujeto receptor | | SI |
 
-Lo stato dei documenti inviati a Fluentis Business Hub viene aggiornato in modalità silente da alcune procedure automatiche previste in BizLink. 
-Nei paragrafi successivi è descritto il dettaglio di ogni stato gestito.
+El estado de los documentos enviados a Fluentis Business Hub se actualiza de manera silenciosa mediante algunos procedimientos automáticos previstos en BizLink.  
+En los siguientes párrafos se describe el detalle de cada estado gestionado.
 
-## Stato documento NON ESAMINATA
+## Estado documento NO EXAMINADA
 
-Contestualmente al momento della creazione del nuovo documento di vendita o di una registrazione contabile di acquisto per soggetti non residenti, nel ribbon menu, nella sezione Fatturazione elettronica, lo 
-stato proposto è “Non esaminata”, cioè ancora non valutata dall’operatore per l’invio a SdI.
-Una volta inserito e salvato il documento con le relative informazioni, è possibile procedere modificando lo stato del documento in uno tra quelli previsti per lo stato NON ESAMINATA, ovvero:
-- *Controllata*: verificata e pronta per essere gestita in formato elettronico
-- *Annullata*: la fattura non deve essere inviata a SdI ma deve essere mantenuta come valida per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento inserito non deve essere inviato a SdI 
+Simultáneamente al momento de creación de un nuevo documento de venta o de un registro contable de compra para sujetos no residentes, en el menú de cintas, en la sección de Facturación electrónica, el estado propuesto es “No examinada” (Non esaminata), es decir, aún no evaluado por el operador para el envío a SdI.  
+Una vez ingresado y guardado el documento con la información correspondiente, es posible proceder modificando el estado del documento a uno de los previstos para el estado NO EXAMINADA, es decir:  
+- *Controlada*: verificada y lista para ser gestionada en formato electrónico  
+- *Anulada*: la factura no debe ser enviada a SdI pero debe mantenerse válida para los registros contables y de IVA  
+- *Excluida*: el documento ingresado no debe ser enviado a SdI  
 
-## Stato doumento CONTROLLATA 
+## Estado documento CONTROLADA
 
-Il documento/la registrazione nello stato CONTROLLATA è stato validato dall’operatore e può essere elaborato per le fasi successive per l’elaborazione dello stesso e l’invio a SdI, oppure può essere riportato allo stato DA ESAMINARE per eventuali modifiche o integrazioni. 
-Gli stati successivi di elaborazione del documento per l’invio a SdI o per l’esclusione all’invio possono 
-essere:
-- *Generata*: viene creato il file XML relativo al documento inserito e preparato per la spedizione 
-- *Annullata*: la fattura non deve essere inviata a SdI ma deve essere mantenuta come valida per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento inserito non deve essere inviato a SdI 
+El documento/la inscripción en el estado CONTROLADA ha sido validada por el operador y puede ser procesado para las etapas siguientes para la elaboración del mismo y el envío a SdI, o puede ser devuelto al estado POR EXAMINAR para posibles modificaciones o adiciones.  
+Los estados sucesivos de procesamiento del documento para el envío a SdI o para la exclusión del envío pueden ser:  
+- *Generada*: se crea el archivo XML relativo al documento ingresado y se prepara para el envío  
+- *Anulada*: la factura no debe ser enviada a SdI pero debe mantenerse válida para los registros contables y de IVA  
+- *Excluida*: el documento ingresado no debe ser enviado a SdI  
 
-## Stato documento GENERATA 
+## Estado documento GENERADA
 
-Il passaggio dei documenti fattura o delle registrazioni contabili allo stato GENERATA prevede la contestuale 
-creazione del documento XML secondo le specifiche tecniche previste dall’Agenzia delle Entrate per la 
-tipologia di documento in gestione. Durante questa fase, vengono eseguiti alcuni controlli relativi alla 
-presenza delle informazioni obbligatorie per la compilazione e qualora nella sezione anagrafica tali 
-informazioni non siano state censite correttamente, verrà emessa una segnalazione di errore relativa al dato 
-mancante. 
-Il documento fattura/nota di accredito... nello stato GENERATA acquisisce anche lo stato interno di gestione 
-STAMPATA e quindi è possibile da questo momento procedere con la contabilizzazione del documento. La 
-registrazione contabile nello stato GENERATA crea il file XMl corrispondente.
-Il file XML generato viene salvato nella gestione documentale di Fluentis e quindi sempre reperibile dalle 
-varie funzionalità che ne consentono l’accesso e dalla funzione **Registro dei Documenti Sdi** previsto nel 
-Ribbon Menu delle varie funzionalità.
-Il file XML nello stato Generata può essere scaricato e gestito per l’invio con strumenti esterni a Fluentis 
-oppure può essere inviato a Fluentis Business Hub attraverso la gestione di uno degli stati operativi previsti. 
-Qualora per il contatto o per la società sia stata impostata la gestione della Firma sui documenti di 
-fatturazione elettronica, negli gli stati in gestione è previsto anche FIRMATA:
-Qualora invece non sia prevista la gestione della firma, gli stati in gestione sono:
-- *Controllata*: modifico lo stato del documento per tornare allo stato PRECEDENTE di controllata
-- *Annullata*: il documento inserito o registrato non deve essere inviato a SdI ma deve essere mantenuta come valida per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento inserito non deve essere inviato a SdI 
-- *Da spedire*: il documento viene inserito nell’elenco dei documenti da inviare a Fluentis Business Hub
-- *Firmata*: il flusso di attribuzione di questo stato ricerca, in un percorso precedentemente configurato, il file firmato corrispondente al file XML generato dalla procedura. Questo stato è visibile SOLO se selezionato il check “Fatturazione elettronica firmata” nell’anagrafica contatto (Impostazione Anagrafiche contatti) o nelle Configurazioni Fatturazione Elettronica della società (Configurazione 
-connessione a Fluentis Business Hub) ed è, secondo le normative vigenti, uno stato FACOLTATIVO per i documenti di vendita emessi nei confronti di soggetti residenti in Italia mentre è OBBLIGATORIA per i documenti emessi nei confronti di soggetti non residenti, non stabiliti, non identificati in Italia. 
-Prima di procedere con la modifica dello stato in FIRMATA, è necessario procedere con la firma dei documenti nello stato GENERATA:
-> - se correttamente impostato il campo *Cartella di creazione file da firmare* nella *Configurazione fatturazione elettronica della società* (Configurazione connessione a Fluentis Business Hub), ogni volta che viene generato il file XML, Fluentis salva una copia nel percorso indicato Qualora il campo non sia stato correttamente configurato, sarà possibile scaricare il file XML dalla 
-funzione *Registro documenti SdI* tramite l’azione Scarica Allegato del ribbon menu e salvare il file in una cartella di comodo su FileSystem
-> - procedere con la firma del file utilizzando un qualsiasi software di firma in dotazione, che permetta l’apposizione della firma digitale in formato Cades o Xades (come disposto dalla 
-specifiche tecniche normative) e avendo cura di salvare il file firmato nella cartella indicata nelle Configurazioni di fatturazione elettronica nel campo Cartella file firmati
-> - Modificare lo stato del documento in FIRMATA: automaticamente la procedura andrà a reperire 
-il file firmato nella cartella indicata al punto precedente e lo acquisisce nel flusso procedurale di Fluentis. In caso di invio a Fluentis Business Hub, sarà QUESTO file acquisito il file oggetto della trasmissione a SdI
+El paso de los documentos de factura o de los registros contables al estado GENERADA implica la creación simultánea del documento XML de acuerdo con las especificaciones técnicas previstas por la Agencia de Impuestos para el tipo de documento en gestión. Durante esta fase, se realizan algunos controles relativos a la presencia de la información obligatoria para la compilación y si en la sección anagráfica dicha información no ha sido registrada correctamente, se emitirá una advertencia de error relativa al dato faltante.  
+El documento de factura/nota de crédito... en el estado GENERADA también adquiere el estado interno de gestión IMPRESA y, por lo tanto, es posible a partir de este momento proceder con la contabilización del documento. La  
+inscripción contable en el estado GENERADA crea el archivo XML correspondiente.  
+El archivo XML generado se guarda en la gestión documental de Fluentis, por lo que siempre está disponible desde las diversas funcionalidades que permiten su acceso y desde la función **Registro de Documentos SdI** prevista en el menú de cintas de las diversas funcionalidades.  
+El archivo XML en el estado Generada puede ser descargado y gestionado para el envío con herramientas externas a Fluentis o puede ser enviado a Fluentis Business Hub a través de la gestión de uno de los estados operativos previstos.  
+Si para el contacto o para la empresa se ha configurado la gestión de la Firma en los documentos de facturación electrónica, en los estados en gestión también se prevé FIRMADA:  
+Sin embargo, si no se prevé la gestión de la firma, los estados en gestión son:  
+- *Controlada*: modifico el estado del documento para volver al estado ANTERIOR de controlado  
+- *Anulada*: el documento ingresado o registrado no debe ser enviado a SdI pero debe mantenerse válida para los registros contables y de IVA  
+- *Excluida*: el documento ingresado no debe ser enviado a SdI  
+- *A enviar*: el documento se incluye en la lista de documentos a enviar a Fluentis Business Hub  
+- *Firmada*: el flujo de atribución de este estado busca, en un recorrido previamente configurado, el archivo firmado correspondiente al archivo XML generado por el procedimiento. Este estado es visible SOLO si se selecciona la opción "Facturación electrónica firmada" en el registro de contacto (Configuración de registros de contactos) o en las Configuraciones de Facturación Electrónica de la empresa (Configuración de conexión a Fluentis Business Hub) y es, según las normativas vigentes, un estado OPCIONAL para los documentos de venta emitidos a sujetos residentes en Italia, mientras que es OBLIGATORIO para los documentos emitidos a sujetos no residentes, no establecidos, no identificados en Italia.  
+Antes de proceder con el cambio de estado a FIRMADA, es necesario proceder con la firma de los documentos en el estado GENERADA:  
+> - si se ha configurado correctamente el campo *Carpeta de creación de archivo para firmar* en *Configuración de facturación electrónica de la empresa* (Configuración de conexión a Fluentis Business Hub), cada vez que se genera el archivo XML, Fluentis guarda una copia en la ruta indicada. Si el campo no ha sido configurado correctamente, se podrá descargar el archivo XML desde la función *Registro de documentos SdI* a través de la acción Descargar Adjunto del menú de cintas y guardar el archivo en una carpeta conveniente en el sistema de archivos.  
+> - proceder con la firma del archivo utilizando cualquier software de firma disponible, que permita la colocación de la firma digital en formato Cades o Xades (como se establece en las especificaciones técnicas normativas) y asegurarse de guardar el archivo firmado en la carpeta indicada en las configuraciones de facturación electrónica en el campo Carpeta de archivos firmados.  
+> - Modificar el estado del documento a FIRMADA: automáticamente el procedimiento buscará el archivo firmado en la carpeta indicada en el punto anterior y lo adquiere en el flujo procedimental de Fluentis. En caso de envío a Fluentis Business Hub, será ESTE archivo adquirido el objeto de la transmisión a SdI.  
 
-## Stato documento FIRMATA
+## Estado documento FIRMADA
 
-Il documento nello stato FIRMATA, può essere scaricato e gestito esternamente da Fluentis, oppure inviato a Fluentis Business Hub per l’invio a SdI. 
-Per scaricare il documento firmato è possibile accedere alla funzione “Registro documenti SdI” ed eseguire il download nel pannello Allegati tramite l’azione “Scarica Allegato” del ribbon menu oppure dal pannello Registro documenti SdI tramite l’azione “Scarica il contenuto del registro” .
-Per procedere con la gestione del documento è possibile selezionare uno degli stati proposti:
-- *Generata*: annulla l’operazione di firma del file e torna allo stato GENERATO del file XML
-- *Da spedire*: il documento viene inserito nell’elenco dei documenti da inviare a Fluentis Business Hub
-- *Annullata*: il documento o la registrazione contabile non si riferiscono ad accadimenti da inviare a SdI ma deve essere mantenuti validi per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento/la registrazione contabile inserita non deve essere inviato a SdI 
+El documento en el estado FIRMADA puede ser descargado y gestionado externamente a Fluentis, o enviado a Fluentis Business Hub para el envío a SdI.  
+Para descargar el documento firmado es posible acceder a la función “Registro de documentos SdI” y ejecutar la descarga en el panel Adjunto a través de la acción “Descargar Adjunto” del menú de cintas o desde el panel Registro de documentos SdI a través de la acción “Descargar el contenido del registro”.  
+Para proceder con la gestión del documento se puede seleccionar uno de los estados propuestos:  
+- *Generada*: anula la operación de firma del archivo y vuelve al estado GENERADO del archivo XML  
+- *A enviar*: el documento se incluye en la lista de documentos a enviar a Fluentis Business Hub  
+- *Anulada*: el documento o el registro contable no se refieren a sucesos que deben ser enviados a SdI, pero deben mantenerse válidos para los registros contables y de IVA  
+- *Excluida*: el documento/la inscripción contable ingresada no debe ser enviada a SdI  
 
-## Stato documento ANNULLATA
+## Estado documento ANULADA
 
-Il documento/la registrazione contabile nello stato ANNULLATO viene impostato manualmente dall’utente qualora il documento sia rilevante ai fini IVA e ai fini contabili ma non debba rientrare nel ciclo di gestione del Sistema di Interscambio: un esempio potrebbe essere la fattura emessa dal ciclo attivo di Fluentis che 
-riceve dal Sistema di Interscambio una notifica di Scarto e quindi, qualora il documento risulti già acquisito 
-in contabilità, si rende necessario procedere con:
-- l’annullamento della fattura inviata, al fine di non far più confluire il documento in alcun ciclo di spedizione
-- la registrazione di un documento di storno valido ai soli fini contabili, che non dovrà essere trasmesso al SdI e che quindi avrà lo stato di ESCLUSA
-- l’emissione di un nuovo documento con una numerazione che faccia riferimento a quella iniziale, da inviare nuovamente al SdI           
+El documento/la inscripción contable en el estado ANULADA se establece manualmente por el usuario cuando el documento es relevante a efectos de IVA y contables, pero no debe incluirse en el ciclo de gestión del Sistema de Intercambio: un ejemplo podría ser la factura emitida del ciclo activo de Fluentis que recibe del Sistema de Intercambio una notificación de Rechazo y, por lo tanto, si el documento ya ha sido adquirido en contabilidad, es necesario proceder con:  
+- la anulación de la factura enviada, con el fin de que el documento ya no sea parte de ningún ciclo de envío  
+- el registro de un documento de anulación válido solo a efectos contables, que no debe ser transmitido al SdI y que, por lo tanto, tendrá el estado de EXCLUIDA  
+- la emisión de un nuevo documento con una numeración que haga referencia a la inicial, para ser enviado nuevamente al SdI.  
 
-Qualora il documento si trovi nello stato Annullata ma si renda necessario poter gestire nuovamente il documento ritornando allo stato iniziale, è possibile modificarne lo stato in NON ESAMINATA e procedere con le modifiche sul documento originale.
+Si el documento está en el estado Anulada pero se hace necesario poder gestionar nuevamente el documento volviendo al estado inicial, es posible modificar su estado a NO EXAMINADA y proceder con las modificaciones en el documento original.
 
-## Stato documento ESCLUSA
+## Estado documento EXCLUIDA
 
-Lo Stato del documento “Esclusa” viene impostato manualmente dall’utente e riguarda i documenti che, 
-per loro natura, non devono rientrare nel flusso di gestione della fatturazione elettronica per il Sistema di 
-Interscambio. Alcuni esempi dei documenti in questo stato:
-- Note di storno interne relative a documenti fattura che sono stati scartati dal SdI e che devono essere riemessi
-- Documenti emessi nei confronti di soggetti esteri/non residenti per i quali non si intende gestire l’invio tramite gli stati di elaborazione previsti per la fatturazione elettronica a SdI           
+El Estado del documento “Excluida” es establecido manualmente por el usuario y se refiere a los documentos que, por su naturaleza, no deben incluirse en el flujo de gestión de la facturación electrónica para el Sistema de Intercambio. Algunos ejemplos de los documentos en este estado:  
+- Notas de abono internas relacionadas con documentos de factura que han sido rechazados por el SdI y que deben ser reemitidos  
+- Documentos emitidos a sujetos extranjeros/no residentes para los cuales no se pretende gestionar el envío a través de los estados de procesamiento previstos para la facturación electrónica al SdI.  
 
-Qualora il documento si trovi nello stato Annullata ma si renda necessario poter gestire nuovamente il documento ritornando allo stato iniziale della fattura, è possibile modificarne lo stato in NON ESAMINATA e procedere con le modifiche sul documento originale.
+Si el documento está en el estado Anulada pero se hace necesario poder gestionar nuevamente el documento volviendo al estado inicial de la factura, es posible modificar su estado a NO EXAMINADA y proceder con las modificaciones en el documento original.
 
-## Stato documento DA SPEDIRE e IN FLUENTIS BUSINESS HUB 
+## Estado documento A ENVIAR y EN FLUENTIS BUSINESS HUB
 
-I documenti generati dal ciclo attivo di Fluentis e pronti per essere inviati al SdI, devono essere contrassegnati dallo stato DA SPEDIRE: questo stato, da utilizzare nel caso in cui sia correttamente configurato il canale Fluentis Business Hub, accoda il documento alla lista documenti che BizLink dovrà processare per l’invio a Sdi.
-Non sono previste modifiche di stato in questa condizione perchè il documento, inserito in una “coda di spedizione” di BizLink, verrà inviato al Fluentis Business Hub per la trasmissione al SdI, attraverso processi automatici che vengono eseguiti a regolari intervalli temporali. 
-Una volta che il documento viene inviato al servizio Fluentis Business Hub, lo stato si modifica automaticamente in IN FLUENTIS BUSINESS HUB e vengono compilate automaticamente le colonne relative all’informazione dell’avvenuto trasferimento:
-- *Stato SdI*:* accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI (vediparagrarafo STATI DEI DOCUMENTI).
-- *Nome file SdI*: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (Nome del file). 
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file 
-- *Data chiusura*: la data di chiusura del flusso di gestione (es. documento Cosegnato)
-- *Data ultimo evento*: la data dell’ultimo cambio stato avvenuto sul file o manualmente o per effetto dell’avanzamento dell’elaborazione sul SdI
+Los documentos generados por el ciclo activo de Fluentis y listos para ser enviados al SdI deben ser marcados con el estado A ENVIAR (DA SPEDIRE): este estado, que debe utilizarse en caso de que el canal Fluentis Business Hub esté correctamente configurado, coloca el documento en la lista de documentos que BizLink debe procesar para el envío al SdI.  
+No se prevén cambios de estado en esta condición porque el documento, colocado en una "cola de envío" de BizLink, será enviado al Fluentis Business Hub para su transmisión al SdI, a través de procesos automáticos que se ejecutan a intervalos regulares.  
+Una vez que el documento se envía al servicio Fluentis Business Hub, el estado se modifica automáticamente a EN FLUENTIS BUSINESS HUB y se completan automáticamente las columnas relativas a la información del envío realizado:  
+- *Estado SdI*: contiene la descripción del estado del documento, indicando tanto el estado de gestión interno de Fluentis como el estado reportado por Fluentis Business Hub y adquirido directamente del SdI (ver párrafo ESTADOS DE LOS DOCUMENTOS).  
+- *Nombre archivo SdI*: el nombre del archivo que se crea en el momento en que el documento avanza al estado GENERADA; en su formato original o posteriormente a la colocación de la firma digital, representa el archivo de factura a enviar al SdI (Nombre del archivo).  
+- *Sdi Id*: el identificador único que el SdI asigna al documento en el momento de la recepción.  
+- *Fecha de recepción Sdi*: la fecha en que el sistema de intercambio ha adquirido el documento enviado. Esta información se obtiene de la notificación de recepción que el SdI emite tras la recepción del envío y antes de proceder con los controles formales del archivo.  
+- *Fecha de cierre*: la fecha de cierre del flujo de gestión (por ejemplo, documento Entregado).  
+- *Fecha del último evento*: la fecha del último cambio de estado que ha ocurrido en el archivo, ya sea manualmente o como efecto del avance del procesamiento en el SdI.  
 
-## Stato documento IN SDI 
+## Estado documento EN SDI
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS         
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-Il documento viene contrassegnato automaticamente dai processi di BizLink con lo stato “IN SDI” nel momento in cui è avvenuta la spedizione nel SdI appunto ed è prevenuta a Fluentis Business Hub la notifica di ricezione, come nell’esempio che segue:
-Contestualmente alla registrazione della notifica del SdI, si compilano le colonne della form Fatture di Vendita con i campi:
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file          
+El documento es marcado automáticamente por los procesos de BizLink con el estado “EN SDI” (IN SDI) en el momento en que ha ocurrido el envío al SdI, y se ha prevenido la notificación de recepción a Fluentis Business Hub, como en el siguiente ejemplo:  
+Simultáneamente a la registración de la notificación del SdI, se completan las columnas del formulario de Facturas de Venta con los campos:  
+- *Sdi Id*: el identificador único que el SdI asigna al documento en el momento de la recepción.  
+- *Fecha de recepción Sdi*: la fecha en que el sistema de intercambio ha adquirido el documento enviado. Esta información se obtiene de la notificación de recepción que el SdI emite tras la recepción del envío y antes de proceder con los controles formales del archivo.  
 
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello “Registro dei documenti Sdi” in corrispondenza della Transizione Sistema di Interscambio è possibile prendere visione 
-della notifica di ricezione.         
-In questo stato non è possibile intervenire con una modifica manuale del file ma sarà necessario attendere la notifica di esito dal SdI che potrà essere Non conforme nel caso in cui non siano stati superati i controlli 
-formali oppure Emessa nel caso in cui i controlli previsti siano stati superati e quindi il SdI inizia le procedure di consegna.
+Al acceder al Registro de documentos SdI correspondiente al documento, en el panel “Registro de los documentos SdI”, en relación a la Transición Sistema de Intercambio, es posible visualizar la notificación de recepción.  
+En este estado no es posible intervenir con una modificación manual del archivo, pero será necesario esperar la notificación de resultado del SdI que puede ser No conforme en caso de que no se hayan superado los controles formales, o Emitida en caso de que los controles previstos hayan sido superados y, por lo tanto, el SdI comienza los procedimientos de entrega.
 
-## Stato documento NON CONFORME 
+## Estado documento NO CONFORME
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS        
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-I documenti contrassegnati dallo stato NON CONFORME sono stati scartati dal sistema di Interscambio a seguito dei controlli formali eseguiti nel momento della ricezione. In questo caso la notifica di scarto riporta anche la motivazione del rifiuto e il documento, se ancora non contabilizzato, dovrà essere riemesso con lo stesso numero e stessa data con la correzione opportuna dell’informazione entro 5 giorni EFFETTIVI dalla
-data di scarto. 
-Nella griglia della form Fattura di vendita, in corrispondenza del documento non conforme, viene aggiornata la colonna Data ultimo evento con la data e l’ora della Notifica di scarto ricevuta dal SdI.           
+Los documentos marcados con el estado NO CONFORME han sido rechazados por el sistema de Intercambio a raíz de los controles formales realizados en el momento de la recepción. En este caso, la notificación de rechazo también incluye la razón del rechazo y el documento, si aún no ha sido contabilizado, deberá ser reemitido con el mismo número y la misma fecha con la corrección oportuna de la información dentro de 5 días EFECTIVOS desde la fecha de rechazo.  
+En la cuadrícula del formulario de Factura de venta, en relación al documento no conforme, se actualiza la columna Fecha del último evento con la fecha y la hora de la Notificación de rechazo recibida del SdI.  
 
-Accedendo al Registro dei documenti SdI del documento selezionato, nel pannello Registro dei documenti SdI è riportata, nella riga corrispondente alla Transizione Documento non conforme, la data e l’ora dell’evento e viene visualizzata la notifica di scarto con la motivazione.         
-E’ possibile modificare manualmente lo stato del documento a seconda delle azioni che si intende intraprendere successivamente allo scarto:
-- NON ESAMINATA: contrassegnando il documento con questo stato, si intende riportare il documento nello stato iniziale pre-elaborazione. Di fatto questo stato permette le modifiche necessarie al documento al fine di correggere le segnalazioni indicate dal SdI. In questo caso il documento dovrà essere riemesso con pari numero e data. *N.B. qualora il documento sia già stato contabilizzato, il check STAMPATO sul documento NON viene automaticamente rimosso ma è necessario eliminare la registrazione contabile abbinata prima di poter apportare qualsiasi modifica alla testata o al corpo del documento. Qualora la modifica da apportare riguardi l’anagrafica cliente (es. codice destinatario errato), non sarà necessario eliminare la registrazione contabile ma sarà sufficiente intervenire sulle informazioni anagrafiche e rigenerare il file XML.*
-- ANNULLATA/ESCLUSA: il documento viene annullato e quindi verrà emessa nota di variazione interna per adeguare la situazione contabile e successivamente marcato come ESCLUSO.       
+Al acceder al Registro de documentos SdI del documento seleccionado, en el panel Registro de documentos SdI se muestra, en la fila correspondiente a la Transición Documento no conforme, la fecha y la hora del evento y se visualiza la notificación de rechazo con la razón.  
+Es posible modificar manualmente el estado del documento dependiendo de las acciones que se deseen emprender posteriormente al rechazo:  
+- NO EXAMINADA: marcando el documento con este estado, se entiende que se quiere devolver el documento al estado inicial previo a la elaboración. De hecho, este estado permite las modificaciones necesarias al documento para corregir las señales indicadas por el SdI. En este caso, el documento debe ser reemitido con el mismo número y fecha. *N.B. en caso de que el documento ya haya sido contabilizado, la opción IMPRESO en el documento NO se elimina automáticamente, sino que es necesario eliminar la inscripción contable vinculada antes de poder realizar cualquier modificación en el encabezado o en el cuerpo del documento. Si la modificación a realizar se refiere a los datos del cliente (por ejemplo, código destinatario incorrecto), no será necesario eliminar la inscripción contable, sino que será suficiente intervenir sobre la información anagráfica y regenerar el archivo XML.*  
+- ANULADA/ESCLUIDA: el documento se anula y, por lo tanto, se emitirá una nota de variación interna para adecuar la situación contable y posteriormente se marcará como EXCLUIDO.  
 
-## Stato documento CONSEGNATA 
+## Estado documento ENTREGADA
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS           
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-Quando il SdI riesce a portare a termine la consegna del documento al cessionario/committente, rilascia al cessionario/emittente una ricevuta di consegna, che riporta data e ora di consegna al destinatario finale. 
-Nella form di riepilofo Fatture di vendita, il campo Data ultimo evento riporta data e ora della ricevuta di consegna acquisita dal SdI.    
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello “Registro dei documenti SdI”, in corrispondenza della Transizione Documento consegnato, è possibile prendere visione della notifica di consegna.               
-Da questo stato non è possibile fare alcun intervento sul documento e il flusso di gestione si considera terminato. NON SI COMPILA LA DATA DI CHIUSURA.
+Cuando el SdI logra completar la entrega del documento al cesionario/comitente, emite al cesionario/emisor un recibo de entrega, que incluye la fecha y la hora de entrega al destinatario final.  
+En el formulario de resumen de las Facturas de venta, el campo Fecha del último evento muestra la fecha y la hora del recibo de entrega adquirido del SdI.  
+Al acceder al Registro de documentos SdI correspondiente al documento, en el panel “Registro de documentos SdI”, en relación a la Transición Documento entregado, es posible visualizar la notificación de entrega.  
+Desde este estado no es posible hacer ninguna intervención sobre el documento y el flujo de gestión se considera terminado. NO SE COMPLETA LA FECHA DE CIERRE.  
 
-## Stato documento MANCATA CONSEGNA 
+## Estado documento FALTA DE ENTREGA
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS             
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-Nel caso in cui il SdI non riesca a consegnare il documento, ad esempio per indisponibilità dell'indirizzo telematico di ricezione o perché l’indirizzo non è stato indicato in fattura (codice destinatario 0000000), il SdI:
-- invia al cedente/prestatore una notifica di mancata consegna che ne riporta la motivazione 
-- mette a disposizione del cessionario/committente la fattura sulla sua area riservata oppure, in caso di soggetto privato, in un’apposita area riservata del sito Web dell’Agenzia delle Entrate
+En caso de que el SdI no pueda entregar el documento, por ejemplo, por indisponibilidad de la dirección telemática de recepción o porque la dirección no ha sido indicada en la factura (código destinatario 0000000), el SdI:  
+- envía al cedente/prestatario una notificación de falta de entrega que incluye la razón  
+- pone la factura a disposición del cesionario/comitente en su área reservada o, en el caso de un sujeto privado, en un área específica reservada del sitio web de la Agencia de Impuestos.  
 
+En estos casos, el cedente/prestatario debe notificar al cliente sobre la falta de entrega y sobre la disponibilidad de la factura en su área reservada, a partir de la fecha de “puesta a disposición” identificada por el SdI. En el formulario de resumen de las Facturas de venta, el campo Fecha del último evento muestra la fecha y la hora del recibo.  
 
-Il cedente/prestatore in questi casi deve dare notifica al cliente della mancata consegna e della disponibilità della fattura nella sua area riservata, a partire dalla data di “messa a disposizione” identificata dal SdI. Nella 
-form di riepilogo Fatture di vendita, il campo Data ultimo evento riporta data e ora della ricevuta.          
+Al acceder al Registro de documentos SdI correspondiente al documento, en el panel “Registro de documentos SdI” en relación a la Transición Falta de entrega, es posible visualizar el recibo de falta de entrega y la fecha/hora de la notificación.  
+Cuando el documento está en el estado FALTA DE ENTREGA, es posible modificar su estado a NOTIFICACIÓN AL CLIENTE, registrando así el momento en que el operador notificó al cliente destinatario la emisión del documento con la imposibilidad de notificación automática por parte del SdI.  
 
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello “Registro dei documenti SdI” in corrispondenza della Transizione Mancata consegna, è possibile prendere visione della 
-ricevuta di mancata consegna e della data/ora della notifica.           
-Quando il documento è nello stato MANCATA CONSEGNA, è possibile modificarne lo stato in NOTIFICA CLIENTE, registrando quindi il momento in cui l’operatore ha notificato al cliente destinatario l’emissione del documento con l’impossibilità di notifica automatica da parte del SdI. 
+## Estado documento NOTIFICACIÓN AL CLIENTE
 
-## Stato documento NOTIFICA CLIENTE 
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS         
+El envío de algunos documentos al SdI podría no finalizar correctamente porque el propio SdI no puede identificar al destinatario del documento, o el documento está destinado a un consumidor final.  
+En estos casos, el SdI notifica la falta de entrega y el cedente/comitente debe transmitir el documento al destinatario final, de manera diferente a través del SdI.  
+Cuando los documentos de Fluentis están en el estado “Falta de entrega”, el operador puede actuar y decidir enviar el documento al destinatario final por otros medios y luego marcar el documento con el estado NOTIFICACIÓN AL CLIENTE.  
+Los documentos en este estado no son más modificables y en la columna Fecha del último evento estará disponible la fecha en la que se realizó la acción de notificación.  
+Al acceder al Registro de documentos SdI correspondiente al documento, en el panel Registro de documentos SdI en relación a la Transición Notificación manual al cliente, es posible ver el usuario que realizó la operación y la fecha y hora de la misma.  
+El ciclo de gestión del documento ha terminado.
 
-L’invio di alcuni documenti al SdI potrebbe non terminare correttamente perchè il SdI stesso non riesce ad identificare il destintario del documento, oppure il documento è destinato ad un consumatore finale. 
-In questi casi il SdI notifica la mancata consegna e il cessionari/committente deve trasmettere il documento al destinatario finale, con modalità diverse dallo SdI. 
-Quando i documenti di Fluentis sono quindi nello stato “Mancata consegna”, l’operatore può agire e decidere di inviare il documento il destinatario finale con altre modalità e marcare poi il documento con lo stato NOTIFICA CLIENTE.            
-I documenti in questo stato non sono più modificabili e nella colonna Data ultimo evento viene resa disponibile la data in cui è stata eseguita l’azione di notifica.               
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello Registro dei documenti SdI in corrispondenza della Transizione Notifica manuale al cliente è possibile prendere visionedell’utente che ha eseguito l’operazione e della data e ora della stessa.         
-Il ciclo di gestione del documento è concluso.
+## Estado documento NO VINCULADA y RECIBIDA
 
-## Stato documento NON ABBINATA e RICEVUTA 
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS          
+Los estados del documento VINCULADA y RECIBIDA se gestionan solo para el ciclo pasivo de documentos de compra de sujetos residentes/identificados en el territorio del Estado italiano.  
+El estado identifica los documentos adquiridos por el servicio Fluentis Business Hub y aún no vinculados (NO VINCULADA) a una inscripción contable o a un documento de compra registrado en la sección Compras de Fluentis o, aún, a una compensación.  
+O bien, archivos XML de compras y vinculados a un evento contable o a un documento.
 
-Gli stati del documento ABBINATA e RICEVUTA sono gestiti solo per il ciclo passivo di documenti di acquisto da soggetti residenti/identificati nel territorio dello Stato italiano.          
-Lo stato identifica i documenti acquisiti dal servizio Fluentis Business Hub e non ancora abbinati (NON ABBINATA) ad una registrazione contabile o ad un documento di acquisto registrato nella sezione Acquisti di Fluentis oppure ancora ad un compenso.            
-Oppure, file XML acquisti e abbinati ad un evento contabile o a un documento.
+## Estado documento RECHAZADA (solo para facturación PA)
 
-## Stato documento RESPINTA (solo per fatturazione PA)
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS         
+El estado del documento RECHAZADA se refiere al documento destinado a la Administración Pública no aceptado por esta última. El estado es adquirido directamente del Fluentis Business Hub si la Administración receptora ha decidido comunicar el rechazo de la factura a través del canal SdI: es potestad de las Administraciones determinar canales de transmisión diferentes a los del SdI.  
+En estos casos de rechazo de la factura, la Administración Pública destinataria puede indiferentemente:  
+- solicitar al sujeto transmisor que reemita la misma factura corregida con el mismo número y la misma fecha y la factura rechazada no se contabiliza, O BIEN  
+- solicitar una nota de crédito y una nueva factura si la factura anterior ya ha sido contabilizada.  
 
-Lo stato del documento RESPINTA si riferisce al documento destinato alla Pubblica Amministrazione non accettato da quest’ultima. Lo stato viene acquisito direttamente dal Fluentis Business Hub qualora
-l’Amministrazione ricevente abbia deciso di comunicare il rifiuto della fattura tramite il canale SdI: è facoltà alle Amministrazioni determinare canali di trasmissione differenti da quello del SdI.In questi casi la fattura nello stato RESPINTA potrà essere ANNULATA o ESCLUSA o Da ESAMINARE.            
+Se aclara que la transmisión del rechazo por parte de la PA a través del Sistema de Intercambio es una facultad.
 
-In questi casi In casi di rifiuto della fattura, la Pubblica Amministrazione destinataria può indifferentemente:
-- richiedere al soggetto trasmittente di riemettere la medesima fattura corretta con stesso numero stessa data e la fattura rifiutata non viene contabilizzata, OPPURE
-- richiedere una nota di credito e una nuova fattura se la fattura precedente è già stata contabilizzata.        
+## Estado del documento APROBADA (solo para facturación PA)
 
-Si precisa che la trasmissione del rifiuto da parte della PA attraverso il Sistema di Interscambio è una facoltà.
+ESTE ESTADO NO ES GESTIONADO PARA AQUELLOS QUE NO HAN SUSCRITO EL CONTRATO FE CON FLUENTIS  
 
-## Stato del documento APPROVATA (solo per fatturazione PA)
-  
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS           
+El estado del documento APROBADA se refiere al documento destinado a la Administración Pública aceptado por esta última. El estado es adquirido directamente del Fluentis Business Hub si la Administración receptora ha aceptado el archivo XML enviado.  
+En estos casos, el flujo se considera concluido y se completa la fecha de cierre en las propiedades del documento.
 
-Lo stato del documento APPROVATA si riferisce al documento destinato alla Pubblica Amministrazione accettato da quest’ultima. Lo stato viene acquisito direttamente dal Fluentis Business Hub qualoral’Amministrazione ricevente abbia accettato il file XML inviato.
-In questi casi il flusso si considera concluso e viene compilata la data di chiusura nelle proprietà del documento.
+## Estado del documento ACEPTADA POR CADUCIDAD (solo para facturación PA)
 
-## Stato del documento ACCETTATA PER DECORRENZA (solo per fatturazione PA)
-
-I documenti di fatturazione elettronica inviati al SdI e rivolti alla Pubblica Amministrazione possono acquisire dal SdI lo stato di ACCETTATA PER DECORRENZA: questo stato si riferisce alla condizione per cui il SdI ha 
-consegnato la fattura lla PA destinataria la quale, entro il termine dei 15 giorni dal ricevimento, non invia alcuna comunicazione al SdI, nè in merito all’accettazione nè in merito al rifiuto.
-In questi caso quindi il SdI inoltra notifica di DECORRENZA DEI TERMINI sia al soggetto trasmittente sia al soggetto ricevente. Tale notifica ha la sola funzione di comunicare alle due parti che il SdI considera chiuso il processo relativo a quella fattura. La notifica di decorrenza termini segnala che il Sistema di Interscambio 
-ha regolarmente concluso la gestione (ricezione e consegna) della fattura oggetto della notifica. Pertanto dopo tale notifica il SdI scarterà la fattura, se reinviata, e qualsiasi comunicazione ad essa relativa. La notifica 
-di decorrenza termini non ha alcuna implicazione sulla verifica della correttezza e sulla successiva gestione della fattura da parte degli interessati, cioè la Pubblica Amministrazione può ancora decidere di rifiutare la fattura consegnata.              
-Lo stato viene acquisito direttamente da Fluentis Business Hub e in questi casi il ciclo di gestione del documento si considera concluso.
+Los documentos de facturación electrónica enviados al SdI y dirigidos a la Administración Pública pueden adquirir del SdI el estado de ACEPTADA POR CADUCIDAD: este estado se refiere a la condición por la que el SdI ha entregado la factura a la PA destinataria, la cual, dentro del plazo de 15 días desde la recepción, no envía ninguna comunicación al SdI, ni sobre la aceptación ni sobre el rechazo.  
+En estos casos, el SdI envía una notificación de CADUCIDAD DE PLAZOS tanto al sujeto transmisor como al sujeto receptor. Esta notificación tiene la única función de comunicar a ambas partes que el SdI considera cerrado el proceso relativo a esa factura. La notificación de caducidad de plazos indica que el Sistema de Intercambio ha concluido regularmente la gestión (recepción y entrega) de la factura objeto de la notificación. Por lo tanto, después de dicha notificación, el SdI rechazará la factura, si se vuelve a enviar, y cualquier comunicación relacionada con ella. La notificación de caducidad de plazos no tiene ninguna implicación sobre la verificación de la corrección y sobre la posterior gestión de la factura por parte de los interesados, es decir, la Administración Pública puede aún decidir rechazar la factura entregada.  
+El estado es adquirido directamente del Fluentis Business Hub y en estos casos, el ciclo de gestión del documento se considera concluido.

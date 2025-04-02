@@ -1,12 +1,12 @@
 ---
-title: Proprietà cespite
+title: Propiedades del activo (Proprietà cespite)
 sidebar_position: 19
 ---
 
-Questa tabella permette di definire un semplice codice e descrizione della caratteristica da assegnare ai vari cespiti: sarà utilizzabile come filtro di ricerca/stampa per ottenere una lista di cespiti che hanno una determinata proprietà o caratteristica.
+Esta tabla permite definir un código simple y la descripción de la característica que se asignará a los diferentes activos: se podrá utilizar como filtro de búsqueda/imprimir para obtener una lista de activos que tengan una determinada propiedad o característica.
 
-#### Campi specifici
+#### Campos específicos (Campi specifici)
 
-**Tipo**: Tipo della proprietà cespite.
+**tipo**: Tipo de la propiedad del activo.  
 
-**Descrizione**: descrizione della proprietà cespite.
+**descrizione**: descripción de la propiedad del activo.

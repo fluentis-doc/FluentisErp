@@ -1,18 +1,18 @@
 ---
-title: Numerazione picking
+title: numerazione picking
 sidebar_position: 21
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Numerazioni picking*.
+La tabla permite gestionar la codificación de las diferentes tipologías de *Numeraciones de picking (Numerazioni picking)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Numerazioni picking**
+**Búsqueda de Numeraciones de picking (Ricerca Numerazioni picking)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Numerazioni picking**
+**Ingreso de Numeraciones de picking (Inserimento Numerazioni picking)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder ingresar nuevas codificaciones, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

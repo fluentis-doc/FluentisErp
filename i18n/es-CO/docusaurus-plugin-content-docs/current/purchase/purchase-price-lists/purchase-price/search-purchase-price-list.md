@@ -1,14 +1,14 @@
 ---
-title: Ricerca Listini 
+title: ricerca listini
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Acquisti > Listini > Listini fornitori** e permette di cercare, visualizzare e creare nuovi listini fornitori.   
+El formulario se abre a través de la ruta **Compras > Listas > Listas de proveedores (Acquisti > Listini > Listini fornitori)** y permite buscar, visualizar y crear nuevas listas de proveedores.   
 
-Per la spiegazione delle funzionalità comuni ai documenti di acquisto consultare la sezione [Acquisti](/docs/purchase/purchases-intro).   
+Para la explicación de las funcionalidades comunes a los documentos de compra, consultar la sección [Compras (Acquisti)](/docs/purchase/purchases-intro).   
 
-Nella sezione di filtro è possibile filtrare per fornitore, date validità, divisa, progetto oppure per articolo. 
+En la sección de filtro es posible filtrar por proveedor, fechas de validez, moneda, proyecto o por artículo. 
 
-*Pulsante specifico*:   
+*Botón específico (Pulsante specifico)*:   
 
-> **Chiudi**: questo pulsante permette di modificare massivamente la *Data fine validità* dei listini presenti a sistema. Cliccandolo si aprirà un pop-up in cui inserire la nuova *Data fine validità* che sarà applicata a tutti i listini selezionati nella griglia.   
+> **chiudi**: este botón permite modificar masivamente la *data fine validità* de las listas presentes en el sistema. Al hacer clic, se abrirá un pop-up donde se debe ingresar la nueva *data fine validità* que se aplicará a todas las listas seleccionadas en la cuadrícula.

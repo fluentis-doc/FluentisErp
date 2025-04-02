@@ -1,27 +1,20 @@
 ---
-title: Bilancio infrannuale
+title: bilancio infrannuale
 sidebar_position: 1
 ---
 
-La stampa consente di eseguire una stampa sintetica delle sezioni di bilancio base sui dati della chiusura infrannuale (o del *consolidamento*) selezionata.
+La impresión permite realizar una impresión sintética de las secciones de balance básico sobre los datos del cierre interanual (o de *consolidación*) seleccionada.
 
-**Consolidato**: attivando il flag la combo box permetterà di selezionare chiusure consolidate tramite la procedura di [**consolidamento**](/docs/controlling/mid-year-closures/consolidation-entry) anzichè chiusure ordinarie (della singola società). 
+**consolidato**: al activar el indicador, la caja combinada permitirá seleccionar cierres consolidados a través del procedimiento de [**consolidamento**](/docs/controlling/mid-year-closures/consolidation-entry) en lugar de cierres ordinarios (de la única empresa).  
 
-**Visualizza importi con segno negativo**: opzione analoga a quella contenuta nelle stampe del [bilancio di esercizio](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) dell'area amministrazione.
+**Visualizar importes con signo negativo (Visualizza importi con segno negativo)**: opción similar a la que se encuentra en las impresiones del [balance de ejercicio (bilancio di esercizio)](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) del área de administración.
 
-**Visualizza Anagrafiche**: rende visibile nel bilancio il dettaglio dei saldi per le anagrafiche clienti/fornitori 
+**visualizza anagrafiche**: hace visible en el balance el detalle de los saldos para las anagrafías de clientes/proveedores.  
 
-**Visualizza saldo in valuta**: rende visibile il dettaglio del saldo in valuta per i conti che nel piano dei conti hanno la gestione valutaria attiva 
+**visualizza saldo in valuta**: hace visible el detalle del saldo en moneda para las cuentas que en el plan de cuentas tienen la gestión cambiaria activa.  
 
+**confrontare**: realizar una comparación entre dos cierres interanuales específicos. Al activar el indicador, se activa la segunda caja combinada para seleccionar el cierre a comparar con el principal.  
 
-**Confrontare**: effettuare un confronto tra due chiusure infrannuali specifiche. Attivando il flag si attiva la seconda combo box di selezione della chiusura da confrontare alla principale
+**Visualizar datos por centro de costo (Visualizza dati per centro di costo)**: Con este indicador, se incluirán en la impresión los datos presentes en la sección *analítica* del cierre (por lo tanto, normalmente solo los económicos), con los datos totalizados por centro de costo y, a continuación, por cuenta/subcuenta.  
 
-**Visualizza dati per centro di costo**: Con questo flag verranno riportati in stampa i dati presenti nella sezione *analitica* della chiusura (quindi solo l’economico normalmente), con i dati totalizzati per centro di costo e di seguito per conto/sottoconto.
-
-**ATTENZIONE**: attivando questo flag utilizzare il secondo report di stampa selezionabile dalla tendina nella ribbon bar denominato ***Bilancio per centri aziendali***
-
-
-
-
-
-
+**ATENCIÓN (ATTENZIONE)**: al activar este indicador, utilice el segundo informe de impresión seleccionable desde el menú desplegable en la barra de herramientas denominado **bilancio per centri aziendali***.

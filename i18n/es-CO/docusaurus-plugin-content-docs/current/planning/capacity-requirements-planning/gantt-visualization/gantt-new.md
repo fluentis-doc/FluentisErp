@@ -1,96 +1,95 @@
 ---
-title: Simulazione Gantt
+title: simulazione gantt
 sidebar_position: 2
 ---
 
-La form che permette di creare e modificare una simulazione Gantt, si compone dei seguenti tab:
+El formulario que permite crear y modificar una simulación Gantt se compone de las siguientes pestañas:
 
-- Testata
+- Encabezado (Testata)
 - Filtro
 - Gantt
-- Log della simulazione
+- Registro de la simulación (Log della simulazione)
 
-## Testata
+## Encabezado (Testata)
 
-Permette di inserire i dati di testata della simulazione Gantt.
+Permite ingresar los datos del encabezado de la simulación Gantt.
 
-*Campi specifici*:
+*Campos específicos*:
 
-> **Nome della simulazione**: indica il nome associato alla simulazione Gantt (di default viene proposto il nome dell'utente e data ed ora di creazione);     
-> **Tipo**: indica il codice del [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type) (si vedono solo quelli non di tipo Snapshot);           
-> **Descrizione** tipo: indica la descrizione del [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type);        
-> **Blocca documenti**: indica che tutti documenti che sono inclusi nella creazione della simulazione Gantt vengono bloccati. Quindi non possono essere modificati fino a quando non vengono non viene resa valida la simulaizone rilsciando le modifiche effettuate sui documenti;  
-> **Numero**: indica il numero della simulazione Gantt e dipende dalla numerazione associata al [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type);         
-> **Simulazione Valida**: indica che la simulazione sia è stata confermata e quindi le modifiche effettuate nel Gantt sono state riportate nei documenti collegati;      
-> **Data inserimento**: indica la data di inserimento della simulazione Gantt;     
-> **Utente**: indica l'utente della simulazione Gantt.     
+> **nome della simulazione**: indica el nombre asociado a la simulación Gantt (por defecto se propone el nombre del usuario y la fecha y hora de creación);  
+> **tipo**: indica el código del [Tipo de simulazione gantt (Tipo Simulazione Gantt)](/docs/configurations/tables/production/crp-gantt-simulation-type) (solo se ven los que no son de tipo Snapshot);  
+> **descrizione tipo**: indica la descripción del [Tipo de simulazione gantt (Tipo Simulazione Gantt)](/docs/configurations/tables/production/crp-gantt-simulation-type);  
+> **Bloquear documentos (Blocca documenti)**: indica que todos los documentos incluidos en la creación de la simulación Gantt se bloquean. Por lo tanto, no pueden modificarse hasta que la simulación no sea válida liberando las modificaciones realizadas en los documentos;  
+> **numero**: indica el número de la simulación Gantt y depende de la numeración asociada al [Tipo de simulazione gantt (Tipo Simulazione Gantt)](/docs/configurations/tables/production/crp-gantt-simulation-type);  
+> **simulazione valida**: indica que la simulación ha sido confirmada y, por lo tanto, los cambios realizados en el Gantt se han registrado en los documentos vinculados;  
+> **data inserimento**: indica la fecha de ingreso de la simulación Gantt;  
+> **utente**: indica el usuario de la simulación Gantt.
 
 ## Filtro
 
-Permette di ricercare i documenti che saranno utilizzati per la creazione del **Gantt**.     
-La forma si presenta composta da un'area superiore, nella quale sono inseriti i filtri per la ricerca dei vari documenti, con al di sotto, sulla sinistra un elenco che visualizza tutti i documenti corrispondenti ai filtri inseriti e sulla destra l'elenco dei documenti che saranno inseriti nel **Gantt**.       
-Tra i filtri è possibile utilizzare quello relativo al *Tipo documento* che permette di selezionare solo: *Ordini pianificati*, *Richieste di acquisto*, *Ordine di produzione* o *Ordine di conto lavoro*; inoltre, è possibile visualizzarli per *commessa* o per *documento* a seconda dell esigenze.       
-I documenti evasi vengono considerati solamente se viene attivato il rispettivo flag **Considera documenti evasi**.      
+Permite buscar los documentos que se utilizarán para la creación del **Gantt**.  
+El formulario se presenta compuesto por un área superior, en la cual se inserta los filtros para la búsqueda de los varios documentos, con debajo, a la izquierda, una lista que muestra todos los documentos correspondientes a los filtros ingresados y a la derecha la lista de documentos que se insertarán en el **Gantt**.  
+Entre los filtros, es posible utilizar el relativo al *Tipo de documento* que permite seleccionar solo: *ordini pianificati*, *richieste di acquisto*, *ordine di produzione* o *ordine di conto lavoro*; además, es posible visualizarlos por *commessa* o por *documento* según las necesidades.  
+Los documentos cumplidos se consideran solo si se activa el respectivo indicador **considera documenti evasi**.  
 
-Le griglie sottostanti presentano i documenti con una struttura ad albero, permettendo all'utente di selezionare solo quello che gli interessa semplicemente spuntando la casella corrispondente. Successivamente tramite l'apposito pulsante **Traferisci selezionati** oppure *Drag & Drop* l'utente può aggiungerli all'elenco di quelli da considerare per la creazione del **Gantt**.       
+Las cuadrículas debajo presentan los documentos con una estructura en árbol, permitiendo al usuario seleccionar solo lo que le interese simplemente marcando la casilla correspondiente. Posteriormente, a través del botón **Transferir seleccionados (Traferisci selezionati)** o mediante *Arrastrar y soltar (Drag & Drop)*, el usuario puede agregarlos a la lista de aquellos a considerar para la creación del **Gantt**.  
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Ricerca**: permette di ricercare i dcoumenti sulla base dei filtri inseriti;          
-> **Crea**: permette di creare il **Gantt** sulla base dei documenti inseriti nella griglia di destra;     
-> **Seleziona**: permette di spuntare il documento selezionato;        
-> **Seleziona tutti**: permette di spuntare tutti i documenti presenti nella griglia;       
-> **Deseleziona tutti**: permette di rimuovere la spunta da tutti i documenti presenti nella griglia;    
-> **Esplodi commesse**: permette di espandere l'albero della commessa selezionata fino ad arrivare al dettaglio della fase;      
-> **Implodi commesse**: permette di chiudere l'albero della commessa selezionata;     
-> **Traferisci selezionati**: permette di traferire i documenti selezionati dalla griglia di ricerca a quella di creazione del **Gantt**;      
-> **Salva**: permette di salvare le modifiche effettuate.
+> **ricerca**: permite buscar los documentos en función de los filtros ingresados;  
+> **crea**: permite crear el **Gantt** en base a los documentos ingresados en la cuadrícula de la derecha;  
+> **seleziona**: permite marcar el documento seleccionado;  
+> **seleziona tutti**: permite marcar todos los documentos presentes en la cuadrícula;  
+> **deseleziona tutti**: permite quitar la marca de todos los documentos presentes en la cuadrícula;  
+> **esplodi commesse**: permite expandir el árbol del proyecto seleccionado hasta llegar al detalle de la fase;  
+> **implodi commesse**: permite cerrar el árbol del proyecto seleccionado;  
+> **Transferir seleccionados (Traferisci selezionati)**: permite transferir los documentos seleccionados de la cuadrícula de búsqueda a la de creación del **Gantt**;  
+> **salva**: permite guardar las modificaciones realizadas.
 
 ## Gantt
 
-In questo tab viene visualizzato il Gantt in base ai criteri di ricerca impostati nel tab precedente. Il tab si compone di 2 sezioni, a loro volta divise in 2 pannelli ciascuna.
+En esta pestaña se visualiza el Gantt en base a los criterios de búsqueda establecidos en la pestaña anterior. La pestaña se compone de 2 secciones, a su vez divididas en 2 paneles cada una.
 
-- **Sezione superiore**: nella sezione superiore l'utente può visualizzare nella parte sinistra della sezione la lista dei documenti che sono stati selezionati con il check box nel tab precedente, uno sotto l'altro in una struttura ad albero, con un'indentazione basata sui legami che i documenti presentano reciprocamente.      
-Se la commessa di produzione presenta più di un articolo, al di sotto della commessa di produzione viene presentato il codice dell'articolo (Arrticolo e poi classe, codice e descrizione dello stesso).         
-In ciascuna di queste righe è visibile anche la data di inizio del documento e la data di fine.      
-Se la riga è evidenziata in rosso significa che è stata evasa oppura che nella realtà quella riga non esiste più.        
-A ciascuna di queste righe corrisponde una barra orizzontale posta nella parte grafica della sezione superiore, che raffigura appunto graficamente i documenti dettagliati nella zona di sinistra di questa sezione.       
-Le barre orizzontali coprono un arco temporale che può essere ampliato o ridotto, usando gli opportuni pulsanti della ribbon bar chiamati **Zoom Out** e **Zoom In**, andando in dettaglio di un singolo giorno e visualizzando quindi gli impieghi addirittura a livello di ora/minuto. Inoltre, con un doppio click sulla barra orizzontale che rappresenta un documento si apre automaticamente il documento stesso, sempre in accordo con i diritti dell'utente che sta eseguendo questa operazione.     
-Le barre orizzontali possono essere spostate sul grafico con un semplice drag and drop; l'operazione consente di spostare le date dei documenti in maniera assolutamente dinamica.   
-L'utente può poi scegliere, uscendo dal tab, di confermare la modifica effettuata o meno, tramite il tasto **Applica**.
+- **Sección superior**: en la sección superior, el usuario puede visualizar a la izquierda de la sección la lista de los documentos que han sido seleccionados con la casilla de verificación en la pestaña anterior, uno debajo del otro en una estructura en árbol, con una indentación basada en los vínculos que los documentos presentan entre sí.  
+Si el proyecto de producción presenta más de un artículo, debajo del proyecto de producción se muestra el código del artículo (Artículo y luego clase, código y descripción del mismo).  
+En cada una de estas filas también es visible la fecha de inicio del documento y la fecha de fin.  
+Si la fila está resaltada en rojo, significa que ha sido cumplida o que en la realidad esa fila ya no existe.  
+A cada una de estas filas corresponde una barra horizontal ubicada en la parte gráfica de la sección superior, que representa gráficamente los documentos detallados en la zona izquierda de esta sección.  
+Las barras horizontales cubren un arco temporal que puede ampliarse o reducirse, utilizando los botones apropiados de la barra de ribbon llamados **Zoom Out** y **Zoom In**, llegando a detallar un solo día y visualizando por lo tanto los empleos incluso a nivel de hora/minuto. Además, con un doble clic en la barra horizontal que representa un documento, se abre automáticamente el mismo documento, siempre de acuerdo con los derechos del usuario que está realizando esta operación.  
+Las barras horizontales pueden moverse en el gráfico con un simple arrastre y colocación (drag and drop); la operación permite mover las fechas de los documentos de manera dinámica.  
+El usuario puede luego optar, al salir de la pestaña, por confirmar la modificación realizada o no, a través del botón **applica**.
 
 :::note Nota
-Si ricorda che è possibile anticipare e posticipare solamente i documenti pianificati oppure le fasi non ancora iniziate, tutto il resto è bloccato.
+Se recuerda que solo es posible adelantar y retrasar los documentos planificados o las fases que aún no han comenzado; todo lo demás está bloqueado.
 :::
 
-- **Sezione inferiore**: nella sezione inferiore viene presentato, diviso in 2 pannelli, un istogramma relativo alla disponibilità e all'impegno delle risorse produttive.     
-Nel pannello di sinistra vengono visualizzati i nomi dei *Centri di Lavoro* impegnati nelle lavorazioni che si è deciso di visualizzare nel grafico, mentre nel pannello di destra, indissolubilmente legato al pannello di sinistra della sezione superiore, troviamo alcune barre verticali che per ogni giornata lavorativa presentano la quantità di lavoro che ciascun *Centro di Lavoro* deve svolgere in base ai tempi previsti delle fasi degli ordini di produzione presenti in quei giorni.      
-Da notare che l'istogramma evidenzia il totale degli impegni dei singoli centri di lavoro, non limitandosi a raffigurare graficamente solo l'impegno derivante dall'ordine di produzione visualizzato nel **Gantt**.     
-Infatti l'utente ha la possibilità, con un doppio click sulla barra dell'istogramma di un qualsiasi centro di lavoro, di esplodere una finestra in cui viene presentata la lista degli ordini di produzione presenti nel **Gantt**, e la lista degli ordini di produzione non presenti nella simulazione che si sta eseguendo graficamente, con la possibilità, anche da questa finestra, di aprire direttamente i documenti di cui viene fornito un dettaglio limitato. La finestra che viene aperta con il doppio click sull'istogramma si chiama **Visualizza fasi di lavoro**.         
-Tramite la form **Visualizza fasi di lavoro** è possibile selezionare le fasi di interesse e tramite i pulsanti **Cambia centro di lavoro** e **Cambia date**, l'utente può cambiare rispettivamente il centro di lavoro della fase e spostare di 'x' tempo (giorni/ore/minuti) od ad una certa data le singole fasi.
+- **Sección inferior**: en la sección inferior se presenta, dividido en 2 paneles, un histograma relativo a la disponibilidad y al compromiso de los recursos productivos.  
+En el panel de la izquierda se visualizan los nombres de los *Centros de Trabajo* involucrados en las labores que se han decidido visualizar en el gráfico, mientras que en el panel de la derecha, indisolublemente vinculado al panel de la izquierda de la sección superior, se encuentran algunas barras verticales que por cada jornada laboral presentan la cantidad de trabajo que cada *Centro de Trabajo* debe realizar en función de los tiempos previstos de las fases de los pedidos de producción presentes en esos días.  
+Cabe destacar que el histograma resalta el total de los compromisos de los centros de trabajo individuales, sin limitarse a representar gráficamente solo el compromiso derivado del pedido de producción visualizado en el **Gantt**.  
+De hecho, el usuario tiene la posibilidad, con un doble clic en la barra del histograma de cualquier centro de trabajo, de abrir una ventana en la que se presenta la lista de los pedidos de producción presentes en el **Gantt**, y la lista de los pedidos de producción que no están presentes en la simulación que se está realizando gráficamente, con la posibilidad, también desde esta ventana, de abrir directamente los documentos de los cuales se proporciona un detalle limitado. La ventana que se abre con el doble clic en el histograma se llama **visualizza fasi di lavoro**.  
+A través del formulario **visualizza fasi di lavoro**, es posible seleccionar las fases de interés y mediante los botones **cambia centro di lavoro** y **Cambiar fechas (Cambia date)**, el usuario puede cambiar respectivamente el centro de trabajo de la fase y mover de 'x' tiempo (días/horas/minutos) o a una fecha determinada las fases individuales.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Salva**: permette di salvare le modifiche effettuate;       
-> **Salva snapshot**: permette di salvare le modifiche effettuate creando uno snapshot (un figlio) partendo dalla simulazione principale;      
-> **Rollback simulazione**: permette di riportare la simulazione allo stato originale annullando tutte le modifiche;         
-> **Scegli stato avanzamento**: permette di segliere la modalità con la quale deve essere visualizzato lo stato di avanzamento dei singoli documenti all'interno del **Gantt**; queste possono essere: *in base al tempo trascorso*, *in base al tempo trascorso e alla quantità*, *in base alla quantità prodotta* oppure nessuno;      
-> **Applica**: permette di rendere esecutive le modifiche applicate nella simulazione **Gantt** (il pulsante si abilità dopo il salvataggio);      
-> **Esplodi l'albero**: permette di espandere l'albero della simulazione fino ad arrivare al dettaglio della fase;      
-> **Implodi l'albero**: permette di chiudere l'albero della simulazione;     
-> **Zoom in**: permette di aumentare lo zoom nel grafico;     
-> **Zoom alla finestra**: permette di regolare lo zoom nel grafico in base alla finestra temporale che si sta considerando;     
-> **Zoom out**: permette di diminuire lo zoom nel grafico;      
-> **Zoom settimana**: permette di regolare lo zoom nel grafico ad una settimana;      
-> **Zoom 2 settimane**: permette di regolare lo zoom nel grafico a due settimane;    
-> **Zoom mese**: permette di regolare lo zoom nel grafico ad un mese;    
-> **Zoom data**: permette di regolare lo zoom nel grafico per un certo range di date indicate dall'utente;            
-> **Mappatura del codice**: permette di visualizzare gli stili attualmente in uso nel **Gantt**, i quali possono essere modificati tramite i pulsanti *Modifica lo stile del Gantt* e *Modifica lo stile dell'istogramma*;          
-> **Modifica lo stile del Gantt**: permette di accedere alle impostazioni dello stile del Gantt attuale;     
-> **Modifica lo stile dell'istogramma**: permette di accedere alle impostazioni dello stile dell'istogramma attuale;          
-> **Aggiorna stile**: permette di aggiornare le modifiche fatte agli stili.      
+> **salva**: permite guardar las modificaciones realizadas;  
+> **salva snapshot**: permite guardar las modificaciones realizadas creando una instantánea (un hijo) a partir de la simulación principal;  
+> **rollback simulazione**: permite devolver la simulación al estado original anulando todas las modificaciones;  
+> **scegli stato avanzamento**: permite elegir la modalidad con la cual debe visualizarse el estado de avance de los documentos individuales dentro del **Gantt**; estas pueden ser: *en función del tiempo transcurrido*, *en función del tiempo transcurrido y la cantidad*, *en función de la cantidad producida* o ninguno;  
+> **applica**: permite hacer efectivas las modificaciones aplicadas en la simulación **Gantt** (el botón se habilita después de guardar);  
+> **esplodi l'albero**: permite expandir el árbol de la simulación hasta llegar al detalle de la fase;  
+> **implodi l'albero**: permite cerrar el árbol de la simulación;  
+> **Zoom in**: permite aumentar el zoom en el gráfico;  
+> **zoom alla finestra**: permite ajustar el zoom en el gráfico en función de la ventana temporal que se está considerando;  
+> **Zoom out**: permite reducir el zoom en el gráfico;  
+> **zoom settimana**: permite ajustar el zoom en el gráfico a una semana;  
+> **zoom 2 settimane**: permite ajustar el zoom en el gráfico a dos semanas;  
+> **zoom mese**: permite ajustar el zoom en el gráfico a un mes;  
+> **zoom data**: permite ajustar el zoom en el gráfico para un cierto rango de fechas indicadas por el usuario;  
+> **Mapeo de códigos (Mappatura del codice)**: permite visualizar los estilos actualmente en uso en el **Gantt**, los cuales pueden ser modificados mediante los botones *Modificar el estilo del Gantt (Modifica lo stile del Gantt)* y *modifica lo stile dell'istogramma*;  
+> **Modificar el estilo del Gantt (Modifica lo stile del Gantt)**: permite acceder a las configuraciones del estilo del Gantt actual;  
+> **modifica lo stile dell'istogramma**: permite acceder a las configuraciones del estilo del histograma actual;  
+> **Actualizar estilo (Aggiorna stile)**: permite actualizar las modificaciones hechas a los estilos.  
 
-## Log della simulazione
+## Registro de la simulación (Log della simulazione)
 
-In questo tab vengono visualizzati i log delle simulazioni precedentemente salvate, con la possibilità di controllare, per ciascun documento che avrebbe subito modifiche temporali, la vecchia data di inizio, la vecchia data di fine, la nuova data di inizio e la nuova data di fine.
-
+En esta pestaña se visualizan los registros de las simulaciones guardadas anteriormente, con la posibilidad de verificar, para cada documento que habría sufrido modificaciones temporales, la antigua fecha de inicio, la antigua fecha de fin, la nueva fecha de inicio y la nueva fecha de fin.

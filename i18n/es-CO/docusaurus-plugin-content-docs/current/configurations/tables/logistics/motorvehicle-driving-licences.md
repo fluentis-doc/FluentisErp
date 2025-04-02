@@ -1,22 +1,22 @@
 ---
-title: Licenze di guida automezzo
+title: Licencias de conducción de vehículos (Licenze di guida automezzo)
 sidebar_position: 57
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Licenze di guida automezzo**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Logística (Logistica) > Licencias de conducción de vehículos (Licenze di guida automezzo)**.
 
-In questa tabella è possibile codificare le *Licenze di guida automezzo* che potranno essere selezionati nell'[Angrafica autisti](/docs/logistics/shipping/shippings-intro).
+En esta tabla es posible codificar las *Licencias de conducción de vehículos* que podrán ser seleccionadas en [Registro de conductores (Angrafica autisti)](/docs/logistics/shipping/shippings-intro).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Licenze di guida automezzo**
+**Búsqueda de Licencias de conducción de vehículos (Ricerca Licenze di guida automezzo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Licenze di guida automezzo**
+**Inserción de Licencias de conducción de vehículos (Inserimento Licenze di guida automezzo)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Para poder insertar nuevos registros, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: **codice** y **descrizione**.  
+Con el botón **cancella** es posible eliminar el registro seleccionado.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Características, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

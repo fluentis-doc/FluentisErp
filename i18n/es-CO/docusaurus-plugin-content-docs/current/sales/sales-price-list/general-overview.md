@@ -1,26 +1,26 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo si trova sul percorso **Vendite > Listini di Vendita**.
+El módulo se encuentra en la ruta **Ventas > Listas de Precio (Vendite > Listini di Vendita)**.
 
-Il modulo offre un approccio completo e flessibile alla definizione e al controllo dei prezzi dei prodotti e servizi offerti dall'azienda. Grazie a un'interfaccia intuitiva e a funzionalità avanzate, le aziende possono gestire facilmente listini multipli, applicare sconti e condizioni personalizzate per ciascun cliente, e monitorare le variazioni di prezzo nel tempo.
+El módulo ofrece un enfoque completo y flexible para la definición y el control de los precios de los productos y servicios ofrecidos por la empresa. Gracias a una interfaz intuitiva y a funcionalidades avanzadas, las empresas pueden gestionar fácilmente múltiples listas de precios, aplicar descuentos y condiciones personalizadas para cada cliente, y monitorear las variaciones de precio a lo largo del tiempo.
 
-**Funzionalità Principali**:      
-- Inserimento e aggiornamento dei prezzi: Gli utenti possono inserire e aggiornare rapidamente i prezzi dei prodotti, garantendo che le informazioni siano sempre attuali e precise.
-- Gestione di listini multipli: È possibile gestire più listini contemporaneamente, permettendo di differenziare i prezzi in base a segmenti di clientela, aree geografiche o canali di vendita.
-- Validità temporale dei prezzi: Fluentis consente di impostare date di inizio e fine validità per ciascun prezzo, facilitando la gestione di promozioni temporanee e variazioni stagionali senza complicazioni.
-- Applicazione di sconti: Il sistema supporta l'applicazione di sconti automatici o manuali, migliorando la flessibilità nella strategia di pricing e incentivando le vendite.
-- Condizioni specifiche per clienti: È possibile definire condizioni di prezzo personalizzate per ciascun cliente, garantendo che le offerte siano competitive e mirate.
-- Gestione di valute multiple: Il modulo consente la gestione di listini in diverse valute, facilitando la vendita internazionale e migliorando l'accessibilità per clienti di diverse nazioni.
-- Aggiornamenti massivi: Fluentis offre la possibilità di effettuare aggiornamenti massivi ai listini, semplificando la modifica di prezzi e condizioni su larga scala.
-- Generazione di report: È possibile generare report dettagliati sui listini e sui prezzi, fornendo informazioni utili per analisi e decisioni strategiche.
-- Storico delle variazioni: Il sistema mantiene uno storico delle variazioni di prezzo, consentendo di monitorare le modifiche nel tempo e valutare l'impatto delle strategie di pricing.
+**Funcionalidades Principales (Funzionalità Principali)**:      
+- Inserción y actualización de precios: Los usuarios pueden ingresar y actualizar rápidamente los precios de los productos, asegurando que la información esté siempre actualizada y precisa.  
+- Gestión de múltiples listas: Es posible gestionar varias listas simultáneamente, permitiendo diferenciar los precios según segmentos de clientes, áreas geográficas o canales de venta.  
+- Validez temporal de los precios: Fluentis permite establecer fechas de inicio y fin de validez para cada precio, facilitando la gestión de promociones temporales y variaciones estacionales sin complicaciones.  
+- Aplicación de descuentos: El sistema soporta la aplicación de descuentos automáticos o manuales, mejorando la flexibilidad en la estrategia de precios e incentivando las ventas.  
+- Condiciones específicas para clientes: Es posible definir condiciones de precios personalizadas para cada cliente, asegurando que las ofertas sean competitivas y dirigidas.  
+- Gestión de múltiples monedas: El módulo permite la gestión de listas en diferentes monedas, facilitando la venta internacional y mejorando la accesibilidad para clientes de diferentes naciones.  
+- Actualizaciones masivas: Fluentis ofrece la posibilidad de realizar actualizaciones masivas a las listas, simplificando la modificación de precios y condiciones a gran escala.  
+- Generación de informes: Es posible generar informes detallados sobre las listas y los precios, proporcionando información útil para análisis y decisiones estratégicas.  
+- Historial de cambios: El sistema mantiene un historial de las variaciones de precio, permitiendo monitorear los cambios a lo largo del tiempo y evaluar el impacto de las estrategias de precios.  
 
-**Automazione e Integrazione**:      
-Il modulo di gestione dei listini è strettamente integrato con i moduli di vendita e fatturazione di Fluentis, garantendo che i prezzi applicati siano sempre aggiornati e coerenti. Questa integrazione aiuta a prevenire errori e a garantire una gestione fluida delle vendite.
+**Automatización e Integración (Automazione e Integrazione)**:      
+El módulo de gestión de listas está estrechamente integrado con los módulos de venta y facturación de Fluentis, garantizando que los precios aplicados estén siempre actualizados y coherentes. Esta integración ayuda a prevenir errores y asegura una gestión fluida de las ventas.  
 
-Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:
-> - [Parametri](/docs/configurations/parameters/sales/price-list-parameters)
-> - [Tipi listini di vendita](/docs/configurations/tables/sales/sales-price-lists)
+Antes de utilizar el módulo, es necesario completar los siguientes parámetros y tablas:  
+> - [Parámetros (Parametri)](/docs/configurations/parameters/sales/price-list-parameters)  
+> - [Tipos de listas de venta (Tipi listini di vendita)](/docs/configurations/tables/sales/sales-price-lists)

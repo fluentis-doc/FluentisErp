@@ -1,66 +1,66 @@
 ---
-title: Contabilizzazione fatture di acquisto
+title: contabilizzazione fatture di acquisto
 sidebar_position: 1
 ---
 
-La procedura si apre tramite il percorso **Acquisti > Fatture di acquisto > Procedure > Contabilizzazione fatture di acquisto**.
+El procedimiento se abre a través de la ruta **Compras > Facturas de compra > Procedimientos > contabilizzazione fatture di acquisto**.
 
-### 1. Contabilizzazione
+### 1. Contabilización
 
-La maschera presenta nella parte superiore i filtri di ricerca per individuare la lista delle fatture da contabilizzare presenti nel sistema.
+La máscara presenta en la parte superior los filtros de búsqueda para localizar la lista de facturas por contabilizar presentes en el sistema.
 
-Alla base della maschera sono presenti alcuni parametri di gestione della contabilizzazione:
+En la parte inferior de la máscara hay algunos parámetros de gestión de la contabilización:
 
-- **Data registrazione**: è la data registrazione da assegnare alla registrazione stessa, se non è stato impostato il flag *Data registrazione uguale ultima data registro IVA*;
-- **Data competenza**: è la data competenza da assegnare alla registrazione;
-- **Data registrazione uguale ultima data registro IVA**: con questo flag il sistema individuerà per ogni fattura quale è l'ultima data di registrazione utilizzata per il registro IVA associato alla causale del tipo fattura e utilizzerà questa data per registrare i documenti selezionati. In mancanza del flag, si attiverà il campo *Data registrazione* per impostare la data registrazione manualmente;
-- **Data competenza uguale a data registrazione**: questo flag impone la contabilizzazione con data competenza uguale alla data della registrazione. Se il flag viene disabilitato, si attiva il campo della data competenza in modo da impostare manualmente questa data;
-- **Usa il cambio della tabella cambi**: con questo flag si impone al sistema di verificare la tabella cambi per utilizzare quello presente alla data registrazione/fattura (o l'ultimo inserito in precedenza). Se il flag non è impostato, sarà invece utilizzato il cambio già presente in testata della fattura;
-- **Aggiorna cambio in documento**: il campo è attivo solo se il precedente flag è impostato. Il significato è quello di aggiornare anche il cambio presente in testata della fattura, sovrascrivendo quello precedente.
+- **data registrazione**: es la fecha de registro que se asignará a la propia contabilización, si no se ha activado el indicador *Fecha de registro igual a la última fecha del registro IVA*;  
+- **data competenza**: es la fecha de competencia que se asignará a la contabilización;  
+- **data registrazione uguale ultima data registro iva**: con este indicador, el sistema determinará para cada factura cuál es la última fecha de registro utilizada para el registro IVA asociado al tipo de factura y utilizará esta fecha para registrar los documentos seleccionados. En ausencia del indicador, se activará el campo *Fecha de registro* para establecer la fecha de registro manualmente;  
+- **data competenza uguale a data registrazione**: este indicador impone la contabilización con la fecha de competencia igual a la fecha del registro. Si el indicador se desactiva, se activa el campo de la fecha de competencia para establecer manualmente esta fecha;  
+- **usa il cambio della tabella cambi**: con este indicador, se obliga al sistema a verificar la tabla de cambios para utilizar el que esté presente en la fecha de registro/factura (o el último ingresado anteriormente). Si el indicador no está activado, se utilizará en cambio el tipo de cambio ya presente en la cabecera de la factura;  
+- **aggiorna cambio in documento**: el campo está activo solo si el indicador anterior está activado. Su significado es actualizar también el tipo de cambio presente en la cabecera de la factura, sobrescribiendo el anterior.
 
-#### Pulsante specifico
+#### Botón específico
 
-> **Contabilizzazione fatture**: permette di contabilizzare le fatture selezionate nella griglia, in base ai parametri inseriti.
+> **contabilizzazione fatture**: permite contabilizar las facturas seleccionadas en la cuadrícula, según los parámetros ingresados.
 
-### 2. Omaggi
+### 2. Obsequios (Omaggi)
 
-L'utente ha la possibilità di decidere quali omaggi siano da contabilizzare. Per questo deve specificare la causale per la contabilizzazione omaggi e il conto per lo storno IVA.
+El usuario tiene la posibilidad de decidir qué obsequios deben ser contabilizados. Para esto debe especificar la causa de la contabilización de obsequios y la cuenta para la anulación de IVA.
 
-- **Contabilizzazione omaggi**: con questo flag si attiva la gestione della contabilizzazione omaggi, attivando i campi successivi collegati.
+- **contabilizzazione omaggi**: con este indicador se activa la gestión de la contabilización de obsequios, activando los campos siguientes asociados.
 
-Se la fattura che si sta contabilizzando presenta un omaggio e:
+Si la factura que se está contabilizando presenta un obsequio y:
 
-1. **Il parametro di gestione non è stato impostato**: il sistema chiederà conferma all'utente con un avviso della mancata impostazione. In questa situazione sarà registrata la fattura normalmente senza alcuna gestione della riga omaggio, che andrà quindi gestita manualmente in contabilità.
+1. **El parámetro de gestión no ha sido establecido (Il parametro di gestione non è stato impostato)**: el sistema pedirá confirmación al usuario con un aviso de la falta de configuración. En esta situación, la factura se registrará normalmente sin ninguna gestión de la línea de obsequio, que deberá ser gestionada manualmente en contabilidad.
    
-2. **Il parametro di gestione omaggi è stato impostato**:  
-    - 2.1 Se non si è inserito alcun sottoconto nei campi successivi, il sistema aggiungerà in coda ai normali movimenti di contabilizzazione le necessarie righe di storno dei costi, utilizzando lo stesso sottoconto impostato per l'articolo.  
-    - 2.2 Se è stato impostato il flag **Sostituisci al conto dell'articolo**, si attiverà il campo dove impostare il sottoconto di storno omaggi, che sarà utilizzato al posto del sottoconto dell'articolo in queste righe aggiuntive.
+2. **El parámetro de gestión de obsequios ha sido establecido (Il parametro di gestione omaggi è stato impostato)**:  
+    - 2.1 Si no se ha ingresado ningún subcuenta en los campos siguientes, el sistema añadirá al final de los movimientos normales de contabilización las necesarias líneas de anulación de costos, utilizando la misma subcuenta establecida para el artículo.  
+    - 2.2 Si se ha activado el indicador **sostituisci al conto dell'articolo**, se activará el campo donde se debe establecer la subcuenta de anulación de obsequios, que se utilizará en lugar de la subcuenta del artículo en estas líneas adicionales.
 
-- **Conto storno IVA**: usato nel caso in cui l'articolo omaggio in fattura non abbia il flag **Rivalsa IVA**. Questo importo sarà registrato e stornato solo nel caso in cui sia inserito il *Conto di storno IVA*, senza il quale l'operazione sarà da gestire manualmente in contabilità (anche in questo campo c'è un messaggio di conferma/avviso utente della mancata impostazione).
+- **conto storno iva**: utilizada en caso de que el artículo obsequio en la factura no tenga el indicador **rivalsa iva**. Este importe será registrado y anulado solo en caso de que esté ingresada la *Cuenta de anulación de IVA*, sin la cual la operación deberá ser gestionada manualmente en contabilidad (también en este campo hay un mensaje de confirmación/aviso al usuario sobre la falta de configuración).
 
-#### Pulsante specifico
+#### Botón específico
 
-> **Salva**: permette di salvare i parametri impostati per la contabilizzazione omaggi.
+> **salva**: permite guardar los parámetros establecidos para la contabilización de obsequios.
 
-Dopo aver selezionato le fatture (dal tab *Contabilizzazione*) e impostato i parametri, le fatture possono essere contabilizzate con l'aiuto del pulsante *Contabilizzazione fatture*.
+Después de haber seleccionado las facturas (desde la pestaña *Contabilización*) y establecido los parámetros, las facturas pueden ser contabilizadas con la ayuda del botón *contabilizzazione fatture*.
 
-### 3. Precedenti
+### 3. Anteriores (Precedenti)
 
-La form presenta la lista delle operazioni di contabilizzazione eseguite, al fine di visualizzarle ed eventualmente annullarle attraverso gli appositi pulsanti.
+El formulario presenta la lista de las operaciones de contabilización realizadas, con el fin de visualizarlas y eventualmente anularlas a través de los botones correspondientes.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro IVA non stampato, liquidazione periodica non stampata, chiusura conti non eseguita, partite contabili chiuse in un incasso o in un effetto).
+La anulación será posible solo si el período aún es modificable (impresión del libro diario, registro de IVA no impreso, liquidación periódica no impresa, cierre de cuentas no ejecutado, partidas contables cerradas en un ingreso o en un efecto).
 
-- **Contabilizzazione fatture**: griglia con i dettagli delle operazioni eseguite. Viene popolata dopo la procedura di ricerca e possono essere selezionate le operazioni sulle quali applicare le funzioni del ribbon.
+- **contabilizzazione fatture**: cuadrícula con los detalles de las operaciones realizadas. Se poblada después del procedimiento de búsqueda y se pueden seleccionar las operaciones sobre las cuales aplicar las funciones del ribbon.
   
-I dati nelle griglie in basso, **Fatture di acquisto** e **Registrazione contabile**, corrispondono all'operazione selezionata nella griglia superiore. Un doppio clic nella sezione delle fatture/registrazioni consentirà di visualizzare la fattura/la registrazione contabile relativa.
+Los datos en las cuadrículas inferiores, **fatture di acquisto** y **registrazione contabile**, corresponden a la operación seleccionada en la cuadrícula superior. Un doble clic en la sección de facturas/registraciones permitirá visualizar la factura/la registración contable correspondiente.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Ricerca contabilizzazione**: ricerca la lista delle contabilizzazioni eseguite.  
-> **Anteprima contabilizzazione**: per visualizzare l'anteprima di stampa della contabilizzazione.  
-> **Ripristina contabilizzazione**: per cancellare la contabilizzazione selezionata.  
-> **Ripristina registrazione**: per cancellare l'intera operazione selezionata, con tutti i suoi dettagli visualizzati nelle due griglie sottostanti.
+> **ricerca contabilizzazione**: busca la lista de contabilizaciones realizadas.  
+> **anteprima contabilizzazione**: para visualizar la vista previa de impresión de la contabilización.  
+> **ripristina contabilizzazione**: para eliminar la contabilización seleccionada.  
+> **ripristina registrazione**: para eliminar toda la operación seleccionada, con todos sus detalles mostrados en las dos cuadrículas inferiores.
 
-### 4. Messaggi di errore
+### 4. Mensajes de error (Messaggi di errore)
 
-Vedere la pagina sulla [**contabilizzazione fattura di vendita**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting#messaggi-di-errore).
+Consultar la página sobre [**contabilizzazione fattura di vendita**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting#messaggi-di-errore).

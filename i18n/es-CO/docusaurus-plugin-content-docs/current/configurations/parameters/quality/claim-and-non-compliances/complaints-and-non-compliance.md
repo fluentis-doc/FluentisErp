@@ -1,53 +1,53 @@
 ---
-title: Parametri reclami e non conformità
+title: parametri reclami e non conformità
 sidebar_position: 2
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri reclami e non conformità**.   
+Los parámetros se encuentran en la ruta **Parámetros > Calidad > parametri reclami e non conformità (Parametri > Qualità > Parametri reclami e non conformità)**.  
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-- **Reclami**;   
-- **Non conformità**.   
-- **Autorizzazione al rientro** - nella stampa di *Autorizzazione al rientro*.   
+Los datos presentes en esta gestión son utilizados para proponer información en las gestiones:  
+- **reclami**;  
+- **non conformità**.  
+- **autorizzazione al rientro** - en la impresión de *autorizzazione al rientro*.  
 
-#### Pulsante specifico
+#### Botón específico
 
-**Salva**: permette di memorizzare le informazioni modificate.  
+**salva**: permite almacenar la información modificada.  
 
-## Parametri reclami e non conformità      
+## parametri reclami e non conformità (Parametri reclami e non conformità) 
 
-- **Anno**: è l'*Anno* di riferimento dei *Parametri reclami e non conformità*.   
-- **Note**: annotazioni libere.   
+- **anno**: es el *Año* de referencia de los *parametri reclami e non conformità*.  
+- **note**: anotaciones libres.  
 
-### Reclami      
+### Reclamaciones (Reclami)  
 
-In questa sezione è possibile inserire dati da proporre nei *Reclamo*.    
+En esta sección es posible ingresar datos para proponer en una *Reclamación*.  
 
-Nella sezione è possibile inserire:   
-- **Tipo reclamo**: *Tipo reclamo* da proporre all'inserimento di un *Reclamo*.   
-- **Persona responsabile**: *Dipendente* da proporre come responsabile alla creazione di un nuovo *Reclamo*.   
-- **Funzione responsabile**: *Funzione aziendale* da proporre come responsabile alla creazione di un nuovo *Reclamo*.   
-- **Costo di gestione**: valore da proporre nel *Costo di gestione* di un nuovo *Reclamo*.   
-- **Ricalcolo automatico totali**: indica se ricalcolare automaticamente i totali del *Reclamo* sulla base dei difetti inseriti altrimenti i valori dovranno essere inseriti manualmente.   
-- **Raggruppamento dati U.D.C.**: indica se riportare automaticamente, tra gli *Oggetti difettosi* di un *Reclamo*, tutti gli articoli contenuti in una U.D.C. all'inserimento di un articolo difettoso che è contenuto nella U.D.C. specificata.   
+En la sección se pueden ingresar:  
+- **tipo reclamo**: *Tipo de reclamación* para proponer al ingresar una *Reclamación*.  
+- **persona responsabile**: *dipendente* para proponer como responsable de la creación de una nueva *Reclamación*.  
+- **funzione responsabile**: *funzione aziendale* para proponer como responsable de la creación de una nueva *Reclamación*.  
+- **costo di gestione**: valor a proponer en el *Costo de gestión* de una nueva *Reclamación*.  
+- **ricalcolo automatico totali**: indica si se deben recalcular automáticamente los totales de la *Reclamación* sobre la base de los defectos ingresados; de lo contrario, los valores deben ser ingresados manualmente.  
+- **raggruppamento dati u.d.c.**: indica si se deben incluir automáticamente, entre los *oggetti difettosi* de una *Reclamación*, todos los artículos contenidos en una U.D.C. al ingresar un artículo defectuoso que está en la U.D.C. especificada.  
 
-Sezione **Autorizzazione al rientro**   
->- **Autorizzazione al rientro**: indica se deve essere gestita l'*Autorizzazione al rientro* nella gestione *Reclamo*.   
->- **Frase di testa del documento**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
->- **Frase di corpo del documento**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
->- **Note su accrediti**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
->- **Istruzioni per il reso**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
+Sección **autorizzazione al rientro**  
+>- **autorizzazione al rientro**: indica si debe gestionarse la *Autorización de devolución* en la gestión de *Reclamación*.  
+>- **Frase de encabezado del documento (Frase di testa del documento)**: anotaciones libres sobre el tema, son propuestas en la impresión de *autorizzazione al rientro*.  
+>- **Frase del cuerpo del documento (Frase di corpo del documento)**: anotaciones libres sobre el tema, son propuestas en la impresión de *autorizzazione al rientro*.  
+>- **note su accrediti**: anotaciones libres sobre el tema, son propuestas en la impresión de *autorizzazione al rientro*.  
+>- **istruzioni per il reso**: anotaciones libres sobre el tema, son propuestas en la impresión de *autorizzazione al rientro*.  
 
-### Non conformità      
+### No conformidades (Non conformità)  
 
-In questo expander è possibile inserire dati da proporre nelle *Non conformità*.   
-Nell'expander è possibile inserire:   
-- **Tipo non conformità**: *Tipo reclamo* da proporre all'inserimento di una *Non conformità*.   
-- **Persona responsabile**: *Dipendente* da proporre come responsabile alla creazione di una *Non conformità*.   
-- **Funzione responsabile**: *Funzione aziendale* da proporre come responsabile alla creazione di una *Non conformità*.   
-- **Costo di gestione**: valore da proporre nel *Costo di gestione* di un *Non conformità*.   
-- **Ricalcolo automatico totali**: indica se ricalcolare automaticamente i totali della *Non conformità* sulla base dei difetti inseriti altrimenti i valori dovranno essere inseriti manualmente.   
-- **Raggruppamento dati U.D.C.**: indica se riportare automaticamente, tra gli *Oggetti difettosi* di una *Non conformità*, tutti gli articoli contenuti in una U.D.C. all'inserimento di un articolo difettoso che è contenuto nella U.D.C. specificata.   
-- **Proposta U.M. alternativa**: indica se visualizzare, negli *Oggetti difettosi*, le informazioni sulle *Quantità* espresse in un'unità di misura alternativa rispetto alla principale.   
+En este panel es posible ingresar datos para proponer en las *No conformidades*.  
+En el panel se pueden ingresar:  
+- **tipo non conformità**: *tipo reclamo* para proponer al ingresar una *No conformidad*.  
+- **persona responsabile**: *dipendente* para proponer como responsable de la creación de una *No conformidad*.  
+- **funzione responsabile**: *funzione aziendale* para proponer como responsable de la creación de una *No conformidad*.  
+- **costo di gestione**: valor para proponer en el *Costo de gestión* de una *No conformidad*.  
+- **ricalcolo automatico totali**: indica si se deben recalcular automáticamente los totales de la *No conformidad* sobre la base de los defectos ingresados; de lo contrario, los valores deben ser ingresados manualmente.  
+- **raggruppamento dati u.d.c.**: indica si se deben incluir automáticamente, entre los *oggetti difettosi* de una *No conformidad*, todos los artículos contenidos en una U.D.C. al ingresar un artículo defectuoso que está en la U.D.C. especificada.  
+- **proposta u.m. alternativa**: indica si mostrar, en los *oggetti difettosi*, la información sobre las *Cantidades* expresadas en una unidad de medida alternativa respecto a la principal.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

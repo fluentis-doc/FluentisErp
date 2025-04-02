@@ -1,24 +1,16 @@
 ---
-title: Intrastat2
+title: intrastat2
 sidebar_position: 3
 ---
 
-Form per la ricerca specifica dei modelli INTRA 2 e l'inserimento di un nuovo modello (sia manualmente sia tramite procedura automatica).
+Formulario para la búsqueda específica de los modelos INTRA 2 e inserción de un nuevo modelo (tanto manualmente como mediante procedimiento automático).
 
-Nella ribbon bar sono presenti anche i comandi per la stampa del modello, è necessario selezionare distintamente dalla combobox le varie sezioni da stampare oltre al frontespizio.
+En la barra de herramientas también están los comandos para la impresión del modelo; es necesario seleccionar distintamente en la combobox las varias secciones a imprimir además de la carátula.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database delle dichiarazioni Intrastat2 precedentemente inserite. Possibilità di poter ricercare per tipo riepilogo, periodo, anno e numero di presentazione. |
-| Creazione nuovo | Richiama la procedura per inserire una nuova dichiarazione Intrastat 2. |
-| Modifica | Richiama la procedura per modificare una dichiarazione Intrastat 2 precedentemente inserita. |
-| Elimina | Cancella una dichiarazione Intrastat 2 precedentemente inserita. |
-| Esporta su file | Pulsante per la creazione e contestuale esportazione del file telematico, con  salvataggio del file in una  directory a scelta dell'utente e nella gestione documentale di Fluentis. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Botón para aplicar los filtros de búsqueda a toda la base de datos de las declaraciones intrastat2 previamente ingresadas. Posibilidad de buscar por tipo de resumen, periodo, año y número de presentación. |
+| Crear nuevo (Creazione nuovo) | Llama al procedimiento para insertar una nueva declaración Intrastat 2. |
+| Modificar (Modifica) | Llama al procedimiento para modificar una declaración Intrastat 2 previamente ingresada. |
+| Eliminar (Elimina) | Elimina una declaración Intrastat 2 previamente ingresada. |
+| Exportar a archivo (Esporta su file) | Botón para la creación y exportación simultánea del archivo telemático, con el guardado del archivo en un directorio a elección del usuario y en la gestión documental de Fluentis. |

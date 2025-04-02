@@ -1,8 +1,7 @@
 ---
-title: Sequenza Fasi
+title: sequenza fasi
 sidebar_position: 1
 ---
 
-Dà la possibilità di sequenziare le fasi manualmente o secondo regole decise dall’operatore.
-Funziona esattamente come [Sequenza Fasi - TopDown grid](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown) tranne che per il fatto che le *Fasi non ordinate* e le *Fasi ordinate* si trovano, in questo caso, su due tab differenti.
-
+Ofrece la posibilidad de secuenciar las fases manualmente o de acuerdo con reglas establecidas por el operador.  
+Funciona exactamente como [sequenza fasi - Grilla TopDown (Sequenza Fasi - TopDown grid)](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown), salvo que las *fasi non ordinate* y las *fasi ordinate* se encuentran, en este caso, en dos pestañas diferentes.

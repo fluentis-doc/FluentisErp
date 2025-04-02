@@ -1,9 +1,7 @@
 ---
-title: Probabilità di Successo
+title: Probabilidad de Éxito (Probabilità di Successo)
 sidebar_position: 2
 ---
 
-E' una tabella descrittiva per catalogare le **Probabilità di successo** in percentuale che è possibile indicare nelle [Opportunità](/docs/crm/chance/search-chances/) del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una tabella codice/descrizione, oltre all’ordinamento dei record e alla % di successo corrispondente ad ogni record.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della probabilità, e da una griglia in cui appunto verranno elencati tutte le probabilità inserite.
-
- 
+Es una tabla descriptiva para catalogar las **Probabilidades de éxito (Probabilità di successo)** en porcentaje que se pueden indicar en las [Oportunidades (Opportunità)](/docs/crm/chance/search-chances/) del CRM. Es común a todas las empresas presentes en la base de datos y está constituida por una tabla de código/descripción, además del ordenamiento de los registros y el % de éxito correspondiente a cada registro.  
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción de la probabilidad, y por una cuadrícula en la que se enumerarán todas las probabilidades ingresadas.

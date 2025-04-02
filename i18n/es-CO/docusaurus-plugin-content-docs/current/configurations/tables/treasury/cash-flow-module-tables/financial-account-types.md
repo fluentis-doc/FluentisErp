@@ -1,23 +1,23 @@
 ---
-title: Tipi conto finanziario
+title: tipi conto finanziario
 sidebar_position: 1
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-In questa tabella si andrà a definire la lista dei sottoconti contabili dai quali calcolare il saldo contabile che sarà considerato disponibilità iniziale di cash flow.
+En esta tabla se definirá la lista de subcuentas contables desde las cuales calcular el saldo contable que se considerará como disponibilidad inicial de flujo de efectivo.
 
-*Campi specifici*  
-**Tipo conto finanziario**: indica il tipo del conto finanziario. Può essere selezionato tra due tipologie: Cassa e Banca, inquanto la consistenza iniziale di risorse finanziarie verrà calcolata su queste tipologie di conti contabili. Si tratta poi, nei campi seguenti, di indicare in dettaglio quali conti / sottoconti andare a leggere.
+*Campos específicos*  
+**tipo conto finanziario**: indica el tipo de cuenta financiera. Puede seleccionarse entre dos tipos: Caja (Cassa) y Banco (Banca), ya que la consistencia inicial de recursos financieros se calculará sobre estos tipos de cuentas contables. A continuación, en los campos siguientes, se debe indicar en detalle qué cuentas/sobcuentas se deben leer.  
 
-**Descrizione conto finanziario**: rappresenta la descrizione del tipo conto.
+**Descripción de la cuenta financiera (Descrizione conto finanziario)**: representa la descripción del tipo de cuenta.
 
-**Conto**: è il codice del conto.
+**conto**: es el código de la cuenta.
 
-**Sottoconto**: è il codice del sottoconto.
+**sottoconto**: es el código de la subcuenta.
 
-**Descrizione sottoconto**: rappresenta la descrizione del sottoconto.
+**descrizione sottoconto**: representa la descripción de la subcuenta.

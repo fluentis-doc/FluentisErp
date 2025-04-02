@@ -1,18 +1,18 @@
 ---
-title: Tipo Attività IVA
+title: tipo attività iva
 sidebar_position: 22
 ---
 
-In questa tabella è possibile definire le tipologie di attività IVA svolte dalla società (qualora ricorra il caso) e ad ogni tipo attività associare eventualmente un pro-rata di detraibilità IVA.
+En esta tabla es posible definir los tipos de actividad IVA realizadas por la empresa (si corresponde el caso) y asociar a cada tipo de actividad, en su caso, un prorrateo de deducción de IVA.
 
-Le tipologie configurate a loro volta saranno associate ai vari [**registri iva**](/docs/configurations/tables/finance/vat-books).
+Los tipos configurados, a su vez, estarán asociados a los varios [**registri iva**](/docs/configurations/tables/finance/vat-books).
 
-E' possibile contrassegnare l'attività principale che raggrupperà nelle stampe delle liquidazioni iva periodiche il credito o debito iva.
+Es posible marcar la actividad principal que agrupará en las impresiones de las liquidaciones de IVA periódicas el crédito o débito de IVA.
 
-Nella stampa della liquidazione automaticamente verranno visualizzati i dettagli riferiti ad ogni singola attività ed il riassunto finale.
+En la impresión de la liquidación, se visualizarán automáticamente los detalles correspondientes a cada actividad individual y el resumen final.
 
-**Codice / Descrizione:** liberamente configurabili per nominare il tipo di attività inserito (es. Produzione... Immobiliare...)
+**Código / Descripción (Codice / Descrizione):** libremente configurables para nombrar el tipo de actividad ingresado (ej. Producción... Inmobiliaria...)  
 
-**Pro-rata:** campo per inserire la percentuale di detraibilità (100% detrazione piena o percentuali inferiori fino a 0 se detrazione limitata) il campo ha la stessa logica del pro-rata generale definibile nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters) e rappresenta una possibilità di dettaglio potendolo settare su ogni singolo tipo attività.
+**Pro-rata:** campo para ingresar el porcentaje de deducción (100% deducción completa o porcentajes inferiores hasta 0 si la deducción es limitada); el campo tiene la misma lógica que el prorrateo general definible en los [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters) y representa una posibilidad de detalle al poder establecerse en cada tipo de actividad individual.
 
-**Attività principale:** flag da apporre sul tipo di attività svolta in via principale (in termini di fatturato, si vedano le disposizioni fiscali).
+**Actividad principal (Attività principale):** indicador para marcar el tipo de actividad realizada principalmente (en términos de facturación, ver las disposiciones fiscales).

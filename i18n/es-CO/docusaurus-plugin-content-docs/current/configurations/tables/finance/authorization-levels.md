@@ -1,31 +1,31 @@
 ---
-title: Livelli autorizzativi
+title: livelli autorizzativi
 sidebar_position: 23
 ---
 
-Questa tabella consente di estendere la gestione del blocco partite passive secondo una logica più articolata.
+Esta tabla permite extender la gestión del bloqueo de partidas pasivas según una lógica más articulada.
 
-Ipotizzando che ci sia
-- un controllo amministrativo della fattura  
-- un controllo successivo da parte dell’ ufficio acquisti della fattura  
-- un' autorizzazione finale da parte del titolare  
+Suponiendo que haya
+- un control administrativo de la factura  
+- un control posterior por parte del departamento de compras de la factura  
+- una autorización final por parte del titular  
 
-si potrebbe ipotizzare una codifica dei livelli autorizzativi come segue:
+se podría hipotetizar una codificación de los niveles autorizativos como sigue:
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels.png)
 
-Il livello *00 – Blocco iniziale* va preimpostato in ogni **anagrafica fornitore**, nel tab [**Pagamenti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), per fare in modo che le sue partite siano create bloccate con questo livello di partenza.
+El nivel *00 – Bloqueo inicial (Blocco iniziale)* debe preconfigurarse en cada **registro de proveedor (anagrafica fornitore)**, en la pestaña [**pagamenti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), para que sus partidas sean creadas bloqueadas con este nivel de partida.
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels-combo.png)
 
-La partita può essere poi portata al livello *01* dagli utenti del ruolo *Amministrazione* (nell’ immagine *Fluentis Users* Cfr. gestione utenti e ruoli utente nella sezione ARM): questo perché ha *livello padre* 0, e lo porta a livello 1
+La partida puede ser luego llevada al nivel *01* por los usuarios del rol *amministrazione* (en la imagen *Fluentis Users* Cfr. gestión de usuarios y roles de usuario en la sección ARM): esto se debe a que tiene *livello padre* 0, y lo lleva al nivel 1.
 
-Poi la partita può essere portata a livello *02* dagli utenti del ruolo *Acquisti* (nell’immagine è *Fluentis Admins*): questo perché ha *livello padre* 1 e lo porta a livello 2
+Luego la partida puede ser llevada al nivel *02* por los usuarios del rol *acquisti* (en la imagen es *Fluentis Admins*): esto se debe a que tiene *livello padre* 1 y lo lleva al nivel 2.
 
-Poi ancora la partita può arrivare al livello finale *03* solo ad opera dell’utente XXXXXXX (il titolare), che darà effettivamente l’autorizzazione al pagamento (e quindi solo a questo punto verrà rimosso il blocco nella partita, che diventerà pagabile)
+A continuación, la partida puede llegar al nivel final *03* solo por parte del usuario XXXXXXX (el titular), que otorgará efectivamente la autorización para el pago (y solo en este punto se quitará el bloqueo en la partida, que se volverá pagable).
 
-Ogni step può richiedere l’inserimento di una nota di autorizzazione, se è impostato il flag al livello
+Cada paso puede requerir la inserción de una nota de autorización, si se activa el indicador en el nivel.
 
-Questi cambi stati possono essere eseguiti dalla maschera [**Gestione Liquidità**](/docs/finance-area/maturity-values/procedures/cash-management/), tramite il pulsante *Autorizza partita*. 
+Estos cambios de estado pueden realizarse desde el formulario [**Gestión de Liquidez (Gestione Liquidità)**](/docs/finance-area/maturity-values/procedures/cash-management/), a través del botón *autorizza partita*.
 
-Dopo il rilascio dell'autorizzazione sempre dalla maschera *Gestione liquidità* è possibile anche preparare direttamente le distinte di pagamento del modulo *Pagamenti fornitori*, per le partite autorizzate (o comunque quelle non bloccate) in alternativa alla classica procedura di creazione della distinta di pagamento e, da dentro la distinta, ricerca delle partite passive da inserire.
+Después de la concesión de la autorización, también desde el formulario *Gestión de liquidez (Gestione liquidità)* es posible preparar directamente las listas de pago del módulo *pagamenti fornitori*, para las partidas autorizadas (o aquellas no bloqueadas) como alternativa al procedimiento clásico de creación de la lista de pago y, desde dentro de la lista, búsqueda de las partidas pasivas a incluir.

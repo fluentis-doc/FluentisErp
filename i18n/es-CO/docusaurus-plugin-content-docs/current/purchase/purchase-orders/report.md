@@ -1,69 +1,62 @@
 ---
-title: Stampe
+title: stampe
 sidebar_position: 5
 ---
 
-Sono disponibili diverse **Stampe** standard. Per visualizzare un'anteprima di ciascuna stampa, serve impostare i filtri desiderati e premere il pulsante *Anteprima* sulla barra degli strumenti. Questa operazione mostrerà la stampa a video senza modificare lo stato del documento. Se necessario procedere con la stampa cartacea o salvarla su file, serve invece cliccare sul pulsante *Stampa*.
+Hay disponibles diferentes **stampe** estándar. Para visualizar una vista previa de cada impresión, es necesario configurar los filtros deseados y presionar el botón *anteprima* en la barra de herramientas. Esta operación mostrará la impresión en pantalla sin modificar el estado del documento. Si es necesario proceder con la impresión en papel o guardarla en un archivo, es necesario hacer clic en el botón *stampa*.
 
+### Confirmación del pedido de compra (Conferma Ordine di acquisto)
 
-### Conferma Ordine di acquisto
+Esta impresión permite imprimir los pedidos como Confirmaciones de Pedido para enviar directamente al proveedor.        
+La primera opción que se solicita es la elección entre la impresión *temporal* y la *definitiva*: la diferencia entre los dos tipos es que la temporal no tiene ningún efecto sobre el estado del pedido, mientras que la impresión en papel o digital realizada en definitiva lleva el documento al estado *stampato*.      
+Los primeros filtros que se muestran son los relacionados con la información de encabezado de los documentos, tales como el *tipo ordine*, el *numero documento*, el *fornitore* y el *progetto*.  
+En el grupo *ricerca avanzata* se pueden marcar los estados del pedido sobre los cuales realizar el filtro; por ejemplo, se pueden imprimir los pedidos cumplidos/no cumplidos, impresos, cancelados, etc.  
+En el grupo *articolo* es posible filtrar, además del código del artículo, también sobre otra información relacionada con las líneas del cuerpo del documento, como el *barcode*, la *descrizione articolo*, el *fornitore preferenziale* o la *commessa di produzione*.  
 
-Questa stampa permette di stampare gli Ordini come Conferme d'Ordine da inviare direttamente al fornitore.          
-La prima scelta che viene richiesta è quella tra la stampa *temporanea* e quella *definitiva*: la differenza tra le due tipologie è che quella temporanea non ha alcun effetto sullo stato dell'ordine, mentre la stampa cartacea o digitale effettuata in definitiva porta il documento allo stato *Stampato*.     
-I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, quali il *tipo ordine*, il *numero documento*, il *fornitore* e il *progetto*.   
-Nella groupbox *Ricerca avanzata* si possono spuntare gli stati dell'ordine su cui effettuare il filtro; per esempio, si possono stampare gli ordini evasi/non evasi, stampati, annullati, ecc.   
-Nella groupbox *Articolo* è invece possibile filtrare, oltre che sul codice dell’articolo, anche su altre informazioni relative alle righe del corpo del documento, quali il *barcode*, la *descrizione articolo*, il *fornitore preferenziale* o la *commessa di produzione*.    
+Con esta impresión, cada pedido se paginará por separado, cada uno con las siguientes secciones:
+- Encabezado con Logo e información empresarial
+- Información del pedido (tipo, número, fecha, etc.)
+- Información sobre el proveedor (número de identificación fiscal, condiciones de pago, banco, etc.)
+- Detalles del pedido (código de artículo, cantidad, precio, etc.)
+- Resumen del pedido (total mercancía, gastos, total impuestos, etc.)
 
-Con questa stampa, ogni ordine viene impaginato separatamente, ciascuno con le seguenti sezioni:
-- Intestazione con Logo e informazioni aziendali
-- Informazioni sull'ordine (tipologia, numero, data, ecc.)
-- Informazioni sul fornitore (partita iva, condizioni di pagamento, banca, ecc.)
-- Dettagli dell'ordine (codice articolo, quantità, prezzo, ecc.)
-- Riepilogo dell'ordine (totale merce, spese, totale imposta, ecc.)
+### Etiquetas de órdenes de proveedor (Etichette da ordini fornitore)
 
+La función de esta impresión es generar etiquetas físicas para la identificación y gestión de los productos o artículos que forman parte de un pedido.      
+Con los filtros dispuestos, similares a los de la impresión anterior, es posible filtrar los documentos para realizar una búsqueda más dirigida; por ejemplo, puedo imprimir los pedidos confirmados solo desde una cierta fecha, aquellos no entregados, no cumplidos, etc.      
 
-### Etichette da ordini fornitore
+La impresión crea etiquetas con la siguiente información:
+- Encabezado con Logo e información empresarial
+- Etiqueta del artículo con código de barras, unidad de medida, cantidad y descripción del artículo
+- Información sobre el proveedor y el pedido que contiene el artículo
 
-La funzione di questa stampa è quella di generare etichette fisiche per l'identificazione e la gestione dei prodotti o degli articoli che fanno parte di un ordine.      
-Con i filtri messi a disposizione, analoghi a quelli della stampa precedente, è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini confermati solo da una certa data, quelli non consegnati, non evasi, ecc.       
+### Lista de pedidos de proveedores (Lista Ordini Fornitori)
 
-La stampa crea delle etichette con le seguenti informazioni: 
-- Intestazione con Logo e informazioni aziendali
-- Etichetta dell'articolo con codice a barre, unità di misura, quantità e descrizione articolo
-- Informazioni sul fornitore e sull'ordine contenente l'articolo
+Con este reporte es posible imprimir un resumen detallado de los pedidos de proveedores ingresados en el sistema, en forma de lista.     
+Con los filtros dispuestos (los mismos de la impresión anterior) es posible filtrar los documentos para realizar una búsqueda más dirigida; en esta impresión también es posible establecer un orden por Proveedor (default), Número o Tipo de pedido.       
+En la impresión, bajo el mismo proveedor/número/tipo de pedido (según el orden elegido) se enumeran los pedidos con los siguientes datos: dividido, monto, artículo, IVA, etc.         
 
+Cada línea del listado ocupa un artículo del pedido.        
 
-### Lista Ordini Fornitori
+### Cartera de pedidos por cantidad (Portafoglio Ordini a Quantità)
 
-Con questo report è possibile stampare un riepilogo dettagliato degli ordini fornitore inseriti a sistema, sottoforma di lista.     
-Con i filtri messi a disposizione (i medesimi della stampa precedente) è possibile filtrare i documenti per effettuare una ricerca più mirata; in questa stampa è inoltre possibile impostare un ordinamento per Fornitore (default), Numero o Tipologia ordine.       
-Nella stampa, sotto lo stesso fornitore/numero/tipologia ordine (in base all'ordinamento scelto) vengono elencati gli ordini con i seguenti dati: divisa, importo, articolo, iva, ecc.         
+Esta impresión sirve para proporcionar una visión detallada y actualizada de los pedidos. Reporta una lista de los pedidos de proveedores destacando las cantidades ya entregadas y las restantes, es decir, ordenadas pero aún no entregadas; es especialmente útil para la coordinación logística, ya que permite ver de manera clara qué y cuántas unidades de productos aún deben ser entregadas.        
+En el formulario inicial se muestran algunos filtros relacionados con el encabezado de los documentos a extraer, similares a los de los reports ya analizados. A estos se añade la posibilidad de realizar un *ordenamiento* por *Número*, *Artículo*, *Fecha*, *Proveedor* o *Fecha de mercancía lista*.   
 
-Ogni riga dell'elenco viene occupata da un articolo dell'ordine.        
+El resultado es una lista de los pedidos, indicando cualquier documento de cumplimiento, si existen, y para cada artículo se indican las cantidades ordenadas, entregadas y restantes.      
 
+### Cartera de pedidos por valor (Portafoglio Ordini a Valore)
 
-### Portafoglio Ordini a Quantità
+Esta impresión proporciona un resumen de los pedidos recibidos pero no aún totalmente cumplidos, según el valor monetario de cada pedido. Este documento es particularmente útil para los departamentos de ventas, finanzas y gestión estratégica, ya que ofrece una visión clara del ingreso potencial relacionado con los pedidos en curso.      
+En el formulario inicial se muestran algunos filtros relacionados con el encabezado de los documentos a extraer, similares a los de los reports ya analizados. A estos se añade la posibilidad de realizar un *ordenamiento* por *Número*, *Artículo*, *Fecha*, *Proveedor* o *Fecha de mercancía lista*.   
 
-Questa stampa serve a fornire una panoramica dettagliata e aggiornata degli ordini. Riporta una lista degli ordini fornitore evidenziandone le quantità già consegnate e quelle residue, ovvero ordinate ma non ancora consegnate; è particolarmente utile per il coordinamento logistico, poiché permette di vedere in modo chiaro quali e quante unità di prodotti devono essere ancora consegnate.       
-Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati. A questi si aggiuge la possibilità di effettuare un *ordinamento* per *Numero*, *Articolo*, *Data*, *Fornitore* o *Data merce pronta*.   
+El resultado es una lista de los pedidos en los que, para cada artículo se indican los valores ordenados, entregados y restantes.       
 
-Il risultato è un elenco degli ordini, con indicati eventuali documenti di evasione, se esistenti, e per ogni articolo indicate le quantità ordinate, consegnate e residue.      
+### Calendario de pedidos (Scadenziario ordini)
 
+Esta impresión proporciona una visión detallada de las fechas de vencimiento y de los plazos de entrega relacionados con los pedidos no totalmente cumplidos.      
+Con los filtros dispuestos es posible filtrar los documentos para realizar una búsqueda más dirigida; también es posible establecer un orden por *Fecha de entrega* o *Proveedor*.       
 
-### Portafoglio Ordini a Valore
+En la impresión, bajo el mismo proveedor/fecha de entrega (según el orden elegido) se enumeran para cada artículo los pedidos con los siguientes datos: número, fecha de ingreso, estado de cumplimiento, cantidad restante, etc.      
 
-Questa stampa fornisce un riepilogo degli ordini ricevuti ma non ancora totalmente evasi, in base al valore monetario di ciascun ordine. Questo documento è particolarmente utile per i reparti di vendite, finanza e gestione strategica, poiché offre una visione chiara del fatturato potenziale legato agli ordini in corso.      
-Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati. A questi si aggiuge la possibilità di effettuare un *ordinamento* per *Numero*, *Articolo*, *Data*, *Fornitore* o *Data merce pronta*.   
-
-Il risultato è un elenco degli ordini in cui, per ogni articolo vengono indicati i valori ordinati, consegnati e residui.       
-
-
-### Scadenziario ordini
-
-Questa stampa fornisce una panoramica dettagliata delle date di scadenza e dei termini di consegna relativi agli ordini non totalmente evasi.      
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per *Data consegna* o *Fornitore*.       
-
-Nella stampa, sotto lo stesso fornitore/data consegna (in base all'ordinamento scelto) vengono elencati per ogni articolo gli ordini con i seguenti dati: numero, data inserimento, stato evasione, quantità residua, ecc.      
-
-
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 
+Más detalles sobre este tema en los artículos: [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports)

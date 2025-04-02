@@ -1,46 +1,40 @@
 ---
-title: Calcolo provvigioni
+title: calcolo provvigioni
 sidebar_position: 2
 ---
 
-La presente procedura (pertinente all'area amministrativa) è stata creata per l'elaborazione dei dati delle provvigioni agenti inseriti direttamente dalle scritture contabili previa opportuna configurazione delle causali contabili coinvolte.
+El presente procedimiento (perteneciente al área administrativa) ha sido creado para la elaboración de los datos de las comisiones de los agentes ingresados directamente desde los asientos contables, previa adecuada configuración de las causales contables involucradas.
 
-In particolare la causale (o le causali) utilizzate per la registrazone delle fatture di vendita dovranno avere il flag **Provvigioni** attivo.
+En particular, la causal (o las causales) utilizadas para el registro de las facturas de venta deberán tener el indicador **provvigioni** activo.
 
-**NOTA**: è necessario abiltare i flag Gestione Provvigioni anche all'interno di Configurazione > Utilità > Amministrazione > Parametri di contabilità in corrispondenza dell'anno desiderato.
+**NOTA**: es necesario habilitar los indicadores de Gestión de Comisiones también dentro de Configuración > Utilidades > Administración > Parámetros de contabilidad en correspondencia con el año deseado.
 
-All'apertura della form eseguendo il comando **Ricerca**, posto nella ribbon bar, viene caricata la lista degli agenti attivi (tramite il flag apposito possono essere caricati anche quelli con data fine mandato scaduta).
+Al abrir el formulario ejecutando el comando **ricerca**, ubicado en la barra de herramientas, se carga la lista de los agentes activos (mediante el indicador correspondiente, también se pueden cargar aquellos con fecha de finalización de mandato vencida).
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image01.png)
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image02.png)
 
-Nella parte destra della form sono presenti sia elementi di filtro per i dati dai quali elaborare le provvigioni, sia elementi da indicare al fine di elaborare correttamente i compensi basati sulla liquidazione che si sta generando.
+En la parte derecha del formulario hay elementos de filtro para los datos de los cuales elaborar las comisiones, así como elementos a indicar para elaborar correctamente los compensos basados en la liquidación que se está generando.
 
-ATTENZIONE:
+ATENCIÓN:
 
-Diversamente dall'elaborazione analoga presente nell'area vendite, al termine della presente procedura non vengono elaborate le Liquidazioni (ricercabili e consultabili e da trasformare poi in compensi) ma saranno direttamente generati i compensi agenti ricercabili ed ulteriormente elaborabili dall'area Percipienti.
+A diferencia de la elaboración análoga presente en el área de ventas, al finalizar este procedimiento no se elaboran las Liquidaciones (que pueden ser buscadas y consultadas y luego transformadas en compensos), sino que se generarán directamente los compensos de los agentes que pueden ser buscados y posteriormente elaborados desde el área de Beneficiarios (Percipienti).
 
-**Filtro Divisa**: permette di selezionare e filtrare le partite, da considerare per il calcolo delle provvigioni, espresse in una particolare divisa.
+**filtro divisa**: permite seleccionar y filtrar las partidas, que se considerarán para el cálculo de las comisiones, expresadas en una moneda particular.
 
-**Filtro partite**: i filtri di questo gruppo permettono di impostare la data di riferimento per la maturazione della provvigione (posta di default come la data corrente all'apertura della form) e di filtrare ulteriormente per tipo e data del documento. E' presente inoltre un flag che attiva la conversione delle partite in valuta utilizzando il cambio della data documento andando ad imporsi rispetto all'eventuale diverso cambio di apertura delle partite.
+**filtro partite**: los filtros de este grupo permiten establecer la fecha de referencia para la devengo de la comisión (establecida por defecto como la fecha actual al abrir el formulario) y filtrar aún más por tipo y fecha del documento. También hay un indicador que activa la conversión de las partidas en moneda utilizando el tipo de cambio de la fecha del documento, imponiéndose sobre el posible tipo de cambio diferente al abrir las partidas.
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image03.png)
 
-**ATTENZIONE**: Nel caso in cui l'agente abbia il metodo di maturazione provvigioni a **Pagamento totale** e la fattura di vendita abbia come tipo pagamento **Ricevuta bancaria**, la maturazione della provvigione avverrà in ogni caso alla data di scadenza della ricevuta bancaria, indipendentemente dalla chiusura della partita a fronte dell'emissione della RiBa e della presentazione al Salvo buon fine e/o accredito delle somme.
+**ATENCIÓN**: En caso de que el agente tenga el método de devengo de comisiones a **Pago total**, y la factura de venta tenga como tipo de pago **ricevuta bancaria**, el devengo de la comisión se realizará en cualquier caso a la fecha de vencimiento del recibo bancario, independientemente del cierre de la partida en virtud de la emisión de la RiBa y de la presentación al Salvo buen fin y/o acreditación de las sumas.
 
-Inoltre saranno aggiunti ulteriori giorni impostabili in **Parametri > Tesoreria > Parametri Rischio Cliente** > **N. giorni oltre la scadenza per effetti pres. al slavo buon fine / dopo incasso.**
+Además, se añadirán días adicionales que podrán establecerse en **Parámetros > Tesorería > Parámetros de Riesgo Cliente** > **N. días más allá de la fecha de vencimiento para efectos pres. al salvo buen fin / después de la cobranza.**
 
-**Estremi per la creazione liquidazione**: I campi di questo gruppo sono da gestire prima di lanciare l'esecuzione del calcolo al fine di inserire la data della liquidazione (proposta di default come data corrente), la descrizione della liquidazione ed il mese/anno di comptenza ENASARCO (se si omette quest'ultimo dato il compenso sarà creato con gli omonimi campi vuotti e sarà necessario integrare manualmente dentro ogni compenso generato).
+**Datos para la creación de liquidación (Estremi per la creazione liquidazione)**: Los campos de este grupo deben ser gestionados antes de lanzar la ejecución del cálculo para ingresar la fecha de la liquidación (propuesta por defecto como la fecha actual), la descripción de la liquidación y el mes/año de competencia ENASARCO (si se omite este último dato, el compenso se creará con los campos homónimos vacíos y será necesario integrarlos manualmente dentro de cada compenso generado).
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image04.png)
 
-Dopo aver impostato i filtri come sopra descritto, inserito gli stremi per la creazione liquidazione, selezionare dalla lista agenti i soggetti da liquidare e premere il tasto **Calcola** posto nella ribbon bar.
+Después de haber establecido los filtros como se ha descrito anteriormente, ingresado los datos para la creación de la liquidación, seleccionar de la lista de agentes los sujetos a liquidar y presionar el botón **calcola** ubicado en la barra de herramientas.
 
-a questo punto è possibile chiudere la form in commento essendo i compensi agenti già calcolati e presenti automaticamente nell'area Percipienti.
-
-
-
-
-
-
+En este punto, se puede cerrar el formulario en comentario, ya que los compensos de los agentes ya están calculados y presentes automáticamente en el área de Beneficiarios (Percipienti).

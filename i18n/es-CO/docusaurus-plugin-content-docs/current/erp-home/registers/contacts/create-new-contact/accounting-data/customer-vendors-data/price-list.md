@@ -1,39 +1,39 @@
 ---
-title: Listini
+title: listini
 sidebar_position: 6
 ---
 
-In tab offre la possibilità di collegare i *Listini di vendita* relativi al contatto per permettere la valorizzazione dei documenti.
+En pestaña se ofrece la posibilidad de vincular las *listini di vendita* relacionadas con el contacto para permitir la valorización de los documentos.
 
-**Ricerca del prezzo per priorità**: questo flag abilita la colonna delle priorità nella griglia degli articoli. Nel caso dei clienti, con questa opzione si potranno associare al cliente più listini (sia generali che personalizzati) che saranno valutati in cascata dalla priorità 1 alla priorità N;
+**Búsqueda de precio por prioridad (Ricerca del prezzo per priorità)**: este indicador habilita la columna de prioridades en la cuadrícula de artículos. En el caso de los clientes, con esta opción se podrán asociar múltiples listas al cliente (tanto generales como personalizadas) que se evaluarán en cascada desde la prioridad 1 hasta la prioridad N;
 
-**Calcolo listino per miglior prezzo**: con questa opzione vengono valutati tutti i listini applicabili ai clienti per selezionare quello che garantisce il miglior prezzo al cliente.
+**Cálculo de lista para mejor precio (Calcolo listino per miglior prezzo)**: con esta opción se evalúan todas las listas aplicables a los clientes para seleccionar aquella que garantiza el mejor precio para el cliente.
 
-**Gestione prezzi da listino acq. del forn.pref. articolo**: questo flag, visibile solo per le anagrafiche clienti, abilita la gestione dei prezzi dal listino di acquisti del fornitore preferenziale per l'articolo.
+**Gestión de precios desde lista de compra del proveedor preferente del artículo (Gestione prezzi da listino acq. del forn.pref. articolo)**: este indicador, visible solo para los registros de clientes, habilita la gestión de precios desde la lista de compras del proveedor preferencial para el artículo.
 
-**Gestione prezzi di vend. da listino fornitore:** questo flag, visibile solo per le anagrafiche fornitori, abilita la gestione dei prezzi basandosi sui prezzi del fornitore preferenziale.
+**Gestión de precios de venta desde lista del proveedor (Gestione prezzi di vend. da listino fornitore)**: este indicador, visible solo para los registros de proveedores, habilita la gestión de precios basándose en los precios del proveedor preferencial.
 
-### Listini
-La griglia offre la possibilità di inserire i listini applicabili al cliente/fornitore, secondo le priorità e le date validità. 
+### listini (Listini)
+La cuadrícula ofrece la posibilidad de ingresar las listas aplicables al cliente/proveedor, según las prioridades y las fechas de validez.
 
-Per i clienti è disponibile la scelta dei listini generali, mentre per i fornitori è presente solo la lista di listini fornitore personalizzati.
+Para los clientes, está disponible la opción de listas generales, mientras que para los proveedores solo está presente la lista de listas de proveedor personalizadas.
 
-La *data validità* sarà utilizzata per individuare i listini che hanno, a loro volta, data inizio validità superiore a questa: dato che possono esserci più listini dello stesso tipo con date validità differenti, sarà individuato il prezzo dell'articolo dal listino più recente (anche senza andare a impostare una data di fine validità del listino stesso). Quindi tutte le volte che si andrà a creare un nuovo listino aggiornato per quel cliente, non servirà andare a sostituirlo anche in anagrafica, perché grazie alla data validità, verrà considerato direttamente il più recente.
+La *data validità* se utilizará para identificar las listas que, a su vez, tienen fecha de inicio de validez superior a esta: dado que puede haber múltiples listas del mismo tipo con fechas de validez diferentes, se identificará el precio del artículo de la lista más reciente (incluso sin tener que establecer una fecha de finalización de validez de la lista misma). Por lo tanto, cada vez que se cree una nueva lista actualizada para ese cliente, no será necesario reemplazarla también en el registro, ya que gracias a la fecha de validez, se considerará directamente la más reciente.
 
-:::note[Osservazione]
-Per poter collegare un listino al cliente/fornitore, bisognerà prima creare il listino generale o personalizzato per cliente tramite la procedura di *Creazione listini*, e una volta creato entrare nell'*Anagrafica del contatto > tab Listini* e selezionare il listino all'interno della griglia *Listini*.
+:::note[Observación] 
+Para poder vincular una lista al cliente/proveedor, primero se debe crear la lista general o personalizada para el cliente a través del procedimiento de *Creación de listas (Creazione listini)*, y una vez creada, ingresar en la *Ficha del contacto > pestaña Listas (tab Listini)* y seleccionar la lista dentro de la cuadrícula *listini*. 
 :::
 
-### Sconti di listino
+### Descuentos de lista (Sconti di listino)
 
-Per ogni listino cliente/fornitore è possibile associare, sulla destra, una struttura di scontistica aggiuntiva, specifica per il soggetto in uso. Ad esempio, il cliente1 potrebbe avere il listino generale (che già prevede sconto 10% su alcuni articoli) con in più uno sconto cassa 2% (che sarà applicato in più, quindi ci saranno articoli con 10%+2% e altri con solo 2%) e un cliente2 con listino generale + 3% (che avrà quindi 10%+3% e 3%).
+Para cada lista de cliente/proveedor es posible asociar, a la derecha, una estructura de descuentos adicional, específica para el sujeto en uso. Por ejemplo, el cliente1 podría tener la lista general (que ya prevé un descuento del 10% en algunos artículos) además de un descuento de caja del 2% (que se aplicará adicionalmente, por lo tanto, habrá artículos con 10%+2% y otros con solo 2%) y un cliente2 con lista general + 3% (que tendrá por lo tanto 10%+3% y 3%).
 
-### Listini di vendita con aggiornamento automatico da ordini fornitori
+### Listas de venta con actualización automática desde pedidos de proveedores
 
-Collegato al listino fornitore c'è la possibilità di associare una lista di listini di vendita che si aggiornano automaticamente al variare del listino fornitore stesso, secondo un criterio di incremento (percentuale) e di arrotondamento.
+Vinculada a la lista del proveedor está la posibilidad de asociar una lista de listas de venta que se actualizan automáticamente al variar la lista del proveedor mismo, según un criterio de incremento (porcentaje) y de redondeo.
 
-*Pulsanti specifici*:
-> **Cancella listini**: per cancellare i listini selezionati.   
-> **Cancella sconti per listino**: per cancellare gli sconti selezionati del listino.  
+*Botones específicos*:
+> **cancella listini**: para eliminar las listas seleccionadas.  
+> **cancella sconti per listino**: para eliminar los descuentos seleccionados de la lista.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

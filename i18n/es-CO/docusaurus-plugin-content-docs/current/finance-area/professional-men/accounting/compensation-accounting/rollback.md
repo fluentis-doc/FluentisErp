@@ -3,20 +3,12 @@ title: Rollback
 sidebar_position: 3
 ---
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Desde la pestaña anterior es posible proceder a la anulación de las contabilizaciones realizadas.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro iva non stampato, liquidazione periodica non stampata, chiusura conti non eseguita). Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+La anulación solo será posible si el período aún se puede modificar (impresión del libro diario, registro de IVA no impreso, liquidación periódica no impresa, cierre de cuentas no ejecutado). Un doble clic en la sección de las registraciones permitirá visualizar la registración contable relacionada.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Ricerca la lista delle creazioni eseguite. |
-| Rollback contabilizzazione | Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata (selezionata dalla griglia 'Contabilizzazione'), con tutti i compensi associati. |
-| Rollback registrazioni | Il pulsante esegue il ripristino solamente della registrazione contabile selezionata dalla griglia 'Registrazione contabile'. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Busca la lista de las creaciones realizadas. |
+| Rollback de contabilización (Rollback contabilizzazione) | Con este botón se cancelará toda la contabilización realizada (seleccionada desde la cuadrícula 'Contabilizzazione'), con todas las compensaciones asociadas. |
+| Rollback de registraciones (Rollback registrazioni) | El botón restaura únicamente la registración contable seleccionada desde la cuadrícula 'Registrazione contabile'. |

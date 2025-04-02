@@ -1,6 +1,6 @@
 ---
-title: FAQ
+title: FAQ (FAQ)
 sidebar_position: 1
 ---
 
-Lo scopo di questa sezione è documentare situazioni che possono aiutare gli utenti a trovare da soli la soluzione ai problemi.
+El objetivo de esta sección es documentar situaciones que pueden ayudar a los usuarios a encontrar por sí mismos la solución a los problemas.

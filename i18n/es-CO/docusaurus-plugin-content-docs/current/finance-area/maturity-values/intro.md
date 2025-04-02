@@ -1,45 +1,42 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
+El módulo de partidas abiertas en Fluentis ERP gestiona las posiciones deudoras y acreedoras, facilitando el seguimiento de pagos y cobros. Accesible a través de Administración > Partidas > Partidas, permite crear, modificar y agrupar partidas manualmente o automáticamente a partir de los asientos contables.  
+**Funciones Principales**
 
-Il modulo delle partite aperte in Fluentis ERP gestisce le posizioni debitorie e creditorie, facilitando il monitoraggio dei pagamenti e degli incassi. Accessibile tramite Amministrazione > Partite > Partite, permette di creare, modificare e raggruppare partite manualmente o automaticamente dalle scritture contabili.
-Funzionalità Principali
+- **gestione partite**: Creación, modificación y bloqueo/desbloqueo de partidas con seguimiento automático de fecha y usuario.  
+- **Conexión con el Flujo de Caja (Collegamento con il Cash Flow)**: Asociación automática a subcuentas bancarias y uso de la fecha prevista para previsiones financieras precisas.  
+- **Agrupación y División (Accorpamento e Suddivisione)**: Posibilidad de agrupar o dividir partidas para una gestión simplificada.  
+- **Conexión Contable (Collegamento Contabile)**: Conexión de las partidas creadas manualmente con los asientos contables, manteniendo el alineamiento entre datos.  
 
-    Gestione Partite: Creazione, modifica e blocco/sblocco delle partite con tracciamento automatico di data e utente.
-    Collegamento con il Cash Flow: Associazione automatica a sottoconti bancari e utilizzo della data prevista per previsioni finanziarie accurate.
-    Accorpamento e Suddivisione: Possibilità di raggruppare o suddividere partite per una gestione semplificata.
-    Collegamento Contabile: Collegamento delle partite create manualmente con le scritture contabili, mantenendo allineamento tra dati.
+**Impresiones Disponibles (Stampe Disponibili)**
 
-**Stampe Disponibili**
+- **Extracto de Cuenta de Partidas Abiertas (Estratto Conto Partite Aperte)**: Visualiza el estado de las partidas abiertas para cada cliente o proveedor.  
+- **Informe de Vencimiento (Report di Aging)**: Divide las partidas en vencidas y a vencer para evaluar los flujos.  
+- **Calendario de Clientes/Proveedores (Scadenziario Clienti/Fornitori)**: Monitorea los vencimientos en función de diferentes parámetros (fecha, estado, tipo de documento).  
+- **lettere di sollecito**: Automatiza el envío de recordatorios para las partidas vencidas.  
+- **Diferencia entre Saldo Contable y Partidas (Differenza Saldo Contabile e Partite)**: Verifica posibles discrepancias entre saldo contable y partidas.  
 
-    Estratto Conto Partite Aperte: Visualizza lo stato delle partite aperte per ogni cliente o fornitore.
-    Report di Aging: Suddivide le partite in scadute e a scadere per valutare i flussi.
-    Scadenziario Clienti/Fornitori: Monitora le scadenze in base a diversi parametri (data, stato, tipo documento).
-    Lettere di Sollecito: Automatizza l’invio di solleciti per le partite scadute.
-    Differenza Saldo Contabile e Partite: Verifica eventuali discrepanze tra saldo contabile e partitario.
+**Procedimientos Principales (Procedure Principali)**
 
-**Procedure Principali**
+- **compensazione partite**: Balanceo de partidas entre clientes y proveedores, con cierre de las posiciones abiertas.  
+- **Cálculo de Intereses de Mora (Calcolo Interessi di Mora)**: Gestión automática de los intereses por retrasos en los pagos.  
+- **creazione automatica solleciti**: Generación masiva de recordatorios para las partidas vencidas.  
+- **Conexión de Asientos Contables (Collegamento Registrazioni Contabili)**: Asociación de las partidas a asientos contables para un control completo.  
+- **Gestión de Pagos Vinculados (Gestione Pagamenti Collegati)**: Creación de nuevas partidas a partir de pagos ya existentes.  
 
-    Compensazione Partite: Bilanciamento delle partite tra clienti e fornitori, con chiusura delle posizioni aperte.
-    Calcolo Interessi di Mora: Gestione automatica degli interessi per i ritardi nei pagamenti.
-    Creazione Automatica Solleciti: Generazione massiva di solleciti per le partite scadute.
-    Collegamento Registrazioni Contabili: Associazione delle partite a scritture contabili per un controllo completo.
-    Gestione Pagamenti Collegati: Creazione di nuove partite a partire dai pagamenti già esistenti.
+Conexiones: el módulo recibe los datos del módulo administrativo mediante la apertura automática de las partidas, según las condiciones de pago, en el momento del registro contable o de la contabilización automática de las facturas de compra o venta.  
 
+**Tablas necesarias para utilizar el módulo (Tabelle necessarie per utilizzare il modulo):**
+- Numeración de Partidas (Numerazione Partite)  
+- Posición de partidas (Posizione partite)  
+- Tipos de recordatorio (Tipi sollecito)  
+- Tipo de compensación (Tipo compensazione)  
+- Tipos de pago (Tipi pagamento)  
+- Soluciones de pago (Soluzioni di pagamento)  
 
-Collegamenti: il modulo riceve i dati dal modulo amministrativo tramite l'apertura automatica delle partite, in base alle condizioni di pagamento, in fase di registrazione contabile oppure di contabilizzazione automatica delle fatture di acquisto o vendita.
+**Conclusiones (Conclusioni)**
 
-
-**Tabelle necessarie per utilizzare il modulo:**
-- Numerazione Partite
-- Posizione partite
-- Tipi sollecito
-- Tipo compensazione
-- Tipi pagamento
-- Soluzioni di pagamento
-
-**Conclusioni**
-
-Il modulo fornisce strumenti completi per la gestione e l’automazione delle partite aperte, con funzionalità avanzate per il monitoraggio delle scadenze e il recupero crediti, migliorando il controllo della liquidità aziendale.
+El módulo proporciona herramientas completas para la gestión y automatización de las partidas abiertas, con funcionalidades avanzadas para el seguimiento de vencimientos y la recuperación de créditos, mejorando el control de la liquidez empresarial.

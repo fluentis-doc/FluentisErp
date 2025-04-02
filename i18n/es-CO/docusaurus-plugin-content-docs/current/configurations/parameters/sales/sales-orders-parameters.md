@@ -1,84 +1,83 @@
 ---
-title: Parametri ordini clienti
+title: parametri ordini clienti
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está interesada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, refiérase a la lista de verificación de la página enlazada.
 :::
 
-I parametri degli ordini clienti permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra relativa a questi parametri si compone di 4 diversi tab: Generale, Evasione, Scarico e Analitica.
+Los parámetros de los pedidos de clientes permiten la configuración básica para gestionarlos correctamente y de acuerdo con las solicitudes específicas de cada empresa. La ventana relacionada con estos parámetros consta de 4 pestañas diferentes: General (Generale), Cumplimiento (Evasione), Descarga (Scarico) y Analítica (Analitica).
 
-### Generale
+### General (Generale)
 
-**Gestione doppia unità misura**: se attivo, nelle righe ordine verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.      
+**gestione doppia unità misura**: si está activo, en las líneas del pedido se visualizarán las dos columnas UM Alternativa y Cantidad Alternativa, por lo que será posible gestionar la doble unidad de medida, considerando siempre que es la unidad de medida principal sobre la cual se realizan los controles para el cumplimiento.  
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli dell’ordine l'unità di misura alternativa impostata nell'anagrafica articolo, nell’apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.      
+**Propuesta automática UM alternativa (Proposta automatica UM alternativa)**: este indicador se vuelve editable solo si se ha activado el indicador de gestión de la doble unidad de medida y permite reflejar en la pestaña de artículos del pedido la unidad de medida alternativa establecida en el registro del artículo, en la columna correspondiente 'UM alternativa'; si no está activo, la unidad de medida no se propone.  
 
-**Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
+**Control de Disponibilidad (Controllo Disponibilità)**: este indicador y los otros relacionados con el control, visualización y obligatoriedad con la consideración por área no están gestionados en la versión actual.  
 
-**Riferimento Ordine**: se questo flag viene impostato, nel progetto creato da ordine verrà inserito il Riferimento all’ordine nel titolo del progetto; la composizione nota deve essere specificata nel campo *Descrizione* secondo i parametri descritti nella label.     
+**riferimento ordine**: si este indicador se activa, en el proyecto creado a partir del pedido se inserta la referencia al pedido en el título del proyecto; la composición de la nota debe especificarse en el campo *Descripción* según los parámetros descritos en la etiqueta.  
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di un ordine, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+**ricerca prezzi articoli in tutti i listini predefiniti**: al buscar el precio y los descuentos para un artículo dentro de un pedido, el sistema sigue reglas basadas en las configuraciones establecidas en el registro del cliente, en la sección *Listinos*. Si se activa la opción 'predeterminado' para un determinado tipo de listado, la búsqueda de precios y descuentos se centrará solo en ese tipo de listado específico; si el indicador "predeterminado" no está activo, el sistema ampliará la búsqueda a todos los tipos de listados presentes, siguiendo un orden de prioridad. En práctica, con el indicador 'predeterminado' activo, el sistema buscará primero un listado válido para el tipo predeterminado; si no encuentra resultados, pasará a comprobar los otros tipos de listados en orden de prioridad. Sin embargo, si en el registro del cliente no hay ningún tipo de listado configurado como 'predeterminado' y solo hay prioridades, este parámetro no influirá en la búsqueda, incluso si está activo.  
 
-**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
+**proponi provvigione per gli articoli omaggio**: con este indicador se proponen comisiones para los agentes también para las líneas de artículos de tipo regalo, como se hace para las líneas de tipo Artículo Codificado.  
 
-**Consentire sconti per gli articoli omaggio**: con questo flag verranno inseriti gli sconti sull'importo di riga anche per le righe articolo di tipo omaggio.     
+**consentire sconti per gli articoli omaggio**: con este indicador se aplicarán descuentos en el importe de la línea también para las líneas de artículos de tipo regalo.  
 
-**Controlla disponibilità**: se attivato, il sistema va a controllare la disponibilità dell'articolo.       
+**controlla disponibilità**: si está activado, el sistema verifica la disponibilidad del artículo.  
 
-**Obbligo rapporto colli articolo con quantità**: se settato il flag costringe l’utente ad inserire una quantità corrispondente o multipla del numero colli definito nel tab *Pesi/Dimensioni* dell’anagrafica articoli; se la quantità non è il numero colli o un suo multiplo appare il messaggio: “Articolo non vendibile in quantità inferiore o non multiplo di .      
+**obbligo rapporto colli articolo con quantità**: si se activa el indicador, obliga al usuario a ingresar una cantidad correspondiente o múltipla del número de bultos definido en la pestaña *Pesos/Dimensiones* del registro de artículos; si la cantidad no coincide con el número de bultos o un múltiplo de este, aparece el mensaje: “Artículo no vendible en cantidad inferior o no múltiplo de ...”.  
 
-**Proponi lotto economico**: se il flag è settato viene proposto come quantità il lotto economico e se la quantità è inferiore al lotto economico viene dato il messaggio “La quantità non può essere inferiore a …”.       
+**proponi lotto economico**: si el indicador está activado, se propone como cantidad el lote económico y si la cantidad es inferior al lote económico se muestra el mensaje “La cantidad no puede ser inferior a ...”.  
 
-**Verifica articoli in esaurimento**: se settato, questo flag farà apparire un pop-up di avviso nel caso in cui vengano inseriti in ordine degli articoli che hanno settato in anagrafica il flag in Esaurimento e la data in cui l’articolo va in esaurimento; questo controllo evita di vendere articoli che non verranno più prodotti o riassortiti.      
+**verifica articoli in esaurimento**: si se activa, este indicador hará aparecer un pop-up de aviso en caso de que se inserten en el pedido artículos que tengan establecido en su registro el indicador de Agotamiento y la fecha en la que el artículo se agotará; este control evita vender artículos que no se producirán o reabastecerán.  
 
-**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di ordine quale tipo di sconto utilizzare.     
+**[Habilitar Widget de descuentos simplificado (Abilita Widget sconti semplificato)](/docs/sales/sales-flow/discount-widget)**: al activar este indicador en la sección Artículos se mostrarán dos nuevas columnas: *Descuentos Artículo* y *Descuentos Finales Artículo*. La columna *Descuentos Artículo* es editable y muestra los descuentos aplicados automáticamente según las configuraciones del cliente, el artículo, el listado o la categoría de descuento. El usuario tiene la posibilidad de ingresar, modificar o eliminar descuentos directamente en esta columna. Para utilizar este widget es necesario que, además de activar el indicador, se especifique en el tipo de pedido qué tipo de descuento utilizar.  
 
-**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli dell'ordine, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
+**uso articolo cliente**: si se activa, este indicador insertará, en la cuadrícula de artículos del pedido, las columnas para el Código y la Descripción del cliente ingresados en el registro del artículo, pestaña Cliente.  
 
-**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli dell'ordine, la colonna per riportare il barcode dell'articolo.     
+**uso barcode**: si se activa, este indicador insertará, en la cuadrícula de artículos del pedido, la columna para reflejar el código de barras del artículo.  
 
-**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
+**codice operatore obbligatorio**: este indicador hace que sea obligatorio completar el campo *Operador* en el encabezado.  
 
-**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+**blocca inserimento documento in date festive da calendario di fabbrica**: si está activo, el sistema no permite la inserción de la oferta en fechas festivas (primero se verifica el Calendario de Fábrica de la empresa y luego el Calendario de capacidades productivas); si no está activo, el sistema no lleva a cabo ningún control y permite insertar el documento.  
 
-**Esplodi distinta base**: se attivo, nel momento dell'inserimento di un articolo questo verrà sostituito dal primo livello della sua distinta base, se esiste; quindi invece dell'articolo “prodotto Finito” l'ordine sarà popolato con la distinta base di questo articolo.        
+**esplodi distinta base**: si se activa, en el momento de la inserción de un artículo, este será reemplazado por el primer nivel de su lista de materiales, si existe; por lo tanto, en lugar del artículo "Producto Terminado", el pedido se poblará con la lista de materiales de este artículo.  
 
-**Proponi Dati commerciali per distinta base esplosa manualmente**: se attivo, questo flag indica che per i componenti di primo livello inseriti tramite il flag “Esplodi distinta base” verranno proposti prezzi di listino, sconti e provvigioni come per gli articoli codificati.         
+**Proponer Datos comerciales para la lista de materiales explotada manualmente (Proponi Dati commerciali per distinta base esplosa manualmente)**: si está activo, este indicador indica que para los componentes de primer nivel ingresados a través del indicador "Explotar lista de materiales", se propondrán precios de lista, descuentos y comisiones como para los artículos codificados.  
 
-**Gestione Versione Distinta Base**: se attivo, il flag abilita nel tab articoli la colonna Versione distinta base pe poter scegliere una versione diversa da quella di default automaticamente utiizzata.        
+**gestione versione distinta base**: si está activo, el indicador habilita en la pestaña de artículos la columna Versión de lista de materiales para poder elegir una versión diferente de la que se utiliza automáticamente como predeterminada.  
 
-**Non raggruppare le righe quando inserisci da distinta base**: se attivo, il flag permette di inserire i componenti del primo livello di distinta in righe diverse anche se hanno lo stesso codice materiale.        
+**non raggruppare le righe quando inserisci da distinta base**: si está activo, el indicador permite insertar los componentes del primer nivel de la lista en diferentes líneas incluso si tienen el mismo código material.
 
-### Evasione
+### Cumplimiento (Evasione)
 
-In questo tab sono presenti i seguenti campi:       
+En esta pestaña están presentes los siguientes campos:  
 
-**Pagamento**: specifica il valore usato per il pagamento dell'ordine cliente nel caso dell'evasione multipla dei progetti in Ordine: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**pagamento**: especifica el valor utilizado para el pago del pedido del cliente en caso de cumplimiento múltiple de los proyectos en Pedido: *primo ordine*, *anagrafica* u *selezione manuale*.  
 
-**Destinatario**: specifica il valore usato per il destinatario dell'ordine cliente nel caso dell'evasione multipla dei progetti in Ordine: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**destinatario**: especifica el valor utilizado para el destinatario del pedido del cliente en caso de cumplimiento múltiple de los proyectos en Pedido: *primo ordine*, *anagrafica* o *selezione manuale*.  
 
-**Raggruppamento per tipo e soluzione pagamento**: Specifica il fatto che gli ordini clienti verranno raggruppati per tipo e soluzione pagamento all'evasione dalla form di ricerca Ordini con i ribbon Button  Evasione DDT o Evasione fatture.       
+**Agrupamiento por tipo y solución de pago (Raggruppamento per tipo e soluzione pagamento)**: especifica si los pedidos de los clientes serán agrupados por tipo y solución de pago al momento del cumplimiento desde el formulario de búsqueda de Pedidos con los botones de ribbon Cumplimiento DDT o Cumplimiento de facturas.  
 
-**Raggruppamento per destinazione**: Specifica il fatto che gli ordini clienti verranno raggruppati per il destinatario e la destinazione all'evasione dalla form di ricerca Ordini con i ribbon Button  Evasione DDT o Evasione fatture.       
+**raggruppamento per destinazione**: especifica si los pedidos de los clientes serán agrupados por destinatario y destino al momento del cumplimiento desde el formulario de búsqueda de Pedidos con los botones de ribbon Cumplimiento DDT o Cumplimiento de facturas.  
 
-**Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ordini vendita.      
+**Visualización en cuadrícula de cumplimiento (Visualizzazione griglia evasione)**: si está activo, el indicador habilita el modo cuadrícula en el formulario de cumplimiento de pedidos de venta.  
 
-**Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ordini vendita.
+**Visualización en árbol de cumplimiento (Visualizzazione tree evasione)**: si está activo, el indicador habilita el modo árbol en el formulario de cumplimiento de pedidos de venta.
 
-### Scarico
+### Descarga (Scarico)
 
-**Priorità parametri inseriti per ogni riga ordine**: se attivo il magazzino e la causale di scarico vengono letti dalle righe dell'ordine mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (*Magazzino* e *Causale di magazzino*).
+**priorità parametri inseriti per ogni riga ordine**: si está activo, el almacén y el motivo de descarga se leen desde las líneas del pedido; si no se activa, se utilizarán el almacén y el motivo ingresados en los campos siguientes (*magazzino* y *Motivo de almacén (Causale di magazzino)*).
 
-### Analitica
+### Analítica (Analitica)
 
-Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga ordine.      
-È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).     
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente.     
-Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover).      
-Qualora non fosse presente nel *Tipo fatturato* il sistema lo cercherà in *Anagrafica cliente*. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.       
-Il flag **Valuta la priorità di ogni dimensione** fa in modo che nei documenti i CDC/CDP vengano raggruppati per dimensione, nel tab Analitica. 
-
+Esta pestaña especifica con qué prioridad se recupera el Centro de Costos (CDC) o el Centro de Beneficios (CDP) en la línea del pedido.  
+Es posible modificar las prioridades utilizando los botones **sposta su**![](/img/neutral/common/move-up.png) y **sposta giù**![](/img/neutral/common/delete-cc.png).  
+*Valores predeterminados (Valori di default)*: el CDC o CDP se recupera del tipo de facturación si está presente.  
+Para más detalles, consulte la tabla [Tipo de facturación (Tipo Fatturato)](/docs/configurations/tables/sales/sales-turnover).  
+Si no está presente en el *tipo fatturato*, el sistema lo buscará en el *anagrafica cliente*. Si tampoco está allí, se buscará en el registro del artículo y posteriormente a nivel de almacén.  
+El indicador **Evaluar la prioridad de cada dimensión (Valuta la priorità di ogni dimensione)** hace que en los documentos los CDC/CDP se agrupen por dimensión en la pestaña Analítica.

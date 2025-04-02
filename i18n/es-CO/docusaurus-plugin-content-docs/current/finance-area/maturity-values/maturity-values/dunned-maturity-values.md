@@ -1,44 +1,29 @@
 ---
-title: Partite sollecitate
+title: partite sollecitate
 sidebar_position: 2
 ---
 
-Ricerca partite sollecitate 
+Búsqueda de partidas solicitadas (Ricerca partite sollecitate)
 
- 
+La procedimiento de búsqueda de partidas solicitadas permite al usuario buscar los recordatorios ingresados previamente con el objetivo de visualizarlos, modificarlos y, eventualmente, eliminarlos.
 
-La procedura di ricerca delle partite sollecitate permette all'utente di ricercare i solleciti inseriti precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei solleciti inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo sollecito. Normalmente il sollecito viene creato con la procedura di creazione automatica, un inserimento di tipo manuale risulta pertanto molto raro e meno efficiente. |
-| Modifica | Richiama la procedura per modificare un sollecito precedentemente inserito. |
-| Visualizza | Richiama la procedura per visualizzare un sollecito precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un sollecito precedentemente inserito. |
+| Búsqueda (Ricerca) | Botón para aplicar filtros de búsqueda a toda la base de datos de recordatorios ingresados. |
+| Nuevo (Nuovo) | Llama al procedimiento para ingresar un nuevo recordatorio. Normalmente, el recordatorio se crea con el procedimiento de creación automática, por lo que una entrada manual resulta muy rara y menos eficiente. |
+| Modificar (Modifica) | Llama al procedimiento para modificar un recordatorio previamente ingresado. |
+| Visualizar (Visualizza) | Llama al procedimiento para visualizar un recordatorio previamente ingresado. |
+| Eliminar (Cancella) | Ejecuta el procedimiento para eliminar un recordatorio previamente ingresado. |
 
-**Per le informazioni, relative alle Stampe  e Procedure che seguono, si rinvia alle rispettive voci di Menù**
+**Para información relacionada con las Impresiones (Stampe) y Procedimientos (Procedure) siguientes, se remite a las respectivas opciones del Menú (voci di Menù)**
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Stampa interessi | Richiama la procedura per stampare gli interessi sui ritardi di pagamento. |
-| Stampa lettere di sollecito | Richiama la procedura per stampare le lettere di sollecito. |
+| Imprimir intereses (Stampa interessi) | Llama al procedimiento para imprimir los intereses por retrasos en los pagos. |
+| Imprimir cartas de recordatorio (Stampa lettere di sollecito) | Llama al procedimiento para imprimir las cartas de recordatorio. |
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-|  [Calcolo interessi](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation)  | Richiama la procedura per gestire il calcolo degli interessi sui ritardi di pagamento. |
-|  [Creazione automatica solleciti](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue)  | Richiama la procedura per effettuare la creazione automatica solleciti.. |
-|  [Generazione solleciti](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Richiama la procedura per effettuare la creazione manuale solleciti. |
-
-
-
-
-
-
-
+|  [Cálculo de intereses (Calcolo interessi)](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation)  | Llama al procedimiento para gestionar el cálculo de intereses por retrasos en los pagos. |
+|  [Creación automática de recordatorios (Creazione automatica solleciti)](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue)  | Llama al procedimiento para llevar a cabo la creación automática de recordatorios. |
+|  [Generación de recordatorios (Generazione solleciti)](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Llama al procedimiento para realizar la creación manual de recordatorios. |

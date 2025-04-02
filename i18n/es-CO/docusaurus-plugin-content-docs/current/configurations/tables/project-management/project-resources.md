@@ -1,24 +1,24 @@
 ---
-title: Risorse Progetti
+title: risorse progetti
 sidebar_position: 10
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Risorse Progetti** e contiene alcuni dati di default delle risorse. L’area di filtro permette di ricercare i dati in maniera più mirata.
+Esta tabla es accesible desde **Tablas > Gestión de Proyectos > risorse progetti (Tabelle > Gestione Progetti > Risorse Progetti)** y contiene algunos datos predeterminados de los recursos. El área de filtro permite buscar los datos de manera más específica.
 
 ![](/img/it-it/configurations/tables/projects/resources.png)
 
-Una volta inseriti i filtri, con il tasto ![](/img/neutral/common/search.png) Ricerca compariranno i risultati in griglia. I dati sono:
+Una vez ingresados los filtros, con el botón ![](/img/neutral/common/search.png) Buscar (Ricerca) aparecerán los resultados en la cuadrícula. Los datos son:
 
-**Codice/Descrizione**: contiene il codice e la descrizione della risorsa;
+**codice/descrizione**: contiene el código y la descripción del recurso;  
 
-**Tipo risorsa**: contiene il [Tipo risorsa](/docs/configurations/tables/project-management/resource-type);
+**tipo risorsa**: contiene el [Tipo de recurso (Tipo risorsa)](/docs/configurations/tables/project-management/resource-type);  
 
-**Operatore**: contiene l’Operatore;
+**operatore**: contiene el Operador;  
 
-**Cognome/Nome**: contiene cognome e nome della risorsa;
+**cognome/nome**: contiene el apellido y el nombre del recurso;  
 
-**Conto/Sottoconto**: contiene gli eventuali conto e sottoconto associati alla risorsa;
+**conto/sottoconto**: contiene las posibles cuenta y subcuenta asociadas al recurso;  
 
-**Turno principale**: contiene il [turno di lavoro] solito della risorsa, con la relativa **Descrizione**;
+**turno principale**: contiene el [turno de trabajo (turno di lavoro)] habitual del recurso, con la respectiva **descrizione**;  
 
-Sono presenti ulteriori dati liberamente modificabili, come **Centri di costo**, **Ore mensili disponibili**, **Società di riferimento**, ecc.
+Hay datos adicionales que se pueden modificar libremente, como **centri di costo**, **ore mensili disponibili**, **società di riferimento**, etc.

@@ -1,30 +1,30 @@
 ---
-title: Categorie rischio D.P.I.
+title: categorie rischio d.p.i.
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > D.P.I. > Categorie rischio D.P.I.**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Empleados (Dipendenti) > D.P.I. > categorie rischio d.p.i. (Categorie rischio D.P.I.)**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Categorie rischio D.P.I.* che sono utilizzate per categorizzare le fasce di rischio dei *D.P.I.*.   
-Un esempio di utilizzo lo troviamo nella gestione **D.P.I.**.
+:::important ¿Para qué sirve? (A cosa serve)  
+En esta tabla es posible codificar las *categorie rischio d.p.i.* que se utilizan para categorizar las franjas de riesgo de los *D.P.I.*.  
+Un ejemplo de uso lo encontramos en la gestión **D.P.I.**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-#### Ricerca Categorie rischio D.P.I. 
+#### Búsqueda de categorie rischio d.p.i. (Ricerca Categorie rischio D.P.I.)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultado. Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-#### Inserimento Categorie rischio D.P.I. 
+#### Inserción de categorie rischio d.p.i. (Inserimento Categorie rischio D.P.I.)
 
-Per poter inserire nuove *Categorie rischio D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *categorie rischio d.p.i.*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici 
+#### Campos específicos (Campi specifici)
     
-> **Codice**: è il codice della *Categoria rischio D.P.I.*.   
-> **Descrizione**: è la descrizione della *Categoria rischio D.P.I.*.   
-> **Note**: annotazioni libere.
+> **codice**: es el código de la *Categoría de riesgo D.P.I.*.  
+> **descrizione**: es la descripción de la *Categoría de riesgo D.P.I.*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

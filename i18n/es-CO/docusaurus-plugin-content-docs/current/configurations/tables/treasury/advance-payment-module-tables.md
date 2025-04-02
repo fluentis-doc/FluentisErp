@@ -1,37 +1,31 @@
 ---
-title: Tipi anticipo
+title: tipi anticipo
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-In questa tabella sono definite le possibili tipologie di [**distinta di anticipo**](/docs/treasury/advance/advances-collections) fatture ed i relativi parametri.
+En esta tabla se definen los posibles tipos de [**liquidación de anticipo (distinta di anticipo)**](/docs/treasury/advance/advances-collections) de facturas y sus parámetros correspondientes.
 
 
-**Codice / Descrizione:** Liberamente assegnabili dall'utente per qualificare la tipologia.
+**Código / Descripción (Codice / Descrizione):** Libremente asignables por el usuario para calificar el tipo.
 
-**Tipo calcolo (codice / descrizione):** le opzioni possibili sono Imponibile / Tot: Documento. Indica se la percentuale anticipata dalla banca debba essere calcolata con riferimento al totale fattura oppure al solo imponibile.
+**Tipo de cálculo (Tipo calcolo) (código / descripción):** Las opciones posibles son Imponible / Total: Documento. Indica si el porcentaje anticipado por el banco debe calcularse con referencia al total de la factura o solo al imponible.
 
-**Percentuale fatture anticipata:** inserire qui il valore della percentuale della fattura che sarà anticipata dalla banca.
+**Porcentaje de facturas anticipadas (Percentuale fatture anticipata):** Ingrese aquí el valor del porcentaje de la factura que será anticipado por el banco.
 
-**Tipo Acquisizione:** le possibili operazioni sono Scadenze / Fatture. Questa opzione controlla soltanto il modo in cui sono visualizzati i dati nella maschera di ricerca per la creazione della nuova distinta, ovvero se sarà selezionabile l'intera fattura oppure le singole scadenze della fattura. In ogni caso dal punto di vista della base dati sono comunque gestite le scadenze (tutte) anche nel caso della modalità Fatture.
+**Tipo de Adquisición (Tipo Acquisizione):** Las posibles operaciones son Vencimientos / Facturas. Esta opción solo controla la forma en que se visualizan los datos en la máscara de búsqueda para la creación de la nueva liquidación, es decir, si se podrá seleccionar toda la factura o solo los vencimientos individuales de la factura. En cualquier caso, desde el punto de vista de la base de datos, los vencimientos (todos) también se gestionan en el caso del modo Facturas.
 
-**Numerazione:** è necessario impostare una numerazione dalla relativa tabella dei numeratori per questo tipo di documento.
+**Numeración (Numerazione):** Es necesario establecer una numeración desde la tabla de numeradores correspondiente para este tipo de documento.
 
-**Banca C/C:** (conto / sottoconto descrizione): inserire qui il sottoconto che sarà utilizzato nelle registrazioni contabili relativo al conto corrente bancario.
+**Banco C/C (Banca C/C):** (cuenta / subcuenta descripción): Ingrese aquí la subcuenta que se utilizará en los registros contables relativos a la cuenta corriente bancaria.
 
-**Conto bancario anticipi:** inserire il conto d'appoggio utilizzato per contabilizzare l'anticipo bancario.
+**Cuenta bancaria de anticipos (Conto bancario anticipi):** Ingrese la cuenta de apoyo utilizada para contabilizar el anticipo bancario.
 
-**Conto interessi passivi:** inserire il conto da utilizzare per la contabilizzazione interessi
+**Cuenta de intereses pasivos (Conto interessi passivi):** Ingrese la cuenta que se utilizará para la contabilización de intereses.
 
-**Conto commissioni:** inserire il conto da utilizzare per la contabilizzazione commissioni bancarie.
-
-
-
-
-
-
+**Cuenta de comisiones (Conto commissioni):** Ingrese la cuenta que se utilizará para la contabilización de comisiones bancarias.

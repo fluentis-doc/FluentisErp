@@ -1,96 +1,92 @@
 ---
-title: La form principale di Fluentis
+title: El formulario principal de Fluentis (La form principale di Fluentis)
 sidebar_position: 2
 ---
 
-La form principale di **Fluentis** è composta da più zone con funzionalità diverse:
+El formulario principal de **Fluentis** está compuesto por varias zonas con funcionalidades diferentes:
 
-## Sezione superiore 
+## Sección superior 
 
-La toolbar contiene i combo-box per selezionare la **Società** e/o la **Divisione** che vengono utilizzate per l'inserimento dei dati e l'editore per facilitare la ricerca delle form all'interno dell'applicazione
+La barra de herramientas contiene los combo-box para seleccionar la **società** y/o la **divisione** que se utilizan para la entrada de datos y el editor para facilitar la búsqueda de formularios dentro de la aplicación.
 
-Subito sotto ci sono diversi tab:
+Justo debajo hay varias pestañas:
 
-### Primo tab
+### Primera pestaña
 
-Contiene Informazioni sulle **Versioni**, permette di **Stampare**, contiene informazioni dettagliate sulla **Licenza**, permette di **Chiudere** il programma.
+Contiene información sobre las **versioni**, permite **Imprimir (Stampare)**, contiene información detallada sobre la **licenza** y permite **Cerrar (Chiudere)** el programa.
 
-### Tab Home
+### Pestaña Inicio 
 
-Il tab contiene:
+La pestaña contiene:
 
-- il combo-box per selezionare la **Lingua** desiderata,
-    
-- il combo-box per scegliere il **Menù** di Fluentis,
+- el combo-box para seleccionar el **lingua** deseado,
 
-:::note Menu    
-In base al menu attivato, viene completata la ribbon bar del tab **Home** con le informazioni trasversali a tutta l'applicazione e si aggiungono i tab che corrispondono alle aree di Fluentis.
+- el combo-box para elegir el **Menú (Menù)** de Fluentis,
+
+:::note Menú    
+Según el menú activado, la barra de cinta de la pestaña **home** se completará con la información transversal a toda la aplicación y se agregarán las pestañas que corresponden a las áreas de Fluentis.
 :::
-    
-- i **Temi** che l'utente può scegliere per cambiare lo sfondo dell'applicazione in base alle sue esigenze visive,
-    
-- lo spazio disponibile per visualizzare le *form aperte dall'utente*,
-    
-- la **freccia** per nascondere o visualizzare l'intera ribbon bar.
-    
-### I tab delle Aree
 
-Contengono una serie di ribbon raggruppati per tipo/modulo. Per esempio, il tab *Acquisti* contiene tutti i documenti del ciclo attivo: richieste, ordini, DDT, fatture ecc.
+- los **temi** que el usuario puede elegir para cambiar el fondo de la aplicación según sus necesidades visuales,
 
-### Help
-    
-Per informazioni dettagliate sulla form in uso, l'utente può consultare la documentazione usando **F1** oppure premendo il pulsante **?**.
+- el espacio disponible para visualizar las *formularios abiertos por el usuario*,
 
-## Panello sinistro
+- la **flecha (freccia)** para ocultar o mostrar toda la barra de cinta.
 
-Contiene la [Form Navigator](/docs/form-navigator/data-grid-settings) con informazioni sulla form attiva.
+### Las pestañas de Áreas
 
-## Panello destro
+Contienen una serie de cintas agrupadas por tipo/módulo. Por ejemplo, la pestaña *acquisti* contiene todos los documentos del ciclo activo: solicitudes, pedidos, DDT, facturas, etc.
+
+### Ayuda (Help)
+
+Para obtener información detallada sobre el formulario en uso, el usuario puede consultar la documentación usando **F1** o presionando el botón **?**.
+
+## Panel izquierdo 
+
+Contiene el [Navegador de formularios (Form Navigator)](/docs/form-navigator/data-grid-settings) con información sobre el formulario activo.
+
+## Panel derecho 
 
 Contiene:
 
-**[Strumenti](/docs/applications/applications-intro)** contiene diverse applicazioni complementari: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestione Documentale, Applicazioni non supportate.
+**[Herramientas (Strumenti)](/docs/applications/applications-intro)** contiene diversas aplicaciones complementarias: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestión Documental, Aplicaciones no soportadas.
 
-**[Object Navigator](/docs/object-navigator/object-navigator-intro)** contiene informazioni sull'oggetto attivo, utile a personalizzare le form con l'aggiunta di ulteriori dati o informazioni.
+**[Navegador de objetos (Object Navigator)](/docs/object-navigator/object-navigator-intro)** contiene información sobre el objeto activo, útil para personalizar los formularios añadiendo datos o información adicional.
 
-**[Context Panel](/docs/panels/context-panel)** in base alle impostazioni, Fluentis permette di visualizzare informazioni contestuali al campo selezionato (esempio: se selezionate l'articolo l'applicazione mostra la sua disponibilità).
+**[Panel de contexto (Context Panel)](/docs/panels/context-panel)**, según la configuración, Fluentis permite visualizar información contextual del campo seleccionado (por ejemplo: si selecciona el artículo, la aplicación muestra su disponibilidad).
 
-**[Configurazioni](/docs/configurations/configuration)** contiene informazioni che consentiranno la definizione della gestione dei moduli.
+**[Configuraciones (Configurazioni)](/docs/configurations/configuration)** contiene información que permitirá definir la gestión de los módulos.
 
-**Fluentis Chat** permette di interagire con gli utenti abilitati a tale servizio di comunicazione, sia interno nel contesto aziendale, sia esterno per accedere al supporto di Fluentis. La chat è uno strumento molto utile per condividere informazioni rapidamente con un altro l'operatore, condividere documenti digitali o addirittura documenti attivi del gestionale. 
+**Fluentis Chat** permite interactuar con los usuarios habilitados para este servicio de comunicación, tanto internamente en el contexto empresarial, como externamente para acceder al soporte de Fluentis. El chat es una herramienta muy útil para compartir información rápidamente con otro operador, compartir documentos digitales o incluso documentos activos de la gestión. 
 
-## Sezione inferiore
+## Sección inferior
 
-Nella parte inferiore dell'applicazione, la barra di stato contiene una serie di informazioni che spieghiamo di seguito:
+En la parte inferior de la aplicación, la barra de estado contiene una serie de información que explicamos a continuación:
 
-**Attività**: permette un rapido collegamento con la gestione delle attività pending (derivanti dalle procedure di WorkFlow configurate);
+**attività**: permite un rápido acceso a la gestión de actividades pendientes (derivadas de los procedimientos de WorkFlow configurados);
 
-**Calendario**: permette la gestione del calendario, che può essere agganciato con Exchange o Outlook.
-:::note Sincronizzare il *calendario Outlook* con il *calendario Fluentis*. 
+**calendario**: permite la gestión del calendario, que se puede vincular con Exchange o Outlook.
+:::note Sincronizar el *calendario de Outlook* con el *calendario de Fluentis*.  
 
-1. Configurare l'utente in **ARM** e definire nel tab **Altre Caratteristiche** la mail: 
+1. Configurar el usuario en **ARM** y definir en la pestaña **altre caratteristiche** el correo:  
 
 ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image01.png)
 
-
-2. Successivamente, premendo il bottone *Percorso predefinito per Outlook*, verrà richiesto quale calendario configurare tra quelli che trova e il campo **Percorso predefinito per Outlook** verrà compilato automaticamente: 
+2. A continuación, presionando el botón *percorso predefinito per outlook*, se solicitará qué calendario configurar entre los que encuentra, y el campo **percorso predefinito per outlook** se llenará automáticamente:  
 
 ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image02.png) ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image03.png)
 
-
-A questo punto, spostandosi in **Calendario** (barra di stato), dopo aver *riavviato* Fluentis, si noterà che la sincronizzazione con Outlook è avvenuta con successo:
+En este punto, al moverse a **calendario** (barra de estado), después de *reiniciar* Fluentis, se notará que la sincronización con Outlook se ha realizado con éxito:
 
 ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image04.png)
 
-
-Vedi anche [Pianificazione a calendario delle risorse](/docs/project-management/transverse-procedures).
+Véase también [Programación de recursos en calendario](/docs/project-management/transverse-procedures).
 :::
 
+**Dashboards**: permite un resumen rápido de los aspectos destacados de la gestión con una interfaz estadística muy potente y fácilmente personalizable;
 
-**Dashboards**: permette una rapida sintesi dei fatti salienti della gestione con un interfaccia statistica molto potente e facilmente customizzabile;
+**trova**: permite visualizar todos los comandos de la aplicación. Usado junto con el campo de búsqueda que se encuentra en la parte superior, en el menú principal, podemos encontrar un comando específico o comandos agrupados;
 
-**Trova**: permette di visualizzare tutti i comandi dell'applicazione. Usato insieme al campo di ricerca che si trova in alto, nel menu principale, possiamo trovare un comando specifico oppure dei comandi raggruppati;
+**...**: permite al usuario acceder, con clic derecho, a la ventana **Opciones de navegación (Navigation Options)** para seleccionar el número máximo de elementos a visualizar (flechas arriba/abajo para aumentar/disminuir) y para establecer el orden en el que deben presentarse (flechas arriba/abajo para cambiar el orden). Usar el botón 'Aceptar (OK)' para confirmar las elecciones y el botón 'Restablecer (Reset)' para volver a la situación estándar;
 
-**...**: permette all'utente di accedere, con clic destra, alla finestra **Navigation Options** per selezionare il numero massimo degli elementi da visualizzare (freccette su/giù per aumentare/diminuire) e per stabilire l'ordine in quale questi devono essere esposti (freccette su/giù per cambiare l'ordine). Usare il pulsante 'OK' per confermare le scelte e il pulsante 'Reset' per tornare alla situazione standard;
-
-**Database**: le informazioni esposte fanno riferimento alla connessione alla database e sono, in ordine visualizzata: *Utente*, *Server\Database*, *Società*, (*Divisione*).
+**database**: la información expuesta hace referencia a la conexión a la base de datos y es, en el orden visualizado: *utente*, *Servidor\Base de datos (Server\Database)*, *società*, (*divisione*).

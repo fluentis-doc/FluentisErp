@@ -1,20 +1,13 @@
 ---
-title: Lettere di sollecito
+title: lettere di sollecito
 sidebar_position: 6
 ---
 
-Da questa maschera è possibile procedere alla stampa dei solleciti.
+Desde esta máscara es posible proceder a la impresión de los recordatorios.
 
-Prima di eseguire la stampa è possibile, anzichè stampare tutti i solleciti generati, filtrare per numero del sollecito, per data, per tipo e per cliente.
+Antes de realizar la impresión, es posible, en lugar de imprimir todos los recordatorios generados, filtrar por número del recordatorio, por fecha, por tipo y por cliente.
 
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Esegue l'anteprima delle lettere di sollecito, con possibilità di poter selezionare solo i movimenti con massima priorità o tutti i movimenti. |
-| Stampa | Esegue la stampa delle lettere di sollecito, con possibilità di poter selezionare solo i movimenti con massima priorità o tutti i movimenti. |
-
-
-
-
-
-
+| Vista previa (Anteprima) | Realiza la vista previa de las cartas de recordatorio, con la posibilidad de seleccionar solo los movimientos con máxima prioridad o todos los movimientos. |
+| Impresión (Stampa) | Realiza la impresión de las cartas de recordatorio, con la posibilidad de seleccionar solo los movimientos con máxima prioridad o todos los movimientos. |

@@ -1,26 +1,26 @@
 ---
-title: Categorie fiscali articolo
+title: categorie fiscali articolo
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Categorie fiscali articolo**.  
+La tabla se encuentra en la ruta **Tablas > Logística > categorie fiscali articolo (Tabelle > Logistica > Categorie fiscali articolo)**.  
 
-In questa tabella è possibile codificare le diverse categorie secondo la logica fiscale che può essere a sua volta associata al prodotto e utilizzata come raggruppamento, come dato statistico o come funzionalità nei moduli competenti.   
+En esta tabla es posible codificar las diferentes categorías según la lógica fiscal, la cual puede ser asociada al producto y utilizada como agrupamiento, como dato estadístico o como funcionalidad en los módulos correspondientes.  
 
-Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item) alla voce *Categoria fiscale*.  
+Un ejemplo de uso lo encontramos dentro del [Registro de artículos (Anagrafica articolo)](/docs/erp-home/registers/items/create-new-item) en la entrada *categoria fiscale*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Categorie fiscali articolo**
+**Búsqueda de categorías fiscales de artículo (Ricerca Categorie fiscali articolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Categorie fiscali articolo**
+**Inserción de categorías fiscales de artículo (Inserimento Categorie fiscali articolo)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
 
-La form è composta da due griglie: in quella a sinistra si possono codificare le varie *Categorie fiscali* inserendo il **Codice** e la **Descrizione**.  
+El formulario se compone de dos cuadrículas: en la de la izquierda se pueden codificar las diversas *Categorías fiscales (Categorie fiscali)* ingresando el **codice** y la **descrizione**.  
 
-Nella griglia a destra è possibile impostare per ciascuna categoria i conti di contabilità che saranno usati per l'elaborazione delle scritture automatizzate delle rimanenze finali.
+En la cuadrícula de la derecha es posible establecer para cada categoría las cuentas contables que serán utilizadas para la elaboración de los asientos automatizados de los inventarios finales.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

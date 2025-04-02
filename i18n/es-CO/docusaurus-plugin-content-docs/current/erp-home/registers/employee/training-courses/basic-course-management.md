@@ -1,132 +1,125 @@
 ---
-title: Corso base
+title: corso base
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Home > Dipendenti > Corsi di formazione > Nuovo corso base** oppure è possibile eseguirla dalla **Ricerca Corsi base**.   
+La gestión se encuentra en la ruta **Inicio > Empleados > Cursos de formación > Nuevo curso básico** o se puede realizar desde la **Búsqueda de Cursos básicos**.
 
-
-:::important A cosa serve
-I Corsi di base sono dei templates di corsi che ricorsivamente, o non, vengono effettuati: all'assunzione di nuovi dipendenti, a loro cambi di mansione, periodicamente per rinnovi previsti da leggi e normative.   
+:::important ¿Para qué sirve? (A cosa serve)
+Los Cursos básicos son plantillas de cursos que se realizan de manera recurrente o no: al contratar nuevos empleados, cuando cambian de función, periódicamente para renovaciones previstas por leyes y normativas.   
 :::
 
+## Botones de comando (Pulsanti di comando)
 
-## Pulsanti di comando
+### ![](/img/neutral/common/save.png) Guardar (Salva)
 
+Al presionar este botón se almacenan toda la información modificada del *corso base* visualizado.
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/duplicate.png) Duplicar (Duplica)
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Corso base* visualizzato.   
+Para poder duplicar un *corso base* existente en un nuevo *corso base* es necesario presionar el botón **duplica**. Aparecerá una solicitud de:   
+> **tipo corso base**: es el *Tipo de curso básico* del nuevo *corso base* (dato obligatorio), se propone el *Tipo de curso básico* del *corso base* de origen.  
+> **codice**: es el *Código* del nuevo *corso base* (dato obligatorio).  
+> **titolo**: es el *Título* del nuevo *corso base* (dato obligatorio).  
+> **area**: es el *Área* del nuevo *corso base*, se propone el *Área* del *corso base* de origen.  
+> **settore**: es el *Sector* del nuevo *corso base*, se propone el *Sector* del *corso base* de origen.  
+> **categoria corso**: es la *Categoría de curso* del nuevo *corso base*, se propone la *Categoría de curso* del *corso base* de origen.
 
-
-### ![](/img/neutral/common/duplicate.png) Duplica
-
-Per poter duplicare un *Corso base* esistente in un nuovo *Corso base* è necessario premere il pulsante **Duplica**. Viene visualizzata una richiesta di:   
-> **Tipo corso base**: è il *Tipo corso base* del nuovo *Corso base* (dato obbligatorio), viene proposto il *Tipo corso base* del *Corso base* di origine.   
-> **Codice**: è il *Codice* del nuovo *Corso base* (dato obbligatorio).   
-> **Titolo**: è il *Titolo* del nuovo *Corso base* (dato obbligatorio).   
-> **Area**: è l'*Area* del nuovo *Corso base*, viene proposta l'*Area* del *Corso base* di origine.   
-> **Settore**: è il *Settore* del nuovo *Corso base*, viene proposto il *Settore* del *Corso base* di origine.   
-> **Categoria corso**: è la *Categoria corso* del nuovo *Corso base*, viene proposta la *Categoria corso* del *Corso base* di origine.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Corso base* viene visualizzato.
+Presione a continuación el botón **OK** o el botón **cancel** si desea continuar con la actividad de duplicación o no. 
+Al finalizar el procesamiento, se visualizará el nuevo *corso base*.
 
 
-### Pianifica prossimo corso
+### Planificar próximo curso (Pianifica prossimo corso)
 
-Per poter pianificare un nuovo *Corso di formazione* da un *Corso base* è necessario premere il pulsante **Pianifica prossimo corso**.   
-Il nuovo *Corso di formazione* creato avrà le seguenti informazioni precaricate:   
-> **Tipo corso di formazione**: specificato nella tabella dei *Tipi corso base* presente nel *Corso base* di origine.   
-> **Anno**, **Numero** e **Data**: in base a quanto previsto dalla *Numerazione* associata al *Tipo corso di formazione* e alla data odierna.   
-> **Pianificato**: indicatore di *Corso di formazione pianificato*.   
-> Altre informazioni ereditate dal *Corso base* di origine: *Contenuti*, *Docente*, *Requisiti docente*, *Presenza stranieri*, *Valutazione efficacia*, *Riferimenti normativi*, *Settore*, *Area*, *Categoria corso*, *Ore previste* e *Costo previsto*; l'elenco delle *Mansioni* interessate.   
-> Sulla base delle *Mansioni* interessate vengono proposti i *Dipendenti* che, alla data del corso, ricoprono quelle *Mansioni*.   
+Para poder planificar un nuevo *Curso de formación* a partir de un *corso base* es necesario presionar el botón **pianifica prossimo corso**.  
+El nuevo *Curso de formación* creado tendrá la siguiente información precargada:  
+> **tipo corso di formazione**: especificado en la tabla de *Tipos de curso básico* presente en el *corso base* de origen.  
+> **anno**, **numero** y **data**: según lo previsto por la *Numeración* asociada al *Tipo de curso de formación* y a la fecha actual.  
+> **pianificato**: indicador de *Curso de formación planificado*.  
+> Otras informaciones heredadas del *corso base* de origen: *Contenidos*, *Docente*, *Requisitos del docente*, *Presencia de extranjeros*, *Evaluación de la eficacia*, *Referencias normativas*, *Sector*, *Área*, *Categoría de curso*, *Horas previstas* y *Costo previsto*; el listado de *Funciones* implicadas.  
+> En base a las *Funciones* implicadas, se proponen los *Empleados* que, a la fecha del curso, cubren esas *Funciones*.  
 
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.
-
-### Pianifica prossimo rinnovo
-
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Corso base* dove è previsto un rinnovo (*Dati rinnovo corso* con *Periodicità* diversa da *zero*).   
-Per poter pianificare un nuovo rinnovo da un *Corso base* è necessario cliccare nella griglia sul *Corso base* da cui si desidera pianificare e premere il pulsante **Pianifica prossimo rinnovo**. Si può pianificare un solo *Corso di formazione* alla volta.   
-Viene visualizzato un messaggio di impossibilità di creazione rinnovo se, per il *Corso base*, non è mai stato effettuato un *Corso di formazione*. 
-Il nuovo *Corso di formazione* creato avrà le seguenti informazioni precaricate:   
-> **Tipo corso di formazione**: specificato nella tabella dei *Tipi corso base* presente nel *Corso base* di origine.   
-> **Anno**, **Numero** e **Data**: in base a quanto previsto dalla *Numerazione* associata al *Tipo corso di formazione* e alla data odierna.   
-> **Pianificato**: indicatore di *Corso di formazione pianificato*.   
-> **Rinnovo**: indicatore di *Rinnovo Corso di formazione*.   
-> Altre informazioni ereditate dal *Corso base* di origine: *Docente*, *Requisiti docente*, *Riferimenti normativi*, *Settore*, *Area*, *Categoria corso*, l'elenco delle *Mansioni* interessate; dal *Corso base - Rinnovo*: *Contenuti*, *Presenza stranieri*, *Valutazione efficacia*, *Ore previste* e *Costo previsto*.   
-> Sulla base delle *Mansioni* interessate vengono proposti i *Dipendenti* che, alla data del corso, ricoprono quelle *Mansioni*.   
-
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.
+Al finalizar el procesamiento, se visualizará el nuevo *Curso de formación*.
 
 
-## Gestione dati
+### Planificar próximo renovado (Pianifica prossimo rinnovo)
+
+El botón está habilitado solamente si, desde la cuadrícula de resultados, se selecciona un solo *corso base* donde se prevé un renovado (*Datos de renovación del curso* con *Periodicidad* diferente de *cero*).  
+Para poder planificar un nuevo renovado a partir de un *corso base* es necesario hacer clic en la cuadrícula sobre el *corso base* desde el cual se desea planificar y presionar el botón **pianifica prossimo rinnovo**. Solo se puede planificar un *Curso de formación* a la vez.  
+Se visualizará un mensaje de imposibilidad de creación de renovación si, para el *corso base*, nunca se ha realizado un *Curso de formación*. 
+El nuevo *Curso de formación* creado tendrá la siguiente información precargada:  
+> **tipo corso di formazione**: especificado en la tabla de *Tipos de curso básico* presente en el *corso base* de origen.  
+> **anno**, **numero** y **data**: según lo previsto por la *Numeración* asociada al *Tipo de curso de formación* y a la fecha actual.  
+> **pianificato**: indicador de *Curso de formación planificado*.  
+> **rinnovo**: indicador de *Renovación de Curso de formación*.  
+> Otras informaciones heredadas del *corso base* de origen: *Docente*, *Requisitos del docente*, *Referencias normativas*, *Sector*, *Área*, *Categoría de curso*, y el listado de *Funciones* implicadas; del *corso base - Renovado*: *Contenidos*, *Presencia de extranjeros*, *Evaluación de la eficacia*, *Horas previstas* y *Costo previsto*.  
+> En base a las *Funciones* implicadas, se proponen los *Empleados* que, a la fecha del curso, cubren esas *Funciones*.  
+
+Al finalizar el procesamiento, se visualizará el nuevo *Curso de formación*.
 
 
-### Dati di testata
+## Gestión de datos (Gestione dati)
 
-Le informazioni gestite sono:   
-> **Tipo corso base**: è il *Tipo corso base* del nuovo *Corso base* (dato obbligatorio), viene proposto il *Tipo corso base* indicato nei *Parametri gestione del personale*.   
-> **Codice**: è il *Codice* del nuovo *Corso base* (dato obbligatorio).   
-> **Titolo**: è il *Titolo* del nuovo *Corso base* (dato obbligatorio).   
-> **Attivo**: indica che il *Corso base* è ancora *attivo*.   
-> **Data inizio validità**: è la data dalla quale il *Corso base* è valido.   
-> **Data fine validità**: è la data dalla quale il *Corso base* cessa la sua validità.   
-> **Ore previste**: sono le ore previste di formazione.   
-> **Costo**: è il costo previsto di formazione.   
-> **Contenuti**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
->   
-> **Settore**: è il *Settore* aziendale a cui è rivolto il *Corso*.   
-> **Area**: è l'*Area* aziendale a cui è rivolto il *Corso*.   
-> **Categoria corso**: è la *Categoria corso*.   
-> **Docente**: è il *Docente* previsto che terrà il *Corso di formazione*.   
-> **Requisiti docente**: annotazioni libere sull'argomento.   
-> **Riferimenti normativi**: annotazioni libere sull'argomento.   
-> **Attestato**: annotazioni libere sull'argomento.   
-> **Presenza stranieri**: annotazioni libere sull'argomento.   
-> **Valutazione efficacia**: annotazioni libere sull'argomento.   
+### Datos de encabezado (Dati di testata)
+
+Las informaciones gestionadas son:  
+> **tipo corso base**: es el *Tipo de curso básico* del nuevo *corso base* (dato obligatorio), se propone el *Tipo de curso básico* indicado en los *Parámetros de gestión del personal*.  
+> **codice**: es el *Código* del nuevo *corso base* (dato obligatorio).  
+> **titolo**: es el *Título* del nuevo *corso base* (dato obligatorio).  
+> **attivo**: indica que el *corso base* sigue siendo *activo*.  
+> **data inizio validità**: es la fecha a partir de la cual el *corso base* es válido.  
+> **data fine validità**: es la fecha a partir de la cual el *corso base* deja de ser válido.  
+> **ore previste**: son las horas de formación previstas.  
+> **costo**: es el costo previsto de formación.  
+> **contenuti**: anotaciones libres sobre el tema.  
+> **note**: anotaciones libres.  
+>    
+> **settore**: es el *Sector* empresarial al que está dirigido el *Curso*.  
+> **area**: es el *Área* empresarial a la que está dirigido el *Curso*.  
+> **categoria corso**: es la *Categoría de curso*.  
+> **docente**: es el *Docente* previsto que impartirá el *Curso de formación*.  
+> **requisiti docente**: anotaciones libres sobre el tema.  
+> **riferimenti normativi**: anotaciones libres sobre el tema.  
+> **attestato**: anotaciones libres sobre el tema.  
+> **presenza stranieri**: anotaciones libres sobre el tema.  
+> **valutazione efficacia**: anotaciones libres sobre el tema.  
 >
-> **Rinnovo**: expander dove è possibile inserire:   
+> **rinnovo**: expansor donde es posible ingresar:  
 >
->> **Dati rinnovo**: annotazioni libere sull'argomento.   
->> **Contenuti**: annotazioni libere sull'argomento.   
->> **Note**: annotazioni libere.   
->
->> **Ore previste**: sono le ore previste di formazione per singolo rinnovo.   
->> **Costo**: è il costo previsto di formazione per singolo rinnovo.   
->> **Periodicità (in mesi)**: è il periodo (espresso in mesi) che intercorre tra il primo *Corso* e il primo *Rinnovo* oppure tra *Rinnovo* e *Rinnovo*.   
->> **Attestato**: annotazioni libere sull'argomento.   
->> **Presenza stranieri**: annotazioni libere sull'argomento.   
->> **Valutazione efficacia**: annotazioni libere sull'argomento.   
+>> **dati rinnovo**: anotaciones libres sobre el tema.  
+>> **contenuti**: anotaciones libres sobre el tema.  
+>> **note**: anotaciones libres.  
+>>
+>> **ore previste**: son las horas de formación previstas para cada renovación.  
+>> **costo**: es el costo previsto de formación para cada renovación.  
+>> **Periodicidad (en meses) (Periodicità in mesi)**: es el período (expresado en meses) que transcurre entre el primer *Curso* y la primera *Renovación* o entre *Renovación* y *Renovación*.  
+>> **attestato**: anotaciones libres sobre el tema.  
+>> **presenza stranieri**: anotaciones libres sobre el tema.  
+>> **valutazione efficacia**: anotaciones libres sobre el tema.  
 
+### Funciones implicadas (Mansioni interessate)
 
-### Mansioni interessate
+Son las *Funciones* que participan en el *Curso*.  
+Con base en las *Funciones* listadas, en el *Curso de formación* creado a partir de este *corso base*, se proponen los *Empleados* que las cubren.  
+El listado se compone de la siguiente información:  
+> **mansione**: es el código de la *Función*.  
+> **descrizione mansione**: es la descripción de la *Función*.  
+> **note**: anotaciones libres.  
 
-Sono le *Mansioni* interessate alla partecipazione al *Corso*.   
-Sulla base delle *Mansioni* elencate, nel *Corso di formazione* creato da questo *Corso base*, vengono proposti i *Dipendenti* che le ricoprono.   
-L'elenco si compone delle seguenti informazioni:   
-> **Mansione**: è il codice della *Mansione*.   
-> **Descrizione mansione**: è la descrizione della *Mansione*.   
-> **Note**: annotazioni libere.   
+### Cursos planificados y completados (Corsi pianificati e completati)
 
+En estas dos listas es posible visualizar el historial de los *Cursos de formación planificados* y de los *Cursos de formación completados*.  
+A través de un doble clic del mouse sobre la fila deseada es posible gestionar el *Curso de formación* seleccionado.  
+La lista de los *Cursos planificados* se compone de la siguiente información:  
+> **argomenti da trattare**.  
+> **data prevista dalle**.  
+> **ore previste**.  
+> **docente**.  
 
-### Corsi pianificati e completati
+La lista de los *Cursos completados* se compone de la siguiente información:  
+> **argomenti trattati**.  
+> **data effettiva dalle**.  
+> **Duración (horas) (Durata (ore))**.  
+> **docente**.  
 
-In questi due elenchi è possibile visualizzare lo storico dei *Corsi di formazione pianificati* e dei *Corsi di formazione completati*.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione del *Corso di formazione* selezionato.   
-L'elenco dei *Corsi pianificati* si compone delle seguenti informazioni:   
-> **Argomenti da trattare**.   
-> **Data prevista dalle**.   
-> **Ore previste**.   
-> **Docente**.   
-
-L'elenco dei *Corsi completati* si compone delle seguenti informazioni:   
-> **Argomenti trattati**.   
-> **Data effettiva dalle**.   
-> **Durata (ore)**.   
-> **Docente**.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

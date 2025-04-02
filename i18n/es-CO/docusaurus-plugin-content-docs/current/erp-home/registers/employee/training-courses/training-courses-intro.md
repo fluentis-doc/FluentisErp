@@ -1,44 +1,44 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo permette la pianificazione e la registrazione dei corsi di formazione aziendali attuati per aumentare il livello di istruzione, necessario alle risorse, per garantire il mantenimento ed il miglioramento continuo del sistema di gestione.   
+El módulo permite la planificación y el registro de los cursos de formación empresarial realizados para aumentar el nivel de educación necesario para los recursos, con el fin de garantizar el mantenimiento y la mejora continua del sistema de gestión.
 
 
-## I documenti gestiti
+## Los documentos gestionados (I documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/erp-home/registers/employee/training-courses/basic-course-management">Corsi base</Link>
-        <p>Sono dei templates di corsi formativi che, ricorsivamente o non, vengono effettuati: all'assunzione di nuovi dipendenti, a loro cambi di mansione, periodicamente per rinnovi previsti da leggi e normative.  </p>
-        <p>Oltre al Tipo corso di base e il Titolo, le informazioni gestite sono: la Validità, Ore e Costi previsti, i Contenuti, Settore e Area di interesse, Categoria, Docente e suoi requisiti e altri riferimenti. Nella sessione Rinnovo (se previsto) vengono inserite le informazioni di rinnovo del corso: Dati rinnovo, Contenuti, Ore e Costi previsti, Periodicità e altri riferimenti. È inoltre possibile indicare le Mansioni aziendali interessate ad effettuare il corso.</p>
-        <p>Tramite i pulsanti Pianifica prossimo corso e Pianifica prossimo rinnovo è possibile generare il Corso di formazione o di rinnovo che riporterà alcune delle informazioni presenti nel corso di Base.</p>
+###     <Link to="/docs/erp-home/registers/employee/training-courses/basic-course-management">Cursos base (Corsi base)</Link>
+        <p>Son plantillas de cursos formativos que, de manera recurrente o no, se llevan a cabo: en la contratación de nuevos empleados, en sus cambios de puesto, periódicamente para renovaciones previstas por leyes y normativas.</p>
+        <p>Además del Tipo de curso base y el Título, las informaciones gestionadas son: la Validez, Horas y Costos previstos, los Contenidos, Sector y Área de interés, Categoría, Docente y sus requisitos, y otros referentes. En la sección de Renovación (si está prevista) se ingresan las informaciones de renovación del curso: Datos de renovación, Contenidos, Horas y Costos previstos, Periodicidad y otros referentes. También es posible indicar las Funciones empresariales interesadas en realizar el curso.</p>
+        <p>Mediante los botones Planificar próximo curso y Planificar próximo renovación es posible generar el Curso de formación o de renovación que reflejará algunas de las informaciones presentes en el curso Base.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/erp-home/registers/employee/training-courses/training-courses-intro">Corsi di formazione</Link>
-        <p>I Corsi di formazione riportano le informazioni riguardanti lo svolgimento dei corsi di Informazione, Formazione e Addestramento ai dipendenti.</p>
-        <p>Le informazioni gestite sono: Tipo corso, Anno, Numero e Data, il Titolo, i riferimenti al Corso di base, se è un Corso pianificato, se è un Rinnovo, dati di conferma del corso, i Contenuti, informazioni relative al Coordinatore e Responsabile, al Docente, all’eventuale Co-docente, Settore e Area di interesse, Categoria, se il corso è di Informazione, Formazione o Addestramento, la sede di svolgimento, le Ore e Costi previsti ed effettivi e altri riferimenti.</p>
-        <p>Nelle sessioni sottostanti si possono gestire: le Date del corso, con i dettagli di quante ore di teoria di pratica e gli argomenti … previsti ed effettivi; è inoltre possibile indicare le Mansioni coinvolte per effettuare il corso … da questo elenco verranno proposti i Dipendenti coinvolti dove è possibile registrare le ore di teoria e di pratica effettuate e informazioni relative alla valutazione dell’efficacia.</p>
+###     <Link to="/docs/erp-home/registers/employee/training-courses/training-courses-intro">Cursos de formación (Corsi di formazione)</Link>
+        <p>Los Cursos de formación reflejan la información relacionada con la realización de los cursos de Información, Formación y Capacitación a los empleados.</p>
+        <p>Las informaciones gestionadas son: Tipo de curso, Año, Número y Fecha, el Título, las referencias al Curso base, si es un Curso planificado, si es un Renovación, datos de confirmación del curso, los Contenidos, informaciones relativas al Coordinador y Responsable, al Docente, al eventual Co-docente, Sector y Área de interés, Categoría, si el curso es de Información, Formación o Capacitación, la sede de realización, las Horas y Costos previstos y efectivos, y otros referentes.</p>
+        <p>En las secciones siguientes se pueden gestionar: las Fechas del curso, con los detalles de cuántas horas de teoría, de práctica y los temas... previstos y efectivos; también es posible indicar las Funciones involucradas para realizar el curso… de esta lista se propondrán los Empleados involucrados donde se pueden registrar las horas de teoría y de práctica realizadas y las informaciones relativas a la evaluación de la eficacia.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Para comenzar a utilizar (Per iniziare ad utilizzare)
 
-i **Corsi base**:
-- definire un [*Tipo corso base*](/docs/configurations/tables/employee/training-courses/basic-course-type)   
-- inserire un nuovo [*Corso base*](/docs/erp-home/registers/employee/training-courses/basic-course-management)   
+los **Cursos base**:  
+- definir un [*Tipo de curso base*](/docs/configurations/tables/employee/training-courses/basic-course-type)  
+- ingresar un nuevo [*Curso base*](/docs/erp-home/registers/employee/training-courses/basic-course-management)  
 
-i **Corsi di formazione**:
-- definire un [*Tipo corso di formazione*](/docs/configurations/tables/employee/training-courses/course-type)   
-- per agevolare la gestione dei *Corsi di formazione* impostare i [*Parametri Gestione del personale*](/docs/configurations/parameters/employees/staff-management) nella sessione *Corsi di formazione*   
-- inserire un nuovo [*Corso di formazione*](/docs/erp-home/registers/employee/training-courses/training-courses-intro)   
+los **Cursos de formación**:  
+- definir un [*Tipo de curso de formación*](/docs/configurations/tables/employee/training-courses/course-type)  
+- para facilitar la gestión de los *Cursos de formación* configurar los [*Parámetros de Gestión del personal*](/docs/configurations/parameters/employees/staff-management) en la sección *Cursos de formación*  
+- ingresar un nuevo [*Curso de formación*](/docs/erp-home/registers/employee/training-courses/training-courses-intro)  
 
 
-## Collegamenti con altri moduli
-Il modulo dei *Corsi di formazione* non è collegato ad alcun altro modulo.   
+## Conexiones con otros módulos (Collegamenti con altri moduli)
+El módulo de *Cursos de formación* no está conectado a ningún otro módulo.

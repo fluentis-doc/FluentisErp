@@ -1,36 +1,36 @@
 ---
-title: Rettifica unità di carico
+title: Ajuste de unidad de carga (Rettifica unità di carico)
 sidebar_position: 8
 ---
 
-:::important A cosa serve
-La funzione Rettifica Unità di Carico del WMS di Fluentis permette di apportare modifiche agli articoli contenuti in un'unità di carico, consentendo rettifiche sia positive che negative.     
-Gli operatori possono visualizzare tutti gli articoli presenti, variare le quantità e aggiungere o rimuovere articoli, rendendo il processo di aggiornamento delle giacenze più preciso ed efficiente.
+:::important ¿Para qué sirve? (A cosa serve)
+La función Ajuste de Unidad de Carga del WMS de Fluentis permite realizar modificaciones a los artículos contenidos en una unidad de carga, permitiendo ajustes tanto positivos como negativos.  
+Los operadores pueden visualizar todos los artículos presentes, variar las cantidades y agregar o quitar artículos, haciendo que el proceso de actualización de las existencias sea más preciso y eficiente.
 :::  
 
-Questa procedura è utilizzata per rettificare gli articoli di un'unità di carico, in positivo o negativo, oppure per aggiungere un nuovo articolo o toglierne uno già presente.   
-Alla lettura dell'unità di carico vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno, con l'indicazione dei seguenti campi:
+Este procedimiento se utiliza para corregir los artículos de una unidad de carga, de manera positiva o negativa, o para agregar un nuevo artículo o quitar uno ya presente.  
+Al leer la unidad de carga, se visualizan en la cuadrícula inferior todos los artículos que contiene, con la indicación de los siguientes campos:
 
-> **Articolo**: indica la classe e il codice dell'articolo contenuto nell'unità di carico;       
-> **Descrizione**: indica la descrizione dell'articolo contenuto nell'unità di carico;       
-> **Quantità**: indica la quantità dell'articolo contenuto nell'unità di carico;   
-> **Lotto**: indica il lotto dell'articolo contenuto nell'unità di carico (presente solo se gestito a lotti);           
-> **Variante**: indica la variante dell'articolo contenuto nell'unità di carico (presente solo se gestito a variante).       
+> **articolo**: indica la clase y el código del artículo contenido en la unidad de carga;  
+> **descrizione**: indica la descripción del artículo contenido en la unidad de carga;  
+> **quantità**: indica la cantidad del artículo contenido en la unidad de carga;  
+> **lotto**: indica el lote del artículo contenido en la unidad de carga (presente solo si se gestiona por lotes);  
+> **variante**: indica la variante del artículo contenido en la unidad de carga (presente solo si se gestiona por variante).  
 
-Selezionando uno degli articoli, con i pulsanti **+** e **-**, oppure tramite tastiera, è possibile variare rispettivamente in positivo o negativo la quantità riporta in griglia.       
-Una volta ultimate le correzioni su tutti gli articoli interessati, tramite il pulsante **Conferma** verranno confermati ed effettuati i relativi movimenti di magazzino di rettifica positivi e negativi all'interno dell'unità di carico selezionata.
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
+Seleccionando uno de los artículos, con los botones **+** y **-**, o mediante el teclado, es posible variar respectivamente en positivo o negativo la cantidad reflejada en la cuadrícula.  
+Una vez finalizadas las correcciones en todos los artículos afectados, mediante el botón **conferma** se confirmarán y se llevarán a cabo los movimientos de almacén de ajuste positivos y negativos dentro de la unidad de carga seleccionada.  
+El botón **pulisci tutto** permite vaciar el formulario de todos los datos ingresados.  
 
-Nel caso in cui venga aggiunto un nuovo articolo non presente nell'unità di carico, verrà visualizzato un messaggio che permette all'utente di decidere se questo nuovo articolo debba essere aggiunto o meno all'unità di carico. In questa situazione, è importante ricordare che se l'articolo (da aggiungere), è gestito a lotti, deve essere obbligatoriamente inserito anche un lotto valido.          
-Per rimuove, invece, un articolo basterà portare la relativa quantità a zero.       
+En caso de que se agregue un nuevo artículo no presente en la unidad de carga, aparecerá un mensaje que permite al usuario decidir si este nuevo artículo debe ser agregado o no a la unidad de carga. En esta situación, es importante recordar que si el artículo (a agregar), se gestiona por lotes, debe introducirse obligatoriamente un lote válido.  
+Para eliminar un artículo, basta con llevar la cantidad correspondiente a cero.  
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que deben ingresarse en la tabla [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Área (Area) | Módulo (Modulo) | Formulario (Form) |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustLoadingUnit |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustLoadingUnit |
 
-I parametri sono inseriti due volte poiché la form utilizza una causale di scarico per le rettifiche negative e una di carico per le rettifiche positive.
+Los parámetros se ingresan dos veces ya que el formulario utiliza una causal de descarga para los ajustes negativos y una de carga para los ajustes positivos.
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode**, consulte la página relacionada con el [Tokenizador de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

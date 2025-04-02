@@ -1,12 +1,12 @@
 ---
-title: Schede di movimentazione
+title: schede di movimentazione
 sidebar_position: 4
 ---
 
-La stampa si trova sul percorso **Logistica > Magazzino  >  Stampe contabili > Schede di movimentazione** e permette all'utente di estrapolare un report contenente informazioni relative ai movimenti di magazzino. Sono presenti una serie di filtri e parametri per ottenere la stampa desiderata.
+La impresión se encuentra en la ruta **schede di movimentazione** y permite al usuario extraer un informe que contiene información relativa a los movimientos de almacén. Hay una serie de filtros y parámetros disponibles para obtener la impresión deseada.
 
-In questo form è possibile filtrare per magazzino, causale, articolo, eventuale variante,ecc. Di default la stampa non estrae i movimenti non di interesse fiscale. E' comunque possibile estrapolarli attivando il flag relativo.
+En este formulario es posible filtrar por almacén, motivo, artículo, posible variante, etc. Por defecto, la impresión no extrae los movimientos que no son de interés fiscal. Sin embargo, es posible extraerlos activando el indicador correspondiente.
 
-Dopo l'inserimento dei filtri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+Después de ingresar los filtros deseados, es posible imprimir informes estándar o personalizados (previa mapeo en la gestión de impresiones). En caso de desear imprimir un informe personalizado, es necesario seleccionarlo desde el listado en los parámetros de impresión.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios de impresión, puede consultar el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

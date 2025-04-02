@@ -1,93 +1,80 @@
 ---
-title: Regolarizzazione Valuta
+title: regolarizzazione valuta
 sidebar_position: 2
 ---
 
-La maschera si trova in Amministrazione > Registrazioni contabili > Procedure > Regolarizzazione valuta
+La máscara se encuentra en Administración > Registros contables > Procedimientos > Regularización de moneda (Regolarizzazione valuta).
 
-Questa procedura permette di calcolare in automatico, ad una certa data, le differenze cambio per i conti in valuta estera.
+Este procedimiento permite calcular automáticamente, en una fecha determinada, las diferencias de cambio para las cuentas en moneda extranjera.
 
-E' possibile gestire: 
+Es posible gestionar: 
 
-- crediti e debiti (clienti e fornitori) 
-- conti bancari
+- créditos y débitos (clientes y proveedores) 
+- cuentas bancarias
 
-**Vengono generate le partite aperte e le registrazioni contabili di adeguamento alla differenza cambio.**
+**Se generan las partidas abiertas y los registros contables de ajuste a la diferencia de cambio.**
 
-### Come calcolare e registrare le differenze cambio (ad esempio a fine anno o in altra data)
+### Cómo calcular y registrar las diferencias de cambio (por ejemplo, a fin de año o en otra fecha)
 
-- selezionare una divisa (una per volta), rispetto alla quale sarà eseguito il calcolo, tramite la combo box **Divisa** nella testata della maschera 
-- mediante i radio buttons sulla destra selezionare la tipologia di calcolo:
-    - Disponibilità: considera i saldi (es. bancari)
-    - Partite: legge crediti e debiti verso clienti / fornitori
-        - Attiva: clienti
-        - Passiva: fornitori
+- seleccionar una divisa (una por vez), respecto a la cual se ejecutará el cálculo, a través de la caja combinada **Divisa** en la cabecera de la máscara.  
+- mediante los botones de opción a la derecha, seleccionar el tipo de cálculo:
+    - Disponibilidad: considera los saldos (ej. bancarios)
+    - Partidas: lee créditos y débitos hacia clientes / proveedores
+        - Activa: clientes
+        - Pasiva: proveedores
 
-Il conto / sottoconto e la Divisione sono invece filtri opzionali per restringere la ricerca.
+La cuenta / subcuenta y la División son filtros opcionales para restringir la búsqueda.
 
-- Impostare in basso nella maschera la **data** di riferimento (ad esempio 31/12/AAAA) per la regolarizzazione (cioè il calcolo della differenza cambio)
-- Il valore del **cambio** corrispondente verrà caricato in base all risultanze della tabella [**cambi valute**](/docs/configurations/tables/finance/currency-exchange)
-- Premere Ricerca
----
-
-Nella griglia centrale che espone il dettaglio delle posizioni ricercate vengono evidenziati: 
-
-- **Conto / sottoconto** estratto dalla ricerca e da gestire 
-
-- **Importo in valuta** (espresso nella divisa estera), pari alla somma dare meno la somma avere in valuta di tutti i movimenti avvenuti sul conto 
-
-- **Importo (in euro) storico**, sommatoria dei movimenti dare in euro meno sommatoria dell’avere in euro, 
-
-- **Importo corrente** che corrisponde all’importo in valuta ricalcolato al tasso di cambio attuale (esposto in basso nella maschera)
-
-- **Differenza** cambio positiva o negativa.
+- Establecer en la parte inferior de la máscara la **fecha** de referencia (por ejemplo, 31/12/AAAA) para la regularización (es decir, el cálculo de la diferencia de cambio).  
+- El valor del **cambio** correspondiente se cargará de acuerdo con los resultados de la tabla [**cambios de divisas**](/docs/configurations/tables/finance/currency-exchange).  
+- Presionar Buscar.  
 
 ---
 
-Nella zona dei ***Parametri*** sono definiti i conti per l'utile o perdita su cambi con i quali sarà realizzata la contabilizzazione della regolarizzazione (ripresi dai parametri di contabilità generale)
+En la cuadrícula central que muestra el detalle de las posiciones buscadas, se destacan: 
 
-- Inserire la causale contabile desiderata per creare l contabilizzazione
+- **Cuenta / subcuenta** extraída de la búsqueda y a gestionar.  
+- **Importe en moneda** (expresado en la divisa extranjera), igual a la suma deudora menos la suma acreedora en moneda de todos los movimientos ocurridos en la cuenta.  
+- **Importe (en euros) histórico**, suma de los movimientos deudores en euros menos la suma de los acreedores en euros.  
+- **Importe corriente** que corresponde al importe en moneda recalculado al tipo de cambio actual (expuesto en la parte inferior de la máscara).  
+- **Diferencia** de cambio positiva o negativa.  
 
-- Premere il comando **Contabilizzazione**
+---
+
+En la zona de ***Parámetros*** se definen las cuentas para la ganancia o pérdida por cambios con las cuales se realizará la contabilización de la regularización (recogidas de los parámetros de contabilidad general).
+
+- Introducir la causante contable deseada para crear la contabilización.  
+- Presionar el comando **Contabilización**.  
 
 ---
 
 <details>
 
-  <summary>Uleriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Uleriori dettagli)</summary>
   
-Il flag **Provvisorie**: permette di generare la differenza di cambio come registrazione contabile provvisorie;
+El indicador **provvisorie**: permite generar la diferencia de cambio como registro contable provisional;  
 
-**Cambio**: con il quale viene calcolato il valore aggiornato. Viene proposto in automatico dal programma (dalla tabella cambio valute), ma può essere modificato dall'utente;
+**Cambio**: con el cual se calcula el valor actualizado. Se propone automáticamente por el programa (de la tabla de cambios de divisas), pero puede ser modificado por el usuario;  
 
-**Data** e **Numero** **documento** e **Causale** **contabile** relativa alla registrazione contabile da regolarizzare. **La data inserita rappresenta anche la data fino alla quale vengono selezionate le registrazioni contabili;**
+**Fecha** y **Número** **documento** y **Causante** **contable** relacionados con el registro contable a regularizar. **La fecha introducida también representa la fecha hasta la cual se seleccionan los registros contables;**  
 
-**Conti** **di ricavo** e **costo**: utilizzati per registrare le differenze di cambio;
+**Cuentas** **de ingreso** y **costo**: utilizadas para registrar las diferencias de cambio;  
 
+En la pestaña de *Rollback*, es posible visualizar y restaurar el resultado de las operaciones de regularización realizadas según los filtros establecidos (Desde fecha/Hasta fecha, la cuenta).  
 
-Nella tab di *Rollback* è possibile visualizzare e ripristinare il risultato delle operazioni di regolarizzazione eseguite in base ai filtri impostati (Da data/A data, il conto).
-
-**Ripristina regolarizzazione:** Pulsante per cancellare le operazioni di regolarizzazione selezionate nella griglia di risultato. |
+**Restaurar regularización:** Botón para borrar las operaciones de regularización seleccionadas en la cuadrícula de resultados. |  
 
 </details>
 
-:::danger[Attenzione]
-Di default, ogni **anagrafica cliente fornitore** che viene creata, attiva **nel piano dei conti il flag *Gestione divisa***. Questa opzione **non deve essere disattivata**, per non bloccare la possibilità di utilizzare la presente procedura e la corretta gestione della chiusura saldi in valuta estera.
+:::danger[Atención]
+Por defecto, cada **registro de cliente o proveedor** que se crea activa **en el plan de cuentas el indicador *Gestión de divisa***. Esta opción **no debe ser desactivada**, para no bloquear la posibilidad de utilizar este procedimiento y la correcta gestión del cierre de saldos en moneda extranjera.  
 
-**Nella gestione del conto in valuta**, sia esso un conto cliente o fornitore, oppure un conto bancario, consigliamo di **movimentare il conto in maniera uniforme**, definendo la divisa di movimentazione, esempio il dollaro, e movimentando sempre il conto in dollari.
+**En la gestión de la cuenta en moneda**, ya sea una cuenta de cliente o proveedor, o una cuenta bancaria, recomendamos **movimentar la cuenta de manera uniforme**, definiendo la divisa de movimiento, por ejemplo, el dólar, y siempre moviendo la cuenta en dólares.  
 
-Il movimento in valuta avrà, quindi, il tasso di cambio, riferito ad una certa data valuta, ed il controvalore in euro che alimenterà il nostro bilancio, espresso nella divisa della società, ad esempio l’EURO.
+El movimiento en moneda tendrá, por lo tanto, el tipo de cambio, referido a una cierta fecha de moneda, y el contravalor en euros que alimentará nuestro balance, expresado en la divisa de la empresa, por ejemplo, el EURO.  
 
-Movimentare un conto, ad esempio di un fornitore, contemporaneamente in due divise diverse, esempio dollaro per alcuni movimenti e la divisa cinese per altri, è possibile, ma consigliamo, se possibile, il mantenimento di due conti distinti, ognuno con una singola divisa di riferimento.
+Movimentar una cuenta, por ejemplo, de un proveedor, simultáneamente en dos divisas diferentes, por ejemplo, dólares para algunos movimientos y la divisa china para otros, es posible, pero recomendamos, si es posible, el mantenimiento de dos cuentas distintas, cada una con una única divisa de referencia.  
 
-**Sono** invece **da evitare**, per non compromettere la possibilità di corretto utilizzo della procedura che stiamo illustrando, **i movimenti euro su euro**, anche di giroconto o altra causale, **su un conto in divisa**.
+**Se** deben **evitar**, para no comprometer la posibilidad de uso correcto del procedimiento que estamos ilustrando, **los movimientos en euros sobre euros**, incluso de transferencia o cualquier otra causa, **en una cuenta en divisa**.  
 
 :::
-
-
-
-
-
-
-
-

@@ -1,32 +1,32 @@
 ---
-title: Fatturato acquisti
+title: fatturato acquisti
 sidebar_position: 9
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** e contiene dati necessari per la contabilizzazione dei documenti.
+La tabla se abre a través de la ruta **Tablas > Compras > fatturato acquisti (Tabelle > Acquisti > Fatturato acquisti)** y contiene datos necesarios para la contabilización de los documentos.
 
-*Campi specifici*:
+*Campos específicos (Campi specifici)*:
 
-**Tipo**: codice di identificazione del fatturato;
+**tipo**: código de identificación de la facturación;  
 
-**Descrizione**: descrizione del fatturato;
+**descrizione**: descripción de la facturación;  
 
-**Conto/Sottoconto/Descrizione sottoconto**: conto di costo utilizzato in contabilizzazione dei documenti;
+**Cuenta/Subcuenta/Descripción de la subcuenta (Conto/Sottoconto/Descrizione sottoconto)**: cuenta de costo utilizada en la contabilización de los documentos;  
 
-**Tipo IVA**: utilizzato nella registrazione della contabilizzazione del documento. Solitamente è impostato a generico, per altri dettagli verificarne l'utilizzo nelle causali contabili e nelle registrazioni contabili in area amministrativa;
+**tipo iva**: utilizado en el registro de la contabilización del documento. Generalmente está configurado como genérico; para más detalles, verificar su uso en las causales contables y en los registros contables en el área administrativa;  
 
-**Conto/Sottoconto analitico/Descrizione**: conto utilizzato per contabilizzare il documento in contabilità analitica.
+**Cuenta/Subcuenta analítica/Descripción (Conto/Sottoconto analitico/Descrizione)**: cuenta utilizada para contabilizar el documento en contabilidad analítica.  
 
-**Tipo/Descrizione**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l'[utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) contabile nelle registrazioni contabili in area amministrativa.
+**Tipo/Descripción (Tipo/Descrizione)**: utilizado en el registro de la contabilización del documento. Para más detalles, verificar su [uso](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) contable en los registros contables en el área administrativa.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
 
-:::note Note
-Se il *Tipo fatturato* viene inserito nell'*Anagrafica articoli* questo codice viene proposto nelle righe articolo del documento di acquisti e automatizza la contabilizzazione dei documenti su un determinato conto di contropartita.
+:::note Nota
+Si el *tipo fatturato* se inserta en el *anagrafica articoli*, este código se propone en las líneas del artículo del documento de compras y automatiza la contabilización de los documentos en una cuenta de contrapartida determinada.
 :::
 
-*Esempio di una fattura di acquisti*:
+*Ejemplo de una factura de compras (Esempio di una fattura di acquisti)*:
 
-Se quindi, il *Tipo fatturato* fosse presente già nell'*Anagrafica articolo*, nei documenti di acquisti lo troveremo riportato nel tab *Articoli*, nel campo *Fatturato acquisti*; nel caso in cui non sia presente in anagrafica articolo, è possibile andarlo a selezionare direttamente all'interno del documento di acquisti tramite l'apposita combo box.
+Si, por lo tanto, el *tipo fatturato* ya estaba presente en el *anagrafica articolo*, en los documentos de compras lo encontraremos mencionado en la pestaña *articoli*, en el campo *fatturato acquisti*; en caso de que no esté presente en el registro del artículo, es posible seleccionarlo directamente dentro del documento de compras a través de la caja combinada correspondiente.
 
-Nel caso in cui non venga inserito nell'anagrafica articolo e non ci si ricordi di andarlo ad inserire manualmente nel documento di acquisti, il sistema per non bloccare la contabilizzazione dei documenti, permette (se questa scelta risulta opportuna) di riprendere il sottoconto di contropartita di default che si è deciso di impostare nell'*Anagrafica contatto > tab Dati Contabili > tab Amministrazione* nel campo **Costo/Ricavo di contropartita predefinito**.
+En caso de que no se inserte en el registro del artículo y no se recuerde añadirlo manualmente en el documento de compras, el sistema, para no bloquear la contabilización de los documentos, permite (si esta opción resulta oportuna) tomar la subcuenta de contrapartida predeterminada que se decidió establecer en el *Registro de contactos (Anagrafica contatto) > pestaña Datos Contables (tab Dati Contabili) > pestaña Administración (tab Amministrazione)* en el campo **Costo/Ingreso de contrapartida predeterminado (Costo/Ricavo di contropartita predefinito)**.

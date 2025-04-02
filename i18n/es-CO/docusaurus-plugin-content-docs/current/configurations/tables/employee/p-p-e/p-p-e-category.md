@@ -1,28 +1,28 @@
 ---
-title: Categorie D.P.I.
+title: categorie d.p.i.
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > D.P.I. > Categorie D.P.I.**.
+La tabla se encuentra en la ruta **categorie d.p.i.**.
 
-In questa tabella è possibile codificare le *Categorie D.P.I.* che sono utilizzate per categorizzare i *D.P.I.*.   
-Un esempio di utilizzo lo troviamo nella gestione **D.P.I.**.
+En esta tabla es posible codificar las *categorie d.p.i.* que se utilizan para categorizar los *d.p.i.*.  
+Un ejemplo de uso lo encontramos en la gestión **d.p.i.**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-#### Ricerca Categorie D.P.I. 
+#### Búsqueda de categorie d.p.i. (Ricerca Categorie D.P.I.)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-#### Inserimento Categorie D.P.I. 
+#### Inserción de categorie d.p.i. (Inserimento Categorie D.P.I.)
 
-Per poter inserire nuove *Categorie D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *categorie d.p.i.*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici 
-    
-> **Codice**: è il codice della *Categoria D.P.I.*.   
-> **Descrizione**: è la descrizione della *Categoria D.P.I.*.   
-> **Note**: annotazioni libere.
+#### Campos específicos (Campi specifici)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **codice**: es el código de la *Categoría E.P.P. (Categoria D.P.I.)*.  
+> **descrizione**: es la descripción de la *Categoría E.P.P. (Categoria D.P.I.)*.  
+> **note**: anotaciones libres.
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

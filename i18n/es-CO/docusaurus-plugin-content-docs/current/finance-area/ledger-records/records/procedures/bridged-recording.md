@@ -1,26 +1,26 @@
 ---
-title: Gestione registrazioni provvisorie
+title: gestione registrazioni provvisorie
 sidebar_position: 1
 ---
 
-Con questa procedura è possibile modificare le registrazioni provvisorie presenti nella contabilità generale, per assegnare lo stato definitivo senza dover entrare in ognuna di queste a modificarne manualmente lo stato.
+Con este procedimiento es posible modificar los registros provisionales presentes en la contabilidad general, para asignar el estado definitivo sin necesidad de entrar en cada uno de ellos para modificar manualmente su estado.
 
-## Registrazioni
+## Registros (Registrazioni)
 
-Eseguendo la ricerca secondo i dati impostati nei campi di filtro, vengono visualizzate le scritture contabili in stato Provvisorio.
+Al realizar la búsqueda según los datos establecidos en los campos de filtro, se visualizan las escrituras contables en estado Provisional (Provvisorio).
 
-E' dunque possibile selezionare le scritture che si vuole porre in stato definitivo e procedere in alternativa a:
+Por lo tanto, es posible seleccionar las escrituras que se desean poner en estado definitivo y proceder alternativamente a:
 
-- entrare in visualizzazione nella registrazione (non potranno essere salvate modifiche)  
-- entrare in modifica della registrazione  
-- generare le scritture definitive a partire dalle provvisorie selezionate  
+- entrar en visualización del registro (no se podrán guardar modificaciones)  
+- entrar en modificación del registro  
+- generar las escrituras definitivas a partir de las provisionales seleccionadas  
 
-la trasformazione in scrittura definitiva avverrà con data definita nella parte bassa della form (è possibile allineare la data competenza contabile o variare quest'ultima) e impostare automaticamente la data pari all'ultima data di registrazione sul registro IVA.
+La transformación en escritura definitiva se llevará a cabo con la fecha definida en la parte inferior del formulario (es posible alinear la fecha de competencia contable o variar esta última) y establecer automáticamente la fecha igual a la última fecha de registro en el registro del IVA.
 
-La gestione del protocollo IVA avverrà coerentemente alle impostazioni della data registrazione e dei parametri che definiscono la coerenza data / numero di protocollo.
+La gestión del protocolo de IVA se llevará a cabo de manera coherente con las configuraciones de la fecha de registro y los parámetros que definen la coherencia entre fecha / número de protocolo.
 
-Anche il numero di registrazione seguirà i parametri di coerenza e recupero numeri in base alla data.
+También el número de registro seguirá los parámetros de coherencia y recuperación de números según la fecha.
 
-## Precedenti
+## Anteriores (Precedenti)
 
-Come di consueto è possibile ripristinare la singola registrazione contenuta nell'operazione di modifica, oppure l'intera operazione eseguita dall'utente in una determinata data.
+Como de costumbre, es posible restaurar el registro individual contenido en la operación de modificación, o bien la operación completa realizada por el usuario en una fecha determinada.

@@ -1,89 +1,89 @@
 ---
-title: Parametri nei moduli dell'area Acquisti e Vendite
+title: Parámetros en los módulos del área Compras y Ventas (Parametri nei moduli dell'area Acquisti e Vendite)
 sidebar_position: 35
 ---
 
-I documenti del ciclo passivo e attivo prevedono le loro impostazioni specifiche di valorizzazione dei *Centri aziendali*
+Los documentos del ciclo pasivo y activo prevén sus configuraciones específicas de valoración de los *Centros empresariales*.
 
-## Area acquisti
-Nell'area acquisti le configurazioni sono disponibili per le Richieste di acquisto, gli Ordini fornitori, le Bolle di acquisto e le Fatture di acquisto.
+## Área de compras (Area acquisti)
+En el área de compras, las configuraciones están disponibles para las Solicitudes de compra, los Pedidos a proveedores, las Guias de compra y las Facturas de compra.
 
-### Richieste di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* cioè fornitore associato alla riga di Richiesta
-    - *Magazzino* cioè il magazzino legato alla riga articolo
+### Solicitudes de compra (Richieste di acquisto)
+En los parámetros del módulo, pestaña *analitica*, tenemos la posibilidad de definir la prioridad de valoración de los centros entre:
+- *tipo fatturato*, es decir, en relación con el plan de cuentas asociado al volumen de compras del artículo.
+- *anagrafica articoli*, es decir, en relación con el artículo seleccionado.
+- *anagrafica*, es decir, el proveedor asociado a la línea de Solicitud.
+- *magazzino*, es decir, el almacén vinculado a la línea del artículo.
 
-### Ordini fornitori
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. richiesta di acquisto), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Centri di costo/ricavo obbligatori*: vincola l'utente a valorizzare al 100% l'analitica della singola riga articolo
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+### Pedidos a proveedores (Ordini fornitori)
+En los parámetros del módulo, pestaña *analitica*, tenemos la posibilidad de definir la prioridad de valoración de los centros entre:
+- *tipo fatturato*, es decir, en relación con el plan de cuentas asociado al volumen de compras del artículo.
+- *anagrafica articoli*, es decir, en relación con el artículo seleccionado.
+- *anagrafica*, proveedor titular del pedido.
+- *magazzino*, es decir, el almacén vinculado a la línea del artículo.
+Además, se presentan las siguientes opciones:
+- *ricalcolo*: cuando se crea el pedido desde un documento anterior (ej. solicitud de compra), esta opción activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.
+- *centri di costo/ricavo obbligatori*: obliga al usuario a valorar 100% la analítica de cada línea de artículo.
+- *valuta la priorità su ogni dimensione*: la opción está disponible solo para empresas con el *Controlling* activo. Si **no** está presente, ***FluentisERP*** aplicará la prioridad de búsqueda y detendrá su evaluación en la primera entidad que permita cualquier valoración de los centros empresariales. **Si está presente**, en cambio, ***FluentisERP*** aplicará la prioridad para valorar todas las dimensiones posibles que se hayan configurado en las diversas entidades de origen (es decir, la cuenta contable, del artículo, del almacén, del proveedor).
 
-### Bolle di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. ordine fornitore), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+### Guias de compra (Bolle di acquisto)
+En los parámetros del módulo, pestaña *analitica*, tenemos la posibilidad de definir la prioridad de valoración de los centros entre:
+- *tipo fatturato*, es decir, en relación con el plan de cuentas asociado al volumen de compras del artículo.
+- *anagrafica articoli*, es decir, en relación con el artículo seleccionado.
+- *anagrafica*, proveedor titular del pedido.
+- *magazzino*, es decir, el almacén vinculado a la línea del artículo.
+Además, se presentan las siguientes opciones:
+- *ricalcolo*: cuando se crea el pedido desde un documento anterior (ej. pedido a proveedor), esta opción activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.
+- *valuta la priorità su ogni dimensione*: la opción está disponible solo para empresas con el *Controlling* activo. Si **no** está presente, ***FluentisERP*** aplicará la prioridad de búsqueda y detendrá su evaluación en la primera entidad que permita cualquier valoración de los centros empresariales. **Si está presente**, en cambio, ***FluentisERP*** aplicará la prioridad para valorar todas las dimensiones posibles que se hayan configurado en las diversas entidades de origen (es decir, la cuenta contable, del artículo, del almacén, del proveedor).
 
-Nella procedura ***Creazione DDT da Ricevimento Merci*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+En el procedimiento **creazione ddt da ricevimento merci***, está disponible el parámetro de ***Recalculo de centros de costo/ingreso (Ricalcolo centri di costo/ricavo)***, que activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.
 
-### Fatture di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. bolla di acquisto), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+### Facturas de compra (Fatture di acquisto)
+En los parámetros del módulo, pestaña *analitica*, tenemos la posibilidad de definir la prioridad de valoración de los centros entre:
+- *tipo fatturato*, es decir, en relación con el plan de cuentas asociado al volumen de compras del artículo.
+- *anagrafica articoli*, es decir, en relación con el artículo seleccionado.
+- *anagrafica*, proveedor titular del pedido.
+- *magazzino*, es decir, el almacén vinculado a la línea del artículo.
+Además, se presentan las siguientes opciones:
+- *ricalcolo*: cuando se crea el pedido desde un documento anterior (ej. guia de compra), esta opción activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.
+- *valuta la priorità su ogni dimensione*: la opción está disponible solo para empresas con el *Controlling* activo. Si **no** está presente, ***FluentisERP*** aplicará la prioridad de búsqueda y detendrá su evaluación en la primera entidad que permita cualquier valoración de los centros empresariales. **Si está presente**, en cambio, ***FluentisERP*** aplicará la prioridad para valorar todas las dimensiones posibles que se hayan configurado en las diversas entidades de origen (es decir, la cuenta contable, del artículo, del almacén, del proveedor).
 
-Nella procedura ***Creazione Fatture da Ricevimento Merci*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+En el procedimiento ***Creación de Facturas a partir de Recepción de Mercancías (Creazione Fatture da Ricevimento Merci)***, está disponible el parámetro de ***Recalculo de centros de costo/ingreso (Ricalcolo centri di costo/ricavo)***, que activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.
 
-Nella procedura ***Valorizzazione DDT di acquisto*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+En el procedimiento **valorizzazione ddt di acquisto***, está disponible el parámetro de ***Recalculo de centros de costo/ingreso (Ricalcolo centri di costo/ricavo)***, que activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.
 
-Nella procedura ***Valorizzazione DDT di acquisto e di rientro*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+En el procedimiento **valorizzazione ddt di acquisto e di rientro***, está disponible el parámetro de ***Recalculo de centros de costo/ingreso (Ricalcolo centri di costo/ricavo)***, que activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.
 
-## Area vendite
-Nell'area vendite le configurazioni sono disponibili per gli Ordini clienti, le Bolle di vendita e le Fatture di vendita.
+## Área de ventas (Area vendite)
+En el área de ventas, las configuraciones están disponibles para los Pedidos de clientes, las Guias de venta y las Facturas de venta.
 
-### Offerte di vendita
+### Ofertas de venta (Offerte di vendita)
 
-### Ordini clienti
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Pedidos de clientes (Ordini clienti)
+En los parámetros del módulo, pestaña *analitica*, tenemos la posibilidad de definir la prioridad de valoración de los centros entre:
+- *tipo fatturato*, es decir, en relación con el plan de cuentas asociado al volumen de ventas del artículo.
+- *anagrafica articoli*, es decir, en relación con el artículo seleccionado.
+- *anagrafica*, proveedor titular del pedido.
+- *magazzino*, es decir, el almacén vinculado a la línea del artículo.
+Además, se presentan las siguientes opciones:
+- *valuta la priorità su ogni dimensione*: la opción está disponible solo para empresas con el *Controlling* activo. Si **no** está presente, ***FluentisERP*** aplicará la prioridad de búsqueda y detendrá su evaluación en la primera entidad que permita cualquier valoración de los centros empresariales. **Si está presente**, en cambio, ***FluentisERP*** aplicará la prioridad para valorar todas las dimensiones posibles que se hayan configurado en las diversas entidades de origen (es decir, la cuenta contable, del artículo, del almacén, del cliente).
 
-### Bolle di vendita
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Guias de venta (Bolle di vendita)
+En los parámetros del módulo, pestaña *analitica*, tenemos la posibilidad de definir la prioridad de valoración de los centros entre:
+- *tipo fatturato*, es decir, en relación con el plan de cuentas asociado al volumen de ventas del artículo.
+- *anagrafica articoli*, es decir, en relación con el artículo seleccionado.
+- *anagrafica*, proveedor titular del pedido.
+- *magazzino*, es decir, el almacén vinculado a la línea del artículo.
+Además, se presentan las siguientes opciones:
+- *valuta la priorità su ogni dimensione*: la opción está disponible solo para empresas con el *Controlling* activo. Si **no** está presente, ***FluentisERP*** aplicará la prioridad de búsqueda y detendrá su evaluación en la primera entidad que permita cualquier valoración de los centros empresariales. **Si está presente**, en cambio, ***FluentisERP*** aplicará la prioridad para valorar todas las dimensiones posibles que se hayan configurado en las diversas entidades de origen (es decir, la cuenta contable, del artículo, del almacén, del cliente).
 
-### Fatture di vendita
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili [*dimensioni*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Facturas de venta (Fatture di vendita)
+En los parámetros del módulo, pestaña *analitica*, tenemos la posibilidad de definir la prioridad de valoración de los centros entre:
+- *tipo fatturato*, es decir, en relación con el plan de cuentas asociado al volumen de ventas del artículo.
+- *anagrafica articoli*, es decir, en relación con el artículo seleccionado.
+- *anagrafica*, proveedor titular del pedido.
+- *magazzino*, es decir, el almacén vinculado a la línea del artículo.
+Además, se presentan las siguientes opciones:
+- *valuta la priorità su ogni dimensione*: la opción está disponible solo para empresas con el *Controlling* activo. Si **no** está presente, ***FluentisERP*** aplicará la prioridad de búsqueda y detendrá su evaluación en la primera entidad que permita cualquier valoración de los centros empresariales. **Si está presente**, en cambio, ***FluentisERP*** aplicará la prioridad para valorar todas las posibles [*dimensiones*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) que se hayan configurado en las diversas entidades de origen (es decir, la cuenta contable, del artículo, del almacén, del cliente).
 
-Nella procedura ***Creazione da DDT*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+En el procedimiento ***Creación desde DDT (Creazione da DDT)*** está disponible el parámetro de ***Recalculo de centros de costo/ingreso (Ricalcolo centri di costo/ricavo)***, que activa el recalculo de la analítica de acuerdo con los parámetros propios del módulo de destino.

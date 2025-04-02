@@ -1,25 +1,17 @@
 ---
-title: Registro dichiarazioni di intento
+title: Registro de declaraciones de intención (Registro dichiarazioni di intento)
 sidebar_position: 8
 ---
 
-La procedura consente di stampare il registro delle dichiarazioni di intento, sia quello clienti che fornitori, a seconda della selezione **Dichiarante** o **Ricevente**.
+El procedimiento permite imprimir el registro de declaraciones de intención, tanto el de clientes como el de proveedores, según la selección **dichiarante** o **ricevente**.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/intent-declaration-register/image01.png)
 
-Sono presenti anche dei campi di filtro per protocollo o per anagrafica del cliente o fornitore.
+También hay campos de filtrado por protocolo o por el registro del cliente o proveedor.
 
  
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del registro dichiarazioni di intento. |
-| Stampa | Pulsante per eseguire la stampa fisica del registro dichiarazioni di intento. |
-
-
-
-
-
-
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión del registro de declaraciones de intención. |
+| Imprimir (Stampa) | Botón para ejecutar la impresión física del registro de declaraciones de intención. |

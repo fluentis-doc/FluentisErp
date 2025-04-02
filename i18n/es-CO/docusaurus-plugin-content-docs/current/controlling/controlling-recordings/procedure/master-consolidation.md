@@ -1,15 +1,15 @@
 ---
-title: Consolidamento master
+title: consolidamento master
 sidebar_position: 5
 ---
 
-La procedura di ***Consolidamento master*** è dedicata alle installazioni multisocietarie: impostando la società master in una azienda, avremo modo di collegare il piano dei conti delle società ‘slave’ al conto della master.
+El procedimiento de **consolidamento master*** está dedicado a las instalaciones multiosociativas: al configurar la empresa maestra en una compañía, podremos conectar el plan de cuentas de las compañías ‘esclavas’ a la cuenta de la maestra.
 
-La procedura del consolidamento andrà a prelevare i dati dalla dimensione selezionata delle società slave per portarle nella master nella dimensione di destinazione.
-In questo passaggio si andrà a sostituire il sottoconto della riga d’origine con quella della società master, mentre per il centro di costo andremo a ricercare i centri *con lo stesso codice*.
+El procedimiento de consolidación tomará los datos de la dimensión seleccionada de las empresas esclavas para llevarlos a la maestra en la dimensión de destino.  
+En este paso, se reemplazará la subcuenta de la línea de origen con la de la empresa maestra, mientras que para el centro de costos se buscarán los centros *con el mismo código*.
 
 :::tip Nota
-Nel caso di sottoconti non mappati o centri non codificati in modo uniforme la procedura riporterà un errore
+En el caso de subcuentas no mapeadas o centros no codificados de manera uniforme, el procedimiento informará un error.
 :::
 
-Il risultato del consolidamento sarà quello di avere nella società Master i dati dello ***Storico registrazioni gestionali*** cumulate da tutte le società figlie, al fine di creare una reportistica di gruppo. Potenzialmente anche in questa società master potremo andare ad applicare una nuova serie di driver di calcolo
+El resultado de la consolidación será que en la empresa Maestra se tendrán los datos del **storico registrazioni gestionali*** acumulados de todas las empresas hijas, con el fin de crear una reportística de grupo. Potencialmente, en esta empresa maestra también podremos aplicar una nueva serie de controladores de cálculo.

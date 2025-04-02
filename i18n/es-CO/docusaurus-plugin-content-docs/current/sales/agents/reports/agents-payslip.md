@@ -1,14 +1,14 @@
 ---
-title: Cedolini agenti
+title: cedolini agenti
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Stampe*.
+El formulario se abre a través de la ruta *Ventas > Agentes > Liquidaciones de agentes > Impresiones (Vendite > Agenti > Liquidazioni agenti > Stampe)*.
 
-La stampa consente di estrarre dai documenti di vendita le provvigioni inserite sui vari agenti, indipendentemente dal criterio di maturazione della provvigione dell'agente.
+La impresión permite extraer de los documentos de venta las comisiones ingresadas en los diversos agentes, independientemente del criterio de acumulación de la comisión del agente.
 
-Nella sezione **Stampa le provvigioni del** si effettua la selezione del tipo di documento da considerare: l'ordine cliente (ordinato), il DDT di consegna (consegnato) o la fattura (venduto). A seconda di questa opzione cambierà il filtro del **Tipo documento**.
+En la sección **stampa le provvigioni del** se selecciona el tipo de documento a considerar: el pedido del cliente (ordenado), el DDT de entrega (entregado) o la factura (vendido). Dependiendo de esta opción, cambiará el filtro del **tipo documento**.
 
-Da segnalare l'opzione di stampa con il dettaglio per articolo: questa versione del report può essere utile per controllare la correttezza delle provvigioni inserite dal sistema e poter individuare errori di impostazioni dell'anagrafica agente.
+Cabe destacar la opción de impresión con detalle por artículo: esta versión del informe puede ser útil para verificar la corrección de las comisiones ingresadas por el sistema y poder identificar errores en la configuración del registro del agente.
 
-Più dettagli su questo argomento negli articoli: [Ricerca dati nelle form di sola lettura ](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) e [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 
+Más detalles sobre este tema en los artículos: [Búsqueda de datos en formularios de solo lectura (Ricerca dati nelle form di sola lettura)](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) y [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports)

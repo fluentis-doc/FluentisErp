@@ -1,50 +1,44 @@
 ---
-title: Parametri
+title: parametri
 sidebar_position: 3
 ---
 
-All'interno della sezione **Parametri** la procedura riporta tutte le righe di dettaglio degli articoli inseriti nei documenti selezionati, riportando da ognuno di questi i dati prelevati dal documento. In particolare:
+Dentro de la sección **parametri**, el procedimiento muestra todas las filas de detalle de los artículos ingresados en los documentos seleccionados, reportando de cada uno de ellos los datos extraídos del documento. En particular:
 
 ![](/img/it-it/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters/image01.png)
 
  
 
-**Stato e codice IVA**: sono presi dall'anagrafica del soggetto intestatario;
+**Estado y código IVA (Stato e codice IVA)**: se obtienen de la ficha del sujeto titular;  
 
-**Valore** **in divisa**: presenta il dato dell'importo articolo (prezzo*quantità-sconti) nella divisa della fattura d'acquisto (il campo è presente solo per l'intra2);
+**Valor en moneda (Valore in divisa)**: presenta el dato del importe del artículo (precio * cantidad - descuentos) en la moneda de la factura de compra (el campo solo está presente para intracomunitarios);  
 
-**Ammontare operazioni euro**: prende l'importo dell'articolo al cambio inserito in fattura;
+**ammontare operazioni euro**: toma el importe del artículo al tipo de cambio ingresado en la factura;  
 
-**Natura della transazione**: è ripreso dal tipo documento;
+**Naturaleza de la transacción (Natura della transazione)**: se extrae del tipo de documento;  
 
-**Nomenclatura combinata**: dalla riga articolo in fattura e, se vuoto, dall'anagrafica articoli;
+**nomenclatura combinata**: de la línea del artículo en la factura y, si está vacío, de la ficha de artículos;  
 
-**Massa netta**: calcolata sulla base del peso impostato nell'anagrafica articolo;
+**massa netta**: calculada sobre la base del peso establecido en la ficha del artículo;  
 
-**Unità suppl.**: può essere calcolata automaticamente se il codice nomenclatura prevede una seconda unità di misura, attraverso la conversione tra unità di misura gestionale e questa, secondo i fattori di conversione impostati nell'articolo;
+**unità suppl.**: puede ser calculada automáticamente si el código de nomenclatura prevé una segunda unidad de medida, a través de la conversión entre unidad de medida de gestión y esta, de acuerdo con los factores de conversión establecidos en el artículo;  
 
-**Valore statistico** viene calcolato in più modi a seconda delle impostazioni (variazione percentuale rispetto all'anagrafica cliente/fornitore, oppure incrementato dalle spese inserite in modo specifico nel documento);
+**valore statistico** se calcula de varias maneras según las configuraciones (variación porcentual respecto a la ficha del cliente/proveedor, o incrementada por los gastos insertados de manera específica en el documento);  
 
-**Codice trasporto e Modalità trasporto** sono inseriti rispetto ai codici porto/spedizione assegnati al documento;
+**Código de transporte y Modalidad de transporte (Codice trasporto e Modalità trasporto)** se ingresan respecto a los códigos de puerto/envío asignados al documento;  
 
-**Dati relativi alle provincie di origine/destinazione **e al** paese di provenienza/destinazione** sono letti dall'anagrafica del soggetto intestatario del documento o dalla tabella società.
+**Datos relativos a las provincias de origen/destino (Dati relativi alle provincie di origine/destinazione)** y al **país de procedencia/destino (paese di provenienza/destinazione)** se leen de la ficha del sujeto titular del documento o de la tabla de la sociedad.
 
-Alla fine della griglia sono visualizzati i riferimenti al documento d'origine della riga.
+Al final de la cuadrícula se visualizan las referencias al documento de origen de la fila.
 
-Una volta completati i dati necessari nel modello (e questo dipende dal flag Semplificata inserito in testata della dichiarazione ma anche dal tipo di periodo del riepilogo) è possibile procedere alla creazione del modello, operazione che andrà a riportare i dettagli nelle sezioni bis/ter/quater a seconda della natura della transazione Intrastat (il tipo 2 viene riportato nella sezione Ter relativo alle rettifiche, il tipo “S” nella sezione quater). E' possibile procedere, prima ancora di questo spostamento, ad un primo raggruppamento degli importi: questa operazione sarà però effettuata documento per documento, causando un primo arrotondamento dati all'unità.
+Una vez completados los datos necesarios en el modelo (y esto depende del indicador Simplificado incluido en el encabezado de la declaración, pero también del tipo de período del resumen), es posible proceder a la creación del modelo, operación que llevará los detalles a las secciones bis/ter/quater según la naturaleza de la transacción Intrastat (el tipo 2 se reporta en la sección Ter relativo a las correcciones, el tipo “S” en la sección quater). Es posible proceder, incluso antes de este movimiento, a un primer agrupamiento de los importes: esta operación se llevará a cabo documento por documento, causando un primer redondeo de los datos a la unidad.
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Cancella | Pulsante per cancellare le fatture di tipo intracomunitario selezionate. |
-| Creazione | Esegue la creazione del modello intrastat riportando i dati presenti nella presente Tab all'interno delle sezioni del modello |
-| Crear | Esegue la cancellazione di tutte le righe dalla griglia |
-| Raggruppa | Esegue il raggruppamento delle righe in base al soggetto destinatario delle fatture ed agli altri dati omogenei |
-| Salva | Permette di salvare i dati immessi al fine, ad esempio, di proseguire in un secondo tempo |
-
-
-
-
-
-
+| Eliminar (Cancella) | Botón para eliminar las facturas intracomunitarias seleccionadas. |
+| Creación (Creazione) | Ejecuta la creación del modelo Intrastat reportando los datos presentes en esta pestaña dentro de las secciones del modelo. |
+| Crear (Crear) | Ejecuta la eliminación de todas las filas de la cuadrícula. |
+| Agrupar (Raggruppa) | Ejecuta el agrupamiento de las filas según el sujeto destinatario de las facturas y otros datos homogéneos. |
+| Guardar (Salva) | Permite guardar los datos ingresados para, por ejemplo, continuar en un segundo momento. |

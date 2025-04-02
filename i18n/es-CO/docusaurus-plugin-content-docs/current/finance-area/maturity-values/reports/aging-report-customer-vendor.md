@@ -1,31 +1,25 @@
 ---
-title: Report di aging
+title: Report de envejecimiento (Report di aging)
 ---
 
-Da questa form è possibile lanciare la stampa del Report di aging.
+Desde este formulario es posible generar la impresión del Reporte de envejecimiento.
 
-Questa particolare stampa è pensata per fornire, a colpo d'occhio, una situazione, sia per i fornitori sia per i clienti, sulla composizione delle partite scadute ed a scadere per categorie temporali.
+Esta impresión particular está diseñada para proporcionar, de un vistazo, una situación tanto para proveedores como para clientes, sobre la composición de las partidas vencidas y por vencer por categorías temporales.
 
-Esempio: è possibile selezionare innanzitutto una categoria alla volta, concentrandosi ad esempio sui clienti (ed eventualmente selezionando solo i clienti italiani) ed ottenere una visione dello scaduto suddiviso in scaglioni da 0 a 30 giorni, da 30 a 60 giorni ed oltre 60 giorni. Lo stesso dicasi per le partite a scadere, ottendo una suddivisione su tre scaglioni per valutare le quote a più breve scadenza rispetto a quelle più lontane nel tempo.
+Ejemplo: se puede seleccionar primero una categoría a la vez, enfocándose por ejemplo en los clientes (y eventualmente seleccionando solo a los clientes italianos) y obtener una visión de lo vencido dividida en tramos de 0 a 30 días, de 30 a 60 días y más de 60 días. Lo mismo ocurre con las partidas por vencer, obteniendo una división en tres tramos para evaluar las cuotas con vencimiento más cercano en comparación con aquellas más distantes en el tiempo.
 
-La stampa presenta una legenda in alto per la comprensione dei totali scaduto ed a scadere (TOT = A + B + C...)
+La impresión presenta una leyenda en la parte superior para la comprensión de los totales vencidos y por vencer (TOT = A + B + C...)
 
-Gli scaglioni di suddivisione delle partite sono liberamente impostabili dall'utente in termini di numero di giorni.
+Los tramos de división de las partidas son libremente configurables por el usuario en términos de número de días.
 
-La sezione Giorni è infatti l'elemento specifico della form per questa stampa, e permette di inserire il numero di giorni, con segno negativo (obbligatorio) per lo scaduto e positivo per le partite a scadere per determinare l'ampiezza degli scagioni di raggruppamento.
+La sección Días es, de hecho, el elemento específico del formulario para esta impresión, y permite ingresar el número de días, con signo negativo (obligatorio) para lo vencido y positivo para las partidas por vencer, con el fin de determinar la amplitud de los tramos de agrupamiento.
 
 ![](/img/it-it/finance-area/maturity-values/reports/aging-report-customer-vendor/image01.png)
 
-La lettura nella stampa sarà da sinistra (scaduto) a destra (a scadere) e pertanto si consiglia di rispettare la logica dei campi che sono numerati da 1 (sarà quello più a sinistra e pertanto scaduto più "vecchio") a 6 (a scadere più lontano nel tempo) dove il campo 1 avrà un numero negativo maggiore che andrà a ridursi passando a 2 e 3 fino ad azzerarsi e crescere in positivo.
+La lectura en la impresión será de izquierda (vencido) a derecha (por vencer) y, por lo tanto, se recomienda respetar la lógica de los campos que están numerados del 1 (será el más a la izquierda y, por ende, el vencido más "viejo") al 6 (el por vencer más distante en el tiempo), donde el campo 1 tendrá un número negativo mayor que se irá reduciendo al pasar a 2 y 3 hasta llegar a cero y crecer en positivo.
 
-Gli **altri campi della form** sono i medesimi utilizzati in altre stampe del modulo. ** [Vedere qui per maggiori dettagli.](/docs/finance-area/maturity-values/reports/customer-vendor-due-register) **
+Los **otros campos del formulario** son los mismos utilizados en otras impresiones del módulo. **[Ver aquí para más detalles (Vedere qui per maggiori dettagli).](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

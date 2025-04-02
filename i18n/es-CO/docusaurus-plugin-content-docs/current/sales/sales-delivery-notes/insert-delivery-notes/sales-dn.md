@@ -1,192 +1,192 @@
 ---
-title: Nuovo DDT di vendita
+title: Nuevo DDT de venta (Nuovo DDT di vendita)
 sidebar_position: 2
 ---
 
-La form **Crea DDT di vendita** si apre tramite il percorso **Vendite > DDT > Crea DDT di vendita** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca DDT di vendita](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
+El formulario **Crear DDT de venta (Crea DDT di vendita)** se abre a través de la ruta **Ventas > DDT > Crear DDT de venta (Vendite > DDT > Crea DDT di vendita)** o mediante el botón **nuovo** que se encuentra en el formulario [Buscar DDT de venta](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
 
-## *Come creare un DDT di vendita*
+## *Cómo crear un DDT de venta*
 
-## **1. Dati obbligatori**
+## **1. Datos obligatorios**
 
-Per continuare la creazione del DDT di vendita, l'utente deve inserire i campi obbligatori:
-- **Tipo DDT**: predefinito in  *Configurazione > Tabelle > Vendite> [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type)*.
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di DDT prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente.    
-- **Cliente**: digitabile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati oppure usando la procedura automatica, se si sceglie di creare i documenti tramite l'[Evasione DDT da ordine cliente](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn).  Inserendo il cliente, vengono automaticamente popolati, se presenti in anagrafia, i seguenti campi, che spiegheremo nelle sezioni successive: divisa, nazione, lingua, zona, spedizione, listino ed eventuali sconti, pagamenti, sconti, spese, agenti, destinazione, vettori, extra data.               
-- **Data**: indica la data di creazione del DDT. Questa data è fondamentale per il calcolo delle scadenze e delle eventuali condizioni di pagamento. Viene proposta la data odierna, modificabile; nel caso in cui la numerazione preveda una progressione di data e numero, e io inserisca una data nel passato, Fluentis controllerà la disponibilità di numeri in quella data per garantire la progressione, e se non presente segnalerà l’utente che non ci sono numeri disponibili in quella data. 
+Para continuar con la creación del DDT de venta, el usuario debe ingresar los campos obligatorios:
+- **tipo ddt**: predeterminado en *Configuración > Tablas > Ventas > [Tipos DDT](/docs/configurations/tables/sales/delivery-notes-type)*.
+- **numero**: a cada documento se le asigna un número según la numeración especificada por el usuario y el tipo de documento que contiene la numeración. La numeración asociada a la tipología de DDT generalmente prevé una progresión automática basada en la fecha y el número, con una función de recuperación que cubre posibles huecos en la secuencia (por ejemplo, causados por la eliminación de documentos). Este comportamiento está regulado por dos indicadores específicos en la tabla de numeración. Si el usuario desea ingresar manualmente el número, puede desactivar el indicador de progresión fecha-número (que asegura el incremento de la numeración en fechas futuras) y el indicador de recuperación de números. Además, deberá habilitar el indicador de numeración externa, indicando así al sistema que la numeración será gestionada manualmente.  
+- **cliente**: ingresable usando el [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), tecleando [directamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) los datos o usando el procedimiento automático, si se elige crear los documentos a través de la [Evasión DDT de orden del cliente](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). Al ingresar el cliente, se completan automáticamente, si están presentes en el registro, los siguientes campos, que explicaremos en las secciones posteriores: divisa, país, idioma, zona, envío, lista de precios y posibles descuentos, pagos, gastos, agentes, destino, transportistas, datos adicionales.  
+- **data**: indica la fecha de creación del DDT. Esta fecha es fundamental para el cálculo de los plazos y las posibles condiciones de pago. Se propone la fecha actual, que es modificable; en caso de que la numeración prevea una progresión de fecha y número, y si ingreso una fecha en el pasado, Fluentis comprobará la disponibilidad de números en esa fecha para asegurar la progresión, y si no están disponibles, notificará al usuario que no hay números disponibles en esa fecha.
 
-La form contiene una serie di tab.
+El formulario contiene una serie de pestañas.
 
-## **2. Testata**
+## **testata**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
+Después de haber seleccionado los datos obligatorios en la sección superior, el usuario puede continuar ingresando los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), o bien, de acuerdo con los procedimientos que elija, la aplicación completa los campos *automáticamente*.
 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+:::note Recuerda
+Si el documento es *creado automáticamente*, estos datos son tomados del *documento de origen* de donde se generó.
 :::
 
-Inserendo il **Cliente**, vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
+Al ingresar el **Cliente**, se *proponen* automáticamente todos los datos específicos de la pestaña **testata**, según los datos configurados previamente en el [registro del cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), en los campos correspondientes a su dirección y en las *secciones*:  
+- **divisa**: sección que contiene los datos de [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de divisa](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **nazione**: sección que contiene los datos de [País](/docs/guide/common/glossary/glossary-intro#country), [Idioma](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
+- **spedizione**: sección que contiene los datos de [Envío](/docs/guide/common/glossary/glossary-intro#shipment), [Puerto](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Lista de precios](/docs/guide/common/glossary/glossary-intro#sales-price-list) (en el encabezado del documento se inserta la lista de precios configurada en el registro del cliente con el indicador Predeterminado) con el tipo de escala de descuento y su [intervalo de validez](/docs/guide/common/glossary/glossary-intro#validity-date).
 
-####  Altri campi testata
+#### Otros campos del encabezado
 
-- **Stampata**: si attiva quando viene lanciata la stampa del documento ed identifica che il documento è stato stampato; questo flag è importante anche per permettere l'evasione del DDT in altri documenti.      
-- **Scaricata**: questo flag si attiva automaticamente quando il documento viene movimentato a magazzino, con il bottone della barra degli strumenti *Scarico automatico* o con le procedure a disposizione.     
-- **Valorizzata**: questo flag si attiva quando il DDT viene valorizzato in fattura.   
-- **Valorizzata parzialmente**: questo flag indica che il DDT è staato valorizzato solo parzialmente in fattura. 
-- **Valorizzata forzatamente**: questo flag si attiva se il DDT è stato chiuso forzatamente con l'evasione forzata degli articoli; per esempio, quando il residuo non sarà consegnato e il documento viene considerato chiuso anche se non lo sarebbe.
-- **Annullata**: il flag attivo permette di annullare l'ordine.      
+- **stampata**: se activa cuando se imprime el documento e identifica que el documento ha sido impreso; este indicador también es importante para permitir el cumplimiento del DDT en otros documentos.  
+- **scaricata**: este indicador se activa automáticamente cuando el documento es movido al almacén, con el botón de la barra de herramientas *Descarga automática* o con los procedimientos disponibles.  
+- **valorizzata**: este indicador se activa cuando el DDT es valorado en la factura.  
+- **valorizzata parzialmente**: este indicador señala que el DDT ha sido valorado solo parcialmente en la factura.  
+- **valorizzata forzatamente**: este indicador se activa si el DDT ha sido cerrado forzosamente con la evasión forzada de los artículos; por ejemplo, cuando el residuo no será entregado y el documento se considera cerrado aunque no lo estaría.
+- **annullata**: el indicador activo permite anular el pedido.  
 
 :::note
-I flag possono essere tolti con le procedure di ripristino operazione.
+Los indicadores pueden ser eliminados con los procedimientos de restauración de operación.
 :::
 
-- **Codice Unico di Progetto/Codice Identificatico di Gara**: se nelle [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) dell'anagrafica cliente esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento.    
-- **Annotazioni cliente**: questo campo viene ripreso dall'ordine che ha creato il DDT, ma può essere inserito anche manualmente.
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il documento; nel caso in cui il DDT venga generato tramite una procedura di creazione automatica, questi campi verranno popolati con le indicazioni presenti nell'documento d'origine (questo trasferimento è valido solo nel caso di DDT creato tramite il prelievo dei dati da un solo documento d'origine).   
-- **Riferimento al Numero Ordini Cliente**: in questo campo viene inserito in automatico l'ordine da cui deriva il DDT.
-- **Riferimento alla Data Ordini cliente**: in questo campo viene inserito in automatico la data dell'ordine da cui deriva il DDT; insieme al campo precedente, crea i dati necessari al tag 2.1.2 del file xml della fattura elettronica, quando essa verrà creata; se non compilati verrà preso invece il campo Vostro Riferimento.     
-- **Note iniziali DDT**: si possono selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*; per questo l'utente deve effettuare doppio click sul campo per aprire l'Help e selezionare i dati; altrimenti può inserirle manualmente.       
-- **Progetto**: è possibile associare un progetto al documento.    
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Home > Dipendenti*; il dato diventa obbligatorio se l'opzione è impostata nei [Parametri](/docs/configurations/parameters/sales/dn-parameters) del documento stesso.     
-- **Stato evasione**: quando l'ordine è evaso tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la data evasione.
-- **Decorrenza** è la data di decorrenza per il calcolo delle scadenze di pagamento.      
-- **Audit Trail**: come in tutti i documenti, questa sezione riporta la data di creazione del documento con l'operatore, e la data di ultima modifica del documento con l'operatore.   
+- **Código Único de Proyecto/Código Identificativo de Licitación (Codice Unico di Progetto/Codice Identificatico di Gara)**: si en la [información fiscal](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) del registro del cliente está habilitada la gestión de CIG y CUP, será posible completar estos datos en el documento.  
+- **annotazioni cliente**: este campo se toma del pedido que creó el DDT, pero también se puede ingresar manualmente.
+- **Nuestra referencia/Su referencia (Nostro riferimento/vostro riferimento)**: en estos campos generalmente se indica una referencia interna y una referencia del cliente para el documento; en caso de que el DDT se genere mediante un procedimiento de creación automática, estos campos se llenarán con las indicaciones presentes en el documento de origen (este traspaso es válido solo en caso de DDT creado a partir de los datos de un solo documento de origen).  
+- **Referencia al Número de Pedidos del Cliente (Riferimento al Numero Ordini Cliente)**: en este campo se inserta automáticamente el pedido del cual deriva el DDT.
+- **Referencia a la Fecha de Pedidos del Cliente (Riferimento alla Data Ordini cliente)**: en este campo se inserta automáticamente la fecha del pedido del cual deriva el DDT; junto con el campo anterior, crea los datos necesarios para la etiqueta 2.1.2 del archivo xml de la factura electrónica, cuando se genere; si no se completan, se tomará en su lugar el campo Su Referencia.  
+- **note iniziali ddt**: se pueden seleccionar las notas que se han insertado previamente en la tabla homónima que se encuentra en el camino *Configuración > Utilidades > Gestión de notas codificadas*; para esto, el usuario debe hacer doble clic en el campo para abrir la Ayuda y seleccionar los datos; de lo contrario, puede ingresarlas manualmente.  
+- **progetto**: es posible asociar un proyecto al documento.  
+- **operatore**: permite insertar al usuario que crea el documento. Los empleados se han insertado previamente en la tabla *Inicio > Empleados*; el dato se vuelve obligatorio si la opción está configurada en los [Parámetros](/docs/configurations/parameters/sales/dn-parameters) del documento en sí.  
+- **stato evasione**: cuando el pedido es cumplido mediante los documentos DDT o facturas, su estado de cumplimiento cambia automáticamente de *No cumplido* a *Parcialmente cumplido* o *Cumplido*; el usuario puede forzar el cumplimiento de un pedido no totalmente cumplido y cuando esto sucede, también se guarda la fecha de cumplimiento.
+- **decorrenza** es la fecha de inicio para el cálculo de los plazos de pago.  
+- **audit trail**: como en todos los documentos, esta sección muestra la fecha de creación del documento con el operador, y la fecha de última modificación del documento con el operador.  
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> [Evasione da ordini](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (vedere la documentazione relativa).    
-> [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (vedere la documentazione relativa)   
-> **Help destinatari/destinazioni**: questo bottone apre l'Help per poter scegliere il destinatario/destinazione per il documento, tra quelli disponibili per il cliente e quindi codificati nella sua anagrafica.      
-> **Inserisci agente nelle righe**: questo pulsante fa aprire un pop nel quale inserire un'anagrafica agente, che verrà spalmata in tutte le righe articolo, aggiungendosi eventualmente ad Agenti già presenti.           
-> **Sostituisci CIG/CUP nelle righe**: dopo aver specificato CIG e/o CUP in testata, è possibile sostituire in massa tali dati nelle righe articolo già inserite.      
-> **Cancella**: cancella gli sconti selezionati nel tab *Sconti* della Testata.          
+> [Cumplimiento desde pedidos (Evasione da ordini)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (ver la documentación relacionada).  
+> [Descarga automática (Scarico automatico)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (ver la documentación relacionada)  
+> **help destinatari/destinazioni**: este botón abre la Ayuda para elegir el destinatario/destino para el documento, entre los disponibles para el cliente y por lo tanto codificados en su registro.  
+> **inserisci agente nelle righe**: este botón abre un popup donde insertar un registro de agente, que se aplicará en todas las líneas del artículo, sumándose eventualmente a los Agentes ya presentes.  
+> **Reemplazar CIG/CUP en las líneas (Sostituisci CIG/CUP nelle righe)**: después de especificar CIG y/o CUP en el encabezado, es posible reemplazar masivamente esos datos en las líneas del artículo ya ingresadas.  
+> **cancella**: elimina los descuentos seleccionados en la pestaña *sconti* del Encabezado.  
 
-Nella testata sono poi presenti alcune tab che analizziamo di seguito. 
+En el encabezado también hay algunas pestañas que analizaremos a continuación.
 
-### 2.1 Pagamenti
+### 2.1 Pagos (Pagamenti)
 
-Le **Soluzioni di pagamento** sono riportate in automatico dal documento di origine o dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.        
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale ordine.
+Las **soluzioni di pagamento** se reportan automáticamente desde el documento de origen o desde la *Anagrafica cliente > pestaña Pagos* y pueden ser modificadas/eliminadas por el usuario.  
+Si al **tipo pagamento** está asociado un descuento financiero, el importe del descuento se considera solo a efectos contables, es decir, en los plazos del documento y no en el total del pedido.
 
-#### Pulsante specifico*
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+#### Botón específico*
+> **cancella pagamenti**: utilizado para eliminar las filas de pago seleccionadas.
 
-### 2.2 Sconti
+### 2.2 Descuentos (Sconti)
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Se proponen solo los descuentos predeterminados extraídos de la *Anagrafica cliente > pestaña Descuentos* y pueden ser modificados/eliminados por el usuario.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-### 2.3 Agenti
+### 2.3 Agentes (Agenti)
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab *Agenti*.
+Indica el código de agente y su comisión para cada línea de artículo. Se propone el código y el porcentaje definidos en la *Anagrafica cliente > pestaña Agentes*.  
+Si la comisión no está relacionada con el cliente en su registro, el agente debe ser ingresado, pero con comisión NULL porque si fuera con comisión 0, significaría que el agente está vinculado al cliente pero no recibe comisión.  
+La misma sección se volverá a proponer para cada línea de artículo en su pestaña *Agentes*.
 
-#### Pulsante specifico*
-> **Cancella agenti**: permette di cancellare gli agenti selezionati.
+#### Botón específico*
+> **cancella agenti**: permite eliminar los agentes seleccionados.
 
-### 2.4 Extra Data
+### 2.4 Datos adicionales (Extra Data)
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-## Procedure testata:
+## Procedimientos del encabezado:
 
-### *Evasione da ordine*
+### *Cumplimiento desde pedido (Evasione da ordine)*
 
-Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini confermati del cliente del documento e trasferirli nel DDT. E' possibile eseguire l'operazione di creazione DDT da ordine anche dalla [Ricerca ordini](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
+En el encabezado del DDT, al presionar el botón **Cumplimiento desde pedido (Evasione da ordine)** se abrirá el formulario donde se puede filtrar los pedidos confirmados del cliente del documento y transferirlos al DDT. También es posible realizar la operación de creación de DDT desde el pedido desde la [Búsqueda de pedidos](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
-Tramite questa procedura è possibile creare un DDT di vendita dall'evasione del relativo ordine cliente. E' quindi possibile inserire gli articoli all'interno del DDT, evadendo totalmente o parzialmente un intero ordine o una riga.
+A través de este procedimiento es posible crear un DDT de venta desde el cumplimiento del pedido correspondiente. Por lo tanto, es posible insertar los artículos dentro del DDT, cumpliendo total o parcialmente un pedido completo o una línea.
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
+Para poder utilizar este procedimiento hay algunas condiciones iniciales que deben cumplirse:
 
- -  i/il cliente degli ordini deve essere lo stesso del DDT;
- -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato* e la *Data conferma ordine*;
- -  nella tabella [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type) deve essere presente il flag su *Ordine* (che indica che il DDT può derivare da un ordine).    
- - solo se la procedura viene eseguita dalla Ricerca ordini, i tipi documento devono essere compatibili: nella tabella [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) il tipo ordine che si vuole evadere deve avere impostato il tipo DDT corrispondente.        
+- el cliente de los pedidos debe ser el mismo que el del DDT;  
+- el pedido que se desea cumplir debe tener habilitado el indicador *stampato* y la *data conferma ordine*;  
+- en la tabla [Tipos DDT](/docs/configurations/tables/sales/delivery-notes-type) debe estar presente el indicador de *Pedido* (que indica que el DDT puede derivar de un pedido).  
+- solo si el procedimiento se ejecuta desde la Búsqueda de pedidos, los tipos de documentos deben ser compatibles: en la tabla [Tipos de pedido](/docs/configurations/tables/sales/sales-order-types) el tipo de pedido que se desea cumplir debe tener el tipo de DDT correspondiente habilitado.  
 
-Si dovrà poi andare ad impostare nella testata del nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
+Luego, se deberá configurar en el encabezado del nuevo DDT, el *Tipo DDT* que se desea crear (que debe corresponder al establecido en la tabla de *Tipos de pedidos*) y el *Cliente*. Una vez que se han ingresado estos datos, debe hacer clic en el botón *evasione ordini* para abrir el formulario de cumplimiento.
 
-#### Procedimento:
+#### Procedimiento:
 
-I filtri per cliente e divisa verranno riportati in automatico in base al cliente selezionato nel DDT.
+Los filtros para cliente y divisa se trasladarán automáticamente según el cliente seleccionado en el DDT.
 
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verrà visualizzata nella griglia una riga per ciascun ordine stampato, confermato e non evaso oppure evaso parzialmente.
+Una vez establecidos todos los *Filtros* deseados, al hacer clic en el botón de *Búsqueda*, se mostrará en la cuadrícula una fila por cada pedido impreso, confirmado y no cumplido o cumplido parcialmente.
 
 :::note Nota
-La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate.
+El procedimiento toma todos los datos presentes en el pedido y como consecuencia se aplicarán las condiciones de compra presentes en el pedido, incluso si estas han cambiado actualmente.
 :::
 
 :::note Nota
-Le righe di tipo Nota saranno sempre visibili, anche se già evase, fino a quando tutte le righe delle altre tipologie saranno evase.
+Las filas de tipo Nota siempre serán visibles, incluso si ya han sido cumplidas, hasta que todas las filas de otros tipos hayan sido cumplidas.
 :::
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+En la cuadrícula de resultados, el usuario tiene la posibilidad de:
 
- 1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
- 2. selezionare solo *alcuni* degli *articoli* proposti. Per farlo basterà selezionare il flag presente all'inizio della riga articolo.
- 3. selezionare solo *alcuni articoli* per una *determinata quantità*. In questo caso dovrà andare a modificare la quantità da evadere.
+1. seleccionar el *pedido completo*. Para hacerlo, basta con seleccionar el indicador presente al principio de la fila del pedido.
+2. seleccionar solo *algunos* de los *artículos* propuestos. Para hacerlo, basta con seleccionar el indicador presente al principio de la fila del artículo.
+3. seleccionar solo *algunos artículos* para una *cantidad determinada*. En este caso, deberá modificar la cantidad a cumplir.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.
+Para completar el procedimiento, deberá hacer clic en el botón *Transferencia*, que tomará todos los datos presentes en el pedido y los trasladará al DDT.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Ricerca** permette di cercare gli ordini fornitore.  
-> **Trasferimento** permette di trasferire i dati dell'ordine selezionato all'interno del nuovo DDT.  
-> **Evasione forzata dell'ordine** permette l'evasione forzata dell'ordine; nel caso in cui vengano selezionate alcune righe dell'ordine, verranno evase forzatamente solo le righe selezionate (con l'aggiunta del flag *Evaso forzato* in corrispondenza della riga articolo); nel caso venga evaso l'ordine intero, esso cambierà lo stato anche in testata.  
-> **Evasione ordini** permette l'evasione dell'ordine.  
-> **Espandi** permette di espandere l'intero albero degli ordini nella griglia sottostante, per visualizzare gli articoli contenuti in essi.  
-> **Comprimi** permette di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe ordine.  
-> **Seleziona tutti** permette di selezionare tutti gli articoli dalla lista.  
-> **Deseleziona tutti** permette di deselezionare tutti gli articoli dalla lista.  
+> **ricerca** permite buscar los pedidos del proveedor.  
+> **trasferimento** permite transferir los datos del pedido seleccionado al nuevo DDT.  
+> **evasione forzata dell'ordine** permite el cumplimiento forzado del pedido; en caso de que se seleccionen algunas filas del pedido, solo se cumplirán forzosamente las filas seleccionadas (con la adición del indicador *Cumplido forzado (Evaso forzato)* en la fila del artículo); en caso de que se cumpla el pedido completo, su estado también cambiará en el encabezado.  
+> **evasione ordini** permite el cumplimiento del pedido.  
+> **espandi** permite expandir todo el árbol de pedidos en la cuadrícula inferior para mostrar los artículos contenidos en ellos.  
+> **comprimi** permite comprimir la visualización de las filas del artículo, y mostrar solo las filas del pedido.  
+> **seleziona tutti** permite seleccionar todos los artículos de la lista.  
+> **deseleziona tutti** permite deseleccionar todos los artículos de la lista.  
 
-### *Scarico automatico*
+### *scarico automatico*
 
-L'altra procedura presente in testata DDT è lo scarico automatico da magazzino. Il pulsante si abilita se il documento è Stampato.      
-Ricordiamo che se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) è abilitato lo scarico automatico, questa procedura verrà avviata in automatico una volta Stampato il documento.      
-Una volta avviata la procedura, Fluentis controlla la presenza di magazzino e causale nelle righe DDT e l'eventuale presenza di lotti e serial number se richiesti; nel caso la procedura non vada a buon fine viene avvisato l'utente con un errore.      
-Se la procedura va a buon fine, viene creata la [Registrazione di magazzino](/docs/logistics/warehouse/stock-records/record) che movimenta gli articoli del documento e viene inserito il flag **Scaricato** nella testata DDT.      
+El otro procedimiento presente en el encabezado del DDT es la descarga automática del almacén. El botón se habilita si el documento ha sido Impreso.  
+Recordemos que si en los [Parámetros DDT](/docs/configurations/parameters/sales/dn-parameters) está habilitada la descarga automática, este procedimiento se iniciará automáticamente una vez que se imprima el documento.  
+Una vez que se inicia el procedimiento, Fluentis verifica la presencia de almacén y causa en las líneas del DDT y la posible presencia de lotes y números de serie si se requieren; en caso de que el procedimiento no se ejecute con éxito, se avisará al usuario con un error.  
+Si el procedimiento se ejecuta correctamente, se crea el [Registro de almacén](/docs/logistics/warehouse/stock-records/record) que mueve los artículos del documento y se inserta el indicador **scaricato** en el encabezado del DDT.  
 
-## **3. Articoli**
+## **articoli**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+En esta pestaña se ingresan todos los artículos con sus datos correspondientes.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. Le colonne disponibili sono le seguenti:   
+Para insertar un **nuovo articolo** en la cuadrícula, basta con posicionarse en la fila para completar los varios datos o utilizar el botón **nuovo** presente en la barra de ribbon. Las columnas disponibles son las siguientes:   
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
->- *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.
->- *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.
->- *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino.
->- *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
->- *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
+- **tipo riga**: ofrece la posibilidad de seleccionar, desde la combo-box, artículos con características diferentes:
+>- *articolo codificato*: son los artículos codificados en el registro y pueden ser contabilizados en contabilidad analítica y registrados en el almacén.
+>- *Artículo no codificado (Articolo non-codificato)*: son artículos descriptivos que pueden ser contabilizados en contabilidad analítica pero no pueden ser movidos en el almacén.
+>- *articolo spese*: son artículos codificados o no codificados y se resumen de manera distinta en los resúmenes de los documentos; si el artículo de gastos está codificado y es de interés fiscal, se moverá en el almacén, si es no codificado o no de interés fiscal no se moverá en el almacén.
+>- *articolo note*: son notas descriptivas que se mencionan en la impresión del documento; no afectan la contabilidad ni el almacén.
+>- *articolo omaggio*: el artículo regalo se gestiona como un artículo codificado o no codificado a efectos fiscales y de almacén, pero por ser un regalo se contabiliza por separado en los resúmenes del documento y en función del indicador de Recargo IVA se calcula el monto del IVA del regalo a cargo del sujeto o no.
 :::note[NOTA]
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga - Articolo codificato vengono inseriti automaticamente.
+Si se comienza directamente con la inserción del artículo, su clase, código y tipo de fila - Artículo codificado se ingresan automáticamente.
 :::
 
-- **Barcode**: se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) è stata abilitata la gestione dei Barcode, comparirà la colonna Barcode dove selezionare il dato per l'articolo tra i Barcode inseriti in *Anagrafica articolo > Barcode*. 
+- **barcode**: si en los [Parámetros DDT](/docs/configurations/parameters/sales/dn-parameters) se ha habilitado la gestión de Código de barras, aparecerá la columna Código de barras donde se selecciona el dato para el artículo entre los Códigos de barras ingresados en *Anagrafica articolo > Barcode*.
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
 
 <ItemClassDescription />
 
-- **Articolo cliente**: se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) è stata abilitata la gestione degli Articolo cliente, comparirà la colonna Articolo cliente, con il codice articolo valido per il cliente intestatario del documento e inserito in *Anagrafica articolo > Clienti*. 
+- **articolo cliente**: si en los [Parámetros DDT](/docs/configurations/parameters/sales/dn-parameters) se ha habilitado la gestión de Artículo cliente, aparecerá la columna Artículo cliente, con el código de artículo válido para el cliente titular del documento e ingresado en *Anagrafica articolo > Clienti*.
 
 import UM from './../../../import/fields/item-um.md'
 
@@ -201,84 +201,84 @@ import Price from './../../../import/fields/item-price.md'
 <Price />
 
 :::note
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-item)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
+En ausencia de lista de precios, el dato propuesto es el **precio de venta** tomado de la *Anagrafica articolo > pestaña [Costos](/docs/erp-home/registers/items/create-new-item)* o se recuperará según los parámetros del documento. En ausencia también de este dato, se indicará el precio 0.
 :::
 
-- **Imponibile**: in questo campo viene riportato il Prezzo unitario, moltiplicato per la quantità articolo, al netto degli sconti.        
+- **imponibile**: en este campo se indica el Precio unitario, multiplicado por la cantidad del artículo, neto de descuentos.  
 
-- **Sconti articolo**: viene riportata la somma degli sconti previsti per l'articolo.     
+- **sconti articolo**: se reporta la suma de los descuentos previstos para el artículo.  
 
-- **Sconti finali articolo**: viene riportata la somma degli sconti finali inseriti articolo inseriti nei Riepiloghi del documento.     
+- **sconti finali articolo**: se reporta la suma de los descuentos finales aplicados a los artículos registrados en los Resúmenes del documento.  
 
 import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*. Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* oppure sarà generato un messaggio di errore.   
+- **fatturato vendite**: se propone el dato ingresado en la *generalità*. Si esto no está presente, no se propone ningún dato pero en el momento de contabilizar la factura, se considerará el valor ingresado en el campo *Costo/Ingresos de contrapartida predeterminado* de la *Anagrafica cliente > Datos contables > pestaña Administrativa* o se generará un mensaje de error.  
 
-- **In fattura**: questo flag viene inserito di default, ma si può disabilitare se l'articolo non dovrà essere trasferito in fattura e quindi non dovrà comparire nelle procedure di evasione del DDT.     
+- **in fattura**: este indicador se inserta de manera predeterminada, pero se puede deshabilitar si el artículo no debe ser trasladado a la factura y por lo tanto no debe aparecer en los procedimientos de cumplimiento del DDT.  
 
-- **Peso netto**: viene riportato il Peso netto presente in anagrafica articolo, moltiplicato per la quantità articolo della riga.     
+- **peso netto**: se indica el Peso neto presente en el registro del artículo, multiplicado por la cantidad del artículo de la fila.  
 
-- **Peso lordo**: viene riportato il Peso lordo presente in anagrafica articolo, moltiplicato per la quantità articolo della riga.     
-
-
-#### Pulsanti specifici
-
-> **Ricalcolo Conai**: se il [Conai](/docs/sales/sales-flow/conai) è abilitato per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.       
-
-> **Aggiorna i dati Conai nell'anagrafica articolo**: se nel tab *Materiali Conai per l'articolo* vengono modificati Unità di misura e/o Peso, è possibile trasferire questi valori nella sezione Conai dell'anagrafica articolo.      
-
-> **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.
-Il pulsante diventa attivo se il documento è salvato, ma non caricato.
-Cliccando su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante Execute. In questa form vengono riportati gli articoli che sono stati inseriti con natura Imballo e che sono presenti nella tabella degli Imballi a rendere.         
-
-> **Aggiornamento listini**: cliccando sulla tendina accanto al pulsante si accede a due procedure. La prima procedura è **Aggiorna il listino corrente**, che permette di allineare il prezzo dell'articolo internamente al Listino, a seguito di una eventuale variazione di prezzo direttamente nella riga articolo. Invece con la seconda procedura, **Crea nuovo listino con nuova validità**, è possibile creare un nuovo listino personalizzato per il cliente intestatario del documento; verranno richiesti, in un pop-up, le date di inizio e fine validità del nuovo listino.      
-
-> **Mostra/Nascondi dettagli**: cliccando questo bottone si rendono o meno visibili le tab interne agli Articoli.   
+- **peso lordo**: se indica el Peso bruto presente en el registro del artículo, multiplicado por la cantidad del artículo de la fila.  
 
 
-### 3.1 Sconti/Listini
+#### Botones específicos
+
+> **ricalcolo conai**: si el [Conai](/docs/sales/sales-flow/conai) está habilitado para el documento, es posible recalcular los valores con este botón después de cualquier modificación.  
+
+> **aggiorna i dati conai nell'anagrafica articolo**: si en la pestaña *Materiales Conai para el artículo* se modifican la Unidad de medida y/o Peso, es posible transferir estos valores a la sección Conai del registro del artículo.  
+
+> **gestione imballi**: permite abrir la gestión de los embalajes retornables usados en el documento de compras.  
+El botón se activa si el documento está guardado, pero no cargado.  
+Al hacer clic en este botón se abre el formulario correspondiente donde: se ingresará la cantidad, se seleccionará la fila y se ejecutará la transferencia del embalaje seleccionado a las líneas de artículos haciendo clic en el botón Ejecutar. En este formulario se muestran los artículos que se han ingresado con naturaleza de Embalaje y que están presentes en la tabla de Embalajes retornables.  
+
+> **aggiornamento listini**: al hacer clic en el desplegable junto al botón se accede a dos procedimientos. El primer procedimiento es **aggiorna il listino corrente**, que permite alinear el precio del artículo internamente a la Lista de precios, después de un posible cambio de precio directamente en la fila del artículo. En cambio, con el segundo procedimiento, **crea nuovo listino con nuova validità**, es posible crear una nueva lista de precios personalizada para el cliente titular del documento; se solicitarán, en un pop-up, las fechas de inicio y fin de validez de la nueva lista.  
+
+> **mostra/nascondi dettagli**: al hacer clic en este botón, se vuelven visibles o no las pestañas internas de los Artículos.  
+
+
+### 3.1 Descuentos/Listas (Sconti/Listini)
 
 import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 <SalesTabDiscount />
 
-### 3.2 Dati
+### 3.2 Datos (Dati)
 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+Dentro de esta pestaña se reportan/inserta información adicional relacionada con el artículo.
 
 import AlternativeUMQuantity from './../../../import/fields/alternative-um-quantity.md'
 
 <AlternativeUMQuantity />
 
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dai *Tipi DDT* oppure si inseriscono manualmente.
-- **Variante**: è possibile scegliere una variante dell'articolo, se codificate all'interno dell'*Anagrafica articolo > Varianti*.    
-- **Stato evasione**: in questa sezione è possibile verificare se la riga articolo è stata Valorizzata, Valorizzata parzialmente o Valorizzata forzatamente.       
-- **Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo.     
-- **Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale documento.   
-- **Riferimento ordine**: fa riferimento all'ordine dal quale è stata creata la DDT.  
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il documento; nel caso in cui il DDT venga generato tramite una procedura di creazione automatica, questi campi verranno popolati con le indicazioni presenti nell'documento d'origine.      
-- **Numero/Data riferimento**: riportano il Riferimento al Numero e alla Data dell'Ordine cliente di origine.     
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.    
-- **In fattura**: questo flag viene inserito di default, ma si può disabilitare se l'articolo non dovrà essere trasferito in fattura e quindi non dovrà comparire nelle procedure di evasione del DDT.     
-- **Nota**: offre la possibilità di inserire note per ogni articolo.     
-- **Dettaglio dichiarazioni**: viene riportata la [Dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) usata per proporre l'iva dell'articolo; dalla combo box è possibile cambiare la dichiarazione d'intento di riferimento, se presenti più dichiarazioni valide.    
+- **Almacén y causa (Magazzino e causale)**: se proponen el almacén y la causa de referencia que aparecerán automáticamente en el momento de la descarga de los artículos correspondientes del almacén. Los datos son extraídos de los *Tipos DDT* o se ingresan manualmente.
+- **variante**: es posible elegir una variante del artículo, si están codificadas dentro de la *Anagrafica articolo > Varianti*.  
+- **stato evasione**: en esta sección se puede verificar si la línea del artículo ha sido Valorada, Valorada parcialmente o Valorada forzosamente.  
+- **progetto**: es el proyecto asociado al documento o se puede asignar con la ayuda de la ayuda de campo.  
+- **rivalsa iva**: si se activa, el IVA del regalo se considera para el total del documento.  
+- **riferimento ordine**: hace referencia al pedido del cual se creó el DDT.  
+- **Nuestra referencia/Su referencia (Nostro riferimento/vostro riferimento)**: en estos campos generalmente se indica una referencia interna y una referencia del cliente para el documento; en caso de que el DDT se genere mediante un procedimiento de creación automática, estos campos se llenarán con las indicaciones presentes en el documento de origen.  
+- **numero/data riferimento**: reportan la Referencia al Número y a la Fecha del Pedido del cliente de origen.  
+- **marca**: representa la marca del artículo, extraída de su registro o de la lista de precios del artículo.  
+- **in fattura**: este indicador se inserta de manera predeterminada, pero se puede deshabilitar si el artículo no debe ser trasladado a la factura y por lo tanto no debe aparecer en los procedimientos de cumplimiento del DDT.  
+- **nota**: ofrece la posibilidad de ingresar notas para cada artículo.  
+- **dettaglio dichiarazioni**: se reporta la [Declaración de intención](/docs/finance-area/declarations/declarations/intent-declaration) utilizada para proponer el IVA del artículo; desde la combo box se puede cambiar la declaración de intención de referencia, si hay más declaraciones válidas presentes.  
 
-### 3.3 Agenti
+### 3.3 Agentes (Agenti)
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.4 Lotti e Serial number
+### 3.4 Lotes y Números de serie (Lotti e Serial number)
 
-Nelle due griglie possono essere inseriti i lotti e i numeri seriali che devono essere scaricati dal magazzino.     
-Questa operazione è condizionata dalla presenza dei lotti e dei numeri seriali nel magazzino. 
+En las dos cuadrículas se pueden ingresar los lotes y los números de serie que deben ser descargados del almacén.  
+Esta operación está condicionada por la presencia de lotes y números de serie en el almacén.  
 
-Se l'articolo non prevede la gestione dei Lotti/Numeri seriali, questo tab sarà disabilitato.  
+Si el artículo no prevé la gestión de Lotes/Números de serie, esta pestaña estará desactivada.
 
-#### Pulsanti specifici
+#### Botones específicos
 
 import DeleteLot from './../../../import/buttons/delete-lot.md'
 
@@ -288,88 +288,88 @@ import DeleteSN from './../../../import/buttons/delete-sn.md'
 
 > <DeleteSN />
 
-### 3.5 Analitica
+### 3.5 Analítica (Analitica)
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-### 3.6 Extra data
+### 3.6 Datos adicionales (Extra data)
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-### 3.7 Documenti allegati
+### 3.7 Documentos adjuntos (Documenti allegati)
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-### 3.8 Sezione valori
+### 3.8 Sección de valores (Sezione valori)
 
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
 
 <SalesValuesSection />
 
-## **4. Riepiloghi**
+## **riepiloghi**
 
-Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
+En los Resúmenes se presentan la información principal del documento entero.
 
-### 4.1 Sconti finali articoli
+### 4.1 Descuentos finales de artículos (Sconti finali articoli)
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Riepilogo provvigioni agenti
+### 4.2 Resumen de comisiones de agentes (Riepilogo provvigioni agenti)
 
-In questo tab vengono riepilogate le provvigioni previste per ogni agente.     
+En esta pestaña se resumen las comisiones previstas para cada agente.  
 
-### 4.3 Spese/Sconti/maggiorazioni finali 
+### 4.3 Gastos/Descuentos/mayoraciones finales (Spese/Sconti/maggiorazioni finali)
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-- **Dettaglio dichiarazioni**: viene inserita l'eventuale dichhiarazione d'intento valida per il cliente.    
+- **dettaglio dichiarazioni**: se inserta la eventual declaración de intención válida para el cliente.  
 
-### 4.4 Riepiloghi IVA
+### 4.4 Resúmenes de IVA (Riepiloghi IVA)
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+Se propone el resumen de IVA del documento, para cada código IVA.
 
-### 4.5 Riepilogo scadenze
+### 4.5 Resumen de plazos (Riepilogo scadenze)
 
 import SummariesDueDate from './../../../import/sections/summaries-due-date.md'
 
 <SummariesDueDate />
 
-### 4.6 Totali documento
+### 4.6 Totales del documento (Totali documento)
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
 
-## **5. Trasporto**
+## **trasporto**
 
-I dati presenti sono: 
+Los datos presentes son: 
 
-- **Destinatario**: viene proposto il destinatario di default inserito in anagrafica cliente; se non presente, viene preso l'indirizzo del cliente.    
-- **Destinazione**: viene proposta la destinazione di default del destinatario, se inserita in anagrafica cliente.        
-- **Numero Tracking**: campo libero. 
-- **Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei [parametri del DDT](/docs/configurations/parameters/sales/dn-parameters). 
-- **Peso netto**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri del DDT. 
-- **Peso lordo**: viene proposto il peso lordo cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quella inserita nei parametri del DDT.     
-- **Aspetto esteriore dei beni**: combo box che rimanda all'omonima tabella.     
-- **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab Pesi/Dimensioni*, nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.     
-- **Valori modificati manualmente**: con questo flag rendiamo possibile la modifica dei campi Volume, Peso netto, Peso lordo e Colli, che altrimenti riportano i dati da anagrafica articolo senza possibilità di modifica.     
-- **Ingresso/Uscita dell'ufficio doganale**: campi utilizzati per l'eTrasport per la versione romena, che rimandano alla tabella Ufficio doganale.     
-- **Ingresso/Uscita valico di frontiera**: campi utilizzati per l'eTrasport per la versione romena, che rimandanno alla tabella Valico di frontiera.      
-- **Trasporto**: è necessario selezionare la figura che si occuperà del trasporto, mettendo il flag in Mittente, Destinatario o Vettore; in base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del Mittente sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Destinatario sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Vettore invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Rimorchio, Data e Ora trasporto, eventuale Committente, Caricatore, Proprietario, Luogo carico. 
+- **destinatario**: se propone el destinatario predeterminado ingresado en el registro del cliente; si no está presente, se toma la dirección del cliente.  
+- **destinazione**: se propone el destino predeterminado del destinatario, si está ingresado en el registro del cliente.  
+- **Número de seguimiento (Numero Tracking)**: campo libre.  
+- **volume**: se propone el volumen acumulado, resultado de la suma de los volúmenes de los artículos (el valor se toma del Registro del artículo > pestaña Pesos/Dimensiones), cuando la unidad de medida del volumen de los artículos corresponde a la que se ha ingresado en los [parámetros del DDT](/docs/configurations/parameters/sales/dn-parameters).  
+- **peso netto**: se propone el peso neto acumulado, resultado de la suma de los pesos de los artículos (el valor se toma del Registro del artículo > pestaña Pesos/Dimensiones), cuando la unidad de medida del peso de los artículos corresponde a la que se ha ingresado en los parámetros del DDT.  
+- **peso lordo**: se propone el peso bruto acumulado, resultado de la suma de los pesos de los artículos (el valor se toma del Registro del artículo > pestaña Pesos/Dimensiones), cuando la unidad de medida del peso de los artículos corresponde a la que se ha ingresado en los parámetros del DDT.  
+- **aspetto esteriore dei beni**: combo box que remite a la tabla homónima.  
+- **colli**: se propone el número de bultos, basado en los datos ingresados en la *Anagrafica articolo > pestaña Pesos/Dimensiones*, en los campos *Artículos presentes en un bulto* o *Bultos para formar el artículo*. Solo se tienen en cuenta los artículos que tienen este campo completo.  
+- **valori modificati manualmente**: con este indicador se hace posible la modificación de los campos Volumen, Peso neto, Peso bruto y Bultos, que de otro modo reportan los datos del registro del artículo sin posibilidad de modificación.  
+- **Entrada/Salida de la oficina de aduanas (Ingresso/Uscita dell'ufficio doganale)**: campos utilizados para el eTransport para la versión rumana, que remiten a la tabla Oficina de aduanas.  
+- **Entrada/Salida del paso fronterizo (Ingresso/Uscita valico di frontiera)**: campos utilizados para el eTransport para la versión rumana, que remiten a la tabla Paso fronterizo.  
+- **trasporto**: es necesario seleccionar la figura que se encargará del transporte, marcando el indicador en Remitente, Destinatario o Transportista; según la selección, la sección inferior cambiará; si el transporte corre a cargo del Remitente se podrá ingresar la Matrícula del vehículo, Remolque, Fecha y Hora de Inicio de transporte; si corre a cargo del Destinatario se podrá ingresar la Matrícula del vehículo, Remolque, Fecha y Hora de Inicio de transporte; si corre a cargo del Transportista, los campos disponibles serán Registro contable del Transportista, Matrícula, Remolque, Fecha y Hora de transporte, eventual Cliente, Cargador, Propietario, Lugar de carga.  
 
-## **6. Documenti collegati**
+## **documenti collegati**
 
-In questa tab è possibile consultare i documenti allegati.
-Per allegare i documenti è possibile procedere in due modi:
-- utilizzando il pulsante della barra degli strumenti **Documenti** si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.       
-- utilizzando direttamente nella griglia il tasto destro e selezionando *Allega file* si va in creazione di un nuovo Documento da allegare.     
+En esta pestaña es posible consultar los documentos adjuntos.  
+Para adjuntar documentos, se puede proceder de dos maneras:
+- utilizando el botón de la barra de herramientas **documenti** se puede elegir si adjuntar un documento ya codificado en Fluentis o si crear un nuevo Documento para adjuntar.  
+- utilizando directamente en la cuadrícula el botón derecho y seleccionando *allega file* se crea un nuevo Documento para adjuntar.

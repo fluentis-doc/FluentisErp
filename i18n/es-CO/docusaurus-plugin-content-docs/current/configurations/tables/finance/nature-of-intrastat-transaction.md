@@ -1,18 +1,18 @@
 ---
-title: Natura transazione Intrastat
+title: natura transazione intrastat
 sidebar_position: 14
 ---
 
-La tabella, precaricata, definisce la natura delle transazioni per le dichiarazioni Intrastat (come prevista delle istruzioni ufficiali).
+La tabla, precargada, define la naturaleza de las transacciones para las declaraciones Intrastat (según lo previsto por las instrucciones oficiales).
 
-È presente una tipologia *fittizia* **‘S – Servizi'** che ha il fine di individuare quali documenti (se inseriti come documento dell'area acquisti/vendite) riportare nelle sezioni quater/quinquies relative alle prestazioni di servizi, così come **‘Z – Call of stock'** per riportare dalle vendite le operazioni della sezione relativa dell'intra vendite.
+Se presenta una tipología *ficticia* **‘S – Servicios (Servizi)'** que tiene como objetivo identificar qué documentos (si se ingresan como documentos del área de compras/ventas) incluir en las secciones cuatro/quince relativas a las prestaciones de servicios, así como **‘Z – Llamada de stock (Call of stock)'** para reportar desde las ventas las operaciones de la sección relacionada de las intraventas.
 
-#### Campi specifici
+#### Campos específicos
 
-**Codice**: codice natura transazione.
+**codice**: código de la naturaleza de la transacción.
 
-**Descrizione**: descrizione natura transazione.
+**descrizione**: descripción de la naturaleza de la transacción.
 
-**Triangolazione**: il flag ‘operazioni triangolari' consente di caricare la lista dell'ultima colonna della tabella.
+**triangolazione**: el indicador ‘operaciones triangulares’ permite cargar la lista de la última columna de la tabla.
 
-Nella griglia sottostante sono visualizzate, invece, le Nature di dettaglio delle transazioni suddette.
+En la cuadrícula inferior se visualizan, en cambio, las naturalezas de detalle de las transacciones mencionadas.

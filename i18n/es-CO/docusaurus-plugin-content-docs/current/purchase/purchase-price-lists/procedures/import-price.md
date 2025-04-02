@@ -1,57 +1,55 @@
 ---
-title: Importazione da Prezzi fornitori
+title: Importación de Precios de Proveedores (Importazione da Prezzi fornitori)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Acquisti  Listini fornitori  Procedure  Importazione prezzi fornitori** e permette di selezionare perl'importazione gli articoli precedentemente inseriti tramite l'[Importazione prezzi e articoli fornitore](/docs/applications/bizlink/price-item-supplier). 
+El formulario se abre a través de la ruta **Compras  Listas de proveedores  Procedimientos  Importación de precios de proveedores** y permite seleccionar para la importación los artículos previamente ingresados a través de la [Importación de precios y artículos de proveedores](/docs/applications/bizlink/price-item-supplier).
 
-Mediante questa procedura è possibile creare o aggiornare le anagrafiche degli articoli selezionati e creare un nuovo listino fornitore con i prezzi aggiornati.
+Mediante este procedimiento es posible crear o actualizar los registros de los artículos seleccionados y crear una nueva lista de precios de proveedor con los precios actualizados.
 
-:::important Ricorda
-Prima di procedere con l'importazione degli articoli è necessario indicare una corrispondeza tra la *Categoria sconto* utilizzata dal fornitore e quelle codificate nella tabella [Categoria sconto acquisti](/docs/configurations/tables/purchase/category-discounts-price-management/); tale abbinamento va fatto nella procedura di [Corrispondenza categorie sconto acquisti/vendite](/docs/purchase/price-control/correspondence). 
+:::important Recuerda (Ricorda)
+Antes de proceder con la importación de los artículos, es necesario indicar una correspondencia entre la *categoria sconto* utilizada por el proveedor y las categorías codificadas en la tabla [Categoría de descuento de compras (Categoria sconto acquisti)](/docs/configurations/tables/purchase/category-discounts-price-management/); dicha correspondencia debe hacerse en el procedimiento de [Correspondencia de categorías de descuento de compras/ventas (Corrispondenza categorie sconto acquisti/vendite)](/docs/purchase/price-control/correspondence).
 :::
 
 ### Filtro
 
-Nella griglia principale sono visualizzati gli stessi risultati della form [Prezzi fornitore](/docs/purchase/purchase-price-lists/procedures/supplier-price), filtrati in base ai dati inseriti nella sezione superiore. Gli articoli possono essere selezionati per l’importazione definitiva apponendo il flag accanto alla *Classe articolo*. Gli articoli che sono già stati codificati avranno un colore riga diverso.   
-Nella seconda griglia vengono invece riportati tutti gli articoli selezionati con il flag nella prima griglia. 
+En la cuadrícula principal se muestran los mismos resultados que en el formulario [Precios de proveedores (Prezzi fornitore)](/docs/purchase/purchase-price-lists/procedures/supplier-price), filtrados según los datos ingresados en la sección superior. Los artículos pueden ser seleccionados para la importación definitiva marcando el indicador junto a la *classe articolo*. Los artículos que ya han sido codificados tendrán un color de fila diferente.  
+En la segunda cuadrícula se muestran todos los artículos seleccionados con el indicador en la primera cuadrícula.
 
-*Pulsanti specifici*:      
-> **Import**: per eseguire l'importazione degi articoli selezionati, in base ai *Parametri* inseriti nel tab successivo.   
-> **Controlla la selezione**: permette di attivare i flag delle righe selezionate nella griglia.   
-> **Smarcare**: permette di disattivare i flag delle righe selezionate nella griglia.   
+*Botones específicos*:  
+> **import**: para llevar a cabo la importación de los artículos seleccionados, según los *Parámetros* ingresados en la pestaña siguiente.  
+> **controlla la selezione**: permite activar los indicadores de las filas seleccionadas en la cuadrícula.  
+> **smarcare**: permite desactivar los indicadores de las filas seleccionadas en la cuadrícula.
 
-### Parametri
+### Parámetros
 
-In questo tab è possibile scegliere quali informazioni riportare nell'anagrafica dell'articolo e i parametri secondo cui creare il listino fornitore.   
+En esta pestaña es posible elegir qué información incluir en el registro del artículo y los parámetros según los cuales crear la lista de precios del proveedor.
 
-- **Crea articolo**: se attivo permette la creazione dell'anagrafica degli articoli selezionati, se non esistente.   
+- **crea articolo**: si está activo, permite la creación del registro de los artículos seleccionados, si no existen.
 
-- **Aggiorna campi articolo**: permette di selezionare quali dati sovrascrivere nell'anagrafica da aggiornare. Nel caso di creazione di un nuovo articolo i dati relativi ai flag attivi saranno riportati nella nuova anagrafica. I dati che possono essere aggiornati sono: *Descrizione*, *Codice commerciale*, *Barcode*, *Confezionamento*, *Peso*, *Nomenclatura*, *Categoria sconto Acquisti*, *Categoria sconto Vendite*, *Sottocategoria*, *Formula*, *Imballo a rendere*.   
+- **Actualizar campos del artículo (Aggiorna campi articolo)**: permite seleccionar qué datos sobrescribir en el registro que se va a actualizar. En caso de creación de un nuevo artículo, los datos relacionados con los indicadores activos se incluirán en el nuevo registro. Los datos que se pueden actualizar son: *descrizione*, *codice commerciale*, *barcode*, *confezionamento*, *peso*, *nomenclatura*, *categoria sconto acquisti*, *Categoría de descuento de Ventas (Categoria sconto Vendite)*, *sottocategoria*, *formula*, *imballo a rendere*.
 
-- **Crea listino fornitore**: se attivo permette la creazione del listino fornitore per gli articoli selezionati. I dati obbligatori per la creazione del listino sono **Data inizio validità** e **Divisa**. Opzionalmente è possibile inserire anche la **Data fine validità**.    
+- **crea listino fornitore**: si está activo, permite la creación de la lista de precios del proveedor para los artículos seleccionados. Los datos obligatorios para la creación de la lista son **data inizio validità** y **divisa**. Opcionalmente, también se puede ingresar la **data fine validità**.
 
-- **Conto/Sottoconto**: indica il fornitore per cui creare il listino; sarà riportato anche nell'anagrafica articolo come fornitore preferenziale.   
+- **conto/sottoconto**: indica el proveedor para el cual crear la lista; también se indicará en el registro de artículo como proveedor preferido.
 
-Nella terza colonna di parametri sono presenti alcuni dati utilizzati solo per la creazione di nuove anagrafiche:
-    - **Classe**: se quella indicata per l'articolo nella griglia dei risultati non è codificata a sistema sarà utilizzata la classe indicata in questo campo.       
-    - **IVA**: indica l'aliquota IVA da attribuire all'articolo.  
-    - **Unità di misura articolo**: indica l'UM principale da usare per l'articolo. 
-    - **Fatturato acquisti/vendite**   
-    - **Unità di misura prezzo**: indica l'UM a cui è riferito il prezzo del listino fornitore.
-    - **UM peso**: indica l'unità di misura da usare per i pesi.     
-    - **Formula**: indica la [formula di aggiornamento prezzi](/docs/purchase/price-control/formulas) da abbinare all'articolo.   
-    - **Tipo sconto**   
-    - **Barcode**   
+En la tercera columna de parámetros hay algunos datos utilizados solo para la creación de nuevos registros:
+  - **classe**: si la indicada para el artículo en la cuadrícula de resultados no está codificada en el sistema, se utilizará la clase indicada en este campo.  
+  - **IVA**: indica la tasa de IVA que se atribuirá al artículo.  
+  - **unità di misura articolo**: indica la UM principal que se utilizará para el artículo.  
+  - **Facturación de compras/ventas (Fatturato acquisti/vendite)**  
+  - **unità di misura prezzo**: indica la UM a la que se refiere el precio de la lista de proveedor.  
+  - **um peso**: indica la unidad de medida que se utilizará para los pesos.  
+  - **formula**: indica la [fórmula de actualización de precios (formula di aggiornamento prezzi)](/docs/purchase/price-control/formulas) que se vinculará al artículo.  
+  - **tipo sconto**  
+  - **barcode**  
 
+### Errores
 
-### Errori
+En la pestaña **Errores** es posible consultar los errores que hayan ocurrido.
 
-Nella tab **Errori** è possibile consultare eventuali errori avvenuti.   
+En la cuadrícula superior se mostrarán los artículos para los cuales la importación no se realizó con éxito, mientras que en la inferior se indicará también el *codice errore*.
 
-Nella griglia superiore saranno riportati gli articoli per cui l'importazione non è avvenuta con successo, mentre in quella inferiore sarà indicato anche il *Codice errore*.
+### Resultados
 
-
-### Risultati
-
-Nella tab **Risultati** sono riportati gli articoli importati con successo.
+En la pestaña **Resultados** se muestran los artículos importados con éxito.

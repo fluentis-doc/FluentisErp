@@ -1,14 +1,14 @@
 ---
-title: Rettifica zona rossa
+title: Rectificación de la zona roja (Rettifica zona rossa)
 sidebar_position: 10
 ---
 
-Il valore della zona rossa viene calcolato automaticamente dalla procedura aggiornamento zone in base al valore dei parametri DDMRP dell'articolo.
+El valor de la zona roja se calcula automáticamente mediante el procedimiento de actualización de zonas en función del valor de los parámetros DDMRP del artículo.
 
-Tramite questa tabella è possibile forzare un valore diverso in date specificate.
+A través de esta tabla, es posible forzar un valor diferente en fechas específicas.
 
-Il sistema di pianificazione tiene conto di eventuali valori di rettifica delle zone nel calcolo NFP anche se la procedura aggiornamento zone non è stata eseguita.
+El sistema de planificación tiene en cuenta cualquier valor de rectificación de las zonas en el cálculo NFP, incluso si no se ha ejecutado el procedimiento de actualización de zonas.
 
-Anche il calcolo del buffer status tiene conto di una eventuale eccezione della zona rossa anche se la procedura aggiornamento zone non è stata eseguita.
+También el cálculo del estado del buffer considera una posible excepción de la zona roja, aunque no se haya ejecutado el procedimiento de actualización de zonas.
 
-Tipicamente si utilizzano eccezioni della zona rossa se per un periodo di tempo limitato si è a conoscenza di qualche evento che aumenta temporaneamente il rischio di fornitura.
+Típicamente, se utilizan excepciones de la zona roja si se es consciente de algún evento que aumenta temporalmente el riesgo de suministro durante un periodo de tiempo limitado.

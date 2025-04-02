@@ -1,28 +1,28 @@
 ---
-title: Tipi effetti
+title: tipi effetti
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente, ai quali va assegnato poi un numeratore di riferimento, una tipologia di effetto tra quelle predefinite e infine un sottoconto di movimentazione: tale sottoconto sarà utilizzato in contropartita alla chiusura cliente all'interno della procedura di contabilizzazione effetti.
+La tabla se completa mediante la imposición de un código y una descripción del usuario, a los cuales se les asignará luego un numerador de referencia, un tipo de efecto entre los predefinidos y, finalmente, una subcuenta de movimiento: esta subcuenta se utilizará en contrapartida al cierre del cliente dentro del procedimiento de contabilización de efectos.
 
-Il tipo effetto può poi essere associato al tipo di pagamento nella tabella omonima.
+El tipo de efecto puede luego asociarse al tipo de pago en la tabla homónima.
 
-Da segnalare, infine, che solo gli effetti di tipo cambiario potranno essere gestiti nelle procedura di contabilizzazione insoluti su cessione del modulo Insoluti.
+Cabe señalar, finalmente, que solo los efectos de tipo cambiario podrán ser gestionados en el procedimiento de contabilización de morosidad por cesión del módulo de Morosidad.
 
-Il flag **Gestione importo parziale** consente di creare effetti che consumano *parzialmente* le partite, indicandone l'importo. Prevede una gestione manuale all'interno dell'effetto.
+El indicador **gestione importo parziale** permite crear efectos que consumen *parcialmente (parzialmente)* las partidas, indicando el importe. Requiere una gestión manual dentro del efecto.
 
-:::danger[Attenzione]
-Attivando questo flag, la procedura di generazione automatica effetto dalla partite (/ fatture) non inserirà nell'effetto il riferimento alla partita, di conseguenza, in fase di contabilizzazione effetto non avverrà la chiusura della partita la quale rimarrà aperta.
+:::danger[Atención (Attenzione)]
+Al activar este indicador, el procedimiento de generación automática de efectos desde las partidas (/ facturas) no insertará en el efecto la referencia a la partida; en consecuencia, en la fase de contabilización del efecto no se realizará el cierre de la partida, la cual permanecerá abierta.
 
-Infatti l'attivazione del flag comporta (è pensata per) una gestione manuale
+De hecho, la activación del indicador implica (está pensada para) una gestión manual.
 :::
 
-Il link **Cassa** non è in uso per la localizzazione italiana, serve per registrare negli effetti dai registratori di cassa.
+El enlace **cassa** no está en uso para la localización italiana; sirve para registrar efectos desde los registros de caja.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

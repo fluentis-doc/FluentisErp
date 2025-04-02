@@ -1,7 +1,7 @@
 ---
-title: Settore d'Uso
+title: settore d'uso
 sidebar_position: 6
 ---
 
-E' una tabella descrittiva per catalogare i **Settori d'uso** in cui si collocano i contatti e può essere utilizzata nei *Contatti* del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del settore, e da una griglia in cui appunto verranno elencati tutti i settori inseriti.
+Es una tabla descriptiva para catalogar los **Sectores de uso (Settori d'uso)** en los que se encuentran los contactos y puede ser utilizada en los *contatti* del CRM. Es común a todas las empresas presentes en la base de datos y está constituida por una simple tabla de código/descripción.  
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción del sector, y por una cuadrícula en la que se enumerarán todos los sectores introducidos.

@@ -1,20 +1,20 @@
 ---
-title: Versioni
+title: versioni
 sidebar_position: 4
 ---
 
-Questa form può essere utilizzata per creare differenti distinte base per lo stesso articolo/variante, con la necessità di impostare una versione di 'default'.
+Este formulario puede ser utilizado para crear diferentes listas de materiales para el mismo artículo/variante, con la necesidad de establecer una versión 'por defecto'.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-**Versione**: rappresenta il codice della versione;  
-**Tipo** della versione (Produzione, Generale, Vendita, Conto Lavoro, Acquisto). Si tratta di una semplice informazione. Da considerare che se solo le versioni di tipo 'Generale' sono visibili nei moduli;  
-**Default**: flag per indicare quale sia la versione predefinita che deve essere proposta in automatico quando si ricerca e/o si inserisce una distinta base;  
-**Default per modelli**: flag per indicare quale sia la versione predefinita che deve essere proposta in automatico quando si utilizza la Prototipazione;  
-**Attiva**: flag per decidere se la versione sia utilizzabile o no.
+**versione**: representa el código de la versión;  
+**tipo** de la versión (Producción, General, Venta, Trabajo por encargo, Compra). Se trata de una simple información. Hay que considerar que solo las versiones de tipo 'General' son visibles en los módulos;  
+**default**: indicador para indicar cuál es la versión predeterminada que debe ser propuesta automáticamente cuando se busca y/o se inserta una lista de materiales;  
+**default per modelli**: indicador para indicar cuál es la versión predeterminada que debe ser propuesta automáticamente cuando se utiliza la Prototipación;  
+**attiva**: indicador para decidir si la versión es utilizable o no.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

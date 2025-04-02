@@ -1,8 +1,8 @@
 ---
-title: Zone
+title: zone
 sidebar_position: 8
 ---
 
-In questa form è possibile assegnare l'anagrafica dell'agente in uso ad una *Zona* definita nella tabella omonima.
+En este formulario es posible asignar el registro del agente en uso a una *Zona* definida en la tabla homónima.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/zone/image01.png)

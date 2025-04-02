@@ -1,7 +1,7 @@
 ---
-title: Configurazione importazione fatture elettroniche
+title: configurazione importazione fatture elettroniche
 ---
 
-In questa sezione ***FluentisERP*** memorizza le logiche di valorizzazione dei documenti elettronici Sdi ricevuti dal fornitore, al fine di creare le *Registrazioni contabili* relative o la *Fattura di acquisto* del caso.
+En esta sección, ***FluentisERP*** almacena las lógicas de valoración de los documentos electrónicos Sdi recibidos del proveedor, con el fin de crear las *registrazioni contabili* correspondientes o la *fattura di acquisto* del caso.
 
-Ad ogni tipologia di dato previsto a livello normativo andremo ad associare il corrispondente valore valido per il fornitore in uso
+A cada tipo de dato previsto a nivel normativo, se asociará el valor correspondiente válido para el proveedor en uso.

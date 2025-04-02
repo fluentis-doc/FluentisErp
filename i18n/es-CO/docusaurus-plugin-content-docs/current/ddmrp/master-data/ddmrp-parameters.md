@@ -1,171 +1,164 @@
 ---
-title: Parametri DDMRP articoli
+title: Parámetros DDMRP de artículos (Parametri DDMRP articoli)
 sidebar_position: 5
 ---
 
-Tramite questo form si definiscono i parametri necessari per la gestione di un articolo buffer cioè gestito a logica DDMRP.
+A través de este formulario se definen los parámetros necesarios para la gestión de un artículo buffer, es decir, gestionado según la lógica DDMRP.
 
-Per ogni articolo buffer ci deve essere almeno un record in questa tabella, uno per ogni centro di distribuzione (vedi **struttura logistica**) in cui l'articolo è gestito a scorta DDMRP, ed eventualmente uno per la fabbrica (campo magazzino vuoto) se l'articolo è gestito a scorta DDMRP anche in fabbrica.
+Para cada artículo buffer debe haber al menos un registro en esta tabla, uno por cada centro de distribución (ver **estructura logística**) en el que el artículo se gestiona como stock DDMRP, y posiblemente uno para la fábrica (campo de almacén vacío) si el artículo también se gestiona como stock DDMRP en la fábrica.
 
-I parametri DDMRP da definire sono i seguenti:
+Los parámetros DDMRP a definir son los siguientes:
 
-- **Magazzino**, 
+- **magazzino**, 
 
-  è il codice magazzino associato all'unità logistica del record cioè al centro di distribuzione (o hub intermedio) e viene lasciato vuoto se il record si riferisce alla fabbrica.
+  es el código de almacén asociado con la unidad logística del registro, es decir, al centro de distribución (o hub intermedio) y se deja vacío si el registro se refiere a la fábrica.
 
-- **Fornitore**
+- **fornitore**
 
-  indica il fornitore dal quale rifornire questo articolo in questa unità logistica.
+  indica el proveedor del cual abastecer este artículo en esta unidad logística.
 
-  Per default l'unità logistica fornitrice è indicata nella tabella della struttura logistica, con questo campo si possono gestire delle eccezioni per singolo articolo.
+  Por defecto, la unidad logística proveedora está indicada en la tabla de la estructura logística; con este campo se pueden gestionar excepciones para un artículo específico.
 
-  Per esempio normalmente gli articoli presso questa unità logistica vengono forniti da un Hub ma alcuni articoli vengono forniti da un altro hub o dalla fabbrica direttamente.
+  Por ejemplo, normalmente los artículos en esta unidad logística son suministrados por un hub, pero algunos artículos son suministrados por otro hub o directamente por la fábrica.
 
-  Nel caso il fornitore non sia presente nella tabella delle unità logistiche, si tratta di un fornitore esterno e quindi verrà emesso un comune ordine d'acquisto a tale fornitore.
+  En caso de que el proveedor no esté presente en la tabla de unidades logísticas, se trata de un proveedor externo y, por lo tanto, se emitirá una orden de compra común a dicho proveedor.
 
-- **Giorni per trasporto**
+- **giorni per trasporto**
 
-  se il campo fornitore è compilato, va compilato anche questo, che rappresenta il tempo necessario per approvvigionare la merce dall'unità logistica o fornitore esterno indicato nel campo fornitore.
+  si el campo de proveedor está completo, también debe completarse este campo, que representa el tiempo necesario para aprovisionar la mercancía desde la unidad logística o proveedor externo indicado en el campo proveedor.
 
+- **codice profilo**, 
 
-- **Codice profilo (buffer profile)**, 
+  es el código del perfil de buffer asociado a este artículo en la unidad logística indicada en el campo almacén.
 
-  è il codice del profilo di buffer associato a questo articolo nell'unità logistica indicata nel campo magazzino.
+- **fattore lead time**,
 
-- **Fattore lead time (lead time factor)**,
+  sirve para forzar un valor diferente al previsto por el perfil de buffer asociado al registro.
 
-  serve per forzare un valore diverso rispetto a quello previsto dal profilo di buffer associato al record.
+- **Factor de variabilidad (Fattore variabilità)**,
 
-- **Fattore variabilità (variability factor)**,
+  sirve para forzar un valor diferente al previsto por el perfil de buffer asociado al registro.
 
-  serve per forzare un valore diverso rispetto a quello previsto dal profilo di buffer associato al record.
+- **Consumo medio diario (ADU)**, 
 
-- **Consumo medio giornaliero (ADU)**, 
-
-  è la quantità mediamente consumata ogni giorno presso l'unità logistica del record (varia quindi per ogni unità logistica) e deve tenere conto di un periodo temporale sufficientemente lungo (più volte il tempo di approvvigionamento dell'articolo) sul quale eseguire la media.
+  es la cantidad consumida en promedio cada día en la unidad logística del registro (por lo tanto, varía según la unidad logística) y debe tener en cuenta un período de tiempo lo suficientemente largo (más de una vez el tiempo de aprovisionamiento del artículo) para realizar el promedio.
   
-  Questo valore influisce fortemente sul livello di scorta dell'articolo e va aggiornato periodicamente [(vedi procedura)](/docs/ddmrp/procedures/ADU-update).
+  Este valor influye fuertemente en el nivel de stock del artículo y debe actualizarse periódicamente [(ver procedimiento)](/docs/ddmrp/procedures/ADU-update).
 
-- **Lead time disaccoppiato (DLT)**,
+- **Tiempo de entrega desacoplado (DLT)**,
 
-  campo non editabile risultato del calcolo della relativa procedura.
+  campo no editable resultado del cálculo del procedimiento correspondiente.
 
-  E' il tempo necessario per approvvigionare l'articolo considerando la presenza di altri buffer nella sua distinta o rete logistica.
+  Es el tiempo necesario para aprovisionar el artículo considerando la presencia de otros buffers en su lista o red logística.
 
-  Nel caso di un centro di distribuzione è dato dalla somma del tempo di trasporto dall'unità logistica fornitrice e dall'eventuale tempo di produzione se l'unità fornitrice è la fabbrica e l'articolo non è un buffer in fabbrica (non c'è quindi una scorta).
+  En el caso de un centro de distribución, se calcula sumando el tiempo de transporte desde la unidad logística proveedora y el tiempo de producción, si la unidad proveedora es la fábrica y el artículo no es un buffer en la fábrica (por lo tanto, no hay stock).
 
-- **Lead time cumulativo (CLT)**,
+- **Tiempo de entrega acumulado (CLT)**,
 
-  campo non editabile risultato del calcolo della procedura calcolo DLT.
+  campo no editable resultante del cálculo del procedimiento de cálculo DLT.
 
-  E' il tempo necessario per approvvigionare l'articolo in fabbrica se nessuno degli articoli della sua distinta è un buffer, quindi è il tempo di produzione in caso di assenza totale di scorte per i suoi elementi di distinta base.
+  Es el tiempo necesario para aprovisionar el artículo en la fábrica si ninguno de los artículos de su lista es un buffer, por lo que es el tiempo de producción en caso de ausencia total de stock para sus elementos de lista de materiales.
 
-- **Ciclo di riordino desiderato (DOC)**,
+- **Ciclo de reorden deseado (DOC)**,
 
-  va espresso in giorni e rappresenta il numero di giorni che si desidera passino tra un ordine ed il successivo.
+  debe expresarse en días y representa el número de días que se desea que transcurran entre un pedido y el siguiente.
 
-  Il suo valore viene preso in esame nel calcolo della zona verde di questo articolo.
+  Su valor se tiene en cuenta en el cálculo de la zona verde para este artículo.
 
-- **Quantità minima ordinabile (MOQ)**,
+- **Cantidad mínima ordenable (MOQ)**,
 
-  se esiste una quantità minima ordinabile imposta da fornitore o imposta internamente (sopratutto per minimizzare i setup di produzione) va indicata in questo campo.
+  si existe una cantidad mínima ordenable impuesta por el proveedor o impuesta internamente (especialmente para minimizar las configuraciones de producción), debe indicarse en este campo.
 
-  Il suo valore viene preso in esame nel calcolo della zona verde di questo articolo.
+  Su valor se tiene en cuenta en el cálculo de la zona verde para este artículo.
 
 - **Zona verde**,
 
-  campo non editabile risultato della procedura di aggiornamento zone.
+  campo no editable resultado del procedimiento de actualización de zonas.
 
-  La zona verde determina la dimensione degli ordini (nessun ordine proposto dal DDMRP può avere una quantità inferiore alla zona verde) e quindi anche la relativa fequenza di riordino, pari al rapporto tra zona verde e ADU, nonchè il livello medio e massimo di scorta previsti.
+  La zona verde determina el tamaño de los pedidos (ningún pedido propuesto por el DDMRP puede tener una cantidad inferior a la zona verde) y, por lo tanto, también la frecuencia de reorden, que es la relación entre la zona verde y el ADU, así como el nivel medio y máximo de stock previsto.
 
-- **Zona gialla**,
+- **zona gialla**,
 
-  campo non editabile risultato della procedura di aggiornamento zone.
+  campo no editable resultado del procedimiento de actualización de zonas.
 
-  La zona gialla rappresenta il consumo medio nel periodo di tempo necessario a rifornire l'articolo (DLT). 
+  La zona amarilla representa el consumo medio en el período de tiempo necesario para aprovisionar el artículo (DLT). 
   
 
-- **Zona rossa**,
+- **Zona roja**,
 
-  campo non editabile risultato della procedura di aggiornamento zone.
+  campo no editable resultado del procedimiento de actualización de zonas.
 
-  La zona rossa determina il livello di scorta di sicurezza, la giacenza minima e massima previste.
+  La zona roja determina el nivel de stock de seguridad, el inventario mínimo y máximo previstos.
 
-  La sua dimensione cresce al crescere della variabilità associata al buffer (vedi profilo di buffer).
+  Su tamaño aumenta con la variabilidad asociada al buffer (ver perfil de buffer).
 
-- **Soglia picco ordini (OST)**,
+- **Umbral de picos de pedidos (OST)**,
 
-  viene utilizzato nel calcolo NFP (Net Flow Position).
+  se utiliza en el cálculo NFP (Posición de Flujo Neto).
 
-  Quando la domanda totale in un giorno (all'interno dell'orizzonte dei picchi) supera tale valore viene considerata nel calcolo NFP.
+  Cuando la demanda total en un día (dentro del horizonte de picos) supera este valor, se considera en el cálculo NFP.
 
-  Si consiglia di utilizzare un valore compreso tra il 50% ed il 100% della zona rossa dell'articolo.
+  Se recomienda usar un valor entre el 50% y el 100% de la zona roja del artículo.
 
-  Un valore troppo piccolo porterebbe a considerare picchi di domanda delle normali oscillazioni della stessa e di conseguenza verrebbero emessi ordini troppo spesso con una giacenza media più elevata del necessario.
+  Un valor demasiado pequeño llevaría a considerar picos de demanda como oscilaciones normales de la misma y, en consecuencia, se emitirían pedidos demasiado a menudo con un inventario promedio más alto del necesario.
 
-  Un valore troppo grande porterebbe spesso a non riconoscere picchi di domanda (rilevanti ma non enormi), e di conseguenza la scorta sarebbe più bassa del necessario con conseguente profonda erosione della zona rossa o addirittura rottura di stock.
+  Un valor demasiado grande llevaría a no reconocer picos de demanda relevantes (pero no enormes) con mucha frecuencia, y en consecuencia la disponibilidad sería menor de lo necesario, lo que resultaría en una profunda erosión de la zona roja o incluso rotura de stock.
 
-  **Orizzonte picchi ordini (OSH)**,
+- **Horizonte de picos de pedidos (OSH)**,
 
-  orizzonte temporale a partire da oggi entro il quale verificare se ci sono picchi di domanda (calcolo NFP).
+  horizonte temporal a partir de hoy dentro del cual verificar si hay picos de demanda (cálculo NFP).
 
-  Tale valore non deve essere inferiore al valore del DLT (lead time disaccoppiato) poichè è necessario accorgersi di eventuali picchi di domanda con sufficiente anticipo, quindi con un anticipo pari almeno al tempo necessario ad approvvigionare l'articolo.
+  Este valor no debe ser inferior al valor del DLT (tiempo de entrega desacoplado), ya que es necesario detectar picos de demanda con suficiente anticipación, es decir, con una antelación igual al tiempo necesario para aprovisionar el artículo.
 
-- **Metodo di previsione consumo medio giornaliero**,
+- **Método de previsión del consumo medio diario**,
 
-  selezionare uno tra i seguenti metodi che verrà applicato dalla relativa procedura di aggiornamento ADU (consumo medio giornaliero):
+  seleccionar uno de los siguientes métodos que será aplicado por el procedimiento correspondiente de actualización del ADU (consumo medio diario):
 
-  - 0) nessun aggiornamento
-  - 1) media aritmetica sul passato (vengono analizzati i consumi effettivi del passato e tutti i consumi hanno lo stesso peso)
-  - 2) media pesata sul passato (i consumi recenti pesano più di quelli passati)
-  - 3) media aritmetica sul futuro (viene analizzata la tabella delle previsioni di consumo giornaliero)
-  - 4) media aritmetica del passato e del futuro (combinazione dei metodi 1 e 3)
-  - 5) passato pesato e futuro aritmetico (combinazione dei metodi 2 e 3)
+  - 0) ninguna actualización
+  - 1) media aritmética del pasado (se analizan los consumos reales del pasado y todos los consumos tienen el mismo peso)
+  - 2) media ponderada del pasado (los consumos recientes pesan más que los pasados)
+  - 3) media aritmética del futuro (se analiza la tabla de previsiones del consumo diario)
+  - 4) media aritmética del pasado y del futuro (combinación de los métodos 1 y 3)
+  - 5) pasado ponderado y futuro aritmético (combinación de los métodos 2 y 3)
 
+- **giorni nel passato**,
 
-- **Giorni nel passato**,
+  período de tiempo en el pasado en el que realizar la media del consumo diario
 
-  periodo di tempo nel passato in cui eseguire la media di consumo giornaliero
+- **giorni nel futuro**,
 
-- **Giorni nel futuro**,
+  período de tiempo en el futuro en el que realizar la previsión media del consumo diario
 
-  periodo di tempo nel futuro in cui eseguire la previsione media di consumo giornaliero
+- **Tipo de stock (Tipo scorta)**
 
-- **Tipo scorta**
+  define el tipo de stock DDMRP
 
-  definisce il tipo di scorta DDMRP
+  - 1 = Reabastecido (scorta dinamica)
+  - 2 = Reabastecido por anulación (scorta statica)
+  - 3 = Min-max (scorta min–max)
 
-  - 1 = Replenished (scorta dinamica)
-  - 2 = Replenished override (scorta statica)
-  - 3 = Min-max (scorta min—max)
+**Botón importar**
 
+Permite ingresar los parámetros DDMRP para una combinación artículo-variante-almacén donde el código de almacén identifica una [**unidad logística**](/docs/ddmrp/master-data/facilities) como un centro de distribución o un hub o la fábrica (en este caso el campo está vacío).
 
+Primero, elija un almacén de la caja de combinación correspondiente, de esta manera se mostrarán los artículos para los cuales no existe ya un registro en los parámetros DDMRP para dicho almacén (para la fábrica elija uno cualquiera de los que están asociados a ella, ya que para el sistema todos los almacenes de la fábrica equivalen al almacén con código nulo).
 
-**Pulsante importa**
+Luego, seleccione un perfil de buffer para asociar al nuevo registro para poder habilitar el botón "insertar".
 
-Consente di inserire i parametri DDMRP per una combinazione articolo-variante-magazzino dove il codice magazzino identifica una [**unità logistica**](/docs/ddmrp/master-data/facilities) come un centro di distribuzione o un hub o la fabbrica (in questo caso il campo è vuoto).
+En este punto, seleccione las filas a importar y presione el botón "insertar", luego abra los nuevos registros para completar la entrada de datos.
 
-Prima di tutto scegliere un magazzino dalla relativa combo box, in questo modo verranno mostrati gli articoli per i quali non esiste già un record nei parametri DDMRP per tale magazzino (per la fabbrica scegliere uno qualunque di quelli ad essa associati poichè per il sistema tutti i magazzini di fabbrica equivalgono al magazzino con codice nullo).
+**Botón de reemplazo de parámetros**
 
-Scegliere quindi un profilo di buffer da associare al nuovo record per poter abilitare il pulsante "inserisci".
+Funciona seleccionando filas del formulario con el mismo valor en el campo Almacén.
 
-A questo punto scegliere le righe da importare e premere il pulsante "inserisci" quindi aprire i nuovi record per completare l'inserimento dati.
+Si debe actuar sobre varios almacenes, hágalo uno por uno.
 
-**Pulante sostituzione parametri**
+Una vez seleccionadas varias filas, se habilita el botón y este abre un formulario a través del cual es posible modificar uno o más parámetros para los registros seleccionados.
 
-Funziona selezionando righe del form con lo stesso valore del campo Magazzino.
+La modificación ocurre solo si se activa el indicador junto al parámetro.
 
-Se si deve agire su più magazzini farlo uno alla volta.
+**Botón eliminar**
 
-Una volta selezionate più righe, viene abilitato il pulsante e questo apre un form tramite il quale è possibile modificare uno o più parametri per i record selezionati.
+Permite eliminar una fila y, por lo tanto, asegurar que el artículo en el almacén indicado ya no se considere un buffer DDMRP.
 
-La modifica avviene solo se il flag a fianco del parametro viene attivato.
-
-**Pulsante cancella**
-
-Permette di eliminare una riga e quindi di far si che l'articolo nel magazzino indicato non sia più considerato un buffer DDMRP.
-
-I valori storici relativi all'articolo-magazzino verranno comunque conservati e saranno visionabili sia dallo storico parametri DDMRP sia dallo storico Net Flow Position.
-
-
-
+Los valores históricos relativos al artículo-almacén se conservarán, y serán visibles tanto en el historial de parámetros DDMRP como en el historial de Posición de Flujo Neto.

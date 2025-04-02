@@ -1,1 +1,1 @@
-Viene riportata la lista degli **Extra data** collegati all'articolo, con la possibilità di aggiungere nuovi extra data utili solo per il documento in oggetto. Il flag *Da stampare* permette di scegliere quali extra data stampare.
+Se presenta la lista de los **extra data** asociados al artículo, con la posibilidad de agregar nuevos datos extra útiles solo para el documento en cuestión. El indicador *da stampare* permite elegir cuáles datos extra imprimir.

@@ -1,11 +1,11 @@
 ---
-title: Ricalcolo costo
+title: Recalculo de costo (Ricalcolo costo)
 sidebar_position: 3
 ---
 
-La procedura di **Ricalcolo costo** presente nel Controlling permette di ricalcolare i costi ultimo e medio degli articoli in base ai movimenti di magazzino.
-Nella parte superiore della maschera è presente il filtro, nel quale è possibile effettuare una ricerca più mirata per gli articoli da considerare nella procedura; nella griglia con i risultati di ricerca è possibile selezionare gli articoli da considerare. La procedura viene effettuata con il pulsante della ribbon bar **Ricalcolo costi**; i risultati della procedura di calcolo saranno riportati direttamente nella griglia degli articoli.
+El procedimiento de **Recalculo de costo (Ricalcolo costo)** presente en el Control permite recalcular los costos último y medio de los artículos en función de los movimientos de almacén.  
+En la parte superior de la máscara se encuentra el filtro, en el cual es posible realizar una búsqueda más específica para los artículos a considerar en el procedimiento; en la cuadrícula con los resultados de búsqueda es posible seleccionar los artículos a considerar. El procedimiento se lleva a cabo con el botón de la barra de herramientas **ricalcolo costi**; los resultados del procedimiento de cálculo se mostrarán directamente en la cuadrícula de artículos.
 
 :::note Nota
-È importante tenere presente che i movimenti di magazzino considerati dalla procedura per il calcolo del *Costo ultimo* o del *Costo medio* sono tutti quelli a partire dalla data di ultima chiusura più un giorno ad oggi; inoltre, i movimenti devono essere effettuati con causali che hanno i seguenti flag abilitati: *Aggiorna costo ultimo* e/o *Aggiorna costo medio* e *Interesse fiscale*.
+Es importante tener en cuenta que los movimientos de almacén considerados por el procedimiento para el cálculo del *costo ultimo* o del *costo medio* son todos los realizados a partir de la fecha del último cierre más un día hasta hoy; además, los movimientos deben ser realizados con causales que tengan habilitados los siguientes indicadores: *Actualizar costo último (Aggiorna costo ultimo)* y/o *Actualizar costo medio (Aggiorna costo medio)* y *interesse fiscale*.
 :::

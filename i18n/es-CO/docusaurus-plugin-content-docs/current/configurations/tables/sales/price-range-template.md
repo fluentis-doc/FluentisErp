@@ -1,22 +1,22 @@
 ---
-title: Configurazione fasce di prezzo
+title: configurazione fasce di prezzo
 sidebar_position: 8
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Configurazione fasce di prezzo** e serve per configurare i prezzi al variare di alcuni attributi (esempio: nel settore dell'abbigliamento, dove ci sono articoli che hanno un costo diverso a seconda della taglia).
+La tabla se abre a través de la ruta **Tablas > Ventas > configurazione fasce di prezzo (Tabelle > Vendite > Configurazione fasce di prezzo)** y se utiliza para configurar los precios según la variación de algunos atributos (por ejemplo: en el sector de la vestimenta, donde hay artículos que tienen un costo diferente según la talla).
 
-### Ricerca la configurazione
+### Buscar la configuración (Ricerca la configurazione)
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per modificare/visualizzare una configurazione basta fare doppio click sulla riga desiderata oppure premere il pulsante **Modifica**.
+Para modificar/visualizar una configuración, se debe hacer doble clic en la fila deseada o presionar el botón **modifica**.
 
-Per inserire nuovi record è necessario premere il pulsante **Nuovo** che aprirà una nuova form di inserimento. 
+Para ingresar nuevos registros, es necesario presionar el botón **nuovo**, que abrirá un nuevo formulario de ingreso.  
 
-### Modifica/Inserimento configurazione
+### Modificación/Ingreso de configuración (Modifica/Inserimento configurazione)
 
-Nella prima parte vanno inseriti il **Codice** e la **Descrizione** della configurazione e di seguito vanno impostate le versioni, ognuna con i suoi dati specifici, da inserire nei tab inferiori.
+En la primera parte se deben ingresar el **codice** y la **descrizione** de la configuración y a continuación se deben establecer las versiones, cada una con sus datos específicos, que se ingresarán en las pestañas inferiores.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consultar el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

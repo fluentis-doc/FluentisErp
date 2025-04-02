@@ -1,1 +1,1 @@
-- **Listino**: viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità, con condizioni particolari (es. scaglione di sconto) assegnate all'articolo nel listino.
+- **listino**: se propone la lista de precios de la cual se ha tomado el artículo, con la fecha de inicio/final de validez, y con condiciones particulares (por ejemplo, escalón de descuento) asignadas al artículo en la lista de precios.

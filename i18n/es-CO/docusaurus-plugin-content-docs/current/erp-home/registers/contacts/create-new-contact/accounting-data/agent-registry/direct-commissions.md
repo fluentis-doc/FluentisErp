@@ -1,79 +1,74 @@
 ---
-title: Provvigioni dirette
+title: provvigioni dirette
 sidebar_position: 4
 ---
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/direct-commissions/image01.png)
 
-La finestra è fondamentale per definire quali sono i **criteri di individuazione delle percentuali provvigionali**.
+La ventana es fundamental para definir cuáles son los **criterios para determinar los porcentajes de comisión**.
 
-## Campi generali
-I primi due campi consentono di definire una **percentuale generale** e un **importo fisso**: la percentuale generale sarà utilizzata solo se nella sezione a destra, dove si definiscono in ordine di priorità i criteri di valorizzazione, è presente la tipologia ‘1 – Anagrafica agente'.
+## Campos generales (Campi generali)
+Los primeros dos campos permiten definir un **porcentaje general** y un **importe fijo**: el porcentaje general solo se utilizará si en la sección a la derecha, donde se definen en orden de prioridad los criterios de valoración, está presente la tipología ‘1 – Registro de agente (Anagrafica agente)'.
 
-## Griglia con i criteri di calcolo
+## Cuadrícula con los criterios de cálculo (Griglia con i criteri di calcolo)
 
-Nella griglia possono essere definiti uno o più criteri contemporaneamente (vedere poi la gestione del campo *Priorità*) e ogni criterio può essere associato ad una *Categoria provvigionale* (vedi di seguito) che funge da filtro per il criterio stesso in base a delle informazioni (proprietà dell'oggetto) liberamente configurabili.
+En la cuadrícula se pueden definir uno o más criterios simultáneamente (ver más adelante la gestión del campo *Prioridad*) y cada criterio puede asociarse a una *categoria provvigionale* (ver más abajo) que actúa como filtro para el criterio en función de información (propiedades del objeto) libremente configurables.
 
-**Tipo provvigione:** La lista delle opzioni possibili (selezionabili nella combo box) è la seguente:
+**tipo provvigione**: La lista de opciones posibles (seleccionables en el cuadro combinado) es la siguiente:
 
-***Anagrafica Agente***: secondo la percentuale inserita nell'anagrafica dell'agente stesso;
+**anagrafica agente***: según el porcentaje ingresado en el registro del agente mismo;  
 
-***Anagrafica Cliente***: secondo la percentuale che l'agente ha nell'anagrafica cliente;
+**anagrafica cliente***: según el porcentaje que el agente tiene en el registro del cliente;  
 
-***Zona Cliente***: secondo la zona associata al cliente;
+**zona cliente***: según la zona asociada al cliente;  
 
-***Listino Cliente***: secondo i listini applicabili ai clienti (quindi listini generali e/o listini personalizzati);
+**listino cliente***: según las listas aplicables a los clientes (por lo tanto, listas generales y/o listas personalizadas);  
 
-***Classe***: secondo la classe dell'articolo venduto;
+**classe***: según la clase del artículo vendido;  
 
-***Articolo***: per ogni singolo articolo viene definita la percentuale dell'agente in uso;
+**articolo***: para cada artículo individual se define el porcentaje del agente en uso;  
 
-***Listino-Classe***: secondo la combinazione della classe articolo nei vari listini;
+**listino-classe***: según la combinación de la clase de artículo en las diversas listas;  
 
-***Listino-Classe-Articolo***: secondo la combinazione del singolo articolo nei vari listini;
+**listino-classe-articolo***: según la combinación de un solo artículo en las diversas listas;  
 
-***Tipo Articolo***: secondo il tipo di articolo;
+**tipo articolo***: según el tipo de artículo;  
 
-***Anagr. Cliente-Classe***: secondo la combinazione della classe articolo per ogni anagrafica cliente;
+**anagr. cliente-classe***: según la combinación de la clase de artículo para cada registro de cliente;  
 
-***Anagr. Cliente-Classe-Articolo***: secondo la combinazione della classe articolo per ogni cliente;
+**anagr. cliente-classe-articolo***: según la combinación de la clase de artículo para cada cliente;  
 
-***Fasce di sconto***: secondo il tipo di fascia di sconto (Configurazione > Tabelle > Vendite > Range sconto), cioè collegando la provvigione agli sconti che l'agente stesso applica al cliente. A loro volta, le fasce di sconto possono dipendere dalle classi articolo, dai listini, dal tipo articolo, dalla caratteristica articolo, dalla categoria merceologica oppure essere una struttura di scaglioni fissi.
+**fasce di sconto***: según el tipo de tramo de descuento (Configuración > Tablas > Ventas > Rango de descuento), es decir, vinculando la comisión a los descuentos que el agente aplica al cliente. A su vez, los tramos de descuento pueden depender de las clases de artículo, listas, tipo de artículo, característica del artículo, categoría mercantil o ser una estructura de tramos fijos.
 
-***Categoria provv.cliente***: secondo la categoria provvigionale associata al cliente;
+***Categoría de Comisión Cliente (Categoria provv.cliente)***: según la categoría de comisión asociada al cliente;  
 
-***Linea prodotto***: secondo la linea prodotto associata all'articolo;
+**linea prodotto***: según la línea de producto asociada al artículo;  
 
-***Cat.cliente e linea prodotto***: secondo la combinazione Categoria provvigionale e Linea prodotto
+***Clase Cliente y Línea de Producto (Cat.cliente e linea prodotto)***: según la combinación de la categoría de comisión y la línea de producto;  
 
-***Diritti d'autore***: questa tipologia è specifica per il caso di soggetti che non sono veri e propri agenti ma Designer o comunque professionisti per i quali calcolare Royalties. La percentuale delle royalties può essere legata al singolo articolo o alla linea prodotto;
+***Derechos de Autor (Diritti d'autore)***: este tipo es específico para sujetos que no son verdaderos agentes sino Diseñadores o profesionales para quienes se calculan Regalías. El porcentaje de regalías puede estar vinculado al artículo individual o a la línea de producto;  
 
 :::important[Importante]
-La **logica di individuazione della provvigione da applicare**, quindi, **dipende dalle priorità associate alle tipologie** che si vogliono utilizzare: se fossero, ad esempio, presenti con priorità 1, 2, 3 le tipologie ‘6 – articolo', ‘4 – listino cliente' e ‘1 – anagrafica agente' il sistema andrebbe a valutare, all'inserimento dell'articolo, se questo è nella lista degli articoli per i quali l'agente ha una percentuale di provvigione impostata (se è fra questi si prende questa % di provvigione), se non è fra questi passerebbe a valutare se la riga ha un prezzo che deriva da un listino particolare (es. listino promozionale) sul quale l'agente ha una provvigione definita (se è fra questi si prende questa % di provvigione), se non è fra questi andrebbe a utilizzare la percentuale fissa dell'anagrafica agente.
+La **lógica para determinar la comisión a aplicar**, por lo tanto, **depende de las prioridades asociadas a los tipos** que se desean utilizar: si, por ejemplo, se presentan con prioridades 1, 2, 3 los tipos ‘6 – artículo (articolo)', ‘4 – lista de precios de cliente (listino cliente)' y ‘1 – registro de agente (anagrafica agente)', el sistema evaluará, al ingresar el artículo, si este está en la lista de artículos para los cuales el agente tiene un porcentaje de comisión establecido (si está entre estos, se toma este % de comisión), si no está entre estos, pasará a evaluar si la línea tiene un precio que proviene de una lista particular (p. ej., lista promocional) sobre la cual el agente tiene una comisión definida (si está entre estos, se toma este % de comisión), si no está entre estos, utilizará el porcentaje fijo del registro del agente.
 :::
 
-:::tip[Dettaglio]
-Per alcune di queste opzioni è necessario premere il pulsante **Dettaglio percentuali selezionate** al fine di aprire la maschera di definizione delle combinazioni valide per l'agente stesso. In queste maschere, che dipendono dal tipo di impostazione di partenza (es. se si parla di articoli ci sarà il campo di definizione dell'articolo, se si parla di listini ci sarà il campo per il listino, ecc.), è **importante** andare a **definire** il **range di date di validità** di questa impostazione: per lo stesso articolo, ad esempio, potrebbero esserci più percentuali di provvigione con range di date validità differenti.
-
+:::tip[Detalle]
+Para algunas de estas opciones, es necesario presionar el botón **dettaglio percentuali selezionate** con el fin de abrir la ventana de definición de combinaciones válidas para el agente. En estas ventanas, que dependen del tipo de configuración inicial (p. ej., si se trata de artículos habrá un campo para definir el artículo, si se trata de listas habrá un campo para la lista, etc.), es **importante** ir a **definir** el **rango de fechas de validez** de esta configuración: para el mismo artículo, por ejemplo, podría haber varios porcentajes de comisión con rangos de fechas de validez diferentes.
 :::
 
 :::note[Nota]
-Merita una spiegazione particolare il dettaglio provvigionale ***Fasce di sconto***: infatti, è importante definire quale sia il [***Range di sconto***](/docs/configurations/tables/sales/discount-range) da applicare all'agente e se le provvigioni saranno quelle standard inserite in questo oppure una percentuale personalizzata per l'agente sugli scaglioni di sconto definiti per quel range; in secondo luogo, è fondamentale dire se il calcolo dello sconto effettivo applicato è definito rispetto al prezzo dell'anagrafica articolo, oppure secondo la relazione prezzo lordo-netto della singola riga articolo (nel qual caso non sarà possibile automatizzare le provvigioni agenti quando si creano documenti direttamente su prezzi netti).
+Es importante hacer una explicación particular sobre el detalle de comisión de **fasce di sconto***: de hecho, es relevante definir cuál sea el [**range di sconto***](/docs/configurations/tables/sales/discount-range) que se aplicará al agente y si las comisiones serán las estándar ingresadas en este o un porcentaje personalizado para el agente sobre los tramos de descuento definidos para ese rango; en segundo lugar, es fundamental establecer si el cálculo del descuento efectivo aplicado se define respecto al precio del registro del artículo, o según la relación precio bruto-neto de la línea de artículo individual (en este caso, no será posible automatizar las comisiones de agentes cuando se crean documentos directamente sobre precios netos).
 
-Ulteriore annotazione generale in merito ai listini: vengono associati gli specifici listini, non una tipologia di listino. In sostanza, se nel modulo dei listini di vendita si crea un nuovo listino dello stesso tipo precedente ma con una nuova data inizio validità, questo va nuovamente associato all'anagrafica agente con le sue percentuali provvigionali.
+Una anotación general adicional en relación a las listas: se asocian listas específicas, no un tipo de lista. En esencia, si en el módulo de listas de venta se crea una nueva lista del mismo tipo anterior pero con una nueva fecha de inicio de validez, esta debe asociarse nuevamente al registro del agente con sus porcentajes de comisión.
 :::
 
+**categoria provvigionale**: a los varios criterios de lectura de la comisión también se puede asociar una posible *categoria provvigionale*. Las categorías se definen en la tabla específica. El significado es vincular el criterio seleccionado también a una característica del documento (por ejemplo, el criterio es Registro de agente con lectura del valor de comisión general, pero basado en el tipo de pedido - configurando en la tabla de [**Categorías de Comisión (Categorie Provvigionali)**](/docs/configurations/tables/sales/commission-categories) el criterio de lectura según el objeto FSSalesOrder.TypeCode, por ejemplo, Código = OCIT. Es decir, la lectura de la comisión ocurre solo cuando el pedido del cliente es del tipo OCIT = Pedido Italia).
 
+Si la condición (o las múltiples condiciones alternativas) no se cumplen, se pasa al criterio en la cuadrícula con la siguiente prioridad (siempre que haya sido definido).
 
-**Categoria Provvigionale**: ai vari criteri di lettura della provvigione è agganciata anche una possibile *Categoria provvigionale*. Le categorie si definiscono nell'apposita tabella. Il significato è quello di legare il criterio selezionato anche ad una caratteristica del documento (ad esempio il criterio è Anagrafica agente con lettura del valore di provvigione generale ma in base al tipo ordine - impostando nella tabella delle [**Categorie Provvigionali**](/docs/configurations/tables/sales/commission-categories) il criterio di lettura in base all'oggetto FSSalesOrder.TypeCode, ad esempio Codice = OCIT. Ovvero la lettura della provvigione avviene solo quando l'ordine cliente è del tipo OCIT = Ordine Italia) 
+En la ventana, por último, hay otro botón que permite ingresar las configuraciones de otro agente, seleccionado desde la ayuda de agentes que se abre, en el que está en uso.
 
-
-
-Se la condizione (o le molteplici condizioni alternative) non vengono soddisfatte si passa al criterio in griglia con la priorità seguente (sempre che sia stato definito).
-
-Nella maschera, infine, c'è un altro pulsante che consente di inserire le impostazioni di un altro agente, selezionato dall'help agenti che si apre, in quello in uso.
-
-*Pulsanti specifici*:
-> **Salva agente**: per salvare le modifiche apportate all'agente.  
-> **Cancella provvigione**: per cancellare il dettaglio delle provvigioni selezionate. 
-> **Copia provvigioni agenti**: consente di inserire, nell'agente corrente, le impostazioni prelevate da un altro agente che si seleziona con l'help che si apre.
+*Botones específicos*:
+> **salva agente**: para guardar los cambios realizados en el agente.  
+> **cancella provvigione**: para eliminar el detalle de las comisiones seleccionadas.  
+> **copia provvigioni agenti**: permite insertar, en el agente actual, las configuraciones extraídas de otro agente que se selecciona con la ayuda que se abre.

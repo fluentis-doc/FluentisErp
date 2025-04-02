@@ -1,32 +1,32 @@
 ---
-title: Fasi di rilevamento
+title: fasi di rilevamento
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Fasi di rilevamento**.
+La tabla se encuentra en la ruta **fasi di rilevamento**.  
 
-In questa tabella è possibile codificare le *Fasi di rilevamento*, cioè il momento della fase produttiva/gestionale nel quale si sono rilevati i difetti.   
-Alcuni esempi di utilizzo di *Fasi di rilevamento* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+En esta tabla es posible codificar las *fasi di rilevamento*, es decir, el momento de la fase productiva/gestional en el cual se detectaron los defectos.  
+Algunos ejemplos de uso de *fasi di rilevamento* los encontramos en las gestiones:  
+> **reclami** - en la pestaña *Gestión de defectos > Datos de defectos (Gestione difetti > Dati difetto)*;  
+> **non conformità** - en la pestaña *Gestión de defectos > Datos de defectos (Gestione difetti > Dati difetto)*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Fasi di rilevamento**
+**Búsqueda de fasi di rilevamento (Ricerca Fasi di rilevamento)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Fasi di rilevamento**
+**Inserción de fasi di rilevamento (Inserimento Fasi di rilevamento)**
 
-Per poter inserire nuove *Fasi di rilevamento* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *fasi di rilevamento* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice della *Fase di rilevamento*.   
-> **Descrizione fase di rilevamento**: è la descrizione della *Fase di rilevamento*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la fase è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+*Campos específicos (Campi specifici)*: 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **codice**: es el código de la *fase di rilevamento*.  
+> **descrizione fase di rilevamento**: es la descripción de la *fase di rilevamento*.  
+> **Puntuación de cálculo del índice de calificación del proveedor (Punteggio calcolo indice di qualificazione fornitore)**: es la puntuación de descuento del *bonus* utilizado durante la *Evaluación periódica de proveedores sobre No conformidades (Valutazione periodica fornitori su Non conformità)*.  
+> **attiva**: indica si la fase sigue siendo válida y utilizable.  
+> **note**: anotaciones libres.
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

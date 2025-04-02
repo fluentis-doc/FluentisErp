@@ -1,16 +1,8 @@
 ---
-title: Versamenti ritenuta
+title: versamenti ritenuta
 sidebar_position: 2
 ---
 
-In questa maschera è possibile filtrare i compensi pagati nel mese al fine di assegnare, massivamente, a quelli selezionati i riferimenti del versamento con modello F24, senza dover entrare in ogni compenso per inserirli uno ad uno. Una volta filtrati e selezionati i compensi, si impostano i dati nella sezione 'versamento' e poi si assegnano con il pulsante 'Imposta versamento'.
+En esta interfaz es posible filtrar los pagos realizados en el mes con el fin de asignar, de manera masiva, a aquellos seleccionados las referencias del pago con el modelo F24, sin necesidad de entrar en cada pago para ingresarlos uno por uno. Una vez filtrados y seleccionados los pagos, se configuran los datos en la sección 'pago (versamento)' y luego se asignan con el botón 'Establecer pago (Imposta versamento)'.
 
 ![](/img/it-it/finance-area/professional-men/search-compensations/withholding-tax-paying-in/image01.png)
-
- 
-
-
-
-
-
-

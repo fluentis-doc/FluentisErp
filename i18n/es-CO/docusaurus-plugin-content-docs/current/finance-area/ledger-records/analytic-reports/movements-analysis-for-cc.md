@@ -1,21 +1,15 @@
 ---
-title: Analisi movimenti per Cdc
+title: Análisis de movimientos por Cdc (Analisi movimenti per Cdc)
 sidebar_position: 3
 ---
 
-Il report dell'analisi movimenti per centro di costo consente di stampare il dettaglio dei centri di costo associati ai vari movimenti contabili, totalizzando gli importi sul movimento complessivo stesso.
+El reporte del análisis de movimientos por centro de costo permite imprimir el detalle de los centros de costo asociados a los varios movimientos contables, totalizando los importes en el movimiento total.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili è di seguito rappresentata: 
+BARRA DE HERRAMIENTAS (RIBBON BAR): representa el menú del formulario en cuestión, es decir, el área en la cual se pueden realizar acciones. La lista de funcionalidades posibles se presenta a continuación: 
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'analisi movimenti per centro di costo. |
-| Stampa | Pulsante per eseguire la stampa fisica dell'analisi movimenti per centro di costo. |
-
-
-
-
-
-
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión del análisis de movimientos por centro de costo. |
+| Impresión (Stampa) | Botón para realizar la impresión física del análisis de movimientos por centro de costo. |

@@ -1,5 +1,5 @@
 ---
-title: Extra data
+title: extra data
 ---
 
-In questa tab possono essere associati all'anagrafica in uso alcuni [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+En esta pestaña se pueden asociar a la base de datos en uso algunos [extra data (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).

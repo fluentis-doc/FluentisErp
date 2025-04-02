@@ -1,41 +1,41 @@
 ---
-title: Profili di buffer
+title: Perfiles de buffer (Profili di buffer)
 sidebar_position: 4
 ---
 
-Un profilo di buffer definisce delle caratteristiche comuni a molti articoli a buffer.
+Un perfil de buffer define características comunes a muchos artículos de buffer.
 
-In questo modo si può associare ad ogni articolo a buffer il suo profilo e rendere più semplice e veloce la modifica dei relativi parametri, infatti apportando una modifica ad un profilo la stessa verrà automaticamnte applicata a tutti gli articoli che sono associati ad esso.
+De esta manera, se puede asociar a cada artículo de buffer su perfil y hacer que la modificación de los parámetros relacionados sea más sencilla y rápida; de hecho, al realizar un cambio en un perfil, este se aplicará automáticamente a todos los artículos que estén asociados a él.
 
-Un profilo è individuato dalla combinazione di tre parametri:
+Un perfil se identifica por la combinación de tres parámetros:
 
-1. **tipo parte**
+1. **tipo de parte (tipo parte)**
 
-   - M = manufacturing, cioè parte prodotta in fabbrica (prodotto finito o semilavorato)
-   - I = intermediate, cioè parte semilavorata prodotta in fabbrica (questa distinzione rispetto alla M è facoltativa)
-   - P = purchase, parte acquistata
-   - D = distributed, parte stoccata in un centro di distribuzione (in questo caso il record non può avere il campo magazzino vuoto)
+   - M = fabricación (manufacturing), es decir, parte producida en fábrica (producto terminado o semiterminado)
+   - I = intermedio (intermediate), es decir, parte semiterminado producida en fábrica (esta distinción respecto a la M es opcional)
+   - P = compra (purchase), parte comprada
+   - D = distribuido (distributed), parte almacenada en un centro de distribución (en este caso, el registro no puede tener el campo de almacén vacío)
 
-2. **categoria di lead time**
+2. **categoría de tiempo de entrega (categoria di lead time)**
 
-   confrontando tra loro articoli con lo stesso tipo parte, si possono definire un valore inferiore ed uno superiore del lead time che consentono di raggruppare gli articoli in tre gruppi con un coefficiente associato compreso tra 0 ed 1.
+   Al comparar entre sí artículos con el mismo tipo de parte, se pueden definir un valor inferior y uno superior del tiempo de entrega que permiten agrupar los artículos en tres grupos con un coeficiente asociado comprendido entre 0 y 1.
 
-   - S = short lead time items, articoli con tempo approvvigionamento corto (coefficiente tra 0.61 ed 1)
-   - M = mid lead time items, articoli con tempo approvvigionamento medio (coefficiente tra 0.41 e 0.6)
-   - L = long lead time items, articoli con tempo approvvigionamento lungo (coefficiente tra 0 e 0.4)
+   - S = artículos de tiempo de entrega corto (short lead time items), artículos con tiempo de aprovisionamiento corto (coeficiente entre 0.61 y 1)
+   - M = artículos de tiempo de entrega medio (mid lead time items), artículos con tiempo de aprovisionamiento medio (coeficiente entre 0.41 y 0.6)
+   - L = artículos de tiempo de entrega largo (long lead time items), artículos con tiempo de aprovisionamiento largo (coeficiente entre 0 y 0.4)
 
-   Il valore del coefficiente è inversamente proporzionale al tempo di approvvigionamento, poichè per articoli con lungo periodo è preferibile avere più ordini di minore dimensione che pochi ordini di grosse dimensioni, in modo da ridurre il rischio derivante da problemi di consegna. 
+   El valor del coeficiente es inversamente proporcional al tiempo de aprovisionamiento, ya que para artículos con un período largo es preferible tener más pedidos de menor dimensión que pocos pedidos de gran tamaño, con el fin de reducir el riesgo derivado de problemas de entrega.
 
-3. **categoria di variabiltà**
+3. **categoría de variabilidad (categoria di variabiltà)**
 
-   confrontando tra loro articoli con lo stesso tipo parte, analizzando la variabilità lato domanda e lato fornitura, si decide se un buffer è caratterizzato da variabilità bassa, media o alta.
+   Al comparar entre sí artículos con el mismo tipo de parte, analizando la variabilidad del lado de la demanda y del lado del suministro, se decide si un buffer está caracterizado por baja, media o alta variabilidad.
    
-   Si tratta di un analisi più complessa di quella del lead time poichè deve tenere conto della variabilità della domanda (per esempio verificando la dispersione statistica dei valori della domanda su un arco di tempo significativo), della varibilità lato fornitura (per esempio considerando la dispersione statistica dei ritardi di fornitura), e tenendo presente se come figli di distinta o come padri sono presenti altri buffer, che per loro natura riducono la variabilità.
+   Se trata de un análisis más complejo que el del tiempo de entrega, ya que debe tener en cuenta la variabilidad de la demanda (por ejemplo, verificando la dispersión estadística de los valores de la demanda en un periodo de tiempo significativo), la variabilidad del lado del suministro (por ejemplo, considerando la dispersión estadística de los retrasos en el suministro), y teniendo en cuenta si como hijos de lista (distinta) o como padres están presentes otros buffers, que por su naturaleza reducen la variabilidad.
 
-   Vengono considerati tre livelli di variabiltà associati ad un coefficiente compreso tra 0 ed 1 come segue:
+   Se consideran tres niveles de variabilidad asociados a un coeficiente comprendido entre 0 y 1 de la siguiente manera:
 
-   - L = low variability o bassa variabilità (coefficiente compreso tra 0 e 0.4)
-   - M = mid variability o media variabilità (coefficiente compreso tra 0.41 e 0.6)
-   - H = high variability o alta variabilità (coefficiente compreso tra 0.61 e 1)
+   - L = baja variabilidad (low variability) (coeficiente comprendido entre 0 y 0.4)
+   - M = variabilidad media (mid variability) (coeficiente comprendido entre 0.41 y 0.6)
+   - H = alta variabilidad (high variability) (coeficiente comprendido entre 0.61 y 1)
 
-   Più è alta la variabilità e più elevato deve essere il livello di scorta di sicurezza del buffer (zona rossa), che risulta appunto proporzionale al coefficiente di variabilità.
+   Cuanto más alta es la variabilidad, mayor debe ser el nivel de inventario de seguridad del buffer (zona roja), que es proporcional al coeficiente de variabilidad.

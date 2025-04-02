@@ -1,28 +1,27 @@
 ---
-title: Ripresa dati da fatture di vendita
+title: ripresa dati da fatture di vendita
 sidebar_position: 2
 ---
 
-La procedura ***Ripresa dati da fatture di vendita*** consente di integrare i nostri dati di area con due tipi di dati presenti in fatturazione vendite: le provvigioni e gli sconti.
+El procedimiento **ripresa dati da fatture di vendita*** permite integrar nuestros datos de área con dos tipos de datos presentes en la facturación de ventas: las comisiones y los descuentos.
 
-## RIPRESA PROVVIGIONI
-Per le provvigioni, l’esigenza è rilevare nel periodo i costi delle provvigioni che invece la contabilità rileverà solo alla maturazione della provvigione, cioè magari solo al momento dell’incasso totale della fattura. Imposteremo come sempre 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- la ***Data*** 
-- l’***Anno***
-poi sulla destra inseriremo 
-- la ***Causale*** 
-- il range ***Da data*** e ***A data*** di date fattura da filtrare per prelevare i dati.
+## RECUPERACIÓN DE COMISIONES (RIPRESA PROVVIGIONI)
+Para las comisiones, la necesidad es registrar en el período los costos de las comisiones que, en cambio, la contabilidad registrará solo al momento en que se devengue la comisión, es decir, quizás solo en el momento del cobro total de la factura. Configuraremos como siempre:  
+- el [**area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)  
+- la **data***  
+- el **anno***  
+luego, a la derecha, ingresaremos:  
+- la **causale***  
+- el rango **da data*** y **a data*** de las fechas de factura a filtrar para extraer los datos.
 
+## RECUPERACIÓN DE DESCUENTOS (RIPRESA SCONTI)
+Los descuentos, por otro lado, son un valor que normalmente la contabilidad analítica no encuentra en los registros contables, que típicamente valoran el neto del ingreso y no el bruto menos el costo del descuento aplicado. En ciertos análisis podría ser interesante resaltar este costo oculto que la empresa asume para vender, de ahí la elaboración de estos datos.
 
-## RIPRESA SCONTI
-Gli sconti, invece, sono un valore che normalmente la contabilità analitica non trova dalle rilevazioni contabili, che tipicamente valorizzano il netto del ricavo e non il lordo meno il costo dello sconto applicato. In determinate analisi potrebbe essere interessare mettere in evidenza questo costo nascosto che l’azienda sostiene per vendere, da qui l’elaborazione di questi dati.
-
-Imposteremo come sempre 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- il ***Conto*** sul quale rilevare questi costi commerciali
-- la ***Data***
-- l’***Anno***
-poi sulla destra inseriremo 
-- la ***Causale*** 
-- il range ***Da data*** e ***A data*** di date fattura da filtrare per prelevare i dati.
+Configuraremos como siempre:  
+- el [**area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)  
+- la **conto*** en la que registrar estos costos comerciales  
+- la **data***  
+- el **anno***  
+luego, a la derecha, ingresaremos:  
+- la **causale***  
+- el rango **da data*** y **a data*** de las fechas de factura a filtrar para extraer los datos.

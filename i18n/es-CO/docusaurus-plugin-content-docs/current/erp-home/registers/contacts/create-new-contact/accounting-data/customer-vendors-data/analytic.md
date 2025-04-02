@@ -1,22 +1,22 @@
 ---
-title: Analitica
+title: analitica
 sidebar_position: 10
 ---
 
-In questa form è possibile definire un legame per la valorizzazione dei costi/ricavi sui centri di costo e di profitto ( *Configurazione > Tabelle > Controlling*) per i documenti/registrazioni intestate al soggetto in uso.
+En este formulario es posible definir un vínculo para la valoración de costos/ingresos en los centros de costos y de beneficios (*Configuración > Tablas > Controlling*) para los documentos/registraciones a nombre del sujeto en uso.  
 
-Questa associazione tiene conto ed interagisce, tuttavia, con le altre opzioni di valorizzazione dei centri di costo e profitto (secondo l'articolo, il piano dei conti generale, il magazzino) che può essere definito modulo per modulo.
+Esta asociación tiene en cuenta e interactúa, sin embargo, con las otras opciones de valoración de los centros de costos y beneficios (según el artículo, el plan de cuentas general, el almacén) que pueden definirse módulo por módulo.  
 
-La priorità di lettura nella valorizzazione dei centri di costo/profitto è impostata, anno per anno, all'interno dei [Parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters#center-proposal).
+La prioridad de lectura en la valoración de los centros de costos/beneficios se establece, año por año, dentro de los [Parámetros de contabilidad (Parametri di contabilità)](/docs/configurations/parameters/finance/accounting-parameters#center-proposal).  
 
-**N**: rappresenta il numero di riga.
+**N**: representa el número de línea.  
 
-**CdC/CdP**: combobox per richiamare il centro di costo/profitto (già presente nella tabella dei Centri di costo/profitto).
+**CdC/CdP**: combobox para llamar el centro de costo/beneficio (ya presente en la tabla de Centros de costo/beneficio).  
 
-**Percentuale %**: percentuale di attribuzione del costo o ricavo su quel centro (esempio se il costo deve essere ripartito al 50% su due centri si nseriscano die righe, una per ogni centro con percentuale 50%).
+**percentuale %**: porcentaje de atribución del costo o ingreso a ese centro (ejemplo: si el costo debe dividirse al 50% en dos centros, se ingresen dos líneas, una para cada centro con porcentaje del 50%).  
 
-**Divisione**: combobox per richiamare la divisione aziendale di riferimento per il legame che si sta inserendo.
+**divisione**: combobox para llamar la división empresarial de referencia para el vínculo que se está ingresando.  
 
-**Data inizio validità**: campo obbligatorio che indica la data dalla quale è valido il legame.
+**data inizio validità**: campo obligatorio que indica la fecha desde la cual es válido el vínculo.  
 
-**Data fine validità**: indica la data dalla quale il legame non è più valido.
+**data fine validità**: indica la fecha desde la cual el vínculo ya no es válido.

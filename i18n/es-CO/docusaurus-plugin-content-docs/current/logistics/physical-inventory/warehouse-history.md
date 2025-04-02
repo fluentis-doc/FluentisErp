@@ -1,20 +1,20 @@
 ---
-title: Storico magazzino
+title: storico magazzino
 sidebar_position: 5
 ---
 
-:::important A cosa serve
-L'introduzione allo storico magazzino di Fluentis fornisce agli utenti un accesso essenziale per consultare i dati storicizzati relativi alle operazioni di magazzino. Questa funzionalità consente di visualizzare un archivio dettagliato delle chiusure e delle valorizzazioni effettuate nel tempo, offrendo la possibilità di analizzare informazioni come il costo ultimo e medio di ciascun articolo, nonché le giacenze specifiche associate a ogni chiusura.
+:::important ¿Para qué sirve? (A cosa serve)
+La introducción al historial de almacén de Fluentis proporciona a los usuarios un acceso esencial para consultar los datos historizados relacionados con las operaciones de almacén. Esta funcionalidad permite visualizar un archivo detallado de los cierres y valorizaciones realizadas a lo largo del tiempo, ofreciendo la posibilidad de analizar información como el costo último y medio de cada artículo, así como las existencias específicas asociadas a cada cierre.  
 
-Grazie alla form dedicata allo storico magazzino, gli operatori possono consultare i dati inerenti agli inventari valorizzati e ad altre operazioni logistiche, assicurandosi che ogni informazione sia tracciata e reperibile in modo facile e veloce. Per garantire che i dati vengano correttamente salvati all'interno dello storico, è fondamentale attivare il flag di Storicizzazione inventario durante le procedure di valorizzazione.
+Gracias al formulario dedicado al historial de almacén, los operadores pueden consultar los datos relacionados con inventarios valorizados y otras operaciones logísticas, asegurándose de que toda información sea rastreada y accesible de manera fácil y rápida. Para garantizar que los datos se guarden correctamente dentro del historial, es fundamental activar el indicador de Historización de inventario durante los procedimientos de valorización.  
 
-La gestione dello storico magazzino non solo supporta la tracciabilità delle giacenze, ma svolge anche un ruolo cruciale per la revisione e l'analisi delle performance aziendali nel tempo, facilitando la pianificazione e la gestione strategica delle risorse e dei costi associati.
+La gestión del historial de almacén no solo apoya la trazabilidad de las existencias, sino que también desempeña un papel crucial en la revisión y análisis del rendimiento empresarial a lo largo del tiempo, facilitando la planificación y gestión estratégica de los recursos y costos asociados.
 :::
 
-Questa form permette di consultare i dati storicizzati relativi agli inventari di magazzino valorizzati (area gestionale, categoria fiscale, costo ultimo, costo medio,...) realizzati tramite la procedura di [Inventario quantità valorizzato](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity)
+Este formulario permite consultar los datos historizados relacionados con los inventarios de almacén valorizados (área de gestión, categoría fiscal, costo último, costo medio,...) realizados a través del procedimiento de [Inventario de cantidad valorizado (Inventario quantità valorizzato)](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity).  
 
-:::note **ATTENZIONE**
-Per far si che i dati vengano salvati all'interno dello **Storico di magazzino**, è necessario che, quando viene lanciata la procedura di **Inventario quantità valorizzato**, il flag **Storicizzazione inventario** si attivo.
+:::note **ATENCIÓN (ATTENZIONE)**
+Para que los datos se guarden dentro del **storico magazzino (Storico di magazzino)**, es necesario que, al lanzar el procedimiento de **inventario quantità valorizzato**, el indicador **storicizzazione inventario** esté activado.
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

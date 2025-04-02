@@ -1,86 +1,86 @@
 ---
-title: Pulsanti comuni
+title: Botones comunes (Pulsanti comuni)
 sidebar_position: 7
 ---
 
 
-### Generale
+### General (Generale)
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| ![](/img/neutral/common/search.png) Ricerca | Pulsante per ricercare i record nel data base. |
-| ![](/img/neutral/common/delete.png) Cancella | Pulsante per cancellare i record selezionati nella griglia di risultati. |
-| ![](/img/neutral/common/combo.png) | Permette di scegliere il report da stampare. |
-| ![](/img/neutral/common/preview1.png) Anteprima | Pulsante per eseguire l'anteprima di stampa dei documenti. |
-| ![](/img/neutral/common/print.png) Stampa | Pulsante per eseguire la stampa secondo i filtri impostati e la configurazione della stampante. |
-| ![](/img/neutral/common/currency.png) Conversione valuta | Pulsante per la conversione dei prezzi di un documento in un'altra divisa. È necessario impostare la nuova [divisa ](/docs/configurations/tables/general-settings/currencies) e l' [arrotondamento](/docs/sales/sales-price-list/procedures/rounding). Per il cambio deve essere presente almeno un cambio valido. |
+| ![](/img/neutral/common/search.png) Búsqueda | Botón para buscar registros en la base de datos. |
+| ![](/img/neutral/common/delete.png) Eliminar | Botón para eliminar los registros seleccionados en la cuadrícula de resultados. |
+| ![](/img/neutral/common/combo.png) | Permite seleccionar el informe a imprimir. |
+| ![](/img/neutral/common/preview1.png) Vista previa | Botón para realizar la vista previa de impresión de los documentos. |
+| ![](/img/neutral/common/print.png) Imprimir | Botón para realizar la impresión según los filtros establecidos y la configuración de la impresora. |
+| ![](/img/neutral/common/currency.png) Conversión de moneda | Botón para la conversión de precios de un documento a otra divisa. Es necesario establecer la nueva [divisa](/docs/configurations/tables/general-settings/currencies) y el [redondeo](/docs/sales/sales-price-list/procedures/rounding). Para el cambio debe haber al menos un tipo de cambio válido. |
 
 
 
-### Generale (solo nelle form di ricerca di sola lettura)
+### General (solo en formularios de búsqueda de solo lectura)
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| ![](/img/neutral/common/new.png) Nuovo | Pulsante per aprire la form dove inserire il nuovo record. |
-| ![](/img/neutral/common/edit.png) Modifica | Pulsante per aprire in modifica i record. |
-| ![](/img/neutral/common/view.png) Visualizzazione | Pulsante per visualizzare i record. |
+| ![](/img/neutral/common/new.png) Nuevo | Botón para abrir el formulario donde ingresar un nuevo registro. |
+| ![](/img/neutral/common/edit.png) Modificar | Botón para abrir en modo de edición los registros. |
+| ![](/img/neutral/common/view.png) Visualizar | Botón para visualizar los registros. |
 
 
 
-### Generale (solo nelle form di ricerca di lettura/scrittura)
+### General (solo en formularios de búsqueda de lectura/escritura)
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| ![](/img/neutral/common/new.png) Nuovo | Pulsante per inserire il nuovo record sull'ultima riga della griglia di risultati/inserimento. |
+| ![](/img/neutral/common/new.png) Nuevo | Botón para insertar un nuevo registro en la última fila de la cuadrícula de resultados/inserción. |
 
 
 
-### Generale (nelle form di inserimento) 
+### General (en formularios de inserción) 
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| ![](/img/neutral/common/save-as.png) Salva | Pulsante per salvare i record inseriti/modificati. |
+| ![](/img/neutral/common/save-as.png) Guardar | Botón para guardar los registros ingresados/modificados. |
 
 
 
-### Gestione profili
+### Gestión de perfiles (Gestione profili)
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-|  [![](/img/neutral/common/save.png) Salva profilo](/docs/guide/common/operations-with-data/form-customization-and-profiles-management)  | Pulsante per per memorizzare le personalizzazioni delle form (dimensione/posizionamento dei campi) con un profilo utente per poterle impostare di default all'utente, a più utenti, o per ruoli di utenti (attraverso il pulsante ‘Diritti profilo'): se non sono memorizzate, queste sono perse alla chiusura della maschera stessa. |
-| ![](/img/neutral/common/save-as.png) Salva come | Pulsante per salvare la form personalizzata con il nome inserito dall'utente. |
-| ![](/img/neutral/common/delete.png) Cancella profilo | Pulsante per cancellare il profilo selezionato. |
-|  [![](/img/neutral/common/image14.png) Diritti profilo](/docs/guide/common/operations-with-data/form-customization-and-profiles-management)  | Pulsante per aprire la gestione del profilo e assegnare i diritti in base al suo tipo: Per utente, Globale, Per utente/ruolo. |
+|  [![](/img/neutral/common/save.png) Guardar perfil](/docs/guide/common/operations-with-data/form-customization-and-profiles-management)  | Botón para memorizar las personalizaciones de los formularios (dimensiones/ubicación de los campos) con un perfil de usuario para configurarlos como predeterminados para el usuario, varios usuarios o por roles de usuario (a través del botón ‘Derechos de perfil’): si no se memorizan, se perderán al cerrar el formulario. |
+| ![](/img/neutral/common/save-as.png) Guardar como | Botón para guardar el formulario personalizado con el nombre ingresado por el usuario. |
+| ![](/img/neutral/common/delete.png) Eliminar perfil | Botón para eliminar el perfil seleccionado. |
+|  [![](/img/neutral/common/image14.png) Derechos de perfil](/docs/guide/common/operations-with-data/form-customization-and-profiles-management)  | Botón para abrir la gestión del perfil y asignar derechos según su tipo: Por usuario, Global, Por usuario/rol. |
 
 
 
-### Diagrammi
+### Diagramas
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| Apri diagramma |   |
+| Abrir diagrama |   |
 
 
 
-### Attività/Task
+### Actividades/Tareas (Attività/Task)
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| ![](/img/neutral/common/new.png) Nuova attività |   |
-| ![](/img/neutral/common/assign-activity.png) Assegna ad attività |   |
+| ![](/img/neutral/common/new.png) Nueva actividad |   |
+| ![](/img/neutral/common/assign-activity.png) Asignar a actividad |   |
 
 
 
-### Document Manager
+### Gestor de Documentos (Document Manager)
 
 
-| <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
+| <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| ![](/img/neutral/common/document-manager.png)[Document manager](/docs/guide/common/operations-with-data/document-manager) | Pulsante che permette di allegare file esterni al documento in uso. |
+| ![](/img/neutral/common/document-manager.png)[Gestor de documentos (Document manager)](/docs/guide/common/operations-with-data/document-manager) | Botón que permite adjuntar archivos externos al documento en uso. |

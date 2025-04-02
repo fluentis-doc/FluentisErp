@@ -1,37 +1,35 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 2
 ---
 
-Il modulo **Fatture di vendita** consente la creazione manuale o automatica delle fatture, il recupero di prezzi e sconti dai listini, l'inserimento di dettagli personalizzati, la gestione di vari tipi di fatture e numerazioni, e l'automatizzazione di processi come contabilizzazione, emissione di effetti e raggruppamento di DDT. La stampa è personalizzabile, assicurando una documentazione completa e tracciabile.
+El módulo **fatture di vendita** permite la creación manual o automática de facturas, la recuperación de precios y descuentos de las listas, la inserción de detalles personalizados, la gestión de varios tipos de facturas y numeraciones, y la automatización de procesos como la contabilización, emisión de efectos y agrupamiento de DDT. La impresión es personalizable, asegurando una documentación completa y trazable.
 
+## Configuración preliminar del módulo (Configurazione preliminare del modulo)
 
-## Configurazione preliminare del modulo
+- **[Numeraciones](/docs/configurations/tables/fluentis-numerations)**: definición de las numeraciones para las facturas.  
+- **[Parámetros de facturas de venta](/docs/configurations/parameters/sales/sales-invoices-parameters)**: configuraciones específicas para la gestión de facturas.  
+- **[Parámetros de agrupamiento de facturas de venta](/docs/configurations/parameters/sales/invoice-grouping)**: configuración para unir varios DDT en una factura.  
+- **[Facturado de ventas](/docs/configurations/tables/sales/sales-turnover)**: monitoreo y gestión de datos de ventas.  
+- **[Tipos de facturas](/docs/configurations/tables/sales/invoices-type)**: creación y clasificación de tipos de facturas.
 
-- **[Numerazioni](/docs/configurations/tables/fluentis-numerations)**: definizione delle numerazioni per le fatture.  
-- **[Parametri fatture di vendita](/docs/configurations/parameters/sales/sales-invoices-parameters)**: impostazioni specifiche per la gestione delle fatture.  
-- **[Parametri raggruppamento fatture di vendita](/docs/configurations/parameters/sales/invoice-grouping)**: configurazione per unire più DDT in una fattura.  
-- **[Fatturato vendite](/docs/configurations/tables/sales/sales-turnover)**: monitoraggio e gestione dei dati di vendita.  
-- **[Tipi fatture](/docs/configurations/tables/sales/invoices-type)**: creazione e classificazione delle tipologie di fatture.
+Alternativamente, está disponible el procedimiento de [**Fast Start**](/docs/guide/fast-start).
 
-In alternativa è disponibile la procedura di [**Fast Start**](/docs/guide/fast-start).
-
-
-## Documenti gestiti
+## Documentos gestionados (Documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
-<div className="cardContainer">
-    <div className="card">
-### Fatture di vendita
-Permette la creazione della fattura *manuale* con l'inserimento diretto di dati oppure *automatica* generandola a partire da *Ordini client** oppure da *Documenti di trasporto (DDT)*.  
-### Procedure  
-**Scarico fatture immediate da magazzino**: gli articoli sono scalati automaticamente dal magazzino in base alle spedizioni registrate.   
-**Creazione da DDT**: generazione di fatture per uno o più DDT in base alle necessità operative.  
-### Contabilizzazione  
-Le fatture emesse sono contabilizzate automaticamente, aggiornando i registri finanziari e mantenendo la coerenza con il bilancio aziendale.  
-### Stampe  
-Layout personalizzabili per ciascun cliente.  
-Inclusione di tutti i dettagli commerciali e contabili richiesti.  
-    </div>
+<div className="cardContainer">  
+    <div className="card">  
+### Facturas de venta (Fatture di vendita)  
+Permite la creación de la factura *manuale* con la inserción directa de datos o *automática (automatica)* generándola a partir de *Pedidos de clientes (Ordini client)* o de *ddt*.  
+### Procedimientos (Procedure)  
+**scarico fatture immediate da magazzino**: los artículos se restan automáticamente del almacén según los envíos registrados.  
+**Creación desde DDT (Creazione da DDT)**: generación de facturas para uno o más DDT según las necesidades operativas.  
+### Contabilización (Contabilizzazione)  
+Las facturas emitidas se contabilizan automáticamente, actualizando los registros financieros y manteniendo la coherencia con el balance empresarial.  
+### Impresiones (Stampe)  
+Diseños personalizables para cada cliente.  
+Inclusión de todos los detalles comerciales y contables requeridos.  
+    </div>  
 </div>

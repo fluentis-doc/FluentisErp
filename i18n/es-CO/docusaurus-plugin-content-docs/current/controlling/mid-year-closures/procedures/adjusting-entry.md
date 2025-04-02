@@ -1,13 +1,12 @@
 ---
-title: Scritture di rettifica
+title: scritture di rettifica
 sidebar_position: 6
 ---
 
-Siamo all'interno del modulo Chiusure infrannuali e selezioniamo la procedura ‘Scritture di rettifica'. La maschera consente di gestire separatamente le operazioni di rettifica che si possono eseguire contestualmente alla creazione di una nuova chiusura infrannuale.
+Estamos dentro del módulo de Cierre interanual y seleccionamos el procedimiento 'scritture di rettifica (Scritture di rettifica)'. La pantalla permite gestionar por separado las operaciones de ajuste que se pueden realizar simultáneamente con la creación de un nuevo cierre interanual.
 
-Per gestire la procedura è sufficiente impostare la chiusura di riferimento, il tipo di calendario da utilizzare (si consiglia di lasciare il calendario solare e il raggruppamento per registrazione) e la causale da utilizzare (che deve avere il flag cdc/cdp per gestire la rettifica dei centri di costo/profitto).
+Para gestionar el procedimiento, es suficiente establecer el cierre de referencia, el tipo de calendario a utilizar (se recomienda dejar el calendario solar y el agrupamiento por registro) y la causa a utilizar (que debe tener el indicador cdc/cdp para gestionar el ajuste de los centros de costo/beneficio).
 
-Con questa procedura il programma verificherà le righe di costo/ricavo riprese dalla contabilità secondo i range di date registrazione/competenza impostate, per creare i risconti dei giorni al di fuori del range di date competenza impostate per la chiusura. I sottoconti di risconto da utilizzare saranno quelli inseriti nel piano dei conti in corrispondenza del singolo sottoconto di costo/ricavo oppure il sottoconto generico inserito nei parametri di contabilità dell'anno della chiusura infrannuale stessa. Nella maschera è presente un pulsante di ripristino/cancellazione dei movimenti già registrati da questa maschera.
+Con este procedimiento, el programa verificará las líneas de costo/ingreso tomadas de la contabilidad según los rangos de fechas de registro/competencia establecidos, para crear los diferidos de los días fuera del rango de fechas de competencia establecidas para el cierre. Los subcuentos de diferido a utilizar serán los introducidos en el plan de cuentas en correspondencia del subcuenta de costo/ingreso individual, o el subcuenta genérico introducido en los parámetros de contabilidad del año del cierre interanual en sí. En la pantalla hay un botón de restauración/eliminación de los movimientos ya registrados desde esta pantalla.
 
-Le griglie alla base della maschera presentano la lista delle righe di costo/ricavo, presenti nella chiusura infrannuale, che saranno oggetto di rettifica.
-
+Las cuadrículas en la parte inferior de la pantalla presentan la lista de las líneas de costo/ingreso, presentes en el cierre interanual, que serán objeto de ajuste.

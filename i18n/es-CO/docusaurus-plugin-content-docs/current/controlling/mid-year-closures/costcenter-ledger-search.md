@@ -1,8 +1,8 @@
 ---
-title: Visualizzazione dei movimenti dei centri nelle chiusure
+title: Visualización de los movimientos de los centros en los cierres (Visualizzazione dei movimenti dei centri nelle chiusure)
 sidebar_position: 7
 ---
 
-Questa maschera è dedicata alla visualizzazione dei dati presenti nell'analitica delle registrazioni create all'interno di una chiusura conti infrannuale.
+Esta máscara está dedicada a la visualización de los datos presentes en la analítica de las registraciones creadas dentro de un cierre de cuentas interanual.
 
-Una volta impostata la chiusura per la quale visualizzare i dati, si potranno quindi chiedere i movimenti dei centri filtrandoli per conto/sottoconto o per codice di [***Centro di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
+Una vez configurado el cierre para el cual visualizar los datos, se podrán solicitar los movimientos de los centros filtrándolos por cuenta/subcuenta o por código de [**centro di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).

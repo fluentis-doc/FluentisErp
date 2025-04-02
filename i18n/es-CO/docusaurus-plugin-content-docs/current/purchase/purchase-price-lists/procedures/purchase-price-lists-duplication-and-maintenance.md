@@ -1,47 +1,47 @@
 ---
-title: Duplica e manutenzione listini fornitori
+title: duplica e manutenzione listini fornitori
 sidebar_position: 3
 ---
 
-Questa procedura permette di aggiornare i listini fornitori.       
+Este procedimiento permite actualizar las listas de precios de los proveedores.         
 
-### Filtri disponibili
+### Filtros disponibles (Filtri disponibili)
 
-È possibile filtrare i risultati per: *Data inizio/fine validità*, *Valuta*, *Articolo*, *Barcode* dell'articolo o solo per gli articoli che sono stati *movimentati*, cioè collegati a documenti da una certa data.     
+Es posible filtrar los resultados por: *Fecha de inicio/fin de validez*, *Divisa*, *Artículo*, *barcode* del artículo o solo por los artículos que han sido *movimentados* (es decir, conectados a documentos desde una cierta fecha).         
 
-Se il filtro per *Data inizio validità* è completato, l'applicazione visualizza solo gli articoli dei listini validi alla data inserita. In caso contrario, verranno visualizzati tutti gli articoli, anche quelli dei listini non più validi.         
+Si se completa el filtro por *Fecha de inicio de validez*, la aplicación mostrará solo los artículos de las listas válidas a la fecha ingresada. De lo contrario, se mostrarán todos los artículos, incluyendo los de listas ya no válidas.         
 
-### Griglia articoli
+### Cuadrícula de artículos (Griglia articoli)
 
-Una volta selezionati i filtri desiderati, cliccando *Ricerca* la griglia si popolerà con tutti gli articoli che soddisfano le caratteristiche richieste. Le colonne della griglia sono:      
-- **Conto/Sottoconto/Descrizione**: contiene il titolare del listino, se personalizzato.       
-- **Classe/Codice/Descrizione articolo**: dati identificativi dell'articolo del listino.      
-- **Divisa**: riporta la divisa del listino.    
-- **Unità di misura**: anche questo dato viene ripreso dal listino.      
-- **Prezzo**: in questo campo viene riportato il prezzo dell'articolo presente nel listino.        
-- **Sconto**: in questo campo viene riportato l'eventuale sconto presente nel listino (solo sconto fisso).
-- **Prezzo netto**: in questa colonna viene riportato il *Prezzo* al netto degli *Sconti*.    
-- **Data validità da**: in questo campo viene riportata la data di inizio validità del listino.      
-- **Data validità a**: in questo campo viene invece riportata l'eventuale data di fine validità.      
-- **Data ultimo documento**: in questo campo viene inserita la data del più recente DDT che presenta articolo e listino.    
-- **Quantità**: indica la quantità a cui è riferito il prezzo.   
-- **Variante/Descrizione variante**: riporta il codice e la descrizione dela variante, se presente.   
-- **Movimento**: il flag attivo indica che sono stati registrati movimenti di magazzino con questo articolo e listino.   
+Una vez seleccionados los filtros deseados, al hacer clic en *Buscar (Ricerca)*, la cuadrícula se llenará con todos los artículos que cumplen con las características solicitadas. Las columnas de la cuadrícula son:      
+- **Cuenta/Subcuenta/Descripción (Conto/Sottoconto/Descrizione)**: contiene el titular de la lista, si es personalizada.        
+- **Clase/Código/Descripción del artículo (Classe/Codice/Descrizione articolo)**: datos identificativos del artículo en la lista.      
+- **divisa**: muestra la divisa de la lista.    
+- **unità di misura**: este dato también se toma de la lista.      
+- **prezzo**: en este campo se muestra el precio del artículo presente en la lista.        
+- **sconto**: en este campo se muestra cualquier descuento presente en la lista (solo descuento fijo).  
+- **prezzo netto**: en esta columna se muestra el *Precio* neto de los *Descuentos*.    
+- **data validità da**: en este campo se muestra la fecha de inicio de validez de la lista.      
+- **data validità a**: en este campo se muestra la fecha de fin de validez si existe.      
+- **data ultimo documento**: en este campo se inserta la fecha del DDT más reciente que presenta el artículo y la lista.    
+- **quantità**: indica la cantidad a la que se refiere el precio.   
+- **Variante/Descripción de la variante (Variante/Descrizione variante)**: muestra el código y la descripción de la variante, si está presente.   
+- **movimento**: el indicador activo indica que se han registrado movimientos de almacén con este artículo y lista.   
 
-### Barra degli strumenti
+### Barra de herramientas (Barra degli strumenti)
 
-I bottoni disponibili nella ribbon bar sono i seguenti:     
-- **Aggiorna**: apre un pop up per proseguire con l'aggiornamento del prezzo dell'articolo nel listino; si devono specificare:
-1. **Data inizio validità** delle righe listino da aggiornare (eventualmente anche una **Data fine validità** non obbligatoria)
-2. **Arrotondamento** contenente le politiche di variazione prezzi e sconti del listino, oppure
-3. **Percentuale di incremento**, togliendo il codice dell'arrotondamento e inserendo manualmente la percentuale (o il valore).
-4. **OK** per eseguire l'aggiornamento.
+Los botones disponibles en la barra de ribbon son los siguientes:     
+- **aggiorna**: abre un pop-up para continuar con la actualización del precio del artículo en la lista; se deben especificar:
+1. **data inizio validità** de las filas de la lista a actualizar (posiblemente también una **data fine validità** que no es obligatoria)
+2. **arrotondamento** que contiene las políticas de variación de precios y descuentos de la lista, o
+3. **Porcentaje de incremento (Percentuale di incremento)**, eliminando el código de redondeo e ingresando manualmente el porcentaje (o el valor).
+4. **OK** para ejecutar la actualización.
 
-:::important Ricorda
-Se non si specifica la *Data inizio validità*, l'aggiornamento non da nessun esito e non viene eseguito.
+:::important Recuerda (Ricorda)
+Si no se especifica la *Fecha de inicio de validez*, la actualización no dará ningún resultado y no se ejecutará.
 :::  
 
-- **Chiudi**: apre un pop up in cui inserire la *Data fine validità* per le righe listino selezionate; la *Data di fine validità* deve essere maggiore alla maggior data dell'ultimo documento riferito alle righe listino da chiudere (far scadere).      
-- **Duplica listini**: apre un pop up e, per le righe listini selezionate, crea o aggiunge le nuove righe ad un nuovo listino o ad un listino già esistente; è possibile, per le righe selezionate, creare un nuovo listino andando a specificare il *Fornitore*, che può essere diverso rispetto a quello del listino di partenza, la *Data validità da* e la *Divisa*; con il flag *Mantieni le stesse date del listino di origine* si crea un listino intestato ad un fornitore diverso ma con le stesse date validità.
-- **Sconti**: apre un pop up per assegnare alle righe selezionate degli *Sconti* di riga, aggiungendoli a quelli presenti o sostituendoli utilizzando il check button *Cancella Sconti precedenti*.
-- **Riapertura listini**: se viene usato, in caso di righe listino con *Data fine validità*, tali righe vengono riportate nel listino *senza* data fine validità.
+- **chiudi**: abre un pop-up en el que se debe ingresar la *Fecha de fin de validez* para las filas de la lista seleccionadas; la *Fecha de fin de validez* debe ser mayor que la fecha más reciente del último documento relacionado con las filas de la lista a cerrar (hacer expirar).      
+- **duplica listini**: abre un pop-up y, para las filas de la lista seleccionadas, crea o agrega nuevas filas a una nueva lista o a una lista ya existente; es posible, para las filas seleccionadas, crear una nueva lista especificando el *fornitore*, que puede ser diferente al de la lista original, la *data validità da* y la *divisa*; con el indicador *mantieni le stesse date del listino di origine*, se crea una lista dirigida a un proveedor diferente pero con las mismas fechas de validez.
+- **sconti**: abre un pop-up para asignar a las filas seleccionadas *sconti* de fila, añadiéndolos a los presentes o sustituyéndolos utilizando la casilla de verificación *cancella sconti precedenti*.
+- **riapertura listini**: si se utiliza, en caso de filas de la lista con *data fine validità*, tales filas se devolverán a la lista *sin* fecha de fin de validez.

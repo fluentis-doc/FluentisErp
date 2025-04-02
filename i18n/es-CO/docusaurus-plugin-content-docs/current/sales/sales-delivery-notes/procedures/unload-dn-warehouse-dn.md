@@ -1,47 +1,47 @@
 ---
-title: Scarico DDT da magazzino
+title: Descarga DDT desde almacén (Scarico DDT da magazzino)
 sidebar_position: 1
 ---
 
-La procedura massiva si apre tramite il percorso **Vendite > DDT > Procedure > Scarico DDT da magazzino**. 
+El procedimiento masivo se abre a través de la ruta **Ventas > DDT > Procedimientos > Descarga DDT desde almacén (Vendite > DDT > Procedure > Scarico DDT da magazzino)**.  
 
-Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel DDT.    
-Ricordiamo che la procedura può essere eseguita anche all'interno della [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del singolo DDT con il pulsante [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
+Este procedimiento permite realizar/restaurar las operaciones de descarga automática desde el almacén de los artículos presentes en el DDT.  
+Recordemos que el procedimiento también se puede llevar a cabo dentro del [Encabezado (Testata)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT individual con el botón [Descarga automática (Scarico automatico)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn).  
 
-La procedura massiva è composta da tre tab che analizziamo di seguito. 
+El procedimiento masivo se compone de tres pestañas que se analizan a continuación.
 
 ### Filtro
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire i DDT che hanno impostato al loro interno il flag *Stampata* e quindi sono pronti per lo scarico.     
+En esta pestaña, el usuario tiene la posibilidad de buscar y transferir los DDT que han establecido el indicador *stampata* y por lo tanto están listos para la descarga.  
 
-*Pulsanti specifici*:
+*Botones específicos*:  
 
-> **Ricerca**: permette di cercare i DDT da scaricare.  
-> **Scarico**: permette di eseguire lo scarico dei DDT selezionati dal magazzino, in base agli algoritmi di scarico e ai parametri inseriti nel successivo tab *Parametri*.
+> **ricerca**: permite buscar los DDT a descargar.  
+> **scarico**: permite realizar la descarga de los DDT seleccionados del almacén, de acuerdo con los algoritmos de descarga y los parámetros ingresados en la siguiente pestaña *Parámetros*.  
 
-### Parametri
+### Parámetros
 
-In questa maschera, l'utente ha la possibilità di specificare, per le righe articolo, il modo di trattare le eccezioni.
+En esta pantalla, el usuario tiene la posibilidad de especificar, para las líneas de artículos, la manera de tratar las excepciones.  
 
-In questo caso se le righe del DDT non hanno specificato il magazzino e la causale per lo scarico, le opzioni disponibili sono:
+En este caso, si las líneas del DDT no han especificado el almacén y el motivo para la descarga, las opciones disponibles son:  
 
-- **Non effettuare lo scarico del DDT per intero**: non permette lo scarico parziale del DDT.     
-- **Tralasciare l'articolo senza magazzino e causale**: permette lo scarico parziale del documento.       
-- **Accettare come magazzino e causale i seguenti dati**: per tutti gli articoli trovati senza magazzino e causale nei DDT selezionati nella parte dei filtri, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale* (assicura lo scarico completo del documento).
+- **No realizar la descarga del DDT completo**: no permite la descarga parcial del DDT.  
+- **Omitir el artículo sin almacén y motivo**: permite la descarga parcial del documento.  
+- **Aceptar como almacén y motivo los siguientes datos**: para todos los artículos encontrados sin almacén y motivo en los DDT seleccionados en la parte de filtros, establece los datos ingresados inmediatamente después, en los campos: *magazzino* y *causale* (asegura la descarga completa del documento).  
 
-*Pulsante specifico*
+*Botón específico*  
 
-> **Salva parametri**: permette di salvare i parametri impostati per la registrazione.
+> **salva parametri**: permite guardar los parámetros establecidos para el registro.  
 
-Dopo aver selezionato i DDT (dal tab *Filtro*) e impostato i parametri, i DDT possono essere scaricati con l'aiuto del pulsante *Scarico*.
+Después de haber seleccionado los DDT (desde la pestaña *Filtro*) y haber configurado los parámetros, los DDT se pueden descargar con la ayuda del botón *scarico*.
 
-### Riepilogativo
+### Resumen (Riepilogativo)
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di scarico eseguite, che soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.
+En esta pestaña, el usuario tiene la opción de buscar, visualizar y anular las operaciones de descarga realizadas, que cumplen con las condiciones específicas para la cancelación de los registros de almacén.  
 
-I dati nelle griglie in basso, **DDT** e **Registrazione**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare il DDT e la sua registrazione di magazzino (doppio click sulla riga).
+Los datos en las cuadrículas inferiores, **DDT** y **registrazione**, corresponden al registro de descarga seleccionado en la cuadrícula superior (después de filtrar los datos). Además, en estas dos últimas cuadrículas, hay la posibilidad de visualizar el DDT y su registro de almacén (doble clic en la fila).  
 
-*Pulsanti specifici*:
-> **Ricerca**: per cercare i DDT scaricate. Il risultato di questa procedura viene visualizzata nella griglia di risultato.  
-> **Cancella**: per cancellare per intero le operazioni di scarico selezionate nella griglia di risultato, se soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.  
-> **Ripristina DDT**: per cancellare le operazioni di scarico selezionate nella griglia di risultato, per la DDT in uso nella griglia dei dettagli.
+*Botones específicos*:  
+> **ricerca**: para buscar los DDT descargados. El resultado de este procedimiento se visualiza en la cuadrícula de resultados.  
+> **cancella**: para eliminar por completo las operaciones de descarga seleccionadas en la cuadrícula de resultados, si cumplen con las condiciones específicas para la cancelación de los registros de almacén.  
+> **ripristina ddt**: para eliminar las operaciones de descarga seleccionadas en la cuadrícula de resultados, para el DDT en uso en la cuadrícula de detalles.

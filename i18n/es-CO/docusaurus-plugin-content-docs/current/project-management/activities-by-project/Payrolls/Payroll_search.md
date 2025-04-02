@@ -1,28 +1,28 @@
 ---
-title: Ricerca Riepiloghi per cedolini
+title: Búsqueda de Resúmenes por recibos de pago (Ricerca Riepiloghi per cedolini)
 sidebar_position: 1
 ---
 
-In questa griglia sono presenti tutte le elaborazioni dei cedolini paga, per ogni dipendente, mese per mese. 
-Oltre alle funzionalità standard di ricerca, modifica ed elimina, è presente la possibilità di **esportare** i dati nei tracciati gestiti dai software degli studi elaborazioni paghe. 
-Effettuando una selezione multipla è possibile esportare in un'unica operazione tutti i cedolini selezionati. 
+En esta cuadrícula están presentes todos los procesos de los recibos de nómina, para cada empleado, mes por mes.  
+Además de las funcionalidades estándar de búsqueda, modificación y eliminación, existe la posibilidad de **exportar** los datos en los formatos gestionados por los software de los estudios de elaboración de nóminas.  
+Realizando una selección múltiple, es posible exportar en una única operación todos los recibos seleccionados.  
 
-I dati per il calcolo paghe possono essere ottenuti in automatico dalla procedura [Calcolo dati paghe](/docs/project-management/activities-by-project/procedure/payroll_procedure)
+Los datos para el cálculo de nómina pueden obtenerse automáticamente a través del procedimiento [Cálculo de datos de nómina (Calcolo dati paghe)](/docs/project-management/activities-by-project/procedure/payroll_procedure).
 
-**Anno** e **Mese**: indicano anno e mese dell'elaborazione 
+**anno** y **mese**: indican el año y el mes del procesamiento.  
 
-**Società paghe**: indica il codice e la relativa descrizione della società a cui si riferisce l'elaborazione, deriva dalla società impostata nell'anagrafica [Risorse](/docs/project-management/registers/resources-management/new-resource)
+**società paghe**: indica el código y la respectiva descripción de la empresa a la que se refiere el procesamiento, derivado de la empresa configurada en el registro de [Recursos (Risorse)](/docs/project-management/registers/resources-management/new-resource).
 
-**Operatore**, **Cognome**, **Nome**: indica il codice, nome e cognome del dipendente, ottenuto dall'associazione in anagrafica risorsa
+**operatore**, **cognome**, **nome**: indica el código, nombre y apellido del empleado, obtenido de la asociación en el registro de recursos.  
 
-**Risorsa**: Indica la risorsa per cui è stato elaborato il cedolino
+**risorsa**: Indica la asignación para la cual se ha procesado el recibo.  
 
-**Totale tempo**: indica il conteggio totale delle ore presenti nel cedolino
+**totale tempo**: indica el conteo total de las horas presentes en el recibo.  
 
-**Valore Totale**: indica il conteggio totale delle spese da rimborsare
+**valore totale**: indica el conteo total de los gastos a reembolsar.  
 
-**Esportata**,: indica i cedolini che sono già stati esportati nel file - tracciato per software esterni degli studi elaborazioni paghe
+**esportata**: indica los recibos que ya han sido exportados al archivo - formato para software externos de los estudios de elaboración de nómina.  
 
-**Data Esportazione**, **Utente Esportazione**, **Percorso**: data, utente e percorso dove è stato esportato il file contenente i cedolini paga. 
+**data esportazione**, **utente esportazione**, **percorso**: fecha, usuario y ruta donde se ha exportado el archivo que contiene los recibos de nómina.  
 
-**Note**: campo note presente nella videata del cedolino paga.
+**note**: campo de notas presente en la visualización del recibo de nómina.

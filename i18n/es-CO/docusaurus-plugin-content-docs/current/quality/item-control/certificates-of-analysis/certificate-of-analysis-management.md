@@ -1,241 +1,218 @@
 ---
-title: Certificato di Analisi
+title: certificato di analisi
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Certificati di analisi > Nuovo Certificato di analisi** oppure è possibile eseguirla dalla **Ricerca Certificati di analisi**.   
+La gestión se encuentra en la ruta **Calidad > Controles de artículo > Certificados de análisis > Nuevo Certificado de análisis** o es posible realizarla desde la **Búsqueda de Certificados de análisis**.
 
+:::important ¿Para qué sirve? (A cosa serve)
+El **Certificado de análisis** certifica que un determinado artículo cumple con las características especificadas en la Ficha técnica o en las especificaciones del Cliente; también confirma las verificaciones realizadas sobre el producto, el cumplimiento de los límites indicados en los Planes de control y acompaña la venta del producto.  
+Los Certificados pueden ser genéricos o personalizados. Si son personalizados, será necesario ingresar el **Cliente**.  
 
-:::important A cosa serve
-Il **Certificato di analisi** attesta che un determinato articolo è conforme alle caratteristiche specificate dalla Scheda tecnica o nelle specifiche del Cliente, attesta altresì le avvenute verifiche sul prodotto, il rispetto dei limiti indicati nei Piani di controllo e accompagnano la vendita del prodotto.   
-I Certificati possono essere generici o personalizzati. Se personalizzati sarà necessario inserire il **Cliente**.   
-
-A standard sono disponibili le reportistiche di:   
-> **Certificato di analisi**: scheda che riporta l'elenco dei *Prodotti* con il dettaglio delle *Prove effettuate*, dei *Valori rilevati* e l'*Esito* ottenuto.   
-> **Dichiarazione di conformità**: scheda che attesta e garantisce la conformità del *Prodotto*.   
+A estándar están disponibles los informes de:  
+> **Certificado de análisis**: ficha que presenta la lista de *Productos* con el detalle de las *Pruebas realizadas*, los *Valores registrados* y el *Resultado* obtenido.  
+> **Declaración de conformidad**: ficha que atesta y garantiza la conformidad del *Producto*.  
 :::
 
+## Botones de comando (Pulsanti di comando)
 
-## Pulsanti di comando
+### ![](/img/neutral/common/save.png) Guardar (Salva)
 
+Al presionar este botón, se almacenan toda la información modificada del *Certificado de análisis* mostrado.  
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/import.png) Importación de controles (Importazione controlli)
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Certificato di analisi* visualizzato.   
+Al presionar este botón se buscan los *Controles de artículo Aprobados* para asociarlos al *Certificado de análisis* mostrado.   
+Se mostrará una gestión para la búsqueda y selección de los *Controles de artículo* para importar en el *Certificado de análisis*.  
+Se enumeran solamente los *Controles de artículo Aprobados* que cumplen con el filtro de datos requerido.  
+Al presionar el botón *Seleccionar*, los *Controles de artículo* seleccionados se duplican y se muestran en el *Certificado de análisis* visualizado.  
 
+### ![](/img/neutral/common/update.png) Actualizar (Aggiorna)
 
-### ![](/img/neutral/common/import.png) Importazione controlli
+Al presionar este botón se actualizan todas las informaciones presentes en el *Certificado de análisis* mostrado.  
 
-Premendo questo pulsante si ricercano i *Controlli articolo Approvati* da associare al *Certificato di analisi* visualizzato.   
-Viene visualizzata una gestione per la ricerca e la selezione dei *Controlli articolo* da importare nel *Certificato di analisi*.   
-Vengono elencati i soli *Controlli articolo Approvati * che soddisfano il filtro dati richiesto.   
-Premendo il pulsante *Seleziona* i *Controlli articolo* selezionati vengono duplicati e riportati nel Certificato di analisi* visualizzato.   
+## Gestión de datos (Gestione dati)
 
+### Datos de encabezado del documento (Dati di testata del documento)
+Las informaciones gestionadas son:  
+> **tipo certificato**: es el tipo del documento (dato obligatorio).  
+> Al ingresar un nuevo *Certificado de análisis*, se sugiere el *Tipo de certificado* indicado en el expander *Certificados de análisis* de la pestaña *General* presente en los *Parámetros de Control de artículos*.  
 
-### ![](/img/neutral/common/update.png) Aggiorna
+> **anno/numero/data**: son el *Año*, *Número* y *Fecha* del *Certificado de análisis* (datos obligatorios).  
+> Al ingresar un nuevo *Certificado de análisis*:  
+> - la *Fecha* se propone igual a la fecha actual;  
+> - el *Año* y el *Número* se proponen según la *Fecha* y la *Numeración* asociada al *Tipo de certificado*.  
 
-Premendo questo pulsante si effettua un aggiornamento di tutte le informazioni presenti nei *Certificato di analisi* visualizzato.   
+> **Cliente**: es la razón social del *Cliente* a quien se enviará el documento.  
 
+### Encabezado (Testata) 
+Las informaciones gestionadas son:  
+> **Responsable**: es el *Empleado* responsable del *Certificado de análisis*.  
+> Al ingresar manualmente un nuevo *Certificado de análisis*, se sugiere el *Responsable* indicado en el expander *Certificados de análisis* de la pestaña *General* presente en los *Parámetros de Control de artículos*.  
 
+> **Referente externo**: es la *Función empresarial* responsable de la *Acción correctiva*.  
+> **Nota cliente**: anotaciones libres.  
+> **Nuestro referente**: anotaciones libres sobre referencias a documentos internos.  
+> **Su referente**: anotaciones libres sobre referencias a documentos externos del cliente.  
+> **Descripción**: anotaciones libres.  
 
-## Gestione dati
+> **completato/in data**: expander donde es posible ingresar:  
+> 
+>> **Completado**: indica que el *Certificado de análisis* ha sido *Completado*.  
+>> Al completarlo, se proponen automáticamente: *En fecha* (fecha de completado) igual a la fecha actual y puede ser modificada, *Completado por* vinculado al *Empleado* asociado al *Usuario A.R.M.* que ha ingresado.  
+>> **Notificado/En fecha (Notificato/In data)**: indica que el *Certificado de análisis* ha sido *Notificado* al cliente en la fecha especificada.  
+>> Al notificar, se propone automáticamente: *En fecha* (fecha de notificación) igual a la fecha actual y puede ser modificada.  
+> 
+> **Audit Trail**: expander de solo lectura donde son visibles las siguientes informaciones:  
 
+#### Anotaciones (Annotazioni)
+Las informaciones gestionadas son:  
+> **Notas internas**: anotaciones libres.  
+> **Imprimibles**: indica si las *Notas internas* son imprimibles o no en los informes: *Certificado de análisis* y *Declaración de conformidad*.  
+> **Notas del Plan de control**: anotaciones libres sobre referencias a los Planes de control utilizados.  
+> **Imprimibles**: indica si las *Notas del Plan de control* son imprimibles o no en los informes: *Certificado de análisis* y *Declaración de conformidad*.  
+> **Otras notas**: anotaciones libres.  
 
-### Dati di testata del documento
-Le informazioni gestite sono:   
-> **Tipo certificato**: è il tipo del documento (dato obbligatorio).   
-> All'inserimento di un nuovo *Certificato di analisi* viene proposto il *Tipo certificato* indicato nell'expander *Certificati di analisi* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
->
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* del *Certificato di analisi* (dati obbligatori).   
-> All'inserimento di un nuovo *Certificato di analisi*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo certificato*.   
->
-> **Cliente**: è la ragione sociale del *Cliente* a cui verrà inviato il documento.   
+#### Datos extra (Extra data)
+Es posible ingresar [Datos Extra](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Certificado de análisis*.  
 
+### Controles y valores registrados (Controlli e valori rilevati) 
+Las informaciones gestionadas son:  
+> **articolo**   
+>> **Número**: es el número de línea del documento.   
+>> **Tipo de línea**: es el tipo de línea del documento. En la versión actual, solo se gestiona el *Tipo de línea: 1 - Artículo codificado*.   
+>> **Clase**: es la clase del *Artículo* de la línea del documento controlada.   
+>> **Código de artículo**: es el código del *Artículo* de la línea del documento controlada.   
+>> **Descripción del artículo**: es la descripción del *Artículo* de la línea del documento controlada.   
+>> **unità di carico**: .   
+>> **lotto**: .   
+>> **numero seriale**: .   
+>> **Unidad de medida**: es la *Unidad de medida* de la *Cantidad del documento* de la línea del documento controlada.   
+>> **Cantidad**: es la *Cantidad del documento* de la línea del documento controlada.   
+>> **Unidad de medida alternativa**: es la *Unidad de medida alternativa* de la *Cantidad del documento* de la línea del documento controlada.   
+>> **Cantidad alternativa**: es la *Cantidad alternativa del documento* de la línea del documento controlada.   
 
-### Testata 
-Le informazioni gestite sono:   
-> **Responsabile**: è il *Dipendente* responsabile del *Certificato di analisi*.   
-> All'inserimento manuale di un nuovo *Certificato di analisi* viene proposto il *Responsabile* indicato nell'expander *Certificati di analisi* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.  
->
-> **Referente esterno**: è la *Funzione aziendale* responsabile dell'*Azione correttiva*.   
-> **Nota cliente**: annotazioni libere.   
-> **Nostro riferimento**: annotazioni libere su riferimenti a documenti interni.   
-> **Vostro riferimento**: annotazioni libere su riferimenti a documenti esterni del cliente.   
-> **Descrizione**: annotazioni libere.   
->
-> **Completato/In data**: expander dove è possibile inserire:   
->
->> **Completato**: indica che il *Certificato di analisi* è stato *Completato*.   
->> All'atto del completamento vengono automaticamente proposte: *In data* (data del completamento) proposta alla data odierna e può essere variata, *Completato da* collegato e al *Dipendente* collegato all'*Utente A.R.M.* che ha effettuato l'accesso.  
->> **Notificato/In data**: indica che il *Certificato di analisi* è stato *Notificato* al cliente nella data specificata.   
->> All'atto della notifica viene automaticamente proposta: *In data* (data della notifica) proposta alla data odierna e può essere variata.  
->
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **controlli articolo**   
+>> **Tipo**: es el código del *Tipo de control de artículo*.   
+>> **Descripción tipo**: es la descripción del *Tipo de control de artículo*. La información es de solo lectura.   
+>> **Número**: es el número del *Control de artículo*. La información es de solo lectura.   
+>> **Fecha**: es la fecha en que se ingresó el *Control de artículo*. La información es de solo lectura.   
 
+#### Valores registrados (Valori rilevati)
+Contiene la lista de las *Pruebas* para el *Artículo*.  
+Las informaciones se heredan de las *Pruebas de los *Controles de artículo* importados y son modificables con las mismas lógicas utilizadas en la gestión de los [*Controles de artículo*](/docs/quality/item-control/items-control/item-control-management).
+La lista se compone de la siguiente información:  
+> **Secuencia**: es la secuencia de ejecución de la *Prueba*.   
+> **Tipo de prueba**: es el código de la *Prueba*.   
+> **Descripción del tipo de prueba**: es la descripción de la *Prueba*. La información es de solo lectura.   
+> **Unidad de medida de los valores registrados**: es la *Unidad de medida* con la que se expresan el *Valor nominal*, los *Limites mínimo y máximo* si se expresan en valor y no en porcentaje, y los *Valores registrados*.   
+> **Tipo de valor**: es el *Tipo de valor* con el que se expresará el *Valor nominal*; los *Tipos de valor* posibles son: *Numérico*, *Sí/No* o *Texto*.   
+> **Tipo de límite**: habilitado si el *Tipo de valor* es *Numérico*, es el *Tipo de límite* que pilotará la habilitación de los *Límites* y los valores de *Tolerancia*.   
+> **Valor nominal**: es el valor teórico esperado de la *Prueba*.  
+> **Límite mínimo**: límite mínimo permitido respecto al *Valor nominal*.  
+> **L.min.(toll-)**: es el límite de tolerancia negativa sobre el límite mínimo.  
+> **L.min.(toll+)**: es el límite de tolerancia positiva sobre el límite mínimo.  
+> **Límite máximo**: límite máximo permitido respecto al *Valor nominal*.  
+> **L.max.(toll-)**: es el límite de tolerancia negativa sobre el límite máximo.  
+> **L.max.(toll+)**: es el límite de tolerancia positiva sobre el límite máximo.  
+> **%**: indica si el *Límite mínimo* y el *Límite máximo* se expresan en porcentaje.  
+> **Valor registrado**: es el valor puntual registrado de la *Prueba* que determinará el *Resultado*.   
+> Al ingresar el *Valor registrado*:  
+> - en *Registrado por* se propone el *Empleado* asociado al *Usuario A.R.M.* que ha ingresado;  
+> - en *Registrado por usuario* se propone el *Usuario A.R.M.* que ha ingresado;  
+> - en *Resultado* se propone el resultado de la *Prueba* y puede ser modificado posteriormente.  
+> - en *Fecha del resultado de la prueba* se propone la fecha actual y puede ser modificada posteriormente.  
 
-#### Annotazioni
-Le informazioni gestite sono:   
-> **Note interne**: annotazioni libere.   
-> **Stampabili**: indica se le *Note interne* sono stampabili o meno nei reports: *Certificato di analisi* e *Dichiarazione di conformità*.   
-> **Note Piano di controllo**: annotazioni libere su riferimenti a Piani di controllo utilizzati.   
-> **Stampabili**: indica se le *Note Piano di controllo* sono stampabili o meno nei reports: *Certificato di analisi* e *Dichiarazione di conformità*.   
-> **Altre note**: annotazioni libere.   
+> **media valori rilevati**: es el promedio de los valores registrados en la *Detección múltiple de valores* de la *Prueba*.  
+> **rilevato da**: es el *Empleado* que ingresó el *Valor registrado*.  
+> Al ingresar el *Valor registrado*, esta información se propone como igual al *Empleado* asociado al *Usuario A.R.M.* que ha ingresado.  
+> **rilevato da utente**: es el *Usuario A.R.M.* que ingresó el *Valor registrado*.  
+> Al ingresar el *Valor registrado*, esta información se propone como igual al *Usuario A.R.M.* que ha ingresado.  
+> **esito**: es el resultado positivo o negativo de la *Prueba*.  
+> Al ingresar el *Resultado*, en *Fecha del resultado de la prueba* se propone la fecha actual y puede ser modificada posteriormente.  
+> Al ingresar el *Valor registrado* o el *Promedio de valores registrados*, esta información se propone en función del *Tipo de valor*, *Tipo de límite*, *Valor nominal*, *Límites* y *Tolerancias* ingresadas.  
+> **stampabile**: indica que la *Prueba* es imprimible.  
+> **approvato**: indica que los valores y el *Resultado* atribuido a la *Prueba* han sido *Aprobados*.  
+> Al aprobar, la *Fecha de aprobación del resultado* se propone automáticamente como igual a la fecha actual y puede ser modificada; toda la información de la *Prueba* no podrá ser modificada nuevamente.  
 
+***Valores múltiples registrados***
 
-#### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Certificato di analisi*.   
+Contiene la lista de las detecciones realizadas para una sola *Prueba*.  
+También se heredan de las *Pruebas de los *Controles de artículo* importados y son modificables con las mismas lógicas utilizadas en la gestión de los [*Controles de artículo*](/docs/quality/item-control/items-control/item-control-management).
+La lista se compone de la siguiente información:  
+> **Secuencia**: es la secuencia de ejecución de la detección.  
+> **Posición**: anotaciones libres relacionadas con la posición de la detección.  
+> **Valor registrado**: es el valor registrado por el operador.  
+> Si el *Valor registrado* es de tipo *Numérico*, el promedio de los *Valores registrados* ingresados en esta lista para la *Prueba* seleccionada se ingresará en la columna *Promedio de valores registrados* de la *Prueba* seleccionada que determinará el *Resultado*.  
+> Al ingresar el *Valor registrado*:  
+> - en *Registrado por* se propone el *Empleado* asociado al *Usuario A.R.M.* que ha ingresado;  
+> - en *Registrado por usuario* se propone el *Usuario A.R.M.* que ha ingresado;  
+> - en *Registrado el* se propone la fecha actual.  
+> 
+> **Instrumento de medida utilizado**: es la referencia al *Instrumento de medida* utilizado por el operador para adquirir el *Valor registrado*.  
+> **rilevato da**: es el *Empleado* que ingresó el *Valor registrado*.  
+> Al ingresar el *Valor registrado*, esta información se propone como igual al *Empleado* asociado al *Usuario A.R.M.* que ha ingresado.  
+> **rilevato da utente**: es el *Usuario A.R.M.* que ingresó el *Valor registrado*.  
+> Al ingresar el *Valor registrado*, esta información se propone como igual al *Usuario A.R.M.* que ha ingresado.  
+> **rilevato il**: es la fecha en que el operador ingresó el *Valor registrado*.  
+> Al ingresar el *Valor registrado*, esta información se propone como igual a la fecha actual.  
+> **Notas**: anotaciones libres.  
+> **Descripción del instrumento de medida**: es la descripción del *Instrumento de medida* utilizado.  
 
+***Datos de detalle de valores registrados***
 
-### Controlli e valori rilevati 
-Le informazioni gestite sono:   
-> **Articolo**   
->> **Numero**: è il numero di riga del documento.   
->> **Tipo riga**: è il tipo riga del documento. Nella versione è gestito solamente il *Tipo riga: 1 - Articolo codificato*.   
->> **Classe**: è la classe dell'*Articolo* della riga documento controllata.   
->> **Codice articolo**: è il codice dell'*Articolo* della riga documento controllata.   
->> **Descrizione articolo**: è la descrizione dell'*Articolo* della riga documento controllata.   
->> **Unità di carico**: .   
->> **Lotto**: .   
->> **Numero seriale**: .   
->> **Unità di misura**: è l'*Unità di misura* della *Quantità documento* della riga documento controllata.   
->> **Quantità**: è la *Quantità documento* della riga documento controllata.   
->> **Unità di misura alternativa**: è l'*Unità di misura alternativa* della *Quantità documento* della riga documento controllata.   
->> **Quantità alternativa**: è la *Quantità alternativa documento* della riga documento controllata.   
->
-> **Controlli Articolo**   
->> **Tipo**: e il codice del *Tipo controllo articolo*.   
->> **Descrizione tipo**: è la descrizione del *Tipo controllo articolo*. L'informazione è di sola lettura.   
->> **Numero**: e il numero del *Controllo articolo*. L'informazione è di sola lettura.   
->> **Data**: e la data in cui è stato inserito il *Controllo articolo*. L'informazione è di sola lettura.   
+Contiene otras informaciones asociadas a la *Prueba* seleccionada.  
+Las informaciones se heredan de las *Pruebas de los *Controles de artículo* importados y son modificables con las mismas lógicas utilizadas en la gestión de los [*Controles de artículo*](/docs/quality/item-control/items-control/item-control-management).  
+Las informaciones gestionadas son:  
+> **Prueba interna**: indica si la *Prueba* se realiza internamente o en un laboratorio externo.  
+> **Fecha de envío**: es la fecha en que se envió el material necesario para realizar la *Prueba* al *Laboratorio externo*. La información es de solo lectura si se indica la *Prueba interna*.  
+> **Laboratorio externo**: es la razón social del *Proveedor* que realizará la prueba. La información es de solo lectura si se indica la *Prueba interna*.  
+> **Tipo de prueba**: es el código y la descripción de la *Prueba*.  
+> **Categoría frecuencia**: anotaciones libres relacionadas con la frecuencia de muestreo.  
+> **Número de detecciones**: es el número de detecciones de valores mínimos sugeridos a realizar.  
+> **Instrumento de medida utilizado**: es el *Instrumento de medida* utilizado para detectar el valor puntual de la *Prueba*.  
+> **Fecha de inicio/Fecha de finalización**: son las fechas de inicio y fin de la *Prueba*.  
+> **Fecha de resultado de la prueba**: es la fecha de atribución del *Resultado*.  
+> Al ingresar el *Resultado*, esta información se propone como igual a la fecha actual y puede ser modificada posteriormente.  
+> **Descripción sobre el resultado**: anotaciones libres sobre el tema.  
+> **Fecha de aprobación**: es la fecha en que se realizó la *Aprobación* de la *Prueba*.  
+> Al ingresar la fecha, se activa automáticamente el indicador *Aprobado*.  
+> **Descripción de la aprobación**: anotaciones libres sobre el tema.  
+> **Notas de la prueba**: anotaciones libres sobre el tema.  
+> **Otras notas**: anotaciones libres.  
 
+***Otros datos de las pruebas realizadas***
 
-#### Valori rilevati
-Contiene l'elenco delle *Prove* per l'*Articolo*.   
-Le informazioni vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della *Prove*.   
-> **Tipo prova**: è il codice della *Prova*.   
-> **Descrizione tipo prova**:  è la descrizione della *Prova*. L'informazione è di sola lettura.   
-> **Unità di misura valori rilevati**: è l'*Unità di misura* con cui si esprimono il *Valore nominale*, i *Limiti minimo e massimo* se espressi in valore e non in percentuale e i *Valori rilevati*.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Prova*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Valore rilevato**: è il valore puntuale rilevato della *Prova* che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Esito* viene proposto il risultato della *Prova* e modificabile successivamente.   
-> - in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
->
-> **Media valori rilevati**: è la media dei valori rilevati nella *Rilevazione multipla valori* della *Prova*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Esito**: è il risultato positivo o negativo della *Prova*.   
-> All'inserimento dell'*Esito* in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
-> All'inserimento del *Valore rilevato* o della *Media valori rilevati* questa informazione viene proposta sulla base del *Tipo valore*, *Tipo limite*, *Valore nominale*, *Limiti* e *Tolleranze* inserite.   
-> **Stampabile**: indica che la *Prova* è stampabile.   
-> **Approvato**: indica che i valori e l'*Esito* attribuito alla *Prova* sono stati *Approvati*.   
-> All'atto dell'approvazione la *Data approvazione esito* viene automaticamente proposta pari alla data odierna e può essere variata, tutte le informazioni della *Prova* non possono essere più modificate.   
+Es posible visualizar [Datos Extra](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada línea de *Valores registrados* de la línea *Artículo/Controles de artículo*.  
+Se heredan de los *Atributos de las pruebas realizadas* asociadas a las *Pruebas* de los *Controles de artículo*.  
 
+***Atributos del artículo***
 
-***Valori multipli rilevati***   
+Es posible ingresar [Datos Extra](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada línea de *Valores registrados* de la línea *Artículo/Controles de artículo*.  
 
-Contiene l'elenco delle rilevazioni fatte per una singola *Prova*.   
-Anch'esse vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della rilevazione.   
-> **Posizione**: annotazioni libere relative alla posizione della rilevazione.   
-> **Valore rilevato**: è il valore rilevato dall'operatore.   
-> Se il *Valore rilevato* è di tipo *Numerico*, la media dei *Valori rilevati*, inseriti in questo elenco per la *Prova* selezionata, verrà inserita nella colonna *Media valori rilevati* della *Prova* selezionata che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato il* viene proposta la data odierna.   
->
-> **Strumento di misura utilizzato**: è il rifermento allo *Strumento di misura* utilizzato dall'operatore per acquisire il *Valore rilevato*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato il**: è la data in cui l'operatore ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari alla data odierna.   
-> **Note**: annotazioni libere.   
-> **Descrizione Strumento di misura**: è la descrizione dello *Strumento di misura* utilizzato.   
+***Documentos adjuntos***
 
+En esta lista es posible ingresar y consultar eventuales adjuntos asociados a la línea *Valores registrados* de la línea *Artículo/Controles de artículo*.  
 
-***Dati di dettaglio valori rilevati***   
+#### Datos de detalle de controles
+Las informaciones gestionadas son:  
+> **Referencia del Plan de control**: es la referencia al *Plan de control* utilizado para las pruebas y los valores registrados. La información es de solo lectura.  
+> **Descripción del control**: es la descripción del *Control de artículos* relacionado. La información es de solo lectura.  
+> **Notas del control**: anotaciones libres sobre el tema.  
+> **Notas artículo-cliente**: anotaciones libres sobre el tema.  
+> **Referencia a la Ficha técnica**: es la referencia a la *Ficha técnica* relacionada con el *Plan de control* utilizado. La información es de solo lectura.  
+> **Documento de origen**: es la referencia del *Tipo de documento de origen* sobre el cual se realizaron los *Controles de artículos*. La información es de solo lectura.  
+> **Referencia del documento de origen**: es la referencia del *Documento de origen* sobre el cual se realizaron los *Controles de artículos*. La información es de solo lectura.  
+> **Notas**: anotaciones libres.  
 
-Contiene altre informazioni associate alla *Prova* selezionata.   
-Le informazioni vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).   
-Le informazioni gestite sono:   
-> **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
-> **Data invio**: è la data in cui si è inviato il materiale necessario ad effettuare la *Prova* presso il *Laboratorio esterno*. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Tipo prova**: è il codice e la descrizione della *Prova*.   
-> **Categoria frequenza**: annotazioni libere relative alla frequenza di campionatura.   
-> **Numero rilevazioni**: è il numero di rilevazioni valori minime suggerite da effettuare.   
-> **Strumento di misura utilizzato**: è lo *Strumento di misura* utilizzato per rilevare il valore puntuale della *Prova*.   
-> **Data inizio/Data fine**: sono le date di inizio e di fine della *Prova*.  
-> **Data esito prova**: è la data di attribuzione dell'*Esito*.   
-> All'inserimento dell'*Esito* questa informazione viene proposta pari alla data odierna e modificabile successivamente.   
-> **Descrizione su risultato**: annotazioni libere sull'argomento.   
-> **Data approvazione**: è la data in cui è stata effettuata l'*Approvazione* della *Prova*.   
-> All'atto dell'inserimento della data viene automaticamente impostato il flag *Approvato*.   
-> **Descrizione approvazione**: annotazioni libere sull'argomento.   
-> **Note prova**: annotazioni libere sull'argomento.   
-> **Altre note**: annotazioni libere.   
+#### Otros datos de control
+Es posible visualizar [Datos Extra](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada línea *Artículo/Controles de artículo*.  
+Se heredan de los *Atributos de los controles* asociados a los *Controles de artículo*.  
 
+#### Atributos del artículo
+Es posible ingresar [Datos Extra](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada línea *Artículo/Controles de artículo*.  
 
-***Altri dati prove effettuate***   
+#### Documentos adjuntos
+En esta lista es posible ingresar y consultar eventuales adjuntos asociados a la línea *Artículo/Controles de artículo*.  
 
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
-Vengono ereditati dagli *Attributi prove effettuate* associati alle *Prove* dei *Controlli articolo*.   
-
-
-***Attributi articolo***   
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
-
-
-***Documenti allegati***   
-
-In questo elenco è possibile inserire e consultare eventuali allegati associati alla riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
-
-
-#### Dati di dettaglio controlli
-Le informazioni gestite sono:   
-> **Riferimento Piano di controllo**: è il riferimento al *Piano di controllo* utilizzato per le prove ed i valori rilevati. L'informazione è di sola lettura.   
-> **Descrizione controllo**: è la descrizione del *Controllo articoli* collegato. L'informazione è di sola lettura   
-> **Note controllo**: annotazioni libere sull'argomento.   
-> **Note articolo-cliente**: annotazioni libere sull'argomento.   
-> **Riferimento Scheda tecnica**: è il riferimento alla *Scheda tecnica* collegata al *Piano di controllo* utilizzato. L'informazione è di sola lettura   
-> **Documento di origine**: è il riferimento del *Tipo documento di origine* sul quale si sono effettuati i *Controlli articoli*. L'informazione è di sola lettura   
-> **Riferimento documento di origine**: è il riferimento del *Documento di origine* sul quale si sono effettuati i *Controlli articoli*. L'informazione è di sola lettura.   
-> **Note**: annotazioni libere.   
-
-
-#### Altri dati controllo
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Articolo/Controlli articolo*.   
-Vengono ereditati dagli *Attributi controlli* associati ai *Controlli articolo*.   
-
-
-#### Attributi articolo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Articolo/Controlli articolo*.   
-
-
-#### Documenti allegati
-In questo elenco è possibile inserire e consultare eventuali allegati associati alla riga *Articolo/Controlli articolo*.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

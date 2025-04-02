@@ -1,26 +1,26 @@
 ---
-title: Amministrativa
+title: amministrativa
 sidebar_position: 1
 ---
 
-I parametri dell'area **Amministrativa** concernono i moduli di 
+Los parámetros del área **amministrativa** se refieren a los módulos de 
 
-[**Contabilità**](/docs/configurations/parameters/finance/accounting-parameters): **Indispensabili** per l'utilizzo di qualsiasi funzionalità contabile, contengono la definizione di dati fondamentali quali la durata dell'esercizio i conti utilizzati per le operazioni contabili automatizzate e l'abbinamento tra le anagrafiche ed il piano dei conti, pertanto influenzano anche il processo di creazione di nuove anagrafiche clienti e fornitori.
+[**contabilità**](/docs/configurations/parameters/finance/accounting-parameters): **Indispensables (Indispensabili)** para el uso de cualquier funcionalidad contable, contienen la definición de datos fundamentales como la duración del ejercicio, las cuentas utilizadas para las operaciones contables automatizadas y la conexión entre los registros y el plan de cuentas; por lo tanto, también influyen en el proceso de creación de nuevos registros de clientes y proveedores.
 
-**Percipienti**:  Parametri **non necessari** e presenti per retro compatibilità
+**percipienti**: Parámetros **no necesarios (non necessari)** y presentes por retrocompatibilidad.
 
-[**Cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters): parametri che prevedono opzioni specifiche di interesse limitatamente al modulo cespiti/controlling
+[**cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters): parámetros que prevén opciones específicas de interés limitado al módulo de activos fijos/control (cespiti/controlling).
 
-[**Importazione paghe**](/docs/configurations/parameters/finance/payroll-import-parameters) Parametri specifici per l'importazione delle scritture relative alle paghe dipendenti da altri sistemi gestionali tramite il flusso di importazione Bizlink.
+[**Importación de nómina (Importazione paghe)**](/docs/configurations/parameters/finance/payroll-import-parameters): Parámetros específicos para la importación de los asientos relacionados con las nóminas de empleados desde otros sistemas de gestión a través del flujo de importación Bizlink.
 
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo delle funzionalità interessate.
+:::danger[Atención (Attenzione)]
+Una falta de gestión de estos datos básicos podría impedir el uso de las funcionalidades implicadas.
 :::
 
-:::tip[Nota]
-A fronte della stretta interconnessione con l'area Tesoreria, in particolare per le varie procedure di contabilizzazione automatica del modulo Portafoglio attivo e Pagamenti fornitori, si consiglia di controllare e gestire anche i [**parametri**](/docs/configurations/parameters/treasury/general-overview) dell'area tesoreria.
+:::tip[Nota (Nota)]
+Dada la estrecha interconexión con el área de Tesorería, en particular para los diversos procedimientos de contabilización automática del módulo de Cartera activa y Pagos a proveedores, se recomienda revisar y gestionar también los [**parametri**](/docs/configurations/parameters/treasury/general-overview) del área de tesorería.
 :::
 
-:::important[**Fast Start**]
-I parametri dell'area amministrativa possono essere configurati tramite l'inizializzazione di un [**ambiente *FastStart***](/docs/guide/fast-start) progettato per consentire una configurazione rapida e un utilizzo immediato del sistema.
+:::important[**Inicio Rápido (Fast Start)**]
+Los parámetros del área administrativa pueden ser configurados mediante la inicialización de un [**ambiente *FastStart*ambiente*FastStart*)**](/docs/guide/fast-start) diseñado para permitir una configuración rápida y un uso inmediato del sistema.
 :::

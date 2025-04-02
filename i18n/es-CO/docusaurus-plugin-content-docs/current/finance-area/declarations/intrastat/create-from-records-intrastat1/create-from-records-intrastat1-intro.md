@@ -1,22 +1,14 @@
 ---
-title: Creazione da registrazioni
+title: creazione da registrazioni
 sidebar_position: 1
 ---
 
-Il pulsante di **Creazione da registrazioni** apre una procedura guidata dedicata alla ripresa dati dalle registrazioni di contabilità generale, abilitando opportunamente la **gestione intrastat** nella causale di contabilizzazione (flag ***Intrastat*** nella tab *Dettaglio registrazione*).
+El botón de **creazione da registrazioni** abre un asistente dedicado a la recuperación de datos de los registros de contabilidad general, habilitando apropiadamente la **gestión intrastat (gestione intrastat)** en el motivo de contabilización (indicador ***Intrastat*** en la pestaña *dettaglio registrazione*).
 
-Tab:
+Pestañas:
 
-** [Filtro registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter) **
+**[Filtro de registros (Filtro registrazioni)](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter)**
 
-** [Parametri](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/parameters) **
+**[Parámetros (Parametri)](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/parameters)**
 
-** [Rollack](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore) **
-
- 
-
-
-
-
-
-
+**[Restaurar (Rollack)](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore)**

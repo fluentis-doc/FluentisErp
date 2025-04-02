@@ -1,22 +1,14 @@
 ---
-title: Ammortamento
+title: ammortamento
 sidebar_position: 2
 ---
 
-Innanzi tutto è di fondamentale importanza gestire il flag **Operazioni incrementali**: essendo la procedura di ammortamento gestita con logiche differenti, nel caso l'azienda utilizzi l'opzione incrementale per le sue categorie sarà necessario importare questo flag al fine di individuare i dati. Alla base della maschera, invece, va impostato l'anno di rifermento del calcolo: normalmente sarà da modificare al fine di inserire l'anno precedente all'attuale.
+En primer lugar, es de fundamental importancia gestionar el indicador **operazioni incrementali**: dado que el procedimiento de amortización se gestiona con lógicas diferentes, si la empresa utiliza la opción incremental para sus categorías, será necesario importar este indicador con el fin de identificar los datos. En la parte inferior de la máscara, en cambio, se debe establecer el año de referencia del cálculo: normalmente será necesario modificarlo para ingresar el año anterior al actual.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
+RIBBON BAR: representa el menú del formulario en cuestión, es decir, el área en la cual es posible realizar acciones relacionadas con el procedimiento en uso. La lista de funcionalidades posibles se representa a continuación:
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Ricerca | Ricerca la lista degli ammortamenti da calcolare. |
-| Ammortamento | Esegue il calcolo per le righe selezionate. |
-| Visualizza cespite | Apre in visualizzazione l'anagrafica del cespite il cui ammortamento è selezionato in griglia. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Busca la lista de amortizaciones a calcular. |
+| ammortamento (Ammortamento) | Ejecuta el cálculo para las líneas seleccionadas. |
+| Ver activo (Visualizza cespite) | Abre en visualización el registro del activo cuyo amortización está seleccionada en la cuadrícula. |

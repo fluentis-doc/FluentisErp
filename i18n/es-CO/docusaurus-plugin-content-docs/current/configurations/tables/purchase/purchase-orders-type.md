@@ -1,36 +1,36 @@
 ---
-title: Tipi ordine fornitore
+title: tipi ordine fornitore
 sidebar_position: 3
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di ordini fornitori disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi ordine fornitore*.   
+Esta tabla es fundamental para definir las diversas tipologías de pedidos de proveedores disponibles, cada una con sus características propias. Se puede acceder desde *Configuración > Tablas > Compras > tipi ordine fornitore*.  
 
-I campi presenti sono:    
+Los campos presentes son:  
 
-**Codice/Descrizione**: campi obbligatori per definire il tipo e la descrizione dell'ordine di acquisto.
+**codice/descrizione**: campos obligatorios para definir el tipo y la descripción del pedido de compra.  
 
-**Numerazione\Descrizione**: campo obbligatorio per la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo ordine.
+**Numeración/Descripción (Numerazione\Descrizione)**: campo obligatorio para la [Numeración](/docs/configurations/tables/fluentis-numerations) que se asociará al tipo de pedido.  
 
-**Conferma ordine automatica**: se settato, al momento della creazione di un ordine con questo *Tipo ordine* viene compilato anche il campo *Data conferma ordine* presente nella testata dell'ordine, con la data odierna.
+**conferma ordine automatica**: si está configurado, al momento de crear un pedido con este *Tipo de pedido*, también se completa el campo *data conferma ordine* presente en la cabecera del pedido, con la fecha actual.  
 
-**Cash Flow**: se settato, il tipo ordine concorre al calcolo del cash flow.
+**cash flow**: si está configurado, el tipo de pedido contribuye al cálculo del flujo de caja.  
 
-**Magazzino/Descrizione magazzino**: è il magazzino di arrivo della merce che viene settato in automatico sulle righe articolo degli ordini creati con questo tipo ordine.
+**Almacén/Descripción del almacén (Magazzino/Descrizione magazzino)**: es el almacén de llegada de la mercancía que se configura automáticamente en las líneas de artículos de los pedidos creados con este tipo de pedido.  
 
-**Causale/Descrizione causale**: è la [Causale](/docs/configurations/tables/logistics/warehouse-templates) di movimentazione della merce in arrivo che viene settata in automatico sulle righe articolo degli ordini creati con questo tipo.
+**Causale/Descripción de la causale (Causale/Descrizione causale)**: es la [Causale](/docs/configurations/tables/logistics/warehouse-templates) de movimentación de la mercancía entrante que se configura automáticamente en las líneas de artículos de los pedidos creados con este tipo.  
 
-**Controlla disponibilità**: se settato, gli ordini di questo tipo concorrono al calcolo della disponibilità e sono visibili nella form di [Analisi disponibilità](/docs/erp-home/registers/items/availability-analysis).
+**controlla disponibilità**: si está configurado, los pedidos de este tipo contribuyen al cálculo de disponibilidad y son visibles en el formulario de [Análisis de disponibilidad](/docs/erp-home/registers/items/availability-analysis).  
 
-**Agricola acquisti IVA**: se attivo, in fase di creazione ordine, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola, se non esiste viene preso il codice IVA normale.
+**Agrícola compras IVA (Agricola acquisti IVA)**: si está activo, en el momento de creación del pedido, el sistema verifica si el artículo utilizado tiene un código de IVA agrícola; si no existe, se toma el código de IVA normal.  
 
-**Gestione matrici extra data**: se attivo, permette di visualizzare, nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice.
+**gestione matrici extra data**: si está activo, permite visualizar, en el caso de gestionar artículos con matriz, una pestaña adicional para la imputación de los valores de la cantidad por cada celda de matriz.  
 
-**Listini da aggiornare**: serve per far aggiornare in automatico i prezzi di listino in base ai prezzi specificati in ordine. Se tale flag non è selezionato, sarà comunque possibile, sulle righe dell'ordine, far aggiornare manualmente il valore del listino in  base al prezzo indicato sulla riga.
+**Listas de precios a actualizar (Listini da aggiornare)**: sirve para actualizar automáticamente los precios de lista en función de los precios especificados en el pedido. Si este indicador no está seleccionado, aún será posible actualizar manualmente el valor de la lista en las líneas del pedido según el precio indicado en la línea.  
 
-**Tipo bolla consegna**: è la tipologia di DDT di acquisto da creare quando si utilizza la procedura di [Evasione da ordini](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
+**tipo bolla consegna**: es el tipo de DDT de compra que se creará cuando se utiliza el procedimiento de [Cumplimiento de pedidos](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).  
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**stampa**: en este campo se puede elegir la impresión a utilizar por defecto (se recuerda que, para imprimir el reporte por defecto, en la fase de impresión será necesario seleccionar la opción *Impresiones múltiples*); en el campo siguiente es posible indicar un **numero di copie** a imprimir.  
 
-**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario dell'ordine, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.      
+**Control de proveedor (Controllo fornitore)**: sirve para activar un control en el que, al seleccionar el sujeto titular del pedido, el procedimiento solo permitirá seleccionar cuentas de tipo proveedor y no de tipo cliente.  
 
-**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione** che si vuole effettuare.
+**gestione cespiti**: este indicador permite habilitar la [Gestión de activos](/docs/finance-area/fixed-assets/general-overview) para ese tipo de pedido y seleccionar el **tipo operazione** que se desea realizar.

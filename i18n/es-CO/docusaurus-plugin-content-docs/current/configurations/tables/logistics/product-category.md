@@ -1,26 +1,26 @@
 ---
-title: Categorie merceologiche articolo
+title: categorie merceologiche articolo
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Categorie merceologiche articolo**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Logística (Logistica) > categorie merceologiche articolo (Categorie merceologiche articolo)**.
 
-Questa tabella gestisce la codifica delle diverse categorie secondo la logica merceologica, la quale può essere poi associata al prodotto per poterla utilizzare come raggruppamento oppure come dato statistico oppure come funzionalità nei moduli competenti.  
+Esta tabla gestiona la codificación de las diferentes categorías según la lógica mercadológica, la cual puede ser asociada al producto para utilizarla como agrupamiento o como dato estadístico, o como funcionalidad en los módulos correspondientes.  
 
-Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item) alla voce *Categoria merceologica*.  
+Un ejemplo de uso se encuentra en el [Registro del artículo (Anagrafica articolo)](/docs/erp-home/registers/items/create-new-item) en la entrada *categoria merceologica*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Categorie merceologiche articolo**
+**Búsqueda de categorías mercadológicas del artículo (Ricerca Categorie merceologiche articolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento categoria merceologica**
+**Inserción de categoría mercadológica (Inserimento categoria merceologica)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: un **Codice** alfanumerico e la sua **Descrizione**. 
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: un **codice** alfanumérico y su **descrizione**. 
 
-Nella griglia inferiore è possibile inserire le **Descrizioni in lingua** per ciascuna *Categoria merceologica*.
+En la cuadrícula inferior, es posible insertar las **descrizioni in lingua** para cada *categoria merceologica*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

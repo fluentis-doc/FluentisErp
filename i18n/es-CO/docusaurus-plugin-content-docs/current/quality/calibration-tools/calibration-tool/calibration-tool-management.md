@@ -1,134 +1,132 @@
 ---
-title: Taratura strumenti
+title: taratura strumenti
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti > Nuovo taratura strumento** oppure è possibile eseguirla dalla **Ricerca Taratura strumenti**.   
+La gestión se encuentra en la ruta **Calidad > taratura strumenti > taratura strumenti > Nueva calibración de instrumento** o se puede realizar desde la **Búsqueda de taratura strumenti**.
 
+:::important ¿Para qué sirve? (A cosa serve)
+En la gestión de taratura strumenti es posible registrar las Calibraciones internas y los Certificados de calibración.  
+Si el instrumento está sujeto a calibración y la calibración es interna, es posible ingresar, para las posiciones previstas, los valores detectados. Fluentis asignará automáticamente un resultado positivo o negativo, para cada posición y en general.  
+Si el instrumento está sujeto a calibración y la calibración es externa, es posible adjuntar el Certificado de calibración recibido del organismo tercero que realizó la calibración. En este caso, el resultado será atribuido manualmente por el operador.  
+Las reportes estándar disponibles son: Registro de calibraciones de instrumentos agrupadas por: Informe, Instrumento y Operador.  
 
-:::important A cosa serve
-Nella gestione Taratura strumenti è possibile la registrazione delle Tarature interne e dei Certificati di taratura.   
-Se lo strumento è soggetto a taratura e la taratura è interna, è possibile inserire, per le posizioni previste, i valori rilevati. Fluentis assegnerà automaticamente un esito positivo o negativo, per singola posizione e generale.   
-Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile allegare il Certificato di taratura ricevuto dall'ente terzo che ha effettuato la taratura. L'esito, in questo caso, verrà attribuito manualmente dall'operatore.   
-A standard sono disponibili le reportistiche di: Registro tarature strumenti raggruppati per: Rapporto, Strumento e Operatore.   
-
-A standard è disponibile la reportistica di:   
-> **Registro Tarature Strumenti**: elenco delle *Tarature strumenti* raggruppabili per: *Rapporto*, *Strumento* e *Effettuata da*.   
+Las reportes estándar disponibles son:  
+> **Registro de Calibración de Instrumentos**: lista de *Calibraciones de instrumentos* agrupables por: *Informe*, *Instrumento* y *effettuata da*.   
 :::
 
-
-## Pulsanti di comando
-
-
-### Salva
-
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Taratura strumento* visualizzata.   
+## Botones de comando (Pulsanti di comando)
 
 
-## Gestione dati
+### Guardar (Salva)
+
+Al presionar este botón se almacenan toda la información modificada de la *Calibración de instrumento* mostrada.
 
 
-### Dati di testata
+## Gestión de datos (Gestione dati)
 
-Le informazioni gestite sono:   
-> **Tipo taratura**: è il *Tipo taratura* (dato obbligatorio).   
-> All'inserimento manuale di una nuova *Taratura* viene proposto il *Tipo taratura manuale* indicato nei *Parametri Taratura strumenti*.   
+
+### Datos de encabezado (Dati di testata)
+
+Las informaciones gestionadas son:  
+> **tipo taratura**: es el *Tipo de calibración* (dato obligatorio).  
+> Al ingresar manualmente una nueva *Calibración*, se propone el *Tipo de calibración manual* indicado en los *Parámetros de taratura strumenti*.  
 >
-> **Anno/Numero**: sono l'*Anno* e *Numero* della *Taratura strumento* (dati entrambe obbligatori).   
->  All'inserimento di una nuova *Taratura strumento*:   
-> - la *Data taratura effettiva* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data taratura effettiva* e alla *Numerazione* associata al *Tipo taratura*.   
+> **Año/Número (Anno/Numero)**: son el *Año* y el *Número* de la *Calibración de instrumento* (ambos datos son obligatorios).  
+> Al ingresar una nueva *Calibración de instrumento*:  
+> - la *Fecha de calibración efectiva* se propone igual a la fecha actual;  
+> - el *Año* y el *Número* se proponen en función de la *Fecha de calibración efectiva* y de la *Numeración* asociada al *Tipo de calibración*.  
 >
-> **Taratura effettuata da**: expander dove è possibile inserire:   
+> **taratura effettuata da**: expander donde es posible ingresar:  
 >
->> **Taratura interna**: indica che lo *Strumento di misura* viene tarato da un soggetto interno all'azienda.   
->> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
->> **Funzione**: è la *Funziona aziendale* che effettua la taratura interna.   
->> **Dipendente**: è il *Dipendente* che effettua la taratura interna.   
+>> **taratura interna**: indica que el *Instrumento de medida* es calibrado por un sujeto interno a la empresa.  
+>> **laboratorio esterno**: es la razón social del *Proveedor* que realiza la calibración externa.  
+>> **funzione**: es la *Función empresarial* que realiza la calibración interna.  
+>> **dipendente**: es el *Empleado* que realiza la calibración interna.  
 >
-> **Schedulata**: indica che la *Taratura strumento* è stata pianificata.   
-> **Esito taratura**: è il l'*Esito* complessivo della taratura.   
-> E' calcolato automaticamente, sulla base degli *Esiti* dei *Valori rilevati*, se è una *Taratura interna*.
-> Viene attribuito manualmente se è una *Taratura esterna*.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+> **schedulata**: indica que la *Calibración de instrumento* ha sido planificada.  
+> **esito taratura**: es el *Resultado* general de la calibración.  
+> Se calcula automáticamente, en base a los *Resultados* de los *Valores detectados*, si es una *Calibración interna*.  
+> Se atribuye manualmente si es una *Calibración externa*.  
+> **osservazioni**: anotaciones libres sobre el tema.  
+> **note**: anotaciones libres.  
 >
-> **Data taratura prevista**: è la data di prevista taratura.   
-> Viene proposta dalla *Pianifica nuove tarature* e non è modificabile.   
-> **Data taratura effettiva**: è la data di effettiva taratura.   
-> All'inserimento manuale di una nuova taratura viene proposta pari alla data odierna.
-> Viene proposta dalla *Pianifica nuove tarature* pari alla *Data taratura prevista* ed è successivamente modificabile.   
-> **Strumento di misura**: è il rifermento allo *Strumento di misura* soggetto alla *Taratura*.   
+> **Fecha de calibración prevista (Data taratura prevista)**: es la fecha de calibración prevista.  
+> Se propone desde la *Planificación de nuevas calibraciones* y no es modificable.  
+> **Fecha de calibración efectiva (Data taratura effettiva)**: es la fecha de la calibración efectiva.  
+> Al ingresar manualmente una nueva calibración, se propone igual a la fecha actual.  
+> Se propone desde la *Planificación de nuevas calibraciones* igual a la *Fecha de calibración prevista* y es posteriormente modificable.  
+> **strumento di misura**: es la referencia al *Instrumento de medida* sujeto a la *Calibración*.  
 >
-> **Proprietà dello strumento**: expander dove è possibile visualizzare:   
+> **proprietà dello strumento**: expander donde es posible visualizar:  
 >
->> **Proprietà dello strumento**: è il *Modello* dello *Strumento di misura*.   
->> **Attivo**: indica che lo *Strumento di misura* è ancora *attivo*.   
->> **Classificazione**: è la *Classificazione*; esempi: Meccanico, Elettrico, Elettronico, ecc.   
->> **Unità di misura**: è l'*Unità di misura* dei valori rilevati dallo *Strumento di misura*.   
->> **Intervallo di misura**: è il range misurabile dallo *Strumento di misura*.   
->> **Precisione**: è la *Precisione di misura* minima.   
->> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
+>> **proprietà dello strumento**: es el *Modelo* del *Instrumento de medida*.  
+>> **attivo**: indica que el *Instrumento de medida* sigue siendo *activo*.  
+>> **classificazione**: es la *Clasificación*; ejemplos: Mecánico, Eléctrico, Electrónico, etc.  
+>> **unità di misura**: es la *Unidad de medida* de los valores detectados por el *Instrumento de medida*.  
+>> **Rango de medida (Intervallo di misura)**: es el rango medible por el *Instrumento de medida*.  
+>> **precisione**: es la *Precisión de medida* mínima.  
+>> **limiti**: son los *Límites de aceptabilidad* del *Instrumento de medida* para poder utilizarlo; ejemplos: eventuales límites de precisión, entornos donde no utilizarlo, etc.  
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **audit trail**: expander de solo lectura donde son visibles las siguientes informaciones:  
 >
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito l'*Azione correttiva*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica all'*Azione correttiva*.   
+>> **Fecha de creación/Nombre (Data creazione/Nome)**: es la fecha y el *Usuario A.R.M.* que ha ingresado la *Acción correctiva*.  
+>> **Fecha de última modificación/Nombre (Data ultima modifica/Nome)**: es la fecha y el *Usuario A.R.M.* que ha realizado la última modificación a la *Acción correctiva*.
 
 
-### Valori rilevati
-Il tabulatore è visibile solamente se lo *Strumento di misura* è soggetto a *Taratura interna*
-In questo elenco è possibile indicare i valori da rilevati durante le attività di *Taratura interna*.   
-Se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura* e se è di *Taratura interna* questi valori vengono ereditati dall'anagrafica dello *Strumento di misura*.   
-Tutte le informazioni sono disabilitate ad esclusione di: *Dato rilevato*, *Esito*, *Osservazioni* e *Note*
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di rilevazione.   
-> **Posizione**: annotazioni libere sull'argomento.   
-> **Intervallo lettura**: annotazioni libere sull'argomento.   
-> **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Dato rilevato**: è il valore rilevato dalla lettura dello strumento fatta nella *posizione* indicata.   
-> **Scostamento**: è il valore calcolato dalla differenza tra *Dato rilevato* e *Dato richiesto*.   
-Se lo scostamento è superiore al *Dato richiesto* sommato all'*Incertezza (±)* (applicazione in percentuale) l'*Esito* della rilevazione sarà negativo.   
-Al primo valore negativo dell'*Esito* nell'elenco dei *Valori rilevati* anche l'*Esito* complessivo della *Taratura* sarà negativo.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Nota**: annotazioni libere.   
+### Valores detectados (Valori rilevati)
+La pestaña es visible solo si el *Instrumento de medida* está sujeto a *Calibración interna*.  
+En esta lista es posible indicar los valores que se deben registrar durante las actividades de *Calibración interna*.  
+Si el *Instrumento de medida* está *Activo*, es *Sujeto a calibración* y es de *Calibración interna*, estos valores se heredan de la base de datos del *Instrumento de medida*.  
+Toda la información está deshabilitada, excepto: *dato rilevato*, *esito*, *osservazioni* y *nota*.  
+La lista se compone de la siguiente información:  
+> **sequenza**: es la secuencia de medición.  
+> **posizione**: anotaciones libres sobre el tema.  
+> **intervallo lettura**: anotaciones libres sobre el tema.  
+> **dato richiesto**: es el valor nominal requerido.  
+> **Incertidumbre (-) (Incertezza (-))**: es el valor de la incertidumbre negativa (expresada en porcentaje) que se aplicará al *Valor detectado*.  
+> **Incertidumbre (+) (Incertezza (+))**: es el valor de la incertidumbre positiva (expresada en porcentaje) que se aplicará al *Valor detectado*.  
+> **dato rilevato**: es el valor detectado a partir de la lectura del instrumento en la *posición* indicada.  
+> **scostamento**: es el valor calculado a partir de la diferencia entre el *Valor detectado* y el *Valor requerido*.  
+> Si la desviación es superior al *Valor requerido* sumado a la *Incertidumbre (±)* (aplicación en porcentaje), el *Resultado* de la medición será negativo.  
+> Con el primer valor negativo del *Resultado* en la lista de *Valores detectados*, también el *Resultado* general de la *Calibración* será negativo.  
+> **osservazioni**: anotaciones libres sobre el tema.  
+> **nota**: anotaciones libres.
 
 
-### Storico Rapporti e Certificati di taratura
-In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pienificati ed effettuati per lo *Strumento di misura* associato alla *Taratura* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Taratura* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**: è il codice del *Tipo taratura*.   
-> **Descrizione tipo taratura**: è la descrizione del *Tipo taratura*.   
-> **Anno**: è l'*Anno* del documento.   
-> **Numero**: è il *Numero* del documento.   
-> **Taratura interna**: indica se è stato emesso una *Taratura interna*.   
-> **Schedulata**: indica se il documento è stato schedulato (pianificato).   
-> **Data prevista**: è la data di prevista taratura.   
-> **Data taratura**: è la data di effettiva taratura.   
-> **Esito**: è il codice dell'*Esito* della taratura.   
-> **Descrizione esito**: è la descrizione dell'*Esito* della taratura.   
-> **Categoria**: è il codice della *Categoria strumento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria strumento*.   
-> **Codice**: è il codice dello *Strumento di misura*.   
-> **Matricola**: è la matricola dello *Strumento di misura*.   
-> **Modello**: è il modello dello *Strumento di misura*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
-> **Funzione**: è il codice della *Funziona aziendale* che effettua la taratura interna.   
-> **Descrizione funzione**: è la descrizione della *Funziona aziendale* che effettua la taratura interna.   
-> **Codice**: è il codice del *Dipendente* che effettua la taratura interna.   
-> **Cognome**: è il cognome del *Dipendente* che effettua la taratura interna.   
-> **Nome**: è il nome del *Dipendente* che effettua la taratura interna.   
+### Historial de Informes y Certificados de calibración (Storico Rapporti e Certificati di taratura)
+En esta lista es posible visualizar el historial de las *Calibraciones* y los *Certificados de calibración* planificados y realizados para el *Instrumento de medida* asociado a la *Calibración* mostrada.  
+Mediante un doble clic del mouse en la fila deseada se puede realizar la gestión de la *Calibración* seleccionada.  
+La lista se compone de la siguiente información:  
+> **tipo taratura**: es el código del *Tipo de calibración*.  
+> **descrizione tipo taratura**: es la descripción del *Tipo de calibración*.  
+> **anno**: es el *Año* del documento.  
+> **numero**: es el *Número* del documento.  
+> **taratura interna**: indica si se ha emitido una *Calibración interna*.  
+> **schedulata**: indica si el documento ha sido programado (planificado).  
+> **data prevista**: es la fecha de calibración prevista.  
+> **data taratura**: es la fecha de calibración efectiva.  
+> **esito**: es el código del *Resultado* de la calibración.  
+> **descrizione esito**: es la descripción del *Resultado* de la calibración.  
+> **categoria**: es el código de la *Categoría de instrumento*.  
+> **descrizione categoria**: es la descripción de la *Categoría de instrumento*.  
+> **codice**: es el código del *Instrumento de medida*.  
+> **matricola**: es el número de serie del *Instrumento de medida*.  
+> **modello**: es el modelo del *Instrumento de medida*.  
+> **laboratorio esterno**: es la razón social del *Proveedor* que realiza la calibración externa.  
+> **funzione**: es el código de la *Función empresarial* que realiza la calibración interna.  
+> **descrizione funzione**: es la descripción de la *Función empresarial* que realiza la calibración interna.  
+> **codice**: es el código del *Empleado* que realiza la calibración interna.  
+> **cognome**: es el apellido del *Empleado* que realiza la calibración interna.  
+> **nome**: es el nombre del *Empleado* que realiza la calibración interna.
 
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Taratura strumento*.   
+### Datos adicionales (Extra data)
+Es posible ingresar [Datos Adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Calibración de instrumento*.
 
 
-### Immagine
-Viene riportata l'immagine associata nella gestione dello *Strumento di misura*.   
+### Imagen (Immagine)
+Se muestra la imagen asociada en la gestión del *Instrumento de medida*.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,50 +1,48 @@
 ---
-title: Pagamenti contatto
+title: pagamenti contatto
 sidebar_position: 16
 ---
 
-Questa è una delle tab dei **Contatti CRM**.
+Esta es una de las pestañas de los **Contactos CRM**.
 
-In questa tab sono configurabili i pagamenti da proporre nei documenti relativi al contatto. 
+En esta pestaña se pueden configurar los pagos a proponer en los documentos relacionados con el contacto. 
 
+### Tipos de pago (Tipi pagamento)
 
-### Tipi pagamento
+La sección fundamental de la pestaña **pagamenti** sirve para establecer la lógica de cálculo de los plazos. Se seleccionan el **Tipo de pago (Tipo di pagamento)** y la **soluzione di pagamento** (ambos se encuentran en *Configuración > Tablas > Configuración general*).
 
-La sezione fondamentale del tab **Pagamenti** e serve per impostare la logica di calcolo delle scadenze. Si selezionano il **Tipo di pagamento** e la **Soluzione di pagamento** (entrambe si trovano in *Configurazione > Tabelle > Impostazioni generali*).
+**percentuale**: permite definir la parte correspondiente (en porcentaje) del valor total del pago (o cobro) que se debe gestionar con la condición de pago (como combinación de tipo de pago y solución de pago) establecida en la línea.
 
-**Percentuale**: consente di definire la quota parte (in percentuale) del valore totale del pagamento (o incasso) da gestire con la condizione di pagamento (come combinazione di tipo pagamento e soluzione di pagamento) impostata nella riga.
+En caso de que el porcentaje sea menor a 100, se deben crear tantas líneas con porcentajes que sumen 100.
 
-In caso di percentuale inferiore a 100 vanno, pertanto, create tante righe con percentuali che sommano 100.
+*Ejemplo*:<br />
+- 50% Efectivo a la vista de la factura y 50% Transferencia bancaria a 30 días.<br />
+- 50% Efectivo a la vista de la factura; 25% Transferencia bancaria a 30 días; 25% Transferencia bancaria a 60 días.<br />
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image03.png) ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image04.png)
 
-*Esempio*:<br />
-- 50% Contanti a vista fattura e 50% Bonifico bancario a 30 gg.<br />
-- 50% Contanti a vista fattura; 25% Bonifico bancario a 30 gg; 25% bonifico bancario a 60 gg.<br />
-![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image03.png)  ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image04.png)
-
-<u>Attenzione</u>: se la soluzione di pagamento prevede più di una scadenza si compilerà in questo modo: esempio 50% contanti a vista e 50% bonifico bancario a 30 - 60 gg
+<u>Atención</u>: si la solución de pago incluye más de un plazo, se completará de esta manera: ejemplo 50% efectivo a la vista y 50% transferencia bancaria a 30 - 60 días.
 
 **![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image05.png)**
 
-**Banca (d'appoggio)**: rappresenta la banca di riferimento per le partite.  
-- Per l' anagrafica cliente:
-> - se tipo pagamento è ricevuta bancaria,  va indicata la banca del cliente;
-> - se tipo pagamento è bonifico bancario va indicata la banca della società in uso  (in modo da avere in stampa dei documenti i riferimenti di pagamento per il cliente); 
+**Banco (d'appoggio)**: representa el banco de referencia para las partidas.  
+- Para el registro de cliente:
+> - si el tipo de pago es recibo bancario, se debe indicar el banco del cliente;  
+> - si el tipo de pago es transferencia bancaria, se debe indicar el banco de la empresa en uso (para que en la impresión de documentos aparezcan los datos de pago para el cliente);  
 
-Il campo si compila tramite una combo box (**Banca**) collegata alla tabella *Banca d'appoggio*. All'interno di questa tabella è possibile inserire sia la banche della società, sia le banche della controparte (cliente o fornitore). Inoltre è possibile inserire sia righe complete di codice IBAN e/o SWIFT (consigliato per le banche della società) sia righe complete di soli codice ABI e CAB (consigliato per le banche di controparte per le quali IBAN e SWIFT possono essere indicati nei campi della griglia presente in anagrafica).
+El campo se completa a través de un combo box (**Banco**) conectado a la tabla *Banco d'appoggio*. Dentro de esta tabla se pueden ingresar tanto los bancos de la empresa como los bancos de la contraparte (cliente o proveedor). Además, es posible ingresar líneas completas con código IBAN y/o SWIFT (recomendado para los bancos de la empresa) así como líneas completas con solo código ABI y CAB (recomendado para los bancos de contraparte donde el IBAN y SWIFT pueden ser indicados en los campos de la cuadrícula presente en el registro).
 
-Se la riga presente nella tabella Banca d'appoggio è completa di IBAN e/o SWIFT, oltre che di ABI e CAB, richiamando tale riga tramite la combobox i dati saranno riportati nella griglia in anagrafica, diversamente, saranno riportati solo ABI e CAB, ma sarà sempre possibile aggiungere i dati mancanti direttamente nella griglia. Ciò è consigliabile per le banche di controparte al fine di evitare di codificare nella tabella Banca d'appoggio troppe righe utilizzate solo per un unico cliente. E' preferibile indicare solo i dati dello sportello bancario (ABI e CAB) presso il quale potrebbero avere il conto corrente diversi clienti.
+Si la línea presente en la tabla Banco d'appoggio está completa con IBAN y/o SWIFT, así como con ABI y CAB, al llamar a esa línea a través del combobox, los datos se llevarán a la cuadrícula en el registro; de lo contrario, solo se llevarán ABI y CAB, pero siempre será posible agregar los datos faltantes directamente en la cuadrícula. Esto es aconsejable para los bancos de contraparte a fin de evitar codificar demasiadas líneas en la tabla Banco d'appoggio utilizadas solo para un único cliente. Es preferible indicar solo los datos de la sucursal bancaria (ABI y CAB) donde diferentes clientes pueden tener su cuenta corriente.
 
-L'inserimento di una banca può essere eseguita anche attraverso un doppio click nei campi abi/cab per aprire l'help di ricerca tra le agenzie bancarie nazionali, dalle quali selezionare quella del caso e creare il codice nell'anagrafica da completare con i dati di conto corrente, cin, iban, swift.
+La inserción de un banco puede realizarse también a través de un doble clic en los campos abi/cab para abrir la ayuda de búsqueda entre las agencias bancarias nacionales, desde las cuales seleccionar la correspondiente y crear el código en el registro para completar con los datos de la cuenta corriente, cin, iban, swift.
 
-**Descrizione Banca**: campo collegato al precedente campo.
+**descrizione banca**: campo conectado al campo anterior.
 
-**Codice Banca**: campo NON utilizzato in Italia. Per localizzazioni estere può accogliere un codice bancario alternativo rispetto al sistema ABI CAB.
+**codice banca**: campo NO utilizado en Italia. Para localizaciones en el extranjero, puede contener un código bancario alternativo respecto al sistema ABI CAB.
 
-### Banca d'appoggio
+### Banco d'appoggio (Banca d'appoggio)
 
-Nella griglia si possono inserire le banche d'appoggio della controparte.
+En la cuadrícula se pueden ingresar los bancos de apoyo de la contraparte.
 
-In questo modo è possibile inserire delle banche d'appoggio alternative (sempre di controparte).  Un altro esempio può essere quello di un cliente che paga con bonifico (e quindi nella griglia Tipo Pagamento si inserisce la banca della nostra società) ma del quale si vuole inserire la sua banca d'appoggio in caso di pagamento di note di accredito.
+De esta manera, es posible ingresar bancos de apoyo alternativos (siempre de contraparte). Un ejemplo adicional podría ser un cliente que paga con transferencia (así que en la cuadrícula Tipo de Pago se ingresa el banco de nuestra empresa) pero se quiere ingresar su banco de apoyo en caso de pago de notas de crédito.
 
-L'inserimento di una banca può essere eseguita attraverso un doppio click nei campi abi/cab per aprire l'help di ricerca tra le agenzie bancarie nazionali, dalle quali selezionare quella del caso e creare il codice nell'anagrafica da completare con i dati di conto corrente, cin, iban, swift.
-
+La inserción de un banco puede realizarse a través de un doble clic en los campos abi/cab para abrir la ayuda de búsqueda entre las agencias bancarias nacionales, desde las cuales seleccionar la correspondiente y crear el código en el registro para completar con los datos de la cuenta corriente, cin, iban, swift.

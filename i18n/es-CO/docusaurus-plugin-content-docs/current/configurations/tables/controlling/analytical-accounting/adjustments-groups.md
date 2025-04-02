@@ -1,22 +1,22 @@
 ---
-title: Gruppi di conguaglio
+title: gruppi di conguaglio
 sidebar_position: 6
 ---
 
-La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Gruppi di conguaglio**
+El formulario se encuentra en la ruta: **Tablas (Tabelle) > Control (Controlling) > Contabilidad analítica (Contabilità analitica) > gruppi di conguaglio (Gruppi di conguaglio)**
 
-:::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::tip Nota (Nota)
+Esta tabla es de uso exclusivo para las empresas que han configurado el *controlling*.
 :::
 
-All'interno della presente tabella è possibile codificare dei raggruppamenti di conti utili per la gestione della reportistica specifica per il controlling.
-Alcuni conti contabili non vengono utilizzati in prima battuta, direttamente, dal controlling ma soltanto indirettamente ed a posteriori: I gruppi di conguaglio servono quindi per identificare dei gruppi logici a cui assegnare i singoli costi per i conguagli che faremo infra-annualmente oppure solo a fine esercizio, in modo da raggrupparli in modo opportuno nella maschera dei **Valori di controllo** e verificarne la quadratura con la contabilità a fine periodo.
+Dentro de esta tabla es posible codificar agrupaciones de cuentas útiles para la gestión de la reportística específica para el controlling.  
+Algunas cuentas contables no se utilizan en primera instancia, directamente, por el controlling, sino solo indirectamente y a posteriori: los grupos de ajuste sirven para identificar grupos lógicos a los que asignar los costos individuales para los ajustes que realizaremos de manera infra-anual o solo al final del ejercicio, con el fin de agruparlos de manera apropiada en la máscara de **valori di controllo** y verificar su conciliación con la contabilidad al final del período.
 
-#### Campi specifici: 
-- **CODICE**
-- **DESCRIZIONE**
-- **TIPO SALDO**: quest'ultimo è di fondamentale importanza per i sottoconti delle rimanenze iniziali/finali, per i quali saranno da definire obbligatoriamente due categorie specifiche.
+#### Campos específicos (Campi specifici):
+- **codice**  
+- **descrizione**  
+- **tipo saldo**: este último es de fundamental importancia para los subcuentos de las existencias iniciales/finales, para los cuales se deben definir obligatoriamente dos categorías específicas.
 
-:::tip Nota
-In particolare, la procedura di **Contabilizzazione rimanenze** per il Controlling valorizza nelle registrazioni extracontabili di area le rimanenze iniziali e finali di ogni singolo periodo (mese) che si sta elaborando nell'anno. Quando poi si richiederà, nel modulo del Reporting, gli importi delle rimanenze iniziali e finali del primo semestre dell'anno YYYY, **FluentisERP** **deve** sapere per quali conti leggere solo il dato del periodo iniziale di Gennaio e per quali leggere solo il periodo finale di Giugno, altrimenti si avrebbero le somme di 6 mesi di rimanenze iniziali e 6 di rimanenze finali, inficiando completamente l'elaborazione!
+:::tip Nota (Nota)
+En particular, el procedimiento de **contabilizzazione rimanenze** para el Control valora en los registros extracontables del área las existencias iniciales y finales de cada período (mes) que se está procesando en el año. Cuando luego se soliciten, en el módulo de Reporting, los importes de las existencias iniciales y finales del primer semestre del año YYYY, **FluentisERP** **debe** saber para qué cuentas leer solo el dato del período inicial de enero y para cuáles leer solo el período final de junio; de lo contrario, se tendrían las sumas de 6 meses de existencias iniciales y 6 de existencias finales, lo que afectaría completamente la elaboración.
 :::

@@ -1,7 +1,7 @@
 ---
-title: Ricerca Visit Report
+title: Informe de Visitas (Ricerca Visit Report)
 sidebar_position: 1
 ---
 
-Il modulo Visit Reports consente all’operatore di gestire le visite effettuate dalla forza commerciale dell’azienda presso i contatti del CRM. Sono accessibili da **Home > My CRM Area > Visit report**.        
-Questo documento contiene un resoconto dettagliato dell'incontro con il cliente o il potenziale cliente, incluse informazioni rilevanti come gli argomenti trattati, le esigenze espresse dal cliente, le opportunità identificate, eventuali azioni da intraprendere, e le conclusioni dell'incontro. Il report di visita è uno strumento cruciale per mantenere traccia delle interazioni con i clienti e per pianificare le azioni successive in modo efficace.
+El módulo de Informes de Visitas (Visit Reports) permite al operador gestionar las visitas realizadas por la fuerza de ventas de la empresa a los contactos del CRM. Son accesibles desde **Inicio (Home) > Mi Área CRM (My CRM Area) > Informe de visita (Visit report)**.  
+Este documento contiene un resumen detallado del encuentro con el cliente o el potencial cliente, incluida información relevante como los temas tratados, las necesidades expresadas por el cliente, las oportunidades identificadas, las acciones a realizar y las conclusiones de la reunión. El informe de visita es una herramienta crucial para mantener un registro de las interacciones con los clientes y para planificar las acciones posteriores de manera efectiva.

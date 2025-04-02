@@ -1,20 +1,20 @@
 ---
-title: Utensili
+title: utensili
 sidebar_position: 15
 ---
 
-All'interno di questa tabella vengono codificati tutti gli utensili che possono poi essere richiamati all'interno dei cicli di lavoro nel relativo tab *Utensili*.
+Dentro de esta tabla se codifican todas las herramientas que pueden ser llamadas dentro de los ciclos de trabajo en la pestaña correspondiente *utensili*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Utensili**
+**Búsqueda de utensili (Ricerca Utensili)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se hayan establecido todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Utensili**
+**Inserción de utensili (Inserimento Utensili)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos códigos, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**. Se il campo **Stato** è selezionato significa che l'utensile è utilizzabile.
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**. Si el campo **stato** está seleccionado, significa que la herramienta es utilizable.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

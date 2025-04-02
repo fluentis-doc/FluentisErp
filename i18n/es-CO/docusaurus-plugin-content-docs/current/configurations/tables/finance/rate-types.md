@@ -1,42 +1,42 @@
 ---
-title: Tipi tasso
+title: tipi tasso
 sidebar_position: 28
 ---
 
-La definizione di questa tabella consente di codificare e impostare le varie tipologie di tipi tasso da gestire nella società attiva.
+La definición de esta tabla permite codificar y establecer los diversos tipos de tasas a gestionar en la empresa activa.
 
  
 
-### Griglia superiore
+### Grilla superior (Griglia superiore)
 
-**Codice**: codice identificativo del tasso d'interesse.
+**codice**: código identificativo de la tasa de interés.
 
-**Descrizione**: descrizione del tasso d'interesse.
+**descrizione**: descripción de la tasa de interés.
 
-**Da data documento**: data documento a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi data anteriore a quella di emanazione della legge.
+**da data documento**: fecha del documento a partir de la cual se debe gestionar el cálculo de intereses (la referencia es al DECRETO LEGISLATIVO 9 de octubre de 2002, n. 231). El objetivo del campo es evitar que se calculen intereses sobre documentos con fecha anterior a la de promulgación de la ley.
 
-**Da data scadenza**: data scadenza a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi scadenza anteriore a quella di emanazione della legge.
+**da data scadenza**: fecha de vencimiento a partir de la cual se debe gestionar el cálculo de intereses (la referencia es al DECRETO LEGISLATIVO 9 de octubre de 2002, n. 231). El objetivo del campo es evitar que se calculen intereses sobre documentos con vencimiento anterior a la de promulgación de la ley.
 
-**Interesse min.**: importo minimo degli interessi al di sotto del quale non valorizzare alcun importo.
+**Interés mín. (Interesse min.)**: importe mínimo de los intereses por debajo del cual no se debe valorar ningún importe.
 
-**Giorni franchigia**: numero di giorni di franchigia che saranno detratti dal conteggio dei giorni di ritardo.
+**giorni franchigia**: número de días de franquicia que serán descontados del conteo de días de retraso.
 
-**Calcolo anche sconto**: flag di gestione anche in sconto in caso di pagamento anticipato. 
+**calcolo anche sconto**: indicador de gestión también en descuento en caso de pago anticipado.  
 
 :::tip nota
-ESEMPIO: in caso di pagamento anticipato da parte del cliente e successivo ritardo di pagamento, se l'importo dell'interesse calcolato sul ritardo è superiore al valore impostato nel campo Interesse min. , al valore dell'interesse calcolato sarà detratto il valore (negativo) calcolato in base ai giorni che intercorrono tra la data pagamento e la data scadenza. In ogni caso il risultato del calcolo non potrà mai essere un interesse negativo.
+EJEMPLO: en caso de pago anticipado por parte del cliente y posterior retraso en el pago, si el importe de los intereses calculados por el retraso es superior al valor establecido en el campo Interés mín. , al valor de los intereses calculados se le descontará el valor (negativo) calculado en base a los días transcurridos entre la fecha de pago y la fecha de vencimiento. En cualquier caso, el resultado del cálculo nunca podrá ser un interés negativo.
 :::
 
-### Griglia inferiore  
+### Grilla inferior (Griglia inferiore)  
 
-**Codice**: codice identificativo del tasso.
+**codice**: código identificativo de la tasa.
 
-**Da data**: data a partire dalla quale va gestito il tasso indicato nella riga.
+**da data**: fecha a partir de la cual se debe gestionar la tasa indicada en la fila.
 
-**A data**: data fino alla quale sarà gestito il tasso indicato nella riga
+**a data**: fecha hasta la cual se gestionará la tasa indicada en la fila.
 
-**Percentuale**: percentuale di tasso d'interesse applicabile.
+**percentuale**: porcentaje de tasa de interés aplicable.
 
-I campi relativi alle date di validità riferiti alla percentuale permettono di definire l'andamento della politica del tasso di interesse che, come noto, è soggetta a periodiche revisioni relative al tasso legale.
+Los campos relacionados con las fechas de validez referidos al porcentaje permiten definir la evolución de la política de la tasa de interés que, como es conocido, está sujeta a revisiones periódicas relativas a la tasa legal.
 
 ![](/img/it-it/configurations/tables/finance/rate-types/image01.png)

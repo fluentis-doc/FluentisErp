@@ -1,10 +1,10 @@
 ---
-title: Modifica inventari articoli
+title: modifica inventari articoli
 sidebar_position: 5
 ---
 
-Questa finestra consente all'operatore di completare le liste inventariali dopo averle inserite nella finestra [Inserimento inventari fisici](/docs/logistics/physical-inventory/inventory-management/insert-physical-inventory). 
+Esta ventana permite al operador completar las listas de inventario después de haberlas ingresado en la ventana [Inserción de inventarios físicos (Inserimento inventari fisici)](/docs/logistics/physical-inventory/inventory-management/insert-physical-inventory).  
 
-E' quindi necessario inserire gli articoli inventariati. Con l'inserimento degli articoli, in automatico vengono completati i campi di *Unità di misura*, *Data inserimento* e *Giacenza* alla data di inserimento della lista di prelievo.
+Es necesario ingresar los artículos inventariados. Con la inserción de los artículos, se completan automáticamente los campos de *unità di misura*, *data inserimento* y *giacenza* a la fecha de ingreso de la lista de extracción.
 
-Una volta completate tutte le liste di prelievo che compongono un inventario è possibile passare alla procedura [Differenze inventariali](/docs/logistics/physical-inventory/stock-difference).
+Una vez que se hayan completado todas las listas de extracción que conforman un inventario, es posible pasar al procedimiento de [Diferencias de inventario (Differenze inventariali)](/docs/logistics/physical-inventory/stock-difference).

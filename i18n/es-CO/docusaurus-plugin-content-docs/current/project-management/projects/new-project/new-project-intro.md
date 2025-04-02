@@ -1,23 +1,20 @@
 ---
-title: Nuovo progetto
+title: nuovo progetto
 sidebar_position: 1
 ---
 
-In questa form è possibile inserire tutti i dati di un nuovo **Progetto** . 
+En este formulario es posible ingresar todos los datos de un nuevo **progetto**.
 
-**Tipo progetto**: contiene il tipo progetto selezionato dalla tabella Configurazione > Tabelle >Gestione Progetti > Tipi progetto;
+**tipo progetto**: contiene el tipo de proyecto seleccionado en la tabla Configuración > Tablas > Gestión de Proyectos > Tipos de proyecto;  
 
-**Cliente**: contiene il cliente cui è collegato il progetto;
+**cliente**: contiene el cliente al que está vinculado el proyecto;  
 
-**Anno/Numero/Data**: contiene l’anno, il numero e la data del progetto;
+**anno/numero/data**: contiene el año, el número y la fecha del proyecto;  
 
-**Titolo del progetto**: viene assegnata la descrizione del cliente, ma il campo è liberamente modificabile.
+**titolo del progetto**: se asigna la descripción del cliente, pero el campo es libremente modificable.
 
-Sono presenti dei pulsanti specifici nella ribbon bar:
+Hay botones específicos en la barra de ribbon:
 
-![](/img/neutral/common/update-project.png) Aggiorna: aggiorna i dati del progetto in base ad altre operazioni effettuate su di esso in altri documenti (per esempio, la conferma degli Interventi che crea la Dichiarazione Attività per Progetto).
+![](/img/neutral/common/update-project.png) Actualizar (Aggiorna): actualiza los datos del proyecto en función de otras operaciones realizadas sobre él en otros documentos (por ejemplo, la confirmación de las Intervenciones que crea la Declaración de Actividad para Proyecto).
 
-
-In base alle impostazioni del tipo progetto, saranno visualizzate determinate **tab**.
-
-
+Según la configuración del tipo de proyecto, se visualizarán ciertas **tab**.

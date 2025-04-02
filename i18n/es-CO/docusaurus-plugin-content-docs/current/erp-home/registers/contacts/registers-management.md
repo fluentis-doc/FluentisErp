@@ -1,49 +1,47 @@
 ---
-title: Anagrafiche contatti
+title: anagrafiche contatti
 sidebar_position: 2
 ---
 
-Attraverso questa gestione è possibile definire la rubrica di tutti i soggetti con i quali possono lavorare le società definite nel database, sia come intestatari dei documenti del ciclo attivo/passivo/contabile che come semplici indirizzi e riferimenti di sedi alternative.
+A través de esta gestión es posible definir la agenda de todos los sujetos con los que pueden trabajar las empresas definidas en la base de datos, tanto como titulares de los documentos del ciclo activo/pasivo/contable como simples direcciones y referencias de sedes alternativas.
 
-:::danger[Attenzione]
-La parte generale definita **Contatto** accoglie solo i dati generali del soggetto in questione, quali la ragione sociale di un'azienda o il nome di un professionista o soggetto privato, il loro indirizzo, il codice fiscale e la partita iva ecc...
+:::danger[Atención]
+La parte general definida como **contatto** acoge solo los datos generales del sujeto en cuestión, tales como la razón social de una empresa o el nombre de un profesional o sujeto privado, su dirección, el código fiscal y el número de IVA, etc...
 
-Questi dati costituiscono un serbatoio, una sorta di rubrica, a disposizione di tutte le aziende gestite nel database.
+Estos datos constituyen un reservorio, una especie de agenda, a disposición de todas las empresas gestionadas en la base de datos.
 
-Ogni azienda ha il proprio piano dei conti e pertanto, al fine di poter utilizzare l'anagrafica concretamente nel ciclo documentale e nelle registrazioni contabili e definire i vari dettagli d interesse, **è necessario, all'interno di ogni singola società coinvolta** (agendo dunque dopo aver selezionato la società attiva) [**associare il Contatto ad un Tipo conto**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) al fine di inizializzare l'anagrafica in dettaglio associandole appunto un conto contabile che identificherà anche ai fini della contabilità quel determinato cliente italiano o ad esempio quel determinato fornitore europeo, quell'agente o quella banca.
+Cada empresa tiene su propio plan de cuentas y, por lo tanto, para poder utilizar el registro concretamente en el ciclo documental y en los registros contables y definir los varios detalles de interés, **es necesario, dentro de cada una de las sociedades involucradas** (actuando por lo tanto después de haber seleccionado la empresa activa) [**asociar el Contacto a un Tipo de cuenta**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) para inicializar el registro en detalle asociándole, precisamente, una cuenta contable que identificará también a efectos contables a determinado cliente italiano o, por ejemplo, a determinado proveedor europeo, a ese agente o a ese banco.
 :::
 
-### Ricerca anagrafiche
+### Búsqueda de registros
 
-La form si apre tramite il percorso **Home > Anagrafiche > Anagrafiche contatti** ed è stata disegnata per permettere all'utente di ricercare facilmente all'interno della rubrica dei contatti, con lo scopo di visualizzarli, modificarli, annullarli ed eventualmente cancellarli o procedere all'inserimento di una nuova referenza, previa la possibilità di avere i diritti necessari per queste operazioni.
+El formulario se abre a través de la ruta **Inicio > Registros > anagrafiche contatti (Home > Anagrafiche > Anagrafiche contatti)** y ha sido diseñado para permitir al usuario buscar fácilmente dentro de la agenda de contactos, con el propósito de visualizarlos, modificarlos, anularlos y, eventualmente, eliminarlos o proceder a la inserción de una nueva referencia, previa la posibilidad de tener los derechos necesarios para estas operaciones.
 
-Come tutte le form di ricerca, questa finestra si compone di un'area di filtro e di una griglia di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Como todos los formularios de búsqueda, esta ventana se compone de un área de filtro y de una cuadrícula de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Posizionandosi sulla riga dell'anagrafica che si desidera visualizzare nel dettaglio e facendo doppio click si aprirà la finestra di dettaglio contenente le informazioni **Generali** e tutti i **Dati contabili** relativi a quell'anagrafica, che verranno dettagliati negli articoli seguenti.
+Situándose en la fila del registro que se desea visualizar en detalle y haciendo doble clic se abrirá la ventana de detalle que contiene la información **generali** y todos los **dati contabili** relacionados con ese registro, que serán detallados en los artículos siguientes.
 
+*Botón específico*:  
+> **duplica**: permite duplicar el registro seleccionado. El botón abre un formulario dentro del cual se deben definir los elementos básicos de la copia: razón social, apodo (es decir, el código del registro en sí), dirección, código postal, municipio y provincia. Una vez confirmada la copia, esta se abrirá en modo edición automáticamente. En la copia del registro, también se recrearán todos los subcuentas del plan de cuentas asociadas al registro en la empresa activa, atribuyendo una nueva subcuenta según el progresivo de cada maestro.
 
-*Pulsante specifico*:  
-> **Duplica**: permette di duplicare l'anagrafica selezionata. Il pulsante apre una form all'interno della quale si devono definire gli elementi di base della copia: ragione sociale, nomignolo (cioè codice dell'anagrafica stessa), indirizzo, cap, comune e provincia. Una volta confermata la copia, questa sarà aperta in modifica automaticamente. Nella copia dell'anagrafica, saranno ricreati anche tutti i sottoconti del piano dei conti associati all'anagrafica nella società attiva, attribuendo un nuovo sottoconto secondo il progressivo di ogni mastro.
+### Crear registro
 
-### Crea anagrafica
+El **Nuevo registro (Nuova anagrafica)** se puede insertar:
 
-La **Nuova anagrafica** si può inserire:
+- a través de la ruta **Inicio > Contactos > Crear registro de contactos (Home > Contatti > Crea Anagrafica contatti)**
 
-- attraverso il percorso **Home > Contatti > Crea Anagrafica contatti**
+   o bien
 
-   oppure
+- haciendo clic en el botón **nuovo**, dentro del formulario **[anagrafiche contatti](/docs/erp-home/registers/contacts/registers-management)**.
 
-- cliccando sul pulsante **Nuovo**, all'interno della form **[Anagrafiche contatti](/docs/erp-home/registers/contacts/registers-management)**.
+El formulario **anagrafica** se compone de dos pestañas:
+- **[General (Generale)](/docs/erp-home/registers/contacts/create-new-contact/general)** en la que se encontrarán las informaciones generales del registro;
+- **[Datos Contables (Dati Contabili)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)** que a su vez presentará una serie de pestañas en las que se podrán ingresar informaciones más específicas de tipo administrativo, comercial, logístico y que serán detalladas en los artículos siguientes.
 
-La form **Anagrafica** si compone di due tab:
-- **[Generale](/docs/erp-home/registers/contacts/create-new-contact/general)** in cui si troveranno le informazioni generali dell'anagrafica;
-- **[Dati Contabili](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)** che a sua volta presenterà una serie di tab nei quali si potranno inserire informazioni più specifiche di tipo amministrativo, commerciale, logistico e che verranno dettagliate negli articoli successivi.
- 
-
-## Riepilogo
-:::tip[Flusso Operativo per le Anagrafiche]
-1. Usare il comando *Nuovo* per inserire un *Contatto* che contiene i dati anagrafici generali
-2. Scrivere il numero di partita iva e usare il comando **Proponi Dati** per compilare automaticamente i dati generali verificando anche la validità della partita iva 
-3. Associare un **Tipo conto** e viene creato automaticamente il conto contabile, si attivano i dettagli
-4. Compilare i dettagli nei vari tab, in particolare le **Condizioni di pagamento** (se Cliente, Fornitore o Agente) oppure l'IBAN se anagrafica Banca
+## Resumen (Riepilogo)
+:::tip[Flujo Operativo para los Registros]
+1. Usar el comando *nuovo* para insertar un *Contacto* que contenga los datos anagráficos generales.
+2. Escribir el número de IVA y usar el comando **proponi dati** para completar automáticamente los datos generales verificando también la validez del número de IVA. 
+3. Asociar un **tipo conto** y se crea automáticamente la cuenta contable; se activan los detalles.
+4. Completar los detalles en las varias pestañas, en particular las **condizioni di pagamento** (si Cliente, Proveedor o Agente) o el IBAN si es un registro de Banco (anagrafica Banca).
 :::

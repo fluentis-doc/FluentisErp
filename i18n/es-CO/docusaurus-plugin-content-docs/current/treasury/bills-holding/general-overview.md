@@ -1,74 +1,68 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo Portafoglio Effetti di Fluentis ERP è progettato per gestire e monitorare gli effetti commerciali, come tratte, ricevute bancarie e altri strumenti di pagamento posticipato. 
+El módulo Cartera de Efectos de Fluentis ERP está diseñado para gestionar y monitorear los efectos comerciales, como letras, recibos bancarios y otros instrumentos de pago diferido.
 
-Questo modulo permette di gestire tutte le operazioni legate agli effetti, dalla loro creazione alla presentazione in banca al salvo buon fine o all'incasso, fino alla registrazione degli accrediti finali delle somme riscosse, fornendo un controllo completo sui flussi di cassa derivanti dai pagamenti differiti.
+Este módulo permite gestionar todas las operaciones relacionadas con los efectos, desde su creación hasta su presentación en el banco, ya sea para la aceptación o el cobro, hasta la registración de los abonos finales de las sumas recaudadas, proporcionando un control completo sobre los flujos de caja derivados de los pagos diferidos.
 
-## Il flusso operativo: 
+## El flujo operativo: 
 
-- parte riprendendo i dati dalle fatture di vendita o dalle partite contabili. 
+- comienza recuperando los datos de las facturas de venta o de las partidas contables.
 
-- Esegue la chiusura del conto clienti, la generazione delle distinte di presentazione e l'eventuale creazione dell'insoluto finale. 
+- Realiza el cierre de la cuenta de clientes, la generación de las listas de presentación y la eventual creación de la deuda final.
 
-E' possibile definire a piacimento i vari tipi di effetto necessario. 
+Es posible definir a voluntad los diversos tipos de efecto necesarios.
 
-Sono già presenti a sistema (previa configurazione iniziale Fast Start) le **Ricevute bancarie**, lo strumento attualmente più utilizzato in Italia.
-
-
-## Elenco tabelle necessarie per gestire il modulo:
-
-[Numerazione effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-numeration),  
-
-[Numerazione distinte di presentazione](/docs/configurations/tables/treasury/bills-portfolio-module-tables/presentation-lists-numeration),  
-
-[Tipi effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types),  
-
-[Tipi presentazione distinte effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types),  
-
-[Stati effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-status),  
-
-[Stati insoluti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/unpaid-status),  
-
-[Tipi pagamento](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types).
+Ya están disponibles en el sistema (previa configuración inicial Fast Start) los **ricevute bancarie**, el instrumento actualmente más utilizado en Italia.
 
 
+## Lista de tablas necesarias para gestionar el módulo:
 
-## Parametri necessari per gestire il modulo:
+[Numeración de efectos](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-numeration),  
 
-[Parametri portafoglio effetti](/docs/configurations/parameters/treasury/bills-portfolio-parameters).
+[Numeración de listas de presentación](/docs/configurations/tables/treasury/bills-portfolio-module-tables/presentation-lists-numeration),  
 
- 
+[Tipos de efectos](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types),  
 
-## Procedure presenti nel modulo
+[Tipos de presentación de listas de efectos](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types),  
 
-| Funzione | Significato | Dettaglio Video Tutorial |
+[Estados de efectos](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-status),  
+
+[Estados de deudas](/docs/configurations/tables/treasury/bills-portfolio-module-tables/unpaid-status),  
+
+[Tipos de pago](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types).
+
+
+## Parámetros necesarios para gestionar el módulo:
+
+[Parámetros de cartera de efectos](/docs/configurations/parameters/treasury/bills-portfolio-parameters).
+
+
+## Procedimientos presentes en el módulo
+
+| Función | Significado | Detalle Video Tutorial |
 | --- | --- | --- |
-|  [Acquisizione effetti dalle fatture](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)  | Richiama la procedura per creare in automatico gli effetti dalle scadenze fatture. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Acquisizione effetti dalle partite](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Richiama la procedura per creare in automatico gli effetti dalle partite aperte. |<a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Contabilizzazione effetti](/docs/treasury/bills-holding/accounting/bills-accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti e chiudere il conto cliente. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=02m55s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  **Contabilizzazione effetti a fornitore**  | Richiama la procedura per effettuare la contabilizzazione effetti a fornitore e chiudere il conto fornitore. | |
-|  [Contabilizzazione distinte](/docs/treasury/bills-holding/accounting/lists-accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05m05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  Contabilizzazione accrediti  | Richiama la procedura per effettuare la contabilizzazione dell'accredito in conto. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=07m51s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Importazione insoluti](/docs/treasury/bills-holding/procedures/import-unpaids)  | Richiama la procedura di importazione del tracciato telematico Insoluti. |
-|  [Contabilizzazione insoluti](/docs/treasury/bills-holding/accounting/unpaid-accounting)  | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura della partita cliente secondo i parametri del modulo. | |
-|  Contabilizzazione insoluti su cessione | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura delle partite cliente e fornitore secondo i parametri del modulo. | |
+|  [Adquisición de efectos desde facturas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)  | Invoca el procedimiento para crear automáticamente los efectos a partir de las fechas de las facturas. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  [Adquisición de efectos desde partidas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Invoca el procedimiento para crear automáticamente los efectos a partir de las partidas abiertas. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  [Contabilización de efectos](/docs/treasury/bills-holding/accounting/bills-accounting)  | Invoca el procedimiento para realizar la contabilización de los efectos y cerrar la cuenta del cliente. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=02m55s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  **Contabilización de efectos a proveedor**  | Invoca el procedimiento para realizar la contabilización de efectos a proveedor y cerrar la cuenta del proveedor. | |
+|  [Contabilización de listas](/docs/treasury/bills-holding/accounting/lists-accounting)  | Invoca el procedimiento para realizar la contabilización de la lista y valorar la cuenta de presentación. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05m05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  Contabilización de abonos  | Invoca el procedimiento para realizar la contabilización del abono en cuenta. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=07m51s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  [Importación de deudas](/docs/treasury/bills-holding/procedures/import-unpaids)  | Invoca el procedimiento de importación de la trazabilidad telemática de deudas. |
+|  [Contabilización de deudas](/docs/treasury/bills-holding/accounting/unpaid-accounting)  | Invoca el procedimiento de contabilización de deudas, con la correspondiente reapertura de la partida del cliente según los parámetros del módulo. | |
+|  Contabilización de deudas por cesión | Invoca el procedimiento de contabilización de deudas, con la correspondiente reapertura de las partidas del cliente y proveedor según los parámetros del módulo. | |
 
-## Stampe del modulo
+## Impresiones del módulo
 
-| Funzione | Significato | Dettaglio Video Tutorial |
+| Función | Significado | Detalle Video Tutorial |
 | --- | --- | --- |
-|  [Stampa distinte di presentazione](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Richiama la procedura per stampare le Distinte di presentazione in banca degli effetti. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Stampa Situazione portafoglio effetti](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Richiama la procedura per stampare la statistica della Situazione del portafoglio effetti. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Stampa Lista insoluti](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Richiama la procedura per stampare la lista degli insoluti presente. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  [Impresión de listas de presentación](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Invoca el procedimiento para imprimir las listas de presentación en el banco de los efectos. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  [Impresión de la situación de cartera de efectos](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Invoca el procedimiento para imprimir la estadística de la situación de la cartera de efectos. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  [Impresión de lista de deudas](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Invoca el procedimiento para imprimir la lista de deudas existentes. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pWgf3bowpMQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pWgf3bowpMQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

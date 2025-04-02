@@ -1,37 +1,37 @@
 ---
-title: Voci di costo
+title: voci di costo
 sidebar_position: 44
 ---
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-### Ricerca Voci di costo
+### Búsqueda de artículos de costo (Ricerca Voci di costo)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultado. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### Inserimento Voci di costo 
+### Inserción de artículos de costo (Inserimento Voci di costo)
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevos códigos, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-#### Campi specifici
-    
-**Codice**: indica il codice della voce di costo;      
-**Descrizione**: indica la descrizione della voce di costo;      
-**Tipo di costo**: indica la tipologia della voce di costo tra *Costi diretti*, *Costi generali* e *Altri costi*;      
-**Applicazione su**: indica dove verrà applicato questo costo: 
-> *Costo materiali*: il costo viene applicato solo sul costo dei materiali (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);    
-> *Costo macchina*: il costo viene applicato solo sul costo macchina (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);     
-> *Costo manodopera*: il costo viene applicato solo sul costo della manodopera (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);    
-> *Costo lavorazioni*: il costo viene applicato solo sul costo delle lavorazioni (totale dei costi macchina e manodopera) (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);     
-> *Costo industriale*: il costo viene applicato solo sul totale del costo dei materiali e del costo delle lavorazioni (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti* o *Costi generali*);    
-> *Costo generale*: il costo viene applicato al totale costi generali (applicabile solo su voci con *Tipo costo* uguale a *Costi generali*);     
-> *Altri costi*: il costo viene applicato al totale altri costi (applicabile solo su voci con *Tipo costo* uguale ad *Altri costi*);   
+#### Campos específicos (Campi specifici)
+
+**codice**: indica el código del artículo de costo;  
+**descrizione**: indica la descripción del artículo de costo;  
+**Tipo de costo (Tipo di costo)**: indica la tipología del artículo de costo entre *costi diretti*, *costi generali* y *altri costi*;  
+**applicazione su**: indica dónde se aplicará este costo:  
+> *costo materiali*: el costo se aplica solo al costo de los materiales (aplicable solo en artículos con *Tipo de costo* igual a *Costos directos*);  
+> *costo macchina*: el costo se aplica solo al costo de la maquinaria (aplicable solo en artículos con *Tipo de costo* igual a *Costos directos*);  
+> *costo manodopera*: el costo se aplica solo al costo de la mano de obra (aplicable solo en artículos con *Tipo de costo* igual a *Costos directos*);  
+> *costo lavorazioni*: el costo se aplica solo al costo de los trabajos (total de los costos de maquinaria y mano de obra) (aplicable solo en artículos con *Tipo de costo* igual a *Costos directos*);  
+> *Costo industrial (Costo industrial)*: el costo se aplica solo al total del costo de los materiales y del costo de los trabajos (aplicable solo en artículos con *Tipo de costo* igual a *Costos directos* o *Costos generales*);  
+> *costo generale*: el costo se aplica al total de costos generales (aplicable solo en artículos con *Tipo de costo* igual a *Costos generales*);  
+> *altri costi*: el costo se aplica al total de otros costos (aplicable solo en artículos con *Tipo de costo* igual a *Otros costos*);  
 
 :::note Nota
-Le voci di costo create con **Applicazione su** uguale a *Costo materiali*, *Costo macchina*, *Costo manodopera*, *Costo lavorazioni*o *Costo industriale* saranno tutte incluse nella sezione dedicata ai **Costi diretti**, mentre le voci di costo create con **Applicazione su** uguale a *Costo generale* o *Altri costi* verranno incluse, rispettivamente, nella sezione dedicata ai **Costi generali** o a quella dedicata a **Altri costi** all'interno della [Valorizzazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+Los artículos de costo creados con **Aplicación en** igual a *Costo de materiales*, *Costo de maquinaria*, *Costo de mano de obra*, *Costo de trabajos* o *Costo industrial* se incluirán todos en la sección dedicada a **Costos directos**, mientras que los artículos de costo creados con **Aplicación en** igual a *Costo general* o *Otros costos* se incluirán, respectivamente, en la sección dedicada a **Costos generales** o en la dedicada a **Otros costos** dentro de la [Valoración (Valorizzazione)](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 :::
 
-**Percentuale/Valore**: indica se la voce di costo sia di tipo: *percentuale*, a *valore fisso* o a *valore variabile* (attivo solo per le voci di costo con **Applicazione su** = *Altri costi*). Nello specifico la *percentuale* viene calcolata sul totale del costo indicato nel campo **Applicazione su**; il *valore fisso* viene aggiunto al totale del costo indicato nel campo **Applicazione su**, mentre il *valore variabile* viene moltiplicato per la quantità presente nella gestione degli *Altri costi* in costificazione.              
-**Valore**: indica il valore di default della voce di costo che verrà poi proposto in automatico.     
+**percentuale/valore**: indica si el artículo de costo es de tipo: *porcentaje*, a *valor fijo* o a *valor variable* (activo solo para los artículos de costo con **Aplicación en** = *Otros costos*). En específico, el *porcentaje* se calcula sobre el total del costo indicado en el campo **Aplicación en**; el *valor fijo* se suma al total del costo indicado en el campo **Aplicación en**, mientras que el *valor variable* se multiplica por la cantidad presente en la gestión de *Otros costos* en la costificación.  
+**valore**: indica el valor predeterminado del artículo de costo que luego se propondrá automáticamente.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,48 +1,47 @@
 ---
-title: Ripresa prezzi e sconti
+title: Recuperación de precios y descuentos (Ripresa prezzi e sconti)
 sidebar_position: 1
 ---
 
-I prezzi dei prodotti possono essere definiti nei listini di vendita o direttamente nell’anagrafica articoli. Nei listini, i prezzi possono essere "ivati" o "non ivati", una differenza determinata dall’attivazione del flag "Prezzo Ivato" nella testata del listino.
+Los precios de los productos se pueden definir en las listas de precios o directamente en el registro de artículos. En las listas, los precios pueden ser "con IVA" o "sin IVA", una diferencia determinada por la activación del indicador "Precio con IVA (Prezzo Ivato)" en la cabecera de la lista.
 
-**Tipologie di Listino**      
-I listini si dividono in due categorie principali: generale e per cliente. I listini generali devono essere configurati nell’apposita tabella, dove è anche possibile specificare se il listino è "ivato" o "non ivato" tramite un flag. I listini per cliente utilizzano come codice il conto e sottoconto del cliente, rendendoli univoci e personalizzati.
+**Tipos de Lista (Tipologie di Listino)**  
+Las listas se dividen en dos categorías principales: general y para cliente. Las listas generales deben configurarse en la tabla correspondiente, donde también es posible especificar si la lista es "con IVA" o "sin IVA" mediante un indicador. Las listas para cliente utilizan como código la cuenta y subcuenta del cliente, haciéndolas únicas y personalizadas.
 
-Ogni listino è identificato da tre elementi chiave:
+Cada lista se identifica por tres elementos clave:
 
-- Tipologia (generale o per cliente),
-- Divisa,
-- Date di validità (da/a).     
-All'interno di ogni listino, i prezzi degli articoli possono essere specificati per l'unità di misura gestionale (obbligatoria e definita nell'anagrafica articolo) oppure per una delle unità di misura alternative. I prezzi possono essere anche associati a scaglioni di quantità (tab "Prezzo per Quantità") o a destinazioni di merce specifiche (tab "Destinazioni").
+- Tipo (general o para cliente),
+- Moneda (divisa),
+- Fechas de validez (de/a).  
+Dentro de cada lista, los precios de los artículos pueden especificarse para la unidad de medida de gestión (obligatoria y definida en el registro de artículos) o para una de las unidades de medida alternativa. Los precios también pueden asociarse a tramos de cantidad (pestaña "Precio por Cantidad") o a destinos de mercancía específicos (pestaña "Destinos").
 
-**Gestione degli Sconti**      
-Gli sconti possono essere configurati in vari modi:
+**Gestión de Descuentos (Gestione degli Sconti)**  
+Los descuentos pueden configurarse de diversas maneras:
 
-- Anagrafica Cliente: Gli sconti definiti nella tab "Spese/Sconti" vengono applicati automaticamente al documento di vendita quando si seleziona un cliente. È possibile associare più sconti.
+- Registro de Cliente (Anagrafica Cliente): Los descuentos definidos en la pestaña "Gastos/Descuentos (Spese/Sconti)" se aplican automáticamente al documento de venta cuando se selecciona un cliente. Es posible asociar múltiples descuentos.
 
-- Tipo di Pagamento: Gli sconti legati al tipo di pagamento vengono recuperati automaticamente quando si seleziona o si propone un tipo di pagamento nel documento.
+- Tipo de Pago: Los descuentos relacionados con el tipo de pago se recuperan automáticamente al seleccionar o proponer un tipo de pago en el documento.
 
-- Tipologia di Listino: Gli sconti possono essere associati a ogni riga della griglia listini nell’anagrafica cliente.
+- Tipo de Lista: Los descuentos pueden asociarse a cada línea de la cuadrícula de listas en el registro de cliente.
 
-- Listino Articoli: Gli sconti possono essere specificati per ogni riga articolo nel listino, anche a livello di scaglione (sconti a quantità o a valore).
+- Lista de Artículos: Los descuentos pueden especificarse para cada línea de artículo en la lista, incluso a nivel de tramo (descuentos por cantidad o por valor).
 
-- Definizione Politiche di Sconto: Gli sconti possono essere configurati per articoli, clienti, classi di articoli, categorie commerciali, categorie di sconto e dettagli di categoria sconto.
+- Definición de Políticas de Descuento: Los descuentos pueden configurarse para artículos, clientes, clases de artículos, categorías comerciales, categorías de descuento y detalles de la categoría de descuento.
 
-**Procedura di Ripresa Prezzi e Sconti**      
-Quando si inserisce un articolo in un documento di vendita, viene attivata la procedura di ripresa dei prezzi e degli sconti. Il sistema cerca un listino valido tra quelli associati al cliente, partendo dalla tipologia con il flag "default" o seguendo la priorità di ricerca impostata.
+**Procedimiento de Recuperación de Precios y Descuentos (Procedura di Ripresa Prezzi e Sconti)**  
+Cuando se inserta un artículo en un documento de venta, se activa el procedimiento de recuperación de precios y descuentos. El sistema busca una lista válida entre las asociadas al cliente, comenzando por el tipo con el indicador "por defecto" o siguiendo la prioridad de búsqueda establecida.
 
-La ricerca di un listino valido si basa sui seguenti criteri:
+La búsqueda de una lista válida se basa en los siguientes criterios:
 
-- Il listino deve includere l'articolo con la stessa divisa del cliente.
-- La data di validità del listino deve essere compresa tra la data di inizio validità della riga nel tab "Listini" e la data del documento.
-Se non viene trovato un listino valido, e non è attivo il flag "Ricerca in tutti i listini predefiniti", il sistema utilizza il prezzo di vendita dell’anagrafica articoli. Se invece il flag è attivato, la ricerca continua tra le altre tipologie di listini presenti nell’anagrafica cliente, secondo l’ordine di priorità.
+- La lista debe incluir el artículo con la misma moneda del cliente.
+- La fecha de validez de la lista debe estar comprendida entre la fecha de inicio de validez de la línea en la pestaña "Listas" y la fecha del documento.
+Si no se encuentra una lista válida y no está activo el indicador "Buscar en todas las listas predefinidas (Ricerca in tutti i listini predefiniti)", el sistema utiliza el precio de venta del registro de artículos. Si el indicador está activado, la búsqueda continúa entre los otros tipos de listas presentes en el registro de cliente, según el orden de prioridad.
 
-La ricerca dell'articolo all'interno del listino tiene conto non solo del codice articolo, ma anche della variante e dell'unità di misura. Se il prezzo è definito per un'unità di misura alternativa, il sistema lo inserisce nel documento, attivando il flag "Prezzo Unità di Misura Alternativa", e calcola i totali in base alla quantità alternativa.
+La búsqueda del artículo dentro de la lista considera no solo el código del artículo, sino también la variante y la unidad de medida. Si el precio está definido para una unidad de medida alternativa, el sistema lo inserta en el documento, activando el indicador "Precio Unidad de Medida Alternativa (Prezzo Unità di Misura Alternativa)", y calcula los totales en base a la cantidad alternativa.
 
-Dopo aver individuato il prezzo, vengono cercati anche gli sconti e i prezzi a scaglione. Se nel tab "Listini" dell’anagrafica cliente è attivo il flag "Gestione Prezzi", il sistema ricerca eventuali sconti aggiuntivi nella configurazione "Definizione Politiche di Sconto". Tutti gli sconti trovati vengono riportati nella collezione degli sconti, con l’indicazione della loro origine.
+Después de identificar el precio, también se buscan los descuentos y los precios por tramos. Si en la pestaña "Listas" del registro de cliente está activo el indicador "Gestión de Precios (Gestione Prezzi)", el sistema busca posibles descuentos adicionales en la configuración "Definición de Políticas de Descuento (Definizione Politiche di Sconto)". Todos los descuentos encontrados se registran en la colección de descuentos, con la indicación de su origen.
 
-**Considerazioni Finali**     
-La stessa logica di ricerca si applica sia per documenti con prezzi "ivati" che "non ivati". Tuttavia, se un documento richiede prezzi "non ivati", la ricerca si limita ai listini con questo tipo di prezzo, e viceversa per i prezzi "ivati".
+**Consideraciones Finales (Considerazioni Finali)**  
+La misma lógica de búsqueda se aplica tanto para documentos con precios "con IVA" como "sin IVA". Sin embargo, si un documento requiere precios "sin IVA", la búsqueda se limita a las listas con este tipo de precio, y viceversa para los precios "con IVA".
 
-Attenzione: Se non esiste un listino valido e l’anagrafica articoli ha un prezzo di vendita definito, questo viene proposto come prezzo della riga del documento, indipendentemente dal tipo di prezzo richiesto (ivato o non ivato).
-
+Atención: Si no existe una lista válida y el registro de artículos tiene un precio de venta definido, este se propone como precio de la línea del documento, independientemente del tipo de precio solicitado (con IVA o sin IVA).

@@ -1,33 +1,32 @@
 ---
-title: Porto
+title: porto
 sidebar_position: 2
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Porto** e viene utilizzata per inserire le condizioni di resa utilizzabili nei documenti di acquisto/vendita.
+La tabla se abre a través de la ruta **Tablas (Tabelle) > Configuraciones generales (Impostazioni generali) > porto (Porto)** y se utiliza para ingresar las condiciones de entrega que se pueden utilizar en los documentos de compra/venta.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar aquellos que ya existen para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtros y una de resultados. Una vez configurados todos los filtros deseados, solo se debe hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder ingresar nuevos registros, es necesario hacer clic en la cuadrícula superior en la primera fila vacía o presionar el botón **nuovo**.
 
-### Porto
+### porto (Porto)
 
-**Codice/Descrizione**: indicare un codice univoco per la condizione di resa e relativa descrizione;
+**codice/descrizione**: indique un código único para la condición de entrega y su respectiva descripción;  
 
-**Cod Intra**: indicare il codice ufficiale da utilizzare in dichiarazione intrastat;
+**Código Intra (Cod Intra)**: indique el código oficial a utilizar en la declaración intrastat;  
 
+**Signo intra. (Segno intra.)**: campo no obligatorio, se utiliza para indicar si los gastos del documento, que tienen el indicador *Valor estadístico Intra (Val stat. Intra)*, incrementan o decrementan el valor de la mercancía para el cálculo del valor estadístico;  
 
-**Segno intra.**: campo non obbligatorio, serve per indicare se le spese del documento, che hanno flag *Val stat. Intra*, incrementano o decrementano il valore merce per il calcolo del valore statistico;
+**codice iso della nazione**: indica que este código es utilizable en las declaraciones intrastat de las empresas de esta nacionalidad;  
 
-**Codice ISO della nazione** indica che questo codice è utilizzabile nelle dichiarazioni intrastat delle società di questa nazionalità;
+**spese**: habilita la gestión de gastos para el valor estadístico intrastat;  
 
-**Spese**: abilita la gestione spese per il valore statistico intrastat;
+**data fine validità**: indica la fecha de finalización de la validez de la condición de entrega.  
 
-**Data fine validità**: indica la data di fine validità della condizione di resa.
+### Idiomas (Lingue)
 
-### Lingue
+En la cuadrícula es posible establecer las descripciones en el idioma de la línea seleccionada en la cuadrícula *porto*.
 
-Nella griglia è possibile impostare le descrizioni in lingua della riga selezionata nella griglia *Porto*.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

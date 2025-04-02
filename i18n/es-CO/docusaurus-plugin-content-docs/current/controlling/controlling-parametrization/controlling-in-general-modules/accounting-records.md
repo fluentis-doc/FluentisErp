@@ -1,31 +1,31 @@
 ---
-title: Registrazioni Contabili e Funzionalità in Contabilità generale
+title: Registros Contables y Funcionalidades en Contabilidad General (Registrazioni Contabili e Funzionalità in Contabilità generale)
 sidebar_position: 10
 ---
 
-In ogni registrazione contabile con causale contabile che ha attivo il flag di gestione dei *Centri di costo*, avremo visibilità del tab 'Analitica' dedicato alla valorizzazione della contabilità analitica per centro di costo.
+En cada registro contable con causal contable que tiene activo el indicador de gestión de *Centros de costo*, tendremos visibilidad de la pestaña 'Analítica' dedicada a la valorización de la contabilidad analítica por centro de costo.
 
 :::tip Nota
-Il flag di gestione *Progetti* presente nella causale contabile si comporterà differentemente a seconda che la società abbia attivo o meno il *Controlling*: 
-- se **non è attivo**, il flag renderà visibile una scheda specifica di gestione dei costi/ricavi diretti di progetto, scollegata dalla contabilità analitica
-- se **è attivo**, il flag renderà visibile il campo progetti all'interno della scheda di gestione a centri di costo dell'analitica: il campo sarà editabile solo per dimensioni legate alla dimensione progetti
+El indicador de gestión *Proyectos* presente en la causal contable se comportará de manera diferente según si la empresa tiene activo o no el *controlling*: 
+- si **no está activo**, el indicador hará visible una ficha específica de gestión de costos/ingresos directos de proyecto, desconectada de la contabilidad analítica.
+- si **está activo**, el indicador hará visible el campo proyectos dentro de la ficha de gestión a centros de costo de la analítica: el campo será editable solo para dimensiones relacionadas con la dimensión proyectos.
 :::
 
-All'interno della scheda analitica avremo la piena visibilità e disponibilità di tutte le righe valorizzate automaticamente da ***FluentisERP*** all'atto dell'inserimento della registrazione, o riportate dal documento di origine della contabilizzazione: potremo modificare gli importi, aggiungere nuove righe, eliminarne altre, secondo le logiche di configurazione della dimensione del singolo centro valorizzato, del piano dei conti e della causale.
+Dentro de la ficha analítica tendremos plena visibilidad y disponibilidad de todas las líneas valorizadas automáticamente por ***FluentisERP*** al momento de la inserción del registro, o reportadas desde el documento origen de la contabilización: podremos modificar los importes, agregar nuevas líneas, eliminar otras, según las lógicas de configuración de la dimensión del centro individual valorizado, del plan de cuentas y de la causal.
 
-Completata la registrazione avremo visibilità di questi dati in alcune procedure e stampe di Contabilità generale:
+Una vez completado el registro, tendremos visibilidad de estos datos en algunos procedimientos e impresiones de Contabilidad General:
 
-## PROCEDURE DI CONTABILITA' GENERALE
-- procedura di ***Visualizzazione movimenti dei centri aziendali***: è una maschera di ricerca dei movimenti di analitica presenti nelle registrazioni contabili, con la possibilità di entrare in modifica della registrazione stessa
+## PROCEDIMIENTOS DE CONTABILIDAD GENERAL
+- procedimiento de ***Visualización de movimientos de los centros empresariales***: es una máscara de búsqueda de los movimientos analíticos presentes en los registros contables, con la posibilidad de entrar en modificación del mismo registro.
 
-- procedura di ***Visualizzazione Bilancio con centri di costo***: consente di visualizzare i totali dei centri, ma anche per centro e sottoconto, totalizzandoli anche sulla struttura del piano dei conti
+- procedimiento de ***Visualización de Balance con centros de costo***: permite visualizar los totales de los centros, pero también por centro y subcuenta, totalizándolos también sobre la estructura del plan de cuentas.
 
-## REPORT DI CONTABILITA' GENERALE
-All'interno del gruppo *Stampe analitica* abbiamo a disposizione
-- stampa ***Analisi centri di costo**: consente di raggruppare i dati di movimentazione dell'analitica secondo una lista di proprietà predefinite, trascinandole nella griglia di raggruppamento
+## REPORTES DE CONTABILIDAD GENERAL
+Dentro del grupo *Impresiones analíticas*, tenemos disponible
+- impresión ***Análisis de centros de costo***: permite agrupar los datos de movimiento de la analítica según una lista de propiedades predefinidas, arrastrándolas en la cuadrícula de agrupación.
 
-- stampa ***Analisi centri di profitto***: report è presente per retrocompatibilità, è simile alla precedente ma legge i dati dei movimetni dei *Centri di profitto*.
+- impresión ***Análisis de centros de beneficio***: el reporte está presente por retrocompatibilidad, es similar al anterior pero lee los datos de los movimientos de los *Centros de beneficio*.
 
-- stampa ***Analisi movimenti per Centri di costo***: visualizza il dettaglio delle movimentazioni dei singolo sottoconti, dettagliando su quali centri sono stati movimentati.
+- impresión ***Análisis de movimientos por Centros de costo***: visualiza el detalle de las movimentaciones de los subcuentas individuales, detallando en qué centros han sido movidos.
 
-- stampa ***Controllo sbilanci Centri di costo/Centri di ricavo/Progetti***: nel caso di società con il *Controlling* attivo, la stampa prevede la verifica di quadratura dei soli dati di contabilità analitica dei centri di costo, filtrando per ogni specifica [*dimensione+](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension). Se siamo in una società senza attivazione del *Controlling*, invece, avremo dei flag per impostare la ricerca di squadrature dei centri di costo, dei centri di ricavo, o della sezione progetti delle registrazioni contabili
+- impresión ***Control de desbalance de Centros de costo/Centros de ingreso/Proyectos***: en el caso de empresas con el *controlling* activo, la impresión prevé la verificación de cuadratura de solo los datos de contabilidad analítica de los centros de costo, filtrando por cada específica [*dimensión+ (dimension)*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension). Si estamos en una empresa sin activación del *Controlling*, en cambio, tendremos indicadores para establecer la búsqueda de desbalances de los centros de costo, de los centros de ingreso, o de la sección de proyectos de los registros contables.

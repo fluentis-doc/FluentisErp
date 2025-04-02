@@ -1,64 +1,64 @@
 ---
-title: Funzioni aziendali
+title: funzioni aziendali
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Funzioni aziendali**.
+La tabla se encuentra en la ruta **Tablas > Calidad > General > funzioni aziendali**.
 
-Per funzione aziendale si intende un gruppo di *dipendenti/utenti* o *centri di lavoro* che eseguono attività omogenee.   
-In questa tabella è possibile codificare le *Funzioni aziendale* utilizzate nella maggior parte delle gestioni dell'area Qualità per indicare: la funzione responsabile del documento; la funzione che può effettuare o che effettua determinati tipi di attività, ecc.   
+Por función empresarial se entiende un grupo de *empleados/usuarios* o *centros de trabajo* que realizan actividades homogéneas.   
+En esta tabla es posible codificar las *funzioni aziendali* utilizadas en la mayoría de las gestiones del área de Calidad para indicar: la función responsable del documento; la función que puede llevar a cabo o que efectúa determinados tipos de actividades, etc.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Funzioni aziendali**
+**Búsqueda de Funciones Empresariales**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Funzioni aziendali**
+**Inserción de Funciones Empresariales**
 
-Per poter inserire nuove *Funzioni aziendali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *Funciones Empresariales*, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **Nuevo**.   
+Para el nuevo registro, deben llenarse al menos los campos obligatorios requeridos por el programa: el **Código** y la **Descripción**.
 
-## Funzioni aziendali
+## Funciones Empresariales
 
-E' l'elenco dove vengono inserite le informazioni principali della *Funzione aziendale*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione aziendale**: è la descrizione della *Funzione aziendale*.   
-> **Ruolo**: è il codice del *Ruolo A.R.M.*   
-> **Descrizione ruolo**: è la descrizione del *Ruolo A.R.M.*   
-> **Motivo del coinvolgimento nei Reclami**: è possibile indicare eventuali coinvolgimenti nei *Reclami* specifici/caratteristici della *Funzione aziendale*; questi verranno riportati in automatico nei *Reclami* all'atto del coinvolgimento della *Funzione aziendale*.   
-> **Motivo del coinvolgimento nelle Non conformità**: è possibile indicare eventuali coinvolgimenti nelle *Non conformità* specifici/caratteristici della *Funzione aziendale*; questi verranno riportati in automatico nelle *Non conformità* all'atto del coinvolgimento della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+Es la lista donde se introducen las principales informaciones de la *Función Empresarial*.   
+La lista se compone de la siguiente información:   
+> **codice**: es el código de la *Función Empresarial*.   
+> **descrizione funzione aziendale**: es la descripción de la *Función Empresarial*.   
+> **ruolo**: es el código del *Rol A.R.M.*   
+> **descrizione ruolo**: es la descripción del *Rol A.R.M.*   
+> **motivo del coinvolgimento nei reclami**: es posible indicar eventuales involucramientos en *Reclamos* específicos/característicos de la *Función Empresarial*; estos se reportarán automáticamente en los *Reclamos* al momento del involucramiento de la *Función Empresarial*.   
+> **motivo del coinvolgimento nelle non conformità**: es posible indicar eventuales involucramientos en *No conformidades* específicos/característicos de la *Función Empresarial*; estos se reportarán automáticamente en las *No conformidades* al momento del involucramiento de la *Función Empresarial*.   
+> **note**: anotaciones libres.
 
-### Dipendenti e Utenti collegati alla funzione
+### Empleados y Usuarios asociados a la función
 
-In questo elenco è possibile associare i *Dipendenti* e/o *Utenti* che fanno parte della *Funzione aziendale* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Dipendente**   
->> **Operatore**: è il codice del *Dipendente*.   
->> **Cognome**: è il cognome del *Dipendente*.   
->> **Nome**: è il nome del *Dipendente*.   
+En esta lista es posible asociar los *Empleados* y/o *Usuarios* que forman parte de la *Función Empresarial* seleccionada.   
+La lista se compone de la siguiente información:   
+> **dipendente**   
+>> **operatore**: es el código del *Empleado*.   
+>> **cognome**: es el apellido del *Empleado*.   
+>> **nome**: es el nombre del *Empleado*.   
 >
-> **Utente**   
->> **Nome**: è il codice dell'*Utente A.R.M.*   
->> **Descrizione**: è la descrizione dell'*Utente A.R.M.*   
+> **utente**   
+>> **nome**: es el código del *Usuario A.R.M.*   
+>> **descrizione**: es la descripción del *Usuario A.R.M.*   
 >
-> **Validità**   
->> **Predefinito**: un solo soggetto può essere il soggetto predefinito; il *soggetto predefinito* sarà quello che verrà proposto, ove previsto, come referente per la *Funzione aziendale* .   
->> **Attivo**: indica se il soggetto fa ancora parte della *Funzione aziendale*.   
->> **Inizio validità**: è la data dalla quale il soggetto entra a far parte della *Funzione aziendale*.   
->> **Fine validità**: è la data dalla quale il soggetto cessa di far parte della *Funzione aziendale*.   
+> **validità**   
+>> **predefinito**: un solo sujeto puede ser el sujeto predeterminado; el *sujeto predeterminado* será aquel que se propondrá, donde sea previsto, como referente para la *Función Empresarial*.   
+>> **attivo**: indica si el sujeto aún forma parte de la *Función Empresarial*.   
+>> **inizio validità**: es la fecha a partir de la cual el sujeto entra a formar parte de la *Función Empresarial*.   
+>> **fine validità**: es la fecha a partir de la cual el sujeto deja de formar parte de la *Función Empresarial*.   
 >
-> **Note**: annotazioni libere.
+> **note**: anotaciones libres.
 
-### Centri di lavoro
+### Centros de Trabajo
 
-Le *Funzioni aziendali* possono ricoprire anche ruoli di tipo produttivo e identificare *Centri di lavoro* o loro gruppi.   
-In questo elenco è possibile associare i *Centri di lavoro* che fanno parte della *Funzione aziendale* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Centro di lavoro**: è il codice del *Centro di lavoro*.   
-> **Descrizione centro di lavoro**: è la descrizione del *Centro di lavoro*.   
-> **Note**: annotazioni libere.
+Las *Funciones Empresariales* también pueden desempeñar roles de tipo productivo e identificar *Centros de Trabajo* o sus grupos.   
+En esta lista es posible asociar los *Centros de Trabajo* que forman parte de la *Función Empresarial* seleccionada.   
+La lista se compone de la siguiente información:   
+> **centro di lavoro**: es el código del *Centro de Trabajo*.   
+> **descrizione centro di lavoro**: es la descripción del *Centro de Trabajo*.   
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, refiérase al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

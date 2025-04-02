@@ -1,17 +1,17 @@
 ---
-title: Task
-sidebar_label: Task
+title: task
+sidebar_label: task (Task)
 sidebar_position: 0
 ---
 
-I task definiscono uno scenario di azione che potrà essere creato da zero o contenere delle attività. Il task potrà poi essere salvato, eseguito manualmente o schedulato.
+Las tareas definen un escenario de acción que puede ser creado desde cero o contener actividades. La tarea puede ser guardada, ejecutada manualmente o programada.
 
-Per utilizzare le *Attività* è necessario un contenitore, il **Task**. Quando viene creato un *Task*, lo script collegato ad esso ha del codice predefinito, necessario affinché funzioni; l'utente ha la possibilità di aggiungere codice allo script collegato, utilizzando lo *Script Editor* o la piattaforma codeless *Blockly*.
+Para utilizar las *attività* se necesita un contenedor, el **task**. Cuando se crea un *task*, el script asociado tiene código predefinido, necesario para su funcionamiento; el usuario tiene la opción de agregar código al script asociado, utilizando el *Editor de Scripts (Script Editor)* o la plataforma sin código *Blockly*.
 
-Il form del **Task** si apre tramite il percorso **Strumenti** > **Fluentis Supervisor** > **Tasks**.
+El formulario del **task** se abre a través de la ruta **strumenti** > **Fluentis Supervisor** > **tasks**.
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+Algunas de las funcionalidades dentro del formulario se refieren a un uso estándar. Para cualquier detalle sobre el uso de este formulario que no esté explícitamente mencionado aquí, consulte este [artículo (articolo)](/docs/guide/common).
 
-I *Tasks* sono organizzati in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Tasks* riferirsi all'articolo [creazioni gruppi](../../group-creation).
+Los *tasks* están organizados en grupos (como por ejemplo *utilità*, *esempi*, *Demo*) según el contexto de uso. Para crear un nuevo grupo de *tasks*, consulte el artículo sobre [creación de grupos (creazioni gruppi)](../../group-creation).
 
-![alt text](/img/it-it/applications/supervisor/supervisor8.png) 
+![texto alternativo (alt text)](/img/it-it/applications/supervisor/supervisor8.png)

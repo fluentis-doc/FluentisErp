@@ -1,22 +1,21 @@
 ---
-title: Precodice cespite
+title: precodice cespite
 sidebar_position: 18
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se pretenda configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-In questa tabella vengono codificati i precodici, validi per la singola società o per tutte a seconda dei **Parametri cespiti** impostati, che saranno utilizzabili nella definizione della numerazione delle schede cespite, se è attivato il flag di *gestione precodici* nei [**Parametri cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters).
+En esta tabla se codifican los precódigos, válidos para la empresa individual o para todas, dependiendo de los **parametri cespiti** establecidos, que serán utilizables en la definición de la numeración de las fichas de activo, si está activada la opción de *gestión de precódigos* en los [**parametri cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-In particolare la gestione del precodice è utile laddove sia necessario ottenere una numerazione non unica o univoca, diversamente, ad esempio non è possibile avere due schede con il numero 1. Se sono presenti, ad esempio due precodici A e B, allora si potrà avere la scheda nr 1 relativa aal precodice A e la nr 1 relativa al precodice B.
+En particular, la gestión del precódigo es útil cuando es necesario obtener una numeración no única o única; de lo contrario, por ejemplo, no es posible tener dos fichas con el número 1. Si están presentes, por ejemplo, dos precódigos A y B, se podrá tener la ficha nr 1 relacionada con el precódigo A y la nr 1 relacionada con el precódigo B.
 
-Un altro esempio di utilizzo è quello di raggruppare i cespiti per anno (e dunque i vari precodici corrisponderanno all'anno di acquisto) oppure per tipologia ecc...
+Otro ejemplo de uso es agrupar los activos por año (y por lo tanto los varios precódigos corresponderán al año de compra) o por tipo, etc...
 
+#### Campos específicos
 
-#### Campi specifici
+**codice**: código alfanumérico del precódigo.  
 
-**Codice**: codice alfanumerico del precodice.
-
-**Descrizione**: descrizione del precodice.
+**descrizione**: descripción del precódigo.

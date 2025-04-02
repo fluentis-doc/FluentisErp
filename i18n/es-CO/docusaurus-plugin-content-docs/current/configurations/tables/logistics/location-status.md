@@ -1,21 +1,21 @@
 ---
-title: Stato ubicazione
+title: stato ubicazione
 sidebar_position: 23
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stato ubicazione**.
+La tabla se encuentra en la ruta **Tablas > Logística > stato ubicazione (Tabelle > Logistica > Stato ubicazione)**.
 
-In questa tabella è possibile gestire la codifica degli stati dell’[Ubicazione](/docs/logistics/warehouse/location/locations/) di magazzino.    
+En esta tabla es posible gestionar la codificación de los estados de la [Ubicación (Ubicazione)](/docs/logistics/warehouse/location/locations/) del almacén.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Stato ubicazione**
+**Búsqueda de estado de ubicación (Ricerca Stato ubicazione)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Stato ubicazione**
+**Inserción de estado de ubicación (Inserimento Stato ubicazione)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas codificaciones es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

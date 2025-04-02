@@ -1,24 +1,24 @@
 ---
-title: Marchi automezzi
+title: Marcas de vehículos (Marchi automezzi)
 sidebar_position: 56
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Marchi automezzi**.
+La tabla se encuentra en la ruta **Tablas > Logística > Marcas de vehículos (Tabelle > Logistica > Marchi automezzi)**.
 
-In questa tabella è possibile codificare le *Marchi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+En esta tabla es posible codificar las *Marcas de vehículos* que podrán ser seleccionadas en el [Registro de vehículos (Angrafica automezzi)](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Marchi automezzi**
+**Búsqueda de Marcas de vehículos (Ricerca Marchi automezzi)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se hayan configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Marchi automezzi**
+**Inserción de Marcas de vehículos (Inserimento Marchi automezzi)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Para poder insertar nuevos registros, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
+Con el botón **cancella** es posible eliminar el registro seleccionado.
 
-Inoltre, è possibile indicare nella tabella sottostante una descrizione dei vari modelli di mezzi di quel marchio.
+Además, es posible indicar en la tabla inferior una descripción de los varios modelos de vehículos de esa marca.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

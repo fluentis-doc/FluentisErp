@@ -1,36 +1,35 @@
 ---
-title: Codice tributo
+title: codice tributo
 sidebar_position: 10
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-La tabella ‘Codice tributo', preimpostata, memorizza tutti i codici tributo previsti per la dichiarazione F24 gestita all'interno del modulo percipienti: si tratta di codici ufficiali ministeriali.
+La tabla ‘codice tributo (Codice tributo)', preconfigurada, almacena todos los códigos de tributo previstos para la declaración F24 gestionada dentro del módulo de perceptores: se trata de códigos oficiales ministeriales.
 
-I campi 'Utilizzo', 'Tipo', 'Rata','Anno', 'Ufficio' e 'Atto' sono rilevanti per la gestione del modello F24.
+Los campos 'Uso (Utilizzo)', 'Tipo (Tipo)', 'Cuota (Rata)', 'Año (Anno)', 'Oficina (Ufficio)' y 'Acto (Atto)' son relevantes para la gestión del modelo F24.
 
-**Codice**: codice tributo ministeriale;
+**codice**: código de tributo ministerial;  
 
-**Descrizione**: descrizione codice tributo;
+**descrizione**: descripción del código de tributo;  
 
-**Utilizzo**: codice utilizzo;
+**utilizzo**: código de uso;  
 
-**Tipo**: tipo tributo (es. Sez. Erario, sez. Enti locali ecc...);
+**tipo**: tipo de tributo (ej. Sección Hacienda (Sez. Erario), sección Entidades locales (sez. Enti locali), etc.);  
 
-**Rata**: rata tributo (cfr. Istruzioni modello F24);
+**rata**: cuota de tributo (cf. Instrucciones del modelo F24);  
 
-**Anno**: anno tributo;
+**anno**: año del tributo;  
 
-**Uff**.: ufficio;
+**uff.**: oficina;  
 
-**Atto**: atto;
+**atto**: acto;  
 
-**Data fine validità**: permette di bloccare l'utilizzo del codice in questione
+**data fine validità**: permite bloquear el uso del código en cuestión.  
 
-**IVA**: qualifica i codici tributo da utilizzare nella gestione dei versamenti IVA
+**IVA**: califica los códigos de tributo a utilizar en la gestión de los pagos de IVA.  
 
-
-La sezione CONTO permette di assegnare un sottoconto contabile al codice tributo che andrà a prevalere rispetto ai conti impostati nei parametri generali di contabilità nell'ambito della contabilizzazione del modello F24.
+La sección CUENTA (CONTO) permite asignar una subcuenta contable al código de tributo, la cual prevalecerá sobre las cuentas configuradas en los parámetros generales de contabilidad en el ámbito de la contabilización del modelo F24.

@@ -1,14 +1,14 @@
 ---
-title: Modalità di versamento
+title: modalità di versamento
 sidebar_position: 13
 ---
 
-La tabella consente di definire e gestire le modalità di versamento dei tributi nel modulo Percipienti.
+La tabla permite definir y gestionar las modalidades de pago de impuestos en el módulo de Beneficiarios (Percipienti).
 
-#### Campi specifici
+#### Campos específicos (Campi specifici)
 
-**Codice**: codice della modalità di versamento.
+**codice**: código de la modalidad de pago.  
 
-**Descrizione**: descrizione della modalità di versamento.
+**descrizione**: descripción de la modalidad de pago.  
 
-Esempio: un tipico record da inserire in questa tabella per poi richiamarlo al fine di aggiornare i dati del versamento delle ritenute d'acconto percipienti è ***F24*** (modello di versamento tributi).
+Ejemplo: un registro típico que se debe insertar en esta tabla para luego llamarlo con el fin de actualizar los datos del pago de las retenciones de los beneficiarios es ***F24*** (modelo de pago de impuestos).

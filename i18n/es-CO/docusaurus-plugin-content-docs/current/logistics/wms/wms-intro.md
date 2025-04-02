@@ -1,86 +1,84 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-L'adozione di un sistema di gestione del magazzino **WMS** è essenziale per le aziende che cercano di ottimizzare le proprie operazioni logistiche. 
-Un **WMS**, come **Fluentis**, offre una serie di strumenti e funzionalità progettate per migliorare l'efficienza, la precisione e la tracciabilità all'interno del magazzino. Con **Fluentis WMS**, le aziende possono automatizzare processi chiave come la ricezione delle merci, lo stoccaggio, il picking, il confezionamento e la spedizione, riducendo gli errori umani e aumentando la produttività.
+La adopción de un sistema de gestión de inventario **WMS** es esencial para las empresas que buscan optimizar sus operaciones logísticas.  
+Un **WMS**, como **Fluentis**, ofrece una serie de herramientas y funcionalidades diseñadas para mejorar la eficiencia, la precisión y la trazabilidad dentro del inventario. Con **Fluentis WMS**, las empresas pueden automatizar procesos clave como la recepción de mercancías, el almacenamiento, el picking, el empaquetado y el envío, reduciendo errores humanos y aumentando la productividad.
 
-L'implementazione di un **WMS** consente di gestire in modo più efficace le scorte, riducendo il rischio di eccedenze o carenze. Inoltre, grazie alla visibilità in tempo reale delle operazioni, il **WMS** permette alle aziende di prendere decisioni informate e di rispondere rapidamente alle variazioni della domanda. La capacità di tracciare le merci durante tutto il loro ciclo di vita nel magazzino contribuisce anche a garantire la conformità normativa e a migliorare la soddisfazione del cliente.
+La implementación de un **WMS** permite gestionar de manera más efectiva los inventarios, reduciendo el riesgo de excedentes o faltantes. Además, gracias a la visibilidad en tiempo real de las operaciones, el **WMS** permite a las empresas tomar decisiones informadas y responder rápidamente a las variaciones de la demanda. La capacidad de rastrear las mercancías a lo largo de su ciclo de vida en el inventario también contribuye a garantizar el cumplimiento normativo y a mejorar la satisfacción del cliente.
 
-In definitiva, l'utilizzo di un **WMS** aiuta le aziende a snellire le operazioni logistiche, ridurre i costi e migliorare la qualità del servizio, creando un vantaggio competitivo in un mercato sempre più dinamico e complesso.
+En definitiva, el uso de un **WMS** ayuda a las empresas a agilizar las operaciones logísticas, reducir costos y mejorar la calidad del servicio, creando una ventaja competitiva en un mercado cada vez más dinámico y complejo.
 
 
-## Moduli dell'area 
+## Módulos del área (Moduli dell'area)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/wms/wms-intro">Acquisti</Link>
-        <p><Link to="/docs/logistics/wms/purchase/receiving-goods" className="bold-link">Ricevimento merci</Link></p>
-        <p>La funzione di ricevimento merci è cruciale per la gestione logistica, consentendo l’identificazione e il caricamento preciso delle merci in arrivo. Attraverso il sistema, gli operatori possono filtrare e selezionare gli ordini fornitori non evasi, generare il Documento di Trasporto (DDT) e gestire le unità di carico, se necessario. Questo processo assicura che ogni articolo venga registrato con le informazioni di lotto e quantità, migliorando l’efficienza del magazzino e garantendo un accurato controllo delle movimentazioni.</p>
+###     <Link to="/docs/logistics/wms/wms-intro">Compras (Acquisti)</Link>
+        <p><Link to="/docs/logistics/wms/purchase/receiving-goods" className="bold-link">Recepción de mercancías (Ricevimento merci)</Link></p>
+        <p>La función de recepción de mercancías es crucial para la gestión logística, permitiendo la identificación y carga precisa de las mercancías que llegan. A través del sistema, los operadores pueden filtrar y seleccionar los pedidos de proveedores no cumplidos, generar el Documento de Transporte (DDT) y gestionar las unidades de carga, si es necesario. Este proceso asegura que cada artículo se registre con la información de lote y cantidad, mejorando la eficiencia del inventario y garantizando un control preciso de los movimientos.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/wms/wms-intro">Logistica</Link>
-        <p><Link to="/docs/logistics/wms/logistics/load-item" className="bold-link">Carico articolo</Link></p>
-        <p>La funzione di carico merci consente di registrare in modo preciso l’arrivo degli articoli nei magazzini.</p>
-        <p><Link to="/docs/logistics/wms/logistics/unload-item" className="bold-link">Scarico articolo</Link></p>
-        <p>La funzione di scarico merci è progettata per facilitare il prelievo degli articoli da un magazzino.</p>
-        <p><Link to="/docs/logistics/wms/logistics/move-item" className="bold-link">Sposta articolo</Link></p>
-        <p>La funzione sposta articolo consente di creare un movimento di spostamento di un articolo da una specifica ubicazione ad un’altra.</p>
-        <p><Link to="/docs/logistics/wms/logistics/item-adjustment" className="bold-link">Rettifica articolo</Link></p>
-        <p>Questa procedura è utilizzata per creare delle rettifiche positive o negative di un articolo.</p>
-        <p><Link to="/docs/logistics/wms/logistics/item-stocks" className="bold-link">Giacenza articolo</Link></p>
-        <p>La funzione di giacenza articolo consente agli operatori di visualizzare rapidamente le giacenze di magazzino per ogni articolo registrato.</p>
+###     <Link to="/docs/logistics/wms/wms-intro">Logística (Logistica)</Link>
+        <p><Link to="/docs/logistics/wms/logistics/load-item" className="bold-link">Carga de artículo (Carico articolo)</Link></p>
+        <p>La función de carga de mercancías permite registrar de manera precisa la llegada de los artículos a los almacenes.</p>
+        <p><Link to="/docs/logistics/wms/logistics/unload-item" className="bold-link">Descarga de artículo (Scarico articolo)</Link></p>
+        <p>La función de descarga de mercancías está diseñada para facilitar la extracción de los artículos de un almacén.</p>
+        <p><Link to="/docs/logistics/wms/logistics/move-item" className="bold-link">Mover artículo (Sposta articolo)</Link></p>
+        <p>La función mover artículo permite crear un movimiento de desplazamiento de un artículo de una ubicación específica a otra.</p>
+        <p><Link to="/docs/logistics/wms/logistics/item-adjustment" className="bold-link">Ajuste de artículo (Rettifica articolo)</Link></p>
+        <p>Este procedimiento se utiliza para crear ajustes positivos o negativos de un artículo.</p>
+        <p><Link to="/docs/logistics/wms/logistics/item-stocks" className="bold-link">Existencias de artículo (Giacenza articolo)</Link></p>
+        <p>La función de existencias de artículo permite a los operadores visualizar rápidamente las existencias de inventario para cada artículo registrado.</p>
         <p><Link to="/docs/logistics/wms/logistics/inventory" className="bold-link">Inventario</Link></p>
-        <p>Questa procedura consente di registrare e gestire le giacenze fisiche degli articoli, facilitando e velocizzando il conteggio.</p>
-        <p><Link to="/docs/logistics/wms/logistics/confirm-picking" className="bold-link">Conferma picking</Link></p>
-        <p>Questo strumento permette di gestire efficacemente il trasferimento degli articoli spuntati tra diversi magazzini o ubicazioni, creando automaticamente i movimenti di magazzino necessari per lo spostamento.</p>
+        <p>Este procedimiento permite registrar y gestionar las existencias físicas de los artículos, facilitando y acelerando el conteo.</p>
+        <p><Link to="/docs/logistics/wms/logistics/confirm-picking" className="bold-link">Confirmación de picking (Conferma picking)</Link></p>
+        <p>Esta herramienta permite gestionar eficazmente la transferencia de artículos seleccionados entre diferentes almacenes o ubicaciones, creando automáticamente los movimientos de inventario necesarios para el desplazamiento.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/logistics/wms/wms-intro">UDC</Link>
-        <p><Link to="/docs/logistics/wms/udc/load-move-pallet" className="bold-link">Carico/Sposta UDC</Link></p>
-        <p>La funzione consente di caricare o spostare unità di carico tramite scansione del codice a barre, semplificando e velocizzando le operazioni logistiche.</p>
-        <p><Link to="/docs/logistics/wms/udc/load-move-udc-multiple" className="bold-link">Carico/Sposta UDC multiplo</Link></p>
-        <p>Permette di gestire simultaneamente più unità di carico, migliorando l'efficienza delle operazioni di magazzino in modo da caricare o spostare più UDC contemporaneamente.</p>
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-picking-list" className="bold-link">Liste di prelievo / Packing List</Link></p>
-        <p>Consente di creare un picking di unità di carico, facilitando la preparazione delle spedizioni direttamente collegate agli ordini cliente.</p>
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-transfer-list" className="bold-link">Liste trasferimento UDC</Link></p>
-        <p>Consente di gestire le movimentazioni delle unità di carico all'interno dei magazzini, facilitando l'organizzazione e la tracciabilità delle UDC durante i trasferimenti tra diverse ubicazioni.</p>
-        <p><Link to="/docs/logistics/wms/udc/confirm-packing-list" className="bold-link">Conferma prelievo UDC</Link></p>
-        <p>La funzione è utilizzata per confermare le liste di prelievo e creare i movimenti di magazzino di scarico.</p>
-        <p><Link to="/docs/logistics/wms/udc/confirm-transfer" className="bold-link">Conferma trasferimento UDC</Link></p>
-        <p>Questa procedura destinata a confermare le liste di trasferimento esistenti e a gestire i movimenti di magazzino correlati.</p>
-        <p><Link to="/docs/logistics/wms/udc/move-loading-unit-item" className="bold-link">Spostamento articoli tra due unità di carico</Link></p>
-        <p>Questa funzione permette di trasferire facilmente articoli da un'unità di carico di partenza a una di destinazione.</p>
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-adjustment" className="bold-link">Rettifica unità di carico</Link></p>
-        <p>Permette di apportare modifiche agli articoli contenuti in un'unità di carico, consentendo rettifiche positive e negative.</p> 
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-inventory" className="bold-link">Inventario unità di carico</Link></p>
-        <p>Questa procedura consente di effettuare un inventario accurato delle unità di carico presenti a magazzino.</p>      
+        <p><Link to="/docs/logistics/wms/udc/load-move-pallet" className="bold-link">Carga/Mover UDC (Carico/Sposta UDC)</Link></p>
+        <p>La función permite cargar o mover unidades de carga mediante la lectura del código de barras, simplificando y acelerando las operaciones logísticas.</p>
+        <p><Link to="/docs/logistics/wms/udc/load-move-udc-multiple" className="bold-link">Carga/Mover UDC múltiple (Carico/Sposta UDC multiplo)</Link></p>
+        <p>Permite gestionar simultáneamente varias unidades de carga, mejorando la eficiencia de las operaciones del almacén para cargar o mover múltiples UDC a la vez.</p>
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-picking-list" className="bold-link">Listas de picking / Lista de empaquetado (Liste di prelievo / Packing List)</Link></p>
+        <p>Permite crear un picking de unidades de carga, facilitando la preparación de los envíos directamente relacionados con los pedidos de los clientes.</p>
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-transfer-list" className="bold-link">Listas de transferencia UDC (Liste trasferimento UDC)</Link></p>
+        <p>Permite gestionar los movimientos de las unidades de carga dentro de los almacenes, facilitando la organización y trazabilidad de las UDC durante las transferencias entre diferentes ubicaciones.</p>
+        <p><Link to="/docs/logistics/wms/udc/confirm-packing-list" className="bold-link">Confirmación de lista de picking UDC (Conferma prelievo UDC)</Link></p>
+        <p>La función se utiliza para confirmar las listas de picking y crear los movimientos de inventario de descarga.</p>
+        <p><Link to="/docs/logistics/wms/udc/confirm-transfer" className="bold-link">Confirmación de transferencia UDC (Conferma trasferimento UDC)</Link></p>
+        <p>Este procedimiento está destinado a confirmar las listas de transferencia existentes y gestionar los movimientos de inventario relacionados.</p>
+        <p><Link to="/docs/logistics/wms/udc/move-loading-unit-item" className="bold-link">Movimiento de artículos entre dos unidades de carga (Spostamento articoli tra due unità di carico)</Link></p>
+        <p>Esta función permite transferir fácilmente artículos de una unidad de carga de origen a una de destino.</p>
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-adjustment" className="bold-link">Ajuste de unidad de carga (Rettifica unità di carico)</Link></p>
+        <p>Permite realizar modificaciones a los artículos contenidos en una unidad de carga, permitiendo ajustes positivos y negativos.</p> 
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-inventory" className="bold-link">Inventario unidad de carga (Inventario unità di carico)</Link></p>
+        <p>Este procedimiento permite realizar un inventario preciso de las unidades de carga presentes en el almacén.</p>      
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/wms/wms-intro">Vendite</Link>
-        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Gestione spunta</Link></p>
-        <p>La gestione spunta del WMS di Fluentis permette agli operatori di confermare le righe del picking e di raggruppare gli articoli in unità di carico, ottimizzando così le operazioni di movimentazione in magazzino. Grazie a questa funzionalità, è possibile creare e gestire efficacemente le UDC durante il prelievo, garantendo un controllo accurato e una maggiore efficienza operativa.</p>
+###     <Link to="/docs/logistics/wms/wms-intro">Ventas (Vendite)</Link>
+        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Gestión de confirmación (Gestione spunta)</Link></p>
+        <p>La gestión de confirmación del WMS de Fluentis permite a los operadores confirmar las líneas del picking y agrupar los artículos en unidades de carga, optimizando así las operaciones de movimiento en el inventario. Gracias a esta funcionalidad, es posible crear y gestionar eficazmente las UDC durante el picking, garantizando un control preciso y una mayor eficiencia operativa.</p>
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Para comenzar a utilizar (Per iniziare ad utilizzare)  
 
-la **Gestione UDC**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)
-- definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
-- definire i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)                      
-- creare un dipendente nella tabella [Dipendenti](/docs/project-management/registers/employee/new-employee/)
-- [configurare](https://docs.fluentis.com/FluentisErp/docs/logistics/wms/configuration) l'app **Fluentis WMS**
-- definire i [*Parametri Carico/Scarico per utente*](/docs/configurations/parameters/general-parameters/deliverynotes-grouping)        
-- definire i [*Barcode Tokenizer*](/docs/configurations/tables/general-settings/barcode-tokenizer)  
-
-
+la **gestione udc**:  
+- crear artículos en la [*anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)  
+- definir correctamente las [*causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) a utilizar  
+- definir los [*Parámetros iniciales de inventario (Parametri iniziali di magazzino)*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)  
+- crear un empleado en la tabla [Empleados (Dipendenti)](/docs/project-management/registers/employee/new-employee/)  
+- [configurar](https://docs.fluentis.com/FluentisErp/docs/logistics/wms/configuration) la aplicación **Fluentis WMS**  
+- definir los [*Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)*](/docs/configurations/parameters/general-parameters/deliverynotes-grouping)  
+- definir los [*Barcode Tokenizer*](/docs/configurations/tables/general-settings/barcode-tokenizer)

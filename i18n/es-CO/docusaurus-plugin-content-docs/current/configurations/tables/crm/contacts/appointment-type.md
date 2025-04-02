@@ -1,7 +1,7 @@
 ---
-title: Tipo Appuntamento
+title: tipo appuntamento
 sidebar_position: 7
 ---
 
-E' una tabella descrittiva per catalogare i **Tipi Appuntamento**, che è possibile utilizzare in fase di inserimento di un appuntamento nel *Calendario* di Fluentis. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/etichetta.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del settore, e da una griglia in cui appunto verranno elencati tutti i tipi appuntamento inseriti.
+Es una tabla descriptiva para catalogar los **Tipos de Cita (Tipi Appuntamento)**, que se pueden utilizar al momento de ingresar una cita en el *calendario* de Fluentis. Es común para todas las empresas presentes en la base de datos y está constituida por una simple tabla de código/etiqueta.  
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción del sector, y por una cuadrícula donde se enumerarán todos los tipos de cita ingresados.

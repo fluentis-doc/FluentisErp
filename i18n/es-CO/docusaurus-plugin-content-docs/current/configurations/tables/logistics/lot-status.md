@@ -1,28 +1,28 @@
 ---
-title: Stato lotto
+title: stato lotto
 sidebar_position: 22
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stato lotto**.
+La tabla se encuentra en la ruta **Tablas > Logística > stato lotto (Tabelle > Logistica > Stato lotto)**.
 
-In questa tabella è possibile codificare lo *Stato dei lotti* per definirne la validità.
+En esta tabla es posible codificar el *Estado de los lotes* para definir su validez.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Stato lotto**
+**Búsqueda de stato lotto (Ricerca Stato lotto)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtros y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Stato lotto**
+**Ingreso de stato lotto (Inserimento Stato lotto)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-Un lotto è caratterizzato da uno stato che ne va a definire la validità. Per alcuni tipi di materiali in particolare, come i prodotti alimentari e farmaceutici, lo stato è obbligatorio (per es. nell'ambito farmaceutico un lotto che necessita di analisi prima di poter essere utilizzato avrà come stato iniziale *In quarantena* fino al completamento delle analisi).
+Un lote se caracteriza por un estado que define su validez. Para ciertos tipos de materiales en particular, como los productos alimenticios y farmacéuticos, el estado es obligatorio (por ejemplo, en el ámbito farmacéutico, un lote que necesita análisis antes de poder ser utilizado tendrá como estado inicial *En cuarentena (In quarantena)* hasta la finalización de los análisis).
 
-#### Campi specifici 
+#### Campos específicos (Campi specifici)
 
-> **Disp. prel. auto**: se attivo, questo lotto non verrà considerato dalla disponibilità;     
-> **Non disponibile per MRP**: se attivo, questo lotto verrà considerato dall'mrp solo se nei *Parametri MRP* dell'articolo è stato flaggato anche il flag *Considera lotti in stato non disponibile*. Se uno dei due flag *Non disp. per MRP* e *Considera lotti in stato non disponibile* non è attivo allora non verrà considerato nemmeno dall'MRP.
+> **Disp. prel. auto (Disp. prel. auto)**: si está activo, este lote no será considerado en la disponibilidad;     
+> **No disponible para MRP (Non disponibile per MRP)**: si está activo, este lote será considerado por el MRP solo si en los *parametri mrp* del artículo también se ha marcado el indicador *considera lotti in stato non disponibile*. Si alguno de los dos indicadores *No disp. para MRP (Non disp. per MRP)* y *considera lotti in stato non disponibile* no está activo, entonces no será considerado tampoco por el MRP.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

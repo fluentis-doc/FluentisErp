@@ -1,11 +1,10 @@
 ---
-title: Opportunità contatto
+title: opportunità contatto
 sidebar_position: 17
 ---
 
-Questa è una delle tab dei **Contatti CRM**.
+Esta es una de las pestañas de **contatti crm**.  
 
-In questa tab viene visualizzata la lista delle opportunità inserite per il contatto.
-Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle opportunità presenti.
-Facendo doppio click sulla riga dell'opportunità questa verrà aperta in visualizzazione/modifica.
-
+En esta pestaña se muestra la lista de oportunidades ingresadas para el contacto.  
+En la parte superior de la pestaña se encuentran los campos de filtro que permiten realizar una búsqueda más precisa de las oportunidades presentes.  
+Haciendo doble clic en la línea de la oportunidad, esta se abrirá en vista/modificación.

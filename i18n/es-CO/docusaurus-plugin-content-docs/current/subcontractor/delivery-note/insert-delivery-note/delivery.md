@@ -1,56 +1,54 @@
 ---
-title: Consegna
+title: consegna
 sidebar_position: 4
 ---
 
-In questo tab vengono inseriti i materiali che devono essere consegnati al terzista. Essi possono essere inseriti automaticamente tramite la procedura di *Evasione da Ordine* oppure manualmente dall'utente.
+En esta pestaña se ingresan los materiales que deben ser entregados al proveedor externo. Estos pueden ser ingresados automáticamente a través del procedimiento de *Cumplimiento de Pedido (Evasione da Ordine)* o manualmente por el usuario.
 
+*Botones específicos*:
+> **inserisci materiale**: invoca el procedimiento para ingresar un nuevo material en la cuadrícula de artículos de la pestaña 'consegnas'.  
+> **cancella materiale**: invoca el procedimiento para eliminar un material de la cuadrícula de artículos de la pestaña 'consegnas'.  
 
-*Pulsanti specifici*:
-> **Inserisci materiale**: richiama la procedura per inserire un nuovo materiale nella griglia degli articoli del tab 'Consegne'.  
-> **Cancella materiale**: richiama la procedura per cancellare un materiale dalla griglia degli articoli del tab 'Consegne'. 
+*Campos específicos*:
 
-*Campi specifici*:
+**Pedido C/L número y año (Ordine C/L numero e anno)**: se muestran el número y el año del pedido de trabajo por cuenta ajena del cual se ha extraído la línea de artículo. Si la línea ha sido ingresada manualmente, esta columna estará vacía;  
 
-**Ordine C/L numero e anno**: vengono visualizzati il numero e l'anno dell'ordine di conto lavoro da cui la riga articolo è stata prelevata. Se la riga è stata inserita manualmente questa colonna risulta vuota;
+**data prevista consegna**: representa la fecha prevista de entrega del material, tomada de la pestaña *Materiales a entregar* del pedido de trabajo por cuenta ajena del cual se generó la línea de artículo del DDT;  
 
-**Data prevista consegna**: rappresenta la data di prevista consegna del materiale, ripresa dal tab *Materiali da consegnare* dell'ordine di conto lavoro da cui è stata generata la riga articolo del DDT;
+**previsto rientro**: representa la fecha de regreso previsto del producto terminado que debe ser fabricado por el proveedor utilizando el material en entrega, tomado de la pestaña *articoli da produrre* del pedido de trabajo por cuenta ajena del cual se generó la línea de artículo del DDT;  
 
-**Previsto rientro**: rappresenta la data di previsto rientro del prodotto finito che dovrà essere realizzato dal terzista utilizzando il materiale in consegna, ripresa dal tab *Articoli da Produrre* dell'ordine di conto lavoro da cui è stata generata la riga articolo del DDT;
+**n. riga**: representa un simple número progresivo de la línea del documento, editable por el usuario;  
 
-**N. riga**: rappresenta un semplice numero progressivo della riga del documento, editabile dall'utente;
+**um**: representa la unidad de medida de gestión del artículo en entrega;  
 
-**UM**: rappresenta l'unità di misura gestionale dell'articolo in consegna;
+**fase/sottofase**: se muestran el código de fase y el código de subfase de la fase de producción del pedido de producción al que el artículo está eventualmente vinculado; esto ocurre si el pedido de trabajo por cuenta ajena del cual se ha creado esta línea de DDT fue generado a partir de una fase externa de un pedido de producción;  
 
-**Fase/Sottofase**: vengono visualizzati il codice di fase e il codice di sottofase della fase di produzione dell'ordine di produzione a cui l'articolo è eventualmente legato; questo avviene se l'ordine di conto lavoro da cui è stata creata questa riga di DDT è stato generato da una fase esterna di un ordine di produzione;
+**quantità**: representa la cantidad que se ha decidido entregar al proveedor externo, editable por el usuario;  
 
-**Quantità**: rappresenta la quantità che si è deciso di consegnare al terzista, editabile dall'utente;
+**magazzino**: representa el código del almacén desde el cual se retira la mercancía a entregar al proveedor externo. El código del almacén se propone igual al que se estableció en la línea de la pestaña 'Materiales a entregar' del pedido de trabajo por cuenta ajena del cual se generó la línea DDT, pero es editable por el usuario. Si está activo el indicador, presente en los Parámetros de Trabajo por Cuenta Ajena, llamado 'Considerar almacenes según el tipo de DDT de entrega', el almacén propuesto será el que se establezca en la tabla de 'Tipos de Remito de Venta', en la columna correspondiente 'Almacén';  
 
-**Magazzino**: rappresenta il codice del magazzino da cui viene prelevata la merce da consegnare al terzista. Il codice del magazzino viene proposto uguale a quello impostato nella riga del tab 'Materiali da consegnare' dell'ordine di conto lavoro da cui è stata generata la riga DDT, ma è editabile da parte dell'utente. Se invece è attivo il flag, presente nei Parametri di Conto Lavoro, chiamato 'Considera magazzini in base al tipo DDT di consegna', il magazzino proposto sarà quello impostato nella tabella dei 'Tipi Bolla di Vendita', nell'apposita colonna 'Magazzino';
+**causale**: representa el código de la causa del almacén que se utilizará para realizar la extracción del almacén desde el cual es necesario hacer salir la mercancía a entregar al proveedor externo. El código de la causa del almacén se propone igual al que se estableció en la línea de la pestaña 'Materiales a entregar' del pedido de trabajo por cuenta ajena del cual se generó la línea DDT, pero es editable por el usuario. Si está activo el indicador, presente en los Parámetros de Trabajo por Cuenta Ajena, llamado 'Considerar almacenes según el tipo de DDT de entrega', la causa propuesta será la que se establezca en la tabla de 'Tipos de Remito de Venta', en la columna correspondiente 'Causale';  
 
-**Causale**: rappresenta il codice della causale di magazzino che verrà utilizzata per effettuare il prelievo dal magazzino da cui è necessario far uscire la merce da consegnare al terzista. Il codice della causale di magazzino viene proposto uguale a quello impostato nella riga del tab 'Materiali da consegnare' dell'ordine di conto lavoro da cui è stata generata la riga DDT, ma è editabile da parte dell'utente. Se invece è attivo il flag, presente nei Parametri di Conto Lavoro, chiamato 'Considera magazzini in base al tipo DDT di consegna', la causale proposta sarà quello impostata nella tabella dei 'Tipi Bolla di Vendita', nell'apposita colonna 'Causale';
+**prezzo**: representa el precio unitario del artículo. Es una columna editable por el usuario y no obligatoria. Se utiliza generalmente cuando el DDT de entrega debe pasar por una aduana;  
 
-**Prezzo**: rappresenta il prezzo unitario dell'articolo. Si tratta di una colonna editabile dall'utente e non obbligatoria. Si usa solitamente quando la DDT di consegna deve passare da una dogana;
+**iva**: representa el código IVA, o puede verse automáticamente propuesto por el procedimiento que lo toma del registro del proveedor externo o del registro del artículo presente en la línea, según los casos. La caja combinada se extrae de la tabla 'Tipo de IVA' que se encuentra en 'Configuraciones Generales';  
 
-**IVA**: rappresenta il codice IVA, oppure vederlo automaticamente proposto dalla procedura che lo preleva dall'anagrafica del terzista o dall'anagrafica dell'articolo presente nella riga, a seconda dei casi. La combo box attinge dalla tabella 'Aliquote IVA' che si trova nelle 'Impostazioni Generali';
+**tipo fatturato acquisti**: representa el código del Tipo de Facturación, o puede verse automáticamente propuesto por el procedimiento que lo toma del registro del artículo presente en la línea. La caja combinada se extrae de la tabla 'Tipo de Facturación de Compras' que se encuentra en 'Tablas del Área de Compras';     
 
-**Tipo fatturato acquisti**: rappresenta il codice del Tipo Fatturato, oppure vederlo automaticamente proposto dalla procedura che lo preleva dall'anagrafica dell'articolo presente nella riga. La combo box attinge dalla tabella 'Tipo Fatturato Acquisti' che si trova nelle 'Tabelle Area Acquisti';     
+**pesi**: se presentan el Peso neto y el Peso bruto totales de las líneas de artículo. Se reportan los pesos del registro del artículo multiplicados por la cantidad de la línea.
 
-**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
+### Descarga de lotes (Scarico lotti)
 
-### Scarico lotti
+En esta pestaña se da la posibilidad de establecer, para la línea seleccionada en la cuadrícula, los lotes a descargar del almacén con la cantidad de artículo extraída para el envío al proveedor externo, en caso de que se trate de varios lotes diferentes extraídos con la misma línea de DDT.
 
-In questo tab viene data la possibilità di impostare, per la riga selezionata nella griglia, i lotti da scaricare dal magazzino con la quantità di articolo prelevata per l'invio al terzista, nel caso che si tratti di più lotti diversi prelevati con la stessa riga di DDT.
+La cuadrícula de lotes permite al usuario extraer el lote a partir del 'Help Lotes' correspondiente, que filtra entre los lotes disponibles del artículo seleccionado en la cuadrícula superior. La información que se reporta en la cuadrícula de lotes incluye tipo de código de lote, código de lote, lote del proveedor, tipo de lote, fecha de inicio y fecha de caducidad, cantidad del lote, ubicación, datos del proveedor del lote (cuenta, subcuenta y razón social). Obviamente, la suma de las cantidades de los varios lotes deberá corresponder exactamente a la cantidad entregada de la línea de artículo.
 
-La griglia dei lotti consente all'utente di prelevare il lotto attingendo dall'apposito 'Help Lotti', che filtra tra i lotti disponibili dell'articolo selezionato nella griglia superiore. Le informazioni che vengono riportate nella griglia lotti sono tipo codice lotto, codice lotto, lotto fornitore, tipo lotto, data inizio e data scadenza, quantità del lotto, ubicazione, dati del fornitore del lotto (conto, sottoconto e ragione sociale). Ovviamente la somma delle quantità dei vari lotti dovrà corrispondere esattamente alla quantità consegnata della riga articolo.
+### Datos de material (Dati materiale)
 
-### Dati materiale
+En esta pestaña se visualizan las siguientes informaciones relacionadas con la línea seleccionada en la cuadrícula:
 
-In questo tab vengono visualizzate le seguenti informazioni relative alla riga selezionata nella griglia:
+**Clase, código, descripción y variante del artículo, cantidad a entregar, unidad de medida, Almacén, Causale, Pedido C/L**: se trata de una serie de informaciones simplemente trasladadas desde la línea de DDT seleccionada;  
 
-**Classe, codice, descrizione e variante dell'articolo, quantità da consegnare, unità di misura, Magazzino, Causale, Ordine C/L**: si tratta di una serie di informazioni semplicemente riportate dalla riga di DDT selezionata;
+**progetto**: representa la orden de venta vinculada a la línea del DDT. Por lo general, se invoca la orden de venta ingresada en la línea del pedido de trabajo por cuenta ajena del cual se generó la línea de DDT;  
 
-**Progetto**: rappresenta la commessa di vendita legata alla riga del DDT. Di solito viene richiamata la commessa di vendita inserita nella riga dell'ordine di conto lavoro da cui è stata generata la riga di DDT;
-
-**Note**: in questo campo l'utente può inserire una nota relativa alla riga selezionata.
-
+**note**: en este campo el usuario puede ingresar una nota relativa a la línea seleccionada.

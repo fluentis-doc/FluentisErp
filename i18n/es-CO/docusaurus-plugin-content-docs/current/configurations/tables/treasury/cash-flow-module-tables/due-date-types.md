@@ -1,14 +1,14 @@
 ---
-title: Tipi scadenza
+title: tipi scadenza
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de querer configurarlo manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-In questa tabella si definiscono le tipologie di scadenze extacontabili che saranno gestite manualmente all'interno del cash flow. Ad ogni tipologia può essere associato un sottoconto bancario di canalizzazione del flusso.
+En esta tabla se definen los tipos de vencimientos extracontables que serán gestionados manualmente dentro del flujo de efectivo. A cada tipo se le puede asociar una subcuenta bancaria para la canalización del flujo.
 
-Le tipologie qui codificate rappresentano, più che altro, un raggruppamento o un'etichetta per l'inserimento effettivo del dettaglio che viene fatto attraverso la form [**Scadenze Extracontabili**](/docs/treasury/cash-flow/off-balance-due-dates).
+Los tipos aquí codificados representan, más que nada, un agrupamiento o una etiqueta para la inserción efectiva del detalle que se realiza a través del formulario [**scadenze extracontabili**](/docs/treasury/cash-flow/off-balance-due-dates).

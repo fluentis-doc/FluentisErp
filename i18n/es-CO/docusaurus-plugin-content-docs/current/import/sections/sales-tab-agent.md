@@ -1,5 +1,5 @@
-- **Agente**: l'agente collegato con la relativa provvigione per l'articolo selezionato; il dato corrisponde a quello presente in *Testata > tab Agenti*. La percentuale può essere cambiata.
+- **agente**: el agente conectado con la correspondiente comisión para el artículo seleccionado; el dato corresponde al presente en *Encabezado (Testata) > pestaña Agentes (tab Agenti)*. El porcentaje puede ser cambiado.
 
-*Pulsante specifico*
+*Botón específico (Pulsante specifico)*
 
-> **Cancella agenti**: permette di cancellare l' agente associato ad un articolo.
+> **cancella agenti**: permite eliminar el agente asociado a un artículo.

@@ -1,38 +1,38 @@
 ---
-title: Inventario unità di carico
+title: Inventario unidad de carga (Inventario unità di carico)
 sidebar_position: 9
 ---
 
-:::important A cosa serve
-La funzione Inventario Unità di Carico del WMS di Fluentis consente di effettuare un inventario accurato delle unità di carico presenti a magazzino.        
-Gli operatori possono leggere l'ubicazione per visualizzare le UDC contenute e procedere con la registrazione delle quantità, generando automaticamente movimenti di rettifica per allineare le giacenze logiche con quelle fisiche.
+:::important ¿Para qué sirve? (A cosa serve)  
+La función de Inventario de Unidad de Carga del WMS de Fluentis permite realizar un inventario preciso de las unidades de carga presentes en el almacén.  
+Los operadores pueden leer la ubicación para visualizar las UDC contenidas y proceder a registrar las cantidades, generando automáticamente movimientos de ajuste para alinear los saldos lógicos con los físicos.
 :::  
 
-Questa procedura è utilizzata per eseguire un inventario delle UDC presenti a magazzino.
+Este procedimiento se utiliza para llevar a cabo un inventario de las UDC presentes en el almacén.
 
-Alla lettura dell'ubicazione vengono visualizzate nella griglia sottostante tutte le unità di carico contenute al suo interno, con l'indicazione dei seguenti campi: 
+Al leer la ubicación, se muestran en la cuadrícula inferior todas las unidades de carga contenidas en su interior, con la indicación de los siguientes campos: 
 
-> **Unità di carico**: indica il numero dell'unità di carico contenuta nell'ubicazione;        
-> **Tipo**: indica il tipo dell'unità di carico contenuta nell'ubicazione;     
-> **Data inventario**: indica l'ultima data in cui è stata inventariata l'unità di carico contenuta nell'ubicazione.  
+> **unità di carico**: indica el número de la unidad de carga contenida en la ubicación;        
+> **tipo**: indica el tipo de la unidad de carga contenida en la ubicación;     
+> **data inventario**: indica la última fecha en que se inventarió la unidad de carga contenida en la ubicación.  
 
-Lo step successivo è quello di leggere l'unità di carico da inventariare; se questa è presente tra quelle contenute nell'ubicazione selezionata viene aggiornata la **Data inventario** con la data odierna. Nel caso in cui, invece, l'unità di carico letta non sia presente nell'ubicazione viene mostrato un messaggio di avviso all'utente.      
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
+El siguiente paso es leer la unidad de carga a inventariar; si esta está presente entre las que se encuentran en la ubicación seleccionada, se actualizará la **data inventario** con la fecha actual. En caso de que, por el contrario, la unidad de carga leída no esté presente en la ubicación, se mostrará un mensaje de aviso al usuario.      
+El botón **pulisci tutto** permite vaciar el formulario de todos los datos ingresados.     
 
-Una volta ultimate le letture dell'unità di carico, con la pressione del pulsante **Conferma**, solo nel caso in cui siano presenti delle unità di carico non inventariate, la procedura creerà dei movimenti di scarico di quelle unità di carico dall'ubicazione selezionata e di carico delle stesse nell'ubicazione di default indicata nella causale presente nei 
-[Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+Una vez finalizadas las lecturas de la unidad de carga, al presionar el botón **conferma**, solo en caso de que haya unidades de carga no inventariadas, el procedimiento creará movimientos de descarga de esas unidades de carga de la ubicación seleccionada y de carga de las mismas en la ubicación predeterminada indicada en la causa presente en los 
+[Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que deben ingresarse en la tabla [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Área | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadingUnitInventory |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadingUnitInventory |
 
-I parametri sono inseriti due volte poiché la form utilizza una causale di scarico dell'unità di carico dall'ubicazione di partenza e una di carico dell'unità di carico nell'ubicazione di destinazione.
+Los parámetros están ingresados dos veces ya que el formulario utiliza una causa de descarga de la unidad de carga desde la ubicación de partida y una de carga de la unidad de carga en la ubicación de destino.
 
-:::note ATTENZIONE
-La causale di carico associata deve avere indicata un'ubicazione di default all'interno della tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).
+:::note ATENCIÓN (ATTENZIONE)  
+La causa de carga asociada debe tener indicada una ubicación predeterminada dentro de la tabla de [Causas de almacén (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates/).  
 :::
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode**, consulte la página relacionada con el [Tokenizador de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

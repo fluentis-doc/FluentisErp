@@ -1,27 +1,26 @@
 ---
-title: Importazione Cespiti
+title: importazione cespiti
 sidebar_position: 2
 ---
 
+El archivo de Excel (plantilla) para la importación de activos en el módulo de Administración permite poblar las fichas de activos en base a las categorías de activos que deben estar ya presentes en la base de datos.
 
-Il foglio excel (template) per l'importazione dei cespiti nel modulo Amministrazione permette di popolare le schede cespite sulla base delle categorie cespiti che devono essere già presenti nel db.
+**Código de Categoría (Codice Categoria):** debe estar ya presente en la base de datos y se usará en la ficha de activo importada.
 
-**Codice Categoria:** deve essere già presente nel db e sarà usato nella scheda cespite importata
+**Precódigo (Precodice):** opcional, debe gestionarse solo si está activa la gestión del precódigo, indicando el precódigo que se utilizará en la numeración.
 
-**Precodice:** facoltativo, da gestire solo se attiva la gestione del precodice indicando il precodice da utilizzare nella numerazione
+**Número de Activo (Numero cespite):** utilizar un número libre.
 
-**Numero cespite:** utilizzare un numero libero
+**Centro de Costo (Centro di costo):** opcional, sirve para asignar un centro de costo en la ficha de activo para la posterior contabilización en la fase de amortización.
 
-**Centro di costo:** facoltativo, serve per assegnare un centro di costo nella scheda cespite per la successiva movimentazione in fase di ammortamento
+**Fecha de Compra (Data Acquisto):** Obligatorio, es la fecha de carga del costo histórico.
 
-**Data Acquisto:** Obbligatorio, è la data di carico del costo storico
+**Número de Documento / Fecha de Factura de Compra (Numero Documento / Data Fatt Acquisto):** opcionales, útiles para indicar la referencia a la factura de compra.
 
-**Numero Documento / Data Fatt Acquisto:** facoltativi, utili per indicare il riferimento alla fattura d'acquisto
+**Proveedor de Compra (Fornitore Acquisto):** Opcional, sirve para poblar el campo del proveedor del bien en la ficha de activo, completar con el apodo del registro del proveedor.
 
-**Fornitore  Acquisto:** Facoltativo, serve per popolare il campo del fornitore del bene nella scheda cespite, compilare con il nomignolo dell'anagrafica fornitore
+**Total Valor Patrimonial (Tot Valore Patrimoniale):** es el costo histórico del activo cargado con la fecha de la columna Fecha de Compra.
 
-**Tot Valore Patrimoniale:** è il costo storico del cespite caricato con la data della colonna Data Acquisto
+**Total Fondo de Amortización (Tot Fondo Ammortamento):** es el total del fondo de amortización acumulado al momento de la carga / importación de la ficha de activo. Atención, este valor se cargará como se prevé para la carga de un activo anterior (completando al menos una línea de amortización) y, por lo tanto, se utiliza el dato presente en la siguiente columna **anno**.
 
-**Tot Fondo Ammortamento:** è il totale fondo ammortamento accumulato al momento del caricamento / importazione della scheda cespite. Attenzione, questo valore sarà caricato come previsto per il carico di un cespite pregresso (compilando almeno una riga di ammortamento) e pertanto viene utilizzato il dato presente nella successiva colonna **Anno**.
-
-**Perc. Ammortamento da Utilizzare:** Facoltativo, serve nel caso si desideri caricare nella scheda cespite una percentuale di ammortamento particolare per il cespite in questione, se non valorizzato non sarà scritto nulla nel campo corrispondente e i successivi ammortamenti saranno eseguiti secondo la percentuale della categoria di appartenenza.
+**Porcentaje de Amortización a Utilizar (Perc. Ammortamento da Utilizzare):** Opcional, sirve en caso de que se desee cargar en la ficha de activo un porcentaje de amortización particular para el activo en cuestión; si no se valora, no se escribirá nada en el campo correspondiente y las amortizaciones posteriores se realizarán según el porcentaje de la categoría de pertenencia.

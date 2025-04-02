@@ -1,15 +1,14 @@
 ---
-title: Cespiti per il controlling
+title: Activos para el control (Cespiti per il controlling)
 sidebar_position: 2.6
---- 
+---
 
-Sesto step sono i cespiti ovvero le quote di ammortamento che rappresentano una componente importante nella strutturazione dei nostri costi.
+El sexto paso son los activos, es decir, las cuotas de amortización que representan un componente importante en la estructuración de nuestros costos.
 
-Dal punto di vista del Controllo di gestione è importante poter calcolare queste quote di ammortamento in un’ottica *tecnica*, svincolandoci da quelle che sono le logiche fiscali e civilistiche che sono alterate rispetto alle necessità del controllo. Dobbiamo avere la possibilità eventualmente di sostituire il costo storico di acquisto con un costo di sostituzione quindi un costo più aggiornato e avere la possibilità di stabilire la durata tecnica indipendentemente dalle tabelle ministeriali, così come di applicare un ammortamento senza verifica del residuo per considerare il costo del macchinario anche quando questo contabilmente è completamente ammortizzato.
-Tramite la durata tecnica vado ad individuare le quote di ammortamento calcolate in funzione dei giorni solari dell’anno e non legate alle logiche fiscali di prodotto che per il primo anno sono del 50%, può essere ammortizzato indipendentemente dalla data di entrata in funzione. Ad esempio, se io acquisto un cespite il primo di gennaio o il 31 dicembre fiscalmente non cambia nulla poiché ho sempre il 50% di quota ammortizzabile. Gestionalmente questo non va bene poiché se lo acquisto il primo di gennaio avrò 365 giorni di ammortamento da considerare, se lo acquisto il 31/12 ne avrò solo uno.
-E' quindi importante valutare con attenzione la situazione dei cespiti (ad es. per un'azienda con un parco macchine antiquato da rinnovare probabilmente è da considerare l'applicazione di un ammortamento 'senza residuo', per non sovrastimare la marginalità di prodotto/progetto che si ottiene)
-
+Desde el punto de vista del control de gestión, es importante poder calcular estas cuotas de amortización desde una perspectiva *técnica*, desvinculándonos de las lógicas fiscales y contables que están distorsionadas respecto a las necesidades del control. Debemos tener la posibilidad de reemplazar el costo histórico de adquisición por un costo de sustitución, es decir, un costo más actualizado, y tener la posibilidad de establecer la duración técnica independientemente de las tablas ministeriales, así como aplicar un amortización sin verificación del residual para considerar el costo de la maquinaria incluso cuando esta contablemente está completamente amortizada.  
+A través de la duración técnica, identifico las cuotas de amortización calculadas en función de los días solares del año y no ligadas a las lógicas fiscales del producto, que para el primer año son del 50%, y puede ser amortizado independientemente de la fecha de inicio de operación. Por ejemplo, si compro un activo el primero de enero o el 31 de diciembre, fiscalmente no cambia nada ya que siempre tengo el 50% de cuota amortizable. Desde el punto de vista de la gestión, esto no es correcto ya que si lo compro el primero de enero tendré 365 días de amortización a considerar, mientras que si lo compro el 31/12 solo tendré uno.  
+Es, por lo tanto, importante evaluar con detenimiento la situación de los activos (por ejemplo, para una empresa con un parque de máquinas anticuado que necesita ser renovado, probablemente se deba considerar la aplicación de un amortización 'sin residual', para no sobrestimar la rentabilidad del producto/proyecto que se obtiene).
 
 :::tip Nota
-L'elaborazione dei dati degli ammortamenti di periodo contabili e di quelli extracontabili di Contabilità gestionale possono essere eseguiti parallelamente, con l'accortezza di escludere nel piano dei conti l'uso del dato contabile nel controlling: uno avrà valenza per le Chiusure infrannuali e quindi per il bilancio riclassificato di contabilità, l'altro si andrà ad utilizzare extracontabilmente solo all'interno delle simulazioni del controlling.
+El procesamiento de los datos de las amortizaciones de períodos contables y de aquellas extracontables de contabilidad de gestión puede llevarse a cabo en paralelo, con el cuidado de excluir en el plan de cuentas el uso de datos contables en el control: uno tendrá validez para los cierres interanuales y, por lo tanto, para el balance reclasificado de contabilidad, el otro se utilizará extracontablemente solo dentro de las simulaciones del control.
 :::

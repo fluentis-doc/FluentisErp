@@ -1,35 +1,35 @@
 ---
-title: Ispettori
+title: ispettori
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Ispettori**.
+La tabla se encuentra en la ruta **Tablas > Calidad > General > ispettori (Qualità > Generale > Ispettori)**.
 
-In questa tabella è possibile codificare gli *Ispettori* che effettueranno valutazioni interne o a fornitori.   
-Un esempio di utilizzo lo troviamo nella gestione **Valutazioni iniziali e periodiche fornitori**.
+En esta tabla es posible codificar los *ispettori* que realizarán evaluaciones internas o a proveedores.  
+Un ejemplo de uso lo encontramos en la gestión **Evaluaciones iniciales y periódicas de proveedores (Valutazioni iniziali e periodiche fornitori)**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Ispettori**
+**Búsqueda de ispettori (Ricerca Ispettori)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Ispettori**
+**Inserción de ispettori (Inserimento Ispettori)**
 
-Per poter inserire nuovi *Ispettori* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *ispettori* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*: 
 
-> **Ispettore - Codice**: è il codice dell'*Ispettore*.   
-> **Ispettore - Descrizione**: è la descrizione dell'*Ispettore*.   
-> **Ispettore interno - Codice**: è il codice del dipendente ispettore*.   
-> **Ispettore interno - Cognome**: è il cognome del dipendente ispettore*.   
-> **Ispettore interno - Nome**: è il nome del dipendente ispettore*.   
-> **Ispettore esterno - Descrizione**: è la ragione sociale del fornitore ispettore*.   
-> **Attivo**: indica se l'ispettore è ancora in carica.   
-> **Inizio validità**: è la data dalla quale l'ispettore entra in carica.   
-> **Fine validità**: è la data dalla quale l'ispettore cessa di essere in carica.   
-> **Note**: annotazioni libere.
+> **Inspector - Código (Ispettore - Codice)**: es el código del *ispettore*.  
+> **Inspector - Descripción (Ispettore - Descrizione)**: es la descripción del *ispettore*.  
+> **Inspector interno - Código (Ispettore interno - Codice)**: es el código del empleado inspector*.  
+> **Inspector interno - Apellido (Ispettore interno - Cognome)**: es el apellido del empleado inspector*.  
+> **Inspector interno - Nombre (Ispettore interno - Nome)**: es el nombre del empleado inspector*.  
+> **Inspector externo - Descripción (Ispettore esterno - Descrizione)**: es la razón social del proveedor inspector*.  
+> **attivo**: indica si el inspector aún está en funciones.  
+> **inizio validità**: es la fecha desde la cual el inspector asume funciones.  
+> **fine validità**: es la fecha desde la cual el inspector deja de estar en funciones.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

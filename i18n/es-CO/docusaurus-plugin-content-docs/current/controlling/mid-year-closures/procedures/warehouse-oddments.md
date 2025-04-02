@@ -1,15 +1,15 @@
 ---
-title: Contabilizzazione rimanenze
+title: contabilizzazione rimanenze
 sidebar_position: 2
 ---
 
-All'interno del modulo chiusure infrannuali, dopo aver creato una chiusura infrannuale è possibile valorizzare automaticamente le rimanenze iniziali/finali di magazzino.
+Dentro del módulo de cierres intermedios, después de haber creado un cierre intermedio, es posible valorar automáticamente las existencias iniciales/finales de inventario.
 
-Una volta aperta la maschera, andremo a gestire il range di date da utilizzare, il tipo di giacenza da considerare (*Positiva/Negativa*), il tipo di calcolo costo (*Costo medio, Costo ultimo, FIFO a Scatti Annuali, LIFO a Scatti Annuali, Area Gestionale, Da costo effettivo lotti*) e la causale contabile da utilizzare per le registrazioni da creare.
-La presenza o meno del flag Controlling andrà a gestire le operazioni in due modi differenti:
-- Se il flag *non è presente*, **FluentisERP** creerà le scritture delle rimanenze iniziali e quelle finali alle date di inizio e fine periodo della Chiusura infrannuale, e le inserirà in coda alle altre scritture di assestamento della chiusura stessa.
-- Se il flag *è presente*, **FluentisERP** creerà le registrazioni delle rimanenze iniziali e finali di ogni singolo mese all'interno del range di date di competenza della Chiusura infrannuale, e le inserirà come Scritture extracontabili dell'Area associata alla chiusura stessa (quindi non saranno scritture della chiusura, ma scritture valide solo per il Controlling)
+Una vez abierta la ventana, procederemos a gestionar el rango de fechas a utilizar, el tipo de saldo a considerar (*Positivo/Negativo*), el tipo de cálculo de costo (*Costo medio, Último costo, FIFO por tramos anuales, LIFO por tramos anuales, Área de gestión, Desde costo efectivo de lotes*) y la causa contable a utilizar para los registros a crear.  
+La presencia o ausencia del indicador de Control (Controlling) gestionará las operaciones de dos maneras diferentes:  
+- Si el indicador *no está presente*, **FluentisERP** creará los asientos de las existencias iniciales y finales en las fechas de inicio y fin del período del Cierre intermedio, e incluirá estos asientos al final de los otros asientos de ajuste del cierre mismo.  
+- Si el indicador *está presente*, **FluentisERP** creará los registros de las existencias iniciales y finales de cada mes dentro del rango de fechas de competencia del Cierre intermedio, e insertará estos registros como Asientos extracontables del área asociada al cierre (por lo tanto, no serán asientos del cierre, sino asientos válidos solo para el Control).
 
-:::tip Nota
-L'elaborazione effettua un test sulla presenza o meno di questo tipo di scritture e quindi, se le trova già presenti, chiede se le si vuole eliminare e ricreare o se le si vuole aggiungere (come nel caso in cui si dovessero selezionare solo alcuni magazzini e non tutti, attraverso la tendina disponibile). Nel caso in cui si volessero creare sia le registrazioni di Area per il controlling che quelle di Assestamento nella Chiusura, è sufficiente lanciare la procedura *prima* con il flag Controlling attivo e *poi* con il flag disattivato.
+:::tip Nota (Nota)
+El procesamiento realiza una prueba sobre la presencia o ausencia de este tipo de asientos y, si ya están presentes, pregunta si se desea eliminarlos y recrearlos, o si se desean agregar (como en el caso en que se seleccionen solo algunos almacenes y no todos, a través del menú desplegable disponible). Si se desea crear tanto los registros de Área para el control como los de Ajuste en el Cierre, es suficiente con ejecutar el procedimiento *primero* con el indicador de Control activo y *luego* con el indicador desactivado.
 :::

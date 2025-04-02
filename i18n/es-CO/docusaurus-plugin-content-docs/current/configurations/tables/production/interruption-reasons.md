@@ -1,38 +1,38 @@
 ---
-title: Causali di sospensione
+title: causali di sospensione
 sidebar_position: 5
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Causali di sospensione*.
+La tabla permite gestionar la codificación de las diferentes tipologías de *causali di sospensione*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Causali di sospensione**
+**Buscar causales de suspensión (Ricerca Causali di sospensione)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Causali di sospensione**
+**Inserción de causales de suspensión (Inserimento Causali di sospensione)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**.
 
-*Campi specifici*: 
+*Campos específicos:* 
 
-> **Codice**: indica il codice della casuale di sospensione;           
-> **Descrizione**: indica la descrizione della casuale di sospensione;   
-> **Revisione ordinaria**: attualmente non implementato;                    
-> **Revisione straordinaria**: attualmente non implementato;            
-> **Generazione ordine di revisione**: attualmente non implementato;          
-> **Utenti**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;          
-> **Assenza**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;              
-> **Cessione**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Predefinito**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Predefinito cessione**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Indiretto**: attualmente non implementato;     
-> **Macchina**: attualmente non implementato;     
-> **Tipo**: indica il tipo della causale di sospensione e può essere:
-> > **Produzione**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di perso dovuto a cause esterne all'azienda (ad esempio materiale inviato dal fornitore/cliente non conforme);      
-> > **Attrezzaggio**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di attrezzaggio;          
-> > **Perdita**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di perso dovuto a cause intere all'azienda;         
-> > **Manutenzione**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di manutenzione sull'impianto.
+> **codice**: indica el código de la causal de suspensión;  
+> **descrizione**: indica la descripción de la causal de suspensión;  
+> **Revisión ordinaria (Revisione ordinaria)**: actualmente no implementado;  
+> **Revisión extraordinaria (Revisione straordinaria)**: actualmente no implementado;  
+> **Generación de orden de revisión (Generazione ordine di revisione)**: actualmente no implementado;  
+> **utenti**: utilizado en el formulario de gestión de horas de personal presente en *Producción > Gestión horas Producción > Gestión horas personal*;  
+> **assenza**: utilizado en el formulario de gestión de horas de personal presente en *Producción > Gestión horas Producción > Gestión horas personal*;  
+> **cessione**: utilizado en el formulario de gestión de horas de personal presente en *Producción > Gestión horas Producción > Gestión horas personal*;  
+> **predefinito**: utilizado en el formulario de gestión de horas de personal presente en *Producción > Gestión horas Producción > Gestión horas personal*;  
+> **predefinito cessione**: utilizado en el formulario de gestión de horas de personal presente en *Producción > Gestión horas Producción > Gestión horas personal*;  
+> **indiretto**: actualmente no implementado;  
+> **macchina**: actualmente no implementado;  
+> **tipo**: indica el tipo de la causal de suspensión y puede ser:  
+> > **produzione**: indica que el tiempo que transcurre entre la *suspensión* y la posterior *reanudación* se considera como tiempo perdido debido a causas externas a la empresa (por ejemplo, material enviado por el proveedor/cliente no conforme);  
+> > **attrezzaggio**: indica que el tiempo que transcurre entre la *suspensión* y la posterior *reanudación* se considera como tiempo de ajuste;  
+> > **perdita**: indica que el tiempo que transcurre entre la *suspensión* y la posterior *reanudación* se considera como tiempo perdido debido a causas internas a la empresa;  
+> > **manutenzione**: indica que el tiempo que transcurre entre la *suspensión* y la posterior *reanudación* se considera como tiempo de mantenimiento de la planta.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para cualquier aspecto no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

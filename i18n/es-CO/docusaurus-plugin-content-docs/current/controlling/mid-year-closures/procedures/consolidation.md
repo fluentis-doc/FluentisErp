@@ -1,31 +1,31 @@
 ---
-title: Consolidamento
+title: consolidamento
 sidebar_position: 1
 ---
 
-La procedura consente innanzi tutto di legare le chiusure infrannuali delle varie società presenti nel database, al fine di creare un **bilancio consolidato di gruppo** da stampare o valorizzare in un riclassificato di bilancio, ma andrà anche a creare una registrazione di consolidamento nella quale **si andranno ad elidere i movimenti** economici **intercompany** e i crediti e debiti intercompany.
+El procedimiento permite, ante todo, vincular los cierres interanuales de las diversas empresas presentes en la base de datos, con el fin de crear un **balance consolidado de grupo (bilancio consolidato di gruppo)** que se puede imprimir o valorar en un balance reclasificado, pero también generará un registro de consolidación en el que **se eliminarán los movimientos** económicos **intercompany** y los créditos y deudas intercompañía.
 
-Nella testata della maschera è possibile filtrare il range di date delle chiusure da considerare ma anche impostare, opzionalmente, la società capogruppo d'interesse: in questo modo nella griglia della maschera saranno visualizzate le società che non hanno impostato una società capogruppo o quelle che fanno capo alla capogruppo selezionata; per ogni società, poi, sarà visualizzata l'ultima chiusura conti creata all'interno del range di filtro impostatato (E' possibile selezionare una chiusura infrannuale differente dall'ultima proposta). Il flag ‘Sel.' andrà a individuare su quali eseguire l'operazione di consolidamento, mentre nella colonna 'Cambio' è possibile impostare un cambio specifico da utilizzare per la conversione dei saldi provenienti da società con divisa differente da quelle della capogruppo.
+En la cabecera del formulario, es posible filtrar el rango de fechas de los cierres a considerar, pero también establecer, de manera opcional, la empresa matriz de interés: de este modo, en la cuadrícula del formulario se visualizarán las empresas que no han configurado una empresa matriz o aquellas que pertenecen a la matriz seleccionada; para cada empresa, además, se mostrará el último cierre de cuentas creado dentro del rango de filtro establecido (Es posible seleccionar un cierre interanual diferente al último propuesto). La marca ‘Sel.' servirá para identificar sobre cuáles ejecutar la operación de consolidación, mientras que en la columna 'Cambio' es posible establecer un tipo de cambio específico a utilizar para la conversión de los saldos provenientes de empresas con moneda diferente a la de la matriz.
 
-Al di sotto della griglia si andranno a inserire alcuni parametri da utilizzare: la descrizione da attribuire al consolidamento, una causale di registrazione, l'utente dell'operazione (proposto già come l'utente attivo) e infine un flag di conversione dei codici di sottoconto su quelli della società capogruppo.
+Debajo de la cuadrícula se deben insertar algunos parámetros a utilizar: la descripción a atribuir a la consolidación, un motivo de registro, el usuario de la operación (propuesto ya como el usuario activo) y, finalmente, un indicador de conversión de los códigos de subcuenta a los de la empresa matriz.
 
-All'interno della tabella società, riga per riga, è possibile associare un'anagrafica: da questa anagrafica si andranno a individuare i sottoconti clienti/fornitori del gruppo (ad es. nella società X si andrà a vedere se l'anagrafica legata alla società Y è codificata come cliente e/o fornitore). Dalle registrazioni intestate a questi sottoconti valorizzate nelle chiusure selezionate, si andranno a inserire con segno inverso i costi/ricavi nella nuova registrazione; per gli stessi sottoconti si andranno a verificare le partite aperte, al momento del consolidamento, e si andranno a stornare i saldi anche di questi.
+Dentro de la tabla de empresas, fila por fila, es posible asociar un registro: de este registro se identificarán las subcuentas de clientes/proveedores del grupo (por ejemplo, en la empresa X se verificará si el registro vinculado a la empresa Y está codificado como cliente y/o proveedor). De los registros a nombre de estas subcuentas que se valorizan en los cierres seleccionados, se ingresarán con signo inverso los costos/ingresos en el nuevo registro; para las mismas subcuentas se verificarán las partidas abiertas en el momento de la consolidación, y se anularán también los saldos de estas.
 
 :::tip Nota
-Nel piano dei conti delle società che hanno in tabella una società capogruppo, sono visibili i campi per assegnare i codici di conto/sottoconto della capogruppo.
+En el plan de cuentas de las empresas que tienen una empresa matriz en la tabla, son visibles los campos para asignar los códigos de cuenta/subcuenta de la matriz.
 :::
 
-## Procedura
+## Procedimiento
 
 :::important[]
-Procedura passo passo di attivazione ed esecuzione (supponiamo due aziende)
+Procedimiento paso a paso de activación y ejecución (supongamos dos empresas)
 
-- Nella tabella [**società**](/docs/configurations/tables/general-settings/company#dettaglio-anagrafica-societa) di ognuna delle aziende in questione compilare il campo ***Anagrafica associata*** per collegare un Contatto che contraddistingua l'azienda stessa nel consolidamento, ad esempio se l'azienda si chiama Alfa, nella sua tabella società colleghiamo un contatto (precedentemente creato) che si chiama ad es. "Alfa Spa". 
-- Nel piano conti di ognuna delle società sarà stato creato il sottoconto (attraverso la gestione **dati contabili** dell'anagrafica) di tipo cliente o fornitore dell'altra azienda del gruppo e saranno stati registrati degli scambi incrociati, ad esempio acquisto da parte dell'azienda 1 e vendita da parte dell'azienda 2 (ognuno dal suo punto di vista). 
-- Ognuna delle aziende lancia una chiusura conti infrannuale per il medesimo periodo 
-- Nella procedura *Consolidamento* selezionerò le due chiusure delle due società di cui generare le scritture di rettifica per consolidamento che vanno a neutralizzare costi e ricavi e crediti e debiti reciproci aggregando invece i movimenti verso l'esterno
+- En la tabla [**società**](/docs/configurations/tables/general-settings/company#dettaglio-anagrafica-societa) de cada una de las empresas en cuestión, completar el campo ***Registro asociado (Anagrafica associata)*** para vincular un Contacto que identifique la empresa misma en la consolidación, por ejemplo, si la empresa se llama Alfa, en su tabla de empresas vinculamos un contacto (previamente creado) que se llama, por ejemplo, "Alfa Spa".  
+- En el plan de cuentas de cada una de las empresas se habrá creado la subcuenta (a través de la gestión **dati contabili** del registro) de tipo cliente o proveedor de la otra empresa del grupo y se habrán registrado intercambios cruzados, por ejemplo, compra por parte de la empresa 1 y venta por parte de la empresa 2 (cada uno desde su perspectiva).  
+- Cada una de las empresas lanza un cierre de cuentas interanual para el mismo período.  
+- En el procedimiento *consolidamento* seleccionaré los dos cierres de las dos empresas para generar los asientos de ajuste para la consolidación que van a neutralizar costos e ingresos y créditos y deudas recíprocas, agregando en cambio los movimientos hacia el exterior.
 :::
 
-## Precedenti
+## Procedimientos anteriores (Precedenti)
 
-Dalla scheda precedenti è possibile procedere alla cancellazione delle procedure di consolidamento eseguite.
+Desde la pestaña de procedimientos anteriores es posible proceder a la cancelación de los procedimientos de consolidación ejecutados.

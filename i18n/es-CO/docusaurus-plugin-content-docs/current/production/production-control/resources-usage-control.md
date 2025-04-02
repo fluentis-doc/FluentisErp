@@ -1,14 +1,14 @@
 ---
-title: Controllo utilizzo risorse
+title: controllo utilizzo risorse
 sidebar_position: 4
 ---
 
-Questa form consente di stampare il report **Controllo utilizzo risorse**.
+Este formulario permite imprimir el informe **controllo utilizzo risorse**.
 
-Una volta selezionato l'oggetto di riferimento tra:
+Una vez seleccionado el objeto de referencia entre:
 
-- Centro di lavoro
-- Macchina
-- Manodopera
+- Centro de trabajo (Centro di lavoro)
+- Máquina (Macchina)
+- Mano de obra (Manodopera)
 
-il report permette di visualizzare tutte le informazioni relative alle fasi che interessano l'oggetto selezionato e ne determinano l'utilizzo.
+el informe permite visualizar toda la información relativa a las fases que involucran el objeto seleccionado y determinan su uso.

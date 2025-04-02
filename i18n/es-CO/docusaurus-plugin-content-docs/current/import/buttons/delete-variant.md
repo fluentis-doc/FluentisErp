@@ -1,1 +1,1 @@
-- **Cancella**: permette di cancellare la riga variante selezionata.
+- **cancella**: permite eliminar la línea de variante seleccionada.

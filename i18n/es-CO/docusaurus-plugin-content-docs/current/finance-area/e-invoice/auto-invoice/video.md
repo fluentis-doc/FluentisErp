@@ -1,5 +1,5 @@
 ---
-title: Video Tutorial
+title: Tutorial en Video (Video Tutorial)
 sidebar_position: 5
 ---
 

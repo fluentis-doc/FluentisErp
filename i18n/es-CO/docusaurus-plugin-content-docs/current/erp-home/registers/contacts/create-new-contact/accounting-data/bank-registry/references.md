@@ -1,26 +1,26 @@
 ---
-title: Riferimenti
+title: riferimenti
 sidebar_position: 1
 ---
 
-L'anagrafica banca presenta nel tab **Riferimenti** i dati fondamentali relativi al conto corrente da indicare:
+El registro del banco presenta en la pestaña **riferimenti** los datos fundamentales relacionados con la cuenta corriente a indicar:
 
-**ISO**: indicare i primi 4 caratteri dell' IBAN, quindi 2 caratteri per il codice nazione (es. IT) + 2 per il codice istituto;
+**ISO**: indicar los primeros 4 caracteres del IBAN, luego 2 caracteres para el código del país (ej. IT) + 2 para el código de la institución;  
 
-I codici **ABI**, **CAB**, il numero di **C/C** (per le banche italiane si devono indicare 5 caratteri per abi e cab - quindi anche lo zero iniziale - e tutti i 12 caratteri del conto corrente italiano), il codice internazionale **Swift**, il **CIN**;
+Los códigos **ABI**, **CAB**, el número de **C/C** (para los bancos italianos se deben indicar 5 caracteres para abi y cab - incluyendo el cero inicial - y todos los 12 caracteres de la cuenta corriente italiana), el código internacional **Swift**, el **CIN**;  
 
-**Divisa**: specificare la divisa con il quale è espresso il conto bancario;
+**Divisa**: especificar la moneda con la cual está expresada la cuenta bancaria;  
 
-E' possibile inserire alcuni dati utili per l'interazione con **DocFinance®** (programma di tesoreria esterno al sistema):
+Es posible ingresar algunos datos útiles para la interacción con **DocFinance®** (programa de tesorería externo al sistema):  
 
-**R.B.N.**: rappresenta la tipologia di rapporto (es Conto corrente, conto valutario...)
+**R.B.N.**: representa la tipología de relación (ej. Cuenta corriente, cuenta de divisas...)  
 
-**Banca Doc Finance**: il nome della banca da utilizzare per l'analisi flussi per banca ed altre funzioni permesse da DocFinance
+**Banco Doc Finance**: el nombre del banco a utilizar para el análisis de flujos por banco y otras funciones permitidas por DocFinance  
 
-**Codice banca**: un eventuale codice banca libero;
+**Código del banco**: un posible código de banco libre;  
 
-**SIA** codice per l'invio dei file telematici italiani, es. per le Ricevute bancarie, (se non indicato viene utilizzato quello di default inserito nella tabella Società, Home>Tabelle>Generali).
+**SIA** código para el envío de archivos telemáticos italianos, ej. para las Recepciones bancarias, (si no se indica, se utilizará el que está por defecto en la tabla de la Empresa, Home>Tabelle>Generali).  
 
-**Banca d'appoggio** consente di collegare l'anagrafica banca al relativo codice di [**banca d'appoggio**](/docs/configurations/tables/general-settings/reference-bank) generica. Questo può servire per canalizzare automaticamente i movimenti finanziari dei partitari e valutarli nelle analisi di cash flow.
+**banca d'appoggio** permite conectar el registro del banco al código de [**banca d'appoggio**](/docs/configurations/tables/general-settings/reference-bank) genérico. Esto puede servir para canalizar automáticamente los movimientos financieros de las cuentas y evaluarlos en los análisis de flujo de caja.  
 
-La sezione legata alla *Fatturazione elettronica* non è attualmente in uso.
+La sección relacionada con la *Facturación electrónica* no está actualmente en uso.

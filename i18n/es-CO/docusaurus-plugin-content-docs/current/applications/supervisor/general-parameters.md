@@ -1,50 +1,50 @@
 ---
-title: Parametri Globali
-sidebar_label: Parametri Globali
+title: Parámetros Globales (Parametri Globali)
+sidebar_label: Parámetros Globales (Parametri Globali)
 sidebar_position: 1
 ---
 
-Supervisor permette di definire dei parametri che solitamente vengono utilizzati nell'esecuzione di specifiche attività, task o eventi.
-Una prima distinzione tra i diversi parametri concerne l'ambito di applicazione degli stessi, e si distingue tra:
-* *parametri locali*
-* *parametri globali*
+Supervisor permite definir parámetros que suelen utilizarse en la ejecución de actividades, tareas o eventos específicos.  
+Una primera distinción entre los diferentes parámetros concierne al ámbito de aplicación de los mismos, y se distingue entre:  
+* *parámetros locales (parametri locali)*  
+* *parámetros globales (parametri globali)*  
 
-I parametri locali sono operativi e visibili all'interno di specifiche attività, task o eventi in funzione di dove vengono definiti.
-I parametri globali sono invece operativi e visibili all'interno di tutte le attività, task o eventi e possono essere riutilizzati ogni qualvolta sia necessario.
+Los parámetros locales son operativos y visibles dentro de actividades, tareas o eventos específicos, según donde se definan.  
+Los parámetros globales, en cambio, son operativos y visibles dentro de todas las actividades, tareas o eventos, y pueden ser reutilizados cada vez que sea necesario.  
 
-I parametri globali sono visibili e configurabili aprendo il menu laterale **Configurazione** > **Parametri** > **Supervisor** > **Parametri Globali**
+Los parámetros globales son visibles y configurables abriendo el menú lateral **configurazione** > **parametri** > **Supervisor** > **Parámetros Globales (Parametri Globali)**  
 
-Cliccando su parametri generali si aprirà la form di gestione dei parametri generali con cui è possibile definirli.  
-Nello specifico sono presenti parametri relativi a:
-* *Email*
-* *Database esterno*
-* *HTML*
-* *Generali*
+Al hacer clic en parámetros generales, se abrirá el formulario de gestión de los parámetros generales con los que es posible definirlos.  
+En específico, hay parámetros relacionados con:  
+* *email*  
+* *database esterno*  
+* *HTML*  
+* *generali*  
 
-![alt text](/img/it-it/applications/supervisor/supervisor4.jpg)  
+![texto alternativo](/img/it-it/applications/supervisor/supervisor4.jpg)  
 
-> <mark> Parametri Email</mark>  
-Fanno riferimento ai parametri di autenticazione al server di posta elettronica SMTP desiderato.
-* SMTPServer -> si tratta dell'indirizzo IP Pubblico del server di posta oppure del suo hostname nel caso sia stato configurato il server DNS.
-* FromEmail -> si tratta dell'indirizzo completo di posta dal quale vogliamo spedire le mail che dovrà essere definito come alias all'interno del server di posta.
-* UseTLS -> si tratta dell'opzione di crittografia utilizzata per lo scambio dei messaggi utilizzata nella stragrande maggioranza dei casi di comunicazione tramite mail
-* AuthenticationUser e Authentication Password-> si trattano dell'utente definito nel server di posta con la relativa password.
-* SMTPServerPort -> si tratta della porta utilizzata dal server SMTP per l'invio di mail (solitamente 587, 465 o 25 ).
+> <mark> Parámetros de Email (Parametri Email) </mark>  
+Se refieren a los parámetros de autenticación al servidor de correo electrónico SMTP deseado.  
+* SMTPServer -> se trata de la dirección IP pública del servidor de correo o de su nombre de host en caso de que se haya configurado el servidor DNS.  
+* FromEmail -> se trata de la dirección completa de correo desde la cual queremos enviar los correos, que deberá definirse como alias dentro del servidor de correo.  
+* UseTLS -> se trata de la opción de encriptación utilizada para el intercambio de mensajes, que se utiliza en la gran mayoría de los casos de comunicación por correo.  
+* AuthenticationUser y Authentication Password -> se trata del usuario definido en el servidor de correo con la contraseña correspondiente.  
+* SMTPServerPort -> se trata del puerto utilizado por el servidor SMTP para enviar correos (normalmente 587, 465 o 25).  
 
-> <mark> Parametri Db esterno </mark>:  
-Fanno riferimento all possibilità di specificare una base di dati esterna a quella corrente in uso da Fluentis.
-* Server -> si tratta dell'endpoint dell'istanza del motore database di SQL Server.
-* Database -> si tratta del nome del database.
-* User e password -> si trattano dell'utente con cui accedere all'istanza del motore database (di solito utente sa) e della relativa password.
+> <mark> Parámetros de Base de Datos Externa (Parametri Db esterno) </mark>:  
+Se refieren a la posibilidad de especificar una base de datos externa a la actual en uso por Fluentis.  
+* Server -> se trata del endpoint de la instancia del motor de base de datos de SQL Server.  
+* Database -> se trata del nombre de la base de datos.  
+* User y password -> se trata del usuario con el que se accede a la instancia del motor de base de datos (normalmente el usuario sa) y de la contraseña correspondiente.  
 
-> <mark> Parametri HTML </mark>:  
-Fanno riferimento alla possibilità di specificare degli elementi di stile HTML utilizzando i fogli di stile CSS.
+> <mark> Parámetros HTML (Parametri HTML) </mark>:  
+Se refieren a la posibilidad de especificar elementos de estilo HTML utilizando hojas de estilo CSS.  
 
-> <mark> Parametri Generali </mark>:  
-Fanno riferimento a user e password con cui viene eseguito Supervisor.
+> <mark> Parámetros Generales (Parametri Generali) </mark>:  
+Se refieren a usuario y contraseña con los que se ejecuta Supervisor.  
 
 
 <!-- 
 :::tip Video Tutorial
-A questo link potete trovare il **[video](https://youtu.be/FCcnCDgtLV8)** che illustra la sopracitata procedura.
+A este link pueden encontrar el **[video](https://youtu.be/FCcnCDgtLV8)** que ilustra el procedimiento mencionado anteriormente.
 ::: -->

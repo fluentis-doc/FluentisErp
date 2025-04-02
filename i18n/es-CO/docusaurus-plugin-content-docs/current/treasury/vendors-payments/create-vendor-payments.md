@@ -1,68 +1,61 @@
 ---
-title: Crea pagamenti fornitore
+title: Crea pagos a proveedores (Crea pagamenti fornitore)
 sidebar_position: 2
 ---
-La form si trova in **Tesoreria > Pagamenti > Crea pagamenti fornitore** e consente la creazione di una nuova distinta di pagamento. La stessa maschera viene utilizzata anche per l'apertura in modifica o visualizzazione di una distinta già salvata.
+El formulario se encuentra en **Tesorería > Pagos > Crear pagos a proveedores** y permite la creación de un nuevo listado de pago. La misma máscara se utiliza también para abrir en modificación o visualización un listado ya guardado.
 
-Dalla form di ricerca è possibile creare un nuovo documento mediante il pulsante **> Nuovo pagamento** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
+Desde el formulario de búsqueda es posible crear un nuevo documento mediante el botón **> Nuevo pago** o abrir uno existente para visualizarlo y/o modificarlo.
 
-## Come creare una distinta di pagamento
+## Cómo crear un listado de pago
 
-Clicca per i passaggi fondamentali:
+Haz clic para los pasos fundamentales:
 
-1. Seleziona il **Tipo di pagamento** della distinta dal primo campo a discesa.
-2. I campi seguenti vengono compilati automaticamente:
-   - **Anno**: propone l'anno attuale del sistema.
-   - **Numero distinta**: numerazione progressiva della distinta.
-   - **Data emissione**: propone la data odierna.
-3. Compila i campi obbligatori della testata:
-   - **Banca**: inserire il codice di sottoconto dell'anagrafica banca sulla quale emettere la distinta.
-   - **Conto corrente**: compilato automaticamente sulla base dell'anagrafica banca collegata al sottoconto.
-   - **Note iniziali**: campo libero per eventuali annotazioni (non utilizzato nello standard).
-   - **Note finali**: utilizzato nella contabilizzazione per valorizzare la descrizione del movimento contabile della banca.
-4. Imposta eventuali opzioni aggiuntive:
-   - **Imponi questa data valuta beneficiario**: definisce la data valuta del beneficiario nel tracciato telematico.
-5. Controlla i flag di stato della distinta:
-   - **Stampato**: non gestito automaticamente dal programma.
-   - **File emesso**: aggiornato automaticamente dopo la creazione del file telematico.
-6. Seleziona le partite da pagare:
-   - Premi il pulsante **> Crea un pagamento dalle partite** per selezionare le partite contabili da chiudere.
-   - Attenzione all'uso del flag *visualizzazione partite percipienti*: la gestione del pagamento deve avvenire dal modulo percipienti.
-   - Il flag *Imponi banca d'appoggio dall'anagrafica del fornitore* permette di utilizzare la banca predefinita nel fornitore.
-7. Modifica, se necessario, i valori di pagamento in griglia.
-   - È possibile inserire pagamenti parziali o aggiungere righe manuali.
-   - Attenzione: l'aggiunta manuale può causare discrepanze nel saldo contabile se non gestita correttamente.
-8. Controlla le **Note** in griglia: vengono compilate automaticamente con i riferimenti delle partite pagate e saranno riportate in contabilità generale.
+1. Selecciona el **Tipo de pago** del listado en el primer campo desplegable.  
+2. Los campos siguientes se completan automáticamente:  
+   - **anno**: propone el año actual del sistema.  
+   - **numero distinta**: numeración progresiva del listado.  
+   - **data emissione**: propone la fecha de hoy.  
+3. Completa los campos obligatorios del encabezado:  
+   - **banca**: ingresar el código de subcuenta del registro del banco sobre el cual emitir el listado.  
+   - **conto corrente**: se completa automáticamente en base al registro del banco vinculado a la subcuenta.  
+   - **note iniziali**: campo libre para anotaciones (no utilizado en el estándar).  
+   - **note finali**: utilizado en la contabilidad para valorar la descripción del movimiento contable del banco.  
+4. Configura las opciones adicionales si es necesario:  
+   - **imponi questa data valuta beneficiario**: define la fecha de valor del beneficiario en el archivo telemático.  
+5. Revisa los indicadores de estado del listado:  
+   - **stampato**: no gestionado automáticamente por el programa.  
+   - **file emesso**: actualizado automáticamente después de crear el archivo telemático.  
+6. Selecciona las partidas a pagar:  
+   - Presiona el botón **> Crear un pago desde las partidas** para seleccionar las partidas contables a cerrar.  
+   - Presta atención al uso del indicador *visualización de partidas a cobrar (visualizzazione partite percipienti)*: la gestión del pago debe realizarse desde el módulo de cobradores.  
+   - El indicador *Imponer banco de apoyo del registro del proveedor (Imponi banca d'appoggio dall'anagrafica del fornitore)* permite utilizar el banco predeterminado en el proveedor.  
+7. Modifica, si es necesario, los valores de pago en la cuadrícula.  
+   - Es posible ingresar pagos parciales o añadir filas manualmente.  
+   - Atención: la adición manual puede causar discrepancias en el saldo contable si no se gestiona correctamente.  
+8. Revisa las **Notas** en la cuadrícula: se completan automáticamente con los referentes de las partidas pagadas y se reportarán en la contabilidad general.  
 
-:::tip ATTENZIONE
-Sulla testata della distinta è presente un flag **Autorizzato** per consentire la creazione del tracciato XML ed eseguire il pagamento. Il flag memorizza l'utente e la data di autorizzazione. Può essere attivato di default accedendo alla form **Parametri pagamenti fornitori** e attivando il flag *Autorizzato di default*.
+:::tip ATENCIÓN
+En el encabezado del listado hay un indicador **autorizzato** para permitir la creación del archivo XML y ejecutar el pago. El indicador almacena el usuario y la fecha de autorización. Puede activarse por defecto accediendo al formulario **parametri pagamenti fornitori** y activando el indicador *autorizzato di default*.
 :::
 
-9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente.
+9. **Presiona el botón Crear archivo SEPA** para generar automáticamente un archivo .xml de la lista de pagos y archivarlo automáticamente en el sistema documental. Puedes descargar el archivo del sistema documental para la posterior configuración en los sistemas de banca corporativa, en lugar de tener que volver a ingresar los pagos manualmente.
 
-10. Premi il bottone **Documenti**, nel gruppo Document manager per accedere al documentale con l'allegato .xml Da dentro la form del documentale premi poi il bottone **Salva allegato** per scaricare la copia sul PC locale.
+10. Presiona el botón **Documentos**, en el grupo Document manager para acceder al sistema documental con el archivo adjunto .xml Desde dentro del formulario del sistema documental, presiona luego el botón **Guardar adjunto** para descargar la copia en el PC local.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Nuovo pagamento**: Inserisce manualmente una riga di pagamento fornitore.
+> **nuovo pagamento**: Inserta manualmente una línea de pago a proveedor.
 
-> **Salva**: Salva la testata della distinta dopo aver inserito il tipo di pagamento e il sottoconto di banca.
+> **salva**: Guarda el encabezado del listado después de ingresar el tipo de pago y la subcuenta del banco.
 
-> **Cancella pagamenti selezionati**: Cancella i pagamenti fornitori creati manualmente o da creazione pagamento da partite.
+> **cancella pagamenti selezionati**: Elimina los pagos a proveedores creados manualmente o desde la creación de pagos desde partidas.
 
-> **Crea un pagamento dalle partite**: Attivabile dopo il salvataggio della testata, acquisisce i dati dall'archivio partite.
+> **crea un pagamento dalle partite**: Activable después de guardar el encabezado, adquiere los datos del archivo de partidas.
 
-> **Documenti**: Pulsante per il collegamento alla gestione documentale.
-
+> **documenti**: Botón para acceder a la gestión documental.
 
 ---
 
-### **VIDEO TUTORIALS**
+### **VIDEOS TUTORIALES** (VIDEO TUTORIALS)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-

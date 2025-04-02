@@ -1,51 +1,51 @@
 ---
-title: Inserimento massivo articoli
+title: inserimento massivo articoli
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Procedure > Inserimento massivo articoli**
+La gestión se encuentra en la ruta **inserimento massivo articoli**
 
-:::important A cosa serve
-Questa procedura permette di assegnare massivamente gli *Articoli* ai *Piani di controllo*.
-Per poter usufruire della funzione di *Inserisci* è necessario:
-- dal tabulatore **Articolo** scegliere gli *Articoli* da assegnare;  
-- dal tabulatore **Piani di controllo** scegliere i *Piani di controllo*;      
-- cliccare il pulsante **Inserisci**.   
+:::important ¿Para qué sirve? (A cosa serve)
+Este procedimiento permite asignar masivamente los *Artículos* a los *Planes de control*.  
+Para poder beneficiarse de la función de *Insertar*, es necesario:  
+- en la pestaña **Artículo**, seleccionar los *Artículos* que se desean asignar;  
+- en la pestaña **Planes de control**, seleccionar los *Planes de control*;  
+- hacer clic en el botón **Insertar**.  
 :::
 
 
-## Articoli   
+## Artículos (Articoli)  
 
-In questo tabulatore è possibile ricercare e selezionare gli *articoli* che si desidera inserire massivamente nei *Piani di controllo* e selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca articoli** per visualizzare i risultati all'interno della griglia di risultato.    
+En esta pestaña es posible buscar y seleccionar los *artículos* que se desean insertar masivamente en los *Planes de control* y que son seleccionables en la pestaña homónima.  
+La sesión se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca articoli** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-*Pulsanti specifici*:   
+*Botones específicos:*  
 
-### ![](/img/neutral/common/search.png) Ricerca articoli
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli Piani di controllo
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Piani di controllo**.   
-
-
-## Piani di controllo   
-
-In questo tabulatore è possibile ricercare e selezionare i *Piani di controllo* a cui si desidera inserire massivamente gli *Articoli* selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca Piani di controllo** per visualizzare i risultati all'interno della griglia di risultato.    
-
-*Pulsanti specifici*:   
-
-### ![](/img/neutral/common/search.png) Ricerca Piani di controllo
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli articoli
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Articoli**.   
-### ![](/img/neutral/common/execute.png) Inserisci
-Gli *Articoli* selezionati verranno associati ai *Piani di controllo* selezionate nei rispettivi tabulatori con le informazioni indicate nel tabulatore *Parametri*.   
+### ![](/img/neutral/common/search.png) Buscar artículos (Ricerca articoli)
+Se visualizarán los resultados dentro de la cuadrícula de resultados según el filtro establecido.  
+### ![](/img/neutral/common/duplicate.png) Elegir Planes de control (Scegli Piani di controllo)
+Al presionar el botón, se posiciona automáticamente en la pestaña **Planes de control**.   
 
 
-## Parametri
+## Planes de control (Piani di controllo)  
 
-In questo tabulatore è possibile indicare alcune informazioni che verranno proposte all'inserimento degli *Articoli* nei *Piani di controllo*.   
-Nel tabulatore è possibile inserire:   
-> **Note**: annotazioni libere.   
+En esta pestaña es posible buscar y seleccionar los *Planes de control* a los que se desea insertar masivamente los *Artículos* que son seleccionables en la pestaña homónima.  
+La sesión se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca piani di controllo** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+*Botones específicos:*
+
+### ![](/img/neutral/common/search.png) Buscar Planes de control (Ricerca Piani di controllo)
+Se visualizarán los resultados dentro de la cuadrícula de resultados según el filtro establecido.  
+### ![](/img/neutral/common/duplicate.png) Elegir artículos (Scegli articoli)
+Al presionar el botón, se posiciona automáticamente en la pestaña **Artículos**.  
+### ![](/img/neutral/common/execute.png) Insertar (Inserisci)
+Los *Artículos* seleccionados serán asociados a los *Planes de control* seleccionados en sus respectivas pestañas con la información indicada en la pestaña *Parámetros*.   
+
+
+## Parámetros (Parametri)
+
+En esta pestaña es posible indicar algunas informaciones que se propondrán al insertar los *Artículos* en los *Planes de control*.  
+En la pestaña se pueden ingresar:  
+> **note**: anotaciones libres.  
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,6 +1,6 @@
 ---
-title: Causali di contributo
+title: causali di contributo
 sidebar_position: 8
 ---
 
-La tabella consente all'utente di definire le causale di contribuzione INPS da collegare ai tipi di ritenuta: **come detto nella documentazione dei tipi ritenuta, la gestione di tale sezione non è più necessaria.**
+La tabla permite al usuario definir las causales de contribución del INPS para vincular a los tipos de retención: **como se mencionó en la documentación de los tipos de retención, la gestión de esta sección ya no es necesaria (come detto nella documentazione dei tipi ritenuta, la gestione di tale sezione non è più necessaria).**

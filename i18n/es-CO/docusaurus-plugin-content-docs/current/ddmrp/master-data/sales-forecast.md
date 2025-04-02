@@ -1,28 +1,25 @@
 ---
-title: Previsioni di vendita
+title: previsioni di vendita
 sidebar_position: 11
 ---
 
-Questa tabella contiene le previsioni di vendita di prodotti finiti realizzati in fabbrica ed hanno un dettaglio massimo settimanale (previsione di vendita settimanale).
+Esta tabla contiene los pronósticos de ventas de productos terminados fabricados y tienen un detalle máximo semanal (pronóstico de ventas semanal).
 
-Per prodotti distribuiti non si usa questa tabella ma quella delle previsioni di consumo giornaliero.
+Para productos distribuidos no se utiliza esta tabla, sino la de pronósticos de consumo diario.
 
-Il bisogno di una previsione delle vendite in DDMRP è molto più raro rispetto ad un MRP perché il Master Production Schedule non viene utilizzato in quanto non è necessario per anticipare la domanda come in un MRP convenzionale. 
+La necesidad de un pronóstico de ventas en DDMRP es mucho más rara en comparación con un MRP, ya que el Programa Maestro de Producción no se utiliza porque no es necesario anticipar la demanda como en un MRP convencional.
 
-L'uso della previsione delle vendite è necessario solo quando si sa che in futuro la domanda di un prodotto finito varierà notevolmente e in un breve periodo (un periodo di tempo paragonabile al tempo di produzione cumulativo del prodotto finito). 
+El uso del pronóstico de ventas es necesario solo cuando se sabe que en el futuro la demanda de un producto terminado variará considerablemente y en un breve período (un período de tiempo comparable al tiempo de producción acumulativo del producto terminado).
 
-In una situazine del genere, le scorte presenti per gli articoli a buffer nella distinta del prodotto finito non sarebbero sufficienti, e risulterebbe impossibile produrre i prodotti finiti nei tempi e nelle quantità stabiliti nelle previsioni di vendita.
+En una situación de este tipo, las existencias presentes para los artículos en buffer en la lista del producto terminado no serían suficientes, y sería imposible producir los productos terminados en los tiempos y cantidades establecidos en los pronósticos de ventas.
 
-Se si avesse una forte variazione della domanda ma progressiva e lungo un periodo di tempo superiore al tempo di produzione cumulativo, le previsioni di vendita non sarebbero necessarie poichè la [**procedura di aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/ADU-update) lavorando sui valori passati di consumo, adatta automaticamente il consumo medio giornaliero (ADU) alla variazione della domanda, con conseguente incremento delle zone e del livello di scorta medio. 
+Si hubiera una fuerte variación de la demanda, pero progresiva y a lo largo de un período de tiempo superior al tiempo de producción acumulativo, los pronósticos de ventas no serían necesarios, ya que la [**procedimiento de actualización del consumo medio diario (ADU)**](/docs/ddmrp/procedures/ADU-update) al trabajar con los valores pasados de consumo, adapta automáticamente el consumo medio diario (ADU) a la variación de la demanda, con el consiguiente incremento de las zonas y del nivel de stock medio.
 
-Situazioni tipiche che richiedono l'uso della previsione delle vendite sono:
+Las situaciones típicas que requieren el uso del pronóstico de ventas son:
 
--   Promozioni di vendita
--   Stagionalità
--   Entrata in un nuovo mercato
--   Uscita da un mercato
--   Introduzione di nuovi prodotti
--   Eliminazione di vecchi prodotti
-
-
-
+-   Promociones de ventas (Promozioni di vendita)  
+-   Estacionalidad (Stagionalità)  
+-   Entrada en un nuevo mercado (Entrata in un nuovo mercato)  
+-   Salida de un mercado (Uscita da un mercato)  
+-   Introducción de nuevos productos (Introduzione di nuovi prodotti)  
+-   Eliminación de productos antiguos (Eliminazione di vecchi prodotti)

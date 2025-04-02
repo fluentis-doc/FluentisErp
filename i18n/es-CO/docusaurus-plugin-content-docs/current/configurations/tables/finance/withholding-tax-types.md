@@ -1,63 +1,63 @@
 ---
-title: Tipi ritenuta
+title: tipi ritenuta
 sidebar_position: 34
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación en la página vinculada.
 :::
 
-In questa tabella vengono ricercate ed inserite le tipologie di ritenuta d'acconto da associare ai compensi percipienti (gli agenti di commercio sono a loro volta anche dei percipienti) per la corretta gestione delle contabilizzazioni e degli altri adempimenti fiscali connessi.
+En esta tabla se buscan e ingresan los tipos de retención que se deben asociar a los ingresos percibidos (los agentes de comercio son también percipientes) para la correcta gestión de las contabilizaciones y otros requisitos fiscales relacionados.
 
-#### Campi specifici
+#### Campos específicos
 
-**Codice ritenuta**: codice alfanumerico di 5 caratteri di identificazione della ritenuta; normalmente si richiama il codice tributo ministeriale.
+**Código de retención (Codice ritenuta)**: código alfanumérico de 5 caracteres que identifica la retención; normalmente se invoca el código del tributo ministerial.
 
-**Descrizione ritenuta**: descrizione del codice ritenuta.
+**Descripción de la retención (Descrizione ritenuta)**: descripción del código de retención.
 
-**[Codice tributo](/docs/configurations/tables/finance/tax-code)**: richiama la tabella dei codici tributo: questa è precompilata al momento dell'installazione e contiene la lista completa dei codici tributo previsti per il modello F24.
+**[Código de tributo (Codice tributo)](/docs/configurations/tables/finance/tax-code)**: invoca la tabla de códigos de tributo: esta se precompila al momento de la instalación y contiene la lista completa de códigos de tributo previstos para el modelo F24.
 
-**Causale di contabilità generale**: questo campo prevede l'impostazione obbligatoria per registrare il compenso in contabilità: si tratta normalmente di una causale iva, tipo un normale acquisto Italia. E' comunque prevista anche la valorizzazione di causali non Iva per gestire i casi di gestione ritenute a collaboratori saltuari non titolari di partita IVA.
+**Causa de contabilidad general (Causale di contabilità generale)**: este campo requiere la configuración obligatoria para registrar el pago en contabilidad: normalmente se trata de una causa IVA, como una compra normal en Italia. También se permite la valorización de causas no IVA para gestionar los casos de retenciones a colaboradores ocasionales que no tienen número de IVA.
 
-**Tipi ritenuta fatturazione elettronica**: in questo campo è possibile inserire il codice specifico del tipo ritenuta valido ai fini della fatturazione elettronica attiva (ovvero quando la società in uso è soggetta a ritenuta d'acconto subita da parte del proprio cliente / cessionario /committente). Per codifica in vigore si rinvia alle specifiche tecniche aggiornate sulla fatturazione elettronica scaricabili dal sito dell'Agenzia delle Entrate.
+**tipi ritenuta fatturazione elettronica**: en este campo es posible ingresar el código específico del tipo de retención válido para la facturación electrónica activa (es decir, cuando la empresa está sujeta a la retención de impuesto aplicada por su cliente/cesionario/contratante). Para la codificación vigente, consulte las especificaciones técnicas actualizadas sobre la facturación electrónica que se pueden descargar del sitio de la Agencia de Ingresos.
 
-**Quadro in Mod. 770**: è un campo obbligatorio: il modello 770, comunque, non è gestito nella procedura.
+**Cuadro en Mod. 770:** es un campo obligatorio: el modelo 770, sin embargo, no se gestiona en el procedimiento.
 
-**Codice di pag. in mod. 770**: codice di pagamento in 770 è un campo non obbligatorio e non utilizzato.
+**Código de pago en mod. 770 (Codice di pag. in mod. 770)**: el código de pago en 770 es un campo no obligatorio y no utilizado.
 
-**Tipi partite**: la scelta è tra partite nette e partite lorde. La distinzione è relativa alla creazione delle scadenze al netto o al lordo di tutti i tributi a carico del percipiente: l'impostazione standard prevede le partite nette, al fine d'avere uno scadenziario con l'effettivo importo da pagare al professionista, nel qual caso la causale contabile di riferimento non dovrà avere il blocco alla registrazione di movimenti sbilanciati con le partite.
+**tipi partite**: la elección es entre partidas netas y partidas brutas. La distinción se refiere a la creación de plazos netos o brutos de todos los tributos a cargo del percipiente: la configuración estándar prevé partidas netas, con el fin de tener un calendario con el importe efectivo a pagar al profesional, en cuyo caso la causa contable de referencia no debe tener bloqueada la registración de movimientos desbalanceados con las partidas.
 
-**Tipo ritenuta**: prevede l'opzione a titolo d'acconto o a titolo d'imposta: la distinzione non ha attualmente alcuna rilevanza sull'operatività del modulo, ma è rilevante a livello di CU (Certificazione unica) per valorizzare i due campi *Ritenuta acconto* o *Ritenuta imposta*.
+**tipo ritenuta**: prevé la opción a título de anticipo o a título de impuesto: la distinción no tiene actualmente ninguna relevancia en la operativa del módulo, pero es relevante a nivel de CU (Certificación única) para valorar los dos campos *Retención anticipo* o *Retención impuesto*.
 
-**Codice pagamento**: è il codice del pagamento della ritenuta. Questo dato è ripreso nella procedura di elaborazione della CU (certificazione unica) e per la sua gestione si consiglia di riferirsi alle relative istruzioni ministeriali scaricabili dal sito dell'Agenzia delle Entrate. 
+**codice pagamento**: es el código del pago de la retención. Este dato se utiliza en el procedimiento de elaboración de la CU (certificación única) y para su gestión se aconseja consultar las instrucciones ministeriales correspondientes que se pueden descargar del sitio de la Agencia de Ingresos.
 
-**Codice altre somme non soggette a ritenuta**: il campo permette di contrassegnare in modo specifico, per ogni tipologia di ritenuta, il codice (generalmente numerico come da istruzioni ministeriali dell'Agenzia delle entrate) relativo alle somme non soggette alla ritenuta d'acconto. Se il campo non viene compilato, all'atto dell'elaborazione della CU nel [**modulo relativo**](/docs/finance-area/declarations/declarations/withholding-tax-certification), sarà compilato di default il *codice 21* per quanto riguarda le righe dei compensi percipienti inserite nei documenti con il **tipo riga 4** (*Altro*) da utilizzare, ad esempio, per le spese anticipate dal percipiente per conto del cliente e riaddebitate. 
+**codice altre somme non soggette a ritenuta**: el campo permite marcar específicamente, para cada tipo de retención, el código (generalmente numérico, como indican las instrucciones ministeriales de la Agencia de Ingresos) relativo a las sumas no sujetas a la retención de anticipo. Si el campo no se completa, al elaborar la CU en el [**módulo correspondiente**](/docs/finance-area/declarations/declarations/withholding-tax-certification), se completará por defecto el *código 21* para las líneas de compensaciones percibidas incluidas en los documentos con el **tipo de línea 4** (*Otro*) que se puede utilizar, por ejemplo, para los gastos anticipados por el percipiente en nombre del cliente y que son repercutidos.
 
-**Debiti v/erario**: questo sottoconto memorizza il sottoconto di debito da utilizzare per rilevare il debito relativo alla ritenuta d'acconto. Questo sottoconto viene utilizzato nella procedura di contabilizzazione pagamenti (con la contabilizzazione pagamenti viene rilevato il debito della ritenuta da versare, che è un tributo che segue la logica di cassa appunto): quando il pagamento riguarda i compensi percipienti, infatti, è necessario integrare la registrazione con i movimenti relativi alla ritenuta e gestire le tabelle del modulo per garantire la possibilità di ottenere la stampa delle certificazioni ritenute.
+**debiti v/erario**: este subcuenta almacena la subcuenta de deuda a utilizar para registrar la deuda relacionada con la retención de anticipo. Esta subcuenta se utiliza en el procedimiento de contabilización de pagos (con la contabilización de pagos se registra la deuda correspondiente a la retención que debe ser pagada, que es un tributo que sigue la lógica de caja): cuando el pago se refiere a los ingresos percibidos, de hecho, es necesario integrar la registración con los movimientos relativos a la retención y gestionar las tablas del módulo para garantizar la posibilidad de obtener la impresión de las certificaciones de retención.
 
-**Categoria agente** è la tipologia di agente dalla quale individuare le percentuali di contribuzione all'istituto Enasarco. Nel caso in cui la categoria sia stata impostata sarà necessario inserire anche il precedente sottoconto di debito verso l'Enasarco. Il campo è obbligatorio nel caso in cui sia inserita la gestione dell' Enasarco a carico ditta.
+**categoria agente**: es el tipo de agente a partir del cual se identificarán los porcentajes de contribución al instituto Enasarco. Si se ha configurado la categoría, también será necesario ingresar la subcuenta de deuda hacia la Enasarco. El campo es obligatorio si se incluye la gestión de la Enasarco a cargo de la empresa.
 
-**Cont. Enasarco a carico ditta**: questo flag attiva l'impostazione dei due sottoconti successivi e rende obbligatoria l'assegnazione di una categoria agente e del sottoconto di debito per la quota a carico agente. L'attivazione di questo flag attiverà la rilevazione contabile dei contributi Enasarco con la procedura di contabilizzazione omonima. L'opzione è consigliata al fine di rendere autonoma tale rilevazione, dato che il contributo Enasarco va rilevato per competenza e non per cassa come la ritenuta d'acconto. All'interno di questo flag si trovano anche:
+**Contribución Enasarco a cargo de empresa (Cont. Enasarco a carico ditta)**: este indicador activa la configuración de las dos subcuentas siguientes y hace obligatoria la asignación de una categoría de agente y de la subcuenta de deuda para la cuota a cargo del agente. La activación de este indicador activará el registro contable de las contribuciones a la Enasarco con el procedimiento de contabilización homónimo. Se recomienda esta opción para hacer autónoma dicha registración, dado que la contribución a la Enasarco debe registrarse por competencia y no por caja como la retención de anticipo. Dentro de este indicador también se encuentran:
 
-**Debito Enasarco a carico agente**: il campo è dedicato all'impostazione del sottoconto di debito sul quale sarà rilevato l'importo a carico dell'agente. Tale sottoconto sarà utilizzato nella contabilizzazione pagamenti o nella contabilizzazione enasarco a seconda che sia stata impostata la gestione enasarco a carico ditta o meno. Il campo è obbligatorio se è settato il campo successivo della categoria agente.
+**Deuda Enasarco a cargo del agente (Debito Enasarco a carico agente)**: el campo está dedicado a la configuración de la subcuenta de deuda sobre la cual se registrará el importe a cargo del agente. Esta subcuenta se utilizará en la contabilización de pagos o en la contabilización de Enasarco, dependiendo de si se ha configurado la gestión de Enasarco a cargo de la empresa o no. El campo es obligatorio si se ha configurado el campo siguiente de la categoría de agente.
 
-**Costo a carico ditta**: sottoconto da attribuire alla rilevazione contabile di costo Enasarco a carico ditta.
+**costo a carico ditta**: subcuenta que se asignará a la registración contable del costo de Enasarco a cargo de la empresa.
 
-**Debito a carico ditta**: sottoconto da attribuire alla rilevazione contabile di debito Enasarco a carico ditta.
+**debito a carico ditta**: subcuenta que se asignará a la registración contable de la deuda de Enasarco a cargo de la empresa.
 
 
-### Percentuali 
+### Porcentajes
 
-La sezione contiene i seguenti campi (clic sulla freccia a destra di questa sezione):
+La sección contiene los siguientes campos (clic en la flecha a la derecha de esta sección):
 
-% **Ritenuta**: percentuale di applicazione della ritenuta.
+% **ritenuta**: porcentaje de aplicación de la retención.
 
-% **Imponibile**: base percentuale di applicazione della ritenuta.
+% **imponibile**: base porcentual de aplicación de la retención.
 
-% **Cassa previdenza**:  percentuale di cassa previdenza.
+% **cassa previdenza**: porcentaje de caja de previsión.
 
-% **Rid. forf. compenso**: campo non in uso.
+% **Reducción forf. compenso (Rid. forf. compenso)**: campo no en uso.
 
-La sezione INPS consente di attivare una sezione tributi ulteriore all'interno del compenso percipiente, per gestire i contributi INPS dovuti ad esempio dai collaboratori a progetto e simili.
+La sección de INPS permite activar una sección de tributos adicional dentro del ingreso percibido, para gestionar las contribuciones de INPS debidas, por ejemplo, por los colaboradores por proyecto y similares.

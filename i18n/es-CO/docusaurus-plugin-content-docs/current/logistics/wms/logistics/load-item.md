@@ -1,31 +1,31 @@
 ---
-title: Carico articolo
+title: carico articolo
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-La funzione di **carico articolo** consente di registrare in modo preciso l’arrivo degli articoli nei magazzini. Attraverso questa procedura, gli operatori possono scansionare il codice a barre dell’articolo e dell’ubicazione, inserire la quantità da caricare e, nel caso di articoli gestiti a lotti, specificare anche il lotto corrispondente. Una volta confermata l'operazione, il movimento di magazzino viene creato automaticamente, assicurando una gestione efficace delle giacenze e una tracciabilità completa.
+:::important ¿Para qué sirve? (A cosa serve)  
+La función de **carico articolo** permite registrar de manera precisa la llegada de artículos a los almacenes. A través de este procedimiento, los operadores pueden escanear el código de barras del artículo y de la ubicación, ingresar la cantidad a cargar y, en el caso de artículos gestionados por lotes, especificar también el lote correspondiente. Una vez confirmada la operación, se crea automáticamente el movimiento de almacén, asegurando una gestión efectiva de los inventarios y una trazabilidad completa.  
 :::
 
-Questa procedura è utilizzata per creare un movimento di carico di un articolo in una determinata ubicazione.        
-Nel campo **Codice barcode**, l’operatore dovrà solamente leggere il Barcode dell’articolo, poi quello dell’ubicazione in cui vuole caricarlo.           
-Successivamente dovrà solo inserire la quantità da movimentare, ed una volta confermato verrà creato anche il relativo movimento di magazzino.       
-Nel caso in cui l'articolo sia gestito a lotti, verrà visualizzato anche il relativo campo in cui andare ad inserire il lotto che dovrà essere caricato.        
-Inoltre, è possibile stampare anche l'etichetta del codice articolo tramite il pulsante **Stampa** o visualizzare l'anteprima direttamente sul terminale con il pulsante **Anteprima**.          
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.
+Este procedimiento se utiliza para crear un movimiento de carga de un artículo en una ubicación determinada.  
+En el campo **codice barcode**, el operador solo deberá leer el código de barras del artículo, luego el de la ubicación en la que desea cargarlo.  
+A continuación, solo deberá ingresar la cantidad a mover, y una vez confirmado, también se creará el correspondiente movimiento de almacén.  
+En caso de que el artículo se gestione por lotes, también se visualizará el campo correspondiente donde se debe ingresar el lote que debe ser cargado.  
+Además, es posible imprimir la etiqueta del código de artículo a través del botón **stampa** o visualizar la vista previa directamente en la terminal con el botón **anteprima**.  
+El botón **pulisci tutto** permite vaciar el formulario de todos los datos ingresados.
 
-:::note Nota
-Il *Codice Articolo* e il *Lotto* devono avere l’anagrafica presente su Fluentis.
+:::note Nota  
+El *codice articolo* y el *lotto* deben tener el registro presente en Fluentis.  
 :::
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Magazzino Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que se deben ingresar en la tabla [Parámetros de Almacén de Carga/Descarga por usuario (Parametri Magazzino Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Área | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadItem |
 
-:::note Nota
-Se nei [Parametri  MagazzinoCarico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) è associato per quell’utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti.
+:::note Nota  
+Si en los [Parámetros de Almacén de Carga/Descarga por usuario (Parametri Magazzino Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) está asociado para ese usuario un solo almacén, se propone por defecto ese; de lo contrario, si hay más de uno asociado, por defecto no se propone ninguno y el usuario solo puede elegir entre uno de los que están insertados.  
 :::
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barra a leer en el campo **codice barcode**, consulte la página relacionada con el [Tokenizador de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

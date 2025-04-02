@@ -1,81 +1,80 @@
 ---
-title: Registri IVA
+title: registri iva
 sidebar_position: 20
 ---
 
-Percorso form: **Configurazione > Tabelle > Amministrazione > Registri IVA**
+Ruta del formulario: **Configuración > Tablas > Administración > registri iva**
 
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está involucrada en el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página vinculada.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Los registros creados por el Inicio Rápido ya están listos para gestionar:
 
-I registri creati dal Fast Start sono già pronti per gestire
-
-- Acquisti e vendite Italia
-- Acquisti e vendite Reverse Charge oltre a sezionale per giroconto acquisti
-- Acquisti e vendite UE oltre a sezionale per giroconto acquisti
-- Acquisti e vendite Extra UE
-- Corrispettivi
-- Riepilogativo per stampa liquidazioni iva
+- Compras y ventas Italia
+- Compras y ventas de Cargo Inverso (Reverse Charge), además de un seccional para el giroconto de compras
+- Compras y ventas UE, además de un seccional para el giroconto de compras
+- Compras y ventas Extra UE
+- Correspondencias (Corrispettivi)
+- Resumen para imprimir liquidaciones de IVA
 :::
 
-### Pulsanti specifici
+### Botones específicos
 
-**Nuovo**: permette di effettuare l'inserimento di un nuovo registro IVA.  
-**Inserimento anno**: permette di effettuare l'inserimento di un nuovo anno per il registro IVA su cui si è posizionati.  
-**Cancella**: permette di effettuare la cancellazione del registro IVA su cui si è posizionati.  
-**Cancella anno**: permette di effettuare la cancellazione dell'anno del registro IVA su cui si è posizionati.  
-**Anteprima**: permette di effettuare la stampa.  
-**Stampa**: permette di effettuare la stampa.  
-**Annulla stampe definitive**: permette di effettuare l'annullamento delle stampe definitive dei registri. Si apre un dialog nel quale selezionare il registro e il periodo che si intende annullare.  
+**nuovo**: permite realizar la inserción de un nuevo registro IVA.  
+**inserimento anno**: permite realizar la inserción de un nuevo año para el registro IVA en el que se está ubicado.  
+**cancella**: permite realizar la eliminación del registro IVA en el que se está ubicado.  
+**cancella anno**: permite realizar la eliminación del año del registro IVA en el que se está ubicado.  
+**anteprima**: permite realizar la impresión.  
+**stampa**: permite realizar la impresión.  
+**annulla stampe definitive**: permite realizar la anulación de las impresiones definitivas de los registros. Se abre un diálogo en el cual seleccionar el registro y el período que se desea anular.  
 :::
 
-### Prima sezione 
+### Primera sección (Prima sezione)
 
-**Codice**: codice alfanumerico identificativo del registro.
+**codice**: código alfanumérico identificativo del registro.  
 
-**Descrizione**: descrizione del registro stampato normalmente nei report ufficiali.
+**descrizione**: descripción del registro que normalmente se imprime en los informes oficiales.  
 
-**Tipo registro**: tipologia precodificata del registro. Prestare attenzione al corretto settaggio ad esempio dei registri che accolgono il giroconto per acquisti intra o reverse charge i quali saranno impostati su *Vendite* ed a differenziare correttamente la fattispecie degli acquisti / vendite in sospensione d'imposta ed il regime speciali ex art. 74 ter dpr 633/72.
+**tipo registro**: tipología precodificada del registro. Prestar atención a la configuración correcta, por ejemplo, de los registros que aceptan el giroconto para compras intra o cargo inverso, los cuales se establecerán en *vendite*, y diferenciar correctamente la naturaleza de las compras/ventas en suspensión de impuesto y el régimen especial según el art. 74 ter dpr 633/72.  
 
-**Controllo protocolli**: l'impostazione di questo flag blocca la possibilità di stampare in definitivo un registro che abbia buchi nei protocolli o incongruenze nell'ordinamento degli stessi.
+**controllo protocolli**: la configuración de este indicador bloquea la posibilidad de imprimir definitivamente un registro que tenga lagunas en los protocolos o incongruencias en su orden.  
 
-**Da ventilare**: questo flag impone la gestione del registro relativo nella procedura di ventilazione dei corrispettivi.
+**da ventilare**: este indicador impone la gestión del registro correspondiente en el procedimiento de ventilación de las correspondencias.  
 
-**Da liquidare**: permette di determinare quali registri IVA siano da gestire nella stampa della Liquidazione IVA periodica.
+**da liquidare**: permite determinar qué registros IVA deben ser gestionados en la impresión de la liquidación IVA periódica.  
 
-**Rif. reg. acquisto**: il campo è attivo solo per i registri vendite/corrispettivi, al fine di indicare il registro iva acquisti d'origine della ventilazione dei corrispettivi.
+**Ref. registro compra (Rif. reg. acquisto)**: el campo está activo solo para los registros de ventas/correspondencias, con el fin de indicar el registro IVA de compras de origen de la ventilación de las correspondencias.  
 
-**Descrizione**: descrizione rif. reg. acquisto.
+**descrizione**: descripción del ref. registro de compra.  
 
-**Numerazione**: consente di impostare per ogni registro un numeratore con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale, al posto della numerazione standard prevista per i registri iva. Nella localizzazione italiana questo campo non viene utilizzato.
+**numerazione**: permite establecer para cada registro un numerador con las opciones estándar habituales comunes a otros numeradores presentes en el sistema, en lugar de la numeración estándar prevista para los registros IVA. En la localización italiana, este campo no se utiliza.  
 
-**Descrizione**: descrizione del numeratore associato
+**descrizione**: descripción del numerador asociado.  
 
-**Tipo attività Iva**: la combo box rinvia alla tabella Tipo attività Iva dove è possibile codificare liberamente diverse tipologie di attività ai fini iva (a titolo di esempio "Produzione" ed "Immobiliare") ai quali associare una percentuale di *Pro Rata* di detraibilità iva. E' presenta anche un flag per definire quale sia l'attività principale prevalente sulla quale totalizzare i valori nella liquidazione iva.
+**tipo attività iva**: el combo box remite a la tabla Tipo de actividad IVA donde se pueden codificar libremente diferentes tipos de actividades a efectos de IVA (como "Producción" e "Inmobiliaria") a los cuales se asocia un porcentaje de *Pro Rata* de deducibilidad IVA. También hay un indicador para definir cuál es la actividad principal prevalente sobre la que totalizar los valores en la liquidación IVA.  
 
-**Descrizione**: descrizione del tipo attività iva
+**descrizione**: descripción del tipo de actividad IVA.  
 
-### Seconda sezione  
+### Segunda sección (Seconda sezione)
 
-Consente di impostare il contatore dei protocolli per ogni anno contabile nel campo 'Prot. IVA Iniziale'.
+Permite establecer el contador de protocolos para cada año contable en el campo 'Prot. IVA Inicial'.
 
-**Anno**: anno di riferimento.
+**anno**: año de referencia.  
 
-**Prot. IVA iniziale**: protocollo IVA iniziale dell'anno di riferimento.
+**Prot. IVA inicial (Prot. IVA iniziale)**: protocolo IVA inicial del año de referencia.  
 
-**Ultimo prot. IVA**: consente di visualizzare qual'è l'ultimo protocollo IVA che è stato stampato in definitivo nel registro stesso.
+**Último protocolo IVA (Ultimo prot. IVA)**: permite visualizar cuál es el último protocolo IVA que ha sido impreso de forma definitiva en el mismo registro.  
 
-**Data ultima stampa**: data di esecuzione dell'ultima stampa definitiva.
+**data ultima stampa**: fecha de ejecución de la última impresión definitiva.  
 
-**Ultima pag. stampata**: ultimo numero di pagina stampata in definitiva.
+**Última pág. impresa (Ultima pag. stampata)**: último número de página impresa de forma definitiva.  
 
 :::tip nota
-la stampa di questa tabella consente di visualizzare l'ultimo periodo stampato in modo definitivo per ogni registro e anno
+la impresión de esta tabla permite visualizar el último período impreso de manera definitiva por cada registro y año.
 :::
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
+:::important Ver También
+[**TUTORIALES EN VIDEO SOBRE TABLAS ADMINISTRATIVAS**](/docs/video/finance/intro)
 :::

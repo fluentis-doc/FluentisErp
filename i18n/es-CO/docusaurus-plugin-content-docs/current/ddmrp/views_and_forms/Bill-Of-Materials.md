@@ -1,44 +1,40 @@
 ---
-title: Distinta base Ddmrp
+title: distinta base ddmrp
 sidebar_position: 8
 ---
 
-Questa form visualizza la distinta base di un prodotto e differisce dalla form gestione distinte Fluentis poichè riporta delle informazioni che hanno senso solo in un ambiente Ddmrp (tramite questa form non è possibile modificare una distinta base).
+Este formulario muestra la lista de materiales de un producto y difiere del formulario de gestión de listas de Fluentis, ya que presenta información que solo tiene sentido en un entorno Ddmrp (a través de este formulario no es posible modificar una lista de materiales).
 
-Gli articoli che sono gestiti a scorta Ddmrp sono evidenziati tramite il simbolo del cestino a tre colori e per essi sono visualizzate informazioni specifiche quali ADU, DLT, Zona rossa, Zona gialla, Zona verde, Capitale circolante.
+Los artículos que se gestionan con stock Ddmrp están destacados con el símbolo del bote de basura de tres colores y para ellos se visualizan información específica como ADU, DLT, Zona roja, Zona amarilla, Zona verde, Capital circulante.
 
-Questi valori sono quelli validi oggi come riscontrabili nel form dei **Parametri Ddmrp**, mentre per il capitale circolante qui si vuole solo evidenziare che il valore si riferisce all'articolo e non alla scorta necessaria per realizzare il prodotto di cui si sta visualizzando la distinta base, pertanto il valore è determinato dal fabbisogno di tutti gli articoli che necessitano del prodotto a scorta. Il valore del capitale circolante mostrato è relativo all'ultimo calcolo eseguito, pertanto se si vuole essere sicuri che sia aggiornato basta lanciare la relativa procedura di calcolo.
+Estos valores son los válidos hoy tal como se pueden encontrar en el formulario de **parametri ddmrp**, mientras que para el capital circulante aquí solo se quiere resaltar que el valor se refiere al artículo y no al stock necesario para fabricar el producto cuya lista de materiales se está visualizando, por lo tanto, el valor está determinado por la necesidad de todos los artículos que requieren el producto en stock. El valor del capital circulante mostrado es relativo al último cálculo realizado, por lo que si se desea asegurar que está actualizado, basta con ejecutar el procedimiento de cálculo correspondiente.
 
-Da questa form è possibile lanciare la procedura [**Calcolo DLT (lead time disaccoppiato)**](/docs/ddmrp/procedures/DLT-calculation), la procedura [**Calcolo delle zone**](/docs/ddmrp/procedures/zones-calculation), la procedura [**Aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/ADU-update), la procedura [**Calcolo valori scorte**](/docs/ddmrp/procedures/inventory-value). 
+Desde este formulario es posible lanzar el procedimiento [**Cálculo DLT (lead time disacoplado)**](/docs/ddmrp/procedures/DLT-calculation), el procedimiento [**Cálculo de zonas**](/docs/ddmrp/procedures/zones-calculation), el procedimiento [**Actualización del consumo medio diario (ADU)**](/docs/ddmrp/procedures/ADU-update), y el procedimiento [**Cálculo de valores de stock**](/docs/ddmrp/procedures/inventory-value).
 
-La visualizzazione DDMRP della distinta è utile quando si fanno delle simulazioni per verificare le variazioni di DLT e di capitale circolante (utilizzare la stampa capitale circolante per una analisi più significativa).
+La visualización DDMRP de la lista es útil cuando se realizan simulaciones para verificar las variaciones de DLT y de capital circulante (utilizar la impresión del capital circulante para un análisis más significativo).
 
-Notare che per alcuni articoli che non sono delle scorte Ddmrp risulta comunque visualizzato il relativo DLT, questo accade per quegli articoli che sono evidenziati in rosso cioè quelli che si trovano sul percorso critico di qualche prodotto finito.
+Cabe señalar que para algunos artículos que no son stock Ddmrp, aún se muestra el respectivo DLT; esto ocurre para aquellos artículos que están destacados en rojo, es decir, aquellos que se encuentran en la ruta crítica de algún producto terminado.
 
-La ragione è che alcuni di essi sono stoccati nei centri di distribuzione, quindi per calcolare il DLT nei centri distribuzione bisogna sommare al tempo di trasporto dalla fabbrica il tempo necessario alla realizzazione dei prodotti.
+La razón es que algunos de ellos están almacenados en los centros de distribución; por lo tanto, para calcular el DLT en los centros de distribución, se debe sumar al tiempo de transporte desde la fábrica el tiempo necesario para la realización de los productos.
 
-Per alcuni articoli che non sono podotti finiti ciò è dovuto al fatto che per calcolare il DLT di un buffer Ddmrp la procedura deve necessariamente calcolare tale valore anche per gli articoli che si trovano sul "percorso critico" del buffer.
+Para algunos artículos que no son productos terminados, esto se debe a que para calcular el DLT de un buffer Ddmrp, el procedimiento debe necesariamente calcular este valor también para los artículos que se encuentran en el "camino crítico" del buffer.
 
-La procedura di calcolo DLT individua tutti gli articoli che si trovano sui perorsi critici di tutte le distinte base presenti nel sistema (quindi non solo quelle di articoli a buffer Ddmrp).
+El procedimiento de cálculo DLT identifica todos los artículos que están en los caminos críticos de todas las listas de materiales presentes en el sistema (por lo tanto, no solo aquellas de artículos con buffer Ddmrp).
 
-Nella visualizzazione distinte base Ddmrp, gli articoli presenti su qualunque percorso critico vengono evidenziati in rosso, pertanto nella visualizzazione di una distinta base ci possono essere più rami di distinta evidenziati in rosso, sia perchè il prodotto di cui si visualizza la distinta può avere più percorsi critici (i cui valori DLT sono quindi uguali), sia perchè alcuni rami sono pezzi di percorsi critici di altri prodotti.
+En la visualización de listas de materiales Ddmrp, los artículos presentes en cualquier camino crítico se destacan en rojo, por lo tanto, en la visualización de una lista de materiales puede haber múltiples ramas de lista destacadas en rojo, ya sea porque el producto cuya lista se visualiza puede tener múltiples caminos críticos (cuyos valores DLT son así iguales), o porque algunas ramas son partes de caminos críticos de otros productos.
 
-La diminuzione del tempo di consegna disaccoppiato (DLT) del prodotto di cui si sta visualizzando la distinta base può essere ottenuta solo creando una scorta Ddmrp per uno degli articoli evidenziati in rosso che si trova sul percorso critico dello stesso (questa precisazione è necessaria poichè in alcuni casi ci possono essere più rami di distinta rossi, alcuni dei quali evidenziano percorsi critici di altri prodotti), pertanto questo tipo di visualizzazione rende semplice capire quali articoli messi a scorta possono portare ad una diminuizione del tempo di consegna del prodotto finito.
+La disminución del tiempo de entrega disacoplado (DLT) del producto cuya lista de materiales se está visualizando solo puede lograrse creando un stock Ddmrp para uno de los artículos destacados en rojo que se encuentra en la ruta crítica del mismo (esta precisión es necesaria ya que en algunos casos puede haber múltiples ramas de lista rojas, algunas de las cuales destacan caminos críticos de otros productos); por lo tanto, este tipo de visualización facilita entender qué artículos en stock pueden llevar a una disminución del tiempo de entrega del producto terminado.
 
-La visualizzazione del capitale circolante consente poi di capire quali scelte di posizionamento di scorte consente contemporanemente di ridurre il tempo di consegna e di minimizzare il capitale circolante impegnato per ottenere tale risultato (vedere stampa del capitale circolante).
+La visualización del capital circulante permite comprender qué decisiones de posicionamiento de stocks permiten simultáneamente reducir el tiempo de entrega y minimizar el capital circulante invertido para lograr ese resultado (ver impresión del capital circulante).
 
-Il costo unitario visualizzato per tutti gli articoli è quello utilizzato nell'ultimo calcolo del Capitale circolante mediamente investito nelle scorte Ddmrp (medio,ultimo,standard) e tiene conto solo dei costi dei materiali e delle lavorazioni esterne per il conto lavoro, cioè costi attribuibili solo a fornitori esterni (vedere la sezione relativa a tale calcolo).
+El costo unitario mostrado para todos los artículos es el utilizado en el último cálculo del Capital circulante promedio invertido en stocks Ddmrp (promedio, último, estándar) y solo tiene en cuenta los costos de materiales y de trabajos externos para el trabajo por encargo, es decir, costos atribuibles solo a proveedores externos (ver la sección relacionada con este cálculo).
 
-Notare che per gli articoli di conto lavoro il costo unitario della lavorazione viene dedotto sottraendo al costo dell'articolo quello dei suoi figli di distinta base.
+Cabe señalar que para los artículos de trabajo por encargo, el costo unitario del trabajo se deduce sustrayendo al costo del artículo el de sus hijos de la lista de materiales.
 
-Moltiplicando questo per la giacenza media (zona rossa + zona verde/2) si ottiene il valore del capitale circolante mediamente investito nella scorta.
+Multiplicando esto por el stock promedio (zona roja + zona verde/2) se obtiene el valor del capital circulante promedio invertido en el stock.
 
-Si prega di notare che il valore del capitale circolante visualizzato nella distinta potrebbe non essere corretto poichè si riferisce agli ultimi valori trovati. 
+Se ruega tener en cuenta que el valor del capital circulante mostrado en la lista podría no ser correcto, ya que se refiere a los últimos valores encontrados.
 
-Se infatti dopo tale calcolo sono variati i valori delle zone dei buffers, o è cambiato il valore del costo unitario, quanto visualizzato non è aggiornato.
+Si después de este cálculo se han modificado los valores de las zonas de los buffers, o ha cambiado el valor del costo unitario, lo que se visualiza no está actualizado.
 
-Per essere sicuri di visualizzare il valore corretto ed aggiornato lanciare la procedura di calcolo costo capitale circolante (calcolo valori scorte).
-
-
-
-
+Para asegurarse de visualizar el valor correcto y actualizado, ejecute el procedimiento de cálculo de costo de capital circulante (cálculo de valores de stock).

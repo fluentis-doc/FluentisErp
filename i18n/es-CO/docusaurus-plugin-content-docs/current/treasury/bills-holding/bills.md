@@ -1,47 +1,42 @@
 ---
-title: Effetti
+title: effetti
 sidebar_position: 3
 ---
 
-La form della ricerca effetti 
-- si trova in Tesoreria > Portafoglio Effetti > Effetti > Effetti
+El formulario de búsqueda de efectos  
+- se encuentra en Tesorería > Cartera de effetti > effetti > effetti 
 
-- permette all'utente di ricercare gli effetti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+- permite al usuario buscar los efectos emitidos anteriormente con el fin de visualizarlos, modificarlos y, eventualmente, eliminarlos. 
 
-Da questa form è possibile anche inserire manualmente un nuovo effetto, ma questa modalità è scarsamente utilizzata nella pratica. Solitamente si procede tramite le procedure di creazione automatica effetti (dalle partite o dalle fatture).
+Desde este formulario también es posible ingresar manualmente un nuevo efecto, pero este modo se utiliza poco en la práctica. Por lo general, se procede a través de los procedimientos de creación automática de efectos (a partir de partidas o facturas).
 
+## Botones de la Ribbon Bar
 
-## Pulsanti della Ribbon Bar
+> - **ricerca effetti**: Botón para buscar los efectos según los filtros de búsqueda establecidos en la cabecera del formulario.  
+> - **nuovo effetto**: Llama al formulario para ingresar un nuevo efecto.  
+> - **modifica effetto**: Permite modificar un efecto ingresado previamente.  
+> - **visualizzazione effetto**: Permite visualizar un efecto ingresado previamente.  
+> - **cancella effetto**: Elimina un efecto ingresado previamente.  
 
-> - **Ricerca effetti:** Pulsante per ricercare gli effetti secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo effetto:** Richiama la form per inserire un nuovo effetto.
-> - **Modifica effetto:** Permette di modificare un effetto precedentemente inserito.
-> - **Visualizzazione effetto:** Permette di visualizzare un effetto precedentemente inserito.
-> - **Cancella effetto:** Cancella un effetto precedentemente inserito.
+> La ejecución de **stampe** (*anteprima* o *stampa*) lanza, para los efectos seleccionados con el mouse (manteniendo presionada la tecla Ctrl se pueden seleccionar varios efectos al mismo tiempo), la impresión homónima presente en el [**menú de impresiones (menu stampe)**](/docs/treasury/bills-holding/reports/bill-holding-situation) del módulo.
 
-> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli effetti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più effetti contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/bill-holding-situation) del modulo
+> - *avviso scadenza effetti*: Carta dirigida al cliente (una página por cada efecto seleccionado) que destaca los efectos que están próximos a vencer con sus respectivos detalles.  
+> - *lettera di cumulo*: Carta dirigida al cliente que destaca las partidas o facturas incluidas en cada efecto.  
+> - *portafoglio effetti*: Imprime una lista de efectos con evidencia de los datos principales relacionados.  
+> - *situazione castelletti*: Imprime, para cada banco (relativo a los efectos seleccionados), la situación del castelletto concedido, utilizado y restante.  
 
-> - *Avviso scadenza effetti*: Lettera indirizzata al cliente (una pagina per ogni effetto selezionato) che evidenzia gli effetti in scadenza con relativi riferimenti
-> - *Lettera di cumulo*:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
-> - *Portafoglio effetti:* Stampa una lista di effetti con evidenza dei dati principali relativi
-> - *Situazione castelletti:* Stampa per ogni banca (relativa agli effetti selezionati) la situazione del castelletto concesso, utilizzato e residuo
+## Filtros de búsqueda
 
+- **conto**: filtro relacionado con el campo **debitore*** presente en el efecto.  
+- **Año / Tipo de efecto (Anno / Tipo effetto)**: filtros relacionados con los campos homónimos presentes en el efecto.  
+- **DE / A / fecha de vencimiento / Fecha de emisión / Número (DA / A / data scadenza / Dat emissione / Numero)**: relativos a los campos homónimos presentes en el efecto.  
+- **stati effetti**: filtro relacionado con el *stato effetto* presente dentro del efecto; este estado se modifica automáticamente según los procedimientos que se hayan ejecutado, por ejemplo, comienza como Emitido (Emesso), luego se convierte en presentado (presentato), Acreditado (Accreditato), insolvente (insoluto), etc.  
+- **divisa**: para filtrar solo efectos denominados, por ejemplo, en dólares, etc.  
+- **Plaza / ABI / CAB / Descripción del Banco (Piazza / ABI / CAB / Descrizione Banca)**: relacionados con el banco de apoyo del deudor.  
+- **Indicador de la sección Estado del Efecto (Flag della sezione Stato Effetto)**: De forma predeterminada está activo *tutti*, pero puede cambiarse seleccionando las diversas condiciones de búsqueda que, si se activan simultáneamente, ampliarán la base de búsqueda; por ejemplo, aquellos impresos + aquellos contabilizados + aquellos NO impresos... 
 
-## Filtri di ricerca
+## Cuadro de resultados
 
-- **Conto:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
-- **Anno / Tipo effetto:** filtri riferiti agli omonimi campi presenti all'interno dell'effetto 
-- **DA / A / data scadenza / Dat emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'effetto
-- **Stati effetti:** filtro riferito allo *Stato effetto* presente all'interno delle'effetto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Emesso , poi diventa presentato, Accreditato, insoluto ecc...
-- **Divisa:** per filtrare solo effetti denominati ad esempio in dollari ecc...
-- **Piazza / ABI / CAB / Descrizione Banca:** riferiti alla banca d'appoggio del debitore
-- **Flag della sezione Stato Effetto:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati .....
+En este formulario, se presentan los mismos campos que se detallaron anteriormente en los filtros.
 
-## Griglia dei risultati
-
-In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
-
-Presenta inoltre gli **Importi** (in valuta, esempio dollari, e in Euro) dell'effetto (coincidenti se l'effetto è denominato in euro).
-
-
-
+También presenta los **Importes** (en divisa, por ejemplo, dólares, y en euros) del efecto (coincidentes si el efecto está denotado en euros).

@@ -1,52 +1,50 @@
 ---
-title: Scarico fatture di vendita dal magazzino
+title: Descarga de facturas de venta desde el almacén (Scarico fatture di vendita dal magazzino)
 sidebar_position: 2
 ---
 
-La procedura si apre tramite il percorso **Vendite > DDT > Procedure > Scarico fatture da magazzino**. 
+El procedimiento se abre a través de la ruta **Ventas > DDT > Procedimientos > Descarga de facturas desde el almacén (Vendite > DDT > Procedure > Scarico fatture da magazzino)**. 
 
-Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nella fattura. 
+Este procedimiento permite ejecutar/restaurar las operaciones de descarga automática desde el almacén de los artículos presentes en la factura. 
 
 ### Filtro
 
-In questo tab, l'utente ha la possibilità di cercare e di trasferire le fatture che hanno impostato al loro interno il flag *Stampata*.
+En esta pestaña, el usuario tiene la posibilidad de buscar y trasladar las facturas que tienen configurado el indicador *stampata* en su interior.
 
-**Data registrazione magazzino**: permette di specificare la data relativa allo scarico dal magazzino, tranne l'impostazione del *Crea la registrazione con la data documento* nei *Parametri fatture di vendita > tab Scarico*.
+**data registrazione magazzino**: permite especificar la fecha relativa a la descarga desde el almacén, excepto en la configuración de *Crear el registro con la fecha del documento (Crea la registrazione con la data documento)* en *Parámetros de facturas de venta > pestaña Descarga (Parametri fatture di vendita > tab Scarico)*.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Ricerca**: permette di cercare le fatture da scaricare.  
-> **Scarico**: permette di eseguire lo scarico delle fatture selezionate dal magazzino, in base agli algoritmi di scarico e ai parametri inseriti nel successivo tab *Parametri*. 
+> **ricerca**: permite buscar las facturas para descargar.  
+> **scarico**: permite realizar la descarga de las facturas seleccionadas del almacén, basado en los algoritmos de descarga y los parámetros introducidos en la siguiente pestaña *Parámetros*. 
 
-### Parametri
+### Parámetros
 
-In questa maschera, l'utente ha la possibilità di specificare, per le righe articolo, il modo di trattare le eccezioni.
+En esta máscara, el usuario tiene la posibilidad de especificar, para las líneas de artículos, la forma de tratar las excepciones.
 
-In questo caso, se le righe fattura non hanno specificato il magazzino e la causale per lo scarico le opzioni disponibile sono:
+En este caso, si las líneas de la factura no han especificado el almacén y el motivo para la descarga, las opciones disponibles son:
 
-- **Non effettuare lo scarico della fattura per intero**: non permette lo scarico parziale del DDT;
+- **No realizar la descarga de la factura en su totalidad**: no permite la descarga parcial del DDT;  
 
-- **Tralasciare l'articolo senza magazzino e causale**: permette lo scarico parziale del documento;
+- **Omitir el artículo sin almacén y motivo**: permite la descarga parcial del documento;  
 
-- **Accettare come magazzino e causale i seguenti dati**: per tutti gli articoli trovati senza magazzino e causale nelle fatture selezionate nella sezione dei filtri, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale* (assicura lo scarico completo del documento).
+- **Aceptar como almacén y motivo los siguientes datos**: para todos los artículos encontrados sin almacén y motivo en las facturas seleccionadas en la sección de filtros, establece los datos ingresados inmediatamente después, en los campos: *magazzino* y *causale* (asegura la descarga completa del documento).
 
-*Pulsante specifico*
+*Botón específico*
 
-> **Salva parametri**: permette di salvare i parametri impostati per la registrazione.
+> **salva parametri**: permite guardar los parámetros configurados para el registro.
 
-Dopo aver selezionato le fatture (dal tab *Filtro*) e impostato i parametri, le fatture possono essere scaricate con l'aiuto del pulsante *Scarico*.
+Después de seleccionar las facturas (desde la pestaña *Filtro*) y establecer los parámetros, las facturas pueden ser descargadas con la ayuda del botón *scarico*.
 
-### Riepilogativo
+### Resumen (Riepilogativo)
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di scarico effettuate, che soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.
+En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y cancelar las operaciones de descarga realizadas, que satisfacen las condiciones específicas de eliminación de los registros del almacén.
 
-I dati nelle griglie in basso, **Fatture** e **Registrazione**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e la sua registrazione di magazzino (doppio click sulla riga).
+Los datos en las cuadrículas de abajo, **fatture** y **registrazione**, corresponden al registro de descarga seleccionado en la cuadrícula superior (después de filtrar los datos). Además, en estas dos últimas cuadrículas, hay la posibilidad de visualizar la factura y su registro de almacén (doble clic en la fila).
 
-*Pulsanti specifici*:
-> **Ricerca fatture scaricate**: per  cercare le fatture scaricate. Il risultato di questa procedura viene visualizzata nella griglia di risultato.  
-> **Cancella scarico**: per  cancellare per intero le operazioni di scarico selezionate nella griglia di risultato.  
-> **Ripristina fatture**: per  cancellare le operazioni di scarico selezionate nella griglia di risultato, per la fattura in uso nella griglia dei dettagli.
-
-
+*Botones específicos*:
+> **ricerca fatture scaricate**: para buscar las facturas descargadas. El resultado de este procedimiento se visualiza en la cuadrícula de resultados.  
+> **cancella scarico**: para eliminar completamente las operaciones de descarga seleccionadas en la cuadrícula de resultados.  
+> **ripristina fatture**: para eliminar las operaciones de descarga seleccionadas en la cuadrícula de resultados, para la factura en uso en la cuadrícula de detalles.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MWEUxnmD1hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

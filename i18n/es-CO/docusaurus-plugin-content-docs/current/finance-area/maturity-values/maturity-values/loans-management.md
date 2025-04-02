@@ -1,55 +1,55 @@
 ---
-title: Gestione mutui
+title: gestione mutui
 sidebar_position: 2
 ---
 
-### Introduzione
+### Introducción (Introduzione)
 
-Dalla presente form è possibile ricercare ed inserire nuovi mutui passivi.
+Desde este formulario es posible buscar e ingresar nuevos préstamos pasivos.
 
-La gestione del mutuo passivo permette, nel dettaglio, di inserire tutti i dati relativi, in particolare il piano di ammortamento del mutuo, al fine di procedere successivamente alla contabilizzazione automatica del pagamento delle rate alle scadenze previste.
+La gestión del préstamo pasivo permite, en detalle, ingresar todos los datos relacionados, en particular el plan de amortización del préstamo, con el fin de proceder posteriormente a la contabilización automática del pago de las cuotas en las fechas previstas.
 
-I campi principali esposti nella maschera ono quelli presenti anche nel dettaglio.
+Los campos principales expuestos en la máscara son los mismos que están presentes en el detalle.
 
-Per inserire un nuovo mutuo premere **Nuovo**.
+Para ingresar un nuevo préstamo presione **nuovo**.
 
-Il primo dato obbligatorio da inserire è il tipo di mutuo, tramite una combo box che rinvia all'apposita tabella *Tipi mutuo* (accessibile anche con il tasto destro e comando Apri form).
+El primer dato obligatorio a ingresar es el tipo de préstamo, a través de una caja combinada que remite a la tabla correspondiente *tipi mutuo* (también accesible con el botón derecho y el comando Abrir formulario).
 
-### Tabella tipi mutuo
+### Tabla de tipos de préstamo (Tabella tipi mutuo)
 
-:::note Campi della tabella Tipi Mutuo
-**Tipo Mutuo**: codice per richiamare il dato
+:::note Campos de la tabla Tipos de Préstamo (Campi della tabella Tipi Mutuo)
+**tipo mutuo**: código para recuperar el dato
 
-**Descrizione del tipo mutuo**: descrizione estesa del dato
+**Descripción del tipo de préstamo (Descrizione del tipo mutuo)**: descripción extensa del dato
 
-**Tipo flusso / Descrizione**: campo per richiamare (nella tabella *Tipi flusso finanziario*) quale tipo di flusso finanziario relativo all'elaborazione del Cash Flow sarà abbinato alle rate mutuo, in modo tale da poterle rappresentare automaticamente nell'elaborazione dei cash flow
+**Tipo de flujo / Descripción (Tipo flusso / Descrizione)**: campo para recuperar (en la tabla *Tipos de flujo financiero*) qué tipo de flujo financiero relacionado con la elaboración del Cash Flow se asociará a las cuotas del préstamo, de manera que pueda representarse automáticamente en la elaboración de los cash flows.
 
-**Causale**: causale contabile abbinata al fine di permettere la contabilizzazione automatica delle rate
+**causale**: causa contable asociada para permitir la contabilización automática de las cuotas
 :::
 
-### Dettaglio nuovo mutuo
+### Detalle del nuevo préstamo (Dettaglio nuovo mutuo)
 
-Gli altri campi obbligatori sono la descrizione del contratto ed i conti principali per le successive operazioni di contabilizzazione
+Los otros campos obligatorios son la descripción del contrato y las cuentas principales para las subsecuentes operaciones de contabilización.
 
-- Banca: per inserire il conto corrente bancario con cui saranno pagate le rate
-- Debito: per inserire il conto di debito dal quale saranno stornati i pagamenti delle rate, **in linea capitale** (ad es. "Mutui passivi") 
-- Interessi: per inserire il conto sul quale sarà contabilizzata la quota interessi di ogni rata
-- Costi: per inserire il conto dove saà contabilizzata la commissione o gli altri costi di ogni rata
+- Banco (Banca): para ingresar la cuenta corriente bancaria con la que se pagarán las cuotas.
+- Deuda (Debito): para ingresar la cuenta de deuda de la cual se destinarán los pagos de las cuotas, **en línea capital (in linea capitale)** (por ejemplo, "Préstamos pasivos (Mutui passivi)").
+- Intereses (Interessi): para ingresar la cuenta sobre la cual se contabilizará la porción de intereses de cada cuota.
+- Costos (Costi): para ingresar la cuenta donde se contabilizará la comisión u otros costos de cada cuota.
 
-Gli altri campi importanti sono l'importo erogato, la divisa (in particolare se diversa da Euro attiva il relativo tasso di cambio)
+Los otros campos importantes son el importe otorgado, la divisa (en particular, si es diferente de Euro, activa el tipo de cambio correspondiente).
 
-**TAEG:** tasso di interesse praticato sul mutuo, il dato viene utilizzato dalla procedura di calcolo automatico del piano di ammortamento.
+**TAEG (TAEG):** tasa de interés aplicada al préstamo, este dato se utiliza en el procedimiento de cálculo automático del plan de amortización.
 
-Il campo Versione si ricollega al pulsante **Nuova Versione** presente nella form di ricerca che permette, anche dopo l'inserimento del piano di ammortamento e la contabilizzazione di alcune rate, di effettuare delle modifiche nel piano storicizzando la situazione precedente.
+El campo Versión se relaciona con el botón **nuova versione** presente en el formulario de búsqueda que permite, incluso después de ingresar el plan de amortización y la contabilización de algunas cuotas, realizar modificaciones en el plan, historiando la situación anterior.
 
-Nella griglia di dettaglio viene inserito il piano di ammortamento composto da tutte le rate previste, compilando ola data (che sarà ripresa nella procedura di contabilizzazione), la quota capitale e la quota interessi e le relative commissioni (nella colonna **Costo**)
+En la cuadrícula de detalle se ingresa el plan de amortización compuesto por todas las cuotas previstas, completando la fecha (que será utilizada en el procedimiento de contabilización), la porción de capital y la porción de intereses y las comisiones correspondientes (en la columna **costo**).
 
-Le successive colonne, evidenziate in azzurro, vengono gestite da Fluentis per evidenziare il totale della rata, l'avvenuta contabilizzazione mediante procedura relativa ed il riferimento alla registrazione contabile generata.
+Las columnas sucesivas, resaltadas en azul, son gestionadas por Fluentis para destacar el total de la cuota, la contabilización realizada mediante el procedimiento correspondiente y la referencia a la registración contable generada.
 
-### Procedure disponibili nella ribbon bar
+### Procedimientos disponibles en la barra de herramientas (Procedure disponibili nella ribbon bar)
 
-Le procedure disponibili, ovvero Calcola Piano di ammortamento, Cambia date Rate e Aggiorna spese rata, sono le medesime disponibili per la gestione dei leasing, pertanto si rinvia alla [**pagina corrispondente**](/docs/finance-area/leasing/new).
+Los procedimientos disponibles, es decir, Calcular Plan de Amortización (Calcola Piano di ammortamento), Cambiar Fechas de Cuotas (Cambia date Rate) y Actualizar Gastos de Cuota (Aggiorna spese rata), son los mismos disponibles para la gestión de leasing, por lo tanto, se remite a la [**página correspondiente**](/docs/finance-area/leasing/new).
 
-### Contabilizzazione rate mutuo
+### Contabilización de cuotas del préstamo (Contabilizzazione rate mutuo)
 
-Avviene utilizzando i comandi posti nella ribbon bar **Contabilizzazione** ( e **Ripristina contabilizzazione** per annullare la manovra)
+Se realiza utilizando los comandos ubicados en la barra de herramientas **contabilizzazione** (y **ripristina contabilizzazione** para anular la operación).

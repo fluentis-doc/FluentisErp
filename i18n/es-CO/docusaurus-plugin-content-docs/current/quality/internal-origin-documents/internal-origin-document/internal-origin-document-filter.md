@@ -1,67 +1,69 @@
 ---
-title: Ricerca Documenti di origine interna
+title: Búsqueda de Documentos de origen interno (Ricerca Documenti di origine interna)
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Documenti di origine interna > Documenti di origine interna**.   
+El filtro se encuentra en la ruta **Calidad > Documentos de origen interno > Documentos de origen interno**.  
 
-Il filtro dati consente di inserire nuovi *Documenti di origine interna* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+El filtro de datos permite ingresar nuevos *Documentos de origen interno* o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.  
 
-### ![](/img/neutral/common/search.png) Ricerca Documenti di origine interna
+### ![](/img/neutral/common/search.png) Búsqueda de Documentos de origen interno
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y otra de resultado. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-### ![](/img/neutral/common/new.png) Inserimento Documenti di origine interna
+### ![](/img/neutral/common/new.png) Inserción de Documentos de origen interno
 
-Per poter inserire nuovi *Documenti di origine interna* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevos *Documentos de origen interno*, es necesario presionar el botón **nuovo**.  
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Documenti di origine interna
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Documentos de origen interno
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.  
 
-*Pulsanti specifici*: 
-    
-### ![](/img/neutral/common/duplicate.png) Duplica Documento di origine interna
+*Botones específicos*: 
 
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *verifica/approvazione* e *redazione/emissione*.
-Per poter duplicare un *Documento di origine interna* esistente in un nuovo *Documento* è necessario cliccare nella griglia sul *Documento* da cui si desidera duplicare e premere il pulsante **Duplica**. Si può duplicare un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Categoria**: è il *Codice categoria documento di origine interna* del nuovo *Documento* (dato obbligatorio).   
-> **Codice**: è il *Codice* del nuovo *Documento* (dato obbligatorio).   
-> **Titolo**: è il *Titolo* del nuovo *Documento* (dato obbligatorio).   
+### ![](/img/neutral/common/duplicate.png) Duplicar Documento de origen interno
 
-*Categoria* e *Titolo* sono proposti dal documento di origine; il *Codice* viene proposto se, alla *Categoria*, è associata una *Codifica automatica*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Il nuovo *Documento di origine interna* creato avrà *Edizione* e *Revisione* pari a *Zero* e lo stato di *In creazione*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
-    
-### Crea nuova revisione Documento di origine interna
+El botón está habilitado solo para los componentes de las *Funciones empresariales* de *verificación/aprobación* y *redacción/emisión*.  
+Para poder duplicar un *Documento de origen interno* existente en un nuevo *Documento*, es necesario hacer clic en la cuadrícula sobre el *Documento* del cual se desea duplicar y presionar el botón **duplica**. Solo se puede duplicar un *Documento* a la vez. Aparecerá una solicitud de:   
+> **categoria**: es el *Código de categoría del documento de origen interno* del nuevo *Documento* (dato obligatorio).   
+> **codice**: es el *Código* del nuevo *Documento* (dato obligatorio).   
+> **titolo**: es el *Título* del nuevo *Documento* (dato obligatorio).   
 
-Per poter creare una nuova *Revisione* ad un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* in stato di *Emesso* da cui si desidera duplicare e premere il pulsante **Crea nuova revisione**. Si può creare una nuova *Revisione* per un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
+*Categoría* y *Título* son propuestos por el documento de origen; el *Código* se sugiere si a la *Categoría* se le asocia una *Codificación automática*.  
+A continuación, presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de duplicado o no.  
+El nuevo *Documento de origen interno* creado tendrá *Edición* y *Revisión* igual a *Cero* y el estado de *in creazione*.  
+Al finalizar el procesamiento, el nuevo *Documento de origen interno* se visualizará.
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Revisione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
-    
-### Crea nuova edizione Documento di origine interna
+### Crear nueva revisión de Documento de origen interno
 
-Per poter creare una nuova *Edizione* ad un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* in stato di *Emesso* da cui si desidera duplicare e premere il pulsante **Crea nuova edizione**. Si può creare una nuova *Edizione* per un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
+Para poder crear una nueva *Revisión* de un *Documento de origen interno* existente, es necesario hacer clic en la cuadrícula sobre el *Documento* en estado de *emesso* del cual se desea duplicar y presionar el botón **crea nuova revisione**. Solo se puede crear una nueva *Revisión* para un solo *Documento* a la vez. Aparecerá una solicitud de:   
+> **motivo della revisione**: una breve descripción del motivo que llevó a la revisión (dato obligatorio).   
+> **modifica su paragrafi**: un recordatorio descriptivo sobre el número de párrafos modificados.   
+> **modifica su pagine**: un recordatorio descriptivo sobre el número de páginas modificadas.   
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Edizione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
-    
-### Annulla Documento di origine interna
-Per poter annullare un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* da cui si desidera eliminare e premere il pulsante **Annulla documento**. Si può *Annullare*" un solo *Documento* alla volta.   
-Premere successivamente il pulsante **Si** o il pulsante **No** se si desidera proseguire nell'attività di annullamento o meno.   
-    
-### Ripristina annullamento Documento di origine interna
-Per poter ripristinare un *Documento di origine interna* precedentemente *Annullato* è necessario cliccare nella griglia sul *Documento* in stato di *Annullato* da cui si desidera ripristinare e premere il pulsante **Ripristina annullamento**. Si può *Ripristinare*" un solo *Documento* alla volta.   
-Premere successivamente il pulsante **Si** o il pulsante **No** se si desidera proseguire nell'attività di ripristino o meno.   
+A continuación, presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de creación o no.  
+Se crea un nuevo *Documento de origen interno*, con toda la información del *Documento* original pero con el índice de *Revisión* incrementado y el estado de *in revisione*. El *Documento* original permanece en vigor con el estado de *emesso*.  
+Al finalizar el procesamiento, el nuevo *Documento de origen interno* se visualizará.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Crear nueva edición de Documento de origen interno
+
+Para poder crear una nueva *Edición* de un *Documento de origen interno* existente, es necesario hacer clic en la cuadrícula sobre el *Documento* en estado de *emesso* del cual se desea duplicar y presionar el botón **crea nuova edizione**. Solo se puede crear una nueva *Edición* para un solo *Documento* a la vez. Aparecerá una solicitud de:   
+> **motivo della revisione**: una breve descripción del motivo que llevó a la revisión (dato obligatorio).   
+> **modifica su paragrafi**: un recordatorio descriptivo sobre el número de párrafos modificados.   
+> **modifica su pagine**: un recordatorio descriptivo sobre el número de páginas modificadas.   
+
+A continuación, presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de creación o no.  
+Se crea un nuevo *Documento de origen interno*, con toda la información del *Documento* original pero con el índice de *Edición* incrementado y el estado de *in revisione*. El *Documento* original permanece en vigor con el estado de *emesso*.  
+Al finalizar el procesamiento, el nuevo *Documento de origen interno* se visualizará.
+
+### Anular Documento de origen interno
+
+Para poder anular un *Documento de origen interno* existente, es necesario hacer clic en la cuadrícula sobre el *Documento* que se desea eliminar y presionar el botón **annulla documento**. Se puede *Anular* un solo *Documento* a la vez.  
+A continuación, presione el botón **Sí (Si)** o el botón **No** si desea continuar con la actividad de anulación o no.  
+
+### Restaurar anulación de Documento de origen interno
+
+Para poder restaurar un *Documento de origen interno* previamente *Anulado*, es necesario hacer clic en la cuadrícula sobre el *Documento* en estado de *annullato* que se desea restaurar y presionar el botón **ripristina annullamento**. Se puede *Restaurar* un solo *Documento* a la vez.  
+A continuación, presione el botón **Sí (Si)** o el botón **No** si desea continuar con la actividad de restauración o no.  
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

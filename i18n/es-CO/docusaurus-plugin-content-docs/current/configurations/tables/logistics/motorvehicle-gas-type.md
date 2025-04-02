@@ -1,34 +1,34 @@
 ---
-title: Tipi carburanti autoveicolo
+title: Tipos de combustibles para vehículos (Tipi carburanti autoveicolo)
 sidebar_position: 55
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi carburanti autoveicolo**.
+La tabla se encuentra en la ruta **Tablas > Logística > Tipos de combustibles para vehículos (Tabelle > Logistica > Tipi carburanti autoveicolo)**.
 
-In questa tabella è possibile codificare i *Tipi carburanti autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+En esta tabla es posible codificar los *Tipos de combustibles para vehículos (Tipi carburanti autoveicolo)* que podrán ser seleccionados en el [Registro de vehículos (Anagrafica automezzi)](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi carburanti autoveicolo**
+**Búsqueda de Tipos de combustibles para vehículos (Ricerca Tipi carburanti autoveicolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi carburanti autoveicolo**
+**Inserción de Tipos de combustibles para vehículos (Inserimento Tipi carburanti autoveicolo)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si deve inserire un solo campo obbligatorio richiesto dal programma: la **Descrizione**.         
-Inoltre, per ogni tipologia è possibile indicare se sia:  
-- **Carburante a metano**
-- **Carburante diesel**
-- **Carburante ibrido**
-- **Carburante elettrico**
-- **Carburante a GPL**
-- **Carburante organico**
-- **Carburante benzina**
-- **Carburante ibrido/benzina**
-semplicemente attivando il relativo flag.
-Questi flag sono usati per identificare il tipo di combustibile usato dall'automezzo ai fini dell'ESG.
+Para poder insertar nuevos registros es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se debe ingresar un solo campo obligatorio requerido por el programa: la **descrizione**.  
+Además, para cada tipo se puede indicar si es:  
+- **Combustible a gas natural (Carburante a metano)**
+- **Combustible diésel (Carburante diesel)**
+- **Combustible híbrido (Carburante ibrido)**
+- **Combustible eléctrico (Carburante elettrico)**
+- **Combustible a GPL (Carburante a GPL)**
+- **Combustible orgánico (Carburante organico)**
+- **Gasolina (Carburante benzina)**
+- **Híbrido/gasolina (Carburante ibrido/benzina)**  
+simplemente activando el respectivo indicador.  
+Estos indicadores se utilizan para identificar el tipo de combustible utilizado por el vehículo para fines del ESG.
 
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Con el botón **cancella** es posible eliminar el registro seleccionado.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common). 
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

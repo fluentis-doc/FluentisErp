@@ -1,20 +1,12 @@
 ---
-title: Risultati
+title: risultati
 sidebar_position: 4
 ---
 
-Nel tabulatore 'Risultati' è possibile visualizzare e cancellare il risultato dei calcoli effettuati, con la possibilità di poter filtrare l'interrogazione per conto/sottoconto e tipo di pagamento
+En la pestaña 'risultati (Risultati)' es posible visualizar y eliminar el resultado de los cálculos realizados, con la posibilidad de filtrar la consulta por cuenta/subcuenta y tipo de pago.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca risultati | Il pulsante ricerca i risultati di calcolo eseguiti. |
-| Cancella | Il pulsante cancella i risultati di calcolo eseguiti. |
-| Elimina dettaglio | Il pulsante cancella solo i dettagli selezionati di un determinato calcolo. |
-
-
-
-
-
-
+| Buscar resultados (Ricerca risultati) | El botón busca los resultados de cálculo realizados. |
+| Eliminar (Cancella) | El botón elimina los resultados de cálculo realizados. |
+| Eliminar detalle (Elimina dettaglio) | El botón elimina solo los detalles seleccionados de un determinado cálculo. |

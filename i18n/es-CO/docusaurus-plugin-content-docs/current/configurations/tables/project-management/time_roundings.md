@@ -1,52 +1,42 @@
 ---
-title: Arrotondamenti temporali
+title: arrotondamenti temporali
 sidebar_position: 24
 ---
 
-La tabella è collocata in Configurazione > tabelle > Gestione progetti > Arrotondamenti temporali
+La tabla está ubicada en Configuración > tablas > Gestión de proyectos > arrotondamenti temporali (Configurazione > tabelle > Gestione progetti > Arrotondamenti temporali).
 
-in questa tabella sono configurati gli arrotondamenti da applicare nel piano di fatturazione alle ore di servizio dichiarate negli interventi
+En esta tabla se configuran los redondeos que se aplicarán en el plan de facturación a las horas de servicio declaradas en las intervenciones.
 
-**Minuti** indica lo scaglione da cui parte l'arrotondamento, utilizzato per trovare l'arrotondamento da applicare in base alle ore di servizio dell'intervento svolto. 
-**Arrotondamento** numero di minuti a cui arrotondare 
-**Tolleranza** minuti di tolleranza prima di far scattare l'arrotondamento o l'eventuale scaglione successivo
+**minuti** indica el intervalo a partir del cual comienza el redondeo, utilizado para encontrar el redondeo que se aplicará según las horas de servicio de la intervención realizada.  
+**arrotondamento** número de minutos a los que redondear.  
+**tolleranza** minutos de tolerancia antes de activar el redondeo o el posible intervalo siguiente.
 
+La tabla opera en “intervalos”.
 
-La tabella ragiona in “scaglioni”.
+Si, por ejemplo, se desea redondear todas las intervenciones de 2 horas a 2 horas, es suficiente con configurar:
 
+>> minutos 0 > redondeo en minutos 120 > tolerancia 0
 
-Se ad es. si vuole arrotondare tutti gli interventi di 2 ore in 2 ore, è sufficiente configurare: 
+>> esto indica que de 0 al infinito, las horas se redondearán siempre de 2 en 2. La tolerancia indica el intervalo de tiempo después del cual se activa el siguiente intervalo.
 
+>> Ej.  
+- intervención A: 1 h y 30 minutos > facturado 2 horas  
+- intervención B: 2 h y 10 minutos > facturado 4 horas  
+- intervención C: 8 h y 30 minutos > facturado 10 horas  
 
->> minuti 0 > arrotondamento in minuti 120 > tolleranza 0
+Al añadir la tolerancia de, por ejemplo, 15 minutos, la intervención B se facturará a 2 horas.  
+Añadiendo otro intervalo, se puede, por ejemplo, ajustar el redondeo para las horas posteriores a las 8:
 
+>> minutos 0 > redondeo en minutos 120 > tolerancia 0  
 
->> questo indica che da 0 all’infinito le ore verranno sempre arrotondate di 2 in 2. Tolleranza indica il gap di tempo oltre al quale scatta lo scaglione successivo. 
+>> minutos 480 > redondeo en minutos 30 > tolerancia 0  
 
+Por lo que en el ejemplo anterior, la intervención C se facturará 8 h y 30 minutos. Si la intervención C hubiera sido de 8 h y 15 minutos, aún así se habrían facturado 8 h y 30 minutos, dado que se prevé el redondeo a la media hora.
 
->> Es. 
-- intervento A: 1 h e 30 minuti > fatturato 2 ore
-- Intervento B: 2h e 10 minuti > fatturato 4 ore
-- Intervento C: 8h e 30 minuti > fatturato 10 ore
+Si se desea facturar, por ejemplo, 4 o 8 horas, se puede configurar:
 
+>> Minutos 0 > redondeo 240 minutos > tolerancia 0  
 
-Aggiungendo la tolleranza ad es. 15 minuti, l’intervento B verrà fatturato a 2 ore. 
-Aggiungendo un altro scaglione possiamo ad es. regolare l’arrotondamento per le ore successive alle 8 ad Es. 
+>> Minutos 240 > redondeo 240 minutos > tolerancia 0  
 
->> minuti 0 > arrotondamento in minuti 120 > tolleranza 0
-
-
->> minuti 480 > arrotondamento in minuti 30 > tolleranza 0
-
-Per cui nell’esempio precedente l’intervento C verrà fatturato 8h e 30 minuti Se l’intervento C fosse stato 8h e 15 minuti, sarebbero stati fatturati comunque 8h e 30 minuti, essendo previsto l’arrotondamento alla mezz’ora. 
-
-Se si desidera fatturare ad es. o 4 o 8 ore , si può configurare 
-
-
->> Minuti 0 > arrotondamento 240 minuti > tolleranza 0
-
-
->> Minuti 240 > arrotondamento 240 minuti > tolleranza 0
-
-
->> Minuti 480 > arrotondamento 1 minuti > tolleranza 0 in modo che oltre alle 8 ore non effettui arrotondamenti
+>> Minutos 480 > redondeo 1 minuto > tolerancia 0, de modo que después de las 8 horas no se realicen redondeos.

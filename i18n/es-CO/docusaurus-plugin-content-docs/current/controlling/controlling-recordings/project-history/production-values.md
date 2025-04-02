@@ -1,26 +1,26 @@
 ---
-title: Valori da produzione
+title: valori da produzione
 sidebar_position: 4
 ---
 
-In questa maschera possiamo visualizzare i costi dei materiali collegati a progetto/commessa, sia quelli lavorati internamente che esternamente.
+En esta ventana podemos visualizar los costos de los materiales relacionados con el proyecto/orden, tanto los trabajados internamente como externamente.
 
-I campi disponibili sono i seguenti:
+Los campos disponibles son los siguientes:
 
-- il ***Sottoconto*** di costo, che sarà tipicamente il Fatturato acquisti collegato all'articolo piuttosto che il conto delle lavorazioni esterne
+- el **sottoconto*** de costo, que será típicamente el Ingresos de compras (Fatturato acquisti) relacionado con el artículo en lugar de la cuenta de los trabajos externos
 
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) collegato alla riga, che arriva tipicamente dell'impostazione nel piano dei conti del sottoconto precedente
+- el [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) asociado a la línea, que típicamente proviene de la configuración en el plan de cuentas de la subcuenta anterior
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- el **anno*** y el **periodo*** de referencia
 
-- ***Numero progetto***, ***Anno progetto***, ***Riga***, ***Numero Wbs***: saranno sempre valorizzati dai riferimenti ai progetti
+- **numero progetto***, **anno progetto***, **riga***, **numero wbs***: siempre serán valorados a partir de las referencias a los proyectos
 
-- ***Articolo*** e ***Descrizione articolo*** i dati dell'articolo movimentato
+- **articolo*** y **descrizione articolo***, los datos del artículo movimentado
 
-- l'[***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimento
+- la [**unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimiento
 
-- la ***Quantità*** del movimento
+- la **quantità*** del movimiento
 
-- il ***Costo medio***, piuttosto che ***Costo standard*** o ***Costo ultimo*** per la riga
+- el **costo medio***, en lugar de **costo standard*** o **costo ultimo*** para la línea
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+No se permite la eliminación ni la modificación o la inserción de datos en la cuadrícula.

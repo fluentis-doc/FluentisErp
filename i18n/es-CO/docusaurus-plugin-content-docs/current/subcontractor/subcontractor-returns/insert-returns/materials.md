@@ -1,25 +1,25 @@
 ---
-title: Materiali
+title: materiali
 sidebar_position: 5
 ---
 
-In questo tab vengono visualizzati i materiali che il terzista dovrebbe aver utilizzato per produrre ciò che è stato inserito nel tab *Articoli*. La proposta dei materiali viene definita nei Parametri di Conto lavoro, nel campo **Dati materiali proposti**.
+En esta pestaña se visualizan los materiales que el tercero debería haber utilizado para producir lo que se ha ingresado en la pestaña *articoli*. La propuesta de materiales se define en los Parámetros de Trabajo por Encargo (Conto lavoro), en el campo **dati materiali proposti**.
 
-La sezione *Articolo* contiene le informazioni della riga selezionata nel tab *Articoli*
+La sección *articolo* contiene la información de la línea seleccionada en la pestaña *articoli*.
 
-## Materiali
+## materiali (Materiali)
 
-Per ogni articolo visualizzato sopra si possono inserire i materiali e i loro dettagli, oppure questi dati verranno proposti.
+Para cada artículo mostrado arriba se pueden ingresar los materiales y sus detalles, o estos datos serán propuestos.
 
-### Dettaglio materiale
+### Detalle de material (Dettaglio materiale)
 
-In questa tab vengono inseriti i Materiali che non sono stati utilizzati dal terzista, perchè in eccesso o perchè scartati.
+En esta pestaña se ingresan los materiales que no han sido utilizados por el tercero, ya sea por exceso o porque fueron descartados.
 
-*Campi specifici*:
+*Campos específicos (Campi specifici)*:
 
-**Magazzino**: in questa colonna viene visualizzato il codice del magazzino Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente;
+**magazzino**: en esta columna se visualiza el código del almacén de Devoluciones (Resi), tomado de los parámetros de trabajo por encargo, visualizado automáticamente solo si se ingresa la cantidad devuelta en la línea del material, editable por el usuario;  
 
-**Causale**: in questa colonna viene visualizzato il codice della causale per il carico dei Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente. Se i materiali non utilizzati dall'utente sono stati scartati, allora la causale non deve avere contropartita. Se invece i materiali sono stati tornati, allora la causale deve avere una contropartita di carico per indicare dove collocare i materiali resi.
+**causale**: en esta columna se visualiza el código de la causa para la carga de las Devoluciones (Resi), tomado de los parámetros de trabajo por encargo, visualizado automáticamente solo si se ingresa la cantidad devuelta en la línea del material, editable por el usuario. Si los materiales no utilizados por el usuario han sido descartados, entonces la causa no debe tener contrapartida. Si, en cambio, los materiales han sido devueltos, entonces la causa debe tener una contrapartida de carga para indicar dónde colocar los materiales devueltos.  
 
-**Carico Lotto**
-Nella griglia, l'utente può indicare quali siano i lotti dei materiali che sono stati utilizzati dal terzista. Le colonne visualizzate e le regole di utilizzo della griglia sono le stesse rispetto alla griglia lotti del tab Lotti\SN che si trova nel tab *Articoli*.
+**carico lotto**  
+En la cuadrícula, el usuario puede indicar cuáles son los lotes de materiales que han sido utilizados por el tercero. Las columnas visualizadas y las reglas de uso de la cuadrícula son las mismas que las de la cuadrícula de lotes en la pestaña Lotes\SN que se encuentra en la pestaña *articoli*.

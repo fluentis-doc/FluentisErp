@@ -1,80 +1,80 @@
 ---
-title: Tipo codice lotto
+title: tipo codice lotto
 sidebar_position: 26
 ---
 
-:::important A cosa serve
-La tabella Tipi Codice Lotto di Fluentis rappresenta uno strumento fondamentale per la personalizzazione e la gestione dei codici lotto utilizzati nella logistica e nella tracciabilità dei prodotti. Questa tabella consente di definire vari tipi di codice lotto in base alle specifiche esigenze aziendali, con l'obiettivo di ottimizzare le operazioni di gestione dei materiali e garantire una corretta identificazione dei lotti.
+:::important ¿Para qué sirve? (A cosa serve)
+La tabla Tipos de Código de Lote de Fluentis representa una herramienta fundamental para la personalización y la gestión de los códigos de lote utilizados en la logística y el seguimiento de productos. Esta tabla permite definir varios tipos de código de lote según las necesidades específicas de la empresa, con el objetivo de optimizar las operaciones de gestión de materiales y garantizar una correcta identificación de los lotes.
 
-All'interno di questa tabella, è possibile inserire nuovi codici lotto, specificando sia un codice identificativo che una descrizione associata. Inoltre, è possibile configurare parametri come il valore iniziale del numero progressivo e la gestione dei caratteri alfabetici, permettendo una maggiore flessibilità nella composizione dei codici lotto. È importante notare che ogni tipo di codice deve essere associato all'anagrafica articolo per garantire una corretta integrazione durante le procedure di creazione automatica del lotto.
+Dentro de esta tabla, es posible introducir nuevos códigos de lote, especificando tanto un código identificativo como una descripción asociada. Además, se pueden configurar parámetros como el valor inicial del número progresivo y la gestión de caracteres alfabéticos, permitiendo una mayor flexibilidad en la composición de los códigos de lote. Es importante señalar que cada tipo de código debe estar asociado al registro del artículo para garantizar una correcta integración durante los procedimientos de creación automática del lote.
 
-La configurazione di questi codici lotto non solo facilita il controllo e la tracciabilità, ma si rivela essenziale anche in contesti di gestione multi-magazzino, dove la rintracciabilità delle giacenze diventa fondamentale. Gli utenti possono così navigare attraverso diverse sezioni della tabella per definire in dettaglio le caratteristiche, le associazioni e i progressivi dei lotti, contribuendo a una gestione più efficiente e accurata dei materiali all'interno dell'azienda.
+La configuración de estos códigos de lote no solo facilita el control y seguimiento, sino que también es esencial en contextos de gestión multi-almacén, donde la trazabilidad de las existencias se vuelve fundamental. Los usuarios pueden navegar a través de diferentes secciones de la tabla para definir en detalle las características, asociaciones y progresivos de los lotes, contribuyendo a una gestión más eficiente y precisa de los materiales dentro de la empresa.
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipo codice lotto**.
+La tabla se encuentra en la ruta **Tablas > Logística > tipo codice lotto (Tabelle > Logistica > Tipo codice lotto)**.
 
-In questa tabella è possibile codificare i *Tipi di codice lotto* personalizzandoli in base alle esigenze.
+En esta tabla es posible codificar los *Tipos de código de lote* personalizándolos según las necesidades.
 
-### Ricerca Codici lotto 
+### Búsqueda de Códigos de Lote (Ricerca Codici lotto)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati nell'aria di risultato.
+El formulario consta de un área de filtro y de una de resultados. Una vez establecidos los filtros deseados, solo se debe hacer clic en el botón **ricerca** para visualizar los resultados en el área de resultados.
 
-### Inserimento Codici lotto 
+### Introducción de Códigos de Lote (Inserimento Codici lotto)
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder introducir nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-È necessario inserire **Codice** e **Descrizione** del tipo codice lotto, abilitare o meno il flag **Riempire valore progressivo** per riempire i valori mancanti nella numerazione, ed inserire il valore iniziale del progressivo numerico nel campo **Inizia valore progressivo** e quello alfabetico nel campo **Inizio valore carattere**. Ovviamente, il primo sarà il valore iniziale del **Numero progressivo**, mentre il secondo sarà il valore iniziale usato per i **Caratteri alfabetici**.
+Es necesario ingresar el **codice** y la **descrizione** del tipo de código de lote, habilitar o no el indicador **riempire valore progressivo** para completar los valores faltantes en la numeración, e ingresar el valor inicial del progresivo numérico en el campo **inizia valore progressivo** y el valor alfabético en el campo **Iniciar valor carácter (Inizio valore carattere)**. Obviamente, el primero será el valor inicial del **numero progressivo**, mientras que el segundo será el valor inicial usado para los **Caracteres alfabéticos (Caratteri alfabetici)**.
 
-Il **Tipo codice lotto** deve poi essere agganciato all'*Anagrafica articolo* nell'apposito ed omonimo campo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-item), in modo che nelle procedure che creano automaticamente il codice lotto per l'articolo in questione il lotto stesso venga generato secondo le regole impostate qui.
+El **tipo codice lotto** debe luego estar vinculado al *anagrafica articolo* en el campo correspondiente y homónimo ubicado en la pestaña [Lotes y número de serie (Lotti e serial number)](/docs/erp-home/registers/items/create-new-item), de modo que en los procedimientos que crean automáticamente el código de lote para el artículo en cuestión, el lote se genere según las reglas establecidas aquí.
 
-Al di sotto della tabella principale, sono presenti tre tab:   
-- **Dettagli tipo codice lotto**
-- **Dettagli tipo codice lotto definizione progressivo**  
-- **Dettagli tipo codice lotto dei valori chiave progressivi**    
+Debajo de la tabla principal, hay tres pestañas:  
+- **dettagli tipo codice lotto**  
+- **dettagli tipo codice lotto definizione progressivo**  
+- **dettagli tipo codice lotto dei valori chiave progressivi**    
 
-### Dettagli tipo codice lotto 
+### Detalles del Tipo de Código de Lote (Dettagli tipo codice lotto)
 
-nella tabella *Codice predefinito*, sono presenti tutti i valori che è possibile utilizzare per la composizione del lotto che stiamo creando, che nello specifico sono:
+En la tabla *codice predefinito*, se encuentran todos los valores que se pueden utilizar para la composición del lote que estamos creando, que son:
 
-> *Classe*: riporta la classe dell'articolo;    
-> *Matricola*: riporta il codice articolo;     
-> *Caratteristica*: riporta la caratteristica dell'anagrafica articolo;     
-> *Cat. Merceologica*: riporta la categoria merceologica dell'anagrafica articolo;    
-> *Tipo Articolo*: riporta il tipo articolo dell'anagrafica articolo;    
-> *Variante*: riporta la variante dell'articolo;    
-> *Numero progressivo*: è un progressivo di tipo numerico;          
-> *Caratteri alfabetici*: è un progressivo di tipo alfabetico, al contrario del *Numero progressivo* che è numerico;        
-> *Giorno Data Inserimento*: riporta il giorno della data inserimento;    
-> *Mese Data Inserimento*: riporta il mese della data inserimento;    
-> *Anno Data Inserimento*: riporta l'anno della data inserimento;    
-> *Giorno Data Scadenza*: riporta il giorno della data di scadenza;    
-> *Mese Data Scadenza*: riporta il mese della data di scadenza;    
-> *Anno Data Scadenza*: riporta l'anno della data di scadenza;     
-> *Tipo Lotto*: riporta il tipo lotto dell'articolo;     
-> *Associazione Anno Lettera*: riporta il valore associato all'anno nella tabella [Associazione anno - lettera](/docs/configurations/tables/general-settings/year-letter-association);    
-> *Associazione Mese Lettera*: riporta il valore associato al mese nella tabella [Associazione mese - lettera](/docs/configurations/tables/general-settings/month-letter-association);    
-> *Nomignolo fornitore*: riporta il nomignolo presente in anagrafica del fornitore;          
-> *Numero Bolla Acquisto*: riporta il numero della bolla di acquisto;     
-> *Numero Fattura Acquisto*: riporta il numero della fattura di acquisto;    
-> *Lotto Fornitore*: riporta il numero del lotto fornitore.    
+> *classe*: indica la clase del artículo;    
+> *matricola*: indica el código del artículo;     
+> *caratteristica*: indica la característica del registro del artículo;     
+> *cat. merceologica*: indica la categoría mercantil del registro del artículo;    
+> *tipo articolo*: indica el tipo de artículo del registro del artículo;    
+> *variante*: indica la variante del artículo;    
+> *numero progressivo*: es un progresivo de tipo numérico;          
+> *Caracteres Alfabéticos (Caratteri alfabetici)*: es un progresivo de tipo alfabético, a diferencia del *numero progressivo* que es numérico;        
+> *Día de la Fecha de Inserción (Giorno Data Inserimento)*: indica el día de la fecha de inserción;    
+> *Mes de la Fecha de Inserción (Mese Data Inserimento)*: indica el mes de la fecha de inserción;    
+> *Año de la Fecha de Inserción (Anno Data Inserimento)*: indica el año de la fecha de inserción;    
+> *Día de la Fecha de Caducidad (Giorno Data Scadenza)*: indica el día de la fecha de caducidad;    
+> *Mes de la Fecha de Caducidad (Mese Data Scadenza)*: indica el mes de la fecha de caducidad;    
+> *Año de la Fecha de Caducidad (Anno Data Scadenza)*: indica el año de la fecha de caducidad;     
+> *Tipo de Lote (Tipo Lotto)*: indica el tipo de lote del artículo;     
+> *Asociación Año Letra (Associazione Anno Lettera)*: indica el valor asociado al año en la tabla [Asociación año - letra (Associazione anno - lettera)](/docs/configurations/tables/general-settings/year-letter-association);    
+> *Asociación Mes Letra (Associazione Mese Lettera)*: indica el valor asociado al mes en la tabla [Asociación mes - letra (Associazione mese - lettera)](/docs/configurations/tables/general-settings/month-letter-association);    
+> *Apodo de Proveedor (Nomignolo fornitore)*: indica el apodo presente en el registro del proveedor;          
+> *Número de Recibo de Compra (Numero Bolla Acquisto)*: indica el número del recibo de compra;     
+> *Número de Factura de Compra (Numero Fattura Acquisto)*: indica el número de la factura de compra;    
+> *lotto fornitore*: indica el número del lote del proveedor.    
 
-Ognuno di questi, a seconda delle esigenze, deve essere poi spostato nella tabella *Dettagli tipo codice lotto* tramite l'uso degli appositi pulsanti presenti nella ribbon bar. 
-Per ciascuna voce aggiunta, è possibile definire la *Lunghezza* e il *Carattere di riempimento*.
+Cada uno de estos, según las necesidades, debe ser luego trasladado a la tabla *dettagli tipo codice lotto* mediante el uso de los botones correspondientes en la barra de menú. 
+Para cada entrada añadida, es posible definir la *Longitud* y el *Carácter de relleno*.
 
-#### Pulsanti specifici  
-> **Sposta: Predefinito -> Dettaglio**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Dettaglio tipo codice lotto*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto*;          
-> **Sposta: Dettaglio -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Dettaglio tipo codice lotto* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Dettaglio tipo codice lotto* del tab *Dettaglio tipo codice lotto*;               
+#### Botones específicos  
+> **Mover: Predeterminado -> Detalle (Sposta: Predefinito -> Dettaglio)**: permite agregar una de las entradas presentes en la tabla *codice predefinito* a la tabla *Detalle del tipo de código de lote (Dettaglio tipo codice lotto)*. Este botón se habilita solo después de haber seleccionado una fila en la tabla *Código predeterminado* del tab *Detalle del tipo de código de lote*;          
+> **Mover: Detalle -> Predeterminado (Sposta: Dettaglio -> Predefinito)**: permite eliminar una de las entradas presentes en la tabla *Detalle del tipo de código de lote* trasladándola de nuevo a la tabla *codice predefinito*. Este botón se habilita solo después de haber seleccionado una fila en la tabla *Detalle del tipo de código de lote* del tab *Detalle del tipo de código de lote*;               
 
-#### Dettagli tipo codice lotto definizione progressivo 
+#### Detalles de la Definición Progresiva del Tipo de Código de Lote (Dettagli tipo codice lotto definizione progressivo)
 
-In questo tab è possibile definire quali delle voci presenti nella tabella *Codice predefinito* debbano comporre la radice del codice lotto, quindi quella parte del codice che rimarrà fissa mentre varierà il progressivo. In questo caso non è possibile selezionare le voci *Numero progressivo* e *Caratteri alfabetici* perchè essendo dei progressivi variano continuamente, mentre è possibile selezionare tutte le altre voci.
+En esta pestaña es posible definir cuáles de las entradas presentes en la tabla *codice predefinito* deben componer la raíz del código de lote, es decir, aquella parte del código que permanecerá fija mientras el progresivo varía. En este caso no es posible seleccionar las entradas *numero progressivo* y *Caracteres Alfabéticos (Caratteri alfabetici)* porque, al ser progresivos, varían continuamente, mientras que es posible seleccionar todas las demás entradas.
 
-#### Pulsanti specifici  
-> **Sposta: Predefinito -> Definizione progressivo**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Definizione progressivo*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto definizione progressivo*;          
-> **Sposta: Definizione progressivo -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Definizione progressivo* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Definizione progressivo* del tab *Dettaglio tipo codice lotto definizione progressivo*;  
+#### Botones específicos  
+> **Mover: Predeterminado -> Definición Progresivo (Sposta: Predefinito -> Definizione progressivo)**: permite agregar una de las entradas presentes en la tabla *codice predefinito* a la tabla *definizione progressivo*. Este botón se habilita solo después de haber seleccionado una fila en la tabla *Código predeterminado* del tab *Detalle del tipo de código de lote definición progresiva*;          
+> **Mover: Definición Progresivo -> Predeterminado (Sposta: Definizione progressivo -> Predefinito)**: permite eliminar una de las entradas presentes en la tabla *Definición Progresivo* trasladándola de nuevo a la tabla *codice predefinito*. Este botón se habilita solo después de haber seleccionado una fila en la tabla *Definición Progresivo* del tab *Detalle del tipo de código de lote definición progresiva*;  
 
-#### Dettagli tipo codice lotto dei valori chiave progressivi 
+#### Detalles de los Valores Clave Progresivos del Tipo de Código de Lote (Dettagli tipo codice lotto dei valori chiave progressivi)
 
-In questa tab vengono visualizzati tutti i valori degli ultimi progressivi relativi ad ogni singola radice del codice.
+En esta pestaña se visualizan todos los valores de los últimos progresivos relacionados con cada raíz del código.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,34 +1,34 @@
 ---
-title: Unità di misura dei centri aziendali per il controlling
+title: unità di misura dei centri aziendali per il controlling
 sidebar_position: 8
 ---
 
-La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Unità di misura dei centri aziendali per il controlling**
+El formulario se encuentra en la ruta: **Tablas > Controlling > Contabilidad analítica > unità di misura dei centri aziendali per il controlling**
 
-In questa tabella possiamo specificare, ad esempio, che nell’ area di ANALISI *CONSUNTIVO*, il macchinario *X*, legge i dati di produzione, per costi diretti e costi di commessa, sulla base dell’ unità di misura specificata, per ogni centro aziendale, relativamente a: 
+En esta tabla podemos especificar, por ejemplo, que en el área de ANÁLISIS *consuntivo*, la maquinaria *X*, lee los datos de producción, para costos directos y costos de pedido, en base a la unidad de medida especificada, para cada centro empresarial, en relación a:
 
--	IL TEMPO DI RI-ATTREZZAGGIO
--	IL TEMPO UOMO 
--	IL TEMPO MACCHINA 
+- EL TIEMPO DE RE-ADORNO (RI-ATTREZZAGGIO)
+- EL TIEMPO HOMBRE (TEMPO UOMO)
+- EL TIEMPO MÁQUINA (TEMPO MACCHINA)
 
-Le tre misure non sono tutte obbligatorie ma, a seconda del centro, si valorizzerà una, due o tre dimensioni.
+Las tres medidas no son obligatorias, pero, dependiendo del centro, se valorizará una, dos o tres dimensiones.
 
-E' presente anche un' indicazione di validità della regola. 
+También hay una indicación de validez de la regla.
 
-Per un’ area di analisi diversa, ad esempio *BUDGET*, è possibile ragionare con altre regole ed altre date di validità.
+Para un área de análisis diferente, por ejemplo *PRESUPUESTO (BUDGET)*, es posible trabajar con otras reglas y otras fechas de validez.
 
-#### Campi tabella
+#### Campos de la tabla
 
-**AREA / DESCRIZIONE**: Necessari per  definire a quale area di analisi le varie logiche che si stanno codificando si riferiranno
+**ÁREA / DESCRIPCIÓN (AREA / DESCRIZIONE)**: Necesarios para definir a qué área de análisis se referirán las diversas lógicas que se están codificando.  
 
-**CENTRO AZIENDALE / DESCRIZIONE**: Necessari per definire a quale centro aziendale le varie logiche che si stanno codificando si riferiranno
+**CENTRO EMPRESARIAL / DESCRIPCIÓN (CENTRO AZIENDALE / DESCRIZIONE)**: Necesarios para definir a qué centro empresarial se referirán las diversas lógicas que se están codificando.  
 
-**TEMPO DI RI-ATTREZZAGGIO**: Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
+**TIEMPO DE RE-ADORNO (TEMPO DI RI-ATTREZZAGGIO)**: Combo box que permite seleccionar la unidad de medida a utilizar. El campo está vinculado a la Tabla general de Unidades de medida.  
 
-**TEMPO UOMO**: Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
+**tempo uomo**: Combo box que permite seleccionar la unidad de medida a utilizar. El campo está vinculado a la Tabla general de Unidades de medida.  
 
-**TEMPO MACCHINA**: Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
+**tempo macchina**: Combo box que permite seleccionar la unidad de medida a utilizar. El campo está vinculado a la Tabla general de Unidades de medida.  
 
-**DA DATA / A DATA**: range di date di validità della regola che si sta impostando
+**DE FECHA / A FECHA (DA DATA / A DATA)**: rango de fechas de validez de la regla que se está estableciendo.  
 
-**FLAG Usa Riattrezzaggio / Tempo Uomo / Tempo macchina in calcolo produttività**: Agiscono come degli "interruttori" per abilitare o disabilitare la logica impostata nella riga corrispondente ai fini del calcolo di produttività del centro.
+**FLAG Usa Readorno / Tiempo Hombre / Tiempo máquina en cálculo de productividad (FLAG Usa Riattrezzaggio / Tempo Uomo / Tempo macchina in calcolo produttività)**: Actúan como "interruptores" para habilitar o deshabilitar la lógica establecida en la fila correspondiente para fines del cálculo de productividad del centro.

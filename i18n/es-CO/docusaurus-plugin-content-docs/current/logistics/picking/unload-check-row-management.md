@@ -1,43 +1,43 @@
 ---
-title: Scarico spunta
+title: Descarga de verificación (Scarico spunta)
 sidebar_position: 5
 ---
 
-:::important A cosa serve
-La procedura di Scarico Spunta di Fluentis è un modulo specializzato che consente di gestire il processo di scarico solo per le righe che sono state effettivamente spuntate durante le operazioni di picking. Questa funzionalità garantisce un'ondata di efficienza e precisione, permettendo di selezionare e registrare solo gli articoli che sono stati confermati come prelevati da magazzino.
+:::important ¿Para qué sirve? (A cosa serve)
+El procedimiento de Descarga de Verificación (Scarico Spunta) de Fluentis es un módulo especializado que permite gestionar el proceso de descarga solo para las líneas que han sido efectivamente verificadas durante las operaciones de picking. Esta funcionalidad garantiza una ola de eficiencia y precisión, permitiendo seleccionar y registrar solo los artículos que han sido confirmados como retirados del almacén.
 
-Gli utenti possono ricercare i picking desiderati attraverso filtri personalizzati per individuare rapidamente quelli pertinenti. Una volta selezionati, l'interfaccia consente di creare le registrazioni di magazzino per le righe spuntate, mentre un riepilogo puntuale delle operazioni effettuate offre la possibilità di visualizzare dettagli e gestire eventuali rollback. 
+Los usuarios pueden buscar los pickings deseados a través de filtros personalizados para identificar rápidamente los pertinentes. Una vez seleccionados, la interfaz permite crear los registros de almacén para las líneas verificadas, mientras que un resumen oportuno de las operaciones realizadas ofrece la posibilidad de visualizar detalles y gestionar posibles retrocesos.
 
-La procedura di scarico spunta non solo riduce il rischio di errori, ma ottimizza anche la produttività, assicurando che le operazioni di scarico siano eseguite in modo coerente e affidabile.
+El procedimiento de descarga de verificación no solo reduce el riesgo de errores, sino que también optimiza la productividad, asegurando que las operaciones de descarga se realicen de manera coherente y confiable.
 :::
 
 :::note Nota
-A differenza dello [Scarico picking](/docs/logistics/picking/unload-picking), questa procedura permette di eseguire le stesse funzioni ma solamente per le righe spuntate.
+A diferencia de la [Descarga de picking (Scarico picking)](/docs/logistics/picking/unload-picking), este procedimiento permite ejecutar las mismas funciones pero solamente para las líneas verificadas.
 :::
 
-Selezionando uno o più picking e premendo il pulsante **Scarico** si apre una finestra che permette di effettuare la movimentazione dei picking per le righe spuntate.
+Seleccionando uno o más pickings y presionando el botón **scarico** se abre una ventana que permite realizar la movimentación de los pickings para las líneas verificadas.
 
 **Filtro**
 
-In questo tab è possibile ricercare i picking desiderati in base ai filtri inseriti. E' inoltre possibile specificare la **Data di registrazione di magazzino**.
+En esta pestaña es posible buscar los pickings deseados según los filtros ingresados. También es posible especificar la **Fecha de registro de almacén (Data di registrazione di magazzino)**.
 
-*Pulsante specifico*:  
-> **Scarico**: crea le registrazioni di magazzino per i picking selezionati.  
+*Botón específico*:  
+> **scarico**: crea los registros de almacén para los pickings seleccionados.  
 
-**Parametri**
+**Parámetros**
 
-In questo tab è possibile specificare i parametri necessari per la creazione dei movimenti a magazzino. In particolare, per le righe picking sprovviste di magazzino e causale è possibile scegliere di non effettuare lo scarico per l'intero documento, di tralasciare l'articolo senza magazzino e causale, di visualizzare gli articoli che non sono stati scaricati, di utilizzare come magazzino e causale quelle impostate di default.
+En esta pestaña es posible especificar los parámetros necesarios para la creación de los movimientos en el almacén. En particular, para las líneas de picking que no cuentan con almacén y motivo, se puede elegir no realizar la descarga para todo el documento, omitir el artículo sin almacén y motivo, visualizar los artículos que no han sido descargados, o utilizar como almacén y motivo aquellos establecidos por defecto.
 
-**Riepilogo**
+**Resumen**
 
-Il tab riepilogo permette di visualizzare le operazioni effettuate e, eventualmente, eseguire il rollback delle operazioni.
+La pestaña de resumen permite visualizar las operaciones realizadas y, en su caso, ejecutar el retroceso de las operaciones.
 
-E' possibile inserire dei filtri per visualizzare solo le operazioni desiderate. Selezionando sulla griglia dei risultati una riga sarà possibile vedere il dettaglio (cioè i picking di riferimento e relative registrazioni) sui tab nella parte bassa della finestra.
+Es posible ingresar filtros para visualizar solo las operaciones deseadas. Al seleccionar una fila en la cuadrícula de resultados, será posible ver el detalle (es decir, los pickings de referencia y sus respectivos registros) en las pestañas en la parte inferior de la ventana.
 
-Selezionando una o più righe sulla griglia di ricerca e premendo il pulsante *Cancella gli scarichi selezionati* saranno cancellate le registrazioni di magazzino effettuate.
+Al seleccionar una o más filas en la cuadrícula de búsqueda y presionar el botón *cancella gli scarichi selezionati*, se eliminarán los registros de almacén realizados.
 
-*Pulsanti specifici*:
-> **Cancella gli scarichi selezionati**: cancella le registrazioni derivate dalle righe selezionate sulla griglia dei risultati.  
-> **Ripristina picking**: cancella le registrazioni limitatamente alle righe picking selezionate.  
+*Botones específicos*:  
+> **cancella gli scarichi selezionati**: elimina los registros derivados de las líneas seleccionadas en la cuadrícula de resultados.  
+> **ripristina picking**: elimina los registros limitados a las líneas de picking seleccionadas.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

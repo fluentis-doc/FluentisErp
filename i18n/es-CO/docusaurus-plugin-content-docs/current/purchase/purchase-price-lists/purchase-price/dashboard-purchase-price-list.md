@@ -1,16 +1,16 @@
 ---
-title: Cruscotto Listini Fornitori
+title: cruscotto listini fornitori
 sidebar_position: 4
 ---
 
-La form si apre tramite il percorso **Acquisti > Listini > Cruscotto Listini Fornitori**.   
+El formulario se abre a través de la ruta **Compras > Listados > cruscotto listini fornitori (Acquisti > Listini > Cruscotto Listini Fornitori)**.   
 
-Nella griglia dei risultati è possibile visualizzare una riga per ciascuna riga articolo contenuta nei vari listini, con il riferimento al listino da cui sono stati ripresi i dati.  
+En la cuadrícula de resultados, se puede visualizar una fila por cada línea de artículo contenida en los diferentes listados, con la referencia al listado del que se han tomado los datos.  
 
-*Campi presenti*:
+*Campos presentes*:
 
-- **Conto/SottoConto/Descrizione conto**: identifica il fornitore a cui è intestato il listino.
-- **Da/A data validità**: indicano le date di validità del listino da cui è stato ripreso l'articolo.  
-- **Codice/Descrizione articolo**: indica codice e descrizione dell'articolo presente nel listino.  
-- **Unità di misura**: indica l'unità di misura in cui è espressa la **Quantità** dell'articolo.  
-- **Prezzo**: riporta il prezzo indicato nel listino, senza tener conto di eventuali sconti inseriti. 
+- **Cuenta/Subcuenta/Descripción de cuenta (Conto/SottoConto/Descrizione conto)**: identifica al proveedor al que está destinado el listado.
+- **Desde/Hasta fecha de validez (Da/A data validità)**: indican las fechas de validez del listado del que se ha tomado el artículo.  
+- **Código/Descripción del artículo (Codice/Descrizione articolo)**: indica el código y la descripción del artículo presente en el listado.  
+- **unità di misura**: indica la unidad de medida en la que se expresa la **quantità** del artículo.  
+- **prezzo**: muestra el precio indicado en el listado, sin considerar posibles descuentos aplicados.

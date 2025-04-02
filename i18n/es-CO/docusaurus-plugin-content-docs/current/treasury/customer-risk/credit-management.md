@@ -1,23 +1,18 @@
 ---
-title: Gestione fidi
+title: gestione fidi
 sidebar_position: 2
 ---
 
-Questa maschera consente di verificare e gestire le impostazioni dei fidi delle anagrafiche cliente, senza dover entrare ad una ad una dalla gestione contatti del tab ‘Home'-‘Anagrafici'-‘Anagrafiche contatti'.
+Esta máscara permite verificar y gestionar las configuraciones de los créditos de los registros de clientes, sin la necesidad de entrar uno por uno desde la gestión de contactos de la pestaña ‘Inicio (Home)’ - ‘Registros (Anagrafici)’ - ‘Registros de contactos (Anagrafiche contatti)’.
 
-Sono previsti quattro tipi di controllo fido:
+Se prevén cuatro tipos de control de crédito:
 
-**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
+**Bloqueo de documentos y monitoreo de crédito (Blocco doc. e monitor fido)**: el documento del área de ventas que exceda el crédito será bloqueado, por lo tanto, será necesaria la autorización para proceder a las siguientes etapas del flujo documental;
 
-**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
+**monitor fido**: se realizará simplemente un control del crédito con un posible mensaje al usuario sobre el excedente;
 
-**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
+**blocco di gruppo**: al igual que el primero, pero el cálculo es acumulativo para todas las empresas de la base de datos que pertenecen al mismo registro de cliente;
 
-**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
+**monitor di gruppo**: al igual que el segundo, pero el cálculo es acumulativo para todas las empresas de la base de datos que pertenecen al mismo registro de cliente.
 
-Il campo del **fido assicurato** è solo un riferimento non gestito in modo attivo dal programma, così come le note fido.
-
-
-
-
-
+El campo de **crédito asegurado (fido assicurato)** es solo una referencia no gestionada de manera activa por el programa, al igual que las notas de crédito.

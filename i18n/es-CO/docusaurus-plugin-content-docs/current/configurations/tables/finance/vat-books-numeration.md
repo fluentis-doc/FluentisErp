@@ -1,15 +1,15 @@
 ---
-title: Numerazione Registri IVA
+title: numerazione registri iva
 sidebar_position: 22
 ---
 
-Consente di impostare per ogni registro un numeratore dei protocolli iva con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale (salvo che per la formula di gestione alfanumerica: il protocollo iva è **SEMPRE** un numero), al posto della numerazione standard prevista per i registri iva.
+Permite establecer para cada registro un numerador de los protocolos IVA con las comunes opciones estándar que son comunes a otros numeradores presentes en el sistema de gestión (salvo por la fórmula de gestión alfanumérica: el protocolo IVA es **SIEMPRE** un número), en lugar de la numeración estándar prevista para los registros IVA.
 
-Le impostazioni del numeratore sono le medesime degli altri numeratori standard.
+Las configuraciones del numerador son las mismas que las de los otros numeradores estándar.
 
-La numerazione impostata nella presente tabella viene richiamata all'interno della [**tabella dei registri iva**](/docs/configurations/tables/finance/vat-books/)
+La numeración establecida en esta tabla se llama dentro de la [**tabla de registros IVA (tabella dei registri iva)**](/docs/configurations/tables/finance/vat-books/)
 
 :::tip Nota
-Nella realtà italiana **non** è necessario definire nessun numeratore in questa tabella, in quanto la protocollazione segue **sempre** l'anno solare, indipendentemente dall'anno contabile a cavallo o meno dell'anno solare stesso, e quindi la numerazione standard già prevista in tabella Registri Iva è sufficiente alla gestione.
-L'opzione è stata inserita per casi esteri nei quali la protocollazione non segue l'anno solare
+En la realidad italiana **no** es necesario definir ningún numerador en esta tabla, ya que la protocolización sigue **siempre** el año calendario, independientemente del año contable que cruce o no el año calendario, por lo que la numeración estándar ya prevista en la tabla de Registros IVA es suficiente para su gestión.  
+La opción se ha incluido para casos en el extranjero donde la protocolización no sigue el año calendario.
 :::

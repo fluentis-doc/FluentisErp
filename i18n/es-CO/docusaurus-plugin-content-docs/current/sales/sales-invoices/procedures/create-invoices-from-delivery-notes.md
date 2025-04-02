@@ -1,71 +1,71 @@
 ---
-title: Creazione fatture da DDT
+title: Creación de facturas desde DDT (Creazione fatture da DDT)
 sidebar_position: 1
 ---
 
-La procedura si apre tramite il percorso **Vendite > Fatture di vendita > Procedure > Creazione da DDT**. 
+El procedimiento se abre a través de la ruta **Ventas > Facturas de venta > Procedimientos > Creación desde DDT**.  
 
-Questa procedura permette di eseguire/ripristinare le operazioni di creazione delle fatture da una o più DDT.
+Este procedimiento permite ejecutar/restaurar las operaciones de creación de facturas a partir de uno o más DDT.
 
-### Valorizzazione
+### Valorización
 
-In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT, con lo stato *Stampata*, da fatturare con l'ausilio dei filtri (tipo DDT, data, numero, cliente). 
+En esta pestaña, el usuario tiene la posibilidad de ingresar filtros para buscar los DDT con estado *Impreso*, que se van a facturar con la ayuda de los filtros (tipo DDT, fecha, número, cliente).  
 
-**Data creazione**: permette di specificare la data della fattura che sarà creata. 
+**data creazione**: permite especificar la fecha de la factura que será creada.  
 
-*Pulsanti specifici*: 
-> **Creazione fatture da DDT**: permette di valorizzare i DDT selezionati nella griglia, in base ai parametri inseriti nel successivo tab *Parametri*.
-> **Apertura DDT**: permette di visualizzare e modificare il DDT selezionato.
+*Botones específicos*:  
+> **Creación de facturas desde DDT (Creazione fatture da DDT)**: permite valorar los DDT seleccionados en la cuadrícula, según los parámetros ingresados en la siguiente pestaña *Parámetros*.  
+> **apertura ddt**: permite visualizar y modificar el DDT seleccionado.  
 
 :::note
-Non è possibile creare un'autofattura da DDT.
+No es posible crear una autofactura desde DDT (autofattura da DDT).
 :::
 
-### Parametri
+### Parámetros (Parametri)
 
-*Inserimento in fattura*
+*inserimento in fattura*
 
-Con l'aiuto di questi parametri si possono raggruppare i DDT dello stesso cliente in una sola fattura:
+Con la ayuda de estos parámetros, se pueden agrupar los DDT del mismo cliente en una sola factura:
 
-**DDT di anni e periodi IVA diversi**: il flag attivo permette la creazione della fattura da DDT di anni e periodi IVA diversi.
+**ddt di anni e periodi iva diversi**: el indicador activo permite la creación de la factura a partir de DDT de años y períodos IVA diferentes.  
 
-**DDT di tipi diversi**: il flag attivo permette la creazione di una fattura da diversi tipi DDT.
+**ddt di tipi diversi**: el indicador activo permite la creación de una factura a partir de diferentes tipos DDT.  
 
-**DDT di cambio diversi**: il flag attivo permette la creazione di una fattura da più DDT con tassi di cambio diversi.
+**ddt di cambio diversi**: el indicador activo permite la creación de una factura a partir de más DDT con tasas de cambio diferentes.  
 
-**Raggruppamento DDT per tipo e soluzione di pagamento**: i tipi pagamento possono essere ripresi da anagrafica del cliente o mantenuti quelli dei DDT. Nel caso non ci sia il raggruppamento per tipo pagamento, la fattura potrà contenere anche più righe di pagamento diverse. 
+**raggruppamento ddt per tipo e soluzione di pagamento**: los tipos de pago pueden tomarse del registro del cliente o mantenerse los de los DDT. En caso de no haber agrupamiento por tipo de pago, la factura podrá contener también más líneas de pago diferentes.
 
-*Trattamento pagamenti in fattura*
+*trattamento pagamenti in fattura*
 
-Se ci sono DDT con soluzioni di pagamento diverse e se non è stato impostato il flag *Raggruppa DDT*:
+Si hay DDT con soluciones de pago diferentes y si no se ha establecido el indicador *Agrupar DDT (Raggruppa DDT)*:
 
-**Ripristina quelli di anagrafica**: la fattura prenderà le soluzioni di pagamento dall'anagrafica (e non considera l'informazione inserita nei DDT). 
+**ripristina quelli di anagrafica**: la factura tomará las soluciones de pago del registro (y no considera la información ingresada en los DDT).  
 
-**Mantiene quelli dei DDT** la fattura prenderà le soluzioni di pagamento inserite nei DDT.
+**Mantener los de DDT (Mantiene quelli dei DDT)**: la factura tomará las soluciones de pago ingresadas en los DDT.
 
-*Inserimento in fattura*
+*inserimento in fattura*
 
-**Raggruppa scadenze in fattura**: il flag attivo permette di raggruppare in una soluzione unica le scadenze con la data uguale ma provenienti da DDT diversi.
+**raggruppa scadenze in fattura**: el indicador activo permite agrupar en una solución única las fechas con la misma fecha pero provenientes de DDT diferentes.  
 
-**Ricalcola CdC/CdP**: utilizzato nella contabilità analitica, serve per ricalcolare i centri di costo o di profitto.
+**Recalcular CDC/CDP (Ricalcola CdC/CdP)**: utilizado en la contabilidad analítica, sirve para recalcular los centros de costo o de beneficio.
 
-*Riferimenti DDT*
+*riferimenti ddt*
 
-**Metti riferimenti DDT**: se questo flag viene impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. La composizione di questa nota deve essere inserita nel campo 'Descrizione' secondo i parametri descritti nella label.
+**metti riferimenti ddt**: si se establece este indicador, en la pestaña [Artículos (Articoli)](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) de la factura se visualizará un *Artículo nota* que tomará las referencias del DDT del cual se ha creado la factura. La composición de esta nota debe ingresarse en el campo 'Descripción' de acuerdo con los parámetros descritos en la etiqueta.
 
-*Pulsante specifico*: 
+*Botón específico*:  
 
-> **Salva parametri**: permette di salvare i parametri impostati per la valorizzazione.
+> **salva parametri**: permite guardar los parámetros establecidos para la valorización.
 
-Dopo aver selezionato i DDT (dal tab *Valorizzazione*) e impostato i parametri, la fattura può essere creata con l'aiuto del pulsante *Creazione fattura da DDT*.
+Después de haber seleccionado los DDT (desde la pestaña *Valorización*) y establecido los parámetros, se puede crear la factura con la ayuda del botón *Creación de factura desde DDT (Creazione fattura da DDT)*.
 
-### Precedenti
+### Anteriores (Precedenti)
 
-Come ultima scheda è presente una scheda di ripristino: è possibile utilizzarla per filtrare, visualizzare e annullare le operazioni.
+Como última pestaña, hay una pestaña de restauración: se puede utilizar para filtrar, visualizar y anular las operaciones.  
 
-I dati nelle griglie in basso, **Fatture** e **DDT**, corrispondono alla valorizzazione selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e il DDT corrispondente con doppio click sulla riga desiderata.
+Los datos en las cuadrículas de abajo, **fatture** y **DDT**, corresponden a la valorización seleccionada en la cuadrícula superior (después de filtrar los datos). Además, en estas dos últimas cuadrículas, hay la posibilidad de visualizar la factura y el DDT correspondiente haciendo doble clic en la línea deseada.  
 
-*Pulsanti specifici*:
-> **Ricerca fatture**: permette di cercare i DDT valorizzate.  
-> **Ripristina creazione**: permette di ripristinare l'intera operazione, cioè nel caso della creazione di più fatture contemporaneamente, cancella tutte le fatture e ripristina i DDT.  
-> **Ripristina fattura**: permette di ripristinare la fattura selezionata nel tab *Fatture*.
+*Botones específicos*:  
+> **ricerca fatture**: permite buscar los DDT valorados.  
+> **ripristina creazione**: permite restaurar toda la operación, es decir, en el caso de la creación de varias facturas al mismo tiempo, cancela todas las facturas y restaura los DDT.  
+> **ripristina fattura**: permite restaurar la factura seleccionada en la pestaña *fatture*.

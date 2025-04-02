@@ -1,50 +1,38 @@
 ---
-title: Liquidazione iva periodica
+title: liquidazione iva periodica
 sidebar_position: 5
 ---
 
-Con questa procedura di stampa si procede al calcolo dell'IVA a credito/debito del periodo di riferimento: per questo report non è obbligatorio che siano già stampati i registri IVA del periodo, ma al fine di riportare l'eventuale credito del periodo precedente, ci dovrà essere stata la stampa in definitiva della liquidazione IVA del periodo precedente (oppure un caricamento manuale nella tabella **[Versamenti IVA ](/docs/finance-area/declarations/declarations/vat-payment)** che dà lo stesso risultato di bloccare il periodo IVA in contabilità). Diversamente la stampa potrà comunque essere eseguita ma senza il riporto del credito del mese o trimestre precedente.
+Con este procedimiento de impresión se procede al cálculo del IVA a crédito/débito del período de referencia: para este informe no es obligatorio que ya se hayan impreso los registros de IVA del período, pero para poder reportar el eventual crédito del período anterior, debe haberse realizado la impresión definitiva de la liquidación de IVA del período anterior (o una carga manual en la tabla **[Pagos de IVA](/docs/finance-area/declarations/declarations/vat-payment)** que da el mismo resultado de bloquear el período de IVA en contabilidad). De lo contrario, la impresión se podrá realizar, pero sin el reporte del crédito del mes o trimestre anterior.
 
+Configure el período y el año de referencia (donde el período será mensual o trimestral según la periodicidad de la liquidación de IVA periódica establecida en los **[parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters)**);  
 
+seleccione desde la caja combinada el registro de IVA sobre el cual imprimir la liquidación:  
 
-Impostare il periodo e l'anno di riferimento (dove il periodo sarà mensile o trimestrale a seconda della periodicità della liquidazione IVA periodica impostata nei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**); 
+la impresión puede llevarse a cabo al final del registro de ventas o en un registro de resumen dedicado (opción recomendada).  
 
-selezionare dalla combo box il registro iva sul quale stampare la liquidazione: 
+En caso de que se haya seleccionado el último período del año, se habilitará la posibilidad de impresión/**cálculo del anticipo** de IVA, según el cual el informe reportará las registraciones hasta la fecha del 20/12/yyyy.
 
-la stampa può essere effettuata in coda al registro vendite o su un registro riepilogativo dedicato (opzione consigliata). 
+**Fecha de pago / Modalidad de pago (Data versamento / Modalità di versamento)**: estos campos (una fecha que luego se reporta en la cadena textual) permiten que aparezca en la impresión una mención relativa a la fecha y modo de pago del impuesto (o, modificándolos, una anotación libre).
 
-Nel caso in cui sia stato selezionato l'ultimo periodo dell'anno si abiliterà la possibilità di stampa/**calcolo dell'acconto** IVA, in base al quale il report riporterà le registrazioni fino alla data del 20/12/yyyy.
+**visualizza intestazione**: indicador propuesto por defecto: debe ser desmarcado solo en caso de que la empresa aún proceda a imprimir en formularios DDT.  
 
-**Data versamento / Modalità di versamento**: questi campi (una data che poi viene riportata nella stringa testuale) permettono di far comparire nella stampa una dicitura relativa alla data e modalità di versamento dell'imposta (oppure, modificandoli, un'annotazione libera).
+Impresión **stampa definitiva**: el indicador activo hará que la impresión sea definitiva bloqueando el período de IVA de referencia y actualizando los contadores de página del registro sobre el cual se está imprimiendo. Además, permite habilitar la sección siguiente para los asientos automáticos. Asimismo, modificará el período de referencia para hacer que corresponda al siguiente al último impreso de forma definitiva y se deshabilitará el número de copias a imprimir.  
 
- 
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image01.png)  
 
-**Visualizza intestazione**: flag proposto di default: va tolto solo nel caso in cui la società proceda ancora a stampare su moduli DDTti. 
+La ejecución de la vista previa de impresión definitiva no es suficiente para bloquear el período y actualizar los contadores: solo la realización del proceso de impresión física operará el bloqueo del período en contabilidad y actualizará el contador de páginas de la tabla de Registros de IVA (no es relevante si el proceso de impresión se lleva a cabo con éxito o no, podría ser también una impresión en archivo).  
 
-Stampa **definitiva**: il flag attivo renderà definitiva la stampa bloccando il periodo iva di riferimento ed aggiornando i contatori di pagina del registro sul quale si sta stampando. Permette inoltre di abilitare la sezione sottostante per i giroconti automatici. Inoltre andrà a modificare il periodo di riferimento per farlo corrispondere a quello successivo all'ultimo stampato in definitivo e sarà disabilitato il numero di copie da stampare. 
+La impresión definitiva habilitará la opción de **contabilizzazione liquidazione** (del saldo del período): al configurar esta opción, la aplicación activará la lista de cuentas a utilizar (tomándolas de los parámetros de contabilidad) y el usuario deberá simplemente confirmar la causa y las fechas de referencia: una vez ejecutado el proceso de impresión, se añadirán en contabilidad dos registraciones de giroconto del IVA de compras y ventas a los subcuentos de IVA a débito/crédito en la cuenta del erario C/IVA.  
 
-![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image01.png)
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image02.png)  
 
- 
-
-L'esecuzione dell'anteprima di stampa in definitivo non basta per bloccare il periodo e aggiornare i contatori: solo l'esecuzione del processo di stampa fisica andrà ad operare il blocco del periodo in contabilità e ad aggiornare il contatore delle pagine della tabella Registri iva (e non è rilevante che il processo di stampa vada a buon fine o meno, potrebbe essere anche una stampa su file).
-
-La stampa definitiva abiliterà l'opzione di **contabilizzazione liquidazione** (del saldo del periodo): impostando questa opzione l'applicativo attiverà la lista dei conti da utilizzare (riprendendoli dai parametri di contabilità) e l'utente dovrà semplicemente confermare causale e date di riferimento: una volta eseguito il processo di stampa saranno aggiunti in contabilità due registrazioni di giroconto dell'iva acquisti e vendite ai sottoconti di iva a debito/credito sul conto erario C/iva.
-
-![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image02.png)
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa della liquidazione. |
-| Stampa | Pulsante per eseguire la stampa fisica della liquidazione. |
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión de la liquidación. |
+| Impresión (Stampa) | Botón para ejecutar la impresión física de la liquidación. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important Vea También (Vedi Anche)
+[**TUTORIALES EN VIDEO SOBRE IMPRESIONES FISCALES**](/docs/video/finance/intro)
 :::
-
-
-
-

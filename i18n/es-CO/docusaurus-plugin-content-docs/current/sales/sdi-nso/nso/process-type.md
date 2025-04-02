@@ -1,151 +1,151 @@
 ---
-title: Tipi processi
+title: Tipos de procesos (Tipi processi)
 sidebar_position: 3
 ---
 
-## Ordinazione semplice
+## Ordenación simple (Ordinazione semplice)
 
-Il processo di Ordinazione semplice prevede che ogni eventuale comunicazione di accettazione, 
-diniego o modifica dell’Ordine da parte del Fornitore potrà pervenire al Cliente esclusivamente 
-nelle forme tradizionali (telefono, fax, e-mail, ecc.), implicitamente informa il Fornitore di non 
-essere disponibile a ricevere l’eventuale Risposta in modalità telematica. 
-Il Cliente può comunque revocare o modificare un Ordine precedentemente emesso mediante 
-l’emissione di un nuovo Ordine, che deve contenere l’indicazione dell’Ordine che si intende 
-revocare o modificare.
-Ne consegue che un Ordine può assumere le seguenti forme:
-- Ordine iniziale
-- Ordine iniziale collegato
-- Ordine di revoca 
-- Ordine sostitutivo       
+El proceso de **Ordenación simple** prevé que cualquier comunicación de aceptación, 
+negación o modificación del Pedido por parte del Proveedor pueda llegar al Cliente exclusivamente 
+en las formas tradicionales (teléfono, fax, correo electrónico, etc.), e implica que el Proveedor no 
+está disponible para recibir una eventual Respuesta de forma telemática. 
+El Cliente puede revocar o modificar un Pedido emitido anteriormente mediante 
+la emisión de un nuevo Pedido, que debe contener la indicación del Pedido que se desea 
+revocar o modificar.  
+Se concluye que un Pedido puede asumir las siguientes formas:  
+- Pedido inicial  
+- Pedido inicial relacionado  
+- Pedido de revocación  
+- Pedido sustituto       
 
-Al riguardo, se nell’Ordine è indicata la data di esecuzione della fornitura, il limite temporale entro 
-il quale è possibile sostituire o revocare l’Ordine è determinato da tale data dedotto il tempo 
-necessario per predisporre la fornitura ed eseguirla nel luogo prestabilito.
-Il Fornitore è tenuto a considerare efficaci solo le Revoche e le Sostituzioni di ordine pervenute 
-prima che abbia dato luogo all’esecuzione dell’Ordine revocato o sostituito (cioè prima che 
-l’ordine venga evaso).
-Nell’Ordine può essere indicata la data entro la quale il Fornitore è tenuto a rispondere.
+En este sentido, si en el Pedido se indica la fecha de ejecución del suministro, el límite temporal dentro 
+del cual es posible reemplazar o revocar el Pedido está determinado por dicha fecha menos el tiempo 
+necesario para preparar el suministro y ejecutarlo en el lugar establecido.  
+El Proveedor debe considerar eficaces solo las Revocaciones y Sustituciones de pedidos recibidas 
+antes de que haya comenzado la ejecución del Pedido revocado o sustituido (es decir, antes de que 
+el pedido sea cumplido).  
+En el Pedido se puede indicar la fecha dentro de la cual el Proveedor debe responder.
 
-## Ordinazione Completa
+## Ordenación Completa (Ordinazione Completa)
 
-Questo processo, prevede l’uso di tre Documenti: 
-- l’Ordine, emesso dal Cliente; 
-- la Risposta, eventualmente emessa dal Fornitore; 
-- l’Ordine di riscontro, eventualmente emesso dal Cliente.      
+Este proceso prevé el uso de tres Documentos:  
+- el Pedido, emitido por el Cliente;  
+- la Respuesta, eventualmente emitida por el Proveedor;  
+- el Pedido de acuse de recibo, eventualmente emitido por el Cliente.      
 
-Il processo inizia con l’invio dell’Ordine da parte del Cliente e può terminare, alternativamente: 
-- con la ricezione da parte del Fornitore dell’Ordine inviato dal Cliente; 
-- con la ricezione da parte del Cliente della Risposta inviata dal Fornitore; 
-- con la ricezione da parte del fornitore dell’Ordine di riscontro inviato dal Cliente. 
+El proceso comienza con el envío del Pedido por parte del Cliente y puede terminar, alternativamente:  
+- con la recepción por parte del Proveedor del Pedido enviado por el Cliente;  
+- con la recepción por parte del Cliente de la Respuesta enviada por el Proveedor;  
+- con la recepción por parte del Proveedor del Pedido de acuse de recibo enviado por el Cliente. 
 
-## Emissione dell’ordine 
+## Emisión del pedido (Emissione dell’ordine)
 
-L’ Ordine può assumere le seguenti quattro forme:
-- Ordine iniziale,
-- Ordine iniziale collegato, 
-- Ordine di revoca, 
-- Ordine sostitutivo.      
+El Pedido puede asumir las siguientes cuatro formas:  
+- Pedido inicial,  
+- Pedido inicial relacionado,  
+- Pedido de revocación,  
+- Pedido sustituto.      
 
-L’Ordine di revoca deve contenere una sola linea d’ordine priva di contenuto, in quanto costituisce 
-il mero annullamento dell’Ordine precedentemente trasmesso a cui fa riferimento; 
-Il Fornitore è tenuto a considerare efficaci solo le Revoche e le Sostituzioni di ordine pervenute 
-prima che abbia dato luogo all’esecuzione dell’Ordine revocato o sostituito. Se nell’Ordine è 
-indicata la data di esecuzione della fornitura (Delivery/RequestedDeliveryPeriod/StartDate = 
-EndDate), rappresenta il limite temporale entro il quale è possibile sostituire o revocare l’Ordine 
-dedotto il tempo necessario per predisporre la fornitura ed eseguirla nel luogo prestabilito. 
-Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine ivi indicato 
-sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al medesimo Ordine iniziale. 
-L’Ordine sostitutivo dà formalmente avvio a un nuovo processo di Ordinazione, che può essere 
-semplice o completa in base a quanto indicato nell’Ordine sostitutivo stesso.
-Nell’Ordine può essere indicata la data entro la quale il Fornitore è tenuto a rispondere
+El Pedido de revocación debe contener solo una línea de pedido sin contenido, ya que constituye 
+la mera anulación del Pedido previamente transmitido al que hace referencia;  
+El Proveedor está obligado a considerar eficaces solo las Revocaciones y las Sustituciones de pedidos recibidas 
+antes de que haya comenzado la ejecución del Pedido revocado o sustituido. Si en el Pedido está 
+indicada la fecha de ejecución del suministro (Delivery/RequestedDeliveryPeriod/StartDate = 
+EndDate), representa el límite temporal dentro del cual es posible sustituir o revocar el Pedido 
+menos el tiempo necesario para preparar el suministro y ejecutarlo en el lugar establecido.  
+Las Sustituciones y Revocaciones, respectivamente, reemplazan y anulan tanto el Pedido indicado allí 
+como todas las demás Sustituciones y Revocaciones ya transmitidas, referidas al mismo Pedido inicial.  
+El Pedido sustituto da inicio formalmente a un nuevo proceso de Ordenación, que puede ser 
+sencillo o completo, dependiendo de lo que se indique en el mismo Pedido sustituto.  
+En el Pedido se puede indicar la fecha dentro de la cual el Proveedor debe responder 
 (ValidityPeriod/enddate).
 
-## Risposta all’ordine
+## Respuesta al pedido (Risposta all’ordine)
 
-A fronte della ricezione dell’Ordine, il Fornitore può: 
-- terminare il processo senza trasmettere alcuna Risposta;
-- trasmettere una Risposta (flusso rosso nella figura), che deve contenere l’indicazione 
-dell’Ordine precedentemente inviato a cui si risponde, con la quale comunica al Cliente, 
-alternativamente, che intende: 
-> - comunicare di aver ricevuto l’Ordine (Risposta di ricezione); 
-> - accettare l’Ordine ricevuto (Risposta di accettazione); 
-> - declinare l’Ordine ricevuto (Risposta di diniego); 
-> - apportare modifiche all’Ordine ricevuto (Risposta con modifiche).        
+Frente a la recepción del Pedido, el Proveedor puede:  
+- finalizar el proceso sin transmitir ninguna Respuesta;  
+- transmitir una Respuesta (flujo rojo en la figura), que debe contener la indicación 
+del Pedido previamente enviado al que se responde, comunicando al Cliente, alternativamente, que 
+intenta:  
+> - comunicar que ha recibido el Pedido (Respuesta de recepción);  
+> - aceptar el Pedido recibido (Respuesta de aceptación);  
+> - declinar el Pedido recibido (Respuesta de negación);  
+> - realizar modificaciones al Pedido recibido (Respuesta con modificaciones).        
 
-La Risposta con modifiche deve contenere tutte le linee d’ordine, sia quelle che si intente 
-mantenere sia quelle che si intende modificare, in quanto integra l’Ordine precedentemente 
-trasmesso a cui fa riferimento. 
-La Risposta a un Ordine revocato non ha effetti per il Cliente. 
+La Respuesta con modificaciones debe contener todas las líneas de pedido, tanto las que se pretenden 
+mantener como las que se desean modificar, ya que integra el Pedido previamente 
+transmitido al que hace referencia.  
+La Respuesta a un Pedido revocado no tiene efectos para el Cliente. 
 
-## Riscontro alla risposta 
+## Acuse de recibo a la respuesta (Riscontro alla risposta)
 
-A fronte della ricezione della Risposta, il Cliente può: 
-- terminare il processo senza trasmettere un Ordine di riscontro (flusso blu nella figura); 
-- trasmettere un Ordine di riscontro (flusso rosso nella figura), che deve contenere 
-l’indicazione della Risposta a cui fa riferimento, con il quale comunica al Fornitore,
-alternativamente, che intende:
-> - accettare la Risposta ricevuta (Ordine di riscontro per conferma); 
-> - declinare la Risposta ricevuta (Ordine di riscontro per diniego); 
-> - sostituire le modifiche all’Ordine contenute nella Risposta ricevuta (Ordine di 
-riscontro sostitutivo).      
+Frente a la recepción de la Respuesta, el Cliente puede:  
+- terminar el proceso sin transmitir un Pedido de acuse de recibo (flujo azul en la figura);  
+- transmitir un Pedido de acuse de recibo (flujo rojo en la figura), que debe contener 
+la indicación de la Respuesta a la que hace referencia, comunicando al Proveedor, alternativamente, que 
+pretende:  
+> - aceptar la Respuesta recibida (Pedido de acuse de recibo para confirmación);  
+> - declinar la Respuesta recibida (Pedido de acuse de recibo para negación);  
+> - sustituir las modificaciones al Pedido contenidas en la Respuesta recibida (Pedido de 
+acuse de recibo sustituto).      
 
-Se il Cliente comunica che intende sostituire le modifiche all’Ordine contenute nella Risposta del 
-fornitore, l’Ordine di riscontro annulla tutti i Documenti precedenti del processo corrente e dà 
-avvio a un nuovo processo di Ordinazione.
-Il Fornitore è tenuto a considerare efficaci solo gli Ordini di riscontro pervenuti prima che abbia 
-dato luogo all’esecuzione dell’Ordine.      
+Si el Cliente comunica que desea sustituir las modificaciones al Pedido contenidas en la Respuesta del 
+proveedor, el Pedido de acuse de recibo anula todos los Documentos anteriores del proceso actual y da 
+inicio a un nuevo proceso de Ordenación.  
+El Proveedor debe considerar eficaces solo los Pedidos de acuse de recibo recibidos antes de que haya 
+comenzado la ejecución del Pedido.      
 
-Se il Cliente manda, nella Risposta del fornitore, un ordine di riscontro sostitutivo, l’Ordine di 
-riscontro annulla tutti i Documenti precedenti (Ordine e Risposta) del processo corrente e dà avvio 
-a un nuovo processo di Ordinazione completa.        
-L’assenza di Ordine di riscontro equivale a conferma della Risposta.
-Sono efficaci solo gli Ordini di riscontro pervenuti prima che l’evasione dell’ordine.
+Si el Cliente envía, en la Respuesta del proveedor, un pedido de acuse de recibo sustituto, el Pedido de 
+acuse de recibo anula todos los Documentos anteriores (Pedido y Respuesta) del proceso actual y da 
+inicio a un nuevo proceso de Ordenación completa.        
+La ausencia de un Pedido de acuse de recibo equivale a la confirmación de la Respuesta.  
+Solo son válidos los Pedidos de acuse de recibo recibidos antes de que se haya despachado el pedido.
 
-## Ordinazione PRE-Concordata
+## Ordenación PRE-Concordada (Ordinazione PRE-Concordata)
 
-La pre-autorizzazione ad emettere l’ordine da parte del Fornitore, invece del Cliente, può 
-derivare dal contratto o da altro documento (ad esempio un ordine inviato via fax o via e-mail a 
-causa dell’indisponibilità del sistema informatico che emette gli Ordini elettronici, oppure un 
-ordine perfezionato attraverso una piattaforma di comunicazione telematica) con cui il Cliente 
-conferisce tale facoltà al Fornitore, predeterminando l’ambito e le limitazioni entro cui può 
-essere esercitata.
-Questo processo prevede l’uso di due Documenti: 
-- l’Ordine pre-concordato, emesso dal Fornitore; 
-- l’Ordine di riscontro, eventualmente emesso dal Cliente.        
+La pre-autorización para emitir el pedido por parte del Proveedor, en lugar del Cliente, puede 
+derivar del contrato o de otro documento (por ejemplo, un pedido enviado por fax o por correo 
+electrónico debido a la indisponibilidad del sistema informático que emite los Pedidos electrónicos, o un 
+pedido perfeccionado a través de una plataforma de comunicación telemática) con el que el Cliente 
+concede dicha facultad al Proveedor, predeterminando el ámbito y las limitaciones dentro de las cuales puede 
+ser ejercida.  
+Este proceso prevé el uso de dos Documentos:  
+- el Pedido pre-concordado, emitido por el Proveedor;  
+- el Pedido de acuse de recibo, eventualmente emitido por el Cliente.        
 
-Il processo inizia con l’invio dell’Ordine pre-concordato da parte del Fornitore, che lo emette in 
-quanto pre-autorizzato dal Cliente, e può terminare, alternativamente:
-- con la ricezione da parte del Cliente dell’Ordine pre-concordato inviato dal Fornitore; 
-- con la ricezione da parte del fornitore dell’Ordine di riscontro inviato dal Cliente.      
+El proceso comienza con el envío del Pedido pre-concordado por parte del Proveedor, que lo emite en 
+cuanto pre-autorizado por el Cliente, y puede terminar, alternativamente:  
+- con la recepción por parte del Cliente del Pedido pre-concordado enviado por el Proveedor;  
+- con la recepción por parte del Proveedor del Pedido de acuse de recibo enviado por el Cliente.      
 
-Ogni eventuale comunicazione di conferma, diniego o sostituzione dell’Ordine preconcordato da 
-parte del Cliente dovrà pervenire al Fornitore, di norma, per il tramite di NSO.
-Il Fornitore può comunque revocare o modificare un Ordine pre-concordato precedentemente 
-emesso mediante l’emissione di un nuovo Ordine pre-concordato, che deve contenere 
-l’indicazione dell’Ordine pre-concordato che si intende revocare o modificare.
+Cualquier comunicación de confirmación, negación o sustitución del Pedido pre-concordado por parte del 
+Cliente deberá llegar al Proveedor, por norma, a través de NSO.  
+El Proveedor puede revocar o modificar un Pedido pre-concordado emitido anteriormente mediante la emisión 
+de un nuevo Pedido pre-concordado, que debe contener la indicación del Pedido pre-concordado que se desea 
+revocar o modificar.
 
-Ne consegue che un Ordine pre-concordato può assumere le seguenti forme :
-- Ordine iniziale 
-- Ordine Iniziale collegato
-- Ordine di revoca , che deve contenere l’indicazione dell’Ordine precedentemente inviato 
-che si intende revocare, deve contenere una sola linea d’ordine, in quanto costituisce il 
-mero annullamento dell’Ordine precedentemente trasmesso a cui fa riferimento
-- Ordine sostitutivo , che deve contenere l’indicazione dell’Ordine precedentemente inviato 
-che si intende modificare, costituisce un nuovo Ordine che annulla tutti i Documenti 
-precedenti (Ordini e Ordini di riscontro) del processo corrente e dà avvio a un nuovo 
-processo di Ordinazione pre-concordata, pertanto deve contenere tutte le linee d’ordine 
-(come un Ordine iniziale). 
-A fronte della ricezione dell’Ordine pre-concordato, il Cliente può: 
-- terminare il processo senza trasmettere un Ordine di riscontro
-- trasmettere un Ordine di riscontro , che deve contenere l’indicazione dell’Ordine preconcordato a cui fa riferimento, con il quale comunica al Fornitore, alternativamente, che 
-intende: 
-> - confermare l’Ordine pre-concordato ricevuto ( Ordine di riscontro per conferma );
-> - declinare l’Ordine pre-concordato ricevuto ( Ordine di riscontro per diniego );
-> - sostituire l’Ordine pre-concordato ricevuto ( Ordine di riscontro sostitutivo ).     
+Se concluye que un Pedido pre-concordado puede asumir las siguientes formas:  
+- Pedido inicial  
+- Pedido inicial relacionado  
+- Pedido de revocación, que debe contener la indicación del Pedido previamente enviado 
+que se desea revocar, debe contener una sola línea de pedido, ya que constituye el 
+mero anulación del Pedido previamente transmitido al que hace referencia  
+- Pedido sustituto, que debe contener la indicación del Pedido previamente enviado 
+que se desea modificar, constituye un nuevo Pedido que anula todos los Documentos 
+anteriores (Pedidos y Pedidos de acuse de recibo) del proceso actual y da inicio a un nuevo 
+proceso de Ordenación pre-concordada, por lo tanto debe contener todas las líneas de pedido 
+(como un Pedido inicial).  
+Frente a la recepción del Pedido pre-concordado, el Cliente puede:  
+- terminar el proceso sin transmitir un Pedido de acuse de recibo  
+- transmitir un Pedido de acuse de recibo, que debe contener la indicación del Pedido pre-concordado al que hace referencia, comunicando al Proveedor, alternativamente, que 
+pretende:  
+> - confirmar el Pedido pre-concordado recibido (Pedido de acuse de recibo para confirmación);  
+> - declinar el Pedido pre-concordado recibido (Pedido de acuse de recibo para negación);  
+> - sustituir el Pedido pre-concordado recibido (Pedido de acuse de recibo sustituto).     
 
-Se il Cliente comunica che intende sostituire l’Ordine pre-concordato del Fornitore, l’Ordine di 
-riscontro annulla tutti i Documenti precedenti del processo corrente e dà avvio a un nuovo processo 
-che, in base a quanto indicato nell’Ordine di riscontro, può essere di Ordinazione semplice o di 
-Ordinazione completa. 
-Sono efficaci solo gli Ordini di riscontro pervenuti prima che l’Ordine pre-concordato sia stato 
-evaso con documenti di consegna. 
+Si el Cliente comunica que desea sustituir el Pedido pre-concordado del Proveedor, el Pedido de 
+acuse de recibo anula todos los Documentos anteriores del proceso actual y da inicio a un nuevo proceso 
+que, según lo indicado en el Pedido de acuse de recibo, puede ser de Ordenación simple o de 
+Ordenación completa.  
+Solo son válidos los Pedidos de acuse de recibo recibidos antes de que el Pedido pre-concordado haya sido 
+cumplido con documentos de entrega.

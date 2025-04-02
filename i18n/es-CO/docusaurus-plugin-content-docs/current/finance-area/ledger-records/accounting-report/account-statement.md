@@ -1,94 +1,72 @@
 ---
-title: Estratto Conto
+title: estratto conto
 sidebar_position: 3
 ---
 
-Si tratta del report base per ottenere il dettaglio dei movimenti contabili di ogni sottoconto, qualsiasi sia il tipo (attivo, passivo, costo, ricavo, anagrafici): con il report standard per ogni sottoconto ci sarà un nuovo foglio di stampa.
+Se trata del reporte base para obtener el detalle de los movimientos contables de cada subcuenta, independientemente del tipo (activo, pasivo, costo, ingreso, anagráficos): con el reporte estándar para cada subcuenta habrá una nueva hoja de impresión.
 
-Questa stampa corrisponde a ciò che, nella terminologia contabile, viene definito "mastrino".
+Esta impresión corresponde a lo que, en la terminología contable, se define como "mastrino".
 
-**PRINCIPALI FILTRI**:
+**PRINCIPALES FILTROS**:
 
-- Dati relativi alla registrazione contabile
+- Datos relacionados con la registración contable
 
-   - **Conto**: Sottoconto di riferimento (ad esempio per visualizzare i movimenti ed il saldo risultante di un determinato fornitore per un certo range di date, oppure per  visualizzare i ricavi riferiti ad un determinato sottoconto del piano dei conti);
+   - **conto**: Subcuenta de referencia (por ejemplo, para visualizar los movimientos y el saldo resultante de un determinado proveedor para un cierto rango de fechas, o para visualizar los ingresos referidos a una determinada subcuenta del plan de cuentas);
 
-   - Data registrazione
+   - Fecha de registración (Data registrazione)
 
-   - Data competenza **contabile**
+   - Fecha de competencia **contabile**
 
-   - Numero registrazione
+   - Número de registración (Numero registrazione)
 
-   - Tipo / Data / numero documento in testata registrazione (se presenti - possono non essere presenti data e numero documento per le registrazioni di prima nota)
+   - Tipo / Fecha / número de documento en cabecera de la registración (si están presentes - pueden no estar presentes la fecha y el número de documento para las registraciones de primera nota)
 
-   - Tipo conto
+   - Tipo de cuenta (Tipo conto)
 
-- Dati IVA
+- Datos de IVA
 
-   - Registro
+   - Registro (Registro)
 
-   - Protocollo (aprire l'expander)
+   - Protocolo (abrir el expander)
 
-- Tipo di registrazioni (provvisorie e/o definitive)
+- Tipo de registraciones (provisionales y/o definitivas)
 
- 
+**OTROS ELEMENTOS CARACTERÍSTICOS DEL REPORT**:
 
-**ALTRI ELEMENTI CARATTERISTICI DEL REPORT**:
+- filtros **Agente** y **Banco**: es posible solicitar, por ejemplo, el extracto de cuenta de todos los clientes en cuya anagrafía se ha insertado este agente, o de todos los proveedores pagados a través de una cierta cuenta bancaria.
 
+- filtro **Proyectos (ex Commesse)**: es posible filtrar los subcuentas conectados a un determinado proyecto (commessa).
 
+- **visualizza importi in valuta**: con el indicador activo también se mostrarán los importes en moneda (junto a los importes en euros, sin ningún agrupamiento); sin este indicador, solo se visualizarán los datos de debe/haber en la divisa de la sociedad.
 
-- filtri **Agente** e **Banca**: è possibile richiedere ad esempio l'estratto conto di tutti i clienti nella cui anagrafica è stato inserito questo agente, oppure di tutti i fornitori pagati tramite un certo conto bancario.
+- **visualizza contropartite**: el indicador activo visualiza los movimientos de contrapartida referidos a los movimientos de la subcuenta seleccionada (formato A4 horizontal).
 
-- filtro **Progetti** (ex Commesse): è possibile filtrare i sottoconti collegati ad un determinato progetto (commessa).
+- **No. de líneas (No. righe)**: en este campo, activo si se activa el indicador anterior, se especifica cuántas líneas de contrapartida insertadas en la sección Libro diario de la **[registración contable](/docs/finance-area/ledger-records/records/ledger-record)** serán visualizadas en el extracto de cuenta. Por ejemplo, en presencia de varias cuentas de ingresos referidas a la registración de una factura emitida, el valor puede aumentar si en la impresión no se incluyen todas las cuentas de contrapartida así como fueron ingresadas en la registración.
 
+- **annotazioni**: este campo permite insertar datos alfanuméricos que se reportarán en la impresión. Puede ser útil para insertar una anotación rápida que solo es válida para la impresión procesada en ese momento; el campo se reinicia al cerrar el formulario.
 
+Posibilidad de visualizar los movimientos expresados en una divisa específica mediante: 
 
-- **Visualizza importi in valuta**: con flag attivo saranno riportati anche gli importi in valuta (accanto agli importi in euro, senza alcun raggruppamento) senza questo flag, saranno visualizzati solo i  dati dare/avere nella divisa della società, 
+- **visualizza e/c in valuta**: indicador que activa también la caja combinada para la elección de la moneda y desactiva los indicadores Visualizar importes en moneda y Visualizar contrapartidas, además permite agrupar los movimientos por cada moneda individual y totalizarlos.
 
-- **Visualizza contropartite**: il flag attivo visualizza i movimenti di contropartita riferiti ai movimenti del sottoconto selezionato (formato A4 orizzontale)
+- **divisa**: permite seleccionar la divisa de referencia para filtrar la exposición de los valores. Se mostrarán solo los valores denominados en la moneda seleccionada para la subcuenta seleccionada.
 
-- **No. righe**: in questo campo, attivo se il flag di cui sopra viene attivato, viene specificato quante righe di contropartita inserite nella sezione Libro giornale della **[registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record)** saranno visualizzate in estratto conto. Ad esempio in presenza di diversi conti di ricavo riferiti alla registrazione di una fattura emessa, il valore può essere aumentato se nella stampa non vengono riportati tutti i conti di contropartita così come inseriti nella registrazione.
+Es posible ordenar las registraciones por fecha de registración o por fecha de competencia. La opción se vuelve de particular interés en el caso de que el cierre/reapertura de cuentas se realice con fecha de registración y competencia diferentes, a fin de tener un saldo progresivo significativo.
 
-- **Annotazioni**: questo campo permette di inserire dati alfanumerici che saranno riportati nella stampa. Può essere utile per inserire un'annotazione veloce che rimane valida solo per la stampa elaborata in quel momento, il campo infatti si resetta chiudendo la form.
+**data ultima apertura conti**: A diferencia de la **[Visualización de cuentas (Visualizzazione conti)](/docs/finance-area/ledger-records/records/view-accounts)**, en la cual siempre son visibles todos los movimientos de cada subcuenta, el reporte es un proceso donde es importante limitar la cantidad de registros a visualizar para no afectar el rendimiento de la máquina. 
 
+En este sentido, la aplicación propondrá en la impresión los movimientos considerando el saldo inicial a partir de la fecha de última apertura de cuentas, que se propone como la fecha más alta que sea anterior a los filtros iniciales del reporte.
 
+Ejemplo: si el usuario filtra los movimientos desde el 01/09/2017 hasta el 31/12/2017 (tanto como fecha de registración como fecha de competencia), el procedimiento propone última apertura de cuentas con fecha 01/01/2017; el resultado será: saldo inicial calculado desde el 01/01/2017 hasta el 31/08/2017, detalle de los movimientos conectados a registraciones con fecha dentro del rango 01/09-31/12/2017 (por lo tanto, en el reporte solo se incluirán las subcuentas que tengan al menos un movimiento entre la fecha de última apertura de cuentas y la fecha final de filtro). Si el usuario, en cambio, elimina la fecha de última apertura de cuentas, el resultado será idéntico al presente en la visualización de cuentas.
 
+**visualizza sintetico**: se trata de un reporte sintético que presenta la lista de todas las subcuentas sin ningún salto de página. Se aconseja el uso de este reporte para imprimir los mastrini que se anexan a las impresiones de cierre del ejercicio contable.
 
-
-Possibilità di visualizzare i movimenti espressi in una specifica divisa tramite: 
-
-- **Visualizza E/C in valuta**: flag che attiva anche la combo box per la scelta della valuta e disattiva il flag Visualizza importi in valuta e Visualizza contropartite
-
-permette inoltre di raggruppare i movimenti per ogni singola valuta e di totalizzarli
-
-
-
-- **Divisa**: permette di selezionare la divisa di riferimento per filtrare l'esposizione dei valori. Saranno dunque mostrati soltanto i valori denominati nella valuta selezionata per il sottoconto selezionato.
-
-
-
-
-
-E' possibile ordinare le registrazioni per data registrazione o per data competenza. L'opzione diventa di particolare interesse nel caso in cui la chiusura/riapertura conti sia effettuata con data registrazione e competenza differenti, al fine di avere un saldo progressivo significativo;
-
- 
-
-**Data ultima apertura conti**: A differenza della **[Visualizzazione conti](/docs/finance-area/ledger-records/records/view-accounts)**, nel quale sono sempre visibili tutti i movimenti di ogni sottoconto, il report di stampa è un processo dove è importante limitare la numerosità dei record da visualizzare per non inficiare le prestazioni della macchina. 
-
-In questo senso l'applicativo proporrà in stampa i movimenti considerando il saldo iniziale a partire dalla data ultima apertura conti, che viene proposta come la data più alta che sia antecedente ai filtri iniziali del report.
-
-Esempio: se l'utente filtra i movimenti dal 01/09/2017 al 31/12/2017 (sia come data reg. che comp.), la procedura propone ultima apertura conti con data 01/01/2017, il risultato sarà: saldo iniziale calcolato dal 01/01/2017 al 31/08/2017, dettaglio dei movimenti collegati a registrazioni con data all'interno del range 01/09-31/12/2017 (per cui, nel report saranno inseriti solo i sottoconti che hanno almeno un movimento tra la data ultima apertura conti e la data finale di filtro). Se l'utente, invece, cancella la data ultima apertura conti il risultato sarà identico a quello presente nella visualizzazione conti.
-
-**Visualizza sintetico**: si tratta di un report sintetico che presenta la lista di tutti i sottoconti senza alcun salto pagina. Si consiglia l'uso di questo report per stampare i mastrini da allegare alle stampe di chiusura dell'esercizio contabile.
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'estratto conto. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento estratto conto. |
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión del extracto de cuenta. |
+| Imprimir (Stampa) | Botón para ejecutar la impresión física del documento extracto de cuenta. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important Ver También
+[**TUTORIALES EN VIDEO SOBRE IMPRESIONES CONTABLES**](/docs/video/finance/intro)
 :::

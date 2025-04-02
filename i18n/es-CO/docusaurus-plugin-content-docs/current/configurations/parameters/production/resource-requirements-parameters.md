@@ -1,74 +1,74 @@
 ---
-title: Parametri Fabbisogno Materiali
+title: parametri fabbisogno materiali
 sidebar_position: 7
-tags: [Fabbisogno materiali]
+tags: [Necesidad de materiales (Fabbisogno materiali)]
 ---
 
-Attraverso questa finestra vengono settati i parametri che riguardano alcune delle impostazioni di base dell'area Produzione.
+A través de esta ventana se configuran los parámetros que conciernen a algunas de las configuraciones básicas del área de Producción.
 
-**Primo giorno della settimana cal. capacità produttiva**: è possibile decidere quale sia il giorno che debba essere considerato come primo della settimana nel [Calendario delle capacità produttive](/docs/configurations/tables/production/factory-calendar), quindi nel calendario dei centri di lavoro. Solitamente si imposta il lunedì.
+**primo giorno della settimana cal. capacità produttiva**: es posible decidir qué día se considerará como el primero de la semana en el [Calendario de capacidades productivas (Calendario delle capacità produttive)](/docs/configurations/tables/production/factory-calendar), es decir, en el calendario de los centros de trabajo. Generalmente se establece el lunes.
 
-**Ultimo ordine pianificato inserito per l'anno in corso**: rappresenta l'ultimo numero progressivo utilizzato nell'anno in corso per gli ordini pianificati.
+**ultimo ordine pianificato inserito per l'anno in corso**: representa el último número secuencial utilizado en el año en curso para los pedidos planificados.
 
-**Colori tipologie documento**: permette di impostare il colore dello sfondo e del testo per le diverse tipologie di ordine: di Acquisto, di Produzione o di C/Lavoro, in ritardo e/o scaduti.
+**colori tipologie documento**: permite establecer el color de fondo y del texto para los diferentes tipos de pedido: de Compra, de Producción o de Cuenta de Trabajo, en retraso y/o vencidos.
 
-## Parametri per il rilascio ordini pianificati  
+## Parámetros para la liberación de pedidos planificados (Parametri per il rilascio ordini pianificati)
 
-In questa sezione l'utente può impostare il tipo richiesta d'acquisto e il tipo ordine di conto lavoro (se chiuso quindi non modificabile ulteriormente o aperto e quindi modificabile) che devono essere generati automaticamente durante il rilascio degli ordini pianificati rispettivamente di acquisto e di conto lavoro.
+En esta sección, el usuario puede configurar el tipo de solicitud de compra y el tipo de pedido de cuenta de trabajo (si está cerrado, por lo tanto, no se puede modificar más o está abierto y, por ende, modificable) que deben generarse automáticamente durante la liberación de los pedidos planificados de compra y de cuenta de trabajo, respectivamente.
 
-**Controllo terzista obbligatorio per le fasi esterne**: se attivo, nel caso non sia indicato il terzista in una fase esterna, questo verrà segnalato con il **Colore testo riga ordine** sotto indicato. 
+**controllo terzista obbligatorio per le fasi esterne**: si está activo, en caso de que no se indique el tercerista en una fase externa, esto será señalado con el **Color de texto de la línea del pedido** indicado a continuación.
 
-**Gestione semplificata della produzione**: è obsoleto e viene utilizzato solo nelle vecchie versioni.  
+**gestione semplificata della produzione**: está obsoleto y se utiliza solo en versiones anteriores.
 
-**Mantenimento legame tra ordini di una Commessa**: se attivo, permette, sfruttando anche i flag immediatamente successivi, di decidere che qualora venga modificata manualmente la data di un ordine pianificato, la procedura attui la modifica conseguente anche sugli ordini pianificati immediatamente adiacenti a quello che ha subito la modifica iniziale.
+**mantenimento legame tra ordini di una commessa**: si está activo, permite, aprovechando también los indicadores inmediatamente siguientes, decidir que si se modifica manualmente la fecha de un pedido planificado, la procedure realice la modificación correspondiente también en los pedidos planificados adyacentes al que sufrió la modificación inicial.
 
-**Numero giorni per il calcolo disponibilità**: indica fino a quanto spingersi avanti per la valutazione del calcolo della disponibilità, non considerando ordini e fabbisogni che superano quella data.
+**Número de días para el cálculo de disponibilidad (Numero giorni per il calcolo disponibilità)**: indica hasta dónde avanzar para la evaluación del cálculo de la disponibilidad, sin considerar pedidos y necesidades que superen esa fecha.
 
-**Data impegno materiali alla fase di scarico materiali**: se attivo, la data impiego materiale indicata negli ordini pianificati sarà pari alla data inizio maggiore tra tutte le fasi, il che significa che sarà uguale alla data inizio dell'ultima fase. Mentre, se il flag non è attivo, la data impiego materiale indicata negli ordini pianificati sarà pari alla data inizio dell'ordine, quindi alla data inizio della prima fase.         
+**data impegno materiali alla fase di scarico materiali**: si está activo, la fecha de uso de material indicada en los pedidos planificados será igual a la fecha de inicio más tardía entre todas las fases, lo que significa que será igual a la fecha de inicio de la última fase. Mientras que, si el indicador no está activo, la fecha de uso de material indicada en los pedidos planificados será igual a la fecha de inicio del pedido, es decir, a la fecha de inicio de la primera fase.
 
-**Giorni anticipo impegno materiali**: il valore indicato permette di anticipare di quel numero di giorni la disponibilità del materiale rispetto l’inizio della lavorazione (sia negli ordini pianificati di produzione che negli ordini di produzione), in modo da permettere alla logistica di portare il materiale in tempo in produzione. Questo è preso in considerazione dalle seguenti procedure: tutte le schedulazioni "al più presto", "al più tardi", "a capacità finita", "MRP", "Completamento dati ordine" sia negli ordini pianificati che negli ordini di produzione, "Ricalcola data inizio" sia negli ordini pianificati che negli ordini di produzione tutte le procedure del CRP ("Gantt", "Capacità centri di lavoro" e "Sequenza fasi") che operano sul cambio data inizio o fine della fase dell'ordine.
+**giorni anticipo impegno materiali**: el valor indicado permite adelantar ese número de días la disponibilidad del material respecto al inicio de la operación (tanto en los pedidos planificados de producción como en los pedidos de producción), con el fin de permitir a la logística llevar el material a tiempo a producción. Esto se toma en cuenta en los siguientes procedimientos: todas las programaciones "lo más pronto posible", "lo más tarde posible", "a capacidad finita", "MRP", "Finalización de datos de pedido", tanto en pedidos planificados como en pedidos de producción, "Recalcular fecha de inicio", tanto en pedidos planificados como en pedidos de producción, todos los procedimientos del CRP ("Gantt", "Capacidades de los centros de trabajo" y "Secuencia de fases") que operan sobre un cambio de fecha de inicio o fin de la fase del pedido.
 
-**Giorni storico M.R.P. da mantenere**: permette di indicare quale sia il periodo in giorni per il quale verranno mantenuti i risultati delle elaborazioni M R P all’interno dello storico. Quando un’elaborazione supera il numero di giorni inserito in questo campo, questa alla successiva elaborazione M R P verrà rimossa dallo storico. Lasciando il campo vuoto non verrà cancellata nessuna elaborazione dallo storico.
- 
-## Magazzini di schedulazione ordini  
+**giorni storico m.r.p. da mantenere**: permite indicar cuál es el período en días por el cual se mantendrán los resultados de los procesos M R P dentro del historial. Cuando un proceso supera el número de días ingresado en este campo, este será eliminado del historial en la siguiente elaboración de M R P. Si se deja el campo vacío, no se eliminará ninguna elaboración del historial.
 
-La griglia è la semplice visualizzazione della lista di magazzini si cui deve essere controllata la disponibilità. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova tra le Utilità del gestionale.
+## Almacenes para programación de pedidos (Magazzini di schedulazione ordini)
 
-## Parametri Gantt  
+La cuadrícula es una visualización simple de la lista de almacenes cuyos disponibilidades deben ser controladas. Esta lista se establece en el formulario llamado *calcolo disponibilità* que se encuentra dentro de las Utilidades del sistema de gestión.
 
-Permette di inserire dei parametri di default per la gestione della form del Gantt (*Tipo simulazione Gantt* e *Tipo simulazione Snapshot*).
+## Parámetros Gantt (Parametri Gantt)
 
-## Parametri Calcolo Fattibilità  
+Permite establecer parámetros predeterminados para la gestión del formulario de Gantt (*tipo simulazione gantt* y *tipo simulazione snapshot*).
 
-Permette di inserire le indicazioni per l'attivazione e la visualizzazione della **Fattibilità** delle Fasi di lavorazione.   
+## Parámetros de Cálculo de Factibilidad (Parametri Calcolo Fattibilità)
 
-Per la versione di prodotto attuale l'unica attivazione possibile è nelle gestioni di *Sequenza fasi*. Nelle prossime versioni verranno introdotte anche le altre procedure.  
+Permite ingresar las indicaciones para la activación y visualización de la **fattibilità** de las fases de trabajo.
 
-E' possibile attivare il controllo della fattibilità: 
+Para la versión de producto actual, la única activación posible es en la gestión de *sequenza fasi*. En versiones posteriores se introducirán también los otros procedimientos.
 
-- **Considera Materiali**: abilità il pulsante *Dettaglio Fattibilità materiale* e il campo *Fattibilità materiali* nella griglia delle procedure attive nel box **Calcolo fattibilità da applicare in**;    
-- **Considera Fasi precedenti**: abilità il pulsante *Dettaglio Fattibilità fasi* e il campo *Fattibilità fasi* nella griglia delle procedure attive nel box **Calcolo fattibilità da applicare in**.      
+Es posible activar el control de factibilidad:
 
-## Calcolo fattibilità da applicare in  
-Permette di abilitare la fattibilità nelle singole procedure:
-- Sequenza fasi
-- Capacità centri di lavoro
-- Rilascio ordini pianificati
-- Lista prelievo materiali
-- Filtro ordini di produzione
+- **considera materiali**: habilita el botón *Detalle de Factibilidad de materiales (Dettaglio Fattibilità materiale)* y el campo *Factibilidad de materiales (Fattibilità materiali)* en la cuadrícula de procedimientos activos en el cuadro **calcolo fattibilità da applicare in**;  
+- **considera fasi precedenti**: habilita el botón *dettaglio fattibilità fasi* y el campo *Factibilidad de fases (Fattibilità fasi)* en la cuadrícula de procedimientos activos en el cuadro **calcolo fattibilità da applicare in**.
 
-## Colori calcolo fattibilità  
+## Cálculo de factibilidad a aplicar en (Calcolo fattibilità da applicare in) 
+Permite habilitar la factibilidad en los procedimientos individuales:
+- Secuencia de fases (Sequenza fasi)
+- Capacidades de los centros de trabajo (Capacità centri di lavoro)
+- Liberación de pedidos planificados (Rilascio ordini pianificati)
+- Lista de extracción de materiales (Lista prelievo materiali)
+- Filtro de pedidos de producción (Filtro ordini di produzione)
 
-Si possono impostare dei colori che evidenziano le diverse informazioni sulle disponibilità dei materiali da utilizzare:   
-- *Materiale non disponibile*: indica che non c'è nessun materiale disponibile nemmeno in quantità parziale;   
-- *Materiale disponibile parzialmente*: indica che abbiamo almeno una quantità parziale di uno dei materiali, ma non la disponibilità completa di tutti;   
-- *Materiale disponibile*: indica che ho la disponibilità di tutti i materiali per le quantità totali;   
-- *Materiale non necessario*: indica che non è necessario nessun materiale;   
+## Colores de cálculo de factibilidad (Colori calcolo fattibilità) 
 
-e sullo stato di avanzamento delle fasi di lavoro precedenti alla fase analizzata:   
-- *Fase precedente non iniziata*: indica che la fase precedente a quella considerata non è stata iniziata;   
-- *Fase precedente iniziata*: indica che la fase precedente a quella considerata è stata iniziata, ma non completata;   
-- *Fase precedente completata*: indica che la fase precedente a quella considerata è stata completata;   
-- *Fase iniziata*: indica che la fase considerata è iniziata.   
+Se pueden establecer colores que destacan diferentes informaciones sobre las disponibilidades de los materiales a utilizar:   
+- *materiale non disponibile*: indica que no hay ningún material disponible, ni siquiera en cantidad parcial;   
+- *materiale disponibile parzialmente*: indica que tenemos al menos una cantidad parcial de uno de los materiales, pero no la disponibilidad completa de todos;   
+- *materiale disponibile*: indica que tengo la disponibilidad de todos los materiales para las cantidades totales;   
+- *materiale non necessario*: indica que no se requiere ningún material;   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+y sobre el estado de avance de las fases de trabajo anteriores a la fase analizada:   
+- *fase precedente non iniziata*: indica que la fase anterior a la considerada no ha sido iniciada;   
+- *fase precedente iniziata*: indica que la fase anterior a la considerada ha sido iniciada, pero no completada;   
+- *fase precedente completata*: indica que la fase anterior a la considerada ha sido completada;   
+- *fase iniziata*: indica que la fase considerada ha iniciado.   
+
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

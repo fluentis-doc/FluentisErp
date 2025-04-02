@@ -1,22 +1,17 @@
 ---
-title: Ammortamento
+title: ammortamento
 sidebar_position: 2
 ---
 
-All'apertura della maschera si procederà a impostare l'anno di riferimento, le date di registrazione e competenza (di cui questa seconda sarà certamente la fine esercizio dell'anno di riferimento mentre la prima potrebbe essere nell'anno in corso), 
+Al abrir el formulario, se procederá a establecer el año de referencia, las fechas de registro y de competencia (siendo esta segunda la fecha de cierre del ejercicio del año de referencia, mientras que la primera podría estar en el año en curso), 
 
-la causale contabile di rilevazione e il flag di raggruppamento in una singola registrazione. Con questa opzione tutti i movimenti saranno inseriti nella stessa registrazione e gli importi facenti capo allo stesso sottoconto saranno raggruppati in un unico movimento.
+la causal contable de registro y el indicador de agrupamiento en un único registro. Con esta opción, todos los movimientos se registrarán en el mismo asiento y los importes que correspondan al mismo subcuenta se agruparán en un único movimiento.
 
 ![](/img/it-it/finance-area/fixed-assets/accounting/depreciation/image01.png)
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
-| Ammortamento | Esegue il calcolo per le righe selezionate. |
-
-
-
-
-
+| Búsqueda (Ricerca) | Busca la lista de cálculos de amortización realizados. |
+| ammortamento (Ammortamento) | Realiza el cálculo para las líneas seleccionadas. |

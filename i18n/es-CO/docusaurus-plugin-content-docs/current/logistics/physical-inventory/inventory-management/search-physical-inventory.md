@@ -1,24 +1,24 @@
 ---
-title: Inventari fisici
+title: inventari fisici
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-L'introduzione agli inventari fisici di Fluentis permette agli operatori di creare liste inventariali, effettuare rilevazioni delle giacenze fisiche e confrontare i dati ottenuti con le giacenze logiche presenti nel sistema. Attraverso un processo automatizzato, Fluentis facilita l'allineamento tra le giacenze fisiche e quelle logiche, garantendo così un'accurata ottimizzazione della gestione delle risorse.
+:::important ¿Para qué sirve? (A cosa serve)
+La introducción a los inventarios físicos de Fluentis permite a los operadores crear listas inventariales, realizar registros de las existencias físicas y comparar los datos obtenidos con las existencias lógicas presentes en el sistema. A través de un proceso automatizado, Fluentis facilita la alineación entre las existencias físicas y las lógicas, garantizando así una precisa optimización en la gestión de recursos.
 
-La form dedicata agli inventari fisici consente di selezionare gli inventari esistenti, composti da una o più liste inventariali, per modificarli o crearne di nuovi. Gli operatori possono facilmente inserire informazioni rilevanti, quale il numero, la data e le note relative all'inventario, e possono contrassegnare l'inventario come "chiuso" una volta completate le operazioni necessarie. Queste funzionalità assicurano che gli inventari siano gestiti in modo efficace e che qualsiasi discrepanza possa essere prontamente affrontata.
+El formulario dedicado a los inventarios físicos permite seleccionar los inventarios existentes, compuestos por una o más listas inventariales, para modificarlos o crear nuevos. Los operadores pueden insertar fácilmente información relevante, como el número, la fecha y las notas relacionadas con el inventario, y pueden marcar el inventario como "cerrado" una vez completadas las operaciones necesarias. Estas funcionalidades aseguran que los inventarios se gestionen de manera efectiva y que cualquier discrepancia pueda ser abordada de inmediato.
 
-Inoltre, gli articoli inventariati possono essere inseriti manualmente o tramite sistemi di assistenza come WMS, facilitando così l'inserimento e la registrazione delle giacenze. Dopo aver completato le liste di prelievo, è possibile procedere con il calcolo delle differenze inventariali, rendendo il processo di gestione del magazzino ancora più preciso e efficiente. 
+Además, los artículos inventariados pueden ser ingresados manualmente o a través de sistemas de asistencia como WMS, facilitando así la entrada y el registro de las existencias. Después de completar las listas de extracción, es posible proceder al cálculo de las diferencias inventariales, haciendo que el proceso de gestión del almacén sea aún más preciso y eficiente.
 :::
 
-La form si apre tramite il percorso **Logistica > Inventari fisici** e permette di effettuare una selezione degli inventari presenti nel database. Gli inventari sono l'entità che raggruppa una o più liste inventariali.
+El formulario se abre a través de la ruta **Logística > inventari fisici** y permite realizar una selección de los inventarios presentes en la base de datos. Los inventarios son la entidad que agrupa una o más listas inventariales.
 
-Consente di ricercare gli inventari che corrispondono ai dati di filtro specificati con lo scopo di visualizzarli, modificarli, ed eventualmente cancellarli oppure procedere all'inserimento di una nuova lista; la finestra si compone di un'area di filtro e da una griglia di risultato.
+Permite buscar los inventarios que corresponden a los datos de filtro especificados con el fin de visualizarlos, modificarlos, y eventualmente eliminarlos, o proceder a la inserción de una nueva lista; la ventana se compone de un área de filtro y de una cuadrícula de resultados.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Una vez configurados todos los filtros deseados, será suficiente hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per aprire i dettagli di una lista, basterà selezionarla e fare doppio click con il mouse oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
+Para abrir los detalles de una lista, solo se necesita seleccionarla y hacer doble clic con el mouse, o hacer clic en el botón **modifica** (permite ingresar a los detalles y modificarlos) o en el botón **visualizza** (permite ingresar a los detalles y visualizarlos, pero sin poder modificarlos).
 
-Sempre da questa form si può inserire una nuova lista utilizzando il pulsante **Nuovo**.
+Desde este formulario también se puede insertar una nueva lista utilizando el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

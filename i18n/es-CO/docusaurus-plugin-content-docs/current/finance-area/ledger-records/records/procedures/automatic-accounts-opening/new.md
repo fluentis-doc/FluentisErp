@@ -1,67 +1,53 @@
 ---
-title: Nuova
+title: nuova
 sidebar_position: 2
 ---
 
-La procedura Apertura automatica conti si può utilizzare, in alternativa ad una scrittura di prima nota da inserire tramite il comando **[Creazione Registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record),**  **per rilevare i saldi di inizio attività.**
+El procedimiento de Apertura automática de cuentas se puede utilizar, como alternativa a una escritura de primer registro a ingresar a través del comando **[Creación de Registro contable](/docs/finance-area/ledger-records/records/ledger-record)**, **para registrar los saldos al inicio de la actividad.**
 
-**A partire dalla prima chiusura di bilancio, le successive aperture conti potranno essere gestite direttamente dalla procedura di chiusura.**
+**A partir del primer cierre de balance, las aperturas de cuentas posteriores podrán manejarse directamente desde el procedimiento de cierre.**
 
- 
 :::note[Nota]
-Con questa procedura si registrano unicamente i saldi contabili di apertura, non l'apertura delle partite contabili relative.
+Con este procedimiento se registran únicamente los saldos contables de apertura, no la apertura de las partidas contables relativas.
 :::
 
+**Fecha de apertura**: es la **fecha de procesamiento**, no tiene ninguna conexión con la fecha de registro de la operación que se indicará en el campo correspondiente en la parte inferior de la ventana;  
 
-**Data apertura**: è la **data dell'elaborazione**, non ha alcun collegamento con la data di registrazione dell'operazione che si andrà a indicare nel campo apposito alla base della finestra;
+**Número de apertura**: es un número progresivo gestionado automáticamente;  
 
-**Numero apertura**: è un numero progressivo gestito automaticamente;
+**Descripción**: permite al usuario identificar la operación, así como las anotaciones;  
 
-**Descrizione**: consente all'utente di identificare l'operazione, così come le annotazioni;
+**conto** y **tipo conto**: son filtros de búsqueda dentro de la lista del plan de cuentas;  
 
-**Conto** e **Tipo conto**: sono filtri di ricerca all'interno della lista del piano dei conti;
+**data registrazione** y **data competenza**: campos obligatorios que deben asignarse al registro de apertura;  
 
-**Data registrazione** e **Data competenza**: campi obbligatori da assegnare alla registrazione di apertura;
+**Número**: se asignará una vez realizada la contabilización;  
 
-**Numero**: sarà assegnato una volta operata la contabilizzazione;
+**Causa de apertura de cuentas (Causale di apertura conti)** y **descrizione del movimento**: a asignar para el libro diario.  
 
-**Causale di apertura conti** e **Descrizione del movimento**: da assegnare per il libro giornale.
-
-Una volta impostati questi dati obbligatori sarà possibile salvare le impostazioni e attivare tutta la lista dei sottoconti contabili: la fase successiva sarà quindi quella di operare la memorizzazione sottoconto per sottoconto del saldo dare o avere di apertura conti, con l'eventuale importo di apertura in divisa.
+Una vez establecidos estos datos obligatorios, será posible guardar la configuración y activar toda la lista de subcuentas contables: la fase siguiente será entonces realizar la memorización subcuenta por subcuenta del saldo deudor o acreedor de apertura de cuentas, con el eventual importe de apertura en moneda.  
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/new/image01.png)
-Esempio (non realistico)
+Ejemplo (no realista) (Esempio (non realistico))
 
- 
+**Solo una vez que el total deudor y el total acreedor corresponden, será posible proceder a la captura en contabilidad de la recuperación de saldos (de lo contrario, al presionar el comando de contabilización aparecerá un mensaje de error).**  
 
-**Solo una volta che il totale dare e il totale avere corrispondono sarà possibile procedere alla rilevazione in contabilità della ripresa saldi (in caso contrario premendo il comando di contabilizzazione sarà visualizzato un messaggio di errore).**
+**CONSEJOS OPERATIVOS:**
 
- 
+El usuario puede reabrir varias veces el mismo proceso de apertura de cuentas para completar todos los datos (la operación podría ser larga y realizarse en varios días) antes de proceder, o podrían crearse varias aperturas de cuentas diferentes, tal vez diferenciando una para el activo, otra para el pasivo, o para los clientes/proveedores, etc.  
 
-**CONSIGLI OPERATIVI:**
+En la máscara no se prevé un procedimiento de **rollback**: simplemente se puede eliminar la apertura y la aplicación solicitará confirmación de la eliminación del registro contable correspondiente.  
 
-l'utente può riaprire più volte la stessa elaborazione di apertura conti per completare tutti i dati (l'operazione potrebbe essere anche lunga e svolgersi in più giorni) prima di procedere, oppure si potrebbero creare tante aperture conti differenti, magari differenziando una per l'attivo, l'altra per il passivo, o per i clienti/fornitori ecc.
+En caso de que se realicen cambios en los detalles de la apertura de cuentas DESPUÉS de su contabilización, es posible volver a presionar el comando Crear registro de apertura (en la barra de cinta) para actualizar la escritura contable anterior. Aparecerá un mensaje de advertencia y confirmación de la actualización de la escritura.  
 
-Nella maschera non è prevista una procedura di **rollback**: si potrà semplicemente cancellare l'apertura e l'applicativo chiederà conferma della cancellazione della relativa registrazione di contabilità.
+#### Botones específicos
 
-Nel caso in cui siano operate modifiche al dettaglio dell'apertura conti DOPO la sua contabilizzazione, è possibile premere nuovamente il comando Crea registrazione di apertura (nella ribbon bar) per aggiornare la precedente scrittura contabile. Apparirà un messaggio di avviso e conferma dell'aggiornamento della scrittura.
+**salva**: Botón para guardar el encabezado de la apertura de cuentas, activable después de haber ingresado la descripción y la causa contable.  
 
+**cerca**: Botón para buscar en la lista de cuentas que se pretende incluir en la apertura, a través de los campos de subcuenta y tipo de cuenta.  
 
+**crea registrazione apertura**: Botón para crear el registro de apertura de cuentas.  
 
-#### Pulsanti specifici
+**apre la registrazione per l'apertura conti**: Botón que abre el registro de apertura.  
 
-**Salva**: Pulsante per salvare la testata dell'apertura conti, attivabile dopo aver inserito la descrizione e la causale contabile.
-
-**Cerca**: Pulsante per cercare, la lista dei conti, che si intendono inserire nell'apertura, attraverso i campi del sottoconto e del tipo conto.
-
-**Crea registrazione apertura**: Pulsante per creare la registrazione di apertura conti.
-
-**Apre la registrazione per l'apertura conti**: Pulsante che apre la registrazione di apertura.
-
-**Elimina dettaglio**: Elimina il contenuto dei campi riferiti alla riga selezionata. ATTENZIONE: le righe per quanto riguarda il contenuto dei campi relativi al conto non possono essere eliminate, se lasciate in bianco non saranno incluse nella scrittura contabile di apertura.
-
-
-
-
-
-
+**elimina dettaglio**: Elimina el contenido de los campos relacionados con la línea seleccionada. ATENCIÓN: las líneas respecto al contenido de los campos relacionados con la cuenta no pueden eliminarse; si se dejan en blanco, no serán incluidas en la escritura contable de apertura.

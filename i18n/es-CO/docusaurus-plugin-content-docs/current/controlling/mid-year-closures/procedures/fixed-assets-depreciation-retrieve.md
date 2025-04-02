@@ -1,28 +1,28 @@
 ---
-title: Ripresa ammortamento cespiti
+title: ripresa ammortamento cespiti
 sidebar_position: 3
 ---
 
-All'interno del modulo chiusure infrannuali, dopo aver creato una chiusura infrannuale è possibile valorizzare automaticamente gli ammortamenti di competenza del periodo economico impostato in essa.
+Dentro del módulo de cierres intermedios, después de haber creado un cierre intermedio, es posible valorar automáticamente las amortizaciones correspondientes al período económico establecido en él.
 
-## Ammortamento
+## Amortización (Ammortamento)
 
-All'apertura della maschera, in basso saranno da impostare obbligatoriamente:
+Al abrir la pantalla, en la parte inferior deben configurarse obligatoriamente:
 
-- la **Chiusura di riferimento** (dalla quale viene letto il range di date competenza economica);
+- el **Cierre de referencia (Chiusura di riferimento)** (del cual se lee el rango de fechas de competencia económica);
 
-- la **Data di registrazione** del movimento nelle registrazioni extracontabili;
+- la **data di registrazione** del movimiento en los registros extracontables;
 
-- la **Causale** da utilizzare (anche qui è necessario che la causale preveda la gestione dei cdc/job-orders per valorizzarli nella registrazione).
+- la **causale** a utilizar (también aquí es necesario que la causa prevea la gestión de los cdc/job-orders para valorarlos en el registro).
 
-Il flag **Singola registrazione** per creare un'unica registrazione extracontabile con all'interno i vari sottoconti di ammortamento/fondo.
+El indicador **singola registrazione** permite crear un único registro extracontable que incluya las diversas subcuentas de amortización/fondo.
 
-È interessante segnalare che all'interno dei filtri di ricerca superiori è presente un flag di ricerca dei cespiti appartenenti alle categorie 'incrementali' o meno.
+Es interesante señalar que dentro de los filtros de búsqueda superiores hay un indicador de búsqueda de los activos que pertenecen a las categorías 'incrementales' o no.
 
-Lanciando la ricerca dei dati, il programma valorizzerà la griglia della maschera con i dati degli ammortamenti da calcolare, proporzionati sul numero di giorni di competenza della chiusura. In particolare, per ogni cespite sarà verificato se l'ammortamento dell'anno (dall'anno impostato come parametro della chiusura) è già presente nella sua scheda e questo valore sarà riproporzionato sul numero di giorni: se questo non è presente, sarà simulato un calcolo (sulla base dei parametri della categoria di appartenenza e dei residui a disposizione) e poi questo valore sarà proporzionato sul numero di giorni di competenza.
+Al ejecutar la búsqueda de datos, el programa valorará la cuadrícula de la pantalla con los datos de las amortizaciones a calcular, proporcionados en función del número de días de competencia del cierre. En particular, se verificará para cada activo si la amortización del año (del año establecido como parámetro del cierre) ya está presente en su ficha y este valor será reproporcionado en base al número de días: si esto no está presente, se simulará un cálculo (basado en los parámetros de la categoría a la que pertenece y los residuos disponibles) y luego este valor se proporcionará en base al número de días de competencia.
 
-Si ricorda di selezionare tutte le righe presenti nella griglia per valorizzarle nella chiusura.
+Se recuerda seleccionar todas las filas presentes en la cuadrícula para valorarlas en el cierre.
 
-## Precedenti
+## Anteriores (Precedenti)
 
-In questa è possibile annullare l'operazione eseguita nella tab precedente, *Ammortamento*.
+En este módulo es posible anular la operación realizada en la pestaña anterior, *ammortamento*.

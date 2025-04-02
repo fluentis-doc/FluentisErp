@@ -1,59 +1,59 @@
 ---
-title: Giacenza articolo
+title: Inventario de artículo (Giacenza articolo)
 sidebar_position: 5
 ---
 
-:::important A cosa serve
-La funzione di **giacenza articolo** consente agli operatori di visualizzare rapidamente le giacenze di magazzino per ogni articolo registrato. Attraverso una griglia interattiva, è possibile estrapolare informazioni dettagliate riguardanti la giacenza gestionale, le unità di misura e i lotti. Inoltre, la funzione consente di analizzare le giacenze raggruppate per articolato, ubicazione o progetto, offrendo così una visione completa della disponibilità dei materiali. Questa procedura facilita il monitoraggio delle scorte e consente una gestione più accurata e informata delle operazioni di magazzino, contribuendo così a ottimizzare l'efficienza logistica complessiva.
+:::important ¿Para qué sirve? (A cosa serve)
+La función de **inventario de artículo (giacenza articolo)** permite a los operadores visualizar rápidamente los niveles de inventario para cada artículo registrado. A través de una cuadrícula interactiva, es posible extraer información detallada sobre el inventario de gestión, las unidades de medida y los lotes. Además, la función permite analizar los inventarios agrupados por artículo, ubicación o proyecto, ofreciendo así una visión completa de la disponibilidad de materiales. Este procedimiento facilita el seguimiento de las existencias y permite una gestión más precisa e informada de las operaciones de almacén, contribuyendo así a optimizar la eficiencia logística general.
 :::
 
-Questa procedura è utilizzata per visualizzare la giacenza di un articolo.     
-La form presenta una griglia che muta le proprie colonne sulla base dei filtri inseriti per la ricerca. 
+Este procedimiento se utiliza para visualizar el inventario de un artículo.  
+El formulario presenta una cuadrícula que modifica sus columnas según los filtros ingresados para la búsqueda.
 
-Ad esempio, nel caso in cui venga letto solo il codice di un'ubicazione, tramite il pulsante **Ricerca** verranno visualizzati nella griglia sottostante i risultati della ricerca con la valorizzazione delle seguenti colonne:
+Por ejemplo, en el caso de que se lea solo el código de una ubicación, al presionar el botón **ricerca** se mostrarán en la cuadrícula inferior los resultados de la búsqueda con la valorización de las siguientes columnas:
 
-> **Articolo**: indica il codice dell'articolo;     
-> **Giacenza (Gest.)**: indica la giacenza nell'unità di misura gestionale (principale);      
-> **Unità di misura**: indica l'unità di misura articolo;          
-> **Giacenza**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata sulla base dei movimenti di magazzino;         
-> **Giacenza (FC)**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;               
-> **Lotto**: indica il lotto dell'articolo;       
-> **Descrizione articolo**: indica la descrizione dell'articolo;      
-> **Variante**: indica il codice variante dell'articolo;    
-> **Descrizione variante**: indica la descrizione della variante dell'articolo.     
+> **articolo**: indica el código del artículo;  
+> **Inventario (Gest.) (Giacenza (Gest.))**: indica el inventario en la unidad de medida de gestión (principal);  
+> **unità di misura**: indica la unidad de medida del artículo;  
+> **giacenza**: se valora solo si el indicador *default wms* está habilitado en la pestaña [Unidades de medida alternativas del registro del artículo](/docs/erp-home/registers/items/create-new-item). Este valor indica el inventario expresado en la unidad de medida alternativa, calculado sobre la base de los movimientos de almacén;  
+> **Inventario (FC) (Giacenza (FC))**: se valora solo si el indicador *default wms* está habilitado en la pestaña [Unidades de medida alternativas del registro del artículo](/docs/erp-home/registers/items/create-new-item). Este valor indica el inventario expresado en la unidad de medida alternativa, calculado utilizando el factor de conversión;  
+> **lotto**: indica el lote del artículo;  
+> **descrizione articolo**: indica la descripción del artículo;  
+> **variante**: indica el código de variante del artículo;  
+> **descrizione variante**: indica la descripción de la variante del artículo.  
 
-Mentre, leggendo l'articolo da rettificare, tramite il pulsante **Ricerca** verranno visualizzati nella griglia sottostante i risultati della ricerca con la valorizzazione delle seguenti colonne:
+Mientras que, al leer el artículo a rectificar, al presionar el botón **ricerca** se mostrarán en la cuadrícula inferior los resultados de la búsqueda con la valorización de las siguientes columnas:
 
-> **Ubicazione**: indica l'ubicazione dell'articolo;        
-> **Articolo**: indica il codice dell'articolo;     
-> **Giacenza (Gest.)**: indica la giacenza nell'unità di misura gestionale (principale);      
-> **Unità di misura**: indica l'unità di misura articolo;          
-> **Giacenza**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata sulla base dei movimenti di magazzino;         
-> **Giacenza (FC)**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;               
-> **Lotto**: indica il lotto dell'articolo;       
-> **Variante**: indica il codice variante dell'articolo;    
-> **Descrizione variante**: indica la descrizione della variante dell'articolo.     
+> **ubicazione**: indica la ubicación del artículo;  
+> **articolo**: indica el código del artículo;  
+> **Inventario (Gest.) (Giacenza (Gest.))**: indica el inventario en la unidad de medida de gestión (principal);  
+> **unità di misura**: indica la unidad de medida del artículo;  
+> **giacenza**: se valora solo si el indicador *default wms* está habilitado en la pestaña [Unidades de medida alternativas del registro del artículo](/docs/erp-home/registers/items/create-new-item). Este valor indica el inventario expresado en la unidad de medida alternativa, calculado sobre la base de los movimientos de almacén;  
+> **Inventario (FC) (Giacenza (FC))**: se valora solo si el indicador *default wms* está habilitado en la pestaña [Unidades de medida alternativas del registro del artículo](/docs/erp-home/registers/items/create-new-item). Este valor indica el inventario expresado en la unidad de medida alternativa, calculado utilizando el factor de conversión;  
+> **lotto**: indica el lote del artículo;  
+> **variante**: indica el código de variante del artículo;  
+> **descrizione variante**: indica la descripción de la variante del artículo.  
 
 :::note Nota
-Le colonne facenti riferimento alla giacenza sono tre: 
-- *Giacenza (Gest.)* - (gestionale) 
-- *Giacenza*  
-- *Giacenza(FC)* - (FC = Fattore di conversione)
+Las columnas que hacen referencia al inventario son tres:
+- *Inventario (Gest.) (Giacenza (Gest.))* - (gestional)
+- *giacenza*  
+- *Inventario (FC) (Giacenza (FC))* - (FC = Factor de conversión)
 
-Nel caso di utilizzo del flag **Default WMS** presente nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item), la prima risulta valorizzata con l'unità di misura principale dell'articolo, la seconda risulta popolata con la giacenza espressa nell'unità di misura alternativa dell'articolo e data dalla somma dei movimenti, mentre la terza è data dalla giacenza espressa nell'unità di misura alternativa ma calcolata con il fattore di conversione.
-Nel caso in cui, il flag **Default WMS** non sia abilitato, le colonne *Giacenza* e *Giacenza(FC)* non verranno valorizzate.
+En caso de usar el indicador **default wms** presente en la pestaña [Unidades de medida alternativas del registro del artículo](/docs/erp-home/registers/items/create-new-item), la primera se valoriza con la unidad de medida principal del artículo, la segunda se pobló con el inventario expresado en la unidad de medida alternativa del artículo y dado por la suma de los movimientos, mientras que la tercera se expresa en la unidad de medida alternativa pero calculada con el factor de conversión.  
+Si el indicador **default wms** no está habilitado, las columnas *giacenza* y *Inventario (FC) (Giacenza (FC))* no se valorizarán.
 :::
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que deben ingresarse en la tabla [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Área | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | ItemStocks |
 
-Questo parametro va inserito solo se si vuole filtrare le giacenze per uno specifico magazzino (la casuale può essere lasciata vuota), altrimenti se non viene inserito verranno visualizzare le giacenze di tutti i magazzini.
+Este parámetro debe ingresarse solo si se desea filtrar los inventarios para un almacén específico (la causal puede dejarse vacía); de lo contrario, si no se ingresa, se mostrarán los inventarios de todos los almacenes.
 
 :::note Nota
-Se nei [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) è associato per quell’utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti.
+Si en los [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) está asociado para ese usuario un solo almacén, se propone por defecto ese; de lo contrario, si hay más de uno asociado, por defecto no se propone ninguno y el usuario solo puede elegir entre aquellos que ha ingresado.
 :::
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barras que se deben leer en el campo **codice barcode**, consultar la página relacionada con el [Tokenizador de códigos de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

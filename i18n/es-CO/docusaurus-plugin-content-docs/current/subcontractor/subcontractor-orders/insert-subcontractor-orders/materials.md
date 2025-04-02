@@ -1,25 +1,24 @@
 ---
-title: Materiali
+title: materiali
 sidebar_position: 4
 ---
 
-La form è costituita da due griglie che riportano i materiali da inviare al terzista per la lavorazione e i materiali che saranno impiegati al rientro del prodotto lavorato.
-E' possibile inserire articoli codificati, non codificati e note. 
+El formulario consta de dos cuadrículas que muestran los materiales a enviar al proveedor para el procesamiento y los materiales que se utilizarán al recibir el producto procesado. Es posible ingresar artículos codificados, no codificados y notas.
 
-I materiali inviati e impiegati possono essere gestiti dall'operatore e in tal caso è necessario immettere la quantità, l'eventuale prezzo della lavorazione, la data di previsto rientro, la data di impiego del materiale. Questi dati sono invece già valorizzati nel caso in cui l'ordine provenga da *Schedulazione generale* o da *Elaborazione MRP*.
+Los materiales enviados y utilizados pueden ser gestionados por el operador y, en tal caso, es necesario ingresar la cantidad, el posible precio del procesamiento, la fecha de previsto retorno y la fecha de uso del material. Estos datos ya están valorados si el pedido proviene de *schedulazione generale* o de *Procesamiento MRP (Elaborazione MRP)*.
 
-## Materiali da consegnare
+## materiali a entregar (Materiali da consegnare)
 
-**Codice articolo**: indica il materiale da consegnare per la lavorazione;  
+**codice articolo**: indica el material a entregar para el procesamiento;  
 
-:::note Nota
-Nel caso in cui l'ordine di conto lavoro sia generato dal rilascio di un *Ordine pianificato di conto lavoro* o di un *Ordine pianificato di produzione* con una o più fasi esterne, i materiali da consegnare non verranno visualizzati se: non esistono i [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, o il flag *Considera in conto lavoro* non è abilitato nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), o se il *tipo prelievo* nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) è *automatico*, o se [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) il *tipo prelievo* è *con lista* e il flag WIP non è abilitato.
+:::note Nota (Nota)
+En el caso de que el pedido de trabajo por encargo sea generado por la liberación de un *ordine pianificato di conto lavoro* o de un *ordine pianificato di produzione* con una o más fases externas, los materiales a entregar no se visualizarán si: no existen los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo, o el indicador *considera in conto lavoro* no está habilitado en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), o si el *tipo prelievo* en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) es *automatico*, o si en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) el *tipo prelievo* es *con lista* y el indicador WIP no está habilitado.
 :::
 
-## Materiali da impiegare
+## materiali a utilizar (Materiali da impiegare)
 
-**Codice articolo**: indica il materiale da impiegare al rientro del lavorato;  
-**Impiego unitario**: quantità da impiegare per ogni unità del rientro del lavorato, nel caso di gestione automatica della schedulazione di distinte; questo dato è valorizzato dal sistema;  
-**Impiego totale**: quantità totale da impiegare per la completa lavorazione nel caso di gestione automatica della schedulazione di distinte; questo dato è valorizzato dal sistema;  
-**% scarto**: quantità da impiegare in più che risulta essere lo scarto;  
-**Data prev. impegno**: in base a questa data il sistema pianifica la disponibilità del fabbisogno.
+**codice articolo**: indica el material a utilizar al recibir el producto procesado;  
+**Uso unitario (Impiego unitario)**: cantidad a utilizar por cada unidad del producto procesado, en caso de gestión automática de la programación de listas de materiales; este dato es valorado por el sistema;  
+**Uso total (Impiego totale)**: cantidad total a utilizar para el procesamiento completo en caso de gestión automática de la programación de listas de materiales; este dato es valorado por el sistema;  
+**% scarto**: cantidad a utilizar adicional que resulta ser el desperdicio;  
+**Fecha prevista de uso (Data prev. impegno)**: según esta fecha, el sistema planifica la disponibilidad de la demanda.

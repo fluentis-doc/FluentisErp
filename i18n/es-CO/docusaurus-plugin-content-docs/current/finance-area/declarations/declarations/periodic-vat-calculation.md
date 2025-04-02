@@ -1,97 +1,96 @@
 ---
-title: Comunicazione liquidazioni periodiche iva
+title: comunicazione liquidazioni periodiche iva
 sidebar_position: 4
 ---
 
-Dalla presente form è possibile gestire l'adempimento fiscale (introdotto dall'art. 21-bis del D.L. 193/2016 a decorrere dall'anno 2017) che prevede l'invio telematico di una comunicazione dei dati riepilogativi delle liquidazioni periodiche iva (mensili o trimestrali).
+Desde este formulario es posible gestionar el cumplimiento fiscal (introducido por el art. 21-bis del D.L. 193/2016 a partir del año 2017) que prevé el envío telemático de una comunicación de los datos resumidos de las liquidaciones periódicas de IVA (mensuales o trimestrales).
 
-Tramite il tasto **Ricerca** presente nella ribbon bar è possibile visualizzare la lista delle comunicazioni già elaborate. E' possibile modificarle (tasto **Modifica**) oppure eliminarle (tato **Elimina**) o semplicemente visualizzarle (tasto **Visualizzazione**).
+A través del botón **ricerca** presente en la barra de opciones, es posible visualizar la lista de las comunicaciones ya elaboradas. Se pueden modificar (botón **modifica**), eliminar (botón **elimina**) o simplemente visualizarlas (botón **visualizzazione**).
 
-Per inserire una nuova comunicazione premere il tasto **Nuovo**.
+Para insertar una nueva comunicación, presione el botón **nuovo**.
 
-**PROCEDURA DI INSERIMENTO**:
+**PROCEDIMIENTO DE INGRESO**:
 
-- indicare l'**Anno** oggetto di comunicazione ed il numero del **Trimestre** da dichiarare. A questo punto il programma procederà a verificare se esite già una dichiarazione per questo periodo ed in caso negativo (in caso contrario viene visualizzato un avviso) procede a creare automaticamente il nome da assegnare al file telematico ed a visualizzare le tab relative ai tre mesi del trimestre con i relativi righi corrispondenti al modello ministeriale.
+- indique el **anno** objeto de comunicación y el número del **trimestre** a declarar. En este punto, el programa procederá a verificar si ya existe una declaración para este período y, en caso negativo (en caso contrario se mostrará un aviso), procederá a crear automáticamente el nombre que se asignará al archivo telemático y visualizará las pestañas relativas a los tres meses del trimestre con los renglones correspondientes al modelo ministerial.
 
-- compilare gli altri campi della testata:
+- complete los demás campos de la cabecera:
 
-  **Codice fiscale**: Nel caso in cui la società sia una società di capitali, sarà obbligatorio indicare il Codice fiscale della persona fisica che firma la comunicazione e il relativo Codice carica;
+  **codice fiscale**: en caso de que la empresa sea una sociedad de capital, será obligatorio indicar el Código fiscal de la persona física que firma la comunicación y el correspondiente Código de cargo;
 
-  **Dichiarante:** in alternativa alla compilazione del campo precedente (Cod. fiscale) è possibile selezionare il dipendente firmatario dalla combo box collegata alla tabella Dipendente, all'interno della quale deve essere già stato inserito il dipendente (Amministratore, Responsabile Amministratico ecc...) in questione completo di codice fiscale e codice carica;
+  **dichiarante**: alternativamente, en lugar de completar el campo anterior (Cod. fiscal), es posible seleccionar al empleado firmante desde la caja combinada vinculada a la tabla de Empleados, en la cual debe haberse ingresado previamente el empleado (Administrador, Responsable Administrativo, etc.) correspondiente, completo con código fiscal y código de cargo;
 
-  **Codice carica**: la combo box è collegata ad una tabella fissa con i codici definiti dal modello ministeriale;
+  **codice carica**: la caja combinada está vinculada a una tabla fija con los códigos definidos por el modelo ministerial;
 
-  **Codice fiscale intermediario**: se ci si avvale di un intermediario abilitato per l'invio della dichiarazione (Caf, Commercialista ecc...) indicare qui il relativo codice fiscale.
+  **codice fiscale intermediario**: si se utiliza un intermediario autorizado para el envío de la declaración (Caf, Contador, etc.), indique aquí el código fiscal correspondiente.
 
-  **Data dell'impegno:** capo per indicare la data dell'impegno alla presentazione telematica da parte dell'intermediario abilitato;
+  **data dell'impegno**: campo para indicar la fecha del compromiso para la presentación telemática por parte del intermediario autorizado;
 
-  **Partita IVA controllante:** (liquidazione iva del gruppo) Se la Comunicazione è presentata da parte di un ente o società commerciale che si sia avvalso nel trimestre della procedura di liquidazione dell'IVA di gruppo, indicare la partita IVA dell'ente o società controllante (anche nella Comunicazione presentata da quest'ultimo soggetto per la propria posizione individuale). Il campo va compilato anche nel caso in cui l'ente o la società con liquidazioni periodiche mensili sia fuoriuscito dalla liquidazione IVA di gruppo nel secondo o terzo mese del trimestre.
+  **partita iva controllante**: (liquidación de IVA del grupo) si la Comunicación es presentada por un ente o empresa comercial que ha utilizado en el trimestre el procedimiento de liquidación del IVA de grupo, indique el número de IVA del ente o empresa controladora (también en la Comunicación presentada por este último sujeto para su posición individual). El campo debe completarse también en caso de que el ente o la empresa con liquidaciones periódicas mensuales haya salido de la liquidación de IVA de grupo en el segundo o tercer mes del trimestre.
 
-  **Liquidazione del gruppo**: barrare la casella nel caso in cui la Comunicazione si riferisce alla liquidazione dell'IVA del gruppo (vedere le istruzioni ministeriali).
-Attivando questo flag per le società appartenenti al gruppo non verranno calcolati alcuni campi quali ad esempio iva da versare (inquanto versa la capogruppo).
+  **liquidazione del gruppo**: marque la casilla en caso de que la Comunicación se refiera a la liquidación del IVA del grupo (vea las instrucciones ministeriales). Activando este indicador, para las empresas que pertenecen al grupo, no se calcularán algunos campos como, por ejemplo, IVA a pagar (ya que la capogruppo realiza el pago).
 
-NOTA: la comunicazione eseguita in questa modalità si appoggia sulla preventiva elaborazione della (nuova) funzionalità Liquidazione iva di gruppo, che va a calcolare i saldi iva delle varie società appartenenti al gruppo e li trasferisce alla capogruppo.
+NOTA: la comunicación realizada de esta manera se basa en el procesamiento previo de la (nueva) funcionalidad de Liquidación IVA de grupo, que calcula los saldos de IVA de las diferentes empresas que pertenecen al grupo y los transfiere a la capogruppo.
 
-  **Ultimo mese**: In caso di sopravvenuta mancanza dei requisiti per avvalersi della procedura di liquidazione dell'IVA di gruppo, indicare l'ultimo mese di controllo (esempio “02” per il mese di febbraio - Vedere istruzioni ministeriali).
+  **ultimo mese**: en caso de que se produzca la falta de requisitos para acogerse al procedimiento de liquidación del IVA de grupo, indique el último mes de control (por ejemplo, “02” para el mes de febrero - Ver instrucciones ministeriales).
 
-  **Firma:** campo **OBBLIGATORIO**, da mettere sempre.
+  **firma**: campo **OBLIGATORIO**, que debe completarse siempre.
 
-  **Firma dell'incaricato:** da apporre se vengono compilati i campi relativi all'intermediario abilitato;
+  **firma dell'incaricato**: debe colocarse si se completan los campos relacionados con el intermediario autorizado;
 
-  **Impegno alla presentazione telematica**: la combo box è collegata ad una tabella fissa e va compilata, in caso di presentazione da parte di un intemediario, selezionando se il modello è stato predisposto dal contribuente o dall'intermediario stesso, in caso contrario lasciando la voce "nessuno".
+  **impegno alla presentazione telematica**: la caja combinada está vinculada a una tabla fija y debe completarse; en caso de presentación por parte de un intermediario, seleccione si el modelo fue preparado por el contribuyente o por el propio intermediario; de lo contrario, deje la opción "ninguno".
 
-- premere **Salva** per salvare i dati di testata.
+- presione **salva** para guardar los datos de cabecera.
 
-- Premere **Calcola** trimestre per eseguire il calcolo dei dati dei tre mesi del trimeste. A questo punto i campi saranno compilati in automatico, tuttavia è sempre possibile editarli manualmente per eventuali correzioni. Attenzione: se verrà premuto nuovamente Calcola verranno ripristinati i dati calcolati dal sistema.
+- Presione **calcola** trimestre para ejecutar el cálculo de los datos de los tres meses del trimestre. En este punto, los campos se llenarán automáticamente; sin embargo, siempre es posible editarlos manualmente para eventuales correcciones. Atención: si se presiona nuevamente Calcular, se restaurarán los datos calculados por el sistema.
 
-- Premere il tasto **Esporta** per generare e memorizzare nella gestione docuumentale di Fluentis il file telematico in formato .xml. Sarà quindi possibil selzionarlo premendo il tasto della gestione documentale direttamemte dalla form in commento e procedere a salvare una copia del file sul proprio pc per l'invio telematico o la trasmissione all'intermediario abilitato. E' possibile anche procedere ad una stampa cartacea (o visione in anteprima) dei dati su modello ministeriale.
+- Presione el botón **esporta** para generar y almacenar en la gestión documental de Fluentis el archivo telemático en formato .xml. Entonces será posible seleccionarlo presionando el botón de la gestión documental directamente desde el formulario en cuestión y proceder a guardar una copia del archivo en su PC para el envío telemático o la transmisión al intermediario autorizado. También es posible proceder a una impresión en papel (o vista previa) de los datos en el modelo ministerial.
 
-**ATTENZIONE**:
+**ATENCIÓN**:
 
-La corretta elaborazione dei dati proposti dalla procedura di calcolo, in modo che siano conformi al risultato delle varie** [liquidazioni periodiche iva](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement) **,  dipende in particolare dalla corretta attivazione / abilitazione, ai fini del calcolo, dei vari codici iva utilizzati nelle registrazioni contabili.
+La correcta elaboración de los datos propuestos por el procedimiento de cálculo, de modo que sean conformes al resultado de las diversas **[liquidaciones periódicas de IVA](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**, depende en particular de la correcta activación / habilitación, a efectos del cálculo, de los diversos códigos de IVA utilizados en los registros contables.
 
-Per verificare il corretto settaggio aprire la tabella ** [aliquote / modialità iva](/docs/configurations/tables/finance/vat-rates) ** e verificare in particolare la colonna relativa al flag in dichiarazione iva.
+Para verificar la correcta configuración, abra la tabla **[tipos de IVA / modos de IVA](/docs/configurations/tables/finance/vat-rates)** y compruebe en particular la columna relacionada con el indicador en la declaración de IVA.
 
 ![](/img/it-it/finance-area/declarations/declarations/periodic-vat-calculation/image01.png)
 
-Con il flag attivo il codice iva selezionato sarà incluso nel calcolo e riportato nel modello fiscale, mentre con il flag disattivato i valori non saranno inclusi.
+Con el indicador activo, el código de IVA seleccionado se incluirá en el cálculo y se reflejará en el modelo fiscal, mientras que con el indicador desactivado, los valores no se incluirán.
 
-Tipicamente tutti i codici iva ordinari vanno sempre inclusi. I codici iva di esclusione (es. ex. art 15 dpr 633 / 72) invece NON vanno inclusi. Vanno invece inclusi i codici di non imponibilità (es. per operazioni intra-comunitarie o in reverse charge).
+Típicamente, todos los códigos de IVA ordinarios deben incluirse siempre. Los códigos de exclusión (ej. ex. art. 15 dpr 633 / 72) no deben incluirse. Sin embargo, deben incluirse los códigos de no sujeción (ej. para operaciones intra-comunitarias o en reverse charge).
 
-**N.B.** secondo le istruzioni ministeriali fanno eccezione i codici di esclusione relativi "alle operazioni (attive) non soggette per carenza del presupposto territoriale di cui agli artt. da 7 a 7-septies per le quali è obbligatoria l’emissione della fattura in base alle disposizioni contenute nell’art. 21, comma 6-bis" i quali VANNO inclusi nel dichiarativo (rigo VP2).
+**N.B.** Según las instrucciones ministeriales, hacen excepción los códigos de exclusión relativos "a las operaciones (activas) no sujetas por falta del supuesto territorial de los artículos de 7 a 7-septies para las cuales es obligatoria la emisión de la factura según las disposiciones contenidas en el art. 21, párrafo 6-bis"; estos deben incluirse en la declaración (renglón VP2).
 
-Si consiglia di fare riferimento alla normativa iva ed alle istruzioni ministeriali relative alla dichiarazione iva annuale (o ad uno degli altri modelli di dichiarazione di dati iva che seguono la stessa "logica") per la corretta individuazione del trattamento delle varie casistiche.
+Se recomienda hacer referencia a la normativa de IVA y a las instrucciones ministeriales relativas a la declaración de IVA anual (o a uno de los otros modelos de declaración de datos de IVA que siguen la misma "lógica") para la correcta identificación del tratamiento de las diversas casuísticas.
 
-A titolo di esempio l'errato settaggio, escludendo ad esempio un codice di non imponibilità, determinerà una corrispondenza tra il modello e le liquidazioni periodiche relativamente all'imposta, ma ci sarà una differenza nei valori relativi agli imponibili (più bassi nella comunicazione rispetto alle liquidazioni).
-
----
-
-**NOTA:**
-Il calcolo del campo VP2 (nel caso in cui si voglia effettuare un confronto e riconciliazione con le liquidazioni iva ed i dati contabili) considera questi tipi movimento:
-Iva Vendite regime Normale
-Iva Vendite IntraCEE
-Iva Vendite ExtraCEE
-Vendita con iva in sospensione
-Corrispettivi
-Vendite Regime Agricolo
-Iva vendite con split payment
-
-**Vengono pertanto automaticamente esclusi i dati di imponibile lato vendite (derivanti da giroconto automatico sui registri vendite) riferiti agli acquisti intra-comunitari ed in reverse charge.**
-Ciò coerentemente con le istruzioni ministeriali.
+A modo de ejemplo, una configuración incorrecta, excluyendo, por ejemplo, un código de no sujeción, resultará en una correspondencia entre el modelo y las liquidaciones periódicas en relación con el impuesto, pero habrá una diferencia en los valores relacionados con las bases imponibles (más bajos en la comunicación en comparación con las liquidaciones).
 
 ---
 
-**NOTA TECNICA:**
+**NOTA:**  
+El cálculo del campo VP2 (en caso de que se desee realizar una comparación y conciliación con las liquidaciones de IVA y los datos contables) considera estos tipos de movimiento:  
+IVA Ventas régimen Normal  
+IVA Ventas IntraCEE  
+IVA Ventas ExtraCEE  
+Venta con IVA en suspensión  
+Corrientes  
+Ventas Régimen Agrícola  
+IVA ventas con split payment  
 
-per l'esportazione xml è necessario:
+**Se excluyen automáticamente los datos de base imponible del lado de ventas (derivados de la compensación automática en los registros de ventas) relacionados con las compras intra-comunitarias y en reverse charge.**  
+Esto de acuerdo con las instrucciones ministeriales.
 
-- che si attivo il servizio di windows sul server Artinfo Bizlink connector
+---
 
-- che sia creato il connettore ComunicazioneIvaTrim da configurare come nell'immagine seguente
+**NOTA TÉCNICA:**  
 
-- che esista la cartella fisica di output (sul server) configurata nel connettore (esempio "Outgoing")
+Para la exportación a XML es necesario:
 
-- che esista nella Tabella di Fluentis **Tipi Documento** il tipo **Other Documents** configurato come nell'immagine seguente.
+- que esté activo el servicio de Windows en el servidor Artinfo Bizlink connector
+
+- que se haya creado el conector ComunicazioneIvaTrim configurado como en la imagen siguiente
+
+- que exista la carpeta física de salida (en el servidor) configurada en el conector (ejemplo "Outgoing")
+
+- que exista en la tabla de Fluentis **Tipos de Documento** el tipo **Otros Documentos** configurado como en la imagen siguiente.
 
 ![](/img/it-it/finance-area/declarations/declarations/periodic-vat-calculation/image02.png)
 
@@ -99,7 +98,6 @@ per l'esportazione xml è necessario:
 
 ---
 
-### VIDEO TUTORIALS
+### TUTORIALES EN VIDEO (VIDEO TUTORIALS)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-

@@ -1,20 +1,20 @@
 ---
-title: Creazione report
+title: Creación de reportes (Creazione report)
 sidebar_position: 3
 ---
 
-XtraReport è un tool di reporting, integrato in Fluentis, per la generazione di reportistica destinata all'utente finale.
+XtraReport es una herramienta de informes, integrada en Fluentis, para la generación de reportes destinados al usuario final.
 
-• La creazione di un report
+• La creación de un reporte (La creazione di un report)
 
-• Gli elementi grafici di un report (Label, Table, Line, Picture, ecc.)
+• Los elementos gráficos de un reporte (Label, Table, Line, Picture, etc.) (Gli elementi grafici di un report (Label, Table, Line, Picture, ecc.))
 
-• Gli elementi logici di un report (Campi calcolati, Formatting rules, Collections, Navigazione dei dati, ecc.)
+• Los elementos lógicos de un reporte (Campi calcolati, Formatting rules, Collections, Navigazione dei dati, etc.) (Gli elementi logici di un report (Campi calcolati, Formatting rules, Collections, Navigazione dei dati, ecc.))
 
-• Le sezioni di un report (Page Header, Report Footer, Band, Sub Band, ecc.)
+• Las secciones de un reporte (Page Header, Report Footer, Band, Sub Band, etc.) (Le sezioni di un report (Page Header, Report Footer, Band, Sub Band, ecc.))
 
-• Parametri
+• Parámetros (Parametri)
 
-• Subreport
+• Subreport (Subreport)
 
-Per dettagli leggi l'articolo *Creazione report in ARM*.
+Para detalles, lee el artículo *Creación de reportes en ARM* (Creazione report in ARM).

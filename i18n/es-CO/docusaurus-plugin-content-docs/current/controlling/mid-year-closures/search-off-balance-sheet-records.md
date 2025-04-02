@@ -1,11 +1,10 @@
 ---
-title: Ricerca registrazioni extracontabili
+title: Búsqueda de registros extracontables (Ricerca registrazioni extracontabili)
 sidebar_position: 4
 ---
 
-La ricerca delle registrazioni extracontabili consente di visualizzare tutti i movimenti associati ad una determinata ***Chiusura infrannuale***. La maschera avrà tutti i pulsanti disabilitati fino a che non si imposterà su quale chiusura infrannuale si vuole operare.
+La búsqueda de registros extracontables permite visualizar todos los movimientos asociados a un determinado **chiusura infrannuale***. La máscara tendrá todos los botones deshabilitados hasta que se establezca en qué cierre interanual se desea operar.
 
-Da questa maschera sarà possibile: trovare e modificare le registrazioni associate alla chiusura infrannuale; cancellare le registrazioni associate alla chiusura infrannuale; aggiungere registrazioni manuali alla chiusura infrannuale (es.: rilevare gli accantonamenti di competenza delle paghe);  duplicare una registrazione manuale (non quelle automatiche create con le procedure del modulo) selezionata in griglia in un'altra chiusura già presente nel modulo.
+Desde esta máscara será posible: encontrar y modificar los registros asociados al cierre interanual; eliminar los registros asociados al cierre interanual; añadir registros manuales al cierre interanual (por ejemplo: registrar las provisiones de nómina); duplicar un registro manual (no aquellos automáticos creados con los procedimientos del módulo) seleccionado en la cuadrícula en otro cierre ya presente en el módulo.
 
-La creazione di una registrazione extracontabile è del tutto simile alla creazione di una registrazione di prima nota: si selezionerà sempre una causale di contabilità generale e da qui si procederà alla registrazione (l'unica differenza è che non esiste il concetto di protocollo iva nell'infrannuale: il modulo, comunque, è una copia che prevede le stesse tabelle logiche della contabilità, pur essendo fisicamente differenti per non sporcare in alcun modo i dati ufficiali di contabilità). Sono consentite registrazioni extracontabili di soli movimenti per centro di costo/profitto.
-
+La creación de un registro extracontable es muy similar a la creación de un registro de asientos contables: siempre se seleccionará una causa de contabilidad general y a partir de ahí se procederá con el registro (la única diferencia es que no existe el concepto de protocolo de IVA en el cierre interanual: el módulo, sin embargo, es una copia que prevé las mismas tablas lógicas de la contabilidad, aunque físicamente diferentes para no contaminar de ninguna manera los datos oficiales de contabilidad). Se permiten registros extracontables de solo movimientos por centro de costo/beneficio.

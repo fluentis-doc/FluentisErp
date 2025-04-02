@@ -1,47 +1,47 @@
 ---
-title: Aggiornamento prezzi progetto
+title: aggiornamento prezzi progetto
 sidebar_position: 3
 ---
 
-La procedura Aggiorna prezzi **aggiorna il prezzo, il listino prezzi di riferimento e il codice iva** nelle righe progetto, le richieste intervento, gli interventi pianificati e gli interventi in base ai parametri impostati nella parte inferiore della form.
+El procedimiento **aggiorna prezzi** **actualiza el precio, la lista de precios de referencia y el código IVA** en las líneas del proyecto, las solicitudes de intervención, las intervenciones planificadas y las intervenciones según los parámetros establecidos en la parte inferior del formulario.
 
-Per più i dettagli sulle parti comuni delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para más detalles sobre las partes comunes de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
 
-## Procedura  
+## Procedimiento  
 
-1. Impostatare i **filtri** desiderati  nella sezione filtri e premere il pulsante **Ricerca** nel menu principale;  
-2. Selezionare nella tabella dei risultati le righe da aggiornare;  
-La selezione può essere fatta manualmente nella tabella dei risultati o usando i pulsanti **Seleziona tutto** o **Deseleziona tutto** nella barra del menu;  
-3. Impostare il **prezzo, il listino prezzi** e il **codice iva** aggiornati nella sezione **Prezzo/iva** nella parte inferiore della finestra;  
-4. Premere **Elabora prezzi** per visualizzare l’anteprima delle modifiche che compariranno nella colonna **Nuovo prezzo** e **Iva**. Nel caso in cui sia stato utilizzato un listino per aggiornare il prezzo, le informazioni relative al listino compariranno nelle colonne** Listino di vendita** e **Data listino**.
+1. Configurar los **filtros** deseados en la sección de filtros y presionar el botón **ricerca** en el menú principal;  
+2. Seleccionar en la tabla de resultados las líneas a actualizar;  
+La selección puede hacerse manualmente en la tabla de resultados o utilizando los botones **seleziona tutto** o **Deseleccionar todo (Deseleziona tutto)** en la barra del menú;  
+3. Establecer el **precio, la lista de precios** y el **código IVA** actualizados en la sección **Precio/IVA (Prezzo/iva)** en la parte inferior de la ventana;  
+4. Presionar **elabora prezzi** para visualizar la vista previa de los cambios que aparecerán en la columna **nuovo prezzo** y **IVA**. En caso de que se haya utilizado una lista para actualizar el precio, la información relacionada con la lista aparecerá en las columnas **listino di vendita** y **data listino**.
 
-:::note Note
-Le modifiche in questa fase sono solo applicate all’anteprima, non sono ancora effettive nei documenti.
+:::note Nota
+Los cambios en esta fase solo se aplican a la vista previa y aún no son efectivos en los documentos.
 :::
 
-5. Definire nella sezioni dei parametri i **documenti** per i quali si vuole applicare le modifiche e le **opzioni** relative alle wbs da aggiornare;  
-6. Premere **Aggiorna** per rendere effettive le modifiche nei documenti.
-  
-## Prezzo/iva
+5. Definir en la sección de parámetros los **documentos** a los que se desean aplicar los cambios y las **opciones** relacionadas con las WBS para actualizar;  
+6. Presionar **aggiorna** para hacer efectivas las modificaciones en los documentos.
 
-**Forza prezzo**: utilizzare quest'opzione se si desidera indicare il nuovo prezzo manualmente;
+## Precio/IVA (Prezzo/iva)
 
-**Aggiorna prezzo e listino con ultimo listino**: se selezionato verrà usato l’ultimo listino valido per determinare il nuovo prezzo;
+**forza prezzo**: utilizar esta opción si se desea indicar manualmente el nuevo precio;  
 
-**Aggiorna prezzo e listino con listino**: se selezionato verrà usato il listino inserito in seguito per determinare il nuovo prezzo;
+**Actualizar precio y lista con última lista (Aggiorna prezzo e listino con ultimo listino)**: si se selecciona, se usará la última lista válida para determinar el nuevo precio;  
 
-**Forza iva**: indicare manualmente il codice iva da utilizare per le righe selezionate, verrà inserito nella colonna IVA della tabella dei risultati;
+**Actualizar precio y lista con lista (Aggiorna prezzo e listino con listino)**: si se selecciona, se usará la lista ingresada posteriormente para determinar el nuevo precio;  
 
-**Aggiorna codice IVA da anagrafica cliente**: il codice IVA viene determinato dal valore inserito nell’anagrafica cliente.
-  
-## Opzioni
+**forza iva**: indicar manualmente el código IVA a utilizar para las líneas seleccionadas, que se inserta en la columna IVA de la tabla de resultados;  
 
-**Duplica riga WBS da aggiornare**: se selezionato le righe wbs da aggiornare vengono duplicate nel progetto;
+**aggiorna codice iva da anagrafica cliente**: el código IVA se determina a partir del valor ingresado en el registro del cliente.
 
-**Storna giorni assegnati nella wbs duplicata**: se selezionato le giornate assegnate alla wbs duplicata vengono stornate dalla wbs precedente.
-  
-## Documenti
+## Opciones
 
-**Aggiorna righe di progetti, richieste intervento e interventi pianificati collegati alla WBS non ancora evasi**: quando vengono aggiornati le righe di progetto, i documenti di richiesta e intervento pianificato non ancora evasi vengono automaticamente aggiornati;
+**duplica riga wbs da aggiornare**: si se selecciona, las líneas WBS a actualizar se duplican en el proyecto;  
 
-**Aggiorna interventi collegati alla WBS non ancora fatturati**: in questo caso, verranno aggiornati dati della riga di servizio e i dati della riga collegata nel tab **Piano di fatturazione**.
+**storna giorni assegnati nella wbs duplicata**: si se selecciona, los días asignados a la WBS duplicada se anulan de la WBS anterior.
+
+## Documentos
+
+**Actualizar líneas de proyectos, solicitudes de intervención e intervenciones planificadas vinculadas a la WBS no aún cumplidas (Aggiorna righe di progetti, richieste intervento e interventi pianificati collegati alla WBS non ancora evasi)**: cuando se actualizan las líneas del proyecto, los documentos de solicitud e intervención planificada que no se han cumplido se actualizan automáticamente;  
+
+**aggiorna interventi collegati alla wbs non ancora fatturati**: en este caso, se actualizarán los datos de la línea de servicio y los datos de la línea vinculada en la pestaña **piano di fatturazione**.

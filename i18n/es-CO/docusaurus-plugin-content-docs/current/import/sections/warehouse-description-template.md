@@ -1,1 +1,1 @@
-- **Magazzino/Descrizione/Causale**: questi dati sono necessari per le registrazioni di carico in magazzino. Vengono ripresi, in base al documento di acquisto, dalla tabella *Tipi ordine/DDT/Fatture di acquisto* oppure si inseriscono manualmente.
+- **Almacén/Descripción/Motivo (Magazzino/Descrizione/Causale)**: estos datos son necesarios para los registros de carga en el almacén. Se recuperan, según el documento de compra, de la tabla *Tipos de pedido/Guias de remisión/Facturas de compra (Tipi ordine/DDT/Fatture di acquisto)* o se ingresan manualmente.

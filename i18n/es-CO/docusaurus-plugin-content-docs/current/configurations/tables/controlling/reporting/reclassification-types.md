@@ -1,23 +1,23 @@
 ---
-title: Tipi riclassificazione
+title: tipi riclassificazione
 sidebar_position: 1
 ---
 
-La tabella dei **Tipi riclassificazione** è già precompilata dal [**Fast start**](/docs/guide/fast-start) con le tipologie  
-- *IV - Riclassificazione IV direttiva UE*
-- *EC - Riclassificazione economico*
-- *BEP - Break even point*
+La tabla de **tipi riclassificazione** ya está precompletada por el [**Inicio Rápido (Fast start)**](/docs/guide/fast-start) con las siguientes tipologías:  
+- *IV - Reclasificación IV directiva UE (Riclassificazione IV direttiva UE)*  
+- *EC - Reclasificación económica (Riclassificazione economico)*  
+- *BEP - Punto de equilibrio (Break even point)*  
 
-Tali tipologie sono utilizzate per i modelli contabili che il **Fast start** precarica, in particolare per il modello del *Bilancio IV direttiva*.
+Estas tipologías se utilizan para los modelos contables que el **Inicio Rápido (Fast start)** precarga, en particular para el modelo del *Balance IV directiva (Bilancio IV direttiva)*.
 
-Nel caso in cui la società abbia la gestione *Controlling* attiva, suggeriamo di impostare un tipo  
-- *COGE - Controllo di gestione* con flag *Controlling* attivo, da utilizzare per i modelli che valorizzano lo **Storico registrazioni gestionali** tramite una **Comparazione** del controlling  
-- *PRO - Riclassificazione di progetto/commessa* con flag *Consolidato di commessa*, da utilizzare se la società ha impostato una *dimensione* di gestione dei progetti e vuole elaborare un *Consolidato di progetto*
+En caso de que la empresa tenga activa la gestión de *Controlling*, sugerimos configurar un tipo:  
+- *COGE - Control de gestión (Controllo di gestione)* con el indicador *Controlling* activo, que se utilizará para los modelos que valorizan el **storico registrazioni gestionali** a través de una **Comparación (Comparazione)** del controlling.  
+- *PRO - Reclasificación de proyecto/orden (Riclassificazione di progetto/commessa)* con el indicador *Consolidado de orden*, que se utilizará si la empresa ha configurado una *dimensión* de gestión de proyectos y desea elaborar un *consolidato di progetto*.  
 
 :::tip Nota
-Il tipo riclassificazione con flag **Costo prodotto** prevede caratteristiche specifiche all'interno dei Modelli di riclassificazione, ma attualmente deve essere valorizzato con procedure custom
+El tipo de reclasificación con el indicador **costo prodotto** presenta características específicas dentro de los Modelos de reclasificación, pero actualmente debe valorarse con procedimientos personalizados (custom).
 :::
 
 :::tip Nota
-E' possibile, tramite *Object navigator*, rendere visibile in griglia la proprietà *Nazione*, che non è obbligatoria per i Tipi riclassificazione: se si imposta una nazione in un tipo riclassificazione, i **Modelli di riclassificazione** collegati a questa tipologia saranno visibili sono nelle società della localizzazione geografica impostata
+Es posible, a través del *object navigator*, hacer visible en la cuadrícula la propiedad *nazione*, que no es obligatoria para los tipi riclassificazione: si se establece un país en un tipo de reclasificación, los **modelli di riclassificazione** vinculados a esta tipología solo serán visibles en las empresas de la localización geográfica establecida.
 :::

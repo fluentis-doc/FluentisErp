@@ -1,5 +1,5 @@
 ---
-title: Ricerca template
+title: Búsqueda de plantillas (Ricerca template)
 sidebar_position: 1
 ---
 
@@ -7,4 +7,4 @@ import SearchForm from './../../../../import/sections/search-form.md'
 
 <SearchForm />
 
-Sempre da questa form è possibile creare un nuovo Extradata, cliccando sul pulsante **Nuovo**.
+Desde este formulario también es posible crear un nuevo Extradata, haciendo clic en el botón **nuovo**.

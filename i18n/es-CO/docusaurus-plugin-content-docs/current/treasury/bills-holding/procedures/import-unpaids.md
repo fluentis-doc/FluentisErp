@@ -1,32 +1,24 @@
 ---
-title: Importazione insoluti
+title: importazione insoluti
 sidebar_position: 3
 ---
 
-Da questa maschera si procede all'importazione della lista insoluti dal file telematico standard di comunicazione bancaria. 
+Desde esta máscara se procede a la importación de la lista de insolvencias desde el archivo telemático estándar de comunicación bancaria.  
 
-È possibile, normalmente, attivare il ricevimento di un tracciato di questa lista, che riprende in parte lo stesso file inviato con la presentazione, all'interno del quale abbiamo inserito l'identificativo dell'effetto: attraverso la lettura di questo dato, quindi, possiamo creare la lista degli insoluti automaticamente, con la rilevazione diretta anche delle spese bancarie su ognuno.
+Es posible, normalmente, activar la recepción de un trazado de esta lista, que retoma en parte el mismo archivo enviado con la presentación, dentro del cual hemos insertado el identificador del efecto: a través de la lectura de este dato, por lo tanto, podemos crear la lista de insolvencias automáticamente, con la detección directa también de los gastos bancarios en cada uno.  
 
-La procedura inizia con il pulsante **Esegui importazione**, che aprirà la maschera di apertura file del sistema: una volta individuato il file nella directory corretta si dovrà semplicemente aprire il file per procedere all'importazione della lista. 
+El procedimiento comienza con el botón **esegui importazione**, que abrirá la máscara de apertura de archivo del sistema: una vez localizado el archivo en el directorio correcto, solo se debe abrir el archivo para proceder a la importación de la lista.  
 
-L'eventuale lista di effetti non trovati sarà riportata in una maschera d'errore: per questi sarà quindi necessario procedere alla creazione manuale dell'insoluto.
+La posible lista de efectos no encontrados se informará en una máscara de error: para estos, será necesario proceder a la creación manual de la insolvencia.  
 
-Dalla maschera è possibile cancellare l'importazione eseguita: questa andrà ad annullare la lista degli insoluti creati con l'importazione stessa.
+Desde la máscara es posible cancelar la importación realizada: esto anulará la lista de insolvencias creadas con la propia importación.
 
+**Botones específicos (Pulsanti specifici)**
 
+**ricerca importazioni**: Busca la lista de importaciones de insolvencias ya realizadas.  
 
-**Pulsanti specifici**
+**esegui import**: Con este botón se abre la máscara de selección del archivo telemático para el cual se ejecutará el procedimiento de importación.  
 
-**Ricerca importazioni:** Ricerca la lista delle importazioni insoluti già eseguite.
+**visualizza file insoluti**: Muestra el archivo telemático de la insolvencia importada.  
 
-**Esegui import**: Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione.
-
-**Visualizza file insoluti**: Visualizza il file telematico dell'insoluto importato.
-
-**Cancella importazione**: Cancella l'importazione eseguita.
-
-
-
-
-
-
+**cancella importazione**: Elimina la importación realizada.

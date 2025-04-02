@@ -1,15 +1,8 @@
 ---
-title: Derogabilità
+title: derogabilità
 sidebar_position: 2
 ---
 
-Consente di definire i codici di derogabilità dei flussi finanziari, cioè sostanzialmente il grado di priorità/importanza dei debiti, così come gestiti in DocFinance (il codice del gestionale deve essere lo stesso di DocFinance).
+Permite definir los códigos de derogabilidad de los flujos financieros, es decir, sustancialmente el grado de prioridad/importancia de las deudas, tal como se gestionan en DocFinance (el código del sistema de gestión debe ser el mismo que el de DocFinance).
 
-Va inteso pertanto come un dato necessario e specifico del software DocFinance.
-
-
-
-
-
-
-
+Por lo tanto, debe entenderse como un dato necesario y específico del software DocFinance.

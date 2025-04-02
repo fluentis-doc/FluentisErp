@@ -1,61 +1,57 @@
 ---
-title: Contabilizzazione Distinte
+title: contabilizzazione distinte
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione distinte
+El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de listas (Contabilizzazione distinte).
 
-Da questa maschera si procede alla contabilizzazione distinte: la procedura chiuderà il conto collegato al [**tipo**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) degli effetti inseriti in distinta e aprirà il conto transitorio della banca inserito nella distinta.
+Desde esta máscara se procede a la contabilización de listas: el procedimiento cerrará la cuenta vinculada al [**tipo**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) de los efectos ingresados en la lista y abrirá la cuenta transitoria del banco ingresado en la lista.
 
-::tip[Nota]
-Generalmente si può eseguire questa procedura direttamente **dentro la distinta** con l'apposito pulsante per la sua **Contabilizzazione**.
+::tip[Nota (Nota)]
+Generalmente se puede ejecutar este procedimiento directamente **dentro de la lista** con el botón correspondiente para su **Contabilización**.
 
-Dalla presente maschera risulta invece possibile eseguire una contabilizzazione massiva di più distinte.
+Desde esta máscara, en cambio, es posible realizar una contabilización masiva de varias listas.
 :::
 
-## Come contabilizzare una distinta
+## Cómo contabilizar una lista (Come contabilizzare una distinta)
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle distinte da contabilizzare. La contabilizzazione distinte può essere effettuata solo per distinte stampate.
+1. Utiliza la parte superior de la máscara para filtrar la búsqueda de las listas a contabilizar. La contabilización de listas solo se puede realizar para listas impresas.
 
-2. Seleziona dalla griglia centrale le distinte che desideri contabilizzare 
+2. Selecciona desde la cuadrícula central las listas que deseas contabilizar.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Completa los parámetros para la contabilización, tales como la **causale di contabilità**, la **data registrazione** y la fecha de competencia (data competenza).
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.  
+:::note[Nota (Nota)]
+Esta sección puede predefinirse dentro de los [**parámetros**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de efectos (Portafoglio effetti).  
 :::
 
-Il flag di **contabilizzazione in data maturazione**: spezzerà la registrazione della distinta alle varie date scadenza degli effetti con l'aggiunta dei giorni banca impostati in anagrafica banca per la causale impostata.
+El indicador de **contabilización en fecha de vencimiento**: dividirá el registro de la lista en las distintas fechas de vencimiento de los efectos con la adición de los días bancarios establecidos en el registro del banco para la causa establecida.
 
-Il flag **data scadenza con data valuta uguale a data maturazione**: registrerà i vari effetti alle varie date scadenza ma con data valuta banca rettificata secondo i giorni banca impostati in anagrafica banca.
+El indicador **fecha de vencimiento con fecha de valor igual a fecha de vencimiento**: registrará los diferentes efectos en las distintas fechas de vencimiento, pero con la fecha de valor bancaria ajustada de acuerdo con los días bancarios establecidos en el registro del banco.
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione distinte**
+4. Presiona el botón en la barra de ribbon **contabilizzazione distinte**.
 
+**Botones específicos**
 
-**Pulsanti specifici**
+**ricerca**: Busca la lista de las listas a contabilizar.
 
-**Ricerca**: Ricerca la lista delle distinte da contabilizzare.
-
-**Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
-
-
-### Tab Precedenti
-
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
-
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
-
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+**contabilizzazione**: Realiza la contabilización para las filas seleccionadas.
 
 
-**Pulsanti specifici**
+### Pestaña Anteriores (Tab Precedenti)
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+Desde la pestaña anteriores es posible proceder a la anulación de las contabilizaciones realizadas. 
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
+La anulación solo será posible si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutados).
 
-**Rollback distinte**: Esegue il ripristino della registrazione contabile selezionata.
+Un doble clic en la sección de registros permitirá visualizar el registro contable relacionado.
 
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+**Botones específicos**
 
+**ricerca**: Busca la lista de las contabilizaciones realizadas.
 
+**rollback contabilizzazione**: Restaura las contabilizaciones seleccionadas.
+
+**rollback distinte**: Restaura el registro contable seleccionado.
+
+Hay una pestaña de detalle para visualizar los errores detectados durante la contabilización.

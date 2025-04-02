@@ -1,15 +1,14 @@
 ---
-title: FAQ Qualità
+title: Preguntas Frecuentes sobre Calidad (FAQ Qualità)
 sidebar_position: 1
 ---
 
 <details>
 
-  <summary>1. Chi può Approvare e Chiudere i <b>Reclami</b> e le <b>Non conformità</b>?</summary>
+  <summary>1. ¿Quién puede Aprobar y Cerrar las <b>Reclamaciones (Reclami)</b> y las <b>No Conformidades (Non conformità)</b>?</summary>
   
-I Reclami e le Non conformità possono essere Approvati e Chiusi solo da:
-- Persona responsabile: in questo campo è possibile inserire il Dipendente codificato, che deve avere un utente Arm associato;
-- Funzione responsabile: è possibile abilitare alla modifica un'intera funzione aziendale; in questo caso deve fare Apri form nella Funzione aziendale ed inserire, nella griglia in basso, i Dipendenti da abilitare per ogni funzione aziendale selezionata.
-
+Las Reclamaciones y las No Conformidades solo pueden ser Aprobadas y Cerradas por:
+- Persona responsable: en este campo se puede ingresar el Empleado codificado, que debe tener un usuario de Arm asociado; 
+- Función responsable: es posible habilitar para la modificación una función empresarial completa; en este caso, debe abrir el formulario en la Función empresarial e ingresar, en la cuadrícula inferior, los Empleados a habilitar para cada función empresarial seleccionada.
 
 </details>

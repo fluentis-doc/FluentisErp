@@ -1,65 +1,65 @@
 ---
-title: Nuovo Visit Report
+title: Nuevo Informe de Visita (Nuovo Visit Report)
 sidebar_position: 2
 ---
 
-La procedura di creazione di un nuovo **Visit Report** permette di andare a definire le caratteristiche della visita effettuata dal contatto.
+El procedimiento para crear un nuevo **visit report** permite definir las características de la visita realizada por el contacto.  
 
-La form è divisa in due parti.
-Nella parte superiore sono presenti i seguenti campi:
+El formulario se divide en dos partes.  
+En la parte superior se encuentran los siguientes campos:
 
-**Tipo Visit Report**: permette di indicare il tipo di Visit Report che si sta inserendo e fa riferimento all'omonima tabella, composta da *Codice* e *Descrizione*      
-**Numero**: è il numero del Visit Report, viene assegnato in automatico da Fluentis.           
-**Data**: è la data relativa alla visita e viene impostata con la data odierna.          
-**Oggetto**: in questo campo deve essere indicata la motivazione della visita al cliente.          
-**Nota**: campo libero per l’inserimento di ulteriori note relative alla visita.           
-**Contatto/Cliente**: in questo campo deve essere indicato il contatto CRM o il cliente a cui fa riferimento il Visit Report. La label del campo e l’oggetto di riferimento del campo stesso cambiano a seconda che il flag venga apposto sulla voce *Contatto CRM* o sulla voce *Conto Fluentis*.     
-**Partecipanti**: in questo campo, di compilazione libera, devono essere indicati i soggetti che hanno partecipato all’incontro.     
-**Agente**: in questo campo, che fa riferimento all’anagrafica agenti di Fluentis, deve essere indicato l’agente che ha presenziato all’incontro, se presente.     
+**tipo visit report**: permite indicar el tipo de Informe de Visita que se está ingresando y hace referencia a la tabla del mismo nombre, compuesta por *codice* y *descrizione*.  
+**numero**: es el número del Informe de Visita, asignado automáticamente por Fluentis.  
+**data**: es la fecha relativa a la visita y se establece con la fecha actual.  
+**oggetto**: en este campo se debe indicar la razón de la visita al cliente.  
+**nota**: campo libre para la inclusión de notas adicionales relacionadas con la visita.  
+**Contacto/Cliente (Contatto/Cliente)**: en este campo se debe indicar el contacto de CRM o el cliente al que hace referencia el Informe de Visita. La etiqueta del campo y el objeto de referencia del mismo cambian dependiendo de si se marca el indicador en la opción *Contacto CRM* o en la opción *conto fluentis*.  
+**partecipanti**: en este campo, de llenado libre, deben indicarse los sujetos que participaron en el encuentro.  
+**agente**: en este campo, que hace referencia al registro de agentes de Fluentis, debe indicarse el agente que estuvo presente en el encuentro, si aplica.
 
-La parte inferiore della form presenta invece due tab.
+La parte inferior del formulario presenta, en cambio, dos pestañas.
 
-## Doc.
+## Doc. (Doc.)
 
-In questa tab generalmente viene compilato il vero e proprio report creato durante la visita. Questo documento può contenere svariate informazioni, in base alla tipologia di visita effettuata. Per questo motivo, nella griglia è possibile selezionare un [Template](/docs/crm/budget-marketing-automation/template/template-search) da utilizzare come base del report e da compilare con le informazioni del cliente. E' necessario quindi creare a priori i vari template per averli disponibili in fase di visita e poterli utilizzare. 
-Nella parte destra sarà visualizzato il Template selezionato e sarà possibile compilarlo. E' inoltre possibile inserire i dati necessari per l'invio tramite email del documento.            
-Per la gestione del template sono disponibili le seguenti sezioni:     
-- **Email**: questa tab contiene:     
-> - *Stampa*: permette di stampare il foglio di lavoro;
-> - *Anteprima di stampa*: permette di fare la stampa a video del foglio di lavoro in anteprima;
-> - *Salva*: permette di salvare una copia del documento;    
-> - *Undo*: cancella l’ultima modifica al template;
-> - *Redo*: ripristina l’ultima modifica cancellata al template.
+En esta pestaña generalmente se completa el verdadero informe creado durante la visita. Este documento puede contener varias informaciones, según el tipo de visita realizada. Por esta razón, en la cuadrícula se puede seleccionar un [Template (Template)](/docs/crm/budget-marketing-automation/template/template-search) para utilizar como base del informe y completarlo con la información del cliente. Por lo tanto, es necesario crear previamente varios templates para tenerlos disponibles durante la visita y poder utilizarlos.  
+En la parte derecha se mostrará el template seleccionado y será posible completarlo. También es posible ingresar los datos necesarios para el envío por correo electrónico del documento.  
+Para la gestión del template están disponibles las siguientes secciones:  
+- **email**: esta pestaña contiene:  
+> - *stampa*: permite imprimir la hoja de trabajo;  
+> - *anteprima di stampa*: permite visualizar la impresión en pantalla de la hoja de trabajo como vista previa;  
+> - *salva*: permite guardar una copia del documento;  
+> - *undo*: cancela la última modificación al template;  
+> - *redo*: restaura la última modificación cancelada al template.
 
-- **Home**: questa Tab contiene i pulsanti per le funzionalità di base riguardanti l’editing del testo del Template, quali le dimensioni del carattere, gli elenchi, l’allineamento del testo, ecc.
-Richiama le funzioni di base degli editor di testo più diffusi, quali Microsoft Word.
+- **home**: esta pestaña contiene los botones para las funcionalidades básicas relacionadas con la edición de texto del Template, tales como las tamaños de fuente, listas, alineación de texto, etc.  
+Recuerda las funciones básicas de los editores de texto más comunes, como Microsoft Word.
 
-- **Insert**: euesta Tab contiene i pulsanti per inserire alcuni elementi al Template:
-> - *Inserisci tabella*: permette l’inserimento di una tabella all’interno del foglio di lavoro;
-> - *Allinea Immagine*: permette di inserire un’immagine nel corpo del documento;
-> - *Immagine*: permette di inserire un’immagine nel corpo del documento;
-> - *Bookmark*: permette di inserire un segnalibro all’interno del template;
-> - *Hyperlink*: permette di inserire un link ad una pagina web o ad un segnalibro del template;
-> - *Header*: permette di inserire la testata del template;
-> - *Footer*: Permette di inserire il piè di pagina del template;
-> - *Page Number*: serve per indicare il numero di pagina nella testata o nel piè di pagina del Template;
-> - *Page Count*: serve per indicare il numero totale di pagine del template nella testata o nel piè di pagina;
-> - *Text Box*: permette di inserire una casella di testo nel Template;
-> - *Symbol*: serve per inserire un simbolo speciale all’interno del Template.
+- **Insertar (Insert)**: esta pestaña contiene los botones para insertar algunos elementos en el Template:  
+> - *inserisci tabella*: permite insertar una tabla dentro de la hoja de trabajo;  
+> - *Alinear imagen (Allinea Immagine)*: permite insertar una imagen en el cuerpo del documento;  
+> - *immagine*: permite insertar una imagen en el cuerpo del documento;  
+> - *Marcador (Bookmark)*: permite insertar un marcador dentro del template;  
+> - *Hipervínculo (Hyperlink)*: permite insertar un enlace a una página web o a un marcador del template;  
+> - *header*: permite insertar el encabezado del template;  
+> - *Pie de página (Footer)*: permite insertar el pie de página del template;  
+> - *Número de página (Page Number)*: sirve para indicar el número de página en el encabezado o en el pie de página del Template;  
+> - *Conteo de páginas (Page Count)*: sirve para indicar el número total de páginas del template en el encabezado o en el pie de página;  
+> - *Caja de texto (Text Box)*: permite insertar una caja de texto en el Template;  
+> - *Símbolo (Symbol)*: sirve para insertar un símbolo especial dentro del Template.
 
-- **Merge data**: in questa tab sono presenti i pulsanti necessari alla gestione ed all’inserimento dei merge data.
-> - *Insert Merge Field*: Il pulsante permette di inserire i merge data selezionandoli da una lista che si basa sul Data Source a cui fa riferimento il Template;
-> - *View Merged Data*: il pulsante permette di nascondere/visualizzare i merge data inseriti nel template;
-> - *Show All Field Codes*: il pulsante serve per mostrare I codici dei campi utilizzati come merge data;
-> - *Show All Field Results*: il pulsante serve per mostrare il risultato dell’estrapolazione dei campi utilizzati come merge data;
-> - *First Record*: permette di posizionarsi sul primo record estrapolato dai merge data;
-> - *Previous record*: permette di posizionarsi sul record precedente rispetto a quello attuale estrapolato dai merge data;
-> - *Next record*: permette di posizionarsi sul record successivo rispetto a quello attuale estrapolato dai merge data;
-> - *Last Record*: permette di posizionarsi sull’ultimo record estrapolato dai merge data.
+- **Combinar datos (Merge data)**: en esta pestaña están los botones necesarios para la gestión e inclusión de los merge data.  
+> - *Insertar campo combinado (Insert Merge Field)*: el botón permite insertar los merge data seleccionándolos de una lista basada en la fuente de datos a la que hace referencia el Template;  
+> - *Ver datos combinados (View Merged Data)*: el botón permite ocultar/mostrar los merge data insertados en el template;  
+> - *Mostrar todos los códigos de campo (Show All Field Codes)*: el botón sirve para mostrar los códigos de los campos utilizados como merge data;  
+> - *Mostrar todos los resultados de campo (Show All Field Results)*: el botón sirve para mostrar el resultado de la extracción de los campos utilizados como merge data;  
+> - *Primer registro (First Record)*: permite posicionarse en el primer registro extraído de los merge data;  
+> - *Registro anterior (Previous record)*: permite posicionarse en el registro anterior al actual extraído de los merge data;  
+> - *Registro siguiente (Next record)*: permite posicionarse en el registro siguiente al actual extraído de los merge data;  
+> - *Último registro (Last Record)*: permite posicionarse en el último registro extraído de los merge data.
 
-## Documenti allegati
+## Documentos adjuntos (Documenti allegati)
 
-In questa tab è possibile consultare i documenti allegati. Per allegare i documenti è possibile procedere in due modi:
+En esta pestaña se pueden consultar los documentos adjuntos. Para adjuntar documentos, se pueden seguir dos métodos:
 
-- utilizzando il pulsante della barra degli strumenti Documenti si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.
-- utilizzando direttamente nella griglia il tasto destro e selezionando Allega file si va in creazione di un nuovo Documento da allegare.
+- utilizando el botón en la barra de herramientas Documentos, se puede elegir si adjuntar un documento ya codificado en Fluentis o crear un nuevo Documento para adjuntar.  
+- utilizando directamente en la cuadrícula el botón derecho y seleccionando Adjuntar archivo, se creará un nuevo Documento para adjuntar.

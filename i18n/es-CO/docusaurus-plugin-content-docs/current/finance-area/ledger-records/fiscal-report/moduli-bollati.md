@@ -1,22 +1,16 @@
 ---
-title: Moduli Bollati
+title: moduli bollati
 sidebar_position: 7
 ---
 
-Questo report permette di stampare i moduli DDTti apponendo l'intestazione della società ed i numeri di pagina per l'anno.
+Este informe permite imprimir los módulos DDT añadiendo el encabezado de la empresa y los números de página para el año.
 
-Si ricorda che la stampa su moduli DDTti è stata abolita per diversi registri fiscali. Si consiglia di verificare periodicamente la normativa.
+Se recuerda que la impresión en módulos DDT ha sido abolida para varios registros fiscales. Se recomienda verificar periódicamente la normativa.
 
-**Pagina iniziale**: il numero è riportato in stampa e si riferisce alla prima pagina da stampare.
+**pagina iniziale**: el número se imprime y se refiere a la primera página a imprimir.
 
-**Numero pagine da stampare**: indica quante pagine devono essere stampate.
+**Número de páginas a imprimir (Numero pagine da stampare)**: indica cuántas páginas deben imprimirse.
 
-**Anno**: viene proposto di default l'anno corrente. L'anno sarà aggiunto al nr. pagina creando la stringa 1/2018; 2/2018 ecc....
+**anno**: se propone por defecto el año actual. El año se añadirá al número de página creando la cadena 1/2018; 2/2018, etc....
 
-**Titolo**: stringa libera che sarà riportata direttamente in stampa nella posizione del titolo. Può essere utilizzata per titolare la stampa a fronte dell'opzione che disattiva la testata presente sui vari report che si possono stampare utilizzando i DDTti.
-
-
-
-
-
-
+**titolo**: cadena libre que se imprimirá directamente en la posición del título. Puede utilizarse para titular la impresión frente a la opción que desactiva el encabezado presente en los diversos informes que se pueden imprimir utilizando los DDT.

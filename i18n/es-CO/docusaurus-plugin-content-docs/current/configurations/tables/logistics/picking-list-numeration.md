@@ -1,18 +1,18 @@
 ---
-title: Numerazioni lista di prelievo
+title: Numeraciones de lista de recogida (Numerazioni lista di prelievo)
 sidebar_position: 18
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Numerazioni lista di prelievo*.
+La tabla permite gestionar la codificación de los diferentes tipos de *Numeraciones de lista de recogida (Numerazioni lista di prelievo)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar aquellos que ya existen para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Numerazioni lista di prelievo**
+**Búsqueda de Numeraciones de lista de recogida (Ricerca Numerazioni lista di prelievo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se han establecido todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Numerazioni lista di prelievo**
+**Inserción de Numeraciones de lista de recogida (Inserimento Numerazioni lista di prelievo)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para insertar nuevos códigos, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

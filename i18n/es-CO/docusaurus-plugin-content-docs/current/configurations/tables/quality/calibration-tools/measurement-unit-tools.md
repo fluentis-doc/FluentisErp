@@ -1,32 +1,32 @@
 ---
-title: Unità di misura strumenti
+title: unità di misura strumenti
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Unità di misura strumenti**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Calibración de instrumentos > unità di misura strumenti (Tabelle > Qualità > Taratura strumenti > Unità di misura strumenti)**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Unità di misura* che sono utilizzate per determinare la periodicità di taratura degli *Strumenti di misura*.   
-Un esempio di utilizzo lo troviamo nella gestione **Strumenti di misura**.
+:::important ¿Para qué sirve? (A cosa serve)
+En esta tabla es posible codificar las *Unidades de medida* que se utilizan para determinar la periodicidad de calibración de los *Instrumentos de medida*.   
+Un ejemplo de uso lo encontramos en la gestión de **strumenti di misura**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Unità di misura strumenti**
+**Búsqueda de unità di misura strumenti (Ricerca Unità di misura strumenti)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Unità di misura strumenti**
+**Inserción de unità di misura strumenti (Inserimento Unità di misura strumenti)**
 
-Per poter inserire nuove *Unità di misura strumenti* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *unità di misura strumenti*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos*: 
     
-> **Codice**: è il codice dell'*Unità di misura strumenti*.   
-> **Descrizione**: è la descrizione dell'*Unità di misura strumenti*.   
-> **Giorni**: indica se l'*Unità di misura strumenti* identifica i giorni; solo un'*Unità di misura* tra tutte quelle codificate, può identificare i giorni.   
-> **Mesi**: indica se l'*Unità di misura strumenti* identifica i mesi; solo un'*Unità di misura* tra tutte quelle codificate, può identificare i mesi.   
-> **Note**: annotazioni libere.
+> **codice**: es el código de la *Unidad de medida de instrumentos*.  
+> **descrizione**: es la descripción de la *Unidad de medida de instrumentos*.  
+> **giorni**: indica si la *Unidad de medida de instrumentos* identifica los días; solo una *Unidad de medida* entre todas las codificadas puede identificar los días.  
+> **mesi**: indica si la *Unidad de medida de instrumentos* identifica los meses; solo una *Unidad de medida* entre todas las codificadas puede identificar los meses.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

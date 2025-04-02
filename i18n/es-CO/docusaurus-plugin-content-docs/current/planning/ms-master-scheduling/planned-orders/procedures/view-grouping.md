@@ -1,16 +1,16 @@
 ---
-title: Visualizza raggruppamento
+title: visualizza raggruppamento
 sidebar_position: 1
 ---
 
-La form consente di ricercare tutti i raggruppamenti con lo scopo di visualizzarli oppure cancellarli.  
+El formulario permite buscar todos los agrupamientos con el objetivo de visualizarlos o eliminarlos.  
 
-Nell'area di filtro è possibile applicare il filtro per articolo, variante, per commessa di produzione, ordine di produzione, ecc. Tramite l'apposito flag è possibile scegliere se visualizzare anche i raggruppamenti contenenti degli *Ordini di manutenzione*.
+En el área de filtro es posible aplicar el filtro por artículo, variante, por orden de producción, pedido de producción, etc. A través del indicador correspondiente, es posible elegir si también se deben visualizar los agrupamientos que contengan *ordini di manutenzione*.  
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** presente en la *ribbon bar* para visualizar los resultados en la cuadrícula de resultados.  
 
-Per *aprire* i dettagli di un raggruppamento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Visualizza**.
+Para *abrir (aprire)* los detalles de un agrupamiento, solo es necesario seleccionarlo y hacer doble clic con el ratón, o bien hacer clic en el botón **visualizza**.  
 
-Entrando in visualizzazione del raggruppamento che si è scelto di selezionare, si aprirà una nuova form, composta da una prima parte con dei campi che riassumono i dati principali del *Raggruppamento* e una griglia di risultato dove si possono visualizzare tutti gli *Ordini del raggruppamento*.
+Al entrar en la visualización del agrupamiento que se ha elegido seleccionar, se abrirá un nuevo formulario, compuesto por una primera parte con campos que resumen los datos principales del *raggruppamento* y una cuadrícula de resultados donde se pueden visualizar todas las *Órdenes del agrupamiento (Ordini del raggruppamento)*.  
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

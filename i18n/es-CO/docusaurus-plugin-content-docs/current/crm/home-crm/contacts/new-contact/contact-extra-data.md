@@ -1,10 +1,8 @@
 ---
-title: Extra Data Contatto
+title: Datos Extras de Contacto (Extra Data Contatto)
 sidebar_position: 12
 ---
 
-Questa è la undicesima tab dei **Contatti CRM**.
+Esta es la undécima pestaña de los **contatti crm**.
 
-In questa tab è possibile visualizzare e inserire gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) per il contatto, che verranno poi riportati sui documenti a lui collegati.
-
-
+En esta pestaña es posible visualizar e insertar los [Datos Extras (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) para el contacto, que luego se incluirán en los documentos relacionados con él.

@@ -1,62 +1,57 @@
 ---
-title: Ricerca dati
+title: Búsqueda de datos (Ricerca dati)
 sidebar_position: 2
 ---
 
-Le form permettono di trovare i record inseriti precedentemente per *visualizzarli*, *modificarli* , *cancellarli*, ecc. se l'utente ha i **diritti necessari** per queste operazioni.
+Los formularios permiten encontrar los registros introducidos anteriormente para *visualizarlos*, *modificarlos*, *eliminarlos*, etc., si el usuario tiene los **derechos necesarios** para estas operaciones.
 
-Certe form di questo tipo contengono il pulsante di inserimento ![](/img/neutral/common/new.png) che, una volta premuto, apre la form di inserimento per i nuovi record.
+Ciertos formularios de este tipo contienen el botón de inserción ![](/img/neutral/common/new.png) que, al ser presionado, abre el formulario de inserción para nuevos registros.
 
-Nelle form di ricerca è possibile visualizzare: un solo record (filtro per numero documento), più record (filtro per data), i record inseriti in un anno (filtro per anno), i record inseriti per una certa anagrafica (filtro per conto/sottoconto), ecc.
+En los formularios de búsqueda es posible visualizar: un solo registro (filtro por número de documento), múltiples registros (filtro por fecha), los registros introducidos en un año (filtro por año), los registros introducidos para un cierto registro (filtro por cuenta/subcuenta), etc.
 
+Un formulario se divide en tres secciones:
 
-Una form si suddivide in tre sezioni:
+### 1. Barra de búsqueda avanzada
 
-### 1. Barra di ricerca avanzata
+Esta barra multifunción permite buscar por palabra clave dentro de varios campos presentes en el documento objeto del formulario.
 
-Questa barra multifunzione permette di ricercare per parola chiave all'interno di vari campi presenti nei documento oggetto della form.
+El criterio de búsqueda, si se ingresan más de una palabra clave, puede ser:
 
-Il criterio di ricerca, nel caso si inserisca più di una parola chiave, può essere:
-
-- OR se le parole sono separate da DUE spazi (quindi cercherà nei campi interessati una qualsiasi delle due o più parole inserite)
-- AND se le parole sono separate da UNO spazio (quindi cercherà entrambe le parole assieme come chiave di ricerca nei campi interessati)
- 
+- OR si las palabras están separadas por DOS espacios (entonces buscará en los campos interesados cualquiera de las dos o más palabras ingresadas)  
+- AND si las palabras están separadas por UN espacio (entonces buscará ambas palabras juntas como clave de búsqueda en los campos interesados)  
 
 :::note Nota
 
-Per conoscere su quali campi del documento viene eseguita la ricerca è possibile accedere al *Object navigator* (sulla destra) e facendo click con il tasto destro premere *Dettagli*. 
+Para conocer en qué campos del documento se realiza la búsqueda, es posible acceder al *object navigator* (a la derecha) y haciendo clic con el botón derecho presionar *dettagli*.  
 
-Nella maschera che si apre selezionare Nuovamente l'oggetto e facendo click con il tasto destro selezionare *Modifica oggetto standard*. Selezionare quindi il tab *Modelli di ricerca* nella griglia in basso a sinistra.
+En la máscara que se abre, seleccionar nuevamente el objeto y haciendo clic con el botón derecho seleccionar *modifica oggetto standard*. Luego, seleccionar la pestaña *modelli di ricerca* en la cuadrícula inferior izquierda.
 
 :::
 
+### 2. Área de filtro
 
+Los filtros están típicamente en condición 'AND', es decir, es posible ingresar varios filtros simultáneamente.
 
-### 2. Area di filtro
+Haga clic en las flechas ![](/img/neutral/common/arrow.png) para abrir los [expansores (expander)](/docs/guide/common/glossary/glossary-intro#expander) y filtrar también en base a los datos contenidos en ellos.
 
-I filtri sono tipicamente in condizione 'AND', cioè è possibile inserire più filtri contemporaneamente.
-
-Clic sulle freccette ![](/img/neutral/common/arrow.png) per aprire gli [expander](/docs/guide/common/glossary/glossary-intro#expander) e per filtrare anche in base ai dati contenuti in essi.
-
-Dopo l'inserimento dei filtri desiderati premere il pulsante **Ricerca** per ottenere l'elenco dei dati.
-
+Después de ingresar los filtros deseados, presione el botón **ricerca** para obtener la lista de datos.
 
 :::note Nota
-L'area di filtro può essere visualizzata come già espansa all'apertura della maschera se viene tenuta "bloccata" premendo il tasto con l'icona della puntina (*Pin*)
+El área de filtro puede visualizarse ya expandida al abrir la máscara si se mantiene "bloqueada" presionando el botón con el ícono de chincheta (*Pin*).
 :::
 
 ![](/img/neutral/common/pin.png)
 
-### 3. Griglia di risultato
+### 3. Cuadrícula de resultados
 
-Rappresenta l'elenco dei dati che corrispondono ai filtri inseriti nell'area di filtro.
+Representa la lista de datos que corresponden a los filtros ingresados en el área de filtro.
 
-Nella griglia di risultato si possono selezionare una o più righe.
+En la cuadrícula de resultados se pueden seleccionar una o más filas.
 
-*Particolarità della griglia* 
+*Particularidades de la cuadrícula*
 
-La prima riga della griglia è di filtro (l'icona sul campo di intestazione di riga ha come immagine un imbuto ![](/img/neutral/common/filter.png)): una volta aperta la maschera è sufficiente eseguire una ricerca per visualizzare i record presenti nella stessa e attivare l'inserimento (se previsto) o la gestione della griglia stessa.
+La primera fila de la cuadrícula es de filtro (el ícono en el campo de encabezado de fila tiene como imagen un embudo ![](/img/neutral/common/filter.png)): una vez que se abre la máscara, es suficiente realizar una búsqueda para visualizar los registros presentes en ella y activar la inserción (si está prevista) o la gestión de la cuadrícula misma.
 
-Il filtro nei campi testo non distingue maiuscole/minuscole. Una volta che si inizia a filtrare i record attraverso le intestazioni di colonna, apparirà alla base della maschera un pannello che mostra come sarà applicato il filtro stesso: all'estrema destra di questa sezione apparirà sia un pulsante di chiusura/annullamento del filtro stesso, che un utile pulsante ![](/img/neutral/common/pencil.png) di editing del filtro stesso, dove poter aggiungere in modo guidato filtri più complessi.
+El filtro en los campos de texto no distingue entre mayúsculas y minúsculas. Una vez que se comienza a filtrar los registros a través de los encabezados de columna, aparecerá en la base de la máscara un panel que muestra cómo se aplicará el filtro: en el extremo derecho de esta sección aparecerán tanto un botón de cierre/anulación del filtro como un útil botón ![](/img/neutral/common/pencil.png) de edición del filtro, donde se pueden agregar de manera guiada filtros más complejos.
 
-*Approfondimenti*: [Filtrare e ordinare i record nelle griglie](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).
+*Profundizaciones*: [Filtrar y ordenar los registros en las cuadrículas (Filtrare e ordinare i record nelle griglie)](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).

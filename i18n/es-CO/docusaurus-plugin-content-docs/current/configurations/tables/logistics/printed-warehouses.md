@@ -1,18 +1,18 @@
 ---
-title: Stampanti magazzino
+title: stampanti magazzino
 sidebar_position: 50
 ---
 
-La tabella permette di gestire la codifica delle diverse *Stampanti di magazzino*.
+La tabla permite gestionar la codificación de las diferentes *stampanti magazzino (Stampanti di magazzino)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Stampanti magazzino**
+**Búsqueda de stampanti magazzino (Ricerca Stampanti magazzino)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, solo será necesario hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Stampanti magazzino**
+**Inserción de stampanti magazzino (Inserimento Stampanti magazzino)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevos códigos, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

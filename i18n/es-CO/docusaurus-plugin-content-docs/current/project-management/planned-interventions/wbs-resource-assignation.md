@@ -1,78 +1,76 @@
 ---
-title: WBS assegnazione risorse
+title: wbs assegnazione risorse
 sidebar_position: 3
 ---
-## WBS assegnazione risorse
-La funzionalità di WBS Assegnazione risorse permette di associare le risorse alle wbs di progetto, senza aprire il progetto ed utilizzando direttamente il calendario per visualizzare gli impegni effettivi della risorsa. 
-E’ disponibile per la licenza Fluentis Universal ed è apribile dall’area Gestione progetti > WBS Assegnazione risorse
 
-# Filtri
-All’apertura sarà necessario selezionare i calendari delle risorse su cui si intende lavorare, dalla tab **Filtri** presente in fondo a sinistra. 
-Cliccare su ricerca per visionare tutte le risorse disponibili, e trascinare nel riquadro a destra quelle interessate. 
+## wbs assegnazione risorse (WBS assegnazione risorse)
+La funcionalidad de wbs assegnazione risorse permite asociar recursos a los WBS de un proyecto, sin abrir el proyecto y utilizando directamente el calendario para visualizar los compromisos efectivos del recurso.  
+Está disponible para la licencia Fluentis Universal y se puede abrir desde el área de Gestión de proyectos > wbs assegnazione risorse.
 
-Sarà necessario poi indicare i progetti su cui si vuole lavorare, il cui dettaglio della struttura progetto sarà visibile nella tab **Calendario per progetto** situata in fondo accanto ai filtri. 
-Il flag **WBS con giorni residui** mostrerà i progetti che hanno la quantità di “Giorni assegnati” superiori rispetto alla quantità di “Giorni previsti”
+# Filtros (Filtri)
+Al abrir, será necesario seleccionar los calendarios de los recursos en los que se desea trabajar, desde la pestaña **Filtros** presente en la parte inferior izquierda.  
+Haga clic en buscar para ver todos los recursos disponibles y arrastre a la sección de la derecha aquellos que le interesen.
 
-**Filtri generali**: 
-In questa tab è possibile selezionare:
-- quali documenti verranno visualizzati nei calendari: Richieste intervento, Interventi Pianificati, Intervento, Dichiarazione attività, Risorse assegnate a Progetto WBS, Vacanze. 
-- L’opzione **evidenziare giorni delle risorse che hanno disponibilità** colora lo sfondo delle giornate dove non tutta la fascia oraria della risorsa è stata allocata. 
-Le giornate con disponibilità verranno colorate in turchese. 
- 
-Ogni tipo di documento nel calendario può essere colorato in modo diverso per facilitarne la distinzione. 
+Luego será necesario indicar los proyectos en los que se quiere trabajar, cuyo detalle de la estructura de proyecto será visible en la pestaña **Calendario por proyecto** situada en la parte inferior junto a los filtros.  
+El indicador **WBS con días restantes** mostrará los proyectos que tienen la cantidad de “Días asignados” superior a la cantidad de “Días previstos”.
 
-La configurazione va fatta nelle tabelle dei tipi documento, ad es.: 
-tabella Tipi intervento – per ogni tipo intervento è possibile gestire un colore diverso.
-Allo stesso modo si procede per le richieste intervento, interventi pianificati, dichiarazione attività.
+**filtri generali**:  
+En esta pestaña es posible seleccionar:  
+- qué documentos se visualizarán en los calendarios: Solicitudes de intervención, Intervenciones planificadas, Intervención, Declaración de actividades, Recursos asignados al proyecto WBS, Vacaciones.  
+- La opción **resaltar días de recursos con disponibilidad** colorea el fondo de los días en los que no toda la franja horaria del recurso ha sido asignada.  
+Los días con disponibilidad se colorearán de turquesa.
 
-Solo gli appuntamenti delle risorse allocate nel progetto non hanno possibilità di scelta del colore, che sarà corrisponderà al colore del calendario della risorsa. Questi appuntamenti possono essere identificati dalla sigla “PR” (Project resource) dopo l’orario.
+Cada tipo de documento en el calendario puede ser coloreado de manera diferente para facilitar su distinción.  
 
-In presenza di richieste ferie e permessi, lo sfondo verrà cambiato in arancione. Se collegata l’attività generata dalla richiesta ferie, verrà mostrata in base all’opzione **vacanze** nei filtri “Documenti”. 
+La configuración debe hacerse en las tablas de tipos de documentos, por ejemplo:  
+tabla Tipos de intervención – para cada tipo de intervención se puede gestionar un color diferente.  
+De la misma manera se procede para las solicitudes de intervención, intervenciones planificadas, declaración de actividades.
 
-# Calendario per progetto
-Da questa videata sarà possibile trascinare le singole wbs nel calendario di una o più risorse, e decidere il tipo documento da creare.
-Viene visualizzata la struttura completa del progetto, con numero riga, numero WBS, Descrizione WBS, Data inzio e Data fine, Giorni assegnati, Giorni previsti, Giorni pianificati, Giorni eseguiti. 
-Tramite i bottoni nella Ribbon bar è possibile **Espandere** e **Comprimere** tutta la struttura. 
+Solo las citas de los recursos asignados en el proyecto no tienen opción de selección de color, que corresponderá al color del calendario del recurso. Estas citas pueden ser identificadas por la sigla “PR” (Project resource) después de la hora.
 
-Selezionare una singola wbs di ultimo livello e trascinarla verso il giorno desiderato nel calendario. 
-Si aprirà una videata dove sarà possibile indicare la risorsa (che viene proposta in automatico in base al calendario in cui si sta allocando l'appuntamento), gli orari di inizio-fine e pausa (ottenuti dal turno della risorsa), ed il documento da generare:
-- Assegnare la risorsa al progetto wbs
-- Richiesta intervento
-- Intervento pianificato
-- Intervento
+En caso de solicitudes de vacaciones y permisos, el fondo cambiará a naranja. Si está vinculada la actividad generada por la solicitud de vacaciones, se mostrará según la opción **vacaciones** en los filtros “Documentos”.
 
+# Calendario por proyecto (Calendario per progetto)
+Desde esta vista será posible arrastrar los WBS individuales al calendario de uno o más recursos y decidir el tipo de documento a crear.  
+Se visualiza la estructura completa del proyecto, con número de línea, número WBS, Descripción WBS, Fecha de inicio y Fecha de finalización, Días asignados, Días previstos, Días planificados, Días ejecutados.  
+A través de los botones en la Ribbon bar, es posible **Expandir** y **Comprimir** toda la estructura.
 
-L’appuntamento potrà essere singolo oppure ricorrente, configurato tramite apposito bottone **Ricorrenza**:
-- giornaliera: ogni *N.* giorni oppure ogni giorno
-- settimanale: ogni *N.* settimane ed in determinati giorni
-- mensile: giorno specifico del mese, ogni *N.* mesi oppure *primo/bis/ter/quater/ultimo* giorno ogni *N.* mesi
-- annuale: ogni *N.* anni oppure data specifica oppure ogni oppure *primo/bis/ter/quater/ultimo* giorno del specifico mese.
+Seleccione un WBS de último nivel y arrástrelo hacia el día deseado en el calendario.  
+Se abrirá una ventana donde será posible indicar el recurso (que se propone automáticamente según el calendario en el que se está asignando la cita), los horarios de inicio-fin y pausa (obtenidos del turno del recurso), y el documento a generar:  
+- Asignar el recurso al proyecto WBS  
+- Solicitud de intervención  
+- Intervención planificada  
+- Intervención
 
-Fine ricorrenza indica quanti appuntamenti verranno allocati con la regola sopra indicata. 
-- nessuna data di fine
-- Fine dopo: *N* ricorrenze. Viene proposto di default il valore presente in "Giorni Previsti"
-- Fine per: *alla data*
+La cita puede ser única o recurrente, configurada a través del botón **ricorrenza**:  
+- diaria: cada *N.* días o cada día  
+- semanal: cada *N.* semanas y en determinados días  
+- mensual: día específico del mes, cada *N.* meses o *primer/bis/ter/quater/último* día cada *N.* meses  
+- anual: cada *N.* años o fecha específica o cada *primer/bis/ter/quater/último* día del mes específico.
 
+Fin de recurrencia indica cuántas citas se asignarán con la regla indicada arriba.  
+- ninguna fecha de fin  
+- Fin después: *N* recurrencias. Se propone por defecto el valor presente en "Días Previsto"  
+- Fin para: *en la fecha*
 
-In base al tipo documento da generare, verranno effettuate le seguenti operazioni: 
--	Assegnazione risorsa al progetto wbs: verrà inserita una riga nella tab “Risorse” per quella wbs del progetto
--	Richiesta di intervento: verrà inserita una riga nella tab “Risorse” per quella wbs del progetto ed automaticamente verrà generata la richiesta intervento
--	Intervento pianificato: verrà inserita una riga nella tab “Risorse” per quella wbs del progetto ed automaticamente verrà generato l’intervento pianificato
--	Intervento: verrà inserita una riga nella tab “Risorse” per quella wbs del progetto, verrà generato l’intervento pianificato e di conseguenza l’intervento effettivo
+Según el tipo de documento a generar, se llevarán a cabo las siguientes operaciones:  
+- Asignación de recurso al proyecto WBS: se insertará una línea en la pestaña “Recursos” para ese WBS del proyecto.  
+- Solicitud de intervención: se insertará una línea en la pestaña “Recursos” para ese WBS del proyecto y automáticamente se generará la solicitud de intervención.  
+- Intervención planificada: se insertará una línea en la pestaña “Recursos” para ese WBS del proyecto y automáticamente se generará la intervención planificada.  
+- Intervención: se insertará una línea en la pestaña “Recursos” para ese WBS del proyecto, se generará la intervención planificada y, en consecuencia, la intervención efectiva.
 
-In caso di altri documenti già presenti per la giornata, verrà chiesto se sovrapporre l’appuntamento. 
+En caso de otros documentos ya presentes para el día, se preguntará si desea superponer la cita.  
 
-Se presenti più appuntamenti nella stessa giornata e non tutti possono essere visualizzati, verrà mostrata una freccia che aprirà la visualizzazione in dettaglio della giornata.
- 
- 
-Gli appuntamenti mostrano 3 informazioni pricipali: 
--	orario di inizio fine – descrizione tipo documento 
--	cliente
--	wbs progetto
-puntando con il mouse sopra l’appuntamento verrà mostrato una tooltip con maggiori dettagli.
-Con doppio click è possibile aprire il documento interessato
- 
-Nel calendario è disponibile anche la procedura drag&drop, per cui trascinando un appuntamento da una giornata all’altra, oppure da una risorsa all’altra, si aggiorneranno in automatico nei relativi documenti. 
-Questa operazione non è ammessa negli interventi con stato diverso da inserito, e nelle attività fatturate. 
+Si hay múltiples citas en el mismo día y no todas pueden visualizarse, se mostrará una flecha que abrirá la visualización detallada del día.  
 
-**Calendario per progetto**: sotto la struttura del progetto, è presente un expander con un piccolo calendario dedicato per il solo progetto, che quindi mostra gli appuntamenti per progetto e non per risorsa. 
+Las citas muestran 3 informaciones principales:  
+- hora de inicio y fin – descripción tipo documento  
+- cliente  
+- WBS del proyecto  
+Al pasar el mouse sobre la cita, se mostrará una tooltip con más detalles.  
+Con doble clic es posible abrir el documento relacionado.  
+
+En el calendario también está disponible el procedimiento de arrastrar y soltar (drag&drop), por lo que al arrastrar una cita de un día a otro, o de un recurso a otro, se actualizarán automáticamente en los documentos correspondientes.  
+Esta operación no está permitida en intervenciones con estado diferente de insertado y en actividades facturadas.
+
+**calendario per progetto**: debajo de la estructura del proyecto, hay un expander con un pequeño calendario dedicado solo al proyecto, que muestra las citas por proyecto y no por recurso.

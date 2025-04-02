@@ -1,22 +1,18 @@
 ---
-title: Controllo cespiti
+title: controllo cespiti
 sidebar_position: 4
 ---
 
-Con questo report è possibile eseguire una quadratura, conto per conto, tra le registrazioni contabili relative al cespite selezionato e le risultanze del libro cespiti.
+Con este informe es posible realizar una conciliación, cuenta por cuenta, entre los registros contables relacionados con el activo seleccionado y los resultados del libro de activos.
 
-Vengono confrontati i totali presenti a modulo cespiti rispetto ai totali presenti in contabilità generale. Il risultato del report sarà una lista di conti contabili (individuati dalle categorie cespiti selezionate nella form e valorizzate a modulo cespiti) con i relativi valori totali rilevati nei due moduli di Fluentis, al fine di facilitarne la verifica della quadratura.
+Se comparan los totales presentes en el módulo de activos con los totales presentes en la contabilidad general. El resultado del informe será una lista de cuentas contables (identificadas por las categorías de activos seleccionadas en el formulario y valoradas en el módulo de activos) con los valores totales correspondientes registrados en los dos módulos de Fluentis, con el fin de facilitar la verificación de la conciliación.
 
-La form di parametrizzazione della stampa è simile a quella delle altre stampe disponibili nel modulo cespiti, pertanto evidenziamo 3 campi in particolare:
+El formulario de parametrización de la impresión es similar al de otros informes disponibles en el módulo de activos, por lo que destacamos 3 campos en particular:
 
-**Data riferimento:**  viene impostato di default con la data odierna ed è la data finale che Fluentis utilizzerà per la ricerca dei dati all’interno del modulo cespiti: in sostanza, prenderemo tutti i valori patrimoniali che sono minori-uguali a questa data (quindi tutto l’attivo e tutti i fondi fino a questa data) mentre andremo a leggere i soli ammortamenti nell’anno, fino a questa data.
+**data riferimento**: se establece por defecto con la fecha actual y es la fecha final que Fluentis utilizará para la búsqueda de datos dentro del módulo de activos: en esencia, tomaremos todos los valores patrimoniales que son menores o iguales a esta fecha (por lo tanto, todo el activo y todos los fondos hasta esta fecha), mientras que solo leeremos las amortizaciones del año hasta esta fecha.
 
+**Desde la fecha - Hasta la fecha (Da data - a data)**: obligatorio para poder ejecutar el informe, será el período de búsqueda de datos dentro de la contabilidad general: para cada subcuenta (activo, fondo, amortización) utilizada en los activos de las categorías seleccionadas, se calculará el saldo contable dentro de este rango de fechas. En la perspectiva de control de conciliación de fin de año, por lo tanto, estableceremos la fecha de referencia en 31/12/yyyy y el rango como 01/01/yyyy – 31/12/yyyy.
 
-**Da data - a data**: obbligatorio per poter eseguire il report, sarà invece il periodo di ricerca dei dati all’interno della contabilità generale: per ogni sottoconto (attivo, fondo, ammortamento) utilizzato nei cespiti delle categorie selezionate si andrà a calcolare il saldo contabile all’interno di questo range di date.
-Nell’ottica di controllo di quadratura di fine anno, quindi, andremo a impostare la data riferimento 31/12/yyyy e il range come 01/01/yyyy – 31/12/yyyy.
+**Flag Detalles de operaciones (Flag Dettagli operazioni)**: activando este indicador, se crea un detalle para cada fecha movida con el fin de entender si para cada fecha de registro existe el movimiento correspondiente en la hoja de activos.
 
-
-**Flag Dettagli operazioni**: attivando questo flag viene creato un dettaglio per ogni data movimentata al fine di capire se per ogni data registrazione esiste il relativo movimento nella scheda cespite.
-
-Il report visualizza la lista dei conti utilizzati nei cespiti delle categorie selezionate, la colonna con il valore ottenuto dal modulo cespiti, quello dalla contabilità e poi l’eventuale differenza tra i due.
-
+El informe muestra la lista de cuentas utilizadas en los activos de las categorías seleccionadas, la columna con el valor obtenido del módulo de activos, el de la contabilidad y luego la posible diferencia entre ambos.

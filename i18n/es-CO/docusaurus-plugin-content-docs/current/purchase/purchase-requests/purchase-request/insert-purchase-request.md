@@ -1,145 +1,143 @@
 ---
-title: Nuova Richiesta di acquisto
+title: Nueva Solicitud de compra (Nuova Richiesta di acquisto)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Acquisti > Richieste di Acquisto > Nuova richiesta** oppure dal filtro di riceca *Richieste di Acquisto* mediante il pulsante *Nuovo*.   
+El formulario se abre a través del camino **Compras > Solicitudes de Compra > Nueva solicitud** o desde el filtro de búsqueda *Solicitudes de Compra* mediante el botón *Nuevo*.   
 
-## *Come creare una Richiesta di Acquisto*
+## *Cómo crear una Solicitud de Compra*
 
 <details>
- 
-<summary>Clicca per vedere i passaggi fondamentali</summary>
- 
-1. **Inserisci il *Tipo RDA* da creare**: *Data*, *Anno* e *Numero* saranno proposti in automatico.  
- 
-2. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
- 
-3. **Inserisci eventuali informazioni aggiuntive** nei tab *Dati articolo*.
- 
-4. **Autorizza la Richiesta di Acquisto**: dopo aver selezionato gli articoli nella griglia, premi il pulsante *Autorizzazione RDA* della barra degli strumenti, in modo da rendere la RDA disponibile per le procedure successive.   
 
- 
+<summary>Clic para ver los pasos fundamentales</summary>
+
+1. **Ingresa el *Tipo RDA* a crear**: *Fecha*, *Año* y *Número* serán propuestos automáticamente.  
+
+2. **Ingresa los Artículos**: mediante doble clic en el campo *Código artículo* se abre la ayuda de artículos que permite buscar y seleccionar un artículo existente. Todos los demás datos de la línea, como *unidad de medida*, *cantidad*, *precio*, serán propuestos automáticamente, pero pueden ser modificados.  
+En alternativa, se puede seleccionar como *Tipo de línea* un *Artículo no codificado* e ingresar manualmente los datos sucesivos.
+
+3. **Ingresa cualquier información adicional** en las pestañas *Datos artículo*.
+
+4. **Autoriza la Solicitud de Compra**: después de seleccionar los artículos en la cuadrícula, presiona el botón *Autorización RDA* de la barra de herramientas, para que la RDA esté disponible para los procedimientos siguientes.   
+
 </details>
 
-## **1. Sezione superiore** {#upper-section}
+## **1. Sección superior** {#upper-section}
 
-I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
+Los campos obligatorios para la introducción de una solicitud de compra son los siguientes:
 
-- **Tipo**: predefinito in *Configurazione > Tabelle >* [*Tipi richieste di acquisto*](/docs/configurations/tables/purchase/purchase-request-type). A seconda del tipo scelto, saranno attivate alcune funzionalità quali ad esempio il *controllo della disponibilità*.   
-- **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.   
-- **Numero**: poposto automaticamente in base alla numerazione associata al *Tipo RDA* scelto.
+- **Tipo**: predefinido en *Configuración > Tablas >* [*Tipos de solicitudes de compra*](/docs/configurations/tables/purchase/purchase-request-type). Dependiendo del tipo elegido, se activarán algunas funcionalidades como, por ejemplo, el *control de disponibilidad*.   
+- **Fecha/Año**: por defecto se propone la fecha actual, pero puede ser modificada manualmente.   
+- **Número**: propuesto automáticamente en base a la numeración asociada al *Tipo RDA* elegido.
 
-#### Altri dati
+#### Otros datos
 
-- **Storicizzata**: attivando questo flag la RDA non sarà più visibile nella procedura di [Creazione automatica ordini](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests).   
-- **Annotazioni**: permette di inserire note visibili a livello di RDA.   
-- **Stato richiesta**: campo non editabile; visualizza lo stato di evasione dell'intera richiesta considerando lo stato evasione di ogni singola riga articolo. Una RDA viene considerata *Evasa* o *Parzialmente evasa* quando è stato generato l'ordine fornitore per tutte o alcune delle righe articolo contenute in essa.       
+- **Historizada**: al activar este indicador, la RDA no será más visible en el procedimiento de [Creación automática de pedidos](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests).   
+- **Anotaciones**: permite insertar notas visibles a nivel de RDA.   
+- **Estado de solicitud**: campo no editable; visualiza el estado de cumplimiento de toda la solicitud considerando el estado de cumplimiento de cada línea de artículo. Una RDA se considera *Cumplida* o *Parcialmente cumplida* cuando se ha generado el pedido al proveedor para todas o algunas de las líneas de artículo contenidas en ella.       
 
-## **2. Articoli** {#items}
+## **2. Artículos** {#items}
 
-Nella griglia articoli sono presenti i seguenti dati: 
+En la cuadrícula de artículos están presentes los siguientes datos:
 
-- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
-    - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.   
-    - *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.    
-    - *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
+- **Tipo de línea** ofrece la posibilidad de seleccionar, desde la combo-box, artículos con características diferentes:
+    - *Artículo codificado*: son los artículos codificados en el registro y pueden ser contabilizados en contabilidad analítica y registrados en el almacén.   
+    - *Artículo no codificado*: son artículos descriptivos que pueden ser contabilizados en contabilidad analítica pero no pueden ser movidos en el almacén.    
+    - *Artículo notas*: son notas descriptivas que aparecen en la impresión del documento; no afectan la contabilidad y el almacén.
 
-- **Classe/Codice/Descrizione articolo**: si possono inserire manualmente oppure con l'ausilio dell'*help di campo* il quale proporrà tutti i dati relativi inseriti nell'*Anagrafica articolo*. Dopo l'inserimento del *Codice* articolo, la *Descrizione* e la *Classe* saranno riprese automaticamente dall'anagrafica. Se l'articolo ha *Varianti*, sarà possibile selezionare la variante desiderata dal tab *Dati articolo*.
+- **Clase/Código/Descripción artículo**: se pueden ingresar manualmente o con la ayuda de la *ayuda de campo*, que propondrá todos los datos relativos ingresados en el *Registro de artículo*. Después de ingresar el *Código* artículo, la *Descripción* y la *Clase* serán tomadas automáticamente del registro. Si el artículo tiene *Variantes*, será posible seleccionar la variante deseada en la pestaña *Datos artículo*.
 
-- **Unità di misura**: viene proposta l'unità di misura principale dell'articolo, ma nel caso in cui nell'anagrafica articolo siano codificate unità di misura alternative l'utente ha la possibilità di sceglierne un'altra.
+- **Unidad de medida**: se propone la unidad de medida principal del artículo, pero en caso de que en el registro del artículo estén codificadas unidades de medida alternativas, el usuario tiene la posibilidad de seleccionar otra.
 
-- **Quantità**: rappresenta la quantità dell'U.M. principale.    
+- **Cantidad**: representa la cantidad de la U.M. principal.    
 
-- **Prezzo**: il prezzo viene proposto dal listino del fornitore preferenziale di default dell'articolo; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Sconti/Listini*. Lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi. Attraverso il doppio click nel campo **Listini** (tab *Sconti/Listini*) l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.   
-In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo oppure può essere proposto a zero, in base ai parametri impostati nei **Parametri richieste di acquisto**.   
+- **Precio**: el precio es propuesto por la lista del proveedor preferencial por defecto del artículo; la lista de referencia para el artículo se visualiza en la pestaña *Descuentos/Listas*. El mismo documento podría contener artículos con precios tomados de listas diferentes. A través del doble clic en el campo **Listas** (pestaña *Descuentos/Listas*), el usuario tiene la posibilidad de seleccionar una lista diferente de la predeterminada, de la cual se tomará el precio del artículo ingresado.  
+En ausencia de la lista, el dato propuesto puede ser tomado del *último costo* del registro del artículo o puede ser propuesto en cero, dependiendo de los parámetros establecidos en los **Parámetros de solicitudes de compra**.   
 
-- **Evaso forzatamente**: è possibile impostare l'evasione forzata per la riga selezionata. In questo modo, non verrà fatto il carico di magazzino.
+- **Cumplido forzadamente**: es posible establecer el cumplimiento forzado para la línea seleccionada. De este modo, no se realizará la carga al almacén.
 
-- **Stato**: indica lo stato evasione di ciascuna riga articolo.   
+- **Estado**: indica el estado de cumplimiento de cada línea de artículo.   
 
-- **Data richiesta**: nel caso di RDA rilasciata dalla pianificazione viene automaticamene compilato con la *Data fine* dell'ordine pianificato di acquisto; può anche essere inserita o modificata manualmente.   
+- **Fecha solicitada**: en caso de RDA liberada por la planificación, se completa automáticamente con la *Fecha fin* del pedido planificado de compra; también se puede ingresar o modificar manualmente.   
 
-- **Data spedizione**: se la RDA è stata rilasciata dalla pianificazione e la *Data FOB* dell'ordine pianificato è valorizzata, essa verrà riportata in questo campo; può anche essere inserita o modificata manualmente. 
+- **Fecha de envío**: si la RDA ha sido generada por la planificación y la *Fecha FOB* del pedido planificado está valorizada, esta se reportará en este campo; también puede ser ingresada o modificada manualmente. 
 
-- **Data di arrivo stimata**: se la RDA è stata rilasciata dalla pianificazione e la *Data ETA* dell'ordine pianificato è valorizzata, essa sarà riportata in questo campo; può anche essere inserita o modificata manualmente. 
+- **Fecha de llegada estimada**: si la RDA ha sido generada por la planificación y la *Fecha ETA* del pedido planificado está valorizada, esta será reportada en este campo; también puede ser ingresada o modificada manualmente. 
 
-Nella sezione sottostante la griglia vengono riportati i totali del documento:   
+En la sección inferior de la cuadrícula se reportan los totales del documento:   
 
-- **Imponibile**: riporta il totale imponibile della Richiesta di acquisto.    
-- **Imposta**: riporta il valore dell'imposta calcolata sul totale imponibile, sulla base dell'aliquota IVA indicata per ciascun articolo nel tab *Dati articolo*.    
-- **Totale**: dato dalla somma di *Imponibile* e *Imposta*.
+- **Imponible**: reporta el total imponible de la Solicitud de compra.    
+- **Impuesto**: reporta el valor del impuesto calculado sobre el total imponible, basado en la alícuota IVA indicada para cada artículo en la pestaña *Datos artículo*.    
+- **Total**: dado por la suma de *Imponible* y *Impuesto*.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Autorizzazione RDA**: permette di autorizzare tutte le righe articolo selezionate; da questo momento il documento è considerato confermato.   
+> **Autorización RDA**: permite autorizar todas las líneas de artículo seleccionadas; a partir de este momento, el documento se considera confirmado.   
 
-> **Generatore RDO**: cliccando questo bottone verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe presenti nel tan *Generatore RDO*. Per maggiori dettagli vedere il paragrafo [Generatore RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generatore-rdo).   
+> **Generador RDO**: al hacer clic en este botón se creará la [Solicitud de Oferta](/docs/purchase/offer-request/settings) para las líneas presentes en la pestaña *Generador RDO*. Para más detalles, consulte el párrafo [Generador RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generatore-rdo).   
 
-> **Rollback RDO**: permette di annullare ed eliminare la richiesta di offerta creata precedentemente.   
+> **Rollback RDO**: permite anular y eliminar la solicitud de oferta creada previamente.   
 
+### 2.1 Datos artículo {#items-data}
 
-### 2.1 Dati articolo {#items-data}
+Son campos informativos que se toman por defecto del artículo/proveedor. Es posible sobrescribir dicha información a nivel de línea.   
 
-Sono campi informativi che vengono ripresi di default dall'articolo/fornitore. È possibile sovrascrivere tali informazioni a livello di riga.   
+- **Listas**: se propone la lista de donde se ha tomado el precio del artículo.    
 
-- **Listini**: viene proposto il listino da cui è stato ripreso il prezzo dell'articolo.    
+- **Proveedor**: se reporta el *proveedor preferencial* por defecto del [registro de artículo](/docs/erp-home/registers/items/create-new-item).    
+- **IVA**: reporta la alícuota IVA asociada al artículo.   
+- **Marca**: representa la marca del artículo, tomada de su registro o de la lista del artículo.
+- **Divisa**: por defecto se propone la [divisa](/docs/configurations/tables/general-settings/currencies) presente en el [registro](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) del *Proveedor preferencial*. 
+- **Cambio**: reporta la fecha y la tasa de cambio a utilizar para la conversión de divisas.   
 
-- **Fornitore**: viene riportato il *fornitore preferenziale* di default dell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-item).    
-- **IVA**: riporta l'aliquota IVA associata all'articolo.   
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
-- **Divisa**: di default viene proposta la [divisa](/docs/configurations/tables/general-settings/currencies) presente nell'[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) del *Fornitore preferenziale*. 
-- **Cambio**: riporta la data e il tasso di cambio da utilizzare per la conversione valuta.   
+- **Variante**: en este campo se puede seleccionar una variante del artículo entre las previamente codificadas en la pestaña [Variantes](/docs/erp-home/registers/items/create-new-item) del registro de artículo. Si en la lista se han ingresado precios y/o descuentos diferentes para cada variante, estos se actualizarán al seleccionar una variante diferente del artículo.   
+- **Proyectos de producción**: si la solicitud de compra ha sido generada por la [planificación](/docs/planning/ms-master-scheduling/general-schedule/) de un proyecto de producción (con liberación de pedidos automáticos o mediante la [procedimiento](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto) de liberación de un pedido planificado de compra), en este campo se reportará la referencia al proyecto. Para más información consulte también la [sección introductoria](/docs/purchase/purchase-requests/general-overview).   
+- **Operador**: en este campo se puede ingresar el operador que ha ingresado la solicitud de compra.   
 
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
-- **Commesse di produzione**: se la richiesta di acquisto è stata generata dalla [pianificazione](/docs/planning/ms-master-scheduling/general-schedule/) di una commessa di produzione (con rilascio ordini automatico oppure mediante la [procedura](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto) di rilascio di un ordine pianificato di acquisto) in questo campo sarà riportato il riferimeto alla commessa. Per maggiori informazioni vedere anche la [sezione introduttiva](/docs/purchase/purchase-requests/general-overview).   
-- **Operatore**: in quersto campo è possibile inserire l'operatore che ha inserito la richiesta di acquisto.   
+- **Proyecto**: en este campo se puede asociar un proyecto a cada artículo. Si la RDA ha sido generada a partir de la planificación de un proyecto de producción que contiene un proyecto, este será reportado automáticamente en cada línea de artículo.   
+- **Tipo de facturación de compras**: se propone el dato ingresado en la pestaña [Generalidades](/docs/erp-home/registers/items/create-new-item) del registro de artículos.    
+- **Prioridad de solicitud**: se reporta la *prioridad de aprovisionamiento* presente dentro de la [orden de producción](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).   
+- **Notas**: en este campo se pueden ingresar notas relacionadas con la línea de artículo; serán reportadas en todos los documentos generados por esto.   
+- **Fecha de cumplimiento**: en el momento de la [creación del pedido al proveedor](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) desde la solicitud de compra, las líneas ingresadas en el pedido se cumplen y se reporta en este campo la fecha del cumplimiento.   
 
-- **Progetto**: in questo campo è possibile associare un progetto a ciascun articolo. Se la RDA è stata generata a partire dalla pianificazione di una commessa di produzione contenente un progetto, esso sarà automaticamente riportato sulle singole righe articolo.   
-- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli.    
-- **Priorità richiesta**: viene riportata la *priorità approvvigionamento* presente all'interno della [commessa di produzione](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).   
-- **Note**: in questo campo è possibile inserire note relative alla riga articolo; saranno riportate in tutti i documenti generati da questo.   
-- **Data evasione**: al momento della [creazione dell'ordine fornitore](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) dalla richiesta di acquisto, le righe inserite nell'ordine vengono evase e vuiene riportata in quetso campo la data dell'evasione.   
+- **Autorizada**: puede ser activada manualmente para cada línea o a través del botón de la barra de herramientas *Autorización RDA*.    
+- **En fecha**: reporta la fecha en que se ha autorizado la línea de artículo de la RDA.   
+- **Por usuario**: reporta el nombre del usuario que ha autorizado la solicitud de compra.   
 
-- **Autorizzata**: può essere attivato manualmente per ogni riga oppure attraverso il bottone della ribbon bar *Autorizzazione RDA*.    
-- **In data**: riporta la data in cui è stata autorizzata la riga articolo della RDA.   
-- **Dall'utente**: riporta il nome dell'utente che ha autorizzato la richiesta di acquisto.   
+### 2.2 Analítica {#cost-profit-centers-tab}
 
-### 2.2 Analitica {#cost-profit-centers-tab}
+Contiene campos relativos a la contabilidad analítica. Se reportan los centros de costo/profitos sobre los cuales se distribuyen los valores de los productos adquiridos.    
 
-Contiene campi relativi alla contabilità analitica. Vengono riportati i centri di costo/profitto sui quali sono distribuiti i valori dei prodotti acquistati.    
+Estos datos pueden ser ingresados: manualmente o automáticamente, en caso de que los centros de costo/profitos hayan sido ingresados previamente en el registro de contacto, registro de artículo o en el plan de cuentas.
 
-Questi dati possono essere inseriti: manualmente oppure automaticamente, nel caso in cui i centri di costo/profitti sono stati inseriti precedentemente nell'anagrafica del contatto, anagrafica articolo oppure nel piano dei conti.
+### 2.3 Documentos adjuntos {#attached-documents}
 
-### 2.3 Documenti allegati {#attached-documents}
+Se visualiza el detalle de un posible documento adjunto (nombre, tipo de documento, notas eventuales, ns/vs referencia).    
 
-Viene visualizzato il dettaglio di un eventuale documento allegato (nome, tipo di documento, eventuali note, ns/vs riferimento).    
+Para las instrucciones sobre cómo adjuntar un documento, se remite al artículo  [Adjuntar documentos](/docs/guide/common/operations-with-data/attach-documents).
 
-Per le istruzioni relative a come allegare un documento si rimanda all'articolo  [Allega documenti](/docs/guide/common/operations-with-data/attach-documents).
+### 2.4 Generador RDO {#generate-RDO}
 
-### 2.4 Generatore RDO {#generate-RDO}
+En esta pestaña se reportan los *Proveedores preferenciales* presentes en el registro del artículo seleccionado en la cuadrícula con los datos, listas y precios correspondientes. Desde esta pestaña es posible elegir el mejor precio. En alternativa, se puede ingresar manualmente el proveedor a considerar para el artículo.    
 
-In questa tab vengono riportati i *Fornitori preferenziali* presenti nell'anagrafica dell'articolo selezionato in griglia con i relativi dati, listini e prezzi. Da questa tab è possibile quindi scegliere il miglior prezzo. In alternativa, è possibile inserire manualmente il fornitore da considerare per l'articolo.    
+Se puede elegir entre: 
+1. **Proveedor**: para especificar un registro de proveedor existente; la selección de esta opción habilita la inserción de datos en el campo *Descripción cuenta*.  
+2. **Nomenclatura**: para especificar *Apodo* y *Razón social* del contacto a utilizar; la selección de esta opción habilita la inserción de datos en los campos *Nomenclatura* y *Descripción nomenclatura*.  
+3. **Contacto**: para seleccionar un [Contacto CRM](/docs/crm/home-crm/contacts/search-contacts) al que solicitar la oferta; la selección de esta opción habilita la inserción de datos en el campo *Contacto*.  
+4. **Nuevo proveedor**: para seleccionar un proveedor cuya información no ha sido codificada aún; la selección de esta opción habilita la inserción de datos en el campo *Descripción proveedor*.  
 
-È possibile scegliere tra: 
-1. **Fornitore**: per specificare un'anagrafica fornitore esistente; la selezione di questa opzione abilita l'inserimento del dato nel campo *Descrizione conto*.  
-2. **Nomenclatura**: per specificare *Nomignolo* e *Ragione sociale* del contatto da utilizzare; la selezione di questa opzione abilita l'inserimento dei dati nei campi *Nomenclatura* e *Descrizione nomenclatura*.  
-3. **Contatto**: per selezionare un [Contatto CRM](/docs/crm/home-crm/contacts/search-contacts) a cui richiedere l'offerta; la selezione di questa opzione abilita l'inserimento del dato nel campo *Contatto*.  
-4. **Nuovo fornitore**: per selezionare un fornitore per cui non è stata ancora codificata l'anagrafica; la selezione di questa opzione abilita l'inserimento del dato nel campo *Descrizione fornitore*.  
+Los otros campos presentes en la cuadrícula son: 
+- **Código/Descripción/Código de barras artículo proveedor**: reportan el código y la descripción con la que el proveedor identifica el artículo solicitado; son campos opcionales.     
+- **Unidad de medida**: se propone la unidad de medida asociada al proveedor en el [registro del artículo](/docs/erp-home/registers/items/create-new-item), o la unidad de medida principal en caso de que este campo no esté valorizado.   
+- **Cantidad**: se propone según el posible lote económico del proveedor, si se ha especificado en la pestaña [proveedores preferenciales](/docs/erp-home/registers/items/create-new-item) del artículo; de lo contrario se propone la cantidad presente en la línea del artículo de la RDA.
+- **Precio**: se propone según la lista asociada al proveedor preferencial. 
+- **Fecha estimada de entrega**: permite ingresar la fecha prevista para la entrega. 
+- **IVA**: se propone la alícuota IVA presente en la pestaña *Datos artículo*, pero se puede modificar manualmente.  
+- **Unidad de medida/Cantidad alternativa**: permite seleccionar una unidad de medida y una cantidad alternativa que serán reportadas en los documentos generados por la RDO. 
+- **Precio unidad de medida alternativa**: si está activo, el precio se multiplica por la cantidad alternativa. 
+- **Lista de Compra**: reporta la lista de donde se ha tomado el precio. 
+- **Suspendido**: este indicador se activa automáticamente cuando se ha generado la RDO.
 
-Gli altri campi presenti nella griglia sono: 
-- **Codice/Descrizione/Barcode articolo fornitore**: riportano il codice e la decsrizione con cui il fornitore identifica l'articolo richiesto; sono campi facoltativi.     
-- **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[angrafica dell'articolo](/docs/erp-home/registers/items/create-new-item), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
-- **Quantità**: viene proposta in base all'eventuale lotto economico del fornitore, se specificato nel tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-item) dell'articolo; in alternativa viene proposta la quantità presente nella riga articolo della RDA.
-- **Prezzo**: viene proposto in base al listino associato al fornitore preferenziale. 
-- **Data stimata consegna**: permette di inserire la data prevista per la consegna. 
-- **IVA**: viene proposta l'aliquota IVA presente nel tab *Dati articolo*, ma è modificabile manualmente.  
-- **Unità di misura/Quantità alternativa**: permette di selezionare un'unità di misura e una quantità alternativa che saranno riportate nei documenti generati dalla RDO. 
-- **Prezzo unità di misura alternativa**: se attivo, il prezzo viene moltiplicato per la quantità alternativa. 
-- **Listino di Acquisto**: riporta il listino da cui è stato ripreso il prezzo. 
-- **Sospseso**: questo flag viene attivato automaticamente quando la RDO è stata generata.
+La presencia de al menos una línea en esta pestaña activa el botón de la barra de herramientas **Generación RDO**. Al hacer clic en este botón, se creará la [Solicitud de Oferta](/docs/purchase/offer-request/settings) para las líneas seleccionadas. El documento creado será consultable en la búsqueda de RDO, o es posible abrirlo directamente con el botón **Abrir solicitud de oferta** de la barra de herramientas.   
 
-La presenza di almeno una riga in questa tab fa attivare il bottone della ribbon bar **Generazione RDO**. Cliccando questo bottone, verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe selezionate. Il documento creato sarà consultabile nella ricerca RDO, oppure è possibile aprirlo direttamente col bottone **Apri richiesta di offerta** della ribbon bar.   
-
-Per annullare una creazione effettuata, è possibile utilizzare il bottone della ribbon bar **Rollback RDO**, il quale cancellerà la *Richiesta di offerta* creata.
+Para cancelar una creación realizada, se puede utilizar el botón de la barra de herramientas **Rollback RDO**, que cancelará la *Solicitud de oferta* creada.

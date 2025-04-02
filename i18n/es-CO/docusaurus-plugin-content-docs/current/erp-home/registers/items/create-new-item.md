@@ -1,490 +1,489 @@
 ---
-title: Nuovo articolo
+title: nuovo articolo
 sidebar_position: 1.1
 ---
 
-**Introduzione**: [Identificazione dei prodotti e relative parti](/docs/erp-home/registers/items/master-item-intro) 
+**Introducción (Introduzione)**: [Identificación de productos y partes relacionadas](/docs/erp-home/registers/items/master-item-intro)
 
-:::important A cosa serve
-L'anagrafica articoli di Fluentis svolge un ruolo cruciale nella gestione e organizzazione delle informazioni relative agli articoli di un'azienda. Essa si presenta come un database centrale dove vengono registrati e aggiornati i dettagli di ogni prodotto, consentendo una visione chiara e sistematica delle giacenze, dei costi e delle movimentazioni di magazzino.
+:::important Para qué sirve (A cosa serve)
+La base de datos de artículos de Fluentis desempeña un papel crucial en la gestión y organización de la información relacionada con los artículos de una empresa. Se presenta como una base de datos central donde se registran y actualizan los detalles de cada producto, permitiendo una visión clara y sistemática de las existencias, costos y movimientos de almacén.
 
-Le informazioni contenute nell'anagrafica articoli includono dettagli identificativi come il codice articolo, la descrizione, l'unità di misura, e le informazioni relative ai fornitori. Inoltre, è possibile inserire dati riguardanti i prezzi, le politiche di approvvigionamento e la gestione dei lotti, facilitando le operazioni quotidiane di acquisto, vendita e logistica.
+La información contenida en la base de datos de artículos incluye detalles identificativos como el código de artículo, la descripción, la unidad de medida y la información relacionada con los proveedores. Además, es posible ingresar datos sobre precios, políticas de aprovisionamiento y gestión de lotes, facilitando las operaciones diarias de compra, venta y logística.
 
-Grazie a quest’anagrafica, le aziende possono tenere traccia dello stato degli articoli, automatizzare processi come il riordino delle scorte e ottenere report dettagliati per una pianificazione più efficace degli acquisti. Inoltre, l'integrazione con altri moduli di Fluentis consente di coordinare al meglio le attività di magazzino, migliorando l’efficienza operativa e contribuendo a una gestione delle scorte più accurata e rettificata nel tempo.
+Gracias a esta base de datos, las empresas pueden realizar un seguimiento del estado de los artículos, automatizar procesos como el reabastecimiento de inventarios y obtener informes detallados para una planificación de compras más efectiva. Además, la integración con otros módulos de Fluentis permite coordinar mejor las actividades de almacén, mejorando la eficiencia operativa y contribuyendo a una gestión de existencias más precisa y ajustada con el tiempo.
 :::
 
-La procedura di creazione di un nuovo articolo si apre tramite il percorso:
-- **Home > Articolo > Crea Nuovo Articolo**,
+El procedimiento para crear un nuevo artículo se inicia a través de la ruta:
+- **Inicio > Artículo > Crear Nuevo Artículo**,
 
-oppure
+o bien
 
-- **Home > Articoli > Ricerca Articoli** cliccando sul pulsante **Nuovo** presente nella ribbon Bar della form in oggetto.
+- **Inicio > Artículos > Buscar Artículos** haciendo clic en el botón **Nuevo** presente en la barra de ribbon del formulario en cuestión.
 
-Si aprirà la form **Anagrafica articolo** composta da una sezione nella quale si andranno a definire le *caratteristiche obbligatorie* dell'articolo e da una sezione inferiore composta da diversi Tab che ne raggruppano le *caratteristiche specifiche*.
+Se abrirá el formulario **Base de datos de artículo** compuesto por una sección en la que se definirán las *características obligatorias* del artículo y por una sección inferior compuesta por diversas pestañas que agrupan las *características específicas*.
 
-## 1. **Testata**
+## 1. **testata**
 
-Le caratteristiche fondamentali e obbligatorie che ogni articolo deve avere e che troviamo nella prima parte della form sono: la [**Classe**](/docs/guide/common/glossary/glossary-intro#item-class) (massimo 3 caratteri), il [**Codice**](/docs/guide/common/glossary/glossary-intro#item-code) (massimo 50 caratteri), una breve **Descrizione** e l'[**Unità di misura**](/docs/guide/common/glossary/glossary-intro#unit-of-measurement).
+Las características fundamentales y obligatorias que debe tener cada artículo y que encontramos en la primera parte del formulario son: la [**Clase**](/docs/guide/common/glossary/glossary-intro#item-class) (máximo 3 caracteres), el [**Código**](/docs/guide/common/glossary/glossary-intro#item-code) (máximo 50 caracteres), una breve **Descripción** y la [**Unidad de medida**](/docs/guide/common/glossary/glossary-intro#unit-of-measurement).
 
 :::note
-L'insieme della classe e del codice deve essere univoco per quello specifico articolo.
+La combinación de la clase y el código debe ser única para ese artículo específico.
 :::
 
-#### Campi non obbligatori  
-- **Seconda descrizione**: una seconda descrizione che può essere attribuita all'articolo;
-- **Configurazione/Versione**: combo attraverso la quale si va a selezionare la versione dell'articolo;
+#### Campos no obligatorios  
+- **Segunda descripción** (Seconda descrizione): una segunda descripción que puede ser atribuida al artículo;  
+- **Configuración/Versión** (Configurazione/Versione): combo a través del cual se selecciona la versión del artículo;
 
-Una volta che tutte le caratteristiche obbligatorie dell'articolo sono state definite, si procede con l'inserimento di quelle più specifiche attraverso i vari tab che troviamo nella seconda parte della finestra e che vengono trattati nei seguenti documenti.
+Una vez que se han definido todas las características obligatorias del artículo, se procede a la inserción de las características más específicas a través de las distintas pestañas que encontramos en la segunda parte de la ventana y que se tratan en los siguientes documentos.
 
-#### Pulsanti specifici  
+#### Botones específicos  
 
-> **Aggiornamento LF LV con Formula**: pulsante che consente di aggiornare i prezzi di vendita tramite delle specifiche formule partendo dai prezzi di listino;      
-> [**Parametri MRP**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): pulsante che permette di accedere ai *Parametri MRP* di quell'articolo, dove si vanno a definire i parametri che serviranno per gestire quell'articolo in produzione; questo è un pulsante che troveremo anche all'interno di altre form relative alla parte di produzione.  
+> **aggiornamento lf lv con formula**: botón que permite actualizar los precios de venta a través de fórmulas específicas partiendo de los precios de lista;      
+> [**Parámetros MRP**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): botón que permite acceder a los *Parámetros MRP* de ese artículo, donde se definen los parámetros que servirán para gestionar ese artículo en producción; este botón también lo encontraremos dentro de otros formularios relacionados con la parte de producción.
 
-## 2. **Generalità**
+## 2. **generalità**
 
-:::important A cosa serve
-Il tab Generalità contiene le informazioni principali e logistiche degli articoli, come il codice, la descrizione, l'unità di misura e altre classificazioni opzionali, tra cui categoria merceologica e natura dell’articolo.     
-Questo tab consente di definire ulteriori dettagli utili per la gestione e la tracciabilità degli articoli all'interno dei processi aziendali, facilitando l'organizzazione e la reportistica.
+:::important Para qué sirve (A cosa serve)
+La pestaña Generalidades contiene la información principal y logística de los artículos, como el código, la descripción, la unidad de medida y otras clasificaciones opcionales, incluidas la categoría mercantil y la naturaleza del artículo.     
+Esta pestaña permite definir detalles adicionales útiles para la gestión y trazabilidad de los artículos dentro de los procesos empresariales, facilitando la organización y la elaboración de informes.
 :::
 
-#### Campi specifici  
+#### Campos específicos  
 
-**Data inserimento**: campo che viene compilato in automatico alla creazione dell'articolo, e che appunto indica la data di creazione dell'articolo;  
-**Aliquota IVA**: combo attraverso la quale si va a selezionare ed inserire l'aliquota IVA relativa a quell'articolo; questo campo ha priorità rispetto all'aliquota IVA che viene attribuita al cliente/fornitore nell'anagrafica contatto;  
-**IVA acquisti agricoli / IVA vendite agricole**: che hanno un metodo diverso di gestione;  
-**Caratteristica e Modello**: sono due campi non obbligatori in cui si va a dare un'ulteriore definizione dell'articolo in base a una serie di raggruppamenti che vengono stabiliti all'interno della gestione aziendale dei prodotti;  
-**Fatturato acquisti**: combo che si collega a una tipologia di *Fatturato acquisti* che è stata definita nella tabella dei sottoconti contabili per la contabilizzazione delle fatture di acquisto;  
-**Tipo articolo**: è una tabella non obbligatoria in cui si può inserire un'ulteriore descrizione dell'articolo in base ad altri raggruppamenti interni;  
-**Nomenclatura**: in questi campi viene selezionata attraverso l'help, la nomenclatura (ovvero la voce doganale dell'articolo) utile ai fini l'intrastat per la dichiarazione delle merci all'importazione o all'esportazione nonché ai fini statici per il commercio degli articoli all'interno dell'UE;  
-**Giorni di pagamento merce deperibile**: è collegato all'articolo 62; per la merce deperibile la fattura deve essere creata e pagata entro una scadenza di 30/60 giorni in base al tipo di articolo. In questo caso questo controllo viene fatto sia sull'articolo, sia sul tipo di pagamento che viene inserito in modo che non si possano emettere fatture con data decorrenza maggiore rispetto a quella indicata;  	
-**Data ultima modifica**: indica la data di ultima modifica dell’articolo;  
-**Categoria fiscale**: attraverso questa combo si può andare a selezionare la categoria fiscale a cui appartiene l'articolo che serve per le stampe fiscali di magazzino, per poter raggruppare gli inventari per categoria fiscale;  
-**Categoria merceologica**: dato statistico come la caratteristica, e viene utilizzato in alcuni report specifici;  
-**Fatturato vendite**: come per il fatturato acquisti, questa combo serve per la gestione dei sottoconti di ricavo per la vendita dell'articolo;  
-**Natura articolo**: è un campo che viene utilizzato per attribuire all'articolo alcune caratteristiche specifiche per poi essere utilizzato in alcune procedure particolari. Nella combo troviamo la lista delle varie nature che possiamo attribuire all'articolo (click per il [glossario](/docs/guide/common/glossary/glossary-intro#item-nature));  
+**Fecha de inserción** (Data inserimento): campo que se completa automáticamente al crear el artículo, indicando efectivamente la fecha de creación del artículo;  
+**Tasa de IVA** (Aliquota IVA): combo a través del cual se selecciona e inserta la tasa de IVA correspondiente a ese artículo; este campo tiene prioridad sobre la tasa de IVA que se asigna al cliente/proveedor en la base de datos de contacto;  
+**IVA de compras agrícolas / IVA de ventas agrícolas** (IVA acquisti agricoli / IVA vendite agricole): que tienen un método diferente de gestión;  
+**Característica y Modelo** (Caratteristica e Modello): son dos campos no obligatorios en los que se da una definición adicional del artículo en función de una serie de agrupaciones que se establecen dentro de la gestión empresarial de productos;  
+**Facturación de compras** (Fatturato acquisti): combo que se conecta a un tipo de *Facturación de compras* que se ha definido en la tabla de subcuentas contables para la contabilidad de las facturas de compra;  
+**Tipo de artículo** (Tipo articolo): es una tabla no obligatoria en la que se puede ingresar una descripción adicional del artículo en función de otros agrupamientos internos;  
+**Nomenclatura** (Nomenclatura): en estos campos se selecciona a través de la ayuda, la nomenclatura (es decir, la partida arancelaria del artículo) útil para fines intrastat para la declaración de mercancías a la importación o exportación, así como para fines estadísticos en el comercio de artículos dentro de la UE;  
+**Días de pago para mercancías perecederas**: está relacionada con el artículo 62; para mercancías perecederas, la factura debe crearse y pagarse dentro de un plazo de 30/60 días según el tipo de artículo. En este caso, este control se realiza tanto sobre el artículo como sobre el tipo de pago que se inserta, para que no se puedan emitir facturas con una fecha de inicio mayor a la indicada;  
+**Fecha de última modificación** (Data ultima modifica): indica la fecha de la última modificación del artículo;  
+**Categoría fiscal** (Categoria fiscale): a través de este combo se puede seleccionar la categoría fiscal a la que pertenece el artículo, que se utiliza para las impresiones fiscales de almacén, para poder agrupar los inventarios por categoría fiscal;  
+**Categoría mercantil** (Categoria merceologica): dato estadístico como la característica, y se utiliza en algunos informes específicos;  
+**Facturación de ventas** (Fatturato vendite): como para la facturación de compras, esta combo sirve para la gestión de las subcuentas de ingresos por la venta del artículo;  
+**Naturaleza del artículo** (Natura articolo): es un campo que se utiliza para atribuir al artículo algunas características específicas para luego ser utilizadas en ciertos procedimientos particulares. En la combo encontramos la lista de las diversas naturalezas que podemos atribuir al artículo (clic para el [glosario](/docs/guide/common/glossary/glossary-intro#item-nature));  
 
-> **Attrezzatura/Utensile**: l’articolo di questa natura è associabile all’anagrafica degli strumenti di misura e delle attrezzature presenti nelle fasi dei cicli di lavorazione.
-> **Macchina/Impianto**: questa natura è associabile all’anagrafica delle macchine;
-> **Famiglia articoli**: che definisce l’articolo come una famiglia di articoli / prodotti delle previsioni di vendita;
-> **Imballo**: serve per la gestione degli imballi a rendere, per la contabilità (per capire quanti imballi ho in casa e quanti ne ho dati al cliente o al fornitore e quindi capire quanti me ne devono rendere);
-> **Servizi**: per la gestione degli interventi post-vendita;
-> **Prestito d’uso/Componente impianto**: servono per la gestione delle manutenzioni;
+> **Equipo/Herramienta (Attrezzatura/Utensile)**: el artículo de esta naturaleza es asociable al registro de instrumentos de medición y a las herramientas presentes en las fases de los ciclos de procesamiento.  
+> **Máquina/Instalación (Macchina/Impianto)**: esta naturaleza es asociable al registro de máquinas;  
+> **Familia de artículos (Famiglia articoli)**: que define el artículo como una familia de artículos/productos de previsiones de venta;  
+> **imballo**: sirve para la gestión de los envases retornables, para la contabilidad (para entender cuántos envases tengo en casa y cuántos le he dado al cliente o al proveedor y, por lo tanto, cuántos me tienen que devolver);  
+> **servizi**: para la gestión de intervenciones post-venta;  
+> **Préstamo de uso/Componente de instalación (Prestito d’uso/Componente impianto)**: sirven para la gestión del mantenimiento;
 
-#### Opzioni disponibili 
-**Controllo qualità**: se attivo questo flag innesca il processo del controllo qualità, di conseguenza vorrà dire che l’articolo rientrerà nel flusso della qualità;  
-**Fittizio**: se attivo, questo flag serve per dichiarare che l'articolo non deve essere movimentato;  
-**Interesse fiscale**: se è attivo, questo flag serve per riportare l'articolo nelle stampe fiscali del magazzino;  
-**ABC:** per ABC, nella gestione delle scorte ai fini logistici, si intende un metodo di categorizzazione dell'inventario che consiste nel suddividere gli articolo in tre classi, denominate appunto A, B, e C dove A contiene gli articoli più importanti e C gli articoli meno importanti. È un metodo utile a focalizzare l'attenzione sui pochi prodotti essenziali e non su molti prodotti di scarsa importanza. Se questo metodo viene utilizzato dall'azienda, in questo campo si troverà la lettera che definisce la categoria a cui l'articolo appartiene;  
-**In esaurimento**: se attivo, questo flag indica che l'articolo è In esaurimento.         
-Le condizioni per ottenere l'avviso che l'articolo sta per esaurire, nei documenti, per esempio negli Ordini cliente, sono:  
-- nei [parametri Ordini cliente](/docs/configurations/parameters/sales/sales-orders-parameters) deve essere settato il flag "Verifica articoli in esaurimento";             
-- in anagrafica articolo deve essere settato il flag "In esaurimento" e inoltre la "Data esaurimento" deve essere minore o uguale alla data dell'ordine.         
+#### Opciones disponibles  
+**Control de calidad**: si este indicador está activo, activa el proceso de control de calidad, lo que significa que el artículo entrará en el flujo de calidad;  
+**Ficticio**: si está activo, este indicador sirve para declarar que el artículo no debe ser movido;  
+**Interés fiscal**: si está activo, este indicador sirve para incluir el artículo en las impresiones fiscales del almacén;  
+**ABC**: para ABC, en la gestión de existencias con fines logísticos, se entiende como un método de categorización del inventario que consiste en dividir los artículos en tres clases, denominadas A, B y C, donde A contiene los artículos más importantes y C los menos importantes. Es un método útil para centrar la atención en los pocos productos esenciales y no en muchos productos de escasa importancia. Si este método es utilizado por la empresa, en este campo se encontrará la letra que define la categoría a la que pertenece el artículo;  
+**En agotamiento**: si está activo, este indicador indica que el artículo está en agotamiento.         
+Las condiciones para recibir la alerta de que el artículo está a punto de agotarse, en los documentos, como por ejemplo en los pedidos de clientes, son:  
+- en los [parámetros de pedidos de clientes](/docs/configurations/parameters/sales/sales-orders-parameters) debe estar activado el indicador "Verificar artículos en agotamiento";             
+- en la base de datos de artículos debe estar activado el indicador "En agotamiento" y, además, la "Fecha de agotamiento" debe ser menor o igual que la fecha del pedido.         
 
-**Data in esaurimento**: indica da quando l'articolo è stato messo in esaurimento;  
-**Articolo senza calcolo della disponibilità**: se il flag è attivo, il sistema non andrà a considerare la disponibilità per poter utilizzare l'articolo;  
-**Archiviato**: se attivo, l'articolo non comparirà più nella lista degli articoli che si possono utilizzare, in quanto diventato obsoleto;  
-**Diritti d'autore**: se attivo, indica che l'articolo è soggetto a diritti d’autore/royalties e sarà considerato nella [Gestione royalties](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/). 
+**Fecha en agotamiento**: indica desde cuándo el artículo está en agotamiento;  
+**Artículo sin cálculo de disponibilidad**: si el indicador está activo, el sistema no considerará la disponibilidad para poder utilizar el artículo;  
+**Archivado**: si está activo, el artículo no aparecerá más en la lista de artículos que se pueden utilizar, ya que se ha vuelto obsoleto;  
+**Derechos de autor**: si está activo, indica que el artículo está sujeto a derechos de autor/royalties y será considerado en la [Gestión de royalties](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/).
 
-## 3. **Amministrazione**
+## 3. **amministrazione**
 
-All'interno di questo Tab si inseriscono i centri di aziendali (centri di costo) e l'eventuale centro di profitto dell'articolo, in modo tale che richiamando l'articolo nei documenti venga riportato il centro o i centri selezionati per poi essere utilizzati in fase di contabilizzazione.
+Dentro de esta pestaña se introducen los centros de empresa (centros de costo) y el eventual centro de beneficios del artículo, de manera que al llamar al artículo en los documentos se registre el centro o los centros seleccionados para ser utilizados en la fase de contabilización.
    
-**Griglia dei centri aziendali**: permette di collegare l'anagrafica articolo ad uno o più centri aziendali; 
-
-#### Campi della griglia dei centri aziendali  
-> **Numero**: indica il numero della riga;        
-> **Centro di costo**: permette di richiamare il codice del centro di costo;         
-> **Descrizione**: indica la descrizione;         
-> **Percentuale**: indica la percentuale di ripartizione tra i vari centri di costo inseriti nella griglia (se il centro è unico sarà il 100%);            
-> **Divisione**: permette di abbinare l'associazione del centro di costo all'articolo in relazione alla *Divisione* aziendale selezionata;          
-> **Data inizio / Data fine validità**: permettono di attribuire una validità alla relazione;      
-> **Dimensione**: permette di specificare la dimensione del centro aziendale (per ulteriori dettagli la tabella dei [Centri Aziendali](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers);             
-> **Categoria**: permette di specificare la categoria del centro aziendale (per ulteriori dettagli la tabella dei [Centri Aziendali](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers).                       
-
-:::note Note
-Se il parametro *Gestione controlling*, presente nel tab *Altre impostazioni* della tabella [**Società**](/docs/configurations/tables/general-settings/company) è disattivato, questo campo viene usato per inserire il centro di costo. 
-:::
-
-**Centro di profitto**: solo nel caso in cui il parametro *Gestione controlling*, presente nel tab *Altre impostazioni* della tabella **Società** sia disattivato, sarà gestibile e servirà per inserire il centro di profitto.
-
-## 4. **Approvvigionamento**
-
-:::important A cosa serve
-Il tab Approvvigionamento dell'anagrafica articoli di Fluentis permette di definire tutti i parametri necessari per gestire in modo ottimale le scorte dell’articolo. Nella prima sezione, si impostano i dati generali come la scorta minima e massima, che indicano i limiti entro cui mantenere le quantità di magazzino. Altri parametri includono le settimane di copertura, i giorni per la scorta e il punto di riordino, che stabilisce quando è necessario procedere con un nuovo ordine.
-Inoltre, sono disponibili impostazioni per le stampanti etichette e i tipi di report etichette, utili per la gestione dei lotti nei diversi stati (Unico, Conforme, Non conforme, Quarantena). Nella seconda sezione, è possibile specificare questi parametri per ogni magazzino in cui l'articolo è presente, offrendo una gestione accurata e personalizzata delle scorte.
-:::
-
-In questo tab si vanno a definire tutti i dati necessari per l'approvvigionamento dell'articolo in oggetto.  
-La finestra si compone di due parti:  
-a. Nella prima parte vengono settati i dati per l'approvvigionamento generale dell'articolo e non per singolo magazzino:  
-
-**Scorta minima e scorta massima**: rappresenta le quantità minime che devono essere sempre presenti a magazzino per quell'articolo e le quantità massime che si possono tenere a magazzino;  
-**Giorni per la scorta**: rappresenta il numero di giorni necessari per rimpiazzare almeno la scorta minima che è stata indicata per quell'articolo;  
-**Settimane di copertura**: viene indicato l'intervallo di tempo (calcolato in settimane) durante il quale (per cui/in cui) la scorta va a coprire il bisogno di quell'articolo;  
-**Indice di copertura**: è un campo editabile nel quale viene inserita una percentuale che può venire o meno considerata dallo schedulatore o dall'MRP per il ripristino delle scorte.  
-Se nei parametri MRP si mette il flag su *Considera indice copertura* nel momento della schedulazione la procedura andrà a tenere in considerazione la percentuale indicata in questo campo per ripristinare la disponibilità dell'articolo per una quantità tale da coprire il fabbisogno delle n settimane che si è deciso di specificare nel campo **Settimane di copertura**;  
-**Punto di riordino**: qui si va ad indicare al raggiungimento di quale quantità è necessario procedere con riordino di quell'articolo;  
-**Giorni per il riordino**: giorni necessari per il ripristino del materiale a magazzino;  
-**Intervallo tempo revisione punto di riordino**: viene indicato ogni quanto tempo va rivisto e aggiornato il punto di riordino;  
-**Data ultimo calcolo punto di riordino**: viene indicata la data relativa all'ultima volta che è stata fatta l'analisi e in cui si è stabilito il punto di riordino indicato sopra.  
-
-Ci sono poi due sezioni chiamate:  
-- **Stampanti etichette**: permette di scegliere le stampanti da proporre di default per stampare le etichette dei lotti per i diversi *Stati lotto*; sarà quindi possibile scegliere tra la stampante per lo stato lotto *Unico*, *Conforme*, *Non conforme*, e *Quarantena*.
-
-- **Tipi report etichette**,: permette di specificare i report di default da stampare per i lotti nei diversi *Stati lotto*; sarà quindi possibile scegliere dei report diversi in base allo stato del lotto *Unico*, *Conforme*, *Non conforme*, e *Quarantena*.
-
-b. Nella seconda parte della finestra invece, si vanno ad indicare i vari magazzini in cui possiamo trovare l'articolo ed eventualmente è possibile definire alcuni dei dati sopra elencati (scorta minima/massima e giorni per la scorta, punto di riordino e giorni per il riordino, stampa etichetta unica/conforme/non conforme/quarantena) per ogni singolo magazzino. (es. la scorta minima o la scorta massima che si potrà avere di quell'articolo in quello specifico magazzino, e cosi per il resto delle informazioni).
-
-## 5. **Categoria sconti acquisti**  
-
-In questa tab vengono inserite le **Categorie di sconto** con la quale l'articolo viene acquistato. Queste categorie vengono utilizzate dalla **Gestione prezzi** del modulo acquisti.  
-
-## 6. **Categoria sconti vendite**  
-
-In questa tab vengono inserite le **Categorie di sconto** con la quale l'articolo viene venduto. Queste categorie vengono utilizzate dalla **Gestione prezzi** del modulo vendite. 
-
-## 7. **Clienti**
-
-In questo tab è possibile andare ad associare all'articolo la lista dei clienti che lo hanno acquistato.
-
-**Tipo campionamento**: combo per definire la modalità di default di prelievo dei campioni da un ordine di produzione per quell'articolo (per esempio un campione ogni 100 pezzi, oppure 1 campione ogni 3 ordini etc..).I tipi di campionamento vengono precedentemente codificati all'interno della tabella nel percorso **Tabelle > Logistica**.
-
-Griglia superiore:  
-**Cliente**: va indicato il conto/sottoconto e descrizione del cliente;  
-**Lotto economico**: va indicato il lotto economico (la quantità minima acquistabile dal cliente) con la relativa unità di misura;  
-**Articolo cliente**: in questa sezione si può indicare il codice e la descrizione che il cliente attribuisce all'articolo all'interno del suo database; indicando in questa sezione la loro referenza, questa verrà riportata in tutti i documenti relativi a quel cliente per quell'articolo;  
-**Settore uso**: qui viene indicato il settore d'uso del cliente;  
-**Tipo di campionamento**: in questo caso si va selezionare il tipo di campionamento dell'articolo in base al cliente a cui è associato che potrebbe quindi essere diversa da quella selezionata nella combo iniziale della finestra;   
-**Scheda tecnica**: nel caso vi sia una scheda tecnica già redatta per questo articolo, in questa sezione vengono indicati i dettagli del documento; 
-**Collaudo finale**: in questo campo si va ad inserire le eventuali informazioni relative al tipo, anno, codice e descrizione del collaudo finale;  
-**Variante**: in questo campo si va ad inserire l'eventuale variante di quell'articolo, selezionandola tramite la combo contenente le varianti precedentemente codificate nella tabella **Varianti Articolo**;  
-**Note**: sezione in cui si possono andare ad inserire eventuali note.
-
-La griglia inferiore può contenere delle informazioni sugli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).
-
-#### Pulsanti specifici  
-> **Inserisci clienti**: permette di inserire un nuovo cliente;    
-> **Cancella clienti**: permette di eliminare il record di un cliente inserito in precedenza.
-
-## 8. **Codici Barcode**
-
-All'interno di questo Tab si possono andare ad inserire eventuali codici alternativi detti anche codici barcode che rappresentano l'articolo.  
-I codici barcode sono dei codici a barre che racchiudono alcune delle informazioni principali inerenti la codifica dell'articolo a cui vengono associati e sono utili per le operazioni di magazzino. Questi codici vengono letti attraverso delle specifiche apparecchiature dette Mobile tramite raggi laser o barre led.  
-I codici a barre possono essere di varie tipologie.  
-Le due tipologie gestite dal database sono:
-- l'EAN13 (significa che il codice a barre può avere una lunghezza massima di 13 caratteri)     
-- l'EAN128 (significa che il codice a barre deve avere una lunghezza di cifre pari).
-
-In **Fluentis ERP** non ci sono dei parametri già definiti che indicano come impostare il codice barcode in modo che questo rispetti le norme relative all'EAN13 e 128, ma possono essere applicati degli algoritmi customizzati che riprendono lo standard e che controllano il codice barcode che viene inserito verificando che rispetti le norme sopra citate.  
-La form è composta da una griglia all'interno della quale si va ad inserire un **Nuovo** barcode, tramite il pulsante **Inserisci** presente nella ribbon bar, oppure andando direttamente su una nuova riga.  
-Nel campo **Tipo barcode** si va a selezionare, tramite la relativa combo, il tipo di barcode che si vuole codificare e nel campo **Barcode** il codice barcode.
-
-#### Pulsanti specifici  
-> **Validation**: premendo questo pulsante, il sistema va a verificare che il codice corrisponda alle norme citate in precedenza riguardanti la lunghezza che il codice deve avere in base al tipo di codice che si sta inserendo;  
-> **Cancella codici barcode**: permette di cancellare un codice a barre precedentemente inserito.
-
-## 9. **Confezionamento**
-
-:::important A cosa serve
-Il tab di confezionamento dell'anagrafica articoli di Fluentis è essenziale per definire la modalità di confezionamento di un articolo, specificando i tipi di Unità di Carico (UDC) che lo compongono. Questa configurazione può avere una struttura ad albero, nel quale un pallet, ad esempio, può contenere diverse scatole, ognuna delle quali a sua volta può contenere un certo numero di articoli.
-
-Definire accuratamente il confezionamento è fondamentale poiché permette di generare automaticamente le UDC necessarie per la spedizione nel momento in cui si prepara un ordine. 
-
-Inoltre, è possibile associare specifiche unità di misura per il volume e definire la descrizione per cliente o fornitore, permettendo così una gestione personalizzata a seconda delle esigenze specifiche di ciascun cliente. Questo tab si configura quindi come uno strumento chiave per ottimizzare la logistica e la gestione dei magazzini
-:::
-
-Attraverso questo tab si va a definire la modalità di confezionamento dell'articolo definendo quali sono i tipi di unità di carico  che lo compongono.
-
-Può essere una struttura ad albero in quanto per esempio possiamo stabilire come metodo di confezionamento il pallet, che al suo interno può aver un determinato numero di scatole che possono contenere un determinato numero di articoli.
-
-Definire il confezionamento consente di creare attraverso il sistema le unità di carico necessarie per la spedizione nel momento in cui dobbiamo preparare un ordine per la spedizione;
-
-La finestra si compone di una griglia all'interno della quale si vanno ad inserire le seguenti informazioni:
-
-**Tipo unità di carico / Tipo unità di carico  contenuto**: in questi campi si vanno ad inserire il tipo di unità di carico  quindi il tipo di imballo, e il tipo di contenuto selezionando la voce interessata tramite la relativa combo; i dati presenti nelle combo di questi campi sono stati precedetemene codificati nella relativa tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types);  
-**Quantità**: in questo campo si indica la quantità che quell'unità di carico può contenere;  
-**Priorità**: in questo campo di va ad indicare la priorità del confezionamento (per esempio se abbiamo un pallet al cui interno abbiamo delle scatole, bisognerà dare la priorità in modo che quando il sistema va a creare le unità di carico sappia già la priorità di confezionamento);  
-**Conto / Sottoconto / Descrizione cliente/fornitore**: in questo campo viene inserito il cliente/fornitore che richiede questo tipo di unità di carico. Quindi è possibile definire diverse unità di carico a livello di singolo cliente;  
-**Dimensione Unità di misura**: in questo campo si va a selezionare l'unità di misura per le dimensioni dell'unità di carico; all'inserimento del **Tipo unità di carico** questo valore viene riportato dalla tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types);   
-**Altezza / Larghezza / Profondità**: in questi campi di vanno a specificare le dimensioni dell'unità di carico completa; all'inserimento del **Tipo unità di carico** questi valori vengono riportati dalla tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types) solo nel caso in cui anche il flag **Volume variabile** (presente sempre in Tipi unità di carico) sia disattivato; altrimenti i dati non verranno proposti e dovranno essere inseriti manualmente dall'operatore data l'impossibilità di prevedere come vengano posizioni gli articoli sull'unità di carico selezionata. In ogni caso possono essere modificati manualmente, ed ad ogni loro modifica verrà ricalcolato anche il **Volume**;  
-**Unità di misura volume**: in questo campo si andrà ad indicare l'unità di misura del volume dell'unità di carico; all'inserimento del **Tipo unità di carico** questo valore viene riportato dalla tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types);   
-**Volume**: in questo campo si andrà ad indicare il volume dell'unità di carico completa. Se il flag **Volume variabile** è attivo, all'inserimento del **Tipo unità di carico** questo valore viene calcolato sommando il valore del volume dell'unità di carico a vuoto presente nella tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types) e il valore del volume dell'articolo (preso dal campo *Volume* presente nel tab Pesi / Dimensioni dell'anagrafica articolo moltiplicato per la relativa quantità) dal volume delle unità di carico contenute; invece, se il flag **Volume variabile** non è attivo, all'inserimento del **Tipo unità di carico** verrà riportato direttamente il valore del volume dell'unità di carico a vuoto presente nella tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types) dato che questo non è variabile. Nel caso in cui venissero modificate le dimensioni di **Altezza / Larghezza / Profondità** il valore del **Volume** sarà ricalcolato di conseguenza. Il **volume** verrà ricalcolato anche se ci fossero delle variazioni nel volume del **Tipo unità di carico  contenuto**. Questo valore può sempre essere modificato manualmente;  
-**Volume variabile**: indica che si tratta di un'unità di carico con volume variabile, quindi il volume totale varierà a seconda di che cosa e come ci verrà caricato; è campo in sola lettura valorizzabile nella tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types);  
-**Unità di misura Peso**: in questo campo si andrà ad indicare l'unità di misura del peso dell'unità di carico; all'inserimento del **Tipo unità di carico** questo valore viene riportato dalla tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types);      
-**Peso**: in questo campo si andrà ad indicare il peso dell'unità di carico completa; all'inserimento del **Tipo unità di carico** e della **Quantità** questo valore viene calcolato sommando al peso dell'unità di carico a vuoto presente nella tabella [Tipi unità di carico](/docs/configurations/tables/logistics/loading-unit-types) il peso degli articoli (preso dal campo *Peso lordo* presente nel tab Pesi / Dimensioni dell'anagrafica articolo moltiplicato per la relativa quantità) o dal peso delle unità di carico contenute. Questo valore può sempre essere modificato manualmente;  
-**Tolleranza dimensioni/Tolleranza quantità**: sono utilizzati nelle personalizzazioni e servirebbero quando da un piano di carico si crea una lista di prelievo UDC con le unità di carico disponibili a magazzino. La procedura dovrebbe inserire nella lista UDC, unità di carico con dimensioni o quantità che differiscono da quelle specificate nel confezionamento per le percentuali specificate. Attualmente non sono utilizzati a standard;                
-**Dimensioni obbligatorie**: se attivo, questo flag sta ad indicare che le dimensioni indicate sono tassative;  
-**Unità di carico obbligatoria**: se attivo, questo flag sta ad indicare che questo articolo deve essere obbligatoriamente gestito tramite unità di carico nelle dichiarazioni di produzione e nel ricevimento merci del WMS;  
-**Descrizione tipo unità di carico / Descrizione Tipo unità di carico contenuto**: in questi campi, una volta inseriti il tipo unità di carico e il tipo unità di carico contenuto , si visualizzeranno automaticamente le descrizioni dei tipi selezionati.
-
-## 10. **Costi**
-
-:::important A cosa serve
-Nel tab Costi dell'anagrafica articoli di Fluentis, gli utenti possono registrare vari tipi di costi associati, tra cui il costo ultimo e il costo medio ponderato, che vengono aggiornati automaticamente in base alle movimentazioni di magazzino. Il costo ultimo rappresenta l'ultimo prezzo d'acquisto registrato, mentre il costo medio è il risultato delle movimentazioni di magazzino, utili per calcolare il valore delle rimanenze.       
-Il tab consente anche di definire un costo standard, utilizzato come riferimento per l'anno e solitamente aggiornato annualmente. Inoltre, è possibile inserire il prezzo di vendita, da cui partire per la creazione di listini di vendita.          
-Queste informazioni sono fondamentali per la valorizzazione delle rimanenze di magazzino e per la pianificazione finanziaria, contribuendo a una gestione più efficace degli articoli in magazzino.
-:::
-
-All'interno di questo Tab si inseriscono diversi costi associati all'articolo.
-
-#### Campi specifici  
-**Costo ultimo** e il **Costo medio**: per costo ultimo si intende l'ultimo costo di acquisto (il più recente), mentre per costo medio ponderato si intende il costo medio che deriva dalle movimentazioni di magazzino. Per entrambi i costi la causale utilizzata per la movimentazione del magazzino deve avere il flag su aggiornamento *Costo medio/Costo ultimo* attivato ed anche il flag su *Aggiorna costo articolo* e su *Interesse fiscale*, in questo modo i relativi movimenti verranno presi in considerazione del calcolo dei costi.   
-**Costo standard/costo standard successivo**: il costo standard è un costo impostato manualmente o dalla procedura di calcolo costo e indica il costo di riferimento per un dato articolo da usare durante l'anno. Solitamente è un costo che viene aggiornato all'inizio o alla fine dell'anno. Per gli articoli di acquisto solitamente corrisponde al costo medio mentre per gli altri articoli viene calcolato dalla procedura di [Calcolo costo](/docs/controlling/cost-calculation/cost) che si trova nell'area *Controlling*, come somma dei costi dei materiali e dei costi delle fasi di produzione.  
-Tutti questi costi possono essere usati per le valorizzazioni della distinta base, delle rimanenze di magazzino oppure (per gli articoli di acquisto) per la valorizzazione degli ordini di produzione (e relativi movimenti di carico) quando si carica a magazzino l'articolo di un ordine di produzione.  
-**Prezzo di vendita**: prezzo base da cui si può partire a creare un listino di vendita nel caso in cui si vada a considerare un listino per esempio nazionale di partenza. Nel caso in cui non vi siano listini per questo articolo, nei documenti questo articolo prenderà questo prezzo. (salvo per i documenti di reso nei quali l'articolo prende di default il prezzo indicato nel costo ultimo da verificare bene) (non viene molto utilizzato).  
-**Categoria di sconto/Configurazione fasce di prezzo/Formule di aggiornamento delle politiche di sconto**: sono dei dati prettamente commerciali che servono per l'aggiornamento dei prezzi.  
-Verrà utilizzato nei documenti non riporterà mai gli sconti provenienti dai listini in cui è contenuto e non verranno calcolate le provvigioni sulle vendite di questo articolo.
-
-## 11. **Descrizione articoli in lingua**
-
-Questo tab permette di inserire la **Descrizione in lingua** e la **Descrizione 2** dell'articolo nelle varie lingue di lavoro utilizzate.
-
-#### Campi specifici  
-**Lingua**: attraverso questa combo si va a selezionare la lingua che si vuole aggiungere; le lingue tra cui poter effettuare la selezione sono state precedentemente codificate nella relativa tabella;  
-**Descrizione in lingua**: in questo campo si va ad inserire manualmente la descrizione dell'articolo nella lingua prescelta;  
-**Descrizione 2**: in questo campo si va ad inserire manualmente la descrizione secondaria dell' articolo nella lingua prescelta.
-
-## 12. **Extra Data**
-
-Si rinvia alla documentazione relativa agli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).
-
-## 13. **Fornitori preferenziali**
-
-:::important A cosa serve
-Il tab Fornitori Preferenziali all'interno dell'anagrafica articoli di Fluentis è una funzionalità chiave per la gestione degli approvvigionamenti. Questo consente di definire in modo preciso i fornitori preferenziali per ciascun articolo, facilitando così il processo di approvvigionamento e garantendo che vengano scelti i fornitori più adatti.
-Nella sua interfaccia, la sezione è suddivisa in due parti principali. La prima parte riguarda informazioni generali sui fornitori, come la selezione di un fornitore predefinito, che diventa il principale canale d'approvvigionamento per l'articolo in questione. Qui, gli utenti possono anche impostare parametri importanti come la quantità massima ordinabile, le tolleranze sulle quantità e sui prezzi, e i dettagli relativi agli ordini di fornitura. La seconda parte offre una griglia dettagliata in cui si possono aggiungere informazioni specifiche su ciascun fornitore, come il tempo di approvvigionamento, ed eventuali note.
-:::
-
-In questo tab si possono definire, per singolo articolo, quali sono i fornitori preferenziali da cui viene solitamente approvvigionato quell'articolo, indicandone uno di default in modo che il sistema vada ad ordinare sempre dallo stesso fornitore.
-
-La finestra è composta da due sezioni:  
-1. Nella prima sezione si vanno ad indicare le informazioni relative a tutti i fornitori preferenziali, nel caso queste informazioni siano generiche, quali:
-
-**Relazione fornitore obbligatoria**: se attivo, questo flag indica che questo articolo è acquistabile solamente dal fornitore di default che verrà indicato nella griglia nella seconda parte della schermata;  
-**Numero massimo righe di prova**: sono il massimo numero di righe di ordine fornitore che si potranno fare per un dato articolo / fornitore fino a quando il flag **Blocco righe ordine** è attivo;  
-**U.M di acquisto**: in questo campo viene indicata l'unità di misura di acquisto di quel materiale;  
-**Valore massimo acquistabile**: in questo campo viene indicata la quantità massima ordinabile da quel fornitore per quell'articolo;  
-**Blocco righe ordine**: se attivo, questo flag indica che si vuole bloccare la possibilità di inserire nuove righe di ordine fornitore;  
-**Data Blocco**: indica la data in cui si attiva il blocco delle righe ordine fornitore;  
-**% tolleranza quantità ricevuta in eccesso e in difetto**: in questi due campi si andrà ad indicare la % di tolleranza sulla quantità consegnata in più e in meno dal fornitore per quel materiale;  
-**% tolleranza prezzo in eccesso e in difetto**: in questi due campi si andrà ad indicare la % di tolleranza sul prezzo fornitore in eccesso e in difetto rispetto al prezzo stabilito;  
-**consenti prezzo a zero**: se attivo, questo flag consente di emettere ordini fornitori con prezzo a zero per quell'articolo.
-
-2. Nella seconda parte della schermata si trova una griglia, nella quale si andrà ad indicare il fornitore di default ed eventuali altri fornitori che vengono utilizzarti per l'acquisto dell'articolo e i relativi dati per ogni fornitore:  
-**Fornitore**: si andrà ad indicare il conto/sottoconto/descrizione del fornitore;  
-**Default**: questo flag, se attivo indica il fornitore di default nel caso di più fornitori;  
-**Lotto economico**: in questa sezione di andrà ad indicare per ogni fornitore il lotto economico minimo e i suoi multipli;  
-**Articolo fornitore**: in questa sezione si potrà aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo;  
-**Tempo di approvvigionamento**: si andrà ad indicare per ogni fornitore la gestione ovvero il tempo necessario al fornitore per riprodurre/acquistare quell'articolo, la spedizione ovvero il tempo necessario di spedizione del materiale dal fornitore, tempo totale la somma dei due dati precedenti che va ad indicare il tempo necessario per reintegrare la scorta di materiale;  
-**Ordine di acquisto**: in questa sezione si andranno ad indicare per ogni singolo fornitore le informazioni relative agli ordini di acquisto già dettagliate sopra (U.M, blocco riga, data blocco, numero massimo di righe, valore massimo, % di tolleranza quantità ricevuta in eccesso/difetto);  
-**Produttore**: in questa sezione si andrà ad indicare il conto e la descrizione del produttore del materiale;  
-**Origine**: indica l'origine della merce, ad esempio il paese di proveniente o la provenienza di origine animale o vegetale;     
-**Controlli di accettazione**: all'interno di questo campo si andranno ad indicare eventuali controlli che è necessario eseguire all'accettazione del materiale prima di poterlo utilizzare;  
-**Variante**: in questo campo si va ad inserire l'eventuale variante del fornitore di quell'articolo;  
-**Note**: in questa sezione è possibile inserire eventuali note relative al fornitore in oggetto.
-
-## 14. **Immagini**
-
-Questo tab consente di associare all'articolo delle immagini.
-
-Attraverso il pulsante **Aggiungi immagine** è possibile andare ad inserire un immagine all'interno del tab.
-
-Questa procedura non è molto utilizzata in quanto è presente in ogni form la funzione [**Allega documenti**](/docs/guide/common/common-buttons#document-manager) che permette di allegare diversi tipi di documenti tra cui anche le immagini.
-
-## 15. **Listini fornitori**
-
-In questa tab vengono riportati tutti i listini fornitore in cui l'articolo è presente. La griglia è read only.
-
-## 16. **Listini di vendita**
-
-In questa tab vengono riportati tutti i listini clienti in cui l'articolo è presente. La griglia è read only.
-
-## 17. **Lotti e serial number**
-
-:::important A cosa serve
-Il tab "Lotti e Serial Number" dell'anagrafica articoli di Fluentis consente una gestione dettagliata dei materiali attraverso due varianti: la gestione per lotti e la gestione tramite numeri di serie.
-La gestione a lotti permette di organizzare gli articoli in gruppi omogenei che possono essere sia di acquisto che di produzione. Ogni lotto è identificato da un codice univoco che consente di rintracciarne i movimenti e le giacenze, anche in scenari multi-magazzino. All'interno della gestione a lotti, gli utenti possono definire la tipologia di prelievo (FIFO, data scadenza o manuale), selezionare il tipo di codice lotto per definirne la codifica. Questa gestione è fondamentale per articoli sensibili come quelli alimentari e farmaceutici.
-
-In alternativa, la gestione con serial number offre la possibilità di tracciare ogni singolo pezzo attraverso un numero di serie unico. Questo è particolarmente utile per articoli ad alto valore o critici, dove ogni unità necessita di un monitoraggio preciso. Le opzioni disponibili includono la modalità di generazione del numero di serie (manuale o automatica) e la validità temporale del numero stesso.
-
-Questo tab è quindi un elemento cruciale per garantire la rintracciabilità, la compliance normativa e la gestione efficiente delle scorte nel magazzino, contribuendo così a ottimizzare la logistica aziendale.
-:::
-
-L'articolo può essere gestito a Lotti o a Serial Number e di ogni codice articolo si possono creare dei sottogruppi che a loro volta possono essere gestiti a lotti o a serial number.
-
-I lotti sono dei gruppi di quantità omogenee di articoli che entrano in azienda (lotti di acquisto) o che vengono prodotti nell'azienda stessa (lotti di produzione).
-
-Ogni lotto deve poter essere identificato da un codice univoco, dal quale vengono reperite alcune informazioni che caratterizzano il lotto stesso. Questo codice può essere definito dall'azienda nella finestra **Tipo codice lotto**, oppure nel caso di lotti di acquisto si può decidere di mantenere lo stesso codice lotto del fornitore.
-
-Ogni lotto deve poter essere quindi rintracciato, e nel caso di più magazzini, grazie al codice lotto deve essere possibile tenere traccia dei dati sulle giacenze per singolo magazzino.
-
-All'interno di questo tab, si andranno a definire i parametri in base al tipo di gestione che si sceglierà di avere per quello specifico articolo e che verrà applicata tramite gli appositi flag che troviamo all'inizio di questo tab: **Gestito a lotti** e **Gestito con serial number**.
-
-### Gestione a lotti
-
-**Tipologia di prelievo del lotto**: indica se la tipologia di prelievo sia F.I.F.O., per data scadenza o manuale (quindi scelto dall’operatore);      
-**Tipo codice lotto**: in questo caso si va a selezionare il tipo codice lotto (e le relative caratteristiche impostate per crearlo) che si è definito nella finestra *Tipo codice lotto* e che è dato dalla concatenazione di più campi;       
-**Stato iniziale lotto**: solitamente il singolo lotto è caratterizzato anche da uno stato che ne va a definire la validità. Per alcuni tipi di materiali in particolare, come i prodotti alimentari e farmaceutici, lo stato è obbligatorio (per es. nell'ambito farmaceutico un lotto che necessita di analisi prima di poter essere utilizzato avrà come stato iniziale *in quarantena* fino al completamente delle analisi); per questo tipo di prodotti lo stato sarà accompagnato da una data di scadenza per evitare la vendita e l'utilizzo di merce scaduta. In base allo stato del lotto, si potrà scegliere di poterlo gestire a Rfid o a Rfid unico;       
-**Gestito RFID**: se attivato, l'articolo verrà gestito tramite la tecnologia Rfid (radiofrequenza) tramite l'applicazione;       
-**RFID unico**: se attivato, il codice RFID associato all'articolo è unico per l'articolo;      
-**Tipi di scadenza lotto**: per selezionare il tipo di scadenza che si vuole attribuire al lotto (se a data scadenza, all'ultimo giorno del mese di scadenza, al primo giorno del mese di scadenza);      
-**Modifica data di scadenza del lotto**: se attivato, consente di modificare la data di scadenza del lotto manualmente;      
-**Anticipo blocco lotto espresso in giorni**: i due campi **Avviso blocco** e **Blocco** consentono di esprimere, in giorni, quando avvisare che si sta per bloccare quel lotto e stabilire il giorno di blocco del lotto;      
-**Lotto mono fornitore**: se attivato, indica il fatto che a quel lotto apparterranno solo articoli con lo stesso fornitore;      
-
-Si può scegliere altrimenti di gestire l'articolo attraverso la **Gestione con Serial Number**. In questo caso, per ogni pezzo viene creato un numero di serie che identifica in maniera univoca quel pezzo all'interno della struttura in modo da averne traccia. Questo tipo di gestione è particolarmente adatta per articoli considerati *critici* o ad *alto valore* per i quali è necessario tenere traccia di ogni pezzo movimentato e non di una quantità intera.
-
-### Gestione con serial number
-
-**Tipo codice serial number**: per selezionare il tipo predefinito nella tabella **Tipo codice serial number**;      
-**Giorni validità del serial number**: per indicare per quanti giorni questo codice sarà valido;      
-**Generazione del serial number**: per stabilire la modalità di creazione del serial number, se manuale o automatica; quanto è impostato su automatica, significa che per tutti i movimenti con causale di *carico* e con il flag *Crea serial number* attivo (sulla causale stessa), all'inserimento del lotto i serial number verranno creati automaticamente.
-
-## 18. **Note**
-
-Questo tab consente di associare all'articolo delle note libere.
-
-## 19. **Matrici**
-
-Questo tab si attiva solo se è stata impostata una [Configurazione](/docs/configurations/tables/CPQ/principal-configurations) nella testata dell'Articolo.           
-Viene gestito nel caso in cui sia necessario gestire le matrici per la combinazione degli attributi di un articolo e permette di definire le combinazioni possibili per l'articolo.        
-Come prima cosa è necessario assegnare **Codice** univoco identificativo e **[Definizione di matrice](/docs/configurations/tables/CPQ/matrices-definition)** (che contiene il set di attributi che comporrà la matrice); in base alla definizione selezionata, nei tab sottostanti sarà possibile selezionare solo gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) validi per questa matrice. 
-
-Spostandosi nella sezione *Valori dimensione consentiti*, il passo successivo è selezionare, uno ad uno, gli Extra Data dal combo box **Attributo**. Una volta selezionato l'attributo, nella griglia *Risultati disponibili* vengono visualizzati i valori dell'Extra Data (per esempio, se selezioniamo l'attributo Taglia, in questa griglia saranno visualizzati i valori dell Extra Data: XS, S, M, L, XL, ecc.). Una volta selezionati i valori dell'attributo che vogliamo rendere validi per questa matrice, è necessario trascinarli nella griglia *Valori ammessi* per indicare che quei valori saranno validi per le combinazioni della matrice.        
-Una volta scelti i valori validi per ogni attributo, automaticamente compariranno dei nuovi tab, uno per ogni matrice di supporto e un tab per la matrice completa, che unirà le varie matrici di supporto per averne una unica con tutte le combinazioni possibili.        
-Spostandosi nei tab generati dalle matrici di supporto, è necessario flaggare le combinazioni di valori valide. Per ogni combinazione, quindi, è necessario inserire il flag solo se valida.        
-Nel tab della *Matrice completa*, invece, viene generata una matrice unica con tutte le combinazioni valide, impostate nel tab precedente.      
-La matrice ora può essere utilizzata negli oggetti per i quali è stata configurata.   
-
-## 20. **Pesi/Dimensioni**
-
-:::important A cosa serve
-Il tab Pesi e Dimensioni dell'anagrafica articoli di Fluentis è essenziale per la gestione logistica degli articoli. In questa sezione, gli utenti possono specificare dettagli riguardanti le dimensioni e il peso degli articoli, facilitando le operazioni di magazzino e approvvigionamento.         
-Questo consente l'inserimento delle dimensioni (lunghezza, larghezza, altezza) usando l'unità di misura scelta, e calcola automaticamente il volume.           
-Inoltre, è possibile definire il peso lordo, netto e specifico, informazioni importanti per la pianificazione delle spedizioni e la gestione dei costi.
-:::
-
-#### Dimensioni articolo
-
-Nella combo l'utente ha la possibilità di scegliere l'unità di misura della dimensione tra le opzioni proposte e nella zona sottostante potrà poi andare ad indicare la prima, seconda e terza dimensione e relativo valore, per poter indicare l'altezza, la larghezza e la profondità.
-
-#### Volume  
-Nella combo si andrà a scegliere l'unità di misura del volume e nel campo sottostante si andrà ad indicare il valore del volume di riferimento.
-
-#### Tipo di materiale  
-Nella combo si va a selezionare il tipo di materiale tra i tipi materiali precodificati nella relativa tabella **Tabelle > Logistica > Tipi materiale**.
-Inoltre, è possibile anche definire il tipo ri profilo del materiale con le relative dimensioni.
-
-#### Peso  
-Nella combo si andrà a selezionare l'unità di misura del peso, andando poi ad indicare nei campi sottostanti il peso lordo, il peso netto e il peso specifico. Il peso lordo e il peso netto sono i pesi che vengono riportati nei vari documenti legati all'articolo.
-
-#### Tipo unità di carico  
-Nella combo si va a definire il confezionamento dell'articolo (se pallet, europallet etc.) e nel campo sottostante si possono indicare il numero di articoli per unità di carico. In base al tipo unità di carico e agli articoli per tipo unità di carico quando si vanno a creare i piani di carico si potrà avere in automatico il calcolo delle quantità e dell'imballo per la preparazione dei mezzi. È importante notate che questi valori vengono presi in considerazione se non sono presenti dei valori generici nel tab [Confezionamento](/docs/erp-home/registers/items/create-new-item).
-
-#### Numero di colli  
-Questa sezione serve per gestire il numero di colli nei documenti; si possono gestire in base o al numero di articoli per collo, o al numero di colli per formare l'articolo impostando il flag sul parametro che si vuole utilizzare per questo calcolo; così facendo poi nei documenti verrà riportato il calcolo del numero dei colli in modo automatico.
-
-## 21. **Qualità**
-In questo tab si andranno a definire tutta una serie di informazioni utili ai processi di controllo qualità (ove ve ne fossero) per quell'articolo.
-
-#### Ubicazioni
-
-In questa sezione si andrà a definire il luogo all'interno del magazzino in cui l'articolo dovrà essere ubicato; in particolare si potranno definire:
-
-**Tipo di ubicazione**: ovvero dove vogliamo ubicare l'articolo;  
-**Ubicazione mono-articolo**: se attivo, questo flag indica che in quell'ubicazione potrà essere ubicato solamente quel tipo di articolo; non potranno quindi esserci due articoli diversi in quella stessa ubicazione contemporaneamente;  
-**Ubicazione mono-lotto**: se attivo, questo flag indica che in quell'ubicazione potrà essere ubicato non soltanto solo un tipo di articolo, ma di quell'articolo potrà essere ubicato in quel luogo solo un lotto e non più lotti dello stesso articolo contemporaneamente
-
-#### Registrazioni di magazzino
-
-In questa sezione si vanno a definire informazioni utili alla registrazione di magazzino per questo articolo, quali:  
-**Carico manuale permesso**: se attivo, questo flag indica che questo articolo potrà essere caricato manualmente in magazzino;  
-**Blocco movimento**: viene utilizzato nelle personalizzazioni per bloccare il salvataggio di una reg manuale se il relativo valore (da standard o reale dell’articolo o del lotto) supera quello specificato **Valore massimo carico/valore massimo scarico**. Non viene usato a standard;          
-**Valore massimo carico/valore massimo scarico**: vengono utilizzati nelle personalizzazioni (insieme al flag **Blocco movimento**) come valori di riferimento per bloccare il salvataggio di una reg manuale se il relativo valore (da standard o reale dell’articolo o del lotto) supera quello specificato. Non sono usati a standard;     
-**Costo da utilizzare**: in questa sotto sezione si va ad indicare come si intende valorizzare l'articolo, se considerando il costo reale oppure il costo standard;
-
-#### Acquisti
-
-In questa sezione si va ad indicare se al momento della ricezione del materiale di acquisto debbano essere effettuati degli accertamenti in entrata sul materiale oppure se questi non sono richiesti, indicando:  
-**Controlli in accettazione**:  attraverso la combo si va a selezione il tipo di controllo che deve essere fatto (se interno/non normalizzato/normalizzato/ufficiale) e attraverso nei campi affianco attraverso l'help si andrà ad indicare il Tipo di piano di controllo scegliendo tra i piani di controllo codificati all'interno della relativa form a cui si accede tramite il percorso **Qualità > Piani di controllo**.  
-**Controlli in accettazione non richiesti**: se attivo, questo flag indica che non sono al contrario richiesti controlli in accettazione. 
-
-#### Produzione
-
-In questa sezione invece si vanno a specificare informazioni relative alla produzione del materiale sempre connesse al controllo qualità, quali:
-
-**% tolleranza quantità prodotta**: in questo si andrà ad indicare la percentuale di tolleranza sulla quantità prodotta in più e/o in meno,
-
-**Scheda tecnica**: in questi campi si va a selezionare, ove sia presente, la scheda tecnica e il tipo di scheda tecnica relativi a questo articolo;
-
-**Scheda tecnica non richiesta**: nel caso in cui il materiale non necessiti di scheda tecnica, questo flag verrà attivato;
-
-#### Qualità
-
-In questa sezione si va ad indicare il lead time di analisi necessario per effettuare i controlli preliminare sull'aritcolo:  
-**Lead time analisi**: se attivo, questo flag indica che per quel materiale sono necessarie dei controlli di qualità che necessitano quindi di un periodo di tempo (in giorni) che viene indicato nel campo affianco; questo serve per stabilire dopo aver ricevuto il materiale, dopo quanti giorni è possibile utilizzarlo in produzione o nel caso di un prodotto finito dopo quanti giorni dalla sua produzione è possibile spedire il materiale.
-
-#### Post vendita
-
-In questa sezione finale si andrà ad indicare l'eventuale garanzia concessa sul materiale e i relativi giorni di garanzia stabili attivando il flag **Con Garanzia** e aggiungendo nel campo editabile il numero dei giorni di garanzia; nel caso in cui il materiale non abbia una garanzia il flag risulterà disattivato.
-
-## 22. **Spese**
-
-All'interno di questo tab è possibile andare ad aggiungere/gestire delle spese relative all'articolo che possono essere per esempio spese varie, spese di smaltimento, etc.
-
-Queste spese che vengono codificate nella relativa tabella **Spese**.
-
-La schermata si compone quindi di una griglia in cui si inseriscono la/le spese che si vogliono gestire per quell'articolo tra quelle presenti nei tipi di spesa codificate precedentemente.  
-**Tipo**: attraverso questa combo andiamo a selezionare il tipo di spesa che vogliamo aggiungere dall'elenco delle spese tramite la relativa combo;  
-**Descrizione**: campo che si compila in automatico una volta selezionato il tipo di spesa, e che mostra la descrizione della spesa prescelta;  
-**Importo**: in questo campo va inserito manualmente l'importo di quella spesa nella valuta di riferimento;  
-**Data**: attraverso questa combo, si va ad inserire la data di inizio validità della spesa per questo articolo;  
-**Data fine**: in questo campo si può andare ad inserire l'eventuale data di fine validità della spesa per quell'articolo.
-
-Nel caso sia necessario inserire più tipi di spesa, basterà spostarsi nella riga sottostante e ripetere la procedura di aggiunta della spesa appena illustrata.
+**Cuadrícula de centros empresariales**: permite vincular la base de datos del artículo a uno o más centros empresariales; 
+
+#### Campos de la cuadrícula de centros empresariales  
+> **Número**: indica el número de la fila;        
+> **Centro de costo**: permite llamar el código del centro de costo;         
+> **Descripción**: indica la descripción;         
+> **Porcentaje**: indica el porcentaje de reparto entre los diferentes centros de costo insertados en la cuadrícula (si el centro es único será el 100%);            
+> **División**: permite asociar la asociación del centro de costo al artículo en relación con la *División* empresarial seleccionada;          
+> **Fecha de inicio / Fecha de fin de validez**: permiten atribuir una validez a la relación;      
+> **Dimensión**: permite especificar la dimensión del centro empresarial (para más detalles ver la tabla de [Centros Empresariales](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers));             
+> **Categoría**: permite especificar la categoría del centro empresarial (para más detalles ver la tabla de [Centros Empresariales](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers).                      
 
 :::note Nota
-Le spese inserite in questo tab, vengono riportare nel tab *Riepiloghi* degli ordini clienti nella sezione **Spese**.
+Si el parámetro *Gestión de controlling*, presente en la pestaña *Otras configuraciones* de la tabla [**Empresa**](/docs/configurations/tables/general-settings/company) está desactivado, este campo se usa para introducir el centro de costo. 
 :::
 
-## 23. **U.M alternativa**
+**Centro de beneficios** (Centro di profitto): sólo en el caso de que el parámetro *Gestión de controlling*, presente en la pestaña *Otras configuraciones* de la tabla **Empresa**, esté desactivado, será gestionable y servirá para introducir el centro de beneficios.
 
-:::important A cosa serve
-Il tab Unità di Misura Alternative nell'anagrafica articoli di Fluentis offre un'importante funzionalità per la gestione delle diverse unità di misura associate a ciascun articolo. In questo tab è possibile definire un'unità di misura alternativa, utile per gestire articoli che possono essere trattati in più di un'unità. Questo approccio consente di semplificare le operazioni di approvvigionamento e magazzino, poiché i vari operatori possono utilizzare un'unità di misura con cui si sentono più a loro agio o che meglio si adatta alle loro esigenze operative.     
-Nel tab è presente una sezione per specificare il fattore di conversione tra l'unità di misura principale e quella alternativa, permettendo di calcolare automaticamente la quantità richiesta.     
-Le opzioni disponibili comprendono impostazioni per definire se un'unità di misura è predefinita o tassativa, nonché per stabilire quali unità di misura sono prioritarie durante le operazioni di gestione delle scorte.      
-Attraverso queste funzionalità, le aziende possono gestire con maggiore efficienza le scorte di magazzino e gli ordinativi, adattando le informazioni relative alle unità di misura alle specifiche necessità operative e migliorando l'interoperabilità tra differenti sistemi di gestione, come il Warehouse Management System (WMS).
+## 4. **approvvigionamento**
+
+:::important Para qué sirve (A cosa serve)
+La pestaña de Aprovisionamiento de la base de datos de artículos de Fluentis permite definir todos los parámetros necesarios para gestionar de manera óptima las existencias del artículo. En la primera sección, se establecen los datos generales como la existencia mínima y máxima, que indican los límites dentro de los cuales mantener las cantidades en almacén. Otros parámetros incluyen las semanas de cobertura, los días para el reabastecimiento y el punto de reorden, que establece cuándo es necesario proceder con un nuevo pedido.
+Además, se encuentran configuraciones para las impresoras de etiquetas y los tipos de informes de etiquetas, útiles para la gestión de lotes en los diferentes estados (Único, Conforme, No conforme, Cuarentena). En la segunda sección, se pueden especificar estos parámetros para cada almacén en el que esté presente el artículo, ofreciendo una gestión precisa y personalizada de las existencias.
 :::
 
-In questo tab viene indicata, dove fosse necessaria, l'unità di misura alternativa dell'articolo. 
+En esta pestaña se definen todos los datos necesarios para el aprovisionamiento del artículo en cuestión.  
+La ventana se compone de dos partes: 
+a. En la primera parte se configuran los datos para el aprovisionamiento general del artículo y no por almacén específico:  
 
-L'articolo può essere gestito in entrambe le unità di misura e creando delle relazioni tra le due.
+**Existencia mínima y existencia máxima** (Scorta minima y scorta massima): representan las cantidades mínimas que deben estar siempre presentes en almacén para ese artículo y las cantidades máximas que se pueden mantener en almacén;  
+**Días para el reabastecimiento** (Giorni per la scorta): representan el número de días necesarios para reponer al menos la existencia mínima que se ha indicado para ese artículo;  
+**Semanas de cobertura** (Settimane di copertura): se indica el intervalo de tiempo (calculado en semanas) durante el cual la existencia cubrirá la necesidad de ese artículo;  
+**Índice de cobertura** (Indice di copertura): es un campo editable en el que se inserta un porcentaje que puede o no ser considerado por el programador o el MRP para el reabastecimiento de las existencias.  
+Si en los parámetros MRP se activa el indicador *Considera índice cobertura*, en el momento de la programación el procedimiento tomará en cuenta el porcentaje indicado en este campo para reponer la disponibilidad del artículo en una cantidad suficiente para cubrir la necesidad de las n semanas que se ha decidido especificar en el campo **Semanas de cobertura**;  
+**Punto de reorden** (Punto di riordino): aquí se indica a partir de qué cantidad es necesario proceder con el reabastecimiento de ese artículo;  
+**Días para el reabastecimiento** (Giorni per il riordino): días necesarios para el reabastecimiento de material en almacén;  
+**Intervalo de tiempo de revisión del punto de reorden**: se indica cada cuánto tiempo se debe revisar y actualizar el punto de reorden;  
+**Fecha del último cálculo del punto de reorden** (Data ultimo calcolo punto di riordino): se indica la fecha relativa a la última vez que se realizó el análisis y se estableció el punto de reorden indicado anteriormente.  
 
-**Unità di misura** e **Descrizione**: si indicherà quindi l'unità di misura alternativa con la sua descrizione;  
-**Fattore di conversione**: qui si va a definire il fattore di conversione tra l'unità di misura principale e l'unità di misura alternativa; la *quantità alternativa* nei documenti viene calcolata in base al settaggio effettuato nei [Parametri iniziali di magazzino](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)  
-**Default**: se attivo, questo flag indica qual'è l'unità di misura di riferimento tra N alternative possibili per articolo;  
-**Tassativa**: se attivo, questo flag determina l'invariabilità del fattore di conversione. Quando si va a inserire l'unità di misura gestionale tramite il fattore di conversione il sistema calcoli automaticamente l'unità di misura alternativa, e viceversa. Se flag Tassativa non è attivo, quell'unità di misura alternativa si può impostare come unità di misura primaria, indipendentemente dal flag **Prioritaria**;     
-**Prioritaria**: se attivo, l’aggiornamento della *quantità gestionale* non cambia la *quantità alternativa* perché quest’ultima ha la priorità, mentre nel caso in cui venga modificata la *quantità alternativa*, la *quantità gestionale* viene ricalcolata in funzione della quantità alternativa sulla base del fattore di conversione;        
-**Default WMS**: se attivo, indica che questa unità di misura sarà quella utilizzata di default all'interno del WMS.
+Luego hay dos secciones llamadas:  
+- **Impresoras de etiquetas**: permite elegir las impresoras que se propondrán por defecto para imprimir las etiquetas de los lotes para los diferentes *Estados del lote*; será posible elegir entre la impresora para el estado de lote *Único*, *Conforme*, *No conforme*, y *Cuarentena*.
 
-## 24. **Varianti**
+- **Tipos de informes de etiquetas**: permite especificar los informes por defecto a imprimir para los lotes en los diferentes *Estados del lote*; será posible elegir diferentes informes según el estado del lote *Único*, *Conforme*, *No conforme*, y *Cuarentena*.
 
-:::important A cosa serve
-Il tab Varianti dell'anagrafica articoli di Fluentis fornisce la funzionalità per inserire e gestire le varianti di un dato articolo. Questa opzione è particolarmente utile quando è necessario creare un nuovo articolo che differisca solo marginalmente da uno già esistente. In questi casi, la creazione di una variante è preferibile rispetto alla creazione di un nuovo articolo, soprattutto quando le caratteristiche principali dell'articolo originale rimangono sostanzialmente inalterate.       
-Un esempio pratico di questa funzionalità si può osservare nel settore della moda: si potrebbe avere un articolo denominato "maglia", da cui si creano varianti per diverse taglie e colori, mantenendo le caratteristiche fondamentali dell'articolo originale.
+b. En la segunda parte de la ventana, se indicarán los diferentes almacenes donde se puede encontrar el artículo y, eventualmente, es posible definir algunos de los datos mencionados anteriormente (existencia mínima/máxima y días para el reabastecimiento, punto de reorden y días para el reabastecimiento, impresión de etiquetas únicas/conformes/no conformes/cuarentena) para cada almacén específico. (ej. la existencia mínima o la existencia máxima que se puede tener de ese artículo en ese almacén específico, y así sucesivamente para el resto de la información).
 
-Il tab è strutturato in due griglie: la prima contiene i dettagli delle varianti, come codice, descrizione, scorta minima e massima, punto di riordino, giorni di scorta, costo medio e prezzo di vendita. Queste informazioni sono quelle che differenziano ogni variante dall'articolo principale. Nella seconda griglia, in caso di disponibilità, si può anche inserire un barcode specifico per la variante.
+## 5. **categoria sconti acquisti**  
 
-In sintesi, il tab Varianti rappresenta un potente strumento per la gestione delle differenze minori tra articoli simili, facilitando la registrazione e l'amministrazione delle scorte.
+En esta pestaña se introducen las **Categorías de descuento** con las cuales se adquiere el artículo. Estas categorías son utilizadas por la **Gestión de precios** del módulo de compras.  
+
+## 6. **categoria sconti vendite**  
+
+En esta pestaña se introducen las **Categorías de descuento** con las cuales se vende el artículo. Estas categorías son utilizadas por la **Gestión de precios** del módulo de ventas. 
+
+## 7. **clienti**
+
+En esta pestaña es posible asociar al artículo la lista de clientes que lo han adquirido.
+
+**Tipo de muestreo** (Tipo campionamento): combo para definir la modalidad por defecto de muestreo de muestras de un pedido de producción para ese artículo (por ejemplo, una muestra cada 100 piezas, o 1 muestra cada 3 pedidos, etc.). Los tipos de muestreo se codifican previamente en la tabla en la ruta **Tablas > Logística**.
+
+Cuadrícula superior:  
+**Cliente** (Cliente): se indica la cuenta/subcuenta y descripción del cliente;  
+**Lote económico** (Lotto economico): se indica el lote económico (la cantidad mínima adquirible por el cliente) con la unidad de medida correspondiente;  
+**Artículo del cliente** (Articolo cliente): en esta sección se puede indicar el código y la descripción que el cliente atribuye al artículo en su base de datos; al indicar su referencia en esta sección, esta será reportada en todos los documentos relacionados con ese cliente para ese artículo;  
+**Sector de uso** (Settore uso): aquí se indica el sector de uso del cliente;  
+**Tipo de muestreo** (Tipo di campionamento): en este caso se selecciona el tipo de muestreo del artículo en función del cliente al que está asociado, que podría ser diferente al seleccionado en el combo inicial de la ventana;   
+**Ficha técnica** (Scheda tecnica): en caso de que ya exista una ficha técnica elaborada para este artículo, en esta sección se indican los detalles del documento;  
+**Prueba final** (Collaudo finale): en este campo se ingresan las eventuales informaciones relacionadas con el tipo, año, código y descripción de la prueba final;  
+**Variante** (Variante): en este campo se inserta la posible variante de ese artículo, seleccionándola a través del combo que contiene las variantes previamente codificadas en la tabla **Variantes Artículo**;  
+**Notas** (Note): sección en la que se pueden insertar eventuales notas.
+
+La cuadrícula inferior puede contener información sobre los [Datos Extra](/docs/configurations/utility/extra-data/extradata/search-extradata).
+
+#### Botones específicos  
+> **inserisci clienti**: permite añadir un nuevo cliente;    
+> **cancella clienti**: permite borrar el registro de un cliente insertado anteriormente.
+
+## 8. **codici barcode**
+
+Dentro de esta pestaña se pueden ingresar códigos alternativos, también llamados códigos de barras, que representan el artículo.  
+Los códigos de barras son códigos que encierran algunas de las principales informaciones relacionadas con la codificación del artículo al que se asocian y son útiles para las operaciones de almacén. Estos códigos son leídos a través de equipos específicos llamados Móviles mediante rayos láser o luces LED.  
+Los códigos de barras pueden ser de varias tipologías.  
+Las dos tipologías gestionadas por la base de datos son:
+- el EAN13 (significa que el código de barras puede tener una longitud máxima de 13 caracteres)     
+- el EAN128 (significa que el código de barras debe tener una longitud de cifras par).
+
+En **Fluentis ERP** no hay parámetros ya definidos que indiquen cómo configurar el código de barras de modo que este respete las normas relativas al EAN13 y 128, pero se pueden aplicar algoritmos personalizados que sigan el estándar y que controlen el código de barras que se inserta, verificando que respete las normas anteriormente citadas.  
+El formulario está compuesto por una cuadrícula donde se puede insertar un **Nuevo** código de barras, a través del botón **Insertar** en la barra de ribbon, o yendo directamente a una nueva fila.  
+En el campo **Tipo de código de barras** se selecciona, a través del combo correspondiente, el tipo de código de barras que se desea codificar y en el campo **Código de barras** se inserta el código.
+
+#### Botones específicos  
+> **validation**: al presionar este botón, el sistema verifica que el código cumpla con las normas mencionadas anteriormente sobre la longitud que debe tener, según el tipo de código que se está insertando;  
+> **Eliminar códigos de barras (Cancella codici barcode)**: permite eliminar un código de barras previamente insertado.
+
+## 9. **confezionamento**
+
+:::important Para qué sirve (A cosa serve)
+La pestaña de confeccionamiento de la base de datos de artículos de Fluentis es esencial para definir la modalidad de confección de un artículo, especificando los tipos de Unidades de Carga (UDC) que lo componen. Esta configuración puede tener una estructura en árbol, en la que un pallet, por ejemplo, puede contener diferentes cajas, cada una de las cuales puede contener un cierto número de artículos.
+
+Definir con precisión el confeccionamiento es fundamental, ya que permite generar automáticamente las UDC necesarias para el envío en el momento en que se prepara un pedido. 
+
+Además, es posible asociar unidades de medida específicas para el volumen y definir la descripción para cliente o proveedor, permitiendo así una gestión personalizada según las necesidades específicas de cada cliente. Por lo tanto, esta pestaña se configura como una herramienta clave para optimizar la logística y la gestión de almacenes.
 :::
 
-In questo tab si possono inserire e/o vedere le varianti di un dato articolo. A volte se un nuovo articolo che si ha bisogno di creare è molto simile a uno già presente e si differenzia solo per una minima caratteristica che non va ad avere un grosso impatto sulle informazioni presenti nei vari tab dell'articolo esistente, in questo caso non si va a creare un nuovo articolo ma semplicemente si vanno a creare delle varianti di quell'articolo.
+A través de esta pestaña se define la modalidad de confeccionamiento del artículo, indicando cuáles son los tipos de unidades de carga que lo componen.
 
-Un *esempio* può essere quello del settore fashion: si inserisce l'articolo maglia e poi si possono creare le varianti per taglia e per colore, ma le caratteristiche principali dell'articolo maglia restano le stesse.
+Puede ser una estructura en árbol, ya que, por ejemplo, podemos establecer como método de confección el pallet, que puede contener un número determinado de cajas, que a su vez pueden contener un número determinado de artículos.
 
-Il tab è costituito da due griglie. Nella prima griglia viene inserita la variante con le informazioni relative al codice e descrizione, scorta minima e massima, punto di riordino e i relativi giorni, i giorni per la scorta, il costo ultimo, medio, standard e infine il prezzo di vendita.
+Definir el confeccionamiento permite crear a través del sistema las unidades de carga necesarias para el envío en el momento en que debemos preparar un pedido para su envío;
 
-Le informazioni che si trovano nella griglia sono le uniche informazioni che differenziano la variante dall'articolo principale; per tutte le informazione che non sono presenti nella griglia basterà fare affidamento a quelle presenti nei vari tab di quell'articolo.
+La ventana se compone de una cuadrícula en la que se insertan las siguientes informaciones:
 
-Nella griglia sottostante si potrà andare ad inserire, se presente, anche il barcode specifico di quella variante. 
+**Tipo de unidad de carga / Tipo de unidad de carga contenido** (Tipo unità di carico / Tipo unità di carico  contenuto): en estos campos se ingresa el tipo de unidad de carga, es decir, el tipo de embalaje y el tipo de contenido seleccionando la opción correspondiente a través del combo; los datos presentes en los combos de estos campos han sido previamente codificados en la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types);  
+**Cantidad** (Quantità): en este campo se indica la cantidad que esa unidad de carga puede contener;  
+**Prioridad** (Priorità): en este campo se indica la prioridad del confeccionamiento (por ejemplo, si tenemos un pallet con cajas dentro, es necesario dar prioridad para que cuando el sistema cree las unidades de carga sepa ya la prioridad del confeccionamiento);  
+**Cuenta / Subcuenta / Descripción del cliente/proveedor** (Conto / Sottoconto / Descrizione cliente/fornitore): en este campo se inserta el cliente/proveedor que requiere este tipo de unidad de carga. Por lo tanto, es posible definir diferentes unidades de carga a nivel de cliente;  
+**Dimensión de Unidad de medida** (Dimensione Unità di misura): en este campo se selecciona la unidad de medida para las dimensiones de la unidad de carga; al ingresar el **Tipo de unidad de carga**, este valor es tomado de la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types);   
+**Altura / Ancho / Profundidad** (Altezza / Larghezza / Profondità): en estos campos se especifican las dimensiones de la unidad de carga completa; al ingresar el **Tipo de unidad de carga**, estos valores se toman de la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types) sólo si también el indicador **Volumen variable** (presente en Tipos de unidad de carga) está desactivado; de lo contrario, los datos no serán propuestos y deberán ser ingresados manualmente por el operador, dada la imposibilidad de prever cómo se colocan los artículos en la unidad de carga seleccionada. En cualquier caso, pueden ser modificados manualmente, y a cada modificación se recalculará también el **Volumen**;  
+**Unidad de medida de volumen** (Unità di misura volume): en este campo se indica la unidad de medida del volumen de la unidad de carga; al ingresar el **Tipo de unidad de carga**, este valor es tomado de la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types);   
+**Volumen** (Volume): en este campo se indica el volumen de la unidad de carga completa. Si el indicador **Volumen variable** está activo, al ingresar el **Tipo de unidad de carga**, este valor se calcula sumando el volumen de la unidad de carga vacía presente en la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types) y el valor del volumen del artículo (tomado del campo *Volumen* presente en la pestaña Pesos / Dimensiones de la base de datos de artículos multiplicado por la cantidad relativa) del volumen de las unidades de carga contenidas; en cambio, si el indicador **Volumen variable** no está activo, al ingresar el **Tipo de unidad de carga**, se reportará directamente el valor del volumen de la unidad de carga vacía presente en la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types), dado que este no es variable. En caso de que se modifiquen las dimensiones de **Altura / Ancho / Profundidad**, el valor del **Volumen** se recalculará en consecuencia. El **volumen** también se recalculará si hay variaciones en el volumen del **Tipo de unidad de carga contenido**. Este valor puede siempre ser modificado manualmente;  
+**Volumen variable (Volume variabile)**: indica que se trata de una unidad de carga con volumen variable, por lo que el volumen total variará según lo que se cargue y cómo se cargue; es un campo de solo lectura valorizable en la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types);  
+**unità di misura peso**: en este campo se indica la unidad de medida del peso de la unidad de carga; al ingresar el **Tipo de unidad de carga**, este valor es tomado de la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types);      
+**Peso** (Peso): en este campo se indica el peso de la unidad de carga completa; al ingresar el **Tipo de unidad de carga** y la **Cantidad**, este valor se calcula sumando el peso de la unidad de carga vacía presente en la tabla [Tipos de unidad de carga](/docs/configurations/tables/logistics/loading-unit-types) y el peso de los artículos (tomado del campo *Peso bruto* presente en la pestaña Pesos / Dimensiones de la base de datos de artículos multiplicado por la cantidad relativa) o del peso de las unidades de carga contenidas. Este valor puede siempre ser modificado manualmente;  
+**Tolerancia de dimensiones/Tolerancia de cantidad**: son utilizados en personalizaciones y serían útiles cuando, desde un plan de carga, se crea una lista de recogida de UDC con las unidades de carga disponibles en almacén. El procedimiento debería insertar en la lista UDC, unidades de carga con dimensiones o cantidades que difieren de las especificadas en el confeccionamiento por los porcentajes especificados. Actualmente, no se utilizan en estándar;                
+**Dimensiones obligatorias**: si este indicador está activo, significa que las dimensiones indicadas son obligatorias;  
+**Unidad de carga obligatoria**: si este indicador está activo, significa que este artículo debe obligatoriamente ser gestionado mediante unidad de carga en las declaraciones de producción y en la recepción de mercancías del WMS;  
+**Descripción del tipo de unidad de carga / Descripción del tipo de unidad de carga contenido**: en estos campos, una vez ingresado el tipo de unidad de carga y el tipo de unidad de carga contenido, se visualizarán automáticamente las descripciones de los tipos seleccionados.
+
+## 10. **costi**
+
+:::important Para qué sirve (A cosa serve)
+En la pestaña Costos de la base de datos de artículos de Fluentis, los usuarios pueden registrar varios tipos de costos asociados, incluidos el costo más reciente y el costo medio ponderado, que se actualizan automáticamente según los movimientos de almacén. El costo más reciente representa el último precio de compra registrado, mientras que el costo medio es el resultado de los movimientos de almacén, útil para calcular el valor de las existencias.       
+La pestaña también permite definir un costo estándar, utilizado como referencia durante el año y generalmente actualizado anualmente. Además, es posible ingresar el precio de venta, del cual se parte para la creación de listas de venta.          
+Esta información es fundamental para la valorización de las existencias de almacén y para la planificación financiera, contribuyendo a una gestión más efectiva de los artículos en almacén.
+:::
+
+Dentro de esta pestaña se ingresan diferentes costos asociados al artículo.
+
+#### Campos específicos  
+**Costo más reciente** (Costo ultimo) y el **Costo medio** (Costo medio): por costo más reciente se entiende el último costo de compra (el más reciente), mientras que por costo medio ponderado se entiende el costo medio que resulta de los movimientos de almacén. Para ambos costos, la causal utilizada para el movimiento del almacén debe tener el indicador de actualización *Costo medio/Costo último* activado y también el indicador de *Actualizar costo del artículo* y sobre *Interés fiscal*, de este modo los movimientos relativos serán tenidos en cuenta para el cálculo de los costos.   
+**Costo estándar/costo estándar posterior** (Costo standard/costo standard successivo): el costo estándar es un costo establecido manualmente o por el procedimiento de cálculo de costo y señala el costo de referencia para un determinado artículo a usar durante el año. Generalmente, es un costo que se actualiza al inicio o al final del año. Para los artículos de compra, suele corresponder al costo medio, mientras que para los demás artículos es calculado por la [Procedura de Cálculo de Costos](/docs/controlling/cost-calculation/cost) que se encuentra en el área de *Controlling*, como suma de costos de materiales y costos de fases de producción.  
+Todos estos costos pueden ser utilizados para la valorización de la lista de materiales, de las existencias de almacén o (para los artículos de compra) para la valorización de los pedidos de producción (y los movimientos de carga relacionados) cuando se carga en almacén el artículo de un pedido de producción.  
+**Precio de venta** (Prezzo di vendita): precio base del que se puede comenzar a crear una lista de venta en caso de que se considere una lista nacional inicial, por ejemplo. En el caso de que no haya listas para este artículo, en los documentos, este artículo tomará este precio. (salvo en los documentos de devolución en los que el artículo toma por defecto el precio indicado en el costo más reciente a verificar bien) (no se utiliza mucho).  
+**Categoría de descuento/Configuración de rangos de precios/Formulas de actualización de políticas de descuento**: son datos puramente comerciales que sirven para la actualización de los precios.  
+Se utilizará en los documentos, no reportará nunca los descuentos provenientes de las listas en las que está contenido y no se calcularán las comisiones sobre las ventas de este artículo.
+
+## 11. **descrizione articoli in lingua**
+
+Esta pestaña permite ingresar la **Descripción en idioma** y la **Descripción 2** del artículo en los diferentes idiomas de trabajo utilizados.
+
+#### Campos específicos  
+**Idioma** (Lingua): a través de este combo se selecciona el idioma que se desea agregar; los idiomas entre los que se puede seleccionar han sido previamente codificados en la tabla correspondiente;  
+**Descripción en idioma** (Descrizione in lingua): en este campo se inserta manualmente la descripción del artículo en el idioma elegido;  
+**Descripción 2** (Descrizione 2): en este campo se inserta manualmente la descripción secundaria del artículo en el idioma elegido.
+
+## 12. **extra data**
+
+Se remite a la documentación relacionada con los [Datos Extra](/docs/configurations/utility/extra-data/extradata/search-extradata).
+
+## 13. **fornitori preferenziali**
+
+:::important Para qué sirve (A cosa serve)
+La pestaña Proveedores Preferenciales dentro de la base de datos de artículos de Fluentis es una funcionalidad clave para la gestión de aprovisionamientos. Esta permite definir de manera precisa los proveedores preferenciales para cada artículo, facilitando así el proceso de aprovisionamiento y garantizando que se elijan los proveedores más adecuados.
+En su interfaz, la sección está dividida en dos partes principales. La primera parte trata sobre información general de los proveedores, como la selección de un proveedor predeterminado, que se convierte en el canal principal de aprovisionamiento para el artículo en cuestión. Aquí, los usuarios también pueden establecer parámetros importantes como la cantidad máxima ordenable, las tolerancias sobre cantidades y precios, y los detalles relativos a los pedidos de suministro. La segunda parte ofrece una cuadrícula detallada donde se pueden añadir información específica sobre cada proveedor, como el tiempo de aprovisionamiento y eventuales notas.
+:::
+
+En esta pestaña se pueden definir, para cada artículo, cuáles son los proveedores preferenciales de los que generalmente se aprovisiona ese artículo, indicando uno por defecto para que el sistema siempre haga el pedido al mismo proveedor.
+
+La ventana se compone de dos secciones:  
+1. En la primera sección se indican las informaciones relativas a todos los proveedores preferenciales, en caso de que estas informaciones sean generales, tales como:
+
+**Relación de proveedor obligatoria**: si está activo, este indicador indica que este artículo sólo puede ser adquirido del proveedor predeterminado que será indicado en la cuadrícula en la segunda parte de la pantalla;  
+**Número máximo de líneas de prueba**: es el número máximo de líneas de pedido de proveedor que se podrán hacer para un artículo / proveedor determinado hasta que el indicador **Bloqueo de líneas de pedido** esté activo;  
+**U.M de compra**: en este campo se indica la unidad de medida de compra de ese material;  
+**Valor máximo comprable**: en este campo se indica la cantidad máxima que se puede ordenar a ese proveedor para ese artículo;  
+**Bloqueo de líneas de pedido**: si está activo, este indicador indica que se desea bloquear la posibilidad de ingresar nuevas líneas de pedido del proveedor;  
+**Fecha de bloqueo**: indica la fecha en la que se activa el bloqueo de las líneas de pedido del proveedor;  
+**% de tolerancia sobre la cantidad recibida en exceso y en defecto**: en estos dos campos se indica el porcentaje de tolerancia sobre la cantidad entregada en más y en menos por el proveedor para ese material;  
+**% de tolerancia en precio en exceso y en defecto**: en estos dos campos se indica el porcentaje de tolerancia sobre el precio del proveedor en exceso y en defecto respecto al precio establecido;  
+**Permitir precio cero**: si está activo, este indicador permite emitir pedidos a proveedores con precio cero para ese artículo.
+
+2. En la segunda parte de la pantalla se encuentra una cuadrícula, donde se indicará el proveedor predeterminado y eventuales otros proveedores que se utilizan para la compra del artículo y los datos relativos a cada proveedor:  
+**Proveedor** (Fornitore): se indica la cuenta/subcuenta/descrición del proveedor;  
+**default**: este indicador, si está activo, indica el proveedor predeterminado en caso de múltiples proveedores;  
+**Lote económico** (Lotto economico): en esta sección se indicará para cada proveedor el lote económico mínimo y sus múltiplos;  
+**Artículo del proveedor** (Articolo fornitore): en esta sección se puede agregar el código y la descripción que el proveedor utiliza para identificar el artículo;  
+**Tiempo de aprovisionamiento** (Tempo di approvvigionamento): se indica para cada proveedor la gestión, es decir, el tiempo necesario para que el proveedor reproduzca/adquiera ese artículo, la remisión, que es el tiempo necesario para el envío del material desde el proveedor, y el tiempo total, que es la suma de los dos datos anteriores que indica el tiempo necesario para reabastecer el stock de material;  
+**Pedido de compra**: en esta sección se indicarán para cada proveedor las informaciones relativas a los pedidos de compra ya detalladas arriba (U.M, bloqueo de línea, fecha de bloqueo, número máximo de líneas, valor máximo, % de tolerancia sobre la cantidad recibida en exceso/déficit);  
+**produttore**: en esta sección se indicará la cuenta y la descripción del productor del material;  
+**Origen**: indica el origen de la mercancía, por ejemplo, el país de procedencia o la procedencia de origen animal o vegetal;     
+**Controles de aceptación (Controlli di accettazione)**: en este campo se indicarán eventuales controles que deben realizarse al aceptar el material antes de poder utilizarlo;  
+**Variante**: en este campo se inserta la eventual variante del proveedor de ese artículo;  
+**note**: en esta sección es posible ingresar eventuales notas relativas al proveedor en cuestión.
+
+## 14. **immagini**
+
+Esta pestaña permite asociar al artículo imágenes.
+
+A través del botón **aggiungi immagine** es posible insertar una imagen dentro de la pestaña.
+
+Este procedimiento no se utiliza mucho, ya que en cada formulario existe la función [**Adjuntar documentos**](/docs/guide/common/common-buttons#document-manager) que permite adjuntar diversos tipos de documentos, incluidas imágenes.
+
+## 15. **listini fornitori**
+
+En esta pestaña se indican todas las listas de proveedores en las que está presente el artículo. La cuadrícula es de solo lectura.
+
+## 16. **listini di vendita**
+
+En esta pestaña se indican todas las listas de clientes en las que está presente el artículo. La cuadrícula es de solo lectura.
+
+## 17. **lotti e serial number**
+
+:::important Para qué sirve (A cosa serve)
+La pestaña "Lotes y Números de Serie" de la base de datos de artículos de Fluentis permite una gestión detallada de los materiales a través de dos variantes: la gestión por lotes y la gestión mediante números de serie.
+La gestión por lotes permite organizar los artículos en grupos homogéneos que pueden ser tanto de compra como de producción. Cada lote está identificado por un código único que permite rastrear sus movimientos y existencias, incluso en escenarios multi-almacén. Dentro de la gestión por lotes, los usuarios pueden definir el tipo de extracción (FIFO, fecha de caducidad o manual), seleccionar el tipo de código de lote para definir su codificación. Esta gestión es fundamental para artículos sensibles como los alimentarios y farmacéuticos.
+
+Alternativamente, la gestión con números de serie ofrece la posibilidad de rastrear cada pieza individual a través de un número de serie único. Esto es particularmente útil para artículos de alto valor o críticos, donde cada unidad necesita un monitoreo preciso. Las opciones disponibles incluyen la modalidad de generación del número de serie (manual o automática) y la validez temporal del número mismo.
+
+Esta pestaña es, por lo tanto, un elemento crucial para garantizar la trazabilidad, el cumplimiento normativo y la gestión eficiente de las existencias en el almacén, contribuyendo así a optimizar la logística empresarial.
+:::
+
+El artículo puede ser gestionado por Lotes o por Números de Serie, y de cada código de artículo se pueden crear subgrupos que a su vez pueden ser gestionados por lotes o por números de serie.
+
+Los lotes son grupos de cantidades homogéneas de artículos que entran en la empresa (lotes de compra) o que son producidos en la propia empresa (lotes de producción).
+
+Cada lote debe ser identificado por un código único, del cual se obtienen algunas informaciones que caracterizan el lote mismo. Este código puede ser definido por la empresa en la ventana **Tipo de código de lote**, o en el caso de lotes de compra, se puede decidir mantener el mismo código de lote del proveedor.
+
+Cada lote debe poder ser rastreado, y en el caso de múltiples almacenes, gracias al código de lote debe ser posible hacer un seguimiento de los datos sobre las existencias por cada almacén.
+
+Dentro de esta pestaña se definirán los parámetros en base al tipo de gestión que se elija tener para ese artículo específico, y que será aplicada a través de los indicadores que encontramos al inicio de esta pestaña: **gestito a lotti** y **gestito con serial number**.
+
+### Gestión por lotes
+
+**Tipo de extracción del lote (Tipologia di prelievo del lotto)**: indica si el tipo de extracción es F.I.F.O., por fecha de caducidad o manual (es decir, elegido por el operador);      
+**tipo codice lotto**: en este caso se selecciona el tipo de código de lote (y las características relacionadas establecidas para crearlo) que se ha definido en la ventana *Tipo de código de lote* y que es dado por la concatenación de varios campos;       
+**Estado inicial del lote (Stato iniziale lotto)**: generalmente, un solo lote también está caracterizado por un estado que define su validez. Para algunos tipos de materiales en particular, como productos alimentarios y farmacéuticos, el estado es obligatorio (por ejemplo, en el ámbito farmacéutico, un lote que necesita análisis antes de poder ser utilizado estará en estado *en cuarentena* hasta que se completen los análisis); para este tipo de productos, el estado será acompañado por una fecha de caducidad para evitar la venta y el uso de mercancías caducadas. Según el estado del lote, se podrá elegir gestionar el lote por RFID o por RFID único;       
+**Gestionado por RFID** (Gestito RFID): si se activa, el artículo será gestionado mediante la tecnología RFID (radiofrecuencia) a través de la aplicación;       
+**RFID único** (RFID unico): si se activa, el código RFID asociado al artículo es único para el artículo;      
+**Tipos de caducidad del lote** (Tipi di scadenza lotto): para seleccionar el tipo de caducidad que se quiere atribuir al lote (si es por fecha de caducidad, al último día del mes de caducidad, al primer día del mes de caducidad);      
+**Modificar fecha de caducidad del lote** (Modifica data di scadenza del lotto): si se activa, permite modificar manualmente la fecha de caducidad del lote;      
+**Anticipo del bloqueo del lote expresado en días** (Anticipo blocco lotto espresso in giorni): los dos campos **Aviso de bloqueo** y **Bloqueo** permiten expresar, en días, cuándo avisar que se va a bloquear ese lote y establecer el día de bloqueo del lote;      
+**Lote mono proveedor (Lotto mono fornitore)**: si se activa, indica que a ese lote pertenecerán solo artículos con el mismo proveedor;     
+
+Se puede optar por gestionar el artículo mediante la **Gestión con Número de Serie (Gestione con Serial Number)**. En este caso, para cada pieza se crea un número de serie que identifica de manera única esa pieza dentro de la estructura, permitiendo su rastreo. Este tipo de gestión es particularmente adecuada para artículos considerados *críticos* o de *alto valor* para los que es necesario mantener un seguimiento de cada pieza movida y no de una cantidad completa.
+
+### Gestión con número de serie
+
+**tipo codice serial number**: para seleccionar el tipo predeterminado en la tabla **Tipo de código de número de serie**;      
+**Días de validez del número de serie** (Giorni validità del serial number): para indicar cuántos días será válido este código;      
+**Generación del número de serie** (Generazione del serial number): para establecer la modalidad de creación del número de serie, si manual o automática; cuando se configura como automática, significa que para todos los movimientos con causal de *carga* y con el indicador *Crear número de serie* activo (en la causal misma), al ingresar el lote, los números de serie se crearán automáticamente.
+
+## 18. **note**
+
+Esta pestaña permite asociar al artículo notas libres.
+
+## 19. **Matrices (Matrci)**
+
+Esta pestaña se activa solo si se ha establecido una [Configuración](/docs/configurations/tables/CPQ/principal-configurations) en la cabecera del Artículo.           
+Se gestiona en caso de que sea necesario gestionar las matrices para la combinación de atributos de un artículo y permite definir las combinaciones posibles para el artículo.        
+Como primer paso, es necesario asignar un **Código** único identificativo y una **[Definición de matriz](/docs/configurations/tables/CPQ/matrices-definition)** (que contiene el conjunto de atributos que compondrá la matriz); en función de la definición seleccionada, en las pestañas siguientes será posible seleccionar solo los [Datos Extra](/docs/configurations/utility/extra-data/extradata/search-extradata) válidos para esta matriz. 
+
+Al desplazarse a la sección *Valores de dimensión permitidos*, el siguiente paso es seleccionar, uno por uno, los Datos Extra del combo box **Atributo**. Una vez seleccionado el atributo, en la cuadrícula *Resultados disponibles* se mostrarán los valores de los Datos Extra (por ejemplo, si seleccionamos el atributo Talla, en esta cuadrícula se mostrarán los valores del Datos Extra: XS, S, M, L, XL, etc.). Una vez seleccionados los valores del atributo que queremos hacer válidos para esta matriz, es necesario arrastrarlos a la cuadrícula *Valores permitidos* para indicar que esos valores serán válidos para las combinaciones de la matriz.        
+Una vez elegidos los valores válidos para cada atributo, automáticamente aparecerán nuevas pestañas, una para cada matriz de soporte y una pestaña para la matriz completa, que unirá las diversas matrices de soporte para tener una única con todas las combinaciones posibles.        
+Al desplazarse en las pestañas generadas por las matrices de soporte, es necesario marcar las combinaciones de valores válidas. Para cada combinación, se necesitará insertar la marca solo si es válida.        
+En la pestaña de la *Matriz completa*, en cambio, se genera una matriz única con todas las combinaciones válidas, establecidas en la pestaña anterior.      
+La matriz ahora puede ser utilizada en los objetos para los cuales fue configurada.   
+
+## 20. **pesi/dimensioni**
+
+:::important Para qué sirve (A cosa serve)
+La pestaña Pesos y Dimensiones de la base de datos de artículos de Fluentis es esencial para la gestión logística de los artículos. En esta sección, los usuarios pueden especificar detalles acerca de las dimensiones y el peso de los artículos, facilitando las operaciones de almacén y aprovisionamiento.         
+Esto permite la inclusión de las dimensiones (longitud, ancho, altura) utilizando la unidad de medida elegida, y calcula automáticamente el volumen.           
+Además, es posible definir el peso bruto, neto y específico, información importante para la planificación de envíos y la gestión de costos.
+:::
+
+#### Dimensiones del artículo (Dimensioni articolo)
+
+En el combo, el usuario tiene la posibilidad de elegir la unidad de medida de la dimensión entre las opciones propuestas y en la sección siguiente podrá indicar la primera, segunda y tercera dimensión y su respectivo valor, para poder indicar la altura, el ancho y la profundidad.
+
+#### Volumen  
+En el combo se selecciona la unidad de medida del volumen y en el campo debajo se indica el valor del volumen de referencia.
+
+#### Tipo de material (Tipo di materiale)  
+En el combo se selecciona el tipo de material entre los tipos de materiales precodificados en la tabla correspondiente **Tablas > Logística > Tipos de material**. Además, también se puede definir el tipo de perfil del material con las dimensiones relativas.
+
+#### Peso  
+En el combo se selecciona la unidad de medida del peso, y luego en los campos debajo se indican el peso bruto, el peso neto y el peso específico. El peso bruto y el peso neto son los pesos que se reportan en los diversos documentos relacionados con el artículo.
+
+#### Tipo de unidad de carga (Tipo unità di carico)  
+En el combo se define el embalaje del artículo (si pallet, europallet, etc.) y en el campo debajo se pueden indicar el número de artículos por unidad de carga. Según el tipo de unidad de carga y los artículos por tipo de unidad de carga, al crear los planes de carga se podrá tener automáticamente el cálculo de las cantidades y el embalaje para la preparación de los medios. Es importante notar que estos valores se toman en consideración si no hay valores genéricos presentes en la pestaña [Confeccionamiento](/docs/erp-home/registers/items/create-new-item).
+
+#### Número de bultos (Numero di colli)  
+Esta sección sirve para gestionar el número de bultos en los documentos; se pueden gestionar según el número de artículos por bulto o el número de bultos para formar el artículo configurando el indicador en el parámetro que se desea utilizar para este cálculo; de esta manera, en los documentos se reportará el cálculo del número de bultos de manera automática.
+
+## 21. **qualità**
+En esta pestaña se definirán toda una serie de informaciones útiles para los procesos de control de calidad (donde existan) para ese artículo.
+
+#### Ubicaciones
+
+En esta sección se definirá el lugar dentro del almacén donde deberá ser ubicado el artículo; en particular, se podrán definir:
+
+**Tipo de ubicación**: es decir, dónde queremos ubicar el artículo;  
+**Ubicación mono-artículo**: si está activo, este indicador significa que en esa ubicación solo podrá ser ubicado ese tipo de artículo; no podrán existir dos artículos diferentes en esa misma ubicación simultáneamente;  
+**ubicazione mono-lotto**: si está activo, este indicador significa que en esa ubicación no solo podrá estar ubicado un solo tipo de artículo, sino que de ese artículo solo podrá haber un lote ubicado en ese lugar y no más lotes del mismo artículo al mismo tiempo.
+
+#### Registros de almacén (Registrazioni di magazzino)
+
+En esta sección se definen informaciones útiles para el registro de almacén de este artículo, tales como:  
+**Carga manual permitida**: si está activo, este indicador indica que este artículo podrá ser cargado manualmente en el almacén;  
+**Bloqueo de movimiento**: se utiliza en personalizaciones para bloquear el guardado de un registro manual si el valor relativo (estándar o real del artículo o lote) supera el especificado **Valor máximo de carga/valor máximo de descarga**. No se utiliza en estándar;          
+**Valor máximo de carga/valor máximo de descarga**: se utilizan en personalizaciones (junto con el indicador **Bloqueo de movimiento**) como valores de referencia para bloquear el guardado de un registro manual si el valor relativo (estándar o real del artículo o lote) supera el especificado. No se utilizan en estándar;     
+**costo da utilizzare**: en esta subsección se indicará cómo se pretende valorar el artículo, si considerando el costo real o el costo estándar;
+
+#### Compras (Acquisti)
+
+En esta sección se indicará si al momento de la recepción del material de compra deben realizarse verificaciones en la entrada sobre el material o si no se requieren estas, indicando:  
+**controlli in accettazione**: a través del combo se selecciona el tipo de control que se debe hacer (si interno/no normalizado/normalizado/oficial) y a través de los campos adyacentes se deberá indicar el Tipo de plan de control eligiendo entre los planes de control codificados dentro del formulario correspondiente al que se accede a través de la ruta **Calidad > Planes de control**.  
+**Controles en aceptación no requeridos**: si está activo, este indicador significa que no se requieren controles en aceptación.
+
+#### Producción (Produzione)
+
+En esta sección se especifican informaciones relativas a la producción del material, siempre relacionadas con el control de calidad, tales como:
+
+**% de tolerancia sobre la cantidad producida (Quantià)**: en este campo se indica el porcentaje de tolerancia sobre la cantidad producida en más y/o en menos,
+
+**Ficha técnica** (Scheda tecnica): en estos campos se selecciona, donde exista, la ficha técnica y el tipo de ficha técnica relacionadas con este artículo;
+
+**scheda tecnica non richiesta**: en caso de que el material no requiera ficha técnica, este indicador será activado.
+
+#### Calidad
+
+En esta sección se indica el lead time de análisis necesario para realizar los controles preliminares sobre el artículo:  
+**Lead time análisis**: si está activo, este indicador significa que para ese material son necesarios controles de calidad que requieren un periodo de tiempo (en días) que se indica en el campo al lado; este sirve para establecer, después de haber recibido el material, cuántos días se puede utilizar en producción o, en el caso de un producto terminado, cuántos días después de su producción se puede enviar el material.
+
+#### Postventa
+
+En esta sección final se indicará la eventual garantía concedida sobre el material y los días de garantía establecidos, activando el indicador **Con Garantía** y añadiendo en el campo editable el número de días de garantía; en el caso de que el material no tenga garantía, el indicador resultará desactivado.
+
+## 22. **spese**
+
+Dentro de esta pestaña es posible añadir/gestionar los gastos relacionados con el artículo que pueden ser, por ejemplo, gastos diversos, gastos de eliminación, etc.
+
+Estos gastos que se codifican en la tabla correspondiente **Gastos**.
+
+La pantalla se compone, por lo tanto, de una cuadrícula en la que se introducen el/los gastos que se desean gestionar para ese artículo entre los que están presentes en los tipos de gasto codificados previamente.  
+**tipo**: a través de este combo se selecciona el tipo de gasto que se desea agregar de la lista de gastos mediante el combo correspondiente;  
+**Descripción** (Descrizione): campo que se completa automáticamente una vez seleccionado el tipo de gasto, y que muestra la descripción del gasto seleccionado;  
+**importo**: en este campo se debe ingresar manualmente el importe de ese gasto en la moneda de referencia;  
+**data**: a través de este combo, se ingresa la fecha de inicio de validez del gasto para este artículo;  
+**data fine**: en este campo se puede ingresar la eventual fecha de fin de validez del gasto para ese artículo.
+
+En caso de que se necesite insertar múltiples tipos de gastos, basta con desplazarse a la fila siguiente y repetir la misma solicitud de adición del gasto ya ilustrada.
+
+:::note Nota
+Los gastos ingresados en esta pestaña se reportan en la pestaña *Resúmenes* de los pedidos de clientes en la sección **Gastos**.
+:::
+
+## 23. **U.M alternativa (U.M alternativa)**
+
+:::important Para qué sirve (A cosa serve)
+La pestaña de Unidades de medida alternativas en la base de datos de artículos de Fluentis ofrece una funcionalidad importante para la gestión de las diferentes unidades de medida asociadas a cada artículo. En esta pestaña se puede definir una unidad de medida alternativa, útil para gestionar artículos que pueden ser tratados en más de una unidad. Este enfoque permite simplificar las operaciones de aprovisionamiento y almacén, ya que los diferentes operadores pueden utilizar una unidad de medida con la que se sientan más cómodos o que mejor se adapte a sus necesidades operativas.     
+En la pestaña hay una sección para especificar el factor de conversión entre la unidad de medida principal y la alternativa, permitiendo calcular automáticamente la cantidad requerida.     
+Las opciones disponibles incluyen configuraciones para definir si una unidad de medida es predeterminada o obligatoria, así como para establecer cuáles unidades de medida son prioritarias durante las operaciones de gestión de existencias.     
+A través de estas funcionalidades, las empresas pueden gestionar con mayor eficiencia las existencias de almacén y los pedidos, adaptando la información relacionada con las unidades de medida a las necesidades operativas específicas y mejorando la interoperabilidad entre diferentes sistemas de gestión, como el Sistema de Gestión de Almacenes (WMS).
+:::
+
+En esta pestaña se indica, donde sea necesario, la unidad de medida alternativa del artículo.
+
+El artículo puede ser gestionado en ambas unidades de medida y creando relaciones entre las dos.
+
+**unità di misura** y **Descripción** (Descrizione): se indicará, por lo tanto, la unidad de medida alternativa con su descripción;  
+**fattore di conversione**: aquí se define el factor de conversión entre la unidad de medida principal y la alternativa; la *cantidad alternativa* en los documentos se calcula según la configuración realizada en los [Parámetros iniciales de almacén](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)  
+**default**: si está activo, este indicador indica cuál es la unidad de medida de referencia entre N alternativas posibles para el artículo;  
+**tassativa**: si está activo, este indicador determina la invariabilidad del factor de conversión. Cuando se ingresa la unidad de medida de gestión a través del factor de conversión, el sistema calcula automáticamente la unidad de medida alternativa y viceversa. Si no está activo el indicador Obligatoria, esa unidad de medida alternativa puede establecerse como unidad de medida primaria, independientemente del indicador **Prioritaria**;     
+**Prioritaria**: si está activo, la actualización de la *cantidad de gestión* no cambia la *cantidad alternativa* porque esta última tiene la prioridad, mientras que, en el caso de que se modifique la *cantidad alternativa*, la *cantidad de gestión* se recalcula en función de la cantidad alternativa según el factor de conversión;        
+**Predeterminada WMS**: si está activo, indica que esta unidad de medida será utilizada por defecto dentro del WMS.
+
+## 24. **varianti**
+
+:::important Para qué sirve (A cosa serve)
+La pestaña Variantes de la base de datos de artículos de Fluentis proporciona la funcionalidad para ingresar y gestionar las variantes de un determinado artículo. Esta opción es particularmente útil cuando es necesario crear un nuevo artículo que difiera solo marginalmente de uno ya existente. En estos casos, la creación de una variante es preferible a la creación de un nuevo artículo, especialmente cuando las características principales del artículo original permanecen esencialmente inalteradas.       
+Un ejemplo práctico de esta funcionalidad podría observarse en el sector de la moda: podría haber un artículo denominado "camiseta", del cual se crean variantes para diferentes tallas y colores, manteniendo las características fundamentales del artículo original.
+
+La pestaña está estructurada en dos cuadrículas: la primera contiene los detalles de las variantes, como código, descripción, existencia mínima y máxima, punto de reorden, días de existencia, costo medio y precio de venta. Esta información es lo que diferencia cada variante del artículo principal. En la segunda cuadrícula, en caso de disponibilidad, también se puede insertar un código de barras específico para la variante.
+
+En resumen, la pestaña Variantes representa una herramienta poderosa para la gestión de las diferencias menores entre artículos similares, facilitando el registro y la administración de las existencias.
+:::
+
+En esta pestaña se pueden insertar y/o ver las variantes de un determinado artículo. A veces, si un nuevo artículo que se necesita crear es muy similar a uno ya existente y se diferencia solo por una característica mínima que no tiene un gran impacto en la información presente en las distintas pestañas del artículo existente, en este caso no se crea un nuevo artículo, sino simplemente se crean variantes de ese artículo.
+
+Un *ejemplo* puede ser del sector de la moda: se inserta el artículo camiseta y luego se pueden crear las variantes por tamaño y por color, pero las características principales del artículo camiseta permanecen iguales.
+
+La pestaña se compone de dos cuadrículas. En la primera cuadrícula se inserta la variante con la información relativa al código y descripción, existencia mínima y máxima, punto de reorden y los días relativos, los días de existencia, costo más reciente, medio, estándar y, por último, el precio de venta.
+
+Las informaciones que se encuentran en la cuadrícula son las únicas que diferencian la variante del artículo principal; para toda la información que no esté presente en la cuadrícula, basta con confiar en la que está presente en las distintas pestañas de ese artículo. 
+
+En la cuadrícula inferior se podrá ingresar, si corresponde, también el código de barras específico de esa variante.

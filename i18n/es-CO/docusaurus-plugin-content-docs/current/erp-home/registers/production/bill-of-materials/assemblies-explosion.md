@@ -1,24 +1,24 @@
 ---
-title: Esplosione assiemi
+title: Explosión de subconjuntos (Esplosione assiemi)
 sidebar_position: 7
 ---
 
-Questa form di lanciare un report che consente di visualizzare la lista dei componenti delle distinte, filtrate in base ad una serie di parametri. 
+Este formulario lanza un informe que permite visualizar la lista de componentes de las listas de materiales, filtradas en base a una serie de parámetros.
 
-E' composta da 5 sezioni:
+Está compuesto por 5 secciones:
 
-**Filtri**: per inserire manualmente o tramite l'**Help articolo** la distinta base di cui visualizzare la struttura.
+**filtri**: para ingresar manualmente o a través de la **Ayuda de artículo (Help articolo)** la lista de materiales de la cual visualizar la estructura.
 
-*Versione* e *Opzione* sono predeterminate in base ai dati di default inseriti nelle rispettive tabelle di gestione; la *Data validità* non è proposta automaticamente ma può essere inserita manualmente. Le altre informazioni da inserire sono legate all'articolo: *classe, codice, descrizione* e *variante*. Inoltre è possibile decidere il *Massimo livello di esplosione* per il quale visualizzare le informazioni per le distinte da visualizzare; si può anche decidere di esplodere anche gli *Assiemi degli articoli d'acquisto* che compongono la distinta tramite l'apposito flag.
+*versione* y *opzione* están predeterminadas según los datos predeterminados ingresados en las respectivas tablas de gestión; la *data validità* no se propone automáticamente pero puede ser ingresada manualmente. Las demás informaciones a ingresar están relacionadas con el artículo: *classe*, *codice*, *descrizione* y *variante*. Además, se puede decidir el *massimo livello di esplosione* para el cual visualizar la información de las listas a mostrar; también se puede optar por explotar los *Subconjuntos de los artículos de compra (Assiemi degli articoli d'acquisto)* que componen la lista mediante el indicador correspondiente.
 
-**Componenti**: per limitare la visualizzazione dei componenti ad un solo componente o ad un gruppo di componenti, filtrando per classe articolo, variante, tipo articolo, caratteristica e categoria merceologica, oppure inserendo solo una parte del codice e/o della descrizione del componente;
+**componenti**: para limitar la visualización de los componentes a un solo componente o a un grupo de componentes, filtrando por clase de artículo, variante, tipo de artículo, característica y categoría mercantil, o ingresando solo una parte del código y/o la descripción del componente;
 
-**Tipo stampa**: per decidere fino a quale livello di dettaglio si vuole visualizzare la lista dei componenti delle distinte base. La stampa può essere infatti 'Analitica' o 'Riepilogata', e a seconda dell'opzione che si sceglie si ottengono maggiori o minori informazioni sul report di stampa;
+**tipo stampa**: para decidir hasta qué nivel de detalle se desea visualizar la lista de componentes de las listas de materiales. La impresión puede ser 'Analítica (Analitica)' o 'Resumida (Riepilogata)', y dependiendo de la opción elegida se obtienen más o menos información en el informe de impresión;
 
-**Opzioni**: per decidere se visualizzare nel report di stampa anche la Quantità totale, e/o le varianti;
+**opzioni**: para decidir si visualizar en el informe de impresión también la Cantidad total, y/o las variantes;
 
-**Griglia di risultato**: in questa sezione verranno visualizzati i risultati derivanti dalle opzioni di filtro immesse nella sezione precedente.
+**Cuadrícula de resultados (Griglia di risultato)**: en esta sección se visualizarán los resultados derivados de las opciones de filtro ingresadas en la sección anterior.
 
-Per lanciare il report basterà cliccare su **Anteprima** (in questo caso si vedrà un'anteprima del report e si potrà decidere se stampare, quante pagine e copie stampare o se esportare il file) oppure cliccare su **Stampa** (in questo caso verrà lanciata direttamente la stampa del report).
+Para lanzar el informe, basta con hacer clic en **anteprima** (en este caso se verá una vista previa del informe y se podrá decidir si imprimir, cuántas páginas y copias imprimir o si exportar el archivo) o hacer clic en **stampa** (en este caso se lanzará directamente la impresión del informe).
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,99 +1,98 @@
 ---
-title: Consegne/resi D.P.I.
+title: consegne/resi d.p.i.
 sidebar_position: 1
 ---
 
-La gestione si trova sul percorso **Home > Dipendenti > Consegne/resi D.P.I. > Consegne/resi D.P.I.**   
+La gestión se encuentra en la ruta **Inicio > Empleados > consegne/resi d.p.i. > consegne/resi d.p.i.**
 
+:::important ¿Para qué sirve? (A cosa serve)
+Este procedimiento permite registrar las entregas y devoluciones de *D.P.I.* a los *Empleados*.
 
-:::important A cosa serve
-Questa procedura permette di registrare le consegne e resi dei *D.P.I.* ai *Dipendenti*.   
-
-La form si compone di un'area di filtro, di un'area di proposta dati e da una di risultato.   
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca consegne** o **Ricerca resi** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro, de un área de propuesta de datos y de una de resultados.  
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca consegne** o **ricerca resi** para visualizar los resultados dentro de la cuadrícula de resultados.   
 :::
 
 
-## Pulsanti specifici   
+## Botones específicos (Pulsanti specifici)
 
 
-### ![](/img/neutral/common/search.png) Ricerca consegne   
-La ricerca dei *D.P.I.* da consegnare si basa sui *D.P.I.* attivi previsti per *Mansione* e i *Dipendenti* che ricoprono la stessa *Mansione*.   
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato. La *Data prevista*:   
-- non viene visualizzata in caso di consegne di *D.P.I.* mai effettuate per il *Dipendente*;   
-- viene visualizzata con un carattere *rosso* se la consegna prevista del *D.P.I.* è in ritardo rispetto alla data odierna;   
-- viene calcolata sulla base della data dell'ultima consegna effettuata sommata ai *Mesi validità* indicati nella *Mansione* ricoperta dal *Dipendente*.
-- se il *Dipendente* ricopre più *Mansioni* e per più *Mansioni* è necessario l'utilizzo dello stesso *D.P.I.* con *Mesi validità* diversi, i *Mesi validità* considerati per il calcolo della *Data prevista* saranno quelli inferiori.
+### ![](/img/neutral/common/search.png) Buscar entregas (Ricerca consegne)  
+La búsqueda de *D.P.I.* a entregar se basa en los *D.P.I.* activos previstos para la *mansione* y los *Empleados* que ocupan la misma *mansione*.  
+En función del filtro establecido, se visualizan los resultados dentro de la cuadrícula de resultados. La *Fecha prevista*:  
+- no se mostrará en caso de entregas de *D.P.I.* que nunca se hayan realizado para el *Empleado*;  
+- se mostrará con un carácter *rojo* si la entrega prevista del *D.P.I.* está retrasada con respecto a la fecha actual;  
+- se calcula en base a la fecha de la última entrega realizada sumada a los *mesi validità* indicados en la *mansione* ocupada por el *Empleado*.  
+- si el *Empleado* ocupa más de una *mansione* y para más de una *mansione* se necesita el mismo *D.P.I.* con *mesi validità* diferentes, los *mesi validità* considerados para el cálculo de la *Fecha prevista* serán los menores.
 
 
-### Proponi consegne   
-Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca consegne**.   
-Propone la *Quantità consegnata* a 1 (uno) in tutte le righe visualizzate nell'*Area risultato*.   
+### Proponer entregas (Proponi consegne)  
+Botón habilitado solo si previamente se ha realizado la **ricerca consegne**.  
+Propone la *Cantidad entregada* a 1 (uno) en todas las filas visualizadas en el *Área de resultados*.
 
 
-### Elimina consegne   
-Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca consegne**.   
-Propone la *Quantità consegnata* a 0 (zero) in tutte le righe visualizzate nell'*Area risultato*.   
+### Eliminar entregas (Elimina consegne)  
+Botón habilitado solo si previamente se ha realizado la **ricerca consegne**.  
+Propone la *Cantidad entregada* a 0 (cero) en todas las filas visualizadas en el *Área de resultados*.
 
 
-### Ricerca resi   
-La ricerca dei *D.P.I.* da rendere si basa sui *D.P.I.* consegnati ai *Dipendenti*.   
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-La *Data prevista* viene visualizzata con un carattere *rosso* se il reso previsto del *D.P.I.* è in ritardo rispetto alla data odierna.   
-Non vengono effettuati controlli che la *Quantità resa** sia coerente con le *Quantità consegnate* in precedenza.  
+### Buscar devoluciones (Ricerca resi)  
+La búsqueda de *D.P.I.* a devolver se basa en los *D.P.I.* entregados a los *Empleados*.  
+En función del filtro establecido, se visualizan los resultados dentro de la cuadrícula de resultados.  
+La *Fecha prevista* se mostrará con un carácter *rojo* si la devolución prevista del *D.P.I.* está retrasada con respecto a la fecha actual.  
+No se realizan controles para asegurar que la *quantità resa* sea coherente con las *Cantidades entregadas (Quantità consegnate)* previamente.
 
 
-### Proponi resi   
-Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca resi**.   
-Propone la *Quantità resa* a 1 (uno) in tutte le righe visualizzate nell'*Area risultato*.   
+### Proponer devoluciones (Proponi resi)  
+Botón habilitado solo si previamente se ha realizado la **ricerca resi**.  
+Propone la *Cantidad devuelta* a 1 (uno) en todas las filas visualizadas en el *Área de resultados*.
 
 
-### Elimina resi   
-Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca resi**.   
-Propone la *Quantità resa* a 0 (zero) in tutte le righe visualizzate nell'*Area risultato*.   
+### Eliminar devoluciones (Elimina resi)  
+Botón habilitado solo si previamente se ha realizado la **ricerca resi**.  
+Propone la *Cantidad devuelta* a 0 (cero) en todas las filas visualizadas en el *Área de resultados*.
 
 
-### ![](/img/neutral/common/save.png) Salva   
-Tutte le righe presenti nell'*Area risultato* con *Quantità consegnata* o *Quantità resa* maggiore di *zero* verranno inserite nello *Storico consegne/resi D.P.I.*, alla data *Consegnato/Reso in data* presenti nell'area *Dati proposti per le consegne/resi*.   
+### ![](/img/neutral/common/save.png) Guardar (Salva)  
+Todas las filas presentes en el *Área de resultados* con *quantità consegnata* o *quantità resa* mayor que *cero* serán insertadas en el *Histórico de entregas/devoluciones D.P.I.* a la fecha *consegnato/reso in data* presentes en el área *Datos propuestos para las entregas/devoluciones*.
 
 
-## Aree di gestione
+## Áreas de gestión (Aree di gestione)
 
 
-### Filtro   
-Il filtro dati è composto dalle seguenti informazioni:   
-> **Consegne/Resi per il Dipendente**: è il *Dipendente* per cui si desidera ricercare dei *D.P.I.* da consegnare/ricevere.   
-> **Consegne/Resi per il D.P.I.**: è il *D.P.I.* che si desidera consegnare/ricevere.   
+### Filtro (Filtro)  
+El filtro de datos está compuesto por la siguiente información:  
+> **consegne/resi per il dipendente**: es el *Empleado* para el cual se desea buscar *D.P.I.* para entregar/recibir.  
+> **consegne/resi per il d.p.i.**: es el *D.P.I.* que se desea entregar/recibir.
 
 
-### Dati proposti per le consegne/resi   
-Le informazioni contenute in questo expander sono obbligatorie per la registrazione delle *consegne/resi*.   
-L'expander è composto dalle seguenti informazioni:   
-> **Consegnato da/Reso a**: è la *persona* che consegna i *D.P.I.* ai *Dipendenti* / riceve i *D.P.I.* dai *Dipendenti*.   
-> **Consegnato/Reso in data**: è la data consegna/reso dei *D.P.I.* ai *Dipendenti*.   
+### Datos propuestos para las entregas/devoluciones (Dati proposti per le consegne/resi)  
+La información contenida en este expander es obligatoria para el registro de las *entregas/devoluciones*.  
+El expander está compuesto por la siguiente información:  
+> **consegnato da/reso a**: es la *persona* que entrega los *D.P.I.* a los *Empleados* / recibe los *D.P.I.* de los *Empleados*.  
+> **consegnato/reso in data**: es la fecha de entrega/devolución de los *D.P.I.* a los *Empleados*.
 
 
-### Risultato   
-L'elenco si compone delle seguenti informazioni:   
-> **Data prevista**: è la data prevista di consegna/reso del *D.P.I.* al *Dipendenti*.   
+### Resultado (Risultato)  
+La lista se compone de la siguiente información:  
+> **data prevista**: es la fecha prevista de entrega/devolución del *D.P.I.* al *Empleado*.  
 >
-> **Dipendente**
->> **Codice**: è il codice del *Dipendente* destinatario.   
->> **Cognome**: è il cognome del *Dipendente* destinatario.   
->> **Nome**: è il nome del *Dipendente* destinatario.   
+> **dipendente**  
+>> **codice**: es el código del *Empleado* destinatario.  
+>> **cognome**: es el apellido del *Empleado* destinatario.  
+>> **nome**: es el nombre del *Empleado* destinatario.  
 >
-> **D.P.I.**
->> **Codice**: è il codice del *D.P.I.* da consegnare/rendere.   
->> **Descrizione**: è la descrizione del *D.P.I.* da consegnare/rendere.   
+> **D.P.I.**  
+>> **codice**: es el código del *D.P.I.* a entregar/devolver.  
+>> **descrizione**: es la descripción del *D.P.I.* a entregar/devolver.  
 >
-> **Quantità**
->> **Consegnata**: è la *Quantità consegnata* del *D.P.I.* al *Dipendente*.   
->> **Resa**: è la *Quantità resa* del *D.P.I.* dal *Dipendente*.   
+> **quantità**  
+>> **consegnata**: es la *Cantidad entregada* del *D.P.I.* al *Empleado*.  
+>> **resa**: es la *Cantidad devuelta* del *D.P.I.* por el *Empleado*.  
 >
-> **Firmato**: indica se il *Dipendente* ha firmato la *Scheda consegna/reso*, per accettazione.   
-> **Uso**: annotazioni libere sull'argomento; viene proposta dall'elenco dei *D.P.I.* previsti per la *Mansione* ricoperta dal *Dipendente*.   
-> **Prescrizioni**: annotazioni libere sull'argomento; viene proposta dall'elenco dei *D.P.I.* previsti per la *Mansione* ricoperta dal *Dipendente*.   
-> **Note**: annotazioni libere.   
+> **firmato**: indica si el *Empleado* ha firmado la *Ficha de entrega/devolución (Scheda consegna/reso)*, por aceptación.  
+> **uso**: anotaciones libres sobre el tema; se propone de la lista de *D.P.I.* previstos para la *mansione* ocupada por el *Empleado*.  
+> **prescrizioni**: anotaciones libres sobre el tema; se propone de la lista de *D.P.I.* previstos para la *mansione* ocupada por el *Empleado*.  
+> **note**: anotaciones libres.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

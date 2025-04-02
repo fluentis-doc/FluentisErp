@@ -1,40 +1,40 @@
 ---
-title: Codici Paghe
+title: codici paghe
 sidebar_position: 4
 ---
 
-#### Campi specifici 
+#### Campos específicos (Campi specifici)
 
-**Codice** / **Descrizione** : codice e descrizione per identificare il codice paga
+**codice** / **descrizione**: código y descripción para identificar el código de nómina.  
 
-**Intervento** : flag utilizzato in qualche tracciato file esportato dall'elaborazione paghe per gestioni esterne a Fluentis.
+**intervento**: indicador utilizado en algún archivo exportado por el procesamiento de nómina para gestiones externas a Fluentis.  
 
-**Esterno** : se abilitato, verifica la configurazione del tipo intervento collegato alla dichiarazione attività, verificando se nel tipo intervento il flag esterno è abilitato, per impostarlo di conseguenza nel cedolino paga.
+**esterno**: si está habilitado, verifica la configuración del tipo de intervención relacionada con la declaración de actividad, verificando si en el tipo de intervención el indicador externo está habilitado, para configurarlo en consecuencia en el recibo de nómina.  
 
-**Codice unità di misura** : unità di misura utilizzata nel tracciato del file esportato dall'elaborazione paghe per gestioni esterne a Fluentis.
+**codice unità di misura**: unidad de medida utilizada en el archivo exportado por el procesamiento de nómina para gestiones externas a Fluentis.  
 
-**Ordinario**: se abilitato, utilizzato come codice di default per le ore ordinarie di lavoro, in caso di mancanza di configurazioni più specifiche.  
+**ordinario**: si está habilitado, se utiliza como código predeterminado para las horas ordinarias de trabajo, en caso de falta de configuraciones más específicas.  
 
-**Valori Finali**: se abilitato, il valore associato a questo codice paga verrà inserito nel riquadro "Valori" del Riepilogo per cedolini e verrà escluso dai movimenti
+**valori finali**: si está habilitado, el valor asociado a este código de nómina se insertará en el recuadro "Valores" del Resumen para recibos de nómina y se excluirá de los movimientos.  
 
-**Rimborso Viaggio**: se abilitato le ore di viaggio identificate con questo codice verranno sommate alle ore ordinarie. Se la somma risulta maggiore di 8 ore, verrà inserita una riga con quantità 1 nei movimenti come identificativo di 1 trasferta indipendentemente dalle ore di viaggio di dichiarate. Se disabilitato, le ore viaggio verranno inserite separatamente per le ore effettivamente dichiarate.
+**rimborso viaggio**: si está habilitado, las horas de viaje identificadas con este código se sumarán a las horas ordinarias. Si la suma resulta ser mayor a 8 horas, se insertará una línea con cantidad 1 en los movimientos como identificador de 1 traslado independientemente de las horas de viaje declaradas. Si está deshabilitado, las horas de viaje se insertarán por separado según las horas efectivamente declaradas.  
 
-verrà utilizzato per identificare le giornate di trasferta nel riquadro "Movimenti" del Riepilogo per cedolini. Con flag abilitato, se le ore ordinarie sommate alle ore di viaggio
+Se utilizará para identificar los días de traslado en el recuadro "Movimientos" del Resumen para recibos de nómina. Con el indicador habilitado, si las horas ordinarias se suman a las horas de viaje.  
 
-**Festività**: se abilitato verrà utilizzato per identificare le giornate di festività nel riquadro "Movimenti" del Riepilogo per cedolini - configurate nel Calendario giorni festivi
+**festività**: si está habilitado, se utilizará para identificar los días de festividad en el recuadro "Movimientos" del Resumen para recibos de nómina - configurados en el Calendario de días festivos.  
 
-**Straordinario**: se abilitato verrà utilizzato per identificare le ore di straordinario nel riquadro "Movimenti" del Riepilogo per cedolini - calcolate in base agli orari stabiliti per la risorsa 
+**straordinario**: si está habilitado, se utilizará para identificar las horas de extraordinario en el recuadro "Movimientos" del Resumen para recibos de nómina - calculadas según los horarios establecidos para el recurso.  
 
-**Straordinari festivi**: se abilitato verrà utilizzato per identificare le ore di straordinario effettuate di sabato/domenica nel riquadro "Movimenti" del Riepilogo per cedolini - calcolate in base agli orari stabiliti per la risorsa 
+**straordinari festivi**: si está habilitado, se utilizará para identificar las horas de extraordinario realizadas el sábado/domingo en el recuadro "Movimientos" del Resumen para recibos de nómina - calculadas según los horarios establecidos para el recurso.  
 
-**Ferie**: se abilitato verrà utilizzato per identificare le giornate di ferie nel riquadro "Movimenti" del Riepilogo per cedolini - in base alla categoria attività inserita nella dichiarazione attività 
+**ferie**: si está habilitado, se utilizará para identificar los días de vacaciones en el recuadro "Movimientos" del Resumen para recibos de nómina - basado en la categoría de actividad ingresada en la declaración de actividad.  
 
-**Permessi**: se abilitato verrà utilizzato per identificare le ore di permessi nel riquadro "Movimenti" del Riepilogo per cedolini - in base alla categoria attività inserita nella dichiarazione attività 
+**permessi**: si está habilitado, se utilizará para identificar las horas de permisos en el recuadro "Movimientos" del Resumen para recibos de nómina - basado en la categoría de actividad ingresada en la declaración de actividad.  
 
-**ROL**: se abilitato verrà utilizzato per identificare le ore di ROL nel riquadro "Movimenti" del Riepilogo per cedolini - in base alla categoria attività inserita nella dichiarazione attività 
+**ROL**: si está habilitado, se utilizará para identificar las horas de ROL en el recuadro "Movimientos" del Resumen para recibos de nómina - basado en la categoría de actividad ingresada en la declaración de actividad.  
 
-**Smart Working**: se abilitato verrà utilizzato per identificare le giornate di smartworking nel riquadro "Movimenti" del Riepilogo per cedolini - identificate in base alle dichiarazioni attività con flag "Smartworking" abilitato, sostituirà il codice paga associato alla categoria di attività
+**smart working**: si está habilitado, se utilizará para identificar los días de trabajo remoto en el recuadro "Movimientos" del Resumen para recibos de nómina - identificados según las declaraciones de actividad con el indicador "Trabajo remoto" habilitado, reemplazará el código de nómina asociado a la categoría de actividad.  
 
-**Non viene esportato**: blocca l'esportazione nel tracciato file per gestioni esterne a Fluentis
+**non viene esportato**: bloquea la exportación en el archivo para gestiones externas a Fluentis.  
 
-**Codice Esportato**: codice utilizzato nel tracciato file per gestioni esterne a fluentis 
+**codice esportato**: código utilizado en el archivo para gestiones externas a Fluentis.

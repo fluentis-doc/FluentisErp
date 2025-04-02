@@ -1,24 +1,24 @@
 ---
-title: Articoli
+title: articoli
 sidebar_position: 4
 ---
 
-La form è costituita da una griglia, all'interno della quale l'utente può inserire manualmente gli articoli rientrati.
+El formulario está compuesto por una cuadrícula, dentro de la cual el usuario puede ingresar manualmente los artículos que han regresado.
 
-## Dati
+## Datos (Dati)
 
-In questo tab vengono visualizzate le informazioni relative alla riga selezionata nella griglia degli articoli, tra quali:
+En esta pestaña se visualizan las informaciones relacionadas con la línea seleccionada en la cuadrícula de artículos, entre las cuales:
 
-**Ordine prod.**: si tratta dell'ordine di produzione la cui fase esterna ha generato la riga di ordine di conto lavoro che è stata evasa con la riga di rientro selezionata;
+**ordine prod.**: se trata del pedido de producción cuya fase externa ha generado la línea de pedido del trabajo por encargo que ha sido cumplida con la línea de regreso seleccionada; 
 
-**Progetto**: in questo campo viene visualizzata il progetto legato alla riga del rientro. Di solito viene richiamato il progetto inserito nella riga dell'ordine di conto lavoro da cui è stata generata la riga di rientro;
+**progetto**: en este campo se visualiza el proyecto asociado a la línea de regreso. Generalmente se llama al proyecto ingresado en la línea del pedido de trabajo por encargo del que se generó la línea de regreso; 
 
-**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
+**pesi**: se reportan el Peso neto y el Peso bruto totales de las líneas del artículo. Se informan los pesos del registro del artículo multiplicados por la cantidad de la línea.
 
-## Lotti/SN
+## Lotes/Números de serie (Lotti/SN)
 
-In questo tab viene data la possibilità di impostare, per la riga selezionata nella griglia, i lotti o i serial numbers da caricare a magazzino con la quantità di articolo rientrata, nel caso che si tratti di più lotti diversi rientrati con la stessa riga di rientro. A seconda del fatto che l'articolo sia gestito a lotti o a serial numbers risulta attivata la corrispondente griglia di questo tab.
+En esta pestaña se da la posibilidad de establecer, para la línea seleccionada en la cuadrícula, los lotes o números de serie que se cargarán en el almacén con la cantidad de artículo regresada, en caso de que se trate de varios lotes diferentes que regresaron con la misma línea de regreso. Dependiendo de si el artículo se gestiona por lotes o por números de serie, se activa la cuadrícula correspondiente de esta pestaña.
 
 :::note Nota
-La somma delle quantità dei vari lotti/numeri di serie dovrà corrispondere esattamente alla quantità rientrata della riga articolo.
+La suma de las cantidades de los diversos lotes/números de serie debe corresponder exactamente a la cantidad regresada de la línea del artículo.
 :::

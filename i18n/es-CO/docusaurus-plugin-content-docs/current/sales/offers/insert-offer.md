@@ -1,176 +1,176 @@
 ---
-title: Nuova offerta cliente
+title: Nueva oferta cliente (Nuova offerta cliente)
 sidebar_position: 3
 ---
 
-La form **Nuova Offerta** si apre tramite il percorso **Vendite > Nuova Offerta** oppure tramite il pulsante **Nuovo** che si trova nella form di [Ricerca Offerte](/docs/sales/offers/search-offers).
+El formulario **nuova offerta** se abre a través de la ruta **Ventas > Nueva Oferta (Vendite > Nuova Offerta)** o mediante el botón **nuovo** que se encuentra en el formulario de [Búsqueda de Ofertas](/docs/sales/offers/search-offers).
 
-## *Come creare un'offerta cliente*
+## *Cómo crear una oferta cliente (Come creare un'offerta cliente)*
 
-## **1. Dati obbligatori**     
+## **1. Datos obligatorios (Dati obbligatori)**     
 
-- **Tipo offerta di vendita**: contiene la tipologia di offerta, tra quelle inserite nei [Tipi Offerte](/docs/configurations/tables/sales/sales-offer-type).
+- **tipo offerta di vendita**: contiene la tipología de oferta, entre las que están insertadas en los [Tipos de Ofertas](/docs/configurations/tables/sales/sales-offer-type).
 
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione Offerte](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.     
+- **numero**: a cada documento se le asigna un número de acuerdo con la numeración específica proporcionada por el usuario en la tabla [Numeración de Ofertas](/docs/configurations/tables/fluentis-numerations) y al tipo de documento que contiene la numeración.     
 
-- **Cliente**: l'inserimento del cliente è possibile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure inserendo [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i caratteri.
+- **cliente**: la inserción del cliente es posible utilizando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o ingresando los caracteres [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-- **Contatto CRM**: se l'Offerta è per una lead non ancora cliente, sarà possibile inserire un Contatto CRM invece di un cliente.    
+- **contatto crm**: si la oferta es para un lead que no es aún cliente, será posible insertar un contacto CRM en lugar de un cliente.    
 
-- **Anno**: viene proposto l'anno corrente.  
+- **anno**: se propone el año corriente.  
 
-- **Data**: viene proposta la data odierna.     
+- **data**: se propone la fecha de hoy.     
 
-- **Versione**: in questo campo viene riportato il numero di Versione dell'offerta; se nuova, la Versione proposta sarà la prima.    
+- **versione**: en este campo se indica el número de versión de la oferta; si es nueva, la versión propuesta será la primera.    
 
-#### Dati non obbligatori:
+#### Datos no obligatorios (Dati non obbligatori):
 
-- **Opportunità contatto**: se il Tipo offerta creato ha una Tipo Opportunità associato nella tabella dei [Tipi Offerta](/docs/configurations/tables/sales/sales-offer-type), al salvataggio dell'Offerta verrà automaticamente creata una Opportunità per il cliente/contatto, che sarà riportata in questo campo e diventerà modificabile dall'utente. Se in questo campo viene inserita manualmente un'Opportunità preesistente, essa viene aggiornata.           
+- **opportunità contatto**: si el tipo de oferta creado tiene un tipo de oportunidad asociado en la tabla de [Tipos de Oferta](/docs/configurations/tables/sales/sales-offer-type), al guardar la oferta, se creará automáticamente una oportunidad para el cliente/contacto, que se mencionará en este campo y se volverá modificable por el usuario. Si se introduce manualmente una oportunidad preexistente en este campo, se actualizará.           
 
-## **2. Testata**
+## **testata**
 
-Dopo aver inserito i dati nella sezione superiore, è possibile procedere con i dati di testata:      
+Después de haber ingresado los datos en la sección superior, se puede proceder con los datos de encabezado:      
 
-- **Divisa**: viene proposta la Divisa del cliente.
+- **divisa**: se propone la divisa del cliente.
 
-- **Spedizione**: viene proposta la modalità di [Spedizione](/docs/configurations/tables/general-settings/shipments) dall'anagrafica cliente.      
+- **spedizione**: se propone la modalidad de [Envío](/docs/configurations/tables/general-settings/shipments) desde la ficha del cliente.      
 
-- **Listino di vendita**: viene proposto il listino di default presente in anagrafica cliente, con il relativo Tipo scaglione previsto per il cliente.     
+- **listino di vendita**: se propone la lista predeterminada existente en la ficha del cliente, con el tipo de escala correspondiente para el cliente.     
 
-- **Annotazioni clienti**: in questa sezione è possibile inserire i Riferimenti del cliente, eventuali Note iniziali/finali; il campo *Annotazioni cliente* riporta le Note inserite nei [Dati anagrafici del cliente](/docs/erp-home/registers/contacts/create-new-contact/general).     
+- **Anotaciones del cliente (Annotazioni clienti)**: en esta sección se pueden insertar las referencias del cliente, notas iniciales/finales; el campo *Anotaciones cliente* reporta las notas ingresadas en [Datos de la ficha del cliente](/docs/erp-home/registers/contacts/create-new-contact/general).     
 
-- **Data conferma offerta**: indica la data nella quale l'offerta è stata confermata e quindi potrà essere convertita in ordine.     
+- **data conferma offerta**: indica la fecha en la que la oferta ha sido confirmada y, por lo tanto, podrá ser convertida en un pedido.     
 
-- **Data prevista consegna**: è la data nella quale è previsto che la merce verrà consegnata; questo dato viene riportato nell'ordine creato da offerta.     
+- **data prevista consegna**: es la fecha en la que se prevé que la mercancía será entregada; este dato se reflejará en el pedido creado a partir de la oferta.     
 
-- **Data chiusura**: indica la data in cui l'offerta è stata chiusa.
+- **data chiusura**: indica la fecha en la que la oferta ha sido cerrada.
 
-- **Data annullamento**: la data nella quale l'Offerta verrà considerata nulla se non è diventata Ordine.
+- **data annullamento**: la fecha en la que la oferta será considerada nula si no se ha convertido en pedido.
 
-- **Validità Offerta**: data limite di validità dell'offerta; è un campo informativo.
+- **validità offerta**: fecha límite de validez de la oferta; es un campo informativo.
 
-#### Pulsanti specifici    
+#### Botones específicos (Pulsanti specifici)    
 
-> **Nuova versione**: genera una nuova versione dell'offerta, incrementando il campo *Versione*. Le versioni successive di un’Offerta ereditano i Documenti allegati.       
+> **nuova versione**: genera una nueva versión de la oferta, incrementando el campo *versione*. Las versiones posteriores de una oferta heredan los documentos adjuntos.       
 
-> **Sostituisci data prevista consegna nelle righe**: sostituisce in tutte le righe articolo la Data prevista consegna inserita in testata.       
+> **Reemplazar fecha prevista de entrega en las líneas (Sostituisci data prevista consegna nelle righe)**: reemplaza en todas las líneas de artículo la fecha prevista de entrega ingresada en el encabezado.       
 
-> **Conversione**:  permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Affinché il processo avvenga correttamente, è essenziale configurare il Tipo di ordine desiderato nella tabella dei [Tipi offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, affinché l'offerta possa essere convertita con successo, è necessario che abbia una Data conferma in testata, altrimenti il sistema avviserà l'utente tramite un messaggio pop-up della necessità di confermare l'offerta prima di procedere. Una volta che tutti i dati richiesti sono stati inseriti, avviando la procedura uscirà un pop-up con i seguenti campi:     
-> - se almeno alcune righe dell'offerta sono già state convertite in ordine, verrà chiesto all'utente se vuole creare un nuovo ordine utilizzando tutte le righe offerta oppure solo le righe non ancora referenziate.             
-> - **Crea/Aggiorna progetto**: con questo flag indichiamo al sistema che oltre alla creazione dell'ordine deve procedere anche con la creazione o l'aggiornamento del progetto. Se il progetto deve essere creato, è necessario flaggare il comando *Crea Nuovo progetto vuoto*, *Crea Nuovo progetto da Offerta* oppure **Crea Nuovo progetto da Offerta e Template progetto**; in tutti i casi sarà necessario inserire il **[Tipo progetto](/docs/configurations/tables/project-management/project-type)** da creare nell'apposito campo, nell'ultimo caso verrà richiesto l'inserimento anche del  progetto **Template**. Se il progetto esiste già e deve essere aggiornato con i dati inseriti nell'offerta, invece, sarà necessario compilare il campo **Progetto**  con il progetto da aggiornare.     
-> - **Riporta Materiali/Risorse da righe Offerta come righe Ordine**: con questi flag vengono inserite nell'ordine delle righe articolo con le risorse e i materiali dell'offerta, se gerarchica.              
-Una volta confermato il pop-up, il sistema genererà quindi un nuovo Ordine cliente utilizzando i dati dell'offerta. Questo ordine può essere visualizzato e modificato nella sezione [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Inoltre, l'utente verrà informato tramite un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita e la versione, insieme a un messaggio contenente il numero dell'ordine cliente generato dalla conversione.        
-Se nell'Offerta vengono modificati i dati proposti dall'anagrafica, essi vengono riportati nell'Ordine generato dalla conversione: Annotazioni cliente, Spedizione, Pagamenti, Sconti, Agenti, Destinazioni, Vettori.      
+> **conversione**: permite transformar una oferta de venta en un pedido de venta real. Para que el proceso se realice correctamente, es esencial configurar el tipo de pedido deseado en la tabla de [Tipos de oferta](/docs/configurations/tables/sales/sales-offer-type). Además, para que la oferta pueda ser convertida exitosamente, es necesario que tenga una fecha de confirmación en el encabezado; de lo contrario, el sistema notificará al usuario a través de un mensaje emergente sobre la necesidad de confirmar la oferta antes de proceder. Una vez que se hayan ingresado todos los datos requeridos, al iniciar el procedimiento aparecerá un pop-up con los siguientes campos:     
+> - si al menos algunas líneas de la oferta ya se han convertido en pedido, se le pedirá al usuario si desea crear un nuevo pedido utilizando todas las líneas de la oferta o solo las líneas que aún no han sido referenciadas.             
+> - **crea/aggiorna progetto**: con este indicador indicamos al sistema que, además de la creación del pedido, debe proceder también con la creación o actualización del proyecto. Si el proyecto debe ser creado, es necesario marcar el comando *crea nuovo progetto vuoto*, *crea nuovo progetto da offerta* o **crea nuovo progetto da offerta e template progetto**; en todos los casos será necesario ingresar el **[Tipo de proyecto](/docs/configurations/tables/project-management/project-type)** a crear en el campo apropiado; en el último caso, también se pedirá el ingreso del proyecto **template**. Si el proyecto ya existe y debe ser actualizado con los datos ingresados en la oferta, será necesario llenar el campo **progetto** con el proyecto a actualizar.     
+> - **Reportar materiales/recursos de líneas de oferta como líneas de pedido (Riporta Materiali/Risorse da righe Offerta come righe Ordine)**: con estos indicadores se inserten en el pedido las líneas de artículo con los recursos y materiales de la oferta, si es jerárquica.              
+Una vez confirmado el pop-up, el sistema generará un nuevo pedido de cliente utilizando los datos de la oferta. Este pedido puede ser visualizado y modificado en la sección [Búsqueda de pedidos de clientes](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Además, el usuario será informado a través de un mensaje emergente sobre el éxito de la conversión, el número de la oferta convertida y la versión, junto con un mensaje que contiene el número del pedido de cliente generado por la conversión.        
+Si en la oferta se modifican los datos propuestos por la ficha, estos son incluidos en el pedido generado a partir de la conversión: anotaciones del cliente, envío, pagos, descuentos, agentes, destinos, transportistas.      
 
-Le tab sottostanti vengono popolate con i campi presi dall'anagrafica cliente/contatto, modificabili:  
-- **Pagamenti**
-- **Sconti**
-- **Destinatari**
-- **Vettori**
-- **Agenti**
-- **Extra Data**
-- **Informazioni email**
+Las pestañas subyacentes se poblarán con los campos tomados de la ficha del cliente/contacto, modificables:  
+- **pagamenti**
+- **sconti**
+- **destinatari**
+- **vettori**
+- **agenti**
+- **extra data**
+- **Información de email (Informazioni email)**
 
-## **3.a Articoli offerta**
+## **3.a Artículos de la oferta (Articoli offerta)**
 
-Nella griglia principale vengono inseriti gli articoli.    
+En la cuadrícula principal se insertan los artículos.    
 
-Sono poi presenti le seguenti tab:       
-- **Sconti**: questa tab riporta il Listino, se presente, da cui prendere il prezzo per l'articolo selezionato; riporta inoltre gli sconti, da listino o da anagrafica, e permette l'inserimento di nuovi sconti; infine, è presente il flag *Prezzo manuale*, che indica di mantenere i prezzi inseriti manualmente (questo flag viene riportato nella conversione dell'offerta in ordine).     
-- **Agenti**: in questa tab vengono riportati gli Agenti del cliente con le relative provvigioni.      
-- **Dati articolo**: sono presenti diversi dati riguardanti l'articolo, come eventuali Varianti, Magazzino, Unità di misura alternativa.    
-- **Extra Data**
-- **Documenti allegati**        
+Luego, están presentes las siguientes pestañas:       
+- **sconti**: esta pestaña reporta la lista de precios, si está presente, de la cual se toma el precio para el artículo seleccionado; también reporta los descuentos, de lista o de ficha, y permite la inserción de nuevos descuentos; además, está presente el indicador *prezzo manuale*, que indica que se mantendrán los precios introducidos manualmente (este indicador se reporta en la conversión de la oferta en pedido).     
+- **agenti**: en esta pestaña se reportan los agentes del cliente con las respectivas comisiones.      
+- **dati articolo**: se presentan diversos datos relacionados con el artículo, como posibles variantes, almacén, unidad de medida alternativa.    
+- **extra data**
+- **documenti allegati**        
 
-#### Pulsanti specifici
+#### Botones específicos (Pulsanti specifici)
 
-- **Crea nuovo prototipo**: questo bottone crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) per la riga articolo selezionata; il riferimento al preventivo generato viene riportato nel tab Dati articolo, campo Preventivo. Sarà possibile modificare il prototipo generato dal relativo modulo.
-- **Associa prototipo**: con questo bottone è possibile associare l'offerta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.
-- **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.     
-- **Import da progetto**: questa funzione apre l'help *Articolo progetto*, nel quale è possibile selezionare gli articoli provenienti da un progetto che vogliamo inserire nell'offerta di vendita. Il pop up si apre direttamente con il filtro sul cliente intestatario dell'offerta, per permettere di visualizzarne i relativi progetti.    
+- **crea nuovo prototipo**: este botón crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) para la línea de artículo seleccionada; la referencia al presupuesto generado se reporta en la pestaña Datos del artículo, campo Presupuesto. Será posible modificar el prototipo generado desde el módulo correspondiente.
+- **associa prototipo**: con este botón es posible asociar la oferta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) ya existente; se abre una ayuda en la que se puede elegir entre los prototipos disponibles para ese artículo.
+- **apri prototipo**: este botón está habilitado si la línea de artículo seleccionada tiene un prototipo asociado, y permite abrirlo.     
+- **import da progetto**: esta función abre la ayuda *Artículo proyecto*, en la cual es posible seleccionar los artículos provenientes de un proyecto que queremos incluir en la oferta de venta. El pop-up se abre directamente con el filtro en el cliente titular de la oferta, para permitir visualizar sus respectivos proyectos.    
 
-## **3.b Articoli offerta gerarchica**
+## **3.b Artículos de oferta jerárquica (Articoli offerta gerarchica)**
 
-Nel caso in cui l'Offerta sia di *tipo gerarchico*, la tab degli Articoli sarà diversa.      
+En caso de que la oferta sea de *tipo jerárquico*, la pestaña de artículos será diferente.      
 
-Nella griglia principale vengono inseriti gli articoli servendosi dei pulsanti della barra degli strumenti, che permettono di creare una struttura ad albero. Le caratteristiche degli articoli devono essere specificate nella tab *Attività*.    
+En la cuadrícula principal se insertan los artículos utilizando los botones de la barra de herramientas, que permiten crear una estructura en árbol. Las características de los artículos deben especificarse en la pestaña *attività*.    
 
-Elenchiamo ora le tab particolari di un'offerta gerarchica.        
+Ahora enumeramos las pestañas particulares de una oferta jerárquica.        
 
-### 3.b.1 Attività 
+### 3.b.1 Actividades (Attività)
 
-In questa tab è necessario inserire le caratteristiche degli articoli della griglia articoli. I campi presenti sono:     
-- **Numero riga/Livello**: contiene i numeri della riga e della WBS e viene impostato automaticamente, anche se è liberamente modificabile.          
-- **Tipo Nodo**: indica se la riga è un **Root Node** (nodo principale), un **Activity Node** (relativo alle attività) o un **Work Package Node** (nodo finale di progetto, l’unico che può contenere dei codici articolo codificati).       
-- **Tipo riga**: indica la tipologia di articolo tra Codificato, Non codificato, Spese o Note (quest’ultimo di default).            
-- **Codice Articolo**: questa sezione riporta Classe, Codice e Descrizione dell’articolo codificato eventualmente selezionato.             
-- **Codice Variante**: riporta un'eventuale [Variante](/docs/erp-home/registers/items/create-new-item) dell'articolo.       
-- **Descrizione articolo**: questa sezione riporta la Descrizione dell'articolo, se di tipo Nota o Non codificato.    
-- **Prototipo**: contiene l'eventuale [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) collegato.          
-- **Quantità/UM/Prezzo**: contiene quantità, unità di misura e prezzo dell’articolo selezionato.        
-- **Quantità alternativa**: contiene l'eventuale quantità alternativa, con accanto l'Unità di misura alternativa.     
-- **UM Prezzo**: se inserito, questo flag indica di moltiplicare il prezzo unitario per la quantità alternativa, per ottenere l'importo.   
-- **Listino**: è possibile associare un listino dal quale ottenere il prezzo dell'articolo, con accanto il **Tipo scaglione** da applicare per lo sconto.     
-- **Prezzo manuale**: questo flag indica che è stato inserito un prezzo a mano, e che quindi il prezzo di listino non deve essere considerato.          
-- **Aggiorna il prezzo dalle risorse**: questo flag, se settato, fa cambiare il campo *Prezzo* inserendo lo stesso importo della colonna *Ricavo* del tab *Risorse*; può essere usato per esempio quando l'importo di riga dipende interamente dal tempo impiegato dalle Risorse.        
-- **Aggiorna il prezzo dai materiali**: questo flag, se settato, fa cambiare il campo *Prezzo* inserendo lo stesso importo della colonna *Ricavo* del tab *Materiali*; può essere usato per esempio quando l'importo di riga dipende interamente dai Materiali impiegati.       
-- **Aggiorna il prezzo dal prototipo**: questo flag, se settato, fa cambiare il campo *Prezzo* inserendo lo stesso importo della colonna *Prezzo di vendita* del prototipo associato.     
-- **Escludi risorse in ordine cliente**: questo flag fa in modo che le Risorse della riga articolo selezionata non vengano riportate nell'Ordine cliente creato con la Conversione dell'offerta.     
-- **Escludi materiali in ordine cliente**: questo flag fa in modo che i Materiali della riga articolo selezionata non vengano riportate nell'Ordine cliente creato con la Conversione dell'offerta.     
-- **Sconti**: in questa griglia vengono riportati gli sconti previsti per il cliente ed è possibile aggiungerne altri.     
-- **Ricavi materiali/Ricavi risorse**: in questi campi vengono riportate le colonne *Ricavo** delle tab Risorse e Materiali; in questo modo è possibile capire direttamente da questa tab l'incidenza degli importi sul Prezzo totale.     
-- **IVA**: indica l’IVA da applicare.             
-- **Fatturato vendite**: indica il [Fatturato vendite](/docs/configurations/tables/sales/sales-turnover) dell’articolo.                
-- **Data prevista consegna/Periodo di prevista consegna**: in questi campi è possibile inserire data/periodo previsti per la consegna dell'articolo selezionato.    
+En esta pestaña es necesario insertar las características de los artículos de la cuadrícula de artículos. Los campos presentes son:     
+- **Número de línea/Nivel (Numero riga/Livello)**: contiene los números de la línea y de la WBS y se establece automáticamente, aunque es modificable.          
+- **tipo nodo**: indica si la línea es un **Root Node (nodo raíz)**, un **Activity Node (nodo de actividad)** o un **Work Package Node (nodo de paquete de trabajo)** (el único que puede contener códigos de artículo codificados).       
+- **tipo riga**: indica la tipología de artículo entre Codificado, No codificado, Gastos o Notas (este último por defecto).            
+- **codice articolo**: esta sección reporta la Clase, Código y Descripción del artículo codificado eventualmente seleccionado.             
+- **codice variante**: reporta una posible [Variante](/docs/erp-home/registers/items/create-new-item) del artículo.       
+- **descrizione articolo**: esta sección reporta la descripción del artículo, si es del tipo Nota o No codificado.    
+- **prototipo**: contiene el eventual [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) asociado.          
+- **Cantidad/UM/Precio (Quantità/UM/Prezzo)**: contiene la cantidad, unidad de medida y precio del artículo seleccionado.        
+- **quantità alternativa**: contiene la eventual cantidad alternativa, con al lado la unidad de medida alternativa.     
+- **um prezzo**: si se ingresa, este indicador indica multiplicar el precio unitario por la cantidad alternativa, para obtener el importe.   
+- **listino**: es posible asociar una lista de precios de la cual obtener el precio del artículo, con al lado el **tipo scaglione** a aplicar para el descuento.     
+- **prezzo manuale**: este indicador indica que se ha ingresado un precio manualmente, y que por lo tanto no se debe considerar el precio de lista.          
+- **aggiorna il prezzo dalle risorse**: este indicador, si está establecido, cambia el campo *Precio* introduciendo la misma cantidad de la columna *ricavo* de la pestaña *risorse*; puede usarse, por ejemplo, cuando el importe de línea depende completamente del tiempo empleado por los recursos.        
+- **aggiorna il prezzo dai materiali**: este indicador, si está establecido, cambia el campo *Precio* introduciendo la misma cantidad de la columna *ricavo* de la pestaña *materiali*; puede usarse, por ejemplo, cuando el importe de línea depende completamente de los materiales utilizados.       
+- **aggiorna il prezzo dal prototipo**: este indicador, si está establecido, cambia el campo *Precio* introduciendo la misma cantidad de la columna *prezzo di vendita* del prototipo asociado.     
+- **escludi risorse in ordine cliente**: este indicador asegura que los recursos de la línea de artículo seleccionada no se incluyan en el pedido de cliente creado con la conversión de la oferta.     
+- **escludi materiali in ordine cliente**: este indicador asegura que los materiales de la línea de artículo seleccionada no se incluyan en el pedido de cliente creado con la conversión de la oferta.     
+- **sconti**: en esta cuadrícula se reportan los descuentos previstos para el cliente y se pueden agregar otros.     
+- **ricavi materiali/ricavi risorse**: en estos campos se reportan las columnas *ricavo* de las pestañas Recursos y Materiales; de esta manera, es posible entender directamente desde esta pestaña la incidencia de los importes en el precio total.     
+- **iva**: indica el IVA a aplicar.             
+- **fatturato vendite**: indica el [Facturación de ventas (Fatturato vendite)](/docs/configurations/tables/sales/sales-turnover) del artículo.                
+- **Fecha prevista de entrega/Periodo de prevista de entrega (Data prevista consegna/Periodo di prevista consegna)**: en estos campos es posible ingresar la fecha/periodo previstos para la entrega del artículo seleccionado.    
 
-### 3.b.2 Risorse
+### 3.b.2 Recursos (Risorse)
 
-In questa tab è possibile indicare i Ricavi ottenuti dalle varie Risorse. I campi presenti sono: 
-- **Risorsa**: richiede l'inserimento di una [Risorsa](/docs/project-management/registers/employee/new-employee) precodificata che ha svolto l'attività.     
-- **Unità di misura**: contiene l'unità di misura da utilizzare per la Risorsa; viene proposta quella di default inserita in anagrafica risorsa, ma si può cambiare.      
-- **Quantità/Costo unitario/Costo totale**: per ottenere il Costo totale viene moltiplicata automaticamente la Quantità inserita con il Prezzo unitario.      
-- **Percentuale/Valore**: in questi campi è possibile inserire un eventuale ricarico da applicare al Costo totale, in percentuale o valore.     
-- **Ricavo**: in questa colonna verrà calcolato automaticamente il Costo totale ricaricato.        
-- **Nota**: in questo campo è possibile inserire delle note libere.       
-- **Equivalente a tempo pieno**: in questo campo è possibile inserire a quanto corrispondono le giornate/ore della risorsa rispetto all'orario aziendale (ad esempio se una risorsa fa un orario part-time di 4 ore, 1 giornata di questa risorsa deve corrispondere a 0.5 giornate aziendali).     
+En esta pestaña es posible indicar los ingresos obtenidos de los diversos recursos. Los campos presentes son: 
+- **risorsa**: requiere el ingreso de un [Recurso](/docs/project-management/registers/employee/new-employee) precodificado que ha realizado la actividad.     
+- **unità di misura**: contiene la unidad de medida a utilizar para el recurso; se propone la que está por defecto en la ficha del recurso, pero se puede cambiar.      
+- **Cantidad/Costo unitario/Costo total (Quantità/Costo unitario/Costo totale)**: para obtener el costo total, la cantidad ingresada se multiplica automáticamente por el precio unitario.      
+- **percentuale/valore**: en estos campos es posible ingresar un eventual recargo a aplicar al costo total, en porcentaje o valor.     
+- **ricavo**: en esta columna se calculará automáticamente el costo total recargado.        
+- **nota**: en este campo es posible ingresar notas libres.       
+- **equivalente a tempo pieno**: en este campo es posible indicar a cuánto equivalen los días/horas del recurso respecto al horario empresarial (por ejemplo, si un recurso trabaja medio tiempo de 4 horas, 1 día de ese recurso debe equivaler a 0.5 días empresariales).     
 
-### 3.b.3 Materiali
+### 3.b.3 Materiales (Materiali)
 
-In questa tab è possibile indicare i Ricavi ottenuti dall'impiego di Materiali.      
-Nelle prime colonne della griglia è possibile inserire un Articolo codificato, Non codificato oppure Note, la sua eventuale Variante e l'iva. Le colonne successive sono:     
-- **Quantità/Costo unitario/Costo totale**: per ottenere il Costo totale viene moltiplicata automaticamente la Quantità inserita con il Costo unitario.      
-- **Tipo origine costo**: è possibile selezionare l'origine dalla quale popolare la colonna *Costo unitario* tra: Costo ultimo, Costo medio, Costo standard, Listino fornitore netto, Ordine fornitore o Fattura di acquisto; questo campo è parametrizzabile di default nei [Parametri offerta](/docs/configurations/parameters/sales/offer-parameters).    
-- **Percentuale/Valore**: in questi campi è possibile inserire un eventuale ricarico da applicare al Costo totale, in percentuale o valore.     
-- **Ricavo**: in questa colonna verrà calcolato automaticamente il Costo totale ricaricato.        
-- **Descrizione fornitore**: viene proposto il Fornitore preferenziale inserito in anagrafica articolo, ma è possibile modificarlo; se nella colonna *Tipo origine costo* è stato selezionato il listino fornitore, il listino considerato sarà quello valido per questo fornitore; inoltre, questo fornitore sarà l'intestatario della **Richiesta di offerta** generata dalla riga materiale.           
-- **Numero/Data richiesta**: contiene l'eventuale **Richiesta di offerta** creata per il Materiale; infatti, quando si è posizionati nel tab *Materiali*, nella barra degli strumenti compare il pulsante *Creazione Richiesta di offerta* che genererà la RDO per il materiale selezionato.    
-- **Nota**: in questo campo è possibile inserire delle note libere.   
+En esta pestaña es posible indicar los ingresos obtenidos del uso de materiales.      
+En las primeras columnas de la cuadrícula es posible insertar un artículo codificado, no codificado o notas, su eventual variante y el IVA. Las columnas siguientes son:     
+- **Cantidad/Costo unitario/Costo total (Quantità/Costo unitario/Costo totale)**: para obtener el costo total, la cantidad ingresada se multiplica automáticamente por el costo unitario.      
+- **tipo origine costo**: es posible seleccionar el origen del cual poblar la columna *Costo unitario* entre: Costo último, Costo medio, Costo estándar, Lista de precios del proveedor neto, Pedido del proveedor o Factura de compra; este campo es parametrizable por defecto en los [Parámetros de oferta](/docs/configurations/parameters/sales/offer-parameters).    
+- **percentuale/valore**: en estos campos es posible ingresar un eventual recargo a aplicar al costo total, en porcentaje o valor.     
+- **ricavo**: en esta columna se calculará automáticamente el costo total recargado.        
+- **descrizione fornitore**: se propone el proveedor preferencial insertado en la ficha del artículo, pero es posible modificarlo; si en la columna *Tipo de origen de costo* se ha seleccionado la lista del proveedor, la lista considerada será la válida para este proveedor; además, este proveedor será el titular de la **richiesta di offerta** generada por la línea de material.           
+- **Número/Fecha de solicitud (Numero/Data richiesta)**: contiene la eventual **richiesta di offerta** creada para el material; de hecho, cuando se está posicionado en la pestaña *Materiales*, aparece en la barra de herramientas el botón *creazione richiesta di offerta* que generará la RDO para el material seleccionado.    
+- **nota**: en este campo es posible ingresar notas libres.   
 
-Le altre tab presenti sono analoghe a quelle dell'offerta non gerarchica.     
+Las demás pestañas presentes son análogas a las de la oferta no jerárquica.     
 
-#### Pulsanti specifici
+#### Botones específicos (Pulsanti specifici)
 
-> **Crea nuovo prototipo**: questo bottone crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) per la riga articolo selezionata; il riferimento al preventivo generato viene riportato nel tab Dati articolo, campo Preventivo. Sarà possibile modificare il prototipo generato dal relativo modulo.      
-> **Associa prototipo**: con questo bottone è possibile associare l'offerta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.       
-> **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.       
-> **Import da progetto**: questa funzione apre l'help Articolo progetto, nel quale è possibile selezionare gli articoli provenienti da un progetto che vogliamo inserire nell'offerta di vendita. Il pop up si apre direttamente con il filtro sul cliente intestatario dell'offerta, per permettere di visualizzarne i relativi progetti.     
-> **Nuovo figlio**: permette di inserire una riga progetto figlia della riga selezionata.        
-> **Nuovo fratello**: permette di inserire una riga progetto nello stesso livello della riga selezionata.       
-> **Sostituisci il numero WBS**: permette di incorporare al Numero WBS delle righe anche il Numero del progetto.       
-> **Implodi**: consente di nascondere le righe dell'albero.       
-> **Esplodi**: consente di visualizzare le righe dell'albero.
+> **crea nuovo prototipo**: este botón crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) para la línea de artículo seleccionada; la referencia al presupuesto generado se reporta en la pestaña Datos del artículo, campo Presupuesto. Será posible modificar el prototipo generado desde el módulo correspondiente.      
+> **associa prototipo**: con este botón es posible asociar la oferta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) ya existente; se abre una ayuda en la que se puede elegir entre los prototipos disponibles para ese artículo.       
+> **apri prototipo**: este botón está habilitado si la línea de artículo seleccionada tiene un prototipo asociado, y permite abrirlo.       
+> **import da progetto**: esta función abre la ayuda Artículo proyecto, en la cual es posible seleccionar los artículos provenientes de un proyecto que queremos incluir en la oferta de venta. El pop-up se abre directamente con el filtro en el cliente titular de la oferta, para permitir visualizar sus respectivos proyectos.     
+> **nuovo figlio**: permite insertar una línea de proyecto hija de la línea seleccionada.        
+> **nuovo fratello**: permite insertar una línea de proyecto en el mismo nivel que la línea seleccionada.       
+> **sostituisci il numero wbs**: permite incorporar al número WBS de las líneas también el número del proyecto.       
+> **implodi**: permite ocultar las líneas del árbol.       
+> **esplodi**: permite visualizar las líneas del árbol.
 
-## **4. Riepiloghi Offerta**
+## **4. Resúmenes de la oferta (Riepiloghi Offerta)**
 
-In questa tab possono essere inseriti e sono validi per la totalità del documento:
+En esta pestaña pueden ser insertados y son válidos para la totalidad del documento:
 
-### 4.1 Sconti finali articoli
+### 4.1 Descuentos finales de artículos (Sconti finali articoli)
 
 import SummariesFinalDiscount from './../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount /> 
 
-### 4.2 Spese/Sconti/maggiorazioni finali 
+### 4.2 Gastos/Descuentos/mayoraciones finales (Spese/Sconti/maggiorazioni finali)
 
 import SummariesExpenses from './../../import/sections/summaries-expenses.md'
 

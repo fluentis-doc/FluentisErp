@@ -1,48 +1,42 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
 :::note[Info]
-La pratica di anticipare le fatture in banca è un'operazione finanziaria comunemente utilizzata dalle aziende per ottenere liquidità immediata, anticipando l’incasso delle fatture emesse nei confronti dei clienti. Questa operazione, chiamata anche sconto fatture, consente di convertire crediti commerciali in denaro liquido, migliorando così la gestione della cassa aziendale e la capacità di far fronte a pagamenti o investimenti senza dover aspettare i tempi di pagamento dei clienti.
+La práctica de anticipar las facturas en el banco es una operación financiera comúnmente utilizada por las empresas para obtener liquidez inmediata, anticipando la cobranza de las facturas emitidas a los clientes. Esta operación, también llamada descuento de facturas, permite convertir créditos comerciales en dinero en efectivo, mejorando así la gestión de la tesorería empresarial y la capacidad de hacer frente a pagos o inversiones sin tener que esperar los plazos de pago de los clientes.
 
-L’azienda presenta alla banca una o più fatture che non sono ancora state pagate dai clienti. La banca anticipa una parte del valore della fattura, solitamente tra il 70% e il 90%, trattenendo una quota come garanzia fino al saldo completo del pagamento. Una volta che il cliente paga la fattura, la banca trattiene una commissione e accredita il saldo residuo all’azienda.
+La empresa presenta al banco una o más facturas que aún no han sido pagadas por los clientes. El banco anticipa una parte del valor de la factura, generalmente entre el 70% y el 90%, reteniendo una cuota como garantía hasta el pago completo. Una vez que el cliente paga la factura, el banco retiene una comisión y acredita el saldo restante a la empresa.
 
-Contabilmente l'azienda registra un debito verso la banca per l'importo anticipato, quando il cliente paga l'azienda chiude il debito con la banca e registra i costi per commissioni ecc..
+Contablemente, la empresa registra una deuda hacia el banco por el importe anticipado; cuando el cliente paga, la empresa cierra la deuda con el banco y registra los costos por comisiones, etc.
 :::
 
-Con questo modulo di Fluentis ERP, è possibile gestire le distinte di anticipo fatture da presentare alla banca al netto di commissioni e interessi, e contabilizzare sia la presentazione sia l'incasso finale.
+Con este módulo de Fluentis ERP, es posible gestionar los descuentos de anticipos de facturas a presentar al banco, netos de comisiones e intereses, y contabilizar tanto la presentación como la cobranza final.
 
-Prima di inserire nuove distinte di anticipo, occorre preliminarmente gestire la Tabella TIPI ANTICIPO.
+Antes de introducir nuevos descuentos de anticipos, es necesario gestionar previamente la Tabla TIPOS DE ANTICIPO.
 
-In questa tabella sono definite le possibili tipologie di distinta ed i relativi parametri.
+En esta tabla se definen las posibles tipologías de descuento y sus parámetros correspondientes.
 
 ![](/img/it-it/treasury/advance/advances-collections/image01.png)
 
-**Codice / Descrizione**: Liberamente assegnabili dall'utente per qualificare la tipologia.
+**codice / descrizione**: Libremente asignables por el usuario para calificar la tipología.
 
-**Tipo calcolo** (codice / descrizione): le opzioni possibili sono Imponibile / Tot: Documento. Indica se la percentuale anticipata dalla banca debba essere calcolata con riferimento al total efattura oppure al solo imponibile.
+**tipo calcolo** (código / descripción): las opciones posibles son Imponible / Total: Documento. Indica si el porcentaje anticipado por el banco debe calcularse con referencia al total de la factura o solo al imponible.
 
-**Percentuale fatture anticipata**: inserire qui il valore della percentuale della fattura che sarà anticipata dalla banca.
+**percentuale fatture anticipata**: aquí se debe insertar el valor del porcentaje de la factura que será anticipada por el banco.
 
 ![](/img/it-it/treasury/advance/advances-collections/image02.png)
 
-**Tipo Acquisizione**: le possibili opazioni sono Scadenze / Fatture. Questa opzione controlla soltanto il modo in cui sono visualizzati i dati nella maschera di ricerca per la creazione della nuova distinta, ovvero se sarà selezioanbile l'intera fattura oppure le singole scadenze della fattura. In ogni caso dal punto di vista della base dati sono comunque gestite le scadenze (tutte) anche nel caso della modalità Fatture.
+**tipo acquisizione**: las posibles opciones son Vencimientos / Facturas. Esta opción solo controla cómo se visualizan los datos en la máscara de búsqueda para la creación del nuevo descuento, es decir, si se podrá seleccionar la factura completa o los vencimientos individuales de la factura. En cualquier caso, desde el punto de vista de la base de datos, las fechas de vencimiento (todas) también se gestionan en modo Facturas.
 
-**Numerazione**: è necessario impostare una numerazione dalla relativa tabella dei numeratori per questo tipo di documento.
+**numerazione**: es necesario establecer una numeración de la tabla de numeradores correspondiente para este tipo de documento.
 
-**Banca C/C**: (conto / sottoconto descrizione): inserire qui il sottoconto che sarà utilizzato nelle registrazioni contabili relativo al conto corrente bancario.
+**banca c/c**: (cuenta / descripción del subcuenta): inserte aquí la subcuenta que se utilizará en los registros contables relacionados con la cuenta corriente bancaria.
 
-**Conto bancario anticipi**: inserire il conto d'appoggio utilizzato per contabilizzare l'antipo bancario.
+**conto bancario anticipi**: inserte la cuenta de apoyo utilizada para contabilizar el anticipo bancario.
 
 ![](/img/it-it/treasury/advance/advances-collections/image03.png)
 
-**Conto interessi passivi**: inserire il conto da utilizzare per la contabilizzazione interessi
+**conto interessi passivi**: inserte la cuenta que se utilizará para la contabilización de intereses.
 
-**Conto commissioni**: inserire il conto da utilizzare per la contabilizzazione commissioni bancarie.
-
-
-
-
-
-
+**Cuenta de comisiones (Conto commissioni)**: inserte la cuenta que se utilizará para la contabilización de comisiones bancarias.

@@ -1,16 +1,16 @@
 ---
-title: Ricerca Taratura strumenti
+title: Búsqueda de Calibración de instrumentos (Ricerca Taratura strumenti)
 sidebar_position: 1
 ---
 
-Il filtro dati consente di inserire nuove *Tarature strumenti* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+El filtro de datos permite ingresar nuevas *Calibraciones de instrumentos (Tarature strumenti)* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuove *Tarature strumenti* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevas *Calibraciones de instrumentos (Tarature strumenti)* es necesario presionar el botón **nuovo**.
 
-### Modifica o Visualizzazione Taratura strumenti
+### Modificación o Visualización de Calibración de instrumentos (Modifica o Visualizzazione Taratura strumenti)
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

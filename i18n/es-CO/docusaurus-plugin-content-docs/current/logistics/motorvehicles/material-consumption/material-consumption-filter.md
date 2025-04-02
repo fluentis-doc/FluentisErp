@@ -1,32 +1,32 @@
 ---
-title: Consumo materiali (Filtro)
+title: Consumo de materiales (Consumo materiali (Filtro))
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Logistica > Automezzi > Consumo materiali**.
+El formulario se abre a través de la ruta **Logística > Vehículos > Consumo de materiales (Logistica > Automezzi > Consumo materiali)**.
 
-Questa form permette di gestire i movimenti realizzati per il consumo dei materiali legati agli automezzi creati nella tabella [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management).
+Este formulario permite gestionar los movimientos realizados para el consumo de los materiales relacionados con los vehículos creados en la tabla [Gestión de vehículos (Gestione automezzo)](/docs/logistics/motorvehicles/motorvehicle-management).
 
-**Ricerca Gestione automezzo**
+**Búsqueda de Gestión de vehículos (Ricerca Gestione automezzo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*: 
 
-> **Numero materiali**: indica la data del documento di consumo materiale;          
-> **Data materiali**: indica la data del documento di consumo materiale;         
-> **Utente**: indica l'utente che ha creato il documento di consumo materiale;      
-> **Codice automezzo**: indica il codice dell'automezzo presente nel documento di consumo materiale;               
-> **Descrizione automezzo**: indica la descrizione dell'automezzo presente nel documento di consumo materiale.             
+> **Número de materiales (Numero materiali)**: indica la fecha del documento de consumo de material;          
+> **Fecha de materiales (Data materiali)**: indica la fecha del documento de consumo de material;         
+> **utente**: indica el usuario que ha creado el documento de consumo de material;      
+> **Código de vehículo (Codice automezzo)**: indica el código del vehículo presente en el documento de consumo de material;               
+> **Descripción de vehículo (Descrizione automezzo)**: indica la descripción del vehículo presente en el documento de consumo de material.             
 
-**Inserimento Gestione automezzo**
+**Inserción de Gestión de vehículos (Inserimento Gestione automezzo)**
 
-Per poter inserire nuovi *movimenti di consumo materiali* è necessario premere il pulsante **Nuovo**.    
-Per il nuovo record vedasi la documentazione relativa a [Nuovo consumo materiali](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
+Para poder insertar nuevos *movimientos de consumo de materiales (movimenti di consumo materiali)* es necesario presionar el botón **nuovo**.    
+Para el nuevo registro, consulte la documentación relacionada a [Nuevo consumo de materiales (Nuovo consumo materiali)](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
 
-*Pulsanti specifici*: 
+*Botones específicos (Pulsanti specifici)*: 
 
-> **Crea registrazione**: permette di registrare il consumo di materiale creando il relativo movimento di magazzino;        
-> **Ripristina**: permette di ripristinare il consumo di materiale annullando il relativo movimento di magazzino.
+> **crea registrazione**: permite registrar el consumo de material creando el movimiento de almacén correspondiente;        
+> **ripristina**: permite restaurar el consumo de material anulando el movimiento de almacén correspondiente.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

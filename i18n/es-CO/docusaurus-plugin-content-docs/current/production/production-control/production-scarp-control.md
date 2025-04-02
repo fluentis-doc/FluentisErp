@@ -1,6 +1,6 @@
 ---
-title: Controllo scarti di produzione
+title: controllo scarti di produzione
 sidebar_position: 3
 ---
 
-Questa form consente di stampare il report **Controllo scarti di produzione** che per ogni articolo riporta tutte le quantità scartate nel periodo selezionato.
+Este formulario permite imprimir el informe **controllo scarti di produzione** que, para cada artículo, reporta todas las cantidades desechadas en el período seleccionado.

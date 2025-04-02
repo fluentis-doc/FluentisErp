@@ -1,5 +1,4 @@
 ---
-title: Lista rientri
+title: Lista de devoluciones (Lista rientri)
 sidebar_position: 1
 ---
-

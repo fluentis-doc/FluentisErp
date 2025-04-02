@@ -1,49 +1,48 @@
 ---
 sidebar_position: 1
-title: Regime Speciale dell'IVA Agricola
+title: Régimen Especial del IVA Agrícola (Regime Speciale dell'IVA Agricola)
 ---
 
-L’iva Agricola prevede la non detraibilità dell’iva per gli acquisti sottostanti a questo regime e l’applicazione di una percentuale di compensazione per le vendite del regime stesso: invece di detrarre l’iva acquisti come nel regime normale, l’iva negli acquisti è sempre indetraibile mentre l’iva applicata alle vendite è da versare solo in parte con un calcolo fisso, senza alcuna relazione con gli acquisti del periodo, applicando percentuali compensative variabili a seconda del tipo bene venduto.
+El IVA Agrícola prevé la no deducibilidad del IVA para las compras sujetas a este régimen y la aplicación de un porcentaje de compensación para las ventas del mismo régimen: en lugar de deducir el IVA de las compras como en el régimen normal, el IVA en las compras es siempre no deducible, mientras que el IVA aplicado a las ventas se debe pagar solo en parte con un cálculo fijo, sin relación alguna con las compras del período, aplicando porcentajes de compensación variables según el tipo de bienes vendidos.
 
-### Gestione preliminare delle tabelle
+### Gestión preliminar de las tablas (Gestione preliminare delle tabelle)
 
-Per gestire la percentuale compensativa andremo innanzi tutto a definire le necessarie aliquote iva in vendita, nelle quali andremo a sfruttare la ‘percentuale di indetraibilità’ per eseguire il calcolo:
+Para gestionar el porcentaje de compensación, primero definiremos las necesarias tasas de IVA en venta, en las cuales aprovecharemos la ‘porcentaje de no deducibilidad’ para realizar el cálculo:
 
 ![](/img/it-it/finance-area/other/agr1.png)
 
-In sostanza, se l’iva X ha percentuale compensativa Y, si andrà ad indicare Y nella colonna ‘% IVA agr. detr.’ (come dato informativo riportato in stampa della liquidazione iva) mentre si valorizzerà con il risultato di Y*100/X la percentuale da indicare in colonna ‘Perc. indetraibilità’.
+En esencia, si el IVA X tiene un porcentaje de compensación Y, se debe indicar Y en la columna ‘% IVA agr. detr.’ (como dato informativo que se muestra en la liquidación del IVA), mientras que se valorizará con el resultado de Y*100/X el porcentaje que se indicará en la columna ‘Perc. indetraibilità’.
 
-Andremo a definire uno specifico conto sul quale valorizzare la quota di iva compensata tramite l’applicazione della percentuale di indetraibilità, ad esempio
+Definiremos una cuenta específica en la que valorizar la parte de IVA compensada a través de la aplicación del porcentaje de no deducibilidad; por ejemplo:
 
 ![](/img/it-it/finance-area/other/agr2.png)
 
-Andremo a definire causali specifiche per suddividere le due Iva nelle registrazioni di vendita in regime agricolo, dove in particolare avremo 
--	un tipo movimento ‘vendita regime agricolo’
--	il conto iva specifico per la rilevazione della quota compensativa di iva
-Non è necessario definire un registro iva ad hoc per la rilevazione di queste operazioni.
+Definiremos causas específicas para dividir los dos IVAs en los registros de ventas en régimen agrícola, donde tendremos en particular:
+- un tipo de movimiento ‘venta régimen agrícola’
+- la cuenta de IVA específica para registrar la parte compensatoria del IVA
+No es necesario definir un registro de IVA ad hoc para el registro de estas operaciones.
 
 ![](/img/it-it/finance-area/other/agr3.png)
 
-Anche gli acquisti effettuati in regime agricolo dovranno essere gestiti con una causale contabile ad hoc, che ha la sola particolarità di essere legata al regime iva agricolo appunto.
+Incluso las compras realizadas en régimen agrícola deberán ser gestionadas con una causa contable ad hoc, que tiene la particularidad de estar vinculada al régimen de IVA agrícola.
 
 ![](/img/it-it/finance-area/other/agr4.png)
 
-Dato che l’iva acquisti registrata con questa causale dovrà avere sempre percentuale di indetraibilità 100% (o percentuale iva 0, se operazione non imponibili/esenti/escluse), si consiglia di valorizzare la scheda ‘Controllo aliquote IVA’ in modo da evitare valorizzazioni errate
+Dado que el IVA de las compras registradas con esta causa siempre deberá tener un porcentaje de no deducibilidad del 100% (o un porcentaje de IVA del 0, si se trata de operaciones no imponibles/exentas/excluidas), se recomienda valorizar la pestaña ‘Control de tasas de IVA’ para evitar valoraciones erróneas.
 
 ![](/img/it-it/finance-area/other/agr5.png)
 
-Nel caso si effettuino anche acquisti intracomunitari soggetti a regime agricolo, invece delle solite causali con tipo movimento acquisto intracomunitario e relativo giroconto iva, sono stati previsti due tipi movimento ad hoc, iva acquisti intracomunitario agricolo con il relativo giroconto iva agricolo.
-L’acquisto avrà nuovamente iva indetraibile al 100%, mentre in vendita sarà applicata l’iva che andrà versata: tale cambio di aliquota sarà gestibile tramite l’impostazione dell’aliquota iva automatica in griglia iva, come nei casi di reverse charge misto.
+En caso de que también se realicen compras intracomunitarias sujetas a régimen agrícola, en lugar de las habituales causas con tipo de movimiento de compra intracomunitaria y su correspondiente contrapartida de IVA, se han previsto dos tipos de movimiento ad hoc: IVA de compras intracomunitarias agrícolas con la correspondiente contrapartida de IVA agrícola.  
+La compra tendrá nuevamente IVA no deducible al 100%, mientras que en la venta se aplicará el IVA que se debe pagar: este cambio de tasa será gestionable a través de la configuración de la tasa de IVA automática en la cuadrícula de IVA, como en los casos de reverse charge mixto.
 
+### Resultados para la liquidación periódica del IVA (Risultati per la liquidazione IVA periodica)
 
-### Risultati per la liquidazione IVA periodica
-
-La liquidazione iva mostrerà il riepilogo dei movimenti in regime agricolo in questo modo:
+La liquidación del IVA mostrará el resumen de los movimientos en régimen agrícola de la siguiente manera:
 
 ![](/img/it-it/finance-area/other/agr6.png)
 
 ![](/img/it-it/finance-area/other/agr7.png)
 
-:::danger Attenzione
-La chiusura del conto ‘IVA vendite agricola’, utilizzato per rilevare la quota compensativa dell’iva vendite, dovrà essere gestito **manualmente** dall’utente con una rilevazione contabile specifica.
+:::danger Atención (Attenzione)
+El cierre de la cuenta ‘IVA ventas agrícolas’, utilizada para registrar la parte compensatoria del IVA de ventas, deberá ser gestionado **manualmente** por el usuario con una entrada contable específica.
 :::

@@ -1,59 +1,58 @@
 ---
-title: Ricerca Schede tecniche
+title: Búsqueda de Fichas Técnicas (Ricerca Schede tecniche)
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Schede tecniche**.   
+El filtro se encuentra en la ruta **Calidad > Controles de artículo > Fichas técnicas (Qualità > Controlli articolo > Schede tecniche)**.
 
-Le **Schede tecniche** catalogano tutte quelle informazioni che descrivono le caratteristiche dei prodotti associati come idonee ad un contratto, ad una specifica funzionale o ad un determinato impiego, possono essere personalizzabili per *Cliente*.   
-Vengono gestite le *revisioni* e la rintracciabilità tra *Schede tecniche* diverse*.   
-A standard sono disponibili le reportistiche di: *Scheda tecnica* (per uso interno) e *Scheda Prodotto* (ad uso commerciale).   
+Las **schede tecniche** catalogan toda la información que describe las características de los productos asociados como adecuados para un contrato, una especificación funcional o un determinado uso. Pueden ser personalizables por *cliente*.  
+Se gestionan las *revisioni* y la trazabilidad entre diferentes *schede tecniche*.  
+A estándar, están disponibles los reportes de: *scheda tecnica* (para uso interno) y *scheda prodotto* (para uso comercial).
 
+El filtro de datos permite ingresar nuevas *schede tecniche* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.
 
-Il filtro dati consente di inserire nuove *Schede tecniche* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+### ![](/img/neutral/common/search.png) Búsqueda de Fichas Técnicas
 
-### ![](/img/neutral/common/search.png) Ricerca Schede tecniche
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+### ![](/img/neutral/common/new.png) Ingreso de Fichas Técnicas
 
-### ![](/img/neutral/common/new.png) Inserimento Schede tecniche
+Para poder ingresar nuevas *schede tecniche* es necesario presionar el botón **nuovo**.
 
-Per poter inserire nuove *Schede tecniche* è necessario premere il pulsante **Nuovo**.   
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Fichas Técnicas
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Schede tecniche
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+*Botones específicos*:
 
-*Pulsanti specifici*:   
+### ![](/img/neutral/common/duplicate.png) Duplicar Ficha
 
-### ![](/img/neutral/common/duplicate.png) Duplica Scheda
+Para poder duplicar una *scheda tecnica* existente en una nueva *scheda tecnica* es necesario hacer clic en la cuadrícula sobre la *scheda tecnica* de la que se desea duplicar y presionar el botón **duplica scheda**. Se puede duplicar una sola *scheda tecnica* a la vez. Se mostrará una solicitud de:  
+> **tipo scheda**: es el *tipo scheda* de la nueva *scheda tecnica* (dato obligatorio).  
+> **del cliente**: es el *cliente* de la nueva *scheda tecnica*, se propone el número de *cliente* de la *scheda tecnica* de origen.  
+> **nuovo codice**: es el *codice* de la nueva *scheda tecnica* (dato obligatorio), se propone según lo previsto por el *metodo di codifica* asociado al *tipo scheda tecnica*.  
+> **duplica con rintracciabilità**: indica si se desea mantener relación/trazabilidad, en la *scheda tecnica* de origen (tabulador *schede correlate* de la *scheda tecnica* de origen) y en la *scheda tecnica* de destino (en el expander *origine dati scheda* presente en los *dati di testata*).  
 
-Per poter duplicare una *Scheda tecnica* esistente in una nuova *Scheda tecnica* è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera duplicare e premere il pulsante **Duplica scheda**. Si può duplicare una sola *Scheda tecnica* alla volta. Viene visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* della *Scheda tecnica* di origine.   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di origine (tabulatore *Schede correlate* della *Scheda tecnica* di origine) e nella *Scheda tecnica* di destinazione (nell'expander *Origine dati scheda* presente nei *dati di testata*).   
+Después, presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de duplicación o no.  
+La nueva *scheda tecnica* creada tendrá la *revisione* igual a *zero*.  
+Al final del procesamiento, se visualizará la nueva *scheda tecnica*.
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-La nuova *Scheda tecnica* creata avrà la *Revisione* pari a *Zero*.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+### ![](/img/neutral/common/execute.png) Crear nueva revisión
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+Para poder crear una nueva *revisione* de una *scheda tecnica* existente, es necesario hacer clic en la cuadrícula sobre la *scheda tecnica* de la que se desea crear una nueva *revisione* y presionar el botón **crea nuova revisione**. Se puede crear una nueva *revisione* para una sola *scheda tecnica* a la vez.  
+Se crea una nueva *scheda tecnica*, con toda la información de la *scheda tecnica* de origen, pero con el índice de *revisione* incrementado y la *Fecha de inicio de validez (Data di inizio validità)* igual a la fecha actual.  
+La *scheda tecnica* de origen pierde su validez, la *data fine validità* se establece como igual a la fecha actual.  
+Al final del procesamiento, se visualizará la nueva *revisione* de la *scheda tecnica*.
 
-Per poter creare una nuova *Revisione* ad una *Scheda tecnica* esistente è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera creare una nuova *Revisione* e premere il pulsante **Crea nuova revisione**. Si può creare una nuova *Revisione* per una sola *Scheda tecnica* alla volta.   
-Viene creata una nuova *Scheda tecnica*, con tutte le informazioni della *Scheda tecnica* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.   
-La *Scheda tecnica* di origine finisce la sua validità, la *Data fine validità* viene impostata pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* della *Scheda tecnica* viene visualizzata.   
+### ![](/img/neutral/common/item-web.png) Crear Plan de Control
 
-### ![](/img/neutral/common/item-web.png) Crea Piano di controllo
+Desde la *scheda tecnica* es posible crear un *piano di controllo*; para hacerlo, es necesario hacer clic en la cuadrícula sobre la *scheda tecnica* de la que se desea duplicar y presionar el botón **Crear nuevo Plan de Control (Crea nuovo Piano di controllo)**. Se puede crear un nuevo *piano di controllo* para una sola *scheda tecnica* a la vez.  
+Se crea un nuevo *piano di controllo*; se copian solamente las *proprietà* de origen con el indicador *Pruebas a realizar (Prove da rilevare)*; toda la otra información de la *scheda tecnica* se copia pero con el índice de *revisione* igual a *zero* y con la *Fecha de inicio de validez (Data di inizio validità)* igual a la fecha actual. Se mostrará una solicitud de:  
+> **tipo piano di controllo**: es el *tipo piano di controllo* del nuevo *piano di controllo* (dato obligatorio).  
+> **numero**: es el *numero* progresivo del nuevo *piano di controllo* (dato obligatorio), se propone según lo previsto por la *numerazione* asociada al *tipo piano di controllo* y a la fecha actual.  
+> **crea mantenendo la rintracciabilità**: indica si se desea mantener relación/trazabilidad de la *scheda tecnica* de origen en el *piano di controllo* de destino (en el expander *origine piano di controllo* presente en los *dati di testata*).  
 
-Dalla *Scheda tecnica* è possibile creare un *Piano di controllo*; per fare ciò è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera duplicare e premere il pulsante **Crea nuovo Piano di controllo**. Si può creare un nuovo *Piano di controllo* per una sola *Scheda tecnica* alla volta.   
-Viene creato un nuovo *Piano di controllo*, vengono copiate solamente le *Proprietà* di origine con l'indicatore *Prove da rilevare*, tutte le altre informazioni della *Scheda tecnica* ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, della *Scheda tecnica* di origine, nel *Piano di controllo* di destinazione (nell'expander *Origine Piano di controllo* presente nei *dati di testata*).   
+Después, presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de creación o no.  
+Al final del procesamiento, se visualizará el nuevo *piano di controllo*.
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

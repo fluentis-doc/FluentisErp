@@ -1,61 +1,58 @@
 ---
-title: Richiesta Ferie/Permessi
+title: richiesta ferie/permessi
 sidebar_position: 4
 ---
 
-La richiesta Ferie/Permessi permette all’utente di richiedere direttamente da Fluentis i giorni o le ore di ferie, permessi o malattia. 
-Le informazioni richieste e da inserire da parte dell’utente sono:
+La solicitud de Vacaciones/Permisos permite al usuario solicitar directamente desde Fluentis los días u horas de vacaciones, permisos o enfermedad.  
+La información requerida y que debe ingresar el usuario es:
 
-**Da data/A data**: viene inserito il periodo di tempo, in giorni e in ore, per cui si vuole fare la richiesta; lasciando 00:00 come orario di inzio e fine, in fase di generazione dichiarazione attività, verrà utilizzato come orario di inizio e fine quelli configurati nel turno della risorsa; 
+**Desde fecha/Hasta fecha (Da data/A data)**: se ingresa el período de tiempo, en días y horas, para el cual se desea hacer la solicitud; al dejar 00:00 como hora de inicio y fin, en la fase de generación de la declaración de actividades se utilizarán como hora de inicio y fin aquellas configuradas en el turno del recurso;  
 
-**Risorsa**: viene proposta la risorsa dell’utente di accesso a Fluentis; 
+**risorsa**: se propone el recurso del usuario que accede a Fluentis;  
 
-**Motivo**: contiene l'elenco delle causali di assenza configurate per la società. 
+**motivo**: contiene la lista de las causas de ausencia configuradas para la empresa.  
 
-**Gestito**: flag che indica se la richiesta è già stata gestita. Si può abilitare manualmente oppure al termine della procedura effettuata con il bottone "Conferma Periodo"
+**gestito**: indicador que muestra si la solicitud ya ha sido gestionada. Se puede habilitar manualmente o al finalizar el procedimiento realizado con el botón "Confirmar Período (Conferma Periodo)"  
 
-**Data creazione**: è la data di creazione della richiesta; 
+**data creazione**: es la fecha de creación de la solicitud;  
 
-**Utente di creazione**: contiene l’utente che ha creato la richiesta e viene proposto l’utente stesso di accesso;
+**Usuario de creación (Utente di creazione)**: contiene el usuario que ha creado la solicitud y se propone el mismo usuario que accede;  
 
-**Manager**: elenco utenti tra cui selezionare la figura manager per la risorsa; dato non obbligatorio;
+**manager**: lista de usuarios entre los cuales seleccionar la figura del gerente para el recurso; dato no obligatorio;  
 
-**Team Leader**: elenco utenti tra cui selezionare la figura team leader per la risorsa; dato non obbligatorio;
+**team leader**: lista de usuarios entre los cuales seleccionar la figura del líder del equipo para el recurso; dato no obligatorio;  
 
-**Email**: viene proposta la email dell’utente che fa la richiesta; 
+**email**: se propone el correo electrónico del usuario que realiza la solicitud;  
 
-**Email CC**: indirizzo email che verrà inserito in cc nella mail automatica di approvazione della richiesta; se selezionato team leader e/o manager, le rispettive email verranno inserite in cc; 
+**email cc**: dirección de correo electrónico que se incluirá en CC en el correo automático de aprobación de la solicitud; si se selecciona un líder de equipo y/o gerente, sus respectivos correos electrónicos se incluirán en CC;  
 
-**Soggetto**: descrizione della richiesta; 
+**soggetto**: descripción de la solicitud;  
 
-**Nota**: è possibile dettagliare eventualmente la richiesta;
+**nota**: es posible detallar eventualmente la solicitud;  
 
-**Risultati**: eventuali risultati se la richiesta viene gestita tramite workflow (ad es. confermata, cancellata, motivo cancellazione, etc)
+**risultati**: posibles resultados si la solicitud se gestiona a través de un flujo de trabajo (por ejemplo, confirmada, cancelada, motivo de cancelación, etc.)  
 
-Nella ribbon bar sono presenti i seguenti bottoni: 
+En la barra de ribbon están presentes los siguientes botones:  
 
-**Conferma periodo**: cliccando sul bottone verrà aperta la videata per inserire il progetto di riferimento, la categoria attività ed il flag per Creare un periodo ferie nella dichiarazione attività con i dati appena inseriti.
-Alla risorsa di riferimento è possibile inviare una notifica via email. 
-Al termine della procedura abiliterà il flag "Gestito"
+**conferma periodo**: al hacer clic en el botón se abrirá la pantalla para ingresar el proyecto de referencia, la categoría de actividad y el indicador para crear un período de vacaciones en la declaración de actividades con los datos recién ingresados.  
+A la recurso de referencia es posible enviar una notificación por correo electrónico.  
+Al finalizar el procedimiento, se habilitará el indicador "Gestionado (Gestito)"  
 
-**Rollback del periodo**: permette di eliminare le attività generate dalla conferma periodo e di ripristinare il flag Gestito. 
+**rollback del periodo**: permite eliminar las actividades generadas por la confirmación del período y restaurar el indicador Gestionado.  
 
-**Apri il calendario delle risorse**: Apre la visualizzazione calendario che permette di selezionare diverse risorse e valutare gli appuntamenti presenti. 
+**apri il calendario delle risorse**: abre la visualización del calendario que permite seleccionar diferentes recursos y evaluar las citas presentes.  
 
-Possibili scenari relativi alla Conferma periodo con sovrapposizioni: 
+Posibles escenarios relacionados con la Confirmación del período con superposiciones:  
 
-- la richiesta di ferie ha già il flag "Gestito" abilitato: verrà fatto richiesta "Richiesta già gestita, vuoi procedere nuovamente?" 
-Rispondendo no, verrà bloccato tutto il processo. 
-Rispondendo sì, verranno reinserite le dichiarazioni attività ferie e sovrascritte quelle generate in precedenza dalla richiesta ferie (se presenti). 
+- si la solicitud de vacaciones ya tiene el indicador "Gestionado (Gestito)" habilitado: se hará la pregunta "Solicitud ya gestionada, ¿deseas proceder nuevamente?"  
+Si se responde no, todo el proceso quedará bloqueado.  
+Si se responde sí, se volverán a ingresar las declaraciones de actividad de vacaciones y se sobrescribirán aquellas generadas anteriormente por la solicitud de vacaciones (si están presentes).  
 
-- la richiesta di ferie ha  il flag "Gestito" disabilitato ma esistono altre dichiarazioni attività nello stesso periodo: 
-"Le attività si sovrappongono: *dettaglio attività* - *ferie* Vuoi continuare? "
+- si la solicitud de vacaciones tiene el indicador "Gestionado (Gestito)" deshabilitado pero existen otras declaraciones de actividad en el mismo período:  
+"Las actividades se superponen: *detalle de actividades* - *vacaciones* ¿Deseas continuar?"  
 
-Rispondendo Sì : verranno generate tutte le dichiarazioni attività per il periodo ferie richiesto
+Si se responde Sí: se generarán todas las declaraciones de actividad para el período de vacaciones solicitado.  
 
-Rispondendo No : verranno generate solo le dichiarazioni attività per le giornate senza altre dichiarazioni attività presenti
+Si se responde No: solo se generarán las declaraciones de actividad para los días sin otras declaraciones de actividad presentes.  
 
-Se nella giornata fosse presente anche solo una dichiarazione attività per un orario lavorativo parziale, la giornata verrà comunque saltata e non verranno inserite ferie. 
-
-
-
+Si en el día hubiera presente incluso solo una declaración de actividad para un horario laboral parcial, el día será omitido y no se registrarán vacaciones.

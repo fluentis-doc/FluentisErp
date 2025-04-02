@@ -1,15 +1,14 @@
 ---
-title: FAQ Logistica
+title: FAQ Logística (FAQ Logistica)
 sidebar_position: 1
 ---
 
-
 <details>
 
-  <summary>1. Nella <b>Visualizzazione giacenze</b> come vengono utilizzati i filtri dell'UM alternativa?</summary>
+  <summary>1. En la <b>Visualización de existencias (Visualizzazione giacenze)</b>, ¿cómo se utilizan los filtros de la UM alternativa?</summary>
   
-Questo filtro viene utilizzato nel caso in cui il cliente abitualmente cambi il fattore di conversione degli articoli per svariati motivi.
-Il filtro <b>somma dei movimenti</b> considera l'UM alternativa come somma dei movimenti di carico/scarico effettuati e prende come valori i valori presenti nelle registrazioni di magazzino.
-Il filtro <b>fattore di conversione</b> effettua invece un ricalcolo per tutti i movimenti andando ad inserire il fattore di conversione attivo al momento della ricerca e quindi ignorando il valore interno alle registrazioni di magazzino e inserendo la nuova conversione in base al nuovo fattore.
+Este filtro se utiliza en caso de que el cliente cambie habitualmente el factor de conversión de los artículos por diversas razones.  
+El filtro <b>suma de movimientos (somma dei movimenti)</b> considera la UM alternativa como la suma de los movimientos de carga/descarga efectuados y toma como valores los registros presentes en el almacén.  
+El filtro <b>factor de conversión (fattore di conversione)</b> realiza un recálculo para todos los movimientos incorporando el factor de conversión activo en el momento de la búsqueda, ignorando el valor interno en los registros de almacén y aplicando la nueva conversión según el nuevo factor.
 
 </details>

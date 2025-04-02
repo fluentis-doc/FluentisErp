@@ -1,43 +1,43 @@
 ---
-title: Workflow Log
+title: workflow log
 sidebar_position: 2
 ---
 
-Questa è la prima tab della maschera dei **Contatti CRM**. Questa tab compare solo se per i Contatti CRM è stato attivato un workflow che preveda la visualizzazione del tab log. Per approfondimenti tecnici si rimanda alla documentazione sui workflow.     
-L'utilizzo di un workflow per la gestione dei Contatti permette di gestire il rapporto con il potenziale cliente a stadi. I vari stadi del workflow possono prevedere diverse attività per la conquista del cliente, che dipenderanno dal tipo di rapporto raggiunto in quel determinato stadio: per esempio, nello stadio della Qualificazione sarà importante effettuare una call conoscitiva, invece nello stadio dell'Opportunità no perchè il cliente ci conosce già e sta valutando l'acquisto.       
+Esta es la primera pestaña del formulario de **contatti crm**. Esta pestaña aparece solo si se ha activado un flujo de trabajo para los Contactos CRM que incluya la visualización de la pestaña de registro. Para más información técnica, se remite a la documentación sobre flujos de trabajo.  
+El uso de un flujo de trabajo para la gestión de Contactos permite gestionar la relación con el cliente potencial en diferentes etapas. Las distintas etapas del flujo de trabajo pueden incluir diversas actividades para conquistar al cliente, que dependerán del tipo de relación alcanzada en esa etapa determinada: por ejemplo, en la etapa de Calificación será importante realizar una llamada introductoria, mientras que en la etapa de Oportunidad no, porque el cliente ya nos conoce y está evaluando la compra.  
 
-Sono presenti due tab: Attività e Log.
+Hay dos pestañas disponibles: Actividades y Registro (Log).
 
-## Attività 
+## Actividades
 
-I campi disponibili nel dettaglio delle attività sono divisi in 2 riquadri, **Attività** e **Attività in sospeso**. Il primo serve per dettagliare l’attività già svolta, mentre nel secondo possono già essere definite alcune informazioni riguardo l’attività che dovrà essere svolta successivamente a quella già inserita.
+Los campos disponibles en el detalle de las actividades están divididos en 2 cuadros: **attività** y **attività in sospeso**. El primero sirve para detallar la actividad ya realizada, mientras que en el segundo se pueden definir algunas informaciones respecto a la actividad que se deberá realizar después de la ya ingresada.
 
-Nel primo riquadro sono presenti i seguenti campi:
+En el primer cuadro están presentes los siguientes campos:
 
-**Tipo Attività**: è possibile specificare la tipologia di attività effettuata per il contatto; le tipologie vengono definite nella tabella Tipi Attività di Arm; in base alle impostazioni inserite nel workflow, le attività potranno cambiare in base allo stadio del workflow in cui si è;          
+**tipo attività**: es posible especificar la tipología de actividad realizada para el contacto; las tipologías se definen en la tabla Tipos de Actividad de Arm; según las configuraciones establecidas en el flujo de trabajo, las actividades podrán cambiar dependiendo de la etapa en la que se encuentre el flujo de trabajo;  
 
-**Data**: questo campo viene compilato automaticamente dalla procedura nel momento in cui venga inserito il campo **Tipo Attività**; 
+**data**: este campo se completa automáticamente por el procedimiento en el momento en que se ingresa el campo **tipo attività**;  
 
-**Operatore**: contiene l'utente Fluentis che ha effettuato l'inserimento;    
+**operatore**: contiene el usuario de Fluentis que realizó la inserción;  
 
-**Descrizione attività**: è possibile specificare i dettagli dell'attività in questo campo.     
+**descrizione attività**: se pueden especificar los detalles de la actividad en este campo.  
 
-Nel secondo riquadro sono invece presenti i seguenti campi:
+En el segundo cuadro se encuentran los siguientes campos:
 
-**Data attività in attesa**: questo campo viene compilato automaticamente dalla procedura nel momento in cui venga inserito il campo **Tipo Attività**;
+**data attività in attesa**: este campo se completa automáticamente por el procedimiento en el momento en que se ingresa el campo **tipo attività**;  
 
-**Tipo Attività**: è possibile specificare la tipologia di attività sospesa per il contatto; 
+**tipo attività**: es posible especificar la tipología de actividad pendiente para el contacto;  
 
-**Descrizione attività**: in questo campo è possibile definire nel dettaglio l’attività che dovrà essere svolta;
+**descrizione attività**: en este campo se puede definir en detalle la actividad que se deberá realizar;  
 
-**Data chiusura**: è possibile impostare una data di scadenza per l’attività;
+**data chiusura**: es posible establecer una fecha de vencimiento para la actividad;  
 
-**Operatore**: deve essere definito l’utente di Fluentis che dovrà effettuare l’attività;
+**operatore**: debe definirse el usuario de Fluentis que deberá realizar la actividad;  
 
-**Data inizio/fine promemoria**: in questo campo può essere indicata il range di date in cui dovrà essere visualizzato un promemoria per l’attività successiva;        
+**Fecha de inicio/final del recordatorio (Data inizio/fine promemoria)**: en este campo puede indicarse el rango de fechas en el cual se deberá visualizar un recordatorio para la actividad siguiente;  
 
-**Crea attività**: apponendo la spunta su questa voce verrà creata una nuova voce nella sezione **Attività** di Fluentis per l’utente indicato nel campo **Operatore**. Tale automatismo scatterà al momento del salvataggio del contatto.    
+**crea attività**: marcando esta opción se creará un nuevo elemento en la sección **attività** de Fluentis para el usuario indicado en el campo **operatore**. Esta automatización se activará al momento de guardar el contacto.  
 
-## Log 
+## Registro (Log)
 
-In questo tab vengono visualizzati i cambiamenti di stato del workflow, con indicati: lo stato di partenza e di arrivo, l'operatore che ha effettuato l'operazione, la data.   
+En esta pestaña se visualizan los cambios de estado del flujo de trabajo, indicando: el estado de inicio y de llegada, el operador que realizó la operación, y la fecha.

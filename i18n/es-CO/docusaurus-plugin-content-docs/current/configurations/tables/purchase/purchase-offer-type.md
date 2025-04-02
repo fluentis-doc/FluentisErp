@@ -1,20 +1,20 @@
 ---
-title: Tipo richiesta di offerta
+title: tipo richiesta di offerta
 sidebar_position: 2
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di richieste di offerta disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi richiesta di offerta*.     
+Esta tabla es fundamental para definir las diversas tipologías de solicitudes de oferta disponibles, cada una con sus propias características. Se puede acceder desde *Configuración > Tablas > Compras > Tipos de solicitud de oferta (Configurazione > Tabelle > Acquisti > Tipi richiesta di offerta)*. 
 
-I campi presenti sono:
+Los campos presentes son: 
 
-**Codice/Descrizione**: campi obbligatori per identificare il tipo di richiesta.
+**codice/descrizione**: campos obligatorios para identificar el tipo de solicitud. 
 
-**Numerazione**: contiene la [Numerazione](/docs/configurations/tables/fluentis-numerations) associata;      
+**numerazione**: contiene la [Numeración](/docs/configurations/tables/fluentis-numerations) asociada; 
 
-**Tipo ordine fornitore**: contiene il [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type) e la relativa **descrizione**da creare partendo dalla RDO, nella procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).         
+**tipo ordine fornitore**: contiene el [Tipo de pedido al proveedor](/docs/configurations/tables/purchase/purchase-orders-type) y la respectiva **descripción** que se creará a partir de la RDO, en el procedimiento de [Creación de pedido al proveedor desde oferta de proveedor](/docs/purchase/offer-request/procedures/order-creation). 
 
-**Prezzo ivato**: questo flag indica che nelle righe del documento sarà presente il Prezzo già ivato.    
+**prezzo ivato**: este indicador señala que en las líneas del documento estará presente el Precio ya incluido el IVA. 
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**stampa**: en este campo es posible elegir la impresión que se utilizará por defecto (se recuerda que, para imprimir el informe predeterminado, en el proceso de impresión será necesario seleccionar la opción *Impresiones múltiples*); en el siguiente campo es posible indicar un **Número de copias** a imprimir. 
 
-**Gestione cespiti**: questo flag indica che la tipologia di RDO deve gestire i cespiti; nel campo successivo è necessario indicare il **Tipo operazione**, che nel caso degli acquisti sarà sempre un *Costo originario*.     
+**gestione cespiti**: este indicador señala que la tipología de RDO debe gestionar los activos; en el siguiente campo es necesario indicar el **Tipo de operación**, que en el caso de las compras será siempre un *costo originario*.

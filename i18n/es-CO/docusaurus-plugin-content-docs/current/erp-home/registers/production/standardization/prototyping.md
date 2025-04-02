@@ -1,22 +1,16 @@
 ---
-title: Ricerca prototipazione
+title: Búsqueda de prototipado (Ricerca prototipazione)
 sidebar_position: 1
 ---
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se hayan establecido todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder ingresar nuevos registros es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-*Pulsante specifico*:
+*Botón específico (Pulsante specifico)*:
 
-> **Ricalcolo costi**: selezionando una o più righe prototipo e cliccando sul pulsante di ricalcolo costo il sistema andrà a ricalcolare i costi di quel prototipo basandosi sui costi che lo compongono.
+> **ricalcolo costi**: seleccionando una o más filas de prototipo y haciendo clic en el botón de recálculo de costos, el sistema recalculará los costos de ese prototipo basándose en los costos que lo componen.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-
-
-
-
-
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

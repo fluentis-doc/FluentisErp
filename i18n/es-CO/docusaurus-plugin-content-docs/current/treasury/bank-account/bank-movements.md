@@ -1,58 +1,55 @@
 ---
-title: Movimenti Bancari
+title: movimenti bancari
 sidebar_position: 1
 ---
 
+El módulo de cuentas corrientes permite al operador controlar y reconciliar los movimientos bancarios en contabilidad con el extracto bancario (o lista de movimientos) que se puede descargar como archivo telemático desde muchos sitios de banca corporativa.
 
-Il modulo conti correnti consente all'operatore di controllare e riconciliare i movimenti bancari in contabilità con l'estratto conto (o lista movimenti) che è possibile scaricare come file telematico da molti siti di Corporate banking. 
+El módulo se encuentra en el área de tesorería y obtiene los datos de la contabilidad.
 
-Il modulo è presente nell'area tesoreria e preleva i dati dalla contabilità. 
+### Importación de movimientos
+Esta máscara permite ejecutar la importación de los movimientos de cuenta corriente desde el archivo telemático (estándar ABI) que se puede extraer del home banking.
 
+Para proceder con la importación, primero es necesario configurar en la parte inferior de la máscara (en la parte inferior) la subcuenta bancaria para la cual se desea importar el archivo, luego al presionar el botón ***Nuevo*** se abrirá la máscara de importación del archivo telemático que permite definir la ubicación donde está almacenado el archivo a importar. Al finalizar la operación, aparecerá en la grilla una nueva línea de importación: con un doble clic en la misma o a través del botón ***Modificar*** es posible visualizar el detalle de los datos importados.
 
-### Importazione movimenti
-La presente maschera consente di eseguire l'importazione dei movimenti di conto corrente dal file telematico (standard abi) che si può estrarre dall'home banking.
+Los movimientos así importados serán utilizables en el procedimiento de reconciliación C/C o, alternativamente, (si el movimiento o los movimientos contenidos en el archivo no han sido contabilizados aún) proceder a la creación automática de la escritura contable a partir de los datos del archivo.
 
-Per procedere all'importazione è necessario innanzi tutto impostare alla base della maschera (in basso) il sottoconto bancario per il quale si vuole importare il file, poi premendo il pulsante ***Nuovo*** si aprirà la maschera di importazione del file telematico che permette di definire la posizione dove è memorizzato il file da importare. Al buon fine dell'operazione apparirà in griglia una nuova riga di importazione: con un doppio click sulla stessa oppure attraverso il pulsante ***Modifica*** è possibile visualizzare il dettaglio dei dati importati.
+### Máscara de búsqueda / lista de movimientos importados
+En la máscara principal donde se buscan todos los movimientos importados, es posible filtrar a través de los indicadores apropiados solo los movimientos a reconciliar, solo aquellos reconciliados o ambos.
+En la grilla de resultados se indican dos indicadores que identifican si el movimiento ha sido ya ***Reconciliado*** con las escrituras contables introducidas previamente, o si el movimiento importado ha generado automáticamente la escritura contable (***Cuenta Reconciliada***).
 
-I movimenti così importati saranno così utilizzabili nella procedura di riconciliazione C/C oppure, in alternativa, (se il movimento o i movimenti contenuti nel file non sono ancora stati contabilizzati) di procedere alla creazione automatica della scrittura contabile a partire dai dati del file.
+Se presentan además otros datos reportados del detalle del archivo importado, de los cuales se destacan los más importantes, tales como la fecha, los saldos, totales y parciales de la lista de movimientos, el signo (débito / crédito) y el número de movimientos contenidos.
 
+### Detalle del movimiento y procedimientos de reconciliación
+Al acceder al detalle del movimiento mediante el doble clic o el botón ***Modificar***, se visualizan en la grilla de resultados los varios movimientos contenidos en el archivo con su respectivo importe, signo y fecha de valor del banco. También se reportan los datos de la registración contable presente o generada en Fluentis correspondiente. En primer lugar, el indicador que identifica si el movimiento de detalle ha sido ya reconciliado o no todavía.
 
-### Maschera di ricerca / lista movimenti importati
-Nella maschera principale dove vengono ricercati tutti i movimenti importati, è possibile filtrare tramite gli appositi flag solo i movimenti da riconciliare, solo quelli riconciliati o entrambi.
-Nella griglia del risultato sono riportati due flag che identificano se il movimento sia già stato ***Riconciliato*** con le scritture contabili inserite in precedenza, oppure se il movimento importato ha generato automaticamente la scrittura contabile (***Conto Riconciliato***).
+Para visualizar el detalle de la descripción del movimiento contenida en el archivo, use el botón + que aparece a la izquierda del campo Reconciliados (en la posición más inicial).
 
-Seguono ulteriori dati riportati dal dettaglio del file importato dei quali segnaliamo i più importanti quali la data, i saldi, totali e parziali della lista movimenti, il segno (debito / credito) ed il numero dei movimenti contenuti.
+**PROCEDIMIENTOS POSIBLES:**
 
-### Dettaglio del movimento e procedure di riconciliazione
-Entrando nel dettaglio del movimento tramite il doppio click o il tasto ***Modifica***, vengono visualizzati nella griglia del risultato i vari movimenti contenuti nel file con il relativo importo, segno e data valuta banca. Vengono inoltre riportati i dati della registrazione contabile presente o generata in Fluentis corrispondente. Al primo posto il flag che identifica se il movimento di dettaglio sia già stato riconciliato o non ancora.
+- **riconciliazione automatica***: aparece una ventana emergente que permite seleccionar mediante indicadores los criterios automáticos de cruce de datos (por ejemplo, misma fecha, mismo importe, etc.); la búsqueda y reconciliación comienza con el botón **esegui*** y puede cancelarse con el botón **annulla***. Automáticamente, los movimientos se actualizarán marcando el indicador de reconciliado, mientras que los que no se encuentran podrán reconciliarse manualmente o, si efectivamente faltan, proceder a su creación automática.
 
-Per visualizzare il dettaglio della descrizione del movimento contenuta nel file utilizzare il pulsante + presenta alla sinistra del campo Riconciliati (in primissima posizione). 
+- **riconciliazione manuale***: Al presionar el botón se abrirá automáticamente la máscara de [**visualizzazione conti***](/docs/finance-area/ledger-records/records/view-accounts) y automáticamente se completarán los filtros de la subcuenta (correspondiente a la de nuestro banco) y de las fechas para corresponder al movimiento a reconciliar. En este punto **es necesario presionar el botón Visualizar cuentas** y buscar. Una vez identificado el movimiento correspondiente, seleccione la línea y presione el botón **riconcilia*** (siempre en la barra de ribbon). En este punto, el movimiento queda reconciliado manualmente, y se actualizan los enlaces a la registración y los indicadores.
 
-**PROCEDURE POSSIBILI:**
+- **annulla riconciliazione***: permite anular un procedimiento de reconciliación ya realizado, eliminando los enlaces a las registraciones contables.
 
-- ***Riconciliazione automatica***: appare un popup che permette si scegliere tramite flag i criteri automatici dell'incrocio dati (esempio stessa data, stesso importo ecc.) la ricerca e riconciliazione si avvia con il tasto ***Esegui*** e può essere cancellata con il tasto ***Annulla***. In automatico i movimenti saranno aggiornati apponendo il flag di riconciliato mentre quelli non trovati potranno essere riconciliati manualmente o se effettivamente mancanti, procedere alla loro creazione automatica.
+- **contabilizza***: al presionar el botón, con el fin de crear automáticamente la escritura contable, aparece una ventana emergente donde seleccionar la causale contable deseada; a continuación, se abre automáticamente la máscara de la registración contable donde están preestablecidos todos los datos extraídos del archivo importado y solo queda completar los eventuales datos adicionales (como por ejemplo las partidas a cerrar en caso de cobros o pagos, etc.) y así guardar la registración contable.
 
-- ***Riconciliazione manuale***: Premendo il tasto si apre automaticamente la maschera di [***Visualizzazione conti*** ](/docs/finance-area/ledger-records/records/view-accounts) ed in automatico sono compilati i filtri del sottoconto (corrispondente a quello della nostra banca) e delle date per corrispondere al movimento da riconciliare. A questo punto **occorre premere il bottone Visualizza conti** e ricercare. Una volta individuato il movimento corrispondente, selezionare la riga e premere il bottone ***Riconcilia*** (sempre nella ribbon bar). A questo punto il movimento è riconciliato manualmente, e vengono aggiornati i collegamenti alla registrazione ed i flag.
+:::important[Detalle del procedimiento de contabilización: enlace automático de las partidas abiertas]
+Dependiendo del banco que hace disponibles los archivos telemáticos, existen archivos más o menos detallados.
 
-- ***Annulla riconciliazione***: permette di annullare una procedura di riconciliazione già effettuata cancellando i collegamenti alle registrazioni contabili.
+La lógica según la cual Fluentis puede gestionar automáticamente, en la escritura generada (por ejemplo, de cobro o pago), el cierre de la partida abierta que esté presente en el sistema es la siguiente:
 
-- ***Contabilizza***: premendo il bottone, al fine di creare automaticamente la scrittura contabile, compare un popup dove selezionare la caudale contabile desiderata, procedendo viene aperta automaticamente la maschera della registrazione contabile dove sono preimpostati tutti i dati rilevabili dal file importato e non resta che compilare gli eventuali dati aggiuntivi (quali ad esempio le partite da chiudere nel caso di incassi o pagamenti ecc...) e quindi salvare la registrazione contabile.
-
-:::important[Dettaglio procedura di contabilizzazione: aggancio automatico delle partite aperte]
-A seconda della banca che rende disponibili i file telematici, esistono file più o meno dettagliati.
-
-La logica secondo la quale Fluentis riesce a gestire automaticamente, nella scrittura generata (ad esempio di incasso o pagamento), la chiusura della partita aperta eventualmente presente a sistema, è la seguente:
-
-- Se nel file telematico importato è presente il campo *Riferimento Creditore Rimessa* (visibile su Fluentis aprendo il dettaglio delle righe del file con il bottoncino + a sinistra) il codice di riferimento presente in questo campo sarà usato per cercare le partite aperte. Il dato dovrà corrispondere nel campo *Numero di riferimento* presente nella partita (quello adiacente al campo *Modello riferimento pagamento*).
-- Se non viene soddisfatta la prima condizione, la procedura leggerà nel file telematico il campo *Creditore conto IBAN* (visibile sempre aprendo il dettaglio delle righe come spiegato al punto precedente) e cercherà se esiste un conto contabile con anagrafica Cliente / Fornitore che riporti lo stesso IBAN. Tale IBAN **deve** essere trovato nel campo IBAN della **griglia Banca d'appoggio** ovvero quella inferiore in anagrafica nel tab pagamenti, destinata esclusivamente a coordinate bancarie di clienti e fornitori, ovvero le "controparti" e mai della nostra azienda. Non deve dunque essere confuso con il medesimo campo presente nella griglia superiore, cioè la griglia principale denominata *Tipi pagamento*.
-Se l'IBAN corrisponde, sarà cercata una partita aperta per quel conto che abbia il medesimo importo, se ve ne sono più di una con il medesimo importo verrà presa quella con data scadenza più vecchia.
-- Se non viene trovata nessuna partita che corrisponde ai criteri precedenti, ma viene comunque trovato il conto del cliente o fornitore con IBAN corrispondente, Fluentis inserirà soltanto la riga in contabilità senza generare automaticamente il pagamento.
-- Se non viene trovato alcun conto cliente / fornitore attraverso il codice IBAN, Fluentis inserirà nella scrittura contabile, solo la riga relativa alla banca e rimarrà da completare la scrittura con la riga cliente / fornitore
+- Si en el archivo telemático importado está presente el campo *Referencia Acreedor Remesa* (visible en Fluentis abriendo el detalle de las líneas del archivo con el botón + a la izquierda), el código de referencia presente en este campo se usará para buscar las partidas abiertas. El dato deberá corresponder en el campo *Número de referencia* presente en la partida (el que está al lado del campo *Modelo de referencia de pago*).
+- Si no se cumple la primera condición, el procedimiento leerá en el archivo telemático el campo *Acreedor cuenta IBAN* (también visible abriendo el detalle de las líneas como se explicó en el punto anterior) y buscará si existe una cuenta contable con información de Cliente / Proveedor que contenga el mismo IBAN. Este IBAN **debe** ser encontrado en el campo IBAN de la **grilla de Banco de apoyo**, es decir, la inferior en el registro en la pestaña de pagos, destinada exclusivamente a coordenadas bancarias de clientes y proveedores, es decir, las "contrapartes" y nunca de nuestra empresa. No debe confundirse con el mismo campo presente en la grilla superior, es decir, la grilla principal denominada *Tipos de pago*.
+Si el IBAN coincide, se buscará una partida abierta para esa cuenta que tenga el mismo importe; si hay más de una con el mismo importe se tomará la que tenga la fecha de vencimiento más antigua.
+- Si no se encuentra ninguna partida que cumpla con los criterios anteriores, pero se encuentra la cuenta del cliente o proveedor con un IBAN correspondiente, Fluentis solo insertará la línea en contabilidad sin generar automáticamente el pago.
+- Si no se encuentra ninguna cuenta de cliente / proveedor a través del código IBAN, Fluentis solo insertará en la escritura contable la línea relacionada con el banco y quedará por completar la escritura con la línea de cliente / proveedor.
 :::
 
-:::danger[Attenzione]
-La **causale contabile** utilizzata per generare le scritture di incasso e pagamento automaticamente come sopra descritto **deve essere modificata** rispetto ai settaggi consueti.
-In particolare dovrà essere modificata la riga, ad esempio quella relativa alla banca che solitamente è associata al tipo importo *Totale documento / registrazione*. Questo tipo importo dovrà essere variato ad esempio ponendo **Importo sottoconto**, come per la riga del cliente / fornitore.
+:::danger[Atención]
+La **causale contable** utilizada para generar las escrituras de cobro y pago automáticamente, como se describe anteriormente, **debe ser modificada** en relación con las configuraciones habituales.
+En particular, se deberá modificar la línea, por ejemplo, la relacionada con el banco que normalmente se asocia al tipo de importe *Total documento / registración*. Este tipo de importe deberá ser alterado colocando **Importe subcuenta**, como para la línea del cliente / proveedor.
 
-**Se questo non viene fatto la procedura inserirà due volte la riga banca e la scrittura non quadrerà automaticamente**.
+**Si esto no se hace, el procedimiento insertará dos veces la línea del banco y la escritura no cuadrará automáticamente**.
 :::

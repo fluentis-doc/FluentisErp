@@ -1,18 +1,18 @@
 ---
-title: Numerazioni Piani di Carico
+title: Numeraciones de Planes de Carga (Numerazioni Piani di Carico)
 sidebar_position: 57
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Numerazioni Piani di Carico*.
+La tabla permite gestionar la codificación de los diferentes tipos de *Numeraciones de Planes de Carga (Numerazioni Piani di Carico)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Numerazioni Piani di Carico**
+**Búsqueda de Numeraciones de Planes de Carga (Ricerca Numerazioni Piani di Carico)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtrado y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Numerazioni Piani di Carico**
+**Inserción de Numeraciones de Planes de Carga (Inserimento Numerazioni Piani di Carico)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento general de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

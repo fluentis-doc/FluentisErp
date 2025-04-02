@@ -1,26 +1,24 @@
 ---
-title: Riepiloghi
+title: riepiloghi
 sidebar_position: 6
 ---
 
-Nei Riepiloghi sono presentate le informazioni relative ai costi dell'intero documento.
+En los riepiloghi se presentan las informaciones relacionadas con los costos de todo el documento.
 
-**Spese**
-In questa griglia è possibile inserire eventuali spese che devono essere inserite in positivo, eventuali sconti in negativo.
+**spese**  
+En esta cuadrícula es posible ingresar los gastos que deben ser introducidos de forma positiva y los descuentos de forma negativa.
 
-Questi elementi vengono applicati alla totalità del documento e non sono distribuiti tra le righe degli articoli. Possono includere costi aggiuntivi, sconti globali, o maggiorazioni applicate all'intero documento. 
+Estos elementos se aplican a la totalidad del documento y no se distribuyen entre las líneas de los artículos. Pueden incluir costos adicionales, descuentos globales o recargos aplicados al documento completo.
 
-Per inserire una nuova spesa è necessario compilare i seguenti dati:
+Para ingresar un nuevo gasto, es necesario completar los siguientes datos:
 
-- **Numero riga**: indica il numero riga della spesa inserita, viene compilato automaticamente;
-- **Tipo spesa / Descrizione**: permette di scegliere le tipologie di spesa predefiniti nella tabella [Tipi spese](/docs/configurations/tables/general-settings/expenses-types/);
-- **Importo spesa**: indica il valore della spesa espresso nella divisa del documento;
-- **Descrizione spesa**: Dettaglio dichiarazioni: viene inserita l'eventuale dichiarazione d'intento valida per il cliente;
-- **Imposta**: premette di scegliete dell'aliquota IVA, predefinite nella tabella [Aliquote/Modalità IVA](/docs/configurations/tables/finance/vat-rates/).
+- **numero riga**: indica el número de línea del gasto ingresado; se completa automáticamente;  
+- **Tipo de gasto / Descripción (Tipo spesa / Descrizione)**: permite elegir las tipologías de gasto predefinidas en la tabla [Tipos de gastos (Tipi spese)](/docs/configurations/tables/general-settings/expenses-types/);  
+- **importo spesa**: indica el valor del gasto expresado en la moneda del documento;  
+- **descrizione spesa**: Detalle de declaraciones: se ingresa la posible declaración de intención válida para el cliente;  
+- **imposta**: permite elegir la alícuota de IVA, predefinidas en la tabla [Alícuotas/Modalidades de IVA (Aliquote/Modalità IVA)](/docs/configurations/tables/finance/vat-rates/).  
 
-Sulla destra della form sono presenti i seguenti campi:
+A la derecha del formulario están presentes los siguientes campos:
 
-- **Note**: permette di inserire una nota libera;
-- **Importo totale**: permette di visualizzare l'importo totale della spedizione dato dalla somma dei valori inseriti nella tabella *Spese*.
-
-
+- **note**: permite ingresar una nota libre;  
+- **importo totale**: permite visualizar el importe total de la carga dado por la suma de los valores ingresados en la tabla *spese*.

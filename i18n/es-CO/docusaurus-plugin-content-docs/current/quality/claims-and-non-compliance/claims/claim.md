@@ -1,84 +1,92 @@
 ---
-title: Reclami
+title: reclami
 sidebar_position: 2
 ---
 
-I dati che compongono un **Reclamo** sono:     
-**Tipo Reclamo**: contiene la tipologia; questa selezione determinerà le tab visibili;            
-**Cliente**: contiene la provenienza del reclamo, la quale può essere anche un **Contatto**.
+Los datos que componen un **reclamo** son:  
+**tipo reclamo**: contiene la tipología; esta selección determinará las pestañas visibles;  
+**cliente**: contiene la procedencia del reclamo, la cual puede ser también un **contatto**.
 
-Analizziamo la sezione ***Testata***, comune ad entrambe le possibili tipologie di Reclamo.         
-**Persona responsabile**: contiene il [Dipendente](/docs/project-management/registers/employee/new-employee) responsabile del reclamo;      
-**Funzione aziendale**: contiene una eventuale Funzione aziendale responsabile;       
-**Rif. documenti**: contiene i riferimenti dei documenti relativi alla merce che si è rivelata non conforme, quindi la fattura con la quale è stata venduta,il ricevimento merce, ecc.;     
-**Approvato/In data**: contiene i riferimenti di chi ha approvato il Reclamo;
-**Chiuso/In data**: contiene i riferimenti di chi ha chiuso il Reclamo e le eventuali **Notifiche** effettuate.        
+Analicemos la sección **testata***, común a ambos tipos posibles de Reclamo.  
+**persona responsabile**: contiene el [Empleado (Dipendente)](/docs/project-management/registers/employee/new-employee) responsable del reclamo;  
+**funzione aziendale**: contiene una posible Función empresarial responsable;  
+**rif. documenti**: contiene los referentes de los documentos relacionados con la mercancía que ha resultado no conforme, es decir, la factura con la cual se vendió, la recepción de mercancía, etc.;  
+**Aprobado/En fecha (Approvato/In data)**: contiene los referentes de quién aprobó el Reclamo;  
+**Cerrado/En fecha (Chiuso/In data)**: contiene los referentes de quién cerró el Reclamo y las posibles **notifiche** realizadas.  
 
-I Reclami possono essere Approvati e Chiusi solo da:
-- Persona responsabile: in questo campo è possibile inserire il Dipendente codificato, che deve avere un utente Arm associato;
-- Funzione responsabile: è possibile abilitare alla modifica un'intera funzione aziendale; in questo caso deve fare Apri form nella Funzione aziendale ed inserire, nella griglia in basso, i Dipendenti da abilitare per ogni funzione aziendale selezionata.
+Los reclami pueden ser Aprobados y Cerrados solo por:  
+- Persona responsable: en este campo es posible insertar el Empleado codificado, que debe tener un usuario Arm asociado;  
+- Función responsable: es posible habilitar a la modificación a toda una función empresarial; en este caso debe hacer Abrir formulario en la Función empresarial e insertar, en la cuadrícula inferior, los Empleados a habilitar para cada función empresarial seleccionada.  
 
-Sono poi presenti diverse tab.
+Luego hay varias pestañas.
 
-## Notifiche
-Questa tab contiene il **Motivo della contestazione** ricevuto e nel caso il **Sito produttivo** aziendale destinatario.
-Se il reclamo non dovesse venire accettato dall'azienda, il **Motivo del recesso** sarà liberamente compilabile accanto. 
+## Notificaciones
 
-## Annotazioni     
-Questa tab contiene Note libere, commerciali, tecniche o amministrative.
+Esta pestaña contiene el **Motivo de la impugnación (Motivo della contestazione)** recibido y, en caso, el **sito produttivo** empresarial destinatario.  
+Si el reclamo no es aceptado por la empresa, el **motivo del recesso** será libremente rellenable al lado. 
 
-## Valori   
-Questa tab contiene:    
-**Divisa**: con la quale specificare i valori del Reclamo;      
-**Rif. Doc addebito**: contiene i documenti ricevuti per i quali è richiesto un addebito della non conformità;       
-**Totale reclamo**: questo campo è automatico se nei Parametri è settato il flag **Ricalcolo automatico totali**, oppure è calcolato automaticamente dalla somma della gestione dei difetti; questo reclamo è la somma che ci contesta il cliente e, se tutta da accreditare, coinciderà con il Valore da accreditare;         
-**Costo di gestione**: automatico se deciso nei Parametri, altrimenti imputabile manualmente; questo costo è il costo di gestione interno che spendo per la gestione del reclamo; esso sarà imputabile: alla mia azienda se responsabile della fornitura; al fornitore altrimenti responsabile della fornitura;       
-**Valore da accreditare**: è il valore che riconosciamo e da accreditare; la nota di accredito generata avrà il riferimento nel campo **Rif. Doc. Accredito** e apporrà il flag **Valorizzato**; il totale da accreditare è ciò che paghiamo al cliente, il costo di gestione è ciò che pago internamente.            
+## Anotaciones
 
-Analizziamo la tab ***Gestione difetti***, presente solo nel caso la tipologia di Reclamo sia **Reclamo cliente**.    
-E' possibile indicare uno o più difetti riscontrati nel Reclamo, con i relativi dati:     
-- **Difetto riscontrato**: contiene il Difetto con relativo **Codice** e **Descrizione** ed eventuali **Note**;     
-- **Causa presunta**, che ha causato il difetto;    
-- **Fase di rilevamento**, con i dettagli della fase nella quale è stato rilevato il difetto;    
-- **Quantità**: contiene la quantità venduta, contestata e resa della merce;     
-- **Rif. Azione correttiva**: contiene i riferimenti dell'azione correttiva se creata.   
-Questa tab è suddivisa in tab ulteriori.        
+Esta pestaña contiene Notas libres, comerciales, técnicas o administrativas.
 
-## Dati difetto     
-I dati principali sono:      
-- **Gravità**: contiene l'eventuale Gravità del difetto;    
-- **Causa effettiva**: è possibile che la causa del difetto presunta, inserita in griglia, non coincida con la causa effettiva, che è possibile inserire in questo campo;      
-- **Soluzione proposta**: contiene la soluzione che è stata proposta per risolvere il difetto, tra un elenco a discesa;     
-- **Decisione intrapresa**: contiene la soluzione che, tra le possibili proposte, è stata intrapresa;
-- ecc.     
-E' possibile specificare i vari campi con le **Note** accanto.     
+## Valores
 
-## Materiali utilizzati 
-Questa tab contiene materiali eventualmente utilizzati per porre rimedio al difetto. I dati del materiali sono accompagnati dai relativi costi.
+Esta pestaña contiene:  
+**divisa**: con la cual especificar los valores del Reclamo;  
+**Rif. Doc. cargo (Rif. Doc addebito)**: contiene los documentos recibidos por los cuales se solicita un cargo de la no conformidad;  
+**totale reclamo**: este campo es automático si en los Parámetros está activada la opción **ricalcolo automatico totali**, o se calcula automáticamente por la suma de la gestión de defectos; este reclamo es la suma que nos impugna el cliente y, si es totalmente a acreditar, coincidirá con el Valor a acreditar;  
+**costo di gestione**: automático si así se decide en los Parámetros, de lo contrario imputable manualmente; este costo es el costo de gestión interno que gasto para la gestión del reclamo; se imputará: a mi empresa si es responsable del suministro; al proveedor si es el responsable del suministro;  
+**valore da accreditare**: es el valor que reconocemos y a acreditar; la nota de crédito generada tendrá la referencia en el campo **rif. doc. accredito** y marcará la opción **Valorizado**; el total a acreditar es lo que pagamos al cliente, el costo de gestión es lo que pago internamente.  
 
-## Oggetti reclamati
-Contiene tutti gli articoli nei quali è stato riscontrato il difetto della griglia principale.
+Analicemos la pestaña **gestione difetti***, presente solo en caso de que el tipo de Reclamo sea **Reclamo cliente (Reclamo cliente)**.  
+Es posible indicar uno o más defectos encontrados en el Reclamo, con los datos relacionados:  
+- **difetto riscontrato**: contiene el Defecto con su **Código** y **Descripción** y posibles **Notas**;  
+- **causa presunta**, que ha causado el defecto;  
+- **fase di rilevamento**, con los detalles de la fase en la cual se detectó el defecto;  
+- **quantità**: contiene la cantidad vendida, impugnada y devuelta de la mercancía;  
+- **rif. azione correttiva**: contiene los referentes de la acción correctiva si se ha creado.  
+Esta pestaña se divide en más pestañas.
 
-## Soggetti coinvolti
-In questa tab è possibile indicare le Funzioni aziendali coinvolte e/o i [Dipendenti](/docs/project-management/registers/employee/new-employee).     
-Nella sezione **Gestione coinvolgimento** è possibile indicare il Motivo del coinvolgimento, campo automatico se nella tabella delle Funzioni aziendali ne abbiamo inserito precedentemente uno.   
+## Datos del defecto
 
-Analizziamo la tab ***Gestione 8D***, presente solo nel caso la tipologia Reclamo sia **Reclamo cliente 8D**.    
-Questa tab è suddivisa in due tab ulteriori.      
+Los datos principales son:  
+- **gravità**: contiene la eventual Gravedad del defecto;  
+- **causa effettiva**: es posible que la causa del defecto presunta, ingresada en la cuadrícula, no coincida con la causa efectiva, que se puede insertar en este campo;  
+- **soluzione proposta**: contiene la solución que ha sido propuesta para resolver el defecto, de entre una lista desplegable;  
+- **decisione intrapresa**: contiene la solución que, de entre las posibles propuestas, ha sido adoptada;  
+- etc.  
+Es posible especificar los varios campos con las **Notas** al lado.  
 
-## Oggetti reclamati    
-Questa tab contiene un elenco di tutti i materiali che ci stanno contestando.     
+## Materiales utilizados
 
-## Gestione 8D         
-Questa tab contiene la gestione del modello 8D Problem Solving, che richiede la definizione di:     
-- un **Team**, nel quale indicare la Funzione e/o il Dipendente;     
-- delle **Azioni di contenimento** per evitare il ripetersi nell'immediato dei difetti riscontrati;     
-- un'analisi delle **Cause** che hanno permesso il verificarsi dell'evento;     
-- l'elenco delle **Azioni** che verranno intraprese e diverranno Permanenti nel tempo per evitare che il difetto si ripresenti;   
-- nel momento in cui viene inserito il flag **Attuata** nell'Azione, si abilita la **Convalida azioni**;    
-- eventuali **Fasi** da attuare a fronte delle attività per le azioni correttive.    
+Esta pestaña contiene los materiales que se hayan utilizado para remediar el defecto. Los datos de los materiales están acompañados de los costos correspondientes.
 
+## Objetos reclamados
 
-I pulsanti specifici della ribbon bar sono:
-**Crea azione correttiva**: alla selezione di un difetto, è possibile creare una Azione correttiva. Si apre una maschera nella quale vengono richiesti una serie di dati da riportare nell'Azione.     
-**Crea non conformità**: alla selezione di un difetto, è possibile creare una Non conformità relativa. 
+Contiene todos los artículos en los cuales se ha encontrado el defecto de la cuadrícula principal.
+
+## Sujetos involucrados
+
+En esta pestaña es posible indicar las Funciones empresariales involucradas y/o los [Empleados (Dipendenti)](/docs/project-management/registers/employee/new-employee).  
+En la sección **gestione coinvolgimento** es posible indicar el Motivo del involucramiento, campo automático si en la tabla de Funciones empresariales hemos ingresado previamente uno.  
+
+Analicemos la pestaña **gestione 8d***, presente solo en caso de que el tipo de Reclamo sea **Reclamo cliente 8D (Reclamo cliente 8D)**.  
+Esta pestaña se divide en dos pestañas adicionales.
+
+## Objetos reclamados
+
+Esta pestaña contiene una lista de todos los materiales que nos están reclamando.
+
+## Gestión 8D
+
+Esta pestaña contiene la gestión del modelo 8D de Resolución de Problemas, que requiere la definición de:  
+- un **team**, donde indicar la Función y/o el Empleado;  
+- **azioni di contenimento** para evitar la repetición inmediata de los defectos encontrados;  
+- un análisis de las **cause** que han permitido la ocurrencia del evento;  
+- la lista de las **azioni** que se llevarán a cabo y que serán Permanentes en el tiempo para evitar que el defecto se reproduzca;  
+- en el momento en que se activa la opción **attuata** en la Acción, se habilita la **convalida azioni**;  
+- posibles **fasi** a realizar en función de las actividades para las acciones correctivas.  
+
+Los botones específicos de la barra de herramientas son:  
+**crea azione correttiva**: al seleccionar un defecto, es posible crear una Acción correctiva. Se abre una ventana en la que se solicitan una serie de datos que deben registrarse en la Acción.  
+**Crear no conformidad (Crea non conformità)**: al seleccionar un defecto, es posible crear una No conformidad relativa.

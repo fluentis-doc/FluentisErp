@@ -1,17 +1,16 @@
 ---
-title: Tipi commesse di acquisto
+title: Tipos de pedido de compra (Tipi commesse di acquisto)
 sidebar_position: 8
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi commessa di acquisto** e viene utilizzata per determinare le proprietà di una commessa.
+La tabla se abre a través de la ruta **Tablas (Tabelle) > Compras (Acquisti) > Tipos de pedido de compra (Tipi commessa di acquisto)** y se utiliza para determinar las propiedades de un pedido.
 
-I campi presenti sono:
+Los campos presentes son:
 
-**Tipo/Descrizione tipo commessa di acquisto**: sono campi obbligatori per definire il tipo della commessa.
+**Tipo/Descripción del tipo de pedido de compra (Tipo/Descrizione tipo commessa di acquisto)**: son campos obligatorios para definir el tipo del pedido.
 
-**Struttura gerarchica**: se settato, la visualizzazione degli articoli in commessa è di tipo gerarchico.
+**struttura gerarchica**: si está configurado, la visualización de los artículos en el pedido es de tipo jerárquico.
 
-**Numerazione**: per selezionare la [numerazione](/docs/configurations/tables/fluentis-numerations) appropriata. 
+**numerazione**: para seleccionar la [numeración (numerazione)](/docs/configurations/tables/fluentis-numerations) apropiada.
 
-**Stampa** permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della commessa, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa.
-
+**stampa** permite indicar el modelo de impresión que se utilizará en la fase de impresión del pedido, mediante el campo **Número de copias (Numero copie)**, el número de copias del documento que se propondrá por defecto para la impresión.

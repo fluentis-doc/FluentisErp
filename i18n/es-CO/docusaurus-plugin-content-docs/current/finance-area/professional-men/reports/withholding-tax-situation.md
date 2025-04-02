@@ -1,67 +1,55 @@
 ---
-title: Stampa situazione ritenute
+title: Impresión de situación de retenciones (Stampa situazione ritenute)
 sidebar_position: 2
 ---
 
-Con questa stampa è possibile estrarre i dati dei pagamenti compensi effettuati, al fine di avere un riepilogo dei dati relativi alle ritenute d'acconto operate al fine di  gestirne il versamento con modello F24 oppure per effettuare verifiche nell'ambito della certificazione unica dei percipienti e del successivo modello 770.
+Con esta impresión es posible extraer los datos de los pagos de compensaciones realizados, con el fin de tener un resumen de los datos relacionados con las retenciones aplicadas para gestionar su pago mediante el modelo F24 o para realizar verificaciones en el ámbito de la certificación única de los perceptores y del posterior modelo 770.
 
-Sono presenti due diversi layout della stampa selezionabili tramite la combo box in alto a sinistra: il primo "Certificazione ritenute" ricalca la comunicazione in forma libera che veniva inviata ai percipienti fino alla recente introduzione della Certificazione Unica mentre la seconda "Situazione ritenute" si presenta come una lista di verifica.
+Existen dos diseños diferentes de impresión seleccionables a través del cuadro combinado en la parte superior izquierda: el primero "Certificación de retenciones (Certificazione ritenute)" reproduce la comunicación en forma libre que se enviaba a los perceptores hasta la reciente introducción de la Certificación Única, mientras que el segundo "Situación de retenciones (Situazione ritenute)" se presenta como una lista de verificación.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image01.png)
 
-PRINCIPALI ELEMENTI DI FILTRO:
+ELEMENTOS PRINCIPALES DE FILTRO:
 
-Dati del preavviso di parcella.
+Datos del aviso de factura.
 
-- Filtro anagrafica percipente
+- Filtro de registro de perceptores (Filtro anagrafica percipente)
 
-- Range date del preavviso
+- Rango de fechas del aviso (Range date del preavviso)
 
-- Range numero del preavviso
+- Rango de número del aviso (Range numero del preavviso)
 
-- Divisa
+- Moneda (Divisa)
 
-- Codice tributo
+- Código de impuesto (Codice tributo)
 
-- Tipo ritenuta
+- Tipo de retención (Tipo ritenuta)
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image02.png)
 
- 
+Datos relacionados con la factura definitiva (da utilizar si el aviso ya ha sido integrado con los datos de la factura)
 
-Dati relativi alla fattura definitiva (da utilizzare se il preavviso è già stato integrato con i datti della fattura)
+- Rango de fechas de la factura (Range di date fattura)
 
-- Range di date fattura
-
-- Numero
+- Número (Numero)
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image03.png)
 
-Altri dati:
+Otros datos:
 
-- Flag di filtro che verificano le principali condizioni del documento (contabilizzato, certificato, versata ritenuta, pagato)
+- Indicadores de filtro que verifican las principales condiciones del documento (contabilizado, certificado, retención pagada, pagado)
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image04.png)
 
-- Anno: filtra solo i compens di competenza dell'anno inserito
+- Año: filtra solo las compensaciones de competencia del año ingresado.
 
-- Flag definitiva: esegue la stampa in definitivo e non permette di variare ulteriormente i dati relativi al versamento delle ritenute.
+- Indicador definitivo: realiza la impresión en definitivo y no permite modificar más los datos relacionados con el pago de las retenciones.
 
-- Flag escludi già stampate in definitiva: esclude i compensi già stampati in una stampa definitiva.
+- Indicador excluir ya impresas en definitivo: excluye las compensaciones ya impresas en una impresión definitiva.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image05.png)
 
- 
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
-
-
-
-
-
-
+| Vista previa (Anteprima) | Botón para realizar la vista previa de impresión. |
+| Impresión (Stampa) | Botón para realizar la impresión física del documento. |

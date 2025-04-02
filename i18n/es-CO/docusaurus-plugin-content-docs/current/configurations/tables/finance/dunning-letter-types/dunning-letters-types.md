@@ -1,10 +1,10 @@
 ---
-title: Ricerca tipi solleciti
+title: Búsqueda de tipos de solicitudes (Ricerca tipi solleciti)
 sidebar_position: 1
 ---
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+Para poder ingresar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.

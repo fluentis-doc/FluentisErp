@@ -1,30 +1,30 @@
 ---
-title: Invoicing Progress KanBan Board
+title: invoicing progress kanban board
 sidebar_position: 7
 ---
 
-Questa procedura ha l'obiettivo di visualizzare (mediante l'utilizzo della metodologia Kan Ban) Opportunità, Ordini e Fatture per determinati periodi. La procedura si compone di due tab: **Filtro** e **Risultati**.
+Este procedimiento tiene como objetivo visualizar (mediante el uso de la metodología Kan Ban) Oportunidades, Pedidos y Facturas para determinados períodos. El procedimiento se compone de dos pestañas: **filtro** y **risultati**.
 
-### Filtro    
+### Filtro (Filtro)    
 
-In questa tab è necessario inserire i filtri da utilizzare per la visualizzazione dei risultati nella tab successiva.     
-Nella prima parte sono presenti i successivi flag: *Comprimi le fatture*, *Comprimi gli ordini*, *Comprimi le opportunità*; inserendo questi flag, vogliamo visualizzare gli Imponibili complessivi di ordini, opportunità e fatture; senza questi flag, i vari documenti verranno visualizzati separatamente, ognuno con i propri valori.      
-Il filtro **Società** è obbligatorio e contiene la società cui fare riferimento.     
-Il filtro **Intervallo mensile** serve per indicare, con intervalli trimestrali, il periodo da prendere in considerazione.    
-Il fitlro **Agente** permette di visualizzare i documenti che abbiamo tutti lo stesso agente associato;     
-Il filtro **Divisa** viene compilato automaticamente.        
-Sono presenti poi i filtri *Opportunità*, *Fattura di vendita*, *Ordine cliente*: questi flag impostano quali documenti visualizzare tra i risultati.     
-Sono infine presenti delle sezioni in cui inserire dei filtri rispettivamente per Opportunità, Fatture e Ordini. In tutti e tre i casi, le Date proposte dipenderanno dall'intervallo mensile precedentemente inserito.     
+En esta pestaña es necesario ingresar los filtros que se usarán para la visualización de los resultados en la pestaña siguiente.     
+En la primera parte se encuentran las siguientes opciones: *comprimi le fatture*, *Comprimir pedidos (Comprimi gli ordini)*, *comprimi le opportunità*; al seleccionar estas opciones, queremos visualizar los totales imponibles de pedidos, oportunidades y facturas; sin estas opciones, los diversos documentos se mostrarán por separado, cada uno con sus propios valores.      
+El filtro **società** es obligatorio y contiene la empresa a la que hacer referencia.     
+El filtro **intervallo mensile** se utiliza para indicar, con intervalos trimestrales, el período a considerar.    
+El filtro **agente** permite visualizar los documentos que tienen el mismo agente asociado;     
+El filtro **divisa** se completa automáticamente.        
+Luego están los filtros *opportunità*, *fattura di vendita*, *ordine cliente*: estas opciones establecen qué documentos visualizar entre los resultados.     
+Finalmente, hay secciones para ingresar filtros respectivamente para Oportunidades, Facturas y Pedidos. En los tres casos, las Fechas propuestas dependerán del rango mensual ingresado anteriormente.     
 
-### Risultati   
+### Resultados (Risultati)   
 
-Nel tab è presente la **Kan Ban Board**, dove vengono visualizzati i documenti suddivisi per i vari mesi inseriti nei filtri.
-Ogni colonna della Kan Ban Board è composta dai seguenti elementi:      
-Una **banda superiore** dove vengono visualizzati, nell’ordine, i seguenti dati:
-- mese di riferimento; 
-- Count: corrisponde al numero di opportunità/fatture/ordini che sono collocate in quella colonna;
-- Total Net Amount: corrisponde al valore totale delle opportunità/fatture/ordini presenti nella colonna, al netto degli sconti applicati.     
+En la pestaña se encuentra el **Tablero Kan Ban (Kan Ban Board)**, donde se visualizan los documentos divididos por los diferentes meses ingresados en los filtros.  
+Cada columna del Tablero Kan Ban está compuesta por los siguientes elementos:      
+Una **banda superior (banda superiore)** donde se visualizan, en el orden, los siguientes datos:  
+- mes de referencia;  
+- Conteo (Count): corresponde al número de oportunidades/facturas/pedidos que están ubicados en esa columna;  
+- Total Neto (Total Net Amount): corresponde al valor total de las oportunidades/facturas/pedidos presentes en la columna, neto de los descuentos aplicados.     
   
-Una **banda inferiore** dove vengono visualizzati diversi dati dei singoli documenti.
+Una **banda inferior (banda inferiore)** donde se visualizan diferentes datos de los documentos individuales.  
 
-Facendo doppio click è possibile aprire il documento collegato. 
+Al hacer doble clic, es posible abrir el documento relacionado.

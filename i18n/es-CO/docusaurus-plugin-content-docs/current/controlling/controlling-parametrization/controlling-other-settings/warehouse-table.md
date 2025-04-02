@@ -1,13 +1,12 @@
 ---
-title: Tabella Magazzini
+title: Tabla de Almacenes (Tabella Magazzini)
 sidebar_position: 6
 ---
 
+Dentro de la tabla **magazzini** tenemos la posibilidad de asociar una lista de [**centri di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) a cada almacén.
 
-All'interno della tabella **MAGAZZINI** abbiamo la possibilità di associare una lista di [***CENTRI DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) ad ogni magazzino.
-
-In particolare, le società che **non** hanno il *Controlling* attivo avranno a disposizione una griglia dove caricare una lista di centri da valorizzare; mentre per quelle con la gestione **attiva** la griglia consentirà di associare una molteplicità di centri, anche di [*dimensioni*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) differenti, replicando sostanzialmente la logica già dettagliata nel [*Piano dei conti*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (quindi anche lasciando il centro vuoto e la sola dimensione attiva da valorizzare).
+En particular, las empresas que **no** tienen el *controlling* activo tendrán a su disposición una cuadrícula donde cargar una lista de centros a valorar; mientras que para aquellas con la gestión **activa**, la cuadrícula permitirá asociar una multiplicidad de centros, incluso de [*dimensiones (dimension)*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) diferentes, replicando sustancialmente la lógica ya detallada en el [*piano dei conti*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (por lo tanto, también dejando el centro vacío y la única dimensión activa a valorar).
 
 :::tip Nota
-Il centro di profitto è visibile per retrocompatibilità, nelle società con il *Controlling* attivo si consiglia di sostituire i centri di profitto con una dimensione specifica da valorizzare nei centri aziendali
+El centro de beneficios es visible por retrocompatibilidad; en las empresas con el *controlling* activo, se recomienda reemplazar los centros de beneficios con una dimensión específica a valorar en los centros empresariales.
 :::

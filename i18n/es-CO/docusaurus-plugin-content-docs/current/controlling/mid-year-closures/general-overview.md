@@ -1,36 +1,38 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo **Chiusure infrannuali** consente all'operatore di gestire le simulazioni extracontabili dei dati di bilancio periodico: sono disponibili una serie di procedure automatiche di ripresa e valorizzazione delle tipiche registrazioni che consentono di creare un bilancio di competenza di periodo.
-Il modulo è presente nell'area *Controlling* e legge come dati di origine quelli della contabilità generale.
+El módulo **chiusure infrannuali** permite al operador gestionar las simulaciones extracontables de los datos de balance periódicos: hay disponibles una serie de procedimientos automáticos para la recuperación y valoración de los típicos asientos que permiten crear un balance de competencia del periodo.  
+El módulo está presente en el área *Controlling* y toma como datos de origen los de la contabilidad general.
 
-## Configurazione preliminare del modulo
-- [***Numerazione registrazioni extracontabili***](/docs/configurations/tables/controlling/managerial-accounting/managerial-accounting-numeration): per definire come numerare le registrazioni extracontabili associate alle operazioni del controlling.
+## Configuración preliminar del módulo
 
-- Non vi sono altre tabelle specifiche di configurazione, se non quelle necessarie alla valorizzazione della varie aree di origine dei dati gestiti dalle procedure del modulo stesso.
+- [**numerazione registrazioni extracontabili***](/docs/configurations/tables/controlling/managerial-accounting/managerial-accounting-numeration): para definir cómo numerar los registros extracontables asociados a las operaciones del controlling.
 
-## Documenti gestiti
+- No hay otras tablas específicas de configuración, salvo aquellas necesarias para la valoración de las diversas áreas de origen de los datos gestionados por los procedimientos del módulo.
+
+## Documentos gestionados
+
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/controlling/mid-year-closures/create-mid-year-closures-intro">Crea chiusure conti infrannuale</Link>
-        <p>- per portare nel controlling i saldi di generale e analitica del periodo d'interesse</p>
-###     <Link to="/docs/controlling/mid-year-closures/procedures/adjusting-entry" className="bold-link">Scritture di rettifica</Link>
-        <p>- per gestire i risconti</p>
-###     <Link to="/docs/controlling/mid-year-closures/procedures/integration-records" className="bold-link">Scritture di integrazione</Link>
-        <p>- per gestire i ratei</p>
-###     <Link to="/docs/controlling/mid-year-closures/procedures/purchase-and-sales-area-valorization" className="bold-link">Valorizzazione area acquisti e vendite</Link>
-        <p>- gestisce le e da ricevere/emettere dai documenti in transito nel ciclo attivo/passivo</p>
-###     <Link to="/docs/controlling/mid-year-closures/procedures/warehouse-oddments" className="bold-link">Contabilizzazione rimanenze</Link>
-        <p>- per rilevare le iniziali e finali</p>
-###     <Link to="/docs/controlling/mid-year-closures/procedures/fixed-assets-depreciation-retrieve" className="bold-link">Ripresa ammortamento cespiti</Link>
-        <p>- per aggiungere gli ammortamenti del periodo</p>
-###     <Link to="/docs/controlling/mid-year-closures/procedures/consolidation" className="bold-link">Consolidamento</Link>
-        <p>- per le installazioni multisocietarie</p>
-###     <Link to="/docs/controlling/mid-year-closures/search-off-balance-sheet-records" className="bold-link">Scritture extracontabili di chiusura</Link>
-        <p>- per registrazioni manuali</p>
+###     <Link to="/docs/controlling/mid-year-closures/create-mid-year-closures-intro">Crear cierres de cuentas intermedios (Crea chiusure conti infrannuale)</Link>
+        <p>- para llevar a controlling los saldos de general y analítica del periodo de interés</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/adjusting-entry" className="bold-link">Asientos de ajuste (Scritture di rettifica)</Link>
+        <p>- para gestionar los diferidos</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/integration-records" className="bold-link">Asientos de integración (Scritture di integrazione)</Link>
+        <p>- para gestionar las provisiones</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/purchase-and-sales-area-valorization" className="bold-link">Valoración del área de compras y ventas (Valorizzazione area acquisti e vendite)</Link>
+        <p>- gestiona las deudas por recibir/emitir de los documentos en tránsito en el ciclo activo/pasivo</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/warehouse-oddments" className="bold-link">Contabilización de existencias (Contabilizzazione rimanenze)</Link>
+        <p>- para registrar los iniciales y finales</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/fixed-assets-depreciation-retrieve" className="bold-link">Recuperación de amortización de activos fijos (Ripresa ammortamento cespiti)</Link>
+        <p>- para agregar las amortizaciones del periodo</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/consolidation" className="bold-link">Consolidación (Consolidamento)</Link>
+        <p>- para instalaciones multisocietarias</p>
+###     <Link to="/docs/controlling/mid-year-closures/search-off-balance-sheet-records" className="bold-link">Asientos extracontables de cierre (Scritture extracontabili di chiusura)</Link>
+        <p>- para registros manuales</p>
     </div>
 </div>

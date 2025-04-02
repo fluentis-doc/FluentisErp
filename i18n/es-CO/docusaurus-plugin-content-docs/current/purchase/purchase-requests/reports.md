@@ -1,18 +1,18 @@
 ---
-title: Stampe
+title: stampe
 sidebar_position: 4
 ---
 
-L’accesso alle varie stampe delle fatture si effettua dal menu **Acquisti > Richieste di acquisto > Stampe**. 
+El acceso a las diversas impresiones de las facturas se realiza desde el menú **Compras > Solicitudes de compra > stampe (Richieste di acquisto > Stampe)**.
 
-## Stampa RDA
+## Impresión RDA (Stampa RDA)
 
-Il report serve per stampare massivamente le richieste già inserite a sistema, secondo i filtri specificati nella form iniziale.    
-I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, come il *tipo*, il *numero documento*, il *fornitore*, la *data di inserimento* e la *data richiesta*.    
-Nella groupbox “Ricerca avanzata” si possono spuntare gli stati della richiesta su cui effettuare il filtro.
-E' inoltre possibile filtrare per l'*Articolo*, la *Commessa di produzione* o il *Progetto* presenti nelle richieste di acquisto.    
-Per lanciare la stampa, una volta impostati i filtri desiderati, sarà sufficiente premere sul bottone della ribbon bar *Anteprima* per avere una stampa a video delle RDA. Se invece fosse necessario effettuare la stampa cartacea o su file sarà necessario premere sul bottone *Stampa*.
+El informe sirve para imprimir masivamente las solicitudes ya ingresadas en el sistema, según los filtros especificados en el formulario inicial.  
+Los primeros filtros que se muestran son los relacionados con la información de encabezado de los documentos, como el *tipo*, el *número de documento*, el *proveedor*, la *fecha de ingreso* y la *fecha solicitada*.  
+En el grupo de búsqueda "Búsqueda avanzada", se pueden marcar los estados de la solicitud sobre los cuales realizar el filtro.  
+También es posible filtrar por el *Artículo*, la *Orden de producción* o el *Proyecto* presentes en las solicitudes de compra.  
+Para iniciar la impresión, una vez que se han configurado los filtros deseados, basta con pulsar el botón de la barra de cinta *anteprima* para obtener una impresión en pantalla de las RDA. Si se necesita realizar la impresión en papel o en archivo, será necesario pulsar el botón *stampa*.
 
-Il risultato della stampa è un elenco delle RDA presenti a sistema; per ogni articolo contenuto nella richiesta di acquisto vengono riportati quantità, fornitore preferenziale, prezzo e data richiesta.
+El resultado de la impresión es una lista de las RDA presentes en el sistema; para cada artículo contenido en la solicitud de compra se informan cantidad, proveedor preferido, precio y fecha solicitada.
 
-Vedi il documento generale per l' [anteprima e stampa ](/docs/guide/common/operations-with-data/reports) documenti.
+Vea el documento general para la [vista previa e impresión (anteprima e stampa)](/docs/guide/common/operations-with-data/reports) de documentos.

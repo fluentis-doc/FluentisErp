@@ -1,74 +1,74 @@
 ---
-title: Parametri importazione paghe
+title: parametri importazione paghe
 sidebar_position: 3
 ---
 
-## Dati tabella
+## Datos de la tabla (Dati tabella)
 
-I presenti parametri sono necessari per gestire la funzionalità di importazione registrazioni contabili relative alle buste paga dipendenti attraverso file .csv (formato Zucchetti) acquisite tramite servizio bizlink.
+Los parámetros presentes son necesarios para gestionar la funcionalidad de importación de registros contables relacionados con las nóminas de los empleados a través de archivos .csv (formato Zucchetti) adquiridos a través del servicio Bizlink.
 
-Qui si imposta per ogni società il **giorno**, la **causale** contabile e l'**utente** da utilizzare per creare la registrazioni.
+Aquí se configura para cada empresa el **giorno**, la **causale** contable y el **utente** que se utilizará para crear las registraciones.
 
-**Permetti ricerca in tabella**: (impostare sempre) fa ricercare i mapping (transcodifica) dei conti nella apposita tabella di transcodifica di cui sotto;
+**permetti ricerca in tabella**: (siempre se debe establecer) hace que se busquen los mapeos (transcodificaciones) de las cuentas en la tabla de transcodificación correspondiente;  
  
-**Raggruppa per centro di costo / Raggruppa per Dipendente**: indica a Fluentis che tipo di file aspettarsi (da Zucchetti si può creare un file raggruppato per cdc o per dipendente (differiscono per numero e posizione delle colonne da leggere).
+**Agrupar por centro de costos / Agrupar por empleado (Raggruppa per centro di costo / Raggruppa per Dipendente)**: indica a Fluentis qué tipo de archivo esperar (de Zucchetti se puede crear un archivo agrupado por cdc o por empleado, que difieren en número y posición de las columnas a leer).
 
-Nota: Gli ultimi due campi non sono legati a questo import paghe, ma all’import per il controlling che al momento si esegue tramite importazione da foglio excel e quindi non sono in realtà utilizzati.
+Nota: Los últimos dos campos no están relacionados con esta importación de nómina, sino con la importación para el controlling, que actualmente se realiza mediante la importación de una hoja de Excel y, por lo tanto, en realidad no son utilizados.
 
-## Generalità Importazione paghe Bizlink
+## Generalidades de la importación de nómina Bizlink (Generalità Importazione paghe Bizlink)
 
-La funzionalità prevede la creazione di una cartella monitorata dal servizio Bizlink dove depositare i file da importare ottenendo l'elaborazione ed importazione in automatico. 
+La funcionalidad prevé la creación de una carpeta monitoreada por el servicio Bizlink donde depositar los archivos a importar, logrando el procesamiento e importación automática.
 
-Nonostante il fatto che sia possibile creare la cartella che viene monitorata dal connettore bizlink per l’import direttamente sul server, per ragioni di sicurezza si preferisce evitare di far accedere utenti al server ed impostare la cartella di importazione su un pc client.
+A pesar de que es posible crear la carpeta que es monitoreada por el conector Bizlink para la importación directamente en el servidor, por razones de seguridad, se prefiere evitar que los usuarios accedan al servidor y establecer la carpeta de importación en un PC cliente.
 
-## Configurazione del servizio Bizlink locale e degli altri parametri necessari
+## Configuración del servicio Bizlink local y otros parámetros necesarios (Configurazione del servizio Bizlink locale e degli altri parametri necessari)
 
-1. Creare un utente bizLink in Arm (form Utenti Bizlink) che verrà utilizzato sul pc interessato per l’importazione.
-Esempio: Nome: PC-Paghe Password: xxxxx Griglia Connessioni: Spuntare E' attivo sulla connessione di produzione effettivamente utilizzata
+1. Crear un usuario Bizlink en Arm (formulario Usuarios Bizlink) que se utilizará en el PC interesado para la importación.  
+Ejemplo: Nombre: PC-Nómina (PC-Paghe) Contraseña: xxxxx Cuadrícula de Conexiones: Marcar Está activo en la conexión de producción efectivamente utilizada.
 
-2. Installare bizLink su pc manualmente
-    Tramite il comando eseguito da cmd come amministratore.
+2. Instalar Bizlink en el PC manualmente  
+   A través del comando ejecutado desde cmd como administrador.  
 
-net_dir>\InstallUtil "< fluentis_dir>\Tools\Service \Fluentis.BizLink.Tools.Service.exe"'
+`net_dir>\InstallUtil "<fluentis_dir>\Tools\Service\Fluentis.BizLink.Tools.Service.exe"`  
 
-Ove net_dir è la cartella di installazione del framework .net e si trova in %WINDIR%\Microsoft.NET\Framework64\versione framework, mentre fluentis_dir è la cartella di installazione di Fluentis.
+Donde net_dir es la carpeta de instalación del framework .net y se encuentra en %WINDIR%\Microsoft.NET\Framework64\versión del framework, mientras que fluentis_dir es la carpeta de instalación de Fluentis.
 
 ![](/img/it-it/configurations/parameters/finance/payroll1.png)
 
-3. Copiare file cartella bin di bizLink da server a client (ogni aggiornamento di versione sarà da fare) tranne il file di log (evidenziato nell’immagine sotto)
+3. Copiar archivo de la carpeta bin de Bizlink del servidor al cliente (cada actualización de versión deberá hacerse) excepto el archivo de log (destacado en la imagen de abajo).
 
 ![](/img/it-it/configurations/parameters/finance/payroll2.png)
 
-Il percorso standard è questo: C:\Program Files (x86)\Fluentis\Fluentis\Bin\Tools\Service
+El recorrido estándar es este: C:\Program Files (x86)\Fluentis\Fluentis\Bin\Tools\Service
 
-4. Modificare connettore chiamato: Zucchetti_PaymentData in questo modo (in particolare aggiungendo l'utente bizlink - PC-Paghe - appena creato nel campo Identificativo)
+4. Modificar el conector llamado: **Zucchetti_PaymentData** de esta manera (en particular añadiendo el usuario Bizlink - PC-Nómina - que se acaba de crear en el campo Identificativo).
 
 ![](/img/it-it/configurations/parameters/finance/payroll5.png)
 
-I percorsi dei file (esempio C:\Temp\Bizlink\Incoming ; C:\Temp\Bizlink\Processed ; C:\Temp\Bizlink\Failed) devono essere presenti sul pc dell’utente e la pool Fluentis deve poter leggere da quella cartella. Se non dovesse funzionare provare a dare come permessi everyone full control.
-Impostare anche un identificativo da riportare successivamente sul file di config di bizLink.
+Los recorridos de los archivos (ejemplo C:\Temp\Bizlink\Incoming; C:\Temp\Bizlink\Processed; C:\Temp\Bizlink\Failed) deben estar presentes en el PC del usuario y el pool Fluentis debe poder leer desde esa carpeta. Si no funciona, intente otorgar permisos de control total a todos (everyone full control).  
+Establecer también un identificador que se registre posteriormente en el archivo de configuración de Bizlink.
 
-5. Sistemare il file config di bizLink con user, pwd, server e identifier. Il file si chiama Fluentis.BizLink.Tools.Service.exe.config. 
-Modificarlo come da immagine sotto.
+5. Ajustar el archivo de configuración de Bizlink con usuario, contraseña, servidor e identificador. El archivo se llama **Fluentis.BizLink.Tools.Service.exe.config**.  
+Modificarlo como en la imagen de abajo.
 
 ![](/img/it-it/configurations/parameters/finance/payroll4.png)
- 
-In questo modo il servizio di bizLink installato sul pc, lavorerà solo con quel connettore.
 
-6. Avviare bizLink
+De esta manera, el servicio de Bizlink instalado en el PC trabajará solo con ese conector.
 
-## Gestione del file da importare
+6. Iniciar Bizlink.
+
+## Gestión del archivo a importar (Gestione del file da importare)
 
 ![](/img/it-it/configurations/parameters/finance/payroll7.png)
 
-Prestare attenzione al fatto che attualmente in Fluentis è richiesto di formattare mese/anno mentre solitamente il file viene esportato da Zucchetti come data intera, occorre cambiare in excel finchè non sarà rivisto.
+Preste atención al hecho de que actualmente en Fluentis se requiere formatear mes/año, mientras que comúnmente el archivo es exportado por Zucchetti como fecha completa; es necesario cambiarlo en Excel hasta que se revise.
 
 ![](/img/it-it/configurations/parameters/finance/payroll8.png)
 
-Occorre poi gestire le transcodifiche della società e del piano dei conti.
+Luego se deben gestionar las transcodificaciones de la empresa y del plan de cuentas.  
 
 ![](/img/it-it/configurations/parameters/finance/payroll9.png)
 
-Ed eventualmente dei centri di costo.
+Y eventualmente de los centros de costos.
 
-Bisogna infine gestire I PARAMETRI IMPORTAZIONE PAGHE come sopra specificato.
+Por último, es necesario gestionar LOS PARÁMETROS DE IMPORTACIÓN DE NÓMINA como se especificó anteriormente.

@@ -1,51 +1,43 @@
 ---
-title: Modifica - Ricalcola rischio cliente
+title: Modificar - Recalcular riesgo cliente (Modifica - Ricalcola rischio cliente)
 sidebar_position: 1
 ---
 
-Le due maschere sostanzialmente gestiscono la visualizzazione dello stato complessivo del rischio nei confronti di un determinato cliente: il ‘Ricalcola rischio cliente' è una semplice richiesta spot della situazione attuale del cliente, mentre la maschera di modifica della procedura ‘Utilizzo fidi' consente di memorizzare ogni calcolo effettuato e visualizzarne quindi una serie storica.
+Las dos pantallas gestionan esencialmente la visualización del estado general del riesgo en relación con un cliente en particular: la ‘Recalcular riesgo cliente (Ricalcola rischio cliente)' es una simple solicitud puntual de la situación actual del cliente, mientras que la pantalla de modificación del procedimiento ‘Uso de créditos (Utilizzo fidi)' permite almacenar cada cálculo realizado y visualizar así una serie histórica.
 
-Vediamo in dettaglio la lista dei campi visualizzata, che è sostanzialmente la stessa presente anche nella maschera dell'esposizione clienti.
+Veamos en detalle la lista de campos visualizada, que es esencialmente la misma que está presente en la pantalla de exposición de clientes.
 
-In testata sono presenti i parametri di calcolo: il codice del cliente, la data di inizio calcolo (impostata di default dai parametri del modulo rischio cliente), la data finale di riferimento (impostata ad oggi), il numero di giorni di ritardo per gli effetti sbf e effetti al dopo incasso (impostati dai parametri del modulo, cui si rimanda), il flag di considerazione delle partite collegate a registrazioni provvisorie. Premendo il pulsante di calcolo appariranno i seguenti valori:
+En la cabecera están los parámetros de cálculo: el código del cliente, la fecha de inicio del cálculo (establecida por defecto por los parámetros del módulo de riesgo cliente), la fecha final de referencia (establecida hasta hoy), el número de días de retraso para los efectos SBF y efectos al cobro (establecidos por los parámetros del módulo, a los que se remite), el indicador de consideración de las partidas relacionadas con registros provisionales. Al presionar el botón de cálculo aparecerán los siguientes valores:
 
-**Fatt. 12M**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
+**Fatt. 12M (Facturación 12 meses)**: es la facturación (del área de ventas, facturas de venta) de los 12 meses anteriores a la fecha de referencia;
 
-**Fatturato anno**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
+**Fatturato anno (Facturación del año)**: es la facturación (del área de ventas, facturas de venta) desde el inicio del año;
 
-Nella sezione **Situazione partite aperte** saranno visibili i totali dare/avere e il saldo relativo alle partite aperte;
+En la sección **situazione partite aperte** serán visibles los totales deudores/acreedores y el saldo correspondiente a las partidas abiertas;
 
-Nella sezione **Pagam da reg. provv.** saranno visualizzati gli eventuali importi di pagamento inseriti in registrazioni provvisorie;
+En la sección **Pagos de registros provisionales (Pagam da reg. provv.)** se visualizarán los posibles importes de pago ingresados en registros provisionales;
 
-Nella sezione **Situazione saldo contabile** saranno visibili i totali dare/avere e il saldo del mastrino di contabilità generale;
+En la sección **situazione saldo contabile** serán visibles los totales deudores/acreedores y el saldo del libro mayor de contabilidad general;
 
-**Saldo partite/contabile**: ripropone i totali dare/avere calcolati dalle partite o dal saldo così come visualizzato nelle sezioni precedenti;
+**saldo partite/contabile**: repite los totales deudores/acreedores calculados a partir de las partidas o del saldo tal como se visualizó en las secciones anteriores;
 
-**Fatture da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
+**Fatture da contabilizzare (Facturas a contabilizar)**: son los importes de las facturas (de los Tipos de factura asociados al crédito) impresas pero no contabilizadas;
 
-**Ddt da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
+**Ddt da fatturare (DDT a facturar)**: son los importes de los DDT (de los Tipos de DDT asociados al crédito) impresos pero no facturados;
 
-**Ordini da evadere**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampate, confermati ma non ancora evasi;
+**Ordini da evadere (Órdenes a cumplir)**: son los importes de los pedidos (de los Tipos de orden asociados al crédito) impresos, confirmados pero no cumplidos;
 
-**Effetti emessi**: sono gli importi degli effetti (del modulo portafoglio effetti) emessi e contabilizzati, ma non ancora presentati
+**Effetti emessi (Efectos emitidos)**: son los importes de los efectos (del módulo de cartera de efectos) emitidos y contabilizados, pero no presentados;
 
-**Effetti presentati allo sconto-al sbf-all'incasso**: sono gli importi degli effetti presentati ma che hanno data scadenza (più i giorni dei parametri inseriti in testata del calcolo) superiore alla data di riferimento;
+**Effetti presentati allo sconto-al sbf-all'incasso (Efectos presentados al descuento-al SBF-al cobro)**: son los importes de los efectos presentados pero que tienen una fecha de vencimiento (más los días de los parámetros ingresados en la cabecera del cálculo) superior a la fecha de referencia;
 
-Sezione** insoluti**: sono qui visualizzati gli insoluti non contabilizzati, oppure (se il flag è inserito) anche quelli già contabilizzati, sia come importo che relativo numero;
+Sección **insoluti (incobrables)**: aquí se visualizan los incobrables no contabilizados, o (si el indicador está activado) también aquellos ya contabilizados, tanto como importo como número relativo;
 
-Dalla somma dei valori precedenti viene calcolato il ‘Rischio cliente', che comparato al fido concesso, darà lo sconfinamento del fido.
+De la suma de los valores anteriores se calcula el ‘Riesgo cliente (Rischio cliente)', que comparado con el crédito concedido, dará el exceso sobre el crédito.
 
-Il campo **Scaduto** visualizza l'importo delle partite aperte ma già scadute, quale ulteriore elemento di analisi della situazione del cliente.
+El campo **Scaduto (Vencido)** muestra el importe de las partidas abiertas pero ya vencidas, como un elemento adicional para analizar la situación del cliente.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Salva | Il pulsante, presente in modifica di un fido già calcolato, consente di memorizzare il risultato ottenuto. |
-| Calcola | Richiama la procedura per calcolare la situazione complessiva di rischio per il cliente. |
-
-
-
-
-
-
+| Salvar (Salva) | El botón, presente en la modificación de un crédito ya calculado, permite almacenar el resultado obtenido. |
+| Calcular (Calcola) | Llama al procedimiento para calcular la situación general de riesgo para el cliente. |

@@ -1,65 +1,65 @@
 ---
-title: Ricerca Corsi base
+title: Búsqueda de Cursos Básicos (Ricerca Corsi base)
 sidebar_position: 2
 ---
 
-Il filtro si trova sul percorso **Home > Dipendenti > Corsi di formazione > Corsi base**.   
+El filtro se encuentra en la ruta **Inicio > Empleados > Cursos de formación > Cursos básicos**.  
 
-Il filtro dati consente di inserire nuovi *Corsi base* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+El filtro de datos permite ingresar nuevos *Cursos básicos* o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.  
 
-### ![](/img/neutral/common/search.png) Ricerca Corsi base
+### ![](/img/neutral/common/search.png) Búsqueda de Cursos Básicos
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-### ![](/img/neutral/common/new.png) Inserimento Corsi base
+### ![](/img/neutral/common/new.png) Ingreso de Cursos Básicos
 
-Per poter inserire nuovi *Corsi base* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevos *Cursos básicos* es necesario presionar el botón **Nuevo**.  
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Corsi base
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Cursos Básicos
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **Modificar** o **Visualizar**.  
 
-*Pulsanti specifici*: 
-    
-### ![](/img/neutral/common/duplicate.png) Duplica Corsi base
+*Botones específicos*: 
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Corso base*.   
-Per poter duplicare un *Corso base* esistente in un nuovo *Corso base* è necessario cliccare nella griglia sul *Corso base* da cui si desidera duplicare e premere il pulsante **Duplica**. Si può duplicare un solo *Corso base* alla volta. Viene visualizzata una richiesta di:   
-> **Tipo corso base**: è il *Tipo corso base* del nuovo *Corso base* (dato obbligatorio), viene proposto il *Tipo corso base* del *Corso base* di origine.   
-> **Titolo**: è il *Titolo* del nuovo *Corso base* (dato obbligatorio).   
-> **Area**: è l'*Area* del nuovo *Corso base*, viene proposta l'*Area* del *Corso base* di origine.   
-> **Settore**: è il *Settore* del nuovo *Corso base*, viene proposto il *Settore* del *Corso base* di origine.   
-> **Categoria corso**: è la *Categoria corso* del nuovo *Corso base*, viene proposta la *Categoria corso* del *Corso base* di origine.   
+### ![](/img/neutral/common/duplicate.png) Duplicar Cursos Básicos
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Corso base* viene visualizzato.
+El botón está habilitado solamente si, desde la cuadrícula de resultados, se selecciona un solo *Curso básico*.  
+Para poder duplicar un *Curso básico* existente en un nuevo *Curso básico* es necesario hacer clic en la cuadrícula sobre el *Curso básico* del cual se desea duplicar y presionar el botón **Duplicar**. Se puede duplicar un solo *Curso básico* a la vez. Se muestra una solicitud de:  
+> **tipo corso base**: es el *Tipo de curso básico* del nuevo *Curso básico* (dato obligatorio), se propone el *Tipo de curso básico* del *Curso básico* de origen.  
+> **titolo**: es el *Título* del nuevo *Curso básico* (dato obligatorio).  
+> **area**: es el *Área* del nuevo *Curso básico*, se propone el *Área* del *Curso básico* de origen.  
+> **settore**: es el *Sector* del nuevo *Curso básico*, se propone el *Sector* del *Curso básico* de origen.  
+> **categoria corso**: es la *Categoría de curso* del nuevo *Curso básico*, se propone la *Categoría de curso* del *Curso básico* de origen.  
 
-### Pianifica prossimo corso
+Presione posteriormente el botón **OK** o el botón **Cancel** si desea continuar con la actividad de duplicación o no.  
+Al finalizar el procesamiento, el nuevo *Curso básico* se visualizará.
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Corso base*.   
-Per poter pianificare un nuovo *Corso di formazione* da un *Corso base* è necessario cliccare nella griglia sul *Corso base* da cui si desidera pianificare e premere il pulsante **Pianifica prossimo corso**. Si può pianificare un solo *Corso di formazione* alla volta.   
-Il nuovo *Corso di formazione* creato avrà le seguenti informazioni precaricate:   
-> **Tipo corso di formazione**: specificato nella tabella dei *Tipi corso base* presente nel *Corso base* di origine.   
-> **Anno**, **Numero** e **Data**: in base a quanto previsto dalla *Numerazione* associata al *Tipo corso di formazione* e alla data odierna.   
-> **Pianificato**: indicatore di *Corso di formazione pianificato*.   
-> Altre informazioni ereditate dal *Corso base* di origine: *Contenuti*, *Docente*, *Requisiti docente*, *Presenza stranieri*, *Valutazione efficacia*, *Riferimenti normativi*, *Settore*, *Area*, *Categoria corso*, *Ore previste* e *Costo previsto*; l'elenco delle *Mansioni* interessate.   
-> Sulla base delle *Mansioni* interessate vengono proposti i *Dipendenti* che, alla data del corso, ricoprono quelle *Mansioni*.   
+### Planificar próximo curso
 
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.
+El botón está habilitado solamente si, desde la cuadrícula de resultados, se selecciona un solo *Curso básico*.  
+Para poder planificar un nuevo *Curso de formación* a partir de un *Curso básico* es necesario hacer clic en la cuadrícula sobre el *Curso básico* desde el cual se desea planificar y presionar el botón **Planificar próximo curso**. Se puede planificar un solo *Curso de formación* a la vez.  
+El nuevo *Curso de formación* creado tendrá la siguiente información precargada:  
+> **tipo corso di formazione**: especificado en la tabla de *Tipos de curso básico* presente en el *Curso básico* de origen.  
+> **Año**, **Número** y **Fecha**: basados en lo previsto por la *Numeración* asociada al *Tipo de curso de formación* y a la fecha actual.  
+> **pianificato**: indicador de *Curso de formación planificado*.  
+> Otras informaciones heredadas del *Curso básico* de origen: *Contenidos*, *Docente*, *Requisitos docente*, *Presencia de extranjeros*, *Evaluación de eficacia*, *Referencias normativas*, *Sector*, *Área*, *Categoría de curso*, *Horas previstas* y *Costo previsto*; la lista de *Tareas* involucradas.  
+> Basado en las *Tareas* involucradas, se proponen los *Empleados* que, a la fecha del curso, ocupan esos *Tareas*.  
 
-### Pianifica prossimo rinnovo
+Al finalizar el procesamiento, el nuevo *Curso de formación* se visualizará.
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Corso base* dove è previsto un rinnovo (*Dati rinnovo corso* con *Periodicità* diversa da *zero*).   
-Per poter pianificare un nuovo rinnovo da un *Corso base* è necessario cliccare nella griglia sul *Corso base* da cui si desidera pianificare e premere il pulsante **Pianifica prossimo rinnovo**. Si può pianificare un solo *Corso di formazione* alla volta.   
-Viene visualizzato un messaggio di impossibilità di creazione rinnovo se, per il *Corso base*, non è mai stato effettuato un *Corso di formazione*. 
-Il nuovo *Corso di formazione* creato avrà le seguenti informazioni precaricate:   
-> **Tipo corso di formazione**: specificato nella tabella dei *Tipi corso base* presente nel *Corso base* di origine.   
-> **Anno**, **Numero** e **Data**: in base a quanto previsto dalla *Numerazione* associata al *Tipo corso di formazione* e alla data odierna.   
-> **Pianificato**: indicatore di *Corso di formazione pianificato*.   
-> **Rinnovo**: indicatore di *Rinnovo Corso di formazione*.   
-> Altre informazioni ereditate dal *Corso base* di origine: *Docente*, *Requisiti docente*, *Riferimenti normativi*, *Settore*, *Area*, *Categoria corso*, l'elenco delle *Mansioni* interessate; dal *Corso base - Rinnovo*: *Contenuti*, *Presenza stranieri*, *Valutazione efficacia*, *Ore previste* e *Costo previsto*.   
-> Sulla base delle *Mansioni* interessate vengono proposti i *Dipendenti* che, alla data del corso, ricoprono quelle *Mansioni*.   
+### Planificar próximo renovación
 
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.
+El botón está habilitado solamente si, desde la cuadrícula de resultados, se selecciona un solo *Curso básico* donde se prevé una renovación (*Datos de renovación del curso* con *Periodicidad* diferente de *cero*).  
+Para poder planificar una nueva renovación a partir de un *Curso básico* es necesario hacer clic en la cuadrícula sobre el *Curso básico* desde el cual se desea planificar y presionar el botón **Planificar próximo renovación**. Se puede planificar un solo *Curso de formación* a la vez.  
+Se mostrará un mensaje de imposibilidad de creación de renovación si, para el *Curso básico*, nunca se ha realizado un *Curso de formación*.  
+El nuevo *Curso de formación* creado tendrá la siguiente información precargada:  
+> **tipo corso di formazione**: especificado en la tabla de *Tipos de curso básico* presente en el *Curso básico* de origen.  
+> **Año**, **Número** y **Fecha**: basados en lo previsto por la *Numeración* asociada al *Tipo de curso de formación* y a la fecha actual.  
+> **pianificato**: indicador de *Curso de formación planificado*.  
+> **rinnovo**: indicador de *Renovación del Curso de formación*.  
+> Otras informaciones heredadas del *Curso básico* de origen: *Docente*, *Requisitos docente*, *Referencias normativas*, *Sector*, *Área*, *Categoría de curso*, la lista de *Tareas* involucradas; del *Curso básico - Renovación*: *Contenidos*, *Presencia de extranjeros*, *Evaluación de eficacia*, *Horas previstas* y *Costo previsto*.  
+> Basado en las *Tareas* involucradas, se proponen los *Empleados* que, a la fecha del curso, ocupan esos *Tareas*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Al finalizar el procesamiento, el nuevo *Curso de formación* se visualizará.
+
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,30 +1,30 @@
 ---
-title: Categorie corso
+title: categorie corso
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Categorie corso**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Empleados (Dipendenti) > Cursos de formación (Corsi di formazione) > categorie corso (Categorie corso)**.
 
-In questa tabella è possibile codificare le *Categorie corso* che sono utilizzate per categorizzare i *Corsi base e di formazione*.   
-Alcuni esempi di utilizzo delle *Categorie corso* li troviamo nelle gestioni:
-> **Corsi di base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.
+En esta tabla se pueden codificar las *categorie corso* que se utilizan para categorizar los *Cursos básicos y de formación (Corsi base e di formazione)*.  
+Algunos ejemplos de uso de las *categorie corso* los encontramos en las gestiones:  
+> **Cursos básicos (Corsi di base)** - en los *dati di testata*;  
+> **corsi di formazione** - en los *dati di testata*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-### Ricerca Categorie corso
+### Búsqueda de categorie corso (Ricerca Categorie corso)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### Inserimento Categorie corso 
+### Inserción de categorie corso (Inserimento Categorie corso)
 
-Per poter inserire nuove *Categorie corso* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *categorie corso* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici 
-    
-> **Categoria corso**: è il codice della *Categoria corso*.   
-> **Descrizione categoria corso**: è la descrizione della *Categoria corso*.   
-> **Note**: annotazioni libere.
+#### Campos específicos (Campi specifici)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **categoria corso**: es el código de la *categoria corso*.  
+> **descrizione categoria corso**: es la descripción de la *categoria corso*.  
+> **note**: anotaciones libres.
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consultar el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

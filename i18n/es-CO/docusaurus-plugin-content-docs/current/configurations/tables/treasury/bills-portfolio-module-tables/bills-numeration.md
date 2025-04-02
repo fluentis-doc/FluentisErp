@@ -1,16 +1,16 @@
 ---
-title: Numerazione effetti
+title: numerazione effetti
 sidebar_position: 1
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-Per definire una numerazione è sufficiente impostare l'anno di riferimento, il codice della numerazione, la sua descrizione e il numero di partenza.
+Para definir una numeración, basta con establecer el año de referencia, el código de la numeración, su descripción y el número inicial.
 
-La tabella è fra quelle gestite automaticamente nella procedura di generazione dei contatori del nuovo esercizio contabile, che si trova all'interno degli ‘Strumenti'-‘Utilità'.
+La tabla es una de aquellas gestionadas automáticamente en el procedimiento de generación de los contadores del nuevo ejercicio contable, que se encuentra dentro de ‘Herramientas' - ‘Utilidades'.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

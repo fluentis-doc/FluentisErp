@@ -1,30 +1,29 @@
 ---
-title: Unità di misura
+title: unità di misura
 sidebar_position: 13
 ---
 
-All'interno della tabella delle ***Unità di misura*** dovremo innanzi tutto andare a codificare tutte quelle unità di misura che si dovessero rendere necessarie per la gestione del *Controlling*: andremo a codificare, tipicamente, le ore uomo e le ore macchina per riprendere i dati da produzione, piuttosto che le unità che servono alle registrazioni manuali della ***Prima nota movimenti fisici*** (kww, mq, nr teste, nr postazioni telefoniche, ecc. ecc.). Per ognuna di queste UM dovremo in particolare andare a definire la proprietà ***Tipo valutazione del tempo***, che prevede due opzioni:
+Dentro de la tabla de **unità di misura***, primero debemos codificar todas aquellas unidades de medida que sean necesarias para la gestión del *Controlling*: típicamente, codificaremos las horas hombre y las horas máquina para retomar los datos de producción, así como las unidades que se utilizan para los registros manuales de la ***Primera nota de movimientos físicos (Prima nota movimenti fisici)*** (kww, mq, nr cabezas, nr posiciones telefónicas, etc.). Para cada una de estas UM, debemos definir especialmente la propiedad ***Tipo de evaluación del tiempo (Tipo valutazione del tempo)***, que prevé dos opciones:
 
-- ***Stato***: quando le quantità rilevate sono sostanzialmente fisse, cioè si replicano ad ogni periodo
-- ***Flusso***: quando sono specifiche del singolo periodo
+- **stato***: cuando las cantidades registradas son fundamentalmente fijas, es decir, se replican en cada período. 
+- **flusso***: cuando son específicas del período individual.
 
 :::tip nota
-L'impostazione è determinante per la gestione che ***FluentisERP*** richiederà nell'inserimento delle quantità nella maschera della ***Prima nota movimenti fisici***: l'inserimento di una UM di *Stato* ***non richiederà***  l'indicazione obbligatoria di un ***Periodo di distribuzione***, in quanto la quantità indicata sarà replicata per ogni periodo del range inserito, mentre al contrario una UM di *Flusso* ***richiederà*** obbligatoriamente un ***Periodo di distribuzione*** per spalmare la quantità su ogni periodo del range inserito
+La configuración es determinante para la gestión que ***FluentisERP*** requerirá en la inserción de cantidades en la máscara de la ***Primera nota de movimientos físicos (Prima nota movimenti fisici)***: la inserción de una UM de *stato* ***no requerirá*** la indicación obligatoria de un ***Período de distribución (Periodo di distribuzione)***, ya que la cantidad indicada se replicará para cada período del rango ingresado; mientras que, por el contrario, una UM de *flusso* ***requerirá*** obligatoriamente un ***Período de distribución (Periodo di distribuzione)*** para distribuir la cantidad en cada período del rango ingresado.
 :::
 
-Per la ripresa da produzione dei tempi, inoltre, è necessario tener conto che le *dichiarazioni di produzione* rilevano sempre i tempi in *minuti*, e quindi abbiamo necessità di configuare come ***FluentisERP*** deve gestire la conversione nelle Unità di misura utilizzate per rilevare i tempi dei centri.
-Dovremo innanzi tutto definire la conversione tra i minuti della produzione e la UM dei tempi che utilizzeremo nel *Controlling*: se abbiamo ad esempio una UM 'ore uomo', allora all'interno della tabella ***Unità di misura***, quindi, indicheremo nel tab ***Conversioni tra altre UM***
-- *UM alternativa*: 'Min' (cioè la UM che ha i flag ***UM tempo***  e ***Minuti*** settati)
-- *Fatt. Conv.*: 60
-- *Da moltiplicare*: flag settato
+Para la recuperación de tiempos de producción, además, es necesario tener en cuenta que las *declaraciones de producción* siempre registran los tiempos en *minutos*, y por lo tanto necesitamos configurar cómo ***FluentisERP*** debe gestionar la conversión a las unità di misura utilizadas para registrar los tiempos de los centros.  
+Primero, debemos definir la conversión entre los minutos de producción y la UM de los tiempos que utilizaremos en *Controlling*: por ejemplo, si tenemos una UM 'horas hombre', entonces en la tabla de **unità di misura*** indicaremos en la pestaña ***Conversiones entre otras UM (Conversioni tra altre UM)***:  
+- *um alternativa*: 'Min' (es decir, la UM que tiene los indicadores **um tempo*** y **minuti*** configurados)  
+- *fatt. conv.*: 60  
+- *da moltiplicare*: indicador configurado  
 
-In secondo luogo, dovremo agganciare queste UM del Controlling ai nostri *Centri aziendali produttivi*, cosa che si esegue nella tabella ***Unità di misura dei centri aziendali per il controlling***. In questa maschera andremo a configurare:
+En segundo lugar, debemos vincular estas UM de Controlling a nuestros *Centros empresariales productivos*, lo que se realiza en la tabla **unità di misura dei centri aziendali per il controlling***. En esta máscara configuraremos:
 
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento della configurazione
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) produttivo che avrà una valorizzazione dei tempi da produzione
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo attrezzaggio***
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo uomo***
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo macchina***
-- il range ***Da data*** e ***A data*** di validità della configurazione
-- i flag che indicano se considerare o meno i vari tempi nel calcolo della produttività del centro
-
+- el [**area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia de la configuración  
+- el [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) productivo que tendrá una valoración de los tiempos de producción  
+- la unidad de medida a utilizar si para este Centro se quiere registrar el **tempo attrezzaggio***  
+- la unidad de medida a utilizar si para este Centro se quiere registrar el **tempo uomo***  
+- la unidad de medida a utilizar si para este Centro se quiere registrar el **tempo macchina***  
+- el rango **da data*** y **a data*** de validez de la configuración  
+- los indicadores que indican si considerar o no los diversos tiempos en el cálculo de la productividad del centro

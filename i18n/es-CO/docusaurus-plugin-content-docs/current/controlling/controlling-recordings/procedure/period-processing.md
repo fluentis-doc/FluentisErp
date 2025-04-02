@@ -1,59 +1,55 @@
 ---
-title: Elaborazione periodi 
+title: elaborazione periodi
 sidebar_position: 3
---- 
+---
 
-La procedura di ***Elaborazione periodi*** è quella principale nelle elaborazioni del controlling. Anche questa maschera si divide in 4 procedure differenti: l’elaborazione dei movimenti fisici, il calcolo degli ammortamenti, la vera e propria elaborazione periodi e infine l’elaborazione del consuntivo di progetto.
+El procedimiento de **elaborazione periodi*** es el principal en los procesos de controlling. Esta máscara también se divide en 4 procedimientos diferentes: la elaboración de los movimientos físicos, el cálculo de las amortizaciones, la verdadera elaboración de períodos y, por último, la elaboración del informe final del proyecto.
 
-## ELABORAZIONE MOVIMENTI FISICI
-La prima procedura non fa altro che leggere le ***Registrazioni movimenti fisici*** per creare la base dati dello ***Storico movimenti fisici***, andando a leggere le quantità delle unità di misura di stato (come ad esempio i metri quadri degli uffici) per replicarle nei vari periodi piuttosto che prendendo quelle di flusso per suddividerle secondo i criteri dei periodi di distribuzione collegati. Dovremo impostare solo
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- l'***Anno***
+## ELABORACIÓN DE MOVIMIENTOS FÍSICOS (ELABORAZIONE MOVIMENTI FISICI)
+El primer procedimiento solo lee las **registrazioni movimenti fisici*** para crear la base de datos del ***Histórico de movimientos físicos (Storico movimenti fisici)***, leyendo las cantidades de las unidades de medida de estado (como, por ejemplo, los metros cuadrados de las oficinas) para replicarlas en los diversos períodos en lugar de tomar las de flujo para dividirlas según los criterios de los períodos de distribución asociados. Solo debemos establecer:
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) 
+- el **anno***
 
-## STORICO AMMORTAMENTI
-Da questa sezione si effettua l’elaborazione degli ammortamenti del controlling. Andremo a impostare 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) alla quale assegnare i valori
-- l’***Anno*** da elaborare-
-- il campo ***Fino a periodo***, cioè il periodo finale dell’anno da elaborare, che tipicamente corrisponderà con il periodo finale del nostro consuntivo elaborato nella chiusura infrannuale
-- infine abbiamo l’***Anno iniziale per ricalcolo storico***. Questo campo serve nel caso in cui si siano modificate delle impostazioni del controlling nei cespiti già elaborati
+## HISTÓRICO DE AMORTIZACIONES (STORICO AMMORTAMENTI)
+Desde esta sección se lleva a cabo la elaboración de las amortizaciones del controlling. Debemos configurar:  
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) a la cual asignar los valores  
+- el **anno*** a elaborar  
+- el campo **fino a periodo***, es decir, el periodo final del año a elaborar, que típicamente corresponderá al periodo final de nuestro informe elaborado en el cierre interanual  
+- por último, tenemos el **anno iniziale per ricalcolo storico***. Este campo es útil en caso de que se hayan modificado configuraciones del controlling en los activos ya elaborados.
 
-:::tip Esempio
-Ipotizziamo di avere un cespite acquistato nel 2015, da ammortizzare nel controlling alla percentuale del 15% e quindi in poco più di 6 anni e mezzo, se il nostro primo calcolo del controlling è il 2022 ***FluentisERP***, nella prima elaborazione, dovrà calcolarsi gli ammortamenti dal 2015 in poi in modo da capire se nel 2022 c’è un residuo da elaborare, probabilmente no dato che il 2022 è 7 anni dopo (dico probabilmente perché il calcolo del controlling viene gestito mese per mese, se il cespite fosse acquistato a dicembre 2015 allora probabilmente avremo la chiusura dell’ammortamento nei primi mesi del 2022). Se per qualche motivo, dopo una prima elaborazione, volessi portare l’ammortamento al 10%, invece, cosa deve fare ***FluentisERP*** quando calcola il 2022, tenere per buono il dato di partenza al 15% già elaborato e quindi continuare a non calcolare nulla, o deve resettare i valori storici per rielaborarli con le impostazioni attuali? Se impostiamo l’anno di partenza da riconsiderare, significa che su tutti i cespiti che hanno il flag di aggiornamento dei valori storici ***FluentisERP*** andrà a ricalcolare i dati storici a partire da quello settato.
+:::tip Ejemplo
+Supongamos que tenemos un activo adquirido en 2015, para amortizar en el controlling a una tasa del 15%, y por lo tanto en poco más de 6 años y medio, si nuestro primer cálculo de controlling es en 2022, ***FluentisERP***, en la primera elaboración, deberá calcular las amortizaciones desde 2015 en adelante para entender si en 2022 hay un remanente por elaborar, probablemente no, dado que 2022 es 7 años después (digo probablemente porque el cálculo del controlling se gestiona mes a mes, si el activo se compró en diciembre de 2015, entonces probablemente cerraremos la amortización en los primeros meses de 2022). Si por alguna razón, después de una primera elaboración, quisiese reducir la amortización al 10%, entonces ¿qué debe hacer ***FluentisERP*** cuando calcula 2022, mantener el dato de partida al 15% ya elaborado y, por lo tanto, continuar sin calcular nada, o debe reiniciar los valores históricos para reelaborarlos con las configuraciones actuales? Si establecemos el año de inicio a reconsiderar, significa que todos los activos que tienen el indicador de actualización de valores históricos, ***FluentisERP*** recalculará los datos históricos a partir de aquello establecido.
 :::
 
-Una volta completata l’elaborazione, ***FluentisERP*** avrà valorizzato i dati di due maschere: la prima è quella dello ***Storico ammortamenti***, dove avremo visibilità del dettaglio per area, cespite, anno e mese dei dati elaborati sul singolo cespite. Come per le altre maschere di storico, i dati di questa tabella non sono modificabili da parte dell’utente. La seconda maschera che è stata valorizzata sarà quella delle ***Registrazioni extracontabili di area***, nella quale fluentis avrà eliminato e ricreato una registrazione per anno che contiene il dettaglio mensile degli ammortamenti applicati, totalizzando i valori per sottoconto e centro
+Una vez completada la elaboración, ***FluentisERP*** habrá valorado los datos de dos máscaras: la primera es la del **storico ammortamenti***, donde tendremos visibilidad del detalle por área, activo, año y mes de los datos elaborados sobre cada activo. Como en las otras máscaras históricas, los datos de esta tabla no son modificables por el usuario. La segunda máscara que se ha valorado será la de **registrazioni extracontabili di area***, en la que Fluentis habrá eliminado y recreado un registro por año que contiene el detalle mensual de las amortizaciones aplicadas, totalizando los valores por subcuenta y centro.
 
+## ELABORACIÓN DE DATOS CONTABLES (ELABORAZIONE DATI CONTABILI)
+Es la elaboración que lee el informe final del **chiusura infrannuale*** que hemos preparado para mensibilizar los datos y luego aplicar los diversos drivers en el orden de ciclo. Los parámetros a ingresar son los habituales:
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia 
+- el ***Cierre interanual*** a utilizar 
+- los eventuales **tempi di bilanciamento*** si se quieren crear los ajustes sobre las cuentas que no se utilizarán en el controlling 
+- la **data*** 
+- el **anno*** de los datos a elaborar 
+- la **causale*** a utilizar
 
-## ELABORAZIONE DATI CONTABILI
-E' l’elaborazione che legge il consuntivo della ***Chiusura infrannuale*** che abbiamo preparato per andare a mensilizzare i dati e poi applicare i vari driver nell’ordine di ciclo. I parametri da inserire sono i soliti
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
-- la ***Chiusura infrannuale*** da utilizzare
-- gli eventuali ***Tempi di bilanciamento*** se si vogliono creare i conguagli sui conti da non utilizzare nel controlling
-- la ***Data*** 
-- l’***Anno*** dei dati da elaborare
-- la ***Causale*** da utilizzare
+La elección del **chiusura infrannuale***, en realidad, no es obligatoria: imaginemos que hemos importado desde una hoja de cálculo que hemos preparado externamente los datos del área de presupuesto, donde, por lo tanto, tenemos las estimaciones de los saldos para subcuenta y centro del próximo año. Aún podremos calcular sobre estos registros extracontables de presupuesto nuestros drivers, que serán quizás específicos para el área de presupuesto, para mensibilizarlos adecuadamente y luego compararlos con los informes finales que nos llegan de la contabilidad: en este caso, por lo tanto, no configuraremos el cierre interanual porque serán los registros presupuestarios la fuente de datos a considerar.
 
-La scelta della ***Chiusura infrannuale***, in realtà, non è obbligatoria: immaginiamo di aver importato da un foglio elettronico che ci siamo preparati esternamente i dati dell’area budget, dove quindi abbiamo le stime dei saldi per sottoconto e centro dell’anno prossimo. Potremo comunque calcolare su queste registrazioni extracontabili di budget i nostri driver, che saranno magari specifici per l’area budget, in modo da mensilizzarli opportunamente e farne poi un comparato rispetto ai consuntivi che ci arrivano dalla contabilità: in questo caso, quindi, non imposteremo la chiusura infrannuale perché saranno le registrazioni di budget l’origine dati da considerare.
+Si, en cambio, estamos elaborando nuestros informes finales de un cierre, se activará la posibilidad de dejar que ***FluentisERP*** valore los registros automáticos de ajuste, configurando si gestionar los de las cuentas ***Interanuales (Infrannuali)*** o tanto de estas como de las ***Anuales (Annuali)***.
 
-Se invece stiamo elaborando i nostri consuntivi di una chiusura, si attiverà la possibilità di far valorizzare a ***FluentisERP*** le registrazioni automatiche di conguaglio, impostando se gestire quelle dei conti ***Infrannuali*** oppure sia di questi che di quelli ***Annuali***.
-
-Si tratta di ricondurre, con registrazioni apposite, i dati dei sottoconti impostati come da non utilizzare nel controlling, visibili nella griglia in basso, rispetto a quelli rilevati anticipatamente con registrazioni extracontabili di area. 
+Se trata de reconducir, con registros apropiados, los datos de las subcuentas configuradas como no utilizables en el controlling, visibles en la cuadrícula en la parte inferior, en comparación con aquellos registrados anticipadamente con registros extracontables de área.
 
 :::tip Nota
-Come già detto in altro punto della documentazione, le logiche di conguaglio potrebbero essere solo a livello di valori mantenendo le proporzioni dei centri già rilevati, oppure proprio di elisione del dato del controlling con registrazioni di storno per riportare la valorizzazione contabile sia di valore che di centro. Dalla griglia in basso sarà possibile, eventualmente, forzare il tempo e il tipo di bilanciamento da eseguire, sovrascrivendo la logica memorizzata al momento della creazione della chiusura infrannuale.
+Como ya se mencionó en otro punto de la documentación, las lógicas de ajuste podrían ser solo a nivel de valores manteniendo las proporciones de los centros ya registrados, o bien eliminando el dato del controlling con registros de contrapartida para reflejar la valoración contable tanto de valor como de centro. Desde la cuadrícula en la parte inferior, será posible, eventualmente, forzar el tiempo y el tipo de compensación a ejecutar, sobrescribiendo la lógica memorizada en el momento de la creación del cierre interanual.
 :::
 
-Nel corso di queste elaborazioni, ***FluentisERP*** andrà anche a preparare una tabella mensilizzata con i soli dati per progetto/commessa, che sarà la base di partenza dell’elaborazione del consuntivo. Se l’elaborazione dei dati contabili gestirà tutti i driver dei tipi distribuzione da 01 a 12, infatti, l’elaborazione del consuntivo di progetto andrà ad applicare i driver specifici di progetto/commessa.
+Durante estas elaboraciones, ***FluentisERP*** también preparará una tabla mensualizada con los únicos datos de proyecto/orden, que será la base de partida para la elaboración del informe final. Si la elaboración de datos contables gestionará todos los drivers de los tipos de distribución de 01 a 12, de hecho, la elaboración del informe final del proyecto aplicará los drivers específicos de proyecto/orden.
 
-## ELABORAZIONE CONSUNTIVO DI PROGETTO
-Questa procedura leggerà lo storico delle registrazioni elaborate nella procedura precedente che sono collegate a progetti, leggerà i dati da produzione (cioè lavorazioni interne ed esterne), in sostanza tutti i costi e ricavi diretti di progetto, per poi elaborare i driver dei tipi distribuzione da 13 a 18. Si vedano le spiegazioni disponibili nei ***Cost driver***. I campi da impostare sono:
+## ELABORACIÓN DEL INFORME FINAL DEL PROYECTO (ELABORAZIONE CONSUNTIVO DI PROGETTO)
+Este procedimiento leerá el histórico de los registros elaborados en el procedimiento anterior que están relacionados con proyectos, leerá los datos de producción (es decir, trabajos internos y externos), en esencia, todos los costos y ingresos directos del proyecto, para luego elaborar los drivers de los tipos de distribución de 13 a 18. Consulte las explicaciones disponibles en los ***Cost driver***. Los campos a configurar son:
 
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) da elaborare
-- il range ***Da data*** e ***A data***
-- un ***Codice*** e una ***Descrizione*** di questa elaborazione
-- una ***Data*** da assegnare alle registrazioni create
-- l'***Anno*** di riferimento del calcolo
-- la ***Causale*** da utilizzare per la registrazione
-
-
-
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) a elaborar
+- el rango **da data*** y **a data***
+- un **codice*** y una **descrizione*** de esta elaboración
+- una **data*** para asignar a los registros creados
+- el **anno*** de referencia del cálculo
+- la **causale*** a utilizar para el registro

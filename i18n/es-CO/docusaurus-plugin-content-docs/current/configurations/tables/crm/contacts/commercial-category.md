@@ -1,8 +1,7 @@
 ---
-title: Categoria Commerciale
+title: categoria commerciale
 sidebar_position: 2
 ---
 
-La tabella **Categoria commerciale** è una tabella descrittiva che può essere utilizzata nei Contatti del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella Codice/Descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della categoria commerciale, e da una griglia in cui appunto verranno elencate tutte le categorie inserite.
-
+La tabla **categoria commerciale** es una tabla descriptiva que puede ser utilizada en los Contactos del CRM. Es común a todas las empresas presentes en la base de datos y está formada por una sencilla tabla Código/Descripción. 
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción de la categoría comercial, y por una cuadrícula en la que se enumerarán todas las categorías ingresadas.

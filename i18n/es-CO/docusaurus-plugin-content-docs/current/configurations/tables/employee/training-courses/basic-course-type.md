@@ -1,33 +1,33 @@
 ---
-title: Tipi corso base
+title: tipi corso base
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Tipi corso base**.
+La tabla se encuentra en la ruta **Tablas > Empleados > Cursos de formación > tipi corso base (Tabelle > Dipendenti > Corsi di formazione > Tipi corso base)**.
 
-In questa tabella è possibile codificare i *Tipi corso base*.   
-Alcuni esempi di utilizzo di *Tipi corso base* li troviamo nelle gestioni:
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*;   
-> **Parametri di gestione del personale** - nei *dati di testata*.
+En esta tabla es posible codificar los *tipi corso base*.  
+Algunos ejemplos de uso de *tipi corso base* los encontramos en las gestiones:  
+> **corsi base** - en los *dati di testata*;  
+> **corsi di formazione** - en los *dati di testata*;  
+> **Parámetros de gestión del personal (Parametri di gestione del personale)** - en los *dati di testata*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-### Ricerca Tipi corso base**
+### Búsqueda de tipi corso base (Ricerca Tipi corso base)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### Inserimento Tipi corso base**
+### Inserción de tipi corso base (Inserimento Tipi corso base)
 
-Per poter inserire nuovi *Tipi corso base* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi corso base* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici  
-    
-> **Tipo**: è il codice del *Tipo corso base*.   
-> **Descrizione tipo**: è la descrizione del *Tipo corso base*.   
-> **Tipo corso di formazione**: è il codice del *Tipo corso di formazione* che viene proposto alla creazione di un nuovo *Corso di formazione* da questo *Tipo corso base*.   
-> **Descrizione tipo corso di formazione**: è la descrizione del *Tipo corso di formazione*.   
-> **Note**: annotazioni libere.
+#### Campos específicos (Campi specifici)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **tipo**: es el código del *tipo corso base*.  
+> **descrizione tipo**: es la descripción del *tipo corso base*.  
+> **tipo corso di formazione**: es el código del *Tipo de curso de formación* que se propone al crear un nuevo *corso di formazione* desde este *tipo corso base*.  
+> **descrizione tipo corso di formazione**: es la descripción del *tipo corso di formazione*.  
+> **note**: anotaciones libres.
+
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

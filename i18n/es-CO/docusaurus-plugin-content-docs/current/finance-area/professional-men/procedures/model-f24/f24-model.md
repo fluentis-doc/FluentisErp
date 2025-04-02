@@ -1,26 +1,18 @@
 ---
-title: Modello F24
+title: modello f24
 sidebar_position: 1
 ---
 
-La procedura è dedicata alla creazione del modello F24. Questo modello è dedicato al versamento dei vari tributi versati mensilmente dall'azienda.
+El procedimiento está dedicado a la creación del modelo F24. Este modelo es utilizado para el pago de los diversos tributos que la empresa paga mensualmente.
 
-Per inserire un nuovo modello F24 premere il tasto **Nuovo** nella ribbon bar.
+Para ingresar un nuevo modelo F24, presione el botón **nuovo** en la barra de herramientas.
 
-Per i dettagli nel nuovo modello in fase di inserimento vedere [**Gestione modello F24**](/docs/finance-area/professional-men/procedures/model-f24/f24-management)
+Para detalles en el nuevo modelo durante la fase de inserción, vea [**Gestión del modelo F24 (Gestione modello F24)**](/docs/finance-area/professional-men/procedures/model-f24/f24-management).
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei modelli inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo modello. |
-| Modifica | Richiama la procedura per modificare un modello precedentemente inserito. |
-| Visualizzazione | Richiama la procedura per visualizzare un modello precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un modello precedentemente inserito. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Botón para aplicar los filtros de búsqueda a toda la base de datos de modelos ingresados. |
+| Nuevo (Nuovo) | Llama al procedimiento para ingresar un nuevo modelo. |
+| Modificar (Modifica) | Llama al procedimiento para modificar un modelo previamente ingresado. |
+| Visualización (Visualizzazione) | Llama al procedimiento para visualizar un modelo previamente ingresado. |
+| Eliminar (Cancella) | Ejecuta el procedimiento para eliminar un modelo previamente ingresado. |

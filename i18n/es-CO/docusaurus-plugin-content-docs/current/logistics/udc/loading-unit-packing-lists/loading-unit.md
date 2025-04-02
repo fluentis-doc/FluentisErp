@@ -1,115 +1,113 @@
 ---
-title: Liste di prelievo/Packing list (versione WPF e WMS)
+title: Listas de preparación/Packing list (versione WPF e WMS) (Liste di prelievo/Packing list (versione WPF e WMS))
 sidebar_position: 1
 ---
 
-### Liste di prelievo/Packing list (versione WPF)
+### Listas de preparación/Packing list (versión WPF) (Liste di prelievo/Packing list (versione WPF))
 
-:::important A cosa serve
-La Lista Prelievo UDC / Packing List di Fluentis offre un metodo innovativo per gestire il prelievo di unità di carico, in contrapposizione alla tradizionale procedura di picking che si basa su singoli articoli. Questa funzionalità è particolarmente utile quando si desidera spedire merce a un cliente, consentendo di raggruppare articoli all'interno di unità di carico predefinite.
+:::important Para qué sirve (A cosa serve)
+La Lista de Preparación UDC / Packing List de Fluentis ofrece un método innovador para gestionar la preparación de unidades de carga, en contraposición al tradicional procedimiento de picking que se basa en artículos individuales. Esta funcionalidad es particularmente útil cuando se desea enviar mercancía a un cliente, permitiendo agrupar artículos dentro de unidades de carga predefinidas.
 
-La creazione di una nuova lista di prelievo richiede semplicemente l'inserimento di informazioni come la tipologia del picking, il magazzino e l'utente. Gli operatori possono quindi selezionare le unità di carico già create e caricate a magazzino direttamente nel tab "Dettaglio unità di carico", facilitando così l'associazione degli articoli da spedire con l'ordine cliente corrispondente. Grazie al pulsante "Help UDC", gli utenti possono facilmente navigare tra le unità di carico disponibili, rendendo il processo di selezione rapido ed efficiente.
+La creación de una nueva lista de preparación requiere simplemente la entrada de información como el tipo de picking, el almacén y el usuario. Los operadores pueden entonces seleccionar las unidades de carga ya creadas y cargadas en el almacén directamente en la pestaña "Detalle de unidad de carga", facilitando así la asociación de los artículos a enviar con la correspondiente orden de cliente. Gracias al botón "Help UDC", los usuarios pueden navegar fácilmente entre las unidades de carga disponibles, haciendo que el proceso de selección sea rápido y eficiente.
 
-Le liste di prelievo UDC non solo semplificano la preparazione delle spedizioni, ma consentono anche di generare direttamente documenti di trasporto come DDT e fatture, contenenti tutte le informazioni necessarie riguardo gli articoli e le unità di carico coinvolte nella spedizione. Questa integrazione garantisce una gestione più fluida ed efficace nel processo di logistica e spedizioni
+Las listas de preparación UDC no solo simplifican la preparación de envíos, sino que también permiten generar directamente documentos de transporte como DDT y facturas, conteniendo toda la información necesaria sobre los artículos y las unidades de carga involucradas en el envío. Esta integración garantiza una gestión más fluida y efectiva en el proceso de logística y envíos.
 :::
 
-Con le **liste di prelievo** è possibile creare un picking di unità di carico, al contrario del picking normale che è composto da articoli singoli.         
-Dalla maschera di **Ricerca** è possibile ricercare le liste precedentemente inserite.     
-Per creare una nuova Lista cliccare **Nuovo**.   
+Con las **listas de preparación (liste di prelievo)** es posible crear un picking de unidades de carga, a diferencia del picking normal que se compone de artículos individuales.    
+Desde la máscara de **ricerca** se pueden buscar las listas previamente ingresadas.  
+Para crear una nueva lista, haga clic en **nuovo**.  
 
-I dati obbligatori da inserire sono:         
-**Tipo picking**: inserire la tipologia di [picking](/docs/logistics/picking/picking-management) da utilizzare;       
-**Utente**: inserire il dipendente codificato che crea il documento;      
-**Utente per conf.**: inserire il dipendente che ha il diritto di confermare la lista.      
+Los datos obligatorios a ingresar son:  
+**tipo picking**: ingresar el tipo de [picking](/docs/logistics/picking/picking-management) a utilizar;  
+**utente**: ingresar el empleado codificado que crea el documento;  
+**utente per conf.**: ingresar el empleado que tiene derecho a confirmar la lista.  
 
-Dopo aver inserito i dati necessari è possibile salvare la Lista di prelievo.       
-Con il pulsante della ribbon bar **help UDC** è possibile aprire la maschera in cui selezionare le UDC da prelevare.             
-La ricerca può essere fatta sulle unità di carico collegate a ordini cliente (abilitando il flag **Ricerca su ordini clienti**), quindi, per ciascun ordine cliente possiamo visualizzare gli articoli che lo compongono e se questi sono stati precedentemente inseriti all’interno di un’unità di carico, nella tabella sottostante possiamo vedere tutti i dettagli relativi appunto all’UDC che li contiene. Una volta selezionate le UDC di interesse, queste vengono aggiunte alla lista.     
-In alternativa, disattivando il flag **Ricerca su ordini clienti**, le unità di carico possono essere anche ricercate tra tutte quelle create, anche se non collegate ad un ordine cliente, e allo stesso modo possono essere selezionate ed aggiunte alla nostra lista di prelievo.         
-Nella griglia di *Dettaglio* compariranno solamente le UDC in stato caricato, dopo di che è possibile salvare la *Lista* e chiuderla.       
-Tornando nella maschera di *Ricerca Liste di prelievo*, la Lista sarà presente con stato **Sospeso**. E' necessario scaricare le UDC della Lista (vedi *Pulsanti specifici* sotto) per passare allo stato **Controllato**. Solo con quest'ultimo stato si abiliteranno i pulsanti della ribbon bar **Fattura** e **DDT**.    
+Después de haber ingresado los datos necesarios, es posible guardar la Lista de preparación.  
+Con el botón de la barra de ribbon **help UDC** es posible abrir la máscara en la que se seleccionan las UDC a preparar.  
+La búsqueda puede hacerse sobre las unidades de carga vinculadas a órdenes de cliente (activando el indicador **ricerca su ordini clienti**), así que, para cada orden de cliente se pueden visualizar los artículos que lo componen y si estos han sido previamente ingresados dentro de una unidad de carga; en la tabla inferior podemos ver todos los detalles relacionados con la UDC que los contiene. Una vez que se seleccionan las UDC de interés, estas se añaden a la lista.  
+Alternativamente, desactivando el indicador **Búsqueda en órdenes de clientes**, las unidades de carga también pueden buscarse entre todas las creadas, incluso si no están vinculadas a una orden de cliente, y de la misma manera pueden ser seleccionadas y añadidas a nuestra lista de preparación.  
+En la cuadrícula de *dettaglio* aparecerán solamente las UDC en estado cargado; después de eso, es posible guardar la *Lista* y cerrarla.  
+Regresando a la máscara de *Búsqueda de Listas de Preparación*, la Lista estará presente con estado **sospeso**. Es necesario descargar las UDC de la Lista (ver *Botones específicos* abajo) para pasar al estado **controllato**. Solo con este último estado se habilitarán los botones de la barra de ribbon **fattura** y **DDT**.
 
-*Pulsanti specifici:*
-> **Fatture**: crea la fattura dalla *Lista* selezionata; nella maschera uscente è richiesto il [Tipo Fattura](/docs/configurations/tables/sales/invoices-type) da creare e l'eventuale raggruppamento da adottare; la fattura viene creata già *Scaricata* (per evitare il rischio del doppio scarico).      
-> **DDT**: crea il DDT dalla *Lista* selezionata; nella maschera uscente è richiesto il [Tipo DDT](/docs/configurations/tables/sales/delivery-notes-type) da creare e l'eventuale raggruppamento da adottare; il DDT viene creato già *Scaricato* (per evitare il rischio del doppio scarico).   
-> **Gestione UDC**: selezionando una *Lista di prelievo* e cliccando questo pulsante viene aperta la maschera **Gestione UDC** in cui vengono pre filtrate le UDC della lista. In questa maschera le UDC possono essere gestite a magazzino con i vari pulsanti della ribbon bar.       
-         
-Per tutte le informazioni su come utilizzare questa form da WMS consultare le [Liste di prelievo/Packing list](/docs/logistics/wms/udc/loading-unit-picking-list)
+*Botones específicos:*  
+> **fatture**: crea la factura a partir de la *Lista* seleccionada; en la máscara de salida se solicita el [Tipo de Factura (Tipo Fattura)](/docs/configurations/tables/sales/invoices-type) a crear y el eventual agrupamiento a adoptar; la factura se crea ya *Descargada* (para evitar el riesgo de doble descarga).  
+> **DDT**: crea el DDT a partir de la *Lista* seleccionada; en la máscara de salida se solicita el [Tipo de DDT (Tipo DDT)](/docs/configurations/tables/sales/delivery-notes-type) a crear y el eventual agrupamiento a adoptar; el DDT se crea ya *Descargado* (para evitar el riesgo de doble descarga).  
+> **gestione udc**: seleccionando una *Lista de preparación* y haciendo clic en este botón se abre la máscara **Gestión UDC** en la que se prefiltran las UDC de la lista. En esta máscara, las UDC pueden ser gestionadas a nivel de almacén con los varios botones de la barra de ribbon.  
 
-### Liste di prelievo/Packing list (versione WMS)
+Para toda la información sobre cómo utilizar este formulario en WMS, consulte las [Listas de preparación/Packing list (Liste di prelievo/Packing list)](/docs/logistics/wms/udc/loading-unit-picking-list).
 
-:::important A cosa serve
-La funzione Liste di Prelievo / Packing List del WMS di Fluentis consente di creare un picking di unità di carico, facilitando la preparazione delle spedizioni direttamente collegate agli ordini cliente. 
-Grazie a questo strumento, gli utenti possono selezionare, modificare e gestire efficacemente le UDC, ottimizzando il processo di prelievo e assicurando una corretta documentazione per le spedizioni.
+### Listas de preparación/Packing list (versión WMS) (Liste di prelievo/Packing list (versione WMS))
+
+:::important Para qué sirve (A cosa serve)
+La función Listas de Preparación / Packing List del WMS de Fluentis permite crear un picking de unidades de carga, facilitando la preparación de los envíos directamente vinculados a las órdenes de cliente.  
+Gracias a esta herramienta, los usuarios pueden seleccionar, modificar y gestionar eficientemente las UDC, optimizando el proceso de picking y asegurando una documentación correcta para los envíos.
 :::
 
-Questa procedura è utilizzata per la creazione di liste di prelievo con unità di carico.     
+Este procedimiento es utilizado para la creación de listas de preparación con unidades de carga.  
 
-Con le **Liste di prelievo UDC / Packing list** è possibile creare un *picking* di unità di carico, al contrario della normale procedura di picking che crea una lista di prelievo formata da singoli articoli.    
-Le liste di prelievo UDC vengono utilizzate nel caso in cui si voglia spedire la merce ad un cliente, mentre nel caso di movimentazioni di UDC all’interno dei propri magazzini è opportuno utilizzare le [Liste di Trasferimento UDC](/docs/logistics/wms/udc/loading-unit-transfer-list).    
+Con las **Listas de preparación UDC / Packing list (Liste di prelievo UDC / Packing list)** es posible crear un *picking* de unidades de carga, a diferencia del procedimiento normal de picking que crea una lista de preparación formada por artículos individuales.  
+Las listas de preparación UDC se utilizan cuando se desea enviar mercancía a un cliente, mientras que en el caso de movimientos de UDC dentro de los propios almacenes es recomendable utilizar las [Listas de Transferencia UDC (Liste di Trasferimento UDC)](/docs/logistics/wms/udc/loading-unit-transfer-list).  
 
-Nella form di filtro è possibile ricercare le liste di interesse filtrando: per data inserimento, data spedizione e anche per lo stato della lista di prelievo; una volta selezionata, è possibile aprire la lista con il pulsante **Apri**, all’interno della quale, l’utente ha la possibilità di modificare le unità di carico contenute nel tab *Dettaglio UDC*.      
-In questo tab è possibile: selezionare un’unità di carico esistente ed eliminarla dalla lista con il pulsante **Cancella UDC**; oppure, aggiungerne una nuova semplicemente leggendo il relativo barcode.      
-Una volta ultimate le modifiche è necessario salvare la lista tramite il pulsante **Salva**.       
+En el formulario de filtro es posible buscar las listas de interés filtrando: por fecha de ingreso, fecha de envío y también por el estado de la lista de preparación; una vez seleccionada, es posible abrir la lista con el botón **apri**, dentro de la cual, el usuario tiene la posibilidad de modificar las unidades de carga contenidas en la pestaña *dettaglio udc*.  
+En esta pestaña es posible: seleccionar una unidad de carga existente y eliminarla de la lista con el botón **cancella udc**; o bien, agregar una nueva simplemente leyendo el código de barras correspondiente.  
+Una vez finalizadas las modificaciones es necesario guardar la lista mediante el botón **salva**.  
 
-Dal filtro è possibile anche creare una nuova lista con il pulsante **Nuovo**.       
-In automatico vengono proposte: la data odierna ed il magazzino indicato nella tabella Parametri magazzino Carico/Scarico per utente; inoltre, con l’inserimento del tipo picking viene proposto anche il numero della lista.
-A questo punto, l’utente può inserire, nel tab *Dettaglio UDC*, le unità di carico da aggiungere alla lista tramite la lettura dei relativi barcode. Ultimato l’inserimento sarà sufficiente salvare la lista con l’apposito pulsante.
+Desde el filtro también es posible crear una nueva lista con el botón **nuovo**.  
+Se proponen automáticamente: la fecha actual y el almacén indicado en la tabla Parámetros de carga/descarga por usuario; además, al ingresar el tipo de picking, también se propone el número de la lista.  
+A este punto, el usuario puede ingresar, en la pestaña *dettaglio udc*, las unidades de carga a añadir a la lista mediante la lectura de los códigos de barras correspondientes. Una vez completada la entrada, será suficiente guardar la lista con el botón apropiado.
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que se deben ingresar en la tabla [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Area | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | PickingList |
 
-Per questo parametro la casuale di magazzino può essere lasciata vuota.
+Para este parámetro, la causal de almacén puede dejarse vacía.
 
 :::note Nota
-Se nei [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) è associato per quell’utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti.
+Si en los [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) está asociado para ese usuario un solo almacén, se propone por defecto ese; de lo contrario, si hay más de uno asociado, por defecto no se propone ninguno y el usuario puede elegir solo entre uno de los ingresados.
 :::
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode** consulte la página relacionada con el [Tokenizador de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
-### Conferma trasferimento UDC (versione WMS)
+### Confirmación de Transferencia UDC (versión WMS) (Conferma trasferimento UDC (versione WMS))
 
-:::important A cosa serve
-Questa procedura è utilizzata per ricercare e confermare una [Lista di Trasferimento UDC](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino.
+:::important Para qué sirve (A cosa serve)
+Este procedimiento se utiliza para buscar y confirmar una [Lista de Transferencia UDC (Lista di Trasferimento UDC)](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existente para realizar el movimiento de almacén.
 :::
 
-La form **Conferma trasferimento UDC** viene utilizzata per confermare una [Lista di Trasferimento UDC](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino.
+El formulario **conferma trasferimento udc** se utiliza para confirmar una [Lista de Transferencia UDC (Lista di Trasferimento UDC)](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existente para realizar el movimiento de almacén.
 
-Nel filtro è possibile ricercare la lista di interesse per: data, numero e magazzino, inoltre, anche possibile confermarla direttamente con il relativo pulsante **Conferma** senza doverla aprire.       
-Altrimenti, è possibile entrare nella lista tramite il pulsante **Apri** e visualizzare le unità di carico non ancora scaricate e quelle già scaricate all’interno dei relativi tab: unità di carico non trasferite e trasferite, per poi poterla confermarla e creare il movimento di magazzino.
+En el filtro es posible buscar la lista de interés por: fecha, número y almacén, además, también es posible confirmarla directamente con el botón **conferma** sin tener que abrirla.  
+De lo contrario, es posible entrar en la lista a través del botón **apri** y visualizar las unidades de carga no descargadas y las ya descargadas dentro de sus respectivas pestañas: unidades de carga no transferidas y transferidas, para luego poder confirmarla y crear el movimiento de almacén.
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que se deben ingresar en la tabla [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Area | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmPickingList |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmPickingList |
 
-I parametri sono inseriti due volte poiché la form utilizza: sia una causale di carico con come magazzino quello di destinazione della lista, sia una di scarico con come magazzino quello in cui sono stoccate le unità di carico da trasferire.            
-Entrambe le causali utilizzate devono avere il flag *Distinta base* disattivato ed essere senza contropartita.    
+Los parámetros se ingresan dos veces ya que el formulario utiliza: tanto una causal de carga con como almacén aquel de destino de la lista, como una de descarga con como almacén aquel en el que están almacenadas las unidades de carga a transferir.  
+Ambas causales utilizadas deben tener el indicador *distinta base* desactivado y estar sin contrapartida.  
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode** consulte la página relacionada con el [Tokenizador de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
-### Conferma prelievo UDC (versione WMS)
+### Confirmación de Preparación UDC (versión WMS) (Conferma prelievo UDC (versione WMS))
 
-:::important A cosa serve
-La form **Conferma prelievo UDC** viene utilizzata per ricercare e confermare una [Lista di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino di scarico.
+:::important Para qué sirve (A cosa serve)
+El formulario **conferma prelievo udc** se utiliza para buscar y confirmar una [Lista de preparación UDC / Packing list (Lista di prelievo UDC / Packing list)](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existente para realizar el movimiento de almacén de descarga.
 :::
 
-Nel filtro è possibile ricercare la lista di interesse per: data, numero e magazzino, inoltre, anche possibile confermarla direttamente con il relativo pulsante **Conferma** senza doverla aprire.       
-Altrimenti, è possibile entrare nella lista tramite il pulsante **Apri** e visualizzare le unità di carico non ancora scaricate e quelle già scaricate all’interno dei relativi tab: unità di carico non scaricate e scaricate, per poi poterla confermarla e creare il movimento di magazzino.
+En el filtro es posible buscar la lista de interés por: fecha, número y almacén, además, también es posible confirmarla directamente con el botón **conferma** sin tener que abrirla.  
+De lo contrario, es posible entrar en la lista a través del botón **apri** y visualizar las unidades de carga no descargadas y las ya descargadas dentro de sus respectivas pestañas: unidades de carga no descargadas y descargadas, para luego poder confirmarla y crear el movimiento de almacén.
    
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** que se deben ingresar en la tabla [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Area | Módulo | Formulario |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmUnloadPickingList |
 
-Questo parametro deve essere creato con il magazzino della *lista di prelievo* e con casuale di magazzino con tipo di scarico e senza contropartita.
+Este parámetro debe ser creado con el almacén de la *lista de preparación* y con causal de almacén de tipo de descarga y sin contrapartida.
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
-
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode** consulte la página relacionada con el [Tokenizador de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

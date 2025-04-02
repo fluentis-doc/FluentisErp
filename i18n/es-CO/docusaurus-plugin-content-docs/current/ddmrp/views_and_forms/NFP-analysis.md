@@ -1,18 +1,18 @@
 ---
-title: Analisi Net Flow Position
+title: Análisis de la Posición de Flujo Neto (Analisi Net Flow Position)
 sidebar_position: 3
 ---
-Questo report mostra le informazioni più rilevanti relative al processo di pianificazione per i buffer Ddmrp.
 
-Nella parte di filtro è importante scegliere la data per la quale vedere i dati.
+Este informe muestra la información más relevante relacionada con el proceso de planificación para los buffers Ddmrp.
 
-Viene automaticamente proposta l'ultima data in cui è stato eseguito il calcolo NFP.
+En la parte de filtro es importante elegir la fecha para la cual ver los datos.
 
-Se nella data odierna non è stato eseguito tale calcolo, chiudere il form, eseguire il calcolo e poi riaprirlo.
+Se propone automáticamente la última fecha en la que se realizó el cálculo NFP.
 
-Le informazioni visualizzate sono le seguenti:
+Si en la fecha actual no se ha realizado dicho cálculo, cierre el formulario, ejecute el cálculo y luego vuelva a abrirlo.
 
-**Tipo articolo** è il tipo articolo del profilo di buffer della riga, poi seguono i principali parametri dell'articolo come il lead time disaccoppiato (DLT), la zona rossa (TOR), il tetto della zona gialla (TOY = zona rossa + zona gialla), il tetto della zona verde (TOG = TOY + zona verde).
+La información visualizada es la siguiente:
 
-Per tutte le altre colonne vedere l'help della procedura NFP.
+**tipo articolo** es el tipo de artículo del perfil de buffer de la línea, luego siguen los principales parámetros del artículo como el tiempo de desacoplamiento (DLT), la zona roja (TOR), el techo de la zona amarilla (TOY = zona roja + zona amarilla), el techo de la zona verde (TOG = TOY + zona verde).
 
+Para todas las demás columnas, consulte la ayuda del procedimiento NFP.

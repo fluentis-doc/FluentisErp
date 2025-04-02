@@ -1,6 +1,6 @@
 ---
-title: Versioni P.A.
+title: versioni p.a.
 sidebar_position: 3
 ---
 
-Questa form permette di inserire più versioni per le previsioni, di stabilire una o più versioni attive (quelle non attive non potranno essere utilizzate per creare nuove previsioni ma solo per filtrare le previsioni esistenti) e di stabilire la versione di default tra quelle attive.
+Este formulario permite ingresar varias versiones para las previsiones, establecer una o más versiones activas (las que no estén activas no podrán ser utilizadas para crear nuevas previsiones, sino solo para filtrar las previsiones existentes) y determinar la versión predeterminada entre las que están activas.

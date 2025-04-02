@@ -1,60 +1,60 @@
 ---
-title: Parametri Picking
+title: parametri picking
 sidebar_position: 6
 ---
 
-:::important A cosa serve
-Attraverso questa funzionalità, gli utenti possono configurare e adattare il sistema in base alle diverse esigenze operative, assicurando un funzionamento fluido e coerente delle attività di logistica.
+:::important ¿Para qué sirve? (A cosa serve)
+A través de esta funcionalidad, los usuarios pueden configurar y adaptar el sistema según las diferentes necesidades operativas, asegurando un funcionamiento fluido y coherente de las actividades logísticas.
 
-In questa sezione, è possibile assegnare magazzini e causali di scarico predefiniti, decidere se controllare la disponibilità di articoli e definire se l'inserimento delle informazioni come il codice operatore debba essere obbligatorio. Altre opzioni includono la gestione di articoli a lotti o serial number e il controllo delle quantità al momento della creazione del picking. Questo modulo di parametrizzazione non solo facilita l'operatività, ma garantisce anche che le procedure siano conformi alle politiche aziendali e alle normative vigenti, permettendo una gestione efficace e precisa del magazzino.
+En esta sección, es posible asignar almacenes y causas de descarga predeterminadas, decidir si controlar la disponibilidad de artículos y definir si la inserción de información como el código del operador debe ser obligatoria. Otras opciones incluyen la gestión de artículos por lotes o números de serie y el control de las cantidades al momento de la creación del picking. Este módulo de parametrización no solo facilita la operatividad, sino que también garantiza que los procedimientos cumplan con las políticas empresariales y las normativas vigentes, permitiendo una gestión efectiva y precisa del almacén.
 :::
 
-La form si apre tramite il percorso **Parametri > Logistica > Parametri Picking** e permette di effettuare tutti le parametrizzazioni riguardanti il funzionamento dei picking o liste di prelievo. Soltanto dopo aver parametrizzato opportunamente questa maschera è possibile utilizzare il modulo di Picking.
+El formulario se abre a través de la ruta **parametri picking** y permite realizar todas las parametrizaciones relacionadas con el funcionamiento de los pickings o listas de recolección. Solo después de haber parametrizado adecuadamente esta máscara es posible utilizar el módulo de Picking.
 
-#### Pulsante specifico  
-> **Ripristina**: pulsante per ripristinare lo stato precedente dei parametri.
+#### Botón específico
+> **ripristina**: botón para restablecer el estado anterior de los parámetros.
 
-## Generale
+## General (Generale)
 
-In questo tab si possono parametrizzare le generalità della gestione Picking. E' possibile assegnare un magazzino e una causale da utilizzare di default per lo scarico dei Picking. Per fare ciò è sufficiente spuntare **Priorità parametri picking** e indicare un **Magazzino** e una **Causale**.  
-E' inoltre possibile scegliere se, al momento dello scarico, **Controllare la disponibilità**, **Escludere gli ordini clienti** dalla disponibilità e/o essere bloccati nel caso la disponibilità non soddisfi la quantità da movimentare (**Disponibilità obbligatoria**).
+En esta pestaña se pueden parametrizar las generalidades de la gestión de Picking. Es posible asignar un almacén y una causa para utilizar por defecto para la descarga de los Pickings. Para hacerlo, basta con marcar **priorità parametri picking** e indicar un **magazzino** y una **causale**.  
+También es posible elegir si, al momento de la descarga, **Controlar la disponibilidad (Controllare la disponibilità)**, **Excluir los pedidos de los clientes (Escludere gli ordini clienti)** de la disponibilidad y/o ser bloqueados en caso de que la disponibilidad no satisfaga la cantidad a mover (**disponibilità obbligatoria**).
 
-Nel caso si scelga di controllare la disponibilità è possibile determinare come quest'ultima debba essere calcolata in base al **Conto lavoro**, alla **Produzione pianificata**, agli **Acquisti**, alla **Produzione rilasciata**, alle **Vendite** e/o al **Magazzino**.
+Si se elige controlar la disponibilidad, es posible determinar cómo debe calcularse esta última en función del **conto lavoro**, la **produzione pianificata**, las **acquisti**, la **produzione rilasciata**, las **vendite** y/o el **magazzino**.
 
-Come impostazioni generali è possibile scegliere se al momento della creazione del picking è obbligatorio inserire il **Codice operatore**, se la **Numerazione deve essere progressiva per anno**, se il **Codice operatore che conferma il picking** è obbligatorio.
+Como configuraciones generales, es posible elegir si al momento de la creación del picking es obligatorio ingresar el **codice operatore**, si la **Numeración debe ser progresiva por año (Numerazione deve essere progressiva per anno)**, si el **Código del operador que confirma el picking (Codice operatore che conferma il picking)** es obligatorio.
 
-Nel caso ci siano gestioni particolari degli articoli è attivabile la **Gestione taglia e colore**.
+En caso de que haya gestiones particulares de los artículos, se puede activar la **gestione taglia e colore**.
 
-Nella sezione **Gestione lotti e serial number** è possibile attivare i seguenti flag:
+En la sección **Gestión de lotes y número de serie (Gestione lotti e serial number)** se pueden activar los siguientes indicadores:
 
-**Gestione Lotti / Serial number**: abilita la possibilità di gestire lotti e serial number tramite le relative griglie.
+**Gestión de Lotes / Número de serie (Gestione Lotti / Serial number)**: habilita la posibilidad de gestionar lotes y números de serie a través de las respectivas cuadrículas.
 
-**Proposta Lotti / Serial number**: se attivo, al variare di una quantità della riga picking, se l'articolo è gestito a lotti con tipologia prelievo FIFO o per data scadenza, vengono proposti in automatico i lotti nella relativa griglia.
+**Propuesta de Lotes / Número de serie (Proposta Lotti / Serial number)**: si está activo, al modificar una cantidad en la línea de picking, si el artículo se gestiona por lotes con tipo de recolección FIFO o por fecha de vencimiento, los lotes se proponen automáticamente en la respectiva cuadrícula.
 
-**Movimentazione spunta automatica**: se attivo, nella form *Gestione Spunta* fa lo scarico automatico della riga.   
+**movimentazione spunta automatica**: si está activo, en el formulario *Gestión de Verificación* (Gestione Spunta) realiza la descarga automática de la línea.  
 
-**Visualizzazione griglia evasione**: se attivo, il flag abilita la modalità griglia nella form di evasione picking.
+**Visualización de cuadrícula de cumplimiento (Visualizzazione griglia evasione)**: si está activo, el indicador habilita la modalidad de cuadrícula en el formulario de cumplimiento de picking.
 
-**Visualizzazione tree evasione**: se attivo, il flag abilita la modalità tree nella form di evasione picking.      
+**Visualización de árbol de cumplimiento (Visualizzazione tree evasione)**: si está activo, el indicador habilita la modalidad de árbol en el formulario de cumplimiento de picking.      
 
-## WMS Mobile  
+## WMS Móvil (WMS Mobile)
 
-In questo tab si possono definire i parametri per il funzionamento dei Picking in WMS Mobile.
+En esta pestaña se pueden definir los parámetros para el funcionamiento de los Pickings en WMS Mobile.
 
-**Tipo conto vettore**: rappresenta il vettore che verrà inserito nei picking creati da WMS Mobile,  
+**tipo conto vettore**: representa el transportista que se incluirá en los pickings creados por WMS Mobile.
 
-Si possono scegliere anche diversi tipi di picking. 
+También se pueden elegir diferentes tipos de picking.
 
-E' inoltre opportuno specificare le causali che verranno usate per i seguenti movimenti:
+Además, es recomendable especificar las causas que se utilizarán para los siguientes movimientos:
 
-- scarico UDC per conferma trasferimento;
+- descarga UDC para confirmación de transferencia;
 
-- causale proposta per scarico Picking;
+- causa propuesta para descarga Picking;
 
-- scarico per magazzino partenza;
+- descarga para almacén de salida;
 
-- carico per magazzino destinazione;
+- carga para almacén de destino;
 
-- causale scarico magazzino di contro lavoro.
+- causa de descarga del almacén de trabajo en contra.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalle en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

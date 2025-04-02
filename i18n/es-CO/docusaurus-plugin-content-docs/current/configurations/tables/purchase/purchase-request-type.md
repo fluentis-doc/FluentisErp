@@ -1,24 +1,24 @@
 ---
-title: Tipi richiesta di acquisto
+title: Tipos de solicitud de compra (Tipi richiesta di acquisto)
 sidebar_position: 1
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di RDA disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi richiesta di acquisto*.
+Esta tabla es fundamental para definir los diversos tipos de RDA disponibles, cada uno con sus propias características. Se puede acceder desde *Configuración (Configurazione) > Tablas (Tabelle) > Compras (Acquisti) > Tipos de solicitud de compra (Tipi richiesta di acquisto)*.
 
-I campi presenti sono:    
+Los campos presentes son:    
 
-**Codice/Descrizione**: campi obbligatori per identificare il tipo di richiesta.
+**codice/descrizione**: campos obligatorios para identificar el tipo de solicitud.  
 
-**Numerazione**: selezionare la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo richiesta.
+**numerazione**: seleccionar la [Numeración (Numerazione)](/docs/configurations/tables/fluentis-numerations) a asociar con el tipo de solicitud.  
 
-**Centro di costo**: centro di costo da proporre nella creazione della richiesta di acquisto. Può essere lasciato vuoto qualora non si usi il modulo di controllo di gestione.
+**centro di costo**: centro de costo a proponer en la creación de la solicitud de compra. Puede ser dejado vacío si no se utiliza el módulo de control de gestión.  
 
-**Magazzino/Descrizione magazzino**: magazzino di default da utilizzare nella creazione della richiesta di acquisto.
+**Almacén/Descripción del almacén (Magazzino/Descrizione magazzino)**: almacén por defecto a utilizar en la creación de la solicitud de compra.  
 
-**Controlla disponibilità**: se settato, le richieste di acquisto create con questo tipo vengono utilizzate per il calcolo della disponibilità e sono visibili nella form di [Analisi disponibilità](/docs/erp-home/registers/items/availability-analysis).         
+**controlla disponibilità**: si está configurado, las solicitudes de compra creadas con este tipo se utilizan para el cálculo de disponibilidad y son visibles en el formulario de [Análisis de disponibilidad (Analisi disponibilità)](/docs/erp-home/registers/items/availability-analysis).         
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**stampa**: en este campo es posible elegir la impresión por defecto a utilizar (se recuerda que, para imprimir el informe por defecto, en el momento de la impresión será necesario seleccionar la opción *stampe multiple*); en el siguiente campo se puede indicar un **numero di copie** a imprimir.    
 
-**Cash flow**: se questo flag è attivo, questo tipo di RDA concorrà al calcolo del Cash Flow.      
+**cash flow**: si este indicador está activo, este tipo de RDA contribuirá al cálculo del flujo de efectivo.  
 
-**Tipo richiesta di offerta**: in questo campo è necessario indicare quale [Tipo RDO](/docs/configurations/tables/purchase/purchase-offer-type) creare da questa tipologia di RDA.
+**tipo richiesta di offerta**: en este campo es necesario indicar qué [Tipo de RDO (Tipo RDO)](/docs/configurations/tables/purchase/purchase-offer-type) crear a partir de este tipo de RDA.

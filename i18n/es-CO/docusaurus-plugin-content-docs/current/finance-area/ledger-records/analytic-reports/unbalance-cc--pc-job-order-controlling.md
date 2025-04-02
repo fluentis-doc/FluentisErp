@@ -1,21 +1,15 @@
 ---
-title: Controllo sbilanci cdc/cdp/job-orders
+title: Control de discrepancias cdc/cdp/órdenes de trabajo (Controllo sbilanci cdc/cdp/job-orders)
 sidebar_position: 4
 ---
 
-Con questo report di controllo si estraggono i movimenti contabili che non rispettano l'uguaglianza di valorizzazione tra movimenti di contabilità e movimenti a centro di costo, o profitto o commessa di vendita: per le società che hanno attivato la gestione del controlling, sarà possibile analizzare la quadratura di ogni dimensione dei centri aziendali.
+Con este informe de control se extraen los movimientos contables que no cumplen con la igualdad de valoración entre movimientos de contabilidad y movimientos a centro de costos, o de beneficios, o de órdenes de venta: para las empresas que han activado la gestión del control, será posible analizar la cuadratura de cada dimensión de los centros empresariales.
 
-Si ricorda che è possibile, all'interno delle impostazioni delle **[causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, vincolare gli utenti al momento del salvataggio delle registrazioni contabili in modo da garantire l'uguaglianza dei dati all'origine.
+Se recuerda que es posible, dentro de las configuraciones de las **[causales de contabilidad general (causali di contabilità generale)](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, restringir a los usuarios al momento de guardar los registros contables para garantizar la igualdad de los datos en su origen.
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del controllo sbilanci cdc/cdp/job-orders. |
-| Stampa | Pulsante per eseguire la stampa fisica del controllo sbilanci cdc/cdp/job-orders. |
-
-
-
-
-
-
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión del control de discrepancias cdc/cdp/órdenes de trabajo. |
+| Imprimir (Stampa) | Botón para realizar la impresión física del control de discrepancias cdc/cdp/órdenes de trabajo. |

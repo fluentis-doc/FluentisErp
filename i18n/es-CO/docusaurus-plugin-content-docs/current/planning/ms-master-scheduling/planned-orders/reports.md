@@ -1,30 +1,30 @@
 ---
-title: Stampa Ordini Produzione
+title: Impresión de Órdenes de Producción (Stampa Ordini Produzione)
 sidebar_position: 6
 ---
 
-Questa form consente di stampare una lista di ordini di produzione, con possibilità di dettagliare la visualizzazione.
+Este formulario permite imprimir una lista de órdenes de producción, con la posibilidad de detallar la visualización.
 
-**Filtri**
+**filtri**
 
-A parte i filtri comuni, si può scegliere, tramite l'apposito flag, se si vogliono visualizzare anche gli *Ordini di manutenzione*.
+Además de los filtros comunes, se puede elegir, mediante el indicador correspondiente, si se desean visualizar también los *ordini di manutenzione*.
 
-**Lavorazioni**
+**lavorazioni**
 
-In questa sezione, è possibile andare ad indicare tramite dei flag, se si vogliono visualizzare tutti gli ordini di produzione indistintamente oppure si può scegliere se visualizzare solamente gli ordini scaduti o in ritardo.
+En esta sección, es posible indicar a través de indicadores si se desean visualizar todas las órdenes de producción indistintamente o si se puede optar por visualizar solamente las órdenes vencidas o retrasadas.
 
-**Ordinamento**
+**ordinamento**
 
-In questa sezione è possibile scegliere tramite gli appositi flag, su cosa basare l'ordinamento dei dati all'interno della stampa. Si potrà quindi scegliere se ordinare i risultati in base al numero d'ordine, all'articolo o alla sua descrizione, alla data inizio/data fine oppure in base alla commessa;
+En esta sección se puede elegir mediante los indicadores correspondientes, sobre qué basar la ordenación de los datos dentro de la impresión. Por lo tanto, se podrá elegir si ordenar los resultados en función del número de orden, del artículo o de su descripción, de la fecha de inicio/fecha de fin o en función del proyecto.
 
-**Dettaglio**
+**dettaglio**
 
-In questa sezione è possibile decidere, tramite gli appositi flag, se visualizzare o meno la lista dei materiali contenuti nell'ordine e delle fasi previste; è possibile anche visualizzare il personale coinvolto e le segnalazioni collegate. Ovviamente questi dettagli sono previsti solamente per gli ordini pianificati di produzione e di conto lavoro.
+En esta sección se puede decidir, mediante los indicadores correspondientes, si visualizar o no la lista de materiales contenidos en la orden y de las fases previstas; también es posible visualizar el personal involucrado y las notificaciones relacionadas. Obviamente, estos detalles están previstos solamente para las órdenes de producción planificadas y de trabajo por encargo.
 
-**Stato ordine**
+**stato ordine**
 
-Infine in questa sezione è pssibile scegliere, tramite gli appositi flag, se visualizzare tutti gli ordini indipendentemente dal loro stato, oppure se visualizzare solamente quelli aventi determinati stati tra Lanciato, Esecutivo, Evaso e Storicizzato.
+Finalmente, en esta sección es posible elegir, mediante los indicadores correspondientes, si visualizar todas las órdenes independientemente de su estado, o si visualizar solamente aquellas que tienen determinados estados entre Lanzado (Lanciato), Ejecutivo (Esecutivo), Cumplido (Evaso) y Historizado (Storicizzato).
 
-Una volta impostati i vari parametri di filtro e visualizzazione, basterà andare a selezionare nella ribbon bar tramite il tipo di stampa che si vuole lanciare (solo nel caso vi siano più tipologie previste) tramite l'apposita combo, e successivamente lanciare l'anteprima di stampa o direttamente la stampa del documento.
+Una vez establecidos los diversos parámetros de filtro y visualización, será suficiente seleccionar en la barra de ribbon según el tipo de impresión que se desea lanzar (solo en caso de que haya más de un tipo previsto) mediante el combo correspondiente, y posteriormente lanzar la vista previa de impresión o directamente la impresión del documento.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

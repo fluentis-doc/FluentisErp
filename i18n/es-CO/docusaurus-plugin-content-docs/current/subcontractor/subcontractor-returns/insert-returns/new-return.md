@@ -1,23 +1,23 @@
 ---
-title: Nuovo rientro
+title: nuovo rientro
 sidebar_position: 1
 ---
 
-Tramite questa form è possibile creare manualmente un nuovo rientro di conto lavoro oppure si possono modificare quelli già esistenti.
+A través de este formulario es posible crear manualmente un nuevo reingreso de trabajo por encargo o modificar los ya existentes.
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Nuovo Rientro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca Rientri](/docs/subcontractor/subcontractor-returns/search-returns).
+El formulario se abre mediante la ruta **Trabajo por encargo > Reingresos > Nuevo Reingreso (Conto Lavoro > Rientri > Nuovo Rientro)** o a través del botón **nuovo** que se encuentra en el formulario [Búsqueda de Reingresos (Ricerca Rientri)](/docs/subcontractor/subcontractor-returns/search-returns).
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti, il **Tipo**, il **Numero** e la **Data rientro** effettivo (che di solito corrisponde alla data corrente).
+La aplicación requiere que se ingrese el **terzista** titular del pedido, utilizando la ayuda de cuentas correspondiente, el **Tipo**, el **Número** y la **data rientro** efectiva (que generalmente corresponde a la fecha actual).
 
-**Controllato**: il flag viene attivato manualmente dall'utente;  
-**Valorizzato e Caricato**: vengono attivati automaticamente nel momento in cui si procede ad eseguire nell'ordine la valorizzazione e la registrazione a magazzino del documento.
+**controllato**: el indicador se activa manualmente por el usuario;  
+**Valorizado y Cargado (Valorizzato e Caricato)**: se activan automáticamente cuando se procede a realizar la valorización y el registro en el almacén del documento.
 
-> **Rientri previsti**: il pulsante si attiva dopo il salvataggio dei dati obbligatori e apre la form *Evasione da ordine*, all'interno della quale l'utente visualizza tutti gli ordini di conto lavoro che hanno ancora righe parzialmente o completamente inevase e da cui è possibile quindi generare dei rientri;  
-> **Registrazione rientri**:
+> **rientri previsti**: el botón se activa después de guardar los datos obligatorios y abre el formulario *Cumplimiento de pedido (Evasione da ordine)*, dentro del cual el usuario visualiza todos los pedidos de trabajo por encargo que aún tienen líneas parcialmente o completamente no cumplidas, desde los cuales es posible generar reingresos;  
+> **registrazione rientri**:
 
-La form contiene una serie di tab:
+El formulario contiene una serie de pestañas:
 
-- [Testata](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) e le sue Procedure;  
-- [Articoli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
-- [Materiali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Riepiloghi](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Encabezado (Testata)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) y sus Procedimientos;  
+- [Artículos (Articoli)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);  
+- [Materiales (Materiali)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
+- [Resúmenes (Riepiloghi)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).

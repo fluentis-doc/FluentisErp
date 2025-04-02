@@ -1,29 +1,28 @@
 ---
-title: Valori di controllo
+title: valori di controllo
 sidebar_position: 3
 ---
 
-Questa form è destinata ad ospitare la riconciliazione tra i valori contabili ed i valori del controlling e risulta utilissima per tenere traccia delle attribuzioni e ribaltamenti avvenuti e dei conguagli calcolati dal sistema in relazione alle modalità previste per questa operazione.
+Este formulario está destinado a alojar la reconciliación entre los valores contables y los valores de controlling y resulta muy útil para llevar un registro de las asignaciones y reasignaciones realizadas, así como de los ajustes calculados por el sistema en relación con los métodos previstos para esta operación.
 
-Prima di lanciare la ricerca dei dati sarà necessario impostate, in testata della maschera, i seguenti campi:
-- l'***Area*** dei dati da ricercare, obbligatoria
-- la ***Dimensione*** dei dati da ricercare, campo opzionale
-- l'***Anno***, obbligatorio
-- il range del ***Periodo da*** e ***Periodo a***, opzionale
+Antes de lanzar la búsqueda de datos, será necesario establecer en la cabecera del formulario los siguientes campos:  
+- el **area*** de los datos a buscar, obligatorio  
+- la **dimensione*** de los datos a buscar, campo opcional  
+- el **anno***, obligatorio  
+- el rango del **periodo da*** y **periodo a***, opcional  
 
+Los datos están organizados en cinco pestañas distintas:
 
-I dati sono organizzati su cinque tab distinti:
+***Valores fuente a atribuir (Valori sorgenti da attribuire):*** representa los movimientos contables asociados al centro empresarial caracterizado por el indicador *conti da riassegnare* (específico para costos que la contabilidad general no puede atribuir directamente). La última columna *importo* permite verificar que todas las asignaciones se hayan cerrado correctamente, sin dejar datos abiertos.
 
-***Valori sorgenti da attribuire:*** rappresenta i movimenti contabili associati al centro aziendale contraddistinto dal flag *Conti da riassegnare* (specifico per costi che la contabilità generale non è in grado di attribuire direttamente). L'ultima colonna *Importo* consente di verificare che tutte la attribuzioni si siano chiuse correttamente, senza lasciate dati aperti.
+***Valores fuente atribuidos (Valori sorgenti attribuiti):*** similar en estructura al anterior, resalta los datos efectivamente atribuidos por el centro empresarial destinado a los costos a reasignar y los centros receptores. También aquí, la última columna *importo* permite verificar que todas las asignaciones se hayan cerrado correctamente, sin dejar datos abiertos.
 
-***Valori sorgenti attribuiti:*** simile nella struttura al precedente, evidenzia i dati effettivamente attribuiti dal centro aziendale destinato ai costi da riassegnare e i centri riceventi. Anche qui l'ultima colonna *Importo* consente di verificare che tutte la attribuzioni si siano chiuse correttamente, senza lasciate dati aperti.
+**Valores revertidos (Valori revertiti):** destaca las reasignaciones entre centros gestionadas por los cost drivers. El dato se presenta agrupando por cada Cost driver que ha gestionado los centros empresariales y por cada centro el movimiento relacionado con la cuenta contable que ha sido reasignada. Nuevamente, la última columna *differenza* permite verificar que todas las reasignaciones se hayan cerrado correctamente, sin dejar datos abiertos a nivel de *Cost driver*.
 
-**Valori revertiti:** evidenzia i ribaltamenti tra centri gestita dai cost driver. Il dato è rappresentato raggruppando per ogni Cost driver il quale ha gestito i centri aziendali e per ogni centro il movimento connesso al conto contabile che è stato ribaltato. Anche qui l'ultima colonna *Differenza* consente di verificare che tutti i ribaltamenti si siano chiuse correttamente, senza lasciate dati aperti a livello di *Cost driver*.
+**Valores de proyecto (Valori commessa):** En esta pestaña se destacan las reasignaciones de la dimensión Proyectos/Commissions, realizadas siempre a través de cost drivers.
 
-**Valori commessa:** In questo tab si evidenziano i ribaltamenti della dimensione Progetti/Commesse, avvenute sempre tramite cost driver
+**Valores de ajuste (Valori di conguaglio):** en la última pestaña se destacan las diferencias entre el dato contable y el dato de controlling, agrupando las cuentas según la configuración del *Grupo de ajuste (Gruppo di conguaglio)* al que pertenecen en el plan de cuentas. La presencia de valores en la columna *differenza* sobre grupos de cuentas que no prevén una gestión extracontable separada anticipada respecto al dato contable, será un indicativo de alguna asignación de valores a nivel de registros extracontables de área, que requerirá una profundización para entender su origen y, eventualmente, adaptar el modelo de análisis.
 
-**Valori di conguaglio:** nell'ultimo tab si evidenziano le differenze tra il dato contabile e il dato del controlling, raggruppando i conti secondo l’impostazione del *Gruppo di conguaglio* di appartenenza inserito nel piano dei conti. La presenza di valori nella colonna *Differenza* su gruppi di conti che non prevedono una gestione extracontabile separata anticipata rispetto al dato contabile, sarà indice di una qualche assegnazione di valori a livello di registrazioni extracontabili di area, che richiederà un approfondimento per capirne l'origine ed eventualmente adattare il modello di analisi.
-
-:::tip Esempio
-Quest'ultimo tab è importante per verificare, in particolare, quei conti (es. gli emolumenti del collegio sindacale) che la contabilità rileva posticipatamente e che quindi sono soggetti a rilevazione previsionale extracontabile nel controlling, al fine di controllarne il conguaglio infrannuale/annuale nella procedura di **Elaborazione periodi** dove è presente, nella sezione *Elaborazione dati contabili*, il campo **Tempi di bilanciamento** il quale permette di selezionare la logica *Infrannuale* piuttosto che *Annuale*.
+:::tip Ejemplo
+Esta última pestaña es importante para verificar, en particular, aquellas cuentas (por ejemplo, los honorarios del colegio de auditores) que la contabilidad registra con posterioridad y que, por lo tanto, están sujetas a una recolección previsional extracontable en el controlling, con el fin de controlar su ajuste interanual/anual en el procedimiento de **elaborazione periodi** donde está presente, en la sección *elaborazione dati contabili*, el campo **tempi di bilanciamento**, que permite seleccionar la lógica *infrannuale* en lugar de *annuale*.
 :::

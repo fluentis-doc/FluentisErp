@@ -1,22 +1,22 @@
 ---
-title: Ricerca Non conformità
+title: ricerca non conformità
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Reclami e Non conformità > Non conformità**.   
+El filtro se encuentra en la ruta **Calidad > Quejas y No Conformidades > No Conformidades**.  
 
-Il filtro dati consente di inserire nuove *Non conformità* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+El filtro de datos permite ingresar nuevas *No Conformidades* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.  
 
-### ![](/img/neutral/common/search.png) Ricerca Non conformità
+### ![](/img/neutral/common/search.png) ricerca non conformità
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-### ![](/img/neutral/common/new.png) Inserimento Non conformità
+### ![](/img/neutral/common/new.png) Ingreso de No Conformidades
 
-Per poter inserire nuovi *Non conformità* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevas *No Conformidades*, es necesario presionar el botón **nuovo**.  
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Non conformità
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de No Conformidades
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

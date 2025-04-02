@@ -1,27 +1,19 @@
 ---
-title: Totali ritenuta
+title: Totales de retención (Totali ritenuta)
 sidebar_position: 2
 ---
 
-Riepiloghi IVA e dati di dettaglio del calcolo della ritenuta d'acconto, dei contributi Enasarco e INPS.
+Resúmenes de IVA y datos detallados del cálculo de la retención en la fuente, de las contribuciones de Enasarco y de INPS.
 
- ![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
+![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
 
-**FLAG alla base della maschera**: è possibile impostare il **calcolo manuale**: in questo caso sarà possibile forzare manualmente i campi di calcolo della ritenuta i campi Enasarco ed il calcolo dell'IVA nella tab ** [Riepiloghi IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) **. 
+**INDICADOR en la parte inferior del formulario (FLAG alla base della maschera)**: es posible establecer el **calcolo manuale**: en este caso será posible forzar manualmente los campos de cálculo de la retención, los campos de Enasarco y el cálculo del IVA en la pestaña **[Resúmenes de IVA (Riepiloghi IVA)](/docs/finance-area/professional-men/compensations-management/vat-summaries)**.
 
-Si segnala che se è stato impostato il calcolo manuale l'applicazione non procederà più ad allineare la scadenza da pagare presente nel tabulatore successivo.
+Se informa que si se ha configurado el cálculo manual, la aplicación ya no procederá a alinear la fecha de vencimiento a pagar que aparece en la pestaña siguiente.
 
-Si ricorda infine, che nel caso (remoto) di nota di credito percipiente, i valori della griglia di dettaglio saranno da inserire con segno negativo.
+Finalmente, se recuerda que en el caso (remoto) de una nota de crédito para el beneficiario, los valores de la cuadrícula de detalles deben ingresarse con signo negativo.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Calcola valori | Esegue il ricalcolo dei dati del compenso (ritenute, IVA, scadenze). |
-| Anteprima di stampa | Esegue l'anteprima di stampa del compenso. |
-
-
-
-
-
-
+| Calcular valores (Calcola valori) | Ejecuta el recálculo de los datos de la compensación (retenciones, IVA, vencimientos). |
+| Vista previa de impresión (Anteprima di stampa) | Ejecuta la vista previa de impresión de la compensación. |

@@ -1,16 +1,16 @@
 ---
-title: Stampa Conti Generale
+title: stampa conti generale
 sidebar_position: 3
 ---
 
-In questa form è possibile definire alcuni parametri utili nell'esecuzione della stampa del Piano dei conti.
+En este formulario es posible definir algunos parámetros útiles en la ejecución de la impresión del Plan de cuentas.
 
-**Gruppo**: questa combo box permette di filtrare solo alcuni gruppi di conti da riportare in stampa.
+**gruppo**: este cuadro combinado permite filtrar solo algunos grupos de cuentas para ser reportados en la impresión.
 
-Si ricorda che per la selezione di più di un gruppo alla volta le righe della combo box devono essere selezionate tenendo premuto il tasto **Ctrl**.
+Se recuerda que para seleccionar más de un grupo a la vez, las filas del cuadro combinado deben ser seleccionadas manteniendo presionada la tecla **Ctrl**.
 
-**Da conto / A Conto**: i campi permettrono di filtrare una coppia di conti per stampare solo una parte del piano dei conti
+**De cuenta / A cuenta (Da conto / A Conto)**: los campos permiten filtrar un par de cuentas para imprimir solo una parte del plan de cuentas.
 
-Flag **Elementi da non visualizzare**: Permette di escludere dalla stampa (con i flag attivi) i sottoconti relativi alle anagrafiche di clienti / fornitori, degli agenti e delle banche.
+Indicador **elementi da non visualizzare**: permite excluir de la impresión (con los indicadores activos) los subcuentas relacionadas con los registros de clientes / proveedores, de los agentes y de los bancos.
 
-Dopo aver definito i parametri desiderati premere il tasto Anteprima oppure Stampa per stampare direttamente.
+Después de haber definido los parámetros deseados, presione el botón Vista previa (Anteprima) o Imprimir (Stampa) para imprimir directamente.

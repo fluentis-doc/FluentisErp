@@ -1,23 +1,23 @@
 ---
-title: Ricerca Parametri reclami e non conformità
+title: Búsqueda de Parámetros de Reclamos y No Conformidades (Ricerca Parametri reclami e non conformità)
 sidebar_position: 1
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri reclami e non conformità**.   
+Los parámetros se encuentran en la ruta **Parámetros > Calidad > Parámetros de reclamos y no conformidades (Parametri > Qualità > Parametri reclami e non conformità)**.  
 
-Le informazioni sono memorizzate per *Anno*.   
-Il filtro dati consente di inserire nuovi parametri o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+La información se almacena por *anno*.  
+El filtro de datos permite ingresar nuevos parámetros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.  
 
-## Ricerca Parametri 
+## Búsqueda de Parámetros (Ricerca Parametri)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario consta de un área de filtro y otra de resultados. Una vez que se han establecido todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para ver los resultados dentro de la cuadrícula de resultados.  
 
-## Inserimento Parametri 
+## Inserción de Parámetros (Inserimento Parametri)
 
-Per poter inserire nuovi *Anni* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevos *Años (Anni)*, es necesario presionar el botón **nuovo**.  
 
-## Modifica o Visualizzazione Parametri 
+## Modificación o Visualización de Parámetros (Modifica o Visualizzazione Parametri)
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

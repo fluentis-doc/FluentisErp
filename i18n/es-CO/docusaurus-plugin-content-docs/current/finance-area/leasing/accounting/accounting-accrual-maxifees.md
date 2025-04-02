@@ -1,18 +1,12 @@
 ---
-title: Contabilizzazione Risconto Maxicanone
+title: contabilizzazione risconto maxicanone
 sidebar_position: 3
 ---
 
-Da questa form è possibile procedere a contabilizzare i risconti dei maxicanoni leasing calcolati nell'apposita form **[Risconto Maxicanone](/docs/finance-area/leasing/procedures/maxifee-accrual-calculation)**.
+Desde este formulario es posible proceder a contabilizar los risconti de los maxicanones de leasing calculados en la correspondiente forma **[Risconto Maxicanone](/docs/finance-area/leasing/procedures/maxifee-accrual-calculation)**.
 
-Saranno proposte soltanto le righe alle quali è stato attivato il flag Controllata nella maschera di calcolo del risconto.
+Solo se propondrán las líneas a las que se haya activado el indicador Controlada en la máscara de cálculo del risconto.
 
-Selezionare le righe che si desidera contabilizzare e premere il pulsante Contabilizzazione risconto Maxicanone nella ribbon bar.
+Seleccione las líneas que desea contabilizar y presione el botón Contabilización de risconto Maxicanone en la barra de ribbon.
 
-E' presente anche la consueta tab per ripristinare la contabilizzazione.
-
-
-
-
-
-
+También está presente la pestaña habitual para restaurar la contabilización.

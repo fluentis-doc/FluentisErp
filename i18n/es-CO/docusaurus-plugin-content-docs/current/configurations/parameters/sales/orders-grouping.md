@@ -1,28 +1,28 @@
 ---
-title: Parametri raggruppamento ordini
+title: Parámetros de agrupamiento de pedidos (Parametri raggruppamento ordini)
 sidebar_position: 7
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consultar la lista de verificación de la página enlazada.
 :::
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Los parámetros de agrupamiento permiten definir cómo dividir los documentos durante los procedimientos de cumplimiento. Para ello, se pueden utilizar indicadores específicos para agrupar los documentos en función de diversas propiedades, como la categoría, el tipo de documento u otras características relevantes.  
+Estos parámetros generales de agrupamiento deben configurarse una sola vez y se aplicarán automáticamente a todos los procedimientos, siendo válidos para todos los clientes y proveedores. Sin embargo, si un cliente o proveedor requiere un comportamiento diferente al establecido en los parámetros generales, será necesario personalizar los parámetros de agrupamiento dentro de su registro específico.  
+De esta manera, se garantiza una gestión flexible y adaptable de los cumplimientos, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, manteniendo a la vez una configuración centralizada y coherente para la mayoría de las operaciones.
 
-In questa maschera vengono decise le regole di raggruppamento per la procedura:  
-**Creazione ordine di vendita da offerte**: nel caso di evasione di più offerte in ordine, è possibile raggruppare le offerte in base alle seguenti proprietà:
-- **tipo documento**: le offerte con lo stesso [Tipo](/docs/configurations/tables/sales/sales-offer-type) creeranno un singolo ordine
-- **anno**: le offerte dello stesso anno creeranno un singolo ordine
-- **mese**: le offerte dello stesso mese creeranno un singolo ordine
-- **cambio**: le offerte con lo stesso cambio creeranno un singolo ordine
-- **progett**o**: le offerte con lo stesso progetto in [Testata](/docs/sales/offers/insert-offer) creeranno un singolo ordine
-- **tipo e soluzione di pagamento**: le offerte con le stesse condizioni di pagamento creeranno un singolo ordine
-- **destinazione**: le offerte con la stessa destinazione e vettore creeranno un singolo ordine
- 
-E' necessario flaggare le colonne che prevedono i raggruppamenti che si vogliono prevedere per questa evasione. 
-Il flag **Riepilogativa** è fondamentale per creare un unico documento avendo diversi documenti di partenza. Gli altri flag invece riguardano i raggruppamenti particolari.           
-La colonna **Priorità** non è utilizzata al momento. 
+En esta interfaz se deciden las reglas de agrupamiento para el procedimiento:  
+**Creación de órdenes de venta a partir de ofertas (Creazione ordine di vendita da offerte)**: en caso de cumplimiento de múltiples ofertas en un pedido, es posible agrupar las ofertas según las siguientes propiedades:  
+- **tipo documento**: las ofertas con el mismo [Tipo (Tipo)](/docs/configurations/tables/sales/sales-offer-type) crearán un solo pedido.  
+- **anno**: las ofertas del mismo año crearán un solo pedido.  
+- **mese**: las ofertas del mismo mes crearán un solo pedido.  
+- **cambio**: las ofertas con el mismo cambio crearán un solo pedido.  
+- **progetto**: las ofertas con el mismo proyecto en [Encabezado (Testata)](/docs/sales/offers/insert-offer) crearán un solo pedido.  
+- **tipo y solución de pago (tipo e soluzione di pagamento)**: las ofertas con las mismas condiciones de pago crearán un solo pedido.  
+- **destinazione**: las ofertas con el mismo destino y transportista crearán un solo pedido.  
+
+Es necesario activar las columnas que prevean los agrupamientos que se desean considerar para este cumplimiento.  
+El indicador **riepilogativa** es fundamental para crear un único documento a partir de varios documentos de origen. Los otros indicadores, en cambio, se refieren a agrupamientos especiales.  
+La columna **priorità** no se utiliza en este momento.

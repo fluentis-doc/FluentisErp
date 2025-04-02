@@ -1,18 +1,18 @@
 ---
-title: Duplica cicli di lavoro
+title: duplica cicli di lavoro
 sidebar_position: 5
 ---
 
-La **duplicazione cicli di lavorazione** permette di utilizzare dei filtri per ricercare il/i cicli da cui si vuole partire per la duplicazione del nuovo ciclo che si vuole creare. 
+La **duplicación de ciclos de trabajo (duplicazione cicli di lavorazione)** permite utilizar filtros para buscar el/los ciclos de los cuales se desea partir para la duplicación del nuevo ciclo que se quiere crear.
 
-Una volta impostati i filtri e cliccato sul pulsante di **Ricerca**, nella griglia centrale vengono visualizzati i risultati della ricerca.
+Una vez configurados los filtros y haciendo clic en el botón de **ricerca**, en la cuadrícula central se muestran los resultados de la búsqueda.
 
-L'utente può selezionare un articolo presente nella griglia dei risultati, che diventerà l'articolo di partenza per la duplicazione ed andare ad inserire nella sezione presente a fondo pagina la classe, il codice, la versione ed eventualmente la variante dell'articolo sul quale si vuole copiare il ciclo selezionato (società e divisione vengono impostati automaticamente uguali alla società e alla divisione in cui si sta lavorando).
+El usuario puede seleccionar un artículo presente en la cuadrícula de resultados, que se convertirá en el artículo de partida para la duplicación, e ir a ingresar en la sección al final de la página la clase, el código, la versión y, eventualmente, la variante del artículo sobre el cual se desea copiar el ciclo seleccionado (la empresa y la división se configurarán automáticamente igual a la empresa y la división en la que se está trabajando).
 
-Una volta impostati tutti i dati cliccando sull'icona posta sulla ribbon bar chiamata Duplica Cicli di Lavoro si attiverà la procedura che genera, per l'articolo indicato, un ciclo esattamente identico a quello di partenza.
+Una vez configurados todos los datos, haciendo clic en el ícono ubicado en la barra de herramientas llamado Duplicar Ciclos de Trabajo, se activará el procedimiento que genera, para el artículo indicado, un ciclo exactamente idéntico al de partida.
 
-*Pulsante specifico*:
+*Botón específico*:
 
-> **Duplica cicli di lavoro**: pulsante che attiva la procedura che consente di duplicare un ciclo di lavoro. 
+> **duplica cicli di lavoro**: botón que activa el procedimiento que permite duplicar un ciclo de trabajo.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,17 +1,17 @@
 ---
-title: Differenze inventariali
+title: differenze inventariali
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso **Logistica > Inventari fisici > Differenze inventariali**.
+El formulario se abre a través de la ruta **Logística > Inventarios físicos > differenze inventariali**.
 
-La procedura permette di scegliere la **Data elaborazione** mentre ricerca in automatico l'ultimo inventario non chiuso. E' possibile effettuare l'allineamento delle giacenze ad una certa data spuntando la voce **Calcola differenze inventariali alla data** giacenza e inserendo sul campo **Data calcolo giacenza** la data desiderata. E' inoltre possibile stabilire la data della registrazione di magazzino.
+El procedimiento permite elegir la **data elaborazione** mientras busca automáticamente el último inventario no cerrado. Es posible realizar la alineación de los saldos a una fecha específica marcando la opción **Calcular diferencias inventariales a la fecha (Calcola differenze inventariali alla data)** y ingresando en el campo **data calcolo giacenza** la fecha deseada. También se puede establecer la fecha de registro de almacén.
 
-*Pulsante specifico*  
-> **Creazione registrazione**: richiama la procedura per l'allineamento delle giacenze.
+*Botón específico*  
+> **creazione registrazione**: llama al procedimiento para la alineación de los saldos.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare l'elenco degli articoli inventariati all'interno della griglia **Differenze inventariali**.
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar la lista de los artículos inventariados dentro de la cuadrícula **differenze inventariali**.
 
-*Nota*: per informazioni dettagliate sulle causali utilizzate dalla procedura, fare riferimento alle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) con il flag *Gestione inventario fisico* attivo.
+*Nota*: para obtener información detallada sobre los motivos utilizados por el procedimiento, consulte las [Causas de almacén (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates) con el indicador *Gestión de inventario físico (Gestione inventario fisico)* activo.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

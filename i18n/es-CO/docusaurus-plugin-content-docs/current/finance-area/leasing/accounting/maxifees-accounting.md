@@ -1,14 +1,8 @@
 ---
-title: Contabilizzazione maxicanone
+title: contabilizzazione maxicanone
 sidebar_position: 2
 ---
 
-Da questa posizione è possibile procedere a contabilizzare massivamente tutti i maxicanoni relativi a tutti i contratti di leasing presenti nella base dati non ancora contabilizzati.
+Desde esta posición es posible proceder a contabilizar masivamente todos los maxicanones relacionados con todos los contratos de leasing presentes en la base de datos que aún no han sido contabilizados.
 
-Nel dettaglio la procedura contabile risulta la medesima attivabile dall'interno del **[dettaglio del leasing](/docs/finance-area/leasing/new)** stesso.
-
-
-
-
-
-
+En detalle, el procedimiento contable es el mismo que se puede activar desde el **[detalle del leasing (dettaglio del leasing)](/docs/finance-area/leasing/new)**.

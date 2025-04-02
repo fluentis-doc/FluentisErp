@@ -1,6 +1,6 @@
 ---
-title: Assortimenti Matrix
+title: assortimenti matrix
 sidebar_position: 48
 ---
 
-work in progress
+trabajo en progreso (work in progress)

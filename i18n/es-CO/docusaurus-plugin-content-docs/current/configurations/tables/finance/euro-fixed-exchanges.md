@@ -1,14 +1,14 @@
 ---
-title: Cambi fissi per l'euro
+title: cambi fissi per l'euro
 sidebar_position: 3
 ---
 
-La tabella presenta la lista dei cambi fissi di conversione all'euro: impostando il valore dell'euro il programma procederà automaticamente al calcolo delle valore inverso che sarà utilizzato poi nei calcoli dei controvalori del gestionale.
+La tabla presenta la lista de los tipos de cambio fijos de conversión al euro: al establecer el valor del euro, el programa procederá automáticamente al cálculo del valor inverso que se utilizará luego en los cálculos de los contra valores del sistema de gestión.
 
-#### Campi specifici
+#### Campos específicos (Campi specifici)
 
-**Divisa**: rappresenta il codice della divisa (tabella di riferimento: ) 
+**divisa**: representa el código de la moneda (tabla de referencia: ).
 
-**1 EURO**: valore di 1 EURO = divisa di riferimento.
+**1 EURO (1 EURO)**: valor de 1 EURO = moneda de referencia.
 
-**Cambio inverso**: calcolo del cambio inverso.
+**cambio inverso**: cálculo del tipo de cambio inverso.

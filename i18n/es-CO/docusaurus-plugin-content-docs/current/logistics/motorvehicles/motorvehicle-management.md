@@ -1,28 +1,28 @@
 ---
-title: Gestione automezzo
+title: gestione automezzo
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Logistica > Automezzi > Gestione automezzo**.
+La tabla se encuentra en la ruta **gestione automezzo**.
 
-I dati presenti in questa tabella sono utilizzati per indicare il tipo di automezzo creato.   
+Los datos presentes en esta tabla se utilizan para indicar el tipo de vehículo creado.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Gestione automezzo**
+**Búsqueda de gestión de vehículos (Ricerca Gestione automezzo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para mostrar los resultados en la cuadrícula de resultados.
 
-**Inserimento Gestione automezzo**
+**Inserción de gestión de vehículos (Inserimento Gestione automezzo)**
 
-Per poter inserire nuovi *Automezzi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *automezzi* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*: 
 
-> **Tipo automezzo**: indica il tipo di automezzo, che può essere codificato nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/);            
-> **Codice**: indica il codice dell'automezzo;               
-> **Descrizione**: indica la descrizione dell'automezzo;         
-> **Classe/Codice/Descrizione**: permette di collegare l'automezzo ad un articolo presente in anagrafica inserendo classe, codice e descrizione.   
+> **tipo automezzo**: indica el tipo de vehículo, que puede estar codificado en la tabla [Tipo de vehículo (Tipo automezzo)](/docs/configurations/tables/logistics/motorvehicle-types/);            
+> **codice**: indica el código del vehículo;               
+> **descrizione**: indica la descripción del vehículo;         
+> **Clase/Código/Descripción (Classe/Codice/Descrizione)**: permite vincular el vehículo a un artículo presente en el registro al ingresar clase, código y descripción.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

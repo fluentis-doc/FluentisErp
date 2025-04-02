@@ -1,54 +1,54 @@
 ---
-title: Parametri offerte
+title: Parámetros de ofertas (Parametri offerte)
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está afectada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-I parametri offerte permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra si compone di due tab: Generale e Scarico.     
+Los parámetros de las ofertas permiten la configuración básica para gestionarlas correctamente y de acuerdo con las solicitudes específicas de cada empresa. La ventana se compone de dos pestañas: General (Generale) y Descarga (Scarico).
 
-### Generale 
+### General (Generale)
 
-I campi presenti in questa tab sono:      
+Los campos presentes en esta pestaña son:
 
-**Gestione doppia unità misura**: se attivo, nelle righe offerta verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.     
+**gestione doppia unità misura**: si está activo, en las líneas de la oferta se mostrarán las dos columnas UM Alternativa y Cantidad Alternativa, por lo que será posible gestionar la doble unidad de medida, teniendo en cuenta que es la unidad de medida principal en la que se realizan los controles para el cumplimiento.
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli dell'offerta l'unità di misura alternativa impostata nell'anagrafica articolo, nel apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.       
+**Propuesta automática de UM alternativa (Proposta automatica UM alternativa)**: este indicador se vuelve editable solo si se ha activado el indicador de gestión de la doble unidad de medida y permite trasladar a la pestaña de artículos de la oferta la unidad de medida alternativa configurada en el registro del artículo, en la columna 'UM alternativa'; si no está activo, no se propone la unidad de medida.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di un'offerta, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+**ricerca prezzi articoli in tutti i listini predefiniti**: cuando se busca el precio y los descuentos para un artículo dentro de una oferta, el sistema sigue reglas basadas en las configuraciones establecidas en el registro del cliente, en la sección *Listinos*. Si la opción 'por defecto' está activada en un tipo de listado determinado, la búsqueda de precios y descuentos se centrará solo en esa tipo específico de listado; si el indicador "por defecto" no está activo, el sistema ampliará la búsqueda a todos los tipos de listados disponibles, siguiendo un orden de prioridad. En la práctica, con el indicador 'por defecto' activo, el sistema buscará primero un listado válido para la categoría predeterminada; si no encuentra resultados, pasará a verificar los otros tipos de listados en orden de prioridad. Sin embargo, si en el registro del cliente no hay ningún tipo de listado establecido como 'por defecto' y solo hay prioridades, este parámetro no influirá en la búsqueda, aunque esté activo.
 
-**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.                
+**proponi provvigione per gli articoli omaggio**: con este indicador se propondrán las comisiones del agente también para las líneas de artículos de tipo regalo, tal como ocurre para las líneas de tipo Artículo Codificado.
 
-**Consentire sconti per gli articoli omaggio**: con questo flag verranno inseriti gli sconti sull'importo di riga anche per le righe articolo di tipo omaggio.    
+**consentire sconti per gli articoli omaggio**: con este indicador se aplicarán descuentos al importe de la línea también para las líneas de artículos de tipo regalo.
 
-**Verifica articoli in esaurimento**: se settato, questo flag farà apparire un pop-up di avviso nel caso in cui vengano inseriti in offerta degli articoli che hanno settato in anagrafica il flag in Esaurimento e la data di esaurimento.          
+**verifica articoli in esaurimento**: si está configurado, este indicador hará aparecer un pop-up de aviso en caso de que se incluyan en la oferta artículos que tienen establecido en el registro el indicador de Agotamiento y la fecha de agotamiento.
 
-**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli delle offerte non gerarchiche, verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di offerta quale tipo di sconto utilizzare.     
+**[Habilitar Widget de descuentos simplificado (Abilita Widget sconti semplificato)](/docs/sales/sales-flow/discount-widget)**: al activar este indicador en la sección de Artículos de ofertas no jerárquicas, se mostrarán dos nuevas columnas: *Descuentos Artículo* y *Descuentos Finales Artículo*. La columna *Descuentos Artículo* es editable y muestra los descuentos aplicados automáticamente según las configuraciones relacionadas con el cliente, el artículo, el listado o la categoría de descuento. El usuario tiene la opción de ingresar, modificar o eliminar descuentos directamente en esta columna. Para usar este widget, es necesario que, además de activar el indicador, se especifique en el tipo de oferta qué tipo de descuento utilizar.
 
-**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli dell'offerta, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
+**uso articolo cliente**: si está configurado, este indicador insertará en la cuadrícula de artículos de la oferta las columnas para el Código y la Descripción del cliente ingresados en el registro del artículo, pestaña Cliente.
 
-**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli dell'offerta, la colonna per riportare il barcode dell'articolo.     
+**uso barcode**: si está configurado, este indicador insertará en la cuadrícula de artículos de la oferta la columna para mostrar el código de barras del artículo.
 
-**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata offerta.     
+**codice operatore obbligatorio**: este indicador hace que sea obligatorio completar el campo *Operador* en la cabecera de la oferta.
 
-**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+**blocca inserimento documento in date festive da calendario di fabbrica**: si está activo, el sistema no permite la inserción de la oferta en fechas festivas (se verifica primero el Calendario de Fábrica, luego el Calendario de capacidades productivas); si no está activo, el sistema no realiza ninguna verificación y permite la inserción del documento.
 
-**Riferimenti offerta**: se questo flag viene impostato, nel progetto creato da offerta verrà inserito il Riferimento dell'offerta nel titolo del progetto; la composizione di questa nota deve essere inserita nel campo *Descrizione* secondo i parametri descritti nella label.     
+**riferimenti offerta**: si se establece este indicador, en el proyecto creado a partir de la oferta se insertará la Referencia de la oferta en el título del proyecto; la composición de esta nota debe ser ingresada en el campo *Descripción* según los parámetros descritos en la etiqueta.
 
-**Costo predefinito materiali offerta**: in questo campo è possibile indicare il *Tipo costo origine* da usare come importo di partenza per il calcolo del ricavo dei *Materiali* di un'[offerta gerarchica](/docs/sales/offers/insert-offer).       
+**costo predefinito materiali offerta**: en este campo es posible indicar el *Tipo costo origen* a usar como importe de partida para el cálculo de los ingresos de los *Materiales* de una *[oferta jerárquica](/docs/sales/offers/insert-offer)*.
 
-**Articolo ordine risorse da offerta**: in questo campo è possibile indicare quale articolo codificato associare alle risorse di un'Offerta, per la creazione delle righe dell'Ordine dall'[offerta gerarchica](/docs/sales/offers/insert-offer).      
+**articolo ordine risorse da offerta**: en este campo es posible indicar qué artículo codificado asociar a los recursos de una Oferta, para la creación de las líneas del Pedido a partir de una *[oferta jerárquica](/docs/sales/offers/insert-offer)*.
 
-**Riferimenti prototipo**: in questa sezione è possibile comporre la nota di riferimento al prototipo associato all'offerta; essa verrà riportata nel campo *Prototipo* del tab *Attività* dell'offerta gerarchica.     
+**Referencias de prototipo (Riferimenti prototipo)**: en esta sección es posible componer la nota de referencia al prototipo asociado a la oferta; esta será trasladada al campo *Prototipo* de la pestaña *Actividades* de la oferta jerárquica.
 
-**Blocca conferma e conversione offerta in ordine se presenti prototipi non codificati**: questo flag impedisce conferma e conversione offerta in ordine se sono associati prototipi non codificati.
+**blocca conferma e conversione offerta in ordine se presenti prototipi non codificati**: este indicador impide la confirmación y conversión de la oferta en pedido si están asociados prototipos no codificados.
 
-### Scarico
+### Descarga (Scarico)
 
-I parametri di scarico sono utilizzati solo per proporre il magazzino e la causale nelle righe delle offerte non gerarchiche.
+Los parámetros de descarga se utilizan solo para proponer el almacén y la causa en las líneas de las ofertas no jerárquicas.
 
-**Priorità parametri inseriti per ogni riga ordine**: se attivo il magazzino e la causale di scarico vengono letti dalle righe dell'ordine mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (**Magazzino** e **Causale di magazzino**).     
+**priorità parametri inseriti per ogni riga ordine**: si está activo, el almacén y la causa de descarga se leen desde las líneas del pedido; de lo contrario, se usarán el almacén y la causa ingresados en los campos siguientes (**magazzino** y **Causa de almacén (Causale di magazzino)**).

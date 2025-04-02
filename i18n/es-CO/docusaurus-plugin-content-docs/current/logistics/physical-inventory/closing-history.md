@@ -1,16 +1,16 @@
 ---
-title: Storico chiusura
+title: storico chiusura
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-L'introduzione allo storico chiusura di Fluentis offre un accesso fondamentale ai dati storicizzati relativi alle chiusure di magazzino, permettendo agli operatori di monitorare e analizzare le variazioni delle giacenze nel tempo. Questa funzionalità consente di consultare informazioni dettagliate come il costo ultimo, il costo medio e le giacenze di magazzino, tutte realizzate tramite la procedura di valorizzazione.
+:::important ¿Para qué sirve? (A cosa serve)
+La introducción al histórico de cierres de Fluentis ofrece un acceso fundamental a los datos historizados relacionados con los cierres de almacén, permitiendo a los operadores monitorear y analizar las variaciones de las existencias a lo largo del tiempo. Esta funcionalidad permite consultar información detallada como el costo último, el costo medio y las existencias de almacén, todas realizadas a través del procedimiento de valorización.
 
-Nella form dedicata allo storico chiusura, gli utenti possono visualizzare e filtrare le chiusure effettuate, permettendo così una facile consultazione dei dati storici e facilitando l'analisi delle performance del magazzino. È importante notare che per salvare correttamente i dati all'interno dello storico, è necessario attivare il flag di Storicizzazione inventario durante l'esecuzione della valorizzazione.
+En el formulario dedicado al histórico de cierres, los usuarios pueden visualizar y filtrar los cierres realizados, lo que facilita la consulta de los datos históricos y la análisis del desempeño del almacén. Es importante señalar que para guardar correctamente los datos dentro del histórico, es necesario activar el indicador de Historización de inventario durante la ejecución de la valorización.
 
-Questa funzionalità non solo agevola la rendicontazione e la conformità normativa, ma supporta anche le aziende nel prendere decisioni strategiche basate su dati storici consolidati, contribuendo così a una gestione logistica più efficace e consapevole.
+Esta funcionalidad no solo facilita la rendición de cuentas y el cumplimiento normativo, sino que también apoya a las empresas en la toma de decisiones estratégicas basadas en datos históricos consolidados, contribuyendo así a una gestión logística más efectiva y consciente.
 :::
 
-Questa form permette di consultare i dati storicizzati relativi alle chiusure di magazzino effettuate (costo ultimo, costo medio, giacenza,...) realizzate tramite la procedura di [Valorizzazione magazzino](/docs/logistics/physical-inventory/warehouse-valorization)
+Este formulario permite consultar los datos historizados relacionados con los cierres de almacén realizados (costo último, costo medio, existencias,...) a través del procedimiento de [Valorización de almacén (Valorizzazione magazzino)](/docs/logistics/physical-inventory/warehouse-valorization).
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consultar el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

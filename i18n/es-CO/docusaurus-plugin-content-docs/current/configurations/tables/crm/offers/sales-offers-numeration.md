@@ -1,8 +1,8 @@
 ---
-title: Numerazione preventivi
+title: numerazione preventivi
 sidebar_position: 2
 ---
 
-La tabella permette definire dei progressivi di numerazione diversi all'interno dello stesso anno da attribuire a uno o più tipi offerta.
+La tabla permite definir diferentes progresivos de numeración dentro del mismo año para atribuir a uno o más tipos de oferta.
 
-Per le modalità di inserimento delle numerazioni, si rimanda all'articolo [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations).
+Para los métodos de inserción de las numeraciones, se remite al artículo [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations).

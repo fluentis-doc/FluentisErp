@@ -1,32 +1,31 @@
 ---
-title: Scarico POS
+title: scarico pos
 sidebar_position: 5
 ---
 
-La procedura si apre tramite il percorso **Vendite > POS > Procedure > Scarico POS**.
+El procedimiento se abre a través de la ruta **Ventas > POS > Procedimientos > scarico pos (Vendite > POS > Procedure > Scarico POS)**.
 
-Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel POS. 
+Este procedimiento permite ejecutar/restablecer las operaciones de descarga automática del almacén de los artículos presentes en el POS.
 
 ## Filtro
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire in magazzino i POS, secondo i criteri di filtro disponibili. 
+En esta pestaña, el usuario tiene la posibilidad de buscar y transferir a almacén los POS, según los criterios de filtro disponibles.
 
-**Data registrazione**: permette di specificare la data relativa allo scarico dal magazzino.
+**data registrazione**: permite especificar la fecha relacionada con la descarga del almacén.
 
-#### Pulsanti specifici  
-> **Ricerca**: permette di cercare i POS da scaricare.  
-> **Scarico**: permette di eseguire lo scarico dei POS selezionati dal magazzino, in base agli algoritmi di scarico.
+#### Botones específicos  
+> **ricerca**: permite buscar los POS a descargar.  
+> **scarico**: permite ejecutar la descarga de los POS seleccionados desde el almacén, de acuerdo con los algoritmos de descarga.
 
+## Resúmenes (Riepiloghi)
 
-## Riepiloghi
+En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y anular las operaciones de descarga realizadas, que cumplen con las condiciones específicas de cancelación de los registros de almacén.
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di scarico eseguite, che soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.
+Los datos en las cuadrículas inferiores, **POS** y **registrazione**, corresponden al registro de descarga seleccionado en la cuadrícula superior (después de haber filtrado los datos). Además, en estas últimas dos cuadrículas, hay posibilidad de visualizar el POS y su registro de almacén (doble clic en la fila).
 
-I dati nelle griglie in basso, **POS** e **Registrazione**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare il POS e la sua registrazione di magazzino (doppio click sulla riga).
-
-#### Pulsanti specifici  
-> **Ricerca POS scaricati**: per cercare i POS scaricati. Il risultato di questa procedura viene visualizzata nella griglia di risultato.  
-> **Cancella scarico**: per cancellare per intero le operazioni di scarico selezionate nella griglia di risultato, se soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.   
-> **Ripristina POS**: per cancellare le operazioni di scarico selezionate nella griglia di risultato, per il POS in uso nella griglia dei dettagli.  
-> **Ripristina POS e registrazione**: per cancellare la registrazione di magazzino del documento selezionato nell'operazione di scarico in uso, se soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.  
-> **Proprietà**: permette di visualizzare il modo in cui è stata eseguita l'operazione di scarico selezionata. 
+#### Botones específicos  
+> **ricerca pos scaricati**: para buscar los POS descargados. El resultado de este procedimiento se visualiza en la cuadrícula de resultados.  
+> **cancella scarico**: para eliminar por completo las operaciones de descarga seleccionadas en la cuadrícula de resultados, si cumplen con las condiciones específicas de cancelación de los registros de almacén.  
+> **ripristina pos**: para eliminar las operaciones de descarga seleccionadas en la cuadrícula de resultados, para el POS en uso en la cuadrícula de detalles.  
+> **Restaurar POS y registro (Ripristina POS e registrazione)**: para eliminar el registro de almacén del documento seleccionado en la operación de descarga en uso, si cumplen con las condiciones específicas de cancelación de los registros de almacén.  
+> **proprietà**: permite visualizar la forma en que se ha realizado la operación de descarga seleccionada.

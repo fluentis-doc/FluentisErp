@@ -3,36 +3,24 @@ title: Intra1
 sidebar_position: 2
 ---
 
-La tab Intra 1 contiene i dati del frontespizio del modello: i dati di base sono compilati secondo quanto inserito nella tabella Società.
+La pestaña Intra 1 contiene los datos de la carátula del modelo: los datos básicos se completan según lo ingresado en la tabla Empresa (Società).
 
-Restano a gestione manuale i flag di prima presentazione e quello di cessazione dell'attività o variazione partita IVA, così come la sezione del soggetto delegato alla presentazione.
+Quedan bajo gestión manual los indicadores de primera presentación y el de cese de actividad o variación de número de IVA, así como la sección del sujeto delegado a la presentación.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image01.png)![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image02.png)
 
- 
-
-Alla base della finestra sono presenti campi di riepilogo delle sezioni bis, ter, quater e quinquies del modello; 
+En la parte inferior de la ventana, se encuentran campos de resumen de las secciones bis, ter, quater y quinquies del modelo; 
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image03.png)
 
-infine la selezione relativa agli eventuali cambi di periodicità presenti nella dichiarazione in uso.
+y, finalmente, la selección relacionada con los posibles cambios de periodicidad presentes en la declaración en uso.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image04.png)
 
 
 
-
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
-|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
-|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
-
-
-
-
-
-
+| Guardar (Salva) | Botón a través del cual se guarda la declaración. |
+|  [Creación automática (Creazione automatica)](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Botón que llama al asistente de recuperación de datos del área de ventas. |
+|  [Creación a partir de registros (Creazione da registrazioni)](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Botón que llama al asistente de recuperación de datos de los registros contables. |

@@ -1,18 +1,18 @@
 ---
-title: Parametri differenze inventariali
+title: parametri differenze inventariali
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-L'introduzione ai parametri delle differenze inventariali di Fluentis è fondamentale per garantire un efficace allineamento tra le giacenze fisiche e logiche all'interno del magazzino. Questa funzionalità consente agli operatori di gestire e registrare le discrepanze identificate in modo sistematico, assicurando che ogni movimento di magazzino sia tracciato e contabilizzato in modo accurato.
+:::important ¿Para qué sirve? (A cosa serve)
+La introducción a los parámetros de las diferencias inventariales de Fluentis es fundamental para garantizar un efectivo alineamiento entre los inventarios físicos y lógicos dentro del almacén. Esta funcionalidad permite a los operadores gestionar y registrar las discrepancias identificadas de manera sistemática, asegurando que cada movimiento de almacén sea rastreado y contabilizado con precisión.
 
-I parametri delle differenze inventariali si trovano nella sezione di configurazione e permettono di stabilire le causali di magazzino da utilizzare durante il processo di calcolo delle differenze. Ogni magazzino può avere configurazioni personalizzate, in cui è necessario impostare sia una causale di carico per le rettifiche inventariali positive sia una causale di scarico per le rettifiche negative. Inoltre, il sistema automatizza la generazione di registrazioni di compensazione, semplificando così la gestione di eventuali variazioni nelle giacenze.
+Los parámetros de las diferencias inventariales se encuentran en la sección de configuración y permiten establecer las causales de almacén que se utilizarán durante el proceso de cálculo de las diferencias. Cada almacén puede tener configuraciones personalizadas, donde es necesario establecer una causal de carga para las rectificaciones inventariales positivas y una causal de descarga para las rectificaciones negativas. Además, el sistema automatiza la generación de registros de compensación, lo que simplifica la gestión de cualquier variación en los inventarios.
 
-Nella procedura di differenze inventariali, Fluentis offre l'opzione di calcolare le differenze a una data specifica, consentendo una gestione retroattiva e una registrazione accurata delle giacenze. 
+En el procedimiento de diferencias inventariales, Fluentis ofrece la opción de calcular las diferencias a una fecha específica, permitiendo una gestión retroactiva y un registro preciso de los inventarios.
 :::
 
-La form permette di impostare, per ogni magazzino, le causali che dovranno essere utilizzate automaticamente dall'applicazione in caso di creazione automatica di registrazioni di magazzino tramite l'utilizzo della procedura *Differenze inventariali*. Permette di calcolare la differenza tra la quantità logica e la quantità fisica, ossia quella rilevata dall'inventario fisico, e di generare automaticamente le registrazioni di compensazione delle differenze tra quantità logica e quantità fisica.
+El formulario permite establecer, para cada almacén, las causales que deberán ser utilizadas automáticamente por la aplicación en caso de creación automática de registros de almacén mediante el uso del procedimiento *differenze inventariali*. Permite calcular la diferencia entre la cantidad lógica y la cantidad física, es decir, la que se detecta en el inventario físico, y generar automáticamente los registros de compensación de las diferencias entre la cantidad lógica y la cantidad física.
 
-Le causali di magazzino che possono essere impostate in questo tab sono esclusivamente le causali che hanno il flag *Gestione inventario fisico* attivo nelle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates). È necessario impostare, per ogni magazzino, una casuale di carico di rettifica inventariale ed una causale di scarico di rettifica inventariale. 
+Las causales de almacén que se pueden establecer en esta pestaña son exclusivamente aquellas que tienen el indicador *Gestión de inventario físico (Gestione inventario fisico)* activo en las [Causales de almacén (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates). Es necesario establecer, para cada almacén, una causal de carga de rectificación inventarial y una causal de descarga de rectificación inventarial.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

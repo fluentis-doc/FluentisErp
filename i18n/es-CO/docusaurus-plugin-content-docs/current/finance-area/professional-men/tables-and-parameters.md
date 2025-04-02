@@ -1,16 +1,10 @@
 ---
-title: Tabelle e Parametri
+title: Tablas y Parámetros (Tabelle e Parametri)
 sidebar_position: 2
 ---
 
-Una serie di impostazioni di natura sia tabellare precodificata che anche una corretta parametrizzazione degli algoritmi di base, sono consigliate prima di procedere con la gestione dei percipienti.
+Una serie de configuraciones de naturaleza tanto tabular precodificada como una correcta parametrización de los algoritmos básicos son recomendadas antes de proceder con la gestión de los perceptores.
 
-**Tabelle**: è opportuno riferirsi alla sezione  Configurazione > Tabelle > Amministrazione] per identificare le corrette impostazioni del portafoglio effetti. Le form di riferimento sono:  [Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  [Aliquote IVA](/docs/configurations/tables/finance/vat-rates),  [Cambi fissi euro](/docs/configurations/tables/finance/euro-fixed-exchanges),  [Cambi valute](/docs/configurations/tables/finance/currency-exchange),  [Causali contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates),  [Causali contributo](/docs/configurations/tables/finance/contribution-templates), [Centri di profitto](/docs/configurations/tables/controlling/cost-accounting/profit-centres) / costo / [responsabilità](/docs/configurations/tables/controlling/cost-accounting/responsability-centres),  [Codice tributo](/docs/configurations/tables/finance/tax-code),  Cost driver,  [Modalità di versamento](/docs/configurations/tables/finance/paying-in-modality),  [Tipi conto](/docs/configurations/tables/finance/account-types),  [Tipi ritenuta](/docs/configurations/tables/finance/withholding-tax-types).
+**tabelle**: es recomendable referirse a la sección **Configuración > Tablas > Administración (Configurazione > Tabelle > Amministrazione)** para identificar las configuraciones correctas de la cartera de efectos. Los formularios de referencia son: [Plan de cuentas (Piano dei conti)](/docs/erp-home/registers/accounting/analytic-chart-of-accounts), [Tipos de IVA (Aliquote IVA)](/docs/configurations/tables/finance/vat-rates), [Tipo de cambio fijo euro (Cambi fissi euro)](/docs/configurations/tables/finance/euro-fixed-exchanges), [Tipo de cambio de divisas (Cambi valute)](/docs/configurations/tables/finance/currency-exchange), [Causales de contabilidad general (Causali contabilità generale)](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates), [Causales de contribución (Causali contributo)](/docs/configurations/tables/finance/contribution-templates), [Centros de beneficios (Centri di profitto)](/docs/configurations/tables/controlling/cost-accounting/profit-centres) / costo / [responsabilidad (responsabilità)](/docs/configurations/tables/controlling/cost-accounting/responsability-centres), [Código tributario (Codice tributo)](/docs/configurations/tables/finance/tax-code), **Cost driver** (Cost driver), [Modalidades de pago (Modalità di versamento)](/docs/configurations/tables/finance/paying-in-modality), [Tipos de cuenta (Tipi conto)](/docs/configurations/tables/finance/account-types), [Tipos de retención (Tipi ritenuta)](/docs/configurations/tables/finance/withholding-tax-types).
 
-**Parametri**: è opportuno riferirsi alla sezione [Home>Parametri> Amministrazione] per identificare la corretta impostazione degli algoritmi relativi al modulo portafoglio effetti. La form à  [Parametri percipienti](/docs/configurations/parameters/finance/professional-men-parameters).
-
-
-
-
-
-
+**parametri**: es recomendable referirse a la sección [Inicio > Parámetros > Administración (Home>Parametri> Amministrazione)] para identificar la configuración correcta de los algoritmos relacionados con el módulo de cartera de efectos. El formulario es [Parámetros de perceptores (Parametri percipienti)](/docs/configurations/parameters/finance/professional-men-parameters).

@@ -1,11 +1,12 @@
 ---
-title: Fattore di rettifica del consumo giornaliero medio
+title: Factor de ajuste del consumo diario medio (Fattore di rettifica del consumo giornaliero medio)
 sidebar_position: 6
 ---
-Il consumo giornaliero medio di un buffer (ADU) è specificato nella tabella dei parametri DDMRP per ciascun articolo e per ciascuna unià logistica (centro distribuzione hub o fabbrica).
 
-Tramite questa tabella è possibile indicare un coefficiente moltiplicativo del consumo medio giornaliero da applicare in specifiche date tramite valori maggiori o uguali a zero. 
+El consumo diario medio de un buffer (ADU) está especificado en la tabla de parámetros DDMRP para cada artículo y para cada unidad logística (centro de distribución o fábrica).
 
-La procedura **Aggiornamento valore zone articoli a buffer** in tali date, considererà un valore del consumo medio giornaliero pari a quanto presente nella tabella parametri DDMRP moltiplicato per il coefficiente presente in questa tabella, e le zone verde gialla e rossa verranno calcolate tenendo presente tale prodotto (la procedura non modificherà il valore ADU nei paramteri Ddmrp). 
+A través de esta tabla, es posible indicar un coeficiente multiplicativo del consumo medio diario que se aplicará en fechas específicas mediante valores mayores o iguales a cero. 
 
-Serve per alterare il normale valore del consumo medio giornaliero solo per un breve periodo, se si sa già in anticipo che ci saranno delle variazioni consistenti della domanda ma che non rappresentano un cambiamento strutturale e permanente della stessa, come per esempio nel caso di campagne promozionali, introduzione di nuovi prodotti, eliminazione di vecchi prodotti.
+El procedimiento **Actualización del valor de zonas de artículos a buffer (Aggiornamento valore zone articoli a buffer)** en dichas fechas considerará un valor del consumo medio diario igual al que está presente en la tabla de parámetros DDMRP multiplicado por el coeficiente presente en esta tabla, y las zonas verde, amarilla y roja se calcularán teniendo en cuenta dicho producto (el procedimiento no modificará el valor ADU en los parámetros DDMRP).
+
+Sirve para alterar el valor normal del consumo medio diario solo por un breve período, si se sabe de antemano que habrá variaciones significativas en la demanda, pero que no representan un cambio estructural y permanente en la misma, como por ejemplo en el caso de campañas promocionales, introducción de nuevos productos o eliminación de productos antiguos.

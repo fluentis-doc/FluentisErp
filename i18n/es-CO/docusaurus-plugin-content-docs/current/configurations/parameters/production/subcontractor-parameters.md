@@ -1,109 +1,109 @@
 ---
-title: Parametri Conto Lavoro
+title: Parámetros de Cuenta Trabajo (Parametri Conto Lavoro)
 sidebar_position: 2
-tags: [Conto Lavoro]
+tags: [Cuenta Trabajo (Conto Lavoro)]
 ---
 
-Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione del conto lavoro e più nello specifico il modo in cui devono essere eseguite le movimentazioni di magazzino innescate dalle procedure del modulo stesso.
+A través de esta ventana se configuran todos los parámetros que conciernen la gestión de cuenta trabajo y, más específicamente, la manera en que deben ejecutarse las operaciones de almacén desencadenadas por los procedimientos del módulo mismo.
 
-## Generale
+## General (Generale)
 
-#### Dati proposti negli ordini  
+#### Datos propuestos en los pedidos (Dati proposti negli ordini)
 
-> **Rigenerazione materiali nell'aggiornamento dell'articolo**: se il flag è attivato, ogniqualvolta si effettui una modifica sulla riga articolo presente nel tab *Articoli da produrre* dell'ordine di conto lavoro la procedura rigenera le informazioni relative ai materiali da consegnare e da impiegare da inserire nell'ultimo tab dell'ordine stesso.  
->   
-> **Dati materiali proposti**: visualizza le 4 differenti possibilità che l'utente ha di far proporre automaticamente alla procedura i materiali nel tab Materiali da Consegnare dell'ordine di conto lavoro.  
-> Le possibilità sono le seguenti:  
-> 1. *Da ultima consegna effettuata presso lo stesso terzista*: si controlla l'ultimo ordine di conto lavoro generato per lo stesso terzista e in cui è presente lo stesso articolo da produrre.    
-> 2. *Esplosione livello da struttura distinta*: si controlla la distinta base dell'articolo inserito nel tab Articoli da Produrre.    
-> 3. *Consegna dello stesso articolo da produrre*: si inserisce nel tab Materiali da Consegnare lo stesso articolo inserito nel tab Articoli da Produrre.    
-> 4. *Nessun materiale*: nel tab Materiali da Consegnare non viene proposto alcun materiale.
-> 5. *Dall'ordine di produzione*: usato per gli ordini di conto lavoro generati mediante rilascio di un ordine pianificato di conto lavoro oppure da un ordine di produzione con fase esterna.   
+> **rigenerazione materiali nell'aggiornamento dell'articolo**: si el indicador está activado, cada vez que se realice una modificación en la línea del artículo presente en la pestaña *articoli da produrre* del pedido de cuenta trabajo, el procedimiento regenerará la información relativa a los materiales a entregar y a utilizar que deben ser ingresados en la última pestaña del mismo pedido.  
+>  
+> **dati materiali proposti**: muestra las 4 diferentes posibilidades que el usuario tiene para que la procedimiento proponga automáticamente los materiales en la pestaña Materiales a Entregar del pedido de cuenta trabajo.  
+> Las posibilidades son las siguientes:  
+> 1. *da ultima consegna effettuata presso lo stesso terzista*: se verifica el último pedido de cuenta trabajo generado para el mismo subcontratista y en el que está presente el mismo artículo a producir.    
+> 2. *esplosione livello da struttura distinta*: se verifica la lista de materiales del artículo ingresado en la pestaña Artículos a Producir.    
+> 3. *consegna dello stesso articolo da produrre*: se ingresa en la pestaña Materiales a Entregar el mismo artículo ingresado en la pestaña Artículos a Producir.    
+> 4. *nessun materiale*: en la pestaña Materiales a Entregar no se propone ningún material.  
+> 5. *dall'ordine di produzione*: utilizado para los pedidos de cuenta trabajo generados mediante la liberación de un pedido planificado de cuenta trabajo o de un pedido de producción con fase externa.   
 >
-> **Versione**: consentono di selezionare la versione della distinta base.
+> **versione**: permite seleccionar la versión de la lista de materiales.
 
-#### Considera le disponibilità provenienti da   
+#### Considerar las disponibilidades provenientes de (Considera le disponibilità provenienti da) 
 
-> Questa sezione permette di decidere se considerare o no le disponibilità provenienti da **Conto Lavoro** / **Produzione** / **Acquisti** / **Magazzino** / **Vendite**; ciascuno di questi flag sta a indicare la volontà da parte dell'utente di fare in modo che la procedura di creazione dell'ordine di conto lavoro consideri la disponibilità dei materiali in base alle informazioni che provengono dalle singole aree applicative di ERP. Quindi per esempio se l'utente sceglie di attivare il flag solo su Acquisti e non su Vendite, significa che saranno considerate le disponibilità provenienti dagli ordini fornitori, dalle DDT e fatture di acquisto e dalle richieste di acquisto e non quelle provenienti da ordini clienti, DDT e fatture di vendita.   
+> Esta sección permite decidir si considerar o no las disponibilidades provenientes de **conto lavoro** / **produzione** / **acquisti** / **magazzino** / **vendite**; cada uno de estos indicadores indica la voluntad por parte del usuario de hacer que el procedimiento de creación del pedido de cuenta trabajo considere la disponibilidad de los materiales en base a la información que proviene de las distintas áreas aplicativas del ERP. Por ejemplo, si el usuario elige activar el indicador solo en Compras y no en Ventas, significa que se considerará la disponibilidad proveniente de los pedidos de proveedores, de las DDT y facturas de compra, y de las solicitudes de compra, pero no aquellas provenientes de pedidos de clientes, DDT y facturas de venta.
 
-#### Prodotti finiti  
+#### Productos terminados (Prodotti finiti) 
 
-> **Proposta dell'ultimo prezzo di lavorazione effettuato**: se attivato, consente di far proporre nell'ordine di conto lavoro, nella casella del prezzo unitario di lavorazione del tab *Articoli da Produrre*, il prezzo dell'ultimo ordine di conto lavoro emesso per quell'articolo per lo stesso terzista.
->   
-> **Considera le quantità in base al lotto economico** e **Considera i multipli del lotto economico**: permette di scegliere, al momento dell'inserimento di un articolo nel tab *Articoli da produrre* dell'ordine di conto lavoro, se considerare le quantità degli articoli stessi in base al lotto economico, e/o considerare eventualmente anche i multipli del lotto.  
+> **proposta dell'ultimo prezzo di lavorazione effettuato**: si está activado, permite que se proponga en el pedido de cuenta trabajo, en el cuadro del precio unitario de trabajo de la pestaña *articoli da produrre*, el precio del último pedido de cuenta trabajo emitido para ese artículo para el mismo subcontratista.  
+>  
+> **considera le quantità in base al lotto economico** y **considera i multipli del lotto economico**: permite elegir, al momento de ingresar un artículo en la pestaña *articoli da produrre* del pedido de cuenta trabajo, si considerar las cantidades de los artículos mismos según el lote económico, y/o eventualmente considerar también los múltiplos del lote.  
 
-**Tipo DDT**: in questa sezione si imposta il [Tipo DDT di vendita](/docs/configurations/tables/sales/delivery-notes-type) che deve essere proposto di default quando si utilizza la procedura di creazione DDT di consegna di conto lavoro. Questo tipo DDT utilizzerà in automatico magazzino e causale impostati nelle apposite combo della voce "Consegne materiali a terzisti" che si trova nella finestra dei parametri di conto lavoro.
+**tipo ddt**: en esta sección se establece el [Tipo DDT de venta (Tipo DDT di vendita)](/docs/configurations/tables/sales/delivery-notes-type) que debe ser propuesto por defecto cuando se utiliza el procedimiento de creación del DDT de entrega de cuenta trabajo. Este tipo DDT utilizará automáticamente el almacén y la causal establecidos en las comboboxes de la opción "Entregas de materiales a subcontratistas (Consegne materiali a terzisti)" que se encuentra en la ventana de parámetros de cuenta trabajo.
 
-**Unità di misura volume predefinita**: permette di indicare l'unità di misura da utilizzare di default per i volumi.   
+**unità di misura volume predefinita**: permite indicar la unidad de medida que se utilizará por defecto para los volúmenes.  
 
-**Unità di misura pesi predefinita**: permette di indicare l'unità di misura da utilizzare di default per i pesi.   
+**unità di misura pesi predefinita**: permite indicar la unidad de medida que se utilizará por defecto para los pesos.  
 
-**Valor. lavorazione materiali a costo**: permette di definire se la valorizzazione della lavorazione dei materiali debba avvenire a costo ultimo o a costo medio. Quindi si tratta di un metodo per decidere se i materiali utilizzati dai terzisti debbano essere imputati alla lavorazione utilizzando il  costo ultimo oppure il  costo medio tra quelli inseriti nell'anagrafica dell'articolo stesso. Inoltre, è possibile, selezionando i flag **Lotti** e/o **Commessa di produzione**, andare a proporre come costo del materiale il costo ultimo/Medio per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+**Valor. trabajo de materiales a costo (Valor. lavorazione materiali a costo)**: permite definir si la valorización del trabajo de los materiales debe hacerse a costo último o a costo medio. Entonces se trata de un método para decidir si los materiales utilizados por los subcontratistas deben ser imputados al trabajo usando el costo último o el costo medio entre los que están ingresados en la ficha del artículo. Además, es posible, al seleccionar los indicadores **lotti** y/o **commessa di produzione**, proponer como costo del material el costo último/medio para el respectivo lote y/o orden de producción según los indicadores activados.    
 
-#### Evasione  
+#### Evasión (Evasione) 
 
-> **Visualizzazione griglia di evasione**: se attivo, nelle procedure di evasione ordine in DDT di consegna o nel rientro sarà visibile la griglia di evasione.   
+> **Visualización de la cuadrícula de evasión (Visualizzazione griglia di evasione)**: si está activado, en los procedimientos de evasión de pedido en DDT de entrega o en el retorno será visible la cuadrícula de evasión.   
 > 
-> **Visualizzazione tree evasione**: se attivo, nelle procedure di evasione ordine in DDT di consegna o nel rientro sarà visibile la struttura gerarchica. Questi due flag possono essere attivati in concomitanza.    
+> **Visualización árbol de evasión (Visualizzazione tree evasione)**: si está activado, en los procedimientos de evasión de pedido en DDT de entrega o en el retorno será visible la estructura jerárquica. Estos dos indicadores pueden ser activados simultáneamente.    
 
-**Codice operatore obbligatorio**: se attivo, permette di decidere se sia necessario inserire il codice operatore nel momento in cui si inserisce la DDT di consegna di conto lavoro.
+**codice operatore obbligatorio**: si está activado, permite decidir si es necesario ingresar el código del operador al momento de ingresar el DDT de entrega de cuenta trabajo.
 
-**Proposta automatica serial number per l'articolo rientrato se presente anche come materiale consumato**: nei rientri di conto lavoro questo flag attivo permette di far proporre in automatico il serial number per l'articolo.
+**Propuesta automática de número de serie para el artículo devuelto si está presente también como material consumido (Proposta automatica serial number per l'articolo rientrato se presente anche come materiale consumato)**: en los retornos de cuenta trabajo, este indicador activo permite que se proponga automáticamente el número de serie para el artículo.
 
-**Controlla disponibilità**: se attivo, permette di decidere se fare in modo che la procedura controlli o meno la disponibilità proveniente dai flag impostati nella sezione *Considera le disponibilità provenienti da*.
+**controlla disponibilità**: si está activado, permite decidir si hacer que el procedimiento controle o no la disponibilidad proveniente de los indicadores establecidos en la sección *Considerar las disponibilidades provenientes de*. 
 
-**Disponibilità obbligatoria**: se attivo, impedisce l'inserimento di materiali in ordini di conto lavoro nel caso di mancata disponibilità alla data dell'eventuale consegna al terzista.
+**disponibilità obbligatoria**: si está activado, impide la incorporación de materiales en pedidos de cuenta trabajo en caso de falta de disponibilidad en la fecha de la posible entrega al subcontratista.
 
-**Nessun materiale in consegna**: se attivo, fa in modo che nel tab *Materiali da consegnare* non sia inserito alcun articolo per nessun articolo da produrre.
+**nessun materiale in consegna**: si está activado, asegura que en la pestaña *materiali da consegnare* no se ingrese ningún artículo para ningún artículo a producir.
 
-**Carico/Scarico automatico**: se attivo, permette all'utente di fare in modo che le movimentazioni di magazzino in uscita avvengano automaticamente non appena la DDT di consegna venga stampata. Questo consente di saltare lo step dello scarico dei  DDT di consegna di conto lavoro
+**carico/scarico automatico**: si está activado, permite al usuario hacer que las operaciones de almacén salientes ocurran automáticamente tan pronto como se imprima el DDT de entrega. Esto permite saltar el paso de descarga de los DDT de entrega de cuenta trabajo.
 
-**Registrazioni di magazzino con data del documento**: 
-per la registrazione dei **DDT di consegna**, se questo flag è attivo, viene usata la *Data trasporto* (presente nel tab *Riepiloghi* > *Destinatario*), se valorizzata, altrimenti viene considerata la data di creazione del documento presente in testata. Se il flag non è attivo, lo scarico dall'interno del documento viene sempre effttuato con la data corrente.    
-Per la registrazione dei **Rientri di conto lavoro**: se il flag è attivo viene sempre utilizzata la *Data rientro* presente in testata; se non attivo la registrazione dall'interno del documento viene effettuata con la *Data documento def.* presente in testata.
+**registrazioni di magazzino con data del documento**: 
+para el registro de los **ddt di consegna**, si este indicador está activado, se utiliza la *data trasporto* (presente en la pestaña *Resumen > Destinatario (Riepiloghi > Destinatario)*), si está valorada; de lo contrario, se considera la fecha de creación del documento presente en la cabecera. Si el indicador no está activado, la descarga dentro del documento siempre se efectúa con la fecha actual.    
+Para el registro de los **Retornos de cuenta trabajo (Rientri di conto lavoro)**: si el indicador está activado, se utiliza siempre la *data rientro* presente en la cabecera; si no está activado, el registro dentro del documento se hace con la *Fecha del documento def. (Data documento def.)* presente en la cabecera.
 
-**Blocca inserimento documento in date festive**: se attivo, impedisce l'inserimento di un ordine, di una DDT e di un rientro di conto lavoro in date festive.
+**blocca inserimento documento in date festive**: si está activado, impide el ingreso de un pedido, DDT y retorno de cuenta trabajo en fechas festivas.
 
-**Controllo terzista di riferimento per gli articoli**: se attivo, consente all'utente di fare in modo che la procedura di creazione degli ordini di conto lavoro controlli se l'articolo che si sta inserendo nel tab *Articoli da Produrre* abbia, come fornitore preferenziale, il terzista inserito nella testata dell'ordine stesso.
+**controllo terzista di riferimento per gli articoli**: si está activado, permite al usuario hacer que el procedimiento de creación de los pedidos de cuenta trabajo verifique si el artículo que se está ingresando en la pestaña *articoli da produrre* tiene, como proveedor preferencial, al subcontratista ingresado en la cabecera del mismo pedido.
 
-**Lotti e numeri serali obbligatori**: se attivato, obbliga l'utente ad inserire in tutti i documenti il lotto dell'articolo inserito nel documento stesso, sempre che l'articolo sia gestito a lotti o a serial numbers.
+**Lotes y números de serie obligatorios (Lotti e numeri serali obbligatori)**: si se activa, obliga al usuario a ingresar en todos los documentos el lote del artículo ingresado en el documento, siempre que el artículo esté gestionado a lotes o a números de serie.
 
-**Ricalcola trasporto**: questo flag fa in modo che nel tab Trasporto del DDT vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.
+**ricalcola trasporto**: este indicador asegura que en la pestaña Transporte del DDT se reporten los totales de peso, volumen y bultos de las líneas del documento; sin este indicador, los campos no se completarán.
 
-**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stato attivato il flag *In esaurimento*.
+**verifica articoli in esaurimento**: si se activa, el sistema realiza un control sobre la disponibilidad de los artículos en la línea del pedido y alerta si el artículo está agotado, es decir, si en la [ficha del artículo (anagrafica dell'articolo)](/docs/erp-home/registers/items/create-new-item) se ha activado el indicador *in esaurimento*.
 
-**Attiva il controllo qualità**: work in progress.
+**Activar control de calidad (Attiva il controllo qualità)**: trabajo en progreso.
 
-**Gestione doppia unità misura**: solo se attivato, il sistema può gestire l'unità di misura alternativa nei documenti di conto lavoro.
+**gestione doppia unità misura**: solo si está activado, el sistema puede gestionar la unidad de medida alternativa en los documentos de cuenta trabajo.
 
-**Proposta automatica UM alternativa**: se attivato, fa in modo che venga proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato.
+**Propuesta automática de UM alternativa (Proposta automatica UM alternativa)**: si está activado, asegura que se proponga la cantidad relativa a la unidad de medida alternativa, siempre que en la ficha del artículo se haya establecido una por defecto. Este indicador solo se puede activar si el indicador anterior ha sido activado.
 
-**Considera magazzini in base al tipo DDT rientro**: permette di scegliere se considerare i magazzini in base al tipo di DDT di rientro o al tipo di DDT consegna, invece che utilizzare le impostazioni inserite nelle apposite combo delle voci *Consegne materiali a terzisti* e *Rientro prodotto*.
+**considera magazzini in base al tipo ddt rientro**: permite elegir si considerar los almacenes según el tipo del DDT de retorno o del tipo de DDT de entrega, en lugar de utilizar las configuraciones establecidas en las respectivas comboboxes de las opciones *Entregas de materiales a subcontratistas (Consegne materiali a terzisti)* y *Retorno de producto (Rientro prodotto)*.
 
-## Magazzini
+## Almacenes (Magazzini)
 
-#### Consegne materiali a terzisti W.i.P.  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo scarico dei materiali destinati ai terzisti nel caso in cui sia utilizzata la gestione del magazzino W.I.P., attivabile nei [Parametri ordini produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro). In questo caso, tutti gli ordini di conto lavoro creati dal *Rilascio ordini pianificati* o direttamente dall'ordine di produzione useranno questo magazzino e casuale per lo scarico dei materiali inseriti nel tab [Materiali da Consegnare](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) dell'ordine di conto lavoro.    
+#### Entregas de materiales a subcontratistas W.I.P. (Consegne materiali a terzisti W.i.P.)  
+En esta sección se configuran el almacén y la causa correspondiente que deben ser considerados para la descarga de los materiales destinados a los subcontratistas en caso de que se utilice la gestión del almacén W.I.P., que se puede activar en los [Parámetros de pedidos de producción (Parametri ordini produzione)](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro). En este caso, todos los pedidos de cuenta trabajo creados desde el *rilascio ordini pianificati* o directamente desde el pedido de producción utilizarán este almacén y causal para la descarga de los materiales que se ingresan en la pestaña [Materiales a Entregar (Materiali da Consegnare)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) del pedido de cuenta trabajo.    
 
-#### Consegne materiali a terzisti  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo scarico dei materiali destinati ai terzisti. Quindi il magazzino impostato è il magazzino da cui saranno scaricati i materiali inseriti nel tab [Materiali da Consegnare](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) dell'ordine di conto lavoro. Questi saranno impiegati solo negli ordini di conto lavoro creati manualemente nel caso in cui sia attiva la gestione del magazzino W.I.P., mentre se la gestione del magazzino W.I.P. non è attiva verranno considerate in tutti i casi.     
+#### Entregas de materiales a subcontratistas (Consegne materiali a terzisti)  
+En esta sección se configuran el almacén y la causal correspondiente que deben ser considerados para la descarga de los materiales destinados a los subcontratistas. Por lo tanto, el almacén configurado es el almacén desde el cual se descargarán los materiales ingresados en la pestaña [Materiales a Entregar (Materiali da Consegnare)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) del pedido de cuenta trabajo. Estos serán utilizados solo en los pedidos de cuenta trabajo creados manualmente en caso de que la gestión del almacén W.I.P. esté activa, mientras que si la gestión del almacén W.I.P. no está activa, se considerarán en todos los casos.     
 
-#### Consumo materiali impiegati   
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo scarico dei materiali che i terzisti hanno utilizzato. Quindi il magazzino impostato è il magazzino da cui saranno scaricati i materiali inseriti nel tab Materiali dell'ordine di Rientro di conto lavoro. Fare link quando verrà creato l'articolo.   
+#### Consumo de materiales utilizados (Consumo materiali impiegati)   
+En esta sección se configuran el almacén y la causal correspondiente que deben ser considerados para la descarga de los materiales que los subcontratistas han utilizado. Por lo tanto, el almacén configurado es el almacén desde el cual se descargarán los materiales ingresados en la pestaña Materiales del pedido de Retorno de cuenta trabajo. Se hará enlace cuando se cree el artículo.   
 
-#### Carichi materiali a terzisti   
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei materiali destinati ai terzisti. Quindi il magazzino impostato è il magazzino su cui saranno caricati i materiali inseriti nel tab Materiali da Consegnare dell'ordine di conto lavoro. Questi dati vengono ripresi dalla causale di contropartita inserita nella tabella delle causali in corrispondenza della causale che effettua lo scarico dei materiali destinati ai terzisti (cioè la causale impostata nell'apposita combo box della sezione *Consegne materiali a terzisti*).
+#### Cargas de materiales a subcontratistas (Carichi materiali a terzisti)   
+En esta sección se configuran el almacén y la causal correspondiente que deben ser considerados para la carga de los materiales destinados a los subcontratistas. Por lo tanto, el almacén configurado es el almacén sobre el cual se cargarán los materiales ingresados en la pestaña Materiales a Entregar del pedido de cuenta trabajo. Estos datos se toman de la causal de contrapartida ingresada en la tabla de causas en correspondencia de la causal que realiza la descarga de los materiales destinados a los subcontratistas (es decir, la causal configurada en la respectiva combobox de la sección *Entregas de materiales a subcontratistas*).
 
-#### Consegne materiali tra terzisti   
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo spostamento dei materiali da un terzista ad un altro.     
+#### Entregas de materiales entre subcontratistas (Consegne materiali tra terzisti)   
+En esta sección se configuran el almacén y la causal correspondiente que deben ser considerados para el movimiento de los materiales de un subcontratista a otro.     
 
-#### Rientro articolo W.I.P.  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei semilavorati che i terzisti hanno realizzato, questa verrà usata nel caso di tutte le fasi esterne che non siano l'ultima fase del ciclo di lavoro. Quindi il magazzino impostato è il magazzino su cui saranno caricati gli articoli inseriti nel tab Articoli dell'Ordine di Rientro di conto lavoro.
+#### Retorno de artículo W.I.P. (Rientro articolo W.I.P.)  
+En esta sección se configuran el almacén y la causal correspondiente que deben ser considerados para la carga de los semielaborados que los subcontratistas han realizado; esto se utilizará en el caso de todas las fases externas que no sean la última fase del ciclo de trabajo. Por lo tanto, el almacén configurado es el almacén sobre el cual se cargarán los artículos ingresados en la pestaña Artículos del Pedido de Retorno de cuenta trabajo.
 
-#### Rientro articolo finito  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei prodotti finiti / semilavorati che i terzisti hanno realizzato, questa verrà usata nel caso in cui la fase esterna sia l'ultima fase del ciclo di lavoro. Quindi il magazzino impostato è il magazzino su cui saranno caricati gli articoli inseriti nel tab Articoli dell'Ordine di Rientro di conto lavoro.
+#### Retorno de artículo terminado (Rientro articolo finito)  
+En esta sección se configuran el almacén y la causal correspondiente que deben ser considerados para la carga de los productos terminados / semielaborados que los subcontratistas han realizado; esto se utilizará en caso de que la fase externa sea la última fase del ciclo de trabajo. Por lo tanto, el almacén configurado es el almacén sobre el cual se cargarán los artículos ingresados en la pestaña Artículos del Pedido de Retorno de cuenta trabajo.
 
-#### Materiale reso  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei resi. Quindi il magazzino impostato è il magazzino su cui saranno caricati gli articoli inseriti nel tab Materiali Impiegati del Rientro di conto lavoro e a cui è stata associata una quantità resa.
+#### Materiales devueltos (Materiale reso)  
+En esta sección se configuran el almacén y la causal correspondiente que deben ser considerados para la carga de los retornos. Por lo tanto, el almacén configurado es el almacén sobre el cual se cargarán los artículos ingresados en la pestaña Materiales Utilizados del Retorno de cuenta trabajo y a los que se les ha asociado una cantidad devuelta.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

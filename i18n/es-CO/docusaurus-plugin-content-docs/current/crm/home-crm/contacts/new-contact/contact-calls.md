@@ -1,8 +1,8 @@
 ---
-title: Telefonate contatto
+title: Llamadas de contacto (Telefonate contatto)
 sidebar_position: 19
 ---
 
-Questa è una delle tab dei **Contatti CRM**.
+Esta es una de las pestañas de **contatti crm**.
 
-In questa tab viene visualizzata la lista delle telefonate effettuate al contatto.
+En esta pestaña se muestra la lista de las llamadas realizadas al contacto.

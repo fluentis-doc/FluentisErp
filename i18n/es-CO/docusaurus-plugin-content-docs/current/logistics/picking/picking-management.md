@@ -1,82 +1,82 @@
 ---
-title: Crea picking
+title: crea picking
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La gestione picking di Fluentis è progettata per ottimizzare il processo di prelievo degli articoli dal magazzino. Questa funzionalità consente agli utenti di generare liste di prelievo in modo efficiente, partendo dalle diverse tipologie di picking configurabili nel sistema. Attraverso la creazione di un picking, gli operatori possono selezionare gli articoli da evadere, definendo dettagli cruciali come la quantità e la ubicazione di prelievo.
+:::important ¿Para qué sirve? (A cosa serve)
+La gestión de picking de Fluentis está diseñada para optimizar el proceso de selección de artículos del almacén. Esta funcionalidad permite a los usuarios generar listas de picking de manera eficiente, comenzando desde los diferentes tipos de picking configurables en el sistema. A través de la creación de un picking, los operadores pueden seleccionar los artículos a despachar, definiendo detalles cruciales como la cantidad y la ubicación de picking.
 
-La procedura di gestione picking si compone di diverse interfacce, che permettono di visualizzare e filtrare gli ordini cliente, facilitando l'evasione totale o parziale degli ordini attraverso una gestione automatizzata delle informazioni relative agli articoli. Inoltre, il sistema automatizza il numero di identificazione del picking, basandosi sui parametri preconfigurati, garantendo così tracciabilità e ordine nelle operazioni.
+El procedimiento de gestión de picking consta de diferentes interfaces que permiten visualizar y filtrar los pedidos de clientes, facilitando el cumplimiento total o parcial de los pedidos a través de una gestión automatizada de la información relacionada con los artículos. Además, el sistema automatiza el número de identificación del picking, basándose en los parámetros preconfigurados, garantizando así la trazabilidad y el orden en las operaciones.
 
-Grazie a funzionalità come il monitoraggio dello stato di evasione delle righe, la registrazione dei lotti e serial number, e l'integrazione con documenti di trasporto come DDT e fatture, la gestione picking di Fluentis offre un'esperienza operativa completa e flessibile. Ciò consente alle aziende di migliorare l'efficienza logistica, ridurre gli errori durante il prelievo e garantire una migliore soddisfazione del cliente.
+Gracias a funcionalidades como el monitoreo del estado de cumplimiento de las líneas, el registro de lotes y números de serie, y la integración con documentos de transporte como DDT y facturas, la gestión de picking de Fluentis ofrece una experiencia operativa completa y flexible. Esto permite a las empresas mejorar la eficiencia logística, reducir errores durante el picking y garantizar una mejor satisfacción del cliente.
 :::
 
-La form si apre tramite:  
- -  il percorso **Logistica > Picking > Crea picking** 
+La forma se abre a través de:  
+ -  la ruta **Logística > Picking > crea picking** 
 
-oppure tramite 
+o bien a través de 
 
- - il pulsante **Nuovo** che si trova nella form  [Ricerca picking](/docs/logistics/picking/search-picking).
+ - el botón **Nuevo** que se encuentra en la forma [Búsqueda de picking](/docs/logistics/picking/search-picking).
 
-## 1. Dati obbligatori
+## 1. Datos obligatorios
 
-**Tipo picking**: predefinito in  *Configurazione > Tabelle >Logistica > Tipi picking*. Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il numero picking in base alla data inserimento e all'ultimo numero inserito;  
+**Tipo de picking**:  predefinido en *Configuración > Tablas > Logística > Tipos de picking*. Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el número de picking en base a la fecha de ingreso y al último número ingresado;  
 
-**Conto**: rappresenta il cliente/fornitore di riferimento (non è obbligatorio);  
+**Cuenta**: representa al cliente/proveedor de referencia (no es obligatorio);  
 
-**Numero**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
+**Número**: se propone automáticamente en función del tipo, pero se puede modificar manualmente siempre respetando la regla de progresión entre la fecha y el número;  
 
-**Data/Ora**: vengono proposte automaticamente la data e ora correnti, ma possono essere modificate manualmente sempre rispettando la regola di progressione tra data e numero.
+**Fecha/Hora**: se proponen automáticamente la fecha y hora actuales, pero pueden ser modificadas manualmente siempre cumpliendo con la regla de progresión entre la fecha y el número.
 
-**Stato**: rappresenta lo stato del documento (che può essere *Terminato*, *Da verificare* o *Sospeso*).
+**Estado**: representa el estado del documento (que puede ser *Terminado*, *Por verificar* o *Suspendido*).
 
-**Stato evasione**: può assumere i seguenti valori: *Non evaso*, *Evaso*, *Parzialmente evaso* o *Forzatamente evaso*; questo stato si riferisce allo stato di evasione delle singole righe, quindi ad esempio, se tramite la gestione spunta viene evasa anche una singola riga lo **Stato evasione** passerà da *Non evaso* a *Parzialmente evaso*.    
+**Estado de cumplimiento**: puede asumir los siguientes valores: *No cumplido*, *Cumplido*, *Parcialmente cumplido* o *Forzado a cumplir*; este estado se refiere al estado de cumplimiento de las líneas individuales, por lo que, por ejemplo, si a través de la gestión de selección se cumple también una sola línea, el **Estado de cumplimiento** pasará de *No cumplido* a *Parcialmente cumplido*.    
 
 :::note Nota
-Da notare che la colonna *Documento* presente in [Ricerca picking](/docs/logistics/picking/search-picking), si riferisce allo stato del picking e non a quello delle righe, quindi passerà in stato evaso solo quando sarà stato creato il DDT o la fattura.
+Cabe señalar que la columna *Documento* presente en [Búsqueda de picking](/docs/logistics/picking/search-picking), se refiere al estado del picking y no al de las líneas, por lo que solo pasará a estado cumplido cuando se haya creado el DDT o la factura.
 :::
 
-#### Pulsante specifico
+#### Botón específico
 
-> **Evasione da ordine**: permette di inserire gli articoli all'interno del picking evadendo un ordine cliente. Premendo il pulsante si aprirà una maschera dove è possibile filtrare gli ordini cliente relativi al cliente in questione. E' quindi possibile evadere totalmente o parzialmente un intero ordine o una riga.
+> **Cumplimiento por orden**: permite ingresar los artículos dentro del picking cumpliendo un pedido de cliente. Al presionar el botón, se abrirá una máscara donde es posible filtrar los pedidos de los clientes relacionados con el cliente en cuestión. Así es posible cumplir total o parcialmente un pedido completo o una línea.
 
-## 2. Testata
+## 2. Cabecera
 
-#### Dati necessari per la movimentazione del magazzino  
+#### Datos necesarios para la movimentación del almace (movimentazione del magazzino)  
 
-**Data prelievo magazzino**: rappresenta la data in cui deve essere fatta la registrazione di magazzino;  
-**Utente**: rappresenta il codice utente di riferimento per il picking corrente. Per quanto riguarda i picking di trasferimento è necessario specificare il **Magazzino di partenza e di destinazione**: informazione utile per i picking di trasferimento;  
-**Ubicazione**: rappresenta l'ubicazione sulla quale caricare gli articoli;  
-**Cliente/fornitore**: rappresenta il conto per il quale effettuare il movimento a magazzino.
+**Fecha de picking de almacén**: representa la fecha en la que se debe hacer el registro de almacén;  
+**Usuario**: representa el código de usuario de referencia para el picking actual. En el caso de los pickings de transferencia, es necesario especificar el **Almacén de salida y de destino**: información útil para los pickings de transferencia;  
+**Ubicación**: representa el lugar donde cargar los artículos;  
+**Cliente/proveedor**: representa la cuenta para la que realizar el movimiento a almacén.
 
-## 3. Articoli
+## 3. Artículos
 
-Nella griglia di inserimento si vanno ad inserire gli articoli specificando **Classe**, **Codice articolo** e **Quantità di prelievo**. E' inoltre possibile inserire un'**Unità di misura alternativa** con la relativa quantità. Nel campo **Magazzino** si definisce il magazzino di movimentazione e nel campo **Causale** la relativa causale. E' inoltre possibile specificare l'**Ubicazione** dalla quale prelevare l'articolo inserito.
+En la cuadrícula de ingreso se deben ingresar los artículos especificando **Clase**, **Código de artículo** y **Cantidad de picking**. También es posible ingresar una **Unidad de medida alternativa** con la cantidad correspondiente. En el campo **Almacén** se define el almacén de movimentación y en el campo **Causa** la causa correspondiente. Además, es posible especificar la **Ubicación** desde la cual se recogerá el artículo ingresado.
 
-### Lotti
+### Lotes
 
-Il tab, attivo solo se l'articolo selezionato nella griglia è gestito a lotti, permette l'inserimento del numero lotto e della relativa quantità.
+La pestaña, activa solo si el artículo seleccionado en la cuadrícula se gestiona por lotes, permite la entrada del número de lote y la cantidad correspondiente.
 
-La sezione Numeri di serie, attivo solo se l'articolo selezionato nella griglia è gestito a serial number, permette l'inserimento del numero di serie da attribuire all'articolo in questione.
+La sección Números de serie, activa solo si el artículo seleccionado en la cuadrícula se gestiona por número de serie, permite la entrada del número de serie que se asignará al artículo en cuestión.
 
-### Extra Data Articolo
+### Datos adicionales de artículo
 
-Permette di inserire e visualizzare gli *Extra data* relativi alla singola riga.           
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+Permite ingresar y visualizar los *Datos adicionales* relacionados con la línea individual.           
+Para una descripción más detallada sobre los datos adicionales, se remite al artículo [Datos adicionales (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-### Ordini di produzione collegati
+### Órdenes de producción vinculadas
 
-Se l'articolo è agganciato ad un ordine di produzione, questo tab permette di vedere tutte le informazioni relative all'ordine stesso.
+Si el artículo está vinculado a una orden de producción, esta pestaña permite ver toda la información relacionada con la orden en sí.
 
-### Documenti allegati
+### Documentos adjuntos
 
-Permette di allegare e visualizzare i documenti relativi ai singoli articoli.  
+Permite adjuntar y visualizar los documentos relacionados con los artículos individuales.  
 
-### Spunta
+### Selección
 
-Questo tab permette di visualizzare le righe spuntate tramite la [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement) del WMS.    
-Nel caso in cui non venga utilizzato il **WMS**, è comunque possibile inserire nuove righe di articoli spuntati manualmente.
-La **Gestione spunta** serve a confermare le righe del picking realmente prelevate dall'operatore in magazzino; quindi, se in questa tabella è presente almeno una riga spuntata le procedure di creazione DDT e Fattura prenderanno in considerazione solo queste righe.         
-Nel caso in cui non fosse presente nemmeno una riga nella tabella **Gestione spunta**, allora le procedure di creazione DDT e Fattura prenderanno in considerazione tutte le righe presenti nel picking.
+Esta pestaña permite visualizar las líneas seleccionadas a través de la [Gestión de selección (Gestione spunta)](/docs/logistics/wms/sales/check-row-menagement) del WMS.    
+En caso de que no se utilice el **WMS**, también es posible ingresar nuevas líneas de artículos seleccionados manualmente. 
+La **Gestión de selección** sirve para confirmar las líneas del picking realmente recogidas por el operador en el almacén; por lo tanto, si en esta tabla hay al menos una línea seleccionada, los procedimientos de creación del DDT y la Factura solo tomarán en cuenta estas líneas.         
+Si no hay presente ni una línea en la tabla de **Gestión de selección**, entonces los procedimientos de creación del DDT y la Factura tomarán en cuenta todas las líneas presentes en el picking.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de las formas, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

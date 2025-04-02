@@ -3,9 +3,9 @@ title: Intra1 quater
 sidebar_position: 5
 ---
 
-La sezione 'quater' delle dichiarazioni Intrastat contiene i dati di dettaglio del periodo, relativi a cessione di servizi. 
+La sección 'quater' de las declaraciones Intrastat contiene los datos detallados del período, relativos a la cesión de servicios. 
 
-La sezione è compilata dalla procedura automaticamente riportando i dati dai** [ tipi fattura](/docs/configurations/tables/sales/invoices-type) ** con natura transazione 'S – servizi' 
+La sección es completada automáticamente por el procedimiento, trasladando los datos de los** [tipos de factura (tipi fattura)](/docs/configurations/tables/sales/invoices-type)** con naturaleza de transacción 'S – servicios'. 
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image01.png)
 
@@ -13,27 +13,21 @@ La sezione è compilata dalla procedura automaticamente riportando i dati dai** 
 
  
 
-oppure dalle registrazioni contabili (non generate da acquisti/vendite) sempre con righe di tipo 'IVA Servizio', 
+o bien de las registraciones contables (no generadas por compras/ventas) siempre con líneas de tipo 'IVA Servicio', 
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image03.png)
 
-ma ne è consentita la modifica e l'integrazione manuale.
+pero se permite la modificación y la integración manual.
 
-**NOTA**: la causale contabile relativa alla registrazione contabile deve avere il flag INTRASTAT attivo e la relativa tab Intrastat della registrazione deve essere compilata
+**NOTA**: la causal contable relativa a la registración contable debe tener el indicador INTRASTAT activo y la respectiva pestaña de Intrastat de la registración debe estar completada.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image04.png)
 
 
 
-| Funzione | Significato |
+| Función | Significado |
 | --- | --- |
-| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
-|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
-|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
-| Cancella | Pulsante per cancellare la riga di dettaglio selezionata. |
-
-
-
-
-
-
+| Guardar (Salva) | Botón a través del cual guardar la declaración. |
+|  [Creación automática (Creazione automatica)](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Botón que invoca el asistente de recuperación de datos del área de ventas. |
+|  [Creación desde registraciones (Creazione da registrazioni)](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Botón que invoca el asistente de recuperación de datos de las registraciones contables. |
+| Eliminar (Cancella) | Botón para eliminar la línea de detalle seleccionada. |

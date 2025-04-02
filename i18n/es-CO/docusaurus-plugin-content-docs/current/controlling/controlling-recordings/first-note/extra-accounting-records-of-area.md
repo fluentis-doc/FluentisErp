@@ -1,19 +1,19 @@
 ---
-title: Registrazioni extracontabili di area
+title: registrazioni extracontabili di area
 sidebar_position: 2
 ---
 
-Oltre alle registrazioni extracontabili associate alla ***Chiusura infrannuale*** del periodo in elaborazione, in ***FluentisERP*** abbiamo la possibilità di gestire ***Registrazioni extracontabili di area***.
+Además de los registros extracontables asociados al **chiusura infrannuale*** del período en procesamiento, en ***FluentisERP*** tenemos la posibilidad de gestionar **registrazioni extracontabili di area***.
 
-Queste registrazioni non sono più legate ad uno specifico consuntivo di periodo, ma sono registrazioni extracontabili associate ad un’area di analisi e, in quanto tali, sono utilizzate sempre nelle elaborazioni del Controlling nell'anno di registrazione, a seconda delle competenze economiche inserite nei movimenti analitici presenti al loro interno.
+Estos registros ya no están vinculados a un cierre específico del período, sino que son registros extracontables asociados a un área de análisis y, como tales, se utilizan siempre en los procesos de Control en el año de registro, dependiendo de las competencias económicas incluidas en los movimientos analíticos que contengan.
 
-:::tip Esempio
-Ad inizio anno andremo a valorizzare in questa sezione, ad esempio, tutte quelle registrazioni che la contabilità generale rileverà posticipatamente o a fine anno, come gli emolumenti del collegio sindacale o il compenso amministratore.
-Oppure possiamo rilevare mese per mese i dodicesimi di competenza dei costi legate alle retribuzioni dei dipendenti, in modo da ripartire le mensilità aggiuntive e i vari accantonamenti che hanno manifestazione monetarie in specifici periodi dell'anno.
+:::tip Ejemplo
+Al inicio del año, vamos a valorar en esta sección, por ejemplo, todos aquellos registros que la contabilidad general registrará posteriormente o a fin de año, como los emolumentos del colegio de auditores o la compensación del administrador.  
+O bien, podemos registrar mes a mes los duodécimos de competencia de los costos relacionados con las remuneraciones de los empleados, de manera que se distribuyan las mensualidades adicionales y las diversas provisiones que tienen manifestaciones monetarias en períodos específicos del año.
 :::
 
-Una volta indicata, nella form di ricerca, l'area di riferimento che vogliamo utilizzare potremo ricercare le registrazioni già effettuate, per modificarle o cancellarle, o magari duplicarle per creare i movimenti validi per il nuovo anno, piuttosto che utilizzare il pulsante 'Nuovo' per creare da zero una nuova registrazione extracontabile. La maschera della registrazione ricalca quella delle registrazioni di contabilità generale e utilizzano potenzialmente lo stesso set di causali.
+Una vez indicada, en el formulario de búsqueda, el área de referencia que queremos utilizar, podremos buscar los registros ya realizados, para modificarlos o eliminarlos, o quizás duplicarlos para crear los movimientos válidos para el nuevo año, en lugar de utilizar el botón 'Nuevo' para crear desde cero un nuevo registro extracontable. La interfaz del registro se asemeja a la de los registros de contabilidad general y potencialmente utiliza el mismo conjunto de causales.
 
 :::tip Nota
-Di queste registrazioni, però, ci interessa il dato inserito nella sezione di contabilità analitica, in quanto le righe di generale sono irrilevanti nelle elaborazioni del controlling: a seconda delle abitudini e delle preferenze, possiamo magari codificare una causale ad hoc che presenti direttamente il tab dell'analitica e che ci consenta di salvare un movimento a zero di generale predefinito, per poter saltare la valorizzazione di questa sezione.
+De estos registros, sin embargo, nos interesa el dato ingresado en la sección de contabilidad analítica, ya que las líneas de general son irrelevantes en los procesos de controlling: dependiendo de las costumbres y preferencias, podemos tal vez codificar una causal ad hoc que presente directamente la pestaña de analítica y que nos permita guardar un movimiento a cero de general predeterminado, para poder omitir la valoración de esta sección.
 :::

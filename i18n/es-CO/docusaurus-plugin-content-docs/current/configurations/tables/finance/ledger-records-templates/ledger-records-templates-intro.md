@@ -1,21 +1,20 @@
 ---
-title: Causali contab. VIDEO TUTORIALS
+title: Causales contables. VIDEO TUTORIALS (Causali contab. VIDEO TUTORIALS)
 sidebar_position: 1
 ---
 
-La configurazione delle contabili contabili rappresenta il cuore logico  del modulo relativo alle registrazioni contabili e permette di gestire e sfruttare tutta l'automazione connessa.
+La configuración de las causales contables representa el corazón lógico del módulo relacionado con los registros contables y permite gestionar y aprovechar toda la automatización asociada.  
 
-La visione di questi video è raccomandata a tutti quelli che vogliono entrare nel merito dei settaggi specifici.
+La visualización de estos videos es recomendada para todos los que quieran profundizar en la configuración específica.  
 
-Mentre risulta del tutto necessaria per chi intende configurare un ambiente operativo su misura.
+Mientras que es completamente necesaria para quienes desean configurar un entorno operativo a medida.  
 
-Attraverso una corretta configurazione e applicazione di queste procedure, l'utente ERP può ottimizzare il flusso di contabilizzazione automatica, riducendo gli errori manuali e migliorando la tracciabilità delle operazioni contabili.
+A través de una correcta configuración y aplicación de estos procedimientos, el usuario de ERP puede optimizar el flujo de contabilización automática, reduciendo los errores manuales y mejorando la trazabilidad de las operaciones contables.  
 
+:::important Ver También (Vedi Anche)  
+[**VIDEO TUTORIALS SOBRE LAS CAUSALES CONTABLES (VIDEO TUTORIALS SULLE CAUSALI CONTABILI)**](/docs/video/finance/intro)  
+:::  
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
-:::
-
-:::tip[Maggiori informazioni]
-Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+:::tip[Más información (Maggiori informazioni)]  
+Consulte la página sobre el [**Inserción de una nueva causal (Inserimento di una nuova causale)**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)  
 :::

@@ -1,14 +1,14 @@
 ---
-title: Attività
-sidebar_label: Attività
+title: attività
+sidebar_label: attività (Attività)
 sidebar_position: 0
 ---
 
-Le **Attività** sono delle azioni atomiche che possono essere configurate per poter essere eseguite e concatenate in altri contesti.  
-L'utente crea un'attività quanto un'azione necessita di essere applicata in modo ripetitivo in diversi scenari d'azione.  
-Tramite le attività è possibile definire degli script che svolgono una determinata funzione in modo che poi possano essere riutilizzati all'interno di un Task.  
+Las **attività** son acciones atómicas que pueden ser configuradas para ser ejecutadas y encadenadas en otros contextos.  
+El usuario crea una actividad cuando una acción necesita aplicarse de manera repetitiva en diferentes escenarios de acción.  
+A través de las actividades es posible definir scripts que realizan una función determinada para que luego puedan ser reutilizados dentro de una Tarea (Task).  
 
-Infine, le Attività sono organizzate in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo.  
-Per creare un nuovo gruppo di Attività vedere l'articolo [creazioni gruppi](../../group-creation).
+Finalmente, las attività están organizadas en grupos (como por ejemplo *utilità*, *esempi*, *demo*) según el contexto de uso.  
+Para crear un nuevo grupo de attività, consulte el artículo [creación de grupos (creazioni gruppi)](../../group-creation).
 
-La form **Attività** si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Attività**.
+El formulario **attività** se abre desde el menú complementar **strumenti** > **Fluentis Supervisor** > **attività**.

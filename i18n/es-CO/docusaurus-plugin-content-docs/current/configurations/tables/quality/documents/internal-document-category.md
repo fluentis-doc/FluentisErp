@@ -1,111 +1,111 @@
 ---
-title: Categorie Documenti di origine interna
+title: categorie documenti di origine interna
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Categorie Documenti di origine interna**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Documentos > categorie documenti di origine interna**.
 
-:::important A cosa serve
-I dati presenti in questa tabella sono utilizzati per catalogare le diverse tipologie dei Documenti di origine interna.   
-I dati inseriti in queste griglie verranno riportati nella creazione dei Documenti di origine interna.   
-Un esempio di utilizzo lo troviamo nella gestione **Documenti di origine interna**.
+:::important ¿Para qué sirve? (A cosa serve)
+Los datos presentes en esta tabla se utilizan para catalogar las diferentes tipologías de los Documentos de Origen Interno.  
+Los datos ingresados en estas tablas se reflejarán en la creación de los Documentos de Origen Interno.  
+Un ejemplo de uso lo encontramos en la gestión de **Documentos de Origen Interno**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Categorie Documenti di origine interna**
+**Búsqueda de categorie documenti di origine interna**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo hay que hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Categorie Documenti di origine interna**
+**Inserción de categorie documenti di origine interna**
 
-Per poter inserire nuovi *Categorie Documenti di origine interna* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *categorie documenti di origine interna* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.   
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **Código** y la **Descripción**.
 
-**Duplica Categorie Documenti di origine interna**
+**Duplicar categorie documenti di origine interna**
 
-Per poter duplicare una *Categoria Documento* esistente in una nuova *Categoria Documento* è necessario cliccare nella griglia sulla *Categoria Documento* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** e **Descrizione** della nuova *Categoria Documento* (dati entrambe obbligatori).   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+Para poder duplicar una *Categoría de Documento* existente en una nueva *Categoría de Documento*, es necesario hacer clic en la cuadrícula en la *Categoría de Documento* de la que se desea duplicar y presionar el botón **Duplicar**.   
+Se mostrará un pedido de **Código** y **Descripción** de la nueva *Categoría de Documento* (ambos datos son obligatorios).   
+Luego presione el botón **OK** o el botón **Cancelar** si desea continuar con la actividad de duplicación o no.
 
-## Categorie Documenti di origine interna
+## categorie documenti di origine interna
 
-E' l'elenco dove vengono inserite le informazioni principali della *Categoria Documento*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Categoria**: è il codice della *Categoria Documento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria Documento*.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi delle *Categorie Documento*.   
-> **Documento obbligatorio**: indica se è obbligatorio allegare il documento.   
-> **Codifica automatica**: indica se si desidera abilitare la codifica automatica del documento; la codifica sarà composta da: *Codice categoria* più un progressivo di un numero di cifre indicato in *Numero di cifre progressive* a partire nal numero indicato in *Progressivo iniziale*.   
-> **Numero di cifre progressive**: abilitato se richiesta la *Codifica automatica*, è il numero di cifre del progressivo che comporranno il codice del documento.   
-> **Progressivo iniziale**: abilitato se richiesta la *Codifica automatica* è il numero di progressivo che verrà proposto all'inserimento del primo documento.   
-> **Funzione di verifica/approvazione**: è la *Funzione aziendale* responsabile della verifica/approvazione del documento.   
-> **Funzione di redazione/emissione**: è la *Funzione aziendale* responsabile della redazione/emissione del documento.   
-> **Tipo documento**: è il codice del *Tipo documento* proposto per la codifica del documento allegato per la codifica nel *Documentale*.   
-> **Descrizione tipo documento**: è la descrizione del *Tipo documento* proposto per la codifica del documento allegato per la codifica nel *Documentale*.   
-> **Archivio**: in questo campo viene assegnato il magazzino dove trovare la categoria specifica.   
-> **Ubicazione**: indica la posizione fisica abituale della *Categoria*; è possibile scegliere solo le *Ubicazioni* facenti parte dell'*Archivio* selezionato.   
-> **Ubicazione descrittiva**: se la posizione non è codificata, è possibile inserirla manualmente in questo campo libero.   
-> **Periodo di conservazione**: contiene un periodo di conservazione da inserire manualmente.   
-> **Funzione responsabile**: contiene la *Funzione aziendale* responsabile della *Categoria*.   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan las principales informaciones de la *Categoría de Documento*.  
+La lista se compone de la siguiente información:   
+> **Categoría**: es el código de la *Categoría de Documento*.   
+> **Descripción de categoría**: es la descripción de la *Categoría de Documento*.   
+> **Secuencia**: es la secuencia de visualización en las listas de las *Categorías de Documento*.   
+> **Documento obligatorio**: indica si es obligatorio adjuntar el documento.   
+> **Codificación automática**: indica si se desea habilitar la codificación automática del documento; la codificación estará compuesta por: *Código de categoría* más un progresivo de un número de cifras indicado en *Número de cifras progresivas* a partir del número indicado en *Progresivo inicial*.   
+> **Número de cifras progresivas**: habilitado si se solicita la *Codificación automática*, es el número de cifras del progresivo que compondrán el código del documento.   
+> **Progresivo inicial**: habilitado si se solicita la *Codificación automática*, es el número de progresivo que se propondrá al ingreso del primer documento.   
+> **Función de verificación/aprobación**: es la *Función empresarial* responsable de la verificación/aprobación del documento.   
+> **Función de redacción/emisión**: es la *Función empresarial* responsable de la redacción/emisión del documento.   
+> **Tipo de documento**: es el código del *Tipo de documento* propuesto para la codificación del documento adjunto para la codificación en el *Documental*.   
+> **Descripción del tipo de documento**: es la descripción del *Tipo de documento* propuesto para la codificación del documento adjunto para la codificación en el *Documental*.   
+> **Archivo**: en este campo se asigna el almacén donde encontrar la categoría específica.   
+> **Ubicación**: indica la posición física habitual de la *Categoría*; se pueden elegir solo las *Ubicaciones* que pertenecen al *Archivo* seleccionado.   
+> **Ubicación descriptiva**: si la posición no está codificada, se puede ingresarla manualmente en este campo libre.   
+> **Período de conservación**: contiene un período de conservación que se debe ingresar manualmente.   
+> **Función responsable**: contiene la *Función empresarial* responsable de la *Categoría*.   
+> **Notas**: anotaciones libres.
 
-### Lista di distribuzione
+### Lista de distribución
 
-In questo elenco è possibile associare: *Funzioni aziendali*, *Dipendenti*, *Clienti/Fornitori* e *Contatti* che abitualmente ricevono copia della *Categoria Documento* selezionata ed indicare le metodologie abituali di ricezione del documento.   
-L'elenco si compone delle seguenti informazioni:   
-> **Gruppo**   
->> **Codice**: è il codice del *Ruolo A.R.M.* destinatario.   
->> **Descrizione**: è la descrizione del *Ruolo A.R.M.* destinatario.   
+En esta lista es posible asociar: *Funciones empresariales*, *Empleados*, *Clientes/Proveedores* y *Contactos* que habitualmente reciben copia de la *Categoría de Documento* seleccionada e indicar los métodos habituales de recepción del documento.  
+La lista se compone de la siguiente información:  
+> **Grupo**   
+>> **Código**: es el código del *Rol A.R.M.* destinatario.   
+>> **Descripción**: es la descripción del *Rol A.R.M.* destinatario.   
 >
-> **Utente**   
->> **Codice**: è il codice dell'*Utente A.R.M.* destinatario.   
->> **Descrizione**: è la descrizione dell'*Utente A.R.M.* destinatario.   
+> **Usuario**   
+>> **Código**: es el código del *Usuario A.R.M.* destinatario.   
+>> **Descripción**: es la descripción del *Usuario A.R.M.* destinatario.   
 >
-> **Funzione aziendale**
->> **Codice**: è il codice della *Funzione aziendale* destinataria.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* destinataria.   
+> **Función empresarial**  
+>> **Código**: es el código de la *Función empresarial* destinataria.   
+>> **Descripción**: es la descripción de la *Función empresarial* destinataria.   
 >
-> **Dipendente**
->> **Codice**: è il codice del dipendente* destinatario.   
->> **Cognome**: è il cognome del dipendente* destinatario.   
->> **Nome**: è il nome del dipendente* destinatario.   
+> **Empleado**  
+>> **Código**: es el código del empleado* destinatario.   
+>> **Apellido**: es el apellido del empleado* destinatario.   
+>> **Nombre**: es el nombre del empleado* destinatario.   
 >
-> **Cliente/Fornitore**
->> **Descrizione**: è la ragione sociale del *Cliente/Fornitore* destinatario.   
+> **Cliente/Proveedor**  
+>> **Descripción**: es la razón social del *Cliente/Proveedor* destinatario.   
 >
-> **Contatto**
->> **Codice**: è il codice del *Contatto* destinatario.   
->> **Descrizione**: è la descrizione del *Contatto* destinatario.   
+> **Contacto**  
+>> **Código**: es el código del *Contacto* destinatario.   
+>> **Descripción**: es la descripción del *Contacto* destinatario.   
 >
-> **Altro destinatario**
->> **Descrizione**: è la libera descrizione di un destinatario non codificato.   
+> **Otro destinatario**  
+>> **Descripción**: es la libre descripción de un destinatario no codificado.   
 >
-> **Dati per la consegna**
->> **Cartacea**: indica che al momento della distribuzione (procedura interna alla gestione *Documenti di origine interna*) il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
->> **Metodo di consegna**: indica la metodologia di consegna abituale della *Categoria Documento*.   
->> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
->> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
->> **Note**: annotazioni libere.   
+> **Datos para la entrega**  
+>> **cartacea**: indica que en el momento de la distribución (procedimiento interno en la gestión de *Documentos de Origen Interno*) la persona desea recibir una copia *En papel* del documento o en adjunto por *Email*.   
+>> **Método de entrega**: indica el método habitual de entrega de la *Categoría de Documento*.   
+>> **Email**: indica un email de destino, si no está codificado en el registro del destinatario.   
+>> **Número de copias**: indica el número de copias en papel que el destinatario desea recibir.   
+>> **Notas**: anotaciones libres.   
 
-*Pulsanti specifici*:      
-**Nuovo destinatario**: inserisce una nuova riga in elenco.   
-**Cancella destinatario**: cancella la riga selezionata dall'elenco.   
+*Botones específicos*:      
+**Nuevo destinatario**: inserta una nueva fila en la lista.   
+**Eliminar destinatario**: elimina la fila seleccionada de la lista.   
 
-### Accesso consentito alle funzioni
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
-Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+### Acceso permitido a las funciones (Accesso consentito alle funzioni)
+En esta lista es posible ingresar las *Funciones empresariales* a las que se les otorguen derechos de acceso.   
+Si no se ingresan filas en esta tabla, entonces el acceso está permitido para todos.   
+La lista se compone de la siguiente información:  
+> **Función**: es el código de la *Función empresarial*.   
+> **Descripción de la función**: es la descripción de la *Función empresarial*.   
+> **Notas**: anotaciones libres.
 
-*Pulsanti specifici*:      
-**Nuova funzione di accesso**: inserisce una nuova riga in elenco.   
-**Cancella funzione di accesso**: cancella la riga selezionata dall'elenco.   
+*Botones específicos*:      
+**Nueva función de acceso**: inserta una nueva fila en la lista.   
+**Eliminar función de acceso**: elimina la fila seleccionada de la lista.   
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Documento di origine interna*.   
-Questi *Extra data* vengono ereditati nel *Documento interno* di quella determinata categoria.   
+### Datos extra (Extra data)
+Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Documento de Origen Interno*.   
+Estos *Datos Extra* se heredan en el *Documento interno* de esa categoría determinada.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

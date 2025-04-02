@@ -1,26 +1,25 @@
 ---
-title: Categoria di Attività
+title: categoria di attività
 sidebar_position: 1
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Categoria di Attività**.
-La tabella contiene le possibili categorie di attività. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+La tabla es accesible desde **Tablas > Gestión de Proyectos > categoria di attività (Tabelle > Gestione Progetti > Categoria di Attività)**.  
+La tabla contiene las posibles categorías de actividad. Está compuesta por una parte de filtro donde se puede buscar a través del código y la descripción, y por una cuadrícula donde se enumerarán todos los tipos (bastará con hacer clic en el botón de ![](/img/neutral/common/search.png) Búsqueda en la barra de ribbon para visualizarlos).
 
 ![](/img/it-it/configurations/tables/projects/task-category.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new-child.png) Nuovo gruppo o ![](/img/neutral/common/new-brother.png) Nuovo raggruppamento; in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Dentro de este formulario también es posible agregar nuevos tipos dentro de la cuadrícula, haciendo clic en el botón ![](/img/neutral/common/new-child.png) Nuevo grupo o ![](/img/neutral/common/new-brother.png) Nuevo agrupamiento; de esta manera se añadirá una nueva fila dentro de la cuadrícula donde se podrán definir la siguiente información:
 
-**Codice**: è il codice della categoria;
+**codice**: es el código de la categoría;  
 
-**Descrizione**: contiene la descrizione della categoria;
+**descrizione**: contiene la descripción de la categoría;  
 
-**Attività fatturabile**: questo flag rende l’attività fatturabile di default;
+**attività fatturabile**: este indicador hace que la actividad sea facturable por defecto;  
 
-**Attività a valore aggiunto**: questo flag marca l’attività come attività a valore aggiunto; questo flag è presente in tutti i documenti dell'area progetti, valorizzato dalla categoria attività e poi modificabile dall'utente. In caso di documenti generati da procedura e non inseriti ex-novo, il valore del flag verrà ereditato dal documento precedente da cui è stato generato il nuovo. Sarà quindi possibile fare analisi tra attività a valore aggiunto e non. 
+**attività a valore aggiunto**: este indicador marca la actividad como una actividad de valor agregado; este indicador está presente en todos los documentos del área de proyectos, valorado por la categoría de actividad y luego modificable por el usuario. En caso de documentos generados por procedimiento y no ingresados de nuevo, el valor del indicador se heredará del documento anterior del cual se generó el nuevo. Por lo tanto, será posible realizar análisis entre actividades de valor agregado y no.  
 
-**Codice Paghe**: codice che verrà utilizzato nella procedura di calcolo dati paghe, configurati nella tabella **Codici Paghe**.
+**Código de Nómina (Codice Paghe)**: código que será utilizado en el procedimiento de cálculo de datos de nómina, configurados en la tabla **codici paghe**.  
 
-**Centro aziendale**: contiene il centro di costo che servirà ad aggregare le attività, per dare al controllo di gestione un’informazione di tutte le attività svolte nel periodo.
+**centro aziendale**: contiene el centro de costo que servirá para agregar las actividades, para proporcionar a la gestión información sobre todas las actividades realizadas durante el período.  
 
-**Descrizione**: contiene la descrizione del centro aziendale.
-
+**descrizione**: contiene la descripción del centro empresarial.

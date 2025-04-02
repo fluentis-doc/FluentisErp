@@ -1,12 +1,11 @@
 ---
-title: Allega Documenti
+title: Adjuntar Documentos (Allega Documenti)
 sidebar_position: 7
 ---
 
-Questa funzionalità è presente in molte form e consente all'utente di allegare alla form eventuali documenti esterni (come per esempio file pdf, word, email).
+Esta funcionalidad está presente en muchos formularios y permite al usuario adjuntar a la forma cualquier documento externo (como, por ejemplo, archivos pdf, word, correos electrónicos).
 
-
-La funzionalità la troviamo nella ribbon bar delle form con l'icona:
+La funcionalidad se encuentra en la barra de herramientas del formulario con el ícono:
 
 <p align="center">
 
@@ -14,7 +13,7 @@ La funzionalità la troviamo nella ribbon bar delle form con l'icona:
 
 </p>
 
-Cliccando sulla **freccia** presente sull'icona si aprirà un menù che offre la possibilità di allegare un nuovo documento oppure collegare un documento ad un documento già allegato.
+Al hacer clic en la **flecha (freccia)** presente en el ícono, se abrirá un menú que ofrece la posibilidad de adjuntar un nuevo documento o vincular un documento a un documento ya adjunto.
 
 <p align="center">
 
@@ -22,7 +21,7 @@ Cliccando sulla **freccia** presente sull'icona si aprirà un menù che offre la
 
 </p>
 
-Scegliendo l'opzione **Nuovo documento**, si aprirà una nuova schermata all'interno della quale bisognerà andare a selezione, tramite le relative combo, il tipo di documento che si vuole allegare scegliendo tra le varie categorie proposte e il tipo di file che si vuole andare ad allegare.
+Al elegir la opción **nuovo documento**, se abrirá una nueva pantalla en la que se debe seleccionar, a través de las combinaciones correspondientes, el tipo de documento que se desea adjuntar eligiendo entre las diversas categorías propuestas y el tipo de archivo que se desea adjuntar.
 
 <p align="center">
 
@@ -30,15 +29,15 @@ Scegliendo l'opzione **Nuovo documento**, si aprirà una nuova schermata all'int
 
 </p>
 
-Queste due informazioni sono obbligatorie per poter procedere con l'allega file. I campi di data inserimento e ultima modifica, data inizio validità e utente vengono compilati automaticamente dal sistema. Si può decidere di andare ad inserire un riferimento, delle note, scegliere l'ordinamento dell'allegato rispetto ad altri allegati di quella form e collegare, se c'è, l'eventuale commessa di vendita.
+Esta información es obligatoria para poder proceder con el adjunto del archivo. Los campos de fecha de entrada, última modificación, fecha de inicio de validez y usuario se completan automáticamente por el sistema. Se puede decidir ingresar una referencia, notas, elegir el orden del adjunto en relación con otros archivos de ese formulario y vincular, si existe, el correspondiente pedido de venta.
 
-Una volta impostate le informazioni obbligatorie e le eventuali ulteriori informazioni, per allegare il file si può procedere in due modi:
+Una vez establecida la información obligatoria y cualquier información adicional, para adjuntar el archivo se puede proceder de dos maneras:
 
-- cliccando sul pulsante **Allega file**, verrà aperta la cartella contenente i documenti da allegare, presente nel desktop dell'utente in cui potrà andare ad selezionare il file da allegare. Una volta allegato il file, bisogna cliccare sul pulsante **Salva** per completare l'operazione.
+- al hacer clic en el botón **allega file**, se abrirá la carpeta que contiene los documentos a adjuntar, presente en el escritorio del usuario, donde podrá seleccionar el archivo a adjuntar. Una vez adjuntado el archivo, es necesario hacer clic en el botón **salva** para completar la operación.
 
-- cliccando invece sul pulsante **Acquisizione**, si potrà allegare il documento tramite scannerizzazione; per completare  l'operazione bisogna sempre cliccare sul pulsante **Salva**.
+- haciendo clic en el botón **acquisizione**, se podrá adjuntar el documento mediante escaneo; para completar la operación, siempre hay que hacer clic en el botón **salva**.
 
-Quando un file è allegato, cliccando di nuovo sulla freccia dell'icona Documenti, comparirà il nome del file.
+Cuando un archivo está adjunto, al hacer clic nuevamente en la flecha del ícono Documentos, aparecerá el nombre del archivo.
 
 <p align="center">
 
@@ -46,8 +45,8 @@ Quando un file è allegato, cliccando di nuovo sulla freccia dell'icona Document
 
 </p>
 
-Selezionando il file, si aprirà nuovamente la schermata dell'allega documenti e nella ribbon bar diventeranno possibile altre tre funzioni, quali:
+Al seleccionar el archivo, se abrirá nuevamente la pantalla de adjunto de documentos y en la barra de herramientas se habilitarán otras tres funciones, como:
 
-> **Apri allegato**: cliccando su questo pulsante sarà possibile aprire l'allegato e poi decidere se salvarlo, stamparlo o semplicemente visualizzarlo;  
-> **Salva allegato**: cliccando su questo pulsante si salverà direttamente l'allegato nel proprio computer, senza prima visualizzarlo;  
-> **Stampa allegato**: tramite questo pulsante si procederà direttamente alla stampa dell'allegato senza prima visualizzarlo. 
+> **apri allegato**: al hacer clic en este botón, será posible abrir el adjunto y luego decidir si guardarlo, imprimirlo o simplemente visualizarlo;  
+> **salva allegato**: al hacer clic en este botón, se guardará directamente el adjunto en su computadora, sin visualizarlo primero;  
+> **Imprimir adjunto (Stampa allegato)**: mediante este botón se procederá directamente a imprimir el adjunto sin visualizarlo primero.

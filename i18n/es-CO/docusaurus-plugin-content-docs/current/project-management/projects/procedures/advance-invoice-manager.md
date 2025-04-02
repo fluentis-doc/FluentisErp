@@ -1,7 +1,6 @@
 ---
-title: Gestione fatture di anticipo da progetto
+title: gestione fatture di anticipo da progetto
 sidebar_position: 4
 ---
 
-Con questa procedura è possibile associare o rimuovere l'associazione tra le fatture di anticipo inserite nei progetti ed i documenti dell'area progetti. 
-
+Con este procedimiento es posible asociar o eliminar la asociación entre las facturas anticipadas ingresadas en los proyectos y los documentos del área de proyectos.

@@ -1,26 +1,26 @@
 ---
-title: Crea Distinta di Anticipo
+title: crea distinta di anticipo
 sidebar_position: 3
 ---
 
-Accedendo alla form di inserimento della nuova distinta è necessario prima di tutto inserire il Tipo distinta tramite l'apposita combo box.
+Al acceder al formulario para ingresar la nueva lista, es necesario primero insertar el Tipo de lista a través del cuadro combinado correspondiente.
 
-Tutti i dati collegati al tipo distinta saranno caricati di conseguenza.
+Todos los datos relacionados con el tipo de lista se cargarán en consecuencia.
 
-L'anno è proposto pari all'anno in corso, il numeor è incrementato in automatico dal sistema tramite il numeratore.
+El año se sugiere igual al año en curso, el número se incrementa automáticamente por el sistema a través del numerador.
 
-E' possibile inserire nuove fatture, o nuove scadenze (a seconda della modalità collegata al tipo distinta) con i bottoni posti nella ribbon bar.
+Es posible ingresar nuevas facturas o nuevas fechas de vencimiento (dependiendo del modo relacionado con el tipo de lista) con los botones ubicados en la barra de herramientas.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image01.png)
 
-Verrà aperto un help che peermette di filtrare le fatture o scdenze da acquisire
+Se abrirá una ayuda que permite filtrar las facturas o fechas de vencimiento a adquirir.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image02.png)
 
-Dopo l'acquisizione della fattura o scadenza è possibile inserire manualmente sulla riga l'importo delle commissioni bancarie.
+Después de la adquisición de la factura o fecha de vencimiento, es posible ingresar manualmente en la línea el monto de las comisiones bancarias.
 
-Questo dato può essere automatizzato inserendolo nell'anagrafica della banca utilizzata per l'operazione.
+Este dato puede ser automatizado ingresándolo en el registro del banco utilizado para la operación.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image03.png)
 
-Per procedere a contabilizzare l'anticipo utilizzare l'apposita procedura Contabilizzazione Distinta anticipi.
+Para proceder a contabilizar el anticipo, utilizar el procedimiento correspondiente de Contabilización de la Lista de Anticipos (Contabilizzazione Distinta anticipi).

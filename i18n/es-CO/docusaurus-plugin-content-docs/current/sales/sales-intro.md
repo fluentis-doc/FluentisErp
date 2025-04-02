@@ -1,93 +1,92 @@
 ---
-title: VENDITE
+title: vendite
 sidebar_position: 1
 ---
 
-L’area **Vendite** di **Fluentis ERP** è progettata per garantire una gestione completa e ottimizzata delle attività commerciali, offrendo una struttura modulare e interconnessa che supporta l’intero processo di vendita, dalla creazione di offerte fino all’analisi dei margini. 
+El área de **vendite** de **Fluentis ERP** está diseñada para garantizar una gestión completa y optimizada de las actividades comerciales, ofreciendo una estructura modular e interconectada que apoya todo el proceso de venta, desde la creación de ofertas hasta el análisis de márgenes.
 
-## Configurazione preliminare dell'area
+## Configuración preliminar del área (Configurazione preliminare dell'area)
 
-Prima di utilizzare le funzionalità disponibili occorre gestire una serie di dati di base: essi sono suddivisi in due macro gruppi, [**Tabelle**](/docs/configurations/tables/sales/agent-category) e [**Parametri**](/docs/configurations/parameters/sales/general-overview).
+Antes de utilizar las funcionalidades disponibles, es necesario gestionar una serie de datos básicos: estos se dividen en dos grupos macro, [**tabelle**](/docs/configurations/tables/sales/agent-category) y [**parametri**](/docs/configurations/parameters/sales/general-overview).
 
-In alternativa è disponibile la procedura di [**Fast Start**](/docs/guide/fast-start) per la quale sarà necessario unicamente gestire un set minimo di dati quali le [**Anagrafiche**](/docs/erp-home/registers/registers-intro).
+Alternativamente, está disponible el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start) para el cual solo será necesario gestionar un conjunto mínimo de datos como los [**anagrafiche**](/docs/erp-home/registers/registers-intro).
 
-
-## Moduli Vendite
+## Módulos de Ventas (Moduli Vendite)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/offers/settings">Offerte</Link>
-        <p>Creazione, monitoraggio e aggiornamento delle proposte commerciali, integrandole direttamente con i processi aziendali.</p>
+###     <Link to="/docs/sales/offers/settings">Ofertas (Offerte)</Link>
+        <p>Creación, monitoreo y actualización de las propuestas comerciales, integrándolas directamente con los procesos empresariales.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/sales-orders/settings">Ordini</Link>
-        <p>Gestione e organizzazione del processo di acquisto di beni e servizi da parte dei clienti.</p>
+###     <Link to="/docs/sales/sales-orders/settings">Pedidos (Ordini)</Link>
+        <p>Gestión y organización del proceso de compra de bienes y servicios por parte de los clientes.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/sales/sales-delivery-notes/general-overview">DDT</Link>
-        <p>Tracciamento e documentazione della movimentazione delle merci in uscita.</p>
+        <p>Seguimiento y documentación de la movilización de mercancías en salida.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/sales-invoices/general-overview">Fatture</Link>
-        <p>Attestazione della transazione di vendita, specificando i beni o servizi forniti, i costi, l'IVA e le condizioni di pagamento.</p>
+###     <Link to="/docs/sales/sales-invoices/general-overview">Facturas (Fatture)</Link>
+        <p>Certificación de la transacción de venta, especificando los bienes o servicios proporcionados, los costos, el IVA y las condiciones de pago.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/sales/pos/general-overview">POS</Link>
-        <p>Gestione delle vendite direttamente nel punto cassa, con strumenti per la creazione e gestione di fatture, emissione di ricevute e aggiornamento automatico delle giacenze di magazzino.</p>
+        <p>Gestión de las ventas directamente en el punto de caja, con herramientas para la creación y gestión de facturas, emisión de recibos y actualización automática de los inventarios.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/agents/general-overview">Liquidazione agenti</Link>
-        <p>Gestione delle vendite direttamente nel punto cassa, con strumenti avanzati per la creazione e gestione di fatture, emissione di ricevute e aggiornamento automatico delle giacenze di magazzino..</p>
+###     <Link to="/docs/sales/agents/general-overview">Liquidación de agentes (Liquidazione agenti)</Link>
+        <p>Gestión de las ventas directamente en el punto de caja, con herramientas avanzadas para la creación y gestión de facturas, emisión de recibos y actualización automática de los inventarios.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/sales-price-list/general-overview">Listini di vendita</Link>
-        <p>Elenco dei prezzi dei prodotti o servizi offerti per facilitare il processo di vendita e includere eventuali sconti applicabili.</p>
+###     <Link to="/docs/sales/sales-price-list/general-overview">Listas de precios de venta (Listini di vendita)</Link>
+        <p>Lista de precios de productos o servicios ofrecidos para facilitar el proceso de venta e incluir posibles descuentos aplicables.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/price-control/definition">Gestione prezzi</Link>
-        <p>Gestione di sconti aggiuntivi basati sulla categoria commerciale di appartenenza del cliente o altre politiche di definizione sconti.</p>
+###     <Link to="/docs/sales/price-control/definition">Gestión de precios (Gestione prezzi)</Link>
+        <p>Gestión de descuentos adicionales basados en la categoría comercial de pertenencia del cliente u otras políticas de definición de descuentos.</p>
     </div>
 </div>
 
-## Integrazioni con altre aree
+## Integraciones con otras áreas (Integrazioni con altre aree)
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/pos/general-overview">Logistica</Link>
-        <p>Aggiornamento automatico delle **giacenze** in tempo reale durante la registrazione dei documenti di vendita.</p>
-        <p>Possibilità di generare **Picking** e **Piani di Carico** direttamente dagli ordini clienti, con ulteriore trasformazione in **DDT** e **Fatture** per una gestione ottimizzata delle spedizioni.</p>
+###     <Link to="/docs/sales/pos/general-overview">Logística</Link>
+        <p>Actualización automática de las **giacenze** en tiempo real durante el registro de documentos de venta.</p>
+        <p>Posibilidad de generar **Picking** y **Planes de Carga** directamente desde los pedidos de clientes, con una transformación adicional en **DDT** y **fatture** para una gestión optimizada de los envíos.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/agents/general-overview">Pianificazione e Produzione</Link>
-        <p>Supporto al **Demand Planning** tramite l’integrazione con i processi di vendita, particolarmente utile per modelli produttivi come: **Make to Order (MTO)**, **Engineering to Order (ETO)**, **Assembly to Order (ATO)**.</p> 
-        <p>Questa connessione garantisce un allineamento tra gli ordini di vendita e le attività produttive, migliorando la pianificazione delle risorse e l’efficienza operativa.</p>
+###     <Link to="/docs/sales/agents/general-overview">Planificación y Producción (Pianificazione e Produzione)</Link>
+        <p>Soporte al **Planificación de la Demanda (Demand Planning)** mediante la integración con los procesos de venta, particularmente útil para modelos productivos como: **Hacer por Pedido (Make to Order - MTO)**, **Ingeniería por Pedido (Engineering to Order - ETO)**, **Ensamblar por Pedido (Assembly to Order - ATO)**.</p> 
+        <p>Esta conexión garantiza un alineamiento entre los pedidos de venta y las actividades productivas, mejorando la planificación de recursos y la eficiencia operativa.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/sales-price-list/general-overview">Contabilità</Link>
-        <p>L’integrazione garantisce una gestione fluida e accurata delle transazioni amministrative derivanti dai documenti di vendita, riducendo errori e automatizzando la registrazione contabile.</p>
+###     <Link to="/docs/sales/sales-price-list/general-overview">Contabilidad</Link>
+        <p>La integración garantiza una gestión fluida y precisa de las transacciones administrativas derivadas de los documentos de venta, reduciendo errores y automatizando el registro contable.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/price-control/definition">Controllo di Gestione</Link>
-        <p>Fornisce strumenti di analisi avanzata per monitorare i **margini di profitto** relativi a ciascun processo di vendita.</p>
-        <p>Consente un’analisi dettagliata delle performance commerciali, favorendo l’ottimizzazione delle strategie di vendita e il miglioramento della redditività aziendale.</p>
+###     <Link to="/docs/sales/price-control/definition">Control de Gestión (Controllo di Gestione)</Link>
+        <p>Proporciona herramientas de análisis avanzado para monitorear los **márgenes de beneficio (margini di profitto)** relacionados con cada proceso de venta.</p>
+        <p>Permite un análisis detallado del rendimiento comercial, favoreciendo la optimización de las estrategias de venta y la mejora de la rentabilidad empresarial.</p>
     </div>
 </div>
 
-## Flusso operativo tipico dell'area
+## Flujo operativo típico del área (Flusso operativo tipico dell'area)
 
-1. **Acquisizione opportunità**: le offerte vengono gestite tramite il modulo CRM, raccogliendo informazioni su clienti esistenti e potenziali.  
-2. **Conversione offerte in ordini**: le offerte accettate vengono trasformate in ordini, centralizzando le informazioni per proseguire con il processo.  
-3. **Creazione automatica dei documenti**: a partire dagli ordini, vengono generati automaticamente i DDT e le Fatture di vendita.  
-4. **Vendite al dettaglio (POS)**: le operazioni al punto cassa sono gestite tramite il modulo POS, che registra le vendite e aggiorna la contabilità in tempo reale.  
-5. **Gestione prezzi**: aggiornamento e storicizzazione dei prezzi e sconti associati agli articoli codificati.  
-6. **Liquidazione provvigioni**: le provvigioni per gli agenti vengono calcolate e liquidate automaticamente, semplificando la gestione delle commissioni.
+1. **Adquisición de oportunidades (Acquisizione opportunità)**: las ofertas se gestionan a través del módulo CRM, recopilando información sobre clientes existentes y potenciales.  
+2. **Conversión de ofertas en pedidos (Conversione offerte in ordini)**: las ofertas aceptadas se transforman en pedidos, centralizando la información para continuar con el proceso.  
+3. **Creación automática de documentos (Creazione automatica dei documenti)**: a partir de los pedidos, se generan automáticamente los DDT y las Facturas de venta.  
+4. **pos**: las operaciones en el punto de caja se gestionan a través del módulo POS, que registra las ventas y actualiza la contabilidad en tiempo real.  
+5. **gestione prezzi**: actualización e historización de precios y descuentos asociados a los artículos codificados.  
+6. **Liquidación de comisiones (Liquidazione provvigioni)**: las comisiones para los agentes se calculan y liquidan automáticamente, simplificando la gestión de las comisiones.

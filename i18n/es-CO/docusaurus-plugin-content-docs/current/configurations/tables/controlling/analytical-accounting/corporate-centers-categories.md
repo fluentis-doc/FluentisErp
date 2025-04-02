@@ -1,32 +1,31 @@
 ---
-title: Categorie centri aziendali
+title: categorie centri aziendali
 sidebar_position: 3
 ---
 
-
-La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Categorie centri aziendali**
+El formulario se encuentra en la ruta: **Tablas > Control (Tabelle) > Contabilidad analítica (Controlling) > categorie centri aziendali (Categorie centri aziendali)**
 
 :::tip Nota
-La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+La tabla es de interés solo en las empresas con el indicador *controlling* activo.
 :::
 
-La seconda caratteristica *obbligatoria* dei centri di costo è quella della ***Categoria dei centri aziendali***: questa tabella rappresenta un' "etichetta" associata ai centri aziendali per poterli gestire in gruppi logici omogenei tra loro.
+La segunda característica *obligatoria* de los centros de costos es la ***Categoría de los centros empresariales***: esta tabla representa una "etiqueta" asociada a los centros empresariales para poder gestionarlos en grupos lógicos homogéneos entre sí.
 
-![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers-categories.png)
+![Imagen](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers-categories.png)
 
-La scelta delle categorie e lo "stile" con cui può essere popolata la presente tabella **può dipendere da molti fattori** e da varie **teorie** sul controllo di gestione.
-Pertanto possiamo citare <u>solo qualche esempio</u> per una migliore comprensione.
+La elección de las categorías y el "estilo" con el que puede ser poblada la presente tabla **puede depender de muchos factores** y de varias **teorías** sobre el control de gestión.  
+Por lo tanto, podemos citar <u>sólo algunos ejemplos</u> para una mejor comprensión.
 
-***1)	CENTRI PRODUTTIVI O DIRETTI:*** sono centri che intervengono direttamente nella lavorazione del prodotto e/o servizio quindi sono i centri di trasformazione veri e propri. Fondamentale è una corretta individuazione di questi centri in quanto se noi sbagliamo l’aggregazione dei costi di questi centri produttivi corriamo il rischio di ottenere delle tariffe parametriche degli indici di costo dei relativi centri tramite le quali andiamo poi a “costificare” i nostri prodotti o le nostre commesse e a determinarne la relativa marginalità che può fuorviare nell’analisi della redditività. Non possiamo ad esempio aggregare macchine o impianti di costo molto diverso in quanto andremo a creare delle medie ponderate. Allo stesso modo non possiamo mettere nello stesso centro macchine e impianti presidiate dall’uomo insieme a macchine e impianti parzialmente presidiate dalla manodopera poiché anche questo andrebbe a generare delle medie che poi ci porterebbero ad ottenere delle marginalità alterate;
+***1) CENTROS PRODUCTIVOS O DIRECTOS:*** son centros que intervienen directamente en la elaboración del producto y/o servicio, por lo que son los verdaderos centros de transformación. La correcta identificación de estos centros es fundamental, ya que si cometemos un error en la agregación de los costos de estos centros productivos corremos el riesgo de obtener tarifas paramétricas de los índices de costo de los centros correspondientes, a través de las cuales luego vamos a "costear" nuestros productos o nuestros pedidos y a determinar su respectiva marginalidad, lo que puede desviar el análisis de la rentabilidad. No podemos, por ejemplo, agregar máquinas o instalaciones con costos muy diferentes, ya que crearemos promedios ponderados. De igual manera, no podemos incluir en el mismo centro máquinas e instalaciones supervisadas por humanos junto a máquinas e instalaciones parcialmente supervisadas por mano de obra, ya que esto también generaría promedios que luego nos llevarían a obtener marginalidades alteradas;
 
-***2)	CENTRI INDIRETTI AUSILIARI:*** sono quelli necessari al funzionamento dei centri principali quindi raccolgono tutti quei costi che non sono imputabili in modo oggettivo ai centri produttivi ma sono indispensabili per il loro funzionamento. Avranno l'aggancio a ***Cost driver*** di ribaltamento sui centri produttivi/diretti, identificando un criterio adeguato di gestione;
+***2) CENTROS INDIRECTOS AUXILIARES:*** son aquellos necesarios para el funcionamiento de los centros principales, por lo que recogen todos aquellos costos que no son imputables de manera objetiva a los centros productivos, pero son indispensables para su funcionamiento. Tendrán conexión a ***Cost driver*** de redistribución sobre los centros productivos/directos, identificando un criterio adecuado de gestión;
 
-***3)	CENTRI INDIRETTI COMUNI:*** sono i centri di struttura detti anche centri funzionali ( ad es. commerciale, tecnico, qualità, ecc…);
+***3) CENTROS INDIRECTOS COMUNES:*** son los centros estructurales, también llamados centros funcionales (por ejemplo, comercial, técnico, calidad, etc.);
 
-***4)	CENTRI DI PROFITTO O DI REDDITO, O DI RISULTATO ECONOMICO:*** sono i centri tramite i quali possiamo mettere in relazione RICAVI e COSTI relativi a una tipologia di reddito, che potrebbe essere una famiglia di prodotti, oppure, un canale di vendita;
+***4) CENTROS DE BENEFICIO O DE INGRESO, O DE RESULTADO ECONÓMICO:*** son los centros a través de los cuales podemos relacionar INGRESOS y COSTOS relativos a un tipo de ingreso, que podría ser una familia de productos, o un canal de venta;
 
-***5)	CENTRI VIRTUALI/COMODO:*** ci servono per gestire tutto il modello, sono centri di appoggio ai driver di ribaltamento piuttosto che centri dove scaricare dati contabili da non utilizzare nel modello.
+***5) CENTROS VIRTUALES/CÓMODOS:*** nos sirven para gestionar todo el modelo, son centros de apoyo a los drivers de redistribución más que centros donde descargar datos contables que no se utilizarán en el modelo.
 
 :::tip Nota
-La categorizzazione dei centri, oltre che avere valenza teorica sulla struttura del modello di analisi, ha anche un risvolto operativo: quando si definiscono gli agganci dei centri a livello di piano dei conti, è possibile associare ad ogni sottoconto i vari centri che possono essere valorizzati oppure più velocemente si può indicare una categoria di centri, in modo da rendere visibili all’utente nel menù a tendina di selezione solo quelli facenti parte della categoria stessa.
+La categorización de los centros, además de tener validez teórica sobre la estructura del modelo de análisis, tiene también un aspecto operativo: al definir los enlaces de los centros a nivel de plan de cuentas, es posible asociar a cada subcuenta los varios centros que pueden ser valorados o, más rápidamente, se puede indicar una categoría de centros, de modo que solo sean visibles para el usuario en el menú desplegable de selección aquellos que pertenecen a esa categoría.
 :::

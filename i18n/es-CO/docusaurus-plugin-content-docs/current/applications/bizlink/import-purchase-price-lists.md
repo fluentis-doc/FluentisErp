@@ -1,813 +1,579 @@
 ---
-title: Importazione Listini Fornitore
+title: Importación de Listados de Proveedores (Importazione Listini Fornitore)
 sidebar_position: 3
 ---
 
+En este documento se explicará cómo **importar los listados de proveedores** dentro de **Fluentis** mediante el uso de una **hoja de cálculo**.
 
-In questo documento verrà spiegato come **Importare i listini fornitori** all'interno di **Fluentis** tramite l'utilizzo di un **foglio elettronico**.
+Esta importación es posible gracias al uso de los **BizLink Parameters**, ya que cada vez que se procesa una fila, se invocarán.
 
-Questa importazione è possibile, grazie all'utilizzo dei **BizLink Parameters** in quanto ogni qualvolta verrà processata una riga, essi saranno richiamati.
+### Cómo abrir la importación a través de una hoja de cálculo
 
+Haga clic en **strumenti** (normalmente se encuentra en el lado derecho de Fluentis).
 
-### Come aprire l'importazione tramite foglio elettronico
+Haga clic en la sección **BizLink**.
 
-Cliccare su **Strumenti** (di solito è situata nel lato destro di Fluentis).
+Haga clic en **Importación On Demand  >  Documentos de compra  >  Importación de Listados de Proveedores** como se muestra en la figura a continuación.
 
-Cliccare sulla sezione **BizLink**
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image03.png)  
 
-Cliccare su **Importazione On Demand  >  Documenti di acquisto  >  Importazione Listini Fornitori** come in figura sotto.
+### Sección de Datos
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image03.png) 
+En esta sección ingresaremos los datos que luego se guardarán permanentemente en la base de datos de Fluentis.
 
+Ahora en pantalla se mostrará la hoja de cálculo para la importación.
 
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image04.png)  
 
-### Sezione Data
+A partir de este punto se pueden tomar diversas rutas:
 
-In questa sezione andremo a inserire i dati che verranno poi resi permanenti tramite salvataggio nella base di dati di Fluentis.
+1. Importar la hoja de cálculo ya completada, **Archivo > Abrir** (File > Open).
+2. Agregar las diversas columnas copiando y pegando desde el listado guardado en nuestra PC.
+3. Guardar este archivo (**Archivo > Guardar** (File > Salva)) en nuestra PC, para luego agregar los diversos datos y reimportarlo posteriormente en Fluentis (ver punto 1). Esto podría ser muy útil para pasar la plantilla de la hoja de cálculo para la importación, a completar para los futuros listados que nos enviarán los proveedores. 
+4. Agregar manualmente los campos.
 
-Ora a video viene visualizzato il foglio elettronico per l'importazione.
+**ATENCIÓN**: si tenemos una hoja de cálculo guardada en nuestra PC, debe seguir el esquema de la hoja en la figura anterior. Es decir, el mismo orden de columnas, tipo de dato, etc. Estos últimos están explicados en detalle en el siguiente párrafo.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image04.png) 
+### Ingreso de campos
 
-Da questo punto si possono prendere varie strade:
+Al ingresar un campo, se deben tener en cuenta muchos aspectos como tipo, longitud máxima, requerido, etc…
 
- 1. Importare il foglio elettronico già compilato, **File > Open**.
- 2. Aggiungere le varie colonne facendo copia e incolla dal listino salvato nel nostro pc.
- 3. Salvare questo file (**File  > Salva**) nel nostro pc, per poi andare ad aggiungerci i vari dati e reimportarlo successivamente in Fluentis (vedi punto 1). Questo potrebbe essere molto utile per passare il template, del foglio elettronico per l'importazione, da compilare per i futuri listini che ci invieranno i fornitori. 
- 4. Aggiungere manualmente i campi.
+Indicaciones generales:
 
-**ATTENZIONE**: se abbiamo un foglio elettronico salvato sul nostro pc, esso deve seguire lo schema del foglio in figura sopra. Ossia lo stesso ordine di colonne, tipo di dato ecc. Quest'ultimi sono spiegati nel dettaglio al paragrafo successivo.
+- Si el campo está escrito en rojo, es un campo obligatorio.
+- Si el nombre de la celda está resaltado en verde, es una **sección**.
+- Si el nombre de la celda está resaltado en amarillo, es un **campo**.
+- Campo: indica si es obligatorio o no el ingreso.
+- Tipo: indica el tipo del campo.
+- Formato Excel: indica el formato de Excel recomendado para evitar ingresos incorrectos, ver última sección Consejos y advertencias útiles.
+- Longitud: indica si el campo tiene un límite de caracteres que debe respetarse.
+- Descripción: breve descripción del campo.
+*Ejemplo*: ejemplo real de qué se puede escribir en ese campo.
+- Mapeo tabla/columna: si está presente, indica la mapeo del respectivo campo en la base de datos; para más detalles, ver la última sección Consejos y advertencias útiles.
 
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image05.png)  
 
+**Datos del artículo del proveedor**:
 
-### Inserimento campi
+Código:
 
-Quando viene inserito un campo vanno tenute in considerazione molte cose tra cui tipo, lunghezza massima, richiesto ecc…
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 50 caracteres.
+- Descripción: código de referencia al artículo usado por el proveedor.
+*Ejemplo*: 02030508.
 
-Indicazioni generali:
+Descripción:
 
--        Se il campo è scritto in rosso è un campo obbligatorio
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: descripción proporcionada por el proveedor al artículo.
+*Ejemplo*: pelota de tenis sensible a la rotación, puede corresponder al código del artículo.
 
--        Se il nome della cella è evidenziato in verde è una **sezione**
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image06.png)  
 
--        Se il nome della cella è evidenziato in giallo è un **campo**
+**Datos del artículo**:
 
--        Campo: indica se è obbligatorio o meno l'inserimento
+Clase:
 
--        Tipo: indica il tipo del campo
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: /.
+- Descripción: código referido a la clase del artículo.
+*Ejemplo*: “1” corresponde a semilaborados, “IMB” corresponde a envases.
+- Mapeo tabla/columna: select MBDC_Clase from MB_Classi.
 
--        Formattazione Excel: indica la formattazione Excel consigliata per evitare inserimenti sbagliati, vedi ultima sezione Consigli e avvertenze utili
+Código interno:
 
--        Lunghezza: indica se il campo ha un limite di caratteri da rispettare
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 50 caracteres.
+- Descripción: si no se asigna, se toma el del proveedor. Este identificará el artículo, por lo que si se da un artículo y se modifica su código interno, se añadirá el nuevo artículo. Por otro lado, si se modifica la descripción de un artículo sin cambiar su código, se actualizará el artículo con ese código. (No actualizar la unidad de medida). 
+*Ejemplo*: 7710ct7tb.
 
--        Descrizione: breve descrizione del campo
+Descripción interna:
 
-*Esempio*: esempio reale di cosa poter scrivere in quel campo
-
--        Mapping table/colonna: se presente indica del rispettivo campo la mappatura nel database, per approfondire vedi ultima sezione  Consigli e avvertenze utili.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image05.png) 
-
-
-
-**Dati articolo fornitore**:
-
-Codice:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 50 caratteri
-
--        Descrizione: codice di riferimento all'articolo usato dal fornitore
-
-*Esempio*: 02030508
-
-Descrizione:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: descrizione data dal fornitore all'articolo
-
-*Esempio*: pallina da tennis sensibile alla rotazione, può corrispondere al codice articolo
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image06.png) 
-
-
-**Dati articolo**:
-
-Classe:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: codice riferito alla classe dell'articolo
-
-*Esempio*: “1” corrisponde a semilavorati, “IMB” corrisponde a imballi
-
--        Mapping table/colonna: select MBDC_Classe from MB_Classi
-
-Codice interno:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 50 caratteri
-
--        Descrizione: se non viene assegnato viene preso quello del fornitore. Esso identificherà l'articolo, quindi se dato un articolo ne modifico il codice interno di conseguenza Sarà aggiunto il nuovo articolo. Altrimenti se dato un articolo lascio invariato il codice articolo e ne modifico per esempio la descrizione, verrà eseguito un update dell'articolo con quel codice articolo. (Non fare l'update dell'unità di misura)
-
-*Esempio*: 7710ct7tb
-
-Descrizione interna:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: se non viene assegnato viene preso quello del fornitore
-
-*Esempio*: pallina da tennis sensibile alla rotazione
-
-Unità di misura:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 3 caratteri
-
--        Descrizione: codice riferito alla misura utilizzata per l'articolo in questione
-
-*Esempio*: “cm” corrisponde a centimetri, “UDC” corrisponde a bancale
-
--        Mapping table/colonna: select MBUM_Codice from MB_UnitaMisura
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: si no se asigna, se toma el del proveedor.
+*Ejemplo*: pelota de tenis sensible a la rotación.
+
+Unidad de medida:
+
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 3 caracteres.
+- Descripción: código relacionado a la medida utilizada para el artículo en cuestión.
+*Ejemplo*: “cm” corresponde a centímetros, “UDC” corresponde a palet.
+- Mapeo tabla/columna: select MBUM_Codice from MB_UnitaMisura.
 
 IVA:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 3 caracteres.
+- Descripción: código relacionado al IVA aplicado al artículo en cuestión.
+*Ejemplo*: “22” corresponde al 22% de IVA, “944” Exento art. 40 c. 4 bis DL 331.
+- Mapeo tabla/columna: select MBIV_Code from MB_iva.
 
--        Tipo: stringa
+Categoría Merc:
 
--        Formattazione Excel: testo
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 3 caracteres.
+- Descripción: código relacionado a la categoría mercantil del artículo en cuestión.
+*Ejemplo*: “206” corresponde a adhesivos, “211” corresponde a materias primas.
+- Mapeo tabla/columna: select MBCM_Codice from MB_CatMerceologica.
 
--        Lunghezza massima: 3 caratteri
+Factura Acq:
 
--        Descrizione: codice riferito alla misura utilizzata per l'articolo in questione
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 10 caracteres.
+- Descripción: código relacionado al tipo de factura emitida del artículo en cuestión.
+*Ejemplo*: “4” corresponde a compra de semilaborados, “1” corresponde a materias primas.
+- Mapeo tabla/columna: select MBFA_TipoFatt from mb_TipoFattAcq.
 
-*Esempio*: “22” corrisponde al 22% di iva, “944” Esente art. 40 c. 4 bis DL 331
+Código de barras:
 
--        Mapping table/colonna: select MBIV_Code from MB_iva
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: /.
+- Descripción: código de barras del artículo en cuestión.
+*Ejemplo*: ABC-1234.
 
-Cat Merc:
+Tipo de lote:
 
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 3 caratteri
-
--        Descrizione: codice riferito alla categoria merce dell'articolo in questione
-
-*Esempio*: “206” corrisponde a collanti, “211” corrisponde a materie prime
-
--        Mapping table/colonna: select MBCM_Codice from MB_CatMerceologica
-
-Fatt acq:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 10 caratteri
-
--        Descrizione: codice riferito al tipo di fattura emessa dell'articolo in questione
-
-*Esempio*: “4” corrisponde ad acquisto semilavorati, “1” corrisponde a materie prime
-
--        Mapping table/colonna: select MBFA_TipoFatt from mb_TipoFattAcq
-
-Barcode:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: codice a barre dell'articolo in questione
-
-*Esempio*: ABC-1234
-
-Tipo lotto:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 2 caratteri
-
--        Descrizione: tipo lotto di cui fa parte l'articolo
-
-*Esempio*: “4” corrisponde ad acquisto semilavorati, “1” corrisponde a materie prime
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 2 caracteres.
+- Descripción: tipo de lote del que forma parte el artículo.
+*Ejemplo*: “4” corresponde a compra de semilaborados, “1” corresponde a materias primas.
 
 Nomenclatura:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 50 caracteres.
+- Descripción: nomenclatura, clasificación del artículo.
+*Ejemplo*: “32049000” corresponde a colorantes.
+- Mapeo tabla/columna: select INCN_CodNomencl from IN_CodNomenc.
 
--        Tipo: stringa
+Código del productor:
+
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 100 caracteres.
+- Descripción: código del productor del artículo.
+*Ejemplo*: art0102032019.
 
--        Formattazione Excel: testo
+Código comercial:
 
--        Lunghezza massima: 50 caratteri
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: 100 caracteres.
+- Descripción: código de la categoría comercial.
+*Ejemplo*: “P” corresponde a privado.
 
--        Descrizione: nomenclatura, classificazione articolo
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image07.png)  
 
-*Esempio*: “32049000” corrisponde a coloranti
+**Datos del listado**:
 
--        Mapping table/colonna: select INCN_CodNomencl from IN_CodNomenc
+Precio:
 
-Codice produttore:
+- Campo: obligatorio.
+- Tipo: decimal.
+- Formato Excel: moneda, símbolo ninguno.
+- Longitud máxima: /.
+- Descripción: precio en lista del artículo.
+*Ejemplo*: 10.99, 123.45.
 
--        Campo: non obbligatorio
+UM Precio:
 
--        Tipo: stringa
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: /.
+- Descripción: se utiliza para definir el precio respecto a la cantidad (ej. precio por kilo, precio por metro cuadrado).
+*Ejemplo*: “kg” corresponde a kilogramos.
+- Mapeo tabla/columna: select MBUM_Codice from MB_UnitaMisura.
 
--        Formattazione Excel: testo
+**Cantidad**:
 
--        Lunghezza massima: 100 caratteri
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: cantidad del artículo a la que se refiere el precio anterior.
+*Ejemplo*: 500.
 
--        Descrizione: codice del produttore dell'articolo
+**Valor agregado**:
 
-*Esempio*: art0102032019
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: valor adicional que se puede utilizar en la creación de precios de venta a partir de los precios de compra. Por ejemplo, si hay gastos de transporte (que debemos pagar al proveedor), se incluyen aquí para ser utilizados en el cálculo del precio de venta de dicho artículo.
+*Ejemplo*: 123.45.
 
-Codice commerciale:
+**% Adicional**:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: porcentaje adicional que se puede utilizar en la creación de precios de venta a partir de los precios de compra.
+*Ejemplo*: 10.
 
--        Tipo: stringa
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image08.png)  
 
--        Formattazione Excel: testo
+**Descuentos**:
 
--        Lunghezza massima: 100 caratteri
+Descuento 1:
 
--        Descrizione: codice della categoria commerciale
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: descuentos aplicables.
+*Ejemplo*: “50+10” en el total de la línea se aplica un primer descuento del 50% y sobre el nuevo total un descuento adicional del 10%. 
 
-*Esempio*: “P” corrisponde a privato
+Lo mismo se aplica a los otros dos descuentos, solo cambia el valor del descuento.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image07.png) 
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image09.png)  
 
+**Descuentos por cantidad**:
 
-**Dati listino**:
+Descuento 1:
 
-Prezzo:
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: descuento aplicado si se adquiere una determinada cantidad del artículo en cuestión.
+*Ejemplo*: 10.
 
--        Campo: obbligatorio
+Cantidad 1:
 
--        Tipo: decimale
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: cantidad mínima necesaria para recibir el respectivo descuento.
+*Ejemplo*: 550.
 
--        Formattazione Excel: valuta, simbolo nessuno
+Lo mismo se aplica a los otros dos descuentos por cantidad, solo cambia el valor correspondiente.
 
--        Lunghezza massima: /
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image10.png)  
 
--        Descrizione: prezzo a listino dell'articolo
+**Descuentos por valor**:
 
-*Esempio*: 10.99, 123.45
+Descuento 1:
 
-UMPrezzo:
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: descuento aplicado si supera un determinado imponible de línea.
+*Ejemplo*: 20.
 
--        Campo: obbligatorio
+Valor 1:
 
--        Tipo: stringa
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: imponible mínimo necesario para recibir el respectivo descuento.
+*Ejemplo*: 950.
 
--        Formattazione Excel: testo
+Lo mismo se aplica a los otros dos descuentos y valores.
 
--        Lunghezza massima: /
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image11.png)  
 
--        Descrizione: serve per definire il prezzo rispetto alla quantità (es. prezzo al kilo, prezzo al metro quadro)
+**Precio por cantidad**:
 
-*Esempio*: “kg” corrisponde a kilogrammi
+Precio 1:
 
--        Mapping table/colonna: select MBUM_Codice from MB_UnitaMisura
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: precio unitario aplicado si se supera una determinada cantidad.
+*Ejemplo*: 3.99.
 
+Cantidad 1:
 
-**Quantità**:
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formato Excel: número, posiciones decimales = 2.
+- Longitud máxima: /.
+- Descripción: cantidad mínima necesaria para tener el respectivo precio unitario.
+*Ejemplo*: 250.
 
--        Campo: non obbligatorio
+Lo mismo se aplica a los otros dos precios y cantidades correspondientes, solo cambia el valor respectivo.
 
--        Tipo: decimale
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image12.png)  
 
--        Formattazione Excel: numero, posizione decimali = 2
+**Otros datos**:
 
--        Lunghezza massima: /
+Notas:
 
--        Descrizione: quantità dell'articolo a cui è riferito il prezzo precedente
-
-*Esempio*: 500
-
-
-**Valore aggiunto**:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: valore aggiuntivo da poter utilizzare in creazione listini di vendita da listini acquisto. Per esempio se ci sono delle spese di trasposto (che dobbiamo pagare al fornitore), vengono qui riportate per poi essere utilizzate nel calcolo del prezzo di vendita di tale articolo.
-
-*Esempio*: 123.45
-
-
-**% Aggiuntiva**:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: percentuale aggiuntiva da poter utilizzare in creazione listini di vendita da listini acquisto
-
-*Esempio*: 10        
-
-  ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image08.png)
-
-
-**Sconti**:
-
-Sconto1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: sconti possibili applicabili
-
-*Esempio*: “50+10” sul totale della riga viene effettuato un primo sconto del 50% e sul nuovo totale un ulteriore sconto del 10%
-
-Stessa identica cosa per gli altri due sconti, cambia solo il valore dello sconto.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image09.png) 
-
-
-**Sconti a qtà**:
-
-Sconto1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: sconto applicato se viene acquistata un data quantità dell'articolo in questione
-
-*Esempio*: 10
-
-Quantità1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: quantità minima necessaria per avere il rispettivo sconto
-
-*Esempio*: 550
-
-Stessa identica cosa per gli altri due sconti a quantità, cambia solo il corrispettivo valore.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image10.png) 
-
-
-**Sconti a valore**:
-
-Sconto1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: sconto applicato se supera determinato imponibile di riga
-
-*Esempio*: 20
-
-Valore1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: imponibile minimo necessario per avere il rispettivo sconto
-
-*Esempio*: 950
-
-Stessa identica cosa per gli altri due sconti e valori.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image11.png) 
-
-
-**Prezzo per quantità**:
-
-Prezzo1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: prezzo unitario applicato se superata una determinata quantità
-
-*Esempio*: 3.99
-
-Quantità1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: quantità minima necessaria per avere il rispettivo prezzo unitario
-
-*Esempio*: 250
-
-Stessa identica cosa per gli altri due prezzi e relative quantità, cambia solo il rispettivo valore.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image12.png) 
-
-
-**Altri dati**:
-
-Note:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: note aggiuntive
-
-*Esempio*: non esporre ai raggi solari
-
--        Mapping table/colonna: select MBNC_Codice from MB_NoteCodificat
-
-
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formato Excel: texto.
+- Longitud máxima: /.
+- Descripción: notas adicionales.
+*Ejemplo*: no exponer a la luz solar.
+- Mapeo tabla/columna: select MBNC_Codice from MB_NoteCodificat.
 
 ### BizLink Parameters
 
-Questi parametri serviranno per processare le righe inserite nella sezione Data. Come si può notare dall'immagine, alcuni campi sono già precompilati ma nulla ci vieta di modificarli.
+Estos parámetros servirán para procesar las filas ingresadas en la sección de Datos. Como se puede observar en la imagen, algunos campos ya están precompletados, pero nada impide que los modifiquemos.
 
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image13.png)
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image13.png)  
 
-1      BizLink Spreadsheet:
+1.  BizLink Hoja de Cálculo:
 
--        Campo: da non inserire
+- Campo: no debe ingresarse.
 
-2      Lingua:
+2.  Idioma:
 
--        Campo: obbligatorio
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: código ISO relacionado al idioma.
+*Ejemplo*: “it-IT” representa el idioma italiano, “en-US” representa el idioma inglés en América.
 
--        Tipo: string
+3.  Empresa:
 
--        Descrizione: codice Iso code relativo alla lingua
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: es un campo precompletado ya que toma los valores ya dentro de Fluentis, que se pueden ver en la esquina superior izquierda.
+*Ejemplo*: “1” corresponde a la empresa de demostración.
+- Mapeo tabla/columna: Select MBSC_Code from MB_Soc.
 
-*Esempio*: “it-IT” rappresenta la lingua italiana, “en-US” rappresenta la lingua inglese in America.
+4.  División:
 
-3      Società:
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: al igual que la empresa, se precompleta.
+*Ejemplo*: “1” corresponde a la sede legal, “2” a la sede operativa de Milán.
+- Mapeo tabla/columna: select MBDP_Code from MB_Dep.
 
--        Campo: obbligatorio
+5.  Nación:
 
--        Tipo: string
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: nación donde se encuentra la división para la cual se importó el listado.
+*Ejemplo*: “GB” corresponde a Gran Bretaña, “USA” corresponde a Estados Unidos.
+- Mapeo tabla/columna: select MBNZ_Codice from MB_Nazioni.
 
--        Descrizione: è un campo precompilato in quanto prende i valori già all'interno di Fluentis, si possono vedere nell'angolo in alto a sinistra.
+6.  Código de barras:
 
-*Esempio*: “1” corrisponde alla società demo
+- Campo: obligatorio solo si en la sección de datos se ha ingresado el código de barras de al menos un artículo.
+- Tipo: cadena.
+- Descripción: se utiliza para indicar el tipo de código de barras utilizado.
+*Ejemplo*: “39” corresponde a COD39.
+- Mapeo tabla/columna: select MBBC_Codice from MB_BarCode.
 
--        Mapping table/colonna: Select MBSC_Code from MB_Soc
+7.  Cuenta:
 
-4      Divisione:
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: cuenta del proveedor, maestra del proveedor.
+*Ejemplo*: “1701”, que tiene 3 subcuentas (ver debajo).
+- Mapeo tabla/columna: select MBPC_Conto from MB_PiaCon.
 
--        Campo: obbligatorio
+8.  Subcuenta:
 
--        Tipo: string
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: subcuenta del proveedor, maestra del proveedor.
+*Ejemplo*: para la cuenta 1701 vista anteriormente, hay 3 subcuentas: “001” que corresponde a cuentas, “002” que corresponde a valores, y “” (ninguna subcuenta especificada) que corresponde a disponibilidades líquidas.
+- Mapeo tabla/columna: select BPC_SottoConto from MB_PiaCon.
 
--        Descrizione: come per la società viene precompilato
+9.  Divisa:
 
-*Esempio*: “1” corrisponde alla sede legale, “2” alla sede operativa di Milano
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: divisa con la que se interpretan los valores ingresados en la sección de datos.
+*Ejemplo*: “EUR” corresponde a Euro, “USD” corresponde a Dólar.
+- Mapeo tabla/columna: select MBDI_Divisa from MB_Divise.
 
--        Mapping table/colonna: select MBDP_Code from MB_Dep
+10.  Inicio de validez:
 
-5      Nazione:
+- Campo: obligatorio.
+- Tipo: datetime.
+- Descripción: indica el inicio de validez del listado ingresado (dd/mm/aaaa).
+*Ejemplo*: 1/10/2018.
 
--        Campo: obbligatorio
+11.  Fin de validez:
 
--        Tipo: string
+- Campo: no obligatorio.
+- Tipo: datetime.
+- Descripción: si está presente, indica el fin de validez del listado ingresado (dd/mm/aaaa).
+*Ejemplo*: 31/12/2027.
 
--        Descrizione: nazione in cui si trova la divisione per cui è stato importato il listino
+12.  Tipo de descuento del listado:
 
-*Esempio*: “GB” corrisponde a Gran Bretagna, “USA” corrisponde agli Stati Uniti
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Descripción: si está presente, indica el tipo de descuento efectuado; habrá tres tipos diferentes, cada uno relacionado con el descuento en la sección de Descuentos.
+*Ejemplo*: “4” corresponde a descuento final sobre la venta.
+- Mapeo tabla/columna: select MBST_Code from MB_Sconti.
 
--        Mapping table/colonna: select MBNZ_Codice from MB_Nazioni
+15.  Tipo de descuento por cantidad:
 
-6      Barcode:
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Descripción: si está presente, indica el tipo de descuento efectuado.
+*Ejemplo*: “4” corresponde a descuento final sobre la venta.
+- Mapeo tabla/columna: select MBST_Code from MB_Sconti.
 
--        Campo: obbligatorio solo se nella sezione data si ha inserito il barcode di almeno un articolo
+16.  Tipo de descuento por valor:
 
--        Tipo: string
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Descripción: si está presente, indica el tipo de descuento efectuado.
+*Ejemplo*: “4” corresponde a descuento final sobre la venta.
+- Mapeo tabla/colonna: select MBST_Code from MB_Sconti.
 
--        Descrizione: serve per indicare il tipo di barcode utilizzato
+17.  Para subcontratista:
 
-*Esempio*: “39” corrisponde al COD39
+- Campo: obligatorio.
+- Tipo: booleano.
+- Descripción: indica si dicho listado (de trabajo por encargo) será o no para un subcontratista.
+*Ejemplo*: “1” corresponde a verdadero, “0” corresponde a falso.
 
--        Mapping table/colonna: select MBBC_Codice from MB_BarCode
+18.  Ingreso de artículo:
 
-7      Conto:
+- Campo: obligatorio.
+- Tipo: booleano.
+- Descripción: si se establece en 1, inserta el artículo en la tabla de artículos MG_AnaArt.
+*Ejemplo*: “1” corresponde a verdadero, “0” corresponde a falso.
 
--        Campo: obbligatorio
+19.  Ingreso de artículo para proveedor:
 
--        Tipo: string
+- Campo: obligatorio.
+- Tipo: booleano.
+- Descripción: si se establece en 1, inserta el artículo en la tabla de artículos para proveedores MB_ArticoliFornitore, MG_FornPreferenziali.
+*Ejemplo*: “1” corresponde a verdadero, “0” corresponde a falso.
 
--        Descrizione: conto del fornitore, mastro del fornitore
+### Iniciar importación
 
-*Esempio*: “1701” il quale ha 3 sottoconti (vedi sotto)
+Una vez ingresados los datos, para iniciar la importación, haga clic en el botón que se encuentra en el menú de importación, en la parte superior izquierda, también llamado “Importación” como se muestra en la figura a continuación.
 
--        Mapping table/colonna: select MBPC_Conto from MB_PiaCon
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image14.png)  
 
-8      Sottoconto:
+### Conclusiones – Ingreso realizado
 
--        Campo: obbligatorio
+Si todo sale bien, no aparecerá ningún mensaje de error. Para una verificación adicional de éxito, verifique en el registro de artículos (**Inicio > Artículos**) si están presentes los importados desde el proveedor. De lo contrario, aparecerá en pantalla un mensaje de error que nos indicará qué parámetros y/o campos no son correctos. Para interpretar el tipo de error, consulte Consejos y advertencias útiles en el último párrafo.
 
--        Tipo: string
+### Consejos y advertencias útiles
 
--        Descrizione: sottoconto del fornitore, mastrino del fornitore
+**Formato Excel recomendado**:
 
-*Esempio*: per il conto 1701 visto in precedenza, ci sono 3 sottoconti: “001” che corrisponde a conti, “002” che corrisponde a valori DDTti e “” (nessun sottoconto specificato) che corrisponde a disponibilità liquide.
+- Para una correcta importación, se recomienda encarecidamente formatear las columnas según el tipo indicado en “Formato Excel” de cada campo. Por ejemplo, si el tipo del campo es decimal y en ese campo se ingresará una moneda, formatee el campo como moneda. Esto se debe a que, si no se formatea la celda, Excel elimina los dígitos no significativos. Para establecer el formato, siga los siguientes pasos:
 
--        Mapping table/colonna: select BPC_SottoConto from MB_PiaCon
+Primero seleccione la columna deseada como en la figura a continuación:
 
-9      Divisa:
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image15.png)  
 
--        Campo: obbligatorio
+Luego, después de posicionar el puntero del mouse dentro de la columna, haga clic con el botón derecho del mouse.
 
--        Tipo: string
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image16.png)  
 
--        Descrizione: divisa con cui interpretare i valori inseriti nella sezione data
+Seleccione haciendo clic con el botón izquierdo ** > Formato de celdas…**.
 
-*Esempio*: “EUR” corrisponde a Euro, “USD” corrisponde a Dollaro
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image17.png)  
 
--        Mapping table/colonna: select MBDI_Divisa from MB_Divise
+En esta pantalla, podrá formatear la columna seleccionada. Según las indicaciones proporcionadas en el Ingreso de campos, seleccione la categoría apropiada, con las especificaciones correspondientes (ej. moneda, símbolo ninguno). Lo mismo se puede hacer en la hoja de cálculo dentro de Fluentis.
 
-10  Inizio validità:
+**Atención**: el caso clásico se refiere a códigos que contienen ceros que aparentemente no son significativos, por ej. “001”. Si el campo está formateado como genérico o número, se eliminarían los ceros; si se formatea como cadena, se mantienen.
 
--        Campo: obbligatorio
+**Mapa tabla/columna**:
 
--        Tipo: datetime
+- Si en el Ingreso de campos hay un mapeo de tabla/columna, significa que el valor ingresado en el campo para la importación debe estar ya presente en la base de datos. Para visualizar los datos relativos presentes en la base de datos, siga los siguientes pasos, usando como ejemplo la clase de artículos y el respectivo mapeo:
 
--        Descrizione: indica l'inizio di validità del listino inserito (gg/mm/aaaa)
+select MBDC_Clase from MB_Classi (**\<-** este es el mapeo). Ejecutamos la consulta en “Microsoft SQL Server Management Studio” y obtenemos el siguiente resultado:
 
-*Esempio*: 1/10/2018
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image18.png)  
 
-11  Fine validità:
+Visto así no comunica nada, para entender su significado, sustituya después de la cláusula de select, el símbolo “*” por el campo para componer la nueva consulta. En este caso tendríamos select * from MB_Class, que sirve para seleccionar el contenido completo de la tabla, ejecutemos ahora.
 
--        Campo: non obbligatorio
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image19.png)  
 
--        Tipo: datetime
+Esto es útil ya que, como se muestra en la figura, mediante la descripción (MBDC_Descr) es posible entender qué representa el campo y verificar si lo que se ingresará ya está presente o no en la base de datos.
 
--        Descrizione: se presente indica la fine di validità del listino inserito (gg/mm/aaaa)
+Este procedimiento anteriormente descrito es universal, es decir, aplica para cada campo.
 
-*Esempio*: 31/12/2027
+La misma representación se puede ver en Fluentis:
 
-12  Tipo sconto listino:
+Desde la página de inicio de Fluentis, seleccione **Artículos > Artículos de proveedores** (ver figura a continuación).
 
--        Campo: non obbligatorio
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image20.png)  
 
--        Tipo: string
+Luego, en la máscara de búsqueda que aparece, haga clic con el botón izquierdo del mouse en el triángulo junto a artículos, lo que abre un menú desplegable donde se pueden visualizar la clase de artículos con la descripción correspondiente como en la figura.
 
--        Descrizione: se presente indica il tipo di sconto effettuato, ci saranno tre diverse tipologie ognuna per il relativo sconto alla sezione Sconti
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image21.png)  
 
-*Esempio*: “4” corrisponde a sconto finale su vendita
+Esto es para la clase de artículos. Para los otros campos, se puede realizar el mismo procedimiento solo que en diferentes puntos.
 
--        Mapping table/colonna: select MBST_Code from MB_Sconti
+Por lo tanto, deberíamos ingresar uno de los valores presentes; de lo contrario, la importación no tendrá éxito y nos comunicará un error. Esto aplica para cada campo donde esté presente el mapeo de tabla/columna.
 
-15 Tipo sconto quantità:
+Si en cambio queremos agregar un campo con mapeo no presente en la base de datos, deberá ser ingresado ya sea mediante consulta o desde Fluentis; en este caso la consulta de inserción está desaconsejada, ya que es más complicada de componer que la visualización vista anteriormente. Por lo tanto, el procedimiento recomendado es la inserción desde Fluentis. En el caso de la clase de artículos, desde artículos de proveedores (figura anterior), presione el botón derecho en el filtro de búsqueda de clase de artículo y seleccione **Abrir formulario**.
 
--        Campo: non obbligatorio
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image22.png)  
 
--        Tipo: string
+En el formulario que se abrirá, presione el botón **Buscar** para visualizar las clases de artículo presentes.
 
--        Descrizione: se presente indica il tipo di sconto effettuato
+![](/img/neutral/common/search.png)  
 
-*Esempio*: “4” corrisponde a sconto finale su vendita
+Debajo de la última fila presente hay una fila vacía. Esa es la que se usa para ingresar nuevos valores.
 
--        Mapping table/colonna: select MBST_Code from MB_Sconti
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image24.png)  
 
-16 Tipo sconto valore:
+Aquí se deben escribir los nuevos valores a ingresar, y una vez hecho, bastará con presionar enter.
 
--        Campo: non obbligatorio
+Este procedimiento es análogo para los otros campos; la única cosa que cambia es el lugar donde se encuentran los filtros de búsqueda en los que hay que hacer clic con el botón izquierdo para abrir el formulario.
 
--        Tipo: string
+**Errores**:
 
--        Descrizione: se presente indica il tipo di sconto effettuato
+- En caso de que la importación falle, como se mencionó anteriormente, aparecerá en pantalla un mensaje de error.
 
-*Esempio*: “4” corrisponde a sconto finale su vendita
+Si el error ocurrió en la parte de Datos, se puede rastrear a la fila que contiene el error, ya que se indicará, por ejemplo, “System.ArgumentException: Error importing row 4”.
 
--        Mapping table/colonna: select MBST_Code from MB_Sconti
+En este caso (ver figura a continuación), el error se encontrará en la fila 4, que sin embargo, no es la efectiva fila que contiene el error. Para entender exactamente qué fila contiene el error, utilizando los números en la columna de la izquierda, se suma 1. Entonces:
 
-17 Per terzista:
+Fila real que contiene el error = Error importing rownum + 1
 
--        Campo: obbligatorio
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image25.png)  
 
--        Tipo: boolean
+Para interpretar el error, en el mensaje del mismo, siga los siguientes pasos: en la misma fila que contiene el número de fila visto anteriormente, hay indicado el objeto al que se refiere, luego el error en sí y finalmente la propiedad relativa en la que se ha detectado el error. Siempre en el ejemplo anterior, “Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.PurchasePriceListsnot-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. En este caso, como se puede notar en la imagen anterior, la unidad de medida relativa al precio de compra listado ha generado el error, ya que es nula. De hecho, su ingreso es obligatorio.
 
--        Descrizione: indica se tale listino (di conto lavoro) sarà o meno per un terzista
+Si el error ocurrió en los parámetros, el mensaje será análogo; el método de resolución sigue siendo el mismo, es decir, verificar la correcta entrada de la propiedad correspondiente.
 
-*Esempio*: “1” corrisponde a true, “0” corrisponde a false
+**Atención**: Si se encuentra una fila completamente vacía, no se comunicará ningún error, pero la importación terminará allí. Por ejemplo, si la primera fila (fila n.4) está vacía por alguna razón y debajo (desde la fila n.5 inclusive) se encuentran las filas pobladas, no se importará nada.
 
-18 Inserimento articolo:
+**Atención**: Si se ha ingresado un listado de 10 filas, por ejemplo, y en la fila n. 7 se produce un error, las primeras 6 filas no habiendo causado problemas se habrán ingresado. Si no se ha cambiado ningún valor en las primeras 6 filas (y si, obviamente, se ha corregido el error), reiniciando la importación no habrá problemas, ni de duplicación, ya que primero se verifica si el artículo ya está presente. Si se cambia incluso solo un valor, ese artículo se ingresará como si fuera un artículo nuevo.
 
--        Campo: obbligatorio
+Finalmente, otro mensaje de error que podría aparecer es el siguiente.
 
--        Tipo: boolean
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image26.png)  
 
--        Descrizione: se impostato a 1 inserisce l'articolo nella tabella dell'anagrafica articoli MG_AnaArt
-
-*Esempio*: “1” corrisponde a true, “0” corrisponde a false
-
-19  Inserimento articolo per fornitore:
-
--        Campo: obbligatorio
-
--        Tipo: boolean
-
--        Descrizione: se impostato a 1 inserisce l'articolo nella tabella articoli per fornitore MB_ArticoliFornitore, MG_FornPreferenziali
-
-*Esempio*: “1” corrisponde a true, “0” corrisponde a false
-
-### Avviare importazione
-
-Una volta inseriti i dati, per avviare l'importazione, cliccare sul pulsante presente nel menu importazione, in alto a sinistra, chiamato anch'esso “Importazione” come in figura sotto.
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image14.png)
-
- 
-
-### Conclusioni – Inserimento avvenuto
-
-Se tutto va a buon fine non comparirà nessun messaggio di errore. Per un ulteriore verifica di buon riuscita, andare a controllare nell'anagrafica articoli (**Home > Articoli**) se sono presenti quelli importati dal fornitore.  Altrimenti ci apparirà a video una schermata di errore la quale ci indicherà quali parametri e/o campi non sono corretti. Per interpretare il tipo di errore vedi Consigli e avvertenze utili nell'ultimo paragrafo. 
-
-### Consigli e avvertenze utili
-
-**Formattazione Excel consigliata**:
-
--        Per una corretta importazione, è vivamente consigliato di formattare le colonne secondo il tipo indicato alla voce “Formattazione Excel” di ogni campo. Per esempio se il tipo del campo è decimal e in quel campo andrà inserito una valuta, formattare il campo appunto come valuta. Questo perché per esempio se non viene formattata la cella, Excel elimina le cifre non significative. Per inserire la formattazione seguire i seguenti passaggi:
-
-Per prima cosa selezionare la colonna desiderata come in fig. sotto:
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image15.png)
-
-
-Poi, dopo essersi posizionati con il puntatore del mouse all'interno della colonna, premere il tasto destro del mouse.
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image16.png)
-
-
-Selezionare premendo il tasto sinistro ** > Formato celle…**
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image17.png) 
-
-In questa schermata si potrà quindi formattare la colonna selezionata. In base alle indicazioni fornite nell' Inserimento campi selezionare l'opportuna categoria, con le relative specifiche (es. valuta, simbolo nessuno). La stessa identica cosa è possibile farla dal foglio elettronico presente all'interno di Fluentis.
-
-**Attenzione**: il caso classico riguarda codici contenenti zeri, apparentemente, non significativi es. “001”. Se il campo è formattato generico o numero gli zeri sarebbero scartati, se formatta come stringa vengono invece mantenuti.
-
-**Mapping table/colonna**:
-
--        Se nell' Inserimento campi vi è presente la voce mapping table/colonna, significa che il valore inserito all'interno del campo per l'importazione, deve essere già presente nel database. Per visualizzare i relativi dati presenti nella base di dati basterà seguire i seguenti passaggi, in cui verrà utilizzato come esempio la classe articoli e il relativo mapping: 
-
-select MBDC_Classe from MB_Classi (**\<-** questo è il mapping). Eseguiamo la query in “Microsoft SQL server management studio” e otteniamo il seguente risultato:
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image18.png) 
-
-Visto così non comunica nulla, per capirne il significato sostituire dopo la clausola di select, il simbolo “*” al campo per comporre la nuova query. In questo caso avremmo quindi select * from MB_Class, che serve per selezionare l'intero contenuto della tabella, eseguiamo ora.
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image19.png)
-
-Questo è utile in quanto, come mostrato dalla figura, tramite la descrizione (MBDC_Descr) è possibile capire il campo cosa rappresenta e verificare se quello che si inserirà è presente o meno nella base di dati.
-
-Questa procedura appena descritta è universale, ossia vale per ogni campo.
-
-La stessa rappresentazione è possibile vederla in Fluentis:
-
-Dalla Home di Fluentis selezionare **Articoli > Articoli fornitori** (vedi fig. sotto).
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image20.png) 
-
-Poi nella maschera di ricerca che appare cliccare con il pulsante sinistro del mouse sul triangolino affianco ad articoli, il quale apre una tendina dove è possibile visualizzare la classe degli articoli con relativa descrizione come in figura.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image21.png) 
-
-Questo per la classe articoli. Per gli altri campi si potrà eseguire la stessa procedura solamente in punti diversi.
-
-Noi dovremmo quindi inserire uno dei valori presenti altrimenti l'importazione non andrà a buon fine e ci comunicherà un errore. Questo per ogni campo di cui è presente il mapping table/colonna. 
-
-Se vogliamo invece aggiungere un campo con mapping non presente nel database andrà inserito o tramite query o da Fluentis, in questo caso la query di inserimento è sconsigliata in quanto più complicata da comporre rispetto alla visualizzazione vista in precedenza. La procedura consigliata è quindi l'inserimento da Fluentis. Sempre nel caso della classe articoli, da articoli fornitore (figura sopra) premere tasto destro all'interno del filtro di ricerca della classe articolo e selezionare **Apri form**.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image22.png) 
-
-Nella form che si aprirà premere il pulsante **Ricerca** per visualizzare le classi articolo presenti.
-
-![](/img/neutral/common/search.png) 
-
-Sotto l'ultima riga presente c'è una riga vuota. È quella usata per l'inserimento di nuovi valori.
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image24.png)
-
-Lì vanno scritti i nuovi valori da inserire e una volta fatto, basterà premere invio. 
-
- Questa procedura è analoga per gli altri campi, l'unica cosa che cambia è il dove si trovano i filtri di ricerca nei quali premere il tasto sinistro per aprire la form.
-
-**Errori**: 
-
--        In caso di importazione fallita, come detto in precedenza, apparirà a video una schermata di errore.
-
- Se l'errore è stato commesso nella parte Data è possibile risalire alla riga che contiene l'errore in quanto ci sarà per esempio scritto “System.ArgumentException: Error importing row 4”.
-
-In questo caso (vedi figura sotto), l'errore si troverà nella riga 4, la quale però non è l'effettiva riga contente l'errore. Per capire esattamente quale riga contenga l'errore, utilizzando i numeri nella colonna di sinistra, gli va sommato 1. Quindi: 
-
- Riga reale contente errore = Error importing rownum + 1
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image25.png)
-
-Per interpretare l'errore, nel messaggio dello stesso, seguire i seguenti passaggi: nella stessa riga contenente il numero di riga visto in precedenza, c'è scritto l'oggetto a cui è riferito, poi l'errore vero e proprio e infine la proprietà relativa ad esso in cui è stato riscontrato l'errore. Sempre nell'esempio sopra riportato “Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.PurchasePriceListsnot-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. In questo caso come si può notare dall'immagine sopra, l'unità di misura relativa al prezzo di acquisto listino ha generato l'errore in quanto essa è nulla. Infatti il suo inserimento è obbligatorio. 
-
- Se l'errore è stato commesso nella parte dei parametri il messaggio sarà analogo, il metodo di risoluzione rimane sempre il precedente quindi, in base alla proprietà verificare il corretto inserimento della stessa.
-
-**Attenzione**: Se viene trovata una riga completamente vuota, non verrà comunicato nessuno errore ma l'importazione terminerà lì. Per esempio se la prima riga (riga n.4) è vuota per qualche motivo e sotto (da riga n.5 compresa) si trovano le righe popolate, non sarà importato nulla.
-
-**Attenzione**: Se viene inserito un listino di 10 righe per esempio e alla riga n. 7 si verifica un errore, le prime 6 righe non avendo causato problemi sono state inserite! Se non viene cambiato nessun valore nelle prime 6 righe (e se ovviamente l'errore è stato corretto), riavviando l'importazione non ci saranno problemi, neanche di duplicazione in quanto viene prima cercato se l'articolo è già presente. Se viene cambiato anche solo un valore, tale articolo verrà inserito in quanto visto come un nuovo articolo.
-
-Infine un altro messaggio di errore che potrà capitare è il seguente.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image26.png) 
-
-Come si può notare dall'immagine sopra riportata, questa tipologia di messaggi sono più facili da interpretare in quanto viene messo il riferimento esatto della cella con relativo errore. In questo caso nella cella F:4 non è presente nessun valore.
+Como se puede notar en la imagen anterior, este tipo de mensajes son más fáciles de interpretar, ya que se indica la celda exacta con el respectivo error. En este caso, en la celda F:4 no hay valor presente.

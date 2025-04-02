@@ -1,20 +1,20 @@
 ---
-title: Stampa Scheda tecnica
+title: stampa scheda tecnica
 sidebar_position: 1
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Stampe > Stampa Scheda tecnica**.   
+El filtro de ejecución de reportes se encuentra en la ruta **Calidad > Controles de artículo > Fichas técnicas > Impresiones > stampa scheda tecnica**.  
 
-Il filtro di esecuzione report consente di ricercare gli *Articoli* presenti nelle *Schede tecniche* per poterli stampare.   
-Il report predefinito è **Scheda Prodotto** - *Scheda tecnica dell'Articolo* che riporta l'elenco delle *Proprietà* indicate nella *Scheda tecnica*.   
+El filtro de ejecución de reportes permite buscar los *Artículos* presentes en las *Fichas técnicas* para poder imprimirlos.  
+El reporte predeterminado es **scheda prodotto** - *Ficha técnica del Artículo* que muestra la lista de las *Propiedades* indicadas en la *Ficha técnica*.  
 
-### ![](/img/neutral/common/search.png) Ricerca Schede tecniche
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato *Schede tecniche* (elenco di sinistra).   
+### ![](/img/neutral/common/search.png) Búsqueda de Fichas Técnicas (Ricerca Schede tecniche)
+El formulario consta de un área de filtro y otra de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados *Fichas técnicas* (lista de la izquierda).  
 
-Dalla griglia risultato delle *Schede tecniche* è necessario selezionare un'unica *Scheda tecnica* desiderata per poter visualizzare, nella griglia di risultato *Articoli* (elenco di destra) l'elenco degli *Articoli* in essa associati.   
+Desde la cuadrícula de resultados de las *Fichas técnicas*, es necesario seleccionar una única *Ficha técnica* deseada para poder visualizar, en la cuadrícula de resultados *Artículos* (lista de la derecha), la lista de los *Artículos* asociados a ella.  
 
-Dalla griglia risultato degli *Articoli* è necessario selezionare gli *Articoli* che si desiderano stampare.   
+Desde la cuadrícula de resultados de los *Artículos*, es necesario seleccionar los *Artículos* que se desean imprimir.  
 
-In calce alla stampa **Scheda Prodotto** standard viene anche riportata la *Dichiarazione di non responsabilità* del *Tipo dichiarazione* associata all'*Articolo*. Se non indicato verrà riportata la *Dichiarazione di non responsabilità* del *Tipo dichiarazione* indicata in *Tipo dichiarazione da stampare in caso l'articolo ne sia sprovvisto"
+Al final de la impresión de la **scheda prodotto** estándar, también se incluye la *Declaración de exención de responsabilidad* del *Tipo de declaración* asociada al *Artículo*. Si no está indicada, se mostrará la *Declaración de exención de responsabilidad* del *Tipo de declaración* indicada en *Tipo de declaración a imprimir en caso de que el artículo carezca de ella*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

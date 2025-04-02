@@ -1,90 +1,82 @@
 ---
-title: Visualizzazione conti
+title: visualizzazione conti
 sidebar_position: 2
 ---
 
-La form consente di visualizzare i movimenti contabili di qualsiasi conto o sottoconto contabile, di qualsivoglia tipologia (attivo, passivo, costi, ricavi o anagrafico): tutti i movimenti di tutti gli esercizi contabili sono sempre in linea, ma chiaramente potranno essere modificati o meno a seconda della chiusura del periodo a seguito di stampe fiscali obbligatorie eseguite in definitivo o per operazioni di chiusura conti.
+El formulario permite visualizar los movimientos contables de cualquier cuenta o subcuenta contable, de cualquier tipo (activo, pasivo, costos, ingresos o anagráfico): todos los movimientos de todos los ejercicios contables están siempre en línea, pero claramente pueden ser modificados o no según el cierre del período tras las impresiones fiscales obligatorias realizadas de forma definitiva o por operaciones de cierre de cuentas.
 
-## Testata:
+## Encabezado (Testata):
 
-Nella parte superiore è obbligatorio inserire un codice di conto o direttamente un sottoconto di dettaglio: i campi di filtro successivi, invece, sono opzionali.
+En la parte superior es obligatorio ingresar un código de cuenta o directamente una subcuenta de detalle: los campos de filtro siguientes, en cambio, son opcionales.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
- 
 
-## La griglia dati: 
 
-Risulta ordinata di default per data registrazione discendente**, (il criterio di ordinamento può essere comunque variato) e visualizza la lista dei movimenti secondo i filtri impostati: 
+## La cuadrícula de datos (La griglia dati):
 
-Con questa impostazione i dati vanno dunque letti tenendo presente che:
+Está ordenada por defecto por fecha de registro en orden descendente**, (el criterio de ordenamiento puede ser modificado) y muestra la lista de movimientos según los filtros establecidos:
 
--  supponendo di filtrare con ‘da data registrazione' 01/01/yyyy, avremo nei campi (in alto) **Saldo precedente** i totali dare avere delle registrazioni antecedenti al 01/01/yyyy,
+Con esta configuración, los datos deben leerse teniendo en cuenta que:
 
-- nella griglia dei movimenti i dati saranno presentati dal più recente al più vecchio (temporalmente) procedendo a leggere dall'altro verso il basso 
+- suponiendo que se filtre con "desde fecha de registro" 01/01/yyyy, tendremos en los campos (en la parte superior) **Saldo anterior** los totales de los registros anteriores al 01/01/yyyy,
 
-- il campo **Progressivo** visualizzerà nell' ultima riga l'importo del campo **Saldo precedente** aggiornato del valore della riga stessa per poi essere aggiornato riga per riga dal basso verso l'alto.
+- en la cuadrícula de movimientos, los datos se presentarán de más reciente a más antiguo (temporalmente) y se leerán de arriba hacia abajo.
+
+- el campo **Progresivo** mostrará en la última línea el monto del campo **Saldo anterior** actualizado con el valor de la fila misma y luego se irá actualizando fila por fila de abajo hacia arriba.
 
 
 :::note[Nota]
-Il campo **Progressivo** è visibile solo nel caso in cui sia mantenuto l' ordinamento di default previsto per la form; negli altri casi il campo scompare e per farlo riapparire sarà necessario chiudere e riaprire la form e dunque rieseguire la ricerca. 
+El campo **Progresivo** es visible solo si se mantiene el ordenamiento predeterminado previsto para el formulario; en otros casos, el campo desaparece y para que vuelva a aparecer será necesario cerrar y volver a abrir el formulario y así reiniciar la búsqueda. 
 :::
 
 
- 
 
-## Totali alla base della maschera:
+## Totales al pie del formulario (Totali alla base della maschera):
 
-**Saldo selezione**: somma dare/avere delle righe che sono selezionate nella griglia con il mouse; selezionando tutto in griglia (con ctrl+a) questo campo visualizzerà lo stesso risultato del campo *Saldo corrente*
+**Saldo selección**: suma de los débitos/créditos de las filas que están seleccionadas en la cuadrícula con el mouse; al seleccionar todo en la cuadrícula (con ctrl+a), este campo mostrará el mismo resultado que el campo *Saldo actual*.
 
-**Saldo corrente**: somma dare/avere delle righe visualizzate nella griglia (sempre tutte indipendentemente dalla selezione effettuata con il mouse);  
+**Saldo actual**: suma de los débitos/créditos de las filas que se muestran en la cuadrícula (siempre todas, independientemente de la selección realizada con el mouse);  
 
-**Totale**: somma dare/avere del saldo precedente e del saldo corrente;  
+**Total**: suma de los saldos anterior y actual;  
 
-**Saldo**: saldo finale, o in dare o in avere (che corrisponderà sempre al progressivo visualizzato nella prima riga).
+**Saldo**: saldo final, ya sea en débito o en crédito (que corresponderá siempre al progresivo mostrado en la primera fila).
 
 
-:::tip[Come leggere e interpretare i totali]
-**Dare/Avere precedente** (al range filtrato e dall'ultima apertura conti) **+ Saldo corrente = Totale** (entrambe le colonne dare / avere sono valorizzate sempre in questi 3 blocchi).
+:::tip[Cómo leer e interpretar los totales]
+**Débito/Crédito anterior** (al rango filtrado y desde la última apertura de cuentas) **+ Saldo actual = Total** (ambas columnas de débito/crédito están valorizadas siempre en estos 3 bloques).
 
-**Saldo precedente +  Saldo corrente** (come differenza dare-avere) **= Saldo** (attuale)
+**Saldo anterior + Saldo actual** (como diferencia entre débito y crédito) **= Saldo** (actual)
 
-Il *Saldo Corrente* è rappresentato su entrambe le sezioni al fine di evidenziare analiticamente la formazione del *Totale* (inquanto per calcolarlo vengono sommate al Saldo corrente le due distinte sezioni *Dare / Avere precedente*)
+El *Saldo Actual* se representa en ambas secciones para resaltar analíticamente la formación del *Total* (ya que para calcularlo se suman al Saldo actual las dos secciones distintas *Débito / Crédito anterior*).
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image04.png)
 
 :::
 
 
-Nella griglia sono visibili due serie di sottoconti visualizzati, il sottoconto intestazione (che viene ripreso dal sottoconto intestatario della registrazione dal quale è ripreso il movimento stesso) e il sottoconto di dettaglio che è effettivamente il sottoconto di cui si stanno ricercando i movimenti. Ad esempio, nel caso in cui si stiano visualizzando i movimenti di un conto generico di costo, avremo nel sottoconto intestazione i codici dei fornitori che ci hanno inviato fatture registrate a quel conto di costo e nel sottoconto di dettaglio dei singoli sottoconto di costo specifici rilevati.
+En la cuadrícula son visibles dos series de subcuentas, la subcuenta encabezada (que se toma de la subcuenta titular del registro del cual proviene el movimiento) y la subcuenta de detalle que es efectivamente la subcuenta de la que se están buscando los movimientos. Por ejemplo, en el caso de que se estén visualizando los movimientos de una cuenta genérica de costo, tendremos en la subcuenta encabezada los códigos de los proveedores que nos han enviado facturas registradas a esa cuenta de costos y en la subcuenta de detalle los distintos subcuentas de costo específicos registrados.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
 
- 
 
-Inoltre è possibile "espandere" la riga tramite il comando + a sinistra per visualizzare l'intera scrittura contabile.
+Además, es posible "expandir" la fila mediante el comando + a la izquierda para visualizar el asiento contable completo.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image03.png)
 
- 
 
-Ulteriori operazioni che si possono effettuare con riferimento alla griglia dei risultati:
+Otras operaciones que se pueden realizar con respecto a la cuadrícula de resultados:
 
-- Doppio click sulla singola riga visualizzata: in questo caso, se l'utente ha i diritti relativi, si aprirà in modifica la registrazione di appartenenza del movimento;
+- Doble clic en la fila individual mostrada: en este caso, si el usuario tiene los derechos correspondientes, se abrirá para editar el registro de pertenencia del movimiento;
 
-- Premere il pulsante **Modifica** situato nella ribbon bar avrà lo stesso effetto del doppio click appena descritto;
+- Presionar el botón **Modificar** situado en la barra de ribbon tendrá el mismo efecto que el doble clic descrito anteriormente;
 
-- Premere il pulsante **Doc. Origine**, quando è attivo, andrà ad aprire in Visualizzazione (se l'utente ne ha il diritto) la fattura di acquisto o di vendita che con la contabilizzazione ha creato il movimento di contabilità selezionato;
+- Presionar el botón **Doc. Origen**, cuando esté activo, abrirá en visualización (si el usuario tiene el derecho) la factura de compra o venta que con la contabilización ha creado el movimiento contable seleccionado;
 
-AREA DI FILTRO: l'area di filtro è quella dedicata ad ospitare l'elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I Filtri sono tipicamente sempre in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+ÁREA DE FILTRO: el área de filtro está dedicada a albergar la lista de los posibles tipos de datos mediante los cuales es posible realizar una selección. Los filtros suelen estar en condición 'AND' y es posible especificar múltiples criterios de filtro simultáneamente.
 
-GRIGLIA DI RISULTATO: la griglia di risultato rappresenta l'elenco delle registrazioni che corrispondono ai dati di filtro sopra specificati. L'utente, dopo aver specificato i valori attraverso i quali desidera ottenere una ricerca delle registrazioni, se preme il pulsante [Ricerca ] presente nella relativa Ribbon, otterrà nella griglia di risultato l'elenco delle registrazioni desiderate.
+CUADRÍCULA DE RESULTADO: la cuadrícula de resultado representa la lista de los registros que corresponden a los datos de filtro especificados anteriormente. El usuario, después de especificar los valores a través de los cuales desea realizar una búsqueda de registros, si presiona el botón [Buscar] presente en la barra de ribbon correspondiente, obtendrá en la cuadrícula de resultados la lista de los registros deseados.
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro)
+:::important Ver También
+[**VIDEO TUTORIALES SOBRE REGISTROS CONTABLES**](/docs/video/finance/intro)
 :::
-
-
-
-
-

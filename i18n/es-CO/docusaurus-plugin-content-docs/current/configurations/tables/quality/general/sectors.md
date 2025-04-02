@@ -1,38 +1,38 @@
 ---
-title: Settori qualità
+title: settori qualità
 sidebar_position: 7
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Settori qualità**.
+La tabla se encuentra en la ruta **Tablas > Calidad > General > settori qualità** (Tabelle > Qualità > Generale > Settori qualità).
 
-In questa tabella è possibile codificare i *Settori qualità* di interesse del documento.   
-Alcuni esempi di utilizzo dei *Settori qualità* li troviamo nelle gestioni:
-> **Azioni correttive** - nei *dati di testata*;   
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.   
+En esta tabla es posible codificar los *settori qualità* de interés del documento.  
+Algunos ejemplos de uso de los *settori qualità* se encuentran en las gestiones:  
+> **azioni correttive** - en los *dati di testata*;  
+> **corsi base** - en los *dati di testata*;  
+> **corsi di formazione** - en los *dati di testata*.  
 
-La tabella contiene dei valori predefiniti dal sistema; i valori predefiniti sono:
-| Codice |   
+La tabla contiene valores predeterminados del sistema; los valores predeterminados son:  
+| Código (Codice) |  
 |:--|
-| Ambiente |   
-| Etica |   
-| Qualità |   
-| Sicurezza |   
+| Ambiente |  
+| Ética (Etica) |  
+| Calidad (Qualità) |  
+| Seguridad (Sicurezza) |  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Settori qualità**
+**Búsqueda de settori qualità (Ricerca Settori qualità)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Settori qualità**
+**Inserción de settori qualità (Inserimento Settori qualità)**
 
-Per poter inserire nuovi *Settori qualità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si deve inserire almeno il campo obbligatoro richiesto dal programma: il **Codice**.
+Para poder insertar nuevos *settori qualità* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se debe ingresar al menos el campo obligatorio requerido por el programa: el **codice**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*: 
 
-> **Codice**: è il codice del *Settore qualità*.   
-> **Note**: annotazioni libere.
+> **codice**: es el código del *Sector de calidad (Settore qualità)*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

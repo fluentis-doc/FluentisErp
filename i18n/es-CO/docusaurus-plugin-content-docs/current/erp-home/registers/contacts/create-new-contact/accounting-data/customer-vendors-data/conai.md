@@ -1,18 +1,18 @@
 ---
-title: Impostazioni Conai
+title: impostazioni conai
 sidebar_position: 12
 ---
 
-Affinché la spesa Conai sia applicata in acquisto o vendita, il fornitore/cliente deve essere impostato correttamente nella sua anagrafica. In particolare:
+Para que el gasto de Conai se aplique en la compra o venta, el proveedor/cliente debe estar correctamente configurado en su registro. En particular:
 
-**Tipo partner Conai**: qui va indicato il ruolo del cliente/fornitore nella filiera degli imballaggi in Italia tra:
-- A – Autoproduttore: si riferisce a un'azienda che produce imballaggi per conto proprio e li utilizza per confezionare i propri prodotti. In altre parole, non vende gli imballaggi ad altri, ma li utilizza direttamente nella propria attività di produzione o distribuzione.
-- U1 – Commerciante/Distributore: si tratta di un'azienda che acquista imballaggi da produttori o altri commercianti e li rivende, senza utilizzarli direttamente per confezionare prodotti. Questo ruolo è tipico dei grossisti o distributori di imballaggi.
-- U2 – Altri Utilizzatori: include tutte le altre categorie di utilizzatori di imballaggi che non rientrano specificamente nelle categorie di autoproduttore o commerciante/distributore. Questi utilizzatori possono essere aziende che acquistano imballaggi per utilizzarli nel confezionamento di prodotti destinati alla vendita, ma che non li producono direttamente.
-- P – Produttore: questo codice identifica l'azienda che produce imballaggi e li vende ad altri, che possono essere utilizzatori o distributori.
+**tipo partner conai**: aquí se debe indicar el rol del cliente/proveedor en la cadena de embalajes en Italia entre:
+- A – Autoprodutor (Autoproduttore): se refiere a una empresa que produce embalajes para su propio uso y los utiliza para empaquetar sus propios productos. En otras palabras, no vende los embalajes a otros, sino que los utiliza directamente en su actividad de producción o distribución.
+- U1 – Comerciante/Distribuidor (Commerciante/Distributore): se trata de una empresa que compra embalajes a productores u otros comerciantes y los revende, sin utilizarlos directamente para empaquetar productos. Este rol es típico de mayoristas o distribuidores de embalajes.
+- U2 – Otros Utilizadores (Altri Utilizzatori): incluye todas las demás categorías de usuarios de embalajes que no se incluyen específicamente en las categorías de autoprodutor u comerciante/distribuidor. Estos usuarios pueden ser empresas que compran embalajes para usarlos en el empaquetado de productos destinados a la venta, pero que no los producen directamente.
+- P – Productor (Produttore): este código identifica a la empresa que produce embalajes y los vende a otros, que pueden ser usuarios o distribuidores.
 
 :::note
-Per il calcolo in acquisto il fornitore dovrà essere P - Produttore.
+Para el cálculo en compras, el proveedor debe ser P - Productor (P - Produttore).
 :::
 
-Nella griglia sottostante si potranno impostare eventuali percentuali di **Esenzione** per tipo materiale, con le relative date validità.
+En la cuadrícula a continuación, se pueden establecer posibles porcentajes de **esenzione** por tipo de material, con las correspondientes fechas de validez.

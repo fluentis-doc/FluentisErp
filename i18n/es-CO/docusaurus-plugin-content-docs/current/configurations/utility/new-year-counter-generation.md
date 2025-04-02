@@ -1,33 +1,32 @@
 ---
-title: Generazione contatori nuovo anno
+title: generazione contatori nuovo anno
 sidebar_position: 3
 ---
 
-La form permette di gestire i numeratori presenti in Fluentis, in particolare nel momento del cambio d'anno.
+El formulario permite gestionar los numeradores presentes en Fluentis, en particular en el momento del cambio de año.
 
-All'apertura della form, Fluentis visualizza l'**Ultimo anno gestionale esistente** (preso dai parametri di contabilità) e il filtro per i *contatori non validi per il prossimo anno*.
+Al abrir el formulario, Fluentis mostrará el **ultimo anno gestionale esistente** (tomado de los parámetros de contabilidad) y el filtro para los *contadores no válidos para el próximo año*.
 
-La griglia presenta la lista dei numeratori non definiti (o non definiti correttamente) per l'anno prossimo permettendo all'utente, con un doppio click, di identificare il motivo: generalmente il problema risiede nella configurazione del numeratore con una data di fine validità senza un motivo valido, costringendo (prima della creazione del presente automatismo) a creare una nuova riga ogni anno, anziché impostare il numeratore con l'opzione Annuale che riparte da capo ogni anno automaticamente, tuttavia potrebbe essere che il numeratore sia stato bloccato per un motivo preciso (cambio di politica della numerazione ecc.).
+La cuadrícula presenta la lista de numeradores no definidos (o no definidos correctamente) para el próximo año, permitiendo al usuario, con un doble clic, identificar la razón: generalmente el problema radica en la configuración del numerador con una fecha de fin de validez sin una razón válida, obligando (antes de la creación del presente automatismo) a crear una nueva línea cada año, en lugar de establecer el numerador con la opción Anual que reinicia automáticamente cada año. Sin embargo, podría ser que el numerador haya sido bloqueado por una razón específica (cambio de política de numeración, etc.).
 
-#### Pulsanti specifici 
+#### Botones específicos
 
-> **Creazione**: il pulsante mostra un messaggio di conferma della correzione automatica dei numeratori per le righe selezionate nella griglia.  
-> **Rollback**: esegue il ripristino della procedura.
+> **creazione**: el botón muestra un mensaje de confirmación de la corrección automática de los numeradores para las líneas seleccionadas en la cuadrícula.  
+> **rollback**: realiza la restauración del procedimiento.
 
-*Esempio*  
-Se al messaggio si risponde in modo:  
-- affermativo, saranno tolte le date fine validità dei numeratori che sono stati (si suppone) erroneamente chiusi nell'anno 2017 dell'esempio (non si sbloccheranno quindi numeratori chiusi negli anni precedenti), impostandoli inoltre come ‘annuali' in modo da renderli validi per sempre.  
-- negativo, i numeratori Fluentis resteranno come sono.
+*Ejemplo*  
+Si al mensaje se responde de la siguiente manera:  
+- afirmativamente, se eliminarán las fechas de fin de validez de los numeradores que se han (supuestamente) cerrado erróneamente en el año 2017 del ejemplo (por lo que no se desbloquearán numeradores cerrados en años anteriores), configurándolos además como ‘anuales’ para que sean válidos para siempre.  
+- negativamente, los numeradores de Fluentis permanecerán como están.
 
+Hagamos algunos ejemplos:
 
-Facciamo qualche esempio:
+A) supongamos que el último año es 2017, numerador de facturas de Fluentis con código ‘1’ configurado con fecha de fin de validez 2020 y, por lo tanto, válido para 2018; el procedimiento también creará el numerador ex-Ideale2010 con código 1 para 2018.
 
-A) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘1' impostato con data di fine validità 2020 e quindi valido per il 2018, la procedura andrà a creare anche il numeratore ex-Ideale2010 con codice 1 per il 2018.
+B) supongamos que el último año es 2017, numerador de facturas de Fluentis con código ‘2’ configurado con fecha de fin de validez 2017 y, por lo tanto, NO válido para 2018; si el usuario confirma la corrección del numerador de Fluentis, se eliminará la fecha de fin de validez y se configurará el tipo como anual, y luego se recreará el numerador correspondiente ex-Ideale2010 con código ‘2’; en caso de que el numerador de Fluentis no se corrija, este numerador no será válido para 2018 y, por lo tanto, el numerador ex-Ideale2010 con código ‘2’ permanecerá bloqueado.
 
-B) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘2' impostato con data di fine validità 2017 e quindi NON valido per il 2018, se l'utente conferma la sistemazione del numeratore Fluentis allora nel numeratore sarà tolta la data fine validità e impostato il tipo come annuale e poi sarà ricreato il corrispondente numeratore ex-Ideale2010 con codice ‘2'; in caso il numeratore Fluentis non venga sistemato, questo numeratore non sarà valido per il 2018 e quindi anche il numeratore ex-Ideale2010 con codice ‘2' resterà bloccato.
-
-C) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘3' senza data fine validità e quindi valido per il 2018, la procedura andrà a creare anche il numeratore ex-Ideale2010 con codice 3 per il 2018 (indipendentemente da come l'utente risponde al messaggio di conferma della sistemazione Fluentis).
+C) supongamos que el último año es 2017, numerador de facturas de Fluentis con código ‘3’ sin fecha de fin de validez y, por lo tanto, válido para 2018; el procedimiento también creará el numerador ex-Ideale2010 con código 3 para 2018 (independientemente de cómo el usuario responda al mensaje de confirmación de la corrección de Fluentis).
 
 :::tip NOTA
-Questa utilità permette di creare anche i parametri di contabilità per il nuovo anno. Verrà visualizzato un apposito messaggio che chiede di confermare. Si consiglia di accettare la creazione, diversamente i parametri di contabilità, **necessari** per eseguire qualsiasi registrazione contabile dovranno essere creati, per il nuovo anno dalla [**apposita form**](/docs/configurations/parameters/finance/accounting-parameters).
+Esta utilidad permite crear también los parámetros de contabilidad para el nuevo año. Se mostrará un mensaje específico que pide confirmación. Se recomienda aceptar la creación; de lo contrario, los parámetros de contabilidad, **necesarios** para realizar cualquier registro contable, deberán ser creados para el nuevo año desde la [**formulario correspondiente**](/docs/configurations/parameters/finance/accounting-parameters).
 :::

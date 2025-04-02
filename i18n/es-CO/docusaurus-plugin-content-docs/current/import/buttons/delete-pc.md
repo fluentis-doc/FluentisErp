@@ -1,1 +1,1 @@
-- **Cancella centri di profitto**: permette di cancellare la riga centro di profitto selezionata
+- **cancella centri di profitto**: permite eliminar la línea del centro de beneficios seleccionada.

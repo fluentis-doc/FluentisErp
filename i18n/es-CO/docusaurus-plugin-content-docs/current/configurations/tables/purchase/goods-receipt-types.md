@@ -1,24 +1,24 @@
 ---
-title: Tipi ricevimento merci
+title: tipi ricevimento merci
 sidebar_position: 4
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi Ricevimento merci** ed è utilizzato per determinare le proprietà di un ricevimento merce.
+La tabla se abre a través de la ruta **Tablas (Tabelle) > Compras (Acquisti) > tipi ricevimento merci (Tipi Ricevimento merci)** y se utiliza para determinar las propiedades de una recepción de mercancías.
 
-I campi presenti sono:
+Los campos presentes son:
 
-**Codice**: codice del tipo ricevimento merci.
+**codice**: código del tipo de recepción de mercancías.  
 
-**Descrizione**: descrizione del tipo ricevimento merci.
+**descrizione**: descripción del tipo de recepción de mercancías.  
 
-**Bolla di consegna**: se attivo, il sistema permette la generazione di una DDT dal ricevimento merci. Se non attivo, non sarà possibile generare la DDT dal ricevimento merci quindi le operazioni di carico a magazzino e registrazione DDT rimarranno non collegate. 
+**bolla di consegna**: si está activo, el sistema permite la generación de un DDT a partir de la recepción de mercancías. Si no está activo, no será posible generar el DDT a partir de la recepción de mercancías, por lo que las operaciones de carga en almacén y registro de DDT permanecerán no vinculadas.  
 
-**Fattura**: se attivo, il sistema permette la generazione di una fattura dal ricevimento merci. Se non attivo, non sarà possibile generare la fattura dal ricevimento merci quindi l'operazione di carico a magazzino resterà non collegata. 
+**fattura**: si está activo, el sistema permite la generación de una factura a partir de la recepción de mercancías. Si no está activo, no será posible generar la factura a partir de la recepción de mercancías, por lo que la operación de carga en almacén quedará no vinculada.  
 
-**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine con quantità parziali nello stesso ricevimento merci questo flag consentirà di riportare le quantità evase dell'ordine suddivise per riga articolo senza sommare le quantità.
+**evasione quantità articolo non sommata**: si está configurado, en el momento en que se cumplan líneas de pedido con cantidades parciales en la misma recepción de mercancías, este indicador permitirá reportar las cantidades cumplidas del pedido divididas por línea de artículo sin sumar las cantidades.  
 
-**Numerazione**: determina la [Numerazione](/docs/configurations/tables/fluentis-numerations) e la relativa **Descrizione** che è associata al *Tipo ricevimento merci*. 
+**numerazione**: determina la [Numeración](/docs/configurations/tables/fluentis-numerations) y la correspondiente **descrizione** que está asociada al *Tipo de recepción de mercancías (Tipo ricevimento merci)*.  
 
-**Controllo qualità**: i *tipi Ricevimento* che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+**controllo qualità**: los *tipos de recepción (tipi Ricevimento)* que tienen este indicador activo son visibles en el formulario [Importar artículos a controlar (Importa articoli da controllare)](/docs/quality/item-control/items-control/item-control-import/) ubicado en el área *qualità*.  
 
-**Gerstione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ricevimento e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.
+**Gestión de activos (Gerstione cespiti)**: este indicador permite habilitar la [Gestión de activos (Gestione cespiti)](/docs/finance-area/fixed-assets/general-overview) para ese tipo de recepción y seleccionar el **tipo operazione** que se desea realizar, que en el caso de las compras será un *costo originario*.

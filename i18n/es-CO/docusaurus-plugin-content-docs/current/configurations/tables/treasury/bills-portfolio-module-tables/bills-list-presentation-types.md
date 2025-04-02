@@ -1,41 +1,39 @@
 ---
-title: Tipi presentazione distinte effetti
+title: tipi presentazione distinte effetti
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-La tabella è collegata al campo *Tipo* presente nella testata della distinta di presentazione effetti. 
+La tabla está conectada al campo *Tipo* presente en el encabezado de la lista de presentación de efectos. 
 
-Viene compilata attraverso l'imposizione di un codice e di una descrizione, ai quali va assegnato poi un numeratore di riferimento.
+Se completa mediante la imposición de un código y una descripción, a los cuales se les asignará luego un numerador de referencia.
 
-Le opzioni ulteriori previste nella maschera offrono la possibilità di definire:
+Las opciones adicionales previstas en la máscara ofrecen la posibilidad de definir:
 
-- **Giro a Fornitore:** se il tipo distinta sia da gestire come distinta di giro effetti/titoli a fornitore;
+- **Giro a Proveedor (Giro a Fornitore):** si el tipo de lista debe gestionarse como lista de giro de efectos/títulos a proveedor;  
 
-- **Utenze:** se il tipo distinta sia da gestire come distinta RID attualmente sostituita dal tipo SDD (Sepa Direct Debit - a livello europero) nella creazione del file telematico nel modulo RIBA. Attivando il flag viene abilitato il pulsante di esportazione del tracciato corrispondente nella ribbon bar della form relativa alla distinta di presentazione.
+- **Servicios (Utenze):** si el tipo de lista debe gestionarse como lista RID, actualmente reemplazada por el tipo SDD (Sepa Direct Debit - a nivel europeo) en la creación del archivo telemático en el módulo RIBA. Al activar el indicador, se habilitará el botón de exportación de la traza correspondiente en la barra de herramientas del formulario relacionado con la lista de presentación.
 
-- **LCR:** il corrispondente francese delle nostre Riba. Impostando questo flag, nella distinta sarà attivo il pulsante di export LCR e non l’export normale
+- **LCR:** el correspondiente francés de nuestras Riba. Al configurar este indicador, en la lista será activo el botón de exportación LCR y no la exportación normal.
 
-- **Accredito Immediato:** quando impostato la contabilizzazione distinte registra in DARE il conto banca e in AVERE il conto transitorio banca (esempio *Banca X C/ S.B.F.*) mentre
-la contabilizzazione accrediti avrà in dare il conto transitorio banca e in avere il conto del tipo effetto (esempio il conto *Effetti attivi in portafoglio*). 
+- **Acreditación Inmediata (Accredito Immediato):** cuando está configurado, la contabilización de las listas registra en DARE la cuenta bancaria y en AVERE la cuenta transitoria bancaria (por ejemplo, *Banca X C/ S.B.F.*), mientras que la contabilización de los créditos tendrá en DARE la cuenta transitoria bancaria y en AVERE la cuenta del tipo de efecto (por ejemplo, la cuenta *Efectos activos en cartera*). 
 
-Quando il flag è disattivato si torna alla logica standard: in DARE il conto transitorio e in avere il conto preso dal tipo effetto (esempio il conto *Effetti attivi in portafoglio*),mentre la contabilizzazione accrediti prevede com’è sempre stato in dare il conto banca e in avere il conto transitorio banca.
+Cuando el indicador está desactivado, se vuelve a la lógica estándar: en DARE la cuenta transitoria y en AVERE la cuenta tomada del tipo de efecto (por ejemplo, la cuenta *Efectos activos en cartera*), mientras que la contabilización de créditos prevé como siempre en DARE la cuenta bancaria y en AVERE la cuenta transitoria bancaria.
 
-Questa impostazione non è compatibile con altre due logiche attivabile dalla form Parametri portafoglio effetti: il flag di *Chiusura cliente in contabilizzazione distinta* non andrà impostato (perché fa saltare il passaggio sul conto effetti, con il presente flag del tipo distinta attivo andrebbe di fatto a impedire la chiusura del cliente). Anche utilizzare le opzioni di contabilizzazione distinte alla data maturazione risulta poco logico con il presente flag attivo.
+Esta configuración no es compatible con otras dos lógicas que pueden activarse desde el formulario Parámetros de cartera de efectos: el indicador de *Cierre de cliente en contabilización de lista* no debe configurarse (porque interrumpe el paso sobre la cuenta de efectos; con este indicador del tipo de lista activo, en realidad impediría el cierre del cliente). También usar las opciones de contabilización de listas a la fecha de maduración resulta poco lógico con este indicador activo.
 
-- **Codice esterno:** campo utilizzato nel tracciato SDD per definire se è la distinta è di tipo *CORE* o *B2B*. Fare  riferimento alla documentazione tecnica dei tracciati SDD.
+- **Código externo (Codice esterno):** campo utilizado en la traza SDD para definir si la lista es de tipo *CORE* o *B2B*. Hacer referencia a la documentación técnica de las trazas SDD.
 
+- **Las cuentas (I conti)**
 
-- **I conti**
+- Cuenta / Subcuenta / Descripción **banca** 
+- Cuenta / Subcuenta / Descripción **Transitorio Banco (Transitorio Banca)** 
 
-- Conto / Sottoconto / Descrizione **Banca**
-- Conto / Sottoconto / Descrizione **Transitorio Banca**
+pueden ser asociados al tipo de lista para automatizar y definir la movimentación contable al crear una nueva lista: se trata de la subcuenta del registro bancario sobre la que se realizará el acreditamiento final de efectos y del transitorio de presentación para la contabilización de listas (típicamente, por ejemplo *Banca X C/ S.B.F.*).
 
-possono essere associati al tipo di distinta per automatizzare e definire la movimentazione contabile all'atto della creazione di una nuova distinta: si tratta del sottoconto di anagrafica banca sulla quale avverrà l'accredito finale effetti e del transitorio di presentazione per la contabilizzazione distinte (tipicamente ad esempio *Banca X C/ S.B.F.*).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

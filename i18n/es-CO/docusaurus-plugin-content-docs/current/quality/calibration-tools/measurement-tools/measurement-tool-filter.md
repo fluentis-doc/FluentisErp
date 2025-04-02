@@ -1,50 +1,48 @@
 ---
-title: Ricerca Strumenti di misura
+title: Búsqueda de Instrumentos de Medida (Ricerca Strumenti di misura)
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Taratura strumenti > Strumenti di misura**.   
+El filtro se encuentra en la ruta **Calidad > Calibración de instrumentos > Instrumentos de medida (Qualità > Taratura strumenti > Strumenti di misura)**.
 
-Il filtro dati consente di inserire nuovi *Strumenti di misura* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+El filtro de datos permite insertar nuevos *strumenti di misura* o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-### ![](/img/neutral/common/search.png) Ricerca Strumenti di misura
+### ![](/img/neutral/common/search.png) Búsqueda de Instrumentos de Medida
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario consta de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/new.png) Inserimento Strumenti di misura
+### ![](/img/neutral/common/new.png) Ingreso de Instrumentos de Medida
 
-Per poter inserire nuovi *Strumenti di misura* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevos *strumenti di misura* es necesario presionar el botón **nuovo**.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Strumenti di misura
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Instrumentos de Medida
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-*Pulsanti specifici*: 
+*Botones específicos:*
 
-### Pianifica nuove tarature
+### Planificar nuevas calibraciones
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Strumento di misura* e lo *Strumento* deve essere:   
-> *Attivo*;   
-> *Soggetto a taratura*;   
-> a taratura periodica e di tipo temporale (expander *Proprietà di taratura* con *Periodo di taratura* diverso da *zero* e *Unità di misura* di tipo *Giorno* o *Mese*).   
+El botón está habilitado solamente si, desde la cuadrícula de resultados, se selecciona un solo *strumento di misura* y el *Instrumento* debe ser:  
+> *attivo*;  
+> *Sujeto a calibración (Soggetto a taratura)*;  
+> de calibración periódica y de tipo temporal (expandir *proprietà di taratura* con *Período de calibración (Periodo di taratura)* diferente de *cero* y *unità di misura* de tipo *giorno* o *mese*).  
 
-Per poter pianificare nuove *Tarature strumento pianificate* da uno *Strumento di misura* è necessario cliccare nella griglia sullo *Strumento di misura* da cui si desidera pianificare le *Tarature* e premere il pulsante **Pianifica nuove tarature**. Si può pianificare un solo *Strumento di misura* alla volta.   
-Verrà visualizzata una richiesta di:   
-> **Pianificare fino al**: è la data di fine periodo di pianificazione (dato obbligatorio), viene proposto un anno di pianificazione a partire dalla data odierna.   
+Para poder planificar nuevas *Calibraciones de instrumentos planificadas (Tarature strumento pianificate)* de un *Instrumento de medida*, es necesario hacer clic en la cuadrícula en el *Instrumento de medida* desde el cual se desea planificar las *Calibraciones* y presionar el botón **pianifica nuove tarature**. Se puede planificar un solo *Instrumento de medida* a la vez.  
+Aparecerá una solicitud de:  
+> **pianificare fino al**: es la fecha de fin del período de planificación (dato obligatorio), se propone un año de planificación a partir de la fecha actual.  
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di pianifica o meno.   
+Presionar después el botón **OK** o el botón **cancel** si se desea continuar con la actividad de planificación o no.
 
-*Metodo utilizzato per la pianificazione*:   
-Come prima cosa si eliminano tutte le precedenti *Tarature* pianificate e non ancora attuate per lo *Strumento*.  
-Successivamente, a partire dalla data di ultima *Taratura*, si creano tante *Tarature* quante sono possibili creare nell'intervallo richiesto a partire dalla data odierna e cadenziate per il *Periodo di taratura*. Se la data proposta ricade in una giornate non lavorativa specificata nel *Calendario di fabbrica* la data proposta verrà posticipata alla prima data lavorativa utile.   
-Se per lo strumento non è mai stata pianificata o effettuata una *Taratura* o l'ultima data di *Taratura* risale a un periodo antecedente alla data odierna detratta dal
-*Periodo di taratura*, la prima *Taratura* sarà proposta in data odierna e successivamente le altre.
+*Método utilizado para la planificación:*  
+Como primer paso, se eliminan todas las *Calibraciones (Tarature)* planificadas anteriormente y no llevadas a cabo para el *Instrumento*.  
+A continuación, a partir de la fecha de la última *taratura*, se crean tantas *Calibraciones* como sea posible dentro del intervalo solicitado a partir de la fecha actual, y escalonadas según el *Período de calibración (Periodo di taratura)*. Si la fecha propuesta cae en un día no laborable especificado en el *calendario di fabbrica*, la fecha propuesta se pospondrá hasta la primera fecha laborable disponible.  
+Si para el instrumento nunca se ha planificado o realizado una *taratura* o si la última fecha de *taratura* fue anterior a la fecha actual menos el *Período de calibración (Periodo di taratura)*, la primera *Calibración* se propondrá para la fecha actual y posteriormente las demás.
 
-### Nuova taratura
+### Nueva calibración
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Strumento di misura* e lo *Strumento* deve essere *Attivo*.   
-Per poter creare una nuova *Taratura strumento* da uno *Strumento di misura* è necessario cliccare nella griglia sullo *Strumento di misura* da cui si desidera creare le *Taratura* e premere il pulsante **Nuova taratura**. Si può creare una *Taratura strumento* da un solo *Strumento di misura* alla volta.   
-Al termine dell'elaborazione la nuova *Taratura strumento pianificata* viene visualizzata.   
+El botón está habilitado solamente si, desde la cuadrícula de resultados, se selecciona un solo *strumento di misura* y el *Instrumento* debe estar *attivo*.  
+Para poder crear una nueva *taratura strumento* de un *Instrumento de medida*, es necesario hacer clic en la cuadrícula en el *Instrumento de medida* desde el cual se desea crear las *Calibraciones* y presionar el botón **nuova taratura**. Se puede crear una *Calibración de instrumento* de un solo *Instrumento de medida* a la vez.  
+Al finalizar el procesamiento, la nueva *Calibración de instrumento planificada (Taratura strumento pianificata)* se visualizará.
 
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,87 +1,85 @@
 ---
-title: Importa articoli da controllare
+title: importa articoli da controllare
 sidebar_position: 2
 ---
 
-La procedura di importazione si trova sul percorso **Qualità > Controlli articolo > Controlli articolo > Importa articoli da controllare**.   
+El procedimiento de importación se encuentra en la ruta **Calidad > Controles de artículo > Controles de artículo > Importar artículos para controlar**.
 
+:::important ¿Para qué sirve? (A cosa serve)
+Esta gestión permite crear nuevos *Controles de artículo* importando los *Artículos* a controlar de los *Tipos de documento* previstos:   
+> **ricevimento merci***   
+> **ddt di acquisto***   
+> **fatture di acquisto***   
+> **dichiarazioni di produzione***   
+> ***Fases de la orden de producción (Fasi ordine di produzione)***   
+> ***Devoluciones de trabajo (Rientri di conto lavoro)***   
+> ***Movimientos de carga (Movimentazioni di carico)***   
 
-:::important A cosa serve
-Questa gestione permette di creare nuovi *Controlli articolo* importando gli *Articoli* da controllare dai *Tipi documento* previsti:   
-> ***Ricevimento merci***   
-> ***DDT di acquisto***   
-> ***Fatture di acquisto***   
-> ***Dichiarazioni di produzione***   
-> ***Fasi ordine di produzione***   
-> ***Rientri di conto lavoro***   
-> ***Movimentazioni di carico***   
-
-associarli al *Piano di controllo* previsto per poi, tramite rilevazioni visive o con l'ausilio di *Strumenti di misura*, andare a verificare la loro conformità.   
+asociarlos al *Plan de control* establecido para luego, a través de observaciones visuales o con la ayuda de *Herramientas de medición*, verificar su conformidad.   
 :::
 
+El formulario se divide en:
+- un área de filtro, contextual al *Tipo de documento* del cual se desean importar los *Artículos* para controlar;   
+- un área compuesta por diferentes pestañas, una para cada *Tipo de documento*, cada una de las cuales contiene las cuadrículas dedicadas al resultado del filtro.   
 
-La form è suddivisa in:
-- un'area di filtro, contestuale al *Tipo documento* da cui si desiderano importare gli *Articoli* da controllare;   
-- un'area composta da diversi tabulatori, uno per *Tipo documento*,  ognuno dei quali contiene le griglie dedicate al risultato del filtro.   
+## Botones específicos (Pulsanti specifici)
 
-## Pulsanti specifici
+### ![](/img/neutral/common/search.png) Buscar líneas de documento a importar (Ricerca righe documento da importare)
 
-### ![](/img/neutral/common/search.png) Ricerca righe documento da importare
+El área de filtro y la pestaña que contiene la cuadrícula de resultados varían una vez que se indica el *Tipo de documento*.   
+Configurados los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.   
+Del *Tipo de documento* seleccionado, solo se mostrarán las líneas del documento de artículos:   
+- codificados para *ricevimento merci*, *ddt di acquisto*, *fatture di acquisto* y *Devoluciones de trabajo (Rientri di conto lavoro)*;   
+- con cantidades producidas y/o descartadas para *dichiarazioni di produzione*;   
 
-L'area di filtro e il tabulatore contenente la griglia risultato variano una volta indicato il *Tipo documento*.   
-Impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
-Del *Tipo documento* selezionato, verranno visualizzate solamente le righe documento di articoli:   
-- codificati per *Ricevimento merci*, *DDT di acquisto*, *Fatture di acquisto* e *Rientri di conto lavoro*;   
-- con quantità prodotte e/o scartate per *Dichiarazioni di produzione*;   
+para los demás *tipos de documento* de *Fases de orden de producción (Fasi ordine di produzione)* y *Movimientos de carga (Movimentazioni di carico)* se visualizarán todas las líneas del documento.   
 
-per i restanti *tipi documento* di *Fasi ordine di produzione* e *Movimentazioni di carico* verranno visualizzate tutte le righe documento.   
+### Confirmar líneas de documento a importar (Conferma righe documento da importare)
 
-### Conferma righe documento da importare
-
-Abilitato se si seleziona almeno una riga dalla griglia risultato e il *Tipo controllo* da creare.   
-Selezionate le righe desiderate è necessario cliccare sul pulsante **Conferma** per associare i *Piani di controllo* e creare i *Controlli articolo*.   
-Al termine dell'operazione viene richiesto se proseguire nell'attività di importazione o aprire i *Controlli articolo* appena creati.   
+Habilitado si se selecciona al menos una línea de la cuadrícula de resultados y el *Tipo de control* a crear.   
+Una vez seleccionadas las líneas deseadas, es necesario hacer clic en el botón **conferma** para asociar los *Planes de control* y crear los *Controles de artículo*.   
+Al finalizar la operación, se pregunta si se quiere continuar con la actividad de importación o abrir los *Controles de artículo* recién creados.   
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
 <ControlPlanSearchMethod />
 
-## Gestione Importa articoli da controllare
+## Gestión Importar artículos para controlar (Gestione Importa articoli da controllare)
 
-### Area di filtro
+### Área de filtro (Area di filtro)
 
-L'area è composta da una parte fissa dove vengono riportati i filtri di ricerca relativi alle informazioni generali e da una parte variabile e contestuale al *Tipo documento* selezionato; la parte variabile viene visualizzata al di sotto dell'expander *Articolo*.   
-I filtri di ricerca relativi alle informazioni generali sono:   
-> **Tipo documento**: è il *Tipo documento* nel quale ricercare le informazioni.   
-> All'esecuzione della gestione viene proposto il *Tipo documento* indicato come *Default* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*; se non indicato viene proposto *DDT di acquisto*.   
-> La proposta automatica, o la successiva variazione da parte dell'operatore, faranno variare la parte variabile del filtro dati e il tabulatore visualizzato.
+El área se compone de una parte fija donde se presentan los filtros de búsqueda relacionados con la información general y de una parte variable y contextual al *Tipo de documento* seleccionado; la parte variable se visualiza debajo del expandible *articolo*.   
+Los filtros de búsqueda relacionados con la información general son:   
+> **tipo documento**: es el *Tipo de documento* en el que se busca la información.   
+> Al ejecutar la gestión, se proponen el *Tipo de documento* indicado como *default* en la lista *Tipos de documento para la importación (Tipi documento per l'importazione)* presente en la pestaña *controlli articolo* de los *Parámetros de controles de artículo (Parametri controlli articolo)*; si no se indica, se propone *ddt di acquisto*.   
+> La propuesta automática, o la posterior variación por parte del operador, harán variar la parte variable del filtro de datos y la pestaña visualizada.  
 >   
-> **Dettaglio articolo**: è il tipo di dettaglio da controllare dell'*Articolo* per la tipologia documento specifica.   
-> E' un elenco di valori predefiniti dal sistema:   
-> - *Nessuno* - la riga *Articolo* considerata non prenderà alcun dato di dettaglio;   
-> - *Lotto* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Lotto*;   
-> - *S.N.* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Serial Number*;   
-> - *UDC* - la riga *Articolo* considerata prenderà come massimo dettaglio l'*Unità di Carico*.   
+> **dettaglio articolo**: es el tipo de detalle a controlar del *Artículo* para la tipología de documento específica.   
+> Es una lista de valores predeterminados por el sistema:   
+> - *nessuno* - la línea de *Artículo* considerada no tomará ningún dato de detalle;   
+> - *lotto* - la línea de *Artículo* considerada tomará como máximo detalle el *Lote*;   
+> - *s.n.* - la línea de *Artículo* considerada tomará como máximo detalle el *serial number*;   
+> - *udc* - la línea de *Artículo* considerada tomará como máximo detalle la *unità di carico*.   
 >   
-> All'esecuzione della gestione viene proposto il *Dettaglio articolo* indicato in *Dettaglio articolo* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*.   
+> Al ejecutar la gestión, se propone el *Detalle de artículo* indicado en *Detalle de artículo* en la lista *Tipos de documento para la importación (Tipi documento per l'importazione)* presente en la pestaña *controlli articolo* de los *Parámetros de controles de artículo (Parametri controlli articolo)*.   
 >
-> **Tipo controllo**: il codice del *Tipo controllo* da associare al *Controllo articoli* da creare.   
-> All'esecuzione della gestione viene proposto il *Tipo controllo* indicato in *Tipo controllo* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*.   
+> **tipo controllo**: el código del *Tipo de control* que se asociará al *Control de artículos* a crear.   
+> Al ejecutar la gestión, se propone el *Tipo de control* indicado en *Tipo de control* en la lista *Tipos de documento para la importación (Tipi documento per l'importazione)* presente en la pestaña *controlli articolo* de los *Parámetros de controles de artículo (Parametri controlli articolo)*.   
 >   
-> expander **Dettaglio**   
->> **Non ancora considerate**: indica se ricercare solamente le righe del documento non ancora considerate in precedenti importazioni.   
->> **Già considerate**:  indica se ricercare, oltre a quelle non ancora considerate, anche le righe del già considerate in precedenti importazioni (solitamente utilizzata nel caso si desideri effettuare ulteriori controlli).   
+> expandible **dettaglio**   
+>> **non ancora considerate**: indica si buscar solo las líneas del documento que no se han considerado en importaciones anteriores.   
+>> **già considerate**: indica si buscar, además de las no consideradas, también las líneas ya consideradas en importaciones anteriores (generalmente utilizada en caso de deseo de realizar más controles).   
 >   
-> **Bar Code**: è il codice che abilitato al riconoscimento di: *Articolo*, *Unità di carico*, *Lotto* e *Serial number*.   
+> **bar code**: es el código habilitado para el reconocimiento de: *articolo*, *unità di carico*, *lotto* y *serial number*.   
 >   
-> expander **Articolo**
->> **Unità di carico**: è il codice formattato dell'*Unità di carico*.   
->> **Lotto**: è il codice del *Lotto*.   
->> **Serial number**: è il codice del *Serial number*.   
+> expandible **articolo**  
+>> **unità di carico**: es el código formateado de la *unità di carico*.   
+>> **lotto**: es el código del *lotto*.   
+>> **serial number**: es el código del *serial number*.   
 
-### Area di risultato   
+### Área de resultados (Area di risultato)  
 
-Contenuta in ogni tabulatore, è la "griglia" che contiene il risultato della *Ricerca* applicata all'area di filtro.   
-Le informazioni contenute nell'elenco sono contestuali al *Tipo documento* selezionato.   
+Contenida en cada pestaña, es la "cuadrícula" que contiene el resultado de la *ricerca* aplicada al área de filtro.   
+La información contenida en la lista es contextual al *Tipo de documento* seleccionado.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consultar el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

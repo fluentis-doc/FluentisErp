@@ -1,19 +1,11 @@
 ---
-title: Ripristino
+title: ripristino
 sidebar_position: 3
 ---
 
-La scheda di Ripristino consente di visualizzare la registrazione contabile attraverso un doppio click nella sezione relativa alle registrazioni, così come l'annullamento parziale/totale delle operazioni selezionate. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite).
+La pestaña de ripristino (Ripristino) permite visualizar el registro contable a través de un doble clic en la sección correspondiente a los registros, así como la anulación parcial/total de las operaciones seleccionadas. La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Ricerca la lista delle contabilizzazioni eseguite. |
-| Ripristina contabilizzazione | Esegue il ripristino delle registrazioni contabili selezionate. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Busca la lista de las contabilizaciones realizadas. |
+| Restaurar contabilización (Ripristina contabilizzazione) | Realiza la restauración de los registros contables seleccionados. |

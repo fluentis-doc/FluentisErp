@@ -1,47 +1,47 @@
 ---
-title: Proposte di soluzione
+title: proposte di soluzione
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Proposte di soluzione**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Quejas y No conformidades > proposte di soluzione** (Tabelle > Qualità > Reclami e Non conformità > Proposte di soluzione).
 
-In questa tabella è possibile codificare le *Decisioni* tecniche/gestionali che sono state intraprese per risolvere i *Difetti riscontrati*.   
-Alcuni esempi di utilizzo di *Proposte di soluzione* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+En esta tabla es posible codificar las *Decisiones* técnicas/gestionales que se han tomado para resolver los *Defectos encontrados*.  
+Algunos ejemplos de uso de *proposte di soluzione* los encontramos en la gestión de:
+> **reclami** - en la pestaña *Gestión de defectos > Datos del defecto (Gestione difetti > Dati difetto)*;  
+> **non conformità** - en la pestaña *Gestión de defectos > Datos del defecto (Gestione difetti > Dati difetto)*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Proposte di soluzione**
+**Búsqueda de proposte di soluzione (Ricerca Proposte di soluzione)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Proposte di soluzione**
+**Inserción de proposte di soluzione (Inserimento Proposte di soluzione)**
 
-Per poter inserire nuove *Proposte di soluzione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *proposte di soluzione*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## Proposte di soluzione
+## proposte di soluzione (Proposte di soluzione)
 
-E' l'elenco dove vengono inserite le informazioni principali della *Proposta di soluzione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Proposta di soluzione*.   
-> **Descrizione proposta di soluzione**: è la descrizione della *Proposta di soluzione*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la decisione è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan las principales informaciones de la *Propuesta de solución*.  
+La lista se compone de la siguiente información:  
+> **codice**: es el código de la *Propuesta de solución*.  
+> **descrizione proposta di soluzione**: es la descripción de la *Propuesta de solución*.  
+> **Puntuación de cálculo del índice de calificación del proveedor (Punteggio calcolo indice di qualificazione fornitore)**: es la puntuación de deducción del *Bonus* utilizado durante la *Evaluación periódica de proveedores sobre No conformidades (Valutazione periodica fornitori su Non conformità)*.  
+> **attiva**: indica si la decisión sigue siendo válida y utilizable.  
+> **note**: anotaciones libres.
 
-### Coinvolgimento soggetti
+### Participación de sujetos (Coinvolgimento soggetti)
 
-In questo elenco è possibile associare le *Funzioni aziendali* e/o *Dipendenti* per il loro coinvolgimento nelle gestioni dei *Reclami* e *Non conformità*.   
-All'indicazione della *Proposta di soluzione* questi soggetti verranno proposti nell'elenco dei *Soggetti coinvolti* delle suddette gestioni.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di coinvolgimento del soggetto per la "Proposta di soluzione" selezionata.   
-> **Funzione aziendale**: è il codice della *Funzione aziendale* da coinvolgere.   
-> **Descrizione funzione aziendale**: è la descrizione della *Funzione aziendale* da coinvolgere.   
-> **Dipendente**: è il codice del *Dipendente* da coinvolgere.   
-> **Nome completo**: è il cognome e il nome del Dipendente* da coinvolgere.   
-> **Descrizione soggetto**: è la libera descrizione di un soggetto non codificato da coinvolgere.   
-> **Motivo del coinvolgimento**: è la libera descrizione del motivo che verrà proposto nell'elenco dei *Soggetti coinvolti* nelle gestioni dei *Reclami* e *Non conformità*.   
+En esta lista es posible asociar las *Funciones empresariales* y/o *Empleados* para su participación en la gestión de las *reclami* y *non conformità*.  
+Al indicar la *Propuesta de solución*, estos sujetos serán propuestos en la lista de *Sujetos involucrados* en las mencionadas gestiones.  
+La lista se compone de la siguiente información:  
+> **sequenza**: es la secuencia de participación del sujeto para la "Propuesta de solución" seleccionada.  
+> **funzione aziendale**: es el código de la *Función empresarial* a involucrar.  
+> **descrizione funzione aziendale**: es la descripción de la *Función empresarial* a involucrar.  
+> **dipendente**: es el código del *Empleado* a involucrar.  
+> **nome completo**: es el apellido y el nombre del *Empleado* a involucrar.  
+> **descrizione soggetto**: es la descripción libre de un sujeto no codificado a involucrar.  
+> **motivo del coinvolgimento**: es la descripción libre del motivo que se propondrá en la lista de *Sujetos involucrados* en la gestión de las *Quejas* y *No conformidades*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

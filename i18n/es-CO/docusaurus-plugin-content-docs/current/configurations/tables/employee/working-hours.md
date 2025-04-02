@@ -1,13 +1,13 @@
 ---
-title: Orari di lavoro
+title: orari di lavoro
 sidebar_position: 7
 ---
 
-In questa tabella sono configurati i vari monte ore di lavoro che possono esserci a livello aziendale, come ad es. full time, part time, part time 60% etc. 
-I valori presenti vengono utilizzati sia nell'anagrafica risorse e dipendenti, sia nei parametri generali dei progetti. 
+En esta tabla se configuran las diversas horas de trabajo que pueden existir a nivel empresarial, como por ejemplo: tiempo completo (full time), tiempo parcial (part time), tiempo parcial al 60% (part time 60%), etc.  
+Los valores presentes son utilizados tanto en el registro de recursos y empleados como en los parámetros generales de los proyectos.  
 
-**Codice**: codice della riga. 
+**codice**: código de la línea.  
 
-**Descrizione**: descrizione della riga.
+**descrizione**: descripción de la línea.  
 
-**Monte ore**: Ore previste per la riga.
+**Horas (Monte ore)**: Horas previstas para la línea.

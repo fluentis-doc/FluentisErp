@@ -1,41 +1,41 @@
 ---
-title: Difetti riscontrati
+title: difetti riscontrati
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Difetti riscontrati**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Reclamaciones y No conformidades > difetti riscontrati** (Tabelle > Qualità > Reclami e Non conformità > Difetti riscontrati).
 
-In questa tabella è possibile codificare i *Difetti riscontrati* in prodotti, materiali e servizi.   
-Alcuni esempi di utilizzo dei *Difetti riscontrati* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*;   
-> **M.E.S.** - nel tabulatore *Produzione*.
+En esta tabla es posible codificar los *difetti riscontrati* (Difetti riscontrati) en productos, materiales y servicios.  
+Algunos ejemplos de uso de los *difetti riscontrati* son en las gestiones:  
+> **reclami** - en la pestaña *gestione difetti*;  
+> **non conformità** - en la pestaña *gestione difetti*;  
+> **M.E.S.** - en la pestaña *produzione*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Difetti riscontrati**
+**Búsqueda de difetti riscontrati (Ricerca Difetti riscontrati)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+La forma se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Difetti riscontrati**
+**Inserción de difetti riscontrati (Inserimento Difetti riscontrati)**
 
-Per poter inserire nuovi *Difetti riscontrati* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *difetti riscontrati* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos*:  
 
-> **Codice**: è il codice del *Difetto riscontrato*.   
-> **Descrizione difetto riscontrato**: è la descrizione del *Difetto riscontrato*.   
-> **Categoria**: è il codice della *Categoria difetto riscontrato*.   
-> **Descrizione categoria**: è la descrizione della *Categoria difetto riscontrato*.   
-> **Classe**: è la *Classificazione del difetto*.   
-> **Reclami**: indica l'attivazione del difetto nella gestione dei *Reclami*.   
-> **Non conformità interne**: indica l'attivazione del difetto nella gestione delle *Non conformità interne*.   
-> **Non conformità a fornitore**: indica l'attivazione del difetto nella gestione delle *Non conformità a fornitore*.   
-> **Non conformità a cliente**: indica l'attivazione del difetto nella gestione delle *Non conformità a cliente*.   
-> **Dichiarazioni di produzione**: indica l'attivazione del difetto nella gestione delle *Dichiarazioni di produzione*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attivo**: indica se il difetto è ancora valido e utilizzabile.   
-> **Note**: annotazioni libere.
+> **codice**: es el código del *difetto riscontrato*.  
+> **descrizione difetto riscontrato**: es la descripción del *difetto riscontrato*.  
+> **categoria**: es el código de la *categoria difetto riscontrato*.  
+> **descrizione categoria**: es la descripción de la *categoria difetto riscontrato*.  
+> **classe**: es la *Clasificación del defecto (Classificazione del difetto)*.  
+> **reclami**: indica la activación del defecto en la gestión de las *reclami*.  
+> **non conformità interne**: indica la activación del defecto en la gestión de las *non conformità interne*.  
+> **non conformità a fornitore**: indica la activación del defecto en la gestión de las *non conformità a fornitore*.  
+> **non conformità a cliente**: indica la activación del defecto en la gestión de las *non conformità a cliente*.  
+> **dichiarazioni di produzione**: indica la activación del defecto en la gestión de las *dichiarazioni di produzione*.  
+> **Puntuación del cálculo del índice de calificación del proveedor (Punteggio calcolo indice di qualificazione fornitore)**: es el puntaje de deducción del *Bonus* utilizado durante la *Evaluación periódica de proveedores sobre No conformidades (Valutazione periodica fornitori su Non conformità)*.  
+> **attivo**: indica si el defecto sigue siendo válido y utilizable.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de las formas, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

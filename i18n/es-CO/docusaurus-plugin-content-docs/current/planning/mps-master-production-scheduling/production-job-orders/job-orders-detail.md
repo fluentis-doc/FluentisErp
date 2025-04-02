@@ -1,5 +1,5 @@
 ---
-title: Commesse di produzione (dettagli)
+title: Órdenes de producción (detalles) (Commesse di produzione (dettagli))
 sidebar_position: 3
 ---
 
@@ -7,23 +7,23 @@ import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-In base allo stato della commessa (quindi schedulata, esecutiva etc), la riga della commessa avrà un colore diverso. I colori che si possono abbinare allo stato della commessa, vengono stabiliti all'interno dei [Parametri MS](/docs/configurations/parameters/production/mps-parameters), nella sezione *Colori delle commesse*.  
+Según el estado de la orden (programada, ejecutiva, etc.), la fila de la orden tendrá un color diferente. Los colores que se pueden asignar al estado de la orden se establecen dentro de los [Parámetros MS](/docs/configurations/parameters/production/mps-parameters), en la sección *Colores de las órdenes*.  
 
-Sempre da questa form è possibile *creare nuove commesse*, sia **monoprodotto** che **multiprodotto** cliccando sui rispettivi pulsanti presenti nella *Ribbon Bar*: [Inserisci commessa](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Inserisci commessa multiprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+Desde este formulario también se puede *crear nuevas órdenes*, tanto **monoproducto** como **multiproducto** haciendo clic en los respectivos botones presentes en la *Ribbon Bar*: [Insertar orden]( /docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) y [Insertar orden multiproducto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
-Facendo doppio clic su una delle commesse presenti nella griglia di risultato si entrerà nel dettaglio della commessa, i cui dati verranno approfonditi negli articoli Inserimenti nuova commessa monoprodotto e Inserimento nuova commessa multiprodotto.
+Al hacer doble clic en una de las órdenes presentes en la cuadrícula de resultados, se accederá a los detalles de la orden, cuyos datos se abordarán en los artículos Inserción de nueva orden monoproducción e Inserción de nueva orden multiproducción.
 
-La colonna *Costificata*, se il flag è attivo, indica che la commessa ha già almeno una costificazione al suo interno.
+La columna *Costificada (Costificata)*, si el indicador está activo, indica que la orden ya tiene al menos una costificación en su interior.
 
-:::note **Nota bene**
-La differenza tra la form **Commesse di produzione** e la form **Commesse di produzione (dettagli)**, è  che in quest'ultima è possibile visualizzare in griglia anche gli articoli presenti all'interno della commessa, mentre in quella senza dettagli sono visualizzati solo i dati di testata delle commesse di produzione.     
+:::note **Nota bien (Nota bene)** 
+La diferencia entre el formulario **commesse di produzione** y el formulario **Órdenes de producción (detalles) (Commesse di produzione (dettagli))** es que en este último es posible visualizar en la cuadrícula también los artículos presentes dentro de la orden, mientras que en el que no tiene detalles solo se visualizan los datos de encabezado de las órdenes de producción.     
 :::
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Modifica data commessa**: permette di variare la *data di merce pronta* e *di prevista fine* delle commesse selezionate andando ad indicare semplicemente la data nel pop up e confermando;          
-> **Duplica commessa**: permette di duplicare la commessa selezionata;  
-> **Cambia priorità**: consente di cambiare la priorità assegnata alla commessa;  
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;    
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> **modifica data commessa**: permite variar la *fecha de mercancía lista (data di merce pronta)* y *fecha prevista de finalización (di prevista fine)* de las órdenes seleccionadas simplemente indicando la fecha en el pop-up y confirmando;  
+> **duplica commessa**: permite duplicar la orden seleccionada;  
+> **cambia priorità**: permite cambiar la prioridad asignada a la orden;  
+> [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): a través de este botón se puede abrir la pantalla relacionada con los parámetros MRP del artículo;    
+> [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite abrir la pantalla relacionada con la lista de materiales del artículo;  
+> [Ciclos de trabajo (Cicli di lavoro)](/docs/erp-home/registers/production/routes/new-route): permite visualizar el ciclo de trabajo y las fases de producción relacionadas del artículo.

@@ -1,28 +1,28 @@
 ---
-title: Storico ammortamenti
+title: storico ammortamenti
 sidebar_position: 2
 ---
 
-La maschera dello ***Storico ammortamenti*** consente di visualizzare il dettaglio, cespite per cespite, del risultato di elaborazione degli ammortamenti tecnici specifici del *Controlling*. Nella maschera abbiamo visibilità dei seguenti campi:
+La máscara del **storico ammortamenti*** permite visualizar el detalle, activo por activo, del resultado del procesamiento de las amortizaciones técnicas específicas del *Controlling*. En la máscara tenemos visibilidad de los siguientes campos:
 
-- L'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- El [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
 
-- Il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di attribuzione dell'ammortamento
+- El [***Centro empresarial***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de atribución de la amortización
 
-- L'***Anno*** e il ***Periodo*** di riferimento
+- El ***Año*** y el ***Período*** de referencia
 
-- La ***Percentuale*** utilizzata, se il calcolo è a percentuale
+- El ***Porcentaje*** utilizado, si el cálculo es a porcentaje
 
-- La ***Quantità*** del periodo, se il calcolo è a quantità
+- La ***Cantidad*** del período, si el cálculo es a cantidad
 
-- L'***Importo*** dell'ammortamento
+- El ***Importe*** de la amortización
 
-- Il ***Costo unitario***, se il calcolo è a quantità
+- El ***Costo unitario***, si el cálculo es a cantidad
 
-- Il ***Sottoconto*** di costo utilizzato
+- El ***Subcuenta*** de costo utilizado
 
-- i riferimenti al ***Numero*** e ***Descrizione*** del cespite di riga
+- Las referencias al ***Número*** y ***Descripción*** del activo de línea
 
-A partite da questo dettaglio calcolato dalla form di ***Elaborazione periodi***, ***FluentisERP*** avrà creato una ***Registrazione extracontabile di area*** che presenterà l'analitica valorizzata dai totali di conto/centro e range di date di competenza di questa origine dati.
+A partir de este detalle calculado por el formulario de **elaborazione periodi***, ***FluentisERP*** habrá creado un ***Registro extracuontable de área*** que presentará la analítica valorizada por los totales de cuenta/centro y rango de fechas pertinentes a esta fuente de datos.
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+No está permitido eliminar, modificar ni insertar datos en la cuadrícula.

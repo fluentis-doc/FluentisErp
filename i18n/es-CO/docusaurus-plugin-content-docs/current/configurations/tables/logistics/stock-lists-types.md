@@ -1,20 +1,20 @@
 ---
-title: Tipo liste inventariali
+title: Tipo de listas inventariales (Tipo liste inventariali)
 sidebar_position: 32
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Liste inventariali*.
+La tabla permite gestionar la codificación de los diferentes tipos de *liste inventariali*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo liste inventariali**
+**Búsqueda de tipo de listas inventariales (Ricerca Tipo liste inventariali)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipo liste inventariali**
+**Inserción de tipo de listas inventariales (Inserimento Tipo liste inventariali)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Il flag **Mantieni ubicazione** nella tabella dei *Tipi liste inventariali*, se attivo, fa in modo che in fase di inventario con il **WMS** l'ubicazione inserita non verrà variata fino a quando non sarà  letta un'altra ubicazione; nel caso in cui invece, fosse disattivato, l'ubicazione dovrà essere inserita ogni volta prima della conferma dell'articolo.
+El indicador **mantieni ubicazione** en la tabla de *tipi liste inventariali*, si está activo, asegura que durante el inventario con el **WMS**, la ubicación ingresada no cambiará hasta que se lea otra ubicación; en caso de que esté desactivado, la ubicación deberá ingresarse cada vez antes de confirmar el artículo.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

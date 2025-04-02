@@ -1,9 +1,8 @@
 ---
-title: Stato Interventi
+title: stato interventi
 sidebar_position: 5
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Stato interventi** e contiene le tipologie di stato che possono assumere gli Interventi. È possibile ricercare, inserire e cancellare gli stati, ma la tabella è già precompilata con dei possibili stati di default.
+Esta tabla es accesible desde **Tablas > Gestión de Proyectos > Estado de intervenciones (Tabelle > Gestione Progetti > Stato interventi)** y contiene los tipos de estado que pueden asumir las intervenciones. Es posible buscar, insertar y eliminar estados, pero la tabla ya está precompilada con algunos estados posibles por defecto.
 
 ![](/img/it-it/configurations/tables/projects/interv.png)
-

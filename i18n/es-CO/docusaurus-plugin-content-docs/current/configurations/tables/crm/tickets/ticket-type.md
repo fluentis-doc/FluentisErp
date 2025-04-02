@@ -1,81 +1,79 @@
 ---
-title: Tipo Ticket
+title: Tipo de Ticket (Tipo Ticket)
 sidebar_position: 1
 ---
 
-La tabella permette di definire le tipologie di ticket che potranno essere utilizzate in fase di inserimento di un nuovo ticket, andando a definire a priori alcune caratteristiche dei ticket che verranno registrati con tale tipologia.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della tipologia e da una griglia in cui appunto verranno elencati tutte le tipologie inserite.
+La tabla permite definir las tipologías de ticket que podrán ser utilizadas en el momento de ingresar un nuevo ticket, definiendo previamente algunas características de los tickets que se registrarán con dicha tipología. 
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción de la tipología y por una cuadrícula donde se enumerarán todas las tipologías ingresadas.
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante **Nuovo**: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si andranno a definire i seguenti parametri:
+Dentro de este formulario, también es posible agregar nuevas tipologías en la cuadrícula, haciendo clic en el botón **nuovo**: de esta forma se añadirá una nueva fila en la cuadrícula donde se definirán los siguientes parámetros:
 
-**Codice**: è il codice del tipo ticket;
+**codice**: es el código del tipo de ticket;  
 
-**Descrizione**: è la descrizione del tipo ticket;
+**descrizione**: es la descripción del tipo de ticket;  
 
-**Numerazione**: è la numerazione del tipo ticket e fa riferimento alla tabella *Numerazione Tipo*;
+**numerazione**: es la numeración del tipo de ticket y se refiere a la tabla *Numeración Tipo*;  
 
-**Tipo offerta**: contiene il [Tipo offerta](/docs/configurations/tables/sales/sales-offer-type) da creare con la procedura di *Creazione offerta da ticket*;
+**tipo offerta**: contiene el [Tipo de oferta (Tipo offerta)](/docs/configurations/tables/sales/sales-offer-type) que se creará con el procedimiento de *Creación de oferta desde el ticket (Creazione offerta da ticket)*;  
 
-**Classe e Codice Articolo**: 
+**Clase y Código Artículo (Classe e Codice Articolo)**:  
 
-**Template ticket**: contiene il [Template](/docs/configurations/tables/crm/tickets/template-ticket) da proporre per questo Tipo ticket;   
+**Plantilla de ticket (Template ticket)**: contiene el [Template (Template)](/docs/configurations/tables/crm/tickets/template-ticket) a proponer para este tipo de ticket;  
 
+### Indicadores para hacer campos obligatorios
 
-Flag per rendere i campi obbligatori
+**Cliente**: si está habilitado, indica la obligatoriedad de completar el campo Cliente en el ticket.  
 
-**Cliente**: se abilitato, indica l'obbligatorietà di valorizzare il campo Cliente nel ticket
+**soggetto**:  
 
-**Soggetto**: 
+**Sujeto de Referencia (Soggetto di Riferimento)**: si está habilitado, indica la obligatoriedad de completar el campo sujeto de referencia en el ticket.  
 
-**Soggetto di Riferimento**: se abilitato, indica l'obbligatorietà di valorizzare il campo soggetto di riferimento nel ticket
+**Email sujeto de Referencia (Email soggetto di Riferimento)**: si está habilitado, indica la obligatoriedad de completar el campo Email sujeto de referencia en el ticket.  
 
-**Email soggetto di Riferimento**: se abilitato, indica l'obbligatorietà di valorizzare il campo Email soggetto di riferimento nel ticket
+**progetto**: si está habilitado, indica la obligatoriedad de completar el campo Proyecto en el ticket.  
 
-**Progetto**: se abilitato, indica l'obbligatorietà di valorizzare il campo Progetto nel ticket
- 
-**Livello di servizio**: se abilitato, indica l'obbligatorietà di valorizzare il campo Livello di servizio nel ticket
+**livello di servizio**: si está habilitado, indica la obligatoriedad de completar el campo Nivel de servicio en el ticket.  
 
-**Severità**: se abilitato, indica l'obbligatorietà di valorizzare il campo Severità nel ticket
+**severità**: si está habilitado, indica la obligatoriedad de completar el campo Severidad en el ticket.  
 
-**Primo utente assegnato**: utente proposto di default 
+**primo utente assegnato**: usuario propuesto por defecto.  
 
-Per ogni tipologia è possibile indicare uno o più **Stato Ticket** nella griglia sottostante. Questi stati possono essere diversi per ogni tipologia di Ticket e verranno proposti come Stati possibili nella creazione di un Nuovo ticket con questa tipologia.   
+Para cada tipología es posible indicar uno o más **stato ticket** en la cuadrícula inferior. Estos estados pueden ser diferentes para cada tipología de ticket y se propondrán como Estados posibles en la creación de un nuevo ticket con esta tipología.
 
-Per ogni stato ticket è possibile definire i seguenti parametri:
+Para cada estado de ticket es posible definir los siguientes parámetros:
 
-**Codice**: è il codice dello stato ticket;
+**codice**: es el código del estado de ticket;  
 
-**Descrizione**: è la descrizione dello stato ticket;
+**descrizione**: es la descripción del estado de ticket;  
 
-**Data fine**: è la data fine dello stato ticket;
+**data fine**: es la fecha de finalización del estado de ticket;  
 
-**Nota**: in questo campo è possibile aggiungere delle note aggiuntive al ticket.
+**nota**: en este campo se pueden agregar notas adicionales al ticket.  
 
+Para cada tipología es posible indicar uno o más **utenti** en la cuadrícula inferior. Esta configuración es obligatoria si se desea habilitar todas las pestañas gestionables en el ticket. Puede configurarse para cada usuario individual o por rol.  
 
-Per ogni tipologia è possibile indicare uno o più **Utenti** nella griglia sottostante. Questa configurazione è obbligatoria se si vuole abilitare tutte le tab gestibili nel ticket. Può essere configurata per singolo utente oppure per ruolo. 
+**ruolo**: indica el rol para el cual es válida la configuración establecida.  
 
-**Ruolo**: indica il ruolo per cui è valida la configurazione impostata
+**utente**: se indica, como alternativa al rol, el usuario para quien es válida la configuración establecida.  
 
-**Utente** indicare in alternativa al ruolo, indica l'utente per cui è valida la configurazione impostata
+**dettaglio ticket**: habilitar para hacer visible la sección/pestaña Detalle del ticket en el ticket.  
 
-**Dettaglio ticket**: abilitare per rendere visibile la sezione/tab Dettaglio ticket nel ticket
+**utenti**: habilitar para hacer visible la sección/pestaña Usuarios en el ticket.  
 
-**Utenti** abilitare per rendere visibile la sezione/tab Utenti nel ticket
+**stima/sforzo**: habilitar para hacer visible la sección/pestaña Estimación/Esfuerzo en el ticket.  
 
-**Stima/Sforzo** abilitare per rendere visibile la sezione/tab Stima/Sforzo nel ticket
+**stima commerciale**: habilitar para hacer visible la sección/pestaña Estimación Comercial en el ticket.  
 
-**Stima Commerciale** abilitare per rendere visibile la sezione/tab Stima Commerciale nel ticket
+**informazione chiusura**: habilitar para hacer visible la sección/pestaña Información de cierre en el ticket.  
 
-**Informazione chiusura** abilitare per rendere visibile la sezione/tab Informazione chiusura nel ticket
+**ticket collegati**: habilitar para hacer visible la sección/pestaña Tickets relacionados en el ticket.  
 
-**Ticket collegati** abilitare per rendere visibile la sezione/tab Ticket collegati nel ticket
+**nota**: habilitar para hacer visible la sección/pestaña Nota en el ticket.  
 
-**Nota** abilitare per rendere visibile la sezione/tab Nota nel ticket
+**prodotto**: habilitar para hacer visible la sección/pestaña Producto en el ticket.  
 
-**Prodotto** abilitare per rendere visibile la sezione/tab Prodotto nel ticket
+**extra data**: habilitar para hacer visible la sección/pestaña Datos extra en el ticket.  
 
-**Extra data** abilitare per rendere visibile la sezione/tab Extra data nel ticket
- 
-**Gestione documentale** abilitare per rendere visibile la sezione/tab Gestione documentale nel ticket
+**gestione documentale**: habilitar para hacer visible la sección/pestaña Gestión documental en el ticket.  
 
-**Offerte** abilitare per rendere visibile la sezione/tab Offerte nel ticket
+**offerte**: habilitar para hacer visible la sección/pestaña Ofertas en el ticket.

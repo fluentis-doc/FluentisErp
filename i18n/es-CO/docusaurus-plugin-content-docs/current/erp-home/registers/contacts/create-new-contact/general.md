@@ -1,169 +1,169 @@
 ---
-title: Generale
+title: generale
 sidebar_position: 2
 ---
 
-## Generale
+## generale (generalee)
 
-In questo tab verranno inserite tutte le informazioni generali legate all'anagrafica che si vuole inserire.
+En esta pestaña se introducirán todas las informaciones generales relacionadas con el registro que se desea insertar.
 
-La finestra si compone di una prima sezione in cui verranno inserite le informazioni relative ai **Dati** puramente anagrafici della società e di una seconda sezione che si compone di due tab **Rifermenti** e **Indirizzi alternativi** in cui si andranno ad inserire le persone di riferimento ed eventuali indirizzi alternativi nel caso di una società con sedi diverse.
+La ventana se compone de una primera sección en la que se ingresarán las informaciones relativas a los **Datos** puramente registrales de la empresa y de una segunda sección que se compone de dos pestañas **Referencias (Rifermenti)** y **indirizzi alternativi** donde se ingresarán las personas de contacto y posibles direcciones alternativas en caso de una empresa con sedes diferentes.
 
-### Dati anagrafica
+### Datos del registro (Dati anagrafica)
 
-**Ragione sociale**: è il campo all'interno del quale si va a definire il nome del soggetto: sarà assegnato a tutti i sottoconti contabili definiti per l'anagrafica in uso e sarà riportato tramite questo in ogni stampa contabile/documentale.
+**ragione sociale**: es el campo en el que se define el nombre del sujeto: será asignado a todas las subcuentas contables definidas para el registro en uso y se mencionará a través de esto en cada impresión contable/documental.
 
-Sulla base del testo qui inserito, uscendo dal campo, il gestionale andrà a generare automaticamente un ‘Nomignolo', cioè un codice univoco breve identificativo dell'anagrafica stessa: questo è modificabile da parte dell'utente, ma deve essere unico nella lista di tutte le anagrafiche. Dato che la ricerca del soggetto (se contabile) sarà effettuata tipicamente sulla base della ragione sociale, questo campo non è particolarmente rilevante.
+Sobre la base del texto aquí ingresado, al salir del campo, el sistema generará automáticamente un 'Apodo', es decir, un código único corto identificativo del registro mismo: esto es modificable por el usuario, pero debe ser único en la lista de todos los registros. Dado que la búsqueda del sujeto (si es contable) se realizará típicamente sobre la base de la razón social, este campo no es particularmente relevante.
 
-**Partita IVA**: campo composto dal codice ISO internazionale della nazione (definito nella tabella Nazioni stessa) e dalla relativa partita iva. Il campo è soggetto a test di correttezza del carattere di controllo per le partite iva italiane (test eseguito all'uscita del campo). Una volta impostata la partita iva, nel caso di soggetto Europeo, tramite il pulsante 'Proponi dati' è possibile andare a richiedere al database comunitario del Vies la verifica e il recepimento dei dati disponibili: per alcune nazioni, infatti, vengono restituiti anche i dati dell'indirizzo corrispondente alla partita iva richiesta, che andranno a valorizzare i campi in ***Fluentis***
+**partita iva**: campo compuesto por el código ISO internacional del país (definido en la tabla de Países) y el número de identificación fiscal correspondiente. El campo está sujeto a una prueba de validez del carácter de control para los números de identificación fiscal italianos (prueba que se realiza al salir del campo). Una vez establecido el número de identificación fiscal, en el caso de sujeto Europeo, mediante el botón 'Proponer datos (Proponi dati)' es posible solicitar a la base de datos comunitaria del Vies la verificación y recepción de los datos disponibles: para algunos países, de hecho, también se devuelven los datos de la dirección correspondiente al número de identificación fiscal solicitado, que se utilizarán para completar los campos en ***Fluentis***.
 
-**Codice fiscale**: campo per l'inserimento del codice fiscale del soggetto;
+**codice fiscale**: campo para la inserción del código fiscal del sujeto;
 
-**Persona fisica/giuridica**: indica se il soggetto è un privato o meno;
+**Persona física/jurídica (Persona fisica/giuridica)**: indica si el sujeto es un privado o no;
 
-**Contabile**: flag presente di default nei nuovi inserimenti, consentirà di definire i dettagli di gestione amministrativa/commerciale per i sottoconti associati all'anagrafica in uso.
+**contabile**: indicador presente por defecto en nuevas inserciones, permitirá definir los detalles de gestión administrativa/comercial para las subcuentas asociadas al registro en uso.
 
-**Indirizzo**: è l'indirizzo della sede legale;
+**indirizzo**: es la dirección de la sede legal;
 
-**Numero civico**: il numero civico dell'indirizzo;
+**numero civico**: el número cívico de la dirección;
 
-**Edificio**: l'eventuale edificio dell'indirizzo;
+**edificio**: el eventual edificio de la dirección;
 
-**CAP**: è il codice di avviamento posta; può essere scritto manualmente oppure derivare dalla selezione del comune (campo successivo) attraverso l'help comuni;
+**cap**: es el código de acceso postal; puede escribirse manualmente o derivar de la selección del municipio (campo siguiente) a través de la ayuda de municipios;
 
-**Comune**: campo editabile all'interno del quale inserire il comune della sede legale. È presente un help Comuni per ricercare nella lista dei comuni così come definiti in tabella (Home>Tabelle>Impostazioni generali);
+**comune**: campo editable en el que se debe ingresar el municipio de la sede legal. Hay una ayuda de Municipios para buscar en la lista de municipios tal como están definidos en la tabla (Inicio > Tablas > Configuraciones generales);
 
-**Natura giuridica**: natura giuridica, la lista è legata alla nazione del contatto;
+**natura giuridica**: naturaleza jurídica, la lista está vinculada al país del contacto;
 
-**Provincia**: campo editabile all'interno del quale inserire il codice della provincia. È presente un help Province per ricercare nella lista delle province così come definite in tabella (Home>Tabelle>Impostazioni generali);
+**provincia**: campo editable en el que se debe ingresar el código de la provincia. Hay una ayuda de Provincias para buscar en la lista de provincias tal como están definidas en la tabla (Inicio > Tablas > Configuraciones generales);
 
-**Note**: campo libero all'interno del quale è possibile definire, ad esempio, il testo completo dell'indirizzo da riportare in stampa dei documenti, senza dover combinare indirizzo+cap+comune+provincia;
+**note**: campo libre en el que se pueden definir, por ejemplo, el texto completo de la dirección que se incluirá en la impresión de documentos, sin necesidad de combinar dirección + código postal + municipio + provincia;
 
-**Nazione**: codice della nazione per l'anagrafica in uso, così come definito in tabella (Home>Tabelle>Impostazioni generali). Da ricordare che questo campo è la base per l'individuazione dei soggetti presenti in Nazioni a fiscalità privilegiata (Home>Tabelle>Impostazioni generali>Nazioni black list), per la relativa dichiarazione fiscale dell'area amministrativa;
+**nazione**: código del país para el registro en uso, tal como se define en la tabla (Inicio > Tablas > Configuraciones generales). Cabe recordar que este campo es la base para identificar a los sujetos presentes en Países con fiscalidad privilegiada (Inicio > Tablas > Configuraciones generales > Países en lista negra), para la respectiva declaración fiscal del área administrativa;
 
-**Regione**: codice della regione di appartenenza (Home>Tabelle>Impostazioni generali);
+**regione**: código de la región a la que pertenece (Inicio > Tablas > Configuraciones generales);
 
-**Lingua**: codice della lingua (Home>Tabelle>Impostazioni generali) di riferimento per le comunicazioni indirizzate all'anagrafica in uso. È possibile generare una reportistica automaticamente in lingua sulla base del dizionario definito in ARM (Application Resource Manager);
+**lingua**: código del idioma (Inicio > Tablas > Configuraciones generales) de referencia para las comunicaciones dirigidas al registro en uso. Es posible generar reportes automáticamente en el idioma según el diccionario definido en ARM (Application Resource Manager);
 
-**Nome** e **Cognome**: per persone fisiche;
+**nome** y **cognome**: para personas físicas;
 
-**Città nascita**, **Codice provincia nascita**, **Data nascita**, **Sesso**: per persone fisiche;
+**città nascita**, **codice provincia nascita**, **data nascita**, **sesso**: para personas físicas;
 
-**Telefono/Telefono cellulare**: campo per l'inserimento del telefono principale o del cellulare del contatto;
+**Teléfono/Teléfono celular (Telefono/Telefono cellulare)**: campo para la inserción del teléfono principal o del celular del contacto;
 
-**Fax**: campo per l'inserimento del fax principale del contatto;
+**fax**: campo para la inserción del fax principal del contacto;
 
-**Sito web**: campo per l'inserimento del sito web del contatto;
+**sito web**: campo para la inserción del sitio web del contacto;
 
-**e.mail**: campo per l'inserimento dell'indirizzo email di default del contatto;
+**e.mail**: campo para la inserción de la dirección de correo electrónico por defecto del contacto;
 
-**Data/Utente ult. variazione**: campo che visualizza l'utente e la data dell'ultimo salvataggio effettuato per l'anagrafica in uso;
+**Fecha/Usuario última modificación (Data/Utente ult. variazione)**: campo que muestra el usuario y la fecha de la última guardado realizado para el registro en uso;
 
-**Data fine validità**: campo per bloccare l'utilizzo dell'anagrafica in uso. Una volta impostata questa data, il sistema chiederà se attribuire questa fine validità su tutti i sottoconti contabili associati all'anagrafica stessa: su nessuno, sulla sola società in uso, su tutte le società o se annullare la modifica;
+**data fine validità**: campo para bloquear el uso del registro en uso. Una vez establecida esta fecha, el sistema preguntará si se debe aplicar esta fin de validez a todas las subcuentas contables asociadas al registro mismo: a ninguna, solo a la empresa en uso, a todas las empresas o si se debe cancelar la modificación;
 
-**Note**: campo in cui si possono inserire eventuali note relative al soggetto;
+**note**: campo en el que se pueden insertar notas relativas al sujeto;
 
-#### Pulsanti specifici - Inserimento automatico dati anagrafici
+#### Botones específicos - Inserción automática de datos registrales
 
 :::tip
-[**Proponi dati**](/docs/guide/common/glossary/glossary-intro#v): inserendo la **Partita Iva** nel relativo campo dell'anagrafica, e cliccando su **Proponi Dati**, il sistema tramite web-service andrà ad interrogare il sistema informatico del V.I.E.S. che andrà a verificare la validità e correttezza della P.Iva del soggetto. Nel caso il dato sia corretto, il sistema andrà a proporre in automatico il resto dei dati anagrafici di base del soggetto, senza doverli inserire manualmente. Per maggiori informazioni relative al sistema V.I.E.S. cliccare sul link.
+[**proponi dati**](/docs/guide/common/glossary/glossary-intro#v): al ingresar el **partita iva** en el campo correspondiente del registro, y hacer clic en **Proponer Datos**, el sistema a través de un servicio web consultará el sistema informático del V.I.E.S. que verificará la validez y corrección del número de identificación fiscal del sujeto. Si el dato es correcto, el sistema propondrá automáticamente el resto de los datos registrales básicos del sujeto, sin necesidad de ingresarlos manualmente. Para más información sobre el sistema V.I.E.S. haga clic en el enlace.
 :::
 
-### Riferimenti
+### Referencias (Riferimenti)
 
-Nella sezione **Accesso Web** è possibile abilitare l'accesso via Internet Explorer all'applicativo, abilitando l'anagrafica e assegnando il nome utente e la password di accesso;
+En la sección **Acceso Web** es posible habilitar el acceso a través de Internet Explorer a la aplicación, habilitando el registro y asignando el nombre de usuario y la contraseña de acceso;
 
-Nella sezione **Codice EDI** è possibile inserire il codice per il trasferimento di file tramite il processo EDI con il relativo numero interno assegnato al soggetto e la possibilità di dire il codice fa riferimento a un venditore.
+En la sección **Código EDI** es posible ingresar el código para la transferencia de archivos a través del proceso EDI con el número interno asignado al sujeto y la posibilidad de indicar que el código se refiere a un vendedor.
 
-Nella sezione **Altri dati** invece è possibile inserire il numero cliente, il n. reg. autotrasp. ovvero per anagrafiche relative a trasportatori, è il codice del soggetto nel registro degli autotrasportatori; e la data di nascita nel caso di persona fisica.
+En la sección **Otros datos (Altri dati)** es posible ingresar el número de cliente, el número de registro de transporte, es decir, para registros relacionados con transportistas, es el código del sujeto en el registro de transportistas; y la fecha de nacimiento en el caso de persona física.
 
-Nella griglia **Persone di Riferimento** si potranno specificare, per il contatto in uso, la lista delle persone di riferimento presenti al suo interno con la descrizione del ruolo occupato, e i relativi contatti telefonici e/o indirizzi email.
+En la cuadrícula **persone di riferimento** se podrán especificar, para el contacto en uso, la lista de personas de referencia presentes en su interior con la descripción del rol ocupada, y los respectivos contactos telefónicos y/o direcciones de correo electrónico.
 
 :::tip[]
-Nella griglia **Sottoconti in tutte le società** si potrà vedere se per l'anagrafica in uso è stata definito l'uso contabile in un'altra società; nella griglia si troverà quindi la lista dei vari sottoconti assegnati con la relativa società di riferimento.
+En la cuadrícula **sottoconti in tutte le società** se podrá ver si para el registro en uso se ha definido el uso contable en otra empresa; en la cuadrícula se encontrará, por lo tanto, la lista de las diversas subcuentas asignadas con la respectiva empresa de referencia.
 :::
 
-### Indirizzi Alternativi
+### Direcciones Alternativas (Indirizzi Alternativi)
 
-Qui è possibile inserire alcuni indirizzi alternativi che dipendono dal [**Tipo indirizzo associato**](/docs/configurations/tables/general-settings/address-types) 
+Aquí es posible ingresar algunas direcciones alternativas que dependen del [**Tipo de dirección asociada (Tipo indirizzo associato)**](/docs/configurations/tables/general-settings/address-types).
 
-**Attenzione:** non si tratta degli indirizzi di consegna della merce per i quali è stata sviluppata la tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) nella sezione *Dati contabili* dove inserire i *Destinatari/Destinazioni* della merce per permettere la gestione completa nei documenti).
+**Atención:** no se trata de las direcciones de entrega de mercancías para las que se ha desarrollado la pestaña [Entrega (Consegna)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) en la sección *Datos contables* donde ingresar los *Destinatarios/Destinaciones* de la mercancía para permitir la gestión completa en los documentos.
 
-**La funzione più frequente di questa sezione è soprattutto la gestione egli indirizzi mail per automatizzare l'invio di documenti, solitamente report di stampa, tramite workflow (flussi operativi con passaggi di stato da gestire all'interno elle maschere) principalmente tramite invio massivo di mail.**
+**La función más frecuente de esta sección es sobre todo la gestión de las direcciones de correo electrónico para automatizar el envío de documentos, generalmente informes de impresión, a través de flujos de trabajo (workflow) (flujos operativos con pasos de estado a gestionar dentro de las máscaras), principalmente a través de envíos masivos de correos electrónicos.**
 
-*Esempio*: se selezioniamo nella griglia il tipo indirizzo 'Sede Commerciale' si andrà ad inserire un referente o più per l'ufficio commerciale a cui inviare ad esempio le conferme d'ordine via mail. La mail va indicata nella sezione accanto alla griglia in cui si possono inserire anche il riferimento telefonico del contatto e altri dati di tipo anagrafico. In questo caso, quando si inserirà l'ordine, nel tab *Riepiloghi* quando si andrà a scegliere di inviare la conferma d'ordine al cliente si aprirà una schermata con l'anteprima della mail con l'indirizzo del destinatario già popolato con le informazioni che sono state inserite in questa sezione, e non servirà andare ad aggiungerlo a mano ogni volta. In base al tipo di indirizzo, si potrà scegliere a chi inviare le fatture, degli ordini fornitori ecc.
+*Ejemplo*: si seleccionamos en la cuadrícula el tipo de dirección 'Sede Comercial (Sede Commerciale)', se dará de alta un referente o más para la oficina comercial a la que enviar, por ejemplo, las confirmaciones de pedido por correo. El correo debe indicarse en la sección al lado de la cuadrícula, donde también se pueden ingresar el contacto telefónico del contacto y otros datos de tipo registral. En este caso, cuando se introduzca el pedido, en la pestaña *Resumen (Riepiloghi)*, al elegir enviar la confirmación del pedido al cliente, se abrirá una pantalla con la vista previa del correo con la dirección del destinatario ya poblada con la información que se ha ingresado en esta sección, y no será necesario agregarla manualmente cada vez. Según el tipo de dirección, se podrá elegir a quién enviar las facturas, de los pedidos de proveedores, etc.
 
-Pertanto la form **Indirizzi alternativi** non consente una gestione dei dati nei successivi documenti del ciclo attivo/passivo.
+Por lo tanto, el formulario **Direcciones Alternativas** no permite una gestión de los datos en los documentos posteriores del ciclo activo/pasivo.
 
-La sua funzione, oltre ad un eventuale inserimento semplice di indirizzi (soprattutto e-mail) alternativi, è limitata a due **possibili automazioni** molto utili:
+Su función, además de una posible inserción sencilla de direcciones (sobre todo correos electrónicos) alternativos, está limitada a dos **posibles automatizaciones** muy útiles:
 
-- **La gestione degli indirizzi e-mail nell'invio massivo di documenti** (Fatture di vendita, ma anche altre tipologie previa configurazione) tramite coda di spedizione gestita dal componente Bizlink.
+- **La gestión de las direcciones de correo electrónico en el envío masivo de documentos** (Facturas de venta, pero también otros tipos previa configuración) mediante una cola de envío gestionada por el componente Bizlink.
 
-- Gestione dei [Cointestatari](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) della fattura di vendita.
+- Gestión de los [Copartícipes (Cointestatari)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) de la factura de venta.
 
-#### Procedura di inserimento indirizzi
+#### Procedimiento de inserción de direcciones
 
-Prima di inserire le informazioni di dettaglio nella parte destra della form (all'interno dei vari campi specifici), è necessario inserire almeno una riga nella griglia a sinistra corrispondente ad una tipologia di indirizzo.
+Antes de ingresar la información detallada en la parte derecha del formulario (dentro de los diversos campos específicos), es necesario ingresar al menos una fila en la cuadrícula a la izquierda correspondiente a un tipo de dirección.
 
-**Tipo Indirizzo**: codice del tipo indirizzo. La combo box è collegata alla tabella [Tipi indirizzi](/docs/configurations/tables/general-settings/address-types) (che si trova su Home > Tabelle  > Impostazioni generali).
+**tipo indirizzo**: código del tipo de dirección. La caja combinada está conectada a la tabla [Tipos de direcciones (Tipi indirizzi)](/docs/configurations/tables/general-settings/address-types) (que se encuentra en Inicio > Tablas > Configuraciones generales).
 
-**Indirizzo**: descrizione corrispondente al codice contenuto nel campo precedente.
+**indirizzo**: descripción correspondiente al código contenido en el campo anterior.
 
-**Descrizione**: campo obbligatorio per il salvataggio, si tratta semplicemente di una ulteriore descrizione per la riga che si sta inserendo.
+**descrizione**: campo obligatorio para el guardado, se trata simplemente de una descripción adicional para la fila que se está ingresando.
 
-Una volta inserita la riga con la tipologia di indirizzo prescelto, è possibile compilare i dati di dettaglio corrispondenti.
+Una vez insertada la fila con el tipo de dirección elegido, es posible completar los datos de detalle correspondientes.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/general/image02.png)
 
-E' possibile inserire e gestire anche più di un indirizzo mail contemporaneamente (per l'invio ad esempio a più destinatari) inserendo gli indirizzi stessi di seguito nel medesimo campo e separandoli da un punto e virgola ( ; ).
+Es posible ingresar y gestionar más de una dirección de correo electrónico simultáneamente (para el envío a, por ejemplo, más destinatarios) ingresando las direcciones seguidas en el mismo campo y separándolas con un punto y coma (;).
 
-#### Invio massivo documenti via mail
+#### Envío masivo de documentos por correo
 
-Per la gestione automatica dell'indirizzo e-mail nell'invio massivo delle fatture di vendita (vedi anche l'allegato all'inizio di questo articolo) è necessario utilizzare un particolare tipo indirizzo (che può essere codificato a piacere, purché abbia, nella tabella [Tipi indirizzi](/docs/configurations/tables/general-settings/address-types) attivato il flag **Email Fatt. C. = email fattura cliente**).
+Para la gestión automática de la dirección de correo electrónico en el envío masivo de las facturas de venta (ver también el anexo al inicio de este artículo), es necesario utilizar un tipo de dirección particular (que puede codificarse a placer, siempre que en la tabla [Tipos de direcciones (Tipi indirizzi)](/docs/configurations/tables/general-settings/address-types) esté activada la bandera **Email Fatt. C. = email factura cliente**).
 
-Sarà inoltre possibile, previa *configurazione* gestire l'invio massivo anche su altri tipi di documento (esempio il sollecito di pagamento ecc.) agganciando magari l'indirizzo e-mail inserito ad un apposito tipo indirizzo da configurare sfruttando uno degli altri flag disponibili nella tabella Tipi indirizzi. In questo caso sarà necessario definire sia la Trasformation del documento specifico sia un Workflow (cambio stato) dedicato.
+También será posible, previa *configuración*, gestionar el envío masivo también en otros tipos de documentos (ejemplo, la solicitud de pago, etc.) asociando tal vez la dirección de correo electrónico ingresada a un tipo de dirección específico para configurar utilizando uno de los otros indicadores disponibles en la tabla Tipos de direcciones. En este caso, será necesario definir tanto la Transformación del documento específico como un Workflow (cambio de estado) dedicado.
 
-La gestione dell'indirizzo e-mail inserito e codificato associandolo al flag *Email Fatt. C.* è collegata anche alla composizione automatica della e-mail accompagnatoria (necessaria l'installazione di Outlook sul proprio PC) che si può eseguire, una volta entrati all'interno della Fattura di vendita ed eseguita l'anteprima di stampa, con il comando **Send** (Pdf, Word, ecc.) 
+La gestión de la dirección de correo electrónico ingresada y codificada asociándola al indicador *Email Fatt. C.* también está relacionada con la composición automática del correo electrónico de acompañamiento (necesaria la instalación de Outlook en su PC) que se puede ejecutar, una vez dentro de la *Factura de venta* y realizada la vista previa de impresión, con el comando **Enviar (Send)** (Pdf, Word, etc.)
 
-#### Gestione cointestatari
+#### Gestión de copartícipes
 
-In questo caso il dato rilevante è il nome dei cointestatari. Sarà dunque necessario inserire una riga per ognuno dei contestatari al fine di inserire il dato anagrafico di ognuno. Il tipo di indirizzo corretto da associare nella tabella [Tipi indirizzi ](/docs/configurations/tables/general-settings/address-types) e [Cointestatari](/docs/configurations/tables/general-settings/address-types).
+En este caso, el dato relevante es el nombre de los copartícipes. Será necesario introducir una fila para cada uno de los copartícipes para ingresar el dato registral de cada uno. El tipo de dirección correcto a asociar en la tabla [Tipos de direcciones (Tipi indirizzi)](/docs/configurations/tables/general-settings/address-types) y [Copartícipes (Cointestatari)](/docs/configurations/tables/general-settings/address-types).
 
-Per la gestione in fattura vedere [qui](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information).
+Para la gestión en factura ver [aquí (qui)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information).
 
-Una volta inserite le informazioni **Generali**, si procederà all'inserimento delle informazioni specifiche all'interno del successivo tab **Dati Contabili**.
+Una vez ingresadas las informaciones **generalees**, se procederá a la inserción de las informaciones específicas en la siguiente pestaña **dati contabili**.
 
-### Dati Storici
-Questa sezione serve per gestire la possibilità di storicizzare, ovvero memorizzare dei cambiamenti, nei dati generali, quali ad esempio un cambio della ragione sociale o dell'indirizzo ecc. del soggetto in questione, ad esempio un cliente o un fornitore.
+### Datos Históricos (Dati Storici)
+Esta sección sirve para gestionar la posibilidad de historicizar, es decir, memorizar cambios, en los datos generales, como por ejemplo un cambio de razón social o de dirección, etc., del sujeto en cuestión, como un cliente o un proveedor.
 
 :::note
-In particolare un cambio di ragione sociale modificherà in automatico (a fronte comunque di messaggio di conferma che occorre accettare) la descrizione dei sottoconti contabili del piano dei conti assegnati all'anagrafica i contatto.
+En particular, un cambio de razón social modificará automáticamente (a pesar de un mensaje de confirmación que debe aceptarse) la descripción de las subcuentas contables del plan de cuentas asignados al registro del contacto.
 
-Pertanto l'esigenza di memorizzare il dato precedente è particolarmente sentita al fine di tracciare i documenti e gli altri dati inseriti anche tramite il riferimento precedente.
+Por lo tanto, la necesidad de almacenar el dato anterior es particularmente relevante para poder rastrear los documentos y otros datos ingresados también a través de la referencia anterior.
 :::
 
-Nella form è presente una griglia di **Sinistra** che accoglierà la data della variazione e servirà da riferimento per mostrare il vecchio o il nuovo dato
+En el formulario hay una cuadrícula en la **Izquierda** que recibirá la fecha de la modificación y servirá como referencia para mostrar el dato antiguo o el nuevo dato.
 
-Sulla parte **Destra** sono riproposti i campi relativi ai dati del contatto, che saranno però compilati in automatico dalla procedura di storicizzazione. In seguito si potrà modificare la parte *Generale* con il dato attuale aggiornato.
+En la parte **Derecha** se reiteran los campos relativos a los datos del contacto, que serán completados automáticamente por el procedimiento de historicización. Luego, se podrá modificar la parte *generale* con el dato actual actualizado.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-**Storicizza dati anagrafici**: posto nella ribbon bar è il pulsante principale per la procedura di storicizzazione (memorizzazione) del dato. Premendolo appare un popup che chiede la data di variazione (*Data fine validità*) la quale sarà riportata nella griglia di Sinistra, mentre nella parte Destra sarnno cpiati i dati attuali per poi procedere alla modifica.
+**storicizza dati anagrafici**: situado en la barra de herramientas, es el botón principal para el procedimiento de historicización (memorización) del dato. Al presionarlo, aparece un popup que pide la fecha de la modificación (*Data fine validità*) la cual será registrada en la cuadrícula de la Izquierda, mientras que en la parte Derecha se copiarán los datos actuales para luego proceder a la modificación.
 
-**Cancella storico**: Rimuove la data fine validità ed i dati inseriti nella parte Destra 
+**cancella storico**: Remueve la fecha de fin de validez y los datos ingresados en la parte Derecha.
 
-:::tip[Procedura]
-1. Premere il bottone *Storicizza dati anagrafici*
-2. Nel popup che compare indicare la data della variazione, ovvero la data a partire dalla quale il dato (es. la ragione sociale è cambiata). Confermando il dato "vecchio", attualmente ancora presente, viene salvato
-3. Modificare il dato nel tab ***Dati anagrafici*** e premere **Salva**
+:::tip[Procedimiento]
+1. Presione el botón *storicizza dati anagrafici*.
+2. En el popup que aparece, indique la fecha de la modificación, es decir, la fecha a partir de la cual el dato (p.ej. la razón social ha cambiado). Al confirmar, el dato "anterior", actualmente aún presente, será guardado.
+3. Modifique el dato en la pestaña **dati anagrafici*** y presione **salva**.
 :::
 
-Da questo momento, il dato "vecchio" (storico) è disponibile in diversi report di stampa standard quali ad esempio i registri iva, le fatture di vendita ecc. (oltre a poter essere inserito a piacimento in eventuali report personalizzati o creati ex novo) ed in automatico sarà mostrato il vecchio dato se il documento si riferisce ad una data antecedente alla data di fine validità
+Desde este momento, el dato "anterior" (histórico) estará disponible en varios reportes de impresión estándar, como por ejemplo los registros de IVA, las facturas de venta, etc. (además de poder incluirse a placer en reportes personalizados o creados desde cero) y automáticamente se mostrará el dato antiguo si el documento se refiere a una fecha anterior a la fecha de fin de validez.
 
-:::danger[Attenzione]
-Il dato che viene visualizzato nelle maschere a video ell'ERP è sempre quello attuale aggiornato, non è possibile avere una visualizzazione del dato storico.
+:::danger[Atención]
+El dato que se muestra en las mascarillas visualizadas en el ERP es siempre el actualizado; no es posible tener una visualización del dato histórico.
 
-La presente sezione permette di gestire il dato storico unicamente per i report di stampa.
+La presente sección permite gestionar el dato histórico únicamente para informes de impresión.
 
-Si consiglia di copiare il campo e le relative eventuali formule  per la gestione della visibilità in base alla data di riferimento dal un report standard (o almeno prenderne visione) nel caso di utilizzo in un report di stampa personalizzato 
+Se recomienda copiar el campo y las respectivas fórmulas para gestionar la visibilidad en función de la fecha de referencia de un informe estándar (o al menos revisarlo) en caso de utilización en un informe de impresión personalizado.
 :::

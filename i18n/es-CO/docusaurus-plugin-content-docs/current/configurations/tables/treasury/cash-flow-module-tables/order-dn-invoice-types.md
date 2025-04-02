@@ -1,10 +1,10 @@
 ---
-title: Tipi ordine/DDT/fattura
+title: Tipos de pedido/DDT/factura (Tipi ordine/DDT/fattura)
 sidebar_position: 4
 ---
 
-Per ogni record presente nelle tabelle dei [*Tipi ordine cliente*](/docs/configurations/tables/sales/sales-order-types),  [*Tipi ordine fornitore*](/docs/purchase/purchase-orders/general-overview), *Tipi DDT di vendita* e *Tipi DDT d'acquisto* è possibile specificare con il flag *Cash flow* se sia da considerare nelle simulazioni del modulo o meno.
+Para cada registro presente en las tablas de [*tipi ordine cliente*](/docs/configurations/tables/sales/sales-order-types), [*tipi ordine fornitore*](/docs/purchase/purchase-orders/general-overview), *tipi ddt di vendita* y *Tipos de DDT de compra (Tipi DDT d'acquisto)*, es posible especificar con el indicador *cash flow* si debe considerarse en las simulaciones del módulo o no.
 
 :::note Nota
-I tipi fattura di vendita sono tutti considerati nel cash flow ad eccezione di quelle proforma.
+Los tipos de facturas de venta se consideran todos en el flujo de efectivo, a excepción de las proforma.
 :::

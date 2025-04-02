@@ -1,112 +1,112 @@
 ---
-title: Nuovo listino di vendita
+title: Nuevo catálogo de ventas (Nuovo listino di vendita)
 sidebar_position: 2
 ---
 
-Per creare un Nuovo Listino di vendita è necessario cliccare *Nuovo* dalla maschera di Ricerca listini.
-La form si compone di tre parti: Sezione superiore, Articoli e Dettagli. 
+Para crear un Nuevo Catálogo de ventas es necesario hacer clic en *nuovo* desde la máscara de Búsqueda de catálogos.  
+El formulario se compone de tres partes: Sección superior, Artículos y Detalles. 
 
-## **1. Dati obbligatori**
+## **1. Datos obligatorios (Dati obbligatori)**
 
-I campi di testata obbligatori per l'inserimento di un nuovo listino sono:
-- **Listino**: un listino può essere *Generico* (potenzialmente valido per tutti i clienti) oppure *Personalizzato* (valido per un cliente specifico); è necessario selezionare l'opzione appropriata per determinare il listino da creare.     
-- **Tipo listino**: questo campo è attivo solo se il listino è generico e contiene il [Tipo listino](/docs/configurations/tables/sales/sales-price-lists).      
-- **Cliente**: questo campo è attivo solo se il listino è personalizzato e contiene il cliente per il quale viene creato il listino. In questa modalità si attiva anche il campo Contatto, che permette di scegliere una delle persone di riferimento inserite in anagrafica cliente; sebbene questo campo non influenzi i documenti, è utile per le restrizioni di visualizzazione, permettendo di limitare l’accesso ai soli documenti personali.    
+Los campos de encabezado obligatorios para la inserción de un nuevo catálogo son:  
+- **listino**: un catálogo puede ser *generico* (potencialmente válido para todos los clientes) o *Personalizado (Personalizzato)* (válido para un cliente específico); es necesario seleccionar la opción apropiada para determinar el catálogo a crear.  
+- **tipo listino**: este campo está activo solo si el catálogo es genérico y contiene el [Tipo de catálogo (Tipo listino)](/docs/configurations/tables/sales/sales-price-lists).  
+- **cliente**: este campo está activo solo si el catálogo es personalizado y contiene el cliente para el cual se crea el catálogo. En esta modalidad se activa también el campo Contacto, que permite elegir a una de las personas de referencia registradas en el anáfora de clientes; aunque este campo no influye en los documentos, es útil para las restricciones de visualización, permitiendo limitar el acceso a solo documentos personales.  
 
 :::important[Importante]
-Per rendere un listino valido per un cliente, è necessario inserirlo in anagrafica cliente. Consultare la [documentazione](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) dedicata. 
+Para hacer que un catálogo sea válido para un cliente, es necesario ingresar el cliente en el anáfora de clientes. Consulte la [documentación](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) dedicada. 
 :::
 
-- **Divisa**: contiene la divisa da utilizzare; viene proposta di default la divisa della società.      
-- **Data inizio validità**: contiene la data a partire dalla quale il listino sarà considerato valido; viene proposta la data odierna.    
+- **divisa**: contiene la divisa que se utilizará; se propone por defecto la divisa de la empresa.  
+- **data inizio validità**: contiene la fecha a partir de la cual el catálogo será considerado válido; se propone la fecha actual.  
 
-#### Campi non obbligatori    
-- **Prezzo ivato**: se attivo, questo flag indica che il listino sarà creato con prezzo ivato, quindi nei suoi articoli non sarà presente la colonna Prezzo, ma solo la colonna Prezzo ivato che riporterà direttamente la somma tra Prezzo e Iva; questo flag viene proposto se presente nella tabella [Tipo listino](/docs/configurations/tables/sales/sales-price-lists) ma è modificabile. Per una gestione più flessibile, nei [Parametri Listini di Vendita](/docs/configurations/parameters/sales/price-list-parameters), è possibile forzare la visualizzazione sia del prezzo che del prezzo ivato tramite il flag visualizza prezzo e prezzo ivato, indipendentemente dall’impostazione del tipo listino.      
-- **Data fine validità**: se il listino non deve più essere valido dopo una certa data, la data va inserita in questo campo.       
-- **Listino minimo**: questo flag informativo indica che il listino è a prezzi minimi di tentata vendita.       
-- **Configurazione ricerche**: questa impostazione ha due possibili funzioni: mostrare alcuni Extra Data a livello di listino, oppure pilotare alcune informazioni (per esempio il tipo pagamento) per diverse tipologie di operazioni.      
-Infine è presente un **Filtro articoli** che permette di ricercare velocemente gli articoli nel listino; viene usato in caso di listini molto corposi. 
+#### Campos no obligatorios  
+- **prezzo ivato**: si está activo, este indicador indica que el catálogo será creado con precio con IVA, por lo que en sus artículos no habrá columna Precio, sino solo la columna Precio con IVA que mostrará directamente la suma entre Precio e IVA; este indicador se propone si está presente en la tabla [Tipo de catálogo (Tipo listino)](/docs/configurations/tables/sales/sales-price-lists) pero es modificable. Para una gestión más flexible, en los [Parámetros de Catálogos de Venta (Parametri Listini di Vendita)](/docs/configurations/parameters/sales/price-list-parameters), es posible forzar la visualización tanto del precio como del precio con IVA a través del indicador visualiza precio y precio con IVA, independientemente de la configuración del tipo de catálogo.  
+- **data fine validità**: si el catálogo ya no debe ser válido después de una cierta fecha, la fecha debe ingresarse en este campo.  
+- **listino minimo**: este indicador informativo indica que el catálogo tiene precios mínimos de intento de venta.  
+- **configurazione ricerche**: esta configuración tiene dos posibles funciones: mostrar algunos Datos Extras a nivel de catálogo, o controlar cierta información (por ejemplo, el tipo de pago) para diferentes tipos de operaciones.  
+Finalmente, hay un **filtro articoli** que permite buscar rápidamente los artículos en el catálogo; se usa en caso de catálogos muy extensos. 
 
-## **2. Articoli**
+## **articoli**
 
-In questa sezione verranno indicati gli articoli ed eventuali sconti associati a questo listino. Le colonne presenti nella griglia sono:    
-- **Classe/Articolo/Descrizione**: contiene il codice dell'articolo da includere nel listino; per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.            
-- **Codice/Descrizione variante**: nelle colonne dedicate alla variante possiamo associare le varianti dell’articolo e ad ognuna il relativo prezzo di vendita, da proporre nei documenti; solo gestendo i listini è possibile gestire la proposta del prezzo per variante.      
-- **Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative; in sede di creazione dei documenti, in base all’unità di misura specificata, verrà proposto un listino valido per quella unità di misura.      
-- **Marca**: se specificata.      
-- **Quantità**: proposta uguale a 1, è la quantità di riferimento del prezzo; se diversa da 1, quando deve essere calcolato il prezzo viene diviso per la quantità del listino.
-- **Prezzo** riferito alla divisa del listino, questa colonna è visibile se il listino non è a Prezzo ivato.     
-- **IVA**: questo campo viene recuperato dall'anagraica cliente; qualora sul cliente non fosse impostato sarà necessario popolare questo campo con il codice IVA.  
-- **Prezzo Ivato**: il sistema calcola questo prezzo come somma tra il prezzo e l'aliquota del codice IVA inserito.     
-- **Fascia di prezzo**: questa impostazione è utilizzata per selezionare i listini cliente in base alle fasce di prezzo impostabili negli extra data relativi agli articoli; è possibile, a parità di articolo, avere delle discriminanti per le quali il prezzo di listino risulti diverso: basti pensare ai capi d'abbigliamento per i quali al cambiare della taglia varia anche il prezzo di vendita. 
+En esta sección se indicarán los artículos y los posibles descuentos asociados a este catálogo. Las columnas presentes en la cuadrícula son:  
+- **Clase/Artículo/Descripción (Classe/Articolo/Descrizione)**: contiene el código del artículo a incluir en el catálogo; para insertar un nuevo artículo en la cuadrícula, basta posicionarse en la fila para completar los varios datos o utilizar el botón *nuovo articolo* presente en la barra de herramientas.  
+- **Código/Descripción variante (Codice/Descrizione variante)**: en las columnas dedicadas a la variante, se pueden asociar las variantes del artículo y a cada una el precio de venta correspondiente, que se propone en los documentos; solo gestionando los catálogos es posible gestionar la propuesta de precio por variante.  
+- **unità di misura**: puede ser la de gestión del artículo o una de sus unidades de medida alternativas; al crear los documentos, según la unidad de medida especificada, se propondrá un catálogo válido para esa unidad de medida.  
+- **marca**: si está especificada.  
+- **quantità**: propuesta igual a 1, es la cantidad de referencia del precio; si es diferente de 1, cuando se calcule el precio, se dividirá por la cantidad del catálogo.  
+- **prezzo**: referenciado a la divisa del catálogo, esta columna es visible si el catálogo no está a Precio con IVA.  
+- **iva**: este campo se recupera del anáfora de clientes; si no está configurado en el cliente, será necesario completar este campo con el código de IVA.  
+- **prezzo ivato**: el sistema calcula este precio como la suma entre el precio y la tasa del código de IVA ingresado.  
+- **fascia di prezzo**: esta configuración se utiliza para seleccionar los catálogos de clientes en base a los rangos de precios que se pueden establecer en los datos extras relacionados con los artículos; es posible, para un mismo artículo, tener discriminantes por las cuales el precio de catálogo resulte diferente: pensemos en la ropa, donde al cambiar la talla también varía el precio de venta. 
 
-### 2.1 Dettagli
+### 2.1 Detalles (Dettagli)
 
-In questa sezione, per ogni articolo del listino, è possibile inserire diverse tipologie di sconto.
-Nel **Tipo scaglione** è possibile inserire la tipologia di sconto di default da applicare al listino. Al tipo scaglione inserito qui ha precedenza quello eventualmente inserito in anagrafica.        
-Nelle tab sottostanti è possibile inserire i vari sconti per il listino; infatti, è possibile che uno stesso articolo di listino abbia diversi sconti associati, ma sarà possibile scegliere lo scaglione da utilizzare direttamente nel documento.       
+En esta sección, para cada artículo del catálogo, es posible insertar diferentes tipos de descuento.  
+En el **tipo scaglione** es posible ingresar el tipo de descuento por defecto que se aplicará al catálogo. El tipo de escalón ingresado aquí tiene prioridad sobre el que eventualmente se ingrese en el anáfora.  
+En las pestañas inferiores es posible ingresar los distintos descuentos para el catálogo; de hecho, es posible que un mismo artículo de catálogo tenga diferentes descuentos asociados, pero será posible elegir el escalón a utilizar directamente en el documento.  
 
-Di seguito vengono spiegati i tipi sconto che si possono inserire.      
+A continuación se explican los tipos de descuento que se pueden insertar.  
 
-#### 2.1.1 Sconti
+#### 2.1.1 Descuentos (Sconti)
 
-Questi sconti sono fissi e vengono riportati sui documenti indipendentemente dalla quantità o da altre variabili esplicitate nell'ordine: il tipico esempio sono gli sconti commerciali.       
-I campi presenti in questa griglia sono:
-- **Priorità**: questo valore viene preso dalle impostazioni inserite nella tabella [Tipi sconto](/docs/configurations/tables/general-settings/discount-types) e indica la priorità per il reperimento dello sconto.       
-- **Tipo sconto/Descrizione**: in questo campo serve selezionare il tipo sconto tra quelli codificati.        
-- **Valore**: impostare la percentuale di sconto da applicare.       
-- **Cascata/Imponibile**: anche questo dato viene ripreso dalle impostazioni inserite nella tabella [Tipi sconto](/docs/configurations/tables/general-settings/discount-types); se lo sconto è a Cascata, viene calcolato sull'imponibile decurtato degli sconti già calcolati, se invece è a Imponibile viene calcolato sull'imponibile.         
+Estos descuentos son fijos y se reflejan en los documentos independientemente de la cantidad u otras variables especificadas en el pedido: el ejemplo típico son los descuentos comerciales.  
+Los campos presentes en esta cuadrícula son:  
+- **priorità**: este valor se toma de las configuraciones ingresadas en la tabla [Tipos de descuento (Tipi sconto)](/docs/configurations/tables/general-settings/discount-types) y señala la prioridad para la obtención del descuento.  
+- **Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: en este campo se debe seleccionar el tipo de descuento entre los codificados.  
+- **valore**: configurar el porcentaje de descuento a aplicar.  
+- **cascata/imponibile**: también este dato se toma de las configuraciones ingresadas en la tabla [Tipos de descuento (Tipi sconto)](/docs/configurations/tables/general-settings/discount-types); si el descuento es en Cascada, se calcula sobre el imponible descontando los descuentos ya calculados, si en cambio es a Imponible, se calcula sobre el imponible.         
 
-#### 2.1.2 Sconti a quantità
+#### 2.1.2 Descuentos por cantidad (Sconti a quantità)
 
-Questa tipologia di sconto permette di avere diverse percentuali di sconto a seconda della quantità venduta. Le colonne presenti sono:      
-- **Tipo**: in questo campo serve selezionare il tipo sconto tra quelli codificati.         
-- **Quantità**: impostare la quantità per la quale verrà attivato lo sconto.          
-- **Percentuale**: inserire la percentuale di sconto al raggiungimento della quantità indicata.      
+Este tipo de descuento permite tener diferentes porcentajes de descuento según la cantidad vendida. Las columnas presentes son:  
+- **tipo**: en este campo se debe seleccionar el tipo de descuento entre los codificados.  
+- **quantità**: establecer la cantidad para la cual se activará el descuento.  
+- **percentuale**: ingresar el porcentaje de descuento al alcanzar la cantidad indicada.  
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image07.png)
 
-Nell'esempio riportato se verranno vendute 2 unità,avremo uno sconto del 7%, 3 unità sconto del 10% e così via.
+En el ejemplo mostrado, si se venden 2 unidades, tendremos un descuento del 7%, 3 unidades un descuento del 10%, y así sucesivamente.
 
-#### 2.1.3 Sconti a Valore
+#### 2.1.3 Descuentos por valor (Sconti a Valore)
 
-In questa tipologia lo sconto scatta quando si raggiunge un determinato importo per riga documento. Le colonne presenti sono:     
-- **Tipo**: in questo campo serve selezionare il tipo sconto tra quelli codificati.         
-- **Valore**: impostare un valore superato il quale scatta lo sconto.
-- **Percentuale**: inserire la percentuale di sconto da applicare al raggiungimento del valore.
+En este tipo de descuento, se activa al alcanzar un determinado monto por línea de documento. Las columnas presentes son:  
+- **tipo**: en este campo se debe seleccionar el tipo de descuento entre los codificados.  
+- **valore**: establecer un valor a partir del cual se activa el descuento.  
+- **percentuale**: ingresar el porcentaje de descuento a aplicar al alcanzar el valor.  
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image09.png)
 
-Nell'esempio riportato se per riga il valore è inferiore a 100 euro, non avremo sconti. Con un valore compreso tra 100 e 200 avremo il 2% di sconto. Se il valore è compreso tra 200 e 300 verrà applicato il 4%. Se il valore supera i 300 euro verrà applicato uno sconto del 6%.
+En el ejemplo mostrado, si por línea el valor es inferior a 100 euros, no habrá descuentos. Con un valor entre 100 y 200 tendremos un 2% de descuento. Si el valor está entre 200 y 300 se aplicará un 4%. Si el valor supera los 300 euros se aplicará un descuento del 6%.
 
-#### 2.1.4 Prezzo per quantità
+#### 2.1.4 Precio por cantidad (Prezzo per quantità)
 
-In questa caso, al raggiungimento di una certa quantità, il prezzo unitario cambia. Le colonne presenti sono:      
-- **Quantità**: impostare un valore superato il quale scatta il prezzo "personalizzato".      
-- **Prezzo unitario**: inserire il prezzo unitario per la quantità ordinata.
+En este caso, al alcanzar una cierta cantidad, el precio unitario cambia. Las columnas presentes son:  
+- **quantità**: establecer un valor a partir del cual se activa el precio "personalizado".  
+- **prezzo unitario**: ingresar el precio unitario para la cantidad ordenada.  
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image11.png)
 
-Nell'esempio riportato se per riga la quantità è i inferiore a 100 euro,il prezzo sarà quello del listino. Con una quantità compresa tra 100 e 120 avremo un prezzo unitario di 10. Con una quantità compresa tra 100 e 120 avremo un prezzo unitario di 9 e così via.
+En el ejemplo mostrado, si por línea la cantidad es inferior a 100 euros, el precio será el del catálogo. Con una cantidad entre 100 y 120 tendremos un precio unitario de 10. Con una cantidad entre 120 y 140, el precio unitario será de 9, y así sucesivamente.
 
-#### 2.1.5 Note
+#### 2.1.5 Notas (Note)
 
-A livello informativo è possibile inserire delle note legate ad un particolare tipo di scontistica.
+A nivel informativo, es posible insertar notas relacionadas con un tipo particular de descuentos.
 
-#### 2.1.6 Destinazioni
+#### 2.1.6 Destinaciones (Destinazioni)
 
-Con questo parametro è possibile decidere se per una destinazione del cliente, il prezzo unitario debba essere diverso. Inoltre è possibile gestire questo particolare tipo di promo per una data specifica. Le colonne presenti sono:    
-- **Destinazione**: deve essere un indirizzo dell'anagrafica contatti legato al cliente di fatturazione.   
-- **Data DA/A**: inserire un range di date per le quali proporre un prezzo diverso dal listino solo per la destinazione indicata.   
-- **Prezzo**: inserire il prezzo per la destinazione.
+Con este parámetro es posible decidir si para una destinación del cliente, el precio unitario debe ser diferente. Además, se puede gestionar este tipo particular de promoción para una fecha específica. Las columnas presentes son:  
+- **destinazione**: debe ser una dirección del anáfora de contactos vinculada al cliente de facturación.  
+- **Fecha De/A (Data DA/A)**: ingresar un rango de fechas para las cuales proponer un precio diferente al catálogo solo para la destinación indicada.  
+- **prezzo**: ingresar el precio para la destinación.
 
-## **3. Extra data**
+## **extra data**
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-## **4. Documenti allegati**
+## **documenti allegati**
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 

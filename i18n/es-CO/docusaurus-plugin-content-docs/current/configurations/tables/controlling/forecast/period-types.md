@@ -1,6 +1,6 @@
 ---
-title: Tipi Periodo
+title: tipi periodo
 sidebar_position: 5
 ---
 
-La form permette di inserire dei periodi per ogni anno. Per ogni periodo si possono impostare le settimane necessarie. La form contiene tre zone: la prima con i filtri di ricerca, la seconda con i periodi e la terza con i dettagli della settimana.
+El formulario permite ingresar períodos para cada año. Para cada período se pueden establecer las semanas necesarias. El formulario contiene tres áreas: la primera con los filtros de búsqueda, la segunda con los períodos y la tercera con los detalles de la semana.

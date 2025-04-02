@@ -1,23 +1,22 @@
 ---
-title: Analisi costo prodotto/progetto
+title: Análisis de costo de producto/proyecto (Analisi costo prodotto/progetto)
 sidebar_position: 2.8
 ---
 
 ![](/img/it-it/controlling/analysis.png)
 
+El último punto, que representa el objetivo final de nuestro control al menos en lo que respecta a la parte de contabilidad industrial, es la identificación de los diferentes márgenes de nuestros productos o de nuestros proyectos/órdenes. Generalmente se utilizan cuatro configuraciones de costo:
 
-L’ultimo punto, che rappresenta l’obiettivo finale del nostro controllo almeno per quanto riguarda la parte di contabilità industriale è l’identificazione delle varie marginalità dei nostri prodotti o dei nostri progetti/commessse. Generalmente si impiegano quattro configurazioni di costo: 
+***COSTO PRIMARIO (COSTO PRIMO):*** que considera solamente aquellos costos de imputación directa al producto o a la orden. Generalmente son materiales, mano de obra, trabajos externos, amortizaciones específicas, es decir, todo lo que se puede atribuir objetivamente al objeto de cálculo, ya sea un producto o una orden.
 
-***COSTO PRIMO:*** che prende in considerazione solamente quei costi di diretta imputazione al prodotto o alla commessa. Generalmente sono materiali, manodopera, lavorazioni esterne, ammortamenti specifici quindi tutto ciò che oggettivamente si riesce ad attribuire all’oggetto di calcolo che sia prodotto o commessa.
+***COSTO INDUSTRIAL (COSTO INDUSTRIALE):*** representa la segunda configuración a través de la cual al costo primario le agregamos las porciones de costos generales industriales; estos representan aquellos costos que no son de imputación directa pero que son necesarios para el funcionamiento correcto de la producción misma.
 
-***COSTO INDUSTRIALE:*** rappresenta la seconda configurazione attraverso la quale al costo primo aggiungiamo le quote di costi generali industriali, i quali, rappresentano quei costi che non sono di diretta imputazione ma ci servono per far funzionare correttamente la produzione stessa.
+***COSTO TOTAL (COSTO COMPLESSIVO):*** agrega al costo industrial los llamados costos de estructura, que son aquellos generales, administrativos, comerciales y financieros.
 
-***COSTO COMPLESSIVO:*** aggiunge al costo industriale i cosiddetti costi di struttura che sono quelli generali, amministrativi, commerciali, finanziari.
+***COSTO ECONÓMICO TÉCNICO (COSTO ECONOMICO TECNICO):*** representa la última configuración. El costo económico técnico no siempre se utiliza. La diferencia entre el costo total y el costo económico técnico radica en que nosotros agregamos cargos figurativos. Por ejemplo, en lugar de considerar la porción de amortización de mi inmueble técnico, consideramos una porción del alquiler de mercado, aunque sea de propiedad de la empresa. Otro ejemplo es la prestación del propietario de la empresa, que generalmente no se cuantifica ya que se incluye en el capítulo de utilidades, pero en este caso se cuantifica porque se considera como si fuera un empleado a todos los efectos (es decir, se le otorga un salario por la prestación que realiza en el ámbito empresarial).
 
-***COSTO ECONOMICO TECNICO:*** rappresenta l’ultima configurazione. Il costo economico tecnico non sempre viene utilizzato. La differenza tra il costo complessivo e il costo economico tecnico sta nel fatto che noi aggiungiamo degli oneri figurativi. Ad esempio invece di considerare la quota di ammortamento del mio immobile tecnico considero una quota di locazione di affitto di mercato, anche se, è di proprietà dell’azienda stessa. Altro esempio è quello della prestazione del proprietario della ditta che generalmente non viene quantificata in quanto rientra nel capitolo utili ma in questo caso viene quantificata perché considerata come se fosse un dipendente a tutti gli effetti (quindi si da uno stipendio per la prestazione che lo stesso svolge nell’ambito aziendale).
-
-In questo senso potremo creare liberamente gli N [*Modelli di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) per il controlling, con le configurazioni di costo che si ritengono più consone alla realtà aziendale.
+En este sentido, podremos crear libremente los N [*Modelos de reclasificación*](/docs/controlling/reclassifications/create-reclassification-model) para el control, con las configuraciones de costo que se consideren más adecuadas a la realidad empresarial.
 
 :::tip Nota
-Per creare modelli alternativi è facile procedere alla duplicazione di uno già esistente per estenderlo e considerare costi aggiuntivi
+Para crear modelos alternativos, es fácil proceder a la duplicación de uno ya existente para extenderlo y considerar costos adicionales.
 :::

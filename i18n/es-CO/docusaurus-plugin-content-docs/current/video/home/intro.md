@@ -1,5 +1,4 @@
 ---
-title: Home
+title: home
 sidebar_position: 2
 ---
-

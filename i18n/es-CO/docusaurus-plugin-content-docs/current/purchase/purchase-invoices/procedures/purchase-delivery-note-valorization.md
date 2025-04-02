@@ -1,55 +1,55 @@
 ---
-title: Valorizzazione DDT di acquisto
+title: valorizzazione ddt di acquisto
 sidebar_position: 3
 ---
 
-La procedura si apre tramite il percorso **Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di acquisto**. 
+El procedimiento se abre a través del recorrido **valorizzazione ddt di acquisto**. 
 
-Essa permette di eseguire/ripristinare la creazione della fattura di acquisto da uno o più DDT di acquisto.
+Permite ejecutar/restaurar la creación de la factura de compra a partir de uno o más DDT de compra.
 
-### Valorizzazione
+### Valorización (Valorizzazione)
 
-In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT di acquisto da valorizzare. È possibile filtrare per: fornitore, tipo bolla di acquisto, numero, data, articolo e progetto.
+En esta pestaña, el usuario tiene la posibilidad de ingresar filtros para buscar los DDT de compra a valorizar. Se puede filtrar por: proveedor, tipo de nota de compra, número, fecha, artículo y proyecto.
 
-- **Data creazione**: permette di specificare la data della fattura che sarà creata. 
+- **data creazione**: permite especificar la fecha de la factura que será creada. 
 
-*Pulsante specifico*: 
+*Botón específico*:  
 
-> **Valorizzazione DDT di acquisto**: permette di valorizzare i DDT selezionati nella griglia, in base ai parametri inseriti nel successivo tab *Parametri*.
+> **valorizzazione ddt di acquisto**: permite valorar los DDT seleccionados en la cuadrícula, según los parámetros ingresados en la pestaña siguiente *parametri*.
 
-### Parametri
+### Parámetros (Parametri)
 
-*Inserimento in fattura*
+*inserimento in fattura*
 
-- **Ricalcola CdC/CdR**: utilizzato nella contabilità analitica, serve per ricalcolare i centri di costo o di ricavo.  
+- **Recalcular CdC/CdR (Ricalcola CdC/CdR)**: utilizado en contabilidad analítica, sirve para recalcular los centros de costo o de ingresos.  
 
-- **Ordina DDT per numero documento fornitore**: se settato permette di inserire i DDT all’interno delle fatture riepilogative ordinandoli per *numero documento fornitore* invece del *numero interno*.  
+- **ordina ddt per numero documento fornitore**: si está configurado, permite insertar los DDT dentro de las facturas resumidas ordenándolos por *número de documento del proveedor (numero documento fornitore)* en lugar de por *numero interno*.  
 
-- **Tipo fattura acquisto**: indica il tipo di fattura da creare.
+- **tipo fattura acquisto**: indica el tipo de factura a crear.
 
-*Riferimenti DDT*
+*riferimenti ddt*
 
-- **Metti riferimenti DDT**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
+- **metti riferimenti ddt**: si este indicador está configurado, en la pestaña [Artículos (Articoli)](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) de la factura se mostrará un *Artículo nota* que recogerá las referencias del DDT del cual se creó la factura. El contenido de esta nota debe ser ingresado en el campo *descrizione*, de acuerdo con los parámetros descritos en la etiqueta. 
 
-    *Esempio*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Se il DDT ha il numero 5 e la data 11.09.2024, l'articolo nota nella fattura sarà: 'DDT riferimento no 5 del 11.09.2024'.
+    *Ejemplo*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Si el DDT tiene el número 5 y la fecha 11.09.2024, el artículo nota en la factura será: 'DDT referencia no 5 del 11.09.2024'.
 
-:::tip Ricorda
-Per la fatturazione riepilogativa è necessario impostare nei [Parametri raggruppamento fatture](/docs/configurations/parameters/purchase/invoice-grouping/) le condizioni di raggruppamento da utilizzare. 
+:::tip Recuerda (Ricorda)
+Para la facturación resumida, es necesario establecer en los [Parámetros de agrupamiento de facturas (Parametri raggruppamento fatture)](/docs/configurations/parameters/purchase/invoice-grouping/) las condiciones de agrupamiento a utilizar. 
 :::
 
-*Pulsante specifico*: 
+*Botón específico*:  
 
-> **Salva parametri valorizzazione**: permette di salvare i parametri impostati per la valorizzazione.
+> **salva parametri valorizzazione**: permite guardar los parámetros establecidos para la valorización.
 
-Dopo aver selezionato i DDT (dal tab *Valorizzazione*) e impostato i parametri, la fattura può essere creata con l'aiuto del pulsante *Valorizzazione DDT di acquisto*.
+Después de seleccionar los DDT (desde la pestaña *Valorización*) y establecer los parámetros, la factura puede ser creada con la ayuda del botón *valorizzazione ddt di acquisto*.
 
-### Precedenti
+### Anteriores (Precedenti)
 
-L'ultimo tab è quello di ripristino: è possibile utilizzarlo per filtrare, visualizzare e annullare le operazioni.
+La última pestaña es la de restauración: se puede usar para filtrar, visualizar y anular las operaciones.
 
-I dati nelle griglie in basso, **Fatture** e **DDT**, corrispondono alla valorizzazione selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e il DDT corrispondente con doppio click sulla riga desiderata.
+Los datos en las cuadrículas de abajo, **fatture** y **DDT**, corresponden a la valorización seleccionada en la cuadrícula superior (después de haber filtrado los datos). Además, en estas dos últimas cuadrículas, hay la opción de visualizar la factura y el DDT correspondiente haciendo doble clic en la fila deseada.
 
-*Pulsanti specifici*:
-> **Ricerca valorizzazione DDT**: per cercare le fatture create e i DDT valorizzati in base ai filtri impostati. Il risultato di questa procedura viene visualizzato nella griglia di risultato.  
-> **Rirpistino fatture**: per cancellare la fattura selezionata nella griglia inferiore.  
-> **Ripristino valorizzazione**: per cancellare l'intera operazione selezionata, con tutti i suoi dettagli visualizzati nelle due griglie sottostanti.
+*Botones específicos*:
+> **ricerca valorizzazione ddt**: para buscar las facturas creadas y los DDT valorizados según los filtros establecidos. El resultado de este procedimiento se visualiza en la cuadrícula de resultados.  
+> **Restauración de facturas (Rirpistino fatture)**: para eliminar la factura seleccionada en la cuadrícula inferior.  
+> **ripristino valorizzazione**: para eliminar toda la operación seleccionada, con todos sus detalles visualizados en las dos cuadrículas inferiores.

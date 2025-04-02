@@ -1,80 +1,76 @@
 ---
-title: Richieste Piani di Controllo
+title: richieste piani di controllo
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Procedure > Richieste Piani di Controllo**   
+La gestión se encuentra en la ruta **Calidad > Controles de artículo > Planes de control > Procedimientos > richieste piani di controllo**.
 
-
-:::important A cosa serve
-Questa procedura permette di assegnare massivamente le *Richieste* a *Piani di controllo* già esistenti o di crearne di nuovi.   
-Per poter usufruire della funzione di *Associazione*/*Inserimento* è necessario:   
-- dal tabulatore **Richieste** scegliere le righe di *Controlli articolo*;  
-- dal tabulatore **Piani di controllo** scegliere i *Piani di controllo*;      
-- cliccare il pulsante **Nuovo Piano di controllo** o **Associa Piano di controllo**.   
+:::important ¿Para qué sirve? (A cosa serve)
+Este procedimiento permite asignar masivamente las *Solicitudes* a *Planes de control* ya existentes o crear nuevos.  
+Para poder utilizar la función de *Asociación*/ *Inserción*, es necesario:   
+- en la pestaña **Solicitudes**, seleccionar las filas de *Controles de artículo*;  
+- en la pestaña **Planes de control**, seleccionar los *Planes de control*;  
+- hacer clic en el botón **Nuevo Plan de Control** o **Asociar Plan de Control**.   
 :::
 
-## Richieste   
+## Solicitudes (Richieste)  
 
-In questo tabulatore è possibile ricercare e selezionare le *richieste* di associazione generate da *Importa articoli da controllare* dove non si è riusciti ad associare, alla riga articolo, un *Piano di controllo*.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca richieste** per visualizzare i risultati all'interno della griglia di risultato.    
+En esta pestaña es posible buscar y seleccionar las *solicitudes* de asociación generadas por *Importar artículos a controlar* donde no se pudo asociar, a la línea de artículo, un *Plan de control*.   
+La sesión se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **Buscar Solicitudes** para visualizar los resultados dentro de la cuadrícula de resultados.   
 
-*Pulsanti specifici*:   
+*Botones específicos*:   
 
-### ![](/img/neutral/common/search.png) Ricerca richieste   
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
+### ![](/img/neutral/common/search.png) Buscar Solicitudes (Ricerca richieste)   
+Según el filtro establecido, se visualizan los resultados dentro de la cuadrícula de resultados.   
 
-### Apri Controlli articolo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Premendo il pulsante vengono eseguite le gestioni dei *Controlli articolo* selezionati.   
+### Abrir Controles de artículo (Apri Controlli articolo)   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados.   
+Al presionar el botón, se gestionan los *Controles de artículo* seleccionados.   
 
-### ![](/img/neutral/common/item-web.png) Apri Piani di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Premendo il pulsante vengono eseguite le gestioni dei *Piani di controllo* selezionati.   
+### ![](/img/neutral/common/item-web.png) Abrir Planes de control (Apri Piani di controllo)   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados.   
+Al presionar el botón, se gestionan los *Planes de control* seleccionados.   
 
-### ![](/img/neutral/common/new.png) Nuovo Piano di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato del tabulatore *Richieste*.   
-Premendo il pulsante viene creato un nuovo *Piano di controllo* contenente gli *Articoli* dei *Controlli articolo* selezionati.   
-Alle righe di **Controllo articolo* selezionate viene associato il *Piano di controllo* appena creato e le righe nascoste.   
-Per poterle rivedere è necessario agire nell'area filtro indicando il filtro *Già associati* e premere il pulsante **Ricerca richieste**
+### ![](/img/neutral/common/new.png) Nuevo Plan de control (Nuovo Piano di controllo)   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados de la pestaña *Solicitudes*.   
+Al presionar el botón, se crea un nuevo *Plan de control* que contiene los *Artículos* de los *Controles de artículo* seleccionados.   
+A las filas de **Control de artículo** seleccionadas se les asocia el *Plan de control* recién creado y las filas quedan ocultas.   
+Para poder verlas, es necesario actuar en el área de filtro indicando el filtro *Ya asociados* y presionar el botón **Buscar Solicitudes**.  
 
-### ![](/img/neutral/common/duplicate.png) Scegli Piani di controllo   
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Piani di controllo**.   
+### ![](/img/neutral/common/duplicate.png) Elegir Planes de control (Scegli Piani di controllo)   
+Al presionar el botón, se posiciona automáticamente en la pestaña **Planes de control**.   
 
+## Planes de control (Piani di controllo)  
 
-## Piani di controllo   
+En esta pestaña es posible buscar y seleccionar el *Plan de control* en el que se desea insertar los *Artículos* de los *Controles de artículo* seleccionados en la pestaña *Solicitudes*.   
+La sesión se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **Buscar Planes de control** para visualizar los resultados dentro de la cuadrícula de resultados.    
 
-In questo tabulatore è possibile ricercare e selezionare il *Piano di controllo* in cui si desidera inserire gli *Articoli* dei *Controlli articolo* selezionati nel tabulatore *Richieste*.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca Piani di controllo** per visualizzare i risultati all'interno della griglia di risultato.    
+*Botones específicos*:   
 
-*Pulsanti specifici*:   
+### ![](/img/neutral/common/search.png) Buscar Planes de control (Ricerca Piani di controllo)   
+Según el filtro establecido, se visualizan los resultados dentro de la cuadrícula de resultados.   
 
-### ![](/img/neutral/common/search.png) Ricerca Piani di controllo   
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
+### ![](/img/neutral/common/item-web.png) Abrir Planes de control (Apri Piani di controllo)   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados.   
+Al presionar el botón, se gestionan los *Planes de control* seleccionados.   
 
-### ![](/img/neutral/common/item-web.png) Apri Piani di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Premendo il pulsante vengono eseguite le gestioni dei *Piani di controllo* selezionati.   
+### ![](/img/neutral/common/new.png) Nuevo Plan de control (Nuovo Piano di controllo)   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados de la pestaña *Solicitudes*.   
+Al presionar el botón, se crea un nuevo *Plan de control* que contiene los *Artículos* de los *Controles de artículo* seleccionados de la pestaña *Solicitudes*.   
+A las filas de **Control de artículo** seleccionadas se les asocia el *Plan de control* recién creado y las filas quedan ocultas.   
 
-### ![](/img/neutral/common/new.png) Nuovo Piano di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato del tabulatore *Richieste*.   
-Premendo il pulsante viene creato un nuovo *Piano di controllo* contenente gli *Articoli* dei *Controlli articolo* selezionati dal tabulatore *Richieste*.   
-Alle righe di **Controllo articolo* selezionate viene associato il *Piano di controllo* appena creato e le righe nascoste.   
+### Asociar Plan de control (Associa Piano di controllo)   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados de la pestaña *Solicitudes* y un solo *Plan de control* de la cuadrícula de resultados de la pestaña *Planes de control*.   
+Al presionar el botón, se asocian al *Plan de control* seleccionado los *Artículos* de los *Controles de artículo* seleccionados de la cuadrícula de resultados de la pestaña *Solicitudes*.   
 
-### Associa Piano di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato del tabulatore *Richieste* e un solo *Piano di controllo* dalla griglia risultato del tabulatore *Piani di controllo*.   
-Premendo il pulsante, al *Piano di controllo* selezionato, vengono associati gli *Articoli* dei *Controlli articolo* selezionati dalla griglia risultato del tabulatore *Richieste*.   
+### ![](/img/neutral/common/duplicate.png) Elegir Solicitudes (Scegli Richieste)   
+Al presionar el botón, se posiciona automáticamente en la pestaña **Solicitudes**.   
 
-### ![](/img/neutral/common/duplicate.png) Scegli Richieste   
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Richieste**.   
+## Parámetros (Parametri)  
 
+En esta pestaña es posible indicar los criterios con los cuales crear/asociar los *Artículos* a los *Planes de control*.   
+Los dos criterios posibles son - *Creación/asociación a un Plan de control*:   
+> **standard**: permite la creación/asociación de filas de *Controles de artículo* sin referencias a cuentas *Cliente/Proveedor* a *Planes de control* sin referencias a cuentas *Cliente/Proveedor*.   
+> **cliente/fornitore**: permite la creación/asociación de filas de *Controles de artículo* con referencias a cuentas *Cliente/Proveedor* a *Planes de control* con la misma cuenta *Cliente/Proveedor*.   
 
-## Parametri   
-
-In questo tabulatore è possibile indicare i criteri con i quali creare/associare gli *Articoli* ai *Piani di controllo*.   
-I due criteri possibili sono - *Creazione/associazione ad un Piano di controllo*:   
-> **Standard**: permette la creazione/associazione di righe di *Controlli articolo* prive di riferimenti a conti *Cliente/Fornitore* a *Piani di controllo* privi di riferimenti a conti *Cliente/Fornitore*.   
-> **Cliente/Fornitore**: permette la creazione/associazione di righe di *Controlli articolo* con riferimenti a conti *Cliente/Fornitore* a *Piani di controllo* con il medesimo conto *Cliente/Fornitore*.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

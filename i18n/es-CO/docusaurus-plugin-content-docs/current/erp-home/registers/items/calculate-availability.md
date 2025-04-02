@@ -1,26 +1,26 @@
 ---
-title: Calcolo disponibilità
+title: calcolo disponibilità
 sidebar_position: 5
 ---
 
-:::important A cosa serve
-Il Calcolo della Disponibilità di Fluentis è uno strumento essenziale che consente agli utenti di determinare con precisione la disponibilità degli articoli all'interno dei magazzini. Questa funzionalità è accessibile attraverso un'interfaccia user-friendly, dove è possibile selezionare i magazzini sui quali si desidera eseguire il calcolo. L'utente può inserire informazioni come il codice del magazzino e la sua descrizione, configurando così la base su cui operare.
+:::important Para qué sirve (A cosa serve)  
+El Cálculo de la Disponibilidad de Fluentis es una herramienta esencial que permite a los usuarios determinar con precisión la disponibilidad de artículos dentro de los almacenes. Esta funcionalidad es accesible a través de una interfaz fácil de usar, donde se pueden seleccionar los almacenes sobre los cuales se desea realizar el cálculo. El usuario puede ingresar información como el código del almacén y su descripción, configurando así la base sobre la cual operar.  
 
-Nella sezione dedicata al calcolo, gli utenti possono impostare i criteri per la disponibilità fisica e logica, specificando se considerare documenti relativi a acquisti, vendite, produzioni pianificate e rilasciate. Inoltre, è possibile stabilire un intervallo temporale specifico per il quale si desidera effettuare il calcolo, aumentando così l'accuratezza dei dati raccolti.
+En la sección dedicada al cálculo, los usuarios pueden establecer los criterios para la disponibilidad física y lógica, especificando si considerar documentos relacionados con compras, ventas, producciones planificadas y liberadas. Además, es posible establecer un intervalo de tiempo específico para el cual se desea realizar el cálculo, aumentando así la precisión de los datos recopilados.  
 
-Questa funzionalità non solo facilita il monitoraggio delle scorte, ma supporta anche decisioni strategiche in tempo reale, assicurando che le aziende possano rispondere prontamente alle esigenze di approvvigionamento e vendita. Grazie al calcolo della disponibilità, Fluentis offre quindi un vantaggio competitivo significativo, ottimizzando la gestione delle giacenze e migliorando l'efficienza operativa.
-:::
+Esta funcionalidad no solo facilita el monitoreo de inventarios, sino que también apoya decisiones estratégicas en tiempo real, asegurando que las empresas puedan responder rápidamente a las necesidades de aprovisionamiento y venta. Gracias al cálculo de la disponibilidad, Fluentis ofrece así una ventaja competitiva significativa, optimizando la gestión de existencias y mejorando la eficiencia operativa.  
+:::  
 
-La finestra relativa al calcolo della disponibilità si apre tramite il percorso **Home > Articoli > Calcolo disponibilità**.
+La ventana relacionada con el cálculo de disponibilidad se abre a través de la ruta **Inicio > Artículos > calcolo disponibilità**.
 
-Attraverso questa form, si inseriscono i magazzini su cui si desidera calcolare la disponibilità e che poi verranno riportati nella form [Analisi della disponibilità](/docs/erp-home/registers/items/availability-analysis).
+A través de este formulario, se ingresan los almacenes sobre los cuales se desea calcular la disponibilidad y que luego serán reportados en el formulario [Análisis de la disponibilidad](/docs/erp-home/registers/items/availability-analysis).  
 
-La form si compone da una griglia, in cui si inseriscono il codice del **Magazzino** e la relativa **Descrizione** per tutti i magazzini su cui si vuole venga calcolata la disponibilità (aggiungendo o togliendo un magazzino all'interno di questa griglia, questo verrà aggiunto o tolto anche dalla griglia dei magazzini presente nell'*Analisi della disponibilità*).
+El formulario se compone de una cuadrícula, en la que se ingresan el código del **magazzino** y la correspondiente **Descripción** para todos los almacenes en los que se desea que se calcule la disponibilidad (al agregar o eliminar un almacén dentro de esta cuadrícula, este se añadirá o eliminará también de la cuadrícula de almacenes presente en el *Análisis de la disponibilidad*).  
 
-Nella sezione a destra si può impostare la tipologia di **Calcolo della disponibilità fisica** e della **Disponibilità logica** per: conto/lavoro, acquisti, vendite, produzione pianificata, produzione rilasciata, magazzino (si possono scegliere una, alcune o tutte queste opzioni che possono essere diverse nel caso della disponibilità fisica rispetto alla disponibilità logica).
+En la sección de la derecha se puede configurar el tipo de **Cálculo de la disponibilidad física** y de la **Disponibilidad lógica** para: cuenta/trabajo, compras, ventas, producción planificada, producción liberada, almacén (se pueden elegir una, algunas o todas estas opciones que pueden ser diferentes en el caso de la disponibilidad física en comparación con la disponibilidad lógica).  
 
-Infine c'è la possibilità di indicare il periodo che il sistema deve tenere in considerazione per il calcolo della disponibilità, inserendo a partire dalla data odierna (ovvero dalla data in cui si lancia l'analisi della disponibilità) il **Numero dei giorni** fino a cui il sistema deve andare a controllare la disponibilità all'interno dei documenti.
+Por último, hay la posibilidad de indicar el período que el sistema debe tener en cuenta para el cálculo de la disponibilidad, ingresando a partir de la fecha actual (es decir, desde la fecha en que se lanza el análisis de disponibilidad) el **Número de días** hasta el cual el sistema debe ir a comprobar la disponibilidad dentro de los documentos.  
 
-Attualmente questi campi non vengono più gestiti perché sono stati implementati all'interno della schermata di Analisi della disponibilità. L'unica parte ancora attiva resta la griglia dei Magazzini.
+Actualmente, estos campos ya no se gestionan porque han sido implementados dentro de la pantalla de Análisis de la disponibilidad. La única parte aún activa sigue siendo la cuadrícula de Almacenes.  
 
-Una volta che i parametri sono stati settati, si può procedere all'[Analisi della disponibilità](/docs/erp-home/registers/items/availability-analysis) attraverso la stampa *Analisi disponibilità*.
+Una vez que se han configurado los parámetros, se puede proceder al [Análisis de la disponibilidad](/docs/erp-home/registers/items/availability-analysis) a través de la impresión *Análisis de disponibilidad*.

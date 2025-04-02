@@ -1,19 +1,13 @@
 ---
-title: Tab Ripristino
+title: Pestaña de Restablecimiento (Tab Ripristino)
 sidebar_position: 2
 ---
 
-E' presente come al solito una scheda finale ‘Ripristino' per visualizzare in anteprima la registrazione effettuata o anche per annullarle attraverso l'apposito pulsante.
+Está presente como de costumbre una pestaña final ‘Restablecimiento (Ripristino)’ para visualizar en vista previa el registro realizado o también para anularlo a través del botón correspondiente.
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per cercare il giroconto partite effettuati precedentemente. |
-| Ripristina giroconto partite | Pulsante per visualizzare e/o ripristinare il giroconto partite. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Botón para buscar el asiento de partidas realizado previamente. |
+| Restablecer asiento de partidas (Ripristina giroconto partite) | Botón para visualizar y/o restablecer el asiento de partidas. |

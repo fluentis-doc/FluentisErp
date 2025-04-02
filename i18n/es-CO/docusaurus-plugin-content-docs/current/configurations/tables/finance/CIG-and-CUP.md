@@ -1,22 +1,22 @@
 ---
-title: Codice Identificativo di Gara / Codice Unico Progetto
+title: Código Identificativo de Licitación / Código Único de Proyecto (Codice Identificativo di Gara / Codice Unico Progetto)
 sidebar_position: 8
 ---
 
-Le due tabelle, sostanzialmente identiche, permettono di inserire i codici identificativi di gara d'appalto ed i codici progetto da richiamare poi nei documenti del ciclo attivo.
+Las dos tablas, sustancialmente idénticas, permiten ingresar los códigos identificativos de licitación y los códigos de proyecto que luego se pueden recuperar en los documentos del ciclo activo.
 
-Si ricorda che sono presenti due flag nelle [**anagrafiche clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) al fine di rendere visibili i campi nella testata dei documenti (ordine, bolla, fattura).
+Se recuerda que hay dos indicadores en las [**fichas de clientes (anagrafiche clienti)**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) para hacer visibles los campos en el encabezado de los documentos (pedido, albarán, factura).
 
-**Codice:** accoglie il codice di gara o il codice progetto, che sarà poi riportato nei file SDI ad esempio
+**Código (Codice):** alberga el código de licitación o el código de proyecto, que posteriormente se reflejará en los archivos SDI, por ejemplo.
 
-**Data / Data richiesta:** accoglie la data di inizio validità del codice
+**Fecha / Fecha solicitada (Data / Data richiesta):** alberga la fecha de inicio de validez del código.
 
-**Cod. attivo:** permette di rendere attivo o disattivato il codice
+**Código activo (Cod. attivo):** permite activar o desactivar el código.
 
-**Descrizione:** accoglie una descrizione di dettaglio riferita al codice, al fine di identificare a quale gara d'appalto o progetto si riferisca
+**Descripción (Descrizione):** alberga una descripción detallada relacionada con el código, para identificar a qué licitación o proyecto se refiere.
 
-**IBAN:** permette di inserire il codice IBAN del conto corrente bancario che, tipicamente, è associato specificamente alla gara d'appalto o al progetto al fine di canalizzare gli incassi relativi.
+**IBAN:** permite ingresar el código IBAN de la cuenta bancaria que, por lo general, está asociada específicamente a la licitación o al proyecto para canalizar los ingresos correspondientes.
 
-:::tip[Nota]
-Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+:::tip[Nota (Nota)]
+Para la correcta gestión de los códigos CIG y CUP en los documentos de la factura electrónica, siendo la etiqueta correspondiente un hijo de los datos del pedido, ver [**aquí (qui)**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig).
 :::

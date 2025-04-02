@@ -1,64 +1,59 @@
 ---
-title: Creazione e Gestione effetti
+title: Creación y Gestión de Efectos (Creazione e Gestione effetti)
 sidebar_position: 5
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Effetto** e permette la creazione *manuale* e la gestione, modifica/visualizzazione dell'effetto.
+El formulario se encuentra en la ruta **Tesorería > Efectos > Crear Efecto** y permite la creación *manual* y la gestión, modificación/visualización del efecto.
 
-## Come creare un Nuovo effetto
+## Cómo crear un Nuevo efecto (Nuovo effetto)
 
-:::tip[Attenzione]
-Stiamo per illustrare i passaggi per la creazione ***manuale*** di un effetto. Tuttavia **questa modalità è scarsamente utilizzata. Si consiglia di utilizzare le procedure automatiche:**
+:::tip[Atención]
+Vamos a ilustrar los pasos para la creación ***manual*** de un efecto. Sin embargo, **este modo es poco utilizado. Se recomienda utilizar los procedimientos automáticos:**
 
-[**Acquisizione effetti dalle partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
+[**Adquisición de efectos de las partidas**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
 
-[**Acquisizione effetti dalle fatture**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
+[**Adquisición de efectos de las facturas**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
 :::
 
-Da questa maschera:
+Desde este formulario:
 
-1. Seleziona il **tipo effetto**: il programma procederà ad assegnare un **numero** secondo il numeratore collegato al tipo effetto e all'**anno** di riferimento, che propone come l'anno della data di sistema.
- 
-2. Compila i campi **Debitore** (con il conto contabile del soggetto intestatario delle effetto) e **Scadenza** (con la data scadenza dell'effetto).
+1. Selecciona el **tipo effetto**: el programa procederá a asignar un **número** según el numerador asociado al tipo de efecto y al **anno** correspondiente, que se propone como el año de la fecha del sistema.
 
-3. Salva la testata dell'effetto.
+2. Completa los campos **debitore** (con la cuenta contable del sujeto titular del efecto) y **scadenza** (con la fecha de vencimiento del efecto).
 
-4. Compila i campi **importo valuta** e **importo effetto** manualmente o gestisci automaticamente sulla base delle partite/scadenze selezionate dalle tab dei **riferimenti scadenze/partite**. Importo bollo è in campo non utilizzato. Nelle tab dei riferimenti partite o scadenze puoi utilizzare i comandi **Inserimento partite o Inserimento scadenze** per ricercare e inserire partite / scadenze nell'effetto.
+3. Guarda el encabezado del efecto.
 
-La **data valuta** è la data per il cambio nel caso di effetti in valuta. Viene proposta pari alla data effetto.
+4. Completa los campos **importo valuta** y **importo effetto** manualmente o gestiona automáticamente en base a las partidas/vencimientos seleccionados en las pestañas de **referencias de vencimientos/partidas**. El importe del sello (importo bollo) está en un campo no utilizado. En las pestañas de referencias de partidas o vencimientos puedes utilizar los comandos **inserimento partite** o **inserimento scadenze** para buscar e insertar partidas/vencimientos en el efecto.
 
-Gli elementi obbligatori da indicare sono la data scadenza, divisa e cambio, il cliente debitore e la piazza (compilata sulla base dell'anagrafica collegata al cliente).
+La **data valuta** es la fecha para el cambio en el caso de efectos en moneda. Se propone igual a la fecha del efecto.
 
-L'**agente** è un semplice campo di riferimento dell'agente principale della fattura d'origine.
+Los elementos obligatorios a indicar son la fecha de vencimiento, dividendo y cambio, el cliente deudor y la plaza (completada en base al registro asociado al cliente).
 
-Lo **stato effetto** viene proposto come *emesso* e sarà aggiornato automaticamente sulla base delle operazioni che saranno eseguite per l'effetto.
+El **agente** es un campo de referencia del agente principal de la factura de origen.
 
-Il flag **Stampato** non è gestito, mentre il *contabilizzato* e *accreditato* dipendono dalle procedure di contabilizzazione effetti e accrediti eseguite.
+El **stato effetto** se propone como *emitido* y se actualizará automáticamente en base a las operaciones que se realicen para el efecto.
 
-Il campo **riferimenti** è un campo note libero, che viene riportato nel file come riferimento dell'operazione.
+El indicador **stampato** no se gestiona, mientras que el *contabilizzato* y *accreditato* dependen de los procedimientos de contabilización de efectos y créditos ejecutados.
 
-### La Tab Presentazione
+El campo **riferimenti** es un campo de notas libre, que se reporta en el archivo como referencia de la operación.
 
-Presenta due sezioni: 
+### La Pestaña Presentación (Tab Presentazione)
 
-**Appoggio bancario**, dove sono riportati gli estremi della banca d'appoggio quali **abi/cab** (obbligatori per poter inserire l'effetto in una distinta di presentazione) oltre a *conto corrente* (IBAN e SWIFT) e *CIN* che sono necessari solo in caso di effetti RID. 
+Presenta dos secciones:
 
-**Estremi Presentazione**
-riporta gli estremi della distinta con la quale è stato presentato in banca (ad esempio al salvo buon fine o all'incasso).
+**appoggio bancario**, donde se reportan los datos de la entidad bancaria de apoyo tales como **abi/cab** (obligatorios para poder ingresar el efecto en una lista de presentación) además de *conto corrente* (IBAN y SWIFT) y *CIN*, que son necesarios solo en caso de efectos RID.
 
-### La Tab Riferimenti scadenze
+**estremi presentazione** reporta los datos de la lista con la cual se presentó en el banco (por ejemplo, al salvo buen fin o al cobro).
 
-In questa sezione si possono visualizzare i riferimenti della fattura d'origine (in caso di utilizzo della procedura *acquisizione effetti dalle scadenze*) oppure aggiungere manualmente scadenze attraverso il pulsante *inserimento scadenze*. In questo caso è possibile inserire anche scadenze non collegate a tipi pagamento da gestire con effetti (esempio *ricevute bancarie*), così come scadenze collegate a note di credito.
+### La Pestaña Referencias Vencimientos (Tab Riferimenti scadenze)
 
-### La Tab Riferimento partite
+En esta sección se pueden visualizar las referencias de la factura de origen (en caso de utilizar el procedimiento *adquisición de efectos de los vencimientos*) o agregar vencimientos manualmente a través del botón *inserimento scadenze*. En este caso, también es posible ingresar vencimientos no vinculados a tipos de pago a gestionar con efectos (ejemplo *recibos bancarios*), así como vencimientos vinculados a notas de crédito.
 
-In questa sezione si possono visualizzare i riferimenti delle partite d'origine (in caso di acquisizione effetti dalle partite) oppure aggiungere manualmente partite attraverso il pulsante *inserimento partite*.
+### La Pestaña Referencias Partidas (Tab Riferimento partite)
 
-In questo caso è possibile inserire anche partite non collegate a tipi pagamento da gestire con effetti (esempio *ricevute bancarie*), così come partite collegate a note di credito.
+En esta sección se pueden visualizar las referencias de las partidas de origen (en caso de adquisición de efectos de las partidas) o agregar partidas manualmente a través del botón *ingreso de partidas (inserimento partite)*.
 
-### La Tab Altro
-In questa sezione si possono memorizzare i riferimenti dei giranti e degli avallanti.
+En este caso, también es posible ingresar partidas no vinculadas a tipos de pago a gestionar con efectos (ejemplo *recibos bancarios*), así como partidas vinculadas a notas de crédito.
 
-
-
-
+### La Pestaña Otro (Tab Altro)
+En esta sección se pueden almacenar las referencias de los giradores y de los avalistas.

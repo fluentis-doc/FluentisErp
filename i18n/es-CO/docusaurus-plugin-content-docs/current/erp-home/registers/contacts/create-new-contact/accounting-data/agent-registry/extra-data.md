@@ -1,8 +1,8 @@
 ---
-title: Extra data
+title: extra data
 sidebar_position: 7
 ---
 
-In questa tab possono essere associati all'anagrafica in uso alcuni [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+En esta pestaña se pueden asociar a la base de datos en uso algunos [extra data (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-Conviene fare riferimento al commento di dettaglio per la gestione e le casistiche di impiego di queste funzionalità.
+Es recomendable hacer referencia al comentario detallado para la gestión y los casos de uso de estas funcionalidades.

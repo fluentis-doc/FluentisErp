@@ -1,13 +1,13 @@
 ---
-title: Stampa Lista Fatture Anticipate e Incassate
+title: Impresión de Lista de Facturas Anticipadas y Coincididas (Stampa Lista Fatture Anticipate e Incassate)
 sidebar_position: 4
 ---
 
-Da questa form è possibile lanciare la stampa che riepiloga le fatture anticipate.
+Desde este formulario es posible lanzar la impresión que resume las facturas anticipadas.
 
-Sono presenti i principali elementi di filtro quali il tipo fattura, la banca di anticipo, il cliente, nonchè i riferimenti alla distinta di antipo.
+Están presentes los principales elementos de filtro, como el tipo de factura, el banco de anticipo, el cliente, así como las referencias a la lista de anticipos.
 
-Inoltre è possibile limitare la visione alle sole fatture già anticipate, incassate o da anticipare.
+Además, es posible limitar la visualización solo a las facturas ya anticipadas, cobradas o por anticipar.
 
 ![](/img/it-it/treasury/advance/report-advanced-collected-invoices-list/image01.png)
 

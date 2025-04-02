@@ -1,71 +1,70 @@
 ---
-title: Contabilizzazione movimenti
+title: contabilizzazione movimenti
 sidebar_position: 4
 ---
 
 :::note Nota
-La form di **Contabilizzazione movimenti** è utilizzata nello localizzazioni di Romania e Croazia.
+El formulario de **contabilizzazione movimenti** es utilizado en las localizaciones de Rumanía y Croacia.
 :::
- 
-La procedura si apre tramite il menu **Logistica > Registrazioni > title: Contabilizzazione movimenti**.     
-Questa form consente la contabilizzazione dei registri di magazzino nel libro mastro. La finestra è composta da due tab, Contabilizzazione libro mastro e Registrazione contabile, entrambe con area di filtro e risultati della griglia.
 
-## **Movimenti Contabili**
+El procedimiento se abre a través del menú **Logística > Registros > title: contabilizzazione movimenti**.  
+Este formulario permite la contabilización de los registros de almacén en el libro mayor. La ventana consta de dos pestañas, Contabilización del libro mayor y Registro contable, ambas con área de filtro y resultados de la cuadrícula.
 
-Dopo aver impostato tutti i filtri desiderati, è sufficiente fare clic sul pulsante Ricerca per visualizzare i risultati, ovvero l'elenco dei Registri di magazzino all'interno della griglia dei risultati.
-Per contabilizzare un registro, è sufficiente selezionarlo e fare clic sul pulsante Crea Registrazione, ed è possibile registrare uno o più registri a seconda delle necessità e delle preferenze dell'utente. Il campo Dati contabili e il flag Dati contabili sono uguali alla data di inserimento delle scorte e consentono la selezione della data di contabilizzazione desiderata.
+## **movimenti contabili**
 
-La griglia dei risultati è composta dai seguenti campi:     
-**Magazzino**: il campo mostra il codice del magazzino in cui è stato generato il registro;      
-**Causale**: il campo mostra il codice della causale di magazzino utilizzato per il movimento e pertanto inserito nell'intestazione del registro;      
-**Data**: il campo mostra la data di inserimento del registro di magazzino;     
-**Numero**: il campo mostra il numero progressivo del registro di magazzino;     
-**Doc. di riferimento**: il campo mostra ciò che è presente nel campo *Doc. di riferimento* nell'intestazione del registro;      
-**Data documento**: il campo mostra la data del documento correlato presente nell'intestazione del registro;      
-**Carico / Scarico**: il campo mostra il tipo di registro, che può essere solo carico o scarico;      
-**Magazzino di destinazione**: il campo mostra il codice del magazzino di destinazione, se presente;      
-**Modello del magazzino di destinazione**: il campo mostra il codice identificativo del magazzino di destinazione, se presente;      
-**Numero del magazzino di destinazione**: il campo mostra il numero progressivo del registro del magazzino di destinazione, se presente;      
-**Documento di riferimento del magazzino di destinazione**: il campo mostra ciò che è presente nel campo *Documento di riferimento* nell'intestazione del registro del magazzino di destinazione, se presente;      
-**Descrizione conto**: il campo mostra la descrizione del conto del contatto a seconda che si tratti di addebito o accredito.     
+Después de haber configurado todos los filtros deseados, basta con hacer clic en el botón Buscar para visualizar los resultados, es decir, la lista de Registros de almacén dentro de la cuadrícula de resultados.  
+Para contabilizar un registro, simplemente seleccionarlo y hacer clic en el botón Crear Registro, y es posible registrar uno o más registros dependiendo de las necesidades y preferencias del usuario. El campo Datos contables y el indicador Datos contables son iguales a la fecha de ingreso de las existencias y permiten seleccionar la fecha de contabilización deseada.
 
-## **Registrazione contabile**
+La cuadrícula de resultados está compuesta por los siguientes campos:  
+**magazzino**: el campo muestra el código del almacén en el que se generó el registro;  
+**causale**: el campo muestra el código de la causa de almacén utilizado para el movimiento y, por lo tanto, insertado en el encabezado del registro;  
+**data**: el campo muestra la fecha de ingreso del registro de almacén;  
+**numero**: el campo muestra el número progresivo del registro de almacén;  
+**doc. di riferimento**: el campo muestra lo que está presente en el campo *Doc. de referencia* en el encabezado del registro;  
+**data documento**: el campo muestra la fecha del documento relacionado presente en el encabezado del registro;  
+**Carga / Descarga (Carico / Scarico)**: el campo muestra el tipo de registro, que puede ser solo carga o descarga;  
+**magazzino di destinazione**: el campo muestra el código del almacén de destino, si está presente;  
+**Modelo del almacén de destino (Modello del magazzino di destinazione)**: el campo muestra el código identificativo del almacén de destino, si está presente;  
+**Número del almacén de destino (Numero del magazzino di destinazione)**: el campo muestra el número progresivo del registro del almacén de destino, si está presente;  
+**Documento de referencia del almacén de destino (Documento di riferimento del magazzino di destinazione)**: el campo muestra lo que está presente en el campo *Documento de referencia* en el encabezado del registro del almacén de destino, si está presente;  
+**descrizione conto**: el campo muestra la descripción de la cuenta del contacto, dependiendo de si se trata de una débito o crédito.  
 
-Come seconda scheda, c'è la scheda Registrazione contabile reso e si può utilizzare per filtrare, visualizzare e annullare le operazioni.      
-I dati nelle tabelle sottostanti, **Documenti e Registrazione contabile / Errori**, corrispondono alla contabilizzazione selezionata nella tabella superiore **Contabilizzazione** (dopo aver filtrato i dati).      
-Inoltre, in queste ultime due tabelle, c'è la possibilità di visualizzare il registro di magazzino o il registro principale corrispondente facendo doppio clic sulla riga desiderata nella tabella corrispondente. La scheda Errori mostra eventuali errori che si sono verificati durante la contabilizzazione dei registri.     
+## **registrazione contabile**
 
-*Pulsanti specifici*:
-> **Ricerca contabilizzazione**: consente di cercare i registri di magazzino contabilizzati;     
-> **Rollback contabilizzazione**: consente di annullare l'intera operazione, cioè, nel caso di creazione di più registrazioni contabili contemporaneamente, cancella tutte le registrazioni;     
-> **Rollback registrazione magazzino**: consente di annullare il movimento di magazzino selezionato all'interno della scheda Documenti.     
+Como segunda pestaña, está la pestaña Registro contable que se puede utilizar para filtrar, visualizar y anular las operaciones.  
+Los datos en las tablas siguientes, **Documentos y Registro contable / Errores**, corresponden a la contabilización seleccionada en la tabla superior **Contabilización** (después de haber filtrado los datos).  
+Además, en estas dos últimas tablas, existe la posibilidad de visualizar el registro de almacén o el registro principal correspondiente haciendo doble clic en la fila deseada en la tabla correspondiente. La pestaña Errores muestra cualquier error que haya ocurrido durante la contabilización de los registros.  
 
-La griglia dei risultati dei **Documenti** contiene i seguenti campi principali:     
-**Magazzino**: il campo mostra il codice del magazzino in cui è stato generato il registro;     
-**Causale di magazzino**: il campo mostra il codice della causale di magazzino utilizzato per il movimento e che per questo motivo è stato inserito nell'intestazione del registro;     
-**Data contabilizzazione**: il campo mostra la data di contabilizzazione del registro di magazzino;     
-**No. movimento**: il campo mostra il numero progressivo del registro di magazzino;     
-**Documento**: il campo mostra ciò che è presente nel campo *Doc. di riferimento* nell'intestazione del registro;     
-**Data del documento**: il campo mostra la data del *Doc. di riferimento* presente nell'intestazione del registro;     
-**Carico / Scarico**: il campo mostra il tipo di movimento, può essere solo carico o scarico;     
-**Numero documento**: il campo mostra il numero del documento;     
-**Conto**: il campo mostra il conto del partner;     
-**Sottoconto**: il campo mostra il sottoconto;     
-**Descrizione conto / Sottoconto**: il campo mostra la descrizione dettagliata del conto / nome del partner.     
+*Botones específicos*:  
+> **ricerca contabilizzazione**: permite buscar los registros de almacén contabilizados;  
+> **rollback contabilizzazione**: permite deshacer toda la operación, es decir, en caso de creación de varios registros contables simultáneamente, elimina todos los registros;  
+> **rollback registrazione magazzino**: permite deshacer el movimiento de almacén seleccionado dentro de la pestaña Documentos.  
 
-La griglia dei risultati della **Registrazione contabile** contiene i seguenti campi principali:     
-**Data di registrazione**: la colonna mostra la Data di inserimento nel registro principale;     
-**Numero registrazione**: la colonna mostra il numero di registrazione nel registro principale;     
-**Causale**: la colonna mostra il nome abbreviato del modello per la registrazione contabile;     
-**Descrizione causale**: la colonna mostra il nome completo della causale per la registrazione contabile;     
-**Numero del documento**: la colonna mostra il numero del documento;     
-**Conto**: la colonna mostra il conto nel registro principale;     
-**Sottoconto**: la colonna mostra il sottoconto nel registro principale;     
-**Descrizione**: la colonna mostra il nome del conto nel registro principale;     
-**Dettaglio conto**: la colonna mostra i dettagli del movimento;     
-**Descrizione movimento**: la colonna mostra la descrizione della modifica;     
-**Utente**: la colonna mostra l'utente che ha creato la registrazione;     
-**Importo valuta**: la colonna mostra l'importo in valuta;     
-**Importo dare**: la colonna mostra il saldo debitore;     
-**Apertura avere**: la colonna mostra il saldo creditore.     
+La cuadrícula de resultados de **Documentos** contiene los siguientes campos principales:  
+**magazzino**: el campo muestra el código del almacén en el que se generó el registro;  
+**Causa de almacén (Causale di magazzino)**: el campo muestra el código de la causa de almacén utilizado para el movimiento y que por esta razón se insertó en el encabezado del registro;  
+**data contabilizzazione**: el campo muestra la fecha de contabilización del registro de almacén;  
+**no. movimento**: el campo muestra el número progresivo del registro de almacén;  
+**documento**: el campo muestra lo que está presente en el campo *Doc. de riferimento* en el encabezado del registro;  
+**data del documento**: el campo muestra la fecha del *Doc. de riferimento* presente en el encabezado del registro;  
+**Carga / Descarga (Carico / Scarico)**: el campo muestra el tipo de movimiento, puede ser solo carga o descarga;  
+**numero documento**: el campo muestra el número del documento;  
+**conto**: el campo muestra la cuenta del socio;  
+**sottoconto**: el campo muestra la subcuenta;  
+**Descripción cuenta / Subcuenta (Descrizione conto / Sottoconto)**: el campo muestra la descripción detallada de la cuenta / nombre del socio.  
 
+La cuadrícula de resultados de **Registro contable** contiene los siguientes campos principales:  
+**data di registrazione**: la columna muestra la fecha de ingreso en el registro principal;  
+**numero registrazione**: la columna muestra el número de registro en el registro principal;  
+**causale**: la columna muestra el nombre abreviado del modelo para la contabilización;  
+**descrizione causale**: la columna muestra el nombre completo de la causa para la contabilización;  
+**numero del documento**: la columna muestra el número del documento;  
+**conto**: la columna muestra la cuenta en el registro principal;  
+**sottoconto**: la columna muestra la subcuenta en el registro principal;  
+**descrizione**: la columna muestra el nombre de la cuenta en el registro principal;  
+**dettaglio conto**: la columna muestra los detalles del movimiento;  
+**descrizione movimento**: la columna muestra la descripción de la modificación;  
+**utente**: la columna muestra el usuario que creó el registro;  
+**importo valuta**: la columna muestra el importe en moneda;  
+**importo dare**: la columna muestra el saldo deudor;  
+**apertura avere**: la columna muestra el saldo acreedor.

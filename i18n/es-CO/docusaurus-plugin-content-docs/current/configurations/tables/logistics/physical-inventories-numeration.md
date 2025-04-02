@@ -1,18 +1,18 @@
 ---
-title: Numerazioni inventari fisici
+title: Numeraciones de inventarios físicos (Numerazioni inventari fisici)
 sidebar_position: 17
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Numerazioni inventari fisici*.
+La tabla permite gestionar la codificación de los diferentes tipos de *Numeraciones de inventarios físicos (Numerazioni inventari fisici)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Numerazioni inventari fisici**
+**Búsqueda de Numeraciones de inventarios físicos (Ricerca Numerazioni inventari fisici)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Numerazioni inventari fisici**
+**Inserción de Numeraciones de inventarios físicos (Inserimento Numerazioni inventari fisici)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

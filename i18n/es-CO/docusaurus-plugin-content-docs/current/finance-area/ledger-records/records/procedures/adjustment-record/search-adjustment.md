@@ -1,14 +1,14 @@
 ---
-title: Ricerca Assestamento
+title: ricerca assestamento
 sidebar_position: 1
 ---
 
-In questa form è possibile ricercare, per eventuali modifiche, le elaborazioni delle scritture di assestamento precedentemente elaborate, oppure inserirne di nuove.
+En este formulario es posible buscar, para eventuales modificaciones, las elaboraciones de los asientos de ajuste previamente elaborados, o bien insertar nuevos.
 
-#### Pulsanti specifici
+#### Botones específicos (Pulsanti specifici)
 
-> **Ricerca assestamento**: permette di  la ricerca delle scritture di assestamento.  
-> **Nuovo**: permette di  la creazione delle scritture di assestamento.  
-> **Modifica**: attivabile dopo aver selezionato una scrittura di assestamento, che ne permette la modifica.  
-> **Visualizza**: attivabile dopo aver selezionato una scrittura di assestamento, che ne permette la visualizzazione.  
-> **Cancella** : attivabile dopo aver selezionato una chiusura conti, che ne permette la cancellazione.  
+> **ricerca assestamento**: permite la búsqueda de los asientos de ajuste.  
+> **nuovo**: permite la creación de los asientos de ajuste.  
+> **modifica**: activable después de seleccionar un asiento de ajuste, lo que permite su modificación.  
+> **visualizza**: activable después de seleccionar un asiento de ajuste, lo que permite su visualización.  
+> **cancella**: activable después de seleccionar un cierre de cuentas, lo que permite su eliminación.

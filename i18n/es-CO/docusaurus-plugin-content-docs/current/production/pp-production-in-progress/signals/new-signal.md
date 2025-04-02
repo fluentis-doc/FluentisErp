@@ -1,227 +1,224 @@
 ---
-title: Nuova dichiarazione
+title: nuova dichiarazione
 sidebar_position: 2
 ---
 
-Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fluentis [MES](/docs/production/mes/mes-intro), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
+Normalmente, las *Declaraciones de producción* se generan automáticamente a través de Fluentis [MES](/docs/production/mes/mes-intro), pero el usuario también tiene la opción de generarlas manualmente utilizando este formulario.
 
-All'apertura della form è necessario inserire l'ordine di produzione e la relativa fase/sottofase che si vuole dichiarare, in questo modo vengono caricati in automatico i realtivi dati nella parte superiore della form.
+Al abrir el formulario, es necesario ingresar la orden de producción y la fase/sotofase correspondiente que se desea declarar, de este modo se cargarán automáticamente los datos relativos en la parte superior del formulario.
 
-Nella griglia centrale vanno inserite le righe della dichiarazione di produzione.
-Il primo dato da inserire è lo *Stato della dichiarazione* che può assumere i seguenti valori:
+En la cuadrícula central se deben ingresar las líneas de la declaración de producción.  
+El primer dato a ingresar es el *Estado de la declaración* que puede tener los siguientes valores:
 
-- *Apertura*: permette di creare una segnalazione di produzione di apertura;    
-- *Sospensione*: permette di creare una segnalazione di produzione di sospensione;    
-- *Ripresa*: permette di creare una segnalazione di produzione di ripresa; va inserito solo dopo una *Sospensione*;          
-- *Avanzamento*: permette di creare una segnalazione di produzione di avanzamento;    
-- *Chiusura*: permette di creare una segnalazione di produzione di chiusura;    
+- *apertura*: permite crear un informe de producción de apertura;    
+- *sospensione*: permite crear un informe de producción de suspensión;    
+- *ripresa*: permite crear un informe de producción de reanudación; se debe ingresar solo después de una *Suspensión*;          
+- *avanzamento*: permite crear un informe de producción de avance;    
+- *chiusura*: permite crear un informe de producción de cierre;    
 
-Ogni dichiarazione di produzione deve avere come prima riga una dichiarazione di apertura che determina il momento in cui inizia la lavorazione.              
-Questa può essere seguita da un avanzamento o direttamente da una fase di chiusura a seconda dei casi. La differenza sostanziale sta nel fatto che la chiusura non permette di inserire ulteriori righe di dichiarazione, mentre l'avanzamento si.         
-Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una di ripresa, nel caso in cui sia necesario fermare la produzione per qualche motivo.
+Cada declaración de producción debe tener como primera línea una declaración de apertura que determina el momento en que comienza el trabajo.              
+Esta puede ser seguida por un avance o directamente por una fase de cierre, según el caso. La diferencia sustancial es que el cierre no permite ingresar más líneas de declaración, mientras que el avance sí.         
+Además, también es posible ingresar declaraciones de suspensión seguidas de una de reanudación, en caso de que sea necesario detener la producción por algún motivo.
 
-*Pulsante specifico*:  
+*Botones específicos*:  
 
-> **Nuova dichiarazione**: permette di inserire una nuova riga della dichiarazione;          
-> **Nuova sospensione/ripresa**: permette di inserire contemporaneamente un riga di sospensione e una riga di ripresa indicando nel pop-up data ed ora per ciascuna; il pulsante si attiva solo se l'ultimo stato della dichiarazione è di *Apertura* o *Avanzamento*;                 
-> **Ricalcola tempo macchina**: permette di ricalcolare il tempo macchina di tutte le righe della dichiarazione;          
-> **Ricalcola tempo uomo**: permette di ricalcolare il tempo di manodopera di tutte le righe della dichiarazione;          
-> **Inserisci dichiarazione**: permette di inserire una nuova riga di dichiarazione successiva a quelle già inserite;         
-> **Cancella dichiarazione**: permette di cancellare la riga di dichiarazione selezionata;             
-> **Gestione UDC**: permette di aprire la *Gestione unità di carico* con filtrata l'unità di carico relativa alla riga delle dichiarazione selezionata;          
-> **Crea UDC**: permette di creare un'unità di carico relativa alla riga delle dichiarazione selezionata. Per crearla è necessario prima inserire manualmente *Tipo unità di carico* e il *Dipendente*;
-> **Registrazione dichiarazione**: permette di creare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata;          
-> **Ripristino dichiarazione**: permette di annullare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata.                                     
+> **nuova dichiarazione**: permite ingresar una nueva línea de la declaración;          
+> **nuova sospensione/ripresa**: permite ingresar simultáneamente una línea de suspensión y una línea de reanudación, indicando en el pop-up la fecha y la hora para cada una; el botón se activa solo si el último estado de la declaración es *Apertura* o *Avanzamento*;                 
+> **Recalcular tiempo máquina (Ricalcola tempo macchina)**: permite recalcular el tiempo máquina de todas las líneas de la declaración;          
+> **Recalcular tiempo hombre (Ricalcola tempo uomo)**: permite recalcular el tiempo de mano de obra de todas las líneas de la declaración;          
+> **inserisci dichiarazione**: permite insertar una nueva línea de declaración después de las ya ingresadas;         
+> **Eliminar declaración (Cancella dichiarazione)**: permite eliminar la línea de declaración seleccionada;             
+> **gestione udc**: permite abrir la *Gestión de unidad de carga* filtrando la unidad de carga relacionada con la línea de la declaración seleccionada;          
+> **crea udc**: permite crear una unidad de carga relacionada con la línea de la declaración seleccionada. Para crearla, es necesario primero ingresar manualmente el *Tipo de unidad de carga* y el *Empleado*;  
+> **Registro de declaración (Registrazione dichiarazione)**: permite crear el registro del movimiento de almacén relacionado con la línea de declaración seleccionada;          
+> **Restaurar declaración (Ripristino dichiarazione)**: permite anular el registro del movimiento de almacén relacionado con la línea de declaración seleccionada.                                     
 
-*Campi specifici*: 
+*Campos específicos*: 
 
-**Registrato**: indica che la riga della dichiarazione è stata registrata ed è stato creato il relativo movimento di magazzino;        
-**Data**: indica la data di inizio relativa alla riga della dichiarazione;         
-**Ora**: indica l'ora di inizio relativa alla riga della dichiarazione;         
-**Numero**: è un numero progressivo che viene attribuito alle singolo righe della dichiarazione (parte sempre da 1);        
-**Stato dichiarazione**: permette di definire lo stato relativo alla riga della dichiarazione. Può assumere i seguenti valori: *Apertura*, *Sospensione*, *Ripresa*, *Avanzamento* o *Chiusura*;        
-**Causale di sospensione**: permette di indicare la causale di sospensione da utilizzare per la relativa riga di dichiarazione. Si abilità solo se lo *Stato dichiarazione* è di tipo *Sospensione*;     
-**Lotto**: permette di inserire manualmente il numero di lotto relativo alla quantità prodotta;    
-**Quantità prodotta**: indica la quantità prodotta relativa alla riga della dichiarazione;         
-**Unità di misura alternativa**: indica l'unità di misura laternativa utilizzata;     
-**Quantità alternativa**: indica la quantità prodotta nell'unità di misura laternativa utilizzata;       
-**Magazzino versamento**: indica il magazzino di versamento della quantità prodotta;         
-**Causale versamento**: indica la causale di versamento utilizzata per la quantità prodotta;         
-**Versamento ubicazione**: indica l'ubicazione di versamento della quantità prodotta;         
-**Quantità scartata**: indica la quantità scartata relativa alla riga della dichiarazione;        
-**Magazzino di scarto**: indica il magazzino di versamento della quantità scartata;      
-**Causale di scarto**: indica la causale di versamento utilizzata per la quantità scartata;       
-**Scarto ubicazione**: indica l'ubicazione di versamento della quantità scartata;        
-**Macchine**: indica il numero delle macchine indica la descrizione della causale di versamento della quantità prodotta;             
-**Numero macchine**: indica il numero delle macchine utilizzata relativo alla riga della dichiarazione;        
-**Gruppi manodopera**: indica il codice del gruppo manodopera utilizzato relativo alla riga della dichiarazione;         
-**Numero operai**: indica il numero di operai utilizzati relativo alla riga della dichiarazione;        
-**Sito produttivo**: indica il codice del sito produttivo relativo alla riga della dichiarazione;     
-**Minuti macchina**: indica il tempo macchina in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;           
-**Minuti manodopera**: indica il tempo manodopera in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;              
-**Minuti attrezzaggio**: indica il tempo di attrezzaggio in minuti relativo alla riga della dichiarazione; viene indicato manualmente;           
-**Dipendente**: indica il codice dell'utente che sta effettuando la dichiarazione;             
-**Cognome**: indica il cognome dell'utente che sta effettuando la dichiarazione;            
-**Nome**: indica il nome dell'utente che sta effettuando la dichiarazione;           
-**Unità di carico**: indica il numero dell'unità di carico, composto da anno, numero ordine di produzione e un progressivo;                
-**Tipo unità di carico**: indica il tipo di unità di carico;     
-**Descrizione tipo unità di carico**: indica la descrizione del tipo unità di carico;         
-**Numero unità di carico**: indica il numero dell'unità di carico;    
-**Unità di carico di scarico**: **Work in progress**       
-**Altezza**: indica l'altezza dell'unità di carico;    
-**Larghezza**: indica la larghezza dell'unità di carico;    
-**Profondità**: indica la profondità dell'unità di carico;    
-**Descrizione causale di sospensione**: indica la descrizione della *Causale di sospensione* utilizzata nella riga della dichiarazione;                       
-**Descrizione magazzino di versamento**: indica la descrizione del magazzino di versamento della quantità prodotta;         
-**Descrizione causale di versamento**: indica la descrizione della causale di versamento della quantità prodotta;      
-**Descrizione magazzino di scarto**: indica la descrizione del magazzino di versamento della quantità scartata;      
-**Descrizione causale di scarto**: indica la descrizione della causale di versamento della quantità scartata;      
-**Descrizione macchina**: indica la descrizione della macchina utilizzata;            
-**Descrizione gruppo manodopera**: indica la descrizione del gruppo manodopera utilizzato;              
-**Descrizione sito produzione**: indica la descrizione del sito produttivo utilizzato.
+**registrato**: indica que la línea de la declaración ha sido registrada y se ha creado el movimiento de almacén correspondiente;        
+**data**: indica la fecha de inicio relativa a la línea de la declaración;         
+**ora**: indica la hora de inicio relativa a la línea de la declaración;         
+**numero**: es un número secuencial que se asigna a cada línea de la declaración (siempre comienza desde 1);        
+**stato dichiarazione**: permite definir el estado relativo a la línea de la declaración. Puede asumir los siguientes valores: *Apertura*, *Sospensione*, *Ripresa*, *Avanzamento* o *Chiusura*;        
+**causale di sospensione**: permite indicar la causa de suspensión a utilizar para la línea de declaración correspondiente. Se habilita solo si el *Estado de declaración* es de tipo *Sospensione*;     
+**lotto**: permite ingresar manualmente el número de lote relativo a la cantidad producida;    
+**quantità prodotta**: indica la cantidad producida relativa a la línea de la declaración;         
+**unità di misura alternativa**: indica la unidad de medida alternativa utilizada;     
+**quantità alternativa**: indica la cantidad producida en la unidad de medida alternativa utilizada;       
+**magazzino versamento**: indica el almacén de depósito de la cantidad producida;         
+**causale versamento**: indica la causa de depósito utilizada para la cantidad producida;         
+**versamento ubicazione**: indica la ubicación de depósito de la cantidad producida;         
+**quantità scartata**: indica la cantidad descartada relativa a la línea de la declaración;        
+**Almacén de descarte (Magazzino di scarto)**: indica el almacén de depósito de la cantidad descartada;      
+**Causa de descarte (Causale di scarto)**: indica la causa de depósito utilizada para la cantidad descartada;       
+**scarto ubicazione**: indica la ubicación de depósito de la cantidad descartada;        
+**macchine**: indica el número de las máquinas que indica la descripción de la causa de depósito de la cantidad producida;             
+**numero macchine**: indica el número de máquinas utilizadas relacionadas con la línea de la declaración;        
+**gruppi manodopera**: indica el código del grupo de mano de obra utilizado relacionado con la línea de la declaración;         
+**numero operai**: indica el número de operarios utilizados relacionados con la línea de la declaración;        
+**sito produttivo**: indica el código del sitio productivo relacionado con la línea de la declaración;     
+**Minutos de máquina (Minuti macchina)**: indica el tiempo de máquina en minutos relativo a la línea de la declaración; se calcula como la diferencia entre la *fecha/hora* de la declaración actual y la de la declaración anterior;           
+**Minutos de mano de obra (Minuti manodopera)**: indica el tiempo de mano de obra en minutos relativo a la línea de la declaración; se calcula como la diferencia entre la *fecha/hora* de la declaración actual y la de la declaración anterior;              
+**Minutos de equipamiento (Minuti attrezzaggio)**: indica el tiempo de equipamiento en minutos relativo a la línea de la declaración; se indica manualmente;           
+**dipendente**: indica el código del usuario que está realizando la declaración;             
+**cognome**: indica el apellido del usuario que está realizando la declaración;            
+**nome**: indica el nombre del usuario que está realizando la declaración;           
+**unità di carico**: indica el número de la unidad de carga, compuesto por el año, número de orden de producción y un número secuencial;                
+**Tipo de unidad de carga (Tipo unità di carico)**: indica el tipo de unidad de carga;     
+**Descripción del tipo de unidad de carga (Descrizione tipo unità di carico)**: indica la descripción del tipo de unidad de carga;         
+**numero unità di carico**: indica el número de la unidad de carga;    
+**Unidad de carga de descarga (Unità di carico di scarico)**: **Trabajo en progreso (Work in progress)**       
+**altezza**: indica la altura de la unidad de carga;    
+**larghezza**: indica la anchura de la unidad de carga;    
+**profondità**: indica la profundidad de la unidad de carga;    
+**Descripción de la causa de suspensión (Descrizione causale di sospensione)**: indica la descripción de la *Causa de suspensión* utilizada en la línea de la declaración;                       
+**Descripción del almacén de depósito (Descrizione magazzino di versamento)**: indica la descripción del almacén de depósito de la cantidad producida;         
+**Descripción de la causa de depósito (Descrizione causale di versamento)**: indica la descripción de la causa de depósito de la cantidad producida;      
+**Descripción del almacén de descarte (Descrizione magazzino di scarto)**: indica la descripción del almacén de depósito de la cantidad descartada;      
+**Descripción de la causa de descarte (Descrizione causale di scarto)**: indica la descripción de la causa de depósito de la cantidad descartada;      
+**descrizione macchina**: indica la descripción de la máquina utilizada;            
+**descrizione gruppo manodopera**: indica la descripción del grupo de mano de obra utilizado;              
+**Descripción del sitio de producción (Descrizione sito produzione)**: indica la descripción del sitio productivo utilizado.
 
-La parte inferiore della form si compone di una serie di tab relativi alla riga della dichiarazione selezionata.
+La parte inferior del formulario se compone de una serie de pestañas relativas a la línea de la declaración seleccionada.
 
-## Materiali
+## Materiales
 
-In questo tab vengono riportati automaticamente i materiali utilizzati nella fase per la realizzazione dell'articolo da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali in base alle necessità.      
-Ovviamente, per far si che i materiali siano riporatati automaticamente, la fase deve essere l'ultima di tipo *Produttivo* e *Movimentabile* presente nel ciclo; nel caso in cui non fosse l'ultima, deve comunque essere di tipo *Produttivo* e *Movimentabile* ed ad essa devono essere stati assegnati dei materiali direttamente.  
+En esta pestaña se presentan automáticamente los materiales utilizados en la fase para la realización del artículo a producir, pero el usuario puede modificar los datos y/o agregar más materiales según las necesidades.      
+Por supuesto, para que los materiales se muestren automáticamente, la fase debe ser la última de tipo *Productivo* y *Movible* presente en el ciclo; si no es la última, debe ser de tipo *Productivo* y *Movible* y se le deben haber asignado materiales directamente.  
 
-*Campi specifici*: 
+*Campos específicos*: 
 
-**Unità di carico materiale**: permette di indicare l'unità di carico da cui prelevo il materiale;             
-**Classe**: indica la classe dell'articolo;         
-**Codice articolo**: indica il codice dell'articolo;         
-**Variante**: indica il codice variante dell'articolo;         
-**Unità di misura**: indica l'unità di misura principale del materiale;        
-**Quantità consumata**: indica la quantità utilizzata del materiale;         
-**Unità di misura alternativa**: indica l'unità di misura alternativa del materiale;        
-**Quantità alternativa**: indica la quantità utilizzata del materiale nell'unità di misura alternativa;        
-**Magazzino consumo**: indica il codice del magazzino di consumo del materiale;         
-**Causale consumo**: indica il codice della causale di consumo del materiale;         
-**Quantità scartata**: indica la quantità scartata del materiale;     
-**Magazzino di scarto**: indica il codice del magazzino di scarto del materiale;     
-**Causale di scarco**: indica il codice della casuale di scarto del materiale;     
-**Descrizione articolo**: indica la descrizione dell'articolo;        
-**Descrizione variante**: indica la descrizione della variante dell'articolo;        
-**Descrizione magazzino consumo**: indica la descrizione del magazzino di consumo del materiale;        
-**Descrizione causale consumo**: indica la descrizione della causale di consumo del materiale;        
-**Descrizione magazzino di scarto**: indica la descrizione del magazzino di scarto del materiale;        
-**Descrizione causale di scarto**: indica la descrizione della causale di scarto del materiale;        
-**Priorità**: indica la priorità con la quale vengono visualizzati i materiali,        
+**Unidad de carga material (Unità di carico materiale)**: permite indicar la unidad de carga de la que se toma el material;             
+**classe**: indica la clase del artículo;         
+**codice articolo**: indica el código del artículo;         
+**variante**: indica el código variante del artículo;         
+**unità di misura**: indica la unidad de medida principal del material;        
+**quantità consumata**: indica la cantidad utilizada del material;         
+**unità di misura alternativa**: indica la unidad de medida alternativa del material;        
+**quantità alternativa**: indica la cantidad utilizada del material en la unidad de medida alternativa;        
+**Almacén de consumo (Magazzino consumo)**: indica el código del almacén de consumo del material;         
+**Causa de consumo (Causale consumo)**: indica el código de la causa de consumo del material;         
+**quantità scartata**: indica la cantidad descartada del material;     
+**Almacén de descarte (Magazzino di scarto)**: indica el código del almacén de descarte del material;     
+**Causa de descarte (Causale di scarco)**: indica el código de la causal de descarte del material;     
+**descrizione articolo**: indica la descripción del artículo;        
+**descrizione variante**: indica la descripción de la variante del artículo;        
+**Descripción del almacén de consumo (Descrizione magazzino consumo)**: indica la descripción del almacén de consumo del material;        
+**Descripción de la causa de consumo (Descrizione causale consumo)**: indica la descripción de la causa de consumo del material;        
+**Descripción del almacén de descarte (Descrizione magazzino di scarto)**: indica la descripción del almacén de descarte del material;        
+**Descripción de la causa de descarte (Descrizione causale di scarto)**: indica la descripción de la causa de descarte del material;        
+**priorità**: indica la prioridad con la que se visualizan los materiales,        
 
-Inoltre, nella parte sottostante è possibile inserire i lotti e anche i serial number nelle relative griglie.
+Además, en la parte inferior es posible ingresar los lotes y también los números de serie en las respectivas cuadrículas.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+La cuadrícula de *Lotes* se compone de las siguientes columnas:
 
-**Lotto**: indica il numero di lotto del materiale selezionato;        
-**Codice lotto fornitore**: indica il numero di lotto del fornitore del materiale selezionato;         
-**Quantità**: indica la quantità di materiale selezionato per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto del materiale selezionato;     
-**Data inizio**: indica la data inizio del lotto del materiale selezionato;         
-**Data scadenza**: indica la data scadenza del lotto del materiale selezionato;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore del materiale selezionato.   
+**lotto**: indica el número de lote del material seleccionado;        
+**codice lotto fornitore**: indica el número de lote del proveedor del material seleccionado;         
+**quantità**: indica la cantidad de material seleccionado para ese lote;         
+**ubicazione**: indica la ubicación de ese lote del material seleccionado;     
+**data inizio**: indica la fecha de inicio del lote del material seleccionado;         
+**data scadenza**: indica la fecha de caducidad del lote del material seleccionado;         
+**Cuenta/Subcuenta/Descripción de la cuenta (Conto/Sottoconto/Descrizione conto)**: indican respectivamente cuenta, subcuenta y descripción del cliente/proveedor del material seleccionado.   
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+La cuadrícula de *Números de serie* se compone de las siguientes columnas:
 
-**Barcode**: il codice barcode riporta il numero di serial number e le altre informazione relative. Per tutte le informazioni su come codificare i barcode da leggere in questo campo consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer);          
-**Tipo Serial numnber**: indica il tipo di serial number del materiale selezionato;    
-**Serial number**: indica il serial number del materiale selezionato;    
-**Data inizio**: indica la data inizio del serial number del materiale selezionato;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number del materiale selezionato.             
+**barcode**: el código de barras presenta el número de serie y la otra información relativa. Para toda la información sobre cómo codificar los códigos de barras para leer en este campo, consulte la página relativa al [Tokenizador de códigos de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer);          
+**tipo serial number**: indica el tipo de número de serie del material seleccionado;    
+**serial number**: indica el número de serie del material seleccionado;    
+**data inizio**: indica la fecha de inicio del número de serie del material seleccionado;    
+**annullato**: indica que el número de serie está en estado anulado;      
+**lotto**: indica el código de lote del número de serie del material seleccionado.             
 
-## Dipendente
+## Empleado
 
-Questo tab permette di gestire i membri della squadra che svolgono la lavorazione relativa alla riga della dichiarazione selezionta andando ad indicare per ognuno data inizio e fine lavorazione.
+Esta pestaña permite gestionar a los miembros del equipo que realizan el trabajo relativo a la línea de la declaración seleccionada, indicando para cada uno la fecha de inicio y fin del trabajo.
 
-*Campi specifici*: 
+*Campos específicos*: 
 
-**Codice**: indica il codice dell'operatore che sta lavorando sulla dichiarazione;             
-**Cognome**: indica il cognome dell'operatore che sta lavorando sulla dichiarazione;     
-**Nome**: indica il nome dell'operatore che sta lavorando sulla dichiarazione;        
-**Capo squdra**: indica che quell'operatore è anch ecapo squadra;      
-**Attività**: indica l'attività che sta svolgendo l'operatore;        
-**Descrzione**: indica la descrizione dell'attività che sta svolgendo l'operatore;      
-**Attrezzaggio**: indica che il tempo lavorato dall'operatore verrà calcolato come tempo di attrezzaggio nelle successive analisi;       
-**Data inizio**: indica la data di inizio della lavorazione dell'operatore;         
-**Ora inizio**: indica l'ora di inizio della lavorazione dell'operatore;         
-**Data fine**: indica la data di fine della lavorazione dell'operatore;         
-**Ora fine**: indica lìora di fine della lavorazione dell'operatore;         
-**Data creazione**: indica la data di creazione del record;         
-**Data ultima modifica**: indica la data di ultima modifica del record;         
-**Operatore**: indica l'utente di creazione del record.
+**codice**: indica el código del operador que está trabajando en la declaración;             
+**cognome**: indica el apellido del operador que está trabajando en la declaración;     
+**nome**: indica el nombre del operador que está trabajando en la declaración;        
+**Jefe de equipo (Capo squdra)**: indica que ese operador es también jefe de equipo;      
+**attività**: indica la actividad que está realizando el operador;        
+**Descripción (Descrzione)**: indica la descripción de la actividad que está realizando el operador;      
+**attrezzaggio**: indica que el tiempo trabajado por el operador se considerará como tiempo de equipamiento en los análisis posteriores;       
+**data inizio**: indica la fecha de inicio del trabajo del operador;         
+**ora inizio**: indica la hora de inicio del trabajo del operador;         
+**data fine**: indica la fecha de fin del trabajo del operador;         
+**ora fine**: indica la hora de fin del trabajo del operador;         
+**data creazione**: indica la fecha de creación del registro;         
+**data ultima modifica**: indica la fecha de última modificación del registro;         
+**operatore**: indica el usuario que creó el registro.
 
-## Articoli alternativi
+## Artículos alternativos
 
-Questo tab permette di aggiungere e gestire tutti quegli articoli (spin-off) che vengono realizzati come conseguenza della produzione di un articolo principale.       
-Quindi, è possibile inserirli nella griglia dedicata con la possibilità di gestirne anche i relativi lotti e serial numbers. Ovviamente, i lotti e serial numbers sono riferiti alla riga dell'articolo alternativo selezionato.
+Esta pestaña permite agregar y gestionar todos aquellos artículos (spin-off) que se producen como consecuencia de la producción de un artículo principal.       
+Por lo tanto, es posible ingresarlos en la cuadrícula dedicada con la posibilidad de gestionar también sus lotes y números de serie. Por supuesto, los lotes y números de serie están relacionados con la línea del artículo alternativo seleccionado.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+La cuadrícula de *Lotes* se compone de las siguientes columnas:
 
-**Lotto**: indica il numero di lotto dell'articolo;  
-**Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
-**Tipo lotto**: indica il tipo del lotto dell'articolo;         
-**Codice lotto fornitore**: indica il numero di lotto del fornitore dell'articolo;       
-**Note**: permette di inserire una nota relativa al lotto;                 
-**Quantità**: indica la quantità dell'articolo per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto dell'articolo;     
-**Data inizio**: indica la data inizio del lotto dell'articolo;         
-**Data scadenza**: indica la data scadenza del lotto dell'articolo;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
+**lotto**: indica el número de lote del artículo;  
+**tipo codice lotto**: indica el tipo del código de lote del artículo;         
+**Tipo de lote (Tipo lotto)**: indica el tipo del lote del artículo;         
+**codice lotto fornitore**: indica el número de lote del proveedor del artículo;       
+**note**: permite ingresar una nota relativa al lote;                 
+**quantità**: indica la cantidad del artículo para ese lote;         
+**ubicazione**: indica la ubicación de ese lote del artículo;     
+**data inizio**: indica la fecha de inicio del lote del artículo;         
+**data scadenza**: indica la fecha de caducidad del lote del artículo;         
+**Cuenta/Subcuenta/Descripción de la cuenta (Conto/Sottoconto/Descrizione conto)**: indican respectivamente cuenta, subcuenta y descripción del cliente/proveedor del artículo.   
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+La cuadrícula de *Números de serie* se compone de las siguientes columnas:
     
-**Codice Serial number**: indica il serial number dell'articolo;      
-**Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
-**Serial number cliente**: indica il serial number del cliente per quell'articolo;      
-**Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
-**Data inizio**: indica la data inizio del serial number dell'articolo;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+**codice serial number**: indica el número de serie del artículo;      
+**Tipo de número de serie (Tipo Serial numnber)**: indica el tipo de número de serie del artículo;  
+**serial number cliente**: indica el número de serie del cliente para ese artículo;      
+**serial number fornitore**: indica el número de serie del proveedor para ese artículo;      
+**data inizio**: indica la fecha de inicio del número de serie del artículo;    
+**annullato**: indica que el número de serie está en estado anulado;      
+**lotto**: indica el código de lote del número de serie del artículo.             
 
-## Sospensioni
+## Suspensiones
 
-Questo tab permette di specificare più causali di sospensione con i relativi minuti e si abilità solamente in corrispondenza di una riga con stato dichiarazione *Sospensione*.  
+Esta pestaña permite especificar múltiples causas de suspensión con los minutos correspondientes y se habilita únicamente en correspondencia con una línea con estado de declaración *Suspensión*.  
 
-## Scarto
+## Descarte
 
-Questo tab permette di specificare più magazzini e causali di scarto con le relative quantità e si abilità solamente se viene dichiarata una quantità scartata.  
+Esta pestaña permite especificar múltiples almacenes y causas de descarte con las cantidades correspondientes y se habilita únicamente si se declara una cantidad descartada.  
 
-## Extra Data
+## Datos Extra
 
-Permmette di gestire e visualizzare gli Extra Data relativi alla segnalazione.
+Permite gestionar y visualizar los Datos Extra relacionados con la declaración.
 
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+Para una descripción detallada sobre los datos extra, consulte el artículo [Datos extra](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-## Lotti e Serial Number
+## Lotes y Números de Serie
 
-Questo tab permette di gestire i lotti e serial numbers degli articoli principali prodotti tramite le apposite griglie.
+Esta pestaña permite gestionar los lotes y números de serie de los artículos principales producidos a través de las cuadrículas adecuadas.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+La cuadrícula de *Lotes* se compone de las siguientes columnas:
 
-**Lotto**: indica il numero di lotto dell'articolo;  
-**Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
-**Tipo lotto**: indica il tipo del lotto dell'articolo;         
-**Codice lotto fornitore**: indica il numero di lotto del fornitore dell'articolo;       
-**Note**: permette di inserire una nota relativa al lotto;                 
-**Quantità**: indica la quantità dell'articolo per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto dell'articolo;     
-**Data inizio**: indica la data inizio del lotto dell'articolo;         
-**Data scadenza**: indica la data scadenza del lotto dell'articolo;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
+**lotto**: indica el número de lote del artículo;  
+**tipo codice lotto**: indica el tipo del código de lote del artículo;         
+**Tipo de lote (Tipo lotto)**: indica el tipo del lote del artículo;         
+**codice lotto fornitore**: indica el número de lote del proveedor del artículo;       
+**note**: permite ingresar una nota relativa al lote;                 
+**quantità**: indica la cantidad del artículo para ese lote;         
+**ubicazione**: indica la ubicación de ese lote del artículo;     
+**data inizio**: indica la fecha de inicio del lote del artículo;         
+**data scadenza**: indica la fecha de caducidad del lote del artículo;         
+**Cuenta/Subcuenta/Descripción de la cuenta (Conto/Sottoconto/Descrizione conto)**: indican respectivamente cuenta, subcuenta y descripción del cliente/proveedor del artículo.   
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+La cuadrícula de *Números de serie* se compone de las siguientes columnas:
     
-**Codice Serial number**: indica il serial number dell'articolo;      
-**Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
-**Serial number cliente**: indica il serial number del cliente per quell'articolo;      
-**Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
-**Data inizio**: indica la data inizio del serial number dell'articolo;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+**codice serial number**: indica el número de serie del artículo;      
+**Tipo de número de serie (Tipo Serial numnber)**: indica el tipo de número de serie del artículo;  
+**serial number cliente**: indica el número de serie del cliente para ese artículo;      
+**serial number fornitore**: indica el número de serie del proveedor para ese artículo;      
+**data inizio**: indica la fecha de inicio del número de serie del artículo;    
+**annullato**: indica que el número de serie está en estado anulado;      
+**lotto**: indica el código de lote del número de serie del artículo.             
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-
-
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

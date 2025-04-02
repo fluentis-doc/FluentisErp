@@ -1,32 +1,30 @@
 ---
-title: Area
-sidebar position: 2
+title: area
+sidebar_position: 2
 ---
 
-
-:::tip Nota
-La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+:::tip Nota (Nota)  
+La tabla es de interés solo en las empresas con el indicador *Controlling* activo.  
 :::
 
-I Dati del Controlling vengono sempre gestiti con un’area di analisi collegata che identifica che tipi di dati ci sono dentro: Possiamo immaginarla come una scatola fisica, dove ogni scatola viene alimentata con valori contabili e valori quantitativi e ogni scatola può avere un suo modello di calcolo diverso e a sé stante. Un’area comprende i dati di tutte le *dimensioni* dei centri.
+Los Datos del Control (Controlling) se gestionan siempre con un área de análisis conectada que identifica qué tipos de datos hay dentro: podemos imaginarla como una caja física, donde cada caja se alimenta con valores contables y valores cuantitativos y cada caja puede tener su propio modelo de cálculo diferente y autónomo. Un área incluye los datos de todas las *dimensiones* de los centros.
 
-#### Campi specifici  
-- **Codice**
-- **Descrizione**
-- [**Tipo Area**](/docs/configurations/tables/controlling/managerial-accounting/area-type)
-- **Commessa di quadratura**, non gestito
+#### Campos específicos (Campi specifici)  
+- **codice**  
+- **descrizione**  
+- [**tipo area**](/docs/configurations/tables/controlling/managerial-accounting/area-type)  
+- **Orden de cuadratura (Commessa di quadratura)**, no gestionado  
 
+#### TIPOS DE ÁREAS (TIPOLOGIE DI AREE)  
+Tendremos típicamente 3 áreas:  
+- *budget*: tendremos el presupuesto para el año siguiente;  
 
-#### TIPOLOGIE DI AREE  
-Avremo tipicamente 3 aree:  
-- *BUDGET*: avremo il budget per l’anno successivo;
+- *consuntivo*: cuando procesamos los cierres interanuales;  
 
-- *CONSUNTIVO*: quando andiamo ad elaborare le chiusure infrannuali; 
+- *CONJUNTO DE REGLAS (SET DI REGOLE)*: área que no tiene valores, excepto alguna medida física. Es el área depositaria de las reglas *estándar* de los impulsores de costos: si estoy procesando, por ejemplo, el área de los resultados y estoy tratando de repartir mi costo por los alquileres a través de un impulsor de costos, si encuentro un impulsor específico para los resultados, Fluentis utilizará ese impulsor; de lo contrario, buscará en las reglas generales válidas por defecto, vinculándolas al área *conjunto de reglas*.  
 
-- *SET DI REGOLE*: area che non ha valori, se non qualche misura fisica. E’ l’area depositaria delle regole *standard* dei cost driver: se sto elaborando, ad esempio, l’area dei consuntivi e sto cercando di ripartire il mio costo per gli affitti tramite un cost driver, se trovo un Cost driver specifico per i consuntivi Fluentis userà quel driver, altrimenti andrà a ricercare nelle regole generali valide di default collegandole all'area *set di regole*
+:::tip Nota (Nota)  
+Podemos definir libremente cuántas áreas de análisis deseamos. El objetivo típico es simular *qué pasaría si* cambio las reglas de los impulsores de costos empresariales, o quizás con la finalidad de aplicar configuraciones de costos diferenciadas.  
 
-:::tip Nota
-Possiamo definire liberamente quante aree di analisi vogliamo. L'obiettivo tipico è quello di simulare *cosa succede se* cambio le regole dei cost driver aziendali, o magari con il fine di applicare configurazioni di costo differenziate.
-
-Altro utilizzo è quello di 'cristallizzare' le elaborazioni del controlling: come avremo modo di spiegare parlando dei cost driver, le elaborazioni del controlling cancellano e ricreano i dati dell'anno che si sta elaborando. Se si vuole storicizzare, ad esempio, il primo *trimestre* per poterlo poi confrontare con i primi 3 mesi di quanto calcolato nell'elaborazione del primo *semestre*, possiamo ottenere questo risultato creando aree consuntive differenti.
+Otro uso es 'cristalizar' los procesamientos del control: como tendremos ocasión de explicar hablando de los impulsores de costos, los procesamientos del control eliminan y recrean los datos del año que se está procesando. Si se quiere historicizar, por ejemplo, el primer *trimestre* para compararlo luego con los primeros 3 meses de cuánto se calculó en el procesamiento del primer *semestre*, podemos lograr este resultado creando áreas de resultados diferentes.  
 :::

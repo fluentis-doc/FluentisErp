@@ -1,18 +1,18 @@
 ---
-title: Importazione Piano dei conti
+title: importazione piano dei conti
 sidebar_position: 2
 ---
 
-Il foglio excel (template) per l'importazione del piano dei conti nel modulo Amministrazione permette di popolare la parte di dettaglio del piano dei conti.
+La hoja de Excel (plantilla) para la importación del plan de cuentas en el módulo de Administración permite poblar la parte de detalle del plan de cuentas.
 
-**Deve pertanto già essere presente la parte della struttura (gruppi) nella griglia superiore della form dle piano dei conti.**
+**Por lo tanto, la parte de la estructura (grupos) ya debe estar presente en la cuadrícula superior del formulario del plan de cuentas.**
 
-**Colonne Gruppo Livello (1, 2, 3, 4, 5):** In queste colonne indicare i codici dei vari livelli e sottolivelli (possibili fino al quinto) dove collocare i conti da importare. 
+**Columnas Grupo Nivel (1, 2, 3, 4, 5):** En estas columnas se deben indicar los códigos de los diversos niveles y subniveles (posibles hasta el quinto) donde colocar las cuentas a importar.  
 
-ATTENZIONE vengono ricercati gruppi già esistenti, l'import non crea nuovi gruppi.
+ATENCIÓN, se buscan grupos ya existentes, la importación no crea nuevos grupos.
 
-**Conto / Sottoconto / Descrizione:** inserire il codice del conto e sottoconto e la descrizione da importare (in questo caso sarà creato il conto / sottoconto con il codice inserito)
+**Cuenta / Subcuenta / Descripción:** ingresar el código de la cuenta y subcuenta y la descripción a importar (en este caso se creará la cuenta / subcuenta con el código ingresado).
 
-**Descrizione 2:** è possibile compilare anche la seconda descrizione (Opzionale) per il nuovo conto
+**Descripción 2:** es posible completar también la segunda descripción (Opcional) para la nueva cuenta.
 
-**Tipo conto:** compilare con il codice di uno dei tipo conti già presenti in Fluentis per assegnarlo al nuovo conto che viene creato
+**Tipo de cuenta:** completar con el código de uno de los tipos de cuentas ya presentes en Fluentis para asignarlo a la nueva cuenta que se está creando.

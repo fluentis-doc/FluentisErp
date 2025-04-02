@@ -1,3 +1,3 @@
-- **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.<br />
-Il pulsante diventa attivo se il documento è salvato, ma non caricato.<br />
-Con clic su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che spno stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned). 
+- **gestione imballi**: permite la apertura de la gestión de los embalajes retornables usados en el documento de compras.  
+El botón se activa si el documento está guardado, pero no cargado.  
+Al hacer clic en este botón se abre el formulario correspondiente donde: se debe ingresar la cantidad, seleccionar la línea y realizar la transferencia del embalaje seleccionado en las líneas del artículo haciendo clic en el botón **execute**. En este formulario se muestran los artículos que han sido ingresados con la naturaleza Embalaje (Imballo) y que están presentes en la tabla de [Embalajes a retornar (Imballi a rendere)](/docs/configurations/tables/logistics/package-to-be-returned).

@@ -1,15 +1,15 @@
 ---
-title: Business Areas - Tesoreria
+title: Áreas de Negocio - Tesorería (Business Areas - Tesoreria)
 sidebar_position: 2
 ---
 
-**Creazione file Sepa** (codice FS-PR-SEPA-PaymentRequest): questo parametro permette di associare un determinato flusso Bizlink 'SEPA' per l'esportazione dei bonifici Euro. Ogni localizzazione geografica ha il suo default di generazione (attualmente il formato italiano è il 4.01), ma in caso di cambi di struttura di riferimento può essere comodo poter cambiare liberamente da una certa data li tipo di file da creare.
+**creazione file sepa** (código FS-PR-SEPA-PaymentRequest): este parámetro permite asociar un determinado flujo Bizlink 'SEPA' para la exportación de transferencias en euros. Cada localización geográfica tiene su configuración predeterminada de generación (actualmente el formato italiano es el 4.01), pero en caso de cambios en la estructura de referencia, puede ser conveniente poder cambiar libremente a partir de una cierta fecha el tipo de archivo a crear.
 
-**SDD ( Debito Diretto Sepa)** (codice FS-PR-SEPA-SDD): come il precedente, ma per i file SDD che si possono creare dalle Distinte del Portafoglio effetti (attualmente per l'Italia la versione 1.01)
+**SDD (Débito Directo Sepa) (SDD ( Debito Diretto Sepa))** (código FS-PR-SEPA-SDD): similar al anterior, pero para los archivos SDD que se pueden crear desde las Listas de Cartera de Efectos (actualmente para Italia, la versión es 1.01).
 
-**Creazione file Sepa Estero** (codice FS-PR-SEPA-ForeignPaymentRequest): come il primo, ma per il tracciato dei bonifici in valuta
+**creazione file sepa estero** (código FS-PR-SEPA-ForeignPaymentRequest): como el primero, pero para el formato de las transferencias en moneda extranjera.
 
-I flussi attualmente presenti sono:
+Los flujos actualmente disponibles son:
 
 - *EsteroSEPA_XML_Payment*
 - *ExportSDDWorkflow*
@@ -22,14 +22,13 @@ I flussi attualmente presenti sono:
 - *SEPA_XML_Payments_Export_RS*
 - *SEPA_XML_Payments_Export_SI*
 
-
-**Dettaglio movimento** (codice FS-PR-DocFinanceNote): per le società che ricevono i movimenti bancari da DocFinance, con questo parametro si può definire come ***FluentisERP*** valorizzerà le descrizioni di dettaglio dei movimenti importati. La logica di codifica della stringa ricalca le logiche già in uso nelle Causali di contabilità, con l'aggiunta del codice (DF) ad indicare la descrizione presente direttamente nel file ricevuto da DocFinance.
+**dettaglio movimento** (código FS-PR-DocFinanceNote): para las empresas que reciben los movimientos bancarios de DocFinance, con este parámetro se puede definir cómo ***FluentisERP*** valorizará las descripciones de detalle de los movimientos importados. La lógica de codificación de la cadena sigue las lógicas ya en uso en las Causales de contabilidad, con la adición del código (DF) para indicar la descripción presente directamente en el archivo recibido de DocFinance.
 
 :::tip Nota
-ad esempio:
-- impostando il parametro come "(2) FT.N. (DF) del (4) – (6)" si creerà un testo con
-"Descrizione causale" + FT.N. + "Descrizione da DocFinance" del "data doc. della partita" - "Descrizione sottoconto della partita"
-- impostando il parametro come "FT. (3) del (4)", cioè senza uso della stringa passata da DocFinance, avremo:
-    - per le righe legate a partita, una nota tipo FT. + "Numero doc. partita" + del + "data doc. della partita"
-    - per le righe non legate a partita, sarà usata di default la stringa presente nel file di DocFinance
+por ejemplo:
+- al configurar el parámetro como "(2) FT.N. (DF) del (4) – (6)" se creará un texto con
+"Descripción causal" + FT.N. + "Descripción de DocFinance" del "fecha doc. de la partida" - "Descripción del subcuenta de la partida"
+- al configurar el parámetro como "FT. (3) del (4)", es decir, sin usar la cadena enviada por DocFinance, obtendremos:
+    - para las líneas vinculadas a partidas, una nota tipo FT. + "Número doc. partida" + del + "fecha doc. de la partida"
+    - para las líneas no vinculadas a partida, se usará por defecto la cadena presente en el archivo de DocFinance.
 :::

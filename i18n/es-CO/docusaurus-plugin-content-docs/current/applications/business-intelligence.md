@@ -1,16 +1,10 @@
 ---
-title: Business Intelligence
+title: business intelligence
 sidebar_position: 3
 ---
 
-Nella sezione **Business Intelligence** troviamo la possibilità di esplorare i cubi di dati.
+En la sección **business intelligence** encontramos la posibilidad de explorar los cubos de datos.
 
-Questa procedura è utile per effettuare analisi di tipo DRILL DOWN all'interno dei dati presenti nel database.
+Este procedimiento es útil para realizar análisis tipo DRILL DOWN dentro de los datos presentes en la base de datos.
 
-Per default troveremo configurati i cubi di dati OLAP relativi alle Vendite, agli Acquisti, alla Produzione e all'Amministrazione.
-
-
-
-
-
-
+Por defecto, encontraremos configurados los cubos de datos OLAP relacionados con Ventas, Compras, Producción y Administración.

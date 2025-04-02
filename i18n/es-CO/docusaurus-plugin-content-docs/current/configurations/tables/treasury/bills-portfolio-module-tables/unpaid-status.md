@@ -1,39 +1,33 @@
 ---
-title: Stati insoluti
+title: stati insoluti
 sidebar_position: 6
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Si se desea configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione insoluti della società, impostando uno degli stati predefiniti fra:
+La tabla se completa mediante la imposición de un código y una descripción de usuario para los estados necesarios para la gestión de insolutos de la empresa, configurando uno de los estados predefinidos entre:
 
-**Insoluto;**
+**Insoluto (Insoluto);**  
 
-**Contabilizzato;**
+**Contabilizado (Contabilizzato);**  
 
-**Emesso note debito (non utilizzato);**
+**Emitido nota de débito (no utilizado) (Emesso note debito (non utilizzato));**  
 
-**Contabilizzato note debito (non utilizzato);**
+**Contabilizado nota de débito (no utilizado) (Contabilizzato note debito (non utilizzato));**  
 
-**Incassato;**
+**Cobrado (Incassato);**  
 
-**Autorizzato (non utilizzato).**
+**Autorizado (no utilizado) (Autorizzato (non utilizzato)).**  
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Con questo pulsante si esegue la ricerca stati insoluti secondo i filtri impostati. |
-| Nuovo | Posiziona il cursore all'inserimento di una nuova riga. |
-| Cancella | Cancella il tipo anticipo selezionato. |
-| Anteprima | Esegue l'anteprima di stampa della tabella in uso. |
-| Stampa | Esegue la stampa della tabella in uso. |
-
-
-
-
-
-
+| Buscar (Ricerca) | Con este botón se ejecuta la búsqueda de estados insolutos según los filtros establecidos. |
+| Nuevo (Nuovo) | Posiciona el cursor para la inserción de una nueva línea. |
+| Eliminar (Cancella) | Elimina el tipo de anticipo seleccionado. |
+| Vista previa (Anteprima) | Ejecuta la vista previa de impresión de la tabla en uso. |
+| Imprimir (Stampa) | Ejecuta la impresión de la tabla en uso. |

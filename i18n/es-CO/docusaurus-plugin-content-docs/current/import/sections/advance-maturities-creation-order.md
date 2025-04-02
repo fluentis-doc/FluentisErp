@@ -1,15 +1,15 @@
-Nella testata dell’ ordine è necessario impostare due righe con le condizioni di pagamento, una riga gestirà l’ anticipo e la seconda riga avrà l’ impostazione per la residua percentuale.
+En el encabezado del pedido es necesario establecer dos líneas con las condiciones de pago; una línea gestionará el anticipo y la segunda línea tendrá la configuración para el porcentaje restante.
 
-Si veda in dettaglio l'immagine.
+Véase en detalle la imagen.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order.png)
 
-Questo porterà nei riepiloghi dell’ ordine la presenza di una scadenza di anticipo da inviare alla contabilità, se lo si desidera, tramite l’ apposito pulsante ***Creazione partita di anticipo:***
+Esto llevará en los resúmenes del pedido la presencia de un vencimiento de anticipo para enviar a la contabilidad, si así se desea, a través del botón correspondiente ***Creación de partida de anticipo (Creazione partita di anticipo):***
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation.png)
 
-Premendo questo pulsante si aprirà una maschera nella quale verrà richiesto all’ utente due dati aggiuntivi: una descrizione da riportare in gestione dell’ anticipo e un tipo documento da associare alla partita extra-contabile che sarà creata.
+Al presionar este botón se abrirá un formulario donde se solicitará al usuario dos datos adicionales: una descripción para registrar en la gestión del anticipo y un tipo de documento para asociar a la partida extra-contable que se creará.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation-popup.png)
 
-Il risultato sarà la creazione di una partita extra-contabile per l’ importo e la scadenza dell’ ordine. Questa operazione sarà visibile nella maschera specifica di gestione partite d’ anticipo (in commento).
+El resultado será la creación de una partida extra-contable por el importe y el vencimiento del pedido. Esta operación será visible en el formulario específico de gestión de partidas de anticipo (en comentario).

@@ -1,73 +1,72 @@
 ---
-title: Certificazione ritenuta telematica
+title: Certificación de retención telemática (Certificazione ritenuta telematica)
 sidebar_position: 2
 ---
 
-Da questa form è possibile gestire la Certificazione Unica delle ritenute d'acconto operate nei confronti dei percipienti generando il file per l'invio telematico.
+Desde este formulario es posible gestionar la Certificación Única de las retenciones de impuesto aplicadas a los beneficiarios generando el archivo para el envío telemático.  
 
-:::danger **ATTENZIONE**:
- Per la corretta elaborazione dei dati da parte dell'applicativo è fondamentale che sia i compensi dei percipienti, **sia il relativo pagamento**, siano stati registrati tramite le funzionalità del modulo percipienti, affinchè possa essere calcolato correttamente il debito per ritenute d'acconto.
+:::danger **ATENCIÓN (ATTENZIONE)**:
+ Para la correcta elaboración de los datos por parte de la aplicación es fundamental que tanto los pagos a los beneficiarios, **como el pago correspondiente**, hayan sido registrados a través de las funcionalidades del módulo de beneficiarios, para que se pueda calcular correctamente la deuda por retenciones de impuesto.
 :::
 
+La estructura del formulario, ligeramente diferente al resto de la aplicación, prevé la exposición de las comunicaciones existentes y su respectivo detalle todo en una única vista.
 
-La struttura della form, leggermente diversa del resto dell'applicativo, prevede l'esposizione delle comunicazioni esistenti e del relativo dettaglio tutto in un' unica videata.
+El botón **ricerca**, presente en la barra de herramientas, permite buscar las comunicaciones ya ingresadas que serán mostradas en la cuadrícula superior de Resultados.
 
-Il pulsante **Ricerca**, presente nella ribbon bar, permette di ricercare le comunicazioni già inserite che saranno riportate nella griglia superiore Risultato.
+Al seleccionar una comunicación, será visible una vista previa del detalle correspondiente en la cuadrícula central Detalle (Dettaglio) (sin necesidad de entrar en edición).
 
-Selezionando una comunicazione sarà visibile un'anteprima del relativo dettaglio nella griglia centrale Dettaglio (senza bisogno di entrare in modifica).
+Con un doble clic en la declaración, es posible entrar en su modificación.
 
-Con il doppio click sulla dichiarazione è possibile entrare in modifica della stessa.
+El botón **nuovo** permitirá ingresar una nueva declaración.
 
-Il pulsante **Nuovo** andrà ad inserire una nuova dichiarazione.
-
-### GESTIONE DELLE ANAGRAFICHE:
+### GESTIÓN DE LAS ANAGRAFICAS (GESTIONE DELLE ANAGRAFICHE):
 
 ![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image01.png)
 
-All'interno della sezione relativa a i dati di contatto sono presenti (aprire l'expander) i campi per i dati del percipiente (data e luogo di nascita). Tali dati saranno inseriti nella certificazione unica. Devono essere compilati anche i due campi relativi al **Nome** e **Cognome** poichè il campo unico Ragione sociale non rileva ai fini del modello fiscale.
+Dentro de la sección relacionada con los datos de contacto, se encuentran (abrir el expander) los campos para los datos del beneficiario (fecha y lugar de nacimiento). Estos datos serán ingresados en la certificación única. También deben ser completados los dos campos relacionados con el **nome** y **cognome**, ya que el campo único de Razón social no es relevante para el modelo fiscal.
 
-### INSERIMENTO DATI DI TESTATA:
+### INGRESO DE DATOS DE ENCABEZADO (INSERIMENTO DATI DI TESTATA):
 
-**Anno**: proposto automaticamente pari all'anno in corso;
+**anno**: propuesto automáticamente igual al año actual;  
 
-**Cod. Fiscale Sogg. Obbl.**: inserire il codice fiscale dell'azienda (sostituto d'imposta). Il dato sarà riportato nel tracciato telematico e nella testata della stampa del modello fiscale.
+**Cód. Fiscal del Sujeto Obligado (Cod. Fiscale Sogg. Obbl.)**: ingresar el código fiscal de la empresa (sustituto del impuesto). Este dato será incluido en el trazado telemático y en el encabezado de la impresión del modelo fiscal.
 
-**Cod. Fiscale intermediario**:se ci si avvale di un intermediario abilitato per l'invio della dichiarazione (Caf, Commercialista ecc...) indicare qui il relativo codice fiscale.
+**Cód. Fiscal del intermediario (Cod. Fiscale intermediario)**: si se cuenta con un intermediario habilitado para el envío de la declaración (Caf, Contador, etc.), indicar aquí el código fiscal correspondiente.
 
-**Nr. iscrizione Caf**: il campo permette di inserire il nr di iscrizione all'albo dei caf dell'intermediario abilitato all'invio telematico;
+**Núm. de inscripción en el Caf (Nr. iscrizione Caf)**: este campo permite ingresar el número de inscripción en el registro del caf del intermediario habilitado para el envío telemático;  
 
-**Data impegno invio**:campo per indicare la data dell'impegno alla presentazione telematica da parte dell'intermediario abilitato;
+**data impegno invio**: campo para indicar la fecha del compromiso para la presentación telemática por parte del intermediario habilitado;  
 
-**Nome file**: è necessario specificare il nome del file telematico che sarà generato;
+**nome file**: es necesario especificar el nombre del archivo telemático que será generado;  
 
-**Percorso file**: è necessario specificare un percorso locale per il salvataggio del file da inviare telematicamente, il documento sarà inoltre memorizzato nella gestione documentale di Fluentis ed accessibile dalla form in commento tramite il tasto ![](/img/neutral/common/document-manager.png);
+**percorso file**: es necesario especificar una ruta local para el guardado del archivo que se enviará telemáticamente; el documento también será almacenado en la gestión documental de Fluentis y accesible desde el formulario en comentario a través del botón ![](/img/neutral/common/document-manager.png);  
 
-**Tipo invio**: specificare in questo campo, tramite la combo box, se si tratta di invio ordinario oppure sostitutivo o di annullamento (vedere istruzioni ministeriali). Questo campo dovrà essere gestito in abbinamento ai flag **Annullamento** e **Sostituzione** che aggiornano i rispettivi campi all'interno del modello fiscale.
+**tipo invio**: especificar en este campo, a través de la caja de combinación, si se trata de un envío ordinario, sustitutivo o de anulación (ver instrucciones ministeriales). Este campo debe ser gestionado en combinación con los indicadores **annullamento** y **sostituzione** que actualizan los campos respectivos dentro del modelo fiscal.
 
-**Aggregata / Dettagliata**: questo campo specifica se la certificazione unica che sarà elaborata sarà di tipo dettagliato (riporterà i dati distinti per ogni singolo compenso intestato ad ogni percipiente) oppure di tipo aggregato (riporterà i dati aggregati e totalizzati per ogni singolo percipiente). Vedere le istruzioni ministeriali.
+**aggregata / dettagliata**: este campo especifica si la certificación única que será procesada será de tipo detallado (reportará los datos distintos para cada compensación a nombre de cada beneficiario) o de tipo agregado (reportará los datos agregados y totalizados para cada beneficiario). Consulte las instrucciones ministeriales.
 
-**Soggetto che effettua la dichiarazione, pers. fis.**: la combo box, collegata alla tabella Dipendente, permette di inserire il soggetto che firma la dichiarazione (il dato è obbligatorio).
+**Sujeto que realiza la declaración, persona física (Soggetto che effettua la dichiarazione, pers. fis.)**: la caja de combinación, conectada a la tabla de Empleados, permite ingresar el sujeto que firma la declaración (este dato es obligatorio).
 
-**Codice carica**: inserire tramite la combo box il codice carica del soggetto che firma la dichiarazione (es. rappresentante legale) vedere le istruzioni ministeriali;
+**codice carica**: ingresar a través de la caja de combinación el código del cargo del sujeto que firma la declaración (ej. representante legal); ver las instrucciones ministeriales;
 
-**Soggetto che effettua la dichiaraz. pers. giuridica**: in questo campo è possibile inserire i dati anagrafici (ripresi dalle anagrafiche già presenti nel sistema) di una società che presenta la dichiarazione per conto dell'azienda in uso (vedere istruzioni ministeriali);
+**Sujeto que realiza la declaración, persona jurídica (Soggetto che effettua la dichiaraz. pers. giuridica)**: en este campo es posible ingresar los datos de identificación (tomados de los registros ya presentes en el sistema) de una empresa que presenta la declaración en nombre de la empresa en uso (ver instrucciones ministeriales);
 
-**Data firma sostituto d'imposta**: è necessario indicare la data della firma della dichiarazione;
+**data firma sostituto d'imposta**: es necesario indicar la fecha de la firma de la declaración;  
 
-**Firma**: attivare sempre il flag che indica che la dichiarazione è firmata e riporta in stampa il nome del soggetto firmatario (vedere campo Soggetto che effettua la dich...)
+**firma**: activar siempre el indicador que indica que la declaración está firmada y que imprimir el nombre del sujeto firmante (ver campo Sujeto que realiza la decl...)
 
-### GRIGLIA DETTAGLIO
+### CUADRÍCULA DETALLE (GRIGLIA DETTAGLIO)
 
-I campi ricalcano i dati presenti nel modello ministeriale e pertanto si rinvia alle istruzioni fiscali l'illustrazione del contenuto.
+Los campos reflejan los datos presentes en el modelo ministerial y, por lo tanto, se remite a las instrucciones fiscales para la ilustración de su contenido.
 
-E' possibile intervenire manualmente modificando i dati che vengono generati automaticamente con la procedura di calcolo, attivabile dalla ribbon bar.![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image03.png)
+Es posible intervenir manualmente modificando los datos que son generados automáticamente con el procedimiento de cálculo, que se puede activar desde la barra de herramientas. ![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image03.png)
 
-Per generare il file da trasmettere telematicamente utilizzare il pulsante **Esporta**. Il file verrà memorizzato nel documentale di Fluentis e sarà possibile scaricarne una copia sul proprio pc locale.
+Para generar el archivo que se transmitirá telemáticamente, utilice el botón **esporta**. El archivo será almacenado en la gestión documental de Fluentis y será posible descargar una copia en su PC local.
 
 ![](/img/neutral/common/document-manager.png)
 
-### GRIGLIA INFERIORE 
+### CUADRÍCULA INFERIOR (GRIGLIA INFERIORE)
 
-**Codici AU....** è riservata all'inserimento, per ogni riga della griglia Dettaglio, di informazioni ulteriori richieste in particolari situazioni per le quali si rinvia alle istruzioni ministeriali.
+**Códigos AU.... (Codici AU....)** está reservada para el ingreso, por cada línea de la cuadrícula Detalle, de información adicional solicitada en situaciones particulares, para las cuales se refiere a las instrucciones ministeriales.
 
 ![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image05.png)

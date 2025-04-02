@@ -1,13 +1,13 @@
 ---
-title: Reportistica
+title: Reportística (Reportistica)
 sidebar_Position: 2.9
---- 
+---
 
-Possiamo suddividere la reportistica in due tipologie: 
+Podemos dividir la reportística en dos tipos: 
 
-***RENDICONTO ECONOMICO AZIENDALE (REPORTISTICA AZIENDALE):*** il classico conto economico a margine di contribuzione piuttosto che a valore aggiunto o a valore di produzione ottenuta o venduta;  
-***RENDICONTO ECONOMICO DI CENTRO:*** tramite il quale in funzione del cost driver di misurazione del centro siamo in grado di determinare la nostra tariffa parametrica che, per quanto riguarda i centri produttivi è quasi sempre euro/ora. Questa tariffa la andremo ad impiegare per la costificazione a livello di commessa o di prodotto dei tempi impiegati per la trasformazione medesima.
+***INFORME ECONÓMICO EMPRESARIAL (RENDICONTO ECONOMICO AZIENDALE):*** el clásico estado de resultados por margen de contribución en lugar de por valor añadido o valor de producción obtenida o vendida;  
+***INFORME ECONÓMICO DE CENTRO (RENDICONTO ECONOMICO DI CENTRO):*** mediante el cual, en función del *cost driver* de medición del centro, somos capaces de determinar nuestra tarifa paramétrica que, en lo que respecta a los centros productivos, es casi siempre euro/hora. Esta tarifa la utilizaremos para la costificación a nivel de pedido o de producto de los tiempos empleados para la transformación misma.
 
-Naturalmente questa reportistica dovrà avere anche la possibilità di confrontare periodi o orari diversi per poter fare un minimo di analisi degli scostamenti. Per esempio, per aree diverse potremmo confrontare un consuntivo rispetto a un budget.
+Naturalmente, esta reportística también debe tener la posibilidad de comparar períodos u horarios diferentes para poder realizar un mínimo de análisis de desviaciones. Por ejemplo, para áreas diferentes podríamos comparar un resultado frente a un presupuesto.
 
-Per le aziende che valorizzano la [*dimensione progetti/commesse*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) sarà disponibile la procedura di stampa del consuntivo di progetto, sempre basato su un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) specifico.
+Para las empresas que valoran la [*dimensión de proyectos/pedidos*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), estará disponible el procedimiento de impresión del resultado del proyecto, siempre basado en un [*Modelo de reclasificación*](/docs/controlling/reclassifications/create-reclassification-model) específico.

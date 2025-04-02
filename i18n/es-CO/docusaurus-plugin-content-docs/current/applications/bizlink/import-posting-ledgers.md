@@ -1,53 +1,53 @@
 ---
-title: Importazione Movimenti contabili
+title: importazione movimenti contabili
 sidebar_position: 2
 ---
 
-Il foglio excel (template) per l'importazione dei movimenti contabili nel modulo Amministrazione permette di popolare sia la sezione iva, sia la sezione contabile delle registrazioni e viene pertanto compilato in maniera adeguata a seconda se si stiano importando scritture contabili che coinvolgono l'iva o semplicemente scritture di prima nota.
+El archivo de Excel (plantilla) para la importación de movimientos contables en el módulo de Administración permite poblar tanto la sección de IVA como la sección contable de los registros, y por lo tanto se debe completar de manera adecuada según si se están importando asientos contables que involucran el IVA o simplemente asientos de primera nota.
+
+Si se importan registros de facturas:  
+1^ fila = encabezado (testata)  
+2^ fila = libro diario (libro giornale) + Registro IVA  
+3^ fila (y siguientes) = movimientos del libro diario (movimenti del libro giornale)  
+
+Primera nota  
+1^ fila = encabezado (testata)  
+Otras filas = libro diario (libro giornale)  
 
 
-SE si importa registrazioni di fatture: 
-1^ riga = testata 
-2^ riga = libro giornale + Registro IVA
-3^ riga (e seguenti) = movimenti del libro giornale
-
-Prima nota
-1^ riga = testata
-Altre righe = libro giornale
-
-Esempio
+Ejemplo
 
 ![](/img/it-it/applications/bizlink/import-mov-contabili.png)
 
-**Data Reg / Data Comp:** sono le date registrazione e competenza della testata registrazione contabile. 
+**Fecha Reg / Fecha Comp:** son las fechas de registro y competencia del encabezado del registro contable. 
 
-**Num Reg.** Attenzione, deve essere libero nel db di destinazione oppure la funzione andrà a sovrascrivere quello che trova senza controllo (è una update sql)
+**Num Reg.:** Atención, debe estar libre en la base de datos de destino, de lo contrario la función sobrescribirá lo que encuentre sin control (es una actualización SQL).
 
-**Causale:** utilizzare un codice di causale già presente e coerente con la registrazione (esempio una causale IVA se importo registrazioni di fatture)
+**Causa:** utilizar un código de causa ya presente y coherente con el registro (por ejemplo, una causa de IVA si importo registros de facturas).
 
-**Registro iva:**: utilizzare il codice di un registro già presente
+**Registro IVA:** utilizar el código de un registro ya existente.
 
-**Protocollo IVA**: utilizzare un protocollo libero
+**Protocolo IVA:** utilizar un protocolo libre.
 
-**Divisa; Valuta; Euro** completare sempre tutto anche se è tutto in euro e non c’è il cambio. Compilare sempre anche l'altra colonna con 0,00 (Esempio se compilo la colonna Dare 1000,00 nella colonna adiacente Avere metto 0,00)
+**Divisa; Moneda; Euro:** completar siempre todo, incluso si es todo en euros y no hay cambio. Completar siempre también la otra columna con 0,00 (por ejemplo, si completo la columna de debe 1000,00 en la columna adyacente de haber pongo 0,00).
 
-**Conto / Sottoconto:** utilizzare codici di conti già presenti
-
----
-**Dati IVA**
-
-Caricare il **codice** dell'aliquota che deve essere già presente nel db
-
-Compilare tutti i dati quindi imponibile iva e anche iva indetraibile (eventualmente con valore 0,00)
+**Cuenta / Subcuenta:** utilizar códigos de cuentas ya existentes. 
 
 ---
+**Datos IVA (Dati IVA)**
 
-Centro Aziendale: Opzionale, se intendo caricare anche il collegamento al centro di costo (già presente)
+Cargar el **código** de la alícuota que debe estar ya presente en la base de datos.
 
-Numero commessa: Opzionale, se intendo caricare anche il collegamento
+Completar todos los datos, por lo tanto la base imponible de IVA y también IVA no deducible (eventualmente con valor 0,00).
 
 ---
 
-**Nella tab Parametri** si può mettere il valore 1 su **Ricalcolo**, in questo modo fa un ricalcolo dei dati a partire dal libro giornale e quindi genera le partite aperte dai dati delle condizioni di pagamento se ad esempio mancano perché non sono stati importati separatamente. Altrimenti non fa alcun ricalcolo e le partite ad esempio non si creeranno se non vengono importate. (Opzione consigliata per ragioni di performance e tempistiche di elaborazione soprattutto con molte righe)
+Centro Empresarial: Opcional, si deseo cargar también el enlace al centro de costo (ya presente).
 
-Attenzione: i conti devono già esistere nel db altrimenti il messaggio di errore non mi dice quale conto manca ma si riferisce sempre all’ultima riga del foglio excel
+Número de orden: Opcional, si deseo cargar también el enlace.
+
+---
+
+**En la pestaña Parámetros (tab Parametri)** se puede poner el valor 1 en **ricalcolo**, de este modo se realiza un recalculo de los datos a partir del libro diario y se generan las partidas abiertas a partir de los datos de las condiciones de pago si, por ejemplo, faltan porque no se importaron por separado. De lo contrario, no se realizará ningún recalculo y las partidas no se crearán si no se importan. (Opción recomendada por razones de rendimiento y tiempos de procesamiento, especialmente con muchas filas).
+
+Atención: las cuentas deben existir ya en la base de datos, de lo contrario, el mensaje de error no indicará qué cuenta falta, sino que se refiere siempre a la última fila del archivo de Excel.

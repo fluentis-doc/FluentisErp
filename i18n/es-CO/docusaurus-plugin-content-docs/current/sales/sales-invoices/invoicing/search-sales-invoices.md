@@ -1,14 +1,14 @@
 ---
-title: Ricerca fatture di vendita
+title: Búsqueda de facturas de venta (Ricerca fatture di vendita)
 sidebar_position: 1
 ---
 
-La form si apre tramite tramite il percorso **Vendite > Fatture > Ricerca Fatture**.     
+El formulario se abre a través de la ruta **Ventas > Facturas > Búsqueda de Facturas (Vendite > Fatture > Ricerca Fatture)**.   
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Para la explicación de las funcionalidades comunes a los documentos de venta, consulte la sección [Ventas (Vendite)](/docs/sales/sales-intro).
 
-#### Pulsanti specifici
+#### Botones específicos (Pulsanti specifici)
 
-> - **Storno fatturazione**: con questa procedura è possibile stornare parzialmente o totalmente le fatture. Una volta cliccato il pulsante, si aprirà un pop up dove  selezionare le righe articolo da stornare con le relative quantità, inserire il Tipo documento da creare (sarà possibile selezionare solo tipologie di Fatture con natura *Nota di credito*) e inserire la Causale di storno del magazzino (generalmente un carico). E' possibile stornare le righe di tipo 1, 2, 3, 4 e 5.   
-> - **Stato SDI**: in questa combo box viene riportato lo Stato SDI della fattura selezionata tra: Non Esaminata, Controllata, Da Spedire, Annullata, Esclusa, Generata. E' possibile modificare lo Stato SDI direttamente da questa maschera. Per approfondimenti consultare la [Gestione Fatturazione elettronica](/docs/finance-area/e-invoice/create-electronic-invoice).          
-> - **Fatturazione elettronica**: questa sezione contiene lo stato [Fatturazione elettronica](/docs/sales/sales-invoices/invoicing/sales-invoice) del documento selezionato, e il bottone **Registro dei documenti SDI** che si abilita se la fattura selezionata si trova dallo stato SDI *Controllata* in poi; permette di consultare lo storico dei rapporti del documento con lo SDI e la consultazione del file xml generato, senza dover passare per i [Documenti di vendita in uscita](/docs/finance-area/sdi-documents/outgoing-sales-documents)   
+> - **storno fatturazione**: con este procedimiento es posible anular parcial o totalmente las facturas. Una vez que se haga clic en el botón, se abrirá un pop-up donde se seleccionarán las líneas de artículo a anular con las respectivas cantidades, se ingresará el Tipo de documento a crear (solo será posible seleccionar tipos de Facturas con naturaleza *Nota de crédito (Nota di credito)*) y se ingresará la Causa de anulación del almacén (generalmente una carga). Es posible anular las líneas de tipo 1, 2, 3, 4 y 5.   
+> - **stato sdi**: en este combo box se muestra el Estado SDI de la factura seleccionada entre: No examinada (Non Esaminata), Revisada (Controllata), Para enviar (Da Spedire), Anulada (Annullata), Excluida (Esclusa), Generada (Generata). Es posible modificar el Estado SDI directamente desde esta máscara. Para más información, consulte la [Gestión de Facturación electrónica (Gestione Fatturazione elettronica)](/docs/finance-area/e-invoice/create-electronic-invoice).          
+> - **fatturazione elettronica**: esta sección contiene el estado [Facturación electrónica (Fatturazione elettronica)](/docs/sales/sales-invoices/invoicing/sales-invoice) del documento seleccionado y el botón **Registro de documentos SDI** que se habilita si la factura seleccionada se encuentra en el estado SDI *controllata* o posterior; permite consultar el historial de relaciones del documento con el SDI y la consulta del archivo xml generado, sin tener que pasar por los [Documentos de venta salientes (Documenti di vendita in uscita)](/docs/finance-area/sdi-documents/outgoing-sales-documents).

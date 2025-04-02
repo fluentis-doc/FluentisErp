@@ -1,16 +1,16 @@
 ---
-title: Principali configurazioni
+title: principali configurazioni
 sidebar_position: 2
 ---
 
-Aprendo questa tabella si accede alla maschera di ricerca delle configurazioni principali precedentemente codificate e punto di partenza per crearne di nuove.        
-Aprendo una configurazione sono presenti i dati di testata e tre tab sottostanti. 
+Al abrir esta tabla, se accede a la máscara de búsqueda de las configuraciones principales previamente codificadas y punto de partida para crear nuevas.  
+Al abrir una configuración, se presentan los datos de encabezado y tres pestañas subyacentes.
 
-## Testata
+## Encabezado (Testata)
 
-La testata presenta i seguenti campi:
-- **Tipo di configurazione**: qui si indica la [tipologia](/docs/configurations/tables/CPQ/configuration-type) di configurazione. 
-- **Codice**: viene assegnato un codice univoco, modificabile.
-- **Versione**: viene assegnato un numero di versione alla configurazione, che parte da 1.
-- **Descrizione**: è possibile associare una descrizione libera.
-- **Data inizio/fine validità**: è possibile associare un intervallo di validità per la configurazione. 
+El encabezado presenta los siguientes campos:  
+- **tipo di configurazione**: aquí se indica la [tipología (tipologia)](/docs/configurations/tables/CPQ/configuration-type) de configuración.  
+- **codice**: se asigna un código único, modificable.  
+- **versione**: se asigna un número de versión a la configuración, que comienza desde 1.  
+- **descrizione**: es posible asociar una descripción libre.  
+- **Fecha de inicio/finalización de validez (Data inizio/fine validità)**: es posible asociar un intervalo de validez para la configuración.

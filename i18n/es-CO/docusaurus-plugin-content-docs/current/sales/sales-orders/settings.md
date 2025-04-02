@@ -1,24 +1,24 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area **Vendite > Ordini clienti**.
+El módulo se encuentra en el área **Ventas > Pedidos de clientes (Vendite > Ordini clienti)**.
 
-Nel modulo Vendite di Fluentis, la gestione degli ordini cliente permette di controllare e ottimizzare l'intero ciclo dell'ordine.
-Gli ordini cliente in Fluentis possono essere generati attraverso diverse modalità:
+En el módulo de Ventas de Fluentis, la gestión de pedidos de clientes permite controlar y optimizar todo el ciclo del pedido.  
+Los pedidos de clientes en Fluentis pueden ser generados a través de diferentes modalidades:
 
-- Da Offerta: Un ordine cliente può essere creato automaticamente a partire da un'offerta precedentemente accettata, mantenendo coerenza tra le condizioni commerciali proposte e quelle confermate.
-- Da Ordine Fornitore: È possibile generare un ordine cliente a partire da un ordine fornitore, utile per le aziende che operano con processi di drop-shipping o su commessa, garantendo un allineamento diretto tra i processi di approvvigionamento e la vendita.
+- Desde Oferta: Un pedido de cliente puede ser creado automáticamente a partir de una oferta previamente aceptada, manteniendo la coherencia entre las condiciones comerciales propuestas y las confirmadas.  
+- Desde Pedido de Proveedor: Es posible generar un pedido de cliente a partir de un pedido de proveedor, útil para las empresas que operan con procesos de drop-shipping o por encargo, garantizando una alineación directa entre los procesos de aprovisionamiento y la venta.
 
-**Funzionalità principali**:
-- Gestione completa delle anagrafiche: Gli ordini cliente sono integrati con le anagrafiche di clienti, listini prezzi e condizioni commerciali predefinite, permettendo la configurazione automatica di sconti, termini di pagamento e altre condizioni specifiche per ciascun cliente.
-- Tracciabilità dello stato dell'ordine: Gli ordini possono essere monitorati attraverso diversi stati (inserito, confermato, ecc.), con aggiornamenti in tempo reale disponibili per tutte le fasi del processo.
-- Workflow automatizzati: Le fasi di approvazione, invio notifiche e aggiornamenti degli ordini possono essere automatizzate tramite workflow configurabili, migliorando la velocità operativa e riducendo il rischio di errori.
-- Reportistica e analisi degli ordini: È possibile accedere a report dettagliati che analizzano volumi d’ordine, tempi di evasione, ordini non completati, e altri KPI utili per migliorare la gestione delle vendite e delle performance aziendali.
+**Funcionalidades principales (Funzionalità principali)**:
+- Gestión completa de los registros (anagrafiche): Los pedidos de clientes están integrados con los registros de clientes, listas de precios y condiciones comerciales predefinidas, permitiendo la configuración automática de descuentos, términos de pago y otras condiciones específicas para cada cliente.  
+- Trazabilidad del estado del pedido: Los pedidos pueden ser monitoreados a través de diferentes estados (introducido, confirmado, etc.), con actualizaciones en tiempo real disponibles para todas las fases del proceso.  
+- Flujos de trabajo automatizados: Las fases de aprobación, envío de notificaciones y actualizaciones de pedidos pueden ser automatizadas a través de flujos de trabajo configurables, mejorando la velocidad operativa y reduciendo el riesgo de errores.  
+- Reportes y análisis de pedidos: Es posible acceder a reportes detallados que analizan volúmenes de pedidos, tiempos de cumplimiento, pedidos no completados y otros KPI útiles para mejorar la gestión de ventas y el rendimiento empresarial.  
 
-Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:      
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
-> - [Parametri Ordine cliente](/docs/configurations/parameters/sales/sales-orders-parameters)     
-> - [Parametri raggruppamento](/docs/configurations/parameters/sales/orders-grouping)     
-> - [Tipi Ordine cliente](/docs/configurations/tables/sales/sales-order-types)     
+Antes de utilizar el módulo, es necesario completar los siguientes parámetros y tablas:  
+> - [Numeraciones (Numerazioni)](/docs/configurations/tables/fluentis-numerations)  
+> - [Parámetros de Pedido de Cliente (Parametri Ordine cliente)](/docs/configurations/parameters/sales/sales-orders-parameters)  
+> - [Parámetros de Agrupamiento (Parametri raggruppamento)](/docs/configurations/parameters/sales/orders-grouping)  
+> - [Tipos de Pedido de Cliente (Tipi Ordine cliente)](/docs/configurations/tables/sales/sales-order-types)

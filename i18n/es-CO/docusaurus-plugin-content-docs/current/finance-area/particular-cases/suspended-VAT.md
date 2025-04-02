@@ -1,41 +1,41 @@
 ---
 sidebar_position: 3
-title: Regime dell'iva per cassa
+title: Régimen del IVA en efectivo (Regime dell'iva per cassa)
 ---
 
 :::important **Fluentis Academy** 
-Si definisce 'IVA in sospensione' l'IVA che diviene esigibile non alla consegna del bene ma al pagamento della fattura.
-Il contribuente che adotta questo regime liquida l’Iva di tutte le operazioni, sia attive che passive, con il criterio di cassa.
-Il momento impositivo Iva viene fatto coincidere con il momento della data del pagamento o dell’incasso dei corrispettivi. 
-In questo modo si deroga, quindi, al principio che vede come esigibile l’Iva di un documento registrato in contabilità.
+Se define como 'IVA en suspensión' la IVA que se hace exigible no en la entrega del bien, sino en el pago de la factura. 
+El contribuyente que adopta este régimen liquida el IVA de todas las operaciones, tanto activas como pasivas, con el criterio de caja.  
+El momento impositivo del IVA se hace coincidir con el momento de la fecha de pago o del cobro de los precios.  
+De este modo, se deroga el principio que considera exigible el IVA de un documento registrado en contabilidad.
 
-In pratica, il regime dell’Iva per cassa consente il versamento dell’Iva a debito sulle cessioni o sulle prestazioni di servizi solo al momento del pagamento della fattura da parte del cliente. 
-Ed allo stesso tempo consente la detrazione dell’Iva sugli acquisti solo al momento in cui il soggetto pagherà la fattura al fornitore. 
+En la práctica, el régimen del IVA en efectivo permite el pago del IVA a deber sobre las ventas o los servicios solo en el momento del pago de la factura por parte del cliente.  
+Y al mismo tiempo, permite la deducción del IVA sobre las compras solo en el momento en que el sujeto pague la factura al proveedor.  
 
-In ogni caso, la liquidazione dell’Iva dovrà avvenire entro un anno dalla vendita o dalla prestazione del servizio fatta eccezione per i casi di fallimento o di coinvolgimento del concessionario o del committente di una procedura concorsuale.
+En cualquier caso, la liquidación del IVA deberá realizarse dentro de un año desde la venta o la prestación del servicio, salvo en casos de quiebra o de involucramiento del concesionario o del comitente en un procedimiento concursal.
 :::
 
-### IMPOSTAZIONI E CONFIGURAZIONE CAUSALI CONTABILI COINVOLTE
+### CONFIGURACIONES Y CONFIGURACIÓN DE CAUSAS CONTABLES INVOLUCRADAS (IMPOSTAZIONI E CONFIGURAZIONE CAUSALI CONTABILI COINVOLTE)
 
-Le impostazioni principali per la gestione di questo regime avvengono semplicemente attraverso la corretta configurazione delle causali contabili.
+Las configuraciones principales para la gestión de este régimen se realizan simplemente a través de la correcta configuración de las causas contables.
 
-In particolare è fondamentale selezionare correttamente, all'interno delle causali coinvolte, nel campo **Tipo movimento** (riferito all'IVA), la tipologia esatta.
+En particular, es fundamental seleccionar correctamente, dentro de las causas involucradas, en el campo **tipo movimento** (referido al IVA), la tipología exacta.
 
-In dettaglio:
+En detalle:
 
-- La causale per la registrazione fattura fornitore avrà il tipo *IVA acquisti in sospensione*
-- La causale per la registrazione fattura cliente avrà il tipo *Vendita con IVA in sospensione*
-- Le causali per l'incasso o il pagamento non avranno un tipo particolare, ma come di consueto il tipo *Non IVA* (saranno collegate alle causali eseguite in automatico per il giroconto dell'iva che diviene esigibile attraverso il campo *Causale automatica*)
-- La causale di giroconto dell'iva acquisti avrà il tipo Giroconto IVA acquisti in sospensione
-- La causale di giroconto dell'iva vendite avrà il tipo Giroconto IVA in sospensione
+- La causa para el registro de la factura del proveedor tendrá el tipo *IVA compras en suspensión (IVA acquisti in sospensione)*.
+- La causa para el registro de la factura del cliente tendrá el tipo *Venta con IVA en suspensión (Vendita con IVA in sospensione)*.
+- Las causas para el cobro o el pago no tendrán un tipo particular, sino como de costumbre el tipo *No IVA (Non IVA)* (estarán conectadas a las causas ejecutadas automáticamente para el giroconto del IVA que se vuelve exigible a través del campo *Causale automatica*).
+- La causa de giroconto del IVA de compras tendrá el tipo *Giroconto IVA compras en suspensión (Giroconto IVA acquisti in sospensione)*.
+- La causa de giroconto del IVA de ventas tendrá el tipo *Giroconto IVA en suspensión (Giroconto IVA in sospensione)*.
 
-Il contenuto (template) delle causali utilizzate per la fattura di vendita e di acquisto differisce tipicamente dalle causali ordinarie per il fatto che l'iva viene contabilizzata su un conto specifico per l'iva sospesa e diverso da quelli ordinari destinati al'iva a credito ed a debito che vengono poi girocontati al conto erario c/iva in fase di liquidazione periodica. Per quanto riguarda il registro iva movimentato, questo può rimanere quello consueto senza necessità di definirne uno specifico. Il tipo particolare di movimento iva definito nella causale fa in modo che l'imposta non venga considerata come credito o debito finchè non interverrà il giroconto, pur essendo visualizzata nei movimenti iva del periodo. 
+El contenido (template) de las causas utilizadas para la factura de venta y de compra difiere típicamente de las causas ordinarias por el hecho de que el IVA se contabiliza en una cuenta específica para el IVA suspendido y distinta de aquellas ordinarias destinadas al IVA a crédito y a débito que luego se girarán a la cuenta del erario c/IVA en la etapa de liquidación periódica. En cuanto al registro de IVA movido, este puede permanecer el habitual sin necesidad de definir uno específico. El tipo particular de movimiento de IVA definido en la causa hace que el impuesto no se considere como crédito o débito hasta que se produzca el giroconto, aunque se visualice en los movimientos de IVA del período.
 
-Il contenuto delle causali di incasso e pagamento risulta quello consueto
+El contenido de las causas de cobro y pago es el habitual.
 
-Il contenuto delle causali (eseguite in automatico) di giroconto dell'iva sospesa, storna i conti specifici dell'iva sospesa e contabilizza sui conti dell'iva ordinaria inquanto da quel momento l'iva è esigibile o detraibile rispettivamente.
+El contenido de las causas (ejecutadas automáticamente) de giroconto del IVA en suspensión, anula las cuentas específicas del IVA suspendido y contabiliza en las cuentas del IVA ordinario ya que desde ese momento el IVA es exigible o deducible respectivamente.
 
-Di seguito alcune immagini di dettaglio delle impostazioni. 
+A continuación, algunas imágenes de detalle de las configuraciones. 
 
 ![](/img/it-it/finance-area/other/suspvat1.png)
 
@@ -47,22 +47,22 @@ Di seguito alcune immagini di dettaglio delle impostazioni.
 
 ![](/img/it-it/finance-area/other/suspvat5.png)
 
-### GESTIONE IVA DECORSO UN ANNO DALL'OPERAZIONE SE NON PAGATA O NON INCASSATA
+### GESTIÓN DEL IVA TRANSCURRIDO UN AÑO DESDE LA OPERACIÓN SI NO SE HA PAGADO O NO SE HA COBRADO (GESTIONE IVA DECORSO UN ANNO DALL'OPERAZIONE SE NON PAGATA O NON INCASSATA)
 
-La gestione permette di individuare le partite aperte da oltre un anno e contabilizzare automaticamente il giroconto dell'iva al fine di renderla esigibile oppure detraibile rispettivamente.
+La gestión permite identificar las partidas abiertas desde hace más de un año y contabilizar automáticamente el giroconto del IVA con el fin de hacerlo exigible o deducible respectivamente.
 
-Per fare questo è possibile utilizzare (con settaggi specifici) la form [**Giroconto partite**](/docs/finance-area/maturity-values/procedures/maturity-values-giro/filter-tab)
+Para ello, es posible utilizar (con configuraciones específicas) el formulario [**giroconto partite**](/docs/finance-area/maturity-values/procedures/maturity-values-giro/filter-tab).
 
-### IMPOSTAZIONI IN PRESENZA DI RICEVUTE BANCARIE ED INSOLUTI
+### CONFIGURACIONES EN CASO DE RECIBOS BANCARIOS E INCUMPLIMIENTOS (IMPOSTAZIONI IN PRESENZA DI RICEVUTE BANCARIE ED INSOLUTI)
 
-Se, nell'ambito del ciclo attivo, è prevista l'emissione di ricevute bancarie e la presentazione di in banca delle stesse all'incasso o al salvo buon fine, la configurazione delle causali sarà la seguente:
+Si, en el ámbito del ciclo activo, se prevé la emisión de recibos bancarios y la presentación de los mismos en el banco para el cobro o al salvo buen fin, la configuración de las causas será la siguiente:
 
-1. Emissione della fattura: registrata con la causale configurata come descritto sopra;
+1. Emisión de la factura: registrada con la causa configurada como se describió anteriormente;
 
-2. Emissione effetto: registrazione normale con la consueta causale, si chiude la partita aperta dalla fattura ma non viene eseguito nessun giroconto iva
+2. Emisión efecto: registro normal con la causa habitual, se cierra la partida abierta por la factura pero no se lleva a cabo ningún giroconto de IVA.
 
-3. contabilizzazione **distinta** di presentazione Ri.Ba: **la causale utilizzata ha il collegamento a quella automatica di giroconto iva**, il giroconto viene contabilizzato alla data scadenza degli effetti
+3. Contabilización **distinta** de presentación de Ri.Ba: **la causa utilizada tiene el vínculo a aquella automática del giroconto de IVA**, el giroconto se contabiliza a la fecha de vencimiento de los efectos.
 
-4. contabilizzazione accrediti: normale come di consueto
+4. Contabilización de abonos: normal como de costumbre.
 
-**Nel caso di contabilizzazione insoluti**: la causale contabile utilizzata non necessita di particolari settaggi, la procedura intercetta la partita chiusa dalla Ri.ba. e collegata all' iva per cassa e cancella la registrazione di giroconto e contestualmente, invece di riaprire la partita, fa un pagamento con segno dare per stornare il pagamento partita eseguito dall'emissione Ri.ba., in modo da avere la partita originale (legata all'iva in sospensione) di nuovo aperta.
+**En caso de contabilización de incumplimientos**: la causa contable utilizada no necesita configuraciones particulares, el procedimiento intercepta la partida cerrada por la Ri.Ba. y vinculada al IVA en efectivo y cancela la registración de giroconto y, en su lugar de reabrir la partida, realiza un pago con signo deudor para anular el pago de la partida efectuado por la emisión de Ri.Ba., de modo que la partida original (vinculada al IVA en suspensión) vuelva a abrirse.

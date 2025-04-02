@@ -1,13 +1,13 @@
 ---
-title: Visit Report Contatti
+title: Informe de Visitas (Visit Report Contatti)
 sidebar_position: 10
 ---
 
-Questa è la nona tab dei **Contatti CRM**.
+Esta es la novena pestaña de los **contatti crm**.
 
-In questa tab viene visualizzata la lista dei **Visit Reports** inseriti per il contatto.
+En esta pestaña se visualiza la lista de los **visit reports** ingresados para el contacto.
 
-Nella parte superiore della tab sono presenti i campi di **filtro** che permettono di effettuare una ricerca più puntuale dei Visit Reports desiderati.
+En la parte superior de la pestaña se encuentran los campos de **filtro** que permiten realizar una búsqueda más precisa de los Informes de Visitas deseados.
 
-Facendo doppio click sulla riga del Visit Reports lo stesso verrà aperto in visualizzazione/modifica.
-Per inserire un nuovo Visit Reports per il contatto in oggetto è sufficiente premere il pulsante ![](/img/neutral/common/new-visit-report.png), presente sulla ribbon bar.
+Al hacer doble clic en la fila del Informe de Visitas, este se abrirá en modo de visualización/modificación.  
+Para ingresar un nuevo Informe de Visitas para el contacto en cuestión, simplemente presione el botón ![](/img/neutral/common/new-visit-report.png), que se encuentra en la barra de herramientas (ribbon bar).

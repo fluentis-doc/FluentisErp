@@ -1,26 +1,26 @@
 ---
-title: Configurazione
+title: configurazione
 sidebar_position: 1
 ---
 
-L'area di confiugurazione si compone principalmente di due elementi: **Tabelle** e **Parametri**.
+El área de configuración se compone principalmente de dos elementos: **tabelle** y **parametri**.
 
-Entrambi sono raggruppati per area funzionale, oltre ad un gruppo di tabelle e parametri generali (necessari indipendentmente dall'area alla quale si è interessati).
+Ambos están agrupados por área funcional, además de un grupo de tablas y parámetros generales (necesarios independientemente del área de interés).
 
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
+:::danger[Advertencia]
+Una mala gestión de estos datos básicos podría impedir el uso efectivo del ERP en el área de interés.
 :::
 
-**TABELLE**: contengono dati di base necessari alla creazione di altri dati o documenti. Ad esempio la tabella Tipi Fatture contiene le tipologie di fattura. Per la creazione di una nuova fattura è necessario per prima cosa richiamare il tipo dall'apposita combo box.
+**tabelle**: contienen datos básicos necesarios para la creación de otros datos o documentos. Por ejemplo, la tabla Tipos de Facturas contiene las tipologías de factura. Para la creación de una nueva factura, primero es necesario seleccionar el tipo desde el combo box correspondiente.
 
-**PARAMETRI**: contengono generalmente delle opzioni o dei dati di default per il funzionamento di procedure di elaborazione o creazione automatica di dati. La loro mancata gestione, in particolare, in alcuni casi, il salvataggio di un parametro di default, potrebbe impedire il corretto funzionamento della procedura relativa.
+**parametri**: generalmente contienen opciones o datos predeterminados para el funcionamiento de procedimientos de procesamiento o creación automática de datos. Su mala gestión, en particular en ciertos casos, como el guardado de un parámetro predeterminado, podría impedir el correcto funcionamiento del procedimiento relacionado.
 
-:::important[**Fast Start**]
-Dopo l'installazione di Fluentis ERP, prima di iniziare ad utilizzarlo è possibile inizializzare un [**ambiente *FastStart* totalmente pronto all'uso**](/docs/guide/fast-start).
+:::important[**Inicio rápido (Fast Start)**]
+Después de la instalación de Fluentis ERP, antes de comenzar a usarlo, es posible inicializar un [**entorno *FastStart* completamente listo para usar**](/docs/guide/fast-start).
 
-Vedere il link per l'elenco delle **tabelle** e **parametri** che vengono popolati da questa procedura.
+Consulte el enlace para la lista de **tabelle** y **parametri** que se pueblan a través de este procedimiento.
 
-Un elemento discriminante per il lancio del Fast Start è il [**Piano dei conti**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (area amministrativa).
+Un elemento discriminante para el lanzamiento del Fast Start es el [**piano dei conti**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (área administrativa).
 
-Lanciando la procedura di Fast Start verrà creato un piano dei conti standard, è possibile comunque integrarlo e modificare le descrizioni dei conti, oppure cancellare alcuni conti ma solo se questi non sono già utilizzati in altri dati generati dalla procedura (es. causali contabili, modelli di riclassificazione di bilancio). Nel caso in cui il piano dei conti sia totalmente indatto alla relatà aziendale che ha installato Fluentis, è consigliabile procedere con una configurazione manuale delle tabelle e parametri relativi alle aree funzionali alle quali si è interessati (oltre che alla creazione manuale o importazione del piano dei conti desiderato). Al link sopra indicato è presente una **check list** per la verifica di dettaglio delle tabelle più importatnti.
+Al iniciar el procedimiento de Fast Start, se creará un plan de cuentas estándar; sin embargo, es posible integrarlo y modificar las descripciones de las cuentas, o eliminar algunas cuentas, pero solo si estas no se están utilizando ya en otros datos generados por el procedimiento (por ejemplo, las causales contables, modelos de reclasificación de balances). En caso de que el plan de cuentas sea completamente inadecuado a la realidad empresarial que ha instalado Fluentis, se recomienda proceder con una configuración manual de las tablas y parámetros relacionados con las áreas funcionales de interés, así como la creación manual o importación del plan de cuentas deseado. En el enlace mencionado anteriormente se encuentra una **lista de verificación (check list)** para la verificación detallada de las tablas más importantes.
 :::

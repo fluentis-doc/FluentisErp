@@ -1,62 +1,62 @@
 ---
-title: Modificare componenti
+title: Modificar componentes (Modificare componenti)
 sidebar_position: 6
 ---
 
-Questa form permette di modificare massivamente gli assiemi creati in precedenza, utilizzando tre procedure diverse in base al tipo di modifica che si desidera apportare tra: sostituzione/modifica, inserimento e annullamento.
+Este formulario permite modificar masivamente ensambles creados anteriormente, utilizando tres procedimientos diferentes según el tipo de modificación que se desea realizar: sustitución/modificación, inserción y anulación.
 
-### Sostituzione e modifica
+### Sustitución y modificación (Sostituzione e modifica)
 
-Selezionando dalla combo **Tipo gestione** l'opzione **Sostituzione/Modifica**, è necessario inserire nell'area di filtro un componente, selezionandolo con l'apposito *Help articoli* posto vicino al campo **Componente**.
+Al seleccionar en la combinación **tipo gestione** la opción **sostituzione/modifica**, es necesario ingresar en el área de filtro un componente, seleccionándolo con la correspondiente *help articoli* ubicada cerca del campo **Componente**.
 
-Filtrare per un solo articolo; non è possibile inserire come filtro di ricerca solo la classe articolo o solo una parte del codice o della descrizione.
-Dopo aver impostato il criterio di ricerca, cliccando sul pulsante **Ricerca** posto sulla ribbon bar, la procedura visualizza nella griglia tutte le distinte base all'interno delle quali è presente il componente inserito nell'area di filtro, eseguendo quindi una *Implosione componente*.
+Filtrar solo por un artículo; no es posible ingresar como filtro de búsqueda solo la clase de artículo o solo una parte del código o de la descripción.  
+Después de establecer el criterio de búsqueda, haciendo clic en el botón **ricerca** ubicado en la barra de herramientas, el procedimiento muestra en la cuadrícula todas las listas de materiales dentro de las cuales está presente el componente ingresado en el área de filtro, realizando así una *Implosión de componente (Implosione componente)*.
 
-Nella griglia dei risultati vengono visualizzate classe, codice, descrizione e variante dell'assieme, inizio e fine validità del legame tra il componente selezionato nell'area di filtro e l'assieme visualizzato nella griglia, la quantità del componente e la sua unità di misura di utilizzo, sempre contestualmente al legame assieme/componente.
+En la cuadrícula de resultados se visualizan la clase, el código, la descripción y la variante del ensamble, el inicio y fin de la validez del vínculo entre el componente seleccionado en el área de filtro y el ensamble mostrado en la cuadrícula, la cantidad del componente y su unidad de medida de uso, siempre en relación con el vínculo ensamble/componente.
 
-Scegliere una delle distinte visualizzate, oppure, selezionare con la combinazione *CTRL+click* mouse, una lista di distinte base su cui eseguire la procedura di 'Sostituzione/Modifica'.
+Elegir una de las listas visibles, o bien, seleccionar con la combinación *CTRL+click* del mouse, una lista de listas de materiales sobre las cuales realizar el procedimiento de 'Sustitución/Modificación'.
 
-Selezionare, nella sezione in basso della finestra, il nuovo componente da sostituire a quello selezionato nella sezione di filtro. 
-Per selezionare questo nuovo componente è possibile utilizzare l'*Help articoli*, inserendo i campi di *classe, codice, descrizione* ed eventualmente *variante* del nuovo componente, per il quale deve essere inserita obbligatoriamente anche la quantità (e se la quantità è *fissa* oppure *variabile*) e opzionalmente l'*unita di misura di utilizzo*, la *quantità di scarto*, la* % di scostamento positiva e negativa*, l'inizio e la fine validità, la *priorità*, le *note* del nuovo componente.
+Seleccionar, en la sección inferior de la ventana, el nuevo componente que reemplazará al seleccionado en la sección de filtro.  
+Para seleccionar este nuevo componente, se puede utilizar la *help articoli*, ingresando los campos de *clase, código, descripción* y, opcionalmente, *variante* del nuevo componente, para el cual también debe ingresarse obligatoriamente la cantidad (y si la cantidad es *fija* o *variable*) y, opcionalmente, la *unidad de medida de uso*, la *cantidad de desperdicio*, el *% de desviación positiva y negativa*, el inicio y el fin de la validez, la *prioridad* y las *notas* del nuevo componente.
 
-Tramite l'utilizzo dei flag *Alternative* e *Fasi* è possibile decidere se inserire nel nuovo legame anche le alternative e le fasi di lavorazione legate al nuovo componente.
+A través del uso de los indicadores *alternative* y *fasi*, es posible decidir si incluir en el nuevo vínculo también las alternativas y las fases de trabajo relacionadas con el nuevo componente.
 
-E' possibile anche attivare, se necessario, il flag *Movimentabile* e il flag *Fittizio* (per la spiegazione dettagliata dei vari campi da compilare si rimanda all'articolo [Gestione strutture](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+También se puede activar, si es necesario, el indicador *movimentabile* y el indicador *fittizio* (para la explicación detallada de los varios campos a completar, se remite al artículo [Gestión de estructuras (Gestione strutture)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)).
 
-Tramite questa procedura è possibile inserire, nella sezione in basso, lo stesso componente inserito nella sezione di filtro: in questo caso verrà semplicemente eseguita una modifica delle informazioni già presenti per quel componente all'interno delle distinte selezionate nella griglia.
+A través de este procedimiento, es posible ingresar, en la sección inferior, el mismo componente que ingresó en la sección de filtro; en este caso, simplemente se modificará la información ya existente para ese componente dentro de las listas seleccionadas en la cuadrícula.
 
-Terminato l'inserimento delle informazioni, eseguire la procedura di **Sostituzione/Modifica** tramite l'utilizzo del pulsante di elaborazione ![](/img/neutral/common/execute.png).
+Una vez terminada la inserción de la información, ejecutar el procedimiento de **Sustitución/Modificación** utilizando el botón de procesamiento ![](/img/neutral/common/execute.png).
 
-### Inserimento
+### Inserción (Inserimento)
 
-Selezionando dalla combo **Tipo gestione** l'opzione **Inserimento**, è necessario inserire nell'area di filtro l'assieme, selezionandolo con l'apposito *Help articoli* posto vicino al campo **Assieme**, all'interno del quale si vuole inserire un componente.
+Al seleccionar en la combinación **tipo gestione** la opción **inserimento**, es necesario ingresar en el área de filtro el ensamble, seleccionándolo con la correspondiente *help articoli* ubicada cerca del campo **assieme**, dentro del cual se desea insertar un componente.
 
-In questo caso non è necessario filtrare per un solo articolo, quindi è possibile inserire come filtro di ricerca anche solo la classe articolo o solo una parte del codice o della descrizione, (i campi di filtro sono i medesimi della procedura di (*Modifica/Sostituzione*). Poi cliccando sul pulsante **Ricerca** posto sulla ribbon bar, la procedura visualizza nella griglia tutte le distinte base corrispondenti al filtro di ricerca impostato. Nella griglia dei risultati vengono visualizzate classe, codice, descrizione e variante dell'assieme.
+En este caso, no es necesario filtrar por un solo artículo, por lo que es posible ingresar como filtro de búsqueda solo la clase de artículo o solo una parte del código o de la descripción (los campos de filtro son los mismos que en el procedimiento de (*Modificación/Sustitución*). Luego, al hacer clic en el botón **ricerca** en la barra de herramientas, el procedimiento muestra en la cuadrícula todas las listas de materiales correspondientes al filtro de búsqueda establecido. En la cuadrícula de resultados se muestran la clase, el código, la descripción y la variante del ensamble.
 
-Scegliere una delle distinte visualizzate, oppure, selezionando con la combinazione *CTRL+click* mouse, una lista di distinte base su cui eseguire la procedura di Inserimento.
+Elegir una de las listas visibles, o bien, seleccionando con la combinación *CTRL+click* del mouse, una lista de listas de materiales sobre las cuales realizar el procedimiento de Inserción.
 
-Selezionare, nella sezione in basso della finestra, il nuovo componente da inserire all'interno delle distinte base selezionata nella sezione di filtro. Per selezionare questo nuovo componente è possibile utilizzare l'*Help articoli*, inserendo i campi di *classe, codice, descrizione* ed eventualmente *variante* del nuovo componente, per il quale deve essere inserita obbligatoriamente anche la *quantità* (e se la quantità è *fissa* oppure *variabile*) e opzionalmente l'unita di misura di utilizzo, la quantità di scarto, la % di scostamento positiva e negativa, l'inizio e la fine validità, la priorità, le note del nuovo componente.
+Seleccionar, en la sección inferior de la ventana, el nuevo componente a insertar dentro de las listas de materiales seleccionadas en la sección de filtro. Para seleccionar este nuevo componente, se puede utilizar la *help articoli*, ingresando los campos de *clase, código, descripción* y, opcionalmente, *variante* del nuevo componente, para el cual debe ingresarse obligatoriamente también la *cantidad* (y si la cantidad es *fija* o *variable*) y, opcionalmente, la unidad de medida de uso, la cantidad de desperdicio, el % de desviación positiva y negativa, el inicio y el fin de la validez, la prioridad y las notas del nuevo componente.
 
-Tramite l'utilizzo dei flag *Alternative* e *Fasi* è possibile decidere se inserire nel nuovo legame anche le alternative e le fasi di lavorazione legate al nuovo componente.
+A través del uso de los indicadores *alternative* y *fasi*, es posible decidir si incluir en el nuevo vínculo también las alternativas y las fases de trabajo relacionadas con el nuevo componente.
 
-E' possibile attivare, se necessario, il flag *Movimentabile* e il flag *Fittizio* (per la spiegazione dettagliata dei vari campi da compilare si rimanda all'articolo [Gestione strutture](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+Es posible activar, si es necesario, el indicador *movimentabile* y el indicador *fittizio* (para la explicación detallada de los varios campos a completar, se remite al artículo [Gestión de estructuras (Gestione strutture)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)).
 
-Terminato l'inserimento delle informazioni, eseguire la procedura di **Inserimento** tramite l'utilizzo del pulsante di elaborazione ![](/img/neutral/common/execute.png).
+Una vez completada la inserción de la información, ejecutar el procedimiento de **Inserción** utilizando el botón de procesamiento ![](/img/neutral/common/execute.png).
 
-### Annullamento
+### Anulación (Annullamento)
 
-Selezionando dalla combo **Tipo gestione** l'opzione **Annullamento**, è necessario inserire nell'area di filtro il componente che si vuole eliminare dalle distinte base, selezionando con l'apposito *Help articoli* posto vicino al campo **Componente**, ed opzionalmente anche l'**Assieme** (o la sua classe o una parte del codice o della descrizione) dal quale si vuole eliminare il componente.
+Al seleccionar en la combinación **tipo gestione** la opción **annullamento**, es necesario ingresar en el área de filtro el componente que se desea eliminar de las listas de materiales, seleccionándolo con la correspondiente *help articoli* ubicada cerca del campo **Componente**, y opcionalmente también el **assieme** (o su clase o una parte del código o de la descripción) del cual se desea eliminar el componente.
 
-Poi cliccando sul tasto **Ricerca**, posto sulla ribbon bar, la procedura visualizza nella griglia tutte le distinte base corrispondenti al filtro di ricerca impostato. Nella griglia dei risultati vengono visualizzate classe, codice, descrizione e variante dell'assieme, inizio e fine validità del legame tra il componente selezionato nell'area di filtro e l'assieme visualizzato nella griglia, la quantità del componente e la sua unità di misura di utilizzo, sempre contestualmente al legame assieme\componente.
+Luego, al hacer clic en el botón **ricerca**, ubicado en la barra de herramientas, el procedimiento muestra en la cuadrícula todas las listas de materiales correspondientes al filtro de búsqueda establecido. En la cuadrícula de resultados se visualizan la clase, el código, la descripción y la variante del ensamble, el inicio y fin de la validez del vínculo entre el componente seleccionado en el área de filtro y el ensamble visualizado en la cuadrícula, la cantidad del componente y su unidad de medida de uso, siempre en relación con el vínculo ensamble/componente.
 
-Scegliere una delle distinte visualizzate, oppure, selezionando con la combinazione *CTRL+click* mouse, una lista di distinte base su cui eseguire la procedura di Annullamento.
+Elegir una de las listas visibles, o bien, seleccionando con la combinación *CTRL+click* del mouse, una lista de listas de materiales sobre las cuales realizar el procedimiento de Anulación.
 
-La sezione in basso della finestra risulta disattivata nel caso di **Annullamento**.
+La sección inferior de la ventana queda desactivada en el caso de **Anulación**.
 
-Una volta selezionato il componente da eliminare è possibile, tramite l'utilizzo del tasto di Elaborazione ![](/img/neutral/common/execute.png), eseguire la procedura di **Annullamento**.
+Una vez seleccionado el componente a eliminar, es posible proceder con la anulación utilizando el botón de procesamiento ![](/img/neutral/common/execute.png).
 
-*Pulsante specifico*:
+*Botón específico*:
 
-> **Elaborazione**: pulsante che permette di attivare la procedura selezionata nella combo iniziale della finestra (quindi o la procedura di Sostituzione/Modifica, o la procedura di Inserimento oppure la procedura di Annullamento).
+> **elaborazione**: botón que permite activar el procedimiento seleccionado en la combinación inicial de la ventana (por lo tanto, el procedimiento de Sustitución/Modificación, el procedimiento de Inserción o el procedimiento de Anulación).
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,29 +1,29 @@
 ---
-title: Parametri gestione del personale
+title: parametri gestione del personale
 sidebar_position: 1
 ---
 
-I parametri si trovano sul percorso **Parametri > Dipendenti > Parametri gestione del personale**.
+Los parámetros se encuentran en la ruta **parametri gestione del personale**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*;   
-> **Consegne/Resi D.P.I.** - nelle stampe di *Scheda consegna D.P.I.* e *Scheda reso D.P.I.*.   
+Los datos presentes en esta gestión se utilizan para ofrecer información en las gestiones:  
+> **corsi base** - en los *dati di testata*;  
+> **corsi di formazione** - en los *dati di testata*;  
+> **consegne/resi d.p.i.** - en las impresiones de *Ficha de entrega de E.P.I. (Scheda consegna D.P.I.)* y *Ficha de devolución de E.P.I. (Scheda reso D.P.I.)*.  
 
-**Salvataggio dei Parametri gestione del personale**
+**Guardado de los parametri gestione del personale (Salvataggio dei Parametri gestione del personale)**
 
-Per poter memorizzare le informazioni modificate è necessario premere il pulsante **Salva**.   
+Para poder guardar la información modificada es necesario presionar el botón **salva**.  
 
-#### Campi specifici
-    
-> expander **Corsi di formazione**
->> **Tipo corso base**: *Tipo corso base* da proporre all'inserimento di un *Corso base*.   
->> **Tipo corso di formazione**: *Tipo corso di formazione* da proporre all'inserimento di una *Corso di formazione*.   
+#### Campos específicos (Campi specifici)
 
-> expander **Gestione D.P.I.**
->> **Nota corpo scheda consegna**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda consegna D.P.I.*.   
->> **Nota piè scheda consegna**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda consegna D.P.I.*.   
->> **Nota corpo scheda reso**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda reso D.P.I.*.   
->> **Nota piè scheda reso**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda reso D.P.I.*.   
+> expander **corsi di formazione**  
+>> **tipo corso base**: *Tipo de curso básico* a proponer para la inserción de un *corso base*.  
+>> **tipo corso di formazione**: *Tipo de curso de formación* a proponer para la inserción de un *corso di formazione*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> expander **gestione d.p.i.**  
+>> **nota corpo scheda consegna**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de entrega de E.P.I. (Scheda consegna D.P.I.)*.  
+>> **nota piè scheda consegna**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de entrega de E.P.I. (Scheda consegna D.P.I.)*.  
+>> **nota corpo scheda reso**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de devolución de E.P.I. (Scheda reso D.P.I.)*.  
+>> **nota piè scheda reso**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de devolución de E.P.I. (Scheda reso D.P.I.)*.  
+
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidad, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

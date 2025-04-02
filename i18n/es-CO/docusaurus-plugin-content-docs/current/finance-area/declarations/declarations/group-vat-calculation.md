@@ -1,12 +1,12 @@
 ---
-title: Liquidazione iva di gruppo
+title: liquidazione iva di gruppo
 sidebar_position: 4
 ---
 
-Da questa form è possibile calcolare le liquidazioni iva particolari e relative allo stato di GRUPPO IVA (sia quando la società in uso è la capogruppo, sia quando è aderente al gruppo e pertanto il saldo della sua liquidazione viene trasferito alla capogruppo)
+Desde este formulario es posible calcular las liquidaciones de IVA particulares y relacionadas con el estado de GRUPO IVA (tanto cuando la empresa en uso es la matriz, como cuando es parte del grupo y, por lo tanto, el saldo de su liquidación se transfiere a la matriz).
 
-Premendo il tasto NUOVO si inserisce una nuova liquidazione, In testata si inserisce l'anno ed il periodo di calcolo
+Al presionar el botón NUEVO (NUOVO), se inserta una nueva liquidación. En el encabezado se ingresan el año y el período de cálculo.
 
-Il calcolo acquisirà ed aggregherà tutti i risultati delle società aderenti al gruppo ("controllate") che dovranno essere inserite nella griglia e li totalizzerà sulla capogruppo.
+El cálculo adquirirá y agregará todos los resultados de las empresas adheridas al grupo ("controladas"), que deberán ser ingresadas en la cuadrícula, y los totalizará en la matriz.
 
-A questo punto eseguendo la LIPE con attivato l'apposito flag per il gruppo iva non saranno esposti i risultati dei totali iva a credi te debito ( che continuano a essere riferiti alle singole società), ma i totali dell0iva da versare o a credito trasferiti ed aggregati sulla società capogruppo.
+En este punto, al ejecutar el LIPE con el indicador correspondiente para el grupo de IVA activado, no se mostrarán los resultados de los totales de IVA a crédito y a débito (que continúan refiriéndose a las empresas individuales), sino los totales del IVA a pagar o a crédito transferidos y agregados a la empresa matriz.

@@ -1,18 +1,18 @@
 ---
-title: Tipi etichetta
+title: tipi etichetta
 sidebar_position: 52
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipi etichetta*.
+La tabla permite gestionar la codificación de las diferentes tipologías de *tipi etichetta*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi etichetta**
+**Búsqueda de tipi etichetta (Ricerca Tipi etichetta)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtrado y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi etichetta**
+**Inserción de tipi etichetta (Inserimento Tipi etichetta)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

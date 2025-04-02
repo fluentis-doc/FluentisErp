@@ -1,230 +1,229 @@
 ---
-title: Piano di controllo
+title: piano di controllo
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Nuovo piano di controllo** oppure è possibile eseguirla dalla **Ricerca Piani di controllo**.   
+La gestión se encuentra en la ruta **Calidad > Controles de artículo > Planes de control > Nuevo plan de control** o se puede realizar desde **Búsqueda de Planes de control**. 
 
+:::important ¿Para qué sirve? (A cosa serve)  
+En los Planes de control se catalogan todas las pruebas planificadas, verificaciones, mediciones necesarias y los valores a obtener para garantizar que los materiales y productos asociados se encuentren dentro de los límites de las propiedades requeridas.  
+A través de los Planes de control es posible predefinir los controles que se llevarán a cabo durante el ciclo de vida de un artículo: desde los controles en la aceptación de materiales, devoluciones de trabajo por encargo, hasta los controles durante el ciclo productivo de un artículo: antes, durante y después de la creación del producto.  
+Los Planes de control, al igual que las Fichas técnicas, pueden ser personalizables para Clientes y/o Proveedores. También en este documento se gestionan las revisiones y la trazabilidad entre los Planes de control deseados.  
+A cada prueba planificada es posible indicar: si la prueba se realiza internamente o por terceros, la categoría y el instrumento de medida a utilizar, los tipos de valor requeridos (Sí/No o Numéricos), el valor nominal, los límites inferior y superior que se pueden especificar en porcentaje o en valor absoluto, el número de mediciones a realizar y con qué frecuencia.  
 
-:::important A cosa serve
-Nei Piani di controllo si catalogano tutte le prove pianificate, verifiche, misurazioni necessarie ed i valori da ottenere per garantire che materiali e prodotti associati rientrino nei limiti delle proprietà richieste.   
-Tramite i Piani di controllo è possibile predefinire i controlli da effettuare durante il ciclo di vita di un articolo: dai controlli in accettazione materiali, rientri da conto lavoro, ai controlli durante il ciclo produttivo di un articolo: prima, durante e successivamente alla creazione del prodotto.
-I Piani di controllo, così come le Schede tecniche, possono essere personalizzabili per Cliente e/o Fornitore. Anche in questo documento vengono gestite le revisioni e la rintracciabilità tra Piani di controllo desiderati.   
-Ad ogni prova pianificata è possibile indicare: se la prova viene effettuata internamente o presso terzi, la categoria e lo strumento di misura da utilizzare, i tipi di valore richiesti (Si/No o Numerici), il valore nominale, i limiti inferiore e superiore specificabili in percentuale o in valore assoluto, il numero di misurazioni da effettuare e con quale frequenza.   
+Enumeramos algunos ejemplos de tipos de Planes de control posibles: Controles en aceptación, Controles en aceptación para proveedores críticos, Controles de producción, Pruebas finales.  
 
-Elenchiamo alcuni esempi di tipologie di Piani di controllo possibili: Controlli in accettazione, Controlli in accettazione per fornitori critici, Controlli di produzione, Collaudi finali.   
-
-A standard è disponibile la reportistica di: **Piano di controllo**.   
+A estándar está disponible la reportística de: **piano di controllo**.  
 :::
 
 
-## Pulsanti di comando
+## Botones de comando
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Guardar (Salva)
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Piano di controllo* visualizzato.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica Piano di controllo
-
-E' possibile duplicare il *Piano di controllo* visualizzato in un nuovo *Piano di controllo*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> Viene proposto il *Tipo piano di controllo* del *Piano di controllo* di origine.   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio).   
-> Viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, del *Piano di controllo* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Piani di controllo correlati*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
+Al pulsar este botón se almacenan toda la información modificada del *piano di controllo* visualizado.   
 
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+### ![](/img/neutral/common/duplicate.png) Duplicar piano di controllo (Duplica Piano di controllo)
 
-Per poter creare una nuova *Revisione* ad un *Piano di controllo* esistente è necessario premere il pulsante **Crea nuova edizione**.   
-Viene creato nuovo *Piano di controllo*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.
-Il *Piano di controllo* di origine finisce la sua validità impostando automaticamente la *Data fine validità* pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* del *Piano di controllo* viene visualizzata.
+Es posible duplicar el *piano di controllo* visualizado en un nuevo *piano di controllo*. Solo es necesario pulsar el botón **duplica**.  
+Se muestra una solicitud de:  
+> **tipo piano di controllo**: es el *Tipo de plan de control* del nuevo *piano di controllo* (dato obligatorio).  
+> Se propone el *Tipo de plan de control* del *piano di controllo* de origen.  
+> **numero**: es el *Número* progresivo del nuevo *piano di controllo* (dato obligatorio).  
+> Se propone según lo indicado por la *Numeración* asociada al *Tipo de plan de control* y la fecha actual.  
+> **duplica con rintracciabilità**: indica si se desea mantener la relación/ trazabilidad del *piano di controllo* de destino en el *piano di controllo* de origen y, en particular, en la pestaña *Planes de control relacionados*.  
 
-
-### Crea nuova Scheda tecnica
-
-Dal *Piano di controllo* è possibile creare una *Scheda tecnica*; per fare ciò è necessario premere il pulsante **Crea nuova Scheda tecnica**.   
-Viene creata nuova *Scheda tecnica*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* del *Piano di controllo* di origine (solo se è di *Tipo conto cliente*).   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Rev.**: è l'indice di *Revisione* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto a *zero*.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Schede correlate*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Luego presionar el botón **OK** o el botón **cancel** si se desea continuar con la actividad de duplicación o no.  
+Al finalizar el procesamiento, el nuevo *piano di controllo* se visualizará.   
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica prova
+### ![](/img/neutral/common/execute.png) Crear nueva revisión (Crea nuova revisione)
 
-Contestuale al tabulatore *Prove pianificate* il pulsante è abilitato solamente se, dall'elenco *Prove pianificate*, è stata selezionata una sola riga *Prova*.
-Tutte la informazioni della *Prova pianificate* di origine vengono duplicate in una nuova *Prova pianificate* accodata in *Sequenza* alle *Prove pianificate* già esistenti.
+Para poder crear una nueva *Revisión* a un *piano di controllo* existente, es necesario pulsar el botón **crea nuova edizione**.  
+Se crea un nuevo *piano di controllo*, con toda la información del *piano di controllo* de origen pero con el índice de *Revisión* incrementado y la *Fecha de inicio de validez* igual a la fecha actual.  
+El *piano di controllo* de origen termina su validez al establecer automáticamente la *Fecha de fin de validez* igual a la fecha actual.  
+Al finalizar el procesamiento, la nueva *Revisión* del *piano di controllo* se visualizará.
 
 
-## Gestione dati
+### Crear nueva Ficha técnica (Crea nuova Scheda tecnica)
+
+Desde el *piano di controllo* es posible crear una *Ficha técnica*; para ello es necesario pulsar el botón **Crear nueva Ficha técnica (Crea nuova Scheda tecnica)**.  
+Se crea una nueva *Ficha técnica*, con toda la información del *piano di controllo* de origen pero con el índice de *Revisión* igual a *cero* y con *Fecha de inicio de validez* igual a la fecha actual. Se mostrará una solicitud de:  
+> **tipo scheda**: es el *Tipo de ficha* de la nueva *Ficha técnica* (dato obligatorio).  
+> **del cliente**: es el *Cliente* de la nueva *Ficha técnica*, se propone el número de *Cliente* del *piano di controllo* de origen (solo si es de *Tipo número de cliente*).  
+> **nuovo codice**: es el *Código* de la nueva *Ficha técnica* (dato obligatorio), se propone según lo indicado por el *Método de Codificación* asociado al *Tipo ficha técnica*.  
+> **rev.**: es el índice de *Revisión* de la nueva *Ficha técnica* (dato obligatorio), se propone a *cero*.  
+> **crea mantenendo la rintracciabilità**: indica si se desea mantener la relación/ trazabilidad, en la *Ficha técnica* de destino, en el *piano di controllo* de origen y en particular en la pestaña *Fichas relacionadas*.  
+
+Luego presionar el botón **OK** o el botón **cancel** si se desea continuar con la actividad de creación o no.  
+Al finalizar el procesamiento, la nueva *Ficha técnica* se visualizará.   
 
 
-### Dati di testata
+### ![](/img/neutral/common/duplicate.png) Duplicar prueba (Duplica prova)
 
-Le informazioni gestibili sono:   
-> **Tipo**: è il *Tipo piano di controllo* (dato obbligatorio).   
-> All'inserimento manuale di un nuovo *Piano di controllo* viene proposto il *Tipo piano di controllo* indicato nell'expander *Piani di controllo* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+Contextualmente en la pestaña *Pruebas planificadas*, el botón está habilitado solamente si, de la lista *Pruebas planificadas*, se ha seleccionado una sola línea de *Prueba*.  
+Toda la información de la *Prueba planificada* de origen se duplica en una nueva *Prueba planificada* añadiéndose en *Secuencia* a las *Pruebas planificadas* ya existentes.
+
+
+## Gestión de datos
+
+
+### Datos de cabecera
+
+Las informaciones manejables son:  
+> **tipo**: es el *Tipo de plan de control* (dato obligatorio).  
+> Al ingresar manualmente un nuevo *piano di controllo* se propone el *Tipo de plan de control* indicado en el expansor *Planes de control* de la pestaña *General* presente en los *Parámetros de Control de artículos*.  
 >
-> **Anno/Numero**: sono l'*Anno* e *Numero* del *Piano di controllo* (dati obbligatori).   
-> All'inserimento di un nuovo *Piano di controllo* l'*Anno* e il *Numero* vengono proposti in base alla data odierna e alla *Numerazione* associata al *Tipo piano di controllo*.   
+> **Año/Número (Anno/Numero)**: son el *Año* y *Número* del *piano di controllo* (datos obligatorios).  
+> Al ingresar un nuevo *piano di controllo*, el *Año* y el *Número* se proponen según la fecha actual y la *Numeración* asociada al *Tipo de plan de control*.  
 >
-> **Rev.**: è la Revisione del *Piano di controllo* (dato obbligatorio).   
-L'informazione è modificabile se si stà creando un nuovo *Piano di controllo* altrimenti è di sola lettura; si può variare in modo pilotato dal sistema usando il pulsante *Crea nuova revisione* che incrementano il precedente valore di *Revisione* di una unità.   
+> **rev.**: es la Revisión del *piano di controllo* (dato obligatorio).  
+La información es modificable si se está creando un nuevo *piano di controllo*; de lo contrario, es de solo lectura; se puede variar de forma controlada por el sistema usando el botón *Crear nueva revisión* que incrementa el valor anterior de *Revisión* en una unidad.  
 >
-> **Descrizione**: è la descrizione del *Piano di controllo*.   
-> **Per il cliente/fornitore**: è la ragione sociale del *Cliente* o *Fornitore*. Le *Prove pianificate* sono personalizzate per il *Cliente* o *Fornitore* e *Articoli associati*.    
-> **Note del cliente/fornitore**: annotazioni libere per il cliente/fornitore.   
+> **descrizione**: es la descripción del *piano di controllo*.  
+> **per il cliente/fornitore**: es la razón social del *Cliente* o *Proveedor*. Las *Pruebas planificadas* son personalizadas para el *Cliente* o *Proveedor* y *Artículos asociados*.    
+> **note del cliente/fornitore**: anotaciones libres para el cliente/proveedor.  
 >
-> **Specifica del cliente**: expander dove è possibile inserire:   
+> **specifica del cliente**: expansor donde es posible ingresar:  
 >
->> **Data specifica**: e la data della specifica ricevuta dal cliente.    
->> **Riferimento**: annotazioni libere sul riferimento alla specifica ricevuta dal cliente che richiede controlli specifici da effettuare per gli *Articoli associati*.   
->> **Data scadenza**: e la data di fine validità della specifica ricevuta dal cliente.    
->> **Note**: annotazioni libere relative alla specifica ricevuta dal cliente.   
+>> **data specifica**: es la fecha de la especificación recibida del cliente.  
+>> **riferimento**: anotaciones libres sobre la referencia a la especificación recibida del cliente que requiere controles específicos a realizar para los *Artículos asociados*.  
+>> **data scadenza**: es la fecha de fin de validez de la especificación recibida del cliente.  
+>> **note**: anotaciones libres relacionadas con la especificación recibida del cliente.  
 >
-> **Data richiesta/Richiesta da**: solo i riferimenti in quale data e qual'è la persona che ha richiesto la creazione del *Piano di controllo*.    
+> **Fecha solicitada/Solicitado por (Data richiesta/Richiesta da)**: solo los referentes en qué fecha y quién es la persona que ha solicitado la creación del *piano di controllo*.    
 >
-> **Validità: Inizio/Fine**: sono le date di inizio e di fine validità del *Piano di controllo*.    
-> Le date sono gestite automaticamente alla creazione di una nuova *Revisione* del *Piano di controllo*.
+> **Validez: Inicio/Fini (Validità: Inizio/Fine)**: son las fechas de inicio y fin de validez del *piano di controllo*.    
+> Las fechas se gestionan automáticamente al crear una nueva *Revisión* del *piano di controllo*. 
 >
-> **Responsabile**: è il *Dipendente* responsabile del *Piano di controllo*.   
-> All'inserimento manuale di un nuovo *Piano di controllo* viene proposto il *Responsabile* indicato nell'expander *Piani di controllo* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+> **responsabile**: es el *Empleado* responsable del *piano di controllo*.  
+> Al ingresar manualmente un nuevo *piano di controllo*, se propone el *Responsable* indicado en el expansor *Planes de control* de la pestaña *General* presente en los *Parámetros de Control de artículos*.  
 >
-> **Note**: annotazioni libere.   
+> **note**: anotaciones libres.  
 >
-> **Origine piano di controllo**: expander dove è possibile inserire:   
+> **origine piano di controllo**: expansor donde es posible ingresar:  
 >
->> **Scheda origine**: contiene i riferimenti della *Scheda tecnica di origine* (*Tipo scheda*, *Codice* e *Revisione*).   
->> **Piano di controllo**: contiene i riferimenti del *Piano di controllo di origine* (*Tipo piano*, *Anno*, *Numero* e *Revisione*).   
->> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione.   
->> L'informazione può essere variata se il *Piano di controllo* è ancora in corso di validità.   
+>> **scheda origine**: contiene los referentes de la *Ficha técnica de origen* (*Tipo ficha*, *Código* y *Revisión*).  
+>> **piano di controllo**: contiene los referentes del *piano di controllo de origen* (*Tipo plan*, *Año*, *Número* y *Revisión*).  
+>> **motivo della revisione**: una breve descripción del motivo que ha llevado a la revisión.  
+>> La información puede ser modificada si el *piano di controllo* aún está en curso de validez.   
 
 
-### Attributi piano di controllo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Piano di controllo*.   
-Vengono ereditati dagli *Extra data* associati al *Tipo piano di controllo*.   
+### Atributos del plan de control
+Es posible ingresar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *piano di controllo*.   
+Se heredan de los *Datos adicionales* asociados al *Tipo de plan de control*.   
 
 
-### Prove pianificate
-Contiene le *Prove pianificate* degli *Articoli* o *Attributi articolo* del *Piano di controllo*.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della *Prove pianificate*.   
-> **Tipo prova**: è il codice della *Prova pianificata*.   
-> **Descrizione tipo prova**:  è la descrizione della *Prova pianificata*. L'informazione è di sola lettura.   
-> **Descrizione**: è la descrizione della *Prova pianificata* compilabile.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
-> **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Categoria Strumento di misura**: è la *Categoria dello strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Prova*.   
-> **Strumento di misura**: è lo *Strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Prova*.   
-> **Unità di misura**: è l'*Unità di misura* con cui si esprimono il *Valore nominale* e i *Limiti minimo e massimo* se espressi in valore e non in percentuale.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Prova pianificata*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Tipo controllo prova**: è il *Tipo controllo* da effettuare sulla *Prova pianificata*.   
-> **Frequenza**: annotazioni libere relative alla frequenza di campionatura.   
-> **Numero rilevazioni**: è il numero di rilevazioni valori minime suggerite da effettuare.   
-> **Data inizio validità**: è la data di inizio validità della *Prova pianificata*.   
-> **Data fine validità**: è la data di fine validità della *Prova pianificata*.   
-> **Stampato**: indica se le informazioni sono stampabili o meno nel report: *Piano di controllo*.   
-> **Note**: annotazioni libere.   
-> **Descrizione Categoria Strumento di misura**: è la *Descrizione Categoria dello strumento di misura* da utilizzare. L'informazione è di sola lettura.   
-> **Descrizione Strumento di misura**: è lo *Descrizione Strumento di misura* da utilizzare. L'informazione è di sola lettura.   
+### Pruebas planificadas
+Contiene las *Pruebas planificadas* de los *Artículos* o *Atributos de artículo* del *piano di controllo*.  
+La lista se compone de la siguiente información:  
+> **sequenza**: es la secuencia de ejecución de la *Prueba planificada*.   
+> **tipo prova**: es el código de la *Prueba planificada*.   
+> **descrizione tipo prova**: es la descripción de la *Prueba planificada*. La información es de solo lectura.   
+> **descrizione**: es la descripción de la *Prueba planificada* que se puede completar.   
+> **riferimento piano di controllo standard**: es un campo descriptivo que contiene los referentes a codificaciones de pruebas reconocidas globalmente.   
+> **prova interna**: indica si la *Prueba* se realiza internamente o en un laboratorio externo.   
+> **laboratorio esterno**: es la razón social del *Proveedor* que realizará la prueba. La información es de solo lectura si se indica la *Prueba interna*.   
+> **categoria strumento di misura**: es la *Categoría del instrumento de medida* a utilizar para poder registrar los *Valores* expresados en la *Prueba*.   
+> **strumento di misura**: es el *Instrumento de medida* a utilizar para poder registrar los *Valores* expresados en la *Prueba*.   
+> **unità di misura**: es la *Unidad de medida* con la que se expresan el *Valor nominal* y los *Límites mínimo y máximo* si se expresan en valor y no en porcentaje.   
+> **tipo valore**: es el *Tipo de valor* con el que expresar el *Valor nominal*; los *Tipos de valor* posibles son: *Numérico*, *Sí/No* o *Texto*.   
+> **tipo limite**: habilitado si el *Tipo de valor* es *Numérico*, es el *Tipo de límite* que guiará la habilitación de los *Límites* y los valores de *Tolerancia*.   
+> **valore nominale**: es el valor teórico esperado de la *Prueba planificada*.   
+> **limite minimo**: límite mínimo permitido respecto al *Valor nominal*.   
+> **toll-**: es el límite de tolerancia negativa sobre el límite mínimo.   
+> **toll+**: es el límite de tolerancia positiva sobre el límite mínimo.   
+> **limite massimo**: límite máximo permitido respecto al *Valor nominal*.   
+> **toll-**: es el límite de tolerancia negativa sobre el límite máximo.   
+> **toll+**: es el límite de tolerancia positiva sobre el límite máximo.   
+> **% (porcentaje)**: indica si el *Límite mínimo* y el *Límite máximo* se expresan en porcentaje.   
+> **tipo controllo prova**: es el *Tipo de control* a realizar sobre la *Prueba planificada*.   
+> **frequenza**: anotaciones libres relacionadas con la frecuencia de muestreo.   
+> **Número de mediciones (Numero rilevazioni)**: es el número de mediciones de valores mínimas sugeridas a realizar.   
+> **data inizio validità**: es la fecha de inicio de validez de la *Prueba planificada*.   
+> **data fine validità**: es la fecha de fin de validez de la *Prueba planificada*.   
+> **stampato**: indica si la información es imprimible o no en el reporte: *piano di controllo*.   
+> **note**: anotaciones libres.   
+> **Descripción de la Categoría del Instrumento de medida (Descrizione Categoria Strumento di misura)**: es la *Descripción de la categoría del instrumento de medida* a utilizar. La información es de solo lectura.   
+> **descrizione strumento di misura**: es la *Descripción del instrumento de medida* a utilizar. La información es de solo lectura.   
 
 
-#### Attributi prova pianificata
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Prova pianificata*.   
-Vengono ereditati dagli *Attributi tipo prova* presenti nei *Tipi prova*.   
+#### Atributos de prueba planificada
+Es posible ingresar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *Prueba planificada*.   
+Se heredan de los *Atributos del tipo de prueba* presentes en los *Tipos de prueba*.   
 
 
-#### Configurazione della prova
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Vengono ereditati dai *Parametri di configurazione prova e strumento di misura* presenti nei *Tipi prova*.   
+#### Configuración de la prueba
+Contiene los [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) necesarios para que los operadores preparen todos los instrumentos necesarios para poder iniciar una determinada prueba. Pueden considerarse configuraciones necesarias, información operativa previa a la ejecución de la prueba.  
+Se heredan de los *Parámetros de configuración de prueba e instrumento de medida* presentes en los *Tipos de prueba*.   
 
 
-#### Funzioni di rilevamento ed approvazione
-E' un'attribuzione di diritti che elenca chi può rilevare e/o approvare i valori della prova.   
-Vengono ereditati dalle *Funzioni di rilevamento ed approvazione* presenti nei *Tipi prova*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Tipo attività**: è il diritto dato alla *Funzione aziendale* durante le attività di rilevamento e/o approvazione di una prova. I valori possibili sono:   
-> - *Può rilevare* - la *Funziona aziendale* ha i permessi di sola rilevazione dei valori;   
-> - *Può approvare* - la *Funziona aziendale* ha i permessi di sola approvazione della prova;   
-> - *Può rilevare e approvare* - la *Funziona aziendale* ha i permessi di rilevazione dei valori e approvazione della prova.   
+#### Funciones de detección y aprobación
+Es una atribución de derechos que enumera quién puede detectar y/o aprobar los valores de la prueba.   
+Se heredan de las *Funciones de detección y aprobación* presentes en los *Tipos de prueba*.   
+La lista se compone de la siguiente información:  
+> **funzione**: es el código de la *Función empresarial*.   
+> **descrizione funzione**: es la descripción de la *Función empresarial*.   
+> **tipo attività**: es el derecho otorgado a la *Función empresarial* durante las actividades de detección y/o aprobación de una prueba. Los valores posibles son:  
+> - *Puede detectar* - la *Función empresarial* tiene permisos de solo detección de los valores;  
+> - *Puede aprobar* - la *Función empresarial* tiene permisos de solo aprobación de la prueba;  
+> - *Puede detectar y aprobar* - la *Función empresarial* tiene permisos de detección de valores y aprobación de la prueba.   
 >
-> Le altre *Funzioni aziendali* non elencate non hanno alcun diritto di rilevazione valori e approvazione della prova.   
-> Se non vengono specificate *Funzioni aziendali* tutti gli operatori potranno rilevare valori e approvare la prova.
+> Otras *Funciones empresariales* no listadas no tienen ningún derecho de detección de valores y aprobación de la prueba.   
+> Si no se especifican *Funciones empresariales*, todos los operadores podrán detectar valores y aprobar la prueba.  
 >
-> **Note**: annotazioni libere.
+> **note**: anotaciones libres.
 
 
-#### Documenti allegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+#### Documentos adjuntos (Documenti allegati)
+En esta lista es posible insertar y consultar posibles anexos; se puede visualizar la vista previa.   
 
 
-### Clienti/Fornitori
-Contiene i *Clienti*/*Fornitori* per i quali effettuare le *Prove pianificate* agli *Articoli associati*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Cliente/Fornitore**: è la ragione sociale del *Cliente* o "Fornitore". Le *Proprietà* sono personalizzate per i *Clienti*/*Fornitori*/*Articoli associati*.   
-> **Data specifica**: e la data della specifica ricevuta dal cliente.    
-> **Riferimenti specifica**: annotazioni libere sul riferimento alla specifica ricevuta dal cliente che richiede controlli specifici da effettuare per gli *Articoli associati*.   
-> **Nota specifica**: annotazioni libere relative alla specifica ricevuta dal cliente.   
-> **Note**: annotazioni libere.   
+### Clientes/Proveedores
+Contiene los *Clientes*/*Proveedores* para los cuales realizar las *Pruebas planificadas* a los *Artículos asociados*.  
+La lista se compone de la siguiente información:  
+> **cliente/fornitore**: es la razón social del *Cliente* o "Proveedor". Las *Propiedades* están personalizadas para los *Clientes*/*Proveedores*/*Artículos asociados*.   
+> **data specifica**: es la fecha de la especificación recibida del cliente.    
+> **Referencias de la especificación (Riferimenti specifica)**: anotaciones libres sobre la referencia a la especificación recibida del cliente que requiere controles específicos a realizar para los *Artículos asociados*.  
+> **nota specifica**: anotaciones libres relacionadas con la especificación recibida del cliente.   
+> **note**: anotaciones libres.   
 
 
-### Articoli associati
-Contiene gli *Articoli* con caratteristiche simili ed elencate nell'elenco delle *Prove pianificate*.
-L'elenco si compone delle seguenti informazioni:   
-> **Classe**: è la classe dell'*Articolo*.   
-> **Codice articolo**: è il codice dell'*Articolo*.   
-> **Descrizione articolo**: è la descrizione dell'*Articolo*.   
-> **Variante**: è il codice della *Variante articolo*.   
-> **Descrizione variante**: è la descrizione della *Variante articolo*. L'informazione è di sola lettura.   
-> **Fornitore**: è la ragione sociale del *Fornitore* che consegna l'*Articolo* per il quale verranno attivate le *Prove pianificate*.   
-> **Note**: annotazioni libere.   
+### Artículos asociados
+Contiene los *Artículos* con características similares y listados en la lista de *Pruebas planificadas*.  
+La lista se compone de la siguiente información:  
+> **classe**: es la clase del *Artículo*.   
+> **codice articolo**: es el código del *Artículo*.   
+> **descrizione articolo**: es la descripción del *Artículo*.   
+> **variante**: es el código de la *Variante de artículo*.   
+> **descrizione variante**: es la descripción de la *Variante de artículo*. La información es de solo lectura.   
+> **fornitore**: es la razón social del *Proveedor* que entrega el *Artículo* para el cual se activarán las *Pruebas planificadas*.   
+> **note**: anotaciones libres.   
 
 
-### Attributi articolo
-In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata)) per cui le *Prove pianificate* del *Piano di controllo* sono valide.   
+### Atributos del artículo
+Alternativamente a la lista de los *Artículos asociados*, es posible ingresar características (en formato [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata)) por las cuales las *Pruebas planificadas* del *piano di controllo* son válidas.   
 
 
-### Schede correlate
-In questo elenco è possibile visualizzare le *Schede tecniche* create con rintracciabilità dal *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Scheda tecnica* selezionata.   
+### Fichas relacionadas
+En esta lista es posible visualizar las *Fichas técnicas* creadas con trazabilidad desde el *piano di controllo* visualizado.  
+A través de un doble clic del mouse en la fila deseada, es posible gestionar la *Ficha técnica* seleccionada.   
 
 
-### Piani di controllo correlati
-In questo elenco è possibile visualizzare i *Piani di controllo* duplicati con rintracciabilità dal *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione del *Piano di controllo* selezionato.   
+### Planes de control relacionados
+En esta lista es posible visualizar los *Planes de control* duplicados con trazabilidad desde el *piano di controllo* visualizado.  
+A través de un doble clic del mouse en la fila deseada, es posible gestionar el *piano di controllo* seleccionado.   
 
 
-### Revisioni
-In questo elenco è possibile visualizzare lo storico delle *Revisioni* antecedenti al *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Piano di controllo* selezionato.   
+### Revisiones
+En esta lista es posible visualizar el historial de las *Revisiones* anteriores al *piano di controllo* visualizado.  
+A través de un doble clic del mouse en la fila deseada, es posible gestionar el *piano di controllo* seleccionado.   
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Documentos vinculados
+En esta lista es posible insertar y consultar posibles anexos; se puede visualizar la vista previa.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,11 +1,10 @@
 ---
-title: Campi, funzionalità e pulsanti comuni
+title: Campos, funcionalidades y botones comunes (Campi, funzionalità e pulsanti comuni)
 sidebar_position: 4
---- 
+---
 
+Detalles comunes a los formularios en:
 
-Dettagli comuni alle form in:
-
-- [Campi comuni](/docs/guide/common/glossary/glossary-intro).  
-- [Funzionalità comuni](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
-- [Pulsanti comuni](/docs/guide/common/common-buttons).
+- [Campos comunes (Campi comuni)](/docs/guide/common/glossary/glossary-intro).  
+- [Funcionalidades comunes (Funzionalità comuni)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
+- [Botones comunes (Pulsanti comuni)](/docs/guide/common/common-buttons).

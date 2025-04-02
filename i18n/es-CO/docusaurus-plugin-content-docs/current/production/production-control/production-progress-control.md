@@ -1,16 +1,15 @@
 ---
-title: Verifica avanzamento di produzione
+title: Verificación del avance de producción (Verifica avanzamento di produzione)
 sidebar_position: 1
 ---
 
-Questa form consente di stampare il report **Verifica avanzamento di produzione** che per ogni ordine di produzione mostra lo stato di avanzamento delle singole fasi tramite una *barra di avanzamento*, in base al tempo o alla quantità prodotta.
+Este formulario permite imprimir el informe **Verificación del avance de producción (Verifica avanzamento di produzione)** que para cada orden de producción muestra el estado de avance de las distintas fases a través de una *barra de progreso*, en función del tiempo o la cantidad producida.
 
-Nel report è presente un campo *Stato* che indica lo stato della fase tramite un quadratino colorato con il seguente significato:
+En el informe hay un campo *stato* que indica el estado de la fase mediante un cuadrado de color con el siguiente significado:
 
-- **Verde**: indica che la fase non è in ritardo;       
-- **Rosso**: indica che la fase è in ritardo;        
-- **Grigio**: indica che la fase è evasa.
+- **verde**: indica que la fase no está atrasada;  
+- **rosso**: indica que la fase está atrasada;  
+- **Gris (Grigio)**: indica que la fase ha sido completada (evasa).
 
-La **Percentuale di avanzamento** della fase nel grafico, viene calcolata sulla base della somma delle quantità prodotte e scartate nelle dichiarazioni di produzione, oppure sulla base del valore maggiore tra la somma dei tempi macchina e la somma dei tempi manodopera. L'utente, può scegliere il criterio di valorizzazione della **Percentuale di avanzamento** tramite gli appositi flag presenti nel box *Previsione fine lavori* del filtro del report.       
-Nel caso in cui la **Percentuale di avanzamento** superi il 100 % verrà mostrato, accanto al grafico, un *Triangolino rosso* che indica appunto il superamento del valore preventivato.
-
+El **Porcentaje de avance (Percentuale di avanzamento)** de la fase en el gráfico se calcula en función de la suma de las cantidades producidas y desechadas en las declaraciones de producción, o bien en función del valor mayor entre la suma de los tiempos de máquina y la suma de los tiempos de mano de obra. El usuario puede seleccionar el criterio de valorización del **Porcentaje de avance (Percentuale di avanzamento)** a través de los indicadores disponibles en el cuadro *previsione fine lavori* del filtro del informe.  
+En el caso de que el **Porcentaje de avance (Percentuale di avanzamento)** supere el 100%, se mostrará, junto al gráfico, un *Triángulo rojo (Triangolino rosso)* que indica precisamente el sobrepase del valor presupuestado.

@@ -1,6 +1,6 @@
 ---
-title: Document Manager
+title: document manager
 sidebar_position: 4
 ---
 
-Vedi i dettagli su [Document manager](/docs/guide/common/operations-with-data/document-manager).
+Consulta los detalles sobre [document manager (Document manager)](/docs/guide/common/operations-with-data/document-manager).

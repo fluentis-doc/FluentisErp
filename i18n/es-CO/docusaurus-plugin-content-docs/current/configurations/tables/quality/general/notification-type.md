@@ -1,31 +1,31 @@
 ---
-title: Mezzi di notifica
+title: mezzi di notifica
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Mezzi di notifica**.
+La tabla se encuentra en la ruta **mezzi di notifica**.
 
-In questa tabella è possibile codificare i metodi utilizzati per la ricezione o l'invio di documenti.   
-Alcuni esempi di utilizzo dei *Mezzi di notifica* li troviamo nelle gestioni:
-> **Categorie documenti e Documenti di origine esterna** - nel tabulatore *liste di distribuzione*;   
-> **Categorie documenti e Documenti di origine interna** - nel tabulatore *liste di distribuzione*;   
-> **Reclami** - nel tabulatore *Testata*.
+En esta tabla es posible codificar los métodos utilizados para la recepción o el envío de documentos.  
+Algunos ejemplos de uso de los *mezzi di notifica* se encuentran en las gestiones:  
+> **Categorías de documentos y Documentos de origen externo (Categorie documenti e Documenti di origine esterna)** - en la pestaña *liste di distribuzione*;  
+> **Categorías de documentos y Documentos de origen interno (Categorie documenti e Documenti di origine interna)** - en la pestaña *liste di distribuzione*;  
+> **reclami** - en la pestaña *testata*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Mezzi di notifica**
+**Búsqueda de mezzi di notifica (Ricerca Mezzi di notifica)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultado. Una vez configurados todos los filtros deseados, bastará con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Mezzi di notifica**
+**Inserción de mezzi di notifica (Inserimento Mezzi di notifica)**
 
-Per poter inserire nuovi *Mezzi di notifica* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *mezzi di notifica*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*: 
 
-> **Codice**: è il codice del *Mezzo di notifica*.   
-> **Descrizione mezzo di notifica**: è la descrizione del *Mezzo di notifica*.   
-> **Note**: annotazioni libere.
+> **codice**: es el código del *Medio de notificación*.  
+> **descrizione mezzo di notifica**: es la descripción del *Medio de notificación*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

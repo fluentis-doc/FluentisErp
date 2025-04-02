@@ -1,1 +1,1 @@
-- **Quantità**: rappresenta la quantità dell'U.M. principale e di default ha il valore 1; può essere modificata manualmente oppure può essere ripresa dal documento considerato per l'evasione.
+- **quantità**: representa la cantidad de la U.M. principal y por defecto tiene el valor 1; puede ser modificada manualmente o puede ser tomada del documento considerado para el cumplimiento.

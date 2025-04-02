@@ -1,63 +1,60 @@
 ---
-title: Sequenza Fasi - TopDown grid
+title: sequenza fasi - topdown grid
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La procedura di **Sequenza fasi** in Fluentis, tramite la funzionalità "Sequenza Fasi - TopDown grid", consente di ottimizzare la gestione delle fasi di produzione assemblando sequenze manuali o basate su regole personalizzate.      
-Dopo un'accurata selezione dei filtri, tra cui centro di lavoro, periodo d'ordine e commessa, le fasi non ancora ordinate sono elencate in una griglia superiore. Da qui, le fasi vengono spostate nella griglia inferiore per attribuire una sequenza.      
-La form include strumenti per modificare dati associati alle fasi, calcolare tempi e aggiornare date, garantendo un preciso controllo sulla pianificazione della produzione. Pulsanti specifici facilitano il calcolo delle sequenze, la gestione delle giacenze e l'aggiornamento dello stato degli ordini, assicurando un flusso produttivo efficiente.
+:::important ¿Para qué sirve? (A cosa serve)
+El procedimiento de **sequenza fasi** en Fluentis, a través de la funcionalidad "sequenza fasi - topdown grid", permite optimizar la gestión de las fases de producción ensamblando secuencias manuales o basadas en reglas personalizadas.   
+Después de una cuidadosa selección de filtros, que incluyen centro de trabajo, período de pedido y orden, las fases no ordenadas se enumeran en una cuadrícula superior. Desde aquí, las fases se mueven a la cuadrícula inferior para asignarles una secuencia.    
+El formulario incluye herramientas para modificar los datos asociados a las fases, calcular tiempos y actualizar fechas, garantizando un control preciso sobre la planificación de la producción. Botones específicos facilitan el cálculo de las secuencias, la gestión de existencias y la actualización del estado de los pedidos, asegurando un flujo productivo eficiente.
 :::
 
-Dà la possibilità di sequenziare le fasi manualmente o secondo regole decise dall’operatore.
+Permite secuenciar las fases manualmente o de acuerdo con reglas decididas por el operador.
 
-La form si compone di una prima area di filtro dove è possibile selezionare:
-> **Centro di lavoro**       
-> **Macchina**        
-> **Da data inizio ordine**         
-> **A data fine ordine**      
-> **Commessa di produzione**     
+El formulario consta de un área de filtro donde es posible seleccionar:
+> **centro di lavoro**        
+> **macchina**        
+> **da data inizio ordine**        
+> **a data fine ordine**       
+> **commessa di produzione**     
 
-Espandendo quest'area è possibile filtrare, ad esempio, anche per *Articolo*, *Sequenza*, *Tipo commessa produzione*, *Gruppi manodopera*, inoltre vi è anche la possibilità di scegliere le tipologie di ordini da visualizzare tra ordini pianificati, ordini di produzione in stato lanciato e/o esecutivo.
+Al expandir esta área, es posible filtrar, por ejemplo, también por *articolo*, *sequenza*, *tipo commessa produzione*, *gruppi manodopera*; además, también hay la posibilidad de elegir los tipos de pedidos a visualizar entre pedidos planificados, pedidos de producción en estado lanzado y/o ejecutivo.
 
-La parte centrale della form è costituita da due griglie.           
-La prima presenta tutte le fasi di lavorazioni alle quali non è ancora stata data una sequenza. Quindi selezionando una fase o più fasi dalla prima griglia e premendo il pulsante *Spostare fasi*, queste vengono spostate nella seconda griglia (sottostante) dove sarà poi possibile attribuire una sequenza manualmente o automaticamente.          
+La parte central del formulario está constituida por dos cuadrículas.    
+La primera presenta todas las fases de trabajo a las que aún no se les ha dado una secuencia. Por lo tanto, al seleccionar una o más fases de la primera cuadrícula y presionar el botón *spostare fasi*, estas se trasladan a la segunda cuadrícula (inferior), donde luego será posible asignar una secuencia manual o automáticamente.         
 
 :::note Nota
-Non è possibile modificare le informazioni di una fase già dichiarata in produzione.
+No es posible modificar la información de una fase ya declarada en producción.
 :::
 
-Nella parte inferiore della form sono presenti i seguenti campi:
-> **Quantità impegno**: riporta il totale delle quantita impegno delle righe selezionate dall'utente;         
-> **Unità di misura Tempi**: indica l'unità di misura del tempo con la quale si vuole visualizzare il valore presente in **Totale tempo**;     
-> **Totale tempo**: riporta il totale del tempo (Tempo macchina + Tempo manodopera + Tempo attrezzaggio) delle righe selezionate dall'utente.
+En la parte inferior del formulario se encuentran los siguientes campos:
+> **quantità impegno**: indica el total de las cantidades de compromiso de las líneas seleccionadas por el usuario;         
+> **unità di misura tempi**: indica la unidad de medida del tiempo con la que se quiere visualizar el valor presente en **totale tempo**;     
+> **totale tempo**: indica el total del tiempo (Tiempo de máquina + Tiempo de mano de obra + Tiempo de preparación) de las líneas seleccionadas por el usuario.
 
-Inoltre, espandendo questa parte vengono visualizzati in sola lettura i dati di dettaglio relativi a:
-> **Quantità**
-> **Tempo manodopera**
-> **Tempo macchina**
-> **Tempo attrezzaggio**
+Además, al expandir esta parte, se visualizan en solo lectura los datos de detalle relacionados con:
+> **quantità**  
+> **tempo manodopera**  
+> **tempo macchina**  
+> **tempo attrezzaggio**  
 
-*Pulsanti specifici*:  
+*Botones específicos*:  
 
-> **Ricerca**: permette di visualizzare le fasi in base ai filtri inseriti;           
-> **Ricerca e considera giacenze**: effettua la stessa funzione del pulsante **Ricerca**, ma, allo stesso tempo, permette di visualizzare in rosso tutte le fasi dove non c'è giacenza disponibile ad oggi;                   
-> **Spostare fasi**: permette di spostare la o le fasi selezionate dalla prima griglia alla seconda griglia dove sarà poi possibile assegnare una sequenza;         
-> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionando la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
-> **Cambia ciclo/Versione**: permette di variare ciclo e / o versione in quell'ordine di produzione;            
-> **Cambio date**: permette di variare la data di inizio della fase selezionata;         
-permette di variare la *Data inizio* per tutti gli ordini pianificati o di produzione selezionati con la data indicata nel pop-up; successivamente in base alla fasi e al *Calendario capacità produttive* viene ricalcolata anche la *Data fine* ordine e le date inizio e fine di ciascuna fase. In base alle nuove date vengono anche ricalcolate le date di utilizzo dei materiali.
-Oltre ad aggiornare le date nell'ordine vengono aggiornate quelle nella commessa collegata;        
-> **Calcola tempo fase in base alla priorità**: permette di effettuare il ricalcolo dei tempi dopo aver assegnato la nuova sequenza oppure dopo aver variato qualche dato tramite la funziona **Cambia fasi**;          
-> **Calcolo ed inserimento sequenza di produzione**: dopo aver riordinato le righe della seconda griglia in base alla necessità, questo pulsante permette di dare una sequenza alle fasi che abbiamo selezionato in base all'ordinamento dato;       
-> **Ricalcola fattibilità**: la procedura calcolerà la fattibilità sui materiali e sulla fase precedente per le righe selezionate, applicando il colore nelle relative caselle *Fattibilità materiali* e *Fattibilità fase* presenti nella griglia inferiore in base a quanto definito nei [Parametri fabbisogno materiali](/docs/configurations/parameters/production/resource-requirements-parameters). Questo pulsante si abilita solo è stato attivato il flag **Sequenza fasi** nella sezione *Parametri calcolo fattibilità* dei [Parametri fabbisogno materiali](/docs/configurations/parameters/production/resource-requirements-parameters);          
-> **Dettaglio fattibilità materiali**: permette di aprire un pop up che evidenzia quali materiali siano disponibili e quali no per quella fase. Questo pulsante si abilita solo è stato attivato il flag **Considera materiali** nella sezione *Parametri calcolo fattibilità* dei [Parametri fabbisogno materiali](/docs/configurations/parameters/production/resource-requirements-parameters);      
-> **Dettaglio fattibilità fasi**: permette di aprire un pop up che evidenzia lo stato di avanzamento della fase precedente, visualizzando anche le eventuali dichiarazioni effettuate fino a quel momento. Questo pulsante si abilita solo è stato attivato il flag **Considera fasi precedenti** nella sezione *Parametri calcolo fattibilità* dei [Parametri fabbisogno materiali](/docs/configurations/parameters/production/resource-requirements-parameters);   
-viene aperto un pop up che evidenzia quali materiali abbiamo a disposizione e quali no per quella fase; mentre, tramite il pulsante dettaglio fattibilità fasi, è possibile capire lo stato di avanzamento della fase precedente, visualizzando anche le eventuali dichiarazioni effettuate fino a quel momento.
-> **Aggiornamento data merce pronta**: permette di aggiornare la *Data merce pronta* degli ordini cliente collegati con la *Data fine ordine*; 
-> **Rilascio ordini pianificati**: permette di rilasciare gli ordini pianificati di produzione in ordini di produzione per le fasi selezionate;                     
-> **Rilascio ordini**: permette di variare lo stato degli ordini di produzione da lanciato ad esecutivo della o delle fasi selezionate.         
-> **Espandi la dimensione della griglia**: permette di nascondere l'area di filtro della form per lavorare più agevolmente sulle griglie;         
-> **Doppia griglia**: permette di nascondere la prima griglia per poter lavorare più agevolmente sulla seconda.          
+> **ricerca**: permite visualizar las fases en función de los filtros ingresados;           
+> **Buscar y considerar existencias (Ricerca e considera giacenze)**: realiza la misma función que el botón **ricerca**, pero, al mismo tiempo, permite visualizar en rojo todas las fases donde no hay existencias disponibles hasta hoy;                   
+> **spostare fasi**: permite mover la o las fases seleccionadas de la primera cuadrícula a la segunda cuadrícula donde luego será posible asignar una secuencia;         
+> **cambia fasi**: una vez seleccionada una fase, este comando permite *aggiornare* la fase misma variando: fase, máquina, centro de trabajo, total del tiempo de máquina, del tiempo de operario y del tiempo de preparación. Además, al seleccionar la opción *inserisci* es posible añadir una nueva fase o, a través de la opción *cancella*, eliminarla de forma definitiva;            
+> **cambia ciclo/versione**: permite variar ciclo y/o versión en ese pedido de producción;            
+> **cambio date**: permite variar la fecha de inicio de la fase seleccionada; permite cambiar la *Fecha de inicio* para todos los pedidos planificados o de producción seleccionados con la fecha indicada en el pop-up; posteriormente, en función de las fases y del *Calendario de capacidades productivas*, también se recalculará la *Fecha de finalización* del pedido y las fechas de inicio y final de cada fase. En base a las nuevas fechas, también se recalcularán las fechas de uso de los materiales. Además de actualizar las fechas en el pedido, se actualizan las de la orden conectada;        
+> **calcola tempo fase in base alla priorità**: permite realizar el recalculo de los tiempos después de haber asignado la nueva secuencia o después de haber modificado algún dato mediante la función **cambia fasi**;          
+> **calcolo ed inserimento sequenza di produzione**: después de haber reorganizado las líneas de la segunda cuadrícula según la necesidad, este botón permite dar una secuencia a las fases que hemos seleccionado según el orden dado;       
+> **ricalcola fattibilità**: el procedimiento calculará la viabilidad sobre los materiales y sobre la fase anterior para las líneas seleccionadas, aplicando el color en las respectivas casillas *Viabilidad de materiales (Fattibilità materiali)* y *Viabilidad de fase (Fattibilità fase)* presentes en la cuadrícula inferior según lo definido en los [Parámetros de necesidad de materiales (Parametri fabbisogno materiali)](/docs/configurations/parameters/production/resource-requirements-parameters). Este botón se activa solo si se ha activado el indicador **sequenza fasi** en la sección *Parámetros de cálculo de viabilidad (Parametri calcolo fattibilità)* de los [Parámetros de necesidad de materiales (Parametri fabbisogno materiali)](/docs/configurations/parameters/production/resource-requirements-parameters);          
+> **dettaglio fattibilità materiali**: permite abrir un pop-up que destaca qué materiales están disponibles y cuáles no para esa fase. Este botón se activa solo si se ha activado el indicador **considera materiali** en la sección *Parámetros de cálculo de viabilidad (Parametri calcolo fattibilità)* de los [Parámetros de necesidad de materiales (Parametri fabbisogno materiali)](/docs/configurations/parameters/production/resource-requirements-parameters);      
+> **dettaglio fattibilità fasi**: permite abrir un pop-up que destaca el estado de avance de la fase anterior, visualizando también las declaraciones que se hayan realizado hasta ese momento. Este botón se activa solo si se ha activado el indicador **considera fasi precedenti** en la sección *Parámetros de cálculo de viabilidad (Parametri calcolo fattibilità)* de los [Parámetros de necesidad de materiales (Parametri fabbisogno materiali)](/docs/configurations/parameters/production/resource-requirements-parameters); se abre un pop-up que destaca qué materiales tenemos disponibles y cuáles no para esa fase; mientras que, a través del botón de detalle de viabilidad de fases, es posible entender el estado de avance de la fase anterior, visualizando también las declaraciones que se hayan realizado hasta ese momento.
+> **aggiornamento data merce pronta**: permite actualizar la *Fecha de mercancía lista* de los pedidos de cliente conectados con la *data fine ordine*; 
+> **rilascio ordini pianificati**: permite liberar los pedidos planificados de producción en pedidos de producción para las fases seleccionadas;                     
+> **rilascio ordini**: permite cambiar el estado de los pedidos de producción de lanzado a ejecutivo de la o las fases seleccionadas.         
+> **espandi la dimensione della griglia**: permite ocultar el área de filtro del formulario para trabajar más fácilmente en las cuadrículas;         
+> **doppia griglia**: permite ocultar la primera cuadrícula para trabajar más fácilmente en la segunda.          
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

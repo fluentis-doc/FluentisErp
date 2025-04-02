@@ -1,54 +1,50 @@
 ---
-title: Situazione contabile sottoconti
+title: situazione contabile sottoconti
 sidebar_position: 5
 ---
 
-La stampa visualizza il dare/avere/saldo dei sottoconti.
-
- 
-
-E' possibile, in particolare, filtrare i sottoconti collegati ad uno specifico progetto (ex Commessa).
-
-**OPZIONI SPECIFICHE DEL REPORT**:
-
-**Visualizza dare / avere**: opzione attiva per default, se viene disattivata non saranno visualizzate le colonne dare / avere ma soltanto la colonna saldo.
-
-**Visualizza bilancio**: opzione attiva di default, se viene disattivata non sarà più visibile la colonna saldo. Attenzione, disattivando sia la presente opzione sia l'opzione precedente la stampa sarà di fatto inutilizzabile in quanto vuota.
+La impresión muestra el debe/haber/saldo de las subcuentas.
 
 
 
-**Visualizza importi in valuta**: attivando questa opzione i sottoconti saranno raggruppati in base alla valuta e saranno visualizzati i totali per gruppo sia in valuta sia per il controvalore in Euro (o comunque nella divisa della società in uso).
+Es posible, en particular, filtrar las subcuentas vinculadas a un proyecto específico (por ejemplo, *Comisión*).
+
+**OPCIONES ESPECÍFICAS DEL INFORME (OPZIONI SPECIFICHE DEL REPORT)**:
+
+**visualizza dare / avere**: opción activa por defecto; si se desactiva, no se visualizarán las columnas de debe/haber, sino solo la columna de saldo.
+
+**visualizza bilancio**: opción activa por defecto; si se desactiva, ya no será visible la columna de saldo. Atención, desactivando tanto esta opción como la anterior, la impresión será inusable, ya que estará vacía.
 
 
 
-**Visualizza valori di apertura**: attivando questa opzione saranno visualizzate anche due ulteriori colonne che riportano i valori dell'apertura conti per ogni singolo sottoconto. I valori riportati sono quelli relativi alla procedura **[Apertura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
+**visualizza importi in valuta**: al activar esta opción, las subcuentas se agruparán en función de la moneda y se mostrarán los totales por grupo tanto en la moneda como en el contravalor en Euros (o en la divisa utilizada por la empresa).
 
 
 
-**Stampa conti con saldo a zero**: opzione disattivata di default, dunque i sottoconti con saldo a zero non verranno visualizzati, è possibile attivarla ottenendo l'inclusione di questi sottoconti.
-
-**CRITERI DI RAGGRUPPAMENTO**:
-
-**Nessuno**: non saranno eseguiti raggruppamenti
-
-**Agente**: i sottoconti relativi alle anagrafiche clienti saranno raggruppati in base all'agente agganciato nella rispettiva anagrafica. In caso siano presenti più agenti in anagrafica sarà considerato quello inserito per ultimo.
-
-**Zona**: i sottoconti relativi alle anagrafiche clienti saranno raggruppati in base alla Zona presente nell'**[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)**
-
-**Agente / Zona**: sarà attivo un doppio criterio di raggruppamento, per agente e poi, per ogi agente, raggruppati per zona.
+**visualizza valori di apertura**: al activar esta opción, se mostrarán dos columnas adicionales que reportan los valores de apertura de cuentas para cada subcuenta. Los valores reportados son los relativos al proceso **[Apertura automática de cuentas (Apertura automatica conti)](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
 
 
 
+**stampa conti con saldo a zero**: opción desactivada por defecto; por lo tanto, las subcuentas con saldo cero no se visualizarán, se puede activar para incluir estas subcuentas.
+
+**criteri di raggruppamento**:
+
+**nessuno**: no se realizarán agrupamientos.
+
+**agente**: las subcuentas relacionadas con los registros de clientes se agruparán en función del agente vinculado en su respectivo registro. Si hay más de un agente en el registro, se considerará el último ingresado.
+
+**zona**: las subcuentas relacionadas con los registros de clientes se agruparán en función de la zona presente en la **[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)**.
+
+**Agente / Zona (Agente / Zona)**: se activará un doble criterio de agrupamiento, primero por agente y después, para cada agente, agrupados por zona.
 
 
-| Funzione | Significato |
+
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión. |
+| Imprimir (Stampa) | Botón para ejecutar la impresión física del documento. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important Ver También (Vedi Anche)
+[**VIDEOS TUTORIALES SOBRE IMPRESIONES CONTABLES (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro)
 :::
-
-

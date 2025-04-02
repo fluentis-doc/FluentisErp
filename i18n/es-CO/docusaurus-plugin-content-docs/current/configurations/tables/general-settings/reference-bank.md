@@ -1,20 +1,20 @@
 ---
-title: Banca d'Appoggio
+title: banca d'appoggio
 sidebar_position: 1
 ---
 
-In questa tabella si inseriscono le banche d'appoggio che possono essere richiamate nelle anagrafiche Clienti e Fornitori (e Anagrafica Banche) per gestire diverse automazioni, quali soprattutto inserimento nelle stampe (es. coordinate bancarie di pagamento in una fattura attiva) e canalizzazione dei flussi finanziari riferiti alle partite aperte ecc.
+En esta tabla se insertan los bancos de apoyo que pueden ser llamados en los registros de Clientes y Proveedores (y Registro de Bancos) para gestionar diversas automatizaciones, como principalmente la inclusión en las impresiones (por ejemplo, coordenadas bancarias de pago en una factura activa) y la canalización de flujos financieros referidos a cuentas por cobrar, etc.
 
-All'interno di questa tabella è possibile inserire sia la banche della società, sia le banche della controparte (cliente o fornitore). 
+Dentro de esta tabla es posible ingresar tanto los bancos de la empresa como los bancos de la contraparte (cliente o proveedor).
 
 :::tip
-Si consiglia di utilizzare ad esempio una codifica alfabetica per le banche della società e le banche di clienti e fornitori con una codifica numerica in modo da differenziarle opportunamente.
+Se recomienda utilizar, por ejemplo, una codificación alfabética para los bancos de la empresa y una codificación numérica para los bancos de clientes y proveedores, de manera que se diferencien adecuadamente.
 
-Inoltre è possibile inserire sia righe complete di codice IBAN e/o SWIFT (consigliato per le banche della società) sia righe complete di soli codice ABI e CAB (consigliato per le banche di controparte per le quali IBAN e SWIFT possono essere indicati nei campi della griglia presente in anagrafica).
+Además, es posible introducir tanto filas completas con código IBAN y/o SWIFT (recomendado para los bancos de la empresa) como filas completas solo con el código ABI y CAB (recomendado para los bancos de contraparte para los cuales el IBAN y SWIFT pueden ser indicados en los campos de la cuadrícula presente en el registro).
 :::
 
-Se la riga presente nella tabella Banca d'appoggio è completa di IBAN e/o SWIFT, oltre che di ABI e CAB, richiamando tale riga tramite la combobox i dati saranno riportati nella griglia in anagrafica, diversamente, saranno riportati solo ABI e CAB, ma sarà sempre possibile aggiungere i dati mancanti direttamente nella griglia. 
+Si la fila presente en la tabla banca d'appoggio está completa con IBAN y/o SWIFT, además de ABI y CAB, al llamar a dicha fila mediante la combobox, los datos se mostrarán en la cuadrícula del registro; de lo contrario, solo se mostrarán ABI y CAB, pero siempre será posible agregar los datos faltantes directamente en la cuadrícula.
 
-Ciò è consigliabile per le banche di controparte al fine di evitare di codificare nella tabella Banca d'appoggio troppe righe utilizzate solo per un unico cliente o fornitore. E' preferibile indicare solo i dati dello sportello bancario (ABI e CAB) presso il quale potrebbero avere il conto corrente diversi clienti o fornitori.
+Esto es recomendable para los bancos de contraparte a fin de evitar codificar en la tabla banca d'appoggio demasiadas filas utilizadas solo para un único cliente o proveedor. Es preferible indicar solo los datos de la sucursal bancaria (ABI y CAB) donde podrían tener la cuenta corriente diferentes clientes o proveedores.
 
-L'inserimento di una banca può essere eseguita anche attraverso un doppio click nei campi abi/cab **di un'anagrafica Cliente o Fornitore** per aprire l'help di ricerca tra le agenzie bancarie nazionali (Help che si appoggia ad una tabella denominata *ABI CAB*), dalle quali selezionare quella del caso. La selezione memorizzerà il dato nella presente tabella e nell'anagrafica, dove è possibile completare subito con i dati di conto corrente, cin, iban, swift.
+La inserción de un banco también se puede realizar a través de un doble clic en los campos abi/cab **de un registro de Cliente o Proveedor** para abrir la ayuda de búsqueda entre las agencias bancarias nacionales (Ayuda que se basa en una tabla denominada *ABI CAB*), de la cual seleccionar la pertinente. La selección guardará los datos en la tabla presente y en el registro, donde es posible completar de inmediato con los datos de la cuenta corriente, CIN, IBAN, SWIFT.

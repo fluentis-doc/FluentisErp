@@ -1,113 +1,113 @@
 ---
-title: Tipi prova
+title: tipi prova
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi prova**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Controles de artículo > tipi prova** (Tabelle > Qualità > Controlli articolo > Tipi prova).
 
-In questa tabella è possibile codificare le tipologie di Prove da effettuare, in accettazione merce e durante il processo produttivo, sugli articoli.   
-Alcuni esempi di utilizzo dei *Tipi prova* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+En esta tabla es posible codificar los tipos de Pruebas que se realizarán, en la recepción de mercancías y durante el proceso productivo, sobre los artículos.  
+Algunos ejemplos de uso de los *tipi prova* se encuentran en las gestiones:  
+> **schede tecniche** - en la pestaña *proprietà*;  
+> **piani di controllo** - en la pestaña *prove pianificate*;  
+> **Control de artículos (Controllo articoli)** - en la pestaña *prove*;  
+> **certificati di analisi** - en la pestaña *Controles y valores detectados > Valores detectados (Controlli e valori rilevati > Valori rilevati)*;  
+> **M.E.S.** - en la pestaña *Controles de calidad > Pruebas (Controlli qualità > Prove)*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi prova**
+**Búsqueda de tipi prova (Ricerca Tipi prova)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi prova**
+**Inserción de tipi prova (Inserimento Tipi prova)**
 
-Per poter inserire nuovi *Tipi prova* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi prova* es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-**Duplica Tipi prova**
+**Duplicar tipi prova (Duplica Tipi prova)**
 
-Per poter duplicare un *Tipo prova* esistente in un nuovo *Tipo prova* è necessario cliccare nella griglia sul *Tipo prova* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** del nuovo *Tipo prova* (dato obbligatorio) e dei flags che permettono di far scegliere se duplicare anche le informazioni di: *Configurazione*, *Esiti possibili*, *Funzione* e *Immagini*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+Para poder duplicar un *Tipo de prueba* existente en un nuevo *Tipo de prueba*, es necesario hacer clic en la cuadrícula en el *Tipo de prueba* del cual se desea duplicar y presionar el botón **duplica**.  
+Se mostrará una solicitud de **codice** para el nuevo *Tipo de prueba* (dato obligatorio) y de los indicadores que permiten elegir si duplicar también la información de: *Configuración*, *Resultados posibles*, *Función* e *Imágenes*.  
+Luego presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de duplicación o no.
 
-## Tipi prova
+## tipi prova (Tipi prova)
 
-E' l'elenco dove vengono inserite le informazioni principali del *Tipo prova*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo prova*.   
-> **Descrizione**: è la descrizione del *Tipo prova*.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
+Es la lista donde se insertan las informaciones principales del *Tipo de prueba*.  
+La lista se compone de la siguiente información:  
+> **codice**: es el código del *Tipo de prueba*.  
+> **descrizione**: es la descripción del *Tipo de prueba*.  
+> **riferimento piano di controllo standard**: es un campo descriptivo que contiene las referencias a codificaciones de pruebas reconocidas globalmente.  
 >  
-> **Categoria**
->> **Codice**: è il codice della *Categoria*.   
->> **Descrizione**: è la descrizione della *Categoria*.   
->> **Distruttiva**: indica se la prova è di tipo distruttiva.   
+> **categoria**
+>> **codice**: es el código de la *Categoría*.  
+>> **descrizione**: es la descripción de la *Categoría*.  
+>> **distruttiva**: indica si la prueba es de tipo destructiva.  
 >
-> **Laboratorio interno**: indica se la prova viene effettuata internamente.   
+> **laboratorio interno**: indica si la prueba se lleva a cabo internamente.  
 >  
-> **Laboratorio esterno**
->> **Descrizione**: abilitato se il Laboratorio è esterno, è la ragione sociale del *laboratorio di analisi* (*fornitore*) esterno che effettuerà la prova.
+> **laboratorio esterno**
+>> **descrizione**: habilitado si el laboratorio es externo, es la razón social del *laboratorio de análisis* (*proveedor*) externo que realizará la prueba.
 >  
-> **Strumento di misura**
->> **Codice**: è il codice della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.   
->> **Descrizione**: è la descrizione della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.
+> **strumento di misura**
+>> **codice**: es el código de la *Categoría de instrumento de medida* a utilizar para medir los valores del *Tipo de prueba*.  
+>> **descrizione**: es la descripción de la *Categoría de instrumento de medida* a utilizar para medir los valores del *Tipo de prueba*.
 >  
-> **Valori**
->> **Da rilevare**: indica se la prova è da rilevare o è solamente una *Proprietà* e non è rilevabile e viene quindi utilizzato nelle *Schede tecniche*.   
->> **Unità di misura**: è l'*Unità di misura* dei valori da rilevare.   
->> **Tipo valore**: è il *Tipo valore* da rilevare: *Numerico*, *Si/No* o *Testo*.   
->> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* da che verrà proposto nelle Prove.   
+> **valori**
+>> **da rilevare**: indica si la prueba debe ser medida o es solo una *Propiedad* y no es medible, por lo que se utiliza en las *Hojas técnicas*.  
+>> **unità di misura**: es la *Unidad de medida* de los valores a medir.  
+>> **tipo valore**: es el *Tipo de valor* a medir: *Numérico*, *Sí/No* o *Texto*.  
+>> **tipo limite**: habilitado si el *Tipo de valor* es *Numérico*, es el *Tipo límite* que se propondrá en las Pruebas.  
 >  
-> **Tipo controllo prova**
->> **Generico**: indica se la prova è comunemente attuata sulle tipologie di documento che si potranno specificare nelle successive colonne.   
->> **Tipo documento**: abilitato se il *Tipo valore* è *Generico*, è il documento dove il *Tipo prova* viene comunemente attuata.   
->> **Proposta in...**: abilitato se il *Tipo valore* è *Generico* e se il *Tipo documento* lo prevede, è il dettaglio (*Testata documento* o *Riga documento*) dove il *Tipo prova* viene comunemente attuata.   
->> **Codice**: è il codice del *Tipo controllo prova* da utilizzare.   
->> **Descrizione**: è la descrizione del *Tipo controllo prova* da utilizzare.
->> **Frequenza**: è la frequenza descrittiva con la quale effettuare il controllo.
+> **tipo controllo prova**
+>> **generico**: indica si la prueba se aplica comúnmente a las tipologías de documento que se podrán especificar en las columnas siguientes.  
+>> **tipo documento**: habilitado si el *Tipo de valor* es *Genérico*, es el documento donde el *Tipo de prueba* se aplica comúnmente.  
+>> **Propuesto en... (Proposta in...)**: habilitado si el *Tipo de valor* es *Genérico* y si el *Tipo de documento* lo permite, es el detalle (*Cabecera de documento (Testata documento)* o *riga documento*) donde el *Tipo de prueba* se aplica comúnmente.  
+>> **codice**: es el código del *Tipo de control de prueba* a utilizar.  
+>> **descrizione**: es la descripción del *Tipo de control de prueba* a utilizar.  
+>> **frequenza**: es la frecuencia descriptiva con la cual se realizará el control.  
 >  
-> **Note**: annotazioni libere.
+> **note**: anotaciones libres.
 
-### Attributi Tipo di prova
+### Atributos Tipo de prueba (Attributi Tipo di prova)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo prova*.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+Es posible insertar datos [Adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para el *Tipo de prueba*.  
+Estos *Datos adicionales* se heredan en las *Pruebas* de los documentos donde se prevé el uso de los atributos.  
 
-### Parametri di configurazione Prova e strumento di misura
+### Parámetros de configuración de Prueba e instrumento de medida (Parametri di configurazione Prova e strumento di misura)
 
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Contiene los [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) necesarios para que los operadores preparen todos los instrumentos necesarios para poder comenzar una determinada prueba. Pueden ser considerados configuraciones necesarias, información operativa previa a la ejecución de la prueba.  
+Estos *Datos adicionales* se heredan en las *Pruebas* de los documentos donde se prevé una configuración.  
 
-### Esiti possibili
+### Resultados posibles (Esiti possibili)
 
-E' possibile personalizzare, per il *Tipo prova* selezionato, i *Tipi esito* possibili.   
-Quando verrà rilevata una singola prova, in base alla sua conformità, il sistema proporrà l'esito *positivo* oppure *negativo* di default.   
-L'elenco si compone delle seguenti informazioni:   
-> **Esito**: è il codice del *Tipo esito*.   
-> **Descrizione esito**: è la descrizione del *Tipo esito*.   
-> **Predefinito positivo**: indica che sarà proposto come esito positivo quando verrà rilevata una prova.   
-> **Predefinito negativo**: indica che sarà proposto come esito negativo quando verrà rilevata una prova.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Tipi esito* per il "Tipo prova" selezionato.   
-> **Note**: annotazioni libere.
+Es posible personalizar, para el *Tipo de prueba* seleccionado, los *Tipos de resultado* posibles.  
+Cuando se detecta una sola prueba, según su conformidad, el sistema propondrá el resultado *positivo* o *negativo* por defecto.  
+La lista se compone de la siguiente información:  
+> **esito**: es el código del *Tipo de resultado*.  
+> **descrizione esito**: es la descripción del *Tipo de resultado*.  
+> **predefinito positivo**: indica que se propondrá como resultado positivo cuando se detecte una prueba.  
+> **predefinito negativo**: indica que se propondrá como resultado negativo cuando se detecte una prueba.  
+> **sequenza**: es la secuencia de visualización en las listas de los *Tipos de resultado* para el "Tipo de prueba" seleccionado.  
+> **note**: anotaciones libres.
 
-### Funzioni di rilevamento ed approvazione
+### Funciones de detección y aprobación (Funzioni di rilevamento ed approvazione)
 
-E' un'attribuzione di diritti che elenca chi può rilevare e/o approvare i valori della prova.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Tipo attività**: è il diritto dato alla *Funzione aziendale* durante le attività di rilevamento e/o approvazione di una prova. I valori possibili sono:   
-> - *Può rilevare* - la *Funziona aziendale* ha i permessi di sola rilevazione dei valori;   
-> - *Può approvare* - la *Funziona aziendale* ha i permessi di sola approvazione della prova;   
-> - *Può rilevare e approvare* - la *Funziona aziendale* ha i permessi di rilevazione dei valori e approvazione della prova.   
->
-> Le altre *Funzioni aziendali* non elencate non hanno alcun diritto di rilevazione valori e approvazione della prova.   
-> Se non vengono specificate *Funzioni aziendali* tutti gli operatori potranno rilevare valori e approvare la prova.
->
-> **Note**: annotazioni libere.
+Es una atribución de derechos que enumera quién puede detectar y/o aprobar los valores de la prueba.  
+La lista se compone de la siguiente información:  
+> **funzione**: es el código de la *Función empresarial*.  
+> **descrizione funzione**: es la descripción de la *Función empresarial*.  
+> **tipo attività**: es el derecho otorgado a la *Función empresarial* durante las actividades de detección y/o aprobación de una prueba. Los valores posibles son:  
+> - *può rilevare* - la *Función empresarial* tiene los permisos de solo medición de los valores;  
+> - *può approvare* - la *Función empresarial* tiene los permisos de solo aprobación de la prueba;  
+> - *Puede medir y aprobar (Può rilevare e approvare)* - la *Función empresarial* tiene los permisos de medición de los valores y de aprobación de la prueba.  
+>  
+> Las otras *Funciones empresariales* no enumeradas no tienen derechos de medición de valores y aprobación de la prueba.  
+> Si no se especifican *Funciones empresariales*, todos los operadores podrán medir valores y aprobar la prueba.  
+> 
+> **note**: anotaciones libres.
 
-### Immagini
+### Imágenes (Immagini)
 
-E' possibile associare delle immagini utili alla prova da rilevare. Per esempio, potrebbe servire ad indicare visivamente alcune caratteristiche o attività da fare durante la preparazione e l'attuazione della prova stessa.
+Es posible asociar imágenes útiles a la prueba a medir. Por ejemplo, podría ser útil para indicar visualmente algunas características o actividades a realizar durante la preparación y ejecución de la prueba.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

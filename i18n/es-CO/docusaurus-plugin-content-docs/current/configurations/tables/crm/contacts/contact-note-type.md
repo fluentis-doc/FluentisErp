@@ -1,9 +1,7 @@
 ---
-title: Tipo Nota Contatto
+title: tipo nota contatto
 sidebar_position: 8
 ---
 
-E' una tabella descrittiva per catalogare le tipologie di nota che è possibile utilizzare in fase di inserimento di una note di un contatto del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del Tipo nota, e da una griglia in cui appunto verranno elencati tutti i tipi nota inseriti.
-
-
+Es una tabla descriptiva para catalogar los tipos de nota que se pueden utilizar al ingresar una nota de un contacto del CRM. Es común a todas las empresas presentes en la base de datos y se compone de una simple tabla de código/descripción.  
+Consiste en una parte de filtro donde se puede buscar a través del código o la descripción del Tipo de nota, y una cuadrícula donde, efectivamente, se enumerarán todos los tipos de nota ingresados.

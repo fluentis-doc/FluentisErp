@@ -1,28 +1,23 @@
 ---
-title: Inserimento nuova UDC
+title: Inserción nueva UDC (Inserimento nuova UDC)
 sidebar_position: 3
 ---
 
-Al fine di creare una nuova UDC è sufficiente inserire una nuova riga sulla griglia principale specificando anno, gruppo, numero e tipo. Questi campi definiscono la chiave univoca per ogni UDC.      
-Verranno completati in automatico i campi di anagrafica relativi a dimensioni e pesi (ricavandole da quanto indicato nella tabella **Tipi UDC**) che comunque possono essere cambiati.        
+Para crear una nueva UDC, es suficiente con insertar una nueva fila en la cuadrícula principal especificando el año, grupo, número y tipo. Estos campos definen la clave única para cada UDC.  
+Se completarán automáticamente los campos de **anagrafica** relacionados con las dimensiones y pesos (obteniéndolos de lo indicado en la tabla **tipi udc**), que de todas formas pueden ser cambiados.
 
-Inoltre, è necessario indicare il magazzino e l’ubicazione, dopo di che è possibile spostarsi nel tab Dettaglio UDC, dove è possibile inserire all'interno l'articolo o gli articoli che la compongono.
+Además, es necesario indicar el almacén y la ubicación, después de lo cual se puede pasar a la pestaña **dettaglio udc**, donde es posible insertar el artículo o los artículos que la componen.
 
-L'inserimento, può avvenire tramite il pulsante dedicato *Nuovo articolo UDC*, oppure tramite l’inserimento direttamente nella prima riga libera. In entrambi i casi, questo prevede di specificare obbligatoriamente classe, codice, eventualmente la variante se l'articolo è gestito a variante, e quantità. È possibile associare all'articolo anche la riga ordine cliente, scegliendo nell'apposita colonna il Tipo e il numero dell'Ordine cliente. Le informazioni relative al magazzino verranno aggiornate automaticamente dopo il carico dell’UDC.
+La inserción puede realizarse a través del botón dedicado **nuovo articolo udc**, o directamente en la primera fila libre. En ambos casos, esto requiere especificar obligatoriamente la clase, el código, y eventualmente la variante si el artículo se gestiona por variante, junto con la cantidad. También es posible asociar el artículo a la línea del pedido del cliente, eligiendo en la columna correspondiente el Tipo y el número del Pedido del cliente. La información relacionada con el almacén se actualizará automáticamente después de la carga de la UDC.
 
-*Flag*:
+*Indicadores (Flag)*:
 
-- **Stampata**: viene settato automaticamente una volta che è stata stampata l'unità di carico;      
-- **Caricata**: viene settato automaticamente una volta che è stata caricata l'unità di carico;          
-- **Scaricata**: viene settato automaticamente una volta che è stata scaricata l'unità di carico; 
-- **Da unità di carico**: viene settato automaticamente quando l'unità di carico ha un'unità di carico padre. 
+- **stampata**: se establece automáticamente una vez que se ha impreso la unidad de carga;  
+- **caricata**: se establece automáticamente una vez que se ha cargado la unidad de carga;  
+- **scaricata**: se establece automáticamente una vez que se ha descargado la unidad de carga;  
+- **da unità di carico**: se establece automáticamente cuando la unidad de carga tiene una unidad de carga padre.
 
-*Pulsanti specifici*:
+*Botones específicos (Pulsanti specifici)*:
 
-> **Nuovo articolo UDC**: permette di aggiungere un nuovo articolo all'unità di carico;         
-> **Cancella articolo UDC**: permette di rimuovere un nuovo articolo dall'unità di carico.         
-
-
-
-
-
+> **nuovo articolo udc**: permite añadir un nuevo artículo a la unidad de carga;  
+> **cancella articolo udc**: permite eliminar un nuevo artículo de la unidad de carga.

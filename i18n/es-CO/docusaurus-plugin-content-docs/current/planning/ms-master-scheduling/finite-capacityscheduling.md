@@ -1,136 +1,132 @@
 ---
-title: Schedulazione a capacità finita
+title: Programación a capacidad finita (Schedulazione a capacità finita)
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La funzione di Schedulazione a capacità finita di Fluentis è uno strumento avanzato progettato per ottimizzare la gestione delle risorse produttive all'interno di un'azienda manifatturiera. Questo modulo viene integrato all'interno del sistema ERP di Fluentis e consente di pianificare e gestire le attività produttive considerando le reali capacità delle risorse disponibili, come manodopera, macchinari e materiali. Grazie a tale funzionalità, le aziende possono minimizzare i tempi di inattività, migliorare l'efficienza operativa e rispondere con maggiore flessibilità alle variazioni della domanda.
+:::important ¿Para qué sirve? (A cosa serve)
+La función de programación a capacidad finita de Fluentis es una herramienta avanzada diseñada para optimizar la gestión de los recursos productivos dentro de una empresa manufacturera. Este módulo se integra dentro del sistema ERP de Fluentis y permite planificar y gestionar las actividades productivas considerando las reales capacidades de los recursos disponibles, como mano de obra, maquinarias y materiales. Gracias a esta funcionalidad, las empresas pueden minimizar los tiempos de inactividad, mejorar la eficiencia operativa y responder con mayor flexibilidad a las variaciones de la demanda.
 
-La schedulazione a capacità finita tiene conto delle limitazioni fisiche delle risorse, permettendo di creare piani di produzione realistici e attuabili. Inoltre, offre strumenti analitici per prevedere eventuali colli di bottiglia e consente l'ottimizzazione dell'allocazione dei compiti, integrandosi con altre funzionalità dell'ERP per una visione olistica delle operazioni aziendali. Questo sistema aiuta le aziende a bilanciare in modo efficace la domanda dei clienti con le capacità produttive, migliorando in ultima analisi la redditività e la soddisfazione del cliente.
+La programación a capacidad finita tiene en cuenta las limitaciones físicas de los recursos, permitiendo crear planes de producción realistas y viables. Además, ofrece herramientas analíticas para prever posibles cuellos de botella y permite la optimización de la asignación de tareas, integrándose con otras funcionalidades del ERP para una visión holística de las operaciones empresariales. Este sistema ayuda a las empresas a equilibrar de manera efectiva la demanda de los clientes con las capacidades productivas, mejorando en última instancia la rentabilidad y la satisfacción del cliente.
 :::
 
-La schedulazione di produzione a capacità finita permette di capire quanto lavoro può essere espresso in un periodo di tempo definito, considerando le limitazioni di alcune risorse. L’obiettivo finale è quello di garantire la maggiore efficienza dei ritmi produttivi lungo tutta la filiera interna allo stabilimento, ottimizzando i tempi e riducendo i costi dei centri di lavoro.  
-Con questa modalità di pianificazione è possibile creare sequenze ottimali di lavorazione su ogni singolo Centro di lavoro ottenendo la loro massima saturazione.
+La programación de producción a capacidad finita permite entender cuánto trabajo puede ser realizado en un periodo de tiempo definido, considerando las limitaciones de algunos recursos. El objetivo final es garantizar la mayor eficiencia de los ritmos productivos a lo largo de toda la cadena interna de la planta, optimizando los tiempos y reduciendo los costos de los centros de trabajo.  
+Con este modo de planificación, es posible crear secuencias óptimas de trabajo en cada Centro de trabajo, logrando su máxima saturación.
 
-## Commesse
+## Pedidos (Commesse)
 
-Il tab commesse mostra solamente le commesse che si trovano in stato non esaminato.
+La pestaña de pedidos muestra solamente los pedidos que se encuentran en estado no revisado.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Schedulazione F.C.S.**: consente al sistema di schedulare a capacità finita le fasi di lavorazione dei documenti previsti;  
-> **Modifica data commessa**: questo pulsante consente di modificare la data commessa;  
-> **Cambia priorità**: tramite questa funzionalità si può variare la priorità delle commesse selezionate;    
-> **Parametri MRP**: consente di aprire i parametri MRP delle commesse selezionate;    
-> **Distinta base**: consente di aprire le distinte basi delle commesse selezionate;    
-> **Ciclo di lavoro**: consente di aprire i cicli di lavoro delle commesse selezionate.        
+> **Programación F.C.S. (Schedulazione F.C.S.)**: permite al sistema programar a capacidad finita las fases de procesamiento de los documentos previstos;  
+> **modifica data commessa**: este botón permite modificar la fecha del pedido;  
+> **cambia priorità**: mediante esta funcionalidad, se puede variar la prioridad de los pedidos seleccionados;    
+> **Parámetros MRP**: permite abrir los parámetros MRP de los pedidos seleccionados;    
+> **distinta base**: permite abrir las listas de materiales de los pedidos seleccionados;    
+> **ciclo di lavoro**: permite abrir los ciclos de trabajo de los pedidos seleccionados.        
 
-*Filtri specifici*:
+*Filtros específicos*:
 
-**Tipo commessa**: tramite questa combo è possibile andare a selezionare il tipo di commessa che si vuole visualizzare, se le commesse monoprodotto, le commesse multiprodotto oppure entrambe;
+**tipo commessa**: mediante esta combinación es posible seleccionar el tipo de pedido que se desea visualizar, si los pedidos monoproduto, los pedidos multiproduto o ambos;
 
-**Sito produzione**: si possono andare a visualizzare le commesse in base al sito di produzione in cui vanno prodotte, selezionandolo tramite l'apposita combo;
+**sito produzione**: se pueden visualizar los pedidos en función del sitio de producción en el que deben ser producidos, seleccionándolo mediante la combinación adecuada;
 
-*Campi specifici nella griglia dei Risultati*
+*Campos específicos en la cuadrícula de Resultados*
 
-**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di schedulazione, attivando un particolare flag chiamato  [Controlla doc in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) lo schedulatore andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla data MS che viene definita sempre nei parametri e che si attiva solo settando il flag controllo doc in ritardo con ATP e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
+**data suggerita**: como se explicó en el artículo relacionado con los parámetros generales de programación, activando un indicador particular llamado [Controlar documentos tardíos con ATP (Controlla doc in ritardo con ATP)](/docs/planning/ms-master-scheduling/general-schedule), el programador realizará un razonamiento tal que si incluso uno solo de los pedidos que se programan y generan resulta estar tardío respecto a la fecha prevista, el sistema cancelará todos los pedidos creados y volverá a empezar desde la fecha MS que se define siempre en los parámetros y que se activa solo configurando el indicador de control de documentos tardíos con ATP, proponiendo la nueva fecha para los pedidos precisamente en el campo *Fecha sugerida* presente en la cuadrícula de resultados.
 
-### Procedura schedulazione F.C.S.    
+### Procedimiento de programación F.C.S. (Procedura schedulazione F.C.S.)    
 
-Dal tab **Commesse** è possibile selezionare le commesse non schedulate che si vogliono prendere in considerazione. 
-Premendo il pulsante **Schedulazione F.C.S.** la procedura eseguirà una prima schedulazione a capacità infinita sulle commesse non schedulate appena selezionate, utilizzando i parametri presenti nel tab **Parametri generali** e di seguito eseguirà una schedulazione a capacità finita su tutti i documenti indicati nei **Parametri schedulazione a capacità finita**.
+Desde la pestaña **commesse** es posible seleccionar los pedidos no programados que se desean considerar. 
+Al presionar el botón **Programación F.C.S.**, el procedimiento realizará una primera programación a capacidad infinita sobre los pedidos no programados seleccionados, utilizando los parámetros presentes en la pestaña **Parámetros generales** y posteriormente realizará una programación a capacidad finita sobre todos los documentos indicados en los **Parámetros de programación a capacidad finita**.
 
-Come nel caso della pianificazione generale, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Como en el caso de la planificación general, los pedidos programados se podrán visualizar en el formulario [Búsqueda de pedidos programados (Ricerca ordini pianificati)](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-Per visualizzare tutte le pianificazione effettuate e i relativi errori / warning creati per ogni  commessa, basterà spostarsi nel tab **Storico**.    
+Para visualizar toda la programación realizada y los errores / advertencias relacionados creados para cada pedido, solo será necesario moverse a la pestaña **storico**.    
 
-## Parametri di schedulazione generale
+## Parámetros de programación general (Parametri di schedulazione generale)
 
-Tutti i parametri relativi alla fase di Pianificazione generale possono essere consultati direttamente nell'articolo relativo alla [Pianificazione generale](/docs/planning/ms-master-scheduling/general-schedule) nella sezione **Parametri di pianificazione generale**.        
+Todos los parámetros relacionados con la fase de Programación general pueden ser consultados directamente en el artículo relacionado con la [Programación general (Pianificazione generale)](/docs/planning/ms-master-scheduling/general-schedule) en la sección **Parámetros de programación general**.        
 
-## Parametri schedulazione a capacità finita   
-
-:::note Nota
-Prima di procedere con la schedulazione F.C.S., è importante settare all'interno di questo tab i parametri da seguire per eseguire la schedulazione a capacità finita.
-::: 
-
-**Schedulazione al più presto o al più tardi**: questi flag sono disabilitati ed è attivo sempre e solo il flag *Al più presto*, in quanto la schedulazione a capacità finita cerca di saturare al più presto i centri di lavoro;        
-
-**Dalla data**: permette di definire la data da cui iniziare la schedulazione a capacità finita; di default è proposta la data odierna, ma può essere incrementata di un numero di giorni pari al valore che si può inserire dai [Parametri MS](/docs/configurations/parameters/production/mps-parameters) nel campo *Giorni prossima schedulazione*;
-
-**Operazione su ordini pianificati Ricalcolo tempo**: il flag è sempre attivo e permette di ricalcolare il tempo negli ordini pianificati;    
-
-**Ricalcolo ordini di produzione**: permette di selezionare quali ordini di produzione, tra *Lanciati* e/o *Esecutivi*, deve prendere in considerazione la schedulazione F.C.S.;    
-
-**Ricalcolo fasi**: permette di selezionare quali fasi di produzione, *Non iniziate* e/o *Già iniziate*, deve prendere in considerazione la schedulazione F.C.S.;    
-
-**Modalità di ricalcolo fasi già iniziate**: permette di scegliere la modalità con cui la procedura di schedulazione F.C.S. deve ricalcolare la parte rimanente da eseguire delle fasi già iniziate. Si tratta di definire se dare la priorità al tempo lavorato flaggando *Tempo già lavorato e poi Quantità già prodotte*, oppure dare la priorità alla quantità prodotta con il flag *Quantità già prodotte e poi Tempo già lavorato*;     
-
-**Blocca gli ordini tassativi**: permette selezionare le tipologie di ordini tra *Pianificati*, *Lanciati* ed *Esecutivi*, che nel caso abbiano il flag *Tassativo* abilitato non saranno modificati dalla procedura di schedulazione F.C.S.;    
-
-**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguirà senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la disponibilità solamente per i materiali che in distinta base hanno il flag *Critico* attivo;   
-
-**Considera disponibilità Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*. Da notare che per i materiali legati ad una certa fase, la disponibilità sarà verificata all'inizio della fase stessa, mentre per tutti i materiali non legati ad una fase, la disponibilità verrà verificata all'inizio della prima fase del ciclo. 
-
-Nella parte sottostante della form è possibile indicare con quali criteri, a parità di documento, la schedulazione a capacità finita deve operare.
+## Parámetros de programación a capacidad finita (Parametri schedulazione a capacità finita)   
 
 :::note Nota
-In accordo con i flag precedentemente attivati o meno, la schedulazione F.C.S. schedulerà i vari documenti nel seguente ordine: Fasi già iniziate, Fasi non ancora iniziate, Ordini di produzione in stato esecutivo e poi lanciato ed in fine Ordini pianificati. 
+Antes de proceder con la programación F.C.S., es importante establecer dentro de esta pestaña los parámetros a seguir para realizar la programación a capacidad finita.
 ::: 
 
-Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il drag & drop le singole voci all'interno della tabella **Priorità schedulazione**, dove in quest'ultima è possibile variarne la priorità. Nel caso in cui vengano selezionare le voci *Clienti critici* oppure *C.d.L critici* si abiliterà anche la tabella **Dettaglio priorità schedulazione** dove sarà possibile inserire rispettivamente i clienti o i centri di lavoro, potendo variare anche in questo caso la priorità.   
+**Programación lo antes posible o lo más tarde posible (Schedulazione al più presto o al più tardi)**: estos indicadores están deshabilitados y siempre está activo solo el indicador *Lo más pronto posible (Al più presto)*, ya que la programación a capacidad finita busca saturar lo antes posible los centros de trabajo;        
 
-:::note Attenzione
-La priorità per *Sequenza fasi* e *CDL critici* non viene utilizzata nello standard ed è stata inserita per poter schedulare solo con delle procedure custom.
+**dalla data**: permite definir la fecha desde la cual comenzar la programación a capacidad finita; por defecto se propone la fecha actual, pero puede incrementarse por un número de días igual al valor que se puede ingresar desde los [Parámetros MS](/docs/configurations/parameters/production/mps-parameters) en el campo *giorni prossima schedulazione*;
+
+**Operación en pedidos programados Recalcular tiempo (Operazione su ordini pianificati Ricalcolo tempo)**: el indicador está siempre activo y permite recalcular el tiempo en los pedidos programados;    
+
+**ricalcolo ordini di produzione**: permite seleccionar cuáles pedidos de producción, entre *lanciati* y/o *esecutivi*, debe considerar la programación F.C.S.;    
+
+**ricalcolo fasi**: permite seleccionar cuáles fases de producción, *non iniziate* y/o *già iniziate*, debe considerar la programación F.C.S.;    
+
+**Modo de recalculo de fases ya iniciadas (Modalità di ricalcolo fasi già iniziate)**: permite elegir el modo en que el procedimiento de programación F.C.S. debe recalcular la parte restante a ejecutar de las fases ya iniciadas. Se trata de definir si dar prioridad al tiempo trabajado configurando *tempo già lavorato e poi quantità già prodotte*, o dar prioridad a la cantidad producida con el indicador *quantità già prodotte e poi tempo già lavorato*;     
+
+**Bloquear pedidos obligatorios (Blocca gli ordini tassativi)**: permite seleccionar los tipos de pedidos entre *pianificati*, *lanciati* y *esecutivi*, que en caso de tener el indicador *tassativo* habilitado no serán modificados por el procedimiento de programación F.C.S.;    
+
+**Iniciar trabajos en función de la disponibilidad de material (Inizia lavori su disponibilità materiale)**: si está activo, la programación F.C.S. también verificará la disponibilidad de material hasta la fecha indicada en el campo **controllo disponibilità fino al**; más allá de esa fecha, la programación continuará sin tener en cuenta la disponibilidad de material. Al activar el indicador **controllo disponibilità solo sui materiali critici**, el procedimiento verificará la disponibilidad solamente para los materiales que en la lista de materiales tienen habilitado el indicador *Crítico*;   
+
+**considera disponibilità materiale**: permitirá seleccionar el modo en que considerar la disponibilidad del material entre *generale* (independientemente del pedido de producción que lo compromete) y *Por Pedido Prod. (Per Commessa Prod.)*; actualmente solo se prevé la regla *General*. Cabe notar que para los materiales vinculados a una cierta fase, la disponibilidad se verificará al inicio de la fase misma, mientras que para todos los materiales no vinculados a una fase, la disponibilidad se verificará al inicio de la primera fase del ciclo. 
+
+En la parte inferior del formulario es posible indicar con qué criterios, en igualdad de documento, la programación a capacidad finita debe operar.
+
+:::note Nota
+De acuerdo con los indicadores habilitados o no, la programación F.C.S. programará los diversos documentos en el siguiente orden: Fases ya iniciadas, Fases no iniciadas, Pedidos de producción en estado ejecutivo y luego lanzados, y finalmente, Pedidos programados.
 ::: 
 
-Se non viene inserita nessuna priorità di schedulazione l'ordinamento verrà effettuato come segue:
-*Level descending > StartDate ascending > EndDate ascending > Id ascending*
+Desde la tabla **scelte priorità schedulazione**, es posible arrastrar con el drag & drop las distintas opciones dentro de la tabla **priorità schedulazione**, donde en esta última es posible variar su prioridad. En caso de seleccionar las opciones *clienti critici* o *C.d.L críticos (C.d.L critici)*, también se habilitará la tabla **dettaglio priorità schedulazione** donde será posible ingresar respectivamente los clientes o los centros de trabajo, pudiendo también en este caso variar la prioridad.   
 
-*Pulsanti specifici*:
+:::note Atención
+La prioridad para *sequenza fasi* y *CDL críticos (CDL critici)* no se utiliza en el estándar y se ha incluido para poder programar solo con procedimientos personalizados.
+::: 
 
-> **Ripristina priorità**: permette di ripristinare le priorità di default all'interno della tabella *Priorità schedulazione*.    
+Si no se ingresa ninguna prioridad de programación, el ordenamiento se llevará a cabo de la siguiente manera:
+*Nivel descendente > Fecha de inicio ascendente > Fecha de finalización ascendente > Id ascendente*
 
-## Monitor
+*Botones específicos*:
 
-In questo tab, tramite l'attivazione o meno dei flag presenti, l'utente ha la possibilità di scegliere la visualizzazione dei risultati della schedulazione nel tab **Storico**.
+> **ripristina priorità**: permite restaurar las prioridades por defecto dentro de la tabla *priorità schedulazione*.    
 
-Si può decidere se visualizzare i **Calendari** presi in considerazione (il Calendario di *Fabbrica* e il calendario delle *Capacità produttive*); si può decidere che venga segnalato se nella schedulazione erano presenti **Articoli privi di** *Parametri MRP*, privi di *Distinta base* o di *Ciclo di lavoro*, privi di *Fornitore preferenziale* (nel caso di ordini di acquisto), privi di *Terzista preferenziale* (per gli ordini di conto lavoro) e privi dell'indicazione della scorta minima per tutti quegli articoli che sono gestiti a scorta. Per ogni **Commessa di produzione** si può scegliere di visualizzare nello storico, il *Numero di righe schedulate* e il dettaglio di queste righe, le commesse in ritardo e le commesse scadute.
+## Monitor (Monitor)
 
-Per quanto riguarda gli **Ordini pianificati**, si può scegliere se visualizzare nello storico, il *Numero di ordini generati* e il loro *Dettaglio*, gli ordini *In ritardo* e *Scaduti*, le *Alternative materiali*; si può scegliere anche di essere avvisati nel caso in cui ci siano **Ordini pianificati privi di** *Materiale*, di *Fasi di lavorazione*, del *Fornitore* (per l'acquisto) e il *Terzista* (per il conto lavoro).
+En esta pestaña, mediante la activación o desactivación de los indicadores presentes, el usuario tiene la posibilidad de elegir la visualización de los resultados de la programación en la pestaña **storico**.
 
-**Legenda**: i flag attivi permettono di ricevere l'avviso e i dettagli riguardanti le voci selezionate.
+Se puede decidir si visualizar los **Calendarios** tomados en consideración (el calendario de *fabbrica* y el calendario de *Capacidades productivas (Capacità produttive)*); se puede decidir que se señale si en la programación estaban presentes **Artículos sin** *Parámetros MRP*, sin *distinta base* o sin *Ciclo de trabajo*, sin *Proveedor preferencial* (en caso de pedidos de compra), sin *Subcontratista preferencial* (para órdenes de trabajo) y sin la indicación de la reserva mínima para todos aquellos artículos que se gestionan a reserva. Para cada **commessa di produzione** se puede elegir visualizar en el histórico, el *Número de líneas programadas* y el detalle de estas líneas, los pedidos atrasados y los pedidos vencidos.
 
-## Storico
+En cuanto a los **ordini pianificati**, se puede elegir si visualizar en el histórico, el *Número de pedidos generados* y su *Detalle*, los pedidos *in ritardo* y *scaduti*, las *alternative materiali*; también se puede elegir ser avisado en caso de que haya **Pedidos programados sin** *Material* y sin *Fases de trabajo*, sin *Proveedor* (para la compra) y sin *Subcontratista* (para el trabajo por cuenta).
 
-Nella griglia di questo tab vengono visualizzate tutte le informazioni riepilogative relative alla schedulazione della commessa.
+**Leyenda**: los indicadores activos permiten recibir la alerta y los detalles relacionados con los elementos seleccionados.
 
-**Progr. sched.**: visualizza un semplice progressivo dell'operazione di schedulazione lanciata dall'utente;
+## Histórico (Storico)
 
-**Operatore**: visualizza l'utente che ha lanciato la schedulazione;
+En la cuadrícula de esta pestaña se visualizan toda la información resumida relativa a la programación del pedido.
 
-**No. errori**: visualizza il numero degli errori registrati durante la procedura di schedulazione;
+**Prog. sched.**: visualiza un simple progreso de la operación de programación lanzada por el usuario;
 
-**Data inizio**: visualizza data e ora di inizio del processo di schedulazione;
+**operatore**: visualiza el usuario que ha lanzado la programación;
 
-**Data fine**: visualizza data e ora di fine del processo di schedulazione;
+**No. errores (No. errori)**: visualiza el número de errores registrados durante el procedimiento de programación;
 
-**Dati schedulati provenienti da**: visualizza l'origine precisa dei dati schedulati;
+**data inizio**: visualiza fecha y hora de inicio del proceso de programación;
 
-**Previsionale**: visualizza se i dati provengano dalle Previsioni di Vendita oppure dal Piano Principale di Produzione;
+**data fine**: visualiza fecha y hora de finalización del proceso de programación;
 
-**Periodo**: visualizza il tipo di previsione, settimanale o mensile;
+**Datos programados provenientes de (Dati schedulati provenienti da)**: visualiza el origen preciso de los datos programados;
 
-**Giorno**: visualizza il giorno della settimana designato come giorno in cui deve cadere la data di fine della commessa di produzione schedulata direttamente da Definizione MPS.
+**previsionale**: visualiza si los datos provienen de las Previsiones de Venta o del Plan Principal de Producción;
 
-Tutte le altre colonne della griglia visualizzano le impostazioni utilizzate nel tab **Parametri** della Schedulazione relativa alla riga selezionata.
+**periodo**: visualiza el tipo de previsión, semanal o mensual;
 
-**Risultato schedulazione**
+**giorno**: visualiza el día de la semana designado como día en el cual debe caer la fecha de finalización del pedido de producción programado directamente desde la Definición MPS.
 
-In base alla riga selezionata nella griglia, in questa sezione compariranno eventuali errori e/o warning con i dettagli richiesti dall'utente nel tab **Monitor**.
+Todas las demás columnas de la cuadrícula visualizan las configuraciones utilizadas en la pestaña **parametri** de la programación relacionada con la fila seleccionada.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+**Resultado de la programación (Risultato schedulazione)**
 
+En función de la fila seleccionada en la cuadrícula, en esta sección aparecerán posibles errores y/o advertencias con los detalles solicitados por el usuario en la pestaña **monitor**.
 
-
-
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

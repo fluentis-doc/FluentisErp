@@ -1,8 +1,8 @@
 ---
-title: Listini di vendita del contatto
+title: Listas de precios del contacto (Listini di vendita del contatto)
 sidebar_position: 14
 ---
 
-Questa è una delle tab dei **Contatti CRM**.
+Esta es una de las pestañas de **contatti crm**.  
 
-In questa tab vengono visualizzati i listini di vendita validi per il contatto, che verranno applicati nei documenti intestati al contatto. In fase di conversione del contatto in cliente, questi dati verranno riportati. 
+En esta pestaña se visualizan las listas de precios válidas para el contacto, que se aplicarán en los documentos dirigidos al contacto. Al convertir el contacto en cliente, estos datos serán registrados.

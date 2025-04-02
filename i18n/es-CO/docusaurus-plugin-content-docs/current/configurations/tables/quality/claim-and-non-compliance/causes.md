@@ -1,38 +1,38 @@
 ---
-title: Cause
+title: cause
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Cause**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Reclamos y No Conformidades > cause (Tabelle > Qualità > Reclami e Non conformità > Cause)**.
 
-In questa tabella è possibile codificare le *Cause*, previste ed effettive, che hanno causato una situazione non conforme.   
-Alcuni esempi di utilizzo dei *Difetti riscontrati* li troviamo nelle gestioni:
-> **Reclami** - nei tabulatori *Gestione difetti*, *Gestione 8D > Cause* e *Gestione 8D > Azioni permanenti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*.
+En esta tabla es posible codificar las *cause*, previstas y efectivas, que han ocasionado una situación no conforme.  
+Algunos ejemplos de uso de los *Defectos encontrados* los encontramos en las gestiones:
+> **reclami** - en las pestañas *gestione difetti*, *Gestión 8D > cause (Gestione 8D > Cause)* y *Gestión 8D > Acciones permanentes (Gestione 8D > Azioni permanenti)*;  
+> **non conformità** - en la pestaña *gestione difetti*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Cause**
+**Búsqueda de cause (Ricerca Cause)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Cause**
+**Inserción de cause (Inserimento Cause)**
 
-Per poter inserire nuove *Cause* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *cause* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben introducir al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice della *Causa*.   
-> **Descrizione causa**: è la descrizione della *Causa*.   
-> **Presunta**: indica l'attivazione della causa nelle *Cause presunta*.   
-> **Effettiva**: indica l'attivazione della causa nelle *Cause effettive*.   
-> **Reclami**: indica l'attivazione della causa presunta e/o effettiva nella gestione dei *Reclami*.   
-> **Non conformità interne**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità interne*.   
-> **Non conformità a fornitore**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità a fornitore*.   
-> **Non conformità a cliente**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità a cliente*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la causa è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+*Campos específicos (Campi specifici)*:  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **codice**: es el código de la *Causa*.  
+> **descrizione causa**: es la descripción de la *Causa*.  
+> **presunta**: indica la activación de la causa en las *cause presuntas*.  
+> **effettiva**: indica la activación de la causa en las *cause efectivas*.  
+> **reclami**: indica la activación de la causa presunta y/o efectiva en la gestión de los *Reclamos*.  
+> **non conformità interne**: indica la activación de la causa presunta y/o efectiva en la gestión de las *No conformidades internas*.  
+> **non conformità a fornitore**: indica la activación de la causa presunta y/o efectiva en la gestión de las *No conformidades a proveedor*.  
+> **non conformità a cliente**: indica la activación de la causa presunta y/o efectiva en la gestión de las *No conformidades a cliente*.  
+> **Puntuación cálculo índice de cualificación proveedor (Punteggio calcolo indice di qualificazione fornitore)**: es la puntuación de descuento del *Bonus* utilizada durante la *Evaluación periódica de proveedores sobre No conformidades*.  
+> **attiva**: indica si la causa sigue siendo válida y utilizable.  
+> **note**: anotaciones libres.
+
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

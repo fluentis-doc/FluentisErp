@@ -1,27 +1,27 @@
 ---
-title: Tipi documento, Numerazione e Tipi Fatt.
+title: Tipos de documento, Numeración y Tipos de Facturación (Tipi documento, Numerazione e Tipi Fatt.)
 sidebar_position: 2
 ---
 :::note NOTA:
-Le seguenti istruzioni riguardano la procedura di generazione automatizzata delle auto-fatture di vendita create al fine di comunicare allo SDI, tramite il circuito della fatturazione elettronica, i dati sugli acquisti precedentemente comunicati tramite l'abrogato adempimento noto come "Esterometro".
+Las siguientes instrucciones se refieren al procedimiento de generación automatizada de las autofacturas de venta creadas para comunicar al SDI, a través del circuito de la facturación electrónica, los datos sobre las compras previamente comunicados a través del cumplimiento derogado conocido como "Esterómetro".
 :::
 
-Occorre verificare che, nei tipi documento contabili, siano stati codificate le tipologie delle autofatture necessarie:
+Es necesario verificar que, en los tipos de documentos contables, se hayan codificado los tipos de autofacturas necesarios:
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/doc-types.png)
 
-La creazione dell’autofattura nelle vendite andrà a creare un nuovo documento di vendita, con un suo numero: al fine di evitare influenze sull’emissioni dei documenti di vendita normali, si suggerisce di creare tipi fatture di vendita specifici per ogni tipologia di autofattura da emettere e numeratori coerenti con i registri iva vendite dove si protocollano i giroconti automatici contabili di questi acquisti intra/reverse.
+La creación de la autofactura en las ventas generará un nuevo documento de venta, con su propio número: para evitar influencias en la emisión de los documentos de venta normales, se sugiere crear tipos de facturas de venta específicos para cada tipo de autofactura que se emita y numeradores coherentes con los registros de IVA de ventas donde se protocolan los asientos automáticos contables de estas compras intra/reverse.
 
-Ad esempio, se è previsto un unico registro dove rilevare i giri automatici sia degli acquisti intra che gli acquisti in reverse charge interno, allora sarà necessario creare un unico numeratore fatture e due tipi fatture che lo utilizzano; al contrario, se per ogni casistica è stato previsto un registro a sé stante, è necessario prevedere un numeratore per ognuno di questi. Nel caso in cui si voglia utilizzare la procedura in corso d’anno, il numeratore iniziale dovrà corrispondere con il prossimo protocollo iva da attribuire in ognuno di questi registri.
+Por ejemplo, si se prevé un único registro donde registrar los giros automáticos tanto de las compras intra como de las compras en reverse charge interno, será necesario crear un único numerador de facturas y dos tipos de facturas que lo utilicen; en cambio, si para cada caso se ha previsto un registro separado, es necesario prever un numerador para cada uno de estos. En caso de desear utilizar el procedimiento durante el año, el numerador inicial deberá corresponder al próximo protocolo de IVA que se atribuirá en cada uno de estos registros.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/numeration.png)
 
-:::danger ATTENZIONE
-Lo SDI non è in grado di riconoscere la differenza tra TD01 e TD18 (ad esempio), l'unica differenza che riconosce è tra TD01 e TD04 (note di credito). Pertanto risulta opportuno definire una formula nel numeratore che generi un suffisso nella numerazione al fine di differenziare le varie tipologie di documento evitando lo scarto per numerazione duplicata.
+:::danger ATENCIÓN
+El SDI no puede reconocer la diferencia entre TD01 y TD18 (por ejemplo), la única diferencia que reconoce es entre TD01 y TD04 (notas de crédito). Por lo tanto, es oportuno definir una fórmula en el numerador que genere un sufijo en la numeración para diferenciar los varios tipos de documento evitando el rechazo por numeración duplicada.
 
-Si rinvia alla pagina dei numeratori Fluentis ricordando **a titolo di esempio** che una formula (campo *Formula numero* nella testata del numeratore) potrebbe essere Number.ToString() + "/RC" per le autofatture generate da un acquisto in reverse charge.
+Se remite a la página de numeradores de Fluentis recordando **a título de ejemplo** que una fórmula (campo *formula numero* en el encabezado del numerador) podría ser Number.ToString() + "/RC" para las autofacturas generadas por una compra en reverse charge.
 :::
 
-I tipi fatture per queste autofatture avranno associato i relativi numeratori, così come la causale contabile (la stessa del giroconto automatico nelle vendite) e il tipo documento contabile:
+Los tipos de facturas para estas autofacturas tendrán asociados los numeradores correspondientes, así como la causal contable (la misma del giroconto automático en las ventas) y el tipo de documento contable:
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/invoice-type.png)

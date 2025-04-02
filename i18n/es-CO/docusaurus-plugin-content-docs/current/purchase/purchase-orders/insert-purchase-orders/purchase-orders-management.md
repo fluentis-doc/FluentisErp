@@ -1,324 +1,320 @@
 ---
-title: Nuovo ordine fornitore
+title: Nuevo pedido proveedor (Nuovo ordine fornitore)
 sidebar_position: 2
 ---
- 
-La form si trova nell'area **Acquisti > Ordini fornitori** e contiene i dettagli relativi ai prodotti o servizi da acquistare, inclusi quantità, prezzi, termini di consegna, condizioni di pagamento e altre specifiche contrattuali.
- 
-Dalla form di ricerca degli ordini è possibile creare un nuovo documento mediante il pulsante **Nuovo** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
- 
-## *Come creare un ordine fornitore*
+
+El formulario se encuentra en el área **Compras > Pedidos proveedores** y contiene los detalles relacionados con los productos o servicios a comprar, incluidos cantidades, precios, términos de entrega, condiciones de pago y otras especificaciones contractuales.
+
+Desde el formulario de búsqueda de pedidos es posible crear un nuevo documento mediante el botón **Nuevo** o abrir uno existente para visualizarlo y/o modificarlo.
+
+## *Cómo crear un pedido proveedor (Come creare un ordine fornitore)*
 
 <details>
- 
-<summary>Clicca per vedere i passaggi fondamentali</summary>
- 
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
- 
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
- 
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
- 
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
- 
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
- 
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
- 
+
+<summary>Clic para ver los pasos fundamentales (Clicca per vedere i passaggi fondamentali)</summary>
+
+1. **Introduce los datos obligatorios**: *tipo ordine* y *fornitore*. *anno*, *numero* y *data inserimento* se propondrán automáticamente.
+
+2. **Introduce o modifica los datos opcionales** de la cabecera: como fechas de entrega, posibles *sconti*, la *destinazione*, etc.
+
+3. **Introduce los Artículos**: mediante doble clic en el campo *codice articolo* se abre la ayuda de artículos que permite buscar y seleccionar un artículo existente. Todos los demás datos de la línea, como *unità di misura*, *quantità*, *prezzo*, se propondrán automáticamente, pero pueden ser modificados. Alternativamente, es posible seleccionar como *tipo riga* un *articolo non codificato* e ingresar manualmente los datos siguientes.
+
+4. **Introduce posibles descuentos u otra información adicional** en las pestañas *sconti/listini* y *dati articolo*.
+
+5. **riepiloghi** e introduce posibles gastos o descuentos finales.
+
+6. Una vez revisado y confirmado el pedido, **introduce una *data conferma* y activa el indicador *stampato* en la cabecera** para hacer el pedido disponible para los procedimientos de cumplimiento.
+
 </details>
- 
- 
-## **1. Dati obbligatori**
- 
-Per creare l'ordine, l'utente deve inserire i campi obbligatori:
- 
-- **Tipo ordine**: predefinito in *Configurazione > Tabelle > Acquisti > Tipi ordini fornitori*. Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il numero ordine fornitore in base alla data inserimento e all'ultimo numero inserito. Inoltre, se nel *Tipo ordine* è settato il flag [Conferma ordine automatica](/docs/configurations/tables/purchase/purchase-orders-type), viene proposta la data conferma ordine uguale alla data inserimento ordine;  
-- **Anno**: viene inserito automaticamente l'anno in corso, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Numero**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Data inserimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
- 
-## **2. Testata** {#header}
- 
-Continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
- 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, ad esempio dal filtro di ricerca degli [**Ordini clienti**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), dalla procedura di [**Creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o dalla procedura di [**Creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/procedures/order-creation), questi dati vengono ripresi dal *documento d'origine* da cui è stato generato.
+
+## **1. Datos obligatorios (Dati obbligatori)**
+
+Para crear el pedido, el usuario debe ingresar los campos obligatorios:
+
+- **tipo ordine**: predefinido en *Configuración > Tablas > Compras > Tipos de pedidos proveedores (Configurazione > Tabelle > Acquisti > Tipi ordini fornitori)*. Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el número de pedido proveedor según la fecha de ingreso y el último número ingresado. Además, si en el *tipo ordine* está activado el indicador [Confirmación automática del pedido (Conferma ordine automatica)](/docs/configurations/tables/purchase/purchase-orders-type), se propone la fecha de confirmación del pedido igual a la fecha de ingreso del pedido;  
+- **anno**: se inserta automáticamente el año en curso, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
+- **numero**: se propone automáticamente según el tipo, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
+- **data inserimento**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente siempre respetando la regla de progresión entre fecha y número;  
+- **fornitore**: puede ser ingresado utilizando la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) o [manualmente (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+
+## **testata** {#header}
+
+Continúa introduciendo los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) o con la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+
+:::note Recuerda (Ricorda)
+Si el documento se *crea automáticamente*, por ejemplo, desde el filtro de búsqueda de [**ordini clienti**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), desde el procedimiento de [**creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o del procedimiento de [**creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/procedures/order-creation), estos datos se toman del *documento de origen* del cual se generó.
 :::
- 
-### 2.1 Dati fornitore
- 
-Inserendo il **Fornitore**, vengono proposti automaticamente tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni:
- 
-- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).  
-- **Nazione**: sezione contenente i dati [*Nazione*](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).  
-- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
-- **Pagamenti**: sezione contenente i dati [*Pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Sconti*, *Destinazione* e *Vettore*.    
- 
-Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
- 
-### 2.2 Dati facoltativi testata
- 
-- **Data richiesta consegna** e **Data consegna**: se impostate prima di inserire gli articoli all'interno dell'ordine, esse saranno riportate anche sulle singole righe articolo. In alternativa, sarà sufficiente premere il pulsante *Sostituisci data prevista consegna nelle righe* nella ribbon bar per aggiornare le date sulle righe articolo.  
-- **Data conferma ordine**: per i *Tipi ordine* che hanno il flag [Conferma ordine automatica](/docs/configurations/tables/purchase/purchase-orders-type) . Viene inserita in automatico la data corrente al momento di creazione dell'ordine. Per poter effettuare l'evasione di un ordine fornitore, è necessario inserire una *Data conferma*.  
-- **Decorrenza**: è la data di decorrenza per il calcolo delle scadenze di pagamento.  
-- **Annotazioni fornitore**: questo campo viene ripreso dall'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), ma può essere inserito anche manualmente.  
-- **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore altrimenti può essere inserito manualmente.    
-Nel caso in cui l'ordine viene completato con la procedura *Evasione da progetto*, nei campi *Annotazioni fornitore* e *Nostro/Vostro riferimento* viene proposta l'informazione presente nei campi omonimi della commessa d'acquisto. Questo trasferimento è valido solo nel caso di ordine fornitore creato tramite il prelievo dei dati da un solo documento d'origine.  
-- **Note iniziali ordine**: si possono selezionare le note che sono state inserite in precedenza nella tabella che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo, l'utente deve effettuare doppio click sul campo *Note iniziale* per aprire Help note codificate e selezionare i dati.  
-- **Progetto:** usando l'help di campo, si può collegare il documento a un [progetto](/docs/project-management/projects/search-projects-intro). Questa associazione funziona solo al livello della testata dell'articolo. Il progetto viene inserito automaticamente se l'ordine fornitore nasce a fronte di un documento che lo contiene (ad esempio da ordini pianificati di acquisto).  
-- **Commessa di produzione**: usando l'help di campo, si può collegare il documento ad una [commessa di produzione](/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders). Se l'ordine viene creato dal rilascio degli ordini pianificati di acquisto, la commessa viene proposta automaticamente.  
-- **Nazione**, *Lingua*, *Zona* sono ripresi dall'anagrafica del fornitore, se presenti, altrimenti possono essere inseriti manualmente.  
-- **Operatore**: permette di inserire l'utente che crea il documento. Se nei Parametri ordini fornitore il flag [Codice operatore obbligatorio](/docs/configurations/parameters/purchase/purchase-orders-parameters) è attivo, sarà obbligatorio inserire il dipendente in questo campo per poter salvare l'ordine. I [dipendenti](/docs/project-management/registers/employee/new-employee) devono essere inseriti in precedenza nella tabella *Dipendenti*.  
-- **Spedizioni**, *Porto* e *Imballo* sono ripresi dall'anagrafica del fornitore, se presenti, altrimenti possono essere inseriti manualmente.  
-- **Listino**: se nell'anagrafica del fornitore c'è un listino con flag *Predefinito*, esso sarà proposto in questo campo congiuntamente alle sue date di validità.  
-- **Listini di aggiornare**: se tale flag è attivo, il relativo listino di acquisto si aggiorna automaticamente in fase di salvataggio con le informazioni dell'articolo. Questo flag è modificabile anche a livello di riga articolo.  
-- **Punti vendita**: si trova sotto il menù della voce *Spedizioni* e viene gestito solo dalla verticalizzazione riguardante le catene di distribuzione. Nel caso di un ordine fornitore creato da trasferimento di merci tra punti vendita di una stessa catena, in questo campo viene visualizzato il punto vendita di origine della merce.
-- **Stato evasione**: Quando l'ordine viene evaso tramite un DDT o una fattura, il suo *Stato evasione* cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*. L'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la data evasione nel campo *In data*.  
- 
-I seguenti flag indicano lo *stato dell'ordine*:
-- **Stampato**: questo flag viene attivato in automatico al momento di lancio della *Stampa* definitiva mediante il pulsante posto nella ribbon bar. In alternativa, può essere attivato manualmente per poter effettuare l'evasione dell'ordine in un DDT o in una fattura;  
-- **Annullato**: quando l'utente vuole annullare un documento invece di cancellarlo, automaticamente l'ordine viene messo forzatamente evaso in tutte le sue righe articolo;  
-- **Storicizzato**: quando l'utente lo storicizza.
- 
-#### Pulsanti specifici
- 
-> **Evasione da progetto**: richiama la procedura per creare un ordine fornitore da una commessa di acquisto. Si attiva con l'inserimento del fornitore e del tipo ordine fornitore. Per poter evadere la commessa di acquisto è necessario che sia stampata e confermata.   
-> **Sostituisci data prev. consegna nelle righe**: pemette, dopo aver specificato la *Data richiesta consegna* e/o la *Data consegna* in testata ordine, di sostituire in massa tali date nelle righe articolo già inserite.
- 
-### 2.3 Pagamenti
- 
-Le [Soluzioni di pagamento](/docs/configurations/tables/general-settings/payment-terms) sono riportate in automatico dall'*Anagrafica fornitore - tab Pagamenti* e possono essere modificate/cancellate dall'utente.
- 
-Se al [Tipo pagamento](/docs/configurations/tables/general-settings/payment-types) è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale DDT.
- 
-Se il documento nasce da una commessa o da un'offerta fornitore, il tipo pagamento viene ripreso dal documento di origine.
- 
-#### Pulsante specifico
- 
-**Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
- 
- 
-### 2.4 Sconti
- 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti*. Possono essere modificati/cancellati dall'utente.
- 
+
+### 2.1 Datos del proveedor (Dati fornitore)
+
+Al ingresar el **fornitore**, se proponen automáticamente todos los datos específicos de la pestaña **testata**, según los datos configurados previamente en la [anagrafía del proveedor (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) en los campos correspondientes a su dirección y en las secciones:
+
+- **divisa**: sección que contiene los datos de [Divisa (Divisa)](/docs/configurations/tables/general-settings/currencies), [Cambio (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de divisa (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).  
+- **nazione**: sección que contiene los datos de [*nazione*](/docs/guide/common/glossary/glossary-intro#country), [Idioma (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zona (Zona)](/docs/guide/common/glossary/glossary-intro#zone).  
+- **spedizione**: sección que contiene los datos de [*spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Puerto (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Lista de precios (Listino)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predeterminada y su [intervalo de validez (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **pagamenti**: sección que contiene los datos de [*pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *sconti*, *destinazione* y *vettore*.
+
+Todos estos campos pueden ser eliminados o modificados manualmente por el usuario.
+
+### 2.2 Datos opcionales de la cabecera (Dati facoltativi testata)
+
+- **data richiesta consegna** y **data consegna**: si se configuran antes de ingresar los artículos dentro del pedido, se trasladarán también a las líneas de artículos individuales. Alternativamente, simplemente se deberá presionar el botón *Reemplazar fecha prevista de entrega en las líneas* en la barra de ribbon para actualizar las fechas en las líneas de artículos.  
+- **data conferma ordine**: para los *tipi ordine* que tienen activado el indicador [Confirmación automática del pedido (Conferma ordine automatica)](/docs/configurations/tables/purchase/purchase-orders-type). Se inserta automáticamente la fecha actual al momento de la creación del pedido. Para poder llevar a cabo el cumplimiento de un pedido proveedor, es necesario ingresar una *data conferma*.  
+- **decorrenza**: es la fecha de inicio para el cálculo de los vencimientos de pago.  
+- **Anotaciones del proveedor (Annotazioni fornitore)**: este campo se toma de la [anagrafía del proveedor (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), pero también puede ser ingresado manualmente.  
+- **nostro/vostro riferimento**: en estos campos generalmente se indica una referencia interna y una referencia del proveedor para el documento. Si está presente, se toma de la anagrafía del proveedor, de lo contrario puede ser ingresado manualmente.   
+En caso de que el pedido se complete con el procedimiento *evasione da progetto*, en los campos *Anotaciones del proveedor (Annotazioni fornitore)* y *nostro/vostro riferimento* se propone la información presente en los campos homónimos de la orden de compra. Esta transferencia es válida solo en el caso de un pedido proveedor creado a partir de un solo documento de origen.  
+- **note iniziali ordine**: se pueden seleccionar las notas que se han ingresado anteriormente en la tabla que se encuentra en la ruta *Configuración > Utilidades > Gestión de notas codificadas (Configurazione > Utilità > Gestione note codificate)*. Para esto, el usuario debe hacer doble clic en el campo *Notas iniciales* para abrir la ayuda de notas codificadas y seleccionar los datos.  
+- **progetto**: utilizando la ayuda de campo, se puede vincular el documento a un [proyecto (progetto)](/docs/project-management/projects/search-projects-intro). Esta asociación funciona solo a nivel de la cabecera del artículo. El proyecto se inserta automáticamente si el pedido proveedor surge de un documento que lo contiene (por ejemplo, desde los pedidos planificados de compra).  
+- **commessa di produzione**: utilizando la ayuda de campo, se puede vincular el documento a una [orden de producción (commessa di produzione)](/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders). Si el pedido se crea desde la liberación de los pedidos planificados de compra, la orden se propone automáticamente.  
+- **nazione**, *lingua*, *zona* se toman de la anagrafía del proveedor, si están presentes, de lo contrario pueden ser ingresados manualmente.  
+- **operatore**: permite ingresar el usuario que crea el documento. Si en los Parámetros de pedidos proveedores el indicador [Código de operador obligatorio (Codice operatore obbligatorio)](/docs/configurations/parameters/purchase/purchase-orders-parameters) está activo, será obligatorio insertar al empleado en este campo para poder guardar el pedido. Los [empleados (dipendenti)](/docs/project-management/registers/employee/new-employee) deben ser ingresados previamente en la tabla *Empleados*.  
+- **spedizioni**, *porto* y *imballo* se toman de la anagrafía del proveedor, si están presentes, de lo contrario pueden ser ingresados manualmente.  
+- **listino**: si en la anagrafía del proveedor existe un listado con el indicador *predefinito*, se propondrá en este campo junto con sus fechas de validez.  
+- **Listas a actualizar (Listini di aggiornare)**: si este indicador está activo, la lista de compras correspondiente se actualiza automáticamente al momento de guardar con la información del artículo. Este indicador también puede ser modificado a nivel de la línea del artículo.  
+- **punti vendita**: se encuentra bajo el menú de la opción *spedizioni* y se gestiona solo desde la verticalización relacionada con las cadenas de distribución. En caso de un pedido proveedor creado por el traslado de mercancías entre puntos de venta de una misma cadena, en este campo se visualizará el punto de venta de origen de la mercancía.  
+- **stato evasione**: cuando el pedido se cumple a través de un DDT o una factura, su *Estado de cumplimiento* cambia automáticamente de *non evaso* a *parzialmente evaso* o *evaso*. El usuario puede forzar el cumplimiento de un pedido no cumplido totalmente y cuando esto sucede, también se guarda la fecha de cumplimiento en el campo *in data*.  
+
+Los siguientes indicadores indican el *estado del pedido*:
+- **stampato**: este indicador se activa automáticamente en el momento de lanzar la *Impresión* definitiva mediante el botón presente en la barra de ribbon. Alternativamente, puede activarse manualmente para poder cumplir el pedido en un DDT o en una factura;  
+- **annullato**: cuando el usuario desea anular un documento en lugar de borrarlo, automáticamente el pedido se pone forzosamente como cumplido en todas sus líneas de artículo;  
+- **storicizzato**: cuando el usuario lo historiar.
+
+#### Botones específicos (Pulsanti specifici)
+
+> **evasione da progetto**: llama al procedimiento para crear un pedido proveedor a partir de una orden de compra. Se activa con la introducción del proveedor y del tipo de pedido proveedor. Para poder cumplir con la orden de compra es necesario que esté impresa y confirmada.  
+> **Reemplazar fecha previsto de entrega en las líneas (Sostituisci data prev. consegna nelle righe)**: permite, después de especificar la *data richiesta consegna* y/o la *data consegna* en la cabecera del pedido, reemplazar en masa tales fechas en las líneas de artículo ya ingresadas.
+
+### 2.3 Pagos (Pagamenti)
+
+Las [Soluciones de pago (Soluzioni di pagamento)](/docs/configurations/tables/general-settings/payment-terms) se traen automáticamente desde la *Anagrafía del proveedor - pestaña Pagos (Anagrafica fornitore - tab Pagamenti)* y pueden ser modificadas/eliminadas por el usuario.
+
+Si al [Tipo de pago (Tipo pagamento)](/docs/configurations/tables/general-settings/payment-types) se le asocia un descuento financiero, el importe del descuento se considera solo a efectos contables, es decir, en los vencimientos del documento y no en el total DDT.
+
+Si el documento surge de una orden de compra o de una oferta del proveedor, el tipo de pago se toma del documento de origen.
+
+#### Botón específico (Pulsante specifico)
+
+**cancella pagamenti**: utilizado para eliminar las líneas de pago seleccionadas.
+
+### 2.4 Descuentos (Sconti)
+
+Se proponen solo los descuentos predeterminados tomados de la *Anagrafía del proveedor > pestaña Descuentos (Anagrafica fornitore > tab Sconti)*. Pueden ser modificados/eliminados por el usuario.
+
 import TabDiscount from './../../../import/sections/tab-discount.md'
- 
+
 <TabDiscount />
- 
-### 2.5 Destinazione
- 
-L'informazione inserita nell'*Anagrafica fornitore > tab Consegne* viene proposta, solo se esistono dati di default. Il combo box propone tutti i destinatari, le destinazioni e i vettori inseriti nell'anagrafica fornitore.
- 
-Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti.
- 
-### 2.6 Vettore
- 
-In questo campo è possibile inserire il *Vettore* che effettuerà la spedizione dell'ordine. Se questo è stato inserito nell'*Anagrafica fornitore > tab Consegne*, sarà possibile selezionarlo dal menù a tendina della seconda colonna. Alternativamente, sarà sufficiente fare doppio click sulla terza colonna (*Vettore*) per selezionare uno dei contatti della società.
- 
-Opzionalmente si possono aggiungere i dettagli della *Targa* del vettore e la *Data/Ora trasporto*.
- 
-### 2.7 Extra Data
- 
+
+### 2.5 Destinación (Destinazione)
+
+La información ingresada en la *Anagrafía del proveedor > pestaña Entregas (Anagrafica fornitore > tab Consegne)* se propone, solo si existen datos predeterminados. El cuadro combinado propone todos los destinatarios, las destinaciones y los transportistas ingresados en la anagrafía del proveedor.
+
+Las direcciones de envío (destinatario/destinación y transportista) pueden ser ingresadas solo descriptivamente sin ser previamente ingresadas entre los contactos.
+
+### 2.6 Transportista (Vettore)
+
+En este campo es posible ingresar el *vettore* que realizará el envío del pedido. Si este ha sido ingresado en la *Anagrafía del proveedor > pestaña Entregas (Anagrafica fornitore > tab Consegne)*, será posible seleccionarlo desde el menú desplegable de la segunda columna. Alternativamente, basta con hacer doble clic en la tercera columna (*vettore*) para seleccionar uno de los contactos de la empresa.
+
+Opcionalmente, se pueden agregar detalles del *targa* del transportista y la *Fecha/Hora de transporte (Data/Ora trasporto)*.
+
+### 2.7 Datos Extra (Extra Data)
+
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
- 
+
 <TabExtraData />
- 
-### 2.8 Procedure testata - Evasione da progetto
- 
-La procedura di ripresa articoli da progetto permette di evadere anche parzialmente la commessa di acquisto. Sono proposte tutte le commesse non evase, non forzatamente evase e parzialmente evase. Per poter essere evasa una commessa di acquisto, deve essere *Stampata* e avere una *Data conferma*.
- 
-Prima di procedere con l'evasione, sarà necessario inserire il *Tipo di ordine* che si vuole creare e il *Fornitore* nella testata del documento. Successivamente, premendo il pulsante **Evasione da progetto**, si aprirà la form dove è possibile filtrare le commesse relative al fornitore del documento.
- 
-Nell'area di filtro, è possibile scegliere se visualizzare i dati in una Griglia, una Struttura gerarchica oppure entrambe.
- 
-> - La **Struttura gerarchica** permette di avere una suddivisione più chiara dei vari ordini e degli articoli contenuti in ciascuno di essi, facilitando anche la selezione massiva degli articoli all'interno di una commessa.  
-> - La **Griglia** consente una maggiore personalizzazione della form mediante aggiunta di campi da *Object navigator*. In questo caso, la selezione massiva va effettuata mediante l'utilizzo dei tasti della tastiera e cliccando sul pulsante *Attiva/Disattiva solo righe selezionate* nella ribbon bar.
- 
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verranno visualizzati nella parte sottostante tutte le commesse stampate, confermate e non evase oppure evase parzialmente.
- 
+
+### 2.8 Procedimiento de cabecera - Cumplimiento de proyecto (Procedure testata - Evasione da progetto)
+
+El procedimiento de recuperación de artículos del proyecto permite cumplir también parcialmente la orden de compra. Se proponen todas las órdenes no cumplidas, no cumplidas forzadamente y cumplidas parcialmente. Para que una orden de compra pueda ser cumplida, debe estar *stampata* y tener una *data conferma*.
+
+Antes de proceder con el cumplimiento, será necesario ingresar el *Tipo de pedido (Tipo di ordine)* que se desea crear y el *fornitore* en la cabecera del documento. Posteriormente, al presionar el botón **evasione da progetto**, se abrirá el formulario donde es posible filtrar las órdenes relacionadas con el proveedor del documento.
+
+En el área de filtrado, es posible elegir si visualizar los datos en una Cuadrícula (Griglia), una Estructura jerárquica (Struttura gerarchica) o ambas.
+
+> - La **struttura gerarchica** permite tener una división más clara de los diversos pedidos y de los artículos contenidos en cada uno de ellos, facilitando también la selección masiva de artículos dentro de una orden.  
+> - La **Cuadrícula (Griglia)** permite una mayor personalización del formulario mediante la adición de campos desde el *object navigator*. En este caso, la selección masiva debe realizarse mediante el uso de las teclas del teclado y haciendo clic en el botón *Activar/Desactivar solo líneas seleccionadas (Attiva/Disattiva solo righe selezionate)* en la barra de ribbon.
+
+Una vez configurados todos los *filtri* deseados, al hacer clic en el botón de *ricerca* se visualizarán en la parte inferior todas las órdenes impresas, confirmadas y no cumplidas o cumplidas parcialmente.
+
 :::important NOTA
-La procedura riprende tutti i dati presenti nella commessa e, come conseguenza, saranno applicate le condizioni di acquisto presenti nella commessa, anche se queste attualmente sono cambiate.
+El procedimiento recupera todos los datos presentes en la orden y, como consecuencia, se aplicarán las condiciones de compra presentes en la orden, incluso si estas han cambiado actualmente.
 :::
- 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
- 
-- Selezionare tutti o alcuni degli articoli proposti: per farlo basterà selezionare il flag presente all'inizio della riga articolo. La Quantità da evadere sarà automaticamente impostata uguale alla Quantità residua.
-- Selezionare alcuni articoli per una quantità parziale. In questo caso, si dovrà modificare la Quantità da evadere.
- 
-Per completare la procedura, bisognerà cliccare sul pulsante Evasione, che andrà a riprendere tutti i dati presenti nella commessa e li riporterà nell'ordine.
- 
-#### Pulsanti specifici
- 
-> **Ricerca**: permette di cercare le commesse di acquisto;  
-> **Esecuzione**: permette di trasferire gli articoli selezionati;  
-> **Seleziona/Deseleziona tutti**: permette di selezionare/deselezionare tutti gli articoli dalla lista;  
-> **Attiva/Disattiva solo righe selezionate**: utile soprattutto per l'evasione mediante griglia; permette di attivare/disattivare i flag di tutte le righe selezionate.  
- 
-## **3. Articoli** {#items}
- 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
- 
+
+En la cuadrícula de resultados, el usuario tiene la posibilidad de:
+
+- Seleccionar todos o algunos de los artículos propuestos: para hacerlo, simplemente seleccione el indicador presente al inicio de la línea del artículo. La Cantidad a cumplir se establecerá automáticamente igual a la Cantidad residual.
+- Seleccionar algunos artículos para una cantidad parcial. En este caso, será necesario modificar la Cantidad a cumplir.
+
+Para completar el procedimiento, será necesario hacer clic en el botón de Cumplimiento, que tomará todos los datos presentes en la orden y los llevará al pedido.
+
+#### Botones específicos (Pulsanti specifici)
+
+> **ricerca**: permite buscar las órdenes de compra;  
+> **esecuzione**: permite transferir los artículos seleccionados;  
+> **Seleccionar/Deseleccionar todos (Seleziona/Deseleziona tutti)**: permite seleccionar/deseleccionar todos los artículos de la lista;  
+> **Activar/Desactivar solo líneas seleccionadas (Attiva/Disattiva solo righe selezionate)**: útil especialmente para el cumplimiento mediante cuadrícula; permite activar/desactivar los indicadores de todas las líneas seleccionadas.  
+
+## **articoli** {#items}
+
+En esta pestaña se ingresan todos los artículos con sus respectivos datos.
+
 import InsertMode from './../../../import/sections/insert-mode.md'
- 
+
 <InsertMode />
- 
-Per inserire un nuovo articolo nella griglia, basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
- 
-### 3.1 Dati obbligatori
- 
+
+Para ingresar un nuevo artículo en la cuadrícula, simplemente colóquese en la línea para completar los diversos datos o utilice el botón *nuovo articolo* presente en la barra de ribbon.
+
+### 3.1 Datos obligatorios (Dati obbligatori)
+
 import RowNumber from './../../../import/fields/row-number.md'
- 
+
 <RowNumber />
- 
-- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
-> - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
-> - *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino. <br />
-> - *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti; se l'articolo spesa è codificato e di interesse fiscale, verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale, non verranno movimentati a magazzino. <br />
-> - *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
- 
+
+- **tipo riga**: ofrece la posibilidad de seleccionar, desde el cuadro combinado, artículos con características diferentes:  
+> - *articolo codificato*: son los artículos codificados en la anagrafía y pueden ser contabilizados en contabilidad analítica y registrados en el almacén. <br />  
+> - *Artículo no codificado (Articolo non-codificato)*: son artículos descriptivos que pueden ser contabilizados en contabilidad analítica pero no pueden ser movidos a almacén. <br />  
+> - *articolo spese*: son artículos codificados o no codificados y se resumen de manera distinta en los resúmenes de los documentos; si el artículo de gastos está codificado y es de interés fiscal, será movido al almacén, si es no codificado o no de interés fiscal, no será movido a almacén. <br />  
+> - *articolo note*: son notas descriptivas incluidas en la impresión del documento; no impactan en la contabilidad y en el almacén.  
+
 :::note Nota
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga (*Articolo codificato*) vengono inseriti automaticamente.
+Si se comienza directamente con la inserción del artículo, su clase, código y tipo de línea (*articolo codificato*) se ingresan automáticamente.
 :::
- 
+
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
- 
+
 <ItemClassDescription />
- 
+
 import UM from './../../../import/fields/item-um.md'
- 
+
 <UM />
- 
+
 import Quantity from './../../../import/fields/item-quantity.md'
- 
+
 <Quantity />
- 
+
 import Price from './../../../import/fields/item-price.md'
- 
+
 <Price />
- 
-In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo, se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) il flag *Costo a zero in assenza di listini* non è attivo.
- 
+
+En ausencia del listado, el dato propuesto puede ser tomado del *costo ultimo* de la anagrafía del artículo, si en los [Parámetros de pedidos proveedores (Parametri ordini fornitori)](/docs/configurations/parameters/purchase/purchase-orders-parameters) el indicador *Costo a cero en ausencia de listines (Costo a zero in assenza di listini)* no está activo.
+
 import Vat from './../../../import/fields/item-vat.md'
- 
+
 <Vat />
- 
-- **Importo**: viene calcolato in automatico al netto degli sconti.
-- **Totale sconti**: indica l'importo totale degli sconti presenti nel tab *Sconti/Listini* per ogni riga articolo.    
- 
-### 3.2 Dati facoltativi articoli
- 
-- **Codice/Descrizione articolo fornitore**: in questa sezione si può aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo; questo dato viene proposto in automatico se nell'anagrafica dell'articolo (tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item)) è stato associato un articolo fornitore.
- 
-- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
- 
-- **Data richiesta consegna** e **Data consegna**: indicano la data richiesta e prevista per la consegna. Possono essere proposte le date inserite nel tab testata oppure si possono modificare manualmente.
- 
-#### Pulsanti specifici
- 
-> **Suddividi la quantità in più date consegna**: utilizzato per suddividere la riga ordine in più righe a seconda della consegna richiesta. Questa procedura aprirà una nuova form in cui si dovrà inserire la nuova *data richiesta consegna* e le quantità previste per ciascuna data.  
-> **Confezionamento**: si abilita dopo il salvataggio dell'ordine e permette di creare una UDC a partire dalla riga selezionata. La riga deve essere un articolo codificato e salvato nel documento. L'utente deve avere i diritti all'interno dei [Parametri di carico/scarico](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) per il caricamento del pallet. Inoltre, l'articolo deve essere gestito a UDC, e in base alle impostazioni del Tipo UDC inserite nell'anagrafica articolo, tab [Confezionamento](/docs/erp-home/registers/items/create-new-item) verrà creato l'UDC rispettando i criteri.  
-> **Aggiornamento listini**: il pulsante *Aggiorna listino corrente* permette di aggiornare i prezzi nel listino corrente per ciascuna riga articolo selezionata;    
-il pulsante *Crea nuovo listino con nuova validità* invece, aprirà un pop-up in cui inserire le date di validità del nuovo listino, il quale conterrà solo le righe selezionate e sarà intestato al fornitore inserito nell'ordine.
- 
-:::note Ricorda  
-Quando si crea/aggiorna un listino mediante questa procedura, nel listino vengono riportati solo gli sconti inseriti manualmente nell'ordine.
+
+- **importo**: se calcula automáticamente en neto de descuentos.  
+- **totale sconti**: indica el importe total de los descuentos presentes en la pestaña *sconti/listini* para cada línea de artículo.    
+
+### 3.2 Datos opcionales de los artículos (Dati facoltativi articoli)
+
+- **Código/Descripción del artículo proveedor (Codice/Descrizione articolo fornitore)**: en esta sección se puede agregar el código y la descripción que el proveedor utiliza para identificar el artículo; este dato se propone automáticamente si en la anagrafía del artículo (pestaña [Proveedores preferenciales (Fornitori preferenziali)](/docs/erp-home/registers/items/create-new-item)) se ha asociado un artículo proveedor.
+
+- **tipo fatturato acquisti**: se propone el dato ingresado en la pestaña [Generalidades (Generalità)](/docs/erp-home/registers/items/create-new-item) de la anagrafía de artículos. Si este no está presente, no se propone ningún dato y al momento de contabilizar la factura, se considerará el valor ingresado en el campo *Costo/Ingreso de contrapartida predeterminado (Costo/Ricavo di contropartita predefinito)* de la anagrafía de contacto.
+
+- **data richiesta consegna** y **data consegna**: indican la fecha solicitada y prevista para la entrega. Pueden proponerse las fechas ingresadas en la pestaña de cabecera o pueden modificarse manualmente.
+
+#### Botones específicos (Pulsanti specifici)
+
+> **suddividi la quantità in più date consegna**: utilizado para dividir la línea del pedido en más líneas según la entrega solicitada. Este procedimiento abrirá un nuevo formulario donde se deberá ingresar la nueva *data richiesta consegna* y las cantidades previstas para cada fecha.  
+> **confezionamento**: se habilita después de guardar el pedido y permite crear una UDC a partir de la línea seleccionada. La línea debe ser un artículo codificado y estar guardado en el documento. El usuario debe tener los derechos correspondientes dentro de los [Parámetros de carga/descarga (Parametri di carico/scarico)](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) para la carga del pallet. Además, el artículo debe ser gestionado a UDC, y según la configuracion del Tipo UDC ingresada en la anagrafía del artículo, la pestaña [Embalaje (Confezionamento)](/docs/erp-home/registers/items/create-new-item) se creará la UDC respetando los criterios.  
+> **aggiornamento listini**: el botón *Actualizar listado actual (Aggiorna listino corrente)* permite actualizar los precios en el listado actual para cada línea de artículo seleccionada; el botón *crea nuovo listino con nuova validità*, en cambio, abrirá un pop-up donde se ingresarán las fechas de validez del nuevo listado, el cual contendrá solo las líneas seleccionadas y estará destinado al proveedor ingresado en el pedido.
+
+:::note Recuerda  
+Cuando se crea/se actualiza un listado mediante este procedimiento, en el listado solo se incluyen los descuentos ingresados manualmente en el pedido.
 :::
- 
-### 3.3 Sconti/Listini  
- 
-- **Listino**: viene proposto il listino dal quale è stato ripreso il prezzo dell'articolo, con la data inizio/fine validità e con le condizioni particolari (ad es. **Tipo scaglione** di sconto) assegnate all'articolo nel listino.
- 
-- **Prezzo manuale**: si attiva automaticamente quando il prezzo dell'articolo è stato inserito o modificato manualmente.
- 
-- **Listini da aggiornare**: se tale flag è attivo, il prezzo dell'articolo si aggiorna automaticamente nel relativo listino di acquisto in fase di salvataggio.
- 
-- **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.        
- 
-#### Pulsante specifico
- 
-**Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente.
- 
-### 3.4 Dati articolo {#items-data} 
- 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
- 
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante, essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.  
- 
-- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa, può essere selezionato tramite l'apposito help progetti.
- 
-- **Note**: sono le note relative alla riga articolo e possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati.
- 
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
- 
-- **Articoli commessa di produzione**: se l'ordine fornitore è collegato ad una commessa di produzione (mediante il rilascio di un ordine pianificato di acquisto e creazione di ordine fornitore da richiesta di acquisto), in questo campo viene riportato l'articolo padre contenuto nella commessa.
- 
-- **Richiesta di offerta**: se l'ordine è stato creato da una richiesta di offerta, mediante la procedura [Creazione Ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/procedures/order-creation), in questo campo viene riportata la richiesta di riferimento.
- 
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento del carico degli articoli relativi in magazzino. I dati sono ripresi dai [Tipi ordine](/docs/configurations/tables/purchase/purchase-orders-type), ma possono essere modificati manualmente per ciascuna riga articolo.
- 
-- **Commesse di produzione**: se l'ordine fornitore è stato creato dalla pianificazione di produzione, viene riportata la commessa di produzione di riferimento (vedi *Creazione automatica ordini*). 
- 
-- **Prezzo unità di misura alternativa**: se attivo, indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale. Questo flag, assieme ai campi *Unità di misura alternativa* e *Quantità alternativa*, è visibile solo se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters/) è stato attivato il flag *Gestione doppia unità di misura*.
- 
-- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
- 
-### 3.5 Analitica
- 
+
+### 3.3 Descuentos/Listas (Sconti/Listini)
+
+- **listino**: se propone el listado del cual se ha tomado el precio del artículo, con la fecha de inicio/finalización de validez y con las condiciones particulares (por ejemplo, **Tipo escalón de descuento (Tipo scaglione di sconto)**) asignadas al artículo en el listado.
+
+- **prezzo manuale**: se activa automáticamente cuando el precio del artículo ha sido ingresado o modificado manualmente.
+
+- **Listas a actualizar (Listini da aggiornare)**: si este indicador está activo, el precio del artículo se actualiza automáticamente en el listado de compras correspondiente al momento de guardar.
+
+- **sconti**: se proponen todos los descuentos asociados al artículo, cada uno con su propia base de cálculo y asignación.        
+
+#### Botón específico (Pulsante specifico)
+
+**cancella sconti**: permite eliminar el descuento seleccionado de la cuadrícula correspondiente.
+
+### 3.4 Datos del artículo {#items-data}
+
+Dentro de esta pestaña se presentan/se ingresan información adicional relacionada con el artículo.
+
+- **variante**: en este campo es posible seleccionar una variante del artículo entre las que previamente han sido codificadas en la pestaña [Variantes (Varianti)](/docs/erp-home/registers/items/create-new-item) de la anagrafía del artículo. Si en el listado se han ingresado precios y/o descuentos diferentes para cada variante, estos se actualizarán al seleccionar una variante diferente del artículo.
+
+- **progetto**: representa el proyecto a asociar al documento. Si en la cabecera del documento se ha ingresado un proyecto, este se replicará en todas las líneas de artículo; de lo contrario, puede seleccionarse mediante la ayuda correspondiente de proyectos.
+
+- **note**: son las notas relacionadas con la línea del artículo y pueden ser ingresadas también a través de la ayuda de notas codificadas. Se incluirán en todos los documentos generados.
+
+- **marca**: representa la marca del artículo, tomada de su anagrafía o del listado del artículo.
+
+- **articoli commessa di produzione**: si el pedido proveedor está vinculado a una orden de producción (mediante la liberación de un pedido planificado de compra y la creación de un pedido proveedor desde una solicitud de compra), en este campo se presenta el artículo padre contenido en la orden.
+
+- **richiesta di offerta**: si el pedido ha sido creado a partir de una solicitud de oferta, mediante el procedimiento [Creación de Pedido proveedor desde Oferta proveedor (Creazione Ordine fornitore da Offerta fornitore)](/docs/purchase/offer-request/procedures/order-creation), en este campo se verá la solicitud de referencia.
+
+- **Almacén y causa (Magazzino e causale)**: se proponen el almacén y la causa de referencia que aparecerán automáticamente al momento de la carga de los artículos en el almacén. Los datos se toman de los [Tipos de pedido (Tipi ordine)](/docs/configurations/tables/purchase/purchase-orders-type), pero pueden ser modificados manualmente para cada línea de artículo.
+
+- **commesse di produzione**: si el pedido proveedor es creado desde un plan de producción, se indica la orden de producción de referencia (ver *Creación automática de pedidos*).
+
+- **Precio de unidad de medida alternativa (Prezzo unità di misura alternativa)**: si está activo, indica que el precio ingresado en la línea del artículo se refiere a la unidad de medida alternativa y no a la principal. Este indicador, junto con los campos *unità di misura alternativa* y *quantità alternativa*, solo es visible si en los [Parámetros de pedidos proveedores (Parametri ordini fornitori)](/docs/configurations/parameters/purchase/purchase-orders-parameters/) se ha activado el indicador *gestione doppia unità misura*.
+
+- **Unidad de medida/Cantidad alternativa (Unità di misura/Quantità alternativa)**: si en la [anagrafía del artículo (anagrafica dell'articolo)](/docs/erp-home/registers/items/create-new-item) se ha codificado una unidad de medida alternativa con el indicador *predefinito* y en los Parámetros de pedidos proveedores se ha activado el indicador *proposta automatica u.m. alternativa*, estos valores se propondrán automáticamente al ingresar el artículo.
+
+### 3.5 Analítica (Analitica)
+
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
- 
+
 <TabAnalytic />
- 
-### 3.6 Extra data
- 
+
+### 3.6 Datos Extra (Extra data)
+
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
- 
+
 <DocItemExtraData />
- 
-### 3.7 Documenti allegati
- 
+
+### 3.7 Documentos adjuntos (Documenti allegati)
+
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
- 
+
 <DocAttachDocument />
- 
-### 3.8 Sezione valori
- 
+
+### 3.8 Sección de valores (Sezione valori)
+
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
- 
+
 <SalesValuesSection />
- 
-## **4. Riepiloghi** {#summaries}
- 
-Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
- 
-### 4.1 Sconti finali
- 
+
+## **riepiloghi** {#summaries}
+
+En las diferentes secciones de esta pestaña se presentan las principales informaciones del documento completo y algunos botones específicos.
+
+### 4.1 Descuentos finales (Sconti finali)
+
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
- 
+
 <SummariesFinalDiscount />
- 
-### 4.2 Spese
- 
+
+### 4.2 Gastos (Spese)
+
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
- 
+
 <SummariesExpenses />
- 
-### 4.3 Riepiloghi IVA
- 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
- 
-### 4.4 Riepiloghi scadenze
- 
-In questa griglia vengono riportate le scadenze calcolate in base alle soluzioni delle tipologie di pagamento inserite.
- 
-### 4.5 Altri campi 
- 
-**Note finali**: è un campo descrittivo che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*.
- 
-### 4.6 Totali documento
- 
+
+### 4.3 Resúmenes IVA (Riepiloghi IVA)
+
+Se propone el resumen IVA del documento, para cada código IVA.
+
+### 4.4 Resúmenes vencimientos (Riepiloghi scadenze)
+
+En esta cuadrícula se reportan los vencimientos calculados en base a las soluciones de los tipos de pago ingresados.
+
+### 4.5 Otros campos (Altri campi)
+
+**note finali**: es un campo descriptivo que puede ser completado por el usuario también con la ayuda de las *Ayudas de notas codificadas (Help note codificate)*.
+
+### 4.6 Totales del documento (Totali documento)
+
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
- 
+
 <SummariesDocumentTotal />

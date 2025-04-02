@@ -1,24 +1,24 @@
 ---
-title: Parametri CRM
+title: parametri crm
 sidebar_position: 1
 ---
 
-I parametri del CRM si trovano nel percorso **Parametri > CRM > Parametri CRM**, e attraverso il setup di questi parametri si vanno a definire alcune funzionalità del modulo, in particolare in relazione al cambio stato automatico della attività in seguito ad alcune operazioni specifiche.
+Los parámetros del CRM se encuentran en la ruta **Parámetros > CRM > parametri crm**, y a través de la configuración de estos parámetros se definen algunas funcionalidades del módulo, especialmente en relación con el cambio automático de estado de la actividad tras algunas operaciones específicas.
 
-- **Probabilità successo vinto**: il campo fa riferimento alla tabella [Probabilità di successo](/docs/configurations/tables/crm/opportunities/probability-progress) e permette di definire la % di probabilità di successo che Fluentis dovrà impostare sull’opportunità nel caso in si sposti l’opportunità nella sezione delle opportunità vinte nella form Opportunity Progress Kan Ban board;
+- **probabilità successo vinto**: el campo hace referencia a la tabla [Probabilidad de éxito (Probabilità di successo)](/docs/configurations/tables/crm/opportunities/probability-progress) y permite definir el % de probabilidad de éxito que Fluentis deberá establecer en la oportunidad en caso de que se mueva la oportunidad a la sección de oportunidades ganadas en el formulario de Tablero Kan Ban de Progreso de Oportunidades (Opportunity Progress Kan Ban board);
 
-- **Probabilità successo perso**: il campo fa riferimento alla tabella [Probabilità di successo](/docs/configurations/tables/crm/opportunities/probability-progress) e permette di definire la % di probabilità di successo che Fluentis dovrà impostare sull’opportunità nel caso in si sposti l’opportunità nella sezione delle opportunità perse nella form Opportunity Progress Kan Ban board;
+- **probabilità successo perso**: el campo hace referencia a la tabla [Probabilidad de éxito (Probabilità di successo)](/docs/configurations/tables/crm/opportunities/probability-progress) y permite definir el % de probabilidad de éxito que Fluentis deberá establecer en la oportunidad en caso de que se mueva la oportunidad a la sección de oportunidades perdidas en el formulario de Tablero Kan Ban de Progreso de Oportunidades (Opportunity Progress Kan Ban board);
 
-- **Numero massimo di email**: in questo campo deve essere definito il numero massimo di email che Fluentis può inviare in caso di invio di una Newsletter;
+- **numero massimo di email**: en este campo se debe definir el número máximo de correos electrónicos que Fluentis puede enviar en caso de envío de un boletín informativo (Newsletter);
 
-- **Intervallo invio posta elettronica (secondi)**: in questo campo devono essere impostati i secondi che Fluentis dovrà far passare tra l’invio di una mail e l’altro in caso di invio di una Newsletter.     
+- **Intervalo de envío de correo electrónico (segundos) (Intervallo invio posta elettronica (secondi))**: en este campo deben establecerse los segundos que Fluentis deberá permitir pasar entre el envío de un correo y otro en caso de envío de un boletín informativo (Newsletter).
 
-- **Unità di misura giorni**: è necessario indicare l'unità di misura che Fluentis deve utilizzare per le giornate.     
+- **unità di misura giorni**: es necesario indicar la unidad de medida que Fluentis debe utilizar para los días. 
 
-- **Unità di misura ore**: è necessario indicare l'unità di misura di default che Fluentis deve utilizzare per le ore.     
+- **unità di misura ore**: es necesario indicar la unidad de medida predeterminada que Fluentis debe utilizar para las horas.
 
-- **Riferimenti ticket**: in questo campo è possibile indicare la codifica da utilizzare per il Riferimento ticket da riportare nell'Offerta collegata al ticket e creata attraverso la procedura di *Creazione offerte da ticket* (presente nel modulo Tickets).
+- **riferimenti ticket**: en este campo se puede indicar la codificación a utilizar para la referencia de ticket que se mostrará en la oferta vinculada al ticket y creada a través del procedimiento de *Creación de ofertas desde ticket* (presente en el módulo de Tickets).
 
-- **Ricerca contatto CRM anche come contatto padre**: se abilitato, abilita di default lo stesso flag in tutte le videate di ricerca dove previsto: Ricerca offerte, Ricerca contatti, Ricerca visit report, tab offerte e visit report nell'anagrafica contatto CRM
+- **Buscar contacto CRM también como contacto padre (Ricerca contatto CRM anche come contatto padre)**: si está habilitado, habilita por defecto el mismo indicador en todas las pantallas de búsqueda donde se prevé: Búsqueda de ofertas, Búsqueda de contactos, Búsqueda de informes de visita, pestañas de ofertas e informes de visita en el registro de contacto CRM.
 
-- **Crea contatto CRM da nuova anagrafica cliente**: se abilitato, all'inserimento di un nuovo conto Cliente all'interno di un contatto, genera in automatico un nuovo contatto CRM se non già presente. 
+- **Crear contacto CRM desde nuevo registro de cliente (Crea contatto CRM da nuova anagrafica cliente)**: si está habilitado, al ingresar un nuevo Cliente dentro de un contacto, generará automáticamente un nuevo contacto CRM si no ya está presente.

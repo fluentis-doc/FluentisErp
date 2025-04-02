@@ -1,69 +1,65 @@
 ---
-title: Riepiloghi per cedolini
+title: riepiloghi per cedolini
 sidebar_position: 2
 ---
 
-La videata di Riepilogo per cedolini è composta da diverse sezioni: 
-- movimenti: sono riepilogate tutte le ore relative al dipendente, che siano lavorative, ferie, festivi, straordinari, trasferte, congedi, etc
-- expander Movimenti: riepilogo ore movimenti totali per codice
-- Valori: tutte le spese per cui spetta il rimborso al dipendente
-- expander Valori: riepilogo totali valori per codice
-- Attività risorse: possibilità di consultare tutte le dichiarazioni attività inserite per il dipendente, senza necessità di aprire altre videate, per un confronto immediato con i risultati dell'elaborazione paghe. 
--  Totali Ferie - Permessi - ROL: calcolo totali ore di ferie, permessi e ROL per il dipendente 
+La pantalla de Resumen para recibos de pago se compone de varias secciones: 
+- movimientos: se resumen todas las horas relativas al empleado, que sean laborales, vacaciones, festivos, extraordinarias, traslados, licencias, etc.  
+- expander Movimientos: resumen de horas totales de movimientos por código.  
+- Valores: todos los gastos por los cuales corresponde el reembolso al empleado.  
+- expander Valores: resumen total de valores por código.  
+- Actividades de recursos: posibilidad de consultar todas las declaraciones de actividad ingresadas para el empleado, sin necesidad de abrir otras pantallas, para una comparación inmediata con los resultados del procesamiento de nómina.  
+- Totales Vacaciones - Permisos - ROL: cálculo total de horas de vacaciones, permisos y ROL para el empleado.  
 
-In rosso verranno evidenziate le ore sottoposte all'attenzione dell'utente: ore mancanti, ore straordinarie, festivi, etc. 
+En rojo se destacarán las horas que requieren la atención del usuario: horas faltantes, horas extraordinarias, festivos, etc.  
 
-Le ore e le spese (solo quelle con flag da rimborsare) prese in considerazione nell'elaborazione dei cedolini verranno prese dalle dichiarazioni attività, indipendentemente che siano state inserite direttamente in area PM > dichiarazione attività o che siano state generate automaticamente dagli interventi. Per cui sarà fondamentale che ogni dichiarazione attività abbia la categoria attività inserita.
+Las horas y los gastos (solo aquellos con el indicador de reembolso activo) considerados en el procesamiento de los recibos de pago se tomarán de las declaraciones de actividad, independientemente de si fueron ingresadas directamente en el área PM > declaración de actividad o si fueron generadas automáticamente por las intervenciones. Por lo tanto, será fundamental que cada declaración de actividad tenga la categoría de actividad ingresada.  
 
-Nel caso la risorsa svolga attività nelle giornate festive come sabato o domenica non previste nel turno configurato per la risorsa, le ore verranno marcate in automatico con codice paga "Straordinario festivo". 
-Nel caso la dichiarazione attività abbia flag "smartworking" attivo ed esiste un codice paga specifico, il codice esistente per l'attività verrà sostituito con quello previsto per lo smartworking. 
-Tutte le ore che superano il massimo ore previsto per il turno della risorsa, verranno inserite separatamente con codice specifico per gli Straordinari se configurato. 
-Se compilato il calendario dei giorni festivi, in automatico nel cedolino per i giorni specificati verrà inserito il codice paga per le festività. 
+En el caso de que el recurso realice actividades en días festivos como sábado o domingo que no están previstos en el turno configurado para el recurso, las horas se marcarán automáticamente con el código de pago "Extraordinario festivo".  
+Si la declaración de actividad tiene el indicador de "trabajo flexible (smartworking)" activo y existe un código de pago específico, el código existente para la actividad se reemplazará por el previsto para el trabajo flexible.  
+Todas las horas que superen el máximo permitido para el turno del recurso se ingresarán por separado con un código específico para las Horas Extraordinarias si está configurado.  
+Si se ha completado el calendario de días festivos, automáticamente en el recibo para los días especificados se asignará el código de pago para las festividades.  
 
-Priorità con cui vengono considerati i codici paghe: 
-1.	Se si tratta di straordinari, ferie, festivi, trasferte, smartworking, etc verranno cercati codici specifici con il relativo flag abilitato. 
-2.	Se non presenti codici specifici, verrà preso il codice paga configurato per la categoria attività inserita nella dichiarazione attività
-3.	Se non presente il codice nella categoria attività, verrà preso il primo codice con flag "Ordinario" abilitato
-5.	Se non presente il codice con flag ordinario abilitato, verrà preso il primo codice nella tabella Codici paga
-6.	Se non presente alcun codice, verrà dato un messaggio bloccante di avviso. 
+Prioridad con la que se consideran los códigos de pago:  
+1. Si se trata de horas extraordinarias, vacaciones, festivos, traslados, trabajo flexible, etc., se buscarán códigos específicos con el correspondiente indicador habilitado.  
+2. Si no hay códigos específicos, se tomará el código de pago configurado para la categoría de actividad ingresada en la declaración de actividad.  
+3. Si no se encuentra el código en la categoría de actividad, se tomará el primer código con el indicador "Ordinario" habilitado.  
+4. Si no hay un código con el indicador ordinario habilitado, se tomará el primer código en la tabla de Códigos de pago.  
+5. Si no hay ningún código, se dará un mensaje bloqueante de aviso.  
 
+Las traslados tienen una gestión específica:  
 
+**INTERVENCIONES**
 
-Le trasferte hanno una gestione specifica: 
+- Desde las intervenciones: en los gastos incurridos se han declarado horas de viaje. Si está configurado en la tabla [Tipos de Gastos](/docs/configurations/tables/general-settings/expenses-types), en el estado aprobado de la intervención se generarán las declaraciones de actividad por las horas de viaje y los servicios.  
+- En el registro del recurso debe configurarse la traslados indicando después de cuántas horas de viaje, además de las ordinarias, se activa la traslados.  
 
-**INTERVENTI**
+Si el [código de pago](/docs/configurations/tables/employee/Payroll_codes) asociado a la categoría de actividad de las horas de viaje tiene habilitado el indicador "Reembolso de viaje", en el recibo el movimiento relacionado con el viaje tendrá siempre una cantidad de 1, independientemente de las horas de viaje realizadas (el sentido es indicar que hubo una trasladar sin marcar la duración real).  
+Si en cambio el código de pago asociado a la categoría de actividad de las horas de viaje NO tiene habilitado el indicador "Reembolso de viaje", en el recibo el movimiento relacionado con el viaje tendrá una cantidad igual a las horas de viaje efectivas.  
 
-- dagli interventi: nelle spese sostenute sono state dichiarate delle ore di viaggio. Se configurato nella tabella [Tipi Spese](/docs/configurations/tables/general-settings/expenses-types), allo stato approvato dell’intervento verranno generate le dichiarazioni di attività per le ore viaggio ed i servizi. 
--	In anagrafica risorsa va configurata la trasferta indicando dopo quante ore di viaggio oltre alle ordinarie scatta la trasferta
+Si por ejemplo, en el registro del recurso se establece como umbral "2" horas de viaje para el cálculo de la trasladar, el cálculo de la trasladar se activará solo si la suma de servicios + horas de viaje supera 2 horas además de las horas ordinarias:  
 
+> Ejemplo 1:  
 
-Se il [codice paga](/docs/configurations/tables/employee/Payroll_codes) associato alla categoria di attività delle ore viaggio ha abilitato il flag "Rimborso viaggio", nel cedolino il movimento relativo al viaggio avrà sempre quantità 1 indipendentemente dalle ore di viaggio effettuate (il senso è quello di indicare che c'è stata una trasferta senza segnare l'effettiva durata)
-Se invece il codice paga associato alla categoria di attività delle ore viaggio, NON ha abilitato il flag "Rimborso viaggio", nel cedolino il movimento relativo al viaggio avremo quantità = ore di viaggio effettive. 
+8 horas ordinarias  
 
-Se ad es. in anagrafica risorsa si imposta come soglia "2" ore di viaggio per il calcolo della trasferta scatterà il calcolo trasfera solo se la somma di servizi + ore viaggio superano 2 ore oltre alle ore ordinarie:
+3 horas de viaje  
 
-> Esempio 1:
-
- 8 ore ordinarie
-
- 3 ore di viaggio
-
- --> nel cedolino paga nei movimenti ci saranno 2 righe: 
- - una riga con 8 ore di servizio 
- - una riga per la trasferta (con quantità=1 se il flag "Rimborso viaggio" nel codice paghe è attivo, con quanità=3 se il flag "Rimborso viaggio" nel codice paghe NON è attivo )
+--> en el recibo de pago en los movimientos habrá 2 líneas: 
+ - una línea con 8 horas de servicio  
+ - una línea para la trasladar (con cantidad=1 si el indicador "Reembolso de viaje" en el código de pago está activo, con cantidad=3 si el indicador "Reembolso de viaje" en el código de pago NO está activo)  
  
- > Esempio 2:
+> Ejemplo 2:  
 
- 6 ore ordinarie
+6 horas ordinarias  
 
- 3 ore di viaggio
+3 horas de viaje  
 
---> nel cedolino paga nei movimenti ci sarà una unica riga per 8 ore ordinarie, in quanto la soglia perchè sia considerata trasferta, sono 2 ore di viaggio oltre alle 8 ore ordinarie (in questo caso invece sono 9 ore, quindi 1 sola ora oltre alle 8 ordinarie)
+--> en el recibo de pago en los movimientos habrá una única línea para 8 horas ordinarias, ya que el umbral para ser considerado trasladar son 2 horas de viaje además de las 8 horas ordinarias (en este caso, en total son 9 horas, por lo que solo hay 1 hora adicional a las 8 ordinarias).  
 
-La stessa cosa accadrà se la dichiarazione attività è stata inserita manualmente separatamente per le ore ordinarie e le ore di viaggio con apposita causale attività. 
+Lo mismo ocurrirá si la declaración de actividad se ha ingresado manualmente por separado para las horas ordinarias y las horas de viaje con la respectiva causa de actividad.  
 
-**DICHIARAZIONE ATTIVITA'**
+**DECLARACIÓN DE ACTIVIDAD**
 
-Se le ore viaggio invece vengono dichiarate nelle spese sostenute con un importo orario, se il codice paga associato alla spesa sostenuta ha abilitato il flag "Rimborso viaggio", al superamento delle 8 ore (quindi indipendentemente dal minimo impostato in anagrafica risorsa), verrà inserita una riga separata per la trasferta, sempre con quantità 1 indipendentemente dalle ore dichiarate. 
-Se il codice paga associato alla spesa sostenuta ha disabilitato il flag "Rimborso viaggio", verranno inserite 2 righe separate di ore ordinarie ed ore di viaggio effettivamente dichiarate. 
-
+Si las horas de viaje se declaran en los gastos incurridos con un importe horario, si el código de pago asociado al gasto incurrido tiene habilitado el indicador "Reembolso de viaje", al superar las 8 horas (por lo que, independientemente del mínimo establecido en el registro del recurso), se insertará una línea separada para la trasladar, siempre con cantidad 1 independientemente de las horas declaradas.  
+Si el código de pago asociado al gasto incurrido ha deshabilitado el indicador "Reembolso de viaje", se insertarán 2 líneas separadas de horas ordinarias y horas de viaje efectivamente declaradas.

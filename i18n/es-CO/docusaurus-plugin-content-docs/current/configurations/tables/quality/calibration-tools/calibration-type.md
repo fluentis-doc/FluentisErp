@@ -1,45 +1,45 @@
 ---
-title: Tipi taratura
+title: tipi taratura
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Tipi taratura**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Calibración de instrumentos > tipi taratura** (Tabelle > Qualità > Taratura strumenti > Tipi taratura).
 
-In questa tabella è possibile codificare i *Tipi taratura*.   
-Alcuni esempi di utilizzo di *Tipi taratura* li troviamo nelle gestioni:
-> **Taratura strumenti** - nei *dati di testata*;   
-> **Parametri Taratura strumenti** - nei *dati di testata*.
+En esta tabla es posible codificar los *tipi taratura* (Tipi taratura).  
+Algunos ejemplos de uso de *tipi taratura* se encuentran en las gestiones:  
+> **taratura strumenti** - en los *datos de encabezado*;  
+> **parametri taratura strumenti** - en los *datos de encabezado*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi taratura**
+**Búsqueda de tipi taratura (Ricerca Tipi taratura)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, solo se necesita hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Tipi taratura**
+**Inserción de tipi taratura (Inserimento Tipi taratura)**
 
-Per poter inserire nuove *Tipi taratura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi taratura* es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## Tipi taratura
+## tipi taratura (Tipi taratura)
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi taratura*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**   
->> **Codice**: è il codice del *Tipo taratura*.   
->> **Descrizione**: è la descrizione del *Tipo taratura*.   
->> **Taratura interna**: indica se il *Tipo taratura* viene utilizzato per registrare *Tarature interne*.   
+Es la lista donde se ingresan las informaciones principales de los *tipi taratura*.  
+La lista se compone de la siguiente información:  
+> **tipo taratura**  
+>> **codice**: es el código del *Tipo de calibración*.  
+>> **descrizione**: es la descripción del *Tipo de calibración*.  
+>> **taratura interna**: indica si el *Tipo de calibración* se utiliza para registrar *Calibraciones internas*.  
 >
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.   
->> **Tipo oggetto**: è la descrizione del tipo di oggetto sulla quale si basa la *Numerazione*.   
+> **numerazione**  
+>> **codice**: es el código de la *Numeración*.  
+>> **descrizione**: es la descripción de la *Numeración*.  
+>> **tipo oggetto**: es la descripción del tipo de objeto sobre el cual se basa la *Numeración*.  
 >
-> **Note**: annotazioni libere.
+> **note**: anotaciones libres.
 
-### Extra data
+### Datos Extra (Extra data)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo taratura*.   
-Questi *Extra data* vengono ereditati nella *Taratura strumento* di quella determinata tipologia.   
+Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para el *Tipo de calibración*.  
+Estos *Datos Extra* se heredan en la *Calibración de instrumento* de esa determinada tipología.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,14 +1,8 @@
 ---
-title: Contabilizzazione canoni
+title: contabilizzazione canoni
 sidebar_position: 1
 ---
 
-Da questa posizione è possibile procedere a contabilizzare tutte le rate di tutti i contratti di leasing presenti nella base dati, anche massivamente.
+Desde esta posición, es posible proceder a contabilizar todas las cuotas de todos los contratos de leasing presentes en la base de datos, incluso de forma masiva.
 
-La procedura in dettaglio risulta la medesima attivabile dall'interno del **[dettaglio dei singoli leasing](/docs/finance-area/leasing/new).**
-
-
-
-
-
-
+El procedimiento en detalle es el mismo que se puede activar desde el **[detalle de los arrendamientos individuales (dettaglio dei singoli leasing)](/docs/finance-area/leasing/new).**

@@ -1,39 +1,39 @@
 ---
-title: Livelli di criticità del fornitore
+title: livelli di criticità del fornitore
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Livelli di criticità del fornitore**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Calidad (Qualità) > Calificación de proveedores (Qualificazione fornitore) > livelli di criticità del fornitore (Livelli di criticità del fornitore)**.
 
-I dati presenti in questa tabella sono utilizzati per attribuire una valutazione ai fornitori.   
-Alcuni esempi di utilizzo dei *Livelli di criticità del fornitore* li troviamo nelle gestioni:
-> **Classi di fornitura** - nel tabulatore *Dati contabili > Dati qualità*.   
-> **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+Los datos presentes en esta tabla se utilizan para asignar una evaluación a los proveedores.  
+Algunos ejemplos de uso de los *livelli di criticità del fornitore* los encontramos en las gestiones:  
+> **Clases de suministro (Classi di fornitura)** - en la pestaña *Datos contables (Dati contabili) > Datos de calidad (Dati qualità)*.  
+> **anagrafiche contatti** - en la pestaña *Datos contables (Dati contabili) > Datos de calidad (Dati qualità)*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Livelli di criticità del fornitore**
+**Búsqueda de livelli di criticità del fornitore (Ricerca Livelli di criticità del fornitore)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y otra de resultado. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para mostrar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Livelli di criticità del fornitore**
+**Inserción de livelli di criticità del fornitore (Inserimento Livelli di criticità del fornitore)**
 
-Per poter inserire nuovi *Livelli di criticità del fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *livelli di criticità del fornitore*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*:
 
-> **Livello di criticità del fornitore**   
->> **Codice**: è il codice della *Valutazione fornitore*.   
->> **Descrizione**: è la descrizione della *Valutazione fornitore*.   
->> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Livelli di criticità*.   
->
-> **Tipo controllo**   
->> **Codice**: è il codice della *Tipo controllo* da effettuare per il *Livello di criticità*.   
->> **Descrizione**: è la descrizione della *Tipo controllo* da effettuare per il *Livello di criticità*.   
->> **Da controllare**: è il numero di articoli da controllare sul totale specificato in *Sul totale*.   
->> **Sul totale**: è il numero totale degli articoli sul quale basare quanti articoli devono essere controllati e specificato in *Da controllare*.   
->
-> **Note**: annotazioni libere.
+> **livello di criticità del fornitore**  
+>> **codice**: es el código de la *valutazione fornitore*.  
+>> **descrizione**: es la descripción de la *valutazione fornitore*.  
+>> **sequenza**: es la secuencia de visualización en las listas de *Niveles de criticidad*.  
+> 
+> **tipo controllo**  
+>> **codice**: es el código del *tipo controllo* a realizar para el *Nivel de criticidad*.  
+>> **descrizione**: es la descripción del *tipo controllo* a realizar para el *Nivel de criticidad*.  
+>> **da controllare**: es el número de artículos a controlar sobre el total especificado en *sul totale*.  
+>> **sul totale**: es el número total de artículos sobre el cual basar cuántos artículos deben ser controlados, especificado en *da controllare*.  
+> 
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

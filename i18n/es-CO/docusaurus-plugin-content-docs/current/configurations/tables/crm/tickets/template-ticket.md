@@ -1,13 +1,13 @@
 ---
-title: Template Ticket
+title: Plantilla de Ticket (Template Ticket)
 sidebar_position: 4
 ---
 
-In questa tabella è possibile inserire dei diversi Template da proporre quando viene inserito un [Nuovo ticket](/docs/crm/helpdesk/tickets). I template per essere proposti devono essere inseriti nel Tipo ticket. I dati di questa maschera sono i seguenti.        
-**Codice/Descrizione**: contiene un codice e una descrizione per questo Template;         
-**Descrizione dell'offerta**: contiene una Descrizione da proporre nell'omonimo campo del Ticket, tab Stima;      
-**Descrizione testata**: contiene una Descrizione da proporre nell'omonimo campo del Ticket, tab Stima;      
-**Descrizione piè di pagina**: contiene una Descrizione da proporre nell'omonimo campo del Ticket, tab Stima;      
-**Offerta dettagliata**: se presente, il Ticket nascerà con questo flag, altrimenti no, nel tab Stima;       
-**Classe/Codice/Descrizione**: contiene l'articolo (servizio) da proporre  e fatturare quando viene creato un ticket con questa tipologia; l'articolo viene proposto nel tab *Stima/Sforzo* e *Stima commerciale*;        
-Successivamente è possibile, con diversi flag, decidere l'obbligatorietà o meno di diversi campi. L'obbligatorietà sarà presente in sede di creazione nuovo Ticket con questo template.    
+En esta tabla es posible insertar diferentes plantillas para proponer al crear un [Nuevo ticket (Nuovo ticket)](/docs/crm/helpdesk/tickets). Las plantillas deben estar incluidas en el Tipo de ticket para ser propuestas. Los datos de este formulario son los siguientes.        
+**codice/descrizione**: contiene un código y una descripción para esta plantilla;         
+**descrizione dell'offerta**: contiene una descripción para proponer en el campo homónimo del Ticket, pestaña Estimación (Stima);      
+**descrizione testata**: contiene una descripción para proponer en el campo homónimo del Ticket, pestaña Estimación (Stima);      
+**descrizione piè di pagina**: contiene una descripción para proponer en el campo homónimo del Ticket, pestaña Estimación (Stima);      
+**offerta dettagliata**: si está presente, el Ticket nacerá con este indicador, de lo contrario no será así, en la pestaña Estimación (Stima);       
+**Clase/Código/Descripción (Classe/Codice/Descrizione)**: contiene el artículo (servicio) a proponer y facturar cuando se crea un ticket con este tipo; el artículo se propondrá en las pestañas *stima/sforzo* y *stima commerciale*;        
+Posteriormente, es posible, mediante diferentes indicadores, decidir la obligatoriedad o no de varios campos. La obligatoriedad estará presente al crear un nuevo Ticket con esta plantilla.

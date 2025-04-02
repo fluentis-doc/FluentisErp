@@ -1,163 +1,152 @@
 ---
-title: Corso di formazione
+title: corso di formazione
 sidebar_position: 5
 ---
 
-La gestione si trova sul percorso **Home > Dipendenti > Corsi di formazione > Nuovo corso di formazione** oppure è possibile eseguirla dalla **Ricerca Corsi di formazione**.   
+La gestión se encuentra en la ruta **Inicio > Empleados > Cursos de formación > Nuevo curso de formación (Home > Dipendenti > Corsi di formazione > Nuovo corso di formazione)** o se puede realizar desde la **Búsqueda de Cursos de formación (Ricerca Corsi di formazione)**.
 
-
-:::important A cosa serve
-I Corsi di formazione riportano le informazioni riguardanti lo svolgimento dei corsi di Informazione, Formazione e Addestramento: all'assunzione di nuovi dipendenti, a loro cambi di mansione, periodicamente per rinnovi previsti da leggi e normative, per migliorare le competenze richieste.   
+:::important ¿Para qué sirve? (A cosa serve)
+Los Cursos de formación reportan la información relacionada con la realización de cursos de Información, Formación y Entrenamiento: al momento de la contratación de nuevos empleados, a sus cambios de puesto, periódicamente para renovaciones requeridas por leyes y normativas, para mejorar las competencias necesarias.
 :::
 
+## Botones de comando (Pulsanti di comando)
 
-## Pulsanti di comando
+### ![](/img/neutral/common/save.png) Guardar (Salva)
 
+Al presionar este botón se almacenan toda la información modificada del *corso di formazione* visualizado.
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/duplicate.png) Duplicar (Duplica)
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Corso di formazione* visualizzato.   
+Para poder duplicar un *corso di formazione* existente en un nuevo *corso di formazione*, es necesario presionar el botón **duplica**. Se muestra una solicitud de:  
+> **tipo corso di formazione**: es el *Tipo de curso de formación* del nuevo *corso di formazione* (dato obligatorio), se propone el *Tipo de curso de formación* del *corso di formazione* original.  
+> **titolo**: es el *Título* del nuevo *corso di formazione* (dato obligatorio).  
+> **area**: es el *Área* del nuevo *corso di formazione*, se propone el *Área* del *corso di formazione* original.  
+> **settore**: es el *Sector* del nuevo *corso di formazione*, se propone el *Sector* del *corso di formazione* original.  
+> **categoria corso**: es la *Categoría de curso* del nuevo *corso di formazione*, se propone la *Categoría de curso* del *corso di formazione* original.  
 
+Presionar posteriormente el botón **OK** o el botón **cancel** si se desea continuar con la actividad de duplicación o no.  
+Al finalizar el procesamiento el nuevo *corso di formazione* será visualizado.
 
-### ![](/img/neutral/common/duplicate.png) Duplica
+### ![](/img/neutral/common/update.png) Actualizar empleados (Aggiorna dipendenti)
 
-Per poter duplicare un *Corso di formazione* esistente in un nuovo *Corso di formazione* è necessario premere il pulsante **Duplica**. Viene visualizzata una richiesta di:   
-> **Tipo corso di formazione**: è il *Tipo corso di formazione* del nuovo *Corso di formazione* (dato obbligatorio), viene proposto il *Tipo corso di formazione* del *Corso di formazione* di origine.   
-> **Titolo**: è il *Titolo* del nuovo *Corso di formazione* (dato obbligatorio).   
-> **Area**: è l'*Area* del nuovo *Corso di formazione*, viene proposta l'*Area* del *Corso di formazione* di origine.   
-> **Settore**: è il *Settore* del nuovo *Corso di formazione*, viene proposto il *Settore* del *Corso di formazione* di origine.   
-> **Categoria corso**: è la *Categoria corso* del nuovo *Corso di formazione*, viene proposta la *Categoria corso* del *Corso di formazione* di origine.   
+El botón está habilitado solamente si existen *Puestos involucrados (Mansioni coinvolte)*.  
+Después de introducir un *Puesto* en la lista presente en la pestaña *Puestos involucrados*, para añadir los *Empleados* que ocupan el nuevo *Puesto* introducido, es necesario presionar el botón **aggiorna dipendenti**. Los *Empleados* que ya están en la lista de *Empleados involucrados* no serán modificados.
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.   
+## Gestión de datos (Gestione dati)
 
+### Datos de cabecera (Dati di testata)
 
-### ![](/img/neutral/common/update.png) Aggiorna dipendenti
+La información gestionada es:  
+> **tipo corso di formazione**: es el *Tipo de curso de formación* (dato obligatorio).  
+> Al introducir manualmente un nuevo *Curso* se propone el *Tipo de curso de formación* indicado en los *parametri gestione del personale*.  
+> 
+> **anno/numero/data**: son el *Año* y *Número* de entrada del *corso di formazione* (datos obligatorios).  
+> Al introducir un nuevo *corso di formazione*:  
+> - la *Fecha* se propone igual a la fecha actual;  
+> - el *Año* y el *Número* son propuestos según la *Fecha* y la *Numeración* asociada al *Tipo de curso de formación*.  
+> 
+> **titolo**: es el *Título* del nuevo *corso di formazione* (dato obligatorio).  
+> 
+> **tipo corso base/codice/titolo**: son los referencias del *Curso base* si el *corso di formazione* fue creado a partir de un *Curso base*.  
+> Esta información es de solo lectura.  
+> **note riferite al corso base**: información de solo lectura, son las notas del *Curso base* si el *corso di formazione* fue creado a partir de un *Curso base*.  
+> 
+> **pianificato**: información de solo lectura, indica que el *corso di formazione* ha sido planificado.  
+> 
+> **rinnovo**: información de solo lectura, indica que el *corso di formazione* es de renovación de formación.  
+> 
+> **confermato**: indica que el *corso di formazione* se lleva a cabo y, por lo tanto, está *Confirmado*.  
+> Al momento de la confirmación, se propone automáticamente la *data conferma* igual a la fecha actual. La fecha puede ser modificada posteriormente.  
+> 
+> **data conferma**: es la fecha en la que el *corso di formazione* fue *Confirmado*.  
+> Al ingresar la fecha, el *Curso* se confirma automáticamente.  
+> 
+> **contenuti**: anotaciones libres sobre el tema.  
+> **coordinatore e responsabile**: anotaciones libres sobre el tema.  
+> **docente**: es el *Docente* previsto o que ha llevado a cabo el *corso di formazione*.  
+> **codocente**: es el *Codocente* previsto o que ha llevado a cabo el *corso di formazione*.  
+> **requisiti docente**: anotaciones libres sobre el tema.  
+> **presenza stranieri**: anotaciones libres sobre el tema.  
+> **valutazione efficacia**: anotaciones libres sobre el tema.  
+> **riferimenti normativi**: anotaciones libres sobre el tema.  
+> 
+> **settore**: es el *Sector* empresarial al que está dirigido el *Curso*.  
+> **area**: es el *Área* empresarial a la que está dirigido el *Curso*.  
+> **categoria corso**: es la *Categoría de curso*.  
+> **informazione**: indica que el *Curso* es de *Información* y la indicación está acompañada de anotaciones libres sobre el tema.  
+> **formazione**: indica que el *Curso* es de *Formación* y la indicación está acompañada de anotaciones libres sobre el tema.  
+> **addestramento**: indica que el *Curso* es de *Entrenamiento* y la indicación está acompañada de anotaciones libres sobre el tema.  
+> **sede svolgimento**: anotaciones libres sobre el tema.  
+> 
+> **completato/in data**: indica que el *corso di formazione* ha sido *Completado* y en qué fecha.  
+> Al completar, se propondrá automáticamente la *Fecha* igual a la fecha actual. La fecha puede ser modificada posteriormente.  
+> Al ingresar la fecha, el *Curso* se marca automáticamente como *Completado*.  
+> 
+> **ore previste/effettive**: son las horas previstas y efectivas de formación.  
+> **costo previsto/effettivo**: es el costo que se prevé y el costo efectivamente asumido para la formación.  
+> **punteggio massimo**: es la puntuación máxima atribuible.  
+> **note relative al corso**: anotaciones libres sobre el tema.  
+> **note su assenti**: anotaciones libres sobre el tema.  
+> **note**: anotaciones libres.
 
-Il pulsante è abilitato solamente se esistono *Mansioni coinvolte*.   
-Successivamente all'inserimento di una *Mansione* nell'elenco presente nel tabulatore *Mansioni coinvolte*, per inserire i *Dipendenti* che ricoprono la nuova *Mansione* inserita è necessario premere il pulsante **Aggiorna dipendenti**. I *Dipendenti già presenti nell'elenco *Dipendenti coinvolti* non verranno modificati.
+### Fechas del curso (Date corso)
 
+En esta lista se pueden definir fechas y horarios generales, de teoría y de práctica previstos y efectivos, los temas a tratar y tratados y los distintos docentes.  
+La lista consta de la siguiente información:  
+> Datos previstos (Dati previsti)  
+>> **data**: es la fecha prevista del curso.  
+>> **dalle**: es la hora prevista de inicio del curso en la fecha prevista (en formato hh:mm).  
+>> **alle**: es la hora prevista de fin del curso en la fecha prevista (en formato hh:mm).  
+>> **ore teoria**: son las horas de teoría previstas en la hora prevista y en la fecha prevista (en formato hh:mm).  
+>> **ore pratica**: son las horas de práctica previstas en la hora prevista y en la fecha prevista (en formato hh:mm).  
+>> **argomenti da trattare**: anotaciones libres sobre el tema.  
+> La suma de las horas de teoría y de práctica a realizar debe ser igual a la diferencia entre las horas previstas de finalización y de inicio.  
+> 
+> Datos efectivos (Dati effettivi)  
+>> **data**: es la fecha efectiva del curso.  
+>> **dalle**: es la hora efectiva de inicio del curso en la fecha efectiva (en formato hh:mm).  
+>> **alle**: es la hora efectiva de fin del curso en la fecha efectiva (en formato hh:mm).  
+>> **ore teoria**: son las horas de teoría efectivas realizadas en la hora efectiva y en la fecha efectiva (en formato hh:mm).  
+>> **ore pratica**: son las horas de práctica efectivas realizadas en la hora efectiva y en la fecha efectiva (en formato hh:mm).  
+>> **argomenti trattati**: anotaciones libres sobre el tema.  
+>> **docente**: es el *Docente* que ha llevado a cabo el *Curso*.  
+>> **codocente**: es el *Codocente* que ha llevado a cabo el *Curso*.  
+>> **note su assenti**: anotaciones libres sobre el tema.  
+>> **note**: anotaciones libres.  
+La suma de las horas de teoría y de práctica realizadas debe ser igual a la diferencia entre las horas efectivas de finalización y de inicio.
 
-## Gestione dati
+### Puestos implicados (Mansioni interessate)
 
+Son los *Puestos* involucrados en la participación del *Curso*.  
+Con base en los *Puestos* enumerados, mediante la presión del botón **aggiorna dipendenti**, se proponen los *Empleados* que los ocupan.  
+La lista consta de la siguiente información:  
+> **mansione**: es el código del *Puesto*.  
+> **descrizione mansione**: es la descripción del *Puesto*.  
+> **note**: anotaciones libres.
 
-### Dati di testata
+### Empleados involucrados (Dipendenti coinvolti)
 
-Le informazioni gestite sono:   
-> **Tipo corso di formazione**: è il *Tipo corso di formazione* (dato obbligatorio).   
-> All'inserimento manuale di un nuovo *Corso* viene proposto il *Tipo corso di formazione* indicato nei *Parametri gestione del personale*.   
->
-> **Anno/Numero/Data**: sono l'*Anno* e *Numero* di inserimento del *Corso di formazione* (dati obbligatori).   
->  All'inserimento di un nuovo *Corso di formazione*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo corso di formazione*.   
->
-> **Titolo**: è il *Titolo* del nuovo *Corso di formazione* (dato obbligatorio).   
->
-> **Tipo corso base/Codice/Titolo**: sono i riferimenti del *Corso base* se il *Corso di formazione* è stato creato da un *Corso base*.   
-> Queste informazioni sono di sola lettura.      
-> **Note riferite al corso base**: informazione è di sola lettura, sono le note del *Corso base* se il *Corso di formazione* è stato creato da un *Corso base*.   
->
-> **Pianificato**: informazione è di sola lettura, indica che il *Corso di formazione* è stato pianificato.   
->
-> **Rinnovo**: informazione è di sola lettura, indica che il *Corso di formazione* è di rinnovo formazione.   
->
-> **Confermato**: indica che il *Corso di formazione* si attua e quindi viene *Confermato*.   
-> All'atto della conferma viene automaticamente proposta la *Data conferma* pari alla data odierna. La data può essere successivamente variata.   
->
-> **Data conferma**: è la data in cui il *Corso di formazione* è stato *Confermato*.   
-> All'atto dell'inserimento della data il *Corso* viene automaticamente *Confermato*.   
->
-> **Contenuti**: annotazioni libere sull'argomento.   
-> **Coordinatore e Responsabile**: annotazioni libere sull'argomento.   
-> **Docente**: è il *Docente* previsto o che ha tenuto il *Corso di formazione*.   
-> **Codocente**: è il *Codocente* previsto o che ha tenuto il *Corso di formazione*.   
-> **Requisiti docente**: annotazioni libere sull'argomento.   
-> **Presenza stranieri**: annotazioni libere sull'argomento.   
-> **Valutazione efficacia**: annotazioni libere sull'argomento.   
-> **Riferimenti normativi**: annotazioni libere sull'argomento.   
->
-> **Settore**: è il *Settore* aziendale a cui è rivolto il *Corso*.   
-> **Area**: è l'*Area* aziendale a cui è rivolto il *Corso*.   
-> **Categoria corso**: è la *Categoria corso*.   
-> **Informazione**: indica che il *Corso* è di *Informazione* e l'indicazione è corredata da eventuali annotazioni libere sull'argomento.   
-> **Formazione**: indica che il *Corso* è di *Formazione* e l'indicazione è corredata da eventuali annotazioni libere sull'argomento.   
-> **Addestramento**: indica che il *Corso* è di *Addestramento* e l'indicazione è corredata da eventuali annotazioni libere sull'argomento.   
-> **Sede svolgimento**: annotazioni libere sull'argomento.   
->
-> **Completato/In data**: indica che il *Corso di formazione* è stato *Completato* e in quale data.   
-> All'atto del completamento viene automaticamente proposta la *Data* pari alla data odierna. La data può essere successivamente variata.   
-> All'atto dell'inserimento della data il *Corso* viene automaticamente *Completato*.   
->
-> **Ore previste/effettive**: sono le ore previste ed effettive di formazione.   
-> **Costo previsto/effettivo**: è il costo previsto da sostenere ed effettivo sostenuto per la formazione.   
-> **Punteggio massimo**: è il punteggio massimo attribuibile.   
-> **Note relative al corso**: annotazioni libere sull'argomento.   
-> **Note su assenti**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+En estas dos listas es posible indicar los *Empleados*, previstos que deberían asistir y efectivos que han participado en el *corso di formazione planificado*, su evaluación y el detalle de las fechas y horarios de participación.
 
+La lista de *Empleados involucrados* consta de la siguiente información:  
+> **codice**: es el código del *Empleado*.  
+> **cognome**: es el apellido del *Empleado*.  
+> **nome**: es el nombre del *Empleado*.  
+> **ore teoria**: son las horas de teoría efectivas totales realizadas (en formato hh:mm).  
+> **ore pratica**: son las horas de práctica efectivas totales realizadas (en formato hh:mm).  
+> **valutato il**: es la fecha de evaluación del curso.  
+> **valutazione**: anotaciones libres sobre el tema.  
+> **punteggio**: es el valor de la puntuación obtenida.  
+> **efficace**: indica si el *Curso* ha sido *eficaz*.  
+> **note**: anotaciones libres.  
 
-### Date corso
+La lista de *Fechas del curso del empleado seleccionado* y relacionada con el *Empleado* seleccionado en la lista de *Empleados involucrados* consta de la siguiente información:  
+> **data effettiva**: información de solo lectura, es la fecha efectiva de la participación en el curso.  
+> **dalle**: es la hora efectiva de inicio del curso en la fecha efectiva (en formato hh:mm).  
+> **alle**: es la hora efectiva de fin del curso en la fecha efectiva (en formato hh:mm).  
+> **ore teoria**: son las horas de teoría efectivas realizadas en la hora efectiva y en la fecha efectiva (en formato hh:mm).  
+> **ore pratica**: son las horas de práctica efectivas realizadas en la hora efectiva y en la fecha efectiva (en formato hh:mm).  
+> **note**: anotaciones libres.  
+La suma de las horas de teoría y de práctica realizadas debe ser igual a la diferencia entre las horas efectivas de finalización y de inicio.
 
-In questo elenco è possibile definire date e orari generali, di teoria e di pratica previsti ed effettivi, gli argomenti da trattare e trattati e i vari docenti.   
-L'elenco si compone delle seguenti informazioni:   
-> Dati previsti
->> **Data**: è la data prevista del corso.   
->> **Dalle**: è l'orario previsto di inizio corso alla data prevista (nel formato hh:mm).   
->> **Alle**: è l'orario previsto di fine corso alla data prevista (nel formato hh:mm).   
->> **Ore teoria**: sono le ore di teoria previste nell'orario previsto e alla data prevista (nel formato hh:mm).   
->> **Ore pratica**: sono le ore di pratica previste nell'orario previsto e alla data prevista (nel formato hh:mm).   
->> **Argomenti da trattare**: annotazioni libere sull'argomento.   
->La somma delle ore di teoria e di pratica da svlogere devono essere pari alla differenza degli orari previsti di fine e inizio.   
->
-> Dati effettivi
->> **Data**: è la data effettiva del corso.   
->> **Dalle**: è l'orario effettivo di inizio corso alla data effettiva (nel formato hh:mm).   
->> **Alle**: è l'orario effettivo di fine corso alla data effettiva (nel formato hh:mm).   
->> **Ore teoria**: sono le ore di teoria effettive svolte nell'orario effettivo e alla data effettiva (nel formato hh:mm).   
->> **Ore pratica**: sono le ore di pratica effettive svolte nell'orario effettivo e alla data effettiva (nel formato hh:mm).   
->> **Argomenti trattati**: annotazioni libere sull'argomento.   
->> **Docente**: è il *Docente* che ha tenuto il *Corso*.   
->> **Codocente**: è il *Codocente* che ha tenuto il *Corso*.   
->> **Note su assenti**: annotazioni libere sull'argomento.   
->> **Note**: annotazioni libere.   
-La somma delle ore di teoria e di pratica svolte devono essere pari alla differenza degli orari effettivi di fine e inizio.   
-
-
-### Mansioni interessate
-
-Sono le *Mansioni* interessate alla partecipazione al *Corso*.   
-Sulla base delle *Mansioni* elencate, tramite la pressione del pulsante **Aggiorna dipendenti**, vengonmo proposti i *Dipendenti* che le ricoprono.   
-L'elenco si compone delle seguenti informazioni:   
-> **Mansione**: è il codice della *Mansione*.   
-> **Descrizione mansione**: è la descrizione della *Mansione*.   
-> **Note**: annotazioni libere.   
-
-
-### Dipendenti coinvolti
-
-In questi due elenchi è possibile indicare i *Dipendenti*, previsti che dovrebbero presenziare ed effettivi che hanno partecipato al *Corso di formazione pianificati*, la loro valutazione e il dettaglio delle date e degli orari di partecipazione.   
-
-L'elenco dei *Dipendenti coinvolti* si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Dipendente*.   
-> **Cognome**: è il cognome del *Dipendente*.   
-> **Nome**: è il nome del *Dipendente*.   
-> **Ore teoria**: sono le ore di teoria effettive totali svolte (nel formato hh:mm).   
-> **Ore pratica**: sono le ore di pratica effettive totali svolte (nel formato hh:mm).   
-> **Valutato il**: è la data di valutazione del corso.  
-> **Valutazione**: annotazioni libere sull'argomento.   
-> **Punteggio**: è il valore del punteggio ottenuto.   
-> **Efficace**: indica se il *Corso* è stato *efficace*.   
-> **Note**: annotazioni libere.   
-
-L'elenco delle *Date corso dipendente selezionato* e relativo al *Dipendente* selezionato nell'elenco dei *Dipendenti coinvolti* e si compone delle seguenti informazioni:   
-> **Data effettiva**: informazione è di sola lettura, è la data effettiva della partecipazione al corso.   
-> **Dalle**: è l'orario effettivo di inizio corso alla data effettiva (nel formato hh:mm).   
-> **Alle**: è l'orario effettivo di fine corso alla data effettiva (nel formato hh:mm).   
-> **Ore teoria**: sono le ore di teoria effettive svolte nell'orario effettivo e alla data effettiva (nel formato hh:mm).   
-> **Ore pratica**: sono le ore di pratica effettive svolte nell'orario effettivo e alla data effettiva (nel formato hh:mm).   
-> **Note**: annotazioni libere.  
-La somma delle ore di teoria e di pratica svolte devono essere pari alla differenza degli orari effettivi di fine e inizio.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

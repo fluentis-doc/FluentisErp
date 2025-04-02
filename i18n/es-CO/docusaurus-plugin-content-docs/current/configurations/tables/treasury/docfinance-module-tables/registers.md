@@ -1,20 +1,14 @@
 ---
-title: Anagrafici
+title: Registros (Anagrafici)
 sidebar_position: 1
 ---
 
-La tabella ‘Anagrafici' si compone di 4 sezioni:
+La tabla ‘Registros (Anagrafici)' se compone de 4 secciones:
 
-**[Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**: in questa sezione è necessario indicare, per i sottoconti delle anagrafiche banca, i campi ‘Banca' e ‘RBN'. Il primo indica l'istituto di credito di riferimento, mentre il secondo il tipo di conto (conto ordinario, sbf, …) associato al sottoconto stesso: questi due campi sono visibili e modificabili anche all'interno dell'anagrafica banca. Per quanto riguarda i sottoconti di tipo cliente/fornitore, inoltre, è possibile gestire da questa maschera anche il campo della ‘Derogabilità', campo che si può gestire anche dalla maschera principale dell'anagrafica contatti, per la singola riga di sottoconto;
+**[Plan de cuentas (Piano dei conti)](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**: en esta sección es necesario indicar, para los subcuentas de los registros bancarios, los campos ‘Banco (Banca)' y ‘RBN'. El primero indica la institución de crédito de referencia, mientras que el segundo indica el tipo de cuenta (cuenta corriente, sbf, …) asociado a la subcuenta: estos dos campos son visibles y modificables también dentro del registro bancario. En cuanto a las subcuentas de tipo cliente/proveedor, además, es posible gestionar desde esta máscara también el campo de la ‘Derogabilidad (Derogabilità)', campo que se puede gestionar también desde la máscara principal del registro de contactos, para la línea individual de subcuenta;
 
-**Flussi scadenziario**: in questa sezione va attribuito ad ogni flusso di cash flow (riferirsi alla documentazione di base del modulo omonimo) il relativo codice per DocFinance. È consentita l'attribuzione dello stesso codice su più righe flusso;
+**Flujos de calendario (Flussi scadenziario)**: en esta sección se debe atribuir a cada flujo de cash flow (referirse a la documentación básica del módulo homónimo) el código correspondiente para DocFinance. Se permite la atribución del mismo código en varias líneas de flujo;
 
-**[Tipi pagamento](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types)**: in questa sezione va indicato, per ogni tipo di pagamento, il relativo codice di corrispondenza in DocFinance (è consentita l'attribuzione dello stesso codice su più righe). È possibile poi indicare un codice di derogabilità del tipo di pagamento, che sarà utilizzato nell'esportazione dati per DocFinance;
+**[Tipos de pago (Tipi pagamento)](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types)**: en esta sección se debe indicar, para cada tipo de pago, el código correspondiente en DocFinance (se permite la asignación del mismo código en varias líneas). Luego se puede indicar un código de derogabilidad del tipo de pago, que se utilizará en la exportación de datos para DocFinance;
 
-**Società**: per ogni società è obbligatorio indicare il codice corrispondente per DocFinance. Le società che non hanno codice saranno escluse dalle procedure di esportazione/importazione dati per/da DocFinance.
-
-
-
-
-
-
+**società**: para cada sociedad es obligatorio indicar el código correspondiente para DocFinance. Las sociedades que no tengan código serán excluidas de los procedimientos de exportación/importación de datos hacia/desde DocFinance.

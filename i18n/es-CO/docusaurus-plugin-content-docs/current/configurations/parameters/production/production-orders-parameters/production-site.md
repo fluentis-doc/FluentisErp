@@ -1,29 +1,29 @@
 ---
-title: Sito Produzione
+title: sito produzione
 sidebar_position: 3
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Sito di produzione*.
+La tabla permite gestionar la codificación de los diferentes tipos de *Sitio de producción (Sito di produzione)*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-## Ricerca Sito Produzione
+## Búsqueda de sito produzione (Ricerca Sito Produzione)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-## Inserire nuovi siti di produzione
+## Insertar nuevos sitios de producción (Inserire nuovi siti di produzione)
 
-Per inserire un nuovo sito di produzione, nella form di ricerca usare il pulsante **Nuovo**.
+Para insertar un nuevo sitio de producción, en el formulario de búsqueda utilice el botón **nuovo**.
 
-Nella form di inserimento, nella sezione superiore viene definito il sito produttivo tramite i campi **Codice** e **Descrizione**,  
+En el formulario de inserción, en la sección superior se define el sitio productivo mediante los campos **codice** y **descrizione**.
 
-## Modificare i siti di produzione
+## Modificar los sitios de producción (Modificare i siti di produzione)
 
-Per modificare i siti di produzione, nella form di ricerca selezionare il sito ed eseguire doppio clic sulla riga oppure usare il pulsante **Modifica**.
+Para modificar los sitios de producción, en el formulario de búsqueda seleccione el sitio y realice un doble clic en la fila o use el botón **modifica**.
 
-Entrando in modalità modifica, è possibile visualizzare e modificare i parametri dei relativi magazzini per quel *Sito di produzione*.      
-Questi sono gli stessi presenti nei [Parametri Ordini di Produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro), ma hanno priorità rispetto a quelli generali, perchè, se inserito il sito produttivo, vengono utilizzati dalle procedure al posto di quelli generali.
+Al entrar en modo de modificación, es posible visualizar y modificar los parámetros de los respectivos almacenes para ese *Sitio de producción (Sito di produzione)*.  
+Estos son los mismos que están presentes en los [Parámetros de Órdenes de Producción (Parametri Ordini di Produzione)](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro), pero tienen prioridad sobre los generales, porque, si se ha ingresado el sitio productivo, se utilizan en los procedimientos en lugar de los generales.
 
-Il campo **Contatto** nel **Sito di Produzione** viene utilizzato nelle [Spedizioni](/docs/logistics/shipping/shippings), per proporre l'Indirizzo del luogo di carico, quando si seleziona il sito di produzione di riferimento.  
+El campo **contatto** en el **sito produzione (Sito di Produzione)** se utiliza en las [Envíos (Spedizioni)](/docs/logistics/shipping/shippings), para proponer la dirección del lugar de carga, cuando se selecciona el sitio de producción de referencia.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

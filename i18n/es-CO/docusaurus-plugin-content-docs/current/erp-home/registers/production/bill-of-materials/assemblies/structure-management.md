@@ -1,113 +1,113 @@
 ---
-title: Distinta Base
+title: distinta base
 sidebar_position: 2
 ---
 
-**Introduzione**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
+**Introducción (Introduzione)**: [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/bom-intro)
 
-Come accennato già, dalla form [Assiemi](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), selezionando la distinta base che si vuole visualizzare e facendo doppio click, si entra nel dettaglio della distinta stessa in modifica e si visualizza la sua rappresentazione grafica ad albero.
+Como se mencionó anteriormente, desde el formulario [Conjuntos (Assiemi)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), al seleccionar la lista de materiales que se desea visualizar y haciendo doble clic, se accede al detalle de la misma para su modificación y se visualizará su representación gráfica en forma de árbol.
 
-La distinta base è una struttura multilivello, ad albero in cui si ha un legame di tipo padre-figlio. Il [figlio](/docs/guide/common/glossary/glossary-intro#a) può essere a sua volta padre e così via per un indeterminato di livelli fino ad arrivare all'ultimo livello dove si trovano i materiali.
+La lista de materiales es una estructura multinivel, en forma de árbol, en la que hay una relación de tipo padre-hijo. El [hijo (figlio)](/docs/guide/common/glossary/glossary-intro#a) puede ser también padre y así sucesivamente por un número indeterminado de niveles hasta llegar al último nivel donde se encuentran los materiales.
 
-La schermata si presenta suddivisa in due parti: nella parte sinistra si trova la rappresentazione ad albero della distinta base, mentre nella parte destra si vedranno nel dettaglio le informazioni relative ai vari componenti dell'albero.
+La pantalla se presenta dividida en dos partes: en la parte izquierda se encuentra la representación en árbol de la lista de materiales, mientras que en la parte derecha se verán en detalle las informaciones relativas a los varios componentes del árbol.
 
 
-## Struttura della distinta base
+## Estructura de la lista de materiales (Struttura della distinta base)
 
-Per visualizzare l'albero, basterà cliccare con il mouse sul **+** accanto al codice dell'articolo oppure cliccare il pulsante **Esplodi** pe visualizzarlo tutto.  In questo modo si apriranno a cascata i vari livelli della distinta base ed ogni livello sarà rappresentato da icone che andranno ad identificare la categoria di appartenenza di ogni articolo o meglio il tipo di approvvigionamento dell'articolo:
+Para visualizar el árbol, basta con hacer clic con el ratón en el **+** al lado del código del artículo o hacer clic en el botón **esplodi** para verlo todo. De esta manera, se abrirán en cascada los varios niveles de la lista de materiales y cada nivel estará representado por íconos que identificarán la categoría de pertenencia de cada artículo o mejor dicho, el tipo de aprovisionamiento del artículo:
 
-![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image02.png) : rappresenta gli articoli di produzione;
+![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image02.png) : representa los artículos de producción;  
 
-![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image03.png) : rappresenta gli articoli di acquisto;
+![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image03.png) : representa los artículos de compra;  
 
-![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image04.png) : rappresenta gli articoli di conto lavoro.
+![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image04.png) : representa los artículos de trabajo por encargo.
 
-Il tipo di approvvigionamento dell'articolo viene indicato all’interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell’articolo stesso.
+El tipo de aprovisionamiento del artículo se indica dentro de los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del propio artículo.
 
-La distinta può essere costruita e modificata molto semplicemente utilizzando gli appositi pulsanti: **inserisci**, **cancella componente** o **copia**, **taglia** ed **incolla componente**.        
-Ad esempio, posizionandosi su un elemento dell’albero e premendo il pulsante **inserisci componente**, si ha la possibilità di inserire un articolo che diventerà figlio dell’articolo selezionato inizialmente; mentre, premendo il pulsante cancella componente, questo verrà rimosso dalla distinta.            
-I pulsanti **copia**, **taglia** ed **incolla componente**, permettono di copiare, tagliare o incollare l’articolo selezionato all’interno dell’albero della distinta base.            
-Inoltre, è possibile spostare l’articolo nel livello e nella posizione desiderata all’interno dell’albero tramite l’utilizzo del *Drag and Drop* in maniera semplice e veloce.       
+La lista puede ser construida y modificada muy fácilmente utilizando los botones correspondientes: **inserisci**, **cancella componente** o **copia**, **taglia** e **incolla componente**.        
+Por ejemplo, al posicionarse sobre un elemento del árbol y presionar el botón **insertar componente**, se tiene la posibilidad de insertar un artículo que se convertirá en hijo del artículo seleccionado inicialmente; mientras que, al presionar el botón eliminar componente, este será removido de la lista.            
+Los botones **copiar**, **cortar** y **pegar componente** permiten copiar, cortar o pegar el artículo seleccionado dentro del árbol de la lista de materiales.            
+Además, es posible mover el artículo al nivel y la posición deseada dentro del árbol utilizando la función *Arrastrar y soltar (Drag and Drop)* de manera simple y rápida.       
 
-Dopo aver esploso il menù a cascata, si ha la possibilità, per l'articolo selezionato, di utilizzare i seguenti **pulsanti specifici**:
+Después de haber expandido el menú en cascada, se tiene la posibilidad, para el artículo seleccionado, de utilizar los siguientes **botones específicos**:
 
-> **Inserisci componente**: permette di inserire un nuovo sottolivello di distinta;  
-> **Cancella componenti**: permette di cancellare il componente selezionato;    
-> **Esplodi**: permette di esplodere completamente l'albero della distinta base;     
-> **Copia componente**: permette di copiare il componente selezionato;     
-> **Taglia componente**: permette di tagliare il componente selezionato;     
-> **Incolla componente**: permette di incollare il componente selezionato;     
-> **Parametri MRP**: permette di aprire i [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del componente selezionato;     
-> **Ciclo di lavoro**: permette di aprire il  [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route) del componente selezionato;       
-> **Aggiorna struttura**: permette di aggiornare tutte le informazioni della distinta base (per esempio se è stata modificata la descrizione di un articolo della distinta, usando questa funzione l'applicazione mostra la descrizione aggiornata di quell'articolo). 
+> **inserisci componente**: permite insertar un nuevo subnivel de la lista;  
+> **cancella componenti**: permite eliminar el componente seleccionado;    
+> **esplodi**: permite expandir completamente el árbol de la lista de materiales;     
+> **copia componente**: permite copiar el componente seleccionado;     
+> **taglia componente**: permite cortar el componente seleccionado;     
+> **incolla componente**: permite pegar el componente seleccionado;     
+> **parametri mrp**: permite abrir los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del componente seleccionado;     
+> **ciclo di lavoro**: permite abrir el  [Ciclo de trabajo (Ciclo di lavoro)](/docs/erp-home/registers/production/routes/new-route) del componente seleccionado;       
+> **aggiorna struttura**: permite actualizar toda la información de la lista de materiales (por ejemplo, si se ha modificado la descripción de un artículo de la lista, al usar esta función la aplicación mostrará la descripción actualizada de ese artículo). 
 
-Selezionando uno dei componenti della distinta si visualizza nella parte destra della finestra la lista di informazioni relative al livello superiore rispetto al componente selezionato (nella parte superiore destra della finestra chiamata **Assieme**) e al componente stesso (nella parte inferiore destra della finestra denominata **Componente**).
+Al seleccionar uno de los componentes de la lista se visualiza en la parte derecha de la ventana la lista de informaciones relativas al nivel superior respecto al componente seleccionado (en la parte superior derecha de la ventana llamada **assieme**) y al componente mismo (en la parte inferior derecha de la ventana denominada **componente**).
 
-**Assieme**: vengono visualizzati la versione della distinta base, classe, codice, descrizione e variante del livello superiore, la quantità del livello superiore alla quale si riferisce la quantità del componente e la sua unità di misura; riguardo alla quantità si può definire se si tratta di una quantità fissa o variabile ovvero se con quella distinta si andrà sempre a produrre una determinata quantità oppure se potrà essere diversa di produzione in produzione; si potrà poi definire se questo assieme è un **Assieme fittizio** ovvero un assieme che nell'elaborazione della schedulazione o dell'MRP venga non considerato; vi è poi un campo **Note** in cui è possibile inserire eventuali note relative al padre e vi sono i campi relativi alle date di validità dell'assieme, alla data in cui è stato inserito l'assieme e la data in cui è stato è stato modificato l'ultima volta.
+**assieme**: se visualizan la versión de la lista de materiales, clase, código, descripción y variante del nivel superior, la cantidad del nivel superior a la que se refiere la cantidad del componente y su unidad de medida; respecto a la cantidad, se puede definir si se trata de una cantidad fija o variable, es decir, si con esa lista se producirá siempre una cantidad determinada o si puede ser diferente de producción en producción; luego se puede definir si este conjunto es un **assieme fittizio**, es decir, un conjunto que en el procesamiento de la programación o del MRP no se considerará; luego hay un campo **note** en el que se pueden ingresar notas relativas al padre y hay campos relativos a las fechas de validez del conjunto, a la fecha en que se insertó el conjunto y a la fecha en que fue modificado por última vez.
 
 :::note Nota
-**Data validità**: la data di validità dell'assieme permette di verificare alla data inserita la composizione della distinta base; questo permette di mantenere uno storico di tutte le modifiche effettuate su quella distinta. Ad esempio, cancellando la data di validità, vengono mostrati tutti i componenti usati per quella distinta dal momento in cui è stata creata, evidenziando in rosso i componenti che non sono più validi ad oggi. 
+**data validità**: la fecha de validez del conjunto permite verificar en la fecha ingresada la composición de la lista de materiales; esto permite mantener un historial de todos los cambios realizados en esa lista. Por ejemplo, al eliminar la fecha de validez, se mostrarán todos los componentes utilizados para esa lista desde el momento en que fue creada, resaltando en rojo los componentes que ya no son válidos hasta hoy. 
 :::
 
-**Componente**: vengono visualizzati classe, codice, descrizione e variante del componente selezionato nell'albero, l'informazione riguardo al fatto che il componente sia fittizio o no (ereditata dall’anagrafica articolo), e l'unità di misura del componente. 
+**componente**: se visualizarán la clase, código, descripción y variante del componente seleccionado en el árbol, la información respecto a si el componente es ficticio o no (heredada del registro del artículo), y la unidad de medida del componente.
 
-Esiste inoltre il flag *Livello fittizio*, che permette di decidere se limitatamente a quella distinta base il componente selezionato debba essere considerato fittizio. 
+Además, existe el indicador *livello fittizio*, que permite decidir si, exclusivamente para esa lista de materiales, el componente seleccionado debe ser considerado ficticio.
 
-Nel caso di *articolo fittizio* o di *livello fittizio*, la procedura di *Schedulazione Generale* e l'*MRP* nel corso dell'esplosione dei fabbisogni “saltano” il componente designato come fittizio o come livello fittizio, leggendo il fabbisogno dei suoi eventuali componenti.
+En caso de *artículo ficticio (articolo fittizio)* o *livello fittizio*, el procedimiento de *Programación General* y el *MRP* en el curso de la explosión de necesidades “saltarían” el componente designado como ficticio o como nivel ficticio, leyendo la necesidad de sus eventuales componentes.
 
-Legati al componente sono anche tutti i seguenti tab:
+Vinculados al componente también están todas las siguientes pestañas:
 
-### Dati generali  
+### Datos generales (Dati generali)
 
-**Quantità**: rappresenta la quantità di componente prevista per produrre la quantità di riferimento del suo livello superiore;  
-**Unità di misura di utilizzo**: potrebbe essere diversa dalla UM gestionale del componente stesso; 
-**Fissa** indica che per produrre il livello superiore si utilizzerà sempre la stessa quantità di componente;      
-**Variabile** indica che la quantità di componente per produrre il figlio cambierà di volta in volta (per esempio al variare della quantità del padre potrà variare anche la quantità del figlio utilizzata);    
-**Percentuale di scarto** preimpostata per il componente, che permette di fare in modo che l'esplosione dei fabbisogni aumenti di quella percentuale la quantità da utilizzare del componente stesso;      
-**Percentuale di scostamento sulla quantità negativa e positiva**: indica la percentuale per l'utilizzo del componente in più o in meno si può utilizzare rispetto alla quantità indicata per restare nella tolleranza stabilita;  
-**Inizio validità** e **Fine validità**: permettono di decidere che un componente sia valido da una certa data o fino ad una certa data;      
-**Priorità**: indica l'ordinamento con il quale deve essere visualizzato il componente nell'albero della distinta;        
-**Movimentabile**: permette di decidere se il componente debba o non debba essere movimentato a magazzino. Questo flag influirà su tutti i movimenti di magazzino, perchè nella creazione dei movimenti vengono presi in considerazione solamente gli articoli che hanno il flag attivo, mentre gli altri non verranno movimentati;      
-**Critico**: se il flag è attivo serve per indicare la criticità di quel componente (per ora è utilizzato solo per la [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling));          
-**Livello fittizio**: permette di decidere se, limitatamente a quella distinta base, il componente selezionato debba essere considerato fittizio o meno; inoltre, fa si che la procedura di *Pianificazione Generale* e l'*MRP* saltino quel componente nel corso dell'esplosione dei fabbisogni;  
-**Riferimento schema**: permette di inserire una nota libera relativa al componente (ad esempio il riferimento schema del disegno tecnico);              
-**Note**: permette di inserire una nota libera relativa al componente.           
+**quantità**: representa la cantidad del componente prevista para producir la cantidad de referencia de su nivel superior;  
+**Unidad de medida de uso (Unità di misura di utilizzo)**: podría ser diferente de la unidad de medida de gestión del propio componente;  
+**Fija** indica que para producir el nivel superior se utilizará siempre la misma cantidad de componente;  
+**Variable** indica que la cantidad de componente para producir el hijo cambiará de vez en cuando (por ejemplo, al variar la cantidad del padre, también podrá variar la cantidad del hijo utilizada);  
+**percentuale di scarto** preestablecido para el componente, que permite hacer que la explosión de necesidades aumente en ese porcentaje la cantidad a utilizar del componente mismo;  
+**Porcentaje de desviación sobre la cantidad negativa y positiva (Percentuale di scostamento sulla quantità negativa e positiva)**: indica el porcentaje para el uso del componente en más o menos que se puede utilizar respecto a la cantidad indicada para mantenerse dentro de la tolerancia establecida;  
+**inizio validità** y **fine validità**: permiten decidir que un componente sea válido desde una cierta fecha o hasta una cierta fecha;  
+**priorità**: indica el orden con el cual debe ser visualizado el componente en el árbol de la lista;  
+**movimentabile**: permite decidir si el componente debe o no ser movido a almacén. Este indicador influirá en todos los movimientos de almacén, porque en la creación de los movimientos solo se tendrán en cuenta los artículos que tienen el indicador activo, mientras que los demás no serán movilizados;  
+**critico**: si el indicador está activo, sirve para indicar la criticidad de ese componente (por ahora se utiliza solo para la [Programación a capacidad finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling));  
+**livello fittizio**: permite decidir si, limitadamente a esa lista de materiales, el componente seleccionado debe ser considerado ficticio o no; además, permite que el procedimiento de *Planificación General* y el *MRP* salten ese componente en el curso de la explosión de necesidades;  
+**riferimento schema**: permite insertar una nota libre relativa al componente (por ejemplo, la referencia de esquema del dibujo técnico);  
+**note**: permite insertar una nota libre relativa al componente.
 
-### Alternative
+### Alternativas (Alternative)
 
-In questo tab possono essere impostate in ordine di priorità le alternative al componente della distinta base nel caso in cui il componente non sia disponibile al momento della produzione di quella distinta.
+En esta pestaña se pueden establecer por orden de prioridad las alternativas al componente de la lista de materiales en caso de que el componente no esté disponible al momento de la producción de esa lista.
 
-Queste alternative, vengono considerate nelle registrazioni di magazzino se viene usata una causale che ha i flag **Alternative** e o **Alternative miste** attivi.   
-Mentre le procedure di Pianificazione e MRP prenderanno in considerazione le alternative in conseguenza dell'attivazione o meno di appositi flag: per la schedulazione il flag da attivare sarà **Considera anche le alternative dei materiali** che andrà impostato nella schermata di [Pianificazione generale](/docs/planning/ms-master-scheduling/general-schedule), nel tab *Parametri*; per la procedura MRP il flag da impostare sarà **Considera anche le alternative dei materiali** che andrà impostato nella finestra *Parametri* della procedura [MRP](/docs/planning/ms-master-scheduling/mrp/). 
+Estas alternativas son consideradas en los registros de almacén si se utiliza un motivo que tenga activos los indicadores **Alternativas** y **Alternativas mixtas**.  
+Mientras que los procedimientos de Programación y MRP tomarán en consideración las alternativas en consecuencia de la activación o no de indicadores específicos: para la programación, el indicador que se debe activar será **considera anche le alternative dei materiali** que deberá ser configurado en la pantalla de [Programación general (Pianificazione generale)](/docs/planning/ms-master-scheduling/general-schedule), en la pestaña *parametri*; para el procedimiento MRP, el indicador que se debe configurar será **considera anche le alternative dei materiali** que deberá ser configurado en la ventana *Parámetros* del procedimiento [MRP](/docs/planning/ms-master-scheduling/mrp/).
 
-In tutti i casi precedentemente elencati, deve essere anche attivato il flag **Considera anche le alternative dei materiali** presente nella finestra [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo.
+En todos los casos anteriormente mencionados, también debe estar activado el indicador **considera anche le alternative dei materiali** presente en la ventana [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del artículo.
 
-### Fasi di scarico
+### Fases de descarga (Fasi di scarico)
 
-In questo tab può essere impostata la fase durante la quale deve essere scaricato il componente.
+En esta pestaña se puede establecer la fase durante la cual debe descargarse el componente.
 
-Ci sono tre tipi di scarico materiale ovvero **Automatico**, **Con lista** e **Manuale** che vengono impostati nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters).
+Hay tres tipos de descarga de material, a saber: **automatico**, **con lista** y **manuale** que se configuran en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters).
 
-Nel caso in cui si opti per lo scarico manuale, **Fluentis** considera in automatico che lo scarico del materiale (non assegnato ad un fase) venga fatto, nel caso si abbiano più fasi per quel prodotto, in corrispondenza dell'ultima fase che ha i flag *Movimentabile* e *Produttiva* abilitati. 
+En caso de optar por la descarga manual, **Fluentis** considera automáticamente que la descarga del material (no asignado a una fase) se realizará, en caso de tener más fases para ese producto, en correspondencia con la última fase que tiene activos los indicadores *movimentabile* y *produttiva*.
 
-### Ciclo
+### Ciclo (Ciclo)
 
-In questo tab si visualizza la lista delle [fasi](/docs/configurations/tables/production/standard-phases) che compongono il [ciclo di lavorazione](/docs/erp-home/registers/production/routes/new-route) dell'articolo selezionato.
+En esta pestaña se visualiza la lista de [fases (fasi)](/docs/configurations/tables/production/standard-phases) que componen el [ciclo de trabajo (ciclo di lavorazione)](/docs/erp-home/registers/production/routes/new-route) del artículo seleccionado.
 
-### Componenti
+### Componentes (Componenti)
 
-In questo tab vengono visualizzati gli eventuali componenti dell'articolo selezionato. È possibile anche inserire nuovi componenti e modificare quelli esistenti da questo tab oltre che attraverso i pulsanti presenti nella ribbon bar (Inserisci/Copia/Incolla/Taglia e Cancella componenti).
+En esta pestaña se visualizan los eventuales componentes del artículo seleccionado. También es posible insertar nuevos componentes y modificar los existentes desde esta pestaña, además de a través de los botones presentes en la barra de herramientas (Insertar/Copiar/Pegar/Cortar y Eliminar componentes).
 
-### Note
+### Notas (Note)
 
-In questo tab si possono inserire eventuali note e caricare file o immagini che devono essere considerate in fase di produzione.
+En esta pestaña se pueden insertar notas y cargar archivos o imágenes que deben ser consideradas en fase de producción.
 
-### Extra data - Distinta base
+### Datos extras - Lista de materiales (Extra data - Distinta base)
 
-In questo tab è possibile visualizzare ed eventualmente modificare gli extra data relativi alla distinta base del componente selezionato. Questo tab è attivo solo se il componente ha una distinta base.       
+En esta pestaña es posible visualizar y, eventualmente, modificar los datos extras relativos a la lista de materiales del componente seleccionado. Esta pestaña está activa solo si el componente tiene una lista de materiales. 
 
-### Extra data - Componenti
+### Datos extras - Componentes (Extra data - Componenti)
 
-In questo tab è possibile visualizzare ed eventualmente modificare gli extra data relativi al componente selezionato.
+En esta pestaña es posible visualizar y, eventualmente, modificar los datos extras relativos al componente seleccionado.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

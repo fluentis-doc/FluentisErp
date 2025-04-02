@@ -1,19 +1,19 @@
 ---
-title: Marche
+title: marche
 sidebar_position: 16
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Marche** e permette di gestire la codifica delle diverse *Marche*.
+La tabla se encuentra en la ruta **Tablas > Logística > marche (Tabelle > Logistica > Marche)** y permite gestionar la codificación de las diferentes *marche*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Marche**
+**Búsqueda de marche (Ricerca Marche)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Marche**
+**Inserción de marche (Inserimento Marche)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente link [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

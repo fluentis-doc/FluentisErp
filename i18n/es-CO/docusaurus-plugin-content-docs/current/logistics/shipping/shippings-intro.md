@@ -1,43 +1,43 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Questo nuovo strumento è stato sviluppato per ottimizzare e semplificare il processo di spedizione, consentendo un controllo più efficace e integrato di tutte le attività logistiche.
-La **gestione spedizioni** di Fluentis include la funzione di **groupage**, che permette di consolidare diverse spedizioni di merci provenienti da vari mittenti ma dirette verso la stessa area geografica in un unico carico o container.       
-Ciò consente di utilizzare in modo più efficiente lo spazio disponibile sui mezzi di trasporto, come camion, container marittimi o aerei, e di offrire un servizio più economico rispetto alla spedizione di singole merci.         
-In aggiunta, è stato implementato un **avanzato strumento di pianificazione** che consente di visualizzare le spedizioni per mezzo, autista, vettore e cliente. Grazie a una semplice funzionalità di drag & drop, gli operatori possono facilmente organizzare le spedizioni, anticipandole o posticipandole, e modificare il mezzo o l'autista incaricato, garantendo una gestione più flessibile e reattiva.
+Esta nueva herramienta ha sido desarrollada para optimizar y simplificar el proceso de envío, permitiendo un control más eficaz e integrado de todas las actividades logísticas.  
+La **gestión de envíos (gestione spedizioni)** de Fluentis incluye la función de **agrupamiento (groupage)**, que permite consolidar diferentes envíos de mercancías provenientes de varios remitentes pero dirigidos hacia la misma área geográfica en una única carga o contenedor.  
+Esto permite utilizar de manera más eficiente el espacio disponible en los medios de transporte, como camiones, contenedores marítimos o aviones, y ofrecer un servicio más económico en comparación con el envío de mercancías individuales.  
+Además, se ha implementado una **avanzada herramienta de planificación (avanzato strumento di pianificazione)** que permite visualizar los envíos por medio, conductor, transportista y cliente. Gracias a una sencilla funcionalidad de arrastrar y soltar, los operadores pueden organizar fácilmente los envíos, anticipándolos o posponiéndolos, y modificar el medio o el conductor encargado, garantizando una gestión más flexible y reactiva.
 
-## Moduli dell'area 
+## Módulos del área (Moduli dell'area)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/shipping/shippings-intro">Spedizioni</Link>
-        <p><Link to="/docs/logistics/shipping/shippings" className="bold-link">Spedizioni</Link></p>
-        <p>Tramite la gestione groupage, è possibile raggruppare le spedizioni di diversi clienti o fornitori in un'unica unità di trasporto.</p>
-        <p><Link to="/docs/logistics/shipping/calendar" className="bold-link">Calendario</Link></p>
-        <p>Consente di pianificare e gestire in modo efficiente le attività operative e logistiche, ottimizzando le risorse e migliorando il coordinamento delle spedizioni.</p>
+###     <Link to="/docs/logistics/shipping/shippings-intro">Envíos (Spedizioni)</Link>
+        <p><Link to="/docs/logistics/shipping/shippings" className="bold-link">Envíos (Spedizioni)</Link></p>
+        <p>Mediante la gestión de agrupamiento, es posible agrupar los envíos de diferentes clientes o proveedores en una única unidad de transporte.</p>
+        <p><Link to="/docs/logistics/shipping/calendar" className="bold-link">Calendario (Calendario)</Link></p>
+        <p>Permite planificar y gestionar de manera eficiente las actividades operativas y logísticas, optimizando los recursos y mejorando la coordinación de los envíos.</p>
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Para comenzar a utilizar (Per iniziare ad utilizzare)
 
-le **Spedizioni**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) 
-- definire un [*Tipi di spedizione*](/docs/configurations/tables/logistics/shipping-type)        
-- definire un [*Stati di spedizione*](/docs/configurations/tables/logistics/shipping-states)     
-- definire gli [*Automezzi*](/docs/logistics/motorvehicles/motorvehicle)   
-- definire gli [*Autisti automezzo*](/docs/logistics/motorvehicles/motorvehicle-drivers)      
-- definire i [*Motivi di fermo autoveicolo*](/docs/configurations/tables/logistics/motorvehicle-off-time-reasons)     
-- definire i [*Motivi di assenza del conducente*](/docs/configurations/tables/logistics/driver-off-time-reasons) 
-- definire le [*Licenze di guida automezzo*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)     
-- definire il tipo [*Proprietà automezzi*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
-- definire i [*Marchi automezzi*](/docs/configurations/tables/logistics/motorvehicle-brands)   
-- definire i [*Tipo carburante automezzo*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
-- definire i [*Tipi automezzi*](/docs/configurations/tables/logistics/motorvehicle-Type)  
+las **spedizioni**:  
+- crear artículos en la [*anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)  
+- definir un [*Tipos de envío (Tipi di spedizione)*](/docs/configurations/tables/logistics/shipping-type)  
+- definir un [*Estados de envío (Stati di spedizione)*](/docs/configurations/tables/logistics/shipping-states)  
+- definir los [*automezzi*](/docs/logistics/motorvehicles/motorvehicle)  
+- definir los [*Conductores de vehículos (Autisti automezzo)*](/docs/logistics/motorvehicles/motorvehicle-drivers)  
+- definir los [*Motivos de parada de vehículos (Motivi di fermo autoveicolo)*](/docs/configurations/tables/logistics/motorvehicle-off-time-reasons)  
+- definir los [*Motivos de ausencia del conductor (Motivi di assenza del conducente)*](/docs/configurations/tables/logistics/driver-off-time-reasons)  
+- definir las [*Licencias de conducir de vehículos (Licenze di guida automezzo)*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)  
+- definir el tipo [*Propiedad de vehículos (Proprietà automezzi)*](/docs/configurations/tables/logistics/motorvehicle-ownership)  
+- definir las [*Marcas de vehículos (Marchi automezzi)*](/docs/configurations/tables/logistics/motorvehicle-brands)  
+- definir el [*Tipo de combustible de vehículos (Tipo carburante automezzo)*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
+- definir los [*Tipos de vehículos (Tipi automezzi)*](/docs/configurations/tables/logistics/motorvehicle-Type)  
 
-## Collegamenti con altri moduli
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) e agli [*Ordini clienti*](/docs/sales/sales-orders/settings) dato che è possibile aggiungere gli articoli direttamente da un ordine.           
-Inoltre da una spedizione è possibile creare direttamente [*DDT*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*Fatture*](/docs/sales/sales-invoices/general-overview) di vendita ed anche [Picking](/docs/logistics/picking/picking-intro). 
+## Conexiones con otros módulos (Collegamenti con altri moduli)  
+Estos están estrechamente relacionados con el [*anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) y con los [*ordini clienti*](/docs/sales/sales-orders/settings) dado que es posible agregar artículos directamente desde un pedido.  
+Además, desde un envío se puede crear directamente un [*DDT (Documento de Transporte)*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*fatture*](/docs/sales/sales-invoices/general-overview) de venta e incluso [*Picking*](/docs/logistics/picking/picking-intro).

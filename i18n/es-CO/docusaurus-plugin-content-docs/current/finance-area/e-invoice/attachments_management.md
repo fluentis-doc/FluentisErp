@@ -1,18 +1,15 @@
 ---
-title: Gestione allegati alla fattura elettronica
+title: Gestión de archivos adjuntos a la factura electrónica (Gestione allegati alla fattura elettronica)
 sidebar_position: 3
 ---
 
+CASISTICA (CASISTICA):  
+Cómo adjuntar un archivo a la factura electrónica XML además de la copia en PDF de la propia factura.
 
-CASISTICA:
-Come allegare un file alla fattura elettronica XML in più rispetto alla copia pdf della fattura stessa.
+SOLUZIONE (SOLUCIÓN):  
+- Activar la inserción del archivo adjunto en el registro del cliente > pestaña información fiscal (tab informazioni fiscali), o (para todos los registros) en Tablas (Tabelle) > configuraciones generales (impostazioni generali) > configuración de documentos electrónicos (configurazione documenti elettronici).
 
+- Abrir la factura en la que se quieren adjuntar los documentos, presionar el botón documentos en el menú superior, adjuntar los documentos agregando el prefijo ALLEGATO_ al nombre del documento antes de generar el archivo XML.  
+Se puede adjuntar cualquier tipo de archivo (.jpeg, .xls, etc.).
 
-
-SOLUZIONE
-- Attivare l'inserimento dell'allegato nell'anagrafica del cliente > tab informazioni fiscali oppure (per tutte le anagrafiche) in Tabelle > impostazioni generali >configurazione documenti elettronici.
-
-- Aprire la fattura nella quale si vuole allegare i documenti, premere il pulsante documenti nel top menu, allegare i documenti inserendo il prefisso ALLEGATO_ al nome del documento prima di generare il file XML. 
-Può essere allegato qualsiasi tipo di file (.jpeg .xls ecc...)
-
-Per visualizzare gli allegati aprire il registro sdi, cliccare sul nome dell'allegato nella griglia presente sotto l'anteprima della fattura.
+Para visualizar los adjuntos, abrir el registro SDI, hacer clic en el nombre del archivo adjunto en la cuadrícula presente debajo de la vista previa de la factura.

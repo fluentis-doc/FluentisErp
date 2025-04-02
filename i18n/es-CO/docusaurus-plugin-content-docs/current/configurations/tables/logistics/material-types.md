@@ -1,32 +1,32 @@
 ---
-title: Tipi materiale
+title: tipi materiale
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi materiale**.
+La tabla se encuentra en la ruta **Tablas > Logística > tipi materiale (Tabelle > Logistica > Tipi materiale)**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi materiale* di imballaggio usati nella [Gestione Conai](/docs/sales/sales-flow/conai).
+En esta tabla es posible gestionar la codificación de los diferentes *tipi materiale* de embalaje utilizados en la [Gestión Conai](/docs/sales/sales-flow/conai).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi materiale**
+**Búsqueda de tipi materiale (Ricerca Tipi materiale)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo necesita hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi materiale**
+**Inserción de tipi materiale (Inserimento Tipi materiale)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Nella griglia superiore vengono codificati i *Tipi materiale*. I campi obbligatori richiesti dal programma sono il **Codice** e la **Descrizione**.  
+En la cuadrícula superior se codifican los *tipi materiale*. Los campos obligatorios requeridos por el programa son el **Código** y la **Descripción**.
 
-#### Campi specifici 
+#### Campos específicos (Campi specifici)
 
-> **Codice materiale Conai**: codice alfanumerico che indica il tipo di materiale di cui è composto l'imballaggio (cioè Acciaio, Alluminio, Carta, Legno, Plastica, ecc.);     
-> **Classi articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   
-> **Articolo per tassa di riciclo**: indica un codice articolo fittizio da utilizzare per l’inserimento della riga *Spesa Conai* in bolla/fattura (se non viene indicato un codice articolo, il materiale non sarà valido per la configurazione Conai negli articoli di vendita/acquisto);   
-> **Descrizione articolo**: indica la descrizione dell'*Articolo per tassa di riciclo*;    
-> **Note**: annotazioni libere.  
+> **codice materiale conai**: código alfanumérico que indica el tipo de material del que está compuesto el embalaje (es decir, Acero, Aluminio, Papel, Madera, Plástico, etc.);  
+> **classi articolo**: indica la [Clase (Classe)](/docs/configurations/tables/logistics/item-class) a la que pertenece el artículo;  
+> **articolo per tassa di riciclo**: indica un código de artículo ficticio a utilizar para la inserción de la línea *Gasto Conai* en factura (si no se indica un código de artículo, el material no será válido para la configuración Conai en los artículos de venta/compra);  
+> **descrizione articolo**: indica la descripción del *Artículo para impuesto de reciclaje*;  
+> **note**: anotaciones libres.
 
-Nella griglia inferiore è possibile definire i *Costi di riciclo* associati a ciascun materiale inserito nella tabella superiore, ovvero le tariffe da applicare all’interno dei vari *range di date*, con l’**Unità di misura** da applicare: questa deve essere coerente con l’unità di misura che si utilizzerà all’interno degli articoli di vendita e degli articoli fittizi Conai.
+En la cuadrícula inferior es posible definir los *costi di riciclo* asociados a cada material insertado en la tabla superior, es decir, las tarifas que se aplicarán dentro de los diversos *rangos de fechas (range di date)*, con la **unità di misura** a aplicar: esta debe ser coherente con la unidad de medida que se utilizará dentro de los artículos de venta y los artículos ficticios Conai.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento della *Gestione Conai* in Fluentis fare riferimento al seguente link [Gestione Conai](/docs/sales/sales-flow/conai).
+Para todo lo que no se detalla en este documento sobre el funcionamiento de la *gestione conai* en Fluentis, haga referencia al siguiente enlace [Gestión Conai](/docs/sales/sales-flow/conai).

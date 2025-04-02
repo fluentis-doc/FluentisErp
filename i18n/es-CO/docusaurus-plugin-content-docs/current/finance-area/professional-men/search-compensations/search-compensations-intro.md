@@ -1,37 +1,25 @@
 ---
-title: Ricerca compensi
+title: ricerca compensi
 sidebar_position: 1
 ---
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei compensi inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo compenso. |
-| Modifica | Richiama la procedura per modificare un compenso precedentemente inserito. |
-| Visualizzazione | Richiama la procedura per visualizzare un compenso precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un compenso precedentemente inserito. |
-|  [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)  | Apre la gestione dei dati dei versamenti effettuati. |
+| Búsqueda (Ricerca) | Botón para aplicar los filtros de búsqueda a toda la base de datos de compensaciones ingresadas. |
+| Nuevo (Nuovo) | Llama al procedimiento para ingresar una nueva compensación. |
+| Modificar (Modifica) | Llama al procedimiento para modificar una compensación previamente ingresada. |
+| Visualización (Visualizzazione) | Llama al procedimiento para visualizar una compensación previamente ingresada. |
+| Eliminar (Cancella) | Ejecuta el procedimiento para eliminar una compensación previamente ingresada. |
+| [Pagos de retención (Versamenti ritenuta)](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in) | Abre la gestión de datos de los pagos realizados. |
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Stampa certificazione ritenute (nel gruppo Ritenute a Titolo d'acconto) | Richiama la procedura per stampare le certificazioni periodiche delle ritenute. |
-|  [Stampa Situazione ritenute (nel gruppo Ritenute a Titolo d'acconto)](/docs/finance-area/professional-men/reports/withholding-tax-situation)  | Richiama la procedura per stampare la situazione delle ritenute versate/da versare per i pagamenti del periodo selezionato. |
+| Imprimir certificación de retenciones (en el grupo Retenciones a cuenta) (Stampa certificazione ritenute (nel gruppo Ritenute a Titolo d'acconto)) | Llama al procedimiento para imprimir las certificaciones periódicas de las retenciones. |
+| [Imprimir situación de retenciones (en el grupo Retenciones a cuenta)](/docs/finance-area/professional-men/reports/withholding-tax-situation) | Llama al procedimiento para imprimir la situación de las retenciones pagadas/a pagar para los pagos del periodo seleccionado. |
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Modello F24 | Richiama la procedura per gestire i dati del modello F24. |
-|  [Contabilizzazione compensi](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)  | Richiama la procedura per effettuare la contabilizzazione dei compensi. |
-|  [Contabilizzazione Enasarco](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei tributi dovuti all'ente Enasarco. |
-|  [Contabilizzazione pagamenti](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei pagamenti ai professionisti, che rileverà le ritenute e gli eventuali oneri INPS. |
-
-
-
-
-
-
+| Modelo F24 (Modello F24) | Llama al procedimiento para gestionar los datos del modelo F24. |
+| [Contabilización de compensaciones (Contabilizzazione compensi)](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting) | Llama al procedimiento para realizar la contabilización de las compensaciones. |
+| [Contabilización Enasarco (Contabilizzazione Enasarco)](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro) | Llama al procedimiento para realizar la contabilización de los tributos adeudados a la entidad Enasarco. |
+| [Contabilización de pagos (Contabilizzazione pagamenti)](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro) | Llama al procedimiento para realizar la contabilización de los pagos a los profesionales, que registrará las retenciones y los posibles impuestos a cargo del INPS. |

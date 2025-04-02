@@ -1,14 +1,14 @@
 ---
-title: Ricerca Ordini
+title: ricerca ordini
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Acquisti > Ordini > Ordini fornitori**.
+El formulario se abre a través de la ruta **Compras (Acquisti) > Pedidos (Ordini) > Pedidos de proveedores (Ordini fornitori)**.
 
-Per la spiegazione delle funzionalità comuni ai documenti di acquisto consultare la sezione [Acquisti](/docs/purchase/purchases-intro).
+Para la explicación de las funcionalidades comunes a los documentos de compra, consulte la sección [Compras (Acquisti)](/docs/purchase/purchases-intro).
 
-#### Pulsanti specifici  
+#### Botones específicos (Pulsanti specifici)  
 
-> **Proprietà evasione**: pulsante per visualizzare lo stato di evasione degli articoli. Nella griglia superiore, per ogni riga si visualizzerà la quantità ordinata e la quantità già consegnata. Se la riga è già stata evasa, nella griglia sottostante viene mostrato il documento di evasione collegato (DDT e fattura). 
+> **proprietà evasione**: botón para visualizar el estado de cumplimiento de los artículos. En la cuadrícula superior, para cada línea se mostrará la cantidad ordenada y la cantidad ya entregada. Si la línea ya ha sido cumplida, en la cuadrícula inferior se mostrará el documento de cumplimiento relacionado (DDT y factura).  
 >  
-> **Strumenti > Modifica massiva**: pulsante per modificare in modo massivo alcune delle informazioni contenute negli ordini fornitori selezionati; uscirà un pop up nel quale è possibile modificare i seguenti dati: Nostro riferimento, Vostro riferimento, Note, Data richiesta consegna, Data conferma ordine, e altri dati.      
+> **Herramientas > Edición masiva (Strumenti > Modifica massiva)**: botón para modificar masivamente algunas de las informaciones contenidas en los pedidos de proveedores seleccionados; se abrirá un pop-up en el cual es posible modificar los siguientes datos: Nuestro referente (Nostro riferimento), Su referente (Vostro riferimento), Notas (Note), Fecha de solicitud de entrega (Data richiesta consegna), Fecha de confirmación del pedido (Data conferma ordine), y otros datos.

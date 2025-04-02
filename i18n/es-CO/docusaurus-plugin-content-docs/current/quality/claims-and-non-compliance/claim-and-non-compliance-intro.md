@@ -1,72 +1,69 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-I documenti gestiti in questo modulo servono per incrementare la Soddisfazione dei clienti, migliorando la qualità dei prodotti e dei servizi, per soddisfare la normativa, raccogliere, catalogare, reperire facilmente le segnalazioni.   
-La gestione comprende la gestione dei Reclami, Prodotti Resi e  Segnalazioni di disservizi.   
-Le informazioni raccolte possono essere un aiuto validissimo per orientarsi tra i difetti e le mancanze dei processi.   
+Los documentos gestionados en este módulo sirven para incrementar la satisfacción de los clientes, mejorando la calidad de los productos y servicios, para cumplir con la normativa, recoger, catalogar y recuperar fácilmente las reclamaciones.  
+La gestión comprende la administración de Quejas, Productos Devueltos y Reportes de Incidencias.  
+La información recopilada puede ser una ayuda invaluable para abordar los defectos y las deficiencias de los procesos.  
 
-
-## I documenti gestiti
+## Los documentos gestionados (I documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/claims-and-non-compliance/claims/claim">Reclami (da cliente)</Link>
-        <p>I Reclami servono a registrare le insoddisfazione riguardo a un servizio o prodotto, permettendo all'azienda di riconoscere e correggere eventuali problemi. Sono uno strumento per migliorare la qualità e mantenere una buona relazione con i clienti.</p>
-        <p>Tramite il Tipo reclamo sono possibili due diversi modelli di gestione: 8D problem solving e Gestione difetti.</p>
-        <p>Per entrambe i modelli i dati di testata sono gli stessi ed è possibile inserire: la Persona o la Funziona aziendale responsabile del documento, eventuali riferimenti a documenti: Fattura di vendita, DDT di vendita, Ricevimento merci, Progetto, informazioni di approvazione Reclamo: data e chi l’ha approvato, dati relativi all’Audit-trail, informazioni di chiusura gestione Reclamo: data e chi l’ha chiuso.</p>
-        <p>Nella sessione Notifiche vengono gestiti: il motivo della contestazione, a quale Sito produttivo verrà assegnato il reclamo e dati di eventuale non recepimento del reclamo.</p>
-        <p>Nella sessione Valori vengono gestiti: la divisa, i riferimenti dell’eventuale nota di debito ricevuta, i Valori del Reclamo suddivisi in: Totale reclamo, Costo di gestione e valore da accreditare, tutti espressi nella divisa indicata e i riferimenti della Nota di credito, se generata.</p>
-        <p>Il modello di gestione è pilotabile dal Tipo reclamo e la gestione cambia in modo strutturale.</p>
-        **modello: 8D problem solving**
-        <p>Nel Reclamo in modalità 8D Problem Solving la gestione si diversifica nelle due successive sessioni: Oggetti reclamati e Gestione 8D.</p>
-        <p>Nella prima possiamo indicare gli articoli o servizi che il cliente ha contestato.</p>
-        <p>Nella seconda sessione la vera e propria gestione 8D: l’indicazione del team che gestirà il Reclamo con l’indicazione del Team leader; le Azioni di contenimento immediate per assicurare che, nel breve periodo, l’anomalia segnalata non si verifichi nuovamente; l’analisi delle Cause che hanno creano la non conformità; le Azioni permanenti che devono essere attuate per garantire che l’anomalia segnalata non si verifichi nuovamente; la Convalida, nel lungo periodo, che le Azioni permanenti abbiano avuto un effetto desiderato; le Fasi di implementazione delle Azioni intraprese.</p>
-        <p>Per ogni azione di contenimento o permanente e per ogni fase di implementazione è possibile creare un’Azione Correttiva.</p>
-        **modello: gestione difetti**
-        <p>Nel Reclamo in modalità Gestione difetti la gestione si diversifica dalla precedente con la sessione: Gestione difetti.</p>
-        <p>Nella sessione è possibile gestire: più difetti segnalati e, per ognuno: la causa presunta, la fase di rilevazione del difetto, la gravità, la causa effettiva, la soluzione tecnica proposta, la decisione tecnica intrapresa e la risoluzione commerciale; altre sessioni dedicate alla gestione: la sessione degli articoli o servizi che il cliente ha contestato, valorizzabili e con le indicazioni, in caso di reso, di accettazione dello stesso; la sessione di eventuali materiali utilizzati per porre rimedio al difetto segnalato; la sessione per i soggetti coinvolti alla gestione del difetto con le indicazioni di coinvolgimento, data scadenza e della gestione effettuata.</p>
-        <p>Per ogni difetto è possibile creare un’Azione Correttiva ed una o più Non conformità interne, a fornitore o a cliente.</p>
-        <p>Questa gestione permette di allegare documenti a tre livelli: per documento, per singolo difetto e per singolo articolo o servizio.</p>
-        <p>A standard sono disponibili le reportistiche di: Elenco reclami raggruppati per Cliente e Tipo, Autorizzazione al rientro, Notifica di recesso, Scheda Reclamo e dashboards con analisi di Pareto su Difetti riscontrati e Cause.</p>
+###     <Link to="/docs/quality/claims-and-non-compliance/claims/claim">Quejas (de cliente) (Reclami da cliente)</Link>
+        <p>Las Quejas sirven para registrar la insatisfacción respecto a un servicio o producto, permitiendo a la empresa reconocer y corregir posibles problemas. Son una herramienta para mejorar la calidad y mantener una buena relación con los clientes.</p>
+        <p>Mediante el Tipo de queja son posibles dos diferentes modelos de gestión: Resolución de problemas 8D y Gestión de defectos.</p>
+        <p>Para ambos modelos los datos de encabezado son los mismos y es posible ingresar: la Persona o la Función empresarial responsable del documento, cualquier referencia a documentos: Factura de venta, DDT de venta, Recepción de mercancías, Proyecto, información de aprobación de la Queja: fecha y quién la aprobó, datos relativos a la Audit-trail, información de cierre de la gestión de Queja: fecha y quién la cerró.</p>
+        <p>En la sección Notificaciones se gestionan: el motivo de la disputa, a qué Sitio de producción se asignará la queja y datos de posible no recepción de la queja.</p>
+        <p>En la sección Valores se gestionan: la divisa, las referencias de la posible nota de débito recibida, los Valores de la Queja divididos en: Total de queja, Costo de gestión y valor a acreditar, todos expresados en la divisa indicada y las referencias de la Nota de crédito, si se generó.</p>
+        <p>El modelo de gestión puede ser pilotado por el Tipo de queja y la gestión cambia de manera estructural.</p>
+        **modelo: resolución de problemas 8D (modello: 8D problem solving)**
+        <p>En la Queja en modo Resolución de problemas 8D, la gestión se diversifica en las dos secciones siguientes: Objetos reclamados y Gestión 8D.</p>
+        <p>En la primera podemos indicar los artículos o servicios que el cliente ha disputado.</p>
+        <p>En la segunda sección, la verdadera gestión 8D: la indicación del equipo que gestionará la Queja con la indicación del Líder del equipo; las Acciones de contención inmediatas para asegurar que, a corto plazo, la anomalía señalada no vuelva a ocurrir; el análisis de las Causas que han creado la no conformidad; las Acciones permanentes que deben ser implementadas para garantizar que la anomalía señalada no vuelva a ocurrir; la Validación, a largo plazo, de que las Acciones permanentes hayan tenido el efecto deseado; las Fases de implementación de las Acciones emprendidas.</p>
+        <p>Para cada acción de contención o permanente y para cada fase de implementación es posible crear una Acción Correctiva.</p>
+        **modelo: gestión de defectos (modello: gestione difetti)**
+        <p>En la Queja en modo Gestión de defectos, la gestión se diversifica de la anterior con la sección: Gestión de defectos.</p>
+        <p>En la sección es posible gestionar: múltiples defectos señalados y, para cada uno: la causa presunta, la fase de detección del defecto, la gravedad, la causa efectiva, la solución técnica propuesta, la decisión técnica adoptada y la resolución comercial; otras secciones dedicadas a la gestión: la sección de los artículos o servicios que el cliente ha disputado, que pueden valorarse y con las indicaciones, en caso de devolución, de aceptación de la misma; la sección de cualquier material utilizado para remediar el defecto señalado; la sección para los sujetos involucrados en la gestión del defecto con las indicaciones de participación, fecha de vencimiento y de la gestión realizada.</p>
+        <p>Para cada defecto es posible crear una Acción Correctiva y una o más No conformidades internas, al proveedor o al cliente.</p>
+        <p>Esta gestión permite adjuntar documentos a tres niveles: por documento, por defecto individual y por artículo o servicio individual.</p>
+        <p>Por estándar están disponibles los informes de: Lista de quejas agrupadas por Cliente y Tipo, Autorización de regreso, Notificación de desistimiento, Ficha de Queja y paneles de control con análisis de Pareto sobre Defectos encontrados y Causas.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/claims-and-non-compliance/non-compliances/non-compliance">Non conformità (a fornitore, interne e a cliente)</Link>
-        <p>Le Non conformità servono a identificare e documentare deviazioni dagli standard o dai requisiti prestabiliti. Questo processo aiuta a garantire che i prodotti, i servizi o i processi siano corretti e migliorati per mantenere la qualità e la sicurezza. Inoltre, facilita l'adozione di azioni correttive per prevenire futuri problemi.</p>
-        <p>Tramite il Tipo non conformità sono possibili tre diverse gestioni di Non conformità: a Fornitore, Interne e a Cliente.</p>
-        <p>Per tutte e tre le modalità le informazioni gestite sono le stesse fatta eccezione per il destinatario della Non conformità; vengono differentemente abilitati: il conto del Fornitore, quello del Cliente, o la Funzione/Area/Reparto.</p>
-        <p>I dati di testata sono: la Persona o la Funziona aziendale responsabile del documento, a quale Sito produttivo verrà assegnata la non conformità, il motivo della contestazione, la proposta di soluzione, la risposta del fornitore, dati relativi all’Audit-trail, informazioni di approvazione Non conformità: data e chi l’ha approvata, informazioni di chiusura gestione Non conformità: data e chi l’ha chiusa.</p>
-        <p>Nella sessione Riferimenti documenti vengono gestiti i riferimenti a documenti che potrebbero aver creato la Non conformità.</p>
-        <p>Nella sessione Valori vengono gestiti: la divisa, i riferimenti dell’eventuale Nota di dedito, se generata, della nota di accredito ricevuta, i Valori della Non conformità suddivisi in: Totale materiale non rilavorato, Totale materiale rilavorato, Costo di gestione, Valore da addebitare e Valore riconosciuto, tutti espressi nella divisa indicata precedentemente.</p>
-        <p>Nella sessione Gestione difetti è possibile gestire: più difetti segnalati e, per ognuno: la causa presunta, la fase di rilevazione del difetto, la gravità, la causa effettiva, la soluzione tecnica proposta, la decisione tecnica intrapresa e la risposta del fornitore; altre sessioni dedicate alla gestione: la sessione degli articoli o servizi che si stanno contestando, valorizzabili e con le indicazioni di eventuali costi di lavorazioni sostenute; la sessione di eventuali materiali utilizzati per porre rimedio al difetto segnalato; la sessione per i soggetti coinvolti alla gestione del difetto con le indicazioni di coinvolgimento, data scadenza e della gestione effettuata.</p>
-        <p>Per ogni difetto è possibile creare un’Azione Correttiva.</p>
-        <p>Questa gestione permette di allegare documenti a tre livelli: per documento, per singolo difetto e per singolo articolo o servizio.</p>
-        <p>A standard è disponibile il report di Scheda Non conformità e dashboards con analisi di Pareto su Difetti riscontrati e Cause.</p>
+###     <Link to="/docs/quality/claims-and-non-compliance/non-compliances/non-compliance">No conformidades (al proveedor, internas y al cliente) (Non conformità a fornitore, interne e a cliente)</Link>
+        <p>Las No conformidades sirven para identificar y documentar desviaciones de los estándares o de los requisitos establecidos. Este proceso ayuda a garantizar que los productos, servicios o procesos sean correctos y mejorados para mantener la calidad y la seguridad. Además, facilita la adopción de acciones correctivas para prevenir futuros problemas.</p>
+        <p>Mediante el Tipo de no conformidad son posibles tres gestiones diferentes de No conformidad: al Proveedor, Internas y al Cliente.</p>
+        <p>Para las tres modalidades, la información gestionada es la misma, excepto por el destinatario de la No conformidad; se habilitan diferentemente: la cuenta del Proveedor, la del Cliente o la Función/Área/Departamento.</p>
+        <p>Los datos de encabezado son: la Persona o la Función empresarial responsable del documento, a qué Sitio de producción se asignará la no conformidad, el motivo de la disputa, la propuesta de solución, la respuesta del proveedor, datos relativos a la Audit-trail, información de aprobación de la No conformidad: fecha y quién la aprobó, información de cierre de la gestión de la No conformidad: fecha y quién la cerró.</p>
+        <p>En la sección Referencias de documentos se gestionan las referencias a documentos que podrían haber creado la No conformidad.</p>
+        <p>En la sección Valores se gestionan: la divisa, las referencias de la posible Nota de débito, si se generó, de la nota de crédito recibida, los Valores de la No conformidad divididos en: Total de material no reprocesado, Total de material reprocesado, Costo de gestión, Valor a cargar y Valor reconocido, todos expresados en la divisa indicada anteriormente.</p>
+        <p>En la sección Gestión de defectos es posible gestionar: múltiples defectos señalados y, para cada uno: la causa presunta, la fase de detección del defecto, la gravedad, la causa efectiva, la solución técnica propuesta, la decisión técnica adoptada y la respuesta del proveedor; otras secciones dedicadas a la gestión: la sección de los artículos o servicios que se están disputando, que pueden ser valorables y con las indicaciones de posibles costos de trabajos realizados; la sección de cualquier material utilizado para remediar el defecto señalado; la sección para los sujetos involucrados en la gestión del defecto con las indicaciones de participación, fecha de vencimiento y de la gestión realizada.</p>
+        <p>Para cada defecto es posible crear una Acción Correctiva.</p>
+        <p>Esta gestión permite adjuntar documentos a tres niveles: por documento, por defecto individual y por artículo o servicio individual.</p>
+        <p>Como estándar está disponible el informe de Ficha de No conformidad y paneles de control con análisis de Pareto sobre Defectos encontrados y Causas.</p>
     </div>
 </div>
 
+## Para comenzar a utilizar (Per iniziare ad utilizzare)  
 
-## Per iniziare ad utilizzare   
+las **Quejas (de cliente)**:  
+- debes definir: un [*Tipo de Queja*](/docs/configurations/tables/quality/claim-and-non-compliance/claim-type) y su *Numeración*, una cuenta [*Cliente*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o un [*Contacto*](/docs/erp-home/registers/contacts/create-new-contact/general) y un [*Defecto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)  
+- para facilitar la gestión de las *Quejas*, establecer, para el año deseado, los [*Parámetros de Quejas y No conformidades*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) en la sesión *Quejas*  
+- debes ingresar una nueva [*Queja*](/docs/quality/claims-and-non-compliance/claims/claim)  
 
-i **Reclami (da cliente)**:
-- devi definire: un [*Tipo Reclamo*](/docs/configurations/tables/quality/claim-and-non-compliance/claim-type) e relativa *Numerazione*, un conto [*Cliente*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o un [*Contatto*](/docs/erp-home/registers/contacts/create-new-contact/general) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
-- per agevolare la gestione dei *Reclami* impostare, per l'anno desiderato, i [*Parametri Reclami e Non conformità*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) nella sessione *Reclami*   
-- devi inserire un nuovo [*Reclamo*](/docs/quality/claims-and-non-compliance/claims/claim)   
+las **No conformidades (al proveedor, internas y al cliente)**:  
+- debes definir: un [*Tipo de No conformidad*](/docs/configurations/tables/quality/claim-and-non-compliance/non-compliance-type) y su *Numeración*, una cuenta [*Cliente* o *Proveedor*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o una [*Función empresarial*](/docs/configurations/tables/quality/general/company-function) y un [*Defecto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)  
+- para facilitar la gestión de las *No conformidades*, establecer, para el año deseado, los [*Parámetros de Quejas y No conformidades*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) en la sesión *No conformidades*  
+- debes ingresar una nueva [*No conformidad*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance)  
 
-le **Non conformità (a fornitore, interne e a cliente)**:
-- devi definire: un [*Tipo Non conformità*](/docs/configurations/tables/quality/claim-and-non-compliance/non-compliance-type) e relativa *Numerazione*, un conto [*Cliente* o *Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o una [*Funzione aziendale*](/docs/configurations/tables/quality/general/company-function) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
-- per agevolare la gestione delle *Non conformità* impostare, per l'anno desiderato, i [*Parametri Reclami e Non conformità*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) nella sessione *Non conformità*   
-- devi inserire una nuova [*Non conformità*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance)   
-
-
-## Collegamenti con altri moduli
-E' possibile generare:
-- dalla gestione dei *Reclami*, delle [*Non conformità*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) per ogni riga di *Difetto riscontrato*;   
-- sempre dalla gestione dei *Reclami*, delle [*Note di accredito*](/docs/quality/corrective-actions/corrective-action-management) del modulo [*Vendite*](/docs/sales/sales-intro);   
-- dalla gestione delle *Non conformità*, delle [*Note di addebito*](/docs/quality/corrective-actions/corrective-action-management) del modulo [*Vendite*](/docs/sales/sales-intro);   
-- da entrambe le gestioni, delle [*Azioni correttive*](/docs/quality/corrective-actions/corrective-action-management) del [*modulo omonimo*](/docs/quality/corrective-actions/corrective-action-intro).  
+## Conexiones con otros módulos (Collegamenti con altri moduli)  
+Es posible generar:  
+- desde la gestión de las *Quejas*, de las [*No conformidades*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) por cada línea de *Defecto encontrado*;  
+- siempre desde la gestión de las *Quejas*, de las [*Notas de crédito*](/docs/quality/corrective-actions/corrective-action-management) del módulo [*Ventas*](/docs/sales/sales-intro);  
+- desde la gestión de las *No conformidades*, de las [*Notas de débito*](/docs/quality/corrective-actions/corrective-action-management) del módulo [*Ventas*](/docs/sales/sales-intro);  
+- de ambas gestiones, de las [*Acciones correctivas*](/docs/quality/corrective-actions/corrective-action-management) del [*módulo homónimo*](/docs/quality/corrective-actions/corrective-action-intro).

@@ -3,292 +3,220 @@ title: Fluentis NSO
 sidebar_position: 5
 ---
 
-## Configurazione
+## Configuración (Configurazione)
 
-La prima configurazione da fare è inserire il flag Trasmissione Ordini Elettronici in *Home > Tabelle > Impostazioni generali > Configurazione documenti elettronici*.        
-Nella tabella Configurazione documenti elettronici è possibile definire per ogni società l’utilizzo 
-del ricevimento e della trasmissione degli ordini elettronici con la pubblica amministrazione, 
-nella stessa tabella è possibile identificare come devono essere eseguite certe transazioni.        
-Tra le tabelle delle impostazioni generali c’è la sezione PEPPOL dove ci sono:
-Le tabelle precodificate:
-- Tipi ordine cliente standard PEPPOL, contiene i codici dei tipi ordine Ordine e sotto-Ordine definiti nella code list dello Standard PEPPOL
-- Codici Unità di misura standard PEPPOL, contiene le Unità di misura definiti nella code 
-list dello Standard PEPPOL
-- Codici IVA standard PEPPOL, contiene i codici IVA definiti nella code list dello 
-Standard PEPPOL
-- Codici sconto standard PEPPOL
-- Codici spese standard PEPPOL
-- Classificazione Articoli standard PEPPOL
-- Natura Processi 
-- Natura Documenti
+La primera configuración que se debe realizar es habilitar el indicador de **trasmissione ordini elettronici** en *Inicio > Tablas > Configuración General > Configuración de Documentos Electrónicos*.        
+En la tabla de Configuración de Documentos Electrónicos se puede definir para cada empresa el uso de la recepción y transmisión de pedidos electrónicos con la administración pública. En la misma tabla también se puede identificar cómo deben realizarse ciertas transacciones.        
+Entre las tablas de configuraciones generales existe la sección **PEPPOL** donde están:  
+Las tablas precodificadas:  
+- Tipos de pedido de cliente estándar PEPPOL, contiene los códigos de los tipos de pedido **ordine** y **Sub-Orden (sotto-Ordine)** definidos en la lista de códigos del estándar PEPPOL.  
+- Códigos de Unidad de medida estándar PEPPOL, contiene las Unidades de medida definidas en la lista de códigos del estándar PEPPOL.  
+- Códigos de IVA estándar PEPPOL, contiene los códigos de IVA definidos en la lista de códigos del estándar PEPPOL.  
+- Códigos de descuento estándar PEPPOL.  
+- Códigos de gastos estándar PEPPOL.  
+- Clasificación de Artículos estándar PEPPOL.  
+- Naturaleza de Procesos.  
+- Naturaleza de Documentos.  
 
-## Tabelle da configurare
+## Tablas a configurar (Tabelle da configurare)
 
-Le tabelle da configurare sono le seguenti:     
+Las tablas a configurar son las siguientes:     
 
-- I tipi ordine Fluentis che corrispondono ai tipi ordine PEPPOL (configurazione tipi 
-ordine cliente)
-- I codici iva Fluentis che corrispondono ai codici IVA di PEPPOL (configurazione iva) 
-- Le unità di misura di Fluentis che corrispondono ai codici unità di misura di PEPPOL 
-(configurazione unità di misura) 
-- Nella tipi barcode c’è da definire quale tipo barcode identifica l’AIC code, la codifica 
-standard o la classificazione articoli 
-- Configurazione tipi abbuoni, dove si associano i tipi sconto Fluentis con i codici abbuono 
-PEPPOL
-- Configurazione tipi spese, dove si associano i tipi spese Fluentis con i codici spesa 
-PEPPOL
+- Los tipos de pedido Fluentis que corresponden a los tipos de pedido PEPPOL (configuración de tipos de pedido de cliente).  
+- Los códigos de IVA Fluentis que corresponden a los códigos de IVA de PEPPOL (configuración de IVA).  
+- Las unidades de medida de Fluentis que corresponden a los códigos de unidad de medida de PEPPOL (configuración de unidades de medida).  
+- En los tipos de código de barras se debe definir qué tipo de código de barras identifica el código AIC, la codificación estándar o la clasificación de artículos.  
+- Configuración de tipos de rebajas, donde se asocian los tipos de descuento Fluentis con los códigos de descuento PEPPOL.  
+- Configuración de tipos de gastos, donde se asocian los tipos de gastos Fluentis con los códigos de gastos PEPPOL.  
 
-## Dati delle tabelle Precodificate 
+## Datos de las tablas Precodificadas (Dati delle tabelle Precodificate)
 
-E’ necessario identificare il tipo di ordine, utilizzando i valori della relativa code list prevista 
-dallo standard PEPPOL, che include i seguenti due codici: 
-- “220”, per gli ordini di acquisto in senso stretto; 
-- “227”, per gli ordini di consegna.       
+Es necesario identificar el tipo de pedido, utilizando los valores de la lista de códigos correspondiente prevista por el estándar PEPPOL, que incluye los siguientes dos códigos:  
+- “220”, para los pedidos de compra en sentido estricto;  
+- “227”, para los pedidos de entrega.       
 
-Nei Documenti di tipo: 
-- Ordine iniziale e sostitutivo; 
-- Ordine di riscontro sostitutivo;        
+En los Documentos de tipo:  
+- Orden inicial y sustituto;  
+- Orden de confirmación sustituta;        
 
-il codice del tipo di ordine viene indicato nell’elemento “OrderTypeCode”, come mostrato nel 
-seguente esempio: 
+el código del tipo de pedido se indica en el elemento “OrderTypeCode”, como se muestra en el siguiente ejemplo: 
 
-< cbc:OrderTypeCode>220< /cbc:OrderTypeCode>             
+<cbc:OrderTypeCode>220</cbc:OrderTypeCode>             
 
-Nei Documenti di tipo:       
+En los Documentos de tipo:       
 
-- Ordine pre-concordato iniziale e sostitutivo;       
+- Orden pre-concordada inicial y sustituto;       
 
-il codice del tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, come mostrato nel seguente esempio:        
+el código del tipo de pedido se indica en el campo “SpecialTerms” del elemento “DeliveryTerms”, como se muestra en el siguiente ejemplo:        
 
-< cac:DeliveryTerms> < cbc:SpecialTerms>220< /cbc:SpecialTerms> < /cac:DeliveryTerms>
+<cac:DeliveryTerms> <cbc:SpecialTerms>220</cbc:SpecialTerms> </cac:DeliveryTerms>
          
-Esiste un’ulteriore classificazione dei tipi ordine, non obbligatoria.       
-Per il tipo ordine 220 Ordine di acquisto:      
-- OF, Ordine di fatturazione per prodotti già consumati 
-- OFR, Ordine di fatturazione e reintegro 
-Per il tipo ordine 227 Ordine di consegna:      
-- CD Conto deposito 
-- CV Conto visione 
-- CG Comodato gratuito       
+Existe una clasificación adicional de los tipos de pedido, no obligatoria.       
+Para el tipo de pedido 220 **ordine di acquisto**:      
+- OF, Pedido de facturación por productos ya consumidos.  
+- OFR, Pedido de facturación y reintegro.  
+Para el tipo de pedido 227 **ordine di consegna**:      
+- CD, Cuenta de depósito.  
+- CV, Cuenta de visión.  
+- CG, Comodato gratuito.       
 
-Nei Documenti di tipo: 
-- Ordine iniziale e sostitutivo; 
-- Ordine di riscontro sostitutivo;        
+En los Documentos de tipo: 
+- Orden inicial y sustituto; 
+- Orden de confirmación sustituta;        
 
-il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, come mostrato nel seguente esempio:        
+el código del sub-tipo de pedido se indica en el campo “SpecialTerms” del elemento “DeliveryTerms”, como se muestra en el siguiente ejemplo:        
 
-< cac:DeliveryTerms> < cbc:SpecialTerms>OFR< /SpecialTerms> < /cac:DeliveryTerms>
+<cac:DeliveryTerms> <cbc:SpecialTerms>OFR</SpecialTerms> </cac:DeliveryTerms>
      
-Nei Documenti di tipo: 
-- Ordine pre-concordato iniziale e sostitutivo;         
+En los Documentos de tipo: 
+- Orden pre-concordada inicial y sustituto;         
 
-il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, dopo il codice del tipo di ordine, utilizzando il formato dei campi strutturati, 
-come mostrato nel seguente esempio:         
+el código del sub-tipo de pedido se indica en el campo “SpecialTerms” del elemento “DeliveryTerms”, después del código del tipo de pedido, utilizando el formato de campos estructurados, como se muestra en el siguiente ejemplo:         
 
-< cac:DeliveryTerms> < cbc:SpecialTerms>220#OFR< /SpecialTerms> < /cac:DeliveryTerms>
+<cac:DeliveryTerms> <cbc:SpecialTerms>220#OFR</SpecialTerms> </cac:DeliveryTerms>
 
-## Codice Articolo
+## Código Artículo (Codice Articolo)
 
-L’individuazione del prodotto (bene o servizio) all’interno di ciascuna linea d’ordine avviene, oltre 
-che attraverso il nome (elemento “Name, che è obbligatorio) e la descrizione (elemento 
-“Description”), anche per mezzo dell’utilizzo di codici identificativi. 
-In particolare, i tracciati dei predetti Documenti prevedono, primariamente, due tipi di codice: 
-- il codice attribuito dal Fornitore (elemento “SellersItemIdentification/ID”); 
-- il codice standard, corrispondente all’identificativo assegnato al prodotto da un sistema di 
-identificazione univoca (elemento “StandardItemIdentification/ID”) selezionato tra quelli presenti 
-nell’apposita code list prevista dallo standard PEPPOL.         
+La identificación del producto (bien o servicio) dentro de cada línea de pedido se realiza, además del nombre (elemento “Name”, que es obligatorio) y la descripción (elemento “Description”), también mediante el uso de códigos identificativos.  
+En particular, los formatos de los mencionados Documentos prevén, principalmente, dos tipos de código:  
+- el código asignado por el Proveedor (elemento “SellersItemIdentification/ID”);  
+- el código estándar, correspondiente al identificador asignado al producto por un sistema de identificación única (elemento “StandardItemIdentification/ID”) seleccionado entre los que están presentes en la lista de códigos prevista por el estándar PEPPOL.         
 
-Gli elementi su menzionati non sono obbligatori, tuttavia se ne raccomanda vivamente l’utilizzo.      
-Esempio:     
+Los elementos mencionados no son obligatorios, sin embargo, se recomienda encarecidamente su uso.      
+Ejemplo:     
 
 < cac:OrderLine>          
         < cac:LineItem>        
         < cac:Item>        
-            < cbc:Name>Penna stilografica< /cbc:Name>        
-            < cbc:Description>Penna stilografica edizione limitata< /cbc:Description>        
+            < cbc:Name>Pluma estilográfica</cbc:Name>        
+            < cbc:Description>Pluma estilográfica edición limitada</cbc:Description>        
             < cac:SellersItemIdentification>           
-                < cbc:ID>Stilo24< /cbc:ID>       
+                < cbc:ID>Stilo24</cbc:ID>       
             < /cac:SellersItemIdentification>      
             < cac:StandardItemIdentification>      
-                < cbc:ID schemeID=”0160”>0K10999746< /ID>       
+                < cbc:ID schemeID=”0160”>0K10999746</cbc:ID>       
             < /cac:StandardItemIdentification>       
         < /cac:Item>       
         < /cac:LineItem>      
 < /cac:OrderLine>          
 
-Per i beni di largo consumo, si suggerisce di valorizzare l’elemento 
-“StandardItemIdentification/ID” con il relativo codice GTIN (corrispondente allo 
-“schemeID=”0160” della code list PEPPOL), come mostrato nel precedente esempio.         
-Per i prodotti farmaceutici provvisti del codice di Autorizzazione all’Immissione in Commercio 
-(AIC) rilasciato dell’Agenzia Italiana del Farmaco (AIFA), l’elemento 
-“SellersItemIdentification/ID” deve essere valorizzato sempre con il relativo codice AIC.
+Para los bienes de consumo, se sugiere valorar el elemento "StandardItemIdentification/ID" con el código GTIN correspondiente ("schemeID=”0160” de la lista de códigos PEPPOL), como se mostró en el ejemplo anterior.         
+Para los productos farmacéuticos con el código de Autorización de Comercialización (AIC) emitido por la Agencia Italiana del Medicamento (AIFA), el elemento “SellersItemIdentification/ID” debe ser valorado siempre con el código AIC correspondiente.
 
-## Gruppo Merceologico
+## Grupo Merceológico (Gruppo Merceologico)
 
-Per ciascun prodotto, all’interno della relativa linea d’ordine è possibile specificare uno o più 
-codici di classificazione, valorizzando il campo “ItemClassificationCode/ID” dell’elemento 
-“CommodityClassification”. 
-Il valore da indicare deve essere tratto da un sistema di classificazione univoca selezionato tra 
-quelli presenti nell’apposita code list prevista dallo standard PEPPOL, come mostrato 
-nell’esempio seguente:       
+Para cada producto, dentro de la línea de pedido correspondiente se pueden especificar uno o más códigos de clasificación, valorando el campo “ItemClassificationCode/ID” del elemento “CommodityClassification”.  
+El valor a indicar debe ser tomado de un sistema de clasificación única seleccionado entre los que están presentes en la lista de códigos prevista por el estándar PEPPOL, como se muestra en el siguiente ejemplo:       
 
-< cac:OrderLine>        
+<cac:OrderLine>        
 < cac:LineItem>       
 < cac:Item>       
 < cac:CommodityClassification>        
-< cbc:ItemClassificationCode listVersionID=”19.0501” listID=”STI”>12345678< /cbc:ItemClassificationCode>      
+< cbc:ItemClassificationCode listVersionID=”19.0501” listID=”STI”>12345678</cbc:ItemClassificationCode>      
 < /cac:CommodityClassification>       
 < /cac:Item>       
 < /cac:LineItem>      
 < /cac:OrderLine>      
 
-Si raccomanda di utilizzare almeno uno dei sistemi di classificazione riportati nella tabella che 
-segue, ove applicabili.       
+Se recomienda utilizar al menos uno de los sistemas de clasificación indicados en la tabla que sigue, donde sean aplicables.       
 
-| Codice | Descrizione dello standard di classificazione | Ambito di utilizzo |
+| Código | Descripción del estándar de clasificación | Ámbito de uso |
 | :-- | :-- | :-- |
-| STI | Sistema ufficiale europeo di classificazione unico per gli appalti pubblici (CPV - Common Procurement Vocabulaty) | Prodotti e servizi oggetto di appalti pubblici |
-| STL | Sistema di classificazione anatomico, terapeutico e chimico (ATC - Anatomical Therapeutic Chemical classification system) | Farmaci |
-| STO | Classificazione Nazionale Italiana dei Dispositivi medici (CND) | Dispositivi medici |
-| STH | Classificazione commerciale dei prodotti (GPC - Global Product Classification) | Beni di largo consumo |
-| IB | Sistema di identificazione internazionale dei libri (ISBN - International Standard Book Number) | Libri |
-| ZZZ | Sistema definito manualmente tra le parti | Per i dispositivi medici permette di specificare i valori 'DM1', 'DM2' o 'DM0' (quando non applicabili i primi due) |
+| STI | Sistema oficial europeo de clasificación único para las contrataciones públicas (CPV - Common Procurement Vocabulary) | Productos y servicios objeto de contrataciones públicas |
+| STL | Sistema de clasificación anatómico, terapéutico y químico (ATC - Anatomical Therapeutic Chemical classification system) | Medicamentos |
+| STO | Clasificación Nacional Italiana de Dispositivos médicos (CND) | Dispositivos médicos |
+| STH | Clasificación comercial de productos (GPC - Global Product Classification) | Bienes de consumo |
+| IB | Sistema de identificación internacional de libros (ISBN - International Standard Book Number) | Libros |
+| ZZZ | Sistema definido manualmente entre las partes | Para dispositivos médicos permite especificar los valores 'DM1', 'DM2' o 'DM0' (cuando no aplicables los primeros dos) |
 
-In Fluentis questi codici sono da attribuire alla tabella codici Barcode da associare all’articolo.     
+En Fluentis, estos códigos deben ser atribuidos a la tabla de códigos de barras que se asociarán al artículo.     
 
-## Unità di misura
+## Unidad de Medida (Unità di misura)
 
-Nelle linee d’ordine, è necessario indicare la quantità del prodotto specificando un’unità di misura 
-tra quelle indicate nell’apposita Code List prevista dallo standard PEPPOL, come mostrato nel 
-seguente esempio:     
+En las líneas de pedido, es necesario indicar la cantidad del producto especificando una unidad de medida entre las indicadas en la lista de códigos prevista por el estándar PEPPOL, como se muestra en el siguiente ejemplo:     
 
 < cac:OrderLine> 
 < cac:LineItem> 
-< cbc:Quantity unitCode=”C62”>3< /cbc:Quantity> 
+< cbc:Quantity unitCode=”C62”>3</cbc:Quantity> 
 < /cac:LineItem> 
 < /cac:OrderLine>          
 
-Nella tabella che segue, si riportano i codici delle unità di misura che si raccomanda di utilizzare, 
-ove applicabili (per maggiori dettagli si rinvia alle Linee guida).         
+En la tabla que sigue, se presentan los códigos de las unidades de medida que se recomienda utilizar, donde sean aplicables (para más detalles se remite a las Guías).         
 
-| Codice | Unità di misura | Ambito di utilizzo |
+| Código | Unidad de medida | Ámbito de uso |
 | :-: | :-- | :-: |
-| C62 | Unità di prodotto (bene o servizio) | Quantità |
-| PR | Paio | Quantità |
-| XBK | Pacchetto, scatola: confezionamento primario che contiene più unità del medesimo articolo | Confezionamento |
-| DZP | Confezionamento standard contenente dodici pezzi di un medesimo articolo | Confezionamento |
-| KT | Equipaggiamento (kit): confezionamento primario che contiene più unità di articoli diversi ma utilizzabili congiuntamente | Confezionamento |
-| XBX | Pacco, imballaggio (box): confezionamento secondario che contiene più confezioni primarie | Confezionamento |
-| XOB | Bancale (pallet): piattaforma o scatola aperta, solitamente in legno, su cui vengono trattenute le merci per facilità di movimentazione meccanica durante il trasporto e lo stoccaggio | Confezionamento |
-| MTR | Metro | Lunghezza |
-| CMT | Centimetro | Lunghezza |
-| MMT | Millimetro | Lunghezza |
-| MTK | Metro quadrato | Superficie |
-| CMK | Centrimetro quadrato | Superficie |
-| MTQ | Metro cubo | Volume |
-| CMQ | Centimetro cubo | Volume |
-| MMQ | Millimetro cubo | Volume |
-| LTR | Litro | Capacità |
-| MLT | Millilitro | Capacità |
-| GRM | Grammo | Peso |
-| HGM | Ettogrammo | Peso |
-| KGM | Chilogrammo | Peso |
-| MGM | Milligrammo | Peso |
-| MC | Microgrammo | Peso |
-| HUR | Ora | Tempo |
-| DAY | Giorno | Tempo |
-| MON | Mese | Tempo |
-| ANN | Anno | Tempo |
-| E40 | Giorno di lavoro | Lavoro |
-| KWH | Kilowattora | Elettricità |
-| BQL | Becquerei | Radioattività |
-| 4N | Mega-Becquerei | Radioattività |
-| GBQ | Giga-Becquerei | Radioattività |
-| CUR | Curie | Radioattività |
-| MCU | Millicurie | Radioattività |
+| C62 | Unidad de producto (bien o servicio) | Cantidad |
+| PR | Par | Cantidad |
+| XBK | Paquete, caja: embalaje primario que contiene más unidades del mismo artículo | Embalaje |
+| DZP | Embalaje estándar que contiene doce piezas del mismo artículo | Embalaje |
+| KT | Equipamiento (kit): embalaje primario que contiene más unidades de artículos diferentes pero utilizables conjuntamente | Embalaje |
+| XBX | Caja, embalaje (box): embalaje secundario que contiene más embalajes primarios | Embalaje |
+| XOB | Palet (pallet): plataforma o caja abierta, usualmente de madera, sobre la que se retienen las mercancías para facilitar su manipulación mecánica durante el transporte y almacenamiento | Embalaje |
+| MTR | Metro | Longitud |
+| CMT | Centímetro | Longitud |
+| MMT | Milímetro | Longitud |
+| MTK | Metro cuadrado | Superficie |
+| CMK | Centímetro cuadrado | Superficie |
+| MTQ | Metro cúbico | Volumen |
+| CMQ | Centímetro cúbico | Volumen |
+| MMQ | Milímetro cúbico | Volumen |
+| LTR | Litro | Capacidad |
+| MLT | Mililitro | Capacidad |
+| GRM | Gramo | Peso |
+| HGM | Hectogramo | Peso |
+| KGM | Kilogramo | Peso |
+| MGM | Miligramo | Peso |
+| MC | Microgramo | Peso |
+| HUR | Hora | Tiempo |
+| DAY | Día | Tiempo |
+| MON | Mes | Tiempo |
+| ANN | Año | Tiempo |
+| E40 | Día laborable | Trabajo |
+| KWH | Kilovatio-hora | Electricidad |
+| BQL | Becquerel | Radioactividad |
+| 4N | Mega-Becquerel | Radioactividad |
+| GBQ | Giga-Becquerel | Radioactividad |
+| CUR | Curie | Radioactividad |
+| MCU | Millicurie | Radioactividad |
 
-## Destinazione merce
+## Destinación Mercancía (Destinazione merce)
 
-L'ID indica il codice attribuito al luogo in cui deve essere eseguita la fornitura. Questo codice va 
-sempre riportato se il luogo di consegna è un indirizzo istituzionale del Cliente a cui è stato 
-associato un identificativo univoco reso disponibile al Fornitore.          
+El ID indica el código asignado al lugar donde debe llevarse a cabo la entrega. Este código debe siempre especificarse si el lugar de entrega es una dirección institucional del Cliente a la que se ha asociado un identificador único proporcionado al Proveedor.          
 
-Sono da valorizzare in modo appropriato i diversi campi dell’elemento “DeliveryLocation” 
-(inclusi quelli non obbligatori, ove ciò contribuisca a specificarne l’esatta individuazione), come 
-mostrato nel seguente esempio, riferito a un Documento di tipo Ordine o Ordine di riscontro. 
-L’indicazione del luogo di consegna è previsto solo con riferimento all’intero Documento.        
+Deben ser adecuadamente valorizados los diferentes campos del elemento “DeliveryLocation” (incluidos aquellos no obligatorios, donde esto contribuya a especificar su identificación exacta), como se muestra en el siguiente ejemplo, referido a un Documento de tipo Pedido o Pedido de confirmación.  
+La indicación del lugar de entrega se prevé solo en relación con el Documento completo.        
 
-Allo scopo di agevolare la fornitura dei beni presso le sedi istituzionali delle amministrazioni 
-pubbliche, è opportuno che i rispettivi punti di consegna sia codificato in maniera univoca. Con 
-specifico riguardo agli enti del SSN, si segnala che da settembre 2019 sarà disponibile il sito web 
-(http://www.puntidiconsegna-nso.it/) in cui sarà possibile pubblicare l’elenco dei propri codici 
-identificativi dei punti di consegna istituzionali. Nello specifico, si raccomanda agli Enti di creare 
-i codici dei punti di consegna istituzionali anteponendo il proprio codice fiscale al codice interno 
-del punto di consegna, definito liberamente, separati dal carattere “-“ (trattino d’unione o segno 
-meno), senza interposizione di spazi. Il formato del codice sarà quindi: Codice Fiscale-ID interno 
-punto di consegna Per esempio, nel caso di Ente con Codice Fiscale “123456788901” e magazzino 
-“acdg45”, il Codice Ship-To da inserire nell'ordine sarà "123456788901-acdg45” (v. Paragrafo 
-3.3.3.6). Si suggerisce di contenere la lunghezza di questo codice entro i 20 caratteri complessivi 
-(“-“ incluso).         
+Con el fin de facilitar la entrega de bienes en las sedes institucionales de las administraciones públicas, es recomendable que los respectivos puntos de entrega estén codificados de manera única. Con respecto a las entidades del **SSN**, se señala que desde septiembre de 2019 estará disponible la página web (http://www.puntidiconsegna-nso.it/) donde será posible publicar la lista de sus códigos identificativos de los puntos de entrega institucionales. En específico, se recomienda a las entidades crear los códigos de los puntos de entrega institucionales anteponiendo su código fiscal al código interno del punto de entrega, definido libremente, separados por el carácter “-“ (guion o signo menos), sin interposición de espacios. El formato del código será: Código Fiscal-ID interno del punto de entrega. Por ejemplo, en el caso de una Entidad con Código Fiscal “123456788901” y almacén “acdg45”, el código Ship-To que se insertará en el pedido será "123456788901-acdg45” (v. Párrafo 3.3.3.6). Se sugiere que la longitud de este código no supere los 20 caracteres en total (“-” incluido).         
 
-In Fluentis la Destinazione Merce viene riconosciuta tramite il questo codice ID e viene ricercata 
-come destinazione codificata nel cliente attribuendo al nomignolo del contatto in Fluentis gli ultimi 
-7 caratteri del codice che segue il – del punto di consegna NSO.
+En Fluentis, la Destinación Mercancía se reconoce mediante este código ID y se busca como destino codificado en el cliente, asignando al apodo del contacto en Fluentis los últimos 7 caracteres del código que sigue el “-” del punto de entrega NSO.
 
-## PEPPOL Ordini clienti
+## PEPPOL Pedidos de Clientes (PEPPOL Ordini clienti)
 
-In applicazioni Bizlink c’è la form PEPPOL Ordini Clienti per visualizzare tutti i messaggi in 
-entrata da NSO e in uscita per NSO.         
-Dopo aver selezionato la riga di un ordine, premendo il tasto “Visualizza” sulla ribbon bar viene 
-aperta un’ulteriore form **Registro dei documenti SDI**.       
-All’interno di questa form vengono mostrati alcuni dati riferiti al file NSO dell’ordine, quali lo 
-stato del documento, i file collegati e il contenuto del file.
-È possibile visualizzare il contenuto dell’ordine. È possibile inoltre visualizzare le eventuali notifiche dello SDI.           
-Premendo sul pulsante **Scarica allegato** è possibile scaricare l’allegato selezionato nella 
-griglia “Allegati”, mentre premendo “Scarica il contenuto del registro” è possibile scaricare il 
-file selezionato nella griglia **Registro dei documenti SDI**, la quale contiene il file xml 
-dell’ordine e tutti i file ad esso collegati, come quello delle notifiche.       
-Premendo il pulsante della ribbon bar **Apri documento** è possibile visualizzare il contenuto 
-dell’ordine Peppol, nel caso in cui sia almeno nello stato “Inserito”, direttamente in Fluentis, 
-mediante l’apertura della form “Ordini cliente”.         
-Premendo il pulsante **Registro del documenti SDI** nella form “Ordini Cliente” verrà aperta la 
-form “Registro dei documenti SDI”, analogamente a quanto accade premendo il pulsante 
-“Visualizza” nella ribbon bar della form *PEPPOL ordini clienti*.       
-Premendo sul pulsante **Scarica allegato** nella ribbon bar della form *PEPPOL Ordini Clienti* 
-verrà scaricato, in una cartella indicata dall’utente, il file Xml dell’ordine selezionato.        
-Premendo sul pulsante **Modifica dati XML** dopo aver selezionato un ordine con stato SDI “In 
-errore”, viene aperta la form di modifica dei dati del file importato.           
-In questa form sarà possibile correggere eventuali dati errati sull’ordine ricevuto, quali righe con 
-prezzo a 0, codici articoli non interpretabili automaticamente, unità di misura, in modo di 
-indicare dati obbligatori mancanti.         
-Nella griglia **Registro Ordini NSO** vengono visualizzate diverse informazioni. Vediamo le 
-principali:          
-- Stato SDI: è lo stato di avanzamento in cui si trova l’ordine PEPPOL (vedi la parte 
-relativa agli stati dell’ordine)
-- Tipo: è la tipologia dell’ordine PEPPOL e può assumere i seguenti valori
-> - 220 = Ordine di acquisto (ordine ricevuto dal fornitore)
-> - 227 = Ordine di consegna
-> - PRE = Ordine Pre-concordato
-- Numero(Id): è il numero dell’ordine, che con data cliente e endpointCliente identifica 
-univocamente l’ordine
-- Data Cliente: è la data dell’ordine, che con numero(I) e EndpointCliente identifica 
-univocamente l’ordine
-- Endpointcliente: può indicare o il codice ufficio del cliente o la partita IVA del 
-fornitore che ha inviato l’ordine, e con Numero(Id) e Data Cliente identifica 
-univocamente l’ordine
-- Tipo processo: indica la tipologia di processo di cui fa parte l’ordine e può assumere 3 
-valori:
-> - Ordinazione semplice
-> - Ordinazione completa
-> - Ordinazione pre-concordata
-- Tipo documento: indica l’ultima tipologia di documento o notifica legata all’ordine
-- Tripletta: è il riferimento all’ordine a cui fa riferimento l’ordine corrente, la tripleta è 
-composta da : Identificativo del documento, data di emissione del documento e 
-identificativo del soggetto emittente
-- Nome file NSO: indica il nome del file Xml dell’ordine PEPPOL
-- NSO data ricev.: indica al data di ricevimento dell’ordine da parte del cliente o 
-dell’invio dell’ordine pre-concordato
-- NSO ultimo evento: indica la data dell’ultima modifica di stato subita dall’ordine
+En aplicaciones Bizlink se encuentra el formulario **PEPPOL Pedidos de Clientes** para visualizar todos los mensajes entrantes desde NSO y salientes hacia NSO.         
+Después de seleccionar la línea de un pedido, al presionar el botón “Visualizar” en la barra de ribbon se abre un formulario adicional **Registro de Documentos SDI**.       
+Dentro de este formulario se muestran algunos datos relacionados con el archivo NSO del pedido, como el estado del documento, los archivos adjuntos y el contenido del archivo.  
+Es posible visualizar el contenido del pedido. También se pueden visualizar las posibles notificaciones del SDI.           
+Al presionar el botón **Descargar Adjunto**, es posible descargar el archivo adjunto seleccionado en la cuadrícula “Adjuntos”, mientras que al presionar “Descargar el contenido del registro” es posible descargar el archivo seleccionado en la cuadrícula **Registro de Documentos SDI**, que contiene el archivo xml del pedido y todos los archivos relacionados, como el de las notificaciones.       
+Al presionar el botón de la barra de ribbon **Abrir Documento**, es posible visualizar el contenido del pedido Peppol, en caso de que esté al menos en estado “Insertado”, directamente en Fluentis, mediante la apertura del formulario “Pedidos de Clientes”.         
+Al presionar el botón **Registro de Documentos SDI** en el formulario “Pedidos de Cliente” se abrirá el formulario “Registro de Documentos SDI”, de manera similar a lo que ocurre al presionar el botón “Visualizar” en la barra de ribbon del formulario *PEPPOL Pedidos de Clientes*.       
+Al presionar el botón **Descargar Adjunto** en la barra de ribbon del formulario *PEPPOL Pedidos de Clientes*, se descargará, en una carpeta indicada por el usuario, el archivo Xml del pedido seleccionado.        
+Al presionar el botón **Modificar Datos XML** después de haber seleccionado un pedido con estado SDI “En error”, se abre el formulario para modificar los datos del archivo importado.           
+En este formulario será posible corregir cualquier dato incorrecto en el pedido recibido, como líneas con precio a 0, códigos de artículos no interpretables automáticamente, unidades de medida, con el fin de indicar datos obligatorios faltantes.         
+En la cuadrícula **Registro de Pedidos NSO** se visualizan diversas informaciones. Veamos las principales:          
+- Estado SDI: es el estado de avance en el que se encuentra el pedido PEPPOL (ver la sección relativa a los estados del pedido).  
+- Tipo: es la tipología del pedido PEPPOL y puede asumir los siguientes valores:  
+> - 220 = Pedido de compra (pedido recibido del proveedor).  
+> - 227 = Pedido de entrega.  
+> - PRE = Pedido Pre-concordado.  
+- Número (ID): es el número del pedido, que junto con la fecha del cliente y el endpointCliente identifica de manera única el pedido.  
+- Fecha Cliente: es la fecha del pedido, que junto con el número (ID) y el EndpointCliente identifica de manera única el pedido.  
+- EndpointCliente: puede indicar o el código de oficina del cliente o el NIT del proveedor que ha enviado el pedido, y junto con el Número (ID) y la Fecha Cliente identifica de manera única el pedido.  
+- Tipo de proceso: indica la tipología de proceso del que forma parte el pedido y puede asumir 3 valores:  
+> - Ordenación simple.  
+> - Ordenación completa.  
+> - Ordenación pre-concordada.  
+- Tipo de documento: indica la última tipología de documento o notificación vinculada al pedido.  
+- Tripleta: es la referencia al pedido al que hace referencia el pedido actual, la tripleta está compuesta por: Identificador del documento, fecha de emisión del documento e identificador del sujeto emisor.  
+- Nombre archivo NSO: indica el nombre del archivo Xml del pedido PEPPOL.  
+- NSO fecha recibida: indica la fecha de recepción del pedido por parte del cliente o el envío del pedido pre-concordado.  
+- NSO último evento: indica la fecha de la última modificación de estado que sufrió el pedido.

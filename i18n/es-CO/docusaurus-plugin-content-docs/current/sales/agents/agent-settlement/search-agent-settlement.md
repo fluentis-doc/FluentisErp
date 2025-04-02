@@ -1,21 +1,20 @@
 ---
-title: Ricerca Liquidazioni agenti
+title: Búsqueda de Liquidaciones de Agentes (Ricerca Liquidazioni agenti)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Vendite > Liquidazioni agenti > Liquidazioni agenti**.
+El formulario se abre a través de la ruta **Ventas > Liquidaciones de agentes > Liquidaciones de agentes (Vendite > Liquidazioni agenti > Liquidazioni agenti)**.
 
-Da questa form è possibile ricercare, visualizzare ed entrare in modifica delle liquidazioni già create.
+Desde este formulario es posible buscar, visualizar y editar las liquidaciones ya creadas.
 
-### Come creare una nuova liquidazione agente
+### Cómo crear una nueva liquidación de agente (Come creare una nuova liquidazione agente)
 
-Sebbene sia possibile creare *manualmente* una liquidazione, come spigato [**qui**](/docs/sales/agents/agent-settlement/insert-settlement)
+Aunque es posible crear una liquidación *manualmente (manualmente)*, como se explica [**aquí (qui)**](/docs/sales/agents/agent-settlement/insert-settlement).
 
-Consigliamo di utilizzare la procedura guidata (wizard) di [**Creazione automatica liquidazione agenti**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
+Recomendamos utilizar el asistente (wizard) de [**Creación automática de liquidaciones de agentes (Creazione automatica liquidazione agenti)**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
 
-:::tip[Consiglio]
-Uno scenario con **esempi** di gestione agenti e calcoli provvigioni è presente [**qui**](/docs/sales/agents/agent-scenario)
+:::tip[Consejo (Consiglio)]
+Un escenario con **esempi** de gestión de agentes y cálculos de comisiones está presente [**aquí (qui)**](/docs/sales/agents/agent-scenario).
 :::
 
-
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Para la explicación de las funcionalidades comunes a los documentos de venta, consulta la sección [Ventas (Vendite)](/docs/sales/sales-intro).

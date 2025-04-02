@@ -1,15 +1,15 @@
 ---
-title: Pagamenti
+title: pagamenti
 sidebar_position: 5
 ---
 
-Questa finestra è la corrispondente della finestra Pagamenti dell'anagrafica cliente/fornitore.
+Esta ventana es la correspondiente a la ventana de pagamenti del registro de cliente/proveedor (anagrafica cliente/fornitore).
 
-Qui si imposta, però, solo una tipologia di pagamento e una soluzione di pagamento (Home>Tabelle>Generali) con i riferimenti bancari standard collegati.
+Aquí se establece, sin embargo, solo un tipo de pago y una solución de pago (Inicio > Tablas > Generales) con los datos bancarios estándar conectados.
 
-**Sottoconto di pag. (Pag.Forn.)**: questo sottoconto viene associato alle partite contabili create, al fine di poter verificare la canalizzazione dei pagamenti/incassi nelle stampe degli scadenziari e nelle simulazioni di cash flow.
+**Subcuenta de pago (Sottoconto di pag.)**: esta subcuenta se asocia a las partidas contables creadas, con el fin de poder verificar la canalización de los pagos/ingresos en las impresiones de los vencimientos y en las simulaciones de flujo de caja (cash flow).
 
-Nella griglia in basso è presente la lista delle banche d'appoggio alternative dell'agente.
+En la cuadrícula inferior se encuentra la lista de los bancos de apoyo alternativos del agente.
 
-*Pulsante specifico*:
-> **Cancella banca**: per cancellare la banca d'appoggio selezionata. 
+*Botón específico*:
+> **cancella banca**: para eliminar el banco de apoyo seleccionado.

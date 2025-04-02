@@ -1,2 +1,1 @@
-- **Aggiornamento listini**: permette di aggiornare il prezzo del listino in base al nuovo prezzo inserito per l'articolo.<br />
-Cliccando sulla tendina accanto al pulsante ![](/img/neutral/common/down-arrow.png), invece, sarà possibile creare un nuovo listino se ancora da creare.
+- **aggiornamento listini**: permite actualizar el precio de la lista de precios en función del nuevo precio ingresado para el artículo. <br /> Al hacer clic en la flecha desplegable al lado del botón ![](/img/neutral/common/down-arrow.png), será posible crear una nueva lista de precios si aún no se ha creado.

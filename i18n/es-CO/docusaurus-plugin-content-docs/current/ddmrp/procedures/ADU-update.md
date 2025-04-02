@@ -1,34 +1,31 @@
 ---
-title: Aggiornamento consumo medio giornaliero (ADU)
+title: Actualización del consumo medio diario (ADU) (Aggiornamento consumo medio giornaliero (ADU))
 sidebar_position: 1
 ---
-Questa procedura aggiorna il campo **Consumo medio giornaliero** dei parametri DDMRP per ogni articolo gestito a buffer.
 
-L'aggiornamento avviene secondo il metodo indicato nei parametri DDMRP dell'articolo con le seguenti modalità:
+Este procedimiento actualiza el campo **Consumo medio diario (Consumo medio giornaliero)** de los parámetros DDMRP para cada artículo gestionado por buffer.
 
+La actualización se lleva a cabo según el método indicado en los parámetros DDMRP del artículo de las siguientes maneras:
 
-  - 0) nessun aggiornamento
-  - 1) media aritmetica sul passato (vengono analizzati i consumi effettivi del passato e tutti i consumi hanno lo stesso peso)
-  - 2) media pesata sul passato (i consumi recenti pesano più di quelli passati)
-  - 3) media aritmetica sul futuro (viene analizzata la tabella delle previsioni di consumo giornaliero)
-  - 4) media aritmetica del passato e del futuro (combinazione dei metodi 1 e 3)
-  - 5) passato pesato e futuro aritmetico (combinazione dei metodi 2 e 3)
+  - 0) ninguna actualización (nessun aggiornamento)
+  - 1) media aritmética sobre el pasado (media aritmetica sul passato) (se analizan los consumos efectivos del pasado y todos los consumos tienen el mismo peso)
+  - 2) media ponderada sobre el pasado (media pesata sul passato) (los consumos recientes pesan más que los pasados)
+  - 3) media aritmética sobre el futuro (media aritmetica sul futuro) (se analiza la tabla de previsiones de consumo diario)
+  - 4) media aritmética del pasado y del futuro (media aritmetica del passato e del futuro) (combinación de los métodos 1 y 3)
+  - 5) pasado ponderado y futuro aritmético (passato pesato e futuro aritmetico) (combinación de los métodos 2 y 3)
 
-Il periodo di analisi preso in considerazione è indicato per ciascun articolo nei parametri DDMRP tramite i campi **Giorni nel passato** e **Giorni nel futuro**.
+El período de análisis considerado se indica para cada artículo en los parámetros DDMRP a través de los campos **giorni nel passato** y **giorni nel futuro**.
 
-Per quanto riguarda le analisi sul passato si raccomanda di utilizzare un periodo di tempo sufficientemente lungo da essere significativo, ovvero un valore alcune volte maggiore del lead time disaccoppiato (DLT) dell'articolo, altrimenti il ricalcolo potrebbe essere troppo sensible alle ultime variazioni.
+En cuanto al análisis del pasado, se recomienda utilizar un período de tiempo suficientemente largo para que sea significativo, es decir, un valor varias veces mayor que el lead time desacoplado (DLT) del artículo; de lo contrario, el recalculo podría ser demasiado sensible a las últimas variaciones.
 
-Se si sceglie la media aritmetica il calcolo sarà poco sensibile alle variazioni casuali ma si accorgerà con un certo ritardo dei nuovi trend di consumo.
+Si se elige la media aritmética, el cálculo será poco sensible a las variaciones aleatorias pero detectará con cierto retraso las nuevas tendencias de consumo.
 
-Se si sceglie la media pesata il calcolo si accorgerà più rapidamente dei nuovi trend di consumo ma sarà più sensibile alle variazioni casuali.
+Si se elige la media ponderada, el cálculo detectará más rápidamente las nuevas tendencias de consumo, pero será más sensible a las variaciones aleatorias.
 
-Per quanto riguarda le previsioni di consumo future, queste devono essere inserite con un anticipo sufficiente, cioè con un anticipo almeno pari al lead time cumulativo dell'articolo (il tempo necessario a produrlo in caso di assenza totale di scorte dei componenti della sua distinta base).
+En cuanto a las previsiones de consumo futuras, estas deben ser ingresadas con suficiente antelación, es decir, con un anticipo al menos igual al lead time acumulado del artículo (el tiempo necesario para producirlo en caso de ausencia total de existencias de los componentes de su lista de materiales).
 
-Per tale ragione il valore del parametro **Giorni nel futuro** deve essere pari almeno al lead time cumulativo dell'articolo.
+Por esta razón, el valor del parámetro **giorni nel futuro** debe ser al menos igual al lead time acumulado del artículo.
 
-Per quanto concerne le medie che verificano i consumi nel passato, ricordare che nella tabella delle causali di magazzino bisogna impostare il Flag DDMRP ADU, per indicare alla procedura quali causali vanno considerate tra quelle di scarico del magazzino in cui è stoccato l'articolo.
+En lo que respecta a las medias que verifican los consumos en el pasado, recuerde que en la tabla de causas de almacén se debe establecer el **Indicador DDMRP ADU (Flag DDMRP ADU)**, para indicar al procedimiento cuáles causas deben ser consideradas entre las de descarga del almacén en el que se almacena el artículo.
 
-Se nella tabella delle causali di magazzino non compare il flag DDMRP significa che nei parametri generali non è impostata l'opzione DDMRP.
-
-
-
+Si en la tabla de causas de almacén no aparece el indicador DDMRP, significa que en los parámetros generales no está configurada la opción DDMRP.

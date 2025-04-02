@@ -1,89 +1,88 @@
 ---
-title: Ubicazioni
+title: ubicazioni
 sidebar_position: 1
 ---
 
+:::important ¿Para qué sirve? (A cosa serve)
+La gestión de las ubicaciones en Fluentis es un elemento crucial para la optimización de las operaciones de almacén. Este módulo permite a los usuarios estructurar las ubicaciones de almacenamiento dentro de los almacenes según un esquema jerárquico, fácilmente modificable para adaptarse a las necesidades empresariales. Cada ubicación puede definirse en función de varios parámetros, incluidos el tipo de ubicación (por ejemplo, área, estante, estantería, sección) y sus características físicas, como ancho, altura y capacidad de carga.
 
-:::important A cosa serve
-La gestione delle ubicazioni in Fluentis è un elemento cruciale per l'ottimizzazione delle operazioni di magazzino. Questo modulo consente agli utenti di strutturare le ubicazioni di stoccaggio all'interno dei magazzini secondo uno schema gerarchico, facilmente modificabile per adattarsi alle esigenze aziendali. Ogni ubicazione può essere definita in base a vari parametri, inclusi il tipo di ubicazione (ad esempio, area, ripiano, scaffale, sezione) e le sue caratteristiche fisiche come larghezza, altezza e capacità di carico.
+Gracias a la creación de un árbol de ubicaciones, los operadores pueden insertar nuevas ramificaciones y visualizar el contenido de cada ubicación, con detalles sobre los artículos y las cantidades en existencia. La sección de atributos de la ubicación permite además una personalización, permitiendo definir requisitos específicos para las ubicaciones individuales.
 
-Grazie alla creazione di un albero delle ubicazioni, gli operatori possono inserire nuove ramificazioni e visualizzare il contenuto di ciascuna ubicazione, con dettagli sugli articoli e le quantità in giacenza. La sezione degli attributi dell'ubicazione permette ulteriormente una personalizzazione, consentendo di definire requisiti specifici per le singole ubicazioni.
-
-Questa gestione efficiente delle ubicazioni non solo migliora il controllo delle giacenze, ma supporta anche la logistica operativa, contribuendo a una gestione più agile e efficace delle scorte all'interno dell'azienda.
+Esta gestión eficiente de las ubicaciones no solo mejora el control de existencias, sino que también apoya la logística operativa, contribuyendo a una gestión más ágil y efectiva de los inventarios dentro de la empresa.
 :::
 
-La form consente all'operatore di creare e gestire l’albero delle ubicazioni di magazzino.
+El formulario permite al operador crear y gestionar el árbol de ubicaciones de almacén.
 
-Attraverso i filtri è possibile fare una ricerca mirata secondo i parametri e visualizzare il risultato dell'interrogazione nelle griglie dei risultati. Tali risultati possono essere raggruppati per vari parametri per facilitare la lettura dei dati. L'unico parametro di filtro obbligatorio è quello del magazzino.
+A través de los filtros, es posible realizar una búsqueda específica según los parámetros e visualizar el resultado de la consulta en las cuadrículas de resultados. Dichos resultados pueden agruparse por varios parámetros para facilitar la lectura de los datos. El único parámetro de filtro obligatorio es el del almacén.
 
-I risultati della ricerca sono suddivisi in due sezioni: una prima sezione in cui sono inserite le informazioni relative alle ubicazioni del magazzino, mentre nella seconda è presente il dettaglio degli articoli e attributi relativi all’ubicazione selezionata.
+Los resultados de la búsqueda se dividen en dos secciones: una primera sección que incluye la información relacionada con las ubicaciones del almacén, mientras que en la segunda se encuentra el detalle de los artículos y atributos relacionados con la ubicación seleccionada.
 
-*Le informazioni relative alla prima sezione della finestra, nel dettaglio sono:*
+*Las informaciones relacionadas con la primera sección de la ventana son, en detalle:*
 
-**Ubicazione**: Indica l’ubicazione di magazzino;
+**Ubicación**: Indica la ubicación del almacén;  
 
-**Codice**: indica il codice dell’ubicazione di magazzino;
+**Código**: Indica el código de la ubicación del almacén;  
 
-**Descrizione**: indica la descrizione dell’ubicazione di magazzino;
+**Descripción**: Indica la descripción de la ubicación del almacén;  
 
-**Tipo ubicazione**: indica il codice del tipo dell’ubicazione di magazzino;
+**Tipo de ubicación**: Indica el código del tipo de la ubicación del almacén;  
 
-**Descrizione tipo ubicazione**: indica la descrizione del tipo dell’ubicazione di magazzino;
+**Descripción tipo de ubicación**: Indica la descripción del tipo de la ubicación del almacén;  
 
-**Stato ubicazione**: indica il codice dello stato dell’ubicazione di magazzino;
+**Estado de ubicación**: Indica el código del estado de la ubicación del almacén;  
 
-**Descrizione stato ubicazione**: indica la descrizione dello stato dell’ubicazione di magazzino;
+**Descripción estado de ubicación**: Indica la descripción del estado de la ubicación del almacén;  
 
-**Ubicazione gruppo**: indica che si tratta di un’ubicazione di gruppo.
+**Grupo de ubicación**: Indica que se trata de una ubicación de grupo.
 
-Nella seconda parte della finestra nel tab *Attributi dell’ubicazione* è possibile andare ad inserire una serie di dati relativi all’ubicazione.
+En la segunda parte de la ventana, en la pestaña *Atributos de la ubicación*, es posible ingresar una serie de datos relacionados con la ubicación.
 
-**Larghezza**: indica la larghezza dell'ubicazione; 
+**Ancho**: Indica el ancho de la ubicación;  
 
-**Altezza**: indica l'altezza dell'ubicazione; 
+**Altura**: Indica la altura de la ubicación;  
 
-**Profondità**: indica la profondità dell'ubicazione; 
+**Profundidad**: Indica la profundidad de la ubicación;  
 
-**Portata**: indica la portata dell'ubicazione; 
+**Capacidad**: Indica la capacidad de la ubicación;  
 
-**Priorità**: indica la priorità dell'ubicazione; 
+**Prioridad**: Indica la prioridad de la ubicación;  
 
-**Numero strati**: indica il numero massimo di strati che è possibile caricare nell'ubicazione; 
+**Número de capas**: Indica el número máximo de capas que se pueden cargar en la ubicación;  
 
-**Tipo unità di carico**: indica il tipo di unità di carico che è possibile caricare nell'ubicazione;
+**Tipo de unidad de carga**: Indica el tipo de unidad de carga que se puede cargar en la ubicación;  
 
-**Numero unità di carico**: indica il numero di unità di carico che è possibile caricare nell'ubicazione;
+**Número de unidades de carga**: Indica el número de unidades de carga que se pueden cargar en la ubicación;  
 
-**Scorta minima**: indica la scorta minima per quell'ubicazione;
+**Stock mínimo**: Indica el stock mínimo para esa ubicación;  
 
-**Scorta massima**: indica la scorta massima per quell'ubicazione.
-  
-Inoltre, nell'expander *Parametri* possono essere anche attivati i seguenti flag relativi alla singola ubicazione:
+**Stock máximo**: Indica el stock máximo para esa ubicación.
 
-**Mono articolo**: se attivo indica che l’ubicazione è mono articolo; quindi, non sarà possibile movimentare su quell’ubicazione un articolo diverso da quello già presente;
+Además, en el expander *Parámetros*, también se pueden activar los siguientes indicadores relacionados con la ubicación individual:
 
-**Mono lotto**: se attivo indica che l’ubicazione è mono lotto; quindi, non sarà possibile movimentare su quell’ubicazione uno stesso articolo con lotto diverso da quello già presente;
+**Mono artículo**: si está activo, indica que la ubicación es mono artículo; por lo tanto, no será posible mover un artículo diferente a aquel que ya está presente en esa ubicación;  
 
-**Attiva**: se attivo, indica che l’ubicazione è attiva;
+**Mono lote**: si está activo, indica que la ubicación es mono lote; por lo tanto, no será posible mover un mismo artículo con un lote diferente al que ya está presente en esa ubicación;  
 
-**Bloccata**: se attivo, indica che l’ubicazione è bloccata (quindi è una giacenza non disponibile);
+**Activo**: si está activo, indica que la ubicación está activa;  
 
-**Prenotata**: se attivo, indica che l’ubicazione è prenotata;
+**Bloqueada**: si está activo, indica que la ubicación está bloqueada (por lo tanto, es una existencia no disponible);  
 
-**Di stock**: se attivo, indica che l’ubicazione è di tipo di stock (usato nelle personalizzazioni);
+**Reservada**: si está activo, indica que la ubicación está reservada;  
 
-**Di pick**: se attivo, indica che l’ubicazione è di tipo di picking (usato nelle personalizzazioni);
+**De stock**: si está activo, indica que la ubicación es de tipo stock (utilizado en personalizaciones);  
 
-**Obsoleta**: se attivo, indica che l’ubicazione è obsoleta.
+**De picking**: si está activo, indica que la ubicación es de tipo picking (utilizado en personalizaciones);  
 
-Nel tab **Articoli** è possibile vedere quali sono gli articoli caricati su quell’ubicazione.
+**Obsoleta**: si está activo, indica que la ubicación está obsoleta.
 
-*Pulsanti specifici*:
+En la pestaña **Artículos**, es posible ver cuáles son los artículos cargados en esa ubicación.
 
-> **Ricerca**: permette di ricercare i dati;   
-> **Cancella ubicazione**: permette di cancellare una riga delle ubicazioni;   
-> **Inserisci ubicazione figlia**: questo pulsante compare nella Ribbon bar dopo aver effettuato la ricerca; permette di inserire una nuova ubicazione figlia rispetto alla riga selezionata;   
-> **Inserisci ubicazione padre**: questo pulsante compare nella Ribbon bar dopo aver effettuato la ricerca; permette di inserire una nuova ubicazione padre rispetto alla riga selezionata;   
-> **Replica attributi**: questo pulsante compare nella Ribbon bar dopo aver effettuato la ricerca; permette di replicare gli attributi.   
+*Botones específicos*:
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **ricerca**: permite buscar los datos;   
+> **cancella ubicazione**: permite eliminar una línea de las ubicaciones;   
+> **inserisci ubicazione figlia**: este botón aparece en la barra de Ribbon después de realizar la búsqueda; permite ingresar una nueva ubicación hija respecto a la línea seleccionada;   
+> **inserisci ubicazione padre**: este botón aparece en la barra de Ribbon después de realizar la búsqueda; permite ingresar una nueva ubicación padre respecto a la línea seleccionada;   
+> **replica attributi**: este botón aparece en la barra de Ribbon después de realizar la búsqueda; permite replicar los atributos.
+
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,28 +1,27 @@
 ---
-title: Reparti
+title: reparti
 sidebar_position: 11
 ---
 
-Questa è una tabella non obbligatoria, all'interno della quale si possono andare a codificare i vari reparti di produzione.
+Esta es una tabla no obligatoria, dentro de la cual se pueden codificar los varios departamentos de producción. 
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Reparti**
+**Búsqueda de reparti (Ricerca Reparti)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Reparti**
+**Inserción de reparti (Inserimento Reparti)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico del reparto e la sua **Descrizione**. 
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** alfanumérico del departamento y su **descrizione**.  
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*: 
 
-**Reparto**: indica il codice del reparto;  
-**Descrizione**: indica la descrizione del reparto;  
-**Data inserimento**: indica la data di inserimento del record;  
-**Data modifica**: indica la data di modifica del record.
+**reparto**: indica el código del departamento;  
+**descrizione**: indica la descripción del departamento;  
+**data inserimento**: indica la fecha de inserción del registro;  
+**data modifica**: indica la fecha de modificación del registro.
 
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,48 +1,44 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area **Acquisti > Ordini fornitori** e rappresenta uno degli step intermedi del ciclo passivo. Gli ordini di acquisto sono documenti formali emessi dal reparto *Acquisti*, utilizzati per richiedere beni o servizi da un fornitore, secondo condizioni predefinite. Contengono i dettagli relativi ai prodotti o servizi da acquistare, inclusi quantità, prezzi, termini di consegna, condizioni di pagamento e altre specifiche contrattuali.   
+El módulo se encuentra en el área **Compras > Pedidos de proveedores (Acquisti > Ordini fornitori)** y representa uno de los pasos intermedios del ciclo pasivo. Los pedidos de compra son documentos formales emitidos por el departamento de *acquisti*, utilizados para solicitar bienes o servicios a un proveedor, según condiciones predeterminadas. Contienen los detalles relacionados con los productos o servicios a adquirir, incluidos cantidades, precios, términos de entrega, condiciones de pago y otras especificaciones contractuales.
 
+## **Configuración preliminar del módulo (Configurazione preliminare del modulo)**
 
-## **Configurazione preliminare del modulo**
+Antes de utilizar el módulo, es necesario completar las siguientes tablas y parámetros:  
+- [**Numeraciones (Numerazioni)**](/docs/configurations/tables/fluentis-numerations): ingreso de las numeraciones a utilizar para los pedidos.  
+- [**Tipos de pedidos de proveedores (Tipi ordini fornitori)**](/docs/configurations/tables/purchase/purchase-orders-type): creación y definición de los tipos de pedido a utilizar.
+- [**parametri ordini fornitori**](/docs/configurations/parameters/purchase/purchase-orders-parameters): configuraciones específicas para la gestión de pedidos de proveedores.  
 
-Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
-- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per gli ordini.       
-- [**Tipi ordini fornitori**](/docs/configurations/tables/purchase/purchase-orders-type): creazione e definizione delle tipologie di ordine da utilizzare.
-- [**Parametri ordini fornitori**](/docs/configurations/parameters/purchase/purchase-orders-parameters): impostazioni specifiche per la gestione degli ordini fornitore. 
+## **Conexiones con otros módulos (Collegamenti con altri moduli)**
 
-## **Collegamenti con altri moduli**
-
-Gli ordini di acquisto possono essere inseriti manualmente oppure creati automaticamente a partire da documenti preesistenti. Le modalità di generazione automatica comprendono:    
+Los pedidos de compra se pueden ingresar manualmente o crear automáticamente a partir de documentos preexistentes. Las modalidades de generación automática incluyen:  
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-requests/general-overview">Richieste di Acquisto</Link>
-        <p>La procedura di [Creazione automatica ordini](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) permette la creazione di Ordini fornitore a partire da Richieste di Acquisto autorizzate.     </p>
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Solicitudes de Compra (Richieste di Acquisto)</Link>
+        <p>El procedimiento de [Creación automática de pedidos (Creazione automatica ordini)](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) permite la creación de pedidos de proveedores a partir de solicitudes de compra autorizadas.     </p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/offer-request/settings">Richieste di Offerta</Link>
-        <p>Gli Ordini di acquisto possono essere generati da Richieste di offerta mediante la procedura di [Creazione Ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/procedures/order-creation). </p>
+###     <Link to="/docs/purchase/offer-request/settings">Solicitudes de Oferta (Richieste di Offerta)</Link>
+        <p>Los pedidos de compra pueden generarse a partir de solicitudes de oferta mediante el procedimiento de [Creación de Pedido de proveedor desde Oferta de proveedor (Creazione Ordine fornitore da Offerta fornitore)](/docs/purchase/offer-request/procedures/order-creation). </p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/sales-orders/settings">Ordini Clienti</Link>
-        <p>La procedura di *Creazione automatica ordini* permette anche la creazione di un *Ordine fornitore* a partire da un *Ordine cliente*. In alternativa, è possibile generare un ordine di acquisto dal filtro di [Ricerca Ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders) mediante il pulsante *Creazione ordini fornitori*.         </p>
+###     <Link to="/docs/sales/sales-orders/settings">Pedidos de Clientes (Ordini Clienti)</Link>
+        <p>El procedimiento de *creazione automatica ordini* también permite la creación de un *Pedido de proveedor* a partir de un *Pedido de cliente*. Alternativamente, es posible generar un pedido de compra desde el filtro de [Búsqueda de Pedidos de clientes (Ricerca Ordini clienti)](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders) mediante el botón *Creación de pedidos de proveedores (Creazione ordini fornitori)*.         </p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/purchase-job-order/general-overview">Commesse di Acquisto</Link>
-        <p>Gli Ordini di acquisto possono essere generati anche attraverso l'*evasione* totale o parziale di una commessa di acquisto, sulla base di contratti predefiniti e già negoziati con il fornitore.  </p>
+###     <Link to="/docs/purchase/purchase-job-order/general-overview">Órdenes de Compra (Commesse di Acquisto)</Link>
+        <p>Los pedidos de compra también pueden generarse a través de la *evasión* total o parcial de una orden de compra, basada en contratos predefinidos y ya negociados con el proveedor.  </p>
     </div>
 </div>
 
+Una vez confirmado, el pedido de compra puede ser cumplido mediante un DDT o una factura. Esto permite el registro de la mercancía en el almacén y la posterior contabilización de la factura dentro del sistema, manteniendo un control preciso de las existencias y de los flujos financieros.
 
-Una volta confermato, l'ordine di acquisto può essere evaso tramite un DDT o una fattura. Questo permette la registrazione della merce in magazzino e la successiva contabilizzazione della fattura all'interno del sistema, mantenendo un controllo accurato delle scorte e dei flussi finanziari.
-
-Il modulo offre inoltre la possibilità di creare il [ricevimento della merce](/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure) permettendo all'operatore di evadere l'ordine fornitore, registrare l'arrivo dei beni, posizionarli nel magazzino o nelle ubicazioni predefinite, e procedere successivamente al carico ufficiale delle merci in magazzino.
-
-
+El módulo también ofrece la posibilidad de crear el [recibo de mercancía (ricevimento della merce)](/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure), permitiendo al operador cumplir el pedido de proveedor, registrar la llegada de los bienes, ubicarlos en el almacén o en las ubicaciones predefinidas, y proceder posteriormente con la carga oficial de las mercancías en el almacén.

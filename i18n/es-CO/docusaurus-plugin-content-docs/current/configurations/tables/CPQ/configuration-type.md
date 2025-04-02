@@ -1,10 +1,10 @@
 ---
-title: Tipi di configurazione
+title: tipi di configurazione
 sidebar_position: 1
 ---
 
-In questa tabella vengono definite le tipologie di Configurazione che si possono creare. Le tipologie sono definite dalle seguenti caratteristiche:
+En esta tabla se definen los tipos de Configuración que se pueden crear. Los tipos están definidos por las siguientes características:  
 
-- **Codice/Descrizione**: identificativi univoci della tipologia.
-- **Nota**: è possibile associare una nota libera da riportare in queste tipologie di configurazione.
-- **Oggetto configurato**: in questo campo viene indicato l'oggetto business per cui è valido il tipo di configurazione.
+- **codice/descrizione**: identificadores únicos del tipo.  
+- **nota**: es posible asociar una nota libre para incluir en estos tipos de configuración.  
+- **oggetto configurato**: en este campo se indica el objeto de negocio para el cual es válido el tipo de configuración.

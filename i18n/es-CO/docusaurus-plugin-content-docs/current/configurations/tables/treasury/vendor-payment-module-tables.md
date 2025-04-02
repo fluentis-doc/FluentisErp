@@ -1,10 +1,10 @@
 ---
-title: Tabelle modulo Pagamenti fornitori
+title: Tablas del módulo de Pagos a Proveedores (Tabelle modulo Pagamenti fornitori)
 sidebar_position: 5
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se pretenda configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::

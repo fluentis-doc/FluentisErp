@@ -1,16 +1,16 @@
 ---
-title: Ricerca Listini di vendita
+title: Búsqueda de Listas de Venta (Ricerca Listini di vendita)
 sidebar_position: 1
 ---
 
-La form si apre tramite tramite il percorso **Vendite > Listini di vendita**.     
+El formulario se abre a través de la ruta **Ventas > Listas de venta (Vendite > Listini di vendita)**.     
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Para la explicación de las funcionalidades comunes a los documentos de venta, consulte la sección [Ventas (Vendite)](/docs/sales/sales-intro).
 
-Il pulsante specifico di questa maschera di ricerca è il **Chiudi listini**: con questo pulsante viene visualizzato un pop-up nel quale inserire una data fine validità per il listino; dopo questa data inserita, il listino non sarà più valido. Se esistono dei documenti per i listini di vendita selezionati, con data successiva alla data di fine validità inserita nel pop up, per questi documenti non avverrà il cambio di data e verranno segnalati i documenti con i seguenti dati:         
-- Tipo documento di vendita
-- Codice e Descrizione tipologia di documento
-- Numero documento
-- Conto 
-- Data documento
-- Data di fine listino prezzi
+El botón específico de esta máscara de búsqueda es **chiudi listini**: al pulsar este botón se mostrará un pop-up en el cual se debe ingresar una fecha de finalización de validez para la lista; después de esta fecha ingresada, la lista no será más válida. Si existen documentos para las listas de venta seleccionadas, con fecha posterior a la fecha de finalización de validez ingresada en el pop-up, para estos documentos no se realizará el cambio de fecha y se señalarán los documentos con los siguientes datos:  
+- Tipo de documento de venta (Tipo documento di vendita)  
+- Código y Descripción del tipo de documento (Codice e Descrizione tipologia di documento)  
+- Número de documento (Numero documento)  
+- Cuenta (Conto)  
+- Fecha del documento (Data documento)  
+- Fecha de finalización de la lista de precios (Data di fine listino prezzi)

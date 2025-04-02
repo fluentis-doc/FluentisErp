@@ -1,18 +1,18 @@
 ---
-title: Rettifica zona gialla
+title: Rectificación de zona amarilla (Rettifica zona gialla)
 sidebar_position: 9
 ---
 
-Il valore della zona gialla viene calcolato automaticamente dalla procedura aggiornamento zone in base al valore dei parametri DDMRP dell'articolo.
+El valor de la zona amarilla se calcula automáticamente mediante el procedimiento de actualización de zonas en función del valor de los parámetros DDMRP del artículo.
 
-Tramite questa tabella è possibile forzare un valore diverso in date specificate.
+A través de esta tabla es posible forzar un valor diferente en fechas específicas.
 
-Il sistema di pianificazione tiene conto di eventuali valori di rettifica delle zone nel calcolo NFP anche se la procedura aggiornamento zone non è stata eseguita.
+El sistema de planificación tiene en cuenta posibles valores de rectificación de las zonas en el cálculo NFP, incluso si no se ha ejecutado el procedimiento de actualización de zonas.
 
-La zona gialla è data dal prodotto del consumo medio giornaliero (ADU) per il tempo di rifornimento dell'articolo (DLT).
+La zona amarilla se determina por el producto del consumo medio diario (ADU) por el tiempo de reabastecimiento del artículo (DLT).
 
-Se in un breve periodo si ha una forte variazione di uno dei due fattori, si può utilizzare una eccezione della zona gialla.
+Si en un corto período se presenta una fuerte variación de uno de los dos factores, se puede utilizar una excepción de la zona amarilla.
 
-Per esempio quando si ha una forte variazione della domanda in un periodo di tempo molto breve come nel caso di campagne promozionali, o quando si sa in anticipo che ci sarà una interruzione di fornitura per un breve periodo di tempo (chiusura temporanea di un impianto, chiusura per ferie di un forntitore etc).
+Por ejemplo, cuando hay una fuerte variación de la demanda en un período de tiempo muy breve, como en el caso de campañas promocionales, o cuando se sabe de antemano que habrá una interrupción en el suministro por un corto período (cierre temporal de una planta, cierre por vacaciones de un proveedor, etc.).
 
-Naturalmente l'eccezione alla zona deve essere datata con sufficiente anticipo rispetto all'evento da gestire.
+Naturalmente, la excepción a la zona debe ser fechada con suficiente anticipación respecto al evento a gestionar.

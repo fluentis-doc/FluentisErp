@@ -1,40 +1,37 @@
 ---
-title: Spedizioni
+title: spedizioni
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La gestione delle **Spedizioni** in Fluentis rappresenta un significativo avanzamento nella gestione logistica e operativa per le aziende che utilizzano questa piattaforma ERP. Questa è stata progettata per ottimizzare e semplificare il processo di spedizione, offrendo un controllo più efficiente e integrato di tutte le attività logistiche.
-Il sistema di gestione delle spedizioni in Fluentis introduce anche la possibilità di creare groupage, un processo logistico attraverso cui le spedizioni di diversi clienti o fornitori vengono raggruppate in un'unica unità di trasporto. 
+:::important ¿Para qué sirve? (A cosa serve)
+La gestión de los **spedizioni** en Fluentis representa un avance significativo en la gestión logística y operativa para las empresas que utilizan esta plataforma ERP. Esta ha sido diseñada para optimizar y simplificar el proceso de envío, ofreciendo un control más eficiente e integrado de todas las actividades logísticas.  
+El sistema de gestión de envíos en Fluentis también introduce la posibilidad de crear groupage, un proceso logístico a través del cual los envíos de diferentes clientes o proveedores se agrupan en una única unidad de transporte.
 
-Questo metodo di consolidamento offre vari benefici:
+Este método de consolidación ofrece varios beneficios:
 
-- **Riduzione dei Costi**: La creazione di groupage permette di ottimizzare l'uso degli spazi di carico e di ridurre i costi di trasporto per unità di merce spedita. È particolarmente vantaggioso per le aziende che spediscono merci in quantità inferiori al carico completo.
-- **Efficienza Operativa**: Consolidare più spedizioni in un unico carico semplifica la gestione delle operazioni e riduce i tempi di transito, migliorando l'efficienza complessiva del processo logistico.
-- **Flessibilità e Scalabilità**: Le aziende possono facilmente adattare la loro strategia di spedizione in base alla domanda e alle variazioni del mercato, sfruttando la flessibilità offerta dai groupage per gestire picchi di spedizione o avere più controllo sui tempi di consegna.
+- **Reducción de Costos (Riduzione dei Costi)**: La creación de groupage permite optimizar el uso de los espacios de carga y reducir los costos de transporte por unidad de mercancía enviada. Es particularmente ventajoso para las empresas que envían mercancías en cantidades inferiores a la carga completa.
+- **Eficiencia Operativa (Efficienza Operativa)**: Consolidar más envíos en una única carga simplifica la gestión de las operaciones y reduce los tiempos de tránsito, mejorando la eficiencia general del proceso logístico.
+- **Flexibilidad y Escalabilidad (Flessibilità e Scalabilità)**: Las empresas pueden adaptar fácilmente su estrategia de envío según la demanda y las variaciones del mercado, aprovechando la flexibilidad ofrecida por los groupages para gestionar picos de envío o tener más control sobre los tiempos de entrega.
 
-In sintesi, questa funzionalità per la gestione delle spedizioni di Fluentis offre alle aziende un potente strumento per ottimizzare la logistica, migliorare l'efficienza e ridurre i costi, mantenendo al contempo un alto livello di servizio e soddisfazione del cliente.
+En resumen, esta funcionalidad para la gestión de envíos de Fluentis ofrece a las empresas una herramienta poderosa para optimizar la logística, mejorar la eficiencia y reducir costos, manteniendo al mismo tiempo un alto nivel de servicio y satisfacción del cliente.
 :::
 
-La form **Nuova Spedizione** si apre tramite il percorso **Logistica > Spedizioni > Nuova Spedizione** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca Spedizioni](/docs/logistics/shipping/search-shippings).
+El formulario **Nuevo Envío (Nuova Spedizione)** se abre a través de la ruta **Logística > spedizioni > Nuevo Envío (Logistica > Spedizioni > Nuova Spedizione)** o mediante el botón **nuovo** que se encuentra en el formulario [Buscar spedizioni (Ricerca Spedizioni)](/docs/logistics/shipping/search-shippings).
 
-Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno** corrente, ma possono essere modificati.
+En el formulario de ingreso se proponen automáticamente la **data** y el **anno** actuales, pero pueden ser modificados.
 
-Per continuare la creazione della spedizione, l'utente deve inserire i campi obbligatori:
-- **Tipo di spedizione**: indica il tipo di spedizione e automaticamente viene inserito anche il *numero* della spedizione. Questo è predefinito in *Configurazione > Tabelle > Logistica > [Tipi di spedizione](/docs/configurations/tables/logistics/shipping-type)*.       
-- **Stato di spedizione**: predefinito in *Configurazione > Tabelle > Logistica > [Stati di spedizione](/docs/configurations/tables/logistics/shipping-states)*.        
-- **Trasporto tramite**: l'utente può scegliere tra le seguenti voci: *Mittente*, *Destinatario* e *Vettore*.
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente e al tipo di spedizione che contiene la numerazione.       
-- **Vettore**: permette di indicare il vettore che effettuerà la spedizione.
-- **Cliente**: permette di indicare il cliente della spedizione.
+Para continuar con la creación del envío, el usuario debe ingresar los campos obligatorios:
+- **Tipo de envío (Tipo di spedizione)**: indica el tipo de envío y se inserta automáticamente también el *número* del envío. Este se predefine en *Configuración > Tablas > Logística > [Tipos de envío](/docs/configurations/tables/logistics/shipping-type)*.  
+- **Estado de envío (Stato di spedizione)**: predefinido en *Configuración > Tablas > Logística > [Estados de envío](/docs/configurations/tables/logistics/shipping-states)*.  
+- **Transporte a través de (Trasporto tramite)**: el usuario puede elegir entre las siguientes opciones: *mittente*, *destinatario* y *vettore*.  
+- **numero**: a cada documento se le asigna un número según la numeración especificada por el usuario y al tipo de envío que contiene la numeración.  
+- **vettore**: permite indicar el transportista que realizará el envío.  
+- **cliente**: permite indicar el cliente del envío.
 
-La form contiene una serie di tab:    
+El formulario contiene una serie de pestañas:
 
-- [Testata](/docs/logistics/shipping/header)
+- [Cabecera (Testata)](/docs/logistics/shipping/header)
 
-- [Groupage](/docs/logistics/shipping/groupage)
+- [Groupage (Groupage)](/docs/logistics/shipping/groupage)
 
-- [Riepiloghi](/docs/logistics/shipping/summary)
-
-
-
+- [Resúmenes (Riepiloghi)](/docs/logistics/shipping/summary)

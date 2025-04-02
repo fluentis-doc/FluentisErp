@@ -1,52 +1,51 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 0
 ---
 
-:::important **Identificazione dei prodotti e relative parti**     
+:::important **Identificación de productos y sus partes (Identificazione dei prodotti e relative parti)**
 
-Ogni azienda manifatturiera vende prodotti fisici comunemente denominati prodotti finiti. 
+Cada empresa manufacturera vende productos físicos comúnmente denominados productos terminados.  
 
-Per realizzare questi sono necessarie materie prime e componenti reperibili sul mercato.
+Para realizarlos, se requieren materias primas y componentes disponibles en el mercado.  
 
-E’ evidente che ogni azienda manifatturiera ha come minimo la necessità di identificare le merci in ingresso ed in uscita per gestire i processi di acquisto, vendita e contabili relativi.
+Es evidente que cada empresa manufacturera tiene, como mínimo, la necesidad de identificar las mercancías entrantes y salientes para gestionar los procesos de compra, venta y contables relacionados.  
 
-Ogni prodotto viene identificato univocamente tramite un codice articolo, normalmente di tipo alfanumerico, secondo logiche di codifica proprie di ciascun’azienda.
+Cada producto se identifica de manera única a través de un código de artículo, normalmente de tipo alfanumérico, según las lógicas de codificación propias de cada empresa.  
 
-Teoricamente è quindi sempre possibile descrivere la struttura dei prodotti finiti semplicemente tramite una distinta base ad un livello comprendente tutte le materie prime e/o componenti d’acquisto.
+Teóricamente, es siempre posible describir la estructura de los productos terminados simplemente a través de una lista de materiales en un nivel que incluya todas las materias primas y/o componentes de compra.  
 
-Molto spesso però quanto esposto è un metodo di rappresentazione troppo semplice e poco efficace e risulta necessario codificare anche prodotti intermedi detti semilavorati.
+Sin embargo, a menudo, lo expuesto es un método de representación demasiado simple y poco efectivo, y resulta necesario codificar también productos intermedios llamados semiterminados.  
 
-Quale logica si deve adottare per stabilire quando è necessario creare un codice articolo per un semilavorato? 
+¿Qué lógica se debe adoptar para determinar cuándo es necesario crear un código de artículo para un semiterminado?  
 
-Dato un prodotto finito quanti semilavorati è necessario codificare per definirne la struttura? 
+Dado un producto terminado, ¿cuántos semiterminados es necesario codificar para definir su estructura?  
 
-Dal punto di vista progettuale/ingegneristico è possibile individuare molte parti in un prodotto finito, ma dal punto di vista produttivo la necessità di codifica può essere molto differente.
+Desde el punto de vista del diseño/ingeniería, es posible identificar muchas partes en un producto terminado, pero desde el punto de vista productivo, la necesidad de codificación puede ser muy diferente.  
 
-In generale se un componente logico della struttura viene sempre immediatamente riutilizzato dopo averlo realizzato non è consigliabile creare un codice articolo (con alcune eccezioni spiegate nel seguito).
+En general, si un componente lógico de la estructura se reutiliza inmediatamente después de haber sido producido, no es recomendable crear un código de artículo (con algunas excepciones que se explican a continuación).  
 
-Se invece il momento della realizzazione e dell’utilizzo non sono temporalmente coincidenti, allora si ha la necessità di stoccare l’elemento e quindi si deve codificarlo per poter gestire i relativi processi e le contabilizzazioni di bilancio di fine anno.
+Si, en cambio, el momento de la realización y el uso no son temporalmente coincidentes, entonces existe la necesidad de almacenar el elemento y, por lo tanto, debe codificarse para poder gestionar los procesos relacionados y las contabilizaciones de balance de fin de año.  
 
-Pertanto, la necessità di stoccare un elemento è una condizione sufficiente per richiederne la codifica tramite un codice articolo.
+Por lo tanto, la necesidad de almacenar un elemento es una condición suficiente para solicitar su codificación mediante un código de artículo.  
 
-Le motivazioni che portano alla necessità di stoccare un componente sono tipicamente le seguenti:
-- La produzione del componente implica un costo di attrezzaggio macchina non trascurabile, quindi si stabiliscono dei lotti minimi di produzione per limitare gli attrezzaggi e incrementare il rapporto tra ore di produzione effettiva e ore di lavoro disponibili. Pertanto normalmente i lotti sono di entità superiore ai fabbisogni del momento, quindi una parte della produzione verrà stoccata per poi essere consumata nel futuro.
-- Alcuni componenti vanno prodotti in anticipo rispetto ai fabbisogni per poter consegnare i prodotti finiti nei tempi richiesti dal mercato, quindi non si conoscono le quantità effettivamente necessarie nel momento della produzione, pertanto si crea una scorta in previsione del consumo futuro.
-- Alcuni processi produttivi hanno una resa non costante, pertanto è necessario disporre di una scorta dei materiali da utilizzare
-- Si vuole creare una scorta a monte di una risorsa critica (collo di bottiglia) per scongiurare il pericolo che questa si fermi per mancanza di materiale da lavorare, poiché il tasso di produzione della fabbrica è determinato proprio dai colli di bottiglia
-- Si voglio separare dei processi produttivi in modo da ridurne l’interdipendenza quando questi non sono sincronizzabili come avviene in una produzione a flusso continuo
+Las motivaciones que llevan a la necesidad de almacenar un componente son típicamente las siguientes:
+- La producción del componente implica un costo de ajuste de máquina no despreciable, por lo que se establecen lotes mínimos de producción para limitar los ajustes e incrementar la relación entre horas de producción efectiva y horas de trabajo disponibles. Por lo tanto, normalmente los lotes son de una entidad superior a las necesidades del momento, por lo que una parte de la producción se almacenará para ser consumida en el futuro.
+- Algunos componentes deben producirse con anticipación respecto a las necesidades para poder entregar los productos terminados dentro de los plazos requeridos por el mercado, por lo que no se conocen las cantidades efectivamente necesarias en el momento de la producción; por esta razón, se crea un inventario en previsión del consumo futuro.
+- Algunos procesos productivos tienen un rendimiento no constante, por lo que es necesario disponer de un inventario de los materiales a utilizar.
+- Se desea crear un inventario de una recurso crítica (cuello de botella) para evitar el riesgo de que esta se detenga por falta de material para trabajar, ya que la tasa de producción de la fábrica está determinada precisamente por los cuellos de botella.
+- Se quiere separar los procesos productivos de manera que se reduzca su interdependencia cuando estos no son sincronizables, como sucede en una producción de flujo continuo.
 
-A volte si sceglie comunque di codificare un elemento anche se non si fa scorta di esso.
+A veces, sin embargo, se elige codificar un elemento aunque no se mantenga un inventario del mismo.  
 
-Ciò avviene tipicamente per le seguenti ragioni:
-- L’articolo serve solo come raggruppamento logico di un gruppo di articoli che vengono utilizzati insieme in altri prodotti o venduti in gruppo.
-Questo consente di velocizzare e semplificare la creazione di distinte base gestendo un solo articolo al posto di un gruppo di articoli che altrimenti andrebbero inseriti e gestiti singolarmente nelle distinte in cui sono utilizzati (in letteratura spesso chiamate kit bill).
-- Normalmente l’articolo viene immediatamente consumato dopo l’utilizzo ma è necessario mantenere una piccola scorta come ricambi per assistenza tecnica.
-- Il ciclo di  lavoro di un articolo assemblato non è rappresentabile tramite una sequenza lineare di fasi poiché ha una natura reticolare (cioè con più diramazioni). 
-Infatti la stragrande maggioranza dei sistemi ERP consente di definire solo cicli di lavoro sequenziali, pertanto in caso di ciclo reticolare è necessario introdurre dei codici articolo in corrispondenza di ciascuna diramazione del ciclo di lavoro.
-- Per individuare parti del prodotto dal punto di vista logico o perché si ha la necessità di calcolare dei costi per parti di esso.
-- Per ragioni di documentazione tecnica per interventi di riparazione e manutenzione.
+Esto sucede típicamente por las siguientes razones:
+- El artículo sirve solo como agrupación lógica de un grupo de artículos que se utilizan juntos en otros productos o se venden en grupo.  
+Esto permite agilizar y simplificar la creación de listas de materiales, gestionando un solo artículo en lugar de un grupo de artículos que, de otro modo, tendrían que ser ingresados y gestionados individualmente en las listas en las que se utilizan (en la literatura, a menudo denominadas kit bill).  
+- Normalmente, el artículo se consume inmediatamente después de su uso, pero es necesario mantener un pequeño inventario como repuestos para asistencia técnica.  
+- El ciclo de trabajo de un artículo ensamblado no se representa mediante una secuencia lineal de fases, ya que tiene una naturaleza reticulada (es decir, con múltiples ramificaciones).  
+De hecho, la gran mayoría de los sistemas ERP permiten definir solo ciclos de trabajo secuenciales; por lo tanto, en caso de un ciclo reticulado, es necesario introducir códigos de artículo en correspondencia con cada ramificación del ciclo de trabajo.  
+- Para identificar partes del producto desde el punto de vista lógico o porque se tiene la necesidad de calcular costos para partes del mismo.  
+- Por razones de documentación técnica para intervenciones de reparación y mantenimiento.  
 
-Nei casi in cui si crea un codice articolo ma non si ha mai giacenza dello stesso, l’articolo viene identificato come articolo fantasma o fittizio, pertanto per lo stesso non risulterà possibile emettere ordini o eseguire movimentazioni di magazzino ed il sistema MRP considererà direttamente i suoi componenti senza pianificare lo stesso visto che non può avere giacenza ne ordini.*
-
+En los casos en que se crea un código de artículo pero nunca se tiene existencia del mismo, el artículo se identifica como artículo fantasma o ficticio; por lo tanto, para este no será posible emitir pedidos o realizar movimientos de almacén, y el sistema MRP considerará directamente sus componentes sin planificarlo, ya que no puede tener existencia ni pedidos.  
 :::

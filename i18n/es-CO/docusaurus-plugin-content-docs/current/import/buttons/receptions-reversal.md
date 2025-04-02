@@ -1,1 +1,1 @@
-- **Storno ricevimenti**: permette di stornare i tipi di documenti che hanno la natura di tipo reso.
+- **storno ricevimenti**: permite anular los tipos de documentos que tienen la naturaleza de tipo devolución.

@@ -1,26 +1,18 @@
 ---
-title: Filtro fatture
+title: filtro fatture
 sidebar_position: 2
 ---
 
-La presente tab visualizza la lista delle fatture di tipo intracomunitario intestate a soggetti definiti intrastat nell'anagrafica (**che siano stampate e contabilizzate nel periodo di riferimento della dichiarazione**).
+Esta pestaña muestra la lista de las facturas de tipo intracomunitario a nombre de sujetos definidos como intrastat en el registro (**que estén impresas y contabilizadas en el período de referencia de la declaración**).
 
 ![](/img/it-it/finance-area/declarations/intrastat/automatic-creation-intrastat1/invoices-filter/image01.png)
 
-La lista degli articoli all'interno di ogni documento non riporterà le righe collegate ad aliquote IVA definite come 'Non intra' nella tabella Aliquote/modalità IVA. 
+La lista de artículos dentro de cada documento no mostrará las líneas vinculadas a tipos de IVA definidos como 'No intra' en la tabla de tipos/métodos de IVA.  
 
-La selezione viene confermata premendo il pulsante **Avanti** presente nella ribbon bar, che sposterà la visualizzazione alla seconda scheda **Parametri**.
+La selección se confirma al presionar el botón **avanti** presente en la barra de herramientas, que cambiará la visualización a la segunda pestaña **parametri**.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per ricercare la lista delle fatture di tipo intracomunitario. |
-| Seleziona tutti | Permette di selezionarte tutte le righe presenti nella griglia di ricerca |
-| Deseleziona tutti | Permette di togliere la selezione da tutte le righe della griglia di ricerca |
-
-
-
-
-
-
+| Buscar (Ricerca) | Botón para buscar la lista de facturas de tipo intracomunitario. |
+| Seleccionar todos (Seleziona tutti) | Permite seleccionar todas las líneas presentes en la cuadrícula de búsqueda. |
+| Deseleccionar todos (Deseleziona tutti) | Permite quitar la selección de todas las líneas de la cuadrícula de búsqueda. |

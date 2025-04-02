@@ -1,12 +1,6 @@
 ---
-title: Brogliaccio chiusure
+title: brogliaccio chiusure
 sidebar_position: 2
 ---
 
-La stampa può essere lanciata dalla maschera di Ricerca registrazioni extracontabili di chiusura e consente di stampare, appunto, le registrazioni extracontabili associate ad una determinata chiusura infrannuale.
-
-
-
-
-
-
+La impresión puede iniciarse desde la máscara de Búsqueda de registros extracontables de cierre y permite imprimir, como su nombre indica, los registros extracontables asociados a un determinado cierre interanual.

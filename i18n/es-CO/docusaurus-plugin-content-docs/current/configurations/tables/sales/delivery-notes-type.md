@@ -1,72 +1,72 @@
 ---
-title: Tipi DDT di vendita
+title: tipi ddt di vendita
 sidebar_position: 18
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se quiera configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi DDT di vendita** ed è utilizzata per determinare le proprietà di un DDT.
+La tabla se abre a través de la ruta **Tablas > Ventas > tipi ddt di vendita** y se utiliza para determinar las propiedades de un DDT.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, solo será necesario hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **Nuevo**.
 
-**Tipo DDT /Descrizione tipo DDT**: tipo e descrizione del tipo DDT. Il codice del DDT deve essere univoco;
+**Tipo DDT /Descripción tipo DDT (Tipo DDT /Descrizione tipo DDT)**: tipo y descripción del tipo de DDT. El código del DDT debe ser único;
 
-**Numerazione:** in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti fare riferimento all'articolo relativo alle [numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations);
+**numerazione**: en este campo se debe ingresar el código de numeración apropiado. Para más detalles consulte el artículo relativo a las [numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations);
 
-**Natura DDT**: in questo campo va inserita la natura del DDT: consegna, reso, c/visione e reso c/visione. Questo valore dovrà essere selezionato da un elenco;
+**natura ddt**: en este campo se debe ingresar la naturaleza del DDT: entrega, devolución, c/visión y devolución c/visión. Este valor deberá seleccionarse de una lista;
 
-**Ordine**: se attivo, questo flag indica che il DDT può essere evaso da un ordine cliente;
+**ordine**: si está activo, este indicador indica que el DDT puede ser cumplido por un pedido de cliente;
 
-**Valori**: se attivo, questo flag farà si che nella stampa DDT vengano mostrati i valori delle righe articolo presenti nel documento;
+**valori**: si está activo, este flag hará que en la impresión del DDT se muestren los valores de las líneas de artículo presentes en el documento;
 
-**Tipo fattura/Descrizione tipo fattura**: in questi campi verrà definito il tipo fattura che si vorrà venga utilizzato per creare la fattura da DDT tramite l'apposita [procedura](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes). E' possibile creare la fattura dal DDT solo se questo campo è valorizzato con il tipo fattura;
+**Tipo factura/Descripción tipo factura (Tipo fattura/Descrizione tipo fattura)**: en estos campos se definirá el tipo de factura que se quiere usar para crear la factura a partir del DDT a través de la [procedimiento correspondiente](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes). Solo se puede crear la factura a partir del DDT si este campo está valorado con el tipo de factura;
 
-**Causale Trasporto**: in questi campo andrà inserita la descrizione della causale di trasporto; si tratta di un campo di testo libero su cui indicare la causale che verrà proposta nel DDT;
+**causale trasporto**: en este campo se debe ingresar la descripción de la causal de transporte; se trata de un campo de texto libre donde se indicará la causal que se propondrá en el DDT;
 
-**Controllo Cliente**: se attivo,  questo flag consente al sistema di effettuare un controllo sul tipo anagrafica del conto/sottoconto che si è inserito nel documento per verificare che sia obbligatoriamente un cliente. Se così non fosse il sistema avviserà l'utente riportando un messaggio di errore. Sarebbe Obbligatorio attivarlo su tutte le tipologie di DDT di Vendita;
+**controllo cliente**: si está activo, este indicador permite al sistema realizar un control sobre el tipo de registro de la cuenta/subcuenta que se ha ingresado en el documento para verificar que sea obligatoriamente un cliente. Si no lo es, el sistema avisará al usuario mostrando un mensaje de error. Sería obligatorio activarlo en todos los tipos de DDT de venta;
 
-**Blocca Doc. Stampato**: se attivo, questo flag non permette di modificare un DDT che risulti essere già con il flag Stampato settato in testata;
+**Bloquear Documento Impreso (Blocca Doc. Stampato)**: si está activo, este flag no permite modificar un DDT que resulte estar ya con el flag Impreso establecido en el encabezado;
 
-**Fido**: se attivo, il DDT con questo tipo rientrerà nel controllo del fido;
+**fido**: si está activo, el DDT con este tipo estará sujeto al control del límite de crédito;
 
-**Escludi blocco**: se attivo, il sistema per questo tipo DDT non andrà a considerare il blocco del documento dovuto all'eventuale superamento fido ma permetterà comunque all'utente di poterlo inserire e stampare;
+**Excluir bloqueo (Escludi blocco)**: si está activo, el sistema para este tipo de DDT no considerará el bloqueo del documento debido a un posible exceso del límite de crédito, pero permitirá al usuario insertarlo e imprimirlo;
 
-**Cash flow**: se attivo, il tipo DDT concorre al calcolo del [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
+**cash flow**: si está activo, el tipo de DDT contribuye al cálculo del [flujo de efectivo](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
 
-**Magazzino/Descrizione magazzino**: in questi campi di dovrà inserire il magazzino di arrivo della merce contenuta nelle DDT appartenenti a questa tipologia. Questo valore verrà utilizzato come valore di default;
+**Almacén/Descripción almacén (Magazzino/Descrizione magazzino)**: en estos campos se deberá ingresar el almacén de llegada de la mercancía contenida en los DDT pertenecientes a esta tipología. Este valor se utilizará como valor predeterminado;
 
-**Causale magazzino/Descrizione causale magazzino**: in questi campi invece si dovrà andare ad indicare la casuale di movimentazione della merce in arrivo contenuta nelle DDT appartenenti a questa tipologia;
+**Causal almacén/Descripción causal almacén (Causale magazzino/Descrizione causale magazzino)**: en estos campos se deberá indicar la causal de movimiento de la mercancía en llegada contenida en los DDT pertenecientes a esta tipología;
 
-**Evasione quantità articolo non sommata**: se settato questo flag consentirà, nel momento in cui si andranno ad evadere queste tipologie di DDT, di riportare le quantità evase del documento di evasione suddivise per riga articolo senza sommare le quantità;
+**evasione quantità articolo non sommata**: si se activa este flag, permitirá, en el momento en que se vayan a cumplir estas tipologías de DDT, reportar las cantidades cumplidas del documento de cumplimiento divididas por línea de artículo sin sumar las cantidades;
 
-**Agr. Acq. IVA**: se attivo, in fase di creazione DDT, il sistema andrà a verificare se per l'articolo utilizzato è presente un codice dell'IVA agricola altrimenti verrà utilizzato il codice IVA presente nell'anagrafica dell'articolo;
+**agr. acq. iva**: si está activo, en la fase de creación del DDT, el sistema verificará si para el artículo utilizado está presente un código de IVA agrícola; de lo contrario, se utilizará el código de IVA presente en el registro del artículo;
 
-**Controlla Picking Scaricato**: se attivo, quando si crea una DDT da un Picking scaricato, si attiva in automatico il flag scaricato per la DDT. Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking;
+**Controlar Picking Descargado (Controlla Picking Scaricato)**: si está activo, cuando se crea un DDT a partir de un Picking descargado, se activa automáticamente el flag descargado para el DDT. Se recomienda activar siempre este flag si se utiliza la gestión de picking;
 
-**Blocca Quantità Picking**: se attivo, blocca la quantità e la quantità alternativa nel DDT creata da lista UDC. Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking e UDC;
+**blocca quantità picking**: si está activo, bloquea la cantidad y la cantidad alternativa en el DDT creado a partir de la lista UDC. Se recomienda activar siempre este flag si se utiliza la gestión de picking y UDC;
 
-**Permetti scarico lotti non disponibili** se attivo, permette anche lo scarico dei lotti non disponibili;
+**Permitir descarga de lotes no disponibles (Permetti scarico lotti non disponibili)**: si está activo, también permite la descarga de los lotes no disponibles;
 
-**Gestione EDI**: se attivo, per il DDT di questo tipo è possibile creare un file EDI;
+**Gestión EDI**: si está activo, para el DDT de este tipo es posible crear un archivo EDI;
 
-**Prezzo Ivato**: se attivo, il sistema recupera il prezzo di vendita da listini o dall'anagrafica articolo e lo riporta con l'aggiunta dell'IVA. Se non trova il listino (nel caso per esempio di listino scaduto o listino in valuta non compatibile) recupera i costi o i prezzi dall'anagrafica articolo e li riporta comprensivi di IVA.
+**prezzo ivato**: si está activo, el sistema recupera el precio de venta de listas o del registro del artículo y lo muestra con la adición del IVA. Si no encuentra la lista (en caso, por ejemplo, de lista caducada o lista en moneda no compatible), recupera los costos o precios del registro del artículo y los presenta incluidos el IVA.
 
-I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche a convertire nella valuta del cliente.
+Los costos y precios en el registro están en EUR, por lo que el sistema también los convertirá a la moneda del cliente.
 
-**Verifica lotti:** se attivo, controlla che i lotti siano congrui per gli articoli;
+**verifica lotti**: si está activo, verifica que los lotes sean congruentes para los artículos;
 
-**Gestione matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice.
+**gestione matrici extra data**: si está activo, permite visualizar, en caso de gestión de artículos con matriz, una pestaña adicional para la imputación de los valores de la cantidad por cada celda de matriz. Si no está activo, esta pestaña y la consiguiente matriz no se visualizarán.
 
-**Gestione cespiti**: questo flag abilita la gestione dei cespiti nel tipo fattura e nel campo successivo va specificato il tipo di operazione dei cespiti;
+**gestione cespiti**: este flag habilita la gestión de los activos en el tipo de factura y en el campo siguiente se debe especificar el tipo de operación de los activos;
 
-**Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
+**tipo operazione**: en esta caja de combinación es posible seleccionar el tipo de operación de los activos entre diferentes opciones (revalorización, destrucción, plusvalía, etc.).
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+**Tipo descuento/Descripción (Tipo sconto/Descrizione)**: en esta columna se puede asociar el tipo de descuento a proponer cuando los descuentos se ingresan directamente en la columna *Descuentos artículo* de la cuadrícula de artículos de los documentos (para más detalles, consulte el artículo [Gestión de Widget de descuentos simplificada](/docs/sales/sales-flow/discount-widget)).

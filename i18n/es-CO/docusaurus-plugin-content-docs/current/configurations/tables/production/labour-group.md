@@ -1,23 +1,23 @@
 ---
-title: Gruppi manodopera
+title: gruppi manodopera
 sidebar_position: 8
 ---
 
-In questa tabella vengono codificati tutti i **gruppi manodopera** che verranno poi impiegati nelle varie fasi dei cicli di lavoro. Come nel caso delle [Macchine](/docs/configurations/tables/production/machines), i **gruppi manodopera** possono essere associati a loro volta ad un [centro di costo](/docs/configurations/tables/production/cost-center).
+En esta tabla se codifican todos los **gruppi manodopera** que luego se utilizarán en las diferentes fases de los ciclos de trabajo. Al igual que en el caso de las [Máquinas (Macchine)](/docs/configurations/tables/production/machines), los **gruppi manodopera** pueden estar asociados a su vez a un [centro de costos (centro di costo)](/docs/configurations/tables/production/cost-center).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar aquellos que ya existen para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Gruppi manodopera**
+**Búsqueda de gruppi manodopera (Ricerca Gruppi manodopera)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Gruppi manodopera**
+**Inserción de gruppi manodopera (Inserimento Gruppi manodopera)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**. 
 
-Per il nuovo record, nella griglia superiore, si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** del gruppo MDO e la sua **Descrizione**.         
-Inoltre, è possibile associare a ciascun **gruppo manodopera** un [centro di costo](/docs/configurations/tables/production/cost-center), che sarà molto importate in fase di [costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), per determinare il costo della fase in cui è impiegato questo gruppo manodopera.
+Para el nuevo registro, en la cuadrícula superior, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** del grupo de MDO y su **descrizione**.  
+Además, es posible asociar a cada **gruppo manodopera** un [centro de costos (centro di costo)](/docs/configurations/tables/production/cost-center), que será muy importante en la fase de [costificación (costificazione)](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), para determinar el costo de la fase en la que se emplea este grupo de mano de obra.
 
-Nella griglia inferiore, per ogni **gruppo manodopera**, si possono specificare i vari **Operatori** che ne fanno parte, indicando per ognuno anche il rispettivo [centro di costo](/docs/configurations/tables/production/cost-center), dato che i vari operatori possono avere costi diversi.
+En la cuadrícula inferior, para cada **gruppo manodopera**, se pueden especificar los diversos **Operadores (Operatori)** que lo integran, indicando para cada uno también su respectivo [centro de costos (centro di costo)](/docs/configurations/tables/production/cost-center), dado que los distintos operadores pueden tener costos diferentes.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, se puede consultar el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

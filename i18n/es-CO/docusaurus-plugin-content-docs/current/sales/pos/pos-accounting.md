@@ -1,40 +1,40 @@
 ---
-title: Contabilizzazione POS
+title: contabilizzazione pos
 sidebar_position: 4
 ---
 
-La procedura si apre tramite il percorso **Vendite > POS > Contabilizzazione > Contabilizzazione POS**. 
+El procedimiento se abre a través de la ruta **Ventas > POS > Contabilización > contabilizzazione pos (Vendite > POS > Contabilizzazione > Contabilizzazione POS)**. 
 
-Un POS, per essere contabilizzato, deve soddisfare una serie di condizioni: nella sua testata deve aver impostato il flag *Stampata* e il tipo POS deve contenere la causale generale per la contabilizzazione.
+Un POS, para ser contabilizado, debe cumplir una serie de condiciones: en su encabezado debe tener activada la opción *stampata* y el tipo de POS debe contener la causal general para la contabilización.
 
-:::danger[Attenzione]
-Il campo **Conto** definito nella testata del POS non è rilevante per la gestione della **Contabilizzazione**. La causale contabile associata dovrà avere al suo interno la definizione di un conto Cliente **FISSO** e dettagliato con codice di **sottoconto** (ad esempio un conto "Cliente corrispettivi"). Il tipo importo sulla riga causale per il sottoconto clienti sarà impostato come *Totale Documento / registrazione*.
+:::danger[Atención (Attenzione)]
+El campo **conto** definido en el encabezado del POS no es relevante para la gestión de la **contabilizzazione**. La causal contable asociada deberá tener dentro de su definición una cuenta de Cliente **fisso** y detallada con un código de **sottoconto** (por ejemplo, una cuenta "Cliente de ingresos"). El tipo de importe en la línea causal para la subcuenta de clientes se establecerá como *Total Documento / registro (Totale Documento / registrazione)*.
 :::
 
-## Contabilizzazione
+## Contabilización (Contabilizzazione)
 
-La form presenta nella parte superiore i filtri di ricerca per individuare e visualizzare, nella griglia, la lista dei POS da contabilizzare presenti nel sistema.
+El formulario presenta en la parte superior los filtros de búsqueda para identificar y visualizar, en la cuadrícula, la lista de los POS a contabilizar presentes en el sistema.
 
-Alla base della form sono presenti alcuni parametri di gestione della contabilizzazione:
+En la parte inferior del formulario hay algunos parámetros de gestión de la contabilización:
 
-**Data registrazione uguale alla data documento**: questo flag impone la contabilizzazione di ogni singola fattura allo loro data di emissione.
+**data registrazione uguale alla data documento**: este indicador impone la contabilización de cada factura individual a su fecha de emisión.
 
-Se il flag viene disabilitato, si attiva il campo successivo, **Data registrazione**, all'interno del quale è possibile impostare una data fissa di registrazione;
+Si el indicador se desactiva, se activa el siguiente campo, **data registrazione**, dentro del cual es posible establecer una fecha fija de registro;
 
-#### Pulsanti specifici   
-> **Ricerca**: per cercare i POS; vengono proposte tutte i POS stampati e non contabilizzati.  
-> **Contabilizzazione**: esegue la contabilizzazione dei POS selezionati, secondo le impostazioni definite.  
+#### Botones específicos   
+> **ricerca**: para buscar los POS; se proponen todos los POS impresos y no contabilizados.  
+> **contabilizzazione**: ejecuta la contabilización de los POS seleccionados, de acuerdo con las configuraciones definidas.  
 
-## Precedenti
+## Anteriores (Precedenti)
 
-La form presenta la lista delle operazioni di contabilizzazione eseguite, al fine di visualizzarle ed eventualmente annullarle attraverso gli appositi pulsanti.
+El formulario presenta la lista de las operaciones de contabilización realizadas, con el fin de visualizarlas y, eventualmente, anularlas a través de los botones correspondientes.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile.
+La anulación será posible solo si el período es aún modificable.
 
-**Contabilizzazione POS**: griglia con i dettagli delle operazioni eseguite. Viene popolata dopo la procedura di ricerca e possono essere selezionate le operazioni sulle quale applicare le funzioni del ribbon.
+**contabilizzazione pos**: cuadrícula con los detalles de las operaciones realizadas. Se llena después del procedimiento de búsqueda y se pueden seleccionar las operaciones sobre las que aplicar las funciones de la cinta (ribbon).
 
-I dati nelle griglie in basso, **Punto di vendita** e **Registrazione contabile** corrispondono all'operazione selezionata nella griglia superiore. Un doppio click nella sezione dei punti vendita/registrazioni consentirà di visualizzare il punto vendita/la registrazione contabile relativa.
+Los datos en las cuadrículas inferiores, **punto di vendita** y **registrazione contabile** corresponden a la operación seleccionada en la cuadrícula superior. Un doble clic en la sección de puntos de venta/registro permitirá visualizar el punto de venta/la contabilización correspondiente.
 
-#### Pulsanti specifici  
-> **Ricerca**: ricerca la lista delle contabilizzazioni eseguite.  
-> **Ripristina contabilizzazione**: con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i POS associati.  
+#### Botones específicos  
+> **ricerca**: busca la lista de las contabilizaciones realizadas.  
+> **ripristina contabilizzazione**: con este botón se borrará toda la contabilización realizada, junto con todos los POS asociados.

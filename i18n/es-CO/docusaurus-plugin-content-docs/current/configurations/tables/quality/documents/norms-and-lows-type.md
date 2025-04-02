@@ -1,31 +1,31 @@
 ---
-title: Tipi norme e leggi
+title: tipi norme e leggi
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Tipi norme e leggi**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Calidad (Qualità) > Documentos (Documenti) > tipi norme e leggi (Tipi norme e leggi)**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le diverse tipologie di Norme e Leggi.   
-Un esempio di utilizzo lo troviamo nella gestione **Norme e Leggi**.
+:::important ¿Para qué sirve? (A cosa serve)
+En esta tabla es posible codificar las diferentes tipologías de Normas y Leyes.  
+Un ejemplo de uso se encuentra en la gestión de **norme e leggi**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi norme e leggi**
+**Búsqueda de tipi norme e leggi (Ricerca Tipi norme e leggi)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para ver los resultados en la cuadrícula de resultados.
 
-**Inserimento Tipi norme e leggi**
+**Inserción de tipi norme e leggi (Inserimento Tipi norme e leggi)**
 
-Per poter inserire nuovi *Tipi norme e leggi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para insertar nuevos *tipi norme e leggi*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos:* 
 
-> **Codice tipo**: è il codice del *Tipo norma o legge*.   
-> **Descrizione tipo**: è la descrizione del *Tipo norma o legge*.   
-> **Eliminabile**: indica che rende eliminabile o meno questa tipologia;   
-> **Note**: annotazioni libere.
+> **codice tipo**: es el código del *Tipo de norma o ley (Tipo norma o legge)*.  
+> **descrizione tipo**: es la descripción del *Tipo de norma o ley (Tipo norma o legge)*.  
+> **eliminabile**: indica si esta tipología es eliminable o no;  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

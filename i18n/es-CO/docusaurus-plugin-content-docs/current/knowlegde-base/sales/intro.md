@@ -1,167 +1,152 @@
 ---
-title: FAQ Vendite
+title: FAQ Ventas (FAQ Vendite)
 sidebar_position: 1
 ---
 
-
 <details>
 
-  <summary>1. Come è possibile fare in modo che i prezzi di Listino dei componenti di una Distinta vengano riportati nella righe articolo degli Ordini, dopo aver cliccato il pulsante della ribbon bar <b>Esplodi il primo livello distinta</b>?</summary>
+  <summary>1. ¿Cómo se puede hacer que los precios de lista de los componentes de una lista se reflejen en las líneas de artículo de los pedidos, después de hacer clic en el botón de la barra de ribbon <b>Expandir el primer nivel de la lista</b>?</summary>
   
-E' necessario impostare il flag "Proponi dati comm. per dist. base esplosa manualmente", che si trova all'interno dei Parametri ordini clienti. In questo modo, i dati commerciali vengono riportati e quindi anche i prezzi di listino dei componenti.
+Es necesario activar el indicador "Proponer datos comerciales para lista base explotada manualmente", que se encuentra dentro de los Parámetros de pedidos de clientes. De esta manera, los datos comerciales se reflejan y, por ende, también los precios de lista de los componentes.
 
 </details>
 
 <details>
 
-  <summary>2. Come gestire la <b>data validità</b> della tab Listini dell’anagrafica cliente?</summary>
+  <summary>2. ¿Cómo gestionar la <b>fecha de validez</b> de la pestaña de Listas en el registro del cliente?</summary>
   
-La data validità inserita nella griglia della tab Listini in anagrafica cliente serve ad indicare quali tipologie di listini sono valide da quella data per quel cliente. La ripresa prezzi nei documenti deve sapere in quali listini cercare l’articolo.
-Come prima condizione, il listino da inserire nei documenti deve essere valido in questa data. 
-Come seconda condizione per la scelta della tipologia di listino da inserire nei documenti, il listino scelto ha la data inizio validità strettamente minore alla data del documento.     
-In questo modo è possibile creare tutti i listini che vogliamo e applicarli al cliente solo da una determinata data.
-Tecnicamente, tutti i listini che vengono creati, per essere utilizzati per la ricerca prezzi devono avere:            
-1. la data inizio validità maggiore o uguale alla data validità;       
-2. la data inizio validità minore o uguale alla data del documento;       
-3. data fine validita maggiore o uguale alla data documento oppure data fine validità nulla;              
-Tra tutti i listini trovati con queste condizioni prende quello con range di validità più vicino alla data del documento.
+La fecha de validez ingresada en la cuadrícula de la pestaña de Listas en el registro del cliente indica qué tipos de listas son válidas a partir de esa fecha para ese cliente. La recuperación de precios en los documentos debe saber en qué listas buscar el artículo.
+Como primera condición, la lista a incluir en los documentos debe ser válida en esta fecha. 
+Como segunda condición para la elección del tipo de lista a incluir en los documentos, la lista seleccionada debe tener la fecha de inicio de validez estrictamente menor que la fecha del documento.     
+De esta manera, es posible crear todas las listas que se deseen y aplicarlas al cliente solo a partir de una fecha determinada.
+Técnicamente, todas las listas creadas, para ser utilizadas en la búsqueda de precios, deben tener:            
+1. la fecha de inicio de validez mayor o igual a la fecha de validez;       
+2. la fecha de inicio de validez menor o igual a la fecha del documento;       
+3. fecha de fin de validez mayor o igual a la fecha del documento o fecha de fin de validez nula;              
+Entre todas las listas encontradas con estas condiciones se toma la que tenga el rango de validez más cercano a la fecha del documento.
 
 </details>
 
 <details>
 
-  <summary>3. Se ho più <b>sconti</b> sullo stesso articolo in un listino qual è la **priorità**? </summary>
+  <summary>3. Si tengo más de <b>descuentos</b> en el mismo artículo en una lista, ¿cuál es la **prioridad**? </summary>
   
-La priorità considerata è quella riportata nel tipo sconto. Ricordiamo che la tipologia di sconto è importante per la gestione della priorità è della natura sconto (Imponibile o Cascata).
+La prioridad considerada es la indicada en el tipo de descuento. Recordemos que el tipo de descuento es importante para la gestión de la prioridad y de la naturaleza del descuento (Imponible o por Cascada).
 
 </details>
 
 <details>
 
-  <summary>4. E’ possibile duplicare solamente alcuni articoli del listino e non tutto il listino? </summary>
+  <summary>4. ¿Es posible duplicar solo algunos artículos de la lista y no toda la lista? </summary>
   
-Sì, è possibile duplicare solo alcuni articoli, utilizzando la procedura di “Duplica e Manutenzione listini di vendita” e selezionando solo gli articoli desiderati.
-Il risultato sarà un nuovo listino contenente solo gli articoli modificati.
-Per gli altri artioli rimarrà valido il listino precedente, in assenza di data fine validità.
+Sí, es posible duplicar solo algunos artículos utilizando el procedimiento de “Duplicar y Mantenimiento de listas de venta” y seleccionando solo los artículos deseados.
+El resultado será una nueva lista que contendrá solo los artículos modificados.
+Para los demás artículos, permanecerá vigente la lista anterior, en ausencia de fecha de fin de validez.
 
 </details>
 
-
 <details>
 
-  <summary>5. Per le fatture non c'è il flag <b>Controllo disponibilità</b>: in che modo possiamo escluderle dal calcolo del fabbisogno? </summary>
+  <summary>5. Para las facturas no hay el indicador <b>Control de disponibilidad</b>: ¿cómo podemos excluirlas del cálculo de necesidades? </summary>
   
-Le fatture considerate nel fabbisogno sono:
-- le fatture immediate, cioè accompagnatorie;
-- le fatture che derivano da DDT se il DDT non è stato scaricato a magazzino.
+Las facturas consideradas en las necesidades son:
+- las facturas inmediatas, es decir, acompañatorias;
+- las facturas que derivan de DDT si el DDT no ha sido descargado a almacén.
 
 </details>
 
-
 <details>
 
-  <summary>6. A cosa serve il <b>Tipo scaglione</b> nelle righe articolo del listino? </summary>
+  <summary>6. ¿Para qué sirve el <b>Tipo de escalón</b> en las líneas de artículo de la lista? </summary>
   
-Il tipo scaglione inserito nella riga articolo del listino viene proposto in automatico nei documenti, altrimenti sarà l'utente a scegliere manualmente il tipo di scaglione da applicare alla riga.
+El tipo de escalón ingresado en la línea de artículo de la lista se propone automáticamente en los documentos; de lo contrario, será el usuario quien elija manualmente el tipo de escalón que se aplicará a la línea.
 
 </details>
 
-
 <details>
 
-  <summary>7. Con BizLink posso esportare le fatture di vendita verso un altro gestionale, ad esempio quello del commercialista ? </summary>
+  <summary>7. ¿Puedo exportar las facturas de venta a otro sistema de gestión, como el del contable, con BizLink? </summary>
   
-Sì, è possibile creare un parser dedicato per esportare i dati, come richiesti da un altro gestionale.
-Oppure, è possibile utilizzare direttamente il file XML della fatturazione elettronica, se il gestionale che acquisisce la fattura lo permette: Fluentis gestisce la creazione delle fatture importando il file XML della fatturazione elettronica.
+Sí, es posible crear un parser dedicado para exportar los datos, como lo exige otro sistema de gestión.
+Alternativamente, es posible utilizar directamente el archivo XML de la facturación electrónica, si el sistema de gestión que recibe la factura lo permite: Fluentis gestiona la creación de las facturas importando el archivo XML de la facturación electrónica.
 
 </details>
 
-
 <details>
 
-  <summary>8. Come è possibile impostare le <b>spese di incasso</b> per le riba in modo che siano gestite automaticamente dal gestionale in base al numero di scadenze? </summary>
+  <summary>8. ¿Cómo se pueden establecer automáticamente los <b>gastos de cobro</b> para las riba en el sistema de gestión según el número de vencimientos? </summary>
   
-Se la spesa ha il flag "Spesa Incasso" e il tipo pagamento ha la natura effetto = 0 (RIBA), per ogni scadenza della soluzione pagamento verrà aggiunta la spesa di incasso.
-Se si hanno più scadenze, ognuna avrà la sua spesa di incasso. 
+Si el gasto tiene el indicador "Gasto de Cobro" y el tipo de pago tiene la naturaleza efecto = 0 (RIBA), por cada vencimiento de la solución de pago se añadirá el gasto de cobro.
+Si hay más vencimientos, cada uno tendrá su propio gasto de cobro. 
 
 </details>
 
-
 <details>
 
-  <summary>9. Quali sono le condizioni per gestire il <b>barcode</b> nei documenti? </summary>
+  <summary>9. ¿Cuáles son las condiciones para gestionar el <b>código de barras</b> en los documentos? </summary>
   
-I passaggi sono i seguenti.     
-1. Nei Parametri del documento di vendita, inserire il flag <b>Uso barcode</b>;                            
-2. In anagrafica articolo, inserire il <b>codice Barcode</b>;                    
-3. Nei documenti, inserire nella colonna <b>Barcode</b> della griglia articolo il codice inserito in anagrafica cliente; se il programma riconosce il codice, inserisce in automatico l'articolo.
+Los pasos son los siguientes.     
+1. En los Parámetros del documento de venta, active el indicador <b>Uso de código de barras</b>;                            
+2. En el registro del artículo, inserte el <b>código de barras</b>;                    
+3. En los documentos, inserte en la columna <b>Código de Barras</b> de la cuadrícula de artículos el código ingresado en el registro del cliente; si el programa reconoce el código, insertará automáticamente el artículo.
 
 </details>
 
-
 <details>
 
-  <summary>10. Dove deve essere inserita la <b>Marca</b> per essere riportata nei documenti di vendita? </summary>
+  <summary>10. ¿Dónde debe insertarse la <b>Marca</b> para que se refleje en los documentos de venta? </summary>
   
-La Marca deve essere inserita nella griglia articoli dei listini di vendita per essere riportata nei documenti.
+La Marca debe insertarse en la cuadrícula de artículos de las listas de venta para que se refleje en los documentos.
 
 </details>
 
-
 <details>
 
-  <summary>11. E' possibile nascondere ad un utente una determinata tipologia di fattura? </summary>
+  <summary>11. ¿Es posible ocultar a un usuario un tipo determinado de factura? </summary>
   
-Sì, con le <b>Restrizioni</b>. Esse impediscono agli utenti di creare, visualizzare o modificare determinate tipologie di documenti. Di seguito viene riportato l'esempio per impedire ad un utente di utilizzare il Tipo fattura con codice FVITDIF. Ricordiamo che è necessario aggiungere la Restrizione anche nel profilo Arm dell'utente, nell'appostia griglia.            
-
+Sí, mediante <b>Restricciones</b>. Estas impiden que los usuarios creen, visualicen o modifiquen ciertos tipos de documentos. A continuación, se muestra un ejemplo para impedir que un usuario utilice el tipo de factura con el código FVITDIF. Recordemos que también es necesario agregar la restricción en el perfil Arm del usuario, en la cuadrícula correspondiente.            
 
 ![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
 
-
 </details>
-
 
 <details>
 
-  <summary>12. La fattura risulta Scaricata anche se non ho effettuato nessun movimento di magazzino, inoltre il flag Scaricata è bloccato e non si può togliere. </summary>
+  <summary>12. La factura aparece como Descargada aunque no he realizado ningún movimiento de almacén, además el indicador Descargada está bloqueado y no se puede desmarcar. </summary>
   
-Nel caso di fattura creata da documento di trasporto già scaricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag Scaricata anche nella fattura.          
+En el caso de una factura creada a partir de un documento de transporte ya descargado, está presente el parámetro general VE-PurchaseInvoices_VerifyLoadStatusDDT que bloquea el indicador Descargada también en la factura.          
 
 </details>
 
-
 <details>
 
-  <summary>13. Come faccio a popolare i Pesi nei riepiloghi della fattura? </summary>
+  <summary>13. ¿Cómo puedo poblar los Pesos en los resúmenes de la factura? </summary>
   
-Per poter vedere il riepilogo dei pesi è necessario flaggare il parametro **Ricalcola trasporto** nei Parametri del documento. Sarà inoltre necessario selezionare l'unità di misura corretta, nei riepiloghi, per visualizzare il valore.        
+Para poder ver el resumen de los pesos es necesario activar el parámetro **Recalcular el transporte** en los Parámetros del documento. También será necesario seleccionar la unidad de medida correcta en los resúmenes para visualizar el valor.        
 
 </details>
 
-
 <details>
 
-  <summary>14. Perchè se raggruppo la procedura C.M.R. per Conto non posso valorizzare Destinatario e Destinazione? </summary>
+  <summary>14. ¿Por qué, si agrupo el procedimiento C.M.R. por Cuenta, no puedo establecer Destinatario y Destino? </summary>
   
-Se si raggruppa soltanto per il Conto, non si possono valorizzare Destinatario e Destinazione perchè più righe con lo stesso cliente, ma diversi destinatari/destinazioni, creano una sola riga CMR. E' necessario quindi raggruppare sia per Destinazione che per Conto.        
+Si se agrupa únicamente por la Cuenta, no se pueden establecer Destinatario y Destino porque más de una línea con el mismo cliente, pero diferentes destinatarios/destinos, crea una sola línea CMR. Por lo tanto, es necesario agrupar tanto por Destino como por Cuenta.        
 
 </details>
 
-
 <details>
 
-  <summary>15. Come posso mantenere nel DDT il Vettore inserito nell'ordine, se passo per Picking? </summary>
+  <summary>15. ¿Cómo puedo mantener en el DDT el Transportista ingresado en el pedido, si paso por Picking? </summary>
   
-Se nella creazione DDT da Picking viene inserito il parametro “DDT raggruppato per singolo ordine”, viene riportato il Vettore dell’ordine.
+Si en la creación del DDT desde Picking se activa el parámetro “DDT agrupado por pedido único”, se reflejará el Transportista del pedido.
 
 </details>
 
-
 <details>
 
-  <summary>16. Da cosa dipende la differenza di importo tra la Stampa Fatturato e la Somma nella Ricerca fatture? </summary>
+  <summary>16. ¿De qué depende la diferencia de importe entre la Impresión de Facturado y la Suma en la Búsqueda de facturas? </summary>
   
-Nella Ricerca fatture l’imponibile in EUR considera anche sconti/maggiorazioni/spese finali del documento, mentre il fatturato calcola solo i valori presenti nella lista articoli.
-Nella Ricerca fatture ci sono tutti i Tipi fattura del filtro, mentre nel Fatturato solo i Tipi fattura che hanno il flag 'In statistica' attivo.
+En la Búsqueda de facturas, el imponible en EUR también considera descuentos/multiplicaciones/gastos finales del documento, mientras que el facturado calcula solo los valores presentes en la lista de artículos.
+En la Búsqueda de facturas están todos los Tipos de factura del filtro, mientras que en el Facturado solo los Tipos de factura que tienen el indicador 'En estadística' activo.
 
 </details>

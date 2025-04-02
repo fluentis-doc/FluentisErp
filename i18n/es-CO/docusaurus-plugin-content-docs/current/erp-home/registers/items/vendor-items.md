@@ -1,23 +1,22 @@
 ---
-title: Articoli fornitore
+title: articoli fornitore
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso **Home > Articoli > Ricerca articolo** e permette di ricercare tutti gli articoli acquistati, legati ai vari fornitori ed inserirne dei nuovi.
+El formulario se abre a través de la ruta **Inicio > Artículos > Búsqueda de artículo (Home > Articoli > Ricerca articolo)** y permite buscar todos los artículos comprados, relacionados con varios proveedores, y agregar nuevos.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro, una di risultato e una di dettaglio. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro, una de resultados y una de detalles. Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**. 
 
-**Articoli fornitori**
+**articoli fornitorees (Articoli fornitori)**
 
-In base ai filtri precedentemente selezionati, compariranno nella griglia i risultati: l'articolo fornitore con la sua descrizione e la sua variante, il conto/sottoconto e descrizione fornitore, la classe/codice e descrizione dell'articolo in base alla codifica interna, la classe/codice e descrizione che l'articolo ha per il produttore (che potrebbe essere diverso da quello del fornitore), il codice commerciale che viene attribuito all'articolo, la quantità e il peso, il codice imballo attribuito e il codice barcode se gestito a barcode.
+Según los filtros seleccionados anteriormente, aparecerán en la cuadrícula los resultados: el artículo proveedor con su descripción y variante, la cuenta/subcuenta y descripción del proveedor, la clase/código y descripción del artículo según la codificación interna, la clase/código y descripción que el artículo tiene para el productor (que podría ser diferente de la del proveedor), el código comercial que se asigna al artículo, la cantidad y el peso, el código de embalaje asignado y el código de barras si se gestiona a través de código de barras.
 
+**dettagli**
 
-**Dettagli**
+En esta cuadrícula, es posible visualizar, para cada artículo proveedor, más detalles relacionados con el precio, la cantidad y las UM (unidades de medida) vinculadas, la fecha de inicio y fin de validez de ese precio, la categoría de descuentos y su descripción.
 
-In questa griglia è possibile visualizzare, per ogni articolo fornitore, maggiori dettagli relativi al prezzo e alla quantità e UM collegate, la data di inizio e fine validità di quel prezzo, la categoria sconti e la sua descrizione.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

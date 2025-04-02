@@ -1,75 +1,74 @@
 ---
-title: Filtrare, ordinare e altre operazioni con i record nelle griglie
+title: Filtrar, ordenar y otras operaciones con los registros en las cuadrículas (Filtrare, ordinare e altre operazioni con i record nelle griglie)
 sidebar_position: 4
 ---
 
-### Filtrare i record
+### Filtrar los registros (Filtrare i record)
 
-All'interno delle griglie si possono filtrare e/o ordinare i record (vedi l'esempio nell'immagine sotto). 
+Dentro de las cuadrículas, se pueden filtrar y/o ordenar los registros (ver el ejemplo en la imagen abajo).  
 
-La prima riga della griglia è di filtro (l'icona sul campo di intestazione di riga ha come immagine un imbuto ![](/img/neutral/common/filter.png)): una volta aperta la maschera è sufficiente eseguire una ricerca per visualizzare i record presenti nella stessa e attivare l'inserimento (se previsto) o la gestione della griglia stessa. Il carattere jolly della ricerca all'interno di tutto il campo è ‘%', il singolo carattere jolly è ‘_'. 
+La primera fila de la cuadrícula es de filtro (el ícono en el campo de encabezado de fila tiene como imagen un embudo ![](/img/neutral/common/filter.png)): una vez que se abre la máscara, basta con realizar una búsqueda para visualizar los registros presentes en ella y activar la inserción (si está prevista) o la gestión de la cuadrícula misma. El carácter comodín de la búsqueda en todo el campo es ‘%', el carácter comodín individual es ‘_'.  
 
-Il filtro nei campi testo non è ‘case sensitive' (cioè non distingue maiuscole/minuscole'). Una volta che si inizia a filtrare i record attraverso le intestazioni di colonna, apparirà alla base della maschera un pannello che mostra come sarà applicato il filtro stesso: all'estrema destra di questa sezione apparirà sia un pulsante di chiusura/annullamento del filtro stesso, che un utile pulsante ![](/img/neutral/common/pencil.png) di editing del filtro stesso, dove poter aggiungere in modo guidato filtri più complessi.
+El filtro en los campos de texto no es ‘sensible a mayúsculas y minúsculas' (es decir, no distingue entre mayúsculas y minúsculas). Una vez que se comienza a filtrar los registros a través de los encabezados de columna, aparecerá en la parte inferior de la máscara un panel que muestra cómo se aplicará el mismo filtro: en el extremo derecho de esta sección aparecerá tanto un botón de cierre/anulación del filtro, como un útil botón ![](/img/neutral/common/pencil.png) de edición del filtro, donde se pueden añadir filtros más complejos de manera guiada. 
 
 ![](/img/it-it/guide/operations-with-data/filter-sort-and-other-operations-with-records-in-grids/image03.png)
 
-Sull'intestazione di colonna, inoltre, è attivo un pulsante (un'altra icona simile ad un imbuto) che visualizza una check list con le varie occorrenze dei record presenti in griglia, con la possibilità di spuntare tutto o solo vuote/non vuote o i singoli record.
+En el encabezado de la columna, además, hay un botón activo (un ícono similar a un embudo) que muestra una lista de verificación con las varias ocurrencias de los registros presentes en la cuadrícula, con la posibilidad de marcar todo o solo los vacíos/no vacíos o los registros individuales. 
 
 ![](/img/it-it/guide/operations-with-data/filter-sort-and-other-operations-with-records-in-grids/image04.png)
 
+### Ordenar los registros (Ordinare i record)
 
-### Ordinare i record
+En las cuadrículas, además de la primera fila de filtro, es posible ordenar los registros (en orden ascendente o descendente) por una columna presionando en el encabezado de la columna misma: si se desea ordenar en cascada por otras columnas, es necesario mantener presionada la tecla ‘Shift' y hacer clic en ellas con el ratón.  
 
-Sulle griglie, oltre che alla prima riga di filtro, è possibile ordinare i record (in modo crescente o decrescente) per una colonna premendo sull'intestazione della colonna stessa: se si vuole ordinare a cascata per altre colonne, è necessario tenere premuto ‘Shift' e cliccarle con il mouse.
+Es posible copiar los datos seleccionados en la cuadrícula: con CTRL+C se copian los valores, si se hace CTRL+SHIFT+C se copian también los encabezados de columna.  
 
-E' possibile copiare i dati selezionati in griglia: con CTRL+C si copiano i valori, se si fa CTRL+SHIFT+C si copiano anche le intestazioni di colonna.
+En la parte inferior de la máscara hay un texto que indica el registro seleccionado y el total de registros presentes, con botones que permiten pasar de un registro a otro o saltar de página en página o ir al final o al principio. El desplazamiento de la cuadrícula muestra el número de registros actuales respecto al total de registros.  
 
-Alla base della maschera è presente un testo che indica il record selezionato e il totale dei record presenti, con pulsanti che consentono di passare da un record all'altro o saltare di pagina in pagina o andare in fondo o all'inizio. Lo scroll della griglia visualizza il numero di record attuale rispetto al totale dei record.
+Con el botón derecho en los encabezados de cuadrícula se permiten las siguientes operaciones:  
 
-Con il pulsante destro sulle intestazioni di griglia sono consentite le seguenti operazioni:
+**ordinamento crescente**: establece el ordenamiento ascendente para el campo  
 
-**Ordinamento crescente**: setta l'ordinamento crescente per il campo
+**ordinamento decrescente**: establece el ordenamiento descendente para el campo  
 
-**Ordinamento decrescente**: setta l'ordinamento decrescente per il campo
+**rimuovi ordinamento**: elimina el ordenamiento  
 
-**Rimuovi ordinamento**: rimuove l'ordinamento
+### Otras operaciones (Altre operazioni)
 
-### Altre operazioni
+Con el botón derecho en los encabezados de cuadrícula se permiten las siguientes operaciones:  
 
-Con il pulsante destro sulle intestazioni di griglia sono consentite le seguenti operazioni:
+**raggruppa per questa colonna**: los registros de la cuadrícula estarán agrupados por el mismo campo y al presionar el + del grupo se abrirán sus detalles. Se permiten múltiples grupos uno dentro del otro.  
 
-**Raggruppa per questa colonna**: i record della griglia saranno raggruppati per il campo stesso e premendo il + del gruppo si apriranno i suoi dettagli. Sono consentiti più gruppi uno all'interno dell'altro
+**de-raggruppa**: (presente si se ha definido un agrupamiento) anula el agrupamiento establecido.  
 
-**De-raggruppa**: (presente se è stato definito un raggruppamento) annulla il raggruppamento impostato
+**mostra il pannello di raggruppamento**: muestra arriba de la cuadrícula la sección de gestión del agrupamiento.  
 
-**Mostra il pannello di raggruppamento**: visualizza sopra la griglia la sezione di gestione del raggruppamento
+**nascondi il pannello di raggruppamento**: (si el panel de agrupamiento está presente) oculta la sección de gestión del agrupamiento.  
 
-**Nascondi il pannello di raggruppamento**: (se il pannello di raggruppamento è presente) nasconde la sezione di gestione del raggruppamento
+**visualizza selettore colonne**: permite añadir columnas previstas para la cuadrícula pero que han sido ocultadas.  
 
-**Visualizza selettore colonne**: consente di aggiungere colonne previste per la griglia ma che sono state nascoste
+**adatta**: ajusta el tamaño de la columna seleccionada a los valores presentes en el campo.  
 
-**Adatta**: adatta la dimensione della colonna selezionata ai valori presenti nel campo
+**Ajustar (todas las columnas) (Adatta (tutte le colonne))**: ajusta el tamaño de todas las columnas respecto a los valores presentes en el campo.  
 
-**Adatta (tutte le colonne)**: adatta la dimensione di tutte le colonne rispetto ai valori presenti nel campo
+**modifica indice di raggruppamento**: (solo en caso de datos agrupados) abre un formulario donde se puede establecer un contador de ocurrencias por grupo, configurando la etiqueta correspondiente y su formato. (Las totales no deben gestionarse en esta opción sino estableciendo la cuadrícula a carga total y luego a través del panel de resumen de totales, como se explicó más abajo.)  
 
-**Modifica indice di raggruppamento**: (solo in caso di dati raggruppati) apre una form dove poter impostare un contatore delle occorrenze per gruppo, impostando la relativa label e la sua formattazione. (Le totalizzazioni non vanno gestite in questa opzione ma impostando la griglia a caricamento totale e poi attraverso il pannello riepilogo totali, come spiegato più in basso.)
+**Editor de filtro (Editor filtro)**: abre el panel de escritura manual del filtro en la cuadrícula.  
 
-**Editor filtro**: apre il pannello di scrittura manuale del filtro sulla griglia
+**mostra pannello di ricerca**: abre un campo de búsqueda sobre las ocurrencias de la cuadrícula, filtrando los registros mismos.  
 
-**Mostra pannello di ricerca**: apre un campo di ricerca sulle occorrenze della griglia, filtrando i record stessi
+**stile fisso**: permite establecer una columna como fija a la izquierda o derecha en la cuadrícula, haciendo que las otras se desplacen horizontalmente. Para establecer más columnas como fijas, mantenga presionada la tecla CTRL y luego haga clic derecho para añadir las siguientes.  
 
-**Stile fisso**: consente di impostare una colonna come fissa a sinistra o destra in griglia, facendo scorrere orizzontalmente le altre. Per impostare fisse più colonne, tenere premuto CTRL e poi il pulsante destro per aggiungere le successive.
+**pannello riepilogo**: abre el panel de resumen de la cuadrícula, donde visualizar el número total de filas, por ejemplo.  
 
-**Pannello riepilogo**: apre il pannello di riepilogo della griglia, dove visualizzare il numero totale delle righe ad esempio
+**pannello riepilogo totali**: permite visualizar el panel de totalización de los campos visualizados. Esta opción se gestiona solo en caso de que la cuadrícula ha sido configurada para cargar todos los datos (detalles más debajo).  
 
-**Pannello riepilogo totali**: consente di visualizzare il pannello di totalizzazione dei campi visualizzati. Tale opzione è gestita solo nel caso in cui la griglia sia stata impostata per caricare tutti i dati (dettagli più in basso)
+**riga filtro**: habilita/deshabilita la fila inicial de filtro.  
 
-**Riga filtro**: abilita/disabilita la riga iniziale di filtro
+**Fin de grupo (Fine gruppo)**: muestra una sección final para cada grupo, donde es posible visualizar totales y valores de las columnas para ese grupo (para cuadrículas de carga total, como se explicó más abajo).  
 
-**Fine gruppo**: visualizza una sezione finale per ogni gruppo, dove è possibile visualizzare totali e valori delle colonne per quel gruppo (per griglie a caricamento totale, come spiegato più in basso)
+**Exportar (Exporta)**…: permite exportar la cuadrícula en varios formatos (csv, html, imagen, mht, pdf, rtf, texto, xls, xlsx, xps).  
 
-**Esporta**…: consente di esportare la griglia in vari formati (csv, html, immagine, mht, pdf, rtf, testo, xls, xlsx, xps).
+**anteprima di stampa**: abre una vista previa de impresión de la tabla de la cuadrícula, desde la cual se puede a su vez exportar los datos, adjuntarlos a un correo electrónico, imprimirlos. Las configuraciones son las de la impresora predeterminada.  
 
-**Anteprima di stampa**: apre un'anteprima di stampa della tabella della griglia, dalla quale è possibile a sua volta esportare i dati, allegarli ad una email, stamparli. Le impostazioni sono quelle della stampante di default.
-
-**Stampa**: esegue direttamente la stampa della tabella della griglia, sulla stampante di default.
+**stampa**: ejecuta directamente la impresión de la tabla de la cuadrícula, en la impresora predeterminada.

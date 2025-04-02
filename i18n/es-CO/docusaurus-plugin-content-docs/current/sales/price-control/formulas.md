@@ -1,22 +1,22 @@
 ---
-title: Formule di aggiornamento politiche prezzi/sconti
+title: formule di aggiornamento politiche prezzi/sconti
 sidebar_position: 4
 ---
 
-In questa maschera è possibile agganciare le regole tra i documenti di acquisto e vendita, in modo da modificare il prezzo degli articoli in automatico quando il fornitore invia il nuovo catalogo.     
-Nella prima griglia sono presenti **Codice** e **Descrizione** delle formule.      
-Nella seconda griglia invece sono presenti i documenti di origine, i documenti di destinazione e le formule. E' possibile applicare fino a 5 operazioni per una stessa riga. Vengono considerate solo le colonne con contenuto, quelle lasciate vuote non saranno aggiornate nè prese in considerazione come fonte della modifica. L'utente, quindi, deve compilare solo le colonne di suo interesse per origine, destinazione, operando e valore operando. Analizziamo le colonne della seconda griglia.      
-**Destinazione tipo listino di vendita**: contiene il Tipo listino di vendita destinatario della modifica, quando verrà applicata la formula presente in questa riga;        
-**Conto/sottoconto/descrizione destinazione listino di vendita**: contiene il listino personalizzato destinatario della modifica;          
-**Destinazione tipo listino fornitori**: contiene il Tipo listino fornitori destinatario della modifica;       
-**Conto/Sottoconto/Descrizione destinazione listino fornitore**: contiene il listino personalizzato di acquisto destinatario della modifica;          
-**Origine tipo listino di vendita**: contiene la tipologia di listino di vendita di origine, al quale verrà applicato l'Operando;      
-**Conto/sottoconto/descrizione origine cliente**:  contiene il listino personalizzato da considerare come origine;       
-**Origine tipo listino fornitore**: contiene il tipo listino fornitore di origine;         
-**Conto/sottoconto/descrizione origine fornitore**: contiene il listino personalizzato di origine;         
-**Costo origine magazzino**: questo campo va compilato se si vuole considerare come origine costo medio, ultimo o standard dell'articolo;        
-**Operando N**: al documento considerato come Origine verrà applicata l'operazione selezionata in questa combo box tra +, -, *, / o %;          
-**Valore N**: in questo campo è possibile inserire un valore manuale da applicare in base all'operando selezionato;       
-**Valore Proprietà N**: in questo campo è possibile inserire un campo da sommare/sottrarre ecc. in base all'operando selezionato; questo campo esclude quello precedente: la somma/sottrazione/divisione ecc. può infatti esssere di un valore manuale oppure di un valore di un altro campo; facendo doppio click in questo campo, viene aperto il Navigatore oggetti dal quale selezionare la proprietà da considerare come fatture dell'operazione; le ultime due righe del Navigatore oggetti sono i flag **AddedValue** e **AddedPercentage**, che servono per riportare questi valori dal listino fornitore;           
-**Ripresa sconto**: questo flag riporta nel documento di destinazione gli sconti del Listino selezionato;      
-**Ripresa sconto da fornitore preferenziale**: questo flag riprende lo sconto dal listino del fornitore preferenziale di default.
+En este formulario es posible enlazar las reglas entre los documentos de compra y venta, de modo que el precio de los artículos se modifique automáticamente cuando el proveedor envía el nuevo catálogo.  
+En la primera cuadrícula están presentes el **codice** y la **descrizione** de las fórmulas.  
+En la segunda cuadrícula, sin embargo, están presentes los documentos de origen, los documentos de destino y las fórmulas. Se pueden aplicar hasta 5 operaciones para una misma fila. Solo se consideran las columnas con contenido; aquellas dejadas vacías no se actualizarán ni se tomarán en cuenta como fuente de modificación. El usuario debe completar solo las columnas de su interés para origen, destino, operando y valor operando. Analicemos las columnas de la segunda cuadrícula.  
+**Destino tipo listado de venta (Destinazione tipo listino di vendita)**: contiene el tipo de listado de venta destinatario de la modificación, cuando se aplique la fórmula presente en esta fila;  
+**Cuenta/subcuenta/descripción destino listado de venta (Conto/sottoconto/descrizione destinazione listino di vendita)**: contiene el listado personalizado destinatario de la modificación;  
+**Destino tipo listado de proveedores (Destinazione tipo listino fornitori)**: contiene el tipo de listado de proveedores destinatario de la modificación;  
+**Cuenta/subcuenta/descripción destino listado proveedor (Conto/Sottoconto/Descrizione destinazione listino fornitore)**: contiene el listado personalizado de compra destinatario de la modificación;  
+**Origen tipo listado de venta (Origine tipo listino di vendita)**: contiene la tipología de listado de venta de origen, al cual se le aplicará el operando;  
+**Cuenta/subcuenta/descripción origen cliente (Conto/sottoconto/descrizione origine cliente)**: contiene el listado personalizado a considerar como origen;  
+**Origen tipo listado de proveedor (Origine tipo listino fornitore)**: contiene el tipo de listado de proveedor de origen;  
+**Cuenta/subcuenta/descripción origen proveedor (Conto/sottoconto/descrizione origine fornitore)**: contiene el listado personalizado de origen;  
+**Costo origen almacén (Costo origine magazzino)**: este campo debe completarse si se quiere considerar como origen el costo medio, último o estándar del artículo;  
+**Operando N (Operando N)**: al documento considerado como origen se le aplicará la operación seleccionada en esta caja combinada entre +, -, *, / o %;  
+**Valor N (Valore N)**: en este campo es posible ingresar un valor manual a aplicar según el operando seleccionado;  
+**Valor Propiedad N (Valore Proprietà N)**: en este campo es posible ingresar un campo para sumar/restar, etc., según el operando seleccionado; este campo excluye el anterior: la suma/resta/división, etc., puede ser de un valor manual o de un valor de otro campo; haciendo doble clic en este campo, se abre el Navegador de objetos desde el cual seleccionar la propiedad a considerar como parte de la operación; las últimas dos filas del Navegador de objetos son los indicadores **Valor Añadido (AddedValue)** y **Porcentaje Añadido (AddedPercentage)**, que sirven para devolver estos valores del listado de proveedores;  
+**ripresa sconto**: este indicador devuelve en el documento de destino los descuentos del listado seleccionado;  
+**Recuperación de descuento de proveedor preferente (Ripresa sconto da fornitore preferenziale)**: este indicador recupera el descuento del listado del proveedor preferente por defecto.

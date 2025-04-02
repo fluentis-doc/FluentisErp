@@ -1,14 +1,14 @@
 ---
-title: Tipi barcode
+title: tipi barcode
 sidebar_position: 4
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi barcode** e permette la codifica delle diverse classi articolo e il raggruppamento degli articoli.
+La tabla se abre a través de la ruta **Tablas (Tabelle) > Configuración general (Impostazioni generali) > tipi barcode (Tipi barcode)** y permite la codificación de las diferentes clases de artículos y el agrupamiento de los artículos.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y otra de resultados. Una vez que se hayan configurado todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos registros, es necesario hacer clic en la cuadrícula superior en la primera fila vacía o presionar el botón **nuovo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

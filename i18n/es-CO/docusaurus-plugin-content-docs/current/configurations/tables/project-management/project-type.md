@@ -1,79 +1,79 @@
 ---
-title: Tipi progetto
+title: tipi progetto
 sidebar_position: 12
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipi progetto**
+La tabla es accesible desde **Tablas > Gestión de Proyectos > tipi progetto (Tabelle > Gestione Progetti > Tipi progetto)**.
 
-La tabella contiene le possibili tipologie di **Progetto**. E' composta da una parte di filtro in cui si può ricercare attraverso la descrizione del tipo, e da due griglie: una in cui verranno elencate tutte le tipologie di progetto inserite (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) ricerca nella ribbon bar per visualizzarle) ed una in cui potranno essere indicati i costi/ricavi predefiniti per ogni tipologia progetto da utilizzare nel calcolo SAL.
+La tabla contiene las posibles tipologías de **progetto**. Está compuesta por una parte de filtro en la que se puede buscar a través de la descripción del tipo, y por dos cuadrículas: una en la que se enumerarán todas las tipologías de proyecto ingresadas (solo será necesario hacer clic en el botón de ![](/img/neutral/common/search.png) búsqueda en la barra de cinta para visualizarlas) y una en la que se podrán indicar los costos/ingresos predeterminados para cada tipología de proyecto a utilizar en el cálculo de SAL.
 
 ![](/img/it-it/configurations/tables/projects/proj-type.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie di progetto all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) New: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+También dentro de este formulario es posible agregar nuevas tipologías de proyecto en la cuadrícula, haciendo clic en el botón ![](/img/neutral/common/new.png) Nuevo: de esta forma se añadirá una nueva fila dentro de la cuadrícula donde se podrán definir las siguientes informaciones:
 
-**Tipo**: è il codice del tipo progetto;
+**Tipo**: es el código del tipo de proyecto;  
 
-**Descrizione Tipo Progetto**: è la descrizione del tipo progetto;
+**descrizione tipo progetto**: es la descripción del tipo de proyecto;  
 
-**Numerazione**: è la numerazione associata al progetto configurata appositamente;
+**numerazione**: es la numeración asociada al proyecto configurada especialmente;  
 
-**Struttura gerarchica**: questo flag se abilitato permette ai progetti di avere una struttura gerarchica, quindi multilivello; 
+**struttura gerarchica**: este indicador, si está habilitado, permite a los proyectos tener una estructura jerárquica, es decir, multinivel;  
 
-**Tipo ordine**: è possibile indicare un tipo ordine associato;
+**tipo ordine**: es posible indicar un tipo de orden asociado;  
 
-**Descrizione Tipo Ordine**: è la descrizione del tipo ordine associato; utilizzato nel caso di creazione progetti da ordine.
+**descrizione tipo ordine**: es la descripción del tipo de orden asociado; utilizado en caso de creación de proyectos a partir de un orden.  
 
-**Tipo Fattura**: è possibile indicare un tipo fattura associato, necessario per la fatturazione dei progetti;
+**tipo fattura**: es posible indicar un tipo de factura asociado, necesario para la facturación de los proyectos;  
 
-**Descrizione Tipo Fattura**: è la descrizione della fattura associata;
+**Descripción Tipo Factura (Descrizione Tipo Fattura)**: es la descripción de la factura asociada;  
 
-**Template**: questo flag indica che il tipo progetto è un template, quindi non potrà essere richiamato in altri documenti, ma utilizzato solamente come modello per la generazione di nuovi progetti.  
+**template**: este indicador indica que el tipo de proyecto es una plantilla, por lo que no podrá ser utilizado en otros documentos, sino solamente como modelo para la generación de nuevos proyectos.  
 
-**Sicurezza del Progetto abilitata**: se flaggato, abilita la possibilità di scegliere, nella tab Permessi Utente della Testata del Progetto, gli utenti che hanno il diritto di Read Only oppure Read Write sul progetto (gli altri utenti non potranno accedervi); se non flaggato, permette la modifica del Progetto a tutti gli utenti;
+**sicurezza del progetto abilitata**: si está marcado, habilita la posibilidad de elegir, en la pestaña Permisos de Usuario de la Cabecera del Proyecto, a los usuarios que tienen el derecho de Solo Lectura (Read Only) o Lectura y Escritura (Read Write) sobre el proyecto (los otros usuarios no podrán acceder); si no está marcado, permite la modificación del Proyecto a todos los usuarios;  
 
-**Tipo richiesta d’acquisto**: è possibile associare un tipo di richiesta d’acquisto; in questo modo sarà possibile generare le richieste di acquisto direttamente da progetto. 
+**Tipo de solicitud de compra (Tipo richiesta d’acquisto)**: es posible asociar un tipo de solicitud de compra; de esta forma, será posible generar solicitudes de compra directamente desde el proyecto.  
 
-Sono poi presenti alcuni flag nella griglia, che indicano le varie tab da mostrare per il tipo progetto.
+Luego, hay algunos indicadores en la cuadrícula que indican las distintas pestañas que se mostrarán para el tipo de proyecto.
 
-**Attività**: tab contenente tutti i dati principali ed obbligatori per la riga di progetto, come articolo, quantità e prezzo ed il riepilogo dei costi;
+**attività**: pestaña que contiene todos los datos principales y obligatorios para la línea de proyecto, como artículo, cantidad y precio, y el resumen de los costos;  
 
-**Pianificazione Servizio**: tab relativa alle date di inizio/fine previsti, la % di avanzamento, i tipi intervento da utilizzare ed eventuali legami con altre wbs;
+**pianificazione servizio**: pestaña relacionada con las fechas de inicio/final previstas, el % de avance, los tipos de intervención a utilizar y posibles vínculos con otras WBS;  
 
-**Risorse**: tab di pianificazione risorse;
+**risorse**: pestaña de planificación de recursos;  
 
-**Materiali**: tab contenente l'elenco materiali con il relativo costo;
+**materiali**: pestaña que contiene la lista de materiales con su costo correspondiente;  
 
-**Fasi**:
+**fasi**:
 
-**Dati**: tab contenente informazioni generiche relative ai codici per il calcolo SAL di progetto, riferimento a ticket, commesse di produzione, contatti crm. 
+**dati**: pestaña que contiene información genérica relacionada con los códigos para el cálculo de SAL del proyecto, referencia a tickets, órdenes de producción, contactos de CRM.  
 
-**Avanzamento**: 
+**avanzamento**:  
 
-**Agenti**: tab di inserimento Agenti relativi al progetto.
+**agenti**: pestaña para la inserción de Agentes relacionados con el proyecto.  
 
-**Fatturazione**: tab per compilare la scaletta delle rate di fatturazione per la riga di progetto;
+**fatturazione**: pestaña para completar la programación de las cuotas de facturación para la línea de proyecto;  
 
-**Extra Data**: tab per gestire gli extra data;
+**extra data**: pestaña para gestionar los datos extra;  
 
-**Documenti Allegati**: tab per gestire gli allegati.
+**documenti allegati**: pestaña para gestionar los archivos adjuntos.  
 
-**Gannt**: tab generale che mostra il diagramma di Gannt relativo al progetto. 
+**Gantt (Gannt)**: pestaña general que muestra el diagrama de Gantt relacionado con el proyecto.  
 
-**Fattura di Anticipo**: tab per gestire le fatture di anticipo legate ai progetti.
+**fattura di anticipo**: pestaña para gestionar las facturas de anticipo relacionadas con los proyectos.  
 
-**Fatturato Obbligatorio**: nel caso di riga progetto fatturabile e flag fatturato obbligatorio, verrà bloccato il salvataggio.
+**fatturato obbligatorio**: en caso de que la línea de proyecto sea facturable y tenga el indicador de facturación obligatoria, se bloqueará el guardado.  
 
-**Ricalcolo data inizio-fine**: se abilitato, permette la modifica automatica della data di inzio e fine pianificazione nelle righe wbs di progetto. Le date si aggiorneranno in base alla quantità di riga se la UM corrisponde alla UM dei giorni impostata nei parametri progetto, oppure in inserimento nuove risorse nella tab risorse della riga progetto.
+**Recalculo de fecha de inicio-fin (Ricalcolo data inizio-fine)**: si está habilitado, permite la modificación automática de la fecha de inicio y fin de planificación en las líneas WBS del proyecto. Las fechas se actualizarán en función de la cantidad de la línea si la UM corresponde a la UM de los días configurada en los parámetros del proyecto, o al ingresar nuevos recursos en la pestaña de recursos de la línea del proyecto.  
 
-Nella griglia sottostante è possibile costruire la valorizzazione del SAL nell’ambito dello stato avanzamento lavori. Per ogni progetto è possibile indicare una serie di codici, che rappresenteranno documenti da includere nel calcolo dello stato avanzamento lavori. Questi codici verranno poi proposti nelle singole righe di progetto. 
-Dopo aver selezionato una riga dalla prima griglia, i campi da compilare nella seconda sono:
+En la cuadrícula inferior es posible construir la valorización del SAL dentro del estado de avance de trabajos. Para cada proyecto es posible indicar una serie de códigos que representarán documentos a incluir en el cálculo del estado de avance de trabajos. Estos códigos serán propuestos en las líneas individuales del proyecto.  
+Después de seleccionar una línea de la primera cuadrícula, los campos a completar en la segunda son:
 
-**Tipo origine Costo/Ricavo**: contiene l'elenco dei codici di costi/ricavi previsti per il calcolo SAL per i progetti di quello specifico tipo;
+**tipo origine costo/ricavo**: contiene la lista de códigos de costos/ingresos previstos para el cálculo SAL de los proyectos de ese tipo específico;  
 
-**Descrizione**: è la descrizione dei costi/ricavi;
+**descrizione**: es la descripción de los costos/ingresos;  
 
-**Tipo**: indica se è costo o un profitto.
+**tipo**: indica si es un costo o un ingreso.  
 
-**Espressione filtro**: se il campo non è valorizzato, vengono considerati tutti i documenti previsti per il specifico codice. Se invece si vuole escludere determinati documenti (ad es. per tipologia, numerazione, etc) è possibile configurare un'espressione filtrante. 
+**espressione filtro**: si el campo no está valorizado, se consideran todos los documentos previstos para el código específico. En cambio, si se desea excluir ciertos documentos (por tipo, numeración, etc.), es posible configurar una expresión de filtrado.  
 
 ![](/img/it-it/configurations/tables/projects/revenue.png)

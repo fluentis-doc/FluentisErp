@@ -1,42 +1,42 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-All'interno del modulo della Contabilità gestionale abbiamo tutte le procedure di inserimento ed elaborazione dati della contabilità per centro aziendale sulle aree di analisi diverse dall'area di budget: avremo la prima nota dei movimenti fisici o le registrazioni extracontabili di area, lo storico dei dati elaborati (sia fisici che a valore) per l'anno/periodo, le varie visualizzazioni di controllo e di estrazione dati, la visualizzazione del rendiconto consuntivo dei dati per la dimensione di analisi di progetto.
+Dentro del módulo de Contabilidad de gestión, tenemos todos los procedimientos de ingreso y procesamiento de datos contables por centro empresarial en las áreas de análisis diferentes a la de presupuesto: tendremos la primera nota de los movimientos físicos o los registros extra-contables de área, el histórico de los datos procesados (tanto físicos como a valor) para el año/período, las varias visualizaciones de control y de extracción de datos, y la visualización del estado final de los datos para la dimensión de análisis de proyecto.
 
-## Configurazione iniziale del modulo
-Suggeriamo di fare riferimento alla sezione della [*Panoramica Generale Controlling*](/docs/controlling/general-overview-controlling/general-overview) per una overview delle tabelle e degli step logici della configurazione, che deve partire da una analisi precisa della struttura produttiva aziendale e degli obiettivi che si vogliono ottenere implementando il Controllo di Gestione.
+## Configuración inicial del módulo (Configurazione iniziale del modulo)
+Sugerimos referirse a la sección de la [*Visión General de Controlling*](/docs/controlling/general-overview-controlling/general-overview) para una visión general de las tablas y los pasos lógicos de la configuración, que debe comenzar con un análisis preciso de la estructura productiva de la empresa y los objetivos que se desean lograr implementando el Control de Gestión.
 
-## Documenti gestiti
+## Documentos gestionados (Documenti gestiti)
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-        <p>Il modulo è strutturato dalle seguenti sezioni:</p>
-###     Prima nota
-        <p>Una prima nota di entry di dati fisici o di registrazioni dell'area di analisi:</p>
-        <p>- *Registrazione movimenti fisici*: valorizzata da produzione/progetto o manualmente</p>
-        <p>- *Registrazioni extracontabili di area*: valorizzate in automatico da ammortamenti o rimanenze, piuttosto che manuali</p>
-        <p>- *Tariffe standard dei centri*: a gestione manuale</p>
-###     Storico gestionale
-        <p>In questa sezione abbiamo tutti gli storici delle varie base dati elaborate:</p>
-        <p>- *Storico flusso fisico*: la base dati storica dei movimenti fisici</p>
-        <p>- *Storico ammortamenti*: la base dati storica degli ammortamenti elaborati</p>
-        <p>- *Storico registrazioni gestionali*: la base dati mensilizzata e rielaborata da tutti i driver</p>
-        <p>- *Storico indici*: la base dati storica degli indici di costo elaborati sui vari centri</p>
-###     Procedure
-        <p>In questa sezione troviamo le varie procedure di ripresa e elaborazione dati:</p>
-        <p>- *Ripresa dati da produzione*: per riprendere tempi e costi dai progetti, tempi dalla produzione, costi dalle lavorazioni interne/esterne</p>
-        <p>- *Ripresa dati da fatture di vendita*: per riprendere provvigioni e sconti applicati</p>
-        <p>- *Elaborazione periodi*: per elaborare dati fisici, ammortamenti, ed elaborare la base dati applicando driver</p>
-        <p>- *Aggiornamento tariffe di produzione*: per allineare le tariffe dei centri produttivi</p>
-        <p>- *Consolidamento master*: per creare un controlling unificato di gruppo</p>
-###     Storico di progetto
-        <p>In questa sezione abbiamo tutti gli storici delle varie base dati elaborate per chi lavora a progetto/commessa:</p>
-        <p>- *Storico movimenti fisici di commessa*: la base dati storica dei tempi e quantità lavorate su progetto/commessa</p>
-        <p>- *Registrazioni gestionali*: la base dati storica dei costi e ricavi diretti di progetto</p>
-        <p>- *Valori da produzione*: materiali e lavorazioni direttamente utilizzati su progetto/commessa</p>
-        <p>- *Consolidato di commessa*: la base dati risultante con costi diretti, indiretti e driver di ribaltamento di costi generali</p>
+        <p>El módulo está estructurado en las siguientes secciones:</p>
+###     Primera nota (Prima nota)
+        <p>Una primera nota de entrada de datos físicos o de registros del área de análisis:</p>
+        <p>- *Registro de movimientos físicos (Registrazione movimenti fisici)*: valorado por producción/proyecto o manualmente</p>
+        <p>- *registrazioni extracontabili di area*: valorizados automáticamente por amortizaciones o existencias, en lugar de manualmente</p>
+        <p>- *Tarifas estándar de los centros (Tariffe standard dei centri)*: gestionadas manualmente</p>
+###     Histórico de gestión (Storico gestionale)
+        <p>En esta sección tenemos todos los históricos de las varias bases de datos procesadas:</p>
+        <p>- *storico flusso fisico*: la base de datos histórica de los movimientos físicos</p>
+        <p>- *storico ammortamenti*: la base de datos histórica de las amortizaciones procesadas</p>
+        <p>- *storico registrazioni gestionali*: la base de datos mensualizada y reelaborada de todos los drivers</p>
+        <p>- *storico indici*: la base de datos histórica de los índices de costo procesados en los varios centros</p>
+###     Procedimientos (Procedure)
+        <p>En esta sección encontramos los varios procedimientos de recuperación y procesamiento de datos:</p>
+        <p>- *ripresa dati da produzione*: para recuperar tiempos y costos de los proyectos, tiempos de la producción y costos de los trabajos internos/externos</p>
+        <p>- *ripresa dati da fatture di vendita*: para recuperar comisiones y descuentos aplicados</p>
+        <p>- *elaborazione periodi*: para procesar datos físicos, amortizaciones y elaborar la base de datos aplicando drivers</p>
+        <p>- *Actualización de tarifas de producción (Aggiornamento tariffe di produzione)*: para alinear las tarifas de los centros productivos</p>
+        <p>- *consolidamento master*: para crear un control unificado de grupo</p>
+###     Histórico de proyecto (Storico di progetto)
+        <p>En esta sección tenemos todos los históricos de las varias bases de datos procesadas para quienes trabajan en proyecto/encargo:</p>
+        <p>- *storico movimenti fisici di commessa*: la base de datos histórica de los tiempos y cantidades trabajadas en proyecto/encargo</p>
+        <p>- *registrazioni gestionali*: la base de datos histórica de los costos y ingresos directos del proyecto</p>
+        <p>- *valori da produzione*: materiales y trabajos directamente utilizados en proyecto/encargo</p>
+        <p>- *consolidato di commessa*: la base de datos resultante con costos directos, indirectos y drivers de asignación de costos generales</p>
     </div>
 </div>

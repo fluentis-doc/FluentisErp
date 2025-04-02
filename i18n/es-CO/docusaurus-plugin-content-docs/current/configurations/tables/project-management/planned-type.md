@@ -1,25 +1,25 @@
 ---
-title: Tipo pianificato
+title: tipo pianificato
 sidebar_position: 11
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipo pianificato**.
-La tabella contiene le possibili tipologie di pianificazione. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di pianificato (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+La tabla es accesible desde **tipo pianificato**.  
+La tabla contiene las posibles tipologías de planificación. Está compuesta por una parte de filtro en la que se puede buscar mediante el código y la descripción, y por una cuadrícula donde se enumerarán todas las tipologías de planificado (solo hay que hacer clic en el botón de ![](/img/neutral/common/search.png) Búsqueda en la barra de ribbon para visualizarlas).  
 
-![](/img/it-it/configurations/tables/projects/planned-type.png)
+![](/img/it-it/configurations/tables/projects/planned-type.png)  
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+También dentro de este formulario es posible agregar nuevas tipologías en la cuadrícula, haciendo clic en el botón ![](/img/neutral/common/new.png) Nuevo: de este modo, se añadirá una nueva fila en la cuadrícula donde se podrán definir la siguiente información:  
 
-**Codice**: è il codice del tipo pianificato;
+**codice**: es el código del tipo planificado;  
 
-**Descrizione**: è la descrizione del codice;
+**descrizione**: es la descripción del código;  
 
-**Non previsto**: se flaggato, indica che stiamo trattando una tipologia non prevista;
+**non previsto**: si está marcado, indica que estamos tratando una tipología no prevista;  
 
-**Numerazione**: indica la numerazione associata;
+**numerazione**: indica la numeración asociada;  
 
-**Tipo intervento**: indica il tipo intervento associato di default, con la relatva descrizione;
+**tipo intervento**: indica el tipo de intervención asociado por defecto, con la respectiva descripción;  
 
-**Esterno/Interno**: se flaggato, indica che è un’operazione esterna.
+**esterno/interno**: si está marcado, indica que es una operación externa.  
 
-**Colore**: colore per identificare gli interventi pianificati nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**colore**: color para identificar las intervenciones planificadas en los calendarios del área de proyectos, como el [Planificador (Planner)](/docs/project-management/planned-interventions/planner) y [Asignación de recursos WBS (Assegnazione WBS risorse)](/docs/project-management/planned-interventions/wbs-resource-assignation).

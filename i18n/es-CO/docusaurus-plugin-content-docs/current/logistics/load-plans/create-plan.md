@@ -1,54 +1,54 @@
 ---
-title: Creazione Piano di Carico
+title: Creación del Plan de Carga (Creazione Piano di Carico)
 sidebar_position: 2
 ---
 
-Il **Piano di carico** è un documento che viene creato tra l'ordine cliente e il picking.        
+El **Plan de carga (Piano di carico)** es un documento que se crea entre el pedido del cliente y la preparación (picking).
 
-## Ricerca ordini cliente
+## Búsqueda de pedidos de clientes (Ricerca ordini cliente)
 
-Il punto di partenza per la creazione di un piano di carico è la ricerca e selezione degli ordini clienti da inserire nel piano. Dalla sezione di filtro è possibile effettuare una ricerca avanzata sugli ordini che si vuole evadere tra quelli *Non evasi* o *Parzialmente evasi*.      
-Di default vengono proposte come Da data consegna e A data consegna le date di inizio e fine della settimana corrente, ma possono essere impostate anche diversamente. 
-Nei [Parametri Piani di Carico](/docs/configurations/parameters/logistics/load-plan-parameters) è infatti possibile cambiare le date consegna proposte per la ricerca, scegliere se visualizzare anche righe articoli presenti in piani di carico aperti e impostare colori diversi per riga, a seconda che ci sia la disponibilità necessaria per evadere l’ordine o meno.
+El punto de partida para la creación de un plan de carga es la búsqueda y selección de los pedidos de clientes que se van a incluir en el plan. Desde la sección de filtro, es posible realizar una búsqueda avanzada en los pedidos que se desea evadir entre aquellos *non evasi* o *parzialmente evasi*.  
+Por defecto, se proponen como "Desde fecha de entrega (Da data consegna)" y "Hasta fecha de entrega (A data consegna)" las fechas de inicio y fin de la semana actual, pero pueden configurarse de manera diferente.  
+En los [Parámetros de Planes de Carga (Parametri Piani di Carico)](/docs/configurations/parameters/logistics/load-plan-parameters) es posible cambiar las fechas de entrega propuestas para la búsqueda, elegir si visualizar también las líneas de artículos presentes en planes de carga abiertos y establecer diferentes colores para las líneas, dependiendo de si hay o no disponibilidad necesaria para evadir el pedido.
 
-Il flag **Visualizza ordini con data consegna in giorno escluso** permette di visualizzare in griglia anche gli ordini che hanno una data bloccata (es. festiva) sul calendario.         
-**Visualizza ordini con data consegna corretta** permette di visualizzare gli ordini con una data valida.           
-E' possibile aprire gli Ordini con il doppio click.           
+El indicador **visualizza ordini con data consegna in giorno escluso** permite visualizar en la cuadrícula también los pedidos que tienen una fecha bloqueada (por ejemplo, festiva) en el calendario.  
+**visualizza ordini con data consegna corretta** permite visualizar los pedidos con una fecha válida.  
+Es posible abrir los pedidos con doble clic.  
 
-Di seguito riportati alcuni dei dati presenti nella griglia dei risultati:         
-**Tipo**: contiene la [tipologia](/docs/configurations/tables/sales/sales-order-types) dell'ordine cliente, seguito dai dati dell'ordine come il **Numero**, la **Data**, l'**Articolo**, ecc.;         
-**Note**: sono consultabili le note delle righe ordine e le note del piano di carico;       
-**Quantità**: riporta la quantità totale della riga articolo nell'ordine;        
-**Quantità residua**: riporta il residuo dell'ordine non ancora evaso;          
-**Ordine presente in altro piano carico**: questo flag indica che l'ordine è già presente in un altro piano;         
-**Ordine presente in altro piano carico aperto**: questo flag indica che l'ordine è già presente in un altro piano aperto; questi due flag sono utili se l'utente non imposta diversi colori per le righe (nei [parametri](/docs/configurations/parameters/logistics/load-plan-parameters));          
-**Articolo**: in questa colonna è possibile inserire la quantità dell'articolo che si vuole evadere; questa quantità può essere diversa dalla quantità residua.           
+A continuación, se presentan algunos de los datos presentes en la cuadrícula de resultados:  
+**tipo**: contiene la [tipología (tipologia)](/docs/configurations/tables/sales/sales-order-types) del pedido de cliente, seguido de los datos del pedido como el **numero**, la **data**, el **articolo**, etc.;  
+**note**: se pueden consultar las notas de las líneas del pedido y las notas del plan de carga;  
+**quantità**: muestra la cantidad total de la línea de artículo en el pedido;  
+**quantità residua**: muestra el restante del pedido que aún no ha sido evadido;  
+**Pedido presente en otro plan de carga (Ordine presente in altro piano carico)**: este indicador indica que el pedido ya está presente en otro plan;  
+**Pedido presente en otro plan de carga abierto (Ordine presente in altro piano carico aperto)**: este indicador indica que el pedido ya está presente en otro plan abierto; estos dos indicadores son útiles si el usuario no establece diferentes colores para las líneas (en los [parámetros](/docs/configurations/parameters/logistics/load-plan-parameters));  
+**articolo**: en esta columna es posible ingresar la cantidad del artículo que se desea evadir; esta cantidad puede ser diferente de la cantidad residual.  
 
-Dopo la selezione delle righe ordine da processare nel piano di carico, è possibile effettuare diverse operazioni con i pulsanti della ribbon bar. Ricordiamo che se nei parametri non è richiesta la disponibilità obbligatoria, allora potranno essere evase righe senza disponibilità.           
+Después de seleccionar las líneas de pedido para procesar en el plan de carga, es posible realizar diversas operaciones con los botones de la barra de herramientas. Recordamos que si en los parámetros no se requiere la disponibilidad obligatoria, entonces se podrán evadir líneas sin disponibilidad.
 
-**Pulsanti specifici**       
-> **Inserisci ordine**: questo pulsante trasferisce le righe selezionate nella tab **Preparazione piano di carico**; 
-> **Note spedizione**: questo pulsante permette di visualizzare le *Note spedizione* presenti nel tab *Consegna* dell'*Anagrafica cliente*;               
-> **Proprietà ordine**: questo pulsante apre lo **Stato evasione** dell'ordine selezionato;       
-> **Modifica Note piano di carico**: questo pulsante permette di modificare le **Note piano di carico** inserite nel tab *Articoli* dell'Ordine cliente.        
+**Botones específicos**  
+> **inserisci ordine**: este botón transfiere las líneas seleccionadas a la pestaña **Preparación del plan de carga (Preparazione piano di carico)**;  
+> **note spedizione**: este botón permite visualizar las *Notas de envío* presentes en la pestaña *consegna* del *anagrafica cliente*;  
+> **proprietà ordine**: este botón abre el **stato evasione** del pedido seleccionado;  
+> **Modificar notas del plan de carga (Modifica Note piano di carico)**: este botón permite modificar las **Notas del plan de carga** ingresadas en la pestaña *articoli* del Pedido del cliente.  
 
-## Preparazione piano carico
+## Preparación del plan de carga (Preparazione piano carico)
 
-In questo tab vengono proposti i dati per la preparazione del piano di carico. I dati visualizzati di default sono quelli impostati nella tabella [Tipi piano di carico](/docs/configurations/tables/logistics/load-plan-type), gli altri possono essere inseriti manualmente.      
+En esta pestaña se proponen los datos para la preparación del plan de carga. Los datos mostrados por defecto son aquellos establecidos en la tabla [Tipos de plan de carga (Tipi piano di carico)](/docs/configurations/tables/logistics/load-plan-type), los demás pueden ser ingresados manualmente.  
 
-**Pulsanti specifici**         
-> **Salva**: permette il salvataggio del piano di carico;     
-> **Imposta vettore**: questo pulsante permette di aprire la maschera di ricerca **Vettori** e selezionarne uno da associare al piano di carico; esso verrà riportato nella colonna Vettore della griglia;      
-> **Modifica note vettore**: questo pulsante permette di modificare le note del vettore e riporta le note nella colonna della griglia *Note vettore*;       
-> **Modifica numero vettore**: se lo stesso vettore arrivasse, per esempio, con più furgoni, potrei dividere la spedizione;       
-> **Rilascio piano**: questo pulsante rende disponibile il piano per la creazione di altri documenti (ad esempio il picking);    
-> **Sposta in altro piano di carico**: questo pulsante sposta la riga in un piano di carico già esistente, scelto dalla maschera di ricerca;      
-> **Creazione picking**: questo pulsante permette di creare il *Picking* dal piano di carico; nella maschera è necessario inserire il **Tipo picking**, l'**Operatore** ed è possibile scegliere se creare un picking diverso per ogni ordine o meno. Il picking creato sarà disponibile nella Ricerca picking.         
+**Botones específicos**  
+> **salva**: permite guardar el plan de carga;  
+> **imposta vettore**: este botón permite abrir la máscara de búsqueda **vettori** y seleccionar uno para asociarlo al plan de carga; se mostrará en la columna Transportista de la cuadrícula;  
+> **modifica note vettore**: este botón permite modificar las notas del transportista y muestra las notas en la columna de la cuadrícula *note vettore*;  
+> **Modificar número del transportista (Modifica numero vettore)**: si el mismo transportista llegara, por ejemplo, con más furgones, podría dividir el envío;  
+> **rilascio piano**: este botón hace que el plan esté disponible para la creación de otros documentos (por ejemplo, el picking);  
+> **sposta in altro piano di carico**: este botón mueve la línea a un plan de carga ya existente, elegido desde la máscara de búsqueda;  
+> **creazione picking**: este botón permite crear el *Picking* desde el plan de carga; en la máscara es necesario ingresar el **tipo picking**, el **operatore** y es posible elegir si crear un picking diferente para cada pedido o no. El picking creado estará disponible en la Búsqueda de picking.  
 
-## Legenda
+## Leyenda (Legenda)
 
-In questo tab vengono visualizzate le posizioni ed i vani per righe del piano di carico; queste vengono configurate nell'anagrafica dell'*Automezzo*.     
+En esta pestaña se visualizan las posiciones y los compartimentos para las líneas del plan de carga; estas se configuran en el registro del *automezzo*.  
 
-## Riepilogo piani di carico
+## Resumen de planes de carga (Riepilogo piani di carico)
 
-In questo tab viene visualizzato il riepilogo dei dati relativi al *Piano di carico*.
+En esta pestaña se visualiza el resumen de los datos relacionados con el *Plan de carga (Piano di carico)*.

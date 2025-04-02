@@ -1,23 +1,23 @@
 ---
-title: Ricerca Azioni correttive
+title: Búsqueda de Acciones Correctivas (Ricerca Azioni correttive)
 sidebar_position: 2
 ---
 
-Il filtro si trova sul percorso **Qualità > Azioni correttive > Azioni correttive**.   
+El filtro se encuentra en la ruta **Calidad > Acciones correctivas > Acciones correctivas**.
 
-Il filtro dati consente di inserire nuove *Azioni correttive* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
-I diversi colori delle righe si possono impostare nei **Parametri azioni correttive**.   
+El filtro de datos permite ingresar nuevas *Acciones correctivas* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.  
+Los diferentes colores de las filas se pueden configurar en los **Parámetros de acciones correctivas**.
 
-### ![](/img/neutral/common/search.png) Ricerca Azioni correttive
+### ![](/img/neutral/common/search.png) Búsqueda de Acciones Correctivas
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/new.png) Inserimento Azioni correttive
+### ![](/img/neutral/common/new.png) Ingreso de Acciones Correctivas
 
-Per poter inserire nuovi *Azioni correttive* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevas *Acciones correctivas*, es necesario presionar el botón **nuovo**.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Azioni correttive
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Acciones Correctivas
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

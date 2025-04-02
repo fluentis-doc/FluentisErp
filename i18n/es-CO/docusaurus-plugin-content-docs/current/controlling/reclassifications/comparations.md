@@ -1,85 +1,82 @@
 ---
-title: Comparazione riclassificazioni
+title: comparazione riclassificazioni
 sidebar_position: 5
 ---
 
-Le comparazioni delle riclassificazioni consentono, a partire da un determinato [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model), di elaborare dei confronti tra le varie riclassificazioni memorizzate in ***FluentisERP***.
+Las comparaciones de las reclasificaciones permiten, a partir de un determinado [*Modelo de reclasificación*](/docs/controlling/reclassifications/create-reclassification-model), elaborar comparaciones entre las diversas reclasificaciones almacenadas en ***FluentisERP***.
 
+## COMPARACIONES SOBRE DATOS DE RECLASIFICADOS DE CIERRES INTERMEDIOS
+Configuraremos el modelo, introduciremos una Descripción identificativa de la comparación, y a la derecha no configuraremos el indicador **Datos del controlling** para que ***FluentisERP*** lea los datos de las reclasificaciones elaborados a partir de los datos del *Cierre intermedio* o del *Consolidado*.
 
-## COMPARAZIONI SU DATI DEI RICLASSIFICATI DI CHIUSURE INFRANNUALI
-Imposteremo il modello, inseriremo una Descrizione identificativa della comparazione, sulla destra non andremo ad impostare il flag **Dati del controlling** in modo che ***FluentisERP*** vada a leggere i dati dei riclassificati elaborati dai dati della *Chiusura infrannuale* o dal *Consolidamento*.
+En la cuadrícula de ***Detalles*** tendremos los siguientes campos:  
+- *Progresivo* de línea, será el elemento identificativo del dato en la ficha siguiente de los **scostamenti***.  
+- *Código/Cierre* (con la correspondiente Descripción y Fecha).  
 
-Nella griglia sottostanti dei ***Dettagli*** avremo i seguenti campi:
-- *Progressivo* di riga, sarà l'elemento identificativo del dato nella scheda successiva degli ***Scostamenti***
-- *Codice/Chiusura* (con la relativa Descrizione e Data)
+Una vez guardadas estas configuraciones, en la Ficha de las ***Desviaciones*** veremos el resultado de la comparación. En particular, tendremos las siguientes opciones:
 
-Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
+- *Visualización de las desviaciones*: permite ver la desviación porcentual entre las reclasificaciones ingresadas. En el lado derecho, activará la posibilidad de configurar sobre qué columna (la próxima o una fija) calcular la desviación.
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+- *Visualiza datos de detalle*: mostrará el detalle de los subcuentas, o centros, que valorizan el nodo individual del modelo.
 
-- *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
+- *Visualiza centros*: no activo en comparaciones no del controlling.
 
-- *Visualizza centri*: non attivo su comparati non del controlling
+- *Cifras decimales*: decimales a utilizar para la columna de desviaciones.
 
-- *Cifre decimali*: decimali da utilizzare per la colonna sostamenti
+## COMPARACIONES SOBRE DATOS DE CONTABILIDAD DE GESTIÓN DEL CONTROLLING
+Configuraremos el modelo, introduciremos una Descripción identificativa de la comparación, y a la derecha configuraremos el indicador **Datos del controlling** para que ***FluentisERP*** lea los datos de la *Contabilidad de gestión* del controlling.
 
+En la cuadrícula de ***Detalles*** tendremos los siguientes campos:  
+- *Progresivo* de línea, será el elemento identificativo del dato en la ficha siguiente de los ***Desviaciones***.  
+- *Área*, obligatorio, será el área de donde leer los datos.  
+- [*Dimensión*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), obligatorio, es decir, de qué dimensión leer los datos.  
+- [*Centro empresarial*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opcional, es decir, de qué centro se desean visualizar los datos.  
+- *Proyecto*, no en uso.  
+- *Periodo inicio* y *Periodo fin*, obligatorios, es el rango de períodos a considerar.  
+- *Año inicio* y *Año fin*, obligatorios, es el rango de años a considerar.  
+- *Visualiza detalles del periodo*: significa que para la línea se solicita la expansión de N columnas, una por cada período del rango definido.  
+- *Centro/Comisión en columna*: significa que el código del *Centro* configurado en la línea será reflejado en el nombre de la columna.  
+- *Calcula índices*: esta opción forzará un cálculo 'al vuelo' de los índices de costo de los centros. Esta opción es válida al realizar una comparación sobre el código del modelo utilizado para medir los centros, en la tabla de *Centros de costo*.  
 
-## COMPARAZIONI SU DATI DELLA CONTABILITA' GESTIONE DEL CONTROLLING
-Imposteremo il modello, inseriremo una Descrizione identificativa della comparazione, sulla destra andremo ad impostare il flag **Dati del controlling** in modo che ***FluentisERP*** vada a leggere i dati della *Contabilità gestionale* del controlling.
+Una vez guardadas estas configuraciones, en la Ficha de las ***Desviaciones*** veremos el resultado de la comparación. En particular, tendremos las siguientes opciones:
 
-Nella griglia sottostanti dei ***Dettagli*** avremo i seguenti campi:
-- *Progressivo* di riga, sarà l'elemento identificativo del dato nella scheda successiva degli ***Scostamenti***
-- *Area*, obbligatorio, sarà l'area dalla quale leggere i dati
-- [*Dimensione*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), obbligatorio, cioè da quale dimensione leggere i dati
-- [*Centro aziendale*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, cioè di quale centro si vuole visualizzare i dati
-- *Progetto*, non in uso
-- *Periodo inizio* e *Periodo fine*, obbligatori, è il range di periodi da considerare
-- *Anno inizio* e *Anno fine*, obbligatori, è il range di anni da considerare
-- *Visualizza dettagli periodo*: significa che per la riga, si richiede l'esplosione di N colonne una per ogni periodo del range definito
-- *Centro/Commessa su colonna*: significa che il codice del *Centro* impostato sulla riga sarà riportato nel nome della colonna
-- *Calcola indici*: questa opzione forzerà un calcolo 'al volo' degli indici di costo dei centri. Questa opzione è valida quando si sta eseguendo un comparato sul codice modello utilizzato per la misurazione dei centri, in tabella dei *Centri di costo*
+- *Visualización de las desviaciones*: permite ver la desviación porcentual entre las reclasificaciones ingresadas. En el lado derecho, activará la posibilidad de configurar sobre qué columna (la próxima o una fija) calcular la desviación.
 
+- *Visualiza datos de detalle*: mostrará el detalle de los subcuentas, o centros, que valorizan el nodo individual del modelo.
 
-Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
+- *Visualiza centros*: también mostrará el detalle de los centros asociados a las subcuentas del nodo.
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+- *Visualiza totales*: añadirá una columna final de totalización de todas las columnas visualizadas en la cuadrícula debajo.
 
-- *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
+- *Cifras decimales*: decimales a utilizar para la columna de desviaciones.
 
-- *Visualizza centri*: mostrerà anche il dettaglio dei centri associati ai sottoconti del nodo
+En caso de visualización de las desviaciones, tendremos las siguientes columnas de desviación:  
+- *%*: se trata del *porcentaje vertical* entre el nodo que tiene el indicador 'Referencia porcentual' (que tendrá 100%) y todos los demás.  
+- *Desviación*: se trata de la desviación en valor absoluto.  
+- *Desv.%*: se trata de la desviación en porcentaje.  
+- *Desv.% sobre %*: compara las *porcentajes verticales* de las dos columnas.  
 
-- *Visualizza totali*: aggiungerà una colonna finale di totalizzazione di tutte le colonne visualizzate nella griglia sottostante
+En el caso de que estemos en la comparación del modelo de atribución de costos a los centros para el cálculo de índices, si en el detalle de configuración hemos filtrado los diversos centros productivos medidos, tendremos la posibilidad de ver, dentro del expander debajo, los totales de procesamiento del índice de costo para cada uno de estos. Los campos visualizados son:
 
-- *Cifre decimali*: decimali da utilizzare per la colonna sostamenti
+- *UM1-F NUMERADOR*: numerador para el cálculo del índice fijo sobre la UM1 del centro.  
+- *UM1-F DENOMINADOR*: denominador para el cálculo del índice fijo sobre la UM1 del centro.  
+- *UM1-F VALOR ÍNDICE*: valor del índice fijo sobre la UM1 del centro.  
+- *UM1-V NUMERADOR*: numerador para el cálculo del índice variable sobre la UM1 del centro.  
+- *UM1-V DENOMINADOR*: denominador para el cálculo del índice variable sobre la UM1 del centro.  
+- *UM1-V VALOR ÍNDICE*: valor del índice variable sobre la UM1 del centro.  
+- *UM1 TOTAL*: índice total de la UM1 del centro.  
 
-In caso di visualizzazione degli scostamenti, avremo le seguenti colonne di scostamento:
-- *%*: si tratta della *percentuale verticale* tra il nodo che ha il flag 'Riferimento percentuale' (che quindi avrà 100%) e tutti gli altri
-- *Scostamento*: si tratta dello scostamento in valore assoluto
-- *Scost.%': si tratta dello scostamento in percentuale
-- *Scost.% su %': mette a confronto le *percentuali verticali* delle due colonne
+- *UM2-F NUMERADOR*: numerador para el cálculo del índice fijo sobre la UM2 del centro.  
+- *UM2-F DENOMINADOR*: denominador para el cálculo del índice fijo sobre la UM2 del centro.  
+- *UM2-F VALOR ÍNDICE*: valor del índice fijo sobre la UM2 del centro.  
+- *UM2-V NUMERADOR*: numerador para el cálculo del índice variable sobre la UM2 del centro.  
+- *UM2-V DENOMINADOR*: denominador para el cálculo del índice variable sobre la UM2 del centro.  
+- *UM2-V VALOR ÍNDICE*: valor del índice variable sobre la UM2 del centro.  
+- *UM2 TOTAL*: índice total de la UM2 del centro.  
 
-Nel caso in cui si fosse nel comparato del modello di attribuzione costi ai centri per il calcolo degli indici, se nel dettaglio di impostazione abbiamo filtrato per i vari centri produttivi misurati avremo la possibilità di vedere, all'interno del sottostante expander, i totali di elaborazione dell'indice di costo per ognuno di questi. I campi visualizzati sono:
-
-- *UM1-F NUMERATORE*: numeratore per il calcolo indice fisso sulla UM1 del centro
-- *UM1-F DENOMINATORE*: denominatore per il calcolo indice fisso sulla UM1 del centro
-- *UM1-F VALORE INDICE*: valore dell'indice fisso sulla UM1 del centro
-- *UM1-V NUMERATORE*: numeratore per il calcolo indice variabile sulla UM1 del centro
-- *UM1-V DENOMINATORE*: denominatore per il calcolo indice variabile sulla UM1 del centro
-- *UM1-V VALORE INDICE*: valore dell'indice variabile sulla UM1 del centro
-- *UM1 TOTALE*: indice totale della UM1 del centro
-
-- *UM2-F NUMERATORE*: numeratore per il calcolo indice fisso sulla UM2 del centro
-- *UM2-F DENOMINATORE*: denominatore per il calcolo indice fisso sulla UM2 del centro
-- *UM2-F VALORE INDICE*: valore dell'indice fisso sulla UM2 del centro
-- *UM2-V NUMERATORE*: numeratore per il calcolo indice variabile sulla UM2 del centro
-- *UM2-V DENOMINATORE*: denominatore per il calcolo indice variabile sulla UM2 del centro
-- *UM2-V VALORE INDICE*: valore dell'indice variabile sulla UM2 del centro
-- *UM2 TOTALE*: indice totale della UM2 del centro
-
-- *% NUMERATORE* numeratore per il calcolo indice percentuale
-- *% DEMONIMATORE* denominatore per il calcolo indice percentuale
-- *% PERCENTUALE* valore dell'indice percentuale
+- *% NUMERADOR*: numerador para el cálculo del índice porcentual.  
+- *% DENOMINADOR*: denominador para el cálculo del índice porcentual.  
+- *% PORCENTUAL*: valor del índice porcentual.  
 
 :::tip NOTA
-Quando si elaborano le comparazioni del controlling, ***FluentisERP*** creerà automaticamente tante riclassificazioni sul modello quante sono le combinazioni di centro, anno,mese e dettagli richiesti, prima di rendere disponibile il risultato dell'elaborazione. Più è complessa la lista, più sarà lunga l'elaborazione.
+Al elaborar las comparaciones del controlling, ***FluentisERP*** creará automáticamente tantas reclasificaciones como combinaciones de centro, año, mes y detalles se requieran, antes de hacer disponible el resultado del procesamiento. Cuanto más compleja sea la lista, más largo será el procesamiento.
 :::

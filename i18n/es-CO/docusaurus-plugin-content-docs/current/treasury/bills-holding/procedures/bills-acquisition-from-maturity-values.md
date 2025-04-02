@@ -1,67 +1,67 @@
 ---
-title: Acquisizione effetti dalle partite
+title: acquisizione effetti dalle partite
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Procedure > Acquisizione effetti dalle partite
+El formulario se encuentra en Tesorería > Cartera de Efectos > Procedimientos > Adquisición de efectos desde las partidas.
 
-Da questa form è possibile eseguire un *wizard* che esegue contemporaneamente:
+Desde este formulario es posible ejecutar un *asistente* que lleva a cabo simultáneamente:
 
-- La ricerca delle partite aperte dei clienti idonee alla creazione degli effetti (ad esempio una ricevuta bancaria)
-- La creazione dell'effetto (esempio una ricevuta bancaria) leggendo i dati della partita
-- La contabilizzazione dell'effetto che,  sua volta, chiude la partita parta e crea la scrittura contabile di storno credito cliente e accredito conto associato alla tipologia di effetto utilizzato.
+- La búsqueda de partidas abiertas de clientes elegibles para la creación de efectos (por ejemplo, un recibo bancario).
+- La creación del efecto (por ejemplo, un recibo bancario) leyendo los datos de la partida.
+- La contabilización del efecto que, a su vez, cierra la partida y crea la escritura contable de anulación de crédito al cliente y abono a la cuenta asociada con el tipo de efecto utilizado.
 
-## Come creare un nuovo effetto automaticamente dalle partite aperte
+## Cómo crear un nuevo efecto automáticamente desde las partidas abiertas
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle partite aperte da trasformare in effetti (ad esempio Ricevute bancarie o cambiali). 
+1. Utiliza la parte superior de la máscara para filtrar la búsqueda de las partidas abiertas que se transformarán en efectos (por ejemplo, Recibos bancarios o letras).
 
 :::note[Nota]
-Sono presenti, nella parte bassa della zona di filtro, alcuni flag di ricerca: 
+En la parte inferior de la zona de filtro, hay algunos indicadores de búsqueda:
 
-- secondo l'impostazione del [**raggruppamento scadenze**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) delle anagrafiche clienti; di default sono attivi e quindi visibili entrambi i gruppi, con e senza raggruppamento scadenze negli effetti
--  Per visualizzare anche le partite attive dei fornitori (disattivata di default) oltre che quelle clienti (attiva di default)
+- según la configuración del [**agrupamiento de vencimientos**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) de los registros de clientes; por defecto, están activos y, por lo tanto, visibles ambos grupos, con y sin agrupamiento de vencimientos en los efectos.
+- Para visualizar también las partidas activas de los proveedores (desactivada por defecto) además de las de clientes (activa por defecto).
 :::
 
-:::tip[Attenzione]
-Sono visibili in questa sezione **SOLO** le partite contabili collegate a tipi pagamento di natura ricevuta bancaria o cambiale.
+:::tip[Atención]
+En esta sección son visibles **SOLO** las partidas contables vinculadas a tipos de pago de naturaleza recibo bancario o letra.
 
-Questo è un filtro a monte, attivo per sicurezza, che è possibile gestire dalla tabella [**Tipi pagamento**](/docs/configurations/tables/general-settings/payment-types) abbinando ad ogni tipo di pagamento il corrispondente tipo effetto.
+Este es un filtro inicial, activo por seguridad, que se puede gestionar desde la tabla [**Tipos de pago**](/docs/configurations/tables/general-settings/payment-types) asociando a cada tipo de pago el correspondiente tipo de efecto.
 :::
 
-2. Seleziona con il mouse dalla griglia centrale le partite che desideri acquisire negli effetti. In base all'impostazione del flag *Raggruppa scadenze / Raggruppa note di accredito in effetti*, presente nelle [**anagrafiche clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), ed al flag *Raggruppa note di accredito per data scadenza*, presente nei [**parametri portafoglio effetti**](/docs/configurations/parameters/treasury/bills-portfolio-parameters), le partite saranno accorpate (**a parità di banca d'appoggio e data scadenza**) oppure creeranno in ogni caso effetti distinti.
+2. Selecciona con el ratón desde la cuadrícula central las partidas que deseas adquirir en los efectos. Según la configuración del indicador *Agrupar vencimientos / Agrupar notas de abono en efectos*, presente en los [**registros de clientes**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), y el indicador *Agrupar notas de abono por fecha de vencimiento*, presente en los [**parámetros de la cartera de efectos**](/docs/configurations/parameters/treasury/bills-portfolio-parameters), las partidas se agruparán (**si tienen la misma entidad bancaria y fecha de vencimiento**) o crearán, en cualquier caso, efectos distintos.
 
-3. Nella parte bassa della maschera imposta la **data di emissione** degli effetti ed il **tipo effetto**.
+3. En la parte inferior de la máscara establece la **fecha de emisión** de los efectos y el **tipo de efecto**.
 
-La sezione di **contabilizzazione** può essere impostata di default all'interno dei parametri del modulo Portafoglio effetti. Può comunque essere attivata e disattivata da qui, prima di procedere a lanciare l'acquisizione.
+La sección de **contabilización** se puede establecer por defecto dentro de los parámetros del módulo Cartera de efectos. Sin embargo, puede ser activada y desactivada desde aquí, antes de proceder a iniciar la adquisición.
 
-La procedura di contabilizzazione, se non attivata contestualmente alla creazione in questa form, può essere lanciata successivamente [**dall'apposita form**](/docs/treasury/bills-holding/accounting/bills-accounting). La scrittura contabile generata provvederà a stornare il credito verso il cliente, chiudendo la relativa partita aperta e accreditando il conto relativo alla [**tipologia di effetto**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) selezionato.
+El procedimiento de contabilización, si no se activa simultáneamente con la creación en este formulario, puede ser lanzado posteriormente [**desde el formulario correspondiente**](/docs/treasury/bills-holding/accounting/bills-accounting). La escritura contable generada se encargará de anular el crédito hacia el cliente, cerrando la partida abierta correspondiente y abonando la cuenta relacionada con la [**tipología de efecto**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) seleccionada.
 
-Il flag  **raggruppa per conto effetto**  esegue una registrazione unica, dove in questo saranno presenti tante righe quante sono gli effetti da contabilizzare.
+El indicador **agrupar por cuenta de efecto** realiza un registro único, donde en este estarán presentes tantas líneas cuántos son los efectos a contabilizar.
 
-Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di tipo provvisorio.
+El indicador de **gestión provisional** generará registros contables de tipo provisional.
 
-:::danger[Attenzione]
-La **gestione dell'acquisizione effetti dalle partite** è alternativa all'acquisizione dalle fatture.
+:::danger[Atención]
+La **gestión de la adquisición de efectos desde las partidas** es alternativa a la adquisición desde las facturas.
 :::
 
-4. Premi il bottone nella ribbon bar **Acquisizione** per avviare la procedura.
+4. Presiona el botón en la barra de herramientas **Adquisición** para iniciar el procedimiento.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Ricerca**: Ricerca la lista delle partite per le quali creare gli effetti.
+> **ricerca**: Busca la lista de partidas para las cuales crear los efectos.
 
-> **Acquisizione** Esegue la creazione degli effetti per le partite selezionate.
+> **acquisizione**: Ejecuta la creación de los efectos para las partidas seleccionadas.
 
-### Precedenti
+### Anteriores (Precedenti)
 
-Eseguita la creazione, le righe spariranno dalla griglia del *filtro* e il risultato sarà visibile nella scheda **Precedenti** all'interno della quale è possibile annullare l'operazione. 
+Una vez realizada la creación, las líneas desaparecerán de la cuadrícula del *filtro* y el resultado será visible en la pestaña **Anteriores**, dentro de la cual es posible anular la operación.
 
-Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+No es posible anular la creación de efectos si estos están contabilizados o presentados en lista.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Ricerca**: Ricerca la lista delle creazioni eseguite.
+> **ricerca**: Busca la lista de las creaciones realizadas.
 
-> **Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
+> **rollback acquisizione**: Con este botón se eliminará toda la adquisición realizada, con todos los efectos asociados.
 
-> **Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.
+> **rollback effetto**: Con este botón se eliminará la creación del efecto individual seleccionado.

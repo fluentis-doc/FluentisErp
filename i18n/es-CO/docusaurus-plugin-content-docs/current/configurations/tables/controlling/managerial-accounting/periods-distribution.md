@@ -1,39 +1,38 @@
 ---
-title: Distribuzione periodi
+title: distribuzione periodi
 sidebar_position: 1
 ---
 
-La form si trovo sul percorso: **Tabelle > Controlling > Contabilità gestionale > Distribuzione periodi**
+El formulario se encuentra en la ruta: **Tablas > Controlling > Contabilidad de gestión > distribuzione periodi** (Tabelle > Controlling > Contabilità gestionale > Distribuzione periodi)
 
 :::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+Esta tabla es de uso exclusivo de las empresas que han configurado el *Controlling*.
 :::
 
-Nella distribuzione periodi possiamo indicare, area per area e di anno in anno, come suddividere i nostri mesi. I campi disponibili sono i seguenti:
+En la distribución de períodos podemos indicar, área por área y de año en año, cómo dividir nuestros meses. Los campos disponibles son los siguientes:
 
-- il **CODICE**
-- la **DESCRIZIONE**
-- il flag **PREDEFINITO**
+- el **codice**
+- la **descrizione**
+- el indicador **predefinito**
 
-:::danger ATTENZIONE
-è obbligatorio aver inserito in questa tabella un record con questo flag, altrimenti l'elaborazione periodi del controlling lo richiederà
+:::danger ATENCIÓN
+Es obligatorio haber ingresado en esta tabla un registro con este indicador; de lo contrario, el procesamiento de períodos del controlling lo requerirá.
 :::
 
-Al di sotto avremo la lista dei record di ogni codice inserito, dove avremo
-- l'[**AREA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
-- l'**ANNO** 
-- il **PERIODO**
-- Il **VALORE**, cioè il peso del singolo periodo all'interno dell'anno
+Debajo tendremos la lista de los registros de cada código ingresado, donde tendremos:
+- el [**area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
+- el **anno** 
+- el **periodo**
+- el **valore**, es decir, el peso del período individual dentro del año
 
-:::tip Esempi  
-Potremmo dividere l’anno in dodicesimi, oppure in undicesimi pesando opportunamente agosto/dicembre e gennaio, piuttosto che assegnare di anno in anno i giorni effettivi di produzione previsti nel singolo nel mese
+:::tip Ejemplos  
+Podríamos dividir el año en doceavo, o en onceavo, pesando apropiadamente agosto/diciembre y enero, en lugar de asignar de año en año los días efectivos de producción previstos en el mes individual.
 :::
 
-La *Distribuzione periodi* viene associata in due punti:  
-- Nel [*Piano dei conti*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts): posso dire che il sottoconto X, per il quale si valorizza un range di date competenza, venga ripartito tramite una determinata distribuzione periodi invece che sui giorni esatti del range di date impostato, che è la logica di default quando la distribuzione periodi non è impostata.
-- Nella *Prima nota movimenti fisici*, obbligatoriamente per le *Unità di misura* che sono definite di *Flusso* e non di *Stato*
-
+La *distribuzione periodi* se asocia en dos puntos:  
+- En el [*Plan de cuentas* (Piano dei conti)](/docs/erp-home/registers/accounting/analytic-chart-of-accounts): puedo especificar que el subcuenta X, para la cual se valora un rango de fechas de competencia, se reparta mediante una determinada distribución de períodos en lugar de en los días exactos del rango de fechas configurado, que es la lógica predeterminada cuando la distribución de períodos no está configurada.
+- En la *Asiento de movimientos físicos (Prima nota movimenti fisici)*, obligatoriamente para las *unità di misura* que están definidas como *Flujo* y no de *Estado*.
 
 :::tip Nota
-Nella maschera è presente un pulsante di duplicazione della distribuzione selezionata, opzione comoda ad inizio anno per preparare la nuova lista valida per ogni nuovo esercizio
+En el formulario hay un botón para duplicar la distribución seleccionada, opción conveniente al inicio del año para preparar la nueva lista válida para cada nuevo ejercicio.
 :::

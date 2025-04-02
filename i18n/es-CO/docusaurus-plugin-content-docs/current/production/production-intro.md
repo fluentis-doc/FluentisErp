@@ -1,50 +1,49 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-**Fluentis ERP** consente di gestire la Produzione e tutti i suoi aspetti operativi nelle aziende del settore Manifatturiero e Industriale che devono gestire situazioni, anche complesse, di preventivazione, consuntivazione costi, materiali ed attività.
-Gli algoritmi di **Fluentis** permettono di gestire tutti i processi aziendali interni ed esterni dell'intero ciclo di vita del prodotto, dalla preventivazione alla progettazione, all'approvvigionamento dei materiali e delle risorse produttive, alla Pianificazione della Produzione interna e/o in Conto Lavoro, alla Raccolta Dati di Produzione e Controllo costi, senza dimenticare il collegamento in ottica Industry 4.0 degli impianti di Produzione e Magazzini Automatici.
+**Fluentis ERP** permite gestionar la Producción y todos sus aspectos operativos en empresas del sector Manufacturero e Industrial que deben manejar situaciones, incluso complejas, de estimaciones, contabilización de costos, materiales y actividades.  
+Los algoritmos de **Fluentis** permiten gestionar todos los procesos empresariales internos y externos del ciclo de vida del producto, desde la estimación hasta el diseño, la adquisición de materiales y recursos productivos, la Planificación de la Producción interna y/o en Conto Lavoro, la Recolección de Datos de Producción y Control de costos, sin olvidar la conexión desde la perspectiva de la Industria 4.0 de las instalaciones de Producción y Almacenes Automáticos.
 
-In Fluentis ERP l'applicazione del modello MES è stata progettata implementando una numerosa serie di parametri, per la gestione integrata dei dati provenienti dai processi produttivi che influenzano in modo considerevole la redditività dell'azienda. Nel software MES di Fluentis possiamo notare come i documenti relativi agli ordini di produzione, effettivamente lanciati, ma non necessariamente esecutivi, definiscano la sequenza tramite la quale, in ciascun reparto, e ancora più in dettaglio in ogni centro di lavoro, si trovi la definizione di tutte le informazioni necessarie all'esecuzione dell'attività produttiva.
-I materiali, le fasi e sottofasi, gli attrezzaggi ed in genere tutta la documentazione a supporto è finalizzata a rendere l'esecuzione dell'attività il più automatizzata, organizzata e fluida possibile.
-L'algoritmo principale di un ERP specializzato in ambito Produzione è definito dal MRP, il sistema di pianificazione che si occupa di verificare la corretta allocazione dei materiali e delle risorse necessarie alla realizzazione dell'attività produttiva. L'algoritmo del MRP viene configurato in funzione di una serie corposa di parametri, al fine di adattarsi al meglio in funzione del tipo di realtà produttiva rappresentata dall'azienda.
+En Fluentis ERP, la aplicación del modelo MES ha sido diseñada implementando una serie considerable de parámetros para la gestión integrada de los datos provenientes de los procesos productivos, lo que influye de manera significativa en la rentabilidad de la empresa. En el software MES de Fluentis, se puede observar cómo los documentos relacionados con los pedidos de producción, efectivamente lanzados, pero no necesariamente ejecutivos, definen la secuencia a través de la cual, en cada departamento y, aún más en detalle, en cada centro de trabajo, se encuentra la definición de toda la información necesaria para la ejecución de la actividad productiva.  
+Los materiales, las fases y subfases, los equipamientos y, en general, toda la documentación de apoyo están destinadas a hacer que la ejecución de la actividad sea lo más automatizada, organizada y fluida posible.  
+El algoritmo principal de un ERP especializado en el ámbito de la Producción está definido por el MRP, el sistema de planificación que se ocupa de verificar la correcta asignación de los materiales y recursos necesarios para realizar la actividad productiva. El algoritmo del MRP se configura en función de una serie sólida de parámetros, con el fin de adaptarse de la mejor manera según el tipo de realidad productiva representada por la empresa.
 
-## Moduli dell'area 
+## Módulos del área (Moduli dell'area)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/planning/ms-master-scheduling/mrp">MRP - Material Requirement Planning</Link>
+###     <Link to="/docs/planning/ms-master-scheduling/mrp">MRP - Planificación de Requerimientos de Materiales (MRP - Material Requirement Planning)</Link>
         <p><Link to="/docs/planning/ms-master-scheduling/mrp" className="bold-link">M.R.P.</Link></p>
-        <p>La procedura MRP (Material Requirements Planning) è un sistema integrato di pianificazione delle risorse che aiuta le aziende a ottimizzare la gestione dell'inventario e della produzione, sincronizzando la disponibilità dei materiali con le esigenze di produzione per migliorare l'efficienza operativa e ridurre i costi.</p>
+        <p>La procedimiento MRP (Material Requirements Planning) es un sistema integrado de planificación de recursos que ayuda a las empresas a optimizar la gestión del inventario y la producción, sincronizando la disponibilidad de materiales con las necesidades de producción para mejorar la eficiencia operativa y reducir costos.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/production/production-intro">MES - Manufacturing Execution System</Link>
-        <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Ordini di produzione</Link></p>
-        <p>Il modulo è progettato per ottimizzare e semplificare la pianificazione dei processi produttivi. Consente di gestire ordini in stato "Lanciato" ed "Esecutivo", permettendo una chiara distinzione tra gli ordini pronti per l'avvio e quelli già in fase di esecuzione.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Lista prelievo materiali</Link></p>
-        <p>Permette di gestire e movimentare efficacemente i materiali destinati alla produzione.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Dichiarazioni di produzione</Link></p>
-        <p>Questo modulo consente agli utenti di generare dichiarazioni di produzione tracciando lo stato di avanzamento di ogni fase, garantendo così una completa visibilità e controllo del processo produttivo</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/signals-record" className="bold-link">Registrazione dichiarazioni</Link></p>
-        <p>Questa procedura consente di registrare più dichiarazioni di produzione contemporaneamente.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/production-orders-release" className="bold-link">Rilascio ordini di produzione</Link></p>
-        <p>La procedura di rilascio degli ordini di produzione in Fluentis consente di cambiare lo stato degli ordini da *Lanciato* a *Esecutivo*, generando contestualmente i movimenti di magazzino necessari.</p>
+###     <Link to="/docs/production/production-intro">MES - Sistema de Ejecución de Manufactura (MES - Manufacturing Execution System)</Link>
+        <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Órdenes de producción</Link></p>
+        <p>El módulo está diseñado para optimizar y simplificar la planificación de los procesos productivos. Permite gestionar pedidos en estado "Lanzado" y "Ejecutivo", permitiendo una clara distinción entre los pedidos listos para iniciar y los que ya están en ejecución.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Lista de preselección de materiales</Link></p>
+        <p>Permite gestionar y mover eficazmente los materiales destinados a la producción.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Declaraciones de producción</Link></p>
+        <p>Este módulo permite a los usuarios generar declaraciones de producción rastreando el estado de avance de cada fase, garantizando así una completa visibilidad y control del proceso productivo.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/procedures/signals-record" className="bold-link">Registro de declaraciones</Link></p>
+        <p>Este procedimiento permite registrar múltiples declaraciones de producción simultáneamente.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/procedures/production-orders-release" className="bold-link">Liberación de órdenes de producción</Link></p>
+        <p>El procedimiento para la liberación de órdenes de producción en Fluentis permite cambiar el estado de los pedidos de *lanciato* a *esecutivo*, generando a su vez los movimientos de almacén necesarios.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/production/mes/mes-intro">Fluentis MES</Link>
-        <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation</Link></p>
-        <p>Consentono una gestione efficiente delle operazioni produttive, permettendo di codificare, filtrare e associare risorse. Grazie alla loro interfaccia intuitiva, gli utenti possono ottimizzare il flusso di lavoro e migliorare l'efficienza operativa</p>
-        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Risorse di produzione</Link></p>
-        <p>Permette di personalizzare in maniera semplice e veloce il layout e il comportamento del singolo centro di lavoro, adattando il sistema alle specifiche esigenze aziendali.</p>
+        <p><Link to="/docs/production/mes/workstation" className="bold-link">Estaciones de trabajo (Workstation)</Link></p>
+        <p>Permiten una gestión eficiente de las operaciones productivas, permitiendo codificar, filtrar y asociar recursos. Gracias a su interfaz intuitiva, los usuarios pueden optimizar el flujo de trabajo y mejorar la eficiencia operativa.</p>
+        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Recursos de producción</Link></p>
+        <p>Permite personalizar de manera simple y rápida el diseño y el comportamiento del centro de trabajo individual, adaptando el sistema a las necesidades específicas de la empresa.</p>
         <p><Link to="/docs/production/mes/mes-main-form" className="bold-link">MES</Link></p>
-        <p>È progettata per ottimizzare e semplificare il processo di dichiarazione delle attività produttive. Questa interfaccia consente agli operatori di monitorare e gestire in tempo reale le risorse di produzione, facilitando l'inserimento dei dati relativi alle fasi di lavorazione e alle quantità prodotte.</p>
+        <p>Está diseñada para optimizar y simplificar el proceso de declaración de las actividades productivas. Esta interfaz permite a los operadores monitorear y gestionar en tiempo real los recursos de producción, facilitando la entrada de datos relacionados con las fases de trabajo y las cantidades producidas.</p>
     </div>
 </div>
-

@@ -1,55 +1,55 @@
 ---
-title: D.P.I.
+title: d.p.i.
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > D.P.I. > D.P.I.**.
+La tabla se encuentra en la ruta **Tablas > Empleados > d.p.i. > d.p.i.**.
 
-In questa tabella è possibile codificare i *D.P.I.* (Dispositivi di Protezione Individuale) che sono utilizzati per categorizzare i *D.P.I.*.   
-Alcuni esempi di utilizzo dei *D.P.I.* li troviamo nelle gestioni:
-> **Mansioni** - nel tabulatore *D.P.I. da consegnare*;   
-> **Consegne/Resi D.P.I.**;   
-> **Storico Consegne/Resi D.P.I.**.
+En esta tabla es posible codificar los *d.p.i.* (Dispositivos de Protección Individual) que se utilizan para categorizar los *d.p.i.*.   
+Algunos ejemplos de uso de los *d.p.i.* se encuentran en las gestiones:  
+> **mansioni** - en la pestaña *d.p.i. da consegnare*;   
+> **consegne/resi d.p.i.**;   
+> **storico consegne/resi d.p.i.**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-#### Ricerca D.P.I. 
+#### Búsqueda de d.p.i. (Ricerca d.p.i.)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-#### Inserimento D.P.I. 
+#### Inserción de d.p.i. (Inserimento d.p.i.)
 
-Per poter inserire nuovi *D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *d.p.i.*, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.   
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## D.P.I.
+## d.p.i.
 
-E' l'elenco dove vengono inserite le informazioni principali del *D.P.I.*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *D.P.I.*.   
-> **Descrizione**: è la descrizione del *D.P.I.*.   
-> **Codice categoria**: è il codice della *Categoria D.P.I.*.   
-> **Descrizione categoria**: è la descrizione della *Categoria D.P.I.*.   
-> **Codice categoria di rischio**: è il codice della *Categoria rischio D.P.I.*.   
-> **Descrizione categoria di rischio**: è la descrizione della *Categoria rischio D.P.I.*.   
-> **Mesi validità**: è il numero di mesi di validità del *D.P.I.* in condizioni normali di utilizzo.   
-> **CE**: indica se il *D.P.I.* è marchiato CE (marchio di Certificazione Europea).   
-> **Attivo**: indica se il *D.P.I.* è ancora valido e utilizzabile.   
-> **Uso**: annotazioni libere sull'argomento.   
-> **Prescrizioni o raccomandazioni per l'uso**: annotazioni libere sull'argomento.   
-> **Documentazione disponible**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan la información principal del *d.p.i.*.   
+La lista se compone de la siguiente información:   
+> **codice**: es el código del *d.p.i.*.   
+> **descrizione**: es la descripción del *d.p.i.*.   
+> **codice categoria**: es el código de la *Categoría d.p.i.*.   
+> **descrizione categoria**: es la descripción de la *Categoría d.p.i.*.   
+> **codice categoria di rischio**: es el código de la *Categoría riesgo d.p.i.*.   
+> **Descripción de categoría de riesgo (Descrizione categoria di rischio)**: es la descripción de la *Categoría riesgo d.p.i.*.   
+> **mesi validità**: es el número de meses de validez del *d.p.i.* en condiciones normales de uso.   
+> **CE**: indica si el *d.p.i.* está marcado CE (marca de Certificación Europea).   
+> **attivo**: indica si el *d.p.i.* sigue siendo válido y utilizable.   
+> **uso**: anotaciones libres sobre el tema.   
+> **prescrizioni o raccomandazioni per l'uso**: anotaciones libres sobre el tema.   
+> **documentazione disponibile**: anotaciones libres sobre el tema.   
+> **note**: anotaciones libres.
 
-### Dispositivo di Protezione Individuale utilizzato nelle Mansioni
+### Dispositivo de Protección Individual utilizado en las Funciones (Dispositivo di Protezione Individuale utilizzato nelle Mansioni)
 
-E' l'elenco, di sola lettura, dove vengono visualizzate tutte le *Mansioni* che utilizzano il *D.P.I.* selezionato.   
-Le informazioni visualizzate sono inserite e gestite nella gestione delle *Mansioni*.
-L'elenco si compone delle seguenti informazioni:   
-> **Codice della mansione**: è il codice della *Mansione*.   
-> **Descrizione della mansione**: è la descrizione della *Mansione*.   
-> **Uso**: annotazioni riportate per l'*Uso* specifico del *D.P.I.* se utilizzato per la specifica *Mansione*.   
-> **Prescrizioni o raccomandazioni per l'uso**: annotazioni riportate per le *Prescrizioni o raccamandazioni per l'uso* specifico del *D.P.I.* se utilizzato per la specifica *Mansione*.   
-> **Note**: annotazioni libere.
+Es la lista, de solo lectura, donde se visualizan todas las *mansioni* que utilizan el *d.p.i.* seleccionado.   
+La información mostrada es ingresada y gestionada en la administración de las *mansioni*.  
+La lista se compone de la siguiente información:   
+> **codice della mansione**: es el código de la *mansione*.   
+> **descrizione della mansione**: es la descripción de la *mansione*.   
+> **uso**: anotaciones registradas para el *Uso* específico del *d.p.i.* si es utilizado para la *mansione* específica.   
+> **prescrizioni o raccomandazioni per l'uso**: anotaciones registradas para las *Prescripciones o recomendaciones para el uso* específico del *d.p.i.* si es utilizado para la *mansione* específica.   
+> **note**: anotaciones libres.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

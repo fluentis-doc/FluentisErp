@@ -1,32 +1,32 @@
 ---
-title: Tipi documenti
+title: Tipos de documentos (Tipi documenti)
 sidebar_position: 13
 ---
 
-:::important A cosa serve
-La tabella Tipo Documenti, permette di creare e collegare tra loto tutti i documenti che vengono gestiti all’interno delle aree di [Pianificazione](/docs/planning/planning-intro/) e [Produzione](/docs/production/production-intro/).
+:::important ¿Para qué sirve? (A cosa serve)
+La tabla de Tipos de Documentos permite crear y conectar entre sí todos los documentos que se gestionan dentro de las áreas de [Planificación](/docs/planning/planning-intro/) y [Producción](/docs/production/production-intro/).
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi documento**
+**Búsqueda de Tipos de documento (Ricerca Tipi documento)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Tipi documento**
+**Inserción de Tipos de documento (Inserimento Tipi documento)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevos códigos, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico del tipo e la sua **Descrizione**, il **Codice standard** a cui corrisponde e il **Tipo numerazione**. Il codice standard definisce la tipologia del documento appena creato, che quindi può essere: una Commessa di produzione, un ordine cliente, ordine di conto lavoro o di produzione, oppure un ordine pianificato di acquisto, conto lavoro o produzione.
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** alfanumérico del tipo y su **descrizione**, el **Código estándar (Codice standard)** correspondiente y el **tipo numerazione**. El código estándar define el tipo de documento que se acaba de crear, que puede ser: una Orden de producción, un pedido de cliente, un pedido de trabajo o de producción, o un pedido planificado de compra, trabajo o producción.
 
-È possibile avere più documenti a parità di codice standard, quindi, tramite il flag default è possibile dire al sistema quale sia quello predefinito.     
+Es posible tener múltiples documentos con el mismo código estándar, por lo que, mediante el indicador predeterminado, se puede informar al sistema cuál es el que se considera predeterminado.  
 
-Una volta terminato l’inserimento, per ciascuno dei documenti creati, è necessario inserire i relativi Tipo di documento generati.         
-Ad esempio, nel caso di un documento di tipo commessa di produzione, l’utente dovrà inserire i documenti generati da essa, che saranno: *ordini pianificati di acquisto, ordini pianificati di produzione e ordini pianificati di conto lavoro*.  
-Al loro volta gli *ordini pianificati di acquisto* genereranno un determinato tipo di *richiesta di acquisto*, mentre gli *ordini pianificati di conto lavoro* creeranno un tipo di *ordine di conto lavoro*, ed infine gli *ordini pianificati di produzione* avranno un tipo di *ordine di produzione* e anche di *conto lavoro* legato alle fasi esterne contenute nel ciclo di lavoro.
+Una vez completada la inserción, para cada uno de los documentos creados, es necesario ingresar los respectivos Tipos de documento generados.        
+Por ejemplo, en el caso de un documento de tipo orden de producción, el usuario deberá ingresar los documentos generados por ella, que serán: *pedidos planificados de compra, pedidos planificados de producción y pedidos planificados de trabajo*.  
+A su vez, los *pedidos planificados de compra* generarán un tipo específico de *solicitud de compra*, mientras que los *pedidos planificados de trabajo* crearán un tipo de *pedido de trabajo*, y finalmente, los *pedidos planificados de producción* tendrán un tipo de *pedido de producción* y también de *trabajo* relacionado con las fases externas contenidas en el ciclo de trabajo.
 
-Tramite l’attivazione del flag **Manutenzione**, è possibile indicare che il documento verrà utilizzato per gli interventi di Manutenzione, mentre se disattivato verrà impiegato per la produzione.
+Mediante la activación del indicador **manutenzione**, es posible indicar que el documento se utilizará para intervenciones de Mantenimiento, mientras que si se desactiva, se empleará para la producción.
 
-Per i **Tipi documenti** con codice standard *CP* (Commesse di produzione) è possibile inserire il **Tipo costificazione commessa** che verrà poi proposta di default ad ogni elaborazione della costificazione della commessa. 
+Para los **Tipos de documentos** con código estándar *CP* (Órdenes de producción), es posible ingresar el **tipo costificazione commessa**, que luego se propondrá por defecto en cada procesamiento de costificación de la orden.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

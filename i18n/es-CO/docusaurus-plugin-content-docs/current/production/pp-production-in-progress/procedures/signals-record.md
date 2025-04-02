@@ -1,34 +1,34 @@
 ---
-title: Registrazione dichiarazioni
+title: registrazione dichiarazioni
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-La procedura di registrazione delle dichiarazioni di produzione in Fluentis consente di registrare più dichiarazioni contemporaneamente.
+:::important ¿Para qué sirve? (A cosa serve)
+El procedimiento de registro de declaraciones de producción en Fluentis permite registrar múltiples declaraciones simultáneamente.
 :::
 
 ## Filtro
 
-In questo tab è possibile visualizzare la lista delle segnalazioni di produzione non ancora registrate ed è possibile filtrarle attraverso una serie di criteri di selezione. 
+En esta pestaña es posible visualizar la lista de las declaraciones de producción que aún no han sido registradas y se pueden filtrar a través de una serie de criterios de selección.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** presente en la *barra de herramientas (ribbon bar)* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-*Pulsanti specifici*: 
+*Botones específicos*: 
 
-> **Registrazione dichiarazioni**: questo pulsante permette di registrare tutte le dichiarazioni selezionate dall'utente nella griglia sottostante.
+> **registrazione dichiarazioni**: este botón permite registrar todas las declaraciones seleccionadas por el usuario en la cuadrícula inferior.
 
 
-## Riepilogativa
+## Resumen (Riepilogativa)
 
-In questo tab è possibile ripristinare le registrazioni effettuate ed è possibile filtrarle attraverso una serie di criteri di selezione.
+En esta pestaña es posible restaurar las registraciones realizadas y se pueden filtrar a través de una serie de criterios de selección.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** presente en la *barra de herramientas (ribbon bar)* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Selezionando una registrazione, nel tab sottostante **dichiarazioni** è possibile visualizzare le relative dichiarazioni registrate e per ciascuna di esse, nel tab **Registrazione di magazzino**, i relativi movimenti di magazzino.
+Al seleccionar un registro, en la pestaña inferior **dichiarazioni** es posible visualizar las declaraciones registradas correspondientes y para cada una de ellas, en la pestaña **registrazione di magazzino**, los movimientos de almacén correspondientes.
 
-*Pulsanti specifici*: 
+*Botones específicos*: 
 
-> **Cancellazione registrazione dichiarazioni**: questo pulsante permette di ripristinare tutte le dichiarazioni registrate in quella registrazione;          
-> **Ripristino dichiarazione**: questo pulsante permette di ripristinare la singola registrazione selezionata dall'utente nella griglia sottostante, lasciando le altre registrate.
+> **cancellazione registrazione dichiarazioni**: este botón permite restaurar todas las declaraciones registradas en ese registro;  
+> **Restaurar declaración (Ripristino dichiarazione)**: este botón permite restaurar la única registración seleccionada por el usuario en la cuadrícula inferior, dejando las demás registradas.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

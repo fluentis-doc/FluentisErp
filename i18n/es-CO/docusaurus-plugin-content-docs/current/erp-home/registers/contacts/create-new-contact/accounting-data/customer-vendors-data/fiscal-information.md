@@ -1,167 +1,163 @@
 ---
-title: Informazioni Fiscali
+title: informazioni fiscali
 sidebar_position: 2
 ---
 
-In questa tab vendono inseriti dati e parametri di tipo prevalentemente fiscale.
+En esta pestaña se ingresan datos y parámetros de tipo principalmente fiscal.
 
-### Campi
+### Campos
 
-**Non in Spesometro**: campo obsoleto presente per retro-compatibilità (Riferito allo spesometro pre-2017 abrogato). Il flag è comunque funzionante in quanto ancora presente la funzionalità per lo spesometro annuale (art. 21 DL 78/2010).
+**non in spesometro**: campo obsoleto presente por retro-compatibilidad (referido al spesometro anterior a 2017 que fue derogado). El indicador sigue funcionando ya que aún está disponible la funcionalidad para el spesometro anual (art. 21 DL 78/2010).
 
-**Escludi da dich. black list**: campo obsoleto presente per retro-compatibilità. L'adempimento fiscale è attualmente abrogato.
+**Excluir de declaración lista negra (Escludi da dich. black list)**: campo obsoleto presente por retro-compatibilidad. El cumplimiento fiscal ha sido actualmente derogado.
 
-**CIG**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice identificativo di gara (esempio per gli appalti pubblici). Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/CIG-and-CUP) per poterlo richiamare.
+**CIG**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código identificativo de la licitación (por ejemplo, para los contratos públicos). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/CIG-and-CUP) para poder ser llamado.
 
-Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
 
-**CUP**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice unico progetto (per la fatturazione ad enti pubblici) Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/CIG-and-CUP) per poterlo richiamare.
+**CUP**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código único del proyecto (para la facturación a entidades públicas). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/CIG-and-CUP) para poder ser llamado.
 
-Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
 
-**Ritenuta d'acconto**: il flag, da associare al successivo campo Tipo ritenuta, attiva, per l'anagrafica di tipo fornitore in uso, la gestione della ritenuta d'acconto sul compenso percipiente. Con questo tipo di gestione attiva lato fornitore, l'inserimento dei documenti e la contabilizzazione della fattura ricevuta e del pagamento effettuato avverrà dal modulo  [**Percipienti**](/docs/finance-area/professional-men/general-overview)  al fine di poter gestire correttamente ed in modo automatico la ritenuta d'acconto e valorizzare le CU.
+**ritenuta d'acconto**: el indicador, que se debe asociar al campo siguiente **tipo ritenuta**, activa, para el registro de tipo proveedor en uso, la gestión de la retención de impuesto sobre la compensación del perceptor. Con este tipo de gestión activa del lado del proveedor, la inserción de los documentos y la contabilización de la factura recibida y del pago realizado se llevará a cabo desde el módulo [**percipienti**](/docs/finance-area/professional-men/general-overview) a fin de poder gestionar correctamente y de manera automática la retención de impuesto y valorar las CU.
 
-**Tipo ritenuta**: il campo (menu a discesa) è collegato alla tabella  [**Tipi ritenuta**](/docs/configurations/tables/finance/withholding-tax-types)  all'interno della quale vengono definite le tipologie di ritenuta a titolo d'acconto (o a titolo d'imposta) da utilizzare. Per ogni riga, corripondente ad un tipo ritenuta, devono essere compilati i campi che permettono la gestione automatica del calcolo e della contabilizzazione da parte del  [**modulo Percipienti.**](/docs/finance-area/professional-men/general-overview) 
+**tipo ritenuta**: el campo (menú desplegable) está conectado a la tabla [**Tipos de retención**](/docs/configurations/tables/finance/withholding-tax-types) dentro de la cual se definen los tipos de retención a título de retención (o a título de impuesto) a utilizar. Para cada fila, correspondiente a un tipo de retención, deben ser completados los campos que permiten la gestión automática del cálculo y la contabilización por parte del [**percipienti**](/docs/finance-area/professional-men/general-overview).
 
-***UTILIZZO DEI CAMPI Ritenuta e Tipo Ritenuta NELLE FATTURE ATTIVE***
-E' possibile attivare il flag per le ritenute d'acconto e la relativa tipologia anche ai fini dell'emissione di fattura attiva nel caso in cui sia l'azienda emittente ad essere sottoposta alla ritenuta d'acconto (ritenute d'acconto subite). **Vedere anche** [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)
+***USO DE LOS CAMPOS Retención y Tipo de Retención EN LAS FACTURAS ACTIVAS***  
+Es posible activar el indicador para las retenciones de impuesto y su respectivo tipo también a efectos de emitir una factura activa en el caso en que sea la empresa emisora la que esté sometida a la retención de impuestos (retenciones de impuestos sufridas). **Ver también** [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)
 
-
-:::tip Vedi anche...
-Per la gestione nella fattura elettronica della ritenuta d'acconto ed in particolare anche del contributo **ENASARCO** vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)
+:::tip Ver también...  
+Para la gestión en la factura electrónica de la retención de impuesto y en particular también de la contribución **ENASARCO**, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)  
 :::
 
-### Pubblica amministrazione / Fatturazione elettronica
+### Administración Pública / Facturación Electrónica
 
-Il Flag **Fatturazione elettronica** determina l'adattamento dei campi di dettaglio della griglia sottostante al fine di riferirsi alla casistica della fattura elettronica P.A. oppure di fatturazione elettronica con i privati.
+El indicador **fatturazione elettronica** determina la adaptación de los campos de detalle de la cuadrícula inferior a fin de referirse al caso de la factura electrónica P.A. o de facturación electrónica con los privados.
 
-**Codice Ufficio / Codice destinatario**: codice *IPA* dell'ufficio pubblico destinatario della fattura oppure (flag *Fatturazione elettronica* attivo) codice *SDI* del destinatario della fattura
+**Código Oficina / Código destinatario (Codice Ufficio / Codice destinatario)**: código *IPA* de la oficina pública destinataria de la factura o (indicador *Facturación electrónica* activo) código *SDI* del destinatario de la factura.
 
-**Nome ufficio / Descrizione destinatario**: descrizione del campo codice ufficio / codice destinatario da compilare con il nome dell'ufficio pubblico o del soggetto privato
+**Nombre de la oficina / Descripción del destinatario (Nome ufficio / Descrizione destinatario)**: descripción del campo código oficina / código destinatario que debe ser completado con el nombre de la oficina pública o del sujeto privado.
 
-**Ragione sociale**: in questo campo è possibile collegare un'anagrafica già codificata in Fluentis e riferita, ad esempio, all'uffico pubblico che dipende dall'anagrafica principale che stiamo utilizzando (esempio: ufficio lavori pubblici del comune di ..., oppure Azienda sanitaria ....... che dipende dall'anagrafica principale "Comune di ....") Tale anagrafica collegata **dovrà** essere impostata come **destinazione** per l'anagrafica principale nel tab  [**consegna**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), in questo modo la destinazione (esempio ufficio lavori pubblici ....) sarà riportata nel tracciato del file .xml completa di codice ufficio e degli altri dati quale indirizzo ecc...
+**ragione sociale**: en este campo se puede vincular un registro ya codificado en Fluentis y referirse, por ejemplo, a la oficina pública que depende del registro principal que estamos utilizando (ejemplo: oficina de obras públicas del municipio de ..., o Empresa de salud ....... que depende del registro principal "Municipio de ...."). Este registro vinculado **deberá** estar configurado como **destino** para el registro principal en la pestaña [**entrega**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), de este modo la dirección (ejemplo oficina de obras públicas ....) será reportada en el trazado del archivo .xml completa con el código oficina y otros datos como dirección, etc.
 
-:::danger[ATTENZIONE: campo Ragione sociale, anagrafica semplice con singolo codice]
-Per la corretta gestione di **più codici** ufficio / codici SDI (e quindi più soggetti) riferiti alla stessa anagrafica principale è quindi **necessario** compilare anche questo campo. 
+:::danger[ATENCIÓN: campo Razón social, registro simple con único código]  
+Para la correcta gestión de **múltiples códigos** oficina / códigos SDI (y por ende más sujetos) referidos al mismo registro principal es **necesario** completar también este campo.  
 
-**ATTENZIONE:**  nel caso di **singolo codice** ufficio / codice SDI direttamente legato all'anagrafica in questione (senza la presenza di destinazioni collegate e riferite a specifici codici ufficio / codici SDI) **il campo NON DEVE essere compilato**. 
-Diversamente verrà restituito un messaggio di errore in fase di generazione del file xml. (Messaggio: la fattura... non può essere generata perchè... il codice destinatario non è stato valorizzato, oppure la data inizio servizio....) da interpretare come "non è stato valorizzato *correttamente*".
+**ATENCIÓN:** en el caso de **único código** oficina / código SDI directamente vinculado al registro en cuestión (sin la presencia de destinos vinculados y referidos a códigos específicos de oficina / códigos SDI) **el campo NO DEBE ser completado**.  
+De lo contrario, se devolverá un mensaje de error en la fase de generación del archivo xml. (Mensaje: la factura... no puede ser generada porque... el código destinatario no ha sido valorado, o la fecha de inicio del servicio....) que debe interpretarse como "no ha sido valorado *correctamente*".  
 :::
 
-**Data inizio servizio**: definisce la data di inserimento della riga o comunque la data dalla quale è attivo il rapporto di fornitura con la pubblica amministrazione in questione.
-
+**data inizio servizio**: define la fecha de inserción de la línea o, de todos modos, la fecha a partir de la cual está activo el vínculo de suministro con la administración pública en cuestión.
 
 <a id="codice_articolo_fornitore_cliente" style={{ textDecoration: 'none' , color: 'inherit' }}></a>
 
+**data fine servizio**: define la fecha de finalización del vínculo de suministro con la administración pública y hace que esta posición no sea más utilizable para la generación del archivo telemático para la factura electrónica.
 
-**Data fine servizio**: definisce la data di fine del rapporto di fornitura con la pubblica amministrazione e rende non più utilizzabile questa posizione per la generazione del file telematico per la fattura elettronica.
+**Email:** espacio reservado para la dirección pPEC en caso de que esté activa la modalidad PEC destinatario en el campo *Tipo código*.
 
+**regime fiscale**: campo necesario para la gestión de las facturas electrónicas (en particular de las autofacturas a razón de compras de UE o inversión del cargo): el dato se inserta en los trazados telemáticos .xml generados por Fluentis. La caja combinada está conectada a una tabla fija que contiene los posibles regímenes fiscales a seleccionar.
 
-**Email:** spazio riservato all'indirizzo pPEC nel caso sia attiva la modalità PEC destinatario nel campo *Tipo codice*
+**Tipo código artículo proveedor/cliente (Tipo codice articolo fornitore /cliente):** en estos dos campos, respectivamente, es posible insertar un código acompañante al código artículo que se utilizará en la facturación pasiva o activa a efectos del trazado xml. La funcionalidad es útil en varios casos tales como la creación automática de la factura de compra a partir del archivo xml recibido, permitiendo el reconocimiento del código artículo utilizado por el proveedor en relación con las configuraciones del registro del artículo en la sección de proveedores preferenciales.  
 
-**Regime fiscale**: campo necessario per la gestione delle fatture elettroniche (in particolare delle autofatture a fronte di acquisti UE o reverse charge): il dato è inserito nei tracciati telematici .xml generati da Fluentis. La combo box è collegata ad una tabella fissa contenete i possibili regimi fiscali da selezionare.
+**prezzo netto senza sconti**: con esta configuración, la factura electrónica será creada por el valor neto de línea, sin resaltar el detalle del bruto - descuentos.
 
-**Tipo codice articolo fornitore /cliente:** nei presenti due campi, rispettivamente, è possibile inserire un codice accompagnatorio al codice articolo da utilizzare nella fatturazione passiva o attiva ai fini del tracciato xml. La funzionalità risulta utile in vari casi quali ad esempio la creazione automatica della fattura d'acquisto a partire dal file xml ricevuto permettendo il riconoscimento del codice articolo utilizzato dal fornitore in relazione alle impostazioni dell'anagrafica articolo nella sezione dei fornitori preferenziali.  
+**fatturazione elettronica firmata**: gestión de la firma digital para la creación de archivos Sdi hacia el sujeto. El indicador puede ser configurado, no configurado o 'no definitivo', en este último caso aplicará la lógica predeterminada definida en la *Configuración de documentos electrónicos*.
 
-**Prezzo netto senza sconti**: con questa impostazione, la fattura elettronica sarà creata per il valore netto di riga, senza evidenziare il dettaglio del lordo - sconti.
+**fatturazione elettronica con pdf allegato**: gestión del anexo de cortesía en el archivo Sdi. El indicador puede ser configurado, no configurado o 'no definitivo', en este último caso aplicará la lógica predeterminada definida en la *Configuración de documentos electrónicos*. En el campo de **Transformación Arm para creación de archivo Pdf factura** se indicará el proceso de creación del PDF a utilizar.
 
-**Fatturazione elettronica firmata**: gestione della firma digitale per la creazione di file Sdi verso il soggetto. Il flag può essere impostato, non impostato o 'non definitivo', in quest'ultimo caso varrà la logica di default definita nella *Configurazione documenti elettronici*
+**Grupo IVA / Registro:** campo necesario para la gestión del grupo IVA al que pertenece el cliente o proveedor que estamos codificando. En este campo se llamará el registro (que debe ser creado previamente) del sujeto grupo para insertar el número de IVA de este último en el trazado xml en lugar del del sujeto adherente al grupo, como lo prevé la normativa.
 
-**Fatturazione elettronica con pdf allegato**: gestione dell'allegato di cortesia nel file Sdi. Il flag può essere impostato, non impostato o 'non definitivo', in quest'ultimo caso varrà la logica di default definita nella *Configurazione documenti elettronici*. Nel campo della **Trasformazione Arm per creazione file Pdf fattura** si indicherà il processo di creazione del pdf da utilizzare.
-
-**Gruppo IVA / Anagrafica:** campo necessario per la gestione del gruppo iva al quale faccia parte il cliente o il fornitore che stiamo codificando. In questo campo sarà richiamata l'anagrafica (da creare in precedenza) del soggetto capogruppo al fine di inserire la partita iva di quest'ultimo nel tracciato xml in luogo di quella del soggetto aderente al gruppo, come previsto dalla normativa. 
-
-:::tip Info: il gruppo iva
-Con l’introduzione di tale norma, è stata prevista la possibilità, per le imprese collegate da interessi finanziari, economici ed organizzativi, di creare un gruppo unico, considerato come un solo contribuente (ai soli fini Iva) nei confronti del fisco. Esso sarà, pertanto, dotato di un unico numero di Partita Iva. Le imprese che fanno parte del gruppo fattureranno le operazioni verso terzi con una partita Iva comune, la partita Iva di gruppo. Invece le cessioni di beni e le prestazioni di servizi scambiati tra le aziende interne al gruppo non rileveranno ai fini dell’imponibile Iva. In conseguenza di ciò, tutte le operazioni effettuate da uno dei soggetti del gruppo sono considerate come effettuate dall’intero gruppo. La fattura e gli altri documenti sono emessi dal rappresentante del Gruppo o dai partecipanti indicando sugli stessi oltre al numero di partita Iva del Gruppo anche il codice fiscale del soggetto partecipante che ha realizzato l’operazione.
+:::tip Info: el grupo IVA  
+Con la introducción de dicha norma, se ha previsto la posibilidad, para las empresas conectadas por intereses financieros, económicos y organizativos, de crear un grupo único, considerado como un solo contribuyente (solo a efectos del IVA) ante el fisco. Por lo tanto, contará con un único número de IVA. Las empresas que forman parte del grupo facturarán las operaciones hacia terceros con un número de IVA común, el número de IVA del grupo. En cambio, las cesiones de bienes y las prestaciones de servicios intercambiadas entre las empresas internas del grupo no tendrán relevancia a efectos del impuesto sobre el IVA. Como consecuencia de esto, todas las operaciones realizadas por uno de los sujetos del grupo se consideran realizadas por todo el grupo. La factura y los demás documentos son emitidos por el representante del Grupo o por los participantes, indicando en estos además del número de IVA del Grupo también el código fiscal del sujeto participante que ha realizado la operación.  
 :::
 
-### Limite scadenze merci deperibili
+### Límite de vencimientos para mercancías perecederas
 
-**Art. 62**: flag che gestisce l'attivazione della gestione delle scadenze di pagamento massime nel settore alimentare per beni deperibili e non deperibili ai sensi dell'art 62 D.Lgs. n. 192/2012; in particolare in fase di inserimento degli articoli in fattura controlla la scadenza di pagamento rispetto a quelle obbligatorie per questa tipologia di prodotti. Si gestisce con i due flag successivi:
+**Art. 62 (Art. 62)**: indicador que gestiona la activación de la gestión de los vencimientos de pago máximos en el sector alimentario para bienes perecederos y no perecederos según el art. 62 D.Lgs. n. 192/2012; en particular, al ingresar los artículos en la factura, controla el vencimiento de pago con respecto a los obligatorios para este tipo de productos. Se gestiona con los dos indicadores siguientes:
 
-> **Sol. inf. 30 gg**: impone una soluzione di pagamento a 30 giorni bypassando le altre impostazioni (anche quelle relativa all' art. 62, ad esempio la soluzione a 60 giorni).  
-> **Sol. inf. 60 gg**: NON GESTITO / DISATTIVATO
+> **sol. inf. 30 gg**: impone una solución de pago a 30 días eludiendo las otras configuraciones (incluidas las relativas al art. 62, por ejemplo, la solución a 60 días).  
+> **sol. inf. 60 gg**: NO GESTIONADO / DESACTIVADO.
 
-Vi sono altre impostazioni riguardanti la **gestione merci deperibili**:  
-> **GG Pag. merce deperibile** all'interno dell'[Anagrafica articolo > tab Generali](/docs/erp-home/registers/items/create-new-item) dove viene definita la scadenza da applicare;  
-> **GG ricev. fattura** in *Anagrafica cliente/fornitore > tab Generale > tab Indirizzi alternativi* utile per ottemperare alla data certa di ricevimento della fattura (affinché si abiliti il campo, il tipo indirizzo collegato all'indirizzo alternativo utilizzato e definito nella tabella [Tipi indirizzi](/docs/configurations/tables/general-settings/address-types) deve avere il flag *Email Fatt.C.* settato)
-> **Giorni trasporto** nella tabella *Zone*, campo che può essere inserita nell'*Anagrafica cliente/fornitore > tab [Consegna*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) 
+Existen otras configuraciones relacionadas con la **gestión de mercancías perecederas**:  
+> **Días Pag. mercancía perecedera (GG Pag. merce deperibile)** dentro de la [**Ficha de artículo > pestaña Generales**](/docs/erp-home/registers/items/create-new-item) donde se define el vencimiento a aplicar;  
+> **Días recibo factura (GG ricev. fattura)** en *Registro de cliente/proveedor > pestaña General > pestaña Direcciones alternativas*, útil para cumplir con la fecha cierta de recepción de la factura (para habilitar el campo, el tipo de dirección asociado a la dirección alternativa utilizada y definida en la tabla [**Tipos de direcciones**](/docs/configurations/tables/general-settings/address-types) debe tener el indicador *Email Fatt.C.* configurado)  
+> **giorni trasporto** en la tabla *Zonas*, campo que puede ser ingresado en el *Registro de cliente/proveedor > pestaña [Entrega*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)  
 
-### Logica di calcolo della scadenza di pagamento
+### Lógica de cálculo del vencimiento de pago
 
-La scadenza di pagamento viene proposta a partire dalla data  decorrenza della fattura. 
+El vencimiento de pago se propone a partir de la fecha de vigencia de la factura.  
 
- La data decorrenza viene calcolata automaticamente nel seguente modo:
+La fecha de vigencia se calcula automáticamente de la siguiente manera:
 
- - inizialmente uguale alla maggiore tra data inserimento e  data fattura , 
+- inicialmente igual a la mayor entre la fecha de inserción y la fecha de factura,  
 
- - poi se nel tipo indirizzo dell'email di fatturazione sono impostati dei gg di ricevimento fattura, alla data fattura vengono sommati i gg di ricevimento fattura, la data decorrenza diventa la maggiore tra data decorrenza e data fattura + gg di ricevimento fattura
+- luego, si en el tipo de dirección del email de facturación se han establecido días de recepción de factura, a la fecha de factura se le suman los días de recepción de factura, la fecha de vigencia se convierte en la mayor entre la fecha de vigencia y la fecha de factura + días de recepción de factura.
 
- - se nel tipo indirizzo dell'email di fatturazione non sono impostati dei gg di ricevimento fattura allora viene cercato se ci sono i giorni di trasporto nel codice zona associato al cliente e alla data fattura vengono sommati i gg di trasporto, la data decorrenza diventa la maggiore tra la data decorrenza e data fattura + gg di trasporto
+- si en el tipo de dirección del email de facturación no se han establecido días de recepción de factura, entonces se busca si hay días de transporte en el código de zona asociado al cliente y a la fecha de factura se le suman los días de transporte, la fecha de vigencia se convierte en la mayor entre la fecha de vigencia y la fecha de factura + días de transporte.
 
- - se per la zona del cliente non sono impostati dei gg di trasporto, la data decorrenza corrisponde alla maggiore tra la data inserimento fattura e la data fattura
+- si para la zona del cliente no se han establecido días de transporte, la fecha de vigencia corresponde a la mayor entre la fecha de inserción de la factura y la fecha de factura.
 
-L'utente può in ogni caso cambiare la data decorrenza e mettere la data voluta, resterà traccia nella fattura che la data decorrenza è stata cambiata manualmente
+El usuario puede en cualquier caso cambiar la fecha de vigencia y poner la fecha deseada; quedará constancia en la factura de que la fecha de vigencia ha sido cambiada manualmente.
 
-**Per proporre  correttamente la data scadenza devono essere codificate 2 nuove soluzioni di pagamento con il flag “DL Art.62” settato, entrambe con il flag fine mese settato e il flag commerciale settato, una con giorni 30  e l'altra con giorni 60**
+**Para proponer correctamente la fecha de vencimiento deben ser codificadas 2 nuevas soluciones de pago con el indicador “DL Art.62” activado, ambas con el indicador fin de mes activado y el indicador comercial activado, una con días 30 y la otra con días 60**
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image04.png)
 
-Se la soluzione pagamento dell'anagrafica cliente è migliorativa rispetto a quella calcolata per gli articoli agricoli o agroalimentari, tale soluzione viene mantenuta.
+Si la solución de pago del registro del cliente es mejor que la calculada para los artículos agrícolas o agroalimentarios, dicha solución se mantiene.
 
-Inserendo le fatture manualmente (anche evadendo le righe dell'ordine cliente) è possibile inserire, per il cliente che ha il flag Art62 settato, solo articoli che abbiano la stessa tipologia di pagamento, perciò tutti articoli a 30 gg o a 60 gg oppure senza gg pagamento. Un messaggio impedirà l'inserimento di articoli misti e avvertirà che la soluzione di pagamento verrà modificata automaticamente con la soluzione calcolata in base ai gg di pagamento degli articoli.
+Al ingresar las facturas manualmente (también al cumplir las líneas del pedido del cliente) es posible ingresar, para el cliente que tiene el indicador Art62 activado, solo artículos que tengan el mismo tipo de pago, por lo tanto, todos los artículos a 30 días o a 60 días o sin días de pago. Un mensaje evitará la inserción de artículos mixtos y advertirá que la solución de pago se modificará automáticamente con la solución calculada según los días de pago de los artículos.
 
-Creando la fattura da altri documenti (es. da DDT),  i documenti verranno suddivisi per i gg di pagamento presente nell'articolo e verranno create più fatture se in uno stesso documento ci saranno articoli con giorni di pagamento diversi.
+Al crear la factura a partir de otros documentos (por ejemplo, desde DDT), los documentos se dividirán por los días de pago presentes en el artículo y se crearán más facturas si en un mismo documento hay artículos con días de pago diferentes.
 
-### Campi riferiti alla gestione distinte SDD (Sepa Direct Debit – Addebiti diretti SEPA)**
+### Campos referidos a la gestión de recibos SDD (Sepa Direct Debit – Addebiti diretti SEPA)**
 
-L'Addebito Diretto Sepa, che va a sostituire il precedente RID nazionale, è uno strumento di incasso pre-autorizzato a fronte di un mandato all'addebito rilasciato dal Debitore a favore del suo Creditore.
+El Débito Directo Sepa, que reemplaza el anterior RID nacional, es un instrumento de recaudación preautorizado a razón de un mandato de débito otorgado por el Deudor a favor de su Acreedor.
 
-E' basato su un accordo preventivo (mandato) tra Debitore e Creditore che consente a quest'ultimo di richiedere l'attivazione di una procedura interbancaria per addebitare il conto del Debitore in modo automatico.
+Se basa en un acuerdo preventivo (mandato) entre Deudor y Acreedor que permite a este último solicitar la activación de un procedimiento interbancario para debitar la cuenta del Deudor de forma automática.
 
-**Codice scopo mandato**: in questo campo va riportato il ‘Purpose code' (solitamente viene impostato il codice “GDSV” [PurchaseSaleOfGoodsAndServices])
+**codice scopo mandato**: en este campo debe ser reportado el ‘Purpose code' (normalmente se establece el código “GDSV” [PurchaseSaleOfGoodsAndServices]).
 
-**Codice cliente/mandato**: in questo campo va inserito il codice identificativo assegnato al mandato sottoscritto dal debitore. Corrisponde in Rulebook (document tecnico ufficiale) ad AT-01 Unique Mandate Reference.
+**Código cliente/mandato (Codice cliente/mandato)**: en este campo debe insertarse el código identificativo asignado al mandato suscrito por el deudor. Corresponde en el Rulebook (documento técnico oficial) a AT-01 Unique Mandate Reference.
 
- Il campo non è case-sensitive. Ad es. gli identificativi 123AAa45678, 123aaA45678, 123aaa45678 e 123AAA45678 devono essere considerati identici.
+El campo no es sensible a mayúsculas. Por ejemplo, los identificativos 123AAa45678, 123aaA45678, 123aaa45678 y 123AAA45678 deben ser considerados idénticos.
 
- Non può essere valorizzato con soli spazi e deve contenere solo caratteri appartenenti al set latino di base
+No puede ser valorado solamente con espacios y debe contener solo caracteres pertenecientes al conjunto latino básico.
 
-*Esempio*: IT05394480900
+*Ejemplo*: IT05394480900
 
-**Mandato modificato**: Flag attualmente non gestito e da lasciare de-selezionato
+**mandato modificato**: indicador actualmente no gestionado y que debe permanecer deseleccionado.
 
-**Data firma mandato**: in questo campo va inserita la data di firma del mandato.
+**data firma mandato**: en este campo debe ingresarse la fecha de firma del mandato.
 
-**Data prima esecuzione / Data ultima esecuzione**: essendo l'addebito sdd (così come il "veccchio" sistema RID) di per se un'esecuzione periodica, questo range di date controlla l'inizio e la fine validità dell'esecuzione.
+**Fecha primera ejecución / Fecha última ejecución (Data prima esecuzione / Data ultima esecuzione)**: siendo el débito sdd (así como el "viejo" sistema RID) por sí mismo una ejecución periódica, este rango de fechas controla el inicio y la finalización de la validez de la ejecución.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image05.png)
 
-Per la gestione dell'SDD bisogna inoltre compilare i campi
+Para la gestión del SDD también se deben completar los campos:
 
-- **Codice unico cliente**
+- **codice unico cliente**
 
-- **Identificatore creditore**: esempio IT95ZZZ0000007333890900
+- **Identificador acreedor (Identificatore creditore)**: ejemplo IT95ZZZ0000007333890900
 
-Nella tabella **Società**
+En la tabla **società**
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image06.png)
 
-### ALTRO
+### OTRO
 
-**Gestione cointestatari**: il flag attiva la gestione della fattura di vendita cointestata.
+**gestione cointestatari**: el indicador activa la gestión de la factura de venta cotitular.
 
-Questa casistica è frequente, ad esempio, nella vendita ai privati di beni che possono essere oggetto di detrazione fiscale dalle imposte sui redditi, se la spesa è sostenuta da più persone, la fattura deve essere intestata ad entrambi per poter operare la detrazione.
+Este caso es frecuente, por ejemplo, en la venta a privados de bienes que pueden ser objeto de deducción fiscal de los impuestos sobre la renta, si el gasto es asumido por más de una persona, la factura debe estar a nombre de ambos para poder realizar la deducción.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image07.png)
 
-Con il flag attivo, all'interno delle fatture intestate all'anagrafica in questione verrà visualizzato un ulteriore tab dove inserire i cointestatari.
+Con el indicador activo, dentro de las facturas a nombre del registro en cuestión se visualizará una pestaña adicional donde se pueden ingresar los cotitulares.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image08.png)
 
-Per richiamare i cointestatari, all'interno dell'anagrafica in questione, è necessario codificarli preventivamente nella sezione **Indirizzi alternativi** della sezione Dati generali.
+Para llamar a los cotitulares, dentro del registro en cuestión es necesario codificarlos previamente en la sección **indirizzi alternativi** de la sección de Datos generales.
 
-A tal fine è necessario, preventivamente, definire un tipo indirizzo con flag **Cointestatari** attivo all'interno della tabella **Tipi indirizzi** alla quale è collegata la combo box del campo **Tipo indirizzo**
+A tal fin, es necesario, previamente, definir un tipo de dirección con el indicador **cointestatari** activo dentro de la tabla **tipi indirizzi** a la cual está conectada la caja combinada del campo **tipo indirizzo**.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image09.png)
 
@@ -169,6 +165,6 @@ A tal fine è necessario, preventivamente, definire un tipo indirizzo con flag *
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image11.png)
 
-Quindi si procederà ad inserirli nella fattura indicando anche la percentuale di ripartizione della spesa.
+Entonces se procederá a insertarlos en la factura indicando también el porcentaje de reparto del gasto.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image12.png)

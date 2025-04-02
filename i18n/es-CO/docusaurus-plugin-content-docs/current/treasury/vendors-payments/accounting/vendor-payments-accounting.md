@@ -1,46 +1,42 @@
 ---
-title: Contabilizzazione Pagamenti Fornitore
+title: contabilizzazione pagamenti fornitore
 sidebar_position: 1
 ---
 
-La form si trova in Tesoreria > Pagamenti Fornitori > Contabilizzazione > Contabilizzazione Pagamenti Fornitore
+El formulario se encuentra en Tesorería > Pagos a Proveedores > Contabilización > contabilizzazione pagamenti fornitore (Contabilizzazione Pagamenti Fornitore).
 
-Da questa maschera è possibile contabilizzare i pagamenti inseriti nelle distinte precedentemente create.
+Desde esta máscara es posible contabilizar los pagos ingresados en los listados creados anteriormente.
 
-In alternativa è possibile usare la procedura integrata [*Creazione Automatica Pagamenti Fornitori*](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation), che genera la distinta e contabilizza i pagamenti allo stesso tempo.
+Como alternativa, se puede utilizar el procedimiento integrado [*Creación Automática de Pagos a Proveedores*](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation), que genera el listado y contabiliza los pagos al mismo tiempo.
 
-## Come contabilizzare i pagamenti
+## Cómo contabilizar los pagos
 
-1. Utilizza la parte superiore della maschera con i filtri per ricercare i pagamenti creati ma non ancora contabilizzati:premi il bottone *Ricerca*, nella griglia saranno visualizzati tutte le righe di dettaglio dei pagamenti presenti nelle varie distinte, che potrebbero quindi essere contabilizzate parzialmente. La situazione normale, comunque, prevede di filtrare con i riferimenti della distinta e contabilizzarla in blocco.
+1. Utiliza la parte superior de la máscara con los filtros para buscar los pagos creados pero que aún no han sido contabilizados: presiona el botón *Buscar (Ricerca)*, en la cuadrícula se mostrarán todas las líneas de detalle de los pagos presentes en los diversos listados, que podrían ser contabilizados parcialmente. La situación normal, sin embargo, prevé filtrar con las referencias del listado y contabilizarlo en bloque.
 
-2. Inserisci in basso i dati di gestione dell'operazione: la **Causale di contabilità** da utilizzare per la registrazione, le **Date di registrazione e competenza**. Se espandi la sezione puoi scegliere un **criterio di raggruppamento** per la scrittura contabile. 
+2. Inserta en la parte inferior los datos de gestión de la operación: la **causale di contabilità** a utilizar para el registro, las **Fechas de registro y competencia (Date di registrazione e competenza)**. Si expandes la sección, puedes elegir un **criterio de agrupamiento (criterio di raggruppamento)** para la escritura contable. 
 
-L'opzione di default, *raggruppamento banca*, consente di rilevare una registrazione per ogni sottoconto banca di uscita, che è la gestione migliore al fine di semplificare la riconciliazione dei movimenti bancari dalle stampe degli estratti conto. In alternativa è disponibile un *raggruppamento per sottoconto fornitore* e un'opzione di registrazione dettagliata pagamento per pagamento (*Non raggruppare*).
+La opción por defecto, *agrupamiento por banco (raggruppamento banca)*, permite registrar una entrada por cada subcuenta bancaria de salida, que es la mejor gestión para simplificar la reconciliación de los movimientos bancarios a partir de las impresiones de los extractos. Alternativamente, está disponible un *agrupamiento por subcuenta de proveedor (raggruppamento per sottoconto fornitore)* y una opción de registro detallado pago por pago (*No agrupar (Non raggruppare)*).
 
-Il **sottoconto** di rilevazione degli **abbuoni attivi e passivi** inseriti in distinta è proposto sulla base del sottoconto *sopravvenienze attive* presente nei parametri di contabilità. 
+El **sottoconto** para el registro de los **abonos activos y pasivos (abbuoni attivi e passivi)** ingresados en el listado se propone en función de la subcuenta de *sopravvenienze attive* presente en los parámetros de contabilidad. 
 
-**Data e numero document**o sono opzionali da inserire come riferimenti della testata della registrazione (potrebbe essere il numero/data distinta).
+**Fecha y número de documento (Data e numero documento)** son opcionales para ingresar como referencias del encabezado del registro (podría ser el número/fecha del listado).
 
-Il flag **chiusura partita** (proposto di default, da non togliere) gestisce correttamente il pagamento nello scadenziario.
+El indicador **cierre de partida (chiusura partita)** (propuesto por defecto, no eliminar) gestiona correctamente el pago en el calendario de vencimientos.
 
+Si la causa contable prevé la gestión de la fecha de valor bancario y dentro del registro de bancos se ha definido un número de días para su cálculo en relación con la causa contable utilizada, el campo será gestionado automáticamente en el registro resultante.
 
-Se la causale contabile prevede la gestione della data valuta banca e all'interno dell'anagrafica banche è stato definito un numero di giorni per il suo calcolo in relazione alla causale contabile utilizzata, il campo sarà gestito in automatico nella registrazione risultante.
+3. Presiona el botón **contabilizza** para iniciar el procedimiento.
 
-3. Premi il bottone **Contabilizza** per avviare la procedura
+### La pestaña de recuperación
 
+permite visualizar el registro contable mediante un doble clic en la sección relacionada con los registros, así como la anulación parcial/total de las operaciones de pago seleccionadas. La anulación será posible solo si el período aún es modificable (imprimir libro diario y cierre de cuentas no ejecutadas).
 
-### La scheda di ripristino 
+**Botones específicos**
 
-consente di visualizzare la registrazione contabile attraverso un doppio click nella sezione relativa alle registrazioni, così come l'annullamento parziale/totale delle operazioni di pagamento selezionate. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite).
+**ricerca** Busca la lista de los registros contables realizados.
 
-**Pulsanti specifici**
+**rollback contabilizzazione** El botón realiza la restauración de toda la contabilización seleccionada.
 
-**Ricerca** Ricerca la lista delle registrazioni contabili eseguite.
+**rollback registrazioni contabili** El botón realiza la restauración de los registros contables individuales seleccionados.
 
-**Rollback Contabilizzazione** Il pulsante esegue il ripristino dell'intera contabilizzazione selezionata.
-
-**Rollback Registrazioni contabili** Il pulsante esegue il ripristino delle singole registrazioni contabili selezionate.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

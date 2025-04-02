@@ -1,28 +1,27 @@
 ---
-title: Carico/Sposta UDC
+title: Carga/Mover UDC (Carico/Sposta UDC)
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La funzione **Carico/Sposta UDC** del WMS di Fluentis è progettata per semplificare il processo di gestione delle unità di carico. Consente agli operatori di caricare un'unità di carico non ancora registrata nel sistema o di spostare un'unità già caricata da una ubicazione a un'altra, tutto tramite la scansione del codice a barre. Grazie a questa funzionalità, il sistema facilita le operazioni di magazzino in tempo reale.
+:::important ¿Para qué sirve? (A cosa serve)
+La función **Carga/Mover UDC (Carico/Sposta UDC)** del WMS de Fluentis está diseñada para simplificar el proceso de gestión de las unidades de carga. Permite a los operadores cargar una unidad de carga aún no registrada en el sistema o mover una unidad ya cargada de una ubicación a otra, todo mediante la escaneado del código de barras. Gracias a esta funcionalidad, el sistema facilita las operaciones de almacén en tiempo real.
 :::
 
-Questa procedura è utilizzata per la lettura di una unità di carico per poter procedere al *Carico* se l’unità di carico risulta non caricata o allo *Spostamento* se, invece, l’unità di carico risulta già essere caricata.
+Este procedimiento se utiliza para la lectura de una unidad de carga para poder proceder a la *carico* si la unidad de carga está no cargada o al *spostamento* si, por el contrario, la unidad de carga ya está cargada.
 
-In maniera semplice e veloce l’operatore può effettuare queste operazioni leggendo direttamente il barcode dell’unità di carico, nel caso in cui questa non sia caricata, la procedura propone automaticamente come ubicazione in cui deve essere caricata l’UDC quella presente nella testata dell'UDC stessa e viene abilitato il pulsante **Carico**, con il quale viene creato il movimento di magazzino in tempo reale.      
+De manera simple y rápida, el operador puede realizar estas operaciones leyendo directamente el código de barras de la unidad de carga; en caso de que no esté cargada, el procedimiento propone automáticamente la ubicación donde debe cargarse la UDC, que es la que aparece en la cabecera de la misma UDC, y se activa el botón **carico**, con el que se crea el movimiento de almacén en tiempo real.
 
-Mentre, nel caso in cui sia già caricata, la procedura richiederà di inserire l’ubicazione di destinazione dello spostamento, attivando il pulsante **Sposta** con il quale verranno creati i relativi movimenti di scarico con contropartita di carico nella nuova ubicazione.     
-  
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.    
+Mientras que, en el caso de que ya esté cargada, el procedimiento solicitará ingresar la ubicación de destino del movimiento, activando el botón **sposta**, con el que se crearán los movimientos de descarga correspondientes con contrapartida de carga en la nueva ubicación.
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+El botón **pulisci tutto** permite vaciar el formulario de todos los datos ingresados.
 
-| Area | Modulo | Form |
+**parametri carico/scarico** a ingresar en la tabla [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+
+| Área (Area) | Módulo (Modulo) | Formulario (Form) |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadMoveLoadingUnit |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadMoveLoadingUnit |
 
-I parametri sono inseriti due volte poiché la form utilizza sia una causale di carico per le unità di carico da caricare, sia una di scarico per le unità di carico già caricate e quindi da scaricare. La causale di scarico deve avere una causale di carico in contropartita.     
+Los parámetros se ingresan dos veces porque el formulario utiliza tanto una causa de carga para las unidades de carga a cargar, como una de descarga para las unidades de carga ya cargadas y, por lo tanto, a descargar. La causa de descarga debe tener una causa de carga como contrapartida.
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-   
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode**, consulte la página relacionada con el [Tokenizador de códigos de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

@@ -1,39 +1,27 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo Rischio Cliente di Fluentis ERP è uno strumento utile per monitorare e gestire il rischio finanziario associato ai clienti, garantendo un controllo costante dell'esposizione creditizia aziendale. Questo modulo permette di analizzare e valutare il rischio di insolvenza dei clienti, aiutando le imprese a prendere decisioni informate e a migliorare la gestione dei crediti.
+El módulo de Riesgo del Cliente de Fluentis ERP es una herramienta útil para monitorear y gestionar el riesgo financiero asociado a los clientes, asegurando un control constante de la exposición crediticia de la empresa. Este módulo permite analizar y evaluar el riesgo de incumplimiento de los clientes, ayudando a las empresas a tomar decisiones informadas y a mejorar la gestión de los créditos.  
 
-Il modulo consente all'operatore di definire e controllare gli affidamenti dei clienti. In relazione ad ogni cliente verrà definito il valore del fido e la modalità di monitoraggio, con semplice avviso, oppure con un blocco in caso di superamento.
-Potranno essere definiti i diritti e ruoli aziendali degli utenti deputati all'autorizzazione dei documenti bloccati ai fini della loro eventuale evasione in deroga al superamento del limite.
+El módulo permite al operador definir y controlar los límites de crédito de los clientes. En relación con cada cliente, se definirá el valor de la línea de crédito y la modalidad de monitoreo, con un simple aviso o con un bloqueo en caso de sobrepaso.  
+Se podrán definir los derechos y roles empresariales de los usuarios encargados de autorizar los documentos bloqueados para su eventual cumplimiento en derogación del sobrepaso del límite.  
 
-Il modulo è presente nell'area tesoreria e preleva i dati dal flusso documentale attivo, dai dati di contabilità e dal portafoglio effetti.
+El módulo está presente en el área de tesorería y obtiene los datos del flujo documental activo, de los datos contables y de la cartera de efectos.  
 
-Una serie di impostazioni di natura sia tabellare precodificata, che anche una corretta parametrizzazione degli algoritmi di base, sono consigliate prima di procedere con la gestione del rischio cliente.
+Una serie de configuraciones, tanto de naturaleza tabular preestablecida como una correcta parametrización de los algoritmos básicos, se recomienda antes de proceder con la gestión del riesgo del cliente.
 
- Funzionalità Principali
+**Funcionalidades Principales (Funzionalità Principali)**
 
-- Monitoraggio dell'esposizione creditizia: Il modulo consente di definire limiti di credito personalizzati per ciascun cliente e di monitorare continuamente la loro esposizione finanziaria, confrontando il credito disponibile con il credito utilizzato.
+- Monitoreo de la exposición crediticia: El módulo permite definir límites de crédito personalizados para cada cliente y monitorear continuamente su exposición financiera, comparando el crédito disponible con el crédito utilizado.
 
-- Valutazione del rischio: Integra strumenti di analisi che permettono di classificare i clienti in base al loro comportamento di pagamento, quali ad esempio i tempi medi di ritardo nel pagamento, consentendo di prendere decisioni proattive per la gestione dei crediti e dei flussi di cassa.
+- Evaluación del riesgo: Integra herramientas de análisis que permiten clasificar a los clientes en base a su comportamiento de pago, como por ejemplo los tiempos medios de retraso en el pago, lo que permite tomar decisiones proactivas para la gestión de créditos y flujos de caja.
 
-- Blocchi automatici e avvisi: Se un cliente supera i limiti di credito o presenta fatture scadute, il sistema può attivare blocchi automatici sulla creazione di nuovi ordini o inviare avvisi al reparto vendite o amministrativo.
+- Bloqueos automáticos y avisos: Si un cliente supera los límites de crédito o presenta facturas vencidas, el sistema puede activar bloqueos automáticos en la creación de nuevos pedidos o enviar avisos al departamento de ventas o administrativo.
 
-- Integrazione con la contabilità: Il modulo è completamente integrato con la contabilità generale e la gestione delle partite, dalle quali legge i dati per aggiornare la reportistica di esposizione al rischio e l'utilizzo del fido di ogni cliente. E' inoltre interfacciato con il ciclo attivo intervenendo direttamente nella creazione dei documenti, ordine, DDT e fatture, al fine di avvisare o bloccare l'evasione della fornitore qualora il limite vanga superato
+- Integración con la contabilidad: El módulo está completamente integrado con la contabilidad general y la gestión de partidas, de las cuales lee los datos para actualizar la reportística de exposición al riesgo y el uso del límite de cada cliente. También está interfaseado con el ciclo activo, interviniendo directamente en la creación de documentos, pedidos, DDT y facturas, con el fin de avisar o bloquear el cumplimiento de la provisión si se supera el límite.
 
+**tabelle**: no hay tablas específicas del módulo en cuestión, pero es importante señalar que varios tipos de documentos en compra y venta presentan configuraciones relacionadas con el riesgo del cliente ([tablas relacionadas con el módulo de Riesgo del Cliente (tabelle collegate al modulo Rischio cliente)](/docs/configurations/tables/treasury/customer-risk-module-tables)).
 
-
-**Tabelle:** non sono presenti tabelle specifiche del modulo in oggetto, ma va segnalato che vari tipi documento in acquisto e vendita presentano impostazioni collegate al rischio cliente ( [tabelle collegate al modulo Rischio cliente](/docs/configurations/tables/treasury/customer-risk-module-tables) ).
-
- 
-
-**Parametri preliminari da impostare**:  [Parametri rischio cliente](/docs/configurations/parameters/treasury/customer-risk-parameters).
-
- 
-
-
-
-
-
-
+**Parámetros preliminares a establecer (Parametri preliminari da impostare)**: [Parámetros de riesgo del cliente (Parametri rischio cliente)](/docs/configurations/parameters/treasury/customer-risk-parameters).

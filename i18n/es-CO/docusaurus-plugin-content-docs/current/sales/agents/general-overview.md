@@ -1,32 +1,32 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area *Vendite > Agenti*.
+El módulo se encuentra en el área *Ventas > Agentes*.  
 
-Il modulo offre una soluzione completa per la gestione, il controllo e l'elaborazione delle provvigioni degli agenti di vendita. Questa funzionalità consente alle aziende di calcolare le provvigioni maturate, generare liquidazioni dettagliate e gestire compensi per professionisti.
+El módulo ofrece una solución integral para la gestión, control y procesamiento de las comisiones de los agentes de ventas. Esta funcionalidad permite a las empresas calcular las comisiones devengadas, generar liquidaciones detalladas y gestionar compensaciones para profesionales.  
 
-**Funzionalità Principali**:
-- Gestione e controllo delle provvigioni: Il sistema permette di gestire, controllare ed elaborare il calcolo delle provvigioni dovute agli agenti, tenendo conto delle vendite effettuate e delle condizioni contrattuali specifiche.
-- Generazione delle liquidazioni: È possibile generare liquidazioni periodiche per gli agenti, aggregando le provvigioni maturate e presentando un quadro chiaro delle somme dovute.
-- Creazione di compensi per professionisti: Fluentis offre la possibilità di creare compensi specifici per professionisti esterni, garantendo una gestione flessibile e dettagliata dei pagamenti.
-- Stampa di cedolini e documentazione: Il modulo consente la stampa dei cedolini per gli agenti, dettagliando le provvigioni maturate e le liquidazioni effettuate, fornendo così una documentazione chiara e trasparente.
-- Reportistica e analisi: È possibile generare report sulle provvigioni e le liquidazioni, facilitando il monitoraggio delle performance degli agenti e consentendo un'analisi dettagliata delle vendite.
+**Funciones Principales (Funzionalità Principali)**:  
+- Gestión y control de las comisiones (Gestione e controllo delle provvigioni): El sistema permite gestionar, controlar y procesar el cálculo de las comisiones adeudadas a los agentes, teniendo en cuenta las ventas realizadas y las condiciones contractuales específicas.  
+- Generación de liquidaciones (Generazione delle liquidazioni): Es posible generar liquidaciones periódicas para los agentes, agregando las comisiones devengadas y presentando un cuadro claro de las sumas adeudadas.  
+- Creación de compensaciones para profesionales (Creazione di compensi per professionisti): Fluentis ofrece la posibilidad de crear compensaciones específicas para profesionales externos, garantizando una gestión flexible y detallada de los pagos.  
+- Impresión de recibos y documentación (Stampa di cedolini e documentazione): El módulo permite la impresión de recibos para los agentes, detallando las comisiones devengadas y las liquidaciones realizadas, proporcionando así una documentación clara y transparente.  
+- Reportes y análisis (Reportistica e analisi): Es posible generar reportes sobre las comisiones y las liquidaciones, facilitando el monitoreo del desempeño de los agentes y permitiendo un análisis detallado de las ventas.  
 
-**Automazione e Integrazione**:        
-Il modulo di Liquidazione Agenti è integrato con il resto del sistema gestionale di Fluentis, consentendo il recupero automatico dei dati di vendita e delle provvigioni dai moduli di vendita e fatturazione. Questa integrazione riduce il rischio di errori e garantisce una coerenza dei dati, facilitando la riconciliazione tra vendite, fatture e liquidazioni.
+**Automatización e Integración (Automazione e Integrazione)**:  
+El módulo de Liquidación de Agentes está integrado con el resto del sistema de gestión de Fluentis, permitiendo la recuperación automática de los datos de venta y las comisiones de los módulos de venta y facturación. Esta integración reduce el riesgo de errores y garantiza la coherencia de los datos, facilitando la reconciliación entre ventas, facturas y liquidaciones.  
 
-E' collegato a sua volta con il modulo Amministrazione permettendo di convertire la liquidazione provvigioni in compenso percipiente al fine di poter eseguire automaticamente le relative scritture contabili ed il versamento della ritenuta d'acconto oltre ai contributi ENASARCO.
-Infine il compenso degli agenti rientrerà anch'esso nell'elaborazione fiscale della certificazione unica delle ritenute.
+Está a su vez conectado con el módulo de Administración, permitiendo convertir la liquidación de comisiones en compensación percibida, con el fin de poder ejecutar automáticamente las correspondientes entradas contables y el pago de la retención a cuenta, además de las contribuciones a ENASARCO.  
+Finalmente, la compensación de los agentes también se incluirá en el procesamiento fiscal del certificado único de las retenciones.  
 
-Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle:
-> - [**Anagrafica agente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
-> - [**Categorie agenti**](/docs/configurations/tables/sales/agent-category)
-> - [Range sconto](/docs/configurations/tables/sales/discount-range)
-> - [Definizione fasce provvigionali](/docs/configurations/tables/sales/discount-range)
-> - [Caratteristiche agente](/docs/configurations/tables/sales/agent-characteristics)
+Antes de utilizar el módulo, es necesario completar las siguientes tablas:  
+> - [**anagrafica agente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)  
+> - [**categorie agenti**](/docs/configurations/tables/sales/agent-category)  
+> - [Rango de descuento (Range sconto)](/docs/configurations/tables/sales/discount-range)  
+> - [Definición de tramos de comisión (Definizione fasce provvigionali)](/docs/configurations/tables/sales/discount-range)  
+> - [Características del agente (Caratteristiche agente)](/docs/configurations/tables/sales/agent-characteristics)  
 
-:::danger[Attenzione]
-Si ricorda che oltre alla configurazione dei dettagli dell'anagrafica agente, è necessario [**abbinare gli agenti ai rispettivi clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/agents) per poter avere il calcolo delle provvigioni nei documenti ed alimentare quindi le liquidazioni
+:::danger[Atención]  
+Se recuerda que, además de configurar los detalles del registro del agente, es necesario [**asignar los agentes a sus respectivos clientes**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/agents) para poder calcular las comisiones en los documentos y, por lo tanto, alimentar las liquidaciones.  
 :::

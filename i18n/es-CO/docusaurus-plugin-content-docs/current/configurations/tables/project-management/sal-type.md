@@ -1,6 +1,6 @@
 ---
-title: Tipo SAL
+title: tipo sal
 sidebar_position: 14
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Tipo SAL** e contiene le tipologie di stato avanzamento lavori disponili. È possibile creare, ricercare e cancellare le tipologie. Ognuna è definita da un **Codice**, una **Descrizione** e una **Numerazione**.
+Esta tabla es accesible desde **Tablas > Gestión de Proyectos > tipo sal** y contiene los tipos de estado de avance de trabajos disponibles. Es posible crear, buscar y eliminar tipos. Cada uno está definido por un **codice**, una **descrizione** y una **numerazione**.

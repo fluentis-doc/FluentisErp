@@ -1,41 +1,41 @@
 ---
-title: Task & Blockly
-sidebar_label: Task & Blockly
+title: Tarea y Blockly (Task & Blockly)
+sidebar_label: Tarea y Blockly (Task & Blockly)
 sidebar_position: 2
 ---
 
 :::info
-Quando si apre la form di dettaglio, di default viene visualizzato l'editor Blockly e non l'editor testuale.  
-E' possibile passare da modalità Blockly ad editor testuale (o viceversa) attraverso il drop-down **Tipo Script** che consente di selezionare la modalità desiderata.
+Cuando se abre el formulario de detalles, por defecto se visualiza el editor Blockly y no el editor de texto.  
+Es posible cambiar de la modalidad Blockly al editor de texto (o viceversa) a través del menú desplegable **tipo script** que permite seleccionar la modalidad deseada.
 :::
 
-**Supervisor** sfrutta i blocchi personalizzati della libreria Blockly di Google per creare script in C#. Oltre alle categorie standard di Blockly (operatori logici, istruzioni di ciclo, operazioni matematiche, testi, date, liste, colori, variabili), le categorie personalizzate che possono essere trovate nella **Toolbox** sono:
+**Supervisor (Supervisor)** aprovecha los bloques personalizados de la biblioteca Blockly de Google para crear scripts en C#. Además de las categorías estándar de Blockly (operadores lógicos, instrucciones de ciclo, operaciones matemáticas, textos, fechas, listas, colores, variables), las categorías personalizadas que se pueden encontrar en la **Caja de herramientas (Toolbox)** son:
 
-- **Variabili contestuali a Supervisor**, contiene blocchi per selezionare variabili dal contesto corrente e per convertire un oggetto generico in una stringa/numero/...;
+- **Variables contextuales a Supervisor (Variabili contestuali a Supervisor)**, contiene bloques para seleccionar variables del contexto actual y para convertir un objeto genérico en una cadena/número/...;
 
-- **Dizionario**, contiene tutti i blocchi necessari per lavorare con la struttura dati di tipo <span style={{ fontFamily: 'Consolas' }}>Dizionario</span>;
+- **dizionario**, contiene todos los bloques necesarios para trabajar con la estructura de datos de tipo <span style={{ fontFamily: 'Consolas' }}>Dizionario</span>;
 
-- **Oggetti Fluentis**, suddivisi in tre sottocategorie:
-     - **Commons**, contiene blocchi per eseguire operazioni comuni sugli *Oggetti Fluentis*.
-     - **Read Only**, contiene blocchi specifici per eseguire operazioni di sola lettura sugli *Oggetti Fluentis*.
-     - **Read Write**, contiene blocchi specifici per eseguire operazioni di lettura-scrittura sugli *Oggetti Fluentis*.
+- **Objetos Fluentis (Oggetti Fluentis)**, divididos en tres subcategorías:
+     - **Comunes (Commons)**, contiene bloques para realizar operaciones comunes en los *Objetos Fluentis*.
+     - **read only**, contiene bloques específicos para realizar operaciones de solo lectura en los *Objetos Fluentis*.
+     - **read write**, contiene bloques específicos para realizar operaciones de lectura-escritura en los *Objetos Fluentis*.
   
-- **Accesso al database**, contiene blocchi che possono eseguire operazioni direttamente con il database, come chiamare stored procedure o leggere valori da recordset.
+- **Acceso a la base de datos (Accesso al database)**, contiene bloques que pueden ejecutar operaciones directamente con la base de datos, como llamar a procedimientos almacenados o leer valores de un conjunto de registros.
 
-- **Attività**, a sua volta suddivise in categorie che portano lo stesso nome dei gruppi (gli stessi gruppi consultabili dalla form principale delle attività). I gruppi standard sono:
-     - **Utilità**, che contiene tutte le [attività](../activity/activity-intro) previste a standard (l'utente non può aggiungere nuove attività o modificare quelle esistenti in questo gruppo);
-     - **Esempi**, contiene tutti gli esempi di attività che possono guidare l'utente nella creazione di un nuovo *Task* personalizzato (l'utente non può aggiungere nuove attività o modificare quelle esistenti in questo gruppo, è necessario creare un nuovo gruppo con le proprie attività customizzate)
+- **attività**, a su vez divididas en categorías que llevan el mismo nombre que los grupos (los mismos grupos consultables desde el formulario principal de actividades). Los grupos estándar son:
+     - **utilità**, que contiene todas las [actividades (attività)](../activity/activity-intro) previstas como estándar (el usuario no puede agregar nuevas actividades o modificar las existentes en este grupo);
+     - **esempi**, contiene todos los ejemplos de actividades que pueden guiar al usuario en la creación de una nueva *task* personalizada (el usuario no puede agregar nuevas actividades o modificar las existentes en este grupo, debe crear un nuevo grupo con sus actividades personalizadas).
 
-- **Globals**, contiene blocchi che possono recuperare **Parametri** globali o [liste di distribuzione](../distribution-list/distribution-list-intro)
+- **Globales (Globals)**, contiene bloques que pueden recuperar **parametri** globales o [listas de distribución (liste di distribuzione)](../distribution-list/distribution-list-intro).
 
-- **Task Utility**, contiene script utili per tutte le *attività*;
+- **Utilidad de Tareas (Task Utility)**, contiene scripts útiles para todas las *attività*;
 
-Per aggiungere codice ad un *Task* con *Blockly*, trascinare e rilasciare i blocchi dalla *Toolbox* nel **Workspace**.
+Para agregar código a una *task* con *Blockly*, arrastre y suelte los bloques desde la *Caja de herramientas (Toolbox)* en el **Espacio de trabajo (Workspace)**.
 
-- **#STD** gestisce il codice all'interno del metodo dello script <span style={{ fontFamily: 'Consolas' }}>ExecuteTask()</span>;
+- **#STD** gestiona el código dentro del método del script <span style={{ fontFamily: 'Consolas' }}>ExecuteTask()</span>;
 
-Terminato l'inserimento del codice è necessario salvare il progetto e procedere alla sua compilazione mendiante l'apposito pulsante dedicato.
+Una vez que se haya terminado de ingresar el código, es necesario guardar el proyecto y proceder a su compilación mediante el botón correspondiente.
 
-Il codice dello script generato, apparirà tra le due righe commentate (rinominate <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// START WIZARD CODE</span> and <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// END WIZARD CODE</span>).
+El código del script generado aparecerá entre las dos líneas comentadas (renombradas <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// INICIO CÓDIGO WIZARD (// START WIZARD CODE)</span> y <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// FIN CÓDIGO WIZARD (// END WIZARD CODE)</span>).
 
 ![alt text](/img/it-it/applications/supervisor/supervisor10.png)

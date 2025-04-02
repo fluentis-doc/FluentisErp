@@ -1,92 +1,91 @@
 ---
-title: Groupage
+title: Consolidación (Groupage)
 sidebar_position: 5
 ---
 
-In questo tab vengono inserite tutte le informazioni relative al **gruopage**.      
-Questo consiste nel raggruppare diverse spedizioni di merci provenienti da mittenti differenti, ma destinate alla stessa area geografica, in un unico carico o container. In questo modo, è possibile sfruttare al meglio lo spazio disponibile nei mezzi di trasporto (come camion, container marittimi o aerei) e offrire un servizio più economico rispetto alla spedizione di singole partite di merci.
+En esta pestaña se ingresan todas las informaciones relativas a la **consolidación (groupage)**.  
+Esto consiste en agrupar varios envíos de mercancías provenientes de diferentes remitentes, pero destinados a la misma área geográfica, en una única carga o contenedor. De esta manera, es posible aprovechar al máximo el espacio disponible en los medios de transporte (como camiones, contenedores marítimos o aviones) y ofrecer un servicio más económico en comparación con el envío de partidas individuales de mercancías.
 
-Il tab è suddiviso in due sezioni principali:
+La pestaña se divide en dos secciones principales:
 
-## Spedizioni groupage
+## Envíos de consolidación (Spedizioni groupage)
 
-In questa griglia vengono inserite le informazioni relative alle spedizioni contenute in questo **groupage**, quindi per inserire una nuova spedizione nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. 
+En esta cuadrícula se ingresan las informaciones relativas a los envíos contenidos en esta **consolidación (groupage)**, por lo que para ingresar un nuevo envío en la cuadrícula, basta con ubicarse en la fila para completar los diversos datos o utilizar el botón **Nuevo** (Nuovo) presente en la cinta de opciones.  
 
-Le colonne disponibili sono le seguenti e raggruppate per:
+Las columnas disponibles son las siguientes y están agrupadas por:
 
-Spedizione 
-- **Numero riga**: indica il numero delle riga della spedizione e viene inserito automaticamente;
-- **Data inizio**: indica la data / ora di inizio della spedizione;
-- **Data fine**: indica la data / ora di fine della spedizione;
-- **Ore pianificate**: indica la durata in ore della spedizione e viene calcolato automaticamente in base alla data inizio e fine;
-- **Numero di tracking**: indica il numero di tracking della singola spedizione; se indicato nel tab testata, il numero di tracking viene proposto in tutte le spedizioni create, ovviamente può sempre essere modificato manualmente dall'utente.
+Envío (Spedizione)  
+- **numero riga**: indica el número de la fila del envío y se inserta automáticamente;  
+- **data inizio**: indica la fecha/hora de inicio del envío;  
+- **data fine**: indica la fecha/hora de fin del envío;  
+- **ore pianificate**: indica la duración en horas del envío y se calcula automáticamente en función de la fecha de inicio y fin;  
+- **Número de seguimiento (Numero di tracking)**: indica el número de seguimiento del envío individual; si se indica en el encabezado, el número de seguimiento se propone en todos los envíos creados, pero siempre puede ser modificado manualmente por el usuario.  
 
-Indirizzo del luogo di carico
-- **Provenienza**: indica la ragione sociale / nome del luogo di carico;         
-- **CAP**: indica il CAP del luogo di carico;
-- **Città**: indica la città del luogo di carico;
-- **Provincia**: indica la provincia del luogo di carico;
-- **Indirizzo del luogo di carico**: indica l'indirizzo del luogo di carico. Questo viene valorizzato di default con l'indirizzo della società, dal quale normalmente dovrebbero partire le merci, indicato anche nella testata del documento.
+Dirección del lugar de carga (Indirizzo del luogo di carico)  
+- **provenienza**: indica la razón social/nombre del lugar de carga;  
+- **cap**: indica el código postal del lugar de carga;  
+- **città**: indica la ciudad del lugar de carga;  
+- **provincia**: indica la provincia del lugar de carga;  
+- **Dirección del lugar de carga (Indirizzo del luogo di carico)**: indica la dirección del lugar de carga. Este se valora por defecto con la dirección de la empresa, desde donde normalmente deberían partir las mercancías, indicada también en el encabezado del documento.  
 
-Indirizzo del luogo di destinazione
-- **Destinazione**: indica la ragione sociale / nome del luogo di destinazione;            
-- **CAP**: indica il CAP del luogo di destinazione;
-- **Città**: indica la città del luogo di destinazione;
-- **Provincia**: indica la provincia del luogo di destinazione;
-- **Indirizzo del luogo di destinazione**: indica l'indirizzo del luogo di destinazione. Questo viene valorizzato in automatico prendendolo dall'anagrafica del cliente, ma può comunque essere modificato manualmente dall'utente.
+Dirección del lugar de destino (Indirizzo del luogo di destinazione)  
+- **destinazione**: indica la razón social/nombre del lugar de destino;  
+- **cap**: indica el código postal del lugar de destino;  
+- **città**: indica la ciudad del lugar de destino;  
+- **provincia**: indica la provincia del lugar de destino;  
+- **Dirección del lugar de destino (Indirizzo del luogo di destinazione)**: indica la dirección del lugar de destino. Este se valora automáticamente tomándolo del registro del cliente, pero puede ser modificado manualmente por el usuario.  
 
-Automezzo
-- **Automezzo**: indica l'automezzo con il quale verrà effettuata la spedizione;
-- **Autista assegnato**: indica l'autista che effettuerà la spedizione.
+Vehículo (Automezzo)  
+- **automezzo**: indica el vehículo con el cual se realizará el envío;  
+- **Conductor asignado (Autista assegnato)**: indica el conductor que realizará el envío.  
 
-Inoltre, per ciascuna riga del groupage, è possibile aprire espandere il relativo dettaglio di riga cliccando sul **+**, in modo da poter gestire anche i seguenti campi relativamente al luogo di carico:
-- **Telefono**: permette di inserire il numero di telefono relativo al luogo di carico;
-- **E-mail**: permette di inserire l'indirizzo e-mail relativo al luogo di carico;
-- **Note**: permette di inserire una nota libera relativa al luogo di carico;
-e alla destinazione:
-- **Telefono**: permette di inserire il numero di telefono relativo alla destinazione;
-- **E-mail**: permette di inserire l'indirizzo e-mail relativo alla destinazione;
-- **Note**: permette di inserire una nota libera relativa alla destinazione.
+Además, para cada fila de la consolidación, es posible abrir el detalle de la fila correspondiente haciendo clic en el **+**, para poder gestionar también los siguientes campos relativos al lugar de carga:  
+- **telefono**: permite ingresar el número de teléfono relativo al lugar de carga;  
+- **E-mail**: permite ingresar la dirección de correo electrónico relativa al lugar de carga;  
+- **note**: permite ingresar una nota libre relativa al lugar de carga;  
+y al destino:  
+- **telefono**: permite ingresar el número de teléfono relativo a la destinación;  
+- **E-mail**: permite ingresar la dirección de correo electrónico relativa a la destinación;  
+- **note**: permite ingresar una nota libre relativa a la destinación.  
 
-## Articoli di spedizione
+## Artículos de envío (Articoli di spedizione)
 
-In questa sezione vengono visualizzati tutti gli articoli contenuti all'interno della spedizione selezionata nel gruopage.         
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.            
-In alternativa, è anche possibile aggiungere gli articoli prendendoli direttamente dagli ordini clienti tramite la procedura **Trasferimento articoli**.           
-Premendo il pulsante **Trasferimento articoli**, si apre la form denominata **Collegamento degli ordini di vendita**, nella quale di default viene già proposto il cliente della spedizione nel relativo filtro. Quindi premendo il pulsante **Ricerca** verranno visualizzati sulla griglia di destra tutti gli articoli degli ordini non evasi e parzialmente evasi di quel cliente.        
-Sulla parte sinistra della form, sono visualizzate le griglie relative alle *spedizioni goupage* e agli *articoli di spedizione* con i dati inseriti nel form principale del gruopage.         
-A questo punto, l'utente può, con il drag & drop, trascinare gli articoli dalla griglia di destra direttamente sulla singola spedizione ed in automatico verranno inseriti nella griglia *articoli di spedizione* relativa a quella spedizione.
-Inoltre, è anche possibile aggiungere articoli proveniente da ordini di altri clienti, semplicemente andando a variare il valore del filtro *Cliente* e premendo nuovamente **Ricerca**.
-Una volta terminato di aggiungere tutti gli articoli, l'utente premendo il pulsante **Acquisizione** confermerà tutte le modifiche.       
+En esta sección se visualizan todos los artículos contenidos en el envío seleccionado en la consolidación.  
+Para agregar un **nuovo articolo** en la cuadrícula, basta con ubicarse en la fila para completar los diversos datos o utilizar el botón **nuovo** presente en la cinta de opciones.  
+Alternativamente, también es posible agregar los artículos tomándolos directamente de los pedidos de clientes mediante el procedimiento **trasferimento articoli**.  
+Al presionar el botón **trasferimento articoli**, se abre el formulario denominado **Conexión de pedidos de venta (Collegamento degli ordini di vendita)**, en el cual por defecto ya se propone el cliente del envío en el filtro correspondiente. Luego, al presionar el botón **ricerca**, se visualizarán en la cuadrícula de la derecha todos los artículos de los pedidos no cumplidos y parcialmente cumplidos de ese cliente.  
+En la parte izquierda del formulario, se visualizan las cuadrículas relativas a los *envíos de consolidación (spedizioni goupage)* y a los *artículos de envío (articoli di spedizione)* con los datos ingresados en el formulario principal de la consolidación.  
+En este punto, el usuario puede, con el drag & drop, arrastrar los artículos de la cuadrícula de la derecha directamente sobre el envío individual y se insertarán automáticamente en la cuadrícula *artículos de envío (articoli di spedizione)* correspondiente a ese envío.  
+Además, también es posible agregar artículos provenientes de pedidos de otros clientes, simplemente cambiando el valor del filtro *Cliente* y presionando nuevamente **ricerca**.  
+Una vez que se hayan agregado todos los artículos, al presionar el botón **acquisizione**, el usuario confirmará todos los cambios.  
 
-Le colonne disponibili sono le seguenti:   
-- **Numero riga**: indica il numero riga dell'articolo inserito nel gruopage; 
-- **Classe**: indica la classe dell'articolo; 
-- **Articolo**: indica il codice dell'articolo; 
-- **Variante articolo**: indica la variante dell'articolo; 
-- **Descrizione variante**: indica la descrizione variante dell'articolo; 
-- **Unità di misura**: indica l'unità di misura dell'articolo;
-- **Marca**: visualizza il valore della marca inserita nell'anagrafica articoli;
-- **Quantità**: indica la quantità dell'articolo;
-- **Unità di misura alternativa**: indica l'unità di misura alternativa dell'articolo;           
-- **Quantità alternativa**: indica la quantità dell'articolo;            
-- **Volume**: indica il volume dell'articolo;             
-- **Peso netto**: indica il peso netto dell'articolo;
-- **Peso lordo**: indica il peso lordo dell'articolo;
-- **Conto ordine cliente**: visualizza il conto dell'ordine cliente a cui appartiene l'articolo;
-- **Tipo ordine cliente**: visualizza il tipo dell'ordine cliente a cui appartiene l'articolo;
-- **Data ordine cliente**: visualizza la data dell'ordine cliente a cui appartiene l'articolo;
-- **Fattura o DDT**: visualizza il riferimento della fattura / DDT rispettivamente creati premendo i pulsanti **Fattura** o **DDT**; il valore viene visualizzato nel formato tipo documento / data documento / numero documento;
-- **Riferimento picking**: visualizza il riferimento del picking creato premendo il pulsante **Picking**; il valore viene visualizzato nel formato tipo documento / data documento / numero documento.
+Las columnas disponibles son las siguientes:   
+- **numero riga**: indica el número de fila del artículo ingresado en la consolidación;  
+- **classe**: indica la clase del artículo;  
+- **articolo**: indica el código del artículo;  
+- **variante articolo**: indica la variante del artículo;  
+- **descrizione variante**: indica la descripción variante del artículo;  
+- **unità di misura**: indica la unidad de medida del artículo;  
+- **marca**: visualiza el valor de la marca ingresada en el registro de artículos;  
+- **quantità**: indica la cantidad del artículo;  
+- **unità di misura alternativa**: indica la unidad de medida alternativa del artículo;  
+- **quantità alternativa**: indica la cantidad del artículo;  
+- **volume**: indica el volumen del artículo;  
+- **peso netto**: indica el peso neto del artículo;  
+- **peso lordo**: indica el peso bruto del artículo;  
+- **Cuenta del pedido del cliente (Conto ordine cliente)**: visualiza la cuenta del pedido del cliente al que pertenece el artículo;  
+- **tipo ordine cliente**: visualiza el tipo del pedido del cliente al que pertenece el artículo;  
+- **Fecha del pedido del cliente (Data ordine cliente)**: visualiza la fecha del pedido del cliente al que pertenece el artículo;  
+- **Factura o DDT (Fattura o DDT)**: visualiza la referencia de la factura/ DDT respectivamente creados al presionar los botones **fattura** o **ddt**; el valor se visualiza en el formato tipo documento / fecha documento / número documento;  
+- **riferimento picking**: visualiza la referencia del picking creado al presionar el botón **Picking**; el valor se visualiza en el formato tipo documento / fecha documento / número documento.  
 
-*Pulsanti specifici*
+*Botones específicos*  
 
-- **Nuova groupage**: permette di inserire una nuova spedizione nel gruopage; 
-- **Elimina groupage**: permette di eliminare la spedizione selezionata dal gruopage; 
-- **Trasferimento articoli**: permette di aggiungere gli articoli alla spedizione prendendoli direttamente dagli ordini clienti;
-- **DDT**: permette di creare automaticamente i [DDT](/docs/sales/sales-delivery-notes/general-overview) per le spedizioni selezionare nel gruopage;
-- **Fattura**: permette di creare automaticamente le [Fatture](/docs/sales/sales-invoices/general-overview) per le spedizioni selezionare nel gruopage;
-- **Picking**: permette di creare automaticamente i [Picking](/docs/logistics/picking/picking-intro) per le spedizioni selezionare nel gruopage.
+- **Nueva consolidación (Nuova groupage)**: permite ingresar un nuevo envío en la consolidación;  
+- **Eliminar consolidación (Elimina groupage)**: permite eliminar el envío seleccionado de la consolidación;  
+- **trasferimento articoli**: permite agregar los artículos al envío tomándolos directamente de los pedidos de clientes;  
+- **DDT**: permite crear automáticamente los [DDT](/docs/sales/sales-delivery-notes/general-overview) para los envíos seleccionados en la consolidación;  
+- **fattura**: permite crear automáticamente las [Facturas](/docs/sales/sales-invoices/general-overview) para los envíos seleccionados en la consolidación;  
+- **Picking**: permite crear automáticamente los [Picking](/docs/logistics/picking/picking-intro) para los envíos seleccionados en la consolidación.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

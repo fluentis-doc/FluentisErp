@@ -1,186 +1,185 @@
 ---
-title: Scheda tecnica
+title: scheda tecnica
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Nuova scheda tecnica** oppure è possibile eseguirla dalla **Ricerca Schede tecniche**.   
+La gestión se encuentra en la ruta **Calidad > Controles de artículo > Fichas técnicas > Nueva ficha técnica** o se puede ejecutar desde la **Búsqueda de Fichas técnicas**.
 
+:::important ¿Para qué sirve? (A cosa serve)
+Las Fichas técnicas catalogan toda la información que describe las características de los productos asociados como aptos para un contrato, una especificación funcional o un uso determinado.  
+Las fichas técnicas pueden ser personalizables por Cliente.  
+Se gestionan las revisiones y la trazabilidad entre las Fichas técnicas deseadas.
 
-:::important A cosa serve
-Le Schede tecniche catalogano tutte quelle informazioni che descrivono le caratteristiche dei prodotti associati come idonee ad un contratto, ad una specifica funzionale o ad un determinato impiego.   
-Le schede tecniche possono essere personalizzabili per Cliente.   
-Vengono gestite le revisioni e la rintracciabilità tra Schede tecniche desiderate.   
-
-A standard sono disponibili le reportistiche di:   
-> **Scheda tecnica**: scheda con l'elenco delle *Proprietà* e delle *Norme e Leggi* associate (per uso interno).   
-> **Scheda Prodotto**: scheda riportante i dati del *Prodotto* e delle *Proprietà* (per uso commerciale).   
+A estándar están disponibles los informes de:  
+> **scheda tecnica**: ficha con la lista de las *Propiedades* y de las *Normas y Leyes* asociadas (para uso interno).  
+> **scheda prodotto**: ficha que reporta los datos del *Producto* y de las *Propiedades* (para uso comercial).  
 :::
 
 
-## Pulsanti di comando
+## Botones de comando (Pulsanti di comando)
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Guardar (Salva)
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Scheda tecnica* visualizzata.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica Scheda
-
-E' possibile duplicare la *Scheda tecnica* visualizzata in una nuova *Scheda tecnica*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto il *Tipo scheda* della *Scheda tecnica* di origine.   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* della *Scheda tecnica* di origine.   
-> **Extra data**: elenco degli extra data previsti dal *Tipo scheda* indicato.   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di origine (tabulatore *Schede correlate* della *Scheda tecnica* di origine) e nella *Scheda tecnica* di destinazione (nell'expander *Origine dati scheda* presente nei *dati di testata*).   
-
-*Tipo scheda* e *Del cliente* sono proposti dal documento di origine; il *Codice* viene proposto se, al *Tipo scheda*, è associato un *Metodo di codifica*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-La nuova *Scheda tecnica* creata avrà la *Revisione* pari a *Zero*.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Al presionar este botón, se memorizan toda la información modificada de la *scheda tecnica* visualizada.
 
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+### ![](/img/neutral/common/duplicate.png) Duplicar Ficha (Duplica Scheda)
 
-Per poter creare una nuova *Revisione* della *Scheda tecnica* visualizzata è necessario premere il pulsante **Crea nuova revisione**.   
-Viene creata una nuova *Scheda tecnica*, con tutte le informazioni della *Scheda tecnica* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.   
-La *Scheda tecnica* di origine finisce la sua validità, la *Data fine validità* viene impostata pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* della *Scheda tecnica* viene visualizzata.   
+Es posible duplicar la *scheda tecnica* visualizada en una nueva *scheda tecnica*. Solo es necesario presionar el botón **duplica**.  
+Se visualizará un requerimiento de:  
+> **tipo scheda**: es el *Tipo de ficha* de la nueva *scheda tecnica* (dato obligatorio), se propone el *Tipo de ficha* de la *scheda tecnica* de origen.  
+> **del cliente**: es el *Cliente* de la nueva *scheda tecnica*, se propone el número de *Cliente* de la *scheda tecnica* de origen.  
+> **extra data**: listado de los datos extra previstos por el *Tipo de ficha* indicado.  
+> **nuovo codice**: es el *Código* de la nueva *scheda tecnica* (dato obligatorio), se propone en base a lo previsto por el *Método de Codificación* asociado al *Tipo de ficha técnica*.  
+> **duplica con rintracciabilità**: indica si se desea mantener relación/trazabilidad, en la *scheda tecnica* de origen (tabulador *Fichas relacionadas* de la *scheda tecnica* de origen) y en la *scheda tecnica* de destino (en el expander *Origen de datos de la ficha* presente en los *datos de cabecera*).  
 
-
-### ![](/img/neutral/common/item-web.png) Crea Piano di controllo
-
-Dalla *Scheda tecnica* è possibile creare un *Piano di controllo*; per fare ciò è necessario premere il pulsante **Crea Piano di controllo**.   
-Viene creato un nuovo *Piano di controllo*, vengono copiate solamente le *Proprietà* di origine con l'indicatore *Prove da rilevare*, tutte le altre informazioni della *Scheda tecnica* ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, della *Scheda tecnica* di origine, nel *Piano di controllo* di destinazione (nell'expander *Origine Piano di controllo* presente nei *dati di testata*).   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
+*Tipo de ficha* y *Del cliente* son propuestos por el documento de origen; el *Código* se propone si, al *Tipo de ficha*, está asociado un *Método de codificación*.  
+Luego, presione el botón **OK** o el botón **cancel** si se desea continuar con la actividad de duplicación o no.  
+La nueva *scheda tecnica* creada tendrá la *Revisión* igual a *Cero*.  
+Al finalizar la elaboración, se visualizará la nueva *scheda tecnica*.
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica prova
+### ![](/img/neutral/common/execute.png) Crear nueva revisión (Crea nuova revisione)
 
-Contestuale al tabulatore *Proprietà* il pulsante è abilitato solamente se, dall'elenco *Proprietà*, è stata selezionata una sola riga *Proprietà*.
-Tutte la informazioni della *Proprietà* di origine vengono duplicate in una nuova *Proprietà* accodata in *Sequenza* alle *Proprietà* già esistenti.
+Para poder crear una nueva *Revisión* de la *scheda tecnica* visualizada, es necesario presionar el botón **crea nuova revisione**.  
+Se crea una nueva *scheda tecnica*, con toda la información de la *scheda tecnica* de origen pero con el índice de *Revisión* incrementado y la *Fecha de inicio de validez* igual a la fecha actual.  
+La *scheda tecnica* de origen pierde su validez, la *Fecha de fin de validez* se establece igual a la fecha actual.  
+Al finalizar la elaboración, se visualizará la nueva *Revisión* de la *scheda tecnica*.
 
 
-## Gestione dati
+### ![](/img/neutral/common/item-web.png) Crear Plan de control (Crea Piano di controllo)
+
+Desde la *scheda tecnica* es posible crear un *Plan de control*; para ello, es necesario presionar el botón **crea piano di controllo**.  
+Se crea un nuevo *Plan de control*, se copian solo las *Propiedades* de origen con el indicador *Pruebas a detectar*, toda la otra información de la *scheda tecnica* pero con el índice de *Revisión* igual a *cero* y con *Fecha de inicio de validez* igual a la fecha actual. Se visualizará una solicitud de:  
+> **tipo piano di controllo**: es el *Tipo de plan de control* del nuevo *Plan de control* (dato obligatorio).  
+> **Número**: es el número progresivo del nuevo *Plan de control* (dato obligatorio), se propone en base a lo previsto por la *Numeración* asociada al *Tipo de plan de control* y a la fecha actual.  
+> **crea mantenendo la rintracciabilità**: indica si se desea mantener relación/trazabilidad, de la *scheda tecnica* de origen, en el *Plan de control* de destino (en el expander *Origen del Plan de control* presente en los *datos de cabecera*).  
+
+Luego, presione el botón **OK** o el botón **cancel** si se desea continuar con la actividad de creación o no.  
+Al finalizar la elaboración, se visualizará el nuevo *Plan de control*.
 
 
-### Dati di testata
+### ![](/img/neutral/common/duplicate.png) Duplicar prueba (Duplica prova)
 
-Le informazioni gestibili sono:   
-> **Tipo scheda**: è il *Tipo scheda tecnica* (dato obbligatorio).   
-> All'inserimento manuale di una nuova *Scheda tecnica* viene proposto il *Tipo scheda tecnica* indicato nell'expander *Schede tecniche* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+En contexto con el tabulador *Propiedades (Proprietà)*, el botón solo está habilitado si, de la lista *Propiedades*, se ha seleccionado una sola línea de *Propiedad*.  
+Toda la información de la *Propiedad* de origen se duplicará en una nueva *Propiedad* añadida en *Secuencia* a las *Propiedades* ya existentes.
+
+
+## Gestión de datos (Gestione dati)
+
+
+### Datos de cabecera (Dati di testata)
+
+Las informaciones gestionables son:  
+> **tipo scheda**: es el *Tipo de ficha técnica* (dato obligatorio).  
+> Al ingresar manualmente una nueva *scheda tecnica* se propone el *Tipo de ficha técnica* indicado en el expander *Fichas técnicas* del tabulador *generale* presente en los *Parámetros de Control de artículos*.  
 >
-> **Codice**: è il *Codice* della *Scheda tecnica* (dato obbligatorio).   
-> Viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
+> **codice**: es el *Código* de la *scheda tecnica* (dato obligatorio).  
+> Se propone en base a lo previsto por el *Método de Codificación* asociado al *Tipo de ficha técnica*.  
 >
-> **Revisione**: è la Revisione della *Scheda tecnica* (dato obbligatorio).   
-L'informazione è modificabile se si stà creando una nuova *Scheda tecnica* altrimenti è di sola lettura; si può variare in modo pilotato dal sistema usando il pulsante *Crea nuova revisione* che incrementano il precedente valore di *Revisione* di una unità.   
+> **revisione**: es la *Revisión* de la *scheda tecnica* (dato obligatorio).  
+La información es modificable si se está creando una nueva *scheda tecnica*; de lo contrario, es solo de lectura; puede variar de manera controlada por el sistema utilizando el botón *crea nuova revisione* que incrementa el valor anterior de *Revisión* en una unidad.  
 >
-> **Descrizione**: è la descrizione della *Scheda tecnica*.   
-> **Nome commerciale**: è la descrizione commerciale della *Scheda tecnica*.   
-> **Del cliente**: è la ragione sociale del *Cliente*. Le *Proprietà* sono personalizzate per il *Cliente*/*Articoli associati*.    
-> **Data richiesta/Richiesta da**: solo i riferimenti in quale data e qual'è la persona che ha richiesto la creazione della *Scheda tecnica*.    
+> **descrizione**: es la descripción de la *scheda tecnica*.  
+> **nome commerciale**: es la descripción comercial de la *scheda tecnica*.  
+> **del cliente**: es la razón social del *Cliente*. Las *Propiedades* son personalizadas para el *Cliente*/*Artículos asociados*.  
+> **Fecha solicitada / Solicitud de (Data richiesta/Richiesta da)**: solo los referentes en qué fecha y quién es la persona que ha solicitado la creación de la *scheda tecnica*.  
 >
-> **Validità: Inizio/Fine**: sono le date di inizio e di fine validità della *Scheda tecnica*.    
-> Le date sono gestite automaticamente alla creazione di una nuova *Revisione* della *Scheda tecnica*.
+> **Validez: Inicio / Fin (Validità: Inizio/Fine)**: son las fechas de inicio y fin de validez de la *scheda tecnica*.  
+> Las fechas se gestionan automáticamente al crear una nueva *Revisión* de la *scheda tecnica*.  
 >
-> **Responsabile**: è il *Dipendente* responsabile della *Scheda tecnica*.   
-> All'inserimento manuale di una nuova *Scheda tecnica* viene proposto il *Responsabile* indicato nell'expander *Schede tecniche* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+> **responsabile**: es el *Empleado* responsable de la *scheda tecnica*.  
+> Al ingresar manualmente una nueva *scheda tecnica* se propone el *Responsable* indicado en el expander *Fichas técnicas* del tabulador *generale* presente en los *Parámetros de Control de artículos*.  
 >
-> **Origine dati scheda**: expander dove è possibile inserire:   
+> **origine dati scheda**: expander donde es posible ingresar:  
 >
->> **Tipo/Scheda origine/Rev.**: contiene i riferimenti della *Scheda tecnica di origine* (*Tipo scheda*, *Codice* e *Revisione*).   
->> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione.   
->> L'informazione può essere variata se la *Scheda tecnica* è ancora in corso di validità.   
+>> **tipo/scheda origine/rev.**: contiene los referentes de la *scheda tecnica de origen* (*Tipo de ficha*, *Código* y *Revisión*).  
+>> **motivo della revisione**: una breve descripción del motivo que condujo a la revisión.  
+>> La información puede variar si la *scheda tecnica* aún está vigente.  
 >
-> **Note**: annotazioni libere.   
+> **note**: anotaciones libres.  
 
 
-### Attributi scheda
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Scheda tecnica*.   
-Vengono ereditati dagli *Attributi Scheda tecnica* associati al *Tipo scheda tecnica*.   
+### Atributos de ficha (Attributi scheda)
+Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *scheda tecnica*.  
+Se heredan de los *Atributos de scheda tecnica* asociados al *Tipo de ficha técnica*.
 
 
-### Proprietà
-Contiene le *Proprietà* degli *Articoli* o *Attributi articolo* della *Scheda tecnica*.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di visualizzazione/importanza della *Proprietà*.   
-> **Tipo prova**: è il codice della *Proprietà*.   
-> **Descrizione tipo prova**:  è la descrizione della *Proprietà*. L'informazione è di sola lettura.   
-> **Descrizione**: è la descrizione della *Proprietà* compilabile.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
-> **Strumento di misura**: è la *Categoria dello strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Proprietà*.   
-> **Prova da rilevare**: indica se la *Proprietà* è una *Prova da rilevare*.   
-Alla creazione di un *Piano di controllo* dalla *Scheda tecnica* la *Proprietà* verrà copiata nelle *Prove da rilevare*.   
-> **Unità di misura**: è l'*Unità di misura* con cui si esprimono il *Valore nominale* e i *Limiti minimo e massimo* se espressi in valore e non in percentuale.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Proprietà*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Data inizio validità**: è la data di inizio validità della *Proprietà*.   
-> **Data fine validità**: è la data di fine validità della *Proprietà*.   
-> **Stampabili**: indica se le informazioni sono stampabili o meno nei reports: *Scheda tecnica* e *Scheda Prodotto*.   
-> **Note**: annotazioni libere.   
+### Propiedades (Proprietà)
+Contiene las *Propiedades* de los *Artículos* o *Atributos del artículo* de la *scheda tecnica*.  
+La lista se compone de la siguiente información:  
+> **sequenza**: es la secuencia de visualización/importancia de la *Propiedad*.  
+> **tipo prova**: es el código de la *Propiedad*.  
+> **descrizione tipo prova**: es la descripción de la *Propiedad*. La información es de solo lectura.  
+> **descrizione**: es la descripción de la *Propiedad* editable.  
+> **riferimento piano di controllo standard**: es un campo descriptivo que contiene los referentes a codificaciones de pruebas reconocidas globalmente.  
+> **strumento di misura**: es la *Categoría del instrumento de medida* que se utilizará para poder detectar los *Valores* expresados en la *Propiedad*.  
+> **prova da rilevare**: indica si la *Propiedad* es una *Prueba a detectar*.  
+Al crear un *Plan de control* desde la *scheda tecnica*, la *Propiedad* se copiará en las *Pruebas a detectar*.  
+> **unità di misura**: es la *Unidad de medida* con la que se expresan el *Valor nominal* y los *Límites mínimo y máximo* si se expresan en valor y no en porcentaje.  
+> **tipo valore**: es el *Tipo de valor* con el que expresar el *Valor nominal*; los *Tipos de valor* posibles son: *Numérico*, *Sí/No* o *Texto*.  
+> **tipo limite**: habilitado si el *Tipo de valor* es *Numérico*, es el *Tipo de límite* que controlará la habilitación de los *Límites* y los valores de *Tolerancia*.  
+> **valore nominale**: es el valor teórico esperado de la *Propiedad*.  
+> **limite minimo**: límite mínimo permitido respecto al *Valor nominal*.  
+> **L.min.(toll-) (L.min.(toll-))**: es el límite de tolerancia negativa sobre el límite mínimo.  
+> **L.min.(toll+) (L.min.(toll+))**: es el límite de tolerancia positiva sobre el límite mínimo.  
+> **limite massimo**: límite máximo permitido respecto al *Valor nominal*.  
+> **L.max.(toll-) (L.max.(toll-))**: es el límite de tolerancia negativa sobre el límite máximo.  
+> **L.max.(toll+) (L.max.(toll+))**: es el límite de tolerancia positiva sobre el límite máximo.  
+> **%**: indica si el *Límite mínimo* y el *Límite máximo* están expresados en porcentaje.  
+> **data inizio validità**: es la fecha de inicio de validez de la *Propiedad*.  
+> **data fine validità**: es la fecha de fin de validez de la *Propiedad*.  
+> **stampabili**: indica si la información es imprimible o no en los informes: *scheda tecnica* y *Ficha de Producto*.  
+> **note**: anotaciones libres.  
 
-I Limiti di tolleranza positiva e negativa sui limiti minimi e massimi sono informazioni abitualmente dati dall'errore dello *Strumento di misura* utilizzato per rilevare i valori. In questa versione sono inseribili solo manualmente dall'operatore.   
-
-
-### Norme e Leggi
-Contiene i riferimenti a *Normative* e/o *legislazioni* applicabili alle *Proprietà* della *Scheda tecnica*.
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo**: è il *Tipo norma e legge* associata alla *Norma e Legge* indicata. L'informazione è di sola lettura.   
-> **Codice**: è la *Norma e Legge*.   
-> **Descrizione**: è la descrizione della *Norma e Legge* indicata. L'informazione è di sola lettura.   
-> **Note**: annotazioni libere.   
+Los límites de tolerancia positiva y negativa sobre los límites mínimos y máximos son informaciones que habitualmente son suministradas por el error del *Instrumento de medida* utilizado para detectar los valores. En esta versión, solo pueden ser ingresados manualmente por el operador.
 
 
-### Clienti
-Contiene i *Clienti* interessati agli *Articoli* con *Proprietà* simili ed elencati nei due rispettivi elenchi.   
-L'elenco si compone delle seguenti informazioni:   
-> **Cliente**: è la ragione sociale del *Cliente*. Le *Proprietà* sono personalizzate per i *Clienti*/*Articoli associati*.   
-> **Note**: annotazioni libere.   
+### Normas y Leyes (Norme e Leggi)
+Contiene los referentes a *Normativas* y/o *legislaciones* aplicables a las *Propiedades* de la *scheda tecnica*.  
+La lista se compone de la siguiente información:  
+> **tipo**: es el *Tipo de norma y ley* asociada a la *Norma y Ley* indicada. La información es de solo lectura.  
+> **codice**: es la *Norma y Ley*.  
+> **descrizione**: es la descripción de la *Norma y Ley* indicada. La información es de solo lectura.  
+> **note**: anotaciones libres.
 
 
-### Articoli associati
-Contiene gli *Articoli* con caratteristiche simili ed elencate nell'elenco delle *Proprietà*.
-L'elenco si compone delle seguenti informazioni:   
-> **Classe**: è la classe dell'*Articolo*.   
-> **Codice articolo**: è il codice dell'*Articolo*.   
-> **Descrizione articolo**: è la descrizione dell'*Articolo*.   
-> **Variante**: è il codice della *Variante articolo*.   
-> **Descrizione variante**: è la descrizione della *Variante articolo*. L'informazione è di sola lettura.   
-> **Tipo dichiarazione**: è il *Tipo di dichiarazione* (di non responsabilità) che verrà proposta nel report *Scheda Prodotto*.   
-> **Note**: annotazioni libere.   
+### Clientes (Clienti)
+Contiene los *Clientes* interesados en los *Artículos* con *Propiedades* similares y enumerados en las dos listas respectivas.  
+La lista se compone de la siguiente información:  
+> **cliente**: es la razón social del *Cliente*. Las *Propiedades* son personalizadas para los *Clientes*/*Artículos asociados*.  
+> **note**: anotaciones libres.
 
 
-### Attributi articolo
-In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata)) per cui le *Proprietà* della *Scheda tecnica* sono valide.   
+### Artículos asociados (Articoli associati)
+Contiene los *Artículos* con características similares y enumeradas en la lista de las *Propiedades*.  
+La lista se compone de la siguiente información:  
+> **classe**: es la clase del *Artículo*.  
+> **codice articolo**: es el código del *Artículo*.  
+> **descrizione articolo**: es la descripción del *Artículo*.  
+> **variante**: es el código de la *Variante artículo*.  
+> **descrizione variante**: es la descripción de la *Variante artículo*. La información es de solo lectura.  
+> **tipo dichiarazione**: es el *Tipo de declaración* (de no responsabilidad) que se propondrá en el informe *Ficha de Producto*.  
+> **note**: anotaciones libres.
 
 
-### Schede correlate
-In questo elenco è possibile visualizzare le *Schede tecniche* duplicate con rintracciabilità dalla *Scheda* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Scheda tecnica* selezionata.   
+### Atributos del artículo (Attributi articolo)
+Como alternativa a la lista de *Artículos asociados*, es posible ingresar características (en formato [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata)) por las cuales las *Propiedades* de la *scheda tecnica* son válidas.
 
 
-### Revisioni
-In questo elenco è possibile visualizzare lo storico delle *Revisioni* antecedenti alla *Schede tecniche* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Scheda tecnica* selezionata.   
+### Fichas correlacionadas (Schede correlate)
+En esta lista es posible visualizar las *Fichas técnicas* duplicadas con trazabilidad desde la *Ficha* visualizada.  
+A través de un doble clic del mouse sobre la línea deseada, es posible ejecutar la gestión de la *scheda tecnica* seleccionada.
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Revisiones (Revisioni)
+En esta lista es posible visualizar el historial de las *Revisiones* anteriores de la *scheda tecnica* visualizada.  
+A través de un doble clic del mouse sobre la línea deseada, es posible ejecutar la gestión de la *scheda tecnica* seleccionada.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+### Documentos adjuntos (Documenti collegati)
+En esta lista es posible ingresar y consultar cualquier archivo adjunto; es posible visualizar la vista previa.
+
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

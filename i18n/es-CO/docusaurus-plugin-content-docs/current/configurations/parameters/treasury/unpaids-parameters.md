@@ -1,60 +1,60 @@
 ---
-title: Parametri insoluti
+title: parametri insoluti
 sidebar_position: 2
 ---
 
-I parametri del modulo **Insoluti** si trovano in **Parametri > Tesoreria**.
+Los parámetros del módulo **insoluti** se encuentran en **Parámetros > Tesorería (Parametri > Tesoreria)**.
 
-Nei parametri degli insoluti si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo.
+En los parámetros de insolutos, se pueden preconfigurar los elementos predeterminados que se propondrán en los procedimientos del módulo.
 
-#### Tipo di registrazione  
-- **Conto transitorio + spese di protesto**: con tale impostazione si procederà alla riapertura della partita cliente su un conto transitorio ,per lo stesso importo dell'effetto d'origine, e addebitare le spese al conto bancario.   
-- **Cliente + spese di protesto**: si consiglia l'impostazione della scelta su ‘Cliente +spese di protesto ' al fine di poter riaprire la partita cliente ,per lo stesso importo dell'effetto d'origine, e addebitare le spese al conto bancario.  
+#### Tipo de registro (Tipo di registrazione)  
+- **Cuenta transitoria + gastos de protesto (Conto transitorio + spese di protesto)**: con esta configuración, se procederá a la reapertura de la cuenta del cliente en una cuenta transitoria, por el mismo importe del efecto original, y se cargarán los gastos a la cuenta bancaria.  
+- **Cliente + gastos de protesto (Cliente + spese di protesto)**: se recomienda configurar la opción en ‘Cliente + gastos de protesto' para poder reaperturar la cuenta del cliente, por el mismo importe del efecto original, y cargar los gastos a la cuenta bancaria.  
 
-#### Gestione partite  
-- **Riapertura della partita relativa alla fattura**: si consiglia l'impostazione della scelta su ‘Riapertura della partita relativa alla fattura'. Con questa opzione, infatti la procedura aprirà una nuova partita, ma con gli stessi riferimenti al numero e data documento della fattura d'origine. In caso di effetto riepilogativo di più documenti sarà inserito il primo della lista, ma nelle note della partita sarà gestita la lista di tutti i riferimenti.  
-- **Apertura di una nuova partita**: l'opzione alternativa, apertura di una nuova partita, andrà invece a creare una nuova partita con numero e data documento attribuiti sulla base del numero e data dell'effetto andato insoluto. 
+#### Gestión de cuentas (Gestione partite)  
+- **riapertura della partita relativa alla fattura**: se recomienda configurar la opción en ‘Reapertura de la cuenta relacionada con la factura'. Con esta opción, la procedimiento abrirá una nueva cuenta, pero con los mismos referencias al número y fecha del documento de la factura original. En caso de efecto resumido de varios documentos, se insertará el primero de la lista, pero en las notas de la cuenta se gestionará la lista de todas las referencias.  
+- **apertura di una nuova partita**: la opción alternativa, abrir una nueva cuenta, creará una nueva cuenta con el número y la fecha del documento asignados en función del número y la fecha del efecto ido insoluto. 
 
-#### Spese 
+#### Gastos (Spese) 
 
-La sezione è da impostare nel caso si voglia avere un default da proporre per la creazione della fattura al cliente per le spese di insoluto.
+La sección debe configurarse si se desea tener un valor predeterminado que se proponga para la creación de la factura al cliente por los gastos de insoluto.
 
-- **Tipo fattura**: consente di impostare il tipo di fattura da utilizzare.  
-- **Tipo pag.**: consente di impostare il tipo pagamento da utilizzare.  
-- **Unità di misura**: consente di impostare il l'unità di misura della riga articolo.  
-- **Sol. pagamento**: consente di impostare la soluzione di pagamento per generare la scadenza relativa.  
+- **tipo fattura**: permite establecer el tipo de factura a utilizar.  
+- **tipo pag.**: permite establecer el tipo de pago a utilizar.  
+- **unità di misura**: permite establecer la unidad de medida de la línea del artículo.  
+- **Solución de pago (Sol. pagamento)**: permite establecer la solución de pago para generar el vencimiento correspondiente.  
 
-#### Spese di rivalsa 
-- **Contabilizzazione a costo spese di rivalsa**: FluentisERP contabilizzerà il costo delle spese di rivalsa riaddebitate al cliente
-- **Tipo fatturazione**: consente di impostare il fatturato vendite ovvero la contropartita di ricavo da associare alla riga fattura.  
-- **Aliq. IVA**: consente di impostare l'aliquota iva. 
+#### Gastos de recobro (Spese di rivalsa) 
+- **contabilizzazione a costo spese di rivalsa**: FluentisERP contabilizará el costo de los gastos de recobro cargados al cliente.  
+- **tipo fatturazione**: permite establecer el facturado de ventas, es decir, la contrapartida de ingresos que se asociará a la línea de factura.  
+- **aliq. iva**: permite establecer la tasa de IVA. 
 
-#### Recupero bolli 
-- **Tipo fatturazione**: consente di impostare il fatturato vendite ovvero la contropartita di ricavo da associare alla riga fattura.  
-- **Aliq. IVA**: consente di impostare l'aliquota iva. 
+#### Recuperación de sellos (Recupero bolli) 
+- **tipo fatturazione**: permite establecer el facturado de ventas, es decir, la contrapartida de ingresos que se asociará a la línea de factura.  
+- **aliq. iva**: permite establecer la tasa de IVA. 
 
-#### Spese di rivalsa 
-- **Tipo fatturazione**: consente di impostare il fatturato vendite ovvero la contropartita di ricavo da associare alla riga fattura.
-- **Aliq. IVA**: consente di impostare l'aliquota iva. 
+#### Gastos de recobro (Spese di rivalsa) 
+- **tipo fatturazione**: permite establecer el facturado de ventas, es decir, la contrapartida de ingresos que se asociará a la línea de factura.  
+- **aliq. iva**: permite establecer la tasa de IVA. 
 
-#### Parametri 
-- **Causale di contabilità**: è la causale da proporre nelle procedure di contabilizzazione insoluti.  
-- **Conto spese di protesto**: è il conto da utilizzare per rilevare le spese addebitate dalla banca.  
-- **Conto transitorio**: è il sottoconto di transito che sarebbe utilizzato per la contabilizzazione nel caso sia stato impostata la gestione ‘Conto transitorio +spese di protesto '. Si consiglia di compilare comunque il campo (magari con lo stesso conto delle spese) in quanto sarà richiesto obbligatoriamente per l'esecuzione della procedura di contabilizzazione.  
-- **Conto transitorio banca**: è il  conto transitorio banca da utilizzare nel caso in cui l'insoluto sia relativo a effetti non presentati con la procedura (es. in caso di utilizzo del modulo DocFinance). 
- 
-:::danger Attenzione
-Valorizzando questo campo il conto impostato verrà utilizzato, indipendentemente dal settaggio dei flag sopra descritti nella sezione *Tipo di registrazione*, con priorità rispetto al conto di contropartita normalmente movimentato (il conto effetti se l'effetto è *emesso*, il conto s.b.f in testata distinta se l'effetto è *presentato*, ed il conto banca C/C se l'effetto è *accreditato*).
+#### Parámetros (Parametri) 
+- **causale di contabilità**: es la causa que se propondrá en los procedimientos de contabilización de insolutos.  
+- **conto spese di protesto**: es la cuenta que se utilizará para registrar los gastos cargados por el banco.  
+- **conto transitorio**: es la subcuenta de tránsito que se utilizaría para la contabilización en caso de haberse establecido la gestión ‘Cuenta transitoria + gastos de protesto'. Se recomienda completar este campo (quizás con la misma cuenta de gastos) ya que será requerido obligatoriamente para la ejecución del procedimiento de contabilización.  
+- **conto transitorio banca**: es la cuenta transitoria bancaria que se utilizará en caso de que el insoluto se relacione con efectos no presentados con el procedimiento (ej. en caso de uso del módulo DocFinance). 
 
-**Si consiglia pertanto di non valorizzarlo se non necessario.**
+:::danger Atención (Attenzione)
+Al valorizar este campo, la cuenta establecida se utilizará, independientemente de la configuración de los indicadores descritos anteriormente en la sección *tipo di registrazione*, con prioridad sobre la cuenta de contrapartida normalmente movida (la cuenta de efectos si el efecto es *emitido*, la cuenta s.b.f en cabecera de lista si el efecto es *presentado*, y la cuenta bancaria C/C si el efecto es *acreditado*).
+
+**Por lo tanto, se recomienda no valorizarlo si no es necesario.**
 :::
 
-- **Conto addebito spese a cliente**: è il  sottoconto di ricavo da utilizzare nella procedura di contabilizzazione insoluti su cessione nel caso in cui sia stata scelta l'opzione di addebito spese al cliente.  
-- **Tipo interesse**: all'insoluto può essere collegato un tasso di interesse di riferimento. In caso di cambiali può essere simulato un calcolo iniziale di interessi tra la data scadenze prevista del titolo e la data di rilevazione dell'insoluto.  
-- **Creazione singola partita**: questo flag consente di aprire un'unica partita per l'insoluto di una riba creata da N partite diverse. Normalmente non si utilizza, in modo da riaprire lo storico delle partite con i riferimenti originali
+- **Cuenta de cargo de gastos al cliente (Conto addebito spese a cliente)**: es la subcuenta de ingresos que se utilizará en el procedimiento de contabilización de insolutos por cesión en caso de que se haya elegido la opción de carga de gastos al cliente.  
+- **tipo interesse**: al insoluto se puede asociar una tasa de interés de referencia. En caso de letras, se puede simular un cálculo inicial de intereses entre la fecha de vencimiento prevista del título y la fecha de registro del insoluto.  
+- **creazione singola partita**: este indicador permite abrir una única cuenta para el insoluto de una letra creada por N cuentas diferentes. Normalmente no se utiliza, de modo que se reabren los históricos de cuentas con las referencias originales.
 
-:::danger Attenzione
-da non impostare se si gestiscono Agenti con maturazione su pagamento avvenuto o totale
+:::danger Atención (Attenzione)
+no se debe establecer si se gestionan Agentes con vencimiento sobre pago realizado o total.
 :::
 
-- **Data scadenza uguale a data scadenza effetto**: attivando questo parametro la data di scadenza della partita riaperta a fronte dell'insoluto viene imposta pari alla data di scadenza dell'effetto, anzichè alla data dell'insoluto.
+- **data scadenza uguale a data scadenza effetto**: al activar este parámetro, la fecha de vencimiento de la cuenta reabierta por el insoluto se establece igual a la fecha de vencimiento del efecto, en lugar de la fecha del insoluto.

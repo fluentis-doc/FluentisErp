@@ -1,4 +1,4 @@
 ---
-title: Logistica
+title: logistica
 sidebar_position: 1
 ---

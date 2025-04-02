@@ -1,23 +1,15 @@
 ---
-title: Proprietà Cespiti
+title: proprietà cespiti
 sidebar_position: 5
 ---
 
-Ultima scheda standard è quella relativa alle 'Proprietà del cespite': è possibile assegnare una lista di proprietà differenti al cespite in uso, con un'eventuale nota esplicativa aggiuntiva.
+La última pestaña estándar es la relacionada con las 'Propiedades del activo': es posible asignar una lista de propiedades diferentes al activo en uso, con una nota explicativa adicional si es necesario.
 
-Vedere l'articolo sulla **[registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record)**.
-
-
+Consulte el artículo sobre la **[registración contable (registrazione contabile)](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Nuova proprietà | Attiva il cursore per l'inserimento di una proprietà cespite. |
-| Cancella proprietà | Cancella la proprietà selezionata in griglia. |
-
-
-
-
-
-
+| Nueva propiedad (Nuova proprietà) | Activa el cursor para la inserción de una propiedad del activo. |
+| Eliminar propiedad (Cancella proprietà) | Elimina la propiedad seleccionada en la cuadrícula. |

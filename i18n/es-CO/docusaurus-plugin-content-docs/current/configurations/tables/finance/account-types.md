@@ -1,63 +1,62 @@
 ---
-title: Tipi conto
+title: tipi conto
 sidebar_position: 30
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
+Ruta: **Configuración > Tablas > Administración > tipi conto (Configurazione > Tabelle > Amministrazione > Tipi conto)**
 
-Percorso: **Configurazione > Tabelle > Amministrazione > Tipi conto**
+### Gestión de tabla
 
-### Gestione tabella
+La definición de la tabla de tipos de cuenta no es más que una 'calificación' que indica al procedimiento cómo gestionar el código de subcuenta al que está asignado:
 
-La definizione della tabella tipo conto non è altro che una ‘qualifica' che va a indicare alla procedura come gestire il codice di sottoconto cui è assegnato:
+- en primer lugar, identifica cómo valorar el detalle de gestión de los 4 tipos de registros previstos;
 
-- innanzi tutto va a identificare come valorizzare il dettaglio di gestione delle 4 tipologie di anagrafica previste;
+- en segundo lugar, identifica las secciones de pertenencia al balance (activos/pasivos/costos/ingresos);
 
-- in secondo luogo va a identificare le sezioni di appartenenza a bilancio (attivo/passivo/costi/ricavi);
+- finalmente, puede servir como criterio de filtro, típicamente dentro de la ayuda de cuentas.
 
-- può infine servire come criterio di filtro, tipicamente all'interno dell'help conti.
+#### Campos específicos
 
-#### Campi specifici
+**codice**: código del tipo de cuenta.  
 
-**Codice**: codice tipo conto.
+**descrizione**: descripción del tipo de cuenta.  
 
-**Descrizione**: descrizione tipo conto.
+**P. Activo (P. Attivo)**: con indicador en activo.  
 
-**P. Attivo**: con flag su attivo.
+**P. Pasivo (P. Passivo)**: con indicador en pasivo.  
 
-**P. Passivo**: con flag su passivo.
+**E. Costos (E. Costi)**: con indicador en costos.  
 
-**E. Costi**: con flag su costi.
+**E. Ingresos (E. Ricavi)**: con indicador en ingresos.  
 
-**E. Ricavi**: con flag su ricavi.
+**C. Orden (C. Ordine)**: con indicador en cuentas de orden.  
 
-**C. Ordine**: con flag su conti d'ordine.
+**cliente**: con indicador en clientes + activo.  
 
-**Cliente**: con flag su clienti + attivo.
+**fornitore**: con indicador en proveedores + pasivo.  
 
-**Fornitore**: con flag su fornitori + passivo.
+**banca**: con indicador en activo o pasivo + banco.  
 
-**Banca**: con flag su attivo o passivo + banca.
+**agente**: con indicador en agente + pasivo.  
 
-**Agente**: con flag su agente + passivo.
+**servizio**: con indicador en servicio. Las cuentas con este indicador activo son las subcuentas para las cuales el procedimiento gestiona automáticamente los asientos de ajuste e integración a nivel de balances interanuales, así como los asientos de cierre de contabilidad general.  
 
-**Servizio**: con flag su servizio. I conti con tale flag attivo sono i sottoconti per i quali Ia procedura gestisce in automatico le scritture di rettifica e integrazione a livello di bilanci infrannuali, ma anche le scritture di assestamento di contabilità generale.
-
-**Controlling**: I conti con questo tipo si possono utilizzare solo nell'area controlling e non in registrazioni di Contabilità generale
+**controlling**: Las cuentas de este tipo solo se pueden utilizar en el área de controlling y no en registros de contabilidad general.
 
 ---
 
-#### Flag successivi (da *Tutti* a *Impostazioni Conai*)**
+#### Indicadores posteriores (de *tutti* a *impostazioni conai*)**
 
-Con questi flag si abilita la visibilità dei corrispondenti tab all'interno delle anagrafiche contabili clienti / fornitori. Attivando *Tutti* i tab saranno tutti visibili.
+Con estos indicadores se habilita la visibilidad de las pestañas correspondientes dentro de las anagrafías contables de clientes / proveedores. Al activar *tutti*, todas las pestañas serán visibles.
 
-### Video Tutorials
+### Video Tutoriales
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
+:::important Ver También (Vedi Anche)
+[**VIDEO TUTORIALES SOBRE LAS TABLAS ADMINISTRATIVAS (VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE)**](/docs/video/finance/intro)
 :::

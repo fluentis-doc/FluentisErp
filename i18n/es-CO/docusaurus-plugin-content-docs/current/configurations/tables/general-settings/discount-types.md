@@ -1,34 +1,34 @@
 ---
-title: Tipi sconti
+title: Tipos de descuentos (Tipi sconti)
 sidebar_position: 8
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi sconti** e viene utilizzata per inserire le tipologie di sconto ed è già popolata durante l'installazione del programma. E' possibile aggiungere altri tipi di sconto e questi potranno essere utilizzati solo come sconti in percentuale.
+La tabla se abre a través de la ruta **Tablas > Configuración general > Tipos de descuentos (Tabelle > Impostazioni generali > Tipi sconti)** y se utiliza para ingresar los tipos de descuento, ya que viene pre-poblada durante la instalación del programa. Es posible agregar otros tipos de descuento y estos solo podrán usarse como descuentos en porcentaje.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, solo se debe hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos registros, es necesario hacer clic en la cuadrícula superior en la primera fila vacía o presionar el botón **nuovo**.
 
-## Sconto
+## Descuento (Sconto)
 
-**Codice/Descrizione**: indicare un codice univoco per la tipologia di sconto e relativa descrizione
+**codice/descrizione**: indicar un código único para el tipo de descuento y su descripción correspondiente.  
 
-**Priorità**: indicare la priorità per il reperimento di questo sconto
+**priorità**: indicar la prioridad para la obtención de este descuento.  
 
-**Applicazione**: indicare come applicare lo sconto. Può essere applicato in CASCATA rispetto agli sconti con priorità più alta oppure su IMPONIBILE indipendentemente da priorità.
+**applicazione**: indicar cómo aplicar el descuento. Puede aplicarse en CADENA (CASCATA) respecto a los descuentos con mayor prioridad o sobre la BASE IMPONIBLE (IMPONIBILE) independientemente de la prioridad.  
 
-**Escludi da provvigioni**: con questo flag gli sconti NON verranno conteggiati nel calcolo della base provvigionale.
+**Excluir de comisiones (Escludi da provvigioni)**: con este indicador, los descuentos NO se contabilizarán en el cálculo de la base de comisiones.  
 
-**Contab. al lordo**: è possibile attivando questo flag contabilizzare il ricavo al lordo dello sconto. Lo sconto verrà registrato poi su un conto indicato nella schermata a piè di pagina(Contabilizzazione Vendite)
+**Contabilizar al bruto (Contab. al lordo)**: es posible, activando este indicador, contabilizar el ingreso al bruto del descuento. El descuento se registrará posteriormente en una cuenta indicada en la pantalla del pie de página (Contabilizzazione Vendite).  
 
-### Descrizione Lingua
+### Descripción de idioma (Descrizione Lingua)
 
-Per ogni riga di sconto selezionata nella griglia superiore, è possibile mettere delle descrizioni in lingua che verranno poi riportate sui documenti.
+Para cada línea de descuento seleccionada en la cuadrícula superior, se pueden ingresar descripciones en el idioma que se incluirán en los documentos.  
 
-### Contabilizzazione Acquisti/Vendite
+### Contabilización de Compras/Ventas (Contabilizzazione Acquisti/Vendite)
 
-Per ogni riga di sconto selezionata nella griglia superiore, è possibile indicare un conto su cui pilotare gli importi degli sconti sia per la parte acquisti, sia per la parte vendite. Questa opzione verrà attivata qualora venga attivato il campo *Contabilizzare al lordo*.
+Para cada línea de descuento seleccionada en la cuadrícula superior, se puede indicar una cuenta para dirigir los montos de los descuentos tanto para la parte de compras como para la de ventas. Esta opción se activará si se activa el campo *Contabilizar al bruto (Contabilizzare al lordo)*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para toda la información no detallada en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

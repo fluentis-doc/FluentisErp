@@ -1,50 +1,49 @@
 ---
-title: Differenza partite aperte saldo contabile
+title: Diferencia de partidas abiertas saldo contable (Differenza partite aperte saldo contabile)
 sidebar_position: 4
 ---
 
-I dati che è possibile estrarre dalla presente form corrispondono al contenuto della stampa **Differenza tra saldo contabile e partite.**
+Los datos que se pueden extraer de este formulario corresponden al contenido de la impresión **Diferencia entre saldo contable y partidas.**
 
-Il significato della ricerca è quello di verificare le differenze (squadrature) tra i saldi contabili ed i saldi del partitario per ogni cliente e fornitore al fine di correggerle. Dette differenze possono originare da errori nella gestione del partitario o delle scritture contabili (mancato allineamento tra movimento contabile ed apertura partite o incasso / pagamento e chiusura partita).
+El significado de la búsqueda es verificar las diferencias (desajustes) entre los saldos contables y los saldos de las partidas para cada cliente y proveedor, con el fin de corregirlas. Dichas diferencias pueden originarse de errores en la gestión de las partidas o de los asientos contables (falta de alineación entre movimiento contable y apertura de partidas o cobro/pago y cierre de partida).
 
 :::danger NOTA IMPORTANTE:
-Nel caso dei **percipienti**, se si adotta il criterio di esposizione delle partite aperte al netto della ritenuta d'acconto (nei parametri del [tipo ritenuta d'acconto](/docs/configurations/tables/finance/withholding-tax-types), le differenze che saranno evidenziate devono essere ignorate (e non da considerare come errori) tenendo inoltre presente che saranno riassorbite all'atto del pagamento del compenso e della chiusura della relativa partita.
+En el caso de los **perceptores**, si se adopta el criterio de exposición de las partidas abiertas netas de la retención (en los parámetros del [tipo de retención]( /docs/configurations/tables/finance/withholding-tax-types)), las diferencias que se evidencien deben ser ignoradas (y no consideradas como errores) teniendo además en cuenta que serán absorbidas en el momento del pago de la compensación y del cierre de la respectiva partida.
 :::
 
 
-### **AREA DI FILTRO**:
+### **ÁREA DE FILTRO**:
 
-**Conto**: filtro principale per estrarre solo un sottoconto di cliente o fornitore. Non filtrando saranno riportati i sottoconti di tutti i clienti e fornitori che presentano differenze.
+**conto**: filtro principal para extraer solo una subcuenta de cliente o proveedor. Si no se filtra, se mostrarán las subcuentas de todos los clientes y proveedores que presentan diferencias.
 
-**Da /  A Data registrazione**: filtro sulle date di registrazione contabile
+**Desde / A Fecha de registro (Da / A Data registrazione)**: filtro sobre las fechas de registro contable.
 
-**Escludi partite chiuse**: attivando il flag verranno ignorate le partite nello stato Chiusa.
+**escludi partite chiuse**: al activar el indicador, se ignorarán las partidas en estado Cerrada.
 
-:::tip **UTILE**
-**Dettagli**: attivando questo flag i risultati saranno scomposti (anzichè raggruppati) evidenziando l'eventuale differenza per ogni singolo movimento contabile rispetto alla partita correlata (o al pagamento relativo in caso di movimento contabile di incasso / pagamento); L'opzione è utile in combinazione con il filtro sul sottoconto dello specifico cliente o fornitore per analizzare come si è formata la squadratura (su quali movimenti contabili) e procedere a correggerla.
+:::tip **ÚTIL**
+**dettagli**: al activar este indicador, los resultados se descompondrán (en lugar de agruparse), destacando la posible diferencia para cada movimiento contable respecto a la partida correlacionada (o el pago relativo en caso de movimiento contable de cobro/pago); La opción es útil en combinación con el filtro sobre la subcuenta del cliente o proveedor específico para analizar cómo se formó el desajuste (sobre qué movimientos contables) y proceder a corregirlo.
 :::
 
-:::tip **MOLTO UTILE**
-**Visualizzare solo i sottoconti / registrazioni con differenza diversa da zero**: il flag (consigliato) attivo permette di evidenziare solo i sottoconti che presentano delle differenze da correggere nascondendo invece quelli che risultano corretti.
+:::tip **MUY ÚTIL**
+**Mostrar solo las subcuentas / registros con diferencia distinta de cero**: el indicador (recomendado) activo permite destacar solo las subcuentas que presentan diferencias a corregir, ocultando en cambio aquellas que resultan correctas.
 :::
 
-**Raggruppa per divisa della società**: il flag attivo determina l'esposizione dei movimenti in divisa secondo la divisa della società. Esempio dei movimenti in USD saranno esposti e convertiti in Euro.
+**raggruppa per divisa della società**: el indicador activo determina la exposición de los movimientos en moneda según la moneda de la empresa. Un ejemplo es que los movimientos en USD se mostrarán y convertirán a Euro.
 
-### **GRIGLIA DEI RISULTATI**:
+### **REJILLA DE RESULTADOS**:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance/image1.png)
 
-Per ogni sottoconto relativo al cliente o fornitore sono visualizzati i totali, rispettivamente, DARE ed AVERE sia per la parte dei movimenti contabili, sia per la parte del partitario ed infine il saldo contabile e di partitario. Quindi una colonna con la differenza.
+Para cada subcuenta relacionada con el cliente o proveedor se visualizan los totales, respectivamente, DEBE (DARE) y HABER (AVERE) tanto para la parte de los movimientos contables como para la parte de las partidas y, por último, el saldo contable y de partida. Entonces, aparece una columna con la diferencia.
 
-In questo modo è possibile anche valutare la possibile origne della squadratura.
+De esta manera también es posible evaluar el posible origen del desajuste.
 
-A titolo di esempio: Un totale dare contabile postivo (e quindi un saldo dare contabile positivo) ed un totale dare partite a zero relativamente al sottoconto di un cliente può essere orginato da una apertura dei conti per la quale non si è provveduto anche all'apertura delle partite. 
+A modo de ejemplo: un total contable de debe positivo (y, por lo tanto, un saldo de debe contable positivo) y un total de debe partidas a cero en relación con la subcuenta de un cliente puede originarse de una apertura de cuentas para la cual no se ha procedido también a la apertura de las partidas.
 
 ---
 
-### **VIDEO TUTORIALS**
+### **TUTORIALS EN VIDEO**
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE PARTITE APERTE**](/docs/video/finance/intro)
+:::important Ver También
+[**TUTORIALS EN VIDEO SOBRE LAS PARTIDAS ABIERTAS**](/docs/video/finance/intro)
 :::
-

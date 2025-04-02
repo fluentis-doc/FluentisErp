@@ -1,20 +1,14 @@
 ---
-title: Ripristino
+title: ripristino
 sidebar_position: 4
 ---
 
-Utilizzare la presente Tab per annullare gli inserimenti nelle sezioni del modello rendendo il relativo documento nuovamente disponibile per l'inserimento nel modello.
+Utilice esta pestaña para anular las entradas en las secciones del modelo, haciendo que el documento correspondiente esté nuevamente disponible para su entrada en el modelo.
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca   | Pulsante per cancellare le fatture di tipo intracomunitario selezionate. |
-| Ripristina Intrastat | Pulsante per ripristinare l'intera dichiarazione Intrastat. |
-| Ripristina fattura | Pulsante per ripristinare una sola fattura presente nella dichiarazione Intrastat. |
-
-
-
-
-
-
+| Buscar (Ricerca)   | Botón para eliminar las facturas de tipo intracomunitario seleccionadas. |
+| ripristino Intrastat (Ripristina Intrastat) | Botón para restaurar toda la declaración Intrastat. |
+| ripristino factura (Ripristina fattura) | Botón para restaurar una sola factura presente en la declaración Intrastat. |

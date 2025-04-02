@@ -3,10 +3,10 @@ title: ARM
 sidebar_position: 1
 ---
 
-Application Resource Manager, di seguito definita anche con l'acronimo **ARM**, consente la configurazione delle applicazioni e dei parametri di accesso delle applicazioni a livello database ed utente.
+Application Resource Manager, también definida con el acrónimo **ARM**, permite la configuración de las aplicaciones y de los parámetros de acceso a las aplicaciones a nivel de base de datos y usuario.
 
-Definisce i menù applicativi standard e personalizzati per ruoli/utenti. Stabilisce inoltre restrizioni, diritti di accesso ad ogni singola procedura e funzionalità dell'applicazione.
+Define los menús de aplicaciones estándar y personalizados para roles/usuarios. También establece restricciones y derechos de acceso a cada procedimiento y funcionalidad de la aplicación.
 
-Per quanto concerne lo sviluppo di applicazioni, ARM è lo strumento che permette la consultazione, gestione e creazione degli oggetti business utilizzabili e utilizzati dalle applicazioni.
+En cuanto al desarrollo de aplicaciones, ARM es la herramienta que permite la consulta, gestión y creación de los objetos de negocio utilizables por las aplicaciones.
 
-Per dettagli, consulta la *documentazione completa dell'applicazione ARM* disponibile [**qui**](https://docs.fluentis.com/Arm/).
+Para más detalles, consulta la *documentación completa de la aplicación ARM* disponible [**aquí (qui)**](https://docs.fluentis.com/Arm/).

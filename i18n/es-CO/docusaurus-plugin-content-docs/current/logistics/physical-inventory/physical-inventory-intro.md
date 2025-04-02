@@ -1,42 +1,41 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo consente all'operatore di creare le liste inventariali, popolarle e confrontare i dati sulle giacenze fisiche con le giacenze logiche. Il sistema, in modo automatico e secondo i parametri inseriti dall'utente, procederà all'allineamento delle giacenze logiche con quelle fisiche allineando quindi il magazzino informatico a quello fisico. Una volta effettuata questa operazione sarà poi possibile passare alla valorizzazione del magazzino.
+El módulo permite al operador crear listas de inventario, poblarlas y comparar los datos sobre las existencias físicas con las existencias lógicas. El sistema, de manera automática y según los parámetros ingresados por el usuario, procederá a la alineación de las existencias lógicas con las físicas, alineando así el inventario informático con el físico. Una vez realizada esta operación, será posible proceder a la valorización del inventario.
 
-## I documenti gestiti
+## Los documentos gestionados (I documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/physical-inventory/physical-inventory-intro">Inventari fisici</Link>
-        <p><Link to="/docs/logistics/physical-inventory/inventory-management/search-physical-inventory" className="bold-link">Inventari fisici</Link></p>
-        <p>Permette agli operatori di creare liste inventariali, effettuare rilevazioni delle giacenze fisiche e confrontare i dati ottenuti con le giacenze logiche presenti nel sistema. Attraverso un processo automatizzato, Fluentis facilita l'allineamento tra le giacenze fisiche e quelle logiche, garantendo così un'accurata ottimizzazione della gestione delle risorse.</p>
-        <p><Link to="/docs/logistics/physical-inventory/stock-difference" className="bold-link">Differenze inventariali</Link></p>
-        <p>Garantisce un efficace allineamento tra le giacenze fisiche e logiche all'interno del magazzino. Questa funzionalità consente agli operatori di gestire e registrare le discrepanze identificate in modo sistematico, assicurando che ogni movimento di magazzino sia tracciato e contabilizzato in modo accurato.</p>
-        <p><Link to="/docs/logistics/physical-inventory/closing-history" className="bold-link">Storico chiusura</Link></p>
-        <p>Consente un accesso ai dati storicizzati relativi alle chiusure di magazzino, permettendo agli operatori di monitorare e analizzare le variazioni delle giacenze nel tempo. Questa funzionalità consente di consultare informazioni dettagliate come il costo ultimo, il costo medio e le giacenze di magazzino, tutte realizzate tramite la procedura di valorizzazione.</p>
-        <p><Link to="/docs/logistics/physical-inventory/warehouse-history" className="bold-link">Storico magazzino</Link></p>
-        <p>Permette agli utenti di consultare i dati storicizzati relativi alle operazioni di magazzino. Questa funzionalità consente di visualizzare un archivio dettagliato delle chiusure e delle valorizzazioni effettuate nel tempo, offrendo la possibilità di analizzare informazioni come il costo ultimo e medio di ciascun articolo, nonché le giacenze specifiche associate a ogni chiusura.</p>
-        <p><Link to="/docs/logistics/physical-inventory/warehouse-valorization" className="bold-link">Valorizzazione magazzino</Link></p>
-        <p>Permette agli operatori di effettuare chiusure di magazzino a una data specificata, registrando le rimanenze e consentendo l'allineamento delle informazioni logistiche con quelle contabili, garantendo così una gestione accurata delle risorse e dei costi associati.</p>
-        <p><Link to="/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity" className="bold-link">Inventario quantità valorizzato</Link></p>
-        <p>Garantisce alle aziende di avere una visione chiara e dettagliata delle proprie scorte. Attraverso questo report, gli utenti possono accedere a informazioni complete non solo sulle quantità fisiche degli articoli presenti in magazzino, ma anche sul loro valore</p>
+###     <Link to="/docs/logistics/physical-inventory/physical-inventory-intro">Inventarios físicos (Inventari fisici)</Link>
+        <p><Link to="/docs/logistics/physical-inventory/inventory-management/search-physical-inventory" className="bold-link">Inventarios físicos (Inventari fisici)</Link></p>
+        <p>Permite a los operadores crear listas de inventario, llevar a cabo mediciones de las existencias físicas y comparar los datos obtenidos con las existencias lógicas presentes en el sistema. A través de un proceso automatizado, Fluentis facilita la alineación entre las existencias físicas y lógicas, garantizando así una optimización precisa de la gestión de recursos.</p>
+        <p><Link to="/docs/logistics/physical-inventory/stock-difference" className="bold-link">Diferencias de inventario (Differenze inventariali)</Link></p>
+        <p>Garantiza una alineación efectiva entre las existencias físicas y lógicas dentro del inventario. Esta funcionalidad permite a los operadores gestionar y registrar sistemáticamente las discrepancias identificadas, asegurando que cada movimiento de inventario sea rastreado y contabilizado de manera precisa.</p>
+        <p><Link to="/docs/logistics/physical-inventory/closing-history" className="bold-link">Historial de cierres (Storico chiusura)</Link></p>
+        <p>Permite el acceso a datos históricos relacionados con los cierres de inventario, permitiendo a los operadores monitorear y analizar las variaciones de las existencias a lo largo del tiempo. Esta funcionalidad permite consultar información detallada como el costo último, el costo medio y las existencias de inventario, todo realizado a través del procedimiento de valorización.</p>
+        <p><Link to="/docs/logistics/physical-inventory/warehouse-history" className="bold-link">Historial de inventario (Storico magazzino)</Link></p>
+        <p>Permite a los usuarios consultar los datos históricos relacionados con las operaciones de inventario. Esta funcionalidad permite visualizar un archivo detallado de los cierres y valorizaciones realizadas a lo largo del tiempo, ofreciendo la posibilidad de analizar información como el costo último y medio de cada artículo, así como las existencias específicas asociadas a cada cierre.</p>
+        <p><Link to="/docs/logistics/physical-inventory/warehouse-valorization" className="bold-link">Valorización de inventario (Valorizzazione magazzino)</Link></p>
+        <p>Permite a los operadores realizar cierres de inventario en una fecha específica, registrando los saldos y permitiendo la alineación de la información logística con la contable, garantizando así una gestión precisa de los recursos y los costos asociados.</p>
+        <p><Link to="/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity" className="bold-link">Inventario valorizado con cantidad (Inventario quantità valorizzato)</Link></p>
+        <p>Garantiza a las empresas tener una visión clara y detallada de sus existencias. A través de este informe, los usuarios pueden acceder a información completa no solo sobre las cantidades físicas de los artículos presentes en inventario, sino también sobre su valor.</p>
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Para comenzar a utilizar (Per iniziare ad utilizzare)
 
-gli **Inventari fisici**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)        
-- definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
-- definire i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          
-- definire i [*Parametri differenze inventariali*](/docs/configurations/parameters/logistics/stock-difference/)           
-- definire un [*Tipo lista inventariale*](/docs/configurations/tables/logistics/stock-lists-types/)        
-- creare un dipendente nella tabella [Dipendenti](/docs/project-management/registers/employee/new-employee/)
+los **inventari fisici**:  
+- crear artículos en la [*anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)        
+- definir correctamente las [*causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) a utilizar       
+- definir los [*Parámetros iniciales de inventario (Parametri iniziali di magazzino)*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          
+- definir los [*parametri differenze inventariali*](/docs/configurations/parameters/logistics/stock-difference/)           
+- definir un [*Tipo de lista de inventario (Tipo lista inventariale)*](/docs/configurations/tables/logistics/stock-lists-types/)        
+- crear un empleado en la tabla [Empleados (Dipendenti)](/docs/project-management/registers/employee/new-employee/)
 
-
-## Collegamenti con altri moduli
-Dalle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) è possibile visualizzare i risultati dell'**inventario** e delle **chiusure di magazzino**.
+## Conexiones con otros módulos (Collegamenti con altri moduli)  
+Desde la [*registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) es posible visualizar los resultados del **inventario** y de los **cierres de inventario**.

@@ -1,32 +1,28 @@
 ---
-title: Ricerca Ordini di Produzione
+title: Búsqueda de Pedidos de Producción (Ricerca Ordini di Produzione)
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-Il modulo per la gestione degli **Ordini di Produzione** di Fluentis è una soluzione dinamica e versatile, pensata per supportare in modo efficace il controllo e la pianificazione delle attività produttive. Direttamente dalla form principale, gli utenti possono gestire ordini in diversi stati, tra cui "Lanciato" ed "Esecutivo", permettendo una chiara distinzione tra gli ordini pronti per l'avvio e quelli già in fase di esecuzione.
+:::important ¿Para qué sirve? (A cosa serve)
+El módulo para la gestión de los **ordini di produzione** de Fluentis es una solución dinámica y versátil, diseñada para apoyar de manera efectiva el control y la planificación de las actividades productivas. Directamente desde el formulario principal, los usuarios pueden gestionar órdenes en diferentes estados, incluyendo "Lanzado (Lanciato)" y "Ejecutivo (Esecutivo)", permitiendo una clara distinción entre los pedidos listos para el inicio y los que ya están en fase de ejecución.
 
-Una delle funzionalità principali è la possibilità di creare vari lotti a partire da un singolo ordine di produzione, consentendo così una maggiore flessibilità e una gestione più precisa delle quantità da produrre. Ogni lotto può essere associato a dettagli specifici, garantendo così una tracciabilità ottimale. La gestione intuitiva degli ordini non solo semplifica il monitoraggio delle fasi di produzione, ma facilita anche l'adeguamento ai cambiamenti delle esigenze operative, rendendo Fluentis un alleato strategico per l'efficienza produttiva.
+Una de las principales funcionalidades es la posibilidad de crear varios lotes a partir de un solo pedido de producción, lo que permite una mayor flexibilidad y una gestión más precisa de las cantidades a producir. Cada lote puede ser asociado a detalles específicos, garantizando así una trazabilidad óptima. La gestión intuitiva de los pedidos no solo simplifica el seguimiento de las fases de producción, sino que también facilita la adaptación a los cambios en las necesidades operativas, convirtiendo a Fluentis en un aliado estratégico para la eficiencia productiva.
 :::
 
-Il modulo **Ordini di Produzione** consente di gestire gli ordini di produzione.
+El módulo **ordini di produzione** permite gestionar los pedidos de producción.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Pulsanti specifici*:
+*Botones específicos (Pulsanti specifici)*:
 
-> **Generazione lotti**: questo pulsante, che si abilita solamente dopo aver selezionato un ordine, permette di creare dei lotti di produzione partendo dalla quantità dell'ordine di produzione stesso; quindi, da la possibilità di creare dei nuovi ordini di produzione con lo stesso numero principale, ma con numero lotto diverso e per ciascuno di essi permette di indicare le quantità da produrre;     
+> **generazione lotti**: este botón, que solo se habilita después de haber seleccionado un pedido, permite crear lotes de producción a partir de la cantidad del mismo pedido de producción; por lo tanto, da la posibilidad de crear nuevos pedidos de producción con el mismo número principal, pero con un número de lote diferente y para cada uno de ellos permite indicar las cantidades a producir;    
 :::note Nota
-La quantità del lotto di origine non può essere variata nel caso in cui siano già state create delle *Liste di prelievo*, delle *Dichiarazioni di produzione*, oppure nel caso in cui alcuni materiali siano già stati consumati. In questi casi è comunque possibile creare nuovi lotti di produzione, ma senza poter variare la quantità del lotto di origine.          
-:::
-> **Seleziona progetto**: questo pulsante permette di associare un progetto agli ordini di produzione selezionati;    
-> **Ricalcola disponibilità**: questo pulsante di lanciare il calcolo della disponibilità per gli ordini di produzione selezionati;    
-> **Modifica stato ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di variare lo stato degli ordini selezionati (Lanciato, Esecutivo, Evaso, Storicizzato);     
-> **Completamento dati ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di rigenerare i dati dell'ordine di produzione, sostituendoli con quelli presenti nella distinta base e nel ciclo di lavoro presenti in anagrafica;    
-> **Ricalcolo costi Ordine di Produzione**: questo pulsante permette di effettuare il ricalcolo dei costi di produzione degli ordini di produzione selezionati.    
-
-
-
-
+La cantidad del lote de origen no puede ser modificada si ya se han creado *Listas de recogida (Liste di prelievo)*, *dichiarazioni di produzione*, o si algunos materiales ya han sido consumidos. En estos casos es posible crear nuevos lotes de producción, pero sin poder modificar la cantidad del lote de origen.          
+::: 
+> **seleziona progetto**: este botón permite asociar un proyecto a los pedidos de producción seleccionados;    
+> **ricalcola disponibilità**: este botón inicia el cálculo de la disponibilidad para los pedidos de producción seleccionados;    
+> **modifica stato ordine**: este botón, que solo se habilita después de haber seleccionado uno o más pedidos, permite cambiar el estado de los pedidos seleccionados (Lanzado, Ejecutivo, Cumplido, Historizado);     
+> **completamento dati ordine**: este botón, que solo se habilita después de haber seleccionado uno o más pedidos, permite regenerar los datos del pedido de producción, reemplazándolos con los que están en la lista de materiales y en el ciclo de trabajo presentes en el registro;    
+> **ricalcolo costi ordine di produzione**: este botón permite realizar el recalculo de los costos de producción de los pedidos de producción seleccionados.

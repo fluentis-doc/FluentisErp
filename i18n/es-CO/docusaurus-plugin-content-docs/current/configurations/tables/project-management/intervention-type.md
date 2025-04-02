@@ -1,57 +1,57 @@
 ---
-title: Tipo intervento
+title: tipo intervento
 sidebar_position: 9
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipi intervento**.
-La tabella contiene le possibili tipologie di intervento. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di intervento (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+La tabla es accesible desde **Tablas (Tabelle) > Gestión de Proyectos (Gestione Progetti) > Tipos de intervención (Tipi intervento)**.  
+La tabla contiene los posibles tipos de intervención. Está compuesta por una parte de filtro en la que se puede buscar a través del código y la descripción, y por una cuadrícula en la que se enumerarán todos los tipos de intervención (basta hacer clic en el botón de ![](/img/neutral/common/search.png) Búsqueda (Ricerca) en la barra de herramientas para visualizarlos).
 
 ![](/img/it-it/configurations/tables/projects/intervention.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Dentro de este formulario también es posible agregar nuevos tipos en la cuadrícula, haciendo clic en el botón ![](/img/neutral/common/new.png) Nuevo (Nuovo): de este modo, se añadirá una nueva fila en la cuadrícula donde se podrán definir las siguientes informaciones:
 
-**Tipo**: è il codice del tipo intervento;
+**tipo**: es el código del tipo de intervención;  
 
-**Descrizione**: è la descrizione del tipo;
+**descrizione**: es la descripción del tipo;  
 
-**Tipo fatt.**: indica la tipologia di fattura associata;
+**tipo fatt.**: indica el tipo de factura asociada;  
 
-**Stato**: è possibile scegliere lo stato dell’intervento tra In Corso, Terminato, Controllato, In Contestazione, In Sospeso;
+**stato**: es posible elegir el estado de la intervención entre En Curso (In Corso), Terminado (Terminato), Controlado (Controllato), En Contestación (In Contestazione), En Suspenso (In Sospeso);  
 
-**Descrizione**: contiene la descrizione dello stato;
+**descrizione**: contiene la descripción del estado;  
 
-**Tipo attività**: contiene la tipologia di attività associata;
+**tipo attività**: contiene el tipo de actividad asociada;  
 
-**Operatore**: è possibile indicare un operatore di default, con il relativo** Nome** e **Cognome**;
+**operatore**: es posible indicar un operador por defecto, con el respectivo **nome** y **cognome**;  
 
-**Conto**: è possibile indicare un cliente di default se l’intervento viene creato da zero;
+**conto**: es posible indicar un cliente por defecto si la intervención se crea desde cero;  
 
-**Sottoconto**: contiene il sottoconto del cliente;
+**sottoconto**: contiene la subcuenta del cliente;  
 
-**Prezzo ivato**: indica se l’intervento gestisce prezzi ivati;
+**prezzo ivato**: indica si la intervención gestiona precios con IVA;  
 
-**Esterni**: indica se l’intervento è esterno;
+**esterni**: indica si la intervención es externa;  
 
-**Materiali**: indica se il tipo gestisce i materiali;
+**materiali**: indica si el tipo gestiona los materiales;  
 
-**In attività**: indica se l’intervento andrà tra le attività;
+**in attività**: indica si la intervención irá entre las actividades;  
 
-**Oneri viaggio**: indica se vengono gestiti gli oneri viaggio;
+**oneri viaggio**: indica si se gestionan los cargos de viaje;  
 
-**Crea attività automaticamente**: se flaggato, il cambio stato dell’Intervento (da Inserito a Controllato) genererà in automatico l’attività;
+**crea attività automaticamente**: si está marcado, el cambio de estado de la intervención (de Registrado a Controlado) generará automáticamente la actividad;  
 
-**Progetto obbligatorio**: se flaggato, prevede di indicare sempre il progetto per questo tipo intervento;
+**progetto obbligatorio**: si está marcado, requiere indicar siempre el proyecto para este tipo de intervención;  
 
-**Categoria attività obbligatoria**: se flaggato, prevede di indicare la categoria attività per questo tipo intervento;
+**Categoría de actividad obligatoria (Categoria attività obbligatoria)**: si está marcado, requiere indicar la categoría de actividad para este tipo de intervención;  
 
-**Anagrafica impianti obbligatoria**: se flaggato, prevede di indicare sempre l’anagrafica impianti per questo tipo intervento;
+**Registro de instalaciones obligatorio (Anagrafica impianti obbligatoria)**: si está marcado, requiere indicar siempre el registro de instalaciones para este tipo de intervención;  
 
-**Risorsa obbligatoria**: se flaggato, prevede di indicare sempre la risorsa per questo tipo intervento;
+**Recurso obligatorio (Risorsa obbligatoria)**: si está marcado, requiere indicar siempre el recurso para este tipo de intervención;  
 
-**% avanzamento obbligatorio**: se flaggato, prevede di indicare sempre % percentuale di avanzamento per questo tipo intervento;
+**% avanzamento obbligatorio**: si está marcado, requiere indicar siempre el porcentaje de avance para este tipo de intervención;  
 
-**Fatt. vend**: se flaggato, prevede di indicare sempre il fatturato per questo tipo intervento, a condizione che il servizio/materiale abbia flag Fatturabile attivo;
+**Facturación de ventas (Fatt. vend)**: si está marcado, requiere indicar siempre el facturado para este tipo de intervención, siempre que el servicio/material tenga el indicador de Facturable activo;  
 
-**L’IVA obbligatoria**: se flaggato, prevede di indiccare sempre l’IVA per questo tipo intervento.
+**IVA obligatoria (L’IVA obbligatoria)**: si está marcado, requiere indicar siempre el IVA para este tipo de intervención.  
 
-**Colore**: colore per identificare gli interventi nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**colore**: color para identificar las intervenciones en los calendarios del área de proyectos, como el [Planificador (Planner)](/docs/project-management/planned-interventions/planner) y [Asignación de recursos WBS (Assegnazione WBS risorse)](/docs/project-management/planned-interventions/wbs-resource-assignation).

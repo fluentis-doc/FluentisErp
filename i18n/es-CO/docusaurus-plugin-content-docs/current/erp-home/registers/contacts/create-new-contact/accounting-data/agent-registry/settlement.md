@@ -1,34 +1,33 @@
 ---
-title: Liquidazione
+title: liquidazione
 sidebar_position: 3
 ---
 
-In questa finestra si impostano gli elementi generali di calcolo della provvigione:
+En esta ventana se configuran los elementos generales de cálculo de la comisión:
 
-**Causale ritenuta**: il campo è **obbligatorio** per valorizzare automaticamente anche la parte della ritenuta d'acconto applicata sul compenso agente. Senza questo campo non sarà possibile valorizzare automaticamente il compenso dalla liquidazione agente; Il campo è collegato alla tabella [Tipi Ritenuta](/docs/configurations/tables/finance/withholding-tax-types).
+**causale ritenuta**: el campo es **obligatorio** para valorizar automáticamente también la parte de la retención de impuestos aplicada sobre la compensación del agente. Sin este campo, no será posible valorizar automáticamente la compensación de la liquidación del agente; el campo está vinculado a la tabla [Tipos de Retención (Tipi Ritenuta)](/docs/configurations/tables/finance/withholding-tax-types).
 
-**Periodo di liquidazione**: indica la periodicità della liquidazione agenti;
+**periodo di liquidazione**: indica la periodicidad de la liquidación de los agentes;
 
 :::note[Nota]
-Questo campo ha solo funzione informativa, non viene utilizzato concretamente nelle procedure di calcolo liquidazione provvigioni. 
+Este campo tiene solo una función informativa, no se utiliza concretamente en los procedimientos de cálculo de liquidación de comisiones. 
 
-In particolare, con il metodo del *pagamento avvenuto* la selezione delle provvigioni da liquidare sarà sempre "tutto" *fino alla data*, non è possibile selezionare quello che è maturato in uno specifico range di date e non è previsto un collegamento con il presente campo della periodicità.
-I range di filtro presenti nella procedura di [creazione automatica liquidazioni](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement) infatti sono riferiti alle date di ordini/bolle/fatture, non a livello di date di **pagamento**. 
+En particular, con el método de *pago realizado*, la selección de las comisiones a liquidar será siempre "todo" *hasta la fecha*, no es posible seleccionar lo que ha madurado en un rango de fechas específico y no se prevé un vínculo con este campo de periodicidad.
+Los rangos de filtro presentes en el procedimiento de [creación automática de liquidaciones (creazione automatica liquidazioni)](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement) son, de hecho, referidos a las fechas de pedidos/bolsas/facturas, no a nivel de fechas de **pago**. 
 
-Ciò è necessario perchè mentre per i documenti non c'è modo di aggiungerne di nuovi / modificare in periodi già liquidati, il discorso è diverso per i pagamenti: niente vieta di creare un pagamento con data registrazione in un periodo già chiuso in un calcolo liquidazione agenti (magari perché non non sono state riconciliate le banche o si è commesso un errore in una vecchia registrazione), dunque il dato verrebbe "perso" nei calcoli successivi.
+Esto es necesario porque, mientras que para los documentos no hay forma de agregar nuevos/modificar en períodos ya liquidados, el asunto es diferente para los pagos: nada impide crear un pago con fecha de registro en un período ya cerrado en un cálculo de liquidación de agentes (quizás porque no se han conciliado los bancos o se ha cometido un error en un registro anterior), por lo tanto, el dato se "perdería" en los cálculos posteriores.
 :::
 
-**Tipo di documento considerato per l'imponibile provvigionale**: criterio base per la maturazione della provvigione. E' possibile indicare che l'agente matura la provvigione sull'*ordine confermato*, sulla *consegna merce* (cioè ddt emesso), sull'*emissione fattura*, sulla *scadenza maturata* (indipendentemente dall'incasso o meno), sul *pagamento avvenuto* (cioè sulla base della quota incassata: se il cliente paga metà fattura, l'agente maturerà metà provvigione di quel documento), sul *pagamento totale* (cioè solo quando tutta la fattura è pagata l'agente matura tutta la provvigione).
+**Tipo de documento considerado para la base imponible de la comisión (Tipo di documento considerato per l'imponibile provvigionale)**: criterio base para la maduración de la comisión. Es posible indicar que el agente madura la comisión sobre el *pedido confirmado*, sobre la *entrega de mercancía* (es decir, DDT emitido), sobre la *emisión de factura*, sobre la *vencimiento madurado* (independientemente de la cobranza o no), sobre el *pago realizado* (es decir, basado en la cuota cobrada: si el cliente paga la mitad de la factura, el agente madurará la mitad de la comisión de ese documento), sobre el *pago total* (es decir, solo cuando toda la factura esté pagada, el agente madurará toda la comisión).
 
-:::danger[Attenzione]
-Questa impostazione NON può essere cambiata una volta che si iniziano a creare le liquidazioni per l'agente nell'area vendite: sarà necessario creare una nuova anagrafica con la nuova impostazione (e utilizzare la procedura ‘Assegnazione agenti' per aggiornare le anagrafiche clienti massivamente in Home>Contatti).
-:::
-
-
-:::note Nota
-la modalità **Pagamento Totale** è disponibile solo utilizzando la [procedura di calcolo delle liquidazioni agenti gestita dal modulo Amministrazione](/docs/finance-area/professional-men/procedures/calculate-commissions) che non è disponibile nel calcolo del modulo Agenti in vendita.
+:::danger[Atención]
+Esta configuración NO puede cambiarse una vez que se comienzan a crear las liquidaciones para el agente en el área de ventas: será necesario crear un nuevo registro con la nueva configuración (y utilizar el procedimiento ‘Asignación de agentes' para actualizar masivamente los registros de clientes en Home>Contactos).
 :::
 
 :::note Nota
-la procedura di gestione delle 'Commissioni' (provvigioni) in contabilità consente una modifica 'al volo' delle logiche di maturazione degli agenti: questo perché la logica di maturazione è memorizzata a livello di singola fattura/documento.
+el modo **Pago Total** está disponible solo utilizando la [procedimiento de cálculo de liquidaciones de agentes gestionado por el módulo Administración](/docs/finance-area/professional-men/procedures/calculate-commissions) que no está disponible en el cálculo del módulo Agentes en ventas.
+:::
+
+:::note Nota
+el procedimiento de gestión de 'Comisiones' (provvigioni) en contabilidad permite una modificación 'al vuelo' de la lógica de maduración de los agentes: esto se debe a que la lógica de maduración se almacena a nivel de cada factura/documento.
 :::

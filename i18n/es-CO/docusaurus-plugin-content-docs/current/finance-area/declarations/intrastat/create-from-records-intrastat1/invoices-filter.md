@@ -1,23 +1,15 @@
 ---
-title: Filtro fatture
+title: filtro fatture
 sidebar_position: 2
 ---
 
-La presente Tab visualizza la lista delle registrazioni di tipo intracomunitario, intestate a soggetti definiti **intrastat** nell'anagrafica, **che abbiano la tab Intrastat compilata (tale tab è visibile se la causale contabile ha il flag INTRASTAT attivo).**  
+Esta pestaña muestra la lista de los registros de tipo intracomunitario, asignados a sujetos definidos como **intrastat** en el registro, **que tengan la pestaña de Intrastat completada (tale tab è visibile se la causale contabile ha il flag INTRASTAT attivo).**  
 
-La selezione viene confermata premendo il pulsante **Avanti** presente nella ribbon bar, che sposterà la visualizzazione alla seconda scheda Parametri.
+La selección se confirma presionando el botón **avanti** en la barra de ribbon, que trasladará la visualización a la segunda pestaña de Parámetros.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per ricercare la lista delle registrazioni contabili di tipo intracomunitario. |
-| Seleziona tutti | Permette di selezionare tutte le righe della griglia di ricerca |
-| Deseleziona tutti | Permette di deselezionare tutte le righe della griglia di ricerca |
-| Avanti | Trasferisce le righe selezionate alla Tab Parametri (dove sarà visualizzata l'anteprima delle righe del modello intra per il completamento di eventuali dati mancanti) |
-
-
-
-
-
-
+| Buscar (Ricerca) | Botón para buscar la lista de registros contables de tipo intracomunitario. |
+| Seleccionar todos (Seleziona tutti) | Permite seleccionar todas las filas de la cuadrícula de búsqueda. |
+| Deseleccionar todos (Deseleziona tutti) | Permite deseleccionar todas las filas de la cuadrícula de búsqueda. |
+| Siguiente (Avanti) | Transfiere las filas seleccionadas a la pestaña de Parámetros (donde se mostrará la vista previa de las filas del modelo intra para completar cualquier dato faltante). |

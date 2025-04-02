@@ -1,39 +1,39 @@
 ---
-title: Categorie strumenti di misura
+title: categorie strumenti di misura
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Categorie strumenti di misura**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Calidad (Qualità) > Calibración de instrumentos (Taratura strumenti) > categorie strumenti di misura (Categorie strumenti di misura)**.
 
-In questa tabella è possibile codificare le *Categorie strumenti di misura*.   
-La *Categoria strumento di misura* è parte integrante, assieme al *Codice* e *Matricola*, del codice univoco dello *Strumento di misura*.
-Alcuni esempi di utilizzo delle *Categorie strumenti di misura* li troviamo nelle gestioni:
-> **Strumenti di misura** - nei *dati di testata*;   
-e in tutte le gestioni dove viene ultilizzato lo *Strumento di misura*.
+En esta tabla es posible codificar las *categorie strumenti di misura*.  
+La *categoria strumento di misura* es parte integral, junto con el *codice* y el *matricola*, del código único del *strumento di misura*.  
+Algunos ejemplos de uso de las *categorie strumenti di misura* los encontramos en las gestiones:
+> **strumenti di misura** - en los *dati di testata*;  
+y en todas las gestiones donde se utiliza el *strumento di misura*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Categorie strumenti di misura**
+**Búsqueda de categorías de instrumentos de medida (Ricerca Categorie strumenti di misura)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Categorie strumenti di misura**
+**Inserción de categorías de instrumentos de medida (Inserimento Categorie strumenti di misura)**
 
-Per poter inserire nuove *Categorie strumenti di misura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *categorie strumenti di misura* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## Categorie strumenti di misura
+## categorie strumenti di misura (Categorie strumenti di misura)
 
-E' l'elenco dove vengono inserite le informazioni principali delle *Categorie strumenti di misura*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Categoria strumento di misura*.   
-> **Descrizione**: è la descrizione della *Categoria strumento di misura*.   
-> **Unità di misura**: è l'*Unità di misura* con la quale vengono rilevati i valori degli strumenti facenti parte della categoria.   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan las principales informaciones de las *categorie strumenti di misura*.  
+La lista se compone de la siguiente información:  
+> **codice**: es el código de la *categoria strumento di misura*.  
+> **descrizione**: es la descripción de la *categoria strumento di misura*.  
+> **unità di misura**: es la *Unidad de medida* con la cual se registran los valores de los instrumentos que pertenecen a la categoría.  
+> **note**: anotaciones libres.
 
-### Extra data
+### Datos adicionales (Extra data)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Categoria strumento di misura*.   
-Questi *Extra data* vengono ereditati nello *Strumento di misura* di quella determinata categoria.   
+Es posible ingresar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *categoria strumento di misura*.  
+Estos *extra data* se heredan en el *strumento di misura* de esa determinada categoría.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

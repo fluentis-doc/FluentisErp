@@ -1,255 +1,255 @@
 ---
-title: Nuova registrazione
+title: nuova registrazione
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-L'introduzione alle registrazioni di magazzino di Fluentis rappresenta un elemento cruciale per la gestione efficiente delle operazioni logistiche, permettendo una registrazione accurata dei movimenti di beni all'interno del sistema. Le registrazioni possono essere create automaticamente attraverso diverse procedure, come carico di documenti (ad esempio, DDT e fatture di acquisto) o scarico (tramite DDT e fattura di vendita). Questo processo non solo semplifica l'inserimento dei movimenti, ma garantisce anche la sincronizzazione delle informazioni tra i vari documenti operativi.
+:::important ¿Para qué sirve? (A cosa serve)
+La introducción a las registraciones de almacén de Fluentis representa un elemento crucial para la gestión eficiente de las operaciones logísticas, permitiendo un registro preciso de los movimientos de bienes dentro del sistema. Las registraciones pueden ser creadas automáticamente a través de diversos procedimientos, como la carga de documentos (por ejemplo, DDT y facturas de compra) o descarga (mediante DDT y factura de venta). Este proceso no solo simplifica la inserción de movimientos, sino que también garantiza la sincronización de la información entre los diversos documentos operativos.
 
-Ogni registrazione di magazzino permette all'operatore di specificare dettagli fondamentali quali magazzino, causale e data. La registrazione dell'articolo avviene attraverso una griglia che consente di indicare quantità e unità di misura, con l'opzione di gestire lotti e numeri di serie quando necessario. Inoltre, sono implementati diversi flag che governano la necessità di documenti obbligatori e il trattamento delle causali di contropartita, garantendo così la tracciabilità e la conformità delle operazioni di magazzino.
+Cada registro de almacén permite al operador especificar detalles fundamentales como almacén, causa y fecha. La registración del artículo se lleva a cabo a través de una cuadrícula que permite indicar cantidades y unidades de medida, con la opción de gestionar lotes y números de serie cuando sea necesario. Además, se implementan diversos indicadores que rigen la necesidad de documentos obligatorios y el tratamiento de las causas de contrapartida, garantizando la trazabilidad y la conformidad de las operaciones de almacén.
 
-Un altro aspetto distintivo è la possibilità di personalizzare le registrazioni in base alle esigenze specifiche del magazzino, scegliendo tra gestioni per ubicazione, progetto o cliente/fornitore. Questa flessibilità consente di adattare il sistema alle varie configurazioni logistiche aziendali, rendendo Fluentis uno strumento potente per la gestione del magazzino
+Otro aspecto distintivo es la posibilidad de personalizar las registraciones de acuerdo con las necesidades específicas del almacén, eligiendo entre gestiones por ubicación, proyecto o cliente/proveedor. Esta flexibilidad permite adaptar el sistema a las diversas configuraciones logísticas empresariales, convirtiendo a Fluentis en una herramienta poderosa para la gestión del almacén.
 :::
 
-La form si apre:
-- tramite il percorso **Logistica > Magazzino  > Registrazioni > Nuova registrazione**  
-oppure  
-- cliccando sul pulsante **Nuovo** dalla form di ricerca **Registrazioni**.
+El formulario se abre:
+- a través de la ruta **Logística > Almacén > Registraciones > Nueva registración**  
+o bien  
+- haciendo clic en el botón **Nuevo** desde el formulario de búsqueda **Registraciones**.
 
-## Creazione automatica della registrazione
+## Creación automática del registro
 
-Le registrazioni di magazzino possono essere create automaticamente mediante le *procedure di carico* di DDT di acquisto, fatture di acquisto, ricevimenti merci, mediante le *procedure di scarico* DDT di vendita, fattura di vendita, picking list, lista di prelievo materiali, DDT di consegna di conto lavoro, oppure mediante le *procedure di registrazione di segnalazioni di produzione e di rientri di conto lavoro*. 
+Las registraciones de almacén pueden ser creadas automáticamente mediante las *procedimientos de carga* de DDT de compra, facturas de compra, recepciones de mercancías, mediante los *procedimientos de descarga* DDT de venta, factura de venta, lista de picking, lista de preselección de materiales, DDT de entrega de trabajo por cuenta, o mediante los *procedimientos de registro de informes de producción y de devoluciones de trabajo por cuenta*. 
 
-## Creazione manuale della registrazione
+## Creación manual del registro
 
-L'utente può inserire anche manualmente le registrazioni di magazzino, impostando tutti i campi richiesti a seconda del tipo di articolo e del tipo di causale che si decide di utilizzare.
+El usuario también puede ingresar manualmente los registros de almacén, configurando todos los campos requeridos según el tipo de artículo y el tipo de causa que decide utilizar.
 
-La finestra della nuova registrazione di magazzino consta di 2 tab: **Registrazione** e **Contropartita**.
+La ventana del nuevo registro de almacén consta de 2 pestañas: **registrazione** y **contropartita**.
 
 :::note Nota
-Il tab **Contropartita** risulta attivo solo se la causale che viene inserita nel primo tab ha una causale di contropartita associata nell'apposita tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates).     
+La pestaña **Contrapartida** resulta activa solo si la causa que se inserta en la primera pestaña tiene una causa de contrapartida asociada en la tabla correspondiente de [Causas de almacén (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates).     
 :::
 
-All'interno della registrazione di magazzino possono essere inseriti diversi movimenti di magazzino per articoli differenti e con gestioni diverse tra loro. 
+Dentro del registro de almacén se pueden insertar diversos movimientos de almacén para diferentes artículos y con gestiones distintas entre sí. 
 
-## Registrazione
+## Registro (Registrazione)
 
-Questo tab è costituito da una testata e da 4 diverse griglie, la prima delle quali è quella al cui interno vengono inseriti gli articoli che vengono movimentati mediante la registrazione di magazzino; le altre 3 griglie vengono utilizzate a seconda di come sono impostate l'anagrafica dell'articolo e la causale di magazzino inserita in testata.
+Esta pestaña se compone de un encabezado y 4 cuadrículas diferentes, la primera de las cuales es aquella en la que se insertan los artículos que se mueven mediante el registro de almacén; las otras 3 cuadrículas se utilizan según cómo están configurados el registro del artículo y la causa de almacén insertada en el encabezado.
 
-### Registrazione - sezione fissa
+### Registro - sección fija
 
-**Magazzino**: rappresenta il codice del magazzino sul quale effettuare la registrazione;  
-**Causale di magazzino**: dato obbligatorio al fine dell'inserimento dei movimenti di magazzino. Si seleziona utilizzando l'apposita combo box, nella quale vengono proposte solo le causali legate al magazzino selezionato.       
-**Data registrazione**: viene proposta in automatico uguale alla data corrente e identifica nello specifico il giorno in cui vengono effettuati i movimenti di magazzino che saranno poi inseriti nell'apposita griglia, quindi può anche essere modificata impostando per esempio una data precedente alla data corrente. Questa data deve però essere sempre compresa tra le date di Inizio e Fine Periodo inserite nel primo tab dei *Parametri iniziali di magazzino*;   
-**Numero della registrazione**: viene proposta in automatico; è un progressivo per magazzino che si azzera ogni giorno, ripartendo automaticamente dal numero 1. Entrambi i dati sono editabili dall'utente;
+**magazzino**: representa el código del almacén sobre el cual realizar el registro;  
+**Causa de almacén (Causale di magazzino)**: dato obligatorio para la inserción de los movimientos de almacén. Se selecciona utilizando la combo box correspondiente, en la que solo se proponen las causas relacionadas con el almacén seleccionado.  
+**data registrazione**: se propone automáticamente igual a la fecha actual y especifica el día en el que se realizan los movimientos de almacén que luego se insertarán en la cuadrícula correspondiente, por lo que también puede ser modificada configurando, por ejemplo, una fecha anterior a la fecha actual. Sin embargo, esta fecha debe estar siempre comprendida entre las fechas de Inicio y Fin del Período ingresadas en la primera pestaña de los *Parámetros iniciales de almacén*;  
+**numero della registrazione**: se propone automáticamente; es un progresivo por almacén que se reinicia cada día, comenzando automáticamente desde el número 1. Ambos datos son editables por el usuario;
 
 :::note Nota
-Dopo l'inserimento del primo articolo nella griglia, la data e il numero della registrazione diventano read-only.
+Después de insertar el primer artículo en la cuadrícula, la fecha y el número del registro se vuelven de solo lectura (read-only).
 :::
 
-Dopo aver inserito questi dati, l'utente può procedere all'inserimento dei movimenti nella griglia degli articoli. Tuttavia esistono altri dati di testata che si possono compilare, e precisamente:
+Después de haber ingresado estos datos, el usuario puede proceder a la inserción de los movimientos en la cuadrícula de artículos. Sin embargo, existen otros datos de encabezado que se pueden completar, específicamente:
 
-**Documento interno**: in questo campo l'utente può dare una specifica ulteriore riguardo al motivo per cui vene creata la registrazione. Se la registrazione è stata creata in automatico dalla registrazione di una *Segnalazione di produzione*, in questo campo compare l'indicazione riguardante il numero della segnalazione e la fase per cui la stessa è stata effettuata; nel campo data del **Documento interno** l'utente può specificare la data relativa al documento in base al quale sta inserendo la registrazione. Se la registrazione è stata creata in automatico tramite il *carico* o lo *scarico* di un documento, in questo campo viene impostata automaticamente la data di inserimento del documento.  
-Se la registrazione è stata creata in automatico dalla registrazione di una *Segnalazione di produzione*, in questo campo compare la data di effettivo inizio dell'ordine di produzione per cui è stata effettuata la segnalazione di produzione.  
+**Documento interno**: en este campo el usuario puede dar una especificación adicional sobre el motivo por el cual se crea el registro. Si la registración ha sido creada automáticamente a partir del registro de una *Informe de producción*, en este campo aparece la indicación de respecto al número de la señalización y la fase para la que se realizó; en el campo de fecha del **Documento interno** el usuario puede especificar la fecha correspondiente al documento en base al cual está ingresando la registración. Si la registración ha sido creada automáticamente a través de la *carga* o *descarga* de un documento, en este campo se configura automáticamente la fecha de inserción del documento.  
+Si la registración ha sido creada automáticamente a partir del registro de una *Informe de producción*, en este campo aparece la fecha de inicio efectivo del pedido de producción para el cual se hizo la señalización de producción.  
 
-**Versione**: tramite questa combo box l'utente può impostare una versione diversa da quella di default, proposta comunque in automatico dalla procedura;
+**Versión**: mediante esta combo box, el usuario puede establecer una versión diferente a la de defecto, que se propone automáticamente por el procedimiento;
 
-**Conto**: in questi 3 campi vengono specificati i relativi dati del Cliente/Fornitore: *conto*, *sottoconto*, *ragione sociale*.  
-Se la registrazione è stata creata in automatico tramite il *carico* o lo *scarico* di un documento, in questo campo vengono impostati automaticamente i dati del cliente o del fornitore intestatario del documento stesso.
+**Cuenta**: en estos 3 campos se especifican los datos correspondientes del Cliente/Proveedor: *cuenta*, *subcuenta*, *razón social*.  
+Si la registración ha sido creada automáticamente a través de la *carga* o *descarga* de un documento, en este campo se configuran automáticamente los datos del cliente o del proveedor que figura en el documento correspondiente.
 
-**Documento di riferimento**: in questo campo l'utente può specificare il documento che ha generato la registrazione stessa.  
-Se la registrazione è stata creata in automatico tramite il *carico* o lo *scarico* di un documento, in questo campo viene impostata automaticamente una descrizione parametrica del documento, in cui compaiono anche la descrizione del tipo di documento ed il suo numero.  
-Se la registrazione è stata creata in automatico dalla registrazione di una *Segnalazione di produzione*, in questo campo compare il numero dell'ordine di produzione per cui è stata effettuata la segnalazione di produzione.  
+**Documento de referencia**: en este campo el usuario puede especificar el documento que ha generado la registración.  
+Si la registración ha sido creada automáticamente a través de la *carga* o *descarga* de un documento, en este campo se configura automáticamente una descripción paramétrica del documento, en la que aparecen también la descripción del tipo de documento y su número.  
+Si la registración ha sido creada automáticamente a partir del registro de una *Informe de producción*, en este campo aparece el número del pedido de producción para el cual se hizo la señalización de producción.  
 
-**Progetto**: con un doppio click si apre un *Help progetti* che permette di collegare un progetto all'intera registrazione che si sta inserendo. Essa viene poi replicata in ciascuna delle righe articolo inserite nella griglia;
+**Proyecto**: con un doble clic se abre un *Help proyectos* que permite vincular un proyecto a toda la registración que se está ingresando. Esta se replicará en cada una de las líneas de artículos insertadas en la cuadrícula;
 
-**Nota**: in questo campo è possibile inserire una nota libera relativa alla registrazione di magazzino.
+**Nota**: en este campo es posible insertar una nota libre relacionada con la registración de almacén.
 
-Come già sopra specificato, l'utente può passare a questo punto all'inserimento dei movimenti nella prima griglia, quella che conterrà gli articoli da movimentare.
+Como ya se indicó anteriormente, el usuario puede proceder a este punto a la inserción de los movimientos en la primera cuadrícula, que contendrá los artículos a mover.
 
-### Articoli
+### Artículos
 
-In questa prima griglia l'utente può inserire, usando il *Help articoli*, la lista di articoli da movimentare.
+En esta primera cuadrícula, el usuario puede insertar, utilizando el *Help artículos*, la lista de artículos a mover.
 
-**Numero movimento**: in questa colonna compare il numero progressivo del movimento. Esso parte sempre da 1 ed è un semplice progressivo che si azzera non appena si apre un'altra registrazione di magazzino. Il campo è read-only e non consente il recupero manuale dei numeri di movimento, nel caso di eliminazione manuale di righe movimento.
+**Número de movimiento**: en esta columna aparece el número progresivo del movimiento. Siempre comienza en 1 y es un simple progresivo que se reinicia tan pronto como se abre otro registro de almacén. El campo es de solo lectura (read-only) y no permite la recuperación manual de los números de movimiento, en caso de eliminación manual de líneas de movimiento.
 
-**Classe**: in questo campo, tramite l'apposita combo box, è possibile selezionare la classe dell'articolo;
+**Clase**: en este campo, utilizando la combo box correspondiente, es posible seleccionar la clase del artículo;
 
-**Codice articolo**: in questa colonna è possibile digitare manualmente il codice oppure usando il *Help Articoli*;
+**Código artículo**: en esta columna se puede introducir manualmente el código o utilizar el *Help Artículos*;
 
-**Variante**: tramite questa combo box l'utente può selezionare ed inserire una delle varianti dell'articolo. Se l'articolo non presenta varianti, la combo box risulta disattivata;
+**Variante**: mediante esta combo box, el usuario puede seleccionar e insertar una de las variantes del artículo. Si el artículo no presenta variantes, la combo box aparece desactivada;
 
-**Unità di misura**: in questa colonna compare, in read-only, il codice dell'unità di misura gestionale dell'articolo;
+**u.m.**: en esta columna aparece, en solo lectura (read-only), el código de la unidad de medida de gestión del artículo;
 
-**Unità di misura alternativa**: in questa colonna l'utente può selezionare, tramite l'apposita combo box, il codice di una delle unità di misura alternative dell'articolo, ove presenti, al fine di eseguire il movimento imputando la quantità nell'unità di misura alternativa prescelta. La quantità gestionale verrebbe in questo caso calcolata automaticamente in base al fattore di conversione impostato nel *Anagrafica articolo* > tab *UM Alternative*;
+**Unidad de medida alternativa**: en esta columna el usuario puede seleccionar, mediante la combo box correspondiente, el código de una de las unidades de medida alternativas del artículo, si existen, con el objetivo de ejecutar el movimiento imputando la cantidad en la unidad de medida alternativa elegida. La cantidad de gestión se calcularía automáticamente en base al factor de conversión establecido en el *Registro del artículo* > pestaña *U.M. Alternativas*;
 
-**Quantità movimento**: in questa colonna l'utente deve obbligatoriamente inserire la quantità del movimento, espressa nell'unità di misura gestionale nel caso in cui la colonna *U.M. alt.* risulti vuota; in caso contrario la quantità sarebbe espressa nell'unità di misura alternativa inserita nella colonna *U.M. alt.*. Dopo che l'utente ha inserito il codice dell'articolo e l'ha fatto riconoscere come valido alla procedura, la quantità movimento viene inserita automaticamente come uguale a 1; a questo punto l'utente la può modificare. La quantità del movimento va sempre inserita in valore assoluto, in quanto il fatto che si tratti di un movimento di carico oppure di scarico è determinato dal tipo di causale utilizzata;
+**Cantidad de movimiento**: en esta columna el usuario debe obligatoriamente insertar la cantidad del movimiento, expresada en la unidad de medida de gestión en caso de que la columna *U.M. alt.* esté vacía; de lo contrario, la cantidad se expresaría en la unidad de medida alternativa insertada en la columna *U.M. alt.*. Después de que el usuario ha insertado el código del artículo y lo ha validado como válido para el procedimiento, la cantidad de movimiento se inserta automáticamente como igual a 1; en este punto el usuario puede modificarla. La cantidad del movimiento siempre debe ingresarse en valor absoluto, ya que el hecho de que se trate de un movimiento de carga o descarga se determina por el tipo de causa utilizada;
 
-**Quantità gestionale**: in questa colonna compare, in rea-only, la quantità espressa nell'unità di misura gestionale dell'articolo. Essa è identica alla quantità movimento nel caso in la colonna *U.M. alt.* risulti vuota; in caso contrario la colonna diventa editabile e l'utente deve inserire la quantità gestionale manualmente, vedendo poi calcolata automaticamente la quantità movimento, che avrebbe quindi un valore pari alla quantità gestionale divisa o moltiplicata (a seconda di quanto impostato nei *Parametri Iniziali di Magazzino*) per il fattore di conversione impostato nel nel *Anagrafica articolo* > tab *UM Alternative*;
+**Cantidad de gestión**: en esta columna aparece, en solo lectura (read-only), la cantidad expresada en la unidad de medida de gestión del artículo. Es idéntica a la cantidad de movimiento en caso de que la columna *U.M. alt.* esté vacía; de lo contrario, la columna se vuelve editable y el usuario debe introducir manualmente la cantidad de gestión, viendo luego calculada automáticamente la cantidad de movimiento, que tendría por lo tanto un valor igual a la cantidad de gestión dividida o multiplicada (dependiendo de lo que se haya establecido en los *Parámetros Iniciales de Almacén*) por el factor de conversión establecido en el *Registro del artículo* > pestaña *U.M. Alternativas*;
 
-**Importo movimento**: in questa colonna compare in automatico il valore di *costo ultimo, costo medio, costo standard o prezzo di vendita*, a seconda dell'impostazione della causale di magazzino utilizzata nella registrazione.  
-Se nella causale vi sia come costo proposto l'indicazione *Nessuno*, la procedura propone come costo della registrazione un valore pari a zero.  
-Se la colonna *U.M. alt.* risulti vuota, l'importo movimento risulta sempre identico all'importo gestionale; diversamente, in questa colonna sarebbe da inserire l'importo unitario dell'articolo in base alla unità di misura alternativa inserita nella riga del movimento.  
-Se nei *Parametri Iniziali di Magazzino* sia attivato, per l'anno in corso, il flag *Mostra tooltip di giacenza in registrazioni*, la procedura visualizza, in una tooltip, la giacenza di quell'articolo sul magazzino su cui si sta creando il movimento, esattamente nel momento in cui l'utente sta inserendo o modificando la quantità stessa.  
-Se la giacenza non sia sufficiente e nei *Parametri Iniziali di Magazzino* sia disattivato, per l'anno in corso, il flag ‘*Permetti giacenza negativa*' per quel magazzino, la riga di movimento non verrà salvata.
+**Importe de movimiento**: en esta columna se muestra automáticamente el valor de *costo último, costo medio, costo estándar o precio de venta*, dependiendo de la configuración de la causa de almacén utilizada en el registro.  
+Si en la causa se indica como costo propuesto *nessuno*, el procedimiento propone como costo de la registración un valor igual a cero.  
+Si la columna *U.M. alt.* está vacía, el importe de movimiento siempre es igual al importe de gestión; de lo contrario, en esta columna se debe ingresar el importe unitario del artículo en base a la unidad de medida alternativa insertada en la línea del movimiento.  
+Si en los *Parámetros Iniciales de Almacén* está activado, para el año en curso, el indicador *Mostrar tooltip de existencias en registraciones*, el procedimiento muestra, en un tooltip, la existencias de ese artículo en el almacén sobre el cual se está creando el movimiento, exactamente en el momento en que el usuario está ingresando o modificando la cantidad.  
+Si las existencias no son suficientes y en los *Parámetros Iniciales de Almacén* está desactivado, para el año en curso, el indicador *Permitir existencia negativa* para ese almacén, la línea de movimiento no se guardará.
 
-**Importo gestionale**: in questa colonna compare in automatico il valore di *costo ultimo, costo medio, costo standard, o prezzo di vendita*, a seconda dell'impostazione della causale di magazzino utilizzata nella registrazione.  
-Nel caso nella causale vi sia come costo proposto l'indicazione *Nessuno*, la procedura propone come costo della registrazione un valore pari a zero.  
-Nel caso in la colonna *U.M. alt.* risulti vuota, l'importo gestionale risulta sempre identico all'importo movimento; diversamente, in questa colonna, sempre comunque read-only, verrebbe calcolato il valore unitario del movimento in base all'unità di misura gestionale, tramite la seguente formula: *Importo movimento * Quantità movimento / Quantità gestionale*;
+**Importe de gestión**: en esta columna aparece automáticamente el valor de *costo último, costo medio, costo estándar, o precio de venta*, dependiendo de la configuración de la causa de almacén utilizada en el registro.  
+En caso de que en la causa se indique como costo propuesto *nessuno*, el procedimiento propone como costo de la registración un valor igual a cero.  
+En caso de que la columna *U.M. alt.* esté vacía, el importe de gestión siempre es idéntico al importe de movimiento; de lo contrario, en esta columna, siempre de solo lectura (read-only), se calcularía el valor unitario del movimiento en base a la unidad de medida de gestión, mediante la siguiente fórmula: *Importe movimiento * Cantidad movimiento / Cantidad gestión*;
 
-**Progetto**: in questa colonna l'utente può inserire, tramite l'apposito *Help progetti* che si esplode con un doppio click sul campo giallo, la commessa di vendita che deve essere associata alla riga del movimento;
+**Proyecto**: en esta columna el usuario puede insertar, mediante el *Help proyectos* que se abre con un doble clic en el campo amarillo, el proyecto de venta que debe asociarse a la línea del movimiento;
 
-**Importo totale**: in questa colonna compare, non editabile, l'importo totale della riga del movimento. Esso risulta dalla moltiplicazione della quantità gestionale per l'importo gestionale;
+**Importe total**: en esta columna aparece, sin posibilidad de edición, el importe total de la línea del movimiento. Este resulta de la multiplicación de la cantidad de gestión por el importe de gestión;
 
-**Descrizione articolo**: in questa colonna compare la descrizione dell'articolo. Essa viene impostata automaticamente non appena viene riconosciuto dalla griglia l'articolo inserito dall'utente;
+**Descripción del artículo**: en esta columna aparece la descripción del artículo. Se establece automáticamente tan pronto como se reconoce el artículo ingresado por el usuario en la cuadrícula;
 
-**Descrizione variante**: in questa colonna compare la descrizione della variante dell'articolo. Essa viene impostata automaticamente non appena viene riconosciuto dalla griglia il codice della variante dell'articolo inserito dall'utente;
+**Descripción de la variante**: en esta columna aparece la descripción de la variante del artículo. Se establece automáticamente tan pronto como se reconoce el código de la variante del artículo ingresado por el usuario en la cuadrícula;
 
-**Note**: in questo campo è possibile inserire una nota libera relativamente alla singola riga della registrazione di magazzino;
+**Notas**: en este campo es posible insertar una nota libre relativamente a la línea individual de la registración de almacén;
 
-**Ubicazione**: in questo campo viene specificata l'ubicazione da cui verrà scaricato o su cui verrà caricato l'articolo, in base ovviamente al tipo di causale di magazzino (carico / scarico);   
+**Ubicación**: en este campo se especifica la ubicación desde la cual se descargará o sobre la cual se cargará el artículo, dependiendo obviamente del tipo de causa de almacén (carga / descarga);   
 
-**Peso netto**: viene riportato il Peso netto totale delle righe articolo. Viene riportato il peso netto di anagrafica articolo moltiplicato per la quantità di riga;
+**Peso neto**: se reporta el peso neto total de las líneas de artículo. Se reporta el peso neto del registro del artículo multiplicado por la cantidad de línea;
 
-**Peso lordo**: viene riportato il Peso lordo totale delle righe articolo. Viene riportato il peso lordo di anagrafica articolo moltiplicato per la quantità di riga;
+**Peso bruto**: se reporta el peso bruto total de las líneas de artículo. Se reporta el peso bruto del registro del artículo multiplicado por la cantidad de línea;
 
-Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura può eseguire correttamente il salvataggio e rendere disponibile la riga successiva per l'inserimento di un nuovo movimento, oppure può imporre all'utente di completare l'inserimento tramite il carico dei lotti e/o dei serial numbers nelle apposite griglie sottostanti.
+En el momento en que el usuario procede a guardar la línea del movimiento, el procedimiento puede realizar correctamente el guardado y hacer disponible la línea siguiente para la inserción de un nuevo movimiento, o puede obligar al usuario a completar la inserción mediante la carga de los lotes y/o de los números de serie en las cuadrículas correspondientes a continuación.
 
-### Lotti e Serial number
+### Lotes y Números de serie
 
-**Lotti**
+**Lotes**
 
-In questa griglia, attiva solo se la causale di magazzino utilizzata ha il flag *Gestione lotti* attivato e se anche l'articolo è designato come articolo gestito a lotti, l'utente deve obbligatoriamente inserire le informazioni legate al lotto o ai lotti da movimentare.
+En esta cuadrícula, activa solo si la causa de almacén utilizada tiene el indicador *gestione lotti* activado y si además el artículo está designado como artículo gestionado por lotes, el usuario debe obligatoriamente insertar las informaciones relacionadas con el lote o los lotes a mover.
 
-Come sappiamo, la registrazione di magazzino può essere di carico o di scarico; a seconda dei 2 diversi casi, la griglia dei lotti ha differenti utilizzi ed impostazioni.
+Como sabemos, la registración de almacén puede ser de carga o descarga; dependiendo de los 2 casos diferentes, la cuadrícula de lotes tiene diferentes usos y configuraciones.
 
-> *1° caso: Registrazione di carico*
+> *1° caso: Registración de carga*
 
-Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in update la riga stessa, invitando l'utente a spostarsi nella griglia *Lotti* ed a indicare i dettagli dei lotti da caricare.
+En el momento en que el usuario procede a guardar la línea del movimiento, el procedimiento deja en actualización la línea misma, invitando al usuario a trasladarse a la cuadrícula *Lotes* e indicar los detalles de los lotes a cargar.
 
-Le colonne presenti nella griglia sono le seguenti:
+Las columnas presentes en la cuadrícula son las siguientes:
 
-**Tipo codice lotto**: in questa colonna viene inserito il tipo codice lotto inserito nell'anagrafica articolo;
+**Tipo de código de lote**: en esta columna se inserta el tipo de código de lote ingresado en el registro del artículo;
 
-**Tipo lotto**: in questa colonna può essere opzionalmente inserito dall'utente il Tipo Lotto, tramite l'apposita combo box, che attinge dall'omonima tabella. Si tratta di un dato comunque non obbligatorio;
+**Tipo de lote**: en esta columna puede opcionalmente ser ingresado por el usuario el Tipo de Lote, mediante la combo box correspondiente, que obtiene de la tabla homónima. Se trata de un dato no obligatorio;
 
-**Numero Lotti**: in questa colonna viene inserito il codice del lotto da caricare, costruito in base alle regole impostate nei *Parametri Iniziali di Magazzino* associate al *Tipo codice lotto* inserito. Il campo è di colore giallo in quanto l'utente potrebbe decidere di eseguire un nuovo carico di un lotto già esistente nel database; in questo caso con un doppio click sul campo giallo avrebbe modo, tramite un apposito *Help lotti*, di scegliere il lotto da caricare filtrandolo tra i lotti gestiti sino a quel momento nel database e nella società in cui sta lavorando;
+**Número de lotes**: en esta columna se inserta el código del lote a cargar, construido en base a las reglas establecidas en los *Parámetros Iniciales de Almacén* asociadas al *Tipo de código de lote* ingresado. El campo es de color amarillo ya que el usuario podría decidir realizar un nuevo carga de un lote ya existente en la base de datos; en este caso, con un doble clic en el campo amarillo tendría la posibilidad, mediante un *Help lotes* correspondiente, de elegir el lote a cargar filtrándolo entre los lotes gestionados hasta ese momento en la base de datos y en la empresa en la que está trabajando;
 
-**Codice lotto fornitore**: in questa colonna viene inserito manualmente il codice del lotto fornitore, quindi di solito il nome che il fornitore attribuisce al lotto. Si tratta di un campo non generabile automaticamente durante le operazioni di carico e non obbligatorio. Nel caso in cui il Codice Lotto venga inserito attingendo dall'*Help Lotti*, questa colonna verrebbe compilata automaticamente con il Lotto Fornitore agganciato al lotto prescelto;
+**Código de lote del proveedor**: en esta columna se inserta manualmente el código del lote del proveedor, que suele ser el nombre que el proveedor le atribuye al lote. Es un campo no generable automáticamente durante las operaciones de carga y no obligatorio. En caso de que se inserte el Código de Lote accediendo al *Help Lotes*, esta columna se completaría automáticamente con el Lote Proveedor vinculado al lote elegido;
 
-**Data inizio**: in questo campo compare la stessa data della registrazione di magazzino, editabile dall'utente. Nel caso in cui il Codice Lotto venga inserito attingendo dall''Help Lotti', questa colonna verrebbe compilata automaticamente con la data di inizio del lotto prescelto;
+**Fecha de inicio**: en este campo aparece la misma fecha de la registración de almacén, editable por el usuario. En caso de que el Código de Lote se inserte accediendo al *Help Lotes*, esta columna se completaría automáticamente con la fecha de inicio del lote elegido;
 
-**Data scadenza**: in questo campo compare la data di scadenza del lotto, editabile dall'utente, che viene calcolata, partendo dalla data di inizio e sommando i giorni di validità del lotto inseriti nel tab *Lotti/SN* dell'anagrafica articolo. Nel caso in cui il Codice Lotto venga inserito attingendo dall'*Help Lotti*, questa colonna verrebbe compilata automaticamente con la data di scadenza del lotto prescelto;
+**Fecha de caducidad**: en este campo aparece la fecha de caducidad del lote, editable por el usuario, que es calculada, partiendo de la fecha de inicio y sumando los días de validez del lote ingresados en la pestaña *Lotes/SN* del registro del artículo. En caso de que el Código de Lote se inserte accediendo al *Help Lotes*, esta columna se completaría automáticamente con la fecha de caducidad del lote elegido;
 
-**Quantità**: in questo campo compare la quantità che si vuole attribuire al lotto inserito. Nel caso di creazione del lotto tramite la pressione del tasto ‘Auto', la quantità viene riempita automaticamente con la quantità contenuta nella riga del movimento; essa è però editabile dall'utente, il quale potrebbe quindi decidere di modificare la quantità, diminuendola, ed eseguendo poi un'ulteriore pressione sul tasto ‘Auto' ma sulla riga sottostante: in tal modo creerebbe un nuovo lotto, con caratteristiche simili al lotto già inserito ma con Codice Lotto diverso;
+**Cantidad**: en este campo aparece la cantidad que se quiere atribuir al lote insertado. En caso de creación del lote mediante la presión del botón 'Auto', la cantidad se llena automáticamente con la cantidad contenida en la línea del movimiento; sin embargo, es editable por el usuario, quien podría decidir modificar la cantidad, disminuyéndola, y luego presionar nuevamente el botón 'Auto' pero en la línea siguiente: de este modo se crearía un nuevo lote, con características similares al lote ya insertado pero con un Código de Lote diferente;
 
-**Chiuso**: se attivo, evidenzia che il lotto è stato completamente scaricato dal magazzino. Logicamente nel caso di carico del lotto il flag risulta sempre disattivato;
+**Cerrado**: si está activo, indica que el lote ha sido completamente descargado del almacén. Lógicamente, en caso de carga del lote, el indicador siempre resulta desactivado;
 
-**Lotto vendibile**(Lotto Vendibile): se attivo, evidenzia che il lotto è disponibile per essere prelevato all'interno dei documenti di vendita, di produzione o nelle registrazioni di magazzino. Si tratta praticamente di una possibilità che ha l'utente per definire la possibilità di prelevare o meno un lotto, in alternativa alla gestione, più complessa ed articolata, degli stati lotto. Quindi nel caso del carico automatico del lotto, il flag risulta attivo di default, anche se l'utente può decidere già in questa fase di disattivarlo, rendendo quindi già indisponibile il lotto stesso;
+**lotto vendibile**: si está activo, indica que el lote está disponible para ser recogido dentro de los documentos de venta, de producción o en las registraciones de almacén. Se trata prácticamente de una opción que tiene el usuario para definir la posibilidad de retirar o no un lote, en lugar de gestionar, de manera más compleja y articulada, los estados del lote. Por lo tanto, en el caso de la carga automática del lote, el indicador se activa por defecto, aunque el usuario puede decidir ya en esta fase desactivarlo, haciendo que el lote mismo no esté disponible;
 
-**Nota**: in questo campo l'utente può inserire una nota relativa al lotto che sta caricando. Nel caso in cui il Codice Lotto venga inserito attingendo dall'*Help Lotti*, questa colonna verrebbe compilata automaticamente con la nota legata al lotto prescelto.
+**Nota**: en este campo, el usuario puede insertar una nota relacionada con el lote que se está cargando. En caso de que el Código de Lote se inserte accediendo al *Help Lotes*, esta columna se completaría automáticamente con la nota vinculada al lote elegido.
 
-Dopo aver completato l'inserimento dei lotti nella griglia *Lotti*, facendo in modo che la quantità della riga del movimento sia pari alla somma delle quantità dei lotti caricati, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
+Después de haber completado la inserción de los lotes en la cuadrícula *Lotes*, asegurándose de que la cantidad de la línea del movimiento sea igual a la suma de las cantidades de los lotes cargados, el usuario puede proceder a guardar la línea del movimiento sin recibir más mensajes de error del procedimiento.
 
-> *2° caso: Registrazione di scarico*
+> *2° caso: Registración de descarga*
 
-Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in ‘update' la riga stessa, invitando l'utente a spostarsi nella griglia Lotti ed a indicare i dettagli dei lotti da scaricare.
+En el momento en que el usuario procede a guardar la línea del movimiento, el procedimiento deja en 'actualización' la línea misma, invitando al usuario a trasladarse a la cuadrícula Lotes e indicar los detalles de los lotes a descargar.
 
-Le colonne presenti nella griglia sono le seguenti:
+Las columnas presentes en la cuadrícula son las siguientes:
 
-**Numero Lotti**: in questa colonna con un doppio click sul campo giallo l'utente ha modo, tramite l'apposito *Help lotti*, di scegliere il lotto da scaricare filtrandolo tra i lotti disponibili nel magazzino della registrazione;
+**Número de lotes**: en esta columna, con un doble clic en el campo amarillo, el usuario tiene la posibilidad, mediante el *Help lotes* correspondiente, de elegir el lote a descargar filtrándolo entre los lotes disponibles en el almacén de la registración;
 
-**Codice lotto fornitore**: questa colonna viene compilata automaticamente con il *Lotto fornitore* agganciato al lotto prescelto;
+**Código de lote del proveedor**: esta columna se completa automáticamente con el *Lote proveedor* vinculado al lote elegido;
 
-**Data inizio**: in questo campo compare la data di inizio del lotto prescelto;
+**Fecha de inicio**: en este campo aparece la fecha de inicio del lote elegido;
 
-**Data scadenza**: in questo campo compare la data di scadenza del lotto prescelto;
+**Fecha de caducidad**: en este campo aparece la fecha de caducidad del lote elegido;
 
-**Quantità**: in questo campo compare la quantità che si vuole scaricare del lotto prescelto. Essa è editabile dall'utente, il quale potrebbe quindi decidere di modificare la quantità, diminuendola, ed eseguendo poi un'ulteriore ricerca tramite l'help lotti ma sulla riga sottostante;
+**Cantidad**: en este campo aparece la cantidad que se desea descargar del lote elegido. Es editable por el usuario, quien podría decidir modificar la cantidad, disminuyéndola, y luego realizar otra búsqueda mediante el Help lotes pero en la línea siguiente;
 
-**Ubicazione**: in questo campo viene visualizzata l'ubicazione in cui è caricato il lotto prescelto.
+**Ubicación**: en este campo se visualiza la ubicación donde se ha cargado el lote elegido.
 
-Dopo aver completato l'inserimento dei lotti da scaricare nella griglia *Lotti*, facendo in modo che la quantità della riga del movimento sia pari alla somma delle quantità dei lotti scaricati, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
+Después de haber completado la inserción de los lotes a descargar en la cuadrícula *Lotes*, asegurándose de que la cantidad de la línea del movimiento sea igual a la suma de las cantidades de los lotes descargados, el usuario puede proceder a guardar la línea del movimiento sin recibir más mensajes de error del procedimiento.
 
-**Numeri seriali**
+### Números de serie
 
-In questa griglia, attiva solo se la causale di magazzino utilizzata ha il flag *Gest. lotti* attivato e se anche l'articolo è designato come articolo gestito a serial numbers, l'utente deve obbligatoriamente inserire le informazioni legate ai serial numbers da movimentare.
+En esta cuadrícula, activa solo si la causa de almacén utilizada tiene el indicador *Gest. lotes* activado y si además el artículo está designado como artículo gestionado por números de serie, el usuario debe obligatoriamente insertar la información relacionada con los números de serie a mover.
 
-Come sappiamo, la registrazione di magazzino può essere di carico o di scarico; a seconda dei 2 diversi casi, la griglia Numeri Seriali ha differenti utilizzi ed impostazioni.
+Como sabemos, la registración de almacén puede ser de carga o descarga; dependiendo de los 2 casos diferentes, la cuadrícula Números de Serie tiene diferentes usos y configuraciones.
 
-> *1° caso: Registrazione di carico*
+> *1° caso: Registración de carga*
 
-Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in ‘update' la riga stessa, invitando l'utente a spostarsi nella griglia Numeri Seriali ed a indicare i dettagli dei Serial Numbers da caricare.
+En el momento en que el usuario procede a guardar la línea del movimiento, el procedimiento deja en 'actualización' la línea misma, invitando al usuario a trasladarse a la cuadrícula Números de Serie e indicar los detalles de los Números de serie a cargar.
 
-Le colonne presenti nella griglia sono le seguenti:
+Las columnas presentes en la cuadrícula son las siguientes:
 
-**Tipo Serial Number**: in questa colonna viene inserito automaticamente, il tipo codice SN inserito nell'anagrafica articolo. Esso è comunque modificabile dall'utente
+**Tipo de Número de serie**: en esta columna se inserta automáticamente, el tipo de código SN ingresado en el registro del artículo. Es, no obstante, modificable por el usuario.
 
-**Serial Number**: in questa colonna viene inserito il codice del Serial Number da caricare, costruito in base alle regole impostate nei *Parametri Iniziali di Magazzino* associate al tipo codice SN inserito. Esso è comunque editabile dall'utente.
+**Número de serie**: en esta columna se inserta el código del Número de serie a cargar, construido en base a las reglas establecidas en los *Parámetros Iniciales de Almacén* asociadas al tipo de código SN ingresado. Es, no obstante, editable por el usuario.
 
-**Cliente Serial Number**: indica il Serial Number utilizzato dal cliente;
+**Número de serie del cliente**: indica el Número de serie utilizado por el cliente;
 
-**Fornitore Serial Number**: indica il Serial Number utilizzato dal fornitore;
+**Número de serie del proveedor**: indica el Número de serie utilizado por el proveedor;
 
-**Data inizio**: indica la data inizio di validità del Serial Number;
+**Fecha de inicio**: indica la fecha de inicio de validez del Número de serie;
 
-**Data scadenza**: indica la data di scadenza del Serial Number;
+**Fecha de caducidad**: indica la fecha de caducidad del Número de serie;
 
-**Data ultima modifica**: indica la data di ultima modifica;
+**Fecha de última modificación**: indica la fecha de la última modificación;
 
-**Annullato**: indica che il Serial Number si trova in stato annullato;
+**Anulado**: indica que el Número de serie se encuentra en estado anulado;
 
-**Chiuso forazatamente**: indica che il Serial Number è stato chiuso forzatamente;
- 
-**Lotto**: indica il numero di lotto corrispondente a quel Serial Number.
+**Cerrado forzosamente**: indica que el Número de serie fue cerrado forzosamente;
 
-Dopo aver completato l'inserimento dei lotti nella griglia *Numeri Seriali*, facendo in modo che la quantità della riga del movimento sia pari al numero dei Serial Numbers inseriti nella griglia, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
+**Lote**: indica el número de lote correspondiente a ese Número de serie.
 
-> *2° caso: Registrazione di scarico*
+Después de haber completado la inserción de los números de serie en la cuadrícula *Números de Serie*, asegurándose de que la cantidad de la línea del movimiento sea igual al número de Números de serie insertados en la cuadrícula, el usuario puede proceder a guardar la línea del movimiento sin recibir más mensajes de error del procedimiento.
 
-Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in update la riga stessa, invitando l'utente a spostarsi nella griglia Numeri Seriali ed a indicare i dettagli dei Serial Numbers da scaricare.
+> *2° caso: Registración de descarga*
 
-Le colonne presenti nella griglia sono le seguenti:
+En el momento en que el usuario procede a guardar la línea del movimiento, el procedimiento deja en actualización la línea misma, invitando al usuario a trasladarse a la cuadrícula Números de Serie e indicar los detalles de los Números de serie a descargar.
 
-**Serial Number**: in questa colonna l'utente deve inserire, tramite un doppio click sul campo giallo, i Serial Numbers da scaricare, attingendo dall'apposito *Help Serial Numbers*.
+Las columnas presentes en la cuadrícula son las siguientes:
 
-**Data inserimento**: indica la data inserimento del Serial Number;
+**Número de serie**: en esta columna el usuario debe insertar, mediante un doble clic en el campo amarillo, los Números de serie a descargar, accediendo al *Help Números de serie* correspondiente.
 
-**Cliente Serial Number**: indica il Serial Number utilizzato dal cliente;
+**Fecha de inserción**: indica la fecha de inserción del Número de serie;
 
-**Fornitore Serial Number**: indica il Serial Number utilizzato dal fornitore;
+**Número de serie del cliente**: indica el Número de serie utilizado por el cliente;
 
-**Data ultima modifica**: indica la data di ultima modifica;
+**Número de serie del proveedor**: indica el Número de serie utilizado por el proveedor;
 
-**Data inizio**: indica la data inizio di validità del Serial Number;
+**Fecha de última modificación**: indica la fecha de la última modificación;
 
-**Annullato**: indica che il Serial Number si trova in stato annullato;
+**Fecha de inicio**: indica la fecha de inicio de validez del Número de serie;
 
-**Lotto**: indica il numero di lotto corrispondente a quel Serial Number.
+**Anulado**: indica que el Número de serie se encuentra en estado anulado;
 
-Dopo aver completato l'inserimento dei lotti da scaricare nella griglia *Numeri Seriali*, facendo in modo che la quantità della riga del movimento sia pari al numero dei Serial Numbers inseriti nella griglia, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
+**Lote**: indica el número de lote correspondiente a ese Número de serie.
 
-### Centri di Costo
+Después de haber completado la inserción de los lotes a descargar en la cuadrícula *Números de Serie*, asegurándose de que la cantidad de la línea del movimiento sea igual al número de Números de serie insertados en la cuadrícula, el usuario puede proceder a guardar la línea del movimiento sin recibir más mensajes de error del procedimiento.
 
-In questa griglia l'utente può agganciare alla riga movimento uno o più centri di costo, attribuendo quindi differenti quantità del movimento a differenti centri di costo.
+### Centros de Costo
 
-La griglia si compone di una colonna in cui compare un campo di colore giallo, sul quale l'utente può, esercitando un doppio click, aprire l'**Help Centri di Costo*, mediante in quale può inserire il centro di costo nella riga della griglia, completando poi la riga con la quantità a cui questo centro di costo deve essere riferito. Se la somma delle quantità inserite nella righe della griglia dei centri di costo è diversa dalla quantità gestionale della riga movimento, la procedura dà un avviso e impedisce di salvare il movimento.
+En esta cuadrícula, el usuario puede vincular a la línea de movimiento uno o más centros de costo, asignando, por lo tanto, diferentes cantidades del movimiento a diferentes centros de costo.
 
-### Extra Data
+La cuadrícula se compone de una columna en la que aparece un campo de color amarillo, en el cual el usuario puede, haciendo un doble clic, abrir el *Help Centros de Costo*, mediante el cual puede insertar el centro de costo en la fila de la cuadrícula, completando luego la línea con la cantidad a la que este centro de costo debe ser referida. Si la suma de las cantidades ingresadas en las filas de la cuadrícula de centros de costo es diferente de la cantidad de gestión de la línea de movimiento, el procedimiento da un aviso e impide guardar el movimiento.
 
-Si rinvia alla documentazione relativa agli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).
+### Datos Extras
 
-## Contropartita
+Se remite a la documentación relativa a los [Datos Extras (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata).
 
-Questo tab è esattamente identico al tab *Registrazione*, ma risulta attivo solo se la causale di magazzino impostata nel tab *Registrazione* presenta un magazzino e una causale di contropartita.  
-Le causali di contropartita vengono impostate nel caso in cui si voglia gestire un doppio movimento di magazzino, con una sola registrazione. Quindi è possibile, nella tabella delle causali di magazzino, impostare una causale di carico come contropartita di una causale di scarico e vicevesa.
+## Contrapartida (Contropartita)
 
-Nel tab *Contropartita* vengono quindi riportati esattamente tutti i dati impostati all'interno del tab *Registrazione*, con la possibilità per l'utente di modificare solo alcuni dei dati di testata: Documento interno, Documento di riferimento, Commessa di vendita.
+Esta pestaña es exactamente igual a la pestaña *Registro (Registrazione)*, pero resulta activa solo si la causa de almacén configurada en la pestaña *Registro* presenta un almacén y una causa de contrapartida.  
+Las causas de contrapartida se configuran en caso de que se quiera gestionar un doble movimiento de almacén, con una sola registración. Por lo tanto, es posible, en la tabla de causas de almacén, establecer una causa de carga como contrapartida de una causa de descarga y viceversa.
 
-I dati della riga del movimento devono invece essere identici tra i 2 tab; stesso discorso per le griglie Lotti, Numeri di Serie, Varianti e Centri di Costo del singolo movimento. Solo il campo dell'ubicazione è editabile all'interno del tab contropartita.
+En la pestaña *Contrapartida* se repiten exactamente todos los datos establecidos dentro de la pestaña *Registro*, con la posibilidad para el usuario de modificar solo algunos de los datos de encabezado: Documento interno, Documento de referencia, Proyecto de venta.
 
-C'è un caso **particolare** in cui nel tab *Registrazione* viene inserito un articolo e nel tab *Contropartita* ne vengono inseriti altri: ciò accade solo quando la causale di contropartita agganciata alla causale principale ha attivato il flag *Distinta Base*, flag che consente all'utente di caricare l'articolo nel tab *Registrazione* (quindi utilizzando una causale di carico) e vedere la sua distinta base inserita nel tab *Contropartita*, all'interno del quale sarà quindi presente una causale di scarico. Ovviamente può essere gestito anche il viceversa.
+Los datos de la línea de movimiento deben ser idénticos entre las 2 pestañas; el mismo argumento se aplica a las cuadrículas de Lotes, Números de Serie, Variantes y Centros de Costo del movimiento individual. Solo el campo de la ubicación es editable dentro de la pestaña de contrapartida.
 
-Una situazione **particolare** che richiede la gestione di causali con la contropartita agganciata è riconducibile allo *scarico automatico del DDT di consegna di conto lavoro*, che esegue lo scarico dei materiali da consegnare al terzista dal magazzino materie prime (o semilavorati, a seconda dei casi) con conseguente ed immediato carico sul magazzino del terzista degli stessi materiali, che dovranno da lui poi essere utilizzati per produrre ciò che gli è stato richiesto tramite l'ordine di conto lavoro.
+Hay un **caso particular** en el que en la pestaña *Registro* se inserta un artículo y en la pestaña *Contrapartida* se insertan otros: esto ocurre únicamente cuando la causa de contrapartida vinculada a la causa principal ha activado el indicador *distinta base*, indicador que permite al usuario cargar el artículo en la pestaña *Registro* (por lo tanto utilizando una causa de carga) y ver su lista de materiales inserta en la pestaña *Contrapartida*, en la cual, por lo tanto, estará presente una causa de descarga. Obviamente, también puede gestionarse a la inversa.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Una situación **particular** que requiere la gestión de causas con la contrapartida vinculada se relaciona con la *descarga automática del DDT de entrega de trabajo por cuenta*, que realiza la descarga de los materiales a entregar al subcontratista desde el almacén de materias primas (o semielaborados, dependiendo de los casos) con la consecuente e inmediata carga en el almacén del subcontratista de los mismos materiales, que luego deberá utilizar para producir lo que se le ha solicitado mediante el pedido de trabajo por cuenta.
+
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, se remite al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,72 +1,71 @@
 ---
-title: Stampe
+title: stampe
 sidebar_position: 5
 ---
 
-Sono disponibili diverse **Stampe** standard. Per visualizzare un'anteprima di ciascuna stampa, serve impostare i filtri desiderati e premere il pulsante *Anteprima* sulla barra degli strumenti. Questa operazione mostrerà la stampa a video senza modificare lo stato del documento. Se necessario procedere con la stampa cartacea o salvarla su file, serve invece cliccare sul pulsante *Stampa*.
+Están disponibles diversas **stampe** estándar. Para visualizar una vista previa de cada impresión, es necesario configurar los filtros deseados y presionar el botón *anteprima* en la barra de herramientas. Esta operación mostrará la impresión en pantalla sin modificar el estado del documento. Si se necesita proceder con la impresión en papel o guardarla en un archivo, se debe hacer clic en el botón *stampa*.
 
-## Emissione Conferma d'ordine
+## Emisión de Confirmación de pedido (Emissione Conferma d'ordine)
 
-Questa stampa permette di stampare gli Ordini come Conferme d'Ordine da inviare direttamente al cliente.        
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini confermati solo da una certa data, quelli non consegnati, non evasi, ecc.           
-Con questa stampa, ogni ordine viene impaginato separatamente, ognuno con le seguenti sezioni:
-- Intestazione con Logo e informazioni aziendali
-- Informazioni sull'ordine (tipologia, numero, data, ecc.)
-- Informazioni sul cliente (partita iva, agente, ecc.)
-- Dettagli dell'ordine (codice articolo, quantità, prezzo, ecc.)
-- Riepilogo dell'ordine (totale merce, spese, totale imposta, ecc.)
+Esta impresión permite imprimir los Pedidos como Confirmaciones de Pedido para enviar directamente al cliente.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; por ejemplo, puedo imprimir los pedidos confirmados solo a partir de cierta fecha, los no entregados, no cumplidos, etc.  
+Con esta impresión, cada pedido se imprime por separado, cada uno con las siguientes secciones:  
+- Encabezado con Logo e información de la empresa  
+- Información del pedido (tipo, número, fecha, etc.)  
+- Información del cliente (número de identificación fiscal, agente, etc.)  
+- Detalles del pedido (código de artículo, cantidad, precio, etc.)  
+- Resumen del pedido (total mercancía, gastos, total impuesto, etc.)  
 
-## Etichette da ordine
+## Etiquetas de pedido (Etichette da ordine)
 
-La funzione di questa stampa è quella di generare etichette fisiche per l'identificazione e la gestione dei prodotti o degli articoli che fanno parte di un ordine.      
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini confermati solo da una certa data, quelli non consegnati, non evasi, ecc.       
-La stampa crea delle etichette con le seguenti informazioni: 
-- Intestazione con Logo e informazioni aziendali
-- Etichetta dell'articolo con codice a barre, unità di misura, quantità e descrizione articolo
-- Informazioni sul cliente e sull'ordine contenente l'articolo
+La función de esta impresión es generar etiquetas físicas para la identificación y gestión de los productos o artículos que forman parte de un pedido.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; por ejemplo, puedo imprimir los pedidos confirmados solo a partir de cierta fecha, los no entregados, no cumplidos, etc.  
+La impresión crea etiquetas con la siguiente información:  
+- Encabezado con Logo e información de la empresa  
+- Etiqueta del artículo con código de barras, unidad de medida, cantidad y descripción del artículo  
+- Información sobre el cliente y el pedido que contiene el artículo  
 
-## Lista di prelievo
+## Lista de picking (Lista di prelievo)
 
-Questa stampa è un documento utilizzato nel contesto della gestione del magazzino e della logistica per aiutare gli operatori a prelevare correttamente gli articoli necessari per evadere un ordine cliente.     
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini di una determinata tipologia, quelli non consegnati, non evasi, ecc.      
-Con questa stampa, ogni ordine viene impaginato separatamente, ognuno con le seguenti sezioni:
-- Intestazione con Logo e informazioni aziendali
-- Informazioni sull'ordine (numero e data) e sul cliente 
-- Informazioni sul trasporto
-- Dettagli dell'ordine (codice articolo, unità di misura, ecc.)
-- Giacenza dell'articolo a magazzino, quantità ordinata, quantità prelevata (campo da far compilare manualmente all'operatore che preleverà la quantità a magazzino)
+Esta impresión es un documento utilizado en el contexto de la gestión de inventario y logística para ayudar a los operadores a recoger correctamente los artículos necesarios para cumplir un pedido de cliente.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; por ejemplo, puedo imprimir los pedidos de un tipo determinado, los no entregados, no cumplidos, etc.  
+Con esta impresión, cada pedido se imprime por separado, cada uno con las siguientes secciones:  
+- Encabezado con Logo e información de la empresa  
+- Información del pedido (número y fecha) y del cliente  
+- Información sobre el transporte  
+- Detalles del pedido (código de artículo, unidad de medida, etc.)  
+- Existencia del artículo en inventario, cantidad ordenada, cantidad recogida (campo para que el operador complete manualmente la cantidad recogida del inventario)  
 
-## Lista DDT Evasione ordini
+## Lista DDT Cumplimiento de pedidos (Lista DDT Evasione ordini)
 
-Questa stampa fornisce un elenco degli ordini con eventuali DDT collegati.       
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini di una determinata tipologia, quelli non consegnati, non evasi, ecc.     
-Di default, gli ordini vengono raggruppati per anno e tipologia di ordine quindi per gli stessi anno e tipologia vengono elencati gli Ordini di vendita con relativo numero, data e cliente.       
-Se l'ordine è stato evaso in un DDT, quest'ultimo verrà riportato sotto l'ordine, con relativi numero, data, tipologia, articoli, unità di misura, quantità ordinata e quantità consegnata. 
+Esta impresión proporciona una lista de los pedidos con posibles DDT asociados.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; por ejemplo, puedo imprimir los pedidos de un tipo determinado, los no entregados, no cumplidos, etc.  
+Por defecto, los pedidos se agrupan por año y tipo de pedido, donde para los mismos se enumeran los Pedidos de venta con su número, fecha y cliente correspondientes.  
+Si el pedido ha sido cumplido en un DDT, este se indicará debajo del pedido, con su número, fecha, tipo, artículos, unidad de medida, cantidad ordenada y cantidad entregada.  
 
-## Lista ordini
+## Lista de pedidos (Lista ordini)
 
-Questa stampa fornisce un riepilogo dettagliato degli ordini inseriti, sottoforma di lista.
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; in questa stampa è possibile inoltre impostare un ordinamento per Cliente (default), Numero o Tipologia ordine.       
-Nella stampa, sotto lo stesso cliente/numero/tipologia ordine (in base all'ordinamento scelto) vengono elencati gli ordini con i seguenti dati: divisa, importo, articolo, iva, ecc.         
-Ogni riga dell'elenco viene occupata da un articolo dell'ordine.        
+Esta impresión proporciona un resumen detallado de los pedidos ingresados, en forma de lista.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; en esta impresión, también se puede establecer un ordenamiento por Cliente (predeterminado), Número o Tipo de pedido.  
+En la impresión, bajo el mismo cliente/número/tipo de pedido (según el orden elegido), se enumeran los pedidos con los siguientes datos: división, importe, artículo, IVA, etc.  
+Cada línea de la lista está ocupada por un artículo del pedido.  
 
+## Portafolio de pedidos por cantidad (Portafoglio ordini a quantità)
 
-## Portafoglio ordini a quantità 
+Esta impresión sirve para proporcionar una visión general detallada y actualizada de los pedidos; es particularmente útil para la coordinación logística, ya que permite ver claramente cuáles y cuántas unidades de productos aún deben ser entregadas.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; también se puede establecer un ordenamiento por Artículo, Número, Fecha, Cliente, Fecha de mercancía lista, Fecha de entrega, Cliente.  
+El resultado es una lista de los pedidos, con la indicación de eventuales documentos de cumplimiento, si existen, y para cada artículo se indican las cantidades ordenadas, entregadas y pendientes.  
 
-Questa stampa serve a fornire una panoramica dettagliata e aggiornata degli ordini; è particolarmente utile per il coordinamento logistico, poiché permette di vedere in modo chiaro quali e quante unità di prodotti devono essere ancora consegnate.       
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Articolo, Numero, Data, Cliente, Data merce pronta, Data consegna, Cliente.      
-Il risultato è un elenco degli ordini, con indicati eventuali documenti di evasione se esistenti, e per ogni articolo indicate le quantità ordinate, consegnate e residue.      
+## Portafolio de pedidos por valor (Portafoglio ordini a valore)
 
-## Portafoglio ordini a valore
+Esta impresión proporciona un resumen de los pedidos recibidos pero aún no totalmente cumplidos, en base al valor monetario de cada pedido. Este documento es particularmente útil para los departamentos de ventas, finanzas y gestión estratégica, ya que ofrece una visión clara de los ingresos potenciales relacionados con los pedidos en curso.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; también se puede establecer un ordenamiento por Artículo, Número, Fecha, Cliente, Fecha de mercancía lista, Fecha de entrega, Cliente.  
+El resultado es una lista de los pedidos con, para cada artículo, los valores ordenados, entregados y pendientes.  
 
-Questa stampa fornisce un riepilogo degli ordini ricevuti ma non ancora totalmente evasi, in base al valore monetario di ciascun ordine. Questo documento è particolarmente utile per i reparti di vendite, finanza e gestione strategica, poiché offre una visione chiara del fatturato potenziale legato agli ordini in corso.      
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Articolo, Numero, Data, Cliente, Data merce pronta, Data consegna, Cliente.      
-Il risultato è un elenco degli ordini con per ogni articolo indicati valori ordinati, consegnati e residui.       
+## Calendario de pedidos (Scadenziario ordini)
 
-## Scadenziario ordini
+Esta impresión proporciona una visión general detallada de las fechas de vencimiento y los términos de entrega relacionados con los pedidos no totalmente cumplidos.  
+Con los filtros disponibles, es posible filtrar los documentos para hacer una búsqueda más específica; también se puede establecer un ordenamiento por Fecha de entrega o Cliente.  
+En la impresión, bajo el mismo cliente/fecha de entrega (según el orden elegido), se enumeran para cada artículo los pedidos con los siguientes datos: número, fecha de ingreso, estado de cumplimiento, cantidad pendiente, etc.  
 
-Questa stampa fornisce una panoramica dettagliata delle date di scadenza e dei termini di consegna relativi agli ordini non totalmente evasi.      
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Data consegna o Cliente.      
-Nella stampa, sotto lo stesso cliente/data consegna (in base all'ordinamento scelto) vengono elencati per ogni articolo gli ordini con i seguenti dati: numero, data inserimento, stato evasione, quanaità residua, ecc.      
-
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 
+Más detalles sobre este tema en los artículos: [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports)

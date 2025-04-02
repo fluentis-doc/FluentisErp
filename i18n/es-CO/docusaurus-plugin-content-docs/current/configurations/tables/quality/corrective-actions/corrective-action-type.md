@@ -1,32 +1,32 @@
 ---
-title: Tipi azione correttiva
+title: tipi azione correttiva
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Azioni correttive > Tipi azione correttiva**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Calidad (Qualità) > Acciones correctivas (Azioni correttive) > tipi azione correttiva (Tipi azione correttiva)**.
 
-In questa tabella è possibile codificare i *Tipi azione correttiva*.   
-Alcuni esempi di utilizzo di *Tipi azione correttiva* li troviamo nelle gestioni:
-> **Azioni correttive** - nei *dati di testata*;   
-> **Parametri Azioni correttive** - nei *dati di testata*.
+En esta tabla es posible codificar los *tipi azione correttiva*.  
+Algunos ejemplos de uso de *tipi azione correttiva* los encontramos en las gestiones:  
+> **azioni correttive** - en los *dati di testata*;  
+> **parametri azioni correttive** - en los *dati di testata*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi azione correttiva**
+**Búsqueda de tipi azione correttiva (Ricerca Tipi azione correttiva)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi azione correttiva**
+**Inserción de tipi azione correttiva (Inserimento Tipi azione correttiva)**
 
-Per poter inserire nuovi *Tipi azione correttiva* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi azione correttiva*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice del *Tipo azione correttiva*.   
-> **Descrizione**: è la descrizione del *Tipo azione correttiva*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Descrizione numerazione**: è la descrizione della *Numerazione*.   
-> **Note**: annotazioni libere.
+*Campos específicos (Campi specifici)*:  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **codice**: es el código del *Tipo de acción correctiva (Tipo azione correttiva)*.  
+> **descrizione**: es la descripción del *Tipo de acción correctiva (Tipo azione correttiva)*.  
+> **numerazione**: es el código de la *Numeración*.  
+> **descrizione numerazione**: es la descripción de la *Numeración*.  
+> **note**: anotaciones libres.
+
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

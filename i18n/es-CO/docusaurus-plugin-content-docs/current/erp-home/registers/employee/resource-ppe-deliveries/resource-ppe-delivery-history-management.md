@@ -1,42 +1,38 @@
 ---
-title: Storico consegne/resi D.P.I.
+title: storico consegne/resi d.p.i.
 sidebar_position: 3
 ---
 
-La gestione può essere eseguita dal filtro dello **Storico consegne/resi D.P.I.**:
-> premendo il pulsante *Nuovo*;   
-> effettuando un doppio click su di una riga di *consegna/reso D.P.I.* della griglia risultato;   
-> selezionando una *consegna/reso D.P.I.* dalla griglia risultato e premendo i pulsanti *Modifica* o *Visualizzazione*.   
+La gestión puede ser realizada desde el filtro del **storico consegne/resi d.p.i.**:
+> presionando el botón *nuovo*;  
+> haciendo doble clic en una línea de *entrega/devolución D.P.I. (consegna/reso D.P.I.)* de la cuadrícula de resultados;  
+> seleccionando una *entrega/devolución D.P.I. (consegna/reso D.P.I.)* de la cuadrícula de resultados y presionando los botones *modifica* o *visualizzazione*.  
 
-
-:::important A cosa serve
-I dati presenti in questa gestione sono utilizzati per gestire le informazioni dello *Storico consegne/resi D.P.I.*   
+:::important ¿Para qué sirve? (A cosa serve)
+Los datos presentes en esta gestión se utilizan para manejar la información del *storico consegne/resi d.p.i.*  
 :::
 
+## Botones específicos (Pulsanti specifici)   
 
-## Pulsanti specifici   
+### ![](/img/neutral/common/save.png) Guardar histórico de entrega/devolución D.P.I. (Salva Storico consegna/reso D.P.I.)
 
+Para poder guardar la información modificada es necesario presionar el botón **salva**.   
 
-### ![](/img/neutral/common/save.png) Salva Storico consegna/reso D.P.I.
+## Gestión de datos (Gestione dati)
 
-Per poter memorizzare le informazioni modificate è necessario premere il pulsante **Salva**.   
+La información gestionada es:   
+> **dipendente**: es el *Empleado* al que se le ha entregado/devolvido el *D.P.I.*   
+> **D.P.I.**: es el *D.P.I.* entregado/devolvido.   
+> **data consegna/reso**: es la *Fecha* en la que se ha entregado/devolvido el *D.P.I.* al *Empleado*.   
+> **quantità consegnata**: es la *Cantidad entregada* de *D.P.I.* al *Empleado*.   
+> **consegnato da**: es la *persona* que ha entregado el *D.P.I.* al *Empleado*.   
+> **quantità resa**: es la *Cantidad devuelta* de *D.P.I.* por el *Empleado*.   
+> **reso a**: es la *persona* que ha recibido el *D.P.I.* del *Empleado*.   
+> **uso**: anotaciones libres sobre el tema.   
+> **prescrizioni**: anotaciones libres sobre el tema.   
+> **note**: anotaciones libres.   
+> **firmato**: indica si el *Empleado* ha firmado, como aceptación, los informes:
+>> *scheda consegna dispositivi di protezione individuale*;   
+>> *scheda reso dispositivi di protezione individuale*.   
 
-
-## Gestione dati
-
-Le informazioni gestite sono:   
-> **Dipendente**: è il *Dipendente* a cui è stato consegnato/reso il *D.P.I.*   
-> **D.P.I.**: è il *D.P.I.* consegnato/reso.   
-> **Data consegna/reso**: è la *Data* nella quale è stato consegnato/reso il *D.P.I.* al *Dipendente*.   
-> **Quantità consegnata**: è la *Quantità consegnata* di *D.P.I.* al *Dipendente*.   
-> **Consegnato da**: è la *persona* che ha consegnato il *D.P.I.* al *Dipendente*.   
-> **Quantità resa**: è la *Quantità resa* di *D.P.I.* dal *Dipendente*.   
-> **Reso a**: è la *persona* che ha ricevuto il *D.P.I.* dal *Dipendente*.   
-> **Uso**: annotazioni libere sull'argomento.   
-> **Prescrizioni**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
-> **Firmato**: indica se il *Dipendente* ha firmato, per accettazione, i reports:
->> *Scheda consegna Dispositivi di Protezione Individuale*;   
->> *Scheda reso Dispositivi di Protezione Individuale*.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

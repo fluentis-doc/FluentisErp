@@ -1,10 +1,10 @@
 ---
-title: Introduzione anagrafiche DDMRP
+title: Introducción a las anagrafías DDMRP (Introduzione anagrafiche DDMRP)
 sidebar_position: 0
 ---
 
-In questa sezione ci sono i dati anagrafici relativi agli articoli gestiti secondo logica DDMRP, ovvero i cosidetti buffer cioè scorte strategiche dimensionate e rifornite secondo la logica DDMRP.
+En esta sección se encuentran los datos anagráficos relacionados con los artículos gestionados según la lógica DDMRP, es decir, los llamados buffers, que son inventarios estratégicos dimensionados y reabastecidos de acuerdo con la lógica DDMRP.
 
-Nel sistema DDMRP esistono tre tipi di scorte:
+En el sistema DDMRP existen tres tipos de inventarios:
 
-I buffer dinamici prevedono la variazione nel tempo delle tre zone caratteristiche (verde,gialla,rossa) e di conseguenza anche il livello medio di giacenza, i buffer fissi invece utilizzano valori fissi delle zone e di conseguenza anche un livello medio di giacenza fisso (si utilizzano in caso di limitazioni di spazio, di investimento, per limiti di sicurezza etc), i buffer min-max usano invece solo la zona rossa e la zona verde.
+Los buffers dinámicos prevén la variación en el tiempo de las tres zonas características (verde, amarilla, roja) y, en consecuencia, también el nivel promedio de existencias; los buffers fijos, en cambio, utilizan valores fijos de las zonas y, por ende, también un nivel promedio de existencias fijo (se utilizan en caso de limitaciones de espacio, inversión, para límites de seguridad, etc.); los buffers min-max utilizan únicamente la zona roja y la zona verde.

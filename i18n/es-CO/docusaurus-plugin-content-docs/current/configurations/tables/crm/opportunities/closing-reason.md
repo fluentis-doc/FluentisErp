@@ -1,7 +1,7 @@
 ---
-title: Motivo di Chiusura
+title: motivo di chiusura
 sidebar_position: 1
 ---
 
-E' una tabella descrittiva per catalogare le **motivazioni di chiusura** che è possibile indicare nelle [Opportunità](/docs/crm/chance/new-chance/) del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione, oltre al segno Positivo/Negativo della motivazione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del motivo di chiusura e il segno dell’operazione (Positivo/Negativo), e da una griglia in cui appunto verranno elencati tutte le motivazioni inserite.
+Es una tabla descriptiva para catalogar las **motivaciones de cierre (motivazioni di chiusura)** que se pueden indicar en las [Oportunidades (Opportunità)](/docs/crm/chance/new-chance/) del CRM. Es común a todas las empresas presentes en la base de datos y está constituida por una simple tabla de código/descripción, además del signo Positivo/Negativo de la motivación.  
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción del motivo de cierre y el signo de la operación (Positivo/Negativo), y una cuadrícula en la que se enumerarán todas las motivaciones ingresadas.

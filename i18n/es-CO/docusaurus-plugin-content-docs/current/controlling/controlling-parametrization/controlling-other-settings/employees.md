@@ -1,12 +1,12 @@
 ---
-title: Dipendenti e Categorie attività
+title: Empleados y Categorías de actividad (Dipendenti e Categorie attività)
 sidebar_position: 10
 ---
 
-All'interno del singolo ***Dipendente*** è possibile associare il [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento, che sarà utilizzato per le importazioni dei movimenti delle paghe ma anche all'interno della ***Dichiarazione attività*** dell'area progetti, in combinazione con la ***Categoria attività***.
+Dentro de cada **dipendente*** se puede asociar el [**centro di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia, que se utilizará para las importaciones de los movimientos de las nóminas, pero también dentro de la ***Declaración de actividades (Dichiarazione attività)*** del área de proyectos, en combinación con la ***Categoría de actividad (Categoria attività)***.
 
 :::tip Nota
-All'interno della *Dichiarazione attività*, in particolare, il Centro di origine sarà impostato dal centro del dipendente/risorsa mentre il centro di destinazione dalla categoria attività.
+Dentro de la *Declaración de actividades (Dichiarazione attività)*, en particular, el centro de origen se establecerá según el centro del empleado/recurso, mientras que el centro de destino será determinado por la categoría de actividad.
 
-In questo modo si riescono a gestire casi nei quali, ad esempio, il personale dell'ufficio tecnico lavora per il commerciale, ribaltando quindi i costi del centro di appartenenza al centro di destinazione delle attività
+De esta manera, se pueden gestionar casos en los cuales, por ejemplo, el personal del departamento técnico trabaja para comercial, trasladando así los costos del centro de pertenencia al centro de destino de las actividades.
 :::

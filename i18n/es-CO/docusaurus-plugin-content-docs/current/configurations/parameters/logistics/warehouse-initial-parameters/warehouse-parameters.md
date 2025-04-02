@@ -1,94 +1,93 @@
 ---
-title: Parametri iniziali magazzino
+title: parametri iniziali magazzino
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-L'introduzione ai parametri iniziali di magazzino di Fluentis funge da fondamentale punto di riferimento per la gestione delle operazioni logistiche all'interno del sistema. Questi parametri, accessibili tramite una form dedicata, consentono di configurare in modo preciso le modalità di gestione del magazzino e di definire norme operative che influenzano l'intera catena di approvvigionamento e distribuzione.
+:::important ¿Para qué sirve? (A cosa serve)  
+La introducción a los parámetros iniciales de almacén de Fluentis sirve como un punto de referencia fundamental para la gestión de las operaciones logísticas dentro del sistema. Estos parámetros, accesibles a través de un formulario dedicado, permiten configurar de manera precisa las modalidades de gestión del almacén y definir normas operativas que influyen en toda la cadena de aprovisionamiento y distribución.
 
-Nel sistema Fluentis, i parametri iniziali includono flag e impostazioni che regolano aspetti cruciali come la modifica delle registrazioni, la gestione delle distinte base, e il calcolo dei costi medi e ultimi. Ad esempio, il flag "Modifica registrazioni di magazzino collegati con altri documenti" permette di modificare movimenti creando un'interazione diretta fra diversi documenti di movimentazione, mentre il flag "Permetti giacenza negativa" offre un'ulteriore flessibilità nelle operazioni di scarico.
+En el sistema Fluentis, los parámetros iniciales incluyen indicadores y configuraciones que regulan aspectos cruciales como la modificación de registros, la gestión de listas de materiales, y el cálculo de costos promedios y últimos. Por ejemplo, el indicador "Modificar registros de almacén vinculados con otros documentos" permite modificar movimientos creando una interacción directa entre diferentes documentos de movimiento, mientras que el indicador "Permitir existencias negativas" ofrece una flexibilidad adicional en las operaciones de descarga.
 
-È importante notare che questi parametri devono essere rigenerati ogni anno per garantire una corretta gestione e aggiornamento delle operazioni di magazzino. Inoltre, è possibile specificare per ciascun singolo magazzino se debba essere gestito per ubicazione, progetto o cliente/fornitore, consentendo una personalizzazione delle operazioni in base alle specifiche esigenze aziendali.
+Es importante señalar que estos parámetros deben ser regenerados cada año para garantizar una gestión adecuada y la actualización de las operaciones de almacén. Además, es posible especificar para cada almacén si debe ser gestionado por ubicación, proyecto o cliente/proveedor, permitiendo una personalización de las operaciones según las necesidades específicas de la empresa.
 
-Inoltre, è possibile impostare periodi specifici in cui le registrazioni possono essere operate, gestendo così in modo dinamico le operazioni di magazzino in base alle esigenze aziendali. La configurazione di questi parametri non solo ottimizza i processi, ma svolge un ruolo centrale nel garantire l'efficacia operativa e la tracciabilità delle merci, elementi chiave per il successo nella gestione della logistica moderna.
+Asimismo, es posible establecer períodos específicos en los que pueden realizarse registros, gestionando así de manera dinámica las operaciones de almacén según las necesidades empresariales. La configuración de estos parámetros no solo optimiza los procesos, sino que también juega un papel central en garantizar la eficacia operativa y la trazabilidad de las mercancías, elementos clave para el éxito en la gestión de la logística moderna.
 :::
 
-Nella form di *Ricerca Parametri iniziali magazzino* selezionare la riga desiderata ed eseguire doppio click sulla riga o click sul pulsante *Nuovo*.
+En el formulario de *Búsqueda de parametri iniziali magazzino* seleccione la fila deseada y ejecute un doble clic en la fila o haga clic en el botón *Nuevo*.
 
-## 1. Dati
+## 1. Datos
 
-**Anno**: rappresenta l'anno per il quale si desidera impostare i parametri.
+**anno**: representa el año para el cual se desea establecer los parámetros.
 
-**Data ultima chiusura esercizio**: rappresenta la data in cui è stata fatta l'ultima chiusura di magazzino con ripresa saldi (vedi [Valorizzazione magazzino](/docs/logistics/physical-inventory/warehouse-valorization)). Nella maggior parte dei casi essa corrisponde al 31-12 dell'anno precedente. Il giorno successivo, quindi solitamente il 1° gennaio, vengono inserite le registrazioni di magazzino di carico per inventario iniziale, create automaticamente dalla procedura di *Valorizzazione Magazzino*, tramite l'utilizzo della causale di carico *Rimanenze*; questa causale deve avere il flag *Rimanenze* attivato.
+**Fecha del último cierre del ejercicio (Data ultima chiusura esercizio)**: representa la fecha en la que se realizó el último cierre de almacén con recuperación de saldos (ver [Valoración de almacén (Valorizzazione magazzino)](/docs/logistics/physical-inventory/warehouse-valorization)). En la mayoría de los casos, corresponde al 31-12 del año anterior. Al día siguiente, usualmente el 1 de enero, se ingresan los registros de carga de almacén para el inventario inicial, creados automáticamente por el procedimiento de *Valoración de Almacén*, a través del uso de la causal de carga *rimanenze*; esta causal debe tener el indicador *rimanenze* activado.
 
-Per ciascun magazzino presente nella società deve essere presente una e una sola causale di carico delle rimanenze iniziali. Le giacenze caricate con quella causale nel giorno di “apertura” del magazzino rappresentano le *giacenze iniziali* del magazzino stesso. Tutti i movimenti successivi a questa registrazione di carico saranno identificati come entrate o come uscite di magazzino a seconda che si tratti di carichi o di scarichi.
+Para cada almacén presente en la empresa debe haber una y solo una causal de carga de las existencias iniciales. Las existencias cargadas con esa causal en el día de “apertura” del almacén representan las *existencias iniciales* del almacén mismo. Todos los movimientos posteriores a este registro de carga serán identificados como entradas o salidas de almacén dependiendo de si se trata de cargas o descargas.
 
-## 2. Generali
+## 2. Generales (Generali)
 
-**Modifica registrazioni di magazzino collegati con altri documenti**: consente di modificare le registrazioni di magazzino collegate con DDT di acquisto, fatture di acquisto, DDT di vendita, fatture di vendita, ecc. L'assenza di questo flag comporta il fatto che i documenti di magazzino creati sulla base di documenti di acquisto o di vendita non possono essere modificati. In questo caso apparirà un messaggio che mostra il fatto che la modifica non è possibile.
+**Modificar registros de almacén conectados con otros documentos (Modifica registrazioni di magazzino collegati con altri documenti)**: permite modificar los registros de almacén vinculados a DDT de compra, facturas de compra, DDT de venta, facturas de venta, etc. La ausencia de este indicador significa que los documentos de almacén creados a partir de documentos de compra o venta no pueden ser modificados. En este caso, aparecerá un mensaje informando que la modificación no es posible.
 
-Per quanto riguarda la modifica registrazioni di magazzino da documenti teniamo presente che è possibile scegliere se modificare la quantità, modificare il prezzo, modificare entrambe o nessuna. Questo significa che quando un documento già registrato a magazzino, per esempio una DDT di acquisto, viene modificato, l'applicazione controlla se il flag Modifica quantità e il flag Modifica prezzi sono attivi oppure no; in caso affermativo la modifica eseguita nel documento viene trasmessa anche nella registrazione di magazzino con cui il documento è collegato, diversamente la modifica del documento non interviene sulla relativa registrazione di magazzino. È possibile attivare anche uno solo dei due flag. Inoltre, è possibile attivare anche la possibilità di inserire o cancellare i movimenti direttamente dal documento inserendo o eliminando le singole righe.
+En relación con la modificación de registros de almacén desde documentos, se tiene en cuenta que es posible elegir si modificar la cantidad, modificar el precio, modificar ambas o ninguna. Esto significa que cuando se modifica un documento ya registrado en el almacén, por ejemplo, un DDT de compra, la aplicación verifica si el indicador Modificar cantidad y el indicador Modificar precios están activos o no; en caso afirmativo, la modificación realizada en el documento se transmite también al registro de almacén con el que el documento está vinculado; de lo contrario, la modificación del documento no afecta al correspondiente registro de almacén. Es posible activar solo uno de los dos indicadores. Además, se puede habilitar la posibilidad de insertar o cancelar movimientos directamente desde el documento ingresando o eliminando las líneas individuales.
 
-**Permetti contropartita distinta base incompleta**: se attivo, permette di poter modificare la distinta base del movimento di contropartita; se disattivato il movimento di contropartita verrà creato automaticamente per tutta la distinta base senza possibilità di modifica.
+**permetti contropartita distinta base incompleta**: si está activo, permite modificar la lista de materiales del movimiento de contraparte; si está desactivado, el movimiento de contraparte se creará automáticamente para toda la lista de materiales sin posibilidad de modificación.
 
-Il movimento di contropartita nasce da una seconda causale di movimentazione collegata alla principale, che opera sui componenti della distinta base; ad esempio, può essere utilizzata per gestire con i movimenti di magazzino i versamenti di produzione (lo scarico dei componenti di distinta base) o i disassemblamenti di materiale; quindi, nelle realtà più semplice permette di gestire i carichi di prodotti finiti e gli scarichi di componenti senza l’utilizzo del modulo della produzione.  
+El movimiento de contraparte nace de una segunda causal de movimiento vinculada a la principal, que opera sobre los componentes de la lista de materiales; por ejemplo, puede utilizarse para gestionar los movimientos de almacén de los depósitos de producción (la descarga de los componentes de la lista de materiales) o los desensambles de material; así, en las realidades más simples, permite gestionar las cargas de productos terminados y las descargas de componentes sin utilizar el módulo de producción.
 
-**Valorizza per magazzino**: permette di decidere se la chiusura di magazzino deve tenere in considerazione i costi medi (o ultimi, o standard, a seconda di quale tipo di costo si vuole utilizzare per la chiusura di magazzino) legati alle movimentazioni effettuate nel corso dell'anno sul singolo magazzino. Questo significa che se un articolo ha subito movimentazioni su 3 magazzini, per esempio, nel caso di flag attivo avrà 3 righe diverse nello Storico di Magazzino per l'anno per il quale si esegue la chiusura, con probabilmente 3 costi medi e 3 costi ultimi diversi.
+**valorizza per magazzino**: permite decidir si el cierre de almacén debe tener en cuenta los costos promedios (o últimos, o estándar, dependiendo del tipo de costo que se desee utilizar para el cierre de almacén) relacionados con los movimientos realizados durante el año en el almacén individual. Esto significa que si un artículo ha tenido movimientos en 3 almacenes, por ejemplo, en caso de indicador activo, tendrá 3 líneas diferentes en el Historial de Almacén para el año en que se realiza el cierre, probablemente con 3 costos promedios y 3 costos últimos diferentes.
 
-**Permetti la modifica dei conti degli articoli già utilizzati**: consente di modificare i dati di “Fatturato acquisti” e “Fatturato vendite” di articoli che hanno già subito movimentazioni di magazzino. Se il flag è disattivato questa modifica è ovviamente impedita. 
+**Permitir la modificación de las cuentas de los artículos ya utilizados (Permetti la modifica dei conti degli articoli già utilizzati)**: permite modificar los datos de “Facturación de compras” y “Facturación de ventas” de artículos que ya han tenido movimientos de almacén. Si el indicador está desactivado, esta modificación está, por supuesto, prohibida.
 
-**Gestione stato Ciclo di lavoro tramite Workflow**: se attivo, lo stato del ciclo di lavoro è modificabile solamente tramite Workflow.
+**gestione stato ciclo di lavoro tramite workflow**: si está activo, el estado del ciclo de trabajo solo puede modificarse a través de Workflow.
 
-**Controllo relazione Articolo/Fornitore tramite Workflow**: se attivo, il flag **Blocco riga** presente nel tab **Fornitori preferenziali** dell'anagrafica articolo è modificabile solamente tramite Workflow.
+**controllo relazione articolo/fornitore tramite workflow**: si está activo, el indicador **blocco riga** presente en la pestaña **fornitori preferenziali** del registro del artículo solo puede modificarse a través de Workflow.
 
-**Data inizio periodo e Data fine periodo**: permettono all'utente di definire il periodo entro il quale possono essere inserite e/o modificate e/o cancellate registrazioni di magazzino. Solitamente si imposta come data inizio periodo una data appena precedente rispetto alla data di ultima chiusura del magazzino, e come data fine periodo la fine dell'anno solare in corso. 
+**Fecha de inicio del período y Fecha de fin del período (Data inizio periodo e Data fine periodo)**: permiten al usuario definir el período dentro del cual pueden ingresarse y/o modificarse y/o cancelarse registros de almacén. Usualmente se establece como fecha de inicio del período una fecha apenas anterior a la fecha de último cierre del almacén, y como fecha de fin del período el final del año calendario en curso.
 
-### 2.1 Gestione lotti e numeri seriali
+### 2.1 Gestión de lotes y números de serie (Gestione lotti e numeri seriali)
 
-**Gestione lotti e numeri seriali**: permette di decidere se debbano essere consentiti movimenti di magazzino a lotti e/o a serial numbers. Se questo flag è disattivato, tutti gli altri flags presenti nel database che gestiscono opzioni relative a lotti e serial numbers risultano inefficaci.
+**gestione lotti e numeri seriali**: permite decidir si se deben permitir movimientos de almacén por lotes y/o por números de serie. Si este indicador está desactivado, todos los demás indicadores presentes en la base de datos que gestionan opciones relacionadas con lotes y números de serie resultan ineficaces.
 
-**Lotti e numeri seriali obbligatori**: se attivato, obbliga l'utente ad inserire in tutti i documenti di acquisto e di vendita il lotto dell'articolo inserito nel documento stesso, sempre che l'articolo sia gestito a lotti o a serial numbers.
+**lotti e numeri seriali obbligatori**: si se activa, obliga al usuario a ingresar en todos los documentos de compra y venta el lote del artículo ingresado en el documento mismo, siempre que el artículo se gestione por lotes o por números de serie.
 
-**Abilitata unicità dei lotti**: se attivo, abilità l'unicità del lotto per società e divisione nella fase di creazione del lotto stesso, quindi nel caso di più articoli che usano lo stesso *tipo codice lotto*, il progressivo con cui verrà creato il lotto continuerà ad aumentare; se non attivo invece, l'unicità è per articolo e variante, quindi quando vengono creati dei nuovi lotti per articoli diversi, ma che usano lo stesso *tipo codice lotto*, il primo lotto proposto sarà lo stesso per tutti quegli articoli. 
+**Habilitar unicidad de los lotes (Abilitata unicità dei lotti)**: si está activo, habilita la unicidad del lote para la empresa y división en la fase de creación del lote mismo; por lo tanto, en el caso de que varios artículos utilicen el mismo *tipo de código de lote*, el progresivo con el que se creará el lote continuará aumentando; si no está activo, en cambio, la unicidad es por artículo y variante; por lo que, cuando se crean nuevos lotes para artículos diferentes, pero que utilizan el mismo *tipo de código de lote*, el primer lote propuesto será el mismo para todos esos artículos.
 
-**Gestione stato lotto tramite Workflow**: se attivo, lo **Stato lotto**, i flag **Lotto vendibile** e **Chiuso** presenti in anagrafica lotti sono modificabili solamente tramite Workflow. Stessa cosa vale anche per i flag **Annullato**, **Chiuso forzatamente** e **Prenotato** presenti in anagrafica numeri seriali.
+**gestione stato lotto tramite workflow**: si está activo, el **Estado del lote**, los indicadores **lotto vendibile** y **chiuso** presentes en el registro de lotes son modificables únicamente a través de Workflow. Lo mismo aplica para los indicadores **annullato**, **chiuso forzatamente** y **prenotato** presentes en el registro de números de serie.
 
-**Usa barcode movimenti**: se attivo, nelle righe dei movimenti di magazzino viene visualizzata la colonna **Barcode**.        
+**Usar código de barras en los movimientos (Usa barcode movimenti)**: si está activo, en las líneas de los movimientos de almacén se visualizará la columna **barcode**.
 
-## 3. Parametri chiusura
+## 3. Parámetros de cierre (Parametri chiusura)
 
-In questo tab è possibile decidere per quali **Magazzini** devono essere eseguite le chiusure per **Variante**, per **Ubicazione**, per **Lottie Serial Number**, per **Commesse di vendita** e per **Cliente/fornitore**. In pratica attivando uno di questi flag si decide che la registrazione di carico per inventario iniziale eseguita dalla procedura automatica di *Valorizzazione magazzino* deve essere creata tenendo conto dell'impostazione eseguita.
+En esta pestaña es posible decidir para qué **magazzini** deben realizarse los cierres por **Variante** (Variante), por **ubicazione**, por **lotti e serial number**, por **Órdenes de venta (Commesse di vendita)** y por **cliente/fornitore**. En la práctica, al activar uno de estos indicadores, se decide que el registro de carga para inventario inicial realizado por el procedimiento automático de *Valoración de almacén* debe crearse teniendo en cuenta la configuración realizada.
 
-*Per ciascun magazzino è possibile abilitare le seguenti gestioni*:	
+*Para cada almacén es posible habilitar las siguientes gestiones:*  
 
-**Varianti**: se attivo, la chiusura e la ripresa delle giacenze terranno conto delle varianti;	
+**varianti**: si está activo, el cierre y la recuperación de las existencias tendrán en cuenta las variantes;  
 
-**Ubicazioni**: se attivo, la chiusura e la ripresa delle giacenze terranno conto delle ubicazioni;	
+**ubicazioni**: si está activo, el cierre y la recuperación de las existencias tendrán en cuenta las ubicaciones;  
 
-**Lotti e Serial number**: se attivo, la chiusura e la ripresa delle giacenze terranno conto dei lotti e S/N;	
+**lotti e serial number**: si está activo, el cierre y la recuperación de las existencias tendrán en cuenta los lotes y S/N;  
 
-**Commesse**: se attivo, la chiusura e la ripresa delle giacenze terranno conto delle commesse di vendita (progetti);	
+**commesse**: si está activo, el cierre y la recuperación de las existencias tendrán en cuenta las órdenes de venta (proyectos);  
 
-**Cliente/Fornitore**: se attivo, la chiusura e la ripresa delle giacenze terranno conto del cliente/fornitore. 	
+**cliente/fornitore**: si está activo, el cierre y la recuperación de las existencias tendrán en cuenta al cliente/proveedor.  
 
-*Esempio*
-Nel magazzino *Conto lavoro* solitamente si tiene attivato il flag sulla colonna *Cliente/Fornitore*, in quanto è utile che la procedura crei una registrazione di magazzino di carico per inventario iniziale sul magazzino conto lavoro per ciascun terzista; nei magazzini in cui vengono stoccate e movimentate merci gestite a lotti si consiglia di attivare il flag *Lotti e Serial Number*, così come sui magazzini in cui vengono stoccate e movimentati merci gestite a varianti si consiglia di attivare il relativo flag.
+*Ejemplo*  
+En el almacén *conto lavoro*, usualmente se activa el indicador en la columna *Cliente/Proveedor*, ya que es útil que el procedimiento cree un registro de carga de almacén para inventario inicial en el almacén de trabajo por cuenta de terceros para cada contratista; en los almacenes donde se almacenan y mueven mercancías gestionadas por lotes, se recomienda activar el indicador *Lotes y Números de serie*, al igual que en los almacenes donde se almacenan y mueven mercancías gestionadas por variantes.
 
+## 4. Parámetros de existencias (Parametri giacenza)
 
-## 4. Parametri giacenza
+En esta pestaña, es posible decidir para cada almacén cómo debe gestionarse la *Existencia (Giacenza)*.
 
-In questo tab è possibile decidere decidere per ciascun magazzino in che como debba essere gestita la *Giacenza*. 
+**permetti giacenza negativa**: permite que la existencia de un artículo esté por debajo de cero. En caso de que el indicador no esté activado, el sistema siempre impedirá guardar registros de almacén o realizar operaciones de descarga que lleven la existencia de cualquier artículo a un nivel negativo. Cabe señalar que si el artículo se gestiona por lotes o números de serie, activar este indicador no significa que se pueda llevar a un nivel negativo, ya que el artículo gestionado por lotes o números de serie nunca podrá descargarse si la existencia del lote o del número de serie que se desea descargar no existe.
 
-**Permetti giacenza negativa**: consente di avere la giacenza di un articolo sottozero. Nel caso in cui il flag non sia attivato, il sistema impedisce sempre di salvare registrazioni di magazzino o operazioni di scarico che mandino sottozero la giacenza di qualsiasi articolo. Da precisare che se l'articolo è gestito a lotti o a serial numbers, attivare questo flag non significa avere la possibilità di mandarlo sottozero, in quanto l'articolo gestito a lotti o a serial numbers non può mai essere scaricato se la giacenza del lotto o del serial number che si vuole scaricare non esiste.
+*Para cada almacén es posible habilitar las siguientes gestiones:*  
 
-*Per ciascun magazzino è possibile abilitare le seguenti gestioni*:	
+**giacenza negativa**: permite en ese almacén la existencia negativa (solo si también está activo el indicador *Permitir existencia negativa* en los *Parámetros Generales*);
 
-**Giacenza negativa**: permette in quel magazzino la giacenza negativa (solo se attivo anche il flag *Permetti giacenza negativa* nei *Parametri Generali*);
+**Existencia por Ubicación (Giacenza Ubicazione)**: significa controlar la existencia también para la ubicación específica en el movimiento (si la existencia para esa ubicación no es suficiente, el movimiento no se crea);
 
-**Giacenza Ubicazione**: significa controllare la giacenza anche per l'ubicazione specificata nel movimento (se la giacenza per quell'ubicazione non è sufficiente, il movimento non è creato);
+**Existencia por proyecto (Giacenza progetto)**: significa controlar la existencia también para el proyecto específico en el movimiento (si la existencia para ese proyecto no es suficiente, el movimiento no se crea);  
 
-**Giacenza progetto**: significa controllare la giacenza anche per il progetto specificato nel movimento (se la giacenza per quel progetto non è sufficiente, il movimento non è creato); 
+**Existencia por cliente/proveedor (Giacenza cliente/fornitore)**: significa controlar la existencia también para el cliente/proveedor especificado en el registro (si la existencia para ese cliente/proveedor no es suficiente, el movimiento no se crea. Puede utilizarse para los almacenes de terceros).
 
-**Giacenza cliente/fornitore**: significa controllare la giacenza anche per il cliente/fornitore specificato nella registrazione (se la giacenza per quel cliente/fornitore non è sufficiente, il movimento non è creato. Può essere usato per i magazzini terzisti).
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

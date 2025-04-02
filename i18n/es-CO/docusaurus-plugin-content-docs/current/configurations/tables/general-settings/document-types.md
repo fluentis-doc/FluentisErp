@@ -1,40 +1,40 @@
 ---
-title: Tipi documenti
+title: Tipos de documentos (Tipi documenti)
 sidebar_position: 5
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación en la página vinculada.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi documenti** e accoglie le possibili tipologie di documento che saranno memorizzate nel database e gestite dal Documentale Fluentis.
+La tabla se abre a través de la ruta **Tablas (Tabelle) > Configuración general (Impostazioni generali) > Tipos de documentos (Tipi documenti)** y contiene los posibles tipos de documentos que serán almacenados en la base de datos y gestionados por el sistema Documental Fluentis.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtrado y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
 :::note Nota
-Generalmente la tabella viene precompilata dalle procedure di installazione e creazione dei parametri di default del programma, pertanto la sua gestione è limitata alla possibile creazione di tipologie particolari al fine di associare dei documenti da archiviare.
+Generalmente, la tabla se precompone a partir de los procedimientos de instalación y creación de los parámetros predeterminados del programa, por lo tanto, su gestión se limita a la posible creación de tipos especiales con el fin de asociar documentos a archivar.
 
-Tuttavia, in caso di anomalie o restituzione di messaggi di errore nella fase di esportazione di documenti (prevalentemente gestiti dal componente Bizlink) potrebbe essere necessario verificare la presenza della corretta tipologia di documento che viene richiamata dagli algoritmi di esportazione.
+Sin embargo, en caso de anomalías o devolución de mensajes de error en la fase de exportación de documentos (principalmente gestionados por el componente Bizlink), podría ser necesario verificar la presencia del tipo de documento correcto que es llamado por los algoritmos de exportación.
 :::
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-Per inserire un nuovo tipo documento premere il tasto **Nuovo** nella ribbon bar.
+Para insertar un nuevo tipo de documento, presione el botón **nuovo** en la barra de ribbon.
 
 ![](/img/it-it/configurations/tables/general-settings/document-types/image02.png)
 
-#### Campi specifici
+#### Campos específicos
 
-**Dimensione massima (MByte)**: Definisce la dimensione massima del documento archiviabile (solitamente impostato a 10)
+**Tamaño máximo (MByte)**: Define el tamaño máximo del documento que se puede archivar (generalmente ajustado a 10).
 
-**Compressione**: abilita il salvataggio di un file compresso (es. .zip)
+**compressione**: habilita la opción de guardar un archivo comprimido (por ejemplo, .zip).
 
-**Modalità**: permette di settare il salvataggio nel database, in una cartella esterna, o in entrambe le posizioni. (Attualmente non è attiva la possibilità di salvare esternamente)
+**modalità**: permite establecer el almacenamiento en la base de datos, en una carpeta externa, o en ambas ubicaciones. (Actualmente no está activa la posibilidad de guardar externamente).
 
-**Usa impostazioni di sicurezza**: attiva la gestione dei diritti (lettura , scrittura...) sul documento, da gestire nella sezione che compare sotto
+**usa impostazioni di sicurezza**: activa la gestión de derechos (lectura, escritura...) sobre el documento, que se gestionan en la sección que aparece a continuación.
 
 ![](/img/it-it/configurations/tables/general-settings/document-types/image03.png)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no sea detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

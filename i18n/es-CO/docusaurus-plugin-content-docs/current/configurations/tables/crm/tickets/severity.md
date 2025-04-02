@@ -1,9 +1,7 @@
 ---
-title: Severità
+title: severità
 sidebar_position: 3
 ---
 
-E' una tabella descrittiva per indicare la **Severità** del ticket che è possibile utilizzare in fase di inserimento di un ticket del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della severità, e da una griglia in cui appunto verranno elencati tutti i tipi severità inseriti.
-
-
+Es una tabla descriptiva para indicar la **severità** del ticket que se puede utilizar al momento de ingresar un ticket en el CRM. Es común a todas las empresas presentes en la base de datos y está compuesta por una simple tabla de código/descripción.  
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción de la severidad, y por una cuadrícula en la que se enumerarán todos los tipos de severidad ingresados.

@@ -1,26 +1,18 @@
 ---
-title: Raggruppamenti partite
+title: raggruppamenti partite
 sidebar_position: 3
 ---
 
-La ricerca effettuata dalla presente form deve essere utilizzata, in luogo della funzionalità di ricerca Partite, in presenza di raggruppamenti partite.
+La búsqueda realizada desde este formulario debe ser utilizada, en lugar de la funcionalidad de búsqueda de Partidas, en caso de que existan agrupaciones de partidas.
 
-La gestione delle partite tramite i raggruppamenti rappresenta infatti una metodologia alternativa e particolare rispetto alla classica, e richiede una visualizzazione specifica per ottenere una situazione chiaramente leggibile.
+La gestión de las partidas a través de los agrupamientos representa, de hecho, una metodología alternativa y particular en comparación con la clásica, y requiere una visualización específica para obtener una situación claramente legible.
 
-Per ulteriori ** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/ledger-record) **
+Para más **[detalles sobre el agrupamiento de partidas ver aquí (dettagli sul raggruppamento partite vedere qui.)](/docs/finance-area/ledger-records/records/ledger-record)**.
 
-La stampa  che corrisponde alla presente funzionalità di ricerca è denominata anch'essa** [ Raggruppamento partite.](/docs/finance-area/maturity-values/reports/maturity-value-grouping) **
+La impresión que corresponde a esta funcionalidad de búsqueda se denomina también **[Agrupamiento de partidas (Raggruppamento partite)](/docs/finance-area/maturity-values/reports/maturity-value-grouping)**.
 
- 
+**sottoconto**: filtro principal de selección de la subcuenta relacionada con el cliente o proveedor.
 
-**Sottoconto:** filtro principale di selezione del sottoconto relativo al cliente o fornitore.
+**Núm. documento (Nr. documento)**: filtro para la inserción del número de documento (factura, recibo fiscal, etc.) relacionado con el grupo de partidas o las partidas de detalle (activando el indicador **Buscar ref. dentro del grupo (Ricerca rif. all'interno del gruppo)**).
 
-**Nr. documento:** filtro per l'inserimento del numero di documento (fattura, ricevuta fiscale ecc..) relativo al gruppo partite o alle partite di dettaglio (attivando il flag **Ricerca rif. all'interno del gruppo**).
-
-**Tipo Gruppo**: Aperto / Chiuso = Benchè le singole partite partite del gruppo possano essere aperte o chiuse da pagamenti di segno opposto, l'intero gruppo si considera chiuso quando tutte le partite sono chiuse ed il totale dare ed avere del gruppo pareggiano. Pertanto è possibile selezionare questa condizione nel filtro.
-
-
-
-
-
-
+**tipo gruppo**: Abierto / Cerrado = Aunque las partidas individuales del grupo pueden estar abiertas o cerradas por pagos de signo opuesto, todo el grupo se considera cerrado cuando todas las partidas están cerradas y el total de débitos y créditos del grupo equilibran. Por lo tanto, es posible seleccionar esta condición en el filtro.

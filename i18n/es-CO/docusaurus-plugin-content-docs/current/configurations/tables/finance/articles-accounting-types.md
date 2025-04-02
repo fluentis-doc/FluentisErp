@@ -1,19 +1,19 @@
 ---
-title: Tipi contabilizzazione articoli
+title: tipi contabilizzazione articoli
 sidebar_position: 23
 ---
 
-La tabella è d'appoggio alla procedura che definisce una o più contabilizzazioni alternative al conto di contropartita collegato direttamente alla voce di fatturato vendite nella tabella relativa.
+La tabla es un apoyo para el procedimiento que define una o más contabilizaciones alternativas a la cuenta de contrapartida vinculada directamente a la partida de ventas en la tabla correspondiente. 
 
-*Esempi di codifica*:
-XUE: Extra Ue -> sarà poi abbinato ad un conto di ricavo "Estero" ed abbinato alle anagrafiche dei clienti esteri per evitare di cambiare manualmente il fatturato vendite da "Italia" a estero per ogni articolo che riporta in automatico la voce di fatturato vendite principale (Ricavi Italia ad esempio).
+*Ejemplos de codificación (Esempi di codifica)*:  
+XUE: Extra UE -> se asociará a una cuenta de ingresos "Exterior" y se vinculará a los registros de clientes extranjeros para evitar cambiar manualmente la venta de "Italia" a exterior para cada artículo que reporta automáticamente la partida principal de ingresos (Ingresos Italia, por ejemplo).  
 
-Per maggiori dettagli vedere [**qui**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance).
+Para más detalles, ver [**aquí (qui)**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance).  
 
-**Codice**: codice identificativo del tipo di contabilizzazione articoli.
+**codice**: código identificativo del tipo de contabilización de artículos.  
 
-**Descrizione**: descrizione del tipo di contabilizzazione articoli.
+**descrizione**: descripción del tipo de contabilización de artículos.  
 
-**Cliente**: per attivare il campo di contabilizzazione articoli sul Cliente.
+**cliente**: para activar el campo de contabilización de artículos en el Cliente.  
 
-**Fornitore**: per attivare il campo di contabilizzazione articoli sul Fornitore.
+**fornitore**: para activar el campo de contabilización de artículos en el Proveedor.

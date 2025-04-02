@@ -1,25 +1,24 @@
 ---
-title: Generalità
+title: generalità
 sidebar_position: 1
 ---
 
-I parametri dell'area **Tesoreria** concernono i moduli: 
+Los parámetros del área **tesoreria** se refieren a los módulos:
 
-**Insoluti**: specifici per questa funzionalità la quale comunque risulta molto utilizzata nel contesto del portafoglio attivo
+**insoluti**: específicos para esta funcionalidad, la cual resulta muy utilizada en el contexto de la cartera activa.
 
-**Portafoglio Effetti**: specifici (e necessari) per l'utilizzo del modulo il quale risulta largamente utilizzato e connesso con diverse procedure di contabilizzazione automatica
+**portafoglio effetti**: específicos (y necesarios) para el uso del módulo, que se utiliza ampliamente y está conectado con diversos procedimientos de contabilización automática.
 
-**Ri.Ba.** specifici e necessari per la creazione delle ricevute bancarie (per il tracciato telematico da esportare ed inviare alla banca)
+**Recibos Bancarios (Ri.Ba.)**: específicos y necesarios para la creación de los recibos bancarios (para el archivo telemático que se debe exportar y enviar al banco).
 
-**Pagamenti Fornitore**: parametri specifici del modulo per impostazioni di dettaglio
+**Pagos a Proveedores (Pagamenti Fornitore)**: parámetros específicos del módulo para configuraciones detalladas.
 
-**Rischio Clienti**: specifici per la gestione del rischio cliente ma con alcune ripercussioni sulla creazione delle provvigioni agenti connesse all'emissione di ricevute bancarie (parametri relativi al numero di giorni, di sicurezza, oltre la scadenza effetti)
+**Riesgo de Clientes (Rischio Clienti)**: específicos para la gestión del riesgo del cliente, pero con algunas repercusiones en la creación de comisiones para agentes relacionadas con la emisión de recibos bancarios (parámetros relativos al número de días, de seguridad, más allá de la fecha de vencimiento de los efectos).
 
-
-:::important[**Fast Start**]
-I parametri dell'area tesoreria sono interessati dalla possibilità di inizializzare un [**ambiente *FastStart***](/docs/guide/fast-start) e configurato permettere un utilizzo immediato.
+:::important[**Inicio Rápido (Fast Start)**]
+Los parámetros del área tesorería están relacionados con la posibilidad de inicializar un [**entorno *FastStart*ambiente*FastStart*)**](/docs/guide/fast-start) y configurado para permitir un uso inmediato.
 :::
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLA TESORERIA**](/docs/video/treasury/video)
+:::important Vea También (Vedi Anche)
+[**VIDEOS TUTORIALES SOBRE TESORERÍA (VIDEO TUTORIALS SULLA TESORERIA)**](/docs/video/treasury/video)
 :::

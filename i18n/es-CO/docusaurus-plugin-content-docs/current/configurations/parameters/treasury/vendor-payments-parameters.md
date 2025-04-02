@@ -1,16 +1,16 @@
 ---
-title: Parametri Pagamenti Fornitore
+title: Parámetros de Pagos a Proveedores (Parametri Pagamenti Fornitore)
 sidebar_position: 3
 ---
 
-I parametri del modulo **Pagamenti fornitore** si trovano in **Parametri > Tesoreria**.
+Los parámetros del módulo **Pagos a proveedor (Pagamenti fornitore)** se encuentran en **Parámetros > Tesorería (Parametri > Tesoreria)**.
 
-Nei parametri del modulo Pagamenti fornitore si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo.  
+En los parámetros del módulo Pagos a proveedores se pueden preconfigurar los elementos predeterminados que se propondrán en los procedimientos del módulo.
 
-- **Percorso di creazione dei tracciati**: impostazione della  directory standard di creazione del tracciato telematico per i bonifici Italia. Si consiglia di creare una directory condivisa di rete all'interno di un server, per poter accedere da tutte le postazioni della procedura.ATTENZIONE: il campo è obbligatorio ma ***FluentisERP*** utilizza il sistema della gestione documentale integrato per memorizzare il file .xml del tracciato telematico per le distinte di pagamento. Il file sarà dunque prelevabile direttamente dalla form della distinta di pagamento.   
-- **ABI Centro Applicativo**: obsoleto  
-- **Utilizzare il tasso di cambio storico**: con questa opzione, in caso di partite in divisa allora il controvalore in divisa società sarà gestito al cambio storico della partita, senza rilevazione di differenze cambio.  
-- **Imponi la banca d'appoggio presente in anagrafica del fornitore**: con il flag attivo verrà imposto l'utilizzo della banca d'appoggio inserita nell'anagrafica del fornitore (Griglia Banca d'appoggio) rispetto alla banca d'appoggio definita nella registrazione contabile, e collegata alla partita aperta, tramite la griglia Tipi Pagamento nell'anagrafica. Il parametro è visibile (e nuovamente disattivabile di volta in volta) nella procedura Creazione Automatica Pagamenti Fornitori. Non è visibile, invece, se si crea una nuova distinta di pagamento (Pagamenti Fornitori > Crea Pagamento Fornitore) e pertanto in questo caso va gestito da qui.  
-- **Contabilizzazione da pagamenti fornitori**: impostato di default per contabilizzare l'operazione dal modulo Pagamenti fornitori ed escludere la chiusura della partita presente in distinta da registrazione contabile.  
-- **Gestione rif. Iban**: impostazione dell'obbligo di gestione dei codici IBAN: in questo caso il tracciato non sarà creato in caso manchino gli Iban di alcuni pagamenti in distinta.  
-- **Tipi pagamento per avvisi ricevute**: nel caso si importino gli avvisi Riba passive, è necessario indicare il tipo di pagamento di default da assegnare alla distinta creata. 
+- **percorso di creazione dei tracciati**: configuración del directorio estándar para la creación del archivo telemático para las transferencias en Italia. Se recomienda crear un directorio compartido en red dentro de un servidor, para poder acceder desde todas las estaciones de trabajo del procedimiento. ATENCIÓN: este campo es obligatorio, pero ***FluentisERP*** utiliza el sistema de gestión documental integrado para almacenar el archivo .xml del archivo telemático para las disposiciones de pago. Por lo tanto, el archivo se podrá descargar directamente desde el formulario de la disposición de pago.  
+- **Código ABI Centro Aplicativo (ABI Centro Applicativo)**: obsoleto.  
+- **utilizzare il tasso di cambio storico**: con esta opción, en el caso de partidas en divisa, el contravalor en la divisa de la empresa se gestionará al tipo de cambio histórico de la partida, sin detectar diferencias de cambio.  
+- **imponi la banca d'appoggio presente in anagrafica del fornitore**: con el indicador activo se impondrá el uso del banco de apoyo registrado en la base de datos del proveedor (Grilla Banco de apoyo) en lugar del banco de apoyo definido en la contabilización y vinculado a la partida abierta, a través de la grilla Tipos de Pago en el registro. El parámetro es visible (y nuevamente desactivable de vez en cuando) en el procedimiento de Creación Automática de Pagos a Proveedores. Sin embargo, no es visible si se crea una nueva disposición de pago (Pagos a Proveedores > Crear Pago a Proveedor) y, por lo tanto, en este caso debe gestionarse desde aquí.  
+- **contabilizzazione da pagamenti fornitori**: configurado por defecto para contabilizar la operación desde el módulo de Pagos a proveedores y excluir el cierre de la partida presente en la disposición de la contabilización.  
+- **Gestión de referencia IBAN (Gestione rif. Iban)**: configuración de la obligación de gestionar los códigos IBAN; en este caso, el archivo no se creará si faltan los IBAN de algunos pagos en la disposición.  
+- **tipi pagamento per avvisi ricevute**: en el caso de que se importe los avisos Riba pasivos, es necesario indicar el tipo de pago predeterminado que se asignará a la disposición creada.

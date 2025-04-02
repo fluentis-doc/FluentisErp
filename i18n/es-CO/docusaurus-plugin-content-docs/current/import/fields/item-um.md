@@ -1,1 +1,1 @@
-- **Unità di misura**: viene proposta l'unità di misura principale dell'articolo, ma nel caso in cui nell'anagrafica articolo siano codificate unità di misura alternative l'utente ha la possibilità di sceglierne un'altra. 
+- **unità di misura**: se propone la unidad de medida principal del artículo, pero en caso de que en el registro del artículo estén codificadas unidades de medida alternativas, el usuario tiene la posibilidad de elegir otra.

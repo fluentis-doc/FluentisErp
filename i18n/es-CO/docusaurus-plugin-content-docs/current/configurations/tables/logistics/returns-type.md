@@ -1,38 +1,38 @@
 ---
-title: Tipo rientri
+title: tipo rientri
 sidebar_position: 35
 ---
 
-La tabella serve per impostare i tipi dei rientri di conto lavoro, in modo da poter veicolare il materiale da e per determinati magazzini, a seconda del tipo rientro.
+La tabla sirve para establecer los tipos de retornos de trabajo por cuenta ajena, de modo que se pueda transportar el material de y hacia ciertos almacenes, según el tipo de retorno.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo Rientri**
+**Búsqueda de Tipos de Retornos (Ricerca Tipo Rientri)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Tipo Rientri**
+**Inserción de Tipos de Retornos (Inserimento Tipo Rientri)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevos códigos, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-**Codice**: rappresenta il codice del tipo rientro;
+**codice**: representa el código del tipo de retorno;  
 
-**Descrizione**: rappresenta la descrizione del tipo rientro;
+**descrizione**: representa la descripción del tipo de retorno;  
 
-**Magazzino**: in questa colonna l'utente può scegliere il magazzino su cui dovrà essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
+**magazzino**: en esta columna, el usuario puede elegir el almacén en el que se debe cargar el material producido por el subcontratista y enviado por este mismo a través de un retorno de trabajo por cuenta ajena creado con el tipo recién insertado;  
 
-**Descrizione magazzino**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
+**descrizione magazzino**: representa la descripción del almacén ingresado en la columna anterior;  
 
-**Causale**: in questa colonna l'utente può scegliere la causale con la quale deve essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
+**causale**: en esta columna, el usuario puede elegir la causal con la que debe ser cargado el material producido por el subcontratista y enviado por este mismo a través de un retorno de trabajo por cuenta ajena creado con el tipo recién insertado;  
 
-**Descrizione causale**: rappresenta la descrizione della causale inserita nella colonna precedente;
+**descrizione causale**: representa la descripción de la causal ingresada en la columna anterior;  
 
-**Sc. mag.**: in questa colonna l'utente può scegliere il magazzino da cui dovrà essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
+**sc. mag.**: en esta columna, el usuario puede elegir el almacén del que debe ser descargado el material utilizado por el subcontratista e ingresado en la pestaña Materiales del retorno de trabajo por cuenta ajena creado con el tipo recién insertado;  
 
-**Sc. mag. descrizione**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
+**Descripción del almacén de descarga (Sc. mag. descrizione)**: representa la descripción del almacén ingresado en la columna anterior;  
 
-**Sc. caus.** ****: in questa colonna l'utente può scegliere la causale con la quale deve essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
+**sc. caus.**: en esta columna, el usuario puede elegir la causal con la que debe ser descargado el material utilizado por el subcontratista e ingresado en la pestaña Materiales del retorno de trabajo por cuenta ajena creado con el tipo recién insertado;  
 
-**Sc. caus. descrizone**: rappresenta la descrizione della causale inserita nella colonna precedente.
+**Descripción causal de descarga (Sc. caus. descrizone)**: representa la descripción de la causal ingresada en la columna anterior.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

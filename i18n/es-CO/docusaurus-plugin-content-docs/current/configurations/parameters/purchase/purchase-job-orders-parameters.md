@@ -1,19 +1,18 @@
 ---
-title: Parametri commesse acquisto
+title: parametri commesse acquisto
 sidebar_position: 6
 ---
 
-I parametri delle commesse di acquisto permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
+Los parámetros de los pedidos de compra permiten la configuración básica para gestionarlos correctamente y de acuerdo con las solicitudes específicas de cada empresa.
 
-#### Campi specifici
+#### Campos específicos
 
-- **Evasione obbligatoria**: quando è settato e l'utente si trova nella testata dell'ordine fornitore e passa al tab *Articoli* automaticamente si apre la form *Evasione da commessa*, perciò l'utente è obbligato ad evadere le commesse aperte per il fornitore s-pecificato nell'ordine.
+- **evasione obbligatoria**: cuando está activado y el usuario se encuentra en el encabezado del pedido del proveedor y pasa a la pestaña *articoli*, se abre automáticamente el formulario *Cumplimiento de pedido (Evasione da commessa)*, por lo que el usuario está obligado a cumplir con los pedidos abiertos para el proveedor especificado en el pedido.
 
-- **Evasione articoli da commessa obbligatoria**: quando è settato e sono inseriti degli articoli nel tab *Articoli* viene controllato che l'articolo sia presente in una commessa del fornitore prescelto.
+- **evasione articoli da commessa obbligatoria**: cuando está activado y se han ingresado artículos en la pestaña *articoli*, se verifica que el artículo esté presente en un pedido del proveedor elegido.
 
-- **Quantità fissa**: quando è settato non può essere evasa la commessa per una quantità maggiore a quella inserita nella commessa.
+- **quantità fissa**: cuando está activado, no se puede cumplir el pedido por una cantidad mayor a la ingresada en el pedido.
 
+#### Botón específico  
 
-#### Pulsante specifico  
-
-> **Aggiorna**: permette di ripristinare i parametri ai valori iniziali.
+> **aggiorna**: permite restablecer los parámetros a los valores iniciales.

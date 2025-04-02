@@ -1,14 +1,13 @@
 ---
-title: Ricerca chiusura conti infrannuale
+title: Búsqueda de cierre de cuentas interanual (Ricerca chiusura conti infrannuale)
 sidebar_position: 2
 ---
 
-La form viene utilizzata per ricercare le chiusure elaborate ed eventualmente cancellarle.
+El formulario se utiliza para buscar los cierres elaborados y, si es necesario, cancelarlos.
 
-Da questa maschera sarà possibile cercare e visualizzare i parametri utilizzati in ogni singola chiusura, così come creare nuove chiusure o cancellare (operazione consentita solo se sulla chiusura non sono state gestite procedure automatiche).
-Il flag 'Definitiva' presente in griglia consente di rendere non più modificabile la chiusura stessa.
+Desde esta máscara será posible buscar y visualizar los parámetros utilizados en cada cierre, así como crear nuevos cierres o cancelar (operación permitida solo si no se han gestionado procedimientos automáticos sobre el cierre).  
+El indicador 'Definitivo (Definitiva)' presente en la cuadrícula permite hacer que el cierre ya no sea modificable.
 
-
-:::danger ATTENZIONE
-Non è possibile riaprire una chiusura una volta che questa è stata resa definitiva!
+:::danger ATENCIÓN
+¡No es posible reabrir un cierre una vez que se ha vuelto definitivo!
 :::

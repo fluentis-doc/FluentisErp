@@ -1,16 +1,16 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo Leasing di Fluentis ERP è specificamente pensato per la gestione dei contratti di leasing accesi per l'acquisizione dei fattori produttivi e gli Asset aziendali.
+El módulo de Leasing de Fluentis ERP está específicamente diseñado para la gestión de los contratos de leasing contratados para la adquisición de los factores productivos y los activos empresariales.
 
-Permette di calcolare, inserendo semplicemente i dati di base del contratto, il piano di ammortamento del leasing.
+Permite calcular, ingresando simplemente los datos básicos del contrato, el plan de amortización del leasing.
 
-Si potrà quindi procedere alla contabilizzazione automatica dei canoni relativi alle varie rate e dell'eventuale maxicanone iniziale.
+Se podrá proceder a la contabilización automática de los cánones correspondientes a las diferentes cuotas y del eventual canon máximo inicial.
 
-Alla fine dell'esercizio, tipicamente, è necessario stanziare un risconto per neutralizzare l'effetto distorsivo del maxicanone sull'utile aziendale, agendo con i corretti criteri di competenza economica.
+Al final del ejercicio, típicamente, es necesario contabilizar un ajuste para neutralizar el efecto distorsionador del canon máximo sobre la utilidad empresarial, actuando con los correctos criterios de competencia económica.
 
-E' presente una procedura specifica per questa operazione che calcola il valore del risconto da contabilizzare poi automaticamente, sulla base degli esatti giorni di competenza e del relativo costo.
+Hay un procedimiento específico para esta operación que calcula el valor del ajuste a contabilizar automáticamente, basado en los días exactos de competencia y el costo correspondiente.
 
-**Tabelle necessarie per utilizzare il modulo:** Tipi Leasing
+**Tablas necesarias para utilizar el módulo:** Tipos de Leasing (Tipi Leasing)

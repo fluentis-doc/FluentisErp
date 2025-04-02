@@ -1,22 +1,22 @@
 ---
-title: Ricerca Reclami
+title: ricerca reclami
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Reclami e Non conformità > Reclami**.   
+El filtro se encuentra en la ruta **Calidad > Reclamaciones y No Conformidades > Reclamaciones (Qualità > Reclami e Non conformità > Reclami)**.  
 
-Il filtro dati consente di inserire nuovi *Reclami* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+El filtro de datos permite ingresar nuevas *reclami* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.  
 
-### ![](/img/neutral/common/search.png) Ricerca Reclami
+### ![](/img/neutral/common/search.png) ricerca reclami (Ricerca Reclami)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para mostrar los resultados dentro de la cuadrícula de resultados.  
 
-### ![](/img/neutral/common/new.png) Inserimento Reclami
+### ![](/img/neutral/common/new.png) Ingreso de Reclamaciones (Inserimento Reclami)
 
-Per poter inserire nuovi *Reclami* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevas *reclami* es necesario presionar el botón **nuovo**.  
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Reclami
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Reclamaciones (Modifica o Visualizzazione Reclami)
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la línea de nuestro interés o, seleccionando una o más líneas, presionar los botones **modifica** o **visualizza**.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

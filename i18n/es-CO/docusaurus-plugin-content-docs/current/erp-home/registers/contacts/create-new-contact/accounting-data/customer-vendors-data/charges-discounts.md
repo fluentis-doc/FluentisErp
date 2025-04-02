@@ -1,15 +1,15 @@
 ---
-title: Spese/Sconti
+title: spese/sconti
 sidebar_position: 5
 ---
 
-Questa form è dedicata all'inserimento delle tipologie di spese predefinite per il cliente/fornitore.
+Este formulario está dedicado a la inserción de los tipos de gastos predeterminados para el cliente/proveedor.
 
-**Tipologia di spese predefinite**: in questa griglia si inseriscono le spese valide per il cliente/fornitore, secondo le impostazioni predefinite nella relativa tabella (in *Configurazione > Tabelle > Impostazioni generali > Tipi Spese*) e i valori specifici. Il flag **Valore spesa minima** indica che la spesa indicata è quella minima, se espressa in percentuale.
+**tipologia di spese predefinite**: en esta cuadrícula se ingresan los gastos válidos para el cliente/proveedor, de acuerdo con las configuraciones predeterminadas en la tabla correspondiente (en *Configuración > Tablas > Configuraciones generales > Tipos de Gastos*) y los valores específicos. El indicador **valore spesa minima** indica que el gasto indicado es el mínimo, si se expresa en porcentaje.
 
-**Tipologie di sconti predefiniti**: la griglia consente di definire gli sconti da applicare sempre ai documenti del cliente/fornitore selezionandoli da quelli preimpostati nella relativa tabella in *Configurazione > Tabelle > Impostazioni generali > Tipi sconto*). Sarà possibile stabilire la priorità nel caso siano presenti più sconti.
+**Tipos de descuentos predeterminados (Tipologie di sconti predefiniti)**: la cuadrícula permite definir los descuentos que se aplicarán siempre a los documentos del cliente/proveedor seleccionándolos de los preestablecidos en la tabla correspondiente en *tipi sconto*). Será posible establecer la prioridad en caso de que haya varios descuentos presentes.
 
-*Pulsanti specifici*:  
-> **Cancella spese**: per cancellare le spese selezionate.  
-> **Cancella sconti**: per cancellare gli sconti selezionati.  
-> **Cancella spese di viaggio**: per cancellare le spese viaggio selezionate. Non può essere attivo in un'anagrafica fornitore in quanto non è gestita la spesa di viaggio. 
+**Botones específicos (Pulsanti specifici)**:  
+> **cancella spese**: para eliminar los gastos seleccionados.  
+> **cancella sconti**: para eliminar los descuentos seleccionados.  
+> **cancella spese di viaggio**: para eliminar los gastos de viaje seleccionados. No puede estar activo en un registro de proveedor ya que no se gestiona el gasto de viaje.

@@ -1,27 +1,27 @@
 ---
-title: Proprietà autoveicolo
+title: Propiedades del vehículo (Proprietà autoveicolo)
 sidebar_position: 57
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Proprietà autoveicolo**.
+La tabla se encuentra en la ruta **Tablas > Logística > Propiedades del vehículo (Tabelle > Logistica > Proprietà autoveicolo)**.
 
-In questa tabella è possibile codificare le tipologie di *Proprietà autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+En esta tabla es posible codificar los tipos de *Propiedades del vehículo (Proprietà autoveicolo)* que podrán ser seleccionados en el [Registro de vehículos (Angrafica automezzi)](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Proprietà autoveicolo**
+**Búsqueda de propiedades del vehículo (Ricerca Proprietà autoveicolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Proprietà autoveicolo**
+**Inserción de propiedades del vehículo (Inserimento Proprietà autoveicolo)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.          
-Inoltre, per ogni tipologia è possibile indicare se sia:
-- **Asset**: indica che il mezzo è di proprietà;
-- **Leasing**: indica che il mezzo è in leasing;
-- **Noleggio**: indica che il mezzo è a noleggio.
+Para poder insertar nuevos registros, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
+Además, para cada tipo, se puede indicar si es:  
+- **Activo (Asset)**: indica que el vehículo es de propiedad;  
+- **leasing**: indica que el vehículo está en leasing;  
+- **noleggio**: indica que el vehículo está en alquiler.
 
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Con el botón **cancella** es posible eliminar el registro seleccionado.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common). 
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

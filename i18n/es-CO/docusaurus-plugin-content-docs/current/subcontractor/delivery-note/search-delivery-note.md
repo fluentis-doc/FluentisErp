@@ -1,18 +1,18 @@
 ---
-title: Ricerca DDT di Consegna
+title: Búsqueda de DDT de Entrega (Ricerca DDT di Consegna)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > DDT di Consegna > DDT di Consegna**.
+El formulario se abre a través de la ruta **Trabajo por encargo (Conto Lavoro) > DDT de Entrega (DDT di Consegna) > DDT de Entrega (DDT di Consegna)**.
 
 import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Filtri specifici*
+*Filtros específicos (Filtri specifici)*
 
-**Scaricate**: questo flag consente di filtrare i DDT di Consegna già scaricati dal magazzino, cioè i DDT per cui è stata effettuata l'operazione di *Scarico DDT*;  
-**Stampate**: questo flag consente di i DDT di Consegna già stampati.  
-La finestra della ricerca DDT di apre con questi 2 flag disattivati di default, quindi per visualizzare tutte i DDT è necessario attivarli.
+**scaricate**: este indicador permite filtrar los DDT de Entrega que ya han sido descargados del almacén, es decir, los DDT para los cuales se ha realizado la operación de *scarico ddt*;  
+**stampate**: este indicador permite filtrar los DDT de Entrega que ya han sido impresos.  
+La ventana de búsqueda de DDT se abre con estos 2 indicadores desactivados por defecto, por lo que para visualizar todos los DDT es necesario activarlos.
 
-Sempre da questa form è possibile creare un nuovo DDT di consegna, cliccando sul pulsante [Nuovo](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note).
+Desde este formulario también es posible crear un nuevo DDT de entrega, haciendo clic en el botón [Nuevo (Nuovo)](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note).

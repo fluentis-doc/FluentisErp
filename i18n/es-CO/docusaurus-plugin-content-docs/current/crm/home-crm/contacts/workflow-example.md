@@ -1,15 +1,15 @@
 ---
-title: Esempio Workflow Contatti CRM
+title: Ejemplo de Workflow de Contactos CRM (Esempio Workflow Contatti CRM)
 sidebar_position: 3
 ---
 
-Qui di seguito viene illustrato un esempio di Workflow creato per gestire il customer journey.
-Ricordiamo che per essere visualizzato, il Workflow deve essere inserito tra i Workflow Attivi di Fluentis:    
+A continuación se ilustra un ejemplo de Workflow creado para gestionar el customer journey.  
+Recordamos que para ser visualizado, el Workflow debe estar incluido entre los Workflows Activos de Fluentis:  
 
 ![](/img/it-it/crm/workflows.png)
 
-Proponiamo un workflow che preveda i seguenti stadi: Start > Qualification > Prospect > Lead > Opportunity > Not qualified customer > Customer > Closed.     
-Lo stadio Start è lo Stato iniziale, lo stato Closed quello finale.    
-Nell'immagine che segue è selezionato lo stadio Start. Nella griglia destra, per questo stadio, sono visibili diversi dati, come il Codice (che deve essere unico per ogni stadio), eventuali diritti di visualizzazione, eventuali colorazioni valide solo per quello stadio. Per esso sono state anche inserite due attività obbligatorie (a causa del flag *Obbligatorio*: senza l'esecuzione di questa attività non sarà possibile passare allo stadio successivo): l'inserimento dell'anagrafica nel CRM aziendale e la prima call conoscitiva. Sarà possibile inserire altre attività all'interno del contatto CRM, se disponibili, il non inserimento in questa griglia non ne preclude l'utilizzo.   
+Proponemos un workflow que contemple los siguientes estadios: Inicio (Start) > Calificación (Qualification) > Prospecto (Prospect) > Cliente potencial (Lead) > Oportunidad (Opportunity) > Cliente no calificado (Not qualified customer) > Cliente (Customer) > Cerrado (Closed).  
+El estadio Inicio (Start) es el estado inicial, y el estado Cerrado (Closed) es el final.  
+En la imagen que sigue se selecciona el estadio Inicio (Start). En la cuadrícula de la derecha, para este estadio, son visibles varios datos, como el Código (que debe ser único para cada estadio), derechos de visualización, colores válidos solo para ese estadio. Para este también se han insertado dos actividades obligatorias (debido al indicador *obbligatorio*: sin la realización de esta actividad no será posible pasar al siguiente estadio): la inserción de la anagráfica en el CRM empresarial y la primera llamada de conocimiento. Será posible insertar otras actividades dentro del contacto CRM, si están disponibles; la no inserción en esta cuadrícula no impide su uso.  
 
 ![](/img/it-it/crm/contactworkflow.png)

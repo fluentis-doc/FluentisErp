@@ -1,1 +1,1 @@
-- **Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente.
+- **cancella sconti**: permite eliminar el descuento seleccionado de la cuadrícula correspondiente.

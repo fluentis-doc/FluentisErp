@@ -1,84 +1,74 @@
 ---
-title: Valutazioni periodiche su Non conformità
+title: valutazioni periodiche su non conformità
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Valutazioni fornitore > Valutazioni periodiche su Non conformità**.   
+La gestión se encuentra en la ruta **Calidad > Evaluaciones de proveedor > valutazioni periodiche su non conformità (Qualità > Valutazioni fornitore > Valutazioni periodiche su Non conformità)**.
 
+:::important ¿Para qué sirve? (A cosa serve)  
+Las *valutazioni periodiche su non conformità* son uno de los métodos de evaluación de los proveedores que se ponen a disposición para su evaluación.  
+Este método "objetivo" se basa en el peso de los defectos asignados a las *No conformidades de proveedor* y se utiliza habitualmente para las evaluaciones periódicas.  
 
-:::important A cosa serve
-Le *Valutazioni periodiche su Non conformità* è uno dei metodi di valutazione dei fornitori che vengono messi a disposizione per la valutazione degli stessi.   
-Questo metodo "oggettivo" si basa sul peso delle difettosità assegnate alle *Non conformità a fornitore* e viene abitualmente utilizzato per le valutazioni periodiche.   
-
-La gestione consente di inserire nuove *Valutazioni periodiche su Non conformità* o di ricercare quelle già esistenti per visualizzarle.   
+La gestión permite insertar nuevas *valutazioni periodiche su non conformità* o buscar aquellas ya existentes para visualizarlas.  
 :::
 
+## Botones de comando (Pulsanti di comando)
 
-## Pulsanti di comando
+### ![](/img/neutral/common/search.png) Buscar valutazioni periodiche su non conformità (Ricerca Valutazioni periodiche su Non conformità)
 
+El formulario se compone de un área de filtro y de una de resultado. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-### ![](/img/neutral/common/search.png) Ricerca Valutazioni periodiche su Non conformità
+### ![](/img/neutral/common/accountant-search.png) Calificación periódica (Qualificazione periodica)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Para poder insertar nuevas *Evaluaciones iniciales y periódicas*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **qualificazione periodica**.  
 
+## Gestión de datos (Gestione dati)
 
-### ![](/img/neutral/common/accountant-search.png) Qualificazione periodica
+### valutazioni periodiche su non conformità (Valutazioni periodiche su Non conformità)
 
-Per poter inserire nuove *Valutazioni iniziali e periodiche* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Qualificazione periodica**.   
+Es la lista donde se visualizan las principales informaciones de la *Evaluación periódica sobre No conformidades*.  
+La lista se compone de la siguiente información:  
+> **da data valutazione**: es la fecha inicial del período de evaluación. La información es de solo lectura.  
+> **a data valutazione**: es la fecha final del período de evaluación. La información es de solo lectura.  
+> **fornitore**: es la razón social del *Proveedor* evaluado. La información es de solo lectura.  
+> **bonus**: es el valor inicial de la *Bonificación* asociada al *Proveedor*. La información es de solo lectura.  
+> **bonus residuo**: es el valor final de la *Bonificación* una vez realizada la evaluación. La información es de solo lectura.  
+> **punteggio %**: es el valor porcentual entre *Bonificación residual* y *Bonificación inicial*. La información es de solo lectura.  
+> **valutazione**: es la *Evaluación* dada al *Proveedor* en base al *Puntuación %* obtenida. La información es de solo lectura.  
+> La celda se colorea con los colores de *fondo* y de *texto* previstos en la tabla de *Evaluaciones de proveedor*.  
+> Si la *Evaluación* otorgada está asociada a una *Evaluación de proveedor* con *Suspensión automática*, el *Proveedor* evaluado será *Suspendido* desde la *Fecha de evaluación*.  
+> La restauración de la suspensión debe hacerse manualmente por la *Función empresarial* correspondiente.  
+> **note**: anotaciones libres.  
 
+### Valores de No conformidades en el período (Valori Non conformità nel periodo)
 
-## Gestione dati
+Es la lista de las diferentes *Gravedad* encontradas en el período evaluado.  
+La lista se compone de la siguiente información:  
+> **gravità**: es el código de la *Gravedad*.  
+> **descrizione gravità**: es la descripción de la *Gravedad*.  
+> **conteggio**: es el número de *Gravidades* contabilizadas.  
+> **punteggio gravità**: es el *Puntuación cálculo índice de calificación de proveedor* asociado a la *Gravedad*.  
+> **totale punteggio calcolato**: es la suma de todos los *Puntuaciones cálculo índices de calificación de proveedor* (**IQF**) multiplicados entre sí.  
 
-
-### Valutazioni periodiche su Non conformità
-
-E' l'elenco dove vengono visualizzate le informazioni principali della *Valutazione periodiche su Non conformità*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Da data valutazione**: è la data iniziale del periodo di valutazione. L'informazione è di sola lettura.   
-> **A data valutazione**: è la data finale del periodo di valutazione. L'informazione è di sola lettura.   
-> **Fornitore**: è la ragione sociale del *Fornitore* valutato. L'informazione è di sola lettura.   
-> **Bonus**: è il valore di partenza del *Bonus* associato al *Fornitore*. L'informazione è di sola lettura.   
-> **Bonus residuo**: è il valore finale del *Bonus* una volta effettuata la valutazione. L'informazione è di sola lettura.   
-> **Punteggio %**: è il valore percentuale tra *Bonus residuo* e *Bonus iniziale*. L'informazione è di sola lettura.   
-> **Valutazione**: è la *Valutazione* data al *Fornitore* sulla base del *Punteggio %* ottenuto. L'informazione è di sola lettura.   
-> La cella viene colorata con i colori di *sfondo* e di *testo* previsti nella tabella delle *Valutazioni fornitore*.   
-> Se la *Valutazione* attribuita è associata ad una *Valutazione fornitore* con *Sospensione automatica* il *Fornitore* valutato verrà *Sospeso* dalla *Data valutazione*.
-> Il ripristino della sospensione deve essere fatta manualmente dalla *Funzione aziendale* preposta.   
-> **Note**: annotazioni libere.   
-
-
-### Valori Non conformità nel periodo
-
-E' l'elenco delle diverse *Gravità* riscontrate nel periodo valutato.   
-L'elenco si compone delle seguenti informazioni:   
-> **Gravità**: è il codice della *Gravità*.   
-> **Descrizione gravità**: è la descrizione della *Gravità*.   
-> **Conteggio**: è il numero delle *Gravità* conteggiate.   
-> **Punteggio gravità**: è il *Punteggio calcolo indice di qualificazione fornitore* associato alla *Gravità*.   
-> **Totale punteggio calcolato**: è la sommatoria di tutti i *Punteggi calcolo indici di qualificazione fornitore* (**IQF**) e tra loro moltiplicati.   
-
-
-:::tip Metodo utilizzato per il calcolo   
-*Metodo utilizzato per il calcolo di:* **Totale punteggio calcolato**, **Bonus residuo**, **Punteggio %** e **Valutazione**.   
-- Viene considerata ogni singola riga *Difetto* di *Non conformità* inserite nel periodo valutato, e attribuite al *Fornitore* in valutazione.   
-- Per ogni riga di *Difetto riscontrato* viene moltiplicato ogni singolo *IQF* di: *Difetto riscontrato*, *Causa effettiva* oppure *Causa presunta* (in mancanza di una *Causa effettiva* associata), *Soluzione proposta* e *Decisione intrapresa*. Se uno di questi dati non viene inserito l'*IQF* è pari a **1,0**. Esempio:   
-  - riga 1: *IQF Difetto riscontrato* = **5,1**, *IQF Causa effettiva* = **1,5**, *IQF Soluzione proposta* = **1,3** e *IQF Decisione intrapresa* = **2,1**;   
-  il totale riga è pari a: **5,1 * 1,5 * 1,3 * 2,1 = 20.8845** = *Totale Riga 1*.   
-  - riga 2: *IQF Difetto riscontrato* = **2,1**, *IQF Causa presunta* = **4,2** (*Causa effettiva* non inserita), *Soluzione proposta* non inserita quindi *IQF* = **1,0** e *IQF Decisione intrapresa* = **1,7**;   
-  il totale riga è pari a: **2,1 * 4,2 * 1,0 * 1,7 = 14,994** = *Totale Riga 2*.   
-- Il Totale punteggio calcolato per singola riga viene sommato alle altre righe considerate che hanno la medesima *Gravità*. La sommatoria di tutti i punteggi per riga è il *Totale punteggio calcolato* per quella *Gravità*. Esempio:   
-  - **Totale punteggio calcolato** = *Totale Riga 1* + *Totale Riga 2* = **20,8845 + 14,994 = 35,8785**.   
-- Per calcolare il *Bonus residuo* consideriamo un *Bonus* iniziale del *Fornitore* pari a **500**. Quindi:   
-    - **Bonus residuo** = **Bonus** - sommatoria dei **Totale punteggi calcolati** per ogni *Gravità* = **500 - 35,8785 = 464,1215**.   
-- Per calcolare il *Punteggio %* è l'applicazione della percentuale tra *Bonus residuo* e *Bonus iniziale*:   
-    - **Bonus residuo** / **Bonus** * 100 = **464,1215 / 500 * 100 = 92.8243%**.   
-- La **Valutazione** viene attribuita sulla base dei valori di *Punteggio da* indicati nell'elenco *Intervalli di punteggio per la valutazione* presente nei *Parametri Qualificazione fornitore*. Viene considerata la *Valutazione* con *Punteggio da* immediatamente inferiore al **Punteggio %**.
+:::tip Método utilizado para el cálculo (Metodo utilizzato per il calcolo)  
+*Método utilizado para el cálculo de:* **totale punteggio calcolato**, **bonus residuo**, **punteggio %** y **valutazione**.  
+- Se considera cada fila *Defecto* de *No conformidad* ingresada en el período evaluado, y asignada al *Proveedor* en evaluación.  
+- Para cada fila de *Defecto encontrado*, se multiplica cada *IQF* correspondiente: *Defecto encontrado*, *Causa efectiva* o *Causa presunta* (en ausencia de una *Causa efectiva* asociada), *Solución propuesta* y *Decisión tomada*. Si alguno de estos datos no se ingresa, el *IQF* es igual a **1,0**. Ejemplo:  
+  - fila 1: *IQF Defecto encontrado* = **5,1**, *IQF Causa efectiva* = **1,5**, *IQF Solución propuesta* = **1,3** y *IQF Decisión tomada* = **2,1**;  
+  el total fila es igual a: **5,1 * 1,5 * 1,3 * 2,1 = 20.8845** = *Total Fila 1*.  
+  - fila 2: *IQF Defecto encontrado* = **2,1**, *IQF Causa presunta* = **4,2** (*Causa efectiva* no ingresada), *Solución propuesta* no ingresada, por lo que *IQF* = **1,0** y *IQF Decisión tomada* = **1,7**;  
+  el total fila es igual a: **2,1 * 4,2 * 1,0 * 1,7 = 14,994** = *Total Fila 2*.  
+- El Total de puntuación calculada por fila se suma a las otras filas consideradas que tienen la misma *Gravedad*. La suma de todas las puntuaciones por fila es el *Total de puntuación calculada* para esa *Gravedad*. Ejemplo:  
+  - **Total de puntuación calculada** = *Total Fila 1* + *Total Fila 2* = **20,8845 + 14,994 = 35,8785**.  
+- Para calcular la *Bonificación residual*, consideramos una *Bonificación* inicial del *Proveedor* igual a **500**. Entonces:  
+    - **Bonificación residual** = **Bonificación** - suma de los **Totales de puntuaciones calculadas** para cada *Gravedad* = **500 - 35,8785 = 464,1215**.  
+- Para calcular el *Puntuación %*, se aplica el porcentaje entre *Bonificación residual* y *Bonificación inicial*:  
+    - **Bonificación residual** / **Bonificación** * 100 = **464,1215 / 500 * 100 = 92.8243%**.  
+- La **Evaluación** se atribuye en base a los valores de *Puntuación desde* indicados en la lista *Intervalos de puntuación para la evaluación* presente en los *Parámetros de Calificación de proveedor*. Se considera la *Evaluación* con *Puntuación desde* inmediatamente inferior al **Puntuación %**.  
 :::
 
+### Datos extra (Extra data)
 
-### Extra data
+Es posible insertar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *Evaluación periódica sobre No conformidades*.  
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Valutazione periodica su Non conformità*.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

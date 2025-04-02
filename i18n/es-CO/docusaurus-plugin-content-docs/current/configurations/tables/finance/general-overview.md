@@ -1,28 +1,28 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Le Tabelle dell'Area Amministrativa concernono i diversi moduli della suddetta Area. 
+Las Tablas del Área Administrativa conciernen a los diferentes módulos de dicha Área. 
 
-**Esse accolgono i dati di base e le configurazioni che saranno richiamate in tutte le procedure operative**. 
+**Estas albergan los datos básicos y las configuraciones que serán invocadas en todos los procedimientos operativos**. 
 
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
+:::danger[Atención (Attenzione)]
+Una falta de gestión de estos datos básicos podría impedir el uso efectivo del ERP en el área correspondiente.
 :::
 
-:::note[Esempio]
-Un esempio di dati di base è rappresentato dai Tipo Conto, ovvero le tipologie di conto contabile necessarie per definire poi il piano dei conti e tutti i suoi collegamenti, oppure le aliquote iva, necessarie per gestire le scritture contabili, ma anche i documenti di acquisto e vendita.
+:::note[Ejemplo (Esempio)]
+Un ejemplo de datos básicos está representado por los Tipos de Cuenta, es decir, las tipologías de cuenta contable necesarias para definir luego el plan de cuentas y todos sus vínculos, o las tarifas del IVA, necesarias para gestionar los asientos contables, así como los documentos de compra y venta.
 :::
 
-Una opportuna e necessaria parametrizzazione consentirà sia la definizione della gestione del modulo relativo sia l'opportunità di poter usufruire di determinati automatismi.
+Una adecuada y necesaria parametrización permitirá tanto la definición de la gestión del módulo relacionado como la oportunidad de disfrutar de ciertos automatismos.
 
-Le tabelle di Contabilità si trovano in **Configurazione > Tabelle > Amministrativa**.
+Las tablas de Contabilidad se encuentran en **Configuración > Tablas > Administrativa (Configurazione > Tabelle > Amministrativa)**.
 
-L'area amministrativa è fortemente interessata dai benefici derivanti dall'attivazione della procedura di [**Fast Start**](/docs/guide/fast-start).
+El área administrativa se ve fuertemente beneficiada por la activación del procedimiento de [**Fast Start (Fast Start)**](/docs/guide/fast-start).
 
-A partire dal piano dei conti che viene inizializzato secondo uno schema standard, si collegano ad esso varie tabelle secondo vari livelli gerarchici, dalle Casuali contabili alle aliquote Iva ecc... 
+A partir del plan de cuentas que se inicializa según un esquema estándar, se conectan a él varias tablas según varios niveles jerárquicos, desde los Asientos contables hasta las tarifas del IVA, etc. 
 
-Si invita a fare riferimento al link sopra per ulteriori dettagli.
+Se invita a consultar el enlace anterior para más detalles.
 
-In particolare la pagina linkata fa riferimento al dettaglio delle tabelle interessate e nel caso in cui si intenda procedere con una configurazione manuale offre una check list per la configurazione.
+En particular, la página enlazada hace referencia al detalle de las tablas involucradas y, en caso de que se pretenda proceder con una configuración manual, ofrece una lista de verificación para la configuración.

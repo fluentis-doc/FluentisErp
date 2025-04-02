@@ -1,37 +1,37 @@
 ---
-title: Bilancio di Verifica
+title: bilancio di verifica
 sidebar_position: 1
 ---
 
-La stampa del Bilancio di verifica visualizza una lista dei sottoconti con i relativi totali dare/avere e i saldi.
+La impresión del Balance de comprobación muestra una lista de los subcuentas con sus respectivos totales de debe/haber y los saldos.
 
-I principali parametri di filtro da gestire prima di lanciare la stampa sono:
+Los principales parámetros de filtro a gestionar antes de lanzar la impresión son:
 
- - il range di date di registrazione; di default viene proposto il periodo da inizio anno ad oggi.
+ - el rango de fechas de registro; por defecto se propone el periodo desde el inicio del año hasta la fecha.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image01.png)
 
-- il range di date di competenza **contabile** (da non confondere con il concetto di competenza economica).
+- el rango de fechas de competencia **contabile** (no confundir con el concepto de competencia económica).
 
  ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image02.png)
 
-E' possibile filtrare solo alcuni sottoconti riferiti alle anagrafiche clienti (coppia di widget più in alto) e fornitori (seconda coppia di widget)
+Es posible filtrar solo algunos subcuentas referidos a los registros de clientes (pareja de widgets más arriba) y proveedores (segunda pareja de widgets).
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image03.png)
 
-Oppure è possibile escludere alcuni tipi conti di anagrafica affinché non vengano visualizzati i dettagli di ogni singolo sottoconto riferito alla tipologia per la quale si attiva il flag.
+O es posible excluir algunos tipos de cuentas de registro para que no se visualicen los detalles de cada subcuenta relacionada con el tipo para el cual se activa el indicador.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image04.png)
 
  
 
-Si possono richiedere tutti i sottoconti, solo quelli movimentati, oppure i movimentati con saldo diverso da zero.
+Se pueden solicitar todos los subcuentas, solo aquellos que han tenido movimiento, o los que tienen movimiento con saldo diferente de cero.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image05.png)
 
  
 
-Con la descrizione standard del sottoconto oppure utilizzando la **[seconda descrizione](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**.
+Con la descripción estándar del subcuenta o utilizando la **[segunda descripción](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image06.png)
 
@@ -39,31 +39,27 @@ Con la descrizione standard del sottoconto oppure utilizzando la **[seconda desc
 
  ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image08.png)
 
-E' possibile includere anche le registrazioni provvisorie (di default sono attive solo quelle definitive).
+Es posible incluir también los registros provisionales (por defecto solo están activos los definitivos).
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image09.png)
 
-**OPZIONI**:
+**opzioni**:
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image10.png)
 
-**Divisione**: la combo box permette di selezionare solo una delle divisioni presenti nel data base al fine di elaborare il bilancio solo per quella selezionata, diversamanete, se non vien selezionata una (o più di una tenendo premuto il tasto Ctrl) si otterrà il bilancio dell'intera società in uso. Si ricorda che il concetto di divisione si riferisce ad una unità operativa specifica (alla quale sono riferiti i documenti ed i movimenti contabili) riferita però alla stessa società (quindi allo stresso soggetto giuridico) la quale fiscalmente e legalmente presenta il bilancio ed i dati contabili e fiscali.
+**divisione**: la caja combinada permite seleccionar solo una de las divisiones presentes en la base de datos para elaborar el balance solo para la seleccionada; de lo contrario, si no se selecciona una (o más de una manteniendo presionada la tecla Ctrl), se obtendrá el balance de toda la empresa en uso. Se recuerda que el concepto de división se refiere a una unidad operativa específica (a la cual se refieren los documentos y los movimientos contables) correspondiente pero a la misma empresa (por lo tanto al mismo sujeto jurídico) la cual presenta fiscal y legalmente el balance y los datos contables y fiscales.
 
-**Escludi causale**: tramite la combo box è possibile escludere i movimenti riferiti alla causale contabile selezionata. La possibilità è particolarmente utile quando si desidera ristampare un bilancio relativo ad un periodo per il quale è già intervenuta la chiusura dei conti e pertanto i saldi risultano a zero. Si inserirà allora nel campo in commento la causale utilizzata per la chiusura conti (esempio causale codice BILCH) per visualizzare nuovamente il bilancio con situazione saldi prima della chiusura.
+**escludi causale**: a través de la caja combinada es posible excluir los movimientos referidos a la causal contable seleccionada. Esta opción es particularmente útil cuando se desea reimprimir un balance correspondiente a un periodo en el cual ya se ha realizado el cierre de cuentas y, por tanto, los saldos resultan ser cero. Se debe ingresar en el campo correspondiente la causal utilizada para el cierre de cuentas (ejemplo: causal código BILCH) para visualizar nuevamente el balance con la situación de saldos antes del cierre.
 
-**Apertura**: flag che, se attivato, esclude dall'elaborazione del bilancio i movimenti di apertura conti generati dalla procedura di riapertura conti contestuale alla **[chiusura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
+**apertura**: indicador que, si está activado, excluye de la elaboración del balance los movimientos de apertura de cuentas generados por el procedimiento de reapertura de cuentas vinculado a la **[cierre automático de cuentas (chiusura automatica conti)](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
 
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión. |
+| Imprimir (Stampa) | Botón para ejecutar la impresión física del documento. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important Ver También (Vedi Anche)
+[**TUTORIALS EN VIDEO SOBRE LAS IMPRESIONES CONTABLES**](/docs/video/finance/intro)
 :::
-
-
-

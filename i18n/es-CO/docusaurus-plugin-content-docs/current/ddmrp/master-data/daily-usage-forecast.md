@@ -1,13 +1,13 @@
 ---
-title: Previsioni di consumo
+title: Previsión de consumo (Previsioni di consumo)
 sidebar_position: 7
 ---
-Questa tabella contiene le previsioni di consumo degli articoli buffer.
+Esta tabla contiene las previsiones de consumo de los artículos de buffer.
 
-Per ciascun articolo a buffer e per ciascuna unità logistica è possibile indicare quale valore di consumo si prevede con dettaglio giornaliero.
+Para cada artículo de buffer y para cada unidad logística, es posible indicar qué valor de consumo se prevé con detalle diario.
 
-I dati contenuti in questa tabella vengono utilizzati dalla procedura [**aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/ADU-update) nel caso di tecnica di calcolo che considera i dati di previsione consumo futuro, e possono essere inseriti manualmente o possono provenire dalla procedura di calcolo che sviluppa le previsioni di vendita dei prodotti finiti.
+Los datos contenidos en esta tabla son utilizados por el procedimiento [**actualización de consumo medio diario (ADU)**](/docs/ddmrp/procedures/ADU-update) en caso de que la técnica de cálculo considere los datos de previsión del consumo futuro, y pueden ser ingresados manualmente o pueden provenir del procedimiento de cálculo que desarrolla las previsiones de venta de los productos terminados.
 
-Nel caso di inserimento manuale non è necessario inserire un valore per ogni giorno, basta inserirne uno per ogni periodo di tempo di durata pari al parametro **Giorni nel futuro** dei parametri DDMRP dell'articolo.
+En el caso de inserción manual, no es necesario ingresar un valor para cada día, basta con ingresar uno por cada período de tiempo con una duración igual al parámetro **giorni nel futuro** de los parámetros DDMRP del artículo.
 
-Se per esempio **Giorni nel futuro** è pari a 10 gg, basterà inserire un valore ogni 10 giorni pari al totale del consumo in tale periodo, poichè la procedura di aggiornamento del consumo medio giornaliero in caso di utilizzo di una modalità che riguarda il futuro, farà la somma delle previsioni in tale periodo di tempo diviso **Giorni nel futuro**.
+Si, por ejemplo, **giorni nel futuro** es igual a 10 días, será suficiente ingresar un valor cada 10 días equivalente al total del consumo en ese período, ya que el procedimiento de actualización del consumo medio diario, en caso de utilizar un modo que se refiere al futuro, realizará la suma de las previsiones en ese período de tiempo dividida por **giorni nel futuro**.

@@ -1,7 +1,7 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo **Previsioni di vendita** consente all'operatore di gestire l'elaborazione del previsionale di vendita, sia annuale che di periodo, dettagliato per famiglia prodotto, per agente, per area geografica.
-Il modulo è presente nell'area *Controlling* e legge come dati di origine quelli di ordini, bolle e fatture di vendita.
+El módulo **previsioni di vendita** permite al operador gestionar el procesamiento de las previsiones de venta, tanto anuales como por período, detalladas por familia de productos, por agente y por área geográfica.  
+El módulo está presente en el área de *controlling* y lee como datos de origen los de pedidos, albaranes y facturas de venta.

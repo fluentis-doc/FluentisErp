@@ -1,18 +1,18 @@
 ---
-title: Agenti Contatto
+title: Agentes de Contacto (Agenti Contatto)
 sidebar_position: 9
 ---
 
-Questa è l'ottava tab dei **Contatti CRM**.
+Esta es la octava pestaña de los **contatti crm**.
 
-In questa tab è possibile definire gli **Agenti** collegati a questo contatto.
+En esta pestaña es posible definir los **Agentes** relacionados con este contacto.
 
-I campi compilabili sono i seguenti:
+Los campos que se pueden completar son los siguientes:
 
-**Conto – Sottoconto – Descrizione Conto**: tramite questi campi è possibile selezionare l’agente, facendo riferimento alla relativa anagrafica;
+**Cuenta – Subcuenta – Descripción de la Cuenta (Conto – Sottoconto – Descrizione Conto)**: a través de estos campos se puede seleccionar el agente, haciendo referencia a su respectivo registro;  
 
-**Zona**: è possibile definire la zona di competenza dell’agente, così come definito in tabella;
+**zona**: es posible definir la zona de competencia del agente, tal como se define en la tabla;  
 
-**Percentuale**: è la percentuale di provvigione spettante all’agente in relazione al contatto;
+**percentuale**: es el porcentaje de comisión que corresponde al agente en relación con el contacto;  
 
-**Utilizzare valore percentuale**: mettendo la spunta a questa voce si indica alla procedura che in fase di inserimento delle offerte di vendita dovrà essere tenuto conto del valore indicato nel campo **Percentuale** per effettuare il calcolo delle provvigioni spettanti all’agente.
+**utilizzare valore percentuale**: al marcar esta opción se le indica al procedimiento que, al ingresar las ofertas de venta, se debe tener en cuenta el valor indicado en el campo **percentuale** para calcular las comisiones que corresponden al agente.

@@ -1,19 +1,19 @@
 ---
-title: Ricerca Richieste di offerta
+title: Búsqueda de Solicitudes de Oferta (Ricerca Richieste di offerta)
 sidebar_position: 2
 ---
 
-Il modulo si trova nell'area **Acquisti > Richieste di offerta**. Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Acquisti](/docs/purchase/purchases-intro).
+El formulario se encuentra en el área **Compras > Solicitudes de oferta (Acquisti > Richieste di offerta)**. Para la explicación de las funcionalidades comunes a los documentos de venta, consulte la sección [Compras (Acquisti)](/docs/purchase/purchases-intro).
 
-Nell'area di filtro è possibile scegliere se visualizzare le richieste di offerta *aperte* e/o *chiuse* e se visualizzare *tutte le versioni* oppure solo l'ultima versione di ciascuna RDO.
+En el área de filtro, es posible elegir si visualizar las solicitudes de oferta *abiertas* y/o *cerradas* y si visualizar *todas las versiones* o solo la última versión de cada RDO.
 
-Sopra la griglia dei risultati ci sono delle *tiles* che permettono di filtrare velocemente i seguenti tipi di Richieste di offerta: 
-> **Confermate con successo**: RDO confermate, ma non ancora chiuse.    
-> **In corso con successo**: RDO cornfermate e convertite in ordine non evaso oppure collegate ad una RDA che è già stata convertita in ordine.    
-> **Chiuse con successo**: RDO cornfermate, chiuse e convertite in ordine già evaso (oppure collegate ad una RDA che è già stata convertita in ordine).    
-> **In attesa di conferma**: RDO non ancora confermate, non chiuse e non collegate ad una RDA già convertita in ordine.    
-> **Sciolto**: RDO non confermate e non collegate ad una RDA già convertita in ordine.  
-> **Scadute**: RDO scadute e non collegate ad una RDA già convertita in ordine.  
+Sobre la cuadrícula de resultados, hay *tiles* que permiten filtrar rápidamente los siguientes tipos de Solicitudes de Oferta:  
+> **confermate con successo**: RDO confirmadas, pero aún no cerradas.  
+> **in corso con successo**: RDO confirmadas y convertidas en orden no cumplido o vinculadas a una RDA que ya ha sido convertida en orden.  
+> **chiuse con successo**: RDO confirmadas, cerradas y convertidas en orden ya cumplido (o vinculadas a una RDA que ya ha sido convertida en orden).  
+> **in attesa di conferma**: RDO aún no confirmadas, no cerradas y no vinculadas a una RDA que ya ha sido convertida en orden.  
+> **sciolto**: RDO no confirmadas y no vinculadas a una RDA que ya ha sido convertida en orden.  
+> **scadute**: RDO vencidas y no vinculadas a una RDA que ya ha sido convertida en orden.  
 
-#### Pulsante specifico  
-> **Nuova versione**: permette la creazione di una nuova versione dell'offerta selezionata; questa funzionalità permette di mantenere lo storico delle offerte precedenti. 
+#### Botón específico  
+> **nuova versione**: permite la creación de una nueva versión de la oferta seleccionada; esta funcionalidad permite mantener el histórico de las ofertas anteriores.

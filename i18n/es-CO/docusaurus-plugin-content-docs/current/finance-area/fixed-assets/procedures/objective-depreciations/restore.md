@@ -1,22 +1,16 @@
 ---
-title: Ripristino
+title: ripristino
 sidebar_position: 3
 ---
 
-Eseguito il calcolo, le righe spariranno dalla griglia e il risultato sarà visibile nella scheda 'Ripristino' all'interno della quale è possibile annullare l'operazione.
+Una vez realizado el cálculo, las líneas desaparecerán de la cuadrícula y el resultado será visible en la pestaña 'ripristino (Ripristino)', dentro de la cual es posible anular la operación.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
+RIBBON BAR: representa el menú del formulario en cuestión, es decir, el área en la que se pueden realizar acciones relacionadas con el procedimiento en uso. A continuación se presenta la lista de funcionalidades posibles:
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
-| Ripristina | Esegue il ripristino del calcolo per le righe selezionate. |
-| Visualizza cespite | Apre in visualizzazione l'anagrafica del cespite il cui ammortamento è selezionato in griglia. |
-
-
-
-
-
-
+| Buscar (Ricerca) | Busca la lista de cálculos de amortización realizados. |
+| Restaurar (Ripristina) | Ejecuta la restauración del cálculo para las líneas seleccionadas. |
+| Ver activo (Visualizza cespite) | Abre en visualización el registro del activo cuyo amortización está seleccionada en la cuadrícula. |

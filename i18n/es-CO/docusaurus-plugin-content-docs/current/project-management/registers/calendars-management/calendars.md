@@ -1,28 +1,27 @@
 ---
-title: Gestione Calendari
+title: gestione calendari
 sidebar_position: 1
 ---
 
-La **Gestione calendari** permette di gestire i calendari delle risorse. 
+La **gestione calendari** permite gestionar los calendarios de los recursos. 
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-Nell’area di filtro è possibile andare ad impostare una serie di filtri per poter ricercare in modo più mirato i calendari presenti a sistema. 
-Per creare invece un nuovo Calendario i campi da inserire sono:
+En el área de filtrado es posible establecer una serie de filtros para poder buscar de manera más precisa los calendarios presentes en el sistema.  
+Para crear un nuevo Calendario, los campos a ingresar son:
 
-**Nome**: contiene il nome della risorsa;
+**nome**: contiene el nombre del recurso;  
 
-**User**: è possibile collegare l’operatore;
+**user**: es posible conectar al operador;  
 
-**Data inizio/Data fine**: contiene le date di inizio e fine rapporto;
+**Fecha de inicio/Fecha de fin (Data inizio/Data fine)**: contiene las fechas de inicio y fin de la relación;  
 
-Nella griglia sottostante è possibile inserire gli Operatori e i relativi diritti di visualizzazione, modifica e cancellazione del calendario; in particolare:
+En la cuadrícula inferior es posible ingresar los Operadores y sus respectivos derechos de visualización, modificación y eliminación del calendario; en particular:
 
-**Lettura**: permette di scegliere tra Nessuno, Dettagli completi (l’operatore selezionato vedrà i dettagli completi di questo calendario), Libero/Occupato (l’operatore selezionato vedrà se l’user è libero o occupato);
+**lettura**: permite elegir entre Ninguno, Detalles completos (el operador seleccionado verá los detalles completos de este calendario), Libre/Ocupado (el operador seleccionado verá si el usuario está libre o ocupado);  
 
-**Modifica**: permette di scegliere tra Nessuno, Crea/Cambia tutti, Crea/Cambia i proprincome diritti di modifica del calendario;
+**modifica**: permite elegir entre Ninguno, Crear/Cambiar todos, Crear/Cambiar los propios;  
 
-**Cancella**: permette di scegliere tra Nessuno, Annulla tutti, Elimina i propri.
-
+**cancella**: permite elegir entre Ninguno, Anular todos, Eliminar los propios.

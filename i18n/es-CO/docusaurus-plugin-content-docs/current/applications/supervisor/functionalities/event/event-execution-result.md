@@ -1,10 +1,10 @@
 ---
-title: Risultato Esecuzione Evento
-sidebar_label: Risultato Esecuzione Evento
+title: Resultado Ejecución Evento (Risultato Esecuzione Evento)
+sidebar_label: Resultado Ejecución Evento (Risultato Esecuzione Evento)
 sidebar_position: 3
 ---
 
-All'interno della form principale dell'[Evento](event-intro) vengono visualizzati alcuni dati utili, relativi all'esecuzione dell'Evento.  
-In particolare all'interno della griglia principale della form sono presenti i campi *Risultato Ultima Esecuzione* e *Durata Massima* ed è possibile visualizzare informazioni dettagliate (errori, informazioni e logs) sull'esecuzione dell'*Evento* selezionando la riga e poi espandendola.
+Dentro del formulario principal del [Evento (Evento)](event-intro) se visualizan algunos datos útiles relacionados con la ejecución del Evento.  
+En particular, dentro de la cuadrícula principal del formulario, están presentes los campos *risultato ultima esecuzione* y *durata massima*, y es posible visualizar información detallada (errores, información y registros) sobre la ejecución del *Evento* seleccionando la fila y luego expandiéndola.
 
-![alt text](/img/it-it/applications/supervisor/supervisor15.png)
+![alt text (texto alternativo)](/img/it-it/applications/supervisor/supervisor15.png)

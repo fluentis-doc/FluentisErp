@@ -1,37 +1,37 @@
 ---
-title: Ricerca lotti
+title: Búsqueda de lotes (Ricerca lotti)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Logistica > Anagrafica lotti** e consente di ricercare tutti i lotti con lo scopo di visualizzarli e modificarli.
+El formulario se abre a través de la ruta **anagrafica lotti** y permite buscar todos los lotes con el fin de visualizarlos y modificarlos.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** presente en la *Ribbon bar* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per aprire i dettagli di un documento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Modifica**.
+Para abrir los detalles de un documento, solo es necesario seleccionarlo y hacer doble clic con el ratón, o hacer clic en el botón **modifica**.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Modifica**: il pulsante permette di [Modificare un lotto inserito](/docs/logistics/lots-serial-numbers/lots-register);    
-> **Cancella**: permette la cancellazione del lotto se questo non è referenziato in alcun documento. 
+> **modifica**: el botón permite [Modificar un lote ingresado (Modificare un lotto inserito)](/docs/logistics/lots-serial-numbers/lots-register);    
+> **cancella**: permite la eliminación del lote si este no está referenciado en ningún documento. 
 
-*Filtri specifici*:
+*Filtros específicos*:
 
-**Tutti**: attivando questo flag l'utente può filtrare tutti i lotti presenti nel database;
+**Todos**: activando este indicador, el usuario puede filtrar todos los lotes presentes en la base de datos;
 
-**Non chiusi**: attivando questo flag l'utente può filtrare solo i lotti aperti, ovvero solo i lotti di cui esiste ancora una giacenza a magazzino;
+**non chiusi**: activando este indicador, el usuario puede filtrar solo los lotes abiertos, es decir, solo los lotes de los cuales aún existe un inventario en el almacén;
 
-**Chiusi**: attivando questo flag l'utente può filtrare solo i lotti chiusi, ovvero solo i lotti la cui giacenza risulta uguale a zero.  
+**chiusi**: activando este indicador, el usuario puede filtrar solo los lotes cerrados, es decir, solo los lotes cuyo inventario es igual a cero.  
 
-*Campi specifici* nella griglia di risultato (click sul segno **+** per aprire il dettaglio della riga)
+*Campos específicos* en la cuadrícula de resultados (haga clic en el signo **+** para abrir el detalle de la línea)
 
-**Chiuso**: il flag, se attivo, evidenzia che la giacenza è uguale a zero;
+**chiuso**: el indicador, si está activo, destaca que el inventario es igual a cero;
 
-**Quantità**: la colonna visualizza la quantità iniziale del lotto per ciascun magazzino;
+**quantità**: la columna muestra la cantidad inicial del lote para cada almacén;
 
-**Quantità disponibile**: la colonna visualizza la quantità disponibile per ciascun magazzino del lotto, ossia la quantità in giacenza meno la quantità impegnata nei vari documenti. La quantità disponibile può anche essere visualizzata come uguale a zero nel caso in cui il lotto si trovi in uno stato 'non disponibile per prelievi automatici';
+**quantità disponibile**: la columna muestra la cantidad disponible para cada almacén del lote, es decir, la cantidad en inventario menos la cantidad comprometida en los diferentes documentos. La cantidad disponible también puede mostrarse como igual a cero si el lote se encuentra en un estado 'no disponible para retiros automáticos';
 
-**Stato lotto**: la colonna visualizza lo stato del lotto. Si tratta di un dato che potrebbe anche non essere gestito;
+**stato lotto**: la columna muestra el estado del lote. Es un dato que podría no estar gestionado;
 
-**Magazzino**: la colonna visualizza il codice del magazzino su cui si trova il lotto.
+**magazzino**: la columna muestra el código del almacén donde se encuentra el lote.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

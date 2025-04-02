@@ -1,36 +1,36 @@
 ---
-title: Parametri portafoglio effetti
+title: parametri portafoglio effetti
 sidebar_position: 4
 ---
 
-I parametri del modulo Portafoglio Effetti si trovano in **Parametri > Tesoreria**.
+Los parámetros del módulo Cartera de Efectos se encuentran en **Parámetros > Tesorería (Parametri > Tesoreria)**.
 
-Nei parametri del modulo Portafoglio effetti  si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo. In particolare:
+En los parámetros del módulo Cartera de Efectos se pueden preestablecer los elementos predeterminados que se propondrán en los procedimientos del módulo. En particular:
 
-#### Acquisizioni effetti  
-- **Contabilizzazione automatica**: consente di predefinire la contabilizzazione effetti direttamente al momento dell'acquisizione effetti da fatture o da partite. 
-- **Acquisizione solo con scadenza oltre numero giorni**: se indicato un numero di giorni, allora ***FluentisERP*** bloccherà la creazione di un effetto con scadenza più recente non bancabili
-- **Blocco creazione effetti senza abi/cab**: se impostato, ***FluentisERP*** bloccherà la creazione di effetti ai quali non è possibile assegnare codici abi/cab di appoggio
-- **Raggruppa note credito per data scadenza**: se impostato, lo storno automatico delle note di credito, che si può impostare sul singolo cliente, opererà solo per data uniforme alle scadenze fatture.
+#### Adquisiciones de efectos (Acquisizioni effetti)  
+- **Contabilización automática (Contabilizzazione automatica)**: permite predefinir la contabilización de efectos directamente en el momento de la adquisición de efectos de facturas o partidas.  
+- **Adquisición solo con vencimiento más allá del número de días (Acquisizione solo con scadenza oltre numero giorni)**: si se indica un número de días, entonces ***FluentisERP*** bloqueará la creación de un efecto con un vencimiento más reciente no bancable.  
+- **blocco creazione effetti senza abi/cab**: si está configurado, ***FluentisERP*** bloqueará la creación de efectos a los que no se les puede asignar códigos abi/cab de respaldo.  
+- **raggruppa note credito per data scadenza**: si está configurado, la anulación automática de las notas de crédito, que se puede establecer para el cliente individual, operará solo para fechas que coincidan con los vencimientos de facturas.
 
-#### Contabilizzazione effetti  
-- **Causale di contabilità**: consente di definire la causale contabile di default da proporre nella procedura omonima.  
-- **Raggruppa per conto effetto**: consente di definire il parametro di raggruppamento effetto alle registrazioni effettuate con tale procedura.  
-- **Registrazioni provvisorie**: consente di definire lo stato di registrazione provvisoria alle registrazioni effettuate con tale procedura.  
+#### Contabilización de efectos (Contabilizzazione effetti)  
+- **causale di contabilità**: permite definir la causa contable predeterminada a proponer en el procedimiento homónimo.  
+- **raggruppa per conto effetto**: permite definir el parámetro de agrupamiento de efectos para las registraciones realizadas con dicho procedimiento.  
+- **Registro provisional (Registrazioni provvisorie)**: permite definir el estado de registro provisional para las registraciones realizadas con dicho procedimiento.  
 
-#### Contabilizzazione distinte  
-- **Causale di contabilità**: consente di definire la causale contabile di default da proporre nella procedura omonima.  
-- **Contabilizza alla data di maturazione**: la prima opzione andrà a spezzare la registrazione della distinta alle varie date scadenza degli effetti con l'aggiunta dei giorni banca impostati in anagrafica banca per la causale impostata.  
-- **Contabilizza in data scadenza con data valuta banca = data di maturazione**: la seconda opzione, invece, registrerà i vari effetti alle varie date scadenza ma con data valuta banca rettificata secondo i giorni banca impostati in anagrafica banca per la causale impostata. 
-- **Chiusura cliente in contabilizzazione distinta**: con questa impostazione non sarà effettuata la Contabilizzazione effetti e quindi non si utilizzerà un conto di appoggio *effetti in portafoglio*, ma il cliente sarà chiuso direttamente con la *Contabilizzazione distinte* con contropartita tipicamente *effetti sbf*, cioè il conto di transito inserito in testata della distinta stessa.
+#### Contabilización de asientos (Contabilizzazione distinte)  
+- **causale di contabilità**: permite definir la causa contable predeterminada a proponer en el procedimiento homónimo.  
+- **contabilizza alla data di maturazione**: la primera opción desglosará el registro del asiento en las diversas fechas de vencimiento de los efectos, agregando los días bancarios establecidos en el registro del banco para la causa configurada.  
+- **Contabilizar en la fecha de vencimiento con fecha valor del banco = fecha de vencimiento (Contabilizza in data scadenza con data valuta banca = data di maturazione)**: la segunda opción, en cambio, registrará los diversos efectos a las distintas fechas de vencimiento, pero con la fecha de valor del banco ajustada según los días bancarios establecidos en el registro del banco para la causa configurada.  
+- **chiusura cliente in contabilizzazione distinta**: con esta configuración, no se realizará la contabilización de efectos, por lo que no se utilizará una cuenta de respaldo *efectos en cartera*, sino que el cliente se cerrará directamente con la *contabilizzazione distinte*, con contrapartida típicamente *efectos sbf*, es decir, la cuenta de tránsito introducida en la cabecera del propio asiento.
 
-#### Contabilizzazione Effetti a fornitore  
-- **Contabilizzazione effetti a fornitore**: consente di predefinire la causale contabile da proporre nella procedura di Contabilizzazione effetti a fornitore, cioè il giro di titoli di credito in pagamento ai fornitori.
+#### Contabilización de Efectos a proveedor (Contabilizzazione Effetti a fornitore)  
+- **contabilizzazione effetti a fornitore**: permite predefinir la causa contable a proponer en el procedimiento de Contabilización de efectos a proveedor, es decir, el giro de títulos de crédito en pago a los proveedores.
 
-#### Contabilizzazione accrediti  
-- **Causale di contabilità**: consente di definire la causale contabile di default da proporre nella procedura omonima.  
-- **Spese commissioni**: consente di definire il sottoconto delle spese di commissioni per le registrazioni effettuate con tale procedura.  
-- **Oneri passivi**: consente di definire il sottoconto degli oneri passivi per le registrazioni effettuate con tale procedura.  
+#### Contabilización de créditos (Contabilizzazione accrediti)  
+- **causale di contabilità**: permite definir la causa contable predeterminada a proponer en el procedimiento homónimo.  
+- **spese commissioni**: permite definir la subcuenta de los gastos de comisiones para las registraciones realizadas con dicho procedimiento.  
+- **oneri passivi**: permite definir la subcuenta de los cargos pasivos para las registraciones realizadas con dicho procedimiento.  
 
-#### Raggrupamento  
-- **Raggruppa importi inferiori a**: questo campo, se non vuoto e differente da zero, determina il valore soglia delle partite da raggruppare. Se, ad esempio, viene impostato ‘1000', significa che saranno raggruppate le partite inferiori a questa cifra, quindi fino a 999,99.  
+#### Agrupación (Raggrupamento)  
+- **raggruppa importi inferiori a**: este campo, si no está vacío y es diferente de cero, determina el valor umbral de las partidas a agrupar. Si, por ejemplo, se configura '1000', significa que se agruparán las partidas inferiores a esta cifra, es decir, hasta 999,99.

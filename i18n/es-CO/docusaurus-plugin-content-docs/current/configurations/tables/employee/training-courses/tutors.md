@@ -1,45 +1,45 @@
 ---
-title: Docenti
+title: docenti
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Docenti**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Empleados (Dipendenti) > Cursos de formación (Corsi di formazione) > docenti (Docenti)**.
 
-In questa tabella è possibile codificare i *Docenti*.   
-Alcuni esempi di utilizzo di *Docenti* li troviamo nelle gestioni:  
-> **Corsi di base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.
+En esta tabla es posible codificar a los *docenti*.  
+Algunos ejemplos de uso de los *docenti* los encontramos en las gestiones:  
+> **Cursos básicos (Corsi di base)** - en los *dati di testata*;  
+> **corsi di formazione** - en los *dati di testata*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Docenti**
+**Búsqueda de docenti (Ricerca Docenti)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Docenti**
+**Inserción de docenti (Inserimento Docenti)**
 
-Per poter inserire nuovi *Docenti* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *docenti* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici 
-    
-> **Docente**   
->> **Codice**: è il codice del *Docente*.   
->> **Descrizione**: è la descrizione del *Docente*.   
+#### Campos específicos (Campi specifici)
+
+> **Docente**  
+>> **codice**: es el código del *docente*.  
+>> **descrizione**: es la descripción del *docente*.  
 >
-> **Docente interno**
->> **Codice**: è il codice del *Dipendente* che ricopre il ruolo di *Docente*.   
->> **Cognome**: è il cognome del *Dipendente* che ricopre il ruolo di *Docente*.   
->> **Nome**: è il nome del *Dipendente* che ricopre il ruolo di *Docente*.   
+> **docente interno**  
+>> **codice**: es el código del *dipendente* que ocupa el rol de *docente*.  
+>> **cognome**: es el apellido del *dipendente* que ocupa el rol de *docente*.  
+>> **nome**: es el nombre del *dipendente* que ocupa el rol de *docente*.  
 >
-> **Docente esterno**
->> **Descrizione**: è la ragione sociale del *Fornitore* che ricopre il ruolo di *Docente*.   
+> **docente esterno**  
+>> **descrizione**: es la razón social del *fornitore* que ocupa el rol de *docente*.  
 >
-> **Attivo**: indica se il *Docente** è ancora in carica.   
-> **Inizio validità**: è la data dalla quale il *Docente** entra in carica.   
-> **Fine validità**: è la data dalla quale il *Docente** cessa di essere in carica.   
-> **Curriculum**: annotazioni libere relative al curriculum.   
-> **Costo orario**: tariffa oraria.   
-> **Note**: annotazioni libere.
+> **attivo**: indica si el *docente* aún está en funciones.  
+> **inizio validità**: es la fecha a partir de la cual el *docente* entra en funciones.  
+> **fine validità**: es la fecha a partir de la cual el *docente* deja de estar en funciones.  
+> **Curriculum**: anotaciones libres relacionadas con el currículum.  
+> **costo orario**: tarifa por hora.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consultar el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

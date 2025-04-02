@@ -1,29 +1,28 @@
 ---
-title: Stampa dettaglio Progetti
+title: Impresión de detalles de Proyectos (Stampa dettaglio Progetti)
 sidebar_position: 2
 ---
 
-In questo report sono visualizzati tutti i documenti collegati ad una riga di progetto, anche se relativi ad altre aree dell'ERP. 
-Vengono riportati solo i documenti di "ultimo livello": se il progetto è inserito nell'offerta fornitore, che è stata evasa in ordine fornitore, che è stato evaso in ddt di acquisto, nella stampa verrà mostrato solo il ddt di acquisto. 
-I documenti che possono essere stampati sono: ordini, ddt, fatture (lato acquisti e vendite), interventi, registrazioni contabili. Perchè vengano riportati è necessario sia indicato il progetto anche in testata e non solo nelle righe, e che i documenti risultino controllati. 
+En este informe se visualizan todos los documentos vinculados a una línea de proyecto, aunque sean relativos a otras áreas del ERP.  
+Se muestran únicamente los documentos de "último nivel": si el proyecto está incluido en la oferta del proveedor, que ha sido cumplida en un pedido de proveedor, que ha sido cumplido en un DDT de compra, en la impresión solo se mostrará el DDT de compra.  
+Los documentos que se pueden imprimir son: pedidos, DDT, facturas (lado compras y ventas), intervenciones, registros contables. Para que se muestren, es necesario que el proyecto esté indicado también en la cabecera y no solo en las líneas, y que los documentos estén controlados.
 
-**Tipo Progetto**: filtro per tipologia progetto
+**tipo progetto**: filtro por tipo de proyecto
 
-**Da Data Inserimento**: filtro per data inserimento progetto
+**da data inserimento**: filtro por fecha de ingreso del proyecto
 
-**Da Data Inserimento**:filtro per data inserimento progetto
+**da data inserimento**: filtro por fecha de ingreso del proyecto
 
-**Da Data prev.consegna** - **A Data prev.consegna**: nel caso di elaborazione con fitro documenti per "Ordinato", viene considerata la data di prevista consegna inserita nell'ordine. 
+**Desde Fecha de entrega prevista (Da Data prev.consegna)** - **Hasta Fecha de entrega prevista (A Data prev.consegna)**: en el caso de procesamiento con filtro de documentos por "Pedido", se considera la fecha de entrega prevista ingresada en el pedido.
 
-**Cliente**: filtro per cliente
+**cliente**: filtro por cliente
 
-**Stampa dettaglio** - **Articoli** è possibile scegliere se stampare le singole righe di progetto oppure solo la **Testata**
+**Impresión de detalles - Artículos (Stampa dettaglio - Articoli)**: es posible elegir si imprimir las líneas individuales del proyecto o solo la **testata**
 
-**Numero**: filtro per specifico progetto
+**numero**: filtro por proyecto específico
 
-**Da data conferma** - **A data conferma**: filtro per data conferma progetto. 
+**da data conferma** - **a data conferma**: filtro por fecha de confirmación del proyecto.
 
-**Articolo**: filtro per specifico articolo.
+**articolo**: filtro por artículo específico.
 
-**Filtra documenti per data**: **Ordinato** filtra per gli ordini, **Fatturato** filtra per le fatture **Da data** - **A data**
-
+**filtra documenti per data**: **ordinato** filtra por los pedidos, **fatturato** filtra por las facturas **da data** - **a data**.

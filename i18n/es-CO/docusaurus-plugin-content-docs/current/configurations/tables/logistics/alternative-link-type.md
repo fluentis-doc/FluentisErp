@@ -1,6 +1,6 @@
 ---
-title: Tipo  legame alternativi
+title: Tipo de vínculos alternativos (Tipo  legame alternativi)
 sidebar_position: 31
 ---
 
-work in progress
+trabajo en progreso (work in progress)

@@ -1,76 +1,68 @@
 ---
-title: Contabilizzazione Effetti
+title: contabilizzazione effetti
 sidebar_position: 1
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione effetti
+El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de efectos
 
-Da questa maschera si procede alla contabilizzazione effetti: la procedura, secondo le impostazioni della causale contabile impostata, chiuderà le partite clienti associate agli effetti selezionati.
+Desde esta máscara se procede a la contabilización de efectos: el procedimiento, de acuerdo con la configuración de la causa contable establecida, cerrará las partidas de clientes asociadas a los efectos seleccionados.
 
 :::tip[Nota]
-Generalmente si può eseguire questa procedura direttamente eseguendo ***l'acquisizione automatica effetti dalle partite***
-dove, abilitando l'apposito flag, si esegue contemporaneamente anche la presente procedura.
+Generalmente, se puede ejecutar este procedimiento directamente realizando ***la adquisición automática de efectos desde las partidas*** donde, habilitando el indicador correspondiente, se ejecuta simultáneamente también este procedimiento.
 
-**Risulta invece necessario accedere specificamente alla presente form per il ripristino della contabilizzazione effetti**. 
+**En cambio, es necesario acceder específicamente a este formulario para restaurar la contabilización de efectos**.
 :::
 
-## Come contabilizzare un effetto
+## Cómo contabilizar un efecto
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli effetti da contabilizzare.
+1. Utiliza la parte superior de la máscara para filtrar la búsqueda de los efectos a contabilizar.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri contabilizzare 
+2. Selecciona desde la cuadrícula central los efectos que deseas contabilizar.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Completa los parámetros para la contabilización, como la **causale di contabilità**, la **data registrazione** y la fecha de competencia.
 
 :::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti. 
+Esta sección puede ser predefinida dentro de los [**parámetros**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de Efectos. 
 
-Il flag di **raggruppamento per conto effetto** significa eseguire una registrazione unica dove saranno presenti tante righe quante sono gli effetti da contabilizzare ed in contropartita il conto associato alla tipologia di effetto (nella **tabella Tipi Effetti**).
+El indicador de **agrupamiento por cuenta efecto** significa realizar un único registro donde habrá tantas líneas como efectos a contabilizar y, en contrapartida, la cuenta asociada al tipo de efecto (en la **tipi effetti**).
 
-Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di tipo provvisorio.
+El indicador de **gestión provisional** generará registros contables de tipo provisional.
 
-Se la causale contabile prevede il flag di apertura partite e l'effetto è stato creato manualmente senza associare una partita (o il suo importo è superiore all'importo delle partite collegate), allora sarà create una partita cliente in avere da compensare in seguito.
+Si la causa contable prevé el indicador de apertura de partidas y el efecto ha sido creado manualmente sin asociar una partida (o su monto es superior al monto de las partidas vinculadas), entonces se creará una partida de cliente a favor que deberá compensarse posteriormente.
 
-Si ricorda che non sarà possibile contabilizzare effetti creati da fatture stampate quando queste non sono state ancora contabilizzate.
+Se recuerda que no será posible contabilizar efectos creados a partir de facturas impresas cuando estas aún no han sido contabilizadas.
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione effetti**
+4. Presiona el botón en la barra de ribbon **contabilizzazione effetti**
 
+**Botones específicos**
 
+**ricerca**: Busca la lista de efectos a contabilizar.
 
-**Pulsanti specifici**
+**contabilizzazione effetti**: Ejecuta la contabilización para las líneas seleccionadas.
 
-**Ricerca**: Ricerca la lista degli effetti da contabilizzare.
+### Pestaña Anteriores (Tab Precedenti)
 
-**Contabilizzazione effetti**: Esegue la contabilizzazione per le righe selezionate.
+Desde la pestaña *anteriores* es posible proceder a la anulación de las contabilizaciones realizadas.
 
-### Tab Precedenti
+La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Un doble clic en la sección de los registros permitirá visualizar el registro contable relacionado.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
-
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
-
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+Hay una pestaña de detalle de visualización de los errores detectados durante la contabilización.
 
 :::tip[Nota]
-Il ripristino della contabilizzazione dell'effetto deve **necessariamente** essere eseguito dalla presente form.
+La restauración de la contabilización del efecto debe **necesariamente** ser ejecutada desde este formulario.
 
-In fase di creazione dell'effetto è possibile, infatti, lanciare contestualmente la sua contabilizzazione, ma NON il contrario. 
+En la fase de creación del efecto, es posible, de hecho, lanzar simultáneamente su contabilización, pero NO al contrario.
 
-Pertanto si dovrà procedere prima ad annullarne la contabilizzazione da qui, e poi si potrà annullare la procedura di creazione, tornando ad una situazione precedente (partita cliente aperta e saldo cliente non ancora stornato).
+Por lo tanto, se deberá proceder primero a anular su contabilización desde aquí, y luego se podrá anular el procedimiento de creación, regresando a una situación anterior (partida de cliente abierta y saldo de cliente no aún anulado).
 :::
 
-**Pulsanti specifici**
+**Botones específicos**
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+**ricerca**: Busca la lista de las contabilizaciones realizadas.
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate per tutti i documenti in esse contenuti.
+**rollback contabilizzazione**: Ejecuta la restauración de las contabilizaciones seleccionadas para todos los documentos en ellas contenidas.
 
-**Rollback effetti**: Esegue il ripristino della registrazione contabile selezionata riferita al singolo effetto. ATTENZIONE: questa modalità è possibile solo se in fase di contabilizzazione non è stata attivata l'opzione per raggruppare per tipo effetto (che genera registrazioni uniche per ogni tipo effetto).
-
-
-
-
-
+**rollback effetti**: Ejecuta la restauración del registro contable seleccionado referido al efecto individual. ATENCIÓN: esta modalidad es posible solo si en la fase de contabilización no se activó la opción para agrupar por tipo de efecto (lo que genera registros únicos para cada tipo de efecto).

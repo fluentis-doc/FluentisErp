@@ -1,15 +1,15 @@
 ---
-title: Url Esecuzione Evento
-sidebar_label: Url Esecuzione Evento
+title: URL de Ejecución de Evento (Url Esecuzione Evento)
+sidebar_label: URL de Ejecución de Evento (Url Esecuzione Evento)
 sidebar_position: 4
 ---
 
-Questa funzionalità offre la possibilità di eseguire un *Evento* da un'origine/app esterna.
+Esta funcionalidad ofrece la posibilidad de ejecutar un *evento* desde un origen/app externa.
 
-All'interno della form principale dell'[Evento](event-intro), posto sulla ribbon, è presente il pulsante **Genera URL di esecuzione**. Selezionato l'*Evento* dalla griglia sottostante e poi cliccato, l'app visualizzerà una finestra, contenente:
+Dentro del formulario principal del [Evento (Evento)](event-intro), ubicado en la cinta de opciones, se encuentra el botón **genera url di esecuzione**. Una vez seleccionado el *evento* de la cuadrícula inferior y luego clicado, la aplicación mostrará una ventana que contiene:
 
-- **Parametro task URL di reindirizzamento** si occupa di reindirizzare l'utente a un'altra pagina dopo aver eseguito l'URL. Questo parametro può essere impostato nel *Task*, all'interno del metodo *TaskCompleted* (aggiungendo il valore dell'URL al *Dictionary* e impostando un parametro *Task* senza il flag *IsInputParamter*)
+- **parametro task url di reindirizzamento** se encarga de redirigir al usuario a otra página después de haber ejecutado la URL. Este parámetro puede configurarse en la *task*, dentro del método *TaskCompleted*, añadiendo el valor de la URL al *Diccionario (Dictionary)* y configurando un parámetro *task* sin el indicador *IsInputParameter*.
 
-- **Data di scadenza** dell'URL generato
+- **data di scadenza** de la URL generada.
 
-- **Genera URL** conterrà l'URL generato tramite il click sul pulsante
+- **genera url** contendrá la URL generada al hacer clic en el botón.

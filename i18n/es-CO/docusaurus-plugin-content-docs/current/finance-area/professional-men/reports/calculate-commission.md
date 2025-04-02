@@ -1,14 +1,8 @@
 ---
-title: Calcolo provvigioni
+title: calcolo provvigioni
 sidebar_position: 3
 ---
 
-La stampa presente in questa posizione (pertinente all'area amministrativa) è stata creata a supporto del ** [calcolo provvigioni](/docs/finance-area/professional-men/procedures/calculate-commissions) ** presente nelle procedure amministrative (che attinge ai dati delle provvigioni agenti inseriti direttamente dalle scritture contabili previa opportuna configurazione delle causali contabili coinvolte).
+La impresión presente en esta posición (relacionada con el área administrativa) ha sido creada para apoyar el **[cálculo de comisiones (calcolo provvigioni)](/docs/finance-area/professional-men/procedures/calculate-commissions)** presente en los procedimientos administrativos (que accede a los datos de las comisiones de los agentes ingresados directamente desde los asientos contables, previa configuración adecuada de las causales contables involucradas).
 
-Tramite questa stampa è possibile dunque elaborare la lista delle provvigioni maturate filtrando eventualmente per singolo agente, per cliente, per data e inserendo la data di riferimento per considerare maturata la provvigione.
-
-
-
-
-
-
+A través de esta impresión, es posible elaborar la lista de las comisiones generadas, filtrando opcionalmente por agente, por cliente, por fecha e ingresando la fecha de referencia para considerar la comisión generada.

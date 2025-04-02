@@ -1,126 +1,125 @@
 ---
-title: Contabilizzazione fatture di vendita
+title: Contabilización de facturas de venta (Contabilizzazione fatture di vendita)
 sidebar_position: 1
 ---
 
-La procedura si apre tramite il percorso **Vendite > Fatture di vendita > Contabilizzazione > Contabilizzazione fatture di vendita**. 
+El procedimiento se abre a través de la ruta **Ventas > Facturas de venta > Contabilización > Contabilización de facturas de venta**.  
 
-Una fattura, per essere contabilizzata, deve soddisfare una serie di condizioni: nella sua testata deve aver impostato il flag *Stampata*, non di tipo *pro-forma* e il tipo fattura deve contenere la causale generale per la contabilizzazione.
+Una factura, para ser contabilizada, debe cumplir una serie de condiciones: en su encabezado, debe tener activado el indicador *stampata*, no ser de tipo *proforma* y el tipo de factura debe contener la causa general para la contabilización.
 
-### Contabilizzazione
+### Contabilización
 
-La form presenta nella parte superiore i filtri di ricerca per individuare e visualizzare, nella griglia, la lista delle fatture da contabilizzare presenti nel sistema.
+El formulario presenta en la parte superior los filtros de búsqueda para identificar y visualizar, en la cuadrícula, la lista de las facturas a contabilizar presentes en el sistema.
 
-Alla base della form sono presenti alcuni parametri di gestione della contabilizzazione:
+En la parte inferior del formulario hay algunos parámetros de gestión de la contabilización:
 
-**Data registrazione uguale alla data documento**: questo flag impone la contabilizzazione di ogni singola fattura allo loro data di emissione.
+**data registrazione uguale alla data documento**: este indicador impone la contabilización de cada factura a su fecha de emisión.  
 
-Se il flag viene disabilitato, si attiva il campo successivo, **Data registrazione**, all'interno del quale è possibile impostare una data fissa di registrazione;
+Si el indicador se desactiva, se activa el siguiente campo, **data registrazione**, donde es posible establecer una fecha fija de registro;  
 
-**Usa il cambio della tabella cambi**: con questo flag si impone al sistema di verificare la tabella cambi per utilizzare quello presente alla data registrazione/fattura (o l'ultimo inserito in precedenza).
+**usa il cambio della tabella cambi**: con este indicador se obliga al sistema a verificar la tabla de tipos de cambio para utilizar el vigente a la fecha de registro/factura (o el último ingresado anteriormente).  
 
-Se il flag non è impostato sarà invece utilizzato il *cambio presente in testata della fattura*;
+Si el indicador no está activado, se utilizará el *tipo de cambio presente en el encabezado de la factura*;  
 
-**Aggiorna cambio in documento**: il campo è attivo *solo* se il precedente flag è impostato. Il significato è quello di andare ad aggiornare anche il cambio presente in testata della fattura, sovrascrivendo quello presente;
+**aggiorna cambio in documento**: el campo está activo *solo* si el indicador anterior está activado. Su significado es actualizar también el tipo de cambio presente en el encabezado de la factura, sobrescribiendo el ya existente;  
 
-**Comp. IVA = data documento**: il flag impone che la competenza iva dei movimenti sia uguale alla data fattura. Nel caso in cui si voglia sfruttare la possibilità di fatturare fino al 15 del mese successivo alla data spedizione (fatturazione differita), il flag va tolto per far si che la competenza iva sia ripresa dalla data inizio trasposto nel documento d'origine, così come previsto dalla normativa IVA;
+**Comp. IVA = fecha del documento (Comp. IVA = data documento)**: el indicador impone que la competencia del IVA de los movimientos sea igual a la fecha de la factura. En caso de que se desee aprovechar la posibilidad de facturar hasta el día 15 del mes siguiente a la fecha de envío (facturación diferida), se debe desactivar el indicador para que la competencia del IVA se recoja de la fecha de inicio del transporte en el documento original, tal como se establece en la normativa del IVA;  
 
-**Utilizzare la filiale aziendale per assegnare la divisione**: flag connesso al campo *Filiale aziendale di riferimento* presente nelle anagrafiche clienti e fornitori, dove è possibile associare il cliente/fornitore ad una filiale e, tramite questa, ad una *divisione* aziendale differente da quella in uso. Il presente flag fa scattare la verifica se nel cliente c’è una filiale di riferimento e, da questo link, verifica se c’è una divisione associata alla filiale in questione. In caso positivo registra la fattura attribuendola a quella divisione (anche se la fattura è attribuita alla divisione X la registrazione contabile sarà nella Y). Questa opzione agevola la redazione di bilanci per divisione in situazione dove la fatturazione avviene separatamente ma i risultati dal punto di vista di bilancio si vogliono aggregare presso una divisione principale.
+**utilizzare la filiale aziendale per assegnare la divisione**: indicador vinculado al campo *filiale aziendale di riferimento* presente en los registros de clientes y proveedores, donde se puede asociar al cliente/proveedor a una sucursal y, a través de esta, a una *división* empresarial diferente de la que se está utilizando. Este indicador activa la verificación si en el cliente hay una sucursal de referencia y, desde este enlace, verifica si hay una división asociada a la sucursal en cuestión. En caso afirmativo, registra la factura atribuyéndola a esa división (incluso si la factura se asigna a la división X, la contabilización será en Y). Esta opción facilita la elaboración de balances por división en situaciones donde la facturación se realiza por separado, pero los resultados desde el punto de vista del balance se desean agregar a una división principal.
 
-#### Pulsanti specifici  
-> **Ricerca fattura**: per cercare le fatture; vengono proposte tutte le fatture stampate e non contabilizzate.  
-> **Contabilizzazione fatture**: esegue la contabilizzazione delle fatture selezionate, secondo le impostazioni definite.  
+#### Botones específicos  
+> **ricerca fattura**: para buscar las facturas; se proponen todas las facturas impresas y no contabilizadas.  
+> **contabilizzazione fatture**: ejecuta la contabilización de las facturas seleccionadas, según la configuración definida.  
 
-### Parametri
+### Parámetros
 
-In questa form si impostano alcuni elementi generali della contabilizzazione fatture.
+En este formulario se configuran algunos elementos generales de la contabilización de facturas.
 
-**Contabilizzazione omaggi**: con questo flag si attiva la gestione della contabilizzazione omaggi, attivando i campi successivi collegati.  
+**contabilizzazione omaggi**: con este indicador se activa la gestión de la contabilización de obsequios, activando los campos siguientes relacionados.  
 
-1. Se la fattura che si sta contabilizzando presenta un omaggio e il parametro di gestione non è stato impostato, il sistema chiederà conferma all'utente con un avviso della mancata impostazione. In questa situazione sarà registrata la fattura normalmente senza alcuna gestione della riga omaggio, che andrà quindi gestita manualmente in contabilità.
+1. Si la factura que se está contabilizando presenta un obsequio y el parámetro de gestión no ha sido configurado, el sistema solicitará confirmación al usuario con un aviso de la falta de configuración. En esta situación, la factura se registrará normalmente sin ninguna gestión de la línea de obsequio, que deberá ser gestionada manualmente en contabilidad.
 
-2. Nel caso si sia attivata la gestione omaggi ma senza inserire alcun sottoconto nei campi successivi, il sistema andrà ad aggiungere in coda ai normali movimenti di contabilizzazione le necessarie righe di storno del ricavo, utilizzando lo stesso sottoconto impostato per l'articolo vendite.
+2. En caso de que se haya activado la gestión de obsequios, pero sin ingresar ningún subcuenta en los campos siguientes, el sistema añadirá al final de los movimientos normales de contabilización las necesarias líneas de anulación del ingreso, utilizando la misma subcuenta configurada para el artículo de ventas.
 
-3. Se invece è stato impostato il flag **Sostituisci il conto dell'articolo** si attiverà il campo dove impostare il sottoconto di storno acconti, che sarà utilizzato al posto del sottoconto dell'articolo in queste righe aggiuntive.
+3. Si se ha activado el indicador **Reemplazar la cuenta del artículo (Sostituisci il conto dell'articolo)**, se activará el campo donde se debe configurar la subcuenta de anulación de anticipos, que se utilizará en lugar de la subcuenta del artículo en estas líneas adicionales.
 
-**Codice IVA per omaggi in registro iva**: compilando questo campo (generalmente con un codice iva corrispondente alla casistica del "fuori campo iva" o "escluso..." verrà eseguita automaticamente una riga di storno del valore dell'omaggio sul registro iva, laddove non venga esercitata la rivalsa iva nei confronti del cliente)
+**codice iva per omaggi in registro iva**: completando este campo (generalmente con un código IVA correspondiente a la casuística del "fuera de campo IVA" o "excluido..."), se ejecutará automáticamente una línea de anulación del valor del obsequio en el registro de IVA, siempre que no se ejerza el derecho a repercutir el IVA al cliente.
 
-**Conto storno IVA**: usato nel caso in cui l'articolo omaggio in fattura non abbia il flag **Rivalsa IVA**, con il quale si indica se l'iva applicata all'articolo omaggio è a carico (con flag) o meno (senza flag) del cliente. Questo importo sarà registrato e stornato solo nel caso in cui sia inserito il *Conto di storno iva*, senza del quale l'operazione sarà da gestire manualmente in contabilità (anche in questo campo c'è un messaggio di conferma/avviso utente della mancata impostazione).
+**conto storno iva**: utilizada en caso de que el artículo obsequio en la factura no tenga el indicador **rivalsa iva**, con el cual se indica si el IVA aplicada al artículo obsequio es a cargo (con indicador) o no (sin indicador) del cliente. Este importe será registrado y anulado solo si se ha ingresado la *Cuenta de anulación de IVA (Conto di storno iva)*, de lo contrario, la operación deberá ser gestionada manualmente en contabilidad (en este campo también hay un mensaje de confirmación/aviso al usuario sobre la falta de configuración).
 
-**Raggruppa conti delle righe automatiche**: con il flag attivo i conti inseriti automaticamente nella sezione del libro giornale (come ad esempio nella contabilizzazione omaggi dove il cliente compare più volte, una volta per il totale fattura e poi gli vengono stornati gli omaggi) verranno raggruppati per sottoconto formando una registrazione compatta.
+**Agrupar cuentas de líneas automáticas (Raggruppa conti delle righe automatiche)**: con el indicador activo, las cuentas insertadas automáticamente en la sección del libro diario (como, por ejemplo, en la contabilización de obsequios, donde el cliente aparece varias veces, una vez por el total de la factura y luego se les anulan los obsequios) se agruparán por subcuenta formando un registro compacto.
 
-**Sottoconto sconto finanziario**: questo campo viene utilizzato per registrare lo sconto finanziario collegato alla scadenza fattura.
+**sottoconto sconto finanziario**: este campo se utiliza para registrar el descuento financiero relacionado con la fecha de vencimiento de la factura.
 
-#### Pulsante specifico
+#### Botón específico
 
-> **Salva parametri**: permette di salvare i parametri impostati per la contabilizzazione omaggi.
+> **salva parametri**: permite guardar los parámetros configurados para la contabilización de obsequios.
 
-Dopo aver selezionato le fatture (dal tab *Contabilizzazione*) e impostato i parametri, le fatture possono essere contabilizzate con l'aiuto del pulsante *Contabilizzazione fatture*.
+Después de seleccionar las facturas (desde la pestaña *Contabilización*) y configurar los parámetros, las facturas pueden ser contabilizadas con la ayuda del botón *Contabilización de facturas*.  
 
-### Precedenti
+### Anteriores
 
-La form presenta la lista delle operazioni di contabilizzazione eseguite, al fine di visualizzarle ed eventualmente annullarle attraverso gli appositi pulsanti.
+El formulario presenta la lista de las operaciones de contabilización realizadas, con el fin de visualizarlas y eventualmente anularlas a través de los botones correspondientes.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro iva non stampato, liquidazione periodica non stampata, chiusura conti non eseguita, partite contabili chiuse in un incasso o in un effetto).
+La anulación será posible solo si el período aún es modificable (impresión del libro diario, registro de IVA no impreso, liquidación periódica no impresa, cierre de cuentas no ejecutado, partidas contables cerradas en un ingreso o en un efecto).  
 
-**Contabilizzazione fatture**: griglia con i dettagli delle operazioni eseguite. Viene popolata dopo la procedura di ricerca e possono essere selezionate le operazioni sulle quale applicare le funzioni del ribbon.
+**contabilizzazione fatture**: cuadrícula con los detalles de las operaciones realizadas. Se llena después del procedimiento de búsqueda y se pueden seleccionar las operaciones sobre las cuales aplicar las funciones del ribbon.
 
-I dati nelle griglie in basso, **Fatture** e **Registrazione contabile** corrispondono all'operazione selezionata nella griglia superiore. Un doppio click nella sezione delle fatture/registrazioni consentirà di visualizzare la fattura/la registrazione contabile relativa.
+Los datos en las cuadrículas de abajo, **fatture** y **registrazione contabile**, corresponden a la operación seleccionada en la cuadrícula superior. Un doble clic en la sección de facturas/registraciones permitirá visualizar la factura/la registración contable correspondiente.
 
-#### Pulsanti specifici  
-> **Ricerca contabilizzazione**: ricerca la lista delle contabilizzazioni eseguite.  
-> **Anteprima contabilizzazione**: per visualizzare l'anteprima di stampa della contabilizzazione.  
-> **Ripristina contabilizzazione**: con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutte le fatture associate.  
-> **Ripristina fattura**: il pulsante esegue il ripristino della singola fattura selezionata.  
+#### Botones específicos  
+> **ricerca contabilizzazione**: busca la lista de las contabilizaciones realizadas.  
+> **anteprima contabilizzazione**: para visualizar la vista previa de impresión de la contabilización.  
+> **ripristina contabilizzazione**: con este botón se eliminará toda la contabilización realizada, junto con todas las facturas asociadas.  
+> **ripristina fattura**: el botón realiza la restauración de la factura individual seleccionada.  
 
-#### Messaggi di errore
+#### Mensajes de error
 
-Questi errori possono derivare, in alcuni casi da una errata gestione dei dati da parte dell’utente, ovvero mancano delle informazioni essenziali, in altri casi possono derivare da configurazioni o settaggi errati a livello di parametri o dati di base.
+Estos errores pueden surgir, en algunos casos, de una mala gestión de los datos por parte del usuario, es decir, faltan información esencial; en otros casos, pueden derivar de configuraciones o ajustes incorrectos a nivel de parámetros o datos básicos.
 
-Gli errori di configurazione o mancanze nei dati di base si riferiscono perlopiù ad ambienti nei quali non è stata lanciata la procedura di Fast Start.
+Los errores de configuración o faltas en los datos básicos se refieren principalmente a entornos donde no se ha lanzado el procedimiento de Fast Start.
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **non esiste il conto di contropartita**.
+:::note[Mensaje]
+La factura con número ... tipo ... año ... de AAA S.p.a. no puede ser contabilizada porque **no existe la cuenta contrapartida**.
 :::
 
-La contropartita contabile, nel contesto di una fattura di vendita o di acquisto, deve intendersi come l’indicazione del conto destinato ad accogliere il ricavo o il costo. 
-Quindi, più in generale, la registrazione contabile di una fattura poggia normalmente su tre elementi essenziali che possiamo ricontrollare aprendo la [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) con la quale stiamo tentando di contabilizzare questa fattura.
-Per verificare prima di tutto quale sia questa causale, passiamo dalla tabella dei [**tipi fattura**](/docs/configurations/tables/sales/invoices-type) dove è definito il collegamento.
-Ecco dunque i tre elementi, il cliente o fornitore, l’iva ed il costo o ricavo, se manca uno di questi elementi la registrazione non sta in piedi.
+La contrapartida contable, en el contexto de una factura de venta o de compra, debe entenderse como la indicación de la cuenta destinada a recibir el ingreso o el costo.  
+Por lo tanto, más en general, la registración contable de una factura normalmente se basa en tres elementos esenciales que podemos verificar abriendo la [**causa contable**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) con la cual estamos intentando contabilizar esta factura.  
+Para verificar primero cuál es esta causa, pasemos por la tabla de los [**tipos de factura**](/docs/configurations/tables/sales/invoices-type) donde se define el enlace.  
+Así que aquí están los tres elementos: el cliente o proveedor, el IVA y el costo o ingreso. Si falta uno de estos elementos, la registración no es válida.
 
-Dentro la causale contabile, creata o modificata manualmente rispetto allo standard generato dal Fast Start potrebbe trarci in inganno se in apparenza sembra che il conto di ricavo sia stato definito come un conto fisso essendoci il codice di conto e sottoconto e pertanto dovrebbe usarlo e limitarsi a sostituire il conto generico del cliente con il sottoconto di dettaglio che prende dalla testata della fattura.
+Dentro de la causa contable, creada o modificada manualmente respecto al estándar generado por Fast Start, podría engañarnos si aparentemente parece que la cuenta de ingreso ha sido definida como una cuenta fija al tener el código de cuenta y subcuenta y, por lo tanto, debería usarla y limitarse a reemplazar la cuenta genérica del cliente con la subcuenta de detalle que toma del encabezado de la factura.
 
-In realtà essendo impostato il criterio di lettura dell’imponibile sottoconto, il programma cerca in ogni caso il dato per la sostituzione, e lo cerca in primo luogo nella fattura, in secondo luogo nell’anagrafica cliente.
+En realidad, al estar configurado el criterio de lectura de la subcuenta imponible, el programa busca en cualquier caso el dato para la sustitución y lo busca en primer lugar en la factura y, en segundo lugar, en el registro del cliente.
 
-**Dunque per risolvere occorre definire nella fattura il dato del fatturato vendite, dato che potrebbe essere associato direttamente all’anagrafica articolo codificato.
-In alternativa possiamo inserire in anagrafica cliente il conto di default. In questo modo la contabilizzazione automatica può funzionare.**
+**Por lo tanto, para resolver esto es necesario definir en la factura el dato del facturado de ventas, dato que podría estar asociado directamente al registro de artículo codificado. En alternativa, podemos ingresar en el registro del cliente la cuenta predeterminada. De este modo, la contabilización automática puede funcionar.**
 
-Nota: anche il criterio di lettura *Totale imponibile* nella causale contabile non può funzionare perché tenterebbe di leggere comunque la griglia iva della registrazione dove manca un dato obbligatorio che è sempre il conto di contropartita. Dunque non è prevista una modalità di contabilizzazione con sottoconto fisso, occorre gestire sempre il fatturato vendite e acquisto o le anagrafiche cliente fornitore.
+Nota: incluso el criterio de lectura *Total imponible* en la causa contable no puede funcionar porque intentaría leer de todos modos la cuadrícula de IVA de la registración donde falta un dato obligatorio que siempre es la cuenta contrapartida. Por lo tanto, no se prevé un modo de contabilización con subcuenta fija; siempre debe gestionarse el facturado de ventas y compras o los registros de cliente proveedor.
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **la registrazione è bilanciata**.
+:::note[Mensaje]
+La factura con número ... tipo ... año ... de AAA S.p.a. no puede ser contabilizada porque **la registración está balanceada**.
 :::
 
-Al di la del significato più ovvio del messaggio, ovvero quello che impedisce, in relazione ai settaggi dei parametri della causale contabile, di salvare una registrazione dove il totale dare non quadra con il totale avere, un possibile motivo di questa situazione potrebbe essere legato ancora ad un errato settaggio della causale stessa, ad esempio la mancanza nello schema contabile della riga relativa all'iva e dunque in presenza di una fattura che contiene iva e dello scorporo eseguito dalla prima parte della procedura, non riuscirebbe comunque a generare una scrittura contabile (nella parte relativa al libro giornale) che possa bilanciare, generando l'errore.
+Más allá del significado más obvio del mensaje, que impide, en relación con los ajustes de los parámetros de la causa contable, guardar una registración donde el total de débito no concuerda con el total de crédito, un posible motivo de esta situación podría estar relacionado nuevamente con un ajuste incorrecto de la causa misma, por ejemplo, la falta en el esquema contable de la línea correspondiente al IVA y, por lo tanto, en presencia de una factura que contiene IVA y del desglose realizado en la primera parte del procedimiento, no podría generar de todos modos un asiento contable (en la parte correspondiente al libro diario) que pudiera equilibrar, generando el error.
 
-Nota: il blocco è sottoposto a parametro ma si sconsiglia vivamente di disattivarlo per accettare scritture sbilanciate, se non in casi del tutto eccezionali, oppure temporaneamente per verificare volutamente il risultato (sbagliato) della contabilizzazione.
+Nota: el bloqueo está sujeto a un parámetro, pero se desaconseja encarecidamente desactivarlo para aceptar asientos desequilibrados, excepto en casos muy excepcionales o temporalmente para verificar deliberadamente el resultado (equivocado) de la contabilización.
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **nel libro giornale ci sono 1 righe con un conto senza un sottoconto**.
+:::note[Mensaje]
+La factura con número ... tipo ... año ... de AAA S.p.a. no puede ser contabilizada porque **en el libro diario hay 1 fila con una cuenta sin una subcuenta**.
 :::
 
-Questo messaggio (meno immediato nell'interpretazione) fa riferimento al fatto che il software non può salvare registrazioni dve non sia definito il sottoconto di dettaglio.
+Este mensaje (menos inmediato en su interpretación) se refiere al hecho de que el software no puede guardar registraciones donde no se haya definido la subcuenta de detalle.
 
-Tra i vari motivi per i quali questo potrebbe accedere, ovviamente legati al fatto che lo schema della causale contabile definisce i mastri (senza sottoconto di dettaglio) anche per quanto riguarda i clienti e fornitori, potrebbe trattarsi del fatto che all'interno dei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters) manca l'abbinamento tra il tipo conto (magari una nuova tipologia aggiunta) ed il mastro di riferimento. Tale parametro mancante impedisce l'esecuzione dell'automatismo che completa la scrittura contabile.
+Entre las varias razones por las cuales esto podría ocurrir, obviamente relacionadas con el hecho de que el esquema de la causa contable define las cuentas (sin subcuenta de detalle) también en lo que respecta a los clientes y proveedores, podría tratarse de que dentro de los [**parámetros de contabilidad**](/docs/configurations/parameters/finance/accounting-parameters) falta la asociación entre el tipo de cuenta (quizás un nuevo tipo añadido) y la cuenta mayor de referencia. Este parámetro faltante impide la ejecución de la automatización que completa la escritura contable.
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **il valore delle partite non corrisponde al movimento contabile**.
+:::note[Mensaje]
+La factura con número ... tipo ... año ... de AAA S.p.a. no puede ser contabilizada porque **el valor de las partidas no corresponde al movimiento contable**.
 :::
 
-Questo messaggio solitamente corrisponde alla mancanza dell'indicazione delle condizioni di pagamento in fattura, pertanto la partita non può aprirsi e chiaramente si cre la differenza e si viene bloccati dal software.
+Este mensaje generalmente corresponde a la falta de la indicación de las condiciones de pago en la factura, por lo tanto, la partida no puede abrirse y, claramente, se crea la diferencia y se bloquea el software.
 
-La scelta di essere bloccati nella contabilizzazione è settabile in un parametro della causale contabile.
+La decisión de estar bloqueado en la contabilización se puede ajustar en un parámetro de la causa contable.
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NgroQvVOgD8" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NgroQvVOgD8" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

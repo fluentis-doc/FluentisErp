@@ -1,24 +1,20 @@
 ---
-title: Dettaglio ordini di approvvigionamento/fabbisogni
+title: Detalle de pedidos de aprovisionamiento/necesidades (Dettaglio ordini di approvvigionamento/fabbisogni)
 sidebar_position: 5
 ---
 
-Il form dettaglio ordini approvvigionamento permette di filtrare e vedere l'elenco di tutti gli ordini di approvvigionamento inevasi, di qualunque natura, sia pianificati che confermati, quello dei fabbisogni permette di filtrare e visualizzare l'elenco dei documenti inevasi che creano domanda e con un doppio click su una riga viene aperto il relativo ordine.
+El formulario de detalle de pedidos de aprovisionamiento permite filtrar y ver la lista de todos los pedidos de aprovisionamiento no cumplidos, de cualquier naturaleza, tanto planificados como confirmados; el de necesidades permite filtrar y visualizar la lista de documentos no cumplidos que generan demanda, y con un doble clic en una fila se abre el pedido correspondiente.
 
-Nel form dei fabbisogni l'articolo visualizzato è quello impegnato, pertanto in caso di ordini di produzione e conto lavoro non è l'articolo dell'ordine. 
+En el formulario de necesidades, el artículo visualizado es el comprometido, por lo tanto, en caso de órdenes de producción y trabajo por encargo, no es el artículo del pedido.
 
-La sezione filtro permette di selezionare in base alla natura ordine, stato ordine, articolo etc.
+La sección de filtro permite seleccionar según la naturaleza del pedido, estado del pedido, artículo, etc.
 
-Risultano particolarmente importanti quando si vuole analizzare in dettaglio la situazione ordini di un articolo, in particolar modo dall'analisi NFP.
+Resultan particularmente importantes cuando se desea analizar en detalle la situación de los pedidos de un artículo, especialmente desde el análisis NFP.
 
-Ogni riga è colorata secondo lo stato del buffer dell'articolo (buffer status) riferito al magazzino di versamento della riga ordine (magazzino di destinazione per gli ordini interni Ddmrp) in caso di ordini di approvvigionamento e magazzino d'impegno per gli ordini che creano fabbisogno. 
+Cada fila está coloreada según el estado del buffer del artículo (buffer status) referido al almacén de entrega de la línea del pedido (almacén de destino para los pedidos internos Ddmrp) en caso de pedidos de aprovisionamiento, y almacén de compromiso para los pedidos que crean necesidad.
 
-I colori sono rosso scuro per giacenza negativa, rosso per giacenza inferiore al 50% della zona rossa, giallo se la giacenza è compresa tra il 50% ed il 100% della zona rossa, verde se la giacenza è superiore alla zona rossa (limite minimo normale della giacenza) ed inferiore alla somma di zona rossa e zona verde (limite massimo normale della giacenza), blu se superiore a tale somma (giacenza eccessiva).
+Los colores son: rojo oscuro para saldo negativo, rojo para saldo inferior al 50% de la zona roja, amarillo si el saldo está entre el 50% y el 100% de la zona roja, verde si el saldo es superior a la zona roja (límite mínimo normal del saldo) e inferior a la suma de la zona roja y zona verde (límite máximo normal del saldo), y azul si es superior a dicha suma (saldo excesivo).
 
-Se l'articolo non è un buffer nel magazzino di versamento della riga ordine, la colonna buffer status è vuota e la riga non è colorata.
+Si el artículo no es un buffer en el almacén de entrega de la línea del pedido, la columna de estado del buffer estará vacía y la fila no estará coloreada.
 
-Se il magazzino della riga ordine non è stato specificato verrà considerato come magazzino Fabbrica.
-
-
-
-
+Si el almacén de la línea del pedido no ha sido especificado, se considerará como almacén de fábrica.

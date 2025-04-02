@@ -1,37 +1,37 @@
 ---
-title: Workstation
+title: workstation
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-L'introduzione alle workstation del MES di Fluentis è fondamentale per comprendere come gestire efficacemente le risorse e le operazioni produttive all'interno dell'ambiente di lavoro. Il sistema MES offre una tabella dedicata alla codifica delle workstation, utile per inserire, modificare o cancellare record. Attraverso un'interfaccia intuitiva, gli utenti possono cercare workstation tramite un'area di filtro, e all'inserimento di nuove codifiche bisogna fornire il codice e la descrizione della workstation.
+:::important ¿Para qué sirve? (A cosa serve)
+La introducción a las estaciones de trabajo del MES de Fluentis es fundamental para comprender cómo gestionar eficazmente los recursos y las operaciones productivas dentro del entorno laboral. El sistema MES ofrece una tabla dedicada a la codificación de las estaciones de trabajo, útil para insertar, modificar o eliminar registros. A través de una interfaz intuitiva, los usuarios pueden buscar estaciones de trabajo mediante un área de filtro, y al ingresar nuevos códigos, es necesario proporcionar el código y la descripción de la estación de trabajo.
 
-Ogni workstation può essere associata a diverse risorse, a seconda delle necessità operative. Ad esempio, se è prevista un'associazione a risorse multiple, in fase di avvio del MES, sarà compito dell'utente selezionare manualmente la risorsa desiderata. Al contrario, nel caso di un'associazione a una sola risorsa, il sistema carica automaticamente tutte le fasi operative già iniziate di quella risorsa, semplificando il flusso di lavoro e migliorando l'efficienza.
+Cada estación de trabajo puede asociarse a diferentes recursos, dependiendo de las necesidades operativas. Por ejemplo, si se prevé una asociación con múltiples recursos, al iniciar el MES, será responsabilidad del usuario seleccionar manualmente el recurso deseado. Por el contrario, en caso de una asociación con un solo recurso, el sistema carga automáticamente todas las fases operativas ya iniciadas de ese recurso, simplificando el flujo de trabajo y mejorando la eficiencia.
 :::
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Workstation*.
+La tabla permite gestionar la codificación de los diferentes tipos de *Estaciones de trabajo* (Workstation).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Workstation**
+**Búsqueda de Estaciones de Trabajo (Ricerca Workstation)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Workstation**
+**Inserción de Estaciones de Trabajo (Inserimento Workstation)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia principale sulla prima riga vuota oppure premere il pulsante **Nuovo** ed inserire i seguenti dati:      
-- **Codice**: indica il nome del pc che farà da workstation;        
+Para poder insertar nuevos códigos, es necesario hacer clic en la primera fila vacía de la cuadrícula principal o presionar el botón **nuovo** e ingresar los siguientes datos:      
+- **codice**: indica el nombre del PC que funcionará como estación de trabajo;        
 :::note Nota
-È possibile ottenere il nome del pc lanciando il comando *hostname* dal prompt dei comandi. 
+Es posible obtener el nombre del PC ejecutando el comando *hostname* desde el símbolo del sistema. 
 :::         
-- **Descrizione**: indica la descrizione del nome del pc che farà da workstation.     
+- **descrizione**: indica la descripción del nombre del PC que funcionará como estación de trabajo.     
 
-Nella griglia secondaria (sottostante la principale), è possibile associare le *risorse* che potranno lavorare su ciascuna workstation.
-- Nel caso in cui per una workstation venga associato solo una risorsa (es. di tipo centro di lavoro), in fase di avvio il MES caricherà automaticamente quella risorsa e tutte le fasi già iniziate associate ad essa.      
-Esempio di workstation dedicata ad un centro di lavoro.        
-- Nel caso in cui per una workstation vengano associate più risorse (es. di tipo centro di lavoro), in fase di avvio del MES non verrà caricata nessuna di esse e l'utente potrà selezionare solo una delle risorse associate.      
-Esempio di workstation dedicata ad un reparto dove avverranno le dichiarazioni di tutti i centro di lavoro di quel particolare reparto.     
-- Nel caso in cui, invece, per una workstation non venga associata alcuna risorsa, in fase di avvio del MES non verrà caricata nessuna di esse e l'utente potrà selezionare una qualsiasi delle risorse inserite nella tabella [Risorse di produzione](/docs/production/mes/production-resources).       
-Esempio di workstation dedicata ad un attrezzista che dichiarerà le proprie attività per tutti i centro di lavoro.      
+En la cuadrícula secundaria (debajo de la principal), es posible asociar los *recursos* que podrán trabajar en cada estación de trabajo.
+- En el caso de que solo se asocie un recurso a una estación de trabajo (por ejemplo, de tipo centro de trabajo), al iniciar el MES se cargará automáticamente ese recurso y todas las fases ya iniciadas asociadas a él.      
+Ejemplo de estación de trabajo dedicada a un centro de trabajo.        
+- En el caso de que se asocien múltiples recursos a una estación de trabajo (por ejemplo, de tipo centro de trabajo), al iniciar el MES no se cargará ninguno de ellos y el usuario podrá seleccionar solo uno de los recursos asociados.      
+Ejemplo de estación de trabajo dedicada a un departamento donde se realizarán las declaraciones de todos los centros de trabajo de ese departamento en particular.     
+- En el caso de que no se asocie ningún recurso a una estación de trabajo, al iniciar el MES no se cargará ninguno de ellos y el usuario podrá seleccionar cualquier recurso ingresado en la tabla [Recursos de producción (Risorse di produzione)](/docs/production/mes/production-resources).       
+Ejemplo de estación de trabajo dedicada a un preparador que declarará sus actividades para todos los centros de trabajo.      
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

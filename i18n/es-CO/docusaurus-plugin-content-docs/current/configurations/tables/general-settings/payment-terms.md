@@ -1,45 +1,45 @@
 ---
-title: Soluzioni di pagamento
+title: soluzioni di pagamento
 sidebar_position: 10
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de chequeo de la página enlazada.
 :::
 
-La tabella contiene le soluzioni di pagamento da utilizzare nel gestionale per il calcolo delle scadenze e delle partite aperte.
+La tabla contiene las soluciones de pago que se utilizarán en el sistema para el cálculo de los vencimientos y partidas abiertas.
 
-:::danger Attenzione
-Il corretto inserimento di una soluzione di pagamento richiede di compilare sia la griglia superiore, sia quella di dettaglio che definisce il calcolo dei giorni di scadenza. Nonostante il programma permetta di salvare senza la griglia di dettaglio, una soluzione creata in questo modo non sarà utilizzabile. 
+:::danger Atención
+La correcta inserción de una solución de pago requiere completar tanto la cuadrícula superior como la de detalle que define el cálculo de los días de vencimiento. A pesar de que el programa permite guardar sin la cuadrícula de detalle, una solución creada de esta manera no será utilizable.
 :::
 
-### Griglia superiore
+### Cuadrícula superior
 
-**Soluzione / Descrizione**: Rappresenta il codice e descrizione della dilazione di pagamento da applicare
+**Solución / Descripción (Soluzione / Descrizione)**: Representa el código y la descripción de la dilación de pago a aplicar.
 
-**Fine mese**: il flag attivo porta la dilazione di pagamento a fine mese dopo aver applicato il numero di giorni definiti nella griglia di dettaglio in basso
+**fine mese**: el indicador activo lleva la dilación de pago al fin de mes después de aplicar el número de días definidos en la cuadrícula de detalle inferior.
 
-**Fine settimana**: il flag attivo porta la dilazione di pagamento al venerdì seguente alla data ottenuta dopo aver applicato il numero di giorni definiti nella griglia di dettaglio in basso
+**fine settimana**: el indicador activo lleva la dilación de pago al viernes siguiente a la fecha obtenida después de aplicar el número de días definidos en la cuadrícula de detalle inferior.
 
-**Giorni**: numero di giorni da aggiungere al fine mese per ottenere il giorno fisso di scadenza (il corretto settaggio prevde quindi di definire in basso il numero di giorni di dilazione, anche zero se del caso, poi viene letto il flag fine mese e infine aggiunti i giorni ulteriori oltre il fine mese. Per normalizzare il calcolo si consiglia di abbinare anche il flag per il calendario commerciale che rende tutti i mesi di 30 giorni)
+**giorni**: número de días a añadir al fin de mes para obtener el día fijo de vencimiento (la configuración correcta implica definir en la parte inferior el número de días de dilación, incluso cero si es el caso, luego se lee el indicador de fin de mes y finalmente se añaden los días adicionales más allá del fin de mes. Para normalizar el cálculo, se recomienda también asociar el indicador para el calendario comercial que convierte todos los meses a 30 días).
 
-**DL Art 62**: flag che identifica le due rate dei 30 e 60 giorni che saranno da utilizzare per il calcolo delle scadenze di pagamento in fatture contenenti merci deperibili secondo l’art.62 del Decreto Legge 24 gennaio 2012 n.1.
+**DL Art 62 (DL Art 62)**: indicador que identifica las dos cuotas de 30 y 60 días que se utilizarán para el cálculo de los vencimientos de pago en facturas que contienen mercancías perecederas de acuerdo con el art.62 del Decreto Ley 24 de enero de 2012 n.1.
 
-[**Vedere anagrafiche clienti fornitori**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)
+[**Ver registros de clientes y proveedores (Vedere anagrafiche clienti fornitori)**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information).
 
-**Nazione**: filtro per rendere visibile quella soluzione pagamento solo alle società del database che hanno la nazionalità specificata (utile in quanto la tabella essendo di base è visibile a tutte le società della stessa base dati).
+**nazione**: filtro para hacer visible esta solución de pago solo a las compañías de la base de datos que tengan la nacionalidad especificada (útil ya que la tabla, al ser básica, es visible para todas las empresas de la misma base de datos).
 
 
-### Griglia inferiore
+### Cuadrícula inferior
 
-A livello di rateizzazione, è possibile ripartire in percentuale sulle varie rate l’imponibile, l’iva e le spese del documento (la % spese non è applicabile direttamente nelle registrazioni di contabilità generale). Nel caso in cui la percentuale venga lasciata a zero, ***Fluentis*** ripartirà in modo uniforme sul numero di rate presenti
+A nivel de fraccionamiento, es posible repartir en porcentaje sobre las diversas cuotas el imponible, el IVA y los gastos del documento (el % de gastos no se aplica directamente en los registros de contabilidad general). En caso de que el porcentaje se deje en cero, ***Fluentis*** repartirá de manera uniforme sobre el número de cuotas presentes.
 
-**Commerciale**: con questa opzione possiamo inserire solo multipli di 30 giorni nel campo relativo, che saranno gestiti come singolo mese
+**commerciale**: con esta opción podemos ingresar solo múltiplos de 30 días en el campo correspondiente, que serán gestionados como un solo mes.
 
-caso tipico è una scadenza a 30gg fine mese, quando la data fattura è il 31/01: se applichiamo 30 giorni di calendario (quindi senza il flag ‘commerciale’), andremo ad ottenere una scadenza al 02/03 e quindi il fine mese porterà la scadenza al 31/03, cioè sostanzialmente 60gg dopo e non 30 come inteso dal nome. Se invece è presente il flag commerciale, i 30 giorni saranno in realtà gestiti come 1 mese in più + fine mese, quindi dal 31/01 si andrà correttamente al 28 o 29 febbraio come da calendario.
+Un caso típico es un vencimiento a 30 días fin de mes, cuando la fecha de la factura es el 31/01: si aplicamos 30 días de calendario (por lo tanto, sin el indicador 'comercial'), terminaremos con un vencimiento el 02/03 y, por lo tanto, el fin de mes llevará el vencimiento al 31/03, es decir, esencialmente 60 días después y no 30 como se entendía por el nombre. Si, en cambio, está presente el indicador comercial, los 30 días se gestionarán de hecho como 1 mes más + fin de mes, por lo que del 31/01 se irá correctamente al 28 o 29 de febrero según el calendario.
 
-### Lingue
+### Idiomas (Lingue)
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile definire delle descrizioni in lingua: utilizzabile per stampe personalizzate.
+Para cada tipo de pago seleccionado en la cuadrícula superior, es posible definir descripciones en diferentes idiomas: utilizables para impresiones personalizadas.

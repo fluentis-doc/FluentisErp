@@ -1,47 +1,37 @@
 ---
-title: Brogliaccio
+title: brogliaccio
 sidebar_position: 2
 ---
 
-Il 'Brogliaccio' è una stampa provvisoria del libro giornale. 
+El 'brogliaccio (Brogliaccio)' es una impresión provisional del libro diario.
 
-Sono presenti varie versioni della stampa (secondo diversi layout) selezionabili tramite la combo box in alto a sinistra.
+Existen varias versiones de la impresión (según diferentes diseños) seleccionables mediante la caja combinada en la parte superior izquierda.
 
-Possibilità di filtrare per:
+Posibilidad de filtrar por:
 
-- Date delle registrazioni contabili (da - a);
+- Fechas de las registraciones contables (de - a);
 
-- Date di competenza **contabile** delle registrazioni (da - a), da non confondere con il concetto di competenza economica;
+- Fechas de competencia **contabile** de las registraciones (de - a), que no debe confundirse con el concepto de competencia económica;
 
-- Numero delle registrazioni contabili (da - a ) e protocollo iva (da - a);
+- Número de registraciones contables (de - a) y protocolo de IVA (de - a);
 
-- Registro IVA che contiene i movimenti che saranno restituiti (se non viene selezionato saranno esposti tutti i movimenti)
+- Registro de IVA que contiene los movimientos que serán devueltos (si no se selecciona, se expondrán todos los movimientos);
 
-- Widget per selezionare un sottoconto al fine di restituire solo i movimenti che contengono il sottoconto inserito
+- Widget para seleccionar una subcuenta con el fin de devolver solo los movimientos que contengan la subcuenta ingresada;
 
+- Tipo de documento presente en el encabezado de la registración contable;
 
+- Operador que ha creado las registraciones;
 
-- Tipo documento presente nella testata della registrazione contabile
+- Causa contable con la que se han creado las registraciones.
 
-- Operatore che ha creato le registrazioni
+**Se recuerda que es posible seleccionar más de una opción de las cajas combinadas manteniendo presionada la tecla Ctrl.**
 
-- Causale contabile con la quale sono state create le registrazioni. 
-
-**Si ricorda che è possibile selezionare più di una voce dalle combo box tenendo premuto il tasto Ctrl.**
-
-
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión. |
+| Impresión (Stampa) | Botón para realizar la impresión física del documento. |
 
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important Ver También (Vedi Anche)
+[**TUTORIALS EN VIDEO SOBRE IMPRESIONES CONTABLES (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro)
 :::
-
-
-

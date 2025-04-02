@@ -1,24 +1,24 @@
 ---
-title: Caratteristiche articolo
+title: caratteristiche articolo
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Caratteristiche articolo**
+La tabla se encuentra en la ruta **Tablas > Logística > caratteristiche articolo (Tabelle > Logistica > Caratteristiche articolo)**
 
-La tabella di inserimento *Caratteristiche articolo* è necessaria per poter effettuare un raggruppamento degli articoli. Ai fini statistici è fondamentale poter raggruppare gli articoli in modo da poterli ricercare secondo un parametro.
+La tabla de inserción *caratteristiche articolo* es necesaria para poder realizar un agrupamiento de los artículos. Para fines estadísticos, es fundamental poder agrupar los artículos de manera que puedan ser buscados según un parámetro.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Caratteristiche articolo**
+**Búsqueda de características del artículo (Ricerca Caratteristiche articolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez que se hayan configurado todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Caratteristiche articolo**
+**Inserción de características del artículo (Inserimento Caratteristiche articolo)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder ingresar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico della caratteristica e la sua **Descrizione**. 
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** alfanumérico de la característica y su **descrizione**.
 
-Per ciascuna caratteristica è possibile inserire le **Descrizioni in lingua** nella griglia inferiore.
+Para cada característica es posible ingresar las **descrizioni in lingua** en la cuadrícula inferior.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

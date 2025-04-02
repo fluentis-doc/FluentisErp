@@ -1,29 +1,29 @@
 ---
-title: Stati effetti
+title: stati effetti
 sidebar_position: 5
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione effetti della società, impostando uno degli stati predefiniti fra:
+La tabla se completa mediante la imposición de un código y una descripción de usuario para los estados necesarios para la gestión de efectos de la empresa, configurando uno de los estados predeterminados entre:
 
-**Effetto emesso;**
+**Efecto emitido (Effetto emesso);**
 
-**Effetto presentato allo sconto;**
+**Efecto presentado al descuento (Effetto presentato allo sconto);**
 
-**Effetto presentato salvo buon fine;**
+**Efecto presentado salvo buen fin (Effetto presentato salvo buon fine);**
 
-**Effetto presentato al dopo incasso;**
+**Efecto presentado al después de recaudo (Effetto presentato al dopo incasso);**
 
-**Effetto ritornato accreditato;**
+**Efecto retornado acreditado (Effetto ritornato accreditato);**
 
-**Effetto ritornato insoluto;**
+**Efecto retornado insoluto (Effetto ritornato insoluto);**
 
-**Effetto girato;**
+**Efecto girado (Effetto girato);**
 
-**Effetto generale.**
+**Efecto general (Effetto generale).**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

@@ -1,40 +1,36 @@
 ---
-title: Dichiarazione iva periodoca
+title: Declaración de IVA periódica (Dichiarazione iva periodoca)
 sidebar_position: 6
 ---
 
-Da questa form è possibile gestire manualmente alcuni valori che saranno riportati nella stampa della liquidazione iva periodica nel momento della generazione del report.
+Desde este formulario es posible gestionar manualmente algunos valores que se mostrarán en la impresión de la liquidación de IVA periódica al momento de generar el reporte.
 
-Tipicamente due campi utili e frequentemente utilizzati sono:
+Típicamente, dos campos útiles y frecuentemente utilizados son:
 
-- l'indicazione del credito iva residuo (perché non completamente compensato nel modello F24 con altri tributi) da inserire nella liquidazione;
+- la indicación del crédito de IVA residual (porque no fue completamente compensado en el modelo F24 con otros tributos) que se debe insertar en la liquidación;
 
-- l'indicazione del credito iva che emerge nella liquidazione e che si desidera estromettere al fine di compensarlo con altri tributi nel modello F24.
+- la indicación del crédito de IVA que surge en la liquidación y que se desea excluir con el fin de compensarlo con otros tributos en el modelo F24.
 
-Poichè al momento dell'elaborazione della stampa della liquidazione periodica (in cui i valori vengono elaborati dall'applicativo per esporli nel report) i valori inseriti manualmente devono già essere presenti, prima di generare la liquidazione periodica inserire una nuova riga (pulsante **Nuovo**).
+Dado que al momento de la elaboración de la impresión de la liquidación periódica (en la que los valores son procesados por la aplicación para presentarlos en el reporte) los valores ingresados manualmente deben estar ya presentes, antes de generar la liquidación periódica se debe insertar una nueva fila (botón **nuovo**).
 
-All'apertura della nuova form sarà proposto l'anno in corso ed il mese o trimestre successivo all'ultimo memorizzato.
+Al abrir el nuevo formulario, se propondrá el año en curso y el mes o trimestre siguiente al último registrado.
 
-Si ricorda che, nel caso la riga corrispondente al mese o trimestre di riferimento non venga creata manualmente (al fine di gestire i valori di cui sopra) tramite il tasto Nuovo, sarà comunque creata in fase di stampa in definitivo della liquidazione periodica.
+Se recuerda que, en caso de que la fila correspondiente al mes o trimestre de referencia no se cree manualmente (con el fin de gestionar los valores mencionados anteriormente) a través del botón Nuevo, se creará de todos modos en la fase de impresión definitiva de la liquidación periódica.
 
-**CREDITO RESIDUO DA RIPORTARE**:
+**CRÉDITO RESIDUAL A TRANSFERIR (CREDITO RESIDUO DA RIPORTARE)**:
 
-Compilare SENZA INDICAZIONE DEL SEGNO il campo VP16
+Complete SIN INDICACIÓN DEL SIGNO el campo VP16
 
 ![](/img/it-it/finance-area/declarations/declarations/periodical-vat-declaration/image01.png)
 
-Allo stesso modo possono essere inseriti altri importi che vanno ad incrementare il credito risultante nella liquidazione, quali lo scomputo dell'acconto iva di dicembre versato (campo VP 20).
+De la misma manera, se pueden insertar otros importes que incrementen el crédito resultante en la liquidación, como el abono del anticipo de IVA de diciembre pagado (campo VP20).
 
-**CREDITO IVA DA COMPENSARE IN F24**:
+**CRÉDITO IVA A COMPENSAR EN F24 (CREDITO IVA DA COMPENSARE IN F24)**:
 
-Compilare SENZA INDICAZIONE DEL SEGNO il campo VP32
+Complete SIN INDICACIÓN DEL SIGNO el campo VP32
 
 ![](/img/it-it/finance-area/declarations/declarations/periodical-vat-declaration/image02.png)
 
-Al momento dell'elaborazione della stampa della liquidazione iva (sia in provvisorio che in definitivo) i valori con segno negativo (VP16) andranno a incrementare il credito iva, mentre quelli con valore positivo (VP32) lo andranno a ridurre (o ad aumentare il debito); tali valori vengono riportati nel riepilogo dopo i valori di debito e credito derivanti dalle operazioni del mese o trimestre.
+En el momento de la elaboración de la impresión de la liquidación de IVA (tanto en provisional como en definitivo), los valores con signo negativo (VP16) incrementarán el crédito de IVA, mientras que aquellos con valor positivo (VP32) lo reducirán (o aumentarán el débito); estos valores se informan en el resumen después de los valores de débito y crédito derivados de las operaciones del mes o trimestre.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

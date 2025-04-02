@@ -1,67 +1,60 @@
 ---
-title: Check-list
+title: check-list
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Documenti di origine interna > Check-list**
+La gestión se encuentra en la ruta **check-list**
 
-
-:::important A cosa serve
-Le *Check-list* sono un raggruppamento di domande/attività utilizzate per effettuare valutazioni a fornitori o audit interni.   
+:::important ¿Para qué sirve? (A cosa serve)
+Las *check-list* son un agrupamiento de preguntas/actividades utilizadas para realizar evaluaciones a proveedores o auditorías internas.   
 :::
 
-La gestione consente di inserire nuove *Check-list* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+La gestión permite insertar nuevas *check-list* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.
 
+## Botones de comando
 
-## Pulsanti di comando
+### ![](/img/neutral/common/search.png) Búsqueda de check-list (Ricerca Check-list)
 
+El formulario consta de un área de filtrado y una de resultados. Una vez establecidos todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/search.png) Ricerca Check-list
+### ![](/img/neutral/common/new.png) Inserción de check-list (Inserimento Check-list)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Para poder insertar nuevas *check-list*, es necesario presionar el botón **nuovo**.
 
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de check-list (Modifica o Visualizzazione Check-list)
 
-### ![](/img/neutral/common/new.png) Inserimento Check-list
+Para abrir la gestión en la cuadrícula de resultados, es necesario hacer doble clic en la fila de interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-Per poter inserire nuove *Check-list* è necessario premere il pulsante **Nuovo**.   
+## Gestión de datos
 
+### check-list (Check-list)
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Check-list
+Es el listado donde se ingresan las informaciones principales de la *check-list*.   
+El listado se compone de la siguiente información:   
+> **codice**: es el código de la *check-list*.   
+> **descrizione**: es la descripción de la *check-list*.   
+> **area**: es el *Área* de interés de la *check-list*.   
+> **settore**: es el *Sector* de interés de la *check-list*.   
+> **attiva**: indica si la *check-list* sigue siendo válida y utilizable.   
+> **normative di riferimento**: anotaciones libres sobre el tema.   
+> **documenti da consultare**: anotaciones libres sobre el tema.   
+> **funzioni da coinvolgere**: anotaciones libres sobre el tema.   
+> **note**: anotaciones libres.
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+### Preguntas (Domande)
 
+Es el listado de las preguntas/actividades a utilizar/realizar para las evaluaciones a proveedores o auditorías internas.   
+El listado se compone de la siguiente información:   
+> **sequenza**: es la secuencia de implementación de las *preguntas/actividades*.   
+> **domanda**: anotaciones libres sobre el tema.   
+> **livello di valutazione**: es el *Nivel de evaluación de competencia* requerido para la evaluación.   
+> **attiva**: indica si la *pregunta/actividad* sigue siendo válida y utilizable.   
+> **data inizio**: es la fecha a partir de la cual la *pregunta/actividad* es válida y utilizable.   
+> **data fine**: es la fecha a partir de la cual la *pregunta/actividad* deja de ser válida y utilizable.   
+> **note**: anotaciones libres.
 
-## Gestione dati
+### Datos adicionales (Extra data)
 
+Es posible ingresar datos [Adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *check-list*.   
 
-### Check-list
-
-E' l'elenco dove vengono inserite le informazioni principali della *Check-list*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Check-list*.   
-> **Descrizione**: è la descrizione della *Check-list*.   
-> **Area**: è l'*Area* di interesse della *Check-list*.   
-> **Settore**: è il *Settore* di interesse della *Check-list*.   
-> **Attiva**: indica se la *Check-list* è ancora valida e utilizzabile.   
-> **Normative di riferimento**: annotazioni libere sull'argomento.   
-> **Documenti da consultare**: annotazioni libere sull'argomento.   
-> **Funzioni da coinvolgere**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.
-
-### Domande
-
-E' l'elenco delle domande/attività da utilizzare/effettuare per le valutazioni a fornitori o audit interni.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione delle *domande/attività*.   
-> **Domanda**: annotazioni libere sull'argomento.   
-> **Livello di valutazione**: è il *Livello di valutazione competenza* richiesto per la valutazione.   
-> **Attiva**: indica se la *domanda/attività* è ancora valida e utilizzabile.   
-> **Data inizio**: è la data dalla quale la *domanda/attività* è valida e utilizzabile.   
-> **Data fine**: è la data dalla quale la *domanda/attività* cessa di essere valida e utilizzabile.   
-> **Note**: annotazioni libere.
-
-### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Check-list*.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

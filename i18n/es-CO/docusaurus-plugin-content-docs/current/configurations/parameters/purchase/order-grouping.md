@@ -1,39 +1,39 @@
 ---
-title: Parametri raggruppamento Ordini di acquisto
+title: Parámetros de agrupamiento de pedidos de compra (Parametri raggruppamento Ordini di acquisto)
 sidebar_position: 8
 ---
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Los parámetros de agrupamiento permiten definir cómo dividir los documentos durante los procedimientos de cumplimiento. Para ello, se pueden utilizar indicadores específicos para agrupar los documentos según diversas propiedades, como la categoría, el tipo de documento u otras características relevantes.  
+Estos parámetros generales de agrupamiento deben configurarse una sola vez y se aplicarán automáticamente a todos los procedimientos, siendo válidos para todos los clientes y proveedores. Sin embargo, si un cliente o proveedor solicita un comportamiento diferente al establecido en los parámetros generales, será necesario personalizar los parámetros de agrupamiento dentro de su registro específico.  
+De este modo, se garantiza una gestión flexible y adaptable de los cumplimientos, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, manteniendo al mismo tiempo una configuración centralizada y coherente para la mayoría de las operaciones.
 
-In questa maschera vengono decise le regole di raggruppamento per la procedura:  
--  [**Creazione Ordini fornitori**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders/) dal filtro di Ricerca Ordini Clienti   
+En esta máscara se deciden las reglas de agrupamiento para el procedimiento:  
+- [**creazione ordini fornitori**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders/) desde el filtro de Búsqueda de Pedidos de Clientes  
 
-Per la creazione di Ordini fornitori da Ordini clienti è tuttavia consigliato utilizzare la procedura di [creazione automatica ordini](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) con i relativi *Parametri*. 
+Para la creación de órdenes de proveedores desde pedidos de clientes, se recomienda utilizar el procedimiento de [creación automática de órdenes](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) con los correspondientes *Parámetros*. 
 
 :::note Nota
-Se nell'anagrafica del fornitore, nel tab *Parametri raggruppamento per cliente/fornitore*, sono state inserite delle condizioni di raggruppamento differenti, queste avranno priorità rispetto ai parametri generali.
+Si en el registro del proveedor, en la pestaña *Parámetros de agrupamento por cliente/proveedor*, se han introducido condiciones de agrupamiento diferentes, estas tendrán prioridad sobre los parámetros generales.
 :::
 
-Quando l'ordine fornitore viene creato a partire da un unico ordine cliente vengono riportati tutti i dati di testata presenti nel documento di partenza. Per gli ordini di acquisto creati da più ordini di vendita invece, vengono riportati i dati dell'anagrafica fornitore.    
+Cuando se crea la orden de proveedor a partir de un único pedido de cliente, se trasladan todos los datos de cabecera presentes en el documento de origen. Sin embargo, para los pedidos de compra creados a partir de múltiples pedidos de venta, se trasladan los datos del registro del proveedor.  
 
-#### Campi specifici  
+#### Campos específicos  
 
-- **Riepilogativa**: se attivo, al momento della creazione ordini fornitori a partire da più ordini clienti sarà creato un unico documento per fornitore. Se non è attivo sarà sempre creato un documento per ciascun ordine cliente. Il raggruppamento funziona solo per i [Tipi ordine cliente](/docs/configurations/tables/sales/sales-order-types/) che hanno codificato lo stesso *Tipo ordine fornitore* da creare. Tutti i flag successivi devono essere utilizzati in concomitanta con questo flag.    
+- **riepilogativa**: si está activo, al momento de crear órdenes de proveedores a partir de múltiples pedidos de clientes, se creará un único documento por proveedor. Si no está activo, siempre se creará un documento para cada pedido de cliente. El agrupamiento funciona solo para los [Tipos de pedido de cliente (Tipi ordine cliente)](/docs/configurations/tables/sales/sales-order-types/) que han codificado el mismo *Tipo de pedido de proveedor* a crear. Todos los indicadores siguientes deben utilizarse en conjunto con este indicador.  
 
-- **Raggruppamento per tipo documento**: se attivo, saranno raggruppati in un unico ordine tutti i documenti che hanno lo stesso *Tipo Ordine Cliente*.     
+- **Agrupamiento por tipo de documento (Raggruppamento per tipo documento)**: si está activo, se agruparán en un único pedido todos los documentos que tienen el mismo *Tipo de Pedido de Cliente*.  
 
-- **Raggruppamento per anno**: attivando questo flag sarà effettuato un raggruppamento per anno di inserimento dell'ordine cliente.   
+- **Agrupamiento por año (Raggruppamento per anno)**: al activar este indicador, se realizará un agrupamiento por año de ingreso del pedido de cliente.  
 
-- **Raggruppamento per mese**: per poter effettuare un raggruppamento per mese di creazione dell'ordine è necessario attivare anche il flag precedente.    
+- **Agrupamiento por mes (Raggruppamento per mese)**: para poder realizar un agrupamiento por mes de creación del pedido, es necesario activar también el indicador anterior.  
 
-- **Raggruppamento per cambio**: se attivo, i documenti con la stessa divisa e stesso cambio sranno raggruppati in un unico ordine di acquisto.    
+- **Agrupamiento por cambio (Raggruppamento per cambio)**: si está activo, los documentos con la misma moneda y mismo cambio se agruparán en un único pedido de compra.  
 
-- **Raggruppamento per ordine**: questo flag viene utilizzato solo per la *Creazione DDT e fatture di vendita da Picking* (vedi [Parametri raggruppamento DDT](/docs/configurations/parameters/sales/dn-grouping) e [fatture](/docs/configurations/parameters/sales/invoice-grouping)), dunque in questa procedura non ha significato.    
+- **Agrupamiento por pedido (Raggruppamento per ordine)**: este indicador se utiliza solo para la *Creación de DDT y facturas de venta a partir del Picking* (ver [Parámetros de agrupamiento DDT (Parametri raggruppamento DDT)](/docs/configurations/parameters/sales/dn-grouping) y [facturas (fatture)](/docs/configurations/parameters/sales/invoice-grouping)), por lo que en este procedimiento no tiene significado.  
 
-- **Raggruppamento per progetto**: attivando questo flag sarà effettuato un raggruppamento per progetto. Il raggruppamento funziona anche per i progetti inseriti a livello di riga articolo; se alcune delle righe articolo non hanno un progetto associato sarà creato un ordine diverso per tutti gli articoli che non lo contengono. Quando il progetto è stato inserito nella testata dei documenti di origine esso sarà riportato anche nella testata dei documenti di destinazione, in alternativa sarà mantenuto solo sulle righe articolo.    
+- **Agrupamiento por proyecto (Raggruppamento per progetto)**: al activar este indicador, se realizará un agrupamiento por proyecto. El agrupamiento también funciona para los proyectos introducidos a nivel de línea de artículo; si algunas de las líneas de artículo no tienen un proyecto asociado, se creará un pedido diferente para todos los artículos que no lo contengan. Cuando el proyecto ha sido incluido en la cabecera de los documentos de origen, también se trasladará a la cabecera de los documentos de destino; de lo contrario, se mantendrá solo en las líneas de artículo.  
 
-- **Raggruppamento per tipo e soluzione di pagamento**: attivando questo flag sarà effettuato un raggruppamento sulla base del tipo e della soluzione di pagamento inserito nell'ordine cliente; tale dato sarà riportato nella testata dell'ordine fornitore creato.   
+- **raggruppamento per tipo e soluzione di pagamento**: al activar este indicador, se realizará un agrupamiento basado en el tipo y la solución de pago ingresados en el pedido de cliente; este dato será trasladado a la cabecera del pedido de proveedor creado.  
 
-- **Raggruppamento per destinazione**: attivando questo flag sarà effettuato un raggruppamento sulla base della destinazione inserita all'interno dell'ordine cliente nel tab *Destinazione*; tale dato sarà riportato nella testata dell'ordine fornitore creato.     
+- **raggruppamento per destinazione**: al activar este indicador, se realizará un agrupamiento basado en el destino ingresado en el pedido de cliente en la pestaña *Destino*; este dato será trasladado a la cabecera del pedido de proveedor creado.

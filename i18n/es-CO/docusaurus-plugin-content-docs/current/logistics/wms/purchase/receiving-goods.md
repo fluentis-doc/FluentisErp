@@ -1,95 +1,95 @@
 ---
-title: Ricevimento merci
+title: ricevimento merci
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-Il modulo di ricevimento merci è uno strumento essenziale per la gestione efficace dei flussi di magazzino. Questa funzione permette l'identificazione tempestiva dei materiali in arrivo, garantendo un carico preciso e organizzato delle merci. Il processo inizia con la selezione degli ordini fornitori non evasi o parzialmente evasi, facilitata da filtri dettagliati che permettono di visualizzare gli articoli in attesa di ricevimento.
+:::important ¿Para qué sirve? (A cosa serve)
+El módulo de recepción de mercancías es una herramienta esencial para la gestión efectiva de los flujos de almacén. Esta función permite la identificación oportuna de los materiales que llegan, garantizando una carga precisa y organizada de las mercancías. El proceso comienza con la selección de los pedidos de proveedores no cumplidos o parcialmente cumplidos, facilitada por filtros detallados que permiten visualizar los artículos en espera de recepción.
 
-Una volta selezionati gli ordini, l'operatore può generare il Documento di Trasporto (DDT) di acquisto, inserendo i dettagli relativi agli articoli da caricare. Il sistema supporta anche la creazione di unità di carico (UDC) nel caso in cui queste siano gestite, migliorando ulteriormente l'organizzazione e la tracciabilità delle merci ricevute. Attraverso l'inserimento dei dati relativi ai lotti, alle quantità e ad altre informazioni pertinenti, il modulo garantisce un controllo completo sulle movimentazioni di magazzino.
+Una vez seleccionados los pedidos, el operador puede generar el Documento de Transporte (DDT) de compra, ingresando los detalles relativos a los artículos a cargar. El sistema también soporta la creación de unidades de carga (UDC) en caso de que estas sean gestionadas, mejorando aún más la organización y la trazabilidad de las mercancías recibidas. A través de la entrada de datos relacionados con los lotes, las cantidades y otras informaciones pertinentes, el módulo garantiza un control completo sobre los movimientos del almacén.
 :::
 
-Questa procedura è utilizzata in fase di ricevimento della merce, per l’identificazione articoli, la creazione e il carico del DDT di acquisto.
+Este procedimiento se utiliza en la fase de recepción de mercancías, para la identificación de artículos, la creación y la carga del DDT de compra.
 
-La form si apre sul filtro degli ordini fornitori, dove è possibile visualizzare tutti gli ordini in stato *Non evaso* e *Parzialmente evaso*. 
-I risultati possono essere filtrati per *Numero*, *Tipo ordine*, *Anno*, *Articolo* e *Fornitore*.
-Dopo aver selezionato uno o più ordini fornitore, è possibile visualizzare gli articoli non evasi e parzialmente evasi utilizzando il pulsante *Visualizza*, mentre tramite il pulsante *Creazione DDT acquisto* è possibile iniziare ad inserire gli articoli che saranno presenti nel DDT.
+El formulario se abre con el filtro de los pedidos de proveedores, donde se pueden visualizar todos los pedidos en estado *No cumplido* y *Parcialmente cumplido*.  
+Los resultados pueden ser filtrados por *Número*, *Tipo de pedido*, *Año*, *Artículo* y *Proveedor*.  
+Después de seleccionar uno o más pedidos de proveedor, es posible visualizar los artículos no cumplidos y parcialmente cumplidos utilizando el botón *Visualizar*, mientras que a través del botón *Creación DDT de compra* se puede comenzar a ingresar los artículos que estarán presentes en el DDT.
 
-La form principale si compone dei seguenti tab:
+El formulario principal consta de las siguientes pestañas:
 
-- **Creazione DDT acquisto**
-Dopo aver selezionato l'ordine fornitore, tramite il pulsante *Creazione DDT acquisto* è possibile aprire la form sul tab *Creazione DDT acquisto*, dove il focus sarà posizionato direttamente sul campo "DDT" in modo da inserire per prima cosa il numero del documento.
-Inoltre, verranno visualizzate le informazioni relative al primo articolo presente sull'ordine, oltre alle informazioni di testata dell'ordine stesso.
+- **creazione ddt acquisto**  
+Después de seleccionar el pedido de proveedor, a través del botón *Creación DDT de compra* se puede abrir el formulario en la pestaña *Creación DDT de compra*, donde el foco se situará directamente en el campo "DDT" para que se ingrese primero el número del documento.  
+Además, se visualizarán las informaciones relacionadas con el primer artículo presente en el pedido, además de la información de encabezado del propio pedido.
 
-> **Magazzino**: indica il magazzino in cui verranno effettuate le movimentazioni;          
-> **Causale magazzino**: indica la causale di magazzino con cui verranno effettuate le movimentazioni;     
-> **Tipo DDT**: indica il tipo di DDT con cui verrà creata il documento di trasporto;                
-> **Data**: indica la data del DDT che si sta creando; di default viene proposta quella odierna;     
-> **Ordine**: indica il numero di ordine fornitore;           
-> **Articolo**: indica classe, codice e descrizione dell'articolo che si sta per confermare;           
-> **N. Riga**: indica il numero di riga dell'articolo nell'ordine fornitore;          
-> **Barcode**: permette di leggere i barcode tramite apposito lettore per effettuare diverse operazioni;      
-> **Lotto Fornitore**: permette di inserire il numero di lotto del fornitore;     
-> **LT**: permette di generare il numero di lotto interno;           
-> **Data scadenza**: indica la data scadenza del lotto;          
-> **Quantità ordinata**: indica la quantità ordinata;    
-> **Quantità residua**: indica la quantità residua;       
-> **Quantità**: indica la quantità che si vuole caricare a magazzino;    
-> **Ubicazione proposta**: indica l'ubicazione proposta;              
-> **Ubicazione**: permette di inserire un'ubicazione variando quella proposta.
+> **magazzino**: indica el almacén en el que se realizarán los movimientos;  
+> **causale magazzino**: indica la causa de almacén con la que se realizarán los movimientos;  
+> **tipo ddt**: indica el tipo de DDT con el que se creará el documento de transporte;  
+> **data**: indica la fecha del DDT que se está creando; por defecto se propone la del día;  
+> **ordine**: indica el número de pedido de proveedor;  
+> **articolo**: indica clase, código y descripción del artículo que se está a punto de confirmar;  
+> **n. riga**: indica el número de línea del artículo en el pedido de proveedor;  
+> **barcode**: permite leer los códigos de barras a través de un lector especial para realizar diversas operaciones;  
+> **lotto fornitore**: permite ingresar el número de lote del proveedor;  
+> **LT**: permite generar el número de lote interno;  
+> **data scadenza**: indica la fecha de caducidad del lote;  
+> **quantità ordinata**: indica la cantidad ordenada;  
+> **quantità residua**: indica la cantidad residual;  
+> **quantità**: indica la cantidad que se desea cargar en el almacén;  
+> **ubicazione proposta**: indica la ubicación propuesta;  
+> **ubicazione**: permite ingresar una ubicación variando la propuesta.
 
-Tramite il campo **Input code** (quindi utilizzando un lettore barcode) è possibile inserire i dati relativi al lotto, all'ubicazione, alla quantità rilevata e all’articolo nel caso in cui si volesse caricarne un altro rispetto a quello proposto, ma comunque presente negli ordini precedentemente selezionati.       
-Dopo aver inserito i dati relativi all'articolo corrente, è possibile confermarli tramite il pulsante **Conferma**.     
-Una volta confermate tutte le righe dell’ordine si viene posizionati automaticamente sul tab **Dettaglio DDT**, dove utilizzando il pulsante **Chiudi** è possibile salvare il DDT ed effettuare il relativo movimento di magazzino.
+A través del campo **input code** (usando un lector de códigos de barras) es posible ingresar los datos relacionados con el lote, la ubicación, la cantidad detectada y el artículo en caso de que se desee cargar uno diferente al propuesto, pero que aún esté presente en los pedidos seleccionados anteriormente.  
+Después de ingresar los datos relacionados con el artículo actual, es posible confirmarlos a través del botón **conferma**.  
+Una vez confirmadas todas las líneas del pedido, se será posicionado automáticamente en la pestaña **Detalles DDT**, donde utilizando el botón **chiudi** se puede guardar el DDT y realizar el respectivo movimiento de almacén.
 
-**Pulsanti specifici**
-> **Conferma**: permette di confermare i dati inseriti per l'articolo selezionato;           
-> **Conf+Stp**: permette di confermare i dati inseriti per l'articolo ed inoltre, apre un pop up che da la possibilità di stampare le etichette;       
-> **Stampa**: permette di stampare le etichette;       
-> **Chiudi**: permette di salvare il DDT creato e creare i relativi movimenti di magazzino;        
-> **Prossimo oggetto**: permette di passare al prossimo articolo presente nell'ordine fornitore;       
-> **Precedente oggetto**: permette di passare all'articolo precedente presente nell'ordine fornitore.
+**Botones específicos**  
+> **conferma**: permite confirmar los datos ingresados para el artículo seleccionado;  
+> **Conf+Stp**: permite confirmar los datos ingresados para el artículo y, además, abre un pop-up que da la posibilidad de imprimir las etiquetas;  
+> **stampa**: permite imprimir las etiquetas;  
+> **chiudi**: permite guardar el DDT creado y crear los respectivos movimientos de almacén;  
+> **prossimo oggetto**: permite pasar al siguiente artículo presente en el pedido de proveedor;  
+> **precedente oggetto**: permite pasar al artículo anterior presente en el pedido de proveedor.
 
-- **Dettagli DDT**       
-In questa form vengono riportate tutte le informazioni relative alle righe create.
+- **dettagli ddt**  
+En este formulario se incluyen todas las informaciones relacionadas con las líneas creadas.
 
-**Pulsanti specifici**
-> **Cancella articoli**: permette di cancellare la riga selezionata dal DDT.   
+**Botones específicos**  
+> **cancella articoli**: permite eliminar la línea seleccionada del DDT.
 
-- **Dettagli dell'ordine**: 
-In questa form vengono riportate tutte le informazioni relative all'ordine fornitore considerato.
+- **dettagli dell'ordine**:  
+En este formulario se incluyen todas las informaciones relacionadas con el pedido de proveedor considerado.
 
-## **Ricevimento merci con unità di carico**
+## **ricevimento merci con unidades de carga (Ricevimento merci con unità di carico)**
 
-Nel caso in cui, l’articolo fosse gestito con unità di carico, e quindi, nel tab [confezionamento](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo deve essere presente almeno una riga con il flag **Unità di carico obbligatoria** attivo, la priorità e la quantità.     
-La procedura di ricevimento merci dovrà considerare la riga scegliendo quella con priorità più alta tra quelle di quel cliente fornitore (se indicato, altrimenti scegliere tra quelle senza), ma comunque con il flag Unità di carico obbligatoria attivo.     
+En caso de que el artículo sea gestionado con unidades de carga, en la pestaña [confeccionamiento (confezionamento)](/docs/erp-home/registers/items/create-new-item) del registro de artículo debe haber al menos una línea con el indicador **Unidad de carga obligatoria (Unità di carico obbligatoria)** activo, así como la prioridad y la cantidad.  
+El procedimiento de recepción de mercancías deberá considerar la línea eligiendo aquella con prioridad más alta entre las de ese cliente proveedor (si se indica, de lo contrario elegir entre las que no tienen), pero con el indicador de Unidad de carga obligatoria activo.
 
-Quindi, dopo aver inserito tutti i dati relativi all’articolo come descritto precedentemente per il caso senza UDC, quando viene premuto il pulsante **Conferma** la procedura aprirà una nuova form dedicata alla creazione delle unità di carico; dove verranno precaricati i dati dell’articolo, come: *classe*, *codice* e *descrizione articolo*, con eventuale *variante* e *lotto*.     
+Así, después de ingresar todos los datos relacionados con el artículo como se describió anteriormente para el caso sin UDC, cuando se presiona el botón **conferma**, el procedimiento abrirá un nuevo formulario dedicado a la creación de unidades de carga; donde se precargarán los datos del artículo, tales como: *clase*, *código* y *descripción del artículo*, con su posible *variante* y *lote*.  
 
-La **quantità residua**, inizialmente, sarà pari al valore indicato nella form principale nel campo quantità; questa poi, verrà aggiornata dinamicamente ad ogni inserimento di una nuova riga nella tabella.    
-La tabella inizialmente è vuota, mentre sono già inseriti i valori sottostanti: 
-> **Numero**: indica il numero di unità di carico di quel tipo;         
-> **Tipo UDC**: indica il tipo di unità di carico;       
-> **Numero dell’unità di carico**: indica il numero univoco dell'unità di carico;         
-> **Quantità**: indica la quantità contenuta in quella unità di carico.
+La **cantidad residual** será inicialmente igual al valor indicado en el formulario principal en el campo cantidad; esta se actualizará dinámicamente con cada inserción de una nueva línea en la tabla.  
+La tabla inicialmente está vacía, mientras que ya se han ingresado los siguientes valores: 
+> **numero**: indica el número de unidad de carga de ese tipo;  
+> **Tipo UDC (Tipo UDC)**: indica el tipo de unidad de carga;  
+> **Número de la unidad de carga (Numero dell’unità di carico)**: indica el número único de la unidad de carga;  
+> **quantità**: indica la cantidad contenida en esa unidad de carga.
 
-Il focus del cursore, invece, è posizionato sul campo riferimento fornitore, in modo da permettere all’operatore di inserire in maniera semplice e veloce il valore.       
-Una volta inserito questo valore (non obbligatorio), sarà sufficiente premere il pulsante **Avanti** per inserire la riga all’interno della tabella ed aggiornare il valore della quantità residua.      
-Dopo ogni click sul tasto **Avanti**, il focus viene riposizionato sempre nel campo riferimento fornitore.     
-Selezionando una delle righe della tabella e premendo il pulsante cancella, questa viene eliminata andando ad aggiornare la quantità residua.      
-L’operatore può anche modificare una riga già inserita. Selezionando la riga in tabella, vengono riportati tutti i dati nei campi sottostanti dove l’utente può modificarli e tramite il pulsante Avanti applicarli alla riga della tabella.        
-Una volta ultimato l’inserimento e la conferma di tutte le righe, con il pulsante **chiudi** si ritornerà alla form principale, dalla quale premendo il pulsante **chiudi** verranno creati i relativi movimenti di magazzino relativi al DDT appena caricato e alla creazione delle unità di carico collegate.
+El foco del cursor está posicionado en el campo de referencia del proveedor, para permitir al operador ingresar el valor de manera simple y rápida.  
+Una vez ingresado este valor (no obligatorio), será suficiente presionar el botón **avanti** para insertar la línea dentro de la tabla y actualizar el valor de la cantidad residual.  
+Después de cada clic en el botón **avanti**, el foco se reposiciona siempre en el campo de referencia del proveedor.  
+Al seleccionar una de las líneas de la tabla y presionar el botón eliminar, esta se elimina, actualizando la cantidad residual.  
+El operador también puede modificar una línea ya ingresada. Al seleccionar la línea en la tabla, se mostrarán todos los datos en los campos inferiores donde el usuario puede modificarlos y mediante el botón Siguiente (Avanti) aplicarlos a la línea de la tabla.  
+Una vez finalizada la inserción y la confirmación de todas las líneas, con el botón **chiudi** se regresará al formulario principal, desde el cual presionando el botón **chiudi** se crearán los movimientos de almacén correspondientes al DDT recién cargado y a la creación de las unidades de carga vinculadas.
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parámetros de carga/descarga** a ingresar en la tabla [Parámetros de Carga/Descarga por usuario](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Área | Módulo | Formulario |
 | :-- | :-- | :-- |
 | Scm | Fluentis.FluentisErp.Mvvm.Scm.PurchaseDeliveryNotes.ReadWrite.Views | ReceivingGoodsCreateDocument |
 | Scm | Fluentis.FluentisErp.Mvvm.Scm.PurchaseDeliveryNotes.ReadWrite.Views | LoadingUnitCreationFromPurchaseDeliveryNoteItem |
 
-Nello specifico sono utilizzati nel seguente modo:
+Específicamente se utilizan de la siguiente manera:
 
-> ReceivingGoodsCreateDocument: dopo aver selezionato **Ricevimento merci** e premuto il pulsante **Creazione DDT acquisto** il magazzino e la causale indicati in questo parametro vengono usati nelle righe degli articoli del DDT appena creato.
-> LoadingUnitCreationFromPurchaseDeliveryNoteItem: dopo aver selezionato **Ricevimento merci** e premuto il pulsante **Creazione DDT acquisto** il magazzino e la causale indicati in questo parametro vengono usati nella creazione e il carico delle unità di carico appena create. Questo parametro è necessario solo nel caso in cui vengano utilizzare le unità di carico.
+> ReceivingGoodsCreateDocument: después de seleccionar **ricevimento merci** y presionar el botón **Creación DDT de compra**, el almacén y la causa indicados en este parámetro se utilizan en las líneas de los artículos del DDT recién creado.  
+> LoadingUnitCreationFromPurchaseDeliveryNoteItem: después de seleccionar **ricevimento merci** y presionar el botón **Creación DDT de compra**, el almacén y la causa indicados en este parámetro se utilizan en la creación y carga de las unidades de carga recién creadas. Este parámetro es necesario solo en caso de que se utilicen unidades de carga.
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode**, consulte la página relacionada con el [Tokenizador de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

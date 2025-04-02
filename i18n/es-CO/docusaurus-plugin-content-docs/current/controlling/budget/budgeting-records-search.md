@@ -1,15 +1,14 @@
 ---
-title: Registrazioni di budget
+title: registrazioni di budget
 sidebar_position: 3
 ---
 
-Dalla form di ricerca è possibile ricercare ed inserire, tramite il tasto **Nuovo**, le registrazioni di Budget per i singoli periodi.
+Desde el formulario de búsqueda es posible buscar e insertar, mediante el botón **nuovo**, los registros de presupuesto para los diferentes períodos.
 
-Per inserire una nuova registrazione è obbligatorio selezionare un'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi, che può essere solo una di quelle associate ad un [***Tipo area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di Budget.
+Para insertar un nuevo registro, es obligatorio seleccionar un [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de análisis, que solo puede ser una de las asociadas a un [***Tipo de área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de presupuesto.
 
-Si procede selezionando una causale contabile (analogamente a quanto previsto per i movimenti contabili) ed una data.
-E' prevista l'indicazione della valuta di riferimento, Euro o altra divisa.
+Se procede seleccionando una causa contable (de manera análoga a lo que se prevé para los movimientos contables) y una fecha.  
+Se debe indicar la moneda de referencia, Euro u otra divisa.
 
-Nella griglia dei dettagli si potrà poi andare ad inserire, come di consueto, i sottoconti contabili, i relativi centri aziendali connessi alla relativa Dimensione, l'eventuale progetto / commessa associato e i valori dare / avere.
-I movimenti dovranno essere collegati alla divisione aziendale.
-
+En la cuadrícula de detalles se podrá luego ingresar, como es habitual, las subcuentas contables, los centros empresariales relacionados con la correspondiente Dimensión, el proyecto / orden asociado y los valores de debe / haber.  
+Los movimientos deberán estar vinculados a la división empresarial.

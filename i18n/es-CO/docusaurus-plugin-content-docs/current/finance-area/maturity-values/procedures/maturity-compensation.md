@@ -1,38 +1,35 @@
 ---
-title: Compensazione partite
+title: compensazione partite
 sidebar_position: 2
 ---
 
-:::note Percorso
-**Amministrazione>Partite>Procedure>Compensazione partite**
+:::note Ruta (Percorso)
+**Administración>Partidas>Procedimientos>compensazione partite (Amministrazione>Partite>Procedure>Compensazione partite)**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Nota (Nota):  
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
 
 :::
 
 ---
 
-La presente procedura, simile alla analoga *Compensazione veloce* (quest'ultima è stata semplificata e, per certi aspetti è pertanto preferibile) presenta una form di ricerca nella quale poter anche ricercare e rivedere le manovre svolte (a differenza della *Compensazione veloce*).
+El presente procedimiento, similar al *compensazione veloce* (este último ha sido simplificado y, por ciertos aspectos, es preferible), presenta un formulario de búsqueda en el cual también se pueden buscar y revisar las maniobras realizadas (a diferencia de la *Compensación rápida*).
 
-Per eseguire una compensazione è pertanto necessario premere il tasto **Nuovo** per procedere.
+Para realizar una compensación, es necesario presionar el botón **nuovo** para continuar.
 
-Il primo campo obbligatorio da impostare è il **Tipo compensazione**, da richiamare tramite la combo box che rinvia all'apposita tabella.
+El primer campo obligatorio a establecer es el **tipo compensazione**, que debe seleccionarse a través del cuadro combinado que remite a la tabla correspondiente.
 
-In tale tabella, oltre al consueto codice e descrizione del tipo in questione, si può configurare una numerazione specifica ed altri parametri che sono fondamentali quando la compensazione interessa non solo le partite aperte, ma anche i saldi contabili (come ad esempio una posizione di cliente e fornitore nei confronti dello stesso soggetto).
-E' obbligatorio, inoltre, selezionare uno dei tre tipi possibili di compensazione dalla relativa combo box:
-- Fatture - note di accredito
-- Cliente - fornitore: (tipologia che, tipicamente, da luogo anche ad una compensazione di saldi contabili)
-- Pagamenti - documenti: utilizzata per chiudere posizioni di partitario aperte a fronte di incassi o pagamenti anticipati
+En dicha tabla, además del habitual código y descripción del tipo en cuestión, se puede configurar una numeración específica y otros parámetros que son fundamentales cuando la compensación involucra no solo las partidas abiertas, sino también los saldos contables (como por ejemplo una posición de cliente y proveedor respecto al mismo sujeto). Es obligatorio, además, seleccionar uno de los tres tipos posibles de compensación del cuadro combinado correspondiente:
+- Facturas - notas de crédito (Fatture - note di accredito)
+- Cliente - proveedor (Cliente - fornitore): (tipología que, típicamente, da lugar también a una compensación de saldos contables)
+- Pagos - documentos (Pagamenti - documenti): utilizada para cerrar posiciones de partidas abiertas a cambio de cobros o pagos anticipados
 
+Los parámetros a establecer son los de la causa contable que se utilizará en la escritura contable generada automáticamente por la compensación, así como los eventuales cuentas a utilizar para generar abatimientos activos o pasivos (en caso de que se desee gestionar un residual con respecto a importes que no coincidan exactamente).
 
-I parametri da impostare sono quelli della causale contabile che sarà utilizzata nella scrittura contabile generata automaticamente dalla compensazione egli eventuali conti da utilizzare per generare degli abbuoni attivi o passivi (nel casi si voglia gestire un residuo rispetto ad importi che non coincidono perfettamente).
+El procedimiento de selección de las partidas es muy similar a la *compensación rápida* y, por lo tanto, se remite a las instrucciones correspondientes.
 
-La procedura di selezione delle partite è molto simile alla *compensazione veloce* e pertanto si rinvia alle relative istruzioni.
+Aquí también están presentes los "cajones" ocultos (pestañas laterales) donde se visualizan las partidas (a diferencia del procedimiento análogo) y una vez seleccionadas (con un doble clic o botón correspondiente de la barra de ribbon) se trasladan a las grillas principales del formulario para luego proceder con la maniobra de compensación.
 
-Anche qui sono presenti i "cassetti" a scomparsa (tab laterali) dove vengono anche visualizzate le partite (a differenza dell'analoga procedura) ed una volta selezionate (con un doppio click o apposito tasto della ribbon bar) vengono riportate nelle griglie principali della form per poi procedere con la manovra di compensazione
+ATENCIÓN, la maniobra se finaliza cuando es contabilizada. El botón de contabilización (que actuará solo sobre el cierre de partidas en caso de que el tipo de compensación no contemple la parte contable) se habilita cuando los valores de las partidas a compensar coinciden. Por lo tanto, si el valor (o residual) de las partidas a compensar no coincide, es necesario modificar el valor de la partida en la columna **importo**; de esta manera, la partida se cerrará por compensación solo por ese valor (por ejemplo, una partida de 2.000 se compensa solo por 1.000 que es el valor de la partida de signo opuesto) y, por lo tanto, permanecerá abierta por el residual. Verifique que el campo **differenza**, en la parte inferior del formulario, quede en cero.
 
-ATTENZIONE, la manovra viene finalizzata quando è contabilizzata. Il pulsante di contabilizzazione (che agirà solo sulla chiusura partite nel caso in cui il tipo di compensazione non preveda la parte contabile) si abilita quando i valori delle partite da compensare coincidono. Pertanto nel caso in cui il valore (o il residuo) delle partite da compensare non coincida, occorre modificare il valore della partita nella colonna **Importo**, in tal modo la partita sarà chiusa per compensazione soltanto per tale valore (ad esempio una partita da 2.000 viene compensata solo per 1.000 che è il valore della partita di segno opposto) e rimarrà dunque aperta per il residuo.
-Verificare che il campo **Differenza**, in basso nella form vada a zero.
-
-Premendo il bottone di contabilizzazione (con possibilità di eseguire il ripristino) saranno generati nella tab successiva (***Contabilizzazione***) i pagamenti a chiusura delle partite e, se il tipo lo prevede, le scritture contabili di compensazione.
+Al presionar el botón de contabilización (con la posibilidad de realizar la restauración), se generarán en la pestaña siguiente (***Contabilización***) los pagos para el cierre de las partidas y, si el tipo lo prevé, las escrituras contables de compensación.

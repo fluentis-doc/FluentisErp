@@ -1,6 +1,6 @@
 ---
-title: Video
+title: video
 sidebar_position: 1
 ---
 
-In questa sezione, dedicata alla formazione, sono stati creati, per ogni area applicativa, dei **percorsi di apprendimento attraverso i video tutorials.**
+En esta sección, dedicada a la formación, se han creado, para cada área de aplicación, **caminos de aprendizaje a través de tutoriales en video (percorsi di apprendimento attraverso i video tutorials).**

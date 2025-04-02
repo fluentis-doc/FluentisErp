@@ -1,343 +1,341 @@
 ---
-title: Inserimento causali di contabilità generale
+title: Ingreso de causales de contabilidad general (Inserimento causali di contabilità generale)
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación en la página enlazada.
 
-Le causali create dalla procedura di Fast Start permettono di eseguire:
+Las causales creadas por el procedimiento de Inicio Rápido permiten realizar:
 
-- Scritture di acquisto e vendita **Italia**
-- Acquisto e vendita in **Reverse charge** in Italia, giroconto acquisti e relativa autofatturazione
-- Scritture di acquisto e vendita **UE**, giroconto acquisti e relativa autofatturazione
-- Scritture di acquisto e vendita **Extra UE** e relativa autofatturazione con giroconto
-- Note di accredito a storno delle precedenti
-- Acquisto e vendita **cespiti**
-- Corrispettivi
-- **Incassi e pagamenti**
-- Portafoglio attivo (emissione e presentazione Ri.Ba e incasso, insoluti)
-- Scritture di prima nota libere
-- Altre scritture in prima nota quali paghe ecc.
-- Giriconto IVA
-- Versamenti imposte e contributi
-- Scritture di rettifica quali ratei e risconti attivi e passivi
-- Ammortamenti
-- Scritture di chiusura e riapertura conti
+- Asientos de compra y venta **Italia**
+- Compra y venta en **reverse charge** en Italia, transferencia de compras y autofacturación relacionada
+- Asientos de compra y venta **UE**, transferencia de compras y autofacturación relacionada
+- Asientos de compra y venta **Fuera de la UE** y autofacturación relacionada con transferencia
+- Notas de crédito que anulan las anteriores
+- Compra y venta de **cespiti**
+- Ingresos
+- **Cobros y pagos**
+- Cartera activa (emisión y presentación de Ri.Ba y cobro, morosidad)
+- Asientos de diario libres
+- Otros asientos en diario como sueldos, etc.
+- Transferencias de IVA
+- Pagos de impuestos y contribuciones
+- Asientos de ajuste como devengos y anticipos activos y pasivos
+- Amortizaciones
+- Asientos de cierre y reapertura de cuentas
 :::
 
-## **1. Testata**
+## **testata**
 
-#### Campi specifici
+#### Campos específicos
 
-**Causale**: rappresenta il codice alfanumerico di 5 caratteri che deve essere univoco.
+**Causal**: representa el código alfanumérico de 5 caracteres que debe ser único.
 
-**Descrizione causale**: rappresenta la descrizione della causale.
+**Descripción de la causal**: representa la descripción de la causal.
 
-**Tipo movimento**: rappresenta il tipo di movimento della registrazione. Si tratta di una tabella fissa interna, non disponibile in modifica all'utente, che suddivide le causali non IVA dalle varie tipologie di movimento IVA.
+**Tipo de movimiento**: representa el tipo de movimiento del registro. Se trata de una tabla fija interna, no modificable por el usuario, que divide las causales sin IVA de las diversas tipologías de movimiento de IVA.
 
-**Tipo documento**: la tabella è precaricata ma può essere modificata/integrata dall'utente. In questa tabella, in particolare, sono d'interesse le righe che prevedono i flag **‘Nota Accredito'** e **‘Nota di variazione'**: per l'Accredito, infatti, la procedura controlla che la sezione IVA sia valorizzata con importi negativi (un controllo di coerenza dei segni, inoltre, viene effettuata sulla contabilizzazione delle note di credito dall'area vendita/acquisto: significa che non possono essere presenti righe con importi positivi e contemporaneamente altre per un altro sottoconto con importi negativi); per la ‘Nota di variazione' la procedura andrà ad attivare, sempre nella sezione IVA della registrazione, un flag di identificazione delle righe relative alle note di variazione e una data di riferimento del documento da rettificare ai fini dell'IVA. Non si confonda questa data con il campo **Comp. IVA**: la nota di accredito (o comunque di variazione) rettificherà l'iva del periodo indicato in quest'ultimo campo. 
+**Tipo de documento**: la tabla está precargada pero puede ser modificada/integrada por el usuario. En esta tabla, en particular, son de interés las filas que prevén los indicadores **‘Nota de Crédito'** y **‘Nota de variación'**: para el Crédito, de hecho, el procedimiento verifica que la sección de IVA esté valorada con montos negativos (también se realiza un control de consistencia de los signos en la contabilización de notas de crédito desde el área de venta/compra: esto significa que no pueden estar presentes filas con montos positivos y simultáneamente otras para un subcuenta diferente con montos negativos); para la ‘Nota de variación', el procedimiento activará, siempre en la sección de IVA del registro, un indicador de identificación de las filas relacionadas con las notas de variación y una fecha de referencia del documento a rectificar a efectos del IVA. No confundir esta fecha con el campo **Comp. IVA**: la nota de crédito (o de variación) rectificará el IVA del período indicado en este último campo.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header/image02.png)
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header/image03.png)
- 
-**Numerazione**: le combo box permettono di abbinare ad ogni causale contabile, rispettivamente per le registrazioni definitive e provvisorie, una particolare numerazione. Questo tipo di gestione è richiesto in alcune localizzazioni estere. Cfr [*Tabella Numerazione Registrazioni contabili* ](/docs/configurations/tables/fluentis-numerations). Se non viene definita una particolare numerazione valida per la causale, di default verrà cercata una numerazione eventualmente impostata nei ** [*Parametri generali di contabilità* ](/docs/configurations/parameters/finance/accounting-parameters/) e in mancanza di un'impostazione sarà letta la tabella generale *Numerazione registrazioni contabili***
 
-**Libri contabili**: combo box che rinvia ad apposita tabella dove definire un codice e descrizione da richiamare poi nella causale al fine di raggruppare e categorizzare le causali stesse. Queste categorie potrebbero essere anche abbinate alle differenti numerazioni di cui al campo precedente (utile per localizzazioni estere dove vengono tenuti separati i libri giornali a seconda del tipo di scrittura contabile). Esempio: gli acquisti potrebbero avere il numeratore a) legato al libro contabile "Acquisti", mentre le vendite il numeratore b) legato al libro "Vendite", le scritture di banca (incassi / pagamenti) il numeratore c) legato al libro "Scritture banca" ecc...
+**numerazione**: las cajas combinadas permiten asignar a cada causal contable, respectivamente para los registros definitivos y provisionales, una numeración particular. Este tipo de gestión es requerido en algunas localizaciones extranjeras. Consulte [*Tabla de Numeración de Registros contables* ](/docs/configurations/tables/fluentis-numerations). Si no se define una numeración particular válida para la causal, por defecto se buscará una numeración que pueda estar configurada en los ** [*Parámetros generales de contabilidad* ](/docs/configurations/parameters/finance/accounting-parameters/) y en ausencia de una configuración, se leerá la tabla general *Numeración de registros contables*.
 
-**Data fine validità**: è possibile bloccare l'utilizzo di una causale contabile a partire da questa data. Non sarà visibile nella lista delle causali dalla data successiva.
+**libri contabili**: caja combinada que se refiere a una tabla específica donde se define un código y descripción que luego se recuperará en la causal para agrupar y categorizar las causales mismas. Estas categorías también podrían estar vinculadas a las diferentes numeraciones mencionadas en el campo anterior (útil para localizaciones extranjeras donde se llevan libros diarios separados según el tipo de escritura contable). Ejemplo: las compras podrían tener el numerador a) vinculado al libro contable "Compras", mientras que las ventas el numerador b) vinculado al libro "Ventas", las escrituras bancarias (cobros/pagos) el numerador c) vinculado al libro "Escrituras bancarias", etc.
 
-**Registro incassi e pagamenti**: NON ATTIVO (identifica le causali da riportare nel registro incassi/settlement della contabilità semplificata professionisti).
+**data fine validità**: es posible bloquear el uso de una causal contable a partir de esta fecha. No será visible en la lista de causales a partir de la fecha posterior.
 
-**Professionisti**: NON ATTIVO (identifica una causale per la contabilità dei professionisti).
+**Registro de cobros y pagos (Registro incassi e pagamenti)**: NO ACTIVO (identifica las causales a incluir en el registro de cobros/settlement de la contabilidad simplificada de profesionales).
 
-### 1.1 Dettaglio attributi 
+**Profesionales (Professionisti)**: NO ACTIVO (identifica una causal para la contabilidad de los profesionales).
 
-#### Campi specifici
+### 1.1 Detalle de atributos (Dettaglio attributi)
 
-**Causale automatica**: al momento del salvataggio di una registrazione basata sulla causale che è in modifica il programma andrà a creare automaticamente una seconda registrazione basata sulla causale indicata in questo campo. Affinché la seconda registrazione sia compilata correttamente si devono rispettare le seguenti logiche di relazione tra le due registrazioni:
+#### Campos específicos
 
-a) il primo caso è quello in cui la prima registrazione è con tipo movimento IVA acquisti IntraCEE e la seconda con Giroconto IVA acquisti IntraCEE, nella quale il legame è dato dalla rilevazione dell'IVA Acquisti anche nel registro Vendite; (allo stesso modo si ha lil caso del reverse charge, utilizzando i tipi movimento IVA acquisti in reverse charge e Giroconto IVA acquisti reverse charge);
+**Causal automática**: al momento de guardar un registro basado en la causal que se está modificando, el programa creará automáticamente un segundo registro basado en la causal indicada en este campo. Para que el segundo registro se complete correctamente, se deben respetar las siguientes lógicas de relación entre los dos registros:
 
-b) il secondo caso è quello in cui la prima registrazione apre una partita mentre la seconda ne opera la chiusura immediata; 
+a) El primer caso es el que la primera registración es de tipo movimiento IVA de compras IntraCEE y el segundo con Giroconto IVA de compras IntraCEE, donde la conexión se da por la registración del IVA de Compras también en el registro de Ventas; (de la misma manera se presenta el caso del reverse charge, utilizando los tipos de movimiento IVA de compras en reverse charge y Giroconto IVA de compras en reverse charge);
 
-c) il terzo caso è relativo alla registrazione di chiusura di una partita nata con tipo movimento ‘IVA vendita a Enti pubblici' per la quale l'IVA è in sospensione, caso in cui si collega una registrazione di Giroconto IVA in sospensione;
+b) El segundo caso es el que la primera registración abre una cuenta mientras que la segunda opera su cierre inmediato; 
 
-d) il quarto caso è l'acquisto con IVA in sospensione, inverso al precedente 
+c) El tercer caso es relativo al registro de cierre de una cuenta nacida con tipo de movimiento ‘IVA venta a Entidades públicas' para la cual el IVA está en suspensión, en este caso se conecta un registro de Giroconto IVA en suspensión;
 
-e) il quinto caso è quello in cui la prima registrazione è IVA, mentre la seconda è valorizzata con la logica dei sottoconti automatici impostati nel piano dei conti 
+d) El cuarto caso es la compra con IVA en suspensión, opuesto al anterior; 
 
-f) quando non sono presenti i casi precedenti il programma cercherà di impostare i dati della seconda registrazione sulla base dei dati IVA della prima; in alternativa la seconda registrazione sarà generata riportando i sottoconti previsti senza alcun valore impostato.
+e) El quinto caso es aquel en que la primera registración es IVA, mientras que la segunda está valorada con la lógica de los subcuentas automáticos establecidos en el plan de cuentas; 
 
-**Tipo autofattura automatica**: vedere la sezione specifica alle [**configurazioni delle autofatture automatiche**](/docs/finance-area/e-invoice/auto-invoice/ledger-templates)
+f) Cuando no están presentes los casos anteriores, el programa tratará de establecer los datos del segundo registro en función de los datos IVA del primero; de forma alternativa, el segundo registro será generado con los subcuentas previstas sin valor establecido.
 
-**Inversione colonne se importo è minore di zero**: È possibile fare in modo che il programma inverta le colonne Dare/Avere di movimentazione sulla base del segno del movimento IVA, tipicamente nel caso di registrazione di note di accredito (di questo campo è consigliato la selezione per tutte le registrazioni IVA).
+**Tipo de autofactura automática**: vea la sección específica sobre [**configuraciones de autofacturas automáticas**](/docs/finance-area/e-invoice/auto-invoice/ledger-templates).
 
-**Avviso**: Il campo è attivo solo se il precedente è stato attivato, consiste nel ritornare all'utente un messaggio di avvertimento dell'inversione del segno. Il flag è ininfluente per causali utilizzate nelle procedure automatiche di contabilizzazione.
+**Inversión de columnas si el monto es menor a cero**: es posible hacer que el programa invierta las columnas de Debe/Haber basándose en el signo del movimiento IVA, típicamente en el caso de registrar notas de crédito (se recomienda la selección de este campo para todos los registros IVA).
 
-**Consenti sottoconti con valori a zero**: con questo flag la procedura:
+**avviso**: el campo está activo solo si el anterior ha sido activado, consiste en devolver al usuario un mensaje de advertencia sobre la inversión del signo. La bandera es irrelevante para las causales utilizadas en los procedimientos automáticos de contabilización.
 
-a) consentirà di inserire manualmente righe con importo sia dare che avere uguale a zero 
+**Permitir subcuentas con valores a cero (Consenti sottoconti con valori a zero)**: con esta bandera, el procedimiento:
 
-b) al momento del salvataggio della registrazione NON andrà a cancellare le righe riportate dalla causale e non valorizzate dall'utente nella registrazione 
+a) permitirá ingresar manualmente líneas con monto tanto de debe como de haber igual a cero; 
 
-c) le righe che valorizzano nel libro giornale il debito/credito IVA questo flag comporterà comunque la cancellazione dell'importo a zero ma solo a condizione che non sia stato anche inserito il flag ‘Consenti Iva 0 in LG' nella tabella delle [Aliquote modalità IVA](/docs/configurations/tables/finance/vat-rates).
+b) al momento de guardar el registro NO eliminará las líneas reportadas por la causal que no fueron valorizadas por el usuario en el registro; 
 
-#### ESEMPI:
+c) las líneas que valorizan en el libro diario la deuda/crédito IVA, esta bandera comportará la eliminación del monto a cero solo si no se ha activado también la bandera ‘Permitir IVA 0 en LG' en la tabla de [Tipos de IVA](/docs/configurations/tables/finance/vat-rates).
+
+#### EJEMPLOS:
 
 <details>
- 
-<summary>Clicca per l'esempio</summary>
 
-- segliendo di impostare il flag disattivato si può sfruttare la funzionalità per inserire nel modello di registrazione proposto dalla causale tutti i conti potenzialmente utili i quali, se non verranno movimentati, non saranno poi mantenuti al momento del salvataggio della registrazione. Si pensi ad esempio alle scritture dei dipendenti, buste paga ecc... per i quali non sempre si utilizzano gli stessi conti ogni mese benchè i conti possibili siano svariati.
+<summary>Clic aquí para ejemplos</summary>
 
-- scegliendo di mantenere il flag attivo potranno essere inseriti sottoconti con movimento a zero, situazione che si verifica spesso registrando le utenze telefoniche o elettriche, ad esempio. 
+- Al elegir establecer la bandera desactivada, se puede aprovechar la funcionalidad para incluir en el modelo de registro propuesto por la causal todas las cuentas potencialmente útiles las cuales, si no son movidas, no serán mantenidas al momento de guardar el registro. Pensemos, por ejemplo, en los escritos de los empleados, nóminas, etc. para los cuales no siempre se utilizan las mismas cuentas cada mes aunque las cuentas posibles sean diversas.
 
-**Prototipo della registrazione**: questa è la sezione fondamentale (ma non obbligatoria) della causale di contabilità, nella quale va caricato lo schema tipico del tipo di registrazione contabile da gestire. È possibile inserire anche codici generici di conto (es. il conto fornitori), che saranno aggiornati automaticamente dal programma sulla base della lista conti clienti/fornitori inseriti nei Parametri di contabilità generale. Questi sottoconti, così come le sezioni dare/avere, guideranno le valorizzazioni contabili, che saranno comunque modificabili nel corso del caricamento manuale della registrazione.
+- Al elegir mantener la bandera activa, se podrán insertar subcuentas con movimiento a cero, situación que ocurre frecuentemente al registrar servicios públicos de telefonía o electricidad, por ejemplo. 
+
+**Prototipo del registro (Prototipo della registrazione)**: esta es la sección fundamental (pero no obligatoria) de la causal de contabilidad, en la cual se debe cargar el esquema típico del tipo de registro contable a gestionar. También es posible ingresar códigos genéricos de cuenta (por ejemplo, la cuenta de proveedores), que serán actualizados automáticamente por el programa según la lista de cuentas de clientes/proveedores ingresada en los Parámetros de contabilidad general. Estos subcuentas, así como las secciones debe/haber, guiarán las valorizaciones contables, que serán, sin embargo, modificables durante la carga manual del registro.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image02.png)
- 
+
 </details>
 
-#### [Tipo importo]{#amount-type}
+#### [Tipo de importe (Tipo importo)]{#amount-type}
 
-Meritano spiegazioni specifiche i codici di Tipo importo, fondamentali per valorizzare automaticamente il libro giornale sulla base dei dati iva e di partitario movimentati nella registrazione. In particolare:
+Se merece explicaciones específicas los códigos de Tipo de importe, fundamentales para valorar automáticamente el libro diario según los datos de IVA y de subcuenta movidos en el registro. En particular:
 
-**Manuale**: indica che la riga sarà valorizzata manualmente dall'utente all'atto della registrazione;
+**manuale**: indica que la línea será valorada manualmente por el usuario en el momento de la registración;
 
-**Imponibile sottoconto**: indica che la riga sarà aggiornata per ogni codice di sottoconto inserito nella sezione Iva con l'importo ottenuto dall'imponibile della/e riga/e stessa/e; l'uso di questo tipo importo è **consigliato tipicamente per tutti i ricavi inseriti nelle causali di vendita**;
+**imponibile sottoconto**: indica que la línea será actualizada por cada código de subcuenta ingresado en la sección IVA con el monto obtenido de la base imponible de la/s línea/s misma/s; el uso de este tipo de importe es **recomendado típicamente para todos los ingresos ingresados en las causales de venta**;
 
-**Totale imponibile**: indica che la riga sarà aggiornata con il totale imponibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito. ESEMPI: Vendita con regime dello split payment o vendita intra comunitaria; 
+**totale imponibile**: indica que la línea será actualizada con el total imponible del registro: no se considerará el código de cuenta/subcuenta ingresado. EJEMPLOS: Venta bajo el régimen de pago dividido o venta intra comunitaria; 
 
-**Totale imposta**: indica che la riga sarà aggiornata con il totale imposta della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
+**totale imposta**: indica que la línea será actualizada con el total impuesto del registro: no se considerará el código de cuenta/subcuenta ingresado;
 
-**Imposta detraibile**: indica che la riga sarà aggiornata con il totale dell'imposta detraibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
+**imposta detraibile**: indica que la línea será actualizada con el total del impuesto deducible del registro: no se considerará el código de cuenta/subcuenta ingresado;
 
-**Tot. Doc/Registrazione**: indica che la riga sarà aggiornata con il codice del sottoconto intestatario della registrazione (se conforme alle combinazioni inserite nei Parametri di contabilità) per il valore totale del documento/registrazione;
+**tot. doc/registrazione**: indica que la línea será actualizada con el código de la subcuenta responsable del registro (si es conforme a las combinaciones ingresadas en los Parámetros de contabilidad) por el valor total del documento/registro;
 
-**Imponibile+Imposta Indetraibile**: indica che la riga sarà aggiornata con il totale imponibile sommato del totale imposta indetraibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito; Tipo di movimento di scarsa applicazione - conviene utilizzare  **Imp. Sott.+Imposta indetr. Sott**.
+**imponibile+imposta indetraibile**: indica que la línea será actualizada con la suma del total imponible y el total impuesto indeducible del registro: no se considerará el código de cuenta/subcuenta ingresado; tipo de movimiento de escasa aplicación - se recomienda utilizar **Imp. Sott.+Imposta indetr. Sott**.
 
-**50% Imponibile**: indica che la riga sarà aggiornata con il 50% del totale imponibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
+**50% imponibile**: indica que la línea será actualizada con el 50% del total imponible del registro: no se considerará el código de cuenta/subcuenta ingresado;
 
-**50% Imponibile+Iva indetraibile**: indica che la riga sarà aggiornata con il 50% del totale imponibile della registrazione sommato del totale dell'iva indetraibile della stessa: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
+**50% imponibile+iva indetraibile**: indica que la línea será actualizada con el 50% del total imponible del registro sumado al total del IVA indeducible del mismo: no se considerará el código de cuenta/subcuenta ingresado;
 
-**50% Impon.+ 50% Iva Indetraibile**: indica che la riga sarà aggiornata con il 50% del totale imponibile della registrazione sommato del 50% dell'iva indetraibile della stessa: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
+**50% Imponible + 50% IVA Indeducible (50% Impon.+ 50% Iva Indetraibile)**: indica que la línea será actualizada con el 50% del total imponible del registro sumado al 50% del IVA indeducible del mismo: no se considerará el código de cuenta/subcuenta ingresado;
 
-CREATI PER RAGIONI FISCALI E DA CONSIDERARE OBSOLETI
+CREADOS POR RAZONES FISCALES Y A CONSIDERAR OBSOLETOS
 
-**Imp. Sott.+Imposta indetr. Sott**.: indica che la riga sarà aggiornata per ogni codice di sottoconto inserito nella sezione IVA con l'importo ottenuto dalla somma dell'imponibile della/e riga/e stessa/e e della relativa imposta indetraibile; **l'uso di questo tipo importo è consigliato tipicamente per tutti i costi inseriti nelle causali d'acquisto;**
+**Imp. Sott. + Impuesto indeducible (Imp. Sott.+Imposta indetr. Sott)**: indica que la línea será actualizada por cada código de subcuenta ingresado en la sección IVA con el monto obtenido de la suma de la base imponible de la/s línea/s misma/s y del impuesto deducible correspondiente; **el uso de este tipo de importe es recomendable típicamente para todos los costos ingresados en las causales de compra;**
 
-**Arrotondamenti Attivi**: indica che la riga sarà aggiornata con l'importo degli arrotondamenti attivi; l'uso è da collegarsi a causali di chiusura partite;
+**arrotondamenti attivi**: indica que la línea será actualizada con el importe de los redondeos activos; su uso debe relacionarse con causales de cierre de cuentas;
 
-**Arrotondamenti Passivi**: indica che la riga sarà aggiornata con l'importo degli arrotondamenti passivi; l'uso è da collegarsi a causali di chiusura partite;
+**arrotondamenti passivi**: indica que la línea será actualizada con el importe de los redondeos pasivos; su uso debe relacionarse con causales de cierre de cuentas;
 
-**Importo Sottoconto**: indica che la riga sarà aggiornata con l'importo dei pagamenti partite inserite nella registrazione, secondo il segno del pagamento stesso;
+**importo sottoconto**: indica que la línea será actualizada con el importe de los pagos de las cuentas incluidas en el registro, según el signo del pago mismo;
 
-**Utile Diff. Cambi**: indica che la riga sarà aggiornata con il sottoconto di utile della divisa di riferimento della differenza cambi, per l'importo ottenuto secondo il differenziale di valorizzazione tra cambio storico e cambio di chiusura della partita; in caso sia stato impostato il flag di chiusura al cambio storico la riga non avrà valorizzazione alcuna;
+**utile diff. cambi**: indica que la línea será actualizada con la subcuenta de utilidad de la divisa de referencia de la diferencia cambiaria, por el importe obtenido según el diferencial de valoración entre el tipo de cambio histórico y el tipo de cierre de la cuenta; en caso de que se haya establecido la bandera de cierre al tipo de cambio histórico, la línea no tendrá ninguna valoración;
 
-**Perd. Diff. Cambi**: indica che la riga sarà aggiornata con il sottoconto di perdita della divisa di riferimento della differenza cambi, per l'importo ottenuto secondo il differenziale di valorizzazione tra cambio storico e cambio di chiusura della partita; in caso sia stato impostato il flag di chiusura al cambio storico la riga non avrà valorizzazione alcuna;
+**Pérdida Diferencia de Cambio (Perd. Diff. Cambi)**: indica que la línea será actualizada con la subcuenta de pérdida de la divisa de referencia de la diferencia cambiaria, por el importe obtenido según el diferencial de valoración entre el tipo de cambio histórico y el tipo de cierre de la cuenta; en caso de que se haya establecido la bandera de cierre al tipo de cambio histórico, la línea no tendrá ninguna valoración;
 
-**Automatico**: tipo importo utilizzato in alcune procedure di contabilizzazione automatica.
+**automatico**: tipo de importe utilizado en algunos procedimientos de contabilización automática.
 
-*ESEMPIO*: Si imposta nelle causali di vendita cespite per gestire la plus-minusvalenza, per il resto è impostato dal sistema nelle procedure di contabilizzazione automatica.
+*EJEMPLO*: Se establece en las causales de venta de activos para gestionar la plusvalía/minusvalía; para el resto, lo configura el sistema en procedimientos de contabilización automática.
 
+La cuadrícula se completa con:
 
-La griglia si completa con: 
-
-- un campo di codifica delle contropartite (ne è sconsigliato l'uso: in contabilità è già presente una stampa - "Estratto conto con contropartite" - che visualizza le contropartite indipendentemente da questa impostazione). Inoltre attivando il flag che permtte di visualizzare i sottoconti di contropartita (tab Dettaglio Registrazione)
+- un campo de codificación de las contrapartidas (se desaconseja su uso: en contabilidad ya está presente una impresión - "Extracto de cuenta con contrapartidas" - que visualiza las contrapartidas independientemente de esta configuración). Además, al activar la bandera que permite visualizar las subcuentas de contrapartida (pestaña Detalle de Registro)
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image03.png)
 
-questi campi saranno gestiti in automatico; per questo motivo non è consigliato gestirli manualmente imponendoli nella causale.
+estos campos serán gestionados automáticamente; por esta razón no se recomienda gestionarlos manualmente imponiéndolos en la causal.
 
-In corripondenza dei conti iva a credito (o a debito) e costo (o ricavo), ad esempio, vengono riportate le indicazioni del fornitore (o cliente), mentre sul fornitore (o cliente) viene riportato il conto di contropartita del costo o ricavo, nel caso in cui ci siano più conti di contropartita viene riportato quello di importo maggiore (gli altri eventuali vengono ignorati).
+En correspondencia de las cuentas de IVA a crédito (o a débito) y costo (o ingreso), por ejemplo, se reportan las indicaciones del proveedor (o cliente), mientras que en el proveedor (o cliente) se reporta la cuenta de contrapartida del costo o ingreso; en caso de que haya más cuentas de contrapartida, se reporta la de mayor importe (las demás se ignoran).
 
-- un campo di note di dettaglio: in questo campo è possibile utilizzare tutti i codici riportati alla base della maschera.  
+- un campo de notas de detalle: en este campo es posible utilizar todos los códigos que se encuentran al pie del formulario. 
 
-**Per causali di chiusura partite** inserire in corrispondenza del conto clienti/fornitori generico i **codici (8) o (9)** in concomitanza con il **flag ‘Rif. doc. partita in pag.'** (situato nel tab Dettaglio Registrazione) per annotare in contabilità i riferimenti dei documenti pagati/incassati.
+**Para causales de cierre de cuentas**, ingrese en correspondencia con la cuenta de clientes/proveedores genéricos los **códigos (8) o (9)** en concomitancia con la **bandera ‘Ref. doc. cuenta en pag.'** (situada en la pestaña Detalle de Registro) para anotar en contabilidad las referencias de los documentos pagados/incassados.
 
-Prestare attenzione che il conto generico presente nella cusale (esempio "Fornitori Italia") sia effettivamente gestito nei  [Parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)  in abbinamento al tipo conto corretto (es. FIT nel db standard Fluentis). Controllare inoltre che il tipo importo in corrispondenza della riga del cliente o fornitore sia correttamente settato su Importo sottoconto.
+Prestar atención a que la cuenta genérica presente en la causal (ejemplo "Proveedores Italia") sea efectivamente gestionada en los [Parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters) en combinación con el tipo de cuenta correcto (ej. FIT en la base de datos estándar de Fluentis). También verifique que el tipo de importe en correspondencia con la línea del cliente o proveedor esté correctamente configurado en Importe de subcuenta.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image04.png)
 
-**Imposta detr. e sottoconto IVA**: tipo importo utilizzato per valorizzare la riga relativa all'IVA con l'importo detraibile dell'IVA e con il sottoconto individuato secondo il ‘Tipo contabilizzazione IVA' associato in via prioritaria all'anagrafica intestataria della registrazione o di default nei ‘Parametri di contabilità generale'.
+**Impuesto deducible y subcuenta de IVA (Imposta detr. e sottoconto IVA)**: tipo de importe utilizado para valorar la línea relacionada con el IVA con el importe deducible del IVA y con la subcuenta determinada según el 'Tipo de contabilización de IVA' asociado prioritariamente a la base del registro acogido o de forma predeterminada en los 'Parámetros de contabilidad general'.
 
-Impostazione non utilizzata in Italia, utile per localizzazioni estere, esempio Croazia, per legare il conto dell'iva all'aliquota utilizzata (esempio se viene utilizzata l'aliquota IVA 10% verrà associato il conto "iva acquisti al 10%", quindi specifico per quell'aliquota anzichè un conto, esempio "iva a credito", generico come in Italia per tutte le aliquote).
+Configuración no utilizada en Italia, útil para localizaciones extranjeras, ejemplo Croacia, para vincular la cuenta del IVA a la tasa utilizada (ejemplo: si se utiliza la tasa de IVA del 10%, se asociará la cuenta "IVA compras al 10%", específica para esa tasa en lugar de una cuenta, ejemplo "IVA a crédito", genérica como en Italia para todas las tasas).
 
-**Descrizione parametrica della registrazione contabile**: all'interno di questa si possono codificare delle descrizioni standard che vengono compilate dal programma attraverso i vari codici indicati nella legenda posta immediatamente sopra al compo, descrizioni che saranno riportate nelle stampe contabili e in particolare negli Estratti conto e nel Libro giornale. 
+**descrizione parametrica della registrazione contabile**: dentro de esta se pueden codificar descripciones estándar que serán completadas por el programa a través de los diversos códigos indicados en la leyenda colocada inmediatamente encima del campo; estas descripciones serán reportadas en los informes contables y, en particular, en los Extractos de cuenta y en el Libro diario.
 
-Anche per ogni riga di movimentazione della sezione *Dettaglio conti / sottoconti - Prototipo registrazione* è possibile, come già illustrato sopra, codificare delle note preimpostate così come per la Descrizione generale. 
+También para cada línea de movimiento de la sección *Detalle de cuentas / subcuentas - Prototipo de registro* es posible, como se ha ilustrado anteriormente, codificar notas preestablecidas así como para la Descripción general. 
 
-**ATTENZIONE**: in particolare i codici (8) e (9) sono gestiti solo per la descrizione specifica di riga e non sono considerati nella descrizione generale della registrazione di cui al campo in commento.
+**ATENCIÓN**: en particular, los códigos (8) y (9) solo se gestionan para la descripción específica de línea y no son considerados en la descripción general del registro de la cual se refiere el campo en comentario.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image05.png)
 
-### 1.2 Dettagli registrazione
+### 1.2 Detalles del registro (Dettagli registrazione)
 
-**Registro IVA**: il campo, obbligatorio solo per causali con tipo movimento IVA, consente di assegnare il registro IVA di riferimento alla causale in gestione.
+**Registro IVA**: el campo, obligatorio solo para causales con tipo de movimiento IVA, permite asignar el registro IVA de referencia a la causal en gestión.
 
-**Data competenza IVA**: il campo consente di definire quale sia la data di competenza da assegnare al movimento IVA: il programma propone la data registrazione per i movimenti su registri acquisti e la data documento per movimenti su registri vendite. Si raccomanda di impostare la data competenza come data registrazione anche per le causali di giroconto IVA intra cee e reverse charge. 
+**data competenza iva**: el campo permite definir cuál es la fecha de competencia que se debe asignar al movimiento IVA: el programa propone la fecha de registro para los movimientos en registros de compras y la fecha del documento para movimientos en registros de ventas. Se recomienda establecer la fecha de competencia como fecha de registro incluso para las causales de giroconto IVA intra CEE y reverse charge. 
 
-E' fondamentale, infatti, controllare che le due causali, di acquisto e di giroconto, che sono coinvolte in questi tipi di "doppia registrazione", presentino il medesimo settaggio per evitare che l'iva detratta e l'iva esigibile in contropartita possano assumere periodi di competenza differenti. Lo vogliamo evidenziare in modo particolare perché, la causale di giroconto, essendo una causale iva lato vendite, propone di default il criterio data documento che va dunque modificato.
+Es fundamental, de hecho, verificar que las dos causales, de compra y giroconto, que están involucradas en estos tipos de "doble registración", presenten la misma configuración para evitar que el IVA deducido y el IVA exigible en contrapartida puedan tener periodos de competencia diferentes. Queremos resaltar esto en particular porque, la causal de giroconto, al ser una causal de IVA del lado de ventas, propone por defecto el criterio de fecha documento que debe ser modificado.
 
-#### Opzioni tipo documento
+#### Opciones del tipo de documento
 
-**Tipo/N. documento**: l'impostazione di questo flag rende obbligatorio il campo del numero documento per il salvataggio della registrazione basata su questa causale.
+**Tipo/N. documento (Tipo/N. documento)**: la configuración de esta bandera hará obligatorio el campo del número del documento para el guardado del registro basado en esta causal.
 
-**Data documento**: l'impostazione di questo flag rende obbligatorio il campo della data documento per il salvataggio della registrazione basata su questa causale.
+**data documento**: la configuración de esta bandera hará obligatorio el campo de la fecha del documento para el guardado del registro basado en esta causal.
 
-**N. Doc. = Prot. IVA**: l'impostazione di questo flag implica che il programma proporrà il numero del documento sulla base del numero di protocollo IVA progressivo. Il campo, quindi, non va impostato per registrazioni d'acquisto per le quali il numero documento e protocollo non hanno alcun legame reciproco; per quanto riguarda le vendite, invece, l'uso è suggerito solo per causali di registrazioni effettuate manualmente direttamente in contabilità generale: l'impostazione di questo flag è sconsigliata per causali impostate nei tipi fatture di vendita e utilizzate nella contabilizzazione fatture.
+**N. Doc. = Prot. IVA (N. Doc. = Prot. IVA)**: la configuración de esta bandera implica que el programa propondrá el número del documento basado en el número de protocolo IVA progresivo. Por tanto, el campo no debe configurarse para registros de compras donde el número del documento y el protocolo no tienen ninguna relación mutua; en cuanto a las ventas, en cambio, su uso es sugerido solo para causales de registros realizados manualmente directamente en contabilidad general: la configuración de esta bandera no se recomienda para causales configuradas en los tipos de facturas de venta y utilizadas en la contabilización de facturas.
 
-**Prot. IVA = N. doc**: l'impostazione di questo flag implica che il programma cercherà di attribuire il protocollo iva sulla sulla base del numero di documento. Il campo, quindi, non va impostato per registrazioni d'acquisto per le quali il numero documento e protocollo non hanno alcun legame reciproco; per quanto riguarda le vendite, invece, **l'uso è suggerito per tutte le causali impostate nei tipi fatture di vendita e utilizzate quindi nella contabilizzazione automatica fatture**: la possibilità di utilizzare questa impostazione dipende dalla certezza che la numerazione dei tipi fatture sia la stessa per tutti i documenti da registrare nello stesso Registro IVA, diversamente si verrebbero a creare dei "salti" (o dei "doppioni" con conseguente rifiuto di salvataggio) nella protocollazione.
+**Prot. IVA = N. doc (Prot. IVA = N. doc)**: la configuración de esta bandera implica que el programa intentará atribuir el protocolo IVA basado en el número del documento. Por tanto, el campo no debe configurarse para registros de compras donde el número del documento y el protocolo no tienen ninguna relación mutua; en cuanto a las ventas, en cambio, **su uso es sugerido para todas las causales configuradas en los tipos de facturas de venta y utilizadas por lo tanto en la contabilización automática de facturas**: la posibilidad de utilizar esta configuración depende de la certeza de que la numeración de los tipos de facturas sea la misma para todos los documentos a registrar en el mismo Registro IVA, de lo contrario se generarían "saltos" (o "duplicados" con el consiguiente rechazo de guardado) en la protocolización.
 
-L'utilità di questa funzione nella contabilizzazione automatica delle fatture consiste nella possibilità di contabilizzare senza porre attenzione all'ordine di protocollazione: esempio posso contabilizzare la fattura nr. 2 e poi la nr. 1 ottenendo una corretta protocollazione che associa la fattura nr. 1 al protocollo 1 ecc...
+La utilidad de esta función en la contabilización automática de las facturas consiste en la posibilidad de contabilizar sin prestar atención al orden de protocolización: por ejemplo, puedo contabilizar la factura nr. 2 y luego la nr. 1 obteniendo una correcta protocolización que asocia la factura nr. 1 al protocolo 1, etc.
 
-A fine periodo IVA (mese o trimestre) basterà dunque accertarsi di aver contabilizzato tutte le fatture emesse.
+Al final del periodo IVA (mes o trimestre), basta asegurarse de haber contabilizado todas las facturas emitidas.
 
-#### Opzioni tipo registrazione
+#### Opciones del tipo de registro
 
-**Apertura partite**: la presenza di questo flag farà comparire il tabulatore di creazione dei partitari nella registrazione contabile che utilizzerà questa causale; l'impostazione di questo flag è quindi consigliata per tutte le registrazioni di tipo IVA e in generale per poter gestire lo scadenzario clienti/fornitori. Il flag può essere impostato anche per causali che rilevano un pagamento anticipato: in questo caso sarà aperta una partita di segno inverso da compensare successivamente con le partite che si creeranno al momento della rilevazione contabile del documento fiscale successivo.
+**apertura partite**: la presencia de esta bandera hará aparecer la pestaña de creación de cuentas por cobrar en el registro contable que utilizará esta causal; la configuración de esta bandera se recomienda para todos los registros de tipo IVA y en general para poder gestionar el calendario de clientes/proveedores. La bandera también se puede activar para causales que registran un pago anticipado: en este caso se abrirá una cuenta con signo inverso que se compensará posteriormente con las cuentas que se crearán al momento de la registración contable del documento fiscal posterior.
 
-**Dett. mov. in partite**: con questo flag il programma inserirà nelle **note delle partite** i testi inseriti nel campo 'Dettaglio movimento' della riga di contabilità d'origine della partita.![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail/image02.png)
+**Detalle de movimiento en cuentas (Dett. mov. in partite)**: con esta bandera, el programa insertará en las **notas de las cuentas** los textos ingresados en el campo 'Detalle de movimiento' de la línea de contabilidad de origen de la cuenta.![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail/image02.png)
 
-Il flag è attivo solo quando il precedente *Apertura partite* è stato impostato.
+La bandera está activa solo cuando la anterior *Apertura de cuentas* està configurada.
 
-**Apertura per ogni riga mov.**: con questo flag il programma inserirà, una partita per ogni riga movimento, nella quale è presente un sottoconto con il flag di gestione partite aperte impostato. Il flag è attivo solo quando il precedente *Apertura partite* è stato impostato.
+**Apertura por cada línea de movimiento (Apertura per ogni riga mov.)**: con esta bandera, el programa insertará una cuenta por cada línea de movimiento, en la que está presente una subcuenta con la bandera de gestión de cuentas abiertas configurada. La bandera está activa solo cuando la anterior *Apertura de cuentas* está activada.
 
-Il flag si può attivare solo per causali non iva (esempio apertura conti) per ogni riga movimento fornitore o cliente apre una partita e riporta le indicazioni di pagamento che prende in anagrafica (serve nel caso in cui si apra più di una riga per un singolo cliente o fornitore).
+La bandera solo se puede activar para causales no IVA (ejemplo apertura de cuentas) y por cada línea de movimiento de proveedor o cliente abre una cuenta y reporta las indicaciones de pago que toma de la base. (se requiere en caso de que se abra más de una línea para un solo cliente o proveedor).
 
-**Chiusura partite**: la presenza di questo flag farà comparire il tabulatore di chiusura dei partitari nella registrazione contabile che utilizzerà questa causale. Si tratta tipicamente di tutte le registrazioni pagamento/incasso non IVA, ma può anche essere impostato in combinazione con apertura partite e compensazione partite per le causali delle note di credito e in generale per tutte le registrazioni che prevedono un'apertura partite con una contestuale compensazione di una situazione pregressa.
+**chiusura partite**: la presencia de esta bandera hará aparecer la pestaña de cierre de cuentas en el registro contable que utilizará esta causal. Se trata típicamente de todos los registros de pago/cobro no IVA, pero también puede configurarse en combinación con apertura de cuentas y compensación de cuentas para las causales de notas de crédito y en general para todos los registros que prevean una apertura de cuentas con una compensación simultánea de una situación previa.
 
-**Usa cambio storico**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, l'applicativo procederà a chiudere i partitari con il cambio storico di apertura, senza alcuna rilevazione automatica delle differenze di cambio (permettendo quindi di gestirle eventualmente in maniera manuale).
+**usa cambio storico**: con esta bandera, disponible solo en caso de que se haya configurado el cierre de cuentas, la aplicación procederá a cerrar las cuentas con el tipo de cambio histórico de apertura, sin ningún registro automático de las diferencias de cambio (permitiendo así gestionarlas eventualmente de manera manual).
 
-**Ragg. pag. in libro giornale**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, l'applicativo procederà a raggruppare in un unico movimento di contabilità tutti gli importi di chiusura partite legati ad uno stesso sottoconto (in particolare, raggrupperà i movimenti di stesso segno e stessa divisa).
+**Agrupar pagos en libro diario (Ragg. pag. in libro giornale)**: con esta bandera, disponible solo en caso de que se haya configurado el cierre de cuentas, la aplicación procederá a agrupar en un único movimiento contable todos los importes de cierre de cuentas relacionados con un mismo subcuenta (en particular, agrupará los movimientos del mismo signo y misma divisa).
 
-**Escludi da provv. maturate**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, le chiusure partite effettuate con questa causale contabile non saranno ritenuti validi per il calcolo delle provvigioni maturate per agenti con calcolo di tipo 'Pagamento avvenuto'.
+**Excluir de comisiones devengadas (Escludi da provv. maturate)**: con esta bandera, disponible solo en caso de que se haya configurado el cierre de cuentas, los cierres de cuentas realizados con esta causal contable no serán considerados válidos para el cálculo de las comisiones devengadas para agentes con cálculo de tipo 'Pago realizado'.
 
-**Rif. doc. partita in pag.**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, l'applicativo procederà a gestire i codici (8) e (9) di rilevazione dei riferimenti delle chiusure partite nelle descrizioni di dettaglio dei movimenti.
+**Ref. documento de cuenta en pago (Rif. doc. partita in pag.)**: con esta bandera, disponible solo en caso de que se haya configurado el cierre de cuentas, la aplicación procederá a gestionar los códigos (8) y (9) de registro de las referencias de los cierres de cuentas en las descripciones de detalle de los movimientos.
 
-**Compens. partite**: con questo flag, disponibile solo nel caso siano stati impostati entrambi i flag di apertura e chiusura partite, la procedura attiverà la possibilità di procedere ad una compensazione partite all'interno della registrazione basata su questa causale: questa combinazione di flag viene consigliata per tutte le causali collegate a documenti di tipo note di credito.
+**Compensación de cuentas (Compens. partite)**: con esta bandera, disponible solo en caso de que se hayan configurado ambas banderas de apertura y cierre de cuentas, el procedimiento activará la posibilidad de proceder a una compensación de cuentas dentro del registro basado en esta causal: esta combinación de banderas se recomienda para todas las causales vinculadas a documentos de tipo notas de crédito.
 
-**Avviso comp.**: con questo flag si attiva, al salvataggio della registrazione contabile, un controllo che avvisa l'utente sulla presenza di partite da compensare.
+**Aviso de compensación (Avviso comp.)**: con esta bandera se activa, al guardar el registro contable, un control que advierte al usuario sobre la existencia de cuentas por compensar.
 
-**Ragg. partite**: il flag attiva la gestione dei raggruppamenti partite invece che la gestione standard ad apertura/chiusura partite, attraverso un tabulatore specifico di rilevazione nella registrazione contabile.
+**ragg. partite**: la bandera activa la gestión de agrupaciones de cuentas en lugar de la gestión estándar de apertura/cierre de cuentas, a través de una pestaña específica de registro en el registro contable.
 
-**Crea Gruppo**: il flag, se attivo ed in combinazione con il flag precedente, crea automaticamente un gruppo partite nei raggruppamenti partite, nel quale fa confluire le partite della registrazione (da attivarsi nelle causali delle fatture di acquisto/vendita).
+**crea gruppo**: la bandera, si está activa y en combinación con la bandera anterior, crea automáticamente un grupo de cuentas en las agrupaciones de cuentas, en el cual se agrupan las cuentas del registro (debe activarse en las causales de las facturas de compra/venta).
 
-**Ragg. partite – tipo pagamento**: è la tipologia di pagamento da assegnare ai movimenti dei raggruppamenti partite rilevati con questa causale.
+**Agrupaciones de cuentas - tipo de pago (Ragg. partite – tipo pagamento)**: es la tipología de pago a asignar a los movimientos de las agrupaciones de cuentas registradas con esta causal.
 
-**Progetti**: (ex Commesse): l'attivazione di questo flag farà comparire il campo *Progetto* nella testata della registrazione oltre ai campi di dettaglio el corpo della registrazione per il collegamento dei progetti (commesse) con i movimenti contabili di dettaglio.
+**progetti**: (ex Comisiones): la activación de esta bandera hará aparecer el campo *Proyecto* en el encabezado del registro, además de los campos de detalle en el cuerpo del registro para vincular los proyectos (comisiones) con los movimientos contables de detalle.
 
-Per ulteriori dettagli vedere **[qui](/docs/finance-area/ledger-records/records/ledger-record)**
+Para más detalles, consulte **[aquí](/docs/finance-area/ledger-records/records/ledger-record)**.
 
-**Centri di costo**: la presenza di questo flag farà comparire il tabulatore di gestione della valorizzazione centri di costo nelle registrazioni contabili.
+**centri di costo**: la presencia de esta bandera hará aparecer la pestaña de gestión de valorización de centros de costo en los registros contables.
 
-**Centri di profitto**: la presenza di questo flag farà comparire il tabulatore di gestione della valorizzazione centri di profitto nelle registrazioni contabili.
+**centri di profitto**: la presencia de esta bandera hará aparecer la pestaña de gestión de valorización de centros de beneficio en los registros contables.
 
-**Gestione macchina**: NON ATTIVATO il flag visualizzerà in contabilità, nella scheda analitica, una griglia di valorizzazione dei costi/ricavi agli automezzi aziendali.
+**gestione macchina**: NO ACTIVADO, la bandera mostrará en contabilidad, en la ficha analítica, una cuadrícula de valorización de costos/ingresos para los vehículos de la empresa.
 
-**Cespiti**: la presenza di questo flag farà comparire il tabulatore di gestione delle schede cespiti nella registrazione contabile.
+**cespiti**: la presencia de esta bandera hará aparecer la pestaña de gestión de las tarjetas de activos en el registro contable.
 
-**Tipo operazione**: si tratta del tipo di operazione da proporre di default per i nuovi movimenti rilevati all'interno della scheda cespiti in contabilità.
+**tipo operazione**: se trata del tipo de operación a proponer por defecto para los nuevos movimientos registrados dentro de la ficha de activos en contabilidad.
 
-**Aggiornamento saldi**: flag impostato di default.
+**aggiornamento saldi**: bandera establecida por defecto.
 
-**Descr. mov. in giornale e pagamenti**: con questo flag la procedura andrà a copiare la descrizione generale della registrazione in tutte le descrizioni di dettaglio dei movimenti e anche nelle note dei pagamenti.
+**Descripción. movimiento en diario y pagos (Descr. mov. in giornale e pagamenti)**: con esta bandera, el procedimiento copiará la descripción general de la registración en todas las descripciones de detalle de los movimientos y también en las notas de los pagos.
 
-**Provvigioni**: il flag attiva un tabulatore specifico all'interno delle registrazioni contabili per gestire i dati di calcolo delle provvigioni dal modulo amministrazione (questo modulo, recentemente introdotto, opera in alternativa rispetto alla gestione provvigioni dal modulo vendite, ma non lo sostituisce rimanendo quest'ultimo comunque attivo).
+**provvigioni**: la bandera activa una pestaña específica dentro de los registros contables para gestionar los datos de cálculo de comisiones desde el módulo de administración (este módulo, recientemente introducido, opera como alternativa al manejo de comisiones desde el módulo de ventas, pero no lo reemplaza, ya que este último sigue activo).
 
-**Intrastat**: il flag attiva un tabulatore specifico all'interno delle registrazioni contabili per gestire i dati, provenienti dalla fattura d'acquisto o di vendita contabilizzata automaticamente tramite l'apposita procedura, oppure inseriti al momento dell'inserimento della scrittura contabile di prima nota, e relativi alla creazione dei modelli intrastat. I dati così gestiti saranno acquisiti nella procedura di creazione dei modelli intrastat tramite la procedura *Acquisizione delle registrazioni contabili.* Si ricorda che è presenta in alternativa la procedura di *acquisizione dalle fatture* che non interagisce con i movimenti contabili andando a leggere direttamente e soltanto i documenti di acquisto / vendita.
+**intrastat**: la bandera activa una pestaña específica dentro de los registros contables para gestionar los datos, provenientes de la factura de compra o venta contabilizada automáticamente a través del procedimiento correspondiente, o bien ingresados al momento de la inserción de la escritura contable de diario, y relacionados con la creación de los modelos Intrastat. Los datos gestionados de esta manera serán adquiridos en el procedimiento de creación de los modelos Intrastat a través del procedimiento *Adquisición de registros contables*. Se recuerda que está presente alternativamente el procedimiento de *adquisición de facturas* que no interactúa con los movimientos contables y solo lee directamente los documentos de compra/venta.
 
-#### Ulteriori colonne visualizzabili nella griglia delle registrazioni contabili
+#### Otras columnas que pueden visualizarse en la cuadrícula de registros contables
 
-**Divisa**: la presenza di questo flag farà comparire il campo Divisa nella sezione del libro giornale.
+**divisa**: la presencia de esta bandera hará aparecer el campo de Divisa en la sección del libro diario.
 
-**Cambio/data valuta**: la presenza di questo flag farà comparire i campi del cambio e della data valuta nella sezione del libro giornale.
+**cambio/data valuta**: la presencia de esta bandera hará aparecer los campos de cambio y de fecha de divisa en la sección del libro diario.
 
-**Importo valuta**: la presenza di questo flag farà comparire il campo Importo valuta nella sezione del libro giornale.
+**importo valuta**: la presencia de esta bandera hará aparecer el campo de Importe en divisa en la sección del libro diario.
 
-**Sottoconto di contropartita**: la presenza di questo flag farà comparire i campi dei sottoconti di contropartita nella sezione del libro giornale. La gestione dei campi di contropartita non è consigliata.
+**sottoconto di contropartita**: la presencia de esta bandera hará aparecer los campos de subcuentas de contrapartida en la sección del libro diario. La gestión de los campos de contrapartida no es recomendable.
 
-**Dettaglio del movimento**: la presenza di questo flag farà comparire il campo del Dettaglio movimento nella sezione del libro giornale: si consiglia di impostare questo flag per tutte le causali contabili, in modo da consentire sempre l'inserimento di note di dettaglio del singolo movimento contabile.
+**dettaglio del movimento**: la presencia de esta bandera hará aparecer el campo de detalle del movimiento en la sección del libro diario: se recomienda activar esta bandera para todas las causales contables, de modo que siempre se permita la inserción de notas de detalle del único movimiento contable.
 
-**Divisione**: la presenza di questo flag farà comparire il campo Divisione già a partite dalla sezione IVA, così come nella sezione del libro giornale. Con questa impostazione sarà possibile spezzare il caricamento dello stesso documento su più divisioni della società.
+**divisione**: la presencia de esta bandera hará aparecer el campo de División desde la sección de IVA, así como en la sección del libro diario. Con esta configuración, será posible dividir la carga del mismo documento en varias divisiones de la empresa.
 
-**Giorni banca**: la presenza di questo flag farà comparire il campo della data valuta banca nella sezione del libro giornale: il campo, quindi, è consigliato per tutte le causali contabili che rilevano movimenti finanziari. La gestione di questo campo può essere automatizzata sulla base dei giorni valuta (positivi/negativi) impostati nell'anagrafica banche per ogni singola causale.
+**giorni banca**: la presencia de esta bandera hará aparecer el campo de la fecha de divisa del banco en la sección del libro diario: el campo, por tanto, se recomienda para todas las causales contables que registran movimientos financieros. La gestión de este campo puede ser automatizada en función de los días de divisa (positivos/negativos) establecidos en la base de datos de bancos para cada causal.
 
-**Numero progressivo**: la presenza di questo flag farà comparire il campo del Numero riga nella sezione del libro giornale: si consiglia di inserire questo flag per causali particolarmente lunghe, in modo da consentire all'utente di ordinare i record in modo fisso come nella causale (es. rilevazione paghe).
+**numero progressivo**: la presencia de esta bandera hará aparecer el campo de Número de línea en la sección del libro diario: se recomienda activar esta bandera para causales particularmente largas, de modo que se permita al usuario ordenar los registros de forma fija como en la causal (ej. registro de nóminas).
 
-**Rif. manuale partite**: la presenza di questo flag farà comparire il campo del Rif. Manuale partita nella sezione del libro giornale. Il campo è indicato per collegare manualmente movimenti di contabilità senza passare per la gestione partite. In pratica si tratta di un campo note libero.
+**Ref. manual de cuentas (Rif. manuale partite)**: la presencia de esta bandera hará aparecer el campo de Ref. Manual de la cuenta en la sección del libro diario. El campo es indicado para vincular manualmente movimientos de contabilidad sin pasar por la gestión de cuentas. En la práctica, se trata de un campo de notas libre.
 
-**Operazioni straordinarie**: la presenza di questo flag farà comparire il campo omonimo (di tipo bit ovvero un flag) al fine di evidenziare alcuni movimenti contabili (in particolare ad esempio un costo) come *straordinario* e permettere poi una facile ricerca o estrazione all'interno di una stampa degli stessi.
-Questa possibilità si rivela utile a seguito delle modifiche agli schemi di bilancio introdotte con la direttiva 2013/34 (Dlgs 139/2015). Tali modifiche avevano introdotto, in sintesi, l'eliminazione dell'area "straordinaria" del Conto Economico. Ne consegue che tutti i componenti "eccezionali" non possono essere rappresentati da conti quali ad esempio le sopravvenienze attive dell'area straordinaria, ma devono essere iscritti direttamente nel conto cui si riferisce, ad esempio, la spesa (per natura).  Si presenta tuttavia la necessità di evidenziare  tali componenti di costo / ricavo per il necessario dettaglio in nota integrativa e per altre eventuali ragioni di tipo fiscali, ad esempio le riprese in diminuzione di costi nella dichiarazione dei redditi ecc...
+**Operaciones extraordinarias (Operazioni straordinarie)**: la presencia de esta bandera hará aparecer el campo homónimo (tipo bit o sea una bandera) con el propósito de resaltar algunos movimientos contables (en particular, por ejemplo, un costo) como *extraordinario* y permitir luego una fácil búsqueda o extracción dentro de un informe de los mismos. Esta posibilidad se revela útil a raíz de las modificaciones en los esquemas de balance introducidas con la directiva 2013/34 (Dlgs 139/2015). Estas modificaciones habían introducido, en síntesis, la eliminación del área "extraordinaria" del Estado de Resultados. Como consecuencia, todos los componentes "excepcionales" no pueden ser representados por cuentas tales como, por ejemplo, los ingresos extraordinarios, sino que deben inscribirse directamente en la cuenta a la que se refieren, es decir, el gasto (por naturaleza). Sin embargo, se presenta la necesidad de resaltar tales componentes de costo/ingreso para el necesario detalle en la nota complementaria y por otras posibles razones fiscales, como por ejemplo, las correcciones a la baja de costos en la declaración de impuestos, etc.
 
-**Tipo Operazione fiscale**: Rende visibile una combo box con la quale contrassegnare la riga di contabilita a supporto di una successiva elaborazione (esterna) della dichiarazione annuale iva, dove è richiesto di indicare se l'operazione corrisponda a:
-- acquisto beni ammortizzabili
-- acquisto beni strumentali non ammortizzabili
-- acquisto beni / servizi destinati alla rivendita
-- altri acquisti
+**tipo operazione fiscale**: hace visible una caja combinada con la que marcar la línea contable para el soporte de un posterior procesamiento (externo) de la declaración anual de IVA, donde se solicita indicar si la operación corresponde a:
+- compra de bienes amortizables
+- compra de bienes instrumentales no amortizables
+- compra de bienes/servicios destinados a la reventa
+- otras compras
  
-**Riferimento documento**: Rende visibile, in corrispondenza delle righe del movimento contabile due campi ulteriori per annotare il riferimento alla data e numero documento (ad es. fattura sulla riga del conto di contropartita).
+**riferimento documento**: hace visible, en correspondencia de las líneas del movimiento contable, dos campos adicionales para anotar la referencia a la fecha y número del documento (por ejemplo, factura sobre la línea de la cuenta de contrapartida).
 
-### 1.3 Parametri
+### 1.3 Parámetros (Parametri)
 
-#### Ordine dei tab nelle registrazioni contabili
+#### Orden de las pestañas en los registros contables
 
-E' dedicata all'impostazione dell'ordine con il quale presentare i tabulatori previsti, attraverso gli appositi pulsanti: **Sposta su** e **Sposta giù**. 
+Está dedicadas a la configuración del orden en el que se presentarán los tabuladores previstos, a través de los botones específicos: **sposta su** y **sposta giù**.
 
-#### Parametri registrazione
+#### Parámetros de registro
 
-**Controllo tipo conto**: la presenza di questo flag imporrà alla procedura di verificare la corrispondenza del sottoconto intestatario della registrazione rispetto alle impostazioni dei parametri di contabilità (es. uso di un conto cliente in una causale d'acquisto da fornitore): in caso di esito negativo sarà eseguito un semplice messaggio di avvertimento.
+**controllo tipo conto**: la presencia de esta bandera obligará al procedimiento a verificar la correspondencia de la subcuenta responsable del registro respecto a las configuraciones de los parámetros de contabilidad (ej. uso de una cuenta de cliente en una causal de compra de proveedor): en caso de resultado negativo, se ejecutará un simple mensaje de advertencia.
 
-**Blocca registrazione se il tipo conto è incompatibile**: la presenza di questo flag imporrà alla procedura di annullare l'inserimento di un sottoconto intestatario della registrazione non valido rispetto alle impostazioni dei parametri di contabilità (es. uso di un conto cliente in una causale d'acquisto da fornitore).
+**blocca registrazione se il tipo conto è incompatibile**: la presencia de esta bandera obligará al procedimiento a anular la inserción de una subcuenta responsable del registro no válida respecto a las configuraciones de los parámetros de contabilidad (ej. uso de una cuenta de cliente en una causal de compra de proveedor).
 
-**Permetti registrazione contabile con sbilancio**: la presenza di questo flag consentirà all'utente di salvare registrazioni contabili non bilanciate (sconsigliato). Può essere utile ad esempio (con le necessarie cautele) per forzare una contabilizzazione automatica che restituisce un messaggio di errore al fine di meglio comprendere il risultato della registarzione e correggere i settaggi.
+**permetti registrazione contabile con sbilancio**: la presencia de esta bandera permitirá al usuario guardar registros contables no equilibrados (desaconsejado). Puede ser útil, por ejemplo (con las necesarias precauciones) para forzar una contabilización automática que devuelve un mensaje de error con el fin de comprender mejor el resultado de la registración y corregir las configuraciones.
 
-**Blocca cancellazione registrazioni con partite pagate**: con questo flag non sarà possibile cancellare le registrazioni che abbiano all'interno almeno una partita con un pagamento collegato.
+**blocca cancellazione registrazioni con partite pagate**: con esta bandera no será posible eliminar registros que contengan al menos una cuenta con un pago asociado.
 
-**Blocca registrazione se il valore delle partite non è uguale al movimento contabile**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali il valore dei movimenti contabili non corrisponde ai valori di movimentazione dei partitari (in apertura e in chiusura partite): nel caso in cui non sia impostato, la procedura, comunque eseguirà un messaggio di avviso della presenza di una differenza. Il controllo viene eseguito su tutti i sottoconti che nel piano dei conti hanno impostato il flag *Apertura partite*.
+**Bloquear registro si el valor de las cuentas no es igual al movimiento contable (Blocca registrazione se il valore delle partite non è uguale al movimento contabile)**: la presencia de esta bandera obligará al procedimiento a bloquear el guardado de registros para los cuales el valor de los movimientos contables no corresponde a los valores de movimiento de las cuentas (en apertura y cierre de cuentas): en caso de que no esté configurada, el procedimiento, no obstante, ejecutará un mensaje de advertencia respecto a la presencia de una diferencia. El control se ejecuta sobre todas las subcuentas que en el plan de cuentas tienen la bandera *Apertura partite* configurada.
 
-**Blocca registrazione se il totale documento è differente dal totale dei dati iva**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali il valore totale dei movimenti iva non corrisponde ai totali impostati in testata della registrazione: nel caso in cui il campo non sia impostato comunque la procedura eseguirà un messaggio di avviso.
+**blocca registrazione se il totale documento è differente dal totale dei dati iva**: la presencia de esta bandera obligará al procedimiento a bloquear el guardado de registros para los cuales el valor total de los movimientos de IVA no corresponde a los totales configurados en el encabezado del registro: en caso de que el campo no esté configurado, el procedimiento ejecutará un mensaje de advertencia.
 
-**Aggiorna automaticamente il totale del documento al variare dei dati nella griglia dell'iva: l**a presenza di questo flag imporrà alla procedura di aggiornare, ma solo in incremento, i totali della testata della registrazione al variare della somma totale inserita nella sezione iva della registrazione.
+**Actualizar automáticamente el total del documento al variar los datos en la cuadrícula de IVA**: la presencia de esta bandera obligará al procedimiento a actualizar, pero solo en incremento, los totales del encabezado del registro al variar la suma total ingresada en la sección de IVA del registro.
 
-**Aggiorna anche in decremento**: questo flag, attivo solo quando il precedente è impostato, forzerà la procedura ad aggiornare i totali della registrazione anche in decremento.
+**aggiorna anche in decremento**: esta bandera, activa solo cuando la anterior está configurada, forzará al procedimiento a actualizar los totales del registro también en decremento.
 
-**Blocca registrazione se l'ordine di protocollo non è rispettato**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali l'ordine temporale di protocollazione non sia rispettato: in particolare, con questo flag la procedura recupererà numeri di protocolli solo nel caso in cui sia stata impostata una data registrazione valida per il numero stesso. Se il flag non viene inserito, comunque la procedura eseguirà un messaggio di avviso della mancanza di ordine di protocollazione: si ricorda, inoltre, che la stampa registri iva non consente, nell'impostazione di default, di stampare in definitivo registri iva che abbiano buchi nella numerazione oppure non seguano l'ordine di protocollazione corretto.
+**blocca registrazione se l'ordine di protocollo non è rispettato**: la presencia de esta bandera obligará al procedimiento a bloquear el guardado de registros para los cuales el orden temporal de protocolización no se respete: en particular, con esta bandera, el procedimiento recuperará números de protocolos solo si se ha configurado una fecha de registro válida para el número mismo. Si la bandera no se inserta, no obstante, el procedimiento ejecutará un mensaje de advertencia sobre la falta de orden de protocolización: se recuerda, además, que la impresión de registros IVA no permite, en la configuración por defecto, imprimir en definitivo registros IVA que tengan huecos en la numeración o que no sigan el orden de protocolización correcto.
 
-**Gestione separata Cdc/Cdp**: questo flag, attivo solo nel caso in cui la causale gestisca sia i centri di costo che di profitto, consentirà di assegnare i movimenti economici di contabilità sia ai centri di costo che ai centri di profitto. Se non è impostato, invece, il movimento può essere assegnato solo a uno delle due sezioni.
+**Gestión separada Cdc/Cdp (Gestione separata Cdc/Cdp)**: esta bandera, activa solo en caso de que la causal gestione tanto los centros de costo como de beneficio, permitirá asignar los movimientos económicos de contabilidad a ambos, centros de costo y centros de beneficio. Si no está configurada, en cambio, el movimiento podrá asignarse solo a una de las dos secciones.
 
-**Ricalcolo automatico CdC, CdP e commesse**: il flag in oggetto sarà riportato anche nelle registrazioni contabili basate su questa causale: il significato è quello di eseguire automaticamente o meno il ricalcolo delle sezioni analitiche dei centri di costo, profitto e delle commesse una volta entrati in modifica di una registrazione contabile già salvata. All'atto dell'inserimento di una nuova registrazione, fino al suo primo salvataggio, l'aggiornamento di queste sezioni sarà sempre automatico nel rispetto delle impostazioni di default definite.
+**Recalculo automático de CdC, CdP y comisiones (Ricalcolo automatico CdC, CdP e commesse)**: la bandera en cuestión se reportará también en los registros contables basados en esta causal: el significado es ejecutar automáticamente o no el recalculo de las secciones analíticas de los centros de costo, beneficio y de las comisiones una vez que se ingresen en modificación de un registro contable ya guardado. En el momento de la inserción de un nuevo registro, hasta su primer guardado, la actualización de estas secciones será siempre automática, respetando las configuraciones por defecto definidas.
 
-**Blocca registrazione se il valore dei Cdc/Cdp non è uguale al movimento contabile**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali il valore totale dei movimenti analitici dei centri di costo e profitto non corrisponde agli importi economici movimentati nella sezione di contabilità generale: nel caso in cui il flag non sia inserito sarà comunque eseguito un messaggio di avviso della mancata corrispondenza dei valori.
+**Bloquear registro si el valor de Cdc/Cdp no es igual al movimiento contable (Blocca registrazione se il valore dei Cdc/Cdp non è uguale al movimento contabile)**: la presencia de esta bandera obligará al procedimiento a bloquear el guardado de registros para los cuales el valor total de los movimientos analíticos de los centros de costo y beneficio no corresponda a los importes económicos movidos en la sección de contabilidad general: en caso de que la bandera no esté configurada, se ejecutará un mensaje de advertencia sobre la no correspondencia de valores.
 
-**Raggruppa Iva in libro giornale**: la presenza di questo flag imporrà alla procedura di raggruppare nel libro giornale le righe Iva assegnate allo stesso sottoconto contabile (e alla stessa divisione).
+**Agrupar IVA en libro diario (Raggruppa Iva in libro giornale)**: la presencia de esta bandera obligará al procedimiento a agrupar en el libro diario las líneas de IVA asignadas a la misma subcuenta contable (y a la misma división).
 
-**Blocca salvataggio con numero documento duplicato**: la presenza di questo flag, inserito di default, imporrà alla procedura di bloccare il salvataggio di registrazioni contabili con stesso numero documento, stesso anno, stesso tipo documento e anagrafica in testata della registrazione.
+**Bloquear guardado con número de documento duplicado (Blocca salvataggio con numero documento duplicato)**: la presencia de esta bandera, establecida por defecto, obligará al procedimiento a bloquear el guardado de registros contables con el mismo número de documento, mismo año, mismo tipo de documento y base de datos en el encabezado del registro.
 
-**Background colour**: impostare in questo campo il colore di sfondo per visualizzare nelle ricerche a video i movimenti basati su questa causale. L'uso dei colori può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**Color de fondo (Background colour)**: configure en este campo el color de fondo para visualizar en las búsquedas en pantalla los movimientos basados en esta causal. El uso de colores puede ser útil para identificar el tipo de movimiento sin tener que leer descripciones o códigos de las causales.
 
-**Foreground colour**: impostare in questo campo il colore di dei testi da visualizzare nelle ricerche a video i movimenti basati su questa causale. L'uso dei colori può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**Color de primer plano (Foreground colour)**: configure en este campo el color de los textos a visualizar en las búsquedas en pantalla de los movimientos basados en esta causal. El uso de colores puede ser útil para identificar el tipo de movimiento sin tener que leer descripciones o códigos de las causales.
 
-**Sample text**: il campo visualizza il risultato della combinazione di colori impostata.
+**sample text**: el campo muestra el resultado de la combinación de colores configurada.
 
-**Carattere corsivo**: impostare in questo campo la visualizzazione in corsivo dei caratteri per questa causale nelle ricerche a video: può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**Fuente en cursiva (Carattere corsivo)**: configure en este campo la visualización en cursiva de los caracteres para esta causal en las búsquedas en pantalla; puede ser útil para identificar el tipo de movimiento sin tener que leer descripciones o códigos de las causales.
 
-**Carattere grassetto**: impostare in questo campo la visualizzazione in grassetto dei caratteri per questa causale nelle ricerche a video: può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**carattere grassetto**: configure en este campo la visualización en negrita de los caracteres para esta causal en las búsquedas en pantalla; puede ser útil para identificar el tipo de movimiento sin tener que leer descripciones o códigos de las causales.
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
+:::important Vea También
+[**TUTORIALES EN VIDEO SOBRE LAS CAUSALES CONTABLES**](/docs/video/finance/intro)
 :::
 
-### 1.4 Controllo aliquote IVA
+### 1.4 Control de tasas de IVA (Controllo aliquote IVA)
 
-In questo tab è possibile inserire alcune aliquote IVA (precedentemente codificate nella tabella [**Aliquote / Modalità IVA**](/docs/configurations/tables/finance/vat-rates/)) che vincoleranno l'utente all' utilizzo esclusivo delle stesse.
+En esta pestaña es posible ingresar algunas tasas de IVA (previamente codificadas en la tabla [**Tasas / Modalidades de IVA**](/docs/configurations/tables/finance/vat-rates/)) que obligarán al usuario a utilizar exclusivamente las mismas.
 
-Rappresenta dunque una forma di controllo e di vincolo ad utilizzare solo codici iva ritenuti corretti e consoni alla scrittura contabili gestita dalla causale in oggetto.
+Representa así una forma de control y de vinculación a utilizar solo códigos de IVA considerados correctos y adecuados para las escrituras contables gestionadas por la causal en cuestión.
 
-La possibilità di inserire nella griglia e dunque di attivare il controllo è abilitata dal flag **Imposta aliquote IVA abilitate**.
- 
-E' presente accanto ai campi che riportano il codice / descrizione dell'aliquota inserita, un campo per impostare una data di fine validità della scelta precedentemente effettuata e dunque cambiare o concludere la politica di gestione.
+La posibilidad de ingresar en la cuadrícula y así activar el control está habilitada por la bandera **imposta aliquote iva abilitate**.
+
+Está presente junto a los campos que reportan el código/descripción de la tasa ingresada, un campo para establecer una fecha de finalización de validez de la elección previamente realizada y así cambiar o concluir la política de gestión.

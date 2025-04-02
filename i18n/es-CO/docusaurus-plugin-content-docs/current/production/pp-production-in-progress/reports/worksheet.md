@@ -1,9 +1,9 @@
 ---
-title: Foglio di lavoro
+title: foglio di lavoro
 sidebar_position: 1
 ---
 
-Questa form consente di stampare il report del *Foglio di lavoro* degli ordini di produzione o direttamente le fasi (se considero il centro di lavoro); quindi da la possibilità di stampare per ordine di produzione o per singola fase. 
-Una volta lanciata la stampa, viene attivato il flag **Già stampato** per ciascuna fase o ordine di produzione stampato.   
+Este formulario permite imprimir el informe de la *foglio di lavoro* de los pedidos de producción o directamente las fases (si considero el centro de trabajo); por lo tanto, da la posibilidad de imprimir por orden de producción o por fase individual.  
+Una vez que se lanza la impresión, se activa el indicador **Ya impreso (Già stampato)** para cada fase o pedido de producción impreso.  
 
-Inoltre, il flag **Definitiva** presente nel *Filtro fogli già stampati* se attivato, inserisce il flag *Stp. def.* sulla riga della fase dell'ordine di produzione indicando che è stata effettuata la stampa definitiva del report del foglio di lavoro.
+Además, el indicador **definitiva** presente en el *filtro fogli già stampati*, si está activado, inserta el indicador *Stp. def.* en la línea de la fase del pedido de producción, indicando que se ha realizado la impresión definitiva del informe de la hoja de trabajo.

@@ -1,16 +1,16 @@
 ---
-title: Allarmi consumo medio giornaliero
+title: Alarmas de consumo medio diario (Allarmi consumo medio giornaliero)
 sidebar_position: 7
 ---
-Questo report consente di verificare se il consumo medio giornaliero (ADU) di qualche articolo è variato eccessivamente durante un determinato periodo temporale.
 
-Esiste una procedura la cui esecuzione va schedulata in modo automatico, che analizza tutti i buffer Ddmrp in tutte le unità logistiche e memorizza in una apposita tabella solo quelli la cui variazione percentuale dell' ADU risulta superiore al limite imposto.
+Este reporte permite verificar si el consumo medio diario (ADU) de algún artículo ha variado en exceso durante un determinado periodo de tiempo.
 
-Nei parametri generali Ddmrp viene impostata la soglia massima di variazione percentuale che non genera allarme, ed il numero di giorni nel passato in cui va eseguita l'analisi (che si conclude sempre il giorno prima del calcolo).
+Existe un procedimiento cuya ejecución debe programarse automáticamente, que analiza todos los buffers Ddmrp en todas las unidades logísticas y almacena en una tabla específica solo aquellos cuya variación porcentual del ADU resulta ser superior al límite impuesto.
 
-Tramite questa form si possono effettuare analisi con valori percentuali differenti e per periodi temporali a scelta dell'utente.
+En los parámetros generales de Ddmrp se establece el umbral máximo de variación porcentual que no genera alarma, y el número de días en el pasado en los que se debe realizar el análisis (que siempre se concluye el día antes del cálculo).
 
-Il report evidenzierà solo gli articoli il cui consumo medio giornaliero ha subito una variazione (sia in difetto che in eccesso) percentuale superiore al limite impostato per l'analisi, nel periodo temporale indicato dall'utente.
+A través de este formulario se pueden realizar análisis con valores porcentuales diferentes y por periodos de tiempo a elección del usuario.
 
-L'analisi viene eseguita sui valori storicizzati dei parametri Ddmrp, sia per la procedura automatizzata che per questo form.
+El reporte destacará solo los artículos cuyo consumo medio diario ha sufrido una variación (tanto en defecto como en exceso) porcentual superior al límite establecido para el análisis, en el periodo de tiempo indicado por el usuario.
 
+El análisis se lleva a cabo sobre los valores historizados de los parámetros Ddmrp, tanto para el procedimiento automatizado como para este formulario.

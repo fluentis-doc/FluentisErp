@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: generalità
 sidebar_position: 1
 ---
 
-Per ogni anno di utilizzo devono essere impostati una serie di parametri per una corretta gestione del magazzino. Si tratta di parametri validi per tutti i magazzini della stessa società. 
+Para cada año de uso, se deben establecer una serie de parámetros para una correcta gestión del almacén. Se trata de parámetros válidos para todos los almacenes de la misma empresa.

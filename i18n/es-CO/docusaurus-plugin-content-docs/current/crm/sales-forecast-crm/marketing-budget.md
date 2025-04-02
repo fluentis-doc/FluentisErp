@@ -1,19 +1,19 @@
 ---
-title: Marketing budget
+title: marketing budget
 sidebar_position: 5
 ---
 
-Con questa funzionalità è possibile creare dei Budget di periodo.        
-I dati di testata sono i seguenti:       
-**Periodo budget**: in questo campo è necessario inserire il [Periodo](/docs/configurations/tables/crm/sales-forecast/budget-period) da utilizzare come unità di suddivisione dell'anno; in base al periodo selezionato, gli importi inseriti successivamente verranno automaticamente distribuiti nei vari periodi, riportati nella tabella sottostante *Periodi*;      
-**Descrizione**: contiene una libera descrizione;      
-**Data fine validità**: contiene un'evebtuale data di chiusura del budget;      
-**Progetto**: è possibile collegare un progetto.     
+Con esta funcionalidad es posible crear presupuestos por período.  
+Los datos de la cabecera son los siguientes:  
+**periodo budget**: en este campo es necesario ingresar el [Período (Periodo)](/docs/configurations/tables/crm/sales-forecast/budget-period) que se utilizará como unidad de división del año; según el período seleccionado, los montos ingresados posteriormente se distribuirán automáticamente en los diversos períodos, reflejados en la tabla siguiente *periodi*;  
+**descrizione**: contiene una descripción libre;  
+**data fine validità**: contiene una eventual fecha de cierre del presupuesto;  
+**progetto**: es posible vincular un proyecto.  
 
-Nella griglia è possibile costruire l'albero del budget, servendosi dei bottoni sulla barra degli strumenti. Ogni nodo radice dell'albero conterrà la Somma delle quantità e degli importi dei vari nodi sottostanti. I nodi finali dell'albero sono quelli nei quali è possibile inserire le spese, attraverso i seguenti campi:      
-**Tipo spese**: in base alla selezione del [Tipo spesa](/docs/configurations/tables/crm/sales-forecast/expenses-type), sarà possibile inserire una Descrizione, un Conto oppure un Articolo;       
-**Unità di misura**: contiene l'unità di misura da usare per la spesa;      
-**Quantità totale**: contiene la quantità totale da suddividere nei vari Periodi del budget;       
-**Prezzo unitario**: questo campo viene compilato automaticamente con il risultato della divisione tra *Importo totale* e *Quantità totale*:        
-**Importo totale**: contiene l'Importo totale da suddividere nei vari Periodi del budget.        
-Nella griglia di destra, *Quantità totale* e *Importo totale* vengono suddivisi per il numero di Periodi previsti dal [Periodo budget](/docs/configurations/tables/crm/sales-forecast/budget-period) inserito in testata. In questo modo sarà possibile consultare il Budget per ogni periodo. La griglia *Periodo* è modificabile utilizzando i pulsanti della ribbon bar, nel caso in cui il calendario debba discostarsi dallo standard codificato.                     
+En la cuadrícula se puede construir el árbol del presupuesto, utilizando los botones en la barra de herramientas. Cada nodo raíz del árbol contendrá la Suma de las cantidades y de los montos de los varios nodos subyacentes. Los nodos finales del árbol son aquellos en los que es posible ingresar los gastos, a través de los siguientes campos:  
+**tipo spese**: según la selección del [Tipo de gasto (Tipo spesa)](/docs/configurations/tables/crm/sales-forecast/expenses-type), será posible ingresar una Descripción, una Cuenta o un Artículo;  
+**unità di misura**: contiene la unidad de medida a utilizar para el gasto;  
+**quantità totale**: contiene la cantidad total a dividir en los diversos Períodos del presupuesto;  
+**prezzo unitario**: este campo se completa automáticamente con el resultado de la división entre *importo totale* y *quantità totale*:  
+**importo totale**: contiene el Monto total a dividir en los diversos Períodos del presupuesto.  
+En la cuadrícula de la derecha, *quantità totale* y *importo totale* se dividen por el número de Períodos previstos por el [Período del presupuesto (Periodo budget)](/docs/configurations/tables/crm/sales-forecast/budget-period) ingresado en la cabecera. De esta manera, será posible consultar el Presupuesto para cada período. La cuadrícula *periodo* es modificable utilizando los botones de la ribbon bar, en caso de que el calendario deba apartarse del estándar codificado.

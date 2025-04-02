@@ -1,146 +1,142 @@
 ---
-title: Parametri controllo articoli
+title: parametri controllo articoli
 sidebar_position: 1
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri controllo articoli**.
+Los parámetros se encuentran en la ruta **Parámetros > Calidad > parametri controllo articoli**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-- **Schede tecniche**;   
-- **Piani di controllo**;   
-- **Controllo articoli**;   
-- **Certificati di analisi**.   
+Los datos presentes en esta gestión son utilizados para proponer información en las gestiones:  
+- **schede tecniche**;  
+- **piani di controllo**;  
+- **Control de artículos (Controllo articoli)**;  
+- **certificati di analisi**.  
 
-#### Pulsante specifico
+#### Botón específico
 
-**Salva**: permette di memorizzare le informazioni modificate. 
+**salva**: permite almacenar la información modificada.
 
-## Generale   
+## General (Generale)
 
-In questa tabulatore è possibile inserire dati da proporre di default nei documenti del modulo *Controllo articoli*.   
+En esta pestaña es posible ingresar datos que se propondrán por defecto en los documentos del módulo *Control de artículos*.  
 
-### Tipi prova      
+### Tipos de prueba (Tipi prova)  
 
-In questo expander è possibile inserire dati da proporre nei *Tipi prova*.   
-Nell'expander è possibile inserire:   
-- **Tipo valore**: *Tipo valore* da proporre all'inserimento di un *Tipo prova*.   
-- **Tipo limite**: *Tipo limite* da proporre all'inserimento di un *Tipo prova*.   
+En este expandible es posible ingresar datos para proponer en los *Tipos de prueba*.  
+En el expandible se puede ingresar:  
+- **tipo valore**: *Tipo de valor* a proponer al ingresar un *Tipo de prueba*.  
+- **tipo limite**: *Tipo de límite* a proponer al ingresar un *Tipo de prueba*.  
 
-### Schede tecniche      
+### Hojas técnicas (Schede tecniche)  
 
-In questo expander è possibile inserire dati da proporre nelle *Schede tecniche*.   
-Nell'expander è possibile inserire:   
-- **Tipo scheda tecnica**: *Tipo scheda tecnica* da proporre all'inserimento di una *Scheda tecnica*.   
-- **Responsabile**: *Dipendente* da proporre come responsabile all'inserimento di una *Scheda tecnica*.   
-- **Tipo dichiarazione in Articoli**: *Tipo di dichiarazione* da proporre all'inserimento di *Articolo associato* di una *Scheda tecnica*.   
-- **Tipo dichiarazione in stampa**: *Tipo di dichiarazione* da proporre in *Tipo dichiarazione da stampare in caso l'articolo ne sia sprovvisto* nella *Stampa scheda tecnica*.   
+En este expandible es posible ingresar datos que se propondrán en las *Hojas técnicas*.  
+En el expandible se puede ingresar:  
+- **tipo scheda tecnica**: *Tipo de hoja técnica* a proponer al ingresar una *Hoja técnica*.  
+- **responsabile**: *dipendente* a proponer como responsable al ingresar una *Hoja técnica*.  
+- **tipo dichiarazione in articoli**: *Tipo de declaración* a proponer al ingresar un *Artículo asociado* de una *Hoja técnica*.  
+- **tipo dichiarazione in stampa**: *Tipo de declaración* a proponer en *Tipo de declaración para imprimir en caso de que el artículo no lo tenga* en *Impresión de hoja técnica*.  
 
-### Piani di controllo      
+### Planes de control (Piani di controllo)  
 
-In questo expander è possibile inserire dati da proporre nei *Piani di controllo*.   
-Nell'expander è possibile inserire:   
-- **Tipo piano di controllo**: *Tipo piano di controllo* da proporre all'inserimento di un *Piano di controllo*.   
-- **Responsabile**: *Dipendente* da proporre come responsabile all'inserimento di un *Piano di controllo*.   
+En este expandible es posible ingresar datos que se propondrán en los *Planes de control*.  
+En el expandible se puede ingresar:  
+- **tipo piano di controllo**: *Tipo de plan de control* a proponer al ingresar un *Plan de control*.  
+- **responsabile**: *dipendente* a proponer como responsable al ingresar un *Plan de control*.  
 
-### Certificati di analisi      
+### Certificados de análisis (Certificati di analisi)  
 
-In questo expander è possibile inserire dati da proporre nei *Certificati di analisi*.   
-Nell'expander è possibile inserire:   
-- **Tipo certificato**: *Tipo certificato di analisi* da proporre all'inserimento di un *Certificato di analisi*.   
-- **Responsabile**: *Dipendente* da proporre come responsabile all'inserimento di un *Certificato di analisi*.   
+En este expandible es posible ingresar datos que se propondrán en los *Certificados de análisis*.  
+En el expandible se puede ingresar:  
+- **tipo certificato**: *Tipo de certificado de análisis* a proponer al ingresar un *Certificado de análisis*.  
+- **responsabile**: *dipendente* a proponer como responsable al ingresar un *Certificado de análisis*.  
 
+## Control de artículos (Controllo articoli)  
 
-## Controllo articoli   
+En esta pestaña es posible ingresar datos:  
+> - para proponer por defecto en el *Control de artículos*;  
+> - para definir varias coloraciones para reconocer los diferentes estados de un *Control*;  
+> - para establecer parámetros de gestión;  
+> - búsqueda y asociación automática de los *Planes de control* que se deben asociar al *Control de artículo*.  
 
-In questa tabulatore è possibile inserire dati:
-> - da proporre di default nei *Controllo articoli*;   
-> - per definire varie colorazioni per riconoscere i vari stati di un *Controllo*;   
-> - per impostare parametri di gestione;   
-> - ricerca e associazione automatica dei *Piani di controllo* da associare al *Controllo articolo*.   
+- **abilita il rilevamento multiplo valori**: indica la habilitación de la posibilidad de detectar múltiples valores para cada prueba, en todos los tipos de documento.  
+- **Aprobación automática de los valores detectados (Approvazione automatica dei valori rilevati)**: indica la *Aprobación* automática de la *Prueba* al detectar los *Valores* y la atribución automática del *Resultado*.  
+- **proposta esito negativo**: es una lista de valores predeterminados por el sistema que indican la metodología de atribución de no conformidad de la *Prueba*.  
+> La metodología se considera solo para la detección de *Pruebas* de tipo *Numérico* en la *Detección de múltiples valores*. Los valores predeterminados son:  
+> - *al primer valor detectado no conforme*;  
+> - *según la media aritmética de los valores detectados (solo valores numéricos)*.  
+> 
+- **tipo di esito negativo**: es la propuesta del *Tipo de resultado* en caso de *Pruebas* no conformes.  
+- **tipo di esito positivo**: es la propuesta del *Tipo de resultado* en caso de *Pruebas* conformes.  
 
-- **Abilita il rilevamento multiplo valori**: indica l'abilitazione della possibilità di rilevare più valori per ogni prova, in tutte le tipologie di documento.   
-- **Approvazione automatica dei valori rilevati**: indica l'*Approvazione* automatica della *Prova* alla rilevazione dei *Valori* e all'attribuzione automatica dell'*Esito*.   
-- **Proposta esito negativo**: è un elenco di valori predefiniti dal sistema che indicano la metodologia di attribuzione di non conformità della *Prova*.   
-> La metodologia viene considerata solo per la rilevazione di *Prove* di tipo *Numerico* nella *Rilevazione multipla valori*.   I valori predefiniti sono:   
-> - *al primo valore rilevato non conforme*;   
-> - *sulla media aritmetica dei valori rilevati (solo valori numerici)*.   
->
-- **Tipo di esito negativo**: è la proposta del *Tipo esito* nel caso di *Prove* non conformi.   
-- **Tipo di esito positivo**: è la proposta del *Tipo esito* nel caso di *Prove* conformi.   
+### Tipos de documento para la importación (Tipi documento per l'importazione)  
 
+En este expandible/lista es posible ingresar datos a considerar durante la *Importación de artículos a controlar* y para proponer en el *Control de artículo*.  
+La tabla contiene los tipos de documentos gestionados por el *Control de artículos*.  
+Son tipos predefinidos por el sistema y no es posible ingresar nuevos o eliminarlos. Los valores predefinidos son:  
+> - *ricevimento merce*;  
+> - *ddt di acquisto*;  
+> - *fattura di acquisto*;  
+> - *dichiarazione di produzione*;  
+> - *fase ordine di produzione*;  
+> - *rientro da conto lavoro*;  
+> - *movimentazione di carico*.  
 
-### Tipi documento per l'importazione      
+En la lista, para cada tipo de documento, es posible ingresar:  
+- **Def.**: indica el tipo de documento propuesto en los filtros de búsqueda; se puede seleccionar un solo tipo o ninguno.  
+- **dettaglio articolo**: es una lista de valores predeterminados por el sistema que identifican el tipo de detalle que se debe controlar del *Artículo* para el tipo de documento específico. Los valores predeterminados son:  
+> - *nessuno* - la línea *Artículo* considerada no tomará ningún dato de detalle;  
+> - *lotto* - la línea *Artículo* considerada tomará como máximo detalle el *Lote*;  
+> - *s.n.* - la línea *Artículo* considerada tomará como máximo detalle el *serial number*;  
+> - *udc* - la línea *Artículo* considerada tomará como máximo detalle la *Unidad de Carga*.  
+> 
+- **Mult.**: indica si habilitar la *Detección de múltiples valores* en el *Control de artículos* para el tipo de documento específico.  
+> Para ser considerado, debe indicarse el parámetro general *Habilitar la detección de múltiples valores (Abilita il rilevamento multipli valori)*.  
+- **tipo controllo**: *Tipo de control* a proponer al ingresar un *Control de artículos* para el tipo de documento específico.  
+- **tipo piano di controllo**: durante la *Importación de artículos a controlar*, excluyendo los tipos de documento de producción (*dichiarazione di produzione* y *fase ordine di produzione*), es el *Tipo de plan de control* que tiene mayor prioridad para la búsqueda del *Plan de control* que se debe asociar al *Control de artículos*.  
+- **descrizione tipo controllo**: es la descripción del *Tipo de control*.  
+- **descrizione tipo piano di controllo**: es la descripción del *Tipo de plan de control*.  
 
-In questo expander/elenco è possibile inserire dati da considerare durante l'*Importazione articoli da controllare* e da proporre nel *Controllo articolo*.   
-La tabella contiene le tipologie di documento gestite dal *Controllo articoli*.   
-Sono tipologie predefinite dal sistema e non è possibile inserirne di nuove o eliminarle. I valori predefiniti sono:
-> - *Ricevimento merce*;   
-> - *DDT di Acquisto*;   
-> - *Fattura di Acquisto*;   
-> - *Dichiarazione di produzione*;   
-> - *Fase Ordine di produzione*;   
-> - *Rientro da Conto lavoro*;   
-> - *Movimentazione di carico*.   
+### Colores de las filas del Control de artículo (Colori righe Controlli articolo)  
 
-Nell'elenco, per ogni tipologia di documento, è possibile inserire:   
-- **Def.**: indica la tipologia documento proposta nei filtri di ricerca; può essere selezionata una sola tipologia o nessuna.   
-- **Dettaglio articolo**: è un elenco di valori predefiniti dal sistema che identificano il tipo di dettaglio da controllare dell'*Articolo* per la tipologia documento specifica. I valori predefiniti sono:   
->- *Nessuno* - la riga *Articolo* considerata non prenderà alcun dato di dettaglio;   
->- *Lotto* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Lotto*;   
->- *S.N.* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Serial Number*;   
->- *UDC* - la riga *Articolo* considerata prenderà come massimo dettaglio l'*Unità di Carico*;   
->
-- **Mult.**: indica se abilitare la *Rilevazione multipla valori* nel *Controllo articoli* per la tipologia documento specifica.   
-> Per essere considerato deve essere indicato il parametro generale *Abilita il rilevamento multipli valori*.   
-- **Tipo controllo**: *Tipo controllo* da proporre all'inserimento di un *Controllo articoli* per la tipologia documento specifica.   
-- **Tipo piano di controllo**: durante l'*Importazione articoli da controllare*, escluse le tipologie documento di produzione (*Dichiarazione di produzione* e *Fase Ordine di produzione*), è il *Tipo piano di controllo* che ha priorità maggiore per la ricerca del *Piano di controllo* da associare al *Controllo articoli*.   
-- **Descrizione tipo controllo**: è la descrizione del *Tipo controllo*.   
-- **Descrizione tipo piano di controllo**: è la descrizione del *Tipo piano di controllo*.   
+En esta lista es posible definir varias coloraciones para reconocer los diferentes estados de un *Control de artículo*.  
+Esos colores se aplican en el *Filtro de los Controles de artículo*. La lista se compone de la siguiente información:  
+- **tipo**: es el estado del *Control de artículo* al que asociar las coloraciones.  
+> La tabla contiene valores predeterminados por el sistema y no es posible ingresar nuevos, eliminarlos o modificarlos. Los valores predeterminados son:  
+> - *articoli non soggetti a controllo*;  
+> - *controlli privi di un piano di controllo*;  
+> - *controlli con più piani di controllo*;  
+> - *controlli ancora da rilevare*;  
+> - *controlli con esiti non conformi*;  
+> - *controlli già validati*.  
+> 
+- **sfondo**: es el color aplicado al fondo de la línea del *Control de artículo* del estado específico.  
+- **testo**: es el color aplicado al texto de la línea del *Control de artículo* del estado específico.  
 
-### Colori righe Controlli articolo      
+### Personalización de datos por tipo de documento (Personalizzazione dati per tipo documento)  
 
-In questo elenco è possibile definire varie colorazioni per riconoscere i vari stati di un'*Controllo articolo*.   
-Tali colori sono applicati nel *Filtro dei Controlli articolo*. L'elenco si compone delle seguenti informazioni:   
-- **Tipo**: è lo stato del *Controllo articolo* al quale associare le colorazioni.   
-> La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli. I valori predefiniti sono:
-> - *Articoli non soggetti a controllo*;   
-> - *Controlli privi di un Piano di controllo*;   
-> - *Controlli con più Piani di controllo*;   
-> - *Controlli ancora da rilevare*;   
-> - *Controlli con esiti Non conformi*;   
-> - *Controlli ancora da rilevare*;   
-> - *Controlli ancora da rilevare*;   
-> - *Controlli già validati*.   
->
-- **Sfondo**: è il colore applicato allo sfondo della riga del *Controllo articolo* dello stato specifico.   
-- **Testo**: è il colore applicato al testo della riga del *Controllo articolo* dello stato specifico.   
+En esta lista es posible agregar *Propiedades* de la tipo de documento de origen en la lista de datos del *Control de artículo*.  
+La tabla contiene los mismos tipos de documentos mencionados en **Tipos de documento para la importación**.  
+Son tipos predefinidos por el sistema y no es posible ingresar nuevos o eliminarlos.  
+Se prevén 5 informaciones por cada tipo de dato: *Texto*, *Sí/No*, *Entero*, *Decimal*, *Fecha*.  
+A través de un doble clic en la celda se puede seleccionar la *Propiedad* deseada del documento.  
 
-### Personalizzazione dati per tipo documento      
-
-In questo elenco è possibile aggiungere *Proprietà* della tipologia documento di origine nell'elenco dati del *Controllo articolo*.   
-La tabella contiene le medesime tipologie di documento riportate in **Tipi documento per l'importazione**.   
-Sono tipologie predefinite dal sistema e non è possibile inserirne di nuove o eliminarle.   
-Sono previste 5 informazioni per tipo di dato: *Testo*, *Si/No*, *Intero*, *Decimale*, *Data*.   
-Tramite un doppio click sulla cella è possibile selezionare la *Proprietà* desiderata del documento.   
-
-:::tip *Esempio:*   
-per la tipologia documento *Fattura di Acquisto* è possibile aggiungere il valore della *Proprietà* di testata *Vostro riferimento*.   
-Tramite il doppio click del mouse sulla colonna *Testo 01* viene eseguito l'Help sulle proprietà di riga del documento *Fattura di Acquisto*.   
-Espandere il riferimento *Invoice (Fattura)*, selezionare la proprietà *Your reference (Vostro riferimento)* e premere il pulsante *Seleziona*.   
-Nella cella dove è stato effettuata la selezione comparirà la proiprietà *YourReference*.
+:::tip *Ejemplo:*  
+Para la tipo de documento *fattura di acquisto* es posible agregar el valor de la *Propiedad* de encabezado *vostro riferimento*.  
+A través del doble clic del mouse en la columna *Texto 01* se ejecuta la Ayuda sobre las propiedades de línea del documento *Factura de Compra*.  
+Expanda la referencia *fattura*, seleccione la propiedad *vostro riferimento* y presione el botón *seleziona*.  
+En la celda donde se realizó la selección aparecerá la propiedad *YourReference*.  
 :::
 
-### Personalizzazione intestazioni colonne per tipo documento      
+### Personalización de encabezados de columnas por tipo de documento (Personalizzazione intestazioni colonne per tipo documento)  
 
-In questo elenco è possibile indicare il *Titolo della proprietà*, corrispondenti alle *Proprietà* selezionate dell'elenco **Personalizzazione dati per tipo documento** e che compariranno nell'elenco dati del *Controllo articolo*.   
-La tabella contiene le medesime tipologie di documento riportate in **Tipi documento per l'importazione**.   
-Sono tipologie predefinite dal sistema e non è possibile inserirne di nuove o eliminarle.   
-Sono previste 5 informazioni per tipo di dato: *Testo*, *Si/No*, *Intero*, *Decimale*, *Data*.   
-Tramite un doppio click sulla cella è possibile selezionare la *Voce del dizionario* desiderata da riportare come intestazione.   
+En esta lista es posible indicar el *Título de la propiedad*, correspondiente a las *Propiedades* seleccionadas de la lista **Personalización de datos por tipo de documento** y que aparecerán en la lista de datos del *Control de artículo*.  
+La tabla contiene los mismos tipos de documentos mencionados en **Tipos de documento para la importación**.  
+Son tipos predefinidos por el sistema y no es posible ingresar nuevos o eliminarlos.  
+Se prevén 5 informaciones por cada tipo de dato: *Texto*, *Sí/No*, *Entero*, *Decimal*, *Fecha*.  
+A través de un doble clic en la celda se puede seleccionar la *Entrada del diccionario* deseada para mostrar como encabezado.  
 
-:::tip *Esempio:*   
-per la tipologia documento *Fattura di Acquisto* è possibile indicare l'intestazione corrispondente all'esempio fatto precedentemente per il valore della *Proprietà* di testata *Vostro riferimento*.   
-Tramite il doppio click del mouse sulla colonna *Testo 01* o digitando manualmente la *Voce del dizionerio* inserire *Vostro riferimento*.   
+:::tip *Ejemplo:*  
+Para la tipo de documento *fattura di acquisto* es posible indicar el encabezado correspondiente al ejemplo mencionado anteriormente para el valor de la *Propiedad* de encabezado *vostro riferimento*.  
+A través del doble clic del mouse en la columna *Texto 01* o escribiendo manualmente la *Entrada del diccionario*, ingrese *vostro riferimento*.  
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

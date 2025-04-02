@@ -1,11 +1,11 @@
 ---
-title: Offerte contatto
+title: Ofertas de contacto (Offerte contatto)
 sidebar_position: 11
 ---
 
-Questa è la decima tab dei **Contatti CRM**.
+Esta es la décima pestaña de los **contatti crm**.
 
-In questa tab viene visualizzata la lista delle offerte inserite per il contatto.
-Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle offerte desiderate.
-Facendo doppio click sulla riga dell’offerta la stessa verrà aperta in visualizzazione/modifica.
-E'possibile inoltre creare nuove offerte.
+En esta pestaña se muestra la lista de las ofertas ingresadas para el contacto.  
+En la parte superior de la pestaña hay campos de filtro que permiten realizar una búsqueda más precisa de las ofertas deseadas.  
+Haciendo doble clic en la línea de la oferta, esta se abrirá en modo de visualización/modificación.  
+También es posible crear nuevas ofertas.

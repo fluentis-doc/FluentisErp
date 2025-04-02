@@ -1,34 +1,24 @@
 ---
-title: Gruppi Partite
+title: gruppi partite
 sidebar_position: 2
 ---
 
-La stampa che viene lanciata dalla presente form deve essere utilizzata, in luogo delle altre stampe del modulo, quali Lista partite, Estratto conto a partite aperte e Scadenzario clienti / fornitori , in presenza di raggruppamenti partite.
+La impresión que se genera desde este formulario debe ser utilizada, en lugar de las otras impresiones del módulo, como Lista de partidas, Extracto de cuenta a partidas abiertas y Calendario de clientes / proveedores, en presencia de agrupamientos de partidas.
 
-La gestione delle partite tramite i raggruppamenti rappresenta infatti una metodologia alternativa e particolare rispetto alla classica, e richiede una visualizzazione specifica per ottenere una situazione chiaramente leggibile.
+La gestión de las partidas a través de los agrupamientos representa, de hecho, una metodología alternativa y particular en comparación con la clásica, y requiere una visualización específica para obtener una situación claramente legible.
 
-Per ulteriori** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/ledger-record) **
+Para más **[detalles sobre el agrupamiento de partidas ver aquí.](/docs/finance-area/ledger-records/records/ledger-record)**
 
-La stampa corrisponde alla funzione di ** [visualizzazione a video dei gruppi partite.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping) **
+La impresión corresponde a la función de **[visualización en pantalla de los grupos de partidas.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**
 
+Los campos de filtro del formulario reflejan aquellos previstos para lanzar las [**otras impresiones del módulo a las que se remite**](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).
 
-I campi di filtro della form ricalcano quelli previsti per lanciare le [**altre stampe del modulo alle quali si rinvia**](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).
+**ELEMENTOS ESPECÍFICOS:**
 
-
-
-**ELEMENTI SPECIFICI:**
-
-
-**Tipo Gruppo**: Aperto / Chiuso = Benchè le singole partite partite del gruppo possano essere aperte o chiuse da pagamenti di segno opposto, l'intero gruppo si considera chiuso quando tutte le partite sono chiuse ed il totale dare ed avere del gruppo pareggiano. Pertanto è possibile selezionare questa condizione nel filtro.
+**tipo gruppo**: Abierto / Cerrado (Aperto / Chiuso) = Aunque las partidas individuales del grupo pueden estar abiertas o cerradas por pagos de signo opuesto, todo el grupo se considera cerrado cuando todas las partidas están cerradas y el total de debe y haber del grupo se igualan. Por lo tanto, es posible seleccionar esta condición en el filtro.
 
 ![](/img/it-it/finance-area/maturity-values/reports/maturity-value-grouping/image01.png)
 
-**Elementi dal non visualizzare**: è possibile escludere dalla stampa i dati riferiti alle tipologie selezionate (che si riferiscono ai tipi conto collegati alle anagrafiche).
+**Elementos a no mostrar (Elementi dal non visualizzare)**: es posible excluir de la impresión los datos referidos a los tipos seleccionados (que se refieren a los tipos de cuenta vinculados a los registros).
 
 ![](/img/it-it/finance-area/maturity-values/reports/maturity-value-grouping/image02.png)
-
-
-
-
-
-

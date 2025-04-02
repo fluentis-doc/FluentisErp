@@ -1,27 +1,28 @@
 ---
-title: Aggiornamento lead time disaccoppiato (DLT)
+title: Actualización del tiempo de entrega desacoplado (DLT) (Aggiornamento lead time disaccoppiato (DLT))
 sidebar_position: 2
 ---
-Questa procedura calcola il lead time disaccoppiato (DLT) di tutti gli articoli a buffer, sia che siano in fabbrica che nei centri di distribuzione/hubs.
 
-Questo è un parametro molto importante per determinare la dimensione delle zone di un buffer e quindi anche i livelli di scorta che sono proporzionali al DLT.
+Este procedimiento calcula el tiempo de entrega desacoplado (DLT) de todos los artículos en buffer, ya sea que estén en fábrica o en los centros de distribución/hubs. 
 
-Se un centro distribuzione/hub è rifornito da un hub, il DLT degli articoli in esso stoccati è uguale per tutti e dato dal lead time indicato nella tabella della struttura logistica (a meno che l'articolo non riporti nei parametri Ddmrp un eccezione di fornitura).
+Este es un parámetro muy importante para determinar el tamaño de las zonas de un buffer y, por lo tanto, también los niveles de stock que son proporcionales al DLT. 
 
-Se il centro distribuzione/hub è rifornito dalla fabbrica, ciascun articolo avrà un valore DLT specifico dato dalla somma del lead time di trasporto dalla fabbrica e dal tempo necessario a realizzare il prodotto in fabbrica (nullo solo per quegli articoli che sono buffer in fabbrica).
+Si un centro de distribución/hub es abastecido por un hub, el DLT de los artículos almacenados en él es igual para todos y está dado por el tiempo de entrega indicado en la tabla de la estructura logística (a menos que el artículo indique en los parámetros Ddmrp una excepción de suministro). 
 
-La procedura necessita di informazioni presenti e corrette, pertanto il tipo parte del buffer profile deve essere corretto per gli articoli a buffer, ed in generale il lead time degli articoli delle distinte base deve essere presente (per gli articoli d'acquisto deve essere specificato il fornitore preferenziale con relativo flag e lead time, per gli altri articoli deve essere presente il lead time nei parametri mrp).
+Si el centro de distribución/hub es abastecido por la fábrica, cada artículo tendrá un valor DLT específico dado por la suma del tiempo de entrega de transporte desde la fábrica y el tiempo necesario para fabricar el producto en la fábrica (nulo solo para aquellos artículos que son buffers en la fábrica). 
 
-Gli articoli con dati incongruenti o carenti non verranno presi in considerazione nel calcolo, inoltre al termine della procedura verrà visualizzato un messaggio elencante le incongruenze riscontrate. 
+El procedimiento requiere información presente y correcta; por lo tanto, el tipo de parte del perfil de buffer debe ser correcto para los artículos en buffer, y en general, el tiempo de entrega de los artículos en las listas de materiales debe estar presente (para los artículos de compra debe especificarse el proveedor preferido con su respectivo indicador y tiempo de entrega; para los otros artículos, debe estar presente el tiempo de entrega en los parámetros MRP). 
 
-Per tutti gli articoli di fabbrica che hanno distinta base, la procedura sommerà i lead time di ciascun articolo lungo ogni ramo di distinta fermandosi quando incontra un articolo a Buffer, poichè un articolo a Buffer è già disponibile, quindi non richiede tempo per essere approvvigionato.
+Los artículos con datos incongruentes o faltantes no se tomarán en consideración en el cálculo; además, al finalizar el procedimiento se mostrará un mensaje que enumerará las incongruencias encontradas. 
 
-La maggiore delle somme dei vari rami determina il valore DLT dell'articolo, cioè il tempo necessario per costruire il prodotto.
+Para todos los artículos de fábrica que tienen lista de materiales, el procedimiento sumará los tiempos de entrega de cada artículo a lo largo de cada rama de la lista, deteniéndose cuando encuentra un artículo en buffer, ya que un artículo en buffer está disponible y, por lo tanto, no requiere tiempo para ser abastecido. 
 
-Questo calcolo viene eseguito anche per i prodotti che in fabbrica non sono scorte Ddmrp, poichè gli stessi possono esserlo nei centri di distribuzione/hubs, quindi il relativo DLT è pari al valore DLT in fabbrica più il tempo di trasporto.
+La mayor de las sumas de las diversas ramas determina el valor DLT del artículo, es decir, el tiempo necesario para construir el producto. 
 
-La procedura determina inoltre il percorso critico di ciascun articolo, cioè individua tutti gli articoli che si trovano sulla catena di approvvigionamento più lunga, ovvero quelli che determinano il valore DLT dell'articolo.
+Este cálculo también se realiza para los productos que en fábrica no son existencias Ddmrp, ya que los mismos pueden serlo en los centros de distribución/hubs, por lo que el DLT correspondiente es igual al valor DLT en fábrica más el tiempo de transporte. 
 
-Se si desidera ridurre il valore del DLT di un articolo bisogna scegliere articoli sulla catena critica come nuovi articoli a buffer, poichè scegliere articoli che non sono sulla catena critica non porta alcun beneficio.
+El procedimiento también determina la ruta crítica de cada artículo, es decir, identifica todos los artículos que se encuentran en la cadena de suministro más larga, es decir, aquellos que determinan el valor DLT del artículo. 
 
-Al termine della procedura viene automaticamente chiamata la procedura di aggiornamento delle zone.
+Si se desea reducir el valor del DLT de un artículo, se deben elegir artículos en la cadena crítica como nuevos artículos en buffer, ya que elegir artículos que no están en la cadena crítica no aporta ningún beneficio. 
+
+Al finalizar el procedimiento, se llama automáticamente al procedimiento de actualización de las zonas.

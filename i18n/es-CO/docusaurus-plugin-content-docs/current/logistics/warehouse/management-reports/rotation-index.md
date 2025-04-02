@@ -1,24 +1,24 @@
 ---
-title: Indice di rotazione
+title: indice di rotazione
 sidebar_position: 4
 ---
 
-La stampa si trova sul percorso **Logistica > Magazzino  >  Stampe gestionali > Indice di rotazione** e permette all'utente di interrogare il database per estrapolare una stampa riepilogativa degli articoli e del loro indice di rotazione.
+La impresión se encuentra en la ruta **Logística > Almacén > Impresiones de gestión > indice di rotazione** y permite al usuario consultar la base de datos para extraer una impresión resumida de los artículos y su índice de rotación.
 
-Si chiama indice di rotazione del magazzino o tasso di rotazione del magazzino il rapporto tra la quantità esistente in media in magazzino (la cosiddetta scorta media) in un certo periodo di tempo e la quantità venduta nel corso dello stesso periodo di tempo. 
+Se llama índice de rotación del almacén o tasa de rotación del almacén la relación entre la cantidad existente en promedio en el almacén (la llamada stock promedio) en un cierto período de tiempo y la cantidad vendida durante el mismo período de tiempo.
 
-INDICE DI ROTAZIONE DEL MAGAZZINO = SCORTA MEDIA /SCARICO DI MAGAZZINO 
+INDICE DE ROTACIÓN DEL ALMACÉN = STOCK PROMEDIO / DESCARGA DE ALMACÉN
 
-Questo indice esprime il numero di volte in cui le scorte di merci si rinnovano completamente nell'arco di tempo preso in esame.
+Este índice expresa el número de veces que las existencias de mercancías se renuevan completamente en el período de tiempo considerado.
 
-Il lasso di tempo considerato potrà essere l'anno, ma anche un periodo inferiore (un mese, un trimestre, un semestre, ecc..)
+El período de tiempo considerado puede ser el año, pero también un período inferior (un mes, un trimestre, un semestre, etc.).
 
-Il calcolo dell'indice di rotazione del magazzino è importante per comprendere qual è il tempo necessario affinché, i mezzi  finanziari investiti nelle merci, vengano recuperati.
+El cálculo del índice de rotación del almacén es importante para comprender cuál es el tiempo necesario para que los medios financieros invertidos en las mercancías sean recuperados.
 
 :::note Nota
-Per visualizzare i risultati riguardante l'indice di rotazione è necessario settare il flag **Indice di rotazione** nelle *Causali di magazzino* legate alle movimentazioni degli articoli e contemporaneamente il flag “Rimanenze” deve essere disattivato.
+Para visualizar los resultados relacionados con el índice de rotación es necesario activar el indicador **indice di rotazione** en las *Causales de almacén* relacionadas con los movimientos de los artículos y, al mismo tiempo, el indicador “Existencias” debe estar desactivado.
 :::
 
-Dopo l'inserimento dei parametri desiderati è possibile stampare il report standard oppure personalizzato (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+Después de ingresar los parámetros deseados, es posible imprimir el reporte estándar o personalizado (previa mapeo en la gestión de impresiones). En caso de que se quiera imprimir un reporte personalizado, es necesario elegirlo en el listado en los parámetros de impresión.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

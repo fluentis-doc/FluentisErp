@@ -1,182 +1,181 @@
 ---
-title: Anagrafica lotti e Tracciabilità
+title: Registro de lotes y Trazabilidad (Anagrafica lotti e Tracciabilità)
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-L'anagrafica lotti di Fluentis rappresenta uno strumento indispensabile per la gestione precisa e dettagliata dei lotti all'interno di un sistema di tracciabilità dei prodotti. Questa funzionalità consente agli utenti di cercare e visualizzare i dettagli specifici di ogni lotto mediante un semplice doppio clic, facilitando così il monitoraggio e la gestione delle giacenze.
+:::important ¿Para qué sirve? (A cosa serve)
+El registro de lotes de Fluentis representa una herramienta indispensable para la gestión precisa y detallada de los lotes dentro de un sistema de trazabilidad de productos. Esta funcionalidad permite a los usuarios buscar y visualizar los detalles específicos de cada lote mediante un simple doble clic, facilitando así el monitoreo y la gestión de inventarios.
 
-All'interno della scheda dedicata a ogni singolo lotto, gli utenti possono modificare varie informazioni cruciali, come il fornitore, il codice lotto fornito dal fornitore, note specifiche, e lo stato del lotto. Quest'ultimo, che può essere agevolmente aggiornato, gioca un ruolo fondamentale nel determinare la possibilità di utilizzo del lotto stesso nei documenti di vendita e nelle registrazioni di magazzino. Non solo, ma il sistema prevede anche la gestione di vari stati lotto, che incidono direttamente sulla disponibilità operativa del lotto.
+Dentro de la pestaña dedicada a cada lote, los usuarios pueden modificar varias informaciones cruciales, como el proveedor, el código de lote proporcionado por el proveedor, notas específicas y el estado del lote. Este último, que puede actualizarse fácilmente, juega un papel fundamental en determinar la posibilidad de uso del lote en los documentos de venta y en los registros de inventario. Además, el sistema también prevé la gestión de varios estados de lote, que impactan directamente en la disponibilidad operativa del lote.
 
-Un aspetto distintivo dell'anagrafica lotti è la sezione che consente di visualizzare storicamente i documenti di carico e scarico che hanno coinvolto il lotto, mantenendo così una tracciabilità accurata nel tempo, inoltre, è possibile visualizzare la giacenza attuale suddivisa per magazzino. Grazie a queste funzionalità, l'anagrafica lotti di Fluentis non solo semplifica la gestione operativa, ma contribuisce anche a garantire la compliance normativa in settori dove la tracciabilità è essenziale, come alimentare e farmaceutico.
+Un aspecto distintivo del registro de lotes es la sección que permite visualizar históricamente los documentos de carga y descarga que han involucrado el lote, manteniendo así una trazabilidad precisa en el tiempo. Además, es posible visualizar la existencia actual dividida por almacén. Gracias a estas funcionalidades, el registro de lotes de Fluentis no solo simplifica la gestión operativa, sino que también contribuye a garantizar el cumplimiento normativo en sectores donde la trazabilidad es esencial, como en el alimentario y farmacéutico.
 :::
 
-## Anagrafica lotti
+## Registro de lotes (Anagrafica lotti)
 
-La form visualizza il dettaglio del lotto e si compone di 4 diverse sezioni: 
+El formulario visualiza el detalle del lote y se compone de 4 secciones diferentes: 
 
-### Testata lotto
+### Cabecera de lote (Testata lotto)
 
-In questa sezione vengono visualizzati, con la possibilità di modificarne alcuni, i dati principali relativi al lotto ed in particolare:
+En esta sección se visualizan, con la posibilidad de modificar algunos, los datos principales relacionados con el lote y, en particular:
 
-**Articolo**: nei 3 campi relativi vengono visualizzati classe, codice e descrizione dell'articolo a cui è riferito il lotto. Si tratta sicuramente di un articolo con il flag *Gestione lotti* attivato nell'*Anagrafica articolo* >  tab *Lotti/SN*, altrimenti non sarebbe stato possibile eseguire il carico del lotto per l'articolo stesso;
+**articolo**: en los 3 campos relacionados se muestran la clase, el código y la descripción del artículo al que se refiere el lote. Se trata de un artículo con el indicador *gestione lotti* activado en el *anagrafica articolo* > pestaña *Lotes/SN (Lotti/SN)*, de lo contrario no habría sido posible realizar la carga del lote para ese artículo;  
 
-**Variante**: nei 2 campi relativi vengono visualizzati codice e descrizione della variante dell'articolo a cui è riferito il lotto, se presente;
+**variante**: en los 2 campos correspondientes se muestra el código y la descripción de la variante del artículo al que se refiere el lote, si está presente;  
 
-**Lotto**: in questo campo compare il Codice del lotto. Si tratta di un campo editabile da parte dell'utente, nonostante durante le operazioni di carico possa essere generato automaticamente in base ad alcune regole che vengono impostate nel *Tipo codice lotto* agganciato all'articolo. Si inserisce dapprima un codice e una descrizione del *tipo codice lotto*, si salva la riga e poi si decide quali parametri si vogliono utilizzare per la composizione del *tipo codice lotto* appena creato. Per ogni parametro utilizzato si può decidere da quanti caratteri deve essere formato ed eventualmente anche il carattere di riempimento da utilizzare. Per esempio, con il parametro *Numero progressivo* impostando come carattere di riempimento lo '0' e come Lunghezza '5' verranno creati lotti con come primo numero lo 00000, poi lo 00001, poi lo 00002 e così via. Il *tipo codice lotto* deve poi essere agganciato all'anagrafica articolo nell'apposito campo situato nel tab *Lotti/SerialNumber*, in modo tale che nelle procedure che creano automaticamente il codice lotto per l'articolo in questione il lotto stesso venga generato appunto secondo le regole impostate nel *tipo codice lotto* agganciato all'articolo. Il campo è alfanumerico e può raggiungere la lunghezza di 50 caratteri come limite massimo. Non si tratta dell'identificativo del lotto, in quanto è possibile effettuare più carichi in diversi momenti dello stesso lotto; in questo caso comparirebbero più righe con lo stesso *Codice Lotto* all'interno della griglia della *Ricerca Lotti*;
+**lotto**: en este campo aparece el Código del lote. Es un campo editable por el usuario, a pesar de que durante las operaciones de carga puede generarse automáticamente según algunas reglas establecidas en el *tipo codice lotto* vinculado al artículo. Primero se introduce un código y una descripción del *tipo de código de lote*, se guarda la línea y luego se decide qué parámetros se quieren utilizar para la composición del *tipo de código de lote* recién creado. Para cada parámetro utilizado se puede decidir de cuántos caracteres debe estar formado y, opcionalmente, el carácter de relleno a utilizar. Por ejemplo, con el parámetro *numero progressivo* configurando como carácter de relleno el '0' y como Longitud '5', se crearán lotes con como primer número el 00000, luego el 00001, luego el 00002 y así sucesivamente. El *tipo de código de lote* debe vincularse al registro del artículo en el campo correspondiente ubicado en la pestaña *Lotes/SerialNumber (Lotti/SerialNumber)*, de modo que en los procedimientos que crean automáticamente el código de lote para el artículo en cuestión, el lote mismo se genere de acuerdo con las reglas configuradas en el *tipo de código de lote* vinculado al artículo. El campo es alfanumérico y puede alcanzar una longitud máxima de 50 caracteres. No se trata del identificador del lote, ya que es posible realizar múltiples cargas en diferentes momentos del mismo lote; en este caso aparecerían varias líneas con el mismo *Código de Lote* dentro de la cuadrícula de la *Búsqueda de Lotes (Ricerca Lotti)*;  
 
-**Fornitore**: in questo campo si andrà ad indicare il conto/sottoconto/descrizione del fornitore;
+**fornitore**: en este campo se indica la cuenta/subcuenta/descripción del proveedor;  
 
-**Produttore**: in questo campo si andrà ad indicare il nomignolo/ragione sociale del produttore;
+**produttore**: en este campo se indica el apodo/razón social del productor;  
 
-**Codice fornitore**: in questo campo compare il codice del *Lotto fornitore*, quindi di solito il nome che il fornitore attribuisce al lotto. Si tratta di un campo editabile da parte dell'utente e non generabile automaticamente durante le operazioni di carico. Anch'esso può raggiungere la lunghezza di 50 caratteri come limite massimo e può essere identico anche per lotti diversi di articoli diversi;
+**codice fornitore**: en este campo aparece el código del *Lote proveedor*, que generalmente es el nombre que el proveedor asigna al lote. Es un campo editable por el usuario y no generable automáticamente durante las operaciones de carga. También puede alcanzar la longitud máxima de 50 caracteres y puede ser idéntico para lotes diferentes de artículos diferentes;  
 
-**Tipo report etichetta**: in questo campo viene inserito il tipo ri etichetta da stampare per questo lotto;
+**tipo report etichetta**: en este campo se inserta el tipo de etiqueta a imprimir para este lote;  
 
-**Data inizio**: in questo campo compare di solito la data in cui è stato caricato il lotto, editabile dall'utente. Se il lotto è stato caricato tramite la registrazione di magazzino, questa data viene proposta identica alla data in cui è stata creata la registrazione; se il lotto è stato caricato tramite carico di una DDT di acquisto o registrazione rientro di conto lavoro, questa data viene impostata come uguale alla data del DDT di acquisto o di conto lavoro (a meno che all'interno del DDT l'utente non l'abbia modificata manualmente); se il lotto è stato caricato tramite registrazione di una segnalazione di produzione, questa data viene proposta come identica alla data della segnalazione di produzione;
+**data inizio**: en este campo aparece generalmente la fecha en la que se ha cargado el lote, editable por el usuario. Si el lote ha sido cargado a través del registro de inventario, esta fecha se propone idéntica a la fecha en la que se ha creado el registro; si el lote ha sido cargado a través de la carga de un DDT de compra o registro de retorno de trabajo por cuenta, esta fecha se establece igual a la fecha del DDT de compra o de cuenta de trabajo (a menos que dentro del DDT el usuario no la haya modificado manualmente); si el lote ha sido cargado a través del registro de una señal de producción, esta fecha se propone idéntica a la fecha de la señal de producción;  
 
-**Data scadenza**: in questo campo compare la data di scadenza del lotto, editabile dall'utente, che viene calcolata, in sede di creazione del lotto e quindi di carico del relativo movimento di magazzino, partendo dalla data di inizio e sommando i giorni di validità del lotto inseriti nel tab *Lotti/SerialNumber* dell'anagrafica articolo;
+**data scadenza**: en este campo aparece la fecha de caducidad del lote, editable por el usuario, que se calcula, al crear el lote y por lo tanto al cargar el movimiento de inventario relacionado, a partir de la fecha de inicio y sumando los días de validez del lote introducidos en la pestaña *Lotes/SerialNumber (Lotti/SerialNumber)* del registro del artículo;  
 
-**Quantità iniziale**: in questo campo compare la quantità iniziale caricata per il lotto tramite il primo documento che ha caricato il lotto stesso;
+**quantità iniziale**: en este campo aparece la cantidad inicial cargada para el lote a través del primer documento que cargó el lote;  
 
-**Numero colli**: indica il numero di colli del lotto caricato;
+**numero colli**: indica el número de bultos del lote cargado;  
 
-**Note**: in questo campo compaiono le note inserite nella registrazione di magazzino contestualmente al carico del lotto. Il campo è editabile dall'utente e visualizzabile anche nella Ricerca Lotti, come sopra specificato;
+**note**: en este campo aparecen las notas introducidas en el registro de inventario junto con la carga del lote. El campo es editable por el usuario y también es visible en la Búsqueda de Lotes, como se mencionó anteriormente;  
 
-**Stato lotto**: la combo visualizza lo stato del lotto. Esso è modificabile dall'utente e richiama dati provenienti dall'apposita tabella *Stati lotto*. Lo stato del lotto determina la possibilità di utilizzare o meno il lotto nei documenti di vendita, di produzione e nelle registrazioni di scarico di magazzino. Si tratta comunque di una gestione non vincolante, l'utente non è quindi obbligato a sfruttare la funzionalità della tabella *Stati lotto*;
+**stato lotto**: la combinación muestra el estado del lote. Este es modificable por el usuario y llama datos provenientes de la tabla correspondiente *Estados de lote (Stati lotto)*. El estado del lote determina la posibilidad de utilizar o no el lote en los documentos de venta, producción y registros de descarga de inventario. Sin embargo, es una gestión no vinculante, el usuario no está obligado a utilizar la funcionalidad de la tabla *Estados de lote (Stati lotto)*;  
 
-**Valutazione lotto**: la combo visualizza il dato relativo valutazione del lotto. Esso è modificabile dall'utente e richiama dati provenienti dall'apposita tabella *Valutazione lotto*. Questo dato ha funzioni puramente descrittive, senza avere quindi nessuna influenza particolare su procedure, risultando quindi anch'esso facoltativo;
+**valutazione lotto**: la combinación muestra el dato relativo a la valoración del lote. Este es modificable por el usuario y llama datos provenientes de la tabla correspondiente *valutazione lotto*. Este dato tiene funciones puramente descriptivas, sin tener por lo tanto ninguna influencia particular en los procedimientos, resultando así también opcional;  
 
-**Lotto vendibile**: il flag, se attivo, evidenzia che il lotto è disponibile per essere prelevato all'interno dei documenti di vendita, di produzione o nelle registrazioni di magazzino. Si tratta praticamente di una possibilità che ha l'utente per definire la possibilità di prelevare o meno un lotto, in alternativa alla gestione, più complessa ed articolata, degli stati lotto;
+**lotto vendibile**: el indicador, si está activo, resalta que el lote está disponible para ser retirado dentro de los documentos de venta, producción o en los registros de inventario. Es prácticamente una posibilidad que tiene el usuario para definir la posibilidad de retirar o no un lote, en alternativa a la gestión, más compleja y articulada, de los estados de lote;  
 
-**Chiuso**: il flag, se attivato, fa si che la quantità di quel lotto non venga considerata per il calcolo della giacenza e della disponibilità. Questo flag può solo essere attivato manualmente.        
+**chiuso**: el indicador, si está activado, hace que la cantidad de ese lote no se considere para el cálculo de la existencia y la disponibilidad. Este indicador solo puede activarse manualmente.        
 
-### Carico
+### Carga (Carico)
 
-In questa sezione vengono visualizzati i dati fondamentali dei documenti che hanno contribuito ad effettuare il carico del lotto. Generalmente compare sempre il dettaglio della *Registrazione di magazzino* che ha caricato il lotto; se questa è stata generata tramite il carico di un documento (bolla, rientro, etc.), allora compare una riga in cui escono i dettagli anche di questo documento.
+En esta sección se muestran los datos fundamentales de los documentos que han contribuido a realizar la carga del lote. Generalmente siempre aparece el detalle del *registrazione di magazzino* que ha cargado el lote; si esta ha sido generada a través de la carga de un documento (albarán, retorno, etc.), entonces aparece una línea con los detalles de este documento también.
 
-*Con doppio click sulla riga del documento è possibile, in accordo con i diritti dell'utente, aprire in sola visualizzazione il documento relativo*.
+*Con doble clic en la línea del documento es posible, de acuerdo con los derechos del usuario, abrir en solo visualización el documento correspondiente.*
 
-**Quantità**: in questo campo viene visualizzata la quantità del lotto che è stata impegnata nel documento;
+**quantità**: en este campo se visualiza la cantidad del lote que ha sido comprometida en el documento;  
 
-**Unità di misura**: indica l'unità di misura che è stata utilizzata nel documento;
+**unità di misura**: indica la unidad de medida que se ha utilizado en el documento;  
 
-**Numero colli**: indica il numero di colli;
+**numero colli**: indica el número de bultos;  
 
-**Data inserimento**: indica la data di inserimento;
+**data inserimento**: indica la fecha de inserción;  
 
-**Stato Lotto**: indica lo stato del lotto;
+**stato lotto**: indica el estado del lote;  
 
-**Chiuso forzatamente**: se attivo, indica che il lotto è stato chiuso forzatamente;
+**chiuso forzatamente**: si está activo, indica que el lote ha sido cerrado forzosamente;  
 
-**Documento di riferimento**: in questo campo viene visualizzato il tipo di documento che ha generato il carico del lotto;
+**documento di riferimento**: en este campo se visualiza el tipo de documento que ha generado la carga del lote;  
 
-**Numero**: in questo campo viene visualizzato il numero del documento;
+**numero**: en este campo se visualiza el número del documento;  
 
-**Data inserimento**: in questo campo viene visualizzata la data del documento;
+**data inserimento**: en este campo se visualiza la fecha del documento;  
 
-**Magazzino**: in questi campi compaiono il codice e la descrizione del magazzino su cui è stato caricato il lotto;
+**magazzino**: en estos campos aparecen el código y la descripción del almacén donde se ha cargado el lote;  
 
-**Ubicazione**: in questi campi compaiono il codice e la descrizione dell'ubicazione;
+**ubicazione**: en estos campos aparecen el código y la descripción de la ubicación;  
 
-**Causale**: in questi campi compaiono il codice e la descrizione della causale utilizzata per la creazione di quel movimento di carico;
+**causale**: en estos campos aparecen el código y la descripción de la causa utilizada para la creación de ese movimiento de carga;  
 
-**Cliente/Fornitore**: in questi campi compaiono conto, sottoconto e descrizione relative al cliente o fornitore;
+**cliente/fornitore**: en estos campos aparecen cuenta, subcuenta y descripción relativas al cliente o proveedor;  
 
-**Progetto**: in questo campo compare la commessa di vendita, editabile dall'utente, legata al lotto. Di solito si tratta della commessa di vendita agganciata alla riga dell'articolo che è stata caricata e che ha caricato il lotto stesso;
+**progetto**: en este campo aparece la orden de venta, editable por el usuario, vinculada al lote. Generalmente se trata de la orden de venta vinculada a la línea del artículo que ha sido cargada y que ha cargado el lote mismo;  
 
-### Altri documenti di carico
+### Otros documentos de carga
 
-In questa sezione vengono visualizzati i dati fondamentali degli altri eventuali documenti in cui il lotto è stato impegnato, in relazione al documento selezionato nella griglia superiore.
+En esta sección se muestran los datos fundamentales de los demás documentos en los que el lote ha sido comprometido, en relación al documento seleccionado en la cuadrícula superior.
 
-### Scarico
+### Descarga (Scarico)
 
-In questa sezione vengono visualizzati i dati fondamentali di tutti i documenti, in ordine cronologico, che impegnano il lotto. 
+En esta sección se visualizan los datos fundamentales de todos los documentos, en orden cronológico, que comprometen el lote. 
 
-**Quantità**: in questo campo viene visualizzata la quantità del lotto che è stata impegnata nel documento;
+**quantità**: en este campo se visualiza la cantidad del lote que ha sido comprometida en el documento;  
 
-**Unità di misura**: indica l'unità di misura che è stata utilizzata nel documento;
+**unità di misura**: indica la unidad de medida que se ha utilizado en el documento;  
 
-**Data inserimento**: indica la data di inserimento;
+**data inserimento**: indica la fecha de inserción;  
 
-**Stato Lotto**: indica lo stato del lotto;
+**stato lotto**: indica el estado del lote;  
 
-**Documento**: in questo campo viene visualizzato il tipo di documento che ha per primo impegnato il lotto. Esso può essere un ordine di produzione, un ordine cliente, una DDT di vendita, una fattura di vendita, una lista di prelievo, una DDT di consegna di conto lavoro, un rientro di conto lavoro;
+**documento**: en este campo se visualiza el tipo de documento que ha comprometido por primera vez el lote. Puede ser una orden de producción, un pedido de cliente, un DDT de venta, una factura de venta, una lista de retiro, un DDT de entrega de trabajo por cuenta, un retorno de trabajo por cuenta;  
 
-**Numero**: in questo campo viene visualizzato il numero del documento;
+**numero**: en este campo se visualiza el número del documento;  
 
-**Data**: in questo campo viene visualizzata la data del documento;
+**data**: en este campo se visualiza la fecha del documento;  
 
-*Con doppio click sulla riga del documento è possibile, in accordo con i diritti dell'utente, aprire in sola visualizzazione il documento relativo*.
+*Con doble clic en la línea del documento es posible, de acuerdo con los derechos del usuario, abrir en solo visualización el documento correspondiente.*
 
-**Magazzino**: in questi campi compaiono il codice e la descrizione del magazzino su cui è stato caricato il lotto;
+**magazzino**: en estos campos aparecen el código y la descripción del almacén donde se ha cargado el lote;  
 
-**Ubicazione**: in questi campi compaiono il codice e la descrizione dell'ubicazione;
+**ubicazione**: en estos campos aparecen el código y la descripción de la ubicación;  
 
-**Causale**: in questi campi compaiono il codice e la descrizione della causale utilizzata per la creazione di quel movimento di carico;
+**causale**: en estos campos aparecen el código y la descripción de la causa utilizada para la creación de ese movimiento de carga;  
 
-**Cliente/Fornitore**: in questi campi compaiono conto, sottoconto e descrizione relative al cliente o fornitore;
+**cliente/fornitore**: en estos campos aparecen cuenta, subcuenta y descripción relativas al cliente o proveedor;  
 
-**Progetto**: in questo campo compare la commessa di vendita, editabile dall'utente, legata al lotto. Di solito si tratta della commessa di vendita agganciata alla riga dell'articolo che è stata caricata e che ha caricato il lotto stesso;
+**progetto**: en este campo aparece la orden de venta, editable por el usuario, vinculada al lote. Generalmente se trata de la orden de venta vinculada a la línea del artículo que ha sido cargada y que ha cargado el lote mismo;  
 
-### Altri documenti di scarico
+### Otros documentos de descarga
 
-In questa sezione vengono visualizzati i dati fondamentali degli altri eventuali documenti in cui il lotto è stato impegnato, in relazione al documento selezionato nella griglia superiore.
+En esta sección se muestran los datos fundamentales de los otros documentos en los que el lote ha sido comprometido, en relación al documento seleccionado en la cuadrícula superior.
 
-**Tipo documento**: in questo campo viene visualizzato il tipo di documento all'interno del quale è presente il lotto, in relazione al documento selezionato nella griglia superiore. Esso può essere una DDT di vendita, una fattura di vendita, una lista di prelievo, una DDT di consegna di conto lavoro, un rientro di conto lavoro;
+**tipo documento**: en este campo se visualiza el tipo de documento dentro del cual está presente el lote, en relación al documento seleccionado en la cuadrícula superior. Puede ser un DDT de venta, una factura de venta, una lista de retiro, un DDT de entrega de trabajo por cuenta, un retorno de trabajo por cuenta;  
 
-**Numero**: in questo campo viene visualizzato il numero del documento;
+**numero**: en este campo se visualiza el número del documento;  
 
-**Data**: in questo campo viene visualizzata la data del documento.
+**data**: en este campo se visualiza la fecha del documento.
 
-*Con doppio click sulla riga del documento è possibile, in accordo con i diritti dell'utente, aprire in sola visualizzazione il documento relativo*.
+*Con doble clic en la línea del documento es posible, de acuerdo con los derechos del usuario, abrir en solo visualización el documento correspondiente.*
 
-### Visualizzazione Giacenze
+### Visualización de Existencias (Visualizzazione Giacenze)
 
-In questo tab è possibile visualizzare la giacenza del lotto suddivisa per magazzino.
+En esta pestaña es posible visualizar la existencia del lote dividida por almacén.
 
-La griglia si compone dei seguenti campi:
+La cuadrícula se compone de los siguientes campos:
 
-**Codice**: indica il codice del magazzino;
+**codice**: indica el código del almacén;  
 
-**Descrizione**: indica la descrizione del magazzino;
+**descrizione**: indica la descripción del almacén;  
 
-**Unità di misura**: indica l'unità di misura;
+**unità di misura**: indica la unidad de medida;  
 
-**Quantità totale caricata**: indica la quantità totale caricata di quell'articolo per quel lotto;
+**Cantidad total cargada (Quantità totale caricata)**: indica la cantidad total cargada de ese artículo para ese lote;  
 
-**Quantità giacenza**: indica la giacenza attuale di quell'articolo per quel lotto;
+**Cantidad en existencia (Quantità giacenza)**: indica la existencia actual de ese artículo para ese lote;  
 
-**Quantità disponibile**: indica la giacenza disponibile di quell'articolo per quel lotto.
+**quantità disponibile**: indica la existencia disponible de ese artículo para ese lote.
 
 
-## Tracciabilità lotto
+## Trazabilidad del lote (Tracciabilità lotto)
 
-:::important A cosa serve
-La tracciabilità lotto di Fluentis è un modulo progettato per garantire una gestione efficiente e precisa dei lotti di prodotti all'interno del ciclo produttivo e logistico. Questa funzionalità permette agli utenti di monitorare e registrare il percorso di ogni lotto, dal momento della produzione o acquisto fino alla sua utilizzazione finale, contribuendo a una gestione trasparente e sicura dei materiali.
+:::important ¿Para qué sirve? (A cosa serve)
+La trazabilidad del lote de Fluentis es un módulo diseñado para garantizar una gestión eficiente y precisa de los lotes de productos dentro del ciclo productivo y logístico. Esta funcionalidad permite a los usuarios monitorear y registrar el recorrido de cada lote, desde el momento de la producción o compra hasta su utilización final, contribuyendo a una gestión transparente y segura de los materiales.
 
-Utilizzando la sezione dedicata alla tracciabilità, gli utenti possono generare report dettagliati per i lotti selezionati, non solo per visualizzare le informazioni relative al lotto stesso, ma anche per analizzare in quali articoli è stato impiegato e quali materie prime hanno contribuito alla sua produzione. Questo processo è facilitato da una serie di filtri personalizzabili che consentono di adattare la ricerca alle specifiche esigenze aziendali.
+Utilizando la sección dedicada a la trazabilidad, los usuarios pueden generar informes detallados para los lotes seleccionados, no solo para visualizar la información relacionada con el lote mismo, sino también para analizar en qué artículos ha sido utilizado y qué materias primas han contribuido a su producción. Este proceso se facilita por una serie de filtros personalizables que permiten adaptar la búsqueda a las necesidades específicas de la empresa.
 
-Due dei principali strumenti di tracciabilità includono:
+Dos de las principales herramientas de trazabilidad incluyen:
 
-Tracciabilità Impiego: che permette di visualizzare tutti gli articoli nei quali è stato utilizzato il lotto in questione, garantendo così una verifica dettagliata della tracciabilità verso l'alto.
-Tracciabilità Composizione: che consente di verificare quali articoli gestiti a lotti sono stati impiegati per la produzione del lotto selezionato, fornendo una chiara visione della tracciabilità verso il basso.
+Trazabilidad de Uso: que permite visualizar todos los artículos en los que se ha utilizado el lote en cuestión, garantizando así una verificación detallada de la trazabilidad hacia arriba.  
+Trazabilidad de Composición: que permite verificar qué artículos gestionados por lotes han sido utilizados para la producción del lote seleccionado, proporcionando una clara visión de la trazabilidad hacia abajo.
 
-Attraverso questa funzionalità di tracciabilità lotto, Fluentis offre una soluzione robusta per le aziende, specialmente in settori come quello alimentare e farmaceutico, dove la rintracciabilità è fondamentale per la sicurezza e la compliance alle normative vigenti.
+A través de esta funcionalidad de trazabilidad de lotes, Fluentis ofrece una solución robusta para las empresas, especialmente en sectores como el alimentario y farmacéutico, donde la trazabilidad es fundamental para la seguridad y el cumplimiento de las normativas vigentes.
 :::
 
-Questa form permette di stampare un report contenente il dettaglio della tracciabilità del lotto selezionato.
+Este formulario permite imprimir un informe que contiene el detalle de la trazabilidad del lote seleccionado.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** presente en la *Ribbon bar* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Da notare che all'interno della sezione dedicata ai filtri sono presenti i seguenti flags:
+Cabe destacar que dentro de la sección dedicada a los filtros están presentes los siguientes indicadores:
 
-- **Tracciabilità impiego**: se attivo, permette di visualizzate in quali articoli è stato utilizzato il lotto dell'articolo che stiamo considerando; quindi, verifica la tracciabilità verso l'alto;      
-- **Tracciabilità composizione**: se attivo, permette di visualizzate quali articoli (gestiti a lotti) sono stati utilizzato per la produzione del lotto dell'articolo che stiamo considerando; quindi, verifica la tracciabilità verso il basso.      
+- **tracciabilità impiego**: si está activo, permite visualizar en qué artículos ha sido utilizado el lote del artículo que estamos considerando; por lo tanto, verifica la trazabilidad hacia arriba;  
+- **tracciabilità composizione**: si está activo, permite visualizar qué artículos (gestionados por lotes) han sido utilizados para la producción del lote del artículo que estamos considerando; por lo tanto, verifica la trazabilidad hacia abajo.      
 
-Questi due flags, di default sono sempre attivi, ma l'utente può attivarli o disattivarla a seconda delle esigenze.
+Estos dos indicadores, por defecto, siempre están activos, pero el usuario puede activarlos o desactivarlos según sea necesario.
 
-Dopo aver selezionato il lotto di interesse, basterà cliccare su stampa oppure su anteprima di stampa per poter visualizzare il report ocn i risultati cercati.
+Después de seleccionar el lote de interés, basta con hacer clic en imprimir o en vista previa de impresión para poder visualizar el informe con los resultados buscados.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

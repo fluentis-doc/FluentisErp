@@ -1,8 +1,8 @@
 ---
-title: Categoria Commerciale
+title: categoria commerciale
 sidebar_position: 7
 ---
 
-Questa è la sesta tab dei **Contatti CRM**.
+Esta es la sexta pestaña de los **contatti crm**.
 
-In questa tab è possibile inserire e visualizzare la categorie commerciale di appartenenza dell’azienda. È sufficiente selezionare la [Categoria commerciale](/docs/configurations/tables/crm/contacts/commercial-category) così come da tabella.
+En esta pestaña es posible ingresar y visualizar la categoría comercial a la que pertenece la empresa. Simplemente se requiere seleccionar la [Categoría comercial (Categoria commerciale)](/docs/configurations/tables/crm/contacts/commercial-category) según se indica en la tabla.

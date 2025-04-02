@@ -1,28 +1,28 @@
 ---
-title: Dettaglio
+title: dettaglio
 sidebar_position: 2
 ---
 
-Nella prima sezione ***Importo Commissioni*** si possono indicare: 
+En la primera sección **importo commissioni*** se pueden indicar: 
 
-**Per operazione**: utilizzato nell'accredito effetti 
-**Per massimo scoperto** (non utilizzato automaticamente), 
-**Varie** (non utilizzato automaticamente),
-**Per insoluto**: Utilizzato come rivalsa spese e contabilizzazione a costo nella procedura di creazione insoluto e inserita nella testata del nuovo insoluto nel campo apposito.
-**Anticipo Fattura** utilizzato per inserire automaticamente una commissione nel modulo [Anticipi&Incassi](/docs/treasury/advance/advances-collections)
+**per operazione**: utilizado en el acreditamiento de efectos;  
+**per massimo scoperto** (no utilizado automáticamente);  
+**varie** (no utilizado automáticamente);  
+**per insoluto**: utilizado como reembolso de gastos y contabilización a costo en el procedimiento de creación de impagos e insertado en la cabecera del nuevo impago en el campo correspondiente.  
+**anticipo fattura** utilizado para insertar automáticamente una comisión en el módulo [Anticipos&Cobros (Anticipi&Incassi)](/docs/treasury/advance/advances-collections).  
 
-Nelle griglie **Attivi**/**Passivi** ci sono gli scaglioni dei tassi di interessi attivi/passivi da applicare.
+En las cuadrículas **attivi**/**passivi** están los tramos de las tasas de interés activos/pasivos que se aplicarán.
 
-**Data**: entrata in vigore scaglione;
+**data**: entrada en vigor del tramo;  
 
-**Scaglione**: valore fino al quale è valido il tasso;
+**scaglione**: valor hasta el cual es válida la tasa;  
 
-**Tasso**: valore percentuale;
+**tasso**: valor porcentual;  
 
-**Codice Tasso**: combo box che permette la scelta i tipi inseriti nella tabella collegata *Tipo tasso bancario* (*Configurazione > Tabelle > Impostazioni generali > Tipo Tasso Bancario*). La tabella permette di codificare delle tipologie di tasso bancario e definire se sono valide per gli interessi attivi o passivi.
+**Código de Tasa (Codice Tasso)**: combo box que permite seleccionar los tipos incluidos en la tabla relacionada *tipo tasso bancario* (*Configuración > Tablas > Configuración general > Tipo Tasso Bancario*). La tabla permite codificar los tipos de tasas bancarias y definir si son válidas para los intereses activos o pasivos.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail/image04.png)
 
-*Pulsanti specifici*:
-> **Cancella attivi**: per cancellare i tassi attivi selezionati.  
-> **Cancella passivi**: per cancellare i tassi passivi selezionati. 
+*Botones específicos (Pulsanti specifici)*:  
+> **cancella attivi**: para eliminar las tasas activas seleccionadas.  
+> **cancella passivi**: para eliminar las tasas pasivas seleccionadas.

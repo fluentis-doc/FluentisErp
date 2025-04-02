@@ -1,21 +1,21 @@
 ---
-title: Parametri magazzino carico/scarico per utente
+title: parametri magazzino carico/scarico per utente
 sidebar_position: 2
 ---
 
-I **Parametri magazzino carico/scarico per utente** permettono di introdurre delle restrizioni per gli utenti. 
-In assenza di questi parametri, l’utente può effettuare le operazioni di movimentazione su qualsiasi magazzino, ma questo implica il dover scegliere manualmente un magazzino all’interno delle singole form con relativa causale. 
-Ovviamente questa operatività non è corretta e non è gestibile dall’operatore, ma con questi parametri è possibile indicare per ciascuna form e ciascun operatore, il *magazzino* e la *casuale* di default che saranno precompilate all’apertura della form.
+Los **parametri magazzino carico/scarico per utente** permiten introducir restricciones para los usuarios.  
+En ausencia de estos parámetros, el usuario puede realizar las operaciones de movimiento en cualquier almacén, pero esto implica tener que elegir manualmente un almacén dentro de los formularios individuales con su respectivo motivo.  
+Obviamente, esta operación no es correcta y no es manejable por el operador; pero con estos parámetros, es posible indicar para cada formulario y cada operador, el *almacén* y la *causal* por defecto que serán precompletados al abrir el formulario.
 
-#### Campi specifici
+#### Campos específicos
 
-> **Area**: indica l'area di appartenenza della form;      
-> **Modulo**: indica il modulo di appartenenza della form;       
-> **Form**: indica il nome della form;  
-> **Operatore**: indica il nome dell'operatore;       
-> **Magazzino**: indica il codice del magazzino da indicare di defualt nella form;        
-> **Descrizione magazzino**: indica la descrizione del magazzino da indicare di defualt nella form;         
-> **Causali di magazzino**: indica il codice della causale da indicare di defualt nella form;        
-> **Descrizione causale**: indica la descrizione della causale da indicare di defualt nella form.
+> **area**: indica el área de pertenencia del formulario;  
+> **modulo**: indica el módulo de pertenencia del formulario;  
+> **form**: indica el nombre del formulario;  
+> **operatore**: indica el nombre del operador;  
+> **magazzino**: indica el código del almacén a indicar por defecto en el formulario;  
+> **descrizione magazzino**: indica la descripción del almacén a indicar por defecto en el formulario;  
+> **causali di magazzino**: indica el código de la causal a indicar por defecto en el formulario;  
+> **descrizione causale**: indica la descripción de la causal a indicar por defecto en el formulario.
 
-Nei paragrafi dedicati alle form del [WMS](/docs/logistics/wms/wms-intro), sono indicati i **Parametri magazzino di carico/scarico per utente** da inserire per ciascuna di esse.
+En los párrafos dedicados a los formularios del [WMS](/docs/logistics/wms/wms-intro), se indican los **parametri magazzino carico/scarico per utente (Parametri magazzino di carico/scarico per utente)** que deben ser ingresados para cada uno de ellos.

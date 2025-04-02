@@ -1,8 +1,8 @@
 ---
-title: Business Areas - Master schedule
+title: Áreas de Negocio - Cronograma Maestro (Business Areas - Master schedule)
 sidebar_position: 4
 ---
 
-**Fluentis 2023 - È abilitato DDMRP** (codice FS-MS-MPS-DDMRP-1): consente di abilitare il DDMRP
+**fluentis 2023 - è abilitato ddmrp** (código FS-MS-MPS-DDMRP-1): permite habilitar el DDMRP. 
 
-**Fluentis FCS** (codice FS-MS-FCS): abilita Fluentis FCS
+**fluentis fcs** (código FS-MS-FCS): habilita Fluentis FCS.

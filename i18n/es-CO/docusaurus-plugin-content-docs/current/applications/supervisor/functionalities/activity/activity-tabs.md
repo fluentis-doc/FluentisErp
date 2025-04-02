@@ -1,41 +1,41 @@
 ---
-title: Tabs dell'Attività
+title: Pestañas de la Actividad (Tabs dell'Attività)
 #hide_title: true
-sidebar_label: Tabs dell'Attività
+sidebar_label: Pestañas de la Actividad (Tabs dell'Attività)
 sidebar_position: 1
 ---
 
-:::danger Nota
-Una volta aperta la form di dettaglio dell'attività, nella parte superiore sono presenti alcuni parametri standard come *Codice*, *Nome*, *Descrizione*, *Data Crazione*, *Data Ultima Modifica*, *Gruppo* e *Tipo Attività*. Per questi ultimi due, bisogna prestare molta attenzione, perchè determinano come si andrà a comporre l'attività.
+:::danger Nota (Nota)
+Una vez abierta la forma de detalle de la actividad, en la parte superior se encuentran algunos parámetros estándar como *codice*, *nome*, *descrizione*, *Fecha de Creación (Data Crazione)*, *data ultima modifica*, *gruppo* y *tipo attività*. Para estos dos últimos, es necesario prestar mucha atención, porque determinan cómo se compondrá la actividad.
 :::
 
-### Tabs attività
+### Pestañas de actividades (Tabs attività)
 
-La form delle attività è composta da una form di ricerca dedicata composta da:
-* un **ribbon menu** per la gestione delle principali operazioni standard.
-* un **filtro standard**.
-* una **griglia dei risultati**, che mostra la lista delle attività divise in gruppi e sottogruppi.
+La forma de actividades está compuesta por un formulario de búsqueda dedicado, que incluye:
+* un **menú ribbon** para la gestión de las principales operaciones estándar.  
+* un **filtro estándar**.  
+* una **cuadrícula de resultados**, que muestra la lista de actividades divididas en grupos y subgrupos.  
 
 ![alt text](/img/it-it/applications/supervisor/supervisor6.png)
 
-### Parametri Collegabili
+### Parámetros Vinculables (Parametri Collegabili)
 
-Tutte le tipologie di Attività hanno dei *Parametri Collegabili* (sia di input che di output), questi parametri, diversamente da quelli globali, hanno una visibilità locale all'intenro dell'attività, task o evento.
-Questi permettono di definire tutti i parametri che verrano collegati all'attività in input e in output.  
-Questa configurazione verrà poi associata al blocchetto fruibile tramite Task permettendo di gestire i parametri.
+Todos los tipos de Actividades tienen *Parámetros Vinculables* (tanto de entrada como de salida); estos parámetros, a diferencia de los globales, tienen visibilidad local dentro de la actividad, tarea o evento.  
+Estos permiten definir todos los parámetros que se vincularán a la actividad en entrada y en salida.  
+Esta configuración luego se asociará al bloque accesible a través de Tareas, permitiendo gestionar los parámetros.  
 
-Per creare un parametro è necessario popolare:
-* **Codice** > riporta il codice del parametro.
-* **Nome** / **Descrizione** > per indicare nome e descrizione localizzate in base al dizionario.
-* **Input parameter** > permette di definire se il parametro deve essere letto in input o output.
-* **Required** > indica i parametri obbligatori, che quindi verrano esposti automaticamente sul blocchetto.
-* **Type** > indica il tipo di dato da associare al parametro.
-* **Global Parameter** > permette di utilizzare un parametro globale per valorizzare il parametro specifico.
+Para crear un parámetro es necesario completar:
+* **codice** > indica el código del parámetro.  
+* **Nombre (Nome) / Descripción (Descrizione)** > para indicar nombre y descripción localizados según el diccionario.  
+* **Parámetro de entrada (Input parameter)** > permite definir si el parámetro debe ser leído en entrada o salida.  
+* **Requerido (Required)** > indica los parámetros obligatorios, que se expondrán automáticamente en el bloque.  
+* **Tipo (Type)** > indica el tipo de dato a asociar con el parámetro.  
+* **Parámetro Global (Global Parameter)** > permite usar un parámetro global para valorar el parámetro específico.  
 
-### Configurazione Attività
+### Configuración de Actividad (Configurazione Attività)
 
-Il tab **Configurazione Attività** permette di configurare l'attività specificandone i parametri richiesti per il suo funzionamento.
+La pestaña **configurazione attività** permite configurar la actividad especificando los parámetros requeridos para su funcionamiento.  
 
-In base alla tipologia d'attività, ovvero su che tipologia è basata (Script, Datasource, Run Report, SQL Query, Stored Procedure, Mail Template), saranno disponibili diverse opzioni di parametrizzazione.
+Según el tipo de actividad, es decir, en qué tipo se basa (Script, Fuente de datos, Ejecutar Informe, Consulta SQL, Procedimiento Almacenado, Plantilla de Correo), estarán disponibles diferentes opciones de parametrización.  
 
-Nel pagina **Tipi di attività** si analizzano tutte le tipologie.
+En la página **Tipos de actividades (Tipi di attività)** se analizan todos los tipos.

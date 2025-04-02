@@ -1,17 +1,17 @@
 ---
-title: Inserimento inventari fisici
+title: Inserción de inventarios físicos (Inserimento inventari fisici)
 sidebar_position: 4
 ---
 
-La form si apre tramite il percorso **Logistica > Inventari fisici**, cliccando sul pulsante **Nuovo**.
+El formulario se abre a través de la ruta **Logística > Inventarios físicos**, haciendo clic en el botón **nuovo**.
 
-*Procedura*
+*procedura*
 
-Inserire il numero, la data, la descrizione, eventuali note e l'operatore. 
-Il flag **Chiusa** permette, una volta eseguite le differenze inventariali, di rendere chiuso un inventario che non verrà quindi più preso in considerazione per la procedura di allineamento giacenze.
+Ingrese el número, la fecha, la descripción, cualquier nota y el operador.  
+El indicador **chiusa** permite, una vez realizadas las diferencias inventariales, cerrar un inventario que no será considerado para el procedimiento de alineación de existencias.
 
-Una volta inserito l'inventario è necessario completare la griglia delle liste inventariali che compongono l'inventario, specificando il **Tipo** lista, l'**Operatore** e il **Magazzino** di riferimento. E' inoltre possibile inserire una *data chiusura* per fare in modo che la lista non venga presa in considerazione per i calcoli delle differenze inventariali.  
+Una vez ingresado el inventario, es necesario completar la cuadrícula de las listas inventariales que componen el inventario, especificando el **tipo** de lista, el **Operador** y el **magazzino** de referencia. También es posible ingresar una *data chiusura* para que la lista no se considere para los cálculos de las diferencias inventariales.  
 
-Una volta inserite le liste inventariali è necessario compilarle. Per fare ciò si seleziona nella griglia la lista inventariale desiderata e doppio click su di essa si accede alla finestra di [Modifica inventari articoli](/docs/logistics/physical-inventory/inventory-management/inventory-lists-management). 
+Una vez ingresadas las listas inventariales, es necesario completarlas. Para hacerlo, seleccione en la cuadrícula la lista inventarial deseada y, al hacer doble clic en ella, se accede a la ventana de [Modificación de inventarios de artículos (Modifica inventari articoli)](/docs/logistics/physical-inventory/inventory-management/inventory-lists-management).  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,57 +1,58 @@
 ---
-title: Gestione massiva dei dati
+title: gestione massiva dei dati
 sidebar_position: 1
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Procedure > Gestione massiva dei dati**
+La gestión se encuentra en la ruta **Calidad > Controles de artículo > Planes de control > Procedimientos > gestione massiva dei dati**
 
-:::important A cosa serve
-Questa gestione permette di gestire molte delle informazioni delle *Schede tecniche* in modo massivo, senza dover entrare manualmente in ogni *Piano di controllo*.   
+:::important ¿Para qué sirve? (A cosa serve)
+Esta gestión permite manejar muchas de las informaciones de las *Fichas técnicas* de manera masiva, sin necesidad de ingresar manualmente en cada *Plan de control*.   
 :::
 
-La form è suddivisa in:
-- un'area di filtro, contestuale alle sessioni delle informazioni che si desidera variare;   
-- un'area composta da diversi tabulatori ognuno dei quali contiene le griglie dedicate alla modifica e risultato del filtro;   
-- l'ultimo tabulatore contiene lo *Storico errori* riscontrati durante le attività di *Modifica*.   
+El formulario está dividido en:  
+- un área de filtro, contextual a las sesiones de información que se desea modificar;  
+- un área compuesta por diferentes pestañas, cada una de las cuales contiene las cuadrículas dedicadas a la modificación y el resultado del filtro;  
+- la última pestaña contiene el *Histórico de errores* encontrados durante las actividades de *Modificación*.  
 
-I tabulatori sono:   
-> **Piani di controllo**;   
-> **Prove pianificate**;   
-> **Articoli associati**.
+Las pestañas son:  
+> **piani di controllo**;  
+> **prove pianificate**;  
+> **articoli associati**.
 
-### Pulsanti specifici
+### Botones específicos
 
-#### ![](/img/neutral/common/search.png) Ricerca
+#### ![](/img/neutral/common/search.png) Buscar (Ricerca)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato. L'area filtro è variabile ed è contestuale al tabulatore selezionato. Il risultato dell'applicazione del filtro visualizzerà i dati nella griglia risultato del tabulatore precedentemente selezionato.   
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados. El área de filtro es variable y es contextual a la pestaña seleccionada. El resultado de la aplicación del filtro mostrará los datos en la cuadrícula de resultados de la pestaña previamente seleccionada.
 
-#### ![](/img/neutral/common/delete.png) Cancella
+#### ![](/img/neutral/common/delete.png) Eliminar (Cancella)
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Selezionate le righe desiderate è necessario cliccare sul pulsante **Cancella** per eliminarle, previo conferma.   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados.  
+Seleccionadas las filas deseadas, es necesario hacer clic en el botón **cancella** para borrarlas, previo confirmación.
 
-#### ![](/img/neutral/common/execute.png) Modifica massiva dei dati
+#### ![](/img/neutral/common/execute.png) Modificación masiva de datos (Modifica massiva dei dati)
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Selezionate le righe desiderate e indicate le modifiche da attuare nella griglia risultato, è necessario cliccare sul pulsante **Modifica** per applicare le modifiche.   
-In caso di anomalie riscontrate durante la *Modifica* le segnalazioni sono disponibili nel tabulatore *Storico errori*.   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados.  
+Seleccionadas las filas deseadas y indicadas las modificaciones a realizar en la cuadrícula de resultados, es necesario hacer clic en el botón **modifica** para aplicar los cambios.  
+En caso de anomalías encontradas durante la *Modificación*, las indicaciones están disponibles en la pestaña *storico errori*.
 
-### Gestione massiva dei dati
+### gestione massiva dei dati
 
-#### Area di filtro
+#### Área de filtro
 
-L'area è composta da una parte fissa dove vengono riportati i filtri di ricerca relativi alle informazioni di testata del *Piano di controllo* e da una parte variabile e contestuale al tabulatore selezionato; la parte variabile è contenuta in un expander che riporta lo stesso titolo del tabulatore selezionato; questa parte variabile non è visualizzata per il tabulatore *Piani di controllo*.   
-Premendo il pulsante **Ricerca** sono visualizzati i risultati all'interno della griglia di risultato del tabulatore selezionato.  
+El área está compuesta por una parte fija donde se muestran los filtros de búsqueda relativos a la información del encabezado del *Plan de control* y por una parte variable y contextual a la pestaña seleccionada; la parte variable está contenida en un expander que lleva el mismo título de la pestaña seleccionada; esta parte variable no se visualiza para la pestaña *piani di controllo*.  
+Al presionar el botón **ricerca**, se visualizan los resultados dentro de la cuadrícula de resultados de la pestaña seleccionada.
 
-#### Area di modifica
+#### Área de modificación
 
-Contenuta in ogni tabulatore (eccetto nel tabulatore *Storico errori*), è la "griglia" superiore composta da una singola riga.   
-In questa griglia, che riporta le medesime colonne della griglia risultato (quella inferiore), è possibile inserire tutte le informazioni che si desiderano riportare nelle righe della griglia risultato alla pressione del pulsanta *Modifica*.   
-Una volta terminata la sostituzione dei valori, i valori preesisenti nella griglia superiore verranno eliminati.   
+Contenida en cada pestaña (excepto en la pestaña *storico errori*), es la "cuadrícula" superior compuesta por una sola fila.  
+En esta cuadrícula, que tiene las mismas columnas que la cuadrícula de resultados (la inferior), es posible ingresar toda la información que se desea que aparezca en las filas de la cuadrícula de resultados al presionar el botón **modifica**.  
+Una vez finalizada la sustitución de valores, los valores presentes en la cuadrícula superior se eliminarán.
 
-#### Area di risultato
-Contenuta in ogni tabulatore, è la "griglia" inferiore che contiene il risultato della *Ricerca* applicata all'area di filtro.   
-In questa griglia, che riporta le medesime colonne della griglia di modifica (quella superiore), è possibile modificare manualmente tutte le informazioni senza dover entrare in ogni gestione del *Piano di controllo*. Le colonne variano a seconda del tabulatore selezionato.   
-Le colonne dove non è possibile modificare le informazioni sono disabilitate ed evidenziate con un diverso colore.   
+#### Área de resultados
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Contenida en cada pestaña, es la "cuadrícula" inferior que contiene el resultado de la *ricerca* aplicada al área de filtro.  
+En esta cuadrícula, que tiene las mismas columnas que la cuadrícula de modificación (la superior), es posible modificar manualmente toda la información sin necesidad de ingresar en cada gestión del *Plan de control*. Las columnas varían según la pestaña seleccionada.  
+Las columnas donde no es posible modificar la información están deshabilitadas y resaltadas con un color diferente.  
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

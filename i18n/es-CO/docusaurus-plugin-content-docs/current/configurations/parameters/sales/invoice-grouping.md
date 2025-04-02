@@ -1,35 +1,35 @@
 ---
-title: Parametri raggruppamento fatture
+title: Parámetros de agrupamiento de facturas (Parametri raggruppamento fatture)
 sidebar_position: 9
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Los parámetros de agrupamiento permiten definir cómo dividir los documentos durante los procedimientos de cumplimiento. Para ello, se pueden utilizar indicadores específicos para agrupar los documentos según diferentes propiedades, como la categoría, el tipo de documento u otras características relevantes.  
+Estos parámetros generales de agrupamiento deben configurarse una sola vez y se aplicarán automáticamente a todos los procedimientos, siendo válidos para todos los clientes y proveedores. Sin embargo, si un cliente o proveedor requiere un comportamiento diferente al configurado en los parámetros generales, será necesario personalizar los parámetros de agrupamiento dentro de su registro específico.  
+De este modo, se garantiza una gestión flexible y adaptable de las evasiones, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, manteniendo a la vez una configuración centralizada y coherente para la mayoría de las operaciones.
 
-In questa maschera vengono decise le regole di raggruppamento per le procedure:  
--  **Valorizzazione DDT di vendita**;  
--  **Valorizzazione Interventi**;  
--  **Creazione Fattura di vendita da Picking**;  
--  **Creazione Fattura di vendita da Liste di prelievo UDC**;  
--  **Creazione Fattura di vendita da Pos**.       
+En este formulario se deciden las reglas de agrupamiento para los procedimientos:  
+- **valorizzazione ddt di vendita**;  
+- **valorizzazione interventi**;  
+- **creazione fattura di vendita da picking**;  
+- **creazione fattura di vendita da liste di prelievo udc**;  
+- **creazione fattura di vendita da pos**.  
 
-Nel caso di evasione di più documenti, è possibile raggrupparli in base alle seguenti proprietà, inserendo i relativi flag:  
-- **tipo documento**: i documenti di origine con lo stesso Tipo creeranno una singola fattura   
-- **anno**: i documenti di origine dello stesso anno creeranno una singola fattura  
-- **mese**: i documenti di origine dello stesso mese creeranno una singola fattura  
-- **cambio**: i documenti di origine con lo stesso cambio creeranno una singola fattura  
-- **progetto**: i documenti di origine con lo stesso progetto in Testata creeranno una singola fattura  
-- **tipo e soluzione di pagamento**: i documenti di origine con le stesse condizioni di pagamento creeranno una singola fattura  
-- **destinazione**: i documenti di origine con la stessa destinazione e vettore creeranno una singola fattura    
-- **cointestatari**: i documenti di origine con lo stesso tipo operazione per la gestione dei cespiti creeranno una singola fattura  
+En caso de cumplimiento de múltiples documentos, es posible agruparlos según las siguientes propiedades, insertando los indicadores correspondientes:  
+- **tipo documento**: los documentos de origen con el mismo tipo generarán una única factura.  
+- **anno**: los documentos de origen del mismo año generarán una única factura.  
+- **mese**: los documentos de origen del mismo mes generarán una única factura.  
+- **cambio**: los documentos de origen con el mismo cambio generarán una única factura.  
+- **progetto**: los documentos de origen con el mismo proyecto en el encabezado generarán una única factura.  
+- **tipo y solución de pago (tipo e soluzione di pagamento)**: los documentos de origen con las mismas condiciones de pago generarán una única factura.  
+- **destinazione**: los documentos de origen con el mismo destino y transportista generarán una única factura.  
+- **cointestatari**: los documentos de origen con el mismo tipo de operación para la gestión de activos generarán una única factura.  
 
-E' necessario flaggare le colonne che prevedono i raggruppamenti che si vogliono prevedere per queste evasioni. 
-Il flag **Riepilogativa** è fondamentale per creare un unico documento avendo diversi documenti di partenza. Gli altri flag invece riguardano i raggruppamenti particolari.      
-La colonna **Priorità** non è utilizzata al momento. 
+Es necesario marcar las columnas que prevén los agrupamientos que se desean establecer para estas evasiones.  
+El indicador **riepilogativa** es fundamental para crear un único documento a partir de varios documentos de origen. Los otros indicadores, en cambio, se refieren a agrupamientos particulares.  
+La columna **priorità** no está utilizada en este momento.

@@ -1,52 +1,50 @@
 ---
-title: Gestione resi e note di credito
+title: Gestión de devoluciones y notas de crédito (Gestione resi e note di credito)
 sidebar_position: 3
 ---
 
-Il meccanismo di gestione dei resi e delle note di credito permette di amministrare i flussi di ritorno delle merci e i relativi aggiustamenti finanziari. Ecco come funziona tipicamente:
+El mecanismo de gestión de devoluciones y notas de crédito permite administrar los flujos de retorno de mercancías y los ajustes financieros relacionados. Así es como típicamente funciona:
 
-**Registrazione del Reso**: Quando un cliente restituisce un prodotto, il processo inizia con la creazione di un documento di reso nel gestionale. Questo documento può essere creato manualmente (inserendo un DDT con Natura *Reso* o una fattura con Natura *Nota di credito*), oppure automaticamente con la procedura di **Storno** presente nella [Ricerca](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) dei documenti. Nel caso in cui venga creato il DDT di reso, da esso potrà essere automaticamente creata la nota di credito con le apposite procedure.     
+**Registro de la Devolución (Registrazione del Reso)**: Cuando un cliente devuelve un producto, el proceso comienza con la creación de un documento de devolución en el sistema. Este documento puede ser creado manualmente (ingresando un DDT con Naturaleza *reso* o una factura con Naturaleza *Nota de crédito (Nota di credito)*), o automáticamente con el procedimiento de **storno** presente en la [Búsqueda (Ricerca)](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) de documentos. En caso de que se cree el DDT de devolución, de este se podrá crear automáticamente la nota de crédito con los procedimientos correspondientes. 
 
-**Aggiornamento delle Scorte**: una volta movimentato a magazzino il documento di storno, il sistema aggiorna automaticamente le scorte del magazzino per riflettere il rientro della merce, riportando i prodotti resi come disponibili.      
+**Actualización de Inventarios (Aggiornamento delle Scorte)**: una vez que se ha movido a almacén el documento de anulación, el sistema actualiza automáticamente los inventarios para reflejar el retorno de la mercancía, indicando los productos devueltos como disponibles. 
 
-**Dettagli della Nota di Credito**: La nota di credito include dettagli come l’importo accreditato e può essere controllata prima di essere inviata al cliente. Al salvataggio di una nota di credito, tutti i Tipi spesa vengono inseriti con segno negativo, tranne le spese Bollo     
+**Detalles de la Nota de Crédito (Dettagli della Nota di Credito)**: La nota de crédito incluye detalles como el monto acreditado y puede ser revisada antes de ser enviada al cliente. Al guardar una nota de crédito, todos los Tipos de gasto se ingresan con signo negativo, excepto los gastos de Sellos (Bollo). 
 
-**Aggiornamento della Contabilità**: Una volta contabilizzata, la nota di credito aggiorna i registri contabili, riducendo l’importo dovuto dal cliente; questo può riflettersi in una diminuzione del saldo aperto o in un rimborso, a seconda degli accordi con il cliente.
+**Actualización de la Contabilidad (Aggiornamento della Contabilità)**: Una vez contabilizada, la nota de crédito actualiza los registros contables, reduciendo el monto adeudado por el cliente; esto puede reflejarse en una disminución del saldo abierto o en un reembolso, dependiendo de los acuerdos con el cliente.
 
-:::note Note
-Dalla versione 607 le note di credito vengono gestite con il segno meno.      
-Al momento del salvataggio del documento, infatti, Fluentis cambierà il segno degli articoli e avviserà l'utente con un pop up. Anche tutte le spese vengono convertite con segno negativo, tranne le spese Bollo.    
-La gestione della contabilizzazione del documento non cambia rispetto al passato in quanto il documento negativo continua ad essere defalcato dal registro iva (prima veniva convertito in negativo al momento della contabilizzazione).
-L'invio del documento allo sdi tramite generazione del file .xml prevede un nuovo cambio di segno in conformità alle specifiche tecniche per la fatturazione elettronica.       
-La modifica in commento si è resa necessaria, pertanto, soprattutto per una migliore gestione delle statistiche di vendita e le elaborazioni connesse.
+:::note Nota
+Desde la versión 607, las notas de crédito se manejan con signo negativo.  
+En el momento de guardar el documento, de hecho, Fluentis cambiará el signo de los artículos y notificará al usuario con un pop-up. También todos los gastos se convierten a signo negativo, excepto los gastos de Sellos (Bollo).    
+La gestión de la contabilización del documento no cambia con respecto al pasado, ya que el documento negativo continúa siendo descontado del registro IVA (antes se convertía en negativo al momento de la contabilización).  
+El envío del documento a la SDI mediante la generación del archivo .xml implica un nuevo cambio de signo en conformidad con las especificaciones técnicas para la facturación electrónica.  
+El cambio en el comentario ha sido necesario, sobre todo para una mejor gestión de las estadísticas de ventas y los procesos conexos.
 :::
 
-### Gestione segni misti
+### Gestión de signos mixtos (Gestione segni misti)
 
-La possibilità di contabilizzare il documento con segni misti va abilitata appositamente mediante uno script SQL.
+La posibilidad de contabilizar el documento con signos mixtos debe habilitarse específicamente mediante un script SQL.
 
-:::note Nota tecnica per attivazione
-Di seguito lo script da eseguire:
+:::note Nota técnica para activación
+A continuación, el script a ejecutar:
 
-ATTENZIONE: Il parametro di seguito che controlla la modalità di gestione dei segni va ora posto a +1 differentemente dal passato a fronte del cambio di politica dei gestione segni di cui sopra.
+ATENCIÓN: El parámetro a continuación que controla la modalidad de gestión de signos ahora debe establecerse en +1, a diferencia del pasado, en consecuencia del cambio de política de gestión de signos mencionado anteriormente.
 
     select * from [Fluentis].[SH_LocalizationParameters] where [SH_LocalizationParameters].[SHLP_Code] like 'VE-SalesInvoice_CreditNotesPostingSigns'
 
-individuare l'Id del parametro in questione
+identificar el Id del parámetro en cuestión
 
-Nella ricerca 
+En la búsqueda
 
-    select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... individuare la riga per la società in uso attraverso il campo SHCP_Company_SHC_Id
+    select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... identificar la fila para la empresa en uso a través del campo SHCP_Company_SHC_Id
 
-ed eseguire un update al campo SHCP_Value
+y ejecutar una actualización al campo SHCP_Value
 
-VALORI DEL PARAMETRO:
+VALORES DEL PARÁMETRO:
 
-0 = così com'è, non permette i segni misti (le NC sono forzate sempre negative)
+0 = así como está, no permite signos mixtos (las NC siempre son forzadas a ser negativas)
 
--1 = NC sempre invertite (il + diventa meno e il - diventa +)
+-1 = NC siempre invertidas (el + se convierte en menos y el - se convierte en +)
 
-+1 = Tipologia attualmente richiesta per il segno misto, sia FT che NC vengono contabilizzate con i segni esistenti , il + resta + e il - resta -.
++1 = Tipo actualmente requerido para el signo mixto, tanto las FT como las NC se contabilizan con los signos existentes, el + permanece + y el - permanece -.
 :::
-
-

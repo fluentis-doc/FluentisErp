@@ -1,60 +1,60 @@
 ---
-title: Parametri fatture di acquisto
+title: parametri fatture di acquisto
 sidebar_position: 4
-tags: [fatture di acquisto]
-keywords: [fatture di acquisto]
+tags: [facturas de compra (fatture di acquisto)]
+keywords: [facturas de compra (fatture di acquisto)]
 ---
 
-I parametri delle fatture di acquisto permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
+Los parámetros de las facturas de compra permiten la configuración básica para gestionarlas correctamente y de acuerdo con las solicitudes específicas de cada empresa.
 
-La finestra si compone di pulsanti e tre diversi tab: *Generale*, *Carico* e *Analitica*. 
+La ventana está compuesta por botones y tres pestañas diferentes: *generale*, *carico* y *analitica*.
 
-### Generale
+### General (Generale)
 
-**Gestione doppia unità misura**: attivando questo flag è possibile gestire le unità di misura alternative nelle fatture di acquisto. Queste vanno inserite per ogni riga articolo nel tab *Dati*.
+**gestione doppia unità misura**: al activar este indicador, es posible gestionar las unidades de medida alternativas en las facturas de compra. Estas deben ser ingresadas para cada línea de artículo en la pestaña *dati*.
 
-**Proposta automatica UM alternativa**: questo check si abilita solo se *Gestione doppia unità misura* è attivo. Quando viene inserito un articolo che ha nella sua anagrafica tab UM Alternative una UM Alternativa di default, questa UM viene automaticamente proposta come UM Alt dell'articolo e viene calcolata anche la quantità alternativa usando il fattore di conversione della medesima.
+**Propuesta automática de UM alternativa (Proposta automatica UM alternativa)**: esta casilla se habilita solo si *gestione doppia unità misura* está activa. Cuando se ingresa un artículo que tiene en su registro de unidad de medida alternativa una UM Alternativa por defecto, esta UM se propone automáticamente como UM Alternativa del artículo y se calcula también la cantidad alternativa usando el factor de conversión correspondiente.
 
-**Costo zero in assenza di listini**: se attivo, in assenza di un listino valido popola il prezzo con il valore zero. Nel caso in cui questa voce non fosse spuntata, il campo sarebbe valorizzato con il costo ultimo dell'articolo, se presente.
+**costo zero in assenza di listini**: si está activo, en ausencia de un listado válido, se poblará el precio con un valor de cero. En caso de que esta opción no esté marcada, el campo se valorizará con el último costo del artículo, si está presente.
 
-**Tipo fattura**, **Aliquota IVA**, **Tipo fatturato**: qui vengono impostati i valori di default da utilizzare nella creazione delle fatture da ordini.
+**tipo fattura**, **aliquota iva**, **tipo fatturato**: aquí se establecen los valores por defecto que se utilizarán en la creación de facturas a partir de pedidos.
 
-**Lotti e S.N. (Serial Number) obbligatori:** se attivo obbliga l'utente ad inserire a livello di riga articolo il lotto ed il serial number per tutti gli articoli per cui è prevista questa gestione. Se non attivo, il lotto ed il serial number non risultano dati obbligatori e sarà possibile salvare il documento anche senza averli inseriti. Si consiglia l'accensione di questo flag qualora si utilizzi la gestione articoli con lotto.
+**Lotes y S.N. (Serial Number) obligatorios (Lotti e S.N. (Serial Number) obbligatori)**: si está activo, obliga al usuario a ingresar el lote y el número de serie a nivel de línea de artículo para todos los artículos para los cuales se prevé esta gestión. Si no está activo, el lote y el número de serie no son datos obligatorios y será posible guardar el documento sin haberlos ingresado. Se recomienda activar este indicador si se utiliza la gestión de artículos con lote.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: questo parametro è utilizzato per la ricerca del prezzo nei listini fornitori; la ricerca avviene nei listini del tipo predefinito in anagrafica fornitore anche se i listini non sono validi (i listini validi sono quelli che hanno data inizio validità \<= alla data odierna e hanno data fine validità nulla o >= alla data odierna).
+**ricerca prezzi articoli in tutti i listini predefiniti**: este parámetro se utiliza para la búsqueda del precio en las listas de proveedores; la búsqueda se realiza en las listas del tipo predeterminado en el registro del proveedor, incluso si las listas no son válidas (las listas válidas son aquellas que tienen una fecha de inicio de validez <= a la fecha actual y una fecha de fin de validez nula o >= a la fecha actual).
 
-**Consentire sconti per articoli omaggio**: se attivo, permette l'inserimento di sconti sulle righe articolo di tipo omaggio;
+**Permitir descuentos para artículos de regalo (Consentire sconti per articoli omaggio)**: si está activo, permite la inserción de descuentos en las líneas de artículos tipo regalo;
 
-**Uso articolo fornitore**: se attivo, nella griglia articoli del documento viene proposto anche il campo per inserire il codice articolo fornitore. Se non attivo questo campo non sarà visibile;
+**uso articolo fornitore**: si está activo, en la cuadrícula de artículos del documento también se propone el campo para ingresar el código de artículo del proveedor. Si no está activo, este campo no será visible;
 
-**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli inseriti in fattura ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) il flag *In esaurimento* è attivo.
+**verifica articoli in esaurimento**: si está activado, el sistema realiza un control sobre la disponibilidad de los artículos ingresados en la factura y avisa si el artículo está en agotamiento, es decir, si en el [registro del artículo (anagrafica dell'articolo)](/docs/erp-home/registers/items/create-new-item) el indicador *in esaurimento* está activo.
 
-**Contabilizzazione imballi**: consente di poter contabilizzare, in contabilità generale, anche le righe con articoli di natura imballo che solitamente vengono gestiti per avere la verifica delle giacenze degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
+**contabilizzazione imballi**:  permite contabilizar, en la contabilidad general, también las líneas con artículos de naturaleza de embalaje que normalmente se gestionan para tener la verificación de las existencias de los [Embalajes a devolver (Imballi a rendere)](/docs/configurations/tables/logistics/package-to-be-returned).
 
-**Mantieni prezzi da ordini per gli scaglioni**: è utilizzato nell'evasione degli ordini in fattura nel caso in cui la quantità evasa sia diversa (solitamente parziale) della quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso in cui l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
+**mantieni prezzi da ordini per gli scaglioni**: se utiliza en el cumplimiento de los pedidos en factura en caso de que la cantidad cumplida sea diferente (normalmente parcial) de la cantidad ordenada para la cual se ha informado un precio o un descuento por tramo de cantidad. Si el precio o el descuento no dependen de la cantidad entregada, sino solo de la cantidad en pedido, este indicador debe estar activado; si, en cambio, el precio o el descuento por tramo no deben ser ingresados en el documento de entrega en caso de que el cumplimiento no ocurra por la cantidad total del pedido, el indicador no debe activarse.
 
-**Attiva il Controllo Qualità**: work in progress.
+**Activar el Control de Calidad (Attiva il Controllo Qualità)**: trabajo en progreso.
 
-### Carico
+### Carga (Carico)
 
-**Crea registrazione con la data del documento**: se questo flag è attivo, la registrazione di magazzino viene fatta con la stessa data della fattura. Se non attivo, essa viene effettuata con la *Data carico* indicata nella testata della fattura, se presente, altrimenti con la *Data registrazione magazzino* indicata nella procedura di [Carico fatture di acquisto in magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/). Se la registrazione viene effettuata dall'interno della fattura mediante il pulsante *Carico automatico nel magazzino* e la *Data carico* non è inserita, allora sarà usata la data odierna.
+**crea registrazione con la data del documento**: si este indicador está activo, el registro de almacén se realiza con la misma fecha de la factura. Si no está activo, se lleva a cabo con la *data carico* indicada en el encabezado de la factura, si está presente; de lo contrario, con la *data registrazione magazzino* indicada en el procedimiento de [Carga de facturas de compra en almacén (Carico fatture di acquisto in magazzino)](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/). Si el registro se realiza desde dentro de la factura mediante el botón *Carga automática en el almacén*, y la *data carico* no está ingresada, entonces se usará la fecha actual.
 
-**Priorità magazzino e causale di carico**: se attivo, al momento della registrazione della fattura a magazzino vengono usati i valori impostati nei campi sottostanti: **Magazzino** e **Causale magazzino**. Se il flag non è attivo, il magazzino e la causale di carico vengono letti dalle righe della fattura. Qualora non fossero indicati non sarà possibile effettuare il Carico automatico dall'interno della fattura di acquisto, ma si potrà utilizzare la procedura di [Carico fatture di acquisto in magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/) selezionando il flag "*Accettare come magazzino e causale i seguenti dati:*" nel tab *Parametri* e indicando *Magazzino* e *Causale* da utilizzare. 
+**priorità magazzino e causale di carico**: si está activo, en el momento de registrar la factura en almacén, se utilizan los valores establecidos en los campos siguientes: **magazzino** y **causale magazzino**. Si el indicador no está activo, el almacén y la causa de carga se leen desde las líneas de la factura. Si no están indicados, no será posible realizar la Carga automática desde dentro de la factura de compra, pero se podrá utilizar el procedimiento de [Carga de facturas de compra en almacén (Carico fatture di acquisto in magazzino)](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/) seleccionando el indicador "*Aceptar como almacén y causa los siguientes datos:*" en la pestaña *parametri* y especificando *magazzino* y *causale* a utilizar.
 
-**Carico/Scarico automatico**: se attivo, al momento dell'attivazione del flag *Controllata* in testata del documento si riceverà un messaggio che ricorda che il parametro di carico/scarico automatico è attivo e chiede se si desidera procedere. Premendo "*Sì*" la fattura verrà caricata a magazzino, altrimenti sarà possibile caricarla successivamente premendo il pulsante *Carico automatico nel magazzino* posto nella ribbon bar. 
+**carico/scarico automatico**: si está activo, al momento de activar el indicador *controllata* en el encabezado del documento, se recibirá un mensaje recordando que el parámetro de carga/descarga automática está activo y pregunta si se desea continuar. Al presionar "*Sí*", la factura se cargará al almacén, de lo contrario, será posible cargarla posteriormente presionando el botón *Carga automática en el almacén* ubicado en la barra de herramientas.
 
-**Avviso articoli fittizi**: controlla che, in fase di carico a magazzino, siano presenti o meno nelle righe della fattura degli articoli fittizi. Nel caso siano presenti sarà richiesto se effettuare comunque il carico, ovviamente senza tali articoli, oppure se non effettuare totalmente il movimento di magazzino. L'articolo fittizio può essere senza distinta base di primo livello se nei parametri MRP è dichiarato con tipo approvvigionamento di acquisto altrimenti la registrazione di carico darà un messaggio di errore nel caso ci siano degli articoli fittizi nel documento da caricare.
+**avviso articoli fittizi**: verifica si, en el momento de la carga en el almacén, hay o no artículos ficticios en las líneas de la factura. En caso de que estén presentes, se solicitará si se desea realizar la carga sin dichos artículos o si no proceder con el movimiento del almacén. El artículo ficticio puede estar sin lista de materiales de primer nivel si en los parámetros del MRP se declara con tipo de aprovisionamiento de compra; de lo contrario, el registro de carga generará un mensaje de error si hay artículos ficticios en el documento a cargar.
 
-### Analitica
+### Analítica (Analitica)
 
-In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga documento.
+En esta pestaña se especifica con qué prioridad se recupera el centro de costo (CdC) o centro de beneficios (CdP) en la línea del documento.
 
-È possibile modificare le priorità utilizzando i seguenti pulsanti nella ribbon bar:
-> **Sposta su**       
-> **Sposta giù**.
+Es posible modificar las prioridades utilizando los siguientes botones en la barra de herramientas:
+> **sposta su**  
+> **sposta giù**.
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo* e successivamente a livello di *Magazzino*.
+*Valores predeterminados (Valori di default)*: el CDC o CDP se recupera del tipo de facturación si está presente. Para más detalles, consulte la tabla [Tipo de Facturación de Compras (Tipo Fatturato Acquisti)](/docs/configurations/tables/purchase/purchase-invoices-type). Si no está presente en el tipo de facturación, el sistema lo buscará en *Registro de proveedores (Anagrafica fornitore)*. Si tampoco está allí, se buscará en *anagrafica articolo* y posteriormente a nivel de *magazzino*.
 
-**Ricalcolo**: se attivo, questo flag, ricalcola i centri di costo/profitto secondo la priorità scelta.
+**ricalcolo**: si está activo, este indicador recalcula los centros de costo/profitos de acuerdo con la prioridad elegida.
 
-**Valuta la priorità su ogni dimensione**: se attivo, questo flag permette di valutare ogni priorità inserita nella parte superiore per capire se ci sono ulteriori dimensioni non ancora valorizzate. Ad esempio, supponiamo di avere nell'Anagrafica articolo il centro di costo della dimensione *Business unit* e nel Tipo fatturato acquisti la dimensione *Direzionale*. Se il flag non è attivo il sistema valuta solo il CdC presente nell'Anagrafica articolo; se il flag è attivo, dopo aver caricato il CdC presente nell'Anagrafica articolo il sistema valuta anche la dimensione presente nel Tipo fatturato acquisti (nel nostro esempio la dimensione *Direzionale*) e se è diversa da quelle che ha già gestito (*Business Unit*) carica il centro e prosegue con la verifica delle altre priorità.
+**valuta la priorità su ogni dimensione**: si está activo, este indicador permite evaluar cada prioridad ingresada en la parte superior para comprender si hay dimensiones adicionales que aún no están valoradas. Por ejemplo, supongamos que en el Registro de artículos se tiene el centro de costo de la dimensión *Unidad de negocio (Business unit)* y en el tipo de facturación de compras la dimensión *direzionale*. Si el indicador no está activo, el sistema evalúa solo el CdC presente en el Registro de artículos; si el indicador está activo, después de cargar el CdC de Registro de artículos, el sistema también evaluará la dimensión presente en el tipo de facturación de compras (en nuestro ejemplo, la dimensión *Direccional*) y si es diferente de las que ya ha gestionado (*Unidad de negocio (Business Unit)*), cargará el centro y procederá a verificar las demás prioridades.

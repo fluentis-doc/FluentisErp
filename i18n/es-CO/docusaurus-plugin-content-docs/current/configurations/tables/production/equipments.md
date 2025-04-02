@@ -1,31 +1,31 @@
 ---
-title: Attrezzature
+title: attrezzature
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Attrezzature**.
+La tabla se encuentra en la ruta **Tablas > Producción > attrezzature (Tabelle > Produzione > Attrezzature)**.
 
-I dati presenti in questa tabella sono utilizzati, ad esempio, nelle *fasi di lavorazione* delle gestioni:
-- **Cicli di lavoro**;   
-- **Ordini pianificati**;   
-- **Ordini di produzione**;
+Los datos presentes en esta tabla se utilizan, por ejemplo, en las *fasi di lavorazione* de las gestiones:  
+- **cicli di lavoro**;  
+- **ordini pianificati**;  
+- **ordini di produzione**;  
 
-in cui si può selezione l'attrezzatura da utilizzare.
+donde se puede seleccionar el equipo a utilizar.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Attrezzature**
+**Búsqueda de attrezzature (Ricerca Attrezzature)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Attrezzature**
+**Inserción de attrezzature (Inserimento Attrezzature)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos códigos, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** dell'attrezzatura.
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione** del equipo.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*:  
 
-**Attiva**: si seleziona per indicare che l'attrezzatura può essere utilizzata.
+**attiva**: se selecciona para indicar que el equipo puede ser utilizado.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

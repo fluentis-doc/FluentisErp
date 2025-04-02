@@ -1,6 +1,6 @@
 ---
-title: Configurazione oggetto
+title: configurazione oggetto
 sidebar_position: 49
 ---
 
-work in progress
+trabajo en progreso (work in progress)

@@ -1,35 +1,35 @@
 ---
-title: Ricerca Documenti di origine esterna
+title: Búsqueda de Documentos de origen externo (Ricerca Documenti di origine esterna)
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Documenti di origine esterna > Documenti di origine esterna**.   
+El filtro se encuentra en la ruta **Calidad > Documentos de origen externo > Documentos de origen externo**.  
 
-Il filtro dati consente di inserire nuovi *Documenti di origine esterna* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+El filtro de datos permite ingresar nuevos *Documentos de origen externo* o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.  
 
-### ![](/img/neutral/common/search.png) Ricerca Documenti di origine esterna
+### ![](/img/neutral/common/search.png) Búsqueda de Documentos de origen externo
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario consta de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-### ![](/img/neutral/common/new.png) Inserimento Documenti di origine esterna
+### ![](/img/neutral/common/new.png) Ingreso de Documentos de origen externo
 
-Per poter inserire nuovi *Documenti di origine esterna* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevos *Documentos de origen externo*, es necesario presionar el botón **nuovo**.  
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Documenti di origine esterna
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Documentos de origen externo
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila que nos interesa o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.  
 
-*Pulsanti specifici*: 
-    
-### ![](/img/neutral/common/duplicate.png) Duplica Documento di origine esterna
+*Botones específicos:* 
 
-Per poter duplicare un *Documento di origine esterna* esistente in un nuovo *Documento* è necessario cliccare nella griglia sul *Documento* da cui si desidera duplicare e premere il pulsante **Duplica**. Si può duplicare un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Categoria**: è il *Codice categoria documento di origine esterna* del nuovo *Documento* (dato obbligatorio).   
-> **Codice**: è il *Codice* del nuovo *Documento* (dato obbligatorio).   
-> **Edizione/Revisione**: è l'*Edizione/Revisione* del nuovo *Documento*.   
-> **Titolo**: è il *Titolo* del nuovo *Documento* (dato obbligatorio).   
+### ![](/img/neutral/common/duplicate.png) Duplicar Documento de origen externo
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Documento di origine esterna* viene visualizzato.
+Para poder duplicar un *Documento de origen externo* existente en un nuevo *Documento*, es necesario hacer clic en la cuadrícula sobre el *Documento* del cual se desea duplicar y presionar el botón **duplica**. Se puede duplicar un solo *Documento* a la vez. Aparecerá una solicitud de:   
+> **categoria**: es el *Código de categoría documento de origen externo* del nuevo *Documento* (dato obligatorio).  
+> **codice**: es el *Código* del nuevo *Documento* (dato obligatorio).  
+> **edizione/revisione**: es la *Edición/Revisión* del nuevo *Documento*.  
+> **titolo**: es el *Título* del nuevo *Documento* (dato obligatorio).   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Posteriormente, presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de duplicado o no.  
+Al finalizar el procesamiento, se visualiza el nuevo *Documento de origen externo*.  
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

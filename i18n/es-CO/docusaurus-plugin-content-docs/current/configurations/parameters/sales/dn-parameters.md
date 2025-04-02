@@ -1,83 +1,83 @@
 ---
-title: Parametri DDT
+title: Parámetros DDT (Parametri DDT)
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-I parametri dei DDT di vendita permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra relativa a questi parametri si compone di 4 diversi tab: Generale, Evasione, Scarico e Analitica.
+Los parámetros de los DDT de venta permiten la configuración básica para gestionarlos correctamente y de acuerdo con las solicitudes específicas de cada empresa. La ventana relacionada con estos parámetros consta de 4 pestañas diferentes: General (Generale), Cumplimiento (Evasione), Descarga (Scarico) y Analítica (Analitica).
 
-### Generale
+### General (Generale)
 
-**Gestione doppia unità misura**: se attivo, nelle righe DDT verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.      
+**gestione doppia unità misura**: si está activo, en las líneas del DDT se mostrarán las dos columnas de UM Alternativa y Cantidad Alternativa, por lo tanto, será posible gestionar la doble unidad de medida, considerando siempre que es la unidad de medida principal sobre la cual se realizan los controles para el cumplimiento.
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli del DDT l'unità di misura alternativa impostata nell'anagrafica articolo, nell’apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.      
+**Propuesta automática de UM alternativa (Proposta automatica UM alternativa)**: este indicador solo se puede editar si se ha activado el indicador de gestión de la doble unidad de medida y permite mostrar en la pestaña de artículos del DDT la unidad de medida alternativa establecida en el registro del artículo, en la columna correspondiente 'UM alternativa'; si no está activo, la unidad de medida no se propone.
 
-**Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
+**Control de Disponibilidad (Controllo Disponibilità)**: este indicador y los demás relacionados con el control, visualización y obligatoriedad considerando el área, en la versión actual no se gestionan.
 
-**Unità di misura volume/pesi predefinita**: queste unità di misura vengono considerate come UM di default da proporre nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT, come unità di misura di volume e pesi; il dato è modificabile nei documenti. 
+**Unidad de medida de volumen/pesos predeterminada (Unità di misura volume/pesi predefinita)**: estas unidades de medida se consideran como UM predeterminadas a proponer en la pestaña [Transporte (Trasporto)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT, como unidad de medida de volumen y pesos; el dato es modificable en los documentos.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di un DDT, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+**ricerca prezzi articoli in tutti i listini predefiniti**: cuando se busca el precio y los descuentos para un artículo dentro de un DDT, el sistema sigue reglas basadas en las configuraciones establecidas en el registro del cliente, en la sección *Listinos*. Si se activa la opción 'predeterminado' en un determinado tipo de lista, la búsqueda de precios y descuentos se centrará solo en esa tipología específica; si el indicador "predeterminado" no está activo, el sistema extenderá la búsqueda a todos los tipos de listas presentes, siguiendo un orden de prioridad. En práctica, con el indicador 'predeterminado' activo, el sistema buscará primero una lista válida para la tipología predeterminada; si no encuentra resultados, procederá a comprobar las otras tipologías de listas en orden de prioridad. Sin embargo, si en el registro del cliente no hay ningún tipo de lista configurada como 'predeterminado' y solo hay prioridades, este parámetro no influirá en la búsqueda, incluso si está activo.
 
-**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
+**proponi provvigione per gli articoli omaggio**: con este indicador se propondrán las comisiones de los agentes también para las líneas de artículo de tipo regalo, al igual que ocurre para las líneas de tipo Artículo Codificado.
 
-**Consentire sconti per gli articoli omaggio**: con questo flag verranno inseriti gli sconti sull'importo di riga anche per le righe articolo di tipo omaggio.     
+**consentire sconti per gli articoli omaggio**: con este indicador se insertarán los descuentos en el importe de la línea también para las líneas de artículo de tipo regalo.
 
-**Verifica articoli in esaurimento**: se settato, questo flag farà apparire un pop-up di avviso nel caso in cui vengano inseriti in DDT degli articoli che hanno settato in anagrafica il flag in Esaurimento e la data in cui l’articolo va in esaurimento; questo controllo evita di vendere articoli che non verranno più prodotti o riassortiti.      
+**verifica articoli in esaurimento**: si está configurado, este indicador hará aparecer un pop-up de aviso en caso de que se inserten en el DDT artículos que tengan activado en el registro el indicador de Agotamiento y la fecha en la que el artículo va a agotarse; este control evita la venta de artículos que no serán más producidos o reabastecidos.
 
-**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di DDT quale tipo di sconto utilizzare.     
+**[Habilitar Widget de descuentos simplificado (Abilita Widget sconti semplificato)](/docs/sales/sales-flow/discount-widget)**: al activar este indicador en la sección de Artículos, se mostrarán dos nuevas columnas: *Descuentos Artículo* y *Descuentos Finales Artículo*. La columna *Descuentos Artículo* es editable y muestra los descuentos aplicados automáticamente en base a las configuraciones relativas al cliente, al artículo, a la lista o a la categoría de descuento. El usuario tiene la posibilidad de insertar, modificar o eliminar los descuentos directamente en esta columna. Para utilizar este widget, es necesario que, además de activar el indicador, se especifique en el tipo de DDT qué tipo de descuento utilizar.
 
-**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli del DDT, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
+**uso articolo cliente**: si está configurado, este indicador insertará, en la cuadrícula de artículos del DDT, las columnas para el Código y la Descripción del cliente ingresados en el registro del artículo, pestaña Cliente.
 
-**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli del DDT, la colonna per riportare il barcode dell'articolo.     
+**uso barcode**: si está configurado, este indicador insertará, en la cuadrícula de artículos del DDT, la columna para mostrar el código de barras del artículo.
 
-**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
+**codice operatore obbligatorio**: este indicador hace que sea obligatorio completar el campo *Operador* en la cabecera.
 
-**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+**blocca inserimento documento in date festive da calendario di fabbrica**: si está activo, el sistema no permitirá la inserción de la oferta en fechas festivas (se controlará primero el Calendario de Producción de la empresa, luego el Calendario de capacidades productivas); si no está activo, el sistema no realizará ningún control y permitirá la inserción del documento.
 
-**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
+**ricalcola trasporto**: este indicador garantiza que en la pestaña [Transporte (Trasporto)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT se muestren los totales de peso, volumen y bultos de las líneas del documento; sin este indicador, los campos no se completarán.
 
-**Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine alle righe DDT.
+**riferimenti esterni ordine**: este indicador hace que los campos *Nuestro* y *Su referencia* se transfieran de las líneas de pedidos a las líneas del DDT.
 
-**Mantieni prezzi da OC per gli scaglioni**: questo flag garantisce che, durante l'evasione parziale di un ordine nel DDT, venga mantenuto lo stesso scaglione di prezzo presente nell'ordine originale, senza alcun ricalcolo. Ad esempio, se nell'ordine è specificata una quantità di 100 unità che attiva uno scaglione di prezzo specifico, ma nel DDT vengono evase solo 20 unità, con questo flag attivato il DDT conserverà il prezzo associato allo scaglione originale, senza modificarlo in base alla quantità effettivamente evasa.
+**mantieni prezzi da oc per gli scaglioni**: este indicador garantiza que, durante el cumplimiento parcial de un pedido en el DDT, se mantenga el mismo tramo de precio presente en el pedido original, sin ningún recalculo. Por ejemplo, si en el pedido se especifica una cantidad de 100 unidades que activa un tramo de precio específico, pero en el DDT se cumplen solo 20 unidades, con este indicador activado, el DDT conservará el precio asociado al tramo original, sin modificarlo según la cantidad efectivamente cumplida.
 
-### Evasione
+### Cumplimiento (Evasione)
 
-In questo tab sono presenti i seguenti campi:       
+En esta pestaña están presentes los siguientes campos:
 
-**Pagamento**: specifica il valore usato per il pagamento del DDT cliente nel caso dell'evasione multipla di Ordini nel DDT: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**pagamento**: especifica el valor utilizado para el pago del DDT del cliente en caso de cumplimiento múltiple de pedidos en el DDT: *primo ordine*, *anagrafica* o *selezione manuale*.
 
-**Destinatario**: specifica il valore usato per il destinatario del DDT cliente nel caso dell'evasione multipla di Ordini nel DDT: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**destinatario**: especifica el valor utilizado para el destinatario del DDT del cliente en caso de cumplimiento múltiple de pedidos en el DDT: *primo ordine*, *anagrafica* o *selezione manuale*.
 
-**Controllo coerenza tra pagamenti DDT e ordine**: se attivo, il sistema non permetterà l'evasione da ordini con pagamenti diversi.
+**controllo coerenza tra pagamenti ddt e ordine**: si está activo, el sistema no permitirá el cumplimiento de pedidos con pagos diferentes.
 
-**Ricalcola CDC/CDP**: nel caso in cui si sia scelto di generare il DDT partendo dall'ordine cliente con l'apposta procedura, attivando questo flag, il sistema andrà a ricalcolare i centri di costo e di profitto se il DDT è stato generato da ordine, non considerando quelli impostati nell'ordine di vendita. Se non attivo il sistema non ricalcolerà questi dati ma terrà quelli inseriti nell'ordine cliente.
+**Recalcular CDC/CDP (Ricalcola CDC/CDP)**: en caso de que se haya elegido generar el DDT a partir del pedido del cliente con el procedimiento correspondiente, al activar este indicador, el sistema recalculará los centros de costo y de beneficio si el DDT se ha generado a partir del pedido, sin considerar los que están establecidos en el pedido de venta. Si no está activo, el sistema no recalculará estos datos, sino que mantendrá los ingresados en el pedido del cliente.
 
-**Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ordini vendita.      
+**Visualización de cuadrícula de cumplimiento (Visualizzazione griglia evasione)**: si está activo, el indicador habilitará el modo cuadrícula en el formulario de cumplimiento de pedidos de venta.
 
-**Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ordini vendita.
+**Visualización de árbol de cumplimiento (Visualizzazione tree evasione)**: si está activo, el indicador habilitará el modo árbol en el formulario de cumplimiento de pedidos de venta.
 
-**Proposta lotti**: questo flag fa in modo che al momento dell'evasione, nel caso in cui venga inserita una quantità diversa da evadere rispetto a quella presente nel documento di origine, la quantità dei lotti sia uguale alla quantità di riga nel documento creato; questo per evitare che il documento creato abbia una quantità di riga diversa da quella dei lotti.
+**proposta lotti**: este indicador garantiza que, al momento del cumplimiento, en caso de que se ingrese una cantidad diferente a cumplir respecto a la que está presente en el documento de origen, la cantidad de los lotes sea igual a la cantidad de línea en el documento creado; esto es para evitar que el documento creado tenga una cantidad de línea diferente a la de los lotes.
 
-### Scarico
+### Descarga (Scarico)
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data del DDT, e non sarà necessario specificare la data registrazione nella form di scarico. Se non attivo, sarà necessario specificare la data nella form di scarico DDT
+**crea registrazione con la data del documento**: si está activo, el registro de almacén se hará con la misma fecha del DDT, y no será necesario especificar la fecha de registro en el formulario de descarga. Si no está activo, será necesario especificar la fecha en el formulario de descarga del DDT.
 
-**Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe del DDT mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (**Magazzino** e **Causale di magazzino**);
+**Prioridad de almacén y causal de descarga en las líneas de artículos de los DDT (Priorità magazzino e causale di scarico alle righe articoli dei DDT)**: si está activo, el almacén y la causal de descarga se leerán desde las líneas del DDT; si no está activado, se utilizarán el almacén y la causal ingresados en los campos siguientes (**magazzino** y **Causal de almacén (Causale di magazzino)**).
 
-**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante.
+**carico/scarico automatico**: si está activo, la descarga del DDT se realizará automáticamente al activar el indicador Impreso. Si no está activo, la descarga deberá hacerse con el botón correspondiente.
 
-**Avviso articoli fittizi**: se attivo, durante lo scarico del DDT il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutto il DDT verrà scaricato (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa il DDT NON verrà scaricato.
+**avviso articoli fittizi**: si está activo, durante la descarga del DDT, el sistema verificará si hay artículos ficticios y, en caso de encontrarlos, aparecerá un mensaje que permitirá al usuario decidir si completar o no el procedimiento; en caso de respuesta afirmativa, todo el DDT se descargará (excepto los artículos ficticios), mientras que si la respuesta es negativa, el DDT NO se descargará.
 
-### Analitica
+### Analítica (Analitica)
 
-Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga DDT.      
-È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).     
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente.     
-Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover).      
-Qualora non fosse presente nel *Tipo fatturato* il sistema lo cercherà in *Anagrafica cliente*. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.       
-Il flag **Valuta la priorità di ogni dimensione** fa in modo che nei documenti i CDC/CDP vengano raggruppati per dimensione, nel tab Analitica. 
+Esta pestaña especifica con qué prioridad se recupera el Centro de Costos (CDC) o el Centro de Beneficios (CDP) en la línea del DDT.
+Es posible modificar las prioridades utilizando los botones **sposta su**![](/img/neutral/common/move-up.png) y **sposta giù**![](/img/neutral/common/delete-cc.png).  
+*Valores predeterminados (Valori di default)*: el CDC o CDP se recupera del [Tipo de facturación (Tipo fatturato)](/docs/configurations/tables/sales/sales-turnover) si está presente.  
+Para más detalles, consulte la tabla [Tipo de facturación (Tipo fatturato)](/docs/configurations/tables/sales/sales-turnover).  
+Si no está presente en el *tipo fatturato*, el sistema lo buscará en el *anagrafica cliente*. Si tampoco está allí, se buscará en el registro del artículo y posteriormente a nivel de almacén.  
+El indicador **Evalúa la prioridad de cada dimensión (Valuta la priorità di ogni dimensione)** hace que en los documentos los CDC/CDP se agrupen por dimensión, en la pestaña Analítica (Analitica).

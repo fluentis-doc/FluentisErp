@@ -1,10 +1,10 @@
 ---
-title: Registrazioni di magazzino
+title: registrazioni di magazzino
 sidebar_position: 30
 ---
 
-Normalmente le registrazioni di magazzino non prevedono una valorizzazione automatica dei centri di costo, anche se ogni riga di movimentazione prevede la sezione di dettaglio della valorizzazione dei centri: questo perché normalmente è sufficiente valorizzarli quando si contabilizzano le rimanenze iniziali e rimanenze finali nell'area controlling.
+Normalmente, los registros de almacén no prevén una valoración automática de los centros de costos, aunque cada línea de movimiento incluye la sección de detalle de la valoración de los centros: esto es porque normalmente es suficiente valorarlos cuando se contabilizan los inventarios iniciales y finales en el área de control.
 
 :::tip nota
-Nel caso in cui si voglia valorizzare automaticamente il dato dell'analitica nel corso della registrazione dei carichi/scarichi dai documenti, è possibile abilitare il flag *Centri di costo* nelle causali di magazzino relative.
+En caso de que se quiera valorar automáticamente el dato de la analítica durante el registro de las entradas/salidas desde los documentos, es posible habilitar el indicador *centri di costo* en las causales de almacén correspondientes.
 :::

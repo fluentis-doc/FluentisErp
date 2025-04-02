@@ -1,9 +1,8 @@
 ---
-title: Tipo origine Costo/Ricavo
+title: tipo origine costo/ricavo
 sidebar_position: 16
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Tipo origine costo/ricavo** e contiene un elenco di codici origine di costi e ricavi. È possibile ricercare, inserire e cancellare i codici, ma è già presente un elenco di default.
+Esta tabla es accesible desde **tipo origine costo/ricavo** y contiene una lista de códigos de origen de costos e ingresos. Es posible buscar, insertar y eliminar códigos, pero ya hay una lista predeterminada.
 
 ![](/img/it-it/configurations/tables/projects/cost-revenue.png)
-

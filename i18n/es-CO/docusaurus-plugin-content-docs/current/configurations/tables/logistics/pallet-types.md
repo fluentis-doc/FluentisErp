@@ -1,20 +1,20 @@
 ---
-title: Tipi UDC
+title: tipi udc
 sidebar_position: 37
 ---
 
-La tabella di inserimento dei tipi UDC è una tabella di base per l'utilizzo delle unità di carico. Nello specifico vengono definiti i tipi imballo e relativi dati che serviranno per la creazione e l'ottimizzazione dei piani di carico (come per esempio pesi e dimensioni).
+La tabla de inserción de tipos UDC es una tabla básica para el uso de las unidades de carga. En específico, se definen los tipos de embalaje y los datos relacionados que servirán para la creación y optimización de los planes de carga (como por ejemplo, pesos y dimensiones).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar aquellos que ya existen para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi gruppo UDC**
+**Búsqueda de Tipos de grupo UDC (Ricerca Tipi gruppo UDC)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento tipi UDC**
+**Inserción de tipos UDC (Inserimento tipi UDC)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos códigos, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: Tipo, Descrizione, Tipo gruppo (proposto dalla tabella *Tipi gruppo UDC*), Numerazione. 
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: Tipo, Descripción, Tipo de grupo (propuesto por la tabla *Tipos de grupo UDC*), Numeración.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

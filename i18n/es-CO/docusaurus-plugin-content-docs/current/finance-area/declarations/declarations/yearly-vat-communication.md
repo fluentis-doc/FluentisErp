@@ -1,14 +1,8 @@
 ---
-title: Comunicazione IVA annuale
+title: comunicazione iva annuale
 sidebar_position: 3
 ---
 
-Questo adempimento è stato soppresso a partire dall'anno 2017.
+Este cumplimiento fue suprimido a partir del año 2017.
 
-La procedura permetteva di elaborare i valori (pulsante **Calcola valori** nella ribbon bar) ed una stampa di supporto per la compilazione del modello fiscale.
-
-
-
-
-
-
+El procedimiento permitía elaborar los valores (botón **calcola valori** en la barra de herramientas) y una impresión de soporte para la recopilación del modelo fiscal.

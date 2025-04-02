@@ -1,53 +1,42 @@
 ---
-title: Creazione fattura elettronica
+title: Creación de factura electrónica (Creazione fattura elettronica)
 sidebar_position: 2
 ---
 
-In questa pagina viene illustrato:
+En esta página se ilustra:
 
- - **La creazione di una fattura elettronica B2B/PA**  
- - **Gestione della firma digitale**  
- - **Procedura di creazione della fattura per coloro che non sottoscrivono il servizio FBH**  
+ - **La creación de una factura electrónica B2B/PA (fattura elettronica B2B/PA)**  
+ - **Gestión de la firma digital (Gestione della firma digitale)**  
+ - **Procedimiento de creación de la factura para aquellos que no suscriben el servicio FBH (Procedura di creazione della fattura per coloro che non sottoscrivono il servizio FBH)**  
 
-Per la creazione di una fattura elettronica Business to Business e per la Pubblica Amministrazione, occorrerà prima di tutto creare una fattura di vendita con le normali procedure di Fluentis, dopodichè si procede alla generazione del relativo tracciato XML utilizzando l'apposito workflow.
+Para la creación de una factura electrónica Business to Business y para la Administración Pública, primero se debe crear una factura de venta siguiendo los procedimientos normales de Fluentis, luego se procede a la generación del correspondiente archivo XML utilizando el flujo de trabajo específico.
 
 ![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image01.png)
 
- 
-La generazione del file XML avviene mediante il passaggio di stati.
+La generación del archivo XML se realiza mediante el paso de estados.
 
- ![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image02.png)
+![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image02.png)
 
-  
+Una factura recién creada se presenta con el estado "**non esaminata**", el estado siguiente "**controllo del documento**" no solo identifica que el documento ha sido creado, sino que también realiza controles automáticos para verificar la presencia de los datos mínimos específicos.
 
-Una fattura appena creata si presenta con lo stato "**Non esaminata**", lo stato successivo "**Controllo del documento**" oltre ad identificare che il documento è stato creato esegue anche dei controlli automatici per verificare la presenza dei dati mini specifici.
+Desde esto, es posible a través del estado "**generazione del file**" generar el archivo XML de la factura.
 
-Da questo è possibile tramite lo stato "**Generazione del file**" generare il tracciato XML della fattura.
+Cabe mencionar los dos estados particulares "**annulla documento**" y "**Excluir documento (Escludi documento)**", el primero significa que el documento no debe ser enviado al cliente final pero seguirá siendo válido a efectos de IVA, el segundo se refiere a los documentos que por su naturaleza no deben ser incluidos en el flujo de gestión de la facturación electrónica.
 
-Da notare i due particolari stati "**Annulla Documento**" e "**Escludi documento**", il primo significa che il documento non dovrà essere inviato al cliente finale ma resterà comunque valido a fini IVA, il secondo riguarda i documenti che per loro natura non devono rientrare nel flusso di gestione della fatturazione elettronica.
+Después del estado "generada", es posible asignar el estado "**da spedire**", de manera automática este estado hará que el Fluentis Business HUB procese el archivo y lo transmita al SDI.
 
-Dopo lo stato "generata" quindi è possibile assegnare lo stato "**Da spedire**", in maniera automatica questo stato farà si che il Fluentis Business HUB processi il file e lo trasmetta allo SDI.
+Una vez enviado el documento al servicio FBH, el estado se modificará automáticamente primero a "**in fluentis business hub**", y posteriormente al estado "**in sdi**", cuando el servidor haya enviado el archivo.
 
-Una volta inviato il documento al servizio FBH lo stato si modificherà automaticamente prima in "**In Fluentis Business Hub**", e successivamente nello stato "**In SDI**", quando il server avrà inoltrato il file.
+Para el monitoreo de estos estados, es suficiente presionar el botón ![](/img/neutral/common/search.png) para actualizar el formulario.
 
-Per il monitoraggio di questi stati è sufficiente premere il tasto ![](/img/neutral/common/search.png) per aggiornare la Form.
+n.b. Al pasar al estado "Para enviar (Da spedire)", no será posible retroceder ni modificar la factura, pero se deberá esperar la notificación del resultado del SDI.
 
-n.b. passando allo stato "Da spedire" non sarà più possibile tornare indietro ne modificare la fattura ma si dovrà attendere la notifica di esito dal SDI
+GESTIÓN DE FIRMA DIGITAL (GESTIONE FIRMA DIGITALE) En caso de que el archivo deba ser firmado digitalmente, la activación del indicador "Firma digital" a nivel de registro del cliente o en la tabla de la empresa hará aparecer un estado adicional después de la fase de generación del archivo.
 
- GESTIONE FIRMA DIGITALE Qualora il file debba essere firmato digitalmente l'attivazione del flag "Firma digitale" a livello di anagrafica cliente o nella tabella società, farà comparire un ulteriore stato dopo la fase di generazione del tracciato.
+Con el estado generado se ha creado una copia del archivo directamente en la carpeta externa establecida al momento de la configuración de la facturación electrónica y será suficiente procesarla con el software de firma.
 
-Con lo stato generato infatti è stata creata una copia del file direttamente nella cartella esterna impostata al momento della configurazione della fatturazione elettronica e sarà sufficiente processarla con il software di firma.
+Entonces el estado "**Firmar documento (Firma documento)**" se encarga únicamente de reimportar el documento firmado en el nuevo formato (p7m).
 
-Quindi lo stato "**Firma documento**" provvede solamente a reimportare il documento firmato nel nuovo formato (p7m).
+PROCEDIMIENTO PARA AQUELLOS QUE NO SUSCRIBEN EL SERVICIO FBH (PROCEDURA PER COLORO CHE NON SOTTOSCRIVONO IL SERVIZIO FBH) Para aquellos que dependen de herramientas externas a Fluentis para el envío al SDI de las facturas, simplemente será necesario descargar la e-factura en formato XML para luego transmitirla mediante el canal elegido.
 
- 
-
-PROCEDURA PER COLORO CHE NON SOTTOSCRIVONO IL SERVIZIO FBHPer coloro che si affidano a strumenti esterni a Fluentis per l'invio allo SDI dell fatture basterà semplicemente scaricare la e-fattura in formato XML per poi trasmetterla mediante il canale prescelto.
-
-Tramite il pulsante ![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image04.png) è possibile quindi prelevare il file xml già nello stato "Generata", ma si consiglia di passare comunque allo stato da "Da spedire" per bloccare da eventuali modifiche il file.
-
-
-
-
-
-
+A través del botón ![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image04.png) es posible, por lo tanto, obtener el archivo XML ya en estado "Generada (Generata)", pero se recomienda pasar de todos modos al estado "Para enviar (Da spedire)" para bloquear el archivo de modificaciones eventuales.

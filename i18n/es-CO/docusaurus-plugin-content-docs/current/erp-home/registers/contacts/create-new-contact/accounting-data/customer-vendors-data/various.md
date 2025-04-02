@@ -1,8 +1,8 @@
 ---
-title: Varie
+title: varie
 sidebar_position: 8
 ---
 
-In questa form possiamo associare al nostro fornitore o cliente svariate note.
-*Pulsante specifico*:
-> Cancella incompatibili: per cancellare i sottoconti incompatibili. 
+En este formulario podemos asociar a nuestro proveedor o cliente varias notas.  
+*Botón específico (Pulsante specifico)*:  
+> Eliminar incompatibles (Cancella incompatibili): para eliminar los subcuentas incompatibles.

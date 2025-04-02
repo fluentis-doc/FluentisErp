@@ -1,13 +1,11 @@
-Per la ricerca automatica del *Piano di controllo* da associare ad ogni *articolo* presente nella riga documento selezionata, viene utilizzata questa metodologia:   
+Para la búsqueda automática del *piano di controllo* a asociar a cada *articolo* presente en la línea del documento seleccionado, se utiliza esta metodología:  
 
-- per i documenti di produzione (*Dichiarazioni di produzione* e *Fasi ordine di produzione*) viene considerato il *Piano di controllo* indicato nella *Fase*;   
-- per gli altri documenti viene considerato il conto del *Cliente* o *Fornitore* associato al *Tipo documento* e la *Data del documento*;   
-con queste informazioni viene ricercato il *Piano di controllo*, valido alla data del documento e per l'*Articolo* selezionato, da associare;   
-ad ogni ricerca, se non viene trovato il *Piano di controllo*, si prosegue con la successiva combinazione di valori;   
-se viene trovato più di un *Piano di controllo*, il *Controllo* viene comunque inserito ma si dovrà scegliere quale *Piano di controllo* associare tra quelli trovati;   
-la sequenza di ricerca è la seguente:   
-    - ricerca tra i *Piani di controllo* del *Tipo piano* indicato come *Tipo piano di controllo* del *Tipo documento per l'importazione* presente nei *Parametri controlli articolo* e conto *Cliente* o *Fornitore* del documento e successivamente quelli privi di conto *Cliente* o *Fornitore*;   
-    - ricerca tra i *Piani di controllo* degli altri *Tipi piano* non indicati come *Tipo piano di controllo* del *Tipo documento per l'importazione* presente nei *Parametri controlli articolo* e conto *Cliente* o *Fornitore* del documento e successivamente quelli privi di conto *Cliente* o *Fornitore*.   
-    - se non trovato viene visualizzato un messaggio di avviso, il *Controllo articolo* viene comunque inserito ma privo del *Piano di controllo*, privo delle *Prove* da controllare e viene inserita un'indicazione nelle *Richieste Piani di controllo*"*.   
-
-
+- para los documentos de producción (*dichiarazioni di produzione* y *Fases del pedido de producción (Fasi ordine di produzione)*), se considera el *piano di controllo* indicado en la *Fase*;  
+- para los otros documentos, se considera la cuenta del *cliente* o *fornitore* asociada al *tipo documento* y la *data del documento*;  
+con esta información se busca el *piano di controllo*, válido hasta la fecha del documento y para el *articolo* seleccionado, que se va a asociar;  
+en cada búsqueda, si no se encuentra el *piano di controllo*, se prosigue con la siguiente combinación de valores;  
+si se encuentra más de un *piano di controllo*, el *controllo* se inserta de todos modos, pero se deberá elegir qué *piano di controllo* asociar entre los encontrados;  
+la secuencia de búsqueda es la siguiente:  
+    - búsqueda entre los *piani di controllo* del *Tipo de plan (Tipo piano)* indicado como *tipo piano di controllo* del *Tipo de documento para la importación (Tipo documento per l'importazione)* presente en los *Parámetros de controles del artículo (Parametri controlli articolo)* y cuenta del *cliente* o *fornitore* del documento y, posteriormente, aquellos sin cuenta de *cliente* o *fornitore*;  
+    - búsqueda entre los *piani di controllo* de los otros *Tipos de plan (Tipi piano)* no indicados como *tipo piano di controllo* del *Tipo de documento para la importación (Tipo documento per l'importazione)* presente en los *Parámetros de controles del artículo (Parametri controlli articolo)* y cuenta del *cliente* o *fornitore* del documento, y, posteriormente, aquellos sin cuenta de *cliente* o *fornitore*.  
+    - si no se encuentra, se visualizará un mensaje de aviso, el *Control de artículo (Controllo articolo)* se inserta de todos modos pero sin el *piano di controllo*, sin las *prove* a controlar y se inserta una indicación en las *richieste piani di controllo*.

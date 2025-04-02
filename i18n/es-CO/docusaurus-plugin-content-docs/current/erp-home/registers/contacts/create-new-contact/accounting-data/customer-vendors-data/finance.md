@@ -1,150 +1,140 @@
 ---
-title: Amministrazione
+title: amministrazione
 sidebar_position: 1
 ---
 
-In questa form troviamo i seguenti campi:
+En este formulario encontramos los siguientes campos:
 
-**Divisa**: il campo, obbligatorio, viene proposto di default sulla base della divisa della società, ma può essere modificato per avere questa proposta nella creazione dei documenti e delle registrazioni contabili;
+**divisa**: el campo, obligatorio, se propone por defecto en función de la divisa de la empresa, pero puede ser modificado para tener esta propuesta en la creación de documentos y registros contables;  
 
-**Posizione IVA**: è l'aliquota iva da proporre nel ciclo documentale attivo/passivo e nelle registrazioni contabili. 
+**posizione iva**: es la tasa de IVA que se propondrá en el ciclo documental activo/pasivo y en los registros contables.
 
-:::note Attenzione
-La priorità di valorizzazione del campo [IVA](/docs/sales/sales-invoices/invoicing/sales-invoice) nei documenti prevede nell'ordine:  
-1. verifica delle [Dichiarazioni di intento](/docs/finance-area/declarations/declarations/intent-declaration), se presenti, e sostituzione del codice iva in esse contenuto;  
-2. anagrafica cliente/fornitore;  
-3. anagrafica articolo.
+:::note Atención
+La prioridad de valorización del campo [IVA](/docs/sales/sales-invoices/invoicing/sales-invoice) en los documentos prevé, en el siguiente orden:  
+1. verificación de las [Declaraciones de intención (Dichiarazioni di intento)](/docs/finance-area/declarations/declarations/intent-declaration), si están presentes, y sustitución del código de IVA en ellas contenidas;  
+2. registro del cliente/proveedor;  
+3. registro del artículo.
 :::
 
-E' opportuno valutare, in base alla logica di priorità di valorizzazione, se compilare o meno questo campo nell'anagrafica cliente/fornitore.
+Es conveniente evaluar, en función de la lógica de prioridad de valorización, si se debe completar o no este campo en el registro del cliente/proveedor.
 
-*Esempio*: se compilo il campo nell'anagrafica di un cliente intra-UE inserendo un'aliquota iva di non imponibilità, quest'aliquota prevarrà nei documenti rispetto all'eventuale aliquota ordinaria inserita nell'anagrafica degli articoli che vanno in fattura.  Questa prevalenza potrebbe non essere opportuna in altre situazioni e va dunque tenuta presente.
+*Ejemplo*: si lleno el campo en el registro de un cliente intra-UE insertando una tasa de IVA no imponible, esta tasa prevalecerá en los documentos sobre cualquier tasa ordinaria insertada en el registro de los artículos que van en la factura. Esta prevalencia puede no ser adecuada en otras situaciones y debe tenerse en cuenta.
 
-**Tipo contab. IVA**: il campo consente di definire, in combinazione con l'impostazione delle causali di contabilità generale, quale sia il sottoconto iva di acquisto/vendita da utilizzare nelle registrazioni intestate al soggetto in uso. Esiste un tipo contab. iva di default all'interno dei parametri di contabilità; (utilizzato prevalentemente per fiscalità NON italiane).
+**tipo contab. iva**: el campo permite definir, en combinación con la configuración de las causas de contabilidad general, cuál es el subcuenta de IVA de compra/venta que se utilizará en los registros a nombre del sujeto en uso. Existe un tipo contab. IVA por defecto dentro de los parámetros de contabilidad; (utilizado principalmente para fiscalidad NO italianas).
 
-**Tipo contab. articolo**: per le contabilizzazioni fatture di **Fluentis**, consente di definire la logica di valorizzazione del sottoconto di dettaglio del fatturato acquisti/vendite differenziando la contropartita (di costo/ricavo) rispetto al cliente/fornitore intestatario della fattura di acquisto o vendita.
+**Tipo contab. artículo (Tipo contab. articolo)**: para la contabilización de facturas de **Fluentis**, permite definir la lógica de valorización del subcuenta de detalle del facturado de compras/ventas diferenciando la contrapartida (de costo/ingreso) respecto al cliente/proveedor titular de la factura de compra o venta.
 
-*Esempio*:
+*Ejemplo*:  
 
-Nel piano dei conti ho il conto 500 Vendite prodotti che ha i seguenti sottoconti:
+En el plan de cuentas tengo la cuenta 500 Ventas productos que tiene los siguientes subcuentas:
 
-500-001 Ricavi prodotti finiti
+500-001 Ingresos productos terminados  
 
-500-002 Ricavi intercompany prodotti finiti
+500-002 Ingresos intercompany productos terminados  
 
-500-003 Ricavi esteri prodotti finiti
+500-003 Ingresos exteriores productos terminados  
 
-L'articolo XYZ ha il fatturato vendite ‘A – Ricavi prodotti finiti' in anagrafica, che è collegato al conto contabile 500-001 Ricavi prodotti finiti.
+El artículo XYZ tiene el facturado de ventas 'A – Ingresos productos terminados' en el registro, que está conectado a la cuenta contable 500-001 Ingresos productos terminados.
 
-Se il mio cliente cod. 001 è italiano l'impostazione è soddisfacente, riga vendita articolo *XYZ* con fatturato vendite ‘A' quindi registrazione del ricavo sul conto corretto.
+Si mi cliente cod. 001 es italiano, la configuración es satisfactoria, línea de venta del artículo *XYZ* con facturado de ventas ‘A' por lo tanto registro del ingreso en la cuenta correcta.
 
-Ma se la vendita è ad un cliente cod 002 intercompany, o ad un cliente cod. 003 estero, al fine di evitare che l'utente ogni volta debba ricordare di cambiare il fatturato vendite (in B o C) su tutte le righe del documento (fattura) per contabilizzare la riga documento sul conto opportuno, è possibile definire la corretta valorizzazione per l'anagrafica in questione, andando a prevalere sul settaggio generale.
+Pero si la venta es a un cliente cod 002 intercompany, o a un cliente cod. 003 exterior, con el fin de evitar que el usuario deba recordar cada vez cambiar el facturado de ventas (en B o C) en todas las líneas del documento (factura) para contabilizar la línea del documento en la cuenta apropiada, es posible definir la correcta valorización para el registro en cuestión, prevaleciendo sobre la configuración general.
 
- ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image03.png)
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image03.png)
 
-La compilazione del campo si effettua tramite una combo-box collegata alla tabella [Tipo contab. articolo:](/docs/configurations/tables/finance/articles-accounting-types) in questa tabella creeremo, ad esempio, un tipo Contabilizzazione cod. 1 ‘Intercompany' e un tipo contabilizzazione cod. 2 ‘Estero', e metteremo su entrambi il flag ‘Cliente' in modo che questi due record siano visibili nelle anagrafiche clienti. Quindi nell'anagrafica di 002 imposteremo tipo contabilizzazione cod. 1 'Intercompany' e in 003 cod. 2 ‘Estero'.
+El llenado del campo se realiza a través de una combo-box conectada a la tabla [Tipo contab. artículo (Tipo contab. articolo)](/docs/configurations/tables/finance/articles-accounting-types) en esta tabla crearemos, por ejemplo, un tipo de Contabilización cod. 1 ‘Intercompany' y un tipo de contabilización cod. 2 ‘Exterior', y pondremos en ambos el indicador ‘Cliente’ de modo que estos dos registros sean visibles en los registros de clientes. Entonces en el registro de 002 configuraremos tipo de contabilización cod. 1 'Intercompany' y en 003 cod. 2 ‘Exterior'.
 
-Poi sarà necessario inserire nella tabella [Fatturato vendite,](/docs/configurations/tables/sales/sales-turnover) in corrispondenza della riga 'A - Ricavi prodotti finiti' (nella griglia in basso)
+Luego será necesario ingresar en la tabla [Facturado ventas (Fatturato vendite)](/docs/configurations/tables/sales/sales-turnover) en correspondencia de la línea 'A - Ingresos productos terminados' (en la cuadrícula inferior):
 
-- una riga tipo contabilizzazione ‘intercompany' e conto 400-001 Ricavi intercompany prodotti finiti;
+- una línea tipo contabilización ‘intercompany' y cuenta 400-001 Ingresos intercompany productos terminados;  
 
-- una riga tipo contabilizzazione ‘estero' e conto 400-002 Ricavi esteri prodotti finiti.
+- una línea tipo contabilización ‘exterior' y cuenta 400-002 Ingresos exteriores productos terminados.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image04.png)
 
-In questo modo l'utente dovrà poi impostare soltanto l'anagrafica e le impostazioni faranno valorizzare il sottoconto opportuno; la contabilizzazione verificherà per ogni fatturato vendite inserito in fattura se esiste un dettaglio con un conto particolare per il tipo inserito nel cliente.
+De esta manera, el usuario solo deberá configurar el registro y las configuraciones harán que se valore el subcuenta apropiado; la contabilización verificará por cada facturado de ventas ingresado en la factura si existe un detalle con una cuenta particular para el tipo ingresado en el cliente.
 
-Specularmente il settaggio opera sulla parte fornitori, mettendo il flag *Fornitori* nella tabella [Tipo contab. articolo](/docs/configurations/tables/finance/articles-accounting-types) ed aggiornando la tabella **Fatturato acquisti**.
+Simétricamente, la configuración opera sobre la parte de proveedores, poniendo el indicador *Proveedores (Fornitori)* en la tabla [Tipo contab. artículo (Tipo contab. articolo)](/docs/configurations/tables/finance/articles-accounting-types) y actualizando la tabla **fatturato acquisti**.
 
+**Subcuenta facturas por recibir / emitir (Sottoconto fatture da ricevere / emettere)**: indicar en este campo la subcuenta patrimonial (prioritaria respecto al valor por defecto insertado en los parámetros contables) a utilizar en el procedimiento del área de compras **Contabilización de facturas por recibir**, pero también en los procedimientos de cálculo de los ajustes contables o de las simulaciones de balance interanual en caso de que todo el costo deba ser incluido en el balance del periodo. Los campos son alternativos y visibles dependiendo de si el tipo de cuenta es *fornitore* (facturas por *recibir*) o *cliente* (facturas por *emitir*).
 
-**Sottoconto fatture da ricevere / emettere**: indicare in questo campo il sottoconto patrimoniale (prioritario rispetto al default inserito nei parametri di contabilità) da utilizzare nella procedura dell'area acquisti **Contabilizzazione fatture da ricevere**, ma anche nelle procedure di calcolo degli assestamenti di bilancio o delle simulazioni di bilancio infrannuale nel caso in cui tutto il costo sia da inserire nel bilancio di periodo. I campi sono alternativi e visibili a seconda se il tipo conto è *Fornitore* (fatture da *ricevere*) o *Cliente* (fatture da *emettere*)
+**Subcuenta de nota de crédito por recibir / emitir (Sottoconto della Nota d accredito da ricevere / emettere)**: indicar en este campo la subcuenta patrimonial (prioritaria respecto al valor por defecto insertado en los parámetros contables) a utilizar en el procedimiento del área de compras **Contabilización de facturas por recibir**, pero también en los procedimientos de cálculo de los ajustes contables o de las simulaciones de balance interanual en caso de que todo el costo deba ser incluido en el balance del periodo. Los campos son alternativos y visibles dependiendo de si el tipo de cuenta es *fornitore* (notas de crédito por *recibir*) o *cliente* (notas de crédito por *emitir*).
 
+**sottoconto di fatturazione**: el campo, gestionado exclusivamente para los registros de clientes, permite definir para el subcuenta del registro en uso, cuál es el subcuenta en el que se debe emitir la factura durante la creación de las facturas a partir de DDT.
 
-**Sottoconto della Nota d accredito da ricevere / emettere**: indicare in questo campo il sottoconto patrimoniale (prioritario rispetto al default inserito nei parametri di contabilità) da utilizzare nella procedura dell'area acquisti **Contabilizzazione fatture da ricevere**, ma anche nelle procedure di calcolo degli assestamenti di bilancio o delle simulazioni di bilancio infrannuale nel caso in cui tutto il costo sia da inserire nel bilancio di periodo. I campi sono alternativi e visibili a seconda se il tipo conto è *Fornitore* (note di accredito da *ricevere*) o *Cliente* (note di accredito da *emettere*)
+*Ejemplo*: supongamos la gran distribución.
 
-**Sottoconto di fatturazione**: il campo, gestito esclusivamente per le anagrafiche clienti, consente di definire per il sottoconto di anagrafica in uso, quale sia il sottoconto sul quale intestare la fattura nel corso della creazione delle fatture da DDT;
+Cliente X, tienda filial ubicada en Sacile, que tiene en su registro completado el subcuenta de facturación = cliente Y (la casa matriz) ubicada en Milán.
 
-*Esempio*: si pensi alla grande distribuzione.
+Nuestra empresa entrega con DDT a la tienda X de Sacile, luego, cuando emite la factura, esta debe ser emitida a la casa matriz cliente Y de Milán.
 
-Cliente X negozio filiale con sede a Sacile, che ha nella sua anagrafica compilato il sottoconto di fatturazione = cliente Y (la casa madre) con sede a Milano.
+Un método alternativo (recomendado) consiste en gestionar siempre el registro del cliente Y casa matriz de Milán y en su registro codificar la **[destinación mercancía](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)** = cliente X tienda de Sacile. De esta manera, el DDT y las facturas están emitidos al mismo sujeto con mayor claridad.
 
-La nostra società consegna con DDT al negozio X di Sacile, poi, quando emette fattura, questa va intestata alla casa madre cliente Y di Milano.
+**sottoconto capogruppo**: en el análisis del riesgo del cliente, permite unir a clientes que pertenecen al mismo grupo empresarial;  
 
-Un metodo alternativo (consigliato) consiste nel gestire sempre l'anagrafica del cliente Y casa madre di Milano e nella sua anagrafica codificare la ** [destinazione merce](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) ** = cliente X negozio di Sacile. In questo modo ddt e fatture sono intestate allo stesso soggetto con maggior chiarezza.
+**Subcuenta de pago (Pag.Forn.)**: esta subcuenta se asocia a las partidas contables creadas, con el fin de poder verificar la canalización de los pagos/recibos en las impresiones de los vencimientos y en las simulaciones de flujo de caja;
 
-**Sottoconto Capogruppo**: nell'analisi dei rischio cliente, consente di unire clienti che appartengono allo stesso gruppo aziendale; 
+**Costo/Ingreso de contrapartidas predeterminadas (Costo/Ricavo di contropartite predef.)**: es el subcuenta de contabilidad general que se propondrá por defecto en los registros contables de IVA; en caso de contabilización de documentos de compras/ventas, este subcuenta es el valor por defecto a utilizar en caso de que no se haya introducido un facturado de compras/ventas en las líneas de artículos;
 
-**Sottoconto di pag. (Pag.Forn.)**: questo sottoconto viene associato alle partite contabili create, al fine di poter verificare la canalizzazione dei pagamenti/incassi nelle stampe degli scadenziari e nelle simulazioni di cash flow;
+*Prioridad de valorización* de los campos cuenta, subcuenta, descripción en la sección **Extremos de IVA (Estremi IVA)** del documento de la **registrazione contabile**:  
+1. Valorización del [Facturado Ventas (Fatturato Vendite)](/docs/configurations/tables/sales/sales-turnover)/ **fatturato acquisti** presente en la factura que se contabiliza y el código de cuenta, subcuenta y descripción conectados a cada tipología en las tablas Facturado compras / Facturado ventas.  
+2. Registro de Cliente/Proveedor
 
+**Costo/Ingreso de contrapartida alternativa (Costo/Ricavo di contropartita alternativo)**: esta cuadrícula permite predefinir la lista de subcuentas y la respectiva tasa de IVA a proponer en los registros de IVA a nombre del sujeto; para utilizar la opción es necesario que se establezca una ‘Posición IVA‘ por defecto y que no se haya insertado ningún costo/ingreso de contrapartida predeterminada;
 
-**Costo/Ricavo di contropartite predef**.: è il sottoconto di contabilità generale da proporre di default nelle registrazioni contabili IVA; in caso di contabilizzazione di documenti dagli acquisti/vendite, questo sottoconto è il valore di default da utilizzare nel caso in cui non sia stato inserito un fatturato acquisti/vendite nelle righe articolo;
-
-
-*Priorità di valorizzazione* dei campi conto, sottoconto, descrizione nella sezione **Estremi IVA** del documento della **Registrazione contabile**:  
-1. Valorizzazione del [Fatturato Vendite](/docs/configurations/tables/sales/sales-turnover)/ **Fatturato Acquisti** presente nella fattura che viene contabilizzata e codice di conto, sottoconto e descrizione collegato ad ogni tipologia  nelle tabelle Fatturato acquisti  / Fatturato vendite.   
-2. Anagrafica Cliente/Fornitore  
-
-**Costo/Ricavo di contropartita alternativo**: questa griglia consente di predefinire la lista dei sottoconti e la relativa aliquota iva da proporre nelle registrazioni iva intestate al soggetto; per utilizzare l'opzione è necessario che sia impostata una ‘Posizione IVA‘ di default e non sia inserito nessun costo/ricavo di contropartita predefinito;
-
-
-**Conto Anticipi:** è possibile definire un sottoconto anticipi associato all’anagrafica cliente stessa (ad esempio un sottoconto legato al tipo conto specifico '*CA*' per Anticipi Clienti con relativo mastro) e collegarlo al conto principale del cliente (quello classico con tipo conto '*CIT*' legato ad esempio al mastro Clienti Italia) tramite il presente campo.
+**conto anticipi**: es posible definir un subcuenta de anticipos asociado al mismo registro del cliente (por ejemplo, un subcuenta vinculada al tipo de cuenta específica '*CA*' para Anticipos Clientes con su respectivo libro mayor) y conectarlo a la cuenta principal del cliente (la clásica con tipo de cuenta '*CIT*' vinculada, por ejemplo, al libro mayor Clientes Italia) a través de este campo.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image05.png)
 
-Questo sottoconto sarà utilizzato per valorizzare le righe tipo 6 ‘fattura d’acconto’ e 7 ‘storno acconti’ presenti nelle fatture di vendita.
+Este subcuenta será utilizado para valorar las líneas tipo 6 ‘factura de anticipo’ y 7 ‘anulación de anticipos’ presentes en las facturas de venta.
 
-La fattura di acconto sarà sempre intestata al cliente reale e avrà la riga tipo 6 ‘Fattura d’acconto’ e il fatturato vendite rileverà il debito generico ad esempio il conto Clienti c/anticipi (come di consueto quando non viene utilizzato il campo in questione).
+La factura de anticipo siempre estará a nombre del cliente real y tendrá la línea tipo 6 ‘Factura de anticipo’ y el facturado de ventas registrará la deuda genérica, por ejemplo, en la cuenta Clientes c/anticipos (como es habitual cuando no se utiliza el campo en cuestión).
 
-Il risultato in contabilizzazione della fattura di acconto sarà il seguente:
+El resultado en la contabilización de la factura de anticipo será el siguiente:
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image06.png)
 
+Estará a nombre del cliente efectivo y tendrá una línea de anulación de su valor para reasignarlo a la cuenta de anticipos dedicada.
 
-Sarà intestata al cliente effettivo e avrà una riga di storno del suo valore per riassegnarlo al conto anticipi dedicato.
-
-Nella fattura di vendita finale sarà presente la riga di storno acconti per il valore già fatturato come di consueto.
+En la factura de venta final estará presente la línea de anulación de anticipos por el valor ya facturado como es habitual.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image07.png)
 
-
-Il risultato della contabilizzazione della fattura a saldo sarà il seguente:
+El resultado de la contabilización de la factura a saldo será el siguiente:
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image08.png)
 
-Vi sarà quindi la chiusura del debito generico del conto clienti c/anticipi come di consueto, inoltre vi saranno le due righe di storno della contabilizzazione fattura precedente.
-Dal saldo (dare) di ogni conto anticipi cliente, quindi, si potrà capire l’importo degli anticipi aperti per ogni cliente.
+Por lo tanto, habrá el cierre de la deuda genérica de la cuenta Clientes c/anticipos como es habitual, además de las dos líneas de anulación de la contabilización de la factura anterior. Desde el saldo (debe) de cada cuenta de anticipos de clientes, entonces, se podrá entender el monto de los anticipos abiertos para cada cliente.
 
-ATTENZIONE: gestione delle partite aperte: in entrambe le contabilizzazioni ci sono squadrature tra movimenti contabili e movimenti dei partitari, per cui le causali **non** devono prevedere la quadratura obbligatoria dei partitari.
+ATENCIÓN: gestión de partidas abiertas: en ambas contabilizaciones hay desajustes entre movimientos contables y movimientos de los partidas, por lo que las causas **no** deben prever la obligación de cuadrar los partidas.
 
 ---
 
+**no fatture accompagnatorie**: indicador para no permitir la creación de facturas de venta de tipo acompañatorio a nombre del sujeto en uso.
 
-**No fatture accompagnatorie**: flag per non consentire la creazione di fatture di vendita di tipo accompagnatorio in capo al soggetto in uso.
+**No agrupar por destino (Non raggr.per destinazione)**: indica que para el sujeto en uso no se desea agrupar nunca los documentos por destino durante la creación de los documentos; este indicador se considera en los procedimientos presentes en la barra de herramientas de Búsqueda de Pedidos de Clientes, Búsqueda de Pedidos de Proveedores, Búsqueda de Pedidos de Trabajo.  
 
-**Non raggr.per destinazione**: indica che per il soggetto in uso non si vuole raggruppare mai i documenti per destinazione nel corso della creazione dei documenti; questo flag viene considerato nelle procedure presenti nella barra degli strumenti di Ricerca Ordini clienti, Ricerca Ordini Fornitori, Ricerca Ordini di Conto lavoro.     
+**Agrupar por comisiones de venta (Raggruppa per commesse di vendita)**: para el sujeto, los DDT de transporte se agruparán por comisión para crear las facturas de venta;
 
-**Raggruppa per commesse di vendita**: per il soggetto i DDT di trasporto vanno raggruppate per commessa per creare le fatture di vendita;
+**crea fatture da ddt per oc**: para el sujeto, los DDT de transporte se agruparán por **ordine cliente** para crear las facturas de venta;
 
-**Crea Fatture da DDT per OC**: per il soggetto i DDT di trasporto vanno raggruppate per **ordine cliente** per creare le fatture di vendita;
+**gest. edi**: habilita la gestión de archivos EDI (funcionalidad actualmente deshabilitada);
 
-**Gest. EDI**: abilita la gestione dei file EDI (funzionalità attualmente disabilitata);
+**Intrastat/Cod. Serv (Intrastat/Cod. Serv)**: indicador que habilita la gestión de la declaración intrastat para los documentos/registros a nombre del sujeto en uso, si también el tipo de documento es de tipo intracomunitario; en caso de sujeto con indicador ‘Intrastat', es posible indicar el código de servicio por defecto para las secciones cuatro y cinco de la declaración intrastat;
 
-**Intrastat/Cod. Serv**: flag che abilita la gestione della dichiarazione intrastat per i documenti/registrazioni intestati al soggetto in uso, se anche il tipo documento è di tipo intracomunitario; in caso di soggetto con flag ‘Intrastat', è possibile indicare il codice servizio di default per le sezioni quater e quinquies della dichiarazione intrastat;
+**Perc. gastos Intra/Signo (Perc. spese Intra/Segno)**: indica el porcentaje medio de los gastos a añadir/quitar al valor de la mercancía para el cálculo del valor estadístico en la declaración intrastat; el signo que define si los gastos deben sumarse o restarse para obtener el valor estadístico de la mercancía en las declaraciones intrastat;
 
-**Perc. spese Intra/Segno**: indica la percentuale media delle spese da aggiungere/togliere al valore merce per il calcolo del valore statistico in dichiarazione intrastat; il segno che definisce se le spese vanno sommate o detratte per ottenere il valore statistico della merce nelle dichiarazioni intrastat;
+**categoria amministrativa**: dato estadístico de la categoría administrativa asociada al sujeto;
 
-**Categoria amministrativa**: dato statistico della categoria amministrativa associata al soggetto;
+**categoria commerciale**: dato estadístico pero también de configuración de los descuentos según los criterios de asociación definidos en las listas del área de ventas;
 
-**Categoria commerciale**: dato statistico ma anche di configurazione degli sconti secondo i criteri di associazione definiti nei listini dell'area vendite;
+**categoria fatturazione**: criterio de filtro para el procedimiento de creación de facturas de venta a partir de DDT;
 
-**Categoria fatturazione**: criterio di filtro per la procedura di creazione fatture di vendita da DDT;
+**categoria provvigionale cliente**: dato que puede ser útil para la atribución de los porcentajes de comisión a los agentes vinculados a este cliente, según las prioridades definidas en su registro;
 
-**Categoria provvigionale cliente**: dato che può servire per l'attribuzione delle percentuali provvigionali agli agenti legati a questo cliente, secondo le priorità definite nella loro anagrafica;
+**responsabile**: para los análisis de riesgo del cliente, sujeto interno responsable comercial del sujeto.
 
-**Responsabile**: per le analisi del rischio cliente, soggetto interno responsabile commerciale del soggetto.
+**filiale aziendale di riferimento**: en este campo es posible asociar al cliente/proveedor a una filial y, a través de esta, a una *división* empresarial diferente. En la contabilización de las facturas de venta hay un parámetro con el que asignar la registro contable a esta división, manteniendo todos los documentos en la principal operativa.
 
-**Filiale aziendale di riferimento**: in questo campo è possibile associare il cliente/fornitore ad una filiale e, tramite questa, ad una *divisione* aziendale differente. Nella contabilizzazione delle fatture di vendita è presente un parametro con il quale assegnare la registrazione contabile a questa divisione, pur mantenendo tutti i documenti in quella principale operativa.
-
-
-*Pulsante specifico*:
-> **Calcolo sconti**: per assegnare, all'anagrafica cliente in uso, una configurazione sconti (definita nel modulo area *Vendite > Listini di vendita*). Il pulsante è **attivo** **solo** all'interno di un'anagrafica cliente.
+*Botón específico*:  
+> **calcolo sconti**: para asignar, al registro del cliente en uso, una configuración de descuentos (definida en el módulo de ventas > Listas de ventas). El botón está **activo** **solo** dentro de un registro de cliente.

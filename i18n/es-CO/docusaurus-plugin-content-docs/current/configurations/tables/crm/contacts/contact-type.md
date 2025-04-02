@@ -1,33 +1,31 @@
 ---
-title: Tipo Contatto
+title: tipo contatto
 sidebar_position: 1
 ---
 
-È una tabella che permette di definire i **Tipi Contatto** per quanto riguarda i contatti del CRM, in modo tale da poterli categorizzare.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del tipo, e da una griglia in cui appunto verranno elencati tutti i tipi contatto inseriti.
-Sempre all'interno di questa form è possibile aggiungere nuovi tipi contatto all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si andrà ad inserire il codice e la descrizione del nuovo tipo.
-Per ogni contatto è inoltre possibile definire:
--	La tipologia, selezionando dalla griglia una voce tra Contatto, Prospect, Lead, Opportunità, Cliente, Fornitore;
--	Le tab che dovranno essere visualizzate per quel tipo di contatto tra: Attività, Riferimenti, Indirizzi, Note, Gestione Documentale, Visit reports, Categoria Commerciale, Zona, Agenti, Newsletter, Pagamento, Offerte, Ordini Cliente, DDT di vendita, Interventi, Extra data, Orario Apertura, Concorrenti, Telefonata, Campagne Marketing, Listini.
+Es una tabla que permite definir los **Tipos de Contacto (Tipi Contatto)** en lo que respecta a los contactos del CRM, de manera que se puedan categorizar.  
+Está compuesta por una parte de filtro donde se puede buscar a través del código o la descripción del tipo, y por una cuadrícula donde se enumerarán todos los tipos de contacto ingresados.  
+Dentro de este formulario, también es posible agregar nuevos tipos de contacto en la cuadrícula, haciendo clic en el botón ![](/img/neutral/common/new.png) Nuevo (Nuovo): de esta manera, se añadirá una nueva fila en la cuadrícula donde se ingresará el código y la descripción del nuevo tipo.  
+Para cada contacto también es posible definir:  
+- La tipología, seleccionando desde la cuadrícula una opción entre Contacto (Contatto), Prospecto (Prospect), Lead, Oportunidad (Opportunità), Cliente (Cliente), Proveedor (Fornitore);  
+- Las pestañas que deben ser visualizadas para ese tipo de contacto entre: Actividades (Attività), Referencias (Riferimenti), Direcciones (Indirizzi), Notas (Note), Gestión Documental (Gestione Documentale), Informes de visita (Visit reports), Categoría Comercial (Categoria Commerciale), Zona, Agentes, Boletines (Newsletter), Pago (Pagamento), Ofertas (Offerte), Pedidos del Cliente (Ordini Cliente), DDT de venta (DDT di vendita), Intervenciones (Interventi), Datos adicionales (Extra data), Horario de Apertura (Orario Apertura), Competidores (Concorrenti), Llamadas (Telefonata), Campañas de Marketing (Campagne Marketing), Listas (Listini).
 
-Per ogni tipologia di contatto è inoltre possibile definire 
+Para cada tipología de contacto también es posible definir 
 
-## Tipo di contatto Ruolo
+## Tipo de contacto Rol (Tipo di contatto Ruolo)
 
-ossia per i singoli utenti Fluentis (o i gruppi di utenti definiti in base ai Ruoli) è possibile definire quali tab possano essere visualizzate. Per ogni Tipo di contatto Ruolo è necessario definire:
-**Data Creazione**: è la data di creazione del tipo contatto Ruolo;
-**Ruolo**: fa riferimento alla tabella dei ruoli degli utenti di Fluentis;
-**Operatore**: fa riferimento alla tabella degli utenti di Fluentis.
-**Tab abilitate per Ruolo/Operatore**: quali tab può visualizzare e gestire tra quelle presenti, come: Attività, Indirizzo, Agenti, Categoria commerciale, etc 
+Es decir, para los usuarios individuales de Fluentis (o los grupos de usuarios definidos en función de los Roles) es posible definir qué pestañas pueden ser visualizadas. Para cada Tipo de contacto Rol es necesario definir:  
+**data creazione**: es la fecha de creación del tipo de contacto Rol;  
+**ruolo**: hace referencia a la tabla de roles de los usuarios de Fluentis;  
+**operatore**: hace referencia a la tabla de usuarios de Fluentis.  
+**Pestañas habilitadas para Rol/Operador (Tab abilitate per Ruolo/Operatore)**: qué pestañas puede visualizar y gestionar entre las presentes, como: Actividades (Attività), Dirección (Indirizzo), Agentes (Agenti), Categoría comercial (Categoria commerciale), etc.  
 
-## Extra data
+## Datos adicionales (Extra data)
 
-È inoltre possibile definire per ogni tipo contatto anche degli [Extra data](/docs/configurations/utility/extra-data/extradata/search-extradata/), che dovranno essere proposti per i contatti che presentano tale tipologia (per ulteriori informazioni riguardo gli Extra data fare riferimento all’apposita sezione della presente guida).
+También es posible definir para cada tipo de contacto algunos [Datos adicionales (Extra data)](/docs/configurations/utility/extra-data/extradata/search-extradata/), que deben ser propuestos para los contactos que presentan dicha tipología (para más información sobre los Datos adicionales, consulte la sección correspondiente de esta guía).
 
-## Pipeline Contatto
+## Pipeline de Contacto (Pipeline Contatto)
 
-Elenco degli stati disponibili per il tipo contatto, configurati dall'utente.
-Se il contatto ha un workflow associato, e lo stato del workflow corrisponde ad uno degli stati disponibili per il Tipo contatto, il campo "Pipeline contatto" nell'anagrafica contatto verrà aggiornato in automatico. 
-Quindi ad ogni cambio stato del workflow, se presente corrispondenza, verrà aggiornato in automatico il campo "Pipeline Contatto". In questo modo il workflow ed il campo Pipeline contatto in anagrafica contatto saranno sempre allineati. 
-
-
+Lista de los estados disponibles para el tipo de contacto, configurados por el usuario.  
+Si el contacto tiene un flujo de trabajo (workflow) asociado, y el estado del flujo de trabajo coincide con uno de los estados disponibles para el Tipo de contacto, el campo "Pipeline de contacto (Pipeline contatto)" en el registro del contacto se actualizará automáticamente.  
+Por lo tanto, con cada cambio de estado del flujo de trabajo, si hay una correspondencia, se actualizará automáticamente el campo "Pipeline de Contacto". De esta manera, el flujo de trabajo y el campo Pipeline de contacto en el registro del contacto estarán siempre alineados.

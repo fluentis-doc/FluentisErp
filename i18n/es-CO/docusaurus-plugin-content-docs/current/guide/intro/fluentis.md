@@ -1,52 +1,52 @@
 ---
-title: Struttura della documentazione
+title: Estructura de la documentación (Struttura della documentazione)
 sidebar_position: 2
 ---
 
-Grazie alle funzionalità avanzate e all’integrazione di tecnologie emergenti, Fluentis ERP supporta le aziende nel gestire meglio i propri processi aziendali e nel prendere decisioni più informate, per rimanere competitive sul mercato globale.
+Gracias a las funcionalidades avanzadas y a la integración de tecnologías emergentes, Fluentis ERP apoya a las empresas en la gestión más eficiente de sus procesos de negocio y en la toma de decisiones más informadas, para mantenerse competitivas en el mercado global.
 
-La documentazione è organizzata in diverse sezioni per facilitare la navigazione e l'accesso alle informazioni:
+La documentación está organizada en diferentes secciones para facilitar la navegación y el acceso a la información:
 
-### Impostazioni
+### Ajustes (Impostazioni)
 
-Descrive le configurazioni iniziali, le tabelle, i parametri e gli strumenti comuni necessari per personalizzare Fluentis ERP secondo le esigenze specifiche dell'azienda.
+Describe las configuraciones iniciales, las tablas, los parámetros y las herramientas comunes necesarias para personalizar Fluentis ERP según las necesidades específicas de la empresa.
 
-### Anagrafiche
-Include informazioni dettagliate sulla gestione dei contatti, del piano dei conti, degli articoli, della produzione e dei dipendenti.
+### Registros (Anagrafiche)
+Incluye información detallada sobre la gestión de contactos, del plan de cuentas, de artículos, de producción y de empleados.
 
-### Aree Funzionali
+### Áreas Funcionales (Aree Funzionali)
 
-La documentazione copre le diverse aree funzionali del sistema, tra cui:
+La documentación cubre las diferentes áreas funcionales del sistema, entre las cuales:
 
-- **Amministrativa**: Gestione delle dichiarazioni, registrazioni contabili, partite, cespiti e fatturazione elettronica.
-- **Tesoreria**: Gestione dei conti correnti, pagamenti fornitori, rischio cliente, cash flow e portafoglio effetti.
-- **Controlling**: Chiusure infrannuali, riclassificazioni, budgeting, contabilità gestionale e calcolo dei costi.
-- **CRM**: Gestione dei contatti CRM, newsletter, campagne marketing, opportunità, previsioni di vendita e helpdesk.
-- **Acquisti e Vendite**: Gestione delle richieste di acquisto, ordini fornitori, ricevimento merci, offerte, ordini cliente, DDT e fatture.
-- **Logistica**: Gestione degli articoli, magazzino, lotti, picking, inventari fisici, UDC, piani di carico e spedizioni.
-- **Pianificazione e Produzione**: Gestione delle commesse di produzione, MRP, avanzamento produzione e controllo produzione.
-- **Conto Lavoro**: Gestione degli ordini di conto lavoro, DDT di consegna e rientri.
-- **Gestione Progetti**: Gestione dei progetti, richieste di intervento, attività e pianificazione delle risorse.
-- **Qualità**: Gestione dei documenti di origine esterna ed interna, controlli articolo, reclami, azioni correttive e taratura strumenti.
+- **amministrativa**: Gestión de declaraciones, registros contables, partidas, activos y facturación electrónica.
+- **tesoreria**: Gestión de cuentas corrientes, pagos a proveedores, riesgo del cliente, flujo de caja y cartera de efectos.
+- **controlling**: Cierres interinos, reclasificaciones, presupuestos, contabilidad de gestión y cálculo de costos.
+- **CRM**: Gestión de contactos CRM, boletines, campañas de marketing, oportunidades, previsiones de venta y soporte técnico.
+- **Compras y Ventas (Acquisti e Vendite)**: Gestión de solicitudes de compra, órdenes de proveedores, recepción de mercancías, ofertas, pedidos de clientes, DDT y facturas.
+- **logistica**: Gestión de artículos, almacén, lotes, picking, inventarios físicos, UDC, planes de carga y envíos.
+- **Planificación y Producción (Pianificazione e Produzione)**: Gestión de órdenes de producción, MRP, avance de producción y control de producción.
+- **conto lavoro**: Gestión de órdenes de trabajo por cuenta, DDT de entrega y devoluciones.
+- **gestione progetti**: Gestión de proyectos, solicitudes de intervención, actividades y planificación de recursos.
+- **qualità**: Gestión de documentos de origen externo e interno, controles de artículos, reclamos, acciones correctivas y calibración de herramientas.
 
-### Release Notes
+### Notas de Lanzamiento (Release Notes)
 
-Aggiornamenti sulle nuove versioni del software, con dettagli sulle modifiche e miglioramenti apportati.
+Actualizaciones sobre nuevas versiones del software, con detalles sobre los cambios y mejoras realizadas.
 
-### Formazione
+### Capacitación (Formazione)
 
-Include FAQ e video tutorial per approfondire l'apprendimento e l'utilizzo efficace del sistema.
+Incluye preguntas frecuentes (FAQ) y tutoriales en video para profundizar en el aprendizaje y uso efectivo del sistema.
 
-### Accesso Multilingua
+### Acceso Multilingüe (Accesso Multilingua)
 
-La documentazione è disponibile in diverse lingue, tra cui: Italiano, Inglese, Croato e Rumeno per supportare utenti di diverse nazionalità.
+La documentación está disponible en varios idiomas, incluidos: Italiano, Inglés, Croata y Rumano, para apoyar a usuarios de diferentes nacionalidades.
 
-### Risorse Aggiuntive
+### Recursos Adicionales (Risorse Aggiuntive)
 
-Oltre alla documentazione, sono disponibili ulteriori risorse per approfondire la conoscenza di Fluentis ERP:
+Además de la documentación, hay recursos adicionales disponibles para profundizar el conocimiento de Fluentis ERP:
 
-- **Fluentis Live Update**: Informazioni sugli aggiornamenti in tempo reale del sistema.
-- **Fluentis Training**: Piattaforma dedicata alla formazione degli utenti.
-- **Integrazioni**: Dettagli sulle possibilità di integrazione con altri sistemi e applicazioni.
+- **Fluentis Live Update**: Información sobre actualizaciones en tiempo real del sistema.
+- **Fluentis Training**: Plataforma dedicada a la capacitación de usuarios.
+- **Integraciones (Integrazioni)**: Detalles sobre las posibilidades de integración con otros sistemas y aplicaciones.
 
-Per ulteriori informazioni, visita il sito web ufficiale: [www.fluentis.com](https://www.fluentis.com/).
+Para más información, visita el sitio web oficial: [www.fluentis.com](https://www.fluentis.com/).

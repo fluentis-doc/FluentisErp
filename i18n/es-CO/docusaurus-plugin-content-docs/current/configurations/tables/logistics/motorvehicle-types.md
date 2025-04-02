@@ -1,21 +1,21 @@
 ---
-title: Tipi automezzo
+title: tipi automezzo
 sidebar_position: 25
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzo**.
+La tabla se encuentra en la ruta **Tablas > Logística > tipi automezzo (Tabelle > Logistica > Tipi automezzo)**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi automezzo* utilizzati nella [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management).    
+En esta tabla es posible gestionar la codificación de los diferentes *tipi automezzo* utilizados en la [Gestión de vehículos (Gestione automezzo)](/docs/logistics/motorvehicles/motorvehicle-management).  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo automezzo**
+**Buscar Tipo de vehículo (Ricerca Tipo automezzo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipo automezzo**
+**Ingreso Tipo de vehículo (Inserimento Tipo automezzo)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder ingresar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

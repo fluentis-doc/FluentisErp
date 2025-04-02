@@ -1,32 +1,32 @@
 ---
-title: Livelli di valutazione competenza
+title: livelli di valutazione competenza
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Mansioni > Livelli di valutazione competenza**.
+La tabla se encuentra en la ruta **Tablas > Empleados > Tareas > livelli di valutazione competenza (Tabelle > Dipendenti > Mansioni > Livelli di valutazione competenza)**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare i *Livelli di valutazione competenza* che sono utilizzati per valutare le *Competenze per mansione*.   
-Un esempio di utilizzo lo troviamo nella gestione **Competenze**.
+:::important ¿Para qué sirve? (A cosa serve) 
+En esta tabla es posible codificar los *livelli di valutazione competenza* que se utilizan para evaluar las *Competencias por tarea (Competenze per mansione)*.   
+Un ejemplo de uso lo encontramos en la gestión de **competenze**.
 :::
 
-La tabella consente di inserire nuovi *Livelli di valutazione competenza* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos *livelli di valutazione competenza* o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-#### Ricerca Livelli di valutazione competenza 
+#### Búsqueda de livelli di valutazione competenza (Ricerca Livelli di valutazione competenza)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtros y una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-#### Inserimento Livelli di valutazione competenza 
+#### Inserción de livelli di valutazione competenza (Inserimento Livelli di valutazione competenza)
 
-Per poter inserire nuovi *Livelli di valutazione competenza* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *livelli di valutazione competenza* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici 
-    
-> **Codice**: è il codice del *Livello di valutazione competenza*.   
-> **Descrizione**: è la descrizione del *Livello di valutazione competenza*.   
-> **Livello**: è il punteggio dato al *Livello di valutazione competenza*.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Livelli di valutazione competenza*.   
-> **Note**: annotazioni libere.
+#### Campos específicos (Campi specifici)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **codice**: es el código del *Nivel de evaluación de competencias (Livello di valutazione competenza)*.  
+> **descrizione**: es la descripción del *Nivel de evaluación de competencias (Livello di valutazione competenza)*.  
+> **livello**: es el puntaje otorgado al *Nivel de evaluación de competencias (Livello di valutazione competenza)*.  
+> **sequenza**: es la secuencia de visualización en las listas de los *livelli di valutazione competenza*.  
+> **note**: anotaciones libres.
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

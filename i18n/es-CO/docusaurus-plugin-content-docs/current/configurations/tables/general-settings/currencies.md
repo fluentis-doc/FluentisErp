@@ -1,35 +1,35 @@
 ---
-title: Divise
+title: divise
 sidebar_position: 1
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip [Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-### Sezione superiore
+### Sección superior (Sezione superiore)
 
-La tabella, comune a tutte le società della base dati, consente di definire la lista delle divise da utilizzare nei vari documenti/registrazioni. 
+La tabla, común a todas las empresas de la base de datos, permite definir la lista de divisas a utilizar en los diversos documentos/inscripciones.  
 
-**Divisa / Descrizione**: Codice / Descrizione della divisa codificata 
+**Divisa / Descripción (Divisa / Descrizione)**: Código / Descripción de la divisa codificada.  
 
-**Decimali**: va valorizzato con il numero di cifre decimali previste dalla divisa
+**decimali**: debe completarse con el número de cifras decimales previstas para la divisa.  
 
-**CEE**: il flag definisce le divise facenti parte del sistema dei cambi fissi per l'euro
+**CEE**: el indicador define las divisas que forman parte del sistema de tipos de cambio fijos para el euro.  
 
-**EURO**: il flag identifica l'euro.
+**EURO**: el indicador identifica el euro.  
 
-**Scarica cambi**: abilita lo [**scarico automatico**](/docs/configurations/tables/finance/currency-exchange) dei tassi di cambio per la divisa corrispondente
+**scarica cambi**: habilita el [**scarico automatico**](/docs/configurations/tables/finance/currency-exchange) de las tasas de cambio para la divisa correspondiente.
 
 
-### Sezione inferiore
+### Sección inferior (Sezione inferiore)
 
-I campi della griglia consentono di impostare i sottoconti di utile e perdita cambi, specifici ad ogni società, da utilizzare nelle valorizzazioni automatiche delle differenze cambio contabili.
+Los campos de la cuadrícula permiten establecer los subcuentas de ganancias y pérdidas cambiarias, específicos de cada empresa, que se utilizarán en las valoraciones automáticas de las diferencias contables de cambio.
 
-**Conto / Sottoconto / Descrizione Utile:** sarà utilizzato per contabilizzare l'utile su cambi
+**Cuenta / Subcuenta / Descripción de Ganancias (Conto / Sottoconto / Descrizione Utile)**: se utilizará para contabilizar las ganancias por cambios.  
 
-**Conto / Sottoconto / Descrizione Perdite:** sarà utilizzato per contabilizzare le perdite su cambi
+**Cuenta / Subcuenta / Descripción de Pérdidas (Conto / Sottoconto / Descrizione Perdite)**: se utilizará para contabilizar las pérdidas por cambios.  
 
-**Conto / Sottoconto / Descrizione Fondi:** sarà utilizzato per contabilizzare l'accantonamento al fondo rischi su cambi
+**Cuenta / Subcuenta / Descripción de Fondos (Conto / Sottoconto / Descrizione Fondi)**: se utilizará para contabilizar la provisión para el fondo de riesgos cambiarios.

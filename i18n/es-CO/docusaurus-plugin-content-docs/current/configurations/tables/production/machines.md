@@ -1,61 +1,60 @@
 ---
-title: Macchine
+title: macchine
 sidebar_position: 9
 ---
 
-In questa tabella vengono codificate tutte le macchine impiegate all'interno dei vari cicli di lavoro, ognuna collegata ad un centro di costo.
+En esta tabla se codifican todas las máquinas utilizadas dentro de los diferentes ciclos de trabajo, cada una conectada a un centro de costos.
 
-Le tabelle relative alle macchine e ai gruppi manodopera sono importanti per definire il costo delle varie fasi, in quanto il costo orario della macchina X tempo macchina sommato al costo orario del gruppo manodopera X il costo orario operaio avranno come risultato il costo della fase di lavorazione.
+Las tablas relacionadas con las máquinas y los grupos de mano de obra son importantes para definir el costo de las diferentes fases, ya que el costo horario de la máquina por el tiempo de la máquina sumado al costo horario del grupo de mano de obra por el costo horario del operario dará como resultado el costo de la fase de trabajo.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar aquellos que ya existen para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Macchine**
+**Búsqueda de macchine (Ricerca Macchine)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Macchine**
+**Inserción de macchine (Inserimento Macchine)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevas codificaciones es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** della macchina. Si può specificare se la macchina risulta **Attiva** o meno, il centro aziendale collegato alla macchina, ecc.
+Para el nuevo registro, en la cuadrícula *macchine*, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione** de la máquina. Se puede especificar si la máquina es **attiva** o no, el centro empresarial vinculado a la máquina, etc.
 
-*Campi specifici*: 
+*Campos específicos*: 
 
-**Macchina**: codice macchina;  
-**Descrizione**: descrizione della macchina;  
-**Attiva**: indica se la macchina è attiva o meno, quindi se sia utilizzabile e pianificabile;  
-**Dichiarazione materiale mobile**: è utilizzato nella form delle dichiarazioni di produzione del WMS; se attivo, in fase di dichiarazione verrà richiesto anche di inserire i materiali consumati;      
-**Stampa etichetta**: è utilizzato nella form delle dichiarazioni di produzione del WMS; se attivo, alla conferma della dichiarazione di produzione permette di stampare le relative etichette;      
-**Centri di lavoro**: indica su quale centro di lavoro è collocata la macchina;  
-**Centro aziendale**: indica il centro di costo a cui si riferisce la macchina;  
-**Reparti**: indica il codice del reparto in cui è inserita la macchina;  
-**Classe macchina**: indica la classe della macchina (nel caso in cui la macchina sia codificata come articolo);  
-**Codice articolo macchina**: indica il codice articolo (nel caso in cui la macchina sia codificata come articolo);  
-**Sito Produzione**: nel caso di più stabilimenti indica il codice del sito produttivo in cui si trova la macchina;  
-**Descrizione sito produttivo**: indica la descrizione del sito produttivo; 
-**Ubicazione**:           
-**Data acquisto**: indica la data di acquisto della macchina;  
-**Precodice cespite**: indica il precodice del cespite;  
-**Numero**: indica il numero del cespite;  
-**Descrizione**: indica la descrizione del cespite;  
-**Ordine di acquisto**: indica il numero del documento di acquisto del cespite;  
-**Data installazione**: indica la data di installazione della macchina;  
-**Data inserimento**: indica la data di inserimento della macchina;  
-**Data ultima modifica**: indica la data di ultima modifica della macchina;  
-**Descrizione centro di costo**: indica la descrizione del centro di costo a cui si riferisce la macchina;  
-**Descr. Reparto**: indica la descrizione del reparto in cui è inserita la macchina;  
-**Descrizione articolo macchina**: indica la descrizione articolo (nel caso in cui la macchina sia codificata come articolo);  
+**macchina**: código de la máquina;  
+**descrizione**: descripción de la máquina;  
+**attiva**: indica si la máquina es activa o no, es decir, si es utilizable y planificable;  
+**Declaración de material móvil (Dichiarazione materiale mobile)**: se utiliza en el formulario de declaraciones de producción del WMS; si está activa, al declarar se solicitará también ingresar los materiales consumidos;  
+**stampa etichetta**: se utiliza en el formulario de declaraciones de producción del WMS; si está activa, al confirmar la declaración de producción permite imprimir las etiquetas correspondientes;  
+**centri di lavoro**: indica en qué centro de trabajo está ubicada la máquina;  
+**centro aziendale**: indica el centro de costos al que se refiere la máquina;  
+**reparti**: indica el código del departamento en el que está inserta la máquina;  
+**Clase de máquina (Classe macchina)**: indica la clase de la máquina (en caso de que la máquina esté codificada como artículo);  
+**Código artículo máquina (Codice articolo macchina)**: indica el código del artículo (en caso de que la máquina esté codificada como artículo);  
+**sito produzione**: en el caso de más plantas indica el código del sitio productivo en el que se encuentra la máquina;  
+**Descripción sitio productivo (Descrizione sito produttivo)**: indica la descripción del sitio productivo;  
+**ubicazione**:  
+**data acquisto**: indica la fecha de compra de la máquina;  
+**precodice cespite**: indica el precódigo del activo;  
+**numero**: indica el número del activo;  
+**descrizione**: indica la descripción del activo;  
+**ordine di acquisto**: indica el número del documento de compra del activo;  
+**data installazione**: indica la fecha de instalación de la máquina;  
+**data inserimento**: indica la fecha de inserción de la máquina;  
+**data ultima modifica**: indica la fecha de última modificación de la máquina;  
+**descrizione centro di costo**: indica la descripción del centro de costos al que se refiere la máquina;  
+**descr. reparto**: indica la descripción del departamento en el que está inserta la máquina;  
+**descrizione articolo macchina**: indica la descripción del artículo (en caso de que la máquina esté codificada como artículo);  
 
-Nella seconda sezione invece si può andare a dettagliare la **Sequenze** delle macchine alternative.
- 
-*Campi specifici*:  
+En la segunda sección, se puede detallar la **Secuencia (Sequenze)** de las máquinas alternativas.
 
-**Sequenza**: indica la sequenza delle macchine alternative;   
-**Macchina**: indica il codice macchina;  
-**Descrizione macchina**: indica la descrizione della macchina;  
-**Attiva**: indica se la macchina è attiva o meno, quindi se sia utilizzabile e pianificabile;  
-**Centro aziendale**: indica il centro di costo a cui si riferisce la macchina;  
-**Descrizione centro di costo**: indica la descrizione del centro di costo a cui si riferisce la macchina;   
+*Campos específicos*:  
 
+**sequenza**: indica la secuencia de las máquinas alternativas;  
+**macchina**: indica el código de la máquina;  
+**descrizione macchina**: indica la descripción de la máquina;  
+**attiva**: indica si la máquina es activa o no, es decir, si es utilizable y planificable;  
+**centro aziendale**: indica el centro de costos al que se refiere la máquina;  
+**descrizione centro di costo**: indica la descripción del centro de costos al que se refiere la máquina;  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

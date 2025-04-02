@@ -1,62 +1,52 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo Percipienti di Fluentis ERP gestisce le attività legate ai compensi erogati a professionisti esterni e agenti, garantendo il controllo sulle ritenute d’acconto e sugli adempimenti fiscali connessi, come la compilazione del modello F24. Questo modulo permette di registrare compensi, contabilizzare pagamenti, e generare certificazioni fiscali. Il modulo può ricevere i dati degli agenti dall'omonimo modulo dell'area **Vendite**.  
-Da questo modulo si realizza la rilevazione dei debiti per i vari tributi da versare (ritenuta, Enasarco, INPS).
+El módulo **percipienti** de Fluentis ERP gestiona las actividades relacionadas con los pagos a profesionales externos y agentes, garantizando el control sobre las retenciones y las obligaciones fiscales asociadas, como la compilación del modelo F24. Este módulo permite registrar compensaciones, contabilizar pagos y generar certificaciones fiscales. El módulo puede recibir los datos de los agentes del módulo homónimo del área **vendite**.  
+Desde este módulo se lleva a cabo la detección de deudas por los diversos tributos a pagar (retención, Enasarco, INPS).
 
-**Funzionalità Principali**
+**Funcionalidades Principales (Funzionalità Principali)**
 
-- Ricerca e gestione dei compensi: Consente di inserire, modificare e visualizzare i compensi, con la possibilità di eliminare quelli errati e gestire versamenti delle ritenute d’acconto in modo massivo, evitando modifiche manuali sui singoli compensi​
+- **Búsqueda y gestión de compensaciones (Ricerca e gestione dei compensi)**: Permite ingresar, modificar y visualizar las compensaciones, con la posibilidad de eliminar las incorrectas y gestionar los pagos de las retenciones de manera masiva, evitando modificaciones manuales en las compensaciones individuales.  
 
-- Contabilizzazione compensi: I compensi possono essere contabilizzati direttamente, sia per la parte fiscale (ritenute, INPS, ENASARCO), sia per la gestione dei centri di costo e profitto aziendali. I compensi definitivi vengono poi inseriti in contabilità​
+- **contabilizzazione compensi**: Las compensaciones pueden ser contabilizadas directamente, tanto para la parte fiscal (retenciones, INPS, ENASARCO) como para la gestión de los centros de costo y de lucro de la empresa. Las compensaciones definitivas se ingresan luego en contabilidad.  
 
-- Modello F24: Il modulo gestisce il calcolo e la compilazione del modello F24 per il versamento delle ritenute e altri tributi, con la possibilità di proporre automaticamente i dati necessari grazie alle informazioni inserite nei compensi​
+- **modello f24**: El módulo gestiona el cálculo y la compilación del modelo F24 para el pago de las retenciones y otros tributos, con la posibilidad de proponer automáticamente los datos necesarios gracias a la información ingresada en las compensaciones.
 
+**Impresiones Disponibles (Stampe Disponibili)**
 
+- **Impresión de certificación de retenciones (Stampa certificazione ritenute)**: Genera la certificación de las retenciones periódicas a título de anticipo.  
 
-**Stampe Disponibili**
+- **situazione ritenute**: Proporciona un resumen de las retenciones pagadas o por pagar, útil para el control interno y la compilación de la Certificación Única.  
 
-- Stampa certificazione ritenute: Genera la certificazione delle ritenute periodiche a titolo d’acconto​
+- **Impresión de comisiones (Stampa provvigioni)**: Soporta la gestión de las comisiones acumuladas por los agentes, con filtros por fecha y agente, permitiendo elaborar listas completas.
 
-- Situazione ritenute: Fornisce un riepilogo delle ritenute versate o da versare, utile per il controllo interno e la compilazione della Certificazione Unica​
+**Procedimientos Principales (Procedure Principali)**
 
-- Stampa provvigioni: Supporta la gestione delle provvigioni maturate dagli agenti, con filtri per data e agente, permettendo di elaborare liste complete​
+- **Gestión de compensaciones y pagos de retenciones (Gestione compensi e versamenti ritenute)**: Permite cargar, modificar y vincular documentos fiscales relacionados con las compensaciones, y gestionar manualmente o de forma masiva los datos del pago.  
 
+- **calcolo provvigioni**: Automatiza el cálculo de las comisiones para los agentes, con la posibilidad de vincular las compensaciones a proyectos o contratos específicos.
 
+**Ventajas del uso del módulo (Vantaggi nell'utilizzo del modulo)**: Este módulo interactúa tanto con el módulo **vendite** para la lectura de las comisiones calculadas de los agentes y la transformación en la Factura del agente, garantizando el cálculo tanto de las retenciones de impuestos como de las contribuciones a la pensión Enasarco, y también con el módulo de Declaraciones fiscales, permitiendo gestionar toda la fiscalidad, hasta la CU (certificación única de las retenciones de impuestos) de manera independiente sin necesidad de recurrir a consultorías externas. El procesamiento de la CU también permite exportar la pista telemática para el envío a la Agencia de Ingresos. Se ha prestado especial atención a la lógica de gestión de las compensaciones y a la realidad italiana, con la posibilidad de ingresar el aviso de factura (de hecho una factura proforma) y proceder al pago, generando la deuda por los pagos fiscales, antes de la contabilización de la factura recibida.
 
-**Procedure Principali**
+**Tablas y parámetros necesarios para utilizar el módulo (Tabelle e parametri necessari per utilizzare il modulo)**
 
-- Gestione compensi e versamenti ritenute: Permette di caricare, modificare e collegare documenti fiscali relativi ai compensi, e di gestire manualmente o massivamente i dati del versamento​
+Para utilizar el módulo **percipienti** de Fluentis ERP, es necesario gestionar algunas tablas clave para asegurar el correcto funcionamiento del sistema y la alineación de las operaciones contables y fiscales. Entre las principales tablas a configurar se encuentran:
 
-- Calcolo provvigioni: Automatizza il calcolo delle provvigioni per gli agenti, con la possibilità di collegare i compensi a specifici progetti o commesse​
+- **tipi conto** y **tipi ritenuta**: Esenciales para definir el tipo de retención a aplicar a los diferentes perceptores.  
+- **categorie agenti**: Tabla fundamental para los agentes donde se define la contribución a la pensión y otros contribuciones a las que están sujetos.  
+- **codice tributo**: Necesario para la gestión de las retenciones y los tributos relacionados con las compensaciones.  
+- **modalità di versamento**: Para definir las modalidades de pago de los tributos.  
+- **piano dei conti**: Necesario para asociar los registros contables a las cuentas correctas.  
+- **Tipos de IVA (Aliquote IVA)**: Para la correcta aplicación de los impuestos sobre las compensaciones.  
+- **Causales de contabilidad general y causales de contribución (Causali contabilità generale e causali contributo)**: Utilizadas para clasificar correctamente las operaciones contables relacionadas con las compensaciones de los perceptores.  
+- **Centros de costo/lucro/responsabilidad (Centri di costo/profitto/responsabilità)**: Para asignar los costos y los ingresos a los diferentes centros empresariales.  
+- **Tipos de cambio fijos en euros y tipos de cambio de divisas (Cambi fissi euro e cambi valute)**: Importantes para la gestión de transacciones en diferentes divisas.
 
+**Conclusiones (Conclusioni)**
 
-**Vantaggi nell'utilizzo del modulo**: Questo modulo dialoga sia con il modulo **Vendite** per la lettura delle provvigioni agenti calcolate e la trasformazione in Parcella dell'agente, garantendo il calcolo sia delle ritenute d'acconto, sia dei contributi pensionistici Enasarco, e sia con il modulo Dichiarazioni fiscali permettendo di gestire tutta la fiscalità, fino alla CU (certificazione unica delle ritenute d'acconto) in autonomia senza necessariamente dover ricorrere a consulenze esterne. L'elaborazione della CU permette anche di esportare il tracciato telematico per l'invio all'Agenzia delle Entrate. Particolare attenzione è stata posta alla logica di gestione dei compensi ed alla realtà Italiana, con la possibilità di inserire il preavviso di parcella (di fatto una fattura proforma) e procedere al pagamento, con nascita del debito per i versamenti fiscali, prima della contabilizzazione della fattura ricevuta.
-
-**Tabelle e parametri necessari per utilizzare il modulo**
-
-Per utilizzare il modulo Percipienti di Fluentis ERP, è necessario gestire alcune tabelle chiave per assicurare il corretto funzionamento del sistema e l'allineamento delle operazioni contabili e fiscali. Tra le principali tabelle da configurare ci sono:
-
-- Tipi conto e **Tipi ritenuta**: Essenziali per definire la tipologia di ritenuta da applicare ai diversi percipienti.
-- **Categorie Agenti**: Tabella fondamentale per gli agenti dove definire la contribuzione pensionistica e gli altri contribuiti a cui sono soggetti.
-- Codice tributo: Necessario per la gestione delle ritenute e dei tributi collegati ai compensi.
-- Modalità di versamento: Per definire le modalità di pagamento dei tributi.
-- Piano dei conti: Necessario per associare le registrazioni contabili ai conti corretti.
-- Aliquote IVA: Per la corretta applicazione delle imposte sui compensi.
-- Causali contabilità generale e causali contributo: Utilizzate per classificare correttamente le operazioni contabili legate ai compensi dei percipienti.
-- Centri di costo/profitto/responsabilità: Per assegnare i costi e i ricavi ai vari centri aziendali.
-- Cambi fissi euro e cambi valute: Importanti per la gestione delle transazioni in diverse valute.
-
-
-
-**Conclusioni**
-
-Il modulo Percipienti di Fluentis ERP è uno strumento avanzato per la gestione dei compensi a professionisti e agenti, assicurando la correttezza dei versamenti fiscali e facilitando l’elaborazione di documenti ufficiali come il modello F24 e le certificazioni delle ritenute.
-
-
-
+El módulo **percipienti** de Fluentis ERP es una herramienta avanzada para la gestión de los pagos a profesionales y agentes, asegurando la corrección de los pagos fiscales y facilitando la elaboración de documentos oficiales como el modelo F24 y las certificaciones de las retenciones.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

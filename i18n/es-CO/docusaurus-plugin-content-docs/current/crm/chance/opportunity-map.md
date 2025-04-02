@@ -1,18 +1,18 @@
 ---
-title: Mappa opportunità CRM
+title: mappa opportunità crm
 sidebar_position: 4
 ---
 
-Questa funzionalità permette di visualizzare graficamente la dislocazione geografica delle **Opportunità** in essere sulla base delle indicazioni geografiche indicate nell’anagrafica dei contatti CRM presenti sulle opportunità.
+Esta funcionalidad permite visualizar gráficamente la ubicación geográfica de las **Oportunidades** actuales basándose en las indicaciones geográficas proporcionadas en el registro de contactos CRM presentes en las oportunidades.
 
-Con l’aiuto dei filtri si può visualizzare: una sola tipologia di opportunità (**Tipo Opportunità**), più opportunità inserite dallo stesso utente (**Operatore**), più opportunità con la medesima probabilità di successo (**Probabilità Successo**).
+Con la ayuda de los filtros se puede visualizar: un solo tipo de oportunidad (**Tipo Oportunità**), múltiples oportunidades ingresadas por el mismo usuario (**Operatore**), más oportunidades con la misma probabilidad de éxito (**Probabilità Successo**).
 
-L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+El área de filtro está dedicada a albergar la lista de posibles tipos de datos a partir de los cuales es posible realizar una selección. Los filtros están típicamente en condiciones 'Y' (AND) y es posible especificar múltiples criterios de filtro al mismo tiempo.
 
-Nell’area sottostante a quella di filtro è presente la mappa dove vengono visualizzate le opportunità, segnalate con un indicatore all’interno del quale è possibile visualizzare il numero di opportunità presenti per lo stesso Contatto.
-Cliccando sull’indicatore vengono visualizzate, in una finestra di pop up le seguenti informazioni:
+En el área debajo de la de filtro se encuentra el mapa donde se visualizan las oportunidades, señaladas con un indicador dentro del cual es posible ver el número de oportunidades presentes para el mismo contacto.  
+Al hacer clic en el indicador, se visualizan, en una ventana emergente (pop-up), la siguiente información:
 
--	Ragione Sociale del contatto titolare dell’opportunità;
--	La Qualità del contatto;
--	Il valore dell’opportunità;
--	L’indirizzo del Contatto.
+- Razón social del contacto titular de la oportunidad (Ragione Sociale del contatto titolare dell’opportunità);
+- La calidad del contacto (La Qualità del contatto);
+- El valor de la oportunidad (Il valore dell’opportunità);
+- La dirección del contacto (L’indirizzo del Contatto).

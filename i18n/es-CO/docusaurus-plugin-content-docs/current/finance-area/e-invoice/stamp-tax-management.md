@@ -1,24 +1,24 @@
 ---
-title: Gestione imposta di bollo
+title: Gestión del impuesto de timbre (Gestione imposta di bollo)
 sidebar_position: 2
 ---
 
-La gestione del corretto inserimento, nel tracciato xml della fattura elettronica, della marca da bollo virtuale da parte di Fluentis avviene in maniera automatica, pertanto sarà sufficiente codificare ed inserire correttamente tale spesa in fattura (come di seguito riepilogato).
+La gestión de la correcta inclusión, en el archivo xml de la factura electrónica, del impuesto de timbre virtual por parte de Fluentis se realiza de forma automática, por lo tanto, será suficiente codificar e ingresar correctamente dicho gasto en la factura (como se resume a continuación).
 
-- nella tabella relativa alle spese inserire la spesa di tipo "bollo" con valore 2 euro
+- En la tabla de gastos, ingrese el gasto de tipo "timbre (bollo)" con un valor de 2 euros.
 
 ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image01.png)
 
-- nell'anagrafica cliente si deve aggiungere una spesa di tipo “bollo” selezionando il codice precedentemente creato nella tabella Tipi spesa
+- En el registro del cliente, se debe agregar un gasto de tipo “timbre (bollo)” seleccionando el código previamente creado en la tabla Tipos de gasto.
 
-   n.b. per non addebitare il bollo al cliente nella spesa di bollo in anagrafica il valore deve essere impostato a "0"
+   n.b. Para no cargar el timbre al cliente, en el gasto de timbre en el registro, el valor debe establecerse en "0".
 
- ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image02.png)
+![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image02.png)
 
-- nella tabella società compilare il campo "Spese bollo"=2 e "Roof minimo spese"=77.47
+- En la tabla de la empresa, complete el campo "Gastos de timbre (Spese bollo)"=2 y "Techo mínimo de gastos (Roof minimo spese)"=77.47.
 
 ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image03.png)
 
-Settate le seguenti impostazioni, nella fattura di vendita comparirà in automatico la spesa proposta, di conseguenza in ogni singola fattura si potrà scegliere se addebitare o meno il bollo virtuale (per non addebitare il bollo inserire la spesa con importo = 0).
+Configuradas las siguientes configuraciones, en la factura de venta aparecerá automáticamente el gasto propuesto, por lo que en cada factura se podrá elegir si cargar o no el timbre virtual (para no cargar el timbre, ingrese el gasto con un importe = 0).
 
-Al momento della creazione del file XML, se nei riepiloghi fattura figura una spesa tipo bollo, nel tracciato viene aggiunta in maniera automatica la sezione relativa.
+Al momento de la creación del archivo XML, si en los resúmenes de la factura figura un gasto de tipo timbre, la sección correspondiente se añade automáticamente en el archivo.

@@ -1,16 +1,16 @@
 ---
-title: Scritture di consolidamento
+title: scritture di consolidamento
 sidebar_position: 6
 ---
 
-Questa form serve innanzitutto per ricercare e visualizzare le scritture generate dalla procedura *Consolidamento* del modulo chiusure infrannuali.
+Este formulario sirve principalmente para buscar y visualizar las escrituras generadas por el procedimiento de *Consolidación* del módulo de cierres intermedios.
 
-Occorre selezionare dall'apposita combo box il consolidamento di riferimento elaborato al fine di visualizzare le relative scritture.
+Es necesario seleccionar en la combo box correspondiente el consolidado de referencia elaborado para visualizar las escrituras relacionadas.
 
-Come per le Registrazioni extracontabili, da questa posizione sarà inoltre possibile completare le operazioni di consolidamento con registrazioni completamente manuali (per le partecipazioni infrasocietarie per esempio). 
+Al igual que en las Registros extracontables, desde esta posición también será posible completar las operaciones de consolidación con registros completamente manuales (por ejemplo, para participaciones intraempresariales).  
 
-Anche queste registrazioni prevedono una causale contabile di riferimento: rispetto alle normali registrazioni, ogni singola riga di contabilità prevede innanzi tutto l'indicazione della società di riferimento della riga stessa.
+Estas registraciones también requieren una causald contable de referencia; respecto a las registraciones normales, cada línea de contabilidad debe indicar, en primer lugar, la empresa de referencia de la misma.
 
 :::tip[]
-Per la procedura di configurazione ed esecuzione del consolidamento vedere [**qui**](/docs/controlling/mid-year-closures/procedures/consolidation)
+Para el procedimiento de configuración y ejecución de la consolidación, ver [**aquí** (qui)](/docs/controlling/mid-year-closures/procedures/consolidation)
 :::

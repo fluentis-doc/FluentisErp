@@ -1,27 +1,26 @@
 ---
-title: Analisi SAL per Progetto
+title: analisi sal per progetto
 sidebar_position: 2
 ---
 
-Questa procedura permette di analizzare gli stati avanzamento lavori. Nell’area di filtro è possibile indicare una serie di filtri per cercare in modo più mirato i progetti.
-Una volta inseriti i filtri, basterà cliccare **Ricerca** nella ribbon bar per far comparire i risultati nella griglia sottostante. Per effettuare la procedura, selezionare una riga nella griglia e cliccare il pulsante **Analisi SAL** per progetto nella ribbon bar. Questo aprirà una schermata in cui consultare le informazioni dell’avanzamento lavori del progetto selezionato. 
+Este procedimiento permite analizar los estados de avance de trabajos. En el área de filtros, es posible indicar una serie de filtros para buscar de manera más específica los proyectos.  
+Una vez que se han ingresado los filtros, basta hacer clic en **ricerca** en la barra de cinta para que aparezcan los resultados en la cuadrícula inferior. Para llevar a cabo el procedimiento, seleccione una fila en la cuadrícula y haga clic en el botón **Análisis SAL** por proyecto en la barra de cinta. Esto abrirá una pantalla donde se pueden consultar las informaciones del avance de trabajos del proyecto seleccionado.
 
-Nella **tab Stato avanzamento lavori** vengono riportati i SAL effettuati per il progetto. Ogni riga conterrà quindi uno [Stato avanzamento lavori](/docs/project-management/work-project-status/new-work-project-status/), con il relativo Numero, Data, ecc. 
-Nel caso fossero presenti molti SAL, è possibile raggrupparli utilizzando il pulsante nella ribbon bar  **Gruppi**, il quale chiederà l’inserimento di un Titolo, per poi raggrupare i SAL selezionati in un unico **gruppo**.
+En la **pestaña Estado de avance de trabajos (tab Stato avanzamento lavori)** se reportan los SAL realizados para el proyecto. Cada fila contendrá un [Estado de avance de trabajos (Stato avanzamento lavori)](/docs/project-management/work-project-status/new-work-project-status/), con el correspondiente Número, Fecha, etc.  
+En caso de que haya muchos SAL, es posible agruparlos utilizando el botón **gruppi** en la barra de cinta, el cual solicitará la inserción de un Título, para luego agrupar los SAL seleccionados en un único **grupo**.
 
-Nella **tab Riepiloghi**, servendosi dei tasti  Esplodi e  Implodi presenti nella ribbon bar, è possibile visualizzare i vari livelli dello scheletro con i relativi dati. 
+En la **pestaña Resúmenes (tab Riepiloghi)**, utilizando los botones Expandir (Esplodi) e Contraer (Implodi) presentes en la barra de cinta, es posible visualizar los diferentes niveles del esqueleto con los datos correspondientes.
 
 ![](/img/it-it/project-management/transverse-procedures/riepilogues.png)
 
-**Budget di progetto**: visualizza costi e ricavi stabiliti a livello di progetto,
+**budget di progetto**: visualiza costos e ingresos establecidos a nivel de proyecto,  
 
-**Tipo Stato avanzamento lavori**: riporta il SAL effettuato ed in particolare ne riporta la tipologia, il numero e la data; avremo tante colonne di questo tipo quanti sono i SAL effettuati;
+**Tipo Estado de avance de trabajos (Tipo Stato avanzamento lavori)**: reporta el SAL realizado y, en particular, su tipología, número y fecha; habrá tantas columnas de este tipo como SAL se hayan realizado;  
 
-**Stato Corrente Progetto**: è la sommatoria di tutti i SAL realizzati;
+**stato corrente progetto**: es la sumatoria de todos los SAL realizados;  
 
-**Differenza di budget**: indica il saldo attuale di costi e ricavi.
+**Diferencia de presupuesto (Differenza di budget)**: indica el saldo actual de costos e ingresos.
 
-Può essere interessante esportare in Excel il SAL, servendosi del tasto destro, poi **Export**.
+Puede ser interesante exportar el SAL a Excel, utilizando el clic derecho y luego **export**.
 
 ![](/img/it-it/project-management/transverse-procedures/export.png)
-

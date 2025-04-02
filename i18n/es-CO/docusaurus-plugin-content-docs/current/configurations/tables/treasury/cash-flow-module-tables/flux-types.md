@@ -1,48 +1,46 @@
 ---
-title: Tipi flusso
+title: tipi flusso
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está interesada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se quiera configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-La tabella, propedeutica all'utilizzo del modulo, prevede la codifica delle tipologie di flusso di cash flow che l'azienda intende abilitare per le simulazioni. 
+La tabla, previa al uso del módulo, contempla la codificación de los tipos de flujo de cash flow que la empresa desea habilitar para las simulaciones.  
 
-Si consiglia di codificate comunque tutte le tipologie previste: la procedura di *generazione automatica cashflow* consente di definire, volta per volta, quali di queste considerare e quali no.
+Se recomienda codificar todas las tipologías previstas: el procedimiento de *generación automática de cash flow* permite definir, en cada caso, cuáles de estas considerar y cuáles no.  
 
-La codifica del tipo flusso è libera nel codice e descrizione, a piacere, e va poi ricondotta tramite i flag corrispondenti, ai dati che possono essere gestiti.
+La codificación del tipo de flujo es libre en código y descripción, a elección, y debe luego asociarse a través de los indicadores correspondientes, a los datos que pueden ser gestionados.
 
+Se prevén las siguientes fuentes de datos:
 
+**codice**: código de los tipos de flujo;
 
-Sono previste le seguenti origini dati:
+**descrizione**: descripción de los tipos de flujo;
 
-**Codice**: codice del tipi flusso;
+**partite**: la fuente de datos son las partidas abiertas de contabilidad general;
 
-**Descrizione**: descrizione del tipi flusso;
+**saldo contabile**: de este tipo de flujo se obtienen las disponibilidades financieras iniciales, respecto a los *tipos de cuentas financieras* codificados;
 
-**Partite**: l'origine dati sono le partite aperte di contabilità generale;
+**Órdenes de clientes/órdenes de proveedores (Ordini clienti/ordini fornitori)**: órdenes de clientes, de las tipologías con indicador *cash flow*, impresas y confirmadas, no evadidas;
 
-**Saldo contabile**: da questo tipo flusso si ottengono le disponibilità finanziarie iniziali, rispetto ai *tipi conti finanziari* codificati;
+**Facturas de compra/venta (Fatture di acquisto/vendita)**: facturas impresas/controladas pero no contabilizadas (no de tipo proforma);
 
-**Ordini clienti/ordini fornitori**: ordini clienti, delle tipologie con flag *cash flow*, stampati e confermati, non evasi;
+**Extracontable (Extracontabile)**: vencimientos manuales extracontables definidos en el módulo de cash flow mediante el formulario *Vencimientos extracontables*;
 
-**Fatture di acquisto/vendita**: fatture stampate/controllate ma non ancora contabilizzate (non di tipo pro-forma);
+**percipienti**: compensaciones de profesionales no contabilizadas (si están contabilizadas, entran en las partidas abiertas);
 
-**Extracontabile**: scadenze manuali extracontabili definite nel modulo cash flow stesso tramite la form *Scadenze extracontabili*;
+**DDT de compra/venta (DDT di acquisto/vendita)**: DDT de las tipologías con indicador *cash flow*, impresas y confirmadas, no valorizadas (si son valorizadas, entran en las facturas);
 
-**Percipienti**: compensi professionisti non ancora contabilizzati (se contabilizzati rientrano nelle partite aperte);
+**Órdenes y devoluciones de trabajo (Ordini e rientri di conto lavoro)**: órdenes de trabajo por evadir y devoluciones de trabajo no facturadas;
 
-**DDT di acquisto/vendita**: DDT delle tipologie con flag *cash flow*, stampati e confermati, non valorizzate (se valorizzate rientrano nelle fatture);
+**rda**: solicitudes de compra;
 
-**Ordini e rientri di conto lavoro**: ordini di conto lavoro da evadere e rientri di conto lavoro non ancora fatturati;
+**ordine pianificato**: órdenes de producción con fases externas planificadas o órdenes de producción que prevén una solicitud de compra.
 
-**RDA**: richieste di acquisto;
+**portafoglio effetti**: Efectos emitidos (y presentados, según la configuración del indicador *Usar en venc. en el castelletto* presente en la máscara de *Generación automática de cash flow*).
 
-**Ordine pianificato**: ordini di produzione con fasi esterne pianificati o ordini di produzione che prevedono una richiesta d'acquisto.
-
-**Portafoglio effetti**: Effetti emessi (e presentati, a seconda dell'impostazione del flag *Usa in scad. nel castelletto* presente nella maschera di *Generazione automatica cashflow*)
-
-**Anticipi**: Distinte di anticipo fattura create. L'elaborazione del cash flow, se per questo tipo è impostato il flag 'Usa in scad. nel castelletto' (nella maschera *Generazione automatica Cashflow*) va a rilevare gli importi delle distinte contabilizzate per l'importo anticipato sul conto bancario, e nei flussi alle date scadenza. Quando el fatture vengono incassate (elaborando un nuovo cashflow) i flussi in scadenza vengono eliminati e l'importo del conto bancario viene aggiornato con la quota residua non già anticipata al netto di eventuali commissioni e interessi.
+**anticipi**: Listas de anticipos de factura creadas. El procesamiento del cash flow, si para este tipo está activado el indicador 'Usar en venc. en el castelletto' (en la máscara *Generación automática de Cashflow*), va a registrar los importes de las listas contabilizadas por el importe anticipado en la cuenta bancaria, y en los flujos a las fechas de vencimiento. Cuando las facturas son cobradas (procesando un nuevo cash flow), los flujos vencidos se eliminan y el importe de la cuenta bancaria se actualiza con la parte restante no ya anticipada, menos cualquier comisión e interés.

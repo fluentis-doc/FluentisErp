@@ -1,1 +1,1 @@
-Qui viene proposta l'informazione inserita nell'*Anagrafica del soggetto > tab Extra data*, solo se esistono dati di default.
+Aquí se propone la información ingresada en la *Registro del sujeto (Anagrafica del soggetto) > pestaña Datos adicionales (tab Extra data)*, solo si existen datos predeterminados.

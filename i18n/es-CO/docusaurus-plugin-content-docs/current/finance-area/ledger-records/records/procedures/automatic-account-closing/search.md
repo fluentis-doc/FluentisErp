@@ -1,38 +1,38 @@
 ---
-title: Ricerca
+title: ricerca
 sidebar_position: 1
 ---
 
-Questa form permette di ricercare le chiusure dei conti precedentemente calcolate e presenti nella base dati. 
+Este formulario permite buscar los cierres de cuentas previamente calculados y presentes en la base de datos.
 
-**Da questa posizione è possibile elaborare una nuova chiusura dei conti tramite il comando  [Nuovo](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
+**Desde esta posición es posible elaborar un nuevo cierre de cuentas a través del comando [Nuevo (Nuovo)](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
-Nella zona di testata sono presenti alcuni campi per il filtro, in particolare il **numero di versione** rappresenta un numero progressivo che identifica la chiusura  stessa per ogni società presente nella base dati. Deve pertanto essere un numero univoco.
+En la zona de encabezado hay algunos campos para el filtro, en particular el **número de versión** representa un número progresivo que identifica el cierre en sí para cada empresa presente en la base de datos. Debe, por lo tanto, ser un número único.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/search/image01.png)
 
-### Come eseguire una chiusura dei conti
+### Cómo ejecutar un cierre de cuentas (Come eseguire una chiusura dei conti)
 
-- Dalla presente maschera premere [**Nuovo**](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing) per creare una *Nuova* chiusura per l'anno che verrà indicato nei parametri della nuova chiusura (nella maschera che si apre)
-- Nella nuova chiusura che stiamo creando inserire tutti i parametri necessari (vedere il link di cui al punto precedente)
-- Calcolare i saldi tramite il comando *Ripresa valori sottoconti* (presente all'interno della nuova chiusura)
-- Contabilizzare la chiusura tramite il comando *Crea registrazione per la chiusura conti* (presente all'interno della nuova chiusura)
+- Desde esta máscara presione [**nuovo**](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing) para crear un *Nuevo* cierre para el año que se indicará en los parámetros del nuevo cierre (en la máscara que se abre)  
+- En el nuevo cierre que estamos creando, ingrese todos los parámetros necesarios (ver el enlace mencionado anteriormente)  
+- Calcule los saldos a través del comando *Recuperar valores de subcuentas (Ripresa valori sottoconti)* (presente dentro del nuevo cierre)  
+- Contabilice el cierre a través del comando *Crear registro para el cierre de cuentas (Crea registrazione per la chiusura conti)* (presente dentro del nuevo cierre)  
 
-#### Campi specifici  
+#### Campos específicos (Campi specifici)  
 
-**Descrizione**: liberamente assegnabile in fase di creazione della nuova chiusura;
+**descrizione**: asignable libremente en el momento de la creación del nuevo cierre;  
 
-**Data**: data di elaborazione della chiusura;
+**data**: fecha de elaboración del cierre;  
 
-**Versione**: numero di versione della chiusura (attenzione, deve essere un numero univoco per ogni società e rappresenta in pratica un numero progressivo delle varie chiusure presenti);
+**versione**: número de versión del cierre (atención, debe ser un número único para cada empresa y representa en la práctica un número progresivo de los diversos cierres presentes);  
 
-**Contabilizzata**: indica se la chiusura è contabilizzata (flag attivo) oppure solo calcolata (flag non attivo);
+**contabilizzata**: indica si el cierre está contabilizado (indicador activo) o solo calculado (indicador no activo);  
 
-**Note**: campo liberamente compilabile in fase di creazione della chiusura.
+**note**: campo libremente completable en el momento de la creación del cierre.  
 
-#### Pulsanti specifici  
-> **Ricerca**: permette di la ricerca di una chiusura conti effettuata precedentemente.  
-> **Nuovo**: permette di creare una nuova chiusura conti.  
-> **Modifica**: attivabile dopo aver selezionato una chiusura conti, permette la modifica della registrazione di chiusura.  
-> **Visualizza**: attivabile dopo aver selezionato una chiusura conti, permette la visualizzazione della registrazione di chiusura.  
-> **Elimina**: attivabile dopo aver selezionato una chiusura conti, permette la cancellazione della registrazione di chiusura.  
+#### Botones específicos (Pulsanti specifici)  
+> **ricerca**: permite la búsqueda de un cierre de cuentas realizado anteriormente.  
+> **nuovo**: permite crear un nuevo cierre de cuentas.  
+> **modifica**: activable después de seleccionar un cierre de cuentas, permite modificar el registro de cierre.  
+> **visualizza**: activable después de seleccionar un cierre de cuentas, permite visualizar el registro de cierre.  
+> **elimina**: activable después de seleccionar un cierre de cuentas, permite cancelar el registro de cierre.

@@ -1,57 +1,57 @@
 ---
-title: Parametri ordini fornitori
+title: parametri ordini fornitori
 sidebar_position: 2
 ---
 
-I parametri degli ordini fornitori permettono l'impostazione di base per gestire gli Ordini fornitori correttamente e secondo le specifiche richieste da ogni singola società.   
+Los parámetros de los pedidos de proveedores permiten la configuración básica para gestionar correctamente los pedidos de proveedores de acuerdo con las solicitudes específicas de cada empresa.  
 
-La finestra si compone di pulsanti e tre diversi tab: *Generale*, *Carico* e *Analitica*. 
+La ventana se compone de botones y tres pestañas diferentes: *generale*, *carico* y *analitica*.
 
-### Generale
+### General (Generale)
 
-**Gestione doppia unità misura**: solo se attivato, il sistema può gestire l'unità di misura alternativa nell'ordine fornitore.
+**gestione doppia unità misura**: solo si está activado, el sistema puede gestionar la unidad de medida alternativa en el pedido del proveedor.
 
-**Proposta automatica UM alternativa:** se attivato, fa in modo che venga proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato.
+**Propuesta automática de UM alternativa (Proposta automatica UM alternativa)**: si está activado, se propondrá la cantidad relacionada con la unidad de medida alternativa, siempre que se haya configurado una como predeterminada en el registro del artículo. Este indicador solo se puede activar si el indicador anterior está activado.
 
-**Costo zero in assenza di listini**: se attivo, in assenza di un listino valido popola il prezzo con il valore zero. Nel caso in cui questa voce non fosse spuntata, il campo sarebbe valorizzato con il costo ultimo dell'articolo, se presente.
+**costo zero in assenza di listini**: si está activo, en ausencia de un listado válido, poblará el precio con el valor cero. Si esta opción no está marcada, el campo se valorará con el último costo del artículo, si está presente.
 
-**Blocca inserimento documento in date festive:** se attivo, il sistema non permette l'inserimento dell'ordine in date festive (sabato, domenica e festività). Se non attivo, il sistema non effettua nessun controllo e lascia inserire l'ordine.
+**blocca inserimento documento in date festive**: si está activo, el sistema no permite la inserción del pedido en días festivos (sábado, domingo y festividades). Si no está activo, el sistema no realiza ningún control y permite ingresar el pedido.
 
-**Proponi marca con priorità listino fornitore/ordine cliente**: non più utilizzato.
+**proponi marca con priorità listino fornitore/ordine cliente**: ya no se utiliza.
 
-**Permetti modifica IVA:** se attivo, in caso di [Creazione automatica Ordini da Richieste di acquisto](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) viene proposto il codice IVA dall'anagrafica del fornitore.
+**permetti modifica iva**: si está activo, en caso de [Creación automática de pedidos desde solicitudes de compra (Creazione automatica Ordini da Richieste di acquisto)](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) se propone el código de IVA desde el registro del proveedor.
 
-**Codice operatore obbligatorio**: se attivo, è necessario specificare il codice dell'operatore in testata, sotto la voce *Nazione*, altrimenti non sarà possibile salvare l'ordine. Quando il flag non è attivo questo dato è facoltativo.
+**codice operatore obbligatorio**: si está activo, es necesario especificar el código del operador en el encabezado, debajo del campo *nazione*; de lo contrario, no será posible guardar el pedido. Cuando el indicador no está activo, este dato es opcional.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: se attivo, il prezzo dell'articolo inserito nella riga ordine fornitore verrà ricercato in tutti i listini predefiniti dell'anagrafica fornitore, oltre al listino di default. Se non attivo, il prezzo dell'articolo verrà ricercato solo nel listino di default presente nella testata dell'ordine, ma non negli altri listini per lo stesso fornitore aventi date di validità diverse.
+**ricerca prezzi articoli in tutti i listini predefiniti**: si está activo, el precio del artículo ingresado en la línea del pedido del proveedor se buscará en todos los listados predeterminados del registro del proveedor, además del listado por defecto. Si no está activo, el precio del artículo se buscará solo en el listado predeterminado presente en el encabezado del pedido, pero no en otros listados para el mismo proveedor con fechas de validez diferentes.
 
-**Uso articolo fornitore**: se attivo, nella griglia articoli dell'ordine fornitore viene proposto anche il campo per inserire e ricercare il codice articolo fornitore. Se non attivo questo campo non sarà visibile.
+**uso articolo fornitore**: si está activo, en la cuadrícula de artículos del pedido del proveedor también se propone el campo para ingresar y buscar el código del artículo del proveedor. Si no está activo, este campo no será visible.
 
-**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stato attivato il flag *In esaurimento*.
+**verifica articoli in esaurimento**: si está activado, el sistema realiza un control sobre la disponibilidad de los artículos en la línea del pedido y avisa si el artículo está agotándose, es decir, si en el [registro del artículo](/docs/erp-home/registers/items/create-new-item) se ha activado el indicador *in esaurimento*.
 
-**Contabilizzazione imballi**: consente di poter contabilizzare, in contabilità generale, anche le righe con articoli di natura imballo che solitamente vengono gestiti per avere la verifica delle giacenze degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
+**contabilizzazione imballi**: permite contabilizar, en contabilidad general, también las líneas con artículos de naturaleza embalaje que usualmente se gestionan para tener la verificación de las existencias de los [Embalajes a devolver (Imballi a rendere)](/docs/configurations/tables/logistics/package-to-be-returned).
 
-### Carico
+### Carga (Carico)
 
-In questo tab vengono definiti i parametri utilizzati per il [Carico ricevimento merci](/docs/purchase/goods-reception/procedures/good-receipt-load).
+En esta pestaña se definen los parámetros utilizados para el [Recepción de mercancías (Carico ricevimento merci)](/docs/purchase/goods-reception/procedures/good-receipt-load).
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data dell'ordine e non sarà necessario specificare la data registrazione nella form di carico. Se non attivo, sarà necessario specificare la data nella form di carico.
+**crea registrazione con la data del documento**: si está activo, el registro de almacén se realiza con la misma fecha del pedido y no será necesario especificar la fecha de registro en el formulario de carga. Si no está activo, será necesario especificar la fecha en el formulario de carga.
 
-**Priorità magazzino e causale di carico**: se attivo, fa in modo che il carico di magazzino venga effettuato utilizzando il **Magazzino** e la **Causale** definiti in questo tab. Se invece il flag non è settato utilizza il magazzino e la causale definita nelle righe del ricevimento merci, se presenti, altrimenti vengono considerati i parametri impostati nella procedura di carico ricevimento merci.
+**priorità magazzino e causale di carico**: si está activo, asegura que la carga de almacén se realice utilizando el **magazzino** y el **causale** definidos en esta pestaña. Si el indicador no está activado, utiliza el almacén y la causa definidos en las líneas de recepción de mercancías, si están presentes; de lo contrario, se consideran los parámetros establecidos en el procedimiento de carga de recepción de mercancías.
 
-### Analitica
+### Analítica (Analitica)
 
-In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga documento.
+En esta pestaña se especifica con qué prioridad recuperar el centro de costo (CdC) o centro de beneficio (CdP) en la línea del documento.
 
-È possibile modificare le priorità utilizzando i seguenti pulsanti nella ribbon bar:
+Es posible modificar las prioridades utilizando los siguientes botones en la barra de herramientas:
 
-> **Sposta su**       
-> **Sposta giù**.
+> **sposta su**  
+> **sposta giù**.
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo* e successivamente a livello di *Magazzino*.
+*Valores predeterminados (Valori di default)*: el CDC o CDP se recupera del tipo de facturación si está presente. Para más detalles, consulte la tabla [Tipo de Facturación de Compras (Tipo Fatturato Acquisti)](/docs/configurations/tables/purchase/purchase-invoices-type). Si no está presente en el tipo de facturación, el sistema lo buscará en el *Registro de proveedores (Anagrafica fornitore)*. Si tampoco está allí, se buscará en el *anagrafica articolo* y posteriormente a nivel de *magazzino*.
 
-**Ricalcolo**: se attivo, questo flag, ricalcola i centri di costo/profitto secondo la priorità scelta.
+**ricalcolo**: si está activo, este indicador recalcula los centros de costo/profitos de acuerdo con la prioridad seleccionada.
 
-**Centro di costo/ricavo obbligatori**: se attivo, questo flag, rende obbligatoria l'imputazione dei centri di costo/profitto.
+**Centro de costo/ingreso obligatorios (Centro di costo/ricavo obbligatori)**: si está activo, este indicador hace obligatoria la imputación de los centros de costo/profitos.
 
-**Valuta la priorità su ogni dimensione**: se attivo, questo flag permette di valutare ogni priorità inserita nella parte superiore per capire se ci sono ulteriori dimensioni non ancora valorizzate. Ad esempio, supponiamo di avere nell'Anagrafica articolo il centro di costo della dimensione *Business unit* e nel Tipo fatturato acquisti la dimensione *Direzionale*. Se il flag non è attivo il sistema valuta solo il CdC presente nell'Anagrafica articolo; se il flag è attivo, dopo aver caricato il CdC presente nell'Anagrafica articolo il sistema valuta anche la dimensione presente nel Tipo fatturato acquisti (nel nostro esempio la dimensione *Direzionale*) e se è diversa da quelle che ha già gestito (*Business Unit*) carica il centro e prosegue con la verifica delle altre priorità.
+**valuta la priorità su ogni dimensione**: si está activo, este indicador permite evaluar cada prioridad ingresada en la parte superior para entender si hay dimensiones adicionales que aún no están valoradas. Por ejemplo, supongamos que en el Registro de artículos se tiene el centro de costo de la dimensión *Unidad de negocio (Business unit)* y en el Tipo de facturación de compras la dimensión *direzionale*. Si el indicador no está activo, el sistema evalúa solo el CdC presente en el Registro de artículos; si el indicador está activo, después de haber cargado el CdC presente en el Registro de artículos, el sistema también evalúa la dimensión presente en el Tipo de facturación de compras (en nuestro ejemplo, la dimensión *Direccional*) y si es diferente de aquellas que ya ha gestionado (*Unidad de negocio*), carga el centro y continúa con la verificación de las otras prioridades.

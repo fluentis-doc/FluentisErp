@@ -1,11 +1,11 @@
 ---
-title: Tipo spesa
+title: tipo spesa
 sidebar_position: 4
 ---
 
-In questa tabella sono contenute le tipologie di spese che è possibile inserire nel [Budget](/docs/crm/sales-forecast-crm/marketing-budget). I dati da inserire sono i seguenti:       
-**Codice**: contiene un codice univoco e la relativa **Descrizione**;     
-**Tipo misurazione**: contiene l'Unità di misura da utilizzare per questa tipologia;     
-**Descrittivo**: questo flag indica che la spesa sarà descrittiva e quindi nel Budget sarà possibile inserire una Descrizione;      
-**Conto**: questo flag indica che la spesa sarà imputata ad un Conto e quindi nel Budget sarà possibile inserire un Conto;     
-**Articolo**: questo flag indica che la spesa sarà imputata ad un Articolo e quindi nel Budget sarà possibile inserire un Articolo.     
+En esta tabla se encuentran los tipos de gastos que se pueden ingresar en el [Presupuesto (Budget)](/docs/crm/sales-forecast-crm/marketing-budget). Los datos a ingresar son los siguientes:  
+**codice**: contiene un código único y su correspondiente **descrizione**;  
+**tipo misurazione**: contiene la Unidad de medida que se utilizará para este tipo;  
+**descrittivo**: este indicador indica que el gasto será descriptivo y, por lo tanto, en el Presupuesto será posible ingresar una Descripción;  
+**conto**: este indicador indica que el gasto se imputará a una Cuenta y, por lo tanto, en el Presupuesto será posible ingresar una Cuenta;  
+**articolo**: este indicador indica que el gasto se imputará a un Artículo y, por lo tanto, en el Presupuesto será posible ingresar un Artículo.

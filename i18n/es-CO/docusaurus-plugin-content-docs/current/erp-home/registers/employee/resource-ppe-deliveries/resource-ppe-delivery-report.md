@@ -1,14 +1,14 @@
 ---
-title: Elenco consegne/resi D.P.I.
+title: elenco consegne/resi d.p.i.
 sidebar_position: 4
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Home > Dipendenti > Consegne/resi D.P.I. > Elenco consegne/resi D.P.I.**.   
+El filtro de ejecución de reportes se encuentra en la ruta **Inicio > Empleados > Entregas/devoluciones E.P.I. > Lista de entregas/devoluciones E.P.I.**.
 
-Il filtro di esecuzione report consente di ricercare le *Consegne/resi D.P.I.* per poterli stampare.   
-I reports predefiniti sono:
-> **Elenco Consegne/Resi D.P.I.** - elenco delle *Consegne/resi D.P.I.* raggruppabili per: *Dipendente*, *D.P.I.* e *Data consegna/reso*;   
-> **Scheda consegna Dispositivi di Protezione Individuale** - scheda della *Consegna D.P.I.* effettuata per data consegna;   
-> **Scheda reso Dispositivi di Protezione Individuale** - scheda del *Reso D.P.I.* effettuata per data reso.   
+El filtro de ejecución de reportes permite buscar las *Entregas/devoluciones E.P.I.* para poder imprimirlas.  
+Los reportes predeterminados son:  
+> **elenco consegne/resi d.p.i.** - lista de las *Entregas/devoluciones E.P.I.* que se pueden agrupar por: *dipendente*, *d.p.i.* y *data consegna/reso*;  
+> **scheda consegna dispositivi di protezione individuale** - ficha de la *Entrega de E.P.I.* realizada por fecha de entrega;  
+> **scheda reso dispositivi di protezione individuale** - ficha de la *Devolución de E.P.I.* realizada por fecha de devolución.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

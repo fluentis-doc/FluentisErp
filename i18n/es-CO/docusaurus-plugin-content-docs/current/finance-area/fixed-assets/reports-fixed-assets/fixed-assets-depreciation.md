@@ -1,17 +1,10 @@
 ---
-title: Ammortamento cespiti
+title: ammortamento cespiti
 sidebar_position: 3
 ---
 
-Con questo report è possibile estrarre i dettagli degli ammortamenti calcolati secondo i parametri indicati nella maschera.
+Con este informe es posible extraer los detalles de las amortizaciones calculadas según los parámetros indicados en el formulario.
 
-Il funzionamento della maschera per l'inserimento dei parametri è il medesimo presente per la **[stampa degli acquisti annuali.](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**
+El funcionamiento del formulario para la inserción de parámetros es el mismo presente para la **[impresión de las compras anuales (stampa degli acquisti annuali)](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**.
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

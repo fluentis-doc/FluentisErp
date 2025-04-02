@@ -1,31 +1,31 @@
 ---
-title: Cambi valute
+title: cambi valute
 sidebar_position: 4
 ---
 
-La tabella dei Cambi valute, comune a tutte le società della stessa base dati, consente di impostare giorno per giorno i cambi ufficiali da utilizzare nelle varie procedure del gestionale: in particolare si segnala che il programma andrà a recuperare da questa tabella l'ultimo cambio valido a ritroso dalla data del documento/registrazione che si sta inserendo.
+La tabla de cambi valute (Cambi valute), común a todas las empresas de la misma base de datos, permite establecer día a día los tipos de cambio oficiales que se utilizarán en los diversos procedimientos del sistema de gestión: en particular, se destaca que el programa recuperará de esta tabla el último tipo de cambio válido retrocediendo desde la fecha del documento/registro que se está ingresando.
 
 :::note Nota
-La tabella può essere valorizzata manualmente inserendo direttamente il tasso di cambio relativo alla divisa ed al giorno anch'essi impostati manualmente, oppure può essere eseguito un aggiornamento automatico scaricando i tassi di cambio tramite l'apposito bottone posto nella ribbon bar ***Scarica tassi di cambio***.
+La tabla puede ser completada manualmente ingresando directamente la tasa de cambio relativa a la moneda y al día, que también se establecen manualmente, o se puede realizar una actualización automática descargando las tasas de cambio mediante el botón correspondiente ubicado en la barra de herramientas ***Descargar tasas de cambio***.
 
- Premendo il bottone apparirà un **popup** che richiede l'inserimento delle **date Da / A** all'interno delle quali ricercare i tassi di cambio ed il **flag Inserimento automatico** che va direttamente a popolare la tabella (e che si consiglia di lasciare attivo).
+Al presionar el botón, aparecerá un **popup** que solicita el ingreso de las **fechas De / A** dentro de las cuales buscar las tasas de cambio y el **indicador de Inserción automática** que va directamente a poblar la tabla (y se recomienda mantenerlo activado).
 
-**ATTENZIONE:** vengono scaricati i tassi di cambio relativi solamente alle divise che hanno il flag Scarica cambi nella tabella [**Divisa**](/docs/configurations/tables/general-settings/currencies).
+**ATENCIÓN:** solo se descargan las tasas de cambio relativas a las monedas que tienen el indicador Descargar cambios en la tabla [**divisa**](/docs/configurations/tables/general-settings/currencies).
 :::
 
 
-##### Campi specifici
+##### Campos específicos (Campi specifici)
 
-**Cambio**: normalmente va inserita la divisa della società (euro).
+**cambio**: normalmente se debe ingresar la moneda de la empresa (euro).
 
-**Descrizione**: descrizione della divisa.
+**descrizione**: descripción de la moneda.
 
-**In**: divisa di riferimento.
+**in**: moneda de referencia.
 
-**Descrizione**: descrizione divisa di riferimento.
+**descrizione**: descripción de la moneda de referencia.
 
-**Data valuta**: data di riferimento del cambio.
+**data valuta**: fecha de referencia del cambio.
 
-**Valore cambio**: si tratta del cambio 'incerto per certo', effettivamente utilizzato dal programma nei calcoli dei controvalori. Nel caso dell'euro, quindi, è il valore inverso al cambio ufficiale del giorno.
+**valore cambio**: se refiere al cambio 'incierto por cierto', que es efectivamente utilizado por el programa en los cálculos de los contravalores. En el caso del euro, este es el valor inverso al tipo de cambio oficial del día.
 
-**Valore diretto**: si tratta del cambio 'certo per incerto'. Nel caso dell'euro, quindi, è il valore de cambio ufficiale del giorno.
+**valore diretto**: se refiere al cambio 'cierto por incierto'. En el caso del euro, este es el valor del tipo de cambio oficial del día.

@@ -1,75 +1,75 @@
 ---
-title: Parametri MS
+title: parametri ms
 sidebar_position: 3
 tags: [MS]
 ---
 
-Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione delle commesse di produzione ed il modo in cui devono essere gestite le fasi successive alla generazione delle commesse stesse.
+A través de esta ventana se configuran todos los parámetros que afectan la gestión de las órdenes de producción y la manera en que deben manejarse las fases posteriores a la generación de las órdenes mismas.
 
-## Metodo generazione commessa  
+## Método de generación de la orden (Metodo generazione commessa)
 
-In questa sezione deve essere impostato il **Tipo di Commessa** (Monoprodotto / Multiprodotto) che deve essere proposto nella procedura **Generazione commesse di produzione**, tab [Parametri](/docs/planning/mps-master-production-scheduling/job-order-creation).  
-Nel momento della generazione della commessa dalla [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation) è comunque possibile modificare questa impostazione, così come quella relativa alla combo successiva chiamata **Raggruppamento per**, tramite la quale è possibile indicare come devono essere eventualmente raggruppati gli articoli all'interno della stessa commessa *Monoprodotto* o *Multiprodotto*.
+En esta sección debe establecerse el **Tipo de Orden** (Monoproducto / Multiproducto) que debe proponerse en el procedimiento de **Generación de órdenes de producción** (Generazione commesse di produzione), pestaña [Parámetros](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+En el momento de la generación de la orden desde la [Generación de órdenes de producción](/docs/planning/mps-master-production-scheduling/job-order-creation), es posible modificar esta configuración, así como la relativa a la combinación siguiente llamada **Agrupamiento por**, mediante la cual se puede indicar cómo deben agruparse los artículos dentro de la misma orden *Monoproducto* o *Multiproducto*.
 
-Se il *Tipo commessa* è:  
-- *Monoprodotto*, l'unico raggruppamento ammesso è quello per Articolo: questo tipo di gestione permette all'utente di far generare automaticamente dal sistema una serie di commesse monoprodotto, selezionando una lista di righe di ordini clienti, righe provenienti da Previsioni di Vendita o dal Piano Principale di Produzione o provenienti dal Sottoscorta, facendo in modo che ciascuna commessa che verrà generata presenti la somma delle quantità richieste per lo stesso articolo. La data di fine di una commessa raggruppata è sempre uguale a quella del fabbisogno più vicino alla data in cui si lancia l'elaborazione.  
-- *Multiprodotto* i raggruppamenti possono essere effettuati per cliente, commessa di vendita,  cliente/commessa, e consentono all'utente di inserire nella stessa commessa Multiprodotto più articoli provenienti da righe d'ordine cliente legate allo stesso cliente, alla stessa commessa di vendita oppure alla stessa commessa di vendita dello stesso cliente.
+Si el *Tipo de orden* es:  
+- *Monoproducto*, el único agrupamiento permitido es por Artículo: este tipo de gestión permite al usuario hacer que el sistema genere automáticamente una serie de órdenes monoproducto, seleccionando una lista de líneas de pedidos de clientes, líneas provenientes de Pronósticos de Ventas o del Plan Maestro de Producción o provenientes del Stock Bajo, asegurando que cada orden generada presente la suma de las cantidades solicitadas para el mismo artículo. La fecha de finalización de una orden agrupada siempre es igual a la del requerimiento más cercano a la fecha en que se lanza la elaboración.  
+- *Multiproducto*, los agrupamientos pueden realizarse por cliente, orden de venta, cliente/orden y permiten al usuario incluir en la misma orden Multiproducto más artículos provenientes de líneas de pedido del cliente vinculadas al mismo cliente, a la misma orden de venta o a la misma orden de venta del mismo cliente.
 
-Il campo **Priorità approvvigionamento**, permette di inserire un valore di default per la priorità delle commesse create; questa verrà considerata dalla procedura di [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling/).
+El campo **Prioridad de aprovisionamiento**, permite ingresar un valor predeterminado para la prioridad de las órdenes creadas; este será considerado por el procedimiento de [Programación a capacidad finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling/).
 
-## Generazione commessa da  
+## Generación de orden desde (Generazione commessa da)
 
-In questa sezione l'utente può impostare con gli appositi flag se la commessa debba essere generata da *Ordini clienti* o da un *Previsionale* (nello specifico poi può selezionare se da *Previsioni di vendita*, e/o da *Piano principale di produzione*).  
-Questi parametri sono poi modificabili dalla finestra di [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation).  
-Nel caso di *Generazione commessa di produzione dal Previsionale*, deve essere specificato se si preferisce che la commessa di produzione venga generata con scadenza settimanale o mensile.
+En esta sección, el usuario puede establecer mediante los indicadores correspondientes si la orden debe ser generada a partir de *Pedidos de clientes* o de un *Pronóstico* (específicamente puede seleccionar si desde *Pronósticos de ventas*, y/o desde *Plan maestro de producción*).  
+Estos parámetros luego pueden ser modificados desde la ventana de [Generación de órdenes de producción](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+En el caso de *Generación de orden de producción desde el Pronóstico*, debe especificarse si se prefiere que la orden de producción se genere con una caducidad semanal o mensual.
 
-**Considera le disponibilità provenienti da**   
-In questa sezione l'utente può decidere di impostare la considerazione della disponibilità dei prodotti finiti in sede di generazione commessa di produzione da: *Conto Lavoro*, *Acquisti*, *Vendite*, *Produzione*, *Magazzino*.
+**considera le disponibilità provenienti da**  
+En esta sección, el usuario puede decidir establecer la consideración de la disponibilidad de los productos terminados al generar la orden de producción de: *conto lavoro*, *acquisti*, *vendite*, *produzione*, *magazzino*.
 
-Ci sono poi una serie di flag:  
-**Calcolo quantità in base al Lead Time dell'articolo**: viene attivato nel caso non si vogliano utilizzare i cicli di lavorazione per calcolare la durata di una commessa di produzione; in questo caso, ai fini del calcolo della durata della commessa si fa riferimento al campo Lead time di produzione presente nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'articolo. 
+Luego hay una serie de indicadores:  
+**calcolo quantità in base al lead time dell'articolo**: se activa en caso de que no se deseen utilizar los ciclos de trabajo para calcular la duración de una orden de producción; en este caso, para el cálculo de la duración de la orden se hace referencia al campo Lead time de producción presente en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del artículo. 
 
-**Generazione commessa da Ordini clienti in automatico**: se attivo, permette di fare in modo che la procedura crei automaticamente la commessa di produzione non appena venga inserita una riga ordine cliente. La commessa in questo caso viene creata nello stato di *Non Esaminata*. Generalmente viene attivato quando per schedulare si utilizza la procedura *MRP* anziché la *Schedulazione Generale*.
+**Generación de órdenes desde pedidos de clientes automáticamente (Generazione commessa da Ordini clienti in automatico)**: si está activo, permite que el procedimiento cree automáticamente la orden de producción tan pronto como se inserte una línea de pedido del cliente. La orden en este caso se crea en estado de *non esaminata*. Generalmente se activa cuando se utiliza el procedimiento *MRP* para programar en lugar de la *Programación General*.
 
-**Aggiornamento data merce pronta**: se attivo, quando viene cambiata la data di fine prevista lavorazione in una commessa (manualmente o da una procedura), la nuova data viene riportata anche sul campo *Data merce pronta* della commessa stessa e anche dell’ordine cliente collegato. Inoltre, è stata creata anche la tabella di log chiamata **MS_ProductionJobOrderItemReadyGoodsDateLogs** che tiene traccia di tutte le modifiche fatte. Questa è consultabile solo tramite SQL.           
+**aggiornamento data merce pronta**: si está activo, cuando se cambia la fecha de fin prevista de trabajo en una orden (manualmente o a través de un procedimiento), la nueva fecha también se actualiza en el campo *data merce pronta* de la propia orden y también del pedido del cliente conectado. Además, se ha creado una tabla de registro llamada **MS_ProductionJobOrderItemReadyGoodsDateLogs** que rastrea todos los cambios realizados. Esta solo es consultable a través de SQL.
 
-**Generazione automatica Flusso di produzione**: se attivo, l'utente può decidere di attivare il flag **Schedulazione**, il quale permette all’utente di definire il livello di automatizzazione che desidera nella generazione del flusso di produzione; questo flusso verrà avviato direttamente con il pulsante **Generazione flusso** presente in [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation).       
-Quindi ad esempio, l'utente può attivare il flag **Schedulazione**, che permette di vedere già schedulate le commesse di produzione non appena generate dalla [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation). A sua volta l'attivazione del flag **Schedulazione** consente poi di attivare il flag **Rilascio**, che permette di decidere se dopo la schedulazione automatica gli ordini pianificati di acquisto, produzione e/o conto lavoro debbano essere rilasciati anch'essi in automatico. In quest'ultimo caso, per gli **ordini pianificati di produzione** si può attivare anche il flag **Rilascio ordini di produzione esecutivi**, che permette di generare direttamente ordini di produzione esecutivi, saltando quindi anche la procedura di [Rilascio ordini di produzione](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders). 
+**generazione automatica flusso di produzione**: si está activo, el usuario puede decidir activar el indicador **schedulazione**, que permite al usuario definir el nivel de automatización que desea en la generación del flujo de producción; este flujo se iniciará directamente con el botón **generazione flusso** presente en [Generación de órdenes de producción](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+Por lo tanto, por ejemplo, el usuario puede activar el indicador **schedulazione**, que permite ver ya programadas las órdenes de producción tan pronto como sean generadas desde la [Generación de órdenes de producción](/docs/planning/mps-master-production-scheduling/job-order-creation). A su vez, la activación del indicador **schedulazione** permite luego activar el indicador **rilascio**, que permite decidir si después de la programación automática, los pedidos programados de compras, producción y/o trabajo por cuenta ajena también deben liberarse automáticamente. En este último caso, para las **órdenes programadas de producción**, también se puede activar el indicador **rilascio ordini di produzione esecutivi**, que permite generar directamente órdenes de producción ejecutivas, omitiendo así también el procedimiento de [Liberación de órdenes de producción](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders). 
 
 :::note Importante
-Questo automatismo può essere attivato anche alla conferma dell’ordine cliente solo se nella tabella dei [Tipi ordine cliente](/docs/configurations/tables/sales/sales-order-types/) è stato inserito il **Tipo commessa di produzione** e attivato il flag **Generazione commessa di produzione**.     
-Si ricorda che per scatenare l’automatismo, l’ordine cliente deve essere *confermato*, *stampato* e devono essere presenti le *date di consegna* e *merce pronta* in tutte le righe articolo.
+Este automatismo también puede ser activado al confirmar el pedido del cliente solo si en la tabla de [Tipos de pedido del cliente (Tipi ordine cliente)](/docs/configurations/tables/sales/sales-order-types/) se ha insertado el **Tipo de orden de producción** y se ha activado el indicador **Generación de orden de producción**.  
+Se recuerda que para activar el automatismo, el pedido del cliente debe estar *confirmado*, *impreso* y deben estar presentes las *fechas de entrega* y *mercancía lista* en todas las líneas de artículo.
 :::
 
-## Costificazione commessa  
+## Costificación de la orden (Costificazione commessa)
 
-In questa sezione è possibile indicare dei parametri che saranno proposti come default per la costificazione delle commesse di produzione.    
+En esta sección es posible indicar parámetros que serán propuestos como predeterminados para la costificación de las órdenes de producción.    
 
-> **Tipo di costo**: permette di indicare il tipo di costo da utilizzare per la costificazione delle materie prime tra costo *Ultimo*, *Medio* e *Standard*;    
-> **Tipo di ricarico**: permette di indicare il tipo di ricarico tra *Costo* (a valore) e *Percentuale*; nel campo accanto è possibile inserire il valore corrispondente;      
-> **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
-> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa.     
+> **Tipo de costo (Tipo di costo)**: permite indicar el tipo de costo a utilizar para la costificación de las materias primas entre costo *ultimo*, *medio* y *standard*;    
+> **Tipo de recargo (Tipo di ricarico)**: permite indicar el tipo de recargo entre *Costo* (a valor) y *Porcentaje*; en el campo al lado es posible ingresar el valor correspondiente;      
+> **costo del lotto**: activando este indicador, el procedimiento valorizará el costo del material en función del tipo de costo seleccionado considerando solo los valores de ese lote específico;     
+> **costo della commessa**: activando este indicador, el procedimiento valorizará el costo del material en función del tipo de costo seleccionado considerando solo los valores de esa orden específica.     
 
 :::note Nota
-Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag aggiorna costo ultimo o medio (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di interesse fiscale attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.
+Si **costo del lotto** y **costo della commessa** están activados ambos, el procedimiento valorizará el costo del material en función del tipo de costo seleccionado considerando solo los valores de esa orden específica y para ese lote específico, obviamente entre los movimientos realizados con causales de carga con el indicador actualizado a costo último o medio (dependiendo del valor indicado en el campo **Tipo de costo (Tipo di costo)**) y el indicador de interés fiscal activos; si no encuentra ningún movimiento con estas características, buscará entre los movimientos que han cargado ese lote; si tampoco encuentra, buscará entre todos los movimientos de ese artículo. Si no hay ningún movimiento de carga para ese artículo, buscará en los respectivos campos de costo último, medio y estándar del registro del artículo.
 ::: 
 
-## Magazzini di pianificazione commesse  
+## Almacenes de planificación de órdenes (Magazzini di pianificazione commesse)
 
-Questa griglia è la semplice visualizzazione della lista di magazzini su cui deve essere controllata la disponibilità in sede di generazione commessa di produzione. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova in *Home > Articoli >  [Calcolo disponibilità](/docs/erp-home/registers/items/calculate-availability)*.
+Esta cuadrícula es la simple visualización de la lista de almacenes sobre los que debe controlarse la disponibilidad al generar la orden de producción. Esta lista se configura en el formulario llamado *calcolo disponibilità* que se encuentra en *Inicio > Artículos > [Cálculo de disponibilidad](/docs/erp-home/registers/items/calculate-availability)*.
 
-**Parametri proposti pianificazione**: permette di definire quali parametri proporre per la pianificazione, può riproporre i parametri dell’ultima pianificazione effettuata, oppure proporre i parametri utilizzati per la pianificazione dal singolo operatore.
+**parametri proposti pianificazione**: permite definir qué parámetros proponer para la planificación, puede repetir los parámetros de la última planificación realizada o proponer los parámetros utilizados para la planificación por el operador individual.
 
-**Giorni prossima pianificazione**: indica il numero di giorni che verranno usati per incrementare la data inizio della schedulazione a capacità finita (campo *Dalla data*), nel tab *Parametri schedulazione a capacità finita* della form *Schedulazione a capacità finita*.
+**giorni prossima pianificazione**: indica el número de días que se utilizarán para incrementar la fecha de inicio de la programación a capacidad finita (campo *dalla data*), en la pestaña *parametri schedulazione a capacità finita* del formulario *Programación a capacidad finita*.
 
-**Numero massimo di mesi per la pianificazione**: indica il numero di mesi da aggiungere alla data odierna per determinare la data di fine schedulazione *Pianificazione fino al* presente nei parametri della *Pianificazione generale*.        
+**numero massimo di mesi per la pianificazione**: indica el número de meses para agregar a la fecha actual a fin de determinar la fecha de finalización de la planificación *pianificazione fino al* que se encuentra en los parámetros de la *Planificación general*.        
 
-**Numero massimo di mesi per il calcolo della disponibilità materiali**: è possibile definire l’orizzonte temporale per il calcolo della disponibilità, nello specifico viene inserito il numero di mesi in cui verranno considerati i documenti; invece, i documenti con data successiva ai mesi presi in considerazione non saranno considerati nella schedulazione.   
+**Número máximo de meses para el cálculo de la disponibilidad de materiales (Numero massimo di mesi per il calcolo della disponibilità materiali)**: es posible definir el horizonte temporal para el cálculo de la disponibilidad; específicamente, se ingresa el número de meses en los que se considerarán los documentos; en cambio, los documentos con fecha posterior a los meses considerados no se tendrán en cuenta en la planificación.   
 
-**Primo giorno della settimana visualizzato nel Calendario di fabbrica**: consente di inserire il giorno che si vuol far comparire come primo giorno della settimana lavorativa nel [Calendario di Fabbrica](/docs/configurations/tables/production/factory-calendar). Di solito si inserisce il lunedì.
+**primo giorno della settimana visualizzato nel calendario di fabbrica**: permite ingresar el día que se desea mostrar como primer día de la semana laboral en el [Calendario de Fábrica](/docs/configurations/tables/production/factory-calendar). Generalmente se establece el lunes.
 
-## Colori delle commesse  
+## Colores de las órdenes (Colori delle commesse)
 
-In questa sezione è possibile impostare i colori dello sfondo e del testo delle commesse di produzione in base al loro stato (non esaminate, lanciate...ecc).
+En esta sección, es posible configurar los colores de fondo y de texto de las órdenes de producción según su estado (no examinadas, lanzadas, etc.).
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

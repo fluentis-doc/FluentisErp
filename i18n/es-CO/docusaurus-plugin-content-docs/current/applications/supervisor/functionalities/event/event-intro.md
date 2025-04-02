@@ -1,16 +1,16 @@
 ---
-title: Evento
-sidebar_label: Evento
+title: evento
+sidebar_label: evento (evento)
 sidebar_position: 0
 ---
 
-Un <mark>Evento</mark> è una funzionalità di **Supervisor** che consente all'utente di eseguire in maniera schedulata un **Task** in base a una pianificazione temporale.  
-Si potrà potrà eseguire un task in maniera automatizzata su base oraria, giornaliera, settimanale o mensile.  
+Un <mark>evento (evento)</mark> es una funcionalidad de **Supervisor** que permite al usuario ejecutar de manera programada un **task** según una planificación temporal.  
+Se podrá ejecutar una tarea de forma automatizada con una frecuencia horaria, diaria, semanal o mensual.
 
-La form **Eventi** si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Eventi**.
+El formulario **eventi** se abre desde el menú complementario **strumenti** > **Fluentis Supervisor** > **eventi**.
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+Algunas de las funcionalidades dentro del formulario se refieren a un uso estándar. Para cualquier detalle sobre el uso de este formulario que no esté explícito aquí, consulte este [artículo (articolo)](/docs/guide/common).
 
-Gli *Eventi* sono organizzati in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Eventi* riferirsi all'articolo [creazioni gruppi](../../group-creation).
+Los *eventi* están organizados en grupos (como por ejemplo *utilità*, *esempi*, *demo*) según el contexto de uso. Para crear un nuevo grupo de *eventi*, consulte el artículo [creación de grupos (creazioni gruppi)](../../group-creation).
 
-![alt text](/img/it-it/applications/supervisor/supervisor11.png)
+![alt text (texto alternativo)](/img/it-it/applications/supervisor/supervisor11.png)

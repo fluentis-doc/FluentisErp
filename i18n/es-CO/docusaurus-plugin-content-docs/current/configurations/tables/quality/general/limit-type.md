@@ -1,50 +1,50 @@
 ---
-title: Tipi limite
+title: tipi limite
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi limite**.
+La tabla se encuentra en la ruta **Tablas > Calidad > General > tipi limite (Tabelle > Qualità > Generale > Tipi limite)**.
 
-In questa tabella è possibile codificare i *Tipi limite*.   
-Il *Tipo limite* lo troviamo associato sempre al *Tipo valore* (solamente per *Tipi valore* numerici).   
-Alcuni esempi di utilizzo dei *Tipi limite* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+En esta tabla se pueden codificar los *tipi limite*.  
+El *tipo limite* siempre está asociado al *tipo valore* (solamente para *Tipos de valor* numéricos).  
+Algunos ejemplos de uso de los *tipi limite* se encuentran en las gestiones:  
+> **schede tecniche** - en la pestaña *proprietà*;  
+> **piani di controllo** - en la pestaña *prove pianificate*;  
+> **Control de artículos (Controllo articoli)** - en la pestaña *prove*;  
+> **certificati di analisi** - en la pestaña *Controles y valores registrados > Valores registrados (Controlli e valori rilevati > Valori rilevati)*;  
+> **M.E.S.** - en la pestaña *Controles de calidad > Pruebas (Controlli qualità > Prove)*.
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli; i valori predefiniti sono:   
-| Codice | Descrizione |
+La tabla contiene valores predefinidos por el sistema y no es posible insertar nuevos, eliminarlos o modificarlos; los valores predefinidos son:  
+| Código | Descripción |
 |:-:|:--|
-| N.L. | Nessun limite richiesto |   
-| = | Uguale |   
-| x\> | Maggiore |   
-| x\< | Minore |   
-| x \<\> | Diverso |   
-| x\<= | Minore o uguale |   
-| x\>= | Maggiore o uguale |   
-| \<;x;\> | Al di fuori di |   
-| \<;x;\>= | Minore o Maggiore/Uguale |   
-| \<=;x;\> | Minore/uguale o Maggiore |   
-| \<=;x;\>= | Minore/Uguale o Maggiore/Uguale |   
-| \>;x;\< | Strettamente compreso |   
-| \>;x;\<= | Maggiore e Minore o uguale |   
-| \>=;x;\< | Maggiore o uguale e Minore |   
-| \>=;x;\<= | Compreso |   
+| N.L. | Ningún límite requerido (Nessun limite richiesto) |  
+| = | Igual (Uguale) |  
+| x\> | Mayor (Maggiore) |  
+| x\< | Menor (Minore) |  
+| x \<\> | Diferente (Diverso) |  
+| x\<= | Menor o igual (Minore o uguale) |  
+| x\>= | Mayor o igual (Maggiore o uguale) |  
+| \<;x;\> | Fuera de (Al di fuori di) |  
+| \<;x;\>= | Menor o Mayor/Igual (Minore o Maggiore/Uguale) |  
+| \<=;x;\> | Menor/igual o Mayor (Minore/uguale o Maggiore) |  
+| \<=;x;\>= | Menor/Igual o Mayor/Igual (Minore/Uguale o Maggiore/Uguale) |  
+| \>;x;\< | Estrictamente comprendido (Strettamente compreso) |  
+| \>;x;\<= | Mayor y Menor o igual (Maggiore e Minore o uguale) |  
+| \>=;x;\< | Mayor o igual y Menor (Maggiore o uguale e Minore) |  
+| \>=;x;\<= | Comprendido (Compreso) |  
 
-**Ricerca Tipi limite**
+**Búsqueda de tipi limite (Ricerca Tipi limite)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-*Campi specifici*: 
+*Campos específicos*:  
 
-> **Tipo limite**: informazione di sola lettura, è il codice del *Tipo limite*.   
-> **Descrizione tipo**: informazione di sola lettura, è la descrizione del *Tipo limite*.   
-> **Richiede limite minimo**: informazione di sola lettura, indica se è richiesto un limite minimo o inferiore e abilita la colonna *Carattere limite minimo*.   
-> **Richiede limite massimo**: informazione di sola lettura, indica se è richiesto un limite massimo o superiore e abilita la colonna *Carattere limite massimo*.   
-> **Carattere limite minimo**: è possibile indicare un testo per identificare un intervallo tra limite minimo e valore nominale; esempio: *< ≤ > ≥ ≠ =*.   
-> **Carattere limite massimo**: è possibile indicare un testo per identificare un intervallo tra valore nominale e limite massimo; esempio: *< ≤ > ≥ ≠ =*.   
-> **Note**: annotazioni libere.
+> **tipo limite**: información de solo lectura, es el código del *tipo limite*.  
+> **descrizione tipo**: información de solo lectura, es la descripción del *tipo limite*.  
+> **richiede limite minimo**: información de solo lectura, indica si se requiere un límite mínimo o inferior y habilita la columna *carattere limite minimo*.  
+> **richiede limite massimo**: información de solo lectura, indica si se requiere un límite máximo o superior y habilita la columna *carattere limite massimo*.  
+> **carattere limite minimo**: es posible indicar un texto para identificar un intervalo entre el límite mínimo y el valor nominal; ejemplo: *< ≤ > ≥ ≠ =*.  
+> **carattere limite massimo**: es posible indicar un texto para identificar un intervalo entre el valor nominal y el límite máximo; ejemplo: *< ≤ > ≥ ≠ =*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

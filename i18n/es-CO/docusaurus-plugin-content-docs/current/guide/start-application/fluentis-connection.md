@@ -1,20 +1,20 @@
 ---
-title: Accesso a Fluentis
+title: Acceso a Fluentis (Accesso a Fluentis)
 sidebar_position: 1
 ---
 
-Per accedere a **Fluentis** si può usare:
+Para acceder a **Fluentis** se puede usar:
 
-- l'icona che si trova sul desktop e che rappresenta il shortcut per accedere all'applicazione  
-    oppure  
-- dal menu dei Programmi windows con doppio clic su: **Fluentis.Portal.Wpf**.  
+- el ícono que se encuentra en el escritorio y que representa el acceso directo para acceder a la aplicación  
+    o bien  
+- desde el menú de Programas de Windows haciendo doble clic en: **Fluentis.Portal.Wpf**.  
 
-In questo modo si avrà l'accesso alla vista relativa alle credenziali per l'accesso al database.
+De esta manera se tendrá acceso a la vista relacionada con las credenciales para acceder a la base de datos.
 
-**Connessione a database**
+**Conexión a la base de datos (Connessione a database)**
 
-La connessione a **Fluentis** comporta l'inserimento dei dati: *Utente*, *Parola*, nome del *Server* e *Database*.
+La conexión a **Fluentis** implica la entrada de los datos: *utente*, *Contraseña (Parola)*, nombre del *server* y *database*.
 
-Se è stata selezionata l'opzione *Utente predefinito*, il nome del utente e la parola non saranno più richieste perché i dati saranno ripresi automaticamente all'apertura dell'applicazione.
+Si se ha seleccionado la opción *Usuario predeterminado (Utente predefinito)*, el nombre del usuario y la contraseña ya no serán solicitados porque los datos se recuperarán automáticamente al abrir la aplicación.
 
-Confermate con il tasto invio o premendo il pulsante **Connect**.
+Confirmen presionando la tecla enter o haciendo clic en el botón **Conectar (Connect)**.

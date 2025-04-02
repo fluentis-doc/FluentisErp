@@ -1,37 +1,37 @@
 ---
-title: Dichiarazione di non responsabilità
+title: dichiarazione di non responsabilità
 sidebar_position: 1
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Procedure > Dichiarazione di non responsabilità**
+La gestión se encuentra en la ruta **dichiarazione di non responsabilità**
 
-:::important A cosa serve
-Le *Dichiarazione di non responsabilità* sono le clausole per le quali l'azienda non si assume la responsabilità, per esempio a causa di un uso improprio, per i danni causati dal o all'articolo.   Nelle dichiarazioni di non responsabilità possono essere definite quindi le cause che fanno decadere le proprietà dichiarate del prodotto.   
+:::important ¿Para qué sirve? (A cosa serve)
+Las *dichiarazione di non responsabilità* son las cláusulas por las cuales la empresa no se hace responsable, por ejemplo, en caso de uso indebido, por los daños causados por o al artículo. En las declaraciones de no responsabilidad, se pueden definir, por lo tanto, las causas que hacen que se pierdan las propiedades declaradas del producto.
 :::
 
-Un esempio di utilizzo lo troviamo nella stampa **Scheda prodotto** eseguibile dalla **Stampa Scheda tecnica**.
+Un ejemplo de uso lo encontramos en la impresión de la **scheda prodotto** que se puede ejecutar desde la **stampa scheda tecnica**.
 
-Il filtro dati consente di inserire nuove *Dichiarazioni* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+El filtro de datos permite ingresar nuevas *Declaraciones* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.
 
-### ![](/img/neutral/common/search.png) Ricerca Dichiarazione di non responsabilità
+### ![](/img/neutral/common/search.png) Búsqueda de dichiarazione di non responsabilità
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y de una de resultado. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/new.png) Inserimento Dichiarazione di non responsabilità
+### ![](/img/neutral/common/new.png) Ingreso de dichiarazione di non responsabilità
 
-Per poter inserire nuove *Check-list* è necessario premere il pulsante **Nuovo**.   
+Para poder ingresar nuevas *check-list* es necesario presionar el botón **nuovo**.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Dichiarazione di non responsabilità
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de dichiarazione di non responsabilità
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-*Campi specifici*:   
+*Campos específicos*: 
 
-> **Sequenza**: è la sequenza di visualizzazione delle *Dichiarazioni*.   
-> **Tipo**: è il *Tipo di dichiarazione* usata per il scegliere il gruppo di *Dichiarazioni* da riportare in stampa.   
-> **Data inizio validità**: è la data dalla quale la *Dichiarazione* è valida e utilizzabile.   
-> **Data fine validità**: è la data dalla quale la *Dichiarazione* cessa di essere valida e utilizzabile.   
-> **Descrizione**: è la descrizione della *Dichiarazione*.   
-> **Note**: annotazioni libere.   
+> **sequenza**: es la secuencia de visualización de las *Declaraciones*.  
+> **tipo**: es el *Tipo de declaración* utilizada para elegir el grupo de *Declaraciones* que se imprimirán.  
+> **data inizio validità**: es la fecha a partir de la cual la *Declaración* es válida y utilizable.  
+> **data fine validità**: es la fecha a partir de la cual la *Declaración* deja de ser válida y utilizable.  
+> **descrizione**: es la descripción de la *Declaración*.  
+> **note**: anotaciones libres.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

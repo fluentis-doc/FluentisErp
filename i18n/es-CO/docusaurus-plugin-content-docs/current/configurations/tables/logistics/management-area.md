@@ -1,20 +1,20 @@
 ---
-title: Area Gestionale
+title: area gestionale
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Area Gestionale** e permette di gestire la codifica delle diverse *Aree Gestionali*.
+La tabla se encuentra en la ruta **Tablas > Logística > area gestionale** y permite gestionar la codificación de las diferentes *Áreas Gestionale (Aree Gestionali)*. 
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos. 
 
-Un esempio di utilizzo dell'*Area gestionale* lo troviamo nel [Calcolo costo](/docs/controlling/cost-calculation/cost/) o nella [Valorizzazione Distinta Base](/docs/erp-home/registers/production/bill-of-materials/assemblies-valorization/), in cui è possibile effettuare una *Valorizzazione da area gestionale*.
+Un ejemplo de uso del *Área gestionale* lo encontramos en el [Cálculo de costos (Calcolo costo)](/docs/controlling/cost-calculation/cost/) o en la [Valoración de la Lista de Materiales (Valorizzazione Distinta Base)](/docs/erp-home/registers/production/bill-of-materials/assemblies-valorization/), donde es posible realizar una *Valoración desde el área gestionale (Valorizzazione da area gestionale)*.
 
-**Inserimento Area Gestionale**
+**Ingreso del area gestionale (Inserimento Area Gestionale)**
 
-La tabella è composta da due griglie: nella prima si inseriscono **Codice** e **Descrizione**; nella seconda è possibile imputare per ciascuna *Area gestionale* una serie di dati quali la *Categoria fiscale* o il *Tipo costo*. La tabella [Tipo costo](/docs/configurations/tables/logistics/cost-type/) può contenere a sua volta svariate tipologie di costo.
+La tabla está compuesta por dos cuadrículas: en la primera se ingresan **codice** y **descrizione**; en la segunda es posible imputar para cada *Área gestionale* una serie de datos como la *categoria fiscale* o el *tipo costo*. La tabla [Tipo de costo (Tipo costo)](/docs/configurations/tables/logistics/cost-type/) puede contener a su vez varias tipologías de costo.
 
-Per poter inserire nuove codifiche nella griglia superiore è necessario cliccare sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones en la cuadrícula superior es necesario hacer clic en la primera fila vacía o presionar el botón **nuovo**.
 
-Per poter inserire nuove codifiche nella griglia inferiore è necessario selezionare prima l'area gestionale nella griglia superiore e successivamente inserire i dati richiesti sulla sulla prima riga vuota.
+Para poder insertar nuevas codificaciones en la cuadrícula inferior, es necesario primero seleccionar el área gestionale en la cuadrícula superior y luego ingresar los datos requeridos en la primera fila vacía.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

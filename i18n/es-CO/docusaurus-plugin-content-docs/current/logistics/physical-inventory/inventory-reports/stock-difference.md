@@ -1,19 +1,19 @@
 ---
-title: Differenze inventariali
+title: differenze inventariali
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-Il report "Differenze inventariali" di Fluentis è uno strumento fondamentale per il monitoraggio delle discrepanze tra giacenze fisiche e giacenze logiche all'interno del magazzino. Consente agli utenti di identificare e analizzare le differenze emerse durante le fasi di inventario, permettendo così una corretta gestione delle scorte e una tempestiva rettifica delle registrazioni.
+:::important ¿Para qué sirve? (A cosa serve)  
+El informe "differenze inventariali (Differenze inventariali)" de Fluentis es una herramienta fundamental para el monitoreo de las discrepancias entre los inventarios físicos y los inventarios lógicos dentro del almacén. Permite a los usuarios identificar y analizar las diferencias que surgen durante las fases de inventario, facilitando así una correcta gestión de las existencias y una oportuna corrección de los registros.
 
-Ogni differenza evidenziata è accompagnata dalle informazioni relative agli articoli coinvolti, consentendo agli utenti di comprendere l'origine delle discrepanze e di adottare le necessarie misure correttive.
+Cada diferencia resaltada está acompañada de la información relacionada con los artículos involucrados, lo que permite a los usuarios comprender el origen de las discrepancias y adoptar las medidas correctivas necesarias.
 
-La generazione automatica delle registrazioni di rettifica facilita ulteriormente il processo, garantendo che la contabilizzazione delle differenze sia conforme alle normative vigenti. In questo modo, il report non solo contribuisce all'efficienza operativa, ma assicura anche la compliance normativa nelle pratiche di gestione delle scorte.
+La generación automática de los registros de ajuste facilita aún más el proceso, asegurando que la contabilización de las diferencias cumpla con las normativas vigentes. De este modo, el informe no solo contribuye a la eficiencia operativa, sino que también asegura el cumplimiento normativo en las prácticas de gestión de existencias.
 :::
 
-La stampa permette all'utente di visualizzare un report contenente le informazioni relative alle differenze inventariali filtrate.
-Oltre ai dati del magazzino, codice articolo / variante, lotto, ubicazione, numero / anno commessa e cliente / fornitore, sono riportati anche i valori di giacenza fisica e logica dei singoli articoli, inoltre è anche specificata la causale di magazzino che verrà utilizzata per la creazione del movimento di rettifica positiva o negativa a seconda dei casi.
+La impresión permite al usuario visualizar un informe que contiene la información relativa a las diferencias inventariales filtradas.  
+Además de los datos del almacén, código de artículo / variante, lote, ubicación, número / año del pedido y cliente / proveedor, también se informan los valores de inventario físico y lógico de los artículos individuales, además de especificarse la causa de almacén que se utilizará para la creación del movimiento de ajuste positivo o negativo, según corresponda.
 
-Dopo l'inserimento dei filtri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+Después de introducir los filtros deseados, es posible imprimir informes estándar o personalizados (previa mapeo en la gestión de impresiones). En caso de desear imprimir un informe personalizado, es necesario seleccionarlo de la lista en los parámetros de impresión.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

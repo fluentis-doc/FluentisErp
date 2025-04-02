@@ -1,97 +1,91 @@
 ---
-title: Context Panel
+title: context panel
 sidebar_position: 4
 ---
 
-I pannelli contestuali c.d. **Context Panel**, permettono una visualizzazione immediata di informazioni di sintesi circa un determinato oggetto di business di Fluentis.  
+Los paneles contextuales, conocidos como **context panel**, permiten una visualización inmediata de información resumida sobre un determinado objeto de negocio de Fluentis.  
 
-La costruzione di un pannello contestuale (context panel) prevede alcuni step di parametrizzazione, più nello specifico:
-1.  eventuale creazione della dashboard (nel caso il context panel si basi su dashboard).
-2.  creazione del **context panel** dalla relativa form. 
-3.  parametrizzazione del **context panel** e definizione dei relativi legami.
+La construcción de un panel contextual (panel contextual) implica algunos pasos de parametrización, más específicamente:
+1.  posible creación del tablero (en caso de que el panel contextual se base en un tablero).
+2.  creación del **context panel** desde el formulario correspondiente. 
+3.  parametrización del **context panel** y definición de los vínculos relacionados.
 
-Per aprire la form relativa ai **Context Panel**, da **Arm** > **Platform** > **Context Panel**
+Para abrir el formulario relacionado con los **context panel**, ir a **Arm** > **Platform** > **Context Panel**.
 
-La form dei pannelli contestuali è articolata così come segue:  
+El formulario de los paneles contextuales está estructurado de la siguiente manera:  
 
-### Ribbon menu
-Il Ribbon menu contiene i controlli per integrire con la form:
-* Search: per cercare i context panel già definiti in Fluentis. 
-* New: per creare un nuovo context panel.
-* Edit: per modificare un context panel già esistente.
-* View: per visualizzare in modalità read-only un context panel già esistente.
-* Remove: per rimuove ExtraData già presenti in Fluentis.  
+### Menú Ribbon
+El menú Ribbon contiene los controles para interactuar con el formulario:
+* Buscar (Search): para buscar los paneles contextuales ya definidos en Fluentis. 
+* Nuevo (New): para crear un nuevo panel contextual.
+* Editar (Edit): para modificar un panel contextual ya existente.
+* Ver (View): para visualizar en modo de solo lectura un panel contextual ya existente.
+* Eliminar (Remove): para quitar datos extras ya presentes en Fluentis.  
 
-### Corpo Centrale
-Il corpo centrale si compone di una griglia con i seguenti campi:
-* Business Object: obbligatorio - indica l'oggetto su cui si basa il pannello contestuale.
-* Localized Code: facoltativo - indica una descrizione localizzata.
-* Name: Nome.
-* Form: facoltativo - indica la form su cui si basa il pannello contestule.
-* Dashboard: facoltativo - indica la dashboard su cui si basa il pannello contestuale.
-* Report: facoltativo - indica il report su cui si basa in pannello contestuale.
+### Cuerpo Central
+El cuerpo central se compone de una cuadrícula con los siguientes campos:
+* Objeto de negocio (Business Object): obligatorio - indica el objeto sobre el cual se basa el panel contextual.
+* Código localizado (Localized Code): opcional - indica una descripción localizada.
+* Nombre (Name): Nombre.
+* Formulario (Form): opcional - indica el formulario sobre el cual se basa el panel contextual.
+* Tablero (Dashboard): opcional - indica el tablero sobre el cual se basa el panel contextual.
+* Informe (Report): opcional - indica el informe sobre el cual se basa el panel contextual.
 
-## Form di dettaglio
+## Formulario de detalle
 
-La form di dettaglio si compone di n. 3 parti:
+El formulario de detalle se compone de 3 partes:
 
-### Ribbon menu
-Il Ribbon menu contiene esclusivamente il pulsante **Save**, utilizzato per il salvataggio della configurazione.   
+### Menú Ribbon
+El menú Ribbon contiene exclusivamente el botón **save**, utilizado para guardar la configuración.  
 
-### Testata
-Il tab relativo alla testata si compone dei seguenit input/campi:
-* Business Object: obbligatorio - si tratta dell'oggetto di business su cui si basa il pannello contestuale.
-* Localized Code: facoltativo - descrizione localizzata.
-* Name: obbligatorio - descrizione
-* Right: 
-* Type:
-* Dashboard:
-* Definition:
-* Shot in Context Menu:
-* Show in Contextual Panel:
-* Image:
-* Arm Form Context:
-* Order:
-* Default binding definition:
+### Encabezado (Testata)
+La pestaña relativa al encabezado se compone de los siguientes campos:
+* Objeto de negocio (Business Object): obligatorio - se trata del objeto de negocio sobre el cual se basa el panel contextual.
+* Código localizado (Localized Code): opcional - descripción localizada.
+* Nombre (Name): obligatorio - descripción.
+* Derecho (Right): 
+* Tipo (Type): 
+* Tablero (Dashboard): 
+* Definición (Definition): 
+* Mostrar en el menú contextual (Shot in Context Menu): 
+* Mostrar en el panel contextual (Show in Contextual Panel): 
+* Imagen (Image): 
+* Contexto del formulario de Arm (Arm Form Context): 
+* Orden (Order): 
+* Definición de enlace predeterminada (Default binding definition): 
+
+### Pestaña de vínculos (Tab dei Bindings)
+
+***por completar.***
 
 
-### Tab dei Bindings
+# Ejemplo práctico (Esempio applicativo)
+Queremos crear un **panel contextual (pannello contestuale)** que nos muestre el **percentuale d'ammortamento** del activo que seleccionemos.  
+El **percentuale d'ammortamento** se calcula como la relación porcentual entre el fondo de depreciación y el costo histórico del activo.  
 
-***da completare.***
-
-
-# Esempio applicativo
-Vogliamo creare un **pannello contestuale** che ci mostra la **percentuale d'ammortamento** del cespite che selezioniamo
-La **percentuale d'ammortamento** viene calcolata come rapporto percentuale tra il fondo ammortamento ed il costo storico del cespite.  
-
-Per raggiungere questo risultato dobbiamo:
-1. Creare, tramite il **FluentisQueryStudio**, la SQL Query che ci consentirà di recuperare i dati dei cespiti dal database di Fluentis MSSQL.
-2. Creare il datasource che sarà basato sulla query di cui al punto che precede.
-3. definire un parametro nel datasource che servirà come filtro di WHERE per la query in base al cespite selezionato.
-4. creaiamo la dashboard che sarà basata sul datasource creato al punto n. 2.
-5. creare la parametrizzazione in Arm per il pannello contestuale.
-6. aprire la form dei cespiti (Fixed Assets).
+Para alcanzar este resultado debemos:
+1. Crear, mediante **FluentisQueryStudio**, la consulta SQL que nos permitirá recuperar los datos de los activos desde la base de datos de Fluentis MSSQL.
+2. Crear el origen de datos que se basará en la consulta mencionada en el punto anterior.
+3. Definir un parámetro en el origen de datos que servirá como filtro de WHERE para la consulta según el activo seleccionado.
+4. Crear el tablero que se basará en el origen de datos creado en el punto 2.
+5. Crear la parametrización en Arm para el panel contextual.
+6. Abrir el formulario de los activos fijos (Fixed Assets).
 ---
-1. Per l'utilizzo di **FluentisQueryStudio** si rimanda all'apposita documentazione dedicata.  
+1. Para el uso de **FluentisQueryStudio**, se remite a la documentación dedicada.  
 
 ```SQL
 SELECT * FROM Fluentis.FI_FixedAssets WHERE FIFA_Id = @ID
 ```
-dove, ```@ID``` è un parametro che definiamo successivamente a livello di **DataSource**.  
+donde, ```@ID``` es un parámetro que definimos posteriormente a nivel de **DataSource**.  
 
-2. Creiamo il datasource basato sulla query di cui al punto precedente; per la creazione di DataSource si rimanda all'apposita documentazione.   
+2. Creamos el origen de datos basado en la consulta mencionada en el punto anterior; para la creación del origen de datos se remite a la documentación dedicada.   
 
+Arrastramos en la pestaña ***Propiedad Visible (Visible property)*** las propiedades de nuestro interés, tales como: **Id**, **description**, **Código (Code)**, **Total Monto (TotalAmount)**, **Total Depreciación (TotalDepreciation)**, **Monto Neto (NetAmount)**.  
 
-Trasciniamo nel tab ***Visible property*** le proprietà di nostro interesse quali: **Id**, **Description**, **Code**, **TotalAmount**, **TotalDepreciation**, **NetAmount**.  
+1. Definimos, a través de la pestaña **parámetros (parameters)**, un parámetro en el origen de datos recién creado.
 
-1. Definiamo, attraverso il tab **parameters**,  un parametro nel datasource appena creato.
+1. Desde Fluentis, procedemos a crear el tablero; para todos los detalles relativos a los tableros, se remite a la documentación dedicada.  
 
-)
+2. Desde Arm, creamos la parametrización para el **context panel**.  
 
-1. Da Fluentis, procediamo a creare la dashboard; per tutti i dettagli relativi alle dashboard si rimanda all'apposita documentazione dedicata.  
-
-2. Da Arm, creiamo la parametrizzazione per il **context panel**.  
-
-
-
-3. Procediamo a selezionare un record dalla form dei cespiti; verrà quindi mostrata sul pannello contestuale la percentuale di ammortamento del cespite.  
+3. Procedemos a seleccionar un registro desde el formulario de los activos; entonces se mostrará en el panel contextual el porcentaje de depreciación del activo.

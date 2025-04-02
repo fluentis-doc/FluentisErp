@@ -1,16 +1,16 @@
 ---
-title: Nuova Distinta Base 
+title: nuova distinta base
 sidebar_position: 1
 ---
 
-**Introduzione**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
+**Introducción (Introduzione)**: [Lista de Materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
 
-La procedura di creazione di un **Nuovo** si apre tramite il percorso:
+El procedimiento para crear un **nuovo** se abre a través de la ruta:
 
-**Produzione > Distinte Base > Distinte Base**, cliccando sul pulsante presente nella ribbon bar;
+**Producción (Produzione) > Listas de Materiales (Distinte Base) > Listas de Materiales (Distinte Base)**, haciendo clic en el botón presente en la barra de herramientas (ribbon bar); 
 
-oppure
+o 
 
-**Produzione > Distinte Base > Nuova distinta base**
+**Producción (Produzione) > Listas de Materiales (Distinte Base) > Nueva lista de materiales (Nuova distinta base)**
 
-Con entrambe le procedure si aprirà la form [Distinta Base](structure-management) composta da una sezione nella quale si andranno a definire le caratteristiche obbligatorie dell'assieme e da una sezione composta da diversi tab che ne raggruppano le caratteristiche specifiche.
+Con ambos procedimientos se abrirá el formulario [Lista de Materiales (Distinta Base)](structure-management) compuesto por una sección en la que se definirán las características obligatorias del conjunto y por una sección compuesta por varias pestañas que agrupan las características específicas.

@@ -1,34 +1,33 @@
 ---
-title: Mappa ubicazioni per articolo
+title: mappa ubicazioni per articolo
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La funzionalità "Mappa ubicazioni per articolo" di Fluentis consente una gestione ottimale delle scorte, fornendo una visualizzazione chiara e dettagliata delle ubicazioni di ciascun articolo all'interno del magazzino. Grazie a questa mappa, gli utenti possono facilmente associare articoli specifici a ubicazioni designate, facilitando così operazioni di stoccaggio e prelievo.
+:::important ¿Para qué sirve? (A cosa serve)
+La funcionalidad "mappa ubicazioni per articolo" de Fluentis permite una gestión óptima de los inventarios, proporcionando una visualización clara y detallada de las ubicaciones de cada artículo dentro del almacén. Gracias a este mapa, los usuarios pueden asociar fácilmente artículos específicos a ubicaciones designadas, facilitando así las operaciones de almacenamiento y extracción.
 
-Attraverso un'interfaccia intuitiva, è possibile inserire nuovi articoli e definire variabili chiave come il magazzino di riferimento, la priorità di stoccaggio, e le quantità minime e massime. La mappa permette anche di identificare quale ubicazione è predefinita per ogni articolo, ottimizzando il processo di inventario e migliorando l'efficienza operativa.
+A través de una interfaz intuitiva, es posible ingresar nuevos artículos y definir variables clave como el almacén de referencia, la prioridad de almacenamiento, y las cantidades mínimas y máximas. El mapa también permite identificar cuál es la ubicación predeterminada para cada artículo, optimizando el proceso de inventario y mejorando la eficiencia operativa.
 
-Questa funzionalità è particolarmente utile per le aziende che desiderano mantenere il controllo sulla disposizione fisica dei propri prodotti, assicurando sia una più efficace organizzazione del magazzino sia una perfetta tracciabilità degli articoli.
+Esta funcionalidad es particularmente útil para las empresas que desean mantener el control sobre la disposición física de sus productos, asegurando tanto una organización más efectiva del almacén como una perfecta trazabilidad de los artículos.
 :::
 
-Questa form permette di associare un'ubicazione di default ad un articolo.
+Este formulario permite asociar una ubicación predeterminada a un artículo.
 
-Si compone di una form di filtro dove è possibile visualizzare l'elenco di tutti gli articoli a cui è stata associata un'ubicazione di default.
-Premendo il pulsante *Nuovo*, l'operatore può inserire un articolo nell'area della testata e poi all'interno della tabella *Mappa ubicazioni articoli* andare ad indicare il magazzino e l'ubicazione di default.
+Consta de un formulario de filtro donde es posible visualizar la lista de todos los artículos a los que se les ha asociado una ubicación predeterminada.  
+Al presionar el botón *nuovo*, el operador puede ingresar un artículo en el área del encabezado y luego en la tabla *mappa ubicazioni articoli* indicar el almacén y la ubicación predeterminada.
 
-Per ciascun articolo è possibile indicare i seguente parametri:
-- **Magazzino**: indica il magazzino dell'ubicazione di default;     
-- **Descrizione magazzino**: indica la descrizione del magazzino dell'ubicazione di default;    
-- **Priorità**: indica la priorità dell'ubicazione di default; 
+Para cada artículo, es posible indicar los siguientes parámetros:
+- **magazzino**: indica el almacén de la ubicación predeterminada;  
+- **descrizione magazzino**: indica la descripción del almacén de la ubicación predeterminada;  
+- **priorità**: indica la prioridad de la ubicación predeterminada;  
 
-:::note **ATTENZIONE**
-Le procedure prenderanno in considerazione solamente l'ubicazione con priorità più bassa.
-L'ubicazione indicata avrà la priorità anche sull'ubicazione indicata nelle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates).
+:::note **ATENCIÓN (ATTENZIONE)** 
+Los procedimientos solo tomarán en cuenta la ubicación con la prioridad más baja.  
+La ubicación indicada tendrá prioridad también sobre la ubicación indicada en las [Causas de almacén (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates).
 :::
 
-- **Scorta minima**: indica il valore di scorta minima dell'ubicazione di default;    
-- **Scorta massima**: indica il valore di scorta massima dell'ubicazione di default;    
-- **Ubicazione**: indica il codice dell'ubicazione di default.
+- **scorta minima**: indica el valor de stock mínimo de la ubicación predeterminada;  
+- **scorta massima**: indica el valor de stock máximo de la ubicación predeterminada;  
+- **ubicazione**: indica el código de la ubicación predeterminada.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

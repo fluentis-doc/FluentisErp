@@ -1,49 +1,40 @@
 ---
-title: Registri iva
+title: registri iva
 sidebar_position: 9
 ---
 
-La stampa dei registri IVA deve essere effettuata singolarmente per ogni registro: non è consentita la stampa complessiva di tutti i registri del periodo.
+La impresión de los registros IVA debe realizarse individualmente para cada registro: no se permite la impresión total de todos los registros del periodo.
 
-**Periodo IVA**: All'apertura della maschera questo potrà essere il mese precedente all'attuale nel caso di periodo mensile oppure il trimestre nel caso in cui la periodicità della liquidazione impostata nei parametri di contabilità sia appunto trimestrale;
+**periodo iva**: Al abrir la máscara, este puede ser el mes anterior al actual en caso de un periodo mensual, o el trimestre en caso de que la periodicidad de la liquidación configurada en los parámetros de contabilidad sea trimestral;  
 
-**Anno di riferimento**: viene proposto di default l'anno in corso;
+**anno di riferimento**: por defecto se propone el año en curso;  
 
-**Registro IVA da stampare**: selezionare il registro da stampare;
+**Registro IVA a imprimir (Registro IVA da stampare)**: seleccionar el registro a imprimir;  
 
-**Divisione**: non è normalmente da utilizzare, a maggior ragione se non sono presenti varie divisioni;
+**divisione**: generalmente no se debe utilizar, especialmente si no hay varias divisiones presentes;  
 
-**Riepilogativo**: il flag permette di stampare, sul registro selezionato tramite l'apposito campo, un riepilogo dei registri e dei relativi codici iva movimentati nel mese o trimestre selezionato;
+**riepilogativo**: el indicador permite imprimir, en el registro seleccionado a través del campo correspondiente, un resumen de los registros y los códigos IVA relacionados movimentados en el mes o trimestre seleccionado;  
 
+Los campos siguientes muestran cuál es el último número de la página impresa para el registro establecido: estos datos se toman de la tabla de registri iva.
 
+El indicador **visualizza intestazione** está configurado por defecto: se desactivaba cuando se debían validar los formularios DDT en los que se imprimen los registros, un requisito que ya no se prevé. Con este indicador se menciona el nombre del registro IVA, de la empresa y el número/año de las páginas.
 
-I campi successivi visualizzano qual è l'ultimo numero della pagina stampata per il registro impostato: questo dato viene ripreso dalla tabella Registri IVA.
+El indicador **visualizza tipo documento** añadirá, en los referencias de los documentos, también el tipo del documento: esto puede ser útil en caso de que las facturas de venta tengan múltiples numeraciones que correspondan al mismo registro IVA.
 
-Il flag **Visualizza intestazione** è già impostato di default: si toglieva quando si dovevano far vidimare i moduli DDTti sui quali stampare i registri, obbligo che non è più previsto. Con questo flag viene riportato il nome del registro IVA, della società e il numero/anno delle pagine.
+**registrazione titolo**: cuando el indicador de Resumen (Riepilogativo) no está activo, es posible imponer un título a la impresión diferente del nombre del registro IVA que aparece por defecto.
 
-Il flag **Visualizza tipo documento** farà aggiungere, nei riferimenti dei documenti, anche il tipo del documento: può servire nel caso in cui le fatture di vendita abbiano più numerazioni che fanno capo allo stesso registro IVA.
+El título del registro se toma del nombre del registro IVA y será el que se muestre en la impresión con la opción 'Mostrar encabezado (Visualizza intestazione)'.
 
-**Registrazione titolo**: quando il flag Riepilogativo non è attivo è possibile imporre un titolo alla stampa differente rispetto al nome del registro iva che compare per default
+**Mensual / Trimestral (Mensile / Trimestrale)**: los dos indicadores recuperan la configuración de la periodicidad IVA definida en los parámetros de contabilidad para memoria, pero la configuración no se puede modificar desde aquí;  
 
-Il titolo del registro viene ripreso dal nome del registro IVA e sarà quello riportato in stampa con l'opzione 'Visualizza intestazione'.
+Activando el indicador **definitiva**, el proceso imprimirá los registros en definitivo bloqueando el periodo seleccionado para futuras modificaciones: también se desactivará el filtro por división. La ejecución de la vista previa de impresión en definitivo no bloqueará el periodo ni actualizará los contadores: solo la ejecución del proceso de impresión física operará el bloqueo del periodo/registro en contabilidad y actualizará el contador de páginas de la tabla de registri iva (y no es relevante que el proceso de impresión tenga éxito o no, podría ser incluso una impresión en archivo). Al realizar la impresión o la vista previa, la aplicación verificará si hay huecos en la protocolización y si se ha respetado el orden cronológico, bloqueando la impresión definitiva a menos que para el registro IVA se haya desactivado el indicador de control en la tabla. La impresión definitiva NO es necesaria para proceder con la impresión de la liquidación IVA periódica.
 
-**Mensile / Trimestrale**: i due flag riprendono l'impostazione della periodicità iva definità nei parametri di contabilità per memoria ma il settaggio non è modificabile da qui;
-
- 
-
-Attivando il flag **Definitiva** la procedura andrà a stampare i registri in definitivo bloccando il periodo selezionato per ulteriori modifiche: sarà inoltre disabilitato il filtro per divisione. L'esecuzione dell'anteprima di stampa in definitivo non andrà a bloccare il periodo e aggiornare i contatori: solo l'esecuzione del processo di stampa fisica andrà ad operare il blocco del periodo/registro in contabilità e ad aggiornare il contatore delle pagine della tabella Registri IVA (e non è rilevante che il processo di stampa vada a buon fine o meno, potrebbe essere anche una stampa su file). Eseguendo la stampa o l'anteprima, l'applicativo andrà a verificare se ci sono buchi nella protocollazione e se l'ordine cronologico è stato rispettato, bloccandone la stampa definitiva a meno che per il registro IVA non sia stato disabilitato il flag di controllo in tabella. La stampa definitiva NON è necessaria per procedere alla stampa della liquidazione IVA periodica.
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del registro IVA. |
-| Stampa | Pulsante per eseguire la stampa fisica del registro IVA. |
+| Vista Previa (Anteprima) | Botón para ejecutar la vista previa de impresión del registro IVA. |
+| Impresión (Stampa) | Botón para ejecutar la impresión física del registro IVA. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important Vea También (Vedi Anche)
+[**TUTORIALS DE VIDEO SOBRE IMPRESIONES FISCALES (VIDEO TUTORIALS SULLE STAMPE FISCALI)**](/docs/video/finance/intro)
 :::
-
-
-

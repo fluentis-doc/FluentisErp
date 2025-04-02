@@ -1,24 +1,23 @@
 ---
-title: Stampa Situazione portafoglio effetti
+title: stampa situazione portafoglio effetti
 sidebar_position: 2
 ---
 
-Da questa form è possibile stampare, secondo i filtri di ricerca impostati:
+Desde este formulario es posible imprimir, según los filtros de búsqueda establecidos:
 
-- **Avviso scadenza effetti**: Lettera indirizzata al cliente che evidenzia gli effetti in scadenza con relativi riferimenti
-- **Lettera di cumulo**:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
-- **Portafoglio effetti:** Stampa una lista di effetti con evidenza dei dati principali relativi
-- **Situazione castelletti:** Stampa per ogni banca la situazione del castelletto concesso, utilizzato e residuo
+- **avviso scadenza effetti**: Carta dirigida al cliente que destaca los efectos a vencer con los respectivos detalles.
+- **lettera di cumulo**: Carta dirigida al cliente que resalta las partidas o facturas adquiridas en cada efecto.
+- **portafoglio effetti**: Imprime una lista de efectos destacando los datos principales relacionados.
+- **situazione castelletti**: Imprime para cada banco la situación del crédito concedido, utilizado y restante.
 
+## Filtros de búsqueda (Filtri di ricerca)
 
-## Filtri di ricerca
+Son los mismos filtros presentes en el formulario de búsqueda [**effetti**](/docs/treasury/bills-holding/bills), 
 
-Sono i medesimi filtri presenti nella form di ricerca [**Effetti**](/docs/treasury/bills-holding/bills)
+a los cuales se añaden:
 
-ai quali si aggiungono:
+- **Banco (código) (Banca (codice)) / Descripción del Banco (Descrizione Banca) / Código ABI (Codice ABI) / Código CAB (Codice CAB)**: campos referidos a la sección *Apoyo bancario* presente dentro del efecto (banco de apoyo del deudor).
 
-- **Banca (codice) / Descrizione Banca / Codice ABI / Codice CAB:** campi riferito alla sezione *Appoggio bancario* presente all'interno dell'effetto (banca d'appoggio del debitore)
-
-- **Banca presentazione:** campo riferito alla sezione *Estremi presentazione*, campo *Banca presentazione*, presente all'interno dell'effetto
-- **Tipo distinta:** campo riferito all'omonimo campo *Tipo* presente nella testata della distinta di presentazione in cui è inserito l'effetto 
-- **DA / A / data / Numero Distinta**: riferiti alla distinta di presentazione in cui è inserito l'effetto
+- **banca presentazione**: campo referido a la sección *estremi presentazione*, campo *banca presentazione*, presente dentro del efecto.
+- **tipo distinta**: campo referido al campo homónimo *Tipo* presente en el encabezado del listado de presentación en el que se inserta el efecto.
+- **DE / A / fecha (DA / A / data) / Número de listado (Numero Distinta)**: referidos al listado de presentación en el que se inserta el efecto.

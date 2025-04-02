@@ -1,13 +1,13 @@
 ---
-title: Categorie provvigionali
+title: Categorías de comisiones (Categorie provvigionali)
 sidebar_position: 3
 ---
 
-In questa form si definisco le categorie provvigionali, ovvero una sorta di "extra data" per la definizione dei criteri di lettura delle percentuali di provvigione.
+En este formulario se definen las categorías de comisiones, es decir, una especie de "datos adicionales" para la definición de los criterios de lectura de los porcentajes de comisión.
 
-E' possibile dunque definire l'oggetto del business layer e la sua proprietà che serve da parametro di lettura e nella griglia inferiore speicifcare una condizione di filtro per la validità.
+Por lo tanto, es posible definir el objeto de la capa de negocio y su propiedad que sirve como parámetro de lectura y, en la cuadrícula inferior, especificar una condición de filtro para la validez.
 
-Esempio **Oggetto** -> FSSalesOrder
-**Percorso Proprietà** -> SalesOrderTypeCode (il codice del tipo ordine di vendita)
+Ejemplo **oggetto** -> FSSalesOrder  
+**percorso proprietà** -> SalesOrderTypeCode (el código del tipo de pedido de venta)
 
-Griglia inferiore specificare **Valore** *OCIT* (esempio per limitare la validità al tipo ordine codificato *OCIT* , esempio ordine Italia)
+En la cuadrícula inferior, especificar **valore** *OCIT* (ejemplo para limitar la validez al tipo de pedido codificado *OCIT*, ejemplo pedido Italia)

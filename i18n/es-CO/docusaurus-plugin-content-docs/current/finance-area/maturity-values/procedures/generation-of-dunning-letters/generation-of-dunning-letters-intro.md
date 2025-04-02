@@ -1,30 +1,29 @@
 ---
-title: Generazione solleciti
+title: generazione solleciti
 sidebar_position: 1
 ---
 
-Da questa maschera si procederà alla generazione solleciti con la caratteristica di poter impostare un livello di sollecito che andrà oltre l'ordine logico di priorità che invece caratterizza la generazione automatica solleciti. 
-E' possibile inoltre selezionare manualmente le partite da sollecitare dopo averle filtrate avendo di fatto un maggiore controllo sull'operazione.
+Desde esta máscara se procederá a la generación de avisos con la característica de poder establecer un nivel de aviso que irá más allá del orden lógico de prioridad que caracteriza la generación automática de avisos.  
+También es posible seleccionar manualmente las partidas a avisar después de filtrarlas, teniendo así un mayor control sobre la operación.
 
+Para proceder, es necesario, en la parte inferior de la máscara, asignar la fecha de creación de los avisos y seleccionar el tipo de aviso (previamente codificado en la tabla *Tipos de avisos*) desde el cuadro combinado.  
+Opcionalmente, se puede atribuir un nivel de aviso específico (a través del cuadro combinado ***N. avisos***) para forzar la creación más allá del orden lógico de prioridad. Normalmente, de hecho, las partidas que nunca han sido avisadas tendrán el aviso de prioridad 1; aquellas ya avisadas pasarán a un nuevo aviso de prioridad 2 y así sucesivamente para las siguientes.
 
-Per procedere è necessario, nella parte inferiore della maschera, assegnare la data di creazione dei solleciti e selezionare il tipo di sollecito (precedentemente codificato nella tabella *Tipi solleciti*) dalla combo box.
-Opzionale è invece l'attribuzione di uno specifico livello di sollecito (tramite la combo box ***N. solleciti***), al fine di forzare la creazione oltre l'ordine logico di priorità. Normalmente, infatti, le partite mai sollecitate avranno il sollecito di priorità 1, quelle già sollecitate passeranno ad un nuovo sollecito di priorità 2 e via di seguito per le successive.
+La fecha del aviso influye en la creación ya que debe respetar los parámetros presentes en la tipología del aviso y en el número del aviso, como los días de retraso y los *días* que determinan la fecha límite del aviso anterior.  
+Si la fecha del aviso no es válida con respecto a los parámetros para la partida seleccionada, el comando de creación no ejecutará ningún aviso.
 
-La data del sollecito influisce sulla creazione inquanto deve rispettare i parametri presenti nella tipologia del sollecito e nel numero del sollecito quali i giorni di ritardo ed i *giorni* che determinano la scadenza dell'eventuale sollecito precedente.
-Se la data sollecito non è valida rispetto ai parametri per la partita selezionata, il comando di creazione non eseguirà alcun sollecito.
+CAMPOS DE FILTRO:
 
-CAMPI DI FILTRO:
+**Cuenta / subcuenta (Conto / sottoconto)**: referido al titular de las partidas.
 
-**Conto / sottoconto:** riferito all'intestatario delle partite
+**agente**: para filtrar el agente que está dentro del registro del cliente.
 
-**Agente:** per filtrare l’agente che è dentro l’anagrafica cliente
+**Agente de partidas avisadas (Agente da partite sollecitate)**: filtra las partidas con el agente indicado en la partida, dado que se valora en la contabilización de facturas de venta con el agente principal presente en el documento, es decir, aquel con el monto más alto en caso de múltiples agentes valorizados.
 
-**Agente da partite sollecitate:** filtra le partite con l’agente inserito nella partita, dato che a sua volta si valorizza alla contabilizzazione fatture di vendita con l’agente principale presente nel documento ovvero quello con importo più alto nel caso di più agenti valorizzati.
+CAMPOS RELATIVOS A LAS PARTIDAS A BUSCAR:
+Nro Documento, Posición de la partida, De / A Fecha del documento, De / A Fecha de vencimiento, año de la partida, número ... Tipo de documento, Categoría administrativa (en registro del cliente), Tipo de pago.
 
-CAMPI RELATIVI ALLE PARTITE DA RICERCARE:
-Nr Documento, Posizione partita, Da / A Data documento, Da / A data scadenza, anno partita, numero ... Tipo documento, Categoria amministrativa (in anagrafica cliente), Tipo pagamento
+CAMPOS RELATIVOS A LAS REFERENCIAS DEL ANTERIOR AVISO SOBRE PARTIDAS YA AVISADAS:
+Tipo de aviso (Tipo Sollecito), DE / A fecha del aviso (data sollecito), DE / A Fecha de vencimiento (solicitud), Número de aviso, Referencia...
 
-CAMPI RELATIVI AI RIFERIMENTI SOLLECITO PRECEDENTE SU PARTITE GIA? SOLLECITATE
-Tipo Sollecito, DA / A data sollecito, DA / A Data scadenza (sollecito), Numero sollecito, Riferimento...
-
-TIPO PARTITE: Flag per estrarre non solo le classiche partite attive clienti ma anche quelle riferite ad esempio ai fornitori ecc....
+TIPO DE PARTIDAS: Indicador para extraer no solo las clásicas partidas activas de clientes, sino también aquellas relacionadas, por ejemplo, con proveedores, etc...

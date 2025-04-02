@@ -1,6 +1,6 @@
 ---
-title: Causali di magazzino
+title: causali di magazzino
 sidebar_position: 8
 ---
 
-Per le società che hanno il *Controlling* attivo, all'interno delle causali di magazzino è visibile un flag di gestione dei [***CENTRI DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), che consente di valorizzare automaticamente i centri presenti nel documento all'interno delle registrazioni di magazzino di carico/scarico.
+Para las empresas que tienen el *Controlling* activo, dentro de las causales de almacén se puede ver un indicador de gestión de los [***CENTROS DE COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), que permite valorar automáticamente los centros presentes en el documento dentro de los registros de almacén de carga/descarga.

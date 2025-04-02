@@ -1,43 +1,43 @@
 ---
-title: Registrazioni movimenti fisici 
+title: registrazioni movimenti fisici
 sidebar_position: 1
 ---
 
-La maschera delle ***Registrazioni Movimenti Fisici*** è il punto dove possiamo inserire o visualizzare i dati delle grandezze fisiche che utilizzeremo per le elaborazioni del *Controlling*, per i driver che si basano su grandezza fisica piuttosto che per il calcolo delle tariffe dei centri su quantità.
-Per alcune unità di misura, come ad esempio i metri quadri occupati dai vari centri per ripartire costi di un immobile aziendale, l'inserimento sarà effettuato manualmente ad inizio anno, caricando i dati nella form o magari duplicando i valori dell'anno precedente tramite l'apposito pulsante; per altri tipi di grandezze fisiche, come potrebbero essere le ore macchina o ore uomo, la tabella potrebbe essere valorizzata tramite la procedura di ***Ripresa dati da produzione*** che va a totalizzare, periodo per periodo, i dati delle Dichiarazioni di produzione o le ore di attività su Progetto; ulteriore possibilità è il caricamento da foglio excel attraverso il modello *PhysicalMovingControlling - Movimenti Fisici Controlling* disponibile tra le Importazioni on demand di ***Bizlink***.
+La máscara de **registrazioni movimenti fisici*** es el punto donde podemos ingresar o visualizar los datos de las magnitudes físicas que utilizaremos para los análisis de *Controlling*, para los indicadores que se basan en magnitudes físicas en lugar de en el cálculo de tarifas de los centros por cantidad. 
+Para algunas unidades de medida, como por ejemplo los metros cuadrados ocupados por los diversos centros para repartir los costos de un inmueble empresarial, la inserción se realizará manualmente al inicio del año, cargando los datos en el formulario o quizás duplicando los valores del año anterior a través del botón correspondiente; para otros tipos de magnitudes físicas, como podrían ser las horas de máquina o horas hombre, la tabla podría ser completada mediante el procedimiento de **ripresa dati da produzione*** que totaliza, período por período, los datos de las Declaraciones de producción o las horas de actividad en Proyecto; otra posibilidad es la carga desde una hoja de Excel a través del modelo *PhysicalMovingControlling - Movimientos Físicos Controlling* disponible entre las Importaciones a demanda de ***Bizlink***.
 
-I campi disponibili nella griglia superiore sono i seguenti:
+Los campos disponibles en la cuadrícula superior son los siguientes:
 
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento del dato
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia del dato
 
-- l'[***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
+- la [***Unidad de medida***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
 
-- la ***Distribuzione periodi*** da utilizzare, che è un campo obbligatorio per le Unità di misura di *Flusso*. Si tratta di indicare a ***FluentisERP*** come suddividere nei singoli periodi il dato inserito per un range di questi
+- la ***Distribución de períodos*** a utilizar, que es un campo obligatorio para las Unidades de medida de *Flujo*. Se trata de indicar a ***FluentisERP*** cómo dividir en los distintos períodos el dato ingresado para un rango de estos
 
-- la ***Data*** di registrazione del movimento quantitativo
+- la ***Fecha*** de registro del movimiento cuantitativo
 
-- l'***Anno***  di riferimento
+- el ***Año*** de referencia
 
-- il range ***Periodo da***  e ***Periodo a*** di riferimento delle quantità inserite
+- el rango de ***Período desde*** y ***Período hasta*** de referencia de las cantidades ingresadas
 
-- il campo ***Stato***, non editabile, che indica se la riga è stata caricata manualmente o che tipo di origine ha
+- el campo ***Estado***, no editable, que indica si la línea ha sido cargada manualmente o de qué tipo de origen tiene
 
-Nella griglia sottostante andremo poi ad inserire i dettagli delle quantità, in particolare valorizzando:
-- il [***Centro di origine***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) del movimento
+En la cuadrícula inferior se deben ingresar los detalles de las cantidades, en particular valorando:
+- el [***Centro de origen***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) del movimiento
 
-- il ***Progetto destinazione***, se sono quantità dirette su un progetto
+- el ***Proyecto destino***, si las cantidades están dirigidas a un proyecto
 
-- il [***Centro destinazione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), cioè il centro per il quale il *Centro di origine* precedente ha lavorato per queste quantità
+- el [***Centro destino***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), es decir, el centro para el cual el *Centro de origen* anterior ha trabajado para estas cantidades
 
-:::tip Esempio
-Quando una persona delL'ufficio tecnico, ad esempio, prepara i dettagli tecnici di un preventivo ad uso del commerciale, avremo il centro dell'Ufficio tecnico come *Centro di origine* e il centro Commerciale come *Centro destinazione*.
-I [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) con ***Tipo distribuzione*** 10-Reversione su produzione a tariffa standard, 11-Reversione diretta a tariffa standard, 12-Reversione su produzione a tariffa calcolata fanno riferimento alle quantità dei centri di origine e/o destinazione
+:::tip Ejemplo
+Cuando una persona del departamento técnico, por ejemplo, prepara los detalles técnicos de un presupuesto para uso comercial, tendremos el centro del Departamento técnico como *Centro de origen* y el centro Comercial como *Centro de destino*.
+Los [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) con ***Tipo de distribución*** 10-Reversión sobre producción a tarifa estándar, 11-Reversión directa a tarifa estándar, 12-Reversión sobre producción a tarifa calculada hacen referencia a las cantidades de los centros de origen y/o destino.
 :::
 
-- la ***Quantità*** valida per la riga
+- la ***Cantidad*** válida para la línea
 
-- una eventuale ***Nota*** libera di riga
+- una posible ***Nota*** libre de línea
 
-- i campi ***Precodice***, ***Numero*** e ***Descrizione*** del cespite legato alla riga inserita (valorizzato ad esempio per i cespiti utilizzati in produzione, se si usano ammortamenti a quantità)
+- los campos ***Precodigo***, ***Número*** y ***Descripción*** del activo relacionado con la línea ingresada (valorados, por ejemplo, para los activos utilizados en producción, si se utilizan amortizaciones por cantidad)
 
-- la ***Divisione*** di riferimento della riga, interessante in società con più Divisioni attive
+- la ***División*** de referencia de la línea, interesante en empresas con más Divisiones activas

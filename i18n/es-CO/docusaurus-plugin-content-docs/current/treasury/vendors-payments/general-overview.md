@@ -1,42 +1,38 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo pagamenti fornitori si utilizza principalmente per creare **distinte di pagamento**, tipicamente per **bonifico bancario**: il modulo, infatti, prevede la possibilità dell'invio telematico del tracciato **SEPA** (.xml) dei pagamenti per bonifico.
+El módulo de pagos a proveedores se utiliza principalmente para crear **listas de pago (distinte di pagamento)**, típicamente para **transferencia bancaria (bonifico bancario)**: el módulo, de hecho, prevé la posibilidad del envío telemático del archivo **SEPA** (.xml) de los pagos por transferencia.
 
-E' possibile inoltre gestire tracciati per **distinte SDD** (Sepa Direct Debit) un formato che ha sostituito, a livello europeo, le precedenti distinte R.i.d. utilizzate per le autorizzazioni di addebito automatico in conto corrente.
+Además, es posible gestionar archivos para **listas SDD (Sepa Direct Debit)**, un formato que ha sustituido, a nivel europeo, las anteriores listas R.i.d. utilizadas para las autorizaciones de débito automático en cuenta corriente.
 
-Il modulo consente inoltre di importare telematicamente gli **avvisi di pagamento per le ricevute bancarie passive** e procedere quindi con la loro autorizzazione e pagamento, tramite invio alla banca del flusso di ritorno con le ricevute autorizzate, quindi completare la procedura con la contabilizzazione automatica dei pagamenti eseguiti.
+El módulo también permite importar telemáticamente los **avisos de pago para las recibos bancarias pasivas (ricevute bancarie passive)** y proceder con su autorización y pago, mediante el envío al banco del flujo de retorno con los recibos autorizados, completando así el procedimiento con la contabilización automática de los pagos realizados.
 
-Si procede alla creazione di una nuova distinta di pagamento andando a prelevare i dati dalle partite aperte fornitori presenti , direttamente interfacciandosi con il modulo amministrativo: sarà possibile procedere alla contabilizzazione dei movimenti relativi, con la chiusura delle partite relative inserite nella distinta di pagamento e lo storno del relativo saldo a livello contabile.
+Se procede a la creación de una nueva lista de pago recuperando los datos de las partidas abiertas de proveedores presentes, interfacándose directamente con el módulo administrativo: será posible proceder con la contabilización de los movimientos relacionados, cerrando las partidas correspondientes incluidas en la lista de pago y cancelando el saldo relativo a nivel contable.
 
+**Tablas Preliminares para utilizar el módulo (Tabelle Preliminari per utilizzare il modulo)**:
 
+- **Registros asociados a tipo de cuenta bancaria (Anagrafiche associate a tipo conto Banca)**: necesarios para titular la lista, el tipo de cuenta bancaria se pobló durante el procedimiento de Fast Start.  
+- Causales contables a utilizar para la contabilización: son las normales de pago a proveedores que se crean en el procedimiento de Fast Start.  
+- Tabla Tipos de pago: a llamar en el encabezado de la lista, tabla ya poblada por el procedimiento de Fast Start.  
+- Numeración de pagos a proveedores: para definir los numeradores asociados, tabla ya poblada por el Fast Start.  
 
-**Tabelle Preliminari per utilizzare il modulo**:
+**parametri**:  
 
-- **Anagrafiche associate a tipo conto Banca**: necessarie per intestare la distinta, il tipo conto Banca viene popolato alla procedura di Fast Start
-- Causali contabili da utilizzare per la contabilizzazione: sono quelle normali di pagamento fornitore che vengono create dalla procedura di Fast Start
-- Tabella Tipi pagamento: da richiamare in testata distinta, tabella già popolata dalla procedura di Fast Start
-- Numerazione pagamenti fornitori: per definire i numeratori associati, tabella già popolata dal fast Start
-
- 
-
-**Parametri**:   
-
-[Parametri pagamenti fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters).
+[Parámetros de pagos a proveedores (Parametri pagamenti fornitore)](/docs/configurations/parameters/treasury/vendor-payments-parameters).
 
 ---
 
-| Funzione | Significato | Link Video Tutorial |
+| Función (Funzione) | Significado (Significato) | Link Video Tutorial |
 | --- | --- | --- |
-|  [Blocco partite passive](/docs/treasury/vendors-payments/procedures/block-passive-maturity-values)  | Pulsante per  procedere alla gestione massiva dei blocchi delle partite passive. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
-|  **Creazione automatica pagamento fornitori** | Pulsante per la creazione automatica di un pagamento fornitore. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
-|  [Gestione appoggi pagamenti](/docs/treasury/vendors-payments/procedures/payments-support-management)  | Pulsante per gestire gli appoggi bancari dei pagamenti. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
-|  [Contabilizzazione](/docs/finance-area/professional-men/accounting/payments-accounting/filter)  | Pulsante per procedere alla contabilizzazione dei pagamenti fornitore. | <a href="https://youtu.be/CDCVq0iC29s&amp;t=5m40s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+| [Bloqueo de partidas pasivas (Blocco partite passive)](/docs/treasury/vendors-payments/procedures/block-passive-maturity-values) | Botón para proceder a la gestión masiva de los bloqueos de las partidas pasivas. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+| **Creación automática de pago a proveedores (Creazione automatica pagamento fornitori)** | Botón para la creación automática de un pago a proveedor. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+| [Gestión de apoyos de pagos (Gestione appoggi pagamenti)](/docs/treasury/vendors-payments/procedures/payments-support-management) | Botón para gestionar los apoyos bancarios de los pagos. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+| [Contabilización (Contabilizzazione)](/docs/finance-area/professional-men/accounting/payments-accounting/filter) | Botón para proceder con la contabilización de los pagos a proveedores. | <a href="https://youtu.be/CDCVq0iC29s&amp;t=5m40s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
 
 ---
- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DkxoWgTkvUg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DkxoWgTkvUg" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

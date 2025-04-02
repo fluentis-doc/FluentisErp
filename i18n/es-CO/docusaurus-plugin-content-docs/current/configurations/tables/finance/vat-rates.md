@@ -1,126 +1,125 @@
 ---
-title: Aliquote IVA
+title: Tarifas de IVA (Aliquote IVA)
 sidebar_position: 1
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Si se desea configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-Questa tabella è comune a tutte le società presenti nella base dati e presenta la lista delle aliquote IVA applicabili in tutto il gestionale.
+Esta tabla es común a todas las empresas presentes en la base de datos y presenta la lista de las tarifas de IVA aplicables en todo el sistema de gestión.
 
-Si tratta di una tabella precaricata sulla quale l'utente abilitato può operare per modificare o aggiungere quanto fosse necessario per l'attività della società.
+Se trata de una tabla precargada sobre la cual el usuario autorizado puede operar para modificar o agregar lo necesario para la actividad de la empresa.
 
-### Griglia principale
+### Rejilla principal (Griglia principale)
 
-**Codice / Descrizione**: codice e relativa descrizione per richiamare l'aliquota iva che si sta parametrizzando numerico, di identificazione dell'aliquota.
+**codice / descrizione**: código y su respectiva descripción para llamar a la tarifa de IVA que se está parametrizando, numérico, de identificación de la tarifa.
 
-**Descrizione secondaria**: ulteriore descrizione che può essere utilizzata per report di stampa personalizzati ecc... (normalmente non necessaria)
+**descrizione secondaria**: descripción adicional que puede ser utilizada para reportes de impresión personalizados, etc. (normalmente no necesaria).
 
-**Percentuale**: definisce la percentuale IVA da applicare. Per i codici di esenzione, esclusione e non imponibilità occorre impostare 0.
+**percentuale**: define el porcentaje de IVA a aplicar. Para los códigos de exención, exclusión y no imponibilidad, se debe establecer en 0.
 
-**Cat. IVA**: richiama le tipologie di IVA fisse previste dal gestionale. La tipologia è molto importante, ad esempio, per la totalizzazione dei vari movimenti nella comunicazione trimestrale delle liquidazioni IVA e più in generale per tutti i dichiarativi IVA. Le opzioni disponibili per la localizzazione italiana sono:
-    - *Aliquota*
-    - *Non imponibile*
-    - *Esente*
-    - *Escluso*
-    - *74 ter CEE*, per le agenzie viaggio
-    - *74 ter FUORI CEE*, per le agenzie viaggio
-    - *74 ter PARTE CEE*, per le agenzie viaggio
-    - *74 ter PARTE FUORI CEE*, per le agenzie viaggio
+**cat. iva**: llama a los tipos de IVA fijos previstos por el sistema de gestión. La tipología es muy importante, por ejemplo, para la totalización de los diversos movimientos en la comunicación trimestral de liquidaciones de IVA y, más en general, para todos los declaranos de IVA. Las opciones disponibles para la localización italiana son:
+- *Tarifa (Aliquota)*
+- *No imponible (Non imponibile)*
+- *Exento (Esente)*
+- *escluso*
+- *74 ter CEE*, para las agencias de viaje
+- *74 ter FUORI CEE*, para las agencias de viaje
+- *74 ter PARTE CEE*, para las agencias de viaje
+- *74 ter PARTE FUORI CEE*, para las agencias de viaje
 
-**Perc. indetraibilità**: definisce la percentuale di indetraibilità da applicare all'imposta. Verrà riportata all'interno della registrazione contabile nella sezione IVA ai fini del calcolo effettiva della quota indetraibile, può essere modificata o forzata direttamente nella registrazione. 
+**% Indetraibilidad (Perc. indetraibilità)**: define el porcentaje de indetraibilidad que se aplicará al impuesto. Se registrará en la contabilidad dentro de la sección de IVA para el cálculo efectivo de la parte indeducible; se puede modificar o forzar directamente en el registro. 
 
-**Plafond**: il flag definisce quali aliquote sono collegate alle dichiarazioni di intento: solo le aliquote che hanno questo flag attivo rendono visibile, nella griglia iva della registrazione contabile, il combo box di collegamento delle dichiarazioni di intento. 
+**plafond**: el indicador define qué tarifas están vinculadas a las declaraciones de intención: solo las tarifas que tienen este indicador activo hacen visible, en la rejilla de IVA del registro contable, el combo box de vinculación de las declaraciones de intención. 
 
-ATTENZIONE: il flag è irrilevante per la gestione delle dichiarazioni di intento nel ciclo documentale in acquisto/vendita: qui è rilevante solo quello che viene impostato dentro il rispettivo registro delle dichiarazioni di intento emesse / ricevute.
+ATENCIÓN: el indicador es irrelevante para la gestión de las declaraciones de intención en el ciclo documental de compra/venta: aquí solo es relevante lo que se establece dentro de su respectivo registro de declaraciones de intención emitidas / recibidas.
 
-Ai fini del calcolo del plafond generale, inoltre, questo flag identifica l’aliquota che "**consuma**" mese per mese il nostro plafond generale disponibile in qualità di esportatori abituali (dentro la procedura di gestione plafond), quindi lato acquisti.
+A efectos del cálculo del plafón general, además, este indicador identifica la tarifa que "**consume (consuma)**" mes a mes nuestro plafón general disponible en calidad de exportadores habituales (dentro del procedimiento de gestión de plafón), por lo tanto, en el lado de compras.
 
-**Vendita Estera per Plafond**: con questo flag si identificano le aliquote iva, presenti nelle registrazioni di vendita dell’anno yyyy, che **incrementano** il nostro plafond disponibile per l’anno yyyy+1 in qualità di esportatore abituale.
+**vendita estera per plafond**: con este indicador se identifican las tarifas de IVA, presentes en los registros de venta del año yyyy, que **incrementan (incrementano)** nuestro plafón disponible para el año yyyy+1 en calidad de exportador habitual.
 
-**In dich. IVA**: il flag imposta quali aliquote siano da gestire nella dichiarazione/comunicazione trimestrale delle liquidazioni IVA e più in generale in tutti i dichiarativi IVA. Esempio: tipicamente i codici corrispondenti alla categoria IVA *Escluso* avranno il presente flag <u>non</u> attivo, mentre le *aliquote*, gli *esenti* ed i *non imponibili* avranno il flag attivo in quanto devono essere inseriti nei dichiarativi iva. (Cfr le istruzioni ministeriali della dichiarazione iva annuale o della comunicazione trimestrale delle liquidazioni).
+**En declaración de IVA (In dich. IVA)**: el indicador establece qué tarifas deben ser gestionadas en la declaración/comunicación trimestral de liquidaciones de IVA y más en general en todos los declaraciones de IVA. Por ejemplo: típicamente, los códigos correspondientes a la categoría de IVA *Excluido* tendrán este indicador <u>no</u> activo, mientras que las *tarifas*, los *exentos* y los *no imponibles* tendrán el indicador activo dado que deben ser incluidos en las declaraciones de IVA. (Consulte las instrucciones ministeriales de la declaración anual de IVA o de la comunicación trimestral de liquidaciones).
 
-**Non Intra**: il flag imposta le aliquote che, pur essendo utilizzate in documenti (nei moduli fatture acquisti/vendite) o in registrazioni di tipo intra-cee, non vanno considerate tali. Viene letto nella creazione automatica dei riepiloghi Intrastat.
+**non intra**: el indicador establece las tarifas que, aunque se utilicen en documentos (en los formularios de facturas de compras/ventas) o en registros de tipo intra-CEE, no deben considerarse tales. Se lee en la creación automática de los resúmenes Intrastat.
 
-**Rep. San Marino**: il flag determina quali siano le aliquote utilizzate nelle operazioni con San Marino (Obsoleto, comunicazione abrogata).
+**Rep. San Marino (Rep. San Marino)**: el indicador determina cuáles son las tarifas utilizadas en las operaciones con San Marino (Obsoleto, comunicación abrogada).
 
-**% IVA Agr. Detr.**: il campo imposta la percentuale di indetraibilità compensativa fissa dell'aliquota in caso di movimento in regime agricolo.
+**% IVA Agrícola Detr. (% IVA Agr. Detr.)**: el campo establece el porcentaje de indetraibilidad compensativa fija de la tarifa en caso de movimiento en régimen agrícola.
 
-**Consenti IVA 0 in LG**: il flag impone la registrazione di righe IVA con importo 0 sia dare che avere nel Libro giornale. La [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) causale contabile d'utilizzo, comunque, deve prevedere lo stesso tipo di autorizzazione delle righe a 0.
+**consenti iva 0 in lg**: el indicador obliga al registro de líneas de IVA con un monto de 0 tanto en debe como en haber en el Libro diario. La [**causal contable**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) de uso contable, debe prever el mismo tipo de autorización para las líneas a 0.
 
-**Import oro argento**: il flag consente di impostare quali aliquote vadano riepilogate nei campi previsti nella Comunicazione IVA annuale. (Da considerare attualmente obsoleto)
+**Importe oro plata (Import oro argento)**: el indicador permite establecer qué tarifas deben ser resumidas en los campos previstos en la Comunicación anual de IVA. (Considerar actualmente obsoleto).
 
-**Import rottami**: il flag consente di impostare quali aliquote vadano riepilogate nei campi previsti nella Comunicazione IVA annuale. (Da considerare attualmente obsoleto)
+**Importe chatarra (Import rottami)**: el indicador permite establecer qué tarifas deben ser resumidas en los campos previstos en la Comunicación anual de IVA. (Considerar actualmente obsoleto).
 
-**Non in spesometro**: il flag consente di escludere dallo *spesometro* i movimenti IVA collegati a questa aliquota. (Da considerare attualmente obsoleto)
+**non in spesometro**: el indicador permite excluir de la *spesometro* los movimientos de IVA vinculados a esta tarifa. (Considerar actualmente obsoleto).
 
-**Codice PA**: In questo campo va inserito il codice previsto per la fatturazione elettronica tra privati e verso la pubblica amministrazione nei casi in cui non sia presente l'iva (esenzione, esclusione, non imponibilità). Per il dettaglio dei codici previsti Cfr. alle specifiche tecniche della fattura elettronica pubblicate sul sito dell'Agenzia delle Entrate.
+**Código PA (Codice PA)**: En este campo debe ingresarse el código previsto para la facturación electrónica entre privados y hacia la administración pública en casos en los que no esté presente el IVA (exención, exclusión, no imponibilidad). Para el detalle de los códigos previstos, consulte las especificaciones técnicas de la factura electrónica publicadas en el sitio de la Agencia de Ingresos.
 
-**Escludi da Dichiarazione di intento**: flag attualmente non utilizzato in concreto da alcuna procedura. Sviluppato per impostare, eventualmente, che l'aliquota iva corrispondente, con flag attivo, non possa essere sovrascritta dal codice iva impostato nel registro dichiarazioni di intento come codice da utilizzare per le operazioni in esenzione a fronte di dichiarazione di intento.
+**escludi da dichiarazione di intento**: indicador actualmente no utilizado en concreto por ningún procedimiento. Desarrollado para establecer que la tarifa de IVA correspondiente, con el indicador activo, no puede ser sobrescrita por el código de IVA establecido en el registro de declaraciones de intención como código a utilizar para operaciones en exención en función de la declaración de intención.
 
-**Escludi da causale automatica**: attivando questo flag il codice iva corrispondente non viene riportato all'interno di scritture contabili generate in automatico in quanto collegate alla causale contabile principale tramite il campo *Causale automatica*.
-
-:::note  Nota
-L'utilizzo del flag diventa **fondamentale** in un caso in particolare: si pensi al ricevimento di una **fattura d'acquisto "mista"**, in cui il fornitore ha fatturato parte **in reverse charge** e parte in regime ordinario. Pertanto sulla parte ordinaria si avrà la detrazione dell'iva sull'acquisto, mentre la quota parte in reverse charge risulterà neutra in quanto registrata sia sul registro acquisti, sia sul registro vendite. Differenziando opportunamente i codici iva utilizzati, ad esempio creando un codice "Reverse charge misto quota detraibile" ed attivando il presente flag su detto codice, se nella registrazione principale lato acquisto saranno imputate le somme corrispondenti ai due codici (es. 22 per la quota in reverse charge e "Reverse charge misto....") nel giroconto creato automaticamente soltanto il codice 22 sarà riportato, generando in automatico la detrazione soltanto sulla quota esclusa dal meccanismo di reverse charge.
-:::
-
-**IVA per causali automatiche**: questo campo serve per forzare un particolare codice iva nella registrazione contabile generata automaticamente (es un giroconto per reverse charge) rispetto a quello usato nella registrazione principale (es. quella lato acquisto nel reverse charge).
+**escludi da causale automatica**: al activar este indicador, el código de IVA correspondiente no se incluye en los registros contables generados automáticamente ya que están vinculados a la causal contable principal a través del campo *Causal automática*.
 
 :::note Nota
-L'utilizzo del campo diventa **fondamentale** in un caso in particolare: si pensi al ricevimento di una **fattura di acquisto in reverse charge con iva parzialmente o totalmente indetraibile**. Di default il software imposterebbe lo stesso codice iva anche nel giroconto lato vendita e la percentuale di indetraibilità determina di fatto una "non imponibilità" per pari quota. Dunque di fatto l'effetto sarebbe sempre neutro. Per esercitare la detrazione limitata occorre invece che tutta l'iva lato vendite sia imponibile, rimanendo così un costo la quota indetraibile sul lato acquisti. Per evitare di entrare manualmente nella registrazione di giroconto generata automaticamente a correggere il codice iva (ad esempio il 2250 che presenta una detrazione limitata al 50%) rimettendo un codice 22, è possibile impostare il presente campo che in automatico provvederà alla correzione.
+El uso del indicador se vuelve **fundamental** en un caso particular: pensemos en la recepción de una **factura de compra "mixta"**, en la que el proveedor ha facturado parte **en reverse charge** y parte en régimen ordinario. Por lo tanto, en la parte ordinaria se tendrá la deducción del IVA en la compra, mientras que la parte en reverse charge resultará neutra ya que se registra tanto en el registro de compras como en el registro de ventas. Al diferenciar adecuadamente los códigos de IVA utilizados, por ejemplo creando un código "Reverse charge mixto cuota deducible" y activando este indicador en dicho código, si en el registro principal del lado de compra se imputan las cantidades correspondientes a los dos códigos (ej. 22 para la parte en reverse charge y "Reverse charge misto...."), en la contrapartida creada automáticamente solo se informará el código 22, generando automáticamente la deducción solo sobre la parte excluida del mecanismo de reverse charge.
 :::
 
-**Data fine validità**: il codice non sarà più utilizzabile dopo la data che viene impostata, utile per bloccare l'utilizzo di codici non più in vigore.
+**IVA para causales automáticas (IVA per causali automatiche)**: este campo se utiliza para forzar un código de IVA particular en el registro contable generado automáticamente (por ejemplo, un giroconto para reverse charge) en comparación con el que se utiliza en el registro principal (por ejemplo, el del lado de compra en el reverse charge).
 
-**Base per conteggio bollo**: poiché il bollo in fattura viene inserito in automatico solo quando si è in presenza di codici iva esenti, esclusi o non imponibili (viene rilevata la *Categoria IVA* del codice stesso) e la fattura supera un certo importo (impostato nella tabella dell'anagrafica della società) il significato di questo flag è di andare a gestire alcune casistiche che, seppur esenti o non imponibili o escluse, fanno eccezione e non prevedono l'applicazione del bollo. In questi casi pertanto il flag dovrà essere disattivato.
-
-NOTA: in caso di errata attivazione del flag su codici di tipo Aliquota prevale comunque la lettura della categoria IVA e pertanto il bollo NON viene inserito.
-
-**Reverse charge**: vedere [**qui**](/docs/finance-area/particular-cases/mixed-reverse-charge)
-
-**Iva del margine / Iva del margine di riferimento**: vedere [**qui**](/docs/finance-area/particular-cases/VAT_regime-del-maine)
-
-###  Tipo contab IVA  
-
-in questa sezione è possibile definire per ogni aliquota IVA uno o più sottoconti per l'IVA acquisti/vendite (necessità tipicamente connessa a localizzazioni non italiane, ad esempio dei paesi dell'est Europa, dove vi è l'obbligo di rilevare contabilmente su sottoconti separati l'applicazione di iva ridotta, piuttosto che normale o maggiorata).
-E' inoltre possibile abbinare detti conti ad un *Tipo contabilizzazione IVA* da codificare nell'apposita  [**tabella**](/docs/configurations/tables/finance/vat-accounting-types) , attribuito al cliente/fornitore all'interno dell'anagrafica, o previsto di default nei [**parametri generali di contabilità**](/docs/configurations/parameters/finance/accounting-parameters)
-
-**Tipo / Descr. contab. IVA**: codice /descrizione del tipo di contabilizzazione IVA (campo non obbligatorio).
-
- **Conto acquisti**: il conto di acquisto da proporre per questo tipo di contabilizzazione IVA.
-
-**Sottoconto acquisti**: il sottoconto di acquisto da proporre per questo tipo di contabilizzazione IVA.
-
-**Descrizione**: descrizione del sottoconto di acquisto da proporre per questo tipo di contabilizzazione IVA.
-
-**Conto vendite**: il conto di vendita da proporre per questo tipo di contabilizzazione IVA.
-
-**Sottoconto vendite**: il sottoconto di vendita da proporre per questo tipo di contabilizzazione IVA.
-
-**Descrizione**: descrizione del sottoconto di vendita da proporre per questo tipo di contabilizzazione IVA.
-
-### Note 
-
-**Codice**: codice, numerico, di identificazione dell'aliquota.
-
-**Note**: eventuali note da aggiungere. 
-
-### Specifiche per Dichiarazione 
-
-In questa sezione è possibile parametrizzare i vari codici iva, utilizzati nelle registrazioni contabili, in modo tale da ottenere un report di stampa (da creare al bisogno tramite il report designer integrato in Fluentis) che rappresenti un fac-simile di Dichiarazione annuale iva.
-Il report aggregherà i vari codici iva utilizzati durante l'anno in modo da esporre i vari totali da riportare nei righi della dichiarazione fiscale.
-Occorre pertanto abbinare ad ogni codice iva il corretto rigo della dichiarazione dove dovrà essere inserito, riferendosi alle istruzioni ministeriali ed alle logiche specifiche del dichiarativo in oggetto, alle quali si rinvia.
-
-**Operazioni**: Richiamare tramite la combo box il tipo di operazione: Attiva, passiva o Reverse charge al fine di distinguere la quota parte di operazioni iva inserite con il codice corrispondente da inserire nei righi del dichiarativo riferiti agli acquisti, vendite oppure reverse charge.
-
-**Riga dichiarazione fiscale / Descrizione**: Richiamare tramite la combo box il rigo (codice e descrizione) della dichiarazione iva da associare (l'elenco è precaricato e non modificabile dall'utente).
-  
-### VIDEO TUTORIALS
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS ALIQUOTE IVA**](/docs/video/finance/intro)
+:::note Nota
+El uso del campo se vuelve **fundamental** en un caso en particular: pensemos en la recepción de una **factura de compra en reverse charge con IVA parcialmente o totalmente indetrachable**. De forma predeterminada, el software establecería el mismo código de IVA también en el giroconto del lado de la venta, y el porcentaje de indetraibilidad determina de hecho una "no imponibilidad" para la parte proporcional. Por lo tanto, el efecto sería siempre neutro. Para ejercer la deducción limitada, es necesario que todo el IVA del lado de las ventas sea imponible, dejando así un costo la parte indetrachable en el lado de las compras. Para evitar tener que ingresar manualmente en el registro de giroconto generado automáticamente para corregir el código de IVA (por ejemplo, el 2250 que presenta una deducción limitada al 50%) volviendo a establecer un código 22, se puede establecer este campo que automáticamente realizará la corrección.
 :::
- 
+
+**data fine validità**: el código no será más utilizable después de la fecha establecida, útil para bloquear el uso de códigos que ya no están vigentes.
+
+**base per conteggio bollo**: dado que el impuesto en factura se inserta automáticamente solo cuando hay códigos de IVA exentos, excluidos o no imponibles (se considera la *Categoría IVA* del código mismo) y la factura supera un cierto monto (establecido en la tabla del registro de la empresa), el significado de este indicador es gestionar algunos casos que, aunque exentos o no imponibles o excluidos, son excepcionales y no prevén la aplicación del impuesto. En estos casos, por lo tanto, el indicador debe desactivarse.
+
+NOTA: en caso de activación incorrecta del indicador en códigos de tipo Tarifa, prevalece la lectura de la categoría de IVA y, por lo tanto, el impuesto NO se inserta.
+
+**Reverse charge**: ver [**aquí**](/docs/finance-area/particular-cases/mixed-reverse-charge).
+
+**IVA del margen / IVA del margen de referencia**: ver [**aquí**](/docs/finance-area/particular-cases/VAT_regime-del-maine).
+
+### Tipo contable de IVA (Tipo contab IVA)  
+
+En esta sección es posible definir para cada tarifa de IVA una o más subcuentas para el IVA de compras/ventas (necesidad típicamente conectada a localizaciones no italianas, por ejemplo, de los países del este de Europa, donde hay la obligación de contabilizar separadamente la aplicación de IVA reducida, en comparación con la normal o aumentada). 
+También es posible asociar dichas cuentas a un *Tipo de contabilización de IVA* que se codificará en la correspondiente [**tabla**](/docs/configurations/tables/finance/vat-accounting-types), asignado al cliente/proveedor dentro del registro, o previsto por defecto en los [**parámetros generales de contabilidad**](/docs/configurations/parameters/finance/accounting-parameters).
+
+**Tipo / Descripción contable de IVA (Tipo / Descr. contab. IVA)**: código / descripción del tipo de contabilización de IVA (campo no obligatorio).
+
+**conto acquisti**: la cuenta de compras a proponer para este tipo de contabilización de IVA.
+
+**sottoconto acquisti**: la subcuenta de compras a proponer para este tipo de contabilización de IVA.
+
+**descrizione**: descripción de la subcuenta de compras a proponer para este tipo de contabilización de IVA.
+
+**conto vendite**: la cuenta de ventas a proponer para este tipo de contabilización de IVA.
+
+**sottoconto vendite**: la subcuenta de ventas a proponer para este tipo de contabilización de IVA.
+
+**descrizione**: descripción de la subcuenta de ventas a proponer para este tipo de contabilización de IVA.
+
+### Notas (Note)
+
+**codice**: código, numérico, de identificación de la tarifa.
+
+**note**: notas adicionales para agregar. 
+
+### Especificaciones para la Declaración (Specifiche per Dichiarazione)
+
+En esta sección es posible parametrizar los diversos códigos de IVA, utilizados en los registros contables, de manera que se obtenga un reporte de impresión (a crear cuando sea necesario a través del diseñador de reportes integrado en Fluentis) que represente un facsímil de la Declaración anual de IVA.
+El reporte agregará los diversos códigos de IVA utilizados durante el año para exponer los diversos totales a reportar en los renglones de la declaración fiscal.
+Por lo tanto, es necesario asociar a cada código de IVA el renglón correcto de la declaración donde debe ser insertado, refiriéndose a las instrucciones ministeriales y a las lógicas específicas de la declaración en cuestión.
+
+**operazioni**: Llamar a través del combo box el tipo de operación: Activa, pasiva o Reverse charge para distinguir la parte de operaciones de IVA ingresadas con el código correspondiente que se incluirá en los renglones del formulario referidos a compras, ventas o reverse charge.
+
+**Renglón de declaración fiscal / Descripción (Riga dichiarazione fiscale / Descrizione)**: Llamar a través del combo box el renglón (código y descripción) de la declaración de IVA para asociar (la lista está precargada y no es modificable por el usuario).
+
+### VIDEO TUTORIALES
+
+:::important Ver También (Vedi Anche)
+[**VIDEO TUTORIALES TARIFAS DE IVA**](/docs/video/finance/intro)
+:::

@@ -1,94 +1,96 @@
 ---
-title: Categorie Documenti di origine esterna
+title: categorie documenti di origine esterna
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Categorie Documenti di origine esterna**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Documentos > categorie documenti di origine esterna**.
 
-:::important A cosa serve
-I dati presenti in questa tabella sono utilizzati per catalogare le diverse tipologie dei Documenti di origine esterna.   
-I dati inseriti in queste griglie verranno riportati nella creazione dei Documenti di origine esterna.   
-Un esempio di utilizzo lo troviamo nella gestione **Documenti di origine esterna**.
+:::important ¿Para qué sirve? (A cosa serve)
+Los datos presentes en esta tabla se utilizan para catalogar los diferentes tipos de Documentos de origen externa.   
+Los datos ingresados en estas cuadrículas se reflejarán en la creación de Documentos de origen externa.  
+Un ejemplo de uso se encuentra en la gestión de **Documentos de origen externa**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite agregar nuevos registros o buscar aquellos que ya existen para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Categorie Documenti di origine esterna**
+**Búsqueda de categorie documenti di origine esterna**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Categorie Documenti di origine esterna**
+**Ingreso de categorie documenti di origine esterna**
 
-Per poter inserire nuovi *Categorie Documenti di origine esterna* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder ingresar nuevas *categorie documenti di origine esterna*, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**.   
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-**Duplica Categorie Documenti di origine esterna**
+**Duplicar categorie documenti di origine esterna**
 
-Per poter duplicare una *Categoria Documento* esistente in una nuova *Categoria Documento* è necessario cliccare nella griglia sulla *Categoria Documento* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** e **Descrizione** della nuova *Categoria Documento* (dati entrambe obbligatori).   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+Para duplicar una *Categoría de Documento* existente en una nueva *Categoría de Documento*, es necesario hacer clic en la cuadrícula sobre la *Categoría de Documento* de la cual se desea duplicar y presionar el botón **duplica**.   
+Se mostrará una solicitud de **codice** y **descrizione** de la nueva *Categoría de Documento* (ambos datos son obligatorios).   
+Luego, presione el botón **OK** o el botón **cancel** si desea continuar con la actividad de duplicación o no.
 
-## Categorie Documenti di origine esterna
+## categorie documenti di origine esterna
 
-E' l'elenco dove vengono inserite le informazioni principali della *Categoria Documento*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Categoria**: è il codice della *Categoria Documento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria Documento*.   
-> **Archivio**: in questo campo viene assegnato il magazzino dove trovare la categoria specifica.   
-> **Ubicazione**: indica la posizione fisica abituale della *Categoria*; è possibile scegliere solo le *Ubicazioni* facenti parte dell'*Archivio* selezionato.   
-> **Ubicazione descrittiva**: se la posizione non è codificata, è possibile inserirla manualmente in questo campo libero.   
-> **Periodo di conservazione**: contiene un periodo di conservazione da inserire manualmente.   
-> **Funzione responsabile**: contiene la *Funzione aziendale* responsabile della *Categoria*.   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan las principales informaciones de la *Categoría de Documento*.   
+La lista se compone de la siguiente información:   
+> **Categoría**: es el código de la *Categoría de Documento*.   
+> **descrizione categoria**: es la descripción de la *Categoría de Documento*.   
+> **Archivo**: en este campo se asigna el almacén donde se puede encontrar la categoría específica.   
+> **Ubicación**: indica la posición física habitual de la *Categoría*; sólo se pueden seleccionar las *Ubicaciones* que forman parte del *Archivo* seleccionado.   
+> **Ubicación descriptiva**: si la posición no tiene un código, se puede ingresar manualmente en este campo libre.   
+> **Período de conservación**: contiene un período de conservación que debe ingresarse manualmente.   
+> **Función responsable**: contiene la *Función empresarial* responsable de la *Categoría*.   
+> **Notas**: anotaciones libres.
 
-### Lista di distribuzione
+### Lista de distribución
 
-In questo elenco è possibile associare: *Funzioni aziendali*, *Dipendenti*, *Clienti/Fornitori* e *Contatti* che abitualmente ricevono copia della *Categoria Documento* selezionata ed indicare le metodologie abituali di ricezione del documento.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funzione aziendale* destinataria.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* destinataria.   
+En esta lista se pueden asociar: *Funciones empresariales*, *Empleados*, *Clientes/Proveedores* y *Contactos* que habitualmente reciben copia de la *Categoría de Documento* seleccionada e indicar las metodologías habituales de recepción del documento.   
+La lista se compone de la siguiente información:   
+> **Función empresarial**   
+>> **Código**: es el código de la *Función empresarial* destinataria.   
+>> **Descripción**: es la descripción de la *Función empresarial* destinataria.   
 >
-> **Dipendente**   
->> **Codice**: è il codice del dipendente* destinatario.   
->> **Cognome**: è il cognome del dipendente* destinatario.   
->> **Nome**: è il nome del dipendente* destinatario.   
+> **Empleado**   
+>> **Código**: es el código del *empleado* destinatario.   
+>> **Apellido**: es el apellido del *empleado* destinatario.   
+>> **Nombre**: es el nombre del *empleado* destinatario.   
 >
-> **Cliente/Fornitore**   
->> **Descrizione**: è la ragione sociale del *Cliente/Fornitore* destinatario.   
+> **Cliente/Proveedor**   
+>> **Descripción**: es la razón social del *Cliente/Proveedor* destinatario.   
 >
-> **Contatto**   
->> **Codice**: è il codice del *Contatto* destinatario.   
->> **Descrizione**: è la descrizione del *Contatto* destinatario.   
+> **Contacto**   
+>> **Código**: es el código del *Contacto* destinatario.   
+>> **Descripción**: es la descripción del *Contacto* destinatario.   
 >
-> **Altro destinatario**   
->> **Descrizione**: è la libera descrizione di un destinatario non codificato.   
+> **Otro destinatario**   
+>> **Descripción**: es la descripción libre de un destinatario no codificado.   
 >
-> **Dati per la consegna**   
->> **Cartacea**: indica che al momento della distribuzione (procedura interna alla gestione *Documenti di origine esterna*) il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
->> **Metodo di consegna**: indica la metodologia di consegna abituale della *Categoria Documento*.   
->> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
->> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
->> **Note**: annotazioni libere.   
+> **Datos para la entrega**   
+>> **cartacea**: indica que en el momento de la distribución (procedimiento interno de gestión de *Documentos de origen externa*) el sujeto desea recibir copia *En papel* del documento o en adjunto por *Email*.   
+>> **Método de entrega**: indica la metodología habitual de entrega de la *Categoría de Documento*.   
+>> **Email**: indica un email de destino, si no está codificado en el registro del destinatario.   
+>> **Número de copias**: indica el número de copias en papel que el destinatario desea recibir.   
+>> **Notas**: anotaciones libres.   
 
-*Pulsanti specifici*:      
-**Nuovo destinatario**: inserisce una nuova riga in elenco.   
-**Cancella destinatario**: cancella la riga selezionata dall'elenco.   
+*Botones específicos*:      
+**nuovo destinatario**: inserta una nueva línea en la lista.   
+**cancella destinatario**: elimina la línea seleccionada de la lista.   
 
-### Accesso consentito alle funzioni
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
-Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+### Acceso permitido a las funciones
 
-*Pulsanti specifici*:      
-**Nuova funzione di accesso**: inserisce una nuova riga in elenco.   
-**Cancella funzione di accesso**: cancella la riga selezionata dall'elenco.   
+En esta lista se pueden ingresar las *Funciones empresariales* a las que se les otorgarán derechos de acceso.   
+Si no se introducen líneas en esta tabla, entonces el acceso está permitido a todos.   
+La lista se compone de la siguiente información:   
+> **Función**: es el código de la *Función empresarial*.   
+> **Descripción de función**: es la descripción de la *Función empresarial*.   
+> **Notas**: anotaciones libres.
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Documento di origine esterna*.   
-Questi *Extra data* vengono ereditati nel *Documento esterno* di quella determinata categoria.   
+*Botones específicos*:      
+**nuova funzione di accesso**: inserta una nueva línea en la lista.   
+**cancella funzione di accesso**: elimina la línea seleccionada de la lista.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Datos extra (Extra data)
+
+Es posible ingresar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Documento de origen externa*.   
+Estos *Datos extras* se heredan en el *Documento externo* de esa determinada categoría.   
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

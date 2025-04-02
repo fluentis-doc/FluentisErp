@@ -1,58 +1,58 @@
 ---
-title: Tipi controllo articolo
+title: tipi controllo articolo
 sidebar_position: 9
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi Controllo articolo**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Controles de artículo > tipi controllo articolo (Tabelle > Qualità > Controlli articolo > Tipi Controllo articolo)**.
 
-In questa tabella è possibile codificare i *Tipi controllo articolo*.   
-Il *Tipo controllo articolo* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco del *Controllo articolo*.
-Alcuni esempi di utilizzo di *Tipi controllo articolo* li troviamo nelle gestioni:
-> **Importa articoli da controllare** - nei *dati di testata*;   
-> **Controlli articolo** - nell'elenco dei *dati di testata*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Controllo articolo*.
+En esta tabla es posible codificar los *tipi controllo articolo*.  
+El *Tipo de control de artículo* es parte integral, junto con el *Año* y el *Número*, del código único del *Control de artículo*.  
+Algunos ejemplos de uso de *tipi controllo articolo* los encontramos en las gestiones:  
+> **importa articoli da controllare** - en los *dati di testata*;  
+> **controlli articolo** - en la lista de *dati di testata*;  
+> **certificati di analisi** - en la pestaña *controlli e valori rilevati*;  
+> **Parámetros de controles de artículo (Parametri Controlli articolo)** - en la pestaña *generale*;  
+y en todas las gestiones donde se utiliza el *Control de artículo*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi controllo articolo**
+**Búsqueda de tipos de control de artículo (Ricerca Tipi controllo articolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi controllo articolo**
+**Inserción de tipos de control de artículo (Inserimento Tipi controllo articolo)**
 
-Per poter inserire nuovi *Tipi controllo articolo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi controllo articolo*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## Tipi controllo articolo
+## tipi controllo articolo (Tipi controllo articolo)
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi controllo articolo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo controllo**: è il codice del *Tipo controllo articolo*.   
-> **Descrizione tipo controllo**: è la descrizione del *Tipo controllo articolo*.   
-> **Magazzino**: è il codice del *Magazzino* che viene proposto in *Controllo articoli > Prove > Magazzino*;   
-è il *Magazzino* di controllo qualità utilizzato per movimentare gli articoli, una volta controllati, nel rispettivo *Magazzino* conforme e non conforme (se impostato come contropartita nella rispettiva *Causale*).   
-> **Causale scarico articoli non conformi**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli non conformi*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli non conformi, una volta controllati, nel rispettivo *Magazzino* non conforme;   
-la *Causale* di contropartita non è obbligatoria se non si desidera gestire un *Magazzino* scarti o di reintegro dopo successivo ricondizionamento o rilavorazione dell'articolo controllato.   
-> **Causale scarico articoli conformi**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli conformi*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli conformi, una volta controllati, nel rispettivo *Magazzino* conforme;   
-è auspicabile impostare la relativa *Causale* di contropartita per rendere nuovamente disponibile l'articolo conforme una volta controllato.   
-> **Causale scarico prove distruttive**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli non conformi* se la *Prova* è di tipo *Distruttiva*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli non conformi, una volta controllati;   
-non è prevista la *Causale* di contropartita in quanto la *Prova* è di tipo *Distruttiva* ed è impossibile effettuare un successivo ricondizionamento o rilavorazione dell'articolo controllato.   
-> **Tipo certificato proposto**: è il codice del *Tipo certificato di analisi* che viene proposto alla creazione di un nuovo *Certificato di analisi* da questo *Tipo controllo articolo*.   
-> **Descrizione magazzino**: è la descrizione del *Magazzino*;   
-> **Descrizione causale scarico articoli non conformi**: è la descrizione della *Causale scarico articoli non conformi*;   
-> **Descrizione causale scarico articoli conformi**: è la descrizione della *Causale scarico articoli conformi*;   
-> **Descrizione causale scarico prove distruttive**: è la descrizione della *Causale scarico prove distruttive*;   
-> **Descrizione tipo certificato proposto**: è la descrizione del *Tipo certificato proposto*;   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan las principales informaciones de los *tipi controllo articolo*.  
+La lista se compone de la siguiente información:  
+> **tipo controllo**: es el código del *Tipo de control de artículo*.  
+> **descrizione tipo controllo**: es la descripción del *Tipo de control de artículo*.  
+> **magazzino**: es el código del *Almacén* que se propone en *Controles de artículos > Pruebas > Almacén (Controllo articoli > Prove > Magazzino)*;  
+es el *Almacén* de control de calidad utilizado para mover los artículos, una vez controlados, al respectivo *Almacén* conforme y no conforme (si se establece como contrapartida en el respectivo *Motivo*).  
+> **Motivo de descarga de artículos no conformes (Causale scarico articoli non conformi)**: es el código de la *Causale di magazzino* que se propone en *Controles de artículos > Pruebas > Motivo de descarga de artículos no conformes (Controllo articoli > Prove > Causale scarico articoli non conformi)*;  
+es el *Motivo* de extracción utilizado para mover los artículos no conformes, una vez controlados, a su respectivo *Almacén* no conforme;  
+el *Motivo* de contrapartida no es obligatorio si no se desea gestionar un *Almacén* de desechos o de reabastecimiento después del posterior reacondicionamiento o reprocesamiento del artículo controlado.  
+> **Motivo de descarga de artículos conformes (Causale scarico articoli conformi)**: es el código de la *Causale di magazzino* que se propone en *Controles de artículos > Pruebas > Motivo de descarga de artículos conformes (Controllo articoli > Prove > Causale scarico articoli conformi)*;  
+es el *Motivo* de extracción utilizado para mover los artículos conformes, una vez controlados, a su respectivo *Almacén* conforme;  
+es recomendable establecer el respectivo *Motivo* de contrapartida para hacer que el artículo conforme esté nuevamente disponible una vez controlado.  
+> **Motivo de descarga de pruebas destructivas (Causale scarico prove distruttive)**: es el código de la *Causale di magazzino* que se propone en *Controles de artículos > Pruebas > Motivo de descarga de artículos no conformes (Controllo articoli > Prove > Causale scarico articoli non conformi)* si la *Prueba* es de tipo *Destructiva*;  
+es el *Motivo* de extracción utilizado para mover los artículos no conformes, una vez controlados;  
+no se prevé el *Motivo* de contrapartida ya que la *Prueba* es de tipo *Destructiva* y es imposible realizar un posterior reacondicionamiento o reprocesamiento del artículo controlado.  
+> **tipo certificato proposto**: es el código del *Tipo de certificado de análisis* que se propone al crear un nuevo *Certificado de análisis* a partir de este *Tipo de control de artículo*.  
+> **descrizione magazzino**: es la descripción del *Almacén*;  
+> **Descripción del motivo de descarga de artículos no conformes (Descrizione causale scarico articoli non conformi)**: es la descripción de la *Causale scarico articoli non conformi*;  
+> **Descripción del motivo de descarga de artículos conformes (Descrizione causale scarico articoli conformi)**: es la descripción de la *Causale scarico articoli conformi*;  
+> **Descripción del motivo de descarga de pruebas destructivas (Descrizione causale scarico prove distruttive)**: es la descripción de la *Causale scarico prove distruttive*;  
+> **descrizione tipo certificato proposto**: es la descripción del *Tipo de certificado propuesto*;  
+> **note**: anotaciones libres.
 
-### Extra data
+### Datos adicionales (Extra data)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi controllo articolo*.   
-Questi *Extra data* vengono ereditati nei *Controlli articolo* di quella determinata tipologia.   
+Es posible ingresar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para los *tipi controllo articolo*.  
+Estos *Datos adicionales* son heredados en los *Controles de artículo* de esa determinada tipología.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para toda la información no detallada en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,29 +1,29 @@
 ---
-title: Categorie mansione
+title: categorie mansione
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Mansioni > Categorie mansione**.
+La tabla se encuentra en la ruta **Tablas > Empleados > Funciones > categorie mansione (Tabelle > Dipendenti > Mansioni > Categorie mansione)**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Categorie mansione* che sono utilizzate per categorizzare le *Mansioni*.   
-Un esempio di utilizzo lo troviamo nella gestione **Mansioni**.
+:::important ¿Para qué sirve? (A cosa serve)
+En esta tabla es posible codificar las *categorie mansione* que son utilizadas para categorizar las *mansioni*.  
+Un ejemplo de uso lo encontramos en la gestión de **mansioni**.
 :::
 
-La tabella consente di inserire nuove *Categorie mansione* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.
+La tabla permite ingresar nuevas *categorie mansione* o buscar aquellas ya existentes para visualizarlas, modificarlas o eliminarlas.
 
-#### Ricerca Categorie mansione 
+#### Búsqueda de categorie mansione (Ricerca Categorie mansione)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-#### Inserimento Categorie mansione 
+#### Inserción de categorie mansione (Inserimento Categorie mansione)
 
-Per poter inserire nuove *Categorie mansione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder ingresar nuevas *categorie mansione*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici 
-    
-> **Codice**: è il codice della *Categoria mansione*.   
-> **Descrizione**: è la descrizione della *Categoria mansione*.   
+#### Campos específicos
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **codice**: es el código de la *Categoría de funciones (Categoria mansione)*.  
+> **descrizione**: es la descripción de la *Categoría de funciones (Categoria mansione)*.  
+
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

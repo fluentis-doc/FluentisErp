@@ -1,35 +1,35 @@
 ---
-title: Parametri raggruppamento DDT
+title: Parámetros de agrupamiento DDT (Parametri raggruppamento DDT)
 sidebar_position: 8
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Los parámetros de agrupamiento permiten definir cómo dividir los documentos durante los procedimientos de cumplimiento. Para ello, se pueden utilizar indicadores específicos para agrupar los documentos según diferentes propiedades, como, por ejemplo, la categoría, el tipo de documento u otras características relevantes.  
+Estos parámetros generales de agrupamiento deben configurarse una sola vez y se aplicarán automáticamente a todos los procedimientos, siendo válidos para todos los clientes y proveedores. Sin embargo, si un cliente o proveedor requiere un comportamiento diferente al establecido en los parámetros generales, será necesario personalizar los parámetros de agrupamiento dentro de su respectivo registro.  
+De esta manera, se garantiza una gestión flexible y adaptable de los cumplimientos, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, al tiempo que se mantiene una configuración centralizada y coherente para la mayoría de las operaciones.
 
-In questa maschera vengono decise le regole di raggruppamento per le procedure:  
-- **Creazione DDT di vendita da Picking**;  
-- **Creazione DDT di vendita da Liste di prelievo UDC**;   
-- **Creazione DDT di vendita da Liste Trasferimento UDC**;   
-- **Creazione DDT di vendita da Pos**;  
-- **Creazione DDT di vendita da ordine cliente**.      
+En esta interfaz se deciden las reglas de agrupamiento para los procedimientos:  
+- **creazione ddt di vendita da picking**;  
+- **creazione ddt di vendita da liste di prelievo udc**;  
+- **creazione ddt di vendita da liste trasferimento udc**;  
+- **creazione ddt di vendita da pos**;  
+- **Creación de DDT de venta desde pedido de cliente (Creazione DDT di vendita da ordine cliente)**.  
 
-Nel caso di evasione di più documenti, è possibile raggrupparli in base alle seguenti proprietà, inserendo i relativi flag:  
-- **tipo documento**: i documenti di origine con lo stesso [Tipo](/docs/configurations/tables/sales/sales-order-types) creeranno un singolo DDT  
-- **anno**: i documenti di origine dello stesso anno creeranno un singolo DDT  
-- **mese**: i documenti di origine dello stesso mese creeranno un singolo DDT  
-- **cambio**: i documenti di origine con lo stesso cambio creeranno un singolo DDT  
-- **progetto**: i documenti di origine con lo stesso progetto in [Testata](/docs/sales/sales-orders/create-new-sales-orders/sales-order) creeranno un singolo DDT  
-- **tipo e soluzione di pagamento**: i documenti di origine con le stesse condizioni di pagamento creeranno un singolo DDT  
-- **destinazione**: i documenti di origine con la stessa destinazione e vettore creeranno un singolo DDT   
-- **cointestatari**: i documenti di origine con lo stesso tipo operazione per la gestione dei cespiti creeranno un singolo DDT  
+En caso de cumplimiento de varios documentos, es posible agruparlos según las siguientes propiedades, activando los indicadores correspondientes:  
+- **tipo documento**: los documentos de origen con el mismo [Tipo (Tipo)](/docs/configurations/tables/sales/sales-order-types) crearán un solo DDT.  
+- **anno**: los documentos de origen del mismo año crearán un solo DDT.  
+- **mese**: los documentos de origen del mismo mes crearán un solo DDT.  
+- **cambio**: los documentos de origen con el mismo tipo de cambio crearán un solo DDT.  
+- **progetto**: los documentos de origen con el mismo proyecto en [Cabecera (Testata)](/docs/sales/sales-orders/create-new-sales-orders/sales-order) crearán un solo DDT.  
+- **tipo y solución de pago (tipo e soluzione di pagamento)**: los documentos de origen con las mismas condiciones de pago crearán un solo DDT.  
+- **destinazione**: los documentos de origen con el mismo destino y transportista crearán un solo DDT.  
+- **cointestatari**: los documentos de origen con el mismo tipo de operación para la gestión de activos crearán un solo DDT.  
 
-E' necessario flaggare le colonne che prevedono i raggruppamenti che si vogliono prevedere per queste evasioni.      
-Il flag **Riepilogativa** è fondamentale per creare un unico documento avendo diversi documenti di partenza. Gli altri flag invece riguardano i raggruppamenti particolari.     
-La colonna **Priorità** non è utilizzata al momento. 
+Es necesario activar las columnas que prevén los agrupamientos que se desean para estas ejecuciones.  
+El indicador **riepilogativa** es fundamental para crear un único documento teniendo diferentes documentos de origen. Los otros indicadores, en cambio, se refieren a agrupamientos particulares.  
+La columna **priorità** no se utiliza en este momento.

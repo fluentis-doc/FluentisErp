@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: generalità
 sidebar_position: 1
 ---
 
-Le tabelle dell'area produzione si trovano sul percorso **Tabelle > Produzione** e permettono l'inserimento di tutti i dati principali che vengono gestiti all'interno dell'intera Area Produzione. 
+Las tablas del área de producción se encuentran en la ruta **Tablas > Producción (Tabelle > Produzione)** y permiten la inserción de todos los datos principales que se gestionan dentro de toda el Área de Producción.

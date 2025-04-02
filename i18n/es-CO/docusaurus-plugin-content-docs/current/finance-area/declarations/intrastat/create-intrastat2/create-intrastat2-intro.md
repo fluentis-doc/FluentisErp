@@ -1,14 +1,6 @@
 ---
-title: Crea Intrastat2
+title: crea intrastat2
 sidebar_position: 1
 ---
 
-Vedere corrispondente pagina per ** [Intra 1](/docs/finance-area/declarations/intrastat/create-intrastat1/create-intrastat1-intro) **
-
-
-
-
-
-
-
-
+Vea la página correspondiente para **[Intra 1 (Intra 1)](/docs/finance-area/declarations/intrastat/create-intrastat1/create-intrastat1-intro)**.

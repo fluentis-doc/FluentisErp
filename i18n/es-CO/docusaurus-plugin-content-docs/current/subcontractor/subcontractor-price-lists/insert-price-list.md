@@ -1,103 +1,103 @@
 ---
-title: Inserimento Listini di Conto lavoro
+title: Inserción de Listas de Trabajo (Inserimento Listini di Conto lavoro)
 sidebar_position: 1
 ---
 
-Da questa applicazione sarà possibile inserire i listini di conto lavoro.
+Desde esta aplicación será posible ingresar las listas de trabajo. 
 
-## Sezione superiore
+## Sección superior
 
-Nella sezione superiore è necessario inserire il **Fornitore**.
-Nella form di inserimento vengono proposte automaticamente i valori dei campi **Da data validità** (viene proposta la data corrente per inizio validità) e la [Divisa](/docs/guide/common/glossary/glossary-intro#currency) (viene proposta la divisa della società, ma possono essere modificati.
-Viene riportato un eventuale **Sconto listino da anagrafica** ed è possibile inserire delle **Note**
+En la sección superior es necesario ingresar el **fornitore**.  
+En el formulario de ingreso se proponen automáticamente los valores de los campos **da data validità** (se sugiere la fecha actual para el inicio de validez) y la [Moneda (Divisa)](/docs/guide/common/glossary/glossary-intro#currency) (se sugiere la moneda de la empresa, pero puede ser modificada).  
+Se reporta un eventual **sconto listino da anagrafica** y es posible ingresar **note**.
 
-Nella sezione superiore è presente anche il filtro per ricercare gli Articoli all'interno del listino
+En la sección superior también está el filtro para buscar los Artículos dentro de la lista.
 
-## Articoli
+## Artículos
 
-In questa form verranno indicati gli articoli ed eventuali sconti associati a questo listino.
+En este formulario se indicarán los artículos y eventuales descuentos asociados a esta lista.
 
-**Classe/Articolo/Descrizione**: indicare il codice dell'articolo da includere nel listino. La descrizione verrà recuperata in automatico grazie al codice articolo. Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
+**Clase/Artículo/Descripción (Classe/Articolo/Descrizione)**: indicar el código del artículo a incluir en la lista. La descripción se recuperará automáticamente gracias al código del artículo. Para insertar un nuevo artículo en la cuadrícula, basta con posicionarse sobre la fila para completar los diversos datos o utilizar el botón *nuovo articolo* presente en la barra de cinta.
 
-**Codice/Descrizione variante**: serve se oltre al codice articolo anche la variante contraddistingue un articolo da un altro.
+**Código/Descripción variante (Codice/Descrizione variante)**: sirve si además del código del artículo, la variante distingue un artículo de otro.
 
-**Codice fase**: è possibile associare all'articolo un'eventuale [Fase esterna](/docs/configurations/tables/production/standard-phases) che sarà svolta dal terzista. In questo modo è possibile definire un prezzo per ogni fase dello stesso articolo; verranno compilati in automatico i campi **Fase** e **Sottofase**;
+**codice fase**: es posible asociar al artículo una eventual [Fase externa (Fase esterna)](/docs/configurations/tables/production/standard-phases) que será realizada por el contratista. De este modo, se puede definir un precio para cada fase del mismo artículo; se completarán automáticamente los campos **fase** y **sottofase**.
 
-**Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative.
+**unità di misura**: puede ser la de gestión del artículo o una de sus unidades de medida alternativas.
 
-**Quantità**: proposta uguale a 1, è la quantità di riferimento del prezzo; se diversa da 1, quando deve essere calcolato il prezzo viene diviso per la quantità del listino.
+**quantità**: propuesta igual a 1, es la cantidad de referencia del precio; si es diferente de 1, cuando se debe calcular el precio, se divide por la cantidad de la lista.
 
-**Prezzo** riferito alla divisa del listino.
+**prezzo**: referido a la moneda de la lista.
 
-**IVA**: questo campo viene recuperato. Qualora sul cliente non fosse impostato sarà necessario popolare questo campo con il codice IVA.  
+**iva**: este campo se recupera. Si no está configurado en el cliente, será necesario completar este campo con el código de IVA.
 
-**Prezzo Ivato**: il sistema calcola questo prezzo a partire fa prezzo e dall'aliquota del codice IVA inserito. 
+**prezzo ivato**: el sistema calcula este precio a partir del precio y de la tasa del código de IVA ingresado.
 
-**Altezza/Larghezza/Profondità**: dati informativi relativi al listino. Il sistema non utilizza questi campi per eventuali elaborazioni. 
+**Altura/Anchura/Profundidad (Altezza/Larghezza/Profondità)**: datos informativos relativos a la lista. El sistema no utiliza estos campos para eventuales elaboraciones.
 
-Per ogni articolo del listino è possibile inserire alcune tipologie di sconto come spiegato di seguito.
+Para cada artículo de la lista es posible ingresar algunas tipologías de descuento como se explica a continuación.
 
-Si indica il **Tipo scaglione** nel campo omonimo, mentre nei campi successivi verranno riportati i dati relativi agli articoli inseriti a listino.
+Se indica el **tipo scaglione** en el campo homónimo, mientras que en los campos siguientes se reportarán los datos relativos a los artículos ingresados en la lista.
 
-Questi scaglioni sono indicati nella tabella *Tipi Sconti*.
+Estos escalones están indicados en la tabla *Tipos de Descuentos (Tipi Sconti)*.
 
-Nella parte destra della form troviamo una griglia in cui sono indicati tutti i possibili sconti per questo articolo. Queste vengono compilate solo selezionando un articolo presente nel listino.
+En la parte derecha del formulario encontramos una cuadrícula en la que están indicados todos los posibles descuentos para este artículo. Estas se completan solo al seleccionar un artículo presente en la lista.
 
-### Sconti
+### Descuentos
 
-Questi sconti sono degli sconti fissi che vengono riportati nei documenti.
+Estos descuentos son descuentos fijos que se reportan en los documentos.
 
-Di seguito la corretta compilazione di questa griglia:
+A continuación, la correcta cumplimentación de esta cuadrícula:
 
-**N**: popolato dal sistema, indica l'ordine in cui vengono considerati gli sconti.
+**N**: poblado por el sistema, indica el orden en que se consideran los descuentos.
 
-**Tipo sconto/Descrizione**: selezionare il tipo sconto tra quelli presenti. A standard sono previsti 3 tipologie diverse: *Sconto commerciale*, *Sconto a quantità* e *Sconto a valore*.
+**Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: seleccionar el tipo de descuento entre los presentes. Estándar se prevén 3 tipologías diferentes: *Descuento comercial (Sconto commerciale)*, *sconto a quantità* y *sconto a valore*.
 
-**Valore**: impostare la percentuale di sconto da applicare.
+**valore**: establecer el porcentaje de descuento a aplicar.
 
-**Priorità**: questa priorità viene riportata dalle impostazioni eseguite nella tabella [Tipi sconti](/docs/configurations/tables/general-settings/discount-types).
+**priorità**: esta prioridad se reporta desde las configuraciones ejecutadas en la tabla [Tipos de descuentos (Tipi sconti)](/docs/configurations/tables/general-settings/discount-types).
 
-**Casc./Imp.**: viene popolato a partire dal valore inserito nella tabella Tipi sconti.
+**casc./imp.**: se poblado a partir del valor ingresado en la tabla Tipos de descuentos.
 
-### Sconti a quantità
+### Descuentos por cantidad
 
-Questa tipologia di sconto può avere diverse percentuali a seconda della quantità. 
+Esta tipología de descuento puede tener diferentes porcentajes dependiendo de la cantidad.
 
-**Tipo**: impostare il tipo sconto che dovrà essere *Sconto a quantità*. Questa dicitura verrà riportata poi nella stampa.
+**tipo**: establecer el tipo de descuento que deberá ser *sconto a quantità*. Esta descripción se reportará luego en la impresión.
 
-**Quantità**: impostare la quantità per la quale verrà attivato lo sconto.
+**quantità**: establecer la cantidad para la cual se activará el descuento.
 
-**Percentuale**: inserire la percentuale di sconto al raggiungimento della quantità indicata
+**percentuale**: ingresar el porcentaje de descuento al alcanzar la cantidad indicada.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image07.png)
 
-### Sconti a Valore
+### Descuentos por Valor
 
-In questa tipologia lo sconto scatta quando si raggiunge un determinato importo per riga.
+En esta tipología, el descuento se activa cuando se alcanza un determinado importe por línea.
 
-**Tipo**: impostare il tipo sconto che dovrà essere *Sconto a valore*.
+**tipo**: establecer el tipo de descuento que deberá ser *sconto a valore*.
 
-**Valore**: impostare un valore superato il quale scatta lo sconto.
+**valore**: establecer un valor superado el cual se activa el descuento.
 
-**Percentuale**: inserire la percentuale di sconto al raggiungimento del valore.
+**percentuale**: ingresar el porcentaje de descuento al alcanzar el valor.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image09.png)
 
-### Prezzo per quantità
+### Precio por cantidad
 
-In questa caso, al raggiungimento di una certa quantità , il prezzo unitario cambia.
+En este caso, al alcanzar una cierta cantidad, el precio unitario cambia.
 
-**Quantità**: impostare un valore superato il quale scatta il prezzo "personalizzato".
+**quantità**: establecer un valor superado el cual se activa el precio "personalizado".
 
-**Prezzo unitario**: inserire il prezzo unitario per la quantità ordinata.
+**prezzo unitario**: ingresar el precio unitario para la cantidad ordenada.
 
-Questi sconti si sommeranno ad altri eventuali sconti presenti.
+Estos descuentos se sumarán a otros eventuales descuentos presentes.
 
-### Note
+### Notas
 
-A livello informativo è possibile inserire delle note legate ad un particolare tipo di scontistica.
+A nivel informativo es posible ingresar notas relacionadas con un tipo particular de descuentos.
 
-### Documenti allegati
+### Documentos adjuntos
 
 import DocAttachDocument from './../../import/sections/doc-attach-document.md'
 

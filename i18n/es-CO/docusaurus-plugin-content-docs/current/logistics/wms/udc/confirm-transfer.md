@@ -1,6 +1,6 @@
 ---
-title: Conferma trasferimento UDC
+title: conferma trasferimento udc
 sidebar_position: 7
 ---
 
-Vedasi documentazione al seguente link: [Conferma trasferimento UDC (versione WMS)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)
+Consulte la documentación en el siguiente enlace: [conferma trasferimento udc (versión WMS) (Conferma trasferimento UDC (versione WMS))](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)

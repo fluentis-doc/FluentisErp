@@ -1,6 +1,6 @@
 ---
-title: M.R.P.
+title: m.r.p.
 sidebar_position: 1
 ---
 
-Vedi [MRP](/docs/planning/ms-master-scheduling/mrp)
+Consulta [MRP](/docs/planning/ms-master-scheduling/mrp)

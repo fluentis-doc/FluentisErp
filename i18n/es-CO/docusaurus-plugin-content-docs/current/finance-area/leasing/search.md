@@ -1,62 +1,56 @@
 ---
-title: Ricerca Leasing
+title: ricerca leasing
 sidebar_position: 2
 ---
 
-Da questa posizione è possibile ricercare i contratti leasing presenti nella base dati e procedere a modificarne il dettaglio, oppure inserire un nuovo contratto con il tasto **Nuovo**.
+Desde esta posición es posible buscar los contratos de leasing presentes en la base de datos y proceder a modificar sus detalles, o insertar un nuevo contrato con el botón **nuovo**.
 
-I filtri di ricerca, oltre al numero, descrizione e data di stipula, sono possibili per banca di pagamento dei canoni e per società concedente (società di leasing).
+Los filtros de búsqueda, además del número, descripción y fecha de firma, son posibles para la banca de pago de las cuotas y para la sociedad concedente (sociedad de leasing).
 
-Un altro campo di filtro fondamentale è il **Tipo Leasing**.
+Otro campo de filtro fundamental es el **tipo leasing**.
 
-Questo campo, riportato anche nella griglia dei risultati, rimanda alla **tabella specifica** (accessibile anche con il tasto destro del mouse > Apri form) che è **necessario compilare prima di inserire un nuovo leasing per la prima volta**.
+Este campo, que también aparece en la cuadrícula de resultados, remite a la **tabla específica** (accesible también con el botón derecho del mouse > Abrir formulario) que es **necesario completar antes de insertar un nuevo leasing por primera vez**.
 
 ![](/img/it-it/finance-area/leasing/search/image01.png)
 
-Gli altri dati riportati nella griglia dei risultati sono la **Data di stipula** (del contratto, data dal quale decorre il calcolo dei giorni di competenza),
+Los otros datos que aparecen en la cuadrícula de resultados son la **Fecha de firma (Data di stipula)** (del contrato, fecha a partir de la cual comienza el cálculo de los días de competencia),
 
-**Data estinzione** (data fino alla quale calcolare i giorni totali al fine del calcolo dei giorni di competenza),
+**data estinzione** (fecha hasta la cual calcular los días totales para el cálculo de los días de competencia),
 
-**Numero** del contratto,
+**numero** del contrato,
 
-**Descrizione** del bene concesso in leasing,
+**descrizione** del bien concedido en leasing,
 
-**Conto / sottoconto** della banca di pagamento e della società concedente,
+**Cuenta / subcuenta (Conto / sottoconto)** del banco pagador y de la sociedad concedente,
 
-**Maxicanone iniziale** (se previsto ed inserito nei dati del contratto)
+**maxicanone iniziale** (si está previsto e insertado en los datos del contrato),
 
-**Spese di istruttoria** (spese di gestione del contratto se previste ed inserite)
+**Gastos de instrucción (Spese di istruttoria)** (gastos de gestión del contrato si están previstos e insertados),
 
-**Debito residuo**: campo calcolato come somma delle quote capitali dei canoni previsti al netto di quelle già contabilizzate come pagate.
+**debito residuo**: campo calculado como la suma de las cuotas de capital de los cánones previstos, neto de los ya contabilizados como pagados.
 
-**TABELLA TIPI LEASING**:
+**TABLA TIPOS DE LEASING (TABELLA TIPI LEASING)**:
 
-Tabella che definisce tutti gli attributi obbligatori della tipologia di leasing, tipologia da richiamare obbligatoriamente nell'inserimento di un nuovo contratto di leasing.![](/img/it-it/finance-area/leasing/search/image02.png)
+Tabla que define todos los atributos obligatorios del tipo de leasing, tipo que debe ser invocado obligatoriamente al insertar un nuevo contrato de leasing. ![](/img/it-it/finance-area/leasing/search/image02.png)
 
-**Codice / Descrizione**: liberamente assegnabili identificano il tipo di leasing che stiamo codificando.
+**codice / descrizione**: asignables libremente, identifican el tipo de leasing que estamos codificando.
 
-**Tipo leasing**: campo attualmente solo informativo, non determina alcun automatismo, definisce se si tratta di Leasing Finanziario o Noleggio Operativo.
+**tipo leasing**: campo actualmente solo informativo, no determina automatismos, define si se trata de Leasing Financiero o Alquiler Operativo.
 
-**Metodo contabile**: ATTENZIONE attualmente solo la modalità **Patrimoniale** risulta implementata e permette il regolare funzionamento delle procedure di contabilizzazione.
+**metodo contabile**: ATENCIÓN, actualmente solo el modo **patrimoniale** está implementado y permite el funcionamiento regular de los procedimientos de contabilidad.
 
-Il metodo Patrimoniale corrisponde ai principi contabili italiani OIC (prevedono di contabilizzare i canoni secondo la forma giuridica del contratto, come una semplice locazione senza trasferimento di proprietà, e conseguente iscrizione nell'attivo patrimoniale e caricamento del cespite solo alla fine del contratto quando il bene sarà riscattato).
+El método Patrimonial corresponde a los principios contables italianos OIC (prevén contabilizar los cánones según la forma jurídica del contrato, como un simple arrendamiento sin transferencia de propiedad, e inscripción en los activos patrimoniales y carga del activo solo al final del contrato cuando el bien sea rescatado).
 
-Il metodo Finanziario corrisponde ai principi contabili internazionali IAS/ IFRS (prevedono di considerare la sostanza dell'operazione anziché la forma giuridica iscrivendo il bene nell'attivo patrimoniale e caricando la scheda cespite).
+El método Financiero corresponde a los principios contables internacionales IAS/IFRS (prevén considerar la sustancia de la operación en lugar de la forma jurídica, inscribiendo el bien en los activos patrimoniales y cargando la ficha de activo).
 
-**Tipi Flusso**: combo box che permette di richiamare dalla tabella Tipi Flusso del modulo Cash flow la tipologia (avente il flag Extracontabile all'interno della tabella Tipi flusso) la voce con la quale rappresentare i flussi finanziari del fabbisogno per i vari canoni previsti all'interno del contratto.
+**tipi flusso**: combo box que permite invocar desde la tabla Tipos de Flujo del módulo de Flujo de Caja (Cash flow) la tipología (con el indicador Extracontable dentro de la tabla Tipos de flujo) la voz con la cual representar los flujos financieros del requerimiento por los varios cánones previstos dentro del contrato.
 
-**Registrazione causale**: causale contabile che sarà utilizzata nelle registrazioni contabili relative ai canoni leasing fatturati dalla società concedente e da contabilizzare.
+**registrazione causale**: causal contable que será utilizada en los registros contables relativos a los cánones de leasing facturados por la sociedad concedente y por contabilizar.
 
-**Conto / sottoconto interessi**: indicare in questi campi il conto sul quale sarà contabilizzata la quota interessi dei canoni previsti. Questa impostazione sarà proposta nei nuovi contratti inseriti con questa tipologia.
+**Cuenta / subcuenta de intereses (Conto / sottoconto interessi)**: indique en estos campos la cuenta sobre la cual se contabilizará la cuota de intereses de los cánones previstos. Esta configuración será propuesta en los nuevos contratos insertados con este tipo.
 
-**Conto / sottoconto canoni**: indicare in questo campo il conto da utilizzare per la quota capitale dei canoni che sarà contabilizzata. Il conto sarà proposto nei nuovi leasing inseriti con questa tipologia.
+**Cuenta / subcuenta de cánones (Conto / sottoconto canoni)**: indique en este campo la cuenta a utilizar para la cuota de capital de los cánones que será contabilizada. La cuenta será propuesta en los nuevos leasing insertados con este tipo.
 
-**Conto / sottoconto costo**: indicare il conto da utilizzare per la quota di costo di incasso dei singoli canoni (se prevista).
+**Cuenta / subcuenta de costo (Conto / sottoconto costo)**: indique la cuenta a utilizar para la cuota de costo de cobro de los cánones individuales (si está previsto).
 
-**IVA**: trattandosi di registrazione di fattura dei canoni indicare l'aliquota da proporre automaticamente nelle registrazioni contabili dei canoni.
-
-
-
-
-
-
+**IVA**: tratándose de registro de factura de los cánones, indique la tasa impositiva a proponer automáticamente en los registros contables de los cánones.

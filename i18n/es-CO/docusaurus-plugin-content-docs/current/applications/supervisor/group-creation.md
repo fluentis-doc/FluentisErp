@@ -1,19 +1,19 @@
 ---
-title: Creazione Gruppi
-sidebar_label: Creazione Gruppi
+title: Creación de Grupos (Creazione Gruppi)
+sidebar_label: Creación de Grupos (Creazione Gruppi)
 sidebar_position: 2
 ---
 
-In Supervisor, attività, task ed eventi sono associati ai rispettivi gruppi. Si hanno quindi i seguenti gruppi:
+En Supervisor, las actividades, tareas y eventos están asociados a sus respectivos grupos. Por lo tanto, se tienen los siguientes grupos:
 
-* *Gruppi di attività (activity groups)*
-* *Gruppi di task (task groups)*
-* *Gruppi di eventi (event groups)*
+* *gruppi di attività*
+* *gruppi di task*
+* *gruppi di eventi*
 
-La creazione dei rispettivi gruppi è indispensabile per l'aggiunta degli elementi relativi a supervisor (attività, gruppi, eventi) in quanto verranno contenuti in essi.
+La creación de los respectivos grupos es indispensable para la adición de los elementos relacionados con el supervisor (actividades, grupos, eventos), ya que estarán contenidos en ellos.
 
-Per creare un nuovo gruppo di Attività, Tasks o Eventi, aprire la form di gestione dei Gruppi da **Configurazione** > **Tabelle** > **Fluentis Supervisor** > **Gruppi Attività/Tasks/Eventi**.
+Para crear un nuevo grupo de Actividades, Tareas o Eventos, abra el formulario de gestión de Grupos desde **configurazione** > **tabelle** > **Fluentis Supervisor** > **Grupos de Actividades/Tareas/Eventos (Gruppi Attività/Tasks/Eventi)**.
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+Algunas de las funcionalidades dentro del formulario se refieren a un uso estándar. Para cualquier detalle sobre el uso de este formulario que no se indique aquí, consulte este [artículo (articolo)](/docs/guide/common).
 
-![alt text](/img/it-it/applications/supervisor/supervisor2.png)
+![alt text]( /img/it-it/applications/supervisor/supervisor2.png)

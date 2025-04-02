@@ -1,67 +1,67 @@
 ---
-title: Nuova Lista di Distribuzione
+title: Nueva Lista de Distribución (Nuova Lista di Distribuzione)
 sidebar_position: 3
 ---
 
-La procedura di creazione di una nuova **Lista di distribuzione** permette di andare a definire quali saranno le caratteristiche della lista che verrà poi utilizzato nella procedura di invio delle [Newsletter](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), oltre a definire quali saranno i **contatti CRM** facenti parte di tale lista. Per creare una nuova lista è necessario cliccare sul pulsante ![](/img/neutral/common/new.png) Nuovo dalla maschera di ricerca liste di distribuzione.
+El procedimiento para crear una nueva **lista di distribuzione** permite definir cuáles serán las características de la lista que luego se utilizará en el procedimiento de envío de las [Boletines (Newsletter)](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), además de determinar cuáles serán los **contatti crm** que formarán parte de dicha lista. Para crear una nueva lista, es necesario hacer clic en el botón ![](/img/neutral/common/new.png) Nuevo desde la máscara de búsqueda de listas de distribución.
 
-La form è composta da due sezioni.
+El formulario consta de dos secciones.
 
-La sezione superiore permette di definire le seguenti informazioni:
+La sección superior permite definir la siguiente información:
 
-**Nome**: corrisponde al codice identificativo della lista di distribuzione;
+**nome**: corresponde al código identificativo de la lista de distribución;  
 
-**Data creazione**: è la data in cui la lista è stata creata;
+**data creazione**: es la fecha en que se creó la lista;  
 
-**Nota**: campo alfanumerico che permette di inserire delle note libere;
+**nota**: campo alfanumérico que permite ingresar notas libres;  
 
-**Autore**: viene indicato l’utente che ha generato la lista;
+**autore**: se indica el usuario que generó la lista;  
 
-**Tipo**: permette di definire la tipologia di lista di distribuzione tra **Statica** o **Dinamica**.
+**tipo**: permite definir el tipo de lista de distribución como **Estática (Statica)** o **Dinámica (Dinamica)**.
 
 
-La form inferiore si differenzia a seconda che la lista sia di tipo Statico o di tipo Dinamico.
+La sección inferior se diferencia dependiendo de si la lista es de tipo Estática o de tipo Dinámica.
 
-## ***LISTA STATICA***
+## ***LISTA ESTÁTICA (LISTA STATICA)***
 
-La sezione è suddivisa in 2 tab.
+La sección se divide en 2 pestañas.
 
-**Tab Assegnato**
+**Pestaña Asignados (Tab Assegnato)**
 
-Nella tab Assegnato vengono mostrati i soggetti che sono stati già assegnati alla lista di distribuzione.
+En la pestaña Asignados se muestran los sujetos que ya han sido asignados a la lista de distribución.
 
 ![](/img/it-it/applications/crm/distribution-list/assigned.png)
 
-**Tab Non Assegnato**
+**Pestaña No Asignados (Tab Non Assegnato)**
 
-Nella tab Non Assegnato vengono mostrati i contatti che non sono stati ancora assegnati alla lista in oggetto.
-La tab è divisa in 2 sezioni.
-Una prima sezione di Filtro, dove è possibile impostare una serie di filtri riguardanti i contatti da estrapolare.
+En la pestaña No Asignados se muestran los contactos que aún no han sido asignados a la lista en cuestión.  
+La pestaña se divide en 2 secciones.  
+Una primera sección de Filtro, donde es posible establecer una serie de filtros respecto a los contactos a extraer.
 
 ![](/img/it-it/applications/crm/distribution-list/not-assigned.png)
 
-La seconda sezione invece, la griglia risultato, mostra i soggetti estratti in base ai filtri impostati in precedenza dopo aver premuto il pulsante Search ![](/img/neutral/common/search.png).
-Il pulsante Assegna ![](/img/neutral/common/assign-row.png) sposta il contatto dalla tab **Non assegnato** alla tab **Assegnato**, inserendo quindi il contatto nella Lista di distribuzione.
+La segunda sección, en cambio, la cuadrícula de resultados, muestra los sujetos extraídos en base a los filtros establecidos previamente después de presionar el botón Buscar ![](/img/neutral/common/search.png).  
+El botón Asignar ![](/img/neutral/common/assign-row.png) mueve el contacto de la pestaña **non assegnato** a la pestaña **assegnato**, insertando así el contacto en la Lista de distribución.
 
-**Raggruppa per contatto**: permette di raggruppare i soggetti (contatti e riferimenti) in un’unica riga in base al contatto di cui fanno parte.
+**raggruppa per contatto**: permite agrupar los sujetos (contactos y referencias) en una única línea según el contacto al que pertenecen.
 
 
-## ***LISTA DINAMICA***
+## ***LISTA DINÁMICA (LISTA DINAMICA)***
 
-La sezione è suddivisa in 2 tab.
+La sección se divide en 2 pestañas.
 
-**Tab Configurazione**
+**Pestaña Configuración (Tab Configurazione)**
 
-Devono essere inizialmente indicati questi 3 dati:
-**Area**: serve per definire l’area di Fluentis in cui dovranno essere recuperati i dati;
-**Modulo**: è riferito all’Area selezionata in precedenza;
-**Sql Query**: deve essere selezionata la Query Sql precedentemente creata in Fluentis (per maggiori informazioni fare riferimento alla sezione Fluentis Query Studio)
-Nella griglia sottostante vengono mostrate le proprietà e come sono state mappate.
+Deben indicarse inicialmente estos 3 datos:  
+**area**: sirve para definir el área de Fluentis de donde se recuperarán los datos;  
+**modulo**: se refiere al Área seleccionada anteriormente;  
+**sql query**: debe seleccionarse la Consulta SQL previamente creada en Fluentis (para más información consulte la sección Fluentis Query Studio).  
+En la cuadrícula inferior se muestran las propiedades y cómo han sido mapeadas.
 
 ![](/img/it-it/applications/crm/distribution-list/configuration.png)
 
-**Tab Mapping**
+**Pestaña Mapeo (Tab Mapping)**
 
-In questa tab vengono mostrate in tempo reali i contatti elaborati e inseriti nella lista di distribuzione in base alla Sql Query indicata nella tab Configurazione.
+En esta pestaña se muestran en tiempo real los contactos procesados e insertados en la lista de distribución según la Consulta SQL indicada en la pestaña Configuración.
 
 ![](/img/it-it/applications/crm/distribution-list/mapping.png)

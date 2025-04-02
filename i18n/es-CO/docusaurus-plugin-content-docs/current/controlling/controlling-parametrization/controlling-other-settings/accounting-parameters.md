@@ -1,15 +1,15 @@
 ---
-title: Parametri di Contabilità
+title: parametri di contabilità
 sidebar_position: 30
 ---
 
-Dato che possiamo collegare i Centri aziendali a più anagrafiche di Fluentis, dobbiamo definire in che priorità andare a valorizzarle quando stiamo registrando manualmente in contabilità (o stiamo eseguendo una contabilizzazione da un modulo che non gestisce l'analitica).
+Dado que podemos vincular los Centros empresariales a más de un registro en Fluentis, debemos definir en qué prioridad se valorizarán al registrar manualmente en contabilidad (o al ejecutar una contabilización desde un módulo que no gestiona la analítica).
 
-All'interno del parametri di contabilità, in basso a Destra, troviamo la **PROPOSTA CENTRI DI COSTO/PROFITTO**, le cui opzioni sono:
-- *Costo contabile*: significa leggere la configurazione dei centri dal sottoconto del *Piano dei conti*
-- *Anagrafica*: significa leggere la configurazione dall'*Anagrafica cliente/fornitore/agente* intestataria della registrazione contabile che si sta inserendo
-- *Costo industriale*: non attivo
+Dentro de los parámetros de contabilidad, en la parte inferior derecha, encontramos la **PROPUESTA DE CENTROS DE COSTO/PROFITOS (PROPOSTA CENTRI DI COSTO/PROFITTO)**, cuyas opciones son:  
+- *costo contabile*: significa leer la configuración de los centros desde la cuenta secundaria del *piano dei conti*.  
+- *anagrafica*: significa leer la configuración desde el *Registro del cliente/proveedor/agente (Anagrafica cliente/fornitore/agente)* asociado a la registración contable que se está ingresando.  
+- *Costo industrial (Costo industrial)*: no activo.  
 
-Utilizzando i pulsanti *Sposta su* e *Sposta giù*, presenti all'interno della ribbon, andremo a mettere le opzioni nell'ordine desiderato.
+Utilizando los botones *sposta su* y *sposta giù*, presentes dentro de la cinta, organizaremos las opciones en el orden deseado.
 
-La logica di attribuzione è sempre legata al piano dei conti e quindi, consigliamo di avere come priorità il COSTO CONTABILE. 
+La lógica de atribución siempre está vinculada al plan de cuentas, por lo tanto, recomendamos tener como prioridad el **costo contabile**.

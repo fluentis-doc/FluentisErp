@@ -1,92 +1,92 @@
 ---
-title: Tipi fatture di vendita
+title: Tipos de facturas de venta (Tipi fatture di vendita)
 sidebar_position: 20
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está afectada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, se debe consultar la lista de verificación de la página enlazada
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi fatture di vendita** ed è utilizzata per determinare le proprietà di una fattura;
+La tabla se abre a través de la ruta **Tablas > Ventas > Tipos de facturas de venta (Tabelle > Vendite > Tipi fatture di vendita)** y se utiliza para determinar las propiedades de una factura;
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli;
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos;
 
-La form si compone di un'area di filtro e da una di risultato; Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato;
+El formulario se compone de un área de filtro y de una de resultados; Una vez establecidos todos los filtros deseados, solo hace falta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados;
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**; 
+Para poder ingresar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**; 
 
-**Tipo/Descrizione**: tipo fattura e descrizione del tipo fattura; il codice inserito deve essere univoco;
+**Tipo/Descripción (Tipo/Descrizione)**: tipo de factura y descripción del tipo de factura; el código ingresado debe ser único;
 
-**Numerazione:** in questo campo va inserito il codice della numerazione appropriato; Per approfondimenti fare riferimento all'articolo relativo alle [numerazioni fluentis](/docs/configurations/tables/fluentis-numerations); 
+**Numeración (Numerazione):** en este campo se debe ingresar el código de numeración apropiado; Para más detalles, consulte el artículo relacionado con las [numeraciones de Fluentis (numerazioni fluentis)](/docs/configurations/tables/fluentis-numerations); 
 
-**Natura fattura**: in questo campo va inserita la natura associata al tipo fattura; il valore verrà selezionato da un elenco tra Fattura, Nota di credito, ecc;
+**natura fattura**: en este campo se debe ingresar la naturaleza asociada al tipo de factura; el valor se seleccionará de una lista entre Factura, Nota de crédito, etc.;
 
-**Ordine**: se attivo, la fattura potrà essere creata dall'evasione dell'ordine tramite l'apposita procedura; altrimenti, il bottone 'Evasione da ordini' sarà disattivato;
+**ordine**: si está activo, la factura podrá ser creada a partir del cumplimiento del pedido mediante el procedimiento correspondiente; de lo contrario, el botón 'Cumplimiento de pedidos (Evasione da ordini)' estará desactivado;
 
-**Immediata**: se attivo, significa che la fattura è di tipo immediato e dovranno essere compilati, nella fattura, anche i dati per il trasporto; se non attivo la fattura sarà di tipo differito e i dati del trasporto saranno recuperati dal DDT;
+**immediata**: si está activo, significa que la factura es de tipo inmediato y deberán completarse, en la factura, también los datos para el transporte; si no está activo, la factura será de tipo diferido y los datos del transporte se recuperarán del DDT;
 
-**Natura della Transazione Intrastat**: in questo campo va inserito il codice transazione utilizzato per la dichiarazione intrastat; Per approfondimenti fare riferimento alla [Natura transazioni intrastat](/docs/configurations/tables/finance/nature-of-intrastat-transaction); 
+**natura della transazione intrastat**: en este campo se debe ingresar el código de transacción utilizado para la declaración intrastat; Para más detalles, consulte la [Naturaleza de transacciones intrastat (Natura transazioni intrastat)](/docs/configurations/tables/finance/nature-of-intrastat-transaction); 
 
-**In statistica**: se attivo, la fattura con questo tipo verrà riportata nelle statistiche quindi sarà visibile nelle stampe *Fatturato*;
+**in statistica**: si está activo, la factura con este tipo será reportada en las estadísticas, por lo tanto, será visible en las impresiones de *fatturato*;
 
-**Proforma**: se attivo, la fattura è di tipo proforma e non può essere contabilizzata;
+**proforma**: si está activo, la factura es de tipo proforma y no puede ser contabilizada;
 
-**Causale**: in questo campo va inserita la causale contabile utilizzata per la contabilizzazione della fattura; Per approfondimenti fare riferimento alle [causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates);
+**causale**: en este campo se debe ingresar la causa contable utilizada para la contabilización de la factura; Para más detalles, consulte las [causas de contabilidad general (causali di contabilità generale)](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates);
 
-**Tipo documento**: in questo campo va inserita la causale analitica utilizzata pe la contabilizzazione della fattura in contabilità analitica;
+**tipo documento**: en este campo se debe ingresar la causa analítica utilizada para la contabilización de la factura en contabilidad analítica;
 
-**Note**: campo di testo libero in cui è possibile inserire delle note descrittive del tipo fattura;
+**note**: campo de texto libre en el que se pueden ingresar notas descriptivas del tipo de factura;
 
-**Controllo cliente**: se attivo, questo flag consente al sistema di effettuare un controllo sul tipo anagrafica del conto/sottoconto che si è inserito nel documento per verificare che sia obbligatoriamente un cliente; Se così non fosse il sistema avviserà l'utente riportando un messaggio di errore; Sarebbe *obbligatorio* attivarlo su tutte le tipologie di fattura di vendita;
+**controllo cliente**: si está activo, este indicador permite al sistema realizar un control sobre el tipo de registro del cliente/socio que se ha ingresado en el documento para verificar que sea obligatoriamente un cliente; Si no es así, el sistema avisará al usuario con un mensaje de error; Sería *obbligatorio* activarlo en todos los tipos de factura de venta;
 
-**Blocca doc; stampato**: se attivo, questo flag non permette di modificare una fattura che risulti essere già con il flag *Stampato* settato in testata;
+**Bloquear documento; impreso (Blocca doc; stampato)**: si está activo, este indicador no permite modificar una factura que ya esté marcada como *stampato* en el encabezado;
 
-**Intracomunitaria**: se attivo, il sistema verifica che la nazione del cliente sia una *nazione CEE*; Questo flag andrà *impostato solo su tipi fattura Intracomunitari*; Qualora non ci fosse il link tra cliente e tipo fattura intracomunitaria, il sistema ritornerà un messaggio di avviso;
+**intracomunitaria**: si está activo, el sistema verifica que el país del cliente sea una *nación CEE*; Este indicador debe *establecerse solo en tipos de factura intracomunitarios*; Si no hay enlace entre el cliente y el tipo de factura intracomunitaria, el sistema devolverá un mensaje de advertencia;
 
-**Evasione fattura proforma**: se settato, e la fattura è proforma, l'evasione evade l'ordine altrimenti l'ordine rimane non evaso;
+**Cumplimiento de factura proforma (Evasione fattura proforma)**: si está configurado y la factura es proforma, el cumplimiento realiza la orden; de lo contrario, la orden permanecerá no cumplida;
 
-**Causale trasporto**: Campo di testo libero in cui va indicata una causale di trasporto da poter stampare in fattura;
+**causale trasporto**: campo de texto libre en el que se debe indicar una causa de transporte que se pueda imprimir en la factura;
 
-**Fido**: se attivo, la fattura con questo tipo rientrerà nel controllo del fido;
+**fido**: si está activo, la factura de este tipo estará sujeta al control de crédito;
 
-**Escludi blocco:** si riferisce al blocco per superamento del fido e perciò inserito nella gestione Lock Manager presente nell’area tesoreria tra le procedure dell’Utilizzo Fidi. Se attivo, il sistema per questo tipo fattura non considererà il blocco del documento dovuto al superamento del fido ma lascerà all'utente la possibilità di inserire e stampare il documento; se non attivo, il tipo fattura verrà bloccato qualora si superi il fido e all'utente verrà impedito la stampa del documento; 
+**Excluir bloqueo (Escludi blocco):** se refiere al bloqueo por superación del crédito y por lo tanto está incluido en la gestión del Lock Manager presente en el área de tesorería entre los procedimientos de Utilización de Créditos. Si está activo, el sistema no considerará el bloqueo del documento debido al exceso del crédito, pero permitirá al usuario ingresar e imprimir el documento; si no está activo, el tipo de factura será bloqueado si se supera el crédito y se impedirá al usuario imprimir el documento; 
 
-**Magazzino/Descrizione magazzino**: in questi campi si andrà ad indicare il [magazzino](/docs/configurations/tables/logistics/warehouses) di impegno degli articoli presenti in quel determinato tipo di fattura; il magazzino qui specificato viene riportato in tutte le righe articolo inserite nella fattura di questa tipologia; 
+**Almacén/Descripción de almacén (Magazzino/Descrizione magazzino)**: en estos campos se indicará el [almacén (magazzino)](/docs/configurations/tables/logistics/warehouses) de compromiso de los artículos presentes en ese tipo de factura determinado; el almacén especificado aquí se reflejará en todas las líneas de artículo ingresadas en la factura de este tipo; 
 
-**Causale /Descrizione causale magazzino**: in questi campi si andrà invece ad indicare la [causale di movimentazione](/docs/configurations/tables/logistics/warehouse-templates) degli articoli impegnati contenuti in quel determinato tipo di ordine; la causale qui specificata viene riportato in tutte le righe articolo inserite nell’ordine di questa tipologia; 
+**Causa /Descripción causa de almacén (Causale /Descrizione causale magazzino)**: en estos campos se indicará la [causa de movimiento (causale di movimentazione)](/docs/configurations/tables/logistics/warehouse-templates) de los artículos comprometidos en ese tipo de orden determinado; la causa especificada aquí se reflejará en todas las líneas de artículo ingresadas en el orden de este tipo; 
 
-**Raggruppamento partite**: se attivo, nella contabilizzazione fatture vengono raggruppate le partite; Per approfondimenti fare riferimento a [raggruppamento partite](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping); 
+**raggruppamento partite**: si está activo, en la contabilización de facturas se agruparán las partidas; Para más detalles, consulte el [agrupamiento de partidas (raggruppamento partite)](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping); 
 
-**Iva agricola per vendite**: se attivo, in fase di creazione DDT, il sistema andrà a verificare se per l'articolo utilizzato è presente un codice dell'IVA agricola altrimenti verrà utilizzato il codice IVA presente nell'anagrafica dell'articolo;
+**IVA agrícola por ventas (Iva agricola per vendite)**: si está activo, en la fase de creación de DDT, el sistema verificará si el artículo utilizado tiene asociado un código de IVA agrícola; de lo contrario, se utilizará el código de IVA presente en el registro del artículo;
 
-**Controlla Picking scaricato**: se attivo, quando si crea una fattura da un Picking scaricato, si attiva in automatico il flag scaricato per la DDT; Se non attivo, il flag non viene attivato; 
+**Control de Picking descargado (Controlla Picking scaricato)**: si está activo, al crear una factura desde un Picking descargado, se activa automáticamente el indicador descargado para el DDT; si no está activo, el indicador no se activa; 
 
-**Blocca quantità Picking**: se attivo, blocca la quantità e la quantità alternativa nella fattura  creata da lista UDC; Se non attivo non blocca la quantità ma la lascia libera; Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking e UDC;
+**blocca quantità picking**: si está activo, bloquea la cantidad y la cantidad alternativa en la factura creada desde la lista UDC; si no está activo, no bloquea la cantidad pero la deja libre; Se recomienda activar siempre este indicador si se utiliza la gestión de picking y UDC;
 
-**Calcola provvigioni**: se attivo, le fatture appartenenti a questa tipologia, verranno conteggiate nel il calcolo delle provvigioni agenti;
+**calcola provvigioni**: si está activo, las facturas pertenecientes a este tipo se incluirán en el cálculo de las comisiones de los agentes;
 
-**Scollega DDT**: se attivo, è possibile scaricare da magazzino anche le fatture differite (Normalmente lo scarico magazzino avviene tramite DDT);
+**scollega ddt**: si está activo, es posible descargar del almacén también las facturas diferidas (Normalmente la descarga de almacén se realiza a través de DDT);
 
-**Non evade Picking**: se attivo, non farà evadere il picking qualora venga generata una fattura;
+**non evade picking**: si está activo, no cumplirá el picking si se genera una factura;
 
-**Prezzo Ivato**: la gestione dei prezzi ivati si attiva tramite questo parametro presente in tutti i documenti dell’area vendita a partire dai listini di vendita. Nella ripresa prezzi di un documento con tipologia Prezzo Ivato, si cerca nei listini, con lo stesso flag Prezzo Ivato settato, e si calcolano gli sconti partendo sempre dal prezzo ivato. Dal prezzo ivato utilizzando l’aliquota iva dell’anagrafica cliente o dell’anagrafica articolo  viene calcolato il prezzo non ivato.Nei documenti sono visibili le colonne Prezzo e Prezzo Ivato Attenzione! se non esiste un listino valido con settato il flag Prezzo Ivato e in anagrafica articoli c’è un prezzo di vendita, viene proposto come Prezzo Ivato il prezzo di vendita. Per capire il funzionamento della ripresa Prezzi e dei prezzi ivati e non ivati seguire l’articolo Ripresa Prezzi e Sconti nei documenti di vendita.  
+**Precio con IVA (Precio Ivato)**: la gestión de precios con IVA se activa a través de este parámetro presente en todos los documentos del área de ventas a partir de las listas de precios. En la recuperación de precios de un documento con tipo Precio con IVA, se busca en las listas, con el mismo indicador Precio con IVA establecido, y se calculan los descuentos a partir del precio con IVA. Desde el precio con IVA, utilizando la tasa de IVA del registro del cliente o del registro del artículo, se calcula el precio sin IVA. En los documentos se pueden ver las columnas Precio y Precio con IVA. ¡Atención! si no existe una lista de precios válida con el indicador Precio con IVA establecido y en el registro de artículos hay un precio de venta, se propondrá como Precio con IVA el precio de venta. Para entender el funcionamiento de la recuperación de Precios y de los precios con y sin IVA, siga el artículo Recuperación de Precios y Descuentos en los documentos de venta. 
 
-**Competenza economica**: se attivo, il tipo fattura ha competenza economica e quindi sarà necessario impostare le date del periodo di competenza;
+**competenza economica**: si está activo, el tipo de factura tiene competencia económica y por lo tanto será necesario establecer las fechas del período de competencia;
 
-**Causale Competenza Economica**: in questo campo va indicata la causale di competenza economica utilizzata in contabilizzazione delle fatture; Questo valore potrà essere scelto da un elenco; Per approfondimenti fare riferimento alle [Causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates);
+**Causa de Competencia Económica (Causale Competenza Economica)**: en este campo se debe indicar la causa de competencia económica utilizada en la contabilización de las facturas; Este valor se podrá elegir de una lista; Para más detalles, consulte las [Causas de contabilidad general (Causali di contabilità generale)](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates);
 
-**Gestione matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice; Se non attivo, non viene visualizzato questo TAB e la conseguente matrice;
+**gestione matrici extra data**: si está activo, permite visualizar, en caso de gestión de artículos con matriz, una pestaña adicional para la imputación de los valores de cantidad por cada celda de la matriz; si no está activo, no se visualizará esta pestaña y la consiguiente matriz;
 
-**Stampa**: in questo campo è possibile impostare la stampa di default da utilizzare per questa tipologia di documento; ricordiamo che, in fase di stampa documento, sarà necessario selezionare il report 'Stampe multiple' per utilizzare in automatico la stampa di default;
+**stampa**: en este campo es posible establecer la impresión predeterminada a utilizar para este tipo de documento; recordemos que, en la fase de impresión del documento, será necesario seleccionar el informe 'Impresiones múltiples' para usar automáticamente la impresión predeterminada;
 
-**Numero di copie**: in questo campo vengono impostate il numero di copie documento da stampare; 
+**numero di copie**: en este campo se establece el número de copias del documento a imprimir; 
 
-**Gestione Conai**: questo bottone abilita la gestione CONAI (Consorzio Nazionale Imballaggi) per il tipo fattura;
+**gestione conai**: este botón habilita la gestión CONAI (Consorzio Nazionale Imballaggi) para el tipo de factura;
 
-**Gestione cespiti**: questo flag abilita la gestione dei cespiti nel tipo fattura e nel campo successivo va specificato il tipo di operazione dei cespiti;
+**gestione cespiti**: este indicador habilita la gestión de activos en el tipo de factura y en el siguiente campo se debe especificar el tipo de operación de los activos;
 
-**Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
+**tipo operazione**: en esta caja de combinación es posible seleccionar el tipo de operación de los activos entre diversas opciones (revalorización, destrucción, plusvalía, etc.).       
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+**Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: en esta columna es posible asociar el tipo de descuento a proponer cuando los descuentos se ingresan directamente en la columna *sconti articolo* de la cuadrícula de artículos de los documentos (para más detalles, consulte el artículo [Gestión de Widget de descuentos simplificados (Gestione Widget sconti semplificato)](/docs/sales/sales-flow/discount-widget)).

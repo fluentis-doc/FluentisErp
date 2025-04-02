@@ -1,22 +1,14 @@
 ---
-title: Filtro
+title: filtro
 sidebar_position: 2
 ---
 
-La parte superiore della maschera è dedicata all'impostazione dei filtri di ricerca. Una volta impostate alla base della maschera le date di registrazione competenza e l'eventuale registrazione con stato provvisorio è sufficiente premere il pulsante di contabilizzazione: se tutto va a buon fine le righe selezionate scompariranno dalla griglia e dalla form di rollback sarà possibile visualizzare in anteprima il risultato.
+La parte superior del formulario está dedicada a la configuración de los filtros de búsqueda. Una vez que se establezcan en la parte inferior del formulario las fechas de registro correspondiente y el posible registro con estado provisional, solo es necesario presionar el botón de contabilización: si todo sale bien, las líneas seleccionadas desaparecerán de la cuadrícula y desde el formulario de reversión será posible previsualizar el resultado.
 
 ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/filter/image01.png)
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca contabilizzazioni | Ricerca la lista dei compensi da contabilizzare. |
-| Contabilizzazione compensi | Esegue la contabilizzazione compensi per le righe selezionate. |
-| Modifica compenso | Apre in modifica il compenso selezionato. |
-
-
-
-
-
-
+| Buscar contabilizaciones (Ricerca contabilizzazioni) | Busca la lista de los compensos por contabilizar. |
+| Contabilización de compensos (Contabilizzazione compensi) | Ejecuta la contabilización de compensos para las líneas seleccionadas. |
+| Modificar compenso (Modifica compenso) | Abre para modificar el compenso seleccionado. |

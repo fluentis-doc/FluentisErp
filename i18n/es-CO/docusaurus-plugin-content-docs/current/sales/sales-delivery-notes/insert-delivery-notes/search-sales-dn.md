@@ -1,12 +1,12 @@
 ---
-title: Ricerca DDT
+title: ricerca ddt
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Vendite > DDT > Ricerca DDT**.
+El formulario se abre a través de la ruta **Ventas > DDT > ricerca ddt (Vendite > DDT > Ricerca DDT)**.
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Para la explicación de las funcionalidades comunes a los documentos de venta, consulte la sección [Ventas (Vendite)](/docs/sales/sales-intro).
 
-#### Pulsanti specifici   
-> **Storno**: con questa procedura è possibile stornare parzialmente o totalmente i DDT. Una volta cliccato il pulsante, si aprirà un pop up dove  selezionare le righe articolo da stornare con le relative quantità, inserire il Tipo documento da creare (sarà possibile selezionare solo tipologie di DDT con natura *Reso*) e inserire la Causale di storno del magazzino (generalmente un carico).      
-Il collegamento tra il documento di storno e quello di origine deve essere inserito manualmente nella *Testata* del nuovo documento.
+#### Botones específicos (Pulsanti specifici)  
+> **storno**: con este procedimiento es posible anular parcial o totalmente los DDT. Una vez que se haga clic en el botón, se abrirá un pop-up donde se deben seleccionar las líneas de artículo a anular con sus respectivas cantidades, ingresar el Tipo de documento a crear (solo se podrá seleccionar tipos de DDT con naturaleza *reso*) e ingresar la Causa de anulación del almacén (generalmente una carga).  
+El vínculo entre el documento de anulación y el de origen debe ser ingresado manualmente en la *testata* del nuevo documento.

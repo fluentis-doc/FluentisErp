@@ -1,32 +1,32 @@
 ---
-title: Storico movimenti fisici di commessa
+title: storico movimenti fisici di commessa
 sidebar_position: 2
 ---
 
-Nello ***Storico movimenti fisici di commessa*** abbiamo visibilità delle quantità di produzione collegate ai progetti/commesse. In particolare abbiamo:
+En el **storico movimenti fisici di commessa*** tenemos visibilidad de las cantidades de producción relacionadas con proyectos/pedidos. En particular, tenemos:
 
-- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- [**area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
 
-- ***Anno*** e ***Periodo***
+- **anno*** y **periodo***
 
-- ***Progetto*** di riferimento
+- **progetto*** de referencia
 
-- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di origine del movimento
+- [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de origen del movimiento
 
-- ***Classe*** e ***Codice*** dell'articolo prodotto/lavorato
+- **classe*** y **codice*** del artículo producido/trabajado
 
-- ***Fase*** e ***Sottofase*** di produzione
+- **fase*** y **sottofase*** de producción
 
-- [***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimento
+- [**unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimiento
 
-- ***Quantità da produzione***, cioè il consuntivo rilevato dalle dichiarazioni di produzione
+- **quantità da produzione***, es decir, el informe registrado de las declaraciones de producción
 
-- ***Quantità da fase ciclo***, cioè la quantità rispetto al teorico di ciclo
+- **quantità da fase ciclo***, es decir, la cantidad respecto al teórico de ciclo
 
-- ***Quantità da fase standard***, cioè la quantità rispetto alla fase standard
+- **quantità da fase standard***, es decir, la cantidad respecto a la fase estándar
 
-- ***Lista tempi*** va di pari passo con il tipo di quantità rilevato nei campi precedenti
+- **lista tempi*** va de la mano con el tipo de cantidad registrada en los campos anteriores
 
-- ***Sorgente*** indica qual è l'origine del dato rilevato, tipicamente la *Produzione*
+- **sorgente*** indica cuál es el origen del dato registrado, típicamente la *produzione*
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+No está permitida la eliminación ni la modificación o la inserción de datos en la cuadrícula.

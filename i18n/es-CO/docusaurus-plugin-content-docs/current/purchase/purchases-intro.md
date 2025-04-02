@@ -1,79 +1,79 @@
 ---
-title: ACQUISTI
+title: acquisti
 sidebar_position: 1
 ---
 
-La gestione **Acquisti** di Fluentis ERP è concepita per supportare gli operatori aziendali nella gestione rapida di tutta la documentazione relativa alla gestione della Supply Chain.   
+La gestión de **acquisti** de Fluentis ERP está diseñada para apoyar a los operadores empresariales en la gestión rápida de toda la documentación relacionada con la gestión de la cadena de suministro (Supply Chain).
 
-Tramite l'emissione di ordini di fornitura, che possono avvenire in modalità manuale o automatica, è possibile procedere con l'approvvigionamento delle merci finalizzate alla gestione della produzione o del magazzino e la creazione di tutti i documenti necessari per il processo di fornitura, tra cui *DDT di acquisto*, *Fatture*, *Richieste di Acquisto*, *Richieste di Offerta*.   
+A través de la emisión de órdenes de suministro, que pueden realizarse de manera manual o automática, es posible proceder con el aprovisionamiento de mercancías destinadas a la gestión de la producción o del almacén, así como la creación de todos los documentos necesarios para el proceso de suministro, incluyendo *ddt di acquisto*, *fatture*, *richieste di acquisto*, *richieste di offerta*.
 
-L’interconnessione con l’area **Logistica** garantisce l'aggiornamento delle giacenze e la generazione di richieste di reintegro delle scorte, mentre l'integrazione con l’area **Amministrazione** facilita la gestione finanziaria degli acquisti, assicurando un processo fluido e la registrazione accurata delle transazioni.    
-L'area *Acquisti* è integrata anche con la **Pianificazione** mediante la generazione di RDA a partire da richieste di materiale necessario per la produzione e con l'area **Vendite** grazie alla possibilità di generare ordini fornitore a partire da ordini clienti.
+La interconexión con el área de **Logística** garantiza la actualización de existencias y la generación de solicitudes de reintegro de inventario, mientras que la integración con el área de **Administración** facilita la gestión financiera de las compras, asegurando un proceso fluido y el registro preciso de las transacciones.
+El área de *Compras* también está integrada con la **Planificación** a través de la generación de RDA a partir de solicitudes de material necesario para la producción y con el área de **Ventas** gracias a la posibilidad de generar órdenes de proveedor a partir de órdenes de clientes.
 
-## Moduli dell'area
+## Módulos del área (Moduli dell'area)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-requests/general-overview">Richieste di acquisto</Link>
-        <p>Elaborazione della richiesta di materiale da acquistare a partire da richieste provenienti da altri reparti o segnalazioni di carenze. </p>
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Solicitudes de compra (Richieste di acquisto)</Link>
+        <p>Elaboración de la solicitud de material a comprar a partir de solicitudes provenientes de otros departamentos o reportes de faltantes.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/offer-request/settings">Richieste di offerta</Link>
-        <p>Confronto preventivi dei fornitori per scegliere l'offerta migliore e trasformarla in ordine di acquisto.</p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordini fornitori</Link>
-        <p>Gestione e organizzazione del processo di acquisto di beni e servizi dai fornitori. </p>
-    </div>
-    <div className="card">
-###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Ricevimento merci</Link>
-        <p>Registrazione dell'arrivo della merce pirma della creazione del DDT o della fattura di acquisto. </p>
+###     <Link to="/docs/purchase/offer-request/settings">Solicitudes de oferta (Richieste di offerta)</Link>
+        <p>Comparación de presupuestos de proveedores para elegir la mejor oferta y transformarla en orden de compra.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT di acquisto</Link>
-        <p>Tracciamento e documentazione del trasferimento delle merci in entrata e registrazione a magazzino. </p>
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Órdenes de proveedores (Ordini fornitori)</Link>
+        <p>Gestión y organización del proceso de compra de bienes y servicios de los proveedores.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/purchase-invoices/general-overview">Fatture di acquisto</Link>
-        <p>Attestazione dell'importo dovuto dall'azienda a un fornitore per beni o servizi ricevuti, specificando i costi, l'IVA e le condizioni di pagamento. </p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/purchase/purchase-price-lists/general-overview">Listini fornitori</Link>
-        <p>Gestione e aggiornamento dei prezzi concordati con i fornitori, automatizzando l'applicazione di prezzi, sconti ed eventuali condizioni personalizzate. </p>
-    </div>
-    <div className="card">
-###     Commesse di acquisto
-        <p>Gestione di commesse di acquisto sulla base di contratti precedentemente negoziati con il fornitore. </p>
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Recepción de mercancías (Ricevimento merci)</Link>
+        <p>Registro de la llegada de la mercancía antes de la creación del DDT o la factura de compra.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     Gestione prezzi
-        <p><Link to="/docs/purchase/price-control/definition" className="bold-link">Definizione politiche sconti</Link></p>
-        <p>Applicazione di sconti associati al fornitore, alla classe articolo e/o alle categorie di sconto.</p>
-        <p><Link to="/docs/purchase/price-control/formulas" className="bold-link">Formule di aggiornamento politiche prezzi/sconti</Link></p>
-        <p>Definizione delle regole di aggiornamento dei prezzi nei listini di acquisto/vendita. </p>
-        <p><Link to="/docs/purchase/price-control/correspondence" className="bold-link">Corrispondenza categorie sconto acq//ven</Link></p>
-        <p>Abbinamento della categoria di sconto generica alle condizioni di sconto da applicare ai propri clienti/fornitori.</p>
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT de compra (DDT di acquisto)</Link>
+        <p>Seguimiento y documentación de la transferencia de mercancías entrantes y registro en el almacén.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-invoices/general-overview">Facturas de compra (Fatture di acquisto)</Link>
+        <p>Acreditación del importe adeudado por la empresa a un proveedor por bienes o servicios recibidos, especificando los costos, el IVA y las condiciones de pago.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-price-lists/general-overview">Listas de precios de proveedores (Listini fornitori)</Link>
+        <p>Gestión y actualización de los precios acordados con los proveedores, automatizando la aplicación de precios, descuentos y eventuales condiciones personalizadas.</p>
+    </div>
+    <div className="card">
+###     Commisiones de compra
+        <p>Gestión de comisiones de compra basadas en contratos previamente negociados con el proveedor.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     Gestión de precios (Gestione prezzi)
+        <p><Link to="/docs/purchase/price-control/definition" className="bold-link">Definición políticas de descuentos (Definizione politiche sconti)</Link></p>
+        <p>Aplicación de descuentos asociados al proveedor, a la clase de artículo y/o a las categorías de descuento.</p>
+        <p><Link to="/docs/purchase/price-control/formulas" className="bold-link">Fórmulas de actualización políticas de precios/descuentos (Formule di aggiornamento politiche prezzi/sconti)</Link></p>
+        <p>Definición de las reglas de actualización de precios en las listas de compra/venta.</p>
+        <p><Link to="/docs/purchase/price-control/correspondence" className="bold-link">Correspondencia categorías descuento compra/venta (Corrispondenza categorie sconto acq//ven)</Link></p>
+        <p>Asociación de la categoría de descuento genérica a las condiciones de descuento que se aplicarán a sus clientes/proveedores.</p>
     </div>
 </div>
 
-## Fast start
+## Inicio rápido (Fast start)
 
-:::important ATTENZIONE
-Prima di utilizzare le funzionalità disponibili è necessario configurare le Tabelle e i Parametri dell'area.
+:::important ATENCIÓN (ATTENZIONE)
+Antes de utilizar las funcionalidades disponibles, es necesario configurar las Tablas y Parámetros del área.
 
-In alternativa è disponibile la procedura di Fast Start descritta di seguito. 
+Alternativamente, está disponible el procedimiento de Inicio Rápido descrito a continuación.
 :::
 
-Il Fast Start è una procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale, consentendo di popolare automaticamente il sistema con parametri e tabelle di base. Questa funzionalità riduce notevolmente il tempo e lo sforzo richiesto per la configurazione iniziale, evitando l'inserimento manuale di ogni singola impostazione.    
-
-Consigliamo di consultare il relativo [articolo](/docs/guide/fast-start#tabelle-acquisti) prima di affrontare il modulo.
+El Inicio Rápido es un procedimiento diseñado para simplificar y acelerar la inicialización del software de gestión, permitiendo poblar automáticamente el sistema con parámetros y tablas básicas. Esta funcionalidad reduce significativamente el tiempo y el esfuerzo requerido para la configuración inicial, evitando la entrada manual de cada configuración.
+ 
+Recomendamos consultar el [artículo relacionado](/docs/guide/fast-start#tabelle-acquisti) antes de abordar el módulo.

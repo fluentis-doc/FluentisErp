@@ -1,20 +1,14 @@
 ---
-title: Contabilizzazione Distinta Anticipi
+title: contabilizzazione distinta anticipi
 sidebar_position: 1
 ---
 
-Da questa posizione, dopo aver premuto Ricerca, è possibile contabilizzare le varie distinte inserite.
+Desde esta posición, después de presionar Buscar (Ricerca), es posible contabilizar las distintas listas ingresadas.
 
-Verrà effettuata una scrittura che accredita il conto corrente ed in contropartita rileva il debito verso la banca per anticipi.
+Se realizará un asiento que acredita la cuenta corriente y, a su vez, registra la deuda con el banco por anticipos.
 
-Occorre selezionare la **causale conatbile** desiderata (lo schema della registrazione è comunque gestito dal programma indipendentemente dal template) ed eventualmente cambiare la data di registrazione se necessario.
+Es necesario seleccionar la **causal contable (causale conatbile)** deseada (el esquema del registro es gestionado por el programa independientemente de la plantilla) y, si es necesario, cambiar la fecha de registro.
 
-La procedura di contabilizzazione può essere ripristinata come di consueto dal tab **Precedente**.
+El procedimiento de contabilización se puede restaurar como es habitual desde la pestaña **precedente**.
 
 ![](/img/it-it/treasury/advance/accounting/advances-list-accounting/image01.png)
-
-
-
-
-
-

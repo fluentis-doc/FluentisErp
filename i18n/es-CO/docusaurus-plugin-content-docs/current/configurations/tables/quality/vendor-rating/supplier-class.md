@@ -1,53 +1,53 @@
 ---
-title: Classi di fornitura
+title: Clases de suministro (Classi di fornitura)
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Classi di fornitura**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Calificación de proveedores > Clases de suministro**.
 
-I dati presenti in questa tabella sono utilizzati per catalogare le diverse *Classi di fornitura* dei fornitori.  
-Nella tabella si possono associare alcune informazioni che verranno poi proposte al fornitore. 
-Alcuni esempi di utilizzo dei *Classi di fornitura* li troviamo nelle gestioni:
-> **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+Los datos presentes en esta tabla se utilizan para catalogar las diferentes *Clases de suministro* de los proveedores.  
+En la tabla se pueden asociar algunas informaciones que luego se propondrán al proveedor.  
+Algunos ejemplos de uso de las *Clases de suministro* los encontramos en las gestiones:  
+> **anagrafiche contatti** - en la pestaña *Datos contables > Datos de calidad (Dati contabili > Dati qualità)*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Classi di fornitura**
+**Búsqueda de Clases de suministro**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtrado y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Classi di fornitura**
+**Inserción de Clases de suministro**
 
-Per poter inserire nuove *Classi di fornitura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *Clases de suministro* es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos:*
 
-> **Classe fornitura**   
->> **Codice**: è il codice della *Classe di fornitura*.   
->> **Descrizione**: è la descrizione della *Classe di fornitura*.   
+> **classe fornitura**  
+>> **codice**: es el código de la *Clase de suministro*.   
+>> **descrizione**: es la descripción de la *Clase de suministro*.   
 >
-> **Check-list**   
-> la *Check-list* e la *Periodicità* vengono proposti ai fornitori associati alla *Classe di fornitura* e vengono utilizzati per la loro *Valutazione iniziale e periodica*.
->> **Codice**: è il codice della *Check-list*.   
->> **Descrizione**: è la descrizione della *Check-list*.   
->> **Periodicità (in mesi)**: è il periodo (espresso in mesi).   
+> **check-list**  
+> la *check-list* y la *Periodicidad (Periodicità)* se proponen a los proveedores asociados a la *Clase de suministro* y se utilizan para su *Evaluación inicial y periódica*.  
+>> **codice**: es el código de la *Lista de verificación*.   
+>> **descrizione**: es la descripción de la *Lista de verificación*.   
+>> **Periodicidad (en meses) (Periodicità)**: es el período (expresado en meses).   
 >
-> **Tipo controllo**   
->> **Codice**: è il codice della *Tipo controllo* da effettuare per la *Classe di fornitura*.   
->> **Descrizione**: è la descrizione della *Tipo controllo* da effettuare per la *Classe di fornitura*.   
->> **Da controllare**: è il numero di articoli da controllare sul totale specificato in *Sul totale*.   
->> **Sul totale**: è il numero totale degli articoli sul quale basare quanti articoli devono essere controllati e specificato in *Da controllare*.   
+> **tipo controllo**  
+>> **codice**: es el código del *Tipo de control* que se debe realizar para la *Clase de suministro*.   
+>> **descrizione**: es la descripción del *Tipo de control* que se debe realizar para la *Clase de suministro*.   
+>> **da controllare**: es el número de artículos a controlar sobre el total especificado en *sul totale*.   
+>> **sul totale**: es el número total de artículos sobre el cual basar cuántos artículos deben ser controlados y especificado en *da controllare*.   
 >
-> **Gestione bonus**   
-> il *Bonus* e la *Periodicità* vengono ai fornitori associati alla *Classe di fornitura* e vengono utilizzati per la loro *Valutazione periodica su Non conformità*.
->> **Valore proposto**: è il bonus (punteggio) iniziale dato ai fornitori della classe;   
->> il *Bonus* assegnato al fornitore potrà essere successivamente variato;   
->> durante la valutazione il punteggio verrà decrementato sulla base dei valori attribuiti alle Non conformità date al fornitore in un determinato periodo.   
->> **Periodicità (in mesi)**: è il periodo (espresso in mesi);   
->> la *Periodicità* assegnata al fornitore potrà essere successivamente variata;   
->> è il periodo di valutazione delle Non conformità date al fornitore per decrementare il *Bonus* iniziale.   
+> **gestione bonus**  
+> el *Bonus* y la *Periodicidad (Periodicità)* se ofrecen a los proveedores asociados a la *Clase de suministro* y se utilizan para su *Evaluación periódica sobre No conformidades*.  
+>> **valore proposto**: es el bono (puntuación) inicial otorgado a los proveedores de la clase;  
+>> el *Bonus* asignado al proveedor podrá ser modificado posteriormente;  
+>> durante la evaluación, la puntuación se decrementará con base en los valores atribuidos a las No conformidades dadas al proveedor en un período determinado.  
+>> **Periodicidad (en meses) (Periodicità)**: es el período (expresado en meses);  
+>> la *Periodicidad* asignada al proveedor podrá ser modificada posteriormente;  
+>> es el período de evaluación de las No conformidades dadas al proveedor para disminuir el *Bonus* inicial.   
 >
-> **Note**: annotazioni libere.
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

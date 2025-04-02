@@ -1,20 +1,20 @@
 ---
-title: Note Contatto
+title: Notas de Contacto (Note Contatto)
 sidebar_position: 5
 ---
 
-Questa è la quarta tab dei **Contatti CRM**.
+Esta es la cuarta pestaña de los **contatti crm**.
 
-In questa tab è possibile visualizzare le note relative al contatto.
-All’interno della tab sono presenti i campi di filtro, tramite i quali è possibile fare una ricerca delle note.
-Per inserire una nuova nota è sufficiente premere il pulsante ![](/img/neutral/common/new.png) sulla ribbon bar. 
+En esta pestaña es posible visualizar las notas relacionadas con el contacto.  
+Dentro de la pestaña hay campos de filtro, mediante los cuales se puede buscar las notas.  
+Para insertar una nueva nota, simplemente presione el botón ![](/img/neutral/common/new.png) en la barra de herramientas.  
 
-Nella maschera di inserimento sono presenti i seguenti campi:
+En el formulario de entrada, hay los siguientes campos:
 
-**Titolo**: è il titolo della nota, che permetterà di ricercare la nota più facilmente;
+**titolo**: es el título de la nota, que facilitará la búsqueda de la nota;  
 
-**Data**: si intende la data di inserimento della nota;
+**data**: se refiere a la fecha de inserción de la nota;  
 
-**Annotazioni**: in questo campo varchar è possibile scrivere il dettaglio della nota;
+**annotazioni**: en este campo varchar se puede escribir el detalle de la nota;  
 
-**Tipo nota contatto**: è possibile indicare la [tipologia di nota](/docs/configurations/tables/crm/contacts/contact-note-type) che si sta inserendo.
+**tipo nota contatto**: es posible indicar la [tipología de nota (tipologia di nota)](/docs/configurations/tables/crm/contacts/contact-note-type) que se está insertando.

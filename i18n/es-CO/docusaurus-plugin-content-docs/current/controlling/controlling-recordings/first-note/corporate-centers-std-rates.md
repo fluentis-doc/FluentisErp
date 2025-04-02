@@ -1,27 +1,26 @@
 ---
-title: Tariffe standard centri aziendali
+title: tariffe standard centri aziendali
 sidebar_position: 3
 ---
 
-In questa form è possibile inserire (tramite il tasto **Nuovo**) delle tariffe standard fisse, non calcolate tramite quozienti definiti tra il risultato di un modello di riclassificazione ed il risultato di un centro aziendale.
+En este formulario es posible ingresar (mediante el botón **nuovo**) tarifas estándar fijas, no calculadas mediante cocientes definidos entre el resultado de un modelo de reclasificación y el resultado de un centro empresarial.
 
-Tali tariffe saranno poi utilizzate dai cost driver (in particolare dal criterio di distribuzione *Reversione su produzione a tariffa standard*) per valorizzare i movimenti ed i risultati dei centri tipicamente movimentati a grandezze fisiche e quindi non economiche.
+Estas tarifas serán utilizadas por los costos controladores (cost drivers) (en particular por el criterio de distribución *Reversión sobre producción a tarifa estándar*) para valorar los movimientos y resultados de los centros típicamente movidos a magnitudes físicas y, por ende, no económicas.
 
-Per codificare una tariffa fissa dovremo inserire:
-- una [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi (ad esempio *Consuntivo*, piuttosto che *Budget*) 
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento (tipicamente un centro valorizzato a grandezze fisiche)
-- un ***Codice*** della tariffa
-- una ***Descrizione*** della tariffa.
+Para codificar una tarifa fija, debemos ingresar:
+- una [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de análisis (por ejemplo, *consuntivo*, en lugar de *budget*),  
+- el [***Centro empresarial***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia (típicamente un centro valorado a magnitudes físicas),  
+- un ***Código*** de la tarifa,  
+- una ***Descripción*** de la tarifa.  
 
-Nella griglia sottostante andremo poi ad inserire i dettagli della tariffa:
-- L'***Anno*** di riferimento
-- il range ***Periodo da*** e ***Periodo a***
-- il ***Valore fisso*** della tariffa
-- il ***Valore variabile*** della tariffa
+En la cuadrícula inferior, luego ingresaremos los detalles de la tarifa:
+- El **anno*** de referencia,
+- el rango **periodo da*** y **periodo a***,
+- el **valore fisso*** de la tarifa,
+- el **valore variabile*** de la tarifa.
 
-La quota fissa e variabile fa riferimento alla ripartizione dei dati del controlling in costi fissi e costi variabili, che si imposta già a partire dal *Piano dei conti* tramite il campo **Variabilità** e la tabella **Variabilità centri di costo**.
+La cuota fija y variable se refiere a la distribución de los datos del controlling en costos fijos y costos variables, que se configura desde el *piano dei conti* mediante el campo **Variabilidad** y la tabla **variabilità centri di costo**.
 
-
-:::tip Approfondimento
-In base alla definizione della percentuale di variabilità ogni movimento economico che viene ripreso da una chiusura infrannuale viene suddiviso in quota fissa e/o variabile. Potrebbe essere dunque al 100% fisso, oppure al 100% variabile, oppure ad esempio al 40% fisso e 60% variabile. Le tariffe valorizzeranno dunque separatamente la componente fissa e variabile del costo.
+:::tip Información adicional (Approfondimento)
+Conforme a la definición del porcentaje de variabilidad, cada movimiento económico que se retoma de un cierre interanual se divide en cuota fija y/o variable. Podría ser, por lo tanto, 100% fijo, o 100% variable, o, por ejemplo, 40% fijo y 60% variable. Las tarifas valorizarán, entonces, separadamente la componente fija y variable del costo.
 :::

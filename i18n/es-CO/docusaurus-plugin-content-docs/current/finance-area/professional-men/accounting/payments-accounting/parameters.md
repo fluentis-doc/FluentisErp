@@ -1,23 +1,23 @@
 ---
-title: Parametri
+title: parametri
 sidebar_position: 3
 ---
 
-Nella presente scheda si gestiscono i parametri contabili principali della procedura: 
+En esta ficha se gestionan los parámetros contables principales del procedimiento:  
 
-le **date di registrazione e competenza**, la **causale** di pagamento da utilizzare, i s**ottoconti della banca da addebitare** e quello di **rilevazione del debito della ritenuta (non obbligatorio**, se non presente sarà utilizzato il sottoconto inserito nel tipo ritenuta). 
+las **fechas de registro y competencia (date di registrazione e competenza)**, la **causal** de pago a utilizar, los **subcuentas del banco a debitar (sottoconti della banca da addebitare)** y la de **registro de la deuda de la retención (rilevazione del debito della ritenuta) (no obligatorio**, si no está presente se utilizará el subcuenta ingresado en el tipo de retención).  
 
-Il flag di chiusura partite, proposto di default, non va mai tolto (al fine di gestire la chiusura partite).
+El indicador de cierre de partidas, sugerido por defecto, nunca debe eliminarse (para gestionar el cierre de las partidas).
 
  
 
-Le opzioni di raggruppamento previste sono:
+Las opciones de agrupamiento previstas son:
 
-Il default **Singola registrazione** (senza flag **Raggruppa conti**): in questo caso sarà creata un'unica registrazione con un unico movimento banca (per facilitare la riconciliazione dei movimenti con l'estratto conto bancario) mentre gli altri sottoconti saranno dettagliati compenso per compenso (per un controllo maggiore dei movimenti sul conto delle ritenute). In caso sia impostato anche il flag di raggruppamento conti saranno raggruppati i dati anche degli altri sottoconti uguali movimentati;
+El predeterminado **singola registrazione** (sin el indicador **raggruppa conti**): en este caso, se creará un único registro con un solo movimiento bancario (para facilitar la conciliación de los movimientos con el extracto de cuenta bancaria), mientras que los otros subcuentas se detallarán compenso por compenso (para un mayor control de los movimientos en la cuenta de retenciones). En caso de que también se configure el indicador de agrupamiento de cuentas, se agruparán los datos de los otros subcuentas iguales movilizados;
 
-**Nessun raggruppamento**: in questo caso ogni compenso avrà una registrazione separata.
+**nessun raggruppamento**: en este caso, cada compenso tendrá un registro separado.
 
-**Raggruppa per sottoconto**: in questo caso il raggruppamento sarà effettuato percipiente per percipiente;
+**raggruppa per sottoconto**: en este caso, la agrupación se realizará por perceptor.
 
  
 
@@ -25,20 +25,12 @@ Il default **Singola registrazione** (senza flag **Raggruppa conti**): in questo
 
  
 
-La sezione successiva, attivata dal flag di **Creazione automatica pagamenti fornitori**, consente di creare una distinta di pagamento nel modulo ** [Pagamenti fornitori](/docs/treasury/vendors-payments/create-vendor-payments) **, al fine di stamparla e inviare telematicamente il tracciato dei bonifici bancari via homebanking. I campi da impostare sono: il tipo di pagamento della distinta, il campo conto corrente (viene proposto dall'anagrafica collegata al sottoconto banca inserito in alto), la data di emissione del pagamento ed una eventuale data valuta beneficiario (previa attivazione del flag corrispondente) ed un'eventuale nota finale da riportare in contabilità in corrispondenza della riga banca.
+La sección siguiente, activada por el indicador de **creazione automatica pagamenti fornitori**, permite crear un listado de pago en el módulo **[Pagos a proveedores (Pagamenti fornitori)](/docs/treasury/vendors-payments/create-vendor-payments)**, con el fin de imprimirlo y enviar telemáticamente el archivo de transferencias bancarias vía homebanking. Los campos a configurar son: el tipo de pago del listado, el campo cuenta corriente (que se propone desde el registro conectado al subcuenta del banco ingresado arriba), la fecha de emisión del pago y una eventual fecha valor beneficiario (previa activación del indicador correspondiente) y una éventuale nota final para registrar en contabilidad en la línea del banco.
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/parameters/image02.png)
 
  
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Contabilizzazione pagamenti | Esegue la contabilizzazione dei pagamenti selezionati. |
-
-
-
-
-
-
+| Contabilización de pagos (Contabilizzazione pagamenti) | Ejecuta la contabilización de los pagos seleccionados. |

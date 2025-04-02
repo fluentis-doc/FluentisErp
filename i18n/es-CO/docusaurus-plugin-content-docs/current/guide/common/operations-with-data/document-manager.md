@@ -1,9 +1,9 @@
 ---
-title: Document manager
+title: document manager
 sidebar_position: 11
 ---
 
-**Fluentis ERP** offre una comodissima ed utilissima gestione Documentale integrata.
+**Fluentis ERP** ofrece una gestión documental integrada muy cómoda y útil.
 
-E' infatti possibile, in tutte le aree del gestionale, agganciare qualsiasi documento in forma di attachment digitale, al fine di importarlo nel repository interno, in modo da essere facilmente ricercato e consultato.
-E' possibile strutturare l'organizzazione dei documenti in cartelle di ricerca e tipicizzare ogni documento in modo tale da categorizzarlo e quindi identificarlo rapidamente.
+De hecho, es posible, en todas las áreas del sistema de gestión, adjuntar cualquier documento en forma de archivo digital, con el fin de importarlo en el repositorio interno, de manera que sea fácilmente buscado y consultado.  
+Es posible estructurar la organización de los documentos en carpetas de búsqueda y tipificar cada documento de tal manera que se pueda categorizar y, por lo tanto, identificar rápidamente.

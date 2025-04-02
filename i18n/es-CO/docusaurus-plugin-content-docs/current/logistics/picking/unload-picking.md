@@ -1,40 +1,40 @@
 ---
-title: Scarico picking
+title: scarico picking
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La procedura di Scarico Picking in Fluentis è progettata per facilitare la movimentazione degli articoli prelevati dal magazzino durante il processo di picking. Questa funzionalità consente agli utenti di scegliere uno o più picking già creati e, mediante un'interfaccia intuitiva, effettuare le registrazioni di magazzino necessarie per il corretto scarico degli articoli.
+:::important ¿Para qué sirve? (A cosa serve)  
+El procedimiento de Descarga de Picking en Fluentis está diseñado para facilitar la manipulación de los artículos extraídos del almacén durante el proceso de picking. Esta funcionalidad permite a los usuarios seleccionar uno o más pickings ya creados y, mediante una interfaz intuitiva, realizar los registros de almacén necesarios para la correcta descarga de los artículos.
 
-All'interno della procedura, gli utenti possono applicare filtri per selezionare i picking desiderati e specificare la data di registrazione a magazzino. 
-Una volta selezionati, è possibile avviare il processo di scarico, assicurando che le movimenti siano registrati correttamente nel sistema. 
+Dentro del procedimiento, los usuarios pueden aplicar filtros para seleccionar los pickings deseados y especificar la fecha de registro en el almacén.  
+Una vez seleccionados, es posible iniciar el proceso de descarga, asegurando que los movimientos se registren correctamente en el sistema.  
 
-Inoltre, il modulo offre funzionalità per gestire anomalie, come articoli senza magazzino e causale, o per visualizzare articoli non scaricati, migliorando così l'efficienza operativa e la tracciabilità delle giacenze.
+Además, el módulo ofrece funcionalidades para gestionar anomalías, como artículos sin almacén y motivo, o para visualizar artículos no descargados, mejorando así la eficiencia operativa y la trazabilidad de los inventarios.
 :::
 
-Selezionando uno o più picking e premendo il pulsante **Scarico** si apre una finestra che permette di effettuare la movimentazione dei picking.
+Al seleccionar uno o más pickings y presionar el botón **scarico** se abre una ventana que permite realizar la manipulación de los pickings.
 
 **Filtro**
 
-In questo tab è possibile ricercare i picking desiderati in base ai filtri inseriti. E' inoltre possibile specificare la **Data di registrazione di magazzino**.
+En esta pestaña es posible buscar los pickings deseados según los filtros ingresados. También se puede especificar la **Fecha de registro en el almacén (Data di registrazione di magazzino)**.
 
-*Pulsante specifico*:  
-> **Scarico**: crea le registrazioni di magazzino per i picking selezionati.  
+*Botón específico*:  
+> **scarico**: crea los registros de almacén para los pickings seleccionados.  
 
-**Parametri**
+**Parámetros**
 
-In questo tab è possibile specificare i parametri necessari per la creazione dei movimenti a magazzino. In particolare, per le righe picking sprovviste di magazzino e causale è possibile scegliere di non effettuare lo scarico per l'intero documento, di tralasciare l'articolo senza magazzino e causale, di visualizzare gli articoli che non sono stati scaricati, di utilizzare come magazzino e causale quelle impostate di default.
+En esta pestaña es posible especificar los parámetros necesarios para la creación de los movimientos en el almacén. En particular, para las líneas de picking que carecen de almacén y motivo, se puede elegir no realizar la descarga para todo el documento, omitir el artículo sin almacén ni motivo, visualizar los artículos que no han sido descargados, y utilizar como almacén y motivo aquellos establecidos por defecto.
 
-**Riepilogo**
+**Resumen**
 
-Il tab riepilogo permette di visualizzare le operazioni effettuate e, eventualmente, eseguire il rollback delle operazioni.
+La pestaña de resumen permite visualizar las operaciones realizadas y, si es necesario, realizar el rollback de las operaciones.
 
-E' possibile inserire dei filtri per visualizzare solo le operazioni desiderate. Selezionando sulla griglia dei risultati una riga sarà possibile vedere il dettaglio (cioè i picking di riferimento e relative registrazioni) sui tab nella parte bassa della finestra.
+Es posible ingresar filtros para visualizar solo las operaciones deseadas. Al seleccionar una fila en la cuadrícula de resultados, se podrá ver el detalle (es decir, los pickings de referencia y sus registros) en las pestañas en la parte inferior de la ventana.
 
-Selezionando una o più righe sulla griglia di ricerca e premendo il pulsante *Cancella gli scarichi selezionati* saranno cancellate le registrazioni di magazzino effettuate.
+Al seleccionar una o más filas en la cuadrícula de búsqueda y presionar el botón *cancella gli scarichi selezionati*, se eliminarán los registros de almacén realizados.
 
-*Pulsanti specifici*:
-> **Cancella gli scarichi selezionati**: cancella le registrazioni derivate dalle righe selezionate sulla griglia dei risultati.  
-> **Ripristina picking**: cancella le registrazioni limitatamente alle righe picking selezionate.  
+*Botones específicos*:  
+> **cancella gli scarichi selezionati**: elimina los registros derivados de las filas seleccionadas en la cuadrícula de resultados.  
+> **ripristina picking**: elimina los registros únicamente respecto a las filas de picking seleccionadas.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

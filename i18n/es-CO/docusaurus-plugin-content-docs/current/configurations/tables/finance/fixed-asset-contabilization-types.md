@@ -1,18 +1,18 @@
 ---
-title: Tipi contabilizzazione cespite
+title: Tipos de contabilización de activos (Tipi contabilizzazione cespite)
 sidebar_position: 28
 ---
 
-La tabella tipo contabilizzazione cespiti serve per poter sovrascrivere la logica dei conti associati alle categorie cespiti: 
+La tabla de tipos de contabilización de activos sirve para poder sobrescribir la lógica de las cuentas asociadas a las categorías de activos:  
 
-il conto patrimoniale così come quello dell’ammortamento e del fondo verranno letti dal tipo contabilizzazione associato al cespite invece che dalla sua categoria. 
+la cuenta patrimonial, así como la de amortización y el fondo, se leerán del tipo de contabilización asociado al activo en lugar de su categoría.  
 
-L’obiettivo è quello di non moltiplicare N volte la categoria ‘impianti e macchinari’, ad esempio, nel caso in cui, a livello di piano dei conti, si voglia avere dei conti distinti per ‘impianto di aspirazione’ piuttosto che 'impianto di sorveglianza' ecc. 
+El objetivo es no multiplicar N veces la categoría 'instalaciones y maquinarias', por ejemplo, en el caso de que, a nivel de plan de cuentas, se desee tener cuentas distintas para 'instalación de aspiración' o 'instalación de vigilancia', etc.  
 
-Quindi è possibile creare un'unica categoria cespite (e quindi una unica percentuale di ammortamento che segue quelle previste da decreto ministeriale che le disciplina) e poi creare delle tipologie di contabilizzazione per far corrispondere i conti di dettaglio che si vuole gestire.
+Por lo tanto, es posible crear una única categoría de activo (y, por ende, un única tasa de amortización que sigue las pautas establecidas por el decreto ministerial que las regula) y luego crear tipos de contabilización para hacer coincidir las cuentas de detalle que se desean gestionar.  
 
-Il dettaglio della form si presenta in modo intuitivo se confrontata con la tabelle delle categorie cespiti.
+El detalle del formulario se presenta de manera intuitiva si se compara con la tabla de categorías de activos.  
 
-Si inserirà un codice e descrizione per qualificare la tipologia di contabilizzazione e poi si inseriranno i conti specifici per il patrimoniale attivo (griglia superiore) e per la quota e fondo ammortamento (griglia inferiore) oltre al tipo ammortamento.
+Se insertará un código y una descripción para calificar el tipo de contabilización y luego se ingresarán las cuentas específicas para el activo patrimonial (cuadrícula superior) y para la cuota y fondo de amortización (cuadrícula inferior), además del tipo de amortización.  
 
-A questo punto all'interno di ogni scheda cespite è possibile richiamare, tramite l'apposita combo box, i vari tipi di contabilizzazione cespite codificati in precedenza.
+En este punto, dentro de cada ficha de activo, es posible llamar, a través de la caja combinada correspondiente, los diversos tipos de contabilización de activos codificados previamente.

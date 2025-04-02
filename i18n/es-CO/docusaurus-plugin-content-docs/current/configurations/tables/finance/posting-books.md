@@ -1,12 +1,12 @@
 ---
-title: Libri contabili
+title: libri contabili
 sidebar_position: 12
 ---
 
-Tabella di appoggio all'apposita combo box presente nelle [**causali di contabilità**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+Tabla de apoyo a la combobox correspondiente presente en las [**causales de contabilidad (causali di contabilità)**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates).
 
-In sostanza, ogni causale può far riferimento ad un suo libro teorico nel quale viene riportata/stampata: in associazione con la definizioni di Numeratori differenziati, può consentire quindi di ottenere numeri registrazioni differenti a seconda del libro di riferimento
+En esencia, cada causal puede hacer referencia a su propio libro teórico en el que se registra/imprime: en asociación con la definición de Numeradores diferenciados, puede permitir obtener números de registro diferentes según el libro de referencia.
 
-:::tip Nota
-Il riferimento è alla numerazione delle registrazioni per il file FEC della localizzazione francese
+:::tip Nota (Nota)
+La referencia es a la numeración de los registros para el archivo FEC de la localización francesa.
 :::

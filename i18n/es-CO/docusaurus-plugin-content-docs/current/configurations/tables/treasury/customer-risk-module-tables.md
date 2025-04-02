@@ -1,34 +1,28 @@
 ---
-title: Tabelle modulo Rischio cliente
+title: Tablas del módulo de Riesgo del cliente (Tabelle modulo Rischio cliente)
 sidebar_position: 7
 ---
 
-Non sono presenti tabelle specifiche del modulo in oggetto, ma va segnalato che vari tipi documento in acquisto e vendita presentano impostazioni collegate al rischio cliente.
+No hay tablas específicas del módulo en cuestión, pero se debe señalar que varios tipos de documentos en compra y venta presentan configuraciones relacionadas con el riesgo del cliente.
 
-Il fido cliente preleva i dati dai seguenti documenti dell'area vendita:
+El límite del cliente toma los datos de los siguientes documentos del área de ventas:
 
-**[Tipo ordine cliente](/docs/configurations/tables/sales/sales-order-types)**: il ‘flag fido' indica che se il documento (stampato e confermato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
+**[Tipo de pedido del cliente (Tipo ordine cliente)](/docs/configurations/tables/sales/sales-order-types)**: el ‘indicador de límite (flag fido)’ indica si el documento (impreso y confirmado) se considera en el cálculo del límite del cliente o no. El indicador ‘Excluir bloqueo (Escludi blocco)’ excluye este tipo de documento del bloqueo del cliente;
 
-**Tipi DDT**: il ‘flag fido' indica che se il documento (stampato, non valorizzato in fattura) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
+**Tipos de DDT (Tipi DDT)**: el ‘indicador de límite (flag fido)’ indica si el documento (impreso, no valorado en la factura) se considera en el cálculo del límite del cliente o no. El indicador ‘Excluir bloqueo (Escludi blocco)’ excluye este tipo de documento del bloqueo del cliente;
 
-**[Tipi fattura](/docs/configurations/tables/purchase/purchase-invoices-type)**: il ‘flag fido' indica che se il documento (stampato, non contabilizzato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente.
+**[Tipos de factura (Tipi fattura)](/docs/configurations/tables/purchase/purchase-invoices-type)**: el ‘indicador de límite (flag fido)’ indica si el documento (impreso, no contabilizado) se considera en el cálculo del límite del cliente o no. El indicador ‘Excluir bloqueo (Escludi blocco)’ excluye este tipo de documento del bloqueo del cliente.
 
-Infine, ogni anagrafica cliente presenta due impostazioni collegate al modulo in oggetto:
+Finalmente, cada ficha del cliente presenta dos configuraciones relacionadas con el módulo en cuestión:
 
-**Il tipo controllo fido:** 
+**El tipo de control de límite (tipo controllo fido):** 
 
-**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
+**Bloqueo de documento y control de límite (Blocco doc. e monitor fido)**: el documento del área de ventas que exceda el límite será bloqueado y, por lo tanto, será necesario autorizarlo para proceder a las siguientes fases del flujo documental;  
 
-**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
+**monitor fido**: simplemente se realizará un control del límite con un posible mensaje al usuario sobre el exceso ocurrido;  
 
-**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
+**blocco di gruppo**: al igual que en el primero, pero el cálculo es acumulativo para todas las empresas de la base de datos que pertenecen a la misma ficha de cliente;  
 
-**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
+**monitor di gruppo**: al igual que en el segundo, pero el cálculo es acumulativo para todas las empresas de la base de datos que pertenecen a la misma ficha de cliente.
 
-La seconda impostazione è il check ‘controllo esposizione', che rende visibile il cliente nella maschera dell'esposizione clienti.
-
-
-
-
-
-
+La segunda configuración es la verificación ‘control de exposición (controllo esposizione)’, que hace visible al cliente en la máscara de exposición de clientes.

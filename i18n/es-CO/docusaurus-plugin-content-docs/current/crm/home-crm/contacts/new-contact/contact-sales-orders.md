@@ -1,11 +1,11 @@
 ---
-title: Ordini vendita contatto
+title: Pedidos de venta del contacto (Ordini vendita contatto)
 sidebar_position: 14
 ---
 
-Questa è una delle tab dei **Contatti CRM**.
+Esta es una de las pestañas de **contatti crm**.
 
-In questa tab viene visualizzata la lista degli ordini inseriti per il contatto.
-Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale degli ordini.
-Facendo doppio click sulla riga dell'ordine questo verrà aperto in visualizzazione/modifica.
-E'possibile inoltre creare nuovi ordini.
+En esta pestaña se muestra la lista de los pedidos ingresados para el contacto.  
+En la parte superior de la pestaña hay campos de filtro que permiten realizar una búsqueda más precisa de los pedidos.  
+Haciendo doble clic en la fila del pedido, este se abrirá para visualización/modificación.  
+También es posible crear nuevos pedidos.

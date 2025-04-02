@@ -1,13 +1,13 @@
 ---
-title: Controllo utilizzo materiali
+title: controllo utilizzo materiali
 sidebar_position: 5
 ---
 
-Questa form consente di stampare il report **Controllo utilizzo materiali** che permette di visualizzare l'impiego di tutti i materiali raggruppati per:
+Este formulario permite imprimir el informe **controllo utilizzo materiali**, que permite visualizar el uso de todos los materiales agrupados por:
 
-- commesse di produzione 
-- Ordine
-- Articolo
-- Data impiego
+- órdenes de producción (commesse di produzione)  
+- Pedido (Ordine)  
+- Artículo (Articolo)  
+- Fecha de uso (Data impiego)  
 
-con per ciascuno l'indicazione delle relative quantità prelevate, consumate e scartate.
+con para cada uno la indicación de las cantidades relacionadas retiradas, consumidas y desechadas.

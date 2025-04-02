@@ -1,52 +1,43 @@
 ---
-title: Gestione F24
+title: Gestión F24 (Gestione F24)
 sidebar_position: 2
 ---
 
-## Compilazione automatica
+## Compilación automática (Compilazione automatica)
 
-La creazione del modello F24 prevede il caricamento di un nuovo modello all'interno del quale i dati di testata sono compilati sulla base dei riferimenti inseriti all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company). 
- 
+La creación del modelo F24 implica la carga de un nuevo modelo en el que los datos de cabecera se completan en función de los referencias ingresadas en la tabla [**società**](/docs/configurations/tables/general-settings/company).
 
-Il periodo IVA e il periodo ritenuta (composti dai due campi mese / anno) sono proposti come il mese attuale: possono essere variati per richiamare il mese di riferimento (sia per i dati dell'iva da versare che per le ritenute d'acconto da versare). 
+El período de IVA y el período de retención (compuestos por los dos campos mes/año) se proponen como el mes actual: pueden ser modificados para hacer referencia al mes correspondiente (tanto para los datos de IVA a pagar como para las retenciones a cuenta a pagar).
 
-In particolare, per quanto riguarda le  liquidazioni IVA, sarà ricercato il periodo memorizzato nella maschera ** [Versamenti IVA](/docs/finance-area/declarations/declarations/vat-payment) ** presente in contabilità generale (dove sono memorizzati automaticamente i valori della liquidazione al momento della sua stampa in definitivo: è consentito un caricamento manuale del valore).
+En particular, en lo que respecta a las liquidaciones de IVA, se buscará el período almacenado en la máscara **[Pagos de IVA (Versamenti IVA)](/docs/finance-area/declarations/declarations/vat-payment)** presente en contabilidad general (donde se almacenan automáticamente los valores de la liquidación en el momento de su impresión definitiva: se permite una carga manual del valor).
 
-E' possibile scegliere di elaborare solo i dati iva o solo i dati delle ritenute cancellando i dati dai campi (periodo e anno di riferimento) del dato che non interessa.
+Es posible optar por procesar solo los datos de IVA o solo los datos de las retenciones, eliminando los datos de los campos (período y año de referencia) del dato que no interesa.
 
-Una volta memorizzati i dati di testata si attiverà il pulsante **Proponi valori** che andrà a compilare le varie righe della prima **scheda erario**. 
+Una vez almacenados los datos de cabecera, se activará el botón **proponi valori** que completará las diversas filas de la primera **pestaña de hacienda (scheda erario)**.
 
-Una volta compilate **manualmente** anche tutte **le altre sezioni** della dichiarazione, a seconda delle necessità, impostato il versante/firmatario e il percorso di creazione del file sarà possibile eseguire la creazione del file con l'apposito pulsante che andrà a creare un file con il nome strutturato come 'Partita IVA società' + '_' + 'Numero dichiarazione' + '_' + 'Data dichiarazione' con estensione F24. In caso di dati obbligatori mancanti sarà restituito un messaggio di errore esplicativo e il file non sarà creato.
+Una vez completadas **manualmente** también todas **las otras secciones** de la declaración, según las necesidades, establecido el firmante y la ruta de creación del archivo, será posible ejecutar la creación del archivo con el botón correspondiente que generará un archivo con el nombre estructurado como 'Número de IVA de la empresa (Partita IVA società)' + '_' + 'Número de declaración (Numero dichiarazione)' + '_' + 'Fecha de declaración (Data dichiarazione)' con extensión F24. En caso de datos obligatorios faltantes, se devolverá un mensaje de error explicativo y el archivo no se creará.
 
-È possibile annullare la creazione del file con l'apposito pulsante di gestione.
+Es posible cancelar la creación del archivo con el botón de gestión correspondiente.
 
-Tramite il pulsante **Crea File telematico** è possibile creare il file che sarà inviato all'Agenzia delle Entrate tramite i canali appositi (es. Entratel).
-Il file viene automaticamente archiviato nl Documentale e può essere visualizzato e scaricato localmente attraverso il pulsante e drop down list **Documenti**, presente nella ribbon bar.
+A través del botón **crea file telematico**, es posible crear el archivo que será enviado a la Agencia de Impuestos a través de los canales correspondientes (p. ej., Entratel).  
+El archivo se archiva automáticamente en el Documental y se puede visualizar y descargar localmente a través del botón y la lista desplegable **Documentos**, presente en la barra de ribbon.
 
 :::note[Nota]
-Per la creazione del file è richiesta la presenza (potrebbe essere restituito un messaggio di avviso) di due connettori Bizlink denominati F24 (Gestito dal servizio con autenticazione) ed F24Errors, di tipo Folder Output e con aggancio al partner AgeEnt, Flusso AgeEnt, Operazione di Flusso e documento di flusso F24 (F24Errors per il secondo)
+Para la creación del archivo se requiere la presencia (se podría devolver un mensaje de aviso) de dos conectores Bizlink denominados F24 (Gestionado por el servicio con autenticación) y F24Errors, de tipo Folder Output y conectado al partner AgeEnt, Flujo AgeEnt, Operación de Flujo y documento de flujo F24 (F24Errors para el segundo).
 :::
 
-## Contabilizzazione
+## Contabilización (Contabilizzazione)
 
-Nella testata del modello è possibile compilare i campi per le eventuali **Spese bancarie** e per il conto della **Banca di pagamento**.
-A questo punto è possibile premere il bottone **Contabilizzazione** per generare automaticamente la scrittura che rileva l'uscita di banca e lo storno dei conti (alimentati automaticamente) dove è stato caricato il debito per ritenute d'acconto da versare e per iva da versare (esempio conti solitamente denominati Erario c/ritenute d'acconto ed Erario C/Iva).
+En la cabecera del modelo es posible completar los campos para posibles **spese bancarie** y para la cuenta del **banca di pagamento**.  
+En este punto, se puede presionar el botón **contabilizzazione** para generar automáticamente la escritura que registra la salida del banco y el contracargo de las cuentas (cargadas automáticamente) donde se ha anotado la deuda por retenciones a cuenta a pagar y por IVA a pagar (ejemplo: cuentas comúnmente denominadas Hacienda c/retenciones a cuenta y Hacienda C/Iva).
 
 :::tip[Nota]
-I conti utilizzati automaticamente per caricare il debito IVA e il debito per le ritenute d'acconto sono impostati, rispettivamente, nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters#conti) per quanto riguarda l'iva, e nella tabella [**Tipi Ritenuta**](/docs/configurations/tables/finance/withholding-tax-types) per le ritenute d'acconto, conto di default che può essere stato sovrascritto in fase di [**contabilizzazione pagamento compensi**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
+Las cuentas utilizadas automáticamente para cargar la deuda de IVA y la deuda por las retenciones a cuenta están configuradas, respectivamente, en los [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters#conti) respecto a la IVA, y en la tabla [**tipi ritenuta**](/docs/configurations/tables/finance/withholding-tax-types) para las retenciones a cuenta, cuenta por defecto que podría haber sido sobrescrita en el proceso de [**contabilización del pago de compensaciones (contabilizzazione pagamento compensi)**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).
 :::
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Salva | Salva il modello in uso. |
-| Proponi valori | Esegue la ripresa dei dati dai versamenti iva e dalle ritenute dei compensi pagati. |
-| Nuovo dettaglio | Imposta il cursore nella griglia di inserimento dei dettagli. |
-| Cancella dettaglio | Cancella la riga di dettaglio selezionata. |
-
-
-
-
-
-
+| Guardar (Salva) | Guarda el modelo en uso. |
+| Proponer valores (Proponi valori) | Ejecuta la recuperación de datos de los pagos de IVA y de las retenciones de compensaciones pagadas. |
+| Nuevo detalle (Nuovo dettaglio) | Establece el cursor en la cuadrícula de inserción de detalles. |
+| Eliminar detalle (Cancella dettaglio) | Elimina la fila de detalle seleccionada. |

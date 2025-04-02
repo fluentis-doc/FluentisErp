@@ -1,6 +1,6 @@
-Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento.           
-Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
+Los descuentos propuestos en el encabezado del documento se aplican a cada nueva línea de artículo insertada en el documento.  
+Si después de haber insertado las líneas de artículos se introduce un nuevo descuento en el encabezado, este no se replicará en las líneas de artículos ya insertadas.
 
-*Pulsante specifico*:
+*Botón específico (Pulsante specifico)*:
 
-> **Cancella sconti**: utilizzato per cancellare le righe di sconto selezionate.
+> **cancella sconti**: utilizado para eliminar las líneas de descuento seleccionadas.

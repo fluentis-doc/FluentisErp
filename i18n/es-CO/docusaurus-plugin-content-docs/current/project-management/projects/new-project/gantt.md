@@ -3,4 +3,4 @@ title: Gantt
 sidebar_position: 4
 ---
 
-In questa tab è possibile consultare l’avanzazmento delle attività, in base all’intervallo di tempo impostato nella tab **Pianificazione Servizio** degli Articoli. In base ad esso infatti, il Gantt avrà lo stanziamento relativo all’impostazione inserita.
+En esta pestaña es posible consultar el avance de las actividades, según el intervalo de tiempo establecido en la pestaña **pianificazione servizio** de los Artículos. De hecho, el Gantt tendrá la asignación relacionada con la configuración introducida.

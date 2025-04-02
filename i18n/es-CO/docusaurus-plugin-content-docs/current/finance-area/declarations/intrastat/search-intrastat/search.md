@@ -1,32 +1,24 @@
 ---
-title: Ricerca
+title: ricerca
 sidebar_position: 1
 ---
 
-LINK:
+ENLACE:
 
-** [Introduzione](/docs/finance-area/declarations/intrastat/general-overview) **
-
- 
+** [Introducción (Introduzione)](/docs/finance-area/declarations/intrastat/general-overview) **
 
  
 
-Attraverso la presente form è possibile ricercare ed accedere a TUTTI i modelli intrastat elaborati, dunque sia agli INTRA 1 (vendite) sia INTRA 2 (acquisti).
+ 
 
-NOTA: nella griglia di ricerca il flag della colonna Intrastat è solo informativo per distinguere gli INTRA 1 (flag NON attivo) dagli INTRA 2 (flag attivo).
+A través de este formulario es posible buscar y acceder a TODOS los modelos intrastat elaborados, tanto a los INTRA 1 (ventas) como a los INTRA 2 (compras).
+
+NOTA: en la cuadrícula de búsqueda, el indicador de la columna Intrastat es solo informativo para distinguir los INTRA 1 (indicador NO activo) de los INTRA 2 (indicador activo).
 
  
 
 ![](/img/it-it/finance-area/declarations/intrastat/search-intrastat/search/image01.png)
 
-Nelle impostazioni dei filtri nella testata della form è possibile selezionare solo INTRA 1 o INTRA 2 per una ricerca mirata.
+En la configuración de los filtros en el encabezado del formulario, es posible seleccionar solo INTRA 1 o INTRA 2 para una búsqueda específica.
 
-In alternativa alla presente form di ricerca generale ci sono due form corrispondenti denominate ** [INTRASTAT 1](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat1) ** e ** [INTRASTAT 2 ](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat2) **che eseguono la stessa funzione, ma sono riservate alla ricerca soltanto dei modelli corrispondenti.
-
- 
-
-
-
-
-
-
+Como alternativa a este formulario de búsqueda general, hay dos formularios correspondientes denominados ** [INTRASTAT 1](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat1) ** y ** [INTRASTAT 2](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat2) ** que realizan la misma función, pero están reservados para la búsqueda únicamente de los modelos correspondientes.

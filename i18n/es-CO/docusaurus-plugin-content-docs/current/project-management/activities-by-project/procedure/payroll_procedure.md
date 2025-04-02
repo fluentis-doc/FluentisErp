@@ -1,23 +1,21 @@
 ---
-title: Calcolo dati paghe
+title: calcolo dati paghe
 sidebar_position: 3
 ---
 
-Gestione progetti > Procedure Attività > Calcolo dati paghe
+Gestión de proyectos > Procedimientos de Actividad > calcolo dati paghe
 
-Da questa videata è possibile calcolare in automatico i dati per i cedolini paga. 
+Desde esta pantalla es posible calcular automáticamente los datos para los recibos de nómina.  
 
-Le ore e le spese (solo quelle con flag da rimborsare) inserite nei cedolini verranno prese dalle dichiarazioni attività, indipendentemente che siano state inserite direttamente in Area Gestione Progetti > dichiarazione attività o che siano state generate automaticamente dagli interventi con stato Approvato. Per cui sarà fondamentale che ogni dichiarazione attività abbia associata categoria attività con configurato il relativo codice paghe. 
+Las horas y los gastos (solo aquellos con el indicador de reembolso) ingresados en los recibos se tomarán de las declaraciones de actividad, independientemente de que hayan sido ingresados directamente en el Área de Gestión de Proyectos > declaración de actividad o que hayan sido generados automáticamente a partir de intervenciones con estado Aprobado. Por lo tanto, será fundamental que cada declaración de actividad tenga asociada una categoría de actividad con el respectivo código de nómina configurado.  
 
-Di default il periodo da calcolare viene proposto l'anno corrente ed il mese precedente a quello corrente. 
+Por defecto, el período a calcular se propone como el año actual y el mes anterior al actual.  
 
-Prima di procedere con l'elaborazione, è necessari effettuare le seguenti configurazioni:
+Antes de proceder con el procesamiento, es necesario realizar las siguientes configuraciones:
 
-> - [Codici Paghe](/docs/configurations/tables/employee/Payroll_codes)     
-> - [Categorie di attività](/docs/configurations/tables/project-management/task-category)    
-> - [Tipi Spese](/docs/configurations/tables/general-settings/expenses-types)  
-> - [Anagrafiche dipendenti](/docs/project-management/registers/employee/new-employee)  
-> - [Anagrafiche Risorse](/docs/project-management/registers/resources-management/new-resource)  
-> - [Calendario giorni festivi](/docs/project-management/registers/employee/new-employee)  
-
-
+> - [Códigos de nómina (Codici Paghe)](/docs/configurations/tables/employee/Payroll_codes)  
+> - [Categorías de actividad (Categorie di attività)](/docs/configurations/tables/project-management/task-category)  
+> - [Tipos de gastos (Tipi Spese)](/docs/configurations/tables/general-settings/expenses-types)  
+> - [Registros de empleados (Anagrafiche dipendenti)](/docs/project-management/registers/employee/new-employee)  
+> - [Registros de recursos (Anagrafiche Risorse)](/docs/project-management/registers/resources-management/new-resource)  
+> - [Calendario de días festivos (Calendario giorni festivi)](/docs/project-management/registers/employee/new-employee)

@@ -1,28 +1,28 @@
 ---
-title: Tipi Documento EDI
+title: tipi documento edi
 sidebar_position: 19
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi Documento EDI** ed è utilizzato per determinare le proprietà di un documento EDI.
+La tabla se abre a través de la ruta **Tablas (Tabelle) > Ventas (Vendite) > tipi documento edi (Tipi Documento EDI)** y se utiliza para determinar las propiedades de un documento EDI.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para ver los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-**Tipo**: codice tipo EDI.
+**tipo**: código tipo EDI.  
 
-**Descrizione**: descrizione Tipo EDI.
+**descrizione**: descripción Tipo EDI.  
 
-**Tipo num.**: tipo numerazione EDI associato al tipo EDI.
+**tipo num.**: tipo de numeración EDI asociado al tipo EDI.  
 
-**Tipo ordine**: tipo ordine cliente per la creazione del documento EDI.
+**tipo ordine**: tipo de orden de cliente para la creación del documento EDI.  
 
-**Tipo previsione di vendita**: è settato in automatico la previsione settimanale per la creazione del documento EDI.
+**tipo previsione di vendita**: se configura automáticamente la previsión semanal para la creación del documento EDI.  
 
-**Default**: se settato, contrassegna il tipo EDI di default per la creazione automatica di documenti EDI.
+**default**: si está configurado, marca el tipo EDI por defecto para la creación automática de documentos EDI.  
 
-**Note**: note relative al tipo EDI.
+**note**: notas relacionadas con el tipo EDI.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

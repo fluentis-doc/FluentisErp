@@ -1,20 +1,20 @@
 ---
-title: Stagionalità
+title: stagionalità
 sidebar_position: 46
 ---
 
-Questa form permette di gestire le variazioni stagionali dell'approvvigionamento nei periodi precedenti, per articolo e periodo. Quest'operazione si può fare manualmente oppure in automatico con la procedura di *Ripresa dati* nella previsione corrente dall'approvvigionamento precedente; la procedura offre la possibilità di generare la stagionalità. 
+Este formulario permite gestionar las variaciones estacionales del aprovisionamiento en los períodos anteriores, por artículo y período. Esta operación se puede realizar manualmente o automáticamente con el procedimiento de *ripresa dati* en la previsión actual a partir del aprovisionamiento anterior; el procedimiento ofrece la posibilidad de generar la estacionalidad.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Stagionalità**
+**Búsqueda de stagionalità (Ricerca Stagionalità)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Stagionalità**
+**Inserción de stagionalità (Inserimento Stagionalità)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevas codificaciones es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

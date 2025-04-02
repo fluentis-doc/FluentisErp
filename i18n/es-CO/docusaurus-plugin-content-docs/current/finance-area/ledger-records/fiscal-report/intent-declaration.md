@@ -1,35 +1,27 @@
 ---
-title: Dichiarazione di intento
+title: dichiarazione di intento
 sidebar_position: 2
 ---
 
-All'apertura della finestra viene proposto l'esercizio contabile attuale.
+Al abrir la ventana se propone el ejercicio contable actual.
 
-E' possibile stampare tutte le dichiarazioni di intento o filtrare la stampa per:
+Es posible imprimir todas las declaraciones de intención o filtrar la impresión por:
 
-**Tipo Dichiarazione**: Cliente o Fornitore;
+**tipo dichiarazione**: Cliente o Proveedor;  
 
-**Ricercare un Sottoconto di anagrafica cliente o fornitore**: in funzione di quanto selezionato al campo precedente;
+**Buscar un subcuenta de registro de cliente o proveedor (Ricercare un Sottoconto di anagrafica cliente o fornitore)**: en función de lo que se seleccione en el campo anterior;  
 
-**Numero di ns. protocollo da / a**.
+**Número de nuestro protocolo de / a (Numero di ns. protocollo da / a)**.  
 
-Tra gli elementi da stampare è possibile variare la descrizione del campo Ufficio IVA di -  e il campo Descrizione Operazione.
+Entre los elementos a imprimir, es posible variar la descripción del campo Oficina de IVA (Ufficio IVA) de - y el campo Descripción de operación (Descrizione Operazione).
 
-La data di stampa proposta è la data odierna di sistema.
+La fecha de impresión propuesta es la fecha actual del sistema.
 
-ATTENZIONE:
+ATENCIÓN:
 
-Sono presenti diverse stampe selezionabili dalla tendina in alto a sinistra, da combinare per ottenere le diverse parti del modello ministeriale (es. frontespizio, dettagli, plafond).
+Hay diferentes impresiones seleccionables del menú desplegable en la esquina superior izquierda, que se pueden combinar para obtener las diferentes partes del modelo ministerial (por ejemplo, portada, detalles, límite).
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa delle dichiarazioni di intento. |
-| Stampa | Pulsante per eseguire la stampa fisica delle dichiarazioni di intento. |
-
-
-
-
-
-
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión de las declaraciones de intención. |
+| Imprimir (Stampa) | Botón para ejecutar la impresión física de las declaraciones de intención. |

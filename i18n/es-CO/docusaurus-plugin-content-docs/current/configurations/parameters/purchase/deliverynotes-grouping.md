@@ -1,17 +1,17 @@
 ---
-title: Parametri raggruppamento Nota di ricezione della merce
+title: parametri raggruppamento nota di ricezione della merce
 sidebar_position: 9
 ---
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Los parámetros de agrupamiento permiten definir cómo dividir los documentos durante los procedimientos de cumplimiento. Para ello, es posible utilizar indicadores específicos para agrupar los documentos según diferentes propiedades, como la categoría, el tipo de documento o otras características relevantes.  
+Estos parámetros generales de agrupamiento deben configurarse una sola vez y se aplicarán automáticamente a todos los procedimientos, siendo válidos para todos los clientes y proveedores. Sin embargo, si un cliente o proveedor solicita un comportamiento diferente al establecido en los parámetros generales, será necesario personalizar los parámetros de agrupamiento dentro de su registro específico.  
+De este modo, se garantiza una gestión flexible y adaptable de las evasiones, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, manteniendo al mismo tiempo una configuración centralizada y coherente para la mayoría de las operaciones.
 
-In questa maschera vengono decise le regole di raggruppamento per le procedure:  
--  **Creazione NIR da fattura di acquisto**;  
--  **Creazione NIR da DDT di acquisto**.  
+En esta interfaz se deciden las reglas de agrupamiento para los procedimientos:  
+- **Creación de NIR a partir de factura de compra (Creazione NIR da fattura di acquisto)**;  
+- **Creación de NIR a partir de DDT de compra (Creazione NIR da DDT di acquisto)**.  
 
-Queste procedure vengono utilizzate solo in caso di localizzazione rumena.   
+Estos procedimientos se utilizan solo en caso de localización rumana.  
 
-E' necessario flaggare le colonne che prevedono i raggruppamenti che si vogliono prevedere per queste evasioni.
-Il flag Riepilogativa è fondamentale per creare un unico documento avendo diversi documenti di partenza. Gli altri flag invece riguardano i raggruppamenti particolari.
+Es necesario marcar las columnas que prevén los agrupamientos que se desean para estas evasiones.  
+El indicador Resumen (Riepilogativa) es fundamental para crear un único documento teniendo varios documentos de partida. Los otros indicadores, en cambio, se refieren a agrupamientos particulares.

@@ -1,96 +1,90 @@
 ---
-title: Visualizzazione Bilancio
+title: visualizzazione bilancio
 sidebar_position: 8
 ---
 
-Da questa form è possibile ottenere una visualizzazione dei dati a video che corrisponde, grossomodo, al report del bilancio di verifica, potendo tuttavia usufruire di svariate possibilità di filtro, raggruppamento dei dati e opzioni ulteriori.
+Desde este formulario es posible obtener una visualización de los datos en pantalla que corresponde, grosso modo, al informe del balance de comprobación, pudiendo, sin embargo, beneficiarse de diversas posibilidades de filtrado, agrupamiento de datos y opciones adicionales.
 
-AREA DI FILTRO:
+ÁREA DE FILTRO:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image01.png)
 
-permette di filtrare i dati contabili da elaborare inserendo un range di **date di registrazione** contabile, un range (sottoinsieme) di conti o sottoconti, un tipo conto, una causale contabile (**Template**) una divisione specifica (utile se ve ne sono più di una attive) una divisa estera (**Valuta**).
+permite filtrar los datos contables a procesar ingresando un rango de **fechas de registro** contable, un rango (subconjunto) de cuentas o subcuentas, un tipo de cuenta, una causal contable (**Template**), una división específica (útil si hay más de una activa) y una moneda extranjera (**Valuta**).
 
-**Converti anche le altre somme in divisa**: attivando questo flag, in concomitanza con la valorizzazione del precedente filtro Valuta (il quale estrae i movimenti espressi in una particolare divisa), anche gli altri movimenti contabili espressi in Euro o in altre divise saranno convertiti nella divisa selezionata con il cambio della data di registrazione.
+**converti anche le altre somme in divisa**: al activar este indicador, junto con la valoración del filtro anterior de Moneda (que extrae los movimientos expresados en una divisa particular), también los otros movimientos contables expresados en Euro o en otras divisas serán convertidos a la divisa seleccionada con el tipo de cambio de la fecha de registro.
 
-PARAMETRI: (aprire l'expander)
+PARÁMETROS: (abrir el expander)
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image02.png)
 
-Poiché la griglia dei risultati presenta anche il campo **Livello**, che rappresenta l'ordine gerarchico del conto/sottoconto rispettivo nel piano dei conti (dove 99 è l'ultimo livello inferiore di massimo dettaglio possibile e 0 è il nodo radice, generalmente contenente il totale) è presente un filtro sui livelli da visualizzare:
+Dado que la cuadrícula de resultados también presenta el campo **Nivel**, que representa el orden jerárquico de la cuenta/subcuenta respectiva en el plan de cuentas (donde 99 es el último nivel inferior de máximo detalle posible y 0 es el nodo raíz, generalmente conteniendo el total), existe un filtro sobre los niveles a visualizar:
 
-**Tutti**: mostra tutti i livelli;
+**tutti**: muestra todos los niveles;  
 
-**Mostra i totali per livello X... **: inserendo il livello desiderato (esempio 98) nell'apposito campo adiacente **Livello**, i risultati saranno raggruppati per conto mastro (che nel piano dei conti è il livello immediatamente superiore al 99, definito ai fini della presente elaborazione come massimo dettaglio possibile dei sottoconti nel piano dei conti);
+**Mostrar los totales por nivel X... (Mostra i totali per livello X...)**: al ingresar el nivel deseado (ejemplo 98) en el campo correspondiente **Nivel**, los resultados se agruparán por cuenta maestra (que en el plan de cuentas es el nivel inmediatamente superior al 99, definido a efectos de este procesamiento como el máximo detalle posible de las subcuentas en el plan de cuentas);  
 
-**Mostra i totali per livello X...** **con subtotali:** rispetto al tipo di raggruppamento precedente mostrerà anche i subtotali dei possibili raggruppamenti gerarchicamente inferiori.
+**Mostrar los totales por nivel X... con subtotales (Mostra i totali per livello X... con subtotali)**: respecto al tipo de agrupamiento anterior mostrará también los subtotales de los posibles agrupamientos jerárquicamente inferiores.  
 
-**Mostra totali solo per sottoconti**: i valori saranno visualizzati solo per i livelli contenenti sottoconti (i livelli gerarchicamente superiori non saranno visualizzati).
+**mostra totali solo per sottoconti**: los valores se visualizarán solo para los niveles que contengan subcuentas (los niveles jerárquicamente superiores no se mostrarán).  
 
-**Escludere le righe a zero**: non saranno visualizzati i conti / sottoconti non movimentati.
+**Excluir las filas a cero (Escludere le righe a zero)**: no se mostrarán las cuentas/subcuentas no movidas.  
 
-**Aggiungere (off/on)**: il flag attiva o disattiva una particolare modalità di visualizzazione che, in caso di modifica del range di date di registrazione ed aggiornamento della videata premendo nuovamente il tasto Ricerca nella ribbon bar, va ad aggiungere il nuovo risultato (accodandolo nella griglia del risultato) a quello precedentemente visualizzato permettendo, ad esempio, di effettuare dei confronti di valori tra periodi diversi. Per ragioni di gestibilità e chiarezza del risultato si consiglia di utilizzare questa modalità solamente in abbinamento con il filtro sui conti / sottoconti settato in modo da restituire un set limitato di dati.
+**Agregar (Add) (off/on)**: el indicador activa o desactiva un modo de visualización particular que, en caso de modificar el rango de fechas de registro y actualizar la pantalla haciendo nuevamente clic en el botón Buscar en la barra de ribbon, agrega el nuevo resultado (acumulándolo en la cuadrícula del resultado) a lo previamente visualizado, permitiendo, por ejemplo, realizar comparaciones de valores entre periodos diferentes. Por razones de manejabilidad y claridad del resultado, se recomienda utilizar este modo solamente en combinación con el filtro sobre las cuentas/subcuentas ajustado para devolver un conjunto limitado de datos.
 
-GRIGLIA DEL RISULTATO:
+CUADRÍCULA DEL RESULTADO:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image03.png)
 
-In questa griglia sono esposti i conti / sottoconti secondo i parametri di filtro e raggruppamento definiti nella parte superiore della form.
+En esta cuadrícula se exponen las cuentas/subcuentas de acuerdo con los parámetros de filtro y agrupamiento establecidos en la parte superior del formulario.
 
-Vengono riportati il codice e descrizione sia del **gruppo** (si veda la struttura del **[piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**) sia del conto / sottoconto ed il codice del **livello** definito specificamente per la presente elaborazione e sopra descritto.
+Se reporta el código y la descripción tanto del **gruppo** (ver la estructura del **[plan de cuentas (piano dei conti)](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**) como de la cuenta/subcuenta y el código del **nivel** definido específicamente para este procesamiento y descrito anteriormente.
 
-**Finale**: questo campo indica (con un flag) se il conto e/o il gruppo sia di livello gerarchicamente superiore rispetto a tutti gli altri del suo ramo (della struttura del piano dei conti). Ciò è utile perché, in caso di organizzazione non ottimale o non perfettamente omogenea della struttura del piano dei conti, il codice visualizzato nel campo Livello potrebbe non essere realmente quello gerarchicamente superiore e pertanto potrebbe non essere possibile filtrare correttamente (ed ottenere totali corretti).
+**finale**: este campo indica (con un indicador) si la cuenta y/o el grupo es de un nivel jerárquicamente superior respecto a todos los demás de su rama (de la estructura del plan de cuentas). Esto es útil porque, en caso de organización no óptima o no perfectamente homogénea de la estructura del plan de cuentas, el código visualizado en el campo Nivel podría no ser realmente el jerárquicamente superior y, por lo tanto, podría no ser posible filtrar correctamente (y obtener totales correctos).
 
-Quindi nella riga filtro della griglia è possibile scegliere tutti i conti con flag Finale attivo assicurandosi così di estrarre tutti i livelli superiori.
+Así, en la fila de filtro de la cuadrícula, es posible elegir todas las cuentas con el indicador Final activo, asegurándose así de extraer todos los niveles superiores.
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image04.png)
 
-NOTE:
+NOTAS:
 
-Nelle colonne don i dati numerici sono utilizzate le seguenti abbreviazioni:
+En las columnas donde se encuentran los datos numéricos se utilizan las siguientes abreviaciones:
 
-VdS = Valuta della società (inteso come divisa della società in uso, quella in cui è denominata la contabilità che stiamo tenendo, nel caso si una azienda italiana è l'Euro).
+VdS = Moneda de la empresa (entendida como la divisa de la empresa en uso, aquella en la que está denominada la contabilidad que estamos llevando, en el caso de una empresa italiana es el Euro).  
 
-VS = Valuta scelta (divisa) nel filtro iniziale.
+VS = Moneda elegida (divisa) en el filtro inicial.  
 
-Euroam = Euroamount: controvalore in Euro di una operazione in valuta.
+Euroam = Euroamount: contraprestación en Euro de una operación en moneda.
 
-ATTENZIONE: è possibile visualizzare (o nascondere) ulteriori colonne rispetto al profilo standard della form facendo click con il tasto DX sulle testate delle colonne della griglia e scegliendo **Visualizza selettore colonne**.
+ATENCIÓN: es posible visualizar (o esconder) columnas adicionales respecto al perfil estándar del formulario haciendo clic con el botón derecho sobre los encabezados de las columnas de la cuadrícula y eligiendo **visualizza selettore colonne**.
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image05.png)
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image06.png)
 
-SIGNIFICATO COLONNE:
+SIGNIFICADO DE LAS COLUMNAS:
 
-Apertura Anno Dare / Avere = valore dell'ultima apertura dei conti calcolata **(A)**
+Apertura Año Debe / Haber (Apertura Anno Dare / Avere) = valor de la última apertura de las cuentas calculada **(A)**  
 
-Importo precedente (Dare / Avere) = importo riferito al periodo intercorrente tra l'ultima apertura conti (A) e la data di inizio periodo impostata nel filtro per date registrazione **(B)**
+Importe anterior (Debe / Haber) (Importo precedente (Dare / Avere)) = importe referido al periodo comprendido entre la última apertura de cuentas (A) y la fecha de inicio del periodo establecida en el filtro por fechas de registro **(B)**  
 
-Bilancio precedente (Dare /Avere) = **(A) + (B)**
+Balance anterior (Debe / Haber) = **(A) + (B)**  
 
-Dare / Avere nel periodo = importo riferito al periodo inserito nel filtro per date registrazione **(C)**
+Debe / Haber en el periodo (Dare / Avere nel periodo) = importe referido al periodo ingresado en el filtro por fechas de registro **(C)**  
 
-Totale Dare / Avere = **(A) + (B) + (C)**
+Total Debe / Haber = **(A) + (B) + (C)**  
 
-Saldo finale Dare /Avere = è il saldo netto dei valori totale dare /avere espressi dal punto precedente.
+Saldo final Debe / Haber (Saldo finale Dare / Avere) = es el saldo neto de los valores totales de debe/haber expresados en el punto anterior.  
 
-Colonna **Filtro**: è un dato "tecnico" che serve, nel caso di esportazione dati della griglia in excel (o trasferimento con copia-incolla), per gestire correttamente la successiva creazione, su excel, di pivot table (deve quindi essere portato su excel anche questo dato).
+Columna **Filtro**: es un dato "técnico" que sirve, en caso de exportación de datos de la cuadrícula en Excel (o transferencia con copia y pega), para gestionar correctamente la creación subsiguiente, en Excel, de tablas dinámicas (por lo que este dato también debe ser llevado a Excel).  
 
-TOTALI:
+TOTALES:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image07.png)
 
-**Totale righe selezionate**: è possibile selezionare uno o più (tenendo premuto il tasto Ctrl) conti / sottoconti. in questo caso gli importi vengono totalizzati in questa riga.
+**totale righe selezionate**: es posible seleccionar una o más (manteniendo presionada la tecla Ctrl) cuentas/subcuentas. En este caso, los importes se totalizan en esta fila.
 
-ATTENZIONE: Nel caso in cui vengano selezionati ad esempio dei sottoconti e anche i relativi conti mastro , oppure dei gruppi di livello gerarchico superiore (che dunque già comprendono il valore dei sottoconti di dettaglio), **l'importo visualizzato** in questa riga sarà riportato **in rosso** per evidenziare che il totale sarà falsato da una selezione non omogenea e coerente.
+ATENCIÓN: En caso de que se seleccionen, por ejemplo, subcuentas y también las cuentas maestras correspondientes, o grupos de nivel jerárquico superior (que por lo tanto ya comprenden el valor de las subcuentas de detalle), **el importe visualizado** en esta fila se mostrará **en rojo** para evidenciar que el total será distorsionado por una selección no homogénea y coherente.
 
-**Totale conti dettagliati**: i totali visualizzati in questa riga sono solamente quelli riferiti a sottoconti di dettaglio di livello gerarchico più basso.
+**totale conti dettagliati**: los totales visualizados en esta fila son solamente aquellos referidos a subcuentas de detalle de nivel jerárquico más bajo.
 
-**Totale tabella**: i totali visualizzati in questa riga sono quelli riferiti a tutte le righe visualizzate nella griglia dei risultati, quindi nel caso siano restituiti (in base ai filtri impostati) sia sottoconti di dettaglio, sia conti o livelli superiori, il totale sarà la somma dei sottoconti e dei livelli superiori (andando a moltiplicare i valori rispetto al livello di dettaglio e rappresentando in questo caso un dato poco significativo).
-
-
-
-
-
-
+**totale tabella**: los totales visualizados en esta fila son aquellos referidos a todas las filas visualizadas en la cuadrícula de resultados, por lo que en caso de que se devuelvan (en base a los filtros establecidos) tanto subcuentas de detalle como cuentas o niveles superiores, el total será la suma de las subcuentas y los niveles superiores (multiplicando los valores respecto al nivel de detalle y representando en este caso un dato poco significativo).

@@ -1,54 +1,54 @@
 ---
-title: Ricerca UDC e Visualizzazione trasferimenti UDC
+title: Búsqueda de UDC y Visualización de transferencias de UDC (Ricerca UDC e Visualizzazione trasferimenti UDC)
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La gestione delle Unità Di Carico (UDC) in Fluentis consente agli operatori di gestire l'intero ciclo di vita delle UDC, dalla loro creazione alla movimentazione, fino alla vendita. Le UDC possono essere create manualmente o tramite WMS Mobile, rendendo il sistema versatile e adattabile alle diverse necessità operative.
+:::important ¿Para qué sirve? (A cosa serve)
+La gestión de las Unidades de Carga (UDC) en Fluentis permite a los operadores gestionar todo el ciclo de vida de las UDC, desde su creación hasta el movimiento, pasando por la venta. Las UDC pueden crearse manualmente o a través de WMS Mobile, haciendo que el sistema sea versátil y adaptable a las diversas necesidades operativas.
 
-La procedura di gestione offre un filtro dettagliato per visualizzare tutte le UDC create, consentendo di controllare lo stato di carico e scarico delle unità. Ogni UDC è identificata da una chiave univoca composta da anno, gruppo e numero, e le informazioni relative a dimensioni e peso possono essere modificate in base alle esigenze specifiche.
+El procedimiento de gestión ofrece un filtro detallado para visualizar todas las UDC creadas, permitiendo controlar el estado de carga y descarga de las unidades. Cada UDC está identificada por una clave única compuesta por año, grupo y número, y la información relativa a dimensiones y peso puede ser modificada según las necesidades específicas.
 
-Inoltre, il modulo consente di gestire il dettaglio articoli all'interno di ogni UDC, facilitando l'associazione con ordini clienti e la registrazione dei movimenti di magazzino. Operazioni come il carico, lo scarico, e il trasferimento di UDC tra ubicazioni sono gestite con flessibilità, assicurando che i dati siano sempre aggiornati e accurati. Grazie a queste funzionalità, la gestione UDC di Fluentis contribuisce a migliorare l'efficienza operativa e la tracciabilità delle giacenze.
+Además, el módulo permite gestionar el detalle de artículos dentro de cada UDC, facilitando la asociación con pedidos de clientes y el registro de movimientos de almacén. Operaciones como la carga, la descarga, y la transferencia de UDC entre ubicaciones se gestionan con flexibilidad, asegurando que los datos estén siempre actualizados y precisos. Gracias a estas funcionalidades, la gestión de UDC de Fluentis contribuye a mejorar la eficiencia operativa y la trazabilidad de las existencias.
 :::
 
-### Ricerca UDC
+### Búsqueda de UDC (Ricerca UDC)
 
-La form si apre tramite il percorso **Logistica > Gestione UDC**.
+El formulario se abre a través de la ruta **Logística > Gestión UDC**.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
 :::note Nota
-In apertura della form i flag *Carico* e *Scarico*, presenti nel filtro, non sono spuntati, quindi verranno visualizzate solo le UDC che non sono ancora state caricate.
-Mentre attivando il flag *Carico* verranno visualizzate solo le UDC caricate e abilitando anche il flag *Scarico* si vedranno solo le UDC che sono state anche scaricate.
+Al abrir el formulario, los indicadores *carico* y *scarico*, presentes en el filtro, no están seleccionados, por lo que se visualizarán solo las UDC que aún no han sido cargadas.  
+Al activar el indicador *carico*, se visualizarán solo las UDC cargadas, y al habilitar también el indicador *scarico*, se verán solo las UDC que también han sido descargadas.
 :::
 
-Nel caso in cui un'*Unità di carico* sia stata inserita in una *lista di consegna o di trasferimento*, nella griglia dei risultati vengono visualizzati il numero e la data della lista. 
+En caso de que una *unità di carico* haya sido inserta en una *lista de entrega o de transferencia (lista di consegna o di trasferimento)*, en la cuadrícula de resultados se visualizarán el número y la fecha de la lista.  
 
-Inoltre, è interessante notare che è anche possibile ricercare le UDC per ordine cliente a cui sono state collegate.
+Además, es interesante notar que también es posible buscar las UDC por el pedido de cliente al que están vinculadas.
 
-Da questa form, è possibile effettuare il carico delle UDC selezionandole e premendo il tasto **Carico UDC** e anche lo scarico (solo se già caricata e presente in una lista) tramite il pulsante **Scarico UDC**.
+Desde este formulario, es posible realizar la carga de las UDC seleccionándolas y presionando el botón **carico udc** y también la descarga (solo si ya ha sido cargada y está presente en una lista) a través del botón **scarico udc**.
 
-:::note ATTENZIONE
-Se si desidera trasferire articoli dal magazzino direttamente all'interno dell'unità di carico, utilizzando una causale di carico per inserire gli articoli nell'unità e una contropartita di scarico per rimuoverli dal magazzino, è importante ricordare di spostare prima gli articoli nell'ubicazione indicata nella causale di contropartita.
+:::note ATENCIÓN
+Si se desea transferir artículos del almacén directamente dentro de la unidad de carga, utilizando un motivo de carga para insertar los artículos en la unidad y una contrapartida de descarga para retirarlos del almacén, es importante recordar mover primero los artículos a la ubicación indicada en el motivo de contrapartida.
 :::
 
-*Pulsanti specifici*:
+*Botones específicos (Pulsanti specifici)*:
 
-> **Nuovo**: il pulsante permette di [Creare un nuovo UDC](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
-> **Reso cliente**: permette di creare una nuova *Unità di carico*, utilizzando come *Tipo UDC* quella con il flag *Per Reso* abilitato e tutte le altre proprietà sono copiate dall'*Unità di carico* originale; questo pulsante si abilita solo per righe che sono caricate e consegnate;  
-> **Inserimento ordini in UDC**: permette di inserire gli articoli di un ordine cliente all'interno di una *Unità di carico*. Questa procedura crea un legame tra l'UDC e l'Ordine cliente;  
-> **Carico UDC**: esegue la procedura di creazione di registrazione/movimento di carico dell'*Unità di carico*;          
-> **Scarico UDC**: esegue la procedura di creazione di registrazione/movimento di scarico dell'*Unità di carico*; questo è abilitato solamente se l'*Unità di carico* è presente in una lista di prelievo UDC;            
-> **Visualizza registrazione di carico**: apre la registrazione di magazzino del carico UDC;  
-> **Visualizza registrazione di scarico**: apre la registrazione di magazzino dello scarico UDC;  
-> **Rollback carico UDC**: se l'UDC è caricata esegue il rollback della registrazione di magazzino di carico;  
-> **Rollback scarico UDC**: se l'UDC è caricata e scaricata esegue il rollback della registrazione di magazzino di scarico;  
-> **Aggiungi/togli articoli**: permette all'utente di aggiungere o rimuovere un articolo dall'*Unità di carico* selezionata; inoltre, l'utente ha la possibilità di rimuovere un articolo da un'altra *Unità di carico* e di aggiungerlo a quella selezionata. questo pulsante è abilitato per le righe caricate, non consegnate, non legate a *Picking* o *Liste di trasferimento* e non legate a dichiarazioni di produzione;    
-> **Sposta UDC**: permette di spostare l'UDC da un'ubicazione ad un'altra;  
-> **Rollback stampa**: permette di settare il flag di stampa a "False"; questo pulsante è abilitato solo per le righe non caricate e non legate a dichiarazioni di produzione.      
+> **nuovo**: el botón permite [Crear una nueva UDC (Creare un nuovo UDC)](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
+> **reso cliente**: permite crear una nueva *unità di carico*, utilizando como *Tipo UDC* aquel con el indicador *per reso* habilitado y todas las demás propiedades se copian de la *unità di carico* original; este botón se habilita solo para líneas que están cargadas y entregadas;  
+> **inserimento ordini in udc**: permite insertar los artículos de un pedido de cliente dentro de una *unità di carico*. Este procedimiento crea un vínculo entre la UDC y el Pedido de cliente;  
+> **carico udc**: ejecuta el procedimiento de creación de registro/movimiento de carga de la *unità di carico*;  
+> **scarico udc**: ejecuta el procedimiento de creación de registro/movimiento de descarga de la *unità di carico*; este se habilita solo si la *unità di carico* está presente en una lista de extracción de UDC;  
+> **Visualizar registro de carga (Visualizza registrazione di carico)**: abre el registro de almacén de la carga de UDC;  
+> **Visualizar registro de descarga (Visualizza registrazione di scarico)**: abre el registro de almacén de la descarga de UDC;  
+> **rollback carico udc**: si la UDC está cargada, ejecuta el rollback del registro de almacén de carga;  
+> **rollback scarico udc**: si la UDC está cargada y descargada, ejecuta el rollback del registro de almacén de descarga;  
+> **aggiungi/togli articoli**: permite al usuario agregar o quitar un artículo de la *unità di carico* seleccionada; además, el usuario tiene la opción de quitar un artículo de otra *unità di carico* y agregarlo a la seleccionada. Este botón está habilitado para líneas cargadas, no entregadas, no vinculadas a *Picking* o *Listas de transferencia* y no vinculadas a declaraciones de producción;  
+> **sposta udc**: permite mover la UDC de una ubicación a otra;  
+> **rollback stampa**: permite establecer el indicador de impresión en "False"; este botón está habilitado solo para líneas no cargadas y no vinculadas a declaraciones de producción.  
 
-### Visualizzazione trasferimenti UDC
+### Visualización de transferencias UDC (Visualizzazione trasferimenti UDC)
 
-La procedura è stata disegnata per permettere all'utente di interrogare facilmente il magazzino UDC con lo scopo di tenere sotto controllo le giacenze e avere in un tempo di interrogazione minimo tutte le informazioni relative alle UDC presenti a magazzino e che sono state trasferite o meno tra magazzini.
+El procedimiento ha sido diseñado para permitir al usuario consultar fácilmente el almacén de UDC con el fin de mantener bajo control las existencias y tener en un tiempo de consulta mínimo toda la información relativa a las UDC presentes en almacén y que han sido transferidas o no entre almacenes.

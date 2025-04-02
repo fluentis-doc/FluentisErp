@@ -1,13 +1,13 @@
 ---
-title: Agenti
+title: agenti
 sidebar_position: 9
 ---
 
-In questa form si inseriscono gli agenti che gestiscono commercialmente il soggetto in uso le cui anagrafiche sono state precedentemente create per poter essere selezionabili in questo tab.
+En este formulario se insertan los agentes que gestionan comercialmente el sujeto en uso cuyas anagramas han sido creadas previamente para poder ser seleccionables en esta pestaña.
 
-Possono quindi essere presenti più agenti, sia perché potrebbero esserci un agente e un capo area che maturano provvigione sullo stesso articolo, sia perché potrebbero seguire marchi e modelli differenti e quindi a seconda dell'articolo venduto vi potrà essere un singolo agente di riferimento.
+Por lo tanto, pueden estar presentes varios agentes, ya que podría haber un agente y un jefe de área que reciben comisiones sobre el mismo artículo, o podrían seguir marcas y modelos diferentes, y dependiendo del artículo vendido, podría haber un único agente de referencia.
 
-Nel campo della percentuale è possibile indicare una percentuale provvigionale all'agente (si rinvia al paragrafo dell'anagrafica agente per i dettagli sulle possibili combinazioni di calcolo provvigioni).
-Sono presenti inoltre le date di inizio e fine validità per controllare la validità della relazione tra l'agente e il cliente, indipendentemente dalla validità dell'anagrafica dell'agente, ad esempio l'agente è sempre valido ed in attività ma ha cessato la relazione con un certo cliente.
+En el campo de porcentaje es posible indicar un porcentaje de comisión al agente (se remite al párrafo del registro del agente para los detalles sobre las posibles combinaciones de cálculo de comisiones).  
+También están presentes las fechas de inicio y fin de validez para controlar la validez de la relación entre el agente y el cliente, independientemente de la validez del registro del agente; por ejemplo, el agente puede estar siempre válido y en actividad, pero haber cesado la relación con cierto cliente.
 
-Nel campo **Visibilità del documento**, quando all'agente è stato dato accesso a ***Fluentis***, si può definire se l'agente vede *Tutti i documenti* del cliente o solo i *Propri documenti*
+En el campo **visibilità del documento**, cuando se le ha dado acceso al agente en ***Fluentis***, se puede definir si el agente ve *tutti i documenti* del cliente o solo sus *propri documenti*.

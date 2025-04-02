@@ -1,27 +1,27 @@
-- **Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli.
+- **importo lordo articoli**: representa la suma de los valores de todos los artículos.  
 
-- **Acconto**: rappresenta il valore dell'eventuale acconto ricevuto per il documento.
+- **acconto**: representa el valor del posible anticipo recibido por el documento.  
 
-- **Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*.
+- **importo omaggio**: representa el importe de los artículos de tipo regalo introducidos en la pestaña *articoli*.  
 
-- **Totale sconti applicati**: rappresenta il valore totale degli sconti applicati sugli articoli, escludendo gli sconti finali.
+- **totale sconti applicati**: representa el valor total de los descuentos aplicados a los artículos, excluyendo los descuentos finales.  
 
-- **Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*.
+- **importo netto articoli**: *importo lordo articoli* – *totale sconti applicati*.  
 
-- **Sconti finali articoli**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli.
+- **sconti finali articoli**: representa el valor de los descuentos finales expresados en porcentaje sobre el importe bruto de los artículos.  
 
-- **Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*.
+- **Importe neto descuentos finales (Importo netto sconti finali)**: *importo netto articoli* - *totale sconti finali*.  
 
-- **Totale articoli spese**: rappresenta il valore delle spese inserite nel tab precedente come articoli di *Tipo spese*.
+- **totale articoli spese**: representa el valor de los gastos introducidos en la pestaña anterior como artículos de *tipo spese*.  
 
-- **Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*.
+- **spese di incasso**: representa la suma de los gastos de cobro introducidos en la cuadrícula de *spese*.  
 
-- **Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*.
+- **spese bollo**: representa la suma de los gastos de timbre introducidos en la cuadrícula de *spese*.  
 
-- **Totale spese/sconti/maggiorazioni**: rappresenta il valore totale delle spese inserite nella griglia *Spese*.
+- **Total gastos/descuentos/suprimentos (Totale spese/sconti/maggiorazioni)**: representa el valor total de los gastos introducidos en la cuadrícula *spese*.  
 
-- **Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale articoli spese* + *Totale spese/sconti/maggiorazioni*.
+- **imponibile**: *importo netto articoli* – *sconti finali* + *totale articoli spese* + *Total gastos/descuentos/suprimentos (Totale spese/sconti/maggiorazioni)*.  
 
-- **Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA.
+- **imposta**: representa la suma de los valores contenidos en los resúmenes de IVA.  
 
-- **Totale**: *Imponibile* + *IVA*.
+- **totale**: *imponibile* + *IVA*.

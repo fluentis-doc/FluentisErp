@@ -1,11 +1,11 @@
 ---
-title: Ricerca parametri iniziali magazzino
+title: Búsqueda de parámetros iniciales de almacén (Ricerca parametri iniziali magazzino)
 sidebar_position: 1
 ---
 
-La form si compone di due sezioni principali:
+El formulario se compone de dos secciones principales:
 
-- **Area di filtro**: permette di ricercare i parametri utilizzando i filtri per *anno* e *data ultima chiusura*.
-- **Griglia dei risultati**: mostra i parametri trovati in base ai filtri applicati. Con un doppio click sulla riga desiderata, è possibile accedere alla form di dettaglio dei *Parametri iniziali magazzino*.
+- **Área de filtro (Area di filtro)**: permite buscar los parámetros utilizando los filtros por *anno* y *data ultima chiusura*.  
+- **Cuadrícula de resultados (Griglia dei risultati)**: muestra los parámetros encontrados según los filtros aplicados. Con un doble clic en la fila deseada, es posible acceder al formulario de detalle de los *parametri iniziali magazzino*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

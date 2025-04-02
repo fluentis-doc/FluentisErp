@@ -1,23 +1,15 @@
 ---
-title: Prospetto rivalutazioni
+title: prospetto rivalutazioni
 sidebar_position: 4
 ---
 
-La maschera di stampa del Prospetto rivalutazioni consente di definire i consueti filtri di ricerca all'estrazione dati.
+La máscara de impresión del prospetto rivalutazioni permite definir los filtros de búsqueda habituales para la extracción de datos.
 
-Il report consente di riepilogare i dati di dettaglio delle rivalutazioni associate ai vari cespiti, secondo il codice di raggruppamento impostato in tabella categorie cespiti.
+El informe permite resumir los datos de detalle de las revalorizaciones asociadas a los diversos activos, de acuerdo con el código de agrupamiento establecido en la tabla de categorías de activos.
 
-Per ulteriori informazioni sui parametri di filtro della form **[vedere qui](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
+Para más información sobre los parámetros de filtro del formulario **[ver aquí](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
-
-
-
-
-
-
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión. |
+| Imprimir (Stampa) | Botón para ejecutar la impresión física del documento. |

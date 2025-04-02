@@ -1,6 +1,6 @@
 ---
-title: Conferma prelievo UDC
+title: conferma prelievo udc
 sidebar_position: 6
 ---
 
-Vedasi documentazione al seguente link: [Conferma prelievo UDC (versione WMS)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)
+Consulte la documentación en el siguiente enlace: [conferma prelievo udc (versión WMS) (Conferma prelievo UDC (versione WMS))](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)

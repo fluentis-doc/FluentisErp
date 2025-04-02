@@ -1,16 +1,16 @@
 ---
-title: Categorie sconti gestione prezzi
+title: categorie sconti gestione prezzi
 sidebar_position: 11
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Categorie sconti gestione prezzi** e viene utilizzata per assegnare la categoria di sconto agli articoli in anagrafica articolo.
+La tabla se abre a través de la ruta **Tablas > Compras > categorie sconti gestione prezzi (Tabelle > Acquisti > Categorie sconti gestione prezzi)** y se utiliza para asignar la categoría de descuento a los artículos en el registro de artículos.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevos códigos, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-**Codice/Descrizione**: inserire un codice ed una descrizione per indicare una categoria sconti prezzi. Deve essere inserito un valore univoco e di lunghezza massima di 10 caratteri.
+**codice/descrizione**: ingresar un código y una descripción para indicar una categoría de descuentos de precios. Debe ingresarse un valor único y de longitud máxima de 10 caracteres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

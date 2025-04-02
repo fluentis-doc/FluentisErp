@@ -1,24 +1,23 @@
 ---
-title: Piani di ammortamento alternativi
+title: piani di ammortamento alternativi
 sidebar_position: 16
 ---
 
-La definizione di questa tabella consente di definire i piani d'ammortamento da valorizzare nella simulazione pluriannuale degli ammortamenti.
+La definición de esta tabla permite definir los planes de amortización a valorar en la simulación plurianual de los amortizaciones.
+
+Los campos de la primera sección son:
+
+**codice**:  código del plan de amortización.
+
+**descrizione**:  descripción del plan de amortización.
+
+**divisione**: indicador de gestión sobre la única división activa.
 
 
-I campi della prima sezione sono:
+Los campos de la segunda sección son:
 
-**Codice**:  codice del piano di ammortamento.
+**categoria**:  categoría a la que se aplicará el plan de amortización.
 
-**Descrizione**: descrizione del piano di ammortamento.
+**descrizione**:  descripción de la categoría a la que se aplicará el plan de amortización.
 
-**Divisione**: flag di gestione sulla sola divisione attiva.
-
-
-I campi della seconda sezione sono:
-
-**Categoria**: categoria a cui applicare il piano di ammortamento.
-
-**Descrizione**: descrizione categoria a cui applicare il piano di ammortamento.
-
-**Perc. di applicazione**: percentuale da applicare.
+**perc. di applicazione**:  porcentaje a aplicar.

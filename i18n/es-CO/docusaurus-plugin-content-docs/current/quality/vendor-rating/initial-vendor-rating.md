@@ -1,91 +1,82 @@
 ---
-title: Valutazioni iniziali e periodiche
+title: valutazioni iniziali e periodiche
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Valutazioni fornitore > Valutazioni iniziali e periodiche**
+La gestión se encuentra en la ruta **Calidad > Evaluaciones de proveedores > valutazioni iniziali e periodiche** 
 
+:::important ¿Para qué sirve? (A cosa serve)
+Las *valutazioni iniziali e periodiche* son uno de los métodos de evaluación de los proveedores que se ponen a disposición para su valoración.  
+Este método "subjetivo" es manual y se utiliza habitualmente para las primeras evaluaciones y evaluaciones posteriores.  
 
-:::important A cosa serve
-Le *Valutazioni iniziali e periodiche* è uno dei metodi di valutazione dei fornitori che vengono messi a disposizione per la valutazione degli stessi.
-Questo metodo "soggettivo" è manuale e viene abitualmente utilizzato per le prime valutazioni e valutazioni successive.   
-
-La gestione consente di inserire nuove *Valutazioni iniziali e periodiche* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+La gestión permite insertar nuevas *valutazioni iniziali e periodiche* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.  
 :::
 
 
-## Pulsanti di comando
+## Botones de comando
 
+### ![](/img/neutral/common/search.png) Buscar valutazioni iniziali e periodiche (Ricerca Valutazioni iniziali e periodiche)
 
-### ![](/img/neutral/common/search.png) Ricerca Valutazioni iniziali e periodiche
+El formulario se compone de una área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+### ![](/img/neutral/common/new.png) Ingreso de valutazioni iniziali e periodiche (Inserimento Valutazioni iniziali e periodiche)
 
+Para poder insertar nuevas *valutazioni iniziali e periodiche*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: **data valutazione**, **fornitore** y **tipo valutazione**.
 
-### ![](/img/neutral/common/new.png) Inserimento Valutazioni iniziali e periodiche
+### ![](/img/neutral/common/select-all.png) Asociar Check-list (Associa Check-list)
 
-Per poter inserire nuove *Valutazioni iniziali e periodiche* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: La **Data valutazione**, il **Fornitore** e il **Tipo valutazione**.
+Botón habilitado únicamente si se selecciona una sola *Evaluación inicial y periódica* y el *Proveedor* no ha sido evaluado previamente.  
+Se muestra la *Ayuda de las Check-lists* de la cual es posible seleccionar solo una.  
+Si ya existe una *Check-list* asociada a la línea, se pedirá confirmar si se desea reemplazar la existente (y las *Preguntas* relacionadas) con la nueva *Check-list* seleccionada.
 
+## Gestión de datos
 
-### ![](/img/neutral/common/select-all.png) Associa Check-list
+### valutazioni iniziali e periodiche (Valutazioni iniziali e periodiche)
 
-Pulsante abilitato solamente se si seleziona una sola *Valutazione iniziale e periodica* e il *Fornitore* non è già stato valutato.   
-Viene visualizzato l'*Help delle Check-list* dal quale è possibile selezionarne una sola.
-Se esiste già una *Check-list* associata alla riga viene richiesto se sostituire quella esistente (e relative *Domande*) con la nuova *Check-list* selezionata.
-
-
-## Gestione dati
-
-
-### Valutazioni iniziali e periodiche
-
-E' l'elenco dove vengono inserite le informazioni principali della *Valutazione iniziale e periodica*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Data valutazione**: (dato obbligatorio) è la data nella quale viene effettuata la valutazione.   
-> All'inserimento di una nuova valutazione viene proposta in automatico la data odierna.   
+Es la lista donde se ingresan las principales informaciones de la *Evaluación inicial y periódica*.  
+La lista se compone de la siguiente información:  
+> **data valutazione**: (dato obligatorio) es la fecha en la que se realiza la evaluación.  
+> Al ingresar una nueva evaluación, se propone automáticamente la fecha actual.  
 >
-> **Fornitore**: (dato obbligatorio) è la ragione sociale del *Fornitore* che viene valutato.   
+> **fornitore**: (dato obligatorio) es la razón social del *Proveedor* que se está evaluando.  
 >
-> **Tipo valutazione**: (dato obbligatorio) è il codice del *Tipo valutazione*.   
-> All'inserimento di una nuova valutazione viene proposto il *Tipo valutazione* indicato nei *Parametri qualificazione fornitore*.   
+> **tipo valutazione**: (dato obligatorio) es el código del *Tipo de evaluación*.  
+> Al ingresar una nueva evaluación, se propone el *Tipo de evaluación* indicado en los *parametri qualificazione fornitore*.  
 >
-> **Check-list**: è il codice della *Check-list*.   
-> All'inserimento di un *Fornitore* viene proposta in automatico la *Check-list* presente nei suoi *Dati contabili > Dati qualità* e le relative *Domande*.   
-> La modifica di una *Check-list* comporta la sostituzione delle *Descrizioni/Domande* presenti previo richiesta.
+> **Check-list**: es el código de la *Check-list*.  
+> Al ingresar un *Proveedor*, se propone automáticamente la *Check-list* presente en sus *Datos contables > Datos de calidad (Dati contabili > Dati qualità)* y las correspondientes *Preguntas*.  
+> La modificación de una *Check-list* implica la sustitución de las *Descripciones/Preguntas* presentes, previo aviso.  
 >
-> **Ispettore**: è il codice dell'*Ispettore* che effettua la valutazione.   
+> **ispettore**: es el código del *Inspector* que realiza la evaluación.  
 >
-> **Motivo valutazione**: annotazioni libere sull'argomento, è una descrizione della motivazione della valutazione.   
+> **motivo valutazione**: anotaciones libres sobre el tema, es una descripción de la motivación de la evaluación.  
 >
-> **Valutazione**: è la *Valutazione* data al *Fornitore* dell'*Ispettore*.   
-> La cella viene colorata con i colori di *sfondo* e di *testo* previsti nella tabella delle *Valutazioni fornitore*.   
-> Se la *Valutazione* attribuita è assoviata ad una *Valutazione fornitore* con *Sospensione automatica* il *Fornitore* valutato verrà *Sospeso* dalla *Data valutazione*.
-> Il ripristino della sospensione deve essere fatta manualmente dalla *Funzione aziendale* preposta.   
-> Associata una *Valutazione* le informazioni di: *Data valutazione*, *Fornitore* e *Tipo valutazione* non saranno più modificabili.   
+> **valutazione**: es la *Evaluación* dada al *Proveedor* por el *Inspector*.  
+> La celda se colorea con los colores de *fondo* y de *texto* previstos en la tabla de *Evaluaciones de proveedores*.  
+> Si la *Evaluación* atribuida está asociada a una *Evaluación de proveedor* con *Suspensión automática*, el *Proveedor* evaluado será *Suspendido* desde la *Fecha de evaluación*.  
+> La restauración de la suspensión debe hacerse manualmente por la *Función organizativa* designada.  
+> Una vez asociada una *Evaluación*, la información de *data valutazione*, *fornitore* y *tipo valutazione* no se podrá modificar más.  
 >
-> **Descrizione tipo valutazione**: è la descrizione del *Tipo valutazione*.   
-> **Descrizione check-list**: è la descrizione della *Check-list*.   
-> **Descrizione ispettore**: è la descrizione dell'*Ispettore*.   
-> **Note**: annotazioni libere.  
+> **descrizione tipo valutazione**: es la descripción del *Tipo de evaluación*.  
+> **Descripción de la check-list (Descrizione check-list)**: es la descripción de la *Check-list*.  
+> **descrizione ispettore**: es la descripción del *Inspector*.  
+> **note**: anotaciones libres.  
 
+### Descripciones/Preguntas (Descrizioni/Domande)
 
-### Descrizioni/Domande
+Es la lista de preguntas/actividades a utilizar/realizar para las evaluaciones a proveedores.  
+La lista se compone de la siguiente información:  
+> **sequenza**: es la secuencia de ejecución de las *preguntas/actividades*.  
+> **descrizione/domanda**: anotaciones libres sobre el tema.  
+> **risposta**: anotaciones libres sobre el tema.  
+> **valutazione attesa**: es el *Nivel de evaluación* mínimo requerido para la evaluación.  
+> **valutazione rilevata**: es el *Nivel de evaluación* evaluado.  
+> El carácter se vuelve *Rojo* si la *Evaluación detectada* es inferior a la *Evaluación esperada*.  
+> **note**: anotaciones libres.
 
-E' l'elenco delle domande/attività da utilizzare/effettuare per le valutazioni a fornitori.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione delle *domande/attività*.   
-> **Descrizione/Domanda**: annotazioni libere sull'argomento.   
-> **Risposta**: annotazioni libere sull'argomento.   
-> **Valutazione attesa**: è il *Livello di valutazione* minimo richiesto per la valutazione.   
-> **Valutazione rilevata**: è il *Livello di valutazione* valutato.   
-> Il carattere diventa *Rosso* se la *Valutazione rilevata* è inferiore alla *Valutazione attesa*.   
-> **Note**: annotazioni libere.
+### Datos adicionales (Extra data)
 
+Es posible ingresar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *Evaluación inicial y periódica*.  
 
-### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Valutazione iniziale e periodica*.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, puede referirse al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

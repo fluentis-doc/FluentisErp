@@ -1,9 +1,8 @@
 ---
-title: Tipo periodo
+title: tipo periodo
 sidebar_position: 1
 ---
 
+En esta tabla, es importante proporcionar a Fluentis las especificaciones sobre los tipos de períodos a utilizar en las Pronósticos de ventas. En la primera cuadrícula, se puede asignar un **codice** y una **descrizione** únicos para cada Tipo, indicando también qué Tipo proponer como predeterminado mediante el indicador correspondiente.
 
-In questa tabella, è importante fornire a Fluentis le specifiche sulle tipologie di periodi da utilizzare nelle Previsioni di vendita. Nella prima griglia, è possibile assegnare un **Codice** e una **Descrizione** univoci per ciascuna Tipologia, indicando inoltre quale Tipologia proporre di default mediante l'apposito flag.
-
-Per ogni riga della prima griglia, è necessario completare la seconda griglia per istruire il software sulla durata dei vari periodi. A titolo esemplificativo, nel caso del Tipo periodo *Annuale* indicato nella prima griglia, sarà necessario specificare nella seconda griglia la durata dei singoli mesi nell'arco di un anno (ad esempio, Gennaio dall'01/01 al 31/01, Febbraio dal 01/02 al 29/02, ecc.). In questo modo, Fluentis sarà in grado di suddividere gli importi delle previsioni di vendita nei diversi mesi indicati. Per ciascuna tipologia presente nella prima griglia, pertanto, è possibile prevedere periodi di durata variabile in base alle esigenze aziendali.
+Para cada fila de la primera cuadrícula, es necesario completar la segunda cuadrícula para instruir al software sobre la duración de los diversos períodos. A modo de ejemplo, en el caso del tipo periodo *annuale* indicado en la primera cuadrícula, será necesario especificar en la segunda cuadrícula la duración de los meses individuales durante un año (por ejemplo, Enero del 01/01 al 31/01, Febrero del 01/02 al 29/02, etc.). De este modo, Fluentis podrá dividir los importes de las pronósticos de ventas en los diferentes meses indicados. Por lo tanto, para cada tipo presente en la primera cuadrícula, se pueden prever períodos de duración variable según las necesidades empresariales.

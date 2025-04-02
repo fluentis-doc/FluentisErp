@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: generalità
 sidebar_position: 1
 ---
 
-La sezione dei parametri dell'Area Produzione si consultano tramite il percorso **Parametri > Produzione** e servono ad impostare tutta la gestione dell'area produzione. 
+La sección de parámetros del Área de Producción se consulta a través de la ruta **Parámetros > Producción (Parametri > Produzione)** y sirve para establecer toda la gestión del área de producción.

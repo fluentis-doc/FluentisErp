@@ -1,53 +1,53 @@
 ---
-title: Rettifica articolo
+title: rettifica articolo
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La funzione di **rettifica articolo** è utilizzata per correggere le giacenze degli articoli nel magazzino, permettendo all’operatore di apportare rettifiche positive o negative. Grazie a un'interfaccia chiara, l'operatore può cercare l’articolo da rettificare, visualizzare le informazioni correlate e modificare la quantità direttamente in griglia. Confermando la modifica, il sistema genera automaticamente i movimenti di rettifica, assicurando un aggiornamento preciso delle giacenze.
+:::important ¿Para qué sirve? (A cosa serve)
+La función de **rettifica articolo** se utiliza para corregir las existencias de los artículos en el almacén, permitiendo al operador realizar ajustes positivos o negativos. Gracias a una interfaz clara, el operador puede buscar el artículo a rectificar, visualizar la información relacionada y modificar la cantidad directamente en la cuadrícula. Al confirmar la modificación, el sistema genera automáticamente los movimientos de rectificación, asegurando una actualización precisa de las existencias.
 :::
 
-Questa procedura è utilizzata per creare delle rettifiche positive o negative di un articolo.          
-La form presenta una griglia che muta le proprie colonne sulla base dei filtri inseriti per la ricerca.        
-Ad esempio, nel caso in cui venga letto solo il codice di un'ubicazione, tramite il pulsante **Ricerca** verranno visualizzati nella griglia sottostante i risultati della ricerca con la valorizzazione delle seguenti colonne:
+Este procedimiento se utiliza para crear ajustes positivos o negativos de un artículo.  
+El formulario presenta una cuadrícula que cambia sus columnas según los filtros ingresados para la búsqueda.  
+Por ejemplo, en el caso de que solo se lea el código de una ubicación, mediante el botón **ricerca** se visualizarán en la cuadrícula inferior los resultados de la búsqueda con la valoración de las siguientes columnas:
 
-> **Articolo**: indica il codice dell'articolo;     
-> **Unità di misura**: indica l'unità di misura articolo;     
-> **Quantità**: indica la quantità che l'operatore può variare manualmente oppure tramite i pulsanti **+** e **-**;        
-> **Giacenza**: indica la giacenza dell'articolo calcolata sulla base dei movimenti di magazzino;       
-> **Giacenza (FC)**: si attiva solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;               
-> **Lotto**: indica il lotto dell'articolo;       
-> **Descrizione articolo**: indica la descrizione dell'articolo.    
+> **articolo**: indica el código del artículo;  
+> **unità di misura**: indica la unidad de medida del artículo;  
+> **quantità**: indica la cantidad que el operador puede variar manualmente o mediante los botones **+** y **-**;  
+> **giacenza**: indica la existencia del artículo calculada en base a los movimientos de almacén;  
+> **Existencia (FC) (Giacenza (FC))**: se activa solo si el indicador *default wms* está habilitado en la pestaña [Unidades de medida alternativas del registro de artículos (Unità di misura alternative dell'anagrafica articolo)](/docs/erp-home/registers/items/create-new-item). Este valor indica la existencia expresada en la unidad de medida alternativa, calculada utilizando el factor de conversión;  
+> **lotto**: indica el lote del artículo;  
+> **descrizione articolo**: indica la descripción del artículo.  
 
-Mentre, leggendo l'articolo da rettificare, tramite il pulsante **Ricerca** verranno visualizzati nella griglia sottostante i risultati della ricerca con la valorizzazione delle seguenti colonne:
+Mientras que, al buscar el artículo a rectificar, mediante el botón **ricerca** se visualizarán en la cuadrícula inferior los resultados de la búsqueda con la valoración de las siguientes columnas:
 
-> **Ubicazione**: indica l'ubicazione dell'articolo;        
-> **Unità di misura**: indica l'unità di misura articolo;     
-> **Quantità**: indica la quantità che l'operatore può variare manualmente oppure tramite i pulsanti **+** e **-**;        
-> **Giacenza**: indica la giacenza dell'articolo calcolata sulla base dei movimenti di magazzino;       
-> **Giacenza (FC)**: si attiva solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;                      
-> **Lotto**: indica il lotto dell'articolo.       
+> **ubicazione**: indica la ubicación del artículo;  
+> **unità di misura**: indica la unidad de medida del artículo;  
+> **quantità**: indica la cantidad que el operador puede variar manualmente o mediante los botones **+** y **-**;  
+> **giacenza**: indica la existencia del artículo calculada en base a los movimientos de almacén;  
+> **Existencia (FC) (Giacenza (FC))**: se activa solo si el indicador *default wms* está habilitado en la pestaña [Unidades de medida alternativas del registro de artículos (Unità di misura alternative dell'anagrafica articolo)](/docs/erp-home/registers/items/create-new-item). Este valor indica la existencia expresada en la unidad de medida alternativa, calculada utilizando el factor de conversión;  
+> **lotto**: indica el lote del artículo.  
 
-:::note **Giacenza** e **Giacenza (FC)**
-È importante ricordare che, se il flag *Default WMS* è attivo nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item), i valori nei campi **Giacenza** e **Giacenza (FC)** saranno espressi nell'unità di misura alternativa corrispondente. Tuttavia, se l'articolo è gestito a lotti, i valori nei campi **Giacenza** e **Giacenza (FC)** saranno espressi nell'unità di misura principale dell'articolo, anche se il flag "Default WMS" è attivo.
+:::note **giacenza** y **Existencia (FC) (Giacenza (FC))**
+Es importante recordar que, si el indicador *default wms* está activo en la pestaña [Unidades de medida alternativas del registro de artículos (Unità di misura alternative dell'anagrafica articolo)](/docs/erp-home/registers/items/create-new-item), los valores en los campos **giacenza** y **Existencia (FC) (Giacenza (FC))** estarán expresados en la unidad de medida alternativa correspondiente. Sin embargo, si el artículo se gestiona por lotes, los valores en los campos **giacenza** y **Existencia (FC) (Giacenza (FC))** estarán expresados en la unidad de medida principal del artículo, incluso si el indicador "WMS por defecto (Default WMS)" está activo.
 :::
 
-Per poter procedere con la rettifica è necessario che nella griglia dei risultati sia presente un solo record.     
-A questo punto l'operatore non dovrà far altro che variare la quantità manualmente, modificando il valore direttamente in griglia, oppure tramite i pulsanti **+** e **-**; dopo di che con la pressione del pulsante **Conferma** verranno creati i relativi movimenti di rettifica positivi o negativi.
+Para poder proceder con la rectificación, es necesario que en la cuadrícula de resultados haya un solo registro.  
+En este punto, el operador solo deberá variar la cantidad manualmente, modificando el valor directamente en la cuadrícula, o utilizando los botones **+** y **-**; después de esto, al presionar el botón **conferma** se crearán los respectivos movimientos de rectificación positivos o negativos.
 
-Inoltre, è possibile stampare anche l'etichetta del codice articolo tramite il pulsante **Stampa** o visualizzare l'anteprima direttamente sul terminale con il pulsante **Anteprima**.
+Además, también es posible imprimir la etiqueta del código del artículo mediante el botón **stampa** o visualizar la vista previa directamente en el terminal con el botón **anteprima**.
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**parametri carico/scarico** a insertar en la tabla [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Área (Area) | Módulo (Modulo) | Formulario (Form) |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustItem |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustItem |
 
-I parametri sono inseriti due volte poiché la form utilizza sia una causale di carico per le rettifiche positive, che una di causale di scarico per le rettifiche negative.     
+Los parámetros se insertan dos veces porque el formulario utiliza tanto un motivo de carga para las rectificaciones positivas, como un motivo de descarga para las rectificaciones negativas.  
 
 :::note Nota
-Se nei [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) è associato per quell’utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente uno di quelli inseriti.
+Si en los [Parámetros de Carga/Descarga por usuario (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) está asociado para ese usuario un solo almacén, se propone por defecto ese; de lo contrario, si hay más de uno asociado, por defecto no se propone ninguno y el usuario solo puede elegir uno de los que están ingresados.
 :::
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Para toda la información sobre cómo codificar los códigos de barras a leer en el campo **codice barcode**, consulte la página relacionada con el [Tokenizer de código de barras (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).

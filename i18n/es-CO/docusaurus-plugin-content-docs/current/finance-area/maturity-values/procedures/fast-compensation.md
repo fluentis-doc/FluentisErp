@@ -1,45 +1,43 @@
 ---
-title: Compensazione veloce
+title: compensazione veloce
 sidebar_position: 3
 ---
 
-:::note Percorso
-**Amministrazione>Partite>Procedure>Compensazione veloce**
+:::note Ruta (Percorso)
+**Administración>Partidas>Procedimientos>compensazione veloce (Amministrazione>Partite>Procedure>Compensazione veloce)**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Nota (Nota):
+Para cualquier aspecto no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
 
 :::
 
 ---
 
-La presente form permette, in maniera leggermente semplificata rispetto all'analoga *Compensazione partite*, di gestire la compensazione tra partite aperte di segno inverso (Dare / Avere) ed intestate al medesimo sottoconto (ad es. un cliente o un fornitore).
+Este formulario permite, de una manera ligeramente simplificada en comparación con el equivalente *Compensación de partidas*, gestionar la compensación entre partidas abiertas de signo inverso (Debe / Haber) y con el mismo subcuenta (por ejemplo, un cliente o un proveedor).
 
-Viene pertanto utilizzata in alternativa alla manovra di compensazione da eseguire direttamente in fase di registrazione contabile (ad esempio nel caso di registrazione di una fattura emessa o ricevuta dove in precedenza sia già avvenuto un incasso o un pagamento anticipato) e dunque anche in un secondo momento.
+Por lo tanto, se utiliza como alternativa a la maniobra de compensación que se ejecuta directamente en la fase de registro contable (por ejemplo, en el caso de registrar una factura emitida o recibida donde previamente ya se haya realizado un cobro o un pago anticipado) y, por ende, también en un segundo momento.
 
-**Le partite attive vengono rappresentate nella griglia superiore, mentre quelle passive nella griglia inferiore.**
-I pulsanti per avviare la ricerca delle partite sono posti come di consueto nella ribbon bar e vanno premuti entrambi per ottenere entrambe le tipologie di partita.
+**Las partidas activas se representan en la cuadrícula superior, mientras que las pasivas en la cuadrícula inferior.**
+Los botones para iniciar la búsqueda de partidas están ubicados, como es habitual, en la barra de ribbon y deben ser presionados ambos para obtener ambas tipologías de partida.
 
-Per gestire la ricerca tramite i consueti campi di filtro (ad esempio per ricercare solo le partite attive e le passive intestate ad un singolo fornitore) è necessario visualizzare i campi di filtro (a scomparsa) dagli **appositi tab posti sulla destra** (divengono visibili passando sopra con il mouse e possono essere eventualmente bloccati su visibile).
+Para gestionar la búsqueda a través de los campos de filtro habituales (por ejemplo, para buscar solo las partidas activas y pasivas a nombre de un único proveedor), es necesario visualizar los campos de filtro (ocultos) desde **las pestañas correspondientes ubicadas a la derecha** (se vuelven visibles al pasar el mouse y se pueden fijar para que permanezcan visibles).
 
-Le partite che devono essere compensate tra di loro devono essere selezionate sia nella griglia superiore, sia in quella inferiore
-
+Las partidas que deben ser compensadas entre sí deben ser seleccionadas tanto en la cuadrícula superior como en la inferior.
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation.png)
 
-Premendo il tasto ***Compensazione partite***, nella ribbon bar le partite selezionate vengono compensate tra di loro.
+Al presionar el botón ***Compensación de partidas*** (Compensazione partite), en la barra de ribbon, las partidas seleccionadas se compensan entre sí.
 
-Nel caso di importi non coincidenti la partite di minore importo viene chiusa mentre quella maggiore rimane aperta per il valore residuo.
+En caso de que los importes no coincidan, la partida de menor importe se cierra mientras que la mayor permanece abierta por el valor residual.
 
-E' possibile anche specificare un valore parziale secondo il quale eseguire la compensazione. In questo caso espandere la sezione Contabilizzazione ed utilizzare il campo **Valore** (si veda ultima immagine in basso).
-
+También es posible especificar un valor parcial según el cual realizar la compensación. En este caso, amplíe la sección de Contabilización y utilice el campo **valore** (ver la última imagen a continuación).
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation2.png)
 
 ---
 
-La compensazione può dar luogo, automaticamente, anche ad una scrittura contabile (ad esempio quando si compensano partite di uno stesso soggetto ma avente sottoconti distinti inquanto è sia cliente che fornitore e dunque devono essere compensati anche i saldi contabili).
+La compensación puede dar lugar, automáticamente, a un asiento contable (por ejemplo, cuando se compensan partidas de un mismo sujeto pero con subcuentas distintas, ya que es tanto cliente como proveedor y, por lo tanto, también deben compensarse los saldos contables).
 
-Per attivare la contabilizzazione mettere il flag sul campo contabilizzazione in alto in corrispondenza delle tab della maschera ed espandere la sezione per impostare i parametri necessari (in particolare la causale di contabilità)
+Para activar la contabilización, marque el indicador en el campo de contabilización en la parte superior correspondiente a las pestañas del formulario y amplíe la sección para establecer los parámetros necesarios (en particular, la causa de contabilidad).
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation3.png)

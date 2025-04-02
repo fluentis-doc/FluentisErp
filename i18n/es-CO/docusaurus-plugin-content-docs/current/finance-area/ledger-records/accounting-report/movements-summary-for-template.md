@@ -1,34 +1,30 @@
 ---
-title: Riepilogo movimenti per causale
+title: riepilogo movimenti per causale
 sidebar_position: 4
 ---
 
-La stampa consente di visualizzare i movimenti contabili filtrando per causale di contabilità.
+La impresión permite visualizar los movimientos contables filtrando por causa contable.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image01.png)
 
-Sono presenti inoltre i consueti filtri sui dati principali delle registrazioni contabili ed in particolare un widget per ricercare le registrazioni che contengono il sottoconto desiderato.
+También están presentes los filtros habituales sobre los datos principales de los registros contables y, en particular, un widget para buscar los registros que contienen la subcuenta deseada.
 
-Nella parte inferiore della form sono presenti due griglie che consentono di gestire un eventuale raggruppamento dei dati all'interno della stampa.
+En la parte inferior del formulario hay dos cuadrículas que permiten gestionar un posible agrupamiento de datos dentro de la impresión.
 
-Sulla destra sono proposti i criteri di raggruppamento disponibili, mentre sulla sinistra quelli attivi. Per inserire un raggruppamento è sufficiente trascinare da destra a sinistra il criterio desiderato. Nel caso siano trascinati più di un criterio la priorità di raggruppamento verrà letta dall'alto in basso.
+A la derecha se proponen los criterios de agrupamiento disponibles, mientras que a la izquierda los activos. Para insertar un agrupamiento, basta con arrastrar de derecha a izquierda el criterio deseado. En caso de que se arrastren más de un criterio, la prioridad de agrupamiento se leerá de arriba hacia abajo.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image02.png)
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image03.png)
 
-Nella ribbon bar sono presenti alcuni comandi per la gestione dei raggruppamenti:
+En la barra de herramientas (ribbon bar) hay algunos comandos para la gestión de agrupamientos:
 
-**Cancella**: rimuove il raggruppamento selezionato
+**cancella**: elimina el agrupamiento seleccionado.
 
-**Rimuovi raggruppamenti**: rimuove tutti i raggruppamenti presenti (se sono attivi più di uno)
+**rimuovi raggruppamenti**: elimina todos los agrupamientos presentes (si hay más de uno activo).
 
-**Sposta su /giù**: sposta il raggruppamento selezionato in alto o in basso al fine di variare la priorità di raggruppamento.
+**Mover arriba/abajo (Sposta su /giù)**: mueve el agrupamiento seleccionado hacia arriba o hacia abajo para variar la prioridad de agrupamiento.
 
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important Ver También (Vedi Anche)
+[**VIDEO TUTORIALES SOBRE IMPRESIONES CONTABLES (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro)
 :::
-
-
-

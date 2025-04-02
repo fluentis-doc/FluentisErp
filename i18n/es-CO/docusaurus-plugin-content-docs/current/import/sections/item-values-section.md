@@ -1,9 +1,9 @@
-La sezione in basso, a destra, presenta il riassunto dei costi che concorrono alla formazione del prezzo finale di ciascun articolo selezionato nella griglia degli articoli. I campi presenti sono: 
+La sección en la parte inferior derecha presenta el resumen de los costos que contribuyen a la formación del precio final de cada artículo seleccionado en la cuadrícula de artículos. Los campos presentes son:
 
-- **Prezzo unitario**: il valore del campo *Prezzo*; 
-- **Quantità**: il valore del campo *Quantità* o *Quantità alternativa*, a seconda del flag *Prezzo unità di misura alternativa*;
-- **Importo di riga**: Prezzo articolo * Quantità articolo; 
-- **Totale sconti**: la somma degli sconti dell'articolo, inclusi anche gli sconti finali;
-- **Imponibile**: Importo lordo - Sconti;
-- **Imposta**: Imponibile * aliquota IVA dell'articolo; 
-- **Totale**: Imponibile + Imposta.
+- **prezzo unitario**: el valor del campo *prezzo*;  
+- **quantità**: el valor del campo *quantità* o *quantità alternativa*, dependiendo del indicador *Precio unidad de medida alternativa (Prezzo unità di misura alternativa)*;  
+- **importo di riga**: Precio artículo * Cantidad artículo;  
+- **totale sconti**: la suma de los descuentos del artículo, incluidos también los descuentos finales;  
+- **imponibile**: Importe bruto - Descuentos;  
+- **imposta**: Imponible * tasa de IVA del artículo;  
+- **totale**: Imponible + Impuesto.

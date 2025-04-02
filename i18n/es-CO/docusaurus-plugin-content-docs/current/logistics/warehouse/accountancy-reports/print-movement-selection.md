@@ -1,10 +1,10 @@
 ---
-title: Selezione movimenti
+title: selezione movimenti
 sidebar_position: 1
 ---
 
-La stampa si trova sul percorso **Logistica > Magazzino  >  Stampe contabili > Selezione movimenti** e riporta un elenco dei movimenti dei beni dal magazzino.
+La impresión se encuentra en la ruta **Logística > Almacén > Impresiones contables > selezione movimenti (Logistica > Magazzino  >  Stampe contabili > Selezione movimenti)** y reporta una lista de los movimientos de bienes del almacén.
 
-Dopo l'inserimento dei filtri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+Después de ingresar los filtros deseados, es posible imprimir informes estándar o personalizados (previa mapeo en la gestión de impresiones). En el caso de querer imprimir un informe personalizado, es necesario seleccionarlo desde el listado en los parámetros de impresión.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

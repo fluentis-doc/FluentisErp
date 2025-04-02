@@ -1,100 +1,100 @@
 ---
-title: Anagrafica Serial Number
+title: Registro de Números de Serie (Anagrafica Serial Number)
 sidebar_position: 8
 ---
 
-:::important A cosa serve
-L'anagrafica serial number di Fluentis è un modulo essenziale per la gestione dettagliata dei serial number, consentendo alle aziende di tenere traccia di articoli singoli attraverso un codice identificativo unico. Questa funzionalità risponde a esigenze specifiche di rintracciabilità e sicurezza, particolarmente importante per articoli critici o ad alto valore, dove è fondamentale monitorare ogni singolo pezzo piuttosto che semplicemente una quantità complessiva.
+:::important ¿Para qué sirve? (A cosa serve)
+El registro de números de serie de Fluentis es un módulo esencial para la gestión detallada de los números de serie, permitiendo a las empresas rastrear artículos individuales a través de un código identificativo único. Esta funcionalidad responde a necesidades específicas de trazabilidad y seguridad, especialmente importante para artículos críticos o de alto valor, donde es fundamental monitorear cada pieza individual en lugar de simplemente una cantidad total.
 
-L'utente ha la possibilità di ricercare un serial number specifico e visualizzarne i dettagli con un semplice doppio clic. In questa sezione, è possibile modificare informazioni chiave come il codice cliente, il codice fornitore, e lo stato del serial number, che può essere annullato, chiuso forzatamente o prenotato. Inoltre, l'anagrafica fornisce dettagli sui documenti di carico e scarico associati al serial number, permettendo un'analisi completa del suo utilizzo nel tempo.
+El usuario tiene la posibilidad de buscar un número de serie específico y visualizar sus detalles con un simple doble clic. En esta sección, es posible modificar información clave como el código del cliente, el código del proveedor y el estado del número de serie, que puede ser anulado, cerrado forzosamente o reservado. Además, el registro proporciona detalles sobre los documentos de carga y descarga asociados al número de serie, permitiendo un análisis completo de su uso a lo largo del tiempo.
 
-L'approccio sistematico alla gestione dei serial numbers non solo ottimizza i processi interni, ma garantisce anche la compliance alle normative vigenti, facendo di quest'anagrafica uno strumento indispensabile per le aziende moderne che puntano a massimizzare l'efficienza operativa e la qualità del servizio.
+El enfoque sistemático en la gestión de números de serie no solo optimiza los procesos internos, sino que también garantiza el cumplimiento de las normativas vigentes, convirtiendo este registro en una herramienta indispensable para las empresas modernas que buscan maximizar la eficiencia operativa y la calidad del servicio.
 :::
 
-Questa finestra visualizza il dettaglio del lotto e si compone di 4 diverse sezioni: 
+Esta ventana muestra el detalle del lote y se compone de 4 secciones diferentes:
 
-### Testata Serial Number
+### Cabecera del Número de Serie (Testata Serial Number)
 
-In questa sezione vengono visualizzati, con la possibilità di modificarne alcuni, i dati principali relativi al lotto ed in particolare:
+En esta sección se muestran, con la posibilidad de modificar algunos, los datos principales relacionados con el lote y en particular:
 
-**Articolo**: nei 3 campi relativi vengono visualizzati classe, codice e descrizione dell'articolo a cui è riferito il Serial Number. Si tratta sicuramente di un articolo con il flag *Gestione SN* attivato nell'*Anagrafica articolo* >  tab *Lotti/SN*, altrimenti non sarebbe stato possibile eseguire il carico del lotto per l'articolo stesso;
+**articolo**: en los 3 campos correspondientes se muestran la clase, el código y la descripción del artículo al que se refiere el Número de Serie. Se trata de un artículo con el indicador *Gestión SN* activado en el *anagrafica articolo* > pestaña *Lotes/SN*, de lo contrario no habría sido posible realizar la carga del lote para el artículo en cuestión;  
 
-**Variante**: nei 2 campi relativi vengono visualizzati codice e descrizione della variante dell'articolo a cui è riferito il Serial Number, se presente;
+**variante**: en los 2 campos correspondientes se muestran el código y la descripción de la variante del artículo a la que se refiere el Número de Serie, si está presente;  
 
-**Codice Lotto**: in questo campo compare il codice del Lotto di cui fa parte il Serial Number. L'articolo a cui è riferito il Serial Number potrebbe infatti essere gestito anche a Lotti; quindi in questo caso un lotto di 100 pezzi, per esempio, potrebbe essere composto di 100 diversi Serial Number. Lo stesso Serial Number potrebbe inoltre appartenere a lotti diversi dello stesso articolo, oppure a lotti di articoli diversi;
+**codice lotto**: en este campo aparece el código del Lote del que forma parte el Número de Serie. El artículo al que se refiere el Número de Serie podría, de hecho, estar gestionado también por Lotes; por lo tanto, en este caso un lote de 100 piezas, por ejemplo, podría estar compuesto por 100 diferentes Números de Serie. El mismo Número de Serie también podría pertenecer a lotes diferentes del mismo artículo, o a lotes de artículos diferentes;  
 
-**Tipo lotto**: indica il tipo lotto utilizzato;
+**Tipo de Lote (Tipo lotto)**: indica el tipo de lote utilizado;  
 
-**Tipo codice lotto**: indica il tipo codice lotto con cui è stato generato il lotto;
+**tipo codice lotto**: indica el tipo de código de lote con el que se generó el lote;  
 
-**Codice Serial Number**: in questo campo compare il Codice del Serial Number. Si tratta di un campo editabile da parte dell'utente, nonostante durante le operazioni di carico possa essere generato automaticamente in base ad alcune regole che vengono impostate nel *Tipo Serial Number* agganciato all'articolo. Si inserisce dapprima un codice e una descrizione del *tipo codice Serial Number*, si salva la riga e poi si decide quali parametri si vogliono utilizzare per la composizione del tipo codice lotto appena creato. Per ogni parametro utilizzato si può decidere da quanti caratteri deve essere formato ed eventualmente anche il carattere di riempimento da utilizzare. Per esempio, con il parametro 'Numero progressivo' impostando come carattere di riempimento lo '0' e come Lunghezza '5' verranno creati Serial Number con come primo numero lo 00000, poi lo 00001, poi lo 00002 e così via. Il *tipo codice Serial Number* deve poi essere agganciato all'anagrafica articolo nell'apposito campo situato nel tab *Lotti/SerialNumber*, in modo tale che nelle procedure che creano automaticamente il codice *Serial Number* per l'articolo in questione, il Serial Number stesso venga generato appunto secondo le regole impostate nel *tipo codice Serial Number* agganciato all'articolo. Il campo è alfanumerico e può raggiungere la lunghezza di 50 caratteri come limite massimo;
+**codice serial number**: en este campo aparece el Código del Número de Serie. Se trata de un campo editable por el usuario, aunque durante las operaciones de carga puede ser generado automáticamente en base a algunas reglas que se establecen en el *Tipo de Número de Serie* vinculado al artículo. Se inserta primero un código y una descripción del *tipo de código del Número de Serie*, se guarda la fila y luego se decide qué parámetros se desean utilizar para la composición del tipo de código del lote recién creado. Por cada parámetro utilizado se puede decidir de cuántos caracteres debe estar formado y eventualmente también el carácter de relleno que se utilizará. Por ejemplo, con el parámetro 'Número progresivo' al establecer como carácter de relleno el '0' y como Longitud '5' se crearán Números de Serie comenzando con 00000, luego 00001, luego 00002 y así sucesivamente. El *tipo de código del Número de Serie* debe luego estar vinculado al registro de artículos en el campo apropiado situado en la pestaña *Lotes/Números de Serie*, para que en los procedimientos que crean automáticamente el código del *Número de Serie* para el artículo en cuestión, el Número de Serie mismo se genere según las reglas establecidas en el *tipo de código del Número de Serie* vinculado al artículo. El campo es alfanumérico y puede alcanzar una longitud máxima de 50 caracteres;  
 
-**Tipo Serial Number**: indica il tipo codice Serial Number con cui è stato generato il Serial Number;
+**tipo serial number**: indica el tipo de código del Número de Serie con el que fue generado el Número de Serie;  
 
-**Data inizio**: in questo campo compare di solito la data in cui è stato caricato il Serial Number, editabile dall'utente. Se il Serial Number è stato caricato tramite la registrazione di magazzino, questa data viene proposta identica alla data in cui è stata creata la registrazione; se il Serial Number è stato caricato tramite carico di una DDT di acquisto o registrazione rientro di conto lavoro, questa data viene impostata come uguale alla data del DDT di acquisto o di conto lavoro (a meno che all'interno del DDT l'utente non l'abbia modificata manualmente); se il Serial Number è stato caricato tramite registrazione di una segnalazione di produzione, questa data viene proposta come identica alla data della segnalazione di produzione;
+**data inizio**: en este campo aparece generalmente la fecha en la que se cargó el Número de Serie, editable por el usuario. Si el Número de Serie fue cargado a través del registro de almacén, esta fecha se propone idéntica a la fecha en que se creó el registro; si el Número de Serie fue cargado a través de la carga de un DDT de compra o registro de devolución de trabajo, esta fecha se establece como igual a la fecha del DDT de compra o de trabajo (a menos que el usuario la haya modificado manualmente dentro del DDT); si el Número de Serie fue cargado a través del registro de una notificación de producción, esta fecha se propone como idéntica a la fecha de la notificación de producción;  
 
-**Data scadenza**: in questo campo compare la data di scadenza del Serial Number, editabile dall'utente, che viene calcolata, in sede di creazione del lotto e quindi di carico del relativo movimento di magazzino, partendo dalla data di inizio e sommando i giorni di validità del Serial Number inseriti nel tab Lotti/SN dell'anagrafica articolo;
+**data scadenza**: en este campo aparece la fecha de vencimiento del Número de Serie, editable por el usuario, que se calcula en el momento de la creación del lote y por lo tanto de carga del movimiento de almacén correspondiente, partiendo de la fecha de inicio y sumando los días de validez del Número de Serie introducidos en la pestaña Lotes/SN del registro de artículos;  
 
-**Codice cliente**: in questo campo compare il codice del *Lotto cliente*, quindi di solito il nome che il cliente attribuisce al lotto. Si tratta di un campo editabile da parte dell'utente e non generabile automaticamente durante le operazioni di carico. Anch'esso può raggiungere la lunghezza di 50 caratteri come limite massimo e può essere identico anche per lotti diversi di articoli diversi;
+**codice cliente**: en este campo aparece el código del *Lote del cliente*, es decir, el nombre que usualmente el cliente asigna al lote. Se trata de un campo editable por el usuario y no generable automáticamente durante las operaciones de carga. También puede alcanzar la longitud máxima de 50 caracteres y puede ser idéntico para diferentes lotes de diferentes artículos;  
 
-**Codice fornitore**: in questo campo compare il codice del *Lotto fornitore*, quindi di solito il nome che il fornitore attribuisce al lotto. Si tratta di un campo editabile da parte dell'utente e non generabile automaticamente durante le operazioni di carico. Anch'esso può raggiungere la lunghezza di 50 caratteri come limite massimo e può essere identico anche per lotti diversi di articoli diversi;
+**codice fornitore**: en este campo aparece el código del *Lote del proveedor*, es decir, el nombre que usualmente el proveedor asigna al lote. Se trata de un campo editable por el usuario y no generable automáticamente durante las operaciones de carga. También puede alcanzar la longitud máxima de 50 caracteres y puede ser idéntico para diferentes lotes de diferentes artículos;  
 
-**Fornitore**: in questo campo si andrà ad indicare il conto/sottoconto/descrizione del fornitore;
+**fornitore**: en este campo se indicará la cuenta/subcuenta/descripción del proveedor;  
 
-**Annullato**: se attivo, indica che il Serial number è stato annullato;
+**annullato**: si está activo, indica que el Número de Serie ha sido anulado;  
 
-**Chiuso forzatamente**: se attivo, indica che il Serial number è chiuso forzatamente;
+**chiuso forzatamente**: si está activo, indica que el Número de Serie está cerrado forzosamente;  
 
-**Prenotata**: se attivo, indica che il Serial number è stato prenotato.
+**prenotata**: si está activo, indica que el Número de Serie ha sido reservado.
 
-### Carico
+### Carga (Carico)
 
-In questa sezione vengono visualizzati i dati fondamentali dei documenti che hanno contribuito ad effettuare il carico del Serial Number. Generalmente compare sempre il dettaglio della *Registrazione di magazzino* che ha caricato il Serial Number.
+En esta sección se visualizan los datos fundamentales de los documentos que han contribuido a realizar la carga del Número de Serie. Generalmente siempre aparece el detalle del *Registro de almacén* que ha cargado el Número de Serie.
 
-*Con doppio click sulla riga del documento è possibile, in accordo con i diritti dell'utente, aprire il documento relativo*.
+*Con doble clic en la fila del documento es posible, de acuerdo con los derechos del usuario, abrir el documento relacionado.*
 
-**Quantità**: in questo campo viene visualizzata la quantità del lotto che è stata impegnata nel documento;
+**quantità**: en este campo se visualiza la cantidad del lote que ha sido asignada en el documento;  
 
-**Unità di misura**: indica l'unità di misura che è stata utilizzata nel documento;
+**unità di misura**: indica la unidad de medida que se ha utilizado en el documento;  
 
-**Numero colli**: indica il numero di colli;
+**numero colli**: indica el número de paquetes;  
 
-**Data inserimento**: indica la data di inserimento;
+**data inserimento**: indica la fecha de inserción;  
 
-**Chiuso forzatamente**: se attivo, indica che il Serial Number è stato chiuso forzatamente;
+**chiuso forzatamente**: si está activo, indica que el Número de Serie ha sido cerrado forzosamente;  
 
-**Documento di riferimento**: in questo campo viene visualizzato il tipo di documento che ha generato il carico del Serial Number. Esso può essere una registrazione di magazzino, un DDT di acquisto oppure un rientro di conto lavoro;
+**documento di riferimento**: en este campo se muestra el tipo de documento que ha generado la carga del Número de Serie. Puede ser un registro de almacén, un DDT de compra o una devolución de trabajo;  
 
-**Registrazione**: in questi campi compaiono il numero e la data del documento;
+**registrazione**: en estos campos aparecen el número y la fecha del documento;  
 
-**Magazzino**: in questi campi compaiono il codice e la descrizione del magazzino su cui è stato caricato il Serial Number;
+**magazzino**: en estos campos aparecen el código y la descripción del almacén en el que se ha cargado el Número de Serie;  
 
-**Ubicazione**: in questi campi compaiono il codice e la descrizione dell'ubicazione;
+**ubicazione**: en estos campos aparecen el código y la descripción de la ubicación;  
 
-**Causale**: in questi campi compaiono il codice e la descrizione della causale utilizzata per la creazione di quel movimento di carico;
+**causale**: en estos campos aparecen el código y la descripción de la causa utilizada para la creación de ese movimiento de carga;  
 
-**Cliente/Fornitore**: in questi campi compaiono conto, sottoconto e descrizione relative al cliente o fornitore.
+**cliente/fornitore**: en estos campos aparecen la cuenta, la subcuenta y la descripción relacionadas con el cliente o proveedor.
 
-### Scarico
+### Descarga (Scarico)
 
-In questa sezione vengono visualizzati i dati fondamentali del primo documento, in ordine cronologico, che ha impegnato il Serial Number. Questi dati sono visualizzati in una griglia in cui compaiono le seguenti colonne:
+En esta sección se visualizan los datos fundamentales del primer documento, en orden cronológico, que ha asignado el Número de Serie. Estos datos se muestran en una cuadrícula donde aparecen las siguientes columnas:
 
-**Quantità**: in questo campo viene visualizzata la quantità del lotto che è stata impegnata nel documento;
+**quantità**: en este campo se visualiza la cantidad del lote que ha sido asignada en el documento;  
 
-**Unità di misura**: indica l'unità di misura che è stata utilizzata nel documento;
+**unità di misura**: indica la unidad de medida que se ha utilizado en el documento;  
 
-**Data inserimento**: indica la data di inserimento;
+**data inserimento**: indica la fecha de inserción;  
 
-**Documento di riferimento**: in questo campo viene visualizzato il tipo di documento che ha per primo impegnato il Serial Number. Esso può essere un ordine di produzione, un ordine cliente, una DDT di vendita, una fattura di vendita, una lista di prelievo, una DDT di consegna di conto lavoro, un rientro di conto lavoro;
+**documento di riferimento**: en este campo se muestra el tipo de documento que ha asignado primero el Número de Serie. Puede ser una orden de producción, un pedido de cliente, un DDT de venta, una factura de venta, una lista de recogida, un DDT de entrega de trabajo, una devolución de trabajo;  
 
-**Registrazione**: in questi campi compaiono il numero e la data del documento;
+**registrazione**: en estos campos aparecen el número y la fecha del documento;  
 
-**Magazzino**: in questi campi compaiono il codice e la descrizione del magazzino su cui è stato caricato il Serial Number;
+**magazzino**: en estos campos aparecen el código y la descripción del almacén en el que se ha cargado el Número de Serie;  
 
-**Ubicazione**: in questi campi compaiono il codice e la descrizione dell'ubicazione;
+**ubicazione**: en estos campos aparecen el código y la descripción de la ubicación;  
 
-**Causale**: in questi campi compaiono il codice e la descrizione della causale utilizzata per la creazione di quel movimento di carico;
+**causale**: en estos campos aparecen el código y la descripción de la causa utilizada para la creación de ese movimiento de carga;  
 
-**Cliente/Fornitore**: in questi campi compaiono conto, sottoconto e descrizione relative al cliente o fornitore.
+**cliente/fornitore**: en estos campos aparecen la cuenta, la subcuenta y la descripción relacionadas con el cliente o proveedor.
 
-*Con doppio click sulla riga del documento è possibile, in accordo con i diritti dell'utente, aprire il documento relativo*.
+*Con doble clic en la fila del documento es posible, de acuerdo con los derechos del usuario, abrir el documento correspondiente.*

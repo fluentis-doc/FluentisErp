@@ -1,25 +1,25 @@
 ---
-title: Storico flusso fisico
+title: storico flusso fisico
 sidebar_position: 1
 ---
 
-Da questa form è possibile interrogare, in sola modalità visualizzazione, lo storico delle registrazioni gestionali espresse in grandezze fisiche non economiche.
+Desde este formulario es posible consultar, en modo solo visualización, el histórico de registros de gestión expresados en magnitudes físicas no económicas.
 
-La griglia presenta i seguenti campi:
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi
+La cuadrícula presenta los siguientes campos:  
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de análisis  
 
-- il [***Centro aziendale di origine***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) della quantità
+- el [***Centro empresarial de origen***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de la cantidad  
 
-- il [***Centro di destinazione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) della quantità
+- el [***Centro de destino***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de la cantidad  
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- el **anno*** y el **periodo*** de referencia  
 
-- l'[***Unità di misura*** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
+- la [**unità di misura*** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)  
 
-- la ***Quantità***
+- la **quantità***  
 
-- nel campo ***Calcolato*** abbiamo la vizualizzaione dell'origine del dato: solitamente sarà la *Registrazione movimenti fisici*, ma potrebbe anche essere il *Flusso movimenti fisici*
+- en el campo **calcolato*** se visualiza el origen del dato: generalmente será el *Registro de movimientos físicos (Registrazione movimenti fisici)*, pero también podría ser el *flusso movimenti fisici*  
 
-- i campi ***Codice***, ***Numero*** e ***Descrizione*** del cespite di riferimento della riga
+- los campos **codice***, **numero*** y **descrizione*** del activo de referencia de la fila  
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+No está permitida la eliminación ni la modificación o la inserción de datos en la cuadrícula.

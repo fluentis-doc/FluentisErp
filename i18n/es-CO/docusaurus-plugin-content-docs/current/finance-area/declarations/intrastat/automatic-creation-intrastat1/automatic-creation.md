@@ -1,36 +1,30 @@
 ---
-title: Creazione automatica
+title: creazione automatica
 sidebar_position: 1
 ---
 
-Il pulsante di 'Creazione automatica' apre una procedura guidata di ripresa dati dall'area vendite.
+El botón de 'creazione automatica (Creazione automatica)' abre un asistente para la recuperación de datos del área de ventas.
 
-La procedura è composta da tre Tab:
+El procedimiento consta de tres pestañas:
 
-** [Filtro Fatture](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/invoices-filter) **
+**[Filtro de Facturas (Filtro Fatture)](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/invoices-filter)**
 
-** [Parametri](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters) **
+**[Parámetros (Parametri)](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters)**
 
-** [Rollback](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/restore) **
+**[Reversa (Rollback)](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/restore)**
 
-In fase di **creazione** del modello intra saranno utilizzate la **Filtro fatture**, nella quale vengono ricercate le fatture attive da includere nel modello, e la **Parametri** che rappresenta un'anteprima delle righe al fine di integrare eventuali dati mancanti.
+En la fase de **creazione** del modelo intra, se utilizarán el **Filtro de facturas** (Filtro fatture), en la que se buscan las facturas activas para incluir en el modelo, y los **Parámetros**, que representan una vista previa de las líneas con el fin de integrar los datos faltantes.
 
-Al termine del completamento, dopo aver premuto il pulsante di creazione, la form della creazione automatica dovrà essere chiusa ed i dati saranno presenti nella rispettiva sezione all'interno delle tab del modello pronti per essere raggruppati ed esportati o stampati.
+Al finalizar el proceso, después de presionar el botón de creación, el formulario de creación automática deberá cerrarse y los datos estarán presentes en la sección respectiva dentro de las pestañas del modelo, listos para ser agrupados y exportados o impresos.
 
-**Nel caso in cui un modello intra creato con la procedura automatica debba essere eliminato, si dovrà procedere all'apertura della procedura di creazione automatica ed al ripristino con i comandi presenti nella tab Rollback, solo successivamente si potrà chiudere il modello e cancellarlo definitivamente dalla form di ricerca dei modelli intra.**
+**En caso de que un modelo intra creado con el procedimiento automático deba ser eliminado, será necesario abrir la herramienta de creación automática y restaurar utilizando los comandos disponibles en la pestaña Reversa. Solo después de esto se podrá cerrar el modelo y eliminarlo definitivamente del formulario de búsqueda de modelos intra.**
 
-Qualora si utilizzi il comando di cancellazione del modello intra nella situazione sopra descritta, (senza operare prima il ripristino), comparirà comunque un messaggio di avviso e, nel caso in cui l'avviso venga ignorato, la procedura di cancellazione provvederà in ogni caso al ripristino al fine di poter eventualmente procedere ad una nuova creazione automatica con filtro delle fatture attive. In questo senso ciò che viene ripristinato è un parametro interno nella base dati che indica al sistema che le fatture in questione non sono già state utilizzate in un modello intra.
+Si se utiliza el comando de eliminación del modelo intra en la situación descrita anteriormente (sin realizar primero la restauración), aparecerá un mensaje de advertencia y, si se ignora la advertencia, el procedimiento de eliminación procederá de todos modos a hacer la restauración para que se pueda realizar posteriormente una nueva creación automática con filtro de las facturas activas. En este sentido, lo que se restaura es un parámetro interno en la base de datos que indica al sistema que las facturas en cuestión no han sido utilizadas en un modelo intra.
 
- 
-:::tip Ripartizione automatica spese accessorie in fattura
-E' possibile gestire una ripartizione automatica sulle righe della fattura di una spesa accessoria finale (piede del documento) come ad esempio le spese trasporto ecc.
+:::tip Distribución automática de gastos accesorios en la factura (Ripartizione automatica spese accessorie in fattura)
+Es posible gestionar una distribución automática sobre las líneas de la factura de un gasto accesorio final (pie del documento) como, por ejemplo, los gastos de transporte, etc.
 
-E' necessario utilizzare un tipo spesa (tabella tipi spese) avete il flag ***Val stat. Intra*** da inserire in fattura o nell'anagrafica cliente / fornitore per automatizzare la proposta in fattura.
+Es necesario utilizar un tipo de gasto (tabla de tipos de gastos) que tenga el indicador ***Valor estat. Intra*** para incluir en la factura o en el registro del cliente/proveedor para automatizar la propuesta en la factura.
 
-In fase di creazione automatica si noterà che il valore di ogni riga è maggiorato di una quota della spesa finale ripartita.
+Durante la creación automática, se notará que el valor de cada línea se incrementa con una cuota del gasto final distribuido.
 :::
-
-
-
-
-

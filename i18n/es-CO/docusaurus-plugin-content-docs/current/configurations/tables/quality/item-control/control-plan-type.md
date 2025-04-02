@@ -1,64 +1,64 @@
 ---
-title: Tipi piano di controllo
+title: tipi piano di controllo
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi piano di controllo**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Controles de artículo > tipi piano di controllo**.
 
-In questa tabella è possibile codificare i *Tipi piano di controllo*.   
-Il *Tipo piano di controllo* è parte integrante, assieme all'*Anno*, *Numero* e *Revisione*, del codice univoco della *Piano di controllo*.
-Alcuni esempi di utilizzo di *Tipi piano di controllo* li troviamo nelle gestioni:
-> **Piani di controllo** - nei *dati di testata*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Piano di controllo*.
+En esta tabla es posible codificar los *tipi piano di controllo*.  
+El *Tipo de plan de control* es parte integral, junto con el *Año*, *Número* y *Revisión*, del código único del *Plan de control*.  
+Algunos ejemplos de uso de los *tipi piano di controllo* los encontramos en las gestiones:  
+> **piani di controllo** - en los *datos de cabecera*;  
+> **Parámetros de Controles de artículo (Parametri Controlli articolo)** - en la pestaña *generale*;  
+y en todas las gestiones donde se utiliza el *Plan de control*.  
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile modificarli ed eliminarli. I valori predefiniti sono:
-| Codice | Descrizione |   
-|:--|:--|
-| MInt | Interno |   
-| MNNr | Non normalizzato |   
-| MNrm | Normalizzato |   
-| MUff | Ufficiale |   
+La tabla contiene valores predeterminados del sistema y no es posible modificarlos ni eliminarlos. Los valores predeterminados son:  
+| Código (Codice) | Descripción (Descrizione) |  
+|:--|:--|  
+| MInt | Interno |  
+| MNNr | No normalizado |  
+| MNrm | Normalizado |  
+| MUff | Oficial |  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli (se *Eliminabili*).
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos (si son *Eliminables*).
 
-**Ricerca Tipi piano di controllo**
+**Búsqueda de tipi piano di controllo**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, bastará con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi piano di controllo**
+**Inserción de tipi piano di controllo**
 
-Per poter inserire nuovi *Tipi piano di controllo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi piano di controllo*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## Tipi piano di controllo
+## tipi piano di controllo (Tipi piano di controllo)
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi piano di controllo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo piano di controllo*.   
-> **Descrizione**: è la descrizione del *Tipo piano di controllo*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Eliminabile**: indica se il *Tipo piano di controllo* è eliminabile.   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan las principales informaciones de los *tipi piano di controllo*.  
+La lista se compone de la siguiente información:  
+> **codice**: es el código del *Tipo de plan de control*.  
+> **descrizione**: es la descripción del *Tipo de plan de control*.  
+> **numerazione**: es el código de la *Numeración*.  
+> **eliminabile**: indica si el *Tipo de plan de control* es eliminable.  
+> **note**: anotaciones libres.
 
-### Extra data
+### Datos adicionales (Extra data)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi piano di controllo*.   
-Questi *Extra data* vengono ereditati nei *Piani di controllo* di quella determinata tipologia.   
+Es posible insertar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para los *tipi piano di controllo*.  
+Estos *Datos adicionales* se heredan en los *Planes de control* de esa determinada tipología.  
 
-### Prove pianificate
+### Pruebas planificadas (Prove pianificate)
 
-E' possibile inserire dei [Tipi prova](/docs/configurations/tables/quality/item-control/test-type) generali per il *Tipi piano di controllo*.   
-Questi *Tipi prova* vengono ereditati nei *Piani di controllo* di quella determinata tipologia.   
+Es posible insertar [Tipos de prueba (Tipi prova)](/docs/configurations/tables/quality/item-control/test-type) generales para los *tipi piano di controllo*.  
+Estos *Tipos de prueba* se heredan en los *Planes de control* de esa determinada tipología.  
 
-#### Attributi Prove Pianificate
+#### Atributos de Pruebas Planificadas (Attributi Prove Pianificate)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Prova pianificata*.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+Es posible insertar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *Prueba planificada (Prova pianificata)*.  
+Estos *Datos adicionales* se heredan en las *Pruebas* de los documentos donde se prevé el uso de los atributos.  
 
-#### Configurazione Prove Pianificate
+#### Configuración de Pruebas Planificadas (Configurazione Prove Pianificate)
 
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Contiene los [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) necesarios para que los operadores preparen todos los instrumentos necesarios para poder comenzar una determinada prueba. Pueden considerarse configuraciones necesarias, información operativa previa a la ejecución de la prueba.  
+Estos *Datos adicionales* se heredan en las *Pruebas* de los documentos donde se prevé una configuración.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

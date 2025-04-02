@@ -1,19 +1,17 @@
 ---
-title: Business Areas - Amministrazione
+title: Áreas de Negocio - Administración (Business Areas - Amministrazione)
 sidebar_position: 1
 ---
 
-**Creazione file Intraweb o Entratel** (codice FS-FI-Intrastat-ItalianFileType): questo parametro, in passato visibile solo nel database, permette di settare direttamente da interfaccia il tipo di tracciato di esportazione dei modelli intrastat, al fine di renderlo compatibile rispettivamente con l'applicazione Intraweb dell'agenzia delle dogane oppure con Entratel dell'agenzia delle Entrate (due canali alternativi possibili per l'invio dei modelli). La differenza , tecnicamente, risiede in particolare nel track record di testa del file richiesto per l'invio Entratel.
-Il parametro, normalmente, è già impostato e può essere gestito semplicemente nella colonna VALORE, dove, come riportato nella nota, il flag in condizione FALSE (0 - disattivato) = Intraweb, mentre TRUE (1 - attivo) = Entratel. In caso di creazione manuale (problemi tecnici o retrocompatibilità), settare la colonna Tipo su Booleano, la data inizio validità e il campo valore. Il campo *Codice* nella griglia master è FS-FI-Intrastat-ItalianFileType.
+**creazione file intraweb o entratel** (código FS-FI-Intrastat-ItalianFileType): este parámetro, anteriormente visible solo en la base de datos, permite establecer directamente desde la interfaz el tipo de formato de exportación de los modelos intrastat, con el fin de hacerlo compatible respectivamente con la aplicación Intraweb de la agencia de aduanas o con Entratel de la agencia de ingresos (dos canales alternativos posibles para el envío de los modelos). La diferencia, técnicamente, radica particularmente en el registro de encabezado del archivo requerido para el envío por Entratel.  
+El parámetro, normalmente, ya está configurado y puede ser gestionado simplemente en la columna VALOR, donde, como se indica en la nota, el indicador en condición FALSE (0 - desactivado) = Intraweb, mientras que TRUE (1 - activo) = Entratel. En caso de creación manual (problemas técnicos o retrocompatibilidad), configurar la columna Tipo como Booleano, la fecha de inicio de validez y el campo valor. El campo *Código* en la cuadrícula principal es FS-FI-Intrastat-ItalianFileType.
 
-**Utilizza il peso del documento nell'Intrastat acquisti / Vendite** (codice FS-FI-Intrastat-UseDocumentWeightInPurchase e FS-FI-Intrastat-UseDocumentWeightInSale): Abilitando (nel campo Valore) il flag (parametro di tipo booleano) rispettivamente per ognuno dei due parametri 
-la procedura automatica di creazione intrastat da fatture rileva i pesi degli articoli dal campo di ‘NetWeight’ delle righe documento di acquisto / vendita, anzichè i pesi teorici dell’anagrafica articolo come di default.
-La contabilizzazione della fattura di vendita, se la causale contabile prevede la gestione intrastat, a sua volta porta in contabilità i pesi del documento: in questo modo anche la procedura di acquisizione da registrazioni contabili avrà il peso del documento.
+**Utiliza el peso del documento en el Intrastat de compras / Ventas (Utilizza il peso del documento nell'Intrastat acquisti / Vendite)** (código FS-FI-Intrastat-UseDocumentWeightInPurchase y FS-FI-Intrastat-UseDocumentWeightInSale): Al habilitar (en el campo Valor) el indicador (parámetro de tipo booleano) respectivamente para cada uno de los dos parámetros, el procedimiento automático de creación intrastat desde facturas detecta los pesos de los artículos desde el campo ‘NetWeight’ de las líneas del documento de compra / venta, en lugar de los pesos teóricos del registro de artículo como por defecto.  
+La contabilización de la factura de venta, si la causa contable prevé la gestión intrastat, a su vez lleva a contabilidad los pesos del documento: de este modo, también el procedimiento de adquisición de registros contables tendrá el peso del documento.
 
-Questi parametri possono essere abbinati ad un ulteriore parametro (**visibile solo nel database**)	con cui
-Fluentis porta in sezione Bis/Ter… i valori dei pesi così come presenti in creazione automatica, senza operare arrotondamenti di riga. Gli arrotondamenti che saranno gestiti nella fase successiva con il pulsante di raggruppamento presente in sezione Bis/Ter.
+Estos parámetros pueden ser asociados a un parámetro adicional (**visible solo en la base de datos**) con el que Fluentis lleva en la sección Bis/Ter... los valores de los pesos tal como están presentes en la creación automática, sin realizar redondeos de línea. Los redondeos que se gestionarán en la fase siguiente con el botón de agrupación presente en la sección Bis/Ter.
 
-La query da eseguire è:
+La consulta para ejecutar es:
 
         update fluentis.SH_CompanyParameters set shcp_value = cast(0 as smallint)
         
@@ -25,6 +23,6 @@ La query da eseguire è:
         	
         where SHLP_Code like 'IN-IntrastatRoundByOperation'
 
-**Blocca la contabilizzazione quando la data di registrazione è precedente alla data di ricezione** (codice FS-FI-Posting-BlockPostingBeforeReceiveDate): abilitando questo parametro, la registrazione delle fatture di Acquisto da file Sdi non saranno consentite in data antecedente alla data ricezione Sdi stessa.
+**Bloquear la contabilización cuando la fecha de registro es anterior a la fecha de recepción (Blocca la contabilizzazione quando la data di registrazione è precedente alla data di ricezione)** (código FS-FI-Posting-BlockPostingBeforeReceiveDate): habilitando este parámetro, el registro de las facturas de compra desde el archivo Sdi no se consentirá en fecha anterior a la fecha de recepción de Sdi.  
 
-**Consentire la creazione di solleciti da partite chiuse** (codice FS-FI-DunningLetters-AllowClosedMaturities): con questo parametro, la generazione solleciti potrà creare anche lettere di avvenuto pagamento
+**consentire la creazione di solleciti da partite chiuse** (código FS-FI-DunningLetters-AllowClosedMaturities): con este parámetro, la generación de recordatorios podrá crear también cartas de pago realizado.

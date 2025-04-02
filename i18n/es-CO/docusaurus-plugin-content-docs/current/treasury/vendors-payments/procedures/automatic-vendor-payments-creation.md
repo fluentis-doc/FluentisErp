@@ -1,69 +1,63 @@
 ---
-title: Creazione automatica pagamento fornitori
+title: Creación automática de pagos a proveedores (Creazione automatica pagamento fornitori)
 sidebar_position: 1
 ---
-La form si trova in Tesoreria > Pagamenti fornitori > Procedure > Creazione automatica pagamenti fornitori
 
-Questa procedura è alternativa alla creazione di una nuova [distinta di pagamento](/docs/treasury/vendors-payments/create-vendor-payments) ed alla sua successiva contabilizzazione, permettendo di eseguire queste operazioni in maniera integrata direttamente da questa form.
+El formulario se encuentra en Tesorería > Pagos a proveedores > Procedimientos > Creación automática de pagos a proveedores (Creazione automatica pagamenti fornitori).
 
-## Come creare automaticamente un pagamento fornitori
+Este procedimiento es alternativo a la creación de una nueva [lista de pagos (distinta di pagamento)](/docs/treasury/vendors-payments/create-vendor-payments) y su posterior contabilización, permitiendo realizar estas operaciones de manera integrada directamente desde este formulario.
 
+## Cómo crear automáticamente un pago a proveedores
 
-1. Utilizza la prima scheda *Filtro partite* localizzare le partite da pagare. (E' possibile filtrare anche per codici abi/cab degli appoggi bancari collegati alla partita contabile, oltre che per codice / descrizione della banca d'appoggio - espandendo la sezione *Banca*). 
+1. Utiliza la primera pestaña *Filtro de partidas* para localizar las partidas a pagar. (Es posible filtrar también por códigos ABI/CAB de los apoyos bancarios relacionados con la partida contable, además de por código / descripción del banco de apoyo - expandiendo la sección *Banco*).  
 
-Espandendo la sezione *Tipo partite* sono **esclusi** di default i **pagamenti delle partite percipienti**, per i quali <u>**l'operazione va effettuata dall'interno del modulo percipienti**</u> se si vuole poter utilizzare la procedura di [certificazione ritenute](/docs/finance-area/declarations/declarations/withholding-tax-certification). 
+   Al expandir la sección *Tipo de partidas*, se **excluyen** por defecto los **pagos de partidas percepcionistas**, para los cuales <u>**la operación debe realizarse desde el módulo de percepcionistas**</u> si se desea poder utilizar el procedimiento de [certificación de retenciones](/docs/finance-area/declarations/declarations/withholding-tax-certification).
 
-Il filtro per *sottoconto* banca di *pagamento* consente di gestire la creazione della distinta sulla base di quello che è stato canalizzato sulle varie banche attraverso le impostazioni di anagrafica e della procedura di [Gestione Appoggio Pagamenti](/docs/treasury/vendors-payments/procedures/payments-support-management) del modulo stesso.
+   El filtro para *subcuenta* de banco de *pago* permite gestionar la creación de la lista en base a lo que se ha canalizado a través de los distintos bancos a través de las configuraciones de registro y del procedimiento de [Gestión de Apoyo a Pagos](/docs/treasury/vendors-payments/procedures/payments-support-management) del mismo módulo.
 
-2. Controlla, in basso, i totali delle righe selezionate.
+2. Revisa, en la parte inferior, los totales de las líneas seleccionadas.
 
+3. Pasa a la segunda pestaña **Datos de pago del proveedor** y establece los diversos elementos de gestión del procedimiento: primero debes ingresar el **banco de pago**, que será el banco titular de la lista.  
+   Este campo desbloquea el botón **Iniciar la creación del pago desde partidas**.
 
-3. Passa alla seconda scheda **Dati pagamento fornitore** e imposta i vari elementi di gestione della procedura: innanzi tutto va inserita la **banca di pagamento**, che sarà la banca intestataria della distinta. 
-Questo campo sblocca il pulsante **Inizia la creazione del pagamento da partite**.
+4. Gestiona los otros parámetros:
 
+- El indicador **Usar el banco de pago de la partida del proveedor, en ausencia de la anagrafica** obligará al procedimiento a crear tantas listas como bancos de pago estén asignados a las distintas partidas seleccionadas en el procedimiento de gestión de apoyo a pagos, o insertados en la anagrafica del proveedor. En ausencia de ambas, el pago se insertará en la lista para el código de banco configurado en el campo inicial.
 
-4. Gestisci gli altri parametri:
+- El indicador **Usar el banco de apoyo presente en la anagrafica del proveedor** forzará la asignación de los códigos bancarios del beneficiario, leyendo desde la línea de banco por defecto incluida en la sección de bancos de apoyo de la pestaña de pagos del registro del proveedor. Este indicador puede predefinirse dentro de los parámetros del módulo.
 
-- Il flag **Utilizza la banca di pagamento dalla partita del fornitore, in assenza dall'anagrafica** imporrà alla procedura di creare tante distinte quante sono le banche di pagamento assegnate alle varie partite selezionate nella procedura di gestione appoggio pagamento, oppure inserite in anagrafica del fornitore. In assenza di entrambe il pagamento sarà inserito nella distinta per il codice banca impostato nel campo iniziale.
+- El **Tipo de pago** permite definir la tipología de pago a asignar a la lista: el campo se vuelve obligatorio solo cuando las partidas a pagar prevén tipologías de pago no uniforme.
 
-- Il flag **Utilizza la banca d'appoggio presente in anagrafica del fornitore** forza l'assegnazione dei codici bancari del beneficiario leggendoli dalla riga banca di default inserita nella sezione banche d'appoggio della scheda pagamenti dell'anagrafica fornitore. Questo flag può essere predefinito all'interno dei parametri del modulo.
+- El año y la fecha de emisión se definen por defecto en base a la fecha del sistema.
 
-- Il **Tipo pagamento** consente di definire la tipologia di pagamento da assegnare alla distinta: il campo diventa obbligatorio solo quando le partite da pagare prevedono tipologie di pagamento non uniforme.
+- El indicador **Imponer fecha de valor del beneficiario** permite asignar, dentro del trazado telemático, una fecha valor para el beneficiario del pago, que si no se establece se asigna como fecha de hoy. Si el indicador no está activado, la fecha valor será igual a la fecha de vencimiento.
 
-- L'anno e la data di emissione sono definiti di default sulla base della data di sistema.
+- El campo **Notas iniciales** es un campo libre de notas del pago, no utilizado en el estándar.
 
-- Il flag di **Imponi data valuta beneficiario** consente di assegnare, all'interno del tracciato telematico, una data valuta per il beneficiario del pagamento, che se non è impostata viene assegnata come data odierna. Se il flag non è impostato la data valuta sarà uguale alla data scadenza.
+- El campo **Notas finales** se utiliza en la contabilización de pagos para detallar la descripción del movimiento contable de la subcuenta del banco.
 
-- Il campo **Note iniziali** è un campo libero di note del pagamento, non utilizzato nello standard.
+5. Si deseas contabilizar inmediatamente los pagos, activa el indicador de **Contabilización de la partida** que permite registrar directamente el cierre de las partidas y los movimientos contables de los pagos en creación: si no se utiliza, será posible usar posteriormente el *procedimiento separado de contabilización*.
 
-- Il campo **Note finali** viene utilizzato nella contabilizzazione pagamenti per valorizzare la descrizione di dettaglio del movimento contabile del sottoconto banca.
+6. Completa la causa de contabilización a utilizar para el registro, las fechas de registro y competencia. Las subcuentas de registro de notas activas y pasivas se proponen en base a la subcuenta de *ingresos imprevistos* presente en los parámetros de contabilidad. La fecha y el número de documento a insertar como referencias del encabezado del registro son opcionales (podría ser el número/fecha de la lista).
 
-5. Se desideri contabilizzare immediatamente i pagamenti attiva Il flag di **Contabilizzazione della partita** che consente di rilevare direttamente la chiusura delle partite e i relativi movimenti di partita doppia dei pagamenti in creazione: se non utilizzata sarà possibile utilizzare in seguito la *procedura separata di contabilizzazione*.
+A la derecha hay un indicador por defecto de **Cierre de las partidas** (propuesto por defecto, no eliminar) y el criterio de gestión del agrupamiento en contabilidad **Agrupar por Banco** que permite registrar una entrada por cada subcuenta de banco de salida.  
 
-6. Compila la causale di contabilità da utilizzare per la registrazione, le date di registrazione e competenza. I sottoconti di rilevazione degli abbuoni attivi e passivi sono proposti sulla base del sottoconto *sopravvenienze attive* presente nei parametri di contabilità. La data e numero documento  da inserire come riferimenti della testata della registrazione sono opzionali (potrebbe essere il numero/data distinta).
+Alternativamente, está disponible un **Agrupar por subcuenta** del proveedor y una opción de registro detallado pago por pago (**Sin agrupamiento**).
 
-Sulla destra è presente un flag di default di **Chiusura della partite** (proposto di default, da non togliere) e il criterio di gestione del raggruppamento in contabilità **Raggruppa Banca** che consente di rilevare una registrazione per ogni sottoconto banca di uscita. 
+Si la causa contable requiere gestionar la fecha valor del banco y dentro de la anagrafica de bancos se ha definido un número de días para su cálculo en relación con la causa contable utilizada, el campo se gestionará automáticamente en el registro resultante.
 
-In alternativa è disponibile un **Raggruppa per sottoconto** fornitore e un'opzione di registrazione dettagliata pagamento per pagamento (**Nessun raggruppamento**).
+7. Presiona el botón **Iniciar la creación del pago desde partidas**.
 
-Se la causale contabile prevede la gestione della data valuta banca e all'interno dell'anagrafica banche è stato definito un numero di giorni per il suo calcolo in relazione alla causale contabile utilizzata, il campo sarà gestito in automatico nella registrazione risultante.
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Se remite al Tutorial - Enlace de YouTube (Tutorial - Link YouTube)</a>**
 
-7. Premi il pulsante **Inizia la creazione del pagamento da partite**
+### La pestaña de restauración 
 
+permite visualizar el registro contable a través de un doble clic en la sección relativa a los registros, así como la anulación parcial/total de las operaciones de pago seleccionadas. La anulación solo será posible si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
+**Botones específicos**
 
-### La scheda di ripristino 
+**Buscar anteriores**: Busca la lista de creaciones realizadas.
 
-consente di visualizzare la registrazione contabile attraverso un doppio click nella sezione relativa alle registrazioni, così come l'annullamento parziale/totale delle operazioni di pagamento selezionate. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite).
+**Eliminar creación**: Con este botón se eliminará toda la contabilización realizada, con todos los pagos asociados.
 
-
-
-**Pulsanti specifici**
-
-**Ricerca precedenti**: Ricerca la lista delle creazioni eseguite.
-
-**Cancella creazione**: Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i pagamenti associati.
-
-**Cancella pagamenti**: Il pulsante esegue il ripristino del pagamento selezionato.
-
+**Eliminar pagos**: El botón restaura el pago seleccionado.

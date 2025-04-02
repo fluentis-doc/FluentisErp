@@ -1,34 +1,24 @@
 ---
-title: Contabilizzazione ammortamenti
+title: contabilizzazione ammortamenti
 sidebar_position: 1
 ---
 
-LINK:
+ENLACE:
 
-** [Ammortamento](/docs/finance-area/fixed-assets/accounting/depreciation) **
+**[Amortización (Ammortamento)](/docs/finance-area/fixed-assets/accounting/depreciation)**
 
-** [Ripristina](/docs/finance-area/fixed-assets/accounting/restore) **
+**[Restaurar (Ripristina)](/docs/finance-area/fixed-assets/accounting/restore)**
 
- 
+ 
 
- 
+La procedimiento de contabilización actualizará las tarjetas de activos (agregando el indicador Contabilizado y actualizando, por lo tanto, el valor del fondo de amortización y el valor neto contable) y registrará en contabilidad los respectivos movimientos de amortización.
 
-La procedura di contabilizzazione andrà ad aggiornare le schede cespiti ( aggiungendo il flag Contabilizzato ed aggiornando pertanto il valore del fondo ammortamento e del valore netto contabile) ed a rilevare in contabilità i relativi movimenti d'ammortamento.
+Para que el procedimiento pueda llevarse a cabo correctamente es necesario que:
 
-Affinché la procedura possa andare a buon fine è necessario che:
+- Se hayan creado los **[Parámetros de contabilidad general (Parametri contabilità generale)](/docs/configurations/parameters/finance/accounting-parameters)** para el año de referencia;  
 
-- Siano stati creati i ** [Parametri contabilità generale](/docs/configurations/parameters/finance/accounting-parameters) ** per l'anno di riferimento;
+- Se hayan creado los **[Parámetros de activos (Parametri cespiti)](/docs/configurations/parameters/finance/fixed-assets-parameters)**;  
 
-- Siano stati creati i ** [Parametri cespiti](/docs/configurations/parameters/finance/fixed-assets-parameters) **;
+- Dentro de la tabla **[Categorías de activos (Categorie Cespiti)](/docs/configurations/tables/finance/fixed-asset-category)** se hayan definido (para cada categoría) las cuentas relacionadas con la cuota de amortización y del fondo de amortización;  
 
-- All'interno della tabella ** [Categorie Cespiti](/docs/configurations/tables/finance/fixed-asset-category) ** siano stati definiti (per ogni categoria) i conti relativi alla quota di ammortamento e del fondo ammortamento;
-
-- Sia definita la causale contabile che si desidera utilizzare per la contabilizzazione ammortamenti.
-
- 
-
-
-
-
-
-
+- Se haya definido la causal contable que se desea utilizar para la contabilización de amortizaciones.

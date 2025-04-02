@@ -1,12 +1,6 @@
 ---
-title: Tipi pagamento
+title: tipi pagamento
 sidebar_position: 7
 ---
 
-Nella tabella tipi pagamento è possibile (ma non obbligatorio) legare il tipo pagamento al tipo di effetto da creare nel modulo portafoglio effetti
-
-
-
-
-
-
+En la tabla de tipos de pago, es posible (pero no obligatorio) vincular el tipo de pago al tipo de efecto que se creará en el módulo de cartera de efectos.

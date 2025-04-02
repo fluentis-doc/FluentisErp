@@ -1,50 +1,50 @@
 ---
-title: Centri di lavoro
+title: centri di lavoro
 sidebar_position: 3
 ---
 
-Attraverso questa form si possono codificare i vari centri di lavoro inserendo anche le informazioni relative alle macchine e ai gruppi di manodopera che li compongono.
+A través de este formulario, se pueden codificar los diversos centros de trabajo ingresando también la información relacionada con las máquinas y los grupos de mano de obra que los componen.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite ingresar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-### Ricerca Centri di lavoro
+### Búsqueda de centri di lavoro (Ricerca Centri di lavoro)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### Inserimento Centri di lavoro
+### Inserción de centri di lavoro (Inserimento Centri di lavoro)
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserisci**. 
+Para poder ingresar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **inserisci**.
 
-Le informazioni obbligatorie per la creazione di un nuovo centro di lavoro sono: il codice, la descrizione e il tipo.
+La información obligatoria para la creación de un nuevo centro de trabajo incluye: el código, la descripción y el tipo.
 
-La form si compone di una sezione principale, dove vengono inseriti i seguenti dati relativi al centro di lavoro:
+El formulario consta de una sección principal, donde se ingresan los siguientes datos relacionados con el centro de trabajo:
 
-**Centri di lavoro**: indica il codice del CdL;  
-**Descrizione centro di lavoro**: indica la descrizione del CdL;  
-**Tempo fisso**: indica che il centro di lavoro lavora a tempo fisso, il tempo di lavorazione dell’articolo non dipende dal numero di pezzi;  
-**Capacità infinita**: indica che il centro di lavoro lavora a capacità infinita; quindi, ha una disponibilità talmente grande che è possibile caricarlo continuamente;  
-**Tipo centro di lavoro**: indica se il centro di lavoro sia interno o esterno;  
-**Macchina**: indica il codice macchina associato a quel centro di lavoro;  
-**Numero macchine**: indica il numero di macchine equivalenti;  
-**Gruppi Manodopera**: indica il codice del gruppo di manodopera associato al centro di lavoro;  
-**Numero Operai**: indica il numero di operai del centro di lavoro;  
-**Priorità per il calcolo disponibilità calendario**: indica quale criterio utilizzare per poter calcolare la disponibilità nel tempo di quel centro di lavoro;  
-**Reparto**: indica il codice del reparto in cui è inserito il centro di lavoro;  
-**% utilizzo centro di lavoro**: indica la percentuale di efficienza del centro di lavoro;             
-**% minimo livello occupazionale**: indica la percentuale minima che deve essere libera nel centro di lavoro per potergli assegnare un’altra attività;  
-**Ora inizio lavoro**: indica l’orario di inizio lavoro del centro di lavoro;  
-**Ora inizio pausa**: indica l’orario di inizio pausa del centro di lavoro;  
-**ora fine pausa**: indica l’orario di fine pausa del centro di lavoro;  
-**Ora fine lavoro**: indica l’orario di fine lavoro del centro di lavoro;  
-**Ore giornaliere**: indica il totale giornaliero delle ore lavorate;  
-**Turno di lavoro**: indica il codice del turno di lavoro associato al centro di lavoro;  
-**Descrizione turno**: indica la descrizione del turno di lavoro associato al centro di lavoro;  
-**Data inserimento**: indica la data di inserimento del record;  
-**Data ultima modifica**: indica la data di ultima modifica del record;  
-**Descrizione macchina**: indica la descrizione della macchina;  
-**Descrizione gruppo Manodopera**: indica la descrizione del gruppo di manodopera;  
-**Descrizione reparto**: indica la descrizione del reparto;  
+**centri di lavoro**: indica el código del CdL;  
+**descrizione centro di lavoro**: indica la descripción del CdL;  
+**tempo fisso**: indica que el centro de trabajo opera a tiempo fijo, el tiempo de procesamiento del artículo no depende del número de piezas;  
+**capacità infinita**: indica que el centro de trabajo opera a capacidad infinita; por lo tanto, tiene una disponibilidad tan grande que se puede cargar continuamente;  
+**tipo centro di lavoro**: indica si el centro de trabajo es interno o externo;  
+**macchina**: indica el código de la máquina asociada a ese centro de trabajo;  
+**numero macchine**: indica el número de máquinas equivalentes;  
+**gruppi manodopera**: indica el código del grupo de mano de obra asociado al centro de trabajo;  
+**numero operai**: indica el número de obreros del centro de trabajo;  
+**Prioridad para el cálculo de disponibilidad del calendario (Priorità per il calcolo disponibilità calendario)**: indica qué criterio utilizar para calcular la disponibilidad en el tiempo de ese centro de trabajo;  
+**reparto**: indica el código del departamento en el que se inserta el centro de trabajo;  
+**% de utilización del centro de trabajo (% utilizzo centro di lavoro)**: indica el porcentaje de eficiencia del centro de trabajo;  
+**% mínimo de ocupación (% minimo livello occupazionale)**: indica el porcentaje mínimo que debe estar libre en el centro de trabajo para poder asignarle otra actividad;  
+**ora inizio lavoro**: indica la hora de inicio de trabajo del centro de trabajo;  
+**ora inizio pausa**: indica la hora de inicio de pausa del centro de trabajo;  
+**ora fine pausa**: indica la hora de fin de pausa del centro de trabajo;  
+**ora fine lavoro**: indica la hora de fin de trabajo del centro de trabajo;  
+**ore giornaliere**: indica el total diario de horas trabajadas;  
+**turno di lavoro**: indica el código del turno de trabajo asociado al centro de trabajo;  
+**descrizione turno**: indica la descripción del turno de trabajo asociado al centro de trabajo;  
+**data inserimento**: indica la fecha de inserción del registro;  
+**data ultima modifica**: indica la fecha de última modificación del registro;  
+**descrizione macchina**: indica la descripción de la máquina;  
+**descrizione gruppo manodopera**: indica la descripción del grupo de mano de obra;  
+**descrizione reparto**: indica la descripción del departamento;  
 
-Nella seconda sezione è possibile inserire delle eccezioni per quanto riguarda gli orari di lavoro del centro di lavoro selezionato.
+En la segunda sección, es posible ingresar excepciones con respecto a los horarios de trabajo del centro de trabajo seleccionado.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

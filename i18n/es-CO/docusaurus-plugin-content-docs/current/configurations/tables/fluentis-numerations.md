@@ -1,94 +1,92 @@
 ---
-title: Numerazioni Fluentis
+title: Numeraciones Fluentis (Numerazioni Fluentis)
 sidebar_position: 13
 last_update:
   date: 03/30/2023
 ---
 
-In fase di inserimento di un nuovo documento, uno dei primi dati richiesti è quello del numero del documento in oggetto. Tale dato viene proposto automaticamente grazie alle tabelle dei numeratori.
+En el proceso de inserción de un nuevo documento, uno de los primeros datos requeridos es el número del documento en cuestión. Este dato se propone automáticamente gracias a las tablas de numeradores.
 
-In Fluentis la gestione dei numeratori è suddivisa per tipologia di documento, come possiamo vedere dalle voci di menu presenti tra le tabelle di ogni modulo.
+En Fluentis, la gestión de los numeradores está dividida por tipo de documento, como podemos ver en las opciones de menú presentes entre las tablas de cada módulo.
 
-La logica che sta alla base di tutti questi numeratori è la medesima, andremo quindi a visionarne una, in particolare la Numerazione compensazioni, dalla quale sarà possibile partire come base teorica per la definizione dei numeratori delle altre tipologie di documenti.
+La lógica que subyace a todos estos numeradores es la misma, por lo que vamos a examinar una, en particular, la Numeración de compensaciones, desde la cual será posible comenzar como base teórica para la definición de los numeradores de otros tipos de documentos.
 
-Nella form **Numerazione compensazioni** è presente una griglia che mostra l'elenco dei numeratori presenti per le compensazioni. Ciò sta a significare che è possibile gestire più numeratori per la stessa tipologia di documento. Premendo sul pulsante **Nuovo** accediamo alla form **Numerazione**.
-
+En el formulario **Numeración de compensaciones** hay una cuadrícula que muestra la lista de numeradores presentes para las compensaciones. Esto significa que es posible gestionar varios numeradores para el mismo tipo de documento. Al presionar el botón **Nuevo** accedemos al formulario **Numeración**.
 
 ![](/img/it-it/configurations/tables/fluentis-numerations/image01.png)
 
-### Sezione superiore
+### Sección superior
 
-**Codice**: è il codice del numeratore;
+**codice**: es el código del numerador;
 
-**Descrizione**: la descrizione del numeratore;
+**descrizione**: la descripción del numerador;
 
-**Formula numero**: in questo campo si può impostare una valorizzazione di una stringa alfanumerica, che sarà memorizzata nella proprietà alfanumerica predefinita ‘FormattedNumber' dell'oggetto (mentre il campo numerico viene memorizzato nella proprietà ‘Number'). La definizione della *Formula* per la formattazione del numero del documento può essere definita a livello di tipo numerazione, al livello di periodo di validità del tipo numerazione oppure a livello definizione dei range di validità. La priorità di applicazione è bottom-up, si verifica se è definita nei range di validità, se null si verifica se è definita nei periodi di validità se nulla si verifica se è definita nel tipo numerazione.
+**formula numero**: en este campo se puede establecer una valorización de una cadena alfanumérica, que se almacenará en la propiedad alfanumérica predeterminada ‘FormattedNumber' del objeto (mientras que el campo numérico se almacena en la propiedad ‘Number'). La definición de la *Fórmula* para el formato del número del documento puede definirse a nivel de tipo de numeración, al nivel de periodo de validez del tipo de numeración o a nivel definición de los rangos de validez. La prioridad de aplicación es de abajo hacia arriba; se verifica si está definida en los rangos de validez, si es nula, se verifica si está definida en los periodos de validez, si también es nula se verifica si está definida en el tipo de numeración.
 
-Nell'immagine qui sopra (preso dai numeratori delle compensazioni) è stato inserito “Year.ToString() + "-" + Number.ToString("D5") + "-" + SalesInvoiceType.Code”, che creerà una stringa del tipo “2015-00001-TestCode”.
+En la imagen anterior (tomada de los numeradores de compensaciones) se ha insertado “Year.ToString() + "-" + Number.ToString("D5") + "-" + SalesInvoiceType.Code”, lo que creará una cadena del tipo “2015-00001-TestCode”.
 
-Altro esempio, inserire nel numero un valore preso dall'utente di inserimento: “Number.ToString("D5") + "-" + "-" + (CreationUser != null ? CreationUser.Description.Substring(0,3) : "")”
+Otro ejemplo, insertar en el número un valor tomado del usuario que lo ingresa: “Number.ToString("D5") + "-" + (CreationUser != null ? CreationUser.Description.Substring(0,3) : "")”.
 
-In questo caso è anche necessario intervenire a livello di Arm per abilitare, nel setter del numero formattato, che questo vede la proprietà utente: dentro Patterns, si edita questo setter
+En este caso, también es necesario intervenir a nivel de Arm para habilitar, en el setter del número formateado, que este vea la propiedad de usuario: dentro de Patterns, se edita este setter.
 
 ![](/img/it-it/configurations/tables/fluentis-numerations/image02.png)
 
-E si mette il flag su **Used**:
+Y se marca el indicador en **Usado (Used)**:
 
 ![](/img/it-it/configurations/tables/fluentis-numerations/image03.png)
 
-Si salva, in IIS si riavvia il pool di Fluentis e si ha il dato operativo.
+Se guarda, en IIS se reinicia el pool de Fluentis y se tiene el dato operativo.
 
-*Ulteriore esempio*: impostare il numero fattura (o DDT) con il barrato (esempio 1/A, 2/A.... 1/B, 2/B):
+*Otro ejemplo*: establecer el número de factura (o DDT) con el barrado (ejemplo 1/A, 2/A.... 1/B, 2/B):
 
 number.ToString()+"/B"
 
-da mettere nel numeratore (in testata)
+esto se debe poner en el numerador (en cabecera).
 
-Poi nel report si deve sostituire il campo standard (es. Number) con un campo calcolato (es. CalcNumber) dove all'interno ci sia questa expression:
+Luego, en el informe se debe sustituir el campo estándar (p. ej. Number) con un campo calculado (p. ej. CalcNumber) donde dentro exista esta expresión:
 
 Iif(IsNullOrEmpty([FormattedNumber]),  [Number], [FormattedNumber])
 
-*ATTENZIONE*: funziona solo nel report, nelle form si continuerà a visualizzare il numero normale senza il barrato.
+*ATENCIÓN*: funciona solo en el informe; en los formularios, se continuará mostrando el número normal sin el barrado.
 
-**Disabilitato**: per disabilitare il contatore.
+**disabilitato**: para desactivar el contador.
 
-### Politiche de gestione (prima griglia)
+### Políticas de gestión (primera cuadrícula)
 
-In questa sezione si inseriscono le politiche di gestione del numeratore.
+En esta sección se introducen las políticas de gestión del numerador.
 
-**Ordine**: codice del record della riga;
+**ordine**: código del registro de la fila;
 
-**Valido da data**: campo obbligatorio ed indica la data iniziale del range di validità della numerazione;
+**valido da data**: campo obligatorio que indica la fecha inicial del rango de validez de la numeración;
 
-**Valido a data**: data di fine validità del range. Il campo può essere vuoto (vedi campo successivo);
+**valido a data**: fecha de fin de validez del rango. El campo puede estar vacío (ver campo siguiente);
 
-**Periodo**: periodicità del range. Le opzioni sono *Nessuno* (cioè il range è valido solo nel range definito; se non c'è data fine sarà un contatore perenne), *Annuale* (il numeratore si resetterà automaticamente al numero iniziale anno per anno, fino alla data fine validità), *Mensile* (il numeratore si resetterà automaticamente al numero iniziale di mese in mese, fino alla data fine validità), *Giornaliero* (il numeratore si resetterà automaticamente al numero iniziale ogni giorno, fino alla data fine validità);
+**periodo**: periodicidad del rango. Las opciones son *Ninguno* (es decir, el rango es válido solo en el rango definido; si no hay fecha de fin, será un contador perenne), *Anual* (el numerador se reseteará automáticamente al número inicial año por año, hasta la fecha de fin de validez), *Mensual* (el numerador se reseteará automáticamente al número inicial mes a mes, hasta la fecha de fin de validez), *Diario* (el numerador se reseteará automáticamente al número inicial cada día, hasta la fecha de fin de validez);
 
-**Mesi di spostamento**: mesi da aggiungere alla data di inizio validità per ottenere il mese nel quale il contatore si resetta;
+**mesi di spostamento**: meses a agregar a la fecha de inicio de validez para obtener el mes en el cual el contador se reinicia;
 
-**Giorni di spostamento**: giorni da aggiungere alla data di inizio validità per ottenere il giorno nel quale il contatore si resetta;
+**giorni di spostamento**: días a agregar a la fecha de inicio de validez para obtener el día en el cual el contador se reinicia;
 
-**Progressione data numero**: serve, se attivo, per fare in modo che la numerazione sia progressiva per data, bloccando la possibilità inserire un documento con numero superiore all'ultimo inserito ma con data antecedente a quest'ultimo;
+**progressione data numero**: sirve, si está activo, para hacer que la numeración sea progresiva por fecha, bloqueando la posibilidad de insertar un documento con un número superior al último ingresado, pero con una fecha anterior a este último;
 
-**Recupero numeri**: permette di recuperare in automatico buchi di numerazione. Se il flag **Progressione data numero** è attivo, il recupero del numero potrà avvenire solo se coerente con le logiche spiegate poco fa per tale campo;
+**recupero numeri**: permite recuperar automáticamente huecos en la numeración. Si el indicador **Progresión de la fecha número** está activo, la recuperación del número solo podrá llevarse a cabo si es coherente con las lógicas explicadas anteriormente para este campo;
 
-**Disabilitato**: per disabilitare la politica di numerazione;
+**disabilitato**: para deshabilitar la política de numeración;
 
+### Rangos numéricos (segunda cuadrícula)
 
-### Range numerici (seconda griglia)
+Esta cuadrícula está conectada a la política seleccionada en la cuadrícula anterior.
 
-Questa griglia è collegata alla politica selezionata nella griglia sopra.
+**ordine**: código del rango numérico;
 
-**Ordine**: codice del range numerico;
+**numero inizio**: es obligatorio y indica el número de partida del rango;
 
-**Numero inizio**: è obbligatorio e indica il numero di partenza del range;
+**numero inizio ricerca**: puede ser ingresado si se desea limitar la búsqueda del número a partir de un cierto rango;
 
-**Numero inizio ricerca**: può essere inserito se si vuole limitare la ricerca del numero a partire da un certo range;
+**numero fine**: número máximo del rango, puede estar vacío;
 
-**Numero fine**: numero massimo del range, può essere vuoto;
+**numerazione esterna**: debe marcarse en caso de que la numeración no sea atribuida por Fluentis, sino que sea asignada por sistemas externos;
 
-**Numerazione esterna**: deve essere spuntato nel caso in cui la numerazione non venga attribuita da Fluentis ma venga assegnata da sistemi esterni;
+**formula numero**: en este campo es posible asociar una fórmula a utilizar para el rango de fechas seleccionado en la primera cuadrícula;
 
-**Formula numero**: in questo campo è possibile associare una formula da utilizzare per il range di date selezionato nella prima griglia;
-
-**Disabilitato**: per disabilitare l'utilizzo del range in oggetto.
+**disabilitato**: para deshabilitar el uso del rango en cuestión.

@@ -1,787 +1,556 @@
 ---
-title: Importazione Anagrafiche Contatti
+title: importazione anagrafiche contatti
 sidebar_position: 1
 ---
 
+En este artículo se explicará cómo **Importar las anagrafías de contactos** (clientes o proveedores) dentro de **Fluentis** utilizando una **hoja electrónica**.
 
+Esta importación es posible gracias al uso de los **BizLink Parameters**, ya que cada vez que se procese una línea, serán llamados.
 
-In questo articolo verrà spiegato come **Importare le anagrafiche contatti** (clienti o fornitori) all'interno di **Fluentis** tramite l'utilizzo di un **foglio elettronico**.
+### Cómo abrir la importación a través de una hoja electrónica
 
-Questa importazione è possibile, grazie all'utilizzo dei **BizLink Parameters** in quanto ogni qualvolta verrà processata una riga, essi saranno richiamati.
+Haga clic en **Herramientas** (que generalmente se ubica en el lado derecho de Fluentis).
 
+Haga clic en la sección **BizLink**.
 
-### Come aprire l'importazione tramite foglio elettronico
+Haga clic en **Importación On Demand > Anagrafica > Importación Clientes/Fornitori** como en la figura a continuación.
 
-Cliccare su **Strumenti** (di solito è situata nel lato destro di Fluentis).
+![](/img/it-it/applications/bizlink/import-contacts-registry/image03.png)
 
-Cliccare sulla sezione **BizLink**
+### Sección de Datos
 
-Cliccare su **Importazione On Demand > Anagrafiche > Importazione Clienti/Fornitori** come in figura sotto.
+En esta sección ingresaremos los datos que luego se harán permanentes al guardarlos en la base de datos de **Fluentis**.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image03.png) 
+Ahora en pantalla se visualiza la hoja electrónica para la importación.
 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image04.png)
 
-### Sezione Data
+A partir de este punto se pueden tomar varias rutas:
 
-In questa sezione andremo a inserire i dati che verranno poi resi permanenti tramite salvataggio nella base di dati di **Fluentis**.
+1. Importar la hoja electrónica ya completada, **Archivo > Abrir**.
+2. Agregar las diversas columnas copiando y pegando desde la lista guardada en nuestra PC.
+3. Guardar este archivo (**Archivo > Guardar**) en nuestra PC, para luego agregar los diversos datos y reimportarlo posteriormente en **Fluentis** (ver punto 1). Esto podría ser muy útil para pasar la plantilla de la hoja electrónica para la importación, que se debe completar para las futuras listas que nos enviarán los proveedores.
+4. Agregar manualmente los campos.
 
-Ora a video viene visualizzato il foglio elettronico per l'importazione.
+**ATENCIÓN**: si tenemos una hoja electrónica guardada en nuestra PC, esta debe seguir el esquema de la hoja en la figura anterior. Es decir, el mismo orden de columnas, tipo de dato, etc. Estos últimos se explican en detalle en el siguiente párrafo.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image04.png) 
+### Inserción de campos
 
-Da questo punto si possono prendere varie strade:
+Al ingresar un campo, deben tenerse en cuenta muchas cosas, entre ellas tipo, longitud máxima, requerido, etc.
 
- 1. Importare il foglio elettronico già compilato, **File > Open**.
- 2. Aggiungere le varie colonne facendo copia e incolla dal listino salvato nel nostro pc.
- 3. Salvare questo file (**File > Salva**) nel nostro pc, per poi andare ad aggiungerci i vari dati e reimportarlo successivamente in **Fluentis** (vedi punto 1). Questo potrebbe essere molto utile per passare il template, del foglio elettronico per l'importazione, da compilare per i futuri listini che ci invieranno i fornitori. 
- 4. Aggiungere manualmente i campi.
+Indicaciones generales:
 
-**ATTENZIONE**: se abbiamo un foglio elettronico salvato sul nostro pc, esso deve seguire lo schema del foglio in figura sopra. Ossia lo stesso ordine di colonne, tipo di dato ecc. Quest'ultimi sono spiegati nel dettaglio al paragrafo successivo.
+- Si el campo está escrito en rojo, es un campo obligatorio.
+- Si el nombre de la celda está resaltado en verde, es una **sección**.
+- Si el nombre de la celda está resaltado en amarillo, es un **campo**.
+- Campo: indica si es obligatorio o no el ingreso.
+- Tipo: indica el tipo del campo.
+- Formateo de Excel: indica el formateo de Excel recomendado para evitar entradas incorrectas, vea al final Consejos y advertencias útiles.
+- Longitud: indica si el campo tiene un límite de caracteres que se debe respetar.
+- Descripción: breve descripción del campo.
+*Ejemplo*: ejemplo real de lo que se puede escribir en ese campo.
 
+- Mapa de tabla/columna: si está presente, indica la respectiva mapeo del campo en la base de datos, para profundizar vea al final Consejos y advertencias útiles.
 
-### Inserimento campi
+![](/img/it-it/applications/bizlink/import-contacts-registry/image05.png)
 
-Quando viene inserito un campo vanno tenute in considerazione molte cose tra cui tipo, lunghezza massima, richiesto ecc…
+**Datos generales**:
 
-Indicazioni generali:
+Código:
 
--        Se il campo è scritto in rosso è un campo obbligatorio
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 6 caracteres.
+- Descripción: código de referencia del cliente/proveedor.
+*Ejemplo*: TEGOL.
+- Mapa de tabla/columna: select MBAN_Nomignolo from MB_Anagr.
 
--        Se il nome della cella è evidenziato in verde è una **sezione**
+Razón Social:
 
--        Se il nome della cella è evidenziato in giallo è un **campo**
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: razón social del cliente/proveedor.
+*Ejemplo*: TEGOLA CANADESE spa.
+- Mapa de tabla/columna: select MBAN_RagSoc from MB_Anagr.
 
--        Campo: indica se è obbligatorio o meno l'inserimento
+Cliente/Proveedor:
 
--        Tipo: indica il tipo del campo
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 1 carácter.
+- Descripción: Indica si estamos ingresando un cliente o un proveedor. Las dos letras que representan cliente y proveedor están especificadas en los parámetros.
+*Ejemplo*: "C" corresponde a proveedor, "F" corresponde a cliente.
 
--        Formattazione Excel: indica la formattazione Excel consigliata per evitare inserimenti sbagliati, vedi alla fine Consigli e avvertenze utili
+**Atención**: la única forma de ingresar un contacto que es tanto cliente como proveedor es primero ingresarlo como cliente y luego como proveedor.
 
--        Lunghezza: indica se il campo ha un limite di caratteri da rispettare
+Cuenta:
 
--        Descrizione: breve descrizione del campo
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Descripción: cuenta del proveedor, cuenta maestra del proveedor.
+*Ejemplo*: "15200" corresponde a Clientes Italia.
+- Mapa de tabla/columna: select MBPC_Conto from MB_PiaCon.
 
-*Esempio*: esempio reale di cosa poter scrivere in quel campo
+Subcuenta:
 
--        Mapping table/colonna: se presente indica del rispettivo campo la mappatura nel database, per approfondire alla fine Consigli e avvertenze utili
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Descripción: subcuenta del proveedor, cuenta menor del proveedor.
+*Ejemplo*: si se pasan las cuentas con un sistema vacío, se puede usar una codificación tipo 01; 02; 03 o 001; 002; 003.
+- Mapa de tabla/columna: select BPC_SottoConto from MB_PiaCon.
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image05.png)
-
- 
-
-**Dati generali**:
-
-Codice:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 6 caratteri
-
--        Descrizione: codice di riferimento del cliente/fornitore
-
-*Esempio*: TEGOL
-
--        Mapping table/colonna: select MBAN_Nomignolo from MB_Anagr
-
-Ragione Sociale:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: ragione sociale del cliente/fornitore
-
-*Esempio*: TEGOLA CANADESE spa
-
--        Mapping table/colonna: select MBAN_RagSoc from MB_Anagr
-
-Cliente/Fornitore:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 1 carattere
-
--        Descrizione: Indica se stiamo inserendo un cliente o un fornitore. Le due lettere che rappresentano cliente e fornitore sono specificate nei parametri.
-
-*Esempio*: “C” corrisponde a fornitore, ”F” corrisponde a fornitore
-
-**Attenzione**: l'unico modo per inserire un contatto, il quale è sia cliente che fornitore, è inserirlo prima come cliente e poi come fornitore.
-
-Conto:
-
--        Campo: non obbligatorio
-
--        Tipo: string
-
--        Descrizione: conto del fornitore, mastro del fornitore
-
-*Esempio*: “15200” corrisponde a Clienti Italia
-
--        Mapping table/colonna: select MBPC_Conto from MB_PiaCon
-
-Sottoconto:
-
--        Campo: non obbligatorio
-
--        Tipo: string
-
--        Descrizione: sottoconto del fornitore, mastrino del fornitore
-
-*Esempio*: se vengono passati i conti con sistema vuoto si può usare una codifica tipo 01; 02; 03 oppure 001; 002; 003
-
--        Mapping table/colonna: select BPC_SottoConto from MB_PiaCon
-
-Partite (true/false):
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: flag partite aperte
-
-*Esempio*: basta semplicemente scrivere “true” e appena si cambia cella automaticamente scriverà “TRUE” in centro della cella o “FALSE” a seconda dei casi
-
-Indirizzo:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: indirizzo sede cliente/fornitore
-
-*Esempio*: via le dita dalla tastiera 7
-
--        Mapping table/colonna: select MBAN_Indirizzo from MB_Anagr
-
-Comune:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: comune sede cliente/fornitore
-
-*Esempio*: Cordignano
-
--        Mapping table/colonna: select MBAN_Comune from MB_Anagr
-
-CAP:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 5 caratteri
-
--        Descrizione: codice di avviamento postale della sede cliente/fornitore
-
-*Esempio*: 31016
-
--        Mapping table/colonna: select MBAN_CAP from MB_Anagr
+Partidas (true/false):
+
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: bandera de partidas abiertas.
+*Ejemplo*: basta con escribir "true" y al cambiar de celda automáticamente se escribirá "TRUE" en el centro de la celda o "FALSE" según sea el caso.
+
+Dirección:
+
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: dirección de la sede del cliente/proveedor.
+*Ejemplo*: via le dita dalla tastiera 7.
+- Mapa de tabla/columna: select MBAN_Indirizzo from MB_Anagr.
+
+Municipio:
+
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: municipio de la sede del cliente/proveedor.
+*Ejemplo*: Cordignano.
+- Mapa de tabla/columna: select MBAN_Comune from MB_Anagr.
+
+Código Postal (CAP):
+
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 5 caracteres.
+- Descripción: código postal de la sede del cliente/proveedor.
+*Ejemplo*: 31016.
+- Mapa de tabla/columna: select MBAN_CAP from MB_Anagr.
 
 Provincia:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: provincia de la sede del cliente/proveedor.
+*Ejemplo*: "TV" corresponde a Treviso.
+- Mapa de tabla/columna: select MBAN_Provincia from MB_Anagr.
 
--        Tipo: stringa
+Nación:
 
--        Formattazione Excel: testo
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: nación de la sede del cliente/proveedor.
+*Ejemplo*: "IT" corresponde a Italia.
+- Mapa de tabla/columna: select MBNZ_CodIso from MB_Nazioni.
 
--        Lunghezza massima: 200 caratteri
+Idioma:
 
--        Descrizione: provincia sede cliente/fornitore
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: idioma utilizado por el cliente/proveedor.
+*Ejemplo*: "IT" corresponde a italiano.
+- Mapa de tabla/columna: select MBAN_RagSoc from MB_Anagr.
 
-*Esempio*: “TV” corrisponde a Treviso
+Teléfono:
 
--        Mapping table/colonna: select MBAN_Provincia from MB_Anagr
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: teléfono del cliente/proveedor.
+*Ejemplo*: 0438-123456.
+- Mapa de tabla/columna: select MBAN_Telefono from MB_Anagr.
 
-Nazione:
+Correo Electrónico:
 
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: nazione sede cliente/fornitore
-
-*Esempio*: “IT” corrisponde a Italia
-
--        Mapping table/colonna: select MBNZ_CodIso from MB_Nazioni
-
-Lingua:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: lingua utilizzata dal cliente/fornitore
-
-*Esempio*: “IT” corrisponde a italiano
-
--        Mapping table/colonna: select MBAN_RagSoc from MB_Anagr
-
-Telefono:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: telefono del cliente/fornitore
-
-*Esempio*: 0438-123456
-
--        Mapping table/colonna: select MBAN_Telefono from MB_Anagr
-
-Email:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: e-mail principale del cliente/fornitore
-
-*Esempio*: info@mycompany.com
-
--        Mapping table/colonna: select MBAN_Email from MB_Anagr
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: correo electrónico principal del cliente/proveedor.
+*Ejemplo*: info@mycompany.com.
+- Mapa de tabla/columna: select MBAN_Email from MB_Anagr.
 
 Nota:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: notas adicionales.
+*Ejemplo*: .
+- Mapa de tabla/columna: select MBAN_Note from MB_Anagr.
 
--        Tipo: stringa
+![](/img/it-it/applications/bizlink/import-contacts-registry/image06.png)
 
--        Formattazione Excel: testo
+**Datos fiscales**:
 
--        Lunghezza massima: 200 caratteri
+Código fiscal:
 
--        Descrizione: note aggiuntive
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: Código Fiscal del cliente/proveedor.
+*Ejemplo*: IT01720550936.
+- Mapa de tabla/columna: select MBAN_CodFiscale from MB_Anagr.
 
-*Esempio*:
+Código ISO:
 
--        Mapping table/colonna: select MBAN_Note from MB_Anagr
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 50 caracteres.
+- Descripción: .
+*Ejemplo*: "IT" corresponde a Italia.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image06.png) 
+- Mapa de tabla/columna: select MBAN_CodIso from MB_Anagr.
 
-**Dati fiscali**:
+IVA (P. Iva):
 
-Cod. fiscale:
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 200 caracteres.
+- Descripción: número de identificación fiscal del cliente/proveedor.
+*Ejemplo*: 28207227700.
+- Mapa de tabla/columna: select MBAN_PartitaIva from MB_Anagr.
 
--        Campo: non obbligatorio
+![](/img/it-it/applications/bizlink/import-contacts-registry/image07.png)
 
--        Tipo: stringa
+**Pagos**:
 
--        Formattazione Excel: testo
+Tipo de pago:
 
--        Lunghezza massima: /
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: tipo de pago que utiliza el cliente/proveedor.
+*Ejemplo*: "04" corresponde a transferencia bancaria.
+- Mapa de tabla/columna: select MBTP_Pagamento from MB_TipoPag.
 
--        Descrizione: Codice Fiscale del cliente/fornitore
+Soluciones de pago:
 
-*Esempio*: IT01720550936
-
--        Mapping table/colonna: select MBAN_CodFiscale from MB_Anagr
-
-Cod. ISO:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 50 caratteri
-
--        Descrizione:
-
-*Esempio*: “IT” corrisponde ad Italia
-
--        Mapping table/colonna: select MBAN_CodIso from MB_Anagr
-
-P. Iva:
-
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 200 caratteri
-
--        Descrizione: partita iva del cliente/fornitore
-
-*Esempio*: 28207227700
-
--        Mapping table/colonna: select MBAN_PartitaIva from MB_Anagr
-
-![](/img/it-it/applications/bizlink/import-contacts-registry/image07.png) 
-
-**Pagamenti**:
-
-Tipo pagamento:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: tipo di pagamento che viene utilizzato dal cliente/fornitore
-
-*Esempio*: “04” corrisponde a bonifico bancario
-
--        Mapping table/colonna: select MBTP_Pagamento from MB_TipoPag
-
-Soluzioni di Pagamento:
-
--        Campo: obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: tempistiche di pagamento del cliente/fornitore
-
-*Esempio*: “60 GG DF” corrisponde a entro 60 giorni rispetto alla data della fattura, “In consegna” pagamento nel momento della consegna della merce
-
--        Mapping table/colonna: select * from MB_SolPag
+- Campo: obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: tiempos de pago del cliente/proveedor.
+*Ejemplo*: "60 GG DF" corresponde a hasta 60 días desde la fecha de la factura, "En entrega" pago al momento de la entrega de la mercancía.
+- Mapa de tabla/columna: select * from MB_SolPag.
 
 ABI:
 
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 5
-
--        Descrizione: identifica la banca a cui appartiene il conto corrente del cliente/fornitore. È una parte dell'IBAN
-
-*Esempio*: 01234
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 5.
+- Descripción: identifica el banco al que pertenece la cuenta corriente del cliente/proveedor. Es una parte del IBAN.
+*Ejemplo*: 01234.
 
 CAB:
 
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione testo
-
--        Lunghezza massima: 5
-
--        Descrizione: indica la filiale della rispettiva banca (ABI) del cliente/fornitore. È una parte dell'IBAN
-
-*Esempio*: 12345
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de texto: texto.
+- Longitud máxima: 5.
+- Descripción: indica la sucursal del respectivo banco (ABI) del cliente/proveedor. Es una parte del IBAN.
+*Ejemplo*: 12345.
 
 IBAN:
 
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 27 caratteri
-
--        Descrizione: è un codice utilizzato nelle transazioni fra conti correnti diversi e che all'interno contiene l'identificazione del paese, della banca e del numero di conto corrente.
-
-*Esempio*: IT66C010050338 2000000218020     
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 27 caracteres.
+- Descripción: es un código utilizado en las transacciones entre diferentes cuentas bancarias que contiene la identificación del país, el banco y el número de la cuenta.
+*Ejemplo*: IT66C0100503382000000218020.
 
 SWIFT:
 
--        Campo: non obbligatorio
-
--        Tipo: stringa
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: 11 caratteri
-
--        Descrizione: cifre identificative che permettono ai sistemi di capire all'istante qual è la banca ricevente e quale quella mittente, il loro nome e luogo da cui operano. È necessario per i pagamenti a livello internazionale. È composto da 8 caratteri + 3 opzionali.
-
-*Esempio*: “UNCRITMM” corrisponde allo SWIFT di UniCredit
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: 11 caracteres.
+- Descripción: códigos identificativos que permiten a los sistemas entender instantáneamente cuál es el banco receptor y cuál el emisor, su nombre y lugar desde donde operan. Es necesario para pagos internacionales. Está compuesto por 8 caracteres + 3 opcionales.
+*Ejemplo*: "UNCRITMM" corresponde al SWIFT de UniCredit.
 
 Zona:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: Zona definida al inicio del IBAN.
 
--        Tipo: string
+![](/img/it-it/applications/bizlink/import-contacts-registry/image08.png)
 
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione: Zona definita all'inizio dell'IBAN
-
-*Esempio*: “IT” Corrisponde ad Italia
-
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image08.png)
-
-**Agenti**:
+**Agentes**:
 
 Agente:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: Si hay un agente (presente en la anagrafía de agentes), puede ser vinculado al cliente.
+*Ejemplo*: .
+- Mapa de tabla/columna: select * from MB_Agenti.
 
--        Tipo: stringa
+Comisiones:
 
--        Formattazione Excel: testo
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: Comisión del agente, si es diferente a la que se ingresó en la anagrafía de agente hay una máscara en la que se puede decidir cuál tiene más prioridad respecto a la otra.
+*Ejemplo*: .
+- Mapa de tabla/columna: select * from MB_AgentiZone.
 
--        Lunghezza massima: /
+![](/img/it-it/applications/bizlink/import-contacts-registry/image09.png)
 
--        Descrizione: Se c'è un agente (presente nell'anagrafica agenti) può essere collegato al cliente
+**Listas**:
 
-*Esempio*:
+Lista:
 
--        Mapping table/colonna: select * from MB_Agenti
+- Campo: no obligatorio.
+- Tipo: cadena.
+- Formateo de Excel: texto.
+- Longitud máxima: /.
+- Descripción: .
+*Ejemplo*: .
 
-Provvigioni:
+Descuento 1:
 
--        Campo: non obbligatorio
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formateo de Excel: número, posición decimales = 2.
+- Longitud máxima: /.
+- Descripción: valor del descuento.
+*Ejemplo*: 550.
 
--        Tipo: stringa
+Descuento 2:
 
--        Formattazione Excel: testo
+- Campo: no obligatorio.
+- Tipo: decimal.
+- Formateo de Excel: número, posición decimales = 2.
+- Longitud máxima: /.
+- Descripción: valor del descuento.
+*Ejemplo*: 5%.
 
--        Lunghezza massima: /
-
--        Descrizione: Provvigione dell'agente, se diversa rispetto a quella inserita nell'anagrafica agente c'è una maschera in cui si può decidere quale ha più priorità rispetto all'altra
-
-*Esempio*:
-
--        Mapping table/colonna: select * from MB_AgentiZone
-
-![](/img/it-it/applications/bizlink/import-contacts-registry/image09.png) 
-
-**Listini**:
-
-Listino:
-
--        Campo: non obbligatorio
-
--        Tipo: string
-
--        Formattazione Excel: testo
-
--        Lunghezza massima: /
-
--        Descrizione:
-
-*Esempio*:
-
-Sconto 1:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: valore dello sconto
-
-*Esempio*: 550
-
-Sconto 2:
-
--        Campo: non obbligatorio
-
--        Tipo: decimale
-
--        Formattazione Excel: numero, posizione decimali = 2
-
--        Lunghezza massima: /
-
--        Descrizione: valore dello sconto
-
-*Esempio*: 5%
-
- 
 ### BizLink Parameters
 
-Questi parametri serviranno per processare le righe inserite nella sezione Data. Come si può notare dall'immagine, alcuni campi sono già precompilati ma nulla ci vieta di modificarli.
+Estos parámetros servirán para procesar las líneas ingresadas en la sección de Datos. Como se puede notar en la imagen, algunos campos ya están precompilados, pero nada nos impide modificarlos.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image10.png) 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image10.png)
 
- BizLink Spreadsheet:
+BizLink Spreadsheet:
 
--        Campo: da non inserire
+- Campo: no debe ser ingresado.
 
-Lingua:
+Idioma:
 
--        Campo: obbligatorio
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: código Iso code relacionado al idioma.
+*Ejemplo*: “it-IT” representa el idioma italiano, “en-US” representa el idioma inglés en América.
 
--        Tipo: string
+Empresa:
 
--        Descrizione: codice Iso code relativo alla lingua
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: es un campo precompilado ya que toma los valores que están dentro de Fluentis, se pueden ver en la esquina superior izquierda.
+*Ejemplo*: “1” corresponde a la empresa demo.
+- Mapa de tabla/columna: Select MBSC_Code from MB_Soc.
 
-*Esempio*: “it-IT” rappresenta la lingua italiana, “en-US” rappresenta la lingua inglese in America.
+División:
 
- Società:
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: como para la empresa, se precompila.
+*Ejemplo*: “1” corresponde a la sede legal, “2” a la sede operativa de Milán.
+- Mapa de tabla/columna: select MBDP_Code from MB_Dep.
 
--        Campo: obbligatorio
+Identificador de cliente:
 
--        Tipo: string
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: Cualquier letra que ingresamos en los parámetros que luego corresponderá al campo cliente/proveedor. Por simplicidad, se recomienda “C”.
+*Ejemplo*: “C” corresponde a clientes.
 
--        Descrizione: è un campo precompilato in quanto prende i valori già all'interno di Fluentis, si possono vedere nell'angolo in alto a sinistra.
+Identificador de proveedor:
 
-*Esempio*: “1” corrisponde alla società demo
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: Cualquier letra que ingresamos en los parámetros que luego corresponderá al campo cliente/proveedor. Por simplicidad, se recomienda “F”.
+*Ejemplo*: “F” corresponde a proveedores.
 
--        Mapping table/colonna: Select MBSC_Code from MB_Soc
+Código de tipo de cuenta de clientes:
 
-Divisione:
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: cuenta maestra respecto a los clientes. Para verlo también desde Fluentis, simplemente vaya a Inicio > Parámetros > Administración > Parámetros de contabilidad. Haga doble clic en el año actual y a la derecha debería ver el “Tipo de cuenta”. 
+*Ejemplo*: “FIT” corresponde a clientes Italia.
 
--        Campo: obbligatorio
+Código de tipo de cuenta de proveedores:
 
--        Tipo: string
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: cuenta maestra respecto a los proveedores. Para verlo también desde Fluentis, simplemente vaya a Inicio > Parámetros > Administración > Parámetros de contabilidad. Haga doble clic en el año actual y a la derecha debería ver el “Tipo de cuenta”. 
+*Ejemplo*: “CIT” corresponde a proveedores Italia.
 
--        Descrizione: come per la società viene precompilato
+Grupo de clientes:
 
-*Esempio*: “1” corrisponde alla sede legale, “2” alla sede operativa di Milano
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: se pueden ver los códigos que están presentes desde Inicio > Contables > Plan de cuentas; en la primera máscara de visualización hay un código del grupo.
+*Ejemplo*: “1520” corresponde a Clientes Italia.
+- Mapa de tabla/columna: select MBGR_Gruppo from MB_GRUPP.
 
--        Mapping table/colonna: select MBDP_Code from MB_Dep
+Grupo de proveedores:
 
-Identificativo cliente:
+- Campo: obligatorio.
+- Tipo: cadena.
+- Descripción: se pueden ver los códigos que están presentes desde Inicio > Contables > Plan de cuentas; en la primera máscara de visualización hay un código del grupo.
+*Ejemplo*: “2506” corresponde a Proveedores Italia.
+- Mapa de tabla/columna: select MBGR_Gruppo from MB_GRUPPI.
 
--        Campo: obbligatorio
+Código de Tipo de descuento 1:
 
--        Tipo: string
+- Campo: obligatorio solo si se ingresa el descuento 1.
+- Tipo: cadena.
+- Descripción: Representa la categoría de descuento aplicada a la lista.
+*Ejemplo*: “C1” corresponde a descuento en cascada.
+- Mapa de tabla/columna: select MBST_TipSco from MB_Sconti.
 
--        Descrizione: Una qualsiasi lettera che inseriamo nei parametri che andrà poi a corrispondere al campo cliente/fornitore. Per semplicità è consigliato “C”
+Código de Tipo de descuento 2:
 
-*Esempio*: “C” corrisponde a clienti
+- Campo: obligatorio solo si se ingresa el descuento 2.
+- Tipo: cadena.
+- Descripción: Representa la categoría de descuento aplicada a la lista.
+*Ejemplo*: “3” corresponde a descuento comercial.
+- Mapa de tabla/columna: select MBST_TipSco from MB_Sconti.
 
-Identificativo fornitore:
+### Iniciar importación
 
--        Campo: obbligatorio
-
--        Tipo: string
-
--        Descrizione: Una qualsiasi lettera che inseriamo nei parametri che andrà poi a corrispondere al campo cliente/fornitore. Per semplicità è consigliato “F”
-
-*Esempio*: “F” corrisponde a fornitori
-
-Codice tipo conto clienti:
-
--        Campo: obbligatorio
-
--        Tipo: string
-
--        Descrizione: conto mastro rispetto ai clienti. Per poterlo vedere anche da Fluentis basta andare in Home**  > ** Parametri ** > ** Amministrazione**  > ** Parametri di contabilità. Fare doppio click sull'anno corrente e sulla destra si dovrebbe vedere il “Tipo conto”
-
-*Esempio*: “FIT” corrisponde a clienti Italia
-
-Codice tipo conto fornitori:
-
--        Campo: obbligatorio
-
--        Tipo: string
-
--        Descrizione: conto mastro rispetto ai fornitori. Per poterlo vedere anche da Fluentis basta andare in Home ** > ** Parametri ** > ** Amministrazione ** > ** Parametri di contabilità. Fare doppio click sull'anno corrente e sulla destra si dovrebbe vedere il “Tipo conto”
-
-*Esempio*: “CIT” corrisponde a fornitori Italia
-
-Gruppo clienti:
-
--        Campo: obbligatorio
-
--        Tipo: string
-
--        Descrizione: è possibile vedere i codici presenti da Home ** > ** Contabili ** > ** Piano dei conti, nella prima maschera di visualizzazione c'è un codice del gruppo.
-
-*Esempio*: “1520” corrisponde a Clienti Italia
-
--        Mapping table/colonna: select MBGR_Gruppo from MB_GRUPP
-
-Gruppo fornitori:
-
--        Campo: obbligatorio
-
--        Tipo: string
-
--        Descrizione: è possibile vedere i codici presenti da Home ** > ** Contabili ** > ** Piano dei conti, nella prima maschera di visualizzazione c'è un codice del gruppo.
-
-*Esempio*: “2506” corrisponde a Fornitori Italia
-
--        Mapping table/colonna: select MBGR_Gruppo from MB_GRUPPI
-
-Codice Tipo sconto 1:
-
--        Campo: obbligatorio solo se inserito lo sconto 1
-
--        Tipo: string
-
--        Descrizione: Rappresenta la categoria di sconto applicata al listino
-
-*Esempio*: “C1” corrisponde a sconto a cascata
-
--        Mapping table/colonna: select MBST_TipSco from MB_Sconti
-
-Codice Tipo sconto 2:
-
--        Campo: obbligatorio solo se inserito lo sconto 2
-
--        Tipo: string
-
--        Descrizione: Rappresenta la categoria di sconto applicata al listino
-
-*Esempio*: “3” corrisponde a sconto commerciale
-
--        Mapping table/colonna: select MBST_TipSco from MB_Sconti
-
-
-
-### Avviare importazione
-
-Una volta inseriti i dati, per avviare l'importazione, cliccare sul pulsante presente nel menu importazione, in alto a sinistra, chiamato anch'esso “Importazione” come in figura sotto.
+Una vez ingresados los datos, para iniciar la importación, haga clic en el botón presente en el menú de importación, en la parte superior izquierda, llamado también "Importación", como en la figura a continuación.
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image11.png)
 
+### Conclusiones - Inserción realizada
 
+Si todo va bien, no aparecerá ningún mensaje de error. Para una verificación adicional del éxito, consulte en la anagrafía de artículos (**Inicio > Artículos**) si están presentes los importados por el proveedor. De lo contrario, se mostrará en pantalla una pantalla de error que indicará qué parámetros y/o campos no son correctos. Para interpretar el tipo de error, consulte Consejos y advertencias útiles en el último párrafo.
 
-### Conclusioni – Inserimento avvenuto
+### Consejos y advertencias útiles
 
-Se tutto va a buon fine non comparirà nessun messaggio di errore. Per un ulteriore verifica di buon riuscita, andare a controllare nell'anagrafica articoli (**Home > Articoli**) se sono presenti quelli importati dal fornitore.  Altrimenti ci apparirà a video una schermata di errore la quale ci indicherà quali parametri e/o campi non sono corretti. Per interpretare il tipo di errore vedi Consigli e avvertenze utili nell'ultimo paragrafo. 
+**Formateo de Excel recomendado**:
 
+- Para una correcta importación, se recomienda encarecidamente formatear las columnas según el tipo indicado en la sección “Formateo de Excel” de cada campo. Por ejemplo, si el tipo del campo es decimal y se va a ingresar una moneda, formatee el campo como moneda. Esto se debe a que, si no se formatea la celda, Excel elimina los dígitos no significativos. Para insertar el formateo, siga los siguientes pasos:
 
+Primero, seleccione la columna deseada como en la figura a continuación:
 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image12.png)
 
+Luego, después de posicionarse con el puntero del mouse dentro de la columna, haga clic con el botón derecho del mouse.
 
-### Consigli e avvertenze utili
+![](/img/it-it/applications/bizlink/import-contacts-registry/image13.png)
 
-**Formattazione Excel consigliata**:
+Seleccione haciendo clic con el botón izquierdo ** > ** **Formato de celdas**...
 
--        Per una corretta importazione, è vivamente consigliato di formattare le colonne secondo il tipo indicato alla voce “Formattazione Excel” di ogni campo. Per esempio se il tipo del campo è decimal e in quel campo andrà inserito una valuta, formattare il campo appunto come valuta. Questo perché per esempio se non viene formattata la cella, Excel elimina le cifre non significative. Per inserire la formattazione seguire i seguenti passaggi:
+![](/img/it-it/applications/bizlink/import-contacts-registry/image14.png)
 
-Per prima cosa selezionare la colonna desiderata come in fig. sotto:
+En esta pantalla se podrá formatear la columna seleccionada. Según las indicaciones proporcionadas en "Inserción de campos", seleccione la categoría adecuada, con las especificaciones respectivas (por ejemplo, moneda, símbolo ninguno). La misma operación se puede realizar desde la hoja electrónica presente dentro de Fluentis.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image12.png) 
+**Atención:** El caso clásico se refiere a códigos que contienen ceros, aparentemente no significativos, por ejemplo, “001”. Si el campo está formateado como genérico o número, los ceros se descartarían; si se formatea como cadena, se mantendrán.
 
-Poi, dopo essersi posizionati con il puntatore del mouse all'interno della colonna, premere il tasto destro del mouse.
+**Mapa de tabla/columna**:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image13.png) 
+- Si en "Inserción de campos" está presente la entrada de mapa de tabla/columna, significa que el valor ingresado en el campo para la importación puede ya estar presente en la base de datos. También se han ingresado en los campos que serán ingresados desde cero para poder ver un ejemplo, si está presente, en la base de datos. Para visualizar los datos respectivos en la base de datos, basta con seguir los siguientes pasos, utilizando la clase de artículos y el respectivo mapeo como ejemplo:
 
-Selezionare premendo il tasto sinistro ** > ** **Formato celle**…
+select MBDC_Clase from MB_Classi (**\<-** este es el mapeo). Ejecutamos la consulta en "Microsoft SQL Server Management Studio" y obtenemos el siguiente resultado:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image14.png) 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image15.png)
 
-In questa schermata si potrà quindi formattare la colonna selezionata. In base alle indicazioni fornite nell' “Inserimento campi” selezionare l'opportuna categoria, con le relative specifiche (es. valuta, simbolo nessuno). La stessa identica cosa è possibile farla dal foglio elettronico presente all'interno di Fluentis.
+Visto así, no comunica nada; para entender su significado, reemplace después de la cláusula de selección, el símbolo “*” por el campo para componer la nueva consulta. En este caso, tendríamos select * from MB_Class, que sirve para seleccionar todo el contenido de la tabla; ahora ejecutamos.
 
-**Attenzione: **Il caso classico riguarda codici contenenti zeri, apparentemente, non significativi es. “001”. Se il campo è formattato generico o numero gli zeri sarebbero scartati, se formatta come stringa vengono invece mantenuti.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image16.png)
 
-**Mapping table/colonna**:
+Esto es útil porque, como se muestra en la figura, a través de la descripción (MBDC_Descr) es posible comprender qué representa el campo y verificar si lo que se ingresará está presente o no en la base de datos.
 
--        Se nell' “Inserimento campi” vi è presente la voce mapping table/colonna, significa che il valore inserito all'interno del campo per l'importazione, può essere già presente nel database. È stato inserito anche nei campi i quali verranno inseriti da zero per poter vedere magari un esempio, se presente, nel database. Per visualizzare i relativi dati presenti nella base di dati basterà seguire i seguenti passaggi, in cui verrà utilizzato come esempio la classe articoli e il relativo mapping: 
+Este procedimiento recién descrito es universal, es decir, aplica a cada campo.
 
-select MBDC_Classe from MB_Classi (**\<-** questo è il mapping). Eseguiamo la query in “Microsoft SQL server management studio” e otteniamo il seguente risultato:
+La misma representación se puede ver en Fluentis:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image15.png) 
+Desde la página de inicio de Fluentis, seleccione **Artículos > Artículos proveedores** (vea la figura a continuación).
 
-Visto così non comunica nulla, per capirne il significato sostituire dopo la clausola di select, il simbolo “*” al campo per comporre la nuova query. In questo caso avremmo quindi select * from MB_Class, che serve per selezionare l'intero contenuto della tabella, eseguiamo ora.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image17.png)
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image16.png)
+Luego, en la máscara de búsqueda que aparece, haga clic con el botón izquierdo del mouse en el triángulo al lado de artículos, lo que abre un menú desplegable donde se puede visualizar la clase de los artículos con la descripción correspondiente como en la figura.
 
-Questo è utile in quanto, come mostrato dalla figura, tramite la descrizione (MBDC_Descr) è possibile capire il campo cosa rappresenta e verificare se quello che si inserirà è presente o meno nella base di dati.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image18.png)
 
-Questa procedura appena descritta è universale, ossia vale per ogni campo.
+Esto es para la clase de artículos. Para otros campos, se podrá ejecutar el mismo procedimiento, pero solo en diferentes puntos.
 
-La stessa rappresentazione è possibile vederla in Fluentis:
+Por lo tanto, debemos insertar uno de los valores presentes, de lo contrario, la importación no tendrá éxito y nos comunicará un error. Esto se aplica a cada campo que tiene el mapeo de tabla/columna.
 
-Dalla home di Fluentis selezionare **Articoli > Articoli fornitori** (vedi fig. sotto).
+Si queremos agregar un campo con un mapeo que no está presente en la base de datos, debe ser ingresado ya sea mediante consulta o desde Fluentis; en este caso, la consulta de inserción se desaconseja, ya que es más complicada de componer en comparación con la visualización vista anteriormente. Por lo tanto, el procedimiento recomendado es la inserción desde Fluentis. También en el caso de la clase de artículos, desde artículos proveedor (figura anterior), haga clic derecho dentro del filtro de búsqueda de la clase artículo y seleccione "abrir formulario".
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image17.png)
+![](/img/it-it/applications/bizlink/import-contacts-registry/image19.png)
 
-Poi nella maschera di ricerca che appare cliccare con il pulsante sinistro del mouse sul triangolino affianco ad articoli, il quale apre una tendina dove è possibile visualizzare la classe degli articoli con relativa descrizione come in figura.
+En el formulario que se abrirá, haga clic en el botón de búsqueda para visualizar las clases de artículos presentes.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image18.png) 
+![](/img/neutral/common/search.png)
 
-Questo per la classe articoli. Per gli altri campi si potrà eseguire la stessa procedura solamente in punti diversi.
+Debajo de la última línea presente, hay una línea vacía. Esa es la utilizada para la inserción de nuevos valores.
 
-Noi dovremmo quindi inserire uno dei valori presenti altrimenti l'importazione non andrà a buon fine e ci comunicherà un errore. Questo per ogni campo di cui è presente il mapping table/colonna. 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image21.png)
 
-Se vogliamo invece aggiungere un campo con mapping non presente nel database andrà inserito o tramite query o da Fluentis, in questo caso la query di inserimento è sconsigliata in quanto più complicata da comporre rispetto alla visualizzazione vista in precedenza. La procedura consigliata è quindi l'inserimento da Fluentis. Sempre nel caso della classe articoli, da articoli fornitore (figura sopra) premere tasto destro all'interno del filtro di ricerca della classe articolo e selezionare “apri form”.
+Ahí deben escribirse los nuevos valores a insertar y una vez hecho, basta con presionar enter.
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image19.png)
+Este procedimiento es análogo para los demás campos; la única diferencia es dónde se encuentran los filtros de búsqueda en los que se debe hacer clic con el botón izquierdo para abrir el formulario.
 
-Nella form che si aprirà premere il pulsante ricerca per visualizzare le classi articolo presenti.
+**Errores**:
 
- ![](/img/neutral/common/search.png)
+- En caso de que la importación falle, como se mencionó anteriormente, aparecerá en pantalla un mensaje de error.
 
-Sotto l'ultima riga presente c'è una riga vuota. È quella usata per l'inserimento di nuovi valori.
+Si el error se cometió en la parte de Datos, es posible rastrear la línea que contiene el error, ya que habrá por ejemplo escrito “System.ArgumentException: Error importing row 4”. En este caso (ver figura a continuación), el error se encontrará en la línea 4, la cual, sin embargo, no es la línea efectiva que contiene el error. Para entender exactamente qué línea contiene el error, utilizando los números en la columna de la izquierda, debe sumarse 1. Por lo tanto:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image21.png) 
-
-Lì vanno scritti i nuovi valori da inserire e una volta fatto, basterà premere invio. 
-
- Questa procedura è analoga per gli altri campi, l'unica cosa che cambia è il dove si trovano i filtri di ricerca nei quali premere il tasto sinistro per aprire la form.
-
-**Errori:** 
-
--        In caso di importazione fallita, come detto in precedenza, apparirà a video una schermata di errore.
-
- Se l'errore è stato commesso nella parte Data è possibile risalire alla riga che contiene l'errore in quanto ci sarà per esempio scritto “System.ArgumentException: Error importing row 4”. In questo caso (vedi figura sotto), l'errore si troverà nella riga 4, la quale però non è l'effettiva riga contente l'errore. Per capire esattamente quale riga contenga l'errore, utilizzando i numeri nella colonna di sinistra, gli va sommato 1. Quindi: 
-
- Riga reale contente errore = Error importing rownum + 1
+Línea real conteniendo el error = Error importing rownum + 1.
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image22.png)
 
-   
+Para interpretar el error, en el mensaje del mismo, siga los siguientes pasos: en la misma línea que contiene el número de línea visto anteriormente, hay escrito **el objeto** al que se refiere, luego **el error** propiamente dicho y finalmente la **propiedad** relacionada donde se encontró el error. Siempre en el ejemplo arriba mencionado “Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.**PurchasePriceLists**not-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. En este caso, como se puede notar en la imagen anterior, la unidad de medida relacionada con el precio de compra de la lista generó el error porque es nula. De hecho, su inserción es obligatoria.
 
-Per interpretare l'errore, nel messaggio dello stesso, seguire i seguenti passaggi: nella stessa riga contenente il numero di riga visto in precedenza, c'è scritto **l'oggetto** a cui è riferito, poi **l'errore** vero e proprio e infine la **proprietà** relativa ad esso in cui è stato riscontrato l'errore. Sempre nell'esempio sopra riportato “Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.**PurchasePriceLists**not-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. In questo caso come si può notare dall'immagine sopra, l'unità di misura relativa al prezzo di acquisto listino ha generato l'errore in quanto essa è nulla. Infatti il suo inserimento è obbligatorio. 
+Si el error ocurrió en la parte de los parámetros, el mensaje será análogo; el método de resolución sigue siendo el mismo, por lo que se debe verificar la correcta inserción de la propiedad correspondiente.
 
- Se l'errore è stato commesso nella parte dei parametri il messaggio sarà analogo, il metodo di risoluzione rimane sempre il precedente quindi, in base alla proprietà verificare il corretto inserimento della stessa.
+**Atención**: Si se encuentra una línea completamente vacía, no se comunicará ningún error, pero la importación terminará ahí. Por ejemplo, si la primera línea (línea n.4) está vacía por algún motivo y debajo (a partir de la línea n.5 incluida) se encuentran las líneas pobladas, no se importará nada.
 
-**Attenzione**: Se viene trovata una riga completamente vuota, non verrà comunicato nessuno errore ma l'importazione terminerà lì. Per esempio se la prima riga (riga n.4) è vuota per qualche motivo e sotto (da riga n.5 compresa) si trovano le righe popolate, non sarà importato nulla.
+**Atención**: Si se inserta un anagrafía de 10 líneas y por ejemplo en la línea n. 7 ocurre un error, las primeras 6 líneas no habiendo causado problemas se han insertado. Si no se modifica ningún valor en las primeras 6 líneas (y si, por supuesto, el error ha sido corregido), al reiniciar la importación no habrá problemas, ni tampoco de duplicación, ya que primero se busca si el contacto ya está presente. Si se modifica incluso un solo valor, dicho contacto se insertará porque se verá como un nuevo contacto.
 
-**Attenzione**: Se viene inserito un'anagrafica di 10 righe per esempio e alla riga n. 7 si verifica un errore, le prime 6 righe non avendo causato problemi sono state inserite! Se non viene cambiato nessun valore nelle prime 6 righe (e se ovviamente l'errore è stato corretto), riavviando l'importazione non ci saranno problemi, neanche di duplicazione in quanto viene prima cercato se il contatto è già presente. Se viene cambiato anche solo un valore, tale contatto verrà inserito in quanto visto come un nuovo contatto.
+Finalmente, otro mensaje de error que puede aparecer es el siguiente.
 
-Infine un altro messaggio di errore che potrà capitare è il seguente.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image23.png)
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image23.png)
-
-Come si può notare dall'immagine sopra riportata, questa tipologia di messaggi sono più facili da interpretare in quanto viene messo il riferimento esatto della cella con relativo errore. In questo caso nella cella F:4 non è presente nessun valore. 
+Como se puede notar en la imagen anterior, este tipo de mensajes son más fáciles de interpretar, ya que se especifica la celda exacta con el error correspondiente. En este caso, en la celda F:4 no hay ningún valor.

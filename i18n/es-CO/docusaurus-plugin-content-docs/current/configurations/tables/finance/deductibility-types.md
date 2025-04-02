@@ -1,24 +1,22 @@
 ---
-title: Tipi deducibilità
+title: tipi deducibilità
 sidebar_position: 25
 ---
 
-La definizione della tabella consente all'utente di poter prevedere dei tipi di deducibilità fiscale da associare nella categoria cespite al tipo di ammortamento desiderato.
+La definición de la tabla permite al usuario prever tipos de deducibilidad fiscal para asociar en la categoría de activo al tipo de amortización deseado.
 
-La combo box che richiama questa tabella è nella [**scheda cespite**](/docs/finance-area/fixed-assets/fixed-assets-management/detail/)
+La caja combinada que llama a esta tabla se encuentra en la [**pestaña de activo (scheda cespite)**](/docs/finance-area/fixed-assets/fixed-assets-management/detail/).
 
+La primera sección, tipi deducibilità (Tipi deducibilità), contiene los siguientes campos:
 
-La prima sezione, Tipi deducibilità, contiene i seguenti campi:
+**codice**: código identificativo del tipo de deducibilidad.
 
-**Codice**: codice identificativo del tipo di deducibilità.
+**descrizione**: descripción del tipo de deducibilidad.
 
-**Descrizione**: descrizione del tipo di deducibilità.
+La segunda sección, Detalles (Dettagli), contiene los siguientes campos:
 
+**data inizio**: fecha de inicio del tipo de deducibilidad en el que se está ubicado.
 
-La seconda sezione, Dettagli, contiene i seguenti campi:
+**data fine**: fecha de fin del tipo de deducibilidad en el que se está ubicado.
 
-**Data inizio**: data di inizio del tipo di deducibilità su cui si è posizionati.
-
-**Data fine**: data fine del tipo di deducibilità su cui si è posizionati.
-
-**Perc. deduc.**: percentuale di deducibilità da applicare al tipo di deducibilità su cui si è posizionati.
+**perc. deduc.**: porcentaje de deducibilidad a aplicar al tipo de deducibilidad en el que se está ubicado.

@@ -1,77 +1,77 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo consente di registrare tutte le informazioni necessarie per garantire una corretta produzione e un’erogazione dei servizi in condizioni controllate.   
+El módulo permite registrar toda la información necesaria para garantizar una correcta producción y una entrega de servicios en condiciones controladas.   
 
 
-## I documenti gestiti
+## Documentos gestionados (I documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/data-sheets/data-sheet-management">Schede tecniche</Link>
-        <p>Le Schede tecniche catalogano tutte quelle informazioni che descrivono le caratteristiche dei prodotti associati come idonee ad un contratto, ad una specifica funzionale o ad un determinato impiego.</p>
-        <p>Le schede tecniche possono essere personalizzabili per Cliente.</p>
-        <p>Vengono gestite le revisioni e la rintracciabilità tra Schede tecniche desiderate.</p>
-        <p>A standard sono disponibili le reportistiche di: Scheda tecnica (per uso interno) e Scheda Prodotto (ad uso commerciale).</p>
+###     <Link to="/docs/quality/item-control/data-sheets/data-sheet-management">Hojas técnicas (Schede tecniche)</Link>
+        <p>Las Hojas técnicas catalogan toda la información que describe las características de los productos asociados como aptas para un contrato, una especificación funcional o un determinado uso.</p>
+        <p>Las hojas técnicas pueden ser personalizables para el Cliente.</p>
+        <p>Se gestionan las revisiones y la trazabilidad entre las Hojas técnicas deseadas.</p>
+        <p>Como estándar, están disponibles los informes de: Hoja técnica (para uso interno) y Hoja de Producto (para uso comercial).</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/control-plans/control-plan-management">Piani di controllo</Link>
-        <p>Nei Piani di controllo si catalogano tutte le prove pianificate, verifiche, misurazioni necessarie ed i valori da ottenere per garantire che materiali e prodotti associati rientrino nei limiti delle proprietà richieste.</p>
-        <p>Tramite i Piani di controllo è possibile predefinire i controlli da effettuare durante il ciclo di vita di un articolo: dai controlli in accettazione materiali, rientri da conto lavoro, ai controlli durante il ciclo produttivo di un articolo: prima, durante e successivamente alla creazione del prodotto.</p>
-        <p>I Piani di controllo, così come le Schede tecniche, possono essere personalizzabili per Cliente e/o Fornitore. Anche in questo documento vengono gestite le revisioni e la rintracciabilità tra Piani di controllo desiderati.</p>
-        <p>Ad ogni prova pianificata è possibile indicare: se la prova viene effettuata internamente o presso terzi, la categoria e lo strumento di misura da utilizzare, i tipi di valore richiesti (Si/No o Numerici), il valore nominale, i limiti inferiore e superiore specificabili in percentuale o in valore assoluto, il numero di misurazioni da effettuare e con quale frequenza.</p>
-        <p>Elenchiamo alcuni esempi di tipologie di Piani di controllo possibili: Controlli in accettazione, Controlli in accettazione per fornitori critici, Controlli di produzione, Collaudi finali.</p>
-        <p>A standard è disponibile la reportistica di: Piano di controllo.</p>
+###     <Link to="/docs/quality/item-control/control-plans/control-plan-management">Planes de control (Piani di controllo)</Link>
+        <p>En los Planes de control se catalogan todas las pruebas planificadas, verificaciones, mediciones necesarias y los valores a obtener para garantizar que los materiales y productos asociados se encuentren dentro de los límites de las propiedades requeridas.</p>
+        <p>A través de los Planes de control es posible predefinir los controles a realizar durante el ciclo de vida de un artículo: desde los controles en la aceptación de materiales, devoluciones de trabajo por cuenta, hasta los controles durante el ciclo productivo de un artículo: antes, durante y después de la creación del producto.</p>
+        <p>Los Planes de control, al igual que las Hojas técnicas, pueden ser personalizables para el Cliente y/o Proveedor. También en este documento se gestionan las revisiones y la trazabilidad entre los Planes de control deseados.</p>
+        <p>En cada prueba planificada es posible indicar: si la prueba se realiza internamente o en terceros, la categoría y el instrumento de medición a utilizar, los tipos de valor requeridos (Sí/No o Numéricos), el valor nominal, los límites inferior y superior especificables en porcentaje o en valor absoluto, el número de mediciones a realizar y con qué frecuencia.</p>
+        <p>Enumeramos algunos ejemplos de tipos de Planes de control posibles: Controles en aceptación, Controles en aceptación para proveedores críticos, Controles de producción, Pruebas finales.</p>
+        <p>Como estándar, está disponible el informe de: Plan de control.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/items-control/item-control-management">Controllo articoli</Link>
-        <p>I Controlli articolo permettono la registrazione delle misurazioni effettuate, dei valori rilevati e la conseguente indicazione della conformità o meno del materiale, semilavorato o prodotto controllato.</p>
-        <p>Elenchiamo i documenti dai quali è possibile effettuare dei controlli sugli articolo: Ricevimenti merce, D.D.T. e Fatture di acquisto, Dichiarazioni di produzione, Fasi ordini di produzione, Rientri da Conto lavoro e Movimentazioni di carico. Per ogni tipologia di documento è possibile specificare per quale dettaglio articolo si desidera attuare la verifica: Nessuno, per Lotto, per Serial number o per Unità di carico, il tipo di controllo da generare e da quale tipologia di Piano di controllo ricercare, in modo prioritario, le prove da effettuare.</p>
-        <p>È possibile impostare delle gradazioni di colore per indicare diversi stati dei controlli visibili successivamente nel filtro dei Controlli.</p>
-        <p>Inoltre è possibile impostare se il riconoscimento dell’esito negativo della prova viene proposto automaticamente dal sistema: al primo valore rilevato non conforme o sulla media aritmetica dei valori rilevati.</p>
-        <p>La gestione dell’inserimento e consultazione delle rilevazioni riportano: l’articolo controllato, il Piano di controllo di origine, l’esito complessivo delle rilevazioni, il dettaglio del documento di origine e, per ogni prova rilevata, tutte le informazioni ereditate dal Piano di controllo di origine, il valore e la media dei valori rilevati nella sessione Rilevazione multipla valori, l’esito, l’operatore che ha rilevato i valori e con quale strumento di misura. Dalla gestione è inoltre possibile effettuare le movimentazioni di trasferimento articoli dal magazzino di controllo qualità ai magazzini articoli conformi e non conformi.</p>
-        <p>Tramite la soluzione M.E.S., integrata in Fluentis, è possibile inserire le suddette informazioni richieste in modo diretto e semplificato.</p>
-        <p>A standard sono disponibili le reportistiche di: Elenco Controlli articolo per Articolo, Elenco Controlli articolo per Cliente/Fornitore, Elenco Controlli articolo per Tipo documento e Etichetta Articolo C e NC.</p>
+###     <Link to="/docs/quality/item-control/items-control/item-control-management">Control de artículos (Controllo articoli)</Link>
+        <p>Los Controles de artículos permiten registrar las mediciones realizadas, los valores registrados y la correspondiente indicación de conformidad o no del material, semielaborado o producto controlado.</p>
+        <p>Enumeramos los documentos desde los cuales es posible realizar controles sobre los artículos: Recepciones de mercancía, D.D.T. y Facturas de compra, Declaraciones de producción, Fases de órdenes de producción, Devoluciones de Cuenta de trabajo y Movimientos de carga. Para cada tipo de documento, es posible especificar para qué detalle de artículo se desea realizar la verificación: Ninguno, por Lote, por Número de serie o por Unidad de carga, el tipo de control a generar y desde qué tipo de Plan de control buscar, de manera prioritaria, las pruebas a realizar.</p>
+        <p>Es posible establecer gradaciones de color para indicar diferentes estados de los controles, visibles posteriormente en el filtro de Controles.</p>
+        <p>Además, es posible establecer si el reconocimiento del resultado negativo de la prueba es propuesto automáticamente por el sistema: al primer valor registrado no conforme o sobre la media aritmética de los valores registrados.</p>
+        <p>La gestión de la inserción y consulta de las mediciones reporta: el artículo controlado, el Plan de control de origen, el resultado global de las mediciones, el detalle del documento de origen y, para cada prueba registrada, toda la información heredada del Plan de control de origen, el valor y la media de los valores registrados en la sesión de Medición múltiple de valores, el resultado, el operador que registró los valores y con qué instrumento de medición. Desde la gestión también es posible realizar los movimientos de transferencia de artículos del almacén de control de calidad a los almacenes de artículos conformes y no conformes.</p>
+        <p>A través de la solución M.E.S., integrada en Fluentis, es posible ingresar la información requerida de manera directa y simplificada.</p>
+        <p>Como estándar, están disponibles los informes de: Lista de Controles de artículo por Artículo, Lista de Controles de artículo por Cliente/Proveedor, Lista de Controles de artículo por Tipo de documento y Etiqueta de Artículo C y NC.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management">Certificati di analisi</Link>
-        <p>I Certificati di Analisi attestano le avvenute verifiche sul prodotto, il rispetto dei limiti indicati nei Piani di controllo e nelle Schede tecniche correlate e accompagnano la vendita del prodotto.</p>
-        <p>A standard sono disponibili le reportistiche di: Certificato di analisi e Dichiarazione di conformità.</p>
+###     <Link to="/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management">Certificados de análisis (Certificati di analisi)</Link>
+        <p>Los Certificados de Análisis certifican las verificaciones realizadas sobre el producto, el cumplimiento de los límites indicados en los Planes de control y en las Hojas técnicas relacionadas, y acompañan la venta del producto.</p>
+        <p>Como estándar, están disponibles los informes de: Certificado de análisis y Declaración de conformidad.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Para empezar a utilizar (Per iniziare ad utilizzare)   
 
-le **Schede tecniche**:
-- devi definire un [*Tipo scheda tecnica*](/docs/configurations/tables/quality/item-control/data-sheets-type)   
-- devi definire un [*Tipo prova*](/docs/configurations/tables/quality/item-control/test-type) che verrà utilizzato nella sessione/tabulatore *Proprietà* delle *Schede tecniche*   
-- per agevolare la gestione delle *Schede tecniche* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione delle *Schede tecniche*   
-- devi inserire una nuova [*Scheda tecnica*](/docs/quality/item-control/data-sheets/data-sheet-management)   
+las **schede tecniche**:
+- debes definir un [*Tipo de hoja técnica*](/docs/configurations/tables/quality/item-control/data-sheets-type)   
+- debes definir un [*Tipo de prueba*](/docs/configurations/tables/quality/item-control/test-type) que será utilizado en la sesión/pestaña *Propiedades* de las *Hojas técnicas*   
+- para facilitar la gestión de las *Hojas técnicas*, establece los [*Parámetros de Control de artículos*](/docs/configurations/parameters/quality/item-control) en la sesión de las *Hojas técnicas*   
+- debes ingresar una nueva [*Hoja técnica*](/docs/quality/item-control/data-sheets/data-sheet-management)   
 
-i **Piani di controllo**:
-- devi definire un [*Tipo piano di controllo*](/docs/configurations/tables/quality/item-control/control-plan-type) e relativa *Numerazione*   
-- devi definire un [*Tipo prova*](/docs/configurations/tables/quality/item-control/test-type) che verrà utilizzato nella sessione/tabulatore *Prove pianificate* dei [*Piani di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
-- per agevolare la gestione dei *Piani di controllo* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Piani di controllo*   
-- devi inserire un nuovo [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
+los **piani di controllo**:
+- debes definir un [*Tipo de plan de control*](/docs/configurations/tables/quality/item-control/control-plan-type) y su correspondiente *Numeración*   
+- debes definir un [*Tipo de prueba*](/docs/configurations/tables/quality/item-control/test-type) que será utilizado en la sesión/pestaña *Pruebas planificadas* de los [*Planes de control*](/docs/quality/item-control/control-plans/control-plan-management)   
+- para facilitar la gestión de los *Planes de control*, establece los [*Parámetros de Control de artículos*](/docs/configurations/parameters/quality/item-control) en la sesión de los *Planes de control*   
+- debes ingresar un nuevo [*Plan de control*](/docs/quality/item-control/control-plans/control-plan-management)   
 
-i **Controlli articolo**:   
-- devi definire: un [*Tipo controllo articolo*](/docs/configurations/tables/quality/item-control/item-control-type) e uno [*Tipo esito*](/docs/configurations/tables/quality/general/result-type)   
-- devi definire un [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management) e associarlo ad un articolo nella sessione/tabulatore *Articoli associati* oppure ad una fase di un Ciclo di lavoro soggetta a Controllo qualità   
-- per agevolare la gestione dei *Controlli articolo* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione/tabulatore del *Controlli articolo*   
-- devi inserire un nuovo [*Controllo articolo*](/docs/quality/item-control/items-control/item-control-management) tramite la funzionalità di [*Importa articoli da controllare*](/docs/quality/item-control/items-control/item-control-import)    
+los **controlli articolo**:   
+- debes definir: un [*Tipo de control de artículo*](/docs/configurations/tables/quality/item-control/item-control-type) y un [*Tipo de resultado*](/docs/configurations/tables/quality/general/result-type)   
+- debes definir un [*Plan de control*](/docs/quality/item-control/control-plans/control-plan-management) y asociarlo a un artículo en la sesión/pestaña *Artículos asociados* o a una fase de un Ciclo de trabajo sujeta a Control de calidad   
+- para facilitar la gestión de los *Controles de artículo*, establece los [*Parámetros de Control de artículos*](/docs/configurations/parameters/quality/item-control) en la sesión/pestaña de los *Controles de artículo*   
+- debes ingresar un nuevo [*Control de artículo*](/docs/quality/item-control/items-control/item-control-management) a través de la funcionalidad de [*Importar artículos a controlar*](/docs/quality/item-control/items-control/item-control-import)    
 
-i **Certificati di analisi**:   
-- devi definire un [*Tipo certificati di analisi*](/docs/configurations/tables/quality/item-control/c-o-a-type) e relativa *Numerazione*   
-- per agevolare la gestione dei *Certificati di analisi* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Certificati di analisi*   
-- devi inserire un nuovo [*Certificato di analisi*](/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management)   
+los **certificati di analisi**:   
+- debes definir un [*Tipo de certificados de análisis*](/docs/configurations/tables/quality/item-control/c-o-a-type) y su correspondiente *Numeración*   
+- para facilitar la gestión de los *Certificados de análisis*, establece los [*Parámetros de Control de artículos*](/docs/configurations/parameters/quality/item-control) en la sesión de los *Certificados de análisis*   
+- debes ingresar un nuevo [*Certificado de análisis*](/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management)

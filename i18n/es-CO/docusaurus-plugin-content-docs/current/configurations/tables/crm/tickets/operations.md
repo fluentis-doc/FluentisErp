@@ -1,8 +1,8 @@
 ---
-title: Operazione ticket
+title: operazione ticket
 sidebar_position: 2
 ---
 
-Questa tabelle serve a configurare quali Operazioni siano possibili per i diversi [Tipi ticket](/docs/configurations/tables/crm/tickets/ticket-type).
-Nella prima griglia è possibile caratterizzare le operazioni associando un **Codice**, una **Descrizione** e una **Data fine validità**.        
-Nella seconda griglia è necessario indicare le tipologie ticket per le quali sarà disponibile l'operazione selezionata nella prima griglia.       
+Esta tabla sirve para configurar qué operaciones son posibles para los diferentes [Tipos de ticket (Tipi ticket)](/docs/configurations/tables/crm/tickets/ticket-type).  
+En la primera cuadrícula, es posible caracterizar las operaciones asociando un **codice**, una **descrizione** y una **data fine validità**.  
+En la segunda cuadrícula, es necesario indicar las tipologías de ticket para las cuales estará disponible la operación seleccionada en la primera cuadrícula.

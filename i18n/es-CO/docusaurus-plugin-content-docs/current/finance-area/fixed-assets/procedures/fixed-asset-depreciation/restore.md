@@ -1,19 +1,11 @@
 ---
-title: Ripristino
+title: ripristino
 sidebar_position: 3
 ---
 
-Eseguito il calcolo, le righe spariranno dalla griglia di ricerca della tab Ammortamento e il risultato sarà visibile nella scheda Ripristino all'interno della quale è possibile annullare l'operazione: tale possibilità è consentita finché gli ammortamenti non sono stati contabilizzati.
+Realizado el cálculo, las líneas desaparecerán de la cuadrícula de búsqueda de la pestaña Amortización y el resultado será visible en la ficha ripristino (Ripristino), dentro de la cual es posible anular la operación: esta posibilidad está permitida hasta que los amortizaciones hayan sido contabilizados.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
-| Ripristina | Esegue il ripristino del calcolo per le righe selezionate. |
-
-
-
-
-
-
+| Buscar (Ricerca) | Busca la lista de los cálculos de amortización realizados. |
+| ripristino (Ripristina) | Ejecuta la restauración del cálculo para las líneas seleccionadas. |

@@ -1,39 +1,38 @@
 ---
-title: Dimensione
+title: dimensione
 sidebar_position: 5
 ---
 
-La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Dimensione**
+El formulario se encuentra en la ruta: **Tablas > Control (Tabelle) > Contabilidad analítica (Controlling) > dimensione (Dimensione)**
 
 :::tip Nota
-La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+La tabla es de interés solo en las empresas con el indicador *controlling* activo.
 :::
 
-Il concetto di Dimensione è spiegabile come un criterio di analisi e coerente suddivisione di COSTI e RICAVI all’ interno dell’ azienda.
+El concepto de dimensione se puede explicar como un criterio de análisis y una división coherente de COSTOS y INGRESOS dentro de la empresa.
 
-E' possibile creare e movimentare molteplici dimensioni di analisi contemporaneamente.
+Es posible crear y mover múltiples dimensiones de análisis simultáneamente.
 
-![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/dimension.png)
+![Imagen](/img/it-it/configurations/tables/controlling/analytical-accounting/dimension.png)
 
-**ESEMPIO**: Tipicamente alla contabilità analitica viene associata la dimensione *INDUSTRIALE*, dove l’ azienda viene suddivisa nelle varie entità o funzioni aziendali, ovvero il CENTRO AZIENDALE AMMINISTRATIVO, IL CENTRO DIREZIONALE, IL CENTRO DEL COMMERCIALE e poi i CENTRI PRODUTTIVI. 
+**EJEMPLO**: Típicamente, se asocia a la contabilidad analítica la dimensión *INDUSTRIAL*, donde la empresa se divide en las distintas entidades o funciones empresariales, es decir, el CENTRO ADMINISTRATIVO DE LA EMPRESA, EL CENTRO DIRECCIONAL, EL CENTRO COMERCIAL y luego los CENTROS PRODUCTIVOS. 
 
-Relativamente a questa dimensione tutti i costi e ricavi aziendali vengono assegnati per arrivare ad un' analisi di FULL COSTING. 
+Relativamente a esta dimensión, todos los costos e ingresos de la empresa se asignan para llegar a un análisis de FULL COSTING. 
 
-Parallelamente abbiamo le *COMMESSE*, ovvero le aziende che lavorano su COMMESSA/PROGETTO; le commesse sono dimensioni parallele e quindi saranno collegati tutti i ricavi DIRETTI di commessa e saranno trasferiti dalla dimensione industriale i movimenti relativi ai centri ausiliari e generici (direzione, amministrazione ecc.). 
+Paralelamente, tenemos las *commesse*, es decir, las empresas que trabajan por COMISIÓN/PROYECTO; las comisiones son dimensiones paralelas y, por lo tanto, se conectarán todos los ingresos DIRECTOS de la comisión y se transferirán de la dimensión industrial los movimientos relacionados con los centros auxiliares y genéricos (dirección, administración, etc.). 
 
-Abbiamo poi la possibilità di definire dimensioni **specifiche** dove l’ azienda vuole identificare certi valori, separandoli dalle logiche normali, perché vuole tenere nota di alcuni tipi di costi. 
+Luego tenemos la posibilidad de definir dimensiones **específicas** donde la empresa quiere identificar ciertos valores, separándolos de las lógicas normales, porque quiere llevar un registro de algunos tipos de costos. 
 
-**ESEMPIO**: l’ azienda vuole tenere traccia delle varie FIERE a cui partecipa, che rappresentano un investimento importante e definisce una dimensione *FIERE* assegnando il centro FIERA MILANO (esempio) e attribuendo non solo il costo della  fiera alla dimensione industriale ma anche alla dimensione FIERA poiché vuole suddividere ed analizzare **parallelamente** un dato di quell’ entità specifica. Non imposta in questo caso il flag di quadratura obbligatoria perché vuole solo un ulteriore elemento di analisi.
+**EJEMPLO**: la empresa quiere hacer seguimiento de las diversas FERIAS a las que participa, que representan una inversión importante, y define una dimensión *FERIAS* asignando el centro FERIA MILANO (por ejemplo) y atribuyendo no solo el costo de la feria a la dimensión industrial, sino también a la dimensión FERIA, ya que desea dividir y analizar **paralelamente** un dato de esa entidad específica. No establece en este caso el indicador de cuadratura obligatoria porque solo quiere un elemento adicional de análisis.
 
-La dimensione dunque può essere vista anche come un' ETICHETTA che andiamo ad agganciare ai centri. 
+La dimensión, por lo tanto, también puede verse como una ETIQUETA que se adjunta a los centros. 
 
-Possiamo, attraverso i cost driver, ribaltare i dati (costi e profitti) da una dimensione all’ altra. 
+A través de los *cost drivers*, podemos trasladar los datos (costos y beneficios) de una dimensión a otra. 
 
-#### Campi specifici
+#### Campos específicos
 
-- Il flag **QUADRATURA OBBLIGATORIA** va ad identificare che questa deve avere quadratura con la contabilità. Non è più la contabilità generale che va quadrata al centro di costo/profitto o commessa ma va quadrata rispetto alla singola dimensione d’analisi che prevede quadratura. Il test di quadratura sarà effettuato solo se la causale contabile di movimentazione prevede a sua volta il blocco al salvataggio di movimenti non quadrati a livello di valorizzazione dei centri;
-- Il flag **COMMESSA** indica che la riga dell’analitica viene associata in via prioritaria al progetto per il quale il costo o ricavo è movimentato in modo diretto, e da questo progetto si deriverà un centro di costo da valorizzare, centro che potrà essere un codice generico uguale per tutti i progetti oppure magari un centro legato ad una caratteristica specifica del progetto selezionato;
-- Il flag **VINCOLO CONTO/CENTRO** va a dire che si vuole limitare quello che l’utente può fare quando registra in contabilità un centro di questa dimensione: dato che nel piano dei conti possiamo agganciare ad ogni sottoconto di costo e di ricavo uno o più centri aziendali, con questa opzione dico che quello che è inserito nel piano dei conti non può essere modificato dall’utente. In sostanza, un costo di produzione non mi può diventare un costo assegnato al centro direzionale. Il vincolo può essere legato al singolo centro, piuttosto che sulle categorie dei centri;
-- Il flag **ABILITA COMMESSA**, invece, serve per poter collegare una commessa di riferimento anche nelle righe della dimensione industriale/direzionale normale, per evitare di gestire due dimensioni differenti.
+- El indicador **CUADRATURA OBLIGATORIA** identifica que debe tener cuadratura con la contabilidad. Ya no es la contabilidad general la que debe cuadrar con el centro de costo/beneficio o comisión, sino que debe cuadrar con la dimensión de análisis individual que requiere cuadratura. La prueba de cuadratura se realizará solo si la causa contable de movimiento prevé a su vez el bloqueo del guardado de movimientos no cuadrados a nivel de valorización de los centros;  
+- El indicador **commessa** indica que la línea analítica se asocia prioritariamente al proyecto para el cual el costo o ingreso se mueve de forma directa, y de este proyecto se derivará un centro de costo a valorar, centro que puede ser un código genérico igual para todos los proyectos o quizás un centro vinculado a una característica específica del proyecto seleccionado;  
+- El indicador **VINCULO CUENTA/CENTRO** señala que se desea limitar lo que el usuario puede hacer al registrar en contabilidad un centro de esta dimensión: dado que en el plan de cuentas podemos agregar a cada subcuenta de costo y de ingreso uno o más centros empresariales, con esta opción indico que lo que está insertado en el plan de cuentas no puede ser modificado por el usuario. En esencia, un costo de producción no puede convertirse en un costo asignado al centro direccional. La restricción puede estar relacionada con el centro individual, en lugar de sobre las categorías de los centros;  
+- El indicador **abilita commessa**, por otro lado, sirve para poder vincular una comisión de referencia también en las líneas de la dimensión industrial/direccional normal, para evitar gestionar dos dimensiones diferentes.
 :::
-

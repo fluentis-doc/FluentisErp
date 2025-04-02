@@ -1,32 +1,26 @@
 ---
-title: Parametri di calcolo interessi moratori
+title: parametri di calcolo interessi moratori
 sidebar_position: 3
 ---
 
-Nella form sono presenti una lista di flag di selezione dei tipi di partite per le quali procedere al calcolo dei tassi di interesse, mentre in altro è presente un campo di filtro per codici di conto/sottoconto. Al di sotto di questo si deve impostare il tipo di tasso di default da applicare e i flag che guidano la logica di calcolo:
+En el formulario hay una lista de indicadores de selección de los tipos de partidas para las cuales proceder al cálculo de las tasas de interés, mientras que en la parte superior hay un campo de filtro para códigos de cuenta/subcuenta. Debajo de esto, se debe establecer el tipo de tasa de interés predeterminada a aplicar y los indicadores que guían la lógica de cálculo:
 
-**Calcola per le partite chiuse nel periodo**: la procedura andrà a verificare le partite che sono diventate chiuse all'interno del range di date impostate e solo per queste andrà a calcolare il valore degli interessi, quindi per i pagamenti parziali non sarà conteggiato alcun interesse;
+**calcola per le partite chiuse nel periodo**: el procedimiento verificará las partidas que se han cerrado dentro del rango de fechas establecido y solo para estas calculará el valor de los intereses, por lo tanto, para los pagos parciales no se contabilizará ningún interés;  
 
-**Calcola per i pagamenti del periodo**: la procedura andrà a individuare i pagamenti registrati all'interno del range di date e su questi importi andrà a calcolare il valore degli interessi relativi: questa impostazione è quella consigliata.
+**Calcular por los pagos del período (Calcola per i pagamenti del periodo)**: el procedimiento identificará los pagos registrados dentro del rango de fechas y sobre estos importes calculará el valor de los intereses correspondientes: esta configuración es la recomendada.  
 
-In caso non sia stato inserito nessun flag il calcolo andrà a valorizzare gli interessi relativi ai giorni di ritardo presenti nel range di date impostate.
+En caso de que no se haya marcado ningún indicador, el cálculo valorizará los intereses relacionados con los días de retraso dentro del rango de fechas establecidos.  
 
-**Tipo documento** e **tipo pagamento**: sono ulteriori filtri di individuazione delle partite sulle quali eseguire il calcolo interessi.
+**tipo documento** y **tipo pagamento**: son filtros adicionales para identificar las partidas sobre las cuales realizar el cálculo de intereses.  
 
-Il radio button successivo consente di definire il tipo di tasso da utilizzare nel calcolo interessi:
+El siguiente botón de opción permite definir el tipo de tasa a utilizar en el cálculo de intereses:  
 
-- calcolare gli interessi solo sui clienti per i quali è stato inserito in anagrafica una data accordo;
+- calcular los intereses solo en los clientes para los cuales se ha registrado en la base de datos una fecha de acuerdo;  
 
-- calcolare gli interessi sui clienti con un accordo secondo le impostazioni di anagrafica, il tasso di default inserito in alto per tutti gli altri;
+- calcular los intereses en los clientes con un acuerdo según las configuraciones de la base de datos, la tasa de interés predeterminada ingresada en la parte superior para todos los demás;  
 
-- calcolare gli interessi per tutti i clienti secondo il tasso d'interesse di default inserito in alto.
+- calcular los intereses para todos los clientes según la tasa de interés predeterminada ingresada en la parte superior.  
 
-Un ultimo flag, **Escludi effetti emessi**, già impostato di default, prevede l'esclusione dagli interessi delle partite pagate con effetti del modulo portafoglio effetti: tale impostazione serve, in particolare, per i tipi tasso sui quali è stato impostato il calcolo anche a sconto, in quanto la chiusura della partita cliente viene solitamente rilevata direttamente all'emissione della ricevuta bancaria/effetto cambiario.
+Un último indicador, **escludi effetti emessi**, ya configurado por defecto, prevé la exclusión de los intereses de las partidas pagadas con efectos del módulo de cartera de efectos: esta configuración es útil, en particular, para los tipos de tasa en los cuales se ha establecido el cálculo también a descuento, ya que el cierre de la partida del cliente suele detectarse directamente en la emisión del recibo bancario/efecto cambiario.  
 
-La procedura di calcolo si avvia con il tasto **Calcolo interessi**, nella ribbon bar.
-
-
-
-
-
-
+El procedimiento de cálculo se inicia con el botón **calcolo interessi**, en la barra de ribbon.

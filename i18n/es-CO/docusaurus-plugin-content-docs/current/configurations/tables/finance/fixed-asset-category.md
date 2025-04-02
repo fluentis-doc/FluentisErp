@@ -1,106 +1,106 @@
 ---
-title: Categoria cespite
+title: categoria cespite
 sidebar_position: 5
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está afectada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se quiera configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-All'interno di questa tabella si codificano le categorie dei cespiti gestiti nella società. 
+Dentro de esta tabla se codifican las categorías de los activos gestionados en la empresa. 
 
-### Tabella superiore 
+### Tabla superior
 
-**Categoria**: codice alfanumerico.
+**Categoría**: código alfanumérico.
 
-**Descrizione categoria**: descrizione della categoria.
+**descrizione categoria**: descripción de la categoría.
 
-**Conto**: il conto patrimoniale dell'immobilizzazione.
+**Cuenta**: la cuenta patrimonial de la inmovilización.
 
-**Sottoconto**: il sottoconto patrimoniale dell'immobilizzazione.
+**sottoconto**: la subcuenta patrimonial de la inmovilización.
 
-**Descrizione**: descrizione del sottoconto patrimoniale dell'immobilizzazione.
+**descrizione**: descripción de la subcuenta patrimonial de la inmovilización.
 
-**Mat/Imm.**: indicazione della tipologia Materiale o Immateriale del bene.
+**Mat/Immaterial (Mat/Imm.)**: indicación del tipo Material o Inmaterial del bien.
 
-**Massimale amm.**: importo massimo dell'ammortamento raggiungibile per ogni cespite della categoria.
+**Máximo de amortización (Massimale amm.)**: importe máximo de la amortización alcanzable por cada activo de la categoría.
 
-**Perc. amm.**: la percentuale massima del valore del cespite che potrà essere ammortizzata.
+**perc. amm.**: la porcentaje máxima del valor del activo que podrá ser amortizado.
 
-**Oper. incrementali**: se il flag non è impostato, così come di default, ogni riga di incremento del valore del cespite sarà gestita con un dettaglio d'ammortamento separato e autonomo Se il flag è impostato, al contrario, ogni incremento sarà attribuito alla riga d'acquisto iniziale, andando ad incrementare sempre il valore iniziale alla sua data d'origine.
+**oper. incrementali**: si el indicador no está configurado, tal como por defecto, cada línea de incremento del valor del activo se gestionará con un detalle de amortización separado y autónomo. Si el indicador está configurado, por el contrario, cada incremento se atribuirá a la línea de compra inicial, incrementando siempre el valor inicial en su fecha de origen.
 
-**Limite amm. totale**: quota limite per l'applicazione dell'ammortamento totale al 100% nell'anno d'acquisto.
+**Límite de amortización total (Limite amm. totale)**: cuota límite para la aplicación de la amortización total del 100% en el año de compra.
 
-**Rivalutazioni**: flag di gestione dei dettagli delle rivalutazioni.
+**Revaluaciones (Rivalutazioni)**: indicador de gestión de los detalles de las revaluaciones.
 
-**Cod. bilancio**: codice di bilancio per la stampa del prospetto delle rivalutazioni.
+**Código contable (Cod. bilancio)**: código de balance para la impresión del informe de revaluaciones.
 
-**Gestione extra-contabile**: attiva la gestione dei dati extracontabili del cespite: questa prevede una duplicazione dei valori patrimoniali contabili al fine di applicare una logica d'ammortamento extracontabile separata
+**gestione extra-contabile**: activa la gestión de los datos extracontables del activo; esto implica una duplicación de los valores patrimoniales contables para aplicar una lógica de amortización extracontable separada.
 
-**Giorni**: Attivando questo flag il calcolo della quota di ammortamento terrà conto dei giorni esatti di possesso del bene nell'anno in corso, anzichè riferirsi alla logica standard che calcola la quota intera indipendentemente dalla data di acquisto, eventualmente dimezzandola il primo anno se il flag *Amm. Primo anno* presente nella seconda griglia è stato attivato (vedi sotto).
+**giorni**: Al activar este indicador, el cálculo de la cuota de amortización tendrá en cuenta los días exactos de posesión del bien en el año en curso, en lugar de referirse a la lógica estándar que calcula la cuota completa independientemente de la fecha de compra, reduciéndola a la mitad en el primer año si se ha activado el indicador *Amortización primer año (Amm. Primo anno)* presente en la segunda cuadrícula (ver abajo).
 
-**Numerazione**: (Facoltativo) Permette di definire una numerazione delle schede cespite specifica per ogni singola categoria. Il campo si collega all'[**apposita tabella**](/docs/configurations/tables/fluentis-numerations) dove definire il numeratore. Se non viene definito, di default, continua ad essere utilizzata la numerazione generale dei cespiti eventualmente collegata al precodice (oppure unica).
+**numerazione**: (Opcional) Permite definir una numeración de las fichas de activo específica para cada categoría. El campo se conecta a la [**tabla correspondiente**](/docs/configurations/tables/fluentis-numerations) donde se define el numerador. Si no se define, por defecto, se utiliza la numeración general de los activos, eventualmente vinculada al precódigo (o única).
 
-### Seconda Tabella
+### Segunda Tabla
 
-La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento applicabili alla categoria superiore selezionata.
+La segunda sección está dedicada a la configuración de los detalles de la amortización aplicables a la categoría superior seleccionada.
 
-**Tipo amm.**: selezionare la tipologia di ammortamento fra ammortamento ordinario, ammortamento anticipato e ammortamento decelerato, quest'ultimo normalmente non utilizzato.
+**tipo amm.**: seleccione el tipo de amortización entre amortización ordinaria, amortización anticipada y amortización acelerada, esta última normalmente no utilizada.
 
-**Conto**: conto di costo sul quale rilevare l'ammortamento periodico.
+**Cuenta**: cuenta de costo en la que se registrará la amortización periódica.
 
-**Sottoconto**: sottoconto di costo sul quale rilevare l'ammortamento periodico.
+**sottoconto**: subcuenta de costo en la que se registrará la amortización periódica.
 
-**Descrizione conto**: descrizione sottoconto di costo.
+**descrizione conto**: descripción de la subcuenta de costo.
 
-**Fondo conto**: conto di fondo sul quale accantonare l'ammortamento periodico.
+**fondo conto**: cuenta de fondo en la que se acumulará la amortización periódica.
 
-**Fondo sottoconto**: sottoconto di fondo sul quale accantonare l'ammortamento periodico che potrebbe essere anche lo stesso valore patrimoniale attivo per stornare direttamente da questo il valore.
+**fondo sottoconto**: subcuenta de fondo donde se acumulará la amortización periódica. Esta podría ser también el mismo valor patrimonial activo para deducir directamente de él.
 
-**Descrizione conto**: descrizione sottoconto di fondo.
+**descrizione conto**: descripción de la subcuenta de fondo.
 
-**Escludi**: il flag consente di escludere dal calcolo automatico degli ammortamenti il tipo ammortamento selezionato.
+**escludi**: el indicador permite excluir del cálculo automático de las amortizaciones el tipo de amortización seleccionado.
 
-**Percentuale**: la percentuale d'ammortamento da applicare per il tipo d'ammortamento impostato.
+**percentuale**: la porcentaje de amortización a aplicar para el tipo de amortización configurado.
 
-**N. anno**: si attiva solo in corrispondenza degli ammortamenti anticipati, nel quale vanno inseriti i 3 anni di applicazione. In riferimento a questo valore, va ricordato che per i cespiti usati il numero di anni d'applicazione è impostato automaticamente sul solo anno d'acquisto.
+**n. anno**: se activa solo en correspondencia de los amortizaciones anticipados, donde deben ingresarse los 3 años de aplicación. En relación con este valor, debe recordarse que para los activos usados, el número de años de aplicación se establece automáticamente para solo el año de compra.
 
-**Amm. primo anno**: viene proposto automaticamente per tutte le categorie materiali, andrà a dimezzare la percentuale d'ammortamento nell'anno di inizio attività del cespite.
+**Amortización primer año (Amm. primo anno)**: se propone automáticamente para todas las categorías materiales y se reducirá a la mitad el porcentaje de amortización en el año de inicio de la actividad del activo.
 
-**Fiscale**: potrà essere impostato per le righe di ammortamento anticipato per gestirlo come ammortamento fiscale non contabilizzabile.
+**fiscale**: podrá establecerse para las líneas de amortización anticipada para gestionarlo como amortización fiscal no contabilizable.
 
-**Tipo deducibilità**: consente di assegnare al tipo di ammortamento un codice di deducibilità ai fini fiscali.
+**Tipo de deducibilidad (Tipo deducibilità)**: permite asignar al tipo de amortización un código de deducibilidad a efectos fiscales.
 
-**Descr. deducibilità**: descrizione del tipo di deducibilità.
+**Descripción de la deducibilidad (Descr. deducibilità)**: descripción del tipo de deducibilidad.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-**Cerca nella tabella superiore**: permette di effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione.  
-**Inserisce nella tabella superiore**: permette di inserire una nuova categoria cespite.  
-**Inserisce nella tabella dettaglio**: permette di inserire il dettaglio della tabella superiore selezionata.  
-**Inserisce nella tabella Cdc**: permette di inserire i Cdc della tabella superiore selezionata. OBSOLETO  
-**Cancella righe selezionate**: permette di effettuare la cancellazione delle righe selezionate  (categoria cespite).  
-**Cancella righe selezionate dalla tabella inferiore**: permette di effettuare la cancellazione delle righe selezionate di tabella inferiore ( dettaglio del tipo ammortamento).  
-**Cancella righe selezionate dalla tabella Cdc**: permette di effettuare la cancellazione delle righe selezionate di tabella centri di costo. OBSOLETO  
-**Salva**: permette di salvare le modifiche.  
+**cerca nella tabella superiore**: permite realizar la búsqueda en la tabla superior a través de los campos de filtro de categoría y descripción.  
+**Agregar en la tabla superior (Inserisce nella tabella superiore)**: permite agregar una nueva categoría de activo.  
+**Agregar en la tabla de detalles (Inserisce nella tabella dettaglio)**: permite agregar el detalle de la tabla superior seleccionada.  
+**Agregar en la tabla Cdc (Inserisce nella tabella Cdc)**: permite agregar los Cdc de la tabla superior seleccionada. OBSOLETO  
+**cancella righe selezionate**: permite eliminar las líneas seleccionadas (categoría de activo).  
+**cancella righe selezionate dalla tabella inferiore**: permite eliminar las líneas seleccionadas de la tabla inferior (detalle del tipo de amortización).  
+**Eliminar líneas seleccionadas de la tabla Cdc (Cancella righe selezionate dalla tabella Cdc)**: permite eliminar las líneas seleccionadas de la tabla centros de costo. OBSOLETO  
+**salva**: permite guardar los cambios.
 
-### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO IN TABELLA SOCIETA', SENZA IL PARAMETRO DI USO CENTRI CONTABILI)
+### CUADRÍCULA DE CENTROS DE COSTO (ELIMINADA SI ESTÁ ACTIVO EL MÓDULO DE CONTROL COMPLETO EN LA TABLA DE EMPRESAS, SIN EL PARÁMETRO DE USO DE CENTROS CONTABLES)
 
 :::note NOTA
-Nonostante la gestione dei centri di costo per i cespiti possa essere elaborata con delle logiche più sofisticate di gestione dell'ammortamento oggettivo, utili alle esigenze di un controllo di gestione approfondito, è comunque possibile agganciare un centro di costo specifico per il singolo cespite, **nella tab Dettaglio**, (oppure direttamente sulla categoria cespite ma in tal caso occorre disattivare il Flag Gestione controlling nell'anagrafica della società in uso) da valorizzare con la quota annuale calcolata ai fini fiscali e contabili.
+A pesar de que la gestión de centros de costo para los activos puede elaborarse con lógicas más sofisticadas de gestión de amortización objetiva, útiles para las necesidades de un control de gestión profundo, todavía es posible vincular un centro de costo específico para el activo individual, **dettaglio**, (o directamente en la categoría de activo, pero en ese caso es necesario desactivar el Indicador de Gestión de control en el registro de la empresa en uso) para valorizar con la cuota anual calculada a efectos fiscales y contables.
 :::
 
-All'interno della scheda cespite nella griglia centri di costo della tab **Operazioni patrimoniali** è possibile assegnare, in riferimento alla **singola riga d'ammortamento**, la valorizzazione percentuale di default a centro di costo per i cespiti collegati alla categoria. Tale impostazione è secondaria rispetto all'assegnazione dei centri di costo all'interno della singola anagrafica cespite (quella della tab Dettaglio).
+Dentro de la ficha del activo en la cuadrícula de centros de costo de la pestaña **operazioni patrimoniali** es posible asignar, en referencia a **cada línea de amortización**, la valorización porcentual por defecto a centro de costo para los activos vinculados a la categoría. Esta configuración es secundaria respecto a la asignación de los centros de costo dentro del registro individual del activo (el de la pestaña Detalle).
 
-**CDC**: centro di costo a cui assegnare la valorizzazione dei cespiti appartenenti alla categoria.
+**CDC**: centro de costo al que asignar la valorización de los activos pertenecientes a la categoría.
 
-**Descrizione**: Descrizione centro di costo.
+**Descripción**: descripción del centro de costo.
 
-**Percentuale**: Impostazione della percentuale di valorizzazione al centro di costo.
+**Porcentaje**: configuración del porcentaje de valorización al centro de costo.
 
-### **VIDEO TUTORIALS**
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE CESPITI**](/docs/video/finance/intro)
+### **VIDEOS TUTORIALES (VIDEO TUTORIALS)**
+:::important Ver También
+[**VIDEOS TUTORIALES SOBRE LAS TABLAS DE ACTIVOS**](/docs/video/finance/intro)
 :::

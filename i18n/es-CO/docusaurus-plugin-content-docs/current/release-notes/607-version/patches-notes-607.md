@@ -1,363 +1,350 @@
 ---
-title: Patch notes Versione 607
+title: Notas de actualización versión 607 (Patch notes Versione 607)
 sidebar_position: 2
 ---
 
-### Patch 607.1-0022: 22/06/2023  
+### Patch 607.1-0022: 22/06/2023
 
-> - SH: ottimizzazione apertura dashboard in modalità di progettazione (#TT01766/23)
-> - FI: il numero del documento e la data del documento vengono proposti per la chiusura del RO IVA
-> - FI: revisione gestione righe automatica di vendita cespiti in registrazioni in valuta (#TT01832/23)
-> - BZ: Import prezzi articoli fornitore: Fix Schema excel
-> - Risolto bug nella creazione di script sulle referenze
-> - WM: Corretto bug in schedulazione generale nel caso in cui la distinta base fosse composta da migliaia di articoli (#TT01827/23)
-> - SH: Risoluzione del problema di impossibilità di salvataggio Workflow a seguito della comparsa dell’errore di Codici non univoci (#TT01869/23)
-> - SH: Inserendo, tramite Form Navigator, un Extra Data contenente una data in testata documento, il valore viene riportato nel tab Extra Data anche inserendo la data odierna (#TT01834/23)
-> - FI: revisione del filtraggio per società nella dichiarazione croata OPZ (#TT01606/23)
-> - SH: modificata traduzione inglese dell’unità di misura da UM a MU
-> - CRM: la descrizione attività è mantenuta dopo la chiusura e riapertura del contatto crm (#TT01210/23)
-> - SD: La procedura di Creazione Ordini fornitore dalla Ricerca Ordini cliente considera gli articoli solo se codificati (#TT01884/23)
-> - FI: ammortamento cespiti incrementali, revisione ricerca per raggruppamento (#TT01848/23)
-> - FI: rollback contabilizzazione insoluti con fattura di rivalsa spese collegata, revisione cancellazione fattura, se non stampata/contabilizzata (#TT01434/23)
-> - SCM: La Data consegna degli ordini fornitori riporta la Data di arrivo stimata della RDA collegata (#TT01580/23)
-> - PJ: Ottimizzazione della possibilità di modificare da Form navigator le label della testata Interventi (#TT01799/23)
-> - CRM: Il Riferimento ticket nei Parametri CRM non è obbligatorio e se cancellato non esce l’errore (#TT01825/23)
+> - SH: optimización de la apertura del panel de control en modo de diseño (#TT01766/23)  
+> - FI: se proponen el número y la fecha del documento para el cierre del RO IVA  
+> - FI: revisión de la gestión automática de líneas de venta de activos en registros en moneda (#TT01832/23)  
+> - BZ: Importación de precios de artículos del proveedor: corrección de esquema de Excel  
+> - Se solucionó un error en la creación de scripts sobre referencias  
+> - WM: corrección de error en la programación general en el caso en que la línea de materiales estuviera compuesta por miles de artículos (#TT01827/23)  
+> - SH: solución del problema de imposibilidad de guardar flujos de trabajo tras la aparición del error de códigos no únicos (#TT01869/23)  
+> - SH: al insertar, a través de Form Navigator, un Extra Data que contiene una fecha en el encabezado del documento, el valor se refleja en la pestaña de Extra Data, incluso al insertar la fecha actual (#TT01834/23)  
+> - FI: revisión del filtrado por empresa en la declaración croata OPZ (#TT01606/23)  
+> - SH: se cambió la traducción al inglés de la unidad de medida de UM a MU  
+> - CRM: la descripción de la actividad se mantiene después del cierre y reapertura del contacto CRM (#TT01210/23)  
+> - SD: el procedimiento de Creación de Órdenes de proveedor desde la Búsqueda de Órdenes de cliente considera los artículos solo si están codificados (#TT01884/23)  
+> - FI: amortización de activos incrementales, revisión de la búsqueda agrupada (#TT01848/23)  
+> - FI: reversión de la contabilidad de deudas con factura de gastos vinculada, revisión de la eliminación de la factura, si no está impresa/contabilizada (#TT01434/23)  
+> - SCM: la Fecha de entrega de los pedidos de proveedores refleja la Fecha de llegada estimada de la RDA vinculada (#TT01580/23)  
+> - PJ: optimización de la posibilidad de modificar desde Form Navigator las etiquetas del encabezado de Intervenciones (#TT01799/23)  
+> - CRM: la referencia del ticket en los Parámetros de CRM no es obligatoria y si se elimina, no se genera error (#TT01825/23)  
 
-### Patch 607.1-0021: 12/06/2023  
+### Patch 607.1-0021: 12/06/2023
 
-> - Aggiornamento fil Sepa per bonifici francesi (#TT00940/23)
-> - SD: Il progetto creato da ordine di vendita ha adesso quantità residua progetto = quantità ordine. Correzioni sulla generazione dei messaggi di avvertimento (#TT01548/23)
-> - Risolto il problema con il generatore Xaml e migliorato l'editor di script all'interno del contesto di Blockly
-> - WM: Corretto bug nella visualizzazione degli articoli in analisi disponibilità nel caso in cui fosse attivo il flag distinta base (#TT01736/23)
-> - WMS: Ora si puo creare un profilo nelle form WMS utilizzando anche referenze e collezioni (#TT01487/23)
-> - SD: Risoluzione problema nell'apertura dei piani di carico (#TT01754/23)
-> - Risolto il bug di creazione script di tipo evento per riferimenti e collezioni
-> - SD: Ottimizzazione dell'Help di filtro Articoli, tab Listini: i risultati vengono visualizzati anche se tutti i filtri vengono sbiancati (#TT01701/23)
-> - WM: In analisi disponibilità quando viene attivato il flag distinta base vengono visualizzati tutti i componenti di quell'articolo anche se non movimentati o con giacenza pari a zero  (#TT01707/23)
-> - SCM: La Valorizzazione rientri riporta in Fattura il Numero documento inserito nella procedura (#TT01362/23)
-> - SH: Risolto problema che in anteprima di stampa non caricava i bottoni di imposta pagina e disegno alla prima anteprima di stampa (#TT01719/22)
-> - SH: Aggiunta possibilità di aggiungere script client e server per gli oggetti personalizzati
-> - BI: Risolto errore generato dalla chiamata di un algoritmo custom da cruscotto (#TT01767/23)
-> - MES: Corretto bug nelle dichiarazioni di produzione che si verificava quando si provava a registrare più una riga contemporaneamente (es. apertura, avanzamento e chiusura) (#TT01747/23)
-> - WMS: Ora, quando si esegue lo Sposta UDC dalle form CARICO/SPOSTA UDC e CARICO/SPOSTA UDC MULTIPLO, viene settato correttamente il dato dell'UDC nei movimenti di magazzino (#TT01745/23)
-> - MPS/SCM: risolto errore di clonazione degli oggetti custom (#TT01768/23)
-> - FI: revisione del caricamento del widget all'apertura in modifica delle registrazioni contabili (#TT01795/23)
-> - SD: Risolto errore nel cambio stato da In errore ad Annullato di un Ordine cliente Peppol (#TT01731/23)
+> - Actualización del filtro Sepa para transferencias francesas (#TT00940/23)  
+> - SD: el proyecto creado a partir de un pedido de venta ahora tiene cantidad residual del proyecto = cantidad del pedido. Correcciones en la generación de mensajes de advertencia (#TT01548/23)  
+> - Se solucionó el problema con el generador XAML y se mejoró el editor de scripts dentro del contexto de Blockly  
+> - WM: corrección de error en la visualización de los artículos en el análisis de disponibilidad en caso de que se activa la bandera de línea de materiales (#TT01736/23)  
+> - WMS: ahora se puede crear un perfil en los formularios WMS utilizando también referencias y colecciones (#TT01487/23)  
+> - SD: resolución de problemas en la apertura de los planes de carga (#TT01754/23)  
+> - Se solucionó el error de creación de scripts de tipo evento para referencias y colecciones  
+> - SD: optimización de la ayuda para filtrar Artículos, pestaña de Listas: los resultados se visualizan incluso si todos los filtros se eliminan (#TT01701/23)  
+> - WM: en el análisis de disponibilidad, cuando se activa la bandera de línea de materiales, se visualizan todos los componentes de ese artículo, incluso si no se han movido o tienen saldo cero (#TT01707/23)  
+> - SCM: la valorización de devoluciones refleja en la factura el número de documento ingresado en el procedimiento (#TT01362/23)  
+> - SH: se resolvió el problema de que en la vista previa de impresión no se cargaban los botones de configuración de página y diseño en la primera vista previa de impresión (#TT01719/22)  
+> - SH: se agregó la posibilidad de añadir scripts de cliente y servidor para los objetos personalizados  
+> - BI: se solucionó un error generado por la llamada a un algoritmo personalizado desde el panel de control (#TT01767/23)  
+> - MES: corrección de error en las declaraciones de producción que ocurría al intentar registrar más de una línea simultáneamente (ej. apertura, avance y cierre) (#TT01747/23)  
+> - WMS: ahora, al ejecutar el movimiento UDC desde los formularios CARGA/TRANSFERENCIA UDC y CARGA/TRANSFERENCIA UDC MÚLTIPLE, se establece correctamente el dato del UDC en los movimientos de almacén (#TT01745/23)  
+> - MPS/SCM: se solucionó el error de clonación de objetos personalizados (#TT01768/23)  
+> - FI: revisión de la carga del widget al abrir en modo de edición los registros contables (#TT01795/23)  
+> - SD: se resolvió un error en el cambio de estado de "En error" a "Anulado" de un pedido de cliente Peppol (#TT01731/23)  
 
-### Patch 607.1-0020: 05/06/2023  
+### Patch 607.1-0020: 05/06/2023
 
-> - SD: Non è possibile effettuare lo storno per i DDT fatturati (#TT01657/23)
-> - MES: Segnalazioni: Ripristino dello stato di evasione di un ordine di produzione se viene modificata una segnalazione collegata. (#TT01485/23)
-> - FI: corretto bug nella procedura di creazione modelli intrastat Creazione automatica 8lettura delle fatture che permetteva di ricercare fatture di mesi diversi rispetto a quello del modello in gestione (#TT01568/23)
-> - CO: chiusure infrannuali: inserito messaggio "l'operazione è stata annullata dall'utente" (#TT01694/23)
-> - MPS: Rilascio ordini pianificati: A fronte di più fasi esterne, presenti in uno stesso Ordine pianificato di produzione, venivano creati alcuni Ordini di conto lavoro privi di righe articolo da produrre (#TT01632/23)
-> - SD: Risoluzione dell’errore che non rendeva compilabile la percentuale di incremento nell’Aggiorna listini della procedura di Duplica e Manutenzione listini di vendita (#TT01675/23)
-> - FI: risoluzione errore nella relazione per il bilanciamento del cdc all'interno della contabilità (#TT01090/23)
-> - FI: corretto bug che non permetteva il corretto funzionamento del campo di filtro Conto agente nell’esecuzione dei report Estratto conto e Sottoconti (#TT01281/23)
-> - SCM: Nel tab Generatore RDO delle Richieste di acquisto, vengono proposte Unità di misura e Quantità anche per i fornitori inseriti manualmente (#TT01577/23)
-> - SCM: Nel tab Generatore RDO delle Richieste di acquisto, viene proposto il codice iva anche per i fornitori inseriti manualmente (#TT01199/23)
-> - SD: è possibile usare il pulsante evasione da progetti da ordini di vendita (#TT01548/23)
-> - SCM: quando non è impostato un indirizzo diverso nel tab consegna del fornitore, viene inserito l'indirizzo della società stessa nell'ordine fornitore (#TT01391/23)
-> - SH: Risoluzione delle eccezioni uscenti alla cancellazione di un documento se collegato al Cash Flow (#TT01581/23)
-> - SCM: Ricevimento merci: Lotti multipli su unica riga articolo, cambio tipo DDT di acquisto, numero di riga su DDT, stampa riga DDT (#TT01051/23)
-> - SH: Report anagrafiche e lista anagrafiche: Modernizzati i due report (#TT01720/23)
-> - FI: soluzione errore gestione data in contabilizzazione paghe nel controlling (#TT01723/23)
-> - BZ: L'importazione Articoli e Listini di Vendita riporta correttamente le Note nel listino
-> - MES: Ordini di produzione: Risolta l'anomalia che si presentava all'eliminazione di un Ordine di produzione con un Ordine di Conto lavoro (se collegato manualmente e privo di riferimento alla Fase) (#TT01683/23)
-> - SCM: Correzione dell’errore di cambio codice articolo fornitore nell’inserimento degli articoli in un ordine fornitore utilizzando solo i tasti della tastiera (#TT01246/23)
-
+> - SD: no es posible hacer una reversión para los DDT facturados (#TT01657/23)  
+> - MES: Notificaciones: restauración del estado de cumplimiento de un pedido de producción si se modifica una notificación vinculada. (#TT01485/23)  
+> - FI: se corrigió un error en el procedimiento de creación de modelos intrastat creación automática, lectura de facturas que permitía buscar facturas de meses diferentes al del modelo en gestión (#TT01568/23)  
+> - CO: cierres trimestrales: se agregó el mensaje "la operación fue anulada por el usuario" (#TT01694/23)  
+> - MPS: liberación de pedidos planificados: ante múltiples fases externas, presentes en un mismo Pedido Planificado de producción, se creaban algunos pedidos de trabajo sin líneas de artículo a producir (#TT01632/23)  
+> - SD: resolución del error que no permitía completar el porcentaje de incremento en la actualización de listas en el procedimiento de duplicado y mantenimiento de listas de venta (#TT01675/23)  
+> - FI: resolución de error en el informe para el balanceo del CDC dentro de la contabilidad (#TT01090/23)  
+> - FI: se corrigió un error que no permitía el correcto funcionamiento del campo de filtro de Cuenta de agente en la ejecución de los informes de extracto y subcuentas (#TT01281/23)  
+> - SCM: en la pestaña generadora RDO de las solicitudes de compra, se proponen Unidades de medida y Cantidades también para los proveedores ingresados manualmente (#TT01577/23)  
+> - SCM: en la pestaña generadora RDO de las solicitudes de compra, se propone el código IVA también para los proveedores ingresados manualmente (#TT01199/23)  
+> - SD: es posible usar el botón de cumplimiento de proyectos desde pedidos de venta (#TT01548/23)  
+> - SCM: cuando no se establece una dirección diferente en la pestaña de entrega del proveedor, se inserta la dirección de la propia empresa en el pedido al proveedor (#TT01391/23)  
+> - SH: resolución de excepciones al eliminar un documento si está vinculado al flujo de caja (#TT01581/23)  
+> - SCM: recepción de mercancías: múltiples lotes en una única línea de artículo, cambio de tipo DDT de compra, número de línea en DDT, impresión de línea de DDT (#TT01051/23)  
+> - SH: informes de registros y lista de registros: se modernizaron los dos informes (#TT01720/23)  
+> - FI: solución de error en la gestión de fechas en la contabilidad de salarios en el control (#TT01723/23)  
+> - BZ: la importación de Artículos y Listas de Venta refleja correctamente las Notas en la lista  
+> - MES: pedidos de producción: se resolvió la anomalía que ocurría al eliminar un Pedido de producción con un Pedido de Conto trabajo (si estaba vinculado manualmente y carecía de referencia a la Fase) (#TT01683/23)  
+> - SCM: corrección del error de cambio de código de artículo de proveedor en la inserción de artículos en un pedido de proveedor utilizando solo las teclas del teclado (#TT01246/23)  
 
 ### Patch 607.1-0019: 26/05/2023  
 
-> - WM: Aggiornato l'ordinamento dei dati nel report di stampa del giornale di magazzino; ora l'ordinamento delle righe avviene per magazzino e per data registrazione
-> - WMS: Implementata funzione form conferma picking con gestione ubicazioni e gestione lotti (#TT01515/23)
-> - SCM: Attivazione dei filtri nella procedura Evasione da ordini (#TT01575/23)
-> - FI: Corretto report registri iva, riportava un indicazione sbagliata relativamente alla quota parte di competenza dei periodi precedenti/successivi (#TT00207/23)
-> - SCM: La stampa Scadenziario Ordini Fornitore effettua l'ordinamento per Fornitore o Data consegna in base ai filtri selezionati (#TT01501/23)
-> - MES: Risolto errore che lasciava attivo il bottone Salva nel caso di Creazione Ordine di Produzione da Rilascio Ordini pianificati e successivi modifica stato del workflow, aggiunta fase e cambiamento dello stato in Esecutivo nell’OP (#TT01573/23)
-> - MES: Aggiunta la colonna “Quantità da produrre” nella tabella degli ordini di produzione della procedura di stampa del Foglio di lavoro. (#TT01503/23)
-> - SH: Attivazione del Codificatore articolo anche per Extra Data basati su Data Source, durante la creazione di un nuovo articolo o la sua duplica (#TT01488/23)
-> - SH: Risoluzione dell’eccezione uscente all’inserimento del flag “Utilizza in codice” nel tab Codificatore articolo della tabella Classi articolo (#TT01488/23)
-> - FI: Risolto problema nella stampa liquidazione iva periodica a cadenza trimestrale, se la stampa veniva eseguita con il flag definitiva attivato veniva generato un errore (#TT01604/23)
-> - SCM: Nella Creazione Automatica Ordini sono visibili anche gli articoli che non hanno un Fornitore preferenziale in anagrafica (#TT01590/23)
-> - SH: Il pop up che avvisa l’utente di aver inserito un Progetto intestato a un soggetto diverso dall’intestatario del documento è stato lasciato solo nel modulo Gestione progetti e nei Workreport (#TT01571/23)
-> - SCS: Risoluzione dell’eccezione uscente nel caso di inserimento articolo in un Ordine di conto lavoro con inseriti in testata il Progetto e la Commessa di produzione (#TT01572/23)
-> - ARM: fix database context menu articoli visualizzato in base alla configurazioene Arm : parametro ChangeLevelAllowed
-> - CO: nei Valori di controllo del Controlling, il tab Valori commesse filtra ora sulla tabella specifica dove si valorizzano i driver di commessa/progetto (#TT01587/23)
-> - SD: La modifica delle righe articolo in un'Offerta intestata a Contatto CRM è stata ottimizzata nel caso di Spese nei riepiloghi (#TT01598/23)
-> - ARM: Correzione della deserializzazione della Dashboard esistente quando non è impostato alcun filtro (#TT01653/23)
-> - SCM: Le righe articolo ordine con una quantità residua negativa non sono visibili nella procedura di Evasione in DDT (#TT01431/23)
-> - PR: creazione automatica pagamenti fornitori: filter on "conto" is not working in 2021 anymore (#TT01100/23)
-> - Risolto il problema con la logica di raggruppamento di DocumentNumber, sul documento VendorPayment per Rs (#TT01659/23)
-> - FI: revisione stampa liquidazione iva annuale per totali iva in sospensione di competenza di anni differenti (#TT01328/12)
-> - SCM: Nella procedura Evasione da Ordini, la Quantità da evadere diventa visibile alla selezione del flag della corrispondente riga (#TT01617/23)
-> - MPS: Schedulazione generale: Parametri non memorizzati
-> - Nei parametri, quando si imposta il flag "Considera le disponibilità provenienti da: Acquisto e si procede con la schedulazione, non vengono considerati gli ordini di acquisto ed il parametro non viene memorizzato (#TT01616/23)
-
+> - WM: se actualizó el orden de los datos en el informe de impresión del diario de almacén; ahora el orden de las líneas se realiza por almacén y por fecha de registro  
+> - WMS: se implementó la función del formulario de confirmación de picking con gestión de ubicaciones y gestión de lotes (#TT01515/23)  
+> - SCM: activación de filtros en el procedimiento de cumplimiento de pedidos (#TT01575/23)  
+> - FI: se corrigió el informe de registros IVA, que mostraba una indicación incorrecta en relación a la parte correspondiente de los periodos anteriores/siguientes (#TT00207/23)  
+> - SCM: la impresión del Calendario de Órdenes de Proveedor realiza el orden para Proveedor o Fecha de entrega según los filtros seleccionados (#TT01501/23)  
+> - MES: se resolvió un error que dejaba activo el botón Guardar en el caso de la creación del Pedido de Producción desde la Liberación de Pedidos planificados y posteriormente el cambio de estado del flujo de trabajo, se añadió fase y cambio del estado a Ejecutivo en el OP (#TT01573/23)  
+> - MES: se agregó la columna "Cantidad a producir" en la tabla de pedidos de producción del procedimiento de impresión del Folio de trabajo. (#TT01503/23)  
+> - SH: activación del Codificador de artículo también para Extra Data basados en Data Source, durante la creación de un nuevo artículo o su duplicado (#TT01488/23)  
+> - SH: resolución de la excepción al insertar la bandera “Usar en código” en la pestaña Codificador de artículo de la tabla Clases de artículos (#TT01488/23)  
+> - FI: se solucionó el problema en la impresión de liquidación de IVA periódica a intervalos trimestrales, si la impresión se realizaba con el indicador de definitiva activado se generaba un error (#TT01604/23)  
+> - SCM: en la Creación Automática de Órdenes también son visibles los artículos que no tienen un Proveedor preferencial en el registro (#TT01590/23)  
+> - SH: el pop-up que avisa al usuario de que ha insertado un Proyecto a nombre de un sujeto diferente al titular del documento se ha dejado solo en el módulo Gestión de proyectos y en los Workreport (#TT01571/23)  
+> - SCS: resolución de la excepción al insertar un artículo en un Pedido de cuenta trabajo con el Proyecto y la Tarea de producción introducidos en el encabezado (#TT01572/23)  
+> - ARM: corrección del menú contextual de la base de datos de artículos visualizada según la configuración de ARM: parámetro ChangeLevelAllowed  
+> - CO: en los Valores de control del Controlling, la pestaña Valores de proyectos ahora filtra sobre la tabla específica donde se valoran los drivers de proyecto (#TT01587/23)  
+> - SD: la modificación de las líneas de artículo en una Oferta a nombre de Contacto CRM ha sido optimizada en caso de Gastos en los resúmenes (#TT01598/23)  
+> - ARM: corrección de la deserialización del panel de control existente cuando no se establece ningún filtro (#TT01653/23)  
+> - SCM: las líneas de artículo del pedido con una cantidad residual negativa no son visibles en el procedimiento de Cumplimiento en DDT (#TT01431/23)  
+> - PR: creación automática de pagos a proveedores: el filtro en "cuenta" ya no funciona en 2021 (#TT01100/23)  
+> - se solucionó el problema con la lógica de agrupamiento de DocumentNumber, en el documento VendorPayment para Rs (#TT01659/23)  
+> - FI: revisión de la impresión de liquidación de IVA anual por totales de IVA en suspensión de períodos de años diferentes (#TT01328/12)  
+> - SCM: en el procedimiento de Cumplimiento de pedidos, la Cantidad a cumplir se vuelve visible al seleccionar la bandera de la línea correspondiente (#TT01617/23)  
+> - MPS: programación general: parámetros no almacenados  
+> - en los parámetros, cuando se activa la bandera "Considerar las disponibilidades provenientes de: Compra" y se procede con la programación, no se consideran los pedidos de compra y el parámetro no se almacena (#TT01616/23)  
 
 ### Patch 607.1-0018: 22/05/2023  
 
-> - SH: La lunghezza massima del campo Codice destinazione nell’Elenco destinazioni dell’anagrafica contatto è stata portata a 8 (#TT01370/23)  
-> - FI: revisione salvataggio credito anno precedente per periodo gennaio/primo trimestre (#TT01380/23)  
-> - QY: Taratura strumenti: Alcune aggiunte al filtro dell'anagrafica degli Strumenti di Misura: Extra-data, Articolo associato, Fornitore di: acquisto, manutenzione/assistenza, taratura, ubicazione e Cliente proprietario (#TT01535/23)  
-> - SD: Inserimento di un nuovo messaggio di errore “L’ordine non può essere evaso perché non è stato impostato il Tipo documento per l’evasione” nel caso di impossibilità di evasione ordine in ddt, fattura o picking (#TT01517/23)  
-> - FI: nella stampa del Bilancio di verifica della localizzazione serba, abilitazione del filtro per classe 0 (#TT01544/23)  
-> - E’ stata integrata la logica di generazione del file in base alle chiavi di raggruppamento (#TT01545/23)  
-> - FI: Liquidazione iva periodica, corretto bug in fase di stampa liquidazione iva a cadenza trimestrale  
-> - SCS: Revisione report Scadenziario Rientri: vengono riportati il numero d'ordine, di riga e i raggruppamenti (#TT01521/23)  
-> - FI: Comunicazione liquidazioni periodiche iva, revisione stampa che non riportava correttamente i campi relativi alla partita iva dell’azienda e il codice fiscale del dichiarante (#TT01499/23)  
-> - Aggiunta  dell’esportazione documento "Comunicazione OPZ"  per la localizzazione Croazia  
-> - SD: Correzione dei problemi di aggiornamento dei valori del prezzo e dell'arrotondamento nella creazione listini di vendita(#TT01552/23)  
-> - BZ: Allineamento tracciato importazione movimenti contabili da Excel (#TT01321/23)  
-> - SCM: Risoluzione dell’errore che rendeva Non evaso l’ordine collegato, in caso di Rollback Valorizzazione DDT di acquisto in fattura (#TT01511/23)  
-> - SCS: Rinominata la colonna Descrizione articolo nei Materiali dei Rientri di conto lavoro (#TT01327/23)  
-> - PM: inserimento di una nuova funzionalità in tipo sprint che permette di impostare la riapertura dello sprint quando viene modificato il prezzo in un documento inserito nello sprint (ticket 01188/23)  
-> - WMS: Ora nella form Giacenza Articolo del WMS, se viene ricercato un articolo gestito a lotti inserendo un lotto nell'apposito filtro della sezione filtri, la ricerca rimanda i risultati legati a quel singolo lotto. non piu i risultati legati ai lotti che comprendono il codice inserito nel filtro. (#TT01541/23)  
-> - WMS: Ora, se utilizzata una UM Default per WMS, in un articolo gestito a lotti, lo Sposta Articolo funziona correttamente (#TT01538/23)  
-> - CO: revisione errore entrando in secondo tab/totale numeratore per calcolo indici sempre a zero quando si visualizza il dettaglio periodi ( TT01559/23)  
+> - SH: La longitud máxima del campo Código de destino en la Lista de destinos del registro de contacto se ha aumentado a 8 (#TT01370/23)  
+> - FI: revisión de la guardia de créditos del año anterior para el período de enero/primer trimestre (#TT01380/23)  
+> - QY: calibración de instrumentos: algunas adiciones al filtro del registro de los Instrumentos de Medida: Extra-data, Artículo asociado, Proveedor de: compra, mantenimiento/asistencia, calibración, ubicación y Cliente propietario (#TT01535/23)  
+> - SD: se ha insertado un nuevo mensaje de error “El pedido no puede ser ejecutado porque no se ha establecido el Tipo de documento para la ejecución” en caso de imposibilidad de ejecución del pedido en DDT, factura o picking (#TT01517/23)  
+> - FI: en la impresión de los balances de verificación de la localización serbia, se habilitó el filtro para la clase 0 (#TT01544/23)  
+> - se ha integrado la lógica de generación del archivo según las claves de agrupamiento (#TT01545/23)  
+> - FI: liquidación de IVA periódica, se corrigió un error en la fase de impresión de liquidación de IVA a intervalos trimestrales  
+> - SCS: revisión del informe del calendario de devoluciones: se incluyen el número de orden, de línea y los agrupamientos (#TT01521/23)  
+> - FI: comunicación de liquidaciones periódicas de IVA, revisión de la impresión que no reflejaba correctamente los campos relacionados con el número de IVA de la empresa y el código fiscal del declarante (#TT01499/23)  
+> - se añadió la exportación del documento "Comunicación OPZ" para la localización Croacia  
+> - SD: corrección de problemas en la actualización de los valores de precio y redondeo en la creación de listas de venta (#TT01552/23)  
+> - BZ: alineación del trazado de importación de movimientos contables desde Excel (#TT01321/23)  
+> - SCM: resolución del error que hacía que el pedido vinculado apareciera como No ejecutado, en caso de reversión de la valorización del DDT de compra en factura (#TT01511/23)  
+> - SCS: se ha renombrado la columna Descripción de artículo en los Materiales de las devoluciones de cuenta de trabajo (#TT01327/23)  
+> - PM: se ha añadido una nueva funcionalidad en el tipo de sprint que permite establecer la reapertura del sprint cuando se modifica el precio en un documento ingresado en el sprint (ticket 01188/23)  
+> - WMS: ahora en el formulario de Stock de Artículos del WMS, al buscar un artículo gestionado en lotes introduciendo un lote en el filtro correspondiente de la sección de filtros, la búsqueda devuelve los resultados relacionados con ese único lote. No más resultados relacionados con los lotes que incluyen el código introducido en el filtro. (#TT01541/23)  
+> - WMS: ahora, si se utiliza una UM por defecto para WMS, en un artículo gestionado en lotes, la Transferencia de Artículo funciona correctamente (#TT01538/23)  
+> - CO: revisión del error al entrar en la segunda pestaña/total del numerador para el cálculo de índices siempre a cero cuando se visualiza el detalle de períodos (TT01559/23)  
 
 ### Patch 607.1-0017: 11/05/2023  
 
-> - WM: Bug fixed. Corretto bug in “Gestione UDC”. Ora i decimali dei campi “Peso netto” e “Peso lordo” vengono visualizzati correttamente (#TT01486/23)  
-> - WM: Bug fixed. Corretto bug in anagrafica articoli inerente all’inserimento varianti (#TT01482/23)  
-> - SCM: Corretto errore che impediva l’esecuzione delle query salvate sulla maschera di ricerca delle richieste di acquisto (#TT01195/23)  
-> - FI: revisione gestione griglia di contabilità per messaggio ricalcolo importi in valuta  
-
+> - WM: corregido un error. Se corrigió un error en "Gestión UDC". Ahora los decimales de los campos "Peso neto" y "Peso bruto" se visualizan correctamente (#TT01486/23)  
+> - WM: corregido un error en el registro de artículos relacionado con la inserción de variantes (#TT01482/23)  
+> - SCM: se corrigió un error que impedía la ejecución de las consultas guardadas en la máscara de búsqueda de solicitudes de compra (#TT01195/23)  
+> - FI: revisión de la gestión de la cuadrícula de contabilidad para el mensaje de recalculo de importes en moneda  
 
 ### Patch 607.1-0016: 11/05/2023  
 
-> - PR: distinte di anticipo fattura, valorizzazione campo data scadenza (#TT01399/23)   
-> - MPS: Corretto bug in schedulazione nel caso in cui venga schedulata una commessa già in stato esecutivo (#TT00965/23)   
-> - MPS: Corretto bug sullo stato commesse di produzione nel caso in cui l’ordine di primo livello non sia stato rilasciato (#TT01352/23)   
-> - MPS: L’inserimento da Object Navigator della colonna Tipo nella Ricerca Cicli di Lavoro non manda più in errore la Ricerca (#TT01401/23)   
-> - MPS: Corretto bug sul calcolo della data prevista inizio e fine lavorazione nelle testate delle commesse multiprodotto (#TT01242/23)  
-> - MPS: Corretto bug sul campo “Articoli commessa di produzione” nel caso in cui venga trascinato dall’object navigator negli ordini pianificati (#TT01418/23)  
-> - SD, SCM: Nelle note di credito l’inserimento dei Materiali Conai riporta una spesa con quantità negativa (#TT01428/23)  
-> - SD: Nei Listini di vendita, dopo aver cliccato Nuovo articolo, nella ribbon bar, è possibile inserire gli articoli con il tasto destro Incolla nelle celle  (TT#TT01444/23)  
-> - SD: Abilitata modifica causale di chiusura automatica scadenze in fatture già inviate allo Sdi. (#TT00344/23)  
-> - SH: Workflow: Corretto bug nello states navigator in quanto non visualizzava lo stato successivo, mentre in modifica del documento si vede (#TT01302/23)  
-> - WM: Bug fixed. Corretto bug in fase di inserimento varianti nella distinta base (#TT01402/23)  
-
+> - PR: lineales de anticipo de factura, valorización del campo de fecha de vencimiento (#TT01399/23)  
+> - MPS: se corrigió un error en la programación en el caso en que se programe una tarea ya en estado ejecutivo (#TT00965/23)  
+> - MPS: se corrigió un error en el estado de las tareas de producción en caso de que el pedido de primer nivel no haya sido liberado (#TT01352/23)  
+> - MPS: la inserción desde Object Navigator de la columna Tipo en la Búsqueda de Ciclos de Trabajo ya no genera un error en la Búsqueda (#TT01401/23)  
+> - MPS: se corrigió un error en el cálculo de la fecha de inicio y fin tratadas en las cabeceras de los ciclos de trabajo multiproducto (#TT01242/23)  
+> - MPS: se corrigió un error en el campo “Artículos de la tarea de producción” en caso de ser arrastrado desde el object navigator en los pedidos planificados (#TT01418/23)  
+> - SD, SCM: en los créditos, la inserción de los Materiales Conai muestra un gasto con cantidad negativa (#TT01428/23)  
+> - SD: en las listas de venta, después de hacer clic en Nuevo artículo, en la barra de ribbon, se pueden insertar los artículos con el botón derecho Pegar en las celdas (TT#TT01444/23)  
+> - SD: se habilitó la modificación de la causal de cierre automático de vencimientos en facturas ya enviadas al Sdi. (#TT00344/23)  
+> - SH: flujo de trabajo: se corrigió un error en el navegador de estados ya que no mostraba el estado siguiente, mientras que en la edición del documento se ve (#TT01302/23)  
+> - WM: corregido un error en la inserción de variantes en la línea de materiales (#TT01402/23)  
 
 ### Patch 607.1-0015: 04/05/2023  
 
-> - BZ: Le righe Nota vengono importate senza Prezzo e Quantità, nelle importazioni BizLink di Ordini Clienti e Ordini Fornitori (#TT01052/23)  
-> - SD: Quantità, Quantità Residua e Quantità da Evadere hanno lo stesso arrotondamento dei decimali nella maschera di Evasione Ordine in DDT (#TT01325/23)  
-> - SD: Quantità, Quantità Residua e Quantità da Evadere hanno lo stesso arrotondamento dei decimali nella maschera di Evasione DDT in Fattura (#TT01296/23)  
-> - CRM: Risoluzione eccezione 429 del server nell'apertura dei Contatti (#TT01318/23)  
-> - SCM: In area acquisti, revisione del calcolo importo scopertura dichiarazioni di intento (#TT01126/23)  
-> - WM: Nei movimenti di magazzino è possibile trascinare dall'object navigator il campo "Articoli commessa di produzione", questo visualizzerà il relativo numero di commessa. (#TT01319/23)  
-> - SH: Eliminazione del concetto di transizione nell'esecuzione delle store procedure da scripting    
-> - BZ: Ottimizzazione importazione standard dei cicli di lavoro tramite import excel.: (#TT01359/23)  
-> - SCS: Attivazione del filtro per gli articoli Parzialmente evasi nella maschera di Ricerca Ordini di conto lavoro (#TT01374/23)  
+> - BZ: las líneas Nota se importan sin Precio y Cantidad en las importaciones de BizLink de Órdenes de Clientes y Órdenes de Proveedores (#TT01052/23)  
+> - SD: Cantidad, Cantidad Residual y Cantidad a Cumplir tienen el mismo redondeo de decimales en la máscara de Cumplimiento de Pedido en DDT (#TT01325/23)  
+> - SD: Cantidad, Cantidad Residual y Cantidad a Cumplir tienen el mismo redondeo de decimales en la máscara de Cumplimiento de DDT en Factura (#TT01296/23)  
+> - CRM: resolución de la excepción 429 del servidor al abrir los Contactos (#TT01318/23)  
+> - SCM: en el área de compras, revisión del cálculo de la cantidad de fondos de declaraciones de intención (#TT01126/23)  
+> - WM: en los movimientos de almacén se puede arrastrar desde el object navigator el campo "Artículos de la tarea de producción", lo que mostrará el número de la tarea correspondiente. (#TT01319/23)  
+> - SH: eliminación del concepto de transición en la ejecución de los store procedures desde scripting  
+> - BZ: optimización de la importación estándar de los ciclos de trabajo a través de la importación de Excel. (#TT01359/23)  
+> - SCS: activación del filtro para los artículos Parcialmente cumplidos en la máscara de Búsqueda de Pedidos de cuenta de trabajo (#TT01374/23)  
 
 ### Patch 607.1-0014: 28/04/2023  
 
-> - WM:Stampa Picking: Gestita anomalia per cui era visibile solo un lotto per articolo Picking
-> - BZ: Correzione errore dei totali azzerati nel caso di importazione Ordini fornitore con quantità maggiori di uno (#TT01052/23)
-> - SD: Se la fattura proviene da Ordine, nel file xml verrà riportato il campo Vostro riferimento di testata; se assente, verrà riportata la dicitura VUOTO (#TT03021/22)
-> - WM: Nei documenti di vendita, acquisto, logistica e conto lavoro vengono riportati il Peso netto e il Peso lordo totali delle righe articolo, presi dall’anagrafica dell’articolo (#TT02570/22)
-> - ARM: Dasboards: mostrare messaggio di completamento dell'operazione (#TT01198/23)
-> - MES: Inserita la possibilità di gestire i decimali nella colonna Quantità del tab Lotti delle Segnalazioni di produzione (#TT01163/23)
-> - WMS: Corretto il funzionamento del campo quantità nella maschera WMS di Sposta Articolo in caso di unità di misura gestionale senza decimali.
-> - MPS: Bug fixed. Risolto un bug nella cancellazione di commesse schedulate con l'esecuzione automatica dell'mrp.
-> - FI: Revisione contabilizzazione fatture di acquisto per violazione constraint su valori centri di costo ( 8137/23 notification)
-> - SCM: Le note di credito create da ddt di reso riportano le spese Conai con il segno negativo, come le altre righe del documento (#TT01019/23)
-> - SCM: Le Note di Accredito hanno le righe Articolo con la Quantità negativa; nel caso di inserimento Quantità positiva, uscirà un pop up per cambiare il segno della quantità (#TT02609/22)
-> - PM: viene inserito un prefiltro nella maschera delle richieste ferie e permessi con risorsa = Resource = risorsa collegata (SEC_Users)  e data = primo giorno anno corrente (ticket 00931/23)
-> - SCM, SD: Inserito pop up di avviso IVA obbligatoria in caso di cambio cliente o fornitore in Fattura (#TT03387/22)
-> - SH: ottimizzazione flag Gestione RAEE nelle anagrafiche clienti e fornitori: esso è presente solo nelle anagrafiche clienti (#TT01192/23)
-> - FI: Risolto problema all'interno della maschera partite, se una partita veniva inserita all'interno di un pagamento fornitore il flag 'In pagamento' non veniva attivato automaticamente nella partita. (Ticket: #TT01141/23)
-> - SD: Nel caso di una commessa creata da un ordine cliente (con la procedura automatica o da Definizione MPS), se viene modifica la data merce pronta nell'ordine cliente la procedura aggiorna la data merce pronta della riga commessa.: (#TT01252/23)
-> - CO: nei valori di controllo del controlling, revisione calcolo dell’ultimo tab Valori di conguaglio #TT01171/23
-> - WM: Bug fixed. Corretto bug in creazione distinta base nell’inserimento dell’articolo padre.: (#TT01268/23)
-> - MPS: Bug fixed. Corretto bug nel calcolo disponibilità nella schedulazione generale.: (#TT01274/23)
-> - SCM: Il Ricevimento merci riporta nel Prezzo il Costo ultimo dell'articolo (#TT01151/23)
-> - SCM: Nella tabella fluentis.SCM_PurchaseDemandItems i campi SCMPDI_Quantity e SCMPDI_ResidualQuantity hanno lo stesso arrotondamento decimale, per evitare che le richieste di acquisto risultino parzialmente evase (#TT01209/23)
-> - maschera Partite, revisione calcolo dei risultati quando si filtra per ‘partite aperte al’ #TT02206/22
-> - PR: Area Tesoreria, Modulo rischio cliente, corretto bug che nel ricalcolo rischio cliente non considerava correttamente le partite provenienti da registrazioni provvisorie. Rif #TT00947/23  
-> - MES: Bug fixed. Corretto bug nel caso in cui in un ordine di produzione si cambi una fase da esterna ad interna con un centro di lavoro a cui mancano gli orari di inizio e fine (#TT01311/23)  
-
+> - WM: impresión de Picking: se gestionó la anomalía en la que solo era visible un lote por artículo de Picking  
+> - BZ: corrección de error de totales a cero en caso de importación de Órdenes de proveedor con cantidades superiores a uno (#TT01052/23)  
+> - SD: si la factura proviene de un Pedido, en el archivo XML se incluirá el campo Su referencia de encabezado; si está ausente, se reflejará la palabra VACÍO (#TT03021/22)  
+> - WM: en los documentos de venta, compra, logística y cuenta de trabajo se reflejan el Peso neto y el Peso bruto totales de las líneas de artículo, tomados del registro del artículo (#TT02570/22)  
+> - ARM: paneles: mostrar mensaje de finalización de la operación (#TT01198/23)  
+> - MES: se añadió la posibilidad de gestionar los decimales en la columna Cantidad de la pestaña Lotes de las notificaciones de producción (#TT01163/23)  
+> - WMS: se corrigió el funcionamiento del campo de cantidad en la máscara WMS de Transferencia de Artículo en caso de unidad de medida de gestión sin decimales.  
+> - MPS: corrección de error. se resolvió un error en la eliminación de tareas programadas con la ejecución automática del MRP.  
+> - FI: revisión de la contabilización de facturas de compra por violación de restricciones en los valores de los centros de costo (notificación 8137/23)  
+> - SCM: las notas de crédito creadas de DDT de devolución reflejan los gastos Conai con signo negativo, como las demás líneas del documento (#TT01019/23)  
+> - SCM: las Notas de Crédito tienen las líneas de Artículo con Cantidad negativa; en caso de ingreso de Cantidad positiva, saldrá un pop-up para cambiar el signo de la cantidad (#TT02609/22)  
+> - PM: se inserta un prefiltro en la máscara de solicitudes de vacaciones y permisos con recurso = Resource = recurso vinculado (SEC_Users) y fecha = primer día del año actual (ticket 00931/23)  
+> - SCM, SD: se ha insertado un pop-up de aviso para IVA obligatorio en caso de cambio de cliente o proveedor en la factura (#TT03387/22)  
+> - SH: optimización de la bandera de Gestión RAEE en los registros de clientes y proveedores: esta solo está presente en los registros de clientes (#TT01192/23)  
+> - FI: se solucionó el problema en el interior de la máscara de partidas, si una partida se ingresaba en un pago de proveedor, la bandera 'En pago' no se activaba automáticamente en la partida. (ticket: #TT01141/23)  
+> - SD: en el caso de un proyecto creado a partir de un pedido de cliente (con el procedimiento automático o de Definición MPS), si se modifica la fecha de mercancía lista en el pedido cliente, el procedimiento actualiza la fecha de mercancía lista de la línea del pedido. (#TT01252/23)  
+> - CO: en los valores de control del controlling, revisión del cálculo en la última pestaña Valores de ajuste (#TT01171/23)  
+> - WM: corrección de error en la creación de línea de materiales en la inserción del artículo padre. (#TT01268/23)  
+> - MPS: corrección de error. se corrigió un error en el cálculo de disponibilidad en la programación general. (#TT01274/23)  
+> - SCM: la Recepción de mercancías refleja en Precio el Último Costo del artículo (#TT01151/23)  
+> - SCM: en la tabla fluentis.SCM_PurchaseDemandItems, los campos SCMPDI_Quantity y SCMPDI_ResidualQuantity tienen el mismo redondeo decimal, para evitar que las solicitudes de compra resulten parcialmente cumplidas (#TT01209/23)  
+> - en la máscara de Partidas, revisión del cálculo de resultados al filtrar por ‘partidas abiertas al’ (#TT02206/22)  
+> - PR: Área de Tesorería, Módulo de riesgo del cliente, se corrigió un error en la recalibración del riesgo del cliente que no consideraba correctamente las partidas provenientes de registros provisionales. Ref #TT00947/23  
+> - MES: corrección de error. se corrigió un error en el caso de que en un pedido de producción se cambie una fase de externa a interna con un centro de trabajo que carece de horarios de inicio y fin (#TT01311/23)  
 
 ### Patch 607.1-0013: 13/04/2023  
 
-> - PM: il service level agreement e il livello severità impostati nel tipo richiesta intervento viene riportato in documento (ticket 01092/23)
-> - MPS: Bug fixed. Corretto bug nel calcolo disponibilità. (#TT01074/23)  
+> - PM: el acuerdo de nivel de servicio y el nivel de severidad establecidos en el tipo de solicitud de intervención se reflejan en el documento (ticket 01092/23)  
+> - MPS: corrección de error. se corrigió un error en el cálculo de disponibilidad. (#TT01074/23)  
 
 ### Patch 607.1-0012: 12/04/2023  
 
-> - SD: Una fattura proveniente da più ordini cliente riporta tutte le spese degli ordini di partenza; è stato corretto l'errore che moltiplicava le righe spesa riportate per il numero di righe articolo presenti negli ordini di partenza (#TT01088/23)
-> - FI: cambiamento label in Dipendente, tab “Curriculum e corsi”
-> - PM: quando viene duplicato un progetto da template il listino prezzi viene creato a partire del cliente in testata (ticket 00734/23)
-> - PM: i ticket salvati sulla riga servizi vengono copiati nella riga di invoice plan, i ticket salvati in riga invoice plan vengono salvati correttamente (ticket 00758/239)
-> - PM: Creazione attività da Interventi: Corretta anomalia riscontrata nell'aggiornamento delle date servizio con collegata l'attività, se l'intervento è già in da Approvare e l'attività collegata già creata e viene modificata la data del servizio non veniva aggiornata anche la data dell'attività. (rif.ticket 1065/23)
-> - WM: In analisi disponibilità, è possibile salvare nel profilo anche il valore del periodo di verifica.: (#TT01082/23)
-> - WM: Bug fixed. Corretto bug nel calcolo dei costi diretti all’interno dei prototipi.: (#TT00979/23)
-> - SH: Procedura modificata: Contabilizzazione fatture di acquisto da registro SDI: migliorato il controllo per la memorizzazione del conto di contropartita, ora anche se è già stato memorizzato un conto di default abbinato al codice articolo, nel caso in cui nel file xml sia presente un diverso codice articolo (tag Codice Valore) viene nuovamente proposto il popup di abbinamento c onti in fase di contabilizzazione. Rif TT00981/23
-> - CO: stampa bilancio infrannuale, soluzione errore in esecuzione per campi nulli (#TT01125/23)
-> - BZ: L'importazione Listini Fornitori permette la creazione di un nuovo Articolo fornitore e l'inserimento dello stesso nel Listino importato: per fare ciò è necessario inserire il parametro "Inserimento articolo fornitore" (#TT01064/23)
-> - BZ: Inserimento del BizLink Parameter "Stampata" nell'Importazione Fatture di vendita, che permette di importare le fatture con il flag Stampata (#TT02496/21)
-> - FI: Registrazione contabile di acquisto cespiti, resi modificabili i campi delle percentuali di assegnazione a centro di costo/progetto (TT#01142/23)
-> - FI: contabilizzazione da fattura di vendita non interrotta in un periodo IVA chiuso: TT03261/22
-> - FI: modifica gestione inserimento righe aggiuntive nella griglia dei centri di costo, quando questi sono di dimensione differente. #TT00911/23
-> - CO: Aggiunto un filtro per 'Dimensione' nell'intestazione del modulo 'Valori di controllo'.  (TT01150/23)  
-> - MPS/MES: Variata la logica del cambio di stato nelle commesse di produzione, secondo le seguenti regole: 
->> 1.	la commessa passa in stato “Esecutivo” quando viene rilasciato il primo: ordine pianificato acquisto, ordine pianificato di conto lavoro o ordine pianificato produzione e questo si trova nello stato “Esecutivo”;
->> 2.	la commessa passa in stato “Lanciato” se vi sono solo ordini di produzione nello stato “Lanciato” e nessun ordine pianificato di acquisto o di conto lavoro rilasciato;
->> 3.	se l'utente utilizza il comando di rollback, quando ci sono più ordini pianificati di acquisto o di conto lavoro rilasciati e nessun ordine di produzione in stato esecutivo o lanciato, la commessa ritorna in stato “Schedulata”;
->> 4.	la commessa passa in stato “Evaso” quando tutti gli ordini con il “livello più basso” sono in stato evaso. Se l'utente modifica lo stato di uno di essi, anche la commessa cambia il proprio stato.  (#TT00969/23)
-
+> - SD: una factura proveniente de más de un pedido de cliente refleja todos los gastos de los pedidos de origen; se corrigió el error que multiplicaba las líneas de gasto reportadas por el número de líneas de artículo presentes en los pedidos de origen (#TT01088/23)  
+> - FI: cambio de etiqueta a Empleado, pestaña “Currículo y cursos”  
+> - PM: cuando se duplica un proyecto de plantilla, el listado de precios se crea a partir del cliente en el encabezado (ticket 00734/23)  
+> - PM: los tickets guardados en la línea de servicios se copian en la línea del plan de facturación, los tickets guardados en la línea del plan de facturación se guardan correctamente (ticket 00758/239)  
+> - PM: creación de actividad desde Intervenciones: se corrigió anomalía detectada en la actualización de las fechas de servicio vinculadas a la actividad, si la intervención ya está en estado Aprobado y la actividad vinculada ya está creada y se modifica la fecha del servicio, no se actualizaba también la fecha de la actividad. (ref.ticket 1065/23)  
+> - WM: en análisis de disponibilidad, se puede guardar también el valor del período de verificación en el perfil. (#TT01082/23)  
+> - WM: corrección de error. se corrigió un error en el cálculo de costos directos dentro de los prototipos. (#TT00979/23)  
+> - SH: procedimiento modificado: Contabilización de facturas de compra desde registro SDI: mejorado el control para la memorización de la cuenta contrapartida, ahora también si ya se memorizó una cuenta por defecto vinculada al código de artículo, en caso de que en el archivo XML esté presente un código de artículo diferente (etiqueta Código Valor) se vuelve a proponer la ventana de vinculación de cuentas en fase de contabilidad. Ref TT00981/23  
+> - CO: impresión de balances interanuales, solución de error en ejecución por campos nulos (#TT01125/23)  
+> - BZ: la importación de Listas de Proveedores permite la creación de un nuevo Artículo proveedor y la inserción del mismo en la Lista importada: para ello, es necesario insertar el parámetro "Inserción de artículo proveedor" (#TT01064/23)  
+> - BZ: introducción del parámetro BizLink "Impreso" en la Importación de Facturas de venta, que permite importar las facturas con la bandera Impresa (#TT02496/21)  
+> - FI: registro contable de compra de activos, se pueden modificar los campos de las porcentajes de asignación al centro de costo/proyecto (TT#01142/23)  
+> - FI: contabilización desde factura de venta no interrumpida en un período de IVA cerrado: TT03261/22  
+> - FI: modificación en la gestión de la inserción de líneas adicionales en la cuadrícula de los centros de costo, cuando estos son de tamaño diferente. #TT00911/23  
+> - CO: se agregó un filtro para 'Tamaño' en el encabezado del módulo 'Valores de control'. (TT01150/23)  
+> - MPS/MES: se modificó la lógica de cambio de estado en los pedidos de producción, según las siguientes reglas:  
+>> 1. la tarea pasa a estado “Ejecutivo” cuando se libera la primera: pedido planificado de compra, pedido planificado de trabajo o pedido planificado de producción y este se encuentra en estado “Ejecutivo”;  
+>> 2. la tarea pasa a estado “Lanzado” si solo hay pedidos de producción en estado “Lanzado” y ningún pedido planificado de compra o de trabajo liberado;  
+>> 3. si el usuario utiliza el comando de reversión, cuando hay múltiples pedidos planificados de compra o de trabajo liberados y ningún pedido de producción en estado ejecutivo o lanzado, la tarea regresa a estado “Programado”;  
+>> 4. la tarea pasa a estado “Cumplido” cuando todos los pedidos con el “nivel más bajo” están en estado de cumplido. Si el usuario modifica el estado de uno de ellos, también la tarea cambia su estado. (#TT00969/23)  
 
 ### Patch 607.1-0011: 06/04/2023  
 
-> - WM: Locations: bug fix: all'inserimento di una nuova località ora la collezione delle località "figli" viene mostrata correttamente e senza errori
-> - CO: nell’elaborazione periodi del controlling, revisione gestione origine dati per differenziazione saldo contabile e manuale (TT#00991/23)
-> - CO: nell’elaborazione periodi del controlling, revisione gestione tipo riga per distribuzione periodi su centro ‘valori non assegnati’ (TT#01010/23)
-> - CO: nella duplicazione comparazione riclassificazioni del controlling, risoluzione errore nel caso di codifica centri con codici puntati tipo xxx.yy (#TT00973/23)
-> - CO: nell’elaborazione periodi del controlling, revisione del calcolo indici per gestione su centri non soggetti a driver (#TT00974/23)
-> - PR: Risolto problema in fase di creazione pagamenti fornitori manualmente, quando veniva creato un nuovo pagamento e contestualmente si andavano a richiamare le partite da inserire non venivano compilati tutti i dati relativi alla banca ma occorreva entrare ed uscire dal pagamento per avere il dettaglio compilato (Ticket: #TT00916/23)
-> - MPS: Bug fixed. Corretto bug nella generazione del flusso automatico di produzione.: (#TT01060/23)  
-> - SCS: Nel caso in cui l’ultima fase movimentabile e produttiva sia esterna, adesso il rientro di conto lavoro aggiorna correttamente la quantità prodotta nell’ordine di produzione.: (#TT00736/23)
-> - SCS: Negli ordini di conto lavoro, il costo proposto per gli articoli privi di listino è pari a zero.: (#TT00978/23)
-> - FI: Risolto problema nell’elaborazione della comunicazione liquidazioni periodiche iva, il credito anno precedente veniva erroneamente riportato prendendo lo stesso valore del credito periodo precedente andando così a raddoppiare il credito. (Ticket: #TT00875/23)
-> - SD: Risoluzione eccezione uscente allo scarico dei documenti dal magazzino (#TT01071/23)
-> - FI: revisione test su quadratura centri di costo/profitto in caso di società senza controlling e senza gestione separata cdc/cdp in causale contabile. #TT01055/23
-> - SD: scadenziario ordini cliente: Modificata la formatting rules della stampa in modo che non vengano sovrapposte le date di scadenza
-> - CO: revisione logica di creazione chiusure infrannuali per gestione dati per saldi senza ricalcoli dei dati valutari. ( TT01025/23)
-> - MPS: Bug fixed. Corrretto bug in costificazione commessa, relativamente a documenti collegati manualmente alla commessa stessa .: (#TT00982/23)  
-> - MES: Bug fixed. Corretto bug relativo alla percentuale di scarto (indicata sul componente della distinta base) sulle segnalazioni di produzione.: (#TT01050/23)  
-
+> - WM: ubicaciones: corrección de error: en la inserción de una nueva ubicación ahora la colección de ubicaciones "hijas" se muestra correctamente y sin errores  
+> - CO: en la elaboración de períodos del controlling, revisión de la gestión de origen de datos para la diferenciación entre saldo contable y manual (TT#00991/23)  
+> - CO: en la elaboración de períodos del controlling, revisión de la gestión del tipo de línea para la distribución de períodos sobre el centro ‘valores no asignados’ (TT#01010/23)  
+> - CO: en la duplicación de la comparativa de reclasificaciones del controlling, se resolvió un error en caso de codificación de centros con códigos decimales tipo xxx.yy (#TT00973/23)  
+> - CO: en la elaboración de períodos del controlling, revisión del cálculo de índices para gestión en centros no sujetos a drivers (#TT00974/23)  
+> - PR: se resolvió el problema en la creación manual de pagos a proveedores, cuando se creaba un nuevo pago y simultáneamente se llamaban las partidas a insertar, no se completaban todos los datos relativos al banco, pero era necesario entrar y salir del pago para obtener el detalle completado (ticket: #TT00916/23)  
+> - MPS: corrección de bug. se corrigió un error en la generación del flujo automático de producción. (#TT01060/23)  
+> - SCS: en caso de que la última fase movible y productiva sea externa, ahora la devolución de cuenta de trabajo actualiza correctamente la cantidad producida en el pedido de producción. (#TT00736/23)  
+> - SCS: en los pedidos de cuenta de trabajo, el costo propuesto para los artículos sin lista es igual a cero. (#TT00978/23)  
+> - FI: se resolvió el problema en la elaboración de la comunicación de liquidaciones periódicas de IVA, el crédito del año anterior se reflejaba erróneamente tomando el mismo valor del crédito del período anterior, duplicando así el crédito. (ticket: #TT00875/23)  
+> - SD: resolución de excepción al descargar documentos del almacén (#TT01071/23)  
+> - FI: revisión de la prueba sobre la cuadratura de centros de costo/beneficio en caso de una empresa sin controlling y sin gestión separada de cdc/cdp en causal contable. #TT01055/23  
+> - SD: calendario de órdenes de clientes: se modificaron las reglas de formato de impresión para que no se superpongan las fechas de vencimiento.  
+> - CO: revisión de la lógica de creación de cierres interanuales para la gestión de datos para saldos sin recalcular datos de moneda. (TT01025/23)  
+> - MPS: corrección de error. se corrigió un error en la valoración de la tarea, en relación a documentos vinculados manualmente a la tarea misma. (#TT00982/23)  
+> - MES: corrección de error. se corrigió un error relacionado con el porcentaje de desperdicio (indicado en el componente de la lista de materiales) en las notificaciones de producción. (#TT01050/23)  
 
 ### Patch 607.1-0010: 31/03/2023  
 
-> - SD: L'Ora trasporto nei documenti di vendita viene mantenuta se salvata, ma viene aggiornata all'ora attuale in caso di cambio Tipo trasporto (#TT00265/23)
-> - MPS: Bug fixed. Corretto bug in schedulazione a capacità finita sulle date inizio e fine degli ordini pianificati.: (#TT03232/22)
-> - MES: Negli ordini di produzione se viene indicato un lotto nei materiali, questo viene riproposto, in corrispondenza del materiale, anche nel relativo picking creato dalla procedura di Lista prelievo materiali.: (#TT01408/22)
-> - SD: Nella testata dei documenti di vendita il bottone della ribbon bar è stato rinominato in "Inserisci Agente nelle righe" (#TT00890/23)
-> - MES: Negli ordini di produzione se viene indicato un lotto nei materiali, questo viene riproposto, in corrispondenza del materiale, anche nel relativo picking creato dalla procedura di Lista prelievo materiali.: (#TT01408/22)
-> - revisione file bonifici Sepa localizzazione francese, tolto il tag TwnNm e il blocco PmtTpInf presente dentro la sezione CdtTrfTxInf. #T00940/23
-> - PR: nella maschera di Importazione registrazioni del modulo DocFinance, abilitazione della cancellazione da tastiera della singola registrazione selezionata nella seconda griglia (#TT00903/23)
-> - SD: In caso di Creazione registrazione con la data del documento, vengono presi in considerazione anche le date per Mittente e Destinatario, oltre che per Vettore (#TT00575/23)
-
+> - SD: la Hora de transporte en los documentos de venta se mantiene si se guarda, pero se actualiza a la hora actual en caso de cambio de Tipo de transporte (#TT00265/23)  
+> - MPS: corrección de error. se corrigió un error en la programación a capacidad finita en las fechas de inicio y fin de los pedidos planificados. (#TT03232/22)  
+> - MES: en los pedidos de producción, si se indica un lote en los materiales, este se propone, en correspondencia del material, también en el picking correspondiente creado por el procedimiento de Lista de materiales. (#TT01408/22)  
+> - SD: en el encabezado de los documentos de ventas, el botón de la barra de ribbon se ha renombrado a "Insertar Agente en las líneas" (#TT00890/23)  
+> - MES: en los pedidos de producción, si se indica un lote en los materiales, este se propone, en correspondencia del material, también en el picking correspondiente creado por el procedimiento de Lista de materiales. (#TT01408/22)  
+> - revisión del archivo de transferencias Sepa para la localización francesa, se eliminó la etiqueta TwnNm y el bloque PmtTpInf presente dentro de la sección CdtTrfTxInf. #T00940/23  
+> - PR: en la máscara de Importación de registros del módulo DocFinance, se habilitó la eliminación por teclado del registro seleccionado en la segunda cuadrícula (#TT00903/23)  
+> - SD: en caso de creación de registro con la fecha del documento, se consideran también las fechas para Remitente y Destinatario, además de para Transportista (#TT00575/23)  
 
 ### Patch 607.1-0009: 24/03/2023  
 
-> - FI: risoluzione exception 4882/2023
-> - SH: Società: modificata transformation FullTextFiscalDescription per il footer dei report HR
-> - FI: TT00786/23 corretto bug che non gestiva correttamente i valori durante le operazioni di distruzione cespite e alienazione parziale cespite operando da dentro la scrittura contabile di prima nota.
-> - FI: Corretto report certificazione unica: non veniva riportato il codice fiscale del rappresentante firmatario della comunicazione  
-> - FI: salvataggio parametri di creazione registrazioni contabili da file Sdi (#TT00821/23)
-> - PR: l’esportazione cash flow per DocFinance non imposta più tutti i flag nei parametri automatici di generazione cash flow (#TT00891/23)
-> - WM: Big fixed. Corretto bug in stampa Inventario a quantità valorizzato, nei casi in cui si venissero usati come valorizzazione il flag costo medio (senza da anagrafica articolo) o il flag costo ultimo con anagrafica articolo.: (#TT00753/23)
-> - FI, SCM: Create registration from sdi document ( TT00935/23)
-> - Bizlink: revisione localizzazione testo riferimenti fattura in file Riba (#TT00888/23)
-> - CO: revisione comparazione riclassificazioni(TT00880/23)
-> - SCM: Per le righe della Fattura provenienti da Rientro Conto lavoro non è possibile effettuare l'Aggiornamento Listini (#TT00654/23)
-> - SH: nel fast start e nelle installazioni già attive, gestione dei record italiani di default della tabella festività (#TT00936/23)
-> - WM_StampaGestionale: Articoli Non Movimentati: Modifica del formato del campo Data Ultima Registrazione in dd/MM/yyyy.
-> - SD, SCM: Nella procedura di Duplica e Manutenzione, l’Aggiorna listini in Valore permette un numero di decimali libero (#TT00925/23)
+> - FI: resolución de la excepción 4882/2023  
+> - SH: Empresa: se modificó la transformación FullTextFiscalDescription para el pie de página de los informes de RRHH  
+> - FI: TT00786/23 se corrigió un error que no gestionaba correctamente los valores durante las operaciones de destrucción de activo y alienación parcial de activo operando desde dentro de la escritura contable de partida diaria.  
+> - FI: corregido el informe de certificación única: no se reflejaba el código fiscal del representante firmante de la comunicación  
+> - FI: almacenamiento de parámetros de creación de registros contables desde el archivo Sdi (#TT00821/23)  
+> - PR: la exportación del flujo de caja para DocFinance ya no establece todas las banderas en los parámetros automáticos de generación del flujo de caja (#TT00891/23)  
+> - WM: error corregido. se corrigió un error en la impresión de Inventario a cantidad valorizada, en los casos en los que se utilizaba como valorización la bandera de costo medio (sin desde el registro del artículo) o la bandera de costo último con registro de artículo. (#TT00753/23)  
+> - FI, SCM: creación de registro desde documento Sdi (TT00935/23)  
+> - Bizlink: revisión de la localización del texto de referencias facturas en el archivo Riba (#TT00888/23)  
+> - CO: revisión de comparación de reclasificaciones (TT00880/23)  
+> - SCM: para las líneas de la Factura provenientes de Renta de trabajo no es posible realizar la Actualización de Listas (#TT00654/23)  
+> - SH: en el inicio rápido y en las instalaciones ya activas, gestión de los registros italianos por defecto de la tabla de festividades (#TT00936/23)  
+> - WM_StampaGestionale: artículos no movidos: modificación del formato del campo Fecha Último Registro a dd/MM/yyyy.  
+> - SD, SCM: en el procedimiento de Duplicado y Mantenimiento, la Actualización de listas en Valor permite un número libre de decimales (#TT00925/23)  
 
 ### Patch 607.1-0008: 20/03/2023  
 
-> - SH: Società: Modificata trasformation FullTextFiscalDescription modificata la descrizione in caso di società con lingua croata
-> - SD: Inserito controllo su destinatario e destinazione in caso di Evasione ordini multiple in ddt o fattura (#TT00807/23)
-> - SCS: Correzione errore Quantità residua nei Materiali degli ordini di conto lavoro evasi in ddt (#TT00459/23)
-> - SCS: Inserita possibilità di evadere una quantità decimale nelle Consegna previste (#TT00817/23)
-> - SCS: Correzione errore uscente al cambio Fornitore in un Ordine di conto lavoro derivante da Rilascio ordini pianificati (#TT00823/23)
-> - SH: Errore Fluentis in procedura di duplicazione contatto ( TT00848/23)
-> - PR: Risolto errore in generazione file SDD (#TT00419/23)
-> - WM: Bug fixed. Corretto bug su “Anno Data Inserimento” del tipo codice serial number. (TT00757/23)
-> - SCM: Correzione ricerca Articolo manuale nelle righe dei ddt di acquisto (#TT00850/23)
-> - PM-SPRINT: sistemato l'aggiornamento automatico dello stato dopo aver confermato tutte le righe.  
-> - MPS: Bug fixed. Nei parametri della schedulazione generale, ora viene correttamente salvato anche flag "Considera disponibilità anche per il primo livello”.  (#TT00706/23)
-> - MPS: Bug fixed. Corretto bug in schedulazione generale nel caso in cui venga schedulata una commessa già in stato esecutivo. (#TT00688/23)
-> - MPS: Reso editabile il campo "Data/Tassativa" (FSProductionJobOrder.Date) all'interno delle commesse di produzione.: (#TT00776/23)
-> - SCM: Correzione della giacenza in caso di scarico ddt da magazzino successivo alla valorizzazione (#TT00804/23)
-> - SCM: Gli sconti finali inseriti in fattura vengono riportate nelle righe del ddt di acquisto e nella registrazione di magazzino collegati (#TT00417/23)
-> - SD: Nel caso di Creazione fattura da DDT e successivo scarico del DDT, la Visualizzazione giacenze viene aggiornata correttamente (#TT00802/23)  
-
+> - SH: Empresa: modificada la transformación FullTextFiscalDescription, se modifica la descripción en caso de empresa con lengua croata  
+> - SD: se insertó control sobre destinatario y destino en caso de Ejecución de múltiples pedidos en DDT o factura (#TT00807/23)  
+> - SCS: corrección de error de Cantidad residual en los Materiales de los pedidos de cuenta de trabajo cumplidos en DDT (#TT00459/23)  
+> - SCS: se inserta la posibilidad de cumplir una cantidad decimal en las Entregas previstas (#TT00817/23)  
+> - SCS: corrección de error al cambiar Proveedor en un Pedido de cuenta de trabajo derivado de la Liberación de pedidos planificados (#TT00823/23)  
+> - SH: error de Fluentis en el procedimiento de duplicación de contacto (TT00848/23)  
+> - PR: se resolvió un error en la generación del archivo SDD (#TT00419/23)  
+> - WM: error corregido. se corrigió un error en “Año Fecha de Inserción” del tipo de código de número de serie. (TT00757/23)  
+> - SCM: corrección de búsqueda de Artículo manual en las líneas de los DDT de compra (#TT00850/23)  
+> - PM-SPRINT: se solucionó la actualización automática del estado después de haber confirmado todas las líneas.  
+> - MPS: error corregido. en los parámetros de la programación general, ahora se guarda correctamente también la bandera "Considera disponibilidad también para el primer nivel". (#TT00706/23)  
+> - MPS: error corregido. se corrigió un error en la programación general en el caso de que se programe una tarea ya en estado ejecutivo. (#TT00688/23)  
+> - MPS: el campo "Fecha/Tasativa" (FSProductionJobOrder.Date) dentro de las tareas de producción se hace editable. (#TT00776/23)  
+> - SCM: corrección del saldo en caso de descarga de DDT del almacén después de la valorización (#TT00804/23)  
+> - SCM: los descuentos finales ingresados en la factura se reflejan en las líneas del DDT de compra y en el registro de almacén vinculados (#TT00417/23)  
+> - SD: en caso de Creación de factura desde DDT y posterior descarga del DDT, la Visualización de saldos se actualiza correctamente (#TT00802/23)  
 
 ### Patch 607.1-0007: 14/03/2023  
 
-> - SH: Modificata la priorità sulla trasformation FullTextFiscalDescription in modo che funzioni correttamente
-> - SCS: Bug Fixed. Corretto bug nella procedura di registrazione rientri (#TT00695/23)
-> - SCM: Risolto errore uscente al salvataggio del DDT dopo l'evasione di un ordine fornitore derivante da commessa (#TT00835/23)
-> - SD: SalesInvoice SDI- considerare il tipo di persona per il fornitore di trasferimenti (#TT00843/23)
-> - WM: Bug fixed. Corretto bug nella procedura di chiusura di magazzino (#TT00702/23)  
-
+> - SH: se modificó la prioridad en la transformación FullTextFiscalDescription para que funcione correctamente  
+> - SCS: corrección de error. se corrigió un error en el procedimiento de registro de ingresos (#TT00695/23)  
+> - SCM: se resolvió un error al guardar el DDT después de la ejecución de un pedido de proveedor derivado de una tarea (#TT00835/23)  
+> - SD: SalesInvoice SDI: considerar el tipo de persona para el proveedor de transferencias (#TT00843/23)  
+> - WM: error corregido. se corrigió un error en el procedimiento de cierre de almacén (#TT00702/23)  
 
 ### Patch 607.1-0006: 10/03/2023  
 
-> - FI: Scarica tassi di cambio for HR cambi valute (#TT00795/23)
-> - FI: Pagamento Fattura in Valuta ( TT00646/23)
-> - SCM: Negli articoli degli ordini fornitori, l’help di riga uscente digitando % nell’Articolo fornitore ha le colonne corrette (#TT00411/23)
-> - ARM: visualizzazione il percorso preferenziale e il percorso alternativo quando l'utente non ne ha diritto (mostrare il messaggio quando l'utente tenta di selezionare un percorso senza diritto)
-> - WM: Ottimizzato inserimento articoli nelle liste inventariali (#TT00562/23)
-> - FI: revisione calcolo ammortamenti per localizzazione serba (#TT00682/23)
-> - FI: Scarica tassi di cambio for HR cambi valute (#TT00795/23)
-> - SD: Stampa Fattura: Sistemato script in report (#TT00816/23)  
-
+> - FI: descarga de tipos de cambio para HR cambios de divisas (#TT00795/23)  
+> - FI: pago de factura en moneda (TT00646/23)  
+> - SCM: en los artículos de los pedidos de proveedores, la ayuda de línea sale al escribir % en el Artículo proveedor tiene las columnas correctas (#TT00411/23)  
+> - ARM: visualización de la ruta preferida y la ruta alternativa cuando el usuario no tiene derecho (mostrar el mensaje cuando el usuario intenta seleccionar un recorrido sin derecho)  
+> - WM: optimización de la inserción de artículos en las listas de inventario (#TT00562/23)  
+> - FI: revisión del cálculo de amortizaciones para la localización serbia (#TT00682/23)  
+> - FI: descarga de tipos de cambio para HR cambios de divisas (#TT00795/23)  
+> - SD: impresión de factura: se corrigió el script en el informe (#TT00816/23)  
 
 ### Patch 607.1-0005: 08/03/2023  
 
-> - Abilitazione modifica campo 'Note iniziali' nelle fatture di vendita anche dopo la creazione di file fatture ordinarie Sdi(rif ticket #TT00593/23)
-> - FI: Bilancio  (4 ugaglianze) Euroamount report  ( TT00750/23)
-> - MES: Risolto problema di inserimento lotti nella prima riga delle Segnalazioni di produzione (#TT00717/23)
-> - SD: I pesi articolo vengono correttamente riportati dall’ordine al ddt anche passando per il picking (#TT00722/23)
-> - WM: Risolto problema di duplicazione lotti a seguito del carico ddt di acquisto antecedente alla creazione della fattura (#TT00715/23)
-> - FI: Report CU: Risolto problema sulla città di nascita
-> - SCS: Bug Fixed. Corretto bug nella procedura di registrazione rientri.: (#TT00695/23)
-> - PM: Correzioni su calcolo quantità residua in progetto tab sal e dettaglio wip
-> - PM: gli interventi pianificati sono visibili in calendario, l’inserimento delle date di servizio inserite nel documento creato è stato ottimizzato (ticket 00347/23)
-> - PM: non è più possibile attivare confermato dallo scrum master se il servizio è in stato inserito, è adesso possibile inserire delle note nelle righe dello sprint (ticket 00463/23).
-> - SCM: Le fatture di acquisto non immediate non hanno i lotti obbligatori a prescindere dai parametri di magazzino (#TT00623/23)
-
+> - habilitación para modificar el campo 'Notas iniciales' en las facturas de venta incluso después de la creación de archivos de facturas ordinarias Sdi (ref ticket #TT00593/23)  
+> - FI: balance (4 igualdades) informe de monto en euros (TT00750/23)  
+> - MES: se resolvió un problema de inserción de lotes en la primera línea de las notificaciones de producción (#TT00717/23)  
+> - SD: los pesos de los artículos se reflejan correctamente desde el pedido al DDT incluso pasando por el picking (#TT00722/23)  
+> - WM: se resolvió el problema de duplicación de lotes tras la carga de DDT de compra anterior a la creación de la factura (#TT00715/23)  
+> - FI: informe CU: se resolvió un problema sobre la ciudad de nacimiento  
+> - SCS: error corregido. se corrigió un error en el procedimiento de registro de ingresos. (#TT00695/23)  
+> - PM: correcciones en el cálculo de la cantidad residual en el proyecto, pestaña de sal y detalle WIP  
+> - PM: las intervenciones programadas son visibles en el calendario, la inserción de las fechas de servicio incluidas en el documento creado se ha optimizado (ticket 00347/23)  
+> - PM: ya no es posible activar confirmación por parte del scrum master si el servicio está en estado insertado, ahora es posible insertar notas en las líneas del sprint (ticket 00463/23).  
+> - SCM: las facturas de compra no inmediatas no tienen lotes obligatorios independientemente de los parámetros de almacén (#TT00623/23)  
 
 ### Patch 607.1-0004: 02/03/2023  
 
-> - SD: Disabilitato il doppio clic su stampa biglietto POS (#TT00611/23)
-> - SD: Nell’evasione di più ordini in una fattura viene riportata solo la spesa Trasporto del primo ordine (#TT00631/23)
-> - SD: Il Peso di riga in ddt e fatture viene ricalcolato anche al variare della quantità alternativa nel caso di UM alternativa Tassativa (#TT00656/23)
-> - PM: ristabilita la possibilità di inserire un articolo codificato in un nodo di progetto work package node (#TT00643/23)  
-> - MPS: Bug fixed. Corretto bug sullo stato di testata delle commesse (#TT00662/23)  
-> - ARM: visualizzato un nuovo messaggio quando l'utente non ha i diritti per la transizione consentita   
-> - WM: Bug fixed. Corretto bug negli inventari fisici in merito al pulsante “Creazione lista inventario totale” (#TT00626/23)  
-> - MES: Bug fixed. Corretto bug nel calcolo della quantità dei materiali da consumare nel caso in cui vi siano molti decimali (#TT00670/23)
-> - WM: Correzione errore di giacenza nel caso di valorizzazione ordine in ddt e poi in fattura di acquisto (#TT00661/23)
-> - MPS: In definizione MPS, nel caso in cui sia attivato il controllo disponibilità, quando genero una commessa per un articolo di cui ho la completa disponibilità, questa commessa verrà creata con quantità zero e stato “Evaso” (#TT00662/23)
-> - ARM: Correzione per l'eliminazione di uno script; Correzione per la configurazione del divieto di kan; Aggiunta di nuovi campi per il divieto di kan.
-> - CO: revisione contabilizzazione rimanenze del controlling per gestione chiusura magazzini (#TT00554/23)
-> - SCM: Le fatture di acquisto non immediate non hanno i lotti obbligatori a prescindere dai parametri di magazzino (#TT00623/23)  
-
+> - SD: se desabilitó el doble clic en la impresión del recibo POS (#TT00611/23)  
+> - SD: en la ejecución de múltiples pedidos en una factura, solo se refleja el gasto de Transporte del primer pedido (#TT00631/23)  
+> - SD: el peso de línea en DDT y facturas se recalcula también al variar la cantidad alternativa en caso de UM alternativa Tasativa (#TT00656/23)  
+> - PM: se restableció la posibilidad de insertar un artículo codificado en un nodo de proyecto work package node (#TT00643/23)  
+> - MPS: error corregido. se corrigió un error en el estado de cabecera de los pedidos (#TT00662/23)  
+> - ARM: se mostró un nuevo mensaje cuando el usuario no tiene derechos para la transición permitida  
+> - WM: error corregido. se corrigió un bug en los inventarios físicos en referencia al botón de “Creación de lista de inventario total” (#TT00626/23)  
+> - MES: error corregido. se corrigió un bug en el cálculo de la cantidad de materiales a consumir en caso de que haya muchos decimales (#TT00670/23)  
+> - WM: corrección de error de existencia en caso de valorización del pedido en DDT y luego en factura de compra (#TT00661/23)  
+> - MPS: en la definición de MPS, en caso de que esté habilitado el control de disponibilidad, cuando genero un pedido para un artículo del que tengo la disponibilidad completa, este pedido se creará con cantidad cero y estado “Cumplido” (#TT00662/23)  
+> - ARM: corrección para la eliminación de un script; corrección para la configuración de la prohibición de kan; adición de nuevos campos para la prohibición de kan.  
+> - CO: revisión de la contabilidad de existencias del controlling para la gestión del cierre de almacenes (#TT00554/23)  
+> - SCM: las facturas de compra no inmediatas no tienen lotes obligatorios independientemente de los parámetros de almacén (#TT00623/23)  
 
 ### Patch 607.1-0003: 24/02/2023  
 
-> - MES: Bug fixed. Corretto bug nelle segnalazioni di produzione in merito alle causali e magazzini proposti (#TT00586/23)
-> - CO: revisione gestione date competenza e conti utilizzati nella contabilizzazione rimanenze, revisione comparazione riclassificazioni per fomule e dettagli dei dati rimanenze iniziali/finali (TT00554/23)  
-> - MES: Bug fixed. Risolto bug in lista prelievo materiali (#TT00620/23)
-> - MPS: Bug fixed. Corretto bug sugli stati delle righe delle commesse multiprodotto (#TT00607/23)
-> - SD: Correzione della duplica sconti articolo in caso di cambiamento tipo ddt di vendita (#TT00400/23)
-> - ARM: visualizzazione di un nuovo messaggio quando l'utente non ha diritto alla transizione consentita; correzione della proposta di un'accettazione unica della transizione e del nome dello script della transizione consentita
-> - FI: nella stampa della liquidazione iva periodica, quando si imposta il flag definitiva ora si assegna il prossimo periodo da stampare sulla base dell’ultimo inserito in tabella versamenti iva per l’anno (TT3266/22)
-> - SCS: Aggiunti i campi di magazzino e causale di "Consegna materiali terzisti wip" nei parametri di conto lavoro; questi sono presi in considerazione dalle procedure di creazione degli ordini di conto lavoro (dal rilascio e dall'ordine di produzione) se è attivo il flag WIP presente nei parametri degli ordini di produzione.: (#TT00583/23)
-> - SCS: Inserito il parametro relativo all'obbligatorietà dei lotti nei Parametri conto lavoro (#TT00360/23)
-> - FI: revisione gestione segni note di credito
-> - PM: i clienti fornitori per i quali è stata inserita una data fine validità >= alla data attività nella dichiarazione attività, non vengono proposti nel widget cliente fornitore del documento (#TT00555/23)  
+> - MES: error corregido. se corrigió un error en las notificaciones de producción relacionado con los motivos y almacenes propuestos (#TT00586/23)  
+> - CO: revisión de la gestión de fechas de mérito y cuentas utilizadas en la contabilidad de existencias, revisión de comparación de reclasificaciones para fórmulas y detalles de datos de existencias iniciales/finales (TT00554/23)  
+> - MES: error corregido. se resolvió un error en la lista de materiales (#TT00620/23)  
+> - MPS: error corregido. se corrigió un error en los estados de las líneas de los pedidos multiproducto (#TT00607/23)  
+> - SD: corrección de la duplicación de descuentos de artículos en caso de cambio de tipo DDT de venta (#TT00400/23)  
+> - ARM: visualización de un nuevo mensaje cuando el usuario no tiene derecho a la transición permitida; corrección de la propuesta de una única aceptación de la transición y del nombre del script de la transición permitida  
+> - FI: en la impresión de la liquidación de IVA periódica, cuando se establece la bandera de definitiva se asigna ahora el siguiente período a imprimir en función del último ingresado en la tabla de pagos de IVA para el año (TT3266/22)  
+> - SCS: se añadieron los campos de almacén y causal de "Entrega de materiales a terceros wip" en los parámetros de cuenta de trabajo; estos son considerados por los procedimientos de creación de órdenes de cuenta de trabajo (desde la liberación y el pedido de producción) si está activa la bandera WIP presente en los parámetros de los pedidos de producción. (#TT00583/23)  
+> - SCS: se agregó el parámetro relacionado con la obligatoriedad de lotes en los Parámetros de cuenta de trabajo (#TT00360/23)  
+> - FI: revisión de la gestión de signos en las notas de crédito  
+> - PM: los clientes proveedores para los cuales se ha ingresado una fecha de finalización de validez >= a la fecha de actividad en la declaración deactividad no se proponen en el widget de cliente proveedor del documento (#TT00555/23)  
 
 ### Patch 607.1-0002: 21/02/2023
 
-> - MPS: Corretto bug in schedulazione che generava ordini pianificati con “Quantità utilizzo” null (#TT00511/23) 
-> - WM: Corretto bug nella stampa inventario valorizzato nel caso in cui il cliente non avesse il sotto conto (#TT00528/23) 
-> - FI: revisione maschera ammortamento cespiti per calcolo giorni possesso e attribuzione data ammortamento in elaborazione (TT03183/22) 
-> - BZ: L’importazione standard dei Contatti CRM riporta la Persona Fisica (0) o Giuridica (1) in base ai parametri impostati nel foglio di importazione 
-> - CRM: Risolto problema di duplicazione Attività nei Contatti creati (#TT00574/23) 
-> - Import registrazioni da DocFinance, revisione inserimento pagamenti partite per esclusione righe sconto/abbuono 
-> - MES: Corretto bug nella lista di prelievo materiali (#TT00402/23)  
+> - MPS: corrección de error en la programación que generaba pedidos planificados con “Cantidad de uso” nula (#TT00511/23)  
+> - WM: corrección de error en la impresión de inventario valorizado en caso de que el cliente no tuviera la subcuenta (#TT00528/23)  
+> - FI: revisión de la máscara de amortización de activos para el cálculo de días de posesión y asignación de fecha de amortización en la elaboración (TT03183/22)  
+> - BZ: la importación estándar de los Contactos CRM refleja la Persona Física (0) o Jurídica (1) según los parámetros establecidos en el archivo de importación  
+> - CRM: se resolvió un problema de duplicación de Actividades en los Contactos creados (#TT00574/23)  
+> - importación de registros desde DocFinance, revisión de la inserción de pagos de partidas para exclusión de líneas de descuento/abono  
+> - MES: corrección de error en la lista de retirada de materiales (#TT00402/23)  
 
 ### Patch 607.1-0001: 17/02/2023
 
-> - Allineamento file xml Vat settlement per localizzazione HR  
-> - FI: revisione esportazione file F24(TT00559/23)  
+> - alineación del archivo xml de liquidación de IVA para la localización HR  
+> - FI: revisión de la exportación de archivo F24(TT00559/23)  
 > - CRM: 
-> - Cliccando Invia dalle Newsletter, è possibile scegliere se utilizzare la Lista di distribuzione oppure inserire i destinatari all'interno del Modello (#TT02968/22);    
-> - Creazione del filtro Oggetto nei tab Assegnato e Non assegnato delle Liste di distribuzione (#TT03113/23).
+> - al hacer clic en Enviar desde los Boletines, se puede elegir si usar la Lista de distribución o insertar los destinatarios dentro del Modelo (#TT02968/22);  
+> - creación del filtro Objeto en las pestañas Asignado y No asignado de las Listas de distribución (#TT03113/23).

@@ -1,8 +1,8 @@
 ---
-title: States navigator
+title: Navegador de estados (States navigator)
 sidebar_position: 5
 ---
 
-**States navigator** è un'interfaccia per la gestione dei gruppi di stati; è possibile infatti definire per ogni oggetto un gruppo di stati con relative transizioni & action.
+**Navegador de estados (States navigator)** es una interfaz para la gestión de grupos de estados; de hecho, es posible definir para cada objeto un grupo de estados con las transiciones y acciones correspondientes.
 
-Inoltre, è abilitato anche il cambio di stato nella maggior parte dei form di ricerca documenti.
+Además, también está habilitado el cambio de estado en la mayoría de los formularios de búsqueda de documentos.

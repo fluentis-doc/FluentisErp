@@ -1,10 +1,10 @@
 ---
-title: Dichiarazioni di produzione
+title: dichiarazioni di produzione
 sidebar_position: 40
 ---
 
-Le procedura di produzione, al momento della rilevazione di una segnalazione di produzione (un avanzamento ad esempio), sulla base delle macchine e/o dei gruppi manodopera e dei relativi agganci ai centri, andrà a riportare nella dichiarazione di produzione il collegamento al centro relativo.
+El procedimiento de producción, en el momento de la detección de un informe de producción (un avance, por ejemplo), basándose en las máquinas y/o los grupos de mano de obra y sus respectivos enlaces a los centros, incluirá en la declaración de producción el vínculo al centro correspondiente.
 
-:::tip Nota
-Dalle dichiarazioni di produzione andremo a leggere i tempi (macchina, uomo e attrezzaggio uomo e macchina) piuttosto che le quantità prodotte, attraverso la procedura di ***Ripresa dati da produzione***.
+:::tip Nota (Nota)
+De las declaraciones de producción se leerán los tiempos (máquina, hombre y preparación de hombre y máquina) en lugar de las cantidades producidas, a través del procedimiento de **ripresa dati da produzione***.
 :::

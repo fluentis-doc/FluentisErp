@@ -1,54 +1,50 @@
 ---
-title: Fatturazione elettronica con soggetti non residenti
+title: fatturazione elettronica con soggetti non residenti
 sidebar_position: 1
 ---
 
-La funzione **Amministrazione > Dichiarazioni > Fatturazione elettronica con soggetti non residenti** genera i file XML relativi ai documenti di acquisto e di vendita da inviare (in alternativa all'invio tramite il medesimo tracciato previsto per le fatture elettroniche con soggetti residenti in Italia) all'Agenzia delle Entrate, in sostituzione dell'adempimento dello spesometro (adempimento di fatto soppresso o meglio attualmente denominato comunemente "esterometro" per distinguere quel che ne rimane).
+La función **Administración > Declaraciones > fatturazione elettronica con soggetti non residenti (Amministrazione > Dichiarazioni > Fatturazione elettronica con soggetti non residenti)** genera los archivos XML relacionados con los documentos de compra y venta a enviar (como alternativa al envío a través de la misma estructura prevista para las facturas electrónicas con sujetos residentes en Italia) a la Agencia de Ingresos, en sustitución del cumplimiento del spesometro (cumplimiento que de hecho ha sido suprimido o mejor dicho que actualmente se denomina comúnmente "esterometro" para distinguir lo que queda de él).
 
-L'accesso alla funzione visualizza una maschera suddivisa in una sezione superiore di testata, nella quale è possibile impostare una serie di filtri da utilizzare per la visualizzazione e la gestione dei file XML da inviare:
+El acceso a la función muestra una máscara dividida en una sección superior de encabezado, donde es posible establecer una serie de filtros a utilizar para la visualización y gestión de los archivos XML a enviar:
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image01.png)
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image02.png)
 
-- **Stato SdI**: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI.
+- **stato sdi**: acoge la descripción del estado del documento, reportando tanto el estado de gestión interno de Fluentis como el estado reportado por Fluentis Business Hub y adquirido directamente de SdI.
 
-- **Nome file SdI**: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI ().
+- **nome file sdi**: el nombre del archivo que se crea en el momento en que el documento avanza al estado GENERADA; en el formato original o posteriormente a la aplicación de la firma digital, representa el archivo de factura a enviar a SdI ().
 
-- **Sdi Id**: l'identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
+- **Sdi Id**: el identificador único que el SdI asigna al documento en el momento de la recepción.
 
-- **Data ricezione Sdi**: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file
+- **data ricezione sdi**: la fecha en la que el sistema de intercambio ha recibido el documento enviado. Esta información se obtiene de la notificación de recepción que el SdI emite tras recibir la entrega y antes de proceder con los controles formales del archivo.
 
-- **Data chiusura**: la data di chiusura del flusso di gestione (es. documento Cosegnato)
+- **data chiusura**: la fecha de cierre del flujo de gestión (ej. documento Entregado).
 
-**- Data ultimo evento**: la data dell'ultimo cambio stato avvenuto sul file o manualmente o per effetto dell'avanzamento dell'elaborazione sul SdI
+**data ultimo evento**: la fecha del último cambio de estado ocurrido en el archivo, ya sea manualmente o como resultado del avance del procesamiento en el SdI.
 
-Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando la funzione **Registro documenti Sdi ![](/img/neutral/common/legenda.png)**  è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione **Stampa ![](/img/neutral/common/print.png)** stampare il documento XML abbinato, con le funzioni **Scarica allegato** o **Scarica il contenuto del registro** ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image05.png) eseguire il download del file XML.
+En el menú de Ribbon, en la sección dedicada a la facturación electrónica, utilizando la función **Registro de documentos SdI ![](/img/neutral/common/legenda.png)** es posible visualizar las acciones realizadas sobre el documento seleccionado, con la función **Imprimir ![](/img/neutral/common/print.png)** se puede imprimir el documento XML asociado, y con las funciones **Descargar adjunto** o **Descargar el contenido del registro** ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image05.png) se puede ejecutar la descarga del archivo XML.
 
-Con l'azione doppio click in corrispondenza di una riga di risultato della griglia, si accede al dettaglio della registrazione contabile selezionata. Anche nella registrazione contabile è possibile visionare e cambiare lo stato dell'elaborazione del file rispetto all'invio al SdI (utilizzare la combo box dedicata al cambio stati specifico per la fatturazione elettronica posta nella ribbon bar).
+Con una acción de doble clic en una línea de resultado de la cuadrícula, se accede al detalle de la contabilización seleccionada. También en la contabilización es posible visualizar y cambiar el estado del procesamiento del archivo respecto al envío al SdI (utilizando la combo box dedicada al cambio de estados específico para la facturación electrónica ubicada en la barra de ribbon).
 
-La ricerca eseguibile dalla presente form estrae, dunque, tutte le fatture (**contabilizzate**) collegate a causali contabili aventi come tipo movimento (ai fini iva) Iva vendite intra cee oppure Iva vendite extra cee o che abbiano valorizzato il campo “Conto Partner” nel pannello Parametri:
+La búsqueda ejecutable desde este formulario extrae, por lo tanto, todas las facturas (**contabilizadas**) asociadas a causales contables que tengan como tipo de movimiento (a efectos de IVA) IVA ventas intra CE o IVA ventas extra CE o que hayan valorizado el campo "Cuenta Socio" en el panel de Parámetros:
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image06.png)
 
-I documenti ricercati sono **soltanto quelli NON già inviati** tramite il flusso della fatturazione elettronica con soggetti non residenti secondo il tracciato utilizzato per quelle italiane.
+Los documentos buscados son **solo aquellos NO ya enviados** a través del flujo de facturación electrónica con sujetos no residentes según la estructura utilizada para las italianas.
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image07.png)
 
-Qualora non sia configurato nell'impianto il servizio Fluentis Business Hub, sarà possibile accedere alla funzione ![](/img/neutral/common/legenda.png)  e scaricare il file XML generato  da utilizzare esternamente a Fluentis.
+Si el servicio Fluentis Business Hub no está configurado en la instalación, será posible acceder a la función ![](/img/neutral/common/legenda.png) y descargar el archivo XML generado para utilizarlo externamente a Fluentis.
 
-Il file XML creato durante la gestione degli stati da parte dell'operatore dovrà essere firmato, pertanto, se attivo il servizio Fluentis Business Hub, una copia del file sarà creata nella cartella indicata nelle impostazioni relative alla , dove è necessario indicare una cartella di appoggio per depositare i file XML da firmare e recuperare successivamente i file firmati:
+El archivo XML creado durante la gestión de los estados por parte del operador deberá ser firmado; por lo tanto, si el servicio Fluentis Business Hub está activo, se creará una copia del archivo en la carpeta indicada en las configuraciones relacionadas, donde es necesario indicar una carpeta provisional para depositar los archivos XML para firmar y recuperar posteriormente los archivos firmados:
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image09.png)
 
-Al terminine dell'invio al SdI, il file potrà assumere due stati:
+Al finalizar el envío al SdI, el archivo podrá asumir dos estados:
 
--      **Non conforme:** il file contiene segnalazioni per cui non può essere accettato dal SdI. In questi casi è necessario accedere al  ![](/img/neutral/common/legenda.png)  **, **nel pannello Registro documenti SdI e visualizzare la motivazione di non conformità, correggere l'eventuale anomalia e inviare nuovamente il file rigenerato.
+- **non conforme**: el archivo contiene alertas por las que no puede ser aceptado por el SdI. En estos casos, es necesario acceder al ![](/img/neutral/common/legenda.png), en el panel Registro de documentos SdI y visualizar la razón de no conformidad, corregir la posible anomalía y enviar nuevamente el archivo regenerado.
 
-**Consegnata:** il file è stato correttamente inviato ed acquisito dal SdI. In questo caso sarà possibile prendere visione dell'esito della consegna accedendo al pannello pannello Registro documenti SdI della funzione  ![](/img/neutral/common/legenda.png)  per ilfile selezionato.
+**consegnata**: el archivo ha sido enviado correctamente y adquirido por el SdI. En este caso, será posible ver el resultado de la entrega accediendo al panel Registro de documentos SdI de la función ![](/img/neutral/common/legenda.png) para el archivo seleccionado.
 
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rbf4cul7SIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rbf4cul7SIA" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

@@ -1,7 +1,7 @@
-- **Duplica**: il pulsante consente la creazione di una copia di un documento, riportando tutte le condizioni del documento di origine, ma con i dati attuali.  
-Utilizzata per frequenti spedizioni di merci similari dello stesso soggetto documento.
+- **duplica**: el botón permite la creación de una copia de un documento, replicando todas las condiciones del documento original, pero con los datos actuales.  
+Se utiliza para envíos frecuentes de mercancías similares del mismo sujeto documento.
 
-> *Procedura*:  
-1. selezionare il documento da duplicare e cliccare sul pulsante di **Duplica**;  
-2. l'applicazione inizierà la creazione del documento e aprirà la finestra pop-up **Riepilogo duplica** dove completare i dati;    
-3. click **OK** per confermare l'operazione.
+> *procedura*:  
+1. seleccionar el documento a duplicar y hacer clic en el botón de **duplica**;  
+2. la aplicación comenzará la creación del documento y abrirá la ventana emergente **riepilogo duplica** donde completar los datos;  
+3. clic en **OK** para confirmar la operación.

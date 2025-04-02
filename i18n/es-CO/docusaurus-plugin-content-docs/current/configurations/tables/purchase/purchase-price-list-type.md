@@ -1,16 +1,16 @@
 ---
-title: Tipi listino fornitori
+title: tipi listino fornitori
 sidebar_position: 7
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi listino fornitori** e viene utilizzata per indicare le diverse tipologie di listini fornitori.
+La tabla se abre mediante el camino **Tablas > Compras > tipi listino fornitori (Tabelle > Acquisti > Tipi listino fornitori)** y se utiliza para indicar las diferentes tipologías de listas de proveedores.  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtrado y de una de resultados. Una vez que se han configurado todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**.  
 
-**Codice/Descrizione**: campi obbligatori per definire il tipo di listino.
+**codice/descrizione**: campos obligatorios para definir el tipo de lista.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

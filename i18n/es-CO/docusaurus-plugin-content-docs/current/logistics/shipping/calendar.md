@@ -1,64 +1,58 @@
 ---
-title: Calendario
+title: calendario
 sidebar_position: 7
 ---
 
-:::important A cosa serve
-Il **planning** delle spedizioni è uno strumento fondamentale per ottimizzare la gestione logistica all'interno di un'azienda. Esso consente di pianificare, monitorare e coordinare tutte le attività legate alla spedizione delle merci, garantendo una distribuzione efficiente delle risorse e un'ottimizzazione dei tempi.      
-Grazie alla visualizzazione di dati cruciali come orari, vettori, automezzi e clienti, il **planning** facilita la programmazione delle attività quotidiane, riducendo i ritardi e migliorando la puntualità delle consegne. Inoltre, integrando funzionalità come la gestione dei periodi di inattività e l'aggiornamento dello stato delle spedizioni, offre un quadro completo e aggiornato delle operazioni logistiche, favorendo una migliore capacità decisionale e una maggiore efficienza operativa.
+:::important ¿Para qué sirve? (A cosa serve)
+La **planificación** de los envíos es una herramienta fundamental para optimizar la gestión logística dentro de una empresa. Permite planificar, monitorear y coordinar todas las actividades relacionadas con el envío de mercancías, garantizando una distribución eficiente de los recursos y una optimización de los tiempos.  
+Gracias a la visualización de datos cruciales como horarios, transportistas, vehículos y clientes, la **planificación** facilita la programación de las actividades diarias, reduciendo retrasos y mejorando la puntualidad de las entregas. Además, al integrar funcionalidades como la gestión de periodos de inactividad y la actualización del estado de los envíos, ofrece un panorama completo y actualizado de las operaciones logísticas, favoreciendo una mejor capacidad de decisión y una mayor eficiencia operativa.
 :::
 
-Il calendario delle spedizioni si trova in: Logistica > Spedizioni > Calendario
+El calendario de envíos se encuentra en: Logística > Envíos > calendario
 
-Il **calendario delle spedizioni** mostra tutte le spedizioni inserite a sistema, raggruppate in vista timeline in base a autista/vettore/automezzo/cliente/nessun raggruppamento.              
-All'apertura l'intervallo visualizzato sarà data odierna + 7 giorni se sono presenti spedizioni in tal periodo, altrimenti verrà mostrato il primo intervallo successivo in cui sono presenti spedizioni. 
+El **calendario de envíos** muestra todos los envíos ingresados en el sistema, agrupados en vista de línea de tiempo en función de motorista/transportista/vehículo/cliente/sin agrupamiento.  
+Al abrir, el intervalo visualizado será la fecha actual + 7 días si hay envíos en ese periodo; de lo contrario, se mostrará el primer intervalo posterior en el que hay envíos.  
 
-Oltre alle spedizioni, nel caledario sono mostrati i periodi di inattività degli automezzi e dei vettori. 
+Además de los envíos, en el calendario se muestran los periodos de inactividad de los vehículos y transportistas.  
 
-Nella colonna a sinistra sono presenti i dati relativi a **autista/vettore/automezzo/cliente in base al raggruppamento scelto**, e nella griglia del calendario sono posizionate le varie spedizioni.            
-Anche se la durata della spedizione è anche solo di un'ora, nel calendario questa verrà mostrata come giornaliera, per facilitarne la visualizzazione. Nel caso si volesse invece avere una vista più puntuale, dalla ribbon bar cliccare su **Vista timeline oraria**.                    
-In questo modo la spedizione verrà mostrata con la dimensione effettivamente corrispondente alla sua durata. Questa opzione può essere utile nel caso si utilizzi lo zoom in/zoom out (ctrl + scroll del mouse) per andare nel massimo dettaglio orario della giornata.               
-Per tornare alla visualizzazione delle spedizioni in modalità giornaliera, cliccare sul bottone **Vista timeline giornaliera** nella ribbon bar.
+En la columna de la izquierda se encuentran los datos relativos a **motorista/transportista/vehículo/cliente según el agrupamiento elegido**, y en la cuadrícula del calendario están posicionados los diversos envíos.  
+Incluso si la duración del envío es de solo una hora, en el calendario se mostrará como diario, para facilitar su visualización. Si se desea tener una vista más puntual, desde la barra de herramientas hacer clic en **Vista de línea de tiempo horaria (Vista timeline oraria)**.  
+De esta manera, el envío se mostrará con el tamaño que realmente corresponde a su duración. Esta opción puede ser útil si se utiliza el zoom in/zoom out (ctrl + desplazamiento del mouse) para ir al detalle horario máximo del día.  
+Para volver a la visualización de los envíos en modo diario, haga clic en el botón **Vista de línea de tiempo diaria (Vista timeline giornaliera)** en la barra de herramientas.
 
-Nella ribbon sono inoltre presenti i seguenti pulsanti: 
+En la barra de herramientas también están presentes los siguientes botones:  
 
-- Ricerca: effettua un refresh della visualizzazione
+- **ricerca**: refresca la visualización.
 
-- Visualizza per vettore: nella colonna a sinistra verranno mostrati prima tutti i vettori e le relative spedizioni; se nelle righe di groupage non è presente il vettore, verrà considerato il vettore presente nella testata della spedizione. 
->> Se il vettore non è indicato da alcuna parte, in coda alla lista dei vettori mostrati, verranno elencati i relativi autisti; se non presenti gli autisti nelle righe di groupage, verrà considerato l'autista presenti nella testata della spedizione. 
->> Se l'autista non è indicato da alcuna parte, in coda alla lista dei vettori mostrati, verranno elencati i clienti.
+- **Ver por transportista (Visualizza per vettore)**: en la columna de la izquierda se mostrarán primero todos los transportistas y los envíos correspondientes; si en las filas de agrupamiento no figura el transportista, se considerará el transportista presente en la cabecera del envío.  
+>> Si el transportista no está indicado en ninguna parte, al final de la lista de transportistas mostrados, se enumerarán los respectivos motoristas; y si los motoristas no están presentes en las filas de agrupamiento, se considerará el motorista presente en la cabecera del envío.  
+>> Si el motorista no está indicado en ninguna parte, al final de la lista de transportistas mostrados, se enumerarán los clientes.
 
-- Visualizza per autista: nella colonna a sinistra verranno mostrati prima tutti gli autisti e le relative spedizioni; se nelle righe di groupage non è presente l'autista verrà considerato il l'autista presente nella testata della spedizione. 
->> Se l'autista non è indicato da alcuna parte, in coda alla lista degli autisti mostrati, verranno elencati i relativi vettori; se non presenti i vettori nelle righe di groupage, verrà considerato il vettore presente nella testata della spedizione. 
->> Se il vettore non è indicato da alcuna parte, in coda alla lista degli autisti mostrati, verranno elencati i clienti.
+- **Ver por motorista (Visualizza per autista)**: en la columna de la izquierda se mostrarán primero todos los motoristas y los envíos correspondientes; si en las filas de agrupamiento no figura el motorista, se considerará el motorista presente en la cabecera del envío.  
+>> Si el motorista no está indicado en ninguna parte, al final de la lista de motoristas mostrados, se enumerarán los respectivos transportistas; y si los transportistas no están presentes en las filas de agrupamiento, se considerará el transportista presente en la cabecera del envío.  
+>> Si el transportista no está indicado en ninguna parte, al final de la lista de motoristas mostrados, se enumerarán los clientes.
 
-- Visualizza per cliente: nella colonna a sinistra verranno mostrati tutti i clienti; se non presenti, ci sarà una voce di tipo "altro" che raggrupperà tutte le spedizioni senza cliente assegnato. 
+- **Ver por cliente (Visualizza per cliente)**: en la columna de la izquierda se mostrarán todos los clientes; si no hay, habrá una entrada de tipo "otro" que agrupará todos los envíos sin cliente asignado.
 
-- Visualizza per automezzo: nella colonna a sinistra verranno mostrati tutti gli automezzi; se nelle righe di groupage non è presente l'automezzo, verrà considerato l'automezzo presente nella testata della spedizione. 
->> se non presente, ci sarà una voce di tipo "altro" che raggrupperà tutte le spedizioni senza automezzo assegnato. 
+- **Ver por vehículo (Visualizza per automezzo)**: en la columna de la izquierda se mostrarán todos los vehículos; si en las filas de agrupamiento no figura el vehículo, se considerará el vehículo presente en la cabecera del envío.  
+>> Si no está presente, habrá una entrada de tipo "otro" que agrupará todos los envíos sin vehículo asignado.
 
-- Nessun raggruppamento: verrà mostrato un calendario per tipo spedizione.
+- **nessun raggruppamento**: se mostrará un calendario por tipo de envío.
 
-Con il tasto destro è possibile inserire una nuova spedizione, oppure un periodo di inattività per autista o automezzo. 
+Con el botón derecho es posible ingresar un nuevo envío, o bien un periodo de inactividad para el motorista o vehículo.  
 
-A sinistra sono presenti i filtri per: 
-- tipo trasporto: mittente, destinatario, vettore
-- automezzo
-- targa
-- numero di tracking
-- cliente
-- vettore
-- autista
-- Riferimento ordini cliente
-- Sito produttivo
+A la izquierda, están presentes los filtros para:  
+- tipo de transporte: remitente, destinatario, transportista  
+- vehículo  
+- matrícula  
+- número de seguimiento  
+- cliente  
+- transportista  
+- motorista  
+- Referencia de pedidos de cliente  
+- Sitio productivo  
 
-I colori delle spedizioni rappresentano lo [Stato della spedizione](/docs/configurations/tables/logistics/shipping-states).       
-Con tasto destro sulla spedizione, è possibile avanzare lo stato. 
+Los colores de los envíos representan el [Estado del envío](/docs/configurations/tables/logistics/shipping-states).  
+Con el botón derecho sobre el envío, es posible avanzar el estado.  
 
-I colori assegnati all'elenco di autisti/automezzi/vettori/clienti sono casuali e vengono assegnati all'apertura del calendario, fino al prossimo cambio vista.
-
-
-
-
-
-
+Los colores asignados a la lista de motoristas/vehículos/transportistas/clientes son aleatorios y se asignan al abrir el calendario, hasta el próximo cambio de vista.

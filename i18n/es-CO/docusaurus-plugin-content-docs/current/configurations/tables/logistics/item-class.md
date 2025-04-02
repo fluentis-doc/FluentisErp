@@ -1,57 +1,57 @@
 ---
-title: Classi articolo
+title: classi articolo
 sidebar_position: 12
 ---
 
-:::important A cosa serve
-La Classe Articolo in Fluentis è un elemento cruciale per la gestione efficiente degli articoli. Essa consente di raggruppare articoli omogenei, facilitandone la rintracciabilità e permettendo analisi dettagliate.        
-Ogni articolo viene identificato in modo univoco grazie alla combinazione tra la Classe, un dato precodificato, e un Codice alfanumerico. In alcuni casi, la classe articolo può essere configurata per generare automaticamente sia il codice che la descrizione degli articoli appartenenti a quella classe, agevolando così i processi di codifica.           
-Inoltre, è possibile gestire le classi articolo, personalizzandole in base alle esigenze operative. Questo approccio garantisce una maggiore efficienza nella classificazione e nella gestione dei prodotti.     
+:::important ¿Para qué sirve? (A cosa serve)  
+La Clase de Artículo en Fluentis es un elemento crucial para la gestión eficiente de los artículos. Permite agrupar artículos homogéneos, facilitando así su trazabilidad y permitiendo análisis detallados.  
+Cada artículo se identifica de manera única gracias a la combinación entre la Clase (un dato precodificado) y un Código alfanumérico. En algunos casos, la clase de artículo puede configurarse para generar automáticamente tanto el código como la descripción de los artículos pertenecientes a esa clase, facilitando así los procesos de codificación.  
+Además, es posible gestionar las clases de artículo, personalizándolas según las necesidades operativas. Este enfoque garantiza una mayor eficiencia en la clasificación y gestión de los productos.    
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Classi articolo**.  
+La tabla se encuentra en la ruta **Tablas > Logística > classi articolo**.  
 
-La tabella permette di gestire la codifica delle diverse classi articolo per poter effettuare il raggruppamento degli articoli.
+La tabla permite gestionar la codificación de las diferentes clases de artículo para poder realizar el agrupamiento de los artículos.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Classi articolo**
+**Búsqueda de classi articolo (Ricerca Classi articolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se hayan establecido todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Classi articolo**
+**Inserción de classi articolo (Inserimento Classi articolo)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-#### Campi specifici 
+#### Campos específicos 
 
-> **Codice**: indica il codice della classe articoli;  
-> **Descrizione**: indica la descrizione della classe articoli;  
-> **Cambiamento classe**: se attivo, permette di modificare la classe articolo di un articolo anche se già movimentato;  
-> **Famiglia Prodotti**: indica il codice della famiglia prodotti che include la classe articolo;  
-> **Descrizione Famiglia Prodotti**: indica la descrizione della famiglia prodotti che include la classe articolo.  
+> **codice**: indica el código de la clase de artículos;  
+> **descrizione**: indica la descripción de la clase de artículos;  
+> **cambiamento classe**: si está activo, permite modificar la clase de artículo de un artículo ya movido;   
+> **famiglia prodotti**: indica el código de la familia de productos que incluye la clase de artículo;   
+> **descrizione famiglia prodotti**: indica la descripción de la familia de productos que incluye la clase de artículo.  
 
-*Nella parte destra della form invece, sono presenti tre ulteriori tab:*
+*Nueva parte de la forma a la derecha contiene tres pestañas adicionales:*
 
-- **Codificatore articolo**: permette di guidare l’operatore nella codifica di un nuovo articolo per quella classe articolo; sarà possibile definire delle regole di codifica utilizzando i seguenti campi:   
-> **Ordinamento**: indica l’ordinamento del singolo componente della codifica;   
-> **Tipo**: indica il tipo di dato da utilizzare nella codifica;   
-> **ExtraData**: indica il codice di extra data utilizzato nella codifica;   
-> **Utilizza in codice**: se attivo, questo elemento sarà impiegato nel codice articolo;  
-> **Utilizza in descrizione**: se attivo, questo elemento sarà impiegato nella descrizione dell’articolo;  
-> **Proprietà codice**: indica la proprietà dell'oggetto business;   
-> **Descrizione proprietà**: indica la descrizione della proprietà di oggetto business;  
-> **Lunghezza**: indica la lunghezza del componente del codice;   
-> **Separatore**: indica il carattere da usare come separatore;   
-> **Char Riempimento Progressivo**: indica il carattere da utilizzare come riempimento del progressivo;   
-> **Valore iniziale progressivo**: indica il valore iniziale del progressivo della codifica;   
-> **Valore Fisso**: Indica il valore fisso da inserire nella codifica;   
-> **Propagazione**: indica che è attiva la propagazione del dato;   
-> **Obbligatorio**: indica che il dato è obbligatorio.   
+- **codificatore articolo**: permite guiar al operador en la codificación de un nuevo artículo para esa clase de artículo; será posible definir reglas de codificación utilizando los siguientes campos:  
+> **ordinamento**: indica el orden del componente individual de la codificación;  
+> **tipo**: indica el tipo de dato a utilizar en la codificación;  
+> **ExtraData**: indica el código de dato extra utilizado en la codificación;   
+> **utilizza in codice**: si está activo, este elemento se utilizará en el código del artículo;  
+> **utilizza in descrizione**: si está activo, este elemento se utilizará en la descripción del artículo;  
+> **proprietà codice**: indica la propiedad del objeto de negocio;  
+> **descrizione proprietà**: indica la descripción de la propiedad del objeto de negocio;  
+> **lunghezza**: indica la longitud del componente del código;  
+> **separatore**: indica el carácter a utilizar como separador;  
+> **char riempimento progressivo**: indica el carácter a utilizar como relleno del progresivo;  
+> **valore iniziale progressivo**: indica el valor inicial del progresivo de la codificación;  
+> **valore fisso**: indica el valor fijo a insertar en la codificación;  
+> **propagazione**: indica que está activa la propagación del dato;  
+> **obbligatorio**: indica que el dato es obligatorio.   
 
-- **Extra Data**: permette di gestire gli extra data legati a quella classe articolo;
-*Per quanto riguarda le funzionalità presenti negli Extradata si rimanda all'articolo Extradata.*
+- **extra data**: permite gestionar los datos extra relacionados con esa clase de artículo;  
+*En cuanto a las funcionalidades presentes en los Datos Extra, se hace referencia al artículo sobre Datos Extra (Extradata).*
 
-- **Descrizione in lingua**: permette di inserire la traduzione della descrizione della classe articolo in una nuova lingua.
+- **descrizione in lingua**: permite insertar la traducción de la descripción de la clase de artículo en un nuevo idioma.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

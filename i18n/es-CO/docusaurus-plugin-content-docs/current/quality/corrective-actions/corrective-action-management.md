@@ -1,365 +1,334 @@
 ---
-title: Azione correttiva
+title: azione correttiva
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Azioni correttive > Nuova Azione correttiva** oppure è possibile eseguirla dalla **Ricerca Azioni correttive**.   
+La gestión se encuentra en la ruta **Calidad > Acciones correctivas > Nueva azione correttiva** o se puede ejecutar desde **Búsqueda de Acciones correctivas**.
 
+:::important ¿Para qué sirve? (A cosa serve)
+Las acciones correctivas son medidas adoptadas para resolver problemas o desviaciones en los procesos y prevenir su repetición. Se implementan después de identificar un problema, analizando la causa raíz y llevando a cabo cambios para mejorar el rendimiento futuro. Son fundamentales para mantener y mejorar la calidad y la eficiencia en los procesos empresariales.  
+Las *Acciones correctivas* deben:  
+- ser apropiadas a los efectos de las no conformidades encontradas;  
+- asegurar que las no conformidades no se repitan;  
+- examinar la efectividad de las acciones correctivas llevadas a cabo.
 
-:::important A cosa serve
-Le azioni correttive sono misure adottate per risolvere problemi o deviazioni nei processi e prevenire il loro ripetersi. Vengono implementate dopo l’identificazione di un problema, analizzando la causa radice e attuando cambiamenti per migliorare le performance future. Sono fondamentali per mantenere e migliorare la qualità e l'efficienza nei processi aziendali.   
-Le *Azioni correttive* devono:   
-- essere appropriate agli effetti delle non conformità riscontrate;   
-- assicurare che le non conformità non si ripetano;   
-- esaminare l'efficacia delle azioni correttive effettuate.
-
-A standard è disponibile la reportistica di:   
-> **Scheda Azione correttiva**: scheda dell'*Azione correttiva*.   
+Se encuentra disponible la reportística de:   
+> **Ficha de azione correttiva**: ficha de la *azione correttiva*.   
 :::
 
 
-## Pulsanti di comando
+## Botones de comando
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Guardar (Salva)
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dell'*Azione correttiva* visualizzata.   
-
-
-### ![](/img/neutral/common/save.png) Salva e Nuova
-
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dell'*Azione correttiva* visualizzata e apre una nuova form creando una nuova *Azione correttiva*.   
+Al presionar este botón se guardan toda la información modificada de la *azione correttiva* mostrada.
 
 
-## Gestione dati
+### ![](/img/neutral/common/save.png) Guardar y Nueva (Salva e Nuova)
+
+Al presionar este botón se guardan toda la información modificada de la *azione correttiva* mostrada y se abre un nuevo formulario creando una nueva *azione correttiva*.
 
 
-## Dati di testata del documento
+## Gestión de datos
 
-Le informazioni gestite sono:   
-> **Tipo azione**: è il *Tipo azione* (dato obbligatorio).   
-> All'inserimento di una nuova *Azione correttiva* viene proposto il *Tipo azione* indicata nei *Parametri azioni correttive*.   
+
+## Datos de cabecera del documento
+
+La información gestionada es:  
+> **tipo azione**: es el *Tipo de acción* (dato obligatorio).  
+> Al ingresar una nueva *azione correttiva* se propone el *Tipo de acción* indicado en los *Parámetros de acciones correctivas*.   
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* dell'*Azione correttiva* (dati obbligatori).   
-> All'inserimento di una nuova *Azione correttiva*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo azione*.   
+> **anno/numero/data**: son el *Año*, *Número* y *Fecha* de la *azione correttiva* (datos obligatorios).  
+> Al ingresar una nueva *azione correttiva*:  
+> - la *Fecha* se propone igual a la fecha actual;  
+> - el *Año* y el *Número* se proponen en función de la *Fecha* y la *Numeración* asociada al *Tipo de acción*.   
 >
-> **Settore**: è il codice del *Settore*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposto il *Settore* indicato nei *Parametri azioni correttive*.   
+> **settore**: es el código del *Sector*.  
+> Al ingresar una nueva *azione correttiva* se propone el *Sector* indicado en los *Parámetros de acciones correctivas*.   
 >
-> **Area coinvolta**: è il codice dell'*Area* (dato obbligatorio).   
-> All'inserimento di una nuova *Azione correttiva* viene proposta l'*Area* indicata nei *Parametri azioni correttive*.   
+> **area coinvolta**: es el código del *Área* (dato obligatorio).  
+> Al ingresar una nueva *azione correttiva* se propone el *Área* indicada en los *Parámetros de acciones correctivas*.
 
 
-## Testata
+## Cabecera
 
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile dell'*Azione correttiva*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposta la *Persona responsabile* indicata nei *Parametri azioni correttive*.   
+La información gestionada es:  
+> **persona responsabile**: es el *Empleado* responsable de la *azione correttiva*.  
+> Al ingresar una nueva *azione correttiva* se propone la *Persona responsable* indicada en los *Parámetros de acciones correctivas*.   
 >
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile dell'*Azione correttiva*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposta la *Funzione responsabile* indicata nei *Parametri azioni correttive*.   
+> **funzione responsabile**: es la *Función empresarial* responsable de la *azione correttiva*.  
+> Al ingresar una nueva *azione correttiva* se propone la *Función responsable* indicada en los *Parámetros de acciones correctivas*.   
 >
-> **Descrizione della non conformità**: (dato obbligatorio) annotazioni libere sulle non conformità o situazioni non conformi (anche potenziali).   
-> **Riferimento documenti**: annotazioni libere su riferimenti a documenti da cui è scaturita l'*Azione correttiva*.   
-> **Azione proposta**: annotazioni libere sull'argomento.   
+> **descrizione della non conformità**: (dato obligatorio) notas libres sobre las no conformidades o situaciones no conformes (incluso potenciales).  
+> **Referencia documentos (Riferimento documenti)**: notas libres sobre referencias a documentos de los que se originó la *azione correttiva*.  
+> **azione proposta**: notas libres sobre el tema.
+
+> **Aprobada/Fecha de aprobación (Approvata/Data approvazione)**: expander donde es posible introducir:  
 >
-> **Approvata/Data approvazione**: expander dove è possibile inserire:   
->
->> **Approvata**: indica che l'*Azione correttiva* è *Approvata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono approvare l'*Azione correttiva*.   
->> All'atto dell'approvazione vengono automaticamente proposte: la *Data approvazione* proposta alla data odierna e può essere variata, *Approvata da utente* e *Approvata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **approvata**: indica que la *azione correttiva* está *Aprobada*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden aprobar la *azione correttiva*.  
+>> Al momento de la aprobación se proponen automáticamente: la *Fecha de aprobación* igual a la fecha actual, la *Aprobada por usuario* y la *Aprobada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.*  
 >>
->> **Data approvazione**: è la data in cui l'*Azione correttiva* è stata *Approvata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Approvata da utente* e *Approvata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Approvata*.   
+>> **data approvazione**: es la fecha en que la *azione correttiva* fue *Aprobada*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden modificar esta fecha.  
+>> Al momento de ingresar la fecha se proponen automáticamente: *Aprobada por usuario* y *Aprobada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.* y se activa la casilla *Aprobada*.  
 >>
->> **Approvata da utente**: è l'*Utente A.R.M.* che ha approvato l*Azione correttiva*. L'informazione è di sola lettura.   
->> **Approvata da persona**: è il *Dipendente* che ha approvato l*Azione correttiva*. L'informazione è di sola lettura.   
->> **Approvata da funzione**: è la *Funzione aziendale* che ha approvato l*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Approvata*.   
+>> **approvata da utente**: es el *Usuario A.R.M.* que aprobó la *azione correttiva*. La información es de solo lectura.  
+>> **approvata da persona**: es el *Empleado* que aprobó la *azione correttiva*. La información es de solo lectura.  
+>> **approvata da funzione**: es la *Función empresarial* que aprobó la *azione correttiva*.  
+>> Habilitada solo si la *azione correttiva* está *Aprobada*.  
 >
-> **Bloccata/Data blocco**: expander dove è possibile inserire:   
+> **Bloqueada/Fecha de bloqueo (Bloccata/Data blocco)**: expander donde es posible introducir:  
 >
->> **Bloccata**: indica che l'*Azione correttiva* è *Bloccata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono bloccare l'*Azione correttiva*.   
->> All'atto del blocco vengono automaticamente proposte: la *Data blocco* proposta alla data odierna e può essere variata, *Bloccata da utente* e *Bloccata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **bloccata**: indica que la *azione correttiva* está *Bloqueada*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden bloquear la *azione correttiva*.  
+>> Al momento del bloqueo se proponen automáticamente: la *Fecha de bloqueo* igual a la fecha actual y puede ser modificada, *Bloqueada por usuario* y *Bloqueada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.*  
 >>
->> **Data blocco**: è la data in cui l'*Azione correttiva* è stata *Bloccata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Bloccata da utente* e *Bloccata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Bloccata*.   
+>> **data blocco**: es la fecha en que la *azione correttiva* fue *Bloqueada*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden modificar esta fecha.  
+>> Al momento de ingresar la fecha se proponen automáticamente: *Bloqueada por usuario* y *Bloqueada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.* y se activa la casilla *Bloqueada*.  
 >>
->> **Bloccata da utente**: è l'*Utente A.R.M.* che ha bloccato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Bloccata da persona**: è il *Dipendente* che ha bloccato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Bloccata da funzione**: è la *Funzione aziendale* che ha bloccato l'*Azione correttiva*.
->> Abilitata solamente se l'*Azione correttiva* è *Bloccata*.   
+>> **bloccata da utente**: es el *Usuario A.R.M.* que bloqueó la *azione correttiva*. La información es de solo lectura.  
+>> **bloccata da persona**: es el *Empleado* que bloqueó la *azione correttiva*. La información es de solo lectura.  
+>> **bloccata da funzione**: es la *Función empresarial* que bloqueó la *azione correttiva*.  
+>> Habilitada solo si la *azione correttiva* está *Bloqueada*.  
 >
-> **Cause**: annotazioni libere sulle cause che hanno condotto alla non conformità, documentazione sull'eventuale indagine svolta.   
-> **Valutazione azione da adottare**: annotazioni libere sulla valutazione dell'esigenza di adottare un'azione per evitare il ripetersi delle non conformità.   
-> **Descrizione allegati**: annotazioni libere sul contenuto di eventuali documenti allegati nel documentale.   
-> **Data prevista chiusura**: è la data che si presume che l'*Azione correttiva* venga completata.   
-> **Note**: annotazioni libere.   
+> **cause**: notas libres sobre las causas que llevaron a la no conformidad, documentación sobre la posible investigación realizada.  
+> **valutazione azione da adottare**: notas libres sobre la evaluación de la necesidad de adoptar una acción para evitar la repetición de las no conformidades.  
+> **Descripción de anexos (Descrizione allegati)**: notas libres sobre el contenido de eventuales documentos anexos en la documentación.  
+> **data prevista chiusura**: es la fecha en que se presume que la *azione correttiva* será completada.  
+> **note**: notas libres.  
 >
-> **Chiusa/Data di chiusura**: expander dove è possibile inserire:   
+> **Cerrada/Fecha de cierre (Chiusa/Data di chiusura)**: expander donde es posible introducir:  
 >
->> **Chiusa**: indica che l'*Azione correttiva* è *Chiusa*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere l'*Azione correttiva*.   
->> All'atto della chiusura vengono automaticamente proposte: la *Data di chiusura* proposta alla data odierna e può essere variata, *Chiusa da utente* e *Chiusa da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **chiusa**: indica que la *azione correttiva* está *Cerrada*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden cerrar la *azione correttiva*.  
+>> Al momento del cierre se proponen automáticamente: la *Fecha de cierre* igual a la fecha actual y puede ser modificada, *Cerrada por usuario* y *Cerrada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.*  
 >>
->> **Data di chiusura**: è la data in cui l'*Azione correttiva* è stata *Chiusa*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Chiusa da utente* e *Chiusa da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiusa*.   
+>> **data di chiusura**: es la fecha en que la *azione correttiva* fue *Cerrada*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden modificar esta fecha.  
+>> Al momento de ingresar la fecha se proponen automáticamente: *Cerrada por usuario* y *Cerrada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.* y se activa la casilla *Cerrada*.  
 >>
->> **Chiusa da utente**: è l'*Utente A.R.M.* che ha chiuso l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Chiusa da persona**: è il *Dipendente* che ha chiuso l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Chiusa da funzione**: è la *Funzione aziendale* che ha chiuso l'*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Chiusa*.   
+>> **chiusa da utente**: es el *Usuario A.R.M.* que cerró la *azione correttiva*. La información es de solo lectura.  
+>> **chiusa da persona**: es el *Empleado* que cerró la *azione correttiva*. La información es de solo lectura.  
+>> **chiusa da funzione**: es la *Función empresarial* que cerró la *azione correttiva*.  
+>> Habilitada solo si la *azione correttiva* está *Cerrada*.  
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **audit trail**: expander de solo lectura donde son visibles las siguientes informaciones:  
 >
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito l'*Azione correttiva*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica all'*Azione correttiva*.   
+>> **Fecha creación/Nombre (Data creazione/Nome)**: es la fecha y el *Usuario A.R.M.* que ingresó la *azione correttiva*.  
+>> **Fecha última modificación/Nombre (Data ultima modifica/Nome)**: es la fecha y el *Usuario A.R.M.* que realizó la última modificación a la *azione correttiva*.  
 >
-> **Costo totale previsto**: è il costo previsto per la gestione dell'*Azione correttiva*.   
-> **Costo totale effettivo**: è il costo totale sostenuto per la gestione dell'*Azione correttiva*.   
+> **costo totale previsto**: es el costo previsto para la gestión de la *azione correttiva*.  
+> **costo totale effettivo**: es el costo total incurrido para la gestión de la *azione correttiva*.
 
 
-### Verifiche prossimo audit
+### Verificaciones del próximo audito
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche da effettuare nel prossimo audit per valutare se l'*Azione correttiva* ha avuto efficacia.   
-Le informazioni gestite sono:   
-> **Da valutare nel prossimo audit**: expander dove è possibile inserire:   
+En la pestaña se contienen las indicaciones sobre las verificaciones que se deben realizar en el próximo audito para evaluar si la *azione correttiva* ha sido efectiva.   
+La información gestionada es:  
+> **da valutare nel prossimo audit**: expander donde es posible introducir:  
 >
->> **Da valutare nel prossimo audit**: indica se sono necessarie attività di verifica nel prossimo audit per l'*Area coinvolta*.   
->> **Elementi da verificare**: annotazioni libere sugli elementi da verificare nel prossimo audit.   
->> Abilitato solamente se l'*Azione correttiva* è *Da valutare nel prossimo audit*.   
+>> **da valutare nel prossimo audit**: indica si se necesitan actividades de verificación en el próximo audito para el *Área involucrada*.  
+>> **elementi da verificare**: notas libres sobre los elementos a verificar en el próximo audito.  
+>> Habilitado solo si la *azione correttiva* está *A evaluar en el próximo audito*.   
 >
-> **Verificata/Data di verifica**: expander dove è possibile inserire:   
+> **Verificada/Fecha de verificación (Verificata/Data di verifica)**: expander donde es posible introducir:  
 >
->> **Verificata**: indica che l'*Azione correttiva* è stata *Verificata*.   
->>> All'atto della verifica vengono automaticamente proposte: la *Data di verifica* proposta alla data odierna e può essere variata, *Verificata da utente* e *Verificata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **verificata**: indica que la *azione correttiva* ha sido *Verificada*.  
+>>> Al momento de la verificación se proponen automáticamente: la *Fecha de verificación* igual a la fecha actual y puede ser modificada, *Verificada por usuario* y *Verificada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.*  
 >>
->> **Data di verifica**: è la data in cui l'*Azione correttiva* è stata *Verificata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Verificata da utente* e *Verificata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Verificata*.   
+>> **data di verifica**: es la fecha en que la *azione correttiva* fue *Verificada*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden modificar esta fecha.  
+>> Al momento de ingresar la fecha se proponen automáticamente: *Verificada por usuario* y *Verificada por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.* y se activa la casilla *Verificada*.  
 >>
->> **Esito complessivo**: è l'*Esito* che ha viene attribuito alla verifica dell'*Azione correttiva*.   
->> **Verifica efficacia**: annotazioni libere sull'esito della verifica o meno dell'efficacia dell'*Azione correttiva*.   
->> **Verificata da utente**: è l'*Utente A.R.M.* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Verificata da persona**: è il *Dipendente* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Verificata da funzione**: è la *Funzione aziendale* che ha verificato l'*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Verificata*.   
+>> **esito complessivo**: es el *Resultado* que se le atribuye a la verificación de la *azione correttiva*.  
+>> **verifica efficacia**: notas libres sobre el resultado de la verificación de la efectividad de la *azione correttiva*.  
+>> **verificata da utente**: es el *Usuario A.R.M.* que verificó la *azione correttiva*. La información es de solo lectura.  
+>> **verificata da persona**: es el *Empleado* que verificó la *azione correttiva*. La información es de solo lectura.  
+>> **verificata da funzione**: es la *Función empresarial* que verificó la *azione correttiva*.  
+>> Habilitada solo si la *azione correttiva* está *Verificada*.
 
 
-### Verifiche intermedie azione
+### Verificaciones intermedias de acción
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche intermedie effettuate sull'*Azione correttiva*.   
-Le informazioni gestite sono:   
-> **Dati verifica**   
->> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
->> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
->> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che ha viene attribuito alla verifica intermedia dell'*Azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che ha viene attribuito alla verifica dell'*Azione correttiva*.   
+En la pestaña se contienen las indicaciones sobre las verificaciones intermedias realizadas sobre la *azione correttiva*.  
+La información gestionada es:  
+> **Datos de verificación (Dati verifica)**  
+>> **data**: es la fecha en que se realizó la verificación intermedia.  
+>> **Elementos verificados (Elementi verificati)**: notas libres sobre los elementos considerados durante la verificación.  
+>> **verifica efficacia**: notas libres sobre las acciones realizadas para verificar la efectividad.  
+>> **esito**: es el *Resultado* que se le atribuye a la verificación intermedia de la *azione correttiva*.  
+>> **descrizione esito**: es la descripción del *Resultado* que se le atribuye a la verificación de la *azione correttiva*.  
 >
-> **Verificata da utente**   
->> **Utente**: è l'*Utente* che ha effettuato la verifica intermedia.   
+> **verificata da utente**   
+>> **utente**: es el *Usuario* que realizó la verificación intermedia.   
 >
-> **Verificata da persona**   
->> **Operatore**: è il codice del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Cognome**: è il cognome del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Nome**: è il nome del *Dipendente* che ha effettuato la verifica intermedia.   
+> **verificata da persona**  
+>> **operatore**: es el código del *Empleado* que realizó la verificación intermedia.  
+>> **cognome**: es el apellido del *Empleado* que realizó la verificación intermedia.  
+>> **nome**: es el nombre del *Empleado* que realizó la verificación intermedia.  
 >
-> **Verificata da persona**   
->> **Codice**: è il codice della *Funzione aziendale* che ha effettuato la verifica intermedia.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* che ha effettuato la verifica intermedia.   
+> **verificata da funzione**  
+>> **codice**: es el código de la *Función empresarial* que realizó la verificación intermedia.  
+>> **descrizione**: es la descripción de la *Función empresarial* que realizó la verificación intermedia.  
 >
-> **Nota**: annotazioni libere.   
+> **nota**: notas libres.
 
 
-### Soggetti coinvolti
+### Sujetos involucrados
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione dell'*Azione correttiva*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+En la pestaña se contienen las indicaciones sobre las *Funciones empresariales* y/o *Empleados* que participarán en la gestión de la *azione correttiva*.  
+La lista se compone de la siguiente información:  
+> **funzione aziendale**  
+>> **codice**: es el código de la *Función empresarial* involucrada.  
+>> **descrizione**: es la descripción de la *Función empresarial* involucrada.  
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **dipendente**  
+>> **codice**: es el código del *Empleado* involucrado.  
+>> **descrizione**: es el apellido y nombre del *Empleado* involucrado.  
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* dell'*Azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* dell'*Azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **gestione coinvolgimento**  
+>> **descrizione soggetto**: anotación libre en caso de que el sujeto involucrado no sea *Función empresarial* o *Empleado*.  
+>> **motivo del coinvolgimento**: notas libres sobre el tema.  
+>> **data scadenza**: es la fecha antes de la cual el sujeto involucrado debe completar las actividades relacionadas con el motivo de su involucramiento.  
+>> **risposta**: notas libres sobre el tema.  
+>> **chiuso**: indica que el involucramiento del sujeto ha sido completado.  
+>> Solo la *Función o Persona responsable* de la *azione correttiva* o la *Función empresarial* o el *Empleado* involucrado pueden cerrar el involucramiento.  
+>> Al momento del cierre se propone automáticamente la *Fecha de cierre*, igual a la fecha actual y puede ser modificada.   
+>> **data chiusura**: es la fecha en que el involucramiento del sujeto ha sido completado.  
+>> Solo la *Función o Persona responsable* de la *azione correttiva* o la *Función empresarial* o el *Empleado* involucrado pueden introducir o modificar esta fecha.  
+>> Al momento de ingresar la fecha se activa la casilla *Cerrado*.   
 >
-> **Nota**: annotazioni libere.   
+> **nota**: notas libres.
 
-### Riferimento documenti di origine
 
-Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine all'*Azione correttiva*in gestione.   
-Le informazioni visibili sono:   
-> **Reclamo**: expander dove è possibile visualizzare:   
+### Datos extras
+
+Es posible introducir [Datos Extras](/docs/configurations/utility/extra-data/extradata/new-extradata) para la *azione correttiva*.
+
+
+### Programas de acción correctiva
+
+Si la *azione correttiva* tiene una larga duración, se puede dividir en múltiples *Programas de acción*.  
+La lista se compone de la siguiente información:  
+> **numero**: es un número progresivo (dato obligatorio).  
+> **azione proposta**: notas libres sobre el tema (dato obligatorio).  
+> **elementi da valutare**: notas libres sobre el tema.  
+> **costo previsto**: es el costo previsto para la gestión del *Programa de acción correctiva*.  
+> **data prevista chiusura**: es la fecha en la que se espera que el *Programa de acción correctiva* se complete.  
+> **chiusa**: indica que el *Programa de acción correctiva* está *Cerrado*.  
+> **costo effettivo**: es el costo total incurrido para la gestión del *Programa de acción correctiva*.  
+> **verificata**: indica que el *Programa de acción correctiva* ha sido *Verificado*.  
+> **esito**: es el *Resultado* que se le atribuye a la verificación del *Programa de acción correctiva*.  
+> **descrizione esito**: es la descripción del *Resultado*.
+
+
+### Datos de detalle
+
+La información gestionada es:  
+> **persona responsabile**: es el *Empleado* responsable del *Programa de acción correctiva*.  
+> **funzione responsabile**: es la *Función empresarial* responsable del *Programa de acción correctiva*.  
+> **obiettivi da conseguire**: notas libres sobre el tema.  
+> **Descripción de anexos (Descrizione allegati)**: notas libres sobre el contenido de eventuales documentos anexos.  
 >
->> **Reclamo**: è il riferimento al *Reclamo* di origine.   
->> **Gestione difetti**: è il riferimento alla riga di *Gestione difetti* del *Reclamo* di origine.   
->> **Azione di contenimento**: è il riferimento alla riga dell'*Azione di contenimento* del *Reclamo* di modello *8D - Problem solving* di origine.   
->> **Azione permanente**: è il riferimento alla riga dell'*Azione permanente* del *Reclamo* di modello *8D - Problem solving* di origine.   
->> **Fase**: è il riferimento alla riga della *Fase di attuazione* del *Reclamo* di modello *8D - Problem solving* di origine.   
+> **Cerrado/Fecha de cierre (Chiuso/Data di chiusura)**: expander donde es posible introducir:  
 >
-> **Non conformità**: expander dove è possibile visualizzare:   
->
->> **Non conformità**: è il riferimento alla *Non conformità* di origine.   
->> **Gestione difetti**: è il riferimento alla riga di *Gestione difetti* della *Non conformità* di origine.   
->
-> **Azione correttiva di origine**: expander dove è possibile visualizzare:   
->
->> **Azione correttiva di origine**: è il riferimento all'*Azione correttiva* di origine.   
->> **Programma**: è il riferimento alla riga di *Programma* dell'*Azione correttiva* di origine.   
->
-> **Altri documenti di riferimento**: elenco dove è possibile inserire eventuali altri documenti che hanno generato l'*Azione correttiva*.   
-> L'elenco si compone delle seguenti informazioni:   
->
->> **Data**: è la data del documento di riferimento.   
->> **Riferimento documento**: annotazione libera del documento di riferimento.   
->> **Numero**: è il numero del documento di riferimento.   
->> **Note**: annotazioni libere.   
-
-
-### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per l'*Azione correttiva*.   
-
-
-## Programmi azione correttiva
-
-Se l'*Azione correttiva* è di lunga attuazione, la si può suddividere in più *Programmi di azione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Numero**: è un progressivo numerico (dato obbligatorio).   
-> **Azione proposta**: annotazioni libere sull'argomento (dato obbligatorio).   
-> **Elementi da valutare**: annotazioni libere sull'argomento.   
-> **Costo previsto**: è il costo previsto per la gestione del *Programma di azione correttiva*.   
-> **Data prevista chiusura**: è la data che si presume che il *Programma di azione correttiva* venga completata.   
-> **Chiusa**: indica che il *Programma di azione correttiva* è *Chiusa*.   
-> **Costo effettivo**: è il costo totale sostenuto per la gestione del *Programma di azione correttiva*.   
-> **Verificata**: indica che il *Programma di azione correttiva* è stata *Verificata*.   
-> **Esito**: è l'*Esito* che ha viene attribuito alla verifica del *Programma di azione correttiva*.   
-> **Descrizione esito**: è la descrizione dell'*Esito*.   
-
-
-### Dati di dettaglio
-
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile del *Programma di azione correttiva*.   
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile del *Programma di azione correttiva*.   
-> **Obiettivi da conseguire**: annotazioni libere sull'argomento'.   
-> **Descrizione allegati**: annotazioni libere sul contenuto degli eventuali documenti allegati.   
->
-> **Chiuso/Data di chiusura**: expander dove è possibile inserire:   
->
->> **Chiuso**: indica che il *Programma di azione correttiva* è *Chiuso*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere il *Programma di azione correttiva*.   
->> All'atto della chiusura vengono automaticamente proposte: la *Data di chiusura* proposta alla data odierna e può essere variata, *Chiuso da utente* e *Chiuso da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **chiuso**: indica que el *Programa de acción correctiva* está *Cerrado*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden cerrar el *Programa de acción correctiva*.  
+>> Al momento del cierre se proponen automáticamente: la *Fecha de cierre* igual a la fecha actual y puede ser modificada, *Cerrado por usuario* y *Cerrado por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.*  
 >>
->> **Data di chiusura**: è la data in cui il *Programma di azione correttiva* è stato *Chiuso*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Chiuso da utente* e *Chiuso da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiuso*.   
+>> **data di chiusura**: es la fecha en que el *Programa de acción correctiva* fue *Cerrado*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden modificar esta fecha.  
+>> Al momento de ingresar la fecha se proponen automáticamente: *Cerrado por usuario* y *Cerrado por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.* y se activa la casilla *Cerrado*.   
 >>
->> **Chiuso da utente**: è l'*Utente A.R.M.* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Chiuso da persona**: è il *Dipendente* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Chiuso da funzione**: è la *Funzione aziendale* che ha chiuso il *Programma di azione correttiva*.   
->> Abilitata solamente se il *Programma di azione correttiva* è *Chiuso*.   
+>> **chiuso da utente**: es el *Usuario A.R.M.* que cerró el *Programa de acción correctiva*. La información es de solo lectura.  
+>> **chiuso da persona**: es el *Empleado* que cerró el *Programa de acción correctiva*. La información es de solo lectura.  
+>> **chiuso da funzione**: es la *Función empresarial* que cerró el *Programa de acción correctiva*.  
+>> Habilitada solo si el *Programa de acción correctiva* está *Cerrado*.  
 >
-> **Note**: annotazioni libere.   
-> **Riferimento azione correttiva**: è il riferimento all'*Azione correttiva* che potrebbe essere creata dal *Programma di azione correttiva*.   
-> **Verifica efficacia**: annotazioni libere sull'esito della verifica o meno dell'efficacia del *Programma di azione correttiva*.   
+> **note**: notas libres.  
+> **riferimento azione correttiva**: es la referencia a la *azione correttiva* que podría ser creada por el *Programa de acción correctiva*.  
+> **verifica efficacia**: notas libres sobre el resultado de la verificación de la efectividad del *Programa de acción correctiva*.  
 >
-> **Verificato/Data verifica**: expander dove è possibile inserire:   
+> **Verificado/Fecha de verificación (Verificato/Data verifica)**: expander donde es posible introducir:  
 >
->> **Verificato**: indica che il *Programma di azione correttiva* è stato *Verificato*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono verificare il *Programma di azione correttiva*.   
->> All'atto della verifica vengono automaticamente proposte: la *Data verifica* proposta alla data odierna e può essere variata, *Verificato da utente* e *Verificato da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **verificato**: indica que el *Programa de acción correctiva* ha sido *Verificado*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden verificar el *Programa de acción correctiva*.  
+>> Al momento de la verificación se proponen automáticamente: la *Fecha de verificación* igual a la fecha actual y puede ser modificada, *Verificado por usuario* y *Verificado por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.*  
 >>
->> **Data verifica**: è la data in cui il *Programma di azione correttiva* è stato *Verificato*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Verificato da utente* e *Verificato da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Verificato*.   
+>> **data verifica**: es la fecha en que el *Programa de acción correctiva* fue *Verificado*.  
+>> Solo la **Persona responsable** o la **Función responsable** pueden modificar esta fecha.  
+>> Al momento de ingresar la fecha se proponen automáticamente: *Verificado por usuario* y *Verificado por persona* propuestas al *Usuario A.R.M.* conectado y al *Empleado* asociado al *Usuario A.R.M.* y se activa la casilla *Verificado*.  
 >>
->> **Verificato da utente**: è l'*Utente A.R.M.* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Verificato da persona**: è il *Dipendente* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Verificato da funzione**: è la *Funzione aziendale* che ha verificato il *Programma di azione correttiva*.   
->> Abilitata solamente se il *Programma di azione correttiva* è *Verificato*.   
+>> **verificato da utente**: es el *Usuario A.R.M.* que verificó el *Programa de acción correctiva*. La información es de solo lectura.  
+>> **verificato da persona**: es el *Empleado* que verificó el *Programa de acción correctiva*. La información es de solo lectura.  
+>> **verificato da funzione**: es la *Función empresarial* que verificó el *Programa de acción correctiva*.  
+>> Habilitada solo si el *Programa de acción correctiva* está *Verificado*.
 
 
-### Verifiche intermedie programma azione
+### Verificaciones intermedias del programa de acción
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche intermedie effettuate sul *Programma di azione correttiva*.   
-Le informazioni gestite sono:   
-> **Dati verifica**   
->> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
->> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
->> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che ha viene attribuito alla verifica intermedia del *Programma di azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che ha viene attribuito alla verifica del *Programma di azione correttiva*.   
+En la pestaña se contienen las indicaciones sobre las verificaciones intermedias realizadas sobre el *Programa de acción correctiva*.  
+La información gestionada es:  
+> **Datos de verificación (Dati verifica)**  
+>> **data**: es la fecha en que se realizó la verificación intermedia.  
+>> **Elementos verificados (Elementi verificati)**: notas libres sobre los elementos considerados durante la verificación.  
+>> **verifica efficacia**: notas libres sobre las acciones realizadas para verificar la efectividad.  
+>> **esito**: es el *Resultado* que se le atribuye a la verificación intermedia del *Programa de acción correctiva*.  
+>> **descrizione esito**: es la descripción del *Resultado* que se le atribuye a la verificación del *Programa de acción correctiva*.  
 >
-> **Verificata da utente**   
->> **Utente**: è l'*Utente* che ha effettuato la verifica intermedia.   
+> **verificata da utente**   
+>> **utente**: es el *Usuario* que realizó la verificación intermedia.   
 >
-> **Verificata da persona**   
->> **Operatore**: è il codice del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Cognome**: è il cognome del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Nome**: è il nome del *Dipendente* che ha effettuato la verifica intermedia.   
+> **verificata da persona**  
+>> **operatore**: es el código del *Empleado* que realizó la verificación intermedia.  
+>> **cognome**: es el apellido del *Empleado* que realizó la verificación intermedia.  
+>> **nome**: es el nombre del *Empleado* que realizó la verificación intermedia.  
 >
-> **Verificata da persona**   
->> **Codice**: è il codice della *Funzione aziendale* che ha effettuato la verifica intermedia.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* che ha effettuato la verifica intermedia.   
+> **verificata da funzione**  
+>> **codice**: es el código de la *Función empresarial* que realizó la verificación intermedia.  
+>> **descrizione**: es la descripción de la *Función empresarial* que realizó la verificación intermedia.  
 >
-> **Nota**: annotazioni libere.   
+> **nota**: notas libres.
 
 
-### Soggetti coinvolti
+### Sujetos involucrados
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Programma di azione correttiva*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+En la pestaña se contienen las indicaciones sobre las *Funciones empresariales* y/o *Empleados* que participarán en la gestión del *Programa de acción correctiva*.  
+La lista se compone de la siguiente información:  
+> **funzione aziendale**  
+>> **codice**: es el código de la *Función empresarial* involucrada.  
+>> **descrizione**: es la descripción de la *Función empresarial* involucrada.  
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **dipendente**  
+>> **codice**: es el código del *Empleado* involucrado.  
+>> **descrizione**: es el apellido y nombre del *Empleado* involucrado.  
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Programma di azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Programma di azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **gestione coinvolgimento**  
+>> **descrizione soggetto**: anotación libre en caso de que el sujeto involucrado no sea *Función empresarial* o *Empleado*.  
+>> **motivo del coinvolgimento**: notas libres sobre el tema.  
+>> **data scadenza**: es la fecha antes de la cual el sujeto involucrado debe completar las actividades relacionadas con el motivo de su involucramiento.  
+>> **risposta**: notas libres sobre el tema.  
+>> **chiuso**: indica que el involucramiento del sujeto ha sido completado.  
+>> Solo la *Función o Persona responsable* del *Programa de acción correctiva* o la *Función empresarial* o el *Empleado* involucrado pueden cerrar el involucramiento.  
+>> Al momento del cierre se propone automáticamente la *Fecha de cierre*, igual a la fecha actual y puede ser modificada.   
+>> **data chiusura**: es la fecha en que el involucramiento del sujeto ha sido completado.  
+>> Solo la *Función o Persona responsable* del *Programa de acción correctiva* o la *Función empresarial* o el *Empleado* involucrado pueden introducir o modificar esta fecha.  
+>> Al momento de ingresar la fecha se activa la casilla *Cerrado*.   
 >
-> **Nota**: annotazioni libere.   
+> **nota**: notas libres.
 
 
-### Extra data
+### Datos extras
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per il *Programma azione correttiva*.   
+Es posible introducir [Datos Extras](/docs/configurations/utility/extra-data/extradata/new-extradata) para el *Programa de acción correctiva*.
 
 
-### Documenti allegati
+### Documentos anexos
 
-In questo elenco è possibile inserire e consultare eventuali allegati.
-L'inserimento avviene tramite la funzione di drag&drop. Trascinando l'immagine o documento sull'area dell'elenco, questa verrà evidenziata con un bordo rosso. Rilasciando il pulsante del mouse, all'immagine o documento vengono richiesti i dati per la catalogazione (se non già automaticamente riconosciuti dal sistema): *Nome*, *TIpo documento* e *Tipo file*.   
+En esta lista es posible insertar y consultar eventuales anexos.
+La inserción se realiza mediante la función de arrastrar y soltar (drag&drop). Arrastrando la imagen o documento sobre el área de la lista, esta se resaltará con un borde rojo. Al soltar el botón del mouse, se solicita a la imagen o documento que se proporcionen los datos para la catalogación (si no son ya automáticamente reconocidos por el sistema): *Nombre*, *Tipo de documento* y *Tipo de archivo*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

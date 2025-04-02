@@ -1,68 +1,68 @@
 ---
-title: Non conformità
+title: non conformità
 sidebar_position: 2
 ---
 
-I dati che compongono una **Non conformità** sono:     
-- **Tipo Non conformità**: contiene la tipologia; questa selezione determinerà la possibilità di inserire un cliente, un fornitore o una funzione aziendale a seconda della tipologia;               
-- **Anno**, **Numero** e **Data**.
+Los datos que componen una **non conformità** son:     
+- **tipo non conformità**: contiene la tipología; esta selección determinará la posibilidad de ingresar un cliente, un proveedor o una función empresarial según la tipología;               
+- **anno**, **numero** y **data**.
 
-Analizziamo le tab sottostanti.
+Analicemos las pestañas a continuación.
 
-## Testata 
-**Persona responsabile**: contiene il [Dipendente](/docs/project-management/registers/employee/new-employee) responsabile;      
-**Funzione aziendale**: contiene una eventuale Funzione aziendale responsabile;       
-**Sito produttivo**: contiene il sito produttivo aziendale in cui si è verificata la Non conformità;      
-**Approvato/In data**: contiene i riferimenti di chi ha approvato la non conformità;
-**Chiuso/In data**: contiene i riferimenti di chi ha chiuso la non conformità e le eventuali **Notifiche** effettuate.        
+## Encabezado (Testata) 
+**persona responsabile**: contiene el [Empleado (Dipendente)](/docs/project-management/registers/employee/new-employee) responsable;      
+**funzione aziendale**: contiene una eventual Función empresarial responsable;       
+**sito produttivo**: contiene el sitio productivo empresarial en el que se ha producido la no conformidad;      
+**Aprobado/En fecha (Approvato/In data)**: contiene las referencias de quien ha aprobado la no conformidad;  
+**Cerrado/En fecha (Chiuso/In data)**: contiene las referencias de quien ha cerrado la no conformidad y las eventuales **notifiche** realizadas.        
 
-Le non conformità possono essere Approvate e Chiuse solo da:
-- Persona responsabile: in questo campo è possibile inserire il Dipendente codificato, che deve avere un utente Arm associato;
-- Funzione responsabile: è possibile abilitare alla modifica un'intera funzione aziendale; in questo caso deve fare Apri form nella Funzione aziendale ed inserire, nella griglia in basso, i Dipendenti da abilitare per ogni funzione aziendale selezionata.
+Las no conformidades pueden ser Aprobadas y Cerradas solo por:
+- Persona responsable: en este campo es posible ingresar el Empleado codificado, que debe tener un usuario Arm asociado;
+- Función responsable: se puede habilitar a toda una función empresarial para la modificación; en este caso, debe abrir el formulario en la Función empresarial e ingresar, en la cuadrícula inferior, los Empleados a habilitar para cada función empresarial seleccionada.
 
-Sono poi presenti diverse tab.
+A continuación, hay varias pestañas.
 
-## Rif. documenti
-Contiene i riferimenti dei documenti relativi alla merce che si è rivelata non conforme, quindi la fattura con la quale è stata venduta,il ricevimento merce, il reclamo da cui è nata, ecc. I campi non sono editabili, ma sono popolati automaticamente se la Non conformità proviene da altri documenti.
+## Referencias de documentos (Rif. documenti) 
+Contiene las referencias de los documentos relacionados con la mercancía que resultó no conforme, por lo tanto, la factura con la que se vendió, el recibo de mercancía, la reclamación de la que nació, etc. Los campos no son editables, pero se completan automáticamente si la no conformidad proviene de otros documentos.
 
-## Annotazioni     
-Questa tab contiene Note libere, commerciali, tecniche o amministrative.
+## Notas (Annotazioni)     
+Esta pestaña contiene Notas libres, comerciales, técnicas o administrativas.
 
-## Valori   
-Questa tab contiene:    
-**Divisa**: con la quale specificare i valori della Nn conformità;      
-**Rif. Doc addebito**: contiene i documenti ricevuti per i quali è richiesto un addebito della non conformità;       
-**Costo di gestione**: automatico se deciso nei Parametri, altrimenti imputabile manualmente; questo costo è il costo di gestione interno che spendo per la gestione della Non conformità; esso sarà imputabile: alla mia azienda se responsabile della fornitura; al fornitore altrimenti responsabile della fornitura;       
-**Valore da addebitare**: è il valore che riconosciamo e da addebitare; la nota di addebito generata avrà il riferimento nel campo **Rif. Doc. Accredito** e apporrà il flag **Valorizzato**; questo valore può essere diverso dal **Totale non conformità** se viene deciso di non addebitare il totale all'eventuale fornitore;     
-**Totale non conformità**: è la somma di Totale materiale non rilavorato, Totale materiale rilavorato e Costo di gestione.             
+## Valores (Valori)   
+Esta pestaña contiene:    
+**divisa**: con la cual especificar los valores de la no conformidad;      
+**Ref. Doc. de cargo (Rif. Doc addebito)**: contiene los documentos recibidos por los cuales se solicita un cargo de la no conformidad;       
+**costo di gestione**: automático si se decide en los Parámetros, de lo contrario imputable manualmente; este costo es el costo de gestión interno que gasto para gestionar la no conformidad; será imputable: a mi empresa si es responsable del suministro; al proveedor de lo contrario responsable del suministro;       
+**valore da addebitare**: es el valor que reconocemos y que se debe cobrar; la nota de cargo generada tendrá la referencia en el campo **rif. doc. accredito** y llevará la marca **valorizzato**; este valor puede ser diferente del **totale non conformità** si se decide no imputar el total al eventual proveedor;     
+**totale non conformità**: es la suma del Total de material no reprocesado, Total de material reprocesado y Costo de gestión.             
 
-## Gestione difetti
-E' possibile indicare uno o più difetti riscontrati, con i relativi dati:     
-- **Difetto riscontrato**: contiene il Difetto con relativo **Codice** e **Descrizione** ed eventuali **Note**;     
-- **Causa presunta**, che ha causato il difetto;    
-- **Fase di rilevamento**, con i dettagli della fase nella quale è stato rilevato il difetto;   
-- **Gravità**: contiene l'eventuale Gravità del difetto;    
-- **Rif. Azione correttiva**: contiene i riferimenti dell'azione correttiva se creata.   
+## Gestión de defectos (Gestione difetti) 
+Es posible indicar uno o más defectos encontrados, con los datos correspondientes:     
+- **difetto riscontrato**: contiene el Defecto con su respectivo **codice** y **descrizione** y eventuales **note**;     
+- **causa presunta**, que ha causado el defecto;    
+- **fase di rilevamento**, con los detalles de la fase en la que se detectó el defecto;   
+- **gravità**: contiene la eventual Gravedad del defecto;    
+- **rif. azione correttiva**: contiene las referencias de la acción correctiva si se creó.   
 
-Questa tab è suddivisa in tab ulteriori.        
+Esta pestaña se divide en más pestañas.        
 
-## Dati difetto     
-I dati principali sono:      
-- **Causa effettiva**: è possibile che la causa del difetto presunta, inserita in griglia, non coincida con la causa effettiva, che è possibile inserire in questo campo;      
-- **Soluzione proposta**: contiene la soluzione che è stata proposta per risolvere il difetto, tra un elenco a discesa;     
-- **Decisione intrapresa**: contiene la soluzione che, tra le possibili proposte, è stata intrapresa;
-- ecc.     
-E' possibile specificare i vari campi con le **Note** accanto.     
+## Datos del defecto (Dati difetto)     
+Los datos principales son:      
+- **causa effettiva**: es posible que la causa del defecto presunta, ingresada en la cuadrícula, no coincida con la causa efectiva, que se puede ingresar en este campo;      
+- **soluzione proposta**: contiene la solución que se ha propuesto para resolver el defecto, entre una lista desplegable;     
+- **decisione intrapresa**: contiene la solución que, entre las posibles propuestas, ha sido adoptada;  
+- etc.     
+Es posible especificar los varios campos con las **note** al lado.     
 
-## Materiali utilizzati 
-Questa tab contiene materiali eventualmente utilizzati per porre rimedio al difetto. I dati del materiali sono accompagnati dai relativi costi.
+## Materiales utilizados (Materiali utilizzati) 
+Esta pestaña contiene los materiales eventualmente utilizados para remediar el defecto. Los datos de los materiales están acompañados de los costos respectivos.
 
-## Oggetti difettosi
-Contiene tutti gli articoli nei quali è stato riscontrato il difetto della griglia principale. I dati inseriti in questa tab andranno a popolare i **Valori** della testata.
+## Artículos defectuosos (Oggetti difettosi) 
+Contiene todos los artículos en los cuales se ha encontrado el defecto de la cuadrícula principal. Los datos ingresados en esta pestaña alimentarán los **valori** del encabezado.
 
-## Soggetti coinvolti
-In questa tab è possibile indicare le Funzioni aziendali coinvolte e/o i [Dipendenti](/docs/project-management/registers/employee/new-employee).     
-Nella sezione **Gestione coinvolgimento** è possibile indicare il Motivo del coinvolgimento, campo automatico se nella tabella delle Funzioni aziendali ne abbiamo inserito precedentemente uno.    
+## Sujetos involucrados (Soggetti coinvolti) 
+En esta pestaña es posible indicar las Funciones empresariales involucradas y/o los [Empleados (Dipendenti)](/docs/project-management/registers/employee/new-employee).     
+En la sección **gestione coinvolgimento** es posible indicar el Motivo del involucramiento, campo automático si hemos ingresado uno anteriormente en la tabla de Funciones empresariales.    
 
-I pulsanti specifici della ribbon bar sono:
-**Crea azione correttiva**: alla selezione di un difetto, è possibile creare una Azione correttiva. Si apre una maschera nella quale vengono richiesti una serie di dati da riportare nell'Azione.     
+Los botones específicos de la barra de herramientas son:  
+**crea azione correttiva**: al seleccionar un defecto, es posible crear una Acción correctiva. Se abre un formulario en el que se solicitan una serie de datos para incluir en la Acción.

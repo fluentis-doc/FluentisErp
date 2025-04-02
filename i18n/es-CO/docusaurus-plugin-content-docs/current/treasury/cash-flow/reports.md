@@ -1,30 +1,23 @@
 ---
-title: Analisi Cashflow
+title: Análisis de Cashflow (Analisi Cashflow)
 sidebar_position: 5
 ---
-La fom si trova in Tesoreria > Cash Flow > Stampa > Analisi Cash Flow
+El formulario se encuentra en Tesorería (Tesoreria) > Cash Flow > Impresión (Stampa) > Análisis de Cash Flow (Analisi Cash Flow).
 
+Desde esta máscara es posible obtener la impresión de las elaboraciones de cash flow calculadas y presentes en el sistema: al abrir, el sistema propone como filtro la última elaboración realizada por el usuario actual.
 
-Da questa maschera è possibile ottenere la stampa delle elaborazioni di cash flow calcolate e presenti a sistema: il sistema all'apertura propone come filtro l'ultima elaborazione eseguita dall'utente attuale.
+Es posible establecer los siguientes filtros:  
 
-E' possibile impostare i seguenti filtri: 
+- qué tipos de flujo incluir en la impresión, desactivando el indicador **tutti i tipi flusso** y seleccionando los tipos deseados desde la cuadrícula;  
 
-- quali tipi flusso riportare in stampa, disattivando il flag **Tutti i tipi flusso** e selezionando i tipi desiderati dalla griglia
- 
-- le 6 date di riferimento dei calcoli, modificando i relativi campi nella sezione **Riepilogo alle seguenti scadenze**
+- las 6 fechas de referencia de los cálculos, modificando los campos correspondientes en la sección **riepilogo alle seguenti scadenze**;  
 
-- il **tipo di Stampa** da visualizzare, raggruppando per tipo flusso o per tipo pagamento,
+- el **tipo di stampa** a visualizar, agrupando por tipo de flujo o por tipo de pago;  
 
-- la **visualizzazione del dato** canalizzato **per banca**, 
+- la **visualización de datos (visualizzazione del dato)** canalizada **por banco (per banca)**;  
 
-- il filtro per **Progetto** (ex commessa), 
+- el filtro por **Proyecto (Proyecto)** (ex commessa);  
 
-- la visualizzazione dei **dettagli** di ogni singolo flusso (es. tutti gli ordini, tutti i DDT ecc.).
+- la visualización de los **dettagli** de cada flujo individual (por ejemplo, todos los pedidos, todos los DDT, etc.).  
 
-- Il flag **Data prevista** che espone i flussi rispetto alla data prevista anzichè rispetto al dto di default che è la *data scadenza* (se la data prevista non è stata variata, per default corrisponde alla data scadenza).
-
-
-
-
-
-
+- El indicador **data prevista** que muestra los flujos respecto a la fecha prevista en lugar de la fecha por defecto, que es la *data scadenza* (si la fecha prevista no ha sido modificada, por defecto corresponde a la fecha de vencimiento).

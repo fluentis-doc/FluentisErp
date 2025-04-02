@@ -1,29 +1,29 @@
 ---
-title: Motivi di assenza del conducente
+title: Motivos de ausencia del conductor (Motivi di assenza del conducente)
 sidebar_position: 59
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Motivi di assenza del conducente**.
+La tabla se encuentra en la ruta **Tablas > Logística > Motivos de ausencia del conductor** (Tabelle > Logistica > Motivi di assenza del conducente).
 
-In questa tabella è possibile codificare i *Motivi di assenza del conducente*.
+En esta tabla es posible codificar los *Motivos de ausencia del conductor*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Motivi di assenza del conducente**
+**Búsqueda de motivos de ausencia del conductor (Ricerca Motivi di assenza del conducente)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Motivi di assenza del conducente**
+**Ingreso de motivos de ausencia del conductor (Inserimento Motivi di assenza del conducente)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Para poder ingresar nuevos motivos, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
+Con el botón **cancella** es posible eliminar el registro seleccionado.
 
-*Campi specifici*: 
+*Campos específicos:*
 
-> **Codice**: è il codice del *Motivo di assenza del conducente*.   
-> **Descrizione**: è la descrizione del *Motivo di assenza del conducente*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo dell'impegno dell'autista presente nel [Calendario](/docs/logistics/shipping/calendar).     
-> **Colore di primo piano**: permette di definire il colore del testo dell'impegno dell'autista presente nel [Calendario](/docs/logistics/shipping/calendar).     
+> **codice**: es el código del *Motivo de ausencia del conductor*.  
+> **descrizione**: es la descripción del *Motivo de ausencia del conductor*.  
+> **colore di sfondo**: permite definir el color de fondo del compromiso del conductor presente en el [Calendario](/docs/logistics/shipping/calendar).  
+> **colore di primo piano**: permite definir el color del texto del compromiso del conductor presente en el [Calendario](/docs/logistics/shipping/calendar).  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidad, botones y campos comunes](/docs/guide/common).

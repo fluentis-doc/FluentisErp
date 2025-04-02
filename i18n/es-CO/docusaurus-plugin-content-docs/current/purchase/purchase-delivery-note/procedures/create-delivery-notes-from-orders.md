@@ -1,30 +1,30 @@
 ---
-title: Evasione DDT di acquisto da ordini
+title: Cumplimiento de DDT de compra a partir de pedidos (Evasione DDT di acquisto da ordini)
 sidebar_position: 3
 keywords:
 - DDT
-- Ordini
+- Pedidos (Ordini)
 ---
 
-La procedura si apre tramite il percorso **Acquisti > DDT di acquisto > Procedure > Evasione DDT da ordini** e permette l'evasione degli articoli degli ordini, con la generazione automatica dei DDT di acquisto raggruppati per fornitore.
+El procedimiento se abre a través de la ruta **Compras (Acquisti) > DDT de compra (DDT di acquisto) > Procedimientos (Procedure) > Cumplimiento de DDT a partir de pedidos (Evasione DDT da ordini)** y permite el cumplimiento de los artículos de los pedidos, con la generación automática de los DDT de compra agrupados por proveedor.
 
-*Pulsanti specifici*
+*Botones específicos*
 
-> **Ricerca**: permette di cercare gli articoli in base ai filtri inseriti nella parte superiore.    
-> **Trasferimento**: permette di trasferire gli articoli selezionati.   
-> **Seleziona tutto**: permette di selezionare tutti gli articoli dalla griglia di risultati.  
-> **Deseleziona tutti**: permette di deselezionare tutti gli articoli dalla griglia di risultati.  
+> **ricerca**: permite buscar los artículos según los filtros introducidos en la parte superior.  
+> **trasferimento**: permite transferir los artículos seleccionados.  
+> **seleziona tutto**: permite seleccionar todos los artículos de la cuadrícula de resultados.  
+> **deseleziona tutti**: permite deseleccionar todos los artículos de la cuadrícula de resultados.  
 
-*Procedimento*:  
+*Procedimiento*:  
 
-- inserire i filtri desiderati nella sezione *Filtro* e clicare sul pulsante **Ricerca**. Nella griglia dei risultati comparirà una riga per ciascun articolo degli ordine stampati, confermati e non evasi oppure evasi parzialmente;  
-- selezionare le righe articolo desiderate attivando il flag nella colonna **Seleziona**;  
-- inserire, per l'articolo selezionato, la **Quantità da evadere** nella colonna omonima. Se la quantità non viene inserita, l'applicazione propone il valore inserito nella colonna **Quantità residua**;  
-- eseguire l'evasione cliccando sul pulsante **Trasferimento**;  
-- scegliere se si desidera modificare i DDT creati nel messaggio lanciato dall'applicazione:  
-    - scegliendo **No**, la procedura creerà il DDT riprendendo tutti i dati e le condizioni di acquisto presenti nell'ordine per gli articoli evasi;   
-    - scegliendo **Sì**, la procedura aprirà il DDT appena creato permettendone la modifica.
+- ingresar los filtros deseados en la sección *Filtro* y hacer clic en el botón **ricerca**. En la cuadrícula de resultados aparecerá una fila por cada artículo de los pedidos impresos, confirmados y no cumplidos o cumplidos parcialmente;  
+- seleccionar las filas de artículos deseadas activando el indicador en la columna **seleziona**;  
+- ingresar, para el artículo seleccionado, la **Cantidad a cumplir (Quantità da evadere)** en la columna homónima. Si no se ingresa la cantidad, la aplicación propondrá el valor ingresado en la columna **quantità residua**;  
+- ejecutar el cumplimiento haciendo clic en el botón **trasferimento**;  
+- elegir si se desea modificar los DDT creados en el mensaje lanzado por la aplicación:  
+    - seleccionando **No**, el procedimiento creará el DDT retomando todos los datos y condiciones de compra presentes en el pedido para los artículos cumplidos;  
+    - seleccionando **Sí**, el procedimiento abrirá el DDT recién creado permitiendo su modificación.
 
-:::note Ricorda
-L'evasione di ordini fornitore all'interno di un DDT di acquisto può essere eseguita anche mediante il pulsante [**Evasione da ordine**](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) dall'interno di un DDT.
+:::note Recuerda
+El cumplimiento de los pedidos de proveedor dentro de un DDT de compra también se puede realizar mediante el botón [**Cumplimiento desde pedido (Evasione da ordine)**](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) desde dentro de un DDT.
 :::

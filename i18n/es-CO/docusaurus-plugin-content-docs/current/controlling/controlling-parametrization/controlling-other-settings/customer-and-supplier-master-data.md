@@ -1,11 +1,10 @@
 ---
-title: Anagrafiche Clienti/Fornitori/Agenti
+title: Registros de Clientes/Proveedores/Agentes (Anagrafiche Clienti/Fornitori/Agenti)
 sidebar_position: 4
 ---
 
-All'interno delle anagrafiche clienti/fornitori/agenti, dentro il dettaglio dei dati contabili, nel tab **ANALITICA** possiamo andare a configurare su quali centri aziendali assegnare i costi/ricavi presenti all'interno dei documenti o registrazioni inserite su ***FluentisERP***. La priorità di valorizzazione dipenderà dai parametri del singolo modulo d'uso.
+Dentro de los registros de clientes/proveedores/agentes, en el detalle de los datos contables, en la pestaña **analitica** podemos configurar en cuáles centros empresariales asignar los costos/ingresos presentes dentro de los documentos o registros ingresados en ***FluentisERP***. La prioridad de valorización dependerá de los parámetros del módulo de uso individual.
 
-:::tip Nota
-I centri di profitto sono visibili per retrocompatibilità, nelle società con il *Controlling* attivo si consiglia di sostituire i centri di profitto con una dimensione specifica da valorizzare nei centri aziendali
+:::tip Nota (Nota)
+Los centros de beneficios son visibles por retrocompatibilidad; en las empresas con *Controlling* activo, se recomienda reemplazar los centros de beneficios por una dimensión específica a valorar en los centros empresariales.
 :::
-

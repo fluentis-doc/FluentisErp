@@ -1,78 +1,78 @@
 ---
-title: Tipi ordine cliente
+title: tipi ordine cliente
 sidebar_position: 23
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página vinculada.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi ordine cliente**.
+La tabla se abre a través de la ruta **Tablas > Ventas > tipi ordine cliente (Tabelle > Vendite > Tipi ordine cliente)**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
- 
-Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Tipo/Descrizione:** campi in cui viene indicato il codice e la descrizione della tipologia di ordine cliente. Importante: il codice deve essere univoco per società e dvisione; 
+Para insertar nuevos registros, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**.
 
-**Numerazione**: in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti sulla numerazione dei documenti si rimanda all'articolo  [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations); 
+**Tipo/Descripción (Tipo/Descrizione)**: campos en los que se indica el código y la descripción de la tipología de pedido de cliente. Importante: el código debe ser único para la sociedad y la división;  
 
-**Creazione Progetto Automatico** e **Tipo Progetto**: se attivo, il sistema provvederà, in fase di inserimento ordine cliente, a creare un progetto del tipo specificato nella colonna Tipo Progetto presente sempre nel tipo ordine e con lo stesso numero dell'ordine cliente, il progetto verrà automaticamente inserito in testata dell’ordine cliente per creare la relazione. Il progetto creato è considerato come un contenitore per collezionare i documenti collegati al progetto e alle sue righe. Il progetto creato dall’ordine cliente viene tenuto aggiornato in base alle modifiche fatte nell’ordine e viene mantenuto il legame riga progetto per ogni riga ordine. 
+**numerazione**: en este campo se debe ingresar el código de numeración apropiado. Para más detalles sobre la numeración de documentos, consulte el artículo [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations); 
 
-**Conferma ordine automatica**: se attivo, all’inserimento di un nuovo ordine viene settata la data conferma ordine automaticamente uguale alla data inserimento ordine; 
+**creazione progetto automatico** y **tipo progetto**: si está activo, el sistema se encargará, al ingresar el pedido del cliente, de crear un proyecto del tipo especificado en la columna Tipo de Proyecto presente siempre en el tipo de pedido y con el mismo número del pedido del cliente; el proyecto se insertará automáticamente en la cabecera del pedido del cliente para crear la relación. El proyecto creado se considera un contenedor para coleccionar los documentos relacionados con el proyecto y sus líneas. El proyecto creado desde el pedido del cliente se mantiene actualizado según los cambios realizados en el pedido y se mantiene la relación de línea de proyecto para cada línea de pedido. 
 
-**Escludi blocco:** si riferisce al blocco per superamento del fido e perciò inserito nella gestione Lock Manager presente nell’area tesoreria tra le procedure dell’Utilizzo Fidi. Se attivo, il sistema per questo tipo ordine non considererà il blocco del documento dovuto al superamento del fido ma lascerà all'utente la possibilità di inserire e stampare il documento; se non attivo, il tipo ordine verrà bloccato qualora si superi il fido e all'utente verrà impedito la stampa del documento; 
+**conferma ordine automatica**: si está activo, al ingresar un nuevo pedido se establece automáticamente la fecha de confirmación del pedido igual a la fecha de inserción del pedido; 
 
-**Evasione tipo DDT**: contiene il tipo DDT che si vuole venga generato al lancio della procedura automatica di Evasione DDT presente nella ribbon button della Ricerca Ordini Clienti; 
+**Excluir bloqueo (Escludi blocco)**: se refiere al bloqueo por superación del límite de crédito y, por lo tanto, se inserta en la gestión del Lock Manager presente en el área de tesorería entre los procedimientos de Utilización de Créditos (Utilizzo Fidi). Si está activo, el sistema para este tipo de pedido no considerará el bloqueo del documento debido a la superación del límite de crédito, pero permitirá al usuario ingresar e imprimir el documento; si no está activo, el tipo de pedido se bloqueará si se supera el límite de crédito y se impedirá al usuario la impresión del documento; 
 
-**Evasione tipo fattura**: contiene il tipo fattura  che si vuole venga generato al lancio della procedura automatica di Evasione Fatture presente nella ribbon button della Ricerca Ordini Clienti; 
+**evasione tipo ddt**: contiene el tipo de DDT que se desea generar al lanzar el procedimiento automático de Cumplimiento de DDT presente en el botón de la cinta de opciones de Búsqueda de Pedidos de Clientes; 
 
-**Evasione tipo picking**: contiene il tipo picking che si vuole venga generato al lancio della procedura di creazione del picking dalle [Spedizioni](/docs/logistics/shipping/shippings); 
+**evasione tipo fattura**: contiene el tipo de factura que se desea generar al lanzar el procedimiento automático de Cumplimiento de Facturas presente en el botón de la cinta de opciones de Búsqueda de Pedidos de Clientes; 
 
-**Blocca Doc. Stampato**: se attivo, non permette la modifica dell'ordine cliente che abbia il flag “Stampato” attivo in testata; 
+**evasione tipo picking**: contiene el tipo de picking que se desea generar al lanzar el procedimiento de creación del picking desde las [Envíos (Spedizioni)](/docs/logistics/shipping/shippings); 
 
-**Fido**: se attivo, l'ordine con questo tipo viene considerato per il calcolo del superamento del fido; 
+**Bloquear Documentos Impresos (Blocca Doc. Stampato)**: si está activo, no permite la modificación del pedido del cliente que tenga el indicador “Impreso (Stampato)” activo en la cabecera; 
 
-**Cash flow**: se attivo, il tipo ordine concorre al calcolo del [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow); 
+**fido**: si está activo, el pedido con este tipo se considera para el cálculo de superación del límite de crédito; 
 
-**Magazzino/Descrizione magazzino**: in questi campi si andrà ad indicare il [magazzino](/docs/configurations/tables/logistics/warehouses)  di impegno degli articoli presenti in quel determinato tipo di ordine; il magazzino qui specificato viene riportato in tutte le righe articolo inserite nell’ordine di questa tipologia. 
+**cash flow**: si está activo, el tipo de pedido contribuye al cálculo del [flujo de efectivo (cash flow)](/docs/treasury/cash-flow/cash-flow/search-cash-flow); 
 
-**Causale /Descrizione causale magazzino**: in questi campi si andrà invece ad indicare la *causale di movimentazione* degli articoli impegnati contenuti in quel determinato tipo di ordine; la causale qui specificata viene riportato in tutte le righe articolo inserite nell’ordine di questa tipologia. 
+**Almacén/Descripción del almacén (Magazzino/Descrizione magazzino)**: en estos campos se indicará el [almacén (magazzino)](/docs/configurations/tables/logistics/warehouses) de compromiso de los artículos presentes en ese tipo de pedido; el almacén especificado aquí se llevará en todas las líneas de artículo ingresadas en el pedido de esta tipología. 
 
-**Evasione Quantità Articolo non sommata**: se attivo, evadendo in momenti diversi la stessa riga ordine nello stesso documento di evasione (DDT, Fattura, ..) vengono riportate nel documento di evasione le singole righe articolo senza sommare le quantità. Esempio ho una riga ordine di 10 pz faccio una prima evasione in DDT di 2 pezzi, poi una seconda evasione della stessa riga di altri 2 pz, nel ddt compariranno 2 righe articolo con quantità 2 ciascuna, mentre senza il flag la seconda evasione avrebbe incrementato la riga DDT portando a 4 la quantità; 
+**Motivo/Descripción del motivo del almacén (Causale/Descrizione causale magazzino)**: en estos campos se indicará la *causal de movimiento* de los artículos comprometidos contenidos en ese tipo de pedido; la causal especificada aquí se llevará en todas las líneas de artículo ingresadas en el pedido de esta tipología. 
 
-**Controllo disponibilità**: se attivo, questi tipi ordine verranno considerati nel [calcolo della disponibilità](/docs/erp-home/registers/items/calculate-availability); 
+**evasione quantità articolo non sommata**: si está activo, al cumplir en momentos diferentes la misma línea de pedido en el mismo documento de cumplimiento (DDT, Factura, ..), se reportarán en el documento de cumplimiento las líneas de artículo individuales sin sumar las cantidades. Ejemplo: tengo una línea de pedido de 10 piezas, hago un primer cumplimiento en DDT de 2 piezas, luego un segundo cumplimiento de la misma línea de otras 2 piezas; en el DDT aparecerán 2 líneas de artículo con cantidad 2 cada una, mientras que sin el indicador, el segundo cumplimiento habría incrementado la línea DDT llevando la cantidad a 4; 
 
-**Agr. Acq. IVA**: se attivo, in fase di creazione dell'ordine, il sistema andrà a controllare se per l'articolo utilizzato è presente un codice dell'IVA agricola, altrimenti verrà utilizzato il codice IVA presente nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-item); 
+**Control de disponibilidad (Controllo disponibilità)**: si está activo, estos tipos de pedidos se considerarán en el [cálculo de la disponibilidad](/docs/erp-home/registers/items/calculate-availability); 
 
-**Prezzo Ivato**: la gestione dei prezzi ivati si attiva tramite questo parametro presente in tutti i documenti dell’area vendita a partire dai listini di vendita. Nella ripresa prezzi di un documento con tipologia Prezzo Ivato, si cerca nei listini, con lo stesso flag Prezzo Ivato settato, e si calcolano gli sconti partendo sempre dal prezzo ivato. Dal prezzo ivato utilizzando l’aliquota iva dell’anagrafica cliente o dell’anagrafica articolo  viene calcolato il prezzo non ivato.Nei documenti sono visibili le colonne Prezzo e Prezzo Ivato Attenzione! se non esiste un listino valido con settato il flag Prezzo Ivato e in anagrafica articoli c’è un prezzo di vendita, viene proposto come Prezzo Ivato il prezzo di vendita. Attenzione! è possibile evadere un ordine con flag prezzo ivato in un ddt con tipologia non a prezzo ivato, i totali di riga vengono calcolati in modo diverso tra un documento con flag prezzo ivato e un documento senza flag prezzo ivato. Attenzione! è possibile duplicare un ordine con flag prezzo ivato in un ordine con tipologia non a prezzo ivato, i totali di riga vengono calcolati in modo diverso tra un documento con flag prezzo ivato e un documento senza flag prezzo ivato. Per capire il funzionamento della ripresa Prezzi e dei prezzi ivati e non ivati seguire l’articolo Ripresa Prezzi e Sconti nei documenti di vendita.       
+**agr. acq. iva**: si está activo, en el momento de creación del pedido, el sistema verificará si el artículo utilizado tiene un código de IVA agrícola. De lo contrario, se utilizará el código de IVA presente en el [registro de artículos (anagrafica articolo)](/docs/erp-home/registers/items/create-new-item); 
 
-**Tipo commessa produzione**: in questo campo è possibile indicare il tipo di commessa di produzione che si vuole venga generata da questo tipo di ordine all'interno della *Definizione MPS* nel momento della generazione delle commesse di produzione da ordine cliente; nel caso in cui sia settato il successivo flag *Generazione commessa di produzione*, la generazione della commessa avverrà automaticamente quando l'ordine viene confermato.     
+**prezzo ivato**: la gestión de precios con IVA se activa a través de este parámetro presente en todos los documentos del área de ventas a partir de las listas de precios. En la toma de precios de un documento con la tipología Precio con IVA, se busca en las listas de precios, con el mismo indicador de Precio con IVA configurado, y se calculan los descuentos partiendo siempre del precio con IVA. Del precio con IVA, utilizando la tasa de IVA del registro del cliente o del registro del artículo, se calcula el precio sin IVA. En los documentos son visibles las columnas Precio y Precio con IVA. ¡Atención! Si no existe una lista de precios válida con el indicador Precio con IVA configurado y en el registro de artículos hay un precio de venta, se propone como Precio con IVA el precio de venta. ¡Atención! Es posible cumplir un pedido con indicador de precio con IVA en un DDT con tipología no a precio con IVA, los totales de línea se calculan de manera diferente entre un documento con indicador de precio con IVA y uno sin. ¡Atención! Es posible duplicar un pedido con indicador de precio con IVA en un pedido con tipología no a precio con IVA, los totales de línea se calculan de manera diferente entre un documento con indicador de precio con IVA y uno sin. Para entender el funcionamiento de la toma de Precios y de los precios con y sin IVA, siga el artículo Toma de Precios y Descuentos en documentos de venta.  
 
-**Tipo ordini fornitori/Descrizione tipo OF**: va indicato il codice del tipo ordine fornitore che si vuole venga generato, nel caso si scelga di generare l'ordine fornitore partendo dall'ordine cliente, tramite l'apposita procedura; 
+**tipo commessa produzione**: en este campo es posible indicar el tipo de pedido de producción que se quiere generar a partir de este tipo de pedido dentro de la *Definición MPS (Definizione MPS)* en el momento de la generación de los pedidos de producción a partir del pedido del cliente; en caso de que se configure el siguiente indicador *Generación de pedido de producción*, la generación del pedido se realizará automáticamente cuando el pedido se confirme.     
 
-**Controllo cliente**: se attivo, nel momento in cui viene inserito il cliente all'interno dell'ordine, il sistema andrà a fare un controllo sulle anagrafiche, andando a verificare che il codice inserito corrisponda obbligatoriamente al codice di un'anagrafica cliente. Se così non fosse il sistema avviserà l'utente; senza questo flag è possibile creare Ordini anche per tipi conto Fornitore. 
+**Tipo de pedidos de proveedores/Descripción tipo OF (Tipo ordini fornitori/Descrizione tipo OF)**: se debe indicar el código del tipo de pedido de proveedor que se desea generar, en caso de que se elija generar el pedido de proveedor a partir del pedido del cliente, a través del procedimiento correspondiente; 
 
-**Gestione Matrici Extra Data**: se attivo, permette di visualizzare, nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice. Per saperne di più della gestione Matrici leggere l’articolo Gestione Matrici Extra-Data. 
+**controllo cliente**: si está activo, en el momento en que se inserta el cliente dentro del pedido, el sistema realizará un control sobre los registros, verificando que el código ingresado corresponda obligatoriamente al código de un registro de cliente. Si no es así, el sistema avisará al usuario; sin este indicador, es posible crear pedidos también para tipos de cuentas de proveedor. 
 
-**Configurazione**: in questo campo di andrà ad inserire un codice per l'impostazione automatica degli Extradata nella testata dell'ordine cliente. 
+**gestione matrici extra data**: si está activo, permite visualizar, en el caso de gestionar artículos con matriz, una pestaña adicional para la imputación de los valores de la cantidad por cada celda de matriz. Si no está activo, no se mostrará esta pestaña y la consiguiente matriz. Para saber más sobre la gestión de Matrices, lea el artículo Gestión de Matrices Extra-Data. 
 
-**Stampa**: in questo campo è possibile impostare la stampa di default da utilizzare per questa tipologia di documento; ricordiamo che, in fase di stampa documento, sarà necessario selezionare il report 'Stampe multiple' per utilizzare in automatico la stampa di default;
+**configurazione**: en este campo se debe insertar un código para la configuración automática de los Datos Extra en la cabecera del pedido de cliente. 
 
-**Numero di copie**: in questo campo vengono impostate il numero di copie documento da stampare; 
+**stampa**: en este campo es posible establecer la impresión predeterminada a utilizar para este tipo de documento; recordemos que, al imprimir el documento, será necesario seleccionar el informe 'Impresiones múltiples' para utilizar automáticamente la impresión predeterminada; 
 
-**Generazione Commessa di Produzione**: se attivo, indica che la commessa di produzione del tipo specificato nella colonna *Tipo Produzione Commessa* verrà creata automaticamente una volta che l'ordine viene confermato. 
+**numero di copie**: en este campo se establece el número de copias del documento a imprimir; 
+
+**Generación de Pedido de Producción (Generazione Commessa di Produzione)**: si está activo, indica que el pedido de producción del tipo especificado en la columna *Tipo de Producción del Pedido* se creará automáticamente una vez que el pedido sea confirmado. 
 
 :::note
-Quando viene aggiunta una nuova riga all’interno di un Ordine Cliente per cui vengono generate automaticamente le Commesse di Produzione, la nuova riga nella commessa assume stato *Non esaminato*.
+Cuando se agrega una nueva línea dentro de un Pedido de Cliente para el cual se generan automáticamente los Pedidos de Producción, la nueva línea en el pedido asume el estado *non esaminato*.
 :::
 
-**Gestione Cespiti**: se attivo, nel tab articoli dell’ordine viene attivato il tab Cespiti per collegare l’ordine alla vendita di un cespite 
+**gestione cespiti**: si está activo, en la pestaña de artículos del pedido se activa la pestaña de Activos para vincular el pedido a la venta de un activo. 
 
-**Tipo Operazione**: è sempre collegata alla gestione cespiti, se indicata viene proposta automaticamente nel widget Tipo Operazione presente nel tab Cespiti del tab Articoli dell’ordine.      
+**tipo operazione**: siempre está relacionado con la gestión de activos, si se indica se propone automáticamente en el widget Tipo de Operación presente en la pestaña de Activos de la pestaña de Artículos del pedido.      
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+**Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: en esta columna es posible asociar el tipo de descuento que se propondrá cuando los descuentos se ingresen directamente en la columna *sconti articolo* de la cuadrícula de artículos de los documentos (para más detalles, consulte el artículo [Gestión de Widget de descuentos simplificada (Gestione Widget sconti semplificato)](/docs/sales/sales-flow/discount-widget)).

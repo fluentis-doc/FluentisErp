@@ -1,111 +1,110 @@
 ---
-title: Interventi
+title: interventi
 sidebar_position: 13
 ---
 
-In questa tab vengono configurati tutti i parametri inerenti al cliente da utilizzare negli interventi dell'area Gestione Progetti. 
+En esta pestaña se configuran todos los parámetros relacionados con el cliente que se utilizarán en las intervenciones del área de Gestión de Proyectos.
 
-Sono presenti 2 ulteriori tab: 
+Hay 2 pestañas adicionales:
 
-### Oneri di Viaggio
+### Gastos de Viaje (Oneri di Viaggio)
 
-qui possono essere inserite tutte le spese che verranno proposte negli interventi come Spese da Fatturare. 
+Aquí se pueden ingresar todos los gastos que se propondrán en las intervenciones como Gastos a Facturar.
 
-**Tipologia di spese viaggio**
+**tipologia di spese viaggio**
 
-**Tipo Spesa**: tipologia della spesa da proporre. Verranno visualizzate nell'elenco solamente le spese con flag "Viaggio" attivo nella loro configurazione
+**tipo spesa**: tipo de gasto a proponer. Solo se mostrarán en la lista los gastos con el indicador "Viaje" activo en su configuración.
 
-**Tipo Forfait**: se il tipo spesa inserito è configurato con "Tipo spesa viaggio" = forfait, il campo sarà abilitato per scegliere il tipo forfait da utilizzare. 
+**tipo forfait**: si el tipo de gasto ingresado está configurado con "Tipo gasto viaje" = forfait, el campo se activará para elegir el tipo de forfait a utilizar.
 
-**Importo**: importo della spesa. Abilitato per tutti i tipi spesa che non siano distanza o ore di viaggio. 
+**Importe**: importe del gasto. Activado para todos los tipos de gasto que no sean distancia o horas de viaje.
 
-**Ore Viaggio**: ore di viaggio per il raggiungimento della sede del cliente/sede dell'intervento. Abilitato soltanto se il tipo spesa è configurato correttamente come "Ore di viaggio"
+**ore viaggio**: horas de viaje para llegar a la sede del cliente/sede de la intervención. Activado solo si el tipo de gasto está configurado correctamente como "Horas de viaje".
 
-**KM andata/Ritorno**: KM di viaggio per il raggiungimento della sede del cliente/sede dell'intervento. Abilitato soltanto se il tipo spesa è configurato correttamente come "Distanza"
+**km andata/ritorno**: KM de viaje para llegar a la sede del cliente/sede de la intervención. Activado solo si el tipo de gasto está configurado correctamente como "Distancia".
 
-**Costo orario**: spesa oraria, verrà moltiplicata per le ore di viaggio. Abilitato soltanto se il tipo spesa è configurato correttamente come "Ore di viaggio"
+**costo orario**: gasto por hora, se multiplicará por las horas de viaje. Activado solo si el tipo de gasto está configurado correctamente como "Horas de viaje".
 
-**Costo KM**: spesa al km, verrà moltiplicata per i km indicati. Abilitato soltanto se il tipo spesa è configurato correttamente come "Distanza"
+**costo km**: gasto por km, se multiplicará por los km indicados. Activado solo si el tipo de gasto está configurado correctamente como "Distancia".
 
-**Tipo di contratto della risorsa e descrizione**: utilizzato come filtro per selezionare la spesa corrispondente al contratto configurato nell'anagrafica risorsa. 
+**Tipo de contrato de la recurso (Tipo di contratto della risorsa) y descripción**: utilizado como filtro para seleccionar el gasto correspondiente al contrato configurado en el registro de recursos.
 
-**Sede di lavoro**: utilizzato come filtro per selezionare la spesa corrispondente alla sede di lavoro configurata nell'anagrafica risorsa. 
+**sede di lavoro**: utilizado como filtro para seleccionar el gasto correspondiente a la sede de trabajo configurada en el registro de recursos.
 
-**Tipo Intervento**: utilizzato come filtro per selezionare la spesa corrispondente al tipo intervento utilizzato
+**tipo intervento**: utilizado como filtro para seleccionar el gasto correspondiente al tipo de intervención utilizada.
 
-**Spesa viva**: se abilitato, in fase di calcolo spese considererà anche i dati dichiarati dalla risorsa. 
-:::note[Esempio]
-in anagrafica cliente configuriamo la spesa Costo km 0,50 senza indicare i KM andata/ritorno ed abilitiamo il flag. 
-La risorsa inserisce l'intervento dichiarando nelle spese sostenute la stessa spesa indicando 150 km.
-Al cambio stato intervento da Inserito in Da approvare, le spese verranno ricalcolate, ed in presenza di questo flag attivo, considererà i km dichiarati dalla risorsa e li inserirà nelle spese da fatturare assieme al valore Costo Km indicato in anagrafica cliente. 
-La stessa logica è applicata per le altre tipologie  di spesa. 
+**spesa viva**: si está habilitado, en la fase de cálculo de gastos considerará también los datos declarados por el recurso. 
+:::note[Ejemplo]
+en el registro del cliente configuramos el gasto Costo km 0.50 sin indicar los KM ida/vuelta y habilitamos el indicador. 
+El recurso inserta la intervención declarando en los gastos incurridos el mismo gasto indicando 150 km. 
+Al cambiar el estado de la intervención de Insertado a Por Aprobar, los gastos se recalcularán, y con este indicador activo, considerará los km declarados por el recurso y los insertará en los gastos a facturar junto con el valor Costo Km indicado en el registro del cliente. 
+La misma lógica se aplica a los otros tipos de gasto. 
 :::
 
-**Tipologia di spese viaggio - dettaglio forfait**
+**Tipo de gastos de viaje - detalle del forfait (Tipologia di spese viaggio - dettaglio forfait)**
 
-il forfait essendo composto da più spese che in fattura verranno inserite come 1 riga cumulativa, permette in questo riquadro la visualizzazione del dettaglio del forfait, e l'indicazione dell'importo delle singole voci. La riga forfait in intervento ed in fattura verrà inserita come somma di tutti i valori configurati in questa videata. 
+El forfait, compuesto por múltiples gastos que en la factura se insertarán como 1 línea acumulativa, permite en este cuadro la visualización del detalle del forfait y la indicación del importe de los conceptos individuales. La línea forfait en la intervención y en la factura se insertará como la suma de todos los valores configurados en esta vista.
 
-**Tipo Spesa**: tipologia della spesa considerata nel forfait
+**tipo spesa**: tipo de gasto considerado en el forfait.
 
-**Importo**: importo per la spesa
+**Importe**: importe para el gasto.
 
-**Una tantum**: indipendentemente dal numero di risorse e/o giorni di servizio all'interno dello stesso intervento, la spesa verrà considerata 1 sola volta. 
+**una tantum**: independientemente del número de recursos y/o días de servicio dentro de la misma intervención, el gasto se considerará solo 1 vez.
 
-**Per giorno**: in base ai giorni di servizio all'interno dello stesso intervento, la spesa verrà moltiplicata per ogni giornata di servizio. 
+**per giorno**: en función de los días de servicio dentro de la misma intervención, el gasto se multiplicará por cada día de servicio.
 
-**Per risorsa**: in base risorse indicate nei servizi all'interno dello stesso intervento, la spesa verrà moltiplicata per ogni risorsa. 
-:::note[Esempio]
-il forfait è composto da: 
-Autostrada: 100
-Pranzo: 50
+**per risorsa**: según los recursos indicados en los servicios dentro de la misma intervención, el gasto se multiplicará por cada recurso. 
+:::note[Ejemplo]
+el forfait está compuesto por: 
+Autopista: 100
+Almuerzo: 50
 
-Nell'intervento della durata di una giornata sono presenti 3 risorse, quindi verranno dichiarate 3 righe di servizio. 
-La spesa forfait da fatturare risulterà in totale 250 (100 autostrada fissi, 50 pranzo per ogni risorsa). Il calcolo verrà effettuato al cambio stato intervento da "Inserito" in "Da approvare"
+En la intervención de duración de un día hay 3 recursos, por lo que se declararán 3 líneas de servicio. 
+El gasto forfait a facturar resultará en un total de 250 (100 autopista fijos, 50 almuerzo por cada recurso). El cálculo se realizará al cambiar el estado de la intervención de "Insertado" a "Por Aprobar".
 :::
 
+### Configuración del plan de facturación (Impostazioni del piano di fatturazione)
+Las reglas a aplicar al plan de facturación de la intervención se pueden establecer en los parámetros generales de la Gestión de Proyectos, y ser válidas para todos los clientes, o específicas por cliente. 
+El procedimiento de cálculo del plan de facturación verificará primero la presencia de configuraciones específicas para el cliente, y si no están presentes, considerará las que estén en los parámetros generales. 
 
-### Impostazioni del piano di fatturazione
-Le regole da applicare al piano di fatturazione dell'intervento possono essere stabilite nei parametri generali della Gestione Progetti, ed essere quindi valide per tutti i clienti, oppure specifiche per cliente. 
-La procedura di calcolo del piano di fatturazione controllerà prima la presenza di configurazioni specifiche per il cliente, e se non presenti, considererà quelle presenti nei parametri generali. 
+**sede di lavoro** y **tipo intervento**: utilizados como filtro; si están vacíos, se consideran válidos para todas las sedes de trabajo y para todos los tipos de intervenciones. Si están configurados, solo se tendrán en cuenta en correspondencia con la sede de trabajo configurada en el registro del recurso que realiza la intervención, y del tipo de intervención utilizada.
 
-**Sede di Lavoro** e **Tipo intervento** : utilizzati come filtro; se vuoti vengono considerati validi per tutte le sedi di lavoro e per tutti i tipi interventi. Se invece configurati, verranno presi in considerazione solamente in corrispondenza della sede di lavoro configurata nell'anagrafica della risorsa che svolge l'intervento, e del tipo intervento utilizzato. 
+**tipo fascia oraria**: indica la franja horaria de trabajo acordada con el cliente y el monto de horas diarias. 
+:::note[Observación] 
+Se podrá establecer que para un cliente el monto de horas diarias sean 7 horas, mientras que para otro 8. Las horas indicadas en la franja horaria se utilizarán en la conversión entre diferentes unidades de medida temporales: 
+- por ejemplo, si hemos trabajado 7 horas para el cliente y su franja corresponde a 7 horas, en la conversión a Días tendremos como cantidad 1. 
+- Si, en cambio, hemos trabajado 7 horas para el cliente y su franja corresponde a 8 horas, en la conversión a Días tendremos como cantidad 0.875. 
 
-**Tipo fascia oraria**: indica la fascia oraria di lavoro concordata con il cliente, ed il monte ore giornaliero. 
-:::note[Osservazione] 
-Si potrà stabilire che per un cliente il monte ore giornaliero sono 7 ore, mentre per un altro 8. Le ore indicate nella fascia oraria verranno utilizzate nella conversione tra diverse unità di misura temporali: 
-- es. se abbiamo svolto 7 ore dal cliente e la sua fascia corrisponde a 7 ore, nella conversione in Giorni avremo come quantità 1. 
-- se invece abbiamo svolto 7 ore dal cliente e la sua fascia corrisponde a 8 ore, nella conversione in Giorni avremo come quantità 0.875. 
-
-La fascia verrà inoltre considerata per il calcolo del fuori orario da tariffare con prezzo diverso, sia per il superamento del monte ore totale sia degli orari stabiliti. 
+La franja también se considerará para el cálculo del tiempo extra que se tarificará a un precio diferente, tanto por el excedente del monto total de horas como de los horarios establecidos. 
 :::
 
-**Tipo fascia oraria notturna**: il funzionamento è analogo come per il campo "Tipo Fascia oraria" ma verrà utilizzato nel caso di effettuazione servizi sia diurni che notturni, per permettere diversa tariffazione. 
+**tipo fascia oraria notturna**: el funcionamiento es análogo al del campo "Tipo Franja horaria" pero se utilizará en caso de realizar servicios tanto diurnos como nocturnos, para permitir una tarificación diferente.
 
-**Tipo arrotondamento**: indica la regola matematica con cui arrotondare le ore di lavoro. L'arrotondamento verrà poi applicato sulle ore complessive dell'intervento. Es. totale ore 7,45 h, se previsto arrotondamento alla mezz'ora, le ore fatturate saranno 8. 
+**tipo arrotondamento**: indica la regla matemática con la que redondear las horas de trabajo. El redondeo se aplicará luego sobre las horas totales de la intervención. Por ejemplo, total de horas 7.45 h, si se prevé redondeo a la media hora, las horas facturadas serán 8.
 
-**Categoria commerciale**: ulteriore filtro per la selezione della regola per il piano di fatturazione. Se vuoto verrà considerato valido per tutte le categorie commerciali clienti, nel caso di indicazione specifica verrà selezionata quella corrispondente inserita in anagrafica cliente - tab Amministrazione
+**categoria commerciale**: filtro adicional para la selección de la regla para el plan de facturación. Si está vacío, se considerará válido para todas las categorías comerciales de clientes; en caso de indicación específica, se seleccionará la correspondiente introducida en el registro del cliente - pestaña Administración.
 
-**Includi ore viaggio nei servizi**: permette di considerare le ore di viaggio presenti nell'intervento nella tab "Spese da fatturare", come se fossero delle ore di servizio. Di conseguenza tutte le regole di fatturazione (fascia oraria, arrotondamenti, etc) verranno applicate anche alle ore di viaggio, come appunto fossero un servizio svolto. 
+**Incluir horas de viaje en los servicios (Includi ore viaggio nei servizi)**: permite considerar las horas de viaje presentes en la intervención en la pestaña "Gastos a facturar", como si fueran horas de servicio. Por lo tanto, todas las reglas de facturación (franja horaria, redondeos, etc.) se aplicarán también a las horas de viaje, como si fueran un servicio realizado.
 
-**Escludi arrotondamenti**: se abilitato, non verranno applicati arrotondamenti nel piano di fatturazione. 
+**escludi arrotondamenti**: si está habilitado, no se aplicarán redondeos en el plan de facturación.
 
-**Escludi calcolo Fuori Orario**: se abilitato, non verrà calcolato il fuori orario nel piano di fatturazione. Per la conversione tra diverse unità di misura temporali (es. da ore a giorni) verrà utilizzato il monte ore indicato nel campo "Turno di lavoro" nei parametri generali della Gestione Progetti. 
+**escludi calcolo fuori orario**: si está habilitado, no se calcularán las horas extra en el plan de facturación. Para la conversión entre diferentes unidades de medida temporales (por ejemplo, de horas a días) se utilizará el monto de horas indicado en el campo "Turno de trabajo" en los parámetros generales de la Gestión de Proyectos. 
 
-**Considera tutte le fasce orarie calcolo fuori Orario**: se abilitato nel calcolo del fuori orario vengono prese in considerazione sia la fascia oraria diurna che la fascia oraria notturna. Verrà considerato fuori orario solo ciò che è al di fuori di entrambe le fasce o supera il monte ore giornaliero. Se disabilitato, verrà considerata solo una fascia oraria (notturna o diurna in base all'orario di inizio del servizio) e tutto ciò che è fuori da questa fascia oraria considerata, sarà tariffato fuori orario. 
-:::note[Esempio]
-Fascia diurna 7.00 - 18.00
-Fascia oraria notturna 20.00 - 5.00
+**considera tutte le fasce orarie calcolo fuori orario**: si se habilita, en el cálculo de horas extra se tomarán en cuenta tanto la franja horaria diurna como la franja horaria nocturna. Se considerará fuera de horario solo lo que esté fuera de ambas franjas o exceda el monto de horas diarias. Si se deshabilita, solo se considerará una franja horaria (nocturna o diurna, dependiendo de la hora de inicio del servicio) y todo lo que esté fuera de esta franja horaria considerada se tarificará como horas extra. 
+:::note[Ejemplo]
+Franja diurna 7:00 - 18:00
+Franja horaria nocturna 20:00 - 5:00
 
-orario servizio: 3.00 - 8.00
-con flag abilitato il piano di fatturazione sarà: 
-- riga servizio 3.00 - 5.00 con tariffa notturna
-- riga servizio 05.00 - 07.00 con tariffa fuori orario
-- riga servizio 07.00 - 08.00 con tariffa diurna
-(vengono considerate per il calcolo entrambe  le fasce orarie, risulta in fuori orario solamente quello che non rientra in nessuna delle due)
+horario de servicio: 3:00 - 8:00
+con el indicador habilitado, el plan de facturación será: 
+- línea de servicio 3:00 - 5:00 con tarifa nocturna
+- línea de servicio 5:00 - 7:00 con tarifa fuera de horario
+- línea de servicio 7:00 - 8:00 con tarifa diurna
+(se consideran para el cálculo ambas franjas horarias; resulta como horas extra solo aquello que no entra en ninguna de las dos)
 
-con flag disabilitato il piano di fatturazione sarà:
-- riga con servizio 3.00 - 5.00 con tariffa notturna
-- riga con servizio 05.00 - 08.00 con tariffa fuori orario 
-(viene considerato per il calcolo solo la fascia di orario notturna, che è di riferimento per il servizio iniziato in quella fascia)
+con el indicador deshabilitado, el plan de facturación será:
+- línea con servicio 3:00 - 5:00 con tarifa nocturna
+- línea con servicio 5:00 - 8:00 con tarifa fuera de horario 
+(solo se considera para el cálculo la franja horaria nocturna, que es de referencia para el servicio iniciado en esa franja)
 
 :::

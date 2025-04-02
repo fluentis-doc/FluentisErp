@@ -1,49 +1,49 @@
 ---
-title: Nuova Risorsa
+title: Nueva Recurso (Nuova Risorsa)
 sidebar_position: 2
 ---
 
-In questa form verranno inserite tutte le informazioni relative ad una nuova **Risorsa**.
+En este formulario se ingresarán toda la información relacionada con un nuevo **risorsa**.
 
-**Codice/Descrizione**: indica il codice della risorsa con la relativa descrizione;
+**codice/descrizione**: indica el código del recurso con la correspondiente descripción;  
 
-**Tipo risorsa**: indica di che tipo sia la risorsa, generalmente Umana o Materiale;
+**tipo risorsa**: indica de qué tipo es el recurso, generalmente Humano o Material;  
 
-**Dipendente**: è possibile associare il conto del dipendente;
+**dipendente**: es posible asociar la cuenta del empleado;  
 
-**Costo unitario/Ore mensili disponibili**: indica il costo oer unità di lavoro del dipendente e la relativa disponibilità mensile;
+**Costo unitario/Horas mensuales disponibles (Costo unitario/Ore mensili disponibili)**: indica el costo por unidad de trabajo del empleado y la disponibilidad mensual correspondiente;  
 
-**Operatore**: è possibile collegare un operatore;
+**operatore**: es posible vincular un operador;  
 
-**Conto**: è possibile collegare la risorsa ad un professionista esterno;
+**conto**: es posible vincular el recurso a un profesional externo;  
 
-**Articolo**: è possibile collegare la risorsa ad un elemento materiale;
+**articolo**: es posible vincular el recurso a un elemento material;  
 
-**Precodice cespite**: è possibile collegare la risorsa ad un cespite;
+**precodice cespite**: es posible vincular el recurso a un activo;  
 
-**Società**: è possibile collegare la società;
+**società**: es posible vincular la empresa;  
 
-**Data chiusura**: è possibile specificare unìeventuale data di chiusura rapporto;
+**data chiusura**: es posible especificar una posible fecha de cierre de relación;  
 
-**Note**: contiene eventuali note liberamente inserite.
+**note**: contiene cualquier nota ingresada libremente.  
 
-Sono presenti delle tab specifiche:
+Hay pestañas específicas disponibles:
 
-**Tab Calendario**
+**Pestaña Calendario (Tab Calendario)**
 
-Qui è possibile collegare un [Calendario](/docs/project-management/registers/calendars-management/calendars/) specifico alla risorsa.
+Aquí es posible vincular un [Calendario (Calendario)](/docs/project-management/registers/calendars-management/calendars/) específico al recurso.  
 
-Cliccando nella ribbon bar ![](/img/neutral/common/detail-propose.png) Proponi dettaglio, sarà possibile gestire i **Giorni lavorativi**. In particolare, nella finestra uscente è possibile escludere determinate giornate di lavoro e indicare un giorno libero; i risultati saranno riportati nella griglia **Giorni lavorativi** e terranno in considerazione i turni di lavoro precedentemente inseriti per la risorsa.
+Al hacer clic en la barra de ribbon ![](/img/neutral/common/detail-propose.png) Proponer detalle, será posible gestionar los **giorni lavorativi**. En particular, en la ventana emergente se pueden excluir ciertos días de trabajo e indicar un día libre; los resultados se mostrarán en la cuadrícula **giorni lavorativi** y tendrán en cuenta los turnos de trabajo previamente ingresados para el recurso.  
 
-In Fluentis è possibile gestire il costo delle risorse da utilizzare nel calcolo costi in riga di progetto e nell’elaborazione SAL di progetto. 
-Il costo può essere impostato direttamente in anagrafica risorsa, con un valore unico valido per tutte le circostanze, oppure differenziato per:
--	**Festivi**: 	utilizzato per le giornate configurate nel Calendario giorni festivi.
--	**Straordinari**: utilizzato per le giornate lavorative in cui si è superato il monte ore giornaliero.
--	**Notturno**: 	utilizzato per le giornate lavorative il cui turno è marcato come “notturno”
--	**Straordinario notturno**: utilizzato per le giornate lavorative il cui turno è marcato come “notturno” e si è superata la fascia oraria di lavoro o il monte ore giornaliero.
--	**Turno alternativo**: 	  utilizzato se la risorsa lavora su 2 turni diversi e si vuole tariffare un turno diversamente rispetto all’altro. 
+En Fluentis es posible gestionar el costo de los recursos a utilizar en el cálculo de costos en la línea del proyecto y en la elaboración del **S.A.L. de proyecto (elaborazione SAL di progetto)**.  
+El costo puede establecerse directamente en el registro de recursos, con un valor único válido para todas las circunstancias, o diferenciado por:  
+- **Festivos**: utilizado para los días configurados en el calendario de días festivos.  
+- **straordinari**: utilizado para los días de trabajo en los que se ha superado el total de horas diarias.  
+- **notturno**: utilizado para los días de trabajo cuyo turno está marcado como "nocturno".  
+- **straordinario notturno**: utilizado para los días de trabajo cuyo turno está marcado como "nocturno" y se ha superado el horario laboral o el total de horas diarias.  
+- **turno alternativo**: utilizado si el recurso trabaja en 2 turnos diferentes y se quiere tarificar un turno de manera diferente al otro.  
 
-Ad una di queste voci è possibile abilitare il flag “costo default giorno non lavorativo”. Questo flag viene utilizzato per tutti i casi in cui il giorno dell’attività non corrisponde con nessuna giornata né nel calendario giorni festivi né nel calendario dei giorni lavorativi della risorsa. 
+A una de estas opciones es posible habilitar el indicador "costo por defecto día no laboral (costo default giorno non lavorativo)". Este indicador se utiliza para todos los casos en los que el día de la actividad no coincide con ningún día ni en el calendario de días festivos ni en el calendario de días laborales del recurso.  
 
-Esempio:
-un sabato che non rientra né nei festivi né nel calendario della risorsa, può essere tariffato sia come festivo che come straordinario. Applicheremo nel calcolo costo il costo marcato come “default”.
+Ejemplo:  
+un sábado que no está incluido ni en los festivos ni en el calendario del recurso puede ser tarifado tanto como festivo como extraordinario. Aplicaremos en el cálculo de costo el costo marcado como “por defecto (default)”.

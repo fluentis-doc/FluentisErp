@@ -1,182 +1,181 @@
 ---
-title: Ordine pianificato
+title: ordine pianificato
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La funzione degli **Ordini Pianificati** nel sistema Fluentis è una componente chiave per la gestione della pianificazione della produzione e degli acquisti. Gli ordini pianificati possono essere generati automaticamente attraverso la schedulazione generale o tramite l'elaborazione MRP (Manufacturing Resource Planning), oppure creati manualmente dall'utente. Questi ordini vengono utilizzati per gestire le necessità future delle risorse e dei materiali in modo preventivo e organizzato.
+:::important ¿Para qué sirve? (A cosa serve)
+La función de los **ordini pianificati** en el sistema Fluentis es una componente clave para la gestión de la planificación de la producción y de las compras. Los pedidos planificados pueden generarse automáticamente a través de la programación general o mediante la elaboración MRP (Planificación de Recursos de Manufactura), o bien ser creados manualmente por el usuario. Estos pedidos se utilizan para gestionar las necesidades futuras de recursos y materiales de manera preventiva y organizada.
 
-Nella piattaforma Fluentis, gli ordini pianificati possono essere relativi a diverse tipologie: produzione, acquisto, e conto lavoro; questi vengono visualizzati con colori diversi nella griglia, a seconda della loro tipologia. Lo scopo principale dell'utilizzo degli ordini pianificati è ottimizzare i processi produttivi e di approvvigionamento, garantendo che le risorse necessarie siano disponibili quando richiesto e che le operazioni possano procedere senza interruzioni.
+En la plataforma Fluentis, los pedidos planificados pueden estar relacionados con diferentes tipos: producción, compra y trabajo por encargo; estos se visualizan con diferentes colores en la cuadrícula, según su tipo. El principal objetivo del uso de los pedidos planificados es optimizar los procesos productivos y de aprovisionamiento, garantizando que los recursos necesarios estén disponibles cuando se requieran y que las operaciones puedan proceder sin interrupciones.
 :::
 
-Normalmente gli ordini pianificati vengono generati automaticamente dalla procedura di *Pianificazione generale* oppure dall'*Elaborazione MPR*, ma l'utente ha la possibilità di generare manualmente un ordine pianificato, sia esso di acquisto, di produzione o di conto lavoro.
+Normalmente, los pedidos planificados se generan automáticamente a partir del procedimiento de *Programación general* o de la *Elaboración MRP*, pero el usuario tiene la posibilidad de generar manualmente un pedido planificado, ya sea de compra, de producción o de trabajo por encargo.
 
-La form si apre tramite:  
- -  il percorso **Pianificazione > MS Master scheduling > Ordini Pianificati > Nuovo Ordine Pianificato** 
+El formulario se abre a través de:  
+- la ruta **Programación > MS Planificación Maestra > Pedidos Planificados > Nuevo Pedido Planificado**
 
-oppure tramite 
+o mediante
 
- - il pulsante **Inserisci Ordine** che si trova nella form [Ricerca Ordini Pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+- el botón **Insertar Pedido** que se encuentra en el formulario [Búsqueda de Pedidos Planificados](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-## Testata ordine pianificato 
+## Encabezado del pedido planificado
 
-La form si compone di una parte contenente le informazioni di testata e da una serie di tab sottostanti.          
-In automatico vengono inseriti *numero*, *anno* e *data*, l’indicazione se si tratti di un *ordine di acquisto, di produzione o conto lavoro* ed il *tipo di ordine pianificato*. Quest’ultimo e la numerazione sono presi direttamente dai dati inseriti nella tabella [Tipo documenti](/docs/configurations/tables/production/documents-types/) presente tra le tabelle di produzione. Allo stesso tempo sono inseriti anche il *numero del ciclo di lavoro* di default e la *versione* da utilizzare.                   
-I dati obbligatori da inserire sono: l’*articolo* con eventuale variante, e la *data di inizio e fine*; dopo di che sarà sufficiente inserire la *quantità* da produrre / acquistare.            
+El formulario consta de una parte que contiene la información del encabezado y de una serie de pestañas subyacentes.  
+Automáticamente se rellenan el *número*, *año* y *fecha*, la indicación de si se trata de un *pedido de compra, de producción o de trabajo por encargo*, y el *tipo de pedido planificado*. Este último y la numeración se toman directamente de los datos ingresados en la tabla [Tipo de documentos](/docs/configurations/tables/production/documents-types/) presente entre las tablas de producción. Al mismo tiempo, también se insertan el *número de ciclo de trabajo* por defecto y la *versión* a utilizar.  
+Los datos obligatorios a ingresar son: el *artículo* con la posible variante, y la *fecha de inicio y fin*; después de esto, será suficiente ingresar la *cantidad* a producir/comprar.  
 
-*Pulsante specifico*:  
+*Botón específico*:  
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo. 
-> **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine pianificato ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine pianificato;  
-> **[Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: consente di aprire la finestra relativa ai parametri MRP dell'articolo;  
-> **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti all'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
-> **Generazione ciclo di lavoro**: permette di creare il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
-> **[Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies)**: permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> **[Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route)**: permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.  
+> **Completación de datos del pedido**: invoca el procedimiento que permite ingresar y/o actualizar, para el artículo ingresado en el pedido planificado, todos los datos relacionados con materiales, fases, equipamiento, herramientas, atributos y notas varias, tomándolos de la lista de materiales y del ciclo de trabajo del artículo.  
+> **Recalcular fecha de inicio**: invoca el procedimiento que permite realizar una actualización de la fecha de inicio del pedido planificado y, eventualmente, de las fases de trabajo correspondientes como resultado de una modificación de los tiempos de trabajo y/o de la cantidad a producir del artículo objeto del pedido planificado;  
+> **[Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: permite abrir la ventana relacionada con los parámetros MRP del artículo;  
+> **Generar lista de materiales**: permite generar la lista de materiales basada en los datos ingresados dentro del pedido de producción o actualizar los datos existentes con los que se han ingresado en el pedido;  
+> **Generación de ciclo de trabajo**: permite crear el ciclo de trabajo del artículo en base a los datos ingresados en el pedido, o actualizar los datos existentes con los que se han ingresado en el pedido;  
+> **[Lista de materiales](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies)**: permite abrir la pantalla relacionada con la lista de materiales del artículo;  
+> **[Ciclos de trabajo](/docs/erp-home/registers/production/routes/new-route)**: permite visualizar el ciclo de trabajo y las fases de producción relacionadas del artículo.  
 
-*Campi specifici*: 
+*Campos específicos*:  
 
-**Tipo Ordine Pianificato**: viene proposto il tipo predefinito come tipo di default;  
-**Ordine tassativo**: se attivo, questo flag indica che l'ordine pianificato assume un' importanza prioritaria e non permette all'utente di spostare l'ordine stesso impostando una data maggiore rispetto alla data fine prevista da schedulazione generale;  
-**Priorità dell'ordine**: permette di impostare la priorità che viene data a questo ordine;  
-**Generato da domanda**: in questo campo viene visualizzato *Manuale* (se si tratta di un ordine pianificato creato manualmente), *Dipendente* (se si tratta di un ordine pianificato creato da schedulazione e che dipende da altri ordini pianificati di livello superiore) o *Indipendente* (se si tratta di un ordine pianificato creato da schedulazione e che non dipende da altri ordini pianificati di livello superiore, in quanto già esso è un ordine di livello 1);    
-**Commessa prod**: in questi 3 campi vengono impostati l'anno, il numero e la descrizione della commessa di produzione da cui è stato generato l'ordine pianificato. Ovviamente se esso è stato generato manualmente, non sarà possibile legarlo ad alcune commessa di produzione già esistente e quindi questa casella risulterà vuota;     
-**Tipo commessa**: in questa casella viene visualizzato il tipo della commessa di produzione da cui è stato generato l'ordine pianificato. Ovviamente se esso è stato generato manualmente, non sarà possibile legarlo ad alcune commessa di produzione già esistente e quindi questa casella risulterà vuota;     
-**Progetto**: con un doppio click si apre l'help' che permette di collegare un progetto all'ordine pianificato che si sta inserendo;       
-**Cliente**: indica il cliente della commessa;      
-**Fornitore/Terzista**: queste caselle risultano attive nel caso in cui l'ordine pianificato sia di acquisto o di conto lavoro;     
-**Articolo**: indica classe, codice e descrizione dell'articolo della commessa;        
-**Variante**: in questa combo box viene specificata la variante dell'articolo;  
-**Quantità da produrre**: indica la quantità da produrre;         
-**UM Gestionale**: viene indicata l'unità misura gestionale dell'articolo;  
-**Quantità utilizzo**: in questo campo viene impostata la quantità da produrre nella eventuale unità di misura alternativa;  
-**UM Utilizzo**: viene indicata l'unità misura alternativa dell'articolo;  
-**Data inizio e fine**: vengono impostate le date previste di inizio e fine della relativa lavorazione. Se dopo aver completato i dati del ciclo di lavorazione l'utente esegue una modifica di una di queste 2 date, l'altra viene ricalcolata di conseguenza;  
-**Audit trail**: sezione che riporta in automatico la data di creazione dell'ordine e la data dell'ultima modifica, riportando per entrambe l'utente che ha compiuto l'operazione;  
-**Note**: é un campo libero nel quale possono essere inserite note.  
+**Tipo de Pedido Planificado**: se propone el tipo predefinido como tipo por defecto;  
+**Pedido obligatorio**: si está activo, este indicador indica que el pedido planificado tiene una importancia prioritaria y no permite al usuario mover el pedido al establecer una fecha posterior a la fecha de finalización prevista por la programación general;  
+**Prioridad del pedido**: permite establecer la prioridad que se le da a este pedido;  
+**Generado por demanda**: en este campo se muestra *Manual* (si se trata de un pedido planificado creado manualmente), *Dependiente* (si se trata de un pedido planificado creado por programación y que depende de otros pedidos planificados de nivel superior) o *Independiente* (si se trata de un pedido planificado creado por programación y que no depende de otros pedidos planificados de nivel superior, ya que este es un pedido de nivel 1);    
+**Orden de producción**: en estos 3 campos se establecen el año, el número y la descripción de la orden de producción de la cual se generó el pedido planificado. Obviamente, si se generó manualmente, no será posible vincularlo a ninguna orden de producción ya existente y por lo tanto este campo estará vacío;    
+**Tipo de orden**: en este campo se muestra el tipo de orden de producción de la cual se generó el pedido planificado. Obviamente, si se generó manualmente, no será posible vincularlo a ninguna orden de producción ya existente y por lo tanto este campo estará vacío;    
+**Proyecto**: con un doble clic se abre la ayuda que permite vincular un proyecto al pedido planificado que se está ingresando;       
+**Cliente**: indica el cliente de la orden;      
+**Proveedor/Tercerista**: estos campos están activos en caso de que el pedido planificado sea de compra o de trabajo por encargo;     
+**Artículo**: indica la clase, código y descripción del artículo de la orden;        
+**Variante**: en este combo se especifica la variante del artículo;  
+**Cantidad a producir**: indica la cantidad a producir;         
+**UM de Gestión (UM Gestionale)**: se indica la unidad de medida de gestión del artículo;  
+**Cantidad de uso**: en este campo se establece la cantidad a producir en la posible unidad de medida alternativa;  
+**um utilizzo**: se indica la unidad de medida alternativa del artículo;  
+**Fecha de inicio y fin**: se establecen las fechas previstas de inicio y fin de la correspondiente producción. Si después de completar los datos del ciclo de trabajo el usuario modifica una de estas 2 fechas, la otra se recalculará en consecuencia;  
+**audit trail**: sección que registra automáticamente la fecha de creación del pedido y la fecha de la última modificación, registrando para ambas al usuario que realizó la operación;  
+**Notas**: es un campo libre en el que pueden ingresarse notas.  
 
-Dopo il salvataggio almeno dei campi obbligatori premere il pulsante **Completamento dati ordine** per aggiornare tutti i tabs (Materiali, Fasi, etc.) che prendono i dati da distinta base e ciclo di lavorazione dell'articolo oggetto di Ordine Pianificato (solo se di produzione).
+Después de guardar al menos los campos obligatorios, presione el botón **Completación de datos del pedido** para actualizar todas las pestañas (Materiales, Fases, etc.) que toman los datos de la lista de materiales y del ciclo de trabajo del artículo objeto del Pedido Planificado (solo si es de producción).
 
+## Materiales
 
-## Materiali
+Esta pestaña está constituida por una cuadrícula, dentro de la cual el usuario puede ingresar manualmente los materiales que desea que se utilicen para la producción del artículo objeto del pedido planificado (solo si es de producción). Después de la entrada manual, es necesario, para importar los datos desde la lista de materiales, hacer clic en el botón **Completación de datos del pedido** presente en la barra de ribbons.
 
-Questo tab è costituito da una griglia, all'interno della quale l'utente può inserire manualmente i materiali che vuole che vengano utilizzati per la produzione dell'articolo oggetto dell'ordine pianificato (solo se di produzione). Dopo l'inserimento manuale è necessario, per importare i dati dalla distinta base, cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
-
-La griglia risulta già compilata nel caso in cui l'ordine pianificato provenga da *Schedulazione generale* o da *Elaborazione MRP*, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali alla lista componenti dell'ordine pianificato.  
+La cuadrícula ya está preenchida en caso de que el pedido planificado provenga de *Programación general* o de *Elaboración MRP*, pero el usuario puede modificar los datos y/o agregar más materiales a la lista de componentes del pedido planificado.  
 
 :::note Nota
-Se l'ordine pianificato è di acquisto il tab *Materiali* risulta non attivo.
+Si el pedido planificado es de compra, la pestaña *Materiales* no está activa.
 :::
 
-*Pulsanti specifici*:
-> **Inserisci materiale**: consente di inserire un nuovo materiale nella griglia;  
-> **Cancella materiale**: consente di cancellare i materiali inseriti nella griglia. 
+*Botones específicos*:  
+> **Insertar material**: permite insertar un nuevo material en la cuadrícula;  
+> **Eliminar material**: permite eliminar los materiales ingresados en la cuadrícula. 
 
-*Campi specifici*:
+*Campos específicos*:  
 
-**Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in distinta base. Essa può essere modificata, come tutti gli altri dati presenti in questa griglia;  
-**C/L**: in questo campo viene ripreso il flag presente nei *Parametri MRP* dell'articolo chiamato *Considera in CL* ovvero indica se l'articolo deve essere incluso come materiale negli ordini di conto lavoro;        
-**UM Utilizzo**: in questo campo si inserisce l'eventuale unità di misura alternativa dell'articolo;  
-**Data impiego**: coincide con la data inizio prevista dell'ordine pianificato (modificando la prima viene automaticamente cambiata anche quest'ultima);  
-**Qtà impiego**: rappresenta la quantità unitaria necessaria per questo articolo (prevista dalla DB) che può essere comunque modificata;  
-**Qtà totale**: rappresenta la quantità che si ottiene moltiplicando la *Qtà d'impiego* per la *Qtà da produrre*;  
-**% scarto**: in questa casella viene inserita o ripresa dalla distinta base l'eventuale % di scarto per questo articolo;  
-**Fase/Sottofase**: è possibile inserire manualmente la relativa fase e sottofase e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo; queste vengono proposte in automatico dal ciclo di lavoro;            
-**Q.tà disp**: in questo campo compare la quantità disponibile dell'articolo alla data di impiego.
+**Prioridad**: aquí se muestra la prioridad del componente, si está presente, ingresada en la lista de materiales. Puede ser modificada, al igual que todos los demás datos presentes en esta cuadrícula;  
+**C/L**: en este campo se toma el indicador presente en los *Parámetros MRP* del artículo llamado *Considera en CL* que indica si el artículo debe incluirse como material en los pedidos de trabajo por encargo;        
+**um utilizzo**: en este campo se ingresa la posible unidad de medida alternativa del artículo;  
+**Fecha de uso**: coincide con la fecha de inicio prevista del pedido planificado (al modificar la primera, esta última se cambia automáticamente);  
+**Qtà de uso**: representa la cantidad unitaria necesaria para este artículo (prevista por la DB) que de todas formas puede ser modificada;  
+**Qtà total**: representa la cantidad que se obtiene multiplicando la *Qtà de uso* por la *Qtà a producir*;  
+**% Descarte**: en este campo se ingresa o se toma de la lista de materiales el posible % de descarte para este artículo;  
+**Fase/Subo fase**: es posible ingresar manualmente la fase y subfase correspondientes y asignar el material seleccionado a una determinada fase de trabajo del artículo; estas son propuestas automáticamente por el ciclo de trabajo;            
+**Qtà disp**: en este campo aparece la cantidad disponible del artículo a la fecha de uso.
 
-## Fasi
+## Fases
 
-Questo tab è costituito da una griglia, all'interno della quale l'utente può inserire manualmente le fasi che vuole che vengano utilizzati per la produzione dell'articolo oggetto dell'ordine pianificato (solo se di produzione). Dopo l'inserimento manuale è necessario, per importare i dati dal ciclo di lavorazione dell'articolo, cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
+Esta pestaña está constituida por una cuadrícula, dentro de la cual el usuario puede ingresar manualmente las fases que desea que se utilicen para la producción del artículo objeto del pedido planificado (solo si es de producción). Después de la entrada manual, es necesario, para importar los datos del ciclo de trabajo del artículo, hacer clic en el botón **Completación de datos del pedido** presente en la barra de ribbons.
 
-La griglia risulta già compilata nel caso in cui l'ordine pianificato provenga da *Schedulazione generale* o da *Elaborazione MRP*. 
+La cuadrícula ya está rellenada en caso de que el pedido planificado provenga de *Programación general* o de *Elaboración MRP*. 
 
-*Pulsanti specifici*:
-> **Inserisci fase**: consente di inserire una nuova fase nella griglia;  
-> **Cancella fase**: consente di cancellare le fasi inserite nella griglia. 
+*Botones específicos*:  
+> **Insertar fase**: permite insertar una nueva fase en la cuadrícula;  
+> **Eliminar fase**: permite eliminar las fases ingresadas en la cuadrícula. 
 
-*Campi specifici*:
+*Campos específicos*:  
 
-**Codice fase/Fase/Sotto Fase**: con un doppio click si apre il relativo help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase;  
-**Controllo qualità**: questo flag indica se il materiale debba essere sottoposto a controllo qualità prima del suo utilizzo;  
-**Fase produttiva**: se il flag è spuntato identifica che la fase in questione è una fase produttiva, e che quindi dovrà essere segnalata; 
-**Movimentabile**:  se il flag è spuntato identifica che la fase in questione è una fase movimentabile, quindi genererà un movimento di magazzino una volta registrata la dichiarazione di produzione;         
-**Centro di lavoro**: da questa combo si imposta il Centro di lavoro. Esso viene proposto in automatico, ripreso dalla fase che è stata precedentemente selezionata ed inserita nella griglia;  
-**Data inizio/fine prevista**: si tratta delle date di inizio e fine della relativa fase; cambiando le Date previste di inizio e fine lavorazione vengono automaticamente modificate anche quest'ultime. Esse vengono calcolate in base i tempi inseriti nelle fasi di lavorazione, e più precisamente in base al maggiore tra il tempo operaio e il tempo macchina totale per la fase selezionata;  
-**Tempo macchina**: è il tempo impiegato dalla macchina per realizzare la fase, riferito alla quantità di pezzi per fase;  
-**Numero macchine**: indica il numero di macchine coinvolte in questa fase;  
-**Qtà pezzi per fase**: indica il numero di pezzi per fase;  
-**Tempo operaio**: è il tempo impiegato dall'operaio per realizzare questa fase, riferito alla quantità di pezzi per fase;  
-**Numero operai**: è il numero di operai coinvolti in questa fase;  
-**Conto terzista/descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa casella è attiva solo nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo.  
-**Decrizione centro di lavoro**: indica la descrizione del centro di lavoro.       
+**Código de fase/Fase/Subo fase**: con un doble clic se abre la ayuda correspondiente de fases de trabajo desde la cual se puede seleccionar la fase y subfase correspondiente;  
+**Control de calidad**: este indicador indica si el material debe someterse a control de calidad antes de su uso;  
+**Fase productiva**: si el indicador está seleccionado, identifica que la fase en cuestión es una fase productiva, y que por lo tanto debe ser señalada; 
+**Movible**: si el indicador está seleccionado, identifica que la fase en cuestión es una fase movible, por lo que generará un movimiento de almacén una vez registrada la declaración de producción;         
+**Centro de trabajo**: desde este combo se establece el Centro de trabajo. Este se propone automáticamente, tomado de la fase que ha sido seleccionada e ingresada en la cuadrícula;  
+**Fecha de inicio/final prevista**: se trata de las fechas de inicio y fin de la fase correspondiente; al cambiar las fechas previstas de inicio y fin de trabajo, estas también se modifican automáticamente. Se calculan en función de los tiempos ingresados en las fases de trabajo, y más precisamente en base al mayor entre el tiempo del operario y el tiempo de máquina total para la fase seleccionada;  
+**Tiempo máquina**: es el tiempo empleado por la máquina para realizar la fase, referida a la cantidad de piezas por fase;  
+**Número de máquinas**: indica el número de máquinas involucradas en esta fase;  
+**Qtà de piezas por fase**: indica el número de piezas por fase;  
+**Tiempo del operario**: es el tiempo empleado por el operario para realizar esta fase, referido a la cantidad de piezas por fase;  
+**Número de operarios**: es el número de operarios involucrados en esta fase;  
+**Cuenta tercerista/Descripción tercerista**: con un doble clic en la casilla se abre la ayuda para poder seleccionar la cuenta y subcuenta del tercerista correspondiente. Esta casilla está activa solo en caso de que la fase esté designada como fase *Externa*. Cabe señalar que el *tercerista* también se toma de la fase de trabajo ingresada en el ciclo de trabajo del artículo.  
+**Descripción del centro de trabajo**: indica la descripción del centro de trabajo.       
 
-### Fasi - Proprietà
+### Fases - Propiedades
 
-Contiene le proprietà relative alla fase selezionata.
+Contiene las propiedades relacionadas con la fase seleccionada.
 
-**Descrizione fase/sottofase**: in questo campo appare la descrizione della fase selezionata;  
-**Tipo**: in questa combo è possibile impostare il tipo di lavorazione (interna o esterna);  
-**Sovrapposizione**: tramite questa combo inserisco la tipologia di un'eventuale sovrapposizione tra fasi. Possiamo avere sovrapposizione *Totale* (in questo caso la fase in oggetto è sovrapposta totalmente alla fase indicata successiva), *A pezzi* (in questo caso è necessario indicare dopo quanti pezzi prodotti da questa fase avrà inizio la fase successiva), *A tempo* (in questo caso è necessario indicare dopo quanti minuti da quando è iniziata la fase in oggetto avrà inizio la fase successiva);  
-**UM Tempi**: in questa combo box compare l'*Unità Misura Tempi* della Fase; si può decidere di gestire i tempi della fase in secondi, minuti, ore e giorni. Di solito si gestiscono a minuti i tempi delle fasi interne e a giorni quelli delle fasi esterne, ma ovviamente dipende molto dalla tipologia di azienda per cui si sta impostando il lavoro;  
-**Macchina**: in questa combo può essere selezionato il codice (e descrizione) della relativa macchina. Essa viene proposta in automatico, ripresa dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Gruppo manodopera**: in questa combo può essere selezionato il codice (e descrizione) del relativo gruppo manodopera. Essa viene proposto in automatico, ripreso dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Sovrapposizione riferita alla fase/sottofase**: qui viene indicato il codice della fase e Sottofase che presentano una sovrapposizione con la fase in oggetto. Di solito si indica la fase successiva, ma anche qui si tratta solo di una consuetudine; 
-**Valore**: qui si indica il valore dell'eventuale sovrapposizione, utilizzando i criteri specificati sopra;  
-**Utilizzo**: se il flag è attivato, significa che si vuole che il tempo di attesa/coda aumenti il tempo di impegno del Centro di Lavoro su quella fase;  
-**Tempo di attesa o coda**: indica l'eventuale tempo di attesa/coda prevista per questa macchina.  
+**Descripción fase/subfase**: en este campo aparece la descripción de la fase seleccionada;  
+**Tipo**: en este combo es posible establecer el tipo de trabajo (interna o externa);  
+**Superposición**: a través de este combo ingreso el tipo de una posible superposición entre fases. Podemos tener superposición *Total* (en este caso la fase en cuestión está superpuesta totalmente a la fase siguiente indicada), *Por piezas* (en este caso es necesario indicar después de cuántas piezas producidas por esta fase comenzará la fase siguiente), *Por tiempo* (en este caso es necesario indicar después de cuántos minutos desde que comenzó la fase en cuestión comenzará la fase siguiente);  
+**UM Tiempos**: en este combo aparece la *Unidad de Medida de Tiempos* de la Fase; se puede decidir gestionar los tiempos de la fase en segundos, minutos, horas y días. Generalmente, se gestionan en minutos los tiempos de las fases internas y en días los de las fases externas, pero, obviamente, depende mucho del tipo de empresa para la que se está configurando el trabajo;  
+**Máquina**: en este combo puede seleccionarse el código (y descripción) de la máquina correspondiente. Esta se propone automáticamente, tomada del centro de trabajo que ha sido ingresado previamente en la cuadrícula;  
+**Grupo de mano de obra**: en este combo puede seleccionarse el código (y descripción) del grupo de mano de obra correspondiente. Este se propone automáticamente, tomado del centro de trabajo que ha sido ingresado previamente en la cuadrícula;  
+**Superposición referente a la fase/subfase**: aquí se indica el código de la fase y subfase que presentan una superposición con la fase en cuestión. Generalmente se indica la fase siguiente, pero aquí también solo se trata de una costumbre; 
+**Valor**: aquí se indica el valor de la posible superposición, utilizando los criterios especificados anteriormente;  
+**Uso**: si el indicador está activado, significa que se desea que el tiempo de espera/cola aumente el tiempo de compromiso del Centro de Trabajo en esa fase;  
+**Tiempo de espera o cola**: indica el posible tiempo de espera/cola previsto para esta máquina.  
 
-### Fasi - Extra Data
+### Fases - Datos Extra
 
-Contiene gli eventuali extra data relativi alla fase selezionata.
+Contiene los posibles datos extra relativos a la fase seleccionada.
 
-## Attrezzaggio
+## Equipamiento
 
-In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente. 
+En esta pestaña es posible definir los tiempos relativos al equipamiento de la fase seleccionada en la pestaña anterior. 
 
-*Campi specifici*:
+*Campos específicos*:  
 
-**Fase/Sottofase**: in questi campi vengono visualizzate le informazioni relative alla fase che è selezionata nel tab *Fasi*;  
-**Tipo**: indica la tipologia della fase (interna o esterna);  
-**Tipo sovrapposizione**: indica l'eventuale tipologia della sovrapposizione;  
-**UM Tempi**: indica l'unità di misura temporale della fase;  
-**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per l'attrezzaggio;  
-**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per l'attrezzaggio;  
-**Gruppo MDO**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio;  
-**Valore**: indica il valore dell'eventuale sovrapponibilità;  
-**CdL**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
-**Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
-**Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
-**Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
-**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio, che viene sommato al tempo attrezzaggio;  
-**Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
-**Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
+**Fase/Subfase**: en estos campos se visualizan las informaciones relativas a la fase que está seleccionada en la pestaña *Fases*;  
+**Tipo**: indica la tipología de la fase (interna o externa);  
+**Tipo de superposición**: indica el posible tipo de superposición;  
+**UM Tiempos**: indica la unidad de medida temporal de la fase;  
+**Centro de Trabajo**: en estos campos se inserta el código (y descripción relativa) del Centro de Trabajo establecido para el equipamiento;  
+**Máquina**: en estos campos se inserta el código (y descripción relativa) de la máquina para el equipamiento;  
+**Grupo MDO**: en estos campos se inserta el código (y descripción relativa) del Grupo de mano de obra para el equipamiento;  
+**Valor**: indica el valor de la posible superponibilidad;  
+**CdL**: en estos campos se visualiza el código y la descripción del respectivo Centro de Trabajo de la fase seleccionada;  
+**Fecha de inicio**: se visualiza la fecha de inicio de la fase seleccionada en la pestaña *Fases*;  
+**Fecha de fin**: se visualiza la fecha de fin de la fase seleccionada en la pestaña *Fases*;  
+**Tiempo de equipamiento**: se inserta el tiempo del equipamiento. Se trata de un tiempo fijo, que no varía con la variación de las cantidades a producir en la fase seleccionada;  
+**Tiempo de reajuste**: se inserta el tiempo de reajuste, que se suma al tiempo de equipamiento;  
+**Num. máquinas**: se indica el número de máquinas empleadas para el equipamiento;  
+**Num. operarios**: se indica el número de operarios empleados para el equipamiento.
 
-## Attrezzature
+## Equipos
 
-In questo tab, costituito principalmente da una griglia, è possibile definire quali e quante attrezzature dovranno essere utilizzate nella produzione della fase selezionata nel tab *Fasi*. 
+En esta pestaña, constituida principalmente por una cuadrícula, es posible definir cuáles y cuántas herramientas deberán ser utilizadas en la producción de la fase seleccionada en la pestaña *Fases*. 
 
-*Campi specifici*:
+*Campos específicos*:  
 
-**Sequenza**: in questo campo è possibile indicare la sequenza con cui devono essere utilizzate le attrezzature;      
-**Attrezzature**: con questa combo box è possibile richiamare il codice dell'attrezzatura, ripreso dall'apposita tabella [Attrezzature](/docs/configurations/tables/production/equipments);  
-**Classe/Codice articolo**: in questi campi è possibile indicare la classe e il codice dell'articolo (l'help filtra automaticamente solo gli articoli che sono identificati come *Attrezzature* nel campo *Natura Articolo* dell'anagrafica di magazzino);  
-**Variante**: rappresenta la variante dell'articolo;  
-**Quantità**: rappresenta la quantità dell'articolo.
+**Secuencia**: en este campo es posible indicar la secuencia con la que deben ser utilizadas las herramientas;      
+**Herramientas**: con este combo se puede invocar el código de la herramienta, tomado de la tabla correspondiente [Herramientas](/docs/configurations/tables/production/equipments);  
+**Clase/Código artículo**: en estos campos es posible indicar la clase y el código del artículo (la ayuda filtra automáticamente solo los artículos que están identificados como *Herramientas* en el campo *Naturaleza de Artículo* del registro de almacén);  
+**Variante**: representa la variante del artículo;  
+**Cantidad**: representa la cantidad del artículo.
 
-## Controllo qualità
+## Control de calidad
 
-In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di controllo per la fase/sottofasse.
+En esta pestaña, constituida principalmente por una cuadrícula, es posible visualizar los detalles de las pruebas planificadas de control para la fase/subfases.
 
-## Nota fase
+## Nota de fase
 
-In questo tab viene visualizzata la nota legata alla fase di lavorazione selezionata nel tab *Fasi*. Essa è modificabile dall'utente contestualmente all'ordine pianificato in oggetto.
+En esta pestaña se visualiza la nota vinculada a la fase de trabajo seleccionada en la pestaña *Fases*. Esta es modificable por el usuario en conjunto con el pedido planificado en cuestión.
 
-## Istruzioni operative
+## Instrucciones operativas
 
-In questo tab vengono visualizzate le note e i documenti legati alla fase di lavorazione selezionata nel tab *Fasi*. Esse sono modificabili dall'utente contestualmente all'ordine pianificato in oggetto. Questi documenti sono visibili all'interno del MES nel tab *Documenti e Istruzioni operative*.
+En esta pestaña se visualizan las notas y los documentos relacionados con la fase de trabajo seleccionada en la pestaña *Fases*. Estos son modificables por el usuario en conjunto con el pedido planificado en cuestión. Estos documentos son visibles dentro del MES en la pestaña *Documentos e Instrucciones operativas*. 
 
-## Extra Data
+## Datos Extra
 
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+Para una descripción detallada sobre los datos extra se remite al artículo [Datos extra](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, haga referencia al enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

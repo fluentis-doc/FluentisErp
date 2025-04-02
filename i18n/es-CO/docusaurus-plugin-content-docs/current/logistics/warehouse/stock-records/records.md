@@ -1,41 +1,40 @@
 ---
-title: Ricerca registrazioni
+title: ricerca registrazioni
 sidebar_position: 2
 ---
 
-Consente di ricercare tutte le registrazioni di magazzino presenti nel database con lo scopo di visualizzarle, modificarle, ed eventualmente cancellarle oppure procedere all'inserimento di una nuova registrazione; la finestra si compone di un'area di filtro e da una griglia di risultato.
+Permite buscar todos los registros de almacén presentes en la base de datos con el propósito de visualizarlos, modificarlos y, eventualmente, eliminarlos, o proceder a la inserción de un nuevo registro; la ventana consta de un área de filtro y de una cuadrícula de resultados.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Una vez configurados todos los filtros deseados, solo será necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per aprire i dettagli di una registrazione, basterà selezionarla e fare doppio click con il mouse oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
+Para abrir los detalles de un registro, basta con seleccionarlo y hacer doble clic con el ratón o hacer clic en el botón **modifica** (que permite acceder a los detalles y modificarlos) o en el botón **visualizza** (que permite acceder a los detalles y visualizarlos, pero sin la posibilidad de modificarlos).
 
-Sempre da questa form si può inserire una nuova registrazione di magazzino utilizzando il pulsante **Nuovo**.
+Desde este formulario también se puede insertar un nuevo registro de almacén utilizando el botón **nuovo**.
 
-*La griglia dei risultati si compone dei seguenti campi*:
+*La cuadrícula de resultados se compone de los siguientes campos*:
 
-**Magazzino**: la colonna visualizza il codice del magazzino su cui è stata generata la registrazione;   
+**magazzino**: la columna muestra el código del almacén en el que se generó el registro;  
 
-**Causale**: la colonna visualizza il codice della causale di magazzino che ha effettuato il movimento e che quindi è stata inserita nella testata della registrazione;  
+**causale**: la columna muestra el código del motivo de almacén que ha realizado el movimiento y que, por tanto, ha sido insertado en la cabecera del registro;  
 
-**Data**: la colonna visualizza la data di inserimento della registrazione di magazzino;   
+**data**: la columna muestra la fecha de inserción del registro de almacén;  
 
-**Numero**: la colonna visualizza il numero progressivo della registrazione di magazzino;   
+**numero**: la columna muestra el número progresivo del registro de almacén;  
 
-**Documento di riferimento**: la colonna visualizza ciò che è presente nel campo “Documento di riferimento” della testata della 
-registrazione;   
+**documento di riferimento**: la columna muestra lo que está presente en el campo “Documento de referencia” de la cabecera del registro;  
 
-**Data documento**: la colonna visualizza la data del documento di riferimento presente nella testata della registrazione;   
+**data documento**: la columna muestra la fecha del documento de referencia presente en la cabecera del registro;  
 
-**Carico / Scarico**: la colonna visualizza il tipo di registrazione. Essa può essere infatti solo di carico o di scarico;   
+**Carga / Descarga (Carico / Scarico)**: la columna muestra el tipo de registro. Este puede ser solo de carga o de descarga;  
 
-**Magazzino di Contropartita**: la colonna visualizza il codice del magazzino della registrazione di contropartita, ove presente;   
+**Almacén de contrapartida (Magazzino di Contropartita)**: la columna muestra el código del almacén del registro de contrapartida, si lo hay;  
 
-**Causale di Contropartita**: la colonna visualizza il codice del magazzino della registrazione di contropartita, ove presente;   
+**Motivo de contrapartida (Causale di Contropartita)**: la columna muestra el código del motivo del registro de contrapartida, si existe;  
 
-**Numero contropartita**: la colonna visualizza il numero progressivo della registrazione di contropartita, ove presente;   
+**Número de contrapartida (Numero contropartita)**: la columna muestra el número progresivo del registro de contrapartida, si está presente;  
 
-**Documento Riferimento contropartita**: la colonna visualizza ciò che è presente nel campo 'Documento di riferimento' della testata della registrazione di contropartita, ove presente;   
+**Documento de referencia de contrapartida (Documento Riferimento contropartita)**: la columna muestra lo que está presente en el campo 'Documento de referencia' de la cabecera del registro de contrapartida, si existe;  
 
-**Conto / Sottoconto / Descrizione conto**: la colonna visualizza conto, sottoconto e ragione sociale del cliente o del fornitore inserito nella testata della registrazione di magazzino.
+**Cuenta / Subcuenta / Descripción de cuenta (Conto / Sottoconto / Descrizione conto)**: la columna muestra cuenta, subcuenta y razón social del cliente o proveedor insertado en la cabecera del registro de almacén.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

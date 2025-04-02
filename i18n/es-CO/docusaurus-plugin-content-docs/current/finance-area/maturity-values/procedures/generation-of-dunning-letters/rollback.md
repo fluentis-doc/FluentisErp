@@ -3,17 +3,10 @@ title: Rollback
 sidebar_position: 4
 ---
 
-La scheda di Rollback consente di annullare la creazione: nel caso specifico lo stesso risultato si ottiene entrando nella ricerca partite sollecitate e cancellando direttamente da qui.
+La pestaña de Rollback permite deshacer la creación: en el caso específico, el mismo resultado se obtiene ingresando en la búsqueda de partidas solicitadas y eliminando directamente desde allí.
 
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Pulsante per la ricerca della creazione solleciti. |
-| Rollback tutti | Pulsante per cancellare tutti i solleciti della creazione selezionata. |
-| Rollback selezione | Pulsante per cancellare solo alcuni solleciti della creazione selezionata. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Botón para buscar la creación de solicitudes. |
+| Rollback todos (Rollback tutti) | Botón para eliminar todas las solicitudes de la creación seleccionada. |
+| Rollback selección (Rollback selezione) | Botón para eliminar solo algunas solicitudes de la creación seleccionada. |

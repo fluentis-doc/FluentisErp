@@ -1,67 +1,59 @@
 ---
-title: Ricerca Partite
+title: ricerca partite
 sidebar_position: 2
 ---
 
-Questa maschera permette di ricercare la partite tramite i campi presenti nella testata, che rappresenta l'area di filtro per i dati che saranno proposti, e di entrare in modifica di ogni singola partita con un doppio click del mouse.
+Esta máscara permite buscar las partidas a través de los campos presentes en el encabezado, que representan el área de filtro para los datos que se propondrán, y acceder a la modificación de cada partida con un doble clic del mouse.
 
-Ulteriori campi utili per il filtro di ricerca sono disponibili aprendo gli **Expander** presenti nella testata.finance-area/maturity-values/maturity-values/image03.png
+Campos adicionales útiles para el filtro de búsqueda están disponibles al abrir los **Expander** presentes en el encabezado. ![](/img/it-it/finance-area/maturity-values/maturity-values/image03.png)
 
-Per default vengono proposte le partite aperte (essendo all'apertura della maschera compilato il campo **Stato** del filtro con la voce Partita Aperta). E' possibile visualizzare tutte le partite semplicemente cancellando la voce dal campo del filtro in modo da non filtrare una tipologia in particolare.
+Por defecto, se proponen las partidas abiertas (estando al abrir la máscara completado el campo **stato** del filtro con la opción Partida Abierta). Es posible visualizar todas las partidas simplemente eliminando el valor en el campo del filtro de modo que no filtre un tipo en particular.
 
-Eseguendo la ricerca (comando **Ricerca** nella Ribbon Bar) saranno riportate le partite con tutte le informazioni relative.
+Al ejecutar la búsqueda (comando **ricerca** en la Ribbon Bar), se mostrarán las partidas con toda la información relacionada.
 
-**Per i campi di dettaglio visualizzati si rinvia al  [Glossario](/docs/guide/common/glossary/glossary-intro).**
+**Para los campos de detalle mostrados se remite al [Glosario](/docs/guide/common/glossary/glossary-intro).**
 
-**CAMPI SPECIFICI DI TESTATA:**
+**CAMPOS ESPECÍFICOS DEL ENCABEZADO:**
 
-**Partite aperte al**: rappresenta la data di riferimento a lla quale considerare aperta la partita (esempio oggi potrebbe essere chiusa ma rappresentandola alla data di ieri potrebbe essere rappresentata come aperta inquanto non era ancora stata pagata). Per utilizzare questo campo togliere lo stato Aperta dal filtro principale **Stato**.
+**partite aperte al**: representa la fecha de referencia a la cual considerar abierta la partida (por ejemplo, hoy podría estar cerrada, pero representándola a la fecha de ayer podría considerarse abierta ya que no se había pagado aún). Para utilizar este campo, quite el estado Abierta del filtro principal **stato**.
 
-**Con effetti a scadere**: in maniera analoga alle stampe del modulo permette di includere anche quelle partite che sarebbero chiuse ma sono state trasformate in effetti attivi (es. RiBa) e dunque sono interessanti inquanto non ancora incassate definitivamente. Per utilizzare questo campo togliere lo stato Aperta dal filtro principale **Stato**.
+**con effetti a scadere**: de manera similar a las impresiones del módulo, permite incluir también aquellas partidas que estarían cerradas pero han sido transformadas en efectos activos (ej. RiBa) y, por lo tanto, son relevantes ya que no han sido cobradas definitivamente. Para utilizar este campo, quite el estado Abierta del filtro principal **stato**.
 
+**mostra cauzioni**: campo que hace visibles los depósitos de fianza cobrados de los clientes. Estos ingresos particulares están representados por partidas que incluyen en su interior (en el formulario de gestión de partidas, el campo **conto cauzione** completado). Cuando se cierran mediante un registro contable de cobranza, en la sección Libro diario, en lugar de ser un movimiento habitual del cliente, se mueve el *Cuenta de Fianza* presente dentro de la partida que se está cobrando.
 
-**Mostra Cauzioni**: campo che rende visibili i depositi cauzionali incassati da clienti. Questi particolari incassi sono rappresentati da partite aventi al loro interno (form di gestione partite, il campo **Conto Cauzione** compilato) Quando vengono chiuse da una registrazione contabile di incasso, nella sezione Libro giornale, al posto di essere movimento come di consueto il conto del cliente, viene movimentato il *Conto Cauzione* presente dentro la partita che viene incassata.
-
-In particolare per ogni riga corrispondente alla partita è presente un comando (+) che permette di visualizzare delle informazioni ulteriori e inizialmente nascoste: si tratta degli eventuali pagamenti collgati alla partita chiusa o parzialmente aperta.
+En particular, para cada línea correspondiente a la partida, hay un comando (+) que permite visualizar información adicional que inicialmente está oculta: se trata de los posibles pagos asociados a la partida cerrada o parcialmente abierta.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png)
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
-**CAMPI SPECIFICI PER LA FORM IN OGGETTO**:
+**CAMPOS ESPECÍFICOS PARA EL FORMULARIO EN CUESTIÓN:**
 
-**In pagamento**: indica che la partita è già stata inserita in una distinta di pagamento fornitori, ma la distinta di pagamento  non è ancora contabilizzata e quindi la chiusura della partita non è ancora avvenuta.
+**in pagamento**: indica que la partida ya ha sido incluida en un listado de pago a proveedores, pero el listado de pago no ha sido contabilizado y, por lo tanto, el cierre de la partida aún no se ha realizado.
 
-**Contab.**: indica che la partita è legata ad una registrazione contabile.
+**contab.**: indica que la partida está vinculada a un registro contable.
 
-**Non pagabile**: indica che la partita è stata bloccata dall'utente affinchè non sia pagabile. Il blocco può essere impostato direttamente all'atto della creazione oppure in un secondo tempo e sia dalla ** [tab Partite](/docs/finance-area/ledger-records/records/ledger-record) ** della registrazione contabile che genera la partita, sia entrando in modifica nella partita stessa dalla form in commento.
+**non pagabile**: indica que la partida ha sido bloqueada por el usuario para que no sea pagable. El bloqueo puede establecerse directamente al momento de la creación o posteriormente tanto desde la **[pestaña Partidas (tab Partite)](/docs/finance-area/ledger-records/records/ledger-record)** del registro contable que genera la partida, como accediendo a la modificación de la propia partida desde el formulario comentado.
 
-**Ribbon bar**:
+**Ribbon bar:**
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Ricerca | Avvia la ricerca dele partite secondo i dati inseriti nel filtro |
-| Nuova Partita | Permette di inserire una nuova partita manualmente |
-| Modifica partita | Entra nella form di modifica della partita selezionata 'Gestione partite' (in alternativa al doppio click del mouse sulla riga da modificare) |
-| Visualizza | Entra nella form 'Gestione partite' in modalità di sola visualizzazione, non sarà posssibile salvare modifiche |
-| Cancella partite selezionate | Cancella la riga selezionata |
-| Cancella pagamenti selezionati | Permette di cancellare i pagamenti collegati alle partite (visibili tramite il tasto + a sinistra delle partite) |
-| Cambia la posizione partite | Fa comparire una form di ricerca della posizione partita permettendo di attribuire lostato selezionato alla partita senza dover entrare nella form di modifica 'Gestione partite' |
-| Aggiorna lo stato delle partite | Esegue un refresh dello stato delle partite per una corretta visualizzazione. |
-| Suddivisione partite | Apre una form pop-up che permette di suddividere la partita selezionata in più partite di importo e scadenza desiderati. **Chiaramente la somma delle partite risultanti deve coincidere con l'importo della partita di partenza.**L'importo della partita iniziale viene proposto nel campo **Suddividi,** a questo punto si devono inserire nelle righe della griglia gli **importi** e le **date di scadenza** delle partite risultanti (esempio da una si vogliono far diventare due o tre) ed il programma si occuperà di eseguire l'operazione in automatico. |
-| Modifica registrazione | Permette di entrare direttamente in modifica della registrazione contabile collegata alla partita selezionata. Se la partita selezionata non è collegata ad una registrazione contabile il pulsante risulterà disabilitato. |
+| Búsqueda (Ricerca) | Inicia la búsqueda de partidas según los datos ingresados en el filtro |
+| Nueva Partida (Nuova Partita) | Permite ingresar una nueva partida manualmente |
+| Modificar partida (Modifica partita) | Accede al formulario de modificación de la partida seleccionada 'Gestión de partidas' (como alternativa al doble clic sobre la fila a modificar) |
+| Visualizar (Visualizza) | Accede al formulario 'Gestión de partidas' en modo de solo visualización, no será posible guardar cambios |
+| Eliminar partidas seleccionadas (Cancella partite selezionate) | Elimina la fila seleccionada |
+| Eliminar pagos seleccionados (Cancella pagamenti selezionati) | Permite eliminar los pagos asociados a las partidas (visibles a través del botón + a la izquierda de las partidas) |
+| Cambiar la posición de las partidas (Cambia la posizione partite) | Hace aparecer un formulario de búsqueda de la posición de la partida permitiendo atribuir el estado seleccionado a la partida sin necesidad de acceder al formulario de modificación 'Gestión de partidas' |
+| Actualizar el estado de las partidas (Aggiorna lo stato delle partite) | Realiza un refresco del estado de las partidas para una correcta visualización. |
+| División de partidas (Suddivisione partite) | Abre un formulario emergente que permite dividir la partida seleccionada en varias partidas de importe y fecha de vencimiento deseados. **Claramente, la suma de las partidas resultantes debe coincidir con el importe de la partida de inicio.** El importe de la partida inicial se propone en el campo **suddividi**; en este punto, se deben ingresar en las filas de la cuadrícula los **importes** y las **fechas de vencimiento** de las partidas resultantes (por ejemplo, de una se quieren hacer dos o tres) y el programa se encargará de realizar la operación automáticamente. |
+| Modificar registro (Modifica registrazione) | Permite acceder directamente a la modificación del registro contable vinculado a la partida seleccionada. Si la partida seleccionada no está vinculada a un registro contable, el botón estará deshabilitado. |
 
+:::tip[NOTA: Actualizar el estado de las partidas]
+Desde las versiones Fluentis2021 en adelante, ya no están presentes los triggers y stored procedures que ejecutan procedimientos de cálculo o recálculo. Uno de estos procedimientos ejecutados a nivel de base de datos era el recálculo automático del estado de las partidas, particularmente típicamente la partida **Vencida (Scaduta)** en lugar de la genérica partida Abierta. Por lo tanto, es necesario utilizar el botón Actualizar el estado de las partidas para realizar el recálculo del estado y la correcta visualización de partidas (no movidas por ningún pago, incluso parcial, el cual las actualizaría en el estado) vencidas.
 
-:::tip[NOTA: Aggiorna lo stato delle partite]
-Dalle versioni Fluentis2021 e successive, non sono più presenti triggers e stored procedures che eseguono procedure di calcolo o ricalcolo. Una di queste procedure eseguite a livello di database era il ricalcolo automatico dello stato delle partite, in particolare tipicamente la partita **Scaduta** in luogo della generica partita Aperta. E' pertanto necessario servirsi del pulsante Aggiorna lo stato delle partite per eseguire il ricalcolo dello stato e la corretta visualizzazione di partite (non movimentate da alcun pagamento, anche parziale, il quale le aggiornerebbe nello stato) scadute.
+Se recuerda que si se desea ignorar el estado *scaduto* para fines de filtro, es posible utilizar los filtros en el encabezado del formulario por fecha de vencimiento obteniendo el mismo resultado.
 
-Si ricorda che volendo ignorare lo stato *Scaduto* a scopo di filtro, è possibile utilizzare i filtri in testata form per data scadenza ottenendo lo stesso risultato.
-
-Per gli utenti che dispongono del tool ***Supervisor***, è possibile abilitare il task codice FI_MaturitiesOverdueStatusFix
-che setta lo stato *Scaduto* su partite con residuo != 0 e data scadenza < oggi
+Para los usuarios que disponen de la herramienta ***Supervisor***, es posible habilitar la tarea código FI_MaturitiesOverdueStatusFix que establece el estado *scaduto* en partidas con saldo != 0 y fecha de vencimiento < hoy.
 :::
-
-
-

@@ -1,31 +1,23 @@
 ---
-title: Acquisizione
+title: acquisizione
 sidebar_position: 2
 ---
 
-La maschera presenta nella parte superiore la consueta zona di filtro che gestisce la ricerca dei compensi da selezionare per la contabilizzazione enasarco.
+La máscara presenta en la parte superior la habitual zona de filtro que gestiona la búsqueda de los compensos a seleccionar para la contabilización en Enasarco.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image01.png)
 
-I dati filtrati vengono presentati nella griglia centrale
+Los datos filtrados se presentan en la cuadrícula central.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image02.png)
 
- 
-
-Una volta impostate alla base della maschera le date di registrazione, di competenza, la causale di contabilità da utilizzare e l'eventuale gestione in una singola registrazione (senza effettuare alcun raggruppamento in caso di sottoconti uguali), sarà sufficiente premere il pulsante di contabilizzazione: se tutto va a buon fine le righe selezionate scompariranno dalla griglia e dalla tab di rollback sarà possibile visualizzare in anteprima il risultato.
+Una vez configuradas en la base de la máscara las fechas de registro, de competencia, la causal de contabilidad a utilizar y la eventual gestión en un único registro (sin realizar ningún agrupamiento en caso de subcuentas iguales), será suficiente presionar el botón de contabilización: si todo va bien, las filas seleccionadas desaparecerán de la cuadrícula y desde la pestaña de reversión será posible visualizar en vista previa el resultado.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image03.png)
 
 
 
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Ricerca | Ricerca la lista dei compensi per i quali contabilizzare i tributi Enasarco. |
-| Contabilizzazione | Esegue la contabilizzazione dei tributi Enasarco selezionati. |
-
-
-
-
-
-
+| Búsqueda (Ricerca) | Busca la lista de compensos por los cuales contabilizar los tributos Enasarco. |
+| Contabilización (Contabilizzazione) | Ejecuta la contabilización de los tributos Enasarco seleccionados. |

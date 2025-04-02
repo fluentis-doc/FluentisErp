@@ -1,103 +1,102 @@
 ---
-title: Nuovo Listino fornitore
+title: Nuevo Listado de Proveedores (Nuovo Listino fornitore)
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso **Acquisti > Listini Fornitore > Nuovo Listino**.  
+El formulario se abre a través de la ruta **Compras > Listados de Proveedores > Nuevo Listado**.
 
-La form si compone di tre parti: *Sezione superiore*, *Articoli* e *Dettagli*.
+El formulario se compone de tres partes: *Sección superior*, *Artículos* y *Detalles*.
 
-## **1. Dati obbligatori**
+## **1. Datos obligatorios**
 
-I campi di testata obbligatori per l'inserimento di un nuovo listino sono:
+Los campos obligatorios para la inserción de un nuevo listado son:
 
-- **Fornitore** per il quale viene creato il listino.  
-- **Da data validità**: viene proposta in automatico la data corrente, ma può essere modificata.  
-- **Divisa**: viene proposta in automatico la divisa della società, ma può essere modificata.  
+- **fornitore** para el cual se crea el listado.  
+- **da data validità**: se propone automáticamente la fecha actual, pero puede ser modificada.  
+- **divisa**: se propone automáticamente la divisa de la empresa, pero puede ser modificada.  
 
 :::important Importante
-Per rendere un listino valido per un fornitore, è necessario inserirlo nell'anagrafica contatto, tab *Listini*. Consultare la [documentazione](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) dedicata.
+Para que un listado sea válido para un proveedor, es necesario ingresarlo en el registro de contacto, en la pestaña *listini*. Consulte la [documentación](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) dedicada.
 :::
 
-### Campi opzionali
+### Campos opcionales
 
-- **A data validità**: viene utilizzato nel caso in cui si voglia definire una campagna promozionale o dare una data scadenza al listino. Può essere inserita massivamente su più listini dal filtro di [Ricerca listini](/docs/purchase/purchase-price-lists/purchase-price/search-purchase-price-list) mediante il pulsante *Chiudi*.
-- **Sconto listino da anagrafica**: se nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) è stata associata una struttura di scontistica aggiuntiva essa sarà riportata in questo campo di sola lettura.  
-- **Note**: per inserire eventuali note associate al listino.   
+- **a data validità**: se utiliza en caso de que se desee definir una campaña promocional o dar una fecha de caducidad al listado. Puede ser ingresada masivamente en múltiples listados desde el filtro de [Búsqueda de listados (Ricerca listini)](/docs/purchase/purchase-price-lists/purchase-price/search-purchase-price-list) mediante el botón *chiudi*.
+- **sconto listino da anagrafica**: si en el [registro del proveedor (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) se ha asociado una estructura de descuentos adicional, esta será mostrada en este campo de solo lectura.  
+- **note**: para ingresar posibles notas asociadas al listado.   
 
-Dopo aver inserito i dati obbligatori di testata è necessario premere il pulsante *Salva* per poter procedere con l'inserimento degli articoli nella griglia.
+Después de haber insertado los datos obligatorios de encabezado, es necesario presionar el botón *salva* para poder proceder con la inserción de los artículos en la cuadrícula.
 
+## **2. Artículos**
 
-## **2. Articoli**
+En esta sección se indicarán los artículos y eventuales descuentos asociados a este listado. Las columnas presentes en la cuadrícula son:
 
-In questa sezione verranno indicati gli articoli ed eventuali sconti associati a questo listino. Le colonne presenti nella griglia sono:
+- **Clase/Artículo/Descripción (Classe/Articolo/Descrizione)**: contiene el código del artículo que se incluirá en el listado; para insertar un nuevo artículo en la cuadrícula, basta posicionarse en la línea para completar los diversos datos o utilizar el botón *nuovo articolo* presente en la barra de ribbon.  
+- **Código/Descripción Variante (Codice/Descrizione Variante)**: es necesario si además del código del artículo, la variante distingue un artículo de otro.
+- **Código/Descripción Artículo proveedor (Codice/Descrizione Articolo fornitore)**: es necesario si el código del artículo del proveedor es diferente al código del artículo de la empresa.
+- **Código/Descripción Variante artículo proveedor (Codice/Descrizione Variante articolo fornitore)**: es necesario si además del código del artículo, la variante distingue un artículo proveedor de otro.
+- **unità di misura**: puede ser la unidad de medida de gestión del artículo o una de sus unidades de medida alternativas.
+- **Marca del artículo (Marca dell'articolo)** si está especificada.
+- **quantità**: es la cantidad de referencia del precio y se propone igual a 1; si es diferente de 1, cuando se debe calcular el precio, se divide por la cantidad del listado.
+- **prezzo** referido a la divisa del listado; esta columna es visible si el listado no está a *prezzo ivato*, de lo contrario, solo es visible el precio con IVA.
+- **valore aggiuntivo** y **percentuale aggiuntiva**: se utilizan cuando se crean listados de venta a partir de listados de proveedores; a el precio proveedor se le añade este valor.
 
-- **Classe/Articolo/Descrizione**: contiene il codice dell'articolo da includere nel listino; per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.  
-- **Codice/Descrizione Variante**: serve se oltre al codice articolo anche la variante contraddistingue un articolo da un altro.
-- **Codice/Descrizione Articolo fornitore**: serve se il codice articolo del fornitore è diverso dal codice articolo della società.
-- **Codice/Descrizione Variante articolo fornitore**: serve se oltre al codice articolo anche la variante contraddistingue un articolo fornitore da un altro.
-- **Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative.
-- **Marca dell'articolo** se specificata.
-- **Quantità**: è la quantità di riferimento del prezzo e viene proposta uguale a 1; se diversa da 1, quando deve essere calcolato il prezzo viene diviso per la quantità del listino.
-- **Prezzo** riferito alla divisa del listino; questa colonna è visibile se il listino non è a *Prezzo ivato*, altrimenti è visibile solo il prezzo ivato.
-- **Valore aggiuntivo** e **Percentuale aggiuntiva**: vengono utilizzati quando si creano listini di vendita da listini fornitori; al prezzo fornitore viene aggiunto questo valore.
+### 2.1 Detalles
 
-### 2.1 Dettagli
+En esta sección, para cada artículo del listado, es posible ingresar diferentes tipos de descuentos. En el **tipo scaglione** es posible ingresar el tipo de descuento predeterminado que se aplicará al listado. El tipo de escalón ingresado aquí tiene prioridad sobre el que eventualmente se ingrese en el registro.
+En las pestañas de la derecha, es posible ingresar los diversos descuentos para el listado; de hecho, es posible que un mismo artículo de listado tenga diferentes descuentos asociados, pero será posible elegir el escalón a utilizar directamente en el documento.
 
-In questa sezione, per ogni articolo del listino, è possibile inserire diverse tipologie di sconto. Nel **Tipo scaglione** è possibile inserire la tipologia di sconto di default da applicare al listino. Al tipo scaglione inserito qui ha precedenza quello eventualmente inserito in anagrafica.
-Nelle tab a destra è possibile inserire i vari sconti per il listino; infatti, è possibile che uno stesso articolo di listino abbia diversi sconti associati, ma sarà possibile scegliere lo scaglione da utilizzare direttamente nel documento.
+A continuación se explican los tipos de descuento que se pueden ingresar.
 
-Di seguito vengono spiegati i tipi sconto che si possono inserire.
+### 2.2 Descuentos
 
-### 2.2 Sconti
+Estos descuentos son fijos y se reportan en los documentos independientemente de la cantidad o de otras variables explícitas en el pedido: el ejemplo típico son los descuentos comerciales.       
+Los campos presentes en esta cuadrícula son:
+- **Tipo descuento/Descripción (Tipo sconto/Descrizione)**: en este campo se debe seleccionar el tipo de descuento entre los codificados.        
+- **priorità**: este valor se toma de las configuraciones ingresadas en la tabla [Tipos de descuento (Tipi sconto)](/docs/configurations/tables/general-settings/discount-types) e indica la prioridad para la obtención del descuento.       
+- **cascata/imponibile**: también este dato se retoma de las configuraciones ingresadas en la tabla [Tipos de descuento (Tipi sconto)](/docs/configurations/tables/general-settings/discount-types); si el descuento es a *cascata*, se calcula sobre el imponible descontando los descuentos ya calculados, si en cambio es a *imponibile*, se calcula sobre el imponible.         
+- **percentuale**: establecer el porcentaje de descuento a aplicar.       
 
-Questi sconti sono fissi e vengono riportati sui documenti indipendentemente dalla quantità o da altre variabili esplicitate nell'ordine: il tipico esempio sono gli sconti commerciali.       
-I campi presenti in questa griglia sono:
-- **Tipo sconto/Descrizione**: in questo campo serve selezionare il tipo sconto tra quelli codificati.        
-- **Priorità**: questo valore viene preso dalle impostazioni inserite nella tabella [Tipi sconto](/docs/configurations/tables/general-settings/discount-types) e indica la priorità per il reperimento dello sconto.       
-- **Cascata/Imponibile**: anche questo dato viene ripreso dalle impostazioni inserite nella tabella [Tipi sconto](/docs/configurations/tables/general-settings/discount-types); se lo sconto è a *Cascata*, viene calcolato sull'imponibile decurtato degli sconti già calcolati, se invece è a *Imponibile* viene calcolato sull'imponibile.         
-- **Percentuale**: impostare la percentuale di sconto da applicare.       
+### 2.3 Descuentos por cantidad
 
-### 2.3 Sconti a quantità
-
-Questa tipologia di sconto permette di avere diverse percentuali di sconto a seconda della quantità acquistata. Le colonne presenti sono:      
-- **Sconto**: in questo campo serve selezionare il [Tipo sconto](/docs/configurations/tables/general-settings/discount-types) tra quelli codificati.         
-- **Quantità**: impostare la quantità per la quale verrà attivato lo sconto.          
-- **Percentuale**: inserire la percentuale di sconto al raggiungimento della quantità indicata.      
+Este tipo de descuento permite tener diferentes porcentajes de descuento según la cantidad comprada. Las columnas presentes son:      
+- **sconto**: en este campo se debe seleccionar el [Tipo de descuento (Tipo sconto)](/docs/configurations/tables/general-settings/discount-types) entre los codificados.         
+- **quantità**: establecer la cantidad para la cual se activará el descuento.          
+- **percentuale**: ingresar el porcentaje de descuento al alcanzar la cantidad indicada.      
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image07.png)
 
-Nell'esempio riportato se verranno acquistate 2 unità avremo uno sconto del 7%, con 3 unità uno sconto del 10% e così via.
+En el ejemplo mostrado, si se compran 2 unidades, tendremos un descuento del 7%, con 3 unidades un descuento del 10% y así sucesivamente.
 
-### 2.4 Sconti a Valore
+### 2.4 Descuentos por Valor
 
-In questa tipologia lo sconto scatta quando si raggiunge un determinato importo per riga documento. Le colonne presenti sono:     
-- **Sconto**: in questo campo serve selezionare il [Tipo sconto](/docs/configurations/tables/general-settings/discount-types) tra quelli codificati.            
-- **Valore**: impostare un valore superato il quale scatta lo sconto.
-- **Percentuale**: inserire la percentuale di sconto da applicare al raggiungimento del valore.
+En este tipo de descuento, este se activa al alcanzar un importe determinado por línea de documento. Las columnas presentes son:     
+- **sconto**: en este campo se debe seleccionar el [Tipo de descuento (Tipo sconto)](/docs/configurations/tables/general-settings/discount-types) entre los codificados.            
+- **valore**: establecer un valor superado el cual se activa el descuento.
+- **percentuale**: ingresar el porcentaje de descuento a aplicar al alcanzar el valor.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image09.png)
 
-Nell'esempio riportato se per la riga articolo il valore è inferiore a 100 euro, non avremo sconti. Con un valore compreso tra 100 e 200 avremo il 2% di sconto. Se il valore è compreso tra 200 e 300 verrà applicato il 4%. Se il valore supera i 300 euro verrà applicato uno sconto del 6%.
+En el ejemplo mostrado, si para la línea del artículo el valor es inferior a 100 euros, no tendremos descuentos. Con un valor comprendido entre 100 y 200, tendremos el 2% de descuento. Si el valor está entre 200 y 300, se aplicará el 4%. Si el valor supera los 300 euros, se aplicará un descuento del 6%.
 
-### 2.5 Prezzo per quantità
+### 2.5 Precio por cantidad
 
-In questa caso, al raggiungimento di una certa quantità, il prezzo unitario cambia. Le colonne presenti sono:      
-- **Quantità**: impostare un valore superato il quale scatta il prezzo "personalizzato".      
-- **Prezzo unitario**: inserire il prezzo unitario per la quantità ordinata.
+En este caso, al alcanzar una cierta cantidad, el precio unitario cambia. Las columnas presentes son:      
+- **quantità**: establecer un valor superado el cual se activa el "precio personalizado".      
+- **prezzo unitario**: ingresar el precio unitario para la cantidad ordenada.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image11.png)
 
-Nell'esempio riportato se per riga la quantità è inferiore a 100 euro, il prezzo sarà quello del listino. Con una quantità compresa tra 100 e 120 avremo un prezzo unitario di 10. Con una quantità compresa tra 100 e 120 avremo un prezzo unitario di 9 e così via.
+En el ejemplo mostrado, si para la línea la cantidad es inferior a 100 euros, el precio será el del listado. Con una cantidad comprendida entre 100 y 120, tendremos un precio unitario de 10. Con una cantidad comprendida entre 120 y 140, tendremos un precio unitario de 9 y así sucesivamente.
 
-### 2.6 Note
+### 2.6 Notas
 
-L'utente può definire delle note con la data di validità delle stesse.
+El usuario puede definir notas con la fecha de validez de las mismas.
 
-### 2.7 Extra data
+### 2.7 Datos extra
 
-Viene riportata la lista degli **Extra data** collegati all'articolo, con la possibilità di aggiungere nuovi extra data utili solo per il documento in oggetto. Il flag *Da stampare* permette di scegliere quali extra data stampare.
+Se mostrará la lista de **extra data** asociados al artículo, con la posibilidad de agregar nuevos datos extra útiles solo para el documento en cuestión. El indicador *da stampare* permite elegir qué datos extra imprimir.
 
-### 2.8 Documenti allegati
+### 2.8 Documentos adjuntos
 
-Viene visualizzato il dettaglio di un eventuale **Documento allegato** (nome, tipo di documento, eventuali note, ns/vs riferimento). Per le istruzioni relative a come allegare un documento si rimanda all'articolo [Allega documenti](/docs/guide/common/operations-with-data/attach-documents).
+Se visualizará el detalle de un eventual **Documento adjunto (Documento allegato)** (nombre, tipo de documento, notas, referencia ns/vs). Para las instrucciones relacionadas con cómo adjuntar un documento, se remite al artículo [Adjuntar documentos (Allega documenti)](/docs/guide/common/operations-with-data/attach-documents).

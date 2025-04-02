@@ -1,54 +1,54 @@
 ---
-title: Carico fatture di acquisto in magazzino
+title: carico fatture di acquisto in magazzino
 sidebar_position: 1
 keywords:
-- Fattura di acquisto
-- Magazzino
+- Factura de compra (Fattura di acquisto)
+- Almacén (Magazzino)
 ---
 
-La procedura si apre tramite il percorso **Acquisti > Fatture di acquisto > Procedure > Registrazione fatture di acquisto in magazzino**. 
+El procedimiento se abre a través de la ruta **Compras > Facturas de compra > Procedimientos > Registro de facturas de compra en almacén (Acquisti > Fatture di acquisto > Procedure > Registrazione fatture di acquisto in magazzino)**.
 
-Essa permette di eseguire/ripristinare le operazioni di registrazione automatica in magazzino degli articoli presenti nella fattura.
+Este permite ejecutar/restaurar las operaciones de registro automático en el almacén de los artículos presentes en la factura.
 
 ### Filtro
 
-In questo tab, l'utente ha la possibilità di inserire filtri per cercare le fatture di acquisto, per selezionarle e dopo registrarle in magazzino.   
-È possibile filtrare per: fornitore, tipo fattura acquisto, da/a numero fattura, da/a data.
+En esta pestaña, el usuario tiene la posibilidad de ingresar filtros para buscar las facturas de compra, seleccionarlas y luego registrarlas en el almacén.  
+Es posible filtrar por: proveedor, tipo de factura de compra, de/a número de factura, de/a fecha.
 
-- **Data registrazione magazzino**: permette di specificare la data relativa alla registrazione in magazzino.
+- **data registrazione magazzino**: permite especificar la fecha relativa al registro en el almacén.
 
-:::important Ricorda
-Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters#carico) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la data del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
-Se il flag nei parametri non è attivo, sarà utilizzata la *Data carico* inserita manualmente nella testata della fattura.   
-Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form.
+:::important Recuerda
+Si en los [Parámetros de facturas de compra (Parametri fatture di acquisto)](/docs/configurations/parameters/purchase/purchase-invoices-parameters#carico) > pestaña Carga (tab Carico) el indicador **crea registrazione con la data del documento** está activo, el registro del almacén se realizará siempre con la fecha del documento, ignorando la *data registrazione magazzino* ingresada en este formulario.  
+Si el indicador en los parámetros no está activo, se utilizará la *data carico* ingresada manualmente en la cabecera de la factura.  
+Si la *data carico* no está asignada, el registro del almacén se creará con la *data registrazione magazzino* ingresada en este formulario.
 :::
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Ricerca**: permette di cercare le fatture da registrare in magazzino.  
-> **Registrazione**: permette di eseguire la registrazione delle fatture selezionate in magazzino, in base agli algoritmi di carico e ai parametri inseriti nel successivo tab *Parametri*.
+> **ricerca**: permite buscar las facturas a registrar en el almacén.  
+> **registrazione**: permite realizar el registro de las facturas seleccionadas en el almacén, de acuerdo con los algoritmos de carga y los parámetros ingresados en la pestaña siguiente *Parámetros*.
 
-### Parametri
+### Parámetros (Parametri)
 
-Se alcune righe articolo della fatture non hanno il magazzino e la causale per il carico, attraverso questa maschera l'utente ha la possibilità di specificare per il modo in cui trattare le eccezioni.
+Si algunas líneas de artículo de las facturas no tienen almacén y causa para la carga, a través de esta máscara el usuario tiene la posibilidad de especificar cómo tratar las excepciones.
 
-Le opzioni disponibili sono:
+Las opciones disponibles son:
 
-- **Non effettuare la registrazione della fattura per intero**: non permette il carico parziale del documento;
-- **Tralasciare l'articolo senza magazzino e causale**: permette il carico parziale del documento; 
-- **Accettare come magazzino e causale i seguenti dati**: assicura il carico completo del documento. Per tutti gli articoli trovati senza magazzino e causale nelle fatture selezionate, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale*.
+- **No realizar el registro de la factura por completo (Non effettuare la registrazione della fattura per intero)**: no permite la carga parcial del documento;  
+- **tralasciare l'articolo senza magazzino e causale**: permite la carga parcial del documento;  
+- **Aceptar como almacén y causa los siguientes datos (Accettare come magazzino e causale i seguenti dati)**: asegura la carga completa del documento. Para todos los artículos encontrados sin almacén y causa en las facturas seleccionadas, establece los datos ingresados inmediatamente después, en los campos: *magazzino* y *causale*.
 
-*Pulsante specifico*
+*Botón específico*
 
-> **Salva parametri**: permette di salvare i parametri impostati per la registrazione.
+> **salva parametri**: permite guardar los parámetros configurados para el registro.
 
-### Riepilogativo
+### Resumen (Riepilogativo)
 
-In questo tab l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di registrazione eseguite, sia quelle effettuate mediante l'utilizzo di questa procedura, che quelle effettuate dall'interno del documento mediante il pulsante di *Carico automatico nel magazzino*.
+En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y anular las operaciones de registro realizadas, tanto las efectuadas mediante el uso de este procedimiento, como aquellas realizadas desde dentro del documento mediante el botón de *carico automatico nel magazzino*.
 
-I dati nelle griglie in basso, **Fatture** e **Registrazione**, corrispondono alla registrazione di carico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e la sua registrazione di magazzino (doppio click sulla riga).
+Los datos en las cuadrículas en la parte inferior, **fatture** y **registrazione**, corresponden al registro de carga seleccionado en la cuadrícula superior (después de filtrar los datos). Además, en estas dos últimas cuadrículas, hay la posibilidad de visualizar la factura y su registro en el almacén (doble clic en la fila).
 
-*Pulsanti specifici*:
-> **Ricerca**: per cercare le fatture caricate. Il risultato di questa procedura viene visualizzato nelle griglie di risultato.  
-> **Cancella carico**: per cancellare l'intera registrazione di carico selezionata.  
-> **Rollback fattura**: per cancellare il carico di un documento selezionato nella registrazione di carico. Questa operazione comporterà anche l'annullamento della registrazione di magazzino se corrisponde ad un solo documento oppure l'aggiornamento dei suoi dati se corrisponde a più fatture. 
+*Botones específicos*:
+> **ricerca**: para buscar las facturas cargadas. El resultado de este procedimiento se visualiza en las cuadrículas de resultados.  
+> **cancella carico**: para eliminar el registro completo de carga seleccionado.  
+> **rollback fattura**: para eliminar la carga de un documento seleccionado en el registro de carga. Esta operación también implicará la anulación del registro en el almacén si corresponde a un solo documento o la actualización de sus datos si corresponde a más de una factura.

@@ -1,36 +1,36 @@
 ---
-title: Parametri azioni correttive
+title: parametri azioni correttive
 sidebar_position: 4
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri azioni correttive**.
+Los parámetros se encuentran en la ruta **parametri azioni correttive**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nella gestione: *Azioni correttive*.   
+Los datos presentes en esta gestión se utilizan para proponer información en la gestión: *azioni correttive*.
 
-#### Pulsante specifico
+#### Botón específico
 
-**Salva**: permette di memorizzare le informazioni modificate.
+**salva**: permite almacenar la información modificada.
 
-#### Campi specifici 
-    
-- **Tipo azione proposta**: *Tipo di azione* da proporre nel caso di inserimento di una nuova *Azione correttiva*.   
-- **Settore proposta**: *Settore qualità* da proporre nel caso di inserimento di una nuova *Azione correttiva*.   
-- **Area proposta**: *Area qualità* da proporre nel caso di inserimento di una nuova *Azione correttiva*.   
-- **Persona responsabile proposta**: *Dipendente* da proporre come responsabile alla creazione di una nuova *Azione correttiva*.   
-- **Funzione responsabile proposta**: *Funzione aziendale* da proporre proposta come responsabile alla creazione di una nuova *Azione correttiva.   
+#### Campos específicos
 
-- **Colore azioni correttive**   
-> In questo elenco è possibile definire varie colorazioni per riconoscere i vari stati di un'*Azione correttiva*.
-> Tali colori sono applicati nel *Filtro delle Azioni correttive*. L'elenco si compone delle seguenti informazioni:   
->- **Colori azioni correttive**: è lo stato dell'*Azione correttiva* al quale associare le colorazioni.   
->> La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli. I valori predefiniti sono:
->> - *Approvate*;   
->> - *Bloccate*;   
->> - *Chiuse*;   
->> - *Da valutare*;   
->> - *Verificate*.   
+- **tipo azione proposta**: *Tipo de acción* a proponer en caso de inserción de una nueva *azione correttiva*.  
+- **Sector de propuesta (Settore proposta)**: *Sector calidad* a proponer en caso de inserción de una nueva *azione correttiva*.  
+- **area proposta**: *Área calidad* a proponer en caso de inserción de una nueva *azione correttiva*.  
+- **persona responsabile proposta**: *dipendente* a proponer como responsable de la creación de una nueva *azione correttiva*.  
+- **funzione responsabile proposta**: *Función empresarial* a proponer como responsable de la creación de una nueva *azione correttiva*.
+
+- **colore azioni correttive**  
+> En esta lista se pueden definir varios colores para reconocer los diferentes estados de una *azione correttiva*.  
+> Tales colores se aplican en el *Filtro de las Acciones correctivas (Filtro delle Azioni correttive)*. La lista se compone de la siguiente información:   
+> - **Colores de acciones correctivas (Colori azioni correttive)**: es el estado de la *azione correttiva* al que se asociarán las coloraciones.   
+>> La tabla contiene valores predefinidos por el sistema y no es posible insertar nuevos, eliminarlos o modificarlos. Los valores predefinidos son:  
+>> - *approvate*;  
+>> - *bloccate*;  
+>> - *chiuse*;  
+>> - *da valutare*;  
+>> - *verificate*.  
 >>
->- **Sfondo**: è il colore applicato allo sfondo della riga dell'*Azione correttiva* dello stato specifico.   
->- **Testo**: è il colore applicato al testo della riga dell'*Azione correttiva* dello stato specifico.   
+>- **sfondo**: es el color aplicado al fondo de la línea de la *azione correttiva* del estado específico.  
+>- **testo**: es el color aplicado al texto de la línea de la *azione correttiva* del estado específico.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

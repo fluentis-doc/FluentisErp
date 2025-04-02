@@ -1,40 +1,39 @@
 ---
 sidebar_position: 1
-title: DDMRP
+title: ddmrp
 ---
 
 :::important[Info]
-Il modulo DDMRP (**Demand Driven Material Requirements Planning**) in Fluntis ERP è progettato per ottimizzare la gestione delle scorte e della produzione, adottando un approccio innovativo e reattivo alla domanda effettiva. DDMRP rappresenta un’evoluzione del tradizionale MRP (Material Requirements Planning), integrando i concetti di Lean Manufacturing e di Supply Chain Management per migliorare la gestione delle risorse in ambienti complessi e in continua evoluzione.
+El módulo ddmrp (**Planificación de Requerimientos de Material Impulsada por la Demanda**) en Fluentis ERP está diseñado para optimizar la gestión de inventarios y producción, adoptando un enfoque innovador y reactivo a la demanda real. ddmrp representa una evolución del tradicional MRP (Planificación de Requerimientos de Material), integrando los conceptos de Lean Manufacturing y Supply Chain Management para mejorar la gestión de recursos en entornos complejos y en constante evolución.
 
-L'obiettivo principale del modulo è aiutare le aziende a ridurre i livelli di scorte e a migliorare l’affidabilità del servizio, proteggendo al contempo i flussi operativi dalla variabilità della domanda e dell'offerta. DDMRP permette di identificare i punti strategici lungo la catena di approvvigionamento, dove vengono posizionati buffer di stock che fungono da cuscinetti contro le fluttuazioni.
+El objetivo principal del módulo es ayudar a las empresas a reducir los niveles de inventarios y mejorar la confiabilidad del servicio, protegiendo al mismo tiempo los flujos operativos de la variabilidad de la demanda y la oferta. ddmrp permite identificar los puntos estratégicos a lo largo de la cadena de suministro, donde se colocan buffers de stock que funcionan como amortiguadores contra las fluctuaciones.
 
-Tra le caratteristiche principali del modulo DDMRP in Fluntis ERP troviamo:
+Entre las características principales del módulo ddmrp en Fluentis ERP encontramos:
 
-    Posizionamento strategico dei buffer: Identifica i punti critici della supply chain dove è necessario posizionare buffer per assorbire le variazioni di domanda e offerta.
+- **Posicionamiento estratégico de los buffers**: Identifica los puntos críticos de la cadena de suministro donde es necesario colocar buffers para absorber las variaciones de demanda y oferta.
 
-    Livelli dinamici di buffer: Regola dinamicamente i livelli di stock in base a fattori come la variabilità della domanda, i tempi di consegna e le performance operative.
+- **Niveles dinámicos de buffer**: Ajusta dinámicamente los niveles de stock según factores como la variabilidad de la demanda, los tiempos de entrega y el rendimiento operativo.
 
-    Pianificazione basata su domanda: A differenza dei tradizionali sistemi basati su previsioni, DDMRP si concentra sugli ordini reali, consentendo una reattività più immediata e una riduzione delle scorte di sicurezza.
+- **Planificación basada en demanda**: A diferencia de los sistemas tradicionales basados en pronósticos, ddmrp se centra en los pedidos reales, permitiendo una reactividad más inmediata y una reducción de los inventarios de seguridad.
 
-    Visibilità e controllo: Fornisce strumenti avanzati per monitorare e controllare i flussi di materiali, riducendo la complessità e migliorando la capacità decisionale.
+- **Visibilidad y control**: Proporciona herramientas avanzadas para monitorear y controlar los flujos de materiales, reduciendo la complejidad y mejorando la capacidad de toma de decisiones.
 
-Grazie a queste funzionalità, il modulo DDMRP consente alle aziende di ottimizzare i processi produttivi, ridurre i costi legati alle scorte e migliorare il servizio clienti, rendendo l'intera supply chain più efficiente e resiliente.
+Gracias a estas funcionalidades, el módulo ddmrp permite a las empresas optimizar los procesos productivos, reducir los costos relacionados con los inventarios y mejorar el servicio al cliente, haciendo que toda la cadena de suministro sea más eficiente y resiliente.
 :::
 
 
 :::tip[Nota]
-La **metodologia Ddmrp** è implementata in modo nativo all’interno di Fluentis, quindi non è un modulo od un software di tipo esterno che dialoga con il relativo database. 
+La **metodología ddmrp** está implementada de manera nativa dentro de Fluentis, por lo que no es un módulo o software externo que se comunica con la base de datos correspondiente.
 
-Tutte le funzionalità Ddmrp Fluentis sono state verificate dal **Demand Driven Institute** che ha certificato la soluzione Ddmrp Fluentis. 
+Todas las funcionalidades de ddmrp en Fluentis han sido verificadas por el **Demand Driven Institute**, que ha certificado la solución de ddmrp de Fluentis.
 
-La documentazione qui fornita consente di capire in che modo tale metodologia trova applicazione e ne vengono richiamati i concetti principali ma non è e non vuole essere una guida al "metodo" Ddmrp, pertanto l’utente che intende utilizzare le funzionalità Ddmrp deve conoscerne i contenuti ed averli appresi tramite opportuni corsi o documentazione ufficiale.
+La documentación aquí proporcionada permite entender cómo se aplica esta metodología y se mencionan los conceptos principales, pero no es ni pretende ser una guía al "método" ddmrp. Por lo tanto, el usuario que desee utilizar las funcionalidades de ddmrp debe conocer su contenido y haberlo aprendido a través de los cursos apropiados o la documentación oficial.
 :::
- 
 
-La documentazione è suddivisa nelle seguenti aree: 
+La documentación está dividida en las siguientes áreas:
 
-[**ANAGRAFICHE**](/docs/ddmrp/master-data/introduction)
+[**MAESTROS** (ANAGRAFICHE)](/docs/ddmrp/master-data/introduction)
 
-[**PROCEDURE**](/docs/ddmrp/procedures/ADU-update)
+[**PROCEDIMIENTOS** (PROCEDURE)](/docs/ddmrp/procedures/ADU-update)
 
-[**FORMS e REPORTS**](/docs/ddmrp/views_and_forms/buffer-status)
+[**FORMULARIOS y REPORTES** (FORMS e REPORTS)](/docs/ddmrp/views_and_forms/buffer-status)

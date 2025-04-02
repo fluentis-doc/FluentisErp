@@ -1,26 +1,25 @@
 ---
-title: Tipo attività
+title: tipo attività
 sidebar_position: 7
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipi attività**.
-La tabella contiene le possibili tipologie di attività. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di attività (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png)  Ricerca nella ribbon bar per visualizzarle).
+La tabla es accesible desde **Tablas (Tabelle) > Gestión de Proyectos (Gestione Progetti) > Tipos de actividad (Tipi attività)**.  
+La tabla contiene las posibles tipologías de actividad. Está compuesta por una parte de filtro en la que se puede buscar a través del código y la descripción, y una cuadrícula en la que se enumerarán todas las tipologías de actividad (bastará hacer clic en el botón de ![](/img/neutral/common/search.png)  Búsqueda (Ricerca) en la barra de herramientas para visualizarlas).
 
 ![](/img/it-it/configurations/tables/projects/activitytype.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo; in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+También dentro de este formulario es posible agregar nuevas tipologías en la cuadrícula, haciendo clic en el botón ![](/img/neutral/common/new.png) Nuevo; de esta manera se añadirá una nueva fila en la cuadrícula donde se podrán definir la siguiente información:
 
-**Codice**: è il codice del tipo attività;
+**codice**: es el código del tipo de actividad;  
 
-**Descrizione**: è la descrizione del codice;
+**descrizione**: es la descripción del código;  
 
-**Attività fatturabile**: questo flag indica se l’attività è fatturabile o meno;
+**attività fatturabile**: este indicador indica si la actividad es facturable o no;  
 
-**Tipo attività**: è possibile collegare la tipologia per la dichiarazione attività del CRM, con la relativa descrizione;
+**tipo attività**: es posible vincular la tipología para la declaración de actividad del CRM, con la descripción correspondiente;  
 
-**Ricalcola progetto**: indica se effettuare il ricalcolo dell’avanzamento del progetto;
+**ricalcola progetto**: indica si realizar el recálculo del avance del proyecto;  
 
-Sono poi presenti una serie di flag che indicano, se flaggati, l’obbligatorietà di alcuni campi nella tipologia di attività selezionata.
+Hay también una serie de indicadores que indican, si están marcados, la obligatoriedad de algunos campos en la tipología de actividad seleccionada.  
 
-**Colore**: colore per identificare le dichiarazioni attività nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
-
+**colore**: color para identificar las declaraciones de actividad en los calendarios del área de proyectos, como el [Planificador (Planner)](/docs/project-management/planned-interventions/planner) y [Asignación de recursos WBS (Assegnazione WBS risorse)](/docs/project-management/planned-interventions/wbs-resource-assignation).

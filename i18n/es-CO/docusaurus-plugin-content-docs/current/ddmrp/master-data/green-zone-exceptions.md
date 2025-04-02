@@ -1,25 +1,24 @@
 ---
-title: Rettifica zona verde
+title: Rectificación de zona verde (Rettifica zona verde)
 sidebar_position: 8
 ---
 
-Il valore della zona verde viene calcolato automaticamente dalla procedura aggiornamento zone in base al valore dei parametri DDMRP dell'articolo.
+El valor de la zona verde se calcula automáticamente por el procedimiento de actualización de zonas en función del valor de los parámetros DDMRP del artículo.
 
-Tramite questa tabella è possibile forzare un valore diverso in date specificate.
+A través de esta tabla, es posible forzar un valor diferente en fechas específicas.
 
-Il sistema di pianificazione tiene conto di eventuali valori di rettifica delle zone nel calcolo NFP anche se la procedura aggiornamento zone non è stata eseguita.
+El sistema de planificación considera posibles valores de rectificación de las zonas en el cálculo de NFP, incluso si no se ha ejecutado el procedimiento de actualización de zonas.
 
-Tipicamente si può imporre un valore diverso dal normale calcolo per un periodo di tempo limitato, per alterare la dimensione degli ordini emessi.
+Típicamente, se puede imponer un valor diferente al cálculo normal por un período de tiempo limitado, para alterar el tamaño de los pedidos emitidos.
 
-Se il valore della zona verde viene incrementato verranno emessi ordini più grandi e si ordinerà meno spesso, se viene diminuito avviene l'esatto contrario.
+Si el valor de la zona verde se incrementa, se emitirán pedidos más grandes y se ordenará con menos frecuencia; si se disminuye, ocurre exactamente lo contrario.
 
-Un esempio tipico riguarda risorse produttive con tempi di setup non trascurabili.
+Un ejemplo típico se refiere a recursos productivos con tiempos de configuración que no son despreciables.
 
-Se il ciclo produttivo di un articolo a scorta prevede una lavorazione su una risorsa con tempi di attrezzaggio non trascurabili e se la risorsa stessa è un collo di bottiglia, ovvero una risorsa con un carico di lavoro molto prossimo alla sua capacità produttiva, si cerca di ridurre il tempo di inattività della risorsa a causa dell'attrezzaggio aumentando la dimensione dei lotti di produzione, il che viene ottenuto indicando una quantità minima ordinabile nei parametri Ddmrp dell'articolo che di conseguenza determina la dimensione della zona verde dello stesso. 
+Si el ciclo productivo de un artículo en inventario implica un procesamiento en un recurso con tiempos de preparación no despreciables y si el propio recurso es un cuello de botella, es decir, un recurso con una carga de trabajo muy cercana a su capacidad de producción, se busca reducir el tiempo de inactividad del recurso debido a la preparación aumentando el tamaño de los lotes de producción, lo que se logra indicando una cantidad mínima ordenable en los parámetros DDMRP del artículo, que a su vez determina el tamaño de la zona verde del mismo.
 
-Se questa necessità si ha solo in un dato periodo di tempo, allora invece di impostare una quantità minima ordinabile si inserisce una eccezione della zona verde per tale periodo di tempo.
+Si esta necesidad solo se presenta en un período específico, en lugar de establecer una cantidad mínima ordenable, se introduce una excepción de la zona verde para dicho período de tiempo.
 
-Questo per esempio accade per i prodotti a forte stagionalità, dove nel periodo precedente al picco di domanda stagionale si crea una scorta adeguata tramite un incremento temporaneo della zona verde incrementando di conseguenza la produttività della risorsa satura, successivamente la risorsa sarà meno carica, quindi non satura, ovvero con capacità produttiva in eccesso, pertanto si faranno più produzioni di ordini piccoli privilegiando la flessibilità del sistema produttivo.
+Esto, por ejemplo, sucede con productos de alta estacionalidad, donde en el período previo al pico de demanda estacional se crea un stock adecuado a través de un incremento temporal de la zona verde, incrementando así la productividad del recurso saturado; posteriormente, el recurso estará menos cargado, por lo que no estará saturado, es decir, con capacidad productiva excedente, por lo tanto, se realizarán más producciones de pedidos pequeños priorizando la flexibilidad del sistema de producción.
 
-I maggiori tempi complessivi di setup in questo periodo non sono un problema perchè la risorsa non risulta pienamente caricata e quindi c'è tempo risorsa inutilizzato a disposizione.
-
+Los mayores tiempos totales de configuración en este período no son un problema porque el recurso no está completamente cargado y, por lo tanto, hay tiempo de recurso no utilizado disponible.

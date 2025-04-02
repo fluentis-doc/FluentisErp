@@ -1,37 +1,37 @@
 ---
-title: Impostazione XML
+title: Configuración XML (Impostazione XML)
 sidebar_position: 10
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** ed è utilizzata per determinare le proprietà di una richiesta.   
-Questa tabella è necessaria per impostare i dati per importare un listino fornitore scaricandolo da un sito internet in formato XML.
+La tabla se abre a través de la ruta **Tablas > Compras > Facturación de compras (Tabelle > Acquisti > Fatturato acquisti)** y se utiliza para determinar las propiedades de una solicitud.  
+Esta tabla es necesaria para configurar los datos para importar un listado de proveedor descargándolo de un sitio web en formato XML.
 
-I campi presenti sono:
+Los campos presentes son:
 
-**Conto-Sottoconto/Descrizione sottoconto**: conto e sottoconto del cliente per cui importare il listino.
+**Cuenta-Subcuenta/Descripción de subcuenta (Conto-Sottoconto/Descrizione sottoconto)**: cuenta y subcuenta del cliente para el cual importar el listado.  
 
-**Indirizzo**: indirizzo da cui scaricare il file xml
+**indirizzo**: dirección de donde descargar el archivo XML.  
 
-**Utente**: utente per collegarsi all'indirizzo.
+**utente**: usuario para conectarse a la dirección.  
 
-**Password**: password per collegarsi all'indirizzo.
+**password**: contraseña para conectarse a la dirección.  
 
-**Webservice**: path dove trovare i dati da importare e il file.
+**Servicio Web (Webservice)**: ruta donde encontrar los datos a importar y el archivo.  
 
-**Informazione iniziale**: informazione iniziale da dove partire per la creazione del file xml: offset=”1”.
+**informazione iniziale**: información inicial desde donde comenzar para la creación del archivo XML: offset=”1”.  
 
-**Tag iniziale**: definisce il tag iniziale per riconoscere l'inizio dei file xml: listino.
+**tag iniziale**: define la etiqueta inicial para reconocer el inicio de los archivos XML: listado.  
 
-**Riga iniziale**: definisce la riga da cui iniziare con l'importazione: articoli.
+**riga iniziale**: define la fila desde la cual comenzar con la importación: artículos.  
 
-**Pagina iniziale**: definisce la pagina iniziale: page.
+**pagina iniziale**: define la página inicial: page.  
 
-**Dimensione pagina**: definisce la dimensione delle pagine: offset=”500”.
+**dimensione pagina**: define el tamaño de las páginas: offset=”500”.  
 
-**Classe**: classe da utilizzare per importare gli articoli.
+**classe**: clase a utilizar para importar los artículos.  
 
-**UM**: UM da utilizzare per importare gli articoli.
+**um**: UM a utilizar para importar los artículos.  
 
-**Marca**: marca da utilizzare per importare gli articoli. 
+**marca**: marca a utilizar para importar los artículos.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

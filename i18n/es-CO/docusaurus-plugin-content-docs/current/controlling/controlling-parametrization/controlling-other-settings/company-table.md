@@ -1,14 +1,14 @@
 ---
-title: Tabella Società
+title: Tabla de Empresas (Tabella Società)
 sidebar_position: 1
 ---
 
-La prima decisione da prendere è sul tipo di controlling che l'azienda vuole gestire: se l'obiettivo è quello di costruire un sistema di centri aziendali, tra loro collegati da logiche di ribaltamento di valori di costo/ricavo, al fine di valorizzare la contabilità analitica in tutte le sue caratteristiche è necessario entrare nella ***Tabella società*** e impostare il flag di gestione del *Controlling*, presente nella scheda *Altre impostazioni*.
+La primera decisión a tomar es sobre el tipo de control (controlling) que la empresa desea gestionar: si el objetivo es construir un sistema de centros empresariales, interconectados por lógicas de transferencia de valores de costo/revenue, con el fin de valorar la contabilidad analítica en todas sus características, es necesario ingresar a la ***Tabla de empresas (Tabella società)*** y activar el indicador de gestión del *Controlling*, presente en la pestaña *altre impostazioni*.
 
-Continueremo la configurazione spostandoci nella griglia *Divisioni* in alto a destra, nella quale andremo ad impostare la periodicità *mensile* (che è l'opzione di default) o *settimanale*.
+Continuaremos la configuración moviéndonos a la cuadrícula *divisioni* en la parte superior derecha, donde vamos a establecer la periodicidad *mensile* (que es la opción predeterminada) o *settimanale*.
 
-Generalmente nel controlling valorizziamo solo i movimenti economici dei costi e ricavi, se volessimo portare anche il patrimoniale possiamo impostare il flag 'Importa patrimoniale in controlling'.
+Generalmente, en el controlling valoramos solo los movimientos económicos de costos y ingresos; si deseamos incluir el patrimonio, podemos activar el indicador 'Importar patrimonio en controlling (Importa patrimoniale in controlling)'.
 
 :::tip Nota
-Se l'azienda è interessata alla sola gestione dei bilanci infrannuali contabili o ad una configurazione di base dei centri aziendali che non preveda driver di ribaltamento fra loro, la gestione *Controlling* in tabella società può essere omessa.
+Si la empresa está interesada solo en la gestión de balances interanuales contables o en una configuración básica de los centros empresariales que no prevea controladores de transferencia entre ellos, la gestión *Controlling* en la tabla de empresas puede ser omitida.
 :::

@@ -1,40 +1,40 @@
 ---
-title: Formule di Calcolo
-sidebar position: 3
---- 
+title: formule di calcolo
+sidebar_position: 3
+---
 
-:::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::tip Nota (Nota)
+Esta tabla es de uso exclusivo para las empresas que han configurado el *Controlling*.
 :::
 
-Nelle Formule di calcolo possiamo definire come creare automaticamente delle registrazioni extracontabili di area a partire da dei valori di origine. In generale, l’idea è cercare di automatizzare, magari approssimandole, alcune registrazioni che in contabilità sarebbero rilevate posticipatamente, o che sarebbe dispendioso inserire su ogni periodo come registrazioni extracontabili di Area manuali.
+En las Fórmulas de cálculo podemos definir cómo crear automáticamente registros extracontables de área a partir de valores de origen. En general, la idea es intentar automatizar, tal vez aproximando, algunos registros que en contabilidad se registrarían posteriormente o que sería costoso ingresar en cada período como registros extracontables de área manuales.
 
-:::tip Esempio
-Ad esempio, potremmo valorizzare automaticamente i costi dei premi di risultato, che magari rileviamo a fine anno tramite l’applicazione del 3% sul fatturato dei ricambi Italia, attraverso una formula che rileva questa percentuale sul saldo del conto d’interesse valorizzato sul centro di costo dei ricavi di vendita, assegnando questo costo al centro del Commerciale.
+:::tip Ejemplo (Esempio)
+Por ejemplo, podríamos valorar automáticamente los costos de los premios de resultados, que quizás registramos al final del año mediante la aplicación del 3% sobre el volumen de negocios de repuestos de Italia, a través de una fórmula que registra este porcentaje sobre el saldo de la cuenta de interés valorada en el centro de costos de los ingresos por ventas, asignando este costo al centro del Comercial.
 
-Oppure potremmo applicare delle formule sulle quantità rilevate di un’unità di misura, se magari si presuppone che determinati costi siano di un tot. a pezzo
+O podríamos aplicar fórmulas sobre las cantidades registradas de una unidad de medida, si suponemos que ciertos costos son de un cierto monto por pieza.
 :::
 
-Per inserire una nuova *Formula*, dalla maschera di ricerca si premerà sul pulsante *Nuovo* in modo da aprire la maschera di gestione, che prevede i seguenti campi:  
-- la **DATA INIZIO** e **DATA FINE** validità della regola
+Para insertar una nueva *Fórmula*, desde la máscara de búsqueda se presionará el botón *nuovo* para abrir la máscara de gestión, que prevé los siguientes campos:  
+- la **data inizio** y **data fine** de validez de la regla
 
-- l'[**AREA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di applicazione della regola stessa
+- el [**ÁREA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de aplicación de la regla misma
 
-- il **CONTO DI DESTINAZIONE**, cioè il sottoconto da utilizzare per rilevare il movimento automatico nell'analitica della registrazione extracontabile di area
+- el **conto di destinazione**, es decir, el subcuenta a utilizar para registrar el movimiento automático en la analítica del registro extracontable de área
 
-- il [**CENTRO DI DESTINAZIONE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), cioè il centro da utilizzare nella riga stessa
+- el [**CENTRO DE DESTINO**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), es decir, el centro a utilizar en la misma línea
 
-- il [**CENTRO DI ORIGINE UM**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei movimenti fisici quando la formula prevede delle quantità gestite da un'unità di misura
+- el [**CENTRO DE ORIGEN UM**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opcional, que sirve como centro de filtro de los movimientos físicos cuando la fórmula prevé cantidades gestionadas por una unidad de medida
 
-- il **CENTRO ORIGINE CONTI**(/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei valori dei sottoconti inseriti nella formula
+- el **CENTRO DE ORIGEN CUENTAS**(/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opcional, que sirve como centro de filtro de los valores de las subcuentas ingresadas en la fórmula
 
-Al di sotto avremo due griglie, a sinistra la lista dei conti del piano dei conti, a destra le[* Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) disponibili.
-Alla base della maschera c'è la sezione con la formula, che può essere gestita trascinando con il mouse le entità (*conti* e/o *UM*) che si vogliono inserire nella formula stessa
+Debajo tendremos dos cuadrículas, a la izquierda la lista de cuentas del plan de cuentas, a la derecha las [*Unidades de medida*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) disponibles.  
+En la base de la máscara hay una sección con la fórmula, que puede ser gestionada arrastrando con el mouse las entidades (*cuentas* y/o *UM*) que se deseen insertar en la fórmula misma.
 
-:::tip Esempio
-Una formula potrebbe essere, ad esempio, "40001-004-Ricavi di Vendita ricambi ITA"*0.03
+:::tip Ejemplo (Esempio)
+Una fórmula podría ser, por ejemplo, "40001-004-Ricavi di Vendita ricambi ITA"*0.03.
 :::
 
-:::tip Nota
-Nella maschera di ricerca è presente un pulsante di duplicazione della formula selezionata.
+:::tip Nota (Nota)
+En la máscara de búsqueda hay un botón para duplicar la fórmula seleccionada.
 :::

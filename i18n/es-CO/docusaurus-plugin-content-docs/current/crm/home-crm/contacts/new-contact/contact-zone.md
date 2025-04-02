@@ -1,8 +1,8 @@
 ---
-title: Zona Contatto
+title: Zona de Contacto (Zona Contatto)
 sidebar_position: 8
 ---
 
-Questa è la settima tab dei **Contatti CRM**.
+Esta es la séptima pestaña de los **contatti crm**.
 
-In questa tab è possibile inserire e visualizzare la zona di appartenenza dell’azienda. È sufficiente selezionare la zona.
+En esta pestaña es posible ingresar y visualizar la zona de pertenencia de la empresa. Simplemente seleccione la zona.

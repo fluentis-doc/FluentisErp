@@ -1,53 +1,53 @@
 ---
-title: Arrotondamenti
+title: arrotondamenti
 sidebar_position: 5
 ---
 
-La form si apre tramite il percorso **Vendite > Listini di Vendita > Procedure > Arrotondamenti*.
+El formulario se abre a través de la ruta **Ventas > Listas de Precios > Procedimientos > arrotondamenti (Vendite > Listini di Vendita > Procedure > Arrotondamenti)**.
 
-La procedura permette di ricercare gli arrotondamenti e di definire più codici di regole di aumento/diminuzione dei prezzi, di aggiornamento degli sconti e di politiche di arrotondamento dei prezzi ottenuti.
+El procedimiento permite buscar los redondeos y definir múltiples códigos de reglas de aumento/disminución de precios, de actualización de descuentos y de políticas de redondeo de los precios obtenidos.
 
-Questi codici di Arrotondamento vengono utilizzati nelle procedure di creazione listini vendita.
+Estos códigos de Redondeo se utilizan en los procedimientos de creación de listas de precios de venta.
 
-Nella form di *Ricerca* è possibile ricercare i dati preesistenti, di inserire nuovi codici di arrotondamenti o di modificare dei codici già presenti.
+En el formulario de *ricerca* es posible buscar datos preexistentes, insertar nuevos códigos de redondeo o modificar códigos ya existentes.
 
-Definendo un *Nuovo* codice (click sul pulsante **Nuovo** nella form di Ricerca) o *Modificando* un codice esistente è possibile inserire la descrizione da attribuire alla regola.
+Definiendo un *nuovo* código (clic en el botón **nuovo** en el formulario de Búsqueda) o *Modificando (Modificando)* un código existente se puede ingresar la descripción a asignar a la regla.
 
 ![](/img/it-it/sales/sales-price-list/procedures/rounding/image02.png)
 
-La variazione del prezzo può avvenire in percentuale o a valore, aumentando o diminuendo con l'utilizzo del valore con segno.
+La variación del precio puede ocurrir en porcentaje o en valor, aumentando o disminuyendo con el uso del valor con signo.
 
-Il metodo di arrotondamento è definito per scaglioni di prezzo unitario.
+El método de redondeo está definido por tramos de precio unitario.
 
-**Limite superiore**: indica il massimo prezzo a cui verrà applicato il mask e la percentuale.
+**limite superiore**: indica el precio máximo al que se aplicará la máscara y el porcentaje.
 
-**Mask**: è un campo di testo dove l'utente definisce la regola di arrotondamento.
+**mask**: es un campo de texto donde el usuario define la regla de redondeo.
 
-**Percentuale**: è la percentuale oltre la quale se il rapporto tra i prezzi calcolati, ottenuti applicando la variazione al prezzo di partenza, e il prezzo di partenza eccede il valore di questa percentuale il prezzo ottenuto e arrotondato viene segnalato in rosso in quanto è oltre il limite di arrotondamento consentito. Nel caso evidenziato sopra il “prezzo arrotondato” non deve superare del 5% il “prezzo non arr.”
+**percentuale**: es el porcentaje más allá del cual, si la relación entre los precios calculados obtenidos al aplicar la variación al precio inicial y el precio inicial excede el valor de este porcentaje, el precio redondeado obtenido se señala en rojo dado que está más allá del límite de redondeo permitido. En el caso resaltado arriba, el "precio redondeado" no debe superar el 5% del "precio no redondeado (prezzo non arr.)".
 
-**VALORI VALIDI PER IL MASK**
+**VALORES VÁLIDOS PARA LA MÁSCARA (VALORI VALIDI PER IL MASK)**
 
-Il MASK è una regola che l'utente definisce componendo un testo utilizzando il seguente linguaggio:
+La MÁSCARA es una regla que el usuario define componiendo un texto utilizando el siguiente lenguaje:
 
-=  il valore non subisce variazioni
+=  el valor no sufre variaciones
 
-+  incrementare il valore di una unità
++  incrementar el valor en una unidad
 
--   decrementare il valore di una unità
+-   decrementar el valor en una unidad
 
-[    inizio regola singolo valore
+[    inicio de regla de valor único
 
-]    fine regola singolo valore
+]    fin de regla de valor único
 
-(    inizio regola che definisce a quale valore fisso deve essere portato il valore analizzato
+(    inicio de regla que define a qué valor fijo debe llevarse el valor analizado
 
-)    fine regola che definisce a quale valore fisso deve essere portato il valore analizzato
+)    fin de regla que define a qué valor fijo debe llevarse el valor analizado
 
-,    separatore decimale
+,    separador decimal
 
-Vengono riportati di seguito degli esempi che possono spiegare come realizzare una regola:
+A continuación se presentan ejemplos que pueden explicar cómo realizar una regla:
 
-| Prezzo ini. | Prezzo non arr. | Mask | Prezzo arrotondato |
+| Precio ini. | Precio no arr. | Máscara | Precio redondeado |
 | --- | --- | --- | --- |
 | 16,16 | 16,968 | [=][=][=],[=][+] | 16,98 |
 | 16,16 | 16,968 | [=][=][=],[=][=] | 16,97 |
@@ -65,4 +65,4 @@ Vengono riportati di seguito degli esempi che possono spiegare come realizzare u
 | 16,16 | 16,968 | [=][=][-] | 16 |
 | 16,16 | 16,968 | [=][=][+] | 18 |
 
-Nella sezione degli sconti è possibile definire degli sconti da inserire in ogni riga di listino, scegliendo anche di cancellare gli sconti precedentemente inseriti nella stessa riga, oppure di andare in modifica degli sconti presenti nelle righe listino.
+En la sección de descuentos es posible definir descuentos para insertar en cada línea de la lista de precios, eligiendo también cancelar los descuentos previamente insertados en la misma línea o modificar los descuentos presentes en las líneas de lista de precios.

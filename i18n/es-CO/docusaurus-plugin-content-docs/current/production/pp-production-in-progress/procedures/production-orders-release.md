@@ -1,34 +1,34 @@
 ---
-title: Rilascio ordini di produzione
+title: rilascio ordini di produzione
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La procedura di **Rilascio degli ordini di produzione** in Fluentis permette di gestire in modo efficiente il passaggio degli ordini dallo stato *Lanciato* a *Esecutivo*. Mediante un'interfaccia intuitiva, è possibile filtrare e selezionare gli ordini da rilasciare, generando al contempo i relativi movimenti di magazzino per il prelievo automatico dei materiali. Inoltre, questa procedura consente di ripristinare ordini già rilasciati, garantendo una flessibilità operativa significativa nel processo produttivo.
+:::important ¿Para qué sirve? (A cosa serve)
+El procedimiento de **rilascio ordini di produzione (Rilascio degli ordini di produzione)** en Fluentis permite gestionar de manera eficiente el paso de las órdenes del estado *lanciato* a *esecutivo*. A través de una interfaz intuitiva, es posible filtrar y seleccionar las órdenes a liberar, generando al mismo tiempo los respectivos movimientos de almacén para la extracción automática de los materiales. Además, este procedimiento permite restaurar órdenes ya liberadas, garantizando una flexibilidad operativa significativa en el proceso productivo.
 :::
 
-Questa form permette di effettuare il cambio di stato degli ordini di produzione e contemporaneamente creare anche i relativi movimenti di magazzino di scarico di tutti gli articoli che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+Este formulario permite realizar el cambio de estado de las órdenes de producción y, al mismo tiempo, crear también los respectivos movimientos de almacén de descarga de todos los artículos que tienen, en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo, como *tipo di prelievo* el valor **automatico**.
 
 ## Filtro
 
-In questo tab è possibile visualizzare la lista degli ordini di produzione in stato lanciato che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+En esta pestaña es posible visualizar la lista de órdenes de producción en estado lanzado que aún deben ser liberadas, y se pueden filtrar a través de una serie de criterios de selección. 
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** presente en la *barra de herramientas (ribbon bar)* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Dopo aver individuato e selezionato gli ordini che si vogliono rilasciare, per procedere bisognerà utilizzare con il pulsante **Rilascio ordini**  presente nella *ribbon bar*, questo permetterà di variare lo stato degli ordini da *Lanciato* ad *Esecutivo* e allo stesso tempo di creare i movimenti di magazzino di scarico di tutti i materiali che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+Después de haber identificado y seleccionado las órdenes que se desean liberar, para proceder se debe utilizar el botón **rilascio ordini** presente en la *barra de herramientas (ribbon bar)*; esto permitirá cambiar el estado de las órdenes de *lanciato* a *esecutivo* y al mismo tiempo crear los movimientos de almacén de descarga de todos los materiales que tienen, en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo, como *tipo di prelievo* el valor **automatico**.
 
-## Ripristino
+## Restauración (Ripristino)
 
-In questo tab è possibile eseguire la procedura di ripristino che consente di annullare il rilascio dell'ordine di produzione precedentemente effettuato, ripristinando la situazione antecedente al rilascio stesso, riportando lo stato dell'ordine di produzione a *Lanciato* ed eliminando il relativo movimento di magazzino.
+En esta pestaña es posible ejecutar el procedimiento de restauración que permite anular la liberación de la orden de producción previamente realizada, restaurando la situación anterior a la liberación misma, revirtiendo el estado de la orden de producción a *lanciato* y eliminando el respectivo movimiento de almacén.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.  
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** presente en la *barra de herramientas (ribbon bar)* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Tenendo selezionata una delle righe presenti nella griglia di risultato, vengono visualizzati nella griglia sottostante i relativi movimenti di magazzino creati.
+Manteniendo seleccionada una de las filas presentes en la cuadrícula de resultados, se visualizan en la cuadrícula inferior los respectivos movimientos de almacén creados.
 
-Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino**. 
+Para lanzar la restauración, seleccione una o más órdenes y haga clic en el botón **ripristino**.
 
-Il ripristino dell'ordine di produzione è possibile solo se l'ordine di produzione generato si trova nello stato di *Esecutivo* e non sono ancora state iniziate le relative dichiarazioni di produzione; mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine di produzione, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazione di produzione.
+La restauración de la orden de producción solo es posible si la orden de producción generada se encuentra en estado *esecutivo* y no se han iniciado aún las declaraciones de producción correspondientes; mientras que en caso de que ya esté *evaso*, no es posible ejecutar la restauración de la orden de producción, a menos que se proceda a retroceder comenzando desde la reversión del registro de la declaración de producción.
 
-Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
+Al realizar este procedimiento, las órdenes restauradas serán nuevamente visibles en la pestaña de **filtro**, donde será posible volver a realizar la liberación.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,17 +1,17 @@
 ---
-title: Parametri Carico/Scarico
+title: parametri carico/scarico
 sidebar_position: 1
 ---
 
-La form permette di attribuire i diritti ad un utente per effettuare alcune movimentazioni di magazzino.  Le procedure che vengono gestite da questa finestra sono la gestione UDC per quanto riguarda l'ERP e tutti i moduli di WMS Mobile.
+El formulario permite asignar derechos a un usuario para realizar ciertos movimientos de almacén. Las procedimientos que se gestionan a través de esta ventana son la gestión UDC en relación con el ERP y todos los módulos de WMS Móvil.
 
-## Inserimento nuovo parametro
+## Inserción de nuevo parámetro (Inserimento nuovo parametro)
 
-Per inserire un *Nuovo parametro carico/scarico* è necessario posizionarsi sul record libero oppure premere il pulsante **Inserisci** dalla ribbon bar.  
-Specificare quindi:
-- **Utente** desiderato,  
-- [Tipo movimento](/docs/configurations/parameters/logistics/load-unload-parameters/movement-types), 
-- **Magazzino** dove dovrà operare 
-- **Causale** utilizzata nelle registrazioni di magazzino.
+Para insertar un *Nuevo parámetro de carga/descarga (Nuovo parametro carico/scarico)* es necesario posicionarse sobre el registro libre o presionar el botón **inserisci** en la barra de herramientas.  
+Especificar entonces:  
+- **utente** deseado,  
+- [Tipo de movimiento (Tipo movimento)](/docs/configurations/parameters/logistics/load-unload-parameters/movement-types),  
+- **magazzino** donde deberá operar  
+- **causale** utilizado en los registros de almacén.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,27 +1,19 @@
 ---
-title: Esportazioni
+title: esportazioni
 sidebar_position: 2
 ---
 
-Da questa maschera si eseguono le esportazioni dati per DocFinance, con tre diverse opzioni.
+Desde esta máscara se llevan a cabo las exportaciones de datos para DocFinance, con tres opciones diferentes.
 
-**Esporta anagrafica**: l'attivazione di questo flag imporrà al sistema di creare il file di allineamento del piano dei conti e delle anagrafiche. Una volta impostato si attiveranno i campi collegati successivi, dove impostare il nome file e il percorso condiviso di creazione (entrambi i dati saranno memorizzati per essere riproposti alla creazione successiva). Il primo campo ‘Data ultima esportazione' consente di definire la data di riferimento per l'esportazione dei soli dati modificati/aggiunti nel piano dei conti: è consentito cancellare questa data in modo da creare un file completo di tutte le impostazioni di piano dei conti/anagrafiche (la cosa ha chiaramente un impatto significativo sui tempi necessari all'allineamento tra i due sistemi)
+**esporta anagrafica**: la activación de este indicador obligará al sistema a crear el archivo de alineación del plan de cuentas y de los registros. Una vez configurado, se activarán los campos siguientes, donde se debe establecer el nombre del archivo y la ruta compartida de creación (ambos datos se guardarán para ser reutilizados en la creación posterior). El primer campo ‘Fecha de última exportación (Data ultima esportazione)’ permite definir la fecha de referencia para la exportación de solo los datos modificados/agregados en el plan de cuentas: se permite borrar esta fecha para crear un archivo completo de todas las configuraciones del plan de cuentas/registros (esto claramente tiene un impacto significativo en el tiempo necesario para el alineamiento entre los dos sistemas).
 
-**Creazione automatica cash flow**: con questo flag il programma andrà a creare un nuovo cash flow nel modulo omonimo, prima di procedere all'eventuale esportazione dati del punto successivo. La creazione avverrà con i parametri di default della procedura ‘Creazione automatica cash flow': si rinvia alla documentazione specifica per ulteriori dettagli.
+**creazione automatica cash flow**: con este indicador, el programa creará un nuevo flujo de caja en el módulo homónimo, antes de proceder a la posible exportación de datos del siguiente punto. La creación se realizará con los parámetros predeterminados del procedimiento ‘Creación automática de flujo de caja (Creazione automatica cash flow)’: se remite a la documentación específica para más detalles.
 
-**Esporta cash flow**: con questo flag il sistema andrà a creare il file dei flussi finanziari, sia come partite contabili che come previsionali. Quando il flag viene impostato, si attiva il successivo flag ‘Derogabilità da anagrafici/tipi pagamento' e i campi con i nomi e il percorso condiviso di creazione del file (entrambi memorizzati). In dettaglio, a seconda che sia stato impostato il flag ‘Derogabilità da anagrafici/tipi pagamento' o meno, la logica di assegnazione della derogabilità cambia: in caso non sia impostato, la derogabilità per i fornitori sarà rilevato dal tipo di pagamento e per i clienti dall'anagrafica; in caso sia impostato, la derogabilità deriverà dall'anagrafica cliente/fornitore e se qui non è impostata sarà calcolata con codici fissi (‘01' per le riba, oppure ‘01' – ‘02' – ‘03' – ‘04' a seconda che la differenza tra data scadenza e data attuale restituisca una data scaduta, una differenza inferiore ai 30 giorni, dai 30 ai 90, oltre i 90).
+**esporta cash flow**: con este indicador, el sistema creará el archivo de flujos financieros, tanto como partidas contables como previsionales. Cuando se activa el indicador, se activa el siguiente indicador ‘Derogabilidad de registros/tipos de pago (Derogabilità da anagrafici/tipi pagamento)’ y los campos con los nombres y la ruta compartida de creación del archivo (ambos guardados). En detalle, dependiendo de si se ha configurado el indicador ‘Derogabilidad de registros/tipos de pago’ o no, la lógica de asignación de la derogabilidad cambia: si no está configurado, la derogabilidad para los proveedores se determinará por el tipo de pago y para los clientes por el registro; si está configurado, la derogabilidad se derivará del registro del cliente/proveedor y si aquí no está configurado, se calculará con códigos fijos (‘01’ para las riba, o ‘01’ – ‘02’ – ‘03’ – ‘04’ dependiendo de que la diferencia entre la fecha de vencimiento y la fecha actual dé como resultado una fecha vencida, una diferencia de menos de 30 días, de 30 a 90, más de 90).
 
-Alla base della maschera va definito l'utente che andrà ad eseguire la creazione dei file. È necessario che questo abbia accesso alle cartelle condivise impostate per la creazione dei file.
+En la parte inferior de la máscara debe definirse el usuario que ejecutará la creación de los archivos. Es necesario que este tenga acceso a las carpetas compartidas configuradas para la creación de archivos.
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Salva | Con questo pulsante è possibile salvare le impostazioni da proporre di default nella maschera. |
-| Esportazione | Esegue la creazione del/i file/s così come impostati nella maschera. |
-
-
-
-
-
-
+| Guardar (Salva) | Con este botón es posible guardar las configuraciones a proponer como predeterminadas en la máscara. |
+| Exportación (Esportazione) | Ejecuta la creación del/los archivo/s tal como se configuró en la máscara. |

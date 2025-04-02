@@ -1,61 +1,61 @@
 ---
-title: Storico registrazioni gestionali
+title: storico registrazioni gestionali
 sidebar_position: 3
 ---
 
-In questa maschera abbiamo la lista delle registrazioni create dalla procedura di ***Elaborazione periodi*** del controlling: si tratta della base dati, non modificabile, che contiene il dettaglio di ogni riga valorizzata, a partire dai valori mensilizzati di origine contabile fino al singolo ribaltamento dei Cost driver elaborati (ad esclusione di quelli del consuntivo di progetto, che hanno una procedura di calcolo e una form di visualizzazione a se stante).
+En esta pantalla tenemos la lista de los registros creados por el proceso de **elaborazione periodi*** del control: se trata de la base de datos, no editable, que contiene el detalle de cada línea valorada, desde los valores mensualizados de origen contable hasta la individualización de los Cost drivers elaborados (excluyendo aquellos del presupuesto del proyecto, que tienen un procedimiento de cálculo y un formulario de visualización independiente).
 
 :::tip Nota
-Dato che l'***Elaborazione periodi*** del Controlling cancella e ricrea i valori dell'anno, avremo un'unica registrazione per ogni anno e area elaborata
+Dado que la **elaborazione periodi*** del Control cancela y recrea los valores del año, tendremos un único registro por cada año y área elaborada.
 :::
 
-Possiamo aprire in visualizzazione ogni registrazione per andare a verificare i singoli step di elaborazione e il dettaglio dei dati elaborati, con piena visibilità di tutte le caratteristiche di origine del dato, della distribuzione periodi, del cost driver applicato e del ciclo di elaborazione: da questa form, quindi, possiamo risalire ai motivi logici di eventuali incongruenze causate da impostazioni incoerenti con i risultati ricercati.
+Podemos abrir en visualización cada registro para verificar los pasos individuales de elaboración y el detalle de los datos procesados, con plena visibilidad de todas las características de origen de los datos, de la distribución por períodos, del cost driver aplicado y del ciclo de elaboración: desde este formulario, por lo tanto, podemos rastrear las razones lógicas de eventuales incongruencias causadas por configuraciones inconsistentes con los resultados buscados.
 
-I campi disponibili in griglia sono i seguenti:
+Los campos disponibles en la cuadrícula son los siguientes:
 
-- ***Sottoconto***
-- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
-- [***Centro cedente***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), che sarà valorizzato solo per le righe legate ai driver
-- ***Anno***
-- ***Periodo***
-- ***Dare***
-- ***Avere***
-- ***Valore fisso***, che sommato al successivo valore variabile darà il valore Dare o Avere precedente
-- ***Valore variabile***, che sommato al precedente valore fisso darà il valore Dare o Avere precedente
-- ***Divisione***
-- ***Divisa***, sempre uguale alla divisa della società
-- ***Distribuzione periodi*** associata alla riga
-- ***Tipo riga***, che possono essere
-    - *0* cioè righe di origine: si usa sia per le righe che nascono dalle chiusure o dalle registrazioni manuali di chiusura o di area, ma anche per le righe dei driver di attribuzione
-    - *1* cioè righe cedute: per i driver di ribaltamento, sono le righe che stornano il valore dal *Centro aziendale*
-    - *2* cioè righe ricevute: per i driver di ribaltamento, sono le righe che ribaltano il valore dal *Centro cedente* al *Centro aziendale*
+- **sottoconto***
+- [**area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+- [**centro cedente***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), que se valorará solo para las líneas vinculadas a los drivers
+- **anno***
+- **periodo***
+- **dare***
+- **avere***
+- **valore fisso***, que sumado al siguiente valor variable dará el valor Debe o Haber anterior
+- **valore variabile***, que sumado al previo valor fijo dará el valor Debe o Haber anterior
+- **divisione***
+- **divisa***, siempre igual a la divisa de la empresa
+- **distribuzione periodi*** asociada a la línea
+- **tipo riga***, que puede ser
+    - *0* es decir, líneas de origen: se usa tanto para las líneas que surgen de los cierres o de los registros manuales de cierre o de área, como también para las líneas de los drivers de atribución
+    - *1* es decir, líneas cedidas: para los drivers de rebalanceo, son las líneas que descuentan el valor del *centro aziendale*
+    - *2* es decir, líneas recibidas: para los drivers de rebalanceo, son las líneas que trasladan el valor del *Centro cedente* al *centro aziendale*
 :::tip Nota
-Le righe di *attribuzione* sono sostanzialmente le righe di ribaltamento dei *Cost driver* che dal Centro di comodo *Conti da riassegnare* valorizzano i *Centri aziendali* effettivi della direzionale. I driver di *ribaltamento* sono sostanzialmente tutti gli altri.
+Las líneas de *attribuzione* son sustancialmente las líneas de rebalanceo de los *Cost drivers* que desde el Centro temporal *Cuentas por reasignar* valorizan los *Centros empresariales* reales de la dirección. Los drivers de *rebalanceo (ribaltamento)* son sustancialmente todos los demás.
 :::
-- ***Tipo distribuzione*** del driver applicato
-- [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) applicato
-- ***Sorgente***, cioè l'origine del dato, che può essere:
-    - *Contabile* (1), cioè proveniente direttamente dalla *Chiusura infrannuale*
-    - *Manuale* (2), cioè proveniente dalle *Registrazioni extracontabili di area*
-    - *Formula* (3), cioè proveniente da registrazioni create dalle *Formule di calcolo*
-    - *Ammortamenti* (4), cioè proveniente da registrazioni create dall'elaborazione degli ammortamenti del controlling
-    - *Conguagli* (5), cioè proveniente da registrazioni dei conguagli infrannuali o annuali
-    - *Driver delle tariffe* (6), cioè proveniente dai driver di applicazione delle tariffe 
-    - *Rimanenze* (7), cioè proveniente da registrazioni delle rimanenze nel controlling
-    - *Materiali produzione* (8), cioè proveniente da costi per i materiali di produzione
-    - *Lavorazioni esterne* (9), cioè proveniente da costi del conto lavoro
-    - *Trasformazioni di produzione* (10), cioè dalle lavorazioni interne in produzione
-    - *Consolidamento controlling* (15), cioè dalla procedura di *Consolidamento master* del controlling, in installazioni multisocietarie
+- **tipo distribuzione*** del driver aplicado
+- [**cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) aplicado
+- **sorgente***, es decir, el origen del dato, que puede ser:
+    - *contabile* (1), es decir, proveniente directamente del *chiusura infrannuale*
+    - *manuale* (2), es decir, proveniente de los *registrazioni extracontabili di area*
+    - *formula* (3), es decir, proveniente de registros creados por las *Fórmulas de cálculo*
+    - *ammortamenti* (4), es decir, proveniente de registros creados por la elaboración de las amortizaciones del control
+    - *Ajustes (Conguagli)* (5), es decir, proveniente de registros de los ajustes interanuales o anuales
+    - *Drivers de tarifas (Driver delle tariffe)* (6), es decir, proveniente de los drivers de aplicación de tarifas
+    - *rimanenze* (7), es decir, proveniente de registros de existencias en control
+    - *Materiales de producción (Materiali produzione)* (8), es decir, proveniente de costos por materiales de producción
+    - *lavorazioni esterne* (9), es decir, proveniente de costos de trabajo por encargo
+    - *Transformaciones de producción (Trasformazioni di produzione)* (10), es decir, de los trabajos internos en producción
+    - *Consolidación de control (Consolidamento controlling)* (15), es decir, del procedimiento de *Consolidación maestra* del control, en instalaciones multi-empresas
 
 :::tip Nota
-Esistono altre 4 tipologie di origini dati, visibili nello storico del consolidato di progetto:
+Existen otras 4 tipologías de orígenes de datos, visibles en el histórico de consolidado de proyecto:
     - *tempo macchina* (11)
     - *tempo uomo* (12)
-    - *attrezzaggio macchina* (13)
-    - *attrezzaggio uomo* (14)
+    - *Ajuste de máquina (attrezzaggio macchina)* (13)
+    - *Ajuste de hombre (attrezzaggio uomo)* (14)
 :::
 
-- ***Numero***, ***Anno***, ***Riga***, ***Wbs***: riferimenti ai progetti, non valorizzati
+- **numero***, **anno***, **riga***, **wbs***: referencias a los proyectos, no valoradas
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+No se permite la eliminación ni la modificación o inserción de datos en la cuadrícula.

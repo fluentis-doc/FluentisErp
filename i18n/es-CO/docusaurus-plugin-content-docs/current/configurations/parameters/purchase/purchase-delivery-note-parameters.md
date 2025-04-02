@@ -1,65 +1,65 @@
 ---
-title: Parametri DDT acquisto
+title: Parámetros de DDT de compra (Parametri DDT acquisto)
 sidebar_position: 3
 ---
 
-I parametri delle DDT di acquisto permettono l'impostazione di base per poter gestire le bolle di acquisto correttamente e secondo le specifiche richieste da ogni singola società.
+Los parámetros de los DDT de compra permiten la configuración básica para poder gestionar las facturas de compra correctamente y de acuerdo con las especificaciones solicitadas por cada empresa.
 
-La finestra si compone di pulsanti e tre diversi tab: *Generale*, *Carico* e *Analitica*. 
+La ventana se compone de botones y tres pestañas diferentes: *generale*, *carico* y *analitica*.
 
-### Generale
+### General (Generale)
 
-**Gestione doppia unità misura**: solo se questo flag è attivato, il sistema può gestire l'unità di misura alternativa nei DDT di acquisto.
+**gestione doppia unità misura**: solo si este indicador está activado, el sistema puede gestionar la unidad de medida alternativa en los DDT de compra.
 
-**Proposta automatica UM alternativa:** se attivato, viene proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato.
+**Propuesta automática de UM alternativa (Proposta automatica UM alternativa)**: si está activado, se propone la cantidad relativa a la unidad de medida alternativa, siempre que en el registro del artículo se haya establecido una por defecto. Este indicador solo se puede activar si el indicador anterior ha sido activado.
 
-**Costo zero in assenza di listini**: se attivo, in assenza di un listino valido popola il prezzo con il valore zero. Nel caso in cui questa voce non fosse spuntata, il campo sarebbe valorizzato con il costo ultimo dell'articolo, se presente.
+**costo zero in assenza di listini**: si está activo, en ausencia de un listado válido, se establece el precio con el valor cero. Si esta opción no está marcada, el campo se llenará con el último costo del artículo, si está presente.
 
-**Permetti DDT con stesso numero e fornitore:** se attivo, permette l'inserimento di due DDT per lo stesso fornitore con lo stesso numero. È consigliato lasciare disattivato questo flag per permettere al sistema di fare il controllo di univocità.
+**permetti ddt con stesso numero e fornitore**: si está activo, permite la inserción de dos DDT para el mismo proveedor con el mismo número. Se recomienda dejar este indicador desactivado para permitir que el sistema realice el control de unicidad.
 
-**Lotti e S.N. (Serial Number) obbligatori:** se attivo obbliga l'utente ad inserire a livello di riga articolo il lotto ed il serial number per tutti gli articoli per cui è prevista questa gestione. Se non attivo, il lotto ed il serial number non risultano dati obbligatori e sarà possibile salvare il documento anche senza averli inseriti. Si consiglia l'accensione di questo flag qualora si utilizzi la gestione articoli con lotto.
+**Lotes y S.N. (Serial Number) obligatorios (Lotti e S.N. (Serial Number) obbligatori)**: si está activo, obliga al usuario a ingresar a nivel de línea de artículo el lote y el número de serie para todos los artículos para los cuales se prevé esta gestión. Si no está activo, el lote y el número de serie no serán datos obligatorios y será posible guardar el documento incluso sin haberlos ingresado. Se aconseja activar este indicador si se utiliza la gestión de artículos con lote.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: se attivo, il prezzo dell'articolo inserito nella riga ordine fornitore verrà ricercato in tutti i listini predefiniti dell'anagrafica fornitore, oltre al listino di default. Se non attivo, il prezzo dell'articolo verrà ricercato solo nel listino di default presente nella testata dell'ordine, ma non negli altri listini per lo stesso fornitore aventi date di validità diverse.
+**ricerca prezzi articoli in tutti i listini predefiniti**: si está activo, el precio del artículo ingresado en la línea de la orden de proveedor se buscará en todos los listados predeterminados del registro del proveedor, además del listado por defecto. Si no está activo, el precio del artículo se buscará solo en el listado por defecto presente en el encabezado de la orden, pero no en otros listados del mismo proveedor que tengan fechas de validez diferentes.
 
-**Consentire sconti per articoli omaggio**: se attivo, permette l'inserimento di sconti sulle righe articolo di tipo omaggio.
+**Permitir descuentos para artículos de regalo (Consentire sconti per articoli omaggio)**: si está activo, permite la inserción de descuentos en las líneas de artículo de tipo regalo.
 
-**Uso articolo fornitore**: se attivo, nella griglia articoli del DDT viene proposto anche il campo per inserire il codice articolo fornitore.
+**uso articolo fornitore**: si está activo, en la cuadrícula de artículos del DDT se propone también el campo para ingresar el código de artículo del proveedor.
 
-**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli inseriti nel DDT ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) il flag *In esaurimento* è attivo.
+**verifica articoli in esaurimento**: si está activado, el sistema hace un control sobre la disponibilidad de los artículos ingresados en el DDT y avisa si el artículo está en agotamiento, es decir, si en la [ficha del artículo (anagrafica dell'articolo)](/docs/erp-home/registers/items/create-new-item) el indicador *in esaurimento* está activo.
 
-**Contabilizzazione imballi**: consente di poter contabilizzare, in contabilità generale, anche le righe con articoli di natura imballo che solitamente vengono gestiti per avere la verifica delle giacenze degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
+**contabilizzazione imballi**: permite contabilizar, en contabilidad general, también las líneas con artículos de naturaleza de envase que suelen ser gestionados para tener la verificación de los stocks de los [Envases a devolver (Imballi a rendere)](/docs/configurations/tables/logistics/package-to-be-returned).
 
-**Mantieni prezzi da ordini per gli scaglioni**: è utilizzato nella procedura di evasione degli ordini in DDT nel caso in cui la quantità evasa sia diversa (solitamente parziale) rispetto alla quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
+**mantieni prezzi da ordini per gli scaglioni**: se utiliza en el procedimiento de cumplimiento de órdenes en DDT en caso de que la cantidad cumplida sea diferente (normalmente parcial) a la cantidad ordenada para la cual se ha ingresado un precio o un descuento por escalón de cantidad. Si el precio o el descuento no dependen de la cantidad entregada sino solo de la cantidad en orden, este indicador debe activarse; si en cambio el precio o descuento por escalón no debe ser incluido en el documento de entrega en caso de que el cumplimiento no se realice por la cantidad total de la orden, el indicador no debe activarse.
 
-**Attiva il Controllo Qualità**: work in progress.
+**Activar el Control de Calidad (Attiva il Controllo Qualità)**: en progreso.
 
-**Ricalcola trasporto**: se attivo, calcola il peso e volume dai valori di anagrafica articoli sul documento, impostando il valore del trasporto in automatico. Se non attivo, il costo del trasporto del DDT dovrà essere calcolato manualmente poiché non verrà proposto.
+**ricalcola trasporto**: si está activo, calcula el peso y volumen a partir de los valores del registro de artículos en el documento, estableciendo automáticamente el valor del transporte. Si no está activo, el costo del transporte del DDT deberá calcularse manualmente ya que no se propondrá.
 
-**Def U.M. volume:** indica l'unità di misura di default per il volume quando si calcola il trasporto del DDT.
+**Def U.M. volumen (Def U.M. volume)**: indica la unidad de medida por defecto para el volumen al calcular el transporte del DDT.
 
-**Def. U.M. pesi:** indica l'unità di misura di default per il peso quando si calcola il trasporto del DDT.
+**def. u.m. pesi**: indica la unidad de medida por defecto para el peso al calcular el transporte del DDT.
 
-### Carico
+### Carga (Carico)
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data del DDT. Se non attivo, la registrazione viene effettuata con la *Data carico* indicata nella testata del DDT, se presente, altrimenti con la *Data registrazione magazzino* indicata nella procedura di [Registrazione DDT di acquisto in magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse). Se la registrazione viene effettuata dall'interno del DDT mediante il pulsante *Carico automatico nel magazzino* e la *Data carico* non è inserita sarà usata la data odierna.
+**crea registrazione con la data del documento**: si está activo, el registro de almacén se realiza con la misma fecha del DDT. Si no está activo, el registro se realizará con la *data carico* indicada en el encabezado del DDT, si está presente, de lo contrario con la *data registrazione magazzino* indicada en el procedimiento de [Registro de DDT de compra en almacén (Registrazione DDT di acquisto in magazzino)](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse). Si el registro se realiza desde dentro del DDT mediante el botón *carico automatico nel magazzino* y la *data carico* no está ingresada, se utilizará la fecha actual.
 
-**Priorità magazzino e causale di carico**: se attivo, al momento della registrazione del DDT a magazzino vengono usati i valori impostati nei campi sottostanti: **Magazzino** e **Causale magazzino**. Se il flag non è attivo, il magazzino e la causale di carico vengono letti dalle righe del DDT. Qualora non fossero presenti sulle righe del DDT non sarà possibile effettuare il Carico automatico dall'interno della bolla di acquisto, ma si potrà effettuare la registrazione del DDT mediante appostita procedura (vedi [Registrazione DDT di acquisto in magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse)) selezionando nel tab *Parametri* il flag "*Accettare come magazzino e causale i seguenti dati:*" e indicando *Magazzino* e *Causale* da utilizzare. 
+**priorità magazzino e causale di carico**: si está activo, al momento del registro del DDT en el almacén se utilizan los valores establecidos en los campos a continuación: **magazzino** y **causale magazzino**. Si el indicador no está activo, el almacén y la causal de carga se leen desde las líneas del DDT. Si no están presentes en las líneas del DDT, no será posible realizar la Carga automática desde dentro de la factura de compra, pero se podrá registrar el DDT a través del procedimiento específico (ver [Registro de DDT de compra en almacén (Registrazione DDT di acquisto in magazzino)](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse)) seleccionando en la pestaña *parametri* el indicador "*Aceptar como almacén y causal los siguientes datos:*" e indicando *magazzino* y *causale* a utilizar.
 
-**Carico/Scarico automatico**: se attivo, al momento dell'attivazione del flag *Controllata* in testata del documento si riceverà un messaggio che ricorda che il parametro di carico/scarico automatico è attivo e chiede se si desidera procedere. Premendo "*Sì*" il DDT verrà caricato a magazzino, altrimenti sarà possibile caricarlo successivamente premendo il pulsante *Carico automatico nel magazzino* posto nella ribbon bar. 
+**carico/scarico automatico**: si está activo, al momento de activar el indicador *controllata* en el encabezado del documento, se recibe un mensaje recordando que el parámetro de carga/descarga automática está activo y pregunta si se desea proceder. Al presionar "*sì*", el DDT se cargará en el almacén; de lo contrario, será posible cargarlo más tarde presionando el botón *carico automatico nel magazzino* en la barra de ribbon.
 
-**Avviso articoli fittizi**: se attivo, durante il carico del DDT viene controllato se sono presenti degli articoli fittizi. Se sono presenti viene dato un messaggio per il completamento della procedura; se la risposta è affermativa tutto il DDT verrà caricato (ad eccezione degli articoli fittizi ovviamente). Rispondendo di no, il DDT non verrà caricato. L'articolo fittizio può essere senza distinta base di primo livello se nei parametri MRP è dichiarato con tipo approvvigionamento di acquisto altrimenti la registrazione di carico darà un messaggio di errore nel caso ci siano degli articoli fittizi nel documento da caricare.
+**avviso articoli fittizi**: si está activo, durante la carga del DDT se controla si hay artículos ficticios presentes. Si están presentes, se da un mensaje para completar el procedimiento; si la respuesta es afirmativa, todo el DDT se cargará (excepto los artículos ficticios, por supuesto). Si se responde que no, el DDT no se cargará. El artículo ficticio puede estar sin lista de materiales de primer nivel si en los parámetros MRP está declarado con tipo de aprovisionamiento de compra; de lo contrario, el registro de carga dará un mensaje de error si hay artículos ficticios en el documento a cargar.
 
-### Analitica
+### Analítica (Analitica)
 
-In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga DDT.
+En esta pestaña se especifica con qué prioridad recuperar el centro de costos (CdC) o centro de beneficios (CdP) en la línea del DDT.
 
-È possibile modificare le priorità utilizzando i seguenti pulsanti nella ribbon bar:
+Es posible modificar las prioridades utilizando los siguientes botones en la barra de ribbon:
 
-> **Sposta su**       
-> **Sposta giù**.
+> **sposta su**  
+> **sposta giù**.
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo* e successivamente a livello di *Magazzino*.
+*Valores predeterminados (Valori di default)*: el CDC o CDP se recupera del tipo de facturación si está presente. Para más detalles, consulte la tabla [Tipo de Facturación de Compras (Tipo Fatturato Acquisti)](/docs/configurations/tables/purchase/purchase-invoices-type). Si no está presente en el tipo de facturación, el sistema lo buscará en *Registro del proveedor (Anagrafica fornitore)*. Si no está presente, se buscará en *anagrafica articolo* y posteriormente a nivel de *magazzino*.
 
-**Ricalcolo**: se attivo, ricalcola i centri di costo/profitto secondo la priorità scelta.
+**ricalcolo**: si está activo, recalcula los centros de costos/profitos según la prioridad elegida.
 
-**Valuta la priorità su ogni dimensione**: se attivo, questo flag permette di valutare ogni priorità inserita nella parte superiore per capire se ci sono ulteriori dimensioni non ancora valorizzate. Ad esempio, supponiamo di avere nell'Anagrafica articolo il centro di costo della dimensione *Business unit* e nel Tipo fatturato acquisti la dimensione *Direzionale*. Se il flag non è attivo il sistema valuta solo il CdC presente nell'Anagrafica articolo; se il flag è attivo, dopo aver caricato il CdC presente nell'Anagrafica articolo il sistema valuta anche la dimensione presente nel Tipo fatturato acquisti (nel nostro esempio la dimensione *Direzionale*) e se è diversa da quelle che ha già gestito (*Business Unit*) carica il centro e prosegue con la verifica delle altre priorità.
+**valuta la priorità su ogni dimensione**: si está activo, este indicador permite evaluar cada prioridad ingresada en la parte superior para entender si hay dimensiones adicionales que aún no se han valorado. Por ejemplo, supongamos que en el Registro del artículo se tiene el centro de costos de la dimensión *Unidad de negocio (Business unit)* y en el Tipo de facturación de compras la dimensión *direzionale*. Si el indicador no está activo, el sistema solo evalúa el CdC presente en el Registro del artículo; si el indicador está activo, después de cargar el CdC presente en el Registro del artículo, el sistema también evalúa la dimensión presente en el Tipo de facturación de compras (en nuestro ejemplo, la dimensión *Direccional*) y si es diferente de las que ya ha gestionado (*Unidad de negocio (Business Unit)*), carga el centro y continúa con la verificación de las otras prioridades.

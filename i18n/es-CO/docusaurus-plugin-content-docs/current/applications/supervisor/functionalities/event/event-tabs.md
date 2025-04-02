@@ -1,45 +1,43 @@
 ---
-title: Tabs dell'Evento
-sidebar_label: Tabs dell'Evento
+title: Pestañas del Evento (Tabs dell'Evento)
+sidebar_label: Pestañas del Evento (Tabs dell'Evento)
 sidebar_position: 1
 ---
 
 :::info Info
-La form di dettaglio dell'*Evento* si compone:
-* Di un ribbon menu con cui è possibile salvare, create o eseguire un evento, gestire i profili e festire eventuali parametri.  
-* Informazioni di testata, in cui impostare codice, task da eseguire e gruppo di riferimento con informazioni obbligatorie.
-* Tre tab per la gestione dei parametri legati al task, il log di esecuzione e i parametri di schedulazione.
+El formulario de detalle del *evento* se compone:
+* De un menú de cinta con el cual es posible guardar, crear o ejecutar un evento, gestionar los perfiles y ajustar los parámetros si es necesario.  
+* Información de encabezado, donde establecer el código, la tarea a realizar y el grupo de referencia con información obligatoria.
+* Tres pestañas para la gestión de los parámetros relacionados con la tarea, el registro de ejecución y los parámetros de programación.
 :::
 
-### Tab Parametri
-Il tab Parametri permette di gestire i parametri di input dell'evento.
-Tramite la colonna Task Parameter si ha accesso alla lista di parametri del task selezionato, si procede associando un codice e un nome da Dizionario.
+### Pestaña Parámetros (Tab Parametri)
+La pestaña Parámetros permite gestionar los parámetros de entrada del evento.  
+A través de la columna *Parámetro de Tarea (Task Parameter)* se tiene acceso a la lista de parámetros de la tarea seleccionada, procediendo a asociar un código y un nombre del Diccionario.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor12.png)
 
-### Tab Logs
-Il tab LOG permette di visualizzare il log di esecuzione del task, sia per le esecuzione schedulate che per quelle
-manuali.
+### Pestaña Registros (Tab Logs)
+La pestaña LOG permite visualizar el registro de ejecución de la tarea, tanto para las ejecuciones programadas como para las manuales.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor13.png)
 
+### Pestaña Programaciones (Tab Schedulazioni)
+La pestaña PROGRAMACIONES permite programar a través del botón dedicado la ejecución del evento.  
+El popup permite definir el tipo de ocurrencia con la respectiva parametrización de detalle, distinguiendo entre:
 
-### Tab Schedulazioni
-Il tab SCHEDULES permette di schedulare tramite il pulsante dedicato l'esecuzione dell'evento.
-il popup permette di definire il tipo di occorrenza con la relativa parametrizzazione di dettaglio distinguendo tra:
+**una volta**  
+> Permite indicar la fecha/hora exacta para la ejecución.
 
-**Una volta**
-> Permette di indicare data/ora esatti per l'esecuzione.
+**giornaliero**  
+> Permite indicar la hora de inicio, cada cuántos días repetir a lo largo del día y en qué intervalo horario.
 
-**Giornaliero**
-> Permette di indicare l'ora di avvio, ogni quanti giorni ripetere nel corso della giornata e in quale intervallo orario.
+**settimanale**  
+> Permite una planificación semanal, donde además de las configuraciones de ejecución diaria, podemos definir cuántas semanas repetir e indicar los días exactos de la semana.
 
-**Settimanale**
-> Permette una pianificazione settimanale, in cui oltre alle impostazioni su esecuzione giornaliera possiamo definire per quante settimane ripetere e indicare i giorni esatti della settimana.
+**mensile**  
+> Permite una planificación mensual indicando los meses en los que repetir, los días del mes, etc.
 
-**Mensile**
-> Permette una pianificazione mensile indicando i mesi in cui ripetere, i giorni del mese etc.  
-
-Infine, sarà possibile indicare un’eventuale data di fine esecuzione con il flag End date e decidere se abilitare o meno il task in automatico.
+Finalmente, será posible indicar una fecha de fin de ejecución con el indicador *Fecha de fin (End date)* y decidir si habilitar o no la tarea automáticamente.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor14.png)

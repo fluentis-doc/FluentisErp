@@ -1,24 +1,24 @@
 ---
-title: Panoramica
-sidebar_label: Panoramica
+title: Panorama (Panoramica)
+sidebar_label: Panorama (Panoramica)
 sidebar_position: 0
 ---
 
-**Supervisor** è uno strumento che consente di creare scripts che possono essere eseguiti in maniera schedulata.  
-In particolare, è composto da quattro componenti distinti - i quali possono essere creati e riutilizzati dall'utente - che sono: 
+**Supervisor (Supervisor)** es una herramienta que permite crear scripts que pueden ser ejecutados de manera programada.  
+En particular, se compone de cuatro componentes distintos - los cuales pueden ser creados y reutilizados por el usuario - que son: 
 
-- [x] Attività
+- [x] Actividades (Attività)
 
-- [x] Tasks
+- [x] Tareas (Tasks)
 
-- [x] Eventi
+- [x] Eventos (Eventi)
 
-- [x] Liste di Distribuzione
+- [x] Listas de Distribución (Liste di Distribuzione)
 
-Il modulo di *Supervisor* si apre dal menu complementare (posizionato sulla parte destra dell'interfaccia) **Strumenti** > **Fluentis Supervisor**.
+El módulo de *Supervisor (Supervisor)* se abre desde el menú complementario (posicionado en la parte derecha de la interfaz) **strumenti** > **Fluentis Supervisor**.
 
-:::danger Attenzione
-Il modulo di Supervisor è visibile nel menù complementare *Strumenti* solo se il menù **Fluentis Universal** è selezionato.
+:::danger Atención (Attenzione)
+El módulo de Supervisor es visible en el menú complementario *strumenti* solo si el menú **Fluentis Universal** está seleccionado.
 :::
 
 ![alt text](/img/it-it/applications/supervisor/supervisor1.png)

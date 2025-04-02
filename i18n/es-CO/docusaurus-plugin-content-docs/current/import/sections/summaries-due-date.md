@@ -1,22 +1,21 @@
-Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento.  
-- **Numero**: valore progressivo della riga.  
-- **Pagamento**: rappresenta il codice alfanumerico del *Tipo pagamento* ripreso dalla *Testata del documento > tab Pagamenti*.  
-- **Importo**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
-- **Data scadenza**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
-- **Spese di incasso**: Campo in cui riportate le spese di incasso calcolate.
-- **IVA**: da applicare alle spese di incasso (può essere impostata anche manualmente)
-- **Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
-- **Conto sottoconto cliente / fornitore** conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
-- **N. ricevuta**: Un eventuale numero della ricevuta per i soldi ricevuti
-- **Singolo**: attiva la contabilizzazione della chiusura scadenze nella scrittura automatizzata
-- **Tipo sconto**: Tipo di sconto finanziario
-- **Valore sconto**: Valore dello sconto finanziario su incasso
-- **Dettaglio dichiarazioni**: È il riferimento alla dichiarazione di intento. L’iva applicata alle spese incasso potrebbe essere sempre un’iva plafond, quindi è necessario poter inserire anche qui la dich. di intento collegata (come per le righe articolo e le righe spese)
+Representa el resumen de las fechas de vencimiento del documento, para cada *tipo* y *solución* de pago.  
+- **numero**: valor progresivo de la línea.  
+- **pagamento**: representa el código alfanumérico del *Tipo de pago* extraído del *Encabezado del documento > pestaña Pagos (Testata del documento > tab Pagamenti)*.  
+- **importo**: Importe de la fecha de vencimiento calculado. Puede ser forzado manualmente, en cuyo caso se activa automáticamente el siguiente indicador *modifica manuale*. (Se activan automáticamente controles y avisos sobre la cuadratura entre los valores de las fechas de vencimiento y el total de la factura)  
+- **data scadenza**: Fecha de vencimiento calculada. Puede ser forzada manualmente, en cuyo caso se activa automáticamente el siguiente indicador *modifica manuale*.  
+- **spese di incasso**: Campo en el que se reportan los gastos de cobro calculados.  
+- **iva**: a aplicar a los gastos de cobro (también puede configurarse manualmente)  
+- **Causa de pago (Causale pagamento)**: es posible insertar directamente en factura una causa contable que dé lugar a un asiento automático de cobro/pago. NB tener cuidado con la plantilla de la causa porque utilizará las cuentas presentes incluso sin subcuenta, razón por la cual existe el siguiente campo.  
+- **Cuenta subcuenta cliente/proveedor (Conto sottoconto cliente / fornitore)**: cuenta que se utiliza para cobrar/pagar (caja o banco, por ejemplo) la fecha de vencimiento sobreescribiendo la cuenta presente en la causa contable de pago (o cobro)  
+- **n. ricevuta**: Un posible número de recibo para el dinero recibido  
+- **singolo**: activa la contabilización del cierre de fechas de vencimiento en el asiento automatizado  
+- **tipo sconto**: Tipo de descuento financiero  
+- **valore sconto**: Valor del descuento financiero sobre el cobro  
+- **dettaglio dichiarazioni**: Es la referencia a la declaración de intención. El IVA aplicado a los gastos de cobro podría ser siempre un IVA de techo, por lo que es necesario poder insertar aquí la declaración de intención asociada (como para las líneas de artículo y las líneas de gastos)  
 
-**FATTURE D'ACQUISTO:**
+**FACTURAS DE COMPRA (FATTURE D'ACQUISTO):**
 
-- **Segno**: solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato
-- **Modelli riferimento pagamento**: Modello di creazione del codice di pagamento. In alcune localizzazioni estere ogni scadenza in fattura prevede un codice attribuito da chi fattura: questo codice è strutturato secondo alcuni modelli specifici (tabella MB_PaymentReferenceModels), in modo da poter costruire il codice con un algoritmo.
-- **Codici modelli pagamento**: Questo è il codice (strutturato come da modello precedente) da riportare nella partita e quindi poi nei pagamenti che si inviano alla banca, in modo che questa comunichi al beneficiario qual è la scadenza che è stata pagata (e così automatizzare l’import dai movimenti bancari con chiusura partita). Da qui viene compilato dentro la partita e nel file Sepa.
-- **Data limite pag anticipato** Questo è un campo previsto nel tracciato fatture Sdi, la data limite per poter applicare lo sconto finanziario.
-
+- **segno**: solo las fechas de vencimiento que tienen este indicador se gestionan luego en pago con causa y cuenta establecida  
+- **Modelos de referencia de pago (Modelli riferimento pagamento)**: Modelo de creación del código de pago. En algunas localizaciones extranjeras cada fecha de vencimiento en la factura prevé un código atribuido por quien factura: este código está estructurado según algunos modelos específicos (tabla MB_PaymentReferenceModels), de manera que se pueda construir el código con un algoritmo.  
+- **Códigos de modelos de pago (Codici modelli pagamento)**: Este es el código (estructurado como el modelo anterior) que se debe reportar en la partida y, por lo tanto, en los pagos que se envían al banco, para que este comunique al beneficiario cuál es la fecha de vencimiento que fue pagada (y así automatizar la importación de los movimientos bancarios con el cierre de la partida). Desde aquí se compila dentro de la partida y en el archivo Sepa.  
+- **Fecha límite para pago anticipado (Data limite pag anticipato)**: Este es un campo previsto en el trazo de facturas Sdi, la fecha límite para poder aplicar el descuento financiero.

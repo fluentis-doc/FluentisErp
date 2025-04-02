@@ -1,40 +1,40 @@
 ---
-title: Evasione da ordine
+title: Cumplimiento del pedido (Evasione da ordine)
 sidebar_position: 1
 ---
 
-Nella testata del DDT di consegna, premendo il pulsante **Consegne Previste** si aprirà la form dove è possibile filtrare gli ordini relativi al cliente del documento.
+En el encabezado del DDT de entrega, al presionar el botón **consegne previste** se abrirá el formulario donde es posible filtrar los pedidos relacionados con el cliente del documento.
 
-Tramite questa procedura è possibile creare un DDT di consegna dall'evasione del relativo ordine. E' quindi possibile inserire gli articoli all'interno del DDT, evadendo totalmente o parzialmente un intero ordine o una riga.
+A través de este procedimiento, es posible crear un DDT de entrega a partir del cumplimiento del pedido correspondiente. Así, es posible insertar los artículos dentro del DDT, cumpliendo total o parcialmente un pedido completo o una línea.
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
+Para poder utilizar este procedimiento, hay algunas condiciones iniciales que deben cumplirse:
 
- -  i/il fornitore degli ordini deve essere lo stesso del DDT;
- -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato*;
- -  i tipi documento devono essere compatibili.
+ - el proveedor de los pedidos debe ser el mismo que el del DDT;  
+ - el pedido que se desea cumplir debe tener activada la opción *stampato*;  
+ - los tipos de documento deben ser compatibles.
 
-*Procedimento*:
+*Procedimiento*:
 
-I filtri per fornitore e divisa verranno riportati in automatico in base al fornitore selezionato nel DDT.
+Los filtros para proveedor y moneda se llenarán automáticamente según el proveedor seleccionado en el DDT.
 
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verrà visualizzata nella griglia una riga per ciascun ordine stampato e non evaso oppure evaso parzialmente.
+Una vez establecidos todos los *Filtros* deseados, al hacer clic en el botón de *ricerca*, se mostrará en la cuadrícula una fila por cada pedido impreso y no cumplido, o cumplido parcialmente.
 
-:::note AVVISO
-La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni presenti nell'ordine, anche se queste attualmente sono cambiate.
+:::note AVISO
+El procedimiento toma todos los datos presentes en el pedido, y como consecuencia se aplicarán las condiciones presentes en el pedido, incluso si estas han cambiado actualmente.
 :::
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+En la cuadrícula de resultados, el usuario tiene la posibilidad de:
 
- 1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
- 2. selezionare solo *alcuni* degli *articoli* proposti. Per farlo basterà selezionare il flag presente all'inizio della riga articolo.
- 3. selezionare solo *alcuni articoli* ma solo per una *determinata quantità*. In questo caso dovrà andare a modificare la quantità da evadere.
+ 1. seleccionar el *pedido completo (ordine per intero)*. Para hacerlo, basta con marcar el indicador al comienzo de la fila del pedido.  
+ 2. seleccionar solo *algunos* de los *articoli* propuestos. Para hacerlo, basta con marcar el indicador al comienzo de la fila del artículo.  
+ 3. seleccionar solo *algunos artículos*, pero solo por una *cantidad determinada (determinata quantità)*. En este caso, deberá modificar la cantidad a cumplir.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante **Trasferimento**, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.
+Para completar el procedimiento, se deberá hacer clic en el botón **trasferimento**, que tomará todos los datos presentes en el pedido y los llevará al DDT.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Ricerca** permette di applicare i filtri di ricerca all'intero del database degli ordini inseriti e non ancora evasi o solo parzialmente evasi.  
-> **Trasferimento** permette di trasferire nella griglia del tab Consegne del DDT di conto lavoro gli articoli selezionati nella finestra sottostante.  
-> **Esplodi** permette di espandere l'intero albero degli ordini nella griglia sottostante, per visualizzare gli articoli contenuti in essi.  
-> **Comprimi** permette di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe ordine.  
-> **Seleziona tutti** permette di selezionare tutti gli articoli dalla lista.  
+> **ricerca** permite aplicar los filtros de búsqueda a toda la base de datos de pedidos ingresados y no cumplidos o solo parcialmente cumplidos.  
+> **trasferimento** permite transferir a la cuadrícula de la pestaña de Entregas del DDT de trabajo los artículos seleccionados en la ventana inferior.  
+> **esplodi** permite expandir todo el árbol de pedidos en la cuadrícula inferior, para visualizar los artículos contenidos en ellos.  
+> **comprimi** permite comprimir la visualización de las filas de artículos y solo mostrar las filas de pedidos.  
+> **seleziona tutti** permite seleccionar todos los artículos de la lista.

@@ -1,33 +1,33 @@
 ---
-title: Tipi controllo prova
+title: tipi controllo prova
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi controllo prova**.
+La tabla se encuentra en la ruta **tipi controllo prova**.
 
-In questa tabella è possibile codificare le diverse tipologie di controlli sulle prove da effettuare.   
-Alcuni esempi di utilizzo dei *Tipi controllo prova* li troviamo nelle gestioni:
-> **Tipi prova**;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+En esta tabla es posible codificar las diferentes tipologías de controles sobre las pruebas a realizar.  
+Algunos ejemplos de uso de los *tipi controllo prova* los encontramos en las gestiones:  
+> **tipi prova**;  
+> **piani di controllo** - en la pestaña *prove pianificate*;  
+> **Control de artículos (Controllo articoli)** - en la pestaña *prove*;  
+> **certificati di analisi** - en la pestaña *Controles y valores detectados > Valores detectados (Controlli e valori rilevati > Valori rilevati)*;  
+> **M.E.S.** - en la pestaña *Controles de calidad > Pruebas (Controlli qualità > Prove)*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi controllo prova**
+**Búsqueda de tipi controllo prova (Ricerca Tipi controllo prova)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi controllo prova**
+**Inserción de tipi controllo prova (Inserimento Tipi controllo prova)**
 
-Per poter inserire nuovi *Tipi norme e leggi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi norme e leggi* es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*:  
 
-> **Tipo controllo prova**: è il codice del *Tipo controllo prova*.   
-> **Descrizione tipo controllo prova**: è la descrizione del *Tipo controllo prova*.   
-> **Note**: annotazioni libere.
+> **tipo controllo prova**: es el código del *tipo controllo prova*.  
+> **descrizione tipo controllo prova**: es la descripción del *tipo controllo prova*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidad, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,38 +1,38 @@
 ---
-title: Parametri raggruppamento DDT di acquisto
+title: parametri raggruppamento ddt di acquisto
 sidebar_position: 10
 ---
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Los parámetros de agrupamiento permiten definir cómo dividir los documentos durante los procedimientos de cumplimiento. Para tal fin, es posible utilizar indicadores específicos para agrupar los documentos según diversas propiedades, como la categoría, el tipo de documento u otras características relevantes.  
+Estos parámetros generales de agrupamiento deben configurarse una sola vez y se aplicarán automáticamente a todos los procedimientos, siendo válidos para todos los clientes y proveedores. Sin embargo, si un cliente o proveedor requiere un comportamiento diferente al establecido en los parámetros generales, será necesario personalizar los parámetros de agrupamiento dentro de su registro específico.  
+De esta manera, se garantiza una gestión flexible y adaptable de los cumplimientos, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, mientras se mantiene una configuración centralizada y coherente para la mayoría de las operaciones.
 
-In questa maschera vengono decise le regole di raggruppamento per la procedura di [**Evasione da ordini**](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).  
+En esta pantalla se deciden las reglas de agrupamiento para el procedimiento de [**Cumplimiento de pedidos**](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).  
 
-E' necessario selezionare le colonne che prevedono i raggruppamenti che si vogliono prevedere per queste evasioni. 
+Es necesario seleccionar las columnas que prevén los agrupamientos que se desean establecer para estos cumplimientos. 
 
 :::note Nota
-Se nell'anagrafica del fornitore, nel tab *Parametri raggruppamento per cliente/fornitore*, sono state inserite delle condizioni di raggruppamento differenti, queste avranno priorità rispetto ai parametri generali.
+Si en el registro del proveedor, en la pestaña *Parámetros de agrupamiento por cliente/proveedor*, se han establecido condiciones de agrupamiento diferentes, estas tendrán prioridad sobre los parámetros generales.
 :::
 
-Quando il DDT viene creato a partire da un unico ordine vengono riportati tutti i dati di testata presenti nel documento di partenza. Per i DDT creati da più ordini invece, vengono riportati i dati dell'anagrafica fornitore.    
+Cuando se crea un DDT a partir de un único pedido, se trasladan todos los datos de encabezado presentes en el documento de origen. Para los DDT creados a partir de múltiples pedidos, en cambio, se trasladan los datos del registro del proveedor.    
 
-#### Campi specifici
+#### Campos específicos
 
-- **Riepilogativa**: se attivo, al momento dell'evasione ordini sarà creato un unico DDT per fornitore. Se non è attivo sarà sempre creato un DDT per ciascun ordine evaso. Il raggruppamento funziona solo per i *Tipi ordine* (di Acquisto o di Vendita, a seconda dell'operazione selezionata) che hanno codificato lo stesso *Tipo DDT* da creare. Tutti i flag successivi devono essere utilizzati in concomitanza con questo flag.    
+- **riepilogativa**: si está activo, al momento del cumplimiento de pedidos se creará un único DDT por proveedor. Si no está activo, se creará siempre un DDT por cada pedido cumplido. El agrupamiento solo funciona para los *Tipos de pedido* (de Compra o de Venta, dependiendo de la operación seleccionada) que hayan codificado el mismo *Tipo DDT* a crear. Todos los indicadores siguientes deben utilizarse en conjunto con este indicador.  
 
-- **Raggruppamento per tipo documento**: se attivo, saranno raggruppati in un unico DDT tutti i documenti che hanno lo stesso *Tipo ordine*.     
+- **Agrupamiento por tipo de documento (Raggruppamento per tipo documento)**: si está activo, se agruparán en un único DDT todos los documentos que tengan el mismo *Tipo de pedido*.  
 
-- **Raggruppamento per anno**: attivando questo flag sarà effettuato un raggruppamento per anno di creazione degli ordini.   
+- **Agrupamiento por año (Raggruppamento per anno)**: al activar este indicador, se realizará un agrupamiento por año de creación de los pedidos.  
 
-- **Raggruppamento per mese**: per poter effettuare un raggruppamento per mese di creazione degli ordini è necessario attivare anche il flag precedente.    
+- **Agrupamiento por mes (Raggruppamento per mese)**: para poder realizar un agrupamiento por mes de creación de los pedidos, también es necesario activar el indicador anterior.  
 
-- **Raggruppamento per cambio**: se attivo, i documenti con la stessa divisa e stesso cambio saranno raggruppati in un unico DDT.    
+- **Agrupamiento por cambio (Raggruppamento per cambio)**: si está activo, se agruparán los documentos con la misma moneda y el mismo tipo de cambio en un único DDT.  
 
-- **Raggruppamento per ordine**: questo flag viene utilizzato solo per la *Creazione DDT e fatture di vendita da Picking* (vedi [Parametri raggruppamento DDT](/docs/configurations/parameters/sales/dn-grouping) e [fatture](/docs/configurations/parameters/sales/invoice-grouping)).    
+- **Agrupamiento por pedido (Raggruppamento per ordine)**: este indicador se utiliza solo para la *Creación de DDT y facturas de venta desde Picking* (ver [Parámetros de agrupamiento DDT](/docs/configurations/parameters/sales/dn-grouping) y [facturas](/docs/configurations/parameters/sales/invoice-grouping)).  
 
-- **Raggruppamento per progetto**: attivando questo flag sarà effettuato un raggruppamento per progetto. Il raggruppamento funziona anche per i progetti inseriti a livello di riga articolo; se alcune delle righe articolo non hanno un progetto associato sarà creata un DDT diverso per tutti gli articoli che non lo contengono. Quando il progetto è stato inserito nella testata dei documenti di origine esso sarà riportato anche nella testata dei documenti di destinazione, in alternativa sarà mantenuto solo sulle righe articolo.    
+- **Agrupamiento por proyecto (Raggruppamento per progetto)**: al activar este indicador, se realizará un agrupamiento por proyecto. El agrupamiento también funciona para los proyectos insertados a nivel de la línea del artículo; si algunas de las líneas del artículo no tienen un proyecto asociado, se creará un DDT diferente para todos los artículos que no lo contengan. Cuando el proyecto se ha insertado en el encabezado de los documentos de origen, también se trasladará al encabezado de los documentos de destino; en alternativa, se mantendrá solo en las líneas de artículo.  
 
-- **Raggruppamento per tipo e soluzione di pagamento**: attivando questo flag sarà effettuato un raggruppamento sulla base del tipo e della soluzione di pagamento inserito nell'ordine; tale dato sarà riportato nella testata del DDT creato.   
+- **raggruppamento per tipo e soluzione di pagamento**: al activar este indicador, se realizará un agrupamiento basado en el tipo y la solución de pago introducidos en el pedido; dicho dato se trasladará al encabezado del DDT creado.  
 
-- **Raggruppamento per destinazione**: attivando questo flag sarà effettuato un raggruppamento sulla base della destinazione inserita all'interno degli ordini; tale dato sarà riportato nella testata del DDT creato, nel tab *Trasporto*.     
+- **raggruppamento per destinazione**: al activar este indicador, se realizará un agrupamiento basado en el destino informado dentro de los pedidos; dicho dato se trasladará al encabezado del DDT creado, en la pestaña *trasporto*.

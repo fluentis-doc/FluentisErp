@@ -1,32 +1,32 @@
 ---
-title: Parametri prototipazione
+title: Parámetros de prototipado (Parametri prototipazione)
 sidebar_position: 7
 ---
 
-Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione dei prototipi.
+A través de esta ventana se configuran todos los parámetros relacionados con la gestión de prototipos.
 
-**Tipo prototipo articolo**: permette di indicare il tipo di prototipo da utilizzare di defalut;     
+**tipo prototipo articolo**: permite indicar el tipo de prototipo a utilizar por defecto;  
 
-**Versione distinta base e cicli lavoro**: permette di indicare la versione della distinta base e del ciclo che la procedura utilizzerà per esplodere appunto distinte e cicli;   
+**versione distinta base e cicli lavoro**: permite indicar la versión de la lista de materiales y del ciclo que utilizará el procedimiento para desglosar precisamente listas y ciclos;  
 
-**Unità di misura gestionale**: permette di indicare l'unità di misura di default da usare per la creazione di nuovi articoli (NON IMPLEMENTATO);     
+**unità di misura gestionale**: permite indicar la unidad de medida por defecto a usar para la creación de nuevos artículos (NO IMPLEMENTADO);  
 
-**Unità di misura pesi**: permette di indicare l'unità di misura di default del peso da usare per il calcolo del peso netto;    
+**unità di misura pesi**: permite indicar la unidad de medida por defecto del peso a usar para el cálculo del peso neto;  
 
-**Visualizzazione del costo**: permette di indicare il modo in cui deve essere calcolato il costo degli articoli;    
+**visualizzazione del costo**: permite indicar la forma en que debe ser calculado el costo de los artículos;  
 
-**Arrotondamento correzione**: permette di indicare il metodo di arrotondamento della correzione (per eccesso, per difetto o medio);      
+**arrotondamento correzione**: permite indicar el método de redondeo de la corrección (por exceso, por defecto o medio);  
 
-**Calcolo totale costo ricaricato con ricarico su**: nel caso in cui venga selezionata la voce *Costi diretti*, il valore indicato nel **Ricarico** del tab *Costi* nella *Gestione prototipi* verrà applicato solo sul valore del *Costo industriale*, mentre nel caso in cui venga selezionata la voce *Costi totali* il *Ricarico* verrà applicato sul valore del *Totale costi generali*;     
+**calcolo totale costo ricaricato con ricarico su**: en caso de que se seleccione la opción *costi diretti*, el valor indicado en el **ricarico** de la pestaña *costi* en la *Gestión de prototipos (Gestione prototipi)* se aplicará solo sobre el valor del *Costo industrial (Costo industrial)*, mientras que en caso de que se seleccione la opción *costi totali*, el *ricarico* se aplicará sobre el valor del *totale costi generali*;  
 
-**Riferimento offerta**: permette di definire la composizione automatica del *Riferimento offerta* presente nel tab *Costi*;     
+**riferimento offerta**: permite definir la composición automática de la *riferimento offerta* presente en la pestaña *costi*;  
 
-**Aggiornamento listino di vendita**: se abilitato, aggiorna in automatico il prezzo di vendita del listino del cliente preso in considerazione.     
+**Actualización del listado de precios de venta (Aggiornamento listino di vendita)**: si está habilitado, actualiza automáticamente el precio de venta del listado del cliente considerado;  
 
-**Calcolo automatico**:
+**calcolo automatico**:
 
->**Peso netto**: se abilitato calcola in automatico il peso netto dell'articolo;    
+> **peso netto**: si está habilitado, calcula automáticamente el peso neto del artículo;  
 
->**Prezzo di vendita dell'articolo**: se abilitato, aggiorna in automatico il prezzo di vendita dell'articolo;      
+> **prezzo di vendita dell'articolo**: si está habilitado, actualiza automáticamente el precio de venta del artículo;  
 
->**Nuovo prezzo di vendita**: se abilitato, il campo **Nuovo prezzo di vendita** del tab *Costi* nella *Gestione prototipi* verrà calcolato automaticamente e non sarà possibile modificarlo manualmente, mentre se è disabilitato il campo sarà editabile anche manualmente.        
+> **Nuevo precio de venta (Nuovo prezzo di vendita)**: si está habilitado, el campo **Nuevo precio de venta (Nuovo prezzo di vendita)** de la pestaña *costi* en la *Gestión de prototipos (Gestione prototipi)* se calculará automáticamente y no será posible modificarlo manualmente, mientras que si está deshabilitado, el campo será editable manualmente también.

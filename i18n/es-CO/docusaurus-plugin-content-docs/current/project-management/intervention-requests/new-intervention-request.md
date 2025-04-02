@@ -1,92 +1,91 @@
 ---
-title: Nuova Richiesta di Intervento
+title: Nueva Solicitud de Intervención (Nuova Richiesta di Intervento)
 sidebar_position: 2
 ---
 
-In questa form è possibile inserire i dati della **Richiesta di intervento**:
+En este formulario es posible ingresar los datos de la **Solicitud de intervención**:
 
-**Tipo richiesta Intervento**: contiene la [tipologia della richiesta](/docs/configurations/tables/project-management/request-intervention-type/);
+**tipo richiesta intervento**: contiene la [tipología de la solicitud (tipologia della richiesta)](/docs/configurations/tables/project-management/request-intervention-type/);  
 
-**Numero/Data**: contiene il numero e la data della richiesta;
+**numero/data**: contiene el número y la fecha de la solicitud;  
 
-**Cliente**: contiene il cliente a cui è destinata;
+**cliente**: contiene el cliente al que está destinada;  
 
-**Contatto**: contiene l’eventuale *Contatto* a cui è destinata la richiesta, il quale potrebbe ancora non essere cliente;
+**contatto**: contiene el eventual *Contacto* al que está destinada la solicitud, el cual podría no ser aún cliente;  
 
-**Categoria di attività**: indica l’eventuale categoria di attività collegata alla richiesta;
+**categoria di attività**: indica la eventual categoría de actividad relacionada con la solicitud;  
 
-**Anagrafica impianti**: è possibile collegare un impianto alla richiesta;
+**anagrafica impianti**: es posible vincular una instalación a la solicitud;  
 
-**Articolo**: è possibile collegare un articolo; se non indicato, in fase di selezione del progetto viene proposto l'articolo inserito nella riga di progetto. 
+**articolo**: es posible vincular un artículo; si no se indica, durante la selección del proyecto se propondrá el artículo insertado en la línea del proyecto.  
 
-**Progetto**: contiene il [Progetto](/docs/project-management/projects/search-projects-intro/) collegato;
+**progetto**: contiene el [Proyecto (Progetto)](/docs/project-management/projects/search-projects-intro/) vinculado;  
 
-**Ticket**: contiene il ticket della richiesta di intervento, con la relativa severità;
+**ticket**: contiene el ticket de la solicitud de intervención, con la respectiva severidad;  
 
-**SLA**: contiene il livello di Service Level Agreement, necessario per lo studio delle prorità;
+**SLA**: contiene el nivel de Service Level Agreement necesario para el estudio de prioridades;  
 
-**Stato richiesta di intervento**: indica lo stato attuale della richiesta, tra Aperto, Pianificato, Rilasciato o Chiuso;
+**Estado de la solicitud de intervención (Stato richiesta di intervento)**: indica el estado actual de la solicitud, entre Abierto (Aperto), Planificado (Pianificato), Liberado (Rilasciato) o Cerrado (Chiuso);  
 
-**Data conferma**: contiene la data in cui viene confermata la richiesta;
+**data conferma**: contiene la fecha en que se confirma la solicitud;  
 
-**Data chiusura**: contiene l’eventuale data di chiusura della richiesta.
+**data chiusura**: contiene la eventual fecha de cierre de la solicitud.
 
 
-In questa form poi sono presenti delle tab specifiche.
+En este formulario también hay pestañas específicas.
 
-**Tab Risorse**
+**Pestaña Recursos (Tab Risorse)**
 
-Questa tab contiene la risorsa per la quale viene effettuata la richiesta di intervento. Sono inoltre presenti alcune tab che indicano l’obbligatorietà o meno del Tecnico e della Data, ed un flag che indica se l’Attività sia fatturabile. Gli altri dati sono:
+Esta pestaña contiene el recurso por el cual se está realizando la solicitud de intervención. También hay algunas pestañas que indican la obligatoriedad o no del Técnico y de la Fecha, y un indicador que indica si la Actividad es facturable. Los demás datos son:
 
-**Risorsa**: contiene la risorsa codificata in Gestione Progetti > Gestione Risorse;
+**risorsa**: contiene el recurso codificado en Gestión de Proyectos (Gestione Progetti) > Gestión de Recursos (Gestione Risorse);  
 
-**Dipendente**: contiene il conto Dipendente, solitamente coincidente con la risorsa;
+**dipendente**: contiene la cuenta del Empleado, que generalmente coincide con el recurso;  
 
-**Da data richiesta**: contiene data e ora di inizio dell’attività;
+**da data richiesta**: contiene la fecha y hora de inicio de la actividad;  
 
-**Ora inizio pausa**: contiene data e ora di inizio della pausa;
+**ora inizio pausa**: contiene la fecha y hora de inicio de la pausa;  
 
-**Ora fine pausa**: contiene data e ora di fine della pausa;
+**ora fine pausa**: contiene la fecha y hora de fin de la pausa;  
 
-**A data richiesta**: contiene data e ora di fine dell’attività;
+**a data richiesta**: contiene la fecha y hora de fin de la actividad;  
 
-**Tempo effettivo**: contiene il tempo di svolgimento, calcolato dai precedenti dati;
+**tempo effettivo**: contiene el tiempo de ejecución, calculado a partir de los datos anteriores;  
 
-**Descrizione**: contiene una libera descrizione della richiesta.
+**descrizione**: contiene una descripción libre de la solicitud.  
 
-È possibile collegare ulteriori risorse nella griglia **Risorse collegate**.
+Es posible vincular recursos adicionales en la cuadrícula **risorse collegate**.
 
- 
-**Tab Soluzione**
 
-In questa tab è possibile descrivere liberamente la richiesta di intervento negli spazi **Soluzione** e **Nota**. 
+**Pestaña Solución (Tab Soluzione)**
 
-**Tab Stima**
+En esta pestaña es posible describir libremente la solicitud de intervención en los espacios **soluzione** y **nota**.  
 
-In questa tab è presente la stima del Progetto collegato alla Richiesta di intervento. Se non dovesse esserci un collegamento, questi campi sono comunque liberamente modificabili:
+**Pestaña Estimación (Tab Stima)**
 
-**Unità di misura**: indica l’unità di misura da considerare per la quantificazione;
+En esta pestaña se encuentra la estimación del Proyecto vinculado a la Solicitud de intervención. Si no hay un vínculo, estos campos son modificables:
 
-**Listino di vendita**: contiene un eventuale [Listino](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list/) da considerare;
+**unità di misura**: indica la unidad de medida a considerar para la cuantificación;  
 
-**Quantità**: viene indicata la quantità di unità necessaria;
+**listino di vendita**: contiene un eventual [Lista (Listino)](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list/) a considerar;  
 
-**Prezzo netto unitario**: viene indicato il prezzo netto unitario;
+**quantità**: se indica la cantidad de unidades necesarias;  
 
-**Importo totale**: viene indicato l’importo totale.
+**prezzo netto unitario**: se indica el precio neto unitario;  
 
-In fase di selezione del progetto, vengono proposti i seguenti valori: 
+**importo totale**: se indica el importe total.  
 
-- Listino di vendita
+Durante la selección del proyecto, se proponen los siguientes valores:
+
+- Lista de precios
 - Ticket
-- Descrizione
-- Categoria attività 
-- Fatturabile
-- Attività a valore aggiunto
-- Articolo (se non già inserito)
-- Unità di misura se non già inserita
-- Prezzo netto unitario
+- Descripción
+- Categoría de actividad 
+- Facturable
+- Actividad de valor añadido
+- Artículo (si no se ha insertado ya)
+- Unidad de medida si no se ha insertado ya
+- Precio neto unitario
 
-Il prezzo netto unitario viene aggiornato con il valore presente nel progetto se l'articolo è già presente nella richiesta intervento e coincide con l'articolo nel progetto.
-Oppure se l'articolo non è presente nella richiesta intervento e viene assegnato dal progetto, di conseguenza anche il prezzo sarà aggiornato con il valore presente nel progetto.
-
+El precio neto unitario se actualizará con el valor presente en el proyecto si el artículo ya está presente en la solicitud de intervención y coincide con el artículo en el proyecto.  
+O si el artículo no está presente en la solicitud de intervención y se asigna desde el proyecto, por lo tanto, el precio también se actualizará con el valor presente en el proyecto.

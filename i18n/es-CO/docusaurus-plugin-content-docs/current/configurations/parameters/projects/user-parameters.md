@@ -1,18 +1,18 @@
 ---
-title: Parametri per Operatore
+title: parametri per operatore
 sidebar_position: 2
 ---
 
-Questi parametri propongono delle informazioni per singola risorsa:
+Estos parámetros proponen información para cada recurso:
 
-**Operatore**: contiene l’operatore;
+**operatore**: contiene al operador;  
 
-**Risorsa**: contiene l’anagrafica della risorsa con la relativa **Descrizione**;
+**risorsa**: contiene el registro del recurso con la respectiva **descrizione**;  
 
-**Tipo di intervento**: indica il [Tipo di intervento](/docs/configurations/tables/project-management/intervention-type) di default da proporre per questo operatore, con la relativa **Descrizione**;
+**tipo di intervento**: indica el [Tipo de intervención (Tipo di intervento)](/docs/configurations/tables/project-management/intervention-type) predeterminado que se propondrá para este operador, con la respectiva **descrizione**;  
 
-**Tipo attività**: indica la [Tipologia di attività](/docs/configurations/tables/project-management/activity-type) di default da proporre per questo operatore, con la relativa **Descrizione**;
+**tipo attività**: indica la [Tipología de actividad (Tipologia di attività)](/docs/configurations/tables/project-management/activity-type) predeterminada que se propondrá para este operador, con la respectiva **descrizione**;  
 
-**Conto**: è possibile indicare un’anagrafica di default da utilizzare come default nei documenti per questo operatore, con il relativo **Sottoconto** e la relativa **Descrizione**;
+**conto**: es posible indicar un registro predeterminado que se utilizará como tal en los documentos para este operador, con la respectiva **sottoconto** y la respectiva **descrizione**;  
 
-**Progetto**: è possibile indicare un [Progetto](/docs/project-management/projects/search-projects-intro) collegato all’operatore.
+**progetto**: es posible indicar un [Proyecto (Progetto)](/docs/project-management/projects/search-projects-intro) relacionado con el operador.

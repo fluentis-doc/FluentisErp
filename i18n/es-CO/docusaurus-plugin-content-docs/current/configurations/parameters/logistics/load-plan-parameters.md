@@ -1,21 +1,20 @@
 ---
-title: Parametri Piani di Carico
+title: parametri piani di carico
 sidebar_position: 5
 ---
 
-I flag che permettono la parametrizzazione sono:       
+Los indicadores que permiten la parametrización son:       
 
-**Controlla disponibilità**: questo flag permette di inserire una colonna per visualizzare la disponibilità degli articoli;      
-**Verifica disponibilità**: questo flag permette di verificare l'eventuale disponibilità;       
-**Disponibilità obbligatoria**: questo flag impedisce l'evasione di una riga articolo senza disponibilità; si attiva una volta impostato il flag Controlla disponibilità;                  
-**Visualizza disponibilità negativa**: questo flag permette di visualizzare eventuali disponibilità negative; si attiva una volta impostato il flag Controlla disponibilità;     
-**Considera le disponibilità provenienti da:**: è possibile selezionare questi flag se il flag **Controlla disponibilità** è attivo; permette di considerare la disponibilità proveniente dai diversi moduli;      
-**Crea in automatico lista di prelievo dal piani di carico**: campo obsoleto;          
-**Non usare dimensioni**: questo flag non controlla le dimensioni di articoli e UDC per la comparazione con l'[Automezzo](/docs/logistics/motorvehicles/motorvehicle), evitando blocchi nella spedizione. Senza questo flag, se il volume degli articoli è maggiore del volume dell'automezzo il programma ci farà utilizzare più Automezzi.            
-**Visualizza righe articcoli presenti in piani di carico aperti**: questo flag permette di visualizzare (con un colore impostato nel campo 
-**Colore riga in altro piano di carico aperto**) le righe prese in carico da un altro collega nei piani di carico aperti salvati e non;      
-**Proposta ricerca data consegna**: questo campo imposta, nel filtro di ricerca dei piani di carico, le date di consegna da controllare dando la possibilità di sceglire tra: la settimana in corso, da oggi in avanti, oppure nessuna data proposta;         
-**Colore riga disponibile**: in questo campo è possibile inserire il colore con cui visualizzare le righe articolo che hanno disponibilità;       
-**Colore riga non disponibile**: in questo campo è possibile inserire il colore con cui visualizzare le righe articolo che non hanno disponibilità;      
-**Colore riga in altro piano carico**: questo flag colora le righe inserite già in un altro piano di carico salvato;      
-**Colore riga in altro piano carico aperto**: questo flag colora le righe inserite in un altro piano di carico non salvato, quindi magari in uso da un collega.
+**controlla disponibilità**: este indicador permite insertar una columna para visualizar la disponibilidad de los artículos;      
+**verifica disponibilità**: este indicador permite verificar la posible disponibilidad;       
+**disponibilità obbligatoria**: este indicador impide el cumplimiento de una línea de artículo sin disponibilidad; se activa una vez que se ha configurado el indicador Verificar disponibilidad;                  
+**visualizza disponibilità negativa**: este indicador permite visualizar posibles disponibilidades negativas; se activa una vez que se ha configurado el indicador Verificar disponibilidad;     
+**Considerar disponibilidades provenientes de (Considera le disponibilità provenienti da):** es posible seleccionar estos indicadores si el indicador **controlla disponibilità** está activo; permite considerar la disponibilidad proveniente de los diferentes módulos;      
+**Crear automáticamente lista de recogida desde los planes de carga (Crea in automatico lista di prelievo dal piani di carico)**: campo obsoleto;          
+**non usare dimensioni**: este indicador no controla las dimensiones de artículos y UDC para la comparación con el [Vehículo (Automezzo)](/docs/logistics/motorvehicles/motorvehicle), evitando bloqueos en el envío. Sin este indicador, si el volumen de los artículos es mayor que el volumen del vehículo, el programa nos hará utilizar más vehículos.            
+**Visualizar líneas de artículos presentes en planes de carga abiertos (Visualizza righe articcoli presenti in piani di carico aperti)**: este indicador permite visualizar (con un color configurado en el campo **Color de línea en otro plano de carga abierto (Colore riga in altro piano di carico aperto)**) las líneas asumidas por otro colega en los planes de carga abiertos guardados y no guardados;      
+**proposta ricerca data consegna**: este campo establece, en el filtro de búsqueda de los planes de carga, las fechas de entrega a verificar, dando la posibilidad de elegir entre: la semana en curso, desde hoy en adelante, o ninguna fecha propuesta;         
+**colore riga disponibile**: en este campo se puede ingresar el color con el que se visualizarán las líneas de artículos que tienen disponibilidad;       
+**colore riga non disponibile**: en este campo se puede ingresar el color con el que se visualizarán las líneas de artículos que no tienen disponibilidad;      
+**colore riga in altro piano carico**: este indicador colorea las líneas que ya han sido insertadas en otro plano de carga guardado;      
+**colore riga in altro piano carico aperto**: este indicador colorea las líneas que han sido insertadas en otro plano de carga no guardado, posiblemente en uso por un colega.

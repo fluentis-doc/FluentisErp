@@ -1,75 +1,66 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Dal 15 maggio 2019 il Nodo di Smistamento degli Ordini di acquisto (NSO) è disponibile per 
-l'utilizzo sperimentale ai sensi dell'art. 5 del d.m. 7/12/2018 e dal 16 luglio 2019 il sistema è in 
-grado di elaborare, oltre ai Documenti previsti dal processo di Ordinazione semplice, anche tutti i 
-Documenti previsti dai processi di Ordinazione completa e di Ordinazione pre-concordata. 
-Come previsto dalla norma citata, i documenti scambiati non producono effetti giuridici tra le parti.
-Con riferimento ai documenti informatici attestanti l’ordinazione di acquisto, il Decreto del 
-Ministro dell’Economia e delle Finanze 7 dicembre 2018 stabilisce che essi devono essere 
-obbligatoriamente emessi in formato elettronico e trasmessi per il tramite di NSO, con decorrenza 
-dal 1 ottobre 2019.           
-Tutti gli ordini di acquisto della pubblica amministrazione dovranno essere effettuati 
-esclusivamente in formato elettronico e trasmessi per il tramite del Nodo di Smistamento degli 
-Ordini di acquisto (NSO).         
-NSO utilizza l’infrastruttura, già esistente, del Sistema di Interscambio delle fatture elettroniche 
-(SdI) e dialogherà con la Banca Dati Nazionale dei Contratti Pubblici (BDNCP), gestita 
-dall’Autorità Nazionale Anticorruzione (ANAC), affinché sia assicurato che tutti gli ordini di 
-acquisto siano riferiti a contratti a cui risulti regolarmente assegnato il codice identificativo di gara 
-(CIG).
-Le informazioni tratte dai predetti sistemi sono gestite e rese disponibili dalla Piattaforma dei 
-Crediti Commerciali (PCC). 
-Questa soluzione permetterà di utilizzare tutti i canali di trasmissione già in uso per la fatturazione 
-elettronica, a cui è aggiunta la possibilità di usare l’infrastruttura di trasporto definita dalle 
-specifiche PEPPOL (Pan-European Public Procurement Online).
-I documenti trasmessi per il tramite di NSO (ordini, risposte, conferme, revoche) dovranno essere 
-formati rispettando gli standard previsti dalle Business Interoperability Specifications (BIS) di 
-PEPPOL o le loro estensioni nazionali.         
-Attualmente, NSO non gestisce i documenti attestanti l’esecuzione degli acquisti, con l’eccezione 
-della Risposta all’ordine, che si colloca a cavallo tra la fase di Ordinazione e quella di esecuzione. 
-Per tale motivo ogni altro documento attestante l’esecuzione degli acquisti è escluso dall’obbligo 
-di emissione e trasmissione in formato elettronico.
-NSO è una sorta di postino intelligente che gestisce lo scambio, tra clienti e fornitori, degli ordini 
-di acquisto (e gli altri documenti eventualmente occorrenti). Oltre a provvedere al loro recapito, 
-NSO verifica che i documenti trasmessi siano stati correttamente formati e contengano tutte le 
-informazioni necessarie al loro successivo utilizzo per le fasi di fatturazione e pagamento.          
-NSO riceve i Messaggi e controlla che siano correttamente formati. Se tale verifica va a buon fine, 
-li inoltra ai rispettivi Destinatari e, con apposite Notifiche di sistema, informa i Mittenti sull’esito 
-della verifica e del recapito.
-Se il Cliente o il Fornitore interagiscono con NSO per il tramite di un Intermediario, i primi 
-assumono il ruolo di Mittente o di Destinatario, mentre l’Intermediario assume il ruolo di 
-Trasmittente e/o di Ricevente.
+Desde el 15 de mayo de 2019, el Nodo de Clasificación de Pedidos de compra (NSO) está disponible para 
+uso experimental según el art. 5 del d.m. 7/12/2018 y desde el 16 de julio de 2019 el sistema es capaz de elaborar, además de los Documentos previstos en el proceso de Ordenación simple, todos los 
+Documentos previstos por los procesos de Ordenación completa y de Ordenación pre-acordada. 
+Como se establece en la norma mencionada, los documentos intercambiados no producen efectos jurídicos entre las partes.  
+Con respecto a los documentos informáticos que acreditan la ordenación de compra, el Decreto del 
+Ministro de Economía y Finanzas del 7 de diciembre de 2018 establece que deben ser obligatoriamente emitidos en formato electrónico y transmitidos a través del NSO, con efecto a partir del 1 de octubre de 2019.           
+Todos los pedidos de compra de la administración pública deberán realizarse 
+exclusivamente en formato electrónico y transmitirse a través del Nodo de Clasificación de Pedidos de compra (NSO).         
+El NSO utiliza la infraestructura ya existente del Sistema de Intercambio de facturas electrónicas (SdI) y se comunicará con la Base de Datos Nacional de Contratos Públicos (BDNCP), gestionada por 
+la Autoridad Nacional Anticorrupción (ANAC), para asegurar que todos los pedidos de compra se refieran a contratos a los cuales se les haya asignado regularmente el código identificativo de licitación (CIG).
+La información extraída de dichos sistemas es gestionada y puesta a disposición por la Plataforma de Créditos Comerciales (PCC). 
+Esta solución permitirá utilizar todos los canales de transmisión ya en uso para la facturación 
+electrónica, a los que se añade la posibilidad de usar la infraestructura de transporte definida por 
+las especificaciones PEPPOL (Pan-European Public Procurement Online).  
+Los documentos transmitidos a través del NSO (órdenes, respuestas, confirmaciones, revocaciones) deberán estar formados de acuerdo con los estándares previstos por las Business Interoperability Specifications (BIS) de 
+PEPPOL o sus extensiones nacionales.         
+Actualmente, el NSO no gestiona los documentos que acreditan la ejecución de las compras, con la excepción 
+de la Respuesta al pedido, que se sitúa entre la fase de Ordenación y la fase de ejecución. 
+Por ello, cualquier otro documento que acredite la ejecución de las compras está excluido de la obligación 
+de emisión y transmisión en formato electrónico.  
+El NSO es una especie de cartero inteligente que gestiona el intercambio entre clientes y proveedores de los pedidos 
+de compra (y otros documentos que puedan ser necesarios). Además de proporcionar su entrega, 
+el NSO verifica que los documentos transmitidos estén correctamente formados y contengan toda la 
+información necesaria para su uso posterior en las fases de facturación y pago.          
+El NSO recibe los Mensajes y verifica que estén correctamente formados. Si dicha verificación es exitosa, 
+los reenvía a los respectivos Destinatarios y, con notificaciones del sistema, informa a los Remitentes sobre el resultado 
+de la verificación y de la entrega.  
+Si el Cliente o el Proveedor interactúan con el NSO a través de un Intermediario, estos asumen el rol de 
+Remitente o de Destinatario, mientras que el Intermediario asume el rol de 
+Transmisor y/o de Receptor.
 
-## Messaggi NSO
+## Mensajes NSO (Messaggi NSO)
 
-Nel sistema NSO transiteranno “Messaggi”, cioè file, composti da:
-- Busta di trasmissione, la parte del Messaggio che contiene i dati necessari per il corretto 
-indirizzamento; 
-- Documento, la parte del Messaggio, contenente i dati di business (es. Ordine, Risposta, 
-Riscontro), che costituisce il Corpo del messaggio ; 
-Il Documento può essere:
-- Ordine, il Documento con cui il Cliente comunica al Fornitore i beni e/o i servizi che intende 
-acquistare e le relative istruzioni. Un Ordine può essere originario (ordine iniziale) oppure 
-sostituire un Ordine precedente (Ordine sostitutivo) oppure annullare un Ordine precedente 
-(Ordine di revoca) oppure essere collegato da un altro ordine; 
-- Ordine pre - concordato, il Documento, equivalente all’Ordine, ma emesso dal Fornitore in
-accordo con il Cliente. Un Ordine pre-concordato può essere originario (Ordine iniziale) oppure 
-sostituire un Ordine pre-concordato precedente (Ordine sostitutivo) oppure annullare un Ordine 
-pre-concordato precedente (Ordine di revoca); 
-- Risposta, il Documento con cui il Fornitore riceve, accetta, declina o apporta dei cambiamenti 
-(Risposta con modifiche) all’Ordine ricevuto dal Cliente; 
-- Ordine di riscontro, il Documento con cui il Cliente conferma, declina o sostituisce una Risposta 
-o un Ordine pre-concordato del Fornitore;
-I tipi di flusso previsti sono:
-- Ordinazione semplice, il processo di ordinazione, avviato dal Cliente, in cui l’Ordine è emesso e 
-trasmesso in formato elettronico, mentre eventuali altri documenti devono essere prodotti e 
-scambiati nei modi tradizionali (telefono, fax, e-mail, ecc.); 
-- Ordinazione completa, il processo di ordinazione, avviato dal Cliente, in cui l’Ordine è emesso 
-e trasmesso in formato elettronico ed è possibile produrre e scambiare in modalità telematica anche 
-la Risposta e l’Ordine di riscontro; 
-- Ordinazione pre - concordata, il processo di ordinazione, avviato dal Fornitore, in cui l’Ordine 
-pre-concordato è emesso e trasmesso in formato elettronico ed è possibile produrre e scambiare in 
-modalità telematica anche l’Ordine di riscontro.
+En el sistema NSO circularán "Mensajes", es decir, archivos compuestos por:  
+- Sobre de transmisión, la parte del Mensaje que contiene los datos necesarios para el correcto 
+direccionamiento;  
+- Documento, la parte del Mensaje que contiene los datos de negocio (ej. Pedido, Respuesta, 
+Confirmación), que constituye el Cuerpo del mensaje;  
+El Documento puede ser:  
+- Pedido, el Documento con el que el Cliente comunica al Proveedor los bienes y/o servicios que desea 
+adquirir y las instrucciones relacionadas. Un Pedido puede ser original (pedido inicial), 
+reemplazar un Pedido anterior (Pedido sustitutivo) o anular un Pedido anterior 
+(Pedido de revocación), o estar vinculado a otro pedido;  
+- Pedido pre-acordado, el Documento equivalente al Pedido, pero emitido por el Proveedor en
+conformidad con el Cliente. Un Pedido pre-acordado puede ser original (Pedido inicial) o 
+sustituir un Pedido pre-acordado anterior (Pedido sustitutivo) o anular un Pedido 
+pre-acordado anterior (Pedido de revocación);  
+- Respuesta, el Documento con el que el Proveedor recibe, acepta, declina o realiza cambios 
+(Respuesta con modificaciones) al Pedido recibido del Cliente;  
+- Pedido de confirmación, el Documento con el que el Cliente confirma, declina o sustituye una Respuesta 
+o un Pedido pre-acordado del Proveedor;  
+Los tipos de flujo previstos son:  
+- Ordenación simple, el proceso de pedido, iniciado por el Cliente, en el que el Pedido es emitido y 
+transmitido en formato electrónico, mientras que otros documentos deben ser producidos y 
+intercambiados de las maneras tradicionales (teléfono, fax, correo electrónico, etc.);  
+- Ordenación completa, el proceso de pedido, iniciado por el Cliente, en el que el Pedido es emitido 
+y transmitido en formato electrónico y es posible producir e intercambiar de manera telemática también 
+la Respuesta y el Pedido de confirmación;  
+- Ordenación pre-acordada, el proceso de pedido, iniciado por el Proveedor, en el que el Pedido 
+pre-acordado es emitido y transmitido en formato electrónico y es posible producir e intercambiar de 
+manera telemática también el Pedido de confirmación.

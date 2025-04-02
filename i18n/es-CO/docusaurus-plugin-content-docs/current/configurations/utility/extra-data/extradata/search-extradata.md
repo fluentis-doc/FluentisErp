@@ -1,26 +1,26 @@
 ---
-title: Extra Data
+title: extra data
 sidebar_position: 0
 ---
 
-La form degli **ExtraData** è accessibile da **Configurazione** > **Utilità** > **ExtraData**.
+El formulario de **extradata** es accesible desde **configurazione** > **utilità** > **extradata**.
 
-Gli **ExtraData** sono una modalità per aggiungere **nuove proprietà** sia ad oggetti standard che custom di Fluentis senza dover ricorrere all'utilizzo di codice custom e quindi alla compilazione di progetti basati su del **codice custom**.    
-Tutti i principali oggetti funzionali come articoi, ordini, fatture, sono già predisposti all'aggiunta di ExtraData.
+Los **extradata** son una forma de agregar **nuevas propiedades** tanto a objetos estándar como personalizados de Fluentis sin necesitar recurrir al uso de código personalizado y, por lo tanto, a la compilación de proyectos basados en **código personalizado (codice custom)**.  
+Todos los principales objetos funcionales, como artículos, pedidos, facturas, ya están preparados para la adición de extra data.
 
-### Filtro Standard  
-Il filtro standard permette la ricerca degli ExtraData definiti in Fluentis per **Codice**.  
+### Filtro Estándar (Filtro Standard)  
+El filtro estándar permite la búsqueda de los extra data definidos en Fluentis por **codice**.  
 
-### Extra data
+### Datos extras (Extra data)
 
-La tabella contiene i risultati relativi ai singoli Extra Data definiti in Fluentis.  
+La tabla contiene los resultados relacionados con cada uno de los extra data definidos en Fluentis.  
 
-Aprendo la form di dettaglio di un ExtraData, si avrà accesso al pannello di parametrizzazione dell'ExtraData.
+Al abrir el formulario de detalle de un Dato Extra, se tendrá acceso al panel de parametrización del Dato Extra.
 
-#### Pulsanti specifici
+#### Botones específicos (Pulsanti specifici)
 
-> **Search**: permette di cercare gli ExtraData presenti.  
-> **New**: permette di creare un nuovo ExtraData.  
-> **Edit**: permette di aprire in modalità read-write un ExtraData presente.  
-> **View**: permette di aprire in modalità read-only un ExtraData presente.  
-> **Remove**: permette di eliminare un ExtraData presente.
+> **search**: permite buscar los extra data presentes.  
+> **Nuevo (New)**: permite crear un nuevo Dato Extra.  
+> **Editar (Edit)**: permite abrir en modo lectura-escritura un Dato Extra presente.  
+> **Ver (View)**: permite abrir en modo solo lectura un Dato Extra presente.  
+> **Eliminar (Remove)**: permite eliminar un Dato Extra presente.

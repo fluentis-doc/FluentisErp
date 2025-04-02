@@ -1,63 +1,62 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-I software ERP sono piattaforme complete che integrano tutte le funzioni essenziali per la gestione di un’azienda (Contabilità, Inventario e Gestione degli ordini, Produzione, CRM, Catena di approvvigionamento, Servizi, etc) e che sono in grado di automatizzare ed informatizzare i processi di business e le informazioni dell’intera organizzazione.
+Los software ERP son plataformas completas que integran todas las funciones esenciales para la gestión de una empresa (Contabilidad, Inventario y Gestión de pedidos, Producción, CRM, Cadena de suministro, Servicios, etc.) y que son capaces de automatizar e informatizar los procesos de negocio y la información de toda la organización.
 
-La caratteristica comune a tutti i software ERP è infatti un database condiviso che supporta molteplici funzioni utilizzate da diverse unità aziendali. Questo significa che tutti i dipendenti di un’azienda, che si tratti dell’ufficio Amministrazione, di Acquisti o del Marketing, grazie al software gestionale ERP possono fare affidamento sulle stesse informazioni per le loro esigenze specifiche, dialogando per così dire nella stessa lingua.
+La característica común a todos los software ERP es, de hecho, una base de datos compartida que soporta múltiples funciones utilizadas por diferentes unidades empresariales. Esto significa que todos los empleados de una empresa, ya sea de la oficina de Administración, Compras o Marketing, pueden, gracias al software ERP, confiar en la misma información para sus necesidades específicas, dialogando, por así decirlo, en el mismo idioma.
 
-**Fluentis ERP** è una soluzione software integrata progettata per ottimizzare e gestire i processi aziendali in diverse aree operative che ti permette di:
+**Fluentis ERP** es una solución de software integrada diseñada para optimizar y gestionar los procesos empresariales en diversas áreas operativas que te permite:
 
-**Iniziare subito**  
-Grazie al Cloud e ai processi pre-configurati.
+**Comenzar de inmediato** (Iniziare subito)  
+Gracias a la nube y a los procesos preconfigurados.
 
-**Crescere senza limiti**  
-Ottieni l’agilità, la flessibilità e la scalabilità di cui la tua azienda ha bisogno per supportare l’innovazione e la crescita.
+**Crecer sin límites** (Crescere senza limiti)  
+Obtén la agilidad, flexibilidad y escalabilidad que tu empresa necesita para apoyar la innovación y el crecimiento.
 
-**Avere in ogni momento una visione completa sul Business**  
-Accedi a informazioni in tempo reale sui KPI dell’impresa grazie alla Business Analytics integrata.
+**Tener en todo momento una visión completa del negocio** (Avere in ogni momento una visione completa sul Business)  
+Accede a información en tiempo real sobre los KPI de la empresa gracias a la Business Analytics integrada.
 
-**Dedicarti al tuo Business**  
-Al resto ci pensa Fluentis: grazie a un’offerta applicativa completa e a numerosi dipartimentali integrati, puoi gestire facilmente ogni area aziendale, senza dover integrare software di terze parti.
-
+**Dedicarte a tu negocio** (Dedicarti al tuo Business)  
+El resto lo maneja Fluentis: gracias a una oferta aplicativa completa y a numerosos módulos integrados, puedes gestionar fácilmente cada área empresarial, sin necesidad de integrar software de terceros.
 
 ### Fluentis ERP  
 
-**È un ERP Cloud Native**  
-Grazie alla sua architettura nativa in cloud, Fluentis offre performance migliori a costi inferiori, sistemi più affidabili e velocemente scalabili, garantendo un regime di sicurezza molto elevato.
-Tecnologia Avanzata: flessibilità, scalabilità, efficienza
-L’innovazione continua è un concetto chiave della filosofia Fluentis, permette alle aziende di essere sempre allineate con i trend della “Digital Transformation” e di poter cogliere le opportunità da essa derivanti.
+**Es un ERP nativo en la nube (È un ERP Cloud Native)**  
+Gracias a su arquitectura nativa en la nube, Fluentis ofrece mejor rendimiento a costos más bajos, sistemas más confiables y escalables rápidamente, garantizando un régimen de seguridad muy elevado.  
+Tecnología Avanzada: flexibilidad, escalabilidad, eficiencia.  
+La innovación continua es un concepto clave de la filosofía Fluentis, permite a las empresas estar siempre alineadas con las tendencias de la "Transformación Digital" y aprovechar las oportunidades derivadas de ella.
 
-**Accessibilità Totale: multi piattaforma e multi device**  
-Fluentis consente di lavorare in modo sincronizzato su diversi dispositivi e in diversi ambienti, permettendo di accedere ai dati aziendali in qualsiasi momento e ovunque ti trovi.
- 
-**Completa copertura funzionale**  
-Fluentis copre un'ampia e completa suite di soluzioni che spaziano dalla gestione Contabile e Finanziaria, ai flussi documentali degli Acquisti e delle Vendite, fino alla gestione completa dei flussi Logistico-Produttivi.
+**Accesibilidad total: multiplataforma y multidispositivo (Accessibilità Totale: multi piattaforma e multi device)**  
+Fluentis permite trabajar de forma sincronizada en diferentes dispositivos y en distintos entornos, permitiendo acceder a los datos empresariales en cualquier momento y desde cualquier lugar.
 
-**Disegno e ottimizzazione dei processi**  
-Grazie alle tecniche di BPMN, Fluentis è in grado di monitorare, ottimizzare e integrare tra loro i vari processi aziendali, creando efficienza tramite l'automazione delle attività ripetitive e/o non a valore aggiunto.
+**Cobertura funcional completa (Completa copertura funzionale)**  
+Fluentis cubre una amplia y completa suite de soluciones que abarcan desde la gestión contable y financiera, hasta los flujos documentales de compras y ventas, y la gestión completa de los flujos logístico-productivos.
 
-**Processi ottimizzati**  
-Grazie alle tecniche di BPMN, Fluentis è in grado di monitorare, ottimizzare e integrare tra loro i vari processi aziendali, creando efficienza tramite l'automazione delle attività ripetitive e/o non a valore aggiunto.
+**Diseño y optimización de procesos (Disegno e ottimizzazione dei processi)**  
+Gracias a las técnicas de BPMN, Fluentis es capaz de monitorear, optimizar e integrar los diversos procesos empresariales, creando eficiencia a través de la automatización de actividades repetitivas y/o sin valor agregado.
 
-**Semplice da customizzare**  
-Fluentis è ingegnerizzato per realizzare, in tempi rapidi, personalizzazioni anche molto complesse per adattarsi alle specifiche esigenze del tuo settore.
+**Procesos optimizados (Processi ottimizzati)**  
+Gracias a las técnicas de BPMN, Fluentis es capaz de monitorear, optimizar e integrar los diversos procesos empresariales, creando eficiencia a través de la automatización de actividades repetitivas y/o sin valor agregado.
 
-**Integrabilità con Software di terze parti**  
-Fluentis è dotato di un software ESB integrato, Bizlink, che permette di interscambiare dati e processi con altri applicativi e con altri ERP in modo sicuro, documentato e dinamico.
+**Fácil de personalizar (Semplice da customizzare)**  
+Fluentis está diseñado para realizar, en tiempos rápidos, personalizaciones incluso muy complejas para adaptarse a las necesidades específicas de tu sector.
 
-**Implementazione rapida con il Fast Start**  
-Grazie alla configurazione Fast Start di Fluentis, puoi essere operativo in pochi minuti con una serie di dati predefiniti che possono eventualmente poi essere ritoccati e modificati in funzione delle specifiche esigenze.
+**Integrabilidad con software de terceros (Integrabilità con Software di terze parti)**  
+Fluentis cuenta con un software ESB integrado, Bizlink, que permite intercambiar datos y procesos con otras aplicaciones y con otros ERP de manera segura, documentada y dinámica.
 
-**Intelligenza Artificiale Applicata**  
-L'utilizzo dell'Intelligenza Artificiale conversazionale, unita alle tecniche di Generative AI, in Fluentis ERP consentono di automatizzare molte attività e di semplificare il processo decisionale.
- 
-**Dati al sicuro**  
-Con Fluentis ERP i dati aziendali vengono archiviati in data center sicuri e altamente protetti, con sistemi di sicurezza  su più livelli. Inoltre ogni giorno viene realizzata una copia di sicurezza dei dati come garanzia ulteriore dal rischio che vengano cancellati o persi.
+**Implementación rápida con el Fast Start (Implementazione rapida con il Fast Start)**  
+Gracias a la configuración Fast Start de Fluentis, puedes estar operativo en pocos minutos con una serie de datos predefinidos que luego pueden ser ajustados y modificados en función de las necesidades específicas.
 
-**ERP multi-lingua, multi-valuta, multi-fiscalità**  
-Con Fluentis puoi configurare un gruppo aziendale per la gestione contemporanea di aziende italiane ed estere, installare lingue specifiche per gli utenti di altre nazionalità, configurare le diverse fiscalità dei Paesi interessati.
+**Inteligencia Artificial Aplicada (Intelligenza Artificiale Applicata)**  
+El uso de la inteligencia artificial conversacional, junto con técnicas de Generative AI, en Fluentis ERP permite automatizar muchas actividades y simplificar el proceso de toma de decisiones.
 
-**User Experience**  
-Fluentis ERP offre un’interfaccia piacevole e intuitiva, finalizzata all’ottimizzazione della user experience e della learning experience dell’operatore, in modo da consentire all’azienda di recuperare risorse importanti soprattutto nel percorso di progetto.
+**Datos seguros (Dati al sicuro)**  
+Con Fluentis ERP, los datos empresariales se almacenan en centros de datos seguros y altamente protegidos, con sistemas de seguridad en múltiples niveles. Además, cada día se realiza una copia de seguridad de los datos como garantía adicional contra el riesgo de que se borren o pierdan.
+
+**ERP multilingüe, multimoneda, multifiscalidad (ERP multi-lingua, multi-valuta, multi-fiscalità)**  
+Con Fluentis puedes configurar un grupo empresarial para la gestión simultánea de empresas italianas y extranjeras, instalar idiomas específicos para usuarios de otras nacionalidades, configurar las diferentes fiscalidades de los países interesados.
+
+**Experiencia de Usuario (User Experience)**  
+Fluentis ERP ofrece una interfaz agradable e intuitiva, orientada a optimizar la experiencia del usuario y la experiencia de aprendizaje del operador, de modo que permita a la empresa recuperar recursos importantes, especialmente en el proceso del proyecto.

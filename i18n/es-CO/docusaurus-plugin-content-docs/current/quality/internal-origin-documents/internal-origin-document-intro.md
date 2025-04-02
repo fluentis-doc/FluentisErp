@@ -1,40 +1,39 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-
-## I documenti gestiti
+## Los documentos gestionados (I documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management">Documenti di origine interna</Link>
-        <p>La gestione dei documenti di origine interna permette: la catalogazione, la gestione delle edizioni/revisioni e la loro distribuzione (sia in formato cartaceo che elettronico) alle funzioni aziendali che sono interessate nel visionare tali documenti.</p>
-        <p>Elenchiamo alcuni esempi di documenti di origine esterna che possono essere catalogati: *Manuale della qualità*, *Politica di gestione*, *Organigramma*, *Schema di processo*, *Istruzione operative*, *Scheda di servizio*, ecc.</p>
-        <p>Le informazioni di dove siano depositati gli originali e la possibilità di allegare loro copie elettroniche, permette una loro immediata rintracciabilità e consultazione con un semplice click del mouse.</p>
-        <p>A standard sono disponibili le reportistiche di: *Pagina di Guardia*, *Documento interno* e *Documenti allegati al documentale*.</p>
+###     <Link to="/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management">Documentos de origen interno (Documenti di origine interna)</Link>
+        <p>La gestión de los documentos de origen interno permite: la catalogación, la gestión de ediciones/revisiones y su distribución (tanto en formato físico como electrónico) a las funciones empresariales que están interesadas en revisar dichos documentos.</p>
+        <p>Enumeramos algunos ejemplos de documentos de origen externo que pueden ser catalogados: *Manual de calidad (Manuale della qualità)*, *Política de gestión (Politica di gestione)*, *organigramma*, *Esquema de proceso (Schema di processo)*, *Instrucciones operativas (Istruzione operative)*, *Ficha de servicio (Scheda di servizio)*, etc.</p>
+        <p>La información sobre dónde están depositados los originales y la posibilidad de adjuntar copias electrónicas permite su inmediata localización y consulta con un simple clic del mouse.</p>
+        <p>Por defecto, están disponibles los informes de: *pagina di guardia*, *documento interno* y *documenti allegati al documentale*.</p>
     </div>
 </div>
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/internal-origin-documents/check-list">Check-list</Link>
-        <p>Le *Check-list* sono un raggruppamento di domande/attività utilizzate per effettuare valutazioni a fornitori o audit interni.</p>
+###     <Link to="/docs/quality/internal-origin-documents/check-list">Check-list (Check-list)</Link>
+        <p>Las *Check-list* son un agrupamiento de preguntas/actividades utilizadas para llevar a cabo evaluaciones a proveedores o auditorías internas.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Para comenzar a utilizar (Per iniziare ad utilizzare)  
 
-i **Documenti di origine interna**:
-- devi definire una [*Categoria Documento di orgine interna*](/docs/configurations/tables/quality/documents/internal-document-category)   
-- devi inserire un nuovo [*Documento di orgine interna*](/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management)   
+los **documenti di origine interna**:
+- debes definir una [*Categoría de Documento de origen interno (Categoria Documento di orgine interna)*](/docs/configurations/tables/quality/documents/internal-document-category)   
+- debes ingresar un nuevo [*Documento de origen interno (Documento di orgine interna)*](/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management)   
 
-le **Check-list**:
-- devi inserire una nuova [*Check-list*](/docs/quality/internal-origin-documents/check-list)   
+las **Check-list**:
+- debes ingresar una nueva [*Check-list*](/docs/quality/internal-origin-documents/check-list)   
 
 
-## Collegamenti con altri moduli
-Le *Check-list* vengono utilizzate nelle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating) del modulo [*Qualificazione fornitore*](/docs/quality/vendor-rating/vendor-rating-intro) e nei dati contabili dei [*Fornitori*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)
+## Conexiones con otros módulos (Collegamenti con altri moduli)
+Las *Check-list* se utilizan en las [*valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating) del módulo [*qualificazione fornitore*](/docs/quality/vendor-rating/vendor-rating-intro) y en los datos contables de los [*fornitori*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)

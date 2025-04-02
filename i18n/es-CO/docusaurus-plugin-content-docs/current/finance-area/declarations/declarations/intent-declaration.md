@@ -1,137 +1,128 @@
 ---
-title: Dichiarazione di intento
+title: dichiarazione di intento
 sidebar_position: 5
 ---
 
-Da questa form è possibile inserire i registri per le dichiarazioni di intento ricevute o emesse per l'anno di riferimento, oppure ricercare ed entrare in modifica di quelli già presenti.
+Desde este formulario es posible ingresar los registros para las declaraciones de intención recibidas o emitidas para el año de referencia, o buscar y modificar las que ya están presentes.
 
-Premere il tasto **Nuovo** nella ribbon bar per inserire un nuovo registro, oppure, dopo aver premuto il tasto **Ricerca**, fare doppio click sul registro desiderato (o premere il tasto **Modifica** nella ribbon bar) per inserire nuove dichiarazioni di intento all'interno del registro selezionato.
+Presione el botón **nuovo** en la barra de menú para insertar un nuevo registro, o bien, después de presionar el botón **ricerca**, haga doble clic en el registro deseado (o presione el botón **modifica** en la barra de menú) para insertar nuevas declaraciones de intención dentro del registro seleccionado.
 
- 
+### Encabezado del Registro (Testata Registro)
+La parte superior del formulario correspondiente al registro muestra los datos del registro en sí, mientras que la parte inferior contiene los detalles de cada declaración de intención referida al registro.
 
- 
-### Testata Registro
-La zona superiore della form corrispondente al registro riporta i dati del registro stesso, la zona sottostante accoglie invece i dettagli di ogni dichiarazione di intento riferita al registro.
+**registro dichiarazione**: nombre del registro asignable libremente;  
 
-**Registro dichiarazione**: nome del registro liberamente assegnabile;
+**tipo**: indica si el registro es de tipo cliente (declaraciones de intención recibidas de los clientes) o proveedor (declaraciones emitidas a los proveedores en virtud de la condición de exportador habitual de la empresa en uso);  
 
-**Tipo**: indica se il registro è di tipo cliente (dichiarazioni di intento ricevute dai clienti) o fornitore (dichiarazioni emesse nei confronti dei fornitori in virtù della condizione di esportatore abituale della società in uso);
-
-**Data inizio / Data fine / Anno**: estremi di validità del registro.
+**Fecha inicio / Fecha fin / Año (Data inizio / Data fine / Anno)**: extremos de validez del registro.
 
 
 ---
-### GESTIONE DEL GRUPPO IVA
+### GESTIÓN DEL GRUPO IVA (GESTIONE DEL GRUPPO IVA)
 
-:::tip Info: il gruppo iva
-Con l’introduzione di tale norma, è stata prevista la possibilità, per le imprese collegate da interessi finanziari, economici ed organizzativi, di creare un gruppo unico, considerato come un solo contribuente (ai soli fini Iva) nei confronti del fisco. Esso sarà, pertanto, dotato di un unico numero di Partita Iva. Le imprese che fanno parte del gruppo fattureranno le operazioni verso terzi con una partita Iva comune, la partita Iva di gruppo. Invece le cessioni di beni e le prestazioni di servizi scambiati tra le aziende interne al gruppo non rileveranno ai fini dell’imponibile Iva. In conseguenza di ciò, tutte le operazioni effettuate da uno dei soggetti del gruppo sono considerate come effettuate dall’intero gruppo. La fattura e gli **altri documenti, INCLUSE LE DICHIARAZIONI DI INTENTO**, sono emessi dal rappresentante del Gruppo o dai partecipanti indicando sugli stessi oltre al numero di partita Iva del Gruppo anche il codice fiscale del soggetto partecipante che ha realizzato l’operazione.
+:::tip Info: el grupo iva (Info: il gruppo iva)
+Con la introducción de tal norma, se previó la posibilidad, para las empresas conectadas por intereses financieros, económicos y organizativos, de crear un grupo único, considerado como un solo contribuyente (a efectos de IVA) frente al fisco. Por lo tanto, contará con un único número de Registro de IVA. Las empresas que forman parte del grupo facturarán las operaciones a terceros con un Registro de IVA común, el Registro de IVA del grupo. Por otro lado, las cesiones de bienes y las prestaciones de servicios intercambiados entre las empresas del grupo no se considerarán a efectos de la base imponible del IVA. Como consecuencia de esto, todas las operaciones realizadas por uno de los sujetos del grupo se consideran como realizadas por el grupo entero. La factura y **otros documentos, INCLUIDAS LAS DECLARACIONES DE INTENTO (altri documenti, INCLUSE LE DICHIARAZIONI DI INTENTO)**, son emitidos por el representante del Grupo o por los participantes, indicando en estos además del número de Registro de IVA del Grupo, también el número de identificación fiscal del sujeto participante que ha realizado la operación.
 :::
 
-:::note **FLAG Gruppo iva**: 
-abilita la possibilità di inserire dichiarazioni d'intento riferite ad un gruppo IVA. La sua attivazione non influenza l'inserimento di dichiarazioni ordinarie e se ne consiglia sempre l'attivazione.
+:::note **FLAG Grupo iva (FLAG Gruppo iva)**: 
+habilita la posibilidad de insertar declaraciones de intención referidas a un grupo IVA. Su activación no afecta la inserción de declaraciones ordinarias y se recomienda siempre su activación.
 
-**CAMPO SETTATO DI DEFAULT COME ATTIVO E DA NON DISATTIVARE, NASCOSTO SULLE VERSIONI FLUENTIS 2021 E SUCCESSIVE**
+**CAMPO CONFIGURADO POR DEFECTO COMO ACTIVO Y NO DESACTIVAR, OCULTO EN LAS VERSIONES FLUENTIS 2021 Y SUCESIVAS (CAMPO SETTATO DI DEFAULT COME ATTIVO E DA NON DISATTIVARE, NASCOSTO SULLE VERSIONI FLUENTIS 2021 E SUCCESSIVE)**
 :::
 
 
-**Campo Nomenclatura (nella griglia di dettaglio)**: il campo è rilevante ai fini della gestione del gruppo iva, viene valorizzato dall'anagrafica del gruppo iva inserita nel cliente o fornitore (tab informazioni fiscali) oppure è editabile manualmente per poter inserire il riferimento all'anagrafica del gruppo iva di appartenenza del cliente o fornitore;
+**Campo Nomenclatura (nella griglia di dettaglio)**: el campo es relevante para la gestión del grupo iva, se valora con la información del grupo iva ingresada en el cliente o proveedor (pestaña información fiscal) o se puede editar manualmente para ingresar la referencia a la información del grupo iva de pertenencia del cliente o proveedor;  
 
 ---
 
- 
-### Dettaglio dichiarazioni di intento
+### Detalle de declaraciones de intención (Dettaglio dichiarazioni di intento)
 
-**Per inserire le dichiarazioni di intento all'interno del registro scrivere direttamente nella griglia inferiore.**
+**Para insertar las declaraciones de intención dentro del registro, escriba directamente en la cuadrícula inferior.**
 
-**Data Protocollo**: campo non obbligatorio attivo solo per le dichiarazioni del registro di tipo clienti, inserire la data attribuita dal cliente nellla dichiarazione di intento;
+**data protocollo**: campo no obligatorio activo solo para las declaraciones del registro de tipo clientes, ingresar la fecha proporcionada por el cliente en la declaración de intención;  
 
-**Prot**: campo non obbligatorio attivo solo per le dichiarazioni del registro di tipo clienti, inserire il protocollo attribuito dal cliente nellla dichiarazione di intento;
+**Prot**: campo no obligatorio activo solo para las declaraciones del registro de tipo clientes, ingresar el protocolo asignado por el cliente en la declaración de intención;  
 
-**Data Ns. Protocollo**: data protocollo attribuito internamente all'atto della registrazione della dichiarazione di intento nel registro, tale data vale come campo di riferimento per la validità iniziale per l'applicazione nei documenti di acquisto/vendita; (utilizzato anche se valorizzati i campi "rif identificativo e "rif progressivo") Si consiglia di valorizzarlo comunque anche nella gestione delle fatture clienti per la gestione tag della fattura elettronica.
+**Fecha Ns. Protocolo (Data Ns. Protocollo)**: fecha del protocolo asignada internamente al momento de registrar la declaración de intención en el registro, esta fecha sirve como campo de referencia para la validez inicial para la aplicación en los documentos de compra/venta; (utilizado incluso si están valorados los campos "ref identificativo" y "ref progresivo"). Se recomienda valorarlo de todos modos también en la gestión de las facturas de clientes para la gestión de la etiqueta de la factura electrónica.
 
-**Ns. Protocollo**: protocollo attribuito internamente all'atto della registrazione della dichiarazione di intento nel registro (**ATTENZIONE:** NECESSARIO PER LA CORRETTA VALORIZZAZIONE DEL TAG DELLA LETTERA DI INTENTO NELLA FATTURA ELETTRONICA DI VENDITA);
+**Ns. Protocolo (Ns. Protocollo)**: protocolo asignado internamente al momento de registrar la declaración de intención en el registro (**ATENCIÓN (ATTENZIONE):** NECESARIO PARA LA VALORIZACIÓN CORRECTA DE LA ETIQUETA DE LA CARTA DE INTENTO EN LA FACTURA ELECTRÓNICA DE VENTA);  
 
-**Conto / Sottoconto / Descrizione**: inserire qui il conto del soggetto intestatario della dichirazione di intento (cliente o fornitore);
+**Cuenta / Subcuenta / Descripción (Conto / Sottoconto / Descrizione)**: ingresar aquí la cuenta del sujeto titular de la declaración de intención (cliente o proveedor);  
 
-**Nomenclatura**: il campo è rilevante solo nei registri che gestiscono il gruppo iva, viene valorizzata dall'anagrafica del gruppo iva inserita nel cliente (tab informazioni fiscali) oppure è l'anagrafica stessa del cliente, ma è editabile manualmente per poter inserire il riferimento all'anagrafica del gruppo iva di appartenenza del cliente;
+**nomenclatura**: el campo es relevante solo en los registros que gestionan el grupo iva, se valoriza con la información del grupo iva ingresada en el cliente (pestaña información fiscal) o con la información misma del cliente, pero es editable manualmente para poder ingresar la referencia a la información del grupo iva de pertenencia del cliente;  
 
-:::danger Importante
-**Data inizio / Data fine**: NON compilare questi campi per le dichiarazioni di intento in corso di validità. A seguito delle ultime modifiche normative non sono, infatti, più ammesse dichiarazioni di intento valide senza vincoli di valore per un determinato periodo. Pertanto affinchè venga correttamente rilevata la dichiarazione di intento e possa essere attivo il controllo sul limite di valore e la sostituzione del codice iva in fattura il campo non deve essere compilato. Nel caso in cui il cliente annulli la dichiarazione (o se ne annulli la validità ad un fornitore), sarà possibile indicarne la sola data di fine validità, a partire dalla quale verrà bloccata la lettura della dichiarazione per i documenti successivi;
+:::danger Importante (Importante)
+**data inizio / data fine**: NO complete estos campos para las declaraciones de intención en curso de validez. A raíz de las últimas modificaciones normativas, no se admiten más declaraciones de intención válidas sin limitaciones de valor por un período determinado. Por lo tanto, a fin de que se registre correctamente la declaración de intención y se pueda activar el control sobre el límite de valor y la sustitución del código iva en la factura, el campo no debe ser completado. En caso de que el cliente cancele la declaración (o se cancele la validez a un proveedor), será posible indicar solo la fecha de fin de validez, a partir de la cual se bloqueará la lectura de la declaración para los documentos posteriores;
 :::
 
-:::danger Importante
-**Singola op. / Tot. Op.**: attivare in alternativa uno dei due flag a seconda che la dichiarazione di intento sia valida solo per una singola operazione oppure sia valida fino a concorrenza con il valore inserito nel campo seguente.
+:::danger Importante (Importante)
+**Operación única / Total Op. (Singola op. / Tot. Op.)**: activar alternativamente uno de los dos indicadores dependiendo de si la declaración de intención es válida solo para una única operación o si es válida hasta concurrencia con el valor ingresado en el campo siguiente.
 :::
 
-**Importo**: inserire qui l'importo della dichiarazione di intento. Questo valore sarà controllato affinchè non venga superato dalla sommatoria dei totali delle fatture emesse in dichiarazione di intento a partire dalla data della protocollazione;
+**importo**: ingresar aquí el importe de la declaración de intención. Este valor será controlado para que no supere la suma de los totales de las facturas emitidas en declaración de intención a partir de la fecha de la protocolización;  
 
-**IVA Plaf. / Descr IVA Plaf.**: inserire qui il codice iva di esenzione in virtù della vigenza della dichiarazione di intento. Questo codice iva sostituirà automaticamente all'aliquota ordinaria nel ddt/fattura fino a concorrenza del valore della dichiarazione di intento;
+**IVA Plaf. / Descr IVA Plaf. (IVA Plaf. / Descr IVA Plaf.)**: ingresar aquí el código iva de exención debido a la vigencia de la declaración de intención. Este código iva reemplazará automáticamente a la tasa ordinaria en el ddt/factura hasta el valor de la declaración de intención;  
 
-**IVA prec. / Descr IVA prec.**: inserire qui il codice iva ordinario che sarà sostituito dal codice iva inserito nel campo precedente;
+**IVA prec. / Descr IVA prec. (IVA prec. / Descr IVA prec.)**: ingresar aquí el código iva ordinario que será reemplazado por el código iva ingresado en el campo anterior;  
 
-**Annotazioni**: campo note libero;
+**annotazioni**: campo de notas libre;  
 
-**Dogana**: attivare il flag se la dichiarazione di intento si riferisce ad una importazione ed è stata emessa nei confronti della dogana;
+**dogana**: activar el indicador si la declaración de intención se refiere a una importación y ha sido emitida a la aduana;  
 
-**File Emesso**: flag popolato in automatico dalla procedura di esportazione del tracciato telematico delle dichiarazione emesse nei confronti dei fornitori. Seguito dai riferimenti del file creato (**Nome file** e **Cartella**)
+**file emesso**: indicador poblado automáticamente por el procedimiento de exportación del trazado telemático de las declaraciones emitidas a los proveedores. Seguido por las referencias del archivo creado (**Nombre archivo** y **Carpeta**)  
 
-**Rif. identificativo**: inserire qui la prima parte del protocollo telematico di trasmissione all'agenzia delle entrate della dichiarazione d'intento;
+**rif. identificativo**: ingresar aquí la primera parte del protocolo telemático de transmisión a la agencia de ingresos de la declaración de intención;  
 
-**Rif. progressivo**:  Inserire qui la seconda parte del protocollo telematico (progressivo di riga della dichiarazione all'interno della fornitura telematica; ad esempio 000001 nel caso in cui sia trasmessa un'unica dichiarazione d'intento);
+**Ref. progresivo (Rif. progressivo)**: ingresar aquí la segunda parte del protocolo telemático (progresivo de línea de la declaración dentro del suministro telemático; por ejemplo, 000001 en el caso de que se transmita una sola declaración de intención);  
 
+N.B.  
+La modificación respecto al protocolo telemático ha afectado tanto la terminología a incluir en la factura como el trazado xml para la factura electrónica, por lo que se registrará automáticamente en lugar de los campos "Ns protocolo" / "Vs protocolo".  
 
-N.B.
-La modifica riguardante il protocollo telematico ha interessato sia la dicitura da riportare in stampa fattura sia il tracciato xml per la fattura elettronica, quindi verrà riportato in automatico al posto dei campi "Ns protocollo"/ "Vs protocollo".
-
-E' consigliato comunque continuare a valorizzare  tali campi, assieme al campo “Data ns protocollo”, in quanto in mancanza dell'inserimento del protocollo telematico tali campi, verranno riportati comunque 
-
-
-**Dettagli per il File**: abilita i successivi campi **Integrativa** (collegato a **Importo dichiarazione** - che viene integrata) e **Descrizione merce** che rappresentano possibili dati necessari per i tracciati emessi verso i fornitori. Si consiglia di fare riferimento alla normativa specifica sull'emissione delle dichiarazioni di intento.
-
-### Creazione file telematico
-
-Per generare il file telematico al fine di trasmettere le dichiarazioni emesse premere il tasto ***Esporta*** presente nella ribbon bar.
+Se recomienda de todos modos seguir valorando dichos campos, junto con el campo “Fecha ns protocolo”, ya que en ausencia de la inclusión del protocolo telemático, tales campos se registrarán de todos modos. 
 
 
-Il file generato verrà memorizzato nel documentale (aprire tramite il pulsante con la graffetta) e sarà possibile scaricarne una copia sul pc locale (tramite il comando ***Salva allegato***). 
+**dettagli per il file**: habilita los campos siguientes **integrativa** (conectado a **importo dichiarazione** - que se integra) y **descrizione merce**, que representan posibles datos necesarios para los trazados emitidos a los proveedores. Se aconseja consultar la normativa específica sobre la emisión de declaraciones de intención.
 
- 
-### Gestione dichiarazioni multiple per singolo cliente / fornitore
+### Creación de archivo telemático (Creazione file telematico)
 
-**POSSIBILITA' DI AGGANCIO DELLA SINGOLA DICHIARAZIONE DI INTENTO NEI DOCUMENTI DI ACQUISTO/VENDITA**
+Para generar el archivo telemático con el fin de transmitir las declaraciones emitidas, presione el botón **esporta*** presente en la barra de menú.
 
-E' possibile selezionare in modo specifico, soprattutto in presenza di più dichiarazioni valide contemporaneamente, quale dichiarazione agganciare al documento.
 
-E' possibile selezionare la dichiarazione d'intento a cui fare riferimento tra quelle inserite, per un determinato DDT o fattura richiamandola dalla combo box "Dettaglio dichiarazioni", gestendo di conseguenza specificatamente la stringa riportata in stampa fattura e nel tracciato xml.
+El archivo generado será almacenado en el sistema documental (abrir mediante el botón con el clip) y será posible descargar una copia en la PC local (a través del comando **salva allegato***).  
+
+### Gestión de declaraciones múltiples por cliente / proveedor (Gestione dichiarazioni multiple per singolo cliente / fornitore)
+
+**POSIBILIDAD DE UNIR LA DECLARACIÓN DE INTENTO ÚNICA EN LOS DOCUMENTOS DE COMPRA/VENTA (POSSIBILITA' DI AGGANCIO DELLA SINGOLA DICHIARAZIONE DI INTENTO NEI DOCUMENTI DI ACQUISTO/VENDITA)**
+
+Es posible seleccionar específicamente, especialmente en presencia de varias declaraciones válidas simultáneamente, cuál declaración vincular al documento.
+
+Es posible seleccionar la declaración de intención a la que hacer referencia entre las ingresadas para un determinado DDT o factura, llamándola desde la caja combinada "Detalle declaraciones", gestionando así específicamente la cadena registrada en la impresión de factura y en el trazado xml.
 
 ![](/img/it-it/finance-area/declarations/declarations/intent-declaration/image04.png)
 
- 
-### Stampe
+### Impresiones (Stampe)
 
-**STAMPA DI CONTROLLO DEI VALORI RESIDUI DELLE DICHIARAZIONI DI INTENTO**
+**IMPRIMIR CONTROL DE LOS VALORES RESTANTES DE LAS DECLARACIONES DE INTENTO (STAMPA DI CONTROLLO DEI VALORI RESIDUI DELLE DICHIARAZIONI DI INTENTO)**
 
-Sia dalla form di ricerca dei registri presenti, sia da dentro il registro selezionato (entrando in modifica) è possibile anche elaborare una stampa di controllo (denominata ***Verifica dichiarazioni di intento***) che riepiloga gli importi delle dichiarazioni di intento ricevute e il valore del fatturato per tenere sotto controllo i limiti ancora fatturabili per ogni dichiarazione.
+Desde el formulario de búsqueda de los registros existentes, así como desde dentro del registro seleccionado (entrando en modificación), también es posible elaborar una impresión de control (denominada ***Verificación de declaraciones de intención (Verifica dichiarazioni di intento)***), que resume los importes de las declaraciones de intención recibidas y el valor del volumen de negocios para mantener bajo control los límites aún facturables para cada declaración.
 
-E' presente un'ulteriore versione della stampa (selezionabile dalla tendina) denominata ***Verifica dichiarazione di intento con dettagli*** che riporta i dettagli di ogni singolo documento collegato con la dichiarazione.
+Hay presente una versión adicional de impresión (seleccionable desde el menú desplegable) denominada ***Verificación de declaración de intención con detalles (Verifica dichiarazione di intento con dettagli)*** que muestra los detalles de cada documento conectado con la declaración.
 
 
-### Gestione riferimento a lettere di intento anni precedenti
+### Gestión de referencia a cartas de intención de años anteriores (Gestione riferimento a lettere di intento anni precedenti)
 
-Può capitare di gestire questo caso: emettere una nota di credito ad un cliente facendo riferimento alla dichiarazione di intento dell'anno (o di un anno) precedente. 
+Puede darse el caso de gestionar esta situación: emitir una nota de crédito a un cliente haciendo referencia a la declaración de intención del año (o de un año) anterior.
 
-Il Cliente può avere già emesso anche  una dichiarazione di intento nell'anno in corso. Ad esempio la nota di accredito può essere una correzione di una fattura dell'anno precedente per merce spedita sempre nell'anno precedente e quindi si deve inserire il riferimento alla dichiarazione di intento precedente.
+El Cliente puede haber emitido también una declaración de intención en el año en curso. Por ejemplo, la nota de crédito puede ser una corrección de una factura del año anterior por mercancía enviada siempre en el año anterior, por lo que se debe incluir la referencia a la declaración de intención anterior.
 
-Nella testata della nota di credito utilizzare i campi per i riferimenti alla fattura che viene rettificata:
+En el encabezado de la nota de crédito utilizar los campos para las referencias a la factura que se está rectificando:
 
-Espandere la sezione **Tipo riferimento** e compilare **Riferimento FT** (un campo per il numero fattura e il successivo per la data fattura).
+Expandir la sección **tipo riferimento** y completar **riferimento ft** (un campo para el número de factura y el siguiente para la fecha de factura).
 
-Fatto questo, le dichiarazioni di intento selezionabili dall'apposita combo box saranno **anche** quelle del registro dell'anno precedente (o comunque quello indicato nella data del riferimento)
+Hecho esto, las declaraciones de intención seleccionables desde la caja combinada correspondiente serán **también** aquellas del registro del año anterior (o de todos modos, el indicado en la fecha de referencia)
 
 ![](/img/it-it/finance-area/declarations/declarations/intent-declaration/image06.png)
 
-### **VIDEO TUTORIALS**
+### **VIDEO TUTORIALES (VIDEO TUTORIALS)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rZM6NBOpIxQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-

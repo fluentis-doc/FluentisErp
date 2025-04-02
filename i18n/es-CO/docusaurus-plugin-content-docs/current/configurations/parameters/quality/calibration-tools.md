@@ -1,26 +1,26 @@
 ---
-title: Parametri taratura strumenti
+title: parametri taratura strumenti
 sidebar_position: 3
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri taratura strumenti**.
+Los parámetros se encuentran en la ruta **Parámetros (Parametri) > Calidad (Qualità) > parametri taratura strumenti (Parametri taratura strumenti)**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-> *Strumenti di misura*;   
-> *Taratura strumenti*.   
+Los datos presentes en esta gestión son utilizados para proponer información en las gestiones:   
+> *strumenti di misura*;   
+> *taratura strumenti*.   
 
-#### Pulsante specifico
+#### Botón específico
 
-**Salva**: permette di memorizzare le informazioni modificate.  
+**salva**: permite almacenar la información modificada.  
 
-#### Campi specifici 
-    
-- **Persona responsabile**: *Dipendente* da proporre come responsabile alla creazione di un nuovo *Strumento di misura*.   
-- **Funzione responsabile**: *Funzione aziendale* da proporre come responsabile alla creazione di un nuovo *Strumento di misura*.   
-- **Tipo esito negativo**: *Tipo esito* da proporre nel caso di esito negativo.   
-- **Tipo esito positivo**: *Tipo esito* da proporre nel caso di esito positivo.   
-- **Tipo taratura manuale**: *Tipo taratura* da proporre nel caso di inserimento manuale di *Tarature strumento*.   
-- **Tipo taratura interna**: *Tipo taratura* da proporre nel caso di pianificazione di *Tarature strumento interne*.   
-- **Tipo taratura esterna**: *Tipo taratura* da proporre nel caso di pianificazione di *Taratura strumento esterna*.   
+#### Campos específicos 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+- **persona responsabile**: *dipendente* que se propone como responsable para la creación de un nuevo *strumento di misura*.   
+- **funzione responsabile**: *funzione aziendale* que se propone como responsable para la creación de un nuevo *strumento di misura*.   
+- **Tipo de resultado negativo (Tipo esito negativo)**: *tipo esito* que se propone en caso de resultado negativo.   
+- **Tipo de resultado positivo (Tipo esito positivo)**: *tipo esito* que se propone en caso de resultado positivo.   
+- **tipo taratura manuale**: *tipo taratura* que se propone en caso de inserción manual de *Calibraciones de instrumentos (Tarature strumento)*.   
+- **tipo taratura interna**: *tipo taratura* que se propone en caso de planificación de *Calibraciones de instrumentos internos (Tarature strumento interne)*.   
+- **tipo taratura esterna**: *tipo taratura* que se propone en caso de planificación de *Calibración de instrumentos externos (Taratura strumento esterna)*.  
+
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

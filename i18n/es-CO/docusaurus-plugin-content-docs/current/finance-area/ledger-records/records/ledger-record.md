@@ -1,1010 +1,769 @@
 ---
-title: Nuova Registrazione contabile
+title: nuova registrazione contabile
 sidebar_position: 1
 ---
-La form si apre tramite il percorso **Amministrazione > Registrazioni contabili > Registrazioni > Nuova Registrazione** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca registrazioni contabili](/docs/finance-area/ledger-records/records/search-ledger-records).
+El formulario se abre a través de la ruta **Administración > Registros contables > Registros > Nueva Registro** o a través del botón **Nuevo** que se encuentra en el formulario [Búsqueda de registros contables](/docs/finance-area/ledger-records/records/search-ledger-records).
 
-## *Come creare una Registrazione contabile di Acquisto o Vendita*
+## *Cómo crear un Registro contable de Compra o Venta*
 
 <details>
  
-<summary>Clicca per i passaggi fondamentali</summary>
+<summary>Haz clic para los pasos fundamentales</summary>
  
-1. **Inserisci i dati obbligatori nella Testata**: *Data Registrazione, se diversa da Oggi*, ***Causale contabile***, *Conto (cliente o fornitore)*, *Numero* e *Data Documento* *Totale della registrazione*.  
+1. **Ingresa los datos obligatorios en la Cabecera**: *Fecha de Registro, si es diferente de Hoy*, ***Causal contable***, *Cuenta (cliente o proveedor)*, *Número* y *Fecha Documento* *Total de la registración*.  
  
-2. **Inserisci i dati IVA**: Tipo IVA, Conto di contropartita ed aliquot IVA (se non già proposti dall'anagrafica cliente /fornitore)  
+2. **Ingresa los datos IVA**: Tipo IVA, Cuenta de contrapartida y aliquota IVA (si no ya propuestas por el registro del cliente/proveedor)  
  
-3. **Gestisci le date di competenza economica**: se necessario in particolare per i servizi al fine di ottenere i ratei e risconti automatici in seguito.
+3. **Gestiona las fechas de competencia económica**: si es necesario, en particular para los servicios, para obtener los ajustes y provisiones automáticas posteriormente.
  
-4. **Verifica e modifica la sezione Libro giornale** se necessario puoi variare i conti o suddividere il costo o ricavo inserendo nuove righe
+4. **Verifica y modifica la sección Libro diario**: si es necesario, puedes variar las cuentas o dividir el costo o ingreso ingresando nuevas líneas.
  
-5. **Controlla la sezione dei Riepiloghi** verificando che la registrazione sia bilanciata.  
+5. **Controla la sección de Resúmenes** verificando que el registro esté equilibrado.  
  
-6. **Controlla o gestisci la Tab delle Partite aperte** se non viene proposta dall'anagrafica cliente o fornitore inserisci i dati relativi al tipo e soluzione di pagamento per gestire le partite aperte iun maniera allineata rispetto al movimento contabile
+6. **Verifica o gestiona la pestaña de Partidas abiertas**: si no es propuesta por el registro del cliente o proveedor, ingresa los datos relativos al tipo y solución de pago para gestionar las partidas abiertas de manera alineada respecto al movimiento contable.
 
-7. **Incassi o pagamenti** verranno gestiti dalla **Tab Pagamenti** che sarà utilizzata **per prima**, ricercando le partite da chiudere con il bottone **Ricerca Partite** e facendo doppio click sulle partite da chiudere, in questo modo i dati dei clienti o fornitori incassati o pagati saranno già riportati nella sezione Libro giornale.
+7. **Cobranzas o pagos** se gestionarán en la **Pestaña Pagos** que se utilizará **primero**, buscando las partidas a cerrar con el botón **Buscar Partidas** e ingresando doble clic en las partidas a cerrar, así los datos de los clientes o proveedores cobrados o pagados ya estarán reflejados en la sección Libro diario.
 
-8. **Scritture semplici di prima nota** come giroconti cc... possono essere inseriti direttamente nella sezione Libro giornale, non prevedendo la relativa causale di movimentare la griglia IVA
+8. **Asientos simples de primera nota** como transferencias bancarias pueden ser ingresadas directamente en la sección Libro diario, no requerirán la causal respectiva para mover el registro IVA.
 
-9. **Altre sezioni specifiche non obbligatorie**  a seconda sei parametri attivati nella causale contabile, verranno visualizzate altre sezioni specifiche, quali la Contabilità **analitica**, I cespiti, gli **Intrastat**, le provvigioni **Agenti** che è possibile gestire.
+9. **Otras secciones específicas no obligatorias**: según los parámetros activados en la causal contable, se visualizarán otras secciones específicas, como la Contabilidad **analítica**, los activos, los **Intrastat**, las comisiones **Agentes** que se pueden gestionar.
  
 </details>
 
 
-La Registrazione contabile, e conseguentemente la form per il suo inserimento, è composta dai seguenti elementi:
+El Registro contable, y por consiguiente el formulario para su inserción, está compuesto por los siguientes elementos:
 
-- La **Testata** ("*Header*" che corrisponde alla zona più in alto nella form) la quale contiene elementi univoci per la registrazione quali:
-    > La data
+- La **Cabecera** ("*Header*" que corresponde a la zona superior del formulario) la cual contiene elementos únicos para el registro tales como:
+    > La fecha
 
-    > Il numero
+    > El número
 
-    > Il totale
+    > El total
 
-    > Il registro iva e il numero di protocollo
+    > El registro de IVA y el número de protocolo
 
-    > Altro
+    > Otro
     
-    > La **Causale contabile** che, in base alle relative impostazioni e parametri, attiva gli ulteriori elementi di cui sotto
-- Il **Piede** ("*Footer*") della form che contiene la descrizione generale della registrazione stessa, da riportare sul Libro giornale, oltre ad alcuni totali e il controllo di sbilancio tra sezioni Dare e Avere
-- Tab **Registrazione** che contiene le due sotto-sezioni ***IVA*** (dipende dalla causale) e ***Libro Giornale*** con i movimenti di contabilità
-- Tab **Partite**, se attivata, per l'apertura delle partite aperte che alimentano lo scadenzario
-- Tab **Pagamenti**, se attivata che gestisce la chiusura delle partite aperte
-- Tab **Analitica**, se attivata, che gestisce i movimenti dei centri aziendali (centri d costo / profitto)
-- Tab **Intrastat**, se attivata, che permette di compilare i dati per la successiva creazione automatica degli elenchi Intrastat
-- Tab **Cespiti**, se attivata, che permette di gestire acquisto o vendite cespiti
-- Tab **Provvigioni**,se attivata, che permette di gestire la creazione e memorizzazione delle Commissioni agenti
-- Tab **Progetti**, se attivata, che permette di movimentare i Progetti (commesse)
-- Tab Raggruppamenti partite, se attivata: una modalità particolare di gestione delle partite aperte.
-- Tab Parametri con ulteriori informazioni di dettaglio sulla registrazione
+    > La **Causal contable** que, según las configuraciones y parámetros, activa otros elementos que se detallan a continuación.
+- El **Pie** ("*Footer*") del formulario que contiene la descripción general del registro mismo, que debe circularse en el Libro diario, además de algunos totales y el control de desequilibrio entre las secciones Deber y Haber.
+- Pestaña **Registro** que contiene las dos subsecciones ***IVA*** (depende de la causal) y ***Libro Diario*** con los movimientos de contabilidad.
+- Pestaña **Partidas**, si está activada, para la apertura de partidas abiertas que alimentan el calendario de vencimientos.
+- Pestaña **Pagos**, si está activada, que gestiona el cierre de las partidas abiertas.
+- Pestaña **Analítica**, si está activada, que gestiona los movimientos de los centros empresariales (centros de costo / beneficio).
+- Pestaña **Intrastat**, si está activada, que permite completar los datos para la creación automática de las listas Intrastat.
+- Pestaña **Activos**, si está activada, que permite gestionar la compra o venta de activos.
+- Pestaña **Comisiones**, si está activada, que permite gestionar la creación y almacenamiento de las comisiones de agentes.
+- Pestaña **Proyectos**, si está activada, que permite gestionar los Proyectos (contratos).
+- Pestaña de Agrupamientos de partidas, si está activada: una modalidad particular de gestión de las partidas abiertas.
+- Pestaña de Parámetros con información adicional sobre el registro.
 
-## **1. Testata (Header)**
+## **header**
 
-**Data di registrazione**: in una nuova registrazione viene impostata come data odierna di sistema, può essere modificata in avanti o indietro nel tempo purchè sia rispettato l'ordinamento cronologico dei protocolli IVA e gli eventuali periodi già stampati in definitivo. 
+**Fecha de registro**: en un nuevo registro se establece como la fecha de sistema actual, puede ser modificada hacia adelante o hacia atrás en el tiempo, siempre que se respete el orden cronológico de los protocolos de IVA y los periodos que ya han sido impresos de forma definitiva. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
   
-  L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un Cambio esercizio: 
+  La importancia de esta fecha es fundamental ya que no es necesario hacer un Cambio de ejercicio: 
 
-a partire dalla data di registrazione l'applicativo ricerca  i parametri di contabilità per l'anno di riferimento (individuando all'interno di quale range di date esercizio si trovi) e da questo riprende gli altri range di date di controllo (date competenza in linea e date periodo in linea). 
+a partir de la fecha de registro, la aplicación busca los parámetros de contabilidad para el año correspondiente (identificando en qué rango de fechas se encuentra) y de este retoma los otros rangos de fechas de control (fechas de competencia y fechas de periodo en línea). 
 
-Questa data è quella base della stampa del libro giornale e degli estratti conto contabili. 
+Esta fecha es la base de la impresión del libro diario y de los extractos contables. 
 
-In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da dentro quella in gestione è possibile impostare, tramite i **parametri di inserimento**  (nella ribbon bar) che questo campo sia proposto anche in quella nuova;
+Si se presiona el botón para crear un *Nuevo registro* desde dentro del que se está gestionando, es posible establecer, a través de los **parámetros de inserción** (en la barra de herramientas), que este campo también se proponga en ese nuevo registro;
 
 </details>
 
 
-**Data competenza**: è la data di riferimento per il bilancio di esercizio: **normalmente è sempre uguale alla data registrazione**. 
-Può essere utilizzata per le scritture di assestamento di bilancio e le relative scritture di chiusura/apertura conti, che possono essere impostate come data di registrazione nel periodi di approvazione e chiusura del bilancio (ad esempio aprile o giugno dell'ano successivo) ma saranno impostate con *data competenza* 31/12 – 01/01. 
-Questo anche al fine di permettere l'inserimento in un periodo probabilmente già stampato in definitivo nel Libro Giornale.
+**Fecha de competencia**: es la fecha de referencia para el balance de ejercicio: **normalmente siempre es igual a la fecha de registro**.  
+Puede ser utilizada para las escrituras de ajuste del balance y las respectivas escrituras de cierre/apertura de cuentas, que pueden establecerse como fecha de registro en los periodos de aprobación y cierre del balance (por ejemplo, en abril o junio del año siguiente), pero se establecerán con *fecha de competencia* 31/12 – 01/01.  
+Esto también con el fin de permitir la inserción en un periodo que probablemente ya haya sido impreso de forma definitiva en el Libro Diario.
 
-:::important[Attenzione]
-questa data NON può essere utilizzata per rilevare le fatture da ricevere di fine anno. **Si consiglia di lasciarla sempre uguale alla data registrazione**: in contabilità ci sono stampe che lavorano per data registrazione, altre per data competenza, altre che danno libertà all'utente di filtrare per entrambe, chiaramente si otterrebbero risultati differenti a seconda dei filtri applicati. 
+:::important[Atención]
+esta fecha NO puede ser utilizada para registrar las facturas a recibir de fin de año. **Se recomienda dejarla siempre igual a la fecha de registro**: en contabilidad hay impresiones que funcionan por fecha de registro, otras por fecha de competencia, otras que permiten al usuario filtrar por ambas, claramente se obtendrían resultados diferentes dependiendo de los filtros aplicados. 
 :::
 
 
-Nei **parametri di inserimento** è possibile impostare che questa data sia allineata automaticamente rispetto alla data registrazione;
+En los **parámetros de inserción** es posible configurar que esta fecha se alinee automáticamente con respecto a la fecha de registro;
 
-**Numero di registrazione**: Viene attribuito in base ai settaggi della tabella [**Numerazione Registrazioni**](/docs/configurations/tables/finance/posting-ledger-numeration)
+**Número de registro**: Se atribuye según la configuración de la tabla [**Numeración de Registros**](/docs/configurations/tables/finance/posting-ledger-numeration).
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
   
-  l'univocità della registrazione viene determinata sempre dalla combinazione *Data registrazione* + *Numero registrazione*. Il numero di registrazione viene gestito automaticamente dalla procedura in base ai settaggi del numeratore (contatore): in particolare, al momento del salvataggio viene attribuito il numero definitivo corretto, recuperando eventualmente un buco di numerazione alla data registrazione relativa. Cancellare una registrazione alla data X, infatti, lascerà un buco nella numerazione di questa data: solo intervenendo in inserimento/modifica di una delle registrazioni di questa data il numero sarà recuperato. In caso di registrazione provvisoria questo numero andrà in progressione negativa a partire dal numero -1000, in modo da rendere ben visibile all'utente che si tratta di una registrazione di questo stato: i report e le ricerche contabili sono impostate per filtrare di default solo sulle registrazioni definitive;
+  La unicidad del registro se determina siempre por la combinación *Fecha de registro* + *Número de registro*. El número de registro es gestionado automáticamente por el procedimiento según la configuración del numerador (contador): específicamente, en el momento de guardar, se atribuye el número definitivo correcto, recuperando eventualmente un hueco de numeración en la fecha de registro relativa. Borrar un registro en la fecha X, de hecho, dejará un hueco en la numeración de esa fecha: solo interviniendo en la inserción/modificación de uno de los registros de esa fecha se recuperará el número. En caso de registro provisional, este número irá en progresión negativa a partir del número -1000, de modo que sea bien visible para el usuario que se trata de un registro de este estado: los informes y las búsquedas contables están configuradas para filtrar por defecto solo sobre los registros definitivos.
 
 </details>
 
 
-**Sottoconto intestatario della registrazione**: questo campo è **obbligatorio solo per registrazioni IVA,** in quanto è legato all'anagrafica cliente/fornitore intestataria del documento registrato. 
+**Subcuenta del titular del registro**: este campo es **obligatorio solo para los registros de IVA**, ya que está vinculado al registro del cliente/proveedor titular del documento registrado. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-Questo campo, normalmente, non va compilato in caso di registrazioni di pagamento/incasso, in quanto normalmente nella stessa registrazione si effettuano vari pagamenti/incassi su soggetti differenti. In questa situazione viene utilizzato come filtro delle partite aperte il campo presente nella scheda *Pagamenti*. 
+Este campo normalmente no debe ser completado en caso de registros de pago/cobro, ya que normalmente en el mismo registro se realizan varios pagos/cobros a diferentes sujetos. En esta situación se utiliza como filtro de las partidas abiertas el campo presente en la pestaña *Pagos*. 
 
-In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova. La causale contabile, infine, può prevedere un  **[controllo di coerenza](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** tra il tipo conto inserito in questo punto e quanto previsto in causale; 
+Si se presiona el botón para crear un *Nuevo registro* desde el que se está gestionando, es posible establecer los **parámetros de inserción** para que este campo también se proponga en ese nuevo registro. La causal contable, finalmente, puede prever un **[control de coherencia](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** entre el tipo de cuenta ingresado en este punto y lo que se prevé en la causal; 
 
 </details>
 
 
-**Causale**: questo campo è **obbligatorio**: ogni registrazione si basa infatti su una causale di riferimento che ne regola le caratteristiche e il funzionamento. 
+**Causal**: este campo es **obligatorio**: cada registro se basa en una causal de referencia que regula sus características y funcionamiento. 
 
-Questo campo non è più modificabile una volta salvata la registrazione (chiaramente saranno bloccati altri campi nel caso in cui sia stato stampato in definitivo il registro IVA o il giornale o sia stata effettuata la chiusura automatica conti): nel caso in cui la causale sia errata bisogna necessariamente cancellare e reinserire la registrazione con il codice corretto. 
+Este campo ya no es modificable una vez guardado el registro (claramente otros campos quedarán bloqueados en caso de que se haya impreso de forma definitiva el registro de IVA o el diario o se haya realizado el cierre automático de cuentas): en caso de que la causal sea errónea, es necesario borrar e ingresar nuevamente el registro con el código correcto. 
 
-In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
+Si se presiona el botón para crear un *Nuevo registro* desde el que se está gestionando, es posible establecer los **parámetros de inserción** para que este campo también se proponga en ese nuevo registro;
 
-**Registro IVA**: viene riportato dalla causale di contabilità selezionate non è modificabile manualmente: 
+**Registro de IVA**: es reportado por la causal de contabilidad seleccionada y no es modificable manualmente: 
 
-**Protocollo IVA**: è un campo numerico che viene gestito automaticamente dalla procedura per ogni registro: all'apertura della maschera sarà proposto il *max protocollo + 1* per il registro impostato, poi al salvataggio verrà confermato o meno a seconda del caso che siano stati effettuati altri salvataggi per quel registro o vi siano protocolli IVA da recuperare. 
+**Protocolo IVA**: es un campo numérico que es gestionado automáticamente por el procedimiento para cada registro: al abrir la máscara se propondrá el *máx protocolo + 1* para el registro establecido, y luego al guardarlo se confirmará o no según el caso que se hayan realizado otros guardados para ese registro o si hay protocolos de IVA por recuperar. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-Il recupero protocolli cambia a seconda che nella causale sia inserito o meno il blocco del salvataggio con numerazione non progressiva (trattasi di un controllo di coerenza tra data registrazione e numero di protocollo), con il blocco attivo sarà recuperato un protocollo libero solamente se la data registrazione è coerente, senza il blocco sarà proposto anche un protocollo non valido per quella data, con i relativi messaggi di avvertimento all'utente. 
+La recuperación de protocolos varía según si en la causal se inserta o no el bloqueo del guardado con numeración no progresiva (se trata de un control de coherencia entre la fecha de registro y el número de protocolo), con el bloqueo activo se recuperará un protocolo libre solo si la fecha de registro es coherente, sin el bloqueo también se propondrá un protocolo no válido para esa fecha, con los correspondientes mensajes de advertencia al usuario. 
 
-Il campo del protocollo viene disabilitato in caso di registrazione provvisoria;
+El campo del protocolo se deshabilita en caso de registro provisional;
 
 </details>
 
 
-**Tipo documento**: viene proposto dalla procedura sulla base del valore impostato nelle causali di contabilità generale: è modificabile, ma si tratta di una modifica normalmente non necessaria (tipicamente serve specificare i documenti delle registrazioni IVA, esempio FV = Fatture di vendita o FA = Fatture di acquisto, mentre tutti gli altri movimenti avranno sempre un documento di tipo GEN = Generico);
+**Tipo documento**: es propuesto por el procedimiento según el valor establecido en las causales de contabilidad general: es modificable, pero se trata de una modificación normalmente no necesaria (tipicamente se necesita especificar los documentos de los registros de IVA, ejemplo FV = Facturas de venta o FA = Facturas de compra, mientras que todos los demás movimientos siempre tendrán un documento de tipo GEN = Genérico);
 
-**Data documento**: è un campo obbligatorio o meno a seconda delle  **[impostazioni delle causali di contabilità:](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** questa data non può essere superiore alla data di registrazione e deve essere all'interno del range di date di validità relativo al  **[periodo in linea per l'esercizio di riferimento](/docs/configurations/parameters/finance/accounting-parameters)** della registrazione. In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
+**Fecha documento**: es un campo obligatorio o no, según las **[configuraciones de las causales de contabilidad:](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** esta fecha no puede ser posterior a la fecha de registro y debe estar dentro del rango de fechas de validez relativo al **[periodo en línea para el ejercicio de referencia](/docs/configurations/parameters/finance/accounting-parameters)** del registro. En caso de que se presione el botón para crear un *Nuevo registro* desde el que se está gestionando, es posible establecer los **parámetros de inserción** para que este campo también se proponga en ese nuevo registro;
 
 <a id="campo_progetto" style={{ textDecoration: 'none' , color: 'inherit' , fontWeight: 'bold' }}></a> 
 
-**Numero documento**: Si inserisce in questo campo il numero della fattura per le scritture contabili IVA 
+**Número documento**: Se inserta en este campo el número de la factura para los asientos contables de IVA. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-è un campo alfanumerico di 20 caratteri: a seconda delle impostazioni della causale viene bloccato l'inserimento dello stesso numero/anno (preso dalla data documento) / tipo (campo tipo documento) per lo stesso codice inserito nel campo sottoconto della testata della registrazione (questo blocco è inserito di default su ogni causale contabile, ma può essere disabilitato). In caso che sia lo stesso numero/anno/sottoconto ma il tipo sia differente viene invece restituito un semplice messaggio di avvertimento all'utente. Allo stesso modo, il messaggio di avvertimento viene restituito anche se lo stesso riferimento è salvato in una registrazione provvisoria;
+Es un campo alfanumérico de 20 caracteres: dependiendo de las configuraciones de la causal se bloquea la inserción del mismo número/año (tomado de la fecha del documento) / tipo (campo tipo documento) para el mismo código ingresado en el campo subcuenta de la cabecera del registro (este bloqueo está ingresado por defecto en cada causal contable, pero puede ser deshabilitado). En caso de que sea el mismo número/año/subcuenta pero el tipo sea diferente, se retornará un simple mensaje de advertencia al usuario. De igual manera, el mensaje de advertencia se retornará si la misma referencia se guarda en un registro provisional;
 
 </details>
 
-**Campo Progetto** (ex commessa): è attivo solo se la causale di contabilità prevede la gestione progetti (ex flag 'Commessa'): questo progetto è quello di riferimento per tutta la registrazione, ma sarà possibile riattribuire i valori all'interno della scheda **Progetto** della stessa.
+**Campo Proyecto** (ex contrato): está activo solo si la causal de contabilidad prevé la gestión de proyectos (ex flag 'Contrato'): este proyecto es el referente para todo el registro, pero será posible reasignar los valores dentro de la pestaña **Proyecto** del mismo.
 
-:::danger ATTENZIONE
-la tab Progetti è attiva solamente quando all'interno dell'anagrafica generale della società (Configurazione > Tabelle >Impostazioni generali > Società) il flag **Gestione Controlling** è **disattivato**. Ciò significa che **non** è attivo il modulo di gestione del controllo di gestione in modalità **completa**.  
-Nel caso in cui il flag **Gestione Controlling** sia **attivo** la gestione del progetto (o commessa, secondo la precedente dicitura) avverrà in maniera diversa, ovvero sarà necessario attribuire il progetto (commessa) attraverso un particolare centro di costo (oggi centro aziendale) avente come [**dimensione**](/docs/configurations/tables/controlling/analytical-accounting/dimension) (si veda la documentazione dell'area controlling) quella adatta alla gestione delle commesse.
+:::danger ATENCIÓN
+la pestaña Proyectos está activa solo cuando dentro del registro general de la empresa (Configuración > Tablas > Configuraciones generales > Empresa) el flag **Gestión del Control** está **desactivado**. Esto significa que **no** está activo el módulo de gestión de control en modo **completo**.  
+En caso de que el flag **Gestión del Control** esté **activo**, la gestión del proyecto (o contrato, según la anterior terminología) se llevará a cabo de manera diferente, es decir, será necesario atribuir el proyecto (contrato) a través de un centro de costo particular (hoy centro empresarial) que tenga como [**dimensión**](/docs/configurations/tables/controlling/analytical-accounting/dimension) (consultar la documentación del área de control) aquella adecuada para la gestión de los contratos.
 :::
 
-**Divisa**: proposta in via prioritaria dall'anagrafica intestataria della registrazione, in alternativa dalla divisa della società: può essere comunque modificata di volta in volta. Una volta salvata la registrazione il campo non è più modificabile;
+**Divisa**: propuesta prioritariamente desde el registro titular de la registración, alternativamente de la divisa de la empresa: puede ser modificada de vez en cuando. Una vez guardada la registración el campo ya no es modificable;
 
-**Data valuta**: è la data di riferimento del cambio, così come inserito nella tabella cambi valuta: la procedura legge in questa tabella la più recente data inserita con il relativo tasso di cambio rispetto al presente campo. 
+**Fecha moneda**: es la fecha de referencia del cambio, tal como se inserta en la tabla de cambios de moneda: el procedimiento lee en esta tabla la fecha más reciente ingresada con el respectivo tipo de cambio respecto a este campo. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-Nei *parametri di inserimento* questa data può essere impostata come data registrazione (default) o come data documento. 
-E' previsto un parametro utente di avviso quando non è impostata un cambio alla data della registrazione (e quindi viene utilizzato un cambio antecedente);
+En los *parámetros de inserción* esta fecha puede ser configurada como la fecha de registro (por defecto) o como la fecha del documento. 
+Se prevé un parámetro de usuario de aviso cuando no está establecido un cambio a la fecha de registro (y por tanto se utiliza un cambio anterior);
 
 </details>
 
-**Cambio Diretto / Cambio inverso**: è il valore del cambio così come inserito nella tabella cambi valute: vengono esposti contemporaneamente sia il cambio DIRETTO (quello che normalmente si legge nei cambi valute), sia  il valore INVERSO. 
+**Cambio Directo / Cambio inverso**: es el valor del cambio tal como se inserta en la tabla de cambios de moneda: se exponen simultáneamente tanto el cambio DIRECTO (el que normalmente se lee en los cambios de moneda), como el valor INVERSO. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-L'utilizzo del valore inverso  deriva dal fatto che la procedura ha mantenuto la logica *incerto per certo* derivante dalla gestione lire – quante lire per una unità della seconda divisa – mentre l'euro ha cambi *certo per incerto* – con 1 euro quante unità ottengo della seconda divisa. Tale valore può essere forzato manualmente dall'utente (caso tipico: causali di pagamento/incasso in divisa, il valore del cambio applicato dalla banca non sarà mai quello ufficiale dei cambi internazionali);
+El uso del valor inverso proviene del hecho de que la aplicación ha mantenido la lógica *incierto por cierto* derivada de la gestión de liras – cuántas liras por una unidad de la segunda divisa – mientras que el euro tiene cambios *cierto por incierto* – con 1 euro cuántas unidades obtengo de la segunda divisa. Este valor puede ser forzado manualmente por el usuario (caso típico: causales de pago/cobro en divisa, el valor del cambio aplicado por el banco nunca será el oficial de los cambios internacionales);
 
 </details>
 
-**Totale divisa / Totale documento**: sono campi legati tra loro attraverso il cambio, quindi, in registrazioni in euro sarà indifferente scrivere l'importo in uno o nell'altro.  
-In una registrazione in divisa estera, solitamente, si inserisce il valore nel campo del Totale in divisa ottenendo il controvalore in Euro.
+**Total divisa / Total documento**: son campos interrelacionados a través del cambio, por lo que, en registros en euros, será indiferente escribir el monto en uno o en otro.  
+En un registro en divisa extranjera, normalmente, se inserta el valor en el campo del Total en divisa obteniendo el contravalor en Euro.
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-**[La causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#13-parametri)** può prevedere che questi siano aggiornati automaticamente al variare dei dati inseriti all'interno della griglia IVA, solo in incremento oppure anche in decremento. Il salvataggio della registrazione può essere bloccato se questo importo non è uguale ai dati IVA della registrazione;
+**[La causal contable](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#13-parametri)** puede prever que estos sean actualizados automáticamente al variar los datos ingresados dentro de la grilla IVA, solo en incremento o también en decremento. El guardado del registro puede ser bloqueado si este importe no es igual a los datos IVA del registro;
 
 </details>
 
-**Totale imposta**: Campo visualizzato alla base della griglia IVA, per visualizzarne l'importo complessivo, che viene aggiornato sempre automaticamente dalla procedura, non va inserito manualmente.
+**Total impuesto**: Campo visualizado en la base de la grilla IVA, para visualizar el importe total, que se actualiza automáticamente por el procedimiento, no debe ser ingresado manualmente.
 
-### Piede (Footer)
+### Pie (Footer)
 
-In basso nella form, nella scheda *Registrazione*, è presente la **descrizione movimento** della registrazione contabile: si tratta di una nota che si può impostare all'interno della causale di contabilità attraverso l'uso dei codici numerici parametrici (1) (2) … (10) 
-
+En la parte inferior del formulario, en la pestaña *Registro*, está presente la **descripción movimiento** del registro contable: se trata de una nota que se puede establecer dentro de la causal de contabilidad a través del uso de códigos numéricos paramétricos (1) (2) … (10). 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-i codici (8) e (9) si utilizzano solo nelle descrizioni di dettaglio dei sottoconti nella sezione del libro giornale. Con un doppio click nel campo è possibile aprire una ricerca all'interno delle note codificate (procedura presente all'interno delle Utilità: la modifica manuale di questa descrizione sarà eventualmente resettata su conferma utente una volta modificato uno dei campi gestiti automaticamente nelle note.
+los códigos (8) y (9) se utilizan solo en las descripciones de detalle de las subcuentas en la sección del libro diario. Con un doble clic en el campo es posible abrir una búsqueda dentro de las notas codificadas (procedimiento existente dentro de las Utilidades: la modificación manual de esta descripción será eventualmente reiniciada con la confirmación del usuario una vez modificado uno de los campos gestionados automáticamente en las notas.
 
-Alla base della maschera, aprendo la sezione espandibile (expander), sono presenti ulteriori campi di riepilogo dei dati IVA e della registrazione: meritano in particolare un'annotazione i campi dedicati alla visualizzazione dello sbilancio della registrazione, cosa normalmente non consentita (ma che si può abilitare nelle impostazioni della causale in uso). 
+En la parte inferior de la máscara, abriendo la sección expandible (expander), están presentes otros campos de resumen de los datos IVA y de la registración: merecen en particular una anotación los campos dedicados a la visualización del desequilibrio de la registración, lo que normalmente no está permitido (pero que se puede habilitar en las configuraciones de la causal en uso). 
 
 </details>
 
-Lo **sbilancio dare avere** serve per un controllo di quadrature al fine di poter salvare la registrazione. 
+El **desequilibrio debe/debe** sirve para un control de cuadraturas a fin de poder guardar la registración. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-A meno che non venga disabilitato il controllo all'interno dei parametri della causale contabile, cosa che sconsigliamo caldamente a meno di esigenze del tutto particolari.
+A menos que no se deshabilite el control en los parámetros de la causal contable, lo que desaconsejamos firmemente a menos que haya necesidades del todo particulares.
 
-Il valore dello sbilancio sarà proposto come importo nelle nuove righe di contabilità che saranno inserite manualmente nella registrazione al fine di bilanciarla automaticamente.
-
+El valor del desequilibrio se propondrá como importe en las nuevas líneas de contabilidad que se ingresen manualmente en el registro a fin de equilibrarlo automáticamente. 
 
 </details>
 
+#### Botones específicos de la Barra de Herramientas
 
-#### Pulsanti specifici della Ribbon Bar
+> **Parámetros de inserción**: llama a los parámetros de inserción de la primera nota. 
 
-> **Parametri di inserimento**: richiama i parametri di inserimento della prima nota. 
+- *Fecha de competencia económica*: presente en la grilla del registro IVA y reportada automáticamente en la del Libro diario, puede ser propuesta como diario (igual a la fecha de registro tanto para "desde fecha" como para "hasta fecha"), fin de ejercicio ("hasta fecha" se establecerá 31/12/XXXX), y ninguna para cuentas de tipo servicios (donde se dejará en blanco si la cuenta de contrapartida utilizada es de tipo "para ajustar" es decir, útil para el cálculo del ajuste, a fin de obligar al usuario a definir el rango de fechas);  
+- *Avisar desequilibrio en moneda*: controla si también la columna 'Importe en moneda' en el Libro Diario equilibra (aunque representada en una sola columna, el programa conoce la sección del movimiento);   
+- Avisar fecha de cambio: ya que el cambio propuesto automáticamente en la registración es el último cambio ingresado en la tabla "cambios de moneda", verifica que la fecha del cambio en la tabla "cambios de moneda" sea igual a la fecha de registro;  
+- *Subcuenta (Ninguna / Última introducida)*: referido a la subcuenta del titular de la registración ingresada en cabecera.
 
-- *Data competenza economica*: presente nella griglia del registro IVA e riportata in automatico in quella del Libro giornale, può essere proposta come giornaliero (pari alla data registrazione sia per "da data" sia per "a data"), fine esercizio ("a data" sarà impostato 31/12/XXXX), e nessuna per conti di tipo servizi (dove sarà lasciata in bianco se il conto di contropartita utilizzato è di tipo "da rettificare" ovvero utile per il calcolo dell'assestamento, al fine di obbligare l'utente a definire il range di date);  
-- *Avvisa sbilancio in valuta*: controlla se anche la colonna 'Importo in valuta' nel Libro Giornale bilancia (anche se rappresentata su un' unica colonna il programma conosce la sezione del movimento);   
-- Avvisa data cambio: poiché il cambio proposto in automatico nella registrazione è l'ultimo cambio inserito nella tabella "cambi valute", verifica che la data del cambio in tabella "cambi valute" sia uguale a data registrazione;  
-- *Sottconto (Nessuno / Ultimo introdotto)*: riferito al sottoconto intestatario della registrazione inserito in testata.
+> **Botones de recálculo**: actualizan los valores con un refresco / recálculo
+    - IVA
+    - Libro Diario
+    - Centros de costo (si se está posicionado en la Pestaña Analítica)
+    - Partidas (si se está posicionado en la Pestaña Partidas)
 
- > **Pulsanti di ricalcolo**: aggiornano i valori con un refresh / ricalcolo
-    - Iva
-    - Libro Giornale
-    - Centri di costo (se si è posizionati nella Tab Analitica)
-    - Partite (se si è posizionati nella Tab Partite)
+## **2. Registro**
 
-## **2. Registrazione**
+### 2.1 Extremos IVA del documento  
+La sección está presente **solo para registros IVA** (donde en la causal contable está configurado un **registro IVA** y un tipo de movimiento de IVA coherente).  
 
-### 2.1 Estremi IVA del documento  
-La sezione è presente **solo per registrazioni IVA** (dove nella causale contabile è settato un **registro IVA** ed un tipo di movimento iva coerente).  
+En caso de **inserción manual** de un nuevo registro, la sección puede ser completada de múltiples maneras:  
 
-In caso di **inserimento manuale** di una nuova registrazione la sezione può essere compilata in più modi:  
+- >*el registro del cliente/proveedor/agente titular de la registración no tiene ninguna subcuenta de contrapartida predeterminada y tampoco la aliquota IVA estándar*: en este caso el usuario selecciona el **Tipo IVA** (ver detalle a continuación) así como la **subcuenta** de contrapartida para la línea y **la aliquota IVA** relativa. Una vez establecido esto también, el procedimiento se encargará de desglosar el total del documento/registración ingresado en cabecera para asignar los importes respectivos a las diversas columnas de la línea. El usuario podrá modificar estos valores y proceder a nuevas inserciones, siempre con la misma lógica. El importe propuesto se calculará sobre la base de la diferencia faltante para cubrir el total de la registración;  
+- >*el registro del cliente/proveedor/agente prevé la subcuenta de contrapartida predeterminada y/o la aliquota IVA*: una vez ingresado el **Tipo IVA**, el procedimiento propone la subcuenta de contrapartida y/o la aliquota predeterminada, los importes se ingresan como en el caso anterior desglosando el total del documento/ registración y el usuario podrá modificarlos manualmente: la próxima línea, nuevamente, propondrá subcuenta/aliquota del registro y el importe obtenido del residual hasta cubrir el total del documento/registración;  
+- >*el registro del cliente/proveedor (no se gestiona para los agentes) prevé una lista de subcuentas de contrapartida, ninguna subcuenta de contrapartida predeterminada, y está presente la aliquota IVA predeterminada*: en este caso la aplicación propondrá directamente en la sección IVA la lista de subcuentas de contrapartida predeterminadas, cada una con su respectiva aliquota IVA de detalle o con la aliquota predeterminada del registro, y el usuario deberá ingresar los importes manualmente línea por línea. En este caso, la adición manual de una nueva línea no propondrá la subcuenta correspondiente, sino solo la aliquota IVA, desglozando el importe faltante hasta cubrir el total del documento/registración.
 
-- >*l'anagrafica cliente/fornitore/agente intestataria della registrazione non ha alcun sottoconto di contropartita predefinito e nemmeno l'aliquota iva standard*: in questo caso l'utente seleziona il **Tipo IVA** (vedi sotto il dettaglio) così come il **sottoconto** di contropartita per la riga e **l'aliquota IVA** relativa. Una volta impostato anche questo la procedura provvederà a scorporare il totale del documento/registrazione inserito in testata per assegnare gli importi relativi alle varie colonne della riga. L'utente potrà modificare questi valori e procedere a nuovi inserimenti, sempre con la stessa logica. L'importo proposto sarà calcolato sulla base della differenza mancante a coprire il totale della registrazione;  
-- >*l'anagrafica cliente/fornitore/agente prevede il sottoconto di contropartita predefinito e/o l'aliquota IVA*: una volta inserito il **Tipo IVA** la procedura propone il sottoconto di contropartita e/o l'aliquota predefinita, gli importi vengono inseriti come nel caso precedente scorporando il totale documento/registrazione e l'utente potrà modificarli manualmente: la prossima riga, nuovamente, proporrà sottoconto/aliquota dall'anagrafica e l'importo ottenuto dal residuo fino a copertura del totale documento/registrazione;  
-- >*l'anagrafica cliente/fornitore (non è gestito per gli agenti) prevede una lista di sottoconti di contropartita, nessun sottoconto di contropartita predefinito, ed è presente l'aliquota IVA predefinita*: in questo caso l'applicativo proporrà direttamente nella sezione IVA la lista dei sottoconti di contropartita predefiniti, ognuno con la relativa aliquota IVA di dettaglio o con l'aliquota predefinita dell'anagrafica, e l'utente dovrà inserire gli importi manualmente riga per riga. In questo caso l'aggiunta manuale di una nuova riga non proporrà il sottoconto relativo ma la sola aliquota IVA, scorporando l'importo mancante fino a copertura del totale documento/registrazione.
+**Tipo IVA**: es una tabla fija interna del sistema y contiene los valores:  
+> - **Genérico**: es el tipo **estándar** de movimiento IVA, suficiente en casi todos los casos. Este tipo de línea es considerado en algunos procedimientos IVA como movimiento mercancía;  
+> - **Destinado a la reventa**: se utiliza para las compras que son base de cálculo de los porcentajes a aplicar en la ventilación de los ingresos (por ejemplo, para supermercados o farmacias: estos minoristas no aplican el IVA artículo por artículo, pero se les permite hacer un total único de las ventas de fin de periodo y dividir los importes según la proporción de los artículos comprados en el periodo);  
+> - **Redondeos**: se trata de redondeos fuera del campo IVA, típicos, por ejemplo, de las facturas telefónicas. La utilidad de este indicativo es mínima, sin embargo, la subcuenta correspondiente se inserta según la lógica vista anteriormente;  
+> - **Venta IVA 74Ter**: se trata de un tipo de movimiento específico para las agencias de viaje, para las cuales la fecha de competencia IVA se retrasa 30 días respecto a la fecha de la operación (vendo en la fecha actual, el IVA será a pagar en la liquidación del próximo mes). En estas líneas se aplica la gestión del IVA del 74Ter con la liquidación IVA periódica correspondiente;  
+> - **Reventa**: se trata de las ventas sobre las que la aplicación aplicará el cálculo de la ventilación de los ingresos;   
+> - **Operación no agrícola**: se trata de un tipo de movimiento específico para las empresas sujetas a régimen agrícola, sirve para excluir de este régimen (establecido en la causal contable) para la línea específica;  
+> - **Servicio**: se trata de un tipo de movimiento específico para identificar que la línea proviene de una compra/venta de servicios, elemento importante en algunos procedimientos IVA (por ejemplo, en las listas **INTRASTAT**).
 
-**Tipo IVA**: è una tabella fissa interna del sistema e contiene i valori:  
-> - **Generico**: è il tipo **standard** di movimento IVA, sufficiente nella quasi totalità dei casi. Questo tipo riga viene considerato in alcune procedure IVA come movimento merce;  
-> - **Destinato alla rivendita**: è da utilizzare per gli acquisti che sono base di calcolo delle percentuali da applicare nella ventilazione dei corrispettivi (ad es. per supermercati o farmacie: questi dettaglianti non applicano l'IVA articolo per articolo, ma viene loro consentito di fare un totale unico delle vendite di fine periodo e suddividere gli importi secondo la proporzione degli articoli acquistati nel periodo);  
-> - **Arrotondamenti**: si tratta degli arrotondamenti fuori campo IVA, tipici ad esempio delle bollette telefoniche. L'utilità di questa indicazione è minima, comunque il sottoconto relativo viene inserito secondo la logica vista poco sopra;  
-> - **Vendita IVA 74Ter**: si tratta di un tipo movimento specifico per le agenzie di viaggio, per le quali la data competenza IVA slitta di 30 giorni rispetto alla data dell'operazione (vendo in data odierna, l'IVA sarà da versare nella liquidazione del prossimo mese). Su queste righe viene applicata la gestione IVA del 74Ter con la liquidazione IVA periodica relativa;  
-> - **Rivendita**: si tratta delle vendite sulle quali l'applicativo andrà ad applicare il calcolo della ventilazione dei corrispettivi;   
-> - **Operazione non agricola**: si tratta di un tipo movimento specifico per le società soggette a regime agricolo, serve per escludere da questo regime (impostato nella causale contabile) per la riga specifica;  
-> - **Servizio**: si tratta di un tipo movimento specifico per identificare che la riga deriva da un acquisto/vendita di servizi, elemento importante in alcune procedure IVA (ad esempio glie elenchi **INTRASTAT**).
+**% Indetralidad**: se retoma de la aliquota IVA ingresada en la línea. Se desaconseja la forzatura manual, la operación correcta es modificar la aliquota IVA;  Determina el cálculo de la columna (impuesto) *indetralible*.
 
-**% Indetraibilità**: viene ripreso dall'aliquota IVA inserita nella riga. Se ne sconsiglia la forzatura manuale, l'operazione corretta è modificare l'aliquota IVA;  DEtermina il calcolo della colonna (imposta) *indetraibile*
+**Impuesto**: puede ser forzado manualmente respecto al cálculo realizado por el procedimiento: puede suceder, de hecho, que el documento en compra tenga un redondeo no gestionado correctamente y el usuario deba registrar el documento tal como lo recibe;  
 
-**Imposta**: può essere forzato manualmente rispetto al calcolo effettuato  dalla procedura: può succedere, infatti, che il documento in acquisto abbia un arrotondamento non gestito correttamente, l'utente deve registrare il documento così come lo riceve;  
+**Total divisa / total**: son campos calculados y no almacenados a nivel de base de datos;  
 
-**Totale valuta / totale**: sono campi calcolati e non memorizzati a livello di database;  
-
-**Da data competenza/A data competenza**: sono le date di **competenza economica**, fondamentali per i **calcoli** automatici delle **rettifiche e integrazioni** sia a livello di bilancio infrannuale che di bilancio contabile. Sulla base della loro indicazione saranno calcolati i ratei ed i risconti.  
+**Desde la fecha de competencia/Hasta la fecha de competencia**: son las fechas de **competencia económica**, fundamentales para los **cálculos** automáticos de las **rectificaciones e integraciones** tanto a nivel de balance intermedio como de balance contable. Con base en su indicación se calcularán los ajustes y los anticipos.  
 
 <details>
 
-  <summary>**ESEMPIO** Click to expand!</summary>
+  <summary>**EJEMPLO** Click para expandir!</summary>
  
-siamo al 31/03/anno X. 
+estamos al 31/03/año X. 
 
-Se la registrazione di costo riporta date di competenza 31/03/X - 31/03/X+1, in data 31/12/X al lancio delle procedure di assestamento sarà calcolato un risconto attivo per la quota parte del costo di competenza 01/01/X+1 - 31/03/X+1.
+Si el registro de costo reporta fechas de competencia 31/03/X - 31/03/X+1, en la fecha 31/12/X, al lanzar los procedimientos de ajuste, se calculará un anticipo activo por la parte del costo de competencia 01/01/X+1 - 31/03/X+1.
 
-Se la registrazione di costo eseguita il 31/01/X riporta date di competenza 31/01/X-1 -31/01/X, al lancio delle procedure di assestamento in data 31/12//X-1 verrà calcolato un rateo passivo per la quota parte di costo di competenza 31/01/X-1 - 31/12/X-1
+Si el registro de costo realizado el 31/01/X reporta fechas de competencia 31/01/X-1 -31/01/X, al lanzar los procedimientos de ajuste en la fecha 31/12//X-1 se calculará un ajuste pasivo por la parte del costo de competencia 31/01/X-1 - 31/12/X-1.
 
 </details>
 
-Questo range di date può essere gestito automaticamente, a seconda dei ***Parametri di inserimento***, in 3 modi alternativi: 
+Este rango de fechas puede ser gestionado automáticamente, según los ***Parámetros de inserción***, de 3 maneras alternativas: 
 
-- >*Fine esercizio* con la quale la data iniziale viene proposta sulla base della data documento e quella finale come data fine esercizio 
-- >*Giornaliera* (con la quale entrambe le date sono impostate sulla base della data documento);
-- >*Nessuna data per tipo conto servizio* (opzione consigliata) l'applicativo non proporrà nessuna data per i sottoconti economici che prevedono nel tipo conto il flag *servizio* ma obbligherà l'utente all'inserimento manuale del range corretto (con gli altri tipi conto proporrà la stessa data documento su entrambe le date).
+- >*Fin de ejercicio* con la cual la fecha inicial se propone con base en la fecha del documento y la fecha final como fecha fin de ejercicio. 
+- >*Diaria* (con la cual ambas fechas se establecen con base en la fecha del documento);
+- >*Ninguna fecha para tipo cuenta servicio* (opción recomendada) la aplicación no propondrá ninguna fecha para las subcuentas económicas que prevén en el tipo cuenta el flag *servicio*, pero obligará al usuario a ingresar manualmente el rango correcto (con los otros tipos de cuenta propondrá la misma fecha del documento en ambas fechas).
 
-:::important[Attenzione]
-perché possano essere calcolati automaticamente i ratei e risconti dalla procedura di assestamento è necessario che il tipo conto utilizzato per i conti interessati dalle rettifiche sia definito nella tabella **[Tipi conto](/docs/configurations/tables/finance/account-types)** con il flag Servizio.
+:::important[Atención]
+para que se puedan calcular automáticamente los ajustes y anticipos por procedimiento de ajuste, es necesario que el tipo de cuenta utilizado para las cuentas afectadas por las rectificaciones esté definido en la tabla **[Tipos de cuenta](/docs/configurations/tables/finance/account-types)** con el flag Servicio.
 
-Esempio di tipi conto che hanno il flag servizio nella tabella Tipi conto (nei database standard) "Costi da rettificare" e "Ricavi da rettificare".
+Ejemplo de tipos de cuenta que tienen el flag servicio en la tabla Tipos de cuenta (en bases de datos estándar) "Costos a ajustar" y "Ingresos a ajustar".
 
-Il tipo conto idoneo viene assegnato al sottoconto in questione direttamente nel piano dei conti.
+El tipo de cuenta adecuado se asigna a la subcuenta en cuestión directamente en el plan de cuentas.
 :::
 
-**Mese**: è il **periodo di riferimento IVA per la registrazione**, ottenuto rispetto al tipo di liquidazione e alla data di competenza IVA. Il campo utilizzato effettivamente nella liquidazione, comunque, è la data competenza IVA; 
+**Mes**: es el **periodo de referencia IVA para la registración**, obtenido respecto al tipo de liquidación y a la fecha de competencia IVA. El campo utilizado efectivamente en la liquidación, sin embargo, es la fecha competencia IVA; 
  
-**Data competenza IVA**: il campo viene proposto rispetto all'impostazione della causale contabile, tipicamente come data registrazione per gli acquisti e data documento per le vendite (se il movimento è vendita 74Ter allora è data documento + 30gg). Questa è la **data di riferimento per la stampa della liquidazione IVA periodica**; 
+**Fecha competencia IVA**: el campo se propone según la configuración de la causal contable, típicamente como fecha de registro para las compras y fecha de documento para las ventas (si el movimiento es venta 74Ter entonces es fecha de documento + 30 días). Esta es la **fecha de referencia para la impresión de la liquidación IVA periódica**; 
  
-**Competenza plafond**: questa data viene presa come riferimento per il concorso della registrazione in questione al calcolo del plafond; viene proposta pari alla data documento per tutte le aliquote IVA che prevedono la gestione del plafond IVA;  
+**Competencia plafond**: esta fecha se toma como referencia para el concurso de la registración en cuestión al cálculo del plafond; se propone igual a la fecha del documento para todas las aliquotas IVA que prevén la gestión del plafond IVA;  
 
-**Nota variazione anni precedenti**: il campo è attivo solo per registrazioni con tipo documento che prevede il flag *Nota di variazione*. Serve ad indicare che la riga della nota di credito è riferita ad anni precedenti rispetto all'anno del documento.
+**Nota variación años anteriores**: el campo está activo solo para registros con tipo de documento que prevé el flag *Nota de variación*. Sirve para indicar que la línea de la nota de crédito se refiere a años anteriores respecto al año del documento.
   
-**Data riferimento nota di variazione**: il campo è attivo solo per registrazioni con tipo documento che prevede il flag *Nota di variazione*. Serve ad indicare la data di riferimento della fattura rettificata; 
+**Fecha referencia nota de variación**: el campo está activo solo para registros con tipo de documento que prevé el flag *Nota de variación*. Sirve para indicar la fecha de referencia de la factura rectificada; 
 
-**Divisione**: il campo è visibile solo se la causale prevede la gestione delle divisioni. In questo caso sarà possibile suddividere la stessa registrazione IVA su più divisioni aziendali.
+**División**: el campo es visible solo si la causal prevé la gestión de las divisiones. En este caso será posible dividir el mismo registro IVA en más divisiones empresariales.
 
-#### Annotazioni ulteriori:  
-- non è possibile salvare **righe IVA con imponibile 0** a meno che la causale contabile non lo consenta (flag *consenti sottoconti con valore 0*); 
+#### Anotaciones adicionales:  
+- no es posible guardar **líneas IVA con imponible 0** a menos que la causal contable no lo permita (flag *permite subcuentas con valor 0*); 
  
-- gli **arrotondamenti dell'IVA** sono gestiti riga per riga, mentre la normativa prescrive che il calcolo sia effettuato su un imponibile che raggruppa tutte le righe con la stessa aliquota IVA: è possibile, quindi, che ci sia una differenza dovuta unicamente alla gestione arrotondamenti (il discorso vale solo per l'inserimento manuale di una registrazione contabile: le contabilizzazioni automatiche da acquisti e dalle vendite effettuano già il calcolo corretto) rispetto al documento in registrazione.
+- los **redondeos del IVA** están gestionados línea por línea, mientras que la normativa prescribe que el cálculo debe realizarse sobre un imponible que agrupa todas las líneas con la misma aliquota IVA: es posible, por tanto, que haya una diferencia debida únicamente a la gestión de redondeos (esto solo aplica a la inserción manual de un registro contable: las contabilizaciones automáticas de compras y ventas ya realizan el cálculo correcto) respecto al documento en registración.
  
-    Una volta rilevata la differenza le soluzioni sono: 
-        1. forzare manualmente una riga IVA 
-        2. premere il pulsante di ricalcolo imposta che si trova nella testata e far allineare automaticamente dall'applicativo l'ultima riga di ogni aliquota presente.
+    Una vez detectada la diferencia, las soluciones son: 
+        1. forzar manualmente una línea IVA 
+        2. presionar el botón de recálculo de impuesto que se encuentra en la cabecera y hacer que la última línea de cada aliquota presente se alinee automáticamente.
 
-### 2.2 Libro giornale
+### 2.2 Libro diario
 
 <details>
 
-  <summary>Click per visualizzare l'esempio</summary>
+  <summary>Haz clic para ver el ejemplo</summary>
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/record-tab/image02.png)
 
 </details>
 
-Ogni registrazione di contabilità generale **deve obbligatoriamente avere righe in questa sezione** per poter essere salvata.
+Cada registro de contabilidad general **debe obligatoriamente tener líneas en esta sección** para poder ser guardado.
 
-- > In caso di **registrazioni IVA** questa parte viene **calcolata**, sulla base della logica dei ***tipi importo***, secondo i dati caricati nelle righe della precedente **griglia IVA**; 
+- > En caso de **registros IVA** esta parte se **calcula**, sobre la base de la lógica de ***tipos de importe***, según los datos cargados en las líneas de la anterior **grilla IVA**; 
 
-- > in caso di registrazioni di **pagamento/incasso**, invece, gli importi **dipendono dagli importi dei pagamenti caricati nella scheda *Pagamenti***; 
+- > en caso de registros de **pago/cobro**, el importe **dependerá de los importes de los pagos cargados en la pestaña *Pagos***; 
 
-- > negli **altri casi**, invece, le righe e gli importi saranno gestiti in generale **manualmente** dall'utente.  
+- > en **otros casos**, en cambio, las líneas y los importes serán gestionados en general **manualmente** por el usuario.  
 
 :::note[Nota]
-la causale può proporre una lista di sottoconti preimpostati: l'utente dovrà in questo caso inserire riga per riga soltanto gli importi nella sezione Dare / Avere corretta. 
+la causal puede proponer una lista de subcuentas preestablecidas: el usuario deberá en este caso ingresar línea por línea solo los importes en la sección Deber / Haber correcta. 
 
-Al momento del salvataggio, se la causale non prevede il salvataggio di sottoconti a zero, le righe non valorizzate saranno cancellate automaticamente;
+Al momento del guardado, si la causal no prevé el guardado de subcuentas a cero, las líneas no valoradas serán borradas automáticamente;
 
-Questa modalità di utilizzo è tipica, ad esempio, pr le scritture delle paghe dipendenti dove il template della causale propone tutti i possibili sottoconti utili, ma di volta in volt se ne utilizzano solo alcuni 
+Esta modalidad de uso es típica, por ejemplo, para los asientos de nómina de empleados donde el formato de la causal propone todas las posibles subcuentas útiles, pero de vez en cuando solo se utilizan algunas.
 :::
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
  
-- in caso di registrazione semplice ‘dare/avere' è possibile codificare una causale specifica che preveda già i sottoconti da utilizzare con il tipo importo ‘Tot. Doc./Registrazione' per far si che l'utente scriva semplicemente l'importo nei campi dei totali di testata e la procedura li metta in dare/avere secondo la causale;
+- en caso de registro simple ‘deber/haber' es posible codificar una causal específica que prevea ya las subcuentas a utilizar con el tipo importe ‘Tot. Doc./Registro' para que el usuario simplemente escriba el importe en los campos de totales de la cabecera y el procedimiento los coloque en deber/haber según la causal;
   
-- ogni nuovo inserimento manuale delle righe andrà a coprire l'eventuale sbilancio presente nella registrazione: si ricorda che le registrazioni sbilanciate non possono essere salvate, se non abilitando la causale.
+- cada nueva inserción manual de las líneas cubrirá el eventual desequilibrio presente en la registración: se recuerda que las registraciones desequilibradas no pueden ser guardadas, a no ser que se habilite la causal.
 
 </details>
 
-#### Campi specifici della griglia Libro Giornale
+#### Campos específicos de la grilla Libro Diario
 
-**Valuta**: può prevedere i dettagli della valuta (data cambio, valore cambio e importo valuta): l'importo valuta va caricato sempre in valore assoluto (il segno dare/avere nella divisa della società definisce anche il suo segno); i campi in valuta e nella divisa della società possono essere svincolati tra loro non ricalcolando gli  importi ai messaggi di conferma che sono eseguiti in modifica degli stessi;  
-**Da data competenza/A data competenza**: questo range di date, come detto già per la sezione IVA, è fondamentale per la gestione delle scritture di assestamento sia per i bilanci infrannuali che per il bilancio contabile. Si rimanda alle note specifiche inserite sopra;  
-**Divisione**: può essere presente se impostato in causale, può servire per suddividere la stessa registrazione su più divisioni;  
-**Descrizione dettaglio** (ne è consigliato l'inserimento di default su tutte): può essere presente se impostato in causale, anche questo può essere in parte gestito automaticamente in causale con le note (1) – (2) … ecc come per la descrizione generale. Di particolare interesse la gestione dei codici (8)-(9) relativamente alle righe clienti/fornitori di chiusura partite contabili;  
-**Data valuta banca**: Il campo può essere automatizzato rispetto al numero di giorni impostato, su ogni anagrafica banche, per ogni causale contabile che le riguarda;  
-**Num. riga**: può tornare utile per registrazioni particolarmente lunghe (es. paghe) per mantenere in ordine di inserimento i vari sottoconti;  
-**Rif. manuale partite**: può essere presente, se impostato in causale, può servire per legare manualmente righe di contabilità senza passare per la gestione a partite aperte;  
-**Sottoconto di contropartita**: può essere presente, se impostato in causale, ne è sconsigliato l'uso manuale. La gestione automatica in registrazioni IVA prevede per le righe clienti/fornitori di assegnare il sottoconto di costo/ricavo  di importo maggiore, mentre per le righe di costo/ricavo/IVA la contropartita sarà il sottoconto cliente/fornitore.
+**Divisa**: puede prever los detalles de la divisa (fecha cambio, valor cambio e importe moneda): el importe moneda debe cargarse siempre en valor absoluto (el signo deber/haber en la divisa de la empresa define también su signo); los campos en moneda y en la divisa de la empresa pueden desvincularse entre sí sin recalcular los importes en los mensajes de confirmación que se ejecutan en la modificación de los mismos;  
+**Desde la fecha de competencia/Hasta la fecha de competencia**: este rango de fechas, como se mencionó ya para la sección IVA, es fundamental para la gestión de los asientos de ajuste tanto para los balances intermedios como para el balance contable. Se remite a las notas específicas insertadas arriba;  
+**División**: puede estar presente si se configura en la causal, puede servir para dividir el mismo registro en más divisiones;  
+**Descripción detalle** (se recomienda su ingreso por defecto en todas): puede estar presente si se configura en la causal, también esto puede ser gestionado automáticamente en causal con las notas (1) – (2) … etc. como para la descripción general. De particular interés es la gestión de los códigos (8)-(9) relativamente a las líneas de clientes/proveedores de cierre contable;  
+**Fecha cambio banco**: El campo puede ser automatizado respecto al número de días establecido, en cada registro de bancos, para cada causal contable que les concierne;  
+**Núm. línea**: puede ser útil para registros particularmente largos (ej. nómina) para mantener en orden de ingreso los diversos subcuentas;  
+**Rif. manual partidas**: puede estar presente, si se configura en la causal, puede servir para vincular manualmente líneas de contabilidad sin pasar por la gestión de las partidas abiertas;  
+**Subcuenta de contrapartida**: puede estar presente, si se configura en la causal, se desaconseja su uso manual. La gestión automática en registros IVA prevé que para las líneas de clientes/ proveedores se asigne la subcuenta de costo/ingreso  de importe mayor, mientras que para las líneas de costo/ingreso/IVA la contrapartida será la subcuenta cliente/proveedor.
 
-#### Ulteriori annotazioni  
+#### Otras anotaciones  
 
-l'utente può procedere a forzare manualmente le righe di libro giornale: normalmente si consiglia di allineare i dati a partire direttamente dall'IVA. Eventuali forzature possono essere resettate premendo il pulsante di ricalcolo libro giornale.  
-Nella causale contabile, in particolare per tutte le causali IVA, per la riga con il *Tot. Doc./registrazione* si inserisce il conto generico dei clienti/fornitori, che sarà sostituito di volta in volta con il sottoconto intestatario della registrazione: questa sostituzione sarà effettuata solo se nei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, sezione lista conti clienti/fornitori, viene autorizzata (cioè inserita in griglia) la tipologia di sottoconto relativa associandola al conto mastro il quale dovrà corrispondere a quello presente nel template della causale contabile.
+el usuario puede proceder a forzar manualmente las líneas de libro diario: normalmente se recomienda alinear los datos a partir directamente del IVA. Eventuales forzaduras pueden ser reiniciadas presionando el botón de recálculo de libro diario.  
+En la causal contable, en particular para todas las causales IVA, para la línea con el *Tot. Doc./registro* se inserta la cuenta genérica de los clientes/proveedores, que será sustituida de vez en cuando con la subcuenta titular del registro: esta sustitución se efectuará solo si en los **[parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters)**, sección lista de cuentas clientes/proveedores, está autorizada (es decir, inserta en grilla) la tipología de subcuenta relativa asociándola a la cuenta maestra la cual deberá corresponder a la que está presente en la plantilla de la causal contable.
 
-## 3. Partite
+## 3. Partidas
 
-La scheda è presente **solo se la causale contabile ha il flag *Apertura partite*** impostato. 
+La pestaña está presente **solo si la causal contable tiene activado el flag *Apertura partidas***. 
 
-### 3.1 Griglia Tipologia di pagamento
+### 3.1 Grilla Tipología de pago
 
-griglia dedicata alla gestione dei dati di calcolo delle partite sottostanti, replica i dati presenti all'interno dell'anagrafica cliente/fornitore/agente intestatario della registrazione.
+grilla dedicada a la gestión de los datos de cálculo de las partidas subyacentes, replica los datos presentes dentro del registro del cliente/proveedor/agente titular de la registración.
  
-Se nell'anagrafica non è presente alcun dato di default da poter leggere, questa sezione può essere compilata manualmente nel caso di inserimento manuale della registrazione contabile.
+Si en el registro no hay ningún dato por defecto que se pueda leer, esta sección puede ser completada manualmente en caso de inserción manual del registro contable.
 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
   
-  Per altri tipi di registrazione (ad esempio, per i pagamenti anticipati è possibile codificare una causale che apra la partita, nel segno opposto, invece di chiuderla visto che il documento non è stato ancora rilevato): in questo caso la gestione di questa sezione diventa manuale, cosicché l'utente potrà inserire i dati essenziali del tipo di pagamento, della soluzione di pagamento e del sottoconto di riferimento, con il 100% inserito nel campo *Percentuale*.  
+  Para otros tipos de registro (por ejemplo, para los pagos anticipados es posible codificar una causal que abra la partida, en el signo opuesto, en lugar de cerrarla, ya que el documento aún no ha sido registrado): en este caso la gestión de esta sección se vuelve manual, de modo que el usuario podrá ingresar los datos esenciales del tipo de pago, de la solución de pago y de la subcuenta de referencia, con el 100% ingresado en el campo *Porcentaje*.  
 
-    Per questa sezione è da segnalare che:  
-    - la partita può essere creata anche su sottoconti non di anagrafica e che non hanno il flag Apertura partite nel piano dei conti (questo flag è relativo al solo controllo che i dati di giornale e partite corrispondano per i sottoconti che l'hanno impostato);  
-    - gli appoggi bancari sono riportati tipicamente dall'anagrafica o dal documento contabilizzato dall'area acquisti/vendite/percipienti, ma possono essere di volta in volta forzati richiamandone uno differente utilizzando l'help abi/cab (doppio click nel campo).
+    Para esta sección se destaca que:  
+    - la partida puede ser creada también sobre subcuentas que no estén en el registro y que no tienen el flag Apertura partidas en el plan de cuentas (este flag se refiere solo al control de que los datos de diario y partidas coincidan para las subcuentas que lo han configurado);  
+    - los apoyos bancarios son reportados típicamente por el registro o por el documento contabilizado del área de compras/ventas/percipientas, pero pueden ser forzados de vez en cuando llamando uno diferente utilizando el help abi/cab (doble clic en el campo).
 </details>
 
 
- L'appoggio bancario collegato in questa sezione (campi **Banca, Descrizione Banca, CIN, ABI, CAB, Conto corrente,IBAN, SWIFT**)
+ El apoyo bancario vinculado en esta sección (campos **Banco, Descripción Banco, CIN, ABI, CAB, Cuenta corriente, IBAN, SWIFT**)
 
-sarà il dato normalmente utilizzato nei pagamenti fornitori quale banca beneficiaria del pagamento a meno che non sia impostato il flag di **[Imponi banca d'appoggio presente in anagrafica del fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters)**;  
+será normalmente el dato utilizado en los pagos a proveedores como el banco beneficiario del pago a menos que no se establezca el flag **[Imponer banco de apoyo presente en registro del proveedor](/docs/configurations/parameters/treasury/vendor-payments-parameters)**;  
  
 
-Normalmente viene inserito il campo **Percentuale** al 100%. Con percentuali diverse (che diano somma 100%) è possibile gestire su varie righe anche combinazioni di pagamenti differenti. 
+Normalmente se inserta el campo **Porcentaje** al 100%. Con porcentajes diferentes (que sumen 100%) es posible gestionar en varias líneas también combinaciones de pagos diferentes. 
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
 
-Nel campo **Importo** si può inserire un importo fisso da utilizzare per la combinazione tipo pag./soluzione pag. della riga in gestione; il campo **Imposta** consente di definire, di questo importo, quanto sia riferibile all'IVA (questo serve nel caso in cui la soluzione di pagamento preveda delle percentuali imponibile/imposta differenziate tra le varie rate, per ottenere un calcolo corretto). È possibile inserire una combinazione importo/percentuale:
+En el campo **Importe** se puede ingresar un importe fijo que se utilizará para la combinación tipo pag./solución pag. de la línea gestionada; el campo **Impuesto** permite definir, de este importe, cuánto es referible al IVA (esto sirve en caso de que la solución de pago prevé porcentajes imponible/impuesto diferenciados entre las diversas cuotas, para obtener un cálculo correcto). Es posible ingresar una combinación importe/porcentaje:
 
-**Raggruppa partite**: il flag, non attivo, viene ripreso dall'anagrafica cliente/fornitore: sostanzialmente non ha uso pratico, in quanto è ben raro che due partite abbiano stesso tipo pagamento e stessa data scadenza all'interno dello stesso documento;
+**Agrupa partidas**: el flag, no activo, se retoma del registro del cliente/proveedor: esencialmente no tiene uso práctico, ya que es bien raro que dos partidas tengan el mismo tipo de pago y la misma fecha de vencimiento dentro del mismo documento;
 
-Al di sotto della griglia ci sono alcuni campi di riepilogo della situazione cliente/fornitore: l'importo del **fido concesso** nel modulo Rischio cliente, il valore dell'**esposizione** ottenuto secondo la situazione delle partite aperte (senza considerare la registrazione in uso) e il **saldo contabile** (considerando anche la registrazione in uso);
+Debajo de la grilla hay algunos campos de resumen de la situación del cliente/proveedor: el importe del **límite concedido** en el módulo Riesgo del cliente, el valor de la **exposición** obtenido según la situación de las partidas abiertas (sin considerar el registro en uso) y el **saldo contable** (considerando también el registro en uso);
 
-Nel caso di registrazione derivante dalla **contabilizzazione insoluti**, la griglia superiore NON ha nessuna rilevanza per il calcolo delle partite sottostanti (tipicamente l'anagrafica prevede partite per RB, ma gli insoluti vengono gestiti come BB e non si devono riemettere in automatico altre riba): viene letta unicamente nel caso serva il dato degli appoggi bancari.
+En el caso de un registro derivado de la **contabilización de morosidades**, la grilla superior NO tiene ninguna relevancia para el cálculo de las partidas subyacentes (típicamente el registro prevé partidas por RB, pero las morosidades se gestionan como BB y no deben reemitirse automáticamente otras facturas): se lee únicamente en caso de que se necesite el dato de los apoyos bancarios.
 </details>
 
 
 
-### 3.2 Griglia Partite
+### 3.2 Grilla Partidas
 
-**presenta la lista delle partite calcolate secondo le impostazioni della sezione sopra**. 
+**presenta la lista de las partidas calculadas según las configuraciones de la sección anterior**. 
 
-L'utente può forzare il tipo di pagamento, la data scadenza e gli importi delle varie rate (avendo cura di rispettare i totali). La griglia delle partite NON consente l'inserimento manuale di una nuova rata. 
+El usuario puede forzar el tipo de pago, la fecha de vencimiento y los importes de las diversas cuotas (teniendo cuidado de respetar los totales). La grilla de partidas NO permite la inserción manual de una nueva cuota. 
 
-Nel caso in cui la causale preveda sia l'apertura partite, che la chiusura per compensazione e sia stato attivato anche il flag *Avviso*, al momento del salvataggio della registrazione verrà restituito all'utente un messaggio di avviso della presenza di partite da poter compensare.
+En el caso de que la causal prevea tanto la apertura de partidas, como el cierre por compensación y se haya activado también el flag *Aviso*, al momento de guardar el registro, el usuario recibirá un mensaje de advertencia sobre la presencia de partidas que pueden ser compensadas.
 
-**Stato Partita**: viene indicato lo stato della partita (aperta, parzialmente aperta, chiusa);  
-**Conto/sottoconto/descrizione**: sottoconto cliente o fornitore al quale la partita è riferita;  
-**Pagamento**: tipo pagamento (bonifico, contanti ecc...);  
-**Scadenza**: data di scadenza calcolata a partire dalle condizioni di pagamento della griglia soprastante o imposta manualmente;  
-**Codice documento**: codice del documento che ha generato la partita (esempio FA = fattura di acquisto, FV = fattura di vendita);  
-**Data documento**: data del documento (esempio fattura di acquisto) che ha generato la partita;  
-**Numero documento**: numero del documento che ha generato la partita;  
-**Divisa**: divisa in cui è denominata la partita (es. EUR = Euro);  
-**Cambio diretto / Cambio inverso**: tasso di cambio (esposto sia come tasso diretto *certo per incerto*, che come tasso indiretto *incerto per certo*) che ha determinato il valore in valuta ed il controvalore in Euro della partita;  
-**Data Valuta**: data di riferimento del tasso di cambio;  
-**Importo in valuta**: importo nella divisa estera o pari all'importo in euro se il cambio è 1;  
-**Importo Dare / Avere**: la partita ha un segno (o sezione che dir si voglia) così come il movimento contabile che l'ha generata. La partita con segno dare sarà una partita a nostro credito, mentre una partita con segno avere sarà una partita a debito (esempio a fronte di fattura ricevuta da fornitore o di nota di accredito emessa al cliente) ; 
+**Estado Partida**: se indica el estado de la partida (abierta, parcialmente abierta, cerrada);  
+**Cuenta/subcuenta/descripción**: subcuenta del cliente o proveedor a la que se refiere la partida;  
+**Pago**: tipo de pago (transferencia, efectivo, etc...);  
+**Vencimiento**: fecha de vencimiento calculada a partir de las condiciones de pago de la grilla anterior o impuesta manualmente;  
+**Código documento**: código del documento que generó la partida (ejemplo FA = factura de compra, FV = factura de venta);  
+**Fecha documento**: fecha del documento (ejemplo factura de compra) que generó la partida;  
+**Número documento**: número del documento que generó la partida;  
+**Divisa**: divisa en la que está denominada la partida (ej. EUR = Euro);  
+**Cambio directo / Cambio inverso**: tipo de cambio (expuesto tanto como tipo de cambio directo *cierto para incierto*, como tipo de cambio indirecto *incierto para cierto*) que ha determinado el valor en moneda y el contravalor en Euro de la partida;  
+**Fecha Moneda**: fecha de referencia del tipo de cambio;  
+**Importe en moneda**: importe en la divisa extranjera o igual al importe en euros si el cambio es 1;  
+**Importe Debe / Haber**: la partida tiene un signo (o sección que así se le quiera llamar) así como el movimiento contable que la ha generado. La partida con signo deber será una partida a nuestro favor, mientras que una partida con signo haber será una partida a deber (ejemplo a cuenta de factura recibida de proveedor o de nota de crédito emitida al cliente); 
 
-E' inoltre possibile bloccare il pagamento della partita (Flag **Non Pagabile**): la procedura memorizzerà la data e l'utente che ha bloccato il pagamento con un'eventuale nota esplicativa (**Inizio Blocco, Utente Blocco, Note Blocco**) così come data e utente sbloccante (**Utente Sblocco, Fine Blocco**), per entrambe le operazioni sono previsti specifici diritti utente nell'ARM. 
+Además, es posible bloquear el pago de la partida (Flag **No Pagable**): la aplicación memorizará la fecha y el usuario que bloqueó el pago con una eventual nota explicativa (**Inicio Bloqueo, Usuario Bloqueo, Notas Bloqueo**) así como la fecha y el usuario desbloqueante (**Usuario Desbloqueo, Fin Bloqueo**), para ambas operaciones se prevén derechos de usuario específicos en el ARM. 
 
-**Numero / anno partita**: assegnati automaticamente per identificare la partita;  
-**Posizione partita**: combo box collegata ad una una tabella libera definibile dall'utente, consente di classificare le partite contabili fin dal momento della loro creazione;  
-**Note** (della partita): note libere che si possono anche legare automaticamente in causale contabile alla descrizione di dettaglio del sottoconto così come inserite in contabilità.  
-**Agente**: in questo campo è possibile agganciare l'agente di riferimento per la partita: questo viene valorizzato automaticamente sulla base dell'agente inserito nella fattura di vendita all'atto della contabilizzazione (nel caso siano presenti più agenti, sarà assegnato quello con provvigioni superiori).  
-**Data Riferimento / Numero Riferimento**: Campi ripresi dalla data documento  e numero documento nella registrazione contabile (se presenti, altrimenti ripresi da data/numero registrazione), premettono di raggruppare e filtrare le partite riferite allo stesso documento (ad esempio una nota di credito che si riferisce ad una fattura, per visualizzare il partitario tutto insieme).  
-**Cig** e **Cup**: ripresi dalla fattura di vendita, ma possono anche esser scritti a mano (tramite combo box) Si veda **[documentazione sui campi in fattura](/docs/sales/sales-invoices/invoicing/sales-invoice).**  
-**Conto / Sottoconto cauzione**: conto dedicato alla contabilizzazione dei depositi cauzionali agganciati alle partite tramite apposita modalità. Vedere [**qui**](/docs/finance-area/maturity-values/maturity-values/maturity-values/search-maturity-values) il flag *Mostra cauzioni*.
-**Modelli di riferimento** e **Numero di riferimento**: campi solitamente non utilizzati in Italia, tipici della Croazia (dove quando l'azienda emette la fattura ad ogni scadenza associa un tipo/codice identificativo della rata, che il cliente poi riporta nel pagamento e la banca riporta nel movimento d'incasso: dall'estratto conto bancario, quindi, facilmente si può risalire alla rata chiusa. Il campi rappresentano un riferimento anche a seguito di una futura implementazione di importazione movimenti bancari).  
-**Ritardo medio giorni di pagamento**: Non utilizzato in Italia: riprende il valore dei giorni di ritardo dell'anagrafica cliente ma è modificabile anche manualmente. Può essere utilizzato nella simulazione di cash flow.
+**Número / año partida**: asignados automáticamente para identificar la partida;  
+**Posición partida**: combo box vinculada a una tabla libre definible por el usuario, permite clasificar las partidas contables desde el momento de su creación;  
+**Notas** (de la partida): notas libres que se pueden también vincular automáticamente en causal contable a la descripción detallada de la subcuenta así como se insertaron en contabilidad.  
+**Agente**: en este campo es posible vincular el agente de referencia para la partida: este se valoriza automáticamente sobre la base del agente insertado en la factura de venta al momento de la contabilización (en caso de que haya más de un agente, será asignado el que tenga comisiones superiores).  
+**Fecha de Referencia / Número de Referencia**: Campos tomados de la fecha documento  y número documento en la registración contable (si están presentes, de lo contrario tomados de fecha/número registración), permiten agrupar y filtrar las partidas referidas al mismo documento (por ejemplo una nota de crédito que se refiere a una factura, para visualizar la conta todo junto).  
+**Cig** y **Cup**: tomados de la factura de venta, pero pueden también ser escritos a mano (a través de combo box) Ver **[documentación sobre los campos en factura](/docs/sales/sales-invoices/invoicing/sales-invoice)**.  
+**Cuenta / Subcuenta de garantía**: cuenta dedicada a la contabilización de los depósitos de garantía vinculados a las partidas a través de un modo específico. Ver [**aquí**](/docs/finance-area/maturity-values/maturity-values/maturity-values/search-maturity-values) el flag *Mostrar garantías*.
+**Modelos de referencia** y **Número de referencia**: campos generalmente no utilizados en Italia, típicos de Croacia (donde cuando la empresa emite la factura a cada vencimiento asocia un tipo/código identificativo de la cuota, que el cliente luego reporta en el pago y el banco reporta en el movimiento de cobro: del extracto bancario, por lo tanto, se puede fácilmente rastrear la cuota cerrada). Los campos representan un referente también a raíz de una futura implementación de importación de movimientos bancarios.  
+**Retraso medio de días de pago**: No utilizado en Italia: toma el valor de los días de retraso del registro del cliente pero es modificable también manualmente. Puede ser utilizado en la simulación de flujo de caja.
 
-#### Pulsanti specifici  
-> **Cancella le partite**: permette di cancellare la partita creata in automatico in base alla tipologia di pagamento inserita.  
-> **Cancellazione dalla griglia dei pagamenti**: permette di cancellare la soluzione di pagamento, proposta in automatico dall'anagrafica, o inserita manualmente.  
-> **Ricalcola partite**: permette di ricalcolare la partita forzata manualmente.  
-> **Raggruppa partite**: permette di raggruppare le partite in presenza di più partite con stessa data scadenza.  
+#### Botones específicos  
+> **Elimina las partidas**: permite eliminar la partida creada automáticamente en base al tipo de pago ingresado.  
+> **Eliminación de la grilla de pagos**: permite eliminar la solución de pago, propuesta automáticamente por el registro, o ingresada manualmente.  
+> **Recalcula partidas**: permite recalcular la partida forzada manualmente.  
+> **Agrupar partidas**: permite agrupar las partidas en presencia de más partidas con la misma fecha de vencimiento.  
 
-## **4. Pagamenti** 
+## **4. Pagos** 
 
-La scheda **è presente solo se la causale contabile ha il flag *Chiusura partite* impostato**. 
+La pestaña **está presente solo si la causal contable tiene activado el flag *Cierre de partidas***. 
 
-Consente di visualizzare le partite aperte per procedere ai pagamenti/incassi con chiusura delle partite aperte o alle compensazioni.  
+Permite visualizar las partidas abiertas para proceder a los pagos/cobros con cierre de las partidas abiertas o las compensaciones.  
 
 :::tip Info
-Il tab è diviso in due griglie fondamentali, la prima, quella superiore, serve per ricercare le partite aperte al fine di chiuderle, la seconda, inferiore, conterrà il risultato della manovra di chiusura (ovvero i pagamenti risultanti)
+La pestaña está dividida en dos grillas fundamentales, la primera, la superior, sirve para buscar las partidas abiertas a fin de cerrarlas, la segunda, inferior, contendrá el resultado de la maniobra de cierre (es decir, los pagos resultantes)
 :::
 
-### Corretta configurazione dell'interazione tra Apertura, Chiusura e Compensazione Partite
+### Configuración correcta de la interacción entre Apertura, Cierre y Compensación de Partidas
 
-- Tipicamente tutte le registrazioni di tipo IVA (es. acquisti o vendite) hanno il flag di *apertura partite* e possono avere anche il flag di chiusura + compensazione partite; 
+- Típicamente todos los registros de tipo IVA (ej. compras o ventas) tienen el flag de *apertura de partidas* y pueden tener también el flag de cierre + compensación de partidas; 
 
-- Le causali di **pagamento/incasso**, invece, prevedono sempre la chiusura partite **senza mai il flag di compensazione**, eventualmente possono avere il flag di apertura partite per gestire i casi di pagamento anticipato (in questo caso, mancando la chiusura di una partita, verrà aperta una partita di segno opposto mantenendo la quadratura con il movimento contabile. 
+- Las causales de **pago/cobro**, en cambio, prevén siempre el cierre de partidas **sin nunca el flag de compensación**, eventualmente pueden tener el flag de apertura de partidas para gestionar los casos de pago anticipado (en este caso, faltando el cierre de una partida, se abrirá una partida de signo opuesto manteniendo el equilibrio con el movimiento contable). 
 
-La quadratura che può essere resa obbligatoria tramite i **[parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** della causale contabile). 
+El equilibrio que puede hacerse obligatorio a través de los **[parámetros](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** de la causal contable. 
 
-:::tip ATTENZIONE
-Differenza tra pagamenti partite e compensazione partite:  
-la compensazione, nella terminologia contabile, può essere intesa sia come compensazione partite (dare/avere) dello stesso sottoconto (ad es. fattura con nota di credito) ma anche come compensazione cliente/fornitore (ad es. compenso il debito nei confronti del sottoconto fornitore con il credito del sottoconto cliente facente capo alla stessa anagrafica).  
-In questa form la compensazione è strettamente collegata alla situazione di partite facenti capo allo stesso sottoconto.  
-La compensazione cliente/fornitore può essere gestita  semplicemente effettuando un **pagamento** partite (chiusura semplice) "incrociato" (sia dare che avere - ad esempio tramite un giroconto -  andando a "compensarsi" a saldo in contabilità).
-In alternativa è possibile utilizzare due procedure più specifiche e flessibili: [**Compensazione partite**](/docs/finance-area/maturity-values/procedures/maturity-compensation) oppure [**Compensazione veloce**](/docs/finance-area/maturity-values/procedures/fast-compensation)
+:::tip ATENCIÓN
+Diferencia entre pagos de partidas y compensación de partidas:  
+la compensación, en la terminología contable, puede considerarse tanto como compensación de partidas (deber/haber) de la misma subcuenta (ej. factura con nota de crédito) como también como compensación cliente/proveedor (ej. compenso la deuda hacia la subcuenta proveedor con el crédito de la subcuenta cliente que pertenece a la misma registración).  
+En esta forma, la compensación está estrechamente relacionada con la situación de partidas que pertenecen a la misma subcuenta.  
+La compensación cliente/proveedor puede gestionarse  simplemente realizando un **pago** de partidas (cierre simple) "cruzado" (tanto deber como haber - por ejemplo, mediante un girocontable -  yendo a "compensarse" a saldo en la contabilidad).
+Alternativamente, es posible utilizar dos procedimientos más específicos y flexibles: [**Compensación de partidas**](/docs/finance-area/maturity-values/procedures/maturity-compensation) o [**Compensación rápida**](/docs/finance-area/maturity-values/procedures/fast-compensation).
 :::
 
-Se in testata della registrazione è stato inserito un sottoconto intestatario, questo sarà riportato come filtro di ricerca nei campi relativi iniziali della scheda pagamenti: 
+Si en la cabecera del registro se ha ingresado un subcuenta titular, este será reportado como filtro de búsqueda en los campos relativos iniciales de la pestaña de pagos: 
 
 <details>
 
-  <summary>Click per visualizzare l'esempio</summary>
+  <summary>Haz clic para ver el ejemplo</summary>
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/record-tab/image02.png)
 
 </details>
 
-per tutte le registrazioni IVA, quindi, l'applicativo proporrà qui le partite del solo cliente/fornitore inserito in testata, per procedere alla compensazione fattura/nota di credito; 
+Para todos los registros IVA, entonces, la aplicación propondrá aquí las partidas del solo cliente/proveedor ingresado en la cabecera, para proceder a la compensación factura/nota de crédito; 
 
-nel caso di registrazioni di pagamento/incasso (soprattutto di più clienti o fornitori), invece, normalmente il campo in testata sarà vuoto e sarà l'utente a compilare il filtro secondo le esigenze. 
+en el caso de registros de pago/cobro (sobre todo de más clientes o proveedores), en cambio, normalmente el campo en cabecera estará vacío y será el usuario quien complete el filtro según las necesidades. 
 
-Da segnalare, in particolare, il campo del sottoconto **Banca**: non si tratta di un filtro, ma viene compilato automaticamente con il sottoconto di pagamento inserito in **[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** del cliente/fornitore intestatario della registrazione e da qui va ad aggiornare la registrazione contabile nel campo che prevede il tipo importo *Tot. Doc./registrazione*, 
+En particular, es importante señalar el campo del subcuenta **Banco**: no se trata de un filtro, sino que se completa automáticamente con la subcuenta de pago insertada en **[registro](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** del cliente/proveedor titular de la registración y desde aquí se actualizará el registro contable en el campo que prevé el tipo de importe *Tot. Doc./registro*, 
 
 <details>
 
-  <summary>Click per visualizzare l'esempio</summary>
+  <summary>Haz clic para ver el ejemplo</summary>
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image03.png)
 
 </details>
 
-(se i **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, nella lista dei conti clienti/fornitori, autorizzano la sostituzione, ovvero deve essere presente una associazione tra il tipo conto banche ed il relativo mastro nel piano dei conti affinché possa avvenire la sostituzione).
+(si los **[parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters)**, en la lista de cuentas clientes/proveedores, autorizan la sustitución, es decir, debe haber una asociación entre el tipo de cuenta de bancos y la respectiva maestra en el plan de cuentas para que pueda suceder la sustitución).
 
 <details>
 
-  <summary>Click per visualizzare l'esempio</summary>
+  <summary>Haz clic para ver el ejemplo</summary>
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image04.png)
 
 </details>
 
-### Esecuzione della chiusura partita 
+### Ejecución del cierre de la partida 
 
-:::tip COME CHIUDERE LA PARTITA
-Una volta individuata, nella prima griglia, la partita (o le partite) da pagare è possibile selezionarle e pagarle mediante **doppio click** sulla singola riga, oppure utilizzando il pulsante **Crea pagamenti**.
+:::tip CÓMO CERRAR LA PARTIDA
+Una vez localizada, en la primera grilla, la partida (o las partidas) a pagar es posible seleccionarles y pagarlas mediante **doble clic** en la línea individual, o utilizando el botón **Crear pagos**.
 :::
 
-Nel caso in cui la causale preveda la compensazione partita sarà attivo il pulsante di **Compensazione partite** (e il doppio click avrà lo stesso significato). 
+En caso de que la causal prevé la compensación de partidas estará activo el botón de **Compensación de partidas** (y el doble clic tendrá el mismo significado). 
 
-Un altro pulsante utile in questa sezione è il **Crea pagamenti estesi**: 
+Otro botón útil en esta sección es el **Crear pagos extendidos**: 
 
 <details>
 
-  <summary>Click per visualizzare l'esempio</summary>
+  <summary>Haz clic para ver el ejemplo</summary>
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image08.png)
 
 </details>
 
-si aprirà una maschera intermedia di impostazione dell'importo del pagamento con un eventuale importo di abbuono, con relativo sottoconto per la rilevazione contabile. 
+se abrirá una máscara intermedia de configuración del importe del pago con un eventual importe de bonificación, con la respectiva subcuenta para la contabilización. 
 
 :::note NOTA
-In questa maschera relativa al comando *Pagamenti estesi* (solo qui) è possibile impostare lo stato **Forzatamente chiusa** ad una partita (tramite l'apposito flag): l'uso di questo stato è sconsigliato in quanto non viene determinato dalla normale creazione di un pagamento che chiude la partita ma ne forza lo stato, può essere utile per riallineare differenze ed errori non più individuabili per la normale correzione.  
-Un risultato simile può essere ottenuto creando manualmente un pagamento e forzandone l'importo.  
-Non è consentito di forzare il pagamento con un importo superiore al residuo della partita.
+En esta máscara relativa al comando *Pagos extendidos* (solo aquí) es posible establecer el estado **Forzadamente cerrado** a una partida (a través del respectivo flag): el uso de este estado se desaconseja ya que no es determinado por la creación normal de un pago que cierra la partida, sino que fuerza el estado, puede ser útil para realinear diferencias y errores que ya no pueden ser identificados mediante la corrección normal.  
+Un resultado similar puede obtenerse creando manualmente un pago y forzando su importe.  
+No se permite forzar el pago con un importe superior al residuo de la partida.
 :::
 
 <details>
 
-  <summary>Ulteriori dettagli Click Here</summary>
+  <summary>Más detalles Haz clic aquí</summary>
 
-Nella lista dei pagamenti possono essere inserite note degli stessi: queste note possono essere collegate automaticamente, in causale, con la descrizione generica della registrazione contabile (flag *descrizione in giornale e pagamenti*, sconsigliato).
+En la lista de pagos pueden ser insertadas notas de los mismos: estas notas pueden también ser vinculadas automáticamente, en causal, con la descripción general del registro contable (flag *descripción en diario y pagos*, desaconsejado).
 
-Se il pagamento sarà gestito, secondo le **[impostazioni della causale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, al cambio storico della partita, non sarà rilevata nessuna differenza cambio in automatico e sarà gestirla manualmente in contabilità: l'opzione facilita inoltre, e la cosa è particolarmente utile, la gestione dell'uguaglianza tra partite aperte e saldo contabile. 
+Si el pago será gestionado, según las **[configuraciones de la causal](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, al cambio histórico de la partida, no se detectará ninguna diferencia de cambio automáticamente y será necesario gestionarlo manualmente en contabilidad: la opción facilita además, y esto es particularmente útil, la gestión de la igualdad entre partidas abiertas y saldo contable. 
 
-Diversamente, se l'opzione non è attiva, il controvalore euro sarà calcolato al cambio della data registrazione (e in questo caso, se impostato correttamente **[in causale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** - vedere tipo importo Utile/Perd. diff. cambi - e **[nelle divise](/docs/configurations/tables/general-settings/currencies)**, la procedura valorizzerà automaticamente i sottoconti di utile/perdita cambi divisa per divisa). 
+Por el contrario, si la opción no está activa, el contravalor en euros se calculará al cambio de la fecha de registro (y en este caso, si se establece correctamente  **[en la causal](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** - ver tipo importe Útil/Pérd. diff. cambios - y **[en las divisas](/docs/configurations/tables/general-settings/currencies)**, la aplicación valorizará automáticamente las subcuentas de utilidad/pérdida por cambios en función de cada divisa). 
 
-Attraverso il pulsante **Espandi/riduci** si può visualizzare una sola delle due griglie (ricerca partite o pagamenti). 
+A través del botón **Expandir/reducir** puedes visualizar solo una de las dos grillas (búsqueda de partidas o pagos). 
 
-In basso saranno visualizzati campi di totalizzazione degli importi selezionati. 
+En la parte inferior se visualizarán campos de totalización de los importes seleccionados. 
 
-Sulla base dei pagamenti effettivamente inseriti e delle impostazioni della causale, l'applicativo aggiornerà la riga con il tipo importo ‘Tot. Doc./registrazione' (ad esempio attribuito al sottoconto della banca di pagamento) con il totale dei pagamenti rilevati, mentre inserirà una riga per ogni pagamento o raggrupperà i pagamenti dare e avere, divisa per divisa, di ogni sottoconto cliente/fornitore pagato/incassato.
+Con base en los pagos realmente ingresados y las configuraciones de la causal, la aplicación actualizará la línea con el tipo de importe ‘Tot. Doc./registro' (por ejemplo, atribuido a la subcuenta de la banca de pago) con el total de los pagos registrados, mientras ingresará una línea por cada pago o agrupará los pagos de deber y haber, divididos por divisa, de cada subcuenta cliente/proveedor pagado/cobrado.
 
 </details>
 
-#### Pulsanti specifici  
-> **Parametri di inserimento**: richiama i parametri di inserimento della prima nota.  
-> **Ricerca partite**: permette di ricercare le partite da pagare/incassare.  
-> **Cancella pagamenti**: permette di cancellare i pagamenti precedentemente selezionati.  
-> **Crea pagamenti**: permette di creare il pagamento della partita selezionata.  
-> **Compensazione**: permette di operare la compensazione partite se previsto nella causale contabile.  
-> **Crea pagamenti estesi**: permette di gestire il pagamento/incasso con eventuali importi di abbuono e relativo sottoconto di rilevazione contabile.  
-> **Espandi/riduci**: permette di ridurre la visualizzazione alla sola parte delle partite o pagamenti e viceversa o espanderla ad entrambe.  
+#### Botones específicos  
+> **Parámetros de inserción**: llama a los parámetros de inserción de la primera nota.  
+> **Buscar partidas**: permite buscar las partidas a pagar/cobrar.  
+> **Eliminar pagos**: permite eliminar los pagos previamente seleccionados.  
+> **Crear pagos**: permite crear el pago de la partida seleccionada.  
+> **Compensación**: permite realizar la compensación de partidas si está previsto en la causal contable.  
+> **Crear pagos extendidos**: permite gestionar el pago/cobro con eventuales importes de bonificación y la respectiva subcuenta de contabilización.  
+> **Expandir/reducir**: permite reducir la visualización solamente a la parte de partidas o pagos y viceversa o expandirla a ambas.  
 
-## **5. Analitica**
+## **5. Analítica**
 
-La scheda è dedicata alla gestione dei **centri di costo/profitto** (oggi centri aziendali), è presente solo se la causale ha almeno uno dei due flag di gestione **Centri di costo** / Centri di profitto.
+La pestaña está dedicada a la gestión de los **centros de costo/profit** (hoy centros empresariales), está presente solo si la causal tiene al menos uno de los dos flags de gestión **Centros de costo** / Centros de beneficio.
 
-:::danger ATTENZIONE
-La gestione dei centri di costo / profitto (oggi centri aziendali) sarà differente a seconda che sia attivato o meno il **flag GESTIONE CONTROLLING**all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company).
+:::danger ATENCIÓN
+La gestión de centros de costo / beneficio (hoy centros empresariales) será diferente dependiendo de si está activado o no el **flag GESTIÓN DE CONTROL** dentro de la tabla [**Empresa**](/docs/configurations/tables/general-settings/company).
 
- Con il flag ATTIVATO si abilitano le **funzionalità complete per il controllo di gestione**, attualmente da considerare come la **scelta standard**, permettono una gestione più evoluta e flessibile del controlling rispetto al set di funzionalità precedenti (con flag disattivato), presenti per retro-compatibilità.
+ Con el flag ACTIVADO se habilitan las **funcionalidades completas para el control de gestión**, actualmente a considerar como la **opción estándar**, permiten una gestión más evolucionada y flexible del control con respecto al conjunto de funcionalidades anteriores (con flag desactivado), presentes por retrocompatibilidad.
 
-In questa configurazione **i centri di profitto NON sono più utilizzati**.
+En esta configuración **los centros de beneficio NO son utilizados**.
 
-Vengono utilizzati unicamente i centri di costo (che assumono la nuova definizione di centri aziendali). I centri aziendali possono accogliere infatti sia componenti positivi (di profitto) che componenti negativi (di costo) e possono essere ribaltati a piacimento gli uni sugli altri secondo le logiche previste nel modulo del Controlling in maniera totalmente flessibile.
+Se utilizan únicamente los centros de costo (que asumen la nueva definición de centros empresariales). Los centros empresariales pueden aceptar de hecho tanto componentes positivos (de beneficio) como componentes negativos (de costo) y pueden ser transferidos libremente entre sí según las lógicas previstas en el módulo de Control de manera totalmente flexible.
 <details>
 
-  <summary>Dettagli vecchia gestione Click Here</summary>
+  <summary>Detalles de la antigua gestión Haz clic aquí</summary>
 
-A seconda delle impostazioni della causale sarà presente una sezione, l'altra, o entrambe (in quest'ultimo caso con due opzioni: nel caso di *gestione separata cdc/cdp* entrambe saranno da valorizzare contemporaneamente, altrimenti la procedura attribuirà l'importo solo ad una delle due sezioni, i costi andranno sui centri di costo e i ricavi ai centri di profitto). 
+Dependiendo de las configuraciones de la causal, estará presente una sección, la otra, o ambas (en este último caso con dos opciones: en el caso de *gestión separada cdc/cdp* ambas deberán valorarse simultáneamente, de lo contrario la aplicación atribuirá el importe solo a una de las dos secciones, los costos irán a los centros de costo y los ingresos a los centros de beneficio). 
 
 </details>
 
 :::
 
-Se nella causale contabile è stata attivata anche l'opzione **Gestione macchina** sarà presente anche una griglia di valorizzazione costi/ricavi agli automezzi aziendali (sotto alla griglia principale dei centri di costo)  
-Richiamando l'automezzo tramite la combo box apposita sarà possibile attribuire anche i dati di dettaglio dello stesso.  
-La combo box è collegata alla tabella Gestione automezzo (Logistica > Automezzi >Attività giornaliera > Gestione Automezzo)
+Si en la causal contable se ha activado también la opción **Gestión de máquina** habrá presente también una grilla de valorización de costos/ingresos a los vehículos empresariales (debajo de la grilla principal de centros de costo).  
+Llamando el vehículo a través del combo box correspondiente será posible atribuir también los datos de detalle del mismo.  
+El combo box está vinculado a la tabla Gestión de vehículos (Logística > Vehículos > Actividad diaria > Gestión de vehículos).
 
-### CAMPI PRESENTI NELLA GRIGLIA PRINCIPALE
+### CAMPOS PRESENTES EN LA GRILLA PRINCIPAL
 
-Con le funzionalità complete del controlling attive, è presente una struttura tipo pivot table che raggruppa, sottoconto per sottoconto, le attribuzioni dei movimenti contabili ai centri aziendali per [***dimensione***](/docs/configurations/tables/controlling/analytical-accounting/dimension) di analisi. 
+Con las funcionalidades completas de control activas, está presente una estructura tipo tabla dinámica que agrupa, subcuenta por subcuenta, las atribuciones de los movimientos contables a los centros empresariales por [***dimensión***](/docs/configurations/tables/controlling/analytical-accounting/dimension) de análisis. 
 
-Infatti i centri aziendali **devono** essere attribuiti ad una dimensione di analisi creando quindi dei sottoinsiemi funzionali alla gestione della contabilità analitica che risulta strutturata su analisi multidimensionali.
+De hecho, los centros empresariales **deben** ser atribuidos a una dimensión de análisis creando así subconjuntos funcionales para la gestión de la contabilidad analítica que resulta estructurada en análisis multidimensionales.
 
-Lo stesso sottoconto che accoglie il movimento di costo contabile, può dunque essere imputato **contemporaneamente** a più centri facenti riferimento ognuno a dimensioni (e quindi "raggruppamenti") diversi.
+La misma subcuenta que acoge el movimiento de costo contable, puede así ser imputada **conjuntamente** a más centros haciendo referencia cada uno a dimensiones (y así "agrupamientos") diferentes.
 
-All'interno della stessa dimensione il movimento potrebbe poi essere ripartito (esempio al 50%) su due centri.
+Dentro de la misma dimensión, el movimiento podría luego ser repartido (ejemplo al 50%) sobre dos centros.
 
 <details>
 
-  <summary>Click per visualizzare l'immagine</summary>
+  <summary>Haz clic para ver la imagen</summary>
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab/image07.png)
 
 </details>
 
-**Conto / Sottoconto / Descrizione**: campi per l'inserimento del sottoconto contabile che viene attribuito al centro. I dati saranno riportati in automatico se è presente una associazione definita nel piano dei conti o in anagrafica (vedere sotto).
+**Cuenta / Subcuenta / Descripción**: campos para la inserción de la subcuenta contable que se atribuye al centro. Los datos serán reportados automáticamente si está presente una asociación definida en el plan de cuentas o en el registro (ver abajo).
 
-**Divisione / Descrizione**: Il movimento può essere associato anche ad una singola divisione aziendale per supportare analisi specifiche riferite al ramo d'azienda.
+**División / Descripción**: El movimiento puede ser asociado también a una sola división empresarial para apoyar análisis específicas referidas al ramo de la empresa.
 
-**Progetto**: Se nella causale contabile è abilitato il flag Progetti (ex Commesse) è visibile questo campo che permette di attribuire il movimento ad un progetto. Il widget fa riferimento alla tabella Progetti (Gestione Progetti > Progetti > Progetti)
+**Proyecto**: Si en la causal contable está habilitado el flag Proyectos (ex Contratos) es visible este campo que permite atribuir el movimiento a un proyecto. El widget hace referencia a la tabla Proyectos (Gestión de Proyectos > Proyectos > Proyectos).
 
-:::danger ATTENZIONE:
-se le funzioni avanzate del controlling sono attive, è previsto che il progetto possa essere attribuito soltanto agganciandolo ad un centro aziendale associato alla dimensione di tipo Commessa oppure alle dimensioni per le quali è stato attivato il flag **Abilita commessa**.  
+:::danger ATENCIÓN:
+si las funciones avanzadas de control están activas, se prevé que el proyecto pueda ser atribuido solamente vinculándolo a un centro empresarial que a su vez esté atribuido a una dimensión de tipo Contrato.
 
-Tale dimensione (che può essere nominata a piacere, anche se si consiglia un nome chiaro, ad esempio "Commesse" o "Progetti") viene agganciata alla corretta tipologia tramite un flag presente nella tabella **Dimensioni** (Configurazione > Tabelle >Controlling > Contabilità analitica > Dimensione) 
+Tamaño de esta dimensión (que puede ser nombrada a gusto, aunque se recomienda un nombre claro, como "Contratos" o "Proyectos") se vincula a la tipología correcta a través de un flag presente en la tabla **Dimensiones** (Configuración > Tablas > Control > Contabilidad analítica > Dimensión). 
 :::
 
-**Centri di costo / Descrizione centri di Costo**: campi per l'inserimento (tramite combo box posizionata sul campo Centri di costo) del centro sul quale attribuire il costo (o profitto). La combo box fa riferimento alla tabella **[Centri Aziendali](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)** (Configurazione > Tabelle >Controlling > Analitica > Centri Aziendali).  
-**Divisa**: valore ripreso dai dati della registrazione contabile, specifica la divisa (che presenta poi il controvalore in Euro) del movimento che viene attribuito.  
-**Data Valuta**: Data valuta del cambio tra divisa ed Euro (ripresa dal movimento contabile).  
-**Cambio Diretto**: Valore del cambio diretto tra Euro e divisa (ripresa dal movimento contabile).  
-**Importo Valuta**: Importo in divisa del movimento (ripreso dal movimento contabile in caso di attribuzione totale del movimento ad un singolo centro oppure definito attraverso la percentuale di attribuzione nel piano dei conti o in anagrafica); il valore può essere variato manualmente per definire l'attribuzione ai centri desiderata in caso di ripartizione del costo su più centri. Il campo si presenta su un'unica sezione e viene poi inserito nella sezione dare o avere del movimento in euro seguendo lo schema della causale contabile o della registrazione (Tab Registrazione), ma può essere poi forzato.
+**Centros de costo / Descripción centros de Costo**: campos para la inserción (a través de combo box posicionada en el campo Centros de costo) del centro en el cual atribuir el costo (o beneficio). La combo box hace referencia a la tabla **[Centros Empresariales](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)** (Configuración > Tablas > Control > Analítica > Centros Empresariales).  
+**Divisa**: valor recuperado de los datos de la registración contable, especifica la divisa (que presenta luego el contravalor en Euro) del movimiento que es atribuido.  
+**Fecha Moneda**: Fecha moneda del cambio entre divisa y Euro (recuperada del movimiento contable).  
+**Cambio Directo**: Valor del cambio directo entre Euro y divisa (recuperada del movimiento contable).  
+**Importe Moneda**: Importe en divisa del movimiento (recuperado del movimiento contable en caso de atribución total del movimiento a un solo centro, o definido a través del porcentaje de atribución en el plan de cuentas o en el registro); el valor puede ser variado manualmente para definir la atribución deseada entre los centros en caso de repartición del costo sobre más centros. El campo se presenta en una única sección y luego se inserta en la sección de deber o haber del movimiento en euros siguiendo el esquema de la causal contable o de la registración (Pestaña Registro), pero puede ser forzado luego.
 
-**Importo Dare / Importo Avere**: Importo in Euro del movimento (ripreso dal movimento contabile in caso di attribuzione totale del movimento ad un singolo centro oppure definito attraverso la percentuale di attribuzione nel piano dei conti o in anagrafica); il valore può essere variato manualmente per definire l'attribuzione ai centri desiderata in caso di ripartizione del costo su più centri.
+**Importe Debe / Importe Haber**: Importe en Euros del movimiento (recuperado del movimiento contable en caso de atribución total del movimiento a un solo centro, o definido a través del porcentaje de atribución en el plan de cuentas o en el registro); el valor puede ser variado manualmente para definir la atribución deseada en caso de repartición del costo sobre más centros.
 
-**Da Data Competenza / A Data Competenza**: Ripresi dal movimento contabile  (possono eventualmente essere forzate). Permettono la rettifica per competenza economica (ratei e risconti) anche dei movimenti dei centri.
+**Desde Fecha de Competencia / Hasta Fecha Competencia**: Recuperadas del movimiento contable  (pueden eventualmente ser forzadas). Permiten la rectificación por competencia económica (ajustes y anticipos) también de los movimientos de los centros.
 
-**Descrizione di Dettaglio**: Ripresa dall'omonimo campo nelle righe del movimento contabile. 
+**Descripción Detalle**: Recuperada del homónimo campo en las líneas del movimiento contable. 
 
-### Il caricamento dei dati nelle sezioni cdc/cdp può essere automatizzato in due modi:
+### La carga de datos en las secciones cdc/cdp puede ser automatizada de dos maneras:
 
-- attraverso l'assegnazione dei centri nel piano dei conti, ai sottoconti di costo/ricavo, valorizzando la percentuale di attribuzione del valore di ogni conto ad uno o più centri. Per maggiori dettagli vedere **[Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**. 
+- a través de la asignación de los centros en el plan de cuentas, a las subcuentas de costo/ingreso, valorizando el porcentaje de atribución del valor de cada cuenta a uno o más centros. Para más detalles ver **[Plan de cuentas](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**. 
 
-- nelle anagrafiche clienti/fornitori, (sempre in percentuale) nel qual caso tutti i sottoconti economici inseriti nella registrazione intestata al soggetto saranno valorizzati allo stesso modo e attribuiti al centro indicato in anagrafica. 
+- en los registros de clientes/proveedores, (siempre en porcentaje) en este caso todas las subcuentas económicas insertadas en la registración titular del sujeto serán valorizadas de la misma manera y atribuidas al centro indicado en el registro. 
 
-La priorità di valorizzazione, tra la regola impostata nel piano dei conti e quella definita nell'anagrafica, si imposta all'interno dei **[parametri di contabilità generale](/docs/configurations/parameters/finance/accounting-parameters)**.
+La prioridad de valorización, entre la regla establecida en el plan de cuentas y la que se defina en el registro, se configura dentro de los **[parámetros de contabilidad general](/docs/configurations/parameters/finance/accounting-parameters)**.
 
-Sono consentite modifiche manuali agli importi calcolati, così come direttamente un inserimento manuale delle righe: in questo secondo caso la procedura proporrà automaticamente gli importi per coprire, sottoconto per sottoconto, il totale movimentato in contabilità, riportando lo stesso range di date di competenza. È importante segnalare, infatti, che le procedure di rettifica e integrazioni prevedono anche la rettifica dei movimenti assegnati a centro di costo/profitto.
+Se permiten modificaciones manuales a los importes calculados, así como también una inserción manual directa de las líneas: en este segundo caso, el procedimiento propondrá automáticamente los importes para cubrir, subcuenta por subcuenta, el total movido en contabilidad, reportando el mismo rango de fechas de competencia. Es importante señalar, de hecho, que los procedimientos de rectificación e integraciones prevén también la rectificación de los movimientos asignados a centro de costo/profit.
 
-Al momento del salvataggio della registrazione l'applicativo procederà a ritornare una maschera con i dettagli delle differenze di valorizzazione, bloccando eventualmente il salvataggio se così è impostato nella causale in uso.
+Al momento del guardado de la registración, la aplicación procederá a retornar una máscara con los detalles de las diferencias de valorización, bloqueando eventualmente el guardado si así está configurado en la causal en uso.
 
-#### Pulsanti specifici  
-> **Cancella i centri di costo selezionati**: permette di cancellare i centri di costo selezionati.  
-> **Cancella i centri di profitto selezionati**: permette di cancellare i centri di profitto selezionati.  
-> **Espandi/riduci**: permette di ridurre la visualizzazione alla sola parte dei centri di costo o profitto e viceversa o espanderla ad entrambe.  
+#### Botones específicos  
+> **Elimina centros de costo seleccionados**: permite eliminar los centros de costo seleccionados.  
+> **Elimina centros de beneficio seleccionados**: permite eliminar los centros de beneficio seleccionados.  
+> **Expandir/reducir**: permite reducir la visualización a la parte sola de los centros de costo o beneficio y viceversa o expandirla a ambas.  
 
-## **6. Progetti**
+## **6. Proyectos**
 
-La tab **Progetti** (ex *Commesse*) è presente solo se la causale ha il flag *Progetti* impostato.
+La pestaña **Proyectos** (ex *Contratos*) está presente solo si la causal tiene el flag *Proyectos* activado.
 
-:::danger ATTENZIONE:
-se le funzioni avanzate del controlling sono attive (flag *Gestione controlling* nella tabella Società), è previsto che il progetto possa essere attribuito soltanto agganciandolo ad un centro aziendale a sua volta attribuito ad una dimensione di tipo Commessa.
+:::danger ATENCIÓN:
+si las funciones avanzadas del control están activas (flag *Gestión de control* en la tabla Empresa), se prevé que el proyecto pueda ser atribuido solamente vinculándolo a un centro empresarial que a su vez esté atribuido a una dimensión de tipo Contrato.
 
-**Se le funzioni avanzate per il controlling sono attive, pertanto, la tab in commento NON sarà visibile**. 
+**Si las funciones avanzadas para el control están activas, por lo tanto, la pestaña en comentario NO estará visible**. 
 
-Rimane invece visibile il campo presente nella testata della registrazione per l'attribuzione del Progetto (ex Commessa) alla registrazione nel suo complesso anzichè al dettaglio dei movimenti.
+Sin embargo, permanece visible el campo presente en la cabecera de la registración para la atribución del Proyecto (ex Contrato) al registro en su conjunto en lugar de al detalle de los movimientos.
 :::
  
-In questo tab saranno assegnati ai vari Progetti (commesse di vendita) i dati economici rilevati nella registrazione di contabilità: automaticamente saranno assegnati tutti alla commessa inserita in testata, ma l'utente potrà suddividere gli importi in modo differente manualmente direttamente in questa sezione.
+En esta pestaña se asignarán a los diversos Proyectos (contratos de venta) los datos económicos registrados en la registración contable: automáticamente serán asignados todos al contrato ingresado en cabecera, pero el usuario podrá dividir los importes de manera diferente manualmente directamente en esta sección.
 
-Nell'inserimento manuale degli importi il software provvederà automaticamente ad attribuire il valore residuo al fine di quadrare il movimento contabile. Sono previsti controlli del bilanciamento degli importi con la contabilità generale e la possibilità di bloccare il salvataggio della registrazione in caso di differenze (vedere [**parametri**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) della causale).
+En la inserción manual de los importes, el software se encargará automáticamente de atribuir el valor residual con el fin de cuadrar el movimiento contable. Se prevén controles de equilibrio de los importes con la contabilidad general y la posibilidad de bloquear el guardado del registro en caso de diferencias (ver [**parámetros**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) de la causal).
 
-## 7. Cespiti
+## 7. Activos
 
-La tab Cespiti, visibile solamente se la causale contabile che si sta utilizzando ha attivo al suo interno il flag ***cespiti***, è dedicata alla gestione dei beni ad uso pluriennale: viene utilizzata per rilevare acquisti, incrementi, alienazioni e distruzioni.
+La pestaña Activos, visible solo si la causal contable que se está utilizando tiene activado en su interior el flag ***activos***, está dedicada a la gestión de bienes de uso plurianual: se utiliza para registrar adquisiciones, incrementos, disposiciones y destrucciones.
 
 <details>
 
-  <summary>Ulteriori dettagli (Click to expand)</summary>
+  <summary>Más detalles (Click para expandir)</summary>
   
-Nella causale (tab **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**), è necessario aver impostato anche il **tipo di operazione** da compiere, tramite la combo box accanto al flag di attivazione del tab cespiti (acquisizione, dismissione, distruzione ecc...). 
+En la causal (pestaña **[Detalle registro](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**), es necesario haber configurado también el **tipo de operación** a realizar, mediante la combo box al lado del flag de activación de la pestaña activos (adquisición, disposición, destrucción, etc...). 
 
-Pertanto sarà opportuno creare diverse causali dedicate ai cespiti ed adatte a compiere le diverse operazioni possibili. 
+Por lo tanto, será oportuno crear diferentes causales dedicadas a los activos y adecuadas para realizar las distintas operaciones posibles. 
 
 </details>
 
 
-### Griglia superiore
+### Grilla superior
 
-E' dedicata all'inserimento del nuovo cespite acquistato oppure alla selezione del cespite esistente per rilevare una nuova operazione al suo interno. 
+Está dedicada a la inserción del nuevo activo adquirido o a la selección del activo existente para registrar una nueva operación en su interior. 
 
-:::tip[Attenzione]
-**Per inserire un nuovo cespite** è sufficiente procedere a compilare una nuova riga, 
-mentre **per selezionare un cespite esistente** bisogna necessariamente utilizzare il pulsante denominato **Seleziona cespite esistente** presente nella ribbon bar al fine di richiamare la scheda cespite già esistente ed integrarla.  
+:::tip[Atención]
+**Para insertar un nuevo activo** es suficiente proceder a completar una nueva línea, 
+mientras que **para seleccionar un activo existente** se debe necesariamente utilizar el botón denominado **Seleccionar activo existente** presente en la barra de herramientas a fin de llamar a la ventana del activo ya existente e integrarlo.  
 :::
 
 
-#### PROCEDURA PER L'INSERIMENTO:
+#### PROCEDIMIENTO PARA LA INSERCIÓN:
 
-- selezionare la **Categoria cespite** di appartenenza tramite la combo box (la quale è collegata alla tabella '**[categoria cespite](/docs/configurations/tables/finance/fixed-asset-category)**'),  
-- selezionare il **Tipo di proprietà** (normalmente è proposto 'cespite di proprietà' di default), (**Note proprietà**: campo per inserire un'ulteriore annotazione libera)  
-- assegnare un eventuale **Precodice** (se si desidera ottenere una numerazione all'interno di questo precodice, non sono infatti possibili due schede cespiti con lo stesso numero se non utilizzando un precodice che permette di attribuire una nuova numerazione ad esso riferita) la combo box è collegata alla tabella '**[Precodice cespite](/docs/configurations/tables/finance/fixed-asset-precode)**'  
-- confermare la numerazione progressiva assegnata in automatico alla scheda cespite, oppure imporre il numero desiderato (anche tramite la combinazione con il precodice)  
-- inserire la '**Descrizione cespite**' (che sarà riportata nella scheda cespite ed utilizzata in tutti i report del modulo quali il libro cespiti e le stampe delle schede). 
+- seleccionar la **Categoría de activo** de pertenencia a través de la combo box (la cual está vinculada a la tabla '**[categoría de activo](/docs/configurations/tables/finance/fixed-asset-category)**'),  
+- seleccionar el **Tipo de propiedad** (normalmente se propone 'activo de propiedad' de forma predeterminada), (**Notas de propiedad**: campo para insertar una anotación adicional libre)  
+- asignar un eventual **Precódigo** (si se desea obtener una numeración dentro de este precóddico, ya que no son posibles dos fichas de activos con el mismo número sin utilizar un precódigo que permite atribuir una nueva numeración a él relacionado) la combo box está vinculada a la tabla '**[Precódigo de activo](/docs/configurations/tables/finance/fixed-asset-precode)**'  
+- confirmar la numeración progresiva asignada automáticamente a la ficha de activo, o imponer el número deseado (también a través de la combinación con el precódigo)  
+- ingresar la '**Descripción del activo**' (que será reportada en la ficha de activo y utilizada en todos los informes del módulo, como el libro de activos y las impresiones de las fichas). 
 
-Tutti questi campi saranno ripresi direttamente dal cespite già esistente nel caso di operazione aggiuntiva. 
+Todos estos campos serán recuperados directamente del activo ya existente en el caso de operación adicional. 
 
-- inserire l'**Importo** (valore patrimoniale corrispondente al costo dell'operazione, ovvero all'imponibile più l'eventuale iva indetraibile in caso di acquisto oppure prezzo di vendita in caso di alienazione totale o parziale);
+- ingresar el **Importe** (valor patrimonial correspondiente al costo de la operación, es decir, al imponible más el eventual IVA indetralible en caso de compra o precio de venta en caso de disposición total o parcial);
 
-- inserire l'**aliquota iva** tramite l'apposita combo box.
+- ingresar la **aliquota IVA** mediante la combo box correspondiente.
 
-Il campo **% ind**. che riguarda la percentuale di indetraibilità dell'iva, normalmente è compilato in automatico e dipende dal codice iva selezionato tramite il settaggio impostato nella tabella **[Aliquote e modalità iva](/docs/configurations/tables/finance/vat-rates)**, se ne sconsiglia la modifica manuale.
+El campo **% ind**. que se refiere al porcentaje de indetralidad del IVA, normalmente es completado automáticamente y depende del código IVA seleccionado a través de la configuración establecida en la tabla **[Aliquotas y modos IVA](/docs/configurations/tables/finance/vat-rates)**, se desaconseja su modificación manual.
 
-**Stato**: campo impostato automaticamente, inizialmente, all'atto dell'acquisto si imposta su *non ammortizzato*, successivamente, a seconda degli ammortamenti accumulati lo stato sarà *parzialmente ammortizzato* o *totalmente ammortizzato*. 
+**Estado**: campo configurado automáticamente inicialmente, al momento de la compra se establece en *no amortizado*, posteriormente, según los amortizaciones acumuladas el estado será *parcialmente amortizado* o *totalmente amortizado*. 
 
-Il valore può essere forzato manualmente tramite la combo box collegata ad una tabella fissa.  
-**Tipo operazione**: viene proposto sulla base dell'impostazione della causale contabile: tipicamente nel caso di acquisto o incrementi il tipo operazione è ‘costo originario', mentre per le vendite sarà ‘Alienazione parziale' o ‘Alienazione totale';  
-**Conto / Sottoconto / Descrizione**: viene ripreso dalla categoria cespite (se inserito nella tabella **[Categoria Cespite](/docs/configurations/tables/finance/fixed-asset-category)**);  
-**Data di inizio attività**: viene proposta sulla base della data registrazione: da questa data sarà verificato l'anno a partire dal quale il cespite può essere ammortizzato;  
-**Data di fine attività**: non viene inserita (ma la visualizzazione nel libro cespiti dipende anche da questo campo);  
-**Inizio / fine garanzia**: campo informativo in merito alla validità della garanzia.  
-**Usato**: identifica i cespiti che sono stati acquistati usati (per questi cespiti la percentuale d'applicazione dell'ammortamento il primo anno è del 100% e l'ammortamento anticipato è applicabile solo per un anno),  
-**In uso**: (proposto di default al salvataggio) indica che il cespite è effettivamente in uso (senza questo flag il cespite non può essere ammortizzato),  
-**In manutenzione**: indica che il cespite è da considerare per il calcolo delle manutenzioni. 
+El valor puede ser forzado manualmente a través de la combo box vinculada a una tabla fija.  
+**Tipo de operación**: se propone sobre la base de la configuración de la causal contable: típicamente en el caso de compras o incrementos el tipo de operación es ‘costo original', mientras que para las ventas será ‘Disposición parcial' o ‘Disposición total';  
+**Cuenta / Subcuenta / Descripción**: se recupera de la categoría de activo (si se inserta en la tabla **[Categoría Activo](/docs/configurations/tables/finance/fixed-asset-category)**);  
+**Fecha de inicio de actividad**: se propone sobre la base de la fecha de registro: de esta fecha se verificará el año a partir del cual el activo puede ser amortizado;  
+**Fecha de finalización de actividad**: no es indicada (pero la visualización en el libro de activos depende también de este campo);  
+**Inicio / fin de garantía**: campo informativo sobre la validez de la garantía.  
+**Usado**: identifica los activos que han sido comprados usados (para estos activos la tasa de aplicación de la amortización el primer año es del 100% y la amortización anticipada es aplicable solo durante un año),  
+**En uso**: (propuesto por defecto al guardado) indica que el activo está efectivamente en uso (sin este flag, el activo no puede ser amortizado),  
+**En mantenimiento**: indica que el activo debe considerarse para el cálculo de los mantenimientos. 
 
-**Note**: campo per annotazioni, non riportato nei report standard (può essere aggiunto personalizzandoli). 
+**Notas**: campo para anotaciones, no reportado en los informes estándar (puede ser añadido personalizando los mismos). 
 
-**Statistiche fiscali**: Abilita la gestione del tab inferiore Dati oggettivi cespite al fine di utilizzarlo per l'ammortamento fiscale.
+**Estadísticas fiscales**: Habilita la gestión de la pestaña inferior Datos objetivos del activo para utilizarlo para la amortización fiscal.
 
-**Società di comodo**: per identificare i cespiti da considerare nelle stampe cespiti che rientrano in queste casistiche fiscali, 
+**Sociedad de conveniencia**: para identificar los activos considerados en las impresiones de activos que caen dentro de estas casísticas fiscales, 
 
-**Tipo deducibilità**: consente di impostare la deducibilità fiscale dell'ammortamento per il cespite. La combo box è collegata alla tabella **[Tipi deducibilità](/docs/configurations/tables/finance/deductibility-types)**.
+**Tipo deducibilidad**: permite establecer la deducibilidad fiscal de la amortización para el activo. La combo box está vinculada a la tabla **[Tipos de deducibilidad](/docs/configurations/tables/finance/deductibility-types)**.
 
-**Unità di Misura**: combo box che permette di selezionare l'unità di misura (codice) per la quantità (es. Kg, Pezzi...); la **Descrizione** dell'unità scelta è visualizzata nel campo adiacente;
+**Unidad de Medida**: combo box que permite seleccionar la unidad de medida (código) para la cantidad (ej. Kg, Piezas...); la **Descripción** de la unidad elegida se visualiza en el campo adyacente;
 
-**Percentuale**: campo visibile solo se all'interno della form **[Parametri Cespiti](/docs/configurations/parameters/finance/fixed-assets-parameters)** è attivo il flag *Percentuale su singolo Cespite*. Consente di definire una percentuale di ammortamento specifica per il cespite che si sta inserendo, che andrà a prevalere rispetto a quella definita all'interno della relativa categoria cespite. Il campo è riportato all'interno della scheda cespite.
+**Porcentaje**: campo visible solo si dentro del formulario **[Parámetros de Activos](/docs/configurations/parameters/finance/fixed-assets-parameters)** está activo el flag *Porcentaje sobre un solo Activo*. Permite definir un porcentaje de amortización específico para el activo que se está ingresando, que prevalecerá respecto a la definida dentro de la respectiva categoría de activo. El campo es reportado dentro de la ficha del activo.
 
-**Tipi Ammortamento fiscale**: combo box che permette di selezionare la tipologia (codice) di ammortamento fiscale, svincolato da quello contabile, da applicare; la **Descrizione** del codice selezionato è visualizzata nel campo adiacente; la combo box è collegata alla tabella **[Tipi Ammortamenti fiscali](/docs/configurations/tables/finance/objective-amortization-types)** (Tipo Ammortamento).
+**Tipos de Amortización fiscal**: combo box que permite seleccionar la tipología (código) de amortización fiscal, desvinculada de la contabilidad, a aplicar; la **Descripción** del código seleccionado se visualiza en el campo adyacente; la combo box está vinculada a la tabla **[Tipos de Amortizaciones fiscales](/docs/configurations/tables/finance/objective-amortization-types)** (Tipo Amortización).
 
-**Al salvataggio della riga potrebbero comparire, a seconda dei casi, diversi messaggi**:
+**Al guardar la línea podrían aparecer, según los casos, diferentes mensajes**:
 
-- "Il cespite ha valore inferiore a ___. Vuoi ammortizzarlo al 100%?": la categoria cespite ha impostato un valore nel campo del *limite ammortamento totale* e il valore inserito per il nuovo cespite è inferiore (esempio beni inferiore a 516 €) che la normativa fiscale consente di girare direttamente a costo (cioè ammortizzare al 100%) direttamente nell'anno di acquisto. Scegliendo Si (Yes) sarà eseguito l'ammortamento al 100% il primo anno, tramite l'aggiornamento del flag nella testata dell'anagrafica cespite in modo da essere gestito in modo specifico nella procedura automatica di ammortamento;
+- "El activo tiene un valor inferior a ___. ¿Quieres amortizarlo al 100%?": la categoría de activo ha establecido un valor en el campo del *límite de amortización total* y el valor ingresado para el nuevo activo es inferior (ejemplo bienes inferiores a 516 €) que la normativa fiscal permite girar directamente a costo (es decir, amortizar al 100%) directamente en el año de compra. Eligiendo Sí (Yes) se realizará la amortización al 100% el primer año, mediante la actualización del flag en la cabecera del registro del activo para ser gestionado de forma específica en el procedimiento automático de amortización.
 
-- "Vuoi legare l'alienazione parziale ad un'operazione patrimoniale già esistente?": la causale è di vendita parziale e la categoria cespite non ha attivo il flag *incrementale*: in questo caso il messaggio chiede se procedere ad una assegnazione dell'importo di alienazione ad una specifica operazione patrimoniale del cespite. Esempio: per un cespite non incrementale (con componenti incrementativi separati) ogni singola riga di operazione viene gestita a livello di ammortamenti con una vita a se stante: l'alienazione parziale (rispetto a tutto il cespite) potrebbe essere in realtà gestita come una vendita totale della singola operazione (ad es.: ho un computer, lo incremento con uno scanner, poi vendo solo lo scanner).
+- "¿Quieres vincular la disposición parcial a una operación patrimonial ya existente?": la causal es de venta parcial y la categoría de activo no tiene activo el flag *incremental*: en este caso el mensaje pregunta si proseguir con la asignación del importe de disposición a una operación patrimonial específica del activo. Ejemplo: para un activo no incremental (con componentes incrementales separados) cada línea de operación se gestiona a nivel de amortizaciones con una vida cada una: la disposición parcial (respecto a todo el activo) podría ser en realidad gestionada como una venta total de la línea única (ej.: tengo una computadora, la incremento con un escáner, luego vendo solo el escáner).
 
-**Scegliendo Si (Yes)** verrà visualizzato un help (popup) per la ricerca di quale **componente** che costituisce il cespite si vuole alienare, permettendo di selezionarlo tramite i tasti *Ricerca* e *Seleziona*  
+**Eligiendo Sí (Yes)** se visualizará un ayuda (popup) para la búsqueda de cuál **componente** que constituye el activo se quiere disponer, permitiendo seleccionarlo mediante los botones *Buscar* y *Seleccionar*. 
 
-In particolare si noti che i vari componenti sono facilmente individuabili anche perchè riferiti, all'interno dell'help, al campo **Progressivo** così come all'interno della scheda cespite
+En particular, se observe que los diversos componentes son fácilmente identificables, ya que están referidos, dentro de la ayuda, al campo **Progresivo** así como dentro de la ficha del activo.
 
-### Griglie inferiori
+### Grillas inferiores
 
-Il contenuto è riferito alla riga superiore selezionata. 
+El contenido se refiere a la línea superior seleccionada. 
 
-#### OPERAZIONI PATRIMONIALI: 
+#### OPERACIONES PATRIMONIALES: 
 
-(viene aggiunta una nuova riga per ogni operazione caricata nella griglia superiore). 
+(se añade una nueva línea por cada operación cargada en la grilla superior). 
 
-**Data Operazione**: Data alla quale viene registrato il movimento sul libro cespiti;
+**Fecha Operación**: Fecha a la cual se registra el movimiento en el libro de activos;
 
-**Progressivo**: Progressivo di riga dell'operazione;
+**Progresivo**: Progresivo de línea de la operación;
 
-**Costo Originario**: il campo viene valorizzato solo dalle operazioni eseguite con Tipo operazione 'costo originario' con il valore patrimoniale di acquisto (corrispondente all'imponibile + eventuale iva indetraibile);
+**Costo Original**: el campo será valorizado solo por las operaciones realizadas con Tipo de operación 'costo original' con el valor patrimonial de adquisición (correspondiente al imponible + eventual IVA indetralible);
 
-**Quantità**: riferita alla quantità di beni da caricare;
+**Cantidad**: referida a la cantidad de bienes a cargar;
 
-**Imposta indetraibile**: accoglie il valore dell'eventuale iva indetraibile che sarà sommato al costo per determinare il valore contabile iniziale (costo storico). Il valore è compilato automaticamente a partire dal valore inserito nel campo 'Importo' della griglia superiore in relazione al codice iva selezionato nel campo adiacente (se prevede indetraibilità);
+**Impuesto indetralible**: acoge el valor del eventual IVA indetralible que se sumará al costo para determinar el valor contable inicial (costo histórico). El valor se completa automáticamente a partir del valor ingresado en el campo 'Importe' de la grilla superior en relación con el código IVA seleccionado en el campo adyacente (si prevé indetralibilidad);
 
-**Importo non ammortizzabile**: se nella categoria cespite corrispondente è valorizzato il campo 'Perc amm.(ortizzabile)' il campo sarà compilato automaticamente; l'importo viene detratto dal valore di calcolo dell'ammortamento es. Perc. amm = 50% Costo storico 30.000;
+**Importe no amortizable**: si en la categoría de activo correspondiente está valorizado el campo 'Perc. amm.(ortizable)', el campo se completará automáticamente; el importe se resta del valor de cálculo de la amortización, por ejemplo, Perc. amm = 50% Costo histórico 30.000;
 
-Ammortamento 30.000 - 15.000 = 15.000 x 3%; L'ammortamento sarà calcolato fichè il fondo non raggiunge 15.000;
+Ammortización 30.000 - 15.000 = 15.000 x 3%; La amortización se calculará hasta que el fondo no alcance 15.000;
 
-**Residuo non ammortizzabile**: gestito solo manualmente, con riferimento all' esempio del campo precedente l'ammortamento sarà pari a 30.000 *3% ma fichè il fondo non raggiunge 15.000;
+**Residuo no amortizable**: gestionado solo manualmente, con referencia al ejemplo del campo anterior, la amortización será equivalente a 30.000 *3% pero hasta que el fondo no alcance 15.000;
 
-**Già ammortizzato**: il valore è visibile solo se è calcolato l'ammortamento ma non ancora contabilizzato (contabilizzando il valore verrà sommato nel 'Valore contabile' e nel fondo);
+**Ya amortizado**: el valor es visible solo si se ha calculado la amortización pero aún no contabilizado (contabilizando el valor se sumará en el 'Valor contable' y en el fondo);
 
-**F.do Amm. Ord. / Anticipato / Decelerato**: i campi accolgono, a seconda del tipo di ammortamento calcolato (ordinario oppure anticipato o decelerato) il cumulo delle quote di ammortamento contabilizzate;
+**F.do Amm. Ord. / Anticipado / Decelerado**: los campos acogen, dependiendo del tipo de amortización calculada (ordinaria o anticipada o decelerada), el total de las cuotas de amortización contabilizadas;
 
-**Fondo Ammortamento Fiscale**: viene valorizzato se è attivo il flag 'Fiscale' presente nella categoria cespite oppure attivabile a livello di singola riga nella Tab 'Ammortamento'
+**Fondo Amortización Fiscal**: será valorizado si está activo el flag 'Fiscal' presente en la categoría de activo o bien activable a nivel de línea individual en la Pestaña 'Amortización'.
 
-**Alienazione**: accoglie il valore di vendita del bene e viene valorizzato in automatico tramite il campo 'Importo' della griglia superiore se il Tipo Movimento è 'Alienazione'. Sulla base di questo valore e del valore della Plusvalenza o minusvalenza sarà aggiornato il valore storico del bene da scaricare dal libro cespiti;
+**Disposición**: acoge el valor de venta del bien y es valorizado automáticamente a través del campo 'Importe' de la grilla superior si el Tipo Movimiento es 'Disposición'. Con base en este valor y el valor de la Plusvalía o minusvalía se actualizará el valor histórico del bien a eliminar del libro de activos;
 
-**Alienazione parziale**: accoglie il valore di vendita del bene e viene valorizzato in automatico tramite il campo 'Importo' della griglia superiore se il Tipo Movimento è 'Alienazione parziale'. Sulla base di questo valore e del valore della Plusvalenza o minusvalenza sarà aggiornato il valore storico del bene da scaricare dal libro cespiti;
-
-**Plusvalenza**: accoglie il valore della plusvalenza di vendita del cespite e concorre al calcolo del valore storico ceduto;
-
-**Plusvalenza reinvestita**: non attivo;
-
-**Rivalutazione**: aumenta il costo storico a seguito legge di rivalutazione;
-
-**Minusvalenza**: accoglie il valore della minusvalenza di vendita del cespite e concorre al calcolo del valore storico ceduto.
-
-**Distruzione**: normalmente si compila a zero (in alternativa ai campi 'Alienazione' o 'Alienazione parziale'), può essere attribuito un valore per casi particolari (esempio valore di realizzo del rottame);
-
-**Costo Originario ceduto**: valore storico che viene ceduto nell'ambito di un'operazione con Tipo movimento 'Alienazione' o 'Alienazione parziale' calcolato in base ai dati inseriti nei campi Alienazione, Alienazione parziale, (o Distruzione), Plusvalenza e Minusvalenza. Il campo Valore contabile sarà, parallelamente, rettificato in negativo per un importo determinato a partire dal valore originario ceduto al netto del fondo ammortamento accumulato;
-
-**IVA**: non attivo in Italia;
-
-**Assestamento**: non attivo in Italia;
-
-**Valore Euro**: controvalore in Euro se il valore è espresso in valuta o se la valuta della società è diversa da Euro;
-
-**Sottoconto**: sottoconto del fornitore (acquisto) o Cliente (vendita) a livello di riga relativa al singolo componente (potrebbero essere acquistati o venduti a soggetti diversi);
-
-**Data doc. / Nr. doc. / Prot. IVA**: riferimenti della fattura di acquisto o di vendita corrispondente alla riga del movimento in questione;
-
-**Note**: note libere di riga;
-
-**Progressivo Vendita**: in caso di alienazione parziale riporta il progressivo della riga selezionata per la vendita del relativo componente;
-
-**Stampato**: si attiva se è stampato in definitiva il libro cespiti relativamente alla riga in questione.
-
-#### OPERAZIONI ECONOMICHE:
-
-(normalmente non utilizzata), serve per collegare alla scheda cespite un costo che non va capitalizzato (perché non pluriennale).
-
-I dati contenuti in questo tab vengono valorizzati se nella griglia superiore viene inserita una riga con Tipo movimento *Operazioni economiche*
-
-I campi sono simili a quelli presenti nella tab Operazioni patrimoniali
-
-#### AMMORTAMENTI:
-
-**Normalmente non utilizzata all'interno della registrazione contabile**, poiché l'ammortamento può essere più comodamente gestito tramite la relativa procedura automatica nell'ambito delle scritture di assestamento, oppure, per singolo cespite, dall'interno della scheda cespite (nell'apposita griglia che ricalca i campi presenti nella tab in commento).
-
-Nel caso si desideri, nell'ambito di una registrazione di prima nota, effettuare l'ammortamento (per quanto riguarda la scheda cespite, la parte contabile sarà gestita nel tab Registrazione) occorrerà richiamare il cespite esistente da ammortizzare tramite il tasto **Seleziona un cespite esistente** che farà comparire la riga relativa nella griglia superiore, assicurarsi che il Tipo operazione sia *F.do Ammortamento Ordinario*, se non già previsto nelle impostazioni della causale, inserire nel campo **Importo** il valore dell'ammortamento annuale da registrare, quindi nella tab *Ammortamenti* indicare l'anno dell'ammortamento (campo **Anno**) e compilare manualmente i campi obbligatori della griglia:
-
-**Progressivo**: permette id selezionare tramite combo box la riga della scheda cespite da ammortizzare (l'unico presente se non vi sono componenti aggiuntivi o incrementi del cespite);
-
-**Anno**: Confermare l'anno dell'ammortamento;
-
-**Tipo di Ammortamento**: Ordinario, anticipato o decelerato;
-
-**Conto / sottoconto / descrizione quota ammortamento**: normalmente richiamato in automatico tramite la categoria cespite della riga caricata nella griglia superiore;
-
-**Conto / sottoconto / descrizione fondo ammortamento**: normalmente richiamato in automatico tramite la categoria cespite della riga caricata nella griglia superiore;
-
-**Imponibile**: valore del cespite (storico) sul quale è calcolato l'ammortamento applicando la **Percentuale** (o aliquota di ammortamento);
-
-**Giorni di possesso**: sui quali viene calcolato l'ammortamento se nelle impostazioni della categoria cespite corrispondente è stato scelto il calcolo sui giorni (con apposito flag);
-
-**Costo**: risultato del calcolo imponibile * Percentuale * giorni possesso / 365 (può essere forzato manualmente).
-
-**Contabilizzato**: flag contabilizzato, attribuisce alla registrazione la qualifica di contabilizzata impedendone la sovrascrittura, senza questo flag non potrà essere elaborato un ammortamento successivo.
-
-**Fiscale**: flag che identifica l'ammortamento ai fini fiscali ed andrà ad incrementare il fondo fiscale nel relativo campo, distinto da quello civilistico / contabile.
-
-**Ammortamento deducibile** / **Ammortamento indeducibile**: campi valorizzati automaticamente con le quote deducibile e indeducibile dell'ammortamento, se nella **[categoria cespite](/docs/configurations/tables/finance/fixed-asset-category)** relativa è stato valorizzato il campo Tipo deduc. , a sua volta collegato alla tabella **[Tipi deducibilità](/docs/configurations/tables/finance/deductibility-types)** dove viene definita la percentuale di deducibilità. Diversamente possono essere valorizzati manualmente.
-
-Nella tab Operazioni patrimoniali il tipo operazione F.do Amm. Ordinario avrà già aggiornato la riga del libro cespiti che incrementa il fondo ammortamento e riduce per pari importo il valore netto contabile del bene.
-
-#### GESTIONE DATI OGGETTIVI:
-
-Questo tab permette di gestire i dati utili per l'ammortamento oggettivo (tecnico extracontabile - oppure fiscale) che possono essere elaborati parallelamente all'ammortamento civilistico.
-
-Per prima cosa all'interno della tabella delle **[Categorie cespite](/docs/configurations/tables/finance/fixed-asset-category)** dovrà essere attivato il relativo flag per recepire i dati all'interno della scheda cespite.
-
-Quindi inserendo la registrazione contabile relativa, ad esempio, all'acquisto del cespite, nella presente tab saranno riportati in automatico i dati (che possono essere poi modificati indipendentemente da quelli patrimoniali ufficiali) utili per gli ammortamenti oggettivi.
-
-I campi della tab ricalcano infatti quelli presenti nella tab 'Operazioni patrimoniali'. La tab 'Ammortamenti', invece, è utilizzata esclusivamente per registrazioni di tipo contabile / civilistico, quindi la gestione degli ammortamenti tecnici (extracontabili) potrà essere eseguita soltanto entrando nelle scheda cespite (Amministrazione > Cespiti > Cespiti > doppio click per entrare).
-
-#### CENTRI DI COSTO - COMMESSE:
-
-Questo tab (**visibile solo quando NON sono attive le funzioni avanzate per il controlling**) gestite dal flag *Gestione controlling* nella tabella Società è riservato all'imputazione del centro di costo / profitto (oggi centro aziendale)  e della commessa (oggi Progetto) da collegare alla scheda cespite che verrà creata con la registrazione contabile che si sta inserendo.
-
-In particolare il centro che verrà collegato alla scheda cespite con la registrazione (e che è possibile inserire anche manualmente direttamente nella scheda, nella tab 'Dettaglio' della stessa) rappresenta una eccezione, valida per quel cespite, rispetto al dato inserito nella categoria cespite alla quale la scheda inserita fa riferimento, nella tabella Categorie cespite.
-
-**Il centro di costo inserito sarà valorizzato al momento del calcolo (da parte della procedura automatica) dell'ammortamento.**
-
-:::tip NOTA:
-Nel caso in cui siano attive le funzioni avanzate per il controlling la gestione del centro aziendale e del progetto a cui agganciare le quote di ammortamento sarà definita in una apposita tab **Ammortamento per controlling** all'interno della scheda cespite.
-:::
-
-**Cdc**: combo box necessaria per richiamare il centro e collegata con la tabella **[Centri aziendali;](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)**
-
-**Descrizione**: Descrizione del centro richiamato tramite il campo precedente;
-
-**Percentuale**: percentuale di attribuzione al centro inserito nella riga in uso (esempio, in caso di attribuzione totalmente a quel centro indicare 100%, se invece il costo relativo alla quota ammortamento sarà ripartito su due centri si inseriranno die righe ognuna con ripartizione al 50%).
-
-**La griglia riservata all'inserimento del Progetto** (Commessa) non viene aggiornata e non interagisce con il campo 'Progetto' in testata registrazione e/o la tab 'Progetti' (dedicati alla gestione dei costi ordinari di esercizio anziché quelli pluriennali) infatti tale griglia è dedicata, così come per i centri aziendali, ad indicare il progetto che dovrà essere riportato nella scheda cespite e sul quale andranno imputate le quote di ammortamento calcolate.
-
-**Progetti**: widget per l'inserimento del progetto (con doppio click si apre l'help di ricerca, oppure iniziando a scrivere nel campo si attiva la ricerca rapida); il campo è collegato alla tabella Progetti
-
-**Percentuale**: percentuale di attribuzione al progetto inserito nella riga in uso (esempio, in caso di attribuzione totalmente a quel progetto indicare 100%, se invece il costo relativo alla quota ammortamento sarà ripartito su due progetti si inseriranno die righe ognuna con ripartizione al 50%).
-
-## PROCEDURA PER VENDITA CESPITE
-
-- Inserire una causale contabile adeguatamente configurata con la funzione Cespiti ed il tipo operazione corretto, ad esempio alienazione totale
-- Compilare la testata registrazione come di consueto con il cliente ed i dati fattura compreso il totale
-- Nel tab Cespiti utilizzare il comando **seleziona cespite esistente** per richiamare la scheda dl cespite venduto
-- Nella griglia superiore indicare nel campo **Importo** l'imponibile del valore di vendita pattuito con il cliente (indicare zero se il cespite viene donato o distrutto)
-- Nella griglia inferiore il valore del fondo ammortamento accumulato viene stornato in automatico e , per differenza, viene compilato automaticamente il campo plusvalenza o minusvalenza
-- Se la causale è correttamente configurata (consigliabile causale standard) la sezione contabile è correttamente già completa con i dati iva e contabili compreso lo storno del costo storico, del fondo ammortamento e la rilevazione della plus/minusvalenza.
-
-## ALTRO
-
-In caso di alienazione parziale (sempre per un cespite ‘incrementale' o in caso di alienazione parziale non collegata per un non incrementale) l'utente dovrà integrare la riga dell'operazione parziale con gli importi di storno dei fondi (con segno negativo quindi) e valorizzare la minusvalenza o plusvalenza relativa: tali importi saranno poi da inserire anche all'interno della scheda ‘registrazione' per la contabilità generale. Negli altri casi, invece, l'applicativo avrà aggiornato correttamente la scheda cespite, avrà inserito il movimento anche all'interno della sezione Iva della registrazione e da qui avrà aggiornato la registrazione relativa. Nel caso di alienazione, in particolare, se sono stati codificati i sottoconti di minusvalenza e plusvalenza sia all'interno della causale che nei parametri di contabilità, saranno state aggiunte anche le righe relative all'operazione di vendita (una riga di storno del totale patrimoniale attivo, una o più righe di storno dei fondi ammortamento e per differenza la minusvalenza/plusvalenza).
-
-Ulteriori operazioni attivabili nella scheda cespiti: al momento del caricamento di un nuovo cespite è possibile procedere a suddividerlo in N schede differenti. È possibile, infatti, che l'acquisto sia relativo ad un numero di cespiti identici, come ad esempio 5 computer uguali: l'utente, invece, di caricare 5 cespiti manualmente, potrebbe procedere a caricarne uno per il totale e poi suddividerlo in 5 parti uguali automaticamente con l'apposito pulsante (una scelta ulteriore potrebbe essere creare un singolo cespite che si compone di 5 cespiti: questo, se da un lato semplifica la situazione a libro cespiti, dall'altro crea una certa difficoltà poi a gestire le alienazioni cespiti, in quanto saranno da gestire manualmente come alienazioni parziali).
-
-È possibile cancellare la riga cespite inserita nella griglia superiore: in questo caso sarà eseguito un messaggio di conferma della cancellazione anche dell'anagrafica cespite, per il quale il default è su ‘No' (il messaggio viene eseguito anche al momento di chiudere la registrazione senza salvare). Si raccomanda di fare particolare attenzione al messaggio, al fine di non lasciare schede cespiti ‘vuote' all'interno del database.
-
-#### Pulsanti specifici  
-> **Seleziona un cespite esistente**: permette di selezionare un cespite già esistente e rilevare una nuova operazione al suo interno.  
-> **Cancella cespite**: permette di cancellare il cespite selezionato.  
-> **Cancella i dati selezionati dalla griglia tipo ammortamento**: permette di cancellare la riga selezionata all'interno della griglia (inferiore) contenuta nella tab Ammortamenti  
-
-## **8. Parametri**
-
-Il tab **Parametri** è sempre presente in una registrazione contabile, riporta una serie di informazioni e parametri utili ma non strettamente necessari per l'inserimento di una registrazione. 
-
-**Stato registrazione**: *definitivo* o *provvisorio* per la registrazione contabile in uso: la registrazione con stato ‘definitiva' continuerà ad essere modificabile (in tutto tranne che nella causale e divisa di riferimento) finché non sarà stato stampato in definitivo un libro fiscale obbligatorio oppure la stessa non sarà stata utilizzata in una chiusura automatica conti. L'uso dello stato ‘provvisorio' della registrazione (che andrà a togliere e disabilitare il protocollo IVA e a numerare negativamente da -1000 la registrazione) può essere utilizzato per rilevare in contabilità fatture da pagare in via anticipata oppure altri tipi di operazione periodica a manifestazione futura (tipo canoni posticipati). Entrare nella registrazione ad inserire nuovamente lo stato definitivo andrà a riassegnare automaticamente il numero della registrazione e il protocollo Iva valido per la data registrazione impostata (fatta salva la progressività dello stesso). Si ricorda che è presente una procedura di gestione registrazioni provvisorie che consente di gestire massivamente il passaggio a registrazione definitiva di un gruppo di registrazioni provvisorie selezionate.
-
-I flag seguenti derivano dalla causale contabile: 
-
-**Raggruppa registro IVA** (che si consiglia di lasciare sempre attivo) va a raggruppare o meno nel giornale le righe IVA riferite allo stesso sottoconto contabile;
-
-**Ricalcolo automatico centri di costo, di ricavo e progetti**: può essere di interesse per alcuni tipi di registrazione manuale, per le quali l'utente sia normalmente vincolato ad una gestione manuale delle schede cdc/cdp: lasciando il flag inserito, infatti, l'applicativo andrà sempre a resettare le schede citate ad ogni modifica del dato d'origine del libro giornale, cosa che potrebbe causare la perdita appunto di tutti gli inserimenti manuali effettuati. Tale automatismo, anche con flag non inserito, è comunque presente all'atto dell'inserimento della registrazione: vale infatti per l'entrata in modifica della stessa. 
-
-**In black list**: (OBSOLETO) consente di gestire il caso particolare degli acquisti extra-cee (con causale non IVA) da riepilogare nella dichiarazione operazioni con paesi a fiscalità privilegiata, collegando la registrazione attuale al movimento iva del DDT doganale dal quale leggere i valori da dichiarare.
-
-**Data / Num. registrazione collegata**: campo obsoleto, si abilita quando è attivato il flag ‘Black list'. Serviva per le dichiarazioni black list, per legare la fattura del DDT doganale (che dava i valori da comunicare) alla registrazione del soggetto fornitore in black list.
-
-**Data / Num. reg. collegata a nota di accredito**: campo obsoleto; nell'area vendite, quando si crea una nota di accredito, si può indicare all'interno del documento a quale fattura fa riferimento: 
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/parameters-tab/image02.png)
-
-Nell'immagine: campo per indicare il riferimento fattura all'interno della nota di accredito.
-
-Quando si contabilizza la nota di accredito, Fluentis cerca di individuare la registrazione relativa a questa fattura di origine per compilare automaticamente questo legame anche a livello di contabilità (se sei in una registrazione manuale di una nota di credito, allora puoi anche impostare questi campi a mano). Utilizzato per lo spesometro (prima del 2017) quando aveva il limite dei 3000 euro, per stornare le note di credito dalla fattura e non comunicare l'operazione. Oggi non più in uso.
-
-**AUDIT TRAIL**:
-
-Sezione riferita al sistema di monitoraggio attività degli utenti e verifica delle modifiche ai dati integrato nel gestionale "Audit Trail".
-
-**Data Creazione / Nome**: riporta la data e il nome dell'utente che ha creato la registrazione contabile in uso;
-
-**Data ultima modifica / Nome**: riporta la data di ultima modifica e il nome dell'utente che ha modificato la registrazione contabile in uso;
-
-**Data validazione / Nome**: Riporta la data e il nome dell'utente che ha validato la registrazione contabile in uso. Il campo deve tuttavia essere reso operativo tramite un cambio stati (da configurare quando richiesto) che vada ad impostare l'utente e la data di validazione. Con il campo compilato dal cambio stati la registrazione può essere resa non più modificabile.
-
-**Conto Partner**: (OBSOLETO) campo per inserire (tramite il widget di ricerca conti) un sottoconto già codificato in anagrafica; utile per memorizzare, ad esempio, il nome del fornitore estero in una DDT doganale, la quale viene solitamente inserita con riferimento ad un' anagrafica con dati generici per quanto riguarda il soggetto "dogana" (ciò al fine di recepire le modifiche normative nello spesometro secondo le quali dal 2018 non era più consentito passare i dati della dogana  della quale spesso non si hanno riferimenti fiscali e si utilizzava dunque al posto della partita iva il riempitivo XX-99999999, dove XX sta per il codice ISO internazionale della nazione del soggetto)
-
-**La griglia sottostante,** visualizza l'eventuale registrazione automatica collegata a quella in uso: ad ogni modifica della prima, infatti, la procedura continuerà ad allineare la seconda secondo la logica delle causali automatiche.
-
-## 9. Raggruppamento partite  
-
-**GESTIONE PARTICOLARE DELLE PARTITE APERTE ALTERNATIVA RISPETTO A QUELLA STANDARD SOPRA DESCRITTA.**
-
-La gestione dei Raggruppamenti partite permette di creare, in fase di apertura partite oppure in un secondo tempo, dei gruppi di partite (il gruppo è una sorta di contenitore con all'interno, anche visivamente, le partite di dettaglio).
-
-Questi gruppi possono essere poi manipolati aggregando o disaggregando le partite. Quindi in fase di pagamento è possibile assegnare il pagamento stesso in maniera flessibile rispetto ai gruppi ed alle relative partite di dettaglio.
-
-Questo genere di gestione, evidentemente particolare, si addice a chi opera in settori quali la grande distribuzione o il commercio al dettaglio, o comunque a chi gestisca molteplici partite / pagamenti di piccolo importo e alta numerosità e dove il collegamento tra le fatture emesse o ricevute ed i relativi pagamenti sia soggetto ad elevata flessibilità e collegamento meno netto rispetto all'ordinaria operatività. 
-
-Questa funzionalità, una volta inserita, è una gestione incompatibile con la normale gestione a partite e pagamenti: la scelta tra una gestione e l'altra, quindi, va effettuata inizialmente all'atto dell'impostazione delle causali di contabilità generale con ben chiara le caratteristiche di questa gestione.
-
-**GESTIONE DELLA CAUSALE CONTABILE E RISULTATO NELLA REGISTRAZIONE**:
-
-Causale di apertura partite (esempio per "Emissione fattura" o "Fattura Fornitore"): attivare i consueti flag per l'apertura partite (ed eventualmente la chiusura e compensazione), aggiungendo il flag Crea Gruppo.
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image01.png)
-
-Nella registrazione contabile di prima nota, con la causale così modificata, in fase di inserimento della registrazione non si noteranno differenze ed il gruppo partite non sarà visibile, ma esso sarà creato con i medesimi riferimenti della partita in esso contenuta: 
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image02.png)
-
-Per effettuare modifiche al gruppo accorpando altre partite o de-raggruppando si deve operare all'interno della maschera **[Raggruppamenti partite](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**.
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image03.png)
-
-Qui l'utente potrà procedere a creare, per queste partite, uno o più nuovi gruppi partite (che prenderanno numero e data dal numero e data documento della partita che lo crea). La gestione di queste operazioni si effettua utilizzando il menù contestuale che appare premendo il pulsante destro del mouse partita per partita: 
-
-mark: per selezionare più partite/gruppi 
-
-crea nuovo gruppo:  per creare nuovi gruppi; 
-
-de-raggruppa: per sganciare una partita dal gruppo  
-
-abbuoni: per creare abbuoni  e per chiudere un gruppo, 
-
-dettagli: per visualizzare i dettagli della singola partita ; 
-
-suddividi partita: per suddividere la partita inserita in un gruppo . 
-
-La visualizzazione dei gruppi è effettuata per il sottoconto selezionato nella griglia in alto.
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image04.png)   ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image05.png)
-
-Con drag and drop si può spostare le partite da un gruppo all'altro
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image06.png)
-
-NOTA:
-
-Nel caso di contabilizzazione automatica di fatture dal modulo acquisti o vendite nelle tabelle **Tipi fatture** (in **[acquisti ](/docs/configurations/tables/purchase/purchase-invoices-type)** e **[vendite](/docs/configurations/tables/sales/invoices-type)**) c'è un flag analogo per quando si contabilizza la fattura automaticamente (Ragg. partite)
-
-Causale di chiusura partite: (esempio la causale "Pagamento in contanti") attivare il flag ‘Raggruppamenti partite' che rende visibile la scheda **Pagamenti gruppi.**
-
-E' obbligatorio indicare il tipo pagamento corrispondente nella combo box adiacente. 
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image07.png)
-
- A questo punto l'operatività dell'utente nelle registrazioni di incasso/pagamento è completamente differente da quella di una chiusura partite normale: in questo caso, infatti, l'utente inizierà la registrazione dalla scheda **[Registrazione](/docs/finance-area/ledger-records/records/ledger-record)**, imputando direttamente un valore al pagamento/incasso (tramite la compilazione delle sezioni della prima nota), sul quale l'applicativo creerà comunque una partita dare/avere che l'utente procederà poi ad assegnare manualmente (se vuole) ad un gruppo dalla scheda ‘Pagamenti gruppi'.
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image08.png)
-
-Operativamente l'applicativo andrà a creare, su ognuna di queste partite, i relativi pagamenti reciproci (ed è per questo che la lettura di uno scadenziario ‘standard' non sarà più chiaro e si dovrà utilizzare solo i report e le maschere di visualizzazione/gestione dei raggruppamenti per avere una visione chiara dei partitari). Quando il saldo del gruppo, per effetto delle varie partite assegnate, andrà a 0 allora il gruppo avrà passerà automaticamente allo stato ‘chiuso'.
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image09.png)
-
-**NOTA: Per visualizzare i raggruppamenti selezionare con il mouse la riga nella griglia superiore.**
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image10.png)
-
-Direttamente nella tab **Pagamenti gruppi** è possibile effettuare ulteriori modifiche quali de-raggruppamenti o nuovi raggruppamenti.
-
-### VIDEO TUTORIALS
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro)
-:::
+**Disposición parcial**: acoge el

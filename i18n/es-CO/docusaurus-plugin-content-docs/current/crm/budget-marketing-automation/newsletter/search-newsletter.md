@@ -1,22 +1,22 @@
 ---
-title: Ricerca Newsletter
+title: Búsqueda de Newsletter (Ricerca Newsletter)
 sidebar_position: 1
 ---
 
-La maschera di ricerca Newsletter permette di cercare le Newsletter già inserite in Fluentis, oltre a permettere di inserirne di nuove.
+La máscara de búsqueda de Newsletter permite buscar las Newsletters ya ingresadas en Fluentis, además de permitir la creación de nuevas.
 
-La gestione delle newsletter in Fluentis è una funzionalità progettata per facilitare la comunicazione diretta e mirata con i clienti e altri contatti aziendali. Questa funzione permette di creare, gestire e inviare campagne di email marketing utilizzando i dati presenti nel sistema gestionale. Di seguito viene spiegato a cosa serve e come può essere utilizzata.
+La gestión de las newsletters en Fluentis es una funcionalidad diseñada para facilitar la comunicación directa y específica con los clientes y otros contactos comerciales. Esta función permite crear, gestionar y enviar campañas de email marketing utilizando los datos presentes en el sistema de gestión. A continuación, se explica para qué sirve y cómo puede ser utilizada.
 
-**Creazione e Gestione delle Campagne Newsletter**
-La funzionalità di gestione delle newsletter consente di creare campagne di email marketing personalizzate. Gli utenti possono configurare i contenuti delle newsletter (definendo testo, immagini, link e altre informazioni rilevanti per comunicare con i destinatari) creando diversi [Template](/docs/crm/budget-marketing-automation/template/template-search).
+**Creación y Gestión de las Campañas Newsletter (Creazione e Gestione delle Campagne Newsletter)**  
+La funcionalidad de gestión de las newsletters permite crear campañas de email marketing personalizadas. Los usuarios pueden configurar los contenidos de las newsletters (definiendo texto, imágenes, enlaces y otra información relevante para comunicarse con los destinatarios) creando diferentes [Plantillas (Template)](/docs/crm/budget-marketing-automation/template/template-search).
 
-**Segmentazione dei Destinatari**
-E' possibile segmentare i destinatari in modo preciso, selezionando gruppi specifici di contatti e creando quindi diverse [Liste di distribuzione](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-search). Questo consente di inviare comunicazioni altamente mirate, aumentando l'efficacia delle campagne.
+**Segmentación de los Destinatarios (Segmentazione dei Destinatari)**  
+Es posible segmentar a los destinatarios de manera precisa, seleccionando grupos específicos de contactos y creando así diferentes [Listas de distribución (Liste di distribuzione)](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-search). Esto permite enviar comunicaciones altamente específicas, aumentando la efectividad de las campañas.
 
-**Automazione e Programmazione degli Invii**
-La gestione newsletter di Fluentis supporta l’automazione, permettendo di programmare l'invio delle email in momenti specifici. Questo è utile per coordinare le campagne con eventi particolari, come il lancio di nuovi prodotti, promozioni stagionali, o aggiornamenti aziendali. Inoltre, è possibile configurare invii automatici anche con il passaggio di stato nei workflow.
+**Automatización y Programación de los Envios (Automazione e Programmazione degli Invii)**  
+La gestión de newsletters de Fluentis soporta la automatización, permitiendo programar el envío de emails en momentos específicos. Esto es útil para coordinar las campañas con eventos particulares, como el lanzamiento de nuevos productos, promociones estacionales o actualizaciones empresariales. Además, es posible configurar envíos automáticos también con el cambio de estado en los workflows.
 
-**Integrazione con il CRM**
-La gestione delle newsletter in Fluentis è strettamente integrata con i [Contatti CRM](/docs/crm/home-crm/contacts/search-contacts). Questo consente di gestire in modo centralizzato tutte le interazioni con i clienti, inclusi gli invii di newsletter, e di arricchire il profilo del cliente con informazioni provenienti dalle attività di marketing. 
+**Integración con el CRM (Integrazione con il CRM)**  
+La gestión de newsletters en Fluentis está estrechamente integrada con los [Contactos CRM (Contatti CRM)](/docs/crm/home-crm/contacts/search-contacts). Esto permite gestionar de manera centralizada todas las interacciones con los clientes, incluidos los envíos de newsletters, y enriquecer el perfil del cliente con información proveniente de las actividades de marketing.
 
-La gestione delle newsletter nel gestionale Fluentis è quindi uno strumento potente per migliorare la comunicazione aziendale, consentendo di inviare messaggi personalizzati e rilevanti ai propri clienti e contatti, il tutto integrato nel flusso operativo dell'azienda. Questa funzionalità non solo supporta le attività di marketing, ma contribuisce anche a mantenere un contatto costante e proficuo con il proprio pubblico, migliorando la relazione con il cliente e potenziando le opportunità di vendita.
+La gestión de newsletters en el sistema de gestión Fluentis es, por lo tanto, una herramienta poderosa para mejorar la comunicación empresarial, permitiendo enviar mensajes personalizados y relevantes a los clientes y contactos, todo integrado en el flujo operativo de la empresa. Esta funcionalidad no solo apoya las actividades de marketing, sino que también contribuye a mantener un contacto constante y beneficioso con el público, mejorando la relación con el cliente y potenciando las oportunidades de venta.

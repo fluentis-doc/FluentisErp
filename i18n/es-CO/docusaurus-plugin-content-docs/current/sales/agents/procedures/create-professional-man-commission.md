@@ -1,27 +1,26 @@
 ---
-title: Crea compenso percipiente
+title: crea compenso percipiente
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Procedure > Crea compenso percipiente*.
+El formulario se abre a través de la ruta *Ventas (Vendite) > Agentes (Agenti) > Procedimientos (Procedure) > crea compenso percipiente (Crea compenso percipiente)*.
 
-Questa procedura permette di eseguire/ripristinare la creazione del compenso percipiente all'interno della contabilità generale.
+Este procedimiento permite ejecutar/restaurar la creación del compenso percipiente dentro de la contabilidad general.
 
-## Liquidazioni provvigioni
+## Liquidaciones de comisiones (Liquidazioni provvigioni)
 
-In questo tab, l'utente ha la possibilità di cercare le liquidazioni non ancora valorizzate in un compenso percipiente. Dopo aver selezionato le varie righe, premendo il pulsante *Calcolo liquidazioni* si crea il compenso percipiente.
+En esta pestaña, el usuario tiene la posibilidad de buscar las liquidaciones que aún no han sido valoradas en un compenso percipiente. Después de seleccionar las diversas líneas, al presionar el botón *calcolo liquidazioni* se crea el compenso percipiente.
 
+#### Botones específicos (Pulsanti specifici)
 
-#### Pulsanti specifici
+> **ricerca**: realiza la búsqueda de las liquidaciones a valorizar.  
+> **calcolo liquidazioni**: realiza la valorización de las liquidaciones seleccionadas.  
 
-> **Ricerca**: esegue la ricerca delle liquidazioni da valorizzare.  
-> **Calcolo liquidazioni**: esegue la valorizzazione delle liquidazioni selezionate.  
+## Restauración (Ripristino)
 
-## Ripristino
+En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y anular las operaciones de creación realizadas.
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di creazione effettuate.
+#### Botones específicos (Pulsanti specifici)
 
-#### Pulsanti specifici
-
-> **Ricerca**: esegue la ricerca delle liquidazioni secondo il filtro impostato.  
-> **Ripristino**: annulla le creazioni compensi selezionate.  
+> **ricerca**: realiza la búsqueda de las liquidaciones según el filtro establecido.  
+> **ripristino**: anula las creaciones de compensos seleccionadas.

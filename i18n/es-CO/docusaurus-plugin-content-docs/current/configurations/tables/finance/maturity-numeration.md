@@ -1,14 +1,14 @@
 ---
-title: Numerazione partite
+title: numerazione partite
 sidebar_position: 17
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla se ve afectada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 :::
 
-Definisce la numerazione valida per le partite contabili, che **deve** essere di tipo annuale e **senza** recupero di eventuali buchi di numerazione.
+Define la numeración válida para las partidas contables, que **debe** ser de tipo anual y **sin** recuperación de posibles faltantes en la numeración.
 
-:::tip Alert
-in fase di start up aziendale, nel caso in cui si importino da excel le partite aperte, si raccomanda di abilitare il numeratore a partire da una data precedente alla minima data documento, in quanto ***FluentisERP*** attribuirà il numero partita sulla base dell'anno documento e quindi il numeratore deve essere valido per poter eseguire l'import
+:::tip Alerta (Alert)
+En la fase de inicio de la empresa, en caso de que se importen desde Excel las partidas abiertas, se recomienda habilitar el numerador a partir de una fecha anterior a la fecha mínima del documento, ya que ***FluentisERP*** asignará el número de partida en función del año del documento y, por lo tanto, el numerador debe ser válido para poder realizar la importación.
 :::

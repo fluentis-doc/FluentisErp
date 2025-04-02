@@ -1,27 +1,27 @@
 ---
-title: CRP - Tipo Simulazione Gantt
+title: CRP - Tipo Simulación Gantt (CRP - Tipo Simulazione Gantt)
 sidebar_position: 17
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Simulazione Gantt*.
+La tabla permite gestionar la codificación de los diferentes tipos de *tipo simulazione gantt*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca CRP - Tipo Simulazione Gantt**
+**Buscar CRP - Tipo Simulación Gantt (Ricerca CRP - Tipo Simulazione Gantt)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo será necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento CRP - Tipo Simulazione Gantt**
+**Inserción CRP - Tipo Simulación Gantt (Inserimento CRP - Tipo Simulazione Gantt)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, la **Descrizione** e la **Numerazione**.
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice**, la **descrizione** y la **numerazione**.
 
-*Campi specifici*:
+*Campos específicos (Campi specifici)*:
 
-> **Codice**: indica il codice del *Tipo Simulazione Gantt*;           
-> **Descrizione** tipo: indica la descrizione del *Tipo Simulazione Gantt*;        
-> **Numerazione**: indica la numerazione associata al *Tipo Simulazione Gantt*;           
-> **Snapshot**: se attivo, indica the questo è un *Tipo Simulazione Gantt* usato per gli *Snapshot*.
+> **codice**: indica el código del *tipo simulazione gantt*;  
+> **descrizione**: indica la descripción del *tipo simulazione gantt*;  
+> **numerazione**: indica la numeración asociada al *tipo simulazione gantt*;  
+> **snapshot**: si está activo, indica que este es un *tipo simulazione gantt* utilizado para las *snapshot*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consultar el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

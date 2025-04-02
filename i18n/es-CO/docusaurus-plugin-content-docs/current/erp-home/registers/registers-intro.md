@@ -1,32 +1,30 @@
 ---
-title: Anagrafiche
+title: anagrafiche
 sidebar_position: 1
 ---
 
-In un software ERP come Fluentis, dove esiste un collegamento ed una sinergia tra le varie aree e moduli e sussiste un'origine dati condivisa tra varie aziende gestite e le varie aree e funzionalità coinvolte, un ruolo fondamentale riveste un 'efficiente ed efficace gestione delle **anagrafiche**.
+En un software ERP como Fluentis, donde existe un enlace y una sinergia entre las diversas áreas y módulos y hay una fuente de datos compartida entre diversas empresas gestionadas y las diferentes áreas y funcionalidades involucradas, desempeña un papel fundamental una gestión eficiente y efectiva de las **anagrafías** (anagrafiche).
 
-:::tip[Info]
-Per un'introduzione generale e approfondimento sulla **struttura ERP** clicca [**qui**](/docs/guide/intro/intro-erp)
+:::tip[Información (Info)]
+Para una introducción general y un análisis sobre la **estructura ERP**, haz clic [**aquí**](/docs/guide/intro/intro-erp)
 :::
 
-Questi dati di base permettono di automatizzare notevolmente le procedure a valle tramite la lettura dei dati in esse contenute.
+Estos datos básicos permiten automatizar considerablemente los procedimientos posteriores mediante la lectura de los datos que contienen.
 
-:::note[**Esempio**:]
-inserendo una nuova fattura di vendita otterremo automaticamente le condizioni di pagamento standard definite nell'anagrafica del cliente, l'aliquota iva la leggeremo dall'anagrafica dell'articolo fatturato, l'eventuale scontistica sempre dall'anagrafica cliente, oppure attraverso il listino prezzi dell'articolo al quale il cliente stesso è associato.
+:::note[**Ejemplo (Esempio):**]
+Al ingresar una nueva factura de venta, obtendremos automáticamente las condiciones de pago estándar definidas en el registro del cliente, la tasa de IVA la leeremos del registro del artículo facturado, los descuentos opcionales siempre del registro del cliente, o a través del listado de precios del artículo al cual el cliente está asociado.
 :::
 
-
-
-Attraverso questa sezione vengono gestite le seguenti tipologie di anagrafiche:
-- [le anagrafiche dei **clienti**, **fornitori**, **banche** e **agenti**:](/docs/erp-home/registers/contacts/registers-management) che sono costituite a una parte generale definita **Contatto** che accoglie i dati di base quali il nome o ragione sociale, i dati fiscali, l'indirizzo ecc. ed una parte di dettaglio definita **Dati contabili** (in quanto connessa e dipendente dalla creazione di un conto nel piano dei conti). Tale sezione è suddivisa in sotto-sezioni per accogliere i dati relativi a:
-    - Dati amministrativi: quali conti da utilizzare ocn il soggetto in questione, aliquote iva relative ecc.
-    - Dati fiscali: es. regimi fiscali particolari ai quali il soggetto aderisce e dati per la fatturazione elettronica
-    - Pagamenti: condizioni standard da proporre a valle e banche d'appoggio
-    - Consegna: Destinatari e destinazioni
-    - Spese e sconti: scontistiche fisse e spese aggiuntive da fatturare
-    - Listini: associazione listini di vendita e acquisto all'anagrafica
-    - Agenti: associazione degli agenti ai clienti
-    - Altro
-- [le anagrafe degli **articoli**:](/docs/erp-home/registers/items/master-item-intro) composte da diverse sezioni in base al tipo di dato ed all'utilizzo relativo (es. i dati amministrativi, le unità di misura ecc)
-- [piano dei **conti**:](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) che pur inserito nel contesto delle anagrafiche (inquanto connesso alle anagrafiche clienti e fornitori) si presenta più simile ad una tabella dove definire i conti ed i loro raggruppamenti
-- **[cicli di lavoro,](/docs/erp-home/registers/production/routes/cycle-management-and-production-phases) [distinte base](/docs/erp-home/registers/production/bill-of-materials/bom), [prototipi:](/docs/erp-home/registers/production/standardization/new-prototype)** elementi relativi al contesto della produzione
+A través de esta sección se gestionan los siguientes tipos de anagrafías:
+- [anagrafías de **clientes**, **proveedores**, **bancos** y **agentes**:](/docs/erp-home/registers/contacts/registers-management) que están compuestas por una parte general denominada **Contacto**, que incluye los datos básicos como el nombre o razón social, los datos fiscales, la dirección, etc., y una parte detallada denominada **Datos contables** (ya que está conectada y depende de la creación de una cuenta en el plan de cuentas). Esta sección se divide en subsecciones para incluir los datos relativos a:
+    - Datos administrativos: como cuentas a utilizar con el sujeto en cuestión, tasas de IVA relacionadas, etc.
+    - Datos fiscales: por ejemplo, regímenes fiscales especiales a los que el sujeto se adhiere y datos para la facturación electrónica.
+    - Pagos: condiciones estándar a proponer posteriormente y bancos de apoyo.
+    - Entrega: destinatarios y destinos.
+    - Gastos y descuentos: descuentos fijos y gastos adicionales a facturar.
+    - Listados: asociación de listados de venta y compra al registro.
+    - Agentes: asociación de los agentes a los clientes.
+    - Otro.
+- [anagrafías de **artículos**:](/docs/erp-home/registers/items/master-item-intro) compuestas por diferentes secciones según el tipo de dato y su uso correspondiente (por ejemplo, los datos administrativos, las unidades de medida, etc.)
+- [plan de **cuentas**:](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) que, aunque se inserta en el contexto de las anagrafías (ya que está conectado a los registros de clientes y proveedores), se presenta más como una tabla donde definir las cuentas y sus agrupaciones.
+- **[ciclos de trabajo (cicli di lavoro),](/docs/erp-home/registers/production/routes/cycle-management-and-production-phases) [listas de materiales (distinte base)](/docs/erp-home/registers/production/bill-of-materials/bom), [prototipos (prototipi):](/docs/erp-home/registers/production/standardization/new-prototype)** elementos relacionados con el contexto de la producción.

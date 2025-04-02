@@ -1,19 +1,17 @@
 ---
-title: Personalizzazioni form e Gestione profili
+title: Personalizaciones de formularios y Gestión de perfiles (Personalizzazioni form e Gestione profili)
 sidebar_position: 9
 ---
 
-### Personalizzazioni form
+### Personalizaciones de formularios (Personalizzazioni form)
 
+Las personalizaciones de los formularios (tamaño/posicionamiento/nuevos campos) deben ser guardadas con un perfil de usuario para poder configurarlas por defecto para el usuario, para varios usuarios o para roles de usuarios (a través del botón **diritti profilo**): si no se guardan, se perderán al cerrar la máscara misma.
 
-Le personalizzazioni delle form (dimensione/posizionamento/nuovi campi) devono essere memorizzate con un profilo utente per poterle impostare di default all'utente, a più utenti o per ruoli di utenti (attraverso il pulsante **Diritti profilo**): se non sono memorizzate, queste sono perse alla chiusura della maschera stessa.
+Estos también almacenan la posición de las columnas, su tamaño, pero también se permite la modificación de los diseños de los formularios mismos, eliminando, agregando o reposicionando los campos disponibles en el mismo o en el **object navigator**.
 
-Queste memorizzano anche il posizionamento delle colonne, la loro dimensione, ma è consentita anche la modifica ai layout delle form stesse, cancellando, aggiungendo o riposizionando i campi disponibili nella stesso o nell'**Object Navigator**.
+**procedura**
 
-
-**Procedura**
-
-**1.** Aprire il **[Form navigator](/docs/form-navigator/form-navigator-intro)** a sinistra della form scelta: 
+**1.** Abrir el **[Navegador de formularios (Form navigator)](/docs/form-navigator/form-navigator-intro)** a la izquierda del formulario elegido: 
 
 <p align="center">
 
@@ -21,7 +19,7 @@ Queste memorizzano anche il posizionamento delle colonne, la loro dimensione, ma
 
 </p>
 
-- se siamo in una form di filtro aprire il **Filter widget** e selezionare il **Filtro** per rendere visibile e selezionare in basso l'opzione **Customization mode**  
+- si estamos en un formulario de filtro, abrir el **Widget de filtro (Filter widget)** y seleccionar el **Filtro** para hacer visible y seleccionar en la parte inferior la opción **Modo de personalización (Customization mode)**  
  
 <p align="center"> 
 
@@ -29,7 +27,7 @@ Queste memorizzano anche il posizionamento delle colonne, la loro dimensione, ma
 
 </p>
 
-- se siamo in una form di un documento, selezionare lo stesso per abilitare e selezionare in basso l'opzione **Customization mode**  
+- si estamos en un formulario de documento, seleccionarlo para habilitar y seleccionar en la parte inferior la opción **Modo de personalización (Customization mode)**  
 
 <p align="center">
 
@@ -37,7 +35,7 @@ Queste memorizzano anche il posizionamento delle colonne, la loro dimensione, ma
 
 </p>
 
-**2.** A quel punto il filtro o la form sarà bordata in rosso e si potranno selezionare i campi per spostarli, cancellarli o aggiungerne di nuovi prelevandoli dall' **[Object navigator](/docs/object-navigator/object-navigator-intro)** che è presente a destra.  
+**2.** En ese punto, el filtro o el formulario estará bordeado en rojo y se podrán seleccionar los campos para moverlos, eliminarlos o agregar nuevos tomando de **[Navegador de Objetos (Object navigator)](/docs/object-navigator/object-navigator-intro)**, que está presente a la derecha.  
 
 <p align="center">
 
@@ -45,7 +43,7 @@ Queste memorizzano anche il posizionamento delle colonne, la loro dimensione, ma
 
 </p>
 
-**3.** Una volta impostata la maschera, salvare il profilo per renderlo disponibile in seguito o impostarlo ad altri utenti attraverso la gestione del profilo   
+**3.** Una vez configurada la máscara, guardar el perfil para hacerlo disponible posteriormente o configurarlo para otros usuarios a través de la gestión del perfil.   
 
 <p align="center">
 
@@ -53,11 +51,11 @@ Queste memorizzano anche il posizionamento delle colonne, la loro dimensione, ma
 
 </p>
 
-### Gestione profili
+### Gestión de perfiles (Gestione profili)
 
-**Procedura**
+**procedura**
 
-Un nuovo profilo può essere salvato con l'aiuto del pulsante **Salva come**  
+Un nuevo perfil puede ser guardado con la ayuda del botón **salva come**  
 
 <p align="center">
 
@@ -65,7 +63,7 @@ Un nuovo profilo può essere salvato con l'aiuto del pulsante **Salva come**
 
 </p>
 
-Il pulsante aprirà una nuova maschera dove potete inserire il **Nome** del nuovo profilo che si vuole salvare  
+El botón abrirá una nueva máscara donde podrás ingresar el **Nombre** del nuevo perfil que deseas guardar.  
 
 <p align="center">
 
@@ -73,10 +71,10 @@ Il pulsante aprirà una nuova maschera dove potete inserire il **Nome** del n
 
 </p>
 
-Il nuovo profilo può essere modificato successivamente e salvato con il pulsante **Salva Profilo** oppure può essere cancellato con il pulsante **Cancella Profilo** oppure può essere reso disponibile/impostato ad altri utenti utilizzando il pulsante **Diritti Profilo** che aprirà la maschera **Gestione Profilo** da dove si possono scegliere le diverse opzioni da salvare ulteriormente con il pulsante **Salva profilo.**   
+El nuevo perfil puede ser modificado posteriormente y guardado con el botón **salva profilo** o puede ser eliminado con el botón **cancella profilo**, o puede ser puesto a disposición/configurado para otros usuarios utilizando el botón **diritti profilo** que abrirá la máscara **gestione profilo** desde donde se pueden elegir las diferentes opciones para guardar adicionalmente con el botón **Guardar perfil (Salva profilo).**  
 
 <p align="center">
 
-![](/img/it-it/guide/operations-with-data/form-customization-and-profiles-management/image08.png)   
+![](/img/it-it/guide/operations-with-data/form-customization-and-profiles-management/image08.png)  
 
 </p>

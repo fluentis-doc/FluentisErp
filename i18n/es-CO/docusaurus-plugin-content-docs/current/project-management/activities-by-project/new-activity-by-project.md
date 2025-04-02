@@ -1,108 +1,104 @@
 ---
-title: Nuova Dichiarazione Attività per Progetto
+title: Nueva Declaración de Actividad para Proyecto (Nuova Dichiarazione Attività per Progetto)
 sidebar_position: 1
 ---
 
-I dati sono:
+Los datos son:
 
-**Tipo attività**: contiene il [Tipo attività](/docs/configurations/tables/project-management/activity-type/);
+**tipo attività**: contiene el [Tipo de actividad](/docs/configurations/tables/project-management/activity-type/);
 
-**Data attività/Numero attività**: contiene la data e il numero dell’attività; verrà proposta in automatico la più vecchia data mancante in base ai mesi da verificare impostati nei parametri progetti. Se la data è una giornata configurata nel Caledario giorni non lavorativi, questa non verrà proposta.
+**Fecha de actividad/Número de actividad (Data attività/Numero attività)**: contiene la fecha y el número de la actividad; se propondrá automáticamente la fecha más antigua que falte según los meses a verificar establecidos en los parámetros del proyecto. Si la fecha corresponde a un día configurado en el Calendario de días no laborables, esta no será propuesta.
 
-**Risorsa**: contiene la risorsa che svolge l’attività;
+**risorsa**: contiene el recurso que realiza la actividad;
 
-**Data/Tempo manuale**: contiene la data di inserimento e il flag, se attivo, abilita il campo **Totale tempo** in modo che non sia calcolato in automatico ma possa essere modificato manualmente dall'utente;
+**Fecha/Hora Manual (Data/Tempo manuale)**: contiene la fecha de ingreso y el indicador; si está activo, habilita el campo **totale tempo** de modo que no se calcule automáticamente, sino que pueda ser modificado manualmente por el usuario;
 
-**Cliente**: contiene il cliente per il quale viene svolta l’attività;
+**cliente**: contiene al cliente para el cual se realiza la actividad;
 
-**Conto statistico**: è possibile inserire un conto da utilizzare per le statistiche;
+**conto statistico**: se puede ingresar una cuenta a utilizar para las estadísticas;
 
-**Progetto**: contiene il [Progetto](/docs/project-management/projects/search-projects-intro/) collegato;
+**progetto**: contiene el [Proyecto](/docs/project-management/projects/search-projects-intro/) relacionado;
 
-Aprendo l'expander del Progetto, è possibile impostare un **Articolo**: questo codice articolo verrà utilizzato nel caso l'attività sia fatturabile, e quindi convertita in intervento. Se non viene indicato un codice articolo specifico, il servizio nell'intervento avrà codice articolo, UM e prezzo presi dal progetto collegato. 
-Se invece viene indicato un articolo specifico: 
-- se l'UM articolo e UM progetto collegato coincidono, e la UM nel progetto è di tipo "Tempo", nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM presi dal progetto. 
-- se l'UM articolo e UM progetto collegato NON coincidono o la UM del progetto non è di tipo "Tempo", nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM attribuiti in base alle logiche standard dei documenti (come nel caso di inserimento di una nuova riga in un documento, vengono considerati listini, sconti, prezzo default in anagrafica articolo, etc) 
+Al abrir el expansor del Proyecto, es posible establecer un **articolo**: este código de artículo se utilizará en caso de que la actividad sea facturable y, por lo tanto, convertida en intervención. Si no se indica un código de artículo específico, el servicio en la intervención tendrá el código de artículo, UM y precio del proyecto relacionado.  
+Si se indica un artículo específico:  
+- si la UM del artículo y la UM del proyecto relacionado coinciden, y la UM en el proyecto es de tipo "Tiempo", en la intervención tendremos el código de artículo indicado en la actividad, con precio y UM tomados del proyecto.  
+- si la UM del artículo y la UM del proyecto relacionado NO coinciden o la UM del proyecto no es de tipo "Tiempo", en la intervención tendremos el código de artículo indicado en la actividad, con precio y UM asignados de acuerdo a las lógicas estándar de los documentos (como en el caso de la inserción de una nueva línea en un documento, se consideran precios, descuentos, precio por defecto en el registro del artículo, etc.)
 
-**Ora di inizio/Ora fine**: contiene l’orario di inizio e di fine dell’attività; viene proposta in base al turno della risorsa, e se già presenti altre dichiarazioni, verrà proposta solo la fascia oraria mancante per la giornata. 
-<u>Non sono ammesse date disallineate</u> tra i vari campi Inizio-Fine, Inizio-Fine pausa e Data attività, per cui alla modifica di una qualsiasi data di queste, gli altri campi si allineeranno in automatico. 
-Modificando l' Ora di fine, se antecedente alla pausa, questa verrà cancellata in automatico
+**Hora de inicio/Hora de fin (Ora di inizio/Ora fine)**: contiene la hora de inicio y fin de la actividad; se propone según el turno del recurso, y si ya hay otras declaraciones presentes, se propondrá solo la franja horaria faltante para el día.  
+<u>No se permiten fechas desalineadas</u> entre los diferentes campos Ingreso-Fin, Ingreso-Fin pausa y Fecha de actividad, por lo que al modificar cualquier fecha de estas, los otros campos se alinearán automáticamente.  
+Al modificar la Hora de fin, si es anterior a la pausa, esta se eliminará automáticamente.
 
-**Ora inizio pausa/Ora fine pausa**: contiene gli orari della pausa;
+**Hora de inicio de pausa/Hora de fin de pausa (Ora inizio pausa/Ora fine pausa)**: contiene los horarios de la pausa;
 
-**Attività sovrapposta** : flag che si abilita in automatico se rileva la presenza di altre attività per la risorsa nella stessa giornata o fascia oraria.
+**attività sovrapposta**: indicador que se activa automáticamente si detecta la presencia de otras actividades para el recurso en el mismo día o franja horaria.
 
-**Minuti Sovrapposti** : è possibile indicare manualmente a cura dell'utente il tempo effettivo per cui le attività si sovrappongono.
+**minuti sovrapposti**: es posible indicar manualmente por parte del usuario el tiempo real durante el cual las actividades se superponen.
 
-**Attività in Smart Working** : flag che si abilita in automatico in base alle configurazioni inerenti allo Smartworking nell'anagrafica risorsa. Verrà utilizzato poi nell'elaborazione cedolini paga, per identificare le giornate in cui è stato svolto lo smart working. Nelle apposite dashboard sarà poi possibile verificare la presenza di giornate con dichiarazioni attività ibride per la stessa giornata. 
+**attività in smart working**: indicador que se activa automáticamente según las configuraciones relativas al Teletrabajo en el registro del recurso. Luego será utilizado en el procesamiento de nóminas para identificar los días en los que se ha realizado teletrabajo. En los cuadros de mando específicos, será posible verificar la presencia de días con declaraciones de actividades híbridas para el mismo día.
 
-**Centro di costo di origine**: centro di costo proposto dall'anagrafica dipendente associato alla risorsa. 
+**centro di costo di origine**: centro de costos propuesto por el registro del empleado asociado al recurso.
 
-**Centro di costo**: centro di costo proposto dalla categoria attività.
+**centro di costo**: centro de costos propuesto por la categoría de actividad.
 
-**Tickets**: ticket associato all’attività; se nella dichiarazione attività non è compilato il cliente ed il progetto, questi verranno compilati in automatico dal ticket associato.
+**tickets**: ticket asociado a la actividad; si en la declaración de actividad no se completa el cliente y el proyecto, estos se completarán automáticamente a partir del ticket asociado.
 
-**Stima tecnica**: se nel ticket è presente una stima tecnica che corrisponde al cliente ed alla risorsa, questa verrà proposta in automatico. Se nella dichiarazione attività non è compilato il cliente ed il progetto, questi verranno compilati in automatico dal ticket/stima tecnica associati. 
+**stima tecnica**: si en el ticket hay una estimación técnica que corresponde al cliente y al recurso, esta se propondrá automáticamente. Si en la declaración de actividad no se completa el cliente y el proyecto, estos se completarán automáticamente a partir del ticket/estimación técnica asociados.
 
-**Impianto**: anagrafica impianto dell'area EAM, associata all'attività. 
+**impianto**: registro de instalación del área EAM, asociada a la actividad.
 
-**Società / Divisione Intercompany** : indica la società e divisione di appartenenza se diverso dalla società di inserimento. 
+**società / divisione intercompany**: indica la sociedad y división de pertenencia si es diferente de la sociedad de ingreso.
 
-**Intervento**: contiene l’eventuale [Intervento](/docs/project-management/service-activities/search-intervention/) collegato manualmente o generato in automatico al salvataggio attività o generato dalla procedura guidata; Nel tipo attività è possibile impostare il tipo intervento da utilizzare. 
+**intervento**: contiene la eventual [Intervención](/docs/project-management/service-activities/search-intervention/) relacionada manualmente o generada automáticamente al guardar la actividad o generada por el procedimiento guiado; en el tipo de actividad es posible establecer el tipo de intervención a utilizar.  
 ![](/img/it-it/project-management/projects/declaration.png)
 
-**Stato attività**: contiene lo stato tra Inserito, Verificato, Sospeso, Chiuso.
+**stato attività**: contiene el estado entre Ingresado, Verificado, Suspendido, Cerrado.
 
-**Totale tempo**: contiene il conteggio in ore della dichiarazione attività, calcolato in base agli orari dichiarati. Se abilitato il flag "Tempo Manuale" il campo sarà modificabile dall'utente. 
+**totale tempo**: contiene el conteo en horas de la declaración de actividad, calculado en función de las horas declaradas. Si está habilitado el indicador "Tiempo Manual", el campo será modificable por el usuario.
 
-**Percentuale Stima del lavoro** : è possibile indicare un valore da 0 a 100 perchè venga inserito nell'eventuale servizio dell'intervento generato dall'attività.
+**percentuale stima del lavoro**: es posible indicar un valor de 0 a 100 para que se inserte en el eventual servicio de la intervención generada por la actividad.
 
-**Criteri di fatturazione**
+**criteri di fatturazione**
 
-**Categoria di attività**: proposta in automatico dal progetto se presente, o inserita dall'utente. Dalla categoria attività dipendono il centro di costo ed il flag "Attività Fatturabile"
+**categoria di attività**: propuesta automáticamente por el proyecto si está presente, o ingresada por el usuario. De la categoría de actividad dependen el centro de costo y el indicador "Actividad Facturable".
 
-**Attività intercompany** flag che identifica l'attività gestita come intercompany. 
+**attività intercompany**: indicador que identifica la actividad gestionada como intercompany.
 
-**Attività Fatturata**: flag che indica se l'attività è collegata all'intervento, e di conseguenza fatturata. 
+**attività fatturata**: indicador que indica si la actividad está relacionada con la intervención, y, por lo tanto, facturada.
 
-**Attività fatturabile**: flag che indica se l'attività può essere convertita in intervento, e di conseguenza fatturata. Questo flag viene impostato a seconda della categoria attività o dall'utente. 
+**attività fatturabile**: indicador que indica si la actividad puede ser convertida en intervención, y, por lo tanto, facturada. Este indicador se establece según la categoría de actividad o por el usuario.
 
-**Forza l'attività fatturata**: flag indica se l'attività può essere considerata fatturata anche senza esserlo effettivamente, in modo che non si generi l'intervento collegato. 
+**forza l'attività fatturata**: indicador que indica si la actividad puede considerarse facturada incluso sin serlo realmente, de modo que no se genere la intervención relacionada.
 
-**Attività a valore aggiunto**: flag che identifica le attività a valore aggiunto, a scopo statistico. Valorizzato in base al progetto, se non presente in base alla configurazione della categoria attività. Può essere modificato manualmente dall'utente. 
+**attività a valore aggiunto**: indicador que identifica las actividades de valor añadido, con fines estadísticos. Valorada según el proyecto, si no está presente según la configuración de la categoría de actividad. Puede ser modificada manualmente por el usuario.
 
-Successivamente sono presenti diverse tab.
+A continuación, hay varias pestañas.
 
+**Pestaña Descripción (Tab Descrizione)**  
+En esta pestaña es posible describir la actividad en el campo **descrizione attività**, que será utilizada como Descripción de la actividad realizada en las intervenciones (si se generan). También hay una **descrizione interna** que no será propagada en ningún otro documento.  
+Si la actividad está relacionada con una intervención y se realizan modificaciones en horarios y/o descripciones, la intervención también se actualizará automáticamente.
 
-**Tab Descrizione**
-In questa tab è possibile descrivere l’attività nel campo **Descrizione attività**, che verrà utilizzata come Descrizione attività svolta negli interventi (se generati). E' presente anche una **Descrizione interna** che invece non verrà propagata in alcun altro documento. 
-Se l'attività è collegata ad un intervento e si fanno modifiche ad orari e/o descrizione, verrà automaticamente aggiornato anche l'intervento. 
+**Pestaña Cargos de viaje (Tab Oneri di viaggio)**  
+Esta pestaña contiene los cargos de viaje que pueda haber asumido el recurso.  
+En la fase de ingreso manual de la declaración de actividad, los gastos se propondrán automáticamente al seleccionar el recurso, si están configurados en el registro.  
+Si, en cambio, la declaración de actividad se ha generado automáticamente a partir de la intervención, la pestaña Cargos de viaje solo contendrá lo que haya declarado el recurso como Gastos asumidos en la intervención. Si la pestaña Gastos asumidos en la intervención está completamente vacía, en la actividad se propondrán los gastos configurados en el registro del recurso.
 
-**Tab Oneri di viaggio**
-Questa tab contiene eventuali oneri di viaggio sostenuti dalla risorsa. 
-In fase di inserimento manuale della dichiarazione attività, le spese verranno proposte in automatico selezionando la risorsa, se configurate in anagrafica. 
-Se invece la dichiarazione attività è stata generata in automatico dall'intervento, la tab Oneri di viaggio conterrà soltanto quanto dichiarato dalla risorsa come Spese sostenute nell'intervento. Se la tab Spese sostenute nell'intervento sarà completamente vuota, nell'attività verranno comunque proposte le spese configurate in anagrafica risorsa. 
+Al guardar, si los gastos propuestos no se han completado con valores e importes, se eliminarán automáticamente.
 
-Al salvataggio se le spese proposte non sono state completate con valori ed importi, verranno cancellate in automatico. 
+Es posible indicar el **tipo spese**, y en función de su configuración se habilitarán para modificación otros campos como **ore viaggio**, **costo orario**, **KM**, **costo km**, **importo forfait**, **imposta**, **iva inclusa**, **importo spesa**, **data**, **tipo pagamento**, etc.
 
-È possibile indicare il **Tipo spese**, ed in base alla sua configurazione saranno abiliati alla modifica gli altri campi quali **Ore viaggio**, **Costo orario**, **KM**, **costo KM**, **Importo forfait**, **Imposta**, **IVA inclusa**, **Importo spesa**, **Data**, **Tipo pagamento**, ecc.
+**costo totale** se calcula automáticamente en caso de "costo por hora" o "costo por KM", multiplicados por las respectivas "horas de viaje" y "KM".
 
-**Costo totale** è calcolato in automatico nel caso di "costo orario" o "costo KM", moltiplicati per i rispettivi "ore viaggio" e "KM". 
+**da rimborsare** si está habilitado, en el procesamiento de la nómina, el importe será considerado como a reembolsar, de lo contrario será excluido de la nómina.
 
-**Da rimborsare** se abilitato, nell'elaborazione del cedolino paga, l'importo verrà considerato come da rimborsare, altrimenti sarà escluso dal cedolino. 
+**in fattura** indica si el gasto debe ser incluido como gasto "A facturar" en la intervención si se genera.
 
-**In fattura** indica se la spesa dev'essere inserita come spesa "Da fatturare" nell'intervento qualora venga generato. 
+**note**: notas eventuales ingresadas por el usuario.
 
-**Note** eventuali note inserite dall'utente.
+**Pestaña Actividad de contacto (Tab Attività contatto)**  
+En esta pestaña es posible vincular la declaración de actividad a un contacto del área CRM, a una Oportunidad del área CRM y a una Campaña de Marketing.
 
-**Tab Attività contatto**
-In questa tab è possibile collegare la dichiarazione attività ad un contatto dell'area CRM, ad un'Opportunità area CRM ed ad una Campagna Marketing. 
+**Pestaña Documentos adjuntos (Tab Documenti allegati)**  
+En esta pestaña es posible visualizar y agregar adjuntos, que se guardarán en el módulo Documental de Fluentis. Para agregar un archivo, basta con utilizar el drag and drop, es decir, seleccionando el archivo desde la ubicación en la que se encuentra actualmente y soltándolo dentro de la tabla.
 
-**Tab Documenti allegati**
-In questa tab è possibile visualizzare e aggiungere degli allegati, che verranno salvati nel modulo Documentale di Fluentis. Per aggiungere un file è sufficiente utilizzare il drag and drop, ossia selezionando il file dal percorso in cui si trova attualmente e rilasciandolo all’interno della tabella.
-
-**Tab Extra Data** 
-In questo tab è possibile inserire eventuali Extra Data collegati; per maggiori informazioni consultare la sezione [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata). 
-
-
-
+**Pestaña Extra Data (Tab Extra Data)**  
+En esta pestaña es posible ingresar eventualmente Extra Data relacionados; para más información, consulte la sección [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).

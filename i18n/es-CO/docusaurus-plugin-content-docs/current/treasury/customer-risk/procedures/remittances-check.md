@@ -1,94 +1,86 @@
 ---
-title: Controllo rimesse
+title: controllo rimesse
 sidebar_position: 1
 ---
-La form si trova in Tesoreria > Rischio Cliente > Procedure >Controllo rimesse
 
-La maschera presenta il dettaglio delle registrazioni di incasso rilevate in capo al cliente, all'interno dei range di date e dei filtri inseriti in testata. 
+El formulario se encuentra en Tesorería > Riesgo Cliente > Procedimientos > controllo rimesse (Controllo rimesse).
 
-## Come verificare la situazione rimesse di un cliente
+La máscara presenta el detalle de los registros de cobro registrados a nombre del cliente, dentro de los rangos de fechas y filtros ingresados en el encabezado.
 
-1. Espandere, se necessario, la sezione dei filtri per inserire (obbligatorio) il conto del cliente da verificare
-2. Utilizzare gli altri filtri per ricercare le registrazioni di incasso interessate
-3. Premere il tasto Ricerca e leggere i risultati nella griglia centrale ed i risultati, per la media riferita al cliente nel suo complesso, nella zona in basso della form.
+## Cómo verificar la situación de remesas de un cliente
 
-## Come si leggono e si interpretano i risultati
+1. Expande, si es necesario, la sección de filtros para ingresar (obligatorio) la cuenta del cliente a verificar.
+2. Utiliza los otros filtros para buscar los registros de cobro pertinentes.
+3. Presiona el botón de Búsqueda y lee los resultados en la cuadrícula central y los resultados para la media referida al cliente en general, en la zona inferior del formulario.
 
-- Le registrazioni di incasso per il cliente selezionato nell'intervallo di date impostato, vengono esposte nell'ordine di data dal primo all'ultimo. Nella form sono rappresentati dal più recente in alto al meno recente in basso e viene riportata la **Data scadenza** presente nella partita aperta che è stata incassata.
+## Cómo se leen e interpretan los resultados
 
-- Il calcolo è di tipo **scalare**, quindi le righe vengono confrontate per calcolare le differenze in giorni dalla prima alle righe successive. Vengono calcolati i **Numeri**, ovvero l'importo moltiplicato per il numero di giorni (come avviene negli estratti conto scalari inviati dalle banche e relativi ai conti correnti)
+- Los registros de cobro para el cliente seleccionado en el intervalo de fechas establecido se presentan en orden de fecha de la primera a la última. En el formulario, están representados del más reciente en la parte superior al menos reciente en la parte inferior, y se reporta la **data scadenza** presente en la partida abierta que ha sido cobrada.
 
-- Viene considerata anche una **Valuta banca**, ovvero nel movimento contabile di incasso potrebbero essere stati aggiunti dei giorni valuta banca tra la disposizione di pagamento da parte del cliente e l'effettivo incasso. Questi giorni valuta sono visibili nella scrittura contabile attivando l'apposito flag *Giorni Banca* nella [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) e possono essere proposti attraverso [l'anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/bank-days) (Tab *Giorni Banca*) della banca di incasso, oppure valorizzati manualmente nella registrazione.
+- El cálculo es **escalar (scalare)**, por lo tanto, las filas se comparan para calcular las diferencias en días desde la primera hasta las filas siguientes. Se calculan los **Números (Numeri)**, es decir, el importe multiplicado por el número de días (como sucede en los extractos de cuenta escalonados enviados por los bancos y relativos a las cuentas corrientes).
 
-Se questa data valuta non viene compilata, di default, viene considerata la data della registrazione contabile dell'incasso, e pertanto il numero dei **Giorni Valuta** aggiunti rispetto alla data dell'incasso sarà pari a zero.
+- También se considera una **Divisa bancaria (Valuta banca)**, es decir, en el movimiento contable de cobro podrían haberse agregado días de divisa bancaria entre la disposición de pago por parte del cliente y el efectivo cobro. Estos días de divisa son visibles en la escritura contable activando el indicador *giorni banca* en la [causal contable](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) y pueden ser propuestos a través de [la ficha (anagrafica)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/bank-days) (pestaña *giorni banca*) de la cuenta bancaria de cobranza, o valorados manualmente en el registro.
 
-Quindi il campo **Valuta incasso** sarà pari alla data di registrazione, i campi **Giorni Valuta** e **Numeri valuta** saranno pari a zero.
+Si esta fecha de divisa no se completa, por defecto, se considera la fecha del registro contable del cobro, por lo tanto, el número de **Días de Divisa (Giorni Valuta)** añadidos respecto a la fecha del cobro será igual a cero.
 
-- Il calcolo prevede un conteggio dei **Giorni Scadenza** come confronto tra la prima riga (dove il calcolo sarà sempre zero) e le righe successive. Ad esempio se la prima scadenza cadeva il giorno 9 febbraio e la successiva il giorno 20 febbraio, i giorni scadenza rispetto alla seconda riga sarnano 11. 
+Por lo tanto, el campo **Divisa de cobro (Valuta incasso)** será igual a la fecha de registro, y los campos **Días de Divisa (Giorni Valuta)** y **Números de divisa (Numeri valuta)** serán igual a cero.
 
-- Il calcolo dei **Numeri Scadenza** è dato dal prodotto dei Giorni scadenza per l'importo della rimessa. 
+- El cálculo prevé un conteo de los **Días de Vencimiento (Giorni Scadenza)** como comparación entre la primera fila (donde el cálculo siempre será cero) y las filas siguientes. Por ejemplo, si la primera fecha de vencimiento era el 9 de febrero y la siguiente el 20 de febrero, los días de vencimiento respecto a la segunda fila serán 11.
 
+- El cálculo de los **Números de Vencimiento (Numeri Scadenza)** se da por el producto de los Días de vencimiento por el importe de la remesa.
 
 <details>
 
-  <summary>**Gli altri campi della griglia di dettaglio**: Click to expand!</summary>
+  <summary>**Los otros campos de la cuadrícula de detalle**: Click to expand!</summary>
  
- - **Data / Numero Registrazione**: Ripresi dalla testata della registrazione di incasso della partita cliente
- - **Descrizione causale**: causale contabile utilizzata nella scrittura di incasso
- - **Tipo documento**: ripreso dalla partita aperta che è stata incassata e riferito solitamente al tipo di fattura
- - **Numero documento**: riferito alla fattura che ha aperto la partita incassata
- - **Data Documento**: riferito alla fattura che ha aperto la partita incassata
- - **Divisa**: riferito alla partita incassata
- - **Importo originario in divisa**: riferito alla partita incassata, se diversa dalla divisa della società (cioè se diversa da Euro)
- - **Importo originario in divisa della Società**: riferito alla partita incassata, nella divisa della società (cioè in genere Euro)
- - **Importo residuo in divisa / in divisa della società**: riferito alla partita, nel caso sia parzialmente incassata, (valore espresso nella divisa originaria se diversa dalla divisa della società, cioè se diversa da Euro, oppure in Euro)
- - **Importo rimessa in divisa**: valore dell'incasso avvenuto riferito alla partita incassata, se diversa dalla divisa della società (cioè se diversa da Euro, oppure in Euro)
+ - **Fecha / Número de Registro (Data / Numero Registrazione)**: Recuperados del encabezado del registro de cobro de la partida del cliente.
+ - **descrizione causale**: causal contable utilizada en la escritura de cobro.
+ - **tipo documento**: recuperado de la partida abierta que ha sido cobrada y referido generalmente al tipo de factura.
+ - **numero documento**: referido a la factura que ha abierto la partida cobrada.
+ - **data documento**: referido a la factura que ha abierto la partida cobrada.
+ - **divisa**: referido a la partida cobrada.
+ - **Importe original en divisa (Importo originario in divisa)**: referido a la partida cobrada, si es diferente de la divisa de la empresa (es decir, si es diferente de Euro).
+ - **Importe original en divisa de la Empresa (Importo originario in divisa della Società)**: referido a la partida cobrada, en la divisa de la empresa (es decir, en general Euro).
+ - **Importe residual en divisa / en divisa de la empresa (Importo residuo in divisa / in divisa della società)**: referido a la partida, en caso de que esté parcialmente cobrada (valor expresado en la divisa original si es diferente de la divisa de la empresa, es decir, si es diferente de Euro, o en Euro).
+ - **Importe de remesa en divisa (Importo rimessa in divisa)**: valor del cobro realizado referido a la partida cobrada, si es diferente de la divisa de la empresa (es decir, si es diferente de Euro, o en Euro).
 
 </details>
 
+### En la parte inferior del formulario se realiza el cálculo final de los <u>valores medios</u>.
 
-### Nella parte bassa della form viene eseguito il calcolo finale dei <u>valori medi</u>.
+Los datos medios calculados por el formulario son:
 
-I dati medi calcolati dalla form sono:
+- **Fecha de divisa media de cobro (Data valuta media di incasso)**: calculada sumando todos los importes de las remesas (es decir, de los cobros) visibles en el formulario y sumando todos los *números de Divisa (numeri Valuta)* visibles en el formulario y haciendo la relación entre las dos sumas (Sommatoria Numeri valuta / Sommatoria Importo rimesse) para encontrar el **número de días medios de divisa (numero di giorni medi valuta)**. Finalmente, sumando el número de días medios de divisa a la primera fecha de divisa de cobro (es decir, la menos reciente).
 
-- **Data valuta media di incasso** : calcolata sommando tutti gli importi delle rimesse (cioè degli incassi) visibili nella form e sommando tutti i *numeri Valuta* visibili nella form e facendo il rapporto tra le due somme (Sommatoria Numeri valuta / Sommatoria Importo rimesse) per trovare il **numero di giorni medi valuta.** Infine sommando il numero di giorni medi valuta alla prima data Valuta incasso (cioè la meno recente).
-
-- **Data scadenza media** : calcolata sommando tutti gli importi delle rimesse (cioè degli incassi) visibili nella form e sommando tutti i *numeri Scadenza* visibili nella form e facendo il rapporto tra le due somme (Sommatoria Numeri scadenza / Sommatoria Importo rimesse) per trovare il **numero di giorni medi scadenza.** Infine sommando il numero di giorni medi scadenza alla prima data Scadenza (cioè la meno recente).
+- **Fecha de vencimiento media (Data scadenza media)**: calculada sumando todos los importes de las remesas (es decir, de los cobros) visibles en el formulario y sumando todos los *números de Vencimiento (Numeri Scadenza)* visibles en el formulario y haciendo la relación entre las dos sumas (Sommatoria Numeri scadenza / Sommatoria Importo rimesse) para encontrar el **número de días medios de vencimiento (numero di giorni medi scadenza)**. Finalmente, sumando el número de días medios de vencimiento a la primera fecha de vencimiento (es decir, la menos reciente).
 
 :::note[Nota]
-in caso di effetti la data valuta è impostata uguale alla data scadenza, indipendentemente dalla data di contabilizzazione dell'effetto.
+en caso de efectos, la fecha de divisa se establece igual a la fecha de vencimiento, independientemente de la fecha de contabilización del efecto.
 :::
 
 <details>
 
-  <summary>**Il calcolo della media in pratica**: Click to expand!</summary>
+  <summary>**El cálculo de la media en la práctica**: Click to expand!</summary>
  
- dal rapporto tra somma importi e somma giorni*importi si ottiene un nr. di giorni medi da aggiungere alla prima data per ottenere la data media.
+ del cociente entre suma de importes y suma de días *importes se obtiene un número de días medios que se añade a la primera fecha para obtener la fecha media.
 
 </details>
 
-
-- **Scostamento** ovvero differenza tra data scadenza media e data valuta media incasso, che rappresenta il ritardo medio nell'incasso tra scadenza e valuta: questo numero di giorni può essere memorizzato, attraverso il pulsante **Aggiorna gg. ritardo**,  in anagrafica cliente nel campo *Giorni medi ritardo*, campo utilizzato nelle simulazioni di cash flow per ottenere la data scadenza prevista del flusso finanziario.
+- **scostamento**, es decir, la diferencia entre la fecha de vencimiento media y la fecha de divisa media de cobro, que representa el retraso medio en el cobro entre el vencimiento y la divisa: este número de días puede ser almacenado, a través del botón **aggiorna gg. ritardo**, en la ficha del cliente en el campo *Días medios de retraso (Giorni medi ritardo)*, campo utilizado en las simulaciones de flujo de caja para obtener la fecha de vencimiento prevista del flujo financiero.
 
 <details>
 
-  <summary>**Gli altri campi calcolai della zona di riepilogo**: Click to expand!</summary>
+  <summary>**Los otros campos calculados de la zona de resumen**: Click to expand!</summary>
  
- - **Totale Importo Originario in divisa**: Sommatoria dell'importo in divisa delle partite incassate
- - **Totale Importo Originario in Euro**: controvalore in euro el campo precedente
- - **Totale importo Residuo Divisa**: sommatoria dei valori residui delle partite incassate, se le partite sono state incassate completamente il valore sarà zero, altrimenti sarà utile per le partite parzialmente incassate
- - **Totale importo Residuo Euro**: controvalore in euro el campo precedente
- - **Totale Rimesse divisa**: sommatoria del valore in divisa degli incassi avvenuti
- - **Totale Rimesse Euro**: controvalore in euro el campo precedente
- - **Totale Numeri Valuta**: sommatoria del campo *Numeri Valuta* delle righe della griglia, utilizzato nei calcoli delle medie finali
- - **Totale Numeri Scadenza**: sommatoria del campo *Numeri Scadenza* delle righe della griglia, utilizzato nei calcoli delle medie finali
+ - **totale importo originario in divisa**: Suma del importe en divisa de las partidas cobradas.
+ - **Total Importe Original en Euro (Totale Importo Originario in Euro)**: contravalor en euro del campo anterior.
+ - **totale importo residuo divisa**: suma de los valores residuales de las partidas cobradas; si las partidas han sido cobradas completamente, el valor será cero; de lo contrario, será útil para las partidas parcialmente cobradas.
+ - **totale importo residuo euro**: contravalor en euro del campo anterior.
+ - **totale rimesse divisa**: suma del valor en divisa de los cobros realizados.
+ - **totale rimesse euro**: contravalor en euro del campo anterior.
+ - **totale numeri valuta**: suma del campo *Números de Divisa* de las filas de la cuadrícula, utilizado en los cálculos de las medias finales.
+ - **totale numeri scadenza**: suma del campo *Números de Vencimiento* de las filas de la cuadrícula, utilizado en los cálculos de las medias finales.
 
 </details>
 
-La maschera prevede una stampa del dettaglio del calcolo.
-
-
-
-
-
-
+El formulario prevé una impresión del detalle del cálculo.

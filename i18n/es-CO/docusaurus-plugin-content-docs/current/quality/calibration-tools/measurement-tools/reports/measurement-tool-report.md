@@ -1,14 +1,14 @@
 ---
-title: Elenco Strumenti di misura
+title: elenco strumenti di misura
 sidebar_position: 1
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Qualità > Taratura strumenti > Strumenti di misura > Procedure > Elenco Strumenti di misura**.   
+El filtro de ejecución de reportes se encuentra en la ruta **Calidad > Calibración de instrumentos > Herramientas de medida > Procedimientos > elenco strumenti di misura (Qualità > Taratura strumenti > Strumenti di misura > Procedure > Elenco Strumenti di misura)**.
 
-Il filtro di esecuzione report consente di ricercare gli *Strumenti di misura* per poterli stampare.   
-I reports predefiniti sono:
-> **Registro Strumenti di misura**: elenco degli *Strumenti di misura* raggruppabili per: *Strumento*, *Categoria*, *Fornitore* (di acquisto), *Ubicazione*, *Utilizzatore*, *Scadenza garanzia* e *Scadenza taratura*;   
-> **Registro Strumenti non soggetti a taratura**: elenco degli *Strumenti di misura* dove non è prevista la *Taratura*; per la stampa di questo report non ha effetto il filtro *Stato - Non soggetti a taratura: Tutti, Soggetti a taratura, Non soggetti a taratura*.   
-> **Scheda Strumento di misura**: scheda degli *Strumenti di misura*.   
+El filtro de ejecución de reportes permite buscar las *Herramientas de medida* para poder imprimirlas.  
+Los reportes predefinidos son:  
+> **registro strumenti di misura**: lista de las *Herramientas de medida* agrupables por: *strumento*, *categoria*, *fornitore* (de compra), *ubicazione*, *utilizzatore*, *scadenza garanzia* y *scadenza taratura*;  
+> **registro strumenti non soggetti a taratura**: lista de las *Herramientas de medida* donde no se requiere la *taratura*; para la impresión de este reporte el filtro *Estado - No sujetas a calibración: Todas (Tutti), Sujetos a calibración (Soggetti a taratura), No sujetos a calibración (Non soggetti a taratura)* no tiene efecto.  
+> **scheda strumento di misura**: ficha de las *Herramientas de medida*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

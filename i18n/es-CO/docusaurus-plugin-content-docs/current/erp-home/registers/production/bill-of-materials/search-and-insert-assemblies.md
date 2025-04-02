@@ -1,18 +1,18 @@
 ---
-title: Assiemi
+title: assiemi
 sidebar_position: 2
 ---
 
-**Introduzione**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
+**Introducción (Introduzione)**: [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez que se han configurado todos los filtros deseados, solo se necesita hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire nuovi record è necessario premere il pulsante **Nuovo** presente nella ribbon bar. 
+Para poder insertar nuevos registros, es necesario presionar el botón **nuovo** presente en la barra de herramientas.
 
-Nella griglia di risultato, cliccando sulla distinta che si vuole visualizzare/modificare si verrà indirizzati alla form [Gestione strutture](assemblies/structure-management), dove sarà possibile visualizzare e/o modificare la struttura della distinta base e tutte le informazioni relative all'articolo padre della distinta e ai suoi componenti.
+En la cuadrícula de resultados, al hacer clic en la lista que se desea visualizar/modificar, se será dirigido al formulario [Gestión de estructuras (Gestione strutture)](assemblies/structure-management), donde será posible visualizar y/o modificar la estructura de la lista de materiales y toda la información relacionada con el artículo principal de la lista y sus componentes.
 
-**Calcola livello minimo**: è una procedura che calcola il livello minimo di ciascun articolo presente nelle distinte basi. Viene utilizzata dall'MRP. Lanciarla manualmente può essere solo utile in alcuni casi per effettuare dei test e capire se ci siano problemi in questo tipo di calcolo.
+**calcola livello minimo**: es un procedimiento que calcula el nivel mínimo de cada artículo presente en las listas de materiales. Es utilizado por el MRP. Ejecutarlo manualmente puede ser útil solo en algunos casos para realizar pruebas y entender si hay problemas en este tipo de cálculo.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

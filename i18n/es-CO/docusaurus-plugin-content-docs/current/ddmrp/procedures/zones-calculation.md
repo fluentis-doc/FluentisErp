@@ -1,27 +1,24 @@
 ---
-title: Aggiornamento valore zone articoli a buffer
+title: Actualización del valor de zonas de artículos a buffer (Aggiornamento valore zone articoli a buffer)
 sidebar_position: 3
 ---
 
-Questa procedura esegue il calcolo delle zone verde, gialla e rossa di ciascun buffer in base ai parametri DDMRP degli articoli.
+Este procedimiento realiza el cálculo de las zonas verde, amarilla y roja de cada buffer en función de los parámetros DDMRP de los artículos.
 
-La zona verde è determinata considerando il maggiore tra i tre seguenti elementi:
+La zona verde se determina considerando el mayor de los tres siguientes elementos:
 
-1. quantità minima ordinabile
-2. quantità consumata nel periodo di riordino (se definito) = ADU x DOC cioè consumo medio giornaliero x ciclo di riordino in giorni
-3. ADU x DLT x LTF ovvero consumo medio giornaliero x lead time disaccoppiato x fattore di lead time
+1. cantidad mínima ordenable  
+2. cantidad consumida en el período de reabastecimiento (si está definido) = ADU x DOC, es decir, consumo medio diario x ciclo de reabastecimiento en días  
+3. ADU x DLT x LTF, que equivale a consumo medio diario x tiempo de entrega desacoplado x factor de tiempo de entrega  
 
-La zona verde determina la dimensione minima degli ordini (non si può emettere un ordine per una quantità minore della zona verde) e la frequenza media di emissione ordini (più è grande meno spesso si ordina).
+La zona verde determina el tamaño mínimo de los pedidos (no se puede emitir un pedido por una cantidad menor que la zona verde) y la frecuencia media de emisión de pedidos (cuanto más grande es, menos frecuentemente se ordena).
 
-La zona gialla è determinata come ADU x DLT cioè consumo medio giornaliero x lead time disaccoppiato.
+La zona amarilla se determina como ADU x DLT, es decir, consumo medio diario x tiempo de entrega desacoplado.
 
-La zona rossa è calcolata come ADU x DLT x LTF ( 1 + VAF) cioè consumo medio giornaliero x lead time disaccoppiato x fattore del lead time, il tutto moltiplicato per 1 sommato al fattore di variabilità.
+La zona roja se calcula como ADU x DLT x LTF (1 + VAF), es decir, consumo medio diario x tiempo de entrega desacoplado x factor del tiempo de entrega, todo multiplicado por 1 sumado al factor de variabilidad.
 
-E' per questo motivo che all'aumentare della variabilità aumenta la zona rossa, cioè la scorta di sicurezza dell'articolo, cioè quella parte di scorta che serve per fronteggiare gli imprevisti.
+Es por esta razón que al aumentar la variabilidad, aumenta la zona roja, es decir, el inventario de seguridad del artículo, que es aquella parte del inventario que sirve para enfrentar imprevistos.
 
-Questa procedura tiene conto di eventuali valori del **Fattore di rettifica del consumo giornaliero medio** nonchè di eventuali eccezioni delle zone rossa, gialla, verde valide al momento dell'esecuzione della stessa.
+Este procedimiento tiene en cuenta los posibles valores del **Factor de ajuste del consumo diario medio (Fattore di rettifica del consumo giornaliero medio)**, así como cualquier excepción de las zonas roja, amarilla y verde que sean válidas en el momento de la ejecución del mismo.
 
-Il risultato viene utilizzato per modificare i valori delle zone nella tabella dei parametri Ddmrp.
-
-
-
+El resultado se utiliza para modificar los valores de las zonas en la tabla de parámetros DDMRP.

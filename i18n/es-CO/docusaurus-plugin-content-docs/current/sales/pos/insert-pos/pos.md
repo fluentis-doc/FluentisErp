@@ -1,125 +1,123 @@
 ---
-title: Nuovo POS
+title: nuovo pos
 sidebar_position: 2
 ---
 
-La form **Crea POS** si apre tramite il percorso **Vendite > POS > Crea POS** oppure tramite il pulsante **Nuovo** che si trova nella form di ricerca *POS*.
+El formulario **Crea POS** se abre a través de la ruta **Ventas > POS > Crea POS** o mediante el botón **Nuevo** que se encuentra en el formulario de búsqueda *POS*.
 
-## **1. Dati obbligatori**
-Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno** corrente, ma possono essere modificati.
+## **1. Datos obligatorios (Dati obbligatori)**
+En el formulario de ingreso se proponen automáticamente la **Fecha** y **Año** actuales, pero pueden ser modificados.
 
-Per continuare la creazione della fattura di vendita, l'utente deve inserire i campi obbligatori:
+Para continuar con la creación de la factura de venta, el usuario debe ingresar los campos obligatorios:
 
-- **Tipo POS** predefinito in *Configurazione > Tabelle > Vendite > Tipi POS*.
+- **Tipo POS** predeterminado en *Configuración > Tablas > Ventas > Tipos POS*.
 
-- **Numero** ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione POS](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.
+- **Número**: a cada documento se le asigna un número según la numeración especificada por el usuario en la tabla [Numeración POS](/docs/configurations/tables/fluentis-numerations) y el tipo de documento que contiene la numeración.
 
-- **Conto**, usando l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure digitando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati.- 
+- **conto**, usando el [help de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o escribiendo [directamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) los datos. 
 
-:::danger[Attenzione]
-Questo campo non è rilevante per la gestione della [**Contabilizzazione POS**](/docs/sales/pos/pos-accounting). La causale contabile associata alla contabilizzazione POS dovrà avere al suo interno la definizione di un conto Cliente **FISSO** e dettagliato con codice di **sottoconto** (ad esempio un conto "Cliente corrispettivi"). Il tipo importo sulla riga causale per il sottoconto clienti sarà impostato come *Totale Documento / registrazione*.
+:::danger[Advertencia]
+Este campo no es relevante para la gestión de la [**Contabilización POS**](/docs/sales/pos/pos-accounting). La causa contable asociada a la contabilización POS deberá incluir la definición de una cuenta de Cliente **FIJA** y detallada con el código de **subcuenta** (por ejemplo, una cuenta "Cliente corresponsales"). El tipo de importe de la línea de causa para el subcuenta clientes estará establecido como *Total Documento / registro*.
 :::
 
-- **Anagrafica**: si tratta di un campo alternativo al precedente *Conto* che può essere utilizzato per inserire un *Contatto* che non è abbinato ad alcun sottoconto
+- **anagrafica**: se trata de un campo alternativo al anterior *Cuenta* que puede ser utilizado para ingresar un *Contacto* que no está vinculado a ninguna subcuenta.
 
-### 1.1 Totali documento
+### 1.1 Totales documento (Totali documento)
 
-Nella parte destra della form sono presenti i totali del documento.
+En la parte derecha del formulario se presentan los totales del documento.
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
 
-#### Pulsanti specifici  
-> **Fiscale**: permette di lanciare la generazione dello scontrino fiscale interfacciandosi con un registratore di cassa (previa configurazione del collegamento mediante  campi appositi)  
-> **Scarico POS**: permette lo scarico POS, se per ogni articolo sono state inserite il magazzino e la causale.
+#### Botones específicos  
+> **fiscale**: permite iniciar la generación del recibo fiscal interfaciándose con una caja registradora (previa configuración de la conexión mediante los campos apropiados).  
+> **scarico pos**: permite la descarga POS, si se han ingresado el almacén y la causa para cada artículo.
 
+## **testata**
 
-## **2. Testata**
+Después de seleccionar los datos obligatorios en la sección superior, el usuario puede continuar ingresando los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con el [help de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+Al ingresar la **Cuenta**, se *proponen* automáticamente todos los datos específicos de la pestaña **Cabecera**, de acuerdo con los datos establecidos anteriormente en la [anagrafica de contacto](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), en los campos correspondientes a su dirección y en las *secciones*:  
 
-Inserendo il **Conto** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica contatto](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+- **divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de divisa (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **nazione**: [Nación](/docs/guide/common/glossary/glossary-intro#country), [Idioma (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zona (Zona)](/docs/guide/common/glossary/glossary-intro#zone)
+- **spedizione**: [Envío](/docs/guide/common/glossary/glossary-intro#shipment), [Flete (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Tarifa (Listino)](/docs/guide/common/glossary/glossary-intro#sales-price-list) y su [intervalo de validez (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date).
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Spedizione**: [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+#### Otros campos 
 
-#### Altri campi 
-
-- **Stato POS**: in fase di creazione, il POS non presenta nessun flag attivo. La sezione comprende i campi:
-> - **Stampato** si attiva quando viene lanciata la stampa dello scontrino.  
-> - **Scaricato** indica che il POS è stato scaricato dal magazzino manualmente oppure tramite la procedura di scarico automatico.  
-> - **Contabilizzato**: viene automaticamente selezionato quando il POS viene contabilizzato.  
-> - **Annullato**: il flag attivo permette di annullare il POS.
+- **stato pos**: en fase de creación, el POS no presenta ningún indicador activo. La sección incluye los campos:
+> - **stampato** se activa cuando se inicia la impresión del recibo.  
+> - **scaricato** indica que el POS ha sido descargado del almacén manualmente o a través del procedimiento de descarga automática.  
+> - **contabilizzato**: se selecciona automáticamente cuando el POS es contabilizado.  
+> - **annullato**: el indicador activo permite anular el POS.
 
 :::note
-I flag possono essere tolti con la procedura di ripristino operazione.
+Los indicadores pueden ser eliminados mediante el procedimiento de restauración de operación.
 :::
 
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il POS in oggetto.  
+- **Nuestra referencia/su referencia (Nostro riferimento/vostro riferimento)**: en estos campos generalmente se indica una referencia interna y una referencia del cliente para el POS en cuestión.  
 
 import InitialNote from './../../../import/fields/initial-note.md'
 
 <InitialNote />
 
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Dipendenti* che si trova nel percorso *Home > Dipendenti*. 
+- **operatore**: permite ingresar al usuario que crea el documento. Los empleados han sido ingresados previamente en la tabla *Empleados* que se encuentra en la ruta *Inicio > Empleados*. 
 
-- **Progetto**: usando il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) si può collegare il documento a un progetto.  
-Questa associazione funziona solo al livello della testata dell'articolo.
+- **progetto**: usando el [help de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) se puede vincular el documento a un proyecto.  
+Esta asociación sólo funciona a nivel de la cabecera del artículo.
 
-### 2.1 Pagamenti
+### 2.1 Pagos (Pagamenti)
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+Las **Soluciones de pago** se traen automáticamente de *Registro de clientes > pestaña Pagos* y pueden ser modificadas/a los usuarios.
 
-#### Pulsante specifico
+#### Botón específico
 
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+> **cancella pagamenti**: utilizado para eliminar las líneas de pago seleccionadas.
 
-### 2.2  Sconti
+### 2.2 Descuentos (Sconti)
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Se proponen sólo los descuentos predeterminados recogidos de *Registro de clientes > pestaña Descuentos* y pueden ser modificados/eliminados por el usuario.
   
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-### 2.3 Agenti
+### 2.3 Agentes
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
+Indica el código del agente y su comisión para cada línea de artículo. Se propone el código y el porcentaje definidos en *Registro de clientes > pestaña Agentes*.
 
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è associato, ma non percepisce provvigione.
+Si la comisión no está vinculada al cliente en su anagrafica, aún debe ser ingresado el agente, pero con comisión NULL, porque si fuera con comisión 0, significaría que el agente está asociado, pero no percibe comisión.
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab *Agenti*.
+La misma sección se volverá a proponer para cada línea de artículo en su respectiva pestaña *Agentes*.
 
-#### Pulsante specifico
+#### Botón específico
 
-> **Cancella agenti**: permette di cancellare gli agenti selezionati.
+> **cancella agenti**: permite eliminar los agentes seleccionados.
 
-## **3. Articoli**
+## **articoli**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+En esta pestaña se ingresan todos los artículos con los datos correspondientes.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.
+Para ingresar un **Nuevo artículo** en la cuadrícula, basta posicionarse en la línea para completar los diversos datos o utilizar el botón **Nuevo** presente en la barra de ribbon.
 
-
-### 3.1 Dati obbligatori
+### 3.1 Datos obligatorios (Dati obbligatori)
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-- **Tipo riga** offre la possibilità di selezionare gli articoli con caratteristiche diverse:
+- **tipo riga** ofrece la posibilidad de seleccionar los artículos con características diferentes:
 
-> - **Articolo codificato**: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino; 
-> - **Articolo note**: è una semplice nota, non incide sulla contabilità e sul magazzino.
-> - **Articolo omaggio**: questo tipo di riga sta ad indicare che l'articolo inserito in quella riga sarà un articolo omaggio, e quindi non avrà un costo per il cliente;
+> - **articolo codificato**: son los artículos codificados en anagrafica y pueden ser contabilizados en contabilidad analítica y registrados en almacén; 
+> - **articolo note**: es una simple nota, no afecta la contabilidad y el almacén.
+> - **articolo omaggio**: este tipo de línea indica que el artículo ingresado en esa línea será un artículo regalo, y por lo tanto no tendrá costo para el cliente;
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
 
@@ -137,11 +135,11 @@ import Quantity from './../../../import/fields/item-quantity.md'
 
 <Quantity />
 
-- **Prezzo ivato**: rappresenta il prezzo con IVA e deve essere inserito in precedenza in *Anagrafica articoli > tab Costi* è può essere diverso per magazzini;
+- **prezzo ivato**: representa el precio con IVA y debe ser ingresado previamente en *Registro de artículos > pestaña Costos* y puede ser diferente para los almacenes;
 
-- **IVA** e **Imponibile** vengono calcolati in automatico, prelevando i valori dal prezzo ivato.
+- **IVA** y **Imponible** se calculan automáticamente, tomando los valores del precio con IVA.
 
-#### Pulsanti specifici
+#### Botones específicos
 
 import PackagesManagement from './../../../import/procedure/packages-management.md'
 import UpdatePriceLists from './../../../import/buttons/update-price-lists.md'
@@ -149,73 +147,73 @@ import UpdatePriceLists from './../../../import/buttons/update-price-lists.md'
 > <PackagesManagement />
 > <UpdatePriceLists />
 
-### 3.2 Sconti/Listini
+### 3.2 Descuentos/Listas (Sconti/Listini)
 
 import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 <SalesTabDiscount />
 
-### 3.3 Dettaglio articolo
+### 3.3 Detalle del artículo (Dettaglio articolo)
 
-All'interno di questo tab vengono riportarte/inserite ulteriori informazioni relative all'articolo.
+Dentro de esta pestaña se reportan/se ingresan más información relacionada con el artículo.
 
-- **Articolo**: riprende le informazioni dell'articolo selezionato nella griglia degli articoli.
+- **Artículo**: retoma la información del artículo seleccionado en la cuadrícula de artículos.
 
 import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-- **Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo.
+- **progetto**: es el proyecto asociado al documento o puede ser asignado con la ayuda del help de campo.
 
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+- **marca**: representa la marca del artículo, recogida de su anagrafica o de la lista de precios del artículo;
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*.
+- **fatturato vendite**: se propone el dato ingresado en *Registro de artículos > pestaña Generalidades*.
 
-Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* 
+Si esto no está presente, no se propone ningún dato, pero al momento de la contabilización, se considerará el valor ingresado en el campo *Costo/Ingreso de contrapartida predeterminado* de *Registro de cliente > Datos contables > pestaña Administrativa*.
 
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dalla tabella *Tipi POS*.
+- **Almacén y causa (Magazzino e causale)**: se proponen el almacén y la causa de referencia que aparecerán automáticamente al momento de descargar los artículos relacionados del almacén. Los datos son recogidos de la tabla *Tipos POS*.
 
-- **Note**: offre la possibilità di inserire note per ogni articolo.
+- **note**: ofrece la posibilidad de ingresar notas para cada artículo.
 
-### 3.4 Agenti
+### 3.4 Agentes
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.5 Analitica
+### 3.5 Analítica (Analitica)
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-## **4. Riepiloghi**
+## **riepiloghi**
 
-### 4.1 Sconti finali articoli
+### 4.1 Descuentos finales de artículos (Sconti finali articoli)
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Spese/Sconti/Maggiorazioni finali
+### 4.2 Gastos/Descuentos/Aumentos finales (Spese/Sconti/Maggiorazioni finali)
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-### 4.3 Riepiloghi IVA
+### 4.3 Resumen IVA (Riepiloghi IVA)
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+Se propone el resumen IVA del documento, para cada código IVA.
 
-### 4.4 Riepilogo scadenze
+### 4.4 Resumen de vencimientos (Riepilogo scadenze)
 
-Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento. 
- 
-- **Numero**: valore progressivo della riga.  
-- **Pagamento**: rappresenta il codice alfanumerico del *Tipo pagamento* ripreso dalla *Testata del documento > tab Pagamenti*.  
-- **Importo**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
-- **Data scadenza**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
-- **Spese di incasso**: Campo in cui riportate le spese di incasso calcolate.
-- **IVA**: da applicare alle spese di incasso (può essere impostata anche manualmente)
-- **Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
-- **Conto/sottoconto cliente**: conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
+Representa el resumen de los vencimientos del documento, para cada *tipo* y *solución* de pago. 
+
+- **numero**: valor progresivo de la línea.  
+- **pagamento**: representa el código alfanumérico del *Tipo de pago* recogido de *Cabecera del documento > pestaña Pagos*.  
+- **importo**: Importe de la fecha calculada. Puede ser forzado manualmente, en cuyo caso se activa automáticamente el siguiente indicador *modifica manuale*. (Automáticamente se activan controles y avisos sobre la conciliación entre los valores de los vencimientos y el total de la factura)
+- **data scadenza**: Fecha de la fecha calculada. Puede ser forzada manualmente, en cuyo caso se activa automáticamente el siguiente indicador *modifica manuale*.
+- **spese di incasso**: Campo en el que se reportan los gastos de cobro calculados.
+- **iva**: a aplicar a los gastos de cobro (puede establecerse manualmente)
+- **Causa de pago (Causale pagamento)**: es posible insertar directamente en factura una causa contable que da lugar a un asiento automático de cobro/pago. Nota: prestar atención al template de la causa porque utilizará las cuentas presentes incluso sin subcuenta, razón por la cual está presente el siguiente campo.
+- **Cuenta/subcuenta cliente (Conto/sottoconto cliente)**: cuenta que se utiliza para cobrar/pagar (caja o banco, por ejemplo) la fecha, sobrescribiendo la cuenta presente en la causa contable de pago (o cobro).

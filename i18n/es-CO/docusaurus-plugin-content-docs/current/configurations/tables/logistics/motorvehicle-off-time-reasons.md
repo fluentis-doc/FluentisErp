@@ -1,29 +1,29 @@
 ---
-title: Motivi di fermo autoveicolo
+title: Motivos de retención de vehículos (Motivi di fermo autoveicolo)
 sidebar_position: 58
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Motivi di fermo autoveicolo**.
+La tabla se encuentra en la ruta **Tablas > Logística > Motivos de retención de vehículos (Tabelle > Logistica > Motivi di fermo autoveicolo)**.
 
-In questa tabella è possibile codificare i *Motivi di fermo autoveicolo*.
+En esta tabla es posible codificar los *Motivos de retención de vehículos (Motivi di fermo autoveicolo)*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Motivi di fermo autoveicolo**
+**Búsqueda de motivos de retención de vehículos (Ricerca Motivi di fermo autoveicolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Motivi di fermo autoveicolo**
+**Ingreso de motivos de retención de vehículos (Inserimento Motivi di fermo autoveicolo)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Para poder insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
+Con el botón **cancella** es posible borrar el registro seleccionado.
 
-#### Campi specifici  
+#### Campos específicos (Campi specifici)  
 
-> **Codice**: è il codice del *Motivo di fermo autoveicolo*.   
-> **Descrizione**: è la descrizione del *Motivo di fermo autoveicolo*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo dell'impegno del mezzo presente nel [Calendario](/docs/logistics/shipping/calendar).      
-> **Colore di primo piano**: permette di definire il colore del testo dell'impegno del mezzo presente nel [Calendario](/docs/logistics/shipping/calendar).     
+> **codice**: es el código del *Motivo de retención de vehículos (Motivo di fermo autoveicolo)*.  
+> **descrizione**: es la descripción del *Motivo de retención de vehículos (Motivo di fermo autoveicolo)*.  
+> **colore di sfondo**: permite definir el color de fondo del compromiso del vehículo presente en el [Calendario (Calendario)](/docs/logistics/shipping/calendar).  
+> **colore di primo piano**: permite definir el color del texto del compromiso del vehículo presente en el [Calendario (Calendario)](/docs/logistics/shipping/calendar).  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

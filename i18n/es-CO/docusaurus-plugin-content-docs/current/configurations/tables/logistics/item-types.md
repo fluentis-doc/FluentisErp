@@ -1,21 +1,21 @@
 ---
-title: Tipo articolo
+title: tipo articolo
 sidebar_position: 24
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipo articolo**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Logística (Logistica) > tipo articolo (Tipo articolo)**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi articolo* da associare ai singoli articoli nel tabulatore [Generealità](/docs/erp-home/registers/items/create-new-item).    
+En esta tabla es posible gestionar la codificación de los diferentes *tipi articolo* para asociarlos a los artículos individuales en la pestaña [Generalidades (Generealità)](/docs/erp-home/registers/items/create-new-item).  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo articolo**
+**Búsqueda de tipo de artículo (Ricerca Tipo articolo)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez que se han configurado todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipo articolo**
+**Inserción de tipo de artículo (Inserimento Tipo articolo)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record è sufficiente inserire la **Descrizione**, a cui eventualmente associare una **Descrizione in lingua**, ovvero la traduzione del *Tipo articolo* in un'altra lingua.   
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, simplemente se debe ingresar la **descrizione**, a la que se puede asociar opcionalmente una **descrizione in lingua**, es decir, la traducción del *tipo articolo* en otro idioma.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

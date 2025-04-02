@@ -1,12 +1,12 @@
 ---
-title: Tipi rivalutazione
+title: tipi rivalutazione
 sidebar_position: 29
 ---
 
-La definizione di  questa tabella consente di  codificare i riferimenti alle leggi di rivalutazione da utilizzare per gestire i dettagli delle rivalutazioni all'interno delle singole schede cespite. In particolare, la gestione dei dettagli viene abilitata solo per le categorie cespiti che presentano il flag **Rivalutazioni**.
+La definición de esta tabla permite codificar las referencias a las leyes de revalorización que se utilizarán para gestionar los detalles de las revalorizaciones dentro de las distintas fichas de activo fijo. En particular, la gestión de los detalles se habilita solo para las categorías de activos que presentan el indicador **Revalorizaciones (Rivalutazioni)**.
 
-### Campi specifici
+### Campos específicos (Campi specifici)
 
-**Codice**: codice identificativo del tipo di rivalutazione.
+**codice**: código identificativo del tipo de revalorización.  
 
-**Descrizione**: descrizione del tipo di rivalutazione.
+**descrizione**: descripción del tipo de revalorización.

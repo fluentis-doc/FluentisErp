@@ -1,40 +1,38 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-La valutazione dei fornitori si riferisce al processo di approvazione dei potenziali fornitori e valutazione dei fornitori storici attraverso valutazioni quantitative e qualitative. Lo scopo principale è quello di compilare una graduatoria dei fornitori disponibili ai fini della qualità del prodotto/servizio.   
+La evaluación de proveedores se refiere al proceso de aprobación de proveedores potenciales y evaluación de proveedores históricos a través de evaluaciones cuantitativas y cualitativas. El objetivo principal es elaborar un ranking de los proveedores disponibles en relación con la calidad del producto/servicio.
 
-
-## I documenti gestiti
+## Los documentos gestionados (I documenti gestiti)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/vendor-rating/initial-vendor-rating">Valutazioni iniziali e periodiche</Link>
-        <p>E' un criterio di valutazione *soggettivo* che si basa su domande (*Check-List*) predefinite per *Classi di fornitura* fatte a potenziali fornitori o fornitori storici.</p>
+###     <Link to="/docs/quality/vendor-rating/initial-vendor-rating">Evaluaciones iniciales y periódicas (Valutazioni iniziali e periodiche)</Link>
+        <p>Es un criterio de evaluación *subjetivo (soggettivo)* que se basa en preguntas (*Check-List*) predefinidas para *Clases de suministro (Classi di fornitura)* realizadas a proveedores potenciales o proveedores históricos.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/quality/vendor-rating/vendor-rating-on-nc">Valutazioni periodiche su Non conformità</Link>
-        <p>E' un criterio di valutazione *oggettivo* che si basa sulle *Non conformità* attribuite a *Fornitori* in un determinato arco temporale.</p>
+###     <Link to="/docs/quality/vendor-rating/vendor-rating-on-nc">Evaluaciones periódicas sobre No conformidades (Valutazioni periodiche su Non conformità)</Link>
+        <p>Es un criterio de evaluación *objektivo (oggettivo)* que se basa en las *non conformità* atribuidas a *fornitori* en un determinado período de tiempo.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Para comenzar a utilizar (Per iniziare ad utilizzare)  
 
-le **Valutazioni iniziali e periodiche**:
-- devi definire: un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), un conto [*Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) e una [*Valutazione fornitore*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings)   
-- per agevolare la gestione delle *Valutazioni iniziali e periodiche* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings) nella sessione *Valutazioni iniziali*   
-- devi inserire una nuova [*Valutazione iniziali*](/docs/quality/vendor-rating/initial-vendor-rating)   
+las **valutazioni iniziali e periodiche**:  
+- debes definir: un [*Tipo de evaluación*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), una cuenta [*Proveedor*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) y una [*Evaluación de proveedor*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings).  
+- para facilitar la gestión de las *Evaluaciones iniciales y periódicas*, configurar los [*Parámetros de Calificación de Proveedor*](/docs/configurations/parameters/quality/vendor-ratings) en la sección *Evaluaciones iniciales*.  
+- debes ingresar una nueva [*Evaluación inicial*](/docs/quality/vendor-rating/initial-vendor-rating).  
 
-le **Valutazioni periodiche su Non conformità**:
-- devi definire un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type)   
-- per agevolare la gestione delle *Valutazioni periodiche su Non conformità* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings) nella sessione *Valutazioni periodiche Non conformità*   
-- devi inserire almeno una nuova [*Non conformità a fornitore*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) con data compresa nel periodo che si desidera valutare   
-- devi elaborare una [*Valutazione periodica su Non conformità*](/docs/quality/vendor-rating/vendor-rating-on-nc)   
+las **valutazioni periodiche su non conformità**:  
+- debes definir un [*Tipo de evaluación*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type).  
+- para facilitar la gestión de las *Evaluaciones periódicas sobre No conformidades*, configurar los [*Parámetros de Calificación de Proveedor*](/docs/configurations/parameters/quality/vendor-ratings) en la sección *Evaluaciones periódicas No conformidades*.  
+- debes ingresar al menos una nueva [*No conformidad a proveedor*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) con fecha comprendida en el período que deseas evaluar.  
+- debes elaborar una [*Evaluación periódica sobre No conformidad*](/docs/quality/vendor-rating/vendor-rating-on-nc).  
 
-
-## Collegamenti con altri moduli
-Il modulo dei *Documenti di origine esterna* non è collegato ad alcun altro modulo.   
+## Conexiones con otros módulos (Collegamenti con altri moduli)  
+El módulo de *Documentos de origen externo* no está conectado a ningún otro módulo.

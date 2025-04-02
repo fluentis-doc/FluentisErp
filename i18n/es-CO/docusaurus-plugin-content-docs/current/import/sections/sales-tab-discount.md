@@ -1,12 +1,12 @@
-In questa tab sono consultabili listino e sconti associati alla riga articolo.     
+En esta pestaña se pueden consultar el listado y los descuentos asociados a la línea del artículo.
 
-Nella sezione **Listino** viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità.     
-Nel **Tipo scaglione** viene proposto lo scaglione di default che il cliente ha in anagrafica associato per questo listino; nel caso non sia presente nessuno scaglione di default, è possibile selezionare manualmente uno scaglione di sconto da utilizzare; ricordiamo che i listini possono aver associati diversi scaglioni di sconto per uno stesso articolo (sconti per quantità, sconti generali, ecc.).     
+En la sección **listino** se propone el listado del cual se ha tomado el artículo, con la fecha de inicio/final de validez.  
+En el **tipo scaglione** se propone el escalón por defecto que el cliente tiene en el registro asociado a este listado; en caso de que no haya ningún escalón por defecto, es posible seleccionar manualmente un escalón de descuento a utilizar; recordamos que los listados pueden tener asociados diferentes escalones de descuento para un mismo artículo (descuentos por cantidad, descuentos generales, etc.).  
 
-Il flag **Prezzo manuale** non attivo significa che listino, prezzo, sconti della riga sono tutti calcolati automaticamente; se l'utente cambia uno di questi si attiva il flag.       
+El indicador **prezzo manuale** no activo significa que el listado, el precio y los descuentos de la línea se calculan automáticamente; si el usuario cambia alguno de estos, se activa el indicador.
 
-Nella griglia **Sconti** vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica cliente, dalla soluzione di pagamento assegnata al documento, dal listino dall'associazione listino-cliente. Tutti i dati proposti sono modificabili.
+En la cuadrícula **sconti** se proponen todos los descuentos asociados al artículo, cada uno con su propia base de cálculo y asignación. Los descuentos pueden ser tomados: del registro del cliente, de la solución de pago asignada al documento, del listado a partir de la asociación listado-cliente. Todos los datos propuestos son modificables.
 
-*Pulsante specifico*
+*Botón específico (Pulsante specifico)*
 
-> **Cancella sconto**: permette di cancellare lo sconto associato all'articolo selezionato nella griglia soprastante.
+> **cancella sconto**: permite eliminar el descuento asociado al artículo seleccionado en la cuadrícula anterior.

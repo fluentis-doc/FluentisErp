@@ -1,37 +1,37 @@
 ---
-title: Ricerca Corsi di formazione
+title: Búsqueda de Cursos de Formación (Ricerca Corsi di formazione)
 sidebar_position: 4
 ---
 
-Il filtro si trova sul percorso **Home > Dipendenti > Corsi di formazione > Corsi di formazione**.   
+El filtro se encuentra en la ruta **Inicio (Home) > Empleados (Dipendenti) > Cursos de formación (Corsi di formazione) > Cursos de formación (Corsi di formazione)**.
 
-Il filtro dati consente di inserire nuovi *Corsi di formazione* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+El filtro de datos permite insertar nuevos *corsi di formazione* o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-### ![](/img/neutral/common/search.png) Ricerca Corsi di formazione
+### ![](/img/neutral/common/search.png) Búsqueda de Cursos de Formación (Ricerca Corsi di formazione)
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/new.png) Inserimento Corsi di formazione
+### ![](/img/neutral/common/new.png) Inserción de Cursos de Formación (Inserimento Corsi di formazione)
 
-Per poter inserire nuovi *Corsi di formazione* è necessario premere il pulsante **Nuovo**.   
+Para poder insertar nuevos *corsi di formazione*, es necesario presionar el botón **nuovo**.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Corsi di formazione
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de Cursos de Formación (Modifica o Visualizzazione Corsi di formazione)
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-*Pulsanti specifici*: 
-    
-### ![](/img/neutral/common/duplicate.png) Duplica Corsi di formazione
+*Botones específicos*: 
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Corso base*.   
-Per poter duplicare un *Corso di formazione* esistente in un nuovo *Corso di formazione* è necessario cliccare nella griglia sul *Corso di formazione* da cui si desidera duplicare e premere il pulsante **Duplica**. Si può duplicare un solo *Corso di formazione* alla volta. Viene visualizzata una richiesta di:   
-> **Tipo corso di formazione**: è il *Tipo corso di formazione* del nuovo *Corso di formazione* (dato obbligatorio), viene proposto il *Tipo corso di formazione* del *Corso di formazione* di origine.   
-> **Titolo**: è il *Titolo* del nuovo *Corso di formazione* (dato obbligatorio).   
-> **Area**: è l'*Area* del nuovo *Corso di formazione*, viene proposta l'*Area* del *Corso di formazione* di origine.   
-> **Settore**: è il *Settore* del nuovo *Corso di formazione*, viene proposto il *Settore* del *Corso di formazione* di origine.   
-> **Categoria corso**: è la *Categoria corso* del nuovo *Corso di formazione*, viene proposta la *Categoria corso* del *Corso di formazione* di origine.   
+### ![](/img/neutral/common/duplicate.png) Duplicar Cursos de Formación (Duplica Corsi di formazione)
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.
+El botón está habilitado solo si, desde la cuadrícula de resultados, se selecciona un solo *Curso base (Corso base)*.  
+Para poder duplicar un *corso di formazione* existente en un nuevo *corso di formazione*, es necesario hacer clic en la cuadrícula en el *corso di formazione* del que se desea duplicar y presionar el botón **duplica**. Se puede duplicar un solo *corso di formazione* a la vez. Se muestra una solicitud de:  
+> **tipo corso di formazione**: es el *tipo corso di formazione* del nuevo *corso di formazione* (dato obligatorio), se propone el *tipo corso di formazione* del *corso di formazione* de origen.  
+> **titolo**: es el *titolo* del nuevo *corso di formazione* (dato obligatorio).  
+> **area**: es el *area* del nuevo *corso di formazione*, se propone el *area* del *corso di formazione* de origen.  
+> **settore**: es el *settore* del nuevo *corso di formazione*, se propone el *settore* del *corso di formazione* de origen.  
+> **categoria corso**: es la *categoria corso* del nuevo *corso di formazione*, se propone la *categoria corso* del *corso di formazione* de origen.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Presione posteriormente el botón **OK** o el botón **cancel** si desea continuar con la actividad de duplicado o no.  
+Al finalizar el procesamiento, el nuevo *corso di formazione* se visualiza.
+
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,14 +1,8 @@
 ---
-title: Spesometro
+title: spesometro
 sidebar_position: 7
 ---
 
-Lo "Spesometro" è stato profondamente modificato a partire dall'anno 2017. Da tale anno infatti è previsto l'invio trimestrale tramite un sistema di interscambio simile a quello per la fatturazione elettronica per la pubblica amministrazione.
+El "spesometro" ha sido profundamente modificado a partir del año 2017. Desde ese año, se prevé el envío trimestral a través de un sistema de intercambio similar al de la facturación electrónica para la administración pública.
 
-Pertanto, pur rimanendo presente la form e le funzionalità in oggetto per retro-compatibilità ed eventuale consultazione, è presente un nuovo comando specifico denominato ** [Spesometro 2017 fatture trimestrali](/docs/finance-area/declarations/declarations/spesometro-2017-quarterly).**
-
-
-
-
-
-
+Por lo tanto, aunque se mantiene el formulario y las funcionalidades en cuestión para retrocompatibilidad y posible consulta, existe un nuevo comando específico denominado **[spesometro 2017 facturas trimestrales (Spesometro 2017 fatture trimestrali)](/docs/finance-area/declarations/declarations/spesometro-2017-quarterly)**.

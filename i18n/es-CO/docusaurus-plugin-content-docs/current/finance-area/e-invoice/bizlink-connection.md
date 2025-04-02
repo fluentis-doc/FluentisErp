@@ -1,42 +1,40 @@
 ---
-title: Configurazioni Bizlink per l'interscambio con lo SDI
+title: Configuraciones de Bizlink para la interconexión con SDI (Configurazioni Bizlink per l'interscambio con lo SDI)
 sidebar_position: 7
 ---
 
-Fluentis permette lo scambio dei documenti elettronici in entrata ed in uscita con SDI. E' necessario controllare le seguenti impostazioni prima di sfruttare questa funzionalità, in quanto Fluentis deve poter comunicare con l'esterno attraverso lo strumento di BizLink.
+Fluentis permite el intercambio de documentos electrónicos entrantes y salientes con SDI. Es necesario verificar las siguientes configuraciones antes de aprovechar esta funcionalidad, ya que Fluentis debe poder comunicarse con el exterior a través de la herramienta de BizLink.
 
-## Tabella Configurazione documenti elettronici
+## Tabla de Configuración de documentos electrónicos (Tabella Configurazione documenti elettronici)
 
-Questa tabella è accessibile in Fluentis da Configurazione > Tabelle > Impostazione generali > Configurazione documenti elettronici.    
-Il primo controllo da effettuare è cliccare *Verifica connessione* nella ribbon bar dopo aver aperto la tabella. Se tutte le impostazioni sono state effettuate correttamente, la connessione sarà abilitata. 
+Esta tabla es accesible en Fluentis desde Configuración (Configurazione) > Tablas (Tabelle) > Configuración general (Impostazione generali) > Configuración de documentos electrónicos (Configurazione documenti elettronici).  
+El primer control a realizar es hacer clic en *verifica connessione* en la barra de herramientas después de abrir la tabla. Si todas las configuraciones se han realizado correctamente, la conexión estará habilitada.
 
-:::danger ATTENZIONE
-Nel caso in cui riceviate un errore di contesto durante la verifica connessione, vuole dire che al momento dell'attivazione del servizio sono stati comunicati un nome server e un nome database errati. Sarà necessario contattare l'assistenza per fornire i dati corretti.
+:::danger ATENCIÓN
+En caso de que reciban un error de contexto durante la verificación de la conexión, significa que al momento de la activación del servicio se comunicaron un nombre de servidor y un nombre de base de datos incorrectos. Será necesario contactar con el soporte para proporcionar los datos correctos.
 :::
 
+## Tabla de Usuarios de BizLink (Tabella Utenti BizLink)
 
-## Tabella Utenti BizLink
+Esta tabla es accesible en ARM desde Inicio (Home) > Conexiones (Connessioni) > Usuarios de BizLink (Utenti BizLink).  
+En la cuadrícula izquierda están los Usuarios codificados con la contraseña, mientras que en la cuadrícula derecha están las Conexiones disponibles con los nombres de servidor y base de datos respectivos.  
+En esta tabla es necesario verificar que los Usuarios establecidos en la cuadrícula de la izquierda tengan el indicador 'E' activo en la cuadrícula de la derecha.
 
-Questa tabella è accessibile in ARM da Home > Connessioni > Utenti BizLink.    
-Nella griglia di sinistra sono presenti gli Utenti codificati con la password, mentre nella griglia di destra sono presenti le Connessioni disponibili con i relativi nome server e database.
-In questa tabella è necessario controllare che gli Utenti impostati nella griglia di sinistra abbiano il flag 'E' attivo' nella griglia di destra. 
+## Servicios de BizLink (Servizi di BizLink)
 
-
-## Servizi di BizLink
-
-A questo punto è necessario aprire l'app Servizi nel proprio pc e arrestare il servizio di BizLink.     
-Una volta arrestato il servizio, è necessario aprire la cartella Servizi (il cui percorso potete trovarlo nelle proprietà del servizio BizLink) e controllare le chiavi all'interno del file di configurazione. Esse devono coincidere con le seguenti:
+En este punto, es necesario abrir la aplicación Servicios en su PC y detener el servicio de BizLink.  
+Una vez detenido el servicio, es necesario abrir la carpeta Servicios (la ruta la pueden encontrar en las propiedades del servicio BizLink) y verificar las claves dentro del archivo de configuración. Estas deben coincidir con las siguientes:
 
 ```xml
         <"GlobalUser" value="FlConServiceUser"/>
         <"GlobalPwd" value="FlConServiceUserPwd"/>
         <"GlobalUrl" value="http://localhost/arm/"/>
 ```
-L'utente e la Password devono essere uguali a quelli presenti nella Tabella Utenti BizLink precedentemente analizzata. Se non ne siete sicuri, consigliamo di effettuare un copia e incolla.      
+El usuario y la contraseña deben ser iguales a los que están presentes en la Tabla de Usuarios de BizLink analizada previamente. Si no están seguros, recomendamos hacer una copia y pegar.  
 
-A questo punto è possibile cancellare il file di testo presente nella cartella Servizi e riavviare il serivizo di BizLink. In questo modo, il file di testo verrà ricreato. Se non è presente il file testo, eseguire il file .exe.    
-Se il file di testo non presenta errori, il servizio risulterà attivo. 
+En este punto, se puede eliminar el archivo de texto presente en la carpeta Servicios y reiniciar el servicio de BizLink. De este modo, el archivo de texto se volverá a crear. Si no está presente el archivo de texto, ejecute el archivo .exe.  
+Si el archivo de texto no presenta errores, el servicio estará activo.
 
-:::danger ATTENZIONE
-Se il file .exe si chiude subito, allora il servizio è ancora attivo oppure c'è qualche problema sul file di configurazione.
+:::danger ATENCIÓN
+Si el archivo .exe se cierra de inmediato, entonces el servicio sigue estando activo o hay algún problema en el archivo de configuración.
 :::

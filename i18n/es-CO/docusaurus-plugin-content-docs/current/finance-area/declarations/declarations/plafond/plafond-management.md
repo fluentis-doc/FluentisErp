@@ -1,69 +1,63 @@
 ---
-title: Gestione Plafond
+title: gestione plafond
 sidebar_position: 5
 ---
 
-La form si trova sul percorso  **Amministrazione > Dichiarazioni > Plafond > Nuovo** e permette la creazione di un *nuovo* Calcolo del Plafond.
+El formulario se encuentra en la ruta **Administración > Declaraciones > Plafón > Nuevo** y permite la creación de un *nuevo* Cálculo del Plafón.
 
-## Come creare un Calcolo di Plafond
+## Cómo crear un Cálculo de Plafón
 
-1.  All'apertura della nuova maschera (dopo aver premuto il comando *Nuovo Plafond*) inserire i seguenti valori di testata: 
+1.  Al abrir el nuevo formulario (después de presionar el comando *Nuevo Plafón*), ingrese los siguientes valores en el encabezado:
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image01.png)
 
- **Descrizione**: Descrizione libera del calcolo che si sta inserendo. Si consiglia una descrizione che riporti l'anno di inizio e il tipo di calcolo.
+**descrizione**: Descripción libre del cálculo que se está ingresando. Se recomienda una descripción que incluya el año de inicio y el tipo de cálculo.
 
-**Anno**: inserire l'anno di inizio del calcolo plafond che si sta inserendo.
+**anno**: ingrese el año de inicio del cálculo del plazón que se está ingresando.
 
 :::tip[Nota]
-Nella gestione dei vari calcoli potremo bloccare il periodo, ad esempio ogni anno, e inserire un nuovo calcolo per l'anno successivo, tuttavia ciò non è necessario. Si consiglia (anche per comodità) di proseguire nell’ambito dello stesso calcolo di anno in anno continuando a premere il comando *Proponi Valori*. 
+En la gestión de los diversos cálculos, podremos bloquear el período, por ejemplo, cada año, e insertar un nuevo cálculo para el año siguiente, sin embargo, esto no es necesario. Se recomienda (también por comodidad) continuar en el mismo cálculo año tras año, continuando a presionar el comando *proponi valori*.
 
-La necessità di inserire un nuovo calcolo sorge, invece, in caso di cambio di metodologia di calcolo, ad esempio dal plafond fisso al plafond mobile.
+La necesidad de insertar un nuevo cálculo surge, en cambio, en caso de cambio de metodología de cálculo, por ejemplo, del plazón fijo al plazón móvil.
 
 :::
 
-**Tipo inizio Plafond**: se questo è un nuovo Plafond o se è una estensione di un plafond mobile; 
+**tipo inizio plafond**: si se trata de un nuevo Plafón o si es una extensión de un plazón móvil; 
 
-**Tipo plafond**: se è Solare (cioè fisso) oppure Mobile (sono due opzioni fiscali previste per gestire il plafond). 
+**tipo plafond**: si es Solar (es decir, fijo) o Móvil (son dos opciones fiscales previstas para gestionar el plazón). 
 
-Data inizio Plafond: è necessario inserire il mese e l'anno iniziale del plafond, e in caso di un plafond 'estensione' anche il **mese**, l'**anno** e l'**importo** dell'ultimo periodo calcolato (sezione Proprietà plafond). 
+**data inizio plafond**: es necesario ingresar el mes y el año inicial del plazón, y en caso de un plazón 'extensión', también el **mes**, el **año** y el **importe** del último período calculado (sección Propiedades del plazón). 
 
-**Valore di controllo**: è possibile impostare una soglia valore al fine di avvertire l'utente che sta per utilizzare il totale del plafond disponibile. Ad esempio, se il plafond disponibile ad inizio anno è di cento mila euro, se impostiamo nel valore soglia dieci mila, avremo un avviso al superamento dei novanta mila, inquanto stiamo utilizzando gli ultimi dieci mila.
+**Valor de control (Valore di controllo)**: es posible establecer un límite de valor con el fin de alertar al usuario que está a punto de utilizar el total del plazón disponible. Por ejemplo, si el plazón disponible al inicio del año es de cien mil euros, si establecemos en el valor límite diez mil, tendremos una alerta al superar los noventa mil, ya que estamos utilizando los últimos diez mil.
 
-**Default**: flag che contrassegna, in particolare in presenza di diversi calcoli memorizzati, qual'è il calcolo "attuale".
+**default**: indicador que marca, especialmente en presencia de varios cálculos almacenados, cuál es el cálculo "actual".
 
-:::tip[Attenzione]
-In presenza di un calcolo di Plafond con questo flag attivo, creando il tracciato telematico di invio all'agenzia delle Entrate delle [**dichiarazioni di intento**](/docs/finance-area/declarations/declarations/intent-declaration) emesse, verrà valorizzato l'apposito campo specifico.
+:::tip[Atención]
+En presencia de un cálculo de Plafón con este indicador activo, al crear la pista telemática para el envío a la agencia de ingresos de las [**declaraciones de intención**](/docs/finance-area/declarations/declarations/intent-declaration) emitidas, se valorizará el campo específico correspondiente.
 :::
 
-2. Caricare i valori storici da utilizzare: è necessario riportare nella griglia di dettaglio i dati dei dodici mesi precedenti rispetto alla data (anno) di inizio calcolo. 
+2. Cargue los valores históricos a utilizar: es necesario registrar en la cuadrícula de detalles los datos de los doce meses anteriores a la fecha (año) de inicio del cálculo. 
 
-:::tip[Attenzione]
-nel caso di un plafond **mobile** sarà necessario inserire precisamente **mese per mese**, in quanto ad ogni mese si dovrà togliere il 12° mese uscente e aggiungere i dati del nuovo 12°; 
+:::tip[Atención]
+en el caso de un plazón **móvil**, será necesario ingresar precisamente **mes a mes**, ya que cada mes se deberá restar el 12° mes saliente y agregar los datos del nuevo 12°; 
 
-nel caso di **plafond solare**, invece, si possono caricare i primi 11 mesi con **tutti valori zero** e dare direttamente il totale delle vendite in plafond dell'anno del periodo finale di **dicembre**. 
+en el caso de un **plazón solar**, en cambio, se pueden cargar los primeros 11 meses con **todos los valores en cero** y proporcionar directamente el total de las ventas en el plazón del año del período final de **diciembre**. 
 
-Il programma controllerà la completezza dei dati e salverà il plafond per poterlo, quindi, utilizzare.
+El programa verificará la integridad de los datos y guardará el plazón para poder utilizarlo posteriormente.
 :::
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image02.png)
 
-3. Di mese in mese sarà necessario entrare in modifica nella maschera di gestione del plafond per operare il calcolo aggiornato dei dati attraverso il pulsante **Proponi valori** (presente nella ribbon bar). 
+3. Mes a mes será necesario ingresar en modificación en la pantalla de gestión del plazón para operar el cálculo actualizado de los datos a través del botón **proponi valori** (presente en la barra de ribbon). 
 
-**Per annullare il calcolo di un mese è necessario annullare i periodi dall'ultimo mese presente nella lista (il più recente) fino a quello interessato**. 
+**Para anular el cálculo de un mes es necesario anular los períodos desde el último mes presente en la lista (el más reciente) hasta el que está interesado**. 
 
-Il dato del valore disponibile all'inizio del mese è visibile nella colonna relativa.
+El dato del valor disponible al inicio del mes es visible en la columna correspondiente.
 
-### Ribbon Bar
+### Barra de Ribbon
 
 |  |  |
 | --- | --- |
-| **Nuovo plafond** | Imposta il cursore in una nuova riga di creazione dati. |
-| **Cancella plafond** | Cancella la riga di calcolo selezionata. Non è possibile cancellare dati intermedi, solo l'ultimo della lista. |
-| **Proponi valori** | Esegue il calcolo per il nuovo mese, proponendo i valori in griglia. |
-
-
-
-
-
-
+| **nuovo plafond** | Establece el cursor en una nueva fila de creación de datos. |
+| **cancella plafond** | Elimina la fila de cálculo seleccionada. No es posible eliminar datos intermedios, solo el último de la lista. |
+| **proponi valori** | Realiza el cálculo para el nuevo mes, proponiendo los valores en la cuadrícula. |

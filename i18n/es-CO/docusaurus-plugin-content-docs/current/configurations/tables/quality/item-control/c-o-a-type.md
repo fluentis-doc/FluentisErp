@@ -1,38 +1,38 @@
 ---
-title: Tipi Certificati di analisi
+title: Tipos de Certificados de Análisis (Tipi Certificati di analisi)
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi taratura**.
+La tabla se encuentra en la ruta **tipi taratura**.
 
-In questa tabella è possibile codificare i *Tipi Certificati di analisi*.   
-Alcuni esempi di utilizzo di *Tipi Certificati di analisi* li troviamo nelle gestioni:
-> **Certificati di analisi** - nei *dati di testata*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*.
+En esta tabla es posible codificar los *Tipोस de Certificados de análisis (Tipi Certificati di analisi)*.  
+Algunos ejemplos de uso de *Tipос de Certificados de análisis (Tipi Certificati di analisi)* los encontramos en las gestiones:  
+> **certificati di analisi** - en los *dati di testata*;  
+> **Parámetros de controles de artículo (Parametri Controlli articolo)** - en la pestaña *generale*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite ingresar nuevos registros o buscar los que ya existen para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi Certificati di analisi**
+**Buscar Tipos de Certificados de análisis (Ricerca Tipi Certificati di analisi)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi Certificati di analisi**
+**Inserción de Tipos de Certificados de análisis (Inserimento Tipi Certificati di analisi)**
 
-Per poter inserire nuovi *Tipi Certificati di analisi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *Tipos de Certificados de análisis (Tipi Certificati di analisi)*, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## Tipi Certificati di analisi
+## Tipos de Certificados de análisis (Tipi Certificati di analisi)
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi Certificati di analisi*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo certificato di analisi*.   
-> **Descrizione**: è la descrizione del *Tipo certificato di analisi*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Note**: annotazioni libere.
+Es la lista donde se ingresan las informaciones principales de los *Tipos de Certificados de análisis (Tipi Certificati di analisi)*.  
+La lista se compone de la siguiente información:  
+> **codice**: es el código del *Tipo de certificado de análisis (Tipo certificato di analisi)*.  
+> **descrizione**: es la descripción del *Tipo de certificado de análisis (Tipo certificato di analisi)*.  
+> **numerazione**: es el código de la *Numeración*.  
+> **note**: anotaciones libres.
 
-### Extra data
+### Datos adicionales (Extra data)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo certificato di analisi*.   
-Questi *Extra data* vengono ereditati nei *Certificati di analisi* di quella determinata tipologia.   
+Es posible ingresar datos adicionales ([Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata)) generales para el *Tipo de certificado de análisis (Tipo certificato di analisi)*.  
+Estos *extra data* se heredan en los *certificati di analisi* de esa determinada tipología.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

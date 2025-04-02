@@ -1,20 +1,19 @@
 ---
-title: Inserimento e Selezione dati
+title: Inserción y Selección de datos (Inserimento e Selezione dati)
 sidebar_position: 1
 ---
 
-## Inserimento dati
+## Inserción de datos (Inserimento dati)
 
-I dati da inserire possono essere:
+Los datos a ingresar pueden ser:
 
-- **opzionali**
+- **opcionales (opzionali)**
 
-- **obbligatori**: in questo caso, se l'utente non li ha inseriti, vengono evidenziati prima del salvataggio con l'icona ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image01.png) oppure con un rettangolo rosso. 
+- **obligatorios (obbligatori)**: en este caso, si el usuario no los ha ingresado, se resaltan antes de guardar con el ícono ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image01.png) o con un rectángulo rojo.
 
+### Inserción manual  
 
-### Inserimento manuale  
-
-- selezionando con clic sinistra del mouse una o più opzioni 
+- seleccionando con clic izquierdo del mouse una o más opciones  
 
 <p align="center">
 
@@ -22,7 +21,7 @@ I dati da inserire possono essere:
 
 </p>
 
-- inserendo dalla tastiera caratteri alfanumerici in campi di tipo edit  
+- ingresando desde el teclado caracteres alfanuméricos en campos de tipo edición  
 
 <p align="center">
 
@@ -30,7 +29,7 @@ I dati da inserire possono essere:
 
 </p>
 
-- selezionando con clic sinistra del mouse l'opzione desiderata, escludendo le altre dello stesso gruppo.  
+- seleccionando con clic izquierdo del mouse la opción deseada, excluyendo las otras del mismo grupo.  
 
 <p align="center">
 
@@ -38,7 +37,7 @@ I dati da inserire possono essere:
 
 </p>
 
-- selezionando il dato dalla **combo-box** (vedi anche  [Filtrare e ordinare i record](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids) )   
+- seleccionando el dato desde la **combo-box** (ver también  [Filtrar y ordenar registros (Filtrare e ordinare i record)](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids))  
 
 <p align="center">
 
@@ -46,11 +45,11 @@ I dati da inserire possono essere:
 
 </p>
 
-### Inserimento con il help di campo  
+### Inserción con ayuda de campo  
 
-- in tutti i campi che hanno lo sfondo blu, con F9 o doppio clic si apre il *help di campo* dove si possono inserire i filtri per ricercare i dati desiderati (vedi anche  [Ricerca dati](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) ).  
+- en todos los campos que tienen el fondo azul, con F9 o un doble clic se abre la *ayuda de campo* donde se pueden ingresar filtros para buscar los datos deseados (ver también [Buscar datos (Ricerca dati)](/docs/guide/common/operations-with-data/data-search-in-read-only-forms)).  
 
-- inserire il dato anche parzialmente e scegliere dalla lista che comparirà il dato desiderato. L'applicazione compilerà in automatico tutti gli altri campi del help. Nell'esempio accanto, per il Fornitore il primo campo è il conto, il secondo è il sottoconto e il terzo è la descrizione del fornitore. Inserendo i caratteri 'am' compare la lista con le alternative da dove potete selezionare il record.   
+- ingresar el dato de forma parcial y elegir de la lista que aparecerá el dato deseado. La aplicación completará automáticamente todos los demás campos de la ayuda. En el ejemplo al lado, para el Proveedor, el primer campo es la cuenta, el segundo es el subcuenta y el tercero es la descripción del proveedor. Al ingresar los caracteres 'am', aparece la lista con las alternativas de donde se puede seleccionar el registro.  
 
 <p align="center">
 
@@ -58,9 +57,9 @@ I dati da inserire possono essere:
 
 </p>
 
-### Inserimento con Copia&Incolla  
+### Inserción con Copiar y Pegar (Copia&Incolla)  
 
-In base al tipo di campo su quale l'utente è posizionato con clic destra del mouse si apre una form che permette di incollare il testo copiato anteriormente.  
+Según el tipo de campo en el que el usuario esté ubicado, con clic derecho del mouse se abre un formulario que permite pegar el texto copiado anteriormente.  
 
 <p align="center">
 
@@ -68,10 +67,12 @@ In base al tipo di campo su quale l'utente è posizionato con clic destra del m
 
 </p>
 
-## Selezione dati
+## Selección de datos (Selezione dati)
 
-### Selezione campo/riga  
-Si può selezionare un campo (posizionandosi su quello desiderato) o una riga intera (andando a capo della riga e facendo clic sull'icona ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image10.png)).
+### Selección de campo/fila  
 
-### Selezione multipla dati  
-Si può realizzare su un campo eseguendo clic col tasto sinistra del mouse e mantenendolo premuto si scende o si sale sulle righe che si desidera selezionare. Su certi campi, con clic destra del mouse si può scegliere l'opzione di *Selezionare tutta* la tabella/campo su quale l'utente è posizionato (vedi immagine subito sopra).
+Se puede seleccionar un campo (colocándose en el deseado) o una fila entera (yendo al inicio de la fila y haciendo clic en el ícono ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image10.png)).
+
+### Selección múltiple de datos  
+
+Se puede realizar sobre un campo ejecutando clic con el botón izquierdo del mouse y manteniéndolo presionado mientras se baja o sube sobre las filas que se desean seleccionar. En ciertos campos, con clic derecho del mouse se puede elegir la opción de *Seleccionar todo (Selezionare tutta)* la tabla/campo en el que el usuario está posicionado (ver imagen justo arriba).

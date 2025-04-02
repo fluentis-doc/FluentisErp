@@ -1,61 +1,61 @@
 ---
-title: Nuova Liquidazione agenti
+title: Nueva Liquidación de Agentes (Nuova Liquidazione agenti)
 sidebar_position: 3
 ---
-La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Ricerca liquidazioni agenti* con click sul pulsante **Nuovo**.
+El formulario se abre a través de la ruta *Ventas > Agentes > Liquidaciones agentes > Búsqueda de liquidaciones agentes* haciendo clic en el botón **Nuevo**.
 
-:::tip[Consiglio]
-Sebbene sia possibile creare *manualmente* una liquidazione, come spigato qui di seguito,
+:::tip[Consejo]
+Aunque es posible crear una liquidación *manualmente*, como se explica a continuación,
 
-consigliamo di utilizzare la **procedura guidata (wizard)** di [**Creazione automatica liquidazione agenti**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
+recomendamos utilizar el **wizard** de [**Creación automática de liquidaciones de agentes**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
 :::
 
 :::note[Nota]
-Uno scenario con **esempi** di gestione agenti e calcoli provvigioni è presente [**qui**](/docs/sales/agents/agent-scenario)
+Un escenario con **ejemplos** de gestión de agentes y cálculos de comisiones está presente [**aquí**](/docs/sales/agents/agent-scenario).
 :::
 
-## **1. Liquidazioni**
+## **liquidazioni**
 
-L'inserimento di una liquidazione richiede: 
-- l'agente intestatario della liquidazione (che deve avere il tipo e soluzione di pagamento di default nella sua anagrafica), 
-- il numero e l'anno vengono compilati in automatico,
-- la data della liquidazione (viene proposta la data corrente), 
-- la descrizione della liquidazione (ad es.: liquidazione primo trimestre 2012), 
-- il mese/anno di riferimento per il calcolo Enasarco.
+La entrada de una liquidación requiere:  
+- el agente titular de la liquidación (que debe tener el tipo y solución de pago predeterminados en su registro),  
+- el número y el año se completan automáticamente,  
+- la fecha de la liquidación (se propone la fecha actual),  
+- la descripción de la liquidación (p. ej.: liquidación primer trimestre 2012),  
+- el mes/año de referencia para el cálculo de Enasarco.
 
-### 1.1 Riepilogativa
+### 1.1 Resumen (Riepilogativa)
 
-Questo tab presenta tutti gli elementi di calcolo della provvigione.  
+Esta pestaña presenta todos los elementos de cálculo de la comisión.  
 
-**Riepilogo provvigioni**: in questa griglia sono presenti, divisa per divisa, i totali delle provvigioni liquidate. Al di sotto di questa, sono presenti i campi con la *Divisa* di riferimento della liquidazione (proposta dalla divisa inserita in anagrafica dell'agente), il *Cambio* e la *Data valuta* per il cambio; più in basso l'*IVA* da applicare all'imponibile provvigionale (anche questa proposta di default dall'anagrafica agente) e il *Totale documento*.
+**riepilogo provvigioni**: en esta cuadrícula se encuentran, divididos por divisa, los totales de las comisiones liquidadas. Debajo de esta, están los campos con la *Divisa* de referencia de la liquidación (propuesta por la divisa ingresada en el registro del agente), el *Tipo de cambio* y la *Fecha valor* para el cambio; más abajo, el *IVA* a aplicar al imponible de la comisión (también propuesto por defecto desde el registro del agente) y el *Total documento*.
 
-**Riepilogo calcolo ritenuta**: la griglia consente di visualizzare i compensi percipienti da considerare acconti sulla liquidazione in uso, il *Tipo di ritenuta* da applicare (anche questa ripresa prioritariamente dall'anagrafica agente o dalla categoria agente), le relative percentuali e gli importi per la ritenuta.
+**riepilogo calcolo ritenuta**: la cuadrícula permite visualizar los pagos a considerar como anticipos sobre la liquidación en uso, el *Tipo de retención* a aplicar (también recuperado prioritariamente del registro del agente o de la categoría de agente), los porcentajes correspondientes y los importes para la retención.
 
-Nel caso in cui sia impostato il *Calcolo manuale*, sarà possibile forzare i dati relativi alla sezione di gestione delle ritenute.
+En caso de que esté configurado el *Cálculo manual*, será posible forzar los datos relacionados con la sección de gestión de retenciones.
 
-### 1.2 Pagamenti
+### 1.2 Pagos (Pagamenti)
 
-In questa tab il gestionale riporta in **Lista pagamenti** le impostazioni di pagamento di default inserite in anagrafica dell'agente, che sono comunque modificabili.
+En esta pestaña, el sistema reporta en **Lista de pagos** las configuraciones de pago predeterminadas ingresadas en el registro del agente, que son modificables.
 
-Nella griglia **Lista scadenze** sono calcolate le scadenze relative: si ricorda che l'importo delle scadenze andrà allineato manualmente alle modifiche apportate alla liquidazione, facendo corrispondere queste al dato dell'importo a pagare.
+En la cuadrícula **lista scadenze** se calculan los vencimientos relativos: se recuerda que el importe de los vencimientos debe alinearse manualmente a las modificaciones realizadas en la liquidación, haciendo corresponder estas al dato del importe a pagar.
 
-#### Pulsanti specifici 
+#### Botones específicos 
 
-> **Inserisci pagamenti**: imposta il cursore all'inserimento di una nuova riga all'interno delle tipologie di pagamento.  
-> **Cancella pagamenti**: esegue la cancellazione delle impostazioni di pagamento selezionate.  
-> **Inserisci scadenze**: imposta il cursore all'inserimento di una nuova riga all'interno delle scadenze della liquidazione.  
-> **Cancella scadenze**: esegue la cancellazione delle scadenze selezionate.
+> **inserisci pagamenti**: coloca el cursor para la inserción de una nueva fila dentro de los tipos de pago.  
+> **cancella pagamenti**: realiza la eliminación de las configuraciones de pago seleccionadas.  
+> **inserisci scadenze**: coloca el cursor para la inserción de una nueva fila dentro de los vencimientos de la liquidación.  
+> **cancella scadenze**: realiza la eliminación de los vencimientos seleccionados.
 
-## **2. Fatture/DDT/Ordini**
+## **2. Facturas/DDT/Pedidos (Fatture/DDT/Ordini)**
 
-In base al *Tipo di documento considerato per l'imponibile provvigionale* inserito nell'*Anagrafica dell'agente* viene visualizzato il secondo tab con i documenti: Fatture oppure DDT oppure ordini.
+Según el *Tipo de documento considerado para el imponible de la comisión* ingresado en el *Registro del agente*, se visualiza la segunda pestaña con los documentos: Facturas, DDT o pedidos.
 
-All'interno della griglia superiore, una volta eseguita la ricerca, sono visualizzati i documenti conteggiati per il calcolo della liquidazione agente in uso.
+Dentro de la cuadrícula superior, una vez realizada la búsqueda, se visualizan los documentos contabilizados para el cálculo de la liquidación del agente en uso.
 
-Attraverso i due pulsanti di gestione: **Collegamento documenti con la liquidazione** e **Cancella collegamenti con la liquidazione** è possibile aggiungere manualmente nuovi documenti nella liquidazione oppure cancellarli per inserirli in una successiva.
+A través de los dos botones de gestión: **Vinculación de documentos con la liquidación** y **Eliminar vínculos con la liquidación**, es posible agregar manualmente nuevos documentos a la liquidación o eliminarlos para incluirlos en una posterior.
 
-#### Pulsanti specifici 
+#### Botones específicos 
 
-> **Ricerca**: esegue la ricerca dei documenti inseriti nella liquidazione in uso.  
-> **Collegamento documenti con la liquidazione**: apre una maschera di ricerca e inserimento manuale di documenti nella liquidazione in uso.  
-> **Cancella collegamenti con la liquidazione**: toglie il documento selezionato dalla liquidazione in uso.  
+> **ricerca**: realiza la búsqueda de los documentos ingresados en la liquidación en uso.  
+> **collegamento documenti con la liquidazione**: abre un formulario de búsqueda e inserción manual de documentos en la liquidación en uso.  
+> **Eliminar vínculos con la liquidación (Cancella collegamenti con la liquidazione)**: elimina el documento seleccionado de la liquidación en uso.

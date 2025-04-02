@@ -1,39 +1,38 @@
 ---
-title: Fatturato vendite
+title: fatturato vendite
 sidebar_position: 10
 ---
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite ingresar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtrado y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+Para poder ingresar registros es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-#### Campi specifici
+#### Campos específicos
 
-**Tipo**: codice di identificazione del fatturato vendite;
+**tipo**: código de identificación de la facturación de ventas;  
 
-**Descrizione**: descrizione del fatturato vendite;
+**descrizione**: descripción de la facturación de ventas;  
 
-**Conto/Sottoconto/Descrizione sottoconto**: Conto di costo utilizzato in contabilizzazione dei documenti di vendita;
+**Cuenta/Subcuenta/Descripción de subcuenta (Conto/Sottoconto/Descrizione sottoconto)**: Cuenta de costo utilizada en la contabilización de documentos de venta;  
 
-**Tipo IVA**: utilizzato nella registrazione della contabilizzazione del documento. Solitamente è impostatato a generico, per altri dettagli verificarne l'utilizzo nelle causali contabili e nelle registrazioni contabili in area amministrativa;
+**tipo iva**: utilizado en el registro de la contabilización del documento. Generalmente está configurado como genérico; para más detalles, verificar su uso en las causas contables y en los registros contables en el área administrativa;  
 
-**Tipo importo**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l' [utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)  contabile nelle registrazioni contabili in area amministrativa.
+**tipo importo**: utilizado en el registro de la contabilización del documento. Para más detalles, verificar su [uso](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) contable en los registros contables en el área administrativa.  
 
-**Famiglia prodotti/Descrizione famiglia prodotti**: campo di assegnazione statistica della vendita per il Sales Forecast del Crm.
+**Familia de productos/Descripción de familia de productos (Famiglia prodotti/Descrizione famiglia prodotti)**: campo de asignación estadística de la venta para la Predicción de Ventas del CRM.  
 
-**Dettaglio per nazioni**: questi dati sono utilizzati solo per lo scambio dati con programmi esterni. In futuro sarà possibile definire conti di costo diversi per nazione e tipo contabilizzazione articolo, associato in anagrafica cliente.
+**Detalle por países (Dettaglio per nazioni)**: estos datos se utilizan solo para el intercambio de datos con programas externos. En el futuro, será posible definir diferentes cuentas de costo por país y tipo de contabilización de artículos, asociadas en el registro de clientes.  
 
-:::note Note
-Se il *Tipo fatturato* viene inserito nell'*Anagrafica articoli* questo codice viene proposto nelle righe articolo del documento di acquisti e automatizza la contabilizzazione dei documenti su un determinato conto di contropartita.
+:::note Nota
+Si el *tipo fatturato* se ingresa en el *anagrafica articoli*, este código se propone en las líneas del artículo del documento de compras y automatiza la contabilización de los documentos en una cuenta de contrapartida determinada.
 :::
 
-#### Esempio di una fattura di vendita:
+#### Ejemplo de una factura de venta:
 
-Se quindi, il *Tipo fatturato* fosse presente già nell'*Anagrafica articolo*, nei documenti di vendita lo troveremo riportato nel nel tab *Articoli*, nel campo *Fatturato vendite*; nel caso in cui non sia presente in anagrafica articolo, è possibile andarlo a selezionare direttamente all'interno del documento di vendita tramite l'apposita combo box.
+Si el *tipo fatturato* ya estuviera presente en el *anagrafica articolo*, en los documentos de venta lo encontraríamos reflejado en la pestaña *articoli*, en el campo *fatturato vendite*; en el caso de que no esté presente en el registro de artículos, es posible seleccionarlo directamente dentro del documento de venta a través de la caja combinada correspondiente.
 
-Nel caso in cui non venga inserito nell'anagrafica articolo e non ci si ricordi di andarlo ad inserire manualmente nel documento di vendita, il sistema per non bloccare la contabilizzazione dei documenti, permette (se questa scelta risulta opportuna) di riprendere il sottoconto di contropartita di default che si è deciso di impostare nell'Anagrafica contatto > tab Dati Contabili > tab Amministrazione nel campo **Costo/Ricavo di contropartita predefinito**.
+En caso de que no se ingrese en el registro del artículo y no se recuerde hacerlo manualmente en el documento de venta, el sistema, para no bloquear la contabilización de los documentos, permite (si esta elección es oportuna) utilizar la subcuenta de contrapartida predeterminada que se decidió establecer en el *Registro de contacto (Anagrafica contatto)* > pestaña Datos Contables (Dati Contabili) > pestaña Administración (Amministrazione) en el campo **Costo/Ingreso de contrapartida predeterminado (Costo/Ricavo di contropartita predefinito)**.  
 
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

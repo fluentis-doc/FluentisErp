@@ -1,184 +1,182 @@
 ---
-title: Strumento di misura
+title: strumento di misura
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Taratura strumenti > Strumenti di misura > Nuovo Strumento di misura** oppure è possibile eseguirla dalla **Ricerca Strumenti di misura**.   
+La gestión se encuentra en la ruta **Calidad > Calibración de instrumentos > Herramientas de medición > Nueva herramienta de medición** o se puede ejecutar desde la **Búsqueda de herramientas de medición**.   
 
+:::important ¿Para qué sirve? (A cosa serve)
+En este registro se almacenan las herramientas de medición utilizadas para garantizar la idoneidad de los productos y la prestación de los servicios ofrecidos.  
+A la herramienta de medición se le pueden asociar información de compra, responsabilidad, propiedades técnicas/mecánicas, ubicación y calibración.  
+Si la herramienta está sujeta a calibración y la calibración es interna, es posible definir cuáles son las actividades que deben realizarse y los valores a registrar para que la calibración sea exitosa.  
+Si la herramienta está sujeta a calibración y la calibración es externa, se puede definir cuál es el tercero que realizará la calibración.  
+Si se ha ingresado una periodicidad temporal de calibración, el botón "Programar nuevas calibraciones" permite la creación automática, por un período deseado, de las calibraciones programadas.  
+Como estándar se disponen de informes de: Registro de herramientas agrupadas por: Herramienta, Categoría, Proveedor, Ubicación, Usuario, Fecha de vencimiento de la garantía y Fecha de vencimiento de la calibración, Registro de herramientas no sujetas a calibración y Ficha de herramienta de medición.  
 
-:::important A cosa serve
-In questa anagrafica vengono memorizzati gli strumenti di misura utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.   
-Allo strumento di misura è possibile associare le informazioni di acquisto, di responsabilità, le proprietà tecniche/meccaniche, di ubicazione e di taratura.   
-Se lo strumento è soggetto a taratura e la taratura è interna, è possibile definire quali sono le attività che devono essere fatte e i valori da rilevare affinché la taratura dia esito positivo.   
-Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile definire qual e l'ente terzo che effettuerà la taratura.   
-Se inserita una periodicità temporale di taratura il pulsante di "Pianifica nuove tarature" permette la creazione automatica, per un periodo desiderato, delle tarature pianificate.   
-A standard sono disponibili le reportistiche di: Registro strumenti raggruppati per: Strumento, Categoria, Fornitore, Ubicazione, Utilizzatore, Scadenza garanzia e Scadenza taratura, Registro Strumenti non soggetti a taratura e Scheda Strumento di misura.   
-
-A standard sono disponibili le reportistiche di:   
-> **Registro Strumenti di misura**: elenco degli *Strumenti di misura* raggruppabili per: *Strumento*, *Categoria*, *Fornitore* (di acquisto), *Ubicazione*, *Utilizzatore*, *Scadenza garanzia* e *Scadenza taratura*.   
-> **Registro Strumenti non soggetti a taratura**: elenco degli *Strumenti di misura* dove non è prevista la *Taratura*; per la stampa di questo report non ha effetto il filtro *Stato - Non soggetti a taratura: Tutti, Soggetti a taratura, Non soggetti a taratura*.   
-> **Scheda Strumento di misura**: scheda degli *Strumenti di misura*.   
+Como estándar se disponen de informes de:  
+> **registro strumenti di misura**: lista de *Herramientas de medición* agrupables por: *Herramienta*, *Categoría*, *Proveedor* (de compra), *Ubicación*, *Usuario*, *Fecha de vencimiento de la garantía* y *Fecha de vencimiento de la calibración*.  
+> **registro strumenti non soggetti a taratura**: lista de *Herramientas de medición* donde no se prevé la *Calibración*; para la impresión de este informe no tiene efecto el filtro *Estado - No sujetas a calibración: Todos, Sujetos a calibración, No sujetas a calibración*.  
+> **scheda strumento di misura**: ficha de las *Herramientas de medición*.   
 :::
 
 
-## Pulsanti di comando
+## Botones de comando
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Guardar (Salva)
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dello *Strumento di misura* visualizzato.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica strumento
-
-Per duplicare lo *Strumento di misura* visualizzato in un nuovo *Strumento di misura* è sufficiente premere il pulsante **Duplica**.   
-Le informazioni dello strumento di origine non duplicate sono: *Codice*,  *Matricola*, *Data acquisto*, *Scadenza garanzia*, *Ubicazione fornitore*, *Cliente proprietario*, *Immagine* e i dati dell'ultima taratura effettuata: *Data ultima taratura* ed *Esito*.   
-Al termine dell'elaborazione il nuovo *Strumento di misura* viene visualizzato.
+Al presionar este botón se almacenan toda la información modificada de la *strumento di misura* visualizada.   
 
 
-### Pianifica nuove tarature
+### ![](/img/neutral/common/duplicate.png) Duplicar herramienta (Duplica strumento)
 
-Il pulsante è abilitato solamente se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura*, ed esiste un *Periodo di taratura* temporale (*Unità di misura* *Giorni* o *Mesi*). Viene visualizzata una richiesta di:   
-> **Pianificare fino al**: è la data di fine pianificazione delle nuove tarature schedulate.   
-
-*Metodo utilizzato per la pianificazione*:   
-Come prima cosa vengono eliminate tutte le precedenti *Tarature* pianificate e non ancora attuate per lo *Strumento*.  
-Successivamente, a partire dalla data di ultima *Taratura*, si creano tante *Tarature* quante sono possibili creare nell'intervallo richiesto a partire dalla data odierna e cadenziate per il *Periodo di taratura*. Se la prima data proposta ricade in una giornate non lavorativa specificata nel *Calendario di fabbrica* la data proposta verrà posticipata alla prima data lavorativa utile.   
-Se per lo strumento non è mai stata pianificata o effettuata una *Taratura* o l'ultima data di *Taratura* risale a un periodo antecedente alla data odierna detratta dal
-*Periodo di taratura*, la prima *Taratura* sarà proposta in data odierna e successivamente le altre.
+Para duplicar la *strumento di misura* visualizada en una nueva *strumento di misura* basta con presionar el botón **duplica**.  
+Las informaciones de la herramienta original que no se duplican son: *Código*,  *matricola*, *Fecha de compra*, *Fecha de vencimiento de la garantía*, *Ubicación del proveedor*, *Cliente propietario*, *Imagen* y los datos de la última calibración realizada: *Fecha de última calibración* y *Resultado*.   
+Al finalizar el proceso, se visualizará la nueva *strumento di misura*.
 
 
-### Nuova taratura
+### Planificar nuevas calibraciones (Pianifica nuove tarature)
 
-Il pulsante è abilitato solamente se lo *Strumento di misura* è *Attivo* ed è *Soggetto a taratura*.   
-Per poter creare una nuova *Taratura* non pianificata per lo *Strumento di misura* visualizzato è necessario premere il pulsante **Nuova taratura**.   
-Alla conferma della richiesta viene creata una nuova *Taratura*; viene proposto il *Tipo taratura* (interna o esterna), indicata nei *Parametri taratura strumenti*, i riferimenti dello *Strumenti di misura* e le sue proprietà.   
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.   
+El botón está habilitado solo si la *strumento di misura* está *Activa*, es *Sujeta a calibración* y existe un *Período de calibración* temporal (*Unidad de medida* *Días* o *Meses*). Se visualizará una solicitud de:   
+> **pianificare fino al**: es la fecha de fin de la planificación de las nuevas calibraciones programadas.   
+
+*Método utilizado para la planificación*:  
+Primero se eliminan todas las *Calibraciones* programadas anteriores que aún no se han realizado para la *Herramienta*.  
+Posteriormente, a partir de la fecha de la última *Calibración*, se crean tantas *Calibraciones* como sea posible en el intervalo solicitado a partir de la fecha actual y programadas para el *Período de calibración*. Si la primera fecha propuesta cae en un día no laborable especificado en el *Calendario de fábrica*, la fecha propuesta se pospondrá a la primera fecha laborable útil.  
+Si para la herramienta no se ha programado o realizado nunca una *Calibración* o la última fecha de *Calibración* corresponde a un período anterior a la fecha actual menos el *Período de calibración*, la primera *Calibración* se propondrá en la fecha actual y posteriormente las demás.
 
 
-## Gestione dati
+### Nueva calibración (Nuova taratura)
+
+El botón está habilitado solo si la *strumento di misura* está *Activa* y es *Sujeta a calibración*.  
+Para poder crear una nueva *Calibración* no programada para la *strumento di misura* visualizada, es necesario presionar el botón **nuova taratura**.  
+Al confirmar la solicitud, se crea una nueva *Calibración*; se propone el *Tipo de calibración* (interna o externa), indicado en los *Parámetros de calibración de instrumentos*, las referencias de la *strumento di misura* y sus propiedades.  
+Al finalizar el proceso, se visualizará la nueva *Calibración*.   
 
 
-### Dati di testata
+## Gestión de datos
 
-Le informazioni gestite sono:   
-> **Categoria**: è la *Categoria strumento* dello *Strumento di misura* (dato obbligatorio).   
-> **Codice**: è il codice dello *Strumento di misura* (dato obbligatorio).   
-> **Matricola**: è la matricola dello *Strumento di misura*; informazione descrittiva libera.   
-> **Modello**: è il modello dello *Strumento di misura*; informazione descrittiva libera.   
+
+### Datos de cabecera (Dati di testata)
+
+Las informaciones gestionadas son:   
+> **categoria**: es la *Categoría de la herramienta* de la *strumento di misura* (dato obligatorio).   
+> **codice**: es el código de la *strumento di misura* (dato obligatorio).   
+> **matricola**: es el número de serie de la *strumento di misura*; información descriptiva libre.   
+> **modello**: es el modelo de la *strumento di misura*; información descriptiva libre.   
 >
-> **Dati di acquisto**: expander dove è possibile inserire:   
+> **dati di acquisto**: expander donde es posible ingresar:   
 >
->> **Fornitore**: è la ragione sociale del *Fornitore* di acquisto.   
->> **Produttore**: è il contatto del *Produttore* dello strumento.   
->> **Data di acquisto**: è la data di acquisto.   
->> **Scadenza garanzia**: è la data di scadenza della garanzia di acquisto.   
->> **Fornitore manutenzione/assistenza**: è la ragione sociale del *Fornitore* abituale di manutenzione/assistenza.   
+>> **fornitore**: es la razón social del *Proveedor* de compra.   
+>> **produttore**: es el contacto del *Productor* de la herramienta.   
+>> **data di acquisto**: es la fecha de compra.   
+>> **scadenza garanzia**: es la fecha de vencimiento de la garantía de compra.   
+>> **fornitore manutenzione/assistenza**: es la razón social del *Proveedor* habitual de mantenimiento/asistencia.   
 >
-> **Funzione responsabile**: expander dove è possibile inserire:   
+> **funzione responsabile**: expander donde es posible ingresar:   
 >
->> **Funzione**: è la *Funzione aziendale* responsabile.   
->> **Dipendente**: è il *Dipendente* responsabile*.   
+>> **funzione**: es la *Función empresarial* responsable.   
+>> **dipendente**: es el *Empleado* responsable.   
 >
-> **Proprietà di taratura**: expander dove è possibile inserire:   
+> **proprietà di taratura**: expander donde es posible ingresar:   
 >
->> **Non soggetto a taratura**: indica che lo *Strumento di misura* non è soggetto a taratura.   
->> In questo caso tutte le altre informazioni presenti nell'expander sono disabilitate.   
->> **Taratura interna**: indica che lo *Strumento di misura* viene tarato da un soggetto interno all'azienda.   
->> **Periodo di taratura**: è il periodo (espresso nella successiva *Unità di misura*) di taratura dello *Strumento di misura*.   
->> **Unità di misura**: è l'*Unità di misura* del *Periodo* di taratura.   
->> **Ultima taratura**: è la data dell'ultima taratura effettuata; il valore viene automaticamente impostato all'attribuzione dell'*Esito* dell'ultima *Taratura* effettuata ma può essere indicato anche manualmente.   
->> **Esito**: è l'*Esito* dell'ultima taratura effettuata; il valore viene automaticamente impostato all'attribuzione dell'*Esito* dell'ultima *Taratura* effettuata ma può essere indicato anche manualmente.   
->> **Data prossima taratura**: è la data della prossima taratura; il valore viene automaticamente impostato all'attribuzione dell'*Esito* dell'ultima *Taratura* effettuata ma può essere indicato anche manualmente.   
->> **Fornitore taratura**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
+>> **non soggetto a taratura**: indica que la *strumento di misura* no está sujeta a calibración.   
+>> En este caso, toda la otra información presente en el expander está deshabilitada.   
+>> **taratura interna**: indica que la *strumento di misura* es calibrada por un sujeto interno a la empresa.   
+>> **Período de calibración (Periodo di taratura)**: es el período (expresado en la siguiente *Unidad de medida*) de calibración de la *strumento di misura*.   
+>> **unità di misura**: es la *Unidad de medida* del *Período* de calibración.   
+>> **ultima taratura**: es la fecha de la última calibración realizada; el valor se establece automáticamente al asignar el *Resultado* de la última *Calibración* realizada, pero puede ser indicado también manualmente.   
+>> **esito**: es el *Resultado* de la última calibración realizada; el valor se establece automáticamente al asignar el *Resultado* de la última *Calibración* realizada, pero puede ser indicado también manualmente.   
+>> **data prossima taratura**: es la fecha de la próxima calibración; el valor se establece automáticamente al asignar el *Resultado* de la última *Calibración* realizada, pero puede ser indicado también manualmente.   
+>> **fornitore taratura**: es la razón social del *Proveedor* que realiza la calibración externa.   
 >
-> **Classificazione**: è la *Classificazione*; esempi: Meccanico, Elettrico, Elettronico, ecc.   
-> **Articolo**: è l'*Articolo* associato allo *Strumento di misura*; l'articolo, per poter essere selezionato, deve di *Natura articolo* *Attrezzatura* oppure *Utensile*.   
+> **classificazione**: es la *Clasificación*; ejemplos: Mecánico, Eléctrico, Electrónico, etc.   
+> **articolo**: es el *Artículo* asociado a la *strumento di misura*; el artículo, para poder ser seleccionado, debe ser de *Naturaleza artículo* *Equipo* o *Herramienta*.   
 >
-> **Proprietà dello strumento**: expander dove è possibile inserire:   
+> **proprietà dello strumento**: expander donde es posible ingresar:   
 >
->> **Unità di misura**: è l'*Unità di misura* dei valori rilevati dallo *Strumento di misura*.   
->> **Intervallo di misura**: è il range misurabile dallo *Strumento di misura*.   
->> **Precisione**: è la *Precisione di misura* minima.   
->> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
->> **Ubicazione fornitore**: è la ragione sociale del *Fornitore* dove è ubicato lo *Strumento di misura*.   
->> **E' uno Strumento primario**: indica che lo *Strumento di misura* visualizzato viene utilizzato per la taratura di altri strumenti.   
->> **Strumento primario**: è lo *Strumento di misura* che viene utilizzato per effettuare la taratura dello strumento visualizzato.   
+>> **unità di misura**: es la *Unidad de medida* de los valores registrados por la *strumento di misura*.   
+>> **Rango de medida (Intervallo di misura)**: es el rango que puede medir la *strumento di misura*.   
+>> **precisione**: es la *Precisión de medición* mínima.   
+>> **limiti**: son los *Límites de aceptabilidad* de la *strumento di misura* para poder utilizarla; ejemplos: posibles límites de precisión, ambientes donde no usarla, etc.   
+>> **ubicazione fornitore**: es la razón social del *Proveedor* donde se encuentra la *strumento di misura*.   
+>> **Es una herramienta primaria (E' uno Strumento primario)**: indica que la *strumento di misura* visualizada se utiliza para calibrar otras herramientas.   
+>> **strumento primario**: es la *strumento di misura* que se utiliza para realizar la calibración de la herramienta visualizada.   
 >
-> **Funzione di utilizzo**: expander dove è possibile inserire:   
+> **Función de uso (Funzione di utilizzo)**: expander donde es posible ingresar:   
 >
->> **Funzione**: è la *Funzione aziendale* che utilizza abitualmente lo *Strumento di misura*.   
->> **Dipendente**: è il *Dipendente* che utilizza abitualmente lo *Strumento di misura*.   
+>> **funzione**: es la *Función empresarial* que utiliza habitualmente la *strumento di misura*.   
+>> **dipendente**: es el *Empleado* que utiliza habitualmente la *strumento di misura*.   
 >
-> **Classe strumento**: è la *Classe strumento*; è abitualmente utilizzata per definire diversi livelli di declassamento dello *Strumento di misura*.   
-> **Magazzino/Ubicazione**: è il *Magazzino/Ubicazione* dove è ubicato lo *Strumento di misura*.   
-> **Cliente proprietario**: è la ragione sociale del *Cliente* proprietario.   
-> **Attivo**: indica che lo *Strumento di misura* è ancora *attivo*.   
-> **Non attivo dal**: indica la data dalla quale lo *Strumento di misura* non è più *attivo*.   
-> **Annotazioni**: annotazioni libere.   
+> **classe strumento**: es la *Clase de herramienta*; se utiliza habitualmente para definir diferentes niveles de degradación de la *strumento di misura*.   
+> **magazzino/ubicazione**: es el *Almacén/Ubicación* donde se encuentra la *strumento di misura*.   
+> **cliente proprietario**: es la razón social del *Cliente* propietario.   
+> **attivo**: indica que la *strumento di misura* sigue siendo *activa*.   
+> **non attivo dal**: indica la fecha desde la cual la *strumento di misura* ya no está *activa*.   
+> **annotazioni**: anotaciones libres.   
 
 
-### Valori da rilevare
-In questo elenco è possibile definire i tipi di rilevazione e i valori da rilevare durante le attività di *Taratura interna*.   
-Se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura* e se è di *Taratura interna* questi valori vengono riportati nelle *Tarature interne*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di rilevazione.   
-> **Posizione**: annotazioni libere sull'argomento.   
-> **Intervallo lettura**: annotazioni libere sull'argomento.   
-> **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato richiesto*.   
-> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato richiesto*.   
-> **Nota**: annotazioni libere.   
+### Valores a registrar (Valori da rilevare)
+En esta lista se puede definir los tipos de registro y los valores a registrar durante las actividades de *Calibración interna*.   
+Si la *strumento di misura* está *Activa*, es *Sujeta a calibración* y es de *Calibración interna*, estos valores se registran en las *Calibraciones internas*.   
+La lista se compone de la siguiente información:   
+> **sequenza**: es la secuencia de registro.   
+> **posizione**: anotaciones libres sobre el tema.   
+> **intervallo lettura**: anotaciones libres sobre el tema.   
+> **dato richiesto**: es el valor nominal requerido.   
+> **Incertidumbre (-) (Incertezza (-))**: es el valor de la incertidumbre negativa (expresada en porcentaje) que se aplicará al *Dato requerido*.   
+> **Incertidumbre (+) (Incertezza (+))**: es el valor de la incertidumbre positiva (expresada en porcentaje) que se aplicará al *Dato requerido*.   
+> **nota**: anotaciones libres.   
 
 
-### Articoli associati
-In questo elenco è possibile associare gli *Articoli* misurabili con lo *Strumento di misura*.   
-Con la versione attuale di Fluentis non ci sono controlli standard che verificano l'utilizzo dello strumento per rilevare valori dagli *Articoli* presenti in questo elenco.   
-L'elenco si compone delle seguenti informazioni:   
-> **Classe**: è la *Classe articolo*.   
-> **Codice**: è il codice dell'*Articolo*.   
-> **Classe**: è la descrizione dell'*Articolo*.   
-> **Note**: annotazioni libere.   
+### Artículos asociados (Articoli associati)
+En esta lista es posible asociar los *Artículos* medibles con la *strumento di misura*.   
+Con la versión actual de Fluentis no hay controles estándar que verifiquen el uso de la herramienta para registrar valores de los *Artículos* presentes en esta lista.   
+La lista se compone de la siguiente información:   
+> **classe**: es la *Clase de artículo*.   
+> **codice**: es el código del *Artículo*.   
+> **classe**: es la descripción del *Artículo*.   
+> **note**: anotaciones libres.   
 
 
-### Storico Rapporti e Certificati di taratura
-In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pianificati ed effettuati per lo *Strumento di misura*.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Taratura* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**: è il codice del *Tipo taratura*.   
-> **Descrizione tipo taratura**: è la descrizione del *Tipo taratura*.   
-> **Anno**: è l'*Anno* del documento.   
-> **Numero**: è il *Numero* del documento.   
-> **Taratura interna**: indica se è stato emesso una *Taratura interna*.   
-> **Schedulata**: indica se il documento è stato schedulato (pianificato).   
-> **Data prevista**: è la data di prevista taratura.   
-> **Data taratura**: è la data di effettiva taratura.   
-> **Esito**: è il codice dell'*Esito* della taratura.   
-> **Descrizione esito**: è la descrizione dell'*Esito* della taratura.   
-> **Categoria**: è il codice della *Categoria strumento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria strumento*.   
-> **Codice**: è il codice dello *Strumento di misura*.   
-> **Matricola**: è la matricola dello *Strumento di misura*.   
-> **Modello**: è il modello dello *Strumento di misura*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
-> **Funzione**: è il codice della *Funziona aziendale* che effettua la taratura interna.   
-> **Descrizione funzione**: è la descrizione della *Funziona aziendale* che effettua la taratura interna.   
-> **Codice**: è il codice del *Dipendente* che effettua la taratura interna.   
-> **Cognome**: è il cognome del *Dipendente* che effettua la taratura interna.   
-> **Nome**: è il nome del *Dipendente* che effettua la taratura interna.   
+### Historial de Informes y Certificados de calibración (Storico Rapporti e Certificati di taratura)
+En esta lista es posible visualizar el historial de *Calibraciones* y *Certificados de calibración* planificados y efectuados para la *strumento di misura*.   
+A través de un clic doble del mouse en la fila deseada es posible gestionar la *Calibración* seleccionada.   
+La lista se compone de la siguiente información:   
+> **tipo taratura**: es el código del *Tipo de calibración*.   
+> **descrizione tipo taratura**: es la descripción del *Tipo de calibración*.   
+> **anno**: es el *Año* del documento.   
+> **numero**: es el *Número* del documento.   
+> **taratura interna**: indica si se ha emitido una *Calibración interna*.   
+> **schedulata**: indica si el documento ha sido programado (planificado).   
+> **data prevista**: es la fecha de la calibración prevista.   
+> **data taratura**: es la fecha de calibración efectiva.   
+> **esito**: es el código del *Resultado* de la calibración.   
+> **descrizione esito**: es la descripción del *Resultado* de la calibración.   
+> **categoria**: es el código de la *Categoría de herramienta*.   
+> **descrizione categoria**: es la descripción de la *Categoría de herramienta*.   
+> **codice**: es el código de la *strumento di misura*.   
+> **matricola**: es el número de serie de la *strumento di misura*.   
+> **modello**: es el modelo de la *strumento di misura*.   
+> **laboratorio esterno**: es la razón social del *Proveedor* que realiza la calibración externa.   
+> **funzione**: es el código de la *Función empresarial* que realiza la calibración interna.   
+> **descrizione funzione**: es la descripción de la *Función empresarial* que realiza la calibración interna.   
+> **codice**: es el código del *Empleado* que realiza la calibración interna.   
+> **cognome**: es el apellido del *Empleado* que realiza la calibración interna.   
+> **nome**: es el nombre del *Empleado* que realiza la calibración interna.   
 
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Strumento di misura*.   
+### Datos adicionales (Extra data)
+Es posible ingresar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *strumento di misura*.   
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Documentos vinculados (Documenti collegati)
+En esta lista es posible ingresar y consultar posibles anexos; es posible visualizar la previsualización.   
 
 
-### Immagine
-E' possibile allegare un'immagine dello *Strumento di misura* tramite l'utilizzo del drag&drop; viene visualizzata l'anteprima.   
-Questo allegato non viene incluso nel Documentale di Fluentis.   
+### Imagen (Immagine)
+Es posible adjuntar una imagen de la *strumento di misura* mediante el uso de arrastrar y soltar; se visualizará la previsualización.   
+Este anexo no se incluye en el Documental de Fluentis.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

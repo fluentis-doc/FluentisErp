@@ -1,22 +1,22 @@
 ---
-title: Tipi automezzi
+title: Tipos de vehículos (Tipi automezzi)
 sidebar_position: 54
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzi**.
+La tabla se encuentra en la ruta **Tablas > Logística > Tipos de vehículos (Tabelle > Logistica > Tipi automezzi)**.
 
-In questa tabella è possibile codificare le *Tipi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+En esta tabla es posible codificar los *Tipos de vehículos (Tipi automezzi)* que podrán ser seleccionados en el [Registro de vehículos (Angrafica automezzi)](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi automezzi**
+**Búsqueda de Tipos de vehículos (Ricerca Tipi automezzi)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi automezzi**
+**Inserción de Tipos de vehículos (Inserimento Tipi automezzi)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.        
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Para poder insertar nuevos, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
+Con el botón **cancella** es posible eliminar el registro seleccionado.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

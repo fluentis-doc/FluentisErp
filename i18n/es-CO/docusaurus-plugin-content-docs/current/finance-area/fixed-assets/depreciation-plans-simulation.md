@@ -1,28 +1,20 @@
 ---
-title: Simulazione piani di ammortamento
+title: simulazione piani di ammortamento
 sidebar_position: 3
 ---
 
-Ogni simulazione è legata all'utente che l'ha calcolata: all'apertura della maschera sarà disponibile il pulsante per visualizzare l'ultimo calcolo effettuato dall'utente (questa elaborazione può essere abbastanza esigente in termini di tempo e risorse di elaborazione).
+Cada simulación está vinculada al usuario que la ha calculado: al abrir la máscara, estará disponible el botón para visualizar el último cálculo realizado por el usuario (este procesamiento puede ser bastante exigente en términos de tiempo y recursos de procesamiento).
 
-Il range massimo di anni previsto per la simulazione è un range di 10 anni. I flag successivi consentono di definire quali tipi di proprietà (proprietà, leasing, noleggio) siano da considerare nella simulazione.
+El rango máximo de años previsto para la simulación es de 10 años. Los siguientes indicadores permiten definir qué tipos de propiedades (propiedad, leasing, alquiler) deben considerarse en la simulación.
 
-Nella lista sottostante si andranno a indicare i differenti piani di ammortamento da calcolare: di ognuno sarà possibile definire quali tipi di ammortamento vadano simulati, con l'opzione anche fiscale o meno. Il flag Calcola identifica per quali piani si procederà con la simulazione.
+En la lista a continuación se indicarán los diferentes planes de amortización a calcular: para cada uno se podrá definir qué tipos de amortización se simularán, con la opción de incluir o no la opción fiscal. El indicador **calcola** identifica para qué planes se procederá con la simulación.
 
-Una volta salvate le impostazioni si procederà al calcolo con l'apposito pulsante: al termine dell'elaborazione sarà visualizzata una maschera di riepilogo dei totali di categoria per ogni anno/piano o per ogni piano/anno. Si può scambiare la visualizzazione tra l'uno e l'altro criterio con l'apposito pulsante. Da questa maschera è prevista un'esportazione Excel.
+Una vez guardadas las configuraciones, se procederá al cálculo con el botón correspondiente: al finalizar el procesamiento, se mostrará una máscara de resumen de los totales por categoría para cada año/plan o por cada plan/año. Se puede intercambiar la visualización entre uno y otro criterio con el botón correspondiente. Desde esta máscara se prevé una exportación a Excel.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
+**RIBBON BAR**: representa el menú del formulario en cuestión, es decir, el área donde se pueden realizar acciones relacionadas con el procedimiento en uso. La lista de funcionalidades posibles se representa a continuación:
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado |
 | --- | --- |
-| Salva | Salva le impostazioni di calcolo per l'utente attivo. |
-| Visualizza ultimo calcolo | Visualizza il risultato dell'ultimo calcolo eseguito. |
-| Calcola | Esegue il calcolo secondo le impostazioni salvate. |
-
-
-
-
-
-
+| Guardar (Salva) | Guarda las configuraciones de cálculo para el usuario activo. |
+| Mostrar último cálculo (Visualizza ultimo calcolo) | Muestra el resultado del último cálculo realizado. |
+| Calcular (Calcola) | Ejecuta el cálculo según las configuraciones guardadas. |

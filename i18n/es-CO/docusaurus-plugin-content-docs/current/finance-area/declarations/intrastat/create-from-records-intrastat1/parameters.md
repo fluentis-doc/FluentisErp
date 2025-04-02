@@ -1,27 +1,21 @@
 ---
-title: Parametri
+title: parametri
 sidebar_position: 3
 ---
 
-All'interno della sezione 'Parametri' la procedura riporta tutte le righe dei movimenti inseriti. In particolare:
+Dentro de la sección 'parametri (Parametri)', el procedimiento muestra todas las líneas de los movimientos ingresados. En particular:
 
-**Stato e codice IVA** sono presi dall'anagrafica del soggetto intestatario;
+**Estado y código IVA (Stato e codice IVA)** se toman del registro del sujeto titular;
 
-l'eventuale **Valore in divisa** secondo quanto inserito nella registrazione (il campo è presente solo per l'intra2);
+el posible **Valor en divisa (Valore in divisa)** según lo ingresado en el registro (el campo está presente solo para el intra2);
 
-**Ammontare operazioni euro** prende l'importo nella divisa della società;
+**ammontare operazioni euro** toma el importe en la divisa de la empresa;
 
-**Numero del documento**, la **Data di registrazione** e il **Codice del servizio** ripreso dall'anagrafica intestataria della registrazione.
+**numero del documento**, la **data di registrazione** y el **Código del servicio (Codice del servizio)** se toman del registro del titular de la entrada.
 
-Una volta completati i dati è possibile procedere alla creazione, operazione che andrà a riportare i dettagli nelle sezioni bis - ter - quater.
+Una vez completados los datos, es posible proceder a la creación, operación que llevará los detalles a las secciones bis - ter - quater.
 
-Il corretto inserimento, automatico, nella sezione adeguata del modello dipende dalla gestione, in fase di inserimento della scrittura contabile, del campo **Tipo IVA** nella griglia iva. Se impostato su *Generico* il movimento sarà inserito nella sezione Bis, se impostato su *Servizio*, sarà inserita nella sezione quater. 
-Tale dato, a sua volta, andrà a valorizzare correttamente il campo ***BisTer*** (da intendersi come sezione dle modello) presente nella tab *Intrastat* della registrazione, che è poi il dato di fatto passato in fase di creazione modello.
+La correcta inserción automática en la sección adecuada del modelo depende de la gestión, en la fase de inserción de la escritura contable, del campo **tipo iva** en la cuadrícula de IVA. Si se establece en *generico*, el movimiento se insertará en la sección Bis; si se establece en *servizio*, se insertará en la sección quater.  
+Este dato, a su vez, se utilizará correctamente para rellenar el campo ***BisTer*** (que se entiende como sección del modelo) presente en la pestaña *Intrastat* de la entrada, que es el dato real pasado en la fase de creación del modelo.
 
-la sezione Ter viene invece valorizzata, sempre attraverso il tab *Intrastat* della registrazione, quando registrando una nota di accredito, in corrispondenza della griglia iva della registrazione, viene attivato il flag ***Nota di variazione anni precedenti*** (che identifica in ogni caso una variazione non relativa al mese o trimestre di registrazione la quale richiede la compilazione della sezione ter). Accanto a tale flag è possibile inserire la data di riferimento della fattura che viene rettificata.
-
-
-
-
-
-
+La sección Ter se valoriza, siempre a través de la pestaña *Intrastat* de la entrada, cuando al registrar una nota de crédito, en correspondencia de la cuadrícula de IVA de la entrada, se activa el indicador ***Nota de variación de años anteriores (Nota di variazione anni precedenti)*** (que identifica en cualquier caso una variación no relacionada con el mes o trimestre de registro, la cual requiere la compilación de la sección ter). Junto a este indicador, es posible ingresar la fecha de referencia de la factura que se está rectificando.

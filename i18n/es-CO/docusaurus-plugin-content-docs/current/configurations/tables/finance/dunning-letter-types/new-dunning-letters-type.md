@@ -1,46 +1,40 @@
 ---
-title: Nuovo tipo solleciti
+title: Nuevo tipo de solicitudes (Nuovo tipo solleciti)
 sidebar_position: 3
 ---
 
-I campi di questa form sono:
+Los campos de este formulario son:
 
-**Codice**: codice identificativo del tipo sollecito.
+**codice**: código identificativo del tipo sollecito (identificativo del tipo sollecito).
 
-**Descrizione**: descrizione del tipo sollecito.
+**descrizione**: descripción del tipo de solicitud (tipo sollecito).
 
-**Tipo interesse**: opzionale, è il collegamento al tipo di tasso di interesse da applicare al ritardo di pagamento, per ottenere un calcolo alla data di emissione del sollecito.
+**tipo interesse**: opcional, es el enlace al tipo de tasa de interés que se debe aplicar al retraso de pago, para obtener un cálculo a la fecha de emisión de la solicitud.
 
-**Sollecito per gruppo partite**: il flag di gestione per gruppo di partite, in particolare, andrà a gestire una lettera di sollecito per un gruppo di partite contemporaneamente (gestione standard), mentre senza flag ogni partita contabile avrebbe il suo sollecito separato dalle altre.
+**Solicitud por grupo de partidas (Sollecito per gruppo partite)**: el indicador de gestión para grupo de partidas gestionará una carta de solicitud para un grupo de partidas simultáneamente (gestión estándar), mientras que sin indicador, cada partida contable tendría su propia solicitud separada de las demás.
 
-Una volta salvato il tipo di sollecito è possibile crearne i vari livelli con il pulsante ‘nuovo'.
+Una vez guardado el tipo de solicitud, es posible crear sus varios niveles con el botón 'nuevo (nuovo)'.
 
-**Codice**: codice identificativo del sollecito.
+**codice**: código identificativo de la solicitud (identificativo del sollecito).
 
-**Descrizione**: descrizione del tipo sollecito.
+**descrizione**: descripción del tipo de solicitud (tipo sollecito).
 
-**Priorità**: priorità di creazione da 1 a N livelli.
+**priorità**: prioridad de creación de 1 a N niveles.
 
-**Descrizione tipo fido**: il collegamento ad un tipo di controllo fido cliente non è gestito.
+**descrizione tipo fido**: el enlace a un tipo de control de crédito del cliente no está gestionado.
 
-**Giorni di ritardo**: indicazione dei giorni di ritardo che devono decorrere prima di sollecitare la partita.
+**giorni di ritardo**: indicación de los días de retraso que deben transcurrir antes de solicitar la partida.
 
-**Giorni**: il numero di giorni di scadenza del sollecito e se questi siano da conteggiare dalla data di creazione o dalla data di scadenza del sollecito precedente.
+**giorni**: el número de días de vencimiento de la solicitud y si estos deben contarse a partir de la fecha de creación o de la fecha de vencimiento de la solicitud anterior.
 
-**Da data movimento precedente**: data di riferimento per i livelli successivi al primo.
+**Desde la fecha de movimiento anterior (Da data movimento precedente)**: fecha de referencia para los niveles posteriores al primero.
 
-**Da data creazione**: data di riferimento solitamente utilizzata per il primo livello.
+**da data creazione**: fecha de referencia generalmente utilizada para el primer nivel.
 
-:::danger ATTENZIONE
-I valori dei campi "**giorni di ritardo**" e "**giorni**" , in particolare per i solleciti successivi al primo, vengono sommati e pertanto nel caso del secondo, terzo sollecito ecc.. in genere non è necessario aggiungere un valore nel parametro *giorni di ritardo*, è possibile invece riferirsi all'ulteriore tempo intercorso dalla data del primo sollecito  tramite il parametro *giorni*.
+:::danger ATENCIÓN (ATTENZIONE)
+Los valores de los campos "**giorni di ritardo**" y "**giorni**", en particular para las solicitudes posteriores a la primera, se suman; por lo tanto, en el caso del segundo, tercer aviso, etc., generalmente no es necesario agregar un valor en el parámetro *giorni di ritardo*, sino que se puede referir al tiempo adicional transcurrido desde la fecha de la primera solicitud a través del parámetro *giorni*.
 :::
 
-Per ogni numero di sollecito si potrà procedere, una volta salvato, all'inserimento dei vari testi in lingua: il primo che si andrà a caricare è quello che sarà utilizzato di default quando l'anagrafica cliente non ha una lingua assegnata.
+Para cada número de solicitud se podrá proceder, una vez guardado, a la inserción de los varios textos en idioma: el primero que se cargará es el que se utilizará por defecto cuando el registro del cliente no tenga un idioma asignado.
 
-I testi sono divisi in 4 sezioni: l'oggetto della lettera, la testata, la conclusione e la sezione riferimenti (attiva solo per solleciti su gruppi di partite). Nella sezione riferimenti, in particolare, si può inserire un testo utilizzando i codici previsti alla base della maschera: ad es. “Rif. (3) nr. (4) del (5), (9) di (8) (10) con scadenza al (6)”.
-
-
-
-
-
-
+Los textos se dividen en 4 secciones: el objeto de la carta, el encabezado, la conclusión y la sección de referencias (activa solo para solicitudes sobre grupos de partidas). En la sección de referencias, en particular, se puede insertar un texto utilizando los códigos previstos en la parte inferior de la máscara: por ejemplo, “Ref. (3) nr. (4) del (5), (9) de (8) (10) con vencimiento al (6)”.

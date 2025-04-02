@@ -1,15 +1,15 @@
 ---
-title: Evasione da Ordine
+title: Cumplimiento de Orden (Evasione da Ordine)
 sidebar_position: 3
 ---
 
-In questa finestra, che si apre utilizzando il pulsante *Rientri Previsti* posto sulla ribbon bar, è possibile filtrare gli ordini di conto lavoro.
+En esta ventana, que se abre utilizando el botón *rientri previsti* ubicado en la barra de herramientas, es posible filtrar los pedidos de trabajo por cuenta.
 
-Nella griglia sottostante compare una riga per ciascun ordine di conto lavoro ancora non evaso o parzialmente evaso.  
-L'utente, con un doppio click sulla riga dell'ordine, ha la possibilità di esplodere le righe che devono essere ancora fatte rientrare dal terzista, può selezionarle o inserire la quantità su ciascuna di esse e premere il tasto *Acquisizione* per  trasferire le quantità degli articoli selezionati all'interno della griglia del tab *Articoli* del rientro di conto lavoro.
+En la cuadrícula debajo aparece una fila para cada pedido de trabajo que aún no ha sido cumplido o que ha sido cumplido parcialmente.  
+El usuario, con un doble clic en la fila del pedido, tiene la posibilidad de expandir las filas que aún deben ser traídas por el subcontratista, puede seleccionarlas o ingresar la cantidad en cada una de ellas y presionar el botón *acquisizione* para transferir las cantidades de los artículos seleccionados dentro de la cuadrícula de la pestaña *articoli* de la entrada de trabajo por cuenta.
 
-*Pulsanti specifici*:  
-> **Ricerca ordini**: consente di applicare i filtri di ricerca all'intero database degli Ordini di Conto Lavoro inseriti e non ancora evasi o solo parzialmente evasi;  
-> **Acquisizione**: richiama la procedura che trasferisce nella griglia del tab Articoli Rientrati del rientro di conto lavoro gli articoli selezionati nella finestra sottostante;  
-> **Evasione forzata ordine**: richiama la procedura che consente di rendere forzatamente evasa la riga dell'ordine di conto lavoro che l'utente sta trasferendo;  
-> **Seleziona tutti**: consente di selezionare tutte le righe presenti nella sezione di destra della finestra in cui compaiono gli articoli da trasferire;  
+*Botones específicos*:  
+> **ricerca ordini**: permite aplicar los filtros de búsqueda a toda la base de datos de Pedidos de Trabajo por Cuenta ingresados y que aún no han sido cumplidos o solo han sido cumplidos parcialmente;  
+> **acquisizione**: llama el procedimiento que transfiere a la cuadrícula de la pestaña Artículos Entrados del ingreso de trabajo por cuenta los artículos seleccionados en la ventana inferior;  
+> **evasione forzata ordine**: llama el procedimiento que permite marcar como cumplida forzosamente la fila del pedido de trabajo que el usuario está transfiriendo;  
+> **seleziona tutti**: permite seleccionar todas las filas presentes en la sección derecha de la ventana donde aparecen los artículos a transferir;

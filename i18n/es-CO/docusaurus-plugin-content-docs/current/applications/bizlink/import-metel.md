@@ -1,95 +1,95 @@
 ---
-title: Importazione METEL
+title: Importación METEL (Importazione METEL)
 sidebar_position: 6
 ---
 
-**BizLink** consente l'importazione dei listini Metel, sono resi disponibili due flussi per tale import. L'unica operazione che deve fare l'utente è configurare il connettore per effettuare l'import.
+**BizLink** permite la importación de las listas de precios de Metel, se ponen a disposición dos flujos para dicha importación. La única operación que debe realizar el usuario es configurar el conector para llevar a cabo la importación.
 
-:::danger[Lunghezza del file]
-In Fluentis sono supportati solo 2 tipologie di file, quelli a 178 e 233 caratteri!
+:::danger[Longitud del archivo]
+En Fluentis, solo se admiten 2 tipos de archivos, aquellos de 178 y 233 caracteres.
 :::
 
-:::danger[Formato del file]
-In Fluentis è supportato solo il formato ANSI del file!
+:::danger[Formato del archivo]
+En Fluentis, solo se admite el formato ANSI del archivo.
 :::
 
-:::tip[Processo file in formato non corretto]
-Se il file non rispetta le due caratteristiche sopra riportate BizLink, sposterà il file nella cartella dei file processati e nei documenti in entrata non scriverà nulla in quanto "scarta" il file
+:::tip[Proceso de archivo en formato incorrecto]
+Si el archivo no cumple con las dos características mencionadas anteriormente, BizLink moverá el archivo a la carpeta de archivos procesados y no escribirá nada en los documentos entrantes, ya que "desecha" el archivo.
 :::
 
-### Prerequisiti
-- Servizio di BizLink installato e funzionante
-- Listino Metel (file in formato txt) valido
+### Prerrequisitos
+- Servicio de BizLink instalado y funcionando
+- Lista de precios de Metel (archivo en formato txt) válida
 
-:::tip[Sito ufficiale Metel]
-Per qualsiasi dubbio sul file si rimanda al sito: https://listinipubblici.metel.it/ nel quale c'è la funzionalità "Verifica Listino"
+:::tip[Sitio oficial de Metel]
+Para cualquier duda sobre el archivo, se remite al sitio: https://listinipubblici.metel.it/ en el cual hay una funcionalidad "Verificar Lista de precios".
 :::
 
-### Visione Parser e Flussi
+### Visión del Parser y Flujos
 
-:::note[Nota bene]
-In questa sezione vengono riportati e spiegati i flussi già presenti in Fluentis. Nella sezione successiva viene spiegato come configurare il connettore ed effettuare l'import.
+:::note[Nota importante]
+En esta sección se explican los flujos ya presentes en Fluentis. En la sección siguiente se explica cómo configurar el conector y realizar la importación.
 :::
 
 #### Parser
 
-Metel ha un parser chiamato FluentisEDIExtendedParser
+Metel tiene un parser llamado FluentisEDIExtendedParser
 
 ![](/img/it-it/applications/bizlink/import-metel/1.png)
 
-Al suo interno ci sono due oggetti parser, uno per il file a 178 caratt. e uno per quello a 233
+Dentro de él hay dos objetos parser, uno para el archivo de 178 caracteres y otro para el de 233 caracteres.
 
 ![](/img/it-it/applications/bizlink/import-metel/2.png)
 
-Prendendo come esempio l'oggetto parser per il file a 233, vediamo ogni campo come viene importato e in che posizione dovrebbe essere.
-Questo può tornare utile in caso di errori di import, in quanto data la proprietà che ha errore possiamo capire in che posizione del file si trova.
+Tomando como ejemplo el objeto parser para el archivo de 233 caracteres, observamos cómo se importa cada campo y en qué posición debería estar.  
+Esto puede ser útil en caso de errores de importación, ya que, dada la propiedad que tiene el error, podemos entender en qué posición del archivo se encuentra.
 
 ![](/img/it-it/applications/bizlink/import-metel/3.png)
 
-#### Flusso
+#### Flujo
 
-Metel ha poi un flusso chiamato METEL
+Metel tiene un flujo llamado METEL
 
 ![](/img/it-it/applications/bizlink/import-metel/4.png)
 
-Tale flusso ha un'operazione di flusso al suo interno chiamata FLOW_OP_MetlPriceList
+Este flujo tiene una operación de flujo interna llamada FLOW_OP_MetlPriceList
 
 ![](/img/it-it/applications/bizlink/import-metel/5.png)
 
-Tale operazione di flusso ha 2 documenti di flusso differenziati dal numero di caratteri del file
+Dicha operación de flujo tiene 2 documentos de flujo diferenciados por el número de caracteres del archivo.
 
 ![](/img/it-it/applications/bizlink/import-metel/6.png)
 
-Il documento di flusso definisce poi quale oggetto parser usare per processare il file
+El documento de flujo define qué objeto parser utilizar para procesar el archivo.
 
 ![](/img/it-it/applications/bizlink/import-metel/7.png)
 
-### Creazione connettore
+### Creación del conector
 
-Andare in Bizlink - Connettori e premere nuovo
+Ir a Bizlink - Conectores y presionar nuevo.
 
 ![](/img/it-it/applications/bizlink/import-metel/8.png)
 
-Impostare poi Codice, Descrizione, Tipo connettore = Folder Monitor, Partner, Flusso, Operazione di flusso, Documento di flusso (in base al numero di caratteri del file che si vuole importare), Gestito dal servizio di autenticazione.
-Infine impostare il percorso delle cartelle:
-- Incoming: dove verrà messo il file per essere processato
-- Processed: dove verrà spostato il file dal servizione se verrà importato correttamente
-- Failed: dove verrà spostato il file dal servizione se tale file avrà degli errori
+Luego, establecer Código, Descripción, Tipo de conector = Monitor de carpeta, Socio, Flujo, Operación de flujo, Documento de flujo (según el número de caracteres del archivo que se desea importar), Gestionado por el servicio de autenticación.  
+Finalmente, establecer la ruta de las carpetas:
+- Entrante: donde se colocará el archivo para ser procesado
+- Procesado: donde se moverá el archivo desde el servicio si se importa correctamente
+- Fallido: donde se moverá el archivo desde el servicio si dicho archivo tiene errores
 
 ![](/img/it-it/applications/bizlink/import-metel/9.png)
 
-:::tip[Gestione di entrambi i file]
-Per poter gestire entrambi i tipi di file, creare due connettori diversi con i due documenti di flusso diversi.
-Inoltre la cartella di Incoming dovrà essere diversa. Failed e Processed possono anche essere le stesse cartelle.
+:::tip[Gestión de ambos archivos]
+Para poder gestionar ambos tipos de archivos, crear dos conectores diferentes con los dos documentos de flujo distintos.  
+Además, la carpeta de Entrante deberá ser diferente. Fallido y Procesado pueden ser las mismas carpetas.
 :::
 
-### Test import
+### Prueba de importación
 
-:::danger[Attenzione]
-In caso di errori o di re-importazione di uno stesso file è necessario riavviare il servizio di BizLink in quanto non può processare un documento con lo stessso nome per evitare doppioni. Con il riavvio si sblocca questa cosa.
+:::danger[Atención]
+En caso de errores o de re-importación del mismo archivo, es necesario reiniciar el servicio de BizLink, ya que no puede procesar un documento con el mismo nombre para evitar duplicados. Con el reinicio, se desbloquea esta situación.
 :::
 
-Per effettuare un test di import, assicurarsi che il servizio sia attivo e copiare il file .txt nella cartella di incoming e attendere qualche secondo.
-Nei documenti in entrata di BizLink sarà presente una riga con il risultato dell'import.
+Para realizar una prueba de importación, asegúrese de que el servicio esté activo y copie el archivo .txt en la carpeta de entrada y espere unos segundos.  
+En los documentos entrantes de BizLink aparecerá una línea con el resultado de la importación.
 
 ![](/img/it-it/applications/bizlink/import-metel/10.png)

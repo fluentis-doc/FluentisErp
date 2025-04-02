@@ -1,131 +1,126 @@
 ---
-title: Tipi spese
+title: tipi spese
 sidebar_position: 11
 ---
 
-In questa tabella vengono definite delle tipologie di spesa finale da aggiungere ai documenti (in particolare del ciclo attivo) per l'addebito automatico.
+En esta tabla se definen tipos de gastos finales a añadir a los documentos (en particular del ciclo activo) para el cargo automático.
 
-Possono essere aggiunte poi direttamente nel documento , oppure nell'anagrafica del cliente per l'automazione dell'inserimento della spesa.
+Pueden añadirse directamente en el documento, o bien en el registro del cliente para automatizar la entrada del gasto.
 
-### Campi di aggancio articolo e IVA
+### Campos de vinculación artículo y IVA
 
-**Tipo / Descrizione:** Codice e descrizione della spesa per richiamarla
+**Tipo / Descripción (Tipo / Descrizione)**: Código y descripción del gasto para poder llamarlo.
 
-**Classe / Codice / Descrizione articolo:** campo per effettuare l'associazione tra il tipo spesa ed un codice articolo di riferimento
+**Clase / Código / Descripción artículo (Classe / Codice / Descrizione articolo)**: campo para realizar la asociación entre el tipo de gasto y un código de artículo de referencia.
 
-**Conto / Sottoconto / Descrizione:** necessario per associare un conto contabile sul quale contabilizzare automaticamente il riaddebito della spesa in oggetto
+**Cuenta / Subcuenta / Descripción (Conto / Sottoconto / Descrizione)**: necesario para asociar una cuenta contable sobre la cual contabilizar automáticamente el reembolso del gasto en cuestión.
 
-**IVA / Descrizione:** necessario per specificare il codice iva (aliquota o codice di esenzione) al quale sarà fatturato il riaddebito della spesa
+**IVA / Descripción (IVA / Descrizione)**: necesario para especificar el código de IVA (tasa o código de exención) al cual se facturará el reembolso del gasto.
 
-**Tipo IVA:** Tipo iva per gestire il riaddebito (Salvo casi o regimi iva particolari indicare Generico)
+**tipo iva**: Tipo de IVA para gestionar el reembolso (salvo en casos o regímenes de IVA especiales, indicar Genérico).
 
+### Indicador de vinculación a las lógicas {#link-to-logic}
 
-### Flag di aggancio alle logiche {#link-to-logic}
+**varie**: identifica un gasto variable a cargo simple. Los gastos Varios presentes en los documentos se incluirán en el documento resumido que procesa los propios documentos.
 
-**Varie:** identifica una spesa varia ad addebito semplice. Le spese Varie presenti nei documenti vengono tutte riportate nel documento riepilogativo che evade i documenti stessi.
+**incasso**: al activar este indicador, el gasto se calculará automáticamente uno para cada cuota de recibo bancario definido en las condiciones de pago (por lo tanto, funciona solo con este tipo de pago). Los gastos de Cobro están sujetos automáticamente al IVA principal del documento.
 
-**Incasso:** apponendo questo flag la spesa sarà calcolata in automatico una per ogni rata di ricevuta bancaria definita nelle condizioni di pagamento (funziona pertanto soltanto con questa tipologia di pagamento). Le spese di Incasso sono assoggettate automaticamente all’iva principale del documento.
+**trasporto**: al activar este indicador, el gasto se calculará en la factura uno por cada DDT que contribuyó a generar la factura; en caso de cumplimiento de más pedidos en un DDT, se reportará un solo gasto de cobro.
 
-**Trasporto:** apponendo questo flag la spesa sarà calcolata in fattura una per ogni ddt che ha contribuito a generare la fattura; nel caso invece di evasione di più ordini in un ddt, verrà riportata una sola spesa di incasso.      
+**Embalaje (Imballo):**
 
-**Imballo:**
+**Envío (Spedizione):**
 
-**Spedizione:**
+**viaggio**: si está habilitado, el tipo de gasto se propondrá en la lista de gastos seleccionables en las intervenciones del área Proyectos.
 
-**Viaggio:** se abilitato il tipo spesa verrà proposto nell'elenco delle spese selezionabili negli interventi dell'area Progetti. 
+**tipo spesa viaggio**: habilitado solo si el indicador "Viaje" está activado, identifica el tipo de gasto de Viaje: necesario para habilitar campos específicos en los gastos de las intervenciones (por ejemplo, en el caso de Distancia se habilitarán los campos de km y costo por km, etc.)
 
-**Tipo spesa viaggio**: abilitato solo se il flag "Viaggio" è abilitato, indentifica la tipologia di spesa Viaggio: necessario per abilitare appositi campi nelle spese degli interventi (es. nel caso di Distanza verranno abilitati i campi di km e costo km, etc)
-
-**Bollo / Valore Bollo:** utilizzando questa tipologia con il relativo valore indicato nel campo adiacente si attiva la logica del bollo in fattura nel caso di esenzione iva e documento superiore ai 77euro (vedere norme attualmente in vigore per dettagli), oltre alla valorizzazione del tag corrispondente nella fattura elettronica.
+**Sello / Valor del Sello (Bollo / Valore Bollo)**: al utilizar este tipo con el valor correspondiente indicado en el campo adyacente, se activa la lógica del sello en la factura en caso de exención de IVA y documento superior a 77 euros (ver normas actuales para detalles), además de la valorización de la etiqueta correspondiente en la factura electrónica.
 
 :::note[Info]
-La logica, in dettaglio prevede che, se il cliente ha delle spese bollo nella sua anagrafica, venga eseguita la somma del valore imponibile per le righe documento aventi il codice iva compreso nelle seguenti categorie: 
+La lógica, en detalle, prevé que si el cliente tiene gastos de sello en su registro, se realice la suma del valor imponible para las líneas del documento que tengan el código de IVA incluido en las siguientes categorías:
 
-Non Imponibile
-Esente
-Escluso
+No Imponible
+Exento
+Excluido
 
-Se il totale ( convertito  nella divisa della societa’con il cambio della testata fattura) e’ maggiore del **Tetto minimo  spese** della sezione **Spese Bollo** in tabella società, viene aggiunto come spesa bollo.
+Si el total (convertido a la divisa de la empresa con el tipo de cambio de la cabecera de la factura) es mayor que el **Límite mínimo de gastos** de la sección **Gastos de Sello** en la tabla de la empresa, se agregará como gasto de sello.
 
-I codici IVA delle tipologie di cui sopra devono anche avere il flag *Base per conteggio bollo* settato.
+Los códigos de IVA de los tipos mencionados anteriormente también deben tener el indicador *Base para cálculo de sello* activado.
 :::
 
-**Val. stat. intra:** con questa logica la spesa finale inserita in fattura sarà ripartita sulle righe del documento ai fini della creazione dei modelli intrastat dalla procedura di creazione automatica (dalle fatture)
+**Valor estadístico intra (Val. stat. intra)**: con esta lógica, el gasto final ingresado en la factura se distribuirá sobre las líneas del documento a efectos de la creación de modelos intrastat a partir del procedimiento de creación automática (de las facturas).
 
-**Ripartito:** il flag fa in modo che la registrazione di magazzino abbia la spesa ripartita nelle varie righe della registrazione della fattura; questo flag non implica che la spesa venga ripartita nelle registrazioni dei documenti collegati.     
+**ripartito**: el indicador permite que el registro de almacén tenga el gasto distribuido entre las distintas líneas del registro de la factura; este indicador no implica que el gasto se distribuya en los registros de los documentos conectados.
 
 **RAEE:**
 
-**IVA obbl.**
+**IVA obligatoria (IVA obbl.)**
 
+### Otros campos
 
-### Altri campi
+**Categoría de mercancía (Categoria merceologica):**
 
-**Categoria merceologica:**
+**Códigos / Descripción de Nóminas (Codici / Descrizione Paghe)**: código utilizado para insertar en el cuadro "Valores" del Resumen para recibos de empleados los gastos presentes en las intervenciones y en las declaraciones de actividad.
 
-**Codici / Descrizione Paghe:** codice utilizzato per inserire nel riquadro "Valori" del Riepilogo per cedolini dei dipendenti le spese presenti negli interventi e nelle dichiarazioni attività.
+**tipo attività**: válido solo para gastos del tipo "Viaje" - Horas de Viaje". El tipo de actividad se utiliza para generar automáticamente la declaración de actividad en función de las horas de viaje declaradas en los gastos incurridos de la intervención en el área Proyectos.
 
-**Tipo attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". Il tipo attività viene utilizzato per generare in automatico la dichiarazione attività in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
+**Categoría de actividad (Categoria attività)**: válido solo para gastos del tipo "Viaje" - Horas de Viaje". La categoría de actividad se utiliza en la declaración de actividad generada automáticamente según las horas de viaje declaradas en los gastos incurridos de la intervención en el área Proyectos.
 
-**Categoria attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". La categoria attività viene utilizzata nella dichiarazione attività generata in automatico in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
+### Retención y caja de previsión
 
-### Ritenuta d'acconto e cassa previdenza
+**Caja de previsión / Sujeto de retención / Código de P.A. (Cassa previdenza / Soggetto Ritenuta / Codice P.A.)**: campos para gestionar en el archivo XML de las facturas electrónicas de venta la *Caja de previsión* que se puede aplicar en la factura de un profesional.
 
-**Cassa previdenza / Soggetto Ritenuta / Codice P.A.:** campi per consentire di gestire nel file xml delle fatture elettroniche di vendita la *Cassa previdenza* che si può applicare nella fattura di un professionista.
+Si el registro del cliente de la factura tiene el indicador [**ritenuta d’acconto**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) activado, un receptor que utiliza Fluentis podría crear una factura de venta y enviarla a Sdi: si tiene un reembolso de gasto de Caja de previsión (típicamente el 4%), codifica este tipo de gasto en la presente tabla, luego establece si está sujeto a retención o no (con el segundo indicador) e inserta en el tercer campo el código que prevé Sdi:
 
-Se l'anagrafica cliente della fattura ha il flag [**ritenuta d’acconto**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) attivo, infatti, un percipiente che utilizza Fluentis potrebbe creare una fattura di vendita e spedirla allo Sdi: se ha un riaddebito spesa Cassa previdenza (il 4% tipicamente) codifica questo tipo spesa nella presente tabella, poi imposta se è soggetta a ritenuta o meno (con il secondo flag) e inserisce nel terzo campo il codice che lo Sdi prevede:
+:::note Ejemplo de codificación
+TC01	Caja nacional de previsión y asistencia para abogados y procuradores legales 
 
+TC02	Caja de previsión de doctores comerciales
 
-:::note Esempio di codifica
+TC03	Caja de previsión y asistencia para agrimensores
 
-TC01	Cassa nazionale previdenza e assistenza avvocati e procuratori legali 
+TC04	Caja nacional de previsión y asistencia para ingenieros y arquitectos independientes
 
-TC02	Cassa previdenza dottori commercialisti
+TC05	Caja nacional del notariado
 
-TC03	Cassa previdenza e assistenza geometri
+TC06	Caja nacional de previsión y asistencia para contadores y peritos comerciales
 
-TC04	Cassa nazionale previdenza e assistenza ingegneri e architetti liberi professionisti
+TC07	Entidad nacional de asistencia para agentes y representantes de comercio (ENASARCO)
 
-TC05	Cassa nazionale del notariato
+TC08	Entidad nacional de previsión y asistencia para consultores de trabajo (ENPACL)
 
-TC06	Cassa nazionale previdenza e assistenza ragionieri e periti commerciali
+TC09	Entidad nacional de previsión y asistencia para médicos (ENPAM)
 
-TC07	Ente nazionale assistenza agenti e rappresentanti di commercio (ENASARCO)
+TC10	Entidad nacional de previsión y asistencia para farmacéuticos (ENPAF)
 
-TC08	Ente nazionale previdenza e assistenza consulenti del lavoro (ENPACL)
+TC11	Entidad nacional de previsión y asistencia para veterinarios (ENPAV)
 
-TC09	Ente nazionale previdenza e assistenza medici (ENPAM)
+TC12	Entidad nacional de previsión y asistencia para empleados de agricultura (ENPAIA)
 
-TC10	Ente nazionale previdenza e assistenza farmacisti (ENPAF)
+TC13	Fondo de previsión para empleados de empresas de envío y agencias marítimas
 
-TC11	Ente nazionale previdenza e assistenza veterinari (ENPAV)
+TC14	Instituto nacional de previsión para periodistas italianos (INPGI)
 
-TC12	Ente nazionale previdenza e assistenza impiegati dell'agricoltura (ENPAIA)
+TC15	Obra nacional de asistencia a huérfanos de sanitarios italianos (ONAOSI)
 
-TC13	Fondo previdenza impiegati imprese di spedizione e agenzie marittime
+TC16	Caja autónoma de asistencia complementaria para periodistas italianos (CASAGIT)
 
-TC14	Istituto nazionale previdenza giornalisti italiani (INPGI)
+TC17	Entidad de previsión para peritos industriales y peritos industriales graduados (EPPI)
 
-TC15	Opera nazionale assistenza orfani sanitari italiani (ONAOSI)
+TC18	Entidad de previsión y asistencia pluricategorial (EPAP)
 
-TC16	Cassa autonoma assistenza integrativa giornalisti italiani (CASAGIT)
+TC19	Entidad nacional de previsión y asistencia para biólogos (ENPAB)
 
-TC17	Ente previdenza periti industriali e periti industriali laureati (EPPI)
+TC20	Entidad nacional de previsión y asistencia para la profesión de enfermería (ENPAPI)
 
-TC18	Ente previdenza e assistenza pluricategoriale (EPAP)
-
-TC19	Ente nazionale previdenza e assistenza biologi (ENPAB)
-
-TC20	Ente nazionale previdenza e assistenza professione infermieristica (ENPAPI)
-
-TC21	Ente nazionale previdenza e assistenza psicologi (ENPAP)
+TC21	Entidad nacional de previsión y asistencia para psicólogos (ENPAP)
 
 TC22	INPS
-
 :::
 
 ---
 
-**Lingue**
+**lingue**
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile definire delle descrizioni in lingua: utilizzabile per stampe personalizzate.
+Para cada tipo de pago seleccionado en la cuadrícula superior, es posible definir descripciones en varios idiomas: utilizables para impresiones personalizadas.

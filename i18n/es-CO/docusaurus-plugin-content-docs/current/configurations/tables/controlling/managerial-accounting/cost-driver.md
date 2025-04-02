@@ -1,127 +1,124 @@
 ---
-title: Cost Driver
+title: cost driver
 sidebar position: 6
 ---
 
-All'interno della tabella dei **Cost driver** possiamo codificare tutte le logiche di ribaltamento tra centri.
-Vediamo nel dettaglio le singole proprietà a disposizione
+Dentro de la tabla de **cost driver** podemos codificar todas las lógicas de distribución entre centros. Veamos en detalle las propiedades individuales disponibles.
 
 :::tip nota
-La tabella dei Cost driver è disponibile, in versione *semplificata*, anche per società che non hanno l'attivazione del *Controlling*.
-In questo caso, *che non viene dettagliato in quanto d'interesse marginale*, il cost driver prevede un Codice e una Descrizione, con poi solo una lista di Centri destinatari valorizzati unicamente in percentuale (variabile opzionalmente per anno contabile). Il cost driver, poi, dovrà essere collegato ai Centri aziendali da ripartire secondo questa logica percentuale, attraverso la procedura **Scritture per cost driver** presente nel modulo delle **Chiusure infrannuali**. 
+La tabla de Controladores de Costos está disponible, en una versión *simplificada*, también para empresas que no tienen activado el *Controlling*. En este caso, *que no se detalla ya que es de interés marginal*, el controlador de costos prevé un Código y una Descripción, con solo una lista de Centros destinatarios valorizados únicamente en porcentaje (variable opcionalmente por año contable). El controlador de costos, luego, deberá ser vinculado a los Centros empresariales a distribuir según esta lógica porcentual, a través del procedimiento **Asientos para controladores de costos** presente en el módulo de **Cierres interanuales**.
 
-Ad esempio possiamo definire un criterio 'metri quadri capannone x', che prevede la ripartizione 60%-40% su due centri produttivi, e poi collegare questo driver ad un centro 'Capannone x' che somma tutti i costi di sua competenza, da ribaltare sui centri produttivi destinatari.
+Por ejemplo, podemos definir un criterio 'metros cuadrados del almacén x', que prevé la distribución 60%-40% sobre dos centros productivos, y luego vincular este controlador a un centro 'Almacén x' que suma todos los costos de su competencia, a distribuir sobre los centros productivos destinatarios.
 :::
 
-## Dati generali
+## Datos generales
 
-- **CODICE** della regola che stiamo inserendo. All'interno di ogni ciclo di elaborazione, **FluentisERP** valuta i driver in ordine di codice
+- **codice** de la regla que estamos ingresando. Dentro de cada ciclo de procesamiento, **FluentisERP** evalúa los controladores en orden de código.
 
 :::tip Nota
-Per dare un criterio di codifica suggeriamo
-    -   A: come ATTRIBUZIONI. Tutte le A sono tutte quelle legate al centro generico ‘VALORI CON ATTRIBUZIONE NEL CONTROLLING’, che è quel centro aziendale che ha il FLAG su CONTI DA RIASSEGNARE. Il primo step dell’elaborazione del controlling è quella di attribuire questi conti generici che la contabilità non sa gestire, oppure che vanno attribuiti con logiche più variabili rispetto alle logiche che un contabile conosce. 
-    -   R per i RIBALTAMENTI; quando i valori di un centro li vado a ribaltare su altri centri
-    -   P come PROGETTI; Bisogna tener conto che le elaborazioni che riguardano i progetti verranno logicamente applicate alla fine di tutto, perché con queste staremo assegnando ai progetti del periodo i costi indiretti già calcolati nelle dimensione ‘industriale/direzionale’.
+Para dar un criterio de codificación sugerimos:
+    -   A: como ATRIBUCIONES. Todas las A son aquellas relacionadas con el centro genérico 'VALORES CON ATRIBUCIÓN EN EL CONTROLLING', que es ese centro empresarial que tiene el FLAG sobre CUENTAS A REASIGNAR. El primer paso del procesamiento del controlling es atribuir estas cuentas genéricas que la contabilidad no puede gestionar, o que deben ser atribuidas con lógicas más variables en comparación con las lógicas que un contador conoce. 
+    -   R para los REASIGNACIONES; cuando los valores de un centro se redistribuyen a otros centros.
+    -   P como PROYECTOS; Es importante tener en cuenta que los procesos que conciernen a los proyectos se aplicarán lógicamente al final de todo, porque con estos asignaremos a los proyectos del período los costos indirectos ya calculados en la dimensión ‘industrial/direccional’.
 :::
 
-- **DESCRIZIONE** del driver, che può essere più o meno esplicativa di quello che va a gestire
+- **descrizione** del controlador, que puede ser más o menos explicativa de lo que gestiona.
 
-- [**AREA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas): nei Cost Driver *l'area è sempre obbligatoria*. Avremo regole puntuali specifiche per certe aree (per una simulazione magari) mentre le regole generali saranno quelle dell’area generica del Set di regole.
+- [**area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas): en los Controladores de Costos *el área siempre es obligatoria*. Tendremos reglas específicas para ciertas áreas (quizás para una simulación) mientras que las reglas generales serán las del área genérica del Conjunto de reglas.
 
-- **NUMERO CICLO**: l'elaborazione del controlling di **FluentisERP** deve avere un ordine logico. Innanzi tutto serve iniziare dal calcolo dei movimenti fisici di periodo, poi ci sono gli ammortamenti dei cespiti e poi si passa ai driver, per i quali si deve iniziare dalle attribuzione con numero ciclo 1 (perché per prima cosa si deve svuotare il *centro generico da riattribuire*), poi si passerà ai ribaltamenti secondo il loro ordine di ciclo e infine, per chi ha valorizzato una dimensioen di progetto/commessa tipicamente, i driver dell'ultimo, ciclo di attribuzione dati dalla direzionale ai progetti. A parità di numero ciclo, i driver vengono elaborati poi nell’ordine di codice del driver.
+- **numero ciclo**: el procesamiento del controlling de **FluentisERP** debe tener un orden lógico. En primer lugar, se debe comenzar con el cálculo de los movimientos físicos del período, luego están las amortizaciones de los activos y luego se pasan a los controladores, para los cuales se debe empezar con las atribuciones con número de ciclo 1 (porque primero se debe vaciar el *centro genérico a reatribuir*), luego se pasarán las reasignaciones según su orden de ciclo y finalmente, para quienes han valorado una dimensión de proyecto/encargo típicamente, los controladores del último ciclo de atribución dados por la dirección a los proyectos. A igualdad de número de ciclo, los controladores se elaboran luego en el orden del código del controlador.
 
-- **CONTO/SOTTOCONTO**: significa legare il driver alla combinazione sottoconto-centro, cioè si prenderà il totale dei movimenti di questo conto e del centro indicato in seguito e poi il driver dirà dove e come andarli a riassegnare sui centri di destinazione della lista in basso a sinistra. Il conto/sottoconto è un campo obbligatorio solo per i cost driver legati al centro generico da riattribuire, per gli altri è facoltativo.
+- **conto/sottoconto**: significa vincular el controlador a la combinación subcuenta-centro, es decir, se tomará el total de los movimientos de esta cuenta y del centro indicado a continuación y luego el controlador indicará dónde y cómo reasignarlos en los centros de destino de la lista en la parte inferior izquierda. La cuenta/subcuenta es un campo obligatorio solo para los controladores de costos vinculados al centro genérico a reatribuir, para los demás es opcional.
 
-- [**DIMENSIONE DEI CENTRI DESTINATARI**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension); questa dimensione è quella che filtra i centri destinatari dei valori della griglia in basso a sinistra. In **FluentisERP**, infatti, possiamo avere driver che spostano o copiano i dati da una dimensione all’altra dei nostri centri: come abbiamo già detto il caso tipico è l’assegnazione dei costi diretti/indiretti alla dimensione di analisi dei progetti.
+- [**DIMENSIÓN DE LOS CENTROS DESTINATARIOS (DIMENSIONE DEI CENTRI DESTINATARI)**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension); esta dimensión filtra los centros destinatarios de los valores de la cuadrícula en la parte inferior izquierda. En **FluentisERP**, de hecho, podemos tener controladores que mueven o copian datos de una dimensión a otra de nuestros centros: como ya hemos dicho, el caso típico es la asignación de costos directos/indirectos a la dimensión de análisis de proyectos.
 
-- **DATA INIZIO** e **DATA FINE**: in questi campi si imposta da che data a che data vale il driver. Non è consentito che due regole della stessa area per lo stesso centro (e conto, se valorizzato) si sovrappongano. Se nel corso del tempo ci dovessimo accorgere che è necessario apportare delle modifiche ad una regola, la possiamo chiudere ad una certa data per poi applicarne una differente dal periodo successivo.
+- **data inizio** y **data fine**: en estos campos se establece desde qué fecha hasta qué fecha vale el controlador. No se permite que dos reglas de la misma área para el mismo centro (y cuenta, si se valoriza) se superpongan. Si a lo largo del tiempo nos percatamos de que es necesario realizar modificaciones a una regla, podemos cerrarla en una fecha determinada para luego aplicar una diferente a partir del período siguiente.
 
-## TIPI DISTRIBUZIONE
+## TIPOS DE DISTRIBUCIÓN
 
-- **TIPO DI DISTRIBUZIONE**: definisce come è gestita l’attribuzione o il ribaltamento. Abbiamo a disposizione i codici da 01 a 09 valorizzabili per le attribuzioni; se ne aggiungono altre 3 per i ribaltamenti tra centri, quando potremo utilizzare anche tariffe del centro; ne avremo invece 6 differenti, invece, specifici della dimensione di destinazione progetti/commesse. Nel dettaglio:
-    - tipi distribuzione per attribuzioni e ribaltamenti
-        - **01 Percentuale**: il dato di origine, periodo per periodo, sarà ripartito in base alla percentuale del singolo centro destinatario
-        - **02 Totale dare**: per ogni periodo si calcolerà una percentuale calcolata sulla base del totale dare del singolo centro destinatario rispetto al totale dare di tutti i centri destinatari
-        - **03 Totale avere**: come per il precedente, ma considerando il totale avere
-        - **04 Margini**: come per il precedente, ma considerando dare-avere (in valore assoluto)
-        - **05 Su sottoconto selezionato**: la percentuale si ottiene considerando il dare-avere (in valore assoluto) dei centri destinatari, ma filtrato per la lista dei *sottoconti* della griglia di destra
-        - **06 Su conto selezionato**: la percentuale si ottiene considerando il dare-avere (in valore assoluto) dei centri destinatari, ma filtrato per la lista dei *conti* della griglia di destra
-        - **07 Ad esclusione dei sottoconti selezionati**: la percentuale si ottiene considerando il dare-avere (in valore assoluto) dei centri destinatari, ma filtrato escludendo la lista dei *sottoconti* della griglia di destra
-        - **08 Ad esclusione dei conti selezionati**: la percentuale si ottiene considerando il dare-avere (in valore assoluto) dei centri destinatari, ma filtrato escludendo la lista dei *conti* della griglia di destra
-        - **09 Su grandezza fisica**: la percentuale si ottiene considerando le quantità (dell'unità di misura impostata nel campo dedicato) dei centri destinatari rispetto al totale delle quantità di tutti i centri destinatari
-    - tipi distribuzione specifici per i ribaltamenti
-        - **10 Reversione su produzione a tariffa standard**: ribaltiamo un Centro su più Centri in base ad un flusso di Movimenti Fisici tra il Centro di origine (che è il centro collegato al driver) e i Centri destinatari (che sono i centri di destinazione del driver):  pertanto le Ore del Centro di origine saranno uguali alle Ore dei Centri destinatari. Il Centro cedente non viene totalmente svuotato, pertanto avrà un valore residuo diverso da zero.
-        - **11 Reversione diretta a tariffa standard**: permette di ribaltare un Centro su più Centri in base ad una Tariffa Standard del Centro di origine (il centro del driver) e ad un flusso di Movimenti Fisici dei Centri destinatari. L’importo attribuito ai Centri destinatari sarà il prodotto tra la Tariffa Standard del Centro di origine e l’ammontare del valore della Grandezza Fisica di ogni Centro destinatario. Anche in questo caso il Centro cedente non viene totalmente svuotato, pertanto avrà un valore residuo diverso da zero.
-        - **12 Reversione su produzione a tariffa calcolata**: consente di ribaltare un Centro su più Centri in base ad una Tariffa Calcolata del Centro di origine e ad un flusso di Movimenti Fisici tra il Centro di origine e i Centri destinatari, pertanto le Ore del Centro di origine saranno uguali alle Ore dei Centri destinatari. L’importo attribuito ai Centri destinatari sarà il prodotto tra la Tariffa Calcolata del Centro di origine e l’ammontare del valore della Grandezza Fisica di ogni Centro destinatario, quindi il Centro cedente viene totalmente svuotato e avrà un valore residuo pari a zero.
-    - tipi distribuzione specifici per la dimensione progetti/commesse (dettagliati in seguito)
-        - **13 Reversione su produzione per progetto**
-        - **14 Reversione margini per progetto**
-        - **15 Reversione ammortamenti specifici per progetto**
-        - **16 Reversione sui ricavi di progetto**
-        - **17 Reversione sui costi di progetto**
-        - **18 Reversione su costo industriale di progetto**
+- **tipo di distribuzione**: define cómo se gestiona la atribución o la redistribución. Disponemos de códigos del 01 al 09 que se pueden usar para atribuciones; se añaden otros 3 para las redistribuciones entre centros, en las que también podremos utilizar tarifas del centro; en cambio, tendremos 6 diferentes, específicos de la dimensión de destino proyectos/encargos. En detalle:
+    - tipos de distribución para atribuciones y redistribuciones:
+        - **percentuale**: el dato de origen, período por período, se repartirá en base al porcentaje del centro destinatario individual.
+        - **totale dare**: por cada período se calculará un porcentaje basado en el total de debe del centro destinatario individual respecto al total de debe de todos los centros destinatarios.
+        - **totale avere**: como en el anterior, pero considerando el total de haber.
+        - **04 Márgenes (Margini)**: como en el anterior, pero considerando debe-haber (en valor absoluto).
+        - **05 Sobre subcuenta seleccionada (Su sottoconto selezionato)**: el porcentaje se obtiene considerando el debe-haber (en valor absoluto) de los centros destinatarios, filtrado por la lista de *subcuentas* de la cuadrícula de la derecha.
+        - **06 Sobre cuenta seleccionada (Su conto selezionato)**: el porcentaje se obtiene considerando el debe-haber (en valor absoluto) de los centros destinatarios, filtrado por la lista de *cuentas* de la cuadrícula de la derecha.
+        - **07 A exclusión de subcuentas seleccionadas (Ad esclusione dei sottoconti selezionati)**: el porcentaje se obtiene considerando el debe-haber (en valor absoluto) de los centros destinatarios, filtrado excluyendo la lista de *subcuentas* de la cuadrícula de la derecha.
+        - **08 A exclusión de cuentas seleccionadas (Ad esclusione dei conti selezionati)**: el porcentaje se obtiene considerando el debe-haber (en valor absoluto) de los centros destinatarios, filtrado excluyendo la lista de *cuentas* de la cuadrícula de la derecha.
+        - **09 Sobre magnitud física (Su grandezza fisica)**: el porcentaje se obtiene considerando las cantidades (de la unidad de medida establecida en el campo dedicado) de los centros destinatarios en relación al total de las cantidades de todos los centros destinatarios.
+    - tipos de distribución específicos para las redistribuciones:
+        - **10 Reversión sobre producción a tarifa estándar (Reversione su produzione a tariffa standard)**: redistribuimos un Centro a varios Centros según un flujo de Movimientos Físicos entre el Centro de origen (que es el centro vinculado al controlador) y los Centros destinatarios (que son los centros de destino del controlador): por lo tanto, las Horas del Centro de origen serán iguales a las Horas de los Centros destinatarios. El Centro cedente no se vacía completamente, por lo tanto tendrá un valor residual diferente de cero.
+        - **11 Reversión directa a tarifa estándar (Reversione diretta a tariffa standard)**: permite redistribuir un Centro a varios Centros basándose en una Tarifa Estándar del Centro de origen (el centro del controlador) y en un flujo de Movimientos Físicos de los Centros destinatarios. El monto atribuido a los Centros destinatarios será el producto entre la Tarifa Estándar del Centro de origen y el monto del valor de la Magnitud Física de cada Centro destinatario. También en este caso, el Centro cedente no se vacía completamente, por lo que tendrá un valor residual diferente de cero.
+        - **12 Reversión sobre producción a tarifa calculada (Reversione su produzione a tariffa calcolata)**: permite redistribuir un Centro a varios Centros basado en una Tarifa Calculada del Centro de origen y un flujo de Movimientos Físicos entre el Centro de origen y los Centros destinatarios, por lo tanto las Horas del Centro de origen serán iguales a las Horas de los Centros destinatarios. El monto atribuido a los Centros destinatarios será el producto entre la Tarifa Calculada del Centro de origen y el monto del valor de la Magnitud Física de cada Centro destinatario, por lo que el Centro cedente se vacía completamente y tendrá un valor residual igual a cero.
+    - tipos de distribución específicos para la dimensión de proyectos/encargos (detallados a continuación):
+        - **13 Reversión sobre producción por proyecto (Reversione su produzione per progetto)**
+        - **14 Reversión de márgenes por proyecto (Reversione margini per progetto)**
+        - **15 Reversión de amortizaciones específicas por proyecto (Reversione ammortamenti specifici per progetto)** 
+        - **16 Reversión sobre ingresos de proyecto (Reversione sui ricavi di progetto)** 
+        - **17 Reversión sobre costos de proyecto (Reversione sui costi di progetto)** 
+        - **18 Reversión sobre costo industrial de proyecto (Reversione su costo industriale di progetto)** 
 
+- [**UNIDAD DE MEDIDA (UNITA’ DI MISURA)**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units): el campo se activa para los tipos de distribución *09 - 10 - 11 - 12* y sirve para seleccionar cuál es la unidad de medida a buscar en los movimientos físicos.
 
-- [**UNITA’ DI MISURA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units): il campo si attiva per i tipi distribuzione *09 - 10 - 11 - 12* e serve per selezionare qual è l’unità di misura da ricercare nei movimenti fisici.
+## OTROS CAMPOS
 
-## ALTRI CAMPI
-
-- **ERRORE DI GESTIONE**: in questo campo possiamo indicare come gestire eventualmente i casi nei quali non sono presenti dati per l’applicazione della regola.
-    - *BLOCCA*: il blocco chiaramente va ad interrompere l’elaborazione se non vi sono i dati necessari all’applicazione del driver.
-    - *VALORE DI RESIDUO*: Valore residuo non può essere utilizzato per le attribuzioni ma solo per i ribaltamenti, perché lascia nel centro d’origine il valore residuo che non è riuscito ad assegnare ai centri di destinazione. Il centro generico deve sempre risultare vuoto e quindi questo tipo di gestione errori non è utilizzabile nelle attribuzioni.
-    - *MEDIA DEI VALORI ESISTENTI*, invece, va a spalmare nel periodo corrente, quando non c’è un valore, sulla base della media dei valori esistenti negli altri periodi dell’anno in elaborazione.
+- **errore di gestione**: en este campo podemos indicar cómo gestionar, eventualmente, los casos en los cuales no hay datos para la aplicación de la regla.
+    - *blocca*: el bloqueo claramente interrumpe el procesamiento si no hay los datos necesarios para la aplicación del controlador.
+    - *VALOR RESIDUAL (VALORE DI RESIDUO)*: El valor residual no puede utilizarse para atribuciones, sino solo para redistribuciones, porque deja en el centro de origen el valor residual que no se pudo asignar a los centros de destino. El centro genérico debe permanecer siempre vacío y, por lo tanto, este tipo de gestión de errores no es utilizable en las atribuciones.
+    - *MEDIA DE LOS VALORES EXISTENTES (MEDIA DEI VALORI ESISTENTI)*, en cambio, se extiende en el período actual, cuando no hay un valor, sobre la base del promedio de los valores existentes en otros períodos del año en procesamiento.
 
 :::tip Nota
-Ad esempio può servire ad evitare blocchi in periodi, tipo Agosto, nei quali le quantità o i valori da utilizzare nel driver potrebbero essere a zero a causa della chiusura aziendale per ferie
+Por ejemplo, puede servir para evitar bloqueos en períodos, como agosto, en los cuales las cantidades o valores a utilizar en el controlador podrían ser cero debido al cierre de la empresa por vacaciones.
 :::
 
-- **VALORI DA UTILIZZARE**: indico quali sono i dati che devo considerare per i centri destinatari. La scelta è fra
-    - TUTTI: legge tutti i movimenti assegnati (fino a quel determinato ciclo che sto elaborando) 
-    - SOLO RIGHE DI ORIGINE: solo i dati che arrivano dalle attribuzioni iniziali
+- **valori da utilizzare**: indico cuáles son los datos que debo considerar para los centros destinatarios. La elección es entre:
+    - TODOS (TUTTI): lee todos los movimientos asignados (hasta ese determinado ciclo que estoy procesando). 
+    - SOLO FILAS DE ORIGEN (SOLO RIGHE DI ORIGINE): solo los datos que provienen de las atribuciones iniciales.
 
 :::tip Nota
-Sostanzialmente, per i ribaltamenti, in questo campo si definisce se si deve considerare o meno, per i Centri Destinatari, anche i valori ricevuti da ribaltamenti da altri centri. Pertanto, ha valenza solo per i Tipi Distribuzione dal 02 al 08 compresi, è ininfluente per i restanti tipi che si basano su tariffe.
+Sustancialmente, para las redistribuciones, en este campo se define si se deben considerar o no, para los Centros Destinatarios, también los valores recibidos de redistribuciones de otros centros. Por lo tanto, tiene validez solo para los Tipos de Distribución del 02 al 08 incluidos, es irrelevante para los demás tipos que se basan en tarifas.
 :::
 
-- **FLAG STORNO**: questo flag risponde alla domanda se i dati della dimensione di origine li devo mantenere o li devo *spostare* nella dimensione di destinazione.
+- **FLAG DE ANULACIÓN (FLAG STORNO)**: este indicador responde a la pregunta de si los datos de la dimensión de origen deben mantenerse o deben *trasladarse* a la dimensión de destino.
 
 :::tip Nota
-Quando il driver è legato alla dimensione progetti/commesse sicuramente il valore lo devo mantenere anche nell’origine che è la direzionale, altrimenti mi mancherebbero dei costi ed eventuali conti economici sarebbero inesatti.
+Cuando el controlador está vinculado a la dimensión de proyectos/encargos, definitivamente debo mantener el valor también en el origen que es la dirección, de lo contrario, me faltarían costos y eventuales cuentas de resultados serían inexactas.
 :::
 
-- **PER DIVISIONE**: andiamo ad abilitare la possibilità di far filtrare i dati d’origine da ripartire sulla base della divisione impostata nel campo successivo.
+- **per divisione**: habilitamos la posibilidad de filtrar los datos de origen a distribuir en base a la división establecida en el campo siguiente.
 
 :::tip nota
-In tema di divisione, è altresì interessante notare che è potenzialmente possibile definire driver che operano una riattribuzione di costi/ricavi da una divisione all'altra: è necessario che l’azienda lavori su più divisioni e che abbia attivato il *Parametro generale* di *gestione centri per divisione*.
+En lo que respecta a la división, es también interesante notar que es potencialmente posible definir controladores que llevan a cabo una redistribución de costos/ingresos de una división a otra: es necesario que la empresa opere en múltiples divisiones y que haya activado el *Parámetro general* de *gestión de centros por división*.
 :::
 
-## PARTICOLARITA' PER DIMENSIONE PROGETTO/COMMESSA
+## PARTICULARIDADES PARA DIMENSIÓN DE PROYECTO/ENCARGO
 
-Spostiamo ora l’attenzione di campi legati ai driver di progetto/commessa. Innanzi tutto vediamo gli ultimi tre campi in griglia.
+Cambiamos ahora la atención a los campos relacionados con los controladores de proyecto/encargo. Primero, veamos los últimos tres campos en la cuadrícula.
 
-- **TIPO MISURAZIONE**: in questo campo dobbiamo impostare qual è l'indice di costo (la tariffa) da utilizzare per valorizzare il centro associato al cost driver. Le opzioni disponibili sono
-    - *UM1*: si utilizzerà l'indice legato alla prima unità di misura del centro
-    - *UM2*: si utilizzerà l'indice legato alla seconda unità di misura del centro
-    - *%*: si utilizzerà l'indice percentuale del centro
+- **tipo misurazione**: en este campo debemos establecer cuál es el índice de costo (la tarifa) a utilizar para valorar el centro asociado al controlador de costos. Las opciones disponibles son:
+    - *UM1*: se utilizará el índice relacionado a la primera unidad de medida del centro.
+    - *UM2*: se utilizará el índice relacionado a la segunda unidad de medida del centro.
+    - *%*: se utilizará el índice porcentual del centro.
 
-- **AREA PER INDICE**: in questo campo possiamo dire in che *Area* ricercare l'indice di costo precedente: in sostanza, per la dimensione progetti possiamo indicare un’area specifica dal quale leggere gli indici, indipendentemente dall’area selezionata per l'*Elaborazione consuntivo di progetto*
+- **area per indice**: en este campo podemos especificar en qué *Área* buscar el índice de costo anterior: en esencia, para la dimensión de proyectos podemos indicar un área específica desde la cual leer los índices, independientemente del área seleccionada para el *Elaboración de resultados de proyectos*.
 
-- **TIPO DI CALCOLO DELL'INDICE**: in questo campo posso definire come calcolare l'indice, secondo queste opzioni:
-    - *Mese*: si utilizzerà l'indice puntuale del singolo mese
-    - *Fino a periodo*: si utilizzerà un indice calcolato con i dati cumulati dall'inizio dell'anno che si sta elaborando
-    - *Anno mobile*: si utilizzerà un indice calcolato con i dati cumulati dai 12 mesi precedenti al singolo periodo in elaborazione
-    - *Anno*: si utilizzerà un indice calcolato con i dati cumulati di tutti i mesi disponibili nell'anno che si sta elaborando
-    - *Tariffa standard*: si utilizzerà la tariffa standard del centro, valida per il singolo periodo che si sta elaborando
+- **tipo di calcolo dell'indice**: en este campo puedo definir cómo calcular el índice, según estas opciones:
+    - *mese*: se utilizará el índice puntual del mes individual.
+    - *fino a periodo*: se utilizará un índice calculado con los datos acumulados desde el inicio del año que se está procesando.
+    - *anno mobile*: se utilizará un índice calculado con los datos acumulados de los 12 meses anteriores al período individual que se está procesando.
+    - *anno*: se utilizará un índice calculado con los datos acumulados de todos los meses disponibles en el año que se está procesando.
+    - *tariffa standard*: se utilizará la tarifa estándar del centro, válida para el período individual que se está procesando.
 
-- **TIPI DI DISTRIBUZIONE** specifici di progetto/commessa: innanzi tutto, il driver prevede sempre dei centri di destinazione, ma per una dimensione progetti avremo non solo questi centri 'di progetto' ma anche lo specifico progetto collegato ad essi. Il riferimento è alla possibilità di avere un unico *centro di progetto* (tramite il flag *Centro di default per i progetti*), che sarà quindi l'unico inserito come destinatario del driver, piuttosto che utilizzare la tabella *Associazione centri/commesse* tramite la quale collegare una lista di codici di centro a seconda di determinate caratteristiche dei progetti. Questa ultima possibilità consente, potenzialmente, di avere driver differenti su tipi di progetto differente (perché ad esempio si hanno strutture di costo differenti a seconda del tipo di progetto). Nel dettaglio, i tipi di distribuzione sono:
+- **TIPOS DE DISTRIBUCIÓN** específicos de proyecto/encargo: en primer lugar, el controlador siempre prevé centros de destino, pero para una dimensión de proyectos tendremos no solo estos centros 'de proyecto' sino también el proyecto específico vinculado a ellos. La referencia es a la posibilidad de tener un único *centro de proyecto* (mediante el flag *Centro de default para los proyectos*), que será el único insertado como destinatario del controlador, en lugar de utilizar la tabla *Asociación centros/encargos* a través de la cual vincular una lista de códigos de centro según ciertas características de los proyectos. Esta última posibilidad permite, potencialmente, tener controladores diferentes en tipos de proyecto diferentes (porque, por ejemplo, se tienen estructuras de costo diferentes según el tipo de proyecto). En detalle, los tipos de distribución son:
 
-    - **13 Reversione su produzione per progetto**: si leggerà l’indice di costo (per la UM1 o 2, area e tipo calcolo impostato) del centro del driver e lo valorizzererà sulle ore lavorate dal centro sui progetti/commesse associati ai Cdc in basso a sinistra.
-    - **14 Reversione margini per progetto**: si leggerà l'indice di costo (%) del centro del driver e lo valorizzererà sui margini dei progetti/commesse associati ai Cdc in basso a sinistra.
-    - **15 Reversione ammortamenti specifici per progetto**: si cercheranno i costi unitari degli ammortamenti tecnici del controlling del singolo cespite e si moltiplicheranno per le quantità che il cespite ha prodotto sul singolo progetto/commessa associati ai Cdc in basso a sinistra.
-    - **16 Reversione sui ricavi di progetto**: si leggerà l'indice di costo (%) del centro del driver e lo valorizzererà sui ricavi dei progetti/commesse associati ai Cdc in basso a sinistra, eventualmente filtrando i dati sui conti indicati nella griglia di destra.
-    - **17 Reversione sui costi di progetto**: si leggerà l'indice di costo (%) del centro del driver e lo valorizzererà sui costi dei progetti/commesse associati ai Cdc in basso a sinistra, eventualmente filtrando i dati sui conti indicati nella griglia di destra.
-    - **18 Reversione su costo industriale di progetto**: in questo caso l'indice percentuale sarà applicato al costo industriale calcolato, progetto per progetto, tramite i tipi di *origine dati* configurati nella griglia di destra. Possiamo quindi indicare *Materiali*, *Lavorazioni interne*, *Lavorazioni esterne* e magari gli importi di determinati sottoconti prelevati dall'origine *Contabile*
+    - **13 Reversión sobre producción por proyecto (Reversione su produzione per progetto)**: se leerá el índice de costo (para la UM1 o 2, área y tipo de cálculo establecidos) del centro del controlador y se valorizará sobre las horas trabajadas del centro en los proyectos/encargos asociados a los CDC en la parte inferior izquierda.
+    - **14 Reversión de márgenes por proyecto (Reversione margini per progetto)**: se leerá el índice de costo (%) del centro del controlador y se valorizará sobre los márgenes de los proyectos/encargos asociados a los CDC en la parte inferior izquierda.
+    - **15 Reversión de amortizaciones específicas por proyecto (Reversione ammortamenti specifici per progetto)**: se buscarán los costos unitarios de las amortizaciones técnicas del controlling del activo individual y se multiplicarán por las cantidades que el activo ha producido en el proyecto/encargo individual asociados a los CDC en la parte inferior izquierda.
+    - **16 Reversión sobre ingresos de proyecto (Reversione sui ricavi di progetto)**: se leerá el índice de costo (%) del centro del controlador y se valorizará sobre los ingresos de los proyectos/encargos asociados a los CDC en la parte inferior izquierda, filtrando los datos sobre las cuentas indicadas en la cuadrícula de la derecha, si es necesario.
+    - **17 Reversión sobre costos de proyecto (Reversione sui costi di progetto)**: se leerá el índice de costo (%) del centro del controlador y se valorizará sobre los costos de los proyectos/encargos asociados a los CDC en la parte inferior izquierda, filtrando los datos sobre las cuentas indicadas en la cuadrícula de la derecha, si es necesario.
+    - **18 Reversión sobre costo industrial de proyecto (Reversione su costo industriale di progetto)**: en este caso, el índice porcentual se aplicará al costo industrial calculado, proyecto por proyecto, mediante los tipos de *origen de datos* configurados en la cuadrícula de la derecha. Podemos entonces indicar *Materiales*, *Trabajos internos*, *Trabajos externos* y quizás los importes de determinadas subcuentas extraídos de la *Contabilidad*.
 
 :::tip Nota
-Se dobbiamo valorizzare il centro della carpenteria, che è un centro di produzione, sui progetti in lavorazione nel periodo ad esempio, dovrò avere un driver che prende quel costo e me lo ribalta magari per *Reversione su produzione per progetto*: andrò quindi a leggere i dati ripresi dalla produzione, progetto per progetto, quanto è stato lavorato da questo centro, sulla base del tipo di misurazione del centro (cioè la UM1 o UM2 per centri produttivi). L’indice percentuale, invece, tipicamente lo andremo ad utilizzare quando il criterio di distribuzione è legato ai costi/ricavi/margini di progetto.
+Si debemos valorar el centro de carpintería, que es un centro de producción, sobre los proyectos en trabajo en el período, por ejemplo, deberé tener un controlador que tome ese costo y me lo redistribuya tal vez por *Reversión sobre producción por proyecto*: iré entonces a leer los datos tomados de la producción, proyecto por proyecto, cuánto se ha trabajado desde este centro, sobre la base del tipo de medida del centro (es decir, la UM1 o UM2 para centros productivos). El índice porcentual, en cambio, típicamente lo utilizaremos cuando el criterio de distribución esté relacionado con costos/ingresos/márgenes de proyecto.
 :::

@@ -1,24 +1,24 @@
 ---
-title: Tipi ammortamenti fiscali/oggettivi
+title: Tipos de amortización fiscal/objetiva (Tipi ammortamenti fiscali/oggettivi)
 sidebar_position: 26
 ---
 
-La tabella permette di definire delle tipologie di ammortamento fiscali (o extracontabili) al fine di dare libertà nel calcolare extra-contabilmente ammortamenti a fini alternativi. 
+La tabla permite definir tipos de amortización fiscales (o extracontables) con el fin de dar libertad para calcular extracontablemente los amortizaciones con fines alternativos.
 
-:::note Attenzione
-Per il modulo *controlling* è stata sviluppata una nuova funzionalità specifica (creando un tab apposito all'interno della scheda cespite). 
+:::note Atención (Attenzione)
+Para el módulo *controlling*, se ha desarrollado una nueva funcionalidad específica (creando una pestaña especial dentro de la ficha del activo). 
 ::: 
 
-La presente funzionalità rimane attiva (anche per retro-compatibilità) nel modulo amministrazione, e potrebbe in futuro essere arricchita di ulteriori funzionalità utili ai fini fiscali.
+La presente funcionalidad permanece activa (también por retrocompatibilidad) en el módulo de administración, y podría ser enriquecida en el futuro con más funcionalidades útiles para fines fiscales.
 
-**Tipo**: codice identificativo del tipo di ammortamento oggettivo.
+**tipo**: código identificativo del tipo de amortización objetiva.
 
-**Descrizione**: descrizione del tipo di ammortamento oggettivo.
+**descrizione**: descripción del tipo de amortización objetiva.
 
-**Oper. incrementali**: flag di gestione come ‘incrementali' anche per i dati oggettivi (si rimanda all'omonimo flag della categoria cespite).
+**oper. incrementali**: indicador de gestión como ‘incrementales' también para los datos objetivos (se remite al homónimo indicador de la categoría de activo).
 
-**Calcolo giorni d'uso**: flag di calcolo per giorni d'uso che andrà a calcolare effettivamente i giorni d'utilizzo del cespite nell'anno invece che utilizzare tutto l'esercizio come per il calcolo normale.
+**Cálculo de días de uso (Calcolo giorni d'uso)**: indicador de cálculo para días de uso que calculará efectivamente los días de utilización del activo en el año en lugar de usar todo el ejercicio como para el cálculo normal.
 
-**Perc**.: la percentuale standard da applicare.
+**perc**: el porcentaje estándar a aplicar.
 
-**Perc. fissa**: con tale flag attivo la percentuale sarà fissa senza possibilità di personalizzarla cespite per cespite.
+**Perc. fija (Perc. fissa)**: con este indicador activo, el porcentaje será fijo sin posibilidad de personalizarlo activo por activo.

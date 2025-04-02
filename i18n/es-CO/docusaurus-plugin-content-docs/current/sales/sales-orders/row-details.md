@@ -1,29 +1,29 @@
 ---
-title: Dettaglio righe Ordini cliente
+title: Detalle de líneas de pedidos de clientes (Dettaglio righe Ordini cliente)
 sidebar_position: 4
 ---
 
-Questa maschera è una griglia che presenta in ogni riga un articolo presente in un ordine cliente, insieme ad una serie di informazioni circa la riga articolo e l'ordine cliente di appartenenza.     
-La griglia consente di visualizzare, selezionare e modificare diverse informazioni attraverso i pulsanti nella barra degli strumenti.     
-La prima colonna della griglia è una casella di selezione. Utilizzando questa casella, l'utente può selezionare una o più righe per applicare le operazioni disponibili nella barra degli strumenti:
+Esta máscara es una cuadrícula que presenta en cada línea un artículo presente en un pedido de cliente, junto con una serie de informaciones sobre la línea del artículo y el pedido de cliente al que pertenece.  
+La cuadrícula permite visualizar, seleccionar y modificar diversas informaciones a través de los botones en la barra de herramientas.  
+La primera columna de la cuadrícula es una casilla de selección. Usando esta casilla, el usuario puede seleccionar una o más líneas para aplicar las operaciones disponibles en la barra de herramientas:
 
-**Evasione Forzata**      
-Permette di forzare l'evasione delle righe selezionate; questa operazione inserirà il flag *Evaso forzato* nelle righe ordine.
+**Cumplimiento Forzado (Evasione Forzata)**  
+Permite forzar el cumplimiento de las líneas seleccionadas; esta operación insertará el indicador *Cumplido Forzado (Evaso forzato)* en las líneas del pedido.
 
-**Modifica Prezzi**     
-Consente di modificare il prezzo unitario per le righe selezionate; viene aperto un pop-up in cui inserire il prezzo.
+**modifica prezzi**  
+Permite modificar el precio unitario para las líneas seleccionadas; se abre un pop-up en el que se puede ingresar el precio.
 
-**Modifica Consegna**     
-Permette di cambiare la data di consegna per le righe selezionate.
+**modifica consegna**  
+Permite cambiar la fecha de entrega para las líneas seleccionadas.
 
-**Modifica Note**     
-Abilita l'utente a inserire nuove note relative alle righe selezionate; viene aperto un pop-up in cui inserire la nota e nel quale è presente un flag che permette di decidere se cancellare o mantenere le note preesistenti.
+**modifica note**  
+Habilita al usuario a ingresar nuevas notas relacionadas con las líneas seleccionadas; se abre un pop-up en el que se puede ingresar la nota y en el que hay un indicador que permite decidir si eliminar o mantener las notas preexistentes.
 
-**Modifica Quantità**      
-Consente di modificare la quantità ordinata per gli articoli selezionati.
+**modifica quantità**  
+Permite modificar la cantidad ordenada para los artículos seleccionados.
 
-**Modifica Listino Prezzi**      
-Permette di cambiare il listino prezzi applicato alla riga selezionata; viene aperto un pop-up in cui ricercare il listino da assegnare all'articolo.       
+**modifica listino prezzi**  
+Permite cambiar la lista de precios aplicada a la línea seleccionada; se abre un pop-up en el que se busca la lista a asignar al artículo.  
 
-**Proprietà Evasione**     
-Fornisce l'accesso alla maschera *Stato evasione*, in cui consultare i dettagli di evasione dei vari articoli. 
+**proprietà evasione**  
+Proporciona acceso a la máscara *stato evasione*, donde se pueden consultar los detalles de cumplimiento de los diversos artículos.

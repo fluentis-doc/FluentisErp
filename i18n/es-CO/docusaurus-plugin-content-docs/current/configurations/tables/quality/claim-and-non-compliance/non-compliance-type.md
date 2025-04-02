@@ -1,59 +1,59 @@
 ---
-title: Tipi di non conformità
+title: tipi di non conformità
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Tipi di non conformità**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Reclamaciones y No conformidades > tipi di non conformità**.
 
-In questa tabella è possibile codificare i *Tipi di non conformità*.   
-Il *Tipo di non conformità* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco della *Non conformità*.
-Alcuni esempi di utilizzo di *Tipi di non conformità* li troviamo nelle gestioni:
-> **Non conformità** - nei *dati di testata*;   
-> **Parametri Reclami e Non conformità** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzata la *Non conformità*.
+En esta tabla es posible codificar los *tipi di non conformità*.  
+El *Tipo de no conformidad* es parte integral, junto con el *Año* y *Número*, del código único de la *No conformidad*.  
+Algunos ejemplos de uso de los *tipi di non conformità* los encontramos en las gestiones:  
+> **non conformità** - en los *dati di testata*;  
+> **parametri reclami e non conformità** - en la pestaña *generale*;  
+y en todas las gestiones donde se utiliza la *No conformidad*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi di non conformità**
+**Búsqueda de tipi di non conformità (Ricerca Tipi di non conformità)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Tipi di non conformità**
+**Inserción de tipi di non conformità (Inserimento Tipi di non conformità)**
 
-Per poter inserire nuovi *Tipi di non conformità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi di non conformità*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-## Tipi di non conformità
+## tipi di non conformità (Tipi di non conformità)
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi di non conformità*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo di non conformità**
->> **Codice**: è il codice del *Tipo di non conformità*.   
->> **Descrizione**: è la descrizione del *Tipo di non conformità*.
+Es la lista donde se ingresan las principales informaciones de los *tipi di non conformità*.  
+La lista se compone de la siguiente información:  
+> **tipo di non conformità**  
+>> **codice**: es el código del *Tipo de no conformidad*.  
+>> **descrizione**: es la descripción del *Tipo de no conformidad*.  
 >   
-> **Utilizzo in**
->> **Non conformità interne**: indica l'attivazione della *Funzione/Area/Reparto* come soggetto destinatario della *Non conformità*.   
->> **Non conformità a fornitore**: indica l'attivazione del *Fornitore* come soggetto destinatario della *Non conformità*.   
->> **Non conformità a cliente**: indica l'attivazione del *Cliente* come soggetto destinatario della *Non conformità*.   
+> **utilizzo in**  
+>> **non conformità interne**: indica la activación de la *funzione/area/reparto* como sujeto destinatario de la *No conformidad*.  
+>> **non conformità a fornitore**: indica la activación del *fornitore* como sujeto destinatario de la *No conformidad*.  
+>> **non conformità a cliente**: indica la activación del *cliente* como sujeto destinatario de la *No conformidad*.  
 >   
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.
->> **Oggetto**: è il tipo di oggetto sulla quale si basa la *Numerazione*.
+> **numerazione**  
+>> **codice**: es el código de la *Numeración*.  
+>> **descrizione**: es la descripción de la *Numeración*.  
+>> **oggetto**: es el tipo de objeto sobre el cual se basa la *Numeración*.  
 >   
-> **Tipo fattura**
->> **Codice**: è il codice del *Tipo fattura* che viene utilizzato per la *Valorizzazione* della *Non conformità* per la creazione delle *Note di addebito*.   
->> **Descrizione**: è la descrizione del *Tipo fattura*.
+> **tipo fattura**  
+>> **codice**: es el código del *Tipo de factura* que se utiliza para la *valorizzazione* de la *No conformidad* para la creación de las *Notas de cargo (Note di addebito)*.  
+>> **descrizione**: es la descripción del *Tipo de factura*.  
 >   
-> **Tipo IVA**
->> **Codice**: è il codice del *Tipo IVA* che viene utilizzato per la *Valorizzazione* della *Non conformità* per la creazione delle *Note di addebito* qualora il soggetto destinatario *Fornitore* o *Cliente* ne fosse sprovvisto.   
->> **Descrizione**: è la descrizione del *Tipo IVA*.
+> **tipo iva**  
+>> **codice**: es el código del *Tipo de IVA* que se utiliza para la *valorizzazione* de la *No conformidad* para la creación de las *Notas de cargo (Note di addebito)* en caso de que el sujeto destinatario *fornitore* o *cliente* no lo tuviera.  
+>> **descrizione**: es la descripción del *Tipo de IVA*.  
 >   
-> **Note**: annotazioni libere.
+> **note**: anotaciones libres.
 
-### Attributi Tipo di non conformità
+### Atributos de Tipo de no conformidad (Attributi Tipo di non conformità)
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di non conformità*.   
-Questi *Extra data* vengono ereditati nelle *Non conformità* di quella determinata tipologia.   
+Es posible insertar datos adicionales [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para el *Tipo de no conformidad*.  
+Estos *Datos adicionales* se heredan en las *No conformidades* de esa determinada tipología.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

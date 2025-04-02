@@ -1,23 +1,23 @@
 ---
-title: Valorizzazione Interventi
+title: valorizzazione interventi
 sidebar_position: 1
 ---
 
-Questa procedura permette di fatturare gli Interventi che si trovano in uno stato di **Controllato**. Nell’area di **Filtro** è possibile andare ad impostare una serie di filtri per poter ricercare in modo più mirato gli interventi presenti a sistema.
+Este procedimiento permite facturar las Intervenciones que se encuentran en un estado de **controllato**. En el área de **Filtro**, es posible establecer una serie de filtros para poder buscar de manera más específica las intervenciones presentes en el sistema.
 
-Una volta inseriti i filtri, basterà cliccare Ricerca nella ribbon bar per far comparire i risultati nella griglia sottostante. Per valorizzare un Intervento, basterà selezionarlo e cliccare Valorizza nella ribbon bar.
-È possibile impostare dei **Parametri** per la valorizzazione nella relativa tab: è possibile scegliere l’Inserimento di fattura di interventi di anno, tipo e/o cambi diversi (ricordiamo che l’anagrafica deve avere il flag **Raggruppa per progetto** per permettere che interventi e fatture vengano separati in funzione del progetto); è possibile scegliere se mantenere i pagamenti degli interventi oppure ripristinare quelli di anagrafica; è possibile scegliere se raggruppare le scadenze; è possibile inserire dei riferimenti, ecc. 
-Ricordiamo che nella tabella [Tipi intervento](/docs/configurations/tables/project-management/intervention-type/) è necessario indicare un Tipo fattura corrispondente affinchè la procedura possa andare a buon fine.
+Una vez introducidos los filtros, basta con hacer clic en Buscar (Ricerca) en la barra de menú para que aparezcan los resultados en la cuadrícula de abajo. Para valorar una intervención, simplemente selecciónala y haz clic en Valorar (Valorizza) en la barra de menú.  
+Es posible establecer algunos **parametri** para la valoración en la pestaña correspondiente: se puede elegir la Inserción de factura de intervenciones de año, tipo y/o cambios diferentes (recordemos que el registro debe tener activado el indicador **raggruppa per progetto** para permitir que las intervenciones y facturas sean separadas según el proyecto); se puede elegir si mantener los pagos de las intervenciones o restablecer los de registro; se puede elegir si agrupar los vencimientos; se pueden insertar referencias, etc.  
+Recordemos que en la tabla [Tipos de intervención (Tipi intervento)](/docs/configurations/tables/project-management/intervention-type/) es necesario indicar un Tipo de factura correspondiente para que el procedimiento pueda completarse con éxito.
 
-Le condizioni affinchè un intervento venga visualizzato sono le seguenti: 
-    nel tipo intervento dev'essere indicato il Tipo Fattura
-    lo stato dell'intervento dev'essere "controllato" oppure "parzialmente fatturato"
-    le righe nell'invoice plan dell'intervento devono avere indicato il codice iva
-    
-Nella tab **Riepiloghi** è possibile consultare i risultati della valorizzazione, premendo **Ricerca** nella ribbon bar. Selezionano una riga di risultato, sarà possibile visualizzare l’**Intervento** e la **Fattura di vendita** generata. I pulsanti specifici della ribbon bar sono:
+Las condiciones para que una intervención sea visible son las siguientes:  
+- en el tipo de intervención debe estar indicado el Tipo de Factura;  
+- el estado de la intervención debe ser "controlado" o "parcialmente facturado";  
+- las líneas en el plan de facturación de la intervención deben tener indicado el código IVA.  
 
-![](/img/neutral/common/preview.png) Anteprima esito: permette di visualizzare un’anteprima della fattura generata;
+En la pestaña **riepiloghi**, es posible consultar los resultados de la valoración, presionando **ricerca** en la barra de menú. Seleccionando una fila de resultado, será posible visualizar la **Intervención** y la **Factura de venta** generada. Los botones específicos de la barra de menú son:
 
-![](/img/neutral/common/execute-restore.png) Ripristino valorizzazione: esegue il Rollback della valorizzazione;
+![](/img/neutral/common/preview.png) Vista previa de resultado: permite visualizar una vista previa de la factura generada;  
 
-![](/img/neutral/common/rollback.png) Ripristino fattura: esegue il Rollback della singola fattura selezionata.
+![](/img/neutral/common/execute-restore.png) Restablecimiento de valoración: ejecuta el revertir (Rollback) de la valoración;  
+
+![](/img/neutral/common/rollback.png) Restablecimiento de factura: ejecuta el revertir (Rollback) de la factura seleccionada.

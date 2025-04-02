@@ -1,5 +1,5 @@
 ---
-title: Utenti responsabili cliente
+title: utenti responsabili cliente
 ---
 
-In questa scheda è possibile collegare gli utenti o i ruoli (definiti in Arm) responsabili del cliente
+En esta pestaña es posible vincular a los usuarios o roles (definidos en Arm) responsables del cliente.

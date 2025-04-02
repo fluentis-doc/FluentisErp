@@ -1,26 +1,24 @@
 ---
-title: Liste di Distribuzione
-sidebar_label: Liste di Distribuzione
+title: liste di distribuzione
+sidebar_label: liste di distribuzione (Liste di Distribuzione)
 sidebar_position: 0
 ---
 
-La funzionalità di Supervisor riguardante le **Liste di Distribuzione** permette di definire delle liste contenenti una serie di contatti, identificati da campi obbligatori e/o facoltativi:
-- Nome
-- Cognome
-- Username in Fluentis
-- <mark>Email (campo obbligatorio)</mark>
-- Indirizzo civico
-- Città
-- Provincia
-- Partita Iva
-- Sito Web
-- Note
+La funcionalidad de Supervisor relacionada con las **liste di distribuzione** permite definir listas que contienen una serie de contactos, identificados por campos obligatorios y/o opcionales:  
+- Nombre (Nome)  
+- Apellido (Cognome)  
+- Nombre de usuario en Fluentis (Username in Fluentis)  
+- <mark>Correo electrónico (campo obligatorio) (Email (campo obbligatorio))</mark>  
+- Dirección (Indirizzo civico)  
+- Ciudad (Città)  
+- Provincia (Provincia)  
+- Número de identificación fiscal (Partita Iva)  
+- Sitio web (Sito Web)  
+- Notas (Note)  
 
-Queste liste si rivelano molto utili nell'invio massivo di Email da **Supervisor**, permettendo di operare un invio multiplo ad ogni destinatario incluso nella lista.  
-La form Liste di Distribuzione si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Liste di Distribuzione**.
+Estas listas resultan muy útiles para el envío masivo de correos electrónicos desde **Supervisor**, permitiendo realizar un envío múltiple a cada destinatario incluido en la lista.  
+El formulario liste di distribuzione se abre desde el menú complementario **strumenti** > **Fluentis Supervisor** > **liste di distribuzione**.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor16.png)
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
-
-
+Algunas de las funcionalidades dentro del formulario se refieren a un uso estándar. Para cualquier detalle sobre el uso de este formulario no especificado aquí, consulte este [artículo (articolo)](/docs/guide/common).

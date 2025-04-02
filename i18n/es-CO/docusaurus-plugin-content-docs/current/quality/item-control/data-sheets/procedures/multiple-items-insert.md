@@ -1,53 +1,49 @@
 ---
-title: Inserimento massivo articoli
+title: inserimento massivo articoli
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Procedure > Inserimento massivo articoli**
+La gestión se encuentra en la ruta **inserimento massivo articoli**.
 
-
-:::important A cosa serve
-Questa procedura permette di assegnare massivamente gli *Articoli* alle *Schede tecniche*.
-Per poter usufruire della funzione di *Inserisci* è necessario:
-- dal tabulatore **Articolo** scegliere gli *Articoli* da assegnare;  
-- dal tabulatore **Schede tecniche** scegliere le *Schede tecniche*;      
-- cliccare il pulsante **Inserisci**.   
+:::important ¿Para qué sirve? (A cosa serve)
+Este procedimiento permite asignar masivamente los *Artículos* a las *Fichas técnicas*.  
+Para poder utilizar la función de *Insertar* es necesario:  
+- en la pestaña **Artículo** seleccionar los *Artículos* a asignar;  
+- en la pestaña **Fichas técnicas** elegir las *Fichas técnicas*;  
+- hacer clic en el botón **Insertar**.  
 :::
 
+## Artículos (Articoli) 
 
-## Articoli   
+En esta pestaña es posible buscar y seleccionar los *artículos* que se desea insertar masivamente en las *Fichas técnicas* y que son seleccionables en la pestaña homónima.  
+La sesión se compone de un área de filtro y una de resultados. Una vez que se hayan configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca articoli** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-In questo tabulatore è possibile ricercare e selezionare gli *articoli* che si desidera inserire massivamente nelle *Schede tecniche* e selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca articoli** per visualizzare i risultati all'interno della griglia di risultato.    
+*Botones específicos*:  
 
-*Pulsanti specifici*:   
+### ![](/img/neutral/common/search.png) Buscar artículos (Ricerca articoli)
+Con base en el filtro configurado se visualizan los resultados dentro de la cuadrícula de resultados.  
+### ![](/img/neutral/common/duplicate.png) Elegir fichas (Scegli schede)
+Al presionar el botón, se posiciona automáticamente en la pestaña **schede tecniche**.  
 
-### ![](/img/neutral/common/search.png) Ricerca articoli
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli schede
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Schede tecniche**.   
+## Fichas técnicas (Schede tecniche)   
 
+En esta pestaña es posible buscar y seleccionar las *Fichas técnicas* a las que se desea insertar masivamente los *Artículos* seleccionables en la pestaña homónima.  
+La sesión se compone de un área de filtro y una de resultados. Una vez que se hayan configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca schede** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-## Schede tecniche   
+*Botones específicos*:  
 
-In questo tabulatore è possibile ricercare e selezionare le *Schede tecniche* a cui si desidera inserire massivamente gli *Articoli* selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca Schede** per visualizzare i risultati all'interno della griglia di risultato.    
+### ![](/img/neutral/common/search.png) Buscar Fichas (Ricerca Schede)
+Con base en el filtro configurado se visualizan los resultados dentro de la cuadrícula de resultados.  
+### ![](/img/neutral/common/duplicate.png) Elegir artículos (Scegli articoli)
+Al presionar el botón, se posiciona automáticamente en la pestaña **articoli**.  
+### ![](/img/neutral/common/execute.png) Insertar (Inserisci)
+Los *Artículos* seleccionados se asociarán a las *Fichas técnicas* seleccionadas en sus respectivas pestañas con la información indicada en la pestaña *Parámetros*.  
 
-*Pulsanti specifici*:   
+## Parámetros (Parametri)
 
-### ![](/img/neutral/common/search.png) Ricerca Schede
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli articoli
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Articoli**.   
-### ![](/img/neutral/common/execute.png) Inserisci
-Gli *Articoli* selezionati verranno associati alle *Schede tecniche* selezionate nei rispettivi tabulatori con le informazioni indicate nel tabulatore *Parametri*.   
+En esta pestaña es posible indicar algunas información que se propondrá al insertar los *Artículos* en las *Fichas técnicas*.  
+En la pestaña se puede introducir:  
+> **tipo dichiarazione in articoli**: es el *Tipo de declaración* utilizado para elegir el grupo de *Declaraciones* que se imprimirán.  
+> **note**: anotaciones libres.  
 
-
-## Parametri
-
-In questo tabulatore è possibile indicare alcune informazioni che verranno proposte all'inserimento degli *Articoli* nelle *Schede tecniche*.   
-Nel tabulatore è possibile inserire:   
-> **Tipo dichiarazione in articoli**: è il *Tipo di dichiarazione* usata per il scegliere il gruppo di *Dichiarazioni* da riportare in stampa.   
-> **Note**: annotazioni libere.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

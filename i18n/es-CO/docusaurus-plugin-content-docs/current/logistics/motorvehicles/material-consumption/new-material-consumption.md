@@ -1,39 +1,39 @@
 ---
-title: Nuovo consumo materiali 
+title: Nuevo consumo de materiales (Nuovo consumo materiali)
 sidebar_position: 2
 ---
 
-La form si apre premendo il pulsante **Nuovo** presente nella form che si trova in **Logistica > Automezzi > Consumo materiali**.
+El formulario se abre presionando el botón **nuovo** presente en el formulario que se encuentra en **Logística > Vehículos > Consumo de materiales (Logistica > Automezzi > Consumo materiali)**.
 
-Questa form permette di creare e gestire un *documento di consumo materiali* realizzato appunto per il consumo dei materiali legato all'automezzo inserito. 
+Este formulario permite crear y gestionar un *documento de consumo de materiales* realizado precisamente para el consumo de los materiales vinculados al vehículo ingresado. 
 
-La form si presenta simile ad una registrazione di magazzino e i dati da inserire per la testata del documento sono i seguenti:
+El formulario se presenta similar a un registro de inventario, y los datos a ingresar para el encabezado del documento son los siguientes:
 
-**Automezzo**: indica l'automezzo per il quale vengono consumati i materiali; questo deve essere codificato in [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management);       
-**Numero**: permette di inserire manualemnte il numero del documento;       
-**Responsabile**: indica l'utente che ha creato il docuemnto e viene inserito automaticamente;         
-**Magazzino**: indica il magazzino in cui verrà effettuato il movimento;        
-**Causale**: indica la causale di magazzino can la quale verrà effettuato il movimento.        
+**automezzo**: indica el vehículo para el cual se consumen los materiales; este debe estar codificado en [Gestión de vehículos (Gestione automezzo)](/docs/logistics/motorvehicles/motorvehicle-management);  
+**numero**: permite ingresar manualmente el número del documento;  
+**responsabile**: indica el usuario que ha creado el documento y se ingresa automáticamente;  
+**magazzino**: indica el almacén en el que se realizará el movimiento;  
+**causale**: indica la causa de almacén con la cual se realizará el movimiento.  
 
-Successivamente è necessario inserire, nella griglia centrale **Elenco operazioni effettuate**, tutti gli articoli consumati compilando i campi:
+A continuación, es necesario ingresar, en la cuadrícula central **elenco operazioni effettuate**, todos los artículos consumidos completando los campos:
 
-> **Classe / Codice articolo / Descrizione articolo**: indica classe, codice e descrizione dell'articolo;          
-> **Unità di misura**: indica l'unità di misura dell'articolo;       
-> **Quantità**: indica la quantità dell'articolo;       
-> **Variante**: permette di inserire la variante dell'articolo;        
-> **Descrizione variante**: indica di inserire la variante dell'articolo;     
-> **Progetto**: indica il progetto associato all'articolo;         
-> **Descrizione**: indica la descrizione del progetto associato all'articolo.        
-    
-Inoltre, nella tabella sottostante è possibile inserire i lotti relativi all'articolo selezionato nella griglia principale.
+> **Clase / Código de artículo / Descripción del artículo (Classe / Codice articolo / Descrizione articolo)**: indica clase, código y descripción del artículo;  
+> **unità di misura**: indica la unidad de medida del artículo;  
+> **quantità**: indica la cantidad del artículo;  
+> **variante**: permite ingresar la variante del artículo;  
+> **descrizione variante**: indica la variante del artículo;  
+> **progetto**: indica el proyecto asociado al artículo;  
+> **descrizione**: indica la descripción del proyecto asociado al artículo.  
 
-*Campi specifici*: 
+Además, en la tabla inferior es posible ingresar los lotes relativos al artículo seleccionado en la cuadrícula principal.
 
-> **Numero lotti**: indica il numero del lotto;                 
-> **Codice lotto fornitore**: indica il codice lotti fornitore;         
-> **Data inizio**: indica la data inizio del lotto;      
-> **Data scadenza**: indica la data inizio del lotto;               
-> **Quantità**: indica la quantità del lotto;    
-> **Ubicazione**: indica il codice dell'ubicazione del lotto.  
+*Campos específicos (Campi specifici)*:  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **numero lotti**: indica el número del lote;  
+> **codice lotto fornitore**: indica el código de lote del proveedor;  
+> **data inizio**: indica la fecha de inicio del lote;  
+> **data scadenza**: indica la fecha de vencimiento del lote;  
+> **quantità**: indica la cantidad del lote;  
+> **ubicazione**: indica el código de la ubicación del lote.  
+
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

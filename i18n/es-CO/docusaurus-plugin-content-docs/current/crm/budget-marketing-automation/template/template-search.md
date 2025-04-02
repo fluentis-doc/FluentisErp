@@ -1,13 +1,13 @@
 ---
-title: Ricerca Template
+title: Búsqueda de Plantillas (Ricerca Template)
 sidebar_position: 1 
 ---
 
-La procedura del Template del documento permette di creare dei modelli di base per il corpo delle Newsletter che si intende inviare.
+El procedimiento del Template del documento permite crear modelos básicos para el cuerpo de los boletines informativos que se desean enviar.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
-In particolare è possibile filtrare sul **Nome del Template** e sul **Nome oggetto** su cui si basa il Template.
+El área de filtro es la dedicada a albergar la lista de posibles tipos de datos a través de los cuales se puede realizar una selección. Los filtros suelen estar en condición 'Y (AND)' y es posible especificar varios criterios de filtro al mismo tiempo.  
+En particular, se puede filtrar por **nome del template** y **nome oggetto** en el que se basa la Plantilla.

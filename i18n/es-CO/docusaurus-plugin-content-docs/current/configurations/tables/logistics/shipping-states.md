@@ -1,29 +1,29 @@
 ---
-title: Stati di spedizione
+title: Estados de envío (Stati di spedizione)
 sidebar_position: 61
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stati di spedizione**.
+La tabla se encuentra en la ruta **Tablas > Logística > Estados de envío (Tabelle > Logistica > Stati di spedizione)**.
 
-In questa tabella è possibile codificare i *Stati di spedizione* che potranno essere selezionati nella [spedizioni](/docs/logistics/shipping/shippings-intro)
+En esta tabla es posible codificar los *Estados de envío (Stati di spedizione)* que podrán ser seleccionados en las [envíos (spedizioni)](/docs/logistics/shipping/shippings-intro).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Stati di spedizione**
+**Búsqueda de Estados de envío (Ricerca Stati di spedizione)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Stati di spedizione**
+**Inserción de Estados de envío (Inserimento Stati di spedizione)**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici  
+#### Campos específicos (Campi specifici)
 
-> **Codice**: è il codice del *Stato di spedizione*.   
-> **Descrizione**: è la descrizione del *Stato di spedizione*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo della riga presente nel [Filtro delle spedizioni](/docs/logistics/shipping/search-shippings). 
-> **Colore testo**: permette di definire il colore del testo della riga presente nel [Filtro delle spedizioni](/docs/logistics/shipping/search-shippings). 
-> **Voce del dizionario**: permette di definire la *Voce del dizionario*.   
+> **codice**: es el código del *Estado de envío (Stato di spedizione)*.  
+> **descrizione**: es la descripción del *Estado de envío (Stato di spedizione)*.  
+> **colore di sfondo**: permite definir el color de fondo de la fila presente en el [Filtro de envíos (Filtro delle spedizioni)](/docs/logistics/shipping/search-shippings).  
+> **colore testo**: permite definir el color del texto de la fila presente en el [Filtro de envíos (Filtro delle spedizioni)](/docs/logistics/shipping/search-shippings).  
+> **voce del dizionario**: permite definir la *voce del dizionario*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

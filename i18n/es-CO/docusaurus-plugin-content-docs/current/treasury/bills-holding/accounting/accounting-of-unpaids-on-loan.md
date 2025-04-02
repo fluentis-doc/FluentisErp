@@ -1,51 +1,48 @@
 ---
-title: Contabilizzazione Insoluti su cessione
+title: contabilizzazione insoluti su cessione
 sidebar_position: 6
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione insoluti su cessione
+El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de insolutos en cesión (Contabilizzazione insoluti su cessione).
 
-Da questa maschera si procede alla contabilizzazione degli insoluti girati in pagamento a fornitore: la procedura, secondo le impostazioni della causale contabile impostata, riaprirà le partite clienti associate ai titoli insoluti così come le partite fornitori chiuse con il giro del titolo.
+Desde esta máscara se procede a la contabilización de los insolutos girados en pago a proveedor: el procedimiento, de acuerdo con las configuraciones de la causa contable establecida, reabrirá las partidas de clientes asociadas a los títulos insolutos así como las partidas de proveedores cerradas con el giro del título.
 
+## Cómo contabilizar un insoluto en cesión (Come contabilizzare un insoluto su cessione)
 
-
-## Come contabilizzare un insoluto su cessione
-
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli insoluti da contabilizzare.
-2. Seleziona dalla griglia centrale gli insoluti che desideri contabilizzare.
-3. Compila la Tab parametri per la contabilizzazione, inserendo i dati quali la **Causale di contabilità**, la **data registrazione** e la **data competenza**.
+1. Utiliza la parte superior de la máscara para filtrar la búsqueda de los insolutos a contabilizar.
+2. Selecciona desde la cuadrícula central los insolutos que deseas contabilizar.
+3. Completa la pestaña de parámetros para la contabilización, ingresando datos como la **causale di contabilità**, la **data registrazione** y la **data competenza**.
 
 :::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+Esta sección puede ser predefinida dentro de los [**parámetros** (parametri)](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de efectos.
 :::
 
-Il flag **Spese di Rivalsa** andrà a gestire l'addebito delle spese sul conto cliente, rilevando il relativo ricavo secondo il sottoconto inserito nella maschera stessa (**Conto / sottoconto addebito spese al cliente**) .
+El indicador **spese di rivalsa** gestionará el cargo de los gastos en la cuenta del cliente, registrando el ingreso correspondiente según la subcuenta ingresada en la máscara (**Cuenta / subcuenta de cargo de gastos al cliente (Conto / sottoconto addebito spese al cliente)**).
 
-i sottoconti per le **Spese di protesto** e il conto **Transitorio** sono ripresi dai parametri del modulo, ma possono essere modificati o inseriti di volta in volta.
+Las subcuentas para los **spese di protesto** y la cuenta **Transitoria (Transitorio)** se toman de los parámetros del módulo, pero pueden ser modificadas o ingresadas en cada caso.
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione insoluti**.
+4. Presiona el botón en la barra de ribbon **contabilizzazione insoluti**.
 
-**Pulsanti specifici**
+**Botones específicos**
 
-**Ricerca**: Ricerca la lista degli insoluti da contabilizzare.
+**ricerca**: Busca la lista de los insolutos a contabilizar.
 
-**Contabilizza**: Esegue la contabilizzazione per le righe selezionate.
+**contabilizza**: Ejecuta la contabilización para las filas seleccionadas.
 
-### Tab Precedenti
+### Pestaña Anteriores (Tab Precedenti)
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Desde la pestaña *precedenti* es posible proceder a la anulación de las contabilizaciones ejecutadas.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+La anulación será posible solo si el periodo aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+Un doble clic en la sección de registros permitirá visualizar la contabilización relacionada.
 
-È presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+Hay una pestaña de detalle para visualizar los errores detectados durante la contabilización.
 
+**Botones específicos**
 
-**Pulsanti specifici**
+**ricerca**: Busca la lista de las contabilizaciones ejecutadas.
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+**ripristina contabilizzazione**: Ejecuta el restablecimiento de las contabilizaciones seleccionadas.
 
-**Ripristina contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
-
-**Ripristina insoluti**: Esegue il ripristino della registrazione contabile selezionata riferita al singolo insoluto.
+**Restaurar insolutos (Ripristina insoluti)**: Ejecuta el restablecimiento de la contabilización seleccionada referente al único insoluto.

@@ -1,70 +1,63 @@
 ---
-title: Contabilizzazione Insoluti
+title: contabilizzazione insoluti
 sidebar_position: 4
 ---
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione Insoluti
 
+El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > contabilizzazione insoluti (Contabilizzazione Insoluti).
 
-Da questa maschera si procede alla contabilizzazione insoluti: la procedura riapre le partite clienti associate agli effetti insoluti ed eventualmente genera una fattura di addebito spese.
+Desde esta máscara se procede a la contabilización de insolutos: el procedimiento reabre las cuentas de los clientes asociadas a los efectos insolutos y eventualmente genera una factura de cargo por gastos.
 
-**Pulsanti specifici**
+**Botones específicos**
 
-**Ricerca**: Ricerca la lista degli insoluti da contabilizzare.
+**ricerca**: Busca la lista de los insolutos a contabilizar.
 
-**Contabilizza**: Esegue la contabilizzazione per le righe selezionate.
+**contabilizza**: Realiza la contabilización para las líneas seleccionadas.
 
-## Come contabilizzare un insoluto
+## Cómo contabilizar un insoluto
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli insoluti da contabilizzare. ATTENZIONE: Occorre prima procedere alla loro creazione.
+1. Utiliza la parte superior de la máscara para filtrar la búsqueda de los insolutos a contabilizar. ATENCIÓN: es necesario proceder primero con su creación.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri contabilizzare 
+2. Selecciona de la cuadrícula central los efectos que deseas contabilizar. 
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità** e la **data registrazione**.
+3. Completa los parámetros para la contabilización, como la **causale di contabilità** y la **data registrazione**.
 
 :::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/unpaids-parameters) del modulo Insoluti. 
+Esta sección puede estar predefinida dentro de los [**parámetros**](/docs/configurations/parameters/treasury/unpaids-parameters) del módulo de Insolutos.
 
-In particolare:
+En particular:
 
-- la causale contabile viene proposta sulla base dei parametri del modulo, 
-- le date di registrazione sono proposte come data odierna; 
-- i sottoconti per le **Spese di protesto** e il conto **Transitorio** sono ripresi dai parametri del modulo, ma possono essere modificati o inseriti di volta in volta.
+- la causa contable se propone según los parámetros del módulo, 
+- las fechas de registro se proponen como la fecha actual; 
+- los subcuentas para los **spese di protesto** y la cuenta **Transitoria (Transitorio)** se toman de los parámetros del módulo, pero pueden ser modificadas o ingresadas en cada ocasión.
 
-Il flag **Contabilizzazione riepilogativa** rileva in un'unica registrazione tutti gli insoluti presentati sullo stesso istituto di credito (banca): normalmente questa opzione non viene sfruttata, in particolare se è stata inserita l'obbligatorietà della data e numero fattura nella causale contabile da utilizzare.
+El indicador **contabilizzazione riepilogativa** registra en una única anotación todos los insolutos presentados en el mismo banco: normalmente esta opción no se utiliza, particularmente si se ha establecido la obligatoriedad de la fecha y número de factura en la causa contable por utilizar.
 
-Il flag **Spese di rivalsa** impone la rilevazione del riaddebito spese al cliente: con questa opzione si attiverà (in basso) la sezione di gestione della fattura per queste spese, invece che registrarle direttamente in contabilità. In questa sezione tutti i campi dovranno essere impostati al fine di poter creare la fattura di vendita.
+El indicador **spese di rivalsa** impone el registro del recargo de gastos al cliente: con esta opción se activará (en la parte inferior) la sección de gestión de la factura para estos gastos, en lugar de registrarlos directamente en contabilización. En esta sección, todos los campos deben ser ajustados para poder crear la factura de venta.
 
-Infine resta da inserire: 
-- il **tipo di pagamento** e 
-- la **data scadenza** da assegnare per la riapertura della partita. In alternativa il flag **Data scadenza uguale alla data scadenza effetto** (andato insoluto)
+Finalmente, queda por insertar: 
+- el **tipo de pago (tipo di pagamento)** y 
+- la **data scadenza** que se asignará para la reapertura de la cuenta. Alternativamente, el indicador **Fecha de vencimiento igual a la fecha de vencimiento del efecto (Data scadenza uguale alla data scadenza effetto)** (que ha quedado insoluto).
 
-Anche in questo caso avviene la lettura dei parametri del modulo per la proposta di questi due dati.
- 
-4. Premi il bottone nella ribbon bar **Contabilizzazione**
+También en este caso se leen los parámetros del módulo para proponer estos dos datos.
 
-### Tab Precedenti
+4. Presiona el botón en la barra de herramientas **contabilizzazione**.
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+### Pestaña Anteriores
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+Desde la pestaña anterior es posible proceder a la anulación de las contabilizaciones realizadas. 
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no realizados). 
 
-E' presente un report di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+Un doble clic en la sección de registros permitirá visualizar la anotación contable relacionada. 
 
+Está disponible un informe para visualizar los errores detectados durante la contabilización.
 
+**Botones específicos**
 
+**ricerca**: Busca la lista de las contabilizaciones realizadas.
 
-**Pulsanti specifici**
+**rollback contabilizzazione**: Realiza la restauración de las contabilizaciones seleccionadas.
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+**Revertir insolutos (Rollback insoluti)**: Realiza la restauración de la anotación contable seleccionada.
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
-
-**Rollback insoluti**: Esegue il ripristino della registrazione contabile selezionata.
-
-E' presente una tab per visualizzare gli errori memorizzati in fase di contabilizzazione.
-
-
-
-
+Hay una pestaña para visualizar los errores almacenados durante el proceso de contabilización.

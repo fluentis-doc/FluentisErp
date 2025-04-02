@@ -1,20 +1,20 @@
 ---
-title: Duplica modelli
+title: Duplicar modelos (Duplica modelli)
 sidebar_position: 3
 ---
 
-E' possibile utilizzare dei filtri per ricercare i prototipi da cui si vuole partire per la duplicazione del nuovo prototipo che si vuole creare.
+Es posible utilizar filtros para buscar los prototipos de los cuales se desea partir para la duplicación del nuevo prototipo que se quiere crear.
 
-Una volta impostati i filtri e cliccato sul pulsante di **Ricerca**, nella griglia vengono visualizzati i risultati della ricerca.
+Una vez configurados los filtros y haciendo clic en el botón de **ricerca**, en la cuadrícula se mostrarán los resultados de la búsqueda.
 
-L'utente può selezionare un articolo presente nella griglia dei risultati, che diventerà l'articolo di partenza per la duplicazione ed andare ad inserire nella sezione presente a fondo pagina la classe, il codice, la versione ed eventualmente la variante dell'articolo sul quale si vuole copiare la distinta selezionata (società e divisione vengono impostati automaticamente uguali alla società e alla divisione in cui si sta lavorando).
+El usuario puede seleccionar un artículo presente en la cuadrícula de resultados, que se convertirá en el artículo de partida para la duplicación, y puede ingresar en la sección al final de la página la clase, el código, la versión y, eventualmente, la variante del artículo sobre el cual se desea copiar la lista seleccionada (la empresa y división se establecen automáticamente iguales a la empresa y división en la que se está trabajando).
 
-Si possono scegliere di impostare anche i flag **Materiali**, **Extra data**, **Fasi ciclo**, **Voci costo** e **Documenti allegati** che, se attivati, consentono di duplicare anche i relativi dati presenti nel prototipi di partenza.
+También se pueden elegir activar los indicadores **materiali**, **extra data**, **fasi ciclo**, **voci costo** y **documenti allegati** que, si se activan, permiten duplicar también los datos correspondientes presentes en los prototipos de partida.
 
-Una volta impostati tutti i dati cliccando sull'icona posta sulla ribbon bar chiamata **Duplica** si attiverà la procedura che genera, per l'articolo indicato, un prototipo esattamente identico a quello di partenza.
+Una vez configurados todos los datos, haciendo clic en el ícono que se encuentra en la barra de ribbon llamado **duplica**, se activará el procedimiento que genera, para el artículo indicado, un prototipo exactamente idéntico al de partida.
 
-*Pulsante specifico*:
+*Botón específico (Pulsante specifico)*:
 
-> **Duplica**: pulsante che attiva la procedura che consente di duplicare un assieme. 
+> **duplica**: botón que activa el procedimiento que permite duplicar un conjunto.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

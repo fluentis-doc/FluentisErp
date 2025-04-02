@@ -1,32 +1,32 @@
 ---
-title: Gestione Previsioni di vendita
+title: gestione previsioni di vendita
 sidebar_position: 2
 ---
 
-Questa funzione è raggiungibile da **Sales Forecast > Gestione previsioni di vendita**. Da qui è possibile visualizzare tutte le Previsioni di vendita già codificate e crearne di nuove. Analizziamo le caratteristiche di una Nuova Previsione di vendita.       
-         
-La testata è composta dai seguenti campi:       
-**Tipo previsione di vendita**: questo dato è estratto dalla tabella [Tipo previsione di vendita](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type) e assume un ruolo cruciale nell'indicare a Fluentis nei quali periodi è necessario suddividere la previsione di vendita. Attraverso l'associazione con il [Tipo periodo](/docs/configurations/tables/crm/sales-forecast/period-type) presente in questa tabella, Fluentis è in grado di determinare se la previsione deve essere suddivisa su base annuale, mensile, o in altre modalità specificate;         
-**Descrizione**: questo campo contiene una descrizione libera;      
-**Anno/Data/Numero**: questi campi vengono compilati automaticamente in base alla Numerazione associata e alla Data ordierna.     
+Esta función es accesible desde **Pronóstico de Ventas > Gestión de pronósticos de ventas (Sales Forecast > Gestione previsioni di vendita)**. Desde aquí es posible visualizar todos los Pronósticos de ventas ya codificados y crear nuevos. Analicemos las características de un Nuevo Pronóstico de ventas. 
 
-Nella prima griglia è consentito inserire le righe relative alla previsione di vendita. Utilizzando i pulsanti presenti nella barra degli strumenti, è possibile costruire una struttura ad albero, ad esempio, per suddivisione geografica. Inizialmente, si parte dal primo gruppo e successivamente si dettaglia la struttura secondo i livelli di suddivisione desiderati. Gli importi della seconda griglia possono essere compilati solo a livello di Dettaglio, ovvero dopo aver inserito l'ultimo livello dell'albero. Una volta inserito quest'ultimo livello, la seconda griglia si popolerà automaticamente, suddividendo le date in base al [Tipo periodo](/docs/configurations/tables/crm/sales-forecast/period-type) impostato. Quindi, sarà possibile popolare le Quantità e gli Importi dei vari periodi nella seconda griglia, permettendo così a Fluentis di  calcolare i totali e riportarli nella prima griglia.
+El encabezado está compuesto por los siguientes campos:  
+**tipo previsione di vendita**: este dato se extrae de la tabla [Tipo de pronóstico de ventas (Tipo previsione di vendita)](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type) y asume un papel crucial al indicar a Fluentis en qué períodos es necesario subdividir el pronóstico de ventas. A través de la asociación con el [Tipo de período (Tipo periodo)](/docs/configurations/tables/crm/sales-forecast/period-type) presente en esta tabla, Fluentis puede determinar si el pronóstico debe subdividirse de manera anual, mensual, o en otras modalidades especificadas;  
+**descrizione**: este campo contiene una descripción libre;  
+**Año/Fecha/Número (Anno/Data/Numero)**: estos campos se completan automáticamente en función de la Numeración asociada y de la Fecha actual.  
 
-Nella prima griglia, alcuni campi sono attivi se si inserisce un Gruppo, altri se si inserisce un Dettaglio, con gli appositi bottoni della barra degli strumenti.     
-Analizziamo i campi che si possono compilare se la riga è un Gruppo/Nodo:       
-**Progressivo gruppo**: ad ogni Gruppo viene assegnato un numero progressivo;      
-**Descrizione gruppo**: è possibile inserire una libera descrizione per ogni Gruppo;       
-**Zona**: ogni Gruppo può essere associato ad una Zona diversa;       
-**Operatore assegnato**: è necessario indicare l'Operatore responsabile della Previsione di vendita in questa Zona;       
-**Agente**: è possibile indicare un Agente responsabile delle vendite in questa Zona;      
-**Nota**: è un campo di note libero.        
-Analizziamo i campi che si possono inserire se la riga è un Dettaglio:         
-**Famiglia prodotti**: questo campo contiene la Famiglia articolo per la quale si sta creando la Previsione, con la relativa **Descrizione**; solo le [Classi articolo](/docs/configurations/tables/logistics/item-class) che hanno associata questa Famiglia prodotto verranno considerate per le statistiche;          
-**Unità di Misura**: viene proposta la UM della Famiglia;      
-**Nota Dettaglio**: è un campo di note libero.         
-Sono presenti poi dei campi calcolati:     
-**Quantità Totale**: viene riportata la somma delle Quantità Periodo della seconda griglia;     
-**Importo Totale**: viene riportata la somma degli Importo Periodo della seconda griglia;    
-**Prezzo Medio Unitario**: viene inserito il risultato dell'operazione *Quantità totale*/*Importo totale*.     
+En la primera cuadrícula se permiten ingresar las líneas relacionadas con el pronóstico de ventas. Utilizando los botones presentes en la barra de herramientas, es posible construir una estructura jerárquica, por ejemplo, por subdivisión geográfica. Inicialmente, se parte del primer grupo y luego se detalla la estructura según los niveles de subdivisión deseados. Los importes de la segunda cuadrícula pueden ser completados solo a nivel de Detalle, es decir, después de haber ingresado el último nivel del árbol. Una vez ingresado este último nivel, la segunda cuadrícula se poblará automáticamente, subdividiendo las fechas según el [Tipo de período (Tipo periodo)](/docs/configurations/tables/crm/sales-forecast/period-type) configurado. Así, será posible llenar las Cantidades y los Importes de los distintos períodos en la segunda cuadrícula, permitiendo así que Fluentis calcule los totales y los reporte en la primera cuadrícula.
 
-Nella seconda griglia, viene riportato il *Dettaglio* del [Tipo Periodo](/docs/configurations/tables/crm/sales-forecast/period-type) associato al [Tipo previsione di vendita](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type) selezionato. Inoltre, sarà possibile indicare una **Quantità** ed un **Importo** di periodo per ogni riga. Questi dati, sommati, andranno a formare l'**Importo totale**  e la **Quantità Totale** della prima griglia. 
+En la primera cuadrícula, algunos campos están activos si se ingresa un Grupo, otros si se ingresa un Detalle, con los botones apropiados de la barra de herramientas.  
+Analicemos los campos que se pueden completar si la línea es un Grupo/Nodo:  
+**progressivo gruppo**: a cada Grupo se le asigna un número progresivo;  
+**descrizione gruppo**: es posible ingresar una descripción libre para cada Grupo;  
+**zona**: cada Grupo puede ser asociado a una Zona diferente;  
+**operatore assegnato**: es necesario indicar el Operador responsable del Pronóstico de ventas en esta Zona;  
+**agente**: se puede indicar un Agente responsable de las ventas en esta Zona;  
+**nota**: es un campo de notas libre.  
+Analicemos los campos que se pueden ingresar si la línea es un Detalle:  
+**famiglia prodotti**: este campo contiene la Familia de artículos para la cual se está creando el Pronóstico, con la respectiva **Descripción**; solo las [Clases de artículos (Classi articolo)](/docs/configurations/tables/logistics/item-class) que tengan asociada esta Familia de productos serán consideradas para las estadísticas;  
+**unità di misura**: se propone la UM de la Familia;  
+**nota dettaglio**: es un campo de notas libre.  
+También hay campos calculados:  
+**quantità totale**: se reporta la suma de las Cantidades de Período de la segunda cuadrícula;  
+**importo totale**: se reporta la suma de los Importes de Período de la segunda cuadrícula;  
+**prezzo medio unitario**: se inserta el resultado de la operación *Cantidad total / Importe total*.  
+
+En la segunda cuadrícula, se reporta el *Detalle* del [Tipo de período (Tipo Periodo)](/docs/configurations/tables/crm/sales-forecast/period-type) asociado al [Tipo de pronóstico de ventas (Tipo previsione di vendita)](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type) seleccionado. Además, será posible indicar una **Cantidad** y un **Importe** de período para cada línea. Estos datos, sumados, formarán el **Importe Total** y la **Cantidad Total** de la primera cuadrícula.

@@ -1,33 +1,30 @@
 ---
-title: Commissioni
+title: commissioni
 sidebar_position: 7
 ---
 
-Questa form permette di visualizzare le commissioni (provvigioni agenti) maturate e liquidate.
+Este formulario permite visualizar las comisiones (proviciones de agentes) acumuladas y liquidadas.
 
-Si riferisce alla gestione delle provvigioni agenti effettuata dal modulo amministrativo.
+Se refiere a la gestión de las comisiones de los agentes llevada a cabo por el módulo administrativo.
 
-Nella sezione di testata sono presenti i filtri per Agente e per alcuni elementi contabili, dal momento che le righe relative alle provvigioni vengono inserite già nel momento in cui la fattura di vendita che le determina viene contabilizzata.
+En la sección de cabecera se encuentran los filtros para Agente y algunos elementos contables, dado que las líneas relacionadas con las comisiones se ingresan ya en el momento en que la factura de venta que las determina es contabilizada.
 
 :::note Nota
-**Si ricorda che all'interno della causale contabile con la quale viene contabilizzata la fattura deve essere attivo il flag di gestione delle provvigioni, il quale farà in modo che siano valorizzati i dati nell'apposito tab dedicato alle provvigioni presenta all'interno della registrazione contabile.**
+**Se recuerda que dentro de la causal contable con la que se contabiliza la factura debe estar activo el indicador de gestión de comisiones, que asegurará que los datos sean valorados en la pestaña correspondiente dedicada a las comisiones presente en el registro contable.**
 :::
 
+Otros elementos de filtrado son los cuatro indicadores que permiten buscar comisiones a liquidar, comisiones liquidadas o ambas, y comisiones no acumuladas o acumuladas.
 
-Ulteriori elementi di filtro sono i quattro flag che permettono di ricercare provvigioni da liquidare, o provvigioni liquidate o entrambe, e provvigioni non maturate o maturate.
+**N.B.** más precisamente, la condición *ABIERTA (APERTA)* y *chiusa* se refiere al hecho de que aún haya un saldo por cobrar o si está todo cobrado (y, por lo tanto, la comisión *cerrada* no tendrá más movimientos).
 
-**N.B.** più precisamente la condizione *APERTA* e *CHIUSA* fa riferimento al fatto che ci sia ancora un residuo da incassare o sia tutto incassato (e quindi la provvigione *chiusa* non avrà altri movimenti).
+En la cuadrícula de detalle, las líneas corresponden a las comisiones calculadas en la factura ingresadas al momento de la contabilización de la factura misma.
 
-Nella griglia di dettaglio le righe corrispondono alle provvigioni calcolate in fattura inserite al momento della contabilizzazione della fattura stessa.
+Dependiendo del criterio de acumulación definido en el registro del agente, (por ejemplo, a pago efectuado) se crearán líneas de "anulación" (por ejemplo, en caso de pago parcial o de una de las varias partidas abiertas, se creará una línea correspondiente al valor del pago). Para verlas, es necesario expandir el detalle de la línea principal con el botón + a la izquierda de la línea.
 
-A seconda del criterio di maturazione definito nell'anagrafica agente, (ad esempio a pagamento avvenuto) verranno create delle righe di "storno" (ad esempio in caso di pagamento parziale o di una delle varie partite aperte, si creerà un riga corrispondente al valore dle pagamento). Per vederle occorre espandere il dettaglio della riga principale con l'apposito pulsante + a sinistra della riga.
-
-Nel dettaglio (riportato poi sula riga principale) è presente anche il flag che si valorizza quando la provvigione viene liquidata all'agente.
+En el detalle (que luego se refleja en la línea principal) también se encuentra el indicador que se activa cuando la comisión se liquida al agente.
 
 ![](/img/it-it/finance-area/maturity-values/commissions.png)
 
-:::tip LINK
-Per la procedura di liquidazione provvigioni specifica della gestione dal modulo amministrativo vedere [**qui**](/docs/finance-area/professional-men/procedures/calculate-commissions)
+:::tip ENLACE (LINK)
+Para el procedimiento de liquidación de comisiones específico de la gestión del módulo administrativo, ver [**aquí**](/docs/finance-area/professional-men/procedures/calculate-commissions).
 :::
-
-

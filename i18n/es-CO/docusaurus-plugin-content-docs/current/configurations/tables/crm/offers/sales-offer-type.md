@@ -1,33 +1,32 @@
 ---
-title: Tipi offerte di vendita
+title: tipi offerte di vendita
 sidebar_position: 1
 ---
 
-La tabella è utilizzata per determinare le proprietà di un'offerta di vendita.
+La tabla se utiliza para determinar las propiedades de una oferta de venta.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para ingresar nuevos registros, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
 
-**Codice/Descrizione:** campi in cui viene indicato il codice e la descrizione della tipologia del documento (il codice che si inserisce deve essere univoco).
+**codice/descrizione**: campos en los que se indica el código y la descripción de la tipología del documento (el código que se ingresa debe ser único).
 
-**Modifica versione**: questo flag indica le tipologie di offerta per le quali gestire le versioni.
+**modifica versione**: este indicador indica las tipologías de oferta para las cuales gestionar las versiones.
 
-**Prezzo Ivato**: permette al sistema di recuperare il prezzo di vendita dai listini o dall'anagrafica articolo e lo riporta con l'aggiunta dell'IVA. Se non trova il listino, nel caso, per esempio, di listino scaduto o listino in valuta non compatibile, recupera i costi o i prezzi dall'anagrafica articolo e li riporta comprensivi di IVA. I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche a convertire nella valuta del cliente.
+**prezzo ivato**: permite al sistema recuperar el precio de venta de las listas de precios o del registro del artículo y lo presenta con la adición del IVA. Si no encuentra la lista de precios, en caso, por ejemplo, de lista de precios expirada o lista en una moneda no compatible, recupera los costos o los precios del registro del artículo y los presenta incluyendo IVA. Los costos y precios en el registro están en EUR, por lo que el sistema también los convertirá a la moneda del cliente.
 
-**Numerazione**: in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti sulla numerazione dei documenti si rimanda all'articolo [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations).
+**numerazione**: en este campo se debe ingresar el código de numeración correspondiente. Para más información sobre la numeración de documentos, se remite al artículo [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations).
 
-**Tipo ordine cliente**: in questo campo viene indicata la tipologia di Ordine di vendita da creare al momento della Conversione dell'offerta con l'apposita procedura.    
+**tipo ordine cliente**: en este campo se indica el tipo de orden de venta a crear en el momento de la conversión de la oferta con el procedimiento adecuado.
 
-**Listino di vendita**: questo tipo listino, di tipo  generico, viene utilizzato per la ricerca dei prezzi nel caso in cui nel tab listini dell’anagrafica del cliente o contatto non ci sia nessuna tipologia di listino inserita. Solitamente si utilizza quando si fanno offerte a contatti CRM che non sono ancora stati acquisiti come clienti e per i quali non siano stati inseriti i tipi listini nel tab Listini dell’anagrafica.
+**listino di vendita**: este tipo de lista, de tipo genérico, se utiliza para la búsqueda de precios en caso de que en la pestaña de listas de precios del registro del cliente o contacto no haya ningún tipo de lista ingresada. Normalmente se utiliza cuando se hacen ofertas a contactos de CRM que aún no han sido adquiridos como clientes y para los cuales no se han ingresado los tipos de listas en la pestaña Listas del registro.
 
-**Stampa e numero di copie**: attraverso questi campi viene definita la stampa di default e il numero di copie da stampare; ricordiamo che per stampare la stampa di default è necessario selezionare *Stampe multiple* al momento della stampa.
+**Impresión y número de copias (Stampa e numero di copie)**: a través de estos campos se define la impresión predeterminada y el número de copias a imprimir; recordamos que para imprimir el documento predeterminado es necesario seleccionar *stampe multiple* en el momento de la impresión.
 
-**Tipo prototipo articolo**: questo campo contiene la tipologia di prototipo articolo da creare nella procedura di creazione prototipo dall'interno dell'offerta. 
+**tipo prototipo articolo**: este campo contiene la tipología de prototipo de artículo a crear en el procedimiento de creación de prototipos desde el interior de la oferta.
 
-**Tipo opportunità**: se nel Tipo Offerta viene collegato un Tipo opportunità, al salvataggio dell’Offerta viene creata una Nuova Opportunità se in testata Offerta non ne viene inserita una preesistente; se inserita, l’Opportunità preesistente viene aggiornata.
+**tipo opportunità**: si en el Tipo de Oferta se vincula un Tipo de oportunidad, al guardar la Oferta se crea una Nueva Oportunidad si en el encabezado de Oferta no se ingresa una preexistente; si se ingresó, la Oportunidad preexistente se actualiza.
 
-**Gestione cespiti e Tipo operazione**: il flag permette di gestire i cespiti per questa tipologia di documento. Nel campo successivo viene indicata la tipologia di operazione dei cespiti, che nel caso delle vendite potrà esere un’alienazione totale, parziale oppure una distruzione.      
+**Gestión de activos y Tipo de operación (Gestione cespiti e Tipo operazione)**: el indicador permite gestionar los activos para este tipo de documento. En el campo siguiente se indica la tipología de operación de los activos, que en el caso de las ventas podrá ser una alienación total, parcial o una destrucción.
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
-
+**Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: en esta columna es posible asociar la tipología de descuento a proponer cuando los descuentos se ingresan directamente en la columna *sconti articolo* de la cuadrícula de artículos de los documentos (para más detalles vea el artículo [Gestión de Widget de descuentos simplificados](/docs/sales/sales-flow/discount-widget)).

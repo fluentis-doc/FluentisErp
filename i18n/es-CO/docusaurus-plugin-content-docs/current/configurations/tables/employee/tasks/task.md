@@ -1,59 +1,59 @@
 ---
-title: Mansioni
+title: mansioni
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Mansioni > Mansioni**.   
+La tabla se encuentra en la ruta **Tablas > Empleados > mansioni > mansioni**.  
 
-In questa tabella è possibile codificare le *Mansioni* aziendali.   
-Alcuni esempi di utilizzo delle *Mansioni* le troviamo nelle gestioni:   
-> **Dipendenti** - nel tabulatore *Mansioni*;   
-> **Corsi base** - nel tabulatore *Mansioni interessate*;   
-> **Corsi di formazione** - nel tabulatore *Mansioni coinvolte*;   
-> **D.P.I.** - nell'elenco *Dispositivo di Protezione Individuale utilizzato nelle Mansioni*;   
-> **Competenze** - nell'elenco *Competenza richiamata nelle mansioni*.   
+En esta tabla es posible codificar las *mansioni* empresariales.  
+Algunos ejemplos de uso de las *mansioni* los encontramos en la gestión de:  
+> **dipendenti** - en la pestaña *mansioni*;  
+> **corsi base** - en la pestaña *mansioni interessate*;  
+> **corsi di formazione** - en la pestaña *mansioni coinvolte*;  
+> **d.p.i.** - en la lista *Dispositivo de Protección Individual utilizado en las mansioni*;  
+> **competenze** - en la lista *Competencia mencionada en las funciones*.  
 
-La tabella consente di inserire nuove *Mansioni* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+La tabla permite insertar nuevas *mansioni* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.  
 
-## Ricerca Mansioni   
+## Búsqueda de mansioni (Ricerca Mansioni)  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-## Inserimento Mansioni  
+## Inserción de mansioni (Inserimento Mansioni)  
 
-Per poter inserire nuove *Mansioni* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.   
+Para poder insertar nuevas *mansioni*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
 
-### Mansioni   
+### mansioni (Mansioni)  
 
-E' l'elenco dove vengono inserite le informazioni principali della *Mansione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Mansione*.   
-> **Descrizione**: è la descrizione della *Mansione*.   
-> **Centro aziendale**: è il codice del *Centro aziendale*.   
-> **Voce costo**: è il codice della *Voce di costo*.   
-> **Descrizione voce di costo**: è la descrizione della *Voce di costo*.   
+Es la lista donde se insertan las informaciones principales de la *mansione*.  
+La lista se compone de la siguiente información:  
+> **codice**: es el código de la *mansione*.  
+> **descrizione**: es la descripción de la *mansione*.  
+> **centro aziendale**: es el código del *Centro empresarial*.  
+> **voce costo**: es el código de la *Partida de costo*.  
+> **Descripción de partida de costo (Descrizione voce di costo)**: es la descripción de la *Partida de costo*.  
 
-### D.P.I. da consegnare   
+### E.P.I. a entregar (D.P.I. da consegnare)  
 
-E' l'elenco dove vengono inseriti i *D.P.I.* necessari alla *Mansione* selezionata.   
-Queste informazioni vengono utilizzate nella gestione *Consegne/Resi D.P.I.*   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice D.P.I.**: è il codice del *D.P.I.*   
-> **Descrizione D.P.I.**: è la descrizione del *D.P.I.*   
-> **Mesi validità**: sono i mesi di validità del *D.P.I.* per la *Mansione* selezionata.   
-> **Uso**: annotazioni libere sull'argomento.   
-> **Prescrizioni o raccomandazioni per l'uso**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+Es la lista donde se insertan los *d.p.i.* necesarios para la *mansione* seleccionada.  
+Esta información se utiliza en la gestión de *consegne/resi d.p.i.*  
+La lista se compone de la siguiente información:  
+> **codice d.p.i.**: es el código del *d.p.i.*  
+> **descrizione d.p.i.**: es la descripción del *d.p.i.*  
+> **mesi validità**: son los meses de validez del *d.p.i.* para la *mansione* seleccionada.  
+> **uso**: anotaciones libres sobre el tema.  
+> **prescrizioni o raccomandazioni per l'uso**: anotaciones libres sobre el tema.  
+> **note**: anotaciones libres.  
 
-### Competenze   
+### Competencias (Competenze)  
 
-E' l'elenco dove vengono inserite le *Competenze* richieste per ricoprire la *Mansione* selezionata.   
-Queste informazioni vengono utilizzate nella gestione *Valutazioni competenze*   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice Competenza**: è il codice della *Competenza*.   
-> **Descrizione Competenza**: è la descrizione della *Competenza*.   
-> **Codice livello**: è il codice del *Livello di valutazione competenza* richiesto per ricoprire la *Mansione* selezionata.   
-> **Descrizione livello**: è la descrizione del *Livello di valutazione competenza*.   
-> **Criteri di valutazione**: annotazioni per definire i *Criteri di valutazione* da utilizzare per valutare la *Competenza* nella specifica *Mansione*.   
-> **Note**: annotazioni libere.   
+Es la lista donde se insertan las *Competencias* requeridas para desempeñar la *mansione* seleccionada.  
+Esta información se utiliza en la gestión de *Evaluaciones de competencias (Valutazioni competenze)*  
+La lista se compone de la siguiente información:  
+> **codice competenza**: es el código de la *Competencia*.  
+> **descrizione competenza**: es la descripción de la *Competencia*.  
+> **codice livello**: es el código del *Nivel de evaluación de competencias* requerido para desempeñar la *mansione* seleccionada.  
+> **descrizione livello**: es la descripción del *Nivel de evaluación de competencias*.  
+> **criteri di valutazione**: anotaciones para definir los *Criterios de evaluación* a utilizar para evaluar la *Competencia* en la específica *mansione*.  
+> **note**: anotaciones libres.

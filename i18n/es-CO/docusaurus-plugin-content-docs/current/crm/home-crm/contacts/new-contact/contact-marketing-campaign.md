@@ -1,8 +1,8 @@
 ---
-title: Campagne marketing contatto
+title: Campañas de marketing de contacto (Campagne marketing contatto)
 sidebar_position: 20
 ---
 
-Questa è una delle tab dei **Contatti CRM**.
+Esta es una de las pestañas de **contatti crm**.
 
-In questa tab viene visualizzata la lista delle campagne marketing dove è presente il contatto. 
+En esta pestaña se muestra la lista de las campañas de marketing en las que está presente el contacto.

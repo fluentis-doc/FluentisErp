@@ -1,10 +1,10 @@
 ---
-title: Concorrenti Contatto
+title: Competidores Contacto (Concorrenti Contatto)
 sidebar_position: 13
 ---
 
-Questa è la dodicesima tab dei **Contatti CRM**.
+Esta es la duodécima pestaña de **contatti crm**.
 
-In questa tab è possibile indicare eventuali **Concorrenti** che la nostra azienda ha nella trattativa con il contatto.
-È possibile selezionare il contatto mediante l’apposito menu a tendina, selezionando i valori presenti nella relativa [tabella](/docs/configurations/tables/crm/contacts/competitors).
-Nel campo **Nota** è possibile indicare ulteriori informazioni utili riguardo il concorrente.
+En esta pestaña es posible indicar algunos **concorrenti** que nuestra empresa tiene en la negociación con el contacto.  
+Es posible seleccionar el contacto mediante el menú desplegable correspondiente, seleccionando los valores presentes en la [tabla (tabella)](/docs/configurations/tables/crm/contacts/competitors).  
+En el campo **nota**, se pueden indicar información adicional útil sobre el competidor.

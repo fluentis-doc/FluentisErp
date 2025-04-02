@@ -1,68 +1,69 @@
 ---
-title: Nuova Campagna Marketing
+title: Nueva Campaña de Marketing (Nuova Campagna Marketing)
 sidebar_position: 2
 ---
 
-La schermata si compone di tre parti:     
-- la prima parte in alto presenta eventuali workflow associati alla Campagna; si rimanda alla relativa guida sui Workflow per approfondimenti in merito;          
-- la parte centrale presenta la Testata, con le informazioni generali, alcune obbligatorie altre no;     
-- sotto si trovano diverse tab, che riportano le diverse operazioni effettuate.    
+La pantalla se compone de tres partes:  
+- la primera parte en la parte superior presenta los posibles flujos de trabajo asociados a la Campaña; se remite a la guía sobre Flujos de Trabajo para más detalles;  
+- la parte central presenta el Encabezado, con la información general, algunas obligatorias y otras no;  
+- debajo se encuentran varias pestañas que reportan las diferentes operaciones realizadas.  
 
+## Encabezado (Testata)
 
+Enumeramos los campos presentes en el encabezado de la Campaña de Marketing.  
 
-## Testata
+**tipo campagna**: indica la tipología de campaña a crear; las tipologías de campaña difieren por código, descripción, numeración y período de presupuesto.  
 
-Elenchiamo i campi presenti nella testata della Campagna Marketing.      
+**Número/Versión/Fecha (Numero/Versione/Data)**: estos campos se completan automáticamente;  
 
-**Tipo campagna**: indica la tipologia di campagna da creare; le tipologie di campagna differiscono per codice, descrizione, numerazione e periodo di budgeting.     
+**lista di distribuzione**: es posible asociar la campaña a una lista específica previamente codificada, pero también se puede elegir una lista vacía e ingresar los contactos manualmente; en una campaña de outbound, generalmente los contactos ya están presentes, siendo por ejemplo todos aquellos a quienes se enviará un correo electrónico.  
 
-**Numero/Versione/Data**: questi campi vengono compilati automaticamente;        
+**categoria campagna**: es posible asociar una categoría, que se compone de código y descripción;  
 
-**Lista di distribuzione**: è possibile associare la campagna ad una specifica [Lista](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-new) precedentemente codificata, ma è possibile scegliere anche una lista vuota ed inserire i contatti manualmente; in una campagna di outbound generalmente però i contatti sono già presenti e saranno per esempio tutti quelli a cui sarà inviata una email.    
+**marketer referente**: en este campo se propone automáticamente el usuario que crea la campaña, pero es posible indicar manualmente a otro usuario. En el campo siguiente se muestra el correo electrónico del usuario.  
 
-**Categoria campagna**: è possibile associare una categoria, che si compone di codice e descrizione;      
+**referente commerciale**: en este campo se propone automáticamente el usuario que crea la campaña, pero es posible indicar manualmente a otro usuario. En el campo siguiente se muestra el correo electrónico del usuario.  
 
-**Marketer referente**: in questo campo viene proposto in automatico l'utente che crea la campagna, ma è possibile indicare manualmente un altro utente. Nel campo sottostante viene riportata la email dell'utente.      
+**periodo budget**: este campo se ofrece en función del Tipo de campaña seleccionado;  
 
-**Referente commerciale**: in questo campo viene proposto in automatico l'utente che crea la campagna, ma è possibile indicare manualmente un altro utente. Nel campo sottostante viene riportata la email dell'utente.      
+**conto**: es posible imputar una cuenta contable;  
 
-**Periodo budget**: questo campo viene proposto in base al Tipo campagna selezionato;     
+**progetto**: en este campo se inserta el [Proyecto (Progetto)](/docs/project-management/projects/new-project/new-project-intro) conectado a la Campaña;  
 
-**Conto**: è possibile imputare un conto contabile;      
+**Fechas de validez (Date di validità)**: estos campos contienen la fecha de inicio y cualquier fecha de finalización;  
 
-**Progetto**: in questo campo viene inserito il [Progetto](/docs/project-management/projects/new-project/new-project-intro) collegato alla Campagna;     
+En los campos siguientes se solicitan la **nazione** (propuesta automáticamente), la **zona**, la **lingua** y la **divisa**.  
 
-**Date di validità**: questi campi contengono la data di inizio ed eventuali date di fine;    
+**proponi data creazione lead**: este indicador completa el campo en la pestaña correspondiente en el momento de contactar al potencial cliente.  
 
-Nei campi successivi vengono richiesti la **Nazione** (proposta in automatico), la **Zona**, la **Lingua** e la **Divisa**.
+**titolo**: este campo se completa automáticamente en función del tipo de campaña y su numeración;  
 
-**Proponi data creazione lead**: questo flag compila il campo nell'apposita tab al momento del contatto con il potenziale cliente.     
+**contatti effettuati**: este indicador hace visibles, en la pestaña **Contactos**, los contactos para los cuales ya ha comenzado la campaña de marketing.  
 
-**Titolo**: questo campo si compila in automatico in base alla tipologia di campagna e alla sua numerazione;     
+Pasemos ahora a las pestañas siguientes.  
 
-**Contatti effettuati**: questo flag rende visibili, nella tab **Contatti**, i contatti per i quali è già iniziata la campagna marketing.
+## Contactos (Contatti)
 
-Passiamo ora ai tab sottostanti.      
+Están presentes los contactos destinatarios de la Campaña de Marketing; es posible agregar nuevos haciendo clic en el botón de la barra de herramientas **nuovo**: se solicitarán la **Fecha de ingreso (Data di inserimento)**, la **Fecha de creación del lead (Data di creazione lead)** (este campo también se completará automáticamente en la pestaña **Leads**), el **contatto**, etc.  
 
-## Contatti
+Al seleccionar los Contactos para los cuales se desea proceder a la Campaña de Marketing, se puede hacer clic en la barra de herramientas en el botón **Email** para proceder al envío de correos electrónicos.  
 
-Sono presenti i contatti destinatari della Campagna Marketing; è possibile inserirne di nuovi cliccando il pulsante nella ribbon bar **Nuovo**: verranno richiesti la **Data di inserimento**, la **Data di creazione lead** (questo campo andrà a compilarsi in automatico anche nella tab **Leads**), il **Contatto**, ecc.
+## Contactos de origen (Contatti di origine)
 
-Selezionando i Contatti per i quali si vuole procedere alla Campagna Marketing, si può cliccare nella ribbon bar il pulsante **Email** per procedere all'invio di email.
+En esta pestaña se visualizan todos los contactos pertenecientes a la Lista de distribución seleccionada para esta Campaña. La pestaña también presenta una sección de filtro que permite buscar contactos dentro de la lista de distribución. Para transferir los Contactos de esta pestaña a la de Contactos, es necesario seleccionar las filas y hacer clic en *inserisci contatti* en la barra de herramientas.  
 
-## Contatti di origine  
+## Leads (Leads)
 
-In questa tab vengono visualizzati tutti i contatti appartenenti alla Lista di distribuzione selezionata per questa Campagna. La tab presenta anche una parte di filtro che permette di ricercare i contatti all'interno della lista di distribuzione. Per trasferire i Contatti da questa tab a quella dei Contatti, è necessario selezionare le righe e cliccare *Inserisci contatti* nella rbbon bar.       
+Se presentan las especificaciones de creación de los varios contactos con los clientes; es posible buscar posibles leads ya presentes con el botón **Buscar lead (Ricerca lead)**; igualmente es posible eliminarlos con el botón **cancella**.  
 
-## Leads  
-Sono presenti le specifiche di creazione dei vari contatti con i clienti; è possibile ricercare eventuali lead già presenti con il pulsante **Ricerca lead**; allo stesso modo è possibile cancellarli con il pulsante **Cancella**. 
+## Costos (Costi)
 
-## Costi  
-Richiede l'inserimento manuale dei costi della Campagna Pubblicitaria; è necessario costificare una campagna per poter fare un budget del marketing. Poi, questi costi potranno essere effettivamente confrontati con il budget che ci si era prefissato inizialmente.
+Requiere la introducción manual de los costos de la Campaña Publicitaria; es necesario presupuestar una campaña para poder comparar efectivamente estos costos con el presupuesto que se había establecido inicialmente. 
 
-È consigliabile quindi inserire in questa tab i costi effettivi per monitorare un'attività strategica.
+Por lo tanto, se recomienda ingresar en esta pestaña los costos reales para monitorear una actividad estratégica.  
 
-I costi possono essere inseriti cliccando i pulsanti nella ribbon bar **Nuovi costi** o **Nuovi costi per periodo**.
+Los costos pueden ser ingresados haciendo clic en los botones de la barra de herramientas **nuovi costi** o **nuovi costi per periodo**.  
 
-## Extra data  
-Permette l-inserimento degli eventuali extra data.
+## Datos Extra (Extra data)
+
+Permite la inserción de eventuales datos extra.

@@ -1,6 +1,6 @@
-**Storno**: il pulsante consente di *stornare parzialmente o totalmente un documento*. Con questa funzione sarà possibile creare un documento di storno che *scaricherà* (in acquisti) / *caricherà* (in vendite) il magazzino.  
+**Anulación** (Storno): el botón permite *anular parcial o totalmente un documento*. Con esta función será posible crear un documento de anulación que *descargará* (en compras) / *cargará* (en ventas) el almacén.  
 
-> *Procedura*:  
-1. selezionare il documento da stornare e cliccare sul pulsante di **Storno**. L'applicazione aprirà una finestra pop-up con tutte le righe articolo del documento di origine;  
-2. inserire in questa form: il **Tipo di documento** di storno che si vuole creare e, per ogni articolo, indicare la **Quantità da stornare**, la **Causale di storno** e attivare il parametro **Da stornare**;  
-3. click **OK** per confermare l'operazione.
+> *Procedimiento* (Procedura):  
+1. seleccionar el documento a anular y hacer clic en el botón de **Anulación** (Storno). La aplicación abrirá una ventana emergente con todas las líneas de artículo del documento de origen;  
+2. ingresar en este formulario: el **Tipo de documento** (Tipo di documento) de anulación que se desea crear y, para cada artículo, indicar la **Cantidad a anular** (Quantità da stornare), la **Causa de anulación** (Causale di storno) y activar el parámetro **A anular** (Da stornare);  
+3. hacer clic en **OK** para confirmar la operación.

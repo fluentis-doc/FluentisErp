@@ -1,29 +1,28 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area **Acquisti > Richieste di offerta** e rappresenta uno degli step intermedi del ciclo passivo. 
-Le richieste di offerta (RDO) servono a gestire il processo di raccolta e confronto di preventivi da parte dei fornitori permettendo la scelta delle condizioni di fornitura migliori.
+El módulo se encuentra en el área **Compras > Solicitudes de oferta (Acquisti > Richieste di offerta)** y representa uno de los pasos intermedios del ciclo pasivo.  
+Las solicitudes de oferta (RDO) sirven para gestionar el proceso de recolección y comparación de presupuestos por parte de los proveedores, permitiendo la elección de las mejores condiciones de suministro.
 
-## **Configurazione preliminare del modulo**
+## **Configuración preliminar del módulo (Configurazione preliminare del modulo)**
 
-Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
-- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per le Richieste di Offerta.       
-- [**Tipi richieste di offerta**](/docs/configurations/tables/purchase/purchase-offer-type): creazione delle tipologie di RDO.
+Antes de utilizar el módulo, es necesario completar las siguientes tablas y parámetros:  
+- [**Numeraciones (Numerazioni)**](/docs/configurations/tables/fluentis-numerations): inserción de las numeraciones a utilizar para las Solicitudes de Oferta.  
+- [**Tipos de solicitudes de oferta (Tipi richieste di offerta)**](/docs/configurations/tables/purchase/purchase-offer-type): creación de los tipos de RDO.
 
-
-## **Collegamenti con altri moduli**
+## **Conexiones con otros módulos (Collegamenti con altri moduli)**
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-requests/general-overview">Richieste di Acquisto</Link>
-        <p>Le Richiesta di Offerta possono essere generate dalle *Richiesta di Acquisto*, mediante il pulsante **Generatore RDO** posto all'interno della RDA. </p>
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Solicitudes de Compra (Richieste di Acquisto)</Link>
+        <p>Las Solicitudes de Oferta pueden ser generadas a partir de las *richiesta di acquisto*, mediante el botón **Generador RDO** situado dentro de la RDA.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordini fornitore</Link>
-        <p>Una volta selezionata l'offerta più conveniente, è possibile convertire la RDO in un ordine di acquisto utilizzando la procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).</p>
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Órdenes de proveedor (Ordini fornitore)</Link>
+        <p>Una vez seleccionada la oferta más conveniente, es posible convertir la RDO en un pedido de compra utilizando el procedimiento de [Creación de pedido de proveedor desde oferta de proveedor (Creazione ordine fornitore da offerta fornitore)](/docs/purchase/offer-request/procedures/order-creation).</p>
     </div>
 </div>

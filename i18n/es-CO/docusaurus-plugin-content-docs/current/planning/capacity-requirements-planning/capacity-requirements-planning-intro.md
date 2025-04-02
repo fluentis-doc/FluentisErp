@@ -1,35 +1,35 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo **CRP – Capacity Requirements Planning** prevede la possibilità di controllare l'impegno delle risorse produttive tramite alcuni strumenti, quali la **Capacità Centri di Lavoro**, la **Simulazione Gantt** e la **Sequenza fasi**, che consentono di analizzare, modificare, spostare gli ordini pianificati di produzione, acquisto e conto lavoro in base alle esigenze della gestione aziendale.
+El módulo **CRP – Planificación de Requisitos de Capacidad (Capacity Requirements Planning)** permite controlar el compromiso de los recursos productivos mediante algunas herramientas, como la **capacità centri di lavoro**, la **simulazione gantt** y la **sequenza fasi**, que permiten analizar, modificar y mover los pedidos planificados de producción, compra y trabajo en función de las necesidades de la gestión empresarial.
 
-## Moduli dell'area 
+## Módulos del área (Moduli dell'area)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     CRP – Capacity Requirements Planning
-        <p><Link to="/docs/planning/capacity-requirements-planning/work-center-capacity" className="bold-link">Capacità Centri di Lavoro</Link></p>
-        <p>Consente una visualizzazione immediata dei carichi di ciascun centro di lavoro attivo nell’ambito dei singoli reparti per un determinato periodo temporale, permettendo di conoscere in modo immediato gli eventuali picchi di sovraccarico o di inefficienza produttiva.</p>
-        <p><Link to="/docs/planning/capacity-requirements-planning/gantt-visualization/gantt-visualization-intro" className="bold-link">Simulazione Gantt</Link></p>
-        <p>Permette la pianificazione e il monitoraggio efficace delle attività progettuali, ottimizzando la gestione del tempo e delle risorse.</p>
-        <p><Link to="/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown" className="bold-link">Sequenza fasi</Link></p>
-        <p>Consente di organizzare le fasi produttive tramite una sequenza manuale o basata su regole definite dall'utente.</p>
+###     CRP – Planificación de Requisitos de Capacidad (CRP – Capacity Requirements Planning)
+        <p><Link to="/docs/planning/capacity-requirements-planning/work-center-capacity" className="bold-link">Capacidad de Centros de Trabajo (Capacità Centri di Lavoro)</Link></p>
+        <p>Permite una visualización inmediata de las cargas de cada centro de trabajo activo dentro de los distintos departamentos para un período de tiempo determinado, permitiendo conocer de manera inmediata los posibles picos de sobrecarga o ineficiencia productiva.</p>
+        <p><Link to="/docs/planning/capacity-requirements-planning/gantt-visualization/gantt-visualization-intro" className="bold-link">Simulación Gantt (Simulazione Gantt)</Link></p>
+        <p>Facilita la planificación y el monitoreo efectivo de las actividades de proyectos, optimizando la gestión del tiempo y los recursos.</p>
+        <p><Link to="/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown" className="bold-link">Secuencia de Fases (Sequenza fasi)</Link></p>
+        <p>Permite organizar las fases productivas a través de una secuencia manual o basada en reglas definidas por el usuario.</p>
     </div>
-</div> 
+</div>
 
-## Per iniziare ad utilizzare   
+## Para comenzar a utilizar (Per iniziare ad utilizzare)
 
-la **Capacità Centri di Lavoro** e **Sequenza fasi**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) 
-- creare le [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) 
-- creare i [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route) 
-- creare i [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center) 
-- creare i [*Calendario di fabbrica*](/docs/configurations/tables/production/factory-calendar/) 
-- creare i [*Calendari capacità produttive*](/docs/configurations/tables/production/productive-capacity-calendar/) 
+la **capacità centri di lavoro** y **sequenza fasi**:  
+- crear artículos en la [*anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)  
+- crear [*Listas de materiales (Distinte basi)*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies)  
+- crear [*cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route)  
+- crear [*centri di lavoro*](/docs/erp-home/registers/production/routes/work-center)  
+- crear el [*calendario di fabbrica*](/docs/configurations/tables/production/factory-calendar/)  
+- crear los [*Calendarios de capacidad productiva (Calendari capacità produttive)*](/docs/configurations/tables/production/productive-capacity-calendar/)  
 
-## Collegamenti con altri moduli 
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item), alle [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route), [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center), [*Ordini pianificati*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e [*Ordini produzione*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
+## Enlaces con otros módulos (Collegamenti con altri moduli)  
+Estos están estrechamente relacionados con el [*anagrafica articoli*](/docs/erp-home/registers/items/create-new-item), las [*Listas de materiales (Distinte basi)*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route), [*centri di lavoro*](/docs/erp-home/registers/production/routes/work-center), [*ordini pianificati*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) y [*ordini produzione*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).

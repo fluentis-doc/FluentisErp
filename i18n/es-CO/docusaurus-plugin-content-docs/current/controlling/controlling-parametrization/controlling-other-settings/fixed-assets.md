@@ -1,44 +1,44 @@
 ---
-title: Anagrafiche Cespiti
+title: Fichas de Activos (Anagrafiche Cespiti)
 sidebar_position: 7
 ---
 
-Per prima cosa dobbiamo definire se ci è sufficiente applicare le logiche contabili, o se il nostro controllo di gestione deve svincolarsi da queste per applicare criteri più o meno differenti.
+Primero debemos definir si es suficiente aplicar las lógicas contables, o si nuestro control de gestión debe desvincularse de estas para aplicar criterios más o menos diferentes.
 
-Nel primo caso andremo ad aprire i ***Parametri del modulo cespiti*** per attivare il flag *Abilitazione centro contabilità*. Con questa opzione, all’interno delle categorie cespiti avremo visibilità della griglia dei default dei *Centri di costo* da utilizzare, così come in testata del cespite avremo la griglia che valorizza sul singolo cespite i *Centri di costo*: in entrambe le griglie, sostanzialmente, posso indicare la lista dei centri da valorizzare con la relativa percentuale. Quando andremo a creare i nostri consuntivi contabili attraverso la ***Chiusura infrannuale***, entreremo nella *Ripresa ammortamento cespiti*, selezioneremo la nostra chiusura e ***FluentisERP*** proporrà il calcolo degli ammortamenti sul numero dei giorni di competenza della chiusura stessa, applicando le percentuali di categoria per valorizzarle sui centri con questa priorità: per primo i centri inseriti in testata del cespite, per poi andare a livello di categoria cespite e infine quelli del conto di costo nel piano dei conti.
+En el primer caso, abriremos los ***Parámetros del módulo de activos (Parametri del modulo cespiti)*** para activar el indicador *abilitazione centro contabilità*. Con esta opción, dentro de las categorías de activos tendremos visibilidad de la cuadrícula de los valores predeterminados de los *centri di costo* a utilizar, así como en la cabecera del activo tendremos la cuadrícula que valora sobre cada activo los *centri di costo*: en ambas cuadrículas, esencialmente, puedo indicar la lista de centros a valorar con el porcentaje correspondiente. Cuando vayamos a crear nuestros informes contables a través del **chiusura infrannuale***, entraremos en la *ripresa ammortamento cespiti*, seleccionaremos nuestro cierre y ***FluentisERP*** propondrá el cálculo de las amortizaciones sobre el número de días de competencia de dicho cierre, aplicando los porcentajes de categoría para valorarlos en los centros con esta prioridad: primero los centros introducidos en la cabecera del activo, luego a nivel de categoría y finalmente los del cuenta de costo en el plan de cuentas.
 
-Se invece siamo in una società con il *Controlling* attivo e vogliamo svincolarci dalle logiche contabili, non imposteremo il flag *Abilitazione centro contabilità* e a questo punto spariranno i centri nelle categorie e in testata cespite, e diventerà obbligatoria la scheda delle ***Impostazioni per il controlling*** per poter salvare un cespite.
+Si, por el contrario, estamos en una empresa con el *Controlling* activo y deseamos desvincularnos de las lógicas contables, no configuraremos el indicador *abilitazione centro contabilità*, y en este punto desaparecerán los centros en las categorías y en la cabecera del activo, y se volverá obligatoria la ficha de ***Configuraciones para el controlling (Impostazioni per il controlling)*** para poder guardar un activo.
 
-Se entriamo in un'anagrafica cespiti e andiamo alla scheda Ammortamento per controlling, abbiamo a disposizione i seguenti campi:
+Si entramos en un registro de activos y vamos a la ficha de Amortización para controlling, tenemos disponibles los siguientes campos:
 
-- la ***CATEGORIE CESPITI PER IL CONTROLLING***, campo obbligatorio, che valorizzerà con i suoi default i campi seguenti comuni
+- la ***CATEGORÍAS DE ACTIVOS PARA EL CONTROLLING (CATEGORIE CESPITI PER IL CONTROLLING)***, campo obligatorio, que valorará con sus valores predeterminados los siguientes campos comunes 
 
-- l’eventuale ***VALORE DI RIACQUISTO*** da valorizzare se la base di calcolo lo prevede
+- el eventual **valore di riacquisto*** a valorar si la base de cálculo lo prevé
 
-- la ***QUANTITA' TOTALE*** che il cespite può gestire nella sua vita utile 
+- la ***CANTIDAD TOTAL (QUANTITA' TOTALE)*** que el activo puede gestionar en su vida útil 
 
-- la relativa ***UNITA' DI MISURA***
+- la correspondiente ***UNIDAD DE MEDIDA (UNITA' DI MISURA)***
 
 :::tip Nota
-Il calcolo a quantità, in sostanza, prenderà la base di calcolo dell’ammortamento, lo suddividerà per la quantità totale in modo da ottenere un ammortamento unitario e poi, leggendo le quantità prodotte nel singolo periodo dal cespite (valori che ci arriveranno tipicamente dalla ***Ripresa dati da produzione***), si otterrà il valore dell’ammortamento del periodo.
+El cálculo por cantidad, en esencia, tomará la base de cálculo de la amortización, la dividirá por la cantidad total de modo que se obtenga una amortización unitaria y luego, al leer las cantidades producidas en cada período del activo (valores que típicamente nos llegarán de la **ripresa dati da produzione***), se obtendrá el valor de la amortización del período.
 :::
 
-- la ***BASE DI CALCOLO***, ripresa dalla categoria di appartenenza cui si rimanda per le spiegazioni del caso, può essere modificata nel singolo cespite
+- la **base di calcolo***, recuperada de la categoría de pertenencia a la que se remite para las explicaciones del caso, puede ser modificada en el activo individual
 
-- il ***TIPO DI CALCOLO***, ripreso dalla categoria di appartenenza cui si rimanda per le spiegazioni del caso, può essere modificata nel singolo cespite
+- el ***TIPO DE CÁLCULO (TIPO DI CALCOLO)***, recuperado de la categoría de pertenencia a la que se remite para las explicaciones del caso, puede ser modificado en el activo individual
 
-- il campo della ***PERCENTUALE PER IL CONTROLLING*** da valorizzare quando il tipo calcolo è legato a logiche percentuali, viene proposta dalla categoria di appartenenza ma può essere modificata
+- el campo de ***PORCENTAJE PARA EL CONTROLLING (PERCENTUALE PER IL CONTROLLING)*** que se valorará cuando el tipo de cálculo esté relacionado con lógicas porcentuales, es propuesto por la categoría de pertenencia pero puede ser modificado
 
-- il flag ***USA ATTUALIZZAZIONE PERCENTUALE***
+- el indicador **usa attualizzazione percentuale***
 
-- il flag ***RICREARE I VALORI DI CONTROLLO***
+- el indicador **ricreare i valori di controllo***
 
-Gli ultimi due flag riprendono quelli che sono nella categoria di appartenenza (cui si rimanda per le spiegazioni del caso), ma come i precedenti campi l’impostazione della categoria serve solo per proporre il relativo default del singolo cespite, perché poi ogni cespite può potenzialmente differenziarsi dall’impostazione della categoria.
+Los últimos dos indicadores retoman los que están en la categoría de pertenencia (a la cual se remite para las explicaciones del caso), pero al igual que los campos anteriores, la configuración de la categoría solo sirve para proponer el valor predeterminado del activo individual, ya que luego cada activo puede diferenciarse potencialmente de la configuración de la categoría.
 
-Nella griglia in basso, infine, andremo a definire quali sono i ***CENTRI DI COSTO*** ai quali attribuire l’ammortamento del cespite, o potenzialmente anche il ***PROGETTO*** sul quale scaricarlo come ammortamento diretto.
+En la cuadrícula inferior, finalmente, definiremos cuáles son los **centri di costo*** a los cuales atribuir la amortización del activo, o potencialmente también el **progetto*** sobre el cual descargarlo como amortización directa.
 
-I campi ***PERIODO*** e ***ANNO*** si abiliteranno, invece, solo nel caso in cui sia stato impostato l’ammortamento totale nell’anno e serve, appunto, per definire in che anno spesarlo completamente o in che specifico periodo dell’anno.
+Los campos **periodo*** y **anno*** se habilitarán, en cambio, solo en caso de que se haya configurado la amortización total en el año y sirve, efectivamente, para definir en qué año distribuirlo por completo o en qué período específico del año.
 
 :::tip Nota
-Nel modulo cespiti abbiamo a disposizione la form di *Verifica dati per il controlling*: questa maschera, molto simile alla ricerca cespiti normale, consente di ricercare i cespiti che non hanno collegamenti validi ai centri di costo nella scheda degli ammortamenti per il *Controlling*. Se apriamo il primo della lista, ad esempio, possiamo vedere che ha percentuale 0 e quindi non avrà nessun ammortamento risultante; l’errore potrebbe altrimenti essere che non c’è nessun centro di costo inserito, oppure che il moltiplicatore è 0.
+En el módulo de activos tenemos disponible la forma de *Verificación de datos para el controlling (Verifica dati per il controlling)*: esta máscara, muy similar a la búsqueda normal de activos, permite buscar los activos que no tienen conexiones válidas a los centros de costo en la ficha de amortizaciones para el *Controlling*. Si abrimos el primero de la lista, por ejemplo, podemos ver que tiene un porcentaje de 0 y por lo tanto no tendrá ninguna amortización resultante; el error podría ser que no hay ningún centro de costo ingresado, o que el multiplicador es 0.
 :::

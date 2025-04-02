@@ -1,50 +1,48 @@
 ---
-title: Contabilizzazione Effetti girati al Fornitore
+title: contabilizzazione effetti girati al fornitore
 sidebar_position: 4
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione effetti a fornitore
+El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de efectos a proveedor (Contabilizzazione effetti a fornitore)
 
-Da questa maschera si procede alla contabilizzazione del giro effetti a fornitore: la procedura andrà a chiudere il conto collegato al tipo degli effetti inseriti in distinta ed effettuerà la rilevazione dei pagamenti fornitore inseriti in distinta.
+Desde esta máscara se procede a la contabilización del giro de efectos a proveedor: el procedimiento cerrará la cuenta vinculada al tipo de efectos insertados en la lista y realizará el registro de los pagos a proveedor incluidos en la lista.
 
 :::tip[Nota]
-La contabilizzazione distinte può essere effettuata solo per distinte di giro stampate nelle quali la sezione degli effetti è uguale alla sezione pagamenti.
+La contabilización de listas solo puede llevarse a cabo para listas de giro impresas en las cuales la sección de efectos sea igual a la sección de pagos.
 :::
 
-## Come contabilizzare un effetto a fornitore
+## Cómo contabilizar un efecto a proveedor (Come contabilizzare un effetto a fornitore)
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle distinte da contabilizzare.
-2. Seleziona dalla griglia centrale le distinte che desideri contabilizzare.
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la **data competenza**.
+1. Utiliza la parte superior de la máscara para filtrar la búsqueda de las listas a contabilizar.
+2. Selecciona desde la cuadrícula central las listas que deseas contabilizar.
+3. Completa los parámetros para la contabilización, como la **causale di contabilità**, la **data registrazione** y la **data competenza**.
 
 :::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+Esta sección puede ser predefinida dentro de los [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de efectos.
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione distinte**.
+4. Presiona el botón en la barra de ribbon **contabilizzazione distinte**.
 
-**Pulsanti specifici**
+**Botones específicos**
 
-**Ricerca**: Ricerca la lista degli effetti da contabilizzare.
+**ricerca**: Busca la lista de los efectos a contabilizar.
 
-**Contabilizzazione distinte**: Esegue la contabilizzazione per le righe selezionate.
+**contabilizzazione distinte**: Realiza la contabilización para las líneas seleccionadas.
 
-### Tab Precedenti
+### Pestaña Anteriores (Tab Precedenti)
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Desde la pestaña *anterior* es posible proceder a la anulación de las contabilizaciones realizadas.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+Un doble clic en la sección de registros permitirá visualizar el registro contable relacionado.
 
-È presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+Hay una pestaña de detalle para visualizar los errores detectados durante la contabilización.
 
+**Botones específicos**
 
+**ricerca**: Busca la lista de las contabilizaciones realizadas.
 
-**Pulsanti specifici**
+**rollback contabilizzazione**: Ejecuta la restauración de las contabilizaciones seleccionadas.
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
-
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
-
-**Rollback distinte**: Esegue il ripristino della registrazione contabile selezionata riferita alla singola distinta. 
+**rollback distinte**: Realiza la restauración del registro contable seleccionado relacionado con la lista individual.

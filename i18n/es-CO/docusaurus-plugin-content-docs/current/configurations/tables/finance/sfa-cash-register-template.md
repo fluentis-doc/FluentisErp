@@ -1,6 +1,6 @@
 ---
-title: Causali cassa SFA
+title: causali cassa sfa
 sidebar_position: 6
 ---
 
-All'interno di questa tabella si codificano le causali per la gestione del Sales Force Automation, modulo non più in uso. 
+Dentro de esta tabla se codifican las causas para la gestión de la Automatización de Fuerza de Ventas (Sales Force Automation), un módulo que ya no se utiliza.

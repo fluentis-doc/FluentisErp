@@ -1,40 +1,40 @@
 ---
-title: Imballi a rendere
+title: imballi a rendere
 sidebar_position: 15
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Imballi a rendere**.
+La tabla se encuentra en la ruta **imballi a rendere**.
 
-In questa tabella è possibile codificare i diversi *Imballi a rendere* da utilizzare nella *Gestione imballi* nei documenti di acquisto, vendita e conto lavoro.
+En esta tabla es posible codificar los diferentes *imballi a rendere* que se utilizarán en la *Gestión de envases* en los documentos de compra, venta y trabajo por encargo.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Imballi a rendere**
+**Búsqueda de envases retornables (Ricerca Imballi a rendere)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, simplemente haga clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Imballi a rendere**
+**Inserción de envases retornables (Inserimento Imballi a rendere)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.  
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **inserimento**.  
 
-Questa tabella contiene gli articoli che sono da considerarsi *Imballi a rendere* per la tracciabilità della giacenza. L’articolo inserito in questa tabella deve avere come Natura articolo: *Imballo* (la Natura articolo si inserisce in Anagrafica articolo, tab [Generalità](/docs/erp-home/registers/items/create-new-item)).     
-Attraverso i flag in griglia è possibile scegliere in quali aree l'articolo sarà gestibile per essere movimentato.    
+Esta tabla contiene los artículos que se consideran *imballi a rendere* para la trazabilidad del inventario. El artículo ingresado en esta tabla debe tener como Naturaleza de artículo: *imballo* (la Naturaleza de artículo se inserta en el Registro de artículo, pestaña [Generalidades (Generalità)](/docs/erp-home/registers/items/create-new-item)).  
+A través de los indicadores en la cuadrícula, es posible elegir en qué áreas el artículo será gestionable para ser movilizado.    
 
-#### Dati obbligatori 
+#### Datos obligatorios (Dati obbligatori)
 
-> **Codice**: è il codice dell'*Imballo a rendere*;     
-> **Descrizione**: è la descrizione dell'*Imballo a rendere*;   
-> **Classe articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   
-> **Codice articolo**: indica il codice dell'articolo.    
+> **codice**: es el código del *imballo a rendere*;  
+> **descrizione**: es la descripción del *imballo a rendere*;  
+> **classe articolo**: indica la [Clase (Classe)](/docs/configurations/tables/logistics/item-class) a la que pertenece el artículo;  
+> **codice articolo**: indica el código del artículo.  
 
-#### Campi specifici  
+#### Campos específicos (Campi specifici)  
 
-> **Utilizzo negli acquisti**:  attivando questo flag l'imballo sarà visibile nei documenti dell'area acquisti;     
-> **Utilizzo nel conto lavoro**: attivando questo flag l'imballo sarà visibile nei documenti dell'area conto lavoro;   
-> **Utilizzo nelle vendite**: attivando questo flag l'imballo sarà visibile nei documenti dell'area vendite.   
+> **utilizzo negli acquisti**: al activar este indicador, el envase será visible en los documentos del área de compras;  
+> **utilizzo nel conto lavoro**: al activar este indicador, el envase será visible en los documentos del área de trabajo por encargo;  
+> **utilizzo nelle vendite**: al activar este indicador, el envase será visible en los documentos del área de ventas.  
 
-Infine è possibile inserire **Magazzino** e **Causale** da utilizzare per l'articolo per ciascuna area.
+Finalmente, es posible insertar **magazzino** y **causale** que se utilizarán para el artículo en cada área.
 
-Una volta parametrizzata questa tabella, nei documenti che lo prevedono sarà possibile aprire la form degli imballi a rendere con il ribbon button **Gestione Imballi**. Il bottone aprirà la procedura di *Gestione imballi*, già compilata con gli imballi definiti nella tabella *Imballi a rendere*, in modo che l’utente debba solo inserire le quantità.   
+Una vez parametrizada esta tabla, en los documentos que lo contemplen, será posible abrir el formulario de envases retornables con el botón de ribbon **gestione imballi**. Este botón abrirá el procedimiento de *Gestión de envases*, ya completado con los envases definidos en la tabla *imballi a rendere*, de modo que el usuario solo deba ingresar las cantidades.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

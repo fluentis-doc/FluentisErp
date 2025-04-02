@@ -1,81 +1,81 @@
 ---
-title:  Creazione e Gestione Distinta di Presentazione
+title: Creación y Gestión de la Lista de Presentación (Creazione e Gestione Distinta di Presentazione)
 sidebar_position: 6
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Distinta** e permette la creazione di una *nuova* distinta oppure la *modifica/visualizzazione* di una distinta già esistente.
+El formulario se encuentra en la ruta **Tesorería > Efectos > Crear Lista** y permite la creación de una *nueva* lista o la *modificación/visualización* de una lista ya existente.
 
-## Come creare una Distinta di presentazione
+## Cómo crear una Lista de presentación
 
 <details>
 
-  <summary>Clicca per i passaggi fondamentali</summary>
+  <summary>Clica para los pasos fundamentales</summary>
  
-  1. Richiama il **Tipo** (di distinta), se hai associato dei Sottoconti / Contropartite si caricheranno automaticamente anche questi campi, altrimenti inseriscili manualmente;  
-  2. **Salva** la testata appena creata;  
-  3. Usa il pulsante **Acquisizione effetti** (nella ribbon bar) per inserire in distinta effetti precedentemente creati;  
-  4. Usa il pulsante **Creazione file Ri.Ba.** (nella ribbon bar) per creare il file telematico da inviare alla banca;  
-  5. Apri la lista con il pulsante **Documenti** (nella ribbon br) per accedere al file telematico allegato;  
-  6. Dopo aver aperto il file telematico usa **Salva allegato** per scaricare una copia sul tuo PC da inviare alla banca;  
-  7. Stampa la distinta o attiva il flag **Stampato**;  
-  8. Usa **Contabilizza e chiudi** se vuoi contabilizzare la distinta.
+  1. Llama el **Tipo** (de lista); si has asociado Subcuentas / Contrapartidas, estos campos se cargarán automáticamente; de lo contrario, ingrésalos manualmente;  
+  2. **Guarda** el encabezado recién creado;  
+  3. Usa el botón **Adquisición de efectos** (en la barra de ribbon) para insertar en la lista los efectos previamente creados;  
+  4. Usa el botón **Generación de archivo Ri.Ba.** (en la barra de ribbon) para crear el archivo telemático que se enviará al banco;  
+  5. Abre la lista con el botón **Documentos** (en la barra de ribbon) para acceder al archivo telemático adjunto;  
+  6. Después de abrir el archivo telemático, usa **Guardar adjunto** para descargar una copia en tu PC para enviar al banco;  
+  7. Imprime la lista o activa el indicador **Impreso**;  
+  8. Usa **Contabilizar y cerrar** si quieres contabilizar la lista.
 
 </details>
 
-1. *Inserimento dati*:  
+1. *Inserción de datos*:  
 
-> 1.1. Inserisci il *Tipo della distinta* con la combo box **Tipo**: il programma crea in automatico il numero progressivo della distinta secondo il **numeratore** collegato al tipo per **l'anno** di riferimento.  
->1.2. La **data di presentazione** è proposta come data *oggi* e può essere cambiata se necessario.  
->1.3. La **divisa** della distinta viene proposta sulla base della divisa della società attiva: nel caso in cui sia assegnata una divisa differente dall'euro questa obbliga ad inserire nella distinta solo effetti con la stessa divisa.  
-1.4. La sezione dei **Sottoconti / Contropartite** può essere valorizzata automaticamente sulla base dell'impostazione del [**tipo distinta**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types) selezionato. Se non sono stati predefiniti i conti collegati al tipo distinta inseriscili manualmente nei due campi (widget): 
->> - **Banca conto corrente** (si tratta del sottoconto collegato all'anagrafica banca sul quale avverrà l'accredito finale al buon fine dell'operazione) e      
->> - **Contropartita presentato al salvo buon fine / sconto / dopo incasso** (conto transitorio di presentazione; in fase di *contabilizzazione della distinta* sarà stornato il *conto del portafoglio attivo* e accreditate le somme sul presente conto, successivamente, in fase di contabilizzazione accredito, da questo conto le somme saranno girocontate al conto *Banca conto corrente*).  
-> 1.5. Se hai definito nell'anagrafica della banca un valore limite per il castelletto, l'importo concesso e residuo utilizzabile saranno visualizzati nella sezione *Situazione castelletto bancario*.  
+> 1.1. Ingresa el *Tipo de la lista* con el cuadro combinado **Tipo**: el programa crea automáticamente el número progresivo de la lista según el **numerador** asociado al tipo para el **año** de referencia.  
+> 1.2. La **fecha de presentación** se propone como fecha *hoy* y puede cambiarse si es necesario.  
+> 1.3. La **divisa** de la lista se propone en función de la divisa de la empresa activa: en caso de que se asigne una divisa diferente al euro, esto obliga a ingresar en la lista solo efectos con la misma divisa.  
+> 1.4. La sección de **Subcuentas / Contrapartidas** se puede completar automáticamente en función de la configuración del [**tipo de lista**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types) seleccionado. Si no se han predefinido las cuentas asociadas al tipo de lista, ingrésalas manualmente en los dos campos (widget):  
+>> - **Banco cuenta corriente** (se trata de la subcuenta relacionada con la base de datos del banco en la que se realizará el abono final al buen término de la operación) y  
+>> - **Contrapartida presentada al cobro / descuento / después de cobro** (cuenta transitoria de presentación; en la fase de *contabilización de la lista*, se anulará la *cuenta del portafolio activo* y se abonarán las sumas a esta cuenta, posteriormente, en la fase de contabilización del abono, desde esta cuenta las sumas se transferirán a la cuenta *Banco cuenta corriente*).  
+> 1.5. Si has definido en la base de datos del banco un valor límite para el cajón, el importe concedido y el residuo utilizable se visualizarán en la sección *Situación del cajón bancario*.  
+> 
+Si has completado el valor del cajón en la sección *Diferenciado* (en lugar de *Global*), establece la tipología de lista en creación con los botones de opción en la sección **Tipo de presentación** para gestionar específicamente los valores del cajón *Concedido* y *Residuo*.
 
-Se hai compilato il valore del castelletto nella sezione *Differenziato* (anzichè *Globale*) imposta la tipologia di distinta in creazione con i radio buttons nella sezione **Tipo presentazione** per gestire specificamente i valori del castelletto *Concesso* e *Residuo*.
+2. **Guarda** el encabezado de la lista recién creada. Una vez guardada la lista, se activarán los diferentes botones de gestión en la barra de ribbon.
 
-2. **Salva** la testata della distinta appena creata. Una volta salvata la distinta saranno, infatti, attivati i vari pulsanti di gestione nella ribbon bar. 
+3. Usa el botón **Adquisición de efectos** (en la barra de ribbon) para insertar los efectos previamente creados en la lista. Este comando abre una máscara de búsqueda de efectos emitidos pero que aún no se han presentado en la lista. ATENCIÓN: Desde esta máscara, solo será posible insertar en la lista los efectos completos de los datos ABI/CAB necesarios.  
 
-3. Usa il pulsante **Acquisizione effetti** (nella ribbon bar) per inserire gli effetti precedentemente creati nella distinta. In particolare questo comando apre una maschera di ricerca degli effetti emessi ma non ancora presentati in distinta. ATTENZIONE: Da questa maschera sarà possibile inserire in distinta solo gli effetti completi dei riferimenti abi/cab necessari.
+La inserción de efectos en la lista actualiza el *Total de la lista* visualizado en la parte inferior del formulario: para eliminar un efecto de la lista, basta con seleccionarlo y presionar el botón *Supr* del teclado, o el botón ***Eliminar Efectos*** en la barra de ribbon.
 
-L'inserimento degli effetti in distinta aggiorna il *Totale distinta* visualizzato in basso nella form: per eliminare dalla distinta un effetto sarà sufficiente selezionarlo e premere il pulsante *Canc* della tastiera, Oppure il bottone ***Cancella Effetti*** dalla ribbon bar.
+4. Usa el botón **Generación de archivo Ri.Ba.** para crear el archivo telemático de la lista que se enviará al banco. Alternativamente, dependiendo del tipo de lista creada, están disponibles las exportaciones para formatos SDD (ex RID ahora a nivel Sepa Europeo) y LCR (Francés).
 
-4. Usa il pulsante **Generazione file Ri.Ba.** per creare il tracciato telematico della distinta da inviare alla banca. In alternativa, a seconda del tipo di distinta creata, sono disponibili le esportazioni per tracciati SDD (ex RID ora a livello Sepa Europeo) ed LCR (Francese).
+5. Abre la documentación con el botón **Documentos** (en la barra de ribbon) para descargar en tu PC el archivo que se enviará al banco.  
 
-5. Apri il documentale con il pulsante **Documenti** (nella ribbon bar) per scaricare sul tuo PC il file da inviare alla banca.  
+6. Después de abrir el documento en la documentación, usa el botón **Guardar adjunto** para descargar una copia en tu PC para enviar al banco.
 
-6. Dopo aver aperto il documento nel documentale usa il pulsante **Salva allegato** per scaricare una copia sul tuo PC da inviare alla banca.
-
-7. Una volta completata la distinta sarà possibile procedere alla **stampa** diretta della stessa (oppure attivare il flag *Stampato*). 
+7. Una vez completada la lista, será posible proceder a la **impresión** directa de la misma (o activar el indicador *Impreso*).
 
 :::tip[Info]
-Lo **stato di distinta stampata è necessaria per poter procedere alla sua contabilizzazione**, che può essere eseguita direttamente da questa maschera con il pulsante **Contabilizza e chiudi**: sarà necessario aver predefinito la causale contabile all'interno dei parametri del modulo.
+El **estado de lista impresa es necesario para poder proceder a su contabilización**, que se puede realizar directamente desde esta máscara con el botón **Contabilizar y cerrar**: será necesario haber predefinido el motivo contable dentro de los parámetros del módulo. 
 :::
 
-8. Usa il pulsante **Contabilizza e chiudi** se serve contabilizzare la distinta.
+8. Usa el botón **Contabilizar y cerrar** si necesitas contabilizar la lista.
 
 :::note[Nota]
-La situazione del castelletto bancario propone i dati del castelletto sbf memorizzato in anagrafica banca *Conto corrente* e il residuo disponibile sulla base dell'importo degli effetti presentati ma non ancora accreditati.
+La situación del cajón bancario propone los datos del cajón SBf almacenados en la base de datos del banco *Cuenta corriente* y el saldo disponible de acuerdo con el importe de los efectos presentados pero aún no acreditados.  
 
-Una serie di flag memorizza se la distinta è stata: 
-- stampata (questa condizione è obbligatoria per poter procedere alla sua contabilizzazione), 
-- se è stato **creato** un **File** telematico, 
-- se è stata **Contabilizzata** e 
-- se si tratta di una distinta **RID** relativa a **utenze** oppure LCR.
+Una serie de indicadores almacena si la lista ha sido:  
+- impresa (esta condición es obligatoria para poder proceder a su contabilización),  
+- si se ha **creado** un **Archivo** telemático,  
+- si ha sido **Contabilizada** y  
+- si se trata de una lista **RID** relacionada con **servicios** o LCR.  
 :::
 
-### La scheda **Pagamenti** 
+### La pestaña **Pagos** 
 
-- è attiva **solo nel caso di** tipo distinta con flag ***Effetti a fornitore***
+- está activa **solo en el caso de** tipo de lista con indicador ***Efectos a proveedor***
 
-- è dedicata all'individuazione delle partite fornitori da chiudere con il giro degli effetti presenti nella distinta stessa. 
+- está dedicada a la identificación de las partidas de proveedores que se cerrarán con la transferencia de los efectos presentes en la lista misma.  
 
-Il totale della sezione **Pagamenti** dovrà essere uguale al totale degli effetti girati: per ottenere questa uguaglianza è consentito l'inserimento di una riga manuale di differenza, che sarà gestita come apertura partita in capo al fornitore se la causale contabile utilizzata prevede l'apertura partite stessa.
+El total de la sección **Pagos** deberá ser igual al total de los efectos transferidos: para lograr esta igualdad se permite la inserción de una fila manual de diferencia, que se gestionará como apertura de partida a favor del proveedor si el motivo contable utilizado prevé la apertura de partidas misma.  
 
-**Pulsanti specifici**:
+**Botones específicos**:  
 
-*Nuovo pagamento*: Attiva il cursore in una nuova riga di pagamento.
+*Nueva pago*: Activa el cursor en una nueva fila de pago.  
 
-*Cancella pagamenti*: Cancella i pagamenti selezionati nella griglia.
+*Eliminar pagos*: Elimina los pagos seleccionados en la cuadrícula.  
 
-*Pagamenti da partite:* Apre la maschera di help partite, dalla quale selezionare le partite fornitore da chiudere.
+*Pagos de partidas:* Abre la máscara de ayuda sobre partidas, desde la cual seleccionar las partidas de proveedor a cerrar.

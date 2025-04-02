@@ -1,14 +1,14 @@
 ---
-title: Parametri ticket per operatore
+title: parametri ticket per operatore
 sidebar_position: 2
 ---
 
-In questa maschera è possibile inserire alcuni dati di default da proporre quando i diversi operatori inseriscono i ticket. 
+En esta máscara es posible ingresar algunos datos predeterminados que se propondrán cuando los diferentes operadores ingresen los tickets.
 
-#### Campi specifici
+#### Campos específicos
 
-- **Operatore**: contiene l'operatore precodificato per il quale proporre i successivi dati al momento di inserimento di un [Nuovo ticket](/docs/crm/helpdesk/tickets) da parte di questo operatore.       
-- **Tipo**: contiene il Tipo ticket da proporre per questo operatore.      
-- **Conto/Sottoconto/Descrizione**: contiene il cliente da proporre nel ticket per l'operatore inserito.     
-*- *Progetto**: contiene il progetto da inserire nel ticket per l'operatore inserito.            
-Questi dati saranno modificabili al momento dell'inserimento ticket.   
+- **operatore**: contiene el operador precodificado para el cual se propondrán los datos siguientes al momento de insertar un [Nuevo ticket (Nuovo ticket)](/docs/crm/helpdesk/tickets) por parte de este operador.  
+- **tipo**: contiene el tipo de ticket que se propondrá para este operador.  
+- **Cuenta/Subcuenta/Descripción (Conto/Sottoconto/Descrizione)**: contiene el cliente que se propondrá en el ticket para el operador ingresado.  
+- **progetto**: contiene el proyecto a insertar en el ticket para el operador ingresado.  
+Estos datos serán modificables al momento de la inserción del ticket.

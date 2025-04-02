@@ -1,22 +1,22 @@
 ---
-title: Ricerca Storico consegne/resi D.P.I.
+title: Búsqueda de Histórico de entregas/devoluciones de E.P.P. (Ricerca Storico consegne/resi D.P.I.)
 sidebar_position: 2
 ---
 
-Il filtro si trova sul percorso **Home > Dipendenti > Consegne/resi D.P.I. > Storico consegne/resi D.P.I.**.   
+El filtro se encuentra en la ruta **Inicio > Empleados > Entregas/devoluciones de E.P.P. > Histórico de entregas/devoluciones de E.P.P.**.
 
-Il filtro dati consente di inserire nuove *Consegne/Resi D.P.I.* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+El filtro de datos permite ingresar nuevas *Entregas/Devoluciones de E.P.P.* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.
 
-### ![](/img/neutral/common/search.png) Ricerca Storico consegne/resi D.P.I.
+### ![](/img/neutral/common/search.png) Búsqueda de Histórico de entregas/devoluciones de E.P.P.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+El formulario consta de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para mostrar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/new.png) Inserimento Consegna/Reso D.P.I.
+### ![](/img/neutral/common/new.png) Ingreso de Entrega/Devolución de E.P.P.
 
-Per poter inserire nuove *Consegne/Resi D.P.I.* è necessario premere il pulsante **Nuovo**.   
+Para ingresar nuevas *Entregas/Devoluciones de E.P.P.*, es necesario presionar el botón **nuovo**.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Storico consegne/resi D.P.I.
+### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización del Histórico de entregas/devoluciones de E.P.P.
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Para abrir la gestión de la cuadrícula de resultados, es necesario hacer doble clic en la fila de nuestro interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

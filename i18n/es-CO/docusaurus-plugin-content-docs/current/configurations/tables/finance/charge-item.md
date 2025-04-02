@@ -1,12 +1,12 @@
 ---
-title: Voci di spesa
+title: voci di spesa
 sidebar_position: 31
 ---
 
-La definizione della tabella delle voci di spesa consente di codificare delle voci da associare al piano dei conti per fini statistici.
+La definición de la tabla de cuentas de gasto permite codificar cuentas que se asociarán al plan de cuentas con fines estadísticos.
 
-#### Campi specifici
+#### Campos específicos (Campi specifici)
 
-**Codice**: codice voci di spesa.
+**codice**: código de cuentas de gasto.  
 
-**Descrizione**: descrizione voci di spesa.
+**descrizione**: descripción de cuentas de gasto.

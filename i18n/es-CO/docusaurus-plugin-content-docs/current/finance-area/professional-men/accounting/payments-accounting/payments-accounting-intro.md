@@ -1,30 +1,22 @@
 ---
-title: Contabilizzazione pagamenti
+title: contabilizzazione pagamenti
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Filtro](/docs/finance-area/professional-men/accounting/payments-accounting/filter) **
+** [Filtro (Filtro)](/docs/finance-area/professional-men/accounting/payments-accounting/filter) **
 
-** [Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters) **
+** [Parámetros (Parametri)](/docs/finance-area/professional-men/accounting/payments-accounting/parameters) **
 
-** [Rollback](/docs/finance-area/professional-men/accounting/payments-accounting/previous) **
-
- 
-
-Con questa procedura si può eseguire la contabilizzazione dei pagamenti dei compensi percipienti inseriti a sistema.
-
-La contabilizzazione del pagamento può avvenire sia sul preavviso di parcella (senza numero e data documento definitivo), sia sulla fattura definitiva.
-
-Pertanto l'ordine con il quale potranno essere eseguite la presente procedura rispetto a quella di ** [Contabilizzazione compensi](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting) ** dipenderà dall'emissione direttamente di una fattura o di un preavviso da parte del percipiente. Questa possibilità è legata anche al fatto che il termine per il versamento della ritenuta d'acconto  scatta dal momento del pagamento e non della fatturazione.
-
-**Per la corretta gestione della ritenuta d'acconto da parte di Fluentis, si raccomanda di gestire il pagamento dei percipienti esclusivamente da questa procedura evitando di effettuare registrazioni manuali in prima nota oppure di operare dal modulo Tesoreria.**
+** [Rollback (Rollback)](/docs/finance-area/professional-men/accounting/payments-accounting/previous) **
 
  
 
+Con este procedimiento se puede llevar a cabo la contabilización de los pagos de los compensos percibidos ingresados en el sistema.
 
+La contabilización del pago puede realizarse tanto sobre el aviso de factura (sin número y fecha del documento definitivo), como sobre la factura definitiva.
 
+Por lo tanto, el orden con el cual se podrá ejecutar el presente procedimiento en relación con el ** [Contabilización de compensos (Contabilizzazione compensi)](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting) ** dependerá de la emisión directa de una factura o de un aviso por parte del perceptor. Esta posibilidad también está relacionada con el hecho de que el plazo para el pago de la retención de impuesto se inicia desde el momento del pago y no de la facturación.
 
-
-
+**Para la correcta gestión de la retención de impuesto por parte de Fluentis, se recomienda gestionar el pago de los perceptores exclusivamente a través de este procedimiento, evitando realizar registros manuales en la primera nota o operar desde el módulo de Tesorería.**

@@ -1,59 +1,56 @@
 ---
-title: Gestione Cespiti
+title: gestione cespiti
 sidebar_position: 3
 ---
 
-LINK:
+ENLACE:
 
-**[Dettaglio](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
+**[Detalle (Dettaglio)](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
 
-**[Operazioni Patrimoniali](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
+**[Operaciones Patrimoniales (Operazioni Patrimoniali)](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
 
-**[Operazioni Economiche](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
+**[Operaciones Económicas (Operazioni Economiche)](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
 
-**[Cespiti collegati](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
+**[Activos Fijos Vinculados (Cespiti collegati)](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
 
-**[Proprietà cespiti](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
-
- 
-
-Dalla presente form è possibile inserire manualmente una nuova scheda cespite (questo tipo di operazione non è normalmente previsto, un esempio pratico può essere l'inserimento di cespiti pregressi di cui non si intende caricare la registrazione contabile già presente, magari, su un precedente software).
-
-Questa procedura è alternativa all'inserimento della scheda direttamente dalla registrazione contabile della fattura di acquisto configurata appositamente per la gestione cespiti (procedura, quest'ultima, consigliata).
+**[Propiedad de Activos Fijos (Proprietà cespiti)](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
 
  
 
-**Testata**
+Desde este formulario es posible ingresar manualmente una nueva ficha de activo fijo (este tipo de operación no es normalmente previsto, un ejemplo práctico puede ser la inclusión de activos fijos anteriores de los cuales no se pretende cargar el registro contable ya presente, tal vez, en un software anterior).
 
-Impostazione della **Categoria cespite** d'appartenenza: selezionare la categoria dalla combo box (collegata alla tabella **[categoria cespite](/docs/configurations/tables/finance/fixed-asset-category)**);
-
-**Tipo proprietà**: normalmente di proprietà come proposto di default; sono previsti anche i cespiti in leasing e a noleggio, che sono numerati separatamente dagli altri e non finiscono nelle stampe del libro cespiti ammortizzabili. Questa gestione consente di simulare il calcolo degli ammortamenti di fine anno per la comparazione al canone di leasing pagato al fine del calcolo delle imposte. In caso di cespite non di proprietà sarà possibile inserire qualche nota di riferimento al contratto relativo.
-
-**Divisione**: impostata di default sulla divisione in uso, può essere variata in caso di necessità. Il campo può essere impostato unicamente al momento dell'inserimento del nuovo cespite, non potendo poi più essere modificato.
-
-**Tipo contab. **: (tipo contabilizzazione): campo normalmente non valorizzato in fase di inserimento manuale della scheda, viene valorizzato nella registrazione contabile per imporre un conto di contropartita particolare (definito nella tabella Tipi contabilizzazione cespiti) rispetto a quello definito nella categoria cespite di appartenenza.
+Este procedimiento es alternativo a la inserción de la ficha directamente desde el registro contable de la factura de compra configurada especialmente para la gestión de activos fijos (procedimiento, este último, recomendado).
 
  
 
-**Precodice**: può essere attribuito alla numerazione del cespite; se non inserito, infatti, la numerazione proposta sarà unica su tutti i cespiti della società/divisione attiva, inserendo un precodice il numero del cespite sarà univoco per ognuno dei precodici esistenti.
+**testata**
 
+Configuración de la **categoria cespite**: seleccionar la categoría del cuadro combinado (conectada a la tabla **[categoría de activo fijo (categoria cespite)](/docs/configurations/tables/finance/fixed-asset-category)**);  
 
-**Mat./Immat.**: natura del cespite (materiale o immateriale); viene proposto in automatico sulla base del dato contenuto nella categoria cespite di appartenenza.
+**tipo proprietà**: normalmente de propiedad como se propone por defecto; también se prevén los activos fijos en leasing y en alquiler, que están numerados por separado de los demás y no aparecen en las impresiones del libro de activos fijos amortizables. Esta gestión permite simular el cálculo de las amortizaciones de fin de año para la comparación con el canon de leasing pagado, a fin de calcular los impuestos. En caso de activo fijo no propietario, será posible ingresar alguna nota de referencia al contrato correspondiente.
 
+**divisione**: configurada por defecto en la división en uso, puede variar si es necesario. El campo solo se puede configurar en el momento de la inserción del nuevo activo fijo, no pudiendo ser modificado después.  
 
-**Note propr.**: campo note libero
- 
-
-**Numero cespite**: proposto automaticamente in ordine progressivo, può essere forzato manualmente nel rispetto dell'univocità (anche in relazione al precodice).
-
-
-**Descrizione del cespite**: campo obbligatorio, sarà visualizzata e riportata nelle varie stampe e procedure del modulo. 
+**tipo contab.**: campo normalmente no completado en la fase de inserción manual de la ficha, se completa en el registro contable para imponer una cuenta de contrapartida particular (definida en la tabla Tipos de contabilización de activos fijos) en comparación con la que se define en la categoría de activo fijo a la que pertenece.  
 
  
 
-A seconda delle impostazioni delle categorie cespiti e dei parametri del modulo, può essere visibile anche il tipo di ammortamento oggettivo assegnato al cespite, con, eventualmente, una percentuale specifica da utilizzare per il cespite stesso al posto dello standard del tipo.
+**precodice**: puede ser atribuido a la numeración del activo fijo; si no se inserta, la numeración propuesta será única sobre todos los activos fijos de la empresa/división activa, al insertar un precódigo, el número del activo fijo será único para cada uno de los precódigos existentes.
+
+
+**Mat./Inmat. (Mat./Immat.)**: naturaleza del activo fijo (material o inmaterial); se propone automáticamente en función de los datos contenidos en la categoría de activo fijo a la que pertenece.
+
+
+**note propr.**: campo de notas libre
+ 
+
+**numero cespite**: propuesto automáticamente en orden progresivo, puede ser forzado manualmente respetando la unicidad (también en relación con el precódigo).
+
+
+**descrizione del cespite**: campo obligatorio, será visualizada y registrada en las diversas impresiones y procedimientos del módulo. 
+
+ 
+
+Dependiendo de la configuración de las categorías de activos fijos y de los parámetros del módulo, también puede ser visible el tipo de amortización objetiva asignado al activo fijo, con, eventualmente, un porcentaje específico a utilizar para el activo mismo en lugar del estándar del tipo.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/image01.png)
-
-
-

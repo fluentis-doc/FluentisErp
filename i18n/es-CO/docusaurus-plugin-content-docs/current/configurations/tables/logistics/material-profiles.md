@@ -1,28 +1,28 @@
 ---
-title: Profili materiale
+title: profili materiale
 sidebar_position: 7
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Profili materiale**.  
+La tabla se encuentra en la ruta **Tablas > Logística > profili materiale (Tabelle > Logistica > Profili materiale)**.  
 
-In questa tabella è possibile codificare i diversi *Profili materiale* da associare ai singoli articoli.  
-Un esempio di utiizzo lo troviamo all'interno dell'Anagrafica Articolo nel tabulatore [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) sotto la voce *Profilo*.  
+En esta tabla es posible codificar los diferentes *profili materiale* para asociarlos a los artículos individuales.  
+Un ejemplo de uso se encuentra dentro del Registro de Artículo en la pestaña [Pesos/Dimensiones (Pesi/Dimensioni)](/docs/erp-home/registers/items/create-new-item) bajo la casilla *profilo*.  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Profili materiale**
+**Búsqueda de profili materiale (Ricerca Profili materiale)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Profili materiale**
+**Inserción de profili materiale (Inserimento Profili materiale)**
 
-Per poter inserire nuovi *Profili materiali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *profili materiale (Profili materiali)* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-#### Campi specifici 
+#### Campos específicos (Campi specifici)
 
-> **Codice**: è il codice del *Profilo materiale*.   
-> **Descrizione**: è la descrizione del *Profilo materiale*.     
-> **Note**: annotazioni libere.  
+> **codice**: es el código del *Perfil de material (Profilo materiale)*.  
+> **descrizione**: es la descripción del *Perfil de material (Profilo materiale)*.  
+> **note**: anotaciones libres.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

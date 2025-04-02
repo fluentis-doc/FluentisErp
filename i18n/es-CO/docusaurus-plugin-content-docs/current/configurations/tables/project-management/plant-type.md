@@ -1,7 +1,6 @@
 ---
-title: Tipo Impianto
+title: tipo impianto
 sidebar_position: 8
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Tipi impianto** e contiene l’elenco delle tipologie di impianto. È possibile ricercare, creare e cancellare gli impianti, che vengono codificati attraverso un **Codice** ed una **Descrizione**.
-
+Esta tabla es accesible desde **tipi impianto** y contiene la lista de los tipos de instalación. Es posible buscar, crear y eliminar las instalaciones, que se codifican a través de un **codice** y una **descrizione**.

@@ -1,24 +1,24 @@
 ---
-title: Tipo Piano di Carico
+title: tipo piano di carico
 sidebar_position: 56
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Piano di Carico*.
+La tabla permite gestionar la codificación de los diferentes tipos de *tipo piano di carico*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipo Piano di Carico**
+**Búsqueda de tipo piano di carico (Ricerca Tipo Piano di Carico)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consiste en un área de filtro y una de resultados. Una vez que se hayan establecido todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipo Piano di Carico**
+**Ingreso de tipo piano di carico (Inserimento Tipo Piano di Carico)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-#### Campi specifici
+#### Campos específicos (Campi specifici)
 
-> **Codice**: indica il codice del Tipo Piano di Carico;           
-> **Descrizione**: indica la descrizione del Tipo Piano di carico;   
-> **Predefinito**: indica il Piano di carico di default da creare;       
-> **Numerazione**: indica la [Numerazione](/docs/configurations/tables/fluentis-numerations);       
-> **Automezzo**: indica l'[Automezzo](/docs/logistics/motorvehicles/motorvehicle) configurato per questa tipologia di piano di carico.
+> **codice**: indica el código del tipo piano di carico;  
+> **descrizione**: indica la descripción del tipo piano di carico;  
+> **predefinito**: indica el Plan de Carga por defecto a crear;  
+> **numerazione**: indica la [Numeración (Numerazione)](/docs/configurations/tables/fluentis-numerations);  
+> **automezzo**: indica el [Vehículo (Automezzo)](/docs/logistics/motorvehicles/motorvehicle) configurado para este tipo de plan de carga.

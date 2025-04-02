@@ -1,42 +1,42 @@
 ---
-title: Commessa Multiprodotto
+title: Pedido Multiproduto (Commessa Multiprodotto)
 sidebar_position: 5
 ---
 
-La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sul pulsante **Inserisci commessa multiprodotto**.
+El formulario se abre mediante la ruta **Planificación > Pedidos de producción (Pianificazione > Commesse di produzione)** haciendo clic en el botón **inserisci commessa multiprodotto** en el formulario **commesse di produzione**.
 
-## Pulsanti specifici
+## Botones específicos
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;  
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): mediante este botón se puede abrir la pantalla relacionada con los parámetros MRP del artículo;  
+> [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite abrir la pantalla relacionada con la lista de materiales del artículo;  
+> [Rutas de trabajo (Cicli di lavoro)](/docs/erp-home/registers/production/routes/new-route): permite visualizar el ciclo de trabajo y las fases de producción relacionadas del artículo.
 
-## Gestione commesse multiprodotto
+## Gestión de pedidos multiprodutos (Gestione commesse multiprodotto)
 
-Questo tab si presenta uguale a quello presente nella schermata di [inserimento commesse monoprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
+Esta pestaña se presenta igual que la que se encuentra en la pantalla de [inserción de pedidos monoproduto (inserimento commesse monoprodotto)](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
 
-La *differenza sostanziale* sta nel fatto che non è presente una sezione in cui viene inserito l'articolo con i suoi relativi dati come avviene per la creazione di una commessa monoprodotto, ma bensi questo spazio è sostituito da una griglia che permette l'inserimento non di uno, ma di più articoli essendo appunto una commessa multiprodotto.
+La *diferencia sustancial (differenza sostanziale)* radica en que no hay una sección donde se inserte el artículo con sus datos correspondientes, como ocurre para la creación de un pedido monoproduto, sino que este espacio es reemplazado por una cuadrícula que permite la inserción no de uno, sino de varios artículos, siendo por lo tanto un pedido multiproduto.
 
-I campi presenti nella griglia, sono gli stessi della [commessa monoprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); l'unica differenza è il campo **Progressivo** che è un campo editabile dall'utente,  in cui viene proposto un progressivo di riga della *Commessa di Produzione Multiprodotto* e le date di previsto inizio/fine, la data suggerita e la data di inizio e fine previsione vengono specificate per ogni articolo presente nella commessa multiprodotto (resta comunque la sezione Data prevista e Data effettiva riferite allo stato complessivo della commessa multiprodotto).
+Los campos presentes en la cuadrícula son los mismos de la [orden monoproduto (commessa monoprodotto)](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); la única diferencia es el campo **progressivo** que es un campo editable por el usuario, donde se propone un número de línea del *Pedido de Producción Multiproduto*, y las fechas de inicio y fin previstas, la fecha sugerida y la fecha de inicio y fin de previsión se especifican para cada artículo presente en el pedido multiproduto (sin embargo, se mantiene la sección Fecha prevista y Fecha efectiva referidas al estado general del pedido multiproduto).
 
-### Riferimenti ordini clienti
+### Referencias a pedidos de clientes (Riferimenti ordini clienti)
 
-Il tab contiene una griglia di sola lettura, in cui compaiono gli ordini clienti collegati alla commessa di produzione di riferimento quando la commessa è stata generata da una o più righe ordini clienti.  
-**Tipo/Anno/Numero**: in queste colonne vengono visualizzati il *Tipo/Anno/Numero* dell'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio;  
-**N./Quantità/*UM**: in questa colonna viene visualizzata la quantità della riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Conto**: in questa colonna vengono visualizzati conto e sottoconto del cliente a cui è intestato l'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio.
+La pestaña contiene una cuadrícula de solo lectura, donde aparecen los pedidos de clientes relacionados con el pedido de producción de referencia cuando el pedido ha sido generado a partir de una o más líneas de pedidos de clientes.  
+**Tipo/Año/Número (Tipo/Anno/Numero)**: en estas columnas se visualizan el *Tipo/Año/Número* del pedido del cliente en el que se encuentra la línea de la que se expone el detalle;  
+**N./Cantidad/*UM (N./Quantità/*UM)**: en esta columna se visualiza la cantidad de la línea del pedido del cliente de la que se expone el detalle;  
+**data merce pronta**: en esta columna se visualiza la fecha de la mercancía lista que se ha establecido en la línea del pedido del cliente de la que se expone el detalle;  
+**conto**: en esta columna se visualizan la cuenta y subcuenta del cliente a quien está dirigido el pedido del cliente en el que se encuentra la línea de la que se expone el detalle.
 
-### Extra data
+### Datos adicionales (Extra data)
 
-Anche questo tab è costituito da una griglia in cui verranno riportati tutti gli extra data collegati all'articolo presente nella commessa di produzione.
+Esta pestaña también está compuesta por una cuadrícula en la que se reportarán todos los datos adicionales relacionados con el artículo presente en el pedido de producción.
 
-##  Costificazione
+## Costificación (Costificazione)
 
-Tutte le informazioni relative alla **Costificazione** si possono consultare nella pagina [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+Toda la información relacionada con la **costificazione** se puede consultar en la página [Costificación (Costificazione)](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
-## Extra data
+## Datos adicionales (Extra data)
 
-Questo tab, che affianca il tab *Gestione commesse multiprodotto*, contiene tutto l'insieme degli [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) collegati alla commessa di produzione.
+Esta pestaña, que acompaña a la pestaña *gestione commesse multiprodotto*, contiene todo el conjunto de [datos adicionales (extra data)](/docs/configurations/utility/extra-data/extradata/search-extradata) relacionados con el pedido de producción.
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

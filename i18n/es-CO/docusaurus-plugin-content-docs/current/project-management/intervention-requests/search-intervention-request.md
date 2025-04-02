@@ -1,13 +1,13 @@
 ---
-title: Ricerca Richieste di Intervento
+title: Búsqueda de Solicitudes de Intervención (Ricerca Richieste di Intervento)
 sidebar_position: 1
 ---
 
-In questa maschera è possibile ricerca le Richieste di Intervento precedentemente inserite.
+En esta pantalla es posible buscar las Solicitudes de Intervención previamente ingresadas.
 
-*Pulsante specifico*
+*Botón específico*
 
-> **Data conferma**: permette di inserire una data di conferma alle richieste di intervento selezionate.
+> **data conferma**: permite ingresar una fecha de confirmación para las solicitudes de intervención seleccionadas.
 
 import SearchForm from './../../import/sections/search-form.md'
 

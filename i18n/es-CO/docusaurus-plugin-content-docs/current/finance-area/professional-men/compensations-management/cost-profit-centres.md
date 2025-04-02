@@ -1,23 +1,11 @@
 ---
-title: Centri di costo/profitto
+title: centri di costo/profitto
 sidebar_position: 6
 ---
 
-Le schede centri di costo/profitto consentono di valorizzare il centro di costo (e/o profitto - da non utilizzare se attiva la gestione controlling avanzata) con costi inseriti.
+Las fichas de centros de costo/beneficio permiten valorar el centro de costo (y/o beneficio - no utilizar si está activa la gestión de control avanzado) con los costos ingresados.
 
-
-
-
-
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Nuovo cdc | Inserisce il cursore nell'inserimento di una nuova riga nella sezione Centri di costo. |
-| Cancella cdc | Cancella i movimenti selezionati nella griglia dei centri di costo. |
-
-
-
-
-
-
+| Nuevo cdc (Nuovo cdc) | Inserta el cursor en la creación de una nueva línea en la sección Centros de costo. |
+| Eliminar cdc (Cancella cdc) | Elimina los movimientos seleccionados en la cuadrícula de centros de costo. |

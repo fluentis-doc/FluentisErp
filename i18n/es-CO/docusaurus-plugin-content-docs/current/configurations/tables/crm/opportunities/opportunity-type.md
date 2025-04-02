@@ -1,7 +1,7 @@
 ---
-title: Tipo Opportunità
+title: tipo opportunità
 sidebar_position: 3
 ---
 
-E' una tabella descrittiva per catalogare le **tipologie di opportunità** del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una tabella codice/descrizione, oltre alla possibilità di indicare una *Pipeline flux*da proporre in automatico all’inserimento dell’opportunità.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della probabilità, e da una griglia in cui appunto verranno elencati tutte le tipologie inserite.
+Es una tabla descriptiva para catalogar las **tipologías de oportunidades (tipologie di opportunità)** del CRM. Es común a todas las empresas presentes en la base de datos y está constituida por una tabla de código/descrición, además de la posibilidad de indicar un *pipeline flux* para proponer automáticamente al ingresar la oportunidad.  
+Está compuesta por una parte de filtro en la que se puede buscar a través del código o la descripción de la probabilidad, y por una cuadrícula donde se enumerarán todas las tipologías ingresadas.

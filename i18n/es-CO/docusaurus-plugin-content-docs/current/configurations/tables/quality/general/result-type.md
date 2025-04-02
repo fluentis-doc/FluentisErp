@@ -1,36 +1,36 @@
 ---
-title: Tipi esito
+title: tipi esito
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi esito**.
+La tabla se encuentra en la ruta **tipi esito**.
 
-In questa tabella è possibile codificare i *Tipi esito* ottenuti successivamente a rilevazioni o ad attività.   
-Alcuni esempi di utilizzo dei *Tipi esito* li troviamo nelle gestioni:
-> **Tipi prova** - nel tabulatore *Esiti possibili*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*;   
-> **Taratura strumento** - nei *dati di testata* e nel tabulatore *Valori rilevati*;   
-> **Azioni correttive** - nei tabulatori *Verifiche prossimo audit* e *Programmi azione correttiva*.   
+En esta tabla es posible codificar los *tipi esito* obtenidos posteriormente a mediciones o actividades.  
+Algunos ejemplos de uso de los *tipi esito* se encuentran en las gestiones:  
+> **tipi prova** - en la pestaña *esiti possibili*;  
+> **Control de artículos (Controllo articoli)** - en la pestaña *prove*;  
+> **certificati di analisi** - en la pestaña *Controles y valores medidos (Controlli e valori rilevati) > Valores medidos (Valori rilevati)*;  
+> **M.E.S.** - en la pestaña *Controles de calidad (Controlli qualità) > Pruebas (Prove)*;  
+> **taratura strumento** - en los *dati di testata* y en la pestaña *valori rilevati*;  
+> **azioni correttive** - en las pestañas *verifiche prossimo audit* y *programmi azione correttiva*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi esito**
+**Búsqueda de tipi esito (Ricerca Tipi esito)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserimento Tipi esito**
+**Inserción de tipi esito (Inserimento Tipi esito)**
 
-Per poter inserire nuovi *Tipi esito* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi esito* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*:  
 
-> **Esito**: è il codice del *Tipo esito*.   
-> **Descrizione esito**: è la descrizione del *Tipo esito*.   
-> **Esito positivo**: indica se l'esito deve essere riconosciuto come *positivo* o *negativo* dal sistema.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Tipi esito*.   
-> **Note**: annotazioni libere.
+> **esito**: es el código del *tipo esito*.  
+> **descrizione esito**: es la descripción del *tipo esito*.  
+> **esito positivo**: indica si el resultado debe ser reconocido como *positivo* o *negativo* por el sistema.  
+> **sequenza**: es la secuencia de visualización en las listas de los *tipi esito*.  
+> **note**: anotaciones libres.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento acerca del funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

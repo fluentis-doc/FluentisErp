@@ -1,32 +1,32 @@
 ---
-title: Tipi gruppo UDC
+title: tipi gruppo udc
 sidebar_position: 30
 ---
 
-:::important A cosa serve
-La tabella Tipo Gruppo UDC di Fluentis rappresenta un altro elemento chiave per la categorizzazione e l'organizzazione delle Unità Di Carico all'interno della logistica. Questa tabella consente agli utenti di gestire i diversi gruppi di unità di carico, facilitando la loro classificazione e l'assegnazione a specifiche categorie di utilizzo.
+:::important ¿Para qué sirve? (A cosa serve)
+La tabla Tipo Grupo UDC de Fluentis representa otro elemento clave para la categorización y organización de las Unidades de Carga dentro de la logística. Esta tabla permite a los usuarios gestionar los diferentes grupos de unidades de carga, facilitando su clasificación y la asignación a categorías específicas de uso.
 
-La form di gestione offre un'area dedicata alla ricerca con filtri personalizzabili, che aiutano a identificare rapidamente i gruppi UDC di interesse. I campi principali includono un codice alfanumerico per il tipo gruppo, una descrizione e l'identificazione del gruppo stesso, che può riferirsi a numerazioni, commesse di produzione o ordini fornitori. 
+El formulario de gestión ofrece un área dedicada a la búsqueda con filtros personalizables, que ayudan a identificar rápidamente los grupos UDC de interés. Los campos principales incluyen un código alfanumérico para el tipo de grupo, una descripción y la identificación del grupo en sí, que puede referirse a numeraciones, órdenes de producción u órdenes a proveedores. 
 :::
 
-La tabella si trova sul percorso **Tabelle** > **Logistica** > **Tipi gruppo UDC**.
+La tabla se encuentra en la ruta **tabelle** > **logistica** > **tipi gruppo udc**.
 
-La tabella di inserimento dei *Tipi gruppo UDC* è una tabella di base per l'utilizzo delle *Unità Di Carico* e viene utilizzata all'interno dei [Tipi UDC](/docs/configurations/tables/logistics/loading-unit-types).   
+La tabla de inserción de *tipi gruppo udc* es una tabla base para el uso de las *unità di carico* y se utiliza dentro de los [Tipos UDC (Tipi UDC)](/docs/configurations/tables/logistics/loading-unit-types).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi gruppo UDC**
+**Búsqueda de tipi gruppo udc (Ricerca Tipi gruppo UDC)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi gruppo UDC**
+**Inserción de tipi gruppo udc (Inserimento Tipi gruppo UDC)**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**.
 
-#### Campi specifici  
-> **Tipo**: codice alfanumerico che indica il *Tipo gruppo UDC*;   
-> **Descrizione**: è la descrizione del *Tipo gruppo UDC*;   
-> **Gruppo**: indica il gruppo che identifica l'UDC. Può essere un *Numero progressivo*, una *Commessa di produzione*, un *Ordine fornitore* oppure un *Ordine di produzione*;   
-> **Descrizione gruppo**: è la descrizione del *Gruppo* che identifica l'UDC.     
+#### Campos específicos  
+> **tipo**: código alfanumérico que indica el *Tipo de grupo UDC*;   
+> **descrizione**: es la descripción del *Tipo de grupo UDC*;  
+> **gruppo**: indica el grupo que identifica el UDC. Puede ser un *numero progressivo*, una *commessa di produzione*, una *ordine fornitore* o una *ordine di produzione*;   
+> **descrizione gruppo**: es la descripción del *Grupo* que identifica el UDC.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

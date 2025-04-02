@@ -1,40 +1,34 @@
 ---
-title: Gestione Cash flow
+title: Gestión de Cash Flow (Gestione Cash flow)
 sidebar_position: 2
 ---
 
-Da questa maschera si procede al caricamento/modifica del cash flow.
+Desde esta máscara se procede a la carga/modificación del cash flow.
 
-Da queste voci di menù è possibile creare/modificare i calcoli di simulazione del cash flow. Con la gestione manuale è possibile inserire righe manualmente oppure richiamare i dati attraverso il pulsante di acquisizione presente in testata, selezionando il tipo di flusso d'interesse che aprirà la maschera di ricerca e selezione relativa.
+Desde estas opciones de menú, es posible crear/modificar los cálculos de simulación del cash flow. Con la gestión manual, se pueden ingresar líneas manualmente o recuperar los datos a través del botón de adquisición presente en la cabecera, seleccionando el tipo de flujo de interés que abrirá la máscara de búsqueda y selección correspondiente.
 
-Da questa maschera è anche possibile visualizzare il documento d'origine per valutarne i dati.
+Desde esta máscara también es posible visualizar el documento de origen para evaluar los datos.
 
-#### Pulsanti specifici
+#### Botones específicos
 
-> **Salva**: Salva il cash flow in gestione.  
-> **Ricerca tutti**: Esegue la ricerca dei flussi per i conti finanziari.  
-> **Ricerca movimenti cash flow**: Esegue la ricerca dei movimenti per i tipi di flusso previsionale.  
-> **Acquisizione**: Da questo pulsante l'utente può selezionare il tipo di flusso dal quale riprendere i dati previsionali da inserire nel cash flow in uso. Ogni dettaglio di questo pulsante aprirà un help contestuale specifico per il tipo di flusso, vedi applicazione a.  
-> **Nuovo mov. cont.**: Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti dei conti finanziari.  
-> **Nuovo mov. flow**: Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti previsionali.  
-> **Ripristino tutti**: Cancella tutti i movimenti inseriti.  
-> **Ripristino contabilità**: Cancella i movimenti dei conti finanziari.  
-> **Ripristino cash flow**: Cancella i movimenti previsionali.  
-> **Visualizza doc. orig.**: Visualizza il documento d'origine del flusso previsionale selezionata.  
+> **salva**: Guarda el cash flow en gestión.  
+> **ricerca tutti**: Realiza la búsqueda de los flujos para las cuentas financieras.  
+> **ricerca movimenti cash flow**: Realiza la búsqueda de los movimientos para los tipos de flujo previsional.  
+> **acquisizione**: Desde este botón, el usuario puede seleccionar el tipo de flujo del cual recuperar los datos previsionales a insertar en el cash flow en uso. Cada detalle de este botón abrirá una ayuda contextual específica para el tipo de flujo, ver aplicación a.  
+> **Nuevo movimiento contable (Nuovo mov. cont.)**: Activa el cursor para ingresar una nueva línea de detalle en los movimientos de las cuentas financieras.  
+> **nuovo mov. flow**: Activa el cursor para ingresar una nueva línea de detalle en los movimientos previsionales.  
+> **ripristino tutti**: Elimina todos los movimientos ingresados.  
+> **ripristino contabilità**: Elimina los movimientos de las cuentas financieras.  
+> **ripristino cash flow**: Elimina los movimientos previsionales.  
+> **Visualizar doc. orig. (Visualizza doc. orig.)**: Visualiza el documento de origen del flujo previsional seleccionado.  
 
-**PULSANTE (lista) *ACQUISIZIONE*:**
+**BOTÓN (lista) *ADQUISICIÓN* (ACQUISIZIONE):**
 
- 1. Partite: la maschera consente di riprendere la partite contabili dalla contabilità;
- 2. Contabilità: la maschera consente di riprendere i saldi dei tipi conto finanziari;
- 3. Extra contabile: la maschera consente di riprendere i dati delle scadenze extracontabili di cash flow;
- 4. Fatture (acquisto/vendita): da queste maschere si selezionano i dati delle scadenze fatture di acquisto/vendita ;
- 5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Si consiglia di lasciare l'impostazione di default della maschera;
- 6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
- 7. DDT (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
- 8. Conto lavoro (ordini/rientri): le maschere consentono di riprendere i dati dagli ordini di conto lavoro e dai relativi rientri non fatturati (lasciare le impostazioni di default di entrambe la maschere).
-
-
-
-
-
-
+1. Partidas: la máscara permite recuperar las partidas contables desde la contabilidad;  
+2. Contabilidad: la máscara permite recuperar los saldos de los tipos de cuentas financieras;  
+3. Extra contable: la máscara permite recuperar los datos de las fechas de vencimiento extracontables del cash flow;  
+4. Facturas (compra/venta): desde estas máscaras se seleccionan los datos de las fechas de vencimiento de las facturas de compra/venta;  
+5. Órdenes (clientes/proveedores): desde estas máscaras se seleccionan las simulaciones de los datos restantes de los pedidos de clientes/proveedores (imprimidos y confirmados). Se aconseja dejar la configuración predeterminada de la máscara;  
+6. Perceptores no contabilizados: la máscara permite ingresar en el cash flow los datos de los compensos de perceptores no contabilizados;  
+7. DDT (venta/compra): las máscaras permiten recuperar los datos de DDT no valorados en factura;  
+8. Cuenta trabajo (órdenes/entradas): las máscaras permiten recuperar los datos de los pedidos de cuenta de trabajo y de las entradas relacionadas no facturadas (dejar las configuraciones predeterminadas de ambas máscaras).

@@ -1,38 +1,36 @@
 ---
-title: Tipi di Attività
-sidebar_label: Tipi di Attività
+title: Tipos de Actividad (Tipi di Attività)
+sidebar_label: Tipos de Actividad (Tipi di Attività)
 sidebar_position: 2
 ---
 
-I tipi di **Attività** disponibili sono:
+Los tipos de **attività** disponibles son:
 
-**Generate Script**
-> Consente di creare uno script generico, utilizzando la libreria **Blockly** oppure scrivendo direttamente del codice **C#**.
+**Generar Script (Generate Script)**  
+> Permite crear un script genérico, utilizando la biblioteca **Blockly** o escribiendo directamente código **C#**.
 
-**Data Source**
-> Consente di selezionare un Data Source - dal tab **Configurazione Attività** - da una collezione esistente di Data Sources precedentemente creata dall'utente (da Fluentis).   
-> Un'attività di tipo Data Source permette di creare un'attività utilizzabile in un task che ritorna il record-set di un datasource realizzato in Fluentis gestendo eventuali parametri di input.
-
-
-<!-- :::success Video Tutorial
-A questo link **[video](https://youtu.be/egDCFGZOu14)** troverai la spiegazione su questo tipo di attività.
-::: -->
-
-**Run Report**
-> L'attività di tipo Run Report permette di creare e salvare un'attività che andrà a generare un report con un possibile set di parametri di input.
-
-**SQL Query**
-> L'attività di tipo SQL Query permette di creare e salvare un'attività che andrà ad eseguire una query SQL e a ritornarne il record set. Supervisor permetterà di eseguire due tipi di attività SQL Query:
-> Basata su una Linked Query, ovvero una query creata in Fluentis tramite il Fluentis Query Studio.
-> Basata su uno script, ovvero una query SQL scritta manualmente in questo contesto.
+**data source**  
+> Permite seleccionar una Fuente de Datos - desde la pestaña **configurazione attività** - de una colección existente de Fuentes de Datos previamente creadas por el usuario (desde Fluentis).   
+> Una actividad de tipo Fuente de Datos permite crear una actividad utilizable en una tarea que devuelve el conjunto de registros de una fuente de datos realizada en Fluentis gestionando posibles parámetros de entrada.
 
 <!-- :::success Video Tutorial
-A questo link **[video](https://youtu.be/bzyelPIs9tk)** troverai la spiegazione su questo tipo di attività.
+A este link **[video](https://youtu.be/egDCFGZOu14)** encontrarás la explicación sobre este tipo de actividad.
 ::: -->
 
-**Stored Procedure**
-> L'attività di tipo Stored Procedure permette di creare e salvare un'attività che andrà ad eseguire una Stored Procedure con un po ssibile set di parametri di input e un possibile set di parametri di output.
+**Ejecutar Reporte (Run Report)**  
+> La actividad de tipo Ejecutar Reporte permite crear y guardar una actividad que generará un reporte con un posible conjunto de parámetros de entrada.
 
-**Mail Template**
-> L'attività di tipo Mail template permette di creare e salvare un'attività che andrà a generare un template per l'eventuale e-mail da inviare basata sui tempalte word e di inviare e-mail multiple tramite i parametri preconfigurati tra cui ToFieldFormula.
+**sql query**  
+> La actividad de tipo Consulta SQL permite crear y guardar una actividad que ejecutará una consulta SQL y devolverá su conjunto de registros. Supervisor permitirá ejecutar dos tipos de actividades de Consulta SQL:  
+> Basada en una Consulta Enlazada (Linked Query), es decir, una consulta creada en Fluentis a través del Fluentis Query Studio.  
+> Basada en un script, es decir, una consulta SQL escrita manualmente en este contexto.
 
+<!-- :::success Video Tutorial
+A este link **[video](https://youtu.be/bzyelPIs9tk)** encontrarás la explicación sobre este tipo de actividad.
+::: -->
+
+**stored procedure**  
+> La actividad de tipo Procedimiento Almacenado permite crear y guardar una actividad que ejecutará un Procedimiento Almacenado con un posible conjunto de parámetros de entrada y un posible conjunto de parámetros de salida.
+
+**mail template**  
+> La actividad de tipo Plantilla de Correo permite crear y guardar una actividad que generará una plantilla para el eventual correo electrónico a enviar basada en las plantillas de Word y para enviar correos electrónicos múltiples a través de los parámetros preconfigurados, incluyendo ToFieldFormula.

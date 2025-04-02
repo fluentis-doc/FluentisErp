@@ -1,54 +1,53 @@
 ---
-title: Unità di misura
+title: unità di misura
 sidebar_position: 9
 ---
 
+Ruta del formulario: **Tablas > Configuraciones generales > unità di misura (Tabelle > Impostazioni generali > Unità di misura)**
 
-Percorso form: **Tabelle > Impostazioni generali > Unità di misura**
+La tabla permite la definición de las varias unidades de medida presentes en el sistema y de sus respectivos atributos de detalle.
 
-La tabella consente la definizione delle varie unità di misure presenti a sistema e dei relativi attributi di dettaglio.
- 
-### Unità di misura
+### unità di misura (Unità di misura)
 
-dove codificare la nuova unità di misura e attribuire le caratteristiche principali
+donde codificar la nueva unidad de medida y atribuir las características principales
 
-#### Campi specifici
+#### Campos específicos (Campi specifici)
 
-**U.M. / Descrizione:** Codice e descrizione dell'unità di misura per poterla richiamare
+**U.M. / Descripción (U.M. / Descrizione):** Código y descripción de la unidad de medida para poderla recuperar.  
 
-**Rappresent. Kg:** identifica qual' è il codice che rappresenta il KG per il peso (sarà normalmente attivo sull'UM denominata Kg / Kilogrammi)
+**Represent. Kg (Rappresent. Kg):** identifica cuál es el código que representa el KG para el peso (normalmente estará activo en la U.M. denominada Kg / Kilogramos).  
 
-**UM decimali:** permette di inserire il numero dei decimali dopo la virgola per rappresentare l'unità di misura corrispondente. Ad esempio inserendo 2 accanto all'UM Kilowatt si otterranno dei valori all'interno dei documenti del tipo X,00. Inserendo il valore 3 si otterrà X,000
+**U.M. decimales (UM decimali):** permite ingresar el número de decimales después de la coma para representar la unidad de medida correspondiente. Por ejemplo, al ingresar 2 junto a la U.M. Kilovatio se obtendrán valores dentro de los documentos del tipo X,00. Al ingresar el valor 3 se obtendrá X,000.  
 
-**UM suppl. intrastat:** Unità supplementare (colonna 8 cessioni; colonna 9 acquisti): l'unità supplementare è un'unità di misura diversa dai kg previsti nella massa netta e va indicata obbligatoriamente per alcune merci laddove lo preveda la tariffa doganale. Se impostata in corrispondenza dell' UM KG sarà proposta e utilizzata nelle procedure di creazione Intrastat
+**U.M. supl. intrastat (UM suppl. intrastat):** Unidad suplementaria (columna 8 cesiones; columna 9 compras): la unidad suplementaria es una unidad de medida diferente a los kg previstos en la masa neta y debe indicarse obligatoriamente para algunas mercancías donde lo prevea la tarifa aduanera. Si se configura en correspondencia con la U.M. KG, será propuesta y utilizada en los procedimientos de creación Intrastat.  
 
-**UM pesi:** contrassegna l'unità di misura come peso (da apporre sulle UM relative)
+**U.M. pesos (UM pesi):** marca la unidad de medida como peso (que debe aplicarse a las U.M. relacionadas).  
 
-**UM volume:** contrassegna l'unità di misura come volume (da apporre sulle UM relative)
+**U.M. volumen (UM volume):** marca la unidad de medida como volumen (que debe aplicarse a las U.M. relacionadas).  
 
-**UM dimensioni:** contrassegna l'unità di misura come dimensione (da apporre sulle UM relative)
+**U.M. dimensiones (UM dimensioni):** marca la unidad de medida como dimensión (que debe aplicarse a las U.M. relacionadas).  
 
-**Riferimento:** contrassegna l'unita di misura di default proposta in automatico
+**Referencia (Riferimento):** marca la unidad de medida por defecto propuesta automáticamente.  
 
-**UM Tempo:** contrassegna l'unità di misura come tempo (da apporre sulle UM relative)
+**U.M. Tiempo (UM Tempo):** marca la unidad de medida como tiempo (que debe aplicarse a las U.M. relacionadas).  
 
-**Minuti:** contrassegna l'unità di misura come tempo in minuti (da apporre sulle UM relative)
+**Minutos (Minuti):** marca la unidad de medida como tiempo en minutos (que debe aplicarse a las U.M. relacionadas).  
 
 :::important IMPORTANTE
-**Tipo di valutazione del tempo:** campo utilizzato nel modulo controlling per definire se l'UM si di tipo Flusso o Stato.
-Es. ore macchina è flusso, mentre i metri quadri di uno stabile sono tipicamente di stato perché valido ogni mese.
+**Tipo de evaluación del tiempo (Tipo di valutazione del tempo):** campo utilizado en el módulo de control para definir si la U.M. es de tipo Flujo o Estado.  
+Por ejemplo, horas de máquina es flujo, mientras que los metros cuadrados de un edificio son típicamente de estado porque son válidos cada mes.
 :::
 
-### Conversioni tra unità di misura
+### Conversiones entre unidades de medida (Conversioni tra unità di misura)
 
-dove gestire i fattori di conversioni tra diverse unità di misura al fine di gestire nei documenti la doppia unità di misura
+donde gestionar los factores de conversiones entre diferentes unidades de medida a fin de manejar en los documentos la doble unidad de medida.
 
-**UM alternativa:** inserire l'UM nella quale dovrà essere convertita l'unità di misura principale selezionata
+**U.M. alternativa (UM alternativa):** ingresar la U.M. en la que deberá ser convertida la unidad de medida principal seleccionada.  
 
-**Fatt. Conv.:** inserire il fattore di conversione, ad es. 0,5 (valore per il quale sarà divisa o moltiplicata l'unità principale)
+**Fatt. Conv. (Fatt. Conv.):** ingresar el factor de conversión, por ejemplo, 0,5 (valor por el cual se dividirá o multiplicará la unidad principal).  
 
-**Da moltiplicare:** se non attivo divide per ..., se attivo moltiplica per il fatt. conv.
+**Da moltiplicare (Da moltiplicare):** si no está activo, divide por ..., si está activo multiplica por el fatt. conv.  
 
-### Tipo valutazione tariffa 
+### Tipo de evaluación tarifa (Tipo valutazione tariffa)
 
-Gestione non attiva
+Gestión no activa.

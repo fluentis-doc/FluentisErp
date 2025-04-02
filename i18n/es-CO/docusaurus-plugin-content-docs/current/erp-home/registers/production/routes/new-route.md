@@ -1,131 +1,131 @@
 ---
-title: Nuovo ciclo
+title: Nuevo ciclo (Nuovo ciclo)
 sidebar_position: 2
 ---
 
-Dopo aver creato le distinte base degli articoli, si deve procedere con la definizione dei cicli di lavoro ovvero l'insieme delle varie fasi di produzione di un prodotto.
+Después de crear las listas de materiales de los artículos, se debe proceder con la definición de los ciclos de trabajo, es decir, el conjunto de las distintas fases de producción de un producto.
 
-La procedura di creazione di un **Nuovo ciclo** si apre tramite il percorso:
+El procedimiento para crear un **Nuevo ciclo** se abre a través de la ruta:
 
-**Produzione > Cicli di lavoro > Cicli di lavoro**, cliccando sul pulsante **Nuovo**
+**Producción > Ciclos de trabajo > Ciclos de trabajo**, haciendo clic en el botón **Nuevo**
 
-oppure
+o
 
-**Produzione > Cicli di lavoro > Nuovo ciclo di lavoro**.
+**Producción > Ciclos de trabajo > Nuevo ciclo de trabajo**.
 
-Con entrambe le procedure si aprirà la form **Gestione cicli di lavoro** composta da una sezione nella quale si andranno a definire le caratteristiche obbligatorie del ciclo e da una sezione composta da diversi tab che ne raggruppano le caratteristiche specifiche.
+Con ambos procedimientos se abrirá el formulario **Gestión de ciclos de trabajo** compuesto por una sección en la que se determinarán las características obligatorias del ciclo y por una sección compuesta por varias pestañas que agrupan sus características específicas.
 
-### Sezione superiore
+### Sección superior
 
-Qui si inseriscono le informazioni di base relative al ciclo:
+Aquí se ingresan la información básica relacionada con el ciclo:
 
-**Ciclo:** si andranno ad inserire il codice e la descrizione del ciclo di lavoro;
+**ciclo**: se ingresará el código y la descripción del ciclo de trabajo;  
 
-**Articolo e Variante**: tramite l'help si andrà ad inserire l'articolo relativo al ciclo e la variante nel caso in cui esista la variante dell'articolo selezionato;
+**articolo e variante**: a través de la ayuda se ingresará el artículo relacionado con el ciclo y la variante en caso de que exista la variante del artículo seleccionado;  
 
-**Versione**: si andrà a selezionare tramite l'apposita combo la versione della distinta per cui si vuole inserire un nuovo ciclo di lavoro;
+**versione**: se seleccionará a través del combo correspondiente la versión de la lista para la cual se desea ingresar un nuevo ciclo de trabajo;  
 
-**Ciclo**: si va a definire se si tratta di un ciclo *Operativo* o *Non operativo* e quindi in questo caso non utilizzabile;
+**ciclo**: se define si se trata de un ciclo *operativo* o *non operativo*, y en este último caso no es utilizable;  
 
-**Tipo ciclo**: che può essere *Standard* per il ciclo principale e che verrà proposto come default per quell’articolo ed avrà come numero ciclo 1, oppure nel caso si abbiano più cicli per lo stesso articolo, si andrà a settare il flag su *Alternativo* e verrà abilitata anche la possibilità di variare il numero di ciclo. Per ogni articolo è possibile avere solo un ciclo *standard*;
+**tipo ciclo**: puede ser *standard* para el ciclo principal, que se propondrá como default para ese artículo y tendrá como número de ciclo 1, o en el caso de que haya más ciclos para el mismo artículo, se activará la opción *alternativo* y se habilitará también la posibilidad de variar el número de ciclo. Para cada artículo, solo es posible tener un ciclo *estándar*;  
 
-**Data inserimento / Data modifica**: le date *Data inserimento / Data modifica* verranno compilate in automatico rispettivamente con la data inserimento del ciclo e se viene apportata una qualsiasi modifica anche con la data di ultima modifica del ciclo;
+**Fecha de ingreso / Fecha de modificación (Data inserimento / Data modifica)**: las fechas *Fecha de ingreso / Fecha de modificación* se completarán automáticamente, respectivamente, con la fecha de ingreso del ciclo y, si se realiza alguna modificación, también con la fecha de última modificación del ciclo;  
 
-### Fasi
+### Fases
 
-Nella griglia si inseriscono le fasi di lavorazione del ciclo; per ogni ciclo possiamo avere più fasi di lavorazione. Le fasi vengono codificate all'interno della tabella [Fasi Standard](/docs/configurations/tables/production/standard-phases) che si trova tra le tabella della sezione *Produzione*.
+En la cuadrícula se ingresan las fases de trabajo del ciclo; para cada ciclo podemos tener múltiples fases de trabajo. Las fases se codifican dentro de la tabla [Fases Estándar (Fasi Standard)](/docs/configurations/tables/production/standard-phases) que se encuentra entre las tablas de la sección *produzione*.
 
-Le informazioni importanti che riguardano la fase e che serviranno a livello produttivo sono:
+Las informaciones importantes que conciernen a la fase y que son relevantes a nivel productivo son:
 
-**Codice**: indica il codice della fase standard; una volta selezionata la fase la griglia si completerà con i dati settati all'interno della tabella;
+**codice**: indica el código de la fase estándar; una vez seleccionada la fase, la cuadrícula se completará con los datos establecidos en la tabla;  
 
-**Fase**: indica il numero progressivo di fase; che viene proposto in automatico in base al valore del parametro *Proposta sequenza fase*, presente in configurazione; *Parametri > Produzione > Parametri ordini di produzione*. Questo parametro consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore progressivo di inserimento nel campo step. 
+**fase**: indica el número progresivo de fase; que se propone automáticamente en base al valor del parámetro *proposta sequenza fase*, presente en configuración; *Parámetros > Producción > Parámetros de pedidos de producción (Parametri > Produzione > Parametri ordini di produzione)*. Este parámetro permite elegir, durante la creación de un ciclo de trabajo, el número de secuencia de la fase que se propone, que puede ser tomado del número de secuencia de la fase estándar o como progresivo del orden de ingreso, indicando también el valor progresivo de ingreso en el campo paso.  
 
-**Sottofase**: indica il numero di sottofase per differenziarle a parità di numero di fase;
+**sottofase**: indica el número de subfase para diferenciarlas dentro del mismo número de fase;  
 
-**Descrizione fase / sottofase**: indica la descrizione della fase / sottofase;
+**Descripción fase / subfase (Descrizione fase / sottofase)**: indica la descripción de la fase / subfase;  
 
-**Tipo**: permette di definire se si tratta di è una fase interna e quindi implicherà solamente la creazione di ordini di produzione interni, oppure se è una fase esterna e quindi andrà a generare anche un ordine di conto lavoro;
+**tipo**: permite definir si se trata de una fase interna, implicando únicamente la creación de órdenes de producción internas, o si es una fase externa, generando también una orden de trabajo;  
 
-**Centro di lavoro**: indica il centro di lavoro, ovvero la macchina in cui si svolgerà quella specifica fase;
+**centro di lavoro**: indica el centro de trabajo, es decir, la máquina en la que se llevará a cabo esa fase específica;  
 
-**Tempo fisso**: se abilitato, indica che il tempo di quella fase è fisso e quindi non variabile in base alla quantità; questo viene ereditato dal centro di lavoro inserito;
+**tempo fisso**: si está habilitado, indica que el tiempo de esa fase es fijo y, por lo tanto, no variable según la cantidad; esto se hereda del centro de trabajo ingresado;  
 
-**Controllo qualità**: se attivato, questo flag indica che questa fase è soggetta a controllo qualità e nel tab specifico si può indicare il *Piano di controllo* che verrà utilizzato per verificare l'articolo a dichiarazione di produzione effettuata;
+**controllo qualità**: si está activado, este indicador indica que esta fase está sujeta a control de calidad y en la pestaña específica se puede indicar el *piano di controllo* que se utilizará para verificar el artículo una vez realizada la declaración de producción;  
 
-**Fase produttiva**: se attivo, indica che la fase è produttiva e si può procedere all'inserimento delle segnalazioni di produzione (quindi attivandolo si vuole che la produzione per questa fase venga rilevata); se non attivo, non sarà possibile dichiarare la fase stessa;      
+**Fase productiva (Fase produttiva)**: si está activo, indica que la fase es productiva y se puede proceder a ingresar las señales de producción (por lo tanto, al activarlo, se desea que la producción para esta fase sea registrada); si no está activo, no será posible declarar la fase misma;  
 
-**Fase movimentabile**: se attivo, indica che nel momento in cui si va a rilevare la fase di produzione si creano anche dei movimenti di magazzino; questo significa che procedendo con la segnalazione di produzione di procederà anche al carico del prodotto finito a magazzino e allo scarico della materia prima impiegata per la produzione in quella fase;
+**Fase movilizable (Fase movimentabile)**: si está activo, indica que en el momento en que se registre la fase de producción, también se crearán movimientos de almacén; esto significa que al proceder con la señalización de producción, también se procederá al ingreso del producto terminado en el almacén y a la salida de la materia prima utilizada para la producción en esa fase;  
 
 :::note Nota
-Tutte le fasi esterne devono sempre avere i flag **Fase produttiva** e **Fase movimentabile** attivi.
+Todas las fases externas deben tener siempre los indicadores **Fase productiva (Fase produttiva)** y **Fase movilizable (Fase movimentabile)** activos.
 :::
 
-**Macchina/Gruppo manodopera**: in questi campi si vanno a selezionare tramite la combo box, il codice della *macchina* in cui avviene la fase e il codice *gruppo manodopera* che viene utilizzato; questi due codici vengono ripresi dalle rispettive tabelle precedentemente codificate: [Gruppi manodopera](/docs/configurations/tables/production/labour-group) e [Macchine](/docs/configurations/tables/production/machines) che si trovano sempre tra le tabella della sezione *Produzione*;  
+**Máquina / Grupo de mano de obra (Macchina/Gruppo manodopera)**: en estos campos se seleccionará, a través de la combo box, el código de la *máquina* en la que se lleva a cabo la fase y el código *grupo de mano de obra* que se utilizará; estos dos códigos provienen de las respectivas tablas previamente codificadas: [Grupos de mano de obra (Gruppi manodopera)](/docs/configurations/tables/production/labour-group) y [Máquinas (Macchine)](/docs/configurations/tables/production/machines), que siempre se encuentran entre las tablas de la sección *produzione*;  
 
-**Unità di misura tempo**: permette di specificare l'unità di misura dei tempi della fase, che può essere espressa in giorni, ore, minuti e secondi;    
+**unità di misura tempo**: permite especificar la unidad de medida de los tiempos de la fase, que puede expresarse en días, horas, minutos y segundos;    
 
-**Inizio/Fine validità**: permettono di indicare la data di inizio e la data fine validità di una fase nel caso in cui si decida che quella fase specifica sarà valida solamente per un determinato periodo di tempo;
+**Inicio / Fin validez (Inizio/Fine validità)**: permiten indicar la fecha de inicio y la fecha final de validez de una fase en caso de que se decida que esa fase específica será válida solo por un período determinado;  
 
-**Tipo di Sovrapposizione**: in questo campo viene di default settato il valore *Nessuna*. Se invece si ha una fase che si sovrappone ad un'altra si andrà ad indicare il tipo di sovrapposizione tra quelli proposti nella combo: *Totale*, *A pezzo* e *A Tempo*. Inserendo il valore *Totale*, significa che la fase e sottofase selezionata può iniziare contemporaneamente alla fase indicata nei campi *Fase e sottofase Sovrapposizione*. Mentre scegliendo l’opzione *a quantità* o *a tempo*, la fase selezionata potrà iniziare ad essere lavorata solo al raggiungimento rispettivamente del valore di quantità prodotta o tempo della fase indicata nei campi *Fase e sottofase Sovrapposizione* trascorso indicato nel campo *valore*.
+**tipo di sovrapposizione**: en este campo, por defecto se establece el valor *nessuna*. Si existe una fase que se superpone a otra, se indicará el tipo de superposición entre los propuestos en el combo: *totale*, *Por pieza (A pezzo)* y *a tempo*. Al ingresar el valor *Total*, significa que la fase y subfase seleccionadas pueden comenzar al mismo tiempo que la fase indicada en los campos *Fase y subfase Superposición (Fase e sottofase Sovrapposizione)*. Mientras que al elegir la opción *a quantità* o *a tempo*, la fase seleccionada solo podrá comenzar a ser trabajada al alcanzar, respectivamente, el valor de cantidad producida o el tiempo de la fase indicada en los campos *Fase y subfase Superposición (Fase e sottofase Sovrapposizione)* que se ha indicado en el campo *valor*.
 
-**Valore:** permette di indicare il valore relativo al tipo di sovrapposizione e non centra nulla con valore il economico (ad esempio se la sovrapposizione è *A pezzi* allora nel campo *Valore* è necessario indicare dopo quanti pezzi è possibile iniziare la fase, mentre se la sovrapposizione è *A tempo* nel campo *Valore* è necessario inserire il tempo che deve trascorrere per poter iniziare con la fase);
+**valore**: permite indicar el valor relativo al tipo de superposición y no tiene relación con el valor económico (por ejemplo, si la superposición es *Por piezas (A pezzi)*, entonces en el campo *Valor* es necesario indicar cuántas piezas deben producirse antes de poder comenzar la fase, mientras que si la superposición es *a tempo* se debe ingresar en el campo *Valor* el tiempo que debe transcurrir para poder comenzar con la fase); 
 
-**Fase sovrapposizione / sottofase sovrapposizione**: in questi due campi, nel caso di sovrapposizione, si andrà ad indicare la fase che si intende sovrapporre alla fase principale;
+**Fase de superposición / subfase de superposición (Fase sovrapposizione / sottofase sovrapposizione)**: en estos dos campos, en caso de superposición, se indicará la fase que se pretende superponer a la fase principal;  
 
-**Costo Unitario**: in questo campo si va ad inserire il costo della fase quando si decide di non valorizzare con la valorizzazione di macchina e gruppo manodopera;
+**costo unitario**: en este campo se ingresará el costo de la fase cuando se decide no valorar con la valorización de la máquina y grupo de mano de obra;  
 
-**Ubicazione**: permette di associare anche un'ubicazione di magazzino alla fase; questo significa che tutti gli articoli impiegati in quella fase saranno presenti in quell'ubicazione.
+**ubicazione**: permite asociar una ubicación de almacén a la fase; esto significa que todos los artículos utilizados en esa fase estarán presentes en esa ubicación.
 
-**Descrizione terzista**: nel caso in cui la fase sia esterna, si potrà andare ad indicare in questo campo il terzista che si occuperà della fase esterna;
+**descrizione terzista**: en caso de que la fase sea externa, se podrá indicar en este campo el contratista que se encargará de la fase externa;  
 
-**Descrizione Centro di Lavoro**, **Descrizione macchina**, **Descrizione Gruppo Manodopera**: in questi campi si troveranno le descrizioni dei codici riferiti alle varie sezioni elencate.
+**descrizione centro di lavoro**, **descrizione macchina**, **descrizione gruppo manodopera**: en estos campos se encontrará las descripciones de los códigos relacionados con las diferentes secciones enumeradas.
 
-C'è poi una terza sezione in cui si andranno ad indicare i dati più precisi in riferimento alla macchina, agli operai e ai tempi:
+Luego hay una tercera sección donde se indicarán los datos más precisos en referencia a la máquina, a los trabajadores y a los tiempos:
 
-**Numero Macchine**: indica il numero di macchine necessarie per lo svolgimento della fase;
+**numero macchine**: indica el número de máquinas necesarias para la ejecución de la fase;  
 
-**Tempi macchina**: permette di indicare i tempi macchina espressi nell'unità di misura di riferimento selezionata precedentemente nella griglia fase, espresso nell'unità di misura indicata nel campo **Unità di misura tempo**;
+**Tiempos de máquina (Tempi macchina)**: permite indicar los tiempos de máquina expresados en la unidad de medida de referencia seleccionada anteriormente en la cuadrícula de fases, expresada en la unidad de medida indicada en el campo **unità di misura tempo**;  
 
-**Quantità fase**: indica la quantità di prodotto che si stima di produrre durante la fase selezionata (ad ogni esecuzione di quella fase);
+**quantità fase**: indica la cantidad de producto que se estima producir durante la fase seleccionada (en cada ejecución de esa fase);  
 
-**Numero Operai**: indica il numero di operai necessari per lo svolgimento della fase;
+**numero operai**: indica el número de trabajadores necesarios para la ejecución de la fase;  
 
-**Tempo Operai**: il tempo di impiego necessario per lo svolgimento della fase, espresso nell'unità di misura indicata nel campo **Unità di misura tempo**;
+**Tiempo de Trabajadores (Tempo Operai)**: el tiempo de empleo necesario para la ejecución de la fase, expresado en la unidad de medida indicada en el campo **unità di misura tempo**;  
 
-**Tempo attesa coda**: indica il tempo di attesa/coda che verrà sommato alla durata della fase; è il tempo di attesa alla fine di ogni esecuzione di quella fase; 
+**Tiempo de espera de cola (Tempo attesa coda)**: indica el tiempo de espera/cola que se sumará a la duración de la fase; es el tiempo de espera al final de cada ejecución de esa fase;  
 
-**Tempo attesa-Coda crea impegno**: se attivo, indica che il tempo di attesa/coda crea impegno, quindi non è possibile iniziare una nuova fase perchè il centro di lavoro risulta occupato fino allo scadere del tempo di attesa/coda.
+**Tiempo de espera-Cola crea compromiso (Tempo attesa-Coda crea impegno)**: si está activo, indica que el tiempo de espera/cola crea un compromiso, por lo que no es posible comenzar una nueva fase ya que el centro de trabajo está ocupado hasta que expire el tiempo de espera/cola.
 
-### I tab
+### Las pestañas (I tab)
 
-**Attrezzaggio**: in questo tab si andranno ad indicare i tempi di attrezzaggio della macchina per poter avviare la fase e i tempi di riattrezzaggio nel caso in cui sia necessario riattrezzare il centro di lavoro tra un'esecuzione e l'altra della fase stessa, rispettivamente nei campi *Tempo attrezzaggio* e *Tempo riattrezzaggio*. Si potranno indicare il numero di macchine e operai necessari per la fase di attrezzaggio nei campi *Numero macchine* e *Numero operai*. Inoltre, nel caso l'attrezzaggio avvenga con *Centro di lavoro / Macchina / Gruppo manodopera* diverso da quello della fase, sarà possibile specificare i nuovi dati tramite le relative combo;
+**attrezzaggio**: en esta pestaña se indicarán los tiempos de equipamiento de la máquina para iniciar la fase y los tiempos de reajuste en caso de que sea necesario reajustar el centro de trabajo entre una ejecución y otra de la misma fase, respectivamente en los campos *tempo attrezzaggio* y *tempo riattrezzaggio*. Se podrá indicar el número de máquinas y trabajadores necesarios para la fase de equipamiento en los campos *numero macchine* y *numero operai*. Además, en caso de que el equipamiento se realice con *Centro de trabajo / Máquina / Grupo de mano de obra* diferente al de la fase, será posible especificar los nuevos datos a través de los combos respectivos.
 
-**Materiali**: in questo tab si andranno ad indicare i materiali che si vuole vengano scaricati non alla fine delle fasi di produzione di quel prodotto finito, ma alla fine della fase specifica. Quando si associa un materiale ad una determinata fase, questo non viene più visualizzato nell’help tra i materiali che rimangono da associare alle singole fasi. Si ricorda che tutti i materiali non associati ad una specifica fase, verranno scaricati in concomitanza dell’ultima fase *produttiva* e *movimentabile* del ciclo;          
+**materiali**: en esta pestaña se indicarán los materiales que se desean descargar no al final de las fases de producción de ese producto terminado, sino al final de la fase específica. Al asociar un material a una determinada fase, este ya no se visualiza en la ayuda entre los materiales que quedan por asociar a las fases individuales. Se recuerda que todos los materiales no asociados a una fase específica se descargarán junto con la última fase *productiva* y *movilizable* del ciclo;          
 
-**Attrezzature**: in questo tab si andranno ad inserire le attrezzature che verranno utilizzare all'interno della fase; si andrà ad inserire l'attrezzatura selezionandola tramite la relativa combo tra le attrezzature codificate all'interno della tabella  [Attrezzature](/docs/configurations/tables/production/equipments) presente nella sezione delle tabelle dedicate alla *Produzione*. Se attivo, il flag *Schedulata* starà ad indicare che l'attrezzatura risulterà impegnata durante la produzione; con questo flag la schedulazione prenderà in considerazione, non l'articolo inserito tramite la combo delle attrezzature, ma l'articolo inserito nei campi classe e codice, il quale deve avere come *Natura articolo* la tipologia *Attrezzatura* o *Utensile*;
+**attrezzature**: en esta pestaña se ingresarán los equipos que se utilizarán dentro de la fase; se ingresará el equipo seleccionándolo a través del combo correspondiente entre los equipos codificados dentro de la tabla [Equipos (Attrezzature)](/docs/configurations/tables/production/equipments) que se encuentra en la sección de tablas dedicadas a la *produzione*. Si está activo, el indicador *schedulata* indicará que el equipo estará ocupado durante la producción; con este indicador la programación tomará en cuenta, no el artículo ingresado a través del combo de equipos, sino el artículo ingresado en los campos clase y código, el cual debe tener como *natura articolo* la tipología *attrezzatura* o *utensile*;  
 
-**Utensili**: in questo tab si andranno ad inserire eventuali utensili, selezionandoli tramite combo tra quelli codificati all'interno della tabella [Utensili](/docs/configurations/tables/production/tools) presente nella sezione delle tabelle dedicate alla *Produzione*;
+**utensili**: en esta pestaña se ingresarán las herramientas eventuales, seleccionándolas a través del combo entre las que están codificadas dentro de la tabla [Herramientas (Utensili)](/docs/configurations/tables/production/tools) que se encuentra en la sección de tablas dedicadas a la *produzione*;  
 
-**Controllo qualità**: se è stato attivato il flag **Controllo qualità** relativo alla fase selezionata, in questo tab si andrà a selezionare il *Piano di controllo*. In automatico verranno proposte le *Prove pianificate* da effettuare per il controllo dell'articolo. Per la comprensione delle colonne di questa griglia si rimanda alla documentazione relativa ai Piani controllo;     
+**controllo qualità**: si se ha activado el indicador **controllo qualità** relacionado con la fase seleccionada, en esta pestaña se seleccionará el *piano di controllo*. Automáticamente se propondrán las *prove pianificate* que deben realizarse para el control del artículo. Para la comprensión de las columnas de esta cuadrícula se remite a la documentación relacionada con los Planes de control;     
 
-**Disegni**: in questo tabulatore si andranno ad inserire eventuali disegni tecnici dell'articolo relativi alle lavorazioni specifiche della fase;
- 
-**Annotazioni**: in questi campi si potranno inserire eventuali annotazioni tecniche o di altro genere relative alla fase;
+**disegni**: en esta pestaña se ingresarán los diseños técnicos del artículo relacionados con las operaciones específicas de la fase; 
 
-**Istruzioni operative**: permette di caricare documenti di vario genere legati alla fase, i quali saranno poi visualizzati anche all'interno di Fluentis MES;
+**annotazioni**: en estos campos se podrán ingresar anotaciones técnicas o de otro tipo relacionadas con la fase;  
 
-**Alternative**: in questo tabulatore potranno essere inserite delle fasi alternative che verranno considerate, in base alla priorità assegnata, dalle procedure della [Pianificazione generale](/docs/planning/ms-master-scheduling/general-schedule) o dall'[M.R.P.](/docs/planning/ms-master-scheduling/mrp/), se i relativi flag **Considera la fasi alternative**, presenti nei parametri delle procedure sono attivi durante la loro esecuzione;      
+**istruzioni operative**: permite cargar documentos de diversos tipos relacionados con la fase, los cuales luego también se visualizarán dentro de Fluentis MES;  
 
-**Extra data fasi / Extra data:** in questi due tab si andranno ad inserire, rispettivamente, gli extra data per ogni fase e gli extra data legati al ciclo stesso, selezionandoli tramite combo tra quelli precodificati nella relativa tabella *Extradata* (Utility > Extradata). Per inserire un extra data bisognerà cliccare il tasto destro del mouse e selezionare la voce aggiungi nuovo extra data con la possibilità di scegliere se inserirlo al primo livello, oppure se ci sono già extra data inseriti scegliere se si vuole inserire un extra data figlio all'extra data già esistente; in questo modo comparirà una nuova riga in cui poter procedere con l'inserimento.
+**alternative**: en esta pestaña se podrán ingresar fases alternativas que serán consideradas, en función de la prioridad asignada, por los procedimientos de la [Programación general (Pianificazione generale)](/docs/planning/ms-master-scheduling/general-schedule) o por el [M.R.P. (M.R.P.)](/docs/planning/ms-master-scheduling/mrp/), si los indicadores respectivos **Considerar las fases alternativas (Considera la fasi alternative)**, presentes en los parámetros de los procedimientos están activos durante su ejecución;      
 
-*Pulsanti specifici*:
+**Datos extra de fases / Datos extra (Extra data fasi / Extra data)**: en estas dos pestañas se ingresarán, respectivamente, los datos extra para cada fase y los datos extra relacionados con el ciclo mismo, seleccionándolos a través del combo entre los que están precodificados en la tabla respectiva *Extradata* (Utility > Extradata). Para ingresar un dato extra se debe hacer clic con el botón derecho del ratón y seleccionar la opción agregar nuevo dato extra con la posibilidad de elegir si insertarlo en el primer nivel, o si ya hay datos extra ingresados, elegir si se desea insertar un dato extra hijo al dato extra ya existente; de esta manera aparecerá una nueva fila en la que se podrá proceder con la inserción.
 
-> **Inserisci fasi**: permette di inserire nuove fasi nella griglia relativa alle fasi;  
-> **Cancella fase**: permette di cancellare una o più fasi selezionate; 
-> **Aggiorna da fase / Cancella i dati attrezzaggio**: compaiono nella Ribbon bar quando ci posiziona nel tab *Attrezzaggio*: tramite il pulsante *Aggiorna da fase* si vanno ad aggiornare i dati di attrezzaggio prendendoli dalla fase; tramite il pulsante *Cancella i dati di attrezzaggio* si vanno invece a cancellare i dati relativi all'attrezzaggio;  
-> **Aggiorna materiali da Distinta Base**: questo pulsante compare nella Ribbon bar quando ci si posiziona nel tab *Materiali*: tramite questo pulsante si vanno ad aggiungere nel tab i materiali prendendoli dalla distinta base dell'articolo;  
-> **Inserisci / Cancella attrezzatura**: questi pulsanti compaiono nella Ribbon quando ci si posiziona nel tab *Attrezzatura*: tramite questi pulsanti si possono andare ad inserire le attrezzature oppure a cancellare le attrezzature selezionate;  
-> **Inserisci / Cancella utensili**: questi pulsanti compaiono nella Ribbon quando ci si posiziona nel tab *Utensili*: tramite questi pulsanti si possono andare ad inserire gli utensili oppure a cancellare gli utensili selezionati.  
+*Botones específicos*:
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **inserisci fasi**: permite insertar nuevas fases en la cuadrícula relacionada con las fases;  
+> **cancella fase**: permite eliminar una o varias fases seleccionadas;  
+> **Actualizar de fase / Borrar datos de equipamiento (Aggiorna da fase / Cancella i dati attrezzaggio)**: aparecen en la Ribbon bar cuando nos posicionamos en la pestaña *Equipamiento*: a través del botón *Actualizar de fase* se actualizarán los datos de equipamiento tomándolos de la fase; a través del botón *Borrar datos de equipamiento* se eliminarán los datos relacionados con el equipamiento;  
+> **aggiorna materiali da distinta base**: este botón aparece en la Ribbon bar cuando nos posicionamos en la pestaña *Materiales*: a través de este botón se agregarán en la pestaña los materiales tomándolos de la lista de materiales del artículo;  
+> **Insertar / Borrar equipo (Inserisci / Cancella attrezzatura)**: estos botones aparecen en la Ribbon cuando nos posicionamos en la pestaña *Equipamiento*: a través de estos botones se pueden insertar los equipos o eliminar los equipos seleccionados;  
+> **Insertar / Borrar herramientas (Inserisci / Cancella utensili)**: estos botones aparecen en la Ribbon cuando nos posicionamos en la pestaña *Herramientas*: a través de estos botones se pueden insertar las herramientas o eliminar las herramientas seleccionadas.  
+
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,55 +1,55 @@
 ---
-title: Flusso Movimenti Fisici
-sidebar position: 4
+title: flusso movimenti fisici
+sidebar_position: 4
 ---
 
-:::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::tip Nota (Nota)
+Esta tabla es de uso exclusivo para las empresas que han configurado el *Controlling* (Controlling).
 :::
 
-Il Flusso movimenti fisici consente di interagire con i movimenti caricati nella prima nota movimenti fisici, consentendo di replicarli o convertirli applicando un moltiplicatore o una percentuale.
+El flujo de movimientos físicos permite interactuar con los movimientos cargados en la primera nota de movimientos físicos, permitiendo replicarlos o convertirlos aplicando un multiplicador o un porcentaje.
 
-#### Campi specifici
+#### Campos específicos
 
-- il **CODICE** del flusso
+- el **codice** del flujo
 
-- la **DESCRIZIONE** del flusso
+- la **descrizione** del flujo
 
-- l'[**AREA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- el [**area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
 
-- il [**CENTRO AZIENDALE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) per il quale ricercare i dati quantitativi da gestire
+- el [**centro aziendale**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) para el cual buscar los datos cuantitativos a gestionar
 
-- la [**DIMENSIONE CENTRI DESTINAZIONE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) per definire la dimensione dei centri da valorizzare
+- la [**dimensione centri destinazione**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) para definir la dimensión de los centros a valorar
 
-- la **DATA INIZIO** e **DATA FINE** validità della regola
+- la **data inizio** y **data fine** de validez de la regla
 
-- il **TIPO DISTRIBUZIONE** da applicare, che può essere solo *01 Percentuale*
+- el **tipo distribuzione** a aplicar, que puede ser solo *percentuale*
 
-- l'[**UNITA' DI MISURA DI ORIGINE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) e l'[**UNITA' DI MISURA DI DESTINAZIONE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), per eventuali conversioni tra UM
+- la [**UNIDAD DE MEDIDA DE ORIGEN (UNITA' DI MISURA DI ORIGINE)**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) y la [**UNIDAD DE MEDIDA DE DESTINO (UNITA' DI MISURA DI DESTINAZIONE)**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), para eventuales conversiones entre UM
 
-- il **MOLTIPLICATORE** da applicare alle quantità di origine
+- el **moltiplicatore** a aplicar a las cantidades de origen
 
-Nella griglia sottostante andremo ad inserire la lista dei centri di destinazione da valorizzare, valorizzando i seguenti campi:
-- il [**CENTRO AZIENDALE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)  di destinazione appunto
+En la cuadrícula inferior, iremos a insertar la lista de los centros de destino a valorar, completando los siguientes campos:  
+- el [**centro aziendale**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de destino, precisamente  
 
-- la **PERCENTUALE** da applicare
+- el **percentuale** a aplicar  
 
-- il **VALORE** da utilizzare
+- el **valore** a utilizar  
 
-- il flat **PERCENTUALE / VALORE**: se è spuntato significa che si digiterà direttamente la percentuale, altrimenti si potrà inserire una quantità di riga (il campo precedente) che **FluentisERP** utilizzerà per derivare una percentuale relativa
+- el indicador **percentuale / valore**: si está marcado, significa que se ingresará directamente el porcentaje; de lo contrario, se podrá ingresar una cantidad de línea (el campo anterior) que **FluentisERP** utilizará para derivar un porcentaje relativo  
 
-- un eventuale **PROGETTO** da valorizzare
+- un eventual **progetto** a valorar  
 
-:::tip Esempi
- Una prima necessità potrebbe essere quella di attribuire delle quantità fisiche ad un centro per il quale non si rilevano i tempi, al fine di poterne calcolare una sua tariffa di costo derivandola dal totale delle ore replicate da altri centri: un ausiliario di produzione, per esempio, potrebbe ricevere i totali delle ore di altri centri utilizzati in produzione, per derivarne una quantità da sfruttare per un suo calcolo di tariffa.
- 
- Un’altra necessità potrebbe essere quella di replicare dei movimenti fisici della dimensione direzionale nelle altre dimensioni, al fine di utilizzarli per applicare dei driver specifici di queste.
- 
- Una terza necessità potrebbe essere quella di convertire le ore che si ricevono dalla produzione in minuti, per calcolare una tariffa in una seconda unità di misura senza doverla calcolare a mano esternamente.
- 
- Se da un unico dato d’origine dovessimo duplicare la quantità su due altri centri, si potrebbe applicare una regola che duplica con un moltiplicatore il valore di partenza e poi attribuisce metà ad uno e metà all’altro ad esempio.
+:::tip Ejemplos (Esempi)
+Una primera necesidad podría ser la de atribuir cantidades físicas a un centro para el que no se registran los tiempos, con el fin de poder calcular una tarifa de costo derivándola del total de horas replicadas de otros centros: por ejemplo, un auxiliar de producción podría recibir los totales de horas de otros centros utilizados en producción, para derivar una cantidad que se aproveche para su cálculo de tarifa.
+
+Otra necesidad podría ser la de replicar movimientos físicos de la dimensión direccional en las otras dimensiones, con el fin de utilizarlos para aplicar controladores específicos de estas.
+
+Una tercera necesidad podría ser la de convertir las horas que se reciben de la producción en minutos, para calcular una tarifa en una segunda unidad de medida sin necesidad de calcularla manualmente por afuera.
+
+Si de un único dato de origen debiéramos duplicar la cantidad en dos centros adicionales, se podría aplicar una regla que duplica con un multiplicador el valor inicial y luego atribuye la mitad a uno y la mitad al otro, por ejemplo.
 :::
 
-:::tip Nota
-Nella maschera è presente un pulsante di duplicazione del flusso selezionato.
+:::tip Nota (Nota)
+En la máscara hay un botón para duplicar el flujo seleccionado.
 :::

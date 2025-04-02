@@ -1,6 +1,6 @@
-Gli sconti finali applicati a livello di singolo articolo vengono distribuiti (o "spalmati") su ciascuna riga articolo del documento. Questo significa che l'importo dello sconto è suddiviso proporzionalmente tra tutti gli articoli presenti nel documento, e lo sconto relativo sarà visibile nel tab Articoli per ogni singola riga.
+Los descuentos finales aplicados a nivel de artículo individual se distribuyen (o "reparten") sobre cada línea de artículo del documento. Esto significa que el monto del descuento se divide proporcionalmente entre todos los artículos presentes en el documento, y el descuento correspondiente será visible en la pestaña Artículos para cada línea individual.
 
-- **Tipo/Descrizione sconto**: permette di scegliere le tipologie di sconto (predefiniti in [Tipi sconti](/docs/configurations/tables/general-settings/discount-types)), attribuendo alla tipologia la priorità di applicazione dello sconto e se lo sconto viene calcolato sull'imponibile o in cascata rispetto agli sconti precedentemente applicati.  
-- **Priorità**: rappresenta la priorità di applicazione dello sconto; l'ordinamento da applicare avviene in modo crescente.  
-- **Cascata/Imponibile**: per definire se il calcolo dello sconto usa come imponibile il (prezzo * quantità) - (sconti già calcolati) oppure (prezzo * quantità).  
-- **Valore**: valore numerico dello sconto finale da applicare.  
+- **Tipo/Descripción del descuento (Tipo/Descrizione sconto)**: permite elegir los tipos de descuento (predefinidos en [Tipos de descuentos (Tipi sconti)](/docs/configurations/tables/general-settings/discount-types)), asignando a cada tipo la prioridad de aplicación del descuento y si el descuento se calcula sobre la base imponible o en cascada respecto a los descuentos aplicados previamente.  
+- **priorità**: representa la prioridad de aplicación del descuento; el orden de aplicación debe ser en orden ascendente.  
+- **cascata/imponibile**: para definir si el cálculo del descuento utiliza como base imponible el (precio * cantidad) - (descuentos ya calculados) o (precio * cantidad).  
+- **valore**: valor numérico del descuento final a aplicar.

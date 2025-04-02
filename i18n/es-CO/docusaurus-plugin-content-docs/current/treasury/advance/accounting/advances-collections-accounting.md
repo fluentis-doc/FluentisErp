@@ -1,26 +1,20 @@
 ---
-title: Contabilizzazione Anticipi Incassi
+title: contabilizzazione anticipi incassi
 sidebar_position: 2
 ---
 
-Da questa posizione vengono gestiti contabilmente gli incassi delle fatture o scadenze anticipate dalla banca.
+Desde esta posición se gestionan contablemente los cobros de las facturas o vencimientos anticipados por parte del banco.
 
-Operando da qui verranno generate automaticamente le scritture contabili (due) che stornano il debito aperto per acconto e quindi vanno a rilevare l'incasso del credito al netto di commissioni e interessi.
+Operando desde aquí, se generarán automáticamente los asientos contables (dos) que anulan la deuda pendiente por el anticipo y, por lo tanto, registran el cobro del crédito neto de comisiones e intereses.
 
-Nella tab Parametri è necessario inserire i conti da utilizzare per l'incasso, per gl i eventuali abbuoni e gli importi di eventuali commissioni ed interessi, oltre alla causale contabile da utilizzare per l'incasso.
+En la pestaña Parámetros (Parametri) es necesario ingresar las cuentas a utilizar para el cobro, para los posibles descuentos y los importes de eventuales comisiones e intereses, además de la causa contable a utilizar para el cobro.
 
-Anche in questo caso lo schema della scrittura è fisso indipendentemente dal template della causale selezionata.
+También en este caso, el esquema del asiento es fijo independientemente de la plantilla de la causa seleccionada.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image01.png)
 
-Nel Tab scadenze è possibile ricercare e filtrare le scadenze da incassare selezionando con l'apposito flag se cercare scadenze già anticipate in distinta o meno, è inoltre possibile escludere o includere scadenze attive riferite a fornitori.
+En la pestaña de vencimientos (scadenze) es posible buscar y filtrar los vencimientos a cobrar, seleccionando con el respectivo indicador si buscar vencimientos ya anticipados en la lista o no; además, es posible excluir o incluir vencimientos activos referidos a proveedores.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image02.png)
 
-La contabilizzazione può essere annullata e ripristinata, come di consueto, dal tab **Rollback**.
-
-
-
-
-
-
+La contabilización puede ser anulada y restaurada, como de costumbre, desde la pestaña **Rollback**.

@@ -1,78 +1,68 @@
 ---
-title: Contabilizzazione Accrediti
+title: contabilizzazione accrediti
 sidebar_position: 3
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione accrediti
+El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de acreditaciones (Contabilizzazione accrediti)
 
-Da questa maschera si procede all'ultima fase del portafoglio effetti: la procedura chiuderà il conto transitorio della banca di presentazione per accreditare il conto corrente effettivo dell'anagrafica banca in distinta.
+Desde esta máscara se procede a la última fase de la cartera de efectos: el procedimiento cerrará la cuenta transitoria del banco de presentación para acreditar la cuenta corriente real del registro bancario en la lista.
 
 :::tip[Nota]
-**Risulta necessario accedere specificamente alla presente form per questa contabilizzazione, non essendo previsto alcun bottone dentro l'effetto o la distinta**. 
+**Es necesario acceder específicamente a este formulario para esta contabilización, ya que no se prevé ningún botón dentro del efecto o la lista**.
 :::
 
-## Come contabilizzare un accredito
+## Cómo contabilizar un crédito (Come contabilizzare un accredito)
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli effetti da accreditare: la contabilizzazione accrediti può essere effettuata solo per effetti contabilizzati. La selezione viene effettuata sul dettaglio degli effetti per poter individuare  gli importi accreditati per ogni data di scadenza.
+1. Utiliza la parte superior de la máscara para filtrar la búsqueda de los efectos a acreditar: la contabilización de acreditaciones solo puede llevarse a cabo para efectos contabilizados. La selección se realiza en el detalle de los efectos para poder identificar los importes acreditados por cada fecha de vencimiento.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri gestire 
+2. Selecciona en la cuadrícula central los efectos que deseas gestionar.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Completa los parámetros para la contabilización tales como la **causale di contabilità**, la **data registrazione** y la fecha de competencia (data competenza).
 
 :::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+Esta sección puede ser predefinida dentro de los [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de Efectos.
 :::
 
-4. Compila inoltre gli altri campi per la gestione della contabilizzazione:
+4. Completa también los otros campos para la gestión de la contabilización:
 
-**Spese commissioni**: il sottconto dove saranno contabilizzate le spese per commissioni, da indicare nel campo successivo
+**spese commissioni**: el subcuenta donde se contabilizarán los gastos por comisiones, que se deberá indicar en el campo siguiente.
 
-**Commissioni**: valore delle commissioni sull'accredito degli effetti che viene contabilizzato; può essere proposto, per ogni effetto, sulla base delle *commissioni* impostate nell'[***anagrafica banca***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail).  
+**commissioni**: valor de las comisiones sobre el crédito de los efectos que se contabilizará; puede ser propuesto, para cada efecto, en función de las *comisiones* establecidas en el [***registro bancario (anagrafica banca)***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail).  
 
-**Oneri passivi**: conto dove saranno contabilizzati gli interessi passivi calcolati per distinte allo sconto.
+**oneri passivi**: cuenta donde se contabilizarán los intereses pasivos calculados para listas de descuentos.
 
 :::note[Nota]
-In questa sezione sono presenti anche tre campi per la visualizzazione dei totali degli effetti selezionati nella grigli centrale:
+En esta sección también hay tres campos para la visualización de los totales de los efectos seleccionados en la cuadrícula central:
 
-**Totale selezione oneri passivi**: sommatoria del valore Oneri passivi per tutti gli effetti selezionati;
+**totale selezione oneri passivi**: suma del valor de los Cargos pasivos para todos los efectos seleccionados;
 
-**Totale selezione commissioni**: sommatoria del valore Commissioni per tutti gli effetti selezionati;
+**totale selezione commissioni**: suma del valor de las Comisiones para todos los efectos seleccionados;
 
-**Totale effetti selezionati**: sommatoria del valore degli effetti selezionati;
+**totale effetti selezionati**: suma del valor de los efectos seleccionados;
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione accrediti**
+5. Presiona el botón en la barra de ribbon **contabilizzazione accrediti**.
 
+**Botones específicos**
 
+**ricerca**: Busca la lista de los efectos de los cuales contabilizar el crédito.
 
-**Pulsanti specifici**
+**contabilizzazione**: Realiza la contabilización para las líneas seleccionadas.
 
-**Ricerca**: Ricerca la lista degli effetti di cui contabilizzare l'accredito.
+### Pestaña Anteriores (Tab Precedenti)
 
-**Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
+Desde la pestaña *anteriores* es posible proceder a la anulación de las contabilizaciones realizadas.
 
+La anulación solo será posible si el periodo aún es modificable (no se han realizado la impresión del libro diario y el cierre de cuentas).
 
+Un doble clic en la sección de las registraciones permitirá visualizar la registración contable relacionada.
 
-### Tab Precedenti
+Hay una pestaña de detalle para visualizar los errores detectados durante la contabilización.
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+**Botones específicos**
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+**ricerca**: Busca la lista de las contabilizaciones realizadas.
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+**rollback contabilizzazione**: Realiza la restauración de las contabilizaciones seleccionadas para todos los documentos que contienen.
 
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
-
-
-
-**Pulsanti specifici**
-
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
-
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate per tutti i documenti in esse contenuti.
-
-**Rollback registrazioni**: Esegue il ripristino della singola registrazione contabile selezionata.
-
-
-
-
+**rollback registrazioni**: Realiza la restauración de la única registración contable seleccionada.

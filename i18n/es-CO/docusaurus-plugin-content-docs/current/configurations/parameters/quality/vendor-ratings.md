@@ -1,46 +1,46 @@
 ---
-title: Parametri qualificazione fornitore
+title: parametri qualificazione fornitore
 sidebar_position: 5
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri qualificazione fornitore**.
+Los parámetros se encuentran en la ruta **parametri qualificazione fornitore**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-- **Valutazioni fornitori iniziali e periodiche** - nell'elenco dei *dati di testata*;   
-- **Valutazioni fornitori periodiche su Non conformità** - nell'elenco dei *dati di testata*;   
-- **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+Los datos presentes en esta gestión se utilizan para proponer información en las gestiones:  
+- **Evaluaciones de proveedores iniciales y periódicas (Valutazioni fornitori iniziali e periodiche)** - en la lista de *dati di testata*;  
+- **Evaluaciones de proveedores periódicas sobre No conformidades (Valutazioni fornitori periodiche su Non conformità)** - en la lista de *dati di testata*;  
+- **anagrafiche contatti** - en la pestaña *Datos contables > Datos de calidad (Dati contabili > Dati qualità)*.  
 
-#### Pulsante specifico
+#### Botón específico
 
-**Salva**: permette di memorizzare le informazioni modificate.  
+**salva**: permite almacenar la información modificada.  
 
-**Proponi valutazioni**
+**proponi valutazioni**
 
-Per proporre le *Valutazioni fornitore* nell'elenco degli *Intervalli punteggio per la valutazione* premere il pulsante **Proponi valutazioni**.   
-Vengono riportate tutte le *Valutazioni* non ancora inserite in elenco; i valori in *Punteggio da* delle pre-esistenti *Valutazioni* non vengono modificati.   
+Para proponer las *valutazioni fornitore* en la lista de *Intervalos de puntuación para la evaluación (Intervalli punteggio per la valutazione)*, presione el botón **proponi valutazioni**.  
+Se mostrarán todas las *Evaluaciones* que aún no están insertadas en la lista; los valores en *punteggio da* de las *Evaluaciones* preexistentes no se modifican.  
 
-## Valutazioni iniziali      
+## Evaluaciones iniciales (Valutazioni iniziali)
 
-In questo expander è possibile inserire dati da proporre nelle *Valutazione iniziale e periodica*.   
-Nell'expander è possibile inserire:   
-- **Tipo valutazione proposta**: *Tipo di valutazione* da proporre all'inserimento di una *Valutazione iniziale e periodica*.   
-- **Ispettore proposto**: *Ispettore* da proporre all'inserimento di una *Valutazione iniziale e periodica*.   
-- **Sospensione automatica**: indica se, al riconoscimento di una *Valutazione fornitore* di sospensione, il fornitore verrà automaticamente *sospeso*.   
+En este expander es posible insertar datos para proponer en la *Evaluación inicial y periódica (Valutazione iniziale e periodica)*.  
+En el expander, se pueden ingresar:  
+- **tipo valutazione proposta**: *Tipo de evaluación* a proponer al insertar una *Evaluación inicial y periódica*.  
+- **ispettore proposto**: *Inspector* a proponer al insertar una *Evaluación inicial y periódica*.  
+- **sospensione automatica**: indica si, al reconocimiento de una *Evaluación de proveedor de suspensión (Valutazione fornitore di sospensione)*, el proveedor será automáticamente *sospeso*.  
 
-## Valutazioni periodiche non conformità      
+## Evaluaciones periódicas no conformidad (Valutazioni periodiche non conformità)
 
-In questo expander è possibile inserire dati da proporre nelle *Valutazione periodica su Non conformità*.   
-Nell'expander è possibile inserire:   
-- **Tipo valutazione proposta**: *Tipo di valutazione* da proporre all'inserimento di una *Valutazione periodica su Non conformità*.   
-- **Sospensione automatica**: indica se, al riconoscimento di una *Valutazione fornitore* di sospensione, il fornitore verrà automaticamente *sospeso*.   
+En este expander es posible insertar datos para proponer en la *Evaluación periódica sobre No conformidades (Valutazione periodica su Non conformità)*.  
+En el expander, se pueden ingresar:  
+- **tipo valutazione proposta**: *Tipo de evaluación* a proponer al insertar una *Evaluación periódica sobre No conformidades (Valutazione periodica su Non conformità)*.  
+- **sospensione automatica**: indica si, al reconocimiento de una *Evaluación de proveedor de suspensión (Valutazione fornitore di sospensione)*, el proveedor será automáticamente *sospeso*.  
 >
-- **Intervalli punteggio per la valutazione**   
-> In questo elenco è possibile definire le fascie di percentuale per l'attribuzione automatica della *Valutazione periodica su Non conformità*.   
-> La tabella consente di inserire nuovi record, modificarli oppure cancellarli. L'elenco si compone delle seguenti informazioni:   
->- **Valutazione**: è il codice della *Valutazione fornitore*.   
->- **Descrizione valutazione**: è la descrizione della *Valutazione fornitore*.   
->- **Punteggio da**: valore espresso in percentuale, è il valore iniziale dell'intervallo alla quale viene attribuita la *Valutazione*;   
->> la *Valutazione* da attribuire ad un *Fornitore* viene calcolata considerando la percentuale ottenuta dalla valutazione;   
->> la percentuale deve essere uguale o maggiore al valore iniziale e inferiore al valore della percentuale di fascia maggiore.  
+- **Intervalos de puntuación para la evaluación (Intervalli punteggio per la valutazione)**  
+> En esta lista, se pueden definir los rangos de porcentaje para la atribución automática de la *Evaluación periódica sobre No conformidades (Valutazione periodica su Non conformità)*.  
+> La tabla permite insertar nuevos registros, modificarlos o eliminarlos. La lista se compone de la siguiente información:  
+>- **valutazione**: es el código de la *valutazione fornitore*.  
+>- **descrizione valutazione**: es la descripción de la *valutazione fornitore*.  
+>- **punteggio da**: valor expresado en porcentaje, es el valor inicial del intervalo al cual se atribuye la *Evaluación*;  
+>> la *Evaluación* que se atribuirá a un *fornitore* se calculará considerando el porcentaje obtenido de la evaluación;  
+>> el porcentaje debe ser igual o mayor al valor inicial y menor que el valor del porcentaje del rango superior.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,85 +1,69 @@
 ---
-title: Distinta base
+title: distinta base
 sidebar_position: 0
 ---
 
-:::important **Introduzione**     
+:::important **Introducción (Introduzione)**
 
-La distinta base è una struttura dati di tipo fisico-logico che descrive come è fatto un prodotto.             
-Normalmente si utilizza solo per prodotti di produzione e non di acquisto, indicando i componenti che fanno parte del prodotto assemblato e la quantità necessaria di ciascuno di essi per realizzare una quantità predefinita del prodotto assemblato (coefficiente d’impiego del componente).            
-Oltre a codice componente e quantità che rappresentano le informazioni di base, ne esistono molte altre che verranno illustrate nell’help in linea di Fluentis.
+La lista de materiales es una estructura de datos de tipo físico-lógico que describe cómo está hecho un producto.             
+Normalmente se utiliza solo para productos de producción y no de compra, indicando los componentes que forman parte del producto ensamblado y la cantidad necesaria de cada uno de ellos para realizar una cantidad predefinida del producto ensamblado (coeficiente de uso del componente).            
+Además del código del componente y la cantidad que representan la información básica, existen muchas otras que se ilustrarán en la ayuda en línea de Fluentis.
 
-La distinta base serve per i seguenti scopi:
+La lista de materiales sirve para los siguientes propósitos: 
 
-- Pianificare il fabbisogno di materiali (semilavorati e materie prime) e risorse produttive
+- Planificar la necesidad de materiales (semiacabados y materias primas) y recursos productivos. 
 
-- Gestire le movimentazioni di magazzino dei componenti a fronte della realizzazione di un assemblato (conoscendo la quantità realizzata dell’assemblato si può calcolare la quantità teoricamente consumata di ciascun componente e quindi fare i relativi scarichi di magazzino)
+- Gestionar los movimientos de almacén de los componentes en función de la realización de un ensamblado (conociendo la cantidad de ensamblados producidos, se puede calcular la cantidad teóricamente consumida de cada componente, y por lo tanto realizar los descargos correspondientes de almacén). 
 
-- Calcolare il costo a preventivo di un assieme; infatti la struttura del prodotto unitamente ai costi dei materiali acquistati o lavorati esternamente ed alla descrizione del processo di lavorazione tramite i cicli di lavoro, permettono di calcolare il costo teorico di un prodotto. 
-Il costo effettivo varia per ogni ordine di trasformazione in base al valore effettivo di acquisto dei materiali, ai tempi di lavorazione consuntivati, alle risorse effettivamente impiegate.
+- Calcular el costo estimado de un conjunto; de hecho, la estructura del producto junto con los costos de los materiales adquiridos o trabajados externamente y la descripción del proceso de trabajo a través de los ciclos de trabajo permiten calcular el costo teórico de un producto. El costo real varía para cada orden de transformación en función del valor real de compra de los materiales, los tiempos de trabajo consumidos y los recursos efectivamente utilizados.
 
-- Descrivere e documentare la struttura di un prodotto.
+- Describir y documentar la estructura de un producto.
 
-A volte si crea la distinta base di un prodotto che non viene realizzato internamente (per esempio un prodotto acquistato), solo al fine di rappresentarne la struttura per scopi di manutenzione o riparazione.
+A veces se crea la lista de materiales de un producto que no se realiza internamente (por ejemplo, un producto comprado), solo para representar su estructura con fines de mantenimiento o reparación.
 
-Per quanto riguarda la pianificazione, oltre alle distinte fisiche nelle quali sia il codice assemblato che i componenti sono prodotti reali che vengono gestiti a magazzino con processi di acquisto e produzione, si utilizzano delle distinte non fisiche ma logiche dette distinte di pianificazione, il cui scopo è quello di semplificare il processo di pianificazione di periodo medio-lungo come attività a valle della previsione delle vendite che viene realizzata non per singoli codici di prodotto finito ma per famiglie di prodotti e tipicamente a valore e non a quantità.
+En lo que respecta a la planificación, además de las listas físicas en las cuales tanto el código ensamblado como los componentes son productos reales que se gestionan en el almacén mediante procesos de compra y producción, se utilizan listas no físicas sino lógicas llamadas listas de planificación, cuyo objetivo es simplificar el proceso de planificación a medio-largo plazo como actividad posterior a la previsión de ventas, que se realiza no por códigos individuales de productos acabados sino por familias de productos y típicamente a valor y no a cantidad.
 
-I principali tipi di distinte di pianificazione sono i seguenti:
+Los principales tipos de listas de planificación son los siguientes:
 
 <details>
-<summary> Distinte modulari </summary>
+<summary> Listas modulares (Distinte modulari) </summary>
 
-Questo tipo di distinta descrive i moduli e le opzioni di un prodotto finito.
-I moduli sono parti comuni che non dipendono dalle scelte dei clienti, le opzioni invece vengono scelte dai clienti.
-Si utilizza molto negli ambienti in cui un prodotto è ordinabile secondo più opzioni da parte del cliente come per esempio nell’industria automobilistica (scelta accessori, motorizzazione etc).
+Este tipo de lista describe los módulos y las opciones de un producto acabado. Los módulos son partes comunes que no dependen de las elecciones de los clientes; las opciones, en cambio, son elegidas por los clientes. Se utiliza mucho en entornos donde un producto es ordenable según más opciones por parte del cliente, como por ejemplo en la industria automotriz (elección de accesorios, motorización, etc.).
 
 </details>
 
 <details>
-<summary> Distinte contenitore (kit bill) </summary>
+<summary> Listas contenedor (kit bill) (Distinte contenitore) </summary>
 
-In questo caso il codice dell’assemblato non corrisponde ad un prodotto reale gestito a magazzino ma rappresenta un raggruppamento logico dei suoi componenti.
-Il vantaggio è che con un solo codice articolo se ne gestiscono molti, sia in fase di pianificazione che di movimentazione di magazzino che di costificazione di prodotto.
-Il codice contenitore viene quindi utilizzato come componente di altre distinte sia fisiche che logiche.
+En este caso, el código del ensamblado no corresponde a un producto real gestionado en almacén, sino que representa un agrupamiento lógico de sus componentes. El beneficio es que con un solo código de artículo se gestionan muchos, tanto en la fase de planificación como en el movimiento de almacén y en la valoración del producto. El código contenedor se utiliza, por lo tanto, como componente de otras listas tanto físicas como lógicas.
 
 </details>
 
 <details>
-<summary> Distinte super (super bill) </summary>
+<summary> Listas super (super bill) (Distinte super) </summary>
 
-Sono distinte utilizzate per rappresentare famiglie di prodotti finiti che utilizzano come componenti distinte modulari e distinte di parti comuni.
-Il coefficiente d’impiego assegnato a ciascuna opzione rappresenta la probabilità d’ordine di tale opzione sul totale delle unità vendute della famiglia di prodotti finiti (se per esempio la motorizzazione 2000 cc benzina viene scelta nel 23% dei casi, il coefficiente d’impiego di tale opzione varrà 0,23).
-Il coefficiente d’impiego assegnato a ciascuna distinta di parti comuni rappresenta invece la quantità necessaria per realizzare una unità di prodotto finito di tale gruppo.
+Son listas utilizadas para representar familias de productos acabados que utilizan como componentes listas modulares y listas de partes comunes. El coeficiente de uso asignado a cada opción representa la probabilidad de pedido de tal opción sobre el total de las unidades vendidas de la familia de productos acabados (si, por ejemplo, la motorización de 2000 cc gasolina se elige en un 23% de los casos, el coeficiente de uso de tal opción será 0,23). El coeficiente de uso asignado a cada lista de partes comunes representa, a su vez, la cantidad necesaria para realizar una unidad de producto acabado de dicho grupo.
 
 </details>
 
 <details>
-<summary> Distinte famiglia (family bill) </summary>
+<summary> Listas de familia (family bill) (Distinte famiglia) </summary>
 
-Il codice assemblato di una tale distinta è un elemento logico e non fisico che serve per identificare  una famiglia di prodotti indicandone i singoli membri quando il numero membri di una famiglia non è numeroso.
-Spesso i membri della famiglia sono i “modelli” che la compongono.
-Pensiamo per esempio ad una grande azienda che realizza diverse famiglie di prodotti come motociclette, automobili, mezzi pesanti di trasporto, autobus, macchine movimentazione terra, trattori etc..
-In questo esempio la famiglia delle automobili è composta dai vari modelli di auto venduti dall’azienda e così via per le altre famiglie.
-Ogni “modello” sarà presente nella distinta con un coefficiente d’impiego che rappresenta la percentuale di vendite di tale modello sul totale della famiglia.
+El código ensamblado de una lista así es un elemento lógico y no físico que sirve para identificar una familia de productos, indicando sus miembros cuando el número de miembros de una familia no es numeroso. A menudo, los miembros de la familia son los “modelos” que la componen. Pensemos, por ejemplo, en una gran empresa que produce diversas familias de productos como motocicletas, automóviles, vehículos de carga, autobuses, máquinas de movimiento de tierra, tractores, etc. En este ejemplo, la familia de automóviles está compuesta por los diferentes modelos de coches vendidos por la empresa y así sucesivamente para las demás familias. Cada “modelo” estará presente en la lista con un coeficiente de uso que representa el porcentaje de ventas de tal modelo sobre el total de la familia.
 
 </details>
 
 <details>
-<summary> Distinta media (average bill) </summary>
+<summary> Lista media (average bill) (Distinta media) </summary>
 
-Anche in questo caso il codice dell’assemblato è di tipo logico e non fisico.
-Rappresenta la struttura media di un prodotto in modo simile a quanto fa una distinta super ma a differenza di quest’ultima i suoi componenti non sono moduli o kit (cioè componenti di tipo logico) ma codici fisici realmente gestiti a magazzino e nella maggior parte dei casi si tratta di soli componenti d’acquisto.
-Si usa soprattutto quando i prodotti finiti si differenziano per caratteristiche fisiche come forma, dimensione, volume, peso etc..
+En este caso, el código del ensamblado es de tipo lógico y no físico. Representa la estructura media de un producto de manera similar a lo que hace una lista super, pero a diferencia de esta última, sus componentes no son módulos o kits (es decir, componentes de tipo lógico) sino códigos físicos realmente gestionados en el almacén y en la mayoría de los casos se trata solo de componentes de compra. Se utiliza principalmente cuando los productos acabados se diferencian por características físicas como forma, tamaño, volumen, peso, etc.
 
 </details>
 
 <details>
-<summary> Distinta immaginaria (imaginary bill) </summary>
+<summary> Lista imaginaria (imaginary bill) (Distinta immaginaria) </summary>
 
-E’ un tipo distinta che si utilizza nelle aziende che lavorano su commessa di tipo Engineer to Order dove si realizzano prodotti molto complessi con lunghi tempi di realizzazione non ancora ingegnerizzati al momento dell’ordine cliente (impianti industriali, grossi macchinari, navi, aerei etc.).
-In questo caso la distinta del prodotto finito risulterebbe disponibile sola alla fine dell’intera attività di progettazione e quindi troppo tardi per consentire al sistema di pianificazione di esplicare la sua azione.
-Per tale ragione inizialmente viene creata una distinta base “immaginaria” copiata da un prodotto simile realizzato nel passato contenente parti già note e parti temporanee che verranno sostituite da quelle definitive man mano che la progettazione progredisce.
-Questa distinta consente comunque l’elaborazione del sistema di pianificazione e la programmazione di attività ed approvvigionamenti cadenzati opportunamente nel tempo e la ripianificazione delle attività man mano che la commessa evolve.
+Es un tipo de lista que se utiliza en empresas que trabajan bajo pedido de tipo Engineer to Order, donde se elaboran productos muy complejos con largos tiempos de realización que aún no han sido diseñados al momento del pedido del cliente (instalaciones industriales, grandes máquinas, barcos, aviones, etc.). En este caso, la lista del producto acabado estaría disponible solo al final de toda la actividad de diseño y, por lo tanto, demasiado tarde para permitir que el sistema de planificación desarrolle su acción. Por esta razón, inicialmente se crea una lista base “imaginaria” copiada de un producto similar elaborado en el pasado que contiene partes ya conocidas y partes temporales que serán reemplazadas por las definitivas a medida que se avanza en el diseño. Esta lista permite, no obstante, la elaboración del sistema de planificación y la programación de actividades y aprovisionamientos programados adecuadamente en el tiempo, así como la re-planificación de actividades a medida que la orden evoluciona.
 
 </details>
 :::

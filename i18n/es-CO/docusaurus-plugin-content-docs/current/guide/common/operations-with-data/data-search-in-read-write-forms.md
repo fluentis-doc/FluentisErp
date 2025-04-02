@@ -1,55 +1,53 @@
 ---
-title: Ricerca e inserimento dati
+title: Búsqueda e inserción de datos (Ricerca e inserimento dati)
 sidebar_position: 3
 ---
 
-Le form permettono di trovare i record inseriti precedentemente per *visualizzarli*, *modificarli* , *cancellarli*, ma anche di aggiungere record **Nuovi**, se l'utente ha i **diritti necessari** per queste operazioni.
+Los formularios permiten encontrar los registros insertados anteriormente para *visualizarlos*, *modificarlos*, *eliminarlos*, pero también para agregar registros **Nuevos (Nuovi)**, si el usuario tiene los **derechos necesarios (diritti necessari)** para estas operaciones.
 
-Una form si suddivide in più sezioni:
+Un formulario se divide en varias secciones:
 
-### 1. Barra di ricerca avanzata
+### 1. Barra de búsqueda avanzada
 
-Questa barra multifunzione permette di ricercare per parola chiave all'interno di vari campi presenti nei documento oggetto della form.
+Esta barra multifuncional permite buscar por palabra clave dentro de varios campos presentes en el documento objeto del formulario.
 
-Il criterio di ricerca, nel caso si inserisca più di una parola chiave, può essere:
+El criterio de búsqueda, en caso de insertar más de una palabra clave, puede ser:
 
-- OR se le parole sono separate da DUE spazi (quindi cercherà nei campi interessati una qualsiasi delle due o più parole inserite)
-- AND se le parole sono separate da UNO spazio (quindi cercherà entrambe le parole assieme come chiave di ricerca nei campi interessati)
- 
+- OR si las palabras están separadas por DOS espacios (entonces buscará en los campos afectados cualquiera de las dos o más palabras insertadas)  
+- AND si las palabras están separadas por UN espacio (entonces buscará ambas palabras juntas como clave de búsqueda en los campos afectados)  
 
 :::note Nota
 
-Per conoscere su quali campi del documento viene eseguita la ricerca è possibile accedere al *Object navigator* (sulla destra) e facendo click con il tasto destro premere *Dettagli*. 
+Para conocer en qué campos del documento se realiza la búsqueda, es posible acceder al *object navigator* (a la derecha) y haciendo clic con el botón derecho seleccionar *dettagli*.
 
-Nella maschera che si apre selezionare Nuovamente l'oggetto e facendo click con il tasto destro selezionare *Modifica oggetto standard*. Selezionare quindi il tab *Modelli di ricerca* nella griglia in basso a sinistra.
+En la máscara que se abre, seleccione nuevamente el objeto y haciendo clic con el botón derecho seleccione *modifica oggetto standard*. Luego seleccione la pestaña *modelli di ricerca* en la cuadrícula en la parte inferior izquierda.
 
 :::
 
-### 2. Area di filtro
+### 2. Área de filtro
 
-I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei per visualizzare: un solo record (filtro per numero documento), più record (filtro per data), i record inseriti in un anno (filtro per anno), i record inseriti per una certa anagrafica (filtro per conto/sottoconto), ecc.
+Los filtros suelen estar en condición 'AND' y es posible especificar varios criterios de filtro simultáneamente para visualizar: un único registro (filtro por número de documento), varios registros (filtro por fecha), los registros ingresados en un año (filtro por año), los registros ingresados por cierta entidad (filtro por cuenta/subcuenta), etc.
 
-Clic sulle freccette ![](/img/neutral/common/arrow.png) per aprire gli [expander](/docs/guide/common/glossary/glossary-intro#expander) e per filtrare anche in base ai dati contenuti in essi.
+Haga clic en las flechas ![](/img/neutral/common/arrow.png) para abrir los [expansores (expander)](/docs/guide/common/glossary/glossary-intro#expander) y filtrar también en base a los datos contenidos en ellos.
 
-Dopo l'inserimento dei filtri desiderati premere il pulsante **Ricerca** per ottenere l'elenco dei dati.
-
+Después de insertar los filtros deseados, presione el botón **ricerca** para obtener la lista de datos.
 
 :::note Nota
-L'area di filtro può essere visualizzata come già espansa all'apertura della maschera se viene tenuta "bloccata" premendo il tasto con l'icona della puntina (*Pin*)
+El área de filtro puede visualizarse ya expandida al abrir la máscara si se mantiene "bloqueada" presionando el botón con el ícono del sujetapapeles (*Pin*). 
 :::
 
 ![](/img/neutral/common/pin.png)
 
-### 3. Griglia di risultato
+### 3. Grilla de resultados
 
-Rappresenta l'elenco dei dati che corrispondono ai filtri inseriti nell'area di filtro.
+Representa la lista de datos que coinciden con los filtros insertados en el área de filtro.
 
-### Inserimento nuovi record 
+### Inserción de nuevos registros
 
-Le form di lettura/scrittura permettono anche l'inserimento dei record.
+Los formularios de lectura/escritura también permiten la inserción de registros.
 
-Per fare questo posizionatevi sull'ultima riga della prima griglia oppure usate il tasto **Nuovo**. Il salvataggio si realizza facendo clic su un'altra riga.
+Para hacer esto, colóquese en la última fila de la primera cuadrícula o use el botón **nuovo**. El guardado se realiza haciendo clic en otra fila.
 
-:::note Particolarità
-Certe form hanno più griglie collegate tra di loro. Per una riga della griglia superiore si possono inserire nuovi dettagli nella griglia inferiore.
+:::note Particularidad
+Ciertos formularios tienen más cuadrículas conectadas entre sí. Para una fila de la cuadrícula superior, se pueden insertar nuevos detalles en la cuadrícula inferior.
 :::

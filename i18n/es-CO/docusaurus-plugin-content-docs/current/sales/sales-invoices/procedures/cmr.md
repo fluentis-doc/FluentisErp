@@ -1,21 +1,20 @@
 ---
-title: C.M.R.
+title: c.m.r.
 sidebar_position: 3
 ---
 
-La procedura del CMR permette di stampare i documenti per riassumere gli articoli e il peso e volume totale dei documenti selezionati per essere spediti. Nella parte superiore è possibile filtrare le Fatture di vendita, i DDT di vendita e i DDT di conto lavoro. Cliccando Ricerca verranno visualizzati in griglia i documenti che hanno le caratteristiche ricercate e che verranno stampati.     
+El procedimiento del CMR permite imprimir los documentos para resumir los artículos y el peso y volumen total de los documentos seleccionados para ser enviados. En la parte superior es posible filtrar las Facturas de venta, los DDT de venta y los DDT de trabajo por cuenta. Al hacer clic en Buscar (Ricerca), se mostrarán en cuadrícula los documentos que tienen las características buscadas y que se imprimirán.
 
-:::tip Consiglio
-Se volete escludere una determinata tipologia di documento dai risultati in griglia per un cliente, inserite una data inziale e una data finale in cui non ci siano documenti. In questo modo non verrà proposta nessuna riga da stampare.
+:::tip Consejo
+Si desean excluir un tipo determinado de documento de los resultados en cuadrícula para un cliente, ingresen una fecha inicial y una fecha final en la que no haya documentos. De esta manera, no se propondrá ninguna línea para imprimir.
 :::
 
-Per visualizzare i risultati è obbligatorio raggruppare per **Conto**, **Porto**, **Destinatario/Destinazione** oppure **Vettore**, con i relativi flag del filtro.
+Para visualizar los resultados, es obligatorio agrupar por **conto**, **porto**, **Destinatario/Destinación (Destinatario/Destinazione)** o **vettore**, con los respectivos indicadores del filtro.
 
-:::tip Consiglio
-Se si raggruppa soltanto per il Conto, non si possono valorizzare Destinatario e Destinazione perchè più righe con lo stesso cliente, ma diversi destinatari/destinazioni, creano una sola riga CMR. E' necessario quindi raggruppare sia per Destinazione che per Conto.
+:::tip Consejo
+Si se agrupa solo por la Cuenta, no se pueden asignar Destinatario y Destinación porque varias líneas con el mismo cliente, pero diferentes destinatarios/destinaciones, crean una sola línea CMR. Por lo tanto, es necesario agrupar tanto por Destinación como por Cuenta.
 :::
 
-Nella griglia di risultato è possibile consultare l'elenco dei conti/porti/destinatari/vettori (in base al raggruppamento selezionato nel filtro) presenti nei documenti. Espandendo le righe, saranno visualizzati fatture, ddt di vendita e ddt di conto lavoro. Alla selezione di una riga saranno stampati tutti i documenti visualizzati espandendo quella riga.   
-Per ogni riga vengono riportati nelle colonne **Descrizione merce** e **Note** rispettivamente i campi **Aspetto esteriore dei beni** e **Annotazioni cliente** inseriti nei documenti. Se non presenti possono essere compilati manualmente.       
-Per ogni documento vengono stampate quattro copie: per il venditore, per il vettore, per il destinatario e una aggiuntiva.
-
+En la cuadrícula de resultados, es posible consultar la lista de cuentas/puertos/destinatarios/transportistas (según el agrupamiento seleccionado en el filtro) presentes en los documentos. Al expandir las líneas, se mostrarán facturas, DDT de venta y DDT de trabajo por cuenta. Al seleccionar una línea, se imprimirán todos los documentos visualizados expandiendo esa línea.  
+Para cada línea, se muestran en las columnas **descrizione merce** y **note**, respectivamente, los campos **aspetto esteriore dei beni** y **annotazioni cliente** ingresados en los documentos. Si no están presentes, pueden ser completados manualmente.  
+Para cada documento se imprimen cuatro copias: para el vendedor, para el transportista, para el destinatario y una adicional.

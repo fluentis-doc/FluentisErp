@@ -1,64 +1,63 @@
 ---
-title: Duplica articoli
+title: duplica articoli
 sidebar_position: 4
 ---
 
-Alla procedura per la duplica articolo, si accede attraverso il percorso **Home > Articoli > Duplica articoli**.
+A la procedimiento para duplicar un artículo, se accede a través de la ruta **Inicio > Artículos > duplica articoli**.
 
-In questa finestra si possono creare nuovi articoli, tramite la duplica partendo da articoli già esistenti. In questo modo si potranno duplicare le informazioni comuni ai due articoli.
+En esta ventana se pueden crear nuevos artículos, duplicando a partir de artículos ya existentes. De este modo, se podrán duplicar las informaciones comunes a los dos artículos.
 
-### Area di filtro
+### Área de filtro
 
-Nell'area di  filtro, è possibile impostare una serie di filtri che permettono di ricercare all'interno del database, l'articolo o gli articoli che posseggono determinate caratteristiche in modo da poter individuare più facilmente un articolo che più si avvicina all'articolo o agli articoli che si vogliono creare e che sarà la base di partenza per la procedura di duplica.
+En el área de filtro, es posible configurar una serie de filtros que permiten buscar dentro de la base de datos, el artículo o artículos que poseen ciertas características, de modo que se pueda identificar más fácilmente un artículo que se asemeje al artículo o artículos que se quieren crear, siendo este la base de partida para el procedimiento de duplicación.
 
-Con l'aiuto di questi filtri si può visualizzare: un solo articolo (per es. ricercando con il codice articolo) o più articoli appartenenti alla stessa classe inserendo la classe articolo; articoli con le stesse caratteristiche, o la stessa categoria merceologica (per es. ricercando con caratteristica e categoria merceologica); articoli con lo stesso tipo articolo, o la stessa nomenclatura; tutti gli articoli aventi uno stesso fornitore preferenziale, uno stesso stato o versione; nel caso dei materiali acquistati è possibile ricercare l'articolo tramite il codice articolo del fornitore; infine è possibile ricercare gli articoli tramite il loro barcode.
+Con la ayuda de estos filtros se puede visualizar: un solo artículo (por ejemplo, buscando con el código del artículo) o varios artículos pertenecientes a la misma clase, ingresando la clase del artículo; artículos con las mismas características, o la misma categoría mercantil (por ejemplo, buscando con características y categoría mercantil); artículos con el mismo tipo de artículo, o la misma nomenclatura; todos los artículos que tengan un mismo proveedor preferencial, un mismo estado o versión; en el caso de materiales comprados, es posible buscar el artículo a través del código de artículo del proveedor; finalmente, también es posible buscar los artículos mediante su código de barras.
 
-Aprendo gli expander **Ricerca avanzata** e **Lotti e serial number**, si può decidere di filtrare anche in base allo stato dell'articolo (fittizio, archiviato/non archiviato, in esaurimento/non in esaurimento) oppure in base alla gestione dell'articolo (se gestito a lotti, a serial number, gestito Rfid o Rfid unico).
+Al abrir los expandidos **ricerca avanzata** y **lotti e serial number**, se puede decidir filtrar también según el estado del artículo (ficticio, archivado/no archivado, en agotamiento/no en agotamiento) o según la gestión del artículo (si es gestionado por lotes, por número de serie, gestionado por Rfid o Rfid único).
 
-Una volta impostati i parametri di filtro desiderati, cliccando sul pulsante di **Ricerca** presente nella ribbon bar, il sistema andrà ad individuare l'articolo o la serie di articoli che corrispondono ai parametri selezionati e li riporterà nella griglia di risultato.
+Una vez configurados los parámetros de filtro deseados, haciendo clic en el botón de **ricerca** presente en la barra de herramientas, el sistema buscará el artículo o la serie de artículos que correspondan a los parámetros seleccionados y los mostrará en la cuadrícula de resultados.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Genera prototipi articolo**: pulsante che si attiverà nel momento in cui verrà selezionato l'articolo padre e verrà codificato l'articolo figlio nel primo tab della finestra detto *Articolo da duplicare*; in questo modo verrà generato il prototipo di articolo figlio che si andrà successivamente a definire e confermare;  
-> **Seleziona/Deseleziona tutti**: pulsanti che permettono di selezionare o deselezionare tutti gli articoli risultanti dai filtri di ricerca impostati;  
-> **Cancella prototipo articolo**: pulsante che permette di cancellare, una volta selezionato, il prototipo articolo che è stato generato prima che questo venga creato ufficialmente tramite la procedura di *Conferma generazione prototipo';  
-> **Conferma generazione prototipo**: pulsante che permette di confermare il prototipo precedente creato, generando in modo ufficiale l'articolo figlio all'interno del database.  
+> **Generar prototipos de artículo (Genera prototipi articolo)**: botón que se activará al momento de seleccionar el artículo padre y codificar el artículo hijo en la primera pestaña de la ventana denominada *articolo da duplicare*; de este modo se generará el prototipo del artículo hijo que se definirá y confirmará posteriormente;  
+> **Seleccionar/Deseleccionar todos (Seleziona/Deseleziona tutti)**: botones que permiten seleccionar o deseleccionar todos los artículos resultantes de los filtros de búsqueda configurados;  
+> **Eliminar prototipo de artículo (Cancella prototipo articolo)**: botón que permite eliminar, una vez seleccionado, el prototipo de artículo que ha sido generado antes de que este sea creado oficialmente mediante el procedimiento de *Confirmar generación de prototipo (Conferma generazione prototipo)*;  
+> **Confirmar generación de prototipo (Conferma generazione prototipo)**: botón que permite confirmar el prototipo previamente creado, generando oficialmente el artículo hijo dentro de la base de datos.  
 
-Di seguito, verranno dettagliati i passaggi che consentono la duplica articolo.
+A continuación, se detallarán los pasos que permiten la duplicación del artículo.
 
+### Artículo a duplicar (Articolo da duplicare)
 
-### Articolo da duplicare
+Esta pestaña incluye la cuadrícula de resultados en la que se mostrarán el artículo y/o la lista de artículos que correspondan a los criterios de filtro establecidos previamente para la identificación del artículo de partida.
 
-Questo tab, comprende la griglia di risultato in cui verranno visualizzati l'articolo e/o la lista di articoli corrispondenti ai criteri di filtro precedentemente impostati per l'individuazione dell'articolo di partenza.
+Una vez identificado el artículo padre a partir del cual se procederá con la duplicación, en la sección inferior se completarán automáticamente algunos datos: **società**, **divisione**, **classe articolo** y **numero prototipi**.
 
-Una volta individuato l'articolo padre da cui partire per la duplica, nella sezione sottostante verranno automaticamente compilati alcuni dati: **Società**, **Divisione**, **Classe articolo** e **Numero prototipi**.
+Todos estos datos son modificables manualmente a través de las combinaciones (combo) o ingresando un número diferente de prototipos en el campo **numero prototipi**.
 
-Tutti questi dati, sono comunque modificabili poi manualmente tramite le combo oppure inserendo un diverso numero di prototipi all'interno del campo **Numero prototipi**.
+El **codice articolo**, en cambio, se generará en base a la composición del código del artículo que se ha decidido establecer en función de la clase del artículo en la tabla **classi articolo**.
 
-Il **Codice articolo** invece, verrà creato in base alla composizione del codice articolo che si è scelto di impostare in base alla classe articolo nella tabella **Classi articolo**.
+Como se puede notar, al seleccionar la clase del artículo, en la cuadrícula de la derecha se presentan las informaciones que indican cómo se ha determinado que se deben crear los códigos de los artículos pertenecientes a esa clase de artículo; en el ejemplo mencionado, el código está compuesto en orden por un dato adicional, es decir, el País (la sigla) que compondrá tanto el código como la descripción; por un segundo dato adicional que será el color, y también este compondrá tanto el código como la descripción; otro dato adicional que en este caso novamente es el país, y luego un código progresivo de longitud de 3 dígitos que se calculará a partir del valor 1, y finalmente un valor fijo que en este caso se ha establecido que es la letra F.
 
-Come si può notare, selezionando la classe articolo, nella griglia sulla destra vi sono le informazioni che indicano come è stato stabilito debbano essere creati i codici degli articoli appartenenti a quella classe articolo; nel esempio riportato sopra il codice è composto in ordine da un extra data ovvero il Paese (la sigla) che comporrà sia il codice sia la descrizione; da un secondo extra data che sarà il colore e anche questo comporrà sia il codice sia la descrizione; un ulteriore extra data che in questo caso è nuovamente il paese e poi da un codice progressivo della lunghezza di 3 cifre e che verrà calcolato partendo dal valore 1, e infine da un valore fisso che in questo caso è stato stabilito essere la lettera F.
+Esta tabla se resume también en la pestaña **Artículos a duplicar (Articoli da duplicare)**, donde se completarán las informaciones relativas a los valores mencionados anteriormente (así que se indicará el país, el color, etc., en función del tipo de dato adicional que se haya elegido).
 
-Questa tabella viene riassunta anche nel tab stesso, **Articoli da duplicare**, dove si andranno a compilare le informazioni relative ai valori riportati sopra (quindi si andrà ad indicare il paese, il colore etc in base a che tipo di extra data si sono scelti).
+Una vez configurados los datos, en los campos **codice** y **descrizione** aparecerán automáticamente el código y la descripción del nuevo artículo.
 
-Una volta impostati i dati, nei campi **Codice** e **Descrizione** comparirà in automatico il codice e la descrizione del nuovo articolo.
+Posteriormente, se pueden establecer los parámetros para proceder con la creación del **Prototipo de artículo (Prototipo articolo)**, haciendo clic en el botón homónimo presente en la barra de herramientas del formulario.
 
-In seguito, si possono impostare i parametri per procedere con la creazione del **Prototipo articolo**, cliccando sull'omonimo pulsante presente nella ribbon bar della form.
+El prototipo generado se visualizará en la siguiente pestaña, **prototipi articolo**.
 
-Il prototipo generato verrà visualizzato nel tab successivo, Prototipi articolo.
+### Parámetros (Parametri)
 
-### Parametri
+En esta pestaña, se pueden seleccionar los parámetros que deben regular la duplicación del artículo en cuestión.
 
-In questo tab, si possono selezionare i parametri che devono regolare la duplica dell'articolo in oggetto.
+La pantalla contiene una serie de indicadores (flag), que indicarán las características del artículo que se desean duplicar exactamente iguales a las del artículo padre y que podrán ser actualizadas y/o modificadas en el artículo hijo.
 
-La schermata contiene una serie di flag, che andranno ad indicare le caratteristiche dell'articolo si vuole vengano duplicate esattamente uguali a quelle dell'articolo padre e che potranno comunque essere poi aggiornate e/o modificate nell'articolo figlio.
+Las informaciones que se pueden duplicar son: costos, pesos y dimensiones, lotes y S/N, aprovisionamiento, variantes, proveedores preferenciales (en el caso de artículos de compra), clientes (en el caso de artículos de venta), U.M. alternativas, imágenes, notas, códigos de barras, las informaciones contenidas en la pestaña Administración (Amministrazione), datos adicionales (extra data), empaquetado, etc. Estas son todas informaciones contenidas dentro de las pestañas que forman al artículo y que han sido detalladas en los respectivos artículos (ver [Creación de artículo (Creazione articolo)](/docs/erp-home/registers/items/create-new-item) con los documentos relacionados).
 
-Le informazioni che si possono duplicare sono: costi, pesi e dimensioni, lotti e S/N, approvvigionamento, varianti, fornitori preferenziali (nel caso di articoli di acquisto), clienti (nel caso di articoli di vendita), U.M alternative, immagini, note, codici barcode, le informazioni contenute nel tab Amministrazione, extra data, confezionamento, ecc. Queste sono tutte informazioni contenute all'interno dei tab che formano l'articolo e che sono state dettagliate nei relativi articoli (vedi [Creazione articolo](/docs/erp-home/registers/items/create-new-item) con i relativi documenti collegati).
+También se puede decidir duplicar la [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) de producción del artículo, su [Ciclo de trabajo (Ciclo di lavoro)](/docs/erp-home/registers/production/routes/new-route) y los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del artículo.
 
-Si può inoltre decidere di duplicare anche la [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) di produzione dell'articolo, il suo  [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route) e i [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo.
+Dentro de esta pestaña, hay una sección adicional donde se puede definir un color de fondo de celda y color de texto para poder identificar, al momento de la generación de los prototipos, las filas que contienen un dato faltante (por ejemplo, si alguna de las informaciones que se desean duplicar resulta vacía en el artículo padre, en el artículo hijo se visualizará la fila correspondiente a esa entrada resaltada en el color elegido) y los artículos que ya han sido codificados previamente (en caso de que se esté procediendo con la creación de un artículo idéntico a un artículo ya existente en la base de datos).
 
-Sempre all'interno di questo tab, è presente un'ulteriore sezione in cui si può andare a definire un colore di riempimento cella e colore testo per poter individuare nel momento della generazione dei prototipi: le righe contenenti un dato mancante (per es. se una delle informazioni che si desidera duplicare risulta vuota nell'articolo padre, nell'articolo figlio verrà visualizzata la riga corrispondente a quella voce evidenziata nel colore prescelto) e gli articoli che risultano essere già stati codificati in precedenza (nel caso in cui si stia procedendo con la creazione di un articolo perfettamente identico ad un articolo già esistente all'interno del database).
+Una vez configurados los parámetros, se puede proceder con la duplicación del artículo.
 
-Una volta impostati i parametri si può procedere con la duplica dell'articolo.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no se ha detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

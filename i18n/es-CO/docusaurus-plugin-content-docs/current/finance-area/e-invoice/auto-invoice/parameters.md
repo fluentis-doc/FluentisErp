@@ -1,20 +1,20 @@
 ---
-title: Parametri contabili per autofattura
+title: Parámetros contables para autofactura (Parametri contabili per autofattura)
 sidebar_position: 1
 ---
 :::note NOTA:
-Le seguenti istruzioni riguardano la procedura di generazione automatizzata delle auto-fatture di vendita create al fine di comunicare allo SDI, tramite il circuito della fatturazione elettronica, i dati sugli acquisti precedentemente comunicati tramite l'abrogato adempimento noto come "Esterometro".
+Las siguientes instrucciones se refieren al procedimiento de generación automatizada de las autofacturas de venta creadas para comunicar al SDI, a través del circuito de la facturación electrónica, los datos sobre las compras previamente comunicadas a través del derogado cumplimiento conocido como "Esterometro".
 :::
 
-È necessario indicare alcuni elementi di default per la creazione del documento autofattura nelle vendite:
+Es necesario indicar algunos elementos predeterminados para la creación del documento de autofactura en las ventas:
 
-1)	l’unità di misura da utilizzare nell’articolo non codificato che sarà inserito nel documento
+1) la unidad de medida a utilizar en el artículo no codificado que se incluirá en el documento
 
-2)	il relativo fatturato vendite per una eventuale contabilizzazione
+2) el correspondiente volumen de ventas para una posible contabilización
 
-3)	il sottoconto del cliente dell’autofattura, cioè il cliente che identifica l’azienda stessa
+3) el subtipo del cliente de la autofactura, es decir, el cliente que identifica la empresa misma
 
-La contabilizzazione dell’autofattura non è obbligatoria, in quanto solitamente si effettua direttamente una registrazione automatica collegata alla fattura fornitore in rilevazione: si può quindi solitamente indicare uno dei fatturati vendite già presenti, senza necessità di definirne uno specifico.
+La contabilización de la autofactura no es obligatoria, ya que generalmente se realiza directamente un registro automático vinculado a la factura del proveedor en la contabilización: por lo tanto, generalmente se puede indicar uno de los volúmenes de ventas ya presentes, sin necesidad de definir uno específico.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/parameters1.png)
 

@@ -1,14 +1,14 @@
 ---
-title: Form Navigator - Form Editor
+title: Navegador de formularios - Editor de formularios (Form Navigator - Form Editor)
 sidebar_position: 2
 ---
 
-Gli utenti esperti hanno la possibilità di modificare le informazioni contenute in ogni form con l'aiuto del **Form Editor**.
+Los usuarios expertos tienen la posibilidad de modificar la información contenida en cada formulario con la ayuda del **form editor**.
 
-Esempio:
+Ejemplo:
 
-1. aprire la form **Anagrafiche contatti** e fare clic nel panel a sinistra, su **Form Navigator**.
+1. Abra el formulario **anagrafiche contatti** y haga clic en el panel izquierdo sobre **Navegador de formularios (Form Navigator)**.
 
-2. fare clic destra sul Nome della form e quindi fare clic su **Dettagli** che aprirà la **Form Editor**.
+2. Haga clic derecho sobre el Nombre del formulario y luego haga clic en **dettagli**, lo que abrirá el **form editor**.
 
-In quest'ultima finestra è possibile effettuare una serie di modifiche, cioè: modificare i dati generali (titolo, icona, natura, ecc.), modificare o cancellare comandi, ribbon e stampe.
+En esta última ventana, es posible realizar una serie de modificaciones, es decir: modificar los datos generales (título, ícono, naturaleza, etc.), modificar o eliminar comandos, cintas y impresiones.

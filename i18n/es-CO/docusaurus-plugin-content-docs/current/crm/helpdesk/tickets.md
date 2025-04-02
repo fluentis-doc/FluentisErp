@@ -1,80 +1,77 @@
 ---
-title: Gestione ticket
+title: Gestión de tickets (Gestione ticket)
 sidebar_position: 1
 ---
 
-Dalla maschera di ricerca Ticket è possibile visualizzare i ticket già inseriti. Generalmente la Gestione ticket viene utilizzata dal servizio aziendale di helpdesk.
-Da questa maschera è possibile aprire in modifica o visualizzazione i ticket e crearne di nuovi.     
-Inoltre, il pulsante della ribbon bar **Creazione offerte da Ticket** permette di creare delle [Offerte](/docs/sales/offers/insert-offer) direttamente dai ticket selezionati. L'articolo/servizio inserito nel ticket diventerà una riga articolo dell'offerta e verranno riportati nell'Offerta anche gli altri dati inseriti nel ticket: Progetto, Cliente, Importi di riga (fare attenzione in questo caso se esistono listini validi per il cliente: l'offerta modificherà gli importi in base al listino associato al cliente). Questa procedura è presente anche all'interno dei singoli ticket.         
+Desde la máscara de búsqueda de Tickets, es posible visualizar los tickets ya ingresados. Generalmente, la Gestión de tickets es utilizada por el servicio empresarial de helpdesk.  
+Desde esta máscara, se pueden abrir en edición o visualización los tickets y crear nuevos.  
+Además, el botón de la barra de herramientas **Creación de ofertas desde Ticket** permite crear [Ofertas](/docs/sales/offers/insert-offer) directamente desde los tickets seleccionados. El artículo/servicio ingresado en el ticket se convertirá en una línea de artículo de la oferta, y se incluirán en la Oferta también los otros datos ingresados en el ticket: Proyecto, Cliente, Importes de línea (tener en cuenta en este caso si existen precios válidos para el cliente: la oferta modificará los importes en función del precio asociado al cliente). Este procedimiento también está presente dentro de los tickets individuales.  
 
-Cliccando *Nuovo* è possibile inserire un nuovo Ticket. La Gestione ticket si compone di due parti: la Testata e le tab Sottostanti, che andremo ad elencare.     
+Al hacer clic en *Nuevo*, es posible ingresar un nuevo Ticket. La Gestión de tickets se compone de dos partes: la Cabecera y las pestañas Subyacentes, que enumeraremos a continuación.  
 
-## Testata  
+## Cabecera (Testata)  
 
-La testata contiene i seguenti campi.     
-**Tipo/Anno/Numero**: questi dati vengono compilati automaticamente se all'Operatore è stato assegnato un Tipo ticket di default nei [Parametri per operatore del CRM](/docs/configurations/parameters/crm/ticket-parameters); il numero è progressivo.     
-**Data creazione/Scadenza**: la data di creazione viene inserita in automatico con la data odierna; la data scadenza è un campo da inserire manualmente.     
-**Data chiusura/Chiuso**: inserendo il flag Chiuso, viene riportata in automatico la Data chiusura.     
-**Cliente**: questo campo viene compilato automaticamente se all'Operatore è stato assegnato un Cliente di default nei [Parametri per operatore del CRM](/docs/configurations/parameters/crm/ticket-parameters); altrimenti è possibile inserirlo manualmente.     
-**Contatto**: è possibile inserire in alternativa un [Contatto](/docs/crm/home-crm/contacts/new-contact/header).        
-**Progetto**: è possibile indicare un progetto a cui fare riferimento;      
-**Operazioni ticket**: in questo campo vengono visualizzate le possibili [Operazioni](/docs/configurations/tables/crm/tickets/operations) per questo Tipo ticket;      
-**Referente**: in questo campo viene riportata la *Persona di riferimento* del cliente inserito, presa dall'anagrafica; il campo è comunque modificabile;      
-**Severità ticket**: è un campo contenente la [Severità](/docs/configurations/tables/crm/tickets/severity);   
-**Oggetto**: è un campo compilabile manualmente;     
-**Stato**: è possibile assegnare uno stato al ticket; gli stati visualizzati sono quelli inseriti nel [Tipo ticket](/docs/configurations/tables/crm/tickets/ticket-type) corrispondente;              
-**Fatturato/Fatturabile**: questi flag indicano se il ticket è già stato fatturato oppure se dovrà esserlo;      
-**Criteri di fatturazione**: indicare se il criterio di fatturazione sono le re previste dall'offerta o quelle effettivamente svolte;      
-**Periodo di fatturazione**: indicare se la fatturazione deve andare a consuntivo oppure alla consegna.      
+La cabecera contiene los siguientes campos.  
+**Tipo/Año/Número (Tipo/Anno/Numero)**: estos datos se completan automáticamente si se ha asignado a la Operador un Tipo de ticket por defecto en los [Parámetros para operador del CRM](/docs/configurations/parameters/crm/ticket-parameters); el número es progresivo.   
+**Fecha de creación/Fecha de caducidad (Data creazione/Scadenza)**: la fecha de creación se inserta automáticamente con la fecha de hoy; la fecha de caducidad es un campo que debe ser ingresado manualmente.  
+**Fecha de cierre/Cerrado (Data chiusura/Chiuso)**: al marcar el indicador Cerrado, se registra automáticamente la Fecha de cierre.  
+**cliente**: este campo se completa automáticamente si se ha asignado a la Operador un Cliente por defecto en los [Parámetros para operador del CRM](/docs/configurations/parameters/crm/ticket-parameters); de lo contrario, se puede ingresar manualmente.  
+**contatto**: es posible ingresar alternativamente un [Contacto](/docs/crm/home-crm/contacts/new-contact/header).  
+**progetto**: se puede indicar un proyecto al que hacer referencia;  
+**Operaciones de ticket (Operazioni ticket)**: en este campo se visualizan las posibles [Operaciones](/docs/configurations/tables/crm/tickets/operations) para este Tipo de ticket;  
+**referente**: en este campo se registra la *Persona de referencia* del cliente ingresado, tomada del registro; el campo es modificable;  
+**severità ticket**: es un campo que contiene la [Severidad](/docs/configurations/tables/crm/tickets/severity);  
+**oggetto**: es un campo que se puede completar manualmente;  
+**stato**: es posible asignar un estado al ticket; los estados mostrados son los ingresados en el [Tipo de ticket](/docs/configurations/tables/crm/tickets/ticket-type) correspondiente;  
+**Facturado/Facturable (Fatturato/Fatturabile)**: estos indicadores indican si el ticket ya ha sido facturado o si lo será;  
+**criteri di fatturazione**: indicar si el criterio de facturación son las acciones previstas en la oferta o las que se han realizado efectivamente;  
+**periodo di fatturazione**: indicar si la facturación debe ser final o al momento de la entrega.  
 
-Analizziamo le tab sottostanti.     
+Analicemos las pestañas subyacentes.  
 
-## Dettaglio ticket
+## Detalle del ticket (Dettaglio ticket)
 
-Questa tab è composta da due campi: **Lingua** (compilato automaticamente) e **Descrizione** (obbligatoria).    
+Esta pestaña está compuesta por dos campos: **Idioma** (compilado automáticamente) y **Descripción** (obligatoria).  
 
-## Utenti 
+## Usuarios (Utenti)
 
-In questa tab vengono riportati gli operatori che che effettuano le attività sul ticket; alla creazione di un nuovo ticket vengono compilati in automatico i campi **Operatore** e **Prima data assegnata**.     
+En esta pestaña se listan los operadores que realizan las actividades sobre el ticket; al crear un nuevo ticket, se completan automáticamente los campos **Operador** y **Primera fecha asignada**.  
 
-## Stima/Sforzo
+## Estimación/Esfuerzo (Stima/Sforzo)
 
-Questa tab si attiva dopo aver cliccato il pulsante *Stima tecnica* sulla ribbon bar. In base al Tipo ticket che si sta creando, verrà proposto il [Template](/docs/configurations/tables/crm/tickets/template-ticket) associato, con i relativi dati già inseriti nella relativa tabella. L'utente può modificare tutti i campi. I campi che non vengono ripresi dalle tabelle del Tipo ticket o Template, e che quindi devono essere compilati manualmente, sono i seguenti:        
-**Effettiva data inizio**: in questo campo è possibile inserire una Data di effettivo inizio lavori, che può essere diversa dalla **Data previsto inizio**, accanto e compilata automaticamente con la data di creazione ticket;     
-**Commerciale/Tecnico**: in questi campi vengono inseriti i rispettivi operatori, che verranno proposti anche nella successiva tab *Stima commerciale*.       
-Nella griglia sottostante è importante indicare nella colonna **Quantità prevista** il tempo previsto per lo svolgimento delle attività e la relativa **Unità di misura**. La compilazione di questa colonna farà compilare in automatico anche i campi **Minuti stimato sforzo** e **Ore lavorative** e servirà per la successiva creazione della stima commerciale.      
-**Risorse Commesse** permette di associare una risorsa dell'area progetti, indicando quale sarà la risorsa che svolgerà questa fase di Stima Tecnica. 
-Quando la risorsa dichiarerà l' attività nell'area progetti, selezionando il ticket corrispondente, avrà proposto in automatico il progetto di riferimento inserito nella corrispondente stima tecnica del ticket.
+Esta pestaña se activa después de hacer clic en el botón *Estimación técnica* en la barra de herramientas. Según el Tipo de ticket que se está creando, se propondrá el [Template](/docs/configurations/tables/crm/tickets/template-ticket) asociado, con los datos correspondientes ya ingresados en la tabla respectiva. El usuario puede modificar todos los campos. Los campos que no son tomados de las tablas del Tipo de ticket o Template, y que por lo tanto deben ser completados manualmente, son los siguientes:  
+**Fecha efectiva de inicio (Effettiva data inizio)**: en este campo es posible ingresar una Fecha de efectivo inicio de trabajos, que puede ser diferente de la **Fecha prevista de inicio**, a su lado y completada automáticamente con la fecha de creación del ticket;  
+**Comercial/Técnico (Commerciale/Tecnico)**: en estos campos se ingresan los respectivos operadores, que también se propondrán en la siguiente pestaña *Estimación comercial*.  
+En la cuadrícula subyacente, es importante indicar en la columna **Cantidad prevista** el tiempo previsto para realizar las actividades y la correspondiente **Unidad de medida**. Completar esta columna también completará automáticamente los campos **Minutos estimados de esfuerzo** y **Horas trabajadas**, y servirá para la posterior creación de la estimación comercial.  
+**risorse commesse** permite asociar un recurso del área de proyectos, indicando cuál será el recurso que realizará esta fase de Estimación Técnica. 
+Cuando el recurso declare la actividad en el área de proyectos, al seleccionar el ticket correspondiente, se le propondrá automáticamente el proyecto de referencia ingresado en la correspondiente estimación técnica del ticket.
 
+**progetto** permite indicar una línea de proyecto del área de Proyectos, que se propondrá automáticamente cuando el recurso realice la declaración de actividad en el área de proyectos, seleccionando el ticket correspondiente.
 
-**Progetto** permette di indicare una riga di progetto dell'area Progetti, che verrà proposto in automatico quando la risorsa effettuerà la dichiarazione attività nell'area progetti, selezionando il ticket corrispondente.
+**data inizio** y **data fine**: indican con precisión la fecha de inicio y fin de cada paso de la estimación técnica. 
 
-**Data Inizio** e **Data Fine** : indica con precisione la data inizio e fine di ogni step della stima tecnica. 
+Una vez completada la Estimación técnica, haga clic en el botón de la barra de herramientas *Fin estimación técnica*: esto bloqueará nuevamente la modificación de la pestaña Estimación/Esfuerzo. Para poder modificarla nuevamente, haga clic en el botón *Cancelar estimación técnica*.  
 
-Una volta completata la Stima tecnica, cliccare il pulsante della ribbon bar *Fine stima tecnica*: questo bloccherà nuovamente la modifica della tab Stima/Sforzo. Per poterla nuovamente modificare, cliccare il pulsante *Annulla stima tecnica*.       
+## Información de cierre (Informazioni chiusura)
 
-## Informazioni chiusura
+Esta pestaña está compuesta por los campos **data chiusura** y **note**; ambos campos son de libre escritura y no son obligatorios.  
 
-Questa tab è composta dai campi **Data chiusura** e **Note**; entrambi i campi sono di libera digitazione e non obbligatori.     
+## Tickets relacionados (Ticket collegati)
 
-## Ticket collegati 
+En esta pestaña es posible ingresar posibles tickets relacionados. Para hacerlo, se puede utilizar la Ayuda de campo, haciendo doble clic en la columna **Número**.  
 
-In questa tab è possibile inserire eventuali ticket collegati. Per farlo è possibile sfruttare l'Help di campo, facendo doppio click sulla colonna **Numero**.     
+## Nota (Nota)
 
-## Nota
+En esta pestaña es posible ingresar/eliminar notas. Para hacerlo, utilice los botones de la barra de herramientas *Nueva nota* y *Eliminar nota*. Las columnas **Operador** y **Fecha de ingreso** se completan automáticamente. El indicador **info reservada** indica que la Nota debe estar disponible solo para el Operador que la ingresó.  
 
-In questa tab è possibile inserire/cancellare delle note. Per farlo, utilizzare i pulsanti della ribbon bar *Nuova nota* ed *Elimina nota*. Le colonne **Operatore** e **Data inserimento** vengono compilate in automatico. Il flag **info riservata** indica che la Nota deve essere disponibile solo per l'Operatore che la ha inserita.        
+## Estimación comercial (Stima commerciale)
 
-## Stima commerciale
+Esta pestaña se activa después de hacer clic en el botón *Estimación comercial* en la barra de herramientas. Según el [Tipo de ticket](/docs/configurations/tables/crm/tickets/ticket-type) que se está creando y el correspondiente [Template](/docs/configurations/tables/crm/tickets/template-ticket) asociado, se propondrán una serie de campos, por ejemplo, las Descripciones. El usuario puede modificar todos los campos.  
+El campo **Técnico/Comercial (Tecnico/Commerciale)** se toma de la pestaña *Estimación técnica*.  
+En la cuadrícula, es importante revisar/modificar la columna **Cantidad comercial**. Esta columna refleja la Cantidad prevista de la estimación técnica, pero puede ser aumentada/disminuida por el comercial, quien creará la estimación definitiva. Esta columna también llenará el campo debajo de la cuadrícula: **Cantidad total comercial**.  
+Una vez completada la Estimación técnica, haga clic en el botón de la barra de herramientas *Fin estimación comercial*: esto bloqueará nuevamente la modificación de la pestaña Estimación/Esfuerzo. Para poder modificarla nuevamente, haga clic en el botón *Cancelar estimación comercial*.  
+Una vez completada también la estimación comercial, se podrá crear la oferta a través del procedimiento de *Creación de Ofertas desde ticket*.  
 
-Questa tab si attiva dopo aver cliccato il pulsante *Stima commerciale* sulla ribbon bar. In base al [Tipo ticket](/docs/configurations/tables/crm/tickets/ticket-type) che si sta creando ed al relativo [Template](/docs/configurations/tables/crm/tickets/template-ticket) associato, verranno proposti una serie di campi, per esempio le Descrizioni. L'utente può modificare tutti i campi.       
-Il campo **Tecnico/Commerciale** viene ripreso dalla tab *Stima tecnica*.     
-Nella griglia è importante controllare/modificare la colonna **Quantità commerciale**. Questa colonna riporta la Quantità prevista dalla stima tecnica, ma può essere incrementata/decrementata dal commerciale, che creerà la stima definitiva. Questa colonna popolerà anche il campo sottostante alla griglia: **Quantità totale commerciale**.       
-Una volta completata la Stima tecnica, cliccare il pulsante della ribbon bar *Fine stima commerciale*: questo bloccherà nuovamente la modifica della tab Stima/Sforzo. Per poterla nuovamente modificare, cliccare il pulsante *Annulla stima commerciale*.       
-Una volta completata anche la stima commerciale, si potrà creare l'offerta attraverso la procedura di *Creazione Offerte da ticket*.    
+## Ofertas (Offerte)
 
-## Offerte
-
-In questa tab vengono riportate eventuali Offerte collegate al ticket e create con la procedura di *Creazione Offerte da ticket*.      
-
-
+En esta pestaña se listan las posibles Ofertas relacionadas al ticket y creadas con el procedimiento de *Creación de Ofertas desde ticket*.

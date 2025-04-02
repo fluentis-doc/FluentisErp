@@ -1,45 +1,38 @@
 ---
-title: Acquisizione effetti dalle fatture
+title: acquisizione effetti dalle fatture
 sidebar_position: 1
 ---
 
-La procedura di acquisizione effetti dalle fatture, ricalca quella relativa alle [**partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), alla quale **si rinvia**.
+El procedimiento de adquisición de efectos de las facturas sigue el relacionado con las [**partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), al que **se remite (si rinvia)**.
 
-Il dato di origine sarà, anzichè le partite aperte, direttamente le **scadenze delle fatture del ciclo attivo**.
+El dato de origen será, en lugar de las partidas abiertas, directamente las **vencimientos de las facturas del ciclo activo (scadenze delle fatture del ciclo attivo)**.
 
+:::tip[Nota (Nota)]
+Esto permite anticipar la creación y la presentación en el banco de los efectos (por ejemplo, los recibos bancarios que deben llevarse al salvo buen fin) incluso antes de haber contabilizado las facturas activas.
 
-:::tip[Nota]
-Ciò consente di anticipare la creazione e la presentazione in banca degli effetti (ad esempio le ricevute bancarie da portare al salvo buon fine) ancora prima di aver contabilizzato le fatture attive.
-
-Si raccomanda di contabilizzare le fatture attive prima di contabilizzare l'emissione degli effetti per poter gestire la chiusura automatica delle partite aperte tramite la prima registrazione.
+Se recomienda contabilizar las facturas activas antes de contabilizar la emisión de los efectos para poder gestionar el cierre automático de las partidas abiertas a través de la primera registro.
 :::
 
-
-:::danger[Attenzione]
-La **gestione dell'acquisizione effetti dalle fatture** è alternativa all'acquisizione dalle partite.
+:::danger[Atención (Attenzione)]
+La **gestión de la adquisición de efectos de las facturas (gestione dell'acquisizione effetti dalle fatture)** es alternativa a la adquisición de las partidas.
 :::
 
-**Pulsanti specifici:**
+**Botones específicos:**
 
-**Ricerca**: Ricerca la lista delle scadenze per le quali creare gli effetti.
+**ricerca**: Busca la lista de los vencimientos para los cuales crear los efectos.
 
-**Acquisizione** Esegue la creazione degli effetti per le scadenze selezionate.
+**acquisizione**: Realiza la creación de los efectos para los vencimientos seleccionados.
 
+### Pestaña Precedentes (Tab Precedenti)
 
-### Tab Precedenti
+Una vez realizada la creación, las filas desaparecerán de la cuadrícula del *filtro* y el resultado será visible en la pestaña **Precedentes**, dentro de la cual es posible anular la operación.
 
-Eseguita la creazione, le righe spariranno dalla griglia del *filtro* e il risultato sarà visibile nella scheda **Precedenti** all'interno della quale è possibile annullare l'operazione. 
+No es posible anular la creación de efectos si estos están contabilizados o presentados en la lista.
 
-Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+**Botones específicos:**
 
+**ricerca**: Busca la lista de las creaciones realizadas.
 
-**Pulsanti specifici:**
+**rollback acquisizione**: Con este botón se borrará toda la adquisición realizada, con todos los efectos asociados.
 
-**Ricerca**: Ricerca la lista delle creazioni eseguite.
-
-**Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
-
-**Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.
-
-
-
+**rollback effetto**: Con este botón se borrará la creación del efecto individual seleccionado.

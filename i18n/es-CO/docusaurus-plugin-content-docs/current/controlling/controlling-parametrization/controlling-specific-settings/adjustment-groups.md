@@ -1,5 +1,5 @@
 ---
-title: Gruppi di conguaglio
+title: gruppi di conguaglio
 sidebar_position: 12
 ---
 

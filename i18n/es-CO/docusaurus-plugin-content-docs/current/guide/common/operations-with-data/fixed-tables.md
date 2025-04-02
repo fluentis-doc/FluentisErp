@@ -1,8 +1,8 @@
 ---
-title: Tabelle Fisse
+title: Tablas Fijas (Tabelle Fisse)
 sidebar_position: 10
 ---
 
-Le tabelle fisse comprendono dati preimpostati, che l'utente non ha la possibilità di modificare.
+Las tablas fijas comprenden datos preestablecidos, que el usuario no tiene la posibilidad de modificar.
 
-Per esempio, i codici di [Tipo importo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#amount-type) nelle registrazioni contabili, fondamentali per valorizzare automaticamente il libro giornale sulla base dei dati IVA e di partitario movimentati nella registrazione.
+Por ejemplo, los códigos de [Tipo de importe (Tipo importo)](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#amount-type) en los registros contables, fundamentales para valorar automáticamente el libro diario en función de los datos del IVA y de los movimientos contabilizados en el registro.

@@ -1,16 +1,15 @@
 ---
-title: Tipi contabilizzazione IVA
+title: tipi contabilizzazione iva
 sidebar_position: 24
 ---
-Questa tabella è richiamata all'interno dell'anagrafica clienti / fornitori alla quale si rinvia e poi all'interno delle Aliquote/modalità iva, per definire gli specifici sottoconti da utilizzare su ogni tipologia.
+Esta tabla se llama dentro del registro de clientes / proveedores al que se refiere y luego dentro de las Tarifas/modalidades del IVA, para definir los subcuentas específicas a utilizar para cada tipo.
 
+**codice**: código identificativo del tipo de contabilización del IVA.
 
-**Codice**: codice identificativo del tipo di contabilizzazione IVA.
+**descrizione**: descripción del tipo de contabilización del IVA.
 
-**Descrizione**: descrizione del tipo di contabilizzazione IVA.
+**cliente**: indicador para especificar si la línea se refiere a un cliente.
 
-**Cliente**: flag per specificare se la riga fa riferimento ad un cliente.
+**fornitore**: indicador para especificar si la línea se refiere a un proveedor.  
 
-**Fornitore**: flag per specificare se la riga fa riferimento ad un fornitore.
-
-É possibile spuntare entrambi i flag quando la riga è sia cliente che fornitore.
+Es posible seleccionar ambos indicadores cuando la línea es tanto cliente como proveedor.

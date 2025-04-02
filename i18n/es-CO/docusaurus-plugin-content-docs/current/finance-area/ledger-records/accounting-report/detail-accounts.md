@@ -1,33 +1,28 @@
 ---
-title: Sottoconti
+title: sottoconti
 sidebar_position: 6
 ---
 
-La stampa visualizza il dettaglio dei movimenti dei vari sottoconti contabili.
+La impresión muestra el detalle de los movimientos de las diversas subcuentas contables.
 
-Il layout è simile alla stampa **[Estratto conto](/docs/finance-area/ledger-records/accounting-report/account-statement)** di cui rappresenta, in qualche modo, una versione semplificata ed al quale si rinvia.
-
- 
-
-ELEMENTI SPECIFICI:
+El diseño es similar a la impresión de **[Extracto de cuenta (Estratto conto)](/docs/finance-area/ledger-records/accounting-report/account-statement)**, la cual representa, de alguna manera, una versión simplificada y a la que se remite.
 
  
 
-Visualizza descrizione: attivando questo flag viene visualizzata in stampa la colonna descrizione movimento che riporta il contenuto della riga descrittiva di dettaglio per quel sottoconto presente nella registrazione contabile.
+ELEMENTOS ESPECÍFICOS:
+
+ 
+
+Mostrar descripción (Visualizza descrizione): al activar este indicador, se mostrará en la impresión la columna de descripción de movimiento que reporta el contenido de la línea descriptiva de detalle para esa subcuenta presente en el registro contable.
 
 
 
-
-
-| Funzione | Significato |
+| Función (Funzione) | Significado (Significato) |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión. |
+| Impresión (Stampa) | Botón para ejecutar la impresión física del documento. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important También Ver (Vedi Anche)
+[**TUTORIALES EN VIDEO SOBRE IMPRESIONES CONTABLES (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro)
 :::
-
-
-

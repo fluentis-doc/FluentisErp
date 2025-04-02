@@ -1,22 +1,22 @@
 ---
-title: Introduzione
+title: Introducción (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo permette la gestione integrata delle trattative commerciali. Consente di monitorare il ciclo di vendita in modo strutturato, partendo dalla fase iniziale di lead generation fino alla chiusura della trattativa. Le opportunità vengono utilizzate per raccogliere informazioni rilevanti riguardanti i clienti potenziali, collegando queste informazioni ad altre aree aziendali, come il marketing.         
-Dal punto di vista tecnico, le opportunità permettono di tracciare ogni interazione con il cliente, collegandola a documenti specifici, preventivi e attività pianificate. I dati raccolti attraverso questo modulo sono utilizzati per generare previsioni di vendita basate su parametri statistici e probabilistici. Inoltre, integrano funzionalità di workflow management per automatizzare determinati passaggi del processo di vendita e fornire notifiche in tempo reale sui cambiamenti dello stato dell'opportunità.         
- 
-**Opportunità**       
-Il modulo Opportunità di Fluentis ERP consente di gestire l'intero ciclo di vita di un'opportunità commerciale, dalla creazione alla chiusura.       
+El módulo permite la gestión integrada de las negociaciones comerciales. Permite monitorear el ciclo de ventas de manera estructurada, desde la fase inicial de generación de leads hasta el cierre de la negociación. Las oportunidades se utilizan para recopilar información relevante sobre los clientes potenciales, vinculando esta información a otras áreas de la empresa, como el marketing.  
+Desde el punto de vista técnico, las oportunidades permiten rastrear cada interacción con el cliente, asociándola a documentos específicos, presupuestos y actividades planificadas. Los datos recogidos a través de este módulo se utilizan para generar pronósticos de ventas basados en parámetros estadísticos y probabilísticos. Además, integran funcionalidades de gestión de flujos de trabajo para automatizar determinados pasos del proceso de ventas y proporcionar notificaciones en tiempo real sobre los cambios en el estado de la oportunidad.  
 
-**Mappa opportunità CRM**       
-Questa funzionalità offre una visualizzazione geografica delle opportunità attive, utilizzando le informazioni geografiche presenti nell'anagrafica dei contatti CRM. È possibile filtrare le opportunità per tipologia, utente operatore, o probabilità di successo.     
+**opportunità**  
+El módulo Oportunidades de Fluentis ERP permite gestionar todo el ciclo de vida de una oportunidad comercial, desde su creación hasta su cierre.  
 
-**Opportunity Progress KanBan Board**     
-Questa funzione visualizza le opportunità suddivise per probabilità di successo, utilizzando una KanBan Board. Attraverso filtri avanzati è possibile isolare specifici set di opportunità, con colonne che rappresentano diverse percentuali di successo. Ogni colonna mostra il numero di opportunità, il loro valore netto complessivo, e dettagli singoli per ogni opportunità.       
+**mappa opportunità crm**  
+Esta funcionalidad ofrece una visualización geográfica de las oportunidades activas, utilizando la información geográfica presente en el registro de contactos CRM. Es posible filtrar las oportunidades por tipo, usuario operador o probabilidad de éxito.  
 
-**Opportunity Stages KanBan Board**      
-Simile alla precedente, questa funzionalità suddivide le opportunità per stadi del workflow associato. Ogni colonna della KanBan Board rappresenta uno stadio del workflow, con informazioni sul numero e valore netto delle opportunità.      
+**Tablero KanBan de Progreso de Oportunidades (Opportunity Progress KanBan Board)**  
+Esta función visualiza las oportunidades divididas por probabilidad de éxito, utilizando un Tablero KanBan. A través de filtros avanzados, es posible aislar conjuntos específicos de oportunidades, con columnas que representan diferentes porcentajes de éxito. Cada columna muestra el número de oportunidades, su valor neto total y detalles individuales para cada oportunidad.  
 
-**Invoicing Progress KanBan Board**       
-Questa procedura consente di monitorare lo stato delle opportunità, ordini e fatture in un periodo di tempo definito, suddiviso per mesi. I documenti possono essere visualizzati aggregati o individualmente, con dettagli economici e collegamenti per la modifica diretta.
+**Tablero KanBan de Etapas de Oportunidades (Opportunity Stages KanBan Board)**  
+Similar a la anterior, esta funcionalidad divide las oportunidades por etapas del flujo de trabajo asociado. Cada columna del Tablero KanBan representa una etapa del flujo de trabajo, con información sobre el número y el valor neto de las oportunidades.  
+
+**invoicing progress kanban board**  
+Este procedimiento permite monitorear el estado de las oportunidades, pedidos y facturas en un período de tiempo definido, dividido por meses. Los documentos pueden visualizarse de manera agregada o individual, con detalles económicos y enlaces para modificar directamente.

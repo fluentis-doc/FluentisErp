@@ -1,39 +1,36 @@
 ---
-title: Creazione listini di vendita
+title: creazione listini di vendita
 sidebar_position: 3
 ---
 
-Questa procedura permette di creare nuovi listini di vendita, partendo dagli articoli dei documenti preesistenti.
-Nella parte alta della maschera sono presenti i filtri per ricercare i Dati di origine: scegliere tra Listino di vendita, Listino di acquisto, Anagrafica articoli, DDT di acquisto, Fatture di acquisto o Ordini fornitori; esplodendo la Ricerca documento è inoltre possibile filtrare ulteriormente per cercare uno specifico listino. Per visualizzare i risultati premere Ricerca listini.
+Este procedimiento permite crear nuevas listas de precios, comenzando desde los artículos de documentos preexistentes. En la parte superior de la máscara están los filtros para buscar los Datos de origen: elegir entre Lista de precios, Lista de compras, Registro de artículos, DDT de compra, Facturas de compra u Órdenes a proveedores; al expandir la Búsqueda de documentos, también es posible filtrar aún más para buscar una lista específica. Para visualizar los resultados, presione Buscar listas de precios.
 
-Nella prima griglia verranno riportati i documenti risultanti dalla ricerca, e selezionando una riga, nella griglia in basso verranno riportati gli articoli del documento. Analizziamo le colonne:       
-- **Classe/Codice/Descrizione articolo**: dati identificativi dell'articolo, seguiti da **Variante**, **Quantità**, **UM**, **Marca**.       
-- **Non considerare**: gli articoli che presentano questo valore spuntato non saranno variati nel nuovo listino.     
-- **Costo precedente**: propone il costo dell’ultimo documento del tipo selezionato in dati di origine.     
-- **Prezzo ini.**: identifica il prezzo che era presente nel documento di origine.     
-- **Prezzo ivato ini.**: viene visualizzato il prezzo iniziale iva inclusa.      
-- **Prezzo non arr.**: propone quello che è il prezzo compreso dell’incrementato (o decrementato) deciso per il nuovo listino.    
-- **Prezzo ivato non arr.**: prezzo non arrotondato compreso di IVA.     
-- **Mask**: visualizza il mask a cui è soggetto il singolo articolo.       
-- **Prezzo arrotondato**: viene proposto il *Prezzo non arr*. arrotondato secondo il *Mask* definito.      
-- **Prezzo ivato arrotondato**: viene proposto il *Prezzo ivato non arr*. arrotondato secondo il *Mask* definito.     
-- **Prezzo listino attuale**: se nella sezione *Listino da creare* (in basso) viene selezionato **Accodare i dati selezionati ad un listino già creato**, nella colonna verrà visualizzato il prezzo che l’articolo ha nel listino selezionato, se presente.       
+En la primera cuadrícula se mostrarán los documentos resultantes de la búsqueda, y al seleccionar una fila, en la cuadrícula inferior se mostrarán los artículos del documento. Analicemos las columnas:  
+- **Clase/Código/Descripción del artículo (Classe/Codice/Descrizione articolo)**: datos identificativos del artículo, seguidos de **variante**, **quantità**, **um**, **marca**.  
+- **non considerare**: los artículos que presenten este valor marcado no serán modificados en la nueva lista de precios.  
+- **costo precedente**: propone el costo del último documento del tipo seleccionado en los datos de origen.  
+- **Precio inicial (Prezzo ini.)**: identifica el precio que estaba presente en el documento de origen.  
+- **Precio inicial con IVA (Prezzo ivato ini.)**: se visualiza el precio inicial con IVA incluido.  
+- **Precio no redondeado (Prezzo non arr.)**: propone el precio que incluye el incremento (o decremento) decidido para la nueva lista de precios.  
+- **Precio no redondeado con IVA (Prezzo ivato non arr.)**: precio no redondeado que incluye IVA.  
+- **mask**: visualiza la máscara a la que está sujeto el artículo individual.  
+- **Precio redondeado (Prezzo arrotondato)**: se propone el *Precio no redondeado (Prezzo non arr.)* redondeado según la *mask* definida.  
+- **Precio redondeado con IVA (Prezzo ivato arrotondato)**: se propone el *Precio inicial con IVA (Prezzo ivato non arr.)* redondeado según la *mask* definida.  
+- **Precio de lista actual (Prezzo listino attuale)**: si en la sección *listino da creare* (en la parte inferior) se selecciona **Añadir los datos seleccionados a una lista ya creada (Accodare i dati selezionati ad un listino già creato)**, en la columna se visualizará el precio que el artículo tiene en la lista seleccionada, si está presente.
 
-Nella sezione in basso sono richiesti i dati obbligatori del *Listino da creare*: la tipologia di listino (se generico o personalizzato), il Tipo o Cliente  in base alla tipologia, la Data di inizio validità (eventualmente anche una Data fine validità), la Divisa, gli Arrotondamenti da applicare ed i flag:         
-- **Prezzo Ivato**: significa che il listino da creare sarà un listino con prezzi già incorporati di Iva.       
-- **Listino minimo**: flag informativo che indica di creare un listino dei prezzi minimi di tentata vendita.  
+En la sección inferior se requieren los datos obligatorios de la *listino da creare*: el tipo de lista (si es genérica o personalizada), el Tipo o Cliente según el tipo, la Fecha de inicio de validez (eventualmente también una Fecha de finalización de validez), la Divisa, los Redondeos a aplicar y los indicadores:  
+- **prezzo ivato**: significa que la lista a crear será una lista con precios ya incorporados de IVA.  
+- **listino minimo**: indicador informativo que indica que se creará una lista de precios mínimos de intento de venta.
 
-Questi dati possono essere inseriti manualmente, oppure cliccando il bottone **Accodare i dati selezionati ad un listino già creato** verranno inseriti automaticamente, in quanto si aprirà un pop up nel quale selezionare il listino dal quale prendere i dati anagrafici. Questa operazione farà in modo che, all'avvio della procedura, gli articoli verranno aggiunti al listino preesistente, e non verrà creato un listino nuovo; se nel listino preesistente selezionato alcuni articoli esistono già, verrà chiesto all'utente se mantenere il prezzo di listino vecchio oppure aggiornarlo.           
+Estos datos pueden ser ingresados manualmente, o al hacer clic en el botón **Añadir los datos seleccionados a una lista ya creada (Accodare i dati selezionati ad un listino già creato)** se ingresarán automáticamente, ya que se abrirá un pop-up en el cual seleccionar la lista de la cual tomar los datos del registro. Esta operación hará que, al iniciar el procedimiento, los artículos se agregarán a la lista preexistente y no se creará una nueva lista; si en la lista preexistente seleccionada algunos artículos ya existen, se le preguntará al usuario si desea mantener el precio de lista viejo o actualizarlo.
 
-La creazione dei listini viene effettuata con i bottoni presenti nella ribbon bar:       
-- **Creazione di tutti gi articoli**: il listino viene creato con tutti gli articoli presenti nel documento selezionato nella prima griglia.         
-- **Creazione degli articoli selezionati**: il listino viene creato con gli articoli selezionati nella seconda griglia.        
+La creación de las listas de precios se realiza con los botones presentes en la barra de ribbon:  
+- **Creación de todos los artículos (Creazione di tutti gi articoli)**: la lista se crea con todos los artículos presentes en el documento seleccionado en la primera cuadrícula.  
+- **creazione degli articoli selezionati**: la lista se crea con los artículos seleccionados en la segunda cuadrícula.
 
-Una volta creato il nuovo listino, Fluentis chiederà se aprirlo o meno.      
+Una vez creada la nueva lista de precios, Fluentis preguntará si desea abrirla o no.
 
-Nella ribbon bar sono presenti ulteriori bottoni per la gestione del mask:     
-- **Aggiornamento mask**: aggiorna in anagrafica dell’articolo il *Mask* che è stato associato al singolo articolo evidenziato       
-- **Riprendi mask dai range**: in caso di variazione del campo *Arrotondamenti* nella sezione *Listini da creare*, questo bottone ricalcola il *Mask* nella seconda griglia, proponendo il *Mask* dell'Arrotondamento selezionato.             
-- **Attivazione\disattivazione flag Non considera**: Attiva o disattiva il flag *Non considerare* degli articoli evidenziati.     
-
-
+En la barra de ribbon hay más botones para la gestión de la máscara:  
+- **aggiornamento mask**: actualiza en el registro del artículo la *mask* que ha sido asociada al artículo individual destacado.  
+- **riprendi mask dai range**: en caso de variación del campo *arrotondamenti* en la sección *Listas a crear (Listini da creare)*, este botón recalcula la *mask* en la segunda cuadrícula, proponiendo la *mask* del redondeo seleccionado.  
+- **Activación/desactivación del indicador No considera (Attivazione\disattivazione flag Non considera)**: activa o desactiva el indicador *non considerare* de los artículos destacados.

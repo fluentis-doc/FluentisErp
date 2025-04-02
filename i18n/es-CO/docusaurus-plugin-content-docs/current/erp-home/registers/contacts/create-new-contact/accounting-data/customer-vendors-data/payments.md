@@ -1,150 +1,147 @@
 ---
-title: Pagamenti
+title: pagamenti
 sidebar_position: 3
 ---
 
-In questa form si possono specificare le condizioni commerciali di default in merito ai pagamenti/incassi.  
+En este formulario se pueden especificar las condiciones comerciales predeterminadas en relación con los pagos/recibos.  
 
-*Pulsanti specifici*:
-> Cancella banche: per cancellare la banca d'appoggio selezionata.  
-> Cancella tipo pagamento: per cancellare dalla griglia delle tipologie di pagamento.  
+*Botones específicos*:  
+> Cancelar bancos: para eliminar el banco de apoyo seleccionado.  
+> Cancelar tipo de pago: para eliminar de la cuadrícula las tipologías de pago.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
 
-### Tipi pagamento
+### Tipos de pago (Tipi pagamento)
 :::tip[ ]
-La sezione fondamentale del tab **Pagamenti** e serve per impostare la logica di calcolo delle scadenze. Si selezionano il **Tipo di pagamento** e la **Soluzione di pagamento** (entrambe si trovano in *Configurazione > Tabelle > Impostazioni generali*).
+La sección fundamental de la pestaña **pagamenti** sirve para establecer la lógica de cálculo de los vencimientos. Se seleccionan el **Tipo de pago (Tipo di pagamento)** y la **soluzione di pagamento** (ambos se encuentran en *Configuración > Tablas > Ajustes generales*).
 :::
 
+**importo**: permite calcular un vencimiento imponiendo el importe indicado; el residuo deberá ser gestionado con líneas que tengan el campo Porcentaje completado. En caso de que el total del documento sea inferior al valor del campo Importe (incluso con líneas que tengan el campo Porcentaje completado), se enviará un mensaje de error en el momento de crear los vencimientos en el documento, pidiendo la rectificación de la configuración, ya que no es coherente.
 
-**Importo**: consente di calcolare una scadenza imponendo l'importo indicato, il residuo dovrà essere gestito con righe con il campo Percentuale compilato. Nel caso in cui il totale del documento sia inferiore rispetto al valore del campo Importo (anche in presenza di righe con il campo Percentuale compilato) verrà inviato un messaggio di errore in fase di creazione delle scadenze nel documento che chiede la rettifica del settaggio in quanto non coerente.
+<u>Atención</u>: este campo tiene rara aplicación en la práctica; además, dentro de los documentos, en el cálculo de los vencimientos, es utilizado y completado por los procedimientos automáticos de la siguiente manera: cuando se valoran, por ejemplo, varios DDT en una factura, se verifica la situación en la que podrían existir condiciones de pago diferentes en las facturas. Entonces, en la factura se crean tantas líneas de pago como tipos de condiciones, agrupando los importes (suma de los DDT con esa condición) y colocando dicho valor en el campo *Importe*, se crea una línea adicional “residual” donde, utilizando el campo *Porcentaje*, se gestiona el 100% del valor “residual” (eventual) con la condición de pago determinada por el registro. Este valor "residual" típicamente acoge montos adicionales imputados directamente en la factura (y por lo tanto no presentes en las facturas) como *gastos de cobro, gastos de transporte, gastos de timbre*, etc. Esta recopilación de más de una línea (al menos dos, una para el vencimiento del DDT y una "residual") también ocurrirá si solo se valora un DDT. Esta gestión es impuesta por el parámetro de valoración de DDT, en la sección *Tratamiento de pagos en la factura* con la opción *Mantener los de las facturas (Mantieni quelli delle bolle)*. En cambio, al elegir *ripristina quelli di anagrafica*, los vencimientos se agruparán todos con la única condición presente en el registro. Se señala que en la impresión de factura se mostrarán todos los vencimientos calculados tal como aparecen en pantalla. Si se desea, es posible intervenir personalizando la impresión para que muestre solo la línea efectivamente utilizada (es decir, que no muestre la línea “extra” si no está vinculada a ningún vencimiento).
 
-<u>Attenzione</u>: questo campo risulta di rara applicazione nella pratica, inoltre all'interno dei documenti, nel calcolo delle scadenze, viene utilizzato e compilato dalle procedure automatiche nel seguente modo: quando si valorizzano, ad esempio, più DDT in una fattura si verifica la situazione per cui potrebbero esserci condizioni di pagamento diverse nelle bolle. Allora nella fattura vengono create tante righe di pagamento quanti sono i tipi di condizione raggruppando gli importi (somma dei  DDT con quella condizione) e inserendo tale valore nel campo *Importo*, viene creata una ulteriore riga, “residuale” dove, sfruttando il campo *Percentuale*,  viene gestito il 100% del valore “residuo” (eventuale) con condizione di pagamento determinata dall'anagrafica. Questo valore “residuo” accoglie tipicamente eventuali ulteriori somme imputate direttamente in fattura (e quindi non presenti nelle bolle) quali *spese di incasso, spese di trasporto, spese bollo* ecc…Questa compilazione di più righe (almeno due, una per la scadenza del DDT e una "residuale") ci sarà anche se viene valorizzata un'unica DDT. Questa gestione è imposta dal parametro di valorizzazione DDT, nella sezione *Trattamento pagamenti in fattura* con l'opzione *Mantieni quelli delle bolle*. Scegliendo invece *Ripristina quelli di anagrafica* le scadenze saranno accorpate tutte con l'unica condizione presente in anagrafica. Si segnala che in stampa fattura saranno riportate tutte le scadenze calcolate così come presenti a video. Volendo è possibile intervenire personalizzando la stampa in modo che riporti solo la riga effettivamente utilizzata (cioè non riporti la riga “extra” se non aggancia alcuna scadenza).
+**percentuale**: permite definir la cuota parte (en porcentaje) del valor total del pago (o recibo) que debe ser gestionada con la condición de pago (como combinación de tipo de pago y solución de pago) establecida en la línea.
 
-**Percentuale**: consente di definire la quota parte (in percentuale) del valore totale del pagamento (o incasso) da gestire con la condizione di pagamento (come combinazione di tipo pagamento e soluzione di pagamento) impostata nella riga.
+En caso de porcentaje inferior a 100, por lo tanto, se deben crear tantas líneas con porcentajes que sumen 100.
 
-In caso di percentuale inferiore a 100 vanno, pertanto, create tante righe con percentuali che sommano 100.
+*Ejemplo*:<br />  
+- 50% Efectivo a la vista factura y 50% Transferencia bancaria a 30 días.<br />  
+- 50% Efectivo a la vista factura; 25% Transferencia bancaria a 30 días; 25% transferencia bancaria a 60 días.<br />  
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image03.png)  ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image04.png)  
 
-*Esempio*:<br />
-- 50% Contanti a vista fattura e 50% Bonifico bancario a 30 gg.<br />
-- 50% Contanti a vista fattura; 25% Bonifico bancario a 30 gg; 25% bonifico bancario a 60 gg.<br />
-![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image03.png)  ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image04.png)
-
-<u>Attenzione</u>: se la soluzione di pagamento prevede più di una scadenza si compilerà in questo modo: esempio 50% contanti a vista e 50% bonifico bancario a 30 - 60 gg
+<u>Atención</u>: si la solución de pago prevé más de un vencimiento, se completará de la siguiente manera: ejemplo 50% efectivo a la vista y 50% transferencia bancaria a 30 - 60 días.
 
 **![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image05.png)**
 
-**Banca (d'appoggio)**: rappresenta la banca di riferimento per le partite.  
-- Per l' anagrafica cliente:
-> - se tipo pagamento è ricevuta bancaria,  va indicata la banca del cliente;
-> - se tipo pagamento è bonifico bancario va indicata la banca della società in uso  (in modo da avere in stampa dei documenti i riferimenti di pagamento per il cliente); 
+**Banco (d'appoggio)**: representa el banco de referencia para las partidas.  
+- Para el registro del cliente:
+> - si el tipo de pago es recibo bancario, se debe indicar el banco del cliente;  
+> - si el tipo de pago es transferencia bancaria, se debe indicar el banco de la empresa en uso (de manera que en la impresión de documentos se tengan las referencias de pago para el cliente);  
 
-- Per l'anagrafica fornitori:
-> - se tipo pagamento è bonifico bancario sarà indicata la banca del fornitore;
-> - se tipo pagamento è ricevuta bancaria sarà indicata la banca della società.
+- Para el registro de proveedores:
+> - si el tipo de pago es transferencia bancaria se indicará el banco del proveedor;  
+> - si el tipo de pago es recibo bancario, se indicará el banco de la empresa.  
 
-Il campo si compila tramite una combo box (**Banca**) collegata alla tabella [*Banca d'appoggio*](/docs/configurations/tables/general-settings/reference-bank). All'interno di questa tabella è possibile inserire sia la banche della società, sia le banche della controparte (cliente o fornitore). Inoltre è possibile inserire sia righe complete di codice IBAN e/o SWIFT (consigliato per le banche della società) sia righe complete di soli codice ABI e CAB (consigliato per le banche di controparte per le quali IBAN e SWIFT possono essere indicati nei campi della griglia presente in anagrafica).
+El campo se completa a través de un combo box (**Banco**) conectado a la tabla [*banca d'appoggio*](/docs/configurations/tables/general-settings/reference-bank). Dentro de esta tabla es posible insertar tanto los bancos de la empresa, como los bancos de la contraparte (cliente o proveedor). Además, es posible incluir filas completas con código IBAN y/o SWIFT (recomendados para los bancos de la empresa) así como filas completas solo con el código ABI y CAB (recomendados para los bancos de contraparte para los cuales IBAN y SWIFT pueden ser indicados en los campos de la cuadrícula presentes en el registro).
 
-Se la riga presente nella tabella Banca d'appoggio è completa di IBAN e/o SWIFT, oltre che di ABI e CAB, richiamando tale riga tramite la combobox i dati saranno riportati nella griglia in anagrafica, diversamente, saranno riportati solo ABI e CAB, ma sarà sempre possibile aggiungere i dati mancanti direttamente nella griglia. Ciò è consigliabile per le banche di controparte al fine di evitare di codificare nella tabella Banca d'appoggio troppe righe utilizzate solo per un unico cliente o fornitore. E' preferibile indicare solo i dati dello sportello bancario (ABI e CAB) presso il quale potrebbero avere il conto corrente diversi clienti o fornitori.
+Si la fila en la tabla Banco de apoyo está completa con IBAN y/o SWIFT, así como con ABI y CAB, al invocar dicha fila a través del combo box, los datos se mostrarán en la cuadrícula en el registro; de lo contrario, solo se mostrarán ABI y CAB, pero siempre será posible agregar los datos faltantes directamente en la cuadrícula. Esto es recomendable para los bancos de contraparte con el fin de evitar codificar en la tabla Banco de apoyo demasiadas filas utilizadas solo para un único cliente o proveedor. Es preferible indicar solo los datos de la sucursal bancaria (ABI y CAB) donde podrían tener la cuenta corriente diferentes clientes o proveedores.
 
-L'inserimento di una banca può essere eseguita anche attraverso un doppio click nei campi abi/cab per aprire l'help di ricerca tra le agenzie bancarie nazionali, dalle quali selezionare quella del caso e creare il codice nell'anagrafica da completare con i dati di conto corrente, cin, iban, swift. Al salvataggio di un Iban, **Fluentis** eseguirà i controlli sintattici sulla sua struttura, indicando eventuali errori sul numero di caratteri o sul carattere di controllo.
+La inserción de un banco también puede realizarse mediante un doble clic en los campos abi/cab para abrir la ayuda de búsqueda entre las agencias bancarias nacionales, de las cuales se selecciona la correspondiente y se crea el código en el registro para completar con los datos de la cuenta corriente, cin, iban, swift. Al guardar un IBAN, **Fluentis** ejecutará controles sintácticos sobre su estructura, indicando posibles errores sobre el número de caracteres o el carácter de control.
 
-**Descrizione Banca**: campo collegato al precedente campo.
+**descrizione banca**: campo relacionado con el campo anterior.
 
-**Codice Banca**: campo NON utilizzato in Italia. Per localizzazioni estere può accogliere un codice bancario alternativo rispetto al sistema ABI CAB.
+**codice banca**: campo NO utilizado en Italia. Para localizaciones exteriores, puede contener un código bancario alternativo en comparación con el sistema ABI CAB.
 
-**Configurazione ricerche**: con questo campo è possibile legare la riga ad una logica di attribuzione a livello di Ordine cliente, tramite un extra-data legato al tipo Ordine.
+**configurazione ricerche**: con este campo se puede vincular la fila a una lógica de atribución a nivel de Pedido del cliente, a través de un extra-data relacionado con el tipo Pedido.
 
 :::tip nota
-Con questa impostazione, in sostanza, possiamo impostare che per gli ordini di tipo X il cliente ci pagherà con Riba a 60GG, mentre per gli ordini di tipo Y ci pagherà con Bonifico a 30GG
+Con esta configuración, en esencia, podemos establecer que para los pedidos de tipo X el cliente nos pagará con Riba a 60 días, mientras que para los pedidos de tipo Y nos pagará con Transferencia a 30 días.
 :::
 
-### Banca d'appoggio
+### Banco de apoyo (Banca d'appoggio)
 
-Nella griglia si possono inserire le banche d'appoggio della controparte.
+En la cuadrícula se pueden insertar los bancos de apoyo de la contraparte.
 
-Tra queste, quella impostata come **Default** (con il flag omonimo) può essere utilizzata come banca beneficiaria dei bonifici fornitori del modulo *Pagamenti fornitori*.
+Entre estos, el que se establece como **Predeterminado** (con el flag homónimo) puede ser utilizado como banco beneficiario de las transferencias de proveedores del módulo *pagamenti de proveedores*.
 
-In questo caso la banca inserita in questa griglia verrà imposta nella distinta di bonifico, sostituendo quella presente nella registrazione contabile  (quest'ultima definita, nella registrazione contabile, manualmente o tramite il dato inserito in anagrafica nella griglia superiore Tipi Pagamento) e collegata alla partita aperta.
+En este caso, el banco ingresado en esta cuadrícula se establecerá en la lista de transferencia, reemplazando aquel presente en la registración contable (esta última definida en la registración contable, manualmente o a través del dato ingresado en el registro en la cuadrícula superior Tipos de Pago) y vinculada a la partida abierta.
 
-*Attenzione*: per attivare la sostituzione della banca d'appoggio di cui sopra è necessario attivare il flag *Imponi la banca d'appoggio* presente in *Anagrafica fornitore > [Parametri Pagamenti Fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters)*.
+*Atención*: para activar la sustitución del banco de apoyo mencionado anteriormente, es necesario activar el flag *Imponer el banco de apoyo* presente en *Registro de proveedor > [Parámetros de pagamenti de Proveedor](/docs/configurations/parameters/treasury/vendor-payments-parameters)*.
 
-Se il flag è attivo nella form *Parametri Pagamenti Fornitore* ma non sono inserite banche con flag default attivo nella griglia, sarà mantenuta la banca indicata nella registrazione contabile tramite il dato inserito in anagrafica nella griglia superiore *Tipi Pagamento* (o modificata manualmente nella registrazione).
+Si el flag está activo en el formulario *Parámetros de pagamenti de Proveedor* pero no se han ingresado bancos con el flag predeterminado activo en la cuadrícula, se mantendrá el banco indicado en la registración contable mediante el dato ingresado en el registro en la cuadrícula superior *Tipos de Pago* (o modificado manualmente en la registración).
 
-In questo modo è possibile inserire delle banche d'appoggio alternative (sempre di controparte).  Un altro esempio può essere quello di un cliente che paga con bonifico (e quindi nella griglia Tipo Pagamento si inserisce la banca della nostra società) ma del quale si vuole inserire la sua banca d'appoggio in caso di pagamento di note di accredito.
+De este modo, es posible ingresar bancos de apoyo alternativos (siempre de contraparte). Otro ejemplo puede ser el de un cliente que paga con transferencia (y por lo tanto en la cuadrícula de Tipo de Pago se inserta el banco de nuestra empresa) pero del cual se desea ingresar su banco de apoyo en caso de pago de notas de crédito.
 
-L'inserimento di una banca può essere eseguita attraverso un doppio click nei campi abi/cab per aprire l'help di ricerca tra le agenzie bancarie nazionali, dalle quali selezionare quella del caso e creare il codice nell'anagrafica da completare con i dati di conto corrente, cin, iban, swift.
+La inserción de un banco puede realizarse a través de un doble clic en los campos abi/cab para abrir la ayuda de búsqueda entre las agencias bancarias nacionales, de las cuales se selecciona la correspondiente y se crea el código en el registro para completar con los datos de la cuenta corriente, cin, iban, swift.
 
-**Beneficiario**: il flag attiva la lettura del campo Ragione sociale beneficiario
+**beneficiario**: el flag activa la lectura del campo Razón social beneficiario.
 
-**Ragione sociale beneficiario**: inserire il dato anagrafico nel caso in cui i pagamenti vadano intestati ad una terza parte (ad esempio una società finanziaria di gruppo).
+**ragione sociale beneficiario**: insertar el dato del registro en caso de que los pagos deban estar a nombre de un tercero (por ejemplo, una sociedad financiera del grupo).
 
-### Mese esclusione scadenze
+### Mes de exclusión de vencimientos (Mese esclusione scadenze)
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image07.png)
 
-In questa griglia è possibile impostare un automatismo che rinvia tutte le scadenze riferite ad uno o più mesi (inserendo più righe) e le posticipa ad un giorno prestabilito.
+En esta cuadrícula es posible establecer un automatismo que retrasa todos los vencimientos correspondientes a uno o más meses (insertando más filas) y los pospone a un día predeterminado.
 
-**Mese escluso**: Mese per il quale si vogliono posticipare le scadenze
+**mese escluso**: Mes por el cual se desean posponer los vencimientos.
 
-**Giorno**: Giorno al quale si vogliono portare le scadenze posticipate
+**giorno**: Día al que se desean llevar los vencimientos pospuestos.
 
-**Mese**: Mese al quale si vogliono portare le scadenze posticipate
+**mese**: Mes al que se desean llevar los vencimientos pospuestos.
 
-*Esempio*: compilando come nell'immagine tutte le scadenze del mese di agosto saranno posticipate al 5 settembre.
+*Ejemplo*: completando como en la imagen, todos los vencimientos del mes de agosto se pospondrán al 5 de septiembre.
 
-Inserendo anche una riga Dicembre - 7 - Gennaio, le scadenze del mese di dicembre sarebbero posticipate al giorno 7 di gennaio.
+Si también se inserta una fila de Diciembre - 7 - Enero, los vencimientos del mes de diciembre se pospondrían al día 7 de enero.
 
-### Sezione inferiore
+### Sección inferior
 
-La tipologia di calcolo della partita consente di definire se la base di calcolo delle partite è il solo imponibile del documento (ad esempio per i fornitori intracomunitari o gestiti contabilmente in regime di reverse charge, dove quindi l'IVA che si integra nel documento non va gestita a livello di scadenziario) oppure imponibile+IVA (che è la logica di default anche se in questo campo non è indicato nulla).
+La tipología de cálculo de la partida permite definir si la base de cálculo de las partidas es solo el imponible del documento (por ejemplo, para proveedores intracomunitarios o gestionados contablemente en régimen de reverse charge, donde, por lo tanto, el IVA integrado en el documento no se gestiona a nivel de vencimiento) o imponible + IVA (que es la lógica predeterminada aunque en este campo no se indique nada).
 
-**Utilizzo a partite aperte**: il flag è proposto di default ed è obbligatorio per poter gestire automaticamente le partite aperte.
+**utilizzo a partite aperte**: el flag se propone por defecto y es obligatorio para poder gestionar automáticamente las partidas abiertas.
 
-Nei parametri di configurazione delle causali contabili è possibile definire un controllo per garantire che ci sia corrispondenza tra saldo contabile e saldo partitario;
+En los parámetros de configuración de las causales contables, es posible definir un control para garantizar que haya correspondencia entre el saldo contable y el saldo por partida;
 
-**Tipo calcolo**: combo box che permette di scegliere tra i due metodi alternativi: imponibile + iva o solo imponibile. La modalità solo imponibile è raccomandata, ad esempio, per i fornitori intracomunitari ed in regime di "reverse charge" oppure per i clienti soggetti alla casistica iva dello "split payment".
+**tipo calcolo**: combo box que permite elegir entre los dos métodos alternativos: imponible + IVA o solo imponible. El modo solo imponible es recomendado, por ejemplo, para proveedores intracomunitarios y en régimen de "reverse charge" o para clientes sujetos a la casuística de IVA de "split payment".
 
-**Raggruppa partite**: attualmente non gestito; consente di raggruppare le partite che nella stessa registrazione abbiano la stessa data scadenza (ad esempio per casi di mesi di esclusione);
+**raggruppa partite**: actualmente no gestionado; permite agrupar las partidas que en la misma registración tengan la misma fecha de vencimiento (por ejemplo, en casos de meses de exclusión);
 
-**Raggr. scadenze in effetti**: permette di raggruppare più partite/scadenze in un unico effetto del modulo portafoglio effetti (saranno raggruppate in caso di uguale data scadenza e stesso appoggio bancario);
+**Agrup. vencimientos en efectos (Raggr. scadenze in effetti)**: permite agrupar múltiples partidas/vencimientos en un único efecto del módulo de cartera de efectos (se agruparán en caso de igual fecha de vencimiento y mismo banco de apoyo);
 
-**Raggr. note cred. in effetti**: consente di stornare, nella creazione effetti, anche le note di credito che hanno il tipo pagamento da gestire negli effetti. Se il flag non è attivo le partite aperte relative alle note di accredito non saranno visualizzate nella form di ricerca partite per la procedura [creazione effetti dalle partite](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values).
+**Agrup. notas de crédito en efectos (Raggr. note cred. in effetti)**: permite anular, en la creación de efectos, también las notas de crédito que tienen el tipo de pago para gestionar en los efectos. Si el flag no está activo, las partidas abiertas relacionadas con las notas de crédito no se mostrarán en el formulario de búsqueda de partidas para el procedimiento [creación de efectos desde las partidas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values).
 
-Il parametro di cui sopra deve essere abbinato con il flag **Raggruppa note credito per data scadenza** presente nei  [Parametri portafoglio effetti](/docs/configurations/parameters/treasury/bills-portfolio-parameters) 
+El parámetro anterior debe emparejarse con el flag **raggruppa note credito per data scadenza** presente en los [Parámetros de cartera de efectos](/docs/configurations/parameters/treasury/bills-portfolio-parameters).
 
-Se si attiva il flag per il raggruppamento per data scadenza la partita (o partite) relativa alla nota di accredito con tipo pagamento coerente con l'emissione effetti sarà raggruppata (stornando le partite attive) soltanto se ha scadenza uguale rispetto alle partite selezionate per l'emissione dell' effetto. Diversamente, se il flag è disattivato la nota di accredito sarà raggruppata andando a stornare la partita scadente alla prima data utile (a patto ovviamente che il flag *Raggr. note cred. in effetti* nell'anagrafica sia attivo).
+Si se activa el flag de agrupación por fecha de vencimiento, la partida (o partidas) correspondiente a la nota de crédito con tipo de pago coherente con la emisión de efectos será agrupada (anulando las partidas activas) solo si tiene una fecha de vencimiento igual a las partidas seleccionadas para la emisión del efecto. De lo contrario, si el flag está desactivado, la nota de crédito será agrupada, anulando la partida con vencimiento a la primera fecha útil (a condición, por supuesto, de que el flag *Agrup. notas de crédito en efectos (Raggr. note cred. in effetti)* en el registro esté activo).
 
-**Controllo esposizione**: con questo flag si renderà visibile questo soggetto nelle maschere riepilogative dell'[esposizione clienti](/docs/treasury/customer-risk/procedures/customer-statement).
+**controllo esposizione**: con este flag se hará visible este sujeto en las máscaras generales del [estado de exposición de clientes (esposizione clienti)](/docs/treasury/customer-risk/procedures/customer-statement).
 
-**Giorni ritardo** è un dato statistico calcolato nel modulo **rischio cliente** (procedura  [**controllo rimesse**](/docs/treasury/customer-risk/procedures/remittances-check) e utilizzato nelle proiezioni di cash flow; rappresenta una **media dei giorni di ritardo nei pagamenti da parte dei clienti** non solo sulle partite scadute attuali, ma anche sullo storico. Il calcolo prevede una media pesata sull'importo della partita. Infatti il calcolo si basa sull'elaborazione dei "numeri creditori" (come in un estratto conto scalare bancario). All'interno della form **controllo rimesse**(nella ribbon bar in alto) è presente il comando **Aggiorna gg ritardo** che inserisce il risultato sdel calcolo nel campo Giorni ritardo in anagrafica cliente.
+**Días de retraso (Giorni ritardo)** es un dato estadístico calculado en el módulo **riesgo de cliente** (procedimiento [**controllo rimesse**](/docs/treasury/customer-risk/procedures/remittances-check) y utilizado en proyecciones de flujo de caja; representa una **media de días de retraso en los pagos por parte de los clientes** no solo sobre las partidas vencidas actuales, sino también sobre el historial. El cálculo prevé un promedio ponderado sobre el importe de la partida. De hecho, el cálculo se basa en la elaboración de los "números acreedores" (como en un extracto de cuenta bancaria escalonado). Dentro del formulario **control de remesas** (en la barra de ribbon en la parte superior) está presente el comando **Actualizar días de retraso (Aggiorna gg ritardo)** que inserta el resultado del cálculo en el campo Días de retraso en el registro del cliente.
 
-**Imp. fido concesso**: è l'importo del fido che è concesso al cliente. Per la corretta gestione di questa funzionalità si deve gestire anche il flag **Fido** presente nelle tabelle relativi ai dipi documento del ciclo vendite (Tipo fatture; Tipi Bolla; Tipi Ordine cliente) il quale include o meno il tipo di documento in questione nel controllo dello sconfinamento rispetto al fido.
+**Importe de crédito concedido (Imp. fido concesso)**: es el importe del crédito que se concede al cliente. Para la correcta gestión de esta funcionalidad, también debe gestionarse el flag **fido** presente en las tablas relativas a los documentos del ciclo de ventas (Tipos de factura; Tipos de Bolla; Tipos de Pedido del cliente) que incluye o no el tipo de documento en cuestión en el control del sobrecosto respecto al crédito.
 
-**Tipo contr. fido**: si può definire se il cliente è soggetto ad un solo ‘**monitor fido**' (cioè sarà restituito un solo messaggio di segnalazione dello sforamento del fido) oppure un **blocco doc. e monitor fido** con il quale il documento che va a sforare il fido sarà bloccato e dovrà essere autorizzato all'interno del modulo Rischio cliente (procedura [Lock manager](/docs/treasury/customer-risk/procedures/lock-manager), oppure in un database multi societario la possibilità di impostare un **monitor di gruppo** o **blocco di gruppo** andando quindi a valutare la situazione complessiva del soggetto nei confronti di tutte le società gestite nella base dati e quindi sommando il monte documenti (si raccomanda di impostare l'importo fido uguale e attivo su tutte le società).**Blocco /monitor gruppo cliente** verifica per gruppo aziendale e quindi verificando il campo sottoconto capogruppo (legge il fido del capogruppo). Totalizza sempre i valori di tutte le aziende del gruppo sul fido della capogruppo. Ignora il valore del fido scritto sulle anagrafiche delle filiali.
+**Tipo de control de crédito (Tipo contr. fido)**: se puede definir si el cliente está sujeto a un solo ‘**monitor fido**' (es decir, se devolverá un solo mensaje de alerta sobre el aumento del crédito) o un **bloqueo de documento y monitor de crédito** en el cual el documento que va a exceder el crédito será bloqueado y deberá ser autorizado dentro del módulo Riesgo de cliente (procedimiento [Lock manager](/docs/treasury/customer-risk/procedures/lock-manager), o en una base de datos multicompañía la posibilidad de establecer un **monitor de grupo** o **bloqueo de grupo**, evaluando así la situación general del sujeto en relación con todas las empresas gestionadas en la base de datos y sumando el total de documentos (se recomienda establecer el importe de crédito igual y activo en todas las empresas). **Bloqueo /monitor de grupo de cliente** verifica por grupo empresarial y por lo tanto verifica el campo subcuenta del grupo principal (lee el crédito del grupo principal). Siempre totaliza los valores de todas las empresas del grupo en el crédito del grupo principal. Ignora el valor del crédito escrito en los registros de las filiales.
 
-Nel modulo Rischio cliente c'è una procedura di [gestione fidi](/docs/treasury/customer-risk/credit-management) che consente di visualizzare l'elenco delle impostazioni di fido impostate su tutti i codici cliente, senza dover entrare nella singola anagrafica;
+En el módulo Riesgo de cliente hay un procedimiento de [gestión de créditos (gestione fidi)](/docs/treasury/customer-risk/credit-management) que permite visualizar el listado de las configuraciones de crédito establecidas en todos los códigos de cliente, sin necesidad de ingresar en el registro individual;
 
-**Fido assicurato**: è un semplice campo indicativo dell'importo coperto da assicurazione, non influente sui calcoli del rischio;
+**Crédito asegurado (Fido assicurato)**: es un simple campo indicativo del importe cubierto por aseguradora, no influyente en los cálculos de riesgo;
 
-**Note fido**: annotazioni commerciali sul fido concesso
+**note fido**: anotaciones comerciales sobre el crédito concedido.
 
-**Data revisione Credito:** campo indicativo della data di revisione dell'accordo commerciale con il cliente in merito al fido concesso.
+**data revisione credito**: campo indicativo de la fecha de revisión del acuerdo comercial con el cliente en relación con el crédito concedido.
 
-**Tipo sollecito**: tipo di sollecito di pagamento nei confronti del cliente da generare nella procedura di creazione automatica solleciti
+**tipo sollecito**: tipo de recordatorio de pago hacia el cliente a generar en el procedimiento de creación automática de recordatorios.
 
-La combo box è collegata alla tabella Tipi solleciti (Home>Tabelle>Amministrativa); l'anagrafica del cliente in uso sarà associata ad uno dei possibili tipi di sollecito.
+El combo box está vinculado a la tabla Tipos de recordatorios (Inicio > Tablas > Administrativa); el registro del cliente en uso estará asociado a uno de los posibles tipos de recordatorio.
 
-*Esempio*: si possono creare un tipo sollecito standard ed un tipo di sollecito particolare, esempio per clienti storici o particolarmente importanti, con un testo differente (magari più "morbido").
+*Ejemplo*: se pueden crear un tipo de recordatorio estándar y un tipo de recordatorio particular, por ejemplo, para clientes históricos o especialmente importantes, con un texto diferente (quizás más "suave").
 
-**Data accordo**: è la data dell'accordo sul calcolo degli interessi di mora per i ritardi di pagamento;
+**data accordo**: es la fecha del acuerdo sobre el cálculo de los intereses de mora por los retrasos en los pagos;
 
-**Tipo tasso di interesse**: è il tipo di tasso moratorio da applicare al soggetto sulla base dell'accordo concordato;
+**Tipo de tasa de interés (Tipo tasso di interesse)**: es el tipo de tasa moratoria a aplicar al sujeto en base al acuerdo acordado;
 
-La combo box è collegata alla tabella [Tipi Tasso](/docs/configurations/tables/finance/rate-types) in Configurazione > Tabelle >Amministrativa).
+El combo box está vinculado a la tabla [Tipos de Tasa](/docs/configurations/tables/finance/rate-types) en Configuración > Tablas > Administrativa).
 
-**Spread**: maggiorazione di tasso rispetto allo standard della sua tipologia.
+**Spread**: aumento de la tasa en comparación con la estándar de su tipología.
 
-**Livello autorizzativo:** si rinvia all [**tabella collegata**](/docs/configurations/tables/finance/authorization-levels/) alla combo box.
-
-
+**livello autorizzativo**: se remite a la [**tabla conectada**](/docs/configurations/tables/finance/authorization-levels/) al combo box.

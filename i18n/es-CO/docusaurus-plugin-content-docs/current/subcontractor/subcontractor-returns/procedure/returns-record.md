@@ -1,35 +1,34 @@
 ---
-title: Registrazione rientri
+title: registrazione rientri
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Procedure > Registrazione rientri** e permette di registrare a magazzino i rientri di conto lavoro già controllati e non ancora registrati.
+El formulario se abre a través de la ruta **Trabajo por Encargo > Devoluciones > Procedimientos > registrazione rientri** y permite registrar en el almacén las devoluciones de trabajo por encargo ya controladas y aún no registradas.
 
 ## Filtro
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire in magazzino i rientri, secondo i criteri di filtro disponibili. 
-  
+En esta pestaña, el usuario tiene la posibilidad de buscar y transferir al almacén las devoluciones, según los criterios de filtro disponibles.
 
-*Pulsanti specifici*:
+*Botones específicos*:
 
-> **Ricerca**: permette di applicare i filtri di ricerca all'intero database dei Rientri di Conto Lavoro inseriti, controllati e non ancora registrati;    
-> **Scarico**: permette di eseguire lo scarico dei rientri selezionati dal magazzino, in base agli algoritmi di scarico.
+> **ricerca**: permite aplicar los filtros de búsqueda a toda la base de datos de las Devoluciones de Trabajo por Encargo ingresadas, controladas y aún no registradas;  
+> **scarico**: permite realizar la descarga de las devoluciones seleccionadas del almacén, en base a los algoritmos de descarga.
 
-*Campi specifici*:
+*Campos específicos*:
 
-**Numero doc. def.**: in questa colonna viene visualizzato il numero del rientro di conto lavoro;  
-**Data doc. def.**: in questa colonna viene visualizzata la data del rientro di conto lavoro;  
-**Data registrazione magazzino**: si trova nella zona inferiore della form ed è impostata di default sulla data corrente, ma può essere modificata.
+**numero doc. def.**: en esta columna se visualiza el número de la devolución de trabajo por encargo;  
+**data doc. def.**: en esta columna se visualiza la fecha de la devolución de trabajo por encargo;  
+**data registrazione magazzino**: se encuentra en la parte inferior del formulario y se establece por defecto en la fecha actual, pero puede ser modificada.
 
-Una volta selezionati i rientri di conto lavoro, utilizzare il tasto *Scarico* per eseguire i movimenti di magazzino: contestualmente a questa operazione l'applicazione esegue il carico sul magazzino di rientro degli articoli prodotti dal terzista, lo scarico dal magazzino del terzista dei materiali utilizzati e l'eventuale carico dei resi sull'apposito magazzino resi.
+Una vez seleccionadas las devoluciones de trabajo por encargo, utilice el botón *scarico* para ejecutar los movimientos de almacén: concurrentemente a esta operación, la aplicación realiza la carga en el almacén de devoluciones de los artículos producidos por el tercer proveedor, la descarga del almacén del proveedor de los materiales utilizados y la carga de los retornos en el almacén adecuado de devoluciones.
 
-## Riepiloghi
+## Resúmenes (Riepiloghi)
 
-In questo tab è possibile eseguire il 'rollback' dell'operazione di registrazione del rientro di conto lavoro, ripristinando quindi la situazione antecedente all'operazione stessa.
+En esta pestaña es posible realizar el 'rollback' de la operación de registro de la devolución de trabajo por encargo, restaurando así la situación anterior a la operación misma.
 
-I dati nelle griglie in basso, **Rientri** e **Registrazioni**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati).
+Los datos en las cuadrículas de abajo, **rientri** y **registrazioni**, corresponden al registro de descarga seleccionado en la cuadrícula superior (después de haber filtrado los datos).
 
-*Pulsanti specifici*:
-> **Ricerca**: per cercare i rientri scaricati. Il risultato di questa procedura viene visualizzata nella griglia di risultato, *Scarico rientri*;    
-> **Ripristina**: Richiama la procedura che esegue il rollback dell'intera operazione di registrazione rientri selezionata nella griglia *Scarico rientri*; quindi se con la stessa operazione di registrazione sono stati registrati più rientri, tutti questi rientri saranno riportati nello stato di 'non caricati';  
-> **Ripristina rientri**: richiama la procedura che esegue il rollback della registrazione dei soli rientri selezionati nella griglia inferiore, nel tab *Rientri*.
+*Botones específicos*:
+> **ricerca**: para buscar las devoluciones descargadas. El resultado de este procedimiento se visualiza en la cuadrícula de resultados, *scarico rientri*;  
+> **ripristina**: Llama al procedimiento que realiza el rollback de toda la operación de registro de devoluciones seleccionada en la cuadrícula *scarico rientri*; por lo tanto, si con la misma operación de registro se han registrado más devoluciones, todas estas devoluciones volverán al estado de 'no cargadas';  
+> **ripristina rientri**: llama al procedimiento que realiza el rollback de la registración de solo las devoluciones seleccionadas en la cuadrícula inferior, en la pestaña *rientri*.

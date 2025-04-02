@@ -1,18 +1,10 @@
 ---
-title: Riepiloghi IVA
+title: riepiloghi iva
 sidebar_position: 5
 ---
 
-La sezione Riepiloghi IVA presenta il riepilogo dettagliato dei dati IVA aliquota per aliquota.
+La sección riepiloghi iva presenta el resumen detallado de los datos de IVA tasa por tasa.
 
-I dati possono essere forzati manualmente, ad esempio per gestire arrtondamenti dell'imposta in modo manuale. 
+Los datos pueden ser forzados manualmente, por ejemplo, para gestionar redondeos del impuesto de manera manual. 
 
-Per abilitare la modifica manuale attivare il flag **Calcolo manuale** nella tab** [Totale ritenuta](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **.
-
-
-
-
-
-
-
-
+Para habilitar la modificación manual, active el indicador **calcolo manuale** en la pestaña **[Total de retenciones (Totale ritenuta)](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**.

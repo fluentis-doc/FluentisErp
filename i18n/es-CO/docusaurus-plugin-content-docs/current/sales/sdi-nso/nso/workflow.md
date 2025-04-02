@@ -1,72 +1,40 @@
 ---
-title: Tipi ordinazione e cambio stati
+title: Tipos de orden y cambio de estados (Tipi ordinazione e cambio stati)
 sidebar_position: 6
 ---
 
-Lo stato **Ricevuto** è lo stato in cui si trova un ordine che è stato ricevuto da Fluentis senza errori ma 
-non è stato ancora inserito come ordine cliente.
-L’ordine può essere ricevuto con lo stato “In errore”, ossia l’ordine è stato ricevuto e inserito ma 
-presenta dei dati errati, quali il prezzo di una riga a 0, o mancanti, quali il codice NSO del cliente. Dovrà 
-quindi essere corretto dall’utente prima di poter effettuare ulteriori passaggi di stato.
-Dallo stato Ricevuto si possono eseguire 2 diversi comandi:        
-- **Importa ordine** porta l’ordine allo stato *Inserito*, ossia l’ordine viene generato nei documenti di 
-Fluentis;
-- **Annulla documento**, che fa in modo che l’ordine non venga creato in Fluentis e passo allo stato 
-*Annullata*, in quanto rifiutato dal fornitore.
+El estado **ricevuto** es aquel en el que se encuentra una orden que ha sido recibida por Fluentis sin errores, pero que aún no ha sido ingresada como pedido del cliente.  
+La orden puede ser recibida con el estado “En error (In errore)”, lo que significa que la orden ha sido recibida e ingresada, pero tiene datos incorrectos, como un precio de línea a 0, o datos faltantes, como el código NSO del cliente. Por lo tanto, deberá ser corregida por el usuario antes de poder realizar más cambios de estado.  
+Desde el estado Recibido se pueden ejecutar 2 comandos diferentes:       
+- **importa ordine** lleva la orden al estado *inserito*, es decir, la orden se genera en los documentos de Fluentis;  
+- **annulla documento**, que asegura que la orden no se cree en Fluentis y pasa al estado *annullata*, ya que fue rechazado por el proveedor.
 
-## Ordinazione semplice
+## Orden simple (Ordinazione semplice)
 
-Nel processo di ordinazioNe semplice, dove è solo il cliente ad inviare gli ordini e il fornitore non può 
-rispondere nel flusso ma lo deve fare tramite altri canali alternativi (email, fax, ..) dallo stato “Inserito” 
-si può passare ai seguenti stati:
-- *Attendere annullamento dal cliente*, ossia l’ordine viene messo in uno stato di sospensione in 
-attesa di un annullamento da parte del cliente che probabilmente ha comunicato 
-l’annullamento in precedenza mediante altri canali (mail, telefono, ecc…)
-- *Attendere sostituzione dal cliente*, ossia l’ordine viene messo in uno stato di sospensione in 
-attesa della ricezione di un ordine sostitutivo da parte del cliente che probabilmente ha 
-comunicato la sostituzione in precedenza mediante altri canali (mail, telefono, ecc…)        
+En el proceso de orden simple, donde solo el cliente envía los pedidos y el proveedor no puede responder en el flujo, sino que debe hacerlo a través de otros canales alternativos (correo electrónico, fax, etc.), desde el estado “Insertado (Inserito)” se puede pasar a los siguientes estados:  
+- *attendere annullamento dal cliente*, lo que significa que la orden se coloca en un estado de suspensión a la espera de una anulación por parte del cliente que probablemente ya comunicó la anulación a través de otros canales (correo, teléfono, etc.);  
+- *attendere sostituzione dal cliente*, lo que significa que la orden se coloca en un estado de suspensión a la espera de recibir un pedido sustituto por parte del cliente que probablemente ya comunicó la sustitución a través de otros canales (correo, teléfono, etc.).        
 
-Il cliente può effettuare una richiesta di sostituzione dell’ordine.
-In questo caso l’ordine originale passerà nello stato “In richiesta di sostituzione”. Da qui si potranno 
-selezionare 2 cambi di stato:
-- *Riporta in inserito* nel caso in cui non si accetti la sostituzione e si voglia riportare l’ordine 
-nello stato “Inserito” in modo tale da poterlo evadere con i valori originali;
-- *Sostituzione da cliente* nel caso in cui si voglia accettare la sostituzione dell’ordine.       
+El cliente puede solicitar la sustitución de la orden. En este caso, la orden original pasará al estado “En solicitud de sustitución (In richiesta di sostituzione)”. Desde aquí se podrán seleccionar 2 cambios de estado:  
+- *riporta in inserito* en caso de que no se acepte la sustitución y se quiera devolver la orden al estado “Insertado” para poder despacharla con los valores originales;  
+- *sostituzione da cliente* en caso de que se quiera aceptar la sustitución de la orden.
 
-Al momento della ricezione dell’ordine sostitutivo verrà generata un’ulteriore riga con stato *In attesa di 
-accettazione*, la quale fa riferimento al nuovo ordine.
-Nel caso di accettazione della sostituzione del nuovo ordine all’ordine iniziale, la riga *In attesa di 
-accettazione*, passerà in stato *Inserito*, mentre la riga dell’ordine originale *In richiesta di 
-sostituzione* passerà allo stato *Sostituito da cliente*.
+Al recibir el pedido sustituto, se generará una fila adicional con el estado *in attesa di accettazione*, la cual se refiere al nuevo pedido. En caso de aceptar la sustitución del nuevo pedido al pedido inicial, la fila *En espera de aceptación* pasará al estado *inserito*, mientras que la fila de la orden original *in richiesta di sostituzione* pasará al estado *sostituito da cliente*.
 
-## Ordinazione completa
+## Orden completa (Ordinazione completa)
 
-Nel processo di ordinazione completa, dove il cliente e il fornitore si possono inviare gli ordini tramite 
-NSO, dallo stato “Inserito” si può passare ai seguenti stati:
-- *Spedizione risposta di conferma* effettua l’invio di una notifica al cliente che conferma 
-l’accettazione dell’ordine da parte del fornitore (IBSA). L’ordine passa nello stato “Confermato da fornitore” e verrà creata un’ulteriore riga per il file di 
-risposta della conferma.
-- *Spedizione risposta di diniego* invia una notifica di non accettazione dell’ordine al cliente, con 
-l’ordine che passa nello stato *Annullato da Fornitore*.
-- *Creazione risposta di modifica* permette di effettuare la modifica del documento per quanto 
-riguarda codice articolo, quantità e prezzo delle singole righe e di inviarlo al cliente, che potrà a 
-sua volta accettare o meno tale ordine modificato. Verrà mostrato un messaggio d’avviso di chiusura dell’ordine originale e di creazione di un nuovo ordine, sul quale si andranno ad operare le modifiche.
-Una volta effettuate le modifiche sull’ordine, questo potrà essere inviato mediante il cambio stato *In 
-risposta di modifica*. Il nuovo ordine di modifica passerà allo stato “In attesa di riscontro”. Verrà inoltre creata una nuova riga di notifica.
-- *Spedizione risposta di ricevimento* invece invia una semplice notifica di ricevimento 
-dell’ordine al cliente l’ordine passa nello stato *Ricevuto da fornitore*.  
+En el proceso de orden completa, donde el cliente y el proveedor pueden enviar pedidos a través de NSO, desde el estado “Insertado (Inserito)” se puede pasar a los siguientes estados:  
+- *spedizione risposta di conferma* envía una notificación al cliente que confirma la aceptación del pedido por parte del proveedor (IBSA). La orden pasa al estado “Confirmado por el proveedor (Confermato da fornitore)” y se creará una fila adicional para el archivo de respuesta de la confirmación.  
+- *spedizione risposta di diniego* envía una notificación de no aceptación del pedido al cliente, con la orden pasando al estado *annullato da fornitore*.  
+- *creazione risposta di modifica* permite modificar el documento respecto al código del artículo, cantidad y precio de las líneas individuales y enviarlo al cliente, quien podrá aceptar o no este pedido modificado. Se mostrará un mensaje de advertencia de cierre de la orden original y de creación de un nuevo pedido, sobre el cual se realizarán las modificaciones. Una vez realizadas las modificaciones en el pedido, este podrá ser enviado mediante el cambio de estado *in risposta di modifica*. El nuevo pedido de modificación pasará al estado “En espera de respuesta (In attesa di riscontro)”. También se creará una nueva fila de notificación.  
+- *spedizione risposta di ricevimento*, en cambio, envía una simple notificación de recibo del pedido al cliente, pasando la orden al estado *ricevuto da fornitore*.
 
-## Ordinazione pre-concordata
+## Orden preacordada (Ordinazione pre-concordata)
 
-Nell’ordinazione pre-concordata il flusso ha inizio dal fornitore che, come concordato in precedenza con 
-il cliente tramite altri canali (email, fax, …), emette l’ordine NSO.         
+En la orden preacordada, el flujo comienza por parte del proveedor que, como se acordó previamente con el cliente a través de otros canales (correo electrónico, fax, etc.), emite el pedido NSO.
 
-Lo stato iniziale assunto da un ordine pre-concordato è lo stato *Creato Pre-Concordato*, dal quale si 
-può effettuare il passaggio di stato *Controllo Pre-Concordato*, che porta l’ordine allo stato 
-*Controllato*. Dallo stato *Controllato* è possibile effettuare 2 passaggi di stato:       
-- *Riporta in stato Pre-Concordato* riporta l’ordine allo stato *Creato Pre-Concordato*       
-- *Generazione Pre-Concordato* effettua la generazione del file dell’ordine pre-concordato 
-passando il suo stato a *Generata*, che può a sua volta subire 2 cambi di stato:       
-> - *Spedizione Pre-Concordato*, che porta l’ordine in stato *Da spedire*, ossia l’ordine
-viene inviato al cliente è pronto per essere fisicamente evaso;
-> - *Riporta in controllato* che riporta l’ordine in stato *Controllato*.
+El estado inicial que asume un pedido preacordado es el estado *creato pre-concordato*, desde donde se puede realizar el cambio de estado *controllo pre-concordato*, que lleva la orden al estado *controllato*. Desde el estado *controllato* se pueden realizar 2 cambios de estado:  
+- *Regresar a estado Pre-Acordado (Riporta in stato Pre-Concordato)*, regresa la orden al estado *creato pre-concordato*;  
+- *generazione pre-concordato* realiza la generación del archivo del pedido preacordado, cambiando su estado a *generata*, que a su vez puede sufrir 2 cambios de estado:  
+> - *spedizione pre-concordato*, que lleva el pedido al estado *da spedire*, es decir, el pedido es enviado al cliente y está listo para ser despachado físicamente;  
+> - *riporta in controllato*, que regresa la orden al estado *controllato*.

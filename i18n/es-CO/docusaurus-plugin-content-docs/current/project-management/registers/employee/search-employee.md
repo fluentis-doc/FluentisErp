@@ -1,9 +1,9 @@
 ---
-title: Ricerca Dipendenti
+title: Búsqueda de Empleados (Ricerca Dipendenti)
 sidebar_position: 1
 ---
 
-Questa pagina permette di ricercare i Dipendenti presenti nel database.
+Esta página permite buscar los Empleados presentes en la base de datos.
 
 import SearchForm from './../../../import/sections/search-form.md'
 

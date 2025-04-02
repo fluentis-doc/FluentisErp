@@ -1,77 +1,76 @@
 ---
-title: Nuovo Template
+title: Nuevo Template (Nuovo Template)
 sidebar_position: 2
 ---
 
-La procedura di creazione di un **nuovo Template** permette di andare a definire quali saranno le caratteristiche del Template che verrà poi utilizzato nella procedura di invio delle Newsletter, quali immagini, testo, hyperlink e merge data.
-La form è composta da due sezioni.
+El procedimiento para la creación de un **nuevo Template (nuovo Template)** permite definir cuáles serán las características del Template que luego se utilizará en el procedimiento de envío de las newsletters, como imágenes, texto, hipervínculos y datos de combinación (merge data).  
+El formulario se compone de dos secciones.
 
-La sezione superiore permette di definire le seguenti informazioni:
+La sección superior permite definir la siguiente información:
 
-**Nome**: corrisponde al codice con cui verrà identificato il Template;
+**nome**: corresponde al código con el que se identificará el Template;
 
-**Description**: è la descrizione del template;
+**description**: es la descripción del template;
 
-**Oggetto Business**: è l’oggetto business di Fluentis per il quale potrà essere utilizzato il Template;
+**oggetto business**: es el asunto de negocio de Fluentis para el cual podrá ser utilizado el Template;
 
-**Tipo di data source**: è la tipologia di data source su cui si basa il template (Simple, GroupBy e SQL Query);
+**tipo di data source**: es la tipología de fuente de datos en la que se basa el template (Simple, GroupBy y SQL Query);
 
-**Data Source**: è la sorgente dati che verrà utilizzata dal Template per la compilazione dei Merge Data.
+**data source**: es la fuente de datos que se utilizará en el Template para la compilación de los Merge Data.
 
-La parte inferiore della form prevede una serie di tab con le diverse funzioni con cui costruire il template e il foglio di lavoro su cui costruire effettivamente il Template e visualizzarne graficamente il risultato:
+La parte inferior del formulario incluye una serie de pestañas con las diferentes funciones para construir el template y la hoja de trabajo donde se construirá efectivamente el Template y se visualizará gráficamente el resultado:
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/template-file.png)
 
-Di seguito le tab presenti nella form.
+A continuación, las pestañas presentes en el formulario.
 
-**File**
+**file**
 
-Questa tab permette di effettuare le operazioni di base del Template, come l’apertura di un nuovo foglio di lavoro, l’apertura di un altro foglio di lavoro e l’anteprima di stampa del Template.  
-**New**: apre un nuovo foglio di lavoro;  
-**Open**: apre un nuovo foglio di lavoro;  
-**Save As**: permette di salvare con nome il foglio di lavoro sul pc;  
-**Print**: permette di stampare il foglio di lavoro;  
-**Print Preview**: permette di fare la stampa a video del foglio di lavoro in anteprima;  
-**Undo**: cancella l’ultima modifica al template;  
-**Redo**: ripristina l’ultima modifica cancellata al template.  
+Esta pestaña permite realizar las operaciones básicas del Template, como la apertura de una nueva hoja de trabajo, la apertura de otra hoja de trabajo y la vista previa de impresión del Template.  
+**Nuevo (New)**: abre una nueva hoja de trabajo;  
+**Abrir (Open)**: abre una hoja de trabajo existente;  
+**Guardar como (Save As)**: permite guardar con nombre la hoja de trabajo en el pc;  
+**Imprimir (Print)**: permite imprimir la hoja de trabajo;  
+**Vista previa de impresión (Print Preview)**: permite ver la impresión en pantalla de la hoja de trabajo en vista previa;  
+**undo**: cancela la última modificación en el template;  
+**redo**: restaura la última modificación cancelada en el template.  
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/file.png)
 
-**Home**
+**home**
 
-Questa Tab contiene i pulsanti per le funzionalità di base riguardanti l’editing del testo del Template, quali le dimensioni del carattere, gli elenchi, l’allineamento del testo, ecc.  
-Richiama le funzioni di base degli editor di testo più diffusi, quali Microsoft Word.  
+Esta pestaña contiene los botones para las funciones básicas relacionadas con la edición del texto del Template, como el tamaño de la fuente, las listas, la alineación del texto, etc.  
+Invoca las funciones básicas de los editores de texto más comunes, como Microsoft Word.  
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/home.png)
 
-**Insert**
+**Insertar (Insert)**
 
-Questa Tab contiene i pulsanti per inserire alcuni elementi al Template, quali tabelle, immagini e Hyperlink.  
-**Table**: permette l’inserimento di una tabella all’interno del foglio di lavoro;  
-**Inline Picture**: permette di inserire un’immagine nel corpo del documento;  
-**Picture**: permette di inserire un’immagine nel corpo del documento;  
-**Bookmark**: permette di inserire un segnalibro all’interno del template;  
-**Hyperlink**: permette di inserire un link ad una pagina web o ad un segnalibro del template;  
-**Header**: permette di inserire la testata del template;  
-**Footer**: Permette di inserire il piè di pagina del template;  
-**Page Number**: serve per indicare il numero di pagina nella testata o nel piè di pagina del Template;  
-**Page Count**: serve per indicare il numero totale di pagine del template nella testata o nel piè di pagina;  
-**Text Box**: permette di inserire una casella di testo nel Template;  
-**Symbol**: serve per inserire un simbolo speciale all’interno del Template.  
+Esta pestaña contiene los botones para insertar algunos elementos en el Template, como tablas, imágenes y hipervínculos.  
+**table**: permite la inserción de una tabla dentro de la hoja de trabajo;  
+**Imagen en línea (Inline Picture)**: permite insertar una imagen en el cuerpo del documento;  
+**Imagen (Picture)**: permite insertar una imagen en el cuerpo del documento;  
+**Marcador (Bookmark)**: permite insertar un marcador dentro del template;  
+**Hipervínculo (Hyperlink)**: permite insertar un enlace a una página web o a un marcador del template;  
+**header**: permite insertar el encabezado del template;  
+**Pie de página (Footer)**: permite insertar el pie de página del template;  
+**Número de página (Page Number)**: indica el número de página en el encabezado o pie de página del Template;  
+**Conteo de páginas (Page Count)**: indica el número total de páginas del template en el encabezado o pie de página;  
+**Cuadro de texto (Text Box)**: permite insertar un cuadro de texto en el Template;  
+**Símbolo (Symbol)**: se utiliza para insertar un símbolo especial dentro del Template.  
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/insert.png)
 
-**Merge data**
+**Datos de combinación (Merge data)**
 
-In questa tab sono presenti i pulsanti necessari alla gestione ed all’inserimento dei merge data.  
-**Insert Merge Field**: Il pulsante permette di inserire i merge data selezionandoli da una lista che si basa sul Data Source a cui fa riferimento il Template;  
-**View Merged Data**: il pulsante permette di nascondere/visualizzare i merge data inseriti nel template;  
-**Show All Field Codes**: il pulsante serve per mostrare I codici dei campi utilizzati come merge data;  
-**Show All Field Results**: il pulsante serve per mostrare il risultato dell’estrapolazione dei campi utilizzati come merge data;  
-**First Record**: permette di posizionarsi sul primo record estrapolato dai merge data;  
-**Previous record**: permette di posizionarsi sul record precedente rispetto a quello attuale estrapolato dai merge data;  
-**Next record**: permette di posizionarsi sul record successivo rispetto a quello attuale estrapolato dai merge data;  
-**Last Record**: permette di posizionarsi sull’ultimo record estrapolato dai merge data.  
+En esta pestaña están los botones necesarios para la gestión e inserción de los datos de combinación.  
+**Insertar campo de combinación (Insert Merge Field)**: este botón permite insertar los datos de combinación seleccionándolos de una lista que se basa en la Fuente de Datos a la que se refiere el Template;  
+**Ver datos combinados (View Merged Data)**: el botón permite ocultar/visualizar los datos de combinación insertados en el template;  
+**Mostrar todos los códigos de campo (Show All Field Codes)**: el botón sirve para mostrar los códigos de los campos utilizados como datos de combinación;  
+**Mostrar todos los resultados de campo (Show All Field Results)**: el botón sirve para mostrar el resultado de la extracción de los campos utilizados como datos de combinación;  
+**Primer registro (First Record)**: permite posicionarse en el primer registro extraído de los datos de combinación;  
+**Registro anterior (Previous record)**: permite posicionarse en el registro anterior respecto al actual extraído de los datos de combinación;  
+**Siguiente registro (Next record)**: permite posicionarse en el registro siguiente respecto al actual extraído de los datos de combinación;  
+**Último registro (Last Record)**: permite posicionarse en el último registro extraído de los datos de combinación.  
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/merge-data.png)
-

@@ -1,30 +1,30 @@
 ---
-title: Categorie tipi prova
+title: categorie tipi prova
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Categorie tipi prova**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Calidad (Qualità) > Controles de artículo (Controlli articolo) > categorie tipi prova (Categorie tipi prova)**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le diverse tipologie di Prove.   
-Un esempio di utilizzo lo troviamo nella gestione **Tipi prova**.
+:::important ¿Para qué sirve? (A cosa serve)
+En esta tabla es posible codificar las diferentes tipologías de Pruebas.  
+Un ejemplo de uso lo encontramos en la gestión **tipi prova**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Categorie tipi prova**
+**Búsqueda de categorías tipos de prueba (Ricerca Categorie tipi prova)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultado. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Categorie tipi prova**
+**Inserción de categorías tipos de prueba (Inserimento Categorie tipi prova)**
 
-Per poter inserire nuovi *Categorie tipi prova* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevas *categorie tipi prova*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*:
 
-> **Codice**: è il codice della *Categoria tipo prova*.   
-> **Descrizione**: è la descrizione della *Categoria tipo prova*.   
-> **Note**: annotazioni libere.
+> **codice**: es el código de la *Categoría tipo prueba (Categoria tipo prova)*.  
+> **descrizione**: es la descripción de la *Categoría tipo prueba (Categoria tipo prova)*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

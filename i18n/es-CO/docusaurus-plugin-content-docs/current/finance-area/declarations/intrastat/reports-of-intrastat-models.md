@@ -1,25 +1,18 @@
 ---
-title: Stampe modelli Intrastat
+title: Impresiones de modelos Intrastat (Stampe modelli Intrastat)
 sidebar_position: 11
 ---
 
-Dalla maschera è possibile stampare, secondo i parametri impostati, i modelli intrastat creati. 
+Desde el formulario es posible imprimir, de acuerdo con los parámetros establecidos, los modelos intrastat creados.  
 
-Per ogni testata e sezione **bis**/**ter**/**quater**/**quinquies**/**sexies** sarà creata un'anteprima di stampa separata, selezionabile dalla tendina prima di premere il bottone *Anteprima*. 
+Para cada encabezado y sección **bis**/**ter**/**quater**/**quinquies**/**sexies** se creará una vista previa de impresión separada, seleccionable desde el menú desplegable antes de presionar el botón *anteprima*.  
 
-La stampa denominata ***Dettagli*** permette invece di stampare tutte le sezioni di cui sopra.
+La impresión denominada **dettagli*** permite, en cambio, imprimir todas las secciones mencionadas anteriormente.  
 
-Parallelamente alla scelta della stampa in funzione delle sezioni da stampare, operano i filtri presenti nella form che rendono visibili o non visibili i modelli relativi alle vendite o agli acquisti e le specifiche sezioni.
+Paralelamente a la elección de la impresión según las secciones a imprimir, operan los filtros presentes en el formulario que hacen visibles o no visibles los modelos relacionados con las ventas o las compras y las secciones específicas.  
 
-Sono inoltre presenti filtri per numero e per data.
+También hay filtros por número y por fecha.  
 
-La combinazione di tutti i vari filtri e dei diversi report di stampa permette di elaborare il dato che si desidera estrarre. 
+La combinación de todos los diversos filtros y de los diferentes informes de impresión permite procesar los datos que se desean extraer.  
 
-La stampa non ha alcuna influenza sulle dichiarazioni intrastat (non esistono blocchi legati a questo processo).
-
-
-
-
-
-
-
+La impresión no tiene ninguna influencia sobre las declaraciones intrastat (no existen bloqueos relacionados con este proceso).

@@ -1,43 +1,42 @@
 ---
-title: Tipi offerte cliente
+title: Tipos de ofertas de clientes (Tipi offerte cliente)
 sidebar_position: 23
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se quiera configurar manualmente, se debe consultar la lista de verificación de la página enlazada.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi offerte cliente**.
+La tabla se abre a través de la ruta **Tablas > Ventas > Tipos de ofertas de clientes (Tabelle > Vendite > Tipi offerte cliente)**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Para insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-**Codice/Descrizione:** campi in cui viene indicato il codice e la descrizione della tipologia del documento (il codice che si inserisce deve essere univoco).
+**codice/descrizione**: campos donde se indica el código y la descripción del tipo de documento (el código que se inserta debe ser único).
 
-**Struttura gerarchica**: inserendo questo flag, gli articoli dell'offerta seguiranno una struttura gerarchica; per maggiori dettagli si rimanda alla relativa [documentazione](/docs/sales/offers/insert-offer).
+**struttura gerarchica**: al activar este indicador, los artículos de la oferta seguirán una estructura jerárquica; para más detalles, consulte la [documentación correspondiente](/docs/sales/offers/insert-offer).
 
-**Modifica versione**: questo flag indica le tipologie di offerta per le quali gestire le versioni.
+**modifica versione**: este indicador señala los tipos de oferta para los cuales se gestionarán las versiones.
 
-**Prezzo Ivato**: permette al sistema di recuperare il prezzo di vendita dai listini o dall'anagrafica articolo e lo riporta con l'aggiunta dell'IVA. Se non trova il listino, nel caso, per esempio, di listino scaduto o listino in valuta non compatibile, recupera i costi o i prezzi dall'anagrafica articolo e li riporta comprensivi di IVA. I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche a convertire nella valuta del cliente.
+**prezzo ivato**: permite al sistema recuperar el precio de venta de las listas de precios o del registro del artículo y lo muestra con la adición del IVA. Si no encuentra la lista de precios, en el caso, por ejemplo, de una lista de precios caducada o una lista de precios en una moneda no compatible, recupera los costos o precios del registro del artículo y los muestra con IVA incluido. Los costos y precios en el registro están en EUR, por lo que el sistema también los convertirá a la moneda del cliente.
 
-**Numerazione**: in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti sulla numerazione dei documenti si rimanda all'articolo [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations).
+**numerazione**: en este campo debe ingresarse el código de numeración apropiado. Para más información sobre la numeración de documentos, consulte el artículo sobre [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations).
 
-**Tipo ordine cliente**: in questo campo viene indicata la [tipologia di Ordine di vendita](/docs/configurations/tables/sales/sales-order-types) da creare al momento della Conversione dell'offerta con l'apposita procedura.    
+**tipo ordine cliente**: en este campo se indica el [tipo de Orden de venta](/docs/configurations/tables/sales/sales-order-types) que se creará al momento de la Conversión de la oferta mediante el procedimiento correspondiente.
 
-**Listino di vendita**: questo tipo listino, di tipo  generico, viene utilizzato per la ricerca dei prezzi nel caso in cui nel tab listini dell’anagrafica del cliente o contatto non ci sia nessuna tipologia di listino inserita. Solitamente si utilizza quando si fanno offerte a contatti CRM che non sono ancora stati acquisiti come clienti e per i quali non siano stati inseriti i tipi listini nel tab Listini dell’anagrafica.
+**listino di vendita**: este tipo de lista, de tipo genérico, se utiliza para la búsqueda de precios en caso de que en la pestaña de listas del registro del cliente o contacto no haya ningún tipo de lista ingresada. Normalmente se utiliza para ofrecer a contactos de CRM que aún no se han adquirido como clientes y para los cuales no se han ingresado los tipos de listas en la pestaña de Listas del registro.
 
-**Stampa e numero di copie**: attraverso questi campi viene definita la stampa di default e il numero di copie da stampare; ricordiamo che per stampare la stampa di default è necessario selezionare *Stampe multiple* al momento della stampa.
+**Impresión y número de copias (Stampa e numero di copie)**: a través de estos campos se define la impresión predeterminada y el número de copias a imprimir; recordamos que para imprimir la impresión predeterminada es necesario seleccionar *Impresiones múltiples* al momento de la impresión.
 
-**Tipo prototipo articolo**: questo campo contiene la tipologia di prototipo articolo da creare nella procedura di creazione prototipo dall'interno dell'offerta. 
+**tipo prototipo articolo**: este campo contiene el tipo de prototipo de artículo que se creará en el procedimiento de creación de prototipo desde dentro de la oferta.
 
-**Tipo opportunità**: se nel Tipo Offerta viene collegato un [Tipo opportunità](/docs/configurations/tables/crm/opportunities/opportunity-type), al salvataggio dell’Offerta viene creata una [Nuova Opportunità](/docs/crm/chance/new-chance) se in testata Offerta non ne viene inserita una preesistente; se inserita, l’Opportunità preesistente viene aggiornata.
+**tipo opportunità**: si en el Tipo de Oferta se vincula un [Tipo de oportunidad](/docs/configurations/tables/crm/opportunities/opportunity-type), al guardar la Oferta se crea una [Nueva Oportunidad](/docs/crm/chance/new-chance) si en la cabecera de la Oferta no se ha ingresado una preexistente; si se ha ingresado, se actualiza la Oportunidad preexistente.
 
-**Gestione cespiti e Tipo operazione**: il flag permette di gestire i cespiti per questa tipologia di documento. Nel campo successivo viene indicata la tipologia di operazione dei cespiti, che nel caso delle vendite potrà esere un’alienazione totale, parziale oppure una distruzione.      
+**Gestión de activos y Tipo de operación (Gestione cespiti e Tipo operazione)**: el indicador permite gestionar los activos para este tipo de documento. En el campo siguiente se indica el tipo de operación de los activos, que en el caso de ventas puede ser una enajenación total, parcial o una destrucción.
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
-
+**Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: en esta columna es posible asociar el tipo de descuento a proponer cuando los descuentos se ingresan directamente en la columna *sconti articolo* de la cuadrícula de artículos de los documentos (para más detalles, consulte el artículo sobre [Gestión del widget de descuentos simplificado](/docs/sales/sales-flow/discount-widget)).

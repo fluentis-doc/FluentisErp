@@ -1,38 +1,38 @@
 ---
-title: Tipi DDT acquisto
+title: tipi ddt acquisto
 sidebar_position: 5
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di DDT di acquisto disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi DDT di acquisto*.
+Esta tabla es fundamental para definir los diferentes tipos de DDT de compra disponibles, cada uno con sus propias características. Se puede acceder desde *Configuración > Tablas > Compras > tipi ddt acquisto*.
 
-I campi presenti sono:
+Los campos presentes son:
 
-**Codice\Descrizione**: campi obbligatori per definire il tipo e la descrizione della bolla di acquisto.
+**Código/Descripción (Codice\Descrizione)**: campos obligatorios para definir el tipo y la descripción de la nota de compra.
 
-**Numerazione\Descrizione**: campo obbligatorio per la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo DDT.
+**Numeración/Descripción (Numerazione\Descrizione)**: campo obligatorio para la [Numeración](/docs/configurations/tables/fluentis-numerations) que se asignará al tipo de DDT.
 
-**Tipo/Descrizione fattura di acquisto**: in questo campo va definito il [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) da creare quando si utilizza la procedura di [Valorizzazione DDT di acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). È possibile creare la fattura da DDT solo se questo campo è stato valorizzato.
+**Tipo/Descripción de factura de compra (Tipo/Descrizione fattura di acquisto)**: en este campo debe definirse el [Tipo de factura](/docs/configurations/tables/purchase/purchase-invoices-type) que se creará al utilizar el procedimiento de [Valoración de DDT de compra](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). Solo es posible crear la factura a partir de DDT si este campo ha sido completado.
 
-**Natura DDT**: in questo campo va inserita la natura del DDT: consegna, reso, c/visione o reso c/visione. Questo valore dovrà essere selezionato da un elenco.         
+**natura ddt**: en este campo debe ingresarse la naturaleza del DDT: entrega, devolución, c/visualización (c/visione) o devolución c/visualización. Este valor debe seleccionarse de una lista.
 
-**Magazzino/Descrizione magazzino**: è il magazzino di arrivo della merce che viene settato in automatico sulle righe articolo dei DDT creati con questo tipo.
+**Almacén/Descripción de almacén (Magazzino/Descrizione magazzino)**: es el almacén de llegada de la mercancía que se establece automáticamente en las líneas de artículo de los DDT creados con este tipo.
 
-**Causale/Descrizione causale**: è la [Causale](/docs/configurations/tables/logistics/warehouse-templates) di movimentazione della merce in arrivo che viene settata in automatico sulle righe articolo dei DDT creati con questo tipo.
+**Causa/Descripción de causa (Causale/Descrizione causale)**: es la [Causa](/docs/configurations/tables/logistics/warehouse-templates) de movimiento de la mercancía en llegada que se establece automáticamente en las líneas de artículo de los DDT creados con este tipo.
 
-**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario della bolla, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.
+**Control de proveedor (Controllo fornitore)**: sirve para activar un control que, en el momento de seleccionar el sujeto titular de la nota, la procedura nos permitirá seleccionar solo cuentas de tipo proveedor y no de tipo cliente.
 
-**Cash Flow**: se settato, il tipo ordine concorre al calcolo del cash flow.
+**cash flow**: si está configurado, el tipo de pedido contribuye al cálculo del flujo de caja.
 
-**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine con quantità parziali nello stesso DDT questo flag consentirà di riportare le quantità evase dell'ordine suddivise per riga articolo senza sommare le quantità.
+**evasione quantità articolo non sommata**: si está activado, en el momento en que se vayan a cumplir líneas de pedido con cantidades parciales en el mismo DDT, este indicador permitirá mostrar las cantidades cumplidas del pedido divididas por línea de artículo sin sumar las cantidades.
 
-**Agricola acquisti IVA**: se attivo, in fase di creazione della bolla, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola, se non esiste viene preso il codice IVA normale.
+**Agrícola compras IVA (Agricola acquisti IVA)**: si está activo, en el momento de la creación de la nota, el sistema verifica si existe un código de IVA agrícola para el artículo utilizado; si no existe, se toma el código de IVA normal.
 
-**Gestione matrici extra data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice.
+**gestione matrici extra data**: si está activo, permite visualizar, en el caso de gestión de artículos con matriz, una pestaña adicional para la imputación de los valores de cantidad por cada celda de matriz.
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**stampa**: en este campo es posible elegir la impresión predeterminada que se utilizará (se recuerda que, para imprimir el informe predeterminado, en la fase de impresión será necesario seleccionar la opción *Impresiones múltiples*); en el campo siguiente es posible indicar un **Número de copias** a imprimir.
 
-**Gestione Conai**: questo flag permette di attivare la gestione Conai per ciascun di tipo DDT. Per maggiori dettagli sulla gestione delle spese relative al [Conai](/docs/sales/sales-flow/conai) si rimanda all'apposita pagina della documentazione.
+**gestione conai**: este indicador permite activar la gestión de Conai para cada tipo de DDT. Para más detalles sobre la gestión de gastos relacionados con el [Conai](/docs/sales/sales-flow/conai), se remite a la página correspondiente de la documentación.
 
-**Controllo qualità**: i tipi DDT che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+**controllo qualità**: los tipos de DDT que tienen este indicador activo son visibles en el formulario [Importar artículos a controlar](/docs/quality/item-control/items-control/item-control-import/) ubicado en el área de *Calidad*.
 
-**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.     
+**gestione cespiti**: este indicador permite habilitar la [Gestión de activos](/docs/finance-area/fixed-assets/general-overview) para ese tipo de pedido y seleccionar el **Tipo de operación** que se desea realizar, que en el caso de las compras será un *costo originario*.

@@ -1,49 +1,40 @@
 ---
-title: Documenti Vendita in uscita
+title: documenti vendita in uscita
 sidebar_position: 2
 ---
 
-La form “**Documenti vendita in uscita**“ è divisa in due sezioni, una di testata che contiene i campi di filtro utilizzabili per filtrare i documenti e una griglia di risultato della ricerca effettuata:
+El formulario "**documenti vendita in uscita**" se divide en dos secciones, una de encabezado que contiene los campos de filtro utilizables para filtrar los documentos y una cuadrícula de resultados de la búsqueda realizada:
 
-## Pulsanti della ribbon bar:
+## Botones de la barra de herramientas (Pulsanti della ribbon bar):
 
-- Ricerca: avvia la ricerca nella griglia di risultato secondo i dati presenti nei filtri della testata
-- Visualizza: apre il visualizzatore integrato per la visione del file xml secondo il foglio di stile già pre-caricato dentro Fluentis al fine di consentire la visione "in chiaro"
-- Apri documento: viene aperto il documento fattura riferito al file xml in questione
-- **Scarica allegato:** viene scaricato localmente nel pc copia del file xml al fine di gestirlo ad esempio con servizi di invio di terze parti
-- **Ricarica file:** E’ attivo quando la riga è in stato *Generata* e permette di ricaricare il file da un folder esterno (locale o di rete); utile per consentire di ricaricare un xml nel quale si è dovuto intervenire manualmente per settare qualche tag particolare o non gestito (senza dover passare per lo step *firmata* come sin passato).
-Fluentis verifica che il file abbia lo stesso nome e che l’xml sia sintatticamente corretto, ma non fa un test sulla struttura Sdi (quindi un tag sbagliato o con valori errati non riceverà nessun messaggio e non avverrà l'invio Sdi). Nel log relativo al file, (premendo ad esempio Visualizza) nel campo **Informazioni** viene riportata la dicitura che il file è stato sovrascritto manualmente e la data.
+- **ricerca**: inicia la búsqueda en la cuadrícula de resultados según los datos presentes en los filtros del encabezado.
+- **visualizza**: abre el visor integrado para ver el archivo xml de acuerdo con la hoja de estilo ya precargada en Fluentis para permitir la visualización "en claro".
+- **apri documento**: se abre el documento de factura relacionado con el archivo xml en cuestión.
+- **scarica allegato**: se descarga localmente en el pc una copia del archivo xml para gestionarlo, por ejemplo, con servicios de envío de terceros.
+- **Recargar archivo (Ricarica file)**: está activo cuando la fila está en estado *Generada* y permite recargar el archivo desde una carpeta externa (local o de red); útil para permitir recargar un xml en el que se ha tenido que intervenir manualmente para ajustar algún tag particular o no gestionado (sin tener que pasar por el paso *firmada* como se hacía anteriormente). Fluentis verifica que el archivo tenga el mismo nombre y que el xml sea sintácticamente correcto, pero no realiza una prueba sobre la estructura del Sdi (por lo tanto, un tag incorrecto o con valores erróneos no recibirá ningún mensaje y no se realizará el envío al Sdi). En el log relacionado con el archivo, (presionando, por ejemplo, Ver) en el campo **Información** se registrará la indicación de que el archivo ha sido sobrescrito manualmente y la fecha.
 
+## Valores presentados en la cuadrícula:
 
-## Valori presentati nella griglia:
+- **stato sdi**: el estado del documento en relación con su envío al SdI a través de Fluentis Business Hub.
 
--      **Stato SdI**: lo stato del documento relativo al suo invio al SdI tramite Fluentis Business Hub
+- **tipo**: el código de referencia del tipo de documento de venta.
 
--      **Tipo**: il codice di riferimento del tipo documento di vendita
+- **Fecha, Número, Cliente (Data, Numero, Cliente)**: la fecha, el número del documento y el cliente titular.
 
--      **Data**,**Numero,Cliente :** la data, il numero del documento e il cliente intestatario
+- **data di ricevimento del cliente**: la fecha de entrega del documento al cliente o la fecha de "puesta a disposición" del documento en el área reservada del cliente. Este último caso se refiere a los envíos para los cuales el SdI no puede identificar correctamente al contratante/cessionario.
 
--      **Data di ricevimento del cliente**: la data consegna del documento al cliente oppure la data di “messa a disposizione” del documento sull'area riservata del cliente. Quest'ultima casistica si riferisce agli invii per cui il SdI non riesce ad individuare correttamente il committente/cessionario
+- **nome file sdi**: el nombre del archivo XML que se crea cuando el documento se avanza al estado GENERADA; en el formato original o después de la colocación de la firma digital, representa el archivo de factura a enviar al SdI.
 
--      **Nome file SdI:** il nome del file il nome del file XML che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI.
+- **data ultimo evento**: se refiere a la última acción realizada por el operador o a la última notificación recibida del SdI durante el proceso de gestión del documento.
 
--      **Data ultimo evento**: si riferisce all'ultima azione compiuta dall'operatore o all'ultima notifica ricevuta dal SdI durante il processo di gestione del documento
-
-Cliccando in corrispondenza dell'expander di una fattura (pulsantino + all'estrema sinistra)  si apre il dettaglio delle transizioni relative agli stati del documento e vengono visualizzate le singole transizioni intervenute nella gestione del documento con la relativa data di esecuzione e il nome dell'eventuale file generato dal cambio stato:
+Al hacer clic en el expander de una factura (botón + en el extremo izquierdo), se abre el detalle de las transiciones relacionadas con los estados del documento y se visualizan las transiciones individuales que ocurrieron en la gestión del documento con la fecha de ejecución correspondiente y el nombre del archivo generado por el cambio de estado:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image02.png)
 
-I documenti presentati nella griglia Registro dei documenti SdI sono tutti quelli creati dal flusso attivo di gestione dei documenti Fattura, indipendentemente dallo stato; l'azione doppio click in corrispondenza di una riga di fattura apre il pannello  nel quale è possibile visionare i documenti creati durante la gestione del file fattura e lo storico delle transizioni.
+Los documentos presentados en la cuadrícula Registro de documentos SdI son todos aquellos creados por el flujo activo de gestión de documentos de factura, independientemente del estado; la acción de doble clic en una fila de factura abre el panel en el cual se pueden visualizar los documentos creados durante la gestión del archivo de factura y el historial de transiciones.
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image03.png)
 
-Nella griglia Registro documenti SdI, selezionando un documento fattura o più documenti fattura nel medesimo stato, è possibile gestire lo stato di lavorazione del documento utilizzando la combo Stato nella ribbon menu e selezionando il nuovo stato del documento:
+En la cuadrícula Registro de documentos SdI, seleccionando un documento de factura o varios documentos de factura en el mismo estado, es posible gestionar el estado de procesamiento del documento utilizando la combo Estado en el menú de la barra de herramientas y seleccionando el nuevo estado del documento:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image04.png)
-
-
-
-
-
-
-

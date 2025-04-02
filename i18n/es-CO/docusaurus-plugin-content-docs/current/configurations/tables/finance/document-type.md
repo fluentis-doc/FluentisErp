@@ -1,40 +1,38 @@
 ---
-title: Tipi documento
+title: tipi documento
 sidebar_position: 25
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Inicio Rápido (FAst Start)]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-Questa tabella gestisce le tipologie di documento associate alle Causali di contabilità generale e da qui, quindi, alle registrazioni contabili o infrannuali o gestionali che richiamano queste causali.
+Esta tabla gestiona los tipos de documentos asociados a las causas de contabilidad general y, por lo tanto, a los registros contables o interanuales o de gestión que hacen referencia a estas causas.
 
 :::tip Nota
-il **Fast Start** crea i tipi documento associandoli alla localizzazione geografica relativa, in modo da avere una lista dei documenti per l'Italia o per la Romania ecc. ecc.
-L'oggetto, infatti, prevede il campo nazione, che si può visualizzare in griglia dall'object navigator: per retrocompatibilità, è possibile avere anche Tipi documento *senza* legame ad una nazione, in modo che siano visibili in tutte le società del database indifferentemente.
-Ogni nuovo inserimento, comunque, recepirà la nazione della società attiva
+el **Inicio Rápido (Fast Start)** crea los tipos de documento asociándolos a la localización geográfica correspondiente, de modo que haya una lista de documentos para Italia, Rumania, etc. El objeto, de hecho, incluye el campo país, que se puede visualizar en la cuadrícula del object navigator: para retrocompatibilidad, también es posible tener tipi documento *sin* vínculo a un país, de modo que sean visibles en todas las empresas de la base de datos sin distinción. Cada nueva entrada, sin embargo, tomará el país de la empresa activa.
 :::
 
-I campi disponibili sono:
-- *Tipo codice* è il codice del tipo
-- *Tipo descrizione*, la descrizione
-- *Fattura*
-- *Ricevuta fiscale*
-- *Parcella*
-- *Saldaconto*
-- *Giroconto*
-- *Generale*
-- *Nota accredito*: per questo tipo documento, ***FluentisERP*** verificherà che la registrazione contabile abbia righe negative nella sezione Iva
-- *Nota debito*
-- *Nota di variazione*: per le note di credito di sola iva ***semplificate*** (TD08)
-- *Riepilogativa*
-- *Autofattura*
-- *Incasso*
-- *Pagamento*
-- *Codice per fatture elettroniche*: è il codice che si utilizzerà per valorizzare il file Sdi (TD01, TD04 ecc)
+Los campos disponibles son:
+- *tipo codice*: es el código del tipo.
+- *tipo descrizione*: la descripción.
+- *fattura*
+- *ricevuta fiscale*
+- *parcella*
+- *saldaconto*
+- *giroconto*
+- *generale*
+- *nota accredito*: para este tipo de documento, ***FluentisERP*** verificará que el registro contable tenga líneas negativas en la sección IVA.
+- *nota debito*
+- *nota di variazione*: para las notas de crédito de IVA ***simplificadas*** (TD08).
+- *riepilogativa*
+- *autofattura*
+- *incasso*
+- *pagamento*
+- *codice per fatture elettroniche*: es el código que se utilizará para valorar el archivo Sdi (TD01, TD04, etc.).
 
 :::tip Nota
-Nella griglia sottostante è possibile agganciare un numeratore specifico per Tipo documento: sarà utilizzato per un numeratore interno, non ufficiale, delle registrazioni contabili, non direttamente visibile in interfaccia
+En la cuadrícula a continuación, es posible vincular un numerador específico para el tipo de documento: se utilizará para un numerador interno, no oficial, de los registros contables, que no es directamente visible en la interfaz.
 :::

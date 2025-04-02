@@ -1,31 +1,31 @@
 ---
-title: Tipi valutazione fornitore
+title: tipi valutazione fornitore
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Tipi valutazione fornitore**.
+La tabla se encuentra en la ruta **Tablas (Tabelle) > Calidad (Qualità) > Calificación de proveedor (Qualificazione fornitore) > tipi valutazione fornitore (Tipi valutazione fornitore)**.
 
-I dati presenti in questa tabella sono utilizzati per categorizzare i tipi di valutazione fornitore.   
-Alcuni esempi di utilizzo dei *Tipi valutazione fornitore* li troviamo nelle gestioni:
-> **Valutazioni iniziali e periodiche** - nell'elenco dei *dati di testata*;   
-> **Valutazioni periodiche su Non conformità** - nell'elenco dei *dati di testata*;   
-> **Parametri qualificazione fornitore**.   
+Los datos en esta tabla se utilizan para categorizar los tipos de evaluación de proveedor.  
+Algunos ejemplos de uso de los *tipi valutazione fornitore* los encontramos en las gestiones:  
+> **valutazioni iniziali e periodiche** - en la lista de *dati di testata*;  
+> **valutazioni periodiche su non conformità** - en la lista de *dati di testata*;  
+> **parametri qualificazione fornitore**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Ricerca Tipi valutazione fornitore**
+**Búsqueda de tipos de evaluación de proveedor (Ricerca Tipi valutazione fornitore)**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario consta de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, solo hay que hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserimento Tipi valutazione fornitore**
+**Inserción de tipos de evaluación de proveedor (Inserimento Tipi valutazione fornitore)**
 
-Per poter inserire nuovi *Tipi valutazione fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Para poder insertar nuevos *tipi valutazione fornitore*, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
 
-*Campi specifici*: 
+*Campos específicos (Campi specifici)*:  
 
-> **Tipo**: è il codice del *Tipo valutazione fornitore*.   
-> **Descrizione tipo**: è la descrizione del *Tipo valutazione fornitore*.   
-> **Note**: annotazioni libere.
+> **tipo**: es el código del *tipo valutazione fornitore*.  
+> **descrizione tipo**: es la descripción del *tipo valutazione fornitore*.  
+> **note**: anotaciones libres.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

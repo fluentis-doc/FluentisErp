@@ -1,17 +1,17 @@
 ---
-title: Nuovo ordine di conto lavoro
+title: Nuevo pedido de trabajo por encargo (Nuovo ordine di conto lavoro)
 sidebar_position: 1
 ---
 
-Tramite questa form è possibile creare manualmente un nuovo ordine di conto lavoro oppure si possono modificare quelli già esistenti.
+A través de este formulario es posible crear manualmente un nuevo pedido de trabajo por encargo o modificar los ya existentes.
 
-La form si apre tramite il percorso **Conto Lavoro > Ordine di conto lavoro > Nuovo ordine di conto lavoro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca ordine di conto lavoro](/docs/subcontractor/subcontractor-orders/search-subcontractor-orders).
+El formulario se abre a través de la ruta **Trabajo por Encargo > Pedido de trabajo por encargo > Nuevo pedido de trabajo por encargo** o mediante el botón **nuovo** que se encuentra en el formulario [Buscar pedido de trabajo por encargo (Ricerca ordine di conto lavoro)](/docs/subcontractor/subcontractor-orders/search-subcontractor-orders).
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti. In automatico verranno proposti: **Anno**, **Numero**, **Data** correnti e il **Tipo documento** (proposto uguale a quello inserito nei *Parametri di Conto Lavoro*), che possono essere modificati dall'utente.
+La aplicación solicita ingresar el **terzista** titular del pedido, utilizando la ayuda de cuentas correspondiente. Automáticamente se propondrán: **anno**, **numero**, **data** actuales y el **tipo documento** (propuesto igual al ingresado en los *Parámetros de Trabajo por Encargo*), que pueden ser modificados por el usuario.
 
-La form contiene una serie di tab:
+El formulario contiene una serie de pestañas:
 
-- [Testata](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) e le sue Procedure;  
-- [Articoli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
-- [Materiali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Riepiloghi](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Cabecera (Testata)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) y sus Procedimientos;  
+- [Artículos (Articoli)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);  
+- [Materiales (Materiali)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
+- [Resúmenes (Riepiloghi)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).

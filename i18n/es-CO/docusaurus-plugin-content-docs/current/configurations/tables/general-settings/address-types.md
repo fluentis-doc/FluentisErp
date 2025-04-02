@@ -1,26 +1,26 @@
 ---
-title: Tipi indirizzi
+title: tipi indirizzi
 sidebar_position: 6
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi indirizzi** e serve per codificare liberamente (a livello di codice e descrizione) una serie di indirizzi alternativi da associare all'anagrafica contatti (sia essa Fornitore, Cliente, Banca o Agente).
+La tabla se abre a través de la ruta **Tablas > Configuración general > tipi indirizzi (Tabelle > Impostazioni generali > Tipi indirizzi)** y sirve para codificar libremente (a nivel de código y descripción) una serie de direcciones alternas a asociar con el registro de contactos (ya sea Proveedor, Cliente, Banco o Agente).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Per poter inserire i record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+Para poder insertar los registros es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
 
-Sono presenti una serie di flag predefiniti che attribuiscono una caratteristica utilizzabile in ulteriori automazioni (alcune già previste nella versione standard) presenti nel programma.
+Hay una serie de indicadores predefinidos que atribuyen características utilizables en futuras automatizaciones (algunas ya previstas en la versión estándar) presentes en el programa.
 
-Le automazioni già presenti e pronte all'uso sono:
+Las automatizaciones ya disponibles y listas para usar son:
 
-**Email Fatt C.**: associando questo flag al tipo di indirizzo che si sta codificando ed inserendo tale indirizzo nell'anagrafica contatti alla sezione **Indirizzi alternativi**, l'indirizzo (o gli indirizzi) e-mail inserito nell'apposito campo sarà utilizzato nel Workflow (cambio stato) di invio automatico massivo delle fatture di vendita.
+**Email Fact. C. (Email Fatt C.)**: al asociar este indicador al tipo de dirección que se está codificando e insertar dicha dirección en el registro de contactos en la sección **indirizzi alternativi**, la dirección (o direcciones) de correo electrónico ingresada en el campo correspondiente se utilizará en el flujo de trabajo (cambio de estado) para el envío automático masivo de las facturas de ventas.
 
-**Cointestatari**: associando questo flag si codifica il tipo indirizzo idoneo per definire i dati anagrafici (relativi ad ogni cointestatario inserito in anagrafica) per poterli poi richiamare nella fattura id vendita.
+**cointestatari**: al asociar este indicador se codifica el tipo de dirección adecuada para definir los datos registrales (relativos a cada copartícipe ingresado en el registro) para poder llamarlos posteriormente en la factura de venta.
 
-Gli altri possibili flag relativi all'invio-email possono essere associati al documento specifico previa *configurazione*.
+Otros indicadores posibles relacionados con el envío de correos electrónicos pueden asociarse al documento específico previa *configuración*. 
 
-Vi sono infine altri flag che potranno essere gestiti per eventuali automazioni di tipo fiscale (Stabile organizzazione e Rappresentante fiscale) ed il residuale Sede generica.
+Finalmente, hay otros indicadores que podrán ser gestionados para posibles automatizaciones de tipo fiscal (Establecimiento permanente y Representante fiscal) y el residual Sede genérica.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

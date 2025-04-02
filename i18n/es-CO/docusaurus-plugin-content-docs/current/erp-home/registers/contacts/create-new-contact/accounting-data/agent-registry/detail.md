@@ -1,54 +1,54 @@
 ---
-title: Dettaglio
+title: dettaglio
 sidebar_position: 2
 ---
 
-L'anagrafica di tipo **Agente** è necessaria al fine di gestire le diverse impostazioni ed **automatismi** relativi a questa tipologia di soggetti e permettere il **calcolo delle provvigioni** oltre alla gestione degli **aspetti fiscali** quali i contributi ENASARCO e la ritenuta d'acconto.
+El registro de tipo **Agente** es necesario para gestionar las diferentes configuraciones y **automatismos** relacionados con este tipo de sujetos y permitir el **cálculo de comisiones** además de la gestión de los **aspectos fiscales** como las contribuciones ENASARCO y la retención de impuestos.
 
-Dopo aver inserito i dati anagrafici generali del soggetto si procederà quindi alla scelta del [tipo conto](/docs/configurations/tables/finance/account-types) **Agenti** nella griglia *Sottoconti assegnati* della tab [*Dati contabili*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)
+Después de ingresar los datos generales del sujeto, se procederá a elegir el [tipo de cuenta](/docs/configurations/tables/finance/account-types) **Agentes** en la cuadrícula *Subcuentas asignadas* de la pestaña [*Datos contables*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro).
 
 :::important[Importante]
-Si consiglia di compilare in modo completo tutti i campi necessari alla gestione dell'agente, organizzati nella presente e nelle successive tab.
+Se aconseja completar de manera exhaustiva todos los campos necesarios para la gestión del agente, organizados en esta y en las siguientes pestañas.
 :::
 
-Questa finestra contiene elementi generali dell'agente stesso:
+Esta ventana contiene elementos generales del agente mismo:
 
-**Utilizzo a partite aperte**: attiva la gestione delle partite aperte per l'anagrafica in uso (si consiglia di abilitarla sempre per ottenere nello scadenziario anche le partite aperte nei confronti dell'agente, ad esempio per pagamento provvigioni spettanti);
+**utilizzo a partite aperte**: activa la gestión de cuentas abiertas para el registro en uso (se recomienda habilitarlo siempre para obtener en el calendario también las cuentas abiertas en relación con el agente, por ejemplo, para el pago de comisiones pendientes); 
 
-**Categoria agente**: è l'elemento fondamentale per il calcolo dell'**Enasarco** e del **FIRR**, così come definito nella tabella [Categorie Agenti](/docs/configurations/tables/sales/agent-category); la scelta si effettua tramite la combobox collegata alla tabella
+**categoria agente**: es el elemento fundamental para el cálculo del **Enasarco** y del **FIRR**, tal como se define en la tabla [Categorías de Agentes](/docs/configurations/tables/sales/agent-category); la elección se realiza a través de la combobox vinculada a la tabla.
 
-**Caratteristica agente**: elemento statistico libero utile, ad esempio, per creare dei raggruppamenti. La combobox è collegata alla tabella [Caratteristiche Agenti](/docs/configurations/tables/sales/agent-characteristics)
+**caratteristica agente**: elemento estadístico libre útil, por ejemplo, para crear agrupamientos. La combobox está vinculada a la tabla [Características de Agentes](/docs/configurations/tables/sales/agent-characteristics).
 
-**IVA**: Aliquota iva di default da proporre nella creazione del compenso agente, sia manualmente, sia dalla procedura di calcolo dalla liquidazione provvigioni.
+**iva**: tasa de IVA por defecto a proponer en la creación de la compensación del agente, tanto manualmente como desde el procedimiento de cálculo de la liquidación de comisiones.
 
-**Divisa**: divisa nella quale è denominato il conto contabile ed i documenti intestati all'agente
+**divisa**: divisa en la que está denominado el cuenta contable y los documentos a nombre del agente.
 
-**Data inizio/fine rapporto**: sulla base di questa data parte il calcolo dell'indennità suppletiva di clientela (stampa a disposizione per il modulo Agenti/Percipienti);
+**data inizio/fine rapporto**: con base en esta fecha comienza el cálculo de la indemnización supletiva de clientela (impresión disponible para el módulo Agentes/Beneficiarios);
 
-**Costo di/contropartita**: il sottoconto di contabilità generale da proporre all'inserimento del compenso nel modulo Percipienti (o da utilizzare nella sua creazione automatica dalla liquidazione agenti) al fine di accogliere il costo delle provvigioni;
+**costo di/contropartita**: el subcuenta de contabilidad general que se propone al ingresar la compensación en el módulo Beneficiarios (o para utilizarse en su creación automática desde la liquidación de agentes) con el fin de registrar el costo de las comisiones;
 
-**Conto di contropartita costo fisso**: è possibile valorizzare il fisso su un conto contabile specifico tramite questo campo;
+**conto di contropartita costo fisso**: es posible valorar el fijo en una cuenta contable específica a través de este campo;
 
-**Conto di fatturazione**: questo sottoconto viene utilizzato, nella creazione automatica del compenso percipiente dalla liquidazione agenti, per intestare il compenso ad un codice contabile differente (di tipo fornitore, al fine di unificare i dati contabili per soggetti che sono sia agente che fornitore);
+**conto di fatturazione**: este subcuenta se utiliza, en la creación automática de la compensación del beneficiario desde la liquidación de agentes, para asignar la compensación a un código contable diferente (de tipo proveedor, con el fin de unificar los datos contables para sujetos que son tanto agente como proveedor);
 
-**Annotazioni**: note libere dell'anagrafica agente;
+**annotazioni**: notas libres del registro del agente;
 
-**Operatore**: collegamento all'utente di **Fluentis**, serve per le restrizioni di visibilità dei dati quando all'agente è stato abilitato un accesso a ***Fluentis***
+**operatore**: conexión al usuario de **Fluentis**, sirve para las restricciones de visibilidad de los datos cuando al agente se le ha habilitado un acceso a ***Fluentis***;
 
-**Visibilità del documento**: è collegato al campo precedente, consente di definire se l'agente vede *Tutti i documenti* o *Propri documenti*
+**visibilità del documento**: está vinculado al campo anterior, permite definir si el agente ve *Todos los documentos* o *Sus propios documentos*;
 
-**Enasarco**: numero di iscrizione all'ente;
+**enasarco**: número de inscripción en el ente;
 
-**CCIAA**: numero di iscrizione alla camera di commercio;
+**CCIAA**: número de inscripción en la cámara de comercio;
 
-**Capo area**: permette di collegare l'anagrafica di un agente che è capo area rispetto a quello in uso; non vi sono automatismi relativi al calcolo delle provvigioni.
+**capo area**: permite conectar el registro de un agente que es jefe de área respecto al que se está utilizando; no hay automatismos relacionados con el cálculo de comisiones.
 
-**Regime fiscale**: il regime del soggetto
+**regime fiscale**: el régimen del sujeto;
 
-**Intra e Cod.serv.**: per agenti intracomunitari da riportare nelle sezioni quater e quinquies della dichiarazione intrastat;
+**Intra y Cod.serv. (Intra e Cod.serv.)**: para agentes intracomunitarios a reportar en las secciones cuarta y quinta de la declaración intrastat;
 
-**Società di capitali**: obsoleto, presente per retrocompatibilità
+**società di capitali**: obsoleto, presente para compatibilidad retroactiva.
 
-**Obbligo provvigioni su riga ordine**: con questo flag si obbliga l'utente a impostare una provvigione per l'agente nell'ordine cliente.
+**obbligo provvigioni su riga ordine**: con este indicador se obliga al usuario a establecer una comisión para el agente en el pedido del cliente.
 
-I campi legati alla fatturazione elettronica non sono attualmente in uso.
+Los campos relacionados con la facturación electrónica no están actualmente en uso.

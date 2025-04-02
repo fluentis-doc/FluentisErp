@@ -1,51 +1,50 @@
 ---
-title: Categorie cespiti per il controllo
+title: categorie cespiti per il controllo
 sidebar_position: 2
 ---
 
-La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Categorie cespiti per il controllo**
+El formulario se encuentra en la ruta: **Tablas > Control (Tabelle) > Contabilidad analítica (Controlling) > categorie cespiti per il controllo (Categorie cespiti per il controllo)**
 
 :::tip Nota
-Questa tabella è dedicata alle società che hanno attivato la gestione del *Controlling*, ma non è obbligatoria nel caso in cui si vogliano applicare logiche contabili di valorizzazione degli ammortamenti nel controllo di gestione
+Esta tabla está dedicada a las empresas que han activado la gestión del *controlling*, pero no es obligatoria en caso de que se deseen aplicar lógicas contables de valoración de los amortizaciones en el control de gestión.
 :::
 
-In questa tabella andiamo ad identificare le varie tipoligie di calcolo che vogliamo utilizzare nelle elaborazioni degli ammortamenti tecnici per il controlling: le logiche del controllo di gestione, relativamente ai cespiti, si discostano da quelle contabili al fine di utilizzare delle logiche legate, ad esempio, alle quantità prodotte da un determinato macchinario, piuttosto che ad un valore di riacquisto. Facendo questo si evitano le distorsioni legate, ad esempio, ai criteri di ammortamento contabili che sono fortemente influenzati dalle logiche fiscali. 
+En esta tabla identificamos las diferentes tipologías de cálculo que queremos utilizar en las elaboraciones de los amortizaciones técnicos para el control: las lógicas del control de gestión, en lo que respecta a los activos, se desvían de las contables para utilizar lógicas relacionadas, por ejemplo, con las cantidades producidas por una determinada máquina, más que un valor de recompra. Al hacer esto, se evitan distorsiones relacionadas, por ejemplo, con los criterios de amortización contables que están fuertemente influenciados por las lógicas fiscales.
 
-#### Campi specifici
+#### Campos específicos
 
-- **CODICE** della categoria
+- **codice** de la categoría
 
-- **DESCRIZIONE** della categoria
+- **descrizione** de la categoría
 
-- **SOTTOCONTO DI COSTO** e **SOTTOCONTO DEL FONDO** da utilizzare: potrebbero essere gli stessi sottoconti associati alle categorie cespiti contabili, al fine di operare a fine anno i conguagli tra le due logiche di calcolo, piuttosto che sottoconti specifici del controlling che non sono utilizzati in contabilità.
+- **SUBCUENTA DE COSTO (SOTTOCONTO DI COSTO)** y **SUBCUENTA DEL FONDO (SOTTOCONTO DEL FONDO)** a utilizar: podrían ser las mismas subcuentas asociadas a las categorías de activos contables, con el fin de operar a fin de año los ajustes entre las dos lógicas de cálculo, o subcuentas específicas del control que no se utilizan en contabilidad.
 
-:::tip nota
-Nel caso in cui si vogliano utilizzare nel controlling, in determinati casi, degli specifici sottoconti separati da quelli di contabilità generale, si consiglia di definire un *Tipo conto* specifico con il flag *Controlling* impostato, in quanto questi sottoconti non potranno essere utilizzati neanche erroneamente nelle registrazioni di contabilità generale
+:::tip Nota
+En caso de que se deseen utilizar en el control, en determinados casos, subcuentas específicas separadas de las de contabilidad general, se recomienda definir un *tipo conto* específico con el indicador *controlling* activado, ya que estas subcuentas no podrán ser utilizadas ni siquiera erróneamente en los registros de contabilidad general.
 :::
 
-- **BASE DI CALCOLO** possiamo scegliere tra:  
-    - *Valore patrimoniale*, cioè lo stesso di contabilità
-    - *Valore oggettivo*, dato extracontabile
-    - *Valore di riacquisto*, campo specifico per il controlling
+- **base di calcolo** podemos elegir entre:  
+    - *valore patrimoniale*, es decir, el mismo que el de contabilidad  
+    - *valore oggettivo*, dato extracontable  
+    - *valore di riacquisto*, campo específico para el control  
 
-- **TIPO DI CALCOLO** può essere di 5 tipologie differenti:  
-    - *Percentuale*: secondo la percentuale per il controlling impostata nel singolo cespite
-    - *Percentuale perpetua*: come la precedente ma senza verifiche sul residuo da ammortizzare
-    - *Quantità*: per i cespiti che hanno una vita utile legata ad una quantità teorica prodotta (es. uno stampo che può fare tot battute)
-    - *Quantità perpetua*: come la precedente, ma senza verificare se la quantità totale teorica è stata raggiunta
-    - *Totale nell’anno*: per ammortizzare il cespite totalmente nell’anno di acquisto.
+- **TIPO DE CÁLCULO (TIPO DI CALCOLO)** puede ser de 5 tipos diferentes:  
+    - *percentuale*: según el porcentaje para el control establecido en el activo individual  
+    - *percentuale perpetua*: como el anterior pero sin verificaciones sobre el remanente a amortizar  
+    - *quantità*: para los activos que tienen una vida útil relacionada con una cantidad teórica producida (ej. un molde que puede hacer tantas impresiones)  
+    - *quantità perpetua*: como el anterior, pero sin verificar si se ha alcanzado la cantidad total teórica  
+    - *totale nell’anno*: para amortizar el activo totalmente en el año de compra.
 
-- **PERCENTUALE** possiamo impostare la percentuale di questa categoria, che sarà riportato sul singolo cespite, oppure lasciare in bianco il campo per inserirla di volta in volta all’interno del cespite
+- **percentuale** podemos establecer el porcentaje de esta categoría, que será reportado en el activo individual, o dejar el campo en blanco para ingresarlo cada vez dentro del activo
 
-- **USA ATTUALIZZAZIONE PERCENTUALE** Il flag, riportato anche nella corrispondente tab *Ammortamento per controlling* presente nella scheda cespite, se attivato, fa si che il valore del cespite venga incrementato di anno in anno in base al valore impostato nel campo *Fattore di attualizzazione* nei ** [*Parametri di contabilità* ](/docs/configurations/parameters/finance/accounting-parameters) **.
+- **usa attualizzazione percentuale** El indicador, que también aparece en la pestaña correspondiente *ammortamento per controlling* presente en la ficha del activo, si está activado, hace que el valor del activo se incremente de año en año de acuerdo con el valor establecido en el campo *fattore di attualizzazione* en los **[Parámetros de contabilidad (Parametri di contabilità)](/docs/configurations/parameters/finance/accounting-parameters)**.
 
-- **RICREARE I VALORI DI CONTROLLO** serve tipicamente nel caso in cui non si sia certi dei criteri extracontabili da applicare al calcolo degli ammmortamenti tecnici. Dato che l'elaborazione degli ammortamenti partirà da un anno YYYY, **FluentisERP** dovrà calcolare innanzi tutto i residui a fine anno YYYY-1. Nel caso in cui si cambino percentuali o logiche, quindi, può essere necessario resettare questi dati di partenza per ripartire da capo nelle elaborazioni.
+- **ricreare i valori di controllo** sirve típicamente en caso de que no se esté seguro de los criterios extracontables que se deben aplicar al cálculo de los amortizaciones técnicos. Dado que la elaboración de los amortizaciones comenzará desde un año YYYY, **FluentisERP** deberá calcular primero los remanentes a fin de año YYYY-1. En caso de que se cambien porcentajes o lógicas, entonces puede ser necesario restablecer estos datos de partida para reiniciar los cálculos.
 
-:::danger ATTENZIONE
-Attenzione alle modifiche apportate a queste categorie: se ad esempio impostiamo un flag e salviamo la riga per confermare, **FluentisERP** ci chiederà se vogliamo aggiornare i cespiti di questa categoria. Dobbiamo fare attenzione che se confermiamo l’operazione e siamo in una categoria con calcolo percentuale ma *senza la percentuale impostata*, il sistema andrà a resettare anche le percentuali nei cespiti
+:::danger ATENCIÓN
+Atención a las modificaciones realizadas en estas categorías: si por ejemplo activamos un indicador y guardamos la línea para confirmar, **FluentisERP** nos preguntará si deseamos actualizar los activos de esta categoría. Debemos tener cuidado de que si confirmamos la operación y estamos en una categoría con cálculo porcentual pero *sin el porcentaje establecido*, el sistema también irá a restablecer los porcentajes en los activos.
 :::
 
 :::tip Nota
-Le categorie inserite in questa tabella, con i relativi settaggi, saranno poi richiamate all'interno delle [**schede cespite**](/docs/finance-area/fixed-assets/fixed-assets-management) nella tab *Ammortamento per controlling*, per associare il singolo cespite alla categoria.
-
+Las categorías ingresadas en esta tabla, con los ajustes correspondientes, serán luego referenciadas dentro de las [**fichas de activos (schede cespite)**](/docs/finance-area/fixed-assets/fixed-assets-management) en la pestaña *ammortamento per controlling*, para asociar el activo individual a la categoría.
 :::
