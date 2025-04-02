@@ -96,14 +96,14 @@ Estos datos pueden ser ingresados manualmente o automáticamente (en caso de que
 
 #### Botones específicos
 
-importar DeleteCostCenter from './../../import/buttons/delete-cc.md'
-importar DeleteProfitCenter from './../../import/buttons/delete-pc.md'
+import DeleteCostCenter from './../../import/buttons/delete-cc.md'
+import DeleteProfitCenter from './../../import/buttons/delete-pc.md'
 
 > <DeleteCostCenter />
 > <DeleteProfitCenter />
 
 ### 2.4 Datos extra
 
-importar DocItemExtraData from './../../import/sections/doc-item-extradata.md'
+import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />

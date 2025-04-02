@@ -41,7 +41,7 @@ En los Documentos de tipo:
 
 el código del tipo de pedido se indica en el elemento “OrderTypeCode”, como se muestra en el siguiente ejemplo: 
 
-<cbc:OrderTypeCode>220</cbc:OrderTypeCode>             
+< cbc:OrderTypeCode>220< /cbc:OrderTypeCode>             
 
 En los Documentos de tipo:       
 
@@ -49,7 +49,7 @@ En los Documentos de tipo:
 
 el código del tipo de pedido se indica en el campo “SpecialTerms” del elemento “DeliveryTerms”, como se muestra en el siguiente ejemplo:        
 
-<cac:DeliveryTerms> <cbc:SpecialTerms>220</cbc:SpecialTerms> </cac:DeliveryTerms>
+< cac:DeliveryTerms> < cbc:SpecialTerms>220< /cbc:SpecialTerms> < /cac:DeliveryTerms>
          
 Existe una clasificación adicional de los tipos de pedido, no obligatoria.       
 Para el tipo de pedido 220 **ordine di acquisto**:      
@@ -66,14 +66,14 @@ En los Documentos de tipo:
 
 el código del sub-tipo de pedido se indica en el campo “SpecialTerms” del elemento “DeliveryTerms”, como se muestra en el siguiente ejemplo:        
 
-<cac:DeliveryTerms> <cbc:SpecialTerms>OFR</SpecialTerms> </cac:DeliveryTerms>
+< cac:DeliveryTerms> < cbc:SpecialTerms>OFR< /cbc:SpecialTerms> < /cac:DeliveryTerms>
      
 En los Documentos de tipo: 
 - Orden pre-concordada inicial y sustituto;         
 
 el código del sub-tipo de pedido se indica en el campo “SpecialTerms” del elemento “DeliveryTerms”, después del código del tipo de pedido, utilizando el formato de campos estructurados, como se muestra en el siguiente ejemplo:         
 
-<cac:DeliveryTerms> <cbc:SpecialTerms>220#OFR</SpecialTerms> </cac:DeliveryTerms>
+< cac:DeliveryTerms> < cbc:SpecialTerms>220#OFR< /cbc:SpecialTerms> < /cac:DeliveryTerms>
 
 ## Código Artículo (Codice Articolo)
 
@@ -88,13 +88,13 @@ Ejemplo:
 < cac:OrderLine>          
         < cac:LineItem>        
         < cac:Item>        
-            < cbc:Name>Pluma estilográfica</cbc:Name>        
-            < cbc:Description>Pluma estilográfica edición limitada</cbc:Description>        
+            < cbc:Name>Pluma estilográfica< /cbc:Name>        
+            < cbc:Description>Pluma estilográfica edición limitada< /cbc:Description>        
             < cac:SellersItemIdentification>           
-                < cbc:ID>Stilo24</cbc:ID>       
+                < cbc:ID>Stilo24< /cbc:ID>       
             < /cac:SellersItemIdentification>      
             < cac:StandardItemIdentification>      
-                < cbc:ID schemeID=”0160”>0K10999746</cbc:ID>       
+                < cbc:ID schemeID=”0160”>0K10999746< /cbc:ID>       
             < /cac:StandardItemIdentification>       
         < /cac:Item>       
         < /cac:LineItem>      
@@ -108,11 +108,11 @@ Para los productos farmacéuticos con el código de Autorización de Comercializ
 Para cada producto, dentro de la línea de pedido correspondiente se pueden especificar uno o más códigos de clasificación, valorando el campo “ItemClassificationCode/ID” del elemento “CommodityClassification”.  
 El valor a indicar debe ser tomado de un sistema de clasificación única seleccionado entre los que están presentes en la lista de códigos prevista por el estándar PEPPOL, como se muestra en el siguiente ejemplo:       
 
-<cac:OrderLine>        
+< cac:OrderLine>        
 < cac:LineItem>       
 < cac:Item>       
 < cac:CommodityClassification>        
-< cbc:ItemClassificationCode listVersionID=”19.0501” listID=”STI”>12345678</cbc:ItemClassificationCode>      
+< cbc:ItemClassificationCode listVersionID=”19.0501” listID=”STI”>12345678< /cbc:ItemClassificationCode>      
 < /cac:CommodityClassification>       
 < /cac:Item>       
 < /cac:LineItem>      
@@ -137,7 +137,7 @@ En las líneas de pedido, es necesario indicar la cantidad del producto especifi
 
 < cac:OrderLine> 
 < cac:LineItem> 
-< cbc:Quantity unitCode=”C62”>3</cbc:Quantity> 
+< cbc:Quantity unitCode=”C62”>3< /cbc:Quantity> 
 < /cac:LineItem> 
 < /cac:OrderLine>          
 

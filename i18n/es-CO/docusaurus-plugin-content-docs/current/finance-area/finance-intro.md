@@ -13,9 +13,7 @@ La gestión de la contabilidad está integrada con el ciclo pasivo y activo, la 
 
 ### Detalle de Funcionalidades (Dettaglio Funzionalità)
 
-```javascript
 import Link from '@docusaurus/Link';
-```
 
 <div className="cardContainer">
     <div className="card">

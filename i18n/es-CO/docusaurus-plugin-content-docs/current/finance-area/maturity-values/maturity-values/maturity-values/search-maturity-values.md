@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Esta máscara permite buscar las partidas a través de los campos presentes en el encabezado, que representan el área de filtro para los datos que se propondrán, y acceder a la modificación de cada partida con un doble clic del mouse.
 
-Campos adicionales útiles para el filtro de búsqueda están disponibles al abrir los **Expander** presentes en el encabezado. ![](/img/it-it/finance-area/maturity-values/maturity-values/image03.png)
+Campos adicionales útiles para el filtro de búsqueda están disponibles al abrir los **Expander** presentes en el encabezado.finance-area/maturity-values/maturity-values/image03.png
 
 Por defecto, se proponen las partidas abiertas (estando al abrir la máscara completado el campo **stato** del filtro con la opción Partida Abierta). Es posible visualizar todas las partidas simplemente eliminando el valor en el campo del filtro de modo que no filtre un tipo en particular.
 

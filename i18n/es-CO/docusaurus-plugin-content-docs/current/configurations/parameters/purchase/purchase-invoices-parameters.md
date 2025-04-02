@@ -21,7 +21,7 @@ La ventana está compuesta por botones y tres pestañas diferentes: *generale*, 
 
 **Lotes y S.N. (Serial Number) obligatorios (Lotti e S.N. (Serial Number) obbligatori)**: si está activo, obliga al usuario a ingresar el lote y el número de serie a nivel de línea de artículo para todos los artículos para los cuales se prevé esta gestión. Si no está activo, el lote y el número de serie no son datos obligatorios y será posible guardar el documento sin haberlos ingresado. Se recomienda activar este indicador si se utiliza la gestión de artículos con lote.
 
-**ricerca prezzi articoli in tutti i listini predefiniti**: este parámetro se utiliza para la búsqueda del precio en las listas de proveedores; la búsqueda se realiza en las listas del tipo predeterminado en el registro del proveedor, incluso si las listas no son válidas (las listas válidas son aquellas que tienen una fecha de inicio de validez <= a la fecha actual y una fecha de fin de validez nula o >= a la fecha actual).
+**ricerca prezzi articoli in tutti i listini predefiniti**: este parámetro se utiliza para la búsqueda del precio en las listas de proveedores; la búsqueda se realiza en las listas del tipo predeterminado en el registro del proveedor, incluso si las listas no son válidas (las listas válidas son aquellas que tienen una fecha de inicio de validez \<= a la fecha actual y una fecha de fin de validez nula o >= a la fecha actual).
 
 **Permitir descuentos para artículos de regalo (Consentire sconti per articoli omaggio)**: si está activo, permite la inserción de descuentos en las líneas de artículos tipo regalo;
 
