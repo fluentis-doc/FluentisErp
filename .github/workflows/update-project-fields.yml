@@ -1,0 +1,377 @@
+name: Project - Update Fields
+
+on:
+  workflow_dispatch:  # Manual trigger
+   inputs:
+      project_number:
+        description: 'The Project Number (as shown in GitHub Project URL)'
+        required: true
+        type: number
+  issues:
+    types: [opened, edited]  # Trigger on issue creation or edit
+
+concurrency:
+  group: ${{ github.event_name == 'issues' && github.event.action == 'opened' && github.run_id || 'update-project-progress' }}
+  cancel-in-progress: ${{ github.event_name != 'issues' || github.event.action != 'opened' }}
+
+jobs:
+  update_project_fields:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug GitHub Token Permissions
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/orgs/Adi-Fluentis/projects
+
+      - name: Update Progress, Weight & Completed Weight
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            let projectNumber;
+            const REQUIRED_LABEL = "review-auto-translation"; // Change this if you want a different label
+            const repo = context.repo;
+            const owner = repo.owner;
+            const repoName = repo.repo;
+
+            if (context.eventName === "workflow_dispatch") {
+              // Accept project number as input from workflow_dispatch
+              console.log("🌐 Inputs received via workflow_dispatch:");
+              console.log(context.payload.inputs); // log all inputs for debugging
+
+              const rawInput = context.payload.inputs.project_number;
+              console.log("📥 Raw input project_number:", rawInput);
+
+              projectNumber = parseInt(rawInput, 10);
+              if (!projectNumber || isNaN(projectNumber)) {
+                console.log("❌ No project number provided for manual run. Exiting.");
+                return;
+              }
+
+              console.log(`⚙️ Running manually with project number #${projectNumber}`);
+            } else if (context.eventName === "issues") {
+              const issue = context.payload.issue;
+              const issueNodeId = issue.node_id;
+
+              console.log("🔎 Searching user-level projects to find one linked to this issue...");
+
+              // Fetch user's projects
+              const userProjectsResponse = await github.graphql(`
+                query($login: String!) {
+                  user(login: $login) {
+                    projectsV2(first: 10) {
+                      nodes {
+                        id
+                        number
+                        title
+                        items(first: 50) {
+                          nodes {
+                            content {
+                              ... on Issue {
+                                id
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              `, { login: owner });
+
+              const projects = userProjectsResponse.user.projectsV2.nodes;
+
+              let foundProject = null;
+
+              for (const proj of projects) {
+                const itemMatch = proj.items.nodes.find(item => item.content?.id === issueNodeId);
+                if (itemMatch) {
+                  foundProject = proj;
+                  break;
+                }
+              }
+
+              if (!foundProject) {
+                console.log("❌ Issue is not linked to any user-level project. Skipping.");
+                return;
+              }
+
+              console.log(`✅ Found project '${foundProject.title}' (number: ${foundProject.number}) containing this issue.`);
+              projectNumber = foundProject.number;
+            }
+
+            console.log("🔹 Fetching all issues in the project...");
+
+            // Fetch the project and all issues (User-Level Project)
+            const projectsResponse = await github.graphql(`
+            query($owner: String!, $projectNumber: Int!) {
+              user(login: $owner) {  
+                projectV2(number: $projectNumber) {  
+                  id  
+                  items(first: 50) {   
+                    nodes {
+                      id
+                      content {
+                        ... on Issue {
+                          number
+                          title
+                          body
+                          labels(first: 10) {
+                            nodes { name }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }`, { owner, projectNumber: projectNumber }); 
+
+
+            // ✅ Extract Project ID (Fix for User-Level Project)
+            const projectId = projectsResponse.user?.projectV2?.id;  // 🔹 Use `user` instead of `repository`
+            if (!projectId) {
+                console.log("❌ Project ID not found. Skipping update.");
+                return;
+            }
+            console.log("✅ Found Project ID:", projectId);
+
+            const projectItems = projectsResponse.user?.projectV2?.items?.nodes || [];
+
+            console.log(`✅ Found ${projectItems.length} issues in project.`);
+
+            // ✅ Step 1: Fetch Project Fields
+            const fieldsResponse = await github.graphql(`
+            query($projectId: ID!) {
+              node(id: $projectId) {
+                ... on ProjectV2 {
+                  fields(first: 20) {
+                    nodes {
+                      __typename
+                      ... on ProjectV2FieldCommon {
+                        id
+                        name
+                      }
+                      ... on ProjectV2SingleSelectField {
+                        id
+                        name
+                        options {
+                          id
+                          name
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }`, { projectId });
+
+            let weightFieldId = null;
+            let completedWeightFieldId = null;
+            let progressFieldId = null;
+            let endDateFieldId = null;
+            let statusField = null;
+            let inProgressStatusOptionId = null;
+
+            fieldsResponse.node.fields.nodes.forEach(field => {
+                if (field.name === "Weight") weightFieldId = field.id;
+                if (field.name === "Completed Weight") completedWeightFieldId = field.id;
+                if (field.name === "Progress") progressFieldId = field.id;
+                if (field.name === "End Date") endDateFieldId = field.id;
+                if (field.name === "Status") statusField = field;
+            });
+
+            if (!weightFieldId || !completedWeightFieldId || !progressFieldId || !endDateFieldId || !statusField) {
+                console.log("❌ Missing one or more field IDs. Skipping update.");
+                return;
+            }
+
+            if (statusField && statusField.__typename === "ProjectV2SingleSelectField" && statusField.options) {
+            statusField.options.forEach(option => {
+                if (option.name === "In Progress") {
+                    inProgressStatusOptionId = option.id;
+                }
+            });
+            } else {
+                console.log("❌ 'Status' field does not have selectable options or is of incorrect type.");
+            }
+
+            if (!inProgressStatusOptionId) {
+                console.log("❌ 'In Progress' option not found.");
+                return;
+            }
+
+            // ✅ Function to process a single issue
+            async function processIssue(issue, itemId) {
+                if (!itemId) {
+                    console.log(`❌ itemId is not defined for issue: ${issue.number}`);
+                    return;
+                }
+
+                if (!issue || !issue.body) {
+                    console.log(`❌ Skipping Issue #${issue?.number || "Unknown"} - No content.`);
+                    return;
+                }
+
+                const labels = issue.labels?.nodes?.map(label => label.name) ?? issue.labels?.map(label => label.name) ?? [];
+
+                console.log(`🔎 Debug: Labels on Issue #${issue.number}:`, labels);  // 🛠 Add this debug line
+
+                if (!labels.includes(REQUIRED_LABEL)) {
+                    console.log(`❌ Skipping Issue #${issue.number} - Missing 'review' label.`);
+                    return;
+                }
+
+                console.log(`🔹 Processing Issue #${issue.number}: ${issue.title}`);
+
+                // Extract estimated word count
+                const wordCountMatch = issue.body.match(/\*\*\s*Estimated Word Count\s*\*\*:\s*(\d+)/);
+                const totalWords = wordCountMatch ? parseInt(wordCountMatch[1], 10) : 0;
+
+                if (totalWords === 0) {
+                    console.log("❌ No word count found, skipping update.");
+                    return;
+                }
+
+                console.log("📊 Total Words in Issue:", totalWords);
+
+                // Find completed tasks and sum words
+                let completedWords = 0;
+                const allTasks = issue.body.match(/- \[[x]\] (.*?) \| (\d+)/g) || [];
+
+                allTasks.forEach(task => {
+                    const match = task.match(/- \[[x]\] .*? \| (\d+)/);
+                    if (match) {
+                        completedWords += parseInt(match[1], 10);
+                    }
+                });
+
+                console.log("✅ Completed Words:", completedWords);
+
+                // Compute percentage
+                const progressPercent = totalWords > 0 ? Math.round((completedWords / totalWords) * 100) : 0;
+                console.log("📊 Progress Calculated:", progressPercent, "%");
+
+                // ✅ Update Fields in GitHub Project
+                async function updateField(fieldId, value) {
+                    await github.graphql(`
+                    mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $value: Float!) {
+                      updateProjectV2ItemFieldValue(input: {
+                        projectId: $projectId,
+                        itemId: $itemId,
+                        fieldId: $fieldId,
+                        value: { number: $value }
+                      }) {
+                        projectV2Item {
+                          id
+                        }
+                      }
+                    }`, { projectId, itemId, fieldId, value });
+                }
+
+                await updateField(weightFieldId, totalWords);
+                console.log("✅ Weight field updated.");
+
+                await updateField(completedWeightFieldId, completedWords);
+                console.log("✅ Completed Weight field updated.");
+
+                await updateField(progressFieldId, progressPercent);
+                console.log("✅ Progress field updated.");
+
+                // ✅ Move issue to "In Progress" only if needed
+                //if (progressPercent > 0 && progressPercent < 100 && currentStatus !== "In Progress") {
+                if (progressPercent > 0 && progressPercent < 100) {
+                    console.log("🔄 Moving issue to 'In Progress'...");
+
+                    await github.graphql(`
+                    mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $value: String!) {
+                      updateProjectV2ItemFieldValue(input: {
+                        projectId: $projectId,
+                        itemId: $itemId,
+                        fieldId: $fieldId,
+                        value: { singleSelectOptionId: $value }
+                      }) {
+                        projectV2Item {
+                          id
+                        }
+                      }
+                    }`, { projectId, itemId, fieldId: statusField.id, value: inProgressStatusOptionId });
+
+                    console.log("✅ Issue moved to 'In Progress'.");
+                }
+
+                // ✅ Auto-Close Issue if Progress Reaches 100%
+                if (progressPercent === 100) {
+                    console.log("🚀 Issue is fully completed (100% progress). Closing issue...");
+                    await github.rest.issues.update({
+                        owner: repo.owner,
+                        repo: repo.repo,
+                        issue_number: issue.number,
+                        state: "closed"
+                    });
+                    console.log("✅ Issue successfully closed.");
+
+                    // Set End Date (Current Date)
+                    const today = new Date().toISOString().split("T")[0];
+                    console.log(`📅 Setting End Date to: ${today}`);
+
+                    await github.graphql(`
+                      mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $value: Date!) {
+                        updateProjectV2ItemFieldValue(input: {
+                          projectId: $projectId,
+                          itemId: $itemId,
+                          fieldId: $fieldId,
+                          value: { date: $value } 
+                        }) {
+                          projectV2Item {
+                            id
+                          }
+                        }
+                      }`, { projectId, itemId, fieldId: endDateFieldId, value: new Date(today) });
+
+                      console.log("✅ End Date successfully updated!");
+                }
+            }
+
+            // ✅ Run bulk processing only when triggered manually
+            if (context.eventName === "workflow_dispatch") {
+                console.log("🛠 Manually triggered - Processing all project issues...");
+                for (const item of projectItems) {
+                    const issue = item.content;
+                    const itemId = item?.id;
+                    await processIssue(issue, itemId);
+                }
+            }
+            // ✅ Processing a single issue on edit/creation
+            if (context.eventName === "issues") {
+              const issue = context.payload.issue;
+              if (issue) {
+                  console.log("🔄 Issue Updated, Recalculating Fields...");
+                  
+                  // Ensure projectItems exists before searching for the itemId
+                  let itemId = projectItems?.find(item => item.content?.number === issue.number)?.id || null;
+
+                  // If not found and the label is present, add the issue to the project
+                  const labels = issue.labels?.nodes?.map(label => label.name) ?? issue.labels?.map(label => label.name) ?? [];
+
+                  if (!itemId && labels.includes(REQUIRED_LABEL)) {
+                      console.log("➕ Issue not found in project, adding...");
+                      const addItemResponse = await github.graphql(`
+                      mutation($projectId: ID!, $contentId: ID!) {
+                        addProjectV2ItemById(input: { projectId: $projectId, contentId: $contentId }) {
+                          item { id }
+                        }
+                      }`, { projectId, contentId: issue.node_id });
+
+                      itemId = addItemResponse?.addProjectV2ItemById?.item?.id;
+                      if (!itemId) {
+                          console.log("❌ Failed to add issue to project. Skipping.");
+                          return;
+                      }
+                      console.log("✅ Issue added to project with itemId:", itemId);
+                  }
+
+                  await processIssue(issue, itemId);
+              }
+            }
