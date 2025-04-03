@@ -59,7 +59,7 @@ jobs:
               // Fetch user's projects
               const userProjectsResponse = await github.graphql(`
                 query($login: String!) {
-                  user(login: $login) {
+                  organization(login: $login) {
                     projectsV2(first: 10) {
                       nodes {
                         id
@@ -80,7 +80,7 @@ jobs:
                 }
               `, { login: owner });
 
-              const projects = userProjectsResponse.user.projectsV2.nodes;
+              const projects = userProjectsResponse.organization.projectsV2.nodes;
 
               let foundProject = null;
 
@@ -93,7 +93,7 @@ jobs:
               }
 
               if (!foundProject) {
-                console.log("❌ Issue is not linked to any user-level project. Skipping.");
+                console.log("❌ Issue is not linked to any organization-level project. Skipping.");
                 return;
               }
 
@@ -103,10 +103,10 @@ jobs:
 
             console.log("🔹 Fetching all issues in the project...");
 
-            // Fetch the project and all issues (User-Level Project)
+            // Fetch the project and all issues (organization-Level Project)
             const projectsResponse = await github.graphql(`
             query($owner: String!, $projectNumber: Int!) {
-              user(login: $owner) {  
+              organization(login: $owner) {  
                 projectV2(number: $projectNumber) {  
                   id  
                   items(first: 50) {   
@@ -129,15 +129,15 @@ jobs:
             }`, { owner, projectNumber: projectNumber }); 
 
 
-            // ✅ Extract Project ID (Fix for User-Level Project)
-            const projectId = projectsResponse.user?.projectV2?.id;  // 🔹 Use `user` instead of `repository`
+            // ✅ Extract Project ID (Fix for organization-Level Project)
+            const projectId = projectsResponse.organization?.projectV2?.id;  // 🔹 Use `organization` instead of `repository`
             if (!projectId) {
                 console.log("❌ Project ID not found. Skipping update.");
                 return;
             }
             console.log("✅ Found Project ID:", projectId);
 
-            const projectItems = projectsResponse.user?.projectV2?.items?.nodes || [];
+            const projectItems = projectsResponse.organization?.projectV2?.items?.nodes || [];
 
             console.log(`✅ Found ${projectItems.length} issues in project.`);
 
