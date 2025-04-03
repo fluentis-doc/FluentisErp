@@ -31,9 +31,11 @@ E' possibile attivare il flag per le ritenute d'acconto e la relativa tipologia 
 Per la gestione nella fattura elettronica della ritenuta d'acconto ed in particolare anche del contributo **ENASARCO** vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)
 :::
 
+**Scissione dei pagamenti**: flag per contrassegnare i soggetti nel regime dello Split Payment, siano essi privati (società quotate in borsa ecc.. soggetti al particolare regime), oppure Pubbliche Amministrazioni (in questo caso si attiverà anche il flag omonimo descritto di seguito). L'attivazione del presente flag gestisce le scadenze in fattura e imposta il calcolo delle partite a solo imponibile.
+
 ### Pubblica amministrazione / Fatturazione elettronica
 
-Il Flag **Fatturazione elettronica** determina l'adattamento dei campi di dettaglio della griglia sottostante al fine di riferirsi alla casistica della fattura elettronica P.A. oppure di fatturazione elettronica con i privati.
+Il Flag **Pubblica amministrazione** determina l'adattamento dei campi di dettaglio della griglia sottostante al fine di riferirsi alla casistica della fattura elettronica P.A. oppure di fatturazione elettronica con i privati.
 
 **Codice Ufficio / Codice destinatario**: codice *IPA* dell'ufficio pubblico destinatario della fattura oppure (flag *Fatturazione elettronica* attivo) codice *SDI* del destinatario della fattura
 
@@ -57,7 +59,7 @@ Diversamente verrà restituito un messaggio di errore in fase di generazione del
 **Data fine servizio**: definisce la data di fine del rapporto di fornitura con la pubblica amministrazione e rende non più utilizzabile questa posizione per la generazione del file telematico per la fattura elettronica.
 
 
-**Email:** spazio riservato all'indirizzo pPEC nel caso sia attiva la modalità PEC destinatario nel campo *Tipo codice*
+**Email:** spazio riservato all'indirizzo PEC nel caso sia attiva la modalità PEC destinatario nel campo *Tipo codice*
 
 **Regime fiscale**: campo necessario per la gestione delle fatture elettroniche (in particolare delle autofatture a fronte di acquisti UE o reverse charge): il dato è inserito nei tracciati telematici .xml generati da Fluentis. La combo box è collegata ad una tabella fissa contenete i possibili regimi fiscali da selezionare.
 
