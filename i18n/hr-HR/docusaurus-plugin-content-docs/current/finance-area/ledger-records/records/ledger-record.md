@@ -699,244 +699,244 @@ Amortizacija 30.000 - 15.000 = 15.000 x 3%; Amortizacija će se izračunavati do
 
 **Fondo za administrativnu obradu (redovno) / Anticipirano  / Anticipirano**: polja prihvaćaju, ovisno o vrsti amortizacije (obična, anticipirana ili usporena), zbir obračunatih rata amortizacije;  
 
-**Fond za poreznu administraciju**: popunjava se ako je aktiviran oznaka 'Fiskalni' u kategoriji osnovnog sredstva, ili može biti aktivirana na razini pojedinog retka u kartici "Amortizacija";
+**Fondo za poreznu administraciju**: popunjava se ako je aktiviran oznaka 'Fiskalni' u kategoriji osnovnog sredstva, ili može biti aktivirana na razini pojedinog retka u kartici "Amortizacija";
 
-**Alienazione**: accoglie il valore di vendita del bene e viene valorizzato in automatico tramite il campo 'Importo' della griglia superiore se il Tipo Movimento è 'Alienazione'. Sulla base di questo valore e del valore della Plusvalenza o minusvalenza sarà aggiornato il valore storico del bene da scaricare dal libro cespiti;
+**Alienacija**: prihvaća prodajnu vrijednost imovine i automatski se popunjava putem polja 'Iznos' u gornjoj tablici ako je Tip Transakcije 'Alienacija'. Na temelju ove vrijednosti i vrijednosti kapitalne dobitke ili gubitka, ažurirat će se povijesna vrijednost imovine koja se treba ispisati iz knjige imovine;;
 
-**Alienazione parziale**: accoglie il valore di vendita del bene e viene valorizzato in automatico tramite il campo 'Importo' della griglia superiore se il Tipo Movimento è 'Alienazione parziale'. Sulla base di questo valore e del valore della Plusvalenza o minusvalenza sarà aggiornato il valore storico del bene da scaricare dal libro cespiti;
+**Parcijalna alienacija**: prihvaća prodajnu vrijednost imovine i automatski se popunjava putem polja 'Iznos' u gornjoj tablici ako je Tip Transakcije 'Parcijalna alienacija'. Na temelju ove vrijednosti i vrijednosti kapitalne dobitke ili gubitka, ažurirat će se povijesna vrijednost imovine koja se treba ispisati iz knjige imovine;  
 
-**Plusvalenza**: accoglie il valore della plusvalenza di vendita del cespite e concorre al calcolo del valore storico ceduto;
+**Kapitalna dobit**: prihvaća vrijednost kapitalne dobiti od prodaje imovine i sudjeluje u izračunu povijesne vrijednosti prodane imovine;
 
-**Plusv. reinvestita**: non attivo;
+**Kapitalna dobit reinvestirana**: nije aktivno;
 
-**Rivalutazione**: aumenta il costo storico a seguito legge di rivalutazione;
+**Revalorizacija**: povećava povijesni trošak u skladu sa zakonom o revalorizaciji; 
 
-**Minusvalenza**: accoglie il valore della minusvalenza di vendita del cespite e concorre al calcolo del valore storico ceduto.
+**Kapitalni gubitak**: prihvaća vrijednost kapitalnog gubitka od prodaje imovine i sudjeluje u izračunu povijesne vrijednosti prodane imovine.  
 
-**Distruzione**: normalmente si compila a zero (in alternativa ai campi 'Alienazione' o 'Alienazione parziale'), può essere attribuito un valore per casi particolari (esempio valore di realizzo del rottame);
+**Uništenje**: obično se popunjava s nulom (umjesto polja 'Alienacija' ili 'Parcijalna alienacija'), može se dodijeliti vrijednost za posebne slučajeve (na primjer, vrijednost otpisanog otpada);  
 
-**Costo Originario ceduto**: valore storico che viene ceduto nell'ambito di un'operazione con Tipo movimento 'Alienazione' o 'Alienazione parziale' calcolato in base ai dati inseriti nei campi Alienazione, Alienazione parziale, (o Distruzione), Plusvalenza e Minusvalenza. Il campo Valore contabile sarà, parallelamente, rettificato in negativo per un importo determinato a partire dal valore originario ceduto al netto del fondo ammortamento accumulato;
+**Izvorni trošak prodane imovine**: povijesna vrijednost koja se prodaje u okviru operacije s Tipom transakcije 'Alienacija' ili 'Parcijalna alienacija' izračunava se na temelju podataka unesenih u polja Alienacija, Parcijalna alienacija, (ili Uništenje), Kapitalna dobit i Kapitalni gubitak. Polje Knjigovodstvena vrijednost bit će, paralelno, ispravljeno negativno za iznos koji je određen na temelju izvorne vrijednosti prodane imovine umanjene za akumulirani amortizacijski fond.  
 
-**IVA**: non attivo in Italia;
+**PDV**: nije aktivno u Italiji;
 
-**Assestamento**: non attivo in Italia;
+**Usklađivanje**: nije aktivno u Italiji;
 
-**Valore Euro**: controvalore in Euro se il valore è espresso in valuta o se la valuta della società è diversa da Euro;
+**Vrijednost u eurima**: protuvrijednost u eurima ako je vrijednost izražena u drugoj valuti ili ako je valuta društva različita od eura;
 
-**Sottoconto**: sottoconto del fornitore (acquisto) o Cliente (vendita) a livello di riga relativa al singolo componente (potrebbero essere acquistati o venduti a soggetti diversi);
+**Podkonto**: podračun dobavljača (kupovina) ili kupca (prodaja) na razini retka koji se odnosi na pojedini sastavni dio (mogu biti kupljeni ili prodani različitim subjektima);  
 
-**Data doc. / Nr. doc. / Prot. IVA**: riferimenti della fattura di acquisto o di vendita corrispondente alla riga del movimento in questione;
+**Datum dok./Br. dok./PDV broj**: reference na račun za kupovinu ili prodaju koji odgovara retku transakcije;  
 
-**Note**: note libere di riga;
+**Napomene**: slobodne napomene po retku;  
 
-**Progr Vend**: in caso di alienazione parziale riporta il progressivo della riga selezionata per la vendita del relativo componente;
+**Progr. prodaje**: u slučaju parcijalne alienacije prikazuje redni broj odabrane stavke za prodaju odgovarajućeg sastavnog dijela;  
 
-**Stampato**: si attiva se è stampato in definitiva il libro cespiti relativamente alla riga in questione.
+**Ispisano**: aktivira se ako je konačno ispisana knjiga imovine za dotičnu stavku.  
 
-#### OPERAZIONI ECONOMICHE:
+#### EKONOMSKI POSLOVI:
 
-(normalmente non utilizzata), serve per collegare alla scheda cespite un costo che non va capitalizzato (perché non pluriennale).
+(uglavnom se ne koristi), služi za povezivanje s karticom imovine troška koji se ne kapitalizira (jer nije dugoročni).  
 
-I dati contenuti in questo tab vengono valorizzati se nella griglia superiore viene inserita una riga con Tipo movimento 'Operazioni economiche'
+Podaci sadržani u ovoj kartici popunjavaju se ako u gornjoj tablici bude unesena stavka s Tipom transakcije 'Ekonomski poslovi'.  
 
-I campi sono simili a quelli presenti nella tab Operazioni patrimoniali
+Polja su slična onima u kartici Imovinske transakcije. 
 
-#### AMMORTAMENTI:
+#### AMORTIZACIJE:
 
-Normalmente non utilizzata all'interno della registrazione contabile, poiché l'ammortamento può essere più comodamente gestito tramite la relativa procedura automatica nell'ambito delle scritture di assestamento, oppure, per singolo cespite, dall'interno della scheda cespite (nell'apposita griglia che ricalca i campi presenti nella tab in commento).
+Obično se ne koristi unutar računovodstvenog zapisivanja, jer se amortizacija lakše upravlja putem odgovarajuće automatske procedure unutar knjiženja usklađenja, ili, za pojedinu imovinu, unutar kartice imovine (u odgovarajućoj tablici koja replicira polja prisutna u komentiranoj kartici).  
 
-Nel caso si desideri, nell'ambito di una registrazione di prima nota, effettuare l'ammortamento (per quanto riguarda la scheda cespite, la parte contabile sarà gestita nel tab Registrazione) occorrerà richiamare il cespite esistente da ammortizzare tramite il tasto **Seleziona un cespite esistente** che farà comparire la riga relativa nella griglia superiore, assicurarsi che il Tipo operazione sia *F.do Ammortamento Ordinario*, se non già previsto nelle impostazioni della causale, inserire nel campo **Importo** il valore dell'ammortamento annuale da registrare, quindi nella tab *Ammortamenti* indicare l'anno dell'ammortamento (campo **Anno**) e compilare manualmente i campi obbligatori della griglia:
+U slučaju da se želi, unutar zapisivanja početnog unosa, izvršiti amortizacija (što se odnosi na karticu imovine, računovodstveni dio bit će upravljan u kartici Zapis), potrebno je pozvati postojeći imovinski predmet za amortizaciju putem tipke **Odaberi postojeći imovinski predmet** koji će prikazati odgovarajući redak u gornjoj tablici, osigurati da je Tip transakcije *Obično amortiziranje*, ako već nije predviđeno u postavkama predloška, unijeti u polje **Iznos**vrijednost godišnje amortizacije koju treba zabilježiti, zatim u kartici *Amortizacije* označiti godinu amortizacije (polje **Godina**) i ručno ispuniti obavezna polja u tablici:  
 
-**Progressivo**: permette id selezionare tramite combo box la riga della scheda cespite da ammortizzare (l'unico presente se non vi sono componenti aggiuntivi o incrementi del cespite);
+**Progressivno**: omogućuje odabir putem kombiniranog okvira reda kartice imovine za amortizaciju (jedini redak ako nema dodatnih komponenti ili povećanja imovine);
 
-**Anno**: Confermare l'anno dell'ammortamento;
+**Godina**: Potvrditi godinu amortizacije;
 
-**Tipo di Ammortamento**: Ordinario, anticipato o decelerato;
+**Tip amortizacije**: Obično, unaprijed, ili dekelerirano;  
 
-**Conto / sottoconto / descrizione quota ammortamento**: normalmente richiamato in automatico tramite la categoria cespite della riga caricata nella griglia superiore;
+**Konto / podkonto / opis kvote amortizacije**: obično se automatski poziva prema kategoriji imovine reda učitanog u gornjoj tablici;  
 
-**Conto / sottoconto / descrizione fondo ammortamento**: normalmente richiamato in automatico tramite la categoria cespite della riga caricata nella griglia superiore;
+**Konto / podkonto / opis fonda amortizacije**: obično se automatski poziva prema kategoriji imovine reda učitanog u gornjoj tablici;
 
-**Imponibile**: valore del cespite (storico) sul quale è calcolato l'ammortamento applicando la **Percentuale** (o aliquota di ammortamento);
+**Osnovica**: vrijednost imovine (povijesna) na temelju koje se izračunava amortizacija primjenom **Postotka** (ili stope amortizacije);
 
-**Giorni di possesso**: sui quali viene calcolato l'ammortamento se nelle impostazioni della categoria cespite corrispondente è stato scelto il calcolo sui giorni (con apposito flag);
+**Dani posjedovanja**: na temelju kojih se izračunava amortizacija ako su u postavkama odgovarajuće kategorije imovine odabrani dani (s odgovarajućom tipkom);  
 
-**Costo**: risultato del calcolo imponibile * Percentuale * giorni possesso / 365 (può essere forzato manualmente).
+**Trošak**: rezultat izračuna osnovica * postotak * dani posjedovanja / 365 (može se ručno podesiti).  
 
-**Contab**: flag contabilizzato, attribuisce alla registrazione la qualifica di contabilizzata impedendone la sovrascrittura, senza questo flag non potrà essere elaborato un ammortamento successivo.
+**Računovodstveno**: flag "kontabilizirano", dodjeljuje registraciji status kontabilizirane i sprečava njezino prebrisivanje; bez ove tipke kasnija amortizacija neće moći biti obrađena.
 
-**Fiscale**: flag che identifica l'ammortamento ai fini fiscali ed andrà ad incrementare il fondo fiscale nel relativo campo, distinto da quello civilistico / contabile.
+**Porezno**: flag označava amortizaciju za porezne svrhe i povećava porezni fond u odgovarajućem polju, odvojenom od civilnog / računovodstvenog.
 
-**Ammortamento deducibile** / **Ammortamento indeducibile**: campi valorizzati automaticamente con le quote deducibile e indeducibile dell'ammortamento, se nella **[categoria cespite](/docs/configurations/tables/finance/fixed-asset-category)** relativa è stato valorizzato il campo Tipo deduc. , a sua volta collegato alla tabella **[Tipi deducibilità](/docs/configurations/tables/finance/deductibility-types)** dove viene definita la percentuale di deducibilità. Diversamente possono essere valorizzati manualmente.
+**Amortizacija odbitna / Amortizacija neodbitna**: polja se automatski popunjavaju s odbitnim i neodbitnim iznosima amortizacije, ako je u **[kategoriji imovine](/docs/configurations/tables/finance/fixed-asset-category)** postavljeno polje Tip odbitnosti, i zauzvrat povezano s tablicom **[Vrste odbitnosti](/docs/configurations/tables/finance/deductibility-types)**  gdje se definira postotak odbitnosti. Inače se mogu ručno popuniti.
 
-Nella tab Operazioni patrimoniali il tipo operazione F.do Amm. Ordinario avrà già aggiornato la riga del libro cespiti che incrementa il fondo ammortamento e riduce per pari importo il valore netto contabile del bene.
+U kartici Imovinske transakcije tip transakcije Obično amortiziranje već će ažurirati redak knjige imovine koji povećava fond amortizacije i smanjuje neto računovodstvenu vrijednost imovine za isti iznos.  
 
-#### GESTIONE DATI OGGETTIVI:
+#### UPRAVLJANJE PODACIMA OBNOVLJIVIH IMOVINSKIH PREDMETA:
 
-Questo tab permette di gestire i dati utili per l'ammortamento oggettivo (tecnico extracontabile - oppure fiscale) che possono essere elaborati parallelamente all'ammortamento civilistico.
+Ova kartica omogućuje upravljanje podacima korisnim za tehničku (izvanračunovodstvenu ili poreznu) amortizaciju, koji se mogu obrađivati paralelno s računovodstvenom amortizacijom.  
 
-Per prima cosa all'interno della tabella delle **[Categorie cespite](/docs/configurations/tables/finance/fixed-asset-category)** dovrà essere attivato il relativo flag per recepire i dati all'interno della scheda cespite.
+Prvo, unutar tablice **[Kategorije imovine](/docs/configurations/tables/finance/fixed-asset-category)** mora biti aktivirana odgovarajuća tipka za prijem podataka unutar kartice imovine.  
 
-Quindi inserendo la registrazione contabile relativa, ad esempio, all'acquisto del cespite, nella presente tab saranno riportati in automatico i dati (che possono essere poi modificati indipendentemente da quelli patrimoniali ufficiali) utili per gli ammortamenti oggettivi.
+Zatim, unoseći računovodstveni zapis koji se odnosi, na primjer, na kupnju imovine, podaci će se automatski prikazati u ovoj kartici (koji se zatim mogu neovisno mijenjati od službenih računovodstvenih podataka) korisni za tehničke amortizacije.  
 
-I campi della tab ricalcano infatti quelli presenti nella tab 'Operazioni patrimoniali'. La tab 'Ammortamenti', invece, è utilizzata esclusivamente per registrazioni di tipo contabile / civilistico, quindi la gestione degli ammortamenti tecnici (extracontabili) potrà essere eseguita soltanto entrando nelle scheda cespite (Amministrazione > Cespiti > Cespiti > doppio click per entrare).
+Polja u ovoj kartici zapravo repliciraju ona koja se nalaze u kartici "Imovinske transakcije". Kartica "Amortizacije", s druge strane, koristi se isključivo za računovodstvene / civilne upise, tako da se upravljanje tehničkim (izvanračunovodstvenim) amortizacijama može izvršiti samo ulaskom u karticu imovine (Administracija > Imovina > Imovina > dvostruki klik za ulazak).  
 
-#### CENTRI DI COSTO - COMMESSE:
+#### CENTRI TROŠKOVA - PROJEKTI  
 
-Questo tab (**visibile solo quando NON sono attive le funzioni avanzate per il controlling**) gestite dal flag *Gestione controlling* nella tabella Società è riservato all'imputazione del centro di costo / profitto (oggi centro aziendale)  e della commessa (oggi Progetto) da collegare alla scheda cespite che verrà creata con la registrazione contabile che si sta inserendo.
+Ova kartica (**vidljiva samo kada NISU aktivirane napredne funkcije za Kontroling**) upravljane flagom *Upravljanje kontrolingom * u tablici Društvo, rezervirana je za unos centra troška / profita (danas centar poduzeća) i projekta (danas Projekt) koji se povezuju s karticom imovine koja će biti kreirana s računovodstvenim zapisom koji se unosi.  
 
-In particolare il centro che verrà collegato alla scheda cespite con la registrazione (e che è possibile inserire anche manualmente direttamente nella scheda, nella tab 'Dettaglio' della stessa) rappresenta una eccezione, valida per quel cespite, rispetto al dato inserito nella categoria cespite alla quale la scheda inserita fa riferimento, nella tabella Categorie cespite.
+Konkretnije, centar koji će biti povezan s karticom imovine uz zapis (a koji se može unijeti i ručno izravno u karticu, u kartici 'Detalji' iste) predstavlja iznimku, specifičnu za tu imovinu, u odnosu na podatke unesene u kategoriju imovine kojoj pripada kartica unesena u tablici Kategorije imovine.
 
-**Il centro di costo inserito sarà valorizzato al momento del calcolo (da parte della procedura automatica) dell'ammortamento.**
+**Uneseni centar troška bit će vrednovan u trenutku izračuna (od strane automatskog postupka) amortizacije.**
 
-:::tip NOTA:
-Nel caso in cui siano attive le funzioni avanzate per il controlling la gestione del centro aziendale e del progetto a cui agganciare le quote di ammortamento sarà definita in una apposita tab **Ammortamento per controlling** all'interno della scheda cespite.
+:::tip NAPOMENA:
+Ako su aktivirane napredne funkcije za kontroling, upravljanje centrom poduzeća i projektom na koji će se povezati kvote amortizacije bit će definirano u posebnoj kartici **Amortizacija za controling** unutar kartice imovine. 
 :::
 
-**Cdc**: combo box necessaria per richiamare il centro e collegata con la tabella **[Centri aziendali;](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)**
+**Cdc**: kombinirani okvir potreban za odabir centra, povezan s tablicom **[Centri poduzeća;](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)**
 
-**Descrizione**: Descrizione del centro richiamato tramite il campo precedente;
+**Opis**: Opis odabranog centra putem prethodnog polja;
 
-**Percentuale**: percentuale di attribuzione al centro inserito nella riga in uso (esempio, in caso di attribuzione totalmente a quel centro indicare 100%, se invece il costo relativo alla quota ammortamento sarà ripartito su due centri si inseriranno die righe ognuna con ripartizione al 50%).
+**Postotak**: postotak dodijeljen centru unesenom u redak koji se koristi (na primjer, ako je cijeli trošak dodijeljen tom centru, unosi se 100%, ako se trošak za amortizacijsku kvotu dijeli na dva centra, unose se dva retka, svaki s podjelom od 50%).  
 
-**La griglia riservata all'inserimento del Progetto** (Commessa) non viene aggiornata e non interagisce con il campo 'Progetto' in testata registrazione e/o la tab 'Progetti' (dedicati alla gestione dei costi ordinari di esercizio anziché quelli pluriennali) infatti tale griglia è dedicata, così come per i centri aziendali, ad indicare il progetto che dovrà essere riportato nella scheda cespite e sul quale andranno imputate le quote di ammortamento calcolate.
+**Mreža rezervirana za unos projekta** ne ažurira se i ne povezuje s poljem 'Projekt' u zaglavlju zapisa i/ili kartici 'Projekti' (koji su posvećeni upravljanju običnim operativnim troškovima, a ne dugoročnim troškovima). Naime, taj grid je posvećen, kao i za centre poduzeća, za označavanje projekta koji će biti unesen u karticu imovine i na koji će se dodijeliti kvote amortizacije.
 
-**Progetti**: widget per l'inserimento del progetto (con doppio click si apre l'help di ricerca, oppure iniziando a scrivere nel campo si attiva la ricerca rapida); il campo è collegato alla tabella Progetti
+**Projekti**: widget za unos projekta (dvostruki klik otvara pomoć za pretragu, ili početak pisanja u polje aktivira brzu pretragu); polje je povezano s tablicom Projekti.  
 
-**Percentuale**: percentuale di attribuzione al progetto inserito nella riga in uso (esempio, in caso di attribuzione totalmente a quel progetto indicare 100%, se invece il costo relativo alla quota ammortamento sarà ripartito su due progetti si inseriranno die righe ognuna con ripartizione al 50%).
+**Postotak**: postotak dodijeljen projektu unesenom u redak koji se koristi (na primjer, ako je cijeli trošak dodijeljen tom projektu, unosi se 100%, ako se trošak za amortizacijsku kvotu dijeli na dva projekta, unose se dva retka, svaki s podjelom od 50%).  
 
-## PROCEDURA PER VENDITA CESPITE
+## POSTUPAK ZA PRODAJU IMOVINE
 
-- Inserire una causale contabile adeguatamente configurata con la funzione Cespiti ed il tipo operazione corretto, ad esempio alienazione totale
-- Compilare la testata registrazione come di consueto con il cliente ed i dati fattura compreso il totale
-- Nel tab Cespiti utilizzare il comando **seleziona cespite esistente** per richiamare la scheda dl cespite venduto
-- Nella griglia superiore indicare nel campo **Importo** l'imponibile del valore di vendita pattuito con il cliente (indicare zero se il cespite viene donato o distrutto)
-- Nella griglia inferiore il valore del fondo ammortamento accumulato viene stornato in automatico e , per differenza, viene compilato automaticamente il campo plusvalenza o minusvalenza
-- Se la causale è correttamente configurata (consigliabile causale standard) la sezione contabile è correttamente già completa con i dati iva e contabili compreso lo storno del costo storico, del fondo ammortamento e la rilevazione della plus/minusvalenza.
+- Unesite odgovarajući računovodstveni uzrok pravilno konfiguriran s funkcijom Imovina i ispravnim tipom transakcije, na primjer, potpuna prodaja.  
+- Ispunite zaglavlje zapisa kao i obično s podacima o kupcu i fakturi, uključujući ukupni iznos.  
+- U kartici Imovina koristite naredbu **odaberi postojeći imovinski predmet** kako biste pozvali karticu prodane imovine.  
+- U gornjoj tablici unesite u polje **Iznos** osnovicu od vrijednosti prodaje dogovorenu s kupcem (unesite nulu ako je imovina darovana ili uništena).  
+- U donjoj tablici vrijednost akumuliranog fonda amortizacije automatski će biti stornirana i, razlika, automatski će ispuniti polje za plusvalenciju ili minusvalenciju.
+- Ako je predložak pravilno konfiguriran (preporučuje se standardni uzrok), računovodstvena sekcija bit će ispravno popunjena podacima o PDV-u i računovodstvenim podacima, uključujući storniranje povijesnog troška, fonda amortizacije i evidentiranje plus/minusvalencije.
 
-## ALTRO
+## DRUGO
 
-In caso di alienazione parziale (sempre per un cespite ‘incrementale' o in caso di alienazione parziale non collegata per un non incrementale) l'utente dovrà integrare la riga dell'operazione parziale con gli importi di storno dei fondi (con segno negativo quindi) e valorizzare la minusvalenza o plusvalenza relativa: tali importi saranno poi da inserire anche all'interno della scheda ‘registrazione' per la contabilità generale. Negli altri casi, invece, l'applicativo avrà aggiornato correttamente la scheda cespite, avrà inserito il movimento anche all'interno della sezione Iva della registrazione e da qui avrà aggiornato la registrazione relativa. Nel caso di alienazione, in particolare, se sono stati codificati i sottoconti di minusvalenza e plusvalenza sia all'interno della causale che nei parametri di contabilità, saranno state aggiunte anche le righe relative all'operazione di vendita (una riga di storno del totale patrimoniale attivo, una o più righe di storno dei fondi ammortamento e per differenza la minusvalenza/plusvalenza).
+U slučaju parcijalne prodaje (uvijek za imovinu ‘povećanu' ili u slučaju parcijalne prodaje koja nije povezana za nepovećanu imovinu), korisnik mora dopuniti redak parcijalne transakcije sa storniranim iznosima fondova (s negativnim predznakom) i odrediti odgovarajući minusvalenciju ili plusvalenciju: ti će se iznosi zatim morati unijeti i unutar kartice ‘zapis’ za opću računovodstvenu evidenciju. U drugim slučajevima, aplikacija će ispravno ažurirati karticu imovine, unijeti transakciju i unutar sekcije PDV-a zapisa, te ažurirati odgovarajući zapis. U slučaju prodaje, posebno, ako su podkonti za minusvalenciju i plusvalenciju kodirani kako unutar uzroka tako i u računovodstvenim parametrima, bit će dodani i odgovarajući redovi za prodajnu transakciju (jedan red za storniranje ukupne aktive, jedan ili više redova za storniranje amortizacijskih fondova i razlika za minusvalenciju/plusvalenciju).  
 
-Ulteriori operazioni attivabili nella scheda cespiti: al momento del caricamento di un nuovo cespite è possibile procedere a suddividerlo in N schede differenti. È possibile, infatti, che l'acquisto sia relativo ad un numero di cespiti identici, come ad esempio 5 computer uguali: l'utente, invece, di caricare 5 cespiti manualmente, potrebbe procedere a caricarne uno per il totale e poi suddividerlo in 5 parti uguali automaticamente con l'apposito pulsante (una scelta ulteriore potrebbe essere creare un singolo cespite che si compone di 5 cespiti: questo, se da un lato semplifica la situazione a libro cespiti, dall'altro crea una certa difficoltà poi a gestire le alienazioni cespiti, in quanto saranno da gestire manualmente come alienazioni parziali).
+Dodatne operacije koje se mogu aktivirati u kartici imovine: prilikom unosa novog imovinskog predmeta moguće je podijeliti ga u N različitih kartica. Naime, može biti slučaj da je kupnja povezana s više identičnih imovinskih predmeta, kao što je 5 jednakih računala: korisnik, umjesto da ručno unosi 5 imovinskih predmeta, može unijeti jedan za ukupnu vrijednost, a zatim ga automatski podijeliti u 5 jednakih dijelova pomoću odgovarajuće tipke (dodatni izbor mogao bi biti stvaranje jedne kartice imovine koja se sastoji od 5 imovinskih predmeta: ovo, s jedne strane, pojednostavljuje situaciju u knjizi imovine, no s druge strane stvara određene poteškoće u upravljanju prodajama imovine jer će se morati ručno upravljati kao parcijalne prodaje).
 
-È possibile cancellare la riga cespite inserita nella griglia superiore: in questo caso sarà eseguito un messaggio di conferma della cancellazione anche dell'anagrafica cespite, per il quale il default è su ‘No' (il messaggio viene eseguito anche al momento di chiudere la registrazione senza salvare). Si raccomanda di fare particolare attenzione al messaggio, al fine di non lasciare schede cespiti ‘vuote' all'interno del database.
+Moguće je obrisati uneseni redak imovine u gornjoj tablici: u tom će slučaju biti prikazan poruka za potvrdu brisanja i anagrafske kartice imovine, čiji je zadani odgovor ‘Ne’ (poruka se također prikazuje prilikom zatvaranja zapisa bez spremanja). Preporučuje se posebna pažnja prilikom obrade poruke kako se ne bi ostavile prazne kartice imovine unutar baze podataka.
 
-#### Pulsanti specifici  
-> **Seleziona un cespite esistente**: permette di selezionare un cespite già esistente e rilevare una nuova operazione al suo interno.  
-> **Cancella cespite**: permette di cancellare il cespite selezionato.  
-> **Cancella i dati selezionati dalla griglia tipo ammortamento**: permette di cancellare la riga selezionata all'interno della griglia (inferiore) contenuta nella tab Ammortamenti  
+#### Specifične tipke
+> **Odaberi postojeći imovinski predmet**: omogućuje odabir već postojećeg imovinskog predmeta i unos nove transakcije u okviru njega.    
+> **Izbriši imovinski predmet**: omogućuje brisanje odabranog imovinskog predmeta.  
+> **Izbriši odabrane podatke iz tablice vrste amortizacije**: omogućuje brisanje odabranog retka unutar tablice (donje) koja se nalazi u kartici Amortizacije.  
 
 ## **8. Parametri**
 
-Il tab **Parametri** è sempre presente in una registrazione contabile, riporta una serie di informazioni e parametri utili ma non strettamente necessari per l'inserimento di una registrazione. 
+Kartica **Parametri** uvijek je prisutna u računovodstvenoj evidenciji i sadrži niz informacija i parametara koji su korisni, ali nisu nužni za unos zapisnika.  
 
-**Stato registrazione**: *definitivo* o *provvisorio* per la registrazione contabile in uso: la registrazione con stato ‘definitiva' continuerà ad essere modificabile (in tutto tranne che nella causale e divisa di riferimento) finché non sarà stato stampato in definitivo un libro fiscale obbligatorio oppure la stessa non sarà stata utilizzata in una chiusura automatica conti. L'uso dello stato ‘provvisorio' della registrazione (che andrà a togliere e disabilitare il protocollo IVA e a numerare negativamente da -1000 la registrazione) può essere utilizzato per rilevare in contabilità fatture da pagare in via anticipata oppure altri tipi di operazione periodica a manifestazione futura (tipo canoni posticipati). Entrare nella registrazione ad inserire nuovamente lo stato definitivo andrà a riassegnare automaticamente il numero della registrazione e il protocollo Iva valido per la data registrazione impostata (fatta salva la progressività dello stesso). Si ricorda che è presente una procedura di gestione registrazioni provvisorie che consente di gestire massivamente il passaggio a registrazione definitiva di un gruppo di registrazioni provvisorie selezionate.
+**Status zapisivanja**: *definitivno* ili *privremeno* za računovodstveni zapis u upotrebi: zapis s statusom ‘definitivno’ i dalje će biti moguće mijenjati (osim u uzroku i referentnoj valuti) sve dok ne bude definitivno ispisana obavezna fiskalna knjiga ili dok ne bude korištena u automatskom zatvaranju računa. Korištenje statusa ‘privremeno’ (koji uklanja i onemogućava porezni protokol te numerira zapis negativno počevši od -1000) može se koristiti za evidentiranje računa za plaćanje unaprijed ili drugih vrsta periodičnih transakcija s budućim manifestacijama (poput odgođenih naknada). Ulazak u zapis i ponovno postavljanje statusa definitivan automatski će ponovno dodijeliti broj zapisa i važeći porezni protokol za postavljeni datum zapisivanja (uzimajući u obzir njegovu progresivnost). Podsjećamo da postoji postupak za upravljanje privremenim zapisima koji omogućava masovno prebacivanje skupine odabranih privremenih zapisa u status definitivan.
 
-I flag seguenti derivano dalla causale contabile: 
+Sljedeći flagovi proizlaze iz računovodstvenog uzroka:  
 
-**Raggruppa registro IVA** (che si consiglia di lasciare sempre attivo) va a raggruppare o meno nel giornale le righe IVA riferite allo stesso sottoconto contabile;
+**Grupiraj zapisivanje PDV-A** (preporuča se ostaviti uvijek aktivnim) grupira ili ne u dnevniku redove IVA koji se odnose na isti kontni podračun;  
 
-**Ricalcolo automatico centri di costo, di ricavo e progetti**: può essere di interesse per alcuni tipi di registrazione manuale, per le quali l'utente sia normalmente vincolato ad una gestione manuale delle schede cdc/cdp: lasciando il flag inserito, infatti, l'applicativo andrà sempre a resettare le schede citate ad ogni modifica del dato d'origine del libro giornale, cosa che potrebbe causare la perdita appunto di tutti gli inserimenti manuali effettuati. Tale automatismo, anche con flag non inserito, è comunque presente all'atto dell'inserimento della registrazione: vale infatti per l'entrata in modifica della stessa. 
+**Automatsko izračunavanje centara troškova, prihoda i projekata**:  može biti od interesa za neke vrste ručnih zapisa, kod kojih je korisnik obično vezan za ručno upravljanje karticama centara troškova/projekata (cdp/cdc): ostavljanjem flag-a uključenim, aplikacija će uvijek resetirati te kartice svaki put kada se izmijeni izvorni podatak u knjizi dnevnika, što može dovesti do gubitka svih ručnih unosa koji su prethodno napravljeni. Ovaj automatizam, čak i ako flag nije uključen, i dalje će se primijeniti prilikom unosa zapisa: odnosi se na ulazak u izmjenu istog.
 
-**In black list**: (OBSOLETO) consente di gestire il caso particolare degli acquisti extra-cee (con causale non IVA) da riepilogare nella dichiarazione operazioni con paesi a fiscalità privilegiata, collegando la registrazione attuale al movimento iva del DDT doganale dal quale leggere i valori da dichiarare.
+**Na crnoj listi**: (ZASTARJENO) omogućuje upravljanje posebnim slučajem nabava izvan EU (s poslovnim razlogom koji nije podliježe PDV-u) koji treba biti sažet u izjavi o transakcijama s zemljama s povlaštenim poreznim režimom, povezujući trenutni zapis s PDV-om iz carinskog DDT-a iz kojeg se preuzimaju podaci za prijavu.  
 
-**Data / Num. registrazione collegata**: campo obsoleto, si abilita quando è attivato il flag ‘Black list'. Serviva per le dichiarazioni black list, per legare la fattura del DDT doganale (che dava i valori da comunicare) alla registrazione del soggetto fornitore in black list.
+**Datum / Broj povezane registracije**: Koristilo se za prijavu transakcija s dobavljačima koji su na crnoj listi, povezujući Dokument o dostavi robe s registracijom dobavljača na crnoj listi kako bi se preuzeli podaci za prijavu.
 
-**Data / Num. reg. collegata a nota di accredito**: campo obsoleto; nell'area vendite, quando si crea una nota di accredito, si può indicare all'interno del documento a quale fattura fa riferimento: 
+**Datum / Broj povezane kreditne note**: zastarjeli podatak; u prodaji, kada se kreira kreditna nota, može se unijeti koja se faktura odnosi na dokument:    
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/parameters-tab/image02.png)
 
-Nell'immagine: campo per indicare il riferimento fattura all'interno della nota di accredito.
+Na slici: polje za unos reference računa unutar obavijesti o kreditiranju.
 
-Quando si contabilizza la nota di accredito, Fluentis cerca di individuare la registrazione relativa a questa fattura di origine per compilare automaticamente questo legame anche a livello di contabilità (se sei in una registrazione manuale di una nota di credito, allora puoi anche impostare questi campi a mano). Utilizzato per lo spesometro (prima del 2017) quando aveva il limite dei 3000 euro, per stornare le note di credito dalla fattura e non comunicare l'operazione. Oggi non più in uso.
+Kada se knjiži obavijest o kreditiranju, Fluentis pokušava identificirati registraciju povezanu s tim računom kako bi automatski ispunio ovu povezanost i na razini računovodstva (ako unosite obavijest o kreditiranju ručno, tada možete također ručno postaviti ova polja). Koristilo se za spesometar (prije 2017. godine), kada je postojao limit od 3000 eura, kako bi se ispravile obavijesti o kreditiranju iz računa i ne prijavljivale transakcije. Danas više nije u upotrebi.
 
 **AUDIT TRAIL**:
 
-Sezione riferita al sistema di monitoraggio attività degli utenti e verifica delle modifiche ai dati integrato nel gestionale "Audit Trail".
+Sekcija posvećena sustavu za praćenje aktivnosti korisnika i provjeru izmjena podataka integriranog u poslovni sustav "Audit Trail".  
 
-**Data Creazione / Nome**: riporta la data e il nome dell'utente che ha creato la registrazione contabile in uso;
+**Datum kreiranja / Ime**: prikazuje datum i ime korisnika koji je kreirao trenutnu računovodstvenu registraciju;  
 
-**Data ultima modifica / Nome**: riporta la data di ultima modifica e il nome dell'utente che ha modificato la registrazione contabile in uso;
+**Datum posljednje izmjene / Ime**: prikazuje datum posljednje izmjene i ime korisnika koji je izmijenio trenutnu računovodstvenu registraciju;  
 
-**Data validazione / Nome**: Riporta la data e il nome dell'utente che ha validato la registrazione contabile in uso. Il campo deve tuttavia essere reso operativo tramite un cambio stati (da configurare quando richiesto) che vada ad impostare l'utente e la data di validazione. Con il campo compilato dal cambio stati la registrazione può essere resa non più modificabile.
+**Datum validacije / Ime**: prikazuje datum i ime korisnika koji je validirao trenutnu računovodstvenu registraciju. Polje mora biti aktivirano promjenom stanja (koje se mora konfigurirati kada je potrebno), a koje će postaviti korisnika i datum validacije. Kada je polje ispunjeno promjenom stanja, registracija može biti označena kao nepodložna daljnjim izmjenama.
+  
+**Partnerov račun**: (ZASTARJELO) polje za unos (putem widgeta za pretraživanje računa) podračuna koji je već kodificiran u bazi podataka; korisno za pohranu, na primjer, imena stranog dobavljača u DDT (dobavnici) za carinske postupke, koji se obično unosi s referencom na bazu podataka s generičkim podacima za subjekt "carina" (to je zbog izmjena u zakonodavstvu vezanim uz spesometar prema kojem od 2018. godine nije bilo dopušteno prosljeđivanje podataka carine koja često nema porezne reference i koristila se umjesto OIB-a generički unos XX-99999999, gdje XX označava međunarodni ISO kod države subjekta).  
 
-**Conto Partner**: (OBSOLETO) campo per inserire (tramite il widget di ricerca conti) un sottoconto già codificato in anagrafica; utile per memorizzare, ad esempio, il nome del fornitore estero in una DDT doganale, la quale viene solitamente inserita con riferimento ad un' anagrafica con dati generici per quanto riguarda il soggetto "dogana" (ciò al fine di recepire le modifiche normative nello spesometro secondo le quali dal 2018 non era più consentito passare i dati della dogana  della quale spesso non si hanno riferimenti fiscali e si utilizzava dunque al posto della partita iva il riempitivo XX-99999999, dove XX sta per il codice ISO internazionale della nazione del soggetto)
+**Donja tablica** prikazuje eventualnu automatsku registraciju povezanu s trenutnom: svaki put kad se prva registracija izmijeni, sustav će nastaviti usklađivati drugu prema logici automatskih uzoraka.  
 
-**La griglia sottostante,** visualizza l'eventuale registrazione automatica collegata a quella in uso: ad ogni modifica della prima, infatti, la procedura continuerà ad allineare la seconda secondo la logica delle causali automatiche.
+## 9. Grupiranje stavki
 
-## 9. Raggruppamento partite  
+Upravljanje grupiranjem stavki omogućuje kreiranje, u fazi otvaranja stavki ili naknadno, grupa stavki (grupa je neka vrsta spremnika unutar kojeg se, vizualno, nalaze pojedinačne stavke).
 
-La gestione dei Raggruppamenti partite permette di creare, in fase di apertura partite oppure in un secondo tempo, dei gruppi di partite (il gruppo è una sorta di contenitore con all'interno, anche visivamente, le partite di dettaglio).
+Te grupe mogu biti potom manipulirane agregiranjem ili disaggregiranjem stavki. Tako, u fazi plaćanja, moguće je fleksibilno dodijeliti samo plaćanje na temelju grupa i njihovih povezanih detaljnih stavki.
 
-Questi gruppi possono essere poi manipolati aggregando o disaggregando le partite. Quindi in fase di pagamento è possibile assegnare il pagamento stesso in maniera flessibile rispetto ai gruppi ed alle relative partite di dettaglio.
+Ovaj tip upravljanja, očito specifičan, pogoduje onima koji rade u sektorima poput velike distribucije ili maloprodaje, ili bilo kome tko upravlja velikim brojem malih iznosa i visokim brojem stavki, gdje je povezanost između izdanih ili zaprimljenih faktura i njihovih povezanih uplata podložna velikoj fleksibilnosti, te manje stroga u usporedbi s uobičajenom operativom.
 
-Questo genere di gestione, evidentemente particolare, si addice a chi opera in settori quali la grande distribuzione o il commercio al dettaglio, o comunque a chi gestisca molteplici partite / pagamenti di piccolo importo e alta numerosità e dove il collegamento tra le fatture emesse o ricevute ed i relativi pagamenti sia soggetto ad elevata flessibilità e collegamento meno netto rispetto all'ordinaria operatività. 
+Ova funkcionalnost, kada je postavljena, ne može se koristiti zajedno s uobičajenim upravljanjem stavkama i uplatama: odabir između jednog ili drugog načina upravljanja mora biti napravljen unaprijed, pri postavljanju uzoraka računovodstvenih transakcija, s jasno definiranim karakteristikama ove vrste upravljanja.
 
-Questa funzionalità, una volta inserita, è una gestione incompatibile con la normale gestione a partite e pagamenti: la scelta tra una gestione e l'altra, quindi, va effettuata inizialmente all'atto dell'impostazione delle causali di contabilità generale con ben chiara le caratteristiche di questa gestione.
+**UPRAVLJANJE PREDLOŠKOM I REZULTAT U ZAPISU**:
 
-**GESTIONE DELLA CAUSALE CONTABILE E RISULTATO NELLA REGISTRAZIONE**:
-
-Causale di apertura partite (esempio per "Emissione fattura" o "Fattura Fornitore"): attivare i consueti flag per l'apertura partite (ed eventualmente la chiusura e compensazione), aggiungendo il flag Crea Gruppo.
+Predložak za otvaranje dospijeća plaćanja (na primjer za "Izdavanje fakture" ili "Faktura dobavljača"): aktivirati uobičajene oznake za otvaranje dospijeća plaćanja (i eventualno za zatvaranje i kompenzaciju), dodajući oznaku Kreiraj grupu.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image01.png)
 
-Nella registrazione contabile di prima nota, con la causale così modificata, in fase di inserimento della registrazione non si noteranno differenze ed il gruppo partite non sarà visibile, ma esso sarà creato con i medesimi riferimenti della partita in esso contenuta: 
+U zapisivanju poslovnog događaja, uz ovako modificirani predložak, prilikom unosa zapisa neće biti primjetnih razlika, a grupa dospijeća plaćanja neće biti vidljiva, no ona će biti kreirana s istim referencama kao i dospijeće plaćanja koje je u njoj sadržano.  
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image02.png)
 
-Per effettuare modifiche al gruppo accorpando altre partite o de-raggruppando si deve operare all'interno della maschera **[Raggruppamenti partite](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**.
+Za izvršavanje izmjena na grupi, kao što je spajanje drugih dospijeća plaćanja ili raspodjela dospijeća plaćanja, potrebno je raditi unutar ekrana **[Raspodjela dospijeća plaćanja](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image03.png)
 
-Qui l'utente potrà procedere a creare, per queste partite, uno o più nuovi gruppi partite (che prenderanno numero e data dal numero e data documento della partita che lo crea). La gestione di queste operazioni si effettua utilizzando il menù contestuale che appare premendo il pulsante destro del mouse partita per partita: 
+Ovdje će korisnik moći kreirati, za ova dospijeća plaćanja, jednu ili više novih grupa dospijeća plaćanja (koje će preuzeti broj i datum prema broju i datumu dokumenta dospijeća plaćanja koja ih stvara). Upravljanje ovim operacijama vrši se korištenjem kontekstualnog izbornika koji se pojavljuje desnim klikom miša na svako dospijeće plaćanja. 
 
-mark: per selezionare più partite/gruppi 
+mark: za selektiranje više dospijeća plaćanja/grupa
 
-crea nuovo gruppo:  per creare nuovi gruppi; 
+kreiraj novu grupu: za kreiranje novih grupa;  
 
-de-raggruppa: per sganciare una partita dal gruppo  
+de-grupiraj: za odvajanje dospijeća plaćanja iz grupe
 
-abbuoni: per creare abbuoni  e per chiudere un gruppo, 
+nadoknada:  za kreiranje nadoknada i za zatvaranje grupe,
 
-dettagli: per visualizzare i dettagli della singola partita ; 
+detalji: za prikazivanje detalja pojedinačnog dospijeća plaćanja;  
 
-suddividi partita: per suddividere la partita inserita in un gruppo . 
+podijeli dospijeće plaćanja: za podjelu dospijeća plaćanja unutar grupe.
 
-La visualizzazione dei gruppi è effettuata per il sottoconto selezionato nella griglia in alto.
+Vizualizacija grupa odvija se prema odabranom podkontu u gornjoj tablici.  
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image04.png)   ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image05.png)
 
-Con drag and drop si può spostare le partite da un gruppo all'altro
+Pomoću drag and drop metode, dospijeća plaćanja se mogu premještati iz jedne grupe u drugu.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image06.png)
 
-NOTA:
+NAPOMENA:
 
-Nel caso di contabilizzazione automatica di fatture dal modulo acquisti o vendite nelle tabelle **Tipi fatture** (in **[acquisti ](/docs/configurations/tables/purchase/purchase-invoices-type)** e **[vendite](/docs/configurations/tables/sales/invoices-type)**) c'è un flag analogo per quando si contabilizza la fattura automaticamente (Ragg. partite)
+U slučaju automatskog knjiženja faktura iz modula nabave ili prodaje, u tablicama **Vrste faktura** (U **[nabavi](/docs/configurations/tables/purchase/purchase-invoices-type)** i **[prodaji](/docs/configurations/tables/sales/invoices-type)**) postoji sličan flag za automatsko knjiženje faktura.
 
-Causale di chiusura partite: (esempio la causale "Pagamento in contanti") attivare il flag ‘Raggruppamenti partite' che rende visibile la scheda **Pagamenti gruppi.**
+Predložak za zatvaranje dospijeća plaćanja: (na primjer, "Plačanje gotovinom") aktivirati flag ‘Grupiraj dospijeća plaćanja' che rende visibile la scheda **Plaćanja grupa**.
 
-E' obbligatorio indicare il tipo pagamento corrispondente nella combo box adiacente. 
+Obavezno je odabrati odgovarajući tip plaćanja u padajućem izborniku. 
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image07.png)
 
- A questo punto l'operatività dell'utente nelle registrazioni di incasso/pagamento è completamente differente da quella di una chiusura partite normale: in questo caso, infatti, l'utente inizierà la registrazione dalla scheda **[Registrazione](/docs/finance-area/ledger-records/records/ledger-record)**, imputando direttamente un valore al pagamento/incasso (tramite la compilazione delle sezioni della prima nota), sul quale l'applicativo creerà comunque una partita dare/avere che l'utente procederà poi ad assegnare manualmente (se vuole) ad un gruppo dalla scheda ‘Pagamenti gruppi'.
+U ovom trenutku, operativni postupak za korisnika u zapisima uplata/isplata značajno se razlikuje od uobičajene obrade dospijeća plaćanja: korisnik će započeti unos u kartici **[Zapisi](/docs/finance-area/ledger-records/records/ledger-record)**, izravno unoseći iznos za uplatu/isplatu (popunjavanjem sekcija prve bilješke), a aplikacija će automatski stvoriti dospijeće plaćanja na temelju dugovanja/plaćanja, koje korisnik može kasnije ručno dodijeliti (ako želi) određenoj grupi u kartici 'Plaćanja grupe'.  
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image08.png)
 
-Operativamente l'applicativo andrà a creare, su ognuna di queste partite, i relativi pagamenti reciproci (ed è per questo che la lettura di uno scadenziario ‘standard' non sarà più chiaro e si dovrà utilizzare solo i report e le maschere di visualizzazione/gestione dei raggruppamenti per avere una visione chiara dei partitari). Quando il saldo del gruppo, per effetto delle varie partite assegnate, andrà a 0 allora il gruppo avrà passerà automaticamente allo stato ‘chiuso'.
+Aplikacija će generirati odgovarajuće međusobne uplate za svako od tih dospijeća plaćanja, te se koristi samo izvještaji i maske za prikazivanje/ upravljanje grupama kako bi se osigurao jasan pregled duga. Kada saldo grupe postane 0, grupa će automatski preći u status 'zatvoreno'.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image09.png)
 
-**NOTA: Per visualizzare i raggruppamenti selezionare con il mouse la riga nella griglia superiore.**
+**NAPOMENA: Za vizualizaciju grupiranja, odaberite red u gornjoj tablici**
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image10.png)
 
-Direttamente nella tab **Pagamenti gruppi** è possibile effettuare ulteriori modifiche quali de-raggruppamenti o nuovi raggruppamenti.
+Izravno u kartici **Plaćanja grupa** korisnik može izvršiti daljnje izmjene kao što su de-grupiranje ili stvaranje novih grupa.
 
-### VIDEO TUTORIALS
+### VIDEO TUTORIALI
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro)
+:::important Pogledajte također
+[**VIDEO TUTORIALI O ZAPISIMA**](/docs/video/finance/intro)
 :::
