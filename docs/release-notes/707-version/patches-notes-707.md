@@ -15,12 +15,11 @@ sidebar_position: 1
 > - PM - Nel calendario generico di Fluentis, planner e wbs assegnazione risorse, introdotta evidenza giornate non lavorative colorando lo sfondo in rosso (#TT01402/25) 
 > - WM – Creazione DDT/Fatture da picking: Se presente, il vettore inserito nel picking viene riportato nel DDT o nella fattura, altrimenti viene ripreso dall’ordine cliente o da anagrafica  (#TT01430/25, #TT01449/25). 
 > - SH - WebApi Import/Export  - Fasi di lavorazione dei Prototipi - Rilascio della Web Api di Import/Export per le Fasi di lavorazione dei Prototipi. (#TT01359/25) 
-> - SH - WebApi Import/Export  - Prototipi - Rilascio della Web Api di Import/Export per i Prototipi (le Fasi di lavorazione sono escluse; è stata creata una WebApi dedicata). (#TT01575/24) 
+> - SH - WebApi Import/Export  - Prototipi - Rilascio della Web Api di Import/Export per i Prototipi (le Fasi di lavorazione sono escluse; è stata creata una WebApi dedicata).(#TT01575/24) 
 > - MS – Risolto errore nella procedura di Rilascio Ordini Pianificati quando il flag per il rilascio degli ordini di produzione esecutivi era attivo (#TT01655/25). 
 > - QY - Controllo articoli - Certificati di analisi - Sono state variate le condizioni che non permettevano la modifica dei "Valori multipli rilevati": 
 > - il controllo non deve essere "Approvato"; 
-> - nei “Parametri del controllo articoli” devono essere indicati: il flag di "Abilita il rilevamento multiplo valori" e, per il Tipo documento di origine del controllo, il flag della colonna "Mult.". 
-> - (#TT01461/25 ) 
+> - nei “Parametri del controllo articoli” devono essere indicati: il flag di "Abilita il rilevamento multiplo valori" e, per il Tipo documento di origine del controllo, il flag della colonna "Mult." (#TT01461/25 ) 
 > - Add Guid valorization for scripts 
 > - PM – selezione cliente nella generazione nuovo progetto da modello - Se il cliente ha data di chiusura antecedente alla data nuovo progetto da modello, non verrà proposto nella ricerca (#TT01126/25) 
 > - PM – bloccata generazione automatica interventi da attività senza cliente indicato (#TT01635/25) 
