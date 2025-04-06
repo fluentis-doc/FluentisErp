@@ -8,7 +8,8 @@ Per creare un ordine di produzione manualmente, è necessario creare prima l'ord
 
 ## Testata ordine di produzione 
 
-in testata vengono riepilogati tutti i dati riguardanti l'ordine di produzione, come: numero commessa e cliente di riferimento, progetto collegato, data inizio/fine, articolo, versione distinta base e ciclo, quantità da produrre, ecc...
+In testata vengono riepilogati tutti i dati riguardanti l'ordine di produzione, come: numero, lotto e anno, i dati della commessa e del cliente di riferimento, il progetto collegato, la data inizio e fine, le informazioni relative all’articolo da produrre, con versione distinta base e ciclo, quantità da produrre e prodotta.
+È anche possibile indicare il magazzino e la causale, che saranno usate per il carico del prodotto finito a magazzino; queste avranno priorità massima rispetto a tutti gli altri parametri come spiegato in dettaglio nei [Parametri di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
 
 *Pulsante specifico*:  
 
