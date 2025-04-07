@@ -1,26 +1,26 @@
 ---
-title: Gestione registrazioni provvisorie
+title: Upravljanje nepotvrđenim knjiženjima
 sidebar_position: 1
 ---
 
-Con questa procedura è possibile modificare le registrazioni provvisorie presenti nella contabilità generale, per assegnare lo stato definitivo senza dover entrare in ognuna di queste a modificarne manualmente lo stato.
+Ovim postupkom moguće je modificirati privremena knjiženja prisutne u glavnoj knjizi, dodijeliti konačni status bez potrebe za unosom svakog od njih radi ručne izmjene statusa.
 
-## Registrazioni
+## Zapisi
 
-Eseguendo la ricerca secondo i dati impostati nei campi di filtro, vengono visualizzate le scritture contabili in stato Provvisorio.
+Klikom na Traži prema skupu podataka u poljima filtera, prikazuju se računovodstveni zapisi u Privremenom statusu.
 
-E' dunque possibile selezionare le scritture che si vuole porre in stato definitivo e procedere in alternativa a:
+Moguće je odabrati unose koje želimo staviti u konačno stanje i alternativno nastaviti na:
 
-- entrare in visualizzazione nella registrazione (non potranno essere salvate modifiche)  
-- entrare in modifica della registrazione  
-- generare le scritture definitive a partire dalle provvisorie selezionate  
+- otvaranje samog zapisa (promjene se ne mogu spremiti)    
+- uređivanje zapisa  
+- generirati konačne zapise počevši od odabranih provizornih
 
-la trasformazione in scrittura definitiva avverrà con data definita nella parte bassa della form (è possibile allineare la data competenza contabile o variare quest'ultima) e impostare automaticamente la data pari all'ultima data di registrazione sul registro IVA.
+Transformacija u konačan zapis će se odvijati s datumom definiranim u donjem dijelu obrasca (moguće je uskladiti datum računovodstvene nadležnosti ili promijeniti potonji) i automatski postaviti datum jednak datumu zadnje prijave u registar obveznika PDV-a.
 
-La gestione del protocollo IVA avverrà coerentemente alle impostazioni della data registrazione e dei parametri che definiscono la coerenza data / numero di protocollo.
+Upravljanje PDV protokolom odvijat će se u skladu s postavkama datuma knjiženja i parametrima koji definiraju dosljednost datuma/broja protokola.
 
-Anche il numero di registrazione seguirà i parametri di coerenza e recupero numeri in base alla data.
+Broj knjiženja također će slijediti dosljednost broja na temelju datuma i parametara dohvaćanja.
 
-## Precedenti
+## Prethodni 
 
-Come di consueto è possibile ripristinare la singola registrazione contenuta nell'operazione di modifica, oppure l'intera operazione eseguita dall'utente in una determinata data.
+Kao i obično, moguće je vratiti pojedinačnu knjiženje koje je korisnik izvršio na određeni datum.  

@@ -1,69 +1,61 @@
 ---
-title: Nuova
+title: Novo
 sidebar_position: 2
 ---
 
-La procedura Apertura automatica conti si può utilizzare, in alternativa ad una scrittura di prima nota da inserire tramite il comando **[Creazione Registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record),**  **per rilevare i saldi di inizio attività.**
+Postupak Automatsko otvaranje konta može se koristiti kao alternativa unosu kroz **[Generiranje zapisa glavne knjige](/docs/finance-area/ledger-records/records/ledger-record),**  **za evidentiranje početnog salda na početku razdoblja**.
 
-**A partire dalla prima chiusura di bilancio, le successive aperture conti potranno essere gestite direttamente dalla procedura di chiusura.**
+**Od prvog zatvaranja bilance, sljedeća otvaranja konta mogu se upravljati izravno putem postupka zatvaranja.**
 
- 
+NAPOMENA:
 
-NOTA:
+Ovim postupkom bilježe se isključivo početna računovodstvena salda razdbolja, a ne otvaranje pripadajućih računovodstvenih stavki.  
 
-Con questa procedura si registrano unicamente i saldi contabili di apertura, non l'apertura delle partite contabili relative.
+ **Datum otvaranja**: to je **datum obrade** i nema nikakve veze s datumom zapisa koji će biti naveden u odgovarajućem polju na dnu prozora;
 
- 
+**Broj otvaranja**: automatski generiran redni broj;
 
+**Opis**: omogućuje korisniku da detaljnjije opiše zapis, poput bilješke;
 
+**Konto** i **Vrsta konta**: filteri za pretraživanje unutar liste kontnog plana;
 
+**Datum unosa** i **Datum obračuna**: obavezna polja koja se dodjeljuju zapisu otvaranja;  
 
+**Broj**: bit će dodijeljen nakon evidentiranja;
 
-**Data apertura**: è la **data dell'elaborazione**, non ha alcun collegamento con la data di registrazione dell'operazione che si andrà a indicare nel campo apposito alla base della finestra;
+**Predložak otvaranja računa** i **Opis kretanja**: dodjeljuju se za dnevnik glavne knjige.
 
-**Numero apertura**: è un numero progressivo gestito automaticamente;
-
-**Descrizione**: consente all'utente di identificare l'operazione, così come le annotazioni;
-
-**Conto** e **Tipo conto**: sono filtri di ricerca all'interno della lista del piano dei conti;
-
-**Data registrazione** e **Data competenza**: campi obbligatori da assegnare alla registrazione di apertura;
-
-**Numero**: sarà assegnato una volta operata la contabilizzazione;
-
-**Causale di apertura conti** e **Descrizione del movimento**: da assegnare per il libro giornale.
-
-Una volta impostati questi dati obbligatori sarà possibile salvare le impostazioni e attivare tutta la lista dei sottoconti contabili: la fase successiva sarà quindi quella di operare la memorizzazione sottoconto per sottoconto del saldo dare o avere di apertura conti, con l'eventuale importo di apertura in divisa.
+Nakon postavljanja ovih obaveznih podataka, moguće je spremiti postavke i aktivirati na cijelu listu podkonta. Sljedeća faza je evidentiranje po podkontima za saldo dugovanja ili potraživanja pri otvaranju računa, uz eventualni iznos otvaranja u valuti.  
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/new/image01.png)
 
  
 
-Esempio (non realistico)
+Primjer (nerealističan)
 
  
 
-Solo una volta che il totale dare e il totale avere corrispondono sarà possibile procedere alla rilevazione in contabilità della ripresa saldi (in caso contrario premendo il comando di contabilizzazione sarà visualizzato un messaggio di errore).
+Samo kada ukupno dugovanje i ukupno potraživanje budu jednaki, bit će moguće evidentirati povrat salda u računovodstvu (u suprotnom će se, pritiskom na naredbu za knjiženje, prikazati poruka o pogrešci).
 
  
 
-CONSIGLI OPERATIVI:
+OPERATIVNI SAVJETI:
 
-l'utente può riaprire più volte la stessa elaborazione di apertura conti per completare tutti i dati (l'operazione potrebbe essere anche lunga e svolgersi in più giorni) prima di procedere, oppure si potrebbero creare tante aperture conti differenti, magari differenziando una per l'attivo, l'altra per il passivo, o per i clienti/fornitori ecc.
+Korisnik može više puta otvoriti istu obradu otvaranja konta kako bi dovršio postupak (operacija može biti dugotrajna i odvijati se tijekom više dana) prije nego što nastavi, ili se može kreirati više različitih otvaranja računa, primjerice jedno za aktivu, drugo za pasivu, ili za klijente/dobavljače itd.  
 
-Nella maschera non è prevista una procedura di rollback: si potrà semplicemente cancellare l'apertura e l'applicativo chiederà conferma della cancellazione della relativa registrazione di contabilità.
+U obrascu nije predviđen postupak povratka (rollback): jednostavno se može izbrisati otvaranje, a aplikacija će zatražiti potvrdu brisanja.
 
-Nel caso in cui siano operate modifiche al dettaglio dell'apertura conti DOPO la sua contabilizzazione, è possibile premere nuovamente il comando Crea registrazione di apertura (nella ribbon bar) per aggiornare la precedente scrittura contabile. Apparirà un messaggio di avviso e conferma dell'aggiornamento della scrittura.
+U slučaju izmjena u detaljima otvaranja računa NAKON knjiženja, moguće je ponovno pritisnuti naredbu Kreiraj zapis otvaranja (na alatnoj traci) kako bi se ažurirala prethodna računovodstvena stavka. Pojavit će se poruka upozorenja i potvrde o ažuriranju stavke.  
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Pulsante per salvare la testata dell'apertura conti, attivabile dopo aver inserito la descrizione e la causale contabile. |
-| Cerca | Pulsante per cercare, la lista dei conti, che si intendono inserire nell'apertura, attraverso i campi del sottoconto e del tipo conto. |
-| Crea registrazione apertura | Pulsante per creare la registrazione di apertura conti. |
-| Apre la registrazione per l'apertura conti | Pulsante che apre la registrazione di apertura. |
-| Elimina dettaglio | Elimina il contenuto dei campi riferiti alla riga selezionata. ATTENZIONE: le righe per quanto riguarda il contenuto dei campi relativi al conto non possono essere eliminate, se lasciate in bianco non saranno incluse nella scrittura contabile di apertura. |
+| Spremi | Tipka za spremanje zaglavlja otvaranja konta koji se može aktivirati nakon unosa opisa i predloška knjiženja. |
+| Traži | Tipka za pretraživanje liste konta koji se namjeravu unijeti u otvaranje, koristeći polja podkonta i vrste konta. |
+| Kreiraj zapis otvaranja | Tipka za kreiranje zapisa otvaranja konta. |
+| Otvori zapis otvaranja konta | Tipka koja otvara zapis otvaranja. |
+| Izbriši detalj | Briše sadržaj polja koja se odnose na odabrani redak. PAŽNJA: redci koji se odnose na sadržaj polja vezanih uz konto ne mogu se izbrisati; ako ostanu prazni, neće biti uključeni u stavku otvaranja. |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Ricerca
+title: Traži
 sidebar_position: 1
 ---
 
-In questa form è possibile ricercare aperture dei conti precedentemente create e procedere all' **inserimento di una nuova chiusura.**
+U ovom obrascu moguće je pretraživati otvaranja računa koja su prethodno kreirana i nastaviti s **unosom novog zatvaranja**. 
 
-Per i campi di dettaglio della testata e della griglia di ricerca vedere **[Chiusura Automatica conti.](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/search)**
+Za detalje o poljima zaglavlja i mogućnostima pretraživanja, pogledajte odjeljak o **[Automatskom zatvaranju računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/search)**. 
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/search/image01.png)
 
@@ -13,13 +13,13 @@ Per i campi di dettaglio della testata e della griglia di ricerca vedere **[Chiu
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per la ricerca di un'apertura conti effettuata precedentemente. |
-| Nuovo | Pulsante per creare una nuova apertura conti. |
-| Modifica | Pulsante, attivabile dopo aver selezionato un'apertura conti, che permette la modifica della registrazione di apertura. |
-| Visualizzazione | Pulsante, attivabile dopo aver selezionato un'apertura conti, che permette la visualizzazione della registrazione di apertura. |
-| Elimina | Pulsante, attivabile dopo aver selezionato un'apertura conti, che permette la cancellazione della registrazione di apertura. |
+| Traži| Tipka za pretraživanje prethodno otvorenih računa. |
+| Novo | Tipka za kreiranje novog otvaranja računa. |
+| Izmjeni | Tipka koja se može kliknuti nakon što se odabere otvaranje konta, a koji omogućuje izmjenu zapisa otvaranja. |
+| Prikaži | Tipka koja se može aktivirati nakon što se odabere otvaranje računa, a koji omogućuje prikaz zapisa otvaranja. |
+| Izbriši | Tipka koja se može kliknuti nakon što se odabere otvaranje računa, a koji omogućuje brisanje zapisa otvaranja. |
 
 
 

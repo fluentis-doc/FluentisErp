@@ -47,7 +47,7 @@ Alternativno (preporučuje se samo za izmjene pojedinačnih redaka ili nekoliko 
 - Odaberu se svi redovi rezultata dobivenog zahvaljujući filtru (primjerice svi zapisi od početka godine do danas) pomoću miša ili kombinacijom Ctrl+A; 
 
 
- 1. Selezionare tutte le righe del risultato ottenuto grazie al filtro (ad esempio tutte le registrazioni dall'inizio dell'anno ad oggi) tramite il mouse oppure con la combinazione Ctrl A;  
+ 1. Odabrati sve retke rezultata dobivenih pomoću filtra (na primjer, sve registracije od početka godine do danas) pomoću miša ili kombinacije Ctrl A; 
  2. Unese se broj startnog protokola u odgovarajuće polje **Početni broj** koje se nalazi na dnu obrasca (u ovom slučaju 1);    
  3. Pritisne se tipka za **Automatsko numeriranje** koji se nalazi na traci izbornika;  
  4. Novi protokoli bit će predloženi kao što se vidi na slici;  

@@ -1,86 +1,84 @@
 ---
-title: Regolarizzazione Valuta
+title: Zatvaranje tečajnih razlika 
 sidebar_position: 2
 ---
 
-La maschera si trova in Amministrazione > Registrazioni contabili > Procedure > Regolarizzazione valuta
+Maske se nalaze u Administracija > Knjigovodstveni zapisi > Procedure > Zatvaranje tečajnih razlika
 
-Questa procedura permette di calcolare in automatico, ad una certa data, le differenze cambio per i conti in valuta estera.
+Ova procedura omogućuje automatsko izračunavanje, na određeni datum, razlika u tečaju za račune u stranoj valuti.
 
-E' possibile gestire: 
+Moguće je upravljati:
 
-- crediti e debiti (clienti e fornitori) 
-- conti bancari
+- Krediti i dugovi (klijenti i dobavljači)
+- Bankovni računi 
 
-**Vengono generate le partite aperte e le registrazioni contabili di adeguamento alla differenza cambio.**
+**Generiraju se otvorene stavke i računovodstveni unosi za prilagodbu razlici tečaja.**
 
-### Come calcolare e registrare le differenze cambio (ad esempio a fine anno o in altra data)
+### Kako izračunati i registrirati razlike u tečaju (na primjer na kraju godine ili na drugi datum) 
 
-- selezionare una divisa (una per volta), rispetto alla quale sarà eseguito il calcolo, tramite la combo box **Divisa** nella testata della maschera 
-- mediante i radio buttons sulla destra selezionare la tipologia di calcolo:
-    - Disponibilità: considera i saldi (es. bancari)
-    - Partite: legge crediti e debiti verso clienti / fornitori
-        - Attiva: clienti
-        - Passiva: fornitori
+- odabrati jednu valutu (jednu po jednu), prema kojoj će se vršiti izračun, putem kombinirane kutije **Valuta** u zaglavlju obrasca.
+- Pomoću izbornika s desne strane vrstu izračuna:
+    - Raspoloživost: uzima u obzir stanja (npr. banka) 
+    - Dospijeća plaćanja: čita dugove i potražnje prema kupcima/dobavljačima  
+        - Aktivno: kupci
+        - Pasiva: dobavljači
 
-Il conto / sottoconto e la Divisione sono invece filtri opzionali per restringere la ricerca.
+Konto/podkotno i odjel su izborni filtri za sužavanje pretraživanja.  
 
-- Impostare in basso nella maschera la **data** di riferimento (ad esempio 31/12/AAAA) per la regolarizzazione (cioè il calcolo della differenza cambio)
-- Il valore del **cambio** corrispondente verrà caricato in base all risultanze della tabella [**cambi valute**](/docs/configurations/tables/finance/currency-exchange)
-- Premere Ricerca
+- Postavite dolje u obrascu **datum**  (na primjer 31/12/GGGG) za usklađivanje (odnosno izračun razlike u tečaju)  
+- Vrijednost odgovarajućeg **tečaja** bit će učitana na temelju rezultata tablice [**tečajevi valuta**](/docs/configurations/tables/finance/currency-exchange)
+- Pritisnite Pretraživanje  
 ---
 
-Nella griglia centrale che espone il dettaglio delle posizioni ricercate vengono evidenziati: 
+U središnjoj tablici koja prikazuje detalje traženih stavki ističu se:
 
-- **Conto / sottoconto** estratto dalla ricerca e da gestire 
+- **Konto / Podkonto** izvučen iz pretrage i koji treba upravljati;  
 
-- **Importo in valuta** (espresso nella divisa estera), pari alla somma dare meno la somma avere in valuta di tutti i movimenti avvenuti sul conto 
+- **Iznos u valuti** (izražen u stranom novcu), jednak zbroju dugovanja minus zbroj potraživanja u valuti svih transakcija na računu; 
 
-- **Importo (in euro) storico**, sommatoria dei movimenti dare in euro meno sommatoria dell’avere in euro, 
+- **Iznos (u eurima) povijestan**, zbroj transakcija dugovanja u eurima minus zbroj potraživanja u eurima;
 
-- **Importo corrente** che corrisponde all’importo in valuta ricalcolato al tasso di cambio attuale (esposto in basso nella maschera)
+- **Trenutni iznos**  koji odgovara iznosu u valuti preračunatom prema trenutnom tečaju (prikazanom u donjem dijelu obrasca);   
 
-- **Differenza** cambio positiva o negativa.
+- **Razlika** u tečaju, pozitivna ili negativna.  
 
 ---
 
-Nella zona dei ***Parametri*** sono definiti i conti per l'utile o perdita su cambi con i quali sarà realizzata la contabilizzazione della regolarizzazione (ripresi dai parametri di contabilità generale)
+U zoni ***Parametri*** definirani su računi za dobit ili gubitak od valutnih razlika s kojima će se izvršiti knjiženje usklađivanja (preuzeti iz parametara opće računovodstvene evidencije):  
 
-- Inserire la causale contabile desiderata per creare l contabilizzazione
+- Unesite željeni računovodstveni razlog za stvaranje knjiženja  
 
-- Premere il comando **Contabilizzazione**
+- Pritisnite naredbu **Knjiženje**
 
 ---
 
 <details>
 
-  <summary>Uleriori dettagli (Click to expand)</summary>
+  <summary>Dodatni detalji (Click to expand)</summary>
   
-Il flag **Provvisorie**: permette di generare la differenza di cambio come registrazione contabile provvisorie;
+Flag **Privremeno**: omogućuje generiranje tečajne razlike kao privremeni računovodstveni unos;
 
-**Cambio**: con il quale viene calcolato il valore aggiornato. Viene proposto in automatico dal programma (dalla tabella cambio valute), ma può essere modificato dall'utente;
+**Tečaj**: broj s kojim se izračunava ažurirana vrijednost. Program ga automatski predlaže (iz tablice mjenjačnice), ali ga korisnik može promijeniti;  
 
-**Data** e **Numero** **documento** e **Causale** **contabile** relativa alla registrazione contabile da regolarizzare. **La data inserita rappresenta anche la data fino alla quale vengono selezionate le registrazioni contabili;**
+**Datum** i **broj dokumenta** i **knjigovodstveni predložak** koji se odnosi na knjigovodstveno knjiženje koje treba urediti. **Uneseni datum također predstavlja datum do kojeg su odabrani računovodstveni zapisi**
 
-**Conti** **di ricavo** e **costo**: utilizzati per registrare le differenze di cambio;
+**Konto prihoda** i **rashoda**: koriste se za evidentiranje tečajnih razlika;  
 
+U kartici *Poništavanje* knjiženja korekcije tečaja moguće je pregledati i vratiti rezultat obavljenih knjiženja na temelju postavljenih filtera (Od datuma/Do datuma, račun).
 
-Nella tab di *Rollback* è possibile visualizzare e ripristinare il risultato delle operazioni di regolarizzazione eseguite in base ai filtri impostati (Da data/A data, il conto).
-
-**Ripristina regolarizzazione:** Pulsante per cancellare le operazioni di regolarizzazione selezionate nella griglia di risultato. |
-
+**Povrati usklađenje**: Tipka za brisanje odabranih operacija regulacije u mreži rezultata. 
 </details>
 
-:::danger[Attenzione]
-Di default, ogni **anagrafica cliente fornitore** che viene creata, attiva **nel piano dei conti il flag *Gestione divisa***. Questa opzione **non deve essere disattivata**, per non bloccare la possibilità di utilizzare la presente procedura e la corretta gestione della chiusura saldi in valuta estera.
+:::danger[Pažnja]
+Prema zadanim postavkama, svaki **šifarnik klijenta dobavljača**  koji se stvori aktivira **u planu konta flag  *Upravljanje valutom***. Ova opcija **ne smije biti deaktivirana**, kako ne bi došlo do blokiranja mogućnosti korištenja ove procedure i pravilnog upravljanja zatvaranjem salda u stranoj valuti.  
 
-**Nella gestione del conto in valuta**, sia esso un conto cliente o fornitore, oppure un conto bancario, consigliamo di **movimentare il conto in maniera uniforme**, definendo la divisa di movimentazione, esempio il dollaro, e movimentando sempre il conto in dollari.
+**U upravljanju računom u valuti**, bilo da se radi o računu klijenta, dobavljača ili bankovnom računu, preporučujemo da **račun bude vođen na ujednačen način**, definirajući valutu za transakcije, na primjer dolar, i da se račun uvijek vodi u dolarima.  
 
-Il movimento in valuta avrà, quindi, il tasso di cambio, riferito ad una certa data valuta, ed il controvalore in euro che alimenterà il nostro bilancio, espresso nella divisa della società, ad esempio l’EURO.
+Transakcija u valuti će, dakle, imati tečaj vezan uz određeni datum valute, a protuvrijednost u eurima koja će se unijeti u naš bilans, izražen u valuti društva, na primjer EURO.  
 
-Movimentare un conto, ad esempio di un fornitore, contemporaneamente in due divise diverse, esempio dollaro per alcuni movimenti e la divisa cinese per altri, è possibile, ma consigliamo, se possibile, il mantenimento di due conti distinti, ognuno con una singola divisa di riferimento.
+Pokretanje računa, na primjer, dobavljača, istovremeno u dvije različite valute, na primjer dolar za neke transakcije i kineski juan za druge, moguće je, ali savjetujemo, ako je moguće, održavanje dva odvojena računa, svaki s jednom referentnom valutom.  
 
-**Sono** invece **da evitare**, per non compromettere la possibilità di corretto utilizzo della procedura che stiamo illustrando, **i movimenti euro su euro**, anche di giroconto o altra causale, **su un conto in divisa**.
+**Treba se** međutim **izbjegavati**, kako bi se izbjeglo kompromitiranje pravilnog korištenja procedure koju ilustriramo, **transakcije u eurima na računu u eurima**, uključujući interne prijenose ili druge predloške, **na računu u stranoj valuti**.
 
 :::
 
