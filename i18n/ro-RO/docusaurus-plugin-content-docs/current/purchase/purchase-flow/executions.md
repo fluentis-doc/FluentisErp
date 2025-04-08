@@ -1,84 +1,82 @@
 ---
-title: Execuții
+title: Evasioni
 sidebar_position: 5
 ---
 
-Ciclul de execuție în Fluentis servește la gestionarea într-un mod structurat și integrat a întregului flux operațional de achiziție, de la faza inițială de cerere de achiziție până la faza finală de facturare. Fiecare etapă este caracterizată prin proceduri specifice și configurații care garantează o gestionare fluentă și integrată a fluxului de lucru.
+Il ciclo di **evasione** in Fluentis serve a gestire in modo strutturato e integrato l'intero flusso operativo di acquisto, dalla fase iniziale di richiesta di acquisto fino alla fase finale di fatturazione. Ogni fase è caratterizzata da procedure specifiche e configurazioni che garantiscono una gestione fluida e integrata del flusso di lavoro.
 
-## Conversia din Ofertă în Comandă
+## Conversione da Offerta a Ordine
 
-Procedura de conversie din ofertă furnizor în comandă de achiziție poate fi inițiată: 
+La procedura di **conversione da offerta fornitore a ordine di acquisto** può essere avviata:
 
-- Din Meniul [Proceduri](/docs/purchase/offer-request/procedures/order-creation): mergând pe *Achiziții > Cereri de Ofertă > Proceduri > Creare Comandă furnizor din Ofertă furnizor*.
+- Dal Menù [Procedure](/docs/purchase/offer-request/procedures/order-creation): andando su *Acquisti > Richieste di Offerta > Procedure > Creazione Ordine fornitore da Offerta fornitore*.
 
-Această procedură permite transformarea unei cereri de ofertă într-o comandă de achiziție efectivă. 
-Pentru a executa conversia, este necesar să configurați Tipul de comandă furnizor dorit în tabelul [Tip cerere de ofertă](/docs/configurations/tables/purchase/purchase-offer-type). 
+Questa procedura permette di trasformare una richiesta di offerta in un ordine di acquisto effettivo.  
+Per eseguire la conversione è necessario configurare il Tipo ordine fornitore desiderato nella tabella [Tipo richiesta di offerta](/docs/configurations/tables/purchase/purchase-offer-type).
 
-În timpul procedurii de conversie, apare un pop-up cu următoarele opțiuni:
-- Cerere de ofertă: permite crearea unei comenzi de achiziție pentru fiecare cerere de ofertă.
-- Cont: permite gruparea cererilor de ofertă după furnizor.
-- Închide ofertele legate: introduce o *Dată închidere* pentru RDO-urile convertite în comenzi de achiziție.
+Durante la procedura di conversione appare un pop-up con le seguenti opzioni:
+- **Richiesta di offerta**: permette di creare un ordine di acquisto per ciascuna richiesta di offerta.
+- **Conto**: permette di raggruppare le richieste di offerta per fornitore.
+- **Chiudi le offerte collegate**: inserisce una *Data chiusura* per le RDO convertite in ordini di acquisto.
 
-Odată confirmată conversia, sistemul generează o nouă comandă furnizor folosind datele cererii de ofertă și notifică utilizatorul cu un mesaj pop-up privind succesul conversiei.
+Una volta confermata la conversione, il sistema genera un nuovo ordine fornitore utilizzando i dati della richiesta di offerta e avvisa l'utente con un messaggio pop-up riguardante il successo della conversione.
 
-Pentru detalii suplimentare despre procedură, se face referire la pagina corespunzătoare a documentației.
+Per maggiori dettagli sulla procedura si rimanda all'apposita pagina della documentazione.
 
-## Conversia din Cerere de Achiziție în Comandă
+## Conversione da Richiesta di Acquisto a Ordine
 
-Procedura de creare a Comenzii furnizor din Cerere de Achiziție poate fi inițiată:
+La procedura di **creazione Ordine fornitore da Richiesta di Acquisto** può essere avviata:
 
-- Din Meniul [Proceduri](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): mergând pe *Achiziții > Comenzi Furnizori > Proceduri > Creare automată comenzi*.
+- Dal Menù [Procedure](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): andando su *Acquisti > Ordini Fornitori > Procedure > Creazione automatica ordini*.
 
-Această procedură permite crearea uneia sau mai multor comenzi de achiziție pornind de la una sau mai multe cereri de achiziție și se compune din cinci tab-uri:
+Questa procedura permette la creazione di uno o più ordini di acquisto a partire da una o più richieste di acquisto e si compone di cinque tab:
 
-- Filtru De: permite introducerea de filtre pentru a selecta RDA-urile (cu statut "Autorizată") care urmează să fie convertite în comandă.
-- Alegerea furnizorului: permite alegerea furnizorului căruia îi va fi atribuită comanda pe baza mai multor criterii, inclusiv: cel mai bun preț de achiziție, furnizor preferențial implicit, cea mai bună condiție de plată, etc.
-- Prototype comandă: afișează rezumatul comenzii de creat și permite generarea unei comenzi noi sau adăugarea liniilor de articol la o comandă existentă. 
-- Parametri: configurează opțiunile de creare a comenzii, cum ar fi tipul de comandă de creat și datele de utilizat dacă nu sunt codificate pentru fiecare articol. Este posibil să alegeți, de asemenea, să luați în considerare disponibilitățile provenind din diferitele arii ale gestionării. 
-- Operații: permite vizualizarea, filtrarea și anularea operațiunilor anterioare. 
+- **Filtro Da**: consente di inserire filtri per selezionare le RDA (con stato "Autorizzata") da convertire in ordine.
+- **Scelta fornitore**: permette di effettuare la scelta del fornitore a cui intestare l'ordine sulla base di diversi criteri tra cui: miglior prezzo di acquisto, fornitore preferenziale di default, migliore condizione di pagamento, ecc.
+- **Prototipi ordine**: visualizza il riepilogo dell'ordine da creare e consente di generare un nuovo ordine oppure di aggiungere le righe articolo ad un ordine esistente.
+- **Parametri**: configura le opzioni di creazione dell'ordine, come il tipo ordine da creare e i dati da utilizzare se non sono codificati per ogni articolo. È possibile scegliere anche di considerare le disponibilità provenienti dalle varie aree del gestionale.
+- **Operazioni**: permette di visualizzare, filtrare e annullare le operazioni precedenti.
 
-Odată confirmat prototipul de comandă, făcând clic pe butonul *Generează comenzi furnizor*, sistemul va crea comenzile de achiziție pe baza parametrilor aleși. 
+Una volta confermato il prototipo d'ordine, cliccando sul pulsante *Genera ordini fornitore* il sistema creerà gli ordini di acquisto sulla base dei parametri scelti.
 
-Aceeași procedură poate fi utilizată pentru crearea comenzilor furnizor din comenzile clientului. Pentru detalii suplimentare, consultați [pagina](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) corespunzătoare a documentației.
+La stessa procedura può essere utilizzata per la creazione **Ordini fornitore da Ordini cliente**. Per maggiori dettagli si rimanda all'apposita [pagina](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) della documentazione.
 
+## Evasione da Ordini a DDT
 
-## Execuția din Comenzi în DDT
+La procedura di **evasione da ordine a Documento di Trasporto** è disponibile in due modalità:
 
-Procedura de execuție din comandă în Document de Transport este disponibilă în două moduri:
+- Dal Menù [Procedure](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): andando su *Acquisti > DDT di Acquisto > Procedure > Evasione da ordini*.
+- Evasione dalla [Testata](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) del DDT: utilizzando il pulsante *Evasione da Ordine* per aprire una finestra di selezione degli ordini confermati del fornitore da trasferire nel DDT.
 
-- Din Meniul [Proceduri](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): mergând pe *Achiziții > DDT de Achiziție > Proceduri > Execuție din comenzi*.
-- Execuția din [Antet](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) DDT: utilizând butonul *Execuție din Comandă* pentru a deschide o fereastră de selecție a comenzilor confirmate ale furnizorului care urmează să fie transferate în DDT.
+Questa procedura permette di trasformare uno o più ordini di acquisto in uno o più DDT. Prima di avviare la procedura, è necessario configurare il tipo di DDT desiderato nella tabella [Tipi ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type/). La procedura automatica consente la creazione di DDT solo se l'ordine è stampato e confermato.
 
-Această procedură permite transformarea uneia sau mai multor comenzi de achiziție în unul sau mai multe DDT. Înainte de a iniția procedura, este necesar să configurați tipul de DDT dorit în tabelul [Tipuri de comandă furnizor](/docs/configurations/tables/purchase/purchase-orders-type/). Procedura automată permite crearea de DDT doar dacă comanda este imprimată și confirmată.
+Le condizioni per l'evasione sono:
 
-Condițiile pentru execuție sunt: 
+- Il fornitore degli ordini deve coincidere con il fornitore del DDT.
+- L'ordine da evadere deve avere il flag "Stampato" e una *Data di Conferma* ordine.
+- Per la seconda procedura il *Tipo ordine* deve avere un *Tipo bolla consegna* associato.
 
-- Furnizorul comenzilor trebuie să coincidă cu furnizorul DDT-ului.
-- Comanda de executat trebuie să aibă indicatorul "Imprimată" și o *Dată de Confirmare* a comenzii.
-- Pentru a doua procedură, *Tipul comenzii* trebuie să aibă un *Tip de aviz de livrare* asociat.
+Le condizioni di raggruppamento degli ordini in DDT possono essere definite nei [Parametri raggruppamento DDT di acquisto](/docs/configurations/parameters/purchase/dn-grouping).
 
-Condițiile de grupare a comenzilor în DDT pot fi definite în [Parametrii grupării DDT de achiziție](/docs/configurations/parameters/purchase/dn-grouping).
+Dopo aver selezionato gli ordini e impostato i filtri, cliccando su *Trasferimento* si genererà il DDT con i dati dell'ordine. Se l'evasione è stata eseguita correttamente, l'ordine cambierà automaticamente stato in *"Evaso"* o *"Parzialmente Evaso"*.
 
-După ce ați selectat comenzile și ați setat filtrele, făcând clic pe *Transfer*, se va genera DDT-ul cu datele comenzii. Dacă execuția a fost efectuată corect, comanda va schimba automat starea în *"Executat"* sau *"Parțial Executat"*.
+L'evasione da ordine a DDT è completabile anche dalla testata della fattura stessa tramite il pulsante *Evasione da ordine*.
 
-Execuția din comandă în DDT poate fi finalizată de asemenea din antetul facturii folosind butonul *Execuție din comandă*.
+## Evasione da DDT a Fatture
 
-## Execuția din DDT în Facturi
+La procedura di **evasione da DDT a fattura** può essere avviata in due modalità:
 
-Procedura de execuție din DDT în factură poate fi inițiată în două moduri:
+- Dal Menù [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): andando su *Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di acquisto*.
+- Dalla [Testata](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) della Fattura di Vendita: utilizzando il pulsante *Evasione DDT* nella testata della fattura.
 
-- Din Meniul [Proceduri](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): mergând pe *Achiziții > Facturi de achiziție > Proceduri > Valorificare DDT de achiziție*. 
-- Din [Antet](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) Facturii de Vânzare: utilizând butonul *Execuție DDT* în antetul facturii.
+Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
 
+- **Valorizzazione**: consente di inserire filtri per selezionare i DDT da fatturare (con stato "Controllato") e specificare la data di creazione della fattura.
+- **Parametri**: configura il tipo fattura da creare, se non indicata nella tabella [Tipi DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) e i riferimenti DDT da riportare nella fattura.
+- **Precedenti**: permette di visualizzare, filtrare e annullare le operazioni di fatturazione precedenti.
 
-Această procedură permite crearea uneia sau mai multor facturi pornind de la unul sau mai multe DDT. Procedura este compusă din trei tab-uri principale:
+Le condizioni di raggruppamento dei DDT in fattura possono essere definite nei [Parametri raggruppamento fattura di acquisto](/docs/configurations/parameters/purchase/invoice-grouping/).
 
-- Valorificare: permite introducerea de filtre pentru a selecta DDT-urile de facturat (cu statut "Verificat") și specificarea datei de creare a facturii.
-- Parametri: configurează tipul de factură de creat, dacă nu este indicat în tabelul [Tipuri DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) și referințele DDT care trebuie incluse în factură.
-- Precedente: permite vizualizarea, filtrarea și anularea operațiunilor de facturare anterioare.
+Dopo aver selezionato i DDT e impostato i parametri, è possibile procedere con la creazione della fattura cliccando su *Valorizzazione DDT di acquisto*.
 
-Condițiile de grupare a DDT-urilor în factură pot fi definite în [Parametrii grupării facturii de achiziție](/docs/configurations/parameters/purchase/invoice-grouping/).
-
-După ce ați selectat DDT-urile și ați setat parametrii, este posibil să continuați cu crearea facturii făcând clic pe *Valorificare DDT de achiziție*.
-
-Execuția din DDT în factură poate fi finalizată de asemenea din antetul facturii utilizând butonul *Execuție DDT*.
+L'evasione da DDT a fattura è completabile anche dalla testata della fattura stessa tramite il pulsante *Evasione DDT*.
