@@ -60,7 +60,8 @@ Nel caso in cui siano abilitati entrambi i flag **Operatore obbligatorio** e **P
 **Foglio di lavoro obbligatorio**: se attivo, abilita un controllo che impedisce all'operatore di aggiungere una fase che non ha ancora il flag di "Stampa definitiva" abilitato. Questo flag di "Stampa definitiva" può essere abilitato dalla procedura di stampa del [Foglio di lavoro](/docs/production/pp-production-in-progress/reports/worksheet);    
 **Stampa etichette obbligatoria**: se attivo, abilita un controllo che obbliga l'operatore a stampare tutte le etichette prima di proseguire nell'attività di dichiarazione;    
 **Difetto obbligatorio se dichiarato scarto**: se attivo, abilita un controllo che obbliga l'operatore ad inserire la tipologia del difetto nel caso in cui inserisca una quantità scartata;    
-**Registrazione automatica**: se attivo, permette di creare la registrazione di magazzino in maniera automatica alla conferma della dichiarazione.    
+**Registrazione automatica**: se attivo, permette di creare la registrazione di magazzino in maniera automatica alla conferma della dichiarazione;    
+**Importa tutte le fasi del gruppo**: se attivo, anche l'omonimo flag presente nell'*help fasi* del tab *produzione* del MES risulta attivo di default. In questo modo se l'utente seleziona una fase appartenente ad un gruppo e l'aggiunge, vengono aggiunte anche tutte le altre fasi appartenenti al gruppo.      
 
 ### *Gestione documentale*     
 **Tipo origine documento da escludere**: questa tabella è legata al tab *Documenti e Istruzioni operative* di Fluentis MES e permette di definire quali tipologie di documenti devono essere escluse; in questo modo i file allegati a queste tipologie di documenti non saranno visualizzati nel tab *Documenti e Istruzioni operative*.     
