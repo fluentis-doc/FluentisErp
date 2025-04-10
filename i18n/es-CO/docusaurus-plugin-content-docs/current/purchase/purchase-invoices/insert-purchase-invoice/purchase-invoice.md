@@ -51,7 +51,7 @@ Al ingresar el **Proveedor** se proponen automáticamente todos los datos espec�
 
 - **divisa**: sección que contiene los datos [Divisa](/docs/configurations/tables/general-settings/currencies), [Tipo de cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de divisa](/docs/guide/common/glossary/glossary-intro#currency-date).   
 - **nazione**: sección que contiene los datos [*Nación*](/docs/guide/common/glossary/glossary-intro#country), [Idioma](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).   
-- **spedizione**: sección que contiene los datos [*Envios*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Flete](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Listado](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predeterminado y su [intervalo de validez](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **spedizione**: sección que contiene los datos [*Envios*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Flete](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Listado](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) predeterminado y su [intervalo de validez](/docs/guide/common/glossary/glossary-intro#validity-date).
 
 Todos estos campos pueden ser eliminados o modificados manualmente por el usuario.
 

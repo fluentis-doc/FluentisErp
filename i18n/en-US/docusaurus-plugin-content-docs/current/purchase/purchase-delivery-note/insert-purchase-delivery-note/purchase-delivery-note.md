@@ -32,7 +32,7 @@ By entering the **Supplier**, all specific data for the **Header** tab are autom
 
 - **Currency**: section containing [Currency](/docs/configurations/tables/general-settings/currencies), [Exchange rate](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Currency date](/docs/guide/common/glossary/glossary-intro#currency-date).   
 - **Country**: section containing data for [Country](/docs/guide/common/glossary/glossary-intro#country), [Language](/docs/guide/common/glossary/glossary-intro#language), [Zone](/docs/guide/common/glossary/glossary-intro#zone).   
-- **Delivery**: section containing data for [Shipping](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Freight](/docs/guide/common/glossary/glossary-intro#carriage), [Packing](/docs/guide/common/glossary/glossary-intro#packing), and the default [Price list](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) along with its [Validity range](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Delivery**: section containing data for [Shipping](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Freight](/docs/guide/common/glossary/glossary-intro#carriage), [Packing](/docs/guide/common/glossary/glossary-intro#packing), and the default [Price list](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) along with its [Validity range](/docs/guide/common/glossary/glossary-intro#validity-date).
 
 All these fields can be deleted or manually modified by the user.
 
