@@ -188,3 +188,5 @@ Inoltre, si basa anche sui flag **Costo del lotto** e **Costo della commessa**. 
 Nel caso del costo preventivo i valori verranno presi dalla [Richiesta di acquisto](/docs/purchase/purchase-requests/general-overview) e dall'[Ordine fornitore](/docs/purchase/purchase-orders/general-overview) e moltiplicati per i consumi previsti nella [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/new-assemble); mentre per i costi effettivi verranno presi dai [DDT di acquisto](/docs/purchase/purchase-delivery-note/general-overview) del materiale e moltiplicati per le quantità impiegate nelle [Dichiarazioni di produzione](/docs/production/pp-production-in-progress/signals/sisgnals).
 
 Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+
+
