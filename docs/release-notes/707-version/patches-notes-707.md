@@ -3,6 +3,34 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0028 - 10/04/2025
+
+> - Fix for GetReportOutput and Multi Pooling. 
+> - MES – Nel tab Materiali di Fluentis MES, sono state aggiunte le colonne priorità, unità di misura alternativa e quantità alternativa. (#TT01344/25) 
+> - WM – Corretto bug sul report di stampa Inventario a quantità valorizzato nel caso in cui si usasse il costo ultimo. (#TT00966/25,#TT01668/25) 
+> - FI - Revisione generazione automatica solleciti per gestione giorni negativi (#TT05205/24-#TT01644/25) 
+> - SCS – Non è possibile cancellare articoli dai Listini di Conto lavoro se sono stati utilizzati all’interno dei documenti (#TT01569/25). 
+> - PM – calcolo costo attività nel SAL di progetto - cambiato criterio data. In base al range indicato in elaborazione SAL vengono inclusi tutti i documenti in base alla Data Attività e non più data inizio-fine (#TT01284/25) 
+> - WMS - Corretto bug in ricevimento merci nel caso si confermasse un quantità parziale di un articolo. (#TT01599/25) 
+> - FI - Ricerca movimenti e Ricerca registrazioni contabili, aggiunta gestione filtri per extra-data ( TT01524/25) 
+> - SD - Bloccata la possibilità di creazione del compenso percipiente se la liquidazione provvigioni ha totale zero. Creato nuovo messaggio di avviso utente per la mancata creazione quando la liquidazione è a zero.(#TT01334/25) 
+> - WM - Stampa valorizzazione assiemi - Risolto anomalia su script stampa (#TT01784/25) 
+> - SH - Nella form di ricerca delle anagrafiche aggiunto campo per ricercare la vecchia ragione sociale storicizzata. Modifications in Filter Nomenclature form that can have an impact on profiles ( #TT01579/25) 
+> - FI – Stampa liquidazione iva periodica – Corretto il calcolo della percentuale degli interessi (#TT01754/25) 
+> - WM - Nelle registrazioni di magazzino, Sposta articolo, picking, conferma picking e gestione spunta, sono stati implementati i controlli per lo spostamento di un lotto prenotato. Modifications in object form Picking that can have an impact on profiles (#TT01620/25) 
+> - MES – Implementato nelle risorse di produzione del MES il nuovo flag Importa tutte le fasi del gruppo. Se attivo, anche l'omonimo flag presente nell’help fasi del tab produzione del MES risulta attivo di default. In questo modo se l'utente seleziona una fase appartenente ad un gruppo e l'aggiunge, vengono aggiunte anche tutte le altre fasi appartenenti al gruppo. (#TT01509/25) 
+> - FI - ricalcolo centri di costo al variare manuale dei dati degli ammortamenti all’interno del cespite ( TT01610/25) (modified ProductionResourceGeneralTabGeneral) 
+> - SCM - revisione contabilizzazione fatture da ricevere su bolle acquisto con articoli fittizi caricati su magazzini differenti ( TT01550/25) 
+> - SCM - la contabilizzazione fatture da ricevere utilizza il prezzo netto di riga invece di calcolare (prezzo*qta)-sconti ( TT01612/25) 
+> - CO - nei modelli di riclassificazione, per i nodi di tipo espressione, è stato aggiunto il tipo ‘percentuale’, utilizzato nella form di visualizzazione del risultato della riclassificazione per formattare il nodo. Modifications in reclassification model form that can have an impact on profiles( TT00914/25) 
+> - SCM – Nella maschera di evasione degli ordini nei DDT di Acquisto è ora possibile visualizzare il campo Vostro riferimento (#TT01326/25). 
+> - SD - Nei DDT e nelle Fattura di Vendita create da Picking vengono ora riportate le righe di analitica (#TT01508/25) 
+> - MS – Corretto bug sull’ordinamento delle righe delle fasi nella capacità dei centri di lavoro dopo aver eseguito la schedulazione a capacità finita. (#TT01478/25) 
+> - MS – In sequenza fasi top down grid è stata resa dinamica la seconda griglia; inoltre, inserendo una sequenza nella fase della prima griglia questa viene spostata direttamente nella seconda. (#TT01692/25)(modified PhaseSequenceMultiGridFilterResults) 
+> - MS - Corretto bug in sequenza fasi inerente al pulsante Calcola tempo fase in base alla priorità. (#TT01696/25) 
+> - BI - Stampa cruscotti - Aggiuntà possibilità di poter stampare dai cruscotti i report utilizzando la versione TILE (#TT00614/25) 
+> - SCM - Creazione automatica Ordini da RDA: risolto errore che applicava due volte gli sconti associati al fornitore nel caso di ripresa prezzi e listini dalla richiesta di acquisto (#TT01729/25). 
+
 ### Patch 707.1-0027 - 03/04/2025  
 
 > - ARM - revisione esportazione collezioni nella webapi dell’oggetto FSLedgerAccount (#TT01586/25) 
@@ -17,9 +45,7 @@ sidebar_position: 1
 > - SH - WebApi Import/Export  - Fasi di lavorazione dei Prototipi - Rilascio della Web Api di Import/Export per le Fasi di lavorazione dei Prototipi. (#TT01359/25) 
 > - SH - WebApi Import/Export  - Prototipi - Rilascio della Web Api di Import/Export per i Prototipi (le Fasi di lavorazione sono escluse; è stata creata una WebApi dedicata).(#TT01575/24) 
 > - MS – Risolto errore nella procedura di Rilascio Ordini Pianificati quando il flag per il rilascio degli ordini di produzione esecutivi era attivo (#TT01655/25). 
-> - QY - Controllo articoli - Certificati di analisi - Sono state variate le condizioni che non permettevano la modifica dei "Valori multipli rilevati": 
-> - il controllo non deve essere "Approvato"; 
-> - nei “Parametri del controllo articoli” devono essere indicati: il flag di "Abilita il rilevamento multiplo valori" e, per il Tipo documento di origine del controllo, il flag della colonna "Mult." (#TT01461/25 ) 
+> - QY - Controllo articoli - Certificati di analisi - Sono state variate le condizioni che non permettevano la modifica dei "Valori multipli rilevati": il controllo non deve essere "Approvato"; nei “Parametri del controllo articoli” devono essere indicati: il flag di "Abilita il rilevamento multiplo valori" e, per il Tipo documento di origine del controllo, il flag della colonna "Mult." (#TT01461/25 ) 
 > - Add Guid valorization for scripts 
 > - PM – selezione cliente nella generazione nuovo progetto da modello - Se il cliente ha data di chiusura antecedente alla data nuovo progetto da modello, non verrà proposto nella ricerca (#TT01126/25) 
 > - PM – bloccata generazione automatica interventi da attività senza cliente indicato (#TT01635/25) 

@@ -20,7 +20,7 @@ The mandatory fields for entering a purchase request are as follows:
 If the document is *automatically created* from an RDA, this data is taken from the *originating document* from which it was generated.
 :::
 
-## **Header**
+## **2. Header**
 
 ### 2.1 Supplier Data 
 
@@ -70,7 +70,7 @@ The discounts proposed in the document header are reflected in every new article
 
 Here, the information entered in the *Subject Registry > Extra Data tab* is proposed, only if default data exist.
 
-## **Items**
+## **3. Items**
 
 To insert a *New Item* in the grid, simply position yourself on the row to fill in the various data or use the **New Item** button present on the ribbon bar.
 
@@ -155,7 +155,7 @@ import DocAttachDocument from './../../../import/sections/doc-attach-document.md
 
 <DocAttachDocument />
 
-## **Summaries**
+## **4. Summaries**
 
 In this tab's sections, the main information of the entire document is presented.
 
