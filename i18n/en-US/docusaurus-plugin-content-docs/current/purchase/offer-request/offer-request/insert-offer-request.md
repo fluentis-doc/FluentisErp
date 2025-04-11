@@ -56,7 +56,7 @@ If a financial discount is associated with the [Payment Type](/docs/configuratio
 
 > **Delete Payments**: used to delete the selected payment rows.
 
-### 2.4 Discounts (Sconti)
+### 2.4 Discounts  
 
 Only the predefined discounts taken from the *Supplier Registry > Discounts tab* are proposed and not those attributed to payment conditions or certain articles. They can be modified/deleted by the user.
 
@@ -129,7 +129,7 @@ In the grid, all discounts associated with the item are proposed, each with its 
 
 This tab contains additional information related to the item.
 
->- **ITEM**: displays the selected item in the upper grid.
+>- **Item**: displays the selected item in the upper grid.
 >- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-item) of the item registry. If prices and/or different discounts for each variant have been entered in the price list, they will be updated when selecting a different variant of the item.
 >- **Note**: these are notes related to the item line, which can also be entered through the help of coded notes. They will be reported in all documents generated from this.
 >- **Warehouse and reason**: the warehouse and the reference cause will be automatically proposed when loading the relevant items into the warehouse.
@@ -178,7 +178,7 @@ The final discounts applied at the individual article level are distributed (or 
 - **On-account**: represents the value of any deposit received for the document.
 
 - **Amount giveaway**: represents the amount of gift-type items included in the *Items* tab.
-
+ 
 - **Total discounts applied**: represents the total value of discounts applied to items, excluding final discounts.
 
 - **Items net amount**: *Items gross amount* – *Total discounts applied*.
