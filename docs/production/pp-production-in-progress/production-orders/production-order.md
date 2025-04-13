@@ -22,6 +22,8 @@ In testata vengono riepilogati tutti i dati riguardanti l'ordine di produzione, 
 
 **Stato**: indica lo stato dell'ordine di produzione: *Lanciato* è lo stato iniziale dell'ordine di produzione appena generato dalla procedura di rilascio ordini pianificati, mentre *Esecutivo* è lo stato da assegnare all'ordine per poi poter procedere con le segnalazioni di produzione.     
 
+**Tassativo**: abilitando questo flag, si rende l’ordine di produzione tassativo, quindi, la [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling) non lo andrà a riposizionare nel tempo e lo manterrà fisso in quelle date. Inoltre, questo verrà preso anche in considerazione dalla procedura [M.R.P.](/docs/planning/ms-master-scheduling/mrp) quando è attivo il flag *Differenzia domanda di produzione confermata*.
+
 ## Materiali
 
 In questo tab vengono riportati i materiali di primo livello della distinta base relativa al prodotto finito da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali alla lista componenti dell'ordine di produzione.  
@@ -34,16 +36,24 @@ Per importare i dati direttamente dalla distinta base dell'articolo, è necessar
 
 *Campi specifici*:
 
-**Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in distinta base. Essa può essere modificata, come tutti gli altri dati presenti in questa griglia;  
-**C/L**: in questo campo viene ripreso il flag presente nei *Parametri MRP* dell'articolo chiamato 'considera in CL' ovvero indica se l'articolo deve essere incluso come materiale negli ordini di conto lavoro;  
+**Classe**: Indica la classe dell'articolo;       
+**Codice articolo**: indica il codice dell'articolo;          
+**Variante**: in questo campo viene inserita l'eventuale variante dell'articolo;           
+**C/L**: in questo campo viene ripreso il flag presente nei *Parametri MRP* dell'articolo chiamato 'considera in CL' ovvero indica se l'articolo deve essere incluso come materiale negli ordini di conto lavoro;      
+**UM**: in questo campo viene riportata l'unità di misura principale dell'articolo;        
 **Unità di misura**: in questo campo si inserisce l'eventuale unità di misura alternativa dell'articolo;  
 **Data impiego**: coincide con la data inizio prevista dell'ordine di produzione (modificando la prima viene automaticamente cambiata anche quest'ultima);  
-**Q.tà impiego**: rappresenta la quantità unitaria necessaria per questo articolo (prevista dalla DB) che può essere comunque modificata;  
-**Q.tà totale**: rappresenta la quantità che si ottiene moltiplicando la *Q.tà d'impiego* per la *Q.tà da produrre*; 
-**Q.tà alternativa**: rappresenta la quantità totale ma espressa nell'unità di misura alternativa;  
+**Quantità impiego**: rappresenta la quantità unitaria necessaria per questo articolo (prevista dalla DB) che può essere comunque modificata;  
+**Quantità totale**: rappresenta la quantità che si ottiene moltiplicando la *Q.tà d'impiego* per la *Q.tà da produrre*; 
+**Quantità alternativa**: rappresenta la quantità totale ma espressa nell'unità di misura alternativa;      
+**Quantità prelevata**:      
+**Fissa / Variabile**:      
 **% scarto**: in questa casella viene inserita o ripresa dalla distinta base l'eventuale % di scarto per questo articolo;  
-**Fase/StFase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase, e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;  
-**Q.tà disp**: in questo campo compare la quantità disponibile dell'articolo alla data di impiego;
+**Fase / Sotto Fase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase, e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;  
+**Magazzino**: indica il magazzino dal quale verrà scaricato questo articolo;       
+**Causale**: indica la causale di magazzino con quale verrà scaricato questo articolo;    
+**Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in distinta base. Essa può essere modificata, come tutti gli altri dati presenti in questa griglia;      
+**Quantità disp**: in questo campo compare la quantità disponibile dell'articolo alla data di impiego;
 **Da dichiarare su mobile**: se abilitato, verrà dichiarato su mobile.
 
 ## Fasi
@@ -58,37 +68,40 @@ Nell'ordine di produzione è possibile variare una fase da interna ad esterna, q
 
 *Campi specifici*:
 
-**Codice fase/Fase/Sotto Fase**: con un doppio click si apre il relativo help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase;  
-**Ctrl. qual.**: questo flag indica se il materiale debba essere sottoposto a controllo qualità prima del suo utilizzo;  
-**Fase prod**: se il flag è spuntato identifica che la fase in questione è una fase produttiva, e che quindi dovrà essere segnalata;  
-**Centro di lavoro**: da questa combo si imposta il Centro di lavoro. Esso viene proposto in automatico, ripreso dalla fase che è stata precedentemente selezionata ed inserita nella griglia;  
-**Data inizio/fine prevista**: si tratta delle date di inizio e fine della relativa fase; cambiando le Date previste di inizio e fine lavorazione vengono automaticamente modificate anche quest'ultime. Esse vengono calcolate in base i tempi inseriti nelle fasi di lavorazione, e più precisamente in base al maggiore tra il tempo operaio e il tempo macchina totale per la fase selezionata;  
+**Codice fase / Fase / Sotto Fase**: con un doppio click si apre il relativo help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase;  
+**Controllo qualità**: questo flag indica se il materiale debba essere sottoposto a controllo qualità prima del suo utilizzo;  
+**Fase produttiva**: se attivo, indica che la fase è produttiva e si può procedere all'inserimento delle segnalazioni di produzione (quindi attivandolo si vuole che la produzione per questa fase venga rilevata); se non attivo, non sarà possibile dichiarare la fase stessa;        
+**Fase movimentabile**: se attivo, indica che nel momento in cui si va a rilevare la fase di produzione si creano anche dei movimenti di magazzino; questo significa che procedendo con la dichiarazione di produzione di procederà anche al carico del prodotto finito a magazzino e allo scarico della materia prima impiegata per la produzione in quella fase;    
+**Centro di lavoro**: da questa combo si imposta il Centro di lavoro. Esso viene proposto in automatico, ripreso dalla fase che è stata precedentemente selezionata ed inserita nella griglia;     
+**Tempo fisso**: viene ripreso dal centro di lavoro. Se attivo significa che il centro di lavoro è a tempo fisso;     
+**Data inizio / fine prevista**: si tratta delle date di inizio e fine della relativa fase; cambiando le Date previste di inizio e fine lavorazione vengono automaticamente modificate anche quest'ultime. Esse vengono calcolate in base i tempi inseriti nelle fasi di lavorazione, e più precisamente in base al maggiore tra il tempo operaio e il tempo macchina totale per la fase selezionata;  
+**Totale tempo macchina**: indica il totale del tempo macchina, dato dal prodotto del **Tempo macchina** e del **Numero macchine**;       
 **Tempo macchina**: è il tempo impiegato dalla macchina per realizzare la fase, riferito alla quantità di pezzi per fase;  
 **Numero macchine**: indica il numero di macchine coinvolte in questa fase;  
-**Qtà pezzi per fase**: indica il numero di pezzi per fase;  
+**Totale tempo operaio**: indica il totale del tempo macchina, dato dal prodotto del **Tempo operaio** e del **Numero operai**;       
 **Tempo operaio**: è il tempo impiegato dall'operaio per realizzare questa fase, riferito alla quantità di pezzi per fase;  
-**Numero operai**: è il numero di operai coinvolti in questa fase;  
-**Conto terzista/descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa *casella è attiva solo* nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo;
-**Ord. CL creato**: se flaggato, indica che è già stato creato il relativo ordine di conto lavoro;
-**Sequenza**: indica la sequenza con cui dovrà essere realizzata quella fase, è possibile modificarlo direttamente dall'ordine di produzione.   
-**Costo operaio**: viene valorizzato da quando inizio a fare le dichiarazione di produzione;    
-**Costo macchina**: viene valorizzato da quando inizio a fare le dichiarazione di produzione;    
-**Costo attrezzaggio**: viene valorizzato da quando inizio a fare le dichiarazione di produzione.   
+**Numero operai**: è il numero di operai coinvolti in questa fase;      
+**Fase sovrapposizione**: nel caso di sovrapposizione, si andrà ad indicare la fase che si intende sovrapporre alla fase principale;      
+**Sotto fase sovrapposizione**: nel caso di sovrapposizione, si andrà ad indicare la sotto fase che si intende sovrapporre alla fase principale;         
+**Ubicazione**: indica l'ubicazione associata alla fase;       
+**Ordine conto lavoro creato**: se attivo, indica che è già stato creato il relativo ordine di conto lavoro;       
+**Conto terzista / descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa *casella è attiva solo* nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo;
 
 ### Fasi - Proprietà
 
 Contiene le proprietà relative alla fase selezionata.
 
-**Descrizione fase/sottofase**: in questo campo appare la descrizione della fase selezionata;  
+**Descrizione fase / Sottofase**: in questo campo appare la descrizione della fase selezionata;  
 **Tipo**: in questa combo è possibile impostare il tipo di lavorazione (interna o esterna);  
-**Sovrapp**: tramite questa combo inserisco la tipologia di un'eventuale sovrapposizione tra fasi. Possiamo avere sovrapposizione *Totale* (in questo caso la fase in oggetto è sovrapposta totalmente alla fase indicata successiva), *A pezzi* (in questo caso è necessario indicare dopo quanti pezzi prodotti da questa fase avrà inizio la fase successiva), *A tempo* (in questo caso è necessario indicare dopo quanti minuti da quando è iniziata la fase in oggetto avrà inizio la fase successiva);  
+**Sovrapposizione**: tramite questa combo inserisco la tipologia di un'eventuale sovrapposizione tra fasi. Possiamo avere sovrapposizione *Totale* (in questo caso la fase in oggetto è sovrapposta totalmente alla fase indicata successiva), *A pezzi* (in questo caso è necessario indicare dopo quanti pezzi prodotti da questa fase avrà inizio la fase successiva), *A tempo* (in questo caso è necessario indicare dopo quanti minuti da quando è iniziata la fase in oggetto avrà inizio la fase successiva);  
 **UM Tempi**: in questa combo box compare l'Unità Misura Tempi della Fase; si può decidere di gestire i tempi della fase in secondi, minuti, ore e giorni. Di solito si gestiscono a minuti i tempi delle fasi interne e a giorni quelli delle fasi esterne, ma ovviamente dipende molto dalla tipologia di azienda per cui si sta impostando il lavoro;  
-**Macchina**: in questa combo può essere selezionato il codice (e descrizione) della relativa macchina. Essa viene proposta in automatico, ripresa dal centro di lavoro che è stato precedentemente inserito nella griglia;  
+**Macchina**: in questa combo può essere selezionato il codice (e descrizione) della relativa macchina. Essa viene proposta in automatico, ripresa dal centro di lavoro che è stato precedentemente inserito nella griglia;     
+**Sito produttivo**: indica il sito di produzione nel quale verrà prodotto l'articolo; questo viene ereditato dalla commessa di produzione;       
 **Gruppo manodopera**: in questa combo può essere selezionato il codice (e descrizione) del relativo gruppo manodopera. Essa viene proposto in automatico, ripreso dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Sovrapposiz. riferita alla fase/sottofase**: qui viene indicato il codice della fase e Sottofase che presentano una sovrapposizione con la fase in oggetto. Di solito si indica la fase successiva, ma anche qui si tratta solo di una consuetudine; 
+**Quantità pezzi per fase**: indica il numero di pezzi prodotti per ciascuna esecuzione di quella fase;         
 **Valore**: qui si indica il valore dell'eventuale sovrapposizione, utilizzando i criteri specificati sopra;  
 **Utilizzo**: se il flag è attivato, significa che si vuole che il tempo di attesa/coda aumenti il tempo di impegno del Centro di Lavoro su quella fase;  
-**Tempo di attesa o coda**: indica l'eventuale tempo di attesa/coda prevista per questa macchina.  
+**Tempo di attesa o coda**: indica l'eventuale tempo di attesa / coda prevista per questa macchina.  
 
 ### Fasi - Extra Data
 
@@ -96,23 +109,24 @@ Contiene gli eventuali extra data relativi alla fase selezionata.
 
 ## Attrezzaggio
 
-In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente. 
+In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente.      
+È importante ricordare che i dati inserenti al centro di lavoro, macchina e manodopera, vanno inseriti solamente se sono differenti da quelli usati per la fase, altrimenti se vuoti verranno automaticamente considerati quello della fase principale.  
 
 *Campi specifici*:
 
-**Fase/Sottofase**: in questi campi vengono visualizzate le informazioni relative alla fase che è selezionata nel tab *Fasi*;  
+**Fase / Sottofase / Descrizione**: in questi campi vengono visualizzate le informazioni relative alla fase che è selezionata nel tab *Fasi*;  
 **Tipo**: indica la tipologia della fase (interna o esterna);  
 **Tipo sovrapposizione**: indica l'eventuale tipologia della sovrapposizione;  
 **UM Tempi**: indica l'unità di misura temporale della fase;  
 **Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per l'attrezzaggio;  
 **Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per l'attrezzaggio;  
-**Gruppo MDO**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio;  
+**Gruppo Manodopera**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio;  
 **Valore**: indica il valore dell'eventuale sovrapponibilità;  
-**CdL**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
+**Centro di lavoro**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
 **Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
 **Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
 **Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
-**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio, che viene sommato al tempo attrezzaggio;  
+**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio. Si utilizza nel caso in cui sia necessario riattrezzare il centro di lavoro tra un'esecuzione e l'altra della fase stessa e viene sommato al tempo attrezzaggio:        
 **Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
 **Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
 
@@ -131,15 +145,15 @@ In questo tab, costituito principalmente da una griglia, è possibile definire q
 
 ## Controllo qualità
 
-In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di controllo qualità per la fase/sottofasse.
+In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di [controllo qualità](/docs/quality/quality-intro) per la fase / sottofase.
 
 ## Nota fase
 
-In questo tab viene visualizzata la nota legata alla fase di lavorazione selezionata nel tab *Fasi*. Essa è modificabile dall'utente contestualmente all'ordine di produione in oggetto.
+In questo tab viene visualizzata la nota legata alla fase di lavorazione selezionata nel tab *Fasi*. Essa è modificabile dall'utente contestualmente all'ordine di produzione in oggetto.
 
-## Istruzioni opertative
+## Istruzioni operative
 
-In questo tab è possibile allegare e visualizzate le *Istruzioni operative* legate alla fase di lavorazione selezionata nel tab *Fasi*.
+In questo tab è possibile allegare e visualizzate le *Istruzioni operative* legate alla fase di lavorazione selezionata nel tab *Fasi*. Queste saranno visualizzabili anche in [Fluentis MES](/docs/production/mes/mes-intro). 
 
 ## Personale
 
