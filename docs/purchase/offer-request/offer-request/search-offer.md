@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Il modulo si trova nell'area **Acquisti > Richieste di offerta**. Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Acquisti](/docs/purchase/purchases-intro).
 
-Nell'area di filtro è possibile scegliere se visualizzare le richieste di offerta *aperte* e/o *chiuse* e se visualizzare *tutte le versioni* oppure solo l'ultima versione di ciascuna RDO.
+Nell'area di filtro è possibile scegliere se visualizzare le richieste di offerta *aperte* e/o *chiuse* e se visualizzare *tutte le versioni* oppure solo l'ultima versione di ciascuna RDO.  
 
 Sopra la griglia dei risultati ci sono delle *tiles* che permettono di filtrare velocemente i seguenti tipi di Richieste di offerta: 
 > **Confermate con successo**: RDO confermate, ma non ancora chiuse.    
