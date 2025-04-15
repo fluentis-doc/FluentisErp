@@ -36,7 +36,7 @@ Za svaki registar moguće je **dodijeliti više podračuna istovremeno**. Najče
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data/image01.png)
 
-### [Šifarnik banaka](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/references)
+### [Šifarnik banaka](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry)
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data/2.png)
 

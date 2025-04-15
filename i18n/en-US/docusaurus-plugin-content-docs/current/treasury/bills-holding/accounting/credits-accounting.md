@@ -27,7 +27,7 @@ This section can be predefined within the [**parameters**](/docs/configurations/
 
 **Commission charges**: the sub-account where commission expenses will be accounted for, to be indicated in the next field.
 
-**Commissions**: the value of commissions on the credit of the effects that is accounted for; it can be proposed, for each effect, based on the *commissions* set in the [***bank registry***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail).  
+**Commissions**: the value of commissions on the credit of the effects that is accounted for; it can be proposed, for each effect, based on the *commissions* set in the [***bank registry***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry).  
 
 **Passive expenses**: account where interest calculated for discount summaries will be accounted.
 

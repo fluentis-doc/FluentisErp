@@ -13,7 +13,7 @@ Cada categoría tiene campos de detalle diferentes según los diferentes propós
 
 ### [Registro de clientes/proveedores (Anagrafica clienti/fornitori)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)
 
-### [Registro de bancos (Anagrafica banche)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/references)
+### [Registro de bancos (Anagrafica banche)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry)
 
 ### [Registro de agentes (Anagrafica agenti)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
 

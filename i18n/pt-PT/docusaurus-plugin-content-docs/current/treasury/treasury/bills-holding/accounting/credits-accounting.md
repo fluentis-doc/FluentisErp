@@ -27,7 +27,7 @@ Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/con
 
 **Spese commissioni**: il sottconto dove saranno contabilizzate le spese per commissioni, da indicare nel campo successivo
 
-**Commissioni**: valore delle commissioni sull'accredito degli effetti che viene contabilizzato; può essere proposto, per ogni effetto, sulla base delle *commissioni* impostate nell'[***anagrafica banca***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail).  
+**Commissioni**: valore delle commissioni sull'accredito degli effetti che viene contabilizzato; può essere proposto, per ogni effetto, sulla base delle *commissioni* impostate nell'[***anagrafica banca***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry).  
 
 **Oneri passivi**: conto dove saranno contabilizzati gli interessi passivi calcolati per distinte allo sconto.
 

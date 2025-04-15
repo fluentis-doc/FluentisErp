@@ -33,6 +33,6 @@ Pentru fiecare registru este posibil **să se aloce mai multe conturi analitice*
 
 ### [Registru clienți/furnizori](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)
 
-### [Registru bănci](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/references)
+### [Registru bănci](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry)
 
 ### [Registru agenți](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/analytic)

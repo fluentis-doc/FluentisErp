@@ -27,7 +27,7 @@ Esta sección puede ser predefinida dentro de los [**parametri**](/docs/configur
 
 **spese commissioni**: el subcuenta donde se contabilizarán los gastos por comisiones, que se deberá indicar en el campo siguiente.
 
-**commissioni**: valor de las comisiones sobre el crédito de los efectos que se contabilizará; puede ser propuesto, para cada efecto, en función de las *comisiones* establecidas en el [***registro bancario (anagrafica banca)***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail).  
+**commissioni**: valor de las comisiones sobre el crédito de los efectos que se contabilizará; puede ser propuesto, para cada efecto, en función de las *comisiones* establecidas en el [***registro bancario (anagrafica banca)***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry).  
 
 **oneri passivi**: cuenta donde se contabilizarán los intereses pasivos calculados para listas de descuentos.
 

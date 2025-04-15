@@ -12,7 +12,7 @@ Each category has different detail fields for different purposes; therefore, it 
 
 ### [Customer/Supplier Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)
 
-### [Bank Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/references)
+### [Bank Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry)
 
 ### [Agent Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
 
