@@ -1,5 +1,5 @@
 ---
-title: Anagrafiche banche
+title: Bank Registry
 sidebar_position: 1
 ---
 
