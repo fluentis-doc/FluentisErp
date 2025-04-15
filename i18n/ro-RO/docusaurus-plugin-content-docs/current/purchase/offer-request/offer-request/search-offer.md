@@ -1,19 +1,19 @@
 ---
-title: Ricerca Richieste di offerta
+title: Caută Cereri de oferte
 sidebar_position: 2
 ---
 
-Il modulo si trova nell'area **Acquisti > Richieste di offerta**. Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Acquisti](/docs/purchase/purchases-intro).
+Form-ul se află pe calea **Achiziţii > Cereri de oferte**. Pentru explicația funcționalităților comune documentelor de vânzare consultați secțiunea [Achiziţii](/docs/purchase/purchases-intro).  
 
-Nell'area di filtro è possibile scegliere se visualizzare le richieste di offerta *aperte* e/o *chiuse* e se visualizzare *tutte le versioni* oppure solo l'ultima versione di ciascuna RDO.
+În zona de filtre puteți să afișați cererile de ofertă *deschise* și/sau *închise* și dacă trebuie vizualizate *toate versiunile* sau doar ultima versiune a fiecărei *Cereri de ofertă*.
 
-Sopra la griglia dei risultati ci sono delle *tiles* che permettono di filtrare velocemente i seguenti tipi di Richieste di offerta: 
-> **Confermate con successo**: RDO confermate, ma non ancora chiuse.    
-> **In corso con successo**: RDO cornfermate e convertite in ordine non evaso oppure collegate ad una RDA che è già stata convertita in ordine.    
-> **Chiuse con successo**: RDO cornfermate, chiuse e convertite in ordine già evaso (oppure collegate ad una RDA che è già stata convertita in ordine).    
-> **In attesa di conferma**: RDO non ancora confermate, non chiuse e non collegate ad una RDA già convertita in ordine.    
-> **Sciolto**: RDO non confermate e non collegate ad una RDA già convertita in ordine.  
-> **Scadute**: RDO scadute e non collegate ad una RDA già convertita in ordine.  
+Deasupra zonei de filtre, după ce ați apăsat butonul *Caută*, sunt afișate câteva *tiles* care permit filtrarea rapidă a următoarelor tipuri de Cereri de oferte:  
+> **Confirmate cu succes**: CdO confirmate, dar neînchise încă.  
+> **În curs cu succes**: CdO confirmate și convertite în ordin neexecutat sau asociate unui CdA care a fost deja convertită în ordine.  
+> **Închise cu succes**: CdO confirmate, închise și convertite în ordine (ordin) deja executat (sau asociate unui CdA care a fost deja convertită în ordin).  
+> **În aşteptarea confirmării**: CdO încă neconfirmate, nu închise și neasociate unui CdA deja convertit în ordin.  
+> **Neconfirmate**: CdO neconfirmate și neasociate unui CdA deja convertit în ordin.  
+> **Expirate**: CdO expirate și neasociate unui CdA deja convertit în ordin.  
 
-Il pulsante specifico di questa maschera di ricerca è:     
-> **Nuova versione**: permette la creazione di una nuova versione dell'offerta selezionata; questa funzionalità permette di mantenere lo storico delle offerte precedenti. 
+#### Butonul specific  
+> **Versiune nouă**: permite crearea unei noi versiuni apentru oferta selectată; această funcționalitate permite menținerea istoricului ofertelor anterioare.
