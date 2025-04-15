@@ -14,4 +14,4 @@ Također, u **BizLinku** se nalazi i područje **Uvoz podataka “na zahtjev”*
 
 Modul je dostupan iz bočnog panela **Fluentis** putem sljedeće staze [**Alati**>**BizLink**].
 
-Više informacija o radu modula možete pronaći u nadolazećim artiklima.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyy
+Više informacija o radu modula možete pronaći u nadolazećim artiklima.
