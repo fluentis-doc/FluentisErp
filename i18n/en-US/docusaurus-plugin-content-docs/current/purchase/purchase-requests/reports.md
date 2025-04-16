@@ -5,7 +5,7 @@ sidebar_position: 4
 
 Access to the various invoice prints is done from the menu **Purchases > Purchase Requests > Reports**.
 
-### RDA Print
+## RDA Print
 
 The report is used to bulk print the requests already entered into the system, according to the filters specified in the initial form.    
 The first filters shown are those related to the header information of the documents, such as *Type*, *Document Number*, *Supplier*, *entry date*, and *Demand date*.    

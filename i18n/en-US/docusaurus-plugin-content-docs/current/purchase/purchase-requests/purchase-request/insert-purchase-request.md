@@ -7,21 +7,37 @@ The form opens via the path **Purchasing > Purchase Requests > New Request** or 
 
 ## *How to create a purchase request*
 
-## **1. Mandatory Data**
+<details>
+
+<summary>Click to see the fundamental steps</summary>
+
+1. **Insert the *PD Type* to create**: *Date*, *Year*, and *Number* will be proposed automatically.  
+
+2. **Insert the Items**: by double-clicking in the *Item Code* field, the item help opens, allowing you to search and select an existing item. All other line data, such as *unit of measure*, *quantity*, and *price*, will be proposed automatically but can be modified.
+Alternatively, it is possible to select as *Line Type* an *Non-Codified Item* and manually enter the subsequent data.
+
+3. **Insert any additional information** in the *Item Data* tabs.
+
+4. **Authorize the Purchase Request**: after selecting the items in the grid, click the *PD Authorization* button in the toolbar to make the PD available for subsequent procedures.   
+
+
+</details>
+
+## **1. Upper Section** {#upper-section}
 
 The mandatory fields for entering a purchase request are as follows:
 
 - **Type**: defaulted in *Configuration > Tables >* [*Purchase Request Types*](/docs/configurations/tables/purchase/purchase-request-type). Depending on the chosen type, certain functionalities such as *availability control (controllo della disponibilità)* will be activated.   
 - **Date/Year**: the current date is proposed by default, but it can be manually modified.   
-- **Number**: automatically proposed based on the selected *Purchase Request Type (Tipo RDA)*.
+- **Number**: automatically proposed based on the numeration associated with the *PD Type* chosen.
 
 #### Other Data
 
-- **Historicized**: by activating this flag, the RDA will no longer be visible in the [Automatic Order Creation](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) procedure.   
-- **Notes**: allows you to insert notes visible at the RDA level.   
-- **Request status**: this is a non-editable field; it displays the fulfillment status of the entire request considering the fulfillment status of each individual item line. An RDA is considered *Executed* or *Partially executed* when a supplier order has been generated for all or some of the item lines contained within it.       
+- **Historicized**: by activating this flag, the PD will no longer be visible in the [Automatic Order Creation](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) procedure.   
+- **Notes**: allows you to insert notes visible at the PD level.   
+- **Request status**: this is a non-editable field; it displays the fulfillment status of the entire request considering the fulfillment status of each individual item line. An PD is considered *Executed* or *Partially executed* when a supplier order has been generated for all or some of the item lines contained within it.       
 
-## **Items**
+## **2. Items** {#items}
 
 In the item grid, the following data are available: 
 
@@ -57,7 +73,7 @@ In the section below the grid, the document totals are reported:
 
 #### Specific Buttons
 
-> **Authorize RDA**: allows you to authorize all selected item lines; from this moment the document is considered confirmed.   
+> **Authorize PD**: allows you to authorize all selected item lines; from this moment the document is considered confirmed.   
 
 > **RDO Generator**: clicking this button will create the [Offer Request](/docs/purchase/offer-request/settings) for the lines present in the *RDO Generator* tab. For further details, see the section [RDO Generator](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generatore-rdo).   
 
@@ -67,7 +83,7 @@ In the section below the grid, the document totals are reported:
 
 ### 2.1 Item Data {#items-data}
 
-These are all informational fields that are taken by default from the item/supplier. However, it is still possible to overwrite this information at the line level.   
+These are all informational fields that are taken by default from the item/supplier. It is still possible to overwrite this information at the line level.   
 
 - **Price list**: the price list from which the item price was retrieved is proposed.    
 
@@ -81,29 +97,29 @@ These are all informational fields that are taken by default from the item/suppl
 - **Production Job Order**: if the purchase request was generated from the [planning](/docs/planning/ms-master-scheduling/general-schedule/) of a production order (with automatic order release or through the [procedure](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto) for releasing a planned purchase order), this field will report the reference to the order. For more information, see the [introductory section](/docs/purchase/purchase-requests/general-overview).   
 - **User**: it is possible to enter the operator who entered the purchase request in this field.   
 
-- **Project**: in this field, it is possible to associate a project with each item. If the RDA was generated from the planning of a production order containing a project, it will be automatically reported on the individual item lines.   
+- **Project**: in this field, it is possible to associate a project with each item. If the PD was generated from the planning of a production order containing a project, it will be automatically reported on the individual item lines.   
 - **Purchase turnover type**: the data entered in the [General](/docs/erp-home/registers/items/create-new-item) tab of the item registry is proposed.    
 - **Demand priority**: the *Procurement Priority* present within the [production order](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) is reported.   
 - **Notes**: in this field, it is possible to insert notes related to the item line; they will be reported in all documents generated from this.   
 - **Execution date**: at the time of [creating the supplier order](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) from the purchase request, the lines included in the order are fulfilled and the date of fulfillment will be reported in this field.   
 
-- **Authorised**: can be activated manually for each line or through the ribbon bar button *Authorize RDA (Autorizzazione RDA)*.    
-- **on date**: shows the date when the item line of the RDA was authorized.   
+- **Authorised**: can be activated manually for each line or through the ribbon bar button *Authorize PD (Autorizzazione PD)*.    
+- **on date**: shows the date when the item line of the PD was authorized.   
 - **By user**: shows the name of the user who authorized the purchase request.   
 
-### 2.2 Analytical Data 
+### 2.2 Analytic {#cost-profit-centers-tab}
 
 Contains fields related to analytical accounting. It shows the cost/profit centers on which the values of purchased products are distributed.    
 
 These data can be entered: manually or automatically if the cost/profit centers have been previously entered in the contact registry, item registry, or in the chart of accounts.
 
-### 2.3 Attached Documents
+### 2.3 Attached Documents {#attached-documents}
 
 The details of any attached document (name, document type, any notes, our/your reference) are displayed.    
 
 For instructions on how to attach a document, refer to the article [Attach Documents](/docs/guide/common/operations-with-data/attach-documents).
 
-### 2.4 RDO Generator
+### 2.4 RDO Generator {#generate-RDO}
 
 In this tab, the *Preferential vendors* present in the registry of the selected item in the grid are reported along with their respective data, price lists, and prices. From this tab, you can choose the best price. Alternatively, you can manually enter the supplier to be considered for the item.    
 
@@ -116,7 +132,7 @@ You can choose between:
 The other fields present in the grid are: 
 - **Code/Description/Supplier Item Barcode**: report the code and the description with which the supplier identifies the requested item; these are optional fields.     
 - **Units of Measure**: the unit of measure associated with the supplier in the [item registry](/docs/erp-home/registers/items/create-new-item) is proposed, or the primary unit of measure if this field is not valued.   
-- **Quantity**: is proposed based on the supplier’s economic lot if specified in the [preferred suppliers](/docs/erp-home/registers/items/create-new-item) tab of the item; alternatively, the quantity present in the item line of the RDA is proposed.
+- **Quantity**: is proposed based on the supplier’s economic lot if specified in the [preferred suppliers](/docs/erp-home/registers/items/create-new-item) tab of the item; alternatively, the quantity present in the item line of the PD is proposed.
 - **Price**: is proposed based on the price list associated with the preferred supplier. 
 - **Estimated Delivery Date**: allows you to enter the expected delivery date. 
 - **VAT**: the VAT rate present in the *Item data* tab is proposed but can be manually modified.  

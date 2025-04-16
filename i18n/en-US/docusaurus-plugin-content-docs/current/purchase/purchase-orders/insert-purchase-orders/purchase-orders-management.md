@@ -1,25 +1,45 @@
 ---
-title: New Supplier Order 
+title: New Purchase Order 
 sidebar_position: 2
 ---
 
-The form is located in the **Purchases > Supplier Orders** area and contains the details related to the products or services to be purchased, including quantities, prices, delivery terms, payment conditions, and other contractual specifications.
+The form is located in the **Purchases > Purchase Orders** area and contains the details related to the products or services to be purchased, including quantities, prices, delivery terms, payment conditions, and other contractual specifications.
 
 From the order search form, a new document can be created using the **New** button or an existing one can be opened to view and/or modify it.
 
-## *How to create a Supplier Order*
+## *How to create a Purchase Order*
+
+<details>
+
+<summary>Click to see the essential</summary>
+
+1. **Insert the mandatory data**: *Order Type* and *Supplier*. *Year*, *Number*, and *Insert Date* will be proposed automatically.  
+
+2. **Insert or modify optional header data**: such as delivery dates, any *discounts*, the *destination*, etc.  
+
+3. **Insert the Items**: by double-clicking in the *Item Code* field, the item help will open, allowing you to search for and select an existing item. All other line data, such as *unit of measure*, *quantity*, and *price*, will be proposed automatically but can be modified. Alternatively, you can select as *Row Type* a *Non-codified item* and manually enter the subsequent data.
+
+4. **Insert any discounts or additional information** in the *Discounts/Price lists* and *Item Data* tabs.
+
+5. **Check the Summary section** and enter any final expenses or discounts.  
+
+6. Once the order has been checked and confirmed, **enter a *Confirmation Date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
+
+</details>
+ 
+ 
 
 ## **1. Mandatory Data**
 
 To create the order, the user must enter the mandatory fields:
 
-- **Order Type**: defaulted in *Configuration > Tables > Purchases > Supplier Order Types*. This field determines the numbering range of the document being entered and automatically proposes the supplier order number based on the entry date and the last inserted number. Also, if the *Order Type* has the flag [Automatic order confirmation](/docs/configurations/tables/purchase/purchase-orders-type) set, the order confirmation date is proposed equal to the order entry date;
+- **Order Type**: defaulted in *Configuration > Tables > Purchases > Purchase Order Types*. This field determines the numbering range of the document being entered and automatically proposes the Purchase Order number based on the entry date and the last inserted number. Also, if the *Order Type* has the flag [Automatic order confirmation](/docs/configurations/tables/purchase/purchase-orders-type) set, the order confirmation date is proposed equal to the order entry date;
 - **Year**: the current year is entered automatically, but it can be manually modified while respecting the progression rule between date and number;
 - **Number**: automatically proposed based on the type, but can be manually modified while respecting the progression rule between date and number;
 - **Insert date**: the current date is automatically proposed, but can be manually modified while respecting the progression rule between date and number;
 - **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
 
-## **Header**
+## **2. Header** {#header}
 
 Continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
 
@@ -41,20 +61,20 @@ All these fields can be deleted or manually modified by the user.
 ### 2.2 Optional Header Data
 
 - **Requested delivery date** and **Delivery date**: if set before entering the items in the order, they will also be reported on the individual article lines. Alternatively, it is sufficient to press the *Replace expected delivery date in lines* button in the ribbon bar to update the dates on the article lines.
-- **Order confirmation date**: for *Order types* that have the flag [Automatic order confirmation](/docs/configurations/tables/purchase/purchase-orders-type). The current date is automatically entered at the time the order is created. To fulfill a supplier order, a *Confirmation date* must be entered.
+- **Order confirmation date**: for *Order types* that have the flag [Automatic order confirmation](/docs/configurations/tables/purchase/purchase-orders-type). The current date is automatically entered at the time the order is created. To fulfill a Purchase Order, a *Confirmation date* must be entered.
 - **Apply from**: it is the date of validity for the calculation of payment deadlines.
 - **Supplier notes**: this field is retrieved from the [supplier registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) but can also be entered manually.
 - **Our/Your reference**: in these fields, an internal reference and a supplier reference for the document are usually indicated. If present, it is retrieved from the supplier registry; otherwise, it can be entered manually.    
-In the event that the order is completed using the *Get from project* procedure, the information present in the corresponding fields of the purchasing job will be proposed in the *Supplier notes* and *Our/Your reference* fields. This transfer is valid only in the case of a supplier order created by retrieving data from a single source document.
+In the event that the order is completed using the *Get from project* procedure, the information present in the corresponding fields of the purchasing job will be proposed in the *Supplier notes* and *Our/Your reference* fields. This transfer is valid only in the case of a Purchase Order created by retrieving data from a single source document.
 - **Order initial note**: notes that have been previously entered can be selected in the table found under *Configuration > Utilities > Management of coded notes*. For this, the user must double-click the *Initial note* field to open the help for coded notes and select the data.
-- **Project**: using the field help, the document can be linked to a [project](/docs/project-management/projects/search-projects-intro). This association only works at the article header level. The project is automatically entered if the supplier order arises from a document that contains it (e.g., from planned purchase orders).
+- **Project**: using the field help, the document can be linked to a [project](/docs/project-management/projects/search-projects-intro). This association only works at the article header level. The project is automatically entered if the Purchase Order arises from a document that contains it (e.g., from planned purchase orders).
 - **Production job order**: using the field help, the document can be linked to a [production job](/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders). If the order is created from the release of planned purchase orders, the job is automatically proposed.
 - **Country**, *Language*, *Zone* are retrieved from the supplier's registry if present; otherwise, they can be entered manually.
-- **User**: allows the user who creates the document to be entered. If the *Supplier Order Parameters* have the flag [Mandatory operator code](/docs/configurations/parameters/purchase/purchase-orders-parameters) active, it will be mandatory to enter the employee in this field to be able to save the order. [Employees](/docs/project-management/registers/employee/new-employee) must be entered in advance in the *Employees* table.
+- **User**: allows the user who creates the document to be entered. If the *Purchase Order Parameters* have the flag [Mandatory operator code](/docs/configurations/parameters/purchase/purchase-orders-parameters) active, it will be mandatory to enter the employee in this field to be able to save the order. [Employees](/docs/project-management/registers/employee/new-employee) must be entered in advance in the *Employees* table.
 - **Shipments**, *Carriage*, and *Packing* are retrieved from the supplier's registry if present; otherwise, they can be manually entered.
 - **Price list**: if the supplier's registry has a price list with the *Default* flag, it will be proposed in this field along with its validity dates.
 - **Price lists to update**: if this flag is active, the related purchase price list is automatically updated during saving with the information of the article. This flag can also be modified at the article line level.
-- **Point of Sale**: located under the *Shipments* menu and is managed only by the vertical concerning distribution chains. In the case of a supplier order created from the transfer of goods between stores of the same chain, this field displays the point of sale from which the goods originated.
+- **Point of Sale**: located under the *Shipments* menu and is managed only by the vertical concerning distribution chains. In the case of a Purchase Order created from the transfer of goods between stores of the same chain, this field displays the point of sale from which the goods originated.
 - **Execution status**: When the order is fulfilled through a DDT or an invoice, its *Execution status* automatically changes from *Not executed* to *Partially executed* or *Closed*. The user can force the fulfillment of a not fully fulfilled order, and when this occurs, the fulfillment date is also saved in the *on date* field.
 
 The following flags indicate the *status of the order*:
@@ -64,7 +84,7 @@ The following flags indicate the *status of the order*:
 
 #### Specific Buttons
 
-> **Get from project**: calls the procedure to create a supplier order from a purchase job. It is activated by entering the supplier and the supplier order type. To fulfill the purchase job, it must be printed and confirmed.
+> **Get from project**: calls the procedure to create a Purchase Order from a purchase job. It is activated by entering the supplier and the Purchase Order type. To fulfill the purchase job, it must be printed and confirmed.
 > **Replace expected delivery date in lines**: allows, after specifying the *Requested delivery date* and/or the *Delivery date* in the header order, to replace these dates in bulk in the already entered article lines.
 
 ### 2.3 Payments 
@@ -136,7 +156,7 @@ To complete the procedure, click the Fulfillment button, which will retrieve all
 > **Select/Deselect all**: allows selecting/deselecting all items from the list;
 > **Activate/Deactivate only selected lines**: useful especially for fulfillment via grid; allows activating/deactivating the flags of all selected lines.
 
-## **Items**
+## **3. Items** {#items}
 
 In this tab, all items with their respective data are entered.
 
@@ -178,7 +198,7 @@ import Price from './../../../import/fields/item-price.md'
 
 <Price />
 
-In the absence of a price list, the proposed data can be retrieved from the *Latest cost* of the item registry, if the flag *Zero cost in absence of price lists* in [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) is not active.
+In the absence of a price list, the proposed data can be retrieved from the *Latest cost* of the item registry, if the flag *Zero cost in absence of price lists* in [Purchase Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) is not active.
 
 import Vat from './../../../import/fields/item-vat.md'
 
@@ -220,7 +240,7 @@ When creating/updating a price list using this procedure, only the discounts man
 
 **Delete discounts**: allows deleting the selected discount from the corresponding grid.
 
-### 3.4 Item Data 
+### 3.4 Item Data {#items-data} 
 
 Additional information related to the item is reported/inserted within this tab.
 
@@ -232,17 +252,17 @@ Additional information related to the item is reported/inserted within this tab.
 
 - **Brand**: represents the article's brand, pulled from its registry or from the article's price list.
 
-- **Production job order items**: if the supplier order is linked to a production job (via the release of a planned purchase order and creation of a supplier order from purchase request), the parent article contained in the job is reported in this field.
+- **Production job order items**: if the Purchase Order is linked to a production job (via the release of a planned purchase order and creation of a Purchase Order from purchase request), the parent article contained in the job is reported in this field.
 
-- **Offer Request**: if the order was created from a request for offer, via the procedure [Supplier Order Creation from Supplier Offer](/docs/purchase/offer-request/procedures/order-creation), the reference request is reported in this field.
+- **Offer Request**: if the order was created from a request for offer, via the procedure [Purchase Order Creation from Supplier Offer](/docs/purchase/offer-request/procedures/order-creation), the reference request is reported in this field.
 
 - **Warehouse and reason**: the warehouse and the reference reason are automatically proposed which will appear at the time of loading the relevant items into inventory. The data are retrieved from the [Order Types](/docs/configurations/tables/purchase/purchase-orders-type), but can be manually modified for each article line.
 
-- **Production Job Order**: if the supplier order was created from production planning, the reference production job is reported (see *Automatic Orders Generation*).
+- **Production Job Order**: if the Purchase Order was created from production planning, the reference production job is reported (see *Automatic Orders Generation*).
 
-- **Alternative unit price**: if active, indicates that the price entered on the article line refers to the alternative unit of measure and not to the main one. This flag, along with the *Alternative Measurement Unit* and *Alternative quantity* fields, is visible only if the flag *Management of double UM* in [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters/) is active.
+- **Alternative unit price**: if active, indicates that the price entered on the article line refers to the alternative unit of measure and not to the main one. This flag, along with the *Alternative Measurement Unit* and *Alternative quantity* fields, is visible only if the flag *Management of double UM* in [Purchase Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters/) is active.
 
-- **Unit of measure/Alternative quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-item) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* in Supplier Order Parameters is active, these values will automatically be proposed when entering the article.
+- **Unit of measure/Alternative quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-item) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* in Purchase Order Parameters is active, these values will automatically be proposed when entering the article.
 
 ### 3.5 Analytical 
 
@@ -268,7 +288,7 @@ import SalesValuesSection from './../../../import/sections/item-values-section.m
 
 <SalesValuesSection />
 
-## **Summaries**
+## **4. Summaries** {#summaries}
 
 In the different sections of this tab, the main information of the entire document and some specific buttons are presented.
 

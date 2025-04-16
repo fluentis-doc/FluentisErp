@@ -5,29 +5,42 @@ sidebar_position: 1
 
 The module is located in the **Purchases > Supplier Orders** area and represents one of the intermediate steps of the passive cycle. Purchase orders are formal documents issued by the *Purchasing* department, used to request goods or services from a supplier, according to predefined conditions. They contain details related to the products or services to be purchased, including quantities, prices, delivery terms, payment conditions, and other contractual specifications.   
 
-### **Operational Flow**
 
-Purchase orders can be entered manually or automatically created from existing documents. The methods of automatic generation include:    
+## **Preliminary Module Configuration**
 
-- **Purchase Requests**: through the procedure of [Automatic Order Creation](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests), it is possible to fulfill authorized RDA within a purchase order.    
-- **Offer Requests**: after selecting the best offer among those received from suppliers, it is possible to generate the purchase order through the procedure of [Creating Supplier Order from Supplier Offer](/docs/purchase/offer-request/procedures/order-creation).   
-- **Sales Orders**: the *Automatic Orders Generation* procedure also allows the creation of a *Purchase order* from a *Sales Order*. Alternatively, a purchase order can be generated from the filter of [Customer Order Search](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders) using the *Create Purchase Orders* button.    
-- **Purchase Commitments**: the purchase order can also be generated through the *total or partial fulfillment* of a purchase commitment, based on predefined and already negotiated contracts with the supplier.
+Before using the module, it is necessary to fill in the following tables and parameters:     
+- [**Numerations**](/docs/configurations/tables/fluentis-numerations): entry of the numeration to be used for orders.       
+- [**Purchase Order Types**](/docs/configurations/tables/purchase/purchase-orders-type): creation and definition of the types of orders to be used.
+- [**Purchase Order Parameters**](/docs/configurations/parameters/purchase/purchase-orders-parameters): specific settings for managing supplier orders.
 
-Once confirmed, the purchase order can be fulfilled through a DDT or an invoice. This allows for the recording of goods in stock and the subsequent accounting of the invoice within the system, maintaining accurate control of inventory and financial flows.
+## **Links to Other Modules**
 
-The module also offers the ability to create the [goods receipt](/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure), allowing the operator to fulfill the supplier order, record the arrival of goods, place them in the warehouse or predefined locations, and subsequently proceed to the official loading of the goods into stock.
+Purchase orders can be entered manually or created automatically from existing documents. The modes of automatic generation include:
 
-### **Main Features**
+import Link from '@docusaurus/Link';
 
-- Complete management of registries: Orders are integrated with supplier registries and price lists, allowing for the automatic configuration of discounts, payment terms, and other specific conditions for each supplier. 
-- Traceability of order status: Orders can be tracked through various statuses (entered, printed, etc.), with real-time updates available for all stages of the process.
-- Automated workflows: The phases of approval, notification sending, and order updates can be automated through configurable workflows, improving operational speed and reducing the risk of errors.
-- Reporting and order analysis: It is possible to access detailed reports analyzing order volumes, fulfillment times, incomplete orders, and other KPIs useful for improving procurement management and business performance.
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Purchase Requests</Link>
+        <p>The procedure for [Automatic Orders Generation](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) allows for the creation of Purchase Orders from authorized Purchase Requests.     </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/offer-request/settings">Offer Requests</Link>
+        <p>Purchase Orders can be generated from Offer Requests through the procedure for [Purchase Order Creation from Purchase Offer](/docs/purchase/offer-request/procedures/order-creation). </p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/sales-orders/settings">Sales Orders</Link>
+        <p>The procedure for *Automatic Orders Generation* also allows for the creation of a *Purchase Order* from a *Sales Order*. Alternatively, an order can be generated from the filter of [Sales Order Search](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders) using the *Create Purchase Orders* button.         </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-job-order/general-overview">Purchase Job Orders</Link>
+        <p>Purchase Orders can also be generated through the total or partial *execution* of a purchase job order, based on predefined and already negotiated contracts with the supplier.  </p>
+    </div>
+</div>
 
-### **Settings**
 
-Before using the module, it is necessary to properly configure the following parameters and tables: 
-> - [Numbering](/docs/configurations/tables/fluentis-numerations)    
-> - [Supplier Order Types](/docs/configurations/tables/purchase/purchase-orders-type) 
-> - [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters)
+Once confirmed, the purchase order can be fulfilled via a Delivery Note or an invoice. This allows for the registration of goods in the warehouse and the subsequent accounting of the invoice within the system, maintaining accurate control of stock and financial flows.
+
+The module also offers the possibility to create the [goods receipt](/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure), allowing the operator to fulfill the purchase order, register the arrival of goods, place them in the warehouse or predefined locations, and subsequently proceed to the official loading of goods into the warehouse.

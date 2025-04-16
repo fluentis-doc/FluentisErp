@@ -3,26 +3,36 @@ title: Introduction
 sidebar_position: 1
 ---
 
-The module is located in the **Purchasing > Purchase Requests** area and allows for the creation, management, and monitoring of purchase requests, enabling the operator to internally process the request for materials to be purchased based on reports of inventory shortages, requests from various company departments, or demand forecasts.
+The module is located in the **Purchases > Purchase Requests** area and allows for the creation, management, and monitoring of purchase requests, enabling the operator to internally process the request for materials to be purchased based on reports of inventory shortages, requests from various company departments, or demand forecasts.
 
-### **Operational Flow**
+## **Preliminary Configuration of the Module**
 
-*Purchase Requests* can be manually entered by the operator when a need for materials or services is identified, or they can be automatically generated from: 
+Before using the module, it is necessary to fill in the following tables and parameters:     
+- [**Purchase Request Numeration**](/docs/configurations/tables/fluentis-numerations): entry of the numbering to be used for Purchase Requests.       
+- [**Purchase Requests Types**](/docs/configurations/tables/purchase/purchase-request-type): creation of types of Purchase Requests.
+- [**Parameters for Purchase Requests**](/docs/configurations/parameters/purchase/purchase-requests-parameters): specific settings for managing Purchase Requests.
 
-- **Safety Stock**: from the homonymous print located under the *Logistics > Management Prints >* [*Reorder Point*](/docs/logistics/warehouse/management-reports/safety-stock-execution), it is possible to generate RDA (Restocking Requests) for items that have availability lower than their reorder point.      
-- **Production Planning**: General Planning and MRP can generate *planned purchase orders* based on the requests for materials needed for production. Such orders can be automatically or manually transformed into *Purchase Requests* through the [Release planned orders procedure](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto).     
+## **Links to Other Modules**
 
-Once *authorized*, the Purchase Request can generate a *Offer Request* using the **RDO Generator** button located within the RDA, or it can be transformed into a *Purchase order* using the [Automatic Order Creation procedure](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests).
+import Link from '@docusaurus/Link';
 
-### **Main Features**
-
-- Request Automation: Automatically generate purchase requests based on signals such as reorder points or production planning, simplifying and speeding up the procurement process. 
-- Monitoring and Tracking: Allows tracking the status of requests from submission to approval, until conversion into orders. 
-- Reporting: Generates detailed reports with user-customizable layouts, providing useful information for managing and analyzing procurement activities.
-
-### **Settings**
-
-Before using the module, it is necessary to complete the following tables and parameters:     
-> - [Numbering of purchase requests](/docs/configurations/tables/fluentis-numerations)    
-> - [Types of purchase requests](/docs/configurations/tables/purchase/purchase-request-type)
-> - [Purchase request parameters](/docs/configurations/parameters/purchase/purchase-requests-parameters)
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/logistics/warehouse/management-reports/safety-stock-execution">Logistics</Link>
+        <p>From the *Safety Stock* report, located under the area *Logistics > Management Reports > Safety Stock*, it is possible to generate the restocking Purchase Requests for items that have availability lower than their reorder point.  </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto">Planning and Production</Link>
+        <p>General planning and MRP can generate *planned purchase orders* based on the requests for materials needed for production. Such orders can be transformed into *Purchase Requests* automatically or manually through the *Release Planned Orders* procedure.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/offer-request/settings">Offer Requests</Link>
+        <p>The Purchase Request can generate an *Offer Request* using the **RDO Generator** button located within the Purchase Request. </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Purchase Orders</Link>
+        <p>Once authorized, the Purchase Request can be transformed into a *Purchase Order* through the [Automatic Orders Generation](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) procedure.</p>
+    </div>
+</div>

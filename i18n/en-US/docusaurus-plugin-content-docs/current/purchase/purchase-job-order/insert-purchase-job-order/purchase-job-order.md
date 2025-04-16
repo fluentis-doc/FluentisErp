@@ -1,18 +1,37 @@
 ---
-title: New Purchase Order 
+title: New Purchase Job Order 
 sidebar_position: 1
 ---
 
-The form is opened via the path **Purchases > Purchase Orders > New Purchase Order** or from the search filter for purchase orders, using the *New job order* button.
+The form is opened via the path **Purchases > Purchase Job Orders > New Purchase Job Order** or from the search filter for Purchase Job Orders, using the *New job order* button.
 
-## *How to create a purchase order*
+## *How to Create a Purchase Job Order*
+
+<details>
+
+<summary>Click to see the essential steps</summary>
+
+1. **Insert the required data**: *Type* and *Supplier*. *Year*, *Number*, and *Insert Date* will be proposed automatically.  
+
+2. **Insert or modify optional header data**: such as *discounts*, *destination*, etc.  
+
+3. **Insert the Items**: by double-clicking in the *Item Code* field, the item help opens, allowing you to search for and select an existing item. All other line data, such as *unit of measure*, *quantity*, and *price*, will be proposed automatically, but can be modified. Alternatively, you can select as *Row type* a *Non-codified Item* and manually enter the subsequent data.
+
+
+4. **Insert any discounts or other additional information** in the *Data* tab.
+
+5. **Check the Summary section** and enter any final expenses or discounts.  
+
+6. Once the order has been checked, **insert a *Confirmation Date* and activate the *Printed* flag in the header** to make the document available for fulfillment procedures.
+
+</details>
 
 ## **1. Mandatory data**
 
-To create a new purchase order, the user must enter the following data:
+To create a new Purchase Job Order, the user must enter the following data:
 
 - **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).  
-- **Job order type**: defaulted in the [Purchase Order Types table](/docs/configurations/tables/purchase/purchase-job-order-types). This field determines the range of numbering for the document being entered and automatically proposes the *Number* based on the entry date and the last number entered.   
+- **Job order type**: defaulted in the [Purchase Job Order Types table](/docs/configurations/tables/purchase/purchase-job-order-types). This field determines the range of numbering for the document being entered and automatically proposes the *Number* based on the entry date and the last number entered.   
 - **Year/Entry date**: the current date is proposed automatically but can be modified manually.   
 - **Number**: each document is assigned a number according to the numbering specified by the user in the [Numbering table](/docs/configurations/tables/fluentis-numerations). 
 - **Internal number**: optional data; it is proposed to be the same as the previous field, but can be modified manually by entering a different alphanumeric code.
@@ -45,12 +64,12 @@ All these fields can be deleted or modified manually by the user.
 > **Initial note**: you can select notes that were previously entered in the table located in the path *Configuration > Utilities > Management of Coded Notes*. To do this, the user must double-click the *Initial note* field to open Help for coded notes and select the data.   
 > **Project**: using the field help, you can link the document to a [project](/docs/project-management/projects/search-projects-intro). This association only works at the header level of the item.   
 
-> **Execution status**: when the order is fulfilled through a purchase order, its *Fulfillment status* automatically changes from *Not executed* to *Partially executed* or *Closed*. The user can force the fulfillment of an order that is not fully fulfilled, and when this happens, the **Execution date** is also saved in the respective field.   
+> **Execution status**: when the order is fulfilled through a Purchase Job Order, its *Fulfillment status* automatically changes from *Not executed* to *Partially executed* or *Closed*. The user can force the fulfillment of an order that is not fully fulfilled, and when this happens, the **Execution date** is also saved in the respective field.   
 > **Confirmation date**: allows you to enter the date on which the order was confirmed.     
 > **Printed**: this flag is automatically activated when the Definitive Print is launched via the button located in the ribbon bar. Alternatively, it can be activated manually to allow for fulfillment.    
     
 :::important Note
-To fulfill a purchase order within a Supplier Order, it is necessary that the order has a *Confirmation date* entered and that the *Printed* flag is active.
+To fulfill a Purchase Job Order within a Supplier Order, it is necessary that the order has a *Confirmation date* entered and that the *Printed* flag is active.
 :::
 
 ### 2.1 Payments 
