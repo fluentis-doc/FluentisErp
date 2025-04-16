@@ -4,24 +4,25 @@ sidebar_position: 1
 ---
 
 The module is located in the **Purchasing > Request for Quotation** area and represents one of the intermediate steps of the passive cycle.
+Offer Requests (RDO) are used to manage the process of collecting and comparing estimates from suppliers, allowing for the selection of the best supply conditions.
 
-Requests for quotations (RDO) are used to manage the process of collecting and comparing estimates from suppliers, allowing for the selection of the best supply conditions.
+## **Preliminary Module Configuration**
 
-### Key Features
+Before using the module, it is necessary to fill in the following tables and parameters:     
+- [**Numerations**](/docs/configurations/tables/fluentis-numerations): entering the numeration to be used for the Offer Requests.       
+- [**Offer Requests Type**](/docs/configurations/tables/purchase/purchase-offer-type): creating the types of RDO.
 
-- Sending multiple requests: RDO allows sending requests for quotes to different suppliers for specific goods or services, enabling the collection of information on prices, delivery times, payment conditions, and other important variables for the company.
-- Comparison of offers: it allows for comparing received offers, facilitating the selection of the best solution in terms of costs and contractual conditions.
-- Conversion into purchase orders: Once the most convenient offer is selected, the system allows converting the request for quotation into a purchase order using the procedure of [Creating Supplier Order from Supplier Offer](/docs/purchase/offer-request/procedures/order-creation).
-- Centralized creation and management: RDO can be generated using predefined templates that can be customized with the *Duplicate* option and the use of **Versions**, with the possibility of including details such as discounts, payment terms, and specific conditions.
+## **Links to Other Modules**
 
-### Operational Benefits 
+import Link from '@docusaurus/Link';
 
-- Cost reduction: By systematically comparing different offers, the company can choose suppliers with the most favorable economic conditions, reducing procurement costs.
-- Operational efficiency: Automating the request and offer comparison processes reduces manual workload, increasing the speed and efficiency of operations.
-- Improved transparency and traceability: The system allows tracking every phase of the request for quotation process, ensuring transparency and a complete archive for future verifications.
-
-### Settings
-
-Before using the module, the following tables need to be filled out:    
-> - [Numbering](/docs/configurations/tables/fluentis-numerations) 
-> - [Types of Requests for Quotations](/docs/configurations/tables/purchase/purchase-offer-type)
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Purchase Requests</Link>
+        <p>Offer Requests can be generated from the *Purchase Requests*, using the **RDO Generator** button located within the RDA.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Purchase Order</Link>
+        <p>Once the most convenient offer is selected, it is possible to convert the RDO into a purchase order using the procedure for [Purchase Order Creation from Purchase Offer](/docs/purchase/offer-request/procedures/order-creation).</p>
+    </div>
+</div>

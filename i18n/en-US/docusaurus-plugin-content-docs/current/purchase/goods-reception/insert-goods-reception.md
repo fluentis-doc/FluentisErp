@@ -5,6 +5,20 @@ sidebar_position: 3
 
 The form opens through the path **Purchasing > Goods Receipt > Create Goods Receipt** or from the search filter of the Goods Receipt, by using the *New* button.
 
+## *How to Create a Goods Receipt*
+
+<details>
+ 
+<summary>Click to see the essential steps</summary>
+ 
+1. **Insert the mandatory data**: *Type* and *Supplier*. *Year*, *Number*, and *Insert Date* will be proposed automatically.  
+ 
+2. **Insert the Items**: by double-clicking on the *Item Code* field, the item help opens, allowing you to search and select an existing item. All other row data, such as *unit of measure*, *quantity*, and *price*, will be proposed automatically but can be modified. Alternatively, you can select *Not-Codified Item* as the *Row Type* and manually enter the subsequent data.
+ 
+3. **Insert any additional information** in the *Batches and Serial Number* and *Item Data* tabs.
+ 
+</details>
+
 ## **1. Mandatory Data**
 
 To create the goods receipt, the user must enter the following data:

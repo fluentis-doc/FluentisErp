@@ -3,12 +3,32 @@ title: New Offer Request
 sidebar_position: 3
 ---
 
-## *How to create a request for quotation*
+The form opens via the path **Purchases > Offer Request > New Offer Request** or from the filter for searching Offer Requests, using the New button.
 
+## *How to create an offer request* 
 
-## **1. Mandatory Data**
+<details>
+ 
+<summary>Click to see the key steps</summary>
+ 
+1. **Insert the mandatory data**: *Offer Request Type* and *Supplier*. *Year*, *Number*, and *Date* will be proposed automatically.  
+ 
+2. **Insert or modify optional header data**: such as delivery dates, any *discounts*, the *destination*, etc.  
+ 
+3. **Insert the Items**: by double-clicking in the *Item Code* field, the item help opens, allowing you to search for and select an existing item. All other row data, such as *unit of measure*, *quantity*, *price*, will be proposed automatically but can be modified.
+Alternatively, you can select as *Row Type* an *Not-Codified Item* and manually insert the subsequent data.
+ 
+4. **Insert any discounts or additional information** in the *Discounts* and *Item Data* tabs.
+ 
+5. **Check the Summary section** and insert any final discounts.  
+ 
+6. Once the offer has been checked and confirmed, **Insert a *Confirmation Date* in the header** to make the document available for conversion to an order.
+ 
+</details>
 
-The mandatory fields for entering a purchase request are as follows:
+## **1. Upper Section** {#upper-section}
+
+The mandatory fields for inserting a purchase request are as follows:
 
 - **Type**: a mandatory field. Depending on the chosen [RDO Type](/docs/configurations/tables/purchase/purchase-offer-type), certain functionalities will be activated, such as *Fixed assets management*.
 - **Date/Year**: the current date is proposed by default but can be modified manually.
@@ -20,11 +40,11 @@ The mandatory fields for entering a purchase request are as follows:
 If the document is *automatically created* from an RDA, this data is taken from the *originating document* from which it was generated.
 :::
 
-## **2. Header**
+## **2. Header** {#header}
 
 ### 2.1 Supplier Data 
 
-By entering the **Supplier**, all specific header data in the **Header** tab are automatically proposed according to the data previously set in the [supplier registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) in the fields corresponding to their address and in the sections:
+By inserting the **Supplier**, all specific header data in the **Header** tab are automatically proposed according to the data previously set in the [supplier registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) in the fields corresponding to their address and in the sections:
 >- **Currency**: section containing [Currency](/docs/configurations/tables/general-settings/currencies), [Exchange Rate](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Value Date](/docs/guide/common/glossary/glossary-intro#currency-date).
 >- **Delivery**: section containing [Shipping](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Freight](/docs/guide/common/glossary/glossary-intro#carriage), [Packing](/docs/guide/common/glossary/glossary-intro#packing), default [Price List](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list), and its [validity range](/docs/guide/common/glossary/glossary-intro#validity-date).
 >- **Country**: section containing [Country](/docs/guide/common/glossary/glossary-intro#country), [Language](/docs/guide/common/glossary/glossary-intro#language), and [Zone](/docs/guide/common/glossary/glossary-intro#zone).
@@ -34,18 +54,18 @@ All these fields can be deleted or manually modified by the user.
 
 ### 2.2 Optional Header Data 
 
-- **Notes**: this field is taken from the supplier registry or potentially from the RDA, but can also be entered manually.
-- **Our/Your reference**: in these fields, an internal reference and a supplier reference for the document are usually indicated. If present, they are taken from the supplier registry; otherwise, they can be entered manually.
-- **Initial/Final notes**: notes that have been previously entered in the table found in the path *Configuration > Utilities > Management of coded notes* can be selected. To do this, the user must double-click on the *Initial/Final notes* field to open Help on coded notes and select the data.
+- **Notes**: this field is taken from the supplier registry or potentially from the RDA, but can also be inserted manually.
+- **Our/Your reference**: in these fields, an internal reference and a supplier reference for the document are usually indicated. If present, they are taken from the supplier registry; otherwise, they can be inserted manually.
+- **Initial/Final notes**: notes that have been previously inserted in the table found in the path *Configuration > Utilities > Management of coded notes* can be selected. To do this, the user must double-click on the *Initial/Final notes* field to open Help on coded notes and select the data.
 - **Project**: using the field help, the document can be linked to a project. This association only works at the header level of the article. The project is automatically inserted if the RDO was generated by an RDA containing it.
-- **Confirmation date estimation**: allows entering the date the quotation was confirmed, but it is not a mandatory data; in the procedure for [Creating a supplier order from a supplier quotation](/docs/purchase/offer-request/procedures/order-creation), unconfirmed RDOs can also be viewed and converted by activating the appropriate flag in the filter area.
-- **Estimated delivery date**: if set before entering the items within the RDO, it will also be reported on each individual article line. Alternatively, it will be sufficient to press the button *Replace estimated delivery date in lines* on the ribbon bar to update the dates on the article lines.
+- **Confirmation date estimation**: allows inserting the date the quotation was confirmed, but it is not a mandatory data; in the procedure for [Creating a supplier order from a supplier quotation](/docs/purchase/offer-request/procedures/order-creation), unconfirmed RDOs can also be viewed and converted by activating the appropriate flag in the filter area.
+- **Estimated delivery date**: if set before inserting the items within the RDO, it will also be reported on each individual article line. Alternatively, it will be sufficient to press the button *Replace estimated delivery date in lines* on the ribbon bar to update the dates on the article lines.
 - **Closing date**: at the time of converting the RDO into a supplier order, it is automatically populated with the current date if the appropriate flag to close converted quotations has been enabled.
 - **Offer validity**: allows setting an end date for the validity of the request for quotation.
 
 #### Specific Buttons
 
-> **Replace expected delivery date in lines**: after specifying the expected delivery date in the header, it is possible to replace it in bulk in the already entered article lines.
+> **Replace expected delivery date in lines**: after specifying the expected delivery date in the header, it is possible to replace it in bulk in the already inserted article lines.
 
 ### 2.3 Payments 
 
@@ -60,17 +80,18 @@ If a financial discount is associated with the [Payment Type](/docs/configuratio
 
 Only the predefined discounts taken from the *Supplier Registry > Discounts tab* are proposed and not those attributed to payment conditions or certain articles. They can be modified/deleted by the user.
 
-The discounts proposed in the document header are reflected in every new article line added to the document. If a new discount is entered in the header after entering the article lines, this will not be replicated in the already entered article lines.
+The discounts proposed in the document header are reflected in every new article line added to the document. If a new discount is inserted in the header after inserting the article lines, this will not be replicated in the already inserted article lines.
 
 #### Specific Buttons
 
 > **Delete default discounts**: used to delete the selected discounts.
 
-### Extra Data 
 
-Here, the information entered in the *Subject Registry > Extra Data tab* is proposed, only if default data exist.
+### 2.5 Extra Data 
 
-## **3. Items**
+Here, the information inserted in the *Subject Registry > Extra Data tab* is proposed, only if default data exist.
+
+## **3. Items** {#items}
 
 To insert a *New Item* in the grid, simply position yourself on the row to fill in the various data or use the **New Item** button present on the ribbon bar.
 
@@ -88,24 +109,24 @@ import RowNumber from './../../../import/fields/row-number.md'
 > - *GiveAway Item*: it is managed as a coded or uncoded item for tax and warehouse purposes, but being a gift, it is counted separately in the document summaries, and based on the tax flag, the amount of VAT on the gift will be calculated to be charged to the subject or not.
 
 :::note Note
-If you start directly with entering the item, its class, code, and row type (*Codified Item*) are automatically filled in.
+If you start directly with inserting the item, its class, code, and row type (*Codified Item*) are automatically filled in.
 :::
 
-- **Class/Code/Item Description**: can be entered manually or with the help of the field help, which will propose all the data related to the item registry. After entering the item, its Description will be automatically taken from the registry. If the item has Variants, it will be possible to select the desired variant from the Item Data tab.
+- **Class/Code/Item Description**: can be inserted manually or with the help of the field help, which will propose all the data related to the item registry. After inserting the item, its Description will be automatically taken from the registry. If the item has Variants, it will be possible to select the desired variant from the Item Data tab.
 
 - **Units of Measure**: the main unit of measure of the item is proposed, but if alternative units of measure are defined in the item registry, the user has the option to choose another.
 
 - **Quantity**: represents the quantity of the main U.M. and is set to 1 by default; it can be modified manually or may be retrieved from the document considered for fulfillment.
 
-- **Price**: the price is proposed from the price list entered in the contact registry; the reference price list for the item itself is displayed in the *Item data* tab; the same document could contain items with prices taken from different price lists if multiple cascading price lists are associated with the subject in the registry. Through double-clicking in the Price Lists field, the user can select a price list different from the default one, from which the price of the inserted item will be taken.
+- **Price**: the price is proposed from the price list inserted in the contact registry; the reference price list for the item itself is displayed in the *Item data* tab; the same document could contain items with prices taken from different price lists if multiple cascading price lists are associated with the subject in the registry. Through double-clicking in the Price Lists field, the user can select a price list different from the default one, from which the price of the inserted item will be taken.
 
-- **VAT**: the data entered in the VAT field of the contact registry takes priority. If this is not present, the value in the item registry is proposed, but the user has the option to enter another data.
+- **VAT**: the data inserted in the VAT field of the contact registry takes priority. If this is not present, the value in the item registry is proposed, but the user has the option to insert another data.
 
 - **Unit price**: is automatically calculated net of discounts.
 
 ### 3.2 Non-Mandatory Data 
 
-- **Purchase turnover**: the data entered in the *Generality* tab of the item registry is proposed.
+- **Purchase turnover**: the data inserted in the *Generality* tab of the item registry is proposed.
 
 - **Closing date**: indicates the closure date of the quotation; it is automatically filled if the flag to close quotations is selected at the time of [creating a supplier order from a supplier quotation](/docs/purchase/offer-request/procedures/order-creation).
 
@@ -113,11 +134,11 @@ If you start directly with entering the item, its class, code, and row type (*Co
 
 - **Estimated delivery period**: a free descriptive field where it is possible to indicate the expected time frame for the delivery of the goods.
 
-### 3.3 Discounts
+### 3.3 Discounts {#discount}
 
 - **Bracket type**: indicates the discount tier to be used, which is taken from the supplier registry or the price list.
 
-- **Manual price**: is automatically activated when the price of the item has been manually entered or modified.
+- **Manual price**: is automatically activated when the price of the item has been manually inserted or modified.
 
 In the grid, all discounts associated with the item are proposed, each with its calculation base and assignment. Discounts can be taken: from the supplier registry, from the payment solution assigned to the document, from the price list, or from the [definition of discount policies](/docs/purchase/price-control/definition). All proposed data are modifiable.
 
@@ -125,37 +146,38 @@ In the grid, all discounts associated with the item are proposed, each with its 
 
 > **Delete discounts**: allows deleting the selected discount from the corresponding grid.
 
-### 3.4 Item Data
+### 3.4 Item Data {#items-data}
 
 This tab contains additional information related to the item.
 
 >- **Item**: displays the selected item in the upper grid.
->- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-item) of the item registry. If prices and/or different discounts for each variant have been entered in the price list, they will be updated when selecting a different variant of the item.
->- **Note**: these are notes related to the item line, which can also be entered through the help of coded notes. They will be reported in all documents generated from this.
+>- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-item) of the item registry. If prices and/or different discounts for each variant have been inserted in the price list, they will be updated when selecting a different variant of the item.
+>- **Note**: these are notes related to the item line, which can also be inserted through the help of coded notes. They will be reported in all documents generated from this.
 >- **Warehouse and reason**: the warehouse and the reference cause will be automatically proposed when loading the relevant items into the warehouse.
 
->- **Project**: represents the project to associate with the document. If a project has been entered in the document header, it will be reported on all article lines; alternatively, it can be selected through the specific project help.
+>- **Project**: represents the project to associate with the document. If a project has been inserted in the document header, it will be reported on all article lines; alternatively, it can be selected through the specific project help.
 >- **Price list**: the price list from which the price of the item has been taken is proposed, along with its start/end validity dates.
 
 >- **Alternative Unit of Measure/Quantity**: allows setting an alternative unit of measure and the corresponding quantity for the selected item in the grid.
->- **Alternative unit price**: if active indicates that the price entered on the item row refers to the alternative unit of measure and not the main one.
+>- **Alternative unit price**: if active indicates that the price inserted on the item row refers to the alternative unit of measure and not the main one.
 
 >- **Brand**: represents the brand of the item, retrieved from its registry or the item's price list.
 >- **Purchase request**: if the quotation was created from an RDA, the corresponding [Purchase Request](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request) will be reported.
 
-#### 3.4 Extra Data 
+
+#### 3.4 Extra Data {#extra-data}
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-#### 3.5 Attached Documents 
+#### 3.5 Attached Documents {#attached-documents}
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-## **4. Summaries**
+## **4. Summaries** {#summaries}
 
 In this tab's sections, the main information of the entire document is presented.
 
@@ -187,13 +209,13 @@ The final discounts applied at the individual article level are distributed (or 
 
 - **Net amount of final discounts**: *Items net amount* - *Total final discounts*.
 
-- **Total charges items**: represents the value of expenses entered in the previous tab as *Charge type* items.
+- **Total charges items**: represents the value of expenses inserted in the previous tab as *Charge type* items.
 
-- **Collection charges**: represents the sum of collection expenses entered in the *Charges* grid.
+- **Collection charges**: represents the sum of collection expenses inserted in the *Charges* grid.
 
-- **Stamp charges**: represents the sum of stamp duty expenses entered in the *Charges* grid.
+- **Stamp charges**: represents the sum of stamp duty expenses inserted in the *Charges* grid.
 
-- **Total expenses/discounts/increases**: represents the total value of expenses entered in the *Charges* grid.
+- **Total expenses/discounts/increases**: represents the total value of expenses inserted in the *Charges* grid.
 
 - **Origin amount**: *Items net amount* – *Final discounts* + *Total charges items* + *Total expenses/discounts/increases*.
 
