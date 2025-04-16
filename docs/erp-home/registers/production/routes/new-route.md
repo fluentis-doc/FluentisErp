@@ -71,7 +71,7 @@ Tutte le fasi esterne devono sempre avere i flag **Fase produttiva** e **Fase mo
 
 **Valore:** permette di indicare il valore relativo al tipo di sovrapposizione e non centra nulla con valore il economico (ad esempio se la sovrapposizione è *A pezzi* allora nel campo *Valore* è necessario indicare dopo quanti pezzi è possibile iniziare la fase, mentre se la sovrapposizione è *A tempo* nel campo *Valore* è necessario inserire il tempo che deve trascorrere per poter iniziare con la fase);
 
-**Fase sovrapposizione / sottofase sovrapposizione**: in questi due campi, nel caso di sovrapposizione, si andrà ad indicare la fase che si intende sovrapporre alla fase principale;
+**Fase sovrapposizione / sottofase sovrapposizione**: in questi due campi, nel caso di sovrapposizione, si andrà ad indicare la fase che si intende sovrapporre alla fase selezionata;
 
 **Costo Unitario**: in questo campo si va ad inserire il costo della fase quando si decide di non valorizzare con la valorizzazione di macchina e gruppo manodopera;
 
