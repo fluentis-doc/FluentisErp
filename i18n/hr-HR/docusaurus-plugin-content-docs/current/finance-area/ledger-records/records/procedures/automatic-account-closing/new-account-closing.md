@@ -1,137 +1,135 @@
 ---
-title: Nuova chiusura automatica
+title: Novo automatsko zatvaranja
 sidebar_position: 2
 ---
 
-La procedura di Chiusura automatica conti gestisce la chiusura di bilancio e la successiva riapertura: si tratta del solo movimento contabile, senza alcuna influenza dal punto di vista dei partitari.
+Postupak automatskog zatvaranja konta upravlja zatvaranjem bilance i naknadnim ponovnim otvaranjem: radi se samo o računovodstvenom zapisu, bez ikakvog utjecaja na stranu knjiženja.  
 
-La form si compone di una serie di tab e di un'area di testata comune in cui inserire i dati principali quali la data della chiusura e la descrizione.
+Obrazac se sastoji od niza kartica i zajedničkog područja zaglavlja u kojem se unose glavni podaci, poput datuma zatvaranja i opisa. 
 
-## Dati obbligatori
+## Obavezna polja  
 
-Una volta lanciata la nuova chiusura, all'apertura della form vengono proposti in automatico la data di chiusura (data odierna) ed il numero di versione (progressivo), campi comunque editabili.
+Nakon pokretanja novog zatvaranja, prilikom otvaranja obrasca, automatski se predlažu datum zatvaranja (današnji datum) i broj verzije (redni broj), iako su ta polja i dalje moguća za uređivanje.
 
-E' necessario inserire una descrizione e **compilare i campi obbligatori presenti nella Tab Parametri prima di procedere a Salvare** la chiusura.
+Potrebno je unijeti opis i **ispuniti obavezna polja prisutna na kartici Parametri prije nego što se nastavi sa spremanjem** zatvaranja.
 
-Il salvataggio è necessario per abilitare i comandi presenti nella ribbon bar per l'elaborazione del calcolo, **Ripresa valori sottoconti**, e la contabilizzazione, **Crea registrazione per la chiusura dei conti.**
+Spremanje je potrebno kako bi se omogućili naredbe prisutne na alatnoj traci za obradu izračuna, **Vrati vrijednosti podkonta**, i evidentiranje, te za, **Kreiranje registracije za zatvaranje konta**.
 
 ### Parametri
 
-Nel tab ‘parametri' è necessario inserire: 
+U kartici 'Parametri' potrebno je unijeti:
 
-- dati per filtrare i movimenti contabili che saranno oggetto di chiusura dei conti; le **date registrazione e competenza** individuano quali registrazioni riportare nel saldo contabile: in particolare le date di competenza saranno relative al periodo di bilancio (1/1/….-31/12/….), mentre il campo ‘a data registrazione' potrebbe slittare nell'esercizio successivo per ricomprendere le scritture di rettifica:** si consiglia più semplicemente di non impostare il filtro per date registrazione**.
+- podatke za filtriranje računovodstvenih stavki koje će biti predmet zatvaranja računa; **datumi knjiženja i datumi obračuna** određuju koje će se stavke uključiti u računovodstveni saldo. Posebno će datumi obračuna biti vezani za razdoblje financijskog izvještaja (1/1/….-31/12/….), dok bi polje 'do datuma knjiženja' moglo biti pomaknuto u sljedeću poslovnu godinu kako bi se uključile ispravke: **preporuča se jednostavno ne postavljati filter za datume knjiženja**.
 
-- i codici di sottoconto, causale da utilizzare e data di registrazione e di competenza contabile delle scritture di chiusura del libro giornale; tali dati (tranne le date di registrazione) vengono riportati automaticamente se inseriti all'interno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)** (tab ‘Conti');
+- šifre podkonta, vrstu temeljnice koja će se koristiti te datum knjiženja i datum obračuna računovodstvenih zapisa zatvaranja glavne knjige; ti podaci (osim datuma knjiženja) automatski se prenose ako su uneseni unutar **[računovodstvenih parametara](/docs/configurations/parameters/finance/accounting-parameters)** (kartica ‘Računi');
 
-- (opzionale) la scelta di gestire contestualmente anche la riapertura dei conti anziché gestirla separatamente con **[l'apposito comando](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/new)**. 
+- (opcionalno) mogućnost istodobnog upravljanja ponovnim otvaranjem konta umjesto da se njime upravlja odvojeno **[odgovarajućom naredbom](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/new)**. 
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/parameters-tab/image01.png)
 
-**Anno contabile**: richiama il corrispondente anno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, serve per la gestione della riapertura delle scritture di assestamento, da attivare alla base della maschera con il flag **Giroconto scritture di assestamento**: si tratta di gestire, in coda alla riapertura conti, i movimenti di riattribuzione dei risconti e dei ratei (a patto che questi siano già stati elaborati con la procedura **[Scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**) ai costi/ricavi relativi (i risconti saranno registrati alla stessa data dell'apertura conti, i ratei invece alla data della registrazione del documento d'origine).
+**Godina knjiženja**: poziva odgovarajuću godinu iz **[računovodstvenih parametara](/docs/configurations/parameters/finance/accounting-parameters)**, služi za upravljanje ponovnim otvaranjem stavki prilagodbe, koje se aktivira na dnu obrasca s flagom **Žiro račun – prilagodba zapisa**: si tratta di gestire, in coda alla riapertura conti, i movimenti di riattribuzione dei risconti e dei ratei (a patto che questi siano già stati elaborati con la procedura **[Scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**) ai costi/ricavi relativi (i risconti saranno registrati alla stessa data dell'apertura conti, i ratei invece alla data della registrazione del documento d'origine).
 
-Flag **Gestione saldo** (di chiusura e riapertura) **per divisa di movimentazione**: se attivato il programma inserisce una riga per ogni divisa di movimentazione del sottoconto specifico, mantenendo chiaramente il totale in divisa della società corretto. Tale possibilità si rende necessaria per garantire la correttezza dei saldi iniziali della stampa ‘Estratto conto in valuta'.
+Flag **Upravljanje saldom** (zatvaranje i ponovno otvaranje) **za knjiženje valute**: ako je aktivirana, program unosi redak za svaku valutu zapisa određenog podkonta, pri čemu jasno održava ispravan ukupni iznos u valuti tvrtke. Ova mogućnost je potrebna kako bi se osigurala točnost početnih salda u ispisu 'Izvod računa u valuti'.
  
-ATTENZIONE: Prima di avviare il calcolo è bene verificare le impostazioni della tabella **[Tipi conto](/docs/configurations/tables/finance/account-types)**: 
+UPOZORENJE: Prije pokretanja izračuna, potrebno je provjeriti postavke tablice **[Vrste konta](/docs/configurations/tables/finance/account-types)**: posebno vrste računa za kupce, dobavljače, agente i banke, osim što moraju imati oznaku u odgovarajućim stupcima, moraju imati i drugu oznaku u jednom od prva dva stupca, koja se odnose na imovinu i obveze.
 
-in particolare i tipi conto di anagrafica cliente-fornitore-agente-banche oltre ad avere un flag sulle relative colonne debbono averne un secondo in una delle prime due colonne, relative all'attivo e al passivo patrimoniale. 
+Nakon toga je moguće započeti s **Povrati vrijednost podkonta** pomoću odgovarajuće tipke, kako bi program izračunao saldo svakog podkonta i prikazao podatke u karticama ‘Dobit i gubitak’ te ‘Imovinski’. Kada su rezultati sigurni, moguće je prijeći na posljednju fazu postupka: vraćajući se na karticu parametri, možemo kliknuti tipku Kreiraj zapis za zatvaranje konta, koji će stvoriti odgovarajuća računovodstvena knjiženja i postaviti flag na **Knjiženo**.
 
-E' quindi possibile dare il via alla **Ripresa valori sottoconti** con il pulsante relativo, in modo da far calcolare al programma il saldo di ogni sottoconto e di presentare nelle tab Profitti e perdite e Patrimoniale i dati relativi. Una volta sicuri dei risultati è possibile passare all'ultima fase della procedura: rientrando nella scheda parametri, infatti, possiamo cliccare il pulsante Crea registrazione per la chiusura conti, che creerà le registrazioni contabili relative e inserirà il flag su **Contabilizzata**.
-
-:::note
-Se il flag **Giroconto scritture di assestamento** è stato attivato, quando si lancia il comando **Ripresa valori sottoconti**, diventerà visibile una ulteriore tab **[Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
+:::NAPOMENA
+Ako je flag **Žiro račun – prilagodba zapisa** aktivirana, pri pokretanju naredbe **Povrati vrijednost podkonta**, postat će vidljiva dodatna kartica **[Ponovno otvaranje stavki prilagodbe](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
 :::
  
-#### Pulsanti specifici  
-> **Salva**: permette di salvare la testata della chiusura conti, attivabile dopo aver inserito la descrizione.  
-> **Ripresa valori sottoconti**: permette di far calcolare al programma il saldo di ogni sottoconto e di presentare nelle schede ‘profitti e perdite' e ‘patrimoniale' i dati relativi.  
-> **Crea registrazione per la chiusura conti**: permette di creare la registrazione di chiusura conti.  
-> **Ripristina contabilizzazione**: permette di annullare  ripristinando la contabilizzazione della chiusura conti.  
+#### Specifične tipke
+> **Spremi**: tipka za spremanje zaglavlja zatvaranja konta, koji se može aktivirati nakon unosa opisa.  
+> **Povrati vrijednost podkonta**: tipka za izračun salda svakog podkonta od strane programa i prikaz relevantnih podataka u karticama ‘dobit i gubitak’ te ‘imovinski’.
+> **Kreiraj zapis za zatvaranje konta**: tipka za kreiranje knjiženja zatvaranja konta.  
+> **Povrati knjiženje**: tipka za poništavanje i vraćanje knjiženja zatvaranja računa.
 
-### Profitti e Perdite
+### Dobit i gubitak
 
-Nel tab Profitti e Perdite verranno epilogati i componenti di reddito negativi e positivi con evidenza del risultato d'esercizio e la possibilità di filtrare i conti presenti nelle sezioni Componenti positivi di reddito e Componenti negativi di reddito tramite i campi Sottoconto costi, Sottoconto ricavi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
+U kartici Dobit i gubitak bit će sažeti negativni i pozitivni elementi prihoda, s prikazom rezultata poslovanja i mogućnošću filtriranja konta prisutnih u sekcijama. Pozitivni elementi prihoda i negativni elementi prihoda se mogu filtrirati putem polja Detaljni konto troška, Detaljni konto prihoda i tipke za pretraživanje smještenih na traci s alatima (vidi tablicu u nastavku).
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/profit-and-loss-tab/image01.png)
 
-#### Pulsanti specifici  
-> **Ricerca componenti positivi di reddito sottoconti**: permette di cercare all'interno della chiusura i conti di ricavo desiderati.  
-> **Ricerca componenti positivi di reddito sottoconti**: permette di cercare all'interno della chiusura i conti di costo desiderati.  
+#### Specifične tipke 
+> **Pretraživanje pozitivnih elemenata prihoda – podkonto**: tipka za pretraživanje željenih konta prihoda unutar zatvaranja. 
+> **Pretraživanje pozitivnih elemenata prihoda – podkonto**: tipka za pretraživanje željenih konta troškova unutar zatvaranja.  
 
-### Patrimoniale
+### Imovinski
 
-Nel Tab **Patrimoniale** verranno epilogati i componenti attivi e passivi  con evidenza del risultato d'esercizio e la possibilità di di filtrare (analogamente a quanto previsto per la tab **[Profitti e perdite](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) i conti presenti nelle due sezioni sottostanti tramite i campi appositi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
+U kartici **Imovinski** bit će sažeti elementi aktive i pasive s prikazom rezultata poslovanja i mogućnošću filtriranja (na sličan način kao u kartici **[Dobit i gubitak](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) računa prisutnih u dvjema donjim sekcijama putem odgovarajućih polja i tipki za pretraživanje smještenih na traci s alatima (vidi tablicu u nastavku).
 
-#### Pulsanti specifici  
-> **Ricerca patrimoniale attivo**: permette di cercare all'interno della chiusura i conti attivi desiderati.  
-> **Ricerca patrimoniale passivo**: permette di cercare all'interno della chiusura i conti passivi desiderati.  
+#### Specifične tipke  
+> **Pretraživanje aktive imovine**: tipka za pretraživanje željenih konta aktive unutar zatvaranja.
+> **Pretraživanje pasivne imovine**: tipka za pretraživanje željenih konta pasive unutar zatvaranja.
 
-### Registrazione
+### Zapis
 
-Le registrazioni (visualizzabili con un doppio click) sono in particolare le seguenti: 
+Knjiženja (koja se mogu pregledati dvostrukim klikom) su sljedeća:
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image01.png)
 
-#### Nella prima griglia  
+#### U prvom prikazu:
 
-- la prima registrazione chiude i ricavi, 
+- prvo knjiženje zatvara prihode,
 
-- la seconda i costi, 
+- drugo knjiženje zatvara troškove,
 
-- la terza rileva l'utile o la perdita chiudendo il conto economico, 
+- treće knjiženje bilježi dobitak ili gubitak zatvaranjem konta.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image02.png)
 
-#### Nella seconda griglia  
+#### U drugom prikazu: 
 
-- la quarta chiude il passivo 
+- četvrto knjiženje zatvara obveze,
 
-- la quinta l'attivo (comprensivi dei conti di utile o perdita);  
+- peto knjiženje zatvara aktivu (uključujući račune dobiti ili gubitka);  
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image03.png)
 
-#### Nella terza griglia  
+#### U trećem prikazu: 
 
-sono riportate le tre registrazioni dell'apertura: 
+prikazana su tri knjiženja za otvaranje: 
 
-- la prima apre il passivo, 
+- prvo otvara obveze, 
 
-- la seconda l'attivo, 
+- drugo otvara aktivu, 
 
-- la terza gira il conto utile/perdita d'esercizio all'utile/perdita dell'esercizio precedente.
+- treće prenosi račun dobiti/gubitka tekuće godine na dobit/gubitak prethodne godine.
 
-:::note Nota
+:::note NAPOMENA
 
-Eventuali errori che fossero rilevati in seguito possono essere risolti in questi modi: 
+Eventualne pogreške koje se otkriju kasnije mogu se riješiti na sljedeće načine:  
 
-- è possibile cancellare direttamente la chiusura conti effettuata e, alla richiesta del programma, cancellare anche le registrazioni ad essa collegate al fine di ripartire da zero nella procedura; 
+- moguće je izravno izbrisati izvršeno zatvaranje konta i, na zahtjev programa, izbrisati i povezana knjiženja kako bi se postupak započeo ispočetka; 
 
-- in alternativa è presente un pulsante di *rollback*  **Ripristina contabilizzazione** della contabilizzazione (nella tab Parametri). 
+- kao alternativa, dostupna je tipka za *vraćanje unazad* **Povrati knjiženje** (u kartici Parametri). 
 :::
 
-Esistono specifici permessi utente per la contabilizzazione e l'annullamento della stessa. 
+Postoje specifične korisničke dozvole za knjiženje i poništavanje.  
 
-:::danger Attenzione  
-La chiusura conti bloccherà le registrazioni comprese nel range di date impostato e, inoltre, non sarà più possibile inserire registrazioni all'interno di quel range di date.
+:::danger PAŽNJA  
+Zatvaranje konta blokirat će knjiženja unutar postavljenog raspona datuma i, osim toga, neće biti moguće unositi knjiženja unutar tog raspona datuma.   
 
-I **conti d'ordine** non sono mai oggetto di chiusura e riapertura conti in questa procedura.
+**Izvanbilačna konta** nikada nisu predmet zatvaranja i ponovnog otvaranja računa u ovom postupku.  
 ::: 
 
-### Riapertura Scriture di Assestamento
+### Ponovno otvaranje stavki prilagodbe
 
-In questa maschera è visibile il risultato dell'opzione di giroconto automatico delle operazioni di assestamento in coda alle registrazioni di riapertura conti. Con questa opzione l'applicativo procederà a rilevare, alla data di riapertura, lo storno delle rettifiche **mentre opererà il giroconto delle integrazioni alla data della registrazione d'origine** dell'assestamento stesso.
+U ovom obrascu vidljiv je rezultat opcije automatskog prijenosa stavki usklađenja nakon knjiženja ponovnog otvaranja konta. S ovom opcijom, aplikacija će evidentirati storno usklađenja na datum ponovnog otvaranja, **dok će prijenos obračuna izvršiti na izvorni datum zapisa samog usklađenja.** 
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image01.png)
 
- Facendo doppio clic sulle righe è possibile visualizzare il dettaglio delle registrazioni eseguite.
+Dvostrukim klikom na redke moguće je prikazati detalje izvršenih knjiženja.  
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image02.png)
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image03.png)
 
-:::tip Info
-Generare la scrittura di riapertura delle scritture di integrazione (ratei attivi e passivi) alla data della scrittura di origine della rettifica è necessario, rispetto ad esempio a riaprire semplicemente all' 1/1 , al fine di gestire correttamente anche i calcoli delle chiusure infrannuali possibili con Fluentis.
+:::tip INFO  
+Generiranje knjiženja za ponovno otvaranje stavki usklađenja (obračuni aktive i pasive) na datum izvornog knjiženja ispravka je nužno radi usporedbe s jednostavnim otvaranjem na 1.1., kako bi se pravilno upravljalo i proračunima zatvaranja za razdoblja unutar godine uz Fluentis.   
 
-Si pensi ad esempio di aver registrato il 15/04/2023 un costo che ha competenza 01/11/2022 31/03/2023, quindi verrà registrato il rateo passivo al 31/12 di 2 mesi. Registrando la sua registrazione opposta (lo storno) in data 01/01 dipenderebbe molto da come sono filtrati e gestisti ratei/risconti per la chiusura infrannuale, si rischia in sostanza di avere solo lo storno costi (ovvero la riapertura del rateo) e non la fattura del costo nel bilancio infrannuale. 
+Na primjer, ako se 15.4.2023. knjižio trošak s obračunskim razdobljem od 01.11.2022. do 31.03.2023., tada će se knjižiti obračun pasive na 31.12. za 2 mjeseca. Ako se ispravka (poništavanje) knjiži na 01.01., rezultat ovisi o tome kako su filtrirani i upravljani obračuni/pretplate za zatvaranje unutar godine, te postoji rizik da će se prikazati samo poništavanje troškova (tj. ponovno otvaranje obračuna) i ne račun na trošak u izvještaju za razdoblje. 
 
-Registrando invece lo storno nello stesso giorno della fattura, qualsiasi sia il filtraggio successivo per l'estrazione dei saldi della chiusura infrannuale le due registrazioni "viaggeranno assieme" garantendo l'effetto che ci si attende (in questo caso un impatto neutro sul bilancio essendo il costo già stato anticipato all'esercizio precedente)
+S druge strane, ako se poništavanje knjiži na isti dan kao i račun, bez obzira na daljnje filtriranje za izvlačenje salda za zatvaranje unutar godine, dva knjiženja će "putovati zajedno", osiguravajući očekivani učinak (u ovom slučaju neutralan utjecaj na bilancu jer je trošak već bio prebačen na prethodnu poslovnu godinu).
 :::
