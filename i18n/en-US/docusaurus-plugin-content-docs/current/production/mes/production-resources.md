@@ -61,6 +61,7 @@ If both **Mandatory Operator** and **Mandatory Password** flags are enabled, the
 **Mandatory label printing**: if active, it enables a check that requires the operator to print all labels before proceeding with the declaration activity;    
 **Mandatory defect if declared reject**: if active, it enables a check that requires the operator to enter the type of defect if they enter a scrapped quantity;    
 **Automatic registration**: if active, it allows for the automatic creation of stock registration upon declaration confirmation.    
+**Import all phases of the group**: if active, the corresponding flag present in the *help phases* of the *production* tab in the MES is also activated by default. In this way, if the user selects a phase belonging to a group and adds it, all other phases belonging to the group are also added.
 
 ### *Document Management*     
 **Document Origin Type to Exclude**: this table is linked to the *Documents and Operating Instructions* tab of Fluentis MES and allows defining which types of documents should be excluded; thus, files attached to these document types will not be displayed in the *Documents and Operating Instructions* tab.     
