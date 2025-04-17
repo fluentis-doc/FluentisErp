@@ -3,21 +3,58 @@ title: Returns and Credit Note Management
 sidebar_position: 3
 ---
 
-The mechanism for managing returns and credit notes allows for the administration of the flow of returned goods and the related financial adjustments. Here’s how it typically works:
+In the Fluentis Sales module, the management of returns and credit notes allows for the registration and monitoring of the return of goods or services by customers, generating the necessary accounting and logistical documents. This process ensures proper traceability of operations and real-time updates of inventory levels and the accounting positions of customers.
 
-**Return Registration**: When a customer returns a product, the process begins with the creation of a return document in the management system. This document can be created manually (by entering a delivery note with Nature *Return* or an invoice with Nature *Credit Note*), or automatically with the **Transfer** procedure available in the [Search](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) of the documents. In the case that a return delivery note is created, the credit note can be automatically created from it using the appropriate procedures.
+Fluentis supports several types of returns:
 
-**Stock Update**: Once the cancellation document has been processed in the warehouse, the system automatically updates the warehouse stock to reflect the return of the goods, marking the returned products as available.
+- **Return with Credit Note:** return of goods with the issuance of a credit note to offset the invoiced amount. The goods can be returned via a transport document or directly upon issuance of the credit note, based on the warehouse settings.
 
-**Credit Note Details**: The credit note includes details such as the credited amount and can be reviewed before being sent to the customer. Upon saving a credit note, all expense types are entered as negative, except for stamp duties.
+- **Return without Credit Note:** return of goods without issuing a credit note, for example, for goods replacement. In this case, transport documents will typically be used to move the warehouse inventory.
 
-**Accounting Update**: Once accounted for, the credit note updates the accounting records, reducing the amount owed by the customer; this may reflect in a decrease of the open balance or in a refund, depending on the agreements with the customer.
+The return can also be:
 
-:::note Note
-Starting from version 607, credit notes are managed with a negative sign. When saving the document, Fluentis will change the sign of the items and notify the user with a pop-up. All expenses are also converted to a negative sign, except for stamp duties. The management of the document accounting does not change compared to the past, as the negative document continues to be deducted from the VAT register (previously it was converted to negative at the time of accounting). The sending of the document to the SDI via the generation of the .xml file provides for a new sign change in accordance with the technical specifications for electronic invoicing. This change in comment has become necessary, especially for better management of sales statistics and related processing.
+- **Partial Return:** return of part of the delivered goods.
+
+- **Total Return:** return of the entire supply.
+
+## Operational Process 
+
+**Return** documents can be generated in two ways:
+
+1) *through the **Reversal** procedure available in the toolbar of the Delivery Note or invoice search.* With this procedure, it is possible to partially or fully reverse the selected documents in the search grid. Once the *Reversal* button is clicked, a pop-up will open where: select the item lines to be reversed with their respective quantities, enter the document type to be created (**only document types with a nature of Return will be selectable**), and enter the warehouse reversal reason.
+
+2) *manually by creating a new Delivery Note or invoice.*  
+In this case, it is important to enter a Document Type with Nature *Return*, the customer, and the items to be reversed. However, by manually creating the return, there will be no link to the originating document, which must be manually entered by the user.
+
+If a Delivery Note has been generated, it will be possible to generate the invoice from it, either through the procedure or through manual fulfillment. Upon saving a manually entered credit note, the user will be alerted to enter a negative quantity in the credit notes. This functionality allows for an updated turnover that considers credit notes negatively.
+
+:::note Attention   
+In the table [Delivery Note Types](/docs/configurations/tables/sales/delivery-notes-type), the Delivery Note Type *Return (Reso)* must be associated with a [Invoice Type](/docs/configurations/tables/sales/invoices-type) *Credit Note*.
 :::
 
-### Management of Mixed Signs 
+For the valuation of return Delivery Notes in credit notes, there can be various cases depending on the signs of quantity and price in the origin Delivery Note:
+
+1) Delivery Note Return       Qty 10, Price 10 -> invoice line (normal or credit note NC) Qty -10, Price 10  
+2) Delivery Note Return       Qty -10, Price 10 -> normal invoice line         Qty 10, Price 10  
+3) Delivery Note Return       Qty -10, Price 10 -> NC invoice line                Qty -10, Price 10  
+4) Delivery Note Return       Qty 10, Price -10 -> normal invoice line         Qty -10, Price -10  
+5) Delivery Note Return       Qty 10, Price -10 -> NC invoice line               Qty -10, Price 10  
+6) Delivery Note Return       Qty -10, Price -10 -> normal invoice line         Qty 10, Price -10  
+7) Delivery Note Return       Qty -10, Price -10 -> NC invoice line              Qty -10, Price 10  
+8) Normal Delivery Note     Qty 10, Price 10 -> NC invoice line                   Qty -10, Price 10  
+9) Normal Delivery Note     Qty -10, Price 10 -> NC invoice line                   Qty -10, Price 10  
+10) Normal Delivery Note    Qty 10, Price -10 -> NC invoice line                   Qty -10, Price 10  
+11) Normal Delivery Note    Qty -10, Price -10 -> NC invoice line                   Qty -10, Price 10  
+
+## Configurations and Parameters 
+
+For the correct management of returns and credit notes, ensure that the following elements are configured:
+
+- **Document Types**: define document types for returns and credit notes.
+
+- **Warehouse and Warehouse Template**: every type of document that moves the warehouse must have associated the [Warehouse](/docs/configurations/tables/logistics/warehouses) and the related [template](/docs/configurations/tables/logistics/warehouse-templates); generally, in returns and credit notes, the movement will be a receipt, as the goods are returned by the customer.
+
+## Management of Mixed Signs - NOTE FOR PARTNERS AND PROJECT MANAGERS 
 
 The ability to account for the document with mixed signs must be specifically enabled through an SQL script.
 
