@@ -3,25 +3,57 @@ title: Gestione resi e note di credito
 sidebar_position: 3
 ---
 
-Il meccanismo di gestione dei resi e delle note di credito permette di amministrare i flussi di ritorno delle merci e i relativi aggiustamenti finanziari. Ecco come funziona tipicamente:
+Nel modulo Vendite di Fluentis, la gestione dei resi e delle note di credito consente di registrare e monitorare le restituzioni di beni o servizi da parte dei clienti, generando i documenti contabili e logistici necessari. Questo processo garantisce una corretta tracciabilità delle operazioni e un aggiornamento in tempo reale delle giacenze di magazzino e delle posizioni contabili dei clienti.
 
-**Registrazione del Reso**: Quando un cliente restituisce un prodotto, il processo inizia con la creazione di un documento di reso nel gestionale. Questo documento può essere creato manualmente (inserendo un DDT con Natura *Reso* o una fattura con Natura *Nota di credito*), oppure automaticamente con la procedura di **Storno** presente nella [Ricerca](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) dei documenti. Nel caso in cui venga creato il DDT di reso, da esso potrà essere automaticamente creata la nota di credito con le apposite procedure.     
+Fluentis supporta diverse tipologie di reso:
 
-**Aggiornamento delle Scorte**: una volta movimentato a magazzino il documento di storno, il sistema aggiorna automaticamente le scorte del magazzino per riflettere il rientro della merce, riportando i prodotti resi come disponibili.      
+- Reso con Nota di Credito: restituzione di beni con emissione di una nota di credito per stornare l'importo fatturato. La merce potrà essere resa attraverso un documento di trasporto oppure direttamente all'emissione della nota di credito, in base alle impostazioni del magazzino.
 
-**Dettagli della Nota di Credito**: La nota di credito include dettagli come l’importo accreditato e può essere controllata prima di essere inviata al cliente. Al salvataggio di una nota di credito, tutti i Tipi spesa vengono inseriti con segno negativo, tranne le spese Bollo     
+- Reso senza Nota di Credito: restituzione di beni senza emissione di nota di credito, ad esempio per sostituzione merce. In questo caso verranno tipicamente utilizzati i documenti di trasporto per movimentare il magazzino.
 
-**Aggiornamento della Contabilità**: Una volta contabilizzata, la nota di credito aggiorna i registri contabili, riducendo l’importo dovuto dal cliente; questo può riflettersi in una diminuzione del saldo aperto o in un rimborso, a seconda degli accordi con il cliente.
+Il reso inoltre può essere: 
 
-:::note Note
-Dalla versione 607 le note di credito vengono gestite con il segno meno.      
-Al momento del salvataggio del documento, infatti, Fluentis cambierà il segno degli articoli e avviserà l'utente con un pop up. Anche tutte le spese vengono convertite con segno negativo, tranne le spese Bollo.    
-La gestione della contabilizzazione del documento non cambia rispetto al passato in quanto il documento negativo continua ad essere defalcato dal registro iva (prima veniva convertito in negativo al momento della contabilizzazione).
-L'invio del documento allo sdi tramite generazione del file .xml prevede un nuovo cambio di segno in conformità alle specifiche tecniche per la fatturazione elettronica.       
-La modifica in commento si è resa necessaria, pertanto, soprattutto per una migliore gestione delle statistiche di vendita e le elaborazioni connesse.
+- Reso Parziale: restituzione di una parte della merce consegnata.
+
+- Reso Totale: restituzione dell'intera fornitura.
+
+##  Processo Operativo
+
+I documenti di **Reso** possono essere generati in due modi:
+
+1) *attraverso la procedura di **Storno** presente nella barra degli strumenti della ricerca DDT o fatture.* Con questa procedura è possibile stornare parzialmente o totalmente i documenti selezionati nella griglia di ricerca. Una volta cliccato il pulsante *Storno*, si aprirà un pop up dove: selezionare le righe articolo da stornare con le relative quantità, inserire il Tipo documento da creare (**sarà possibile selezionare solo tipologie di documento con natura Reso**) e inserire la Causale di storno del magazzino. 
+
+2) *manualmente con la creazione di un nuovo DDT o fattura.* 
+In questo caso, è importante inserire un Tipo documento con Natura *Reso*, il cliente e gli articoli da stornare. Creando manualmente il reso, tuttavia, non ci sarà il link con il documento di origine, che dovrà essere inserito manualmente dall'utente.
+
+Se è stato generato un DDT, si potrà generare da esso la fattura, con la procedura o con l'evasione manuale. Al salvataggio di una nota di credito inserita manualmente, verrà avvisato l'utente di dover inserire una quantità negativa nelle note di credito. Questa funzionalità permette di avere un fatturato aggiornato, che consideri in negativo le note di credito. 
+
+:::note Attenzione
+Nella tabella [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type), al Tipo DDT *Reso* deve essere associato un [Tipo fattura](/docs/configurations/tables/sales/invoices-type) *Nota di credito*.
 :::
 
-### Gestione segni misti
+Per la valorizzazione dei DDT di reso in nota di credito, ci possono essere diverse casistiche a seconda dei segni di quantità e prezzo, nel DDT di origine:
+1)	DDT Reso       Qta   10, Prezzo  10 -> riga fattura (normale o nota di credito NC) Qta  -10, Prezzo  10
+2)	DDT Reso       Qta  -10, Prezzo  10 -> riga fattura normale            Qta  10, Prezzo  10 
+3)	DDT Reso       Qta  -10, Prezzo  10 -> riga fattura NC                       Qta -10, Prezzo  10 
+4)	DDT Reso       Qta   10, Prezzo -10 -> riga fattura normale             Qta -10, Prezzo -10 
+5)	DDT Reso       Qta   10, Prezzo -10 -> riga fattura NC                       Qta -10, Prezzo  10 
+6)	DDT Reso       Qta  -10, Prezzo -10 -> riga fattura normale             Qta  10, Prezzo -10 
+7)	DDT Reso       Qta  -10, Prezzo -10 -> riga fattura NC                       Qta -10, Prezzo  10 
+8)	DDT Normale Qta  10, Prezzo  10 -> riga fattura NC                        Qta -10, Prezzo  10
+9)	DDT Normale Qta  -10,Prezzo  10 -> riga fattura NC                        Qta -10, Prezzo  10
+10)	DDT Normale Qta   10,Prezzo -10 -> riga fattura NC                        Qta -10, Prezzo  10 
+11)	DDT Normale Qta  -10,Prezzo -10 -> riga fattura NC                        Qta -10, Prezzo  10 
+
+## Configurazioni e Parametri
+
+Per una corretta gestione dei resi e delle note di credito, assicurarsi che siano configurati i seguenti elementi:
+
+- **Tipi Documento**: definire i tipi documento per resi e note di credito.
+
+- **Magazzino e Causale di Magazzino**: ogni tipologia di documento che movimenta il magazzino deve avere associato il [Magazzino](/docs/configurations/tables/logistics/warehouses) e la relativa [causale](/docs/configurations/tables/logistics/warehouse-templates); generalmente, nei resi e nelle note di credito la movimentazione sarà un carico, in quanto la merce viene riconsegnata dal cliente. 
+
+## Gestione segni misti - NOTA PER PARTNER E PROJECT MANAGER
 
 La possibilità di contabilizzare il documento con segni misti va abilitata appositamente mediante uno script SQL.
 
