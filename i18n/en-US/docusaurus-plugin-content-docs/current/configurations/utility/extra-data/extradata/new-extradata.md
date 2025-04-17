@@ -128,7 +128,7 @@ The structure of the query must necessarily be based on the three columns: **Id*
 
 Using the **FluentisQueryStudio**, we proceed to create the datasource that will be based on the query viewed above. For the use of **FluentisQueryStudio**, please refer to the specific documentation at the following [**Link**](#).
 
-#### 3.1 Header (Testata)
+#### 3.1 Header 
 
 We now proceed to create the ExtraData by filling in the data related to the header:  
 - **Code ** and **Description**.
@@ -138,7 +138,7 @@ We now proceed to create the ExtraData by filling in the data related to the hea
 
 #### 3.2 Activations 
 
-We proceed to link the **ExtraData** to the business object **FSItem**.  
+We proceed to link the **ExtraData** to the business object **FSItem** (Item).  
 It is exactly as described in the previous section.  
 
 ### Inserting the ExtraData into the detail form
@@ -164,19 +164,19 @@ For example, an ExtraData defined on the **FSItem** object (Item) can be propaga
 
 To manage the propagation from a main object to a derived one, it is necessary to have the ExtraData active on both objects in the **Activations** tab and then manage the propagation through the appropriate **propagation** tab.
 
-#### Inserting the ExtraData into the detail form
+#### Inserting the ExtraData into the detail form 
 
-Dopo aver aperto la form di dettaglio dell'**ordine di vendita** interessato, per includere l'ExtraData nella form di dettaglio possiamo utilizzare il **form navigator** e **l'object navigator**.  
-1. Dall'**Object Navigator**, espandiamo il nodo della collezione degli **articoli**, e quindi espandiamo il nodo ExtraData.  
-2. Trasciniamo l'ExtraData direttamente sulla griglia degli articoli associati all'ordine di vendita.   
-L'ExtraData avrà un widget di tipo combobox (dropdown) e mostrerà il valore **codice** salvato sulla corrispondente tabella lato MSSQL.  
+After opening the detail form of the **sales order** concerned, to include the ExtraData in the detail form we can use the **form navigator** and **object navigator**.  
+1. From the **Object Navigator**, expand the node of the collection of **items**, and then expand the ExtraData node.  
+2. Drag the ExtraData directly onto the grid of items associated with the sales order.  
+The ExtraData will have a widget of type combobox (dropdown) and will display the **code** value saved in the corresponding table on the MSSQL side.  
 
 ### **4. Inserting ExtraData into Report**
 
-Per quanto riguarda l'inclusione degli **ExtraData** nei report si possono configuare n. 3 scenari distinti in base alla tipologia di ExtraData:
-* ExtraData Semplice.
-* ExtraData basato su un oggetto.
-* ExtraData basato su un datasource.
+As for the inclusion of **ExtraData** in reports, it is possible to configure 3 distinct scenarios based on the type of ExtraData:
+* Simple ExtraData.
+* Object-based ExtraData.
+* DataSource-based ExtraData.
 
 ### 4.1 Simple ExtraData
 
@@ -227,3 +227,74 @@ private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.Get
     }
 }
 ```
+
+### 4.3 ExtraData based on datasource 
+For the ExtraData based on datasource, it is necessary to include the following method in the report's script section.  
+The ExtraData based on datasource is called ```Model```.  
+In the example, a custom table ```dbo.Model``` has been created containing the following data:
+```sql
+SELECT Code, Description FROM dbo.Model
+```
+
+ <table>
+        <tr>
+            <th>Codice</th>
+            <th>Descrizione</th>
+        </tr>
+        <tr>
+            <td>Finitura1</td>
+            <td>Lucida</td>
+        </tr>
+        <tr>
+            <td>Finitura2</td>
+            <td>Opaca</td>
+        </tr>
+        <tr>
+            <td>Finitura3</td>
+            <td>Cromata</td>
+        </tr>
+    </table>
+
+
+In the script related to the generation of the report, the following example method should be included.
+
+```cs
+private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
+{
+    FSSalesInvoice row = (FSSalesInvoice)e.Row;
+    if (row != null)
+    {
+        var extraData = row.ExtraData 
+            .Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "Model")
+            .FirstOrDefault();
+
+        if (extraData != null)
+        {
+            if (extraData.ExtraDataObject != null && 
+                extraData.ExtraDataObject.DataSource != null && 
+                !string.IsNullOrEmpty(extraData.ExtraDataObject.DataSource.SqlQuery.Script))
+            {
+                string extradDataObjectId = extraData.ExtraDataId.ToString();
+                string sqlQueryExtraData = extraData.ExtraDataObject.DataSource.SqlQuery.Script + 
+                                           " WHERE Id = " + extradDataObjectId;
+                
+                IExecuteSql execSql = (IExecuteSql)GetReport().DataProvider;
+                using (IDbCommand command = execSql.CreateCommand())
+                {
+                    command.CommandText = sqlQueryExtraData;
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            e.Value = reader.GetValue(2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+
+

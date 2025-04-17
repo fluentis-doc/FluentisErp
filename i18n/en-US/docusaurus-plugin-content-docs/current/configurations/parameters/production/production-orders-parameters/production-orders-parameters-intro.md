@@ -17,8 +17,6 @@ The form can be accessed via the path **Parameters > Production > Production Ord
 
 **Change job order date when modify production order date**: if active, it allows the user to ensure that when the end date of the production order changes, the end date of the contract is automatically changed as well, provided that the item of the production order is the same as that of the production contract; therefore, the production order must be at level 0;
 
-**Compute production cost for progress**: if active, it allows the user to ensure that as production advancements are recorded, the cost of the stock registration is incremented based on the actual time declared in the report multiplied by the hourly cost of the machine and/or labor group, thus by the hourly cost of the work center used;
-
 **Print Worksheets for Launched Orders**: it is a default that is set on the related print launch form, and when the orders are launched, the printing of the orders is done automatically;
 
 **Automatic determination of times in reports**: if active, it automatically calculates the machine time and worker time based on the report times. Otherwise, the user must manually set the said times on the line of the production report; 
@@ -50,7 +48,18 @@ Finally, there are four other sections: **Job sheets managed for**, **Analysis P
 
 **Period of analysis**: this section allows, by activating one of the radio buttons, to choose the filtering period of the production orders that will be displayed in the work sheet print window (weekly, daily, or every X days);
 
-**Material valorization to cost**: this section allows, by activating one of the radio buttons, to choose the type of cost for material valuation (last/average cost at the date of payment or of my production report or the standard cost). Additionally, by selecting the *Batches* and/or *Production job order* flags, it is possible to propose the last/average/standard cost of the material for the respective batch and/or production order based on the activated flags.    
+**Material valorization to cost**: this section allows you to define parameters that will be used for the calculation of costs related to the registered production statements. (These parameters are not considered by the [Costing](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), as it takes values directly from the records of production statements).
+
+> **Last**: allows you to value materials at *Last* cost;      
+> **Average**: allows you to value materials at *Average* cost;                
+> **Standard**: allows you to value materials at *Standard* cost;          
+> **From management area**: allows you to value materials based on the cost related to the *Management area* selected in the respective combo box;     
+> **Batch cost**: by activating this flag, the procedure will value the cost of the material based on the selected cost type, considering values only from that specific batch;     
+> **Job order cost**: by activating this flag, the procedure will value the cost of the material based on the selected cost type, considering values only from that specific job order.      
+
+:::note Note
+If **Batch cost** and **Job order cost** are both activated, the procedure will value the cost of the material based on the selected cost type, considering values only from that specific job and for that specific batch, obviously among the movements made with loading reasons with the flag update last or average cost active (depending on the value indicated in the **Cost type** field) and the flag for fiscal interest active; if it does not find any movements with these characteristics, it will look among the movements that have loaded that batch, if it does not find these either, it will search among all the movements of that item. If there are no loading movements for that item, it will check the respective last, average, and standard cost fields of the item registry.
+:::
 
 **Phase sequence proposal**: this section allows you to choose, during the creation of a work cycle, the proposed sequence number of the phase, which can be taken from the sequence number of the standard phase or as a progressive number of the insertion order, indicating the step value as well.
 
