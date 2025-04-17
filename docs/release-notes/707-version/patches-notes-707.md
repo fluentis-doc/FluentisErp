@@ -34,34 +34,29 @@ sidebar_position: 1
 ### Patch 707.1-0027 - 03/04/2025  
 
 > - ARM - revisione esportazione collezioni nella webapi dell’oggetto FSLedgerAccount (#TT01586/25) 
-> - CO - Corretto bug nel calcolo costo che non leggeva correttamente il valore del listino fornitore di conto lavoro. (#TT01080/25 ) 
+> - CO - Corretto bug nel calcolo costo che non leggeva correttamente il valore del listino fornitore di conto lavoro (#TT01080/25) 
 > - CO - nella ripresa dati da produzione del Controlling, revisione gestione elaborazione tempi con opzione ‘Tempi ciclo’ (#TT01215/25)  
-> - SD – Nelle Fatture di Vendita le righe di tipo note vengono inserite con il campo Imponibile non valorizzato (#TT00993/25) 
-> - PM - risolto caso di mancata memorizzazione causale di magazzino e magazzino nelle righe materiali di un intervento. (#TT01553/25) 
-> - FI - Period Combo for SAFT ( TT01563/25) 
-> - PM - WEB corretto caso in cui wbs progetto assegnata in testata intervento, non veniva proposta in automatico nelle righe servizi (#TT01596/25) 
+> - SD - Nelle Fatture di Vendita le righe di tipo note vengono inserite con il campo Imponibile non valorizzato (#TT00993/25) 
+> - PM - risolto caso di mancata memorizzazione causale di magazzino e magazzino nelle righe materiali di un intervento (#TT01553/25) 
 > - PM - Nel calendario generico di Fluentis, planner e wbs assegnazione risorse, introdotta evidenza giornate non lavorative colorando lo sfondo in rosso (#TT01402/25) 
-> - WM – Creazione DDT/Fatture da picking: Se presente, il vettore inserito nel picking viene riportato nel DDT o nella fattura, altrimenti viene ripreso dall’ordine cliente o da anagrafica  (#TT01430/25, #TT01449/25). 
-> - SH - WebApi Import/Export  - Fasi di lavorazione dei Prototipi - Rilascio della Web Api di Import/Export per le Fasi di lavorazione dei Prototipi. (#TT01359/25) 
-> - SH - WebApi Import/Export  - Prototipi - Rilascio della Web Api di Import/Export per i Prototipi (le Fasi di lavorazione sono escluse; è stata creata una WebApi dedicata).(#TT01575/24) 
-> - MS – Risolto errore nella procedura di Rilascio Ordini Pianificati quando il flag per il rilascio degli ordini di produzione esecutivi era attivo (#TT01655/25). 
-> - QY - Controllo articoli - Certificati di analisi - Sono state variate le condizioni che non permettevano la modifica dei "Valori multipli rilevati": il controllo non deve essere "Approvato"; nei “Parametri del controllo articoli” devono essere indicati: il flag di "Abilita il rilevamento multiplo valori" e, per il Tipo documento di origine del controllo, il flag della colonna "Mult." (#TT01461/25 ) 
-> - Add Guid valorization for scripts 
-> - PM – selezione cliente nella generazione nuovo progetto da modello - Se il cliente ha data di chiusura antecedente alla data nuovo progetto da modello, non verrà proposto nella ricerca (#TT01126/25) 
-> - PM – bloccata generazione automatica interventi da attività senza cliente indicato (#TT01635/25) 
+> - WM - Creazione DDT/Fatture da picking: Se presente, il vettore inserito nel picking viene riportato nel DDT o nella fattura, altrimenti viene ripreso dall’ordine cliente o da anagrafica (#TT01430/25, #TT01449/25)
+> - SH - WebApi Import/Export  - Fasi di lavorazione dei Prototipi - Rilascio della Web Api di Import/Export per le Fasi di lavorazione dei Prototipi (#TT01359/25) 
+> - SH - WebApi Import/Export  - Prototipi - Rilascio della Web Api di Import/Export per i Prototipi (le Fasi di lavorazione sono escluse; è stata creata una WebApi dedicata) (#TT01575/24) 
+> - MS - Risolto errore nella procedura di Rilascio Ordini Pianificati quando il flag per il rilascio degli ordini di produzione esecutivi era attivo (#TT01655/25). 
+> - QY - Controllo articoli - Certificati di analisi - Sono state variate le condizioni che non permettevano la modifica dei "Valori multipli rilevati": il controllo non deve essere "Approvato"; nei “Parametri del controllo articoli” devono essere indicati: il flag di "Abilita il rilevamento multiplo valori" e, per il Tipo documento di origine del controllo, il flag della colonna "Mult." (#TT01461/25) 
+> - PM - selezione cliente nella generazione nuovo progetto da modello - Se il cliente ha data di chiusura antecedente alla data nuovo progetto da modello, non verrà proposto nella ricerca (#TT01126/25) 
+> - PM - bloccata generazione automatica interventi da attività senza cliente indicato (#TT01635/25) 
 > - SD, WM - Nei documenti in cui è attivo il parametro dei Lotti obbligatori, l'importazione tramite Web API non consente di specificare una quantità lotto diversa dalla quantità articolo (#TT01298/25) 
-> - BI – fix parameter popup display (TT01691/25) 
-> - SH – Risoluzione errore uscente eseguendo l’Apri form nei risultati della ricerca documenti (#TT00585/25)
-The result widgets of Projects, WorkReports,Nirs, PurchaseDeliveryNotes, PurchaseDemands, PurchaseInvoices, PurchaseOffersRequests,PurchaseOrders and Sdi where changed 
-> - SCS – Risolto errore che impediva la cancellazione multipla di articoli da un Listino di Conto lavoro (#TT01076/25) 
-> - MES - Dichiarazioni di produzione nella soluzione MES – E’ stato considerato il parametro di “Stesso lotto per gli scarti articoli” presente nei “Parametri ordini di produzione” per la proposta dello stesso lotto o lotti distinti per le dichiarazioni di quantità prodotte e scartate. (#TT01343/25) 
+> - SH - Risoluzione errore uscente eseguendo l’Apri form nei risultati della ricerca documenti (#TT00585/25)
+> - SCS - Risolto errore che impediva la cancellazione multipla di articoli da un Listino di Conto lavoro (#TT01076/25) 
+> - MES - Dichiarazioni di produzione nella soluzione MES - E’ stato considerato il parametro di “Stesso lotto per gli scarti articoli” presente nei “Parametri ordini di produzione” per la proposta dello stesso lotto o lotti distinti per le dichiarazioni di quantità prodotte e scartate (#TT01343/25) 
 > - SD - modificato test al salvataggio fatture, per il nuovo tipo delle Autofatture TD29 (#TT01693/25) 
-> - SCS – Ordini di Conto Lavoro: all’inserimento di un articolo in un ordine, il parametro 'Dati materiali proposti' verrà inizialmente impostato in base al valore predefinito nei Parametri di Conto Lavoro. Se modificato, per le righe successive sarà mantenuto il valore utilizzato nell’ultima riga inserita (#TT01458/25). 
-> - WMS – Risolto problema in apertura della form conferma picking. (#TT01325/25) 
-> - CO – Corretto bug nel report Inventario a quantità valorizzato che non mostrava il costo ultimo dell’articolo. (#TT00966/25) 
-> - WM – In gestione UDC, corretto bug in fase di caricamento di una UDC con una causale di carico con in contro partita una di scarico, che generava delle movimentazioni di magazzino di contro partita vuote. (#TT01435/25) 
-> - MES - Corretto bug nella procedura di ricalcolo costi ordini di produzione presente nel filtro degli ordini di produzione. (#TT01547/25) 
-> - Added Begin and End script in main configuration scripting tab.
+> - SCS - Ordini di Conto Lavoro: all’inserimento di un articolo in un ordine, il parametro 'Dati materiali proposti' verrà inizialmente impostato in base al valore predefinito nei Parametri di Conto Lavoro. Se modificato, per le righe successive sarà mantenuto il valore utilizzato nell’ultima riga inserita (#TT01458/25). 
+> - WMS - Risolto problema in apertura della form conferma picking (#TT01325/25) 
+> - CO - Corretto bug nel report Inventario a quantità valorizzato che non mostrava il costo ultimo dell’articolo (#TT00966/25) 
+> - WM - In gestione UDC, corretto bug in fase di caricamento di una UDC con una causale di carico con in contro partita una di scarico, che generava delle movimentazioni di magazzino di contro partita vuote (#TT01435/25) 
+> - MES - Corretto bug nella procedura di ricalcolo costi ordini di produzione presente nel filtro degli ordini di produzione (#TT01547/25) 
+> - WM - In gestione UDC, corretto bug in fase di caricamento di una UDC con una causale di carico con in contro partita una di scarico, che generava delle movimentazioni di magazzino di contro partita vuote (#TT01435/25)
 
 ### Patch 707.1-0026 - 28/03/2025  
 > - SD - corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo (#TT00783/25)  
@@ -71,31 +66,31 @@ The result widgets of Projects, WorkReports,Nirs, PurchaseDeliveryNotes, Purchas
 > - SD: spedizioni- aggiunti destinatario e destinazione in testata spedizione. Aggiunto ordine di priorità degli stati. Stati resi visibili in riga e per tipo spedizione possibile impostare uno stato iniziale. Corretta proposta indirizzo del luogo di carico e del luogo di destinazione. 
 Modifiche in ShippingState, ShippingType e nei moduli di spedizione che *possono avere un impatto su un profilo* (#TT04871/24)  
 > - SH - Errore nell'aggiunta di un nuovo account per un partner (#TT01481/25) 
-> - SD: calendario spedizioni - risolto caso per cui scorrendo oltre ad un certo numero di settimane precedenti si bloccava (#TT01383/25)   
-> - WMS – corretto bug nella form di Ricevimento merci che non creava correttamente le righe dei DDT caricati (#TT01081/25)  
+> - SD - calendario spedizioni - risolto caso per cui scorrendo oltre ad un certo numero di settimane precedenti si bloccava (#TT01383/25)   
+> - WMS - corretto bug nella form di Ricevimento merci che non creava correttamente le righe dei DDT caricati (#TT01081/25)  
 > - Corretto bug per sovrascrivere la funzione con l'editor di script. 
 > - CO - revisione inserimento nuove righe nelle Tariffe standard dei centri aziendali del controlling (#TT01348/25)  
-> - SD – Stampa scadenziario ordini clienti: corretto errore di visualizzazione delle quantità residue dopo la modifica della quantità articolo nel DDT di evasione dell’ordine cliente (#TT01459/25)  
+> - SD - Stampa scadenziario ordini clienti: corretto errore di visualizzazione delle quantità residue dopo la modifica della quantità articolo nel DDT di evasione dell’ordine cliente (#TT01459/25)  
 > - SD - Calendario spedizioni - Documenti di riferimento mostrati nel popup di ogni spedizione - se presenti N occorrenze dello stesso documento corretto in modo da visualizzare il riferimento una volta sola (#TT01272/25)  
 > - PR - in una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti delle testata distinta (#TT01384/25)  
-> - WM – corretto bug in visualizzazione giacenze inerente al filtro di colonna del campo numero progetto (#TT01554/25)  
-> - SD – corretto bug in fase di creazione della fattura nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto (#TT01433/25)  
-> - QY – Taratura Strumenti di Misura – Risolta l’anomalia di errata proposta dell’Esito in caso di tarature con richieste di valori negativi (#TT01104/25)  
+> - WM - corretto bug in visualizzazione giacenze inerente al filtro di colonna del campo numero progetto (#TT01554/25)  
+> - SD - corretto bug in fase di creazione della fattura nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto (#TT01433/25)  
+> - QY - Taratura Strumenti di Misura - Risolta l’anomalia di errata proposta dell’Esito in caso di tarature con richieste di valori negativi (#TT01104/25)  
 > - PM - in caso di dichiarazione attività senza orari ma con il solo monte ore, bloccata con avviso creazione intervento automatica (#TT01457/25)  
-> - SCM – Nei DDT di Acquisto è ora possibile inserire solo Unità di misura alternative che sono state precedentemente inserite nell’anagrafica dell’articolo (#TT01067/25) *Modifiche nella griglia degli articoli della bolla di consegna acquisti che possono influenzare i profili*  
-> - WM – Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo (#TT01514/25)  
-> - WMS – In ricevimento merci, rimosso il messaggio di avviso relativo all’apertura della form di creazione UDC quando l’articolo non è gestito a UDC. (#TT01530/25)  
-> - WM – Nel filtro delle spedizioni implementata la possibilità di aggiungere le colonne inerenti al sito produttivo dall’object navigator e salvare il profilo. *Modifiche nel modulo di filtro delle spedizioni che possono avere un impatto su un profilo* (#TT00336/25)  
+> - SCM - Nei DDT di Acquisto è ora possibile inserire solo Unità di misura alternative che sono state precedentemente inserite nell’anagrafica dell’articolo (#TT01067/25) *Modifiche nella griglia degli articoli della bolla di consegna acquisti che possono influenzare i profili*  
+> - WM - Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo (#TT01514/25)  
+> - WMS - In ricevimento merci, rimosso il messaggio di avviso relativo all’apertura della form di creazione UDC quando l’articolo non è gestito a UDC. (#TT01530/25)  
+> - WM - Nel filtro delle spedizioni implementata la possibilità di aggiungere le colonne inerenti al sito produttivo dall’object navigator e salvare il profilo. *Modifiche nel modulo di filtro delle spedizioni che possono avere un impatto su un profilo* (#TT00336/25)  
 > - SD: aggiunta descrizione articolo nella griglia di dettaglio del groupage delle spedizioni. *Modifiche nel modulo di spedizione che possono avere un impatto su un profilo* (#TT00877/25)  
 > - SH - Abilitati i filtra per extra data nella form di ricerca dei Dipendenti (#TT01524/25)  
 > - PM - Wbs assegnazione risorse, risolto caso in cui non venivano assegnati correttamente gli orari (#TT01376/25)  
 > - FI - Modifiche nella contabilità delle fatture di vendita del centro di costo (#TT00383/25) 
 > - FI - Selezione del periodo per SAFT (#TT01563/25) *Modifiche nel modulo di dichiarazione SAFT che possono avere un impatto su un profilo*  
-> - WM – In gestione prototipi, utilizzando il pulsante Esporta, ora vengono esportate nella distinta base tutte le righe di un articolo inserito nello stesso livello ma con priorità diverse (#TT01369/25)  
-> - MS – Rilascio ordini pianificati – Ottimizzazione delle prestazioni (#TT01062/25)  
+> - WM - In gestione prototipi, utilizzando il pulsante Esporta, ora vengono esportate nella distinta base tutte le righe di un articolo inserito nello stesso livello ma con priorità diverse (#TT01369/25)  
+> - MS - Rilascio ordini pianificati - Ottimizzazione delle prestazioni (#TT01062/25)  
 > - SD - Proposta Ubicazione Causale: risolto nel framework il mancato caricamento dell'ubicazione (in alcuni casi) della causale proposta nella prima riga documento 
 Modifiche nei moduli SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOrder e Picking object che *possono avere un impatto su un profilo* (#TT00960/25)   
-> - WMS – Migliorata la velocità nelle form Conferma picking e Gestione spunta. Inoltre, è stato risolto il problema relativo alla perdita del focus nel campo barcode dopo una lettura di un codice a barre (#TT01325/25-#TT01398/25) 
+> - WMS - Migliorata la velocità nelle form Conferma picking e Gestione spunta. Inoltre, è stato risolto il problema relativo alla perdita del focus nel campo barcode dopo una lettura di un codice a barre (#TT01325/25-#TT01398/25) 
 
 ### Patch 707.1-0025 - 21/03/2025  
 > - SD - Al momento dell’evasione degli Ordini Clienti in Fattura, le righe di tipo nota vengono ora riportate con il campo Imponibile non valorizzato (#TT01166/25)
