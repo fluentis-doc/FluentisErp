@@ -16,24 +16,13 @@ POLJA U PREGLEDU:
 
 **Opis**: slobodno dodjeljiv u fazi kreiranja novog zatvaranja;
 
-
-
 **Datum**: datum obrade zatvaranja;
-
-
 
 **Verzija**: broj verzije zatvaranja (pažnja, mora biti jedinstven za svaku tvrtku i predstavlja redni broj različitih zatvaranja u bazi podataka);
 
-
-
 **Knjiženje**: označava je li zatvaranje proknjiženo (aktivna oznaka) ili samo izračunato (neaktivna oznaka);
 
-
-
 **Napomene**: polje koje se slobodno popunjava u fazi kreiranja zatvaranja.
-
-
-
 
 
 | Funkcija | Značenje |

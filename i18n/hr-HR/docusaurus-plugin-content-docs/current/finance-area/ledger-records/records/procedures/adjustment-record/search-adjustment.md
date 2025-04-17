@@ -1,19 +1,18 @@
 ---
-title: Ricerca Assestamento
+title: Pretraga usklađenja
 sidebar_position: 1
 ---
 
-In questa form è possibile ricercare, per eventuali modifiche, le elaborazioni delle scritture di assestamento precedentemente elaborate, oppure inserirne di nuove.
+U ovom obrascu moguće je pretraživati, radi eventualnih izmjena, obrađene evidencije/zapise usklađenja koje su prethodno obrađene, ili unijeti nove.  
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca assestamento | Pulsante per la ricerca delle scritture di assestamento. |
-| Nuovo | Pulsante per la creazione delle scritture di assestamento. |
-| Modifica | Pulsante, attivabile dopo aver selezionato una scrittura di assestamento, che ne permette la modifica. |
-| Visualizza | Pulsante, attivabile dopo aver selezionato una scrittura di assestamento, che ne permette la visualizzazione. |
-| Cancella | Pulsante, attivabile dopo aver selezionato una chiusura conti, che ne permette la cancellazione. |
+| Pretraga usklađenja | Tipka za pretragu zapisa usklađenja. |
+| Nuovo | Tipka za kreiranje zapisa usklađenja. |
+| Izmjeni | Tipka koji se može aktivirati nakon odabira zapisa usklađenja, omogućuje izmjenu. |
+| Prikaži | Tipka koji se može aktivirati nakon odabira zapisa usklađenja, omogućuje pregled. |
+| Izbriši | Tipka koji se može aktivirati nakon odabira zatvaranja konta, omogućuje brisanje. |
 
 
 
