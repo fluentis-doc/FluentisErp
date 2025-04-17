@@ -3,7 +3,7 @@ title: Request for Quotation Search
 sidebar_position: 2
 ---
 
-The module is located in the area **Purchasing > Requests for Quotation**. For explanations of functionalities common to sales documents, refer to the section [Purchasing](/docs/purchase/purchases-intro).
+The form is located at **Purchases > Requests for quotation**.For explanations of functionalities common to sales documents, refer to the section [Purchasing](/docs/purchase/purchases-intro).
 
 In the filter area, it is possible to choose whether to display *open* and/or *closed* requests for quotations and whether to view *all versions* or only the latest version of each RDO.
 
