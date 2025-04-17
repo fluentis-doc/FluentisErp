@@ -31,6 +31,12 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 **Prezzi negativi delle note di credito**: se attivo, il sistema notificherà un avviso qualora ci fossero dei prezzi positivi all'interno di note di accredito. Se non attivo, il sistema non farà nessun controllo e non restituirà nessun avviso.
 
+**Senza spese incacco in note di accredito**: se attivo, non si mettono le spese incasso nelle note di credito.
+
+**Verifica vendite prezzo lotti**: campo obsoleto, non più utilizzato.
+
+**Numero massime righe**: è il numero massimo di articoli per una fattura, attivo solo nella versione romena.
+
 **Verifica articoli in esaurimento**: con questo flag viene attivata la gestione degli articoli in esaurimento; se in anagrafica articolo è presente una Data esaurimento e il relativo flag, Fluentis avviserà l'utente con un pop up se l'articolo viene inserito nel documento.    
 
 **[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di fattura quale tipo di sconto utilizzare.     
@@ -43,11 +49,15 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 **Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
 
+**Controlla intra-cee**: se attivo e il paese del cliente appartiene all’Unione Europea, il sistema verifica che il [Tipo Fattura](/docs/configurations/tables/sales/invoices-type) abbia il flag *Intracomunitaria* attivo e che, nell’anagrafica del cliente, sia abilitato il flag *Intrastat*; se queste condizioni non sono soddisfatte, verrà visualizzato un messaggio di errore: "Il tipo documento è intracomunitario, ma il codice cliente non è contrassegnato come intracomunitario".
+
 **Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-invoices/invoicing/sales-invoice) della fattura vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
 
 **Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine/DDT alle righe fattura.
 
 **Mantieni prezzi da ordini per gli scaglioni**: è utilizzato nell'evasione degli ordini in fattura nel caso in cui la quantità evasa sia diversa (solitamente parziale) della quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso in cui l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
+
+**Contabilizzazione imballi**: se attivo, considera nella contabilizzazione anche le righe imballo.
 
 ### Evasione
 
@@ -60,6 +70,8 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 **Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ddt di vendita.      
 
 **Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ddt di vendita.
+
+**Proposta lotti**: se non ci sono lotti nella riga ordine, all’evasione si cercano lotti disponibili nella giacenza, se il tipo prelievo *non* è *Manuale*.
 
 ### Scarico
 

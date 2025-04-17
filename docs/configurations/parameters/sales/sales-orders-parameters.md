@@ -27,8 +27,6 @@ I parametri degli ordini clienti permettono l'impostazione di base per gestire c
 
 **Consentire sconti per gli articoli omaggio**: con questo flag verranno inseriti gli sconti sull'importo di riga anche per le righe articolo di tipo omaggio.     
 
-**Controlla disponibilità**: se attivato, il sistema va a controllare la disponibilità dell'articolo.       
-
 **Obbligo rapporto colli articolo con quantità**: se settato il flag costringe l’utente ad inserire una quantità corrispondente o multipla del numero colli definito nel tab *Pesi/Dimensioni* dell’anagrafica articoli; se la quantità non è il numero colli o un suo multiplo appare il messaggio: “Articolo non vendibile in quantità inferiore o non multiplo di .      
 
 **Proponi lotto economico**: se il flag è settato viene proposto come quantità il lotto economico e se la quantità è inferiore al lotto economico viene dato il messaggio “La quantità non può essere inferiore a …”.       
@@ -41,9 +39,13 @@ I parametri degli ordini clienti permettono l'impostazione di base per gestire c
 
 **Uso barcode**: se settato, questo flag inserirà, nella griglia articoli dell'ordine, la colonna per riportare il barcode dell'articolo.     
 
+**Consenti modifica commessa di produzione da ordine cliente collegato**: se attivo, permette di modificare la commessa di produzione collegataq ad un ordine.
+
 **Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
 
 **Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+
+**Utilizzo il configuratore matrici**: questo parametro attiva la gestione delle matrici.       
 
 **Esplodi distinta base**: se attivo, nel momento dell'inserimento di un articolo questo verrà sostituito dal primo livello della sua distinta base, se esiste; quindi invece dell'articolo “prodotto Finito” l'ordine sarà popolato con la distinta base di questo articolo.        
 
