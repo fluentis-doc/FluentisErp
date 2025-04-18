@@ -1,192 +1,315 @@
 {
-  "Amministrativa": {
-    "message": "Amministrativa"
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
   },
-  "Dichiarazioni & Intrastat": {
-    "message": "Dichiarazioni & Intrastat"
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
   },
-  "Registrazioni contabili": {
-    "message": "Registrazioni contabili"
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
   },
-  "Partite": {
-    "message": "Partite"
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
   },
-  "Percipienti": {
-    "message": "Percipienti"
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer Entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older Entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read More",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View All Tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages navigation",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "Close menu",
+    "description": "The ARIA label for close button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "Open menu",
+    "description": "The ARIA label for open button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to heading",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "siteConfig.title": {
+    "message": "Fluentis ERP Documentation"
+  },
+  "siteConfig.tagline": {
+    "message": "The guide designed to provide continuous support for the daily use of Fluentis ERP"
+  },
+  "siteConfig.introductionButton": {
+    "message": "Overview"
   },
   "Cespiti": {
-    "message": "Cespiti"
+    "message": "Fixed Assets"
+  },
+  "Anagrafiche": {
+    "message": "Registers"
+  },
+  "Strumenti": {
+    "message": "Tools"
+  },
+  "Object navigator": {
+    "message": "Object navigator"
+  },
+  "Form navigator": {
+    "message": "Form navigator"
+  },
+  "Context panel": {
+    "message": "Context panel"
+  },
+  "Dichiarazioni & Intrastat": {
+    "message": "Declarations & Intrastat"
+  },
+  "Registrazioni contabili": {
+    "message": "Ledger Records"
+  },
+  "Partite": {
+    "message": "Maturity values"
+  },
+  "Percipienti": {
+    "message": "Professional Men"
   },
   "Fatturazione Elettronica": {
-    "message": "Fatturazione Elettronica"
+    "message": "Electronic invoicing"
   },
   "Leasing": {
     "message": "Leasing"
   },
   "Documenti SDI": {
-    "message": "Documenti SDI"
-  },
-  "CRM": {
-    "message": "CRM"
-  },
-  "Contatti CRM": {
-    "message": "Contatti CRM"
-  },
-  "Newsletter": {
-    "message": "Newsletter"
-  },
-  "Campagne marketing": {
-    "message": "Campagne marketing"
-  },
-  "Opportunità": {
-    "message": "Opportunità"
-  },
-  "Previsioni di vendita": {
-    "message": "Previsioni di vendita"
-  },
-  "Helpdesk": {
-    "message": "Helpdesk"
-  },
-  "Tesoreria": {
-    "message": "Tesoreria"
+    "message": "ES Documents"
   },
   "Conti correnti": {
-    "message": "Conti correnti"
+    "message": "Bank account"
   },
   "DocFinance": {
     "message": "DocFinance"
   },
   "Pagamenti fornitori": {
-    "message": "Pagamenti fornitori"
+    "message": "Vendors Payments"
   },
   "Rischio cliente": {
-    "message": "Rischio cliente"
+    "message": "Customer Risk"
   },
   "Cash flow": {
     "message": "Cash flow"
   },
   "Portafoglio effetti": {
-    "message": "Portafoglio effetti"
+    "message": "Bills portfolio"
   },
   "Anticipi & Incassi": {
-    "message": "Anticipi & Incassi"
-  },
-  "Controlling": {
-    "message": "Controlling"
+    "message": "Advances&Collections"
   },
   "Chiusure infrannuali": {
-    "message": "Chiusure infrannuali"
+    "message": "Mid-Year Closures"
   },
   "Riclassificazioni": {
-    "message": "Riclassificazioni"
+    "message": "Reclassifications"
   },
   "Budgeting": {
     "message": "Budgeting"
   },
   "Contabilità gestionale": {
-    "message": "Contabilità gestionale"
+    "message": "Managerial accounting"
   },
   "Calcolo costo": {
-    "message": "Calcolo costo"
+    "message": "Cost Calculation"
   },
   "Acquisti": {
-    "message": "Acquisti"
+    "message": "Purchases"
   },
   "Richieste di acquisto": {
-    "message": "Richieste di acquisto"
+    "message": "Purchase Requests"
   },
   "Richieste di offerta": {
-    "message": "Richieste di offerta"
+    "message": "Offer Requests"
   },
   "Ordini fornitori": {
-    "message": "Ordini fornitori"
+    "message": "Purchase Orders"
   },
   "Ricevimento merci": {
-    "message": "Ricevimento merci"
+    "message": "Goods Receipt"
   },
   "DDT di acquisto": {
-    "message": "DDT di acquisto"
+    "message": "Purchase Delivery Note"
   },
   "Fatture di acquisto": {
-    "message": "Fatture di acquisto"
+    "message": "Purchase Invoices"
   },
   "Listini fornitori": {
-    "message": "Listini fornitori"
+    "message": "Purchase Price Lists"
   },
   "Gestione prezzi": {
-    "message": "Gestione prezzi"
-  },
-  "Vendite": {
-    "message": "Vendite"
-  },
-  "Offerte": {
-    "message": "Offerte"
+    "message": "Price Management"
   },
   "Ordini cliente": {
-    "message": "Ordini cliente"
+    "message": "Sales Orders"
   },
   "DDT di vendita": {
-    "message": "DDT di vendita"
+    "message": "Sales Delivery Note"
   },
   "Fatture di vendita": {
-    "message": "Fatture di vendita"
+    "message": "Sales Invoices"
   },
   "POS": {
     "message": "POS"
   },
   "Liquidazione agenti": {
-    "message": "Liquidazione agenti"
+    "message": "Agent Settlement"
   },
   "Listini di vendita": {
-    "message": "Listini di vendita"
-  },
-  "Logistica": {
-    "message": "Logistica"
+    "message": "Sales Price List"
   },
   "Articoli": {
-    "message": "Articoli"
+    "message": "Items"
   },
   "Magazzino": {
-    "message": "Magazzino"
+    "message": "Warehouse"
   },
   "Lotti & Numeri di serie": {
-    "message": "Lotti & Numeri di serie"
+    "message": "Lots & Serial Numbers"
   },
   "Picking": {
     "message": "Picking"
   },
   "Inventari fisici": {
-    "message": "Inventari fisici"
+    "message": "Physical Inventory"
   },
   "UDC": {
-    "message": "UDC"
+    "message": "Loading Unit"
   },
   "Piani di carico": {
-    "message": "Piani di carico"
-  },
-  "Spedizioni": {
-    "message": "Spedizioni"
-  },
-  "Automezzi": {
-    "message": "Automezzi"
-  },
-  "WMS": {
-    "message": "WMS"
-  },
-  "Pianificazione": {
-    "message": "Pianificazione"
-  },
-  "Commesse di produzione": {
-    "message": "Commesse di produzione"
+    "message": "Load Plans"
   },
   "MS - Master scheduling": {
     "message": "MS - Master scheduling"
   },
-  "CRP-Capacity requirements": {
-    "message": "CRP-Capacity requirements"
-  },
-  "Produzione": {
-    "message": "Produzione"
+  "Capacity requirements": {
+    "message": "Capacity requirements"
   },
   "MRP": {
     "message": "MRP"
@@ -195,384 +318,188 @@
     "message": "PP - Production in progress"
   },
   "Gestione ore produzione": {
-    "message": "Gestione ore produzione"
+    "message": "Production hours management"
   },
   "Controllo produzione": {
-    "message": "Controllo produzione"
+    "message": "Production Control"
+  },
+  "Ordini di conto lavoro": {
+    "message": "Subcontractor orders"
+  },
+  "DDT di consegna": {
+    "message": "Delivery note"
+  },
+  "Rientri": {
+    "message": "Returns"
+  },
+  "Listini di conto lavoro": {
+    "message": "Subcontractor price lists"
+  },
+  "Progetti": {
+    "message": "Projects"
+  },
+  "Richieste di intervento": {
+    "message": "Interventions Request"
+  },
+  "Interventi pianificati": {
+    "message": "Planned Interventions"
+  },
+  "Interventi": {
+    "message": "Interventions"
+  },
+  "Attività": {
+    "message": "Activities"
+  },
+  "Stato avanzamento lavori": {
+    "message": "Work project status"
+  },
+  "Pianificazione a calendario delle risorse": {
+    "message": "Calendar Planning of Resources"
+  },
+  "Documenti di origine esterna": {
+    "message": "External origin documents"
+  },
+  "Documenti di origine interna": {
+    "message": "Internal origin documents"
+  },
+  "Reclami e non conformità": {
+    "message": "Complaints and Non-compliance"
+  },
+  "Taratura strumenti": {
+    "message": "Calibration Tools"
+  },
+  "Impostazioni": {
+    "message": "Settings"
+  },
+  "Amministrativa": {
+    "message": "Finance"
+  },
+  "Tesoreria": {
+    "message": "Treasury"
+  },
+  "Controlling": {
+    "message": "Controlling"
+  },
+  "Vendite": {
+    "message": "Sales"
+  },
+  "Logistica": {
+    "message": "Logistics"
+  },
+  "Pianificazione": {
+    "message": "Planning"
+  },
+  "Produzione": {
+    "message": "Production"
+  },
+  "Conto lavoro": {
+    "message": "Subcontractor"
+  },
+  "Gestione progetti": {
+    "message": "Project Management"
+  },
+  "Qualità": {
+    "message": "Quality"
+  },
+  "CRM": {
+    "message": "CRM"
+  },
+  "Budget and Marketing Automation": {
+    "message": "Budget and Marketing Automation"
+  },
+  "Contatti CRM": {
+    "message": "CRM Contacts"
+  },
+  "Opportunità": {
+    "message": "Opportunity"
+  },
+  "Tickets Management": {
+    "message": "Tickets Management"
+  },
+  "WMS": {
+    "message": "WMS"
+  },
+  "Commesse di produzione": {
+    "message": "Production Job Order"
   },
   "Fluentis MES": {
     "message": "Fluentis MES"
-  },
-  "Conto lavoro": {
-    "message": "Conto lavoro"
-  },
-  "Ordini di conto lavoro": {
-    "message": "Ordini di conto lavoro"
-  },
-  "DDT di consegna": {
-    "message": "DDT di consegna"
-  },
-  "Rientri": {
-    "message": "Rientri"
-  },
-  "Listini di conto lavoro": {
-    "message": "Listini di conto lavoro"
-  },
-  "Gestione progetti": {
-    "message": "Gestione progetti"
-  },
-  "Progetti": {
-    "message": "Progetti"
-  },
-  "Anagrafiche": {
-    "message": "Anagrafiche"
-  },
-  "Richieste di intervento": {
-    "message": "Richieste di intervento"
-  },
-  "Interventi pianificati": {
-    "message": "Interventi pianificati"
-  },
-  "Interventi": {
-    "message": "Interventi"
-  },
-  "Attività": {
-    "message": "Attività"
-  },
-  "Stato avanzamento lavori": {
-    "message": "Stato avanzamento lavori"
-  },
-  "Pianificazione a calendario delle risorse": {
-    "message": "Pianificazione a calendario delle risorse"
-  },
-  "Qualità": {
-    "message": "Qualità"
-  },
-  "Documenti di origine esterna": {
-    "message": "Documenti di origine esterna"
-  },
-  "Documenti di origine interna": {
-    "message": "Documenti di origine interna"
-  },
-  "Controlli articolo": {
-    "message": "Controlli articolo"
-  },
-  "Reclami e non conformità": {
-    "message": "Reclami e non conformità"
-  },
-  "Azioni correttive": {
-    "message": "Azioni correttive"
-  },
-  "Taratura strumenti": {
-    "message": "Taratura strumenti"
-  },
-  "Qualificazione fornitore": {
-    "message": "Qualificazione fornitore"
   },
   "DDMRP": {
     "message": "DDMRP"
   },
   "Procedure": {
-    "message": "Procedure"
+    "message": "Procedures"
   },
   "Forms e report": {
-    "message": "Forms e report"
-  },
-  "siteConfig.title": {
-    "message": "siteConfig.title"
-  },
-  "siteConfig.tagline": {
-    "message": "siteConfig.tagline"
-  },
-  "siteConfig.introductionButton": {
-    "message": "siteConfig.introductionButton"
-  },
-  "theme.ErrorPageContent.title": {
-    "message": "Esta página ha fallado.",
-    "description": "The title of the fallback page when the page crashed"
-  },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Volver al principio",
-    "description": "The ARIA label for the back to top button"
-  },
-  "theme.blog.paginator.navAriaLabel": {
-    "message": "Navegación por la página de la lista de blogs ",
-    "description": "The ARIA label for the blog pagination"
-  },
-  "theme.blog.paginator.newerEntries": {
-    "message": "Entradas más recientes",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
-  },
-  "theme.blog.paginator.olderEntries": {
-    "message": "Entradas más antiguas",
-    "description": "The label used to navigate to the older blog posts page (next page)"
-  },
-  "theme.blog.archive.title": {
-    "message": "Archivo",
-    "description": "The page & hero title of the blog archive page"
-  },
-  "theme.blog.archive.description": {
-    "message": "Archivo",
-    "description": "The page & hero description of the blog archive page"
-  },
-  "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Barra de paginación de publicaciones del blog",
-    "description": "The ARIA label for the blog posts pagination"
-  },
-  "theme.blog.post.paginator.newerPost": {
-    "message": "Publicación más reciente",
-    "description": "The blog post button label to navigate to the newer/previous post"
-  },
-  "theme.blog.post.paginator.olderPost": {
-    "message": "Publicación más antigua",
-    "description": "The blog post button label to navigate to the older/next post"
-  },
-  "theme.tags.tagsPageLink": {
-    "message": "Ver Todas las Etiquetas",
-    "description": "The label of the link targeting the tag list page"
-  },
-  "theme.colorToggle.ariaLabel": {
-    "message": "Cambiar entre modo oscuro y claro (actualmente {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
-  },
-  "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "modo oscuro",
-    "description": "The name for the dark color mode"
-  },
-  "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "modo claro",
-    "description": "The name for the light color mode"
-  },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 artículo|{count} artículos",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Rastro de navegación",
-    "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "Página del documento",
-    "description": "The ARIA label for the docs pagination"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "Anterior",
-    "description": "The label used to navigate to the previous doc"
-  },
-  "theme.docs.paginator.next": {
-    "message": "Siguiente",
-    "description": "The label used to navigate to the next doc"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un documento etiquetado|{count} documentos etiquetados",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} con \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Esta es la documentación sin publicar para {siteTitle}, versión {versionLabel}.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Esta es la documentación para {siteTitle} {versionLabel}, que ya no se mantiene activamente.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
-  },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Para la documentación actualizada, vea {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "última versión",
-    "description": "The label used for the latest version suggestion link label"
-  },
-  "theme.common.editThisPage": {
-    "message": "Editar esta página",
-    "description": "The link label to edit the current page"
-  },
-  "theme.common.headingLinkTitle": {
-    "message": "Enlace directo al {heading}",
-    "description": "Title for link to heading"
-  },
-  "theme.lastUpdated.atDate": {
-    "message": " en {date}",
-    "description": "The words used to describe on which date a page has been last updated"
-  },
-  "theme.lastUpdated.byUser": {
-    "message": " por {user}",
-    "description": "The words used to describe by who the page has been last updated"
-  },
-  "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Última actualización{atDate}{byUser}",
-    "description": "The sentence used to display when a page has been last updated, and by who"
-  },
-  "theme.NotFound.title": {
-    "message": "Página No Encontrada",
-    "description": "The title of the 404 page"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "Etiquetas:",
-    "description": "The label alongside a tag list"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Cerrar",
-    "description": "The ARIA label for close button of announcement bar"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versiones",
-    "description": "The label for the navbar versions dropdown on mobile view"
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navegación de publicaciones recientes",
-    "description": "The ARIA label for recent posts in the blog sidebar"
-  },
-  "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Ampliar la categoría '{label}' de la barra lateral",
-    "description": "The ARIA label to expand the sidebar category"
-  },
-  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Colapsar categoría '{label}' de la barra lateral",
-    "description": "The ARIA label to collapse the sidebar category"
+    "message": "Forms and report"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Principal",
+    "message": "Main",
     "description": "The ARIA label for the main navigation"
   },
-  "theme.NotFound.p1": {
-    "message": "No pudimos encontrar lo que buscaba.",
-    "description": "The first paragraph of the 404 page"
-  },
-  "theme.NotFound.p2": {
-    "message": "Comuníquese con el dueño del sitio que le proporcionó la URL original y hágale saber que su vínculo está roto.",
-    "description": "The 2nd paragraph of the 404 page"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "En esta página",
-    "description": "The label used by the button on the collapsible TOC component"
-  },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Idiomas",
-    "description": "The label for the mobile language switcher dropdown"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Leer Más",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "Leer más acerca de {title}",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Lectura de un minuto|{readingTime} min de lectura",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.breadcrumbs.home": {
-    "message": "Página de Inicio",
-    "description": "The ARIA label for the home page in the breadcrumbs"
-  },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Colapsar barra lateral",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Colapsar barra lateral",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Barra lateral de Documentos",
+    "message": "Docs sidebar",
     "description": "The ARIA label for the sidebar navigation"
   },
-  "theme.CodeBlock.copied": {
-    "message": "Copiado",
-    "description": "The copied button label on code blocks"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copiar código",
-    "description": "The ARIA label for copy code blocks button"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "Copiar",
-    "description": "The copy button label on code blocks"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "Alternar ajuste de palabras",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
-  },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expandir barra lateral",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expandir barra lateral",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.admonition.caution": {
-    "message": "precaución",
-    "description": "The default label used for the Caution admonition (:::caution)"
-  },
-  "theme.admonition.danger": {
-    "message": "peligro",
-    "description": "The default label used for the Danger admonition (:::danger)"
-  },
-  "theme.admonition.info": {
-    "message": "info",
-    "description": "The default label used for the Info admonition (:::info)"
-  },
-  "theme.admonition.note": {
-    "message": "nota",
-    "description": "The default label used for the Note admonition (:::note)"
-  },
-  "theme.admonition.tip": {
-    "message": "tip",
-    "description": "The default label used for the Tip admonition (:::tip)"
-  },
-  "theme.admonition.warning": {
-    "message": "aviso",
-    "description": "The default label used for the Warning admonition (:::warning)"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Cerrar barra de lateral",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Volver al menú principal",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Alternar barra lateral",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
-  },
   "cmfcmf/d-s-l.searchBar.placeholder": {
-    "message": "Buscar...",
+    "message": "Search...",
     "description": "Placeholder shown in the searchbar"
   },
   "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
-    "message": "Borrar",
+    "message": "Clear",
     "description": "Title of the button to clear the current search input"
   },
   "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
-    "message": "Cancelar",
+    "message": "Clear",
     "description": "Text of the button to close the detached search window"
   },
   "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
-    "message": "Enviar",
+    "message": "Search",
     "description": "Title of the button to submit a new search"
   },
   "cmfcmf/d-s-l.searchBar.noResults": {
-    "message": "No se han encontrado resultados.",
+    "message": "No results were found.",
     "description": "message shown if no results are found"
   },
-  "theme.blog.post.plurals": {
-    "message": "Una publicación|{count} publicaciones",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  "Automezzi": {
+    "message": "Vehicle"
   },
-  "theme.blog.tagTitle": {
-    "message": "{nPosts} etiquetados con \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
+  "Controlli articolo": {
+    "message": "Item control"
+  },
+  "Azioni correttive": {
+    "message": "Corrective Actions"
+  },
+  "Qualificazione fornitore": {
+    "message": "Vendor qualification"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "Anagrafiche/Impostazioni": {
+    "message": "Registers/Settings"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.blog.author.pageTitle": {
     "message": "{authorName} - {nPosts}",
@@ -583,19 +510,15 @@
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
+    "message": "View all authors",
     "description": "The label of the link targeting the blog authors page"
   },
-  "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
-    "description": "The text for authors with 0 blog post"
-  },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Página sin clasificar",
+    "message": "Unlisted page",
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "Esta página está sin clasificar. Los motores de búsqueda no la indexaran, y solo los usuarios con el enlace directo podrán acceder a esta.",
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
@@ -606,16 +529,136 @@
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
   },
+  "CRP-Capacity requirements": {
+    "message": "CRP-Capacity requirements"
+  },
+  "Newsletter": {
+    "message": "Newsletter"
+  },
+  "Campagne marketing": {
+    "message": "Marketing Campaigns"
+  },
+  "Previsioni di vendita": {
+    "message": "Sales Forecast"
+  },
+  "Helpdesk": {
+    "message": "Helpdesk"
+  },
+  "Offerte": {
+    "message": "Sales Offers"
+  },
+  "Spedizioni": {
+    "message": "Shippings"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
+  },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Intente de nuevo",
+    "message": "Try again",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
-  },
-  "theme.common.skipToMainContent": {
-    "message": "Saltar al contenido principal",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "Etiquetas",
-    "description": "The title of the tag list page"
   }
 }
