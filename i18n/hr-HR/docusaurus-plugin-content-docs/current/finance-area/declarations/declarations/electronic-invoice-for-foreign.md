@@ -1,51 +1,51 @@
 ---
-title: Fatturazione elettronica con soggetti non residenti
+title: Elektroničko fakturiranje s nerezidentnim subjektima  
 sidebar_position: 1
 ---
 
-La funzione **Amministrazione > Dichiarazioni > Fatturazione elettronica con soggetti non residenti** genera i file XML relativi ai documenti di acquisto e di vendita da inviare (in alternativa all'invio tramite il medesimo tracciato previsto per le fatture elettroniche con soggetti residenti in Italia) all'Agenzia delle Entrate, in sostituzione dell'adempimento dello spesometro (adempimento di fatto soppresso o meglio attualmente denominato comunemente "esterometro" per distinguere quel che ne rimane).
+Funkcija **Administracija > Izjave > Elektroničko fakturiranje s nerezidentnim subjektima** generira XML datoteke povezane s dokumentima kupnje i prodaje koje se šalju (kao alternativa slanju putem istog formata predviđenog za elektroničke račune s rezidentima u Italiji) talijanskoj Poreznoj upravi. Time se zamjenjuje obveza tzv. "spesometra", koja je u biti ukinuta ili, preciznije, sada poznata kao "esterometro", kako bi se razlikovalo ono što je od nje ostalo.  
 
-L'accesso alla funzione visualizza una maschera suddivisa in una sezione superiore di testata, nella quale è possibile impostare una serie di filtri da utilizzare per la visualizzazione e la gestione dei file XML da inviare:
+Pristup funkciji prikazuje masku podijeljenu u gornji dio zaglavlja, gdje je moguće postaviti niz filtera za prikaz i upravljanje XML datotekama za slanje:
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image01.png)
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image02.png)
 
-- **Stato SdI**: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI.
+- **Stanje SdI**: prikazuje status dokumenta, uključujući i interni status u Fluentisu te status iz Fluentis Business Hub-a koji dolazi izravno iz SdI-a.  
 
-- **Nome file SdI**: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI ().
+- **Naziv datoteke SdI**: naziv datoteke koja se kreira kada dokument dobije status GENERIRANA. Bilo u originalnom formatu ili nakon dodavanja digitalnog potpisa, predstavlja datoteku računa za slanje SdI-u.
 
-- **Sdi Id**: l'identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
+- **Sdi Id**: jedinstveni identifikator koji SdI dodjeljuje dokumentu prilikom zaprimanja.  
 
-- **Data ricezione Sdi**: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file
+- **Datum zaprimanja SdI-a**: datum kada je sustav za razmjenu informacija (SdI) preuzeo poslani dokument. Ta se informacija dobiva iz potvrde o primitku koju SdI izdaje nakon zaprimanja.  
 
-- **Data chiusura**: la data di chiusura del flusso di gestione (es. documento Cosegnato)
+- **Datum zatvaranja**: datum zatvaranja toka obrade (npr. dokument dostavljen).  
 
-**- Data ultimo evento**: la data dell'ultimo cambio stato avvenuto sul file o manualmente o per effetto dell'avanzamento dell'elaborazione sul SdI
+- **Datum posljednjeg događaja**: datum zadnje promjene statusa datoteke, bilo ručno ili automatski putem obrade na SdI-u.  
 
-Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando la funzione **Registro documenti Sdi ![](/img/neutral/common/legenda.png)**  è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione **Stampa ![](/img/neutral/common/print.png)** stampare il documento XML abbinato, con le funzioni **Scarica allegato** o **Scarica il contenuto del registro** ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image05.png) eseguire il download del file XML.
+U traci izbornika, u dijelu za elektroničko fakturiranje, putem funkcije **Registar dokumenata SdI ![](/img/neutral/common/legenda.png)** moguće je pregledati poduzete radnje nad odabranim dokumentom, funkcija **Ispis![](/img/neutral/common/print.png)** omogućuje ispis pridružene XML datoteke, a funkcije **SPreuzmi prilog** i **Preuzmi sadržaj registra** ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image05.png) omogućuju preuzimanje XML datoteka.  
 
-Con l'azione doppio click in corrispondenza di una riga di risultato della griglia, si accede al dettaglio della registrazione contabile selezionata. Anche nella registrazione contabile è possibile visionare e cambiare lo stato dell'elaborazione del file rispetto all'invio al SdI (utilizzare la combo box dedicata al cambio stati specifico per la fatturazione elettronica posta nella ribbon bar).
+Dvaput klikom na red u rezultatu prikaza otvara se detalj kontabilnog zapisa. I tamo je moguće pregledati i promijeniti status obrade datoteke za slanje SdI-u (pomoću posebnog padajućeg izbornika u traci izbornika).
 
-La ricerca eseguibile dalla presente form estrae, dunque, tutte le fatture (**contabilizzate**) collegate a causali contabili aventi come tipo movimento (ai fini iva) Iva vendite intra cee oppure Iva vendite extra cee o che abbiano valorizzato il campo “Conto Partner” nel pannello Parametri:
+Pretraga s ovog obrasca dohvaća sve (**kontabilizirane**) povezane s knjigovodstvenim događajima čiji je tip prometa (za potrebe PDV-a) prodaja unutar EU ili prodaja izvan EU, ili one koje imaju ispunjeno polje „Konto partnera“ u panelu s parametrima:
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image06.png)
 
-I documenti ricercati sono **soltanto quelli NON già inviati** tramite il flusso della fatturazione elettronica con soggetti non residenti secondo il tracciato utilizzato per quelle italiane.
+Pretražuju se **samo oni dokumenti koji NISU već poslani** putem elektroničkog fakturiranja nerezidentnim subjektima prema formatu koji se koristi za talijanske račune.  
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image07.png)
 
-Qualora non sia configurato nell'impianto il servizio Fluentis Business Hub, sarà possibile accedere alla funzione ![](/img/neutral/common/legenda.png)  e scaricare il file XML generato  da utilizzare esternamente a Fluentis.
+Ako usluga Fluentis Business Hub nije konfigurirana u sustavu, moguće je pristupiti funkciji ![](/img/neutral/common/legenda.png) i preuzeti generiranu XML datoteku kako bi se koristila izvan Fluentisa.
 
-Il file XML creato durante la gestione degli stati da parte dell'operatore dovrà essere firmato, pertanto, se attivo il servizio Fluentis Business Hub, una copia del file sarà creata nella cartella indicata nelle impostazioni relative alla , dove è necessario indicare una cartella di appoggio per depositare i file XML da firmare e recuperare successivamente i file firmati:
+XML datoteka koja se stvara tijekom obrade statusa od strane operatera mora biti potpisana. Ako je aktivna usluga Fluentis Business Hub, kopija datoteke se kreira u mapi specificiranoj u postavkama, gdje je potrebno navesti privremenu mapu za pohranu XML datoteka koje treba potpisati i kasnije preuzeti potpisane datoteke:   
 
 ![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image09.png)
 
-Al terminine dell'invio al SdI, il file potrà assumere due stati:
+Nakon slanja datoteke SdI-u, ona može imati jedan od sljedećih statusa:
 
--      **Non conforme:** il file contiene segnalazioni per cui non può essere accettato dal SdI. In questi casi è necessario accedere al  ![](/img/neutral/common/legenda.png)  **, **nel pannello Registro documenti SdI e visualizzare la motivazione di non conformità, correggere l'eventuale anomalia e inviare nuovamente il file rigenerato.
+**Nije sukladno:** datoteka sadrži pogreške zbog kojih je SdI ne može prihvatiti. U tom je slučaju potrebno pristupiti ![](/img/neutral/common/legenda.png) **u panelu Registar dokumenata SdI** i pregledati razlog nesukladnosti, ispraviti eventualnu nepravilnost i ponovno poslati regeneriranu datoteku.  
 
-**Consegnata:** il file è stato correttamente inviato ed acquisito dal SdI. In questo caso sarà possibile prendere visione dell'esito della consegna accedendo al pannello pannello Registro documenti SdI della funzione  ![](/img/neutral/common/legenda.png)  per ilfile selezionato.
+**Dostavljena:** datoteka je ispravno poslana i prihvaćena od strane SdI-a. U tom je slučaju moguće pregledati ishod dostave pristupom panelu Registar dokumenata SdI putem funkcije ![](/img/neutral/common/legenda.png) za odabranu datoteku.  
 
 
 
