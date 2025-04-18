@@ -3,6 +3,40 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0029 - 18/04/2025
+
+> - SD – Spedizioni, corretto caso in cui non era possibile aggiungere o eliminare una riga di groupage, e migliorato messaggio di segnalazione in fase di eliminazione spedizione collegata ad altri documenti (#TT01282/25) 
+> - WM – Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo e migliorato lo scorrimento. (#TT01514/25) 
+> - SD, SCS - Abilitato l'inserimento di righe nota per offerte, ordini, ddt, fatture e ddt di consegna con prezzo ivato (#TT01811/25) 
+> - FI - revisione gestione causale automatica per giroconto iva in sospensione, escluso messaggio di protocolli non ordinati (#TT01845/25) 
+> - FI – Acquisizione effetti da fatture: revisione del raggruppamento delle scadenze (rif. TT01162/25) 
+> - SD – Risolto errore nella cancellazione di un Ordine Cliente creato tramite conversione di un’Offerta, quando il tipo ordine prevedeva la generazione automatica del progetto (#TT01211/25) 
+> - MES - Corretto bug nella stampa delle etichette dal tab etichette del MES, nel quale veniva stampata solamente la prima. (#TT01862/25, #TT01349/25 ) 
+> - FI – Scritture di assestamento: revisione procedura di ripristino assestamento. Modifications in rollback assestamento form that can have an impact on profiles (rif. TT01860/25) 
+> - SD – Corretto bug in fase di creazione della fattura tramite la procedura di Creazione da DDT, nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto. (#TT01804/25) 
+> - SD – Stampa portafoglio ordini a quantità - modificato layout stampa ingrandendo alcune label (#TT01251/25) 
+> - FI – Stampa Liquidazione iva periodica – modificato layout in modo che non vada a capo per ogni voce (#TT01838/25) 
+> - SD – Nella maschera di Evasione ordini nei DDT di Vendita, il pulsante Evasione forzata ordine consente di impostare la riga articolo come forzatamente evasa (#TT01603/25) 
+> - WM – Corretto bug in fase di creazione di una nuova distinta base nella versione browser di Fluentis. (#TT01615/25) 
+> - WMS – Corretto bug nelle form conferma picking e gestione spunta che non permetteva di sovraevadere la quantità del picking più di una volta anche se nel tipo picking era attiva la sovrevabilità. (#TT01585/25) 
+> - SH.Dashboards - fix bug when drill down (#TTT01540/25) 
+> - SD – Risolto errore che, in fase di Evasione di un Ordine cliente in Fattura, applicava lo sconto cliente alle righe di tipo 2 anche se precedentemente rimosso dalla riga dell’ordine (#TT01767/25) 
+> - SCM – Proponi centro di costo e conto per modificare il tipo fatturato della fattura di acquisto TT01584/25. 
+> - WM – Corretto bug nell’import SignalItem tramite webapi nel caso in cui l’articolo avesse una variante. (#TT01904/25) 
+> - WMS – Corretto bug nelle form carico, scarico articolo e rettifica articolo inerente ad un articolo con zero cifre decimali. 
+> - FI - se la categoria cespite ha la gestione extracontabile/oggettiva, ora l'acquisto da contabilità valorizza automaticamente la scheda. #TT0155/25 
+> - WMS – Corretto bug in conferma picking. (#TT01944/25) 
+> - SD – Implementata la possibilità di effettuare lo Storno di un DDT di Vendita anche quando è già stato valorizzato (#TT01475/25) 
+> - FI - Mancato riporto Dichiarazione d'intento da Documento SDI ( TT01820/25) 
+> - SD – WEB – Corretto errore di visualizzazione nella maschera dei Listini di Vendita (#TT01861/25) 
+> - SCM, SD – Risolta anomalia nel ricalcolo dei riepiloghi documento in presenza di sconto a valore, nel caso di modifica del flag “Prezzo unità di misura alternativa” (#TT01844/25) 
+> - FI - regolarizzazione valuta, quando l'operazione è gestita sulle partite ora è attivo un nuovo parametro per gestire utili e perdite separatamente senza compensarli. Modifications in regolarizzazione valuta form that can have an impact on profiles (#TT01807/25) 
+> - CO - chiusura infrannuale, nuovi campi per memorizzare la data creazione e l’utente arm di creazione. Modifications in chiusura infrannuale form that can have an impact on profiles (#TT01918/25) 
+> - MES – Corretto bug nel filtro date della form di stampa del Foglio di lavoro. (#TT01928/25) 
+> - WM – Corretto bug nell’export FSItem tramite webapi. Non  venivano esportati correttamente gli extradata delle varianti dell’articolo nel caso in cui il file fosse generato in Json. (#TT01631/25) 
+> - CRM -  Workflow nei contatti crm - risolto avanzamento stato non funzionante in alcune casistiche (#TT01783/25) 
+> - SH.Dashboards: fix exception when visualize dashboard (TT01540/25) 
+
 ### Patch 707.1-0028 - 10/04/2025
 
 > - Fix for GetReportOutput and Multi Pooling. 
