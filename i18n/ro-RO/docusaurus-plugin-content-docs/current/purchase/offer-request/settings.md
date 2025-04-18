@@ -1,27 +1,27 @@
 ---
-title: Introduzione
+title: Introducere
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area **Acquisti > Richieste di offerta** e rappresenta uno degli step intermedi del ciclo passivo.
+Modulul se află în **Achiziții > Cereri de ofertă** și reprezintă unul dintre pașii intermediari ai ciclului de achiziții.
 
-Le richieste di offerta (RDO) servono a gestire il processo di raccolta e confronto di preventivi da parte dei fornitori permettendo la scelta delle condizioni di fornitura migliori.
+Cereri de ofertă (CdO) sunt utilizate pentru a gestiona procesul de colectare și comparare a ofertelor furnizorilor, permițând alegerea celor mai bune condiții de aprovizionare.
 
-### Funzionalità principali
+### Funcționalități principale
 
-- Invio di richieste multiple: Le RDO permettono di inviare richieste di preventivo a diversi fornitori per beni o servizi specifici, consentendo di raccogliere informazioni su prezzi, tempi di consegna, condizioni di pagamento e altre variabili importanti per l'azienda.
-- Comparazione delle offerte: consente di confrontare le offerte ricevute facilitando la selezione della soluzione migliore in termini di costi e condizioni contrattuali.
-- Conversione in ordini di acquisto: Una volta selezionata l'offerta più conveniente, il sistema permette di convertire la richiesta di offerta in un ordine di acquisto utilizzando la procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation). 
-- Creazione e gestione centralizzata: Le RDO possono essere generate utilizzando template predefiniti e personalizzabili con la *Duplica* e l'utilizzo delle **Versioni**, con possibilità di includere dettagli come scontistiche, termini di pagamento e condizioni specifiche.
+- Trimiterea de cereri multiple: CdO permit trimiterea cererilor de ofertă către diferiți furnizori pentru bunuri sau servicii specifice, permițând colectarea de informații despre prețuri, termene de livrare, condiții de plată și alte variabile importante pentru companie.
+- Compararea ofertelor: permite compararea ofertelor primite, facilitând selecția celei mai bune soluții în termeni de costuri și condiții contractuale.
+- Conversia în ordine de achiziție: Odată selectată oferta cea mai convenabilă, sistemul permite convertirea cererii de ofertă într-un ordin de achiziție utilizând procedura de [Creare ordin furnizor din ofertă furnizor](/docs/purchase/offer-request/procedures/order-creation).
+- Creare și gestionare centralizată: CdO pot fi generate utilizând șabloane predefinite și personalizabile cu procedura de *Duplicare* și utilizarea **Versiunilor**, cu posibilitatea de a include detalii precum reduceri, termene de plată și condiții specifice.
 
-### Benefici operativi
+### Beneficii operaționale
 
-- Riduzione dei costi: Confrontando diverse offerte in modo sistematico, l'azienda può scegliere i fornitori con le condizioni economiche più favorevoli, riducendo i costi di approvvigionamento.
-- Efficienza operativa: L'automazione dei processi di richiesta e confronto delle offerte riduce il carico di lavoro manuale, aumentando la velocità e l'efficienza delle operazioni.
-- Migliore trasparenza e tracciabilità: Il sistema consente di tracciare ogni fase del processo di richiesta di offerta, garantendo trasparenza e un archivio completo per eventuali verifiche future.
+- Reducerea costurilor: Comparând diferite oferte în mod sistematic, compania poate alege furnizorii cu condițiile economice cele mai favorabile, reducând costurile de aprovizionare.
+- Eficiență operațională: Automatizarea proceselor de cerere și comparare a ofertelor reduce sarcina de lucru manuală, crescând viteza și eficiența operațiunilor.
+- Transparență și trasabilitate îmbunătățite: Sistemul permite urmărirea fiecărei etape a procesului de cerere de ofertă, asigurând transparență și o arhivă completă pentru eventuale verificări viitoare.
 
-### Impostazioni
+### Setări
 
-Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle:    
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations) 
-> - [Tipi richieste di offerte](/docs/configurations/tables/purchase/purchase-offer-type)
+Înainte de a utiliza modulul, este necesar să completați următoarele tabele:  
+> - [Numerotări](/docs/configurations/tables/fluentis-numerations)
+> - [Tipuri cereri de oferte](/docs/configurations/tables/purchase/purchase-offer-type)
