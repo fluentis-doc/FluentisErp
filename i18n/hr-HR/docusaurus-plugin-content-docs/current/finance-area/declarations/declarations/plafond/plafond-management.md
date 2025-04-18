@@ -1,66 +1,66 @@
 ---
-title: Gestione Plafond
+title: Upravljanje plafonom
 sidebar_position: 5
 ---
 
-La form si trova sul percorso  **Amministrazione > Dichiarazioni > Plafond > Nuovo** e permette la creazione di un *nuovo* Calcolo del Plafond.
+Obrazac se nalazi putem izbornika **Administracija > Izjave > Plafon > Novi** i omogućuje kreiranje *novog* izračuna plafona.  
 
-## Come creare un Calcolo di Plafond
+## Kako kreirati Izračun plafona  
 
-1.  All'apertura della nuova maschera (dopo aver premuto il comando *Nuovo Plafond*) inserire i seguenti valori di testata: 
+1.  Nakon otvaranja novog obrasca (nakon što kliknete naredbu *Novi plafon*), unesite sljedeće zaglavne podatke: 
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image01.png)
 
- **Descrizione**: Descrizione libera del calcolo che si sta inserendo. Si consiglia una descrizione che riporti l'anno di inizio e il tipo di calcolo.
+ **Opis**: Slobodan opis izračuna koji se unosi. Preporučuje se upisati opis koji sadrži početnu godinu i vrstu izračuna.  
 
-**Anno**: inserire l'anno di inizio del calcolo plafond che si sta inserendo.
+**Godina**: Unosi se početna godina izračuna plafona koji se kreira.
 
-:::tip[Nota]
-Nella gestione dei vari calcoli potremo bloccare il periodo, ad esempio ogni anno, e inserire un nuovo calcolo per l'anno successivo, tuttavia ciò non è necessario. Si consiglia (anche per comodità) di proseguire nell’ambito dello stesso calcolo di anno in anno continuando a premere il comando *Proponi Valori*. 
+:::tip[Napomena]
+Tijekom upravljanja različitim izračunima moguće je "zatvoriti" razdoblje, primjerice na kraju godine, te unijeti novi izračun za sljedeću godinu. Ipak, to nije obavezno. Preporučuje se (radi praktičnosti) nastaviti s istim izračunom iz godine u godinu koristeći naredbu *Predloži vrijednosti*. 
 
-La necessità di inserire un nuovo calcolo sorge, invece, in caso di cambio di metodologia di calcolo, ad esempio dal plafond fisso al plafond mobile.
+Potreba za unosom novog izračuna javlja se u slučaju promjene metode izračuna, primjerice s fiksnog plafona na pomični.
 
 :::
 
-**Tipo inizio Plafond**: se questo è un nuovo Plafond o se è una estensione di un plafond mobile; 
+**Vrsta početka plafona**: određuje je li riječ o novom plafonu ili proširenju postojećeg pomičnog plafona; 
 
-**Tipo plafond**: se è Solare (cioè fisso) oppure Mobile (sono due opzioni fiscali previste per gestire il plafond). 
+**Vrsta plafona**: Odabire se je li plafon Solarni (fiksni) ili Pomični (dva porezno predviđena načina upravljanja plafonom).
 
-Data inizio Plafond: è necessario inserire il mese e l'anno iniziale del plafond, e in caso di un plafond 'estensione' anche il **mese**, l'**anno** e l'**importo** dell'ultimo periodo calcolato (sezione Proprietà plafond). 
+Datum početka plafona: potrebno je unijeti mjesec i godinu početka plafona. Ako je riječ o proširenju, tada je potrebno unijeti i **mjesec**, **godinu** i **iznos** posljednjeg izračunatog razdoblja (u odjeljku Svojstva plafona).
 
-**Valore di controllo**: è possibile impostare una soglia valore al fine di avvertire l'utente che sta per utilizzare il totale del plafond disponibile. Ad esempio, se il plafond disponibile ad inizio anno è di cento mila euro, se impostiamo nel valore soglia dieci mila, avremo un avviso al superamento dei novanta mila, inquanto stiamo utilizzando gli ultimi dieci mila.
+**Kontrolna vrijednost**: može se postaviti granična vrijednost kako bi se korisnika upozorilo da se približava potpunom iskorištenju plafona. Na primjer, ako je plafon 100.000 eura, a postavimo prag na 10.000, sustav će nas upozoriti kada se pređe 90.000 eura jer ostaje samo zadnjih 10.000 eura za korištenje.
 
-**Default**: flag che contrassegna, in particolare in presenza di diversi calcoli memorizzati, qual'è il calcolo "attuale".
+**Zadano**: ovaj flag označava koji je izračun "trenutni", posebno u slučaju postojanja više spremljenih izračuna..
 
-:::tip[Attenzione]
-In presenza di un calcolo di Plafond con questo flag attivo, creando il tracciato telematico di invio all'agenzia delle Entrate delle [**dichiarazioni di intento**](/docs/finance-area/declarations/declarations/intent-declaration) emesse, verrà valorizzato l'apposito campo specifico.
+:::tip[Pažnja]
+Ako postoji izračun plafona s ovim flagom aktivnim, pri kreiranju elektroničkog zapisa za slanje Poreznoj upravi u vezi [**izjava o namjeri**](/docs/finance-area/declarations/declarations/intent-declaration) automatski će se popuniti odgovarajuće polje.
 :::
 
-2. Caricare i valori storici da utilizzare: è necessario riportare nella griglia di dettaglio i dati dei dodici mesi precedenti rispetto alla data (anno) di inizio calcolo. 
+2. Učitavanje povijesnih podataka za korištenje: u detaljnoj mreži potrebno je unijeti podatke za prethodnih dvanaest mjeseci u odnosu na početni datum izračuna.
 
-:::tip[Attenzione]
-nel caso di un plafond **mobile** sarà necessario inserire precisamente **mese per mese**, in quanto ad ogni mese si dovrà togliere il 12° mese uscente e aggiungere i dati del nuovo 12°; 
+:::tip[Pažnja]
+U slučaju **pomičnog** plafona, podaci se moraju unositi **mjesec po mjesec**, jer se svakog mjeseca odbacuje 12. mjesec koji izlazi iz razdoblja i dodaju se novi podaci za aktualni mjesec; 
 
-nel caso di **plafond solare**, invece, si possono caricare i primi 11 mesi con **tutti valori zero** e dare direttamente il totale delle vendite in plafond dell'anno del periodo finale di **dicembre**. 
+U slučaju **solarnog plafona**, može se unijeti 11 mjeseci s **vrijednostima nula** a iznos ukupne prodaje koja ulazi u plafon unosi se samo za mjesec **prosinac** završne godine. 
 
-Il programma controllerà la completezza dei dati e salverà il plafond per poterlo, quindi, utilizzare.
+Program će provjeriti potpunost podataka i spremiti plafon kako bi bio spreman za korištenje.
 :::
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image02.png)
 
-3. Di mese in mese sarà necessario entrare in modifica nella maschera di gestione del plafond per operare il calcolo aggiornato dei dati attraverso il pulsante **Proponi valori** (presente nella ribbon bar). 
+3. Svakog mjeseca bit će potrebno ući u obrazac za upravljanje plafonom kako bi se ažurirali podaci pritiskom na tipku **Predloži vrijednosti** (nalazi se u traci izbornika). 
 
-**Per annullare il calcolo di un mese è necessario annullare i periodi dall'ultimo mese presente nella lista (il più recente) fino a quello interessato**. 
+**Za poništavanje izračuna određenog mjeseca, potrebno je obrisati razdoblja unatrag – počevši od zadnjeg (najnovijeg) mjeseca pa do željenog**. 
 
-Il dato del valore disponibile all'inizio del mese è visibile nella colonna relativa.
+Dostupna vrijednost na početku mjeseca prikazuje se u pripadajućem stupcu.
 
-### Ribbon Bar
+### Traka Izbornika
 
 |  |  |
 | --- | --- |
-| **Nuovo plafond** | Imposta il cursore in una nuova riga di creazione dati. |
-| **Cancella plafond** | Cancella la riga di calcolo selezionata. Non è possibile cancellare dati intermedi, solo l'ultimo della lista. |
-| **Proponi valori** | Esegue il calcolo per il nuovo mese, proponendo i valori in griglia. |
+| **Novi plafon** | Postavlja kursor na novi redak za unos podataka. |
+| **Izbriši plafon** | Briše označeni redak izračuna. Nije moguće obrisati međupodatke, samo zadnji uneseni. |
+| **Predloži vrijednosti** | Izvršava izračun za novi mjesec i predlaže vrijednosti u mreži. |
 
 
 

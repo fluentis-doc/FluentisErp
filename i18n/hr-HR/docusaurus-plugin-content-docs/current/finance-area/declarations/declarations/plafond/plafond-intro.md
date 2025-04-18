@@ -1,35 +1,34 @@
 ---
-title: Plafond
+title: Plafon
 sidebar_position: 3
 ---
 
-LINK:
+LINKOVI:
 
-** [Generalità](/docs/finance-area/declarations/declarations/plafond/general-overview) **
+** [Općenito](/docs/finance-area/declarations/declarations/plafond/general-overview) **
 
-** [Tabelle, parametri ed impostazioni preliminari](/docs/finance-area/declarations/declarations/plafond/tables-and-parameters) **
+** [Tablice, parametri i početne postavke](/docs/finance-area/declarations/declarations/plafond/tables-and-parameters) **
 
-** [Gestione iniziale del plafond](/docs/finance-area/declarations/declarations/plafond/plafond-start-management) **
+** [Početno upravljanje plafonom](/docs/finance-area/declarations/declarations/plafond/plafond-start-management) **
 
-** [Gestione corrente del plafond](/docs/finance-area/declarations/declarations/plafond/plafond-management) **
+** [Trenutno upravljanje plafonom](/docs/finance-area/declarations/declarations/plafond/plafond-management) **
 
  
-
-Dalla presente form è possibile ricercare, visualizzare, modificare plafond inseriti precedentemente ed eventualmente cancellarli.
-
-
-
-Da questa posizione è possibile inserire un nuovo plafond.
+Putem ovog obrasca moguće je pretraživati, pregledavati, uređivati prethodno unesene plafone te ih po potrebi izbrisati.
 
 
 
-| Funzione | Significato |
+S ove pozicije moguće je unijeti novi plafon.
+
+
+
+| Funkcija | Significato |
 | --- | --- |
-| Ricerca plafond | Pulsante per ricercare i plafond presenti nella base dati. |
-| Nuovo plafond | Richiama la form per inserire un nuovo plafond. |
-| Modifica plafond | Richiama la form per modificare un plafond precedentemente inserito. |
-| Visualizzazione plafond | Richiama la form per visualizzare un plafond precedentemente inserito. |
-| Cancella plafond | Esegue la cancellazione di un plafond precedentemente inserito. |
+| Pretraga plafona | Tipka za pretraživanje plafona prisutnih u bazi podataka. |
+| Novi plafon | Otvara obrazac za unos novog plafona. |
+| Uređivanje plafona | Otvara obrazac za uređivanje prethodno unesenog plafona. |
+| Pregled plafona | Otvara obrazac za pregled prethodno unesenog plafona. |
+| Brisanje plafona | Izvršava brisanje prethodno unesenog plafona. |
 
 
 

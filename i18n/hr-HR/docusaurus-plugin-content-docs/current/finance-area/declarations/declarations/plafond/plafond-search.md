@@ -1,36 +1,35 @@
 ---
-title:  Ricerca Plafond
+title: Pretraga plafona
 sidebar_position: 3
 ---
 
-La form della ricerca Plafond 
+Obrazac za pretragu plafona: 
 
-- si trova in Amministrazione > Dichiarazioni > Plafond
+- nalazi se u izborniku Administracija > Izjave > Plafon
 
-- permette all'utente di ricercare i calcoli del Plafond creati precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+- omogućuje korisniku pretraživanje prethodno kreiranih izračuna plafona s ciljem njihovog pregleda, uređivanja ili brisanja.
 
-Da questa form è possibile anche inserire manualmente un nuovo calcolo Plafond tramite il bottone [**Nuovo plafond**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
-
-
-
-## Pulsanti della Ribbon Bar
-
-> - **Ricerca:** Pulsante per ricercare i calcoli di Plafond secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo:** Richiama la form per inserire un nuovo calcolo.
-> - **Modifica:** Permette di modificare un calcolo precedentemente inserito.
-> - **Visualizzazione:** Permette di visualizzare un calcolo precedentemente inserito.
-> - **Elimina:** Cancella un calcolo precedentemente inserito.
+Putem ovog obrasca moguće je ručno unijeti i novi izračun plafona putem tipke [**Novi plafon**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
 
 
-## Tabelle e Parametri preliminari per la gestione del Plafond
 
-L'impostazione del calcolo plafond deriva unicamente dalla tabella [**Aliquote modalità IVA**](/docs/configurations/tables/finance/vat-rates): 
+## Tipke u traci izbornika
 
-I campi della tabella interessati sono:
+> - **Pretraga:** Tipka za pretraživanje izračuna plafona prema filtrima postavljenima u zaglavlju obrasca.
+> - **Nova:** Otvara obrazac za unos novog izračuna.
+> - **Uredi:** Omogućuje izmjenu prethodno unesenog izračuna.  
+> - **Prikaz:** Omogućuje pregled prethodno unesenog izračuna.  
+> - **Izbriši:** Briše prethodno uneseni izračun.  
 
-**Plafond**: il flag definisce quali aliquote sono collegate alle dichiarazioni di intento: questo flag identifica l’aliquota che "**consuma**" mese per mese il plafond generale disponibile in qualità di esportatori abituali.
 
-**Vendita Estera per Plafond**: con questo flag si identificano le aliquote iva, presenti nelle registrazioni di vendita dell’anno yyyy, che **incrementano** il plafond disponibile per l’anno yyyy+1 in qualità di esportatore abituale.
+## Tablice i početni parametri za upravljanje plafonom  
 
-Non ha rilevanza la causale di contabilità e l'anagrafica intestataria della registrazione. Le note di credito, stornano dai movimenti gli importi relativi.
+Postavke izračuna plafona temelje se isključivo na tablici [**Stope načina obračuna PDV-a**](/docs/configurations/tables/finance/vat-rates): 
 
+Polja u tablici koja su relevantna:
+
+**Plafon**: flag definira koje PDV stope su povezane s izjavama o namjeri: ova oznaka označava stopu koja "**troši**" opći raspoloživi plafon iz mjeseca u mjesec u svojstvu redovitog izvoznika.  
+
+**Inozemna prodaja za plafon**: flag označava PDV stope koje se pojavljuju u prodajnim knjiženjima za godinu yyyy, a koje **povećavaju** raspoloživi plafon za godinu yyyy+1 u svojstvu redovitog izvoznika.  
+
+Vrsta računovodstvene stavke i podaci o partneru (naziv ili šifra kupca) nisu relevantni za izračun. Kreditne note (odobrenja) umanjuju iznose iz knjiženih stavki.  
