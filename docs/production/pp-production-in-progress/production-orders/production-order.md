@@ -48,7 +48,7 @@ Per importare i dati direttamente dalla distinta base dell'articolo, è necessar
 **Quantità alternativa**: rappresenta la quantità totale ma espressa nell'unità di misura alternativa;        
 **Quantità prelevata**: rappresenta la quantità prelevata tramite [Lista di prelievo](/docs/production/pp-production-in-progress/picking-materials-list);      
 **Fissa / Variabile**: indica se la quantità del materiale sia fissa o variabile, questo viene ereditato dalla [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management);              
-**% scarto**: in questa casella viene inserita o ripresa dalla [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management) l'eventuale percentuale di scarto per questo articolo;  
+**Percentuale scarto**: in questa casella viene inserita o ripresa dalla [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management) l'eventuale percentuale di scarto per questo articolo;  
 **Fase / Sotto Fase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sotto fase e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;     
 **Magazzino**: indica il magazzino dal quale verrà scaricato questo articolo;       
 **Causale**: indica la causale di magazzino con quale verrà scaricato questo articolo;    
@@ -134,7 +134,7 @@ In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase
 **Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
 **Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
 **Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
-**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio. Si utilizza nel caso in cui sia necessario riattrezzare il centro di lavoro tra un'esecuzione e l'altra della fase stessa e viene sommato al tempo attrezzaggio:        
+**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio. Si utilizza nel caso in cui sia necessario riattrezzare il centro di lavoro tra un'esecuzione e l'altra della fase stessa e viene sommato al tempo attrezzaggio;           
 **Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
 **Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
 
