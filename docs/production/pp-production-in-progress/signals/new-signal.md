@@ -5,31 +5,31 @@ sidebar_position: 2
 
 Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fluentis [MES](/docs/production/mes/mes-intro), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
 
-All'apertura della form è necessario inserire l'ordine di produzione e la relativa fase/sottofase che si vuole dichiarare, in questo modo vengono caricati in automatico i realtivi dati nella parte superiore della form.
+All'apertura della form è necessario inserire l'ordine di produzione e la relativa fase/sottofase che si vuole dichiarare, in questo modo vengono caricati in automatico i dati della fase selezionata nella parte superiore della form.
 
 Nella griglia centrale vanno inserite le righe della dichiarazione di produzione.
 Il primo dato da inserire è lo *Stato della dichiarazione* che può assumere i seguenti valori:
 
-- *Apertura*: permette di creare una segnalazione di produzione di apertura;    
-- *Sospensione*: permette di creare una segnalazione di produzione di sospensione;    
-- *Ripresa*: permette di creare una segnalazione di produzione di ripresa; va inserito solo dopo una *Sospensione*;          
-- *Avanzamento*: permette di creare una segnalazione di produzione di avanzamento;    
-- *Chiusura*: permette di creare una segnalazione di produzione di chiusura;    
+- *Apertura*: permette di creare una dichiarazione di produzione di apertura;    
+- *Sospensione*: permette di creare una dichiarazione di produzione di sospensione;    
+- *Ripresa*: permette di creare una dichiarazione di produzione di ripresa; va inserito solo dopo una *Sospensione*;          
+- *Avanzamento*: permette di creare una dichiarazione di produzione di avanzamento;    
+- *Chiusura*: permette di creare una dichiarazione di produzione di chiusura;    
 
 Ogni dichiarazione di produzione deve avere come prima riga una dichiarazione di apertura che determina il momento in cui inizia la lavorazione.              
 Questa può essere seguita da un avanzamento o direttamente da una fase di chiusura a seconda dei casi. La differenza sostanziale sta nel fatto che la chiusura non permette di inserire ulteriori righe di dichiarazione, mentre l'avanzamento si.         
-Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una di ripresa, nel caso in cui sia necesario fermare la produzione per qualche motivo.
+Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una di ripresa, nel caso in cui sia necessario fermare la produzione per qualche motivo.
 
 *Pulsante specifico*:  
 
 > **Nuova dichiarazione**: permette di inserire una nuova riga della dichiarazione;          
-> **Nuova sospensione/ripresa**: permette di inserire contemporaneamente un riga di sospensione e una riga di ripresa indicando nel pop-up data ed ora per ciascuna; il pulsante si attiva solo se l'ultimo stato della dichiarazione è di *Apertura* o *Avanzamento*;                 
+> **Nuova sospensione/ripresa**: permette di inserire contemporaneamente una riga di sospensione e una riga di ripresa indicando nel pop-up data ed ora per ciascuna; il pulsante si attiva solo se l'ultimo stato della dichiarazione è di *Apertura* o *Avanzamento*;                 
 > **Ricalcola tempo macchina**: permette di ricalcolare il tempo macchina di tutte le righe della dichiarazione;          
 > **Ricalcola tempo uomo**: permette di ricalcolare il tempo di manodopera di tutte le righe della dichiarazione;          
 > **Inserisci dichiarazione**: permette di inserire una nuova riga di dichiarazione successiva a quelle già inserite;         
 > **Cancella dichiarazione**: permette di cancellare la riga di dichiarazione selezionata;             
 > **Gestione UDC**: permette di aprire la *Gestione unità di carico* con filtrata l'unità di carico relativa alla riga delle dichiarazione selezionata;          
-> **Crea UDC**: permette di creare un'unità di carico relativa alla riga delle dichiarazione selezionata. Per crearla è necessario prima inserire manualmente *Tipo unità di carico* e il *Dipendente*;
+> **Crea UDC**: permette di creare un'unità di carico relativa alla riga delle dichiarazione selezionata. Per crearla è necessario prima inserire manualmente *Tipo unità di carico* e il *Dipendente*;       
 > **Registrazione dichiarazione**: permette di creare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata;          
 > **Ripristino dichiarazione**: permette di annullare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata.                                     
 
@@ -43,15 +43,21 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 **Causale di sospensione**: permette di indicare la causale di sospensione da utilizzare per la relativa riga di dichiarazione. Si abilità solo se lo *Stato dichiarazione* è di tipo *Sospensione*;     
 **Lotto**: permette di inserire manualmente il numero di lotto relativo alla quantità prodotta;    
 **Quantità prodotta**: indica la quantità prodotta relativa alla riga della dichiarazione;         
-**Unità di misura alternativa**: indica l'unità di misura laternativa utilizzata;     
-**Quantità alternativa**: indica la quantità prodotta nell'unità di misura laternativa utilizzata;       
+**Unità di misura alternativa**: indica l'unità di misura alternativa utilizzata;     
+**Quantità alternativa**: indica la quantità prodotta nell'unità di misura alternativa utilizzata;       
 **Magazzino versamento**: indica il magazzino di versamento della quantità prodotta;         
 **Causale versamento**: indica la causale di versamento utilizzata per la quantità prodotta;         
 **Versamento ubicazione**: indica l'ubicazione di versamento della quantità prodotta;         
 **Quantità scartata**: indica la quantità scartata relativa alla riga della dichiarazione;        
 **Magazzino di scarto**: indica il magazzino di versamento della quantità scartata;      
 **Causale di scarto**: indica la causale di versamento utilizzata per la quantità scartata;       
-**Scarto ubicazione**: indica l'ubicazione di versamento della quantità scartata;        
+**Ubicazione di scarto**: indica l'ubicazione di versamento della quantità scartata;        
+**Difetto**: permette di inserire il difetto relativo alla quantità scartata. Si abilità solamente dopo aver inserito un valore maggiore di zero nel campo della **Quantità scartata**;       
+
+**Magazzino di consumo**: indica il magazzino di versamento della quantità di consumo;      
+**Causale di consumo**: indica la causale di versamento utilizzata per la quantità di consumo;       
+**Ubicazione di consumo**: indica l'ubicazione di versamento della quantità di consumo;        
+
 **Macchine**: indica il numero delle macchine indica la descrizione della causale di versamento della quantità prodotta;             
 **Numero macchine**: indica il numero delle macchine utilizzata relativo alla riga della dichiarazione;        
 **Gruppi manodopera**: indica il codice del gruppo manodopera utilizzato relativo alla riga della dichiarazione;         
@@ -190,7 +196,7 @@ Questo tab permette di specificare più magazzini e causali di scarto con le rel
 
 ## Extra Data
 
-Permmette di gestire e visualizzare gli Extra Data relativi alla segnalazione.
+Permmette di gestire e visualizzare gli Extra Data relativi alla dichiarazione .
 
 Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
