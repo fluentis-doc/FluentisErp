@@ -22,16 +22,17 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 
 *Pulsante specifico*:  
 
-> **Nuova dichiarazione**: permette di inserire una nuova riga della dichiarazione;          
-> **Nuova sospensione/ripresa**: permette di inserire contemporaneamente una riga di sospensione e una riga di ripresa indicando nel pop-up data ed ora per ciascuna; il pulsante si attiva solo se l'ultimo stato della dichiarazione è di *Apertura* o *Avanzamento*;                 
+> **Salva**: permette di salvare le modifiche effettuate;        
+> **Nuova dichiarazione di produzione**: permette di inserire una nuova riga della dichiarazione;          
 > **Ricalcola tempo macchina**: permette di ricalcolare il tempo macchina di tutte le righe della dichiarazione;          
 > **Ricalcola tempo uomo**: permette di ricalcolare il tempo di manodopera di tutte le righe della dichiarazione;          
-> **Inserisci dichiarazione**: permette di inserire una nuova riga di dichiarazione successiva a quelle già inserite;         
-> **Cancella dichiarazione**: permette di cancellare la riga di dichiarazione selezionata;             
-> **Gestione UDC**: permette di aprire la *Gestione unità di carico* con filtrata l'unità di carico relativa alla riga delle dichiarazione selezionata;          
+> **Inserisci dichiarazioni**: permette di inserire una nuova riga di dichiarazione successiva a quelle già inserite;         
+> **Nuova sospensione/ripresa**: permette di inserire contemporaneamente una riga di sospensione e una riga di ripresa indicando nel pop-up data ed ora per ciascuna; il pulsante si attiva solo se l'ultimo stato della dichiarazione è di *Apertura* o *Avanzamento*;                 
+> **Cancella dichiarazioni**: permette di cancellare la riga di dichiarazione selezionata;            
+> **Apri UDC**: permette di aprire la *Gestione unità di carico* con filtrata l'unità di carico relativa alla riga delle dichiarazione selezionata;          
 > **Crea UDC**: permette di creare un'unità di carico relativa alla riga delle dichiarazione selezionata. Per crearla è necessario prima inserire manualmente *Tipo unità di carico* e il *Dipendente*;       
-> **Registrazione dichiarazione**: permette di creare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata;          
-> **Ripristino dichiarazione**: permette di annullare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata.                                     
+> **Registrazione dichiarazioni**: permette di creare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata;          
+> **Ripristino dichiarazioni**: permette di annullare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata.                                     
 
 *Campi specifici*: 
 
@@ -91,30 +92,34 @@ La parte inferiore della form si compone di una serie di tab relativi alla riga 
 ## Materiali
 
 In questo tab vengono riportati automaticamente i materiali utilizzati nella fase per la realizzazione dell'articolo da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali in base alle necessità.      
-Ovviamente, per far si che i materiali siano riporatati automaticamente, la fase deve essere l'ultima di tipo *Produttivo* e *Movimentabile* presente nel ciclo; nel caso in cui non fosse l'ultima, deve comunque essere di tipo *Produttivo* e *Movimentabile* ed ad essa devono essere stati assegnati dei materiali direttamente.  
+Ovviamente, per far si che i materiali siano riportati automaticamente, la fase deve essere l'ultima di tipo *Produttivo* e *Movimentabile* presente nel ciclo; nel caso in cui non fosse l'ultima, deve comunque essere di tipo *Produttivo* e *Movimentabile* ed ad essa devono essere stati assegnati dei materiali direttamente.  
 
 *Campi specifici*: 
 
+**Registrato**: indica che il materiale della riga della dichiarazione selezionata è stato registrato ed è stato creato il relativo movimento di magazzino;        
 **Unità di carico materiale**: permette di indicare l'unità di carico da cui prelevo il materiale;             
 **Classe**: indica la classe dell'articolo;         
 **Codice articolo**: indica il codice dell'articolo;         
 **Variante**: indica il codice variante dell'articolo;         
 **Unità di misura**: indica l'unità di misura principale del materiale;        
+**Quantità prelevata**: indica la quantità prelevata tramite la procedura [Lista prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list);         
 **Quantità consumata**: indica la quantità utilizzata del materiale;         
 **Unità di misura alternativa**: indica l'unità di misura alternativa del materiale;        
 **Quantità alternativa**: indica la quantità utilizzata del materiale nell'unità di misura alternativa;        
 **Magazzino consumo**: indica il codice del magazzino di consumo del materiale;         
 **Causale consumo**: indica il codice della causale di consumo del materiale;         
+**Ubicazione consumo**: indica il codice dell'ubicazione del magazzino di consumo del materiale;         
 **Quantità scartata**: indica la quantità scartata del materiale;     
 **Magazzino di scarto**: indica il codice del magazzino di scarto del materiale;     
-**Causale di scarco**: indica il codice della casuale di scarto del materiale;     
+**Ubicazione di scarto**: indica il codice dell'ubicazione del magazzino di scarto del materiale;        
+**Causale di scarico**: indica il codice della casuale di scarto del materiale;     
 **Descrizione articolo**: indica la descrizione dell'articolo;        
 **Descrizione variante**: indica la descrizione della variante dell'articolo;        
 **Descrizione magazzino consumo**: indica la descrizione del magazzino di consumo del materiale;        
 **Descrizione causale consumo**: indica la descrizione della causale di consumo del materiale;        
 **Descrizione magazzino di scarto**: indica la descrizione del magazzino di scarto del materiale;        
 **Descrizione causale di scarto**: indica la descrizione della causale di scarto del materiale;        
-**Priorità**: indica la priorità con la quale vengono visualizzati i materiali,        
+**Priorità**: indica la priorità con la quale vengono visualizzati i materiali.        
 
 Inoltre, nella parte sottostante è possibile inserire i lotti e anche i serial number nelle relative griglie.
 
@@ -131,29 +136,29 @@ La griglia dei *Lotti* si compone delle seguenti colonne:
 La griglia dei *Serial number* si compone delle seguenti colonne:
 
 **Barcode**: il codice barcode riporta il numero di serial number e le altre informazione relative. Per tutte le informazioni su come codificare i barcode da leggere in questo campo consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer);          
-**Tipo Serial numnber**: indica il tipo di serial number del materiale selezionato;    
+**Tipo Serial number**: indica il tipo di serial number del materiale selezionato;    
 **Serial number**: indica il serial number del materiale selezionato;    
 **Data inizio**: indica la data inizio del serial number del materiale selezionato;    
 **Annullato**: indica che il serial number è in stato annullato;      
 **Lotto**: indica il codice lotto del serial number del materiale selezionato.             
 
-## Dipendente
+## Squadra
 
-Questo tab permette di gestire i membri della squadra che svolgono la lavorazione relativa alla riga della dichiarazione selezionta andando ad indicare per ognuno data inizio e fine lavorazione.
+Questo tab permette di gestire i membri della squadra che svolgono la lavorazione relativa alla riga della dichiarazione selezionata andando ad indicare per ognuno data inizio e fine lavorazione.
 
 *Campi specifici*: 
 
 **Codice**: indica il codice dell'operatore che sta lavorando sulla dichiarazione;             
 **Cognome**: indica il cognome dell'operatore che sta lavorando sulla dichiarazione;     
 **Nome**: indica il nome dell'operatore che sta lavorando sulla dichiarazione;        
-**Capo squdra**: indica che quell'operatore è anch ecapo squadra;      
+**Capo squadra**: indica che quell'operatore è anche capo squadra;      
 **Attività**: indica l'attività che sta svolgendo l'operatore;        
-**Descrzione**: indica la descrizione dell'attività che sta svolgendo l'operatore;      
+**Descrizione**: indica la descrizione dell'attività che sta svolgendo l'operatore;      
 **Attrezzaggio**: indica che il tempo lavorato dall'operatore verrà calcolato come tempo di attrezzaggio nelle successive analisi;       
 **Data inizio**: indica la data di inizio della lavorazione dell'operatore;         
 **Ora inizio**: indica l'ora di inizio della lavorazione dell'operatore;         
 **Data fine**: indica la data di fine della lavorazione dell'operatore;         
-**Ora fine**: indica lìora di fine della lavorazione dell'operatore;         
+**Ora fine**: indica l'ora di fine della lavorazione dell'operatore;         
 **Data creazione**: indica la data di creazione del record;         
 **Data ultima modifica**: indica la data di ultima modifica del record;         
 **Operatore**: indica l'utente di creazione del record.
@@ -161,7 +166,9 @@ Questo tab permette di gestire i membri della squadra che svolgono la lavorazion
 ## Articoli alternativi
 
 Questo tab permette di aggiungere e gestire tutti quegli articoli (spin-off) che vengono realizzati come conseguenza della produzione di un articolo principale.       
-Quindi, è possibile inserirli nella griglia dedicata con la possibilità di gestirne anche i relativi lotti e serial numbers. Ovviamente, i lotti e serial numbers sono riferiti alla riga dell'articolo alternativo selezionato.
+Quindi, è possibile inserirli nella griglia dedicata con la possibilità di gestirne anche i relativi lotti e serial numbers.      
+Ovviamente, i lotti e serial numbers sono riferiti alla riga dell'articolo alternativo selezionato.      
+I movimenti di carico degli articoli alternativi saranno effettuati con il magazzino, la causale e l’ubicazione indicate sulla riga.
 
 La griglia dei *Lotti* si compone delle seguenti colonne:
 
@@ -202,7 +209,8 @@ Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra
 
 ## Lotti e Serial Number
 
-Questo tab permette di gestire i lotti e serial numbers degli articoli principali prodotti tramite le apposite griglie.
+Nel tab **Lotti e Serial numbers**, in fase di registrazione della dichiarazione di produzione, vengono riportati in automatico i lotti e i serial numbers degli articoli prodotti in base alla logica indicata nel tab [Lotti e Serial numbers](/docs/erp-home/registers/items/create-new-item#17-lotti-e-serial-number) dell’anagrafica articolo.      
+Nel caso in cui fosse indicato un lotto nel campo lotto della riga di dichiarazione, gli articoli prodotti verranno registrati con questo numero di lotto, che ha priorità rispetto alle regole inserite in anagrafica.
 
 La griglia dei *Lotti* si compone delle seguenti colonne:
 
@@ -220,7 +228,7 @@ La griglia dei *Lotti* si compone delle seguenti colonne:
 La griglia dei *Serial number* si compone delle seguenti colonne:
     
 **Codice Serial number**: indica il serial number dell'articolo;      
-**Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
+**Tipo Serial number**: indica il tipo di serial number dell'articolo;  
 **Serial number cliente**: indica il serial number del cliente per quell'articolo;      
 **Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
 **Data inizio**: indica la data inizio del serial number dell'articolo;    
