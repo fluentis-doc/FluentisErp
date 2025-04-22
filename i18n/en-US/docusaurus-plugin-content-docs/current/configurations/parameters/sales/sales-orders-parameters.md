@@ -26,9 +26,7 @@ The parameters of customer orders allow for basic settings to manage correctly a
 **Propose the commission for the free items:** with this flag, agent commissions will also be proposed for promotional item lines as for Codified Article lines.     
 
 **Allow discounts for the giveaways items:** with this flag, discounts will be applied to the line amount even for promotional item lines.     
-
-**Check Availability:** if activated, the system will check the availability of the item.       
-
+ 
 **Compulsory ratio between boxes and qty:** if set, the flag forces the user to enter a quantity corresponding to or a multiple of the number of packs defined in the *Weights/Dimensions* tab of the item registry; if the quantity is not the pack count or a multiple, the message will appear: “Item not sellable in quantity less than or not a multiple of."      
 
 **Propose economic lot:** if the flag is set, the economic batch is proposed as the quantity, and if the quantity is less than the economic batch, the message “The quantity cannot be less than...” is displayed.       
@@ -41,9 +39,13 @@ The parameters of customer orders allow for basic settings to manage correctly a
 
 **Use barcode:** if set, this flag will insert, in the articles grid of the order, the column to show the item's barcode.     
 
+**Allow modification of the production job order from the linked customer order**: if active, it allows modification of the production job order linked to an order.
+
 **Mandatory user code:** this flag makes it mandatory to fill in the *Operator* field in the header.     
 
 **Block the document insertion in public holidays from the factory calendar:** if active, the system does not allow the insertion of the offer on holidays (the Factory Calendar of the company is checked first, then the Production Capacity Calendar); if not active, the system does not perform any checks and allows for document entry.     
+
+**Use Matrix Configurator**: this parameter activates the management of matrices.
 
 **Expand BOM:** if active, when an item is entered, it will be replaced by the first level of its bill of materials, if it exists; thus instead of the “Finished product” item, the order will be populated with the bill of materials of this item.         
 

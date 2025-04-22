@@ -31,6 +31,12 @@ The parameters for sales invoices allow for basic settings to manage correctly a
 
 **Negative prices in credit notes:** if active, the system will notify a warning if there are positive prices within credit notes. If not active, the system will make no checks and will return no warnings.
 
+**Without collection fees in credit notes**: if active, collection fees are not included in the credit notes.
+
+**Verify sales price batches**: obsolete field, no longer used.
+
+**Maximum number of lines**: it is the maximum number of items for an invoice, active only in the Romanian version.
+
 **Check items in exhaustion:** with this flag, the management of items running low is activated; if there is an Out of stock Date present in the item registry along with the relevant flag, Fluentis will notify the user with a pop-up if the item is inserted into the document.
 
 **[Enable Simplified Discount Widget](/docs/sales/sales-flow/discount-widget):** by activating this flag in the Items section, two new columns will be displayed: *Item Discounts* and *Final Item Discounts*. The *Item Discounts* column is editable and shows discounts applied automatically based on customer, item, price list, or discount category settings. The user has the option to enter, modify, or delete discounts directly in this column. To use this widget, it is necessary to activate the flag and specify in the invoice type which type of discount to use.
