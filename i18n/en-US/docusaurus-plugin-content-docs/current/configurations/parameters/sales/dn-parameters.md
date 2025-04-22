@@ -27,6 +27,8 @@ The parameters of sales DDT (Delivery Notes) allow for basic settings to manage 
 
 **Allow discounts for the giveaways items**: with this flag, discounts on the line amount will also be applied to gift item lines.
 
+**Maximum number of lines**: it is the maximum number of items per invoice, active only in the Romanian version.
+
 **Check items in exhaustion**: if set, this flag will cause a warning pop-up to appear if items that are set in the registry as Out of Stock and the date on which the item will run out are entered in the DDT; this check prevents selling items that will no longer be produced or restocked.
 
 **[Enable simplified discount widget](/docs/sales/sales-flow/discount-widget)**: by activating this flag in the Items section, two new columns will be displayed: *Item discounts* and *Item final discounts*. The *Item Discounts* column is editable and shows the discounts applied automatically based on configurations related to the customer, the item, the price list, or the discount category. The user has the ability to enter, modify, or delete discounts directly in this column. To use this widget, it is necessary to not only activate the flag but also specify in the type of DDT which type of discount to use.
