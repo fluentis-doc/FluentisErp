@@ -1,5 +1,5 @@
 ---
-title: importazione piano dei conti
+title: Importación del plan de cuentas
 sidebar_position: 2
 ---
 
