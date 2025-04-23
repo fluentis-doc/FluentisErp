@@ -43,12 +43,12 @@ To import data directly from the bill of materials of the article, it is necessa
 **MU**: in this field, the primary unit of measure of the item is reported; 
 **Units of Measure**: in this field, the alternative unit of measure of the article is inserted;  
 **Usage date**: coincides with the expected start date of the phase of the production order to which that material is associated; if it is not associated with any phase, it coincides with the start of the first phase of the cycle;
-**Required Quantity**: represents the unit quantity necessary for this article (as per the BOM) which can be modified;  
-**Total Quantity**: represents the quantity obtained by multiplying the *Required Quantity* by the *Quantity to Produce*;  
-**Alternative Quantity**: represents the total quantity expressed in the alternative unit of measure;  
+**Usage Quantity**: represents the unit quantity needed for this item (as specified by the [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)) which can still be modified;  
+**Total Quantity**: represents the quantity obtained by multiplying the *Usage Quantity* by the *Quantity to be produced*;      
+**Alternative Quantity**: represents the total quantity but expressed in the alternative unit of measure;  
 **Quantity picked**: represents the quantity picked via the [Picking List](/docs/production/pp-production-in-progress/picking-materials-list);      
-**Fixed / Variable**: indicates whether the quantity of materials is fixed or variable, this is inherited from the [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management);              
-**% scrap**: in this box, the potential scrap percentage for this item is entered or retrieved from the [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management);
+**Fixed / Variable**: indicates whether the quantity of material is fixed or variable, this is inherited from the [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management);              
+**Scrap%**: in this box, the potential scrap percentage for this item is entered or retrieved from the [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management);
 **Phase / Subphase**: with a double click, a help window for processing phases opens from which the relevant phase and subphase can be selected, and then assign the selected material to a specific processing phase of the article;  
 **Warehouse**: indicates the warehouse from which this item will be shipped;       
 **Reason**: indicates the reason for the warehouse that will be used to ship this item;    
@@ -68,36 +68,14 @@ To import data directly from the routing of the article, it is necessary to clic
 *Specific fields:*
 
 **Phase Code / Phase / Subphase**: with a double click, the relevant help for processing phases opens from which the corresponding phase and subphase can be selected;  
-**Quality Control**: this flag indicates whether the material should be subjected to quality control before its use;  
-**Production Phase**:if active, it indicates that the phase is productive and one can proceed with entering the production reports (thus activating it means that production for this phase should be recorded); if not active, it will not be possible to declare the phase itself;
-**Movable phase**: if active, indicates that when the production phase is recorded, warehouse movements are also created; this means that proceeding with the production declaration will also lead to the loading of the finished product into the warehouse and the unloading of the raw material used for production in that phase;
-**Work center**: from this combo, the Work Center is set. It is automatically proposed, retrieved from the phase that was previously selected and entered in the grid;  
-**Fixed time**: is taken from the work center. If active, it means that the work center is on fixed time;
-**Expected Start / End Date**: these are the dates of the beginning and end of the relevant phase; changing the expected start and end dates will automatically modify these as well. They are calculated based on the times entered in the processing phases, and specifically based on the greater of the worker time and total machine time for the selected phase;  
-**Total machine time**: indicates the total machine time, given by the product of **Machine Time** and **Number of Machines**; **Machine time**: is the time taken by the machine to carry out the phase, related to the quantity of pieces per phase;  
-**Machine number**: indicates the number of machines involved in this phase;  
-**Total worker time**: indicates the total machine time, given by the product of **Worker time** and **Number of workers**;
-**Worker time**: is the time taken by the worker to perform this phase, related to the quantity of pieces per phase;  
-**Workers number**: is the number of workers involved in this phase;  
-**Overlap phase**: in the case of overlap, it will indicate the phase that is intended to overlay the main phase;      
-**Subphase overlap**: in the case of overlap, it will indicate the sub-phase that is intended to overlay the main phase;         
-**Location**: indicates the location associated with the phase;       
-**Work order created**: if active, indicates that the corresponding work order has already been created;       
-**Contractor account / contractor description**: by double-clicking the box, the help opens to select the account and sub-account of the corresponding contractor. This *box is active only* if the phase is designated as *External*. It is noteworthy that the *contractor* is also taken from the processing phase entered in the item's processing cycle;  
 
-### Phases - Properties 
-
-Contains the properties related to the selected phase.
-
-**Phase / Subphase description**: in this field, the description of the selected phase appears;  
 **Quality Control**: if enabled, this flag indicates that this phase is subject to quality control, and in the specific tab, you can indicate the *Control Plan* that will be used to verify the item after the production declaration is made;     
 **Production Phase**: if active, indicates that the phase is productive, and you can proceed with entering production reports (thus activating it means you want the production for this phase to be recorded); if not active, it will not be possible to declare the phase itself;         
 **Movable Phase**: if active, indicates that when the production phase is recorded, inventory movements are also created; this means that proceeding with the production report will also lead to the loading of the finished product into inventory and the unloading of the raw material used for production in that phase;     
 **Work Center**: indicates the work center, i.e., the machine where that specific phase will take place;     
 **Fixed Time**: if enabled, indicates that the time for that phase is fixed and therefore not variable based on quantity; this is inherited from the entered work center;     
 **Phase Quantity**: indicates the total quantity of pieces to be produced in that phase;        
-**Scheduled Start Date**: indicates the planned start date for that phase;         
-**Scheduled End Date**: indicates the planned end date for that phase;          
+**Estimated start/end date**: these are the start and end dates of the respective phase; changing the estimated start and end processing dates will automatically modify these as well. They are calculated based on the times entered in the processing phases, and more precisely based on the greater of the total worker time and the total machine time for the selected phase;        
 **Total Machine Time**: indicates the total machine time, resulting from the product of *machine time* by the *number of machines*;       
 **Machine Time**: indicates the processing time of that machine for that phase;      
 **Number of Machines**: indicates the number of machines used in that phase;     
@@ -106,7 +84,7 @@ Contains the properties related to the selected phase.
 **Number of Workers**: indicates the number of workers employed in that phase;     
 **Phase / Overlapped Subphase**: in these two fields, in the case of overlap, you will indicate the phase that you intend to overlap with the selected phase;
 **Location**: allows you to associate a warehouse location with the phase; this means that all items used in that phase will be present in that location;     
-**Subcontractor Description**: in the event that the phase is external, you can indicate in this field the outsourcer who will handle the external phase;     
+**Subcontractor Description**: By double-clicking on the box, the help opens to select the account and detail account of the corresponding *subcontractor*. This box is active only if the phase is designated as *External*. It is worth noting that the *subcontractor* is also retrieved from the processing phase entered in the item's processing cycle;
 **Work Order Created**: indicates that the work order has been created. It only works for external phases;        
 **Work Center Description**: indicates the description of the work center for the phase;       
 **Final Print**: indicates that the [Worksheet](/docs/production/pp-production-in-progress/reports/worksheet) has been definitively printed;   
@@ -117,7 +95,7 @@ In the **Property** tab, the following data related to the selected phase in the
 
 **Phase Description (Descrizione fase)**: indicates the description of the selected phase and sub-phase;
 **Type**: in this combo, it is possible to set the type of processing (internal or external);  
-**Overlap**: through this combo, I can insert the type of any overlap between phases. We can have *Total* overlap (in this case, the phase in question is completely overlapped with the next indicated phase), *By pieces* (in this case, it is necessary to indicate after how many pieces produced by this phase the next phase will start), *By time* (in this case, it is necessary to indicate after how many minutes from when the phase in question started the next phase will start);  
+**Overlap**: through this combo, I can insert the type of any overlap between phases. We can have *Total* overlap (in this case, the phase in question is completely overlapped with the indicated phase), *By pieces* (in this case, it is necessary to indicate after how many pieces produced by this phase the next phase will start), *By time* (in this case, it is necessary to indicate after how many minutes from when the indicated phase started the next phase will start);  
 **Times MU**: in this combo box, the Time Unit of the Phase appears; one can decide to manage the times of the phase in seconds, minutes, hours, and days. Usually, internal phases are managed in minutes and external phases in days, but it obviously depends a lot on the type of company for which the work is being set up;  
 **Machine**: in this combo, the code (and description) of the relevant machine can be selected. It is automatically proposed, retrieved from the work center that was previously entered in the grid;
 **Production site**: indicates the production site where the item will be produced; this is inherited from the production order;
@@ -125,11 +103,15 @@ In the **Property** tab, the following data related to the selected phase in the
 **Quantity of pieces per phase**: indicates the number of pieces produced for each execution of that phase;
 **Value**: here the value of any overlap is indicated, using the criteria specified above;  
 **Using**: if the flag is activated, it means that the waiting / queue time will increase the commitment time of the Work Center on that phase;  
-**Wait / queue time**: indicates the possible waiting / queue time expected for this machine.  
+**Wait / queue time**: indicates the time that is necessary to wait at the end of the execution of the phase before being able to re-run it. Furthermore, by activating the flag **Use**, this waiting time will be considered as an additional commitment of the Work Center's time for that phase.  
 
 ### Phases - Extra Data 
 
 Contains any extra data related to the selected phase.
+
+### Phases - Attached Documents
+
+Allows you to attach documents to the selected phase, which will also be visible in the [MES](/docs/production/mes/mes-intro).
 
 ## Setup 
 
