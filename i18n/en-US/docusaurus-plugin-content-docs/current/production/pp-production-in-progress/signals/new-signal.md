@@ -9,11 +9,11 @@ Upon opening the form, it is necessary to enter the production order and the cor
 
 In the central grid, the lines of the production declaration must be entered. The first data to enter is the *Declaration Status*, which can take the following values:
 
-- *Opening*: allows you to create an opening production report;    
-- *Interruption*: allows you to create a suspension production report;    
-- *Resumption*: allows you to create a resumption production report; it should only be entered after a *Suspension*;          
-- *Progress*: allows you to create a progress production report;    
-- *Closing*: allows you to create a closure production report;    
+- *Opening*: allows you to create an opening production declaration;    
+- *Interruption*: allows you to create a suspension production declaration;    
+- *Resumption*: allows you to create a resumption production declaration; it should only be entered after a *Suspension*;          
+- *Progress*: allows you to create a progress production declaration;    
+- *Closing*: allows you to create a closure production declaration;    
 
 Each production declaration must have as the first row an opening declaration that determines when the processing begins.              
 This can be followed by a progress or directly by a closure depending on the cases. The substantial difference is that the closure does not allow for additional declaration lines, while the progress does.         
@@ -21,16 +21,17 @@ Additionally, it is also possible to enter suspension declarations followed by a
 
 *Specific Buttons*:  
 
-> **New Declaration**: allows you to insert a new declaration line;          
-> **New Interruption/Resumption**: allows you to simultaneously insert a suspension line and a resumption line by indicating the date and time for each in the pop-up; the button is activated only if the last declaration status is *Opening* or *Progress*;                 
+> **Save**: allows you to save the changes made;        
+> **New production declaration**: allows you to insert a new line of the declaration;                 
 > **Recompute Machine Time**: allows you to recompute the machine time for all declaration lines;          
 > **Recompute Worker Time**: allows you to recompute the worker time for all declaration lines;          
-> **Insert declaration**: allows you to insert a new declaration line after those already entered;         
-> **Delete Declaration**: allows you to delete the selected declaration line;             
-> **Loading Unit Management**: allows you to open the *Load Unit Management* filtered by the load unit related to the selected declaration line;          
+> **Insert declarations**: allows you to insert a new declaration line after those already entered;         
+> **New interruption/resumption**: allows you to simultaneously insert a suspension line and a resumption line by specifying the date and time for each in the pop-up; the button is activated only if the last status of the declaration is *Opening* or *Progress*;
+> **Delete Declarations**: allows you to delete the selected declaration line;             
+> **Open Loading Unit**: allows you to open the *Load Unit Management* filtered by the load unit related to the selected declaration line;          
 > **Create Loading Unit**: allows you to create a load unit related to the selected declaration line. To create it, it is necessary first to manually enter *Load Unit Type* and *Employee*;
-> **Registration of Declaration**: allows you to create the warehouse movement registration related to the selected declaration line;          
-> **Restore Declaration**: allows you to cancel the warehouse movement registration related to the selected declaration line.                                     
+> **Registration of Declarations**: allows you to create the warehouse movement registration related to the selected declaration line;          
+> **Restore Declarations**: allows you to cancel the warehouse movement registration related to the selected declaration line.                                     
 
 *Specific Fields*: 
 
@@ -50,7 +51,13 @@ Additionally, it is also possible to enter suspension declarations followed by a
 **Scrapped quantity**: indicates the scrap quantity related to the declaration line;        
 **Scrap Warehouse**: indicates the warehouse for the deposited scrap quantity;      
 **Scrap Reason**: indicates the scrap reason used for the deposited scrap quantity;       
-**Scrap location**: indicates the scrap location for the deposited scrap quantity;        
+**Scrap location**: indicates the location for depositing the discarded quantity;        
+**Defect**: allows you to enter the defect related to the discarded quantity. It is enabled only after a value greater than zero has been entered in the **Scrap Quantity** field;        
+
+**Consumption warehouse**: indicates the warehouse for depositing the consumption quantity;      
+**Consumption template**: indicates the reason for deposit used for the consumption quantity;       
+**Consumption location**: indicates the location for depositing the consumption quantity;
+
 **Machines**: indicates the number of machines; indicates the description of the deposit reason for the produced quantity;             
 **Machine number**: indicates the number of machines used related to the declaration line;        
 **Labour Group**: indicates the code of the workforce group used related to the declaration line;         
@@ -88,18 +95,22 @@ Of course, for the materials to be reported automatically, the phase must be the
 
 *Specific Fields*: 
 
+**Registered**: indicates that the material of the line of the selected declaration has been registered and the corresponding warehouse movement has been created;     
 **Material Load Unit**: allows you to indicate the load unit from which the material is withdrawn;             
 **Class**: indicates the class of the article;         
 **Item code**: indicates the article code;         
 **Variant**: indicates the variant code of the article;         
 **Units of Measure**: indicates the main unit of measure of the material;        
+**Picked quantity**: indicates the quantity retrieved through the procedure [Material Picking List](/docs/production/pp-production-in-progress/picking-materials-list);  
 **Consumption quantity**: indicates the quantity of material used;         
 **Alternative Measurement Unit**: indicates the alternative unit of measure of the material;        
 **Alternative quantity**: indicates the quantity of material used in the alternative unit of measure;        
 **Consumption Warehouse**: indicates the code of the consumption warehouse of the material;         
 **Consumption Reason**: indicates the code of the consumption reason of the material;         
+**Consumption location**: indicates the code of the warehouse location for the consumption of the material;
 **Scrapped quantity**: indicates the scrap quantity of the material;     
 **Scrap Warehouse**: indicates the code of the scrap warehouse of the material;     
+**Scrap location**: indicates the code of the scrap warehouse location for the material;
 **Scrap Reason**: indicates the code of the scrap reason of the material;     
 **Item description**: indicates the description of the article;        
 **Variant description**: indicates the description of the variant of the article;        
@@ -107,7 +118,7 @@ Of course, for the materials to be reported automatically, the phase must be the
 **Consumption Reason Description**: indicates the description of the consumption reason of the material;        
 **Scrap Warehouse Description**: indicates the description of the scrap warehouse of the material;        
 **Scrap Reason Description**: indicates the description of the scrap reason of the material;        
-**Priority**: indicates the priority with which the materials are displayed,        
+**Priority**: indicates the priority with which the materials are displayed.        
 
 Additionally, in the lower part, it is possible to enter lots and also serial numbers in the respective grids.
 
@@ -130,7 +141,7 @@ The *Serial Numbers* grid consists of the following columns:
 **Cancelled**: indicates that the serial number is in the cancelled state;      
 **Batch**: indicates the lot code of the serial number of the selected material.             
 
-## Employee
+## Team
 
 This tab allows managing the team members who perform the work related to the selected declaration line by indicating the start and end date of work for each.
 
@@ -154,7 +165,9 @@ This tab allows managing the team members who perform the work related to the se
 ## Alternative Articles
 
 This tab allows adding and managing all those articles (spin-offs) that are produced as a consequence of producing a main article.       
-Thus, they can be entered into the dedicated grid with the possibility of also managing their relevant lots and serial numbers. Of course, the lots and serial numbers are related to the selected alternative article line.
+So, it is possible to enter them in the dedicated grid with the ability to also manage the related batches and serial numbers.  
+Of course, the batches and serial numbers refer to the line of the selected alternative item.  
+The loading movements of the alternative items will be carried out with the warehouse, reason, and location indicated on the line.
 
 The *Lots* grid consists of the following columns:
 
@@ -189,13 +202,14 @@ This tab allows specifying multiple warehouses and scrap reasons with their rela
 
 ## Extra Data
 
-Allows managing and visualizing the Extra Data related to the report.
+Allows managing and visualizing the Extra Data related to the declaration.
 
 For an in-depth description of the extra data, please refer to the article [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 ## Lots and Serial Numbers
 
-This tab allows managing the lots and serial numbers of the main articles produced through the appropriate grids.
+In the **Lots and Serial Numbers** tab, during the registration of the production declaration, the lots and serial numbers of the items produced are automatically reported based on the logic indicated in the [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item#17-lotti-e-serial-number) tab of the item registry.      
+If a lot is indicated in the lot field of the declaration line, the produced items will be registered with this lot number, which takes priority over the rules entered in the registry.
 
 The *Lots* grid consists of the following columns:
 
