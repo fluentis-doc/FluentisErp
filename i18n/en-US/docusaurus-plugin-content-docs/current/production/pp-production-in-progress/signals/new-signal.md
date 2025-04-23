@@ -5,7 +5,14 @@ sidebar_position: 2
 
 Normally, the *Production declarations* are generated automatically through Fluentis [MES](/docs/production/mes/mes-intro), but the user also has the option to generate them manually using this form.
 
-Upon opening the form, it is necessary to enter the production order and the corresponding phase/sub-phase that you want to declare. In this way, the relevant data is automatically loaded at the top of the form.
+Upon opening the form, it is necessary to enter the production order with the indication of year, number, and lot, manually or through the dedicated help, as well as the phase and sub-phase that one wishes to declare, either manually or through the help.         
+In this way, the data of the selected phase is automatically loaded at the top of the form, where we can see the information regarding the type of production order, the job with year, number, and type, the associated project, the work center, and the machine on which the phase is being executed, the expected end date of processing, and the information of the item with any variant.        
+The indication of the total quantity to be produced, the quantity produced, which is equal to the sum of the quantities declared from the last production phase and movable of the cycle, thus corresponding to the finished item, and the quantity of phase produced, which is given by the sum of the quantities present in the declaration of the phase itself.
+
+The **barcode** field present in the header is used for the entry of the Production Order or the Phase to be declared.    
+The barcode must consist of a fixed identifier to recognize the Production Order (707) or the Phase of a production order (718), the separation character "-" and the identifier of either the Production Order or the Phase that you wish to declare.
+
+Example: 707-1234 or 718-98765
 
 In the central grid, the lines of the production declaration must be entered. The first data to enter is the *Declaration Status*, which can take the following values:
 
@@ -54,18 +61,18 @@ Additionally, it is also possible to enter suspension declarations followed by a
 **Scrap location**: indicates the location for depositing the discarded quantity;        
 **Defect**: allows you to enter the defect related to the discarded quantity. It is enabled only after a value greater than zero has been entered in the **Scrap Quantity** field;        
 
-**Consumption warehouse**: indicates the warehouse for depositing the consumption quantity;      
-**Consumption template**: indicates the reason for deposit used for the consumption quantity;       
-**Consumption location**: indicates the location for depositing the consumption quantity;
+**Consumption warehouse**: allows specifying the consumption warehouse of the item (in the header of the production declaration) used by the previous phase;      
+**Consumption template**: allows specifying the reason for consumption of the item (in the header of the production declaration) used by the previous phase;       
+**Consumption location**: allows specifying the consumption location of the item (in the header of the production declaration) used by the previous phase;
 
 **Machines**: indicates the number of machines; indicates the description of the deposit reason for the produced quantity;             
 **Machine number**: indicates the number of machines used related to the declaration line;        
 **Labour Group**: indicates the code of the workforce group used related to the declaration line;         
 **Workers number**: indicates the number of workers used related to the declaration line;        
 **Production site**: indicates the code of the production site related to the declaration line;     
-**Machine Minutes**: indicates the machine time in minutes related to the declaration line; it is calculated as the difference between the *date/time* of the current declaration and that of the previous declaration;           
-**Manpower Minutes**: indicates the manpower time in minutes related to the declaration line; it is calculated as the difference between the *date/time* of the current declaration and that of the previous declaration;              
-**Setup Minutes**: indicates the setup time in minutes related to the declaration line; it is entered manually;           
+**Machine Time**: indicates the machine time related to the declaration line; it is calculated as the difference between the *date/time* of the current declaration and that of the previous declaration; (The label of the field changes based on the time unit of the declared phase.)           
+**Manpower Time**: indicates the manpower time related to the declaration line; it is calculated as the difference between the *date/time* of the current declaration and that of the previous declaration; (The label of the field changes based on the time unit of the declared phase.)              
+**Setup Time**: indicates the setup time in minutes related to the declaration line; it is entered manually; (The label of the field changes based on the time unit of the declared phase.)          
 **Employee**: indicates the code of the user making the declaration;             
 **Surname**: indicates the last name of the user making the declaration;            
 **First Name**: indicates the first name of the user making the declaration;           

@@ -38,8 +38,7 @@ To import data directly from the bill of materials of the article, it is necessa
 
 **Class**: Indicates the class of the item;       
 **Item Code**: indicates the code of the item;          
-**Variant**: in this field, any variant of the item is entered;           
-**C/L**: in this field, the flag present in the *MRP Parameters* of the item called *consider in CL* is taken; it indicates whether the item should be included as material in work orders;      
+**Variant**: in this field, any variant of the item is entered;               
 **MU**: in this field, the primary unit of measure of the item is reported; 
 **Units of Measure**: in this field, the alternative unit of measure of the article is inserted;  
 **Usage date**: coincides with the expected start date of the phase of the production order to which that material is associated; if it is not associated with any phase, it coincides with the start of the first phase of the cycle;
@@ -52,9 +51,9 @@ To import data directly from the bill of materials of the article, it is necessa
 **Phase / Subphase**: with a double click, a help window for processing phases opens from which the relevant phase and subphase can be selected, and then assign the selected material to a specific processing phase of the article;  
 **Warehouse**: indicates the warehouse from which this item will be shipped;       
 **Reason**: indicates the reason for the warehouse that will be used to ship this item;    
-**Priority**: here the priority of the component is displayed, if present, entered in the [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). It can be modified, like all the other data present in this grid;
-**Available Quantity**: in this field, the available quantity of the article as of the usage date appears;  
-**To be declared on mobile**: if enabled, it will be declared on mobile.
+**Priority**: here the priority of the component is displayed, if present, entered in the [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). This contributes to the uniqueness of the material, so the same material can be entered multiple times with different priorities. Additionally, it can be manually modified, like all other data present in this grid;      
+**Available quantity**: in this field, the available quantity of the item appears, given by the **Recalculate Feasibility** procedure present in [Phase Sequences](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);           
+**To declare on mobile**: if enabled, the material will be automatically suggested in the production declaration form present on the WMS.
 
 ## Phases
 
@@ -163,7 +162,7 @@ In this tab, it is possible to attach and view the *Operating Instructions* rela
 
 ## Personnel 
 
-In this tab, it is possible to enter the operators who will perform the individual phases of the production cycle.    
+In this tab, it is possible to enter the operators who will perform the individual phases of the production cycle. (*It is used only for customizations*).
 
 ## Extra Data 
 

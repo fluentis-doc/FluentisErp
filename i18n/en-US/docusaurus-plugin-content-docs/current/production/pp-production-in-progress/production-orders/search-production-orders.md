@@ -21,8 +21,7 @@ import SearchForm from './../../../import/sections/search-form.md'
 :::note Note
 The quantity of the originating batch cannot be changed if *Pick Lists*, *Production declarations* have already been created, or if some materials have already been consumed. In these cases, it is still possible to create new production batches, but without being able to change the quantity of the originating batch.     
 :::
-> **Select project**: this button allows you to associate a project with the selected production orders;    
-> **Recalculate Availability**: this button initiates the calculation of availability for the selected production orders;    
+> **Select project**: this button allows you to associate a project with the selected production orders;     
 > **Modify order status**: this button, which only becomes enabled after selecting one or more orders, allows you to change the status of the selected orders (Launched, Executive, Fulfilled, Historical);     
 > **Complete Orders Data**: this button, which only becomes enabled after selecting one or more orders, allows you to regenerate the production order data, replacing it with those present in the bill of materials and in the workflow present in the registry;    
 > **Costs Recalculation of Production Order**: this button allows you to recalculate the production costs of the selected production orders.
