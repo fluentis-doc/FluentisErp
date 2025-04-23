@@ -5,7 +5,14 @@ sidebar_position: 2
 
 Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fluentis [MES](/docs/production/mes/mes-intro), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
 
-All'apertura della form è necessario inserire l'ordine di produzione e la relativa fase/sottofase che si vuole dichiarare, in questo modo vengono caricati in automatico i dati della fase selezionata nella parte superiore della form.
+All'apertura della form è necessario inserire l'ordine di produzione con l’indicazione di anno, numero e lotto, manualmente o tramite l’help dedicato, e la fase e sottofase che si vuole dichiarare sempre in maniera manuale o tramite l’help.         
+In questo modo vengono caricati in automatico i dati della fase selezionata nella parte superiore della form, dove possiamo vedere le informazioni relative al tipo ordine di produzione, alla commessa con anno, numero e tipo, al progetto associato, il centro di lavoro e la macchina su cui si sta eseguendo la fase, la data di fine prevista lavorazione, e le informazioni dell’articolo con eventuale variante.        
+L’indicazione della quantità totale da produrre, la quantità prodotta che è pari alla somma delle quantità dichiarate dall’ultima fase produttiva e movimentabile del ciclo, quindi corrispondente all’articolo finito, e la quantità di fase prodotta che è data dalla somma delle quantità presenti nella dichiarazione della fase stessa.
+
+Il campo **barcode** presente in testata, viene utilizzato per l'inserimento dell'Ordine di produzione o della Fase da dichiarare.    
+Il barcode deve essere composto da un identificativo fisso per riconoscere l'Ordine di produzione (707) oppure la Fase di un ordine di produzione (718), il carattere di separazione "-" e l'identificativo o dell'Ordine di produzione o della Fase che si desidera dichiarare.   
+
+Esempio: 707-1234 oppure 718-98765
 
 Nella griglia centrale vanno inserite le righe della dichiarazione di produzione.
 Il primo dato da inserire è lo *Stato della dichiarazione* che può assumere i seguenti valori:
@@ -54,19 +61,17 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 **Causale di scarto**: indica la causale di versamento utilizzata per la quantità scartata;       
 **Ubicazione di scarto**: indica l'ubicazione di versamento della quantità scartata;        
 **Difetto**: permette di inserire il difetto relativo alla quantità scartata. Si abilità solamente dopo aver inserito un valore maggiore di zero nel campo della **Quantità scartata**;       
-
-**Magazzino di consumo**: indica il magazzino di versamento della quantità di consumo;      
-**Causale di consumo**: indica la causale di versamento utilizzata per la quantità di consumo;       
-**Ubicazione di consumo**: indica l'ubicazione di versamento della quantità di consumo;        
-
+**Magazzino di consumo**: permette di specificare il magazzino di consumo dell'articolo (in testata della dichiarazione di produzione) utilizzato dalla fase precedente;            
+**Causale di consumo**: permette di specificare la causale di consumo dell'articolo (in testata della dichiarazione di produzione) utilizzato dalla fase precedente;       
+**Ubicazione di consumo**: permette di specificare l'ubicazione di consumo dell'articolo (in testata della dichiarazione di produzione) utilizzato dalla fase precedente;        
 **Macchine**: indica il numero delle macchine indica la descrizione della causale di versamento della quantità prodotta;             
 **Numero macchine**: indica il numero delle macchine utilizzata relativo alla riga della dichiarazione;        
 **Gruppi manodopera**: indica il codice del gruppo manodopera utilizzato relativo alla riga della dichiarazione;         
 **Numero operai**: indica il numero di operai utilizzati relativo alla riga della dichiarazione;        
 **Sito produttivo**: indica il codice del sito produttivo relativo alla riga della dichiarazione;     
-**Minuti macchina**: indica il tempo macchina in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;           
-**Minuti manodopera**: indica il tempo manodopera in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;              
-**Minuti attrezzaggio**: indica il tempo di attrezzaggio in minuti relativo alla riga della dichiarazione; viene indicato manualmente;           
+**Tempo macchina**: indica il tempo macchina relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente. (La label del campo si modifica in base all'unità di misura del tempo della fase dichiara);           
+**Tempo manodopera**: indica il tempo manodopera relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente. (La label del campo si modifica in base all'unità di misura del tempo della fase dichiara);                    
+**Tempo attrezzaggio**: indica il tempo di attrezzaggio relativo alla riga della dichiarazione; viene indicato manualmente. (La label del campo si modifica in base all'unità di misura del tempo della fase dichiara);             
 **Dipendente**: indica il codice dell'utente che sta effettuando la dichiarazione;             
 **Cognome**: indica il cognome dell'utente che sta effettuando la dichiarazione;            
 **Nome**: indica il nome dell'utente che sta effettuando la dichiarazione;           

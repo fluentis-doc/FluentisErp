@@ -39,7 +39,6 @@ Per importare i dati direttamente dalla distinta base dell'articolo, è necessar
 **Classe**: Indica la classe dell'articolo;       
 **Codice articolo**: indica il codice dell'articolo;          
 **Variante**: in questo campo viene inserita l'eventuale variante dell'articolo;           
-**C/L**: in questo campo viene ripreso il flag presente nei *Parametri MRP* dell'articolo chiamato *considera in CL* ovvero indica se l'articolo deve essere incluso come materiale negli ordini di conto lavoro;      
 **UM**: in questo campo viene riportata l'unità di misura principale dell'articolo;        
 **Unità di misura**: in questo campo si inserisce l'eventuale unità di misura alternativa dell'articolo;  
 **Data impiego**: coincide con la data inizio prevista della fase dell'ordine di produzione a cui è associato quel materiale; se non è associato a nessuna fase coincide con l'inizio della prima fase del ciclo;      
@@ -52,9 +51,9 @@ Per importare i dati direttamente dalla distinta base dell'articolo, è necessar
 **Fase / Sotto Fase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sotto fase e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;     
 **Magazzino**: indica il magazzino dal quale verrà scaricato questo articolo;       
 **Causale**: indica la causale di magazzino con quale verrà scaricato questo articolo;    
-**Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). Essa può essere modificata, come tutti gli altri dati presenti in questa griglia;      
-**Quantità disponibile**: in questo campo compare la quantità disponibile dell'articolo alla data di impiego;      
-**Da dichiarare su mobile**: se abilitato, verrà dichiarato su mobile.
+**Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). Questa contribuisce all'unicità del materiale, quindi lo stesso materiale può essere inserito più volte con priorità diverse. Inoltre può essere modificata manualmente, come tutti gli altri dati presenti in questa griglia;      
+**Quantità disponibile**: in questo campo compare la quantità disponibile dell'articolo data dalla procedura di **Ricalcola fattibilità** presente in [Sequenza fasi](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);           
+**Da dichiarare su mobile**: se abilitato, il materiale verrà automaticamente proposto nella form di dichiarazione di produzione presente sul WMS.
 
 ## Fasi
 
@@ -165,7 +164,7 @@ In questo tab è possibile allegare e visualizzate le *Istruzioni operative* leg
 
 ## Personale
 
-In questo tab è possibile inserire gli operatori che dovranno svolgere le singole fasi del ciclo produttivo.    
+In questo tab è possibile inserire gli operatori che dovranno svolgere le singole fasi del ciclo produttivo. (*Viene utilizzato solo per le personalizzazioni*).    
 
 ## Extra Data
 

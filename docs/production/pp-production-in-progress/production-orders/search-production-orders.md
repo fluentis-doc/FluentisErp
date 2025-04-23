@@ -22,7 +22,6 @@ import SearchForm from './../../../import/sections/search-form.md'
 La quantità del lotto di origine non può essere variata nel caso in cui siano già state create delle *Liste di prelievo*, delle *Dichiarazioni di produzione*, oppure nel caso in cui alcuni materiali siano già stati consumati. In questi casi è comunque possibile creare nuovi lotti di produzione, ma senza poter variare la quantità del lotto di origine.          
 :::
 > **Seleziona progetto**: questo pulsante permette di associare un progetto agli ordini di produzione selezionati;    
-> **Ricalcola disponibilità**: questo pulsante di lanciare il calcolo della disponibilità per gli ordini di produzione selezionati;    
 > **Modifica stato ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di variare lo stato degli ordini selezionati (Lanciato, Esecutivo, Evaso, Storicizzato);     
 > **Completamento dati ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di rigenerare i dati dell'ordine di produzione, sostituendoli con quelli presenti nella distinta base e nel ciclo di lavoro presenti in anagrafica;    
 > **Ricalcolo costi Ordine di Produzione**: questo pulsante permette di effettuare il ricalcolo dei costi di produzione degli ordini di produzione selezionati.    
