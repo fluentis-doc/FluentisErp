@@ -4,12 +4,7 @@ sidebar_position: 2
 ---
 
 At the top of the screen, there is a filter through which you can perform a more targeted search for the items to consider in the procedure; in the grid with the search results, you can select the items to consider. The procedure is carried out with the ribbon bar button **Calculation of selected item costs** that is enabled only after selecting at least one item.        
-The results of the calculation procedure will be reported directly in the items grid. With the **Assembly Valuation** button on the ribbon bar, the related printout is opened, which in turn will contain the *Assembly Valuation* prints that allow for a detailed view of the various components that contribute to the total cost of the item.    
-The items selected in the Cost Calculation procedure will be valued based on the option selected in the specific section **Valorization to**:
-
-- **Latest Cost** and **Average Cost**: last cost refers to the last purchase cost (the most recent), while average cost refers to the average cost derived from warehouse movements. This value is present in the item register, Cost tab.
-
-- **Standard Cost/Standard Cost Next Year**: standard cost is a cost manually set or set by the cost calculation procedure and indicates the reference cost for a given item to be used throughout the year. It is usually a cost that is updated at the beginning or end of the year. For purchased items, it usually corresponds to the average cost, while for other items it is calculated by the cost calculation procedure found in the Controlling area, as the sum of the material costs and production phase costs. All these costs can be used for the valuations of the bill of materials, inventory balances, or (for purchased items) for the valuation of production orders (and related load movements) when the item from a production order is loaded into stock. This value is present in the item register, Cost tab.
+The results of the calculation procedure will be directly displayed in the item grid. With the ribbon bar button **Bill of Materials Valorization**, the corresponding print is opened, which in turn will contain the prints of *Bill of Materials Valorization* that allow for a detailed view of the various components that contribute to the total cost of the item.
 
 The items selected in the **Cost Calculation** procedure will be valued based on the option selected in the appropriate section **Valorization at**: 
 - Last cost    
