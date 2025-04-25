@@ -5,6 +5,10 @@ sidebar_position: 2
 
 Le possiamo eseguire dal menu area Controlling > Previsioni di vendita mensili.
 
+:::note Nota
+Prima di procedere vedasi quando indicato in merito alle [Versioni delle previsioni di vendita](/docs/configurations/tables/controlling/forecast/pv-versions). 
+:::
+
 La form è composta da 3 aree:
 
 - l’area di filtro dati (quella superiore): per la ricerca delle previsioni già inserite;
@@ -21,9 +25,10 @@ L’area inferiore è composta da un elenco contenente le informazioni di:
 
 - **Versione, Anno, Predefinita e Attiva**: sono informazioni di sola lettura in quanto inserite all’atto di inserimento di una nuova previsione copiandole dalla Versione da proporre;
 
-- **Consolidata**: indica se la riga è stata “validata” ed è pronta per essere considerata nella Generazione delle commesse di produzione; il consolidamento può essere effettuato manualmente, riga per riga, oppure massivamente per tutte le previsioni di una determinata Versione premendo il pulsante Consolida versione; il ripristino di una versione consolidata può essere effettuato premendo il pulsante Ripristina consolidamento;
+- **Consolidata**: indica se la riga è stata “validata” ed è pronta per essere considerata nella Generazione delle commesse di produzione; il consolidamento può essere effettuato manualmente, riga per riga, oppure massivamente per tutte le previsioni di una determinata Versione premendo il pulsante **Consolida versione**; il ripristino di una versione consolidata può essere effettuato premendo il pulsante **Ripristina consolidamento**;
 
 -	**Classe, Codice articolo, Descrizione articolo, Variante e Descrizione variante**: sono le informazioni oggetto della previsione, non modificabili se la riga è stata consolidata;
+
 -	**Unità di misura**: è l’ Unità di misura principale associata all’articolo e non è modificabile;
 
 -	**Unità di misura alternativa**: posso esprimere le Quantità in un’ Unità di misura alternativa (se indicata) diversa da quella principale; questa non è modificabile se la riga è stata consolidata;
