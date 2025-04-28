@@ -15,7 +15,7 @@ By pressing the button:
 - **Duplicate version**: enabled if only one version is selected from the list, the system will duplicate the data of the selected version and create a new version for the same year as the selected source version, with the version number being the maximum version number entered for the year incremented by one unit and with the Default information not indicated;
 - **Delete version**: enabled if at least one version is selected from the list, the system will delete all selected versions from the list, after a confirmation message; at the end of the processing, all versions that could not be deleted due to their use in forecasts will be displayed; it will not be possible to delete a forecast if it is already used in other management;
 
-The other buttons are not used for managing [monthly sales forecasts](/docs/controlling/sales-forecast/monthly-sales-forecust).
+The other buttons are not used for managing [monthly sales forecasts](/docs/controlling/sales-forecast/monthly-sales-forecast).
 
 The information managed in the main list is:
 
@@ -23,4 +23,4 @@ The information managed in the main list is:
 - **Active**: indicates whether or not it is possible to enter new forecasts;
 - **Description**: proposed as Year/Version but with the possibility of being changed by the operator.
 
-All other information is not used for managing [monthly sales forecasts](/docs/controlling/sales-forecast/monthly-sales-forecust).
+All other information is not used for managing [monthly sales forecasts](/docs/controlling/sales-forecast/monthly-sales-forecast).
