@@ -11,12 +11,12 @@ Customer orders in Fluentis can be generated through various methods:
 
 ## Preliminary Configuration of the Module 
 
-> - [Numerations (/docs/configurations/tables/fluentis-numerations)](Numerazioni): definition of numbering for orders.    
-> - [Sales Order Parameters (/docs/configurations/parameters/sales/sales-orders-parameters)]: specific settings for managing orders.     
-> - [Grouping Parameters (/docs/configurations/parameters/sales/orders-grouping)]: configuration for managing groupings for fulfillment procedures.     
-> - [Sales Order Types (/docs/configurations/tables/sales/sales-order-types)]: creation and classification of types of orders.   
+> - [Numerations](/docs/configurations/tables/fluentis-numerations): definition of numbering for orders.    
+> - [Sales Order Parameters](/docs/configurations/parameters/sales/sales-orders-parameters): specific settings for managing orders.     
+> - [Grouping Parameters](/docs/configurations/parameters/sales/orders-grouping): configuration for managing groupings for fulfillment procedures.     
+> - [Sales Order Types](/docs/configurations/tables/sales/sales-order-types): creation and classification of types of orders.   
 
-Alternatively, the [**Fast Start** (/docs/guide/fast-start)] procedure is available.
+Alternatively, the [**Fast Start**](/docs/guide/fast-start) procedure is available.
 
 ## Managed Documents 
 
