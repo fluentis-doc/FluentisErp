@@ -29,4 +29,8 @@ To insert new codes, you need to click on the first empty row in the grid or pre
 > **Group**: indicates the group identifying the Loading Units. It can be a *Progressive Number*, a *Production Job Order*, a *Purchase Order*, or a *Production Order*;   
 > **Group Description**: description of the *Group* identifying the Loading Units.     
 
+:::note Note
+In order for it to be possible to use the loading unit in production declarations, it is necessary that the **Group** indicated is of type *Production Job Order* or *Production Order*.  
+:::
+
 For everything not detailed in this document about the common functionality of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).

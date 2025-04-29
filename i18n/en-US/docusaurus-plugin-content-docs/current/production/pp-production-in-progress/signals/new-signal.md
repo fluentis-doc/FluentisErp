@@ -76,7 +76,7 @@ Additionally, it is also possible to enter suspension declarations followed by a
 **Employee**: indicates the code of the user making the declaration;             
 **Surname**: indicates the last name of the user making the declaration;            
 **First Name**: indicates the first name of the user making the declaration;           
-**Loading Units**: indicates the load unit number, composed of year, production order number, and a progressive number;                
+**Loading Units**: indicates the load unit number, composed of year, production order number, and a progressive number. To ensure that it is possible to use the loading unit in production declarations, it is necessary that the **Group** configured in the [UDC Group Type](/docs/configurations/tables/logistics/loading-unit-group-type/) of the loading unit is of type *Production Job Order* or *Production Order*;             
 **Load Unit Type**: indicates the type of load unit;     
 **Load Unit Type Description**: indicates the description of the load unit type;         
 **Loading unit number**: indicates the load unit number;    
