@@ -75,7 +75,7 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 **Dipendente**: indica il codice dell'utente che sta effettuando la dichiarazione;             
 **Cognome**: indica il cognome dell'utente che sta effettuando la dichiarazione;            
 **Nome**: indica il nome dell'utente che sta effettuando la dichiarazione;           
-**Unità di carico**: indica il numero dell'unità di carico, composto da anno, numero ordine di produzione e un progressivo;                
+**Unità di carico**: indica il numero dell'unità di carico, composto da anno, numero ordine di produzione e un progressivo. Per far si che sia possibile utilizzare l'unità di carico nelle dichiarazioni di produzione è necessario che il **Gruppo**, configurato nel [Tipo gruppo UDC](/docs/configurations/tables/logistics/loading-unit-group-type/) dell'unità di carico, sia di tipo *Commessa di produzione* oppure *Ordine di produzione*;       
 **Tipo unità di carico**: indica il tipo di unità di carico;     
 **Descrizione tipo unità di carico**: indica la descrizione del tipo unità di carico;         
 **Numero unità di carico**: indica il numero dell'unità di carico;    

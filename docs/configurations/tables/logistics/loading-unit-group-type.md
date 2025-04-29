@@ -33,5 +33,4 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 Per far si che sia possibile utilizzare l'unità di carico nelle dichiarazioni di produzione è necessario che il **Gruppo** indicato sia di tipo *Commessa di produzione* oppure *Ordine di produzione*.    
 :::
 
-
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
