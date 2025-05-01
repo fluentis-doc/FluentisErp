@@ -93,3 +93,15 @@ Nello specifico sono utilizzati nel seguente modo:
 > LoadingUnitCreationFromPurchaseDeliveryNoteItem: dopo aver selezionato **Ricevimento merci** e premuto il pulsante **Creazione DDT acquisto** il magazzino e la causale indicati in questo parametro vengono usati nella creazione e il carico delle unità di carico appena create. Questo parametro è necessario solo nel caso in cui vengano utilizzare le unità di carico.
 
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+
+## **Ricevimento merci con creazione etichette**
+
+Nel caso in cui fosse necessario creare le etichette per gli articoli che si stanno per caricare, dopo aver inserito tutti i dati relativi all’articolo come descritto precedentemente, l’operatore dovrà premere il pulsante **Conferma + Stampa** e la procedura aprirà una nuova form dedicata alla creazione delle etichette.       
+In questa form il focus è già posizionato sulla quantità che verrà inserita in ogni etichetta in modo che l’utente possa immediatamente modificarla.      
+Inoltre, può anche decide il numero di etichette con una certa quantità.     
+Una volta inseriti i dati correttamente l’operatore dovrà premere il pulsante avanti per inserire la riga con le etichette nella griglia centrale e contemporaneamente verrà aggiornata la quantità residua. Nel caso di errori possibile selezionare una riga ed eliminarla con il pulsante **Cancella**.        
+Una volta terminate tutte le etichette sarà possibile stamparle con il relativo pulsante e poi tramite il pulsante chiudi si potrà ritornare alla form principale di creazione del DDT, dalla quale l’operatore potrà proseguire con nuove righe.      
+Anche in questo caso l’operatore può richiamare la riga confermata in precedenza e riaprirla con il pulsante conferma più stampa per modificarne le etichette.      
+Concluse le modifiche con il pulsante chiudi verrà creato il DDT di acquisto con i relativi movimenti di magazzino.     
+
+In questo caso i **Parametri carico/scarico** sono gli stessi visti nei casi precedenti.
