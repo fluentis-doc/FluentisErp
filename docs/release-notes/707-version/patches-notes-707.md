@@ -3,6 +3,32 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0030 - 30/04/2025
+
+> - VendoPayment export - Fix Create SalesDeliveryNote\SalesInvoice from PickingList, case SalesTurnoverType (#TT001258/21).   
+> - QY - Taratura strumenti - Aprendo un documento di Taratura dall’elenco “Storico rapporti e Certificati di taratura” presente nell’anagrafica dello Strumento di misura, veniva aperto non il documento di Taratura richiesto ma sempre il primo in lista. (#TT01933/25)  
+> - MS - Corretto bug in pianificazione generale sul multiplo del lotto economico. (#TT01522/25)  
+> - SCM - Ottimizzata la procedura di evasione DDT nelle Fatture di Acquisto (#TT01779/25).   
+> - WM– Corretto bug in creazione prototipi quando si inseriva una distinta base già esistente che conteneva un componente con delle note, (#TT01979/25) 
+> - WMS - Corretto bug in gestione spunta e conferma picking che non aggiornava correttamente il lotto dell’articolo nella form di conferma.  (#TT02035/25)  
+> - CO - nel controlling, l’Elaborazione periodi ora va a memorizzare la chiusura utilizzata nelle registrazioni dello Storico registrazioni gestionali create. Modifications in AreaPostingFilterResults form that can have an impact on profiles. ( #TT01919/25)  
+> - FI - all’interno del cespite, la modifica manuale dell’ammortamento calcolato va ora ad aggiornare gli importi a centro di costo così come i campi di deducibilità/indeducibilità. Modifications in fixed asset details tab form that can have an impact on profiles( #TT01809/25)  
+> - FI - la creazione Intra2 acquisti da fatture di acquisto ora valorizza la nazione della partita iva dal campo IsoCode dell’anagrafica e non dalla nazione dell’anagrafica stessa. (#TT01817/25).  
+> - MS - Corretto bug in pianificazione generale che aggiornava la data merce pronta in maniera errata in alcuni casi particolari. (#TT01036/25) 
+> - FI - error in Ro declaration 300 ( TT01632/25)  
+> - WM - Nella maschera di ricerca dei Picking è ora possibile salvare un profilo impostando un filtro sullo stato evasione del picking. Modifications in Filter Picking form that can have an impact on profiles (#TT01190/25)  
+> - SCS - Risolta anomalia nella visualizzazione dell’anteprima righe Ordini di Conto lavoro (#TT01831/25).  
+Modifications in Subcontractro Order result form that can have an impact on profiles  
+> - SD - Correzione errore che non inseriva il prezzo di vendita nell’importazione Web API, se nel file di importazione veniva inserita anche la variante (#TT01669/25) 
+> - SD - L’importazione Web API permette l’inserimento dell’ubicazione per lotto per i documenti che lo prevedono (#TT02000/25)  
+> - WM - Nelle registrazioni di magazzino, Sposta articolo, picking, conferma picking e gestione spunta, sono stati implementati i controlli per lo spostamento di un lotto prenotato. (#TT01620/25)  
+> - FI - revisione gestione numerazione intrastat, gestione per società (#TT01935/25)  
+> - FI - revisione stampa “Libro cespiti ammortizzabili” e “Schede cespiti” per visualizzazione tipo operazione in lingua. (#TT01929/25)   
+> - FI - Revisione gestione registrazione con incremento cespiti (#TT02082/25, TT01155/25).  
+> - BI - fix loading of ‘Cruscotti’ layouts/profiles (TT01133/25).  
+> - SCM - Abilitata la possibilità di effettuare una ricerca multipla per Tipo Fattura, nella ricerca Fatture di acquisto (#TT01939/25)  
+> - SCM - Se Tipo Ordine e Tipo DDT hanno associate causali con ubicazioni diverse, al momento dell'Evasione viene riportata l'ubicazione della causale di magazzino dell'ordine (#TT01993/25).
+
 ### Patch 707.1-0029 - 18/04/2025
 
 > - SD - Spedizioni, corretto caso in cui non era possibile aggiungere o eliminare una riga di groupage, e migliorato messaggio di segnalazione in fase di eliminazione spedizione collegata ad altri documenti (#TT01282/25) 
