@@ -1,3 +1,4 @@
-**Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.<br />
-Il pulsante diventa attivo se il documento è salvato, ma non caricato.<br />
-Con clic su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che spno stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned). 
+**Gestionare ambalaje**: permite completarea gestionării ambalajelor de returnat utilizate în documentul de achiziții.  
+Butonul devine activ dacă documentul este salvat, dar nu este încă încărcat.  
+Dând clic pe acest buton se deschide form-ul corespunzător unde: se introduce cantitatea, se selectează linia și se execută transferul ambalajului selectat în liniile articolului dând clic pe butonul **Execută**.  
+În acest form sunt listate articolele care au fost introduse cu natura *Ambalaj* și care sunt prezente în tabelul [Ambalaje de returnat](/docs/configurations/tables/logistics/package-to-be-returned).

@@ -1,1 +1,1 @@
-**Cancella serial number**: permette di cancellare la riga serial number selezionata.
+**Șterge numărul de serie**: permite ștergerea liniei cu numărul de serie selectat.

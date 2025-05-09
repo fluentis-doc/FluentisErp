@@ -1,6 +1,6 @@
-**Storno**: il pulsante consente di stornare parzialmente o totalmente un documento. Con questa funzione sarà possibile creare un documento di storno che scaricherà(in acquisti)/Caricherà(in vendite) il magazzino.  
+**Storno**: butonul permite stornarea parțială sau totală a unui document. Cu această funcție va fi posibil să creați un document de storno care va descărca (în achiziții) / va încărca (în vânzări) gestiunea.
 
-*Procedura*:  
-- selezionare il documento da stornare e cliccare sul pulsante di **Storno**. L'applicazione aprirà una finestra pop-up con tutte le righe articolo del documento di origine;  
-- inserire in questa form: il tipo di documento di storno che si vuole creare e, per ogni articolo, indicare la quantità da stornare, la causale di storno e settare il flag **Da stornare**;  
-- click **OK** per confermare l'operazione.
+*Procedură*:  
+- selectați documentul pe care doriți să îl stornați și faceți clic pe butonul de **Storno**. Aplicația va deschide o fereastră pop-up cu toate liniile de articole ale documentului sursă;  
+- introduceți în acest form: tipul documentului de storno pe care doriți să-l creați și, pentru fiecare articol, indicați cantitatea de stornat, motivul storno-ului și activați opțiunea **De stornat**;  
+- faceți clic pe **OK** pentru a confirma operațiunea.

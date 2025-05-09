@@ -1,7 +1,7 @@
-**Duplica**: il pulsante consente la creazione di una copia di un documento, riportando tutte le condizioni del documento di origine, ma con i dati attuali.  
-Utilizzata per frequenti spedizioni di merci similari dello stesso soggetto documento.
+**Duplică**: butonul permite crearea unei copii a unui document, reproducând toate condițiile documentului original, dar cu datele actuale.  
+Utilizat pentru expedierea frecventă a bunurilor similare către acelați client.
 
-*Procedura*:  
-- selezionare il documento da duplicare e cliccare sul pulsante di **Duplica**;  
-- l'applicazione inizierà la creazione del documento e aprirà la finestra pop-up **Riepilogo duplica** dove completare i dati;    
-- click **OK** per confermare l'operazione.
+*Procedură (Procedura)*:  
+- selectați documentul pe care doriți să-l duplicați și faceți clic pe butonul **Duplică**;  
+- aplicația va începe crearea documentului și va deschide fereastra pop-up **Rezumat duplicare** unde trebuie completate datele;  
+- faceți clic pe **OK** pentru a confirma operațiunea.

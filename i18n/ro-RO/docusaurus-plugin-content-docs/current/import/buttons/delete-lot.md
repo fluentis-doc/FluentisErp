@@ -1,1 +1,1 @@
-**Cancella lotto**: permette di cancellare la riga lotto selezionata.
+**Şterge lot**: permite ştergerea liniei de lot selectate.

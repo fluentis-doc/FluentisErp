@@ -1,1 +1,1 @@
-**Cancella centri di profitto**: permette di cancellare la riga centro di profitto selezionata
+**Şterge centre de profit**: permite ştergerea liniei centrului de profit selectate.

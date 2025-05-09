@@ -1,3 +1,2 @@
-
-**Aggiornamento listini**: permette di aggiornare il prezzo dell'articolo in base al nuovo listino (nel caso sia stato inserimento un listino aggiornato).<br />
-Cliccando sulla tendina accanto al pulsante ![](/img/neutral/common/down-arrow.png), sarà possibile creare un nuovo listino se ancora da creare.
+**Actualizare oferte de prețuri**: permite actualizarea prețului articolului pe baza noii oferte de prețuri (în cazul în care a fost inserată o ofertă de  prețuri actualizată).<br />
+Clicând pe lista derulantă lângă butonul cu *săgeată în jos*, va fi posibil să se creeze o nouă ofertă de prețuri dacă încă nu a fost creată.

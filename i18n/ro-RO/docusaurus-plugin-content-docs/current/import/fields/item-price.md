@@ -1,5 +1,5 @@
-**Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Sconti/Listini*.
+**Preț**: prețul este propus din oferta de prețuri inserată în registrul contactului; oferta de prețuri de referință pentru articolul respectiv este afișată în tab *Discounturi/Oferte de prețuri*.
 
-Lo stesso documento potrebbe contenere articoli con prezzi presi dai listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata (vedi [Anagrafica contatti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) ), lo stesso documento potrebbe contenere articoli da listini diversi.
+Același document ar putea conține articole cu prețuri preluate din oferte diferite, dacă în ofertele subiectului sunt asociate mai multe oferte de prețuri în cascadă (vezi [Registru contacte](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)), același document ar putea conține articole din oferte de prețuri diferite.
 
-Attraverso il doppio click nel campo **Listini** (tab *Sconti/Listini*) l'utente ha la possibilità di selezionare un'offerta diversa da quella di default, dalla quale sarà ripreso il prezzo dell'articolo inserito. 
+Cu dublu clic în câmpul **Oferte de prețuri** (tab *Discounturi/Oferte de prețuri*), utilizatorul are posibilitatea de a selecta o ofertă diferită de cea implicită, din care va fi preluat prețul articolului inserat.

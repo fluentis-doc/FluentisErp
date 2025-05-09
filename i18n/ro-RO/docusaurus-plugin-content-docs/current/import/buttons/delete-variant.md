@@ -1,1 +1,1 @@
-**Cancella**: permette di cancellare la riga variante selezionata.
+**Șterge**: permite ștergerea liniei variantei selectate.

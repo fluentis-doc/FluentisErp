@@ -1,1 +1,1 @@
-**Numero riga**: questo campo si compilerà automaticamente e progressivamente all'inserimento dei dati nella riga.
+**Număr linie**: acest câmp se va completa automat și progresiv la introducerea datelor în linie.

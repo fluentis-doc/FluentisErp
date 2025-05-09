@@ -1,1 +1,1 @@
-**Storno ricevimenti**: permette di stornare i tipi di documenti che hanno la natura di tipo reso.
+**Stornare recepții**: permite anularea tipurilor de documente care au natura unui retur.

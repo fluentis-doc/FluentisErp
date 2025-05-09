@@ -1,1 +1,1 @@
-**Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.
+**Discounturi**: sunt propuse toate discounturile asociate articolului, fiecare cu propria bază de calcul și de atribuire.

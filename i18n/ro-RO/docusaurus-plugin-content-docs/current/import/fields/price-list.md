@@ -1,1 +1,1 @@
-**Listino**: viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità, con condizioni particolari (es. scaglione di sconto) assegnate all'articolo nel listino.
+**Listă prețuri**: este propusă oferta de prețuri din care a fost preluat articolul, cu data de început/sfârșit a valabilității, cu condiții speciale (ex. iinterval de discount) atribuite articolului în lista de prețuri.

@@ -1,13 +1,10 @@
-Per la ricerca automatica del *Piano di controllo* da associare ad ogni *articolo* presente nella riga documento selezionata, viene utilizzata questa metodologia:   
-
-- per i documenti di produzione (*Dichiarazioni di produzione* e *Fasi ordine di produzione*) viene considerato il *Piano di controllo* indicato nella *Fase*;   
-- per gli altri documenti viene considerato il conto del *Cliente* o *Fornitore* associato al *Tipo documento* e la *Data del documento*;   
-con queste informazioni viene ricercato il *Piano di controllo*, valido alla data del documento e per l'*Articolo* selezionato, da associare;   
-ad ogni ricerca, se non viene trovato il *Piano di controllo*, si prosegue con la successiva combinazione di valori;   
-se viene trovato più di un *Piano di controllo*, il *Controllo* viene comunque inserito ma si dovrà scegliere quale *Piano di controllo* associare tra quelli trovati;   
-la sequenza di ricerca è la seguente:   
-    - ricerca tra i *Piani di controllo* del *Tipo piano* indicato come *Tipo piano di controllo* del *Tipo documento per l'importazione* presente nei *Parametri controlli articolo* e conto *Cliente* o *Fornitore* del documento e successivamente quelli privi di conto *Cliente* o *Fornitore*;   
-    - ricerca tra i *Piani di controllo* degli altri *Tipi piano* non indicati come *Tipo piano di controllo* del *Tipo documento per l'importazione* presente nei *Parametri controlli articolo* e conto *Cliente* o *Fornitore* del documento e successivamente quelli privi di conto *Cliente* o *Fornitore*.   
-    - se non trovato viene visualizzato un messaggio di avviso, il *Controllo articolo* viene comunque inserito ma privo del *Piano di controllo*, privo delle *Prove* da controllare e viene inserita un'indicazione nelle *Richieste Piani di controllo*"*.   
-
-
+Pentru căutarea automată a *Planului de control* care trebuie asociat fiecărui *articol* din linia documentului selectat, se utilizează următoarea procedură:  
+- pentru documentele de producție (*Declarații de producție* și *Faze ordin de producție*), se consideră *Planul de control* indicat în *Fază*;  
+- pentru celelalte documente se consideră contul *Clientului* sau *Furnizorului* asociat cu *Tipul documentului* și *Data documentului*;  
+Cu aceste informații se caută *Planul de control*, valabil la data documentului și pentru *Articolul* selectat, de asociat;  
+La fiecare căutare, dacă nu se găsește *Planul de control*, se continuă cu combinația de valori următoare;  
+Dacă se găsesc mai multe *Planuri de control*, *Controalele* sunt totuși introduse, dar va trebui să se aleagă care *Plan de control* să fie asociat dintre cele găsite;  
+Secvența de căutare este următoarea:  
+    - căutare între *Planurile de control* ale *Tipului de plan* indicat ca *Tip de plan de control* al *Tipului de document* pentru import, prezent în *Parametrii controalelor articolului* și contul *Clientului* sau *Furnizorului* documentului și ulterior cele fără cont *Client* sau *Furnizor*;  
+    - căutare între *Planurile de control* ale altor *Tipuri de plan* neindicate ca *Tip de plan de control* al *Tipului de document* pentru import, prezent în *Parametrii controalelor articolului* și contul *Clientului* sau *Furnizorului* documentului și ulterior cele fără cont *Client* sau *Furnizor*.  
+    - dacă nu este găsit, se va afișa un mesaj de avertizare, *Controlul articolului* este introdus totuși, dar fără *Plan de control*, fără *Teste* de verificat și se va introduce o indicație în *Cereri planuri de control*.

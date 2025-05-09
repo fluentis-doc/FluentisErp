@@ -1,1 +1,1 @@
-**Unità di misura**: viene proposta U.M. principale dell'articolo, ma l'utente ha la possibilità di scegliere un'altra unità di misura.
+**Unitate de măsură**: este propusă U.M. principală a articolului, dar utilizatorul are posibilitatea de a alege altă unitate de măsură.

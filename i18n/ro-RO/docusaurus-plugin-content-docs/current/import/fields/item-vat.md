@@ -1,1 +1,1 @@
-**IVA**: è *prioritario* il dato inserito nel campo IVA dell'*Anagrafica contatto*. Se questo non è presente, viene proposto il valore presente nell'*Anagrafica articolo*, ma l'utente ha la possibilità di inserire un'altro dato. È un campo obbligatorio.
+**TVA**: este prioritară valoarea introdusă în câmpul TVA din *Registrul contactului*. Dacă aceasta nu este prezentă, se propune valoarea din Registru articol, însă utilizatorul poate introduce o altă valoare. Este un câmp obligatoriu.

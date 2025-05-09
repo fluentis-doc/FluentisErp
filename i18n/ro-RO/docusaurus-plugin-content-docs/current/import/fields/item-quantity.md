@@ -1,1 +1,1 @@
-**Quantità**: rappresenta la quantità dell'U.M. principale e di default ha il valore 1; può essere inserita manualmente oppure può essere ripresa dal documento considerato per l'evasione (per esempio dall'ordine fornitore).
+**Cantitate**: reprezintă cantitatea U.M. principală și implicit are valoarea 1; poate fi inserată manual sau poate fi preluată din documentul luat în considerare pentru execuție (de exemplu din ordin furnizor).
