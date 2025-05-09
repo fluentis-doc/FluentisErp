@@ -1,11 +1,18 @@
 ---
-title: Members Tab
-sidebar_label: Members Tab
+title: Tab Componenti
+sidebar_label: Tab Componenti
 sidebar_position: 1
 ---
 
-:::info
-Once opened the object form, located inside the filter widget (i.e. over the tabs), there are more/less standard parameters - such as *Code, Description, Creation Date, Last edit date* - the ones you need to pay more attention to are *Creation User, Editing User* and to the optional parameter *Linked Distribution List* (the latter refers to the CRM list).
+:::info Nota
+Una volta aperta la form di dettaglio della *Lista di Distrubuzione*, nella parte superiore sono presenti alcuni parametri standard come *Codice*, *Nome*, *Descrizione*, *Data Crazione*, *Data Ultima Modifica*, *Utente di Creazione*, *Utente di Modifica* e *Lista di Distribuzione Collegata* (quest'ultimo, si riferisce alle liste CRM).
 :::
+In questo tab possono essere definite delle liste di distribuzione composte dai seguenti parametri:
+- codice;
+- descrizione;
+- data di creazione;
+- data di ultima modifica.
 
-In this tab members can be added using the grid and there is no *Object Widget* that controls what the user inputed, except for the field *Linked User*; it will be inputed arbitrary by the user based of its necessities.
+Inoltre, espandendo tramite l'icona **'+'** è possibile definire i contatti che compongono la lista di distribuzione.
+
+![alt text](/img/it-it/applications/supervisor/supervisor17.png)
