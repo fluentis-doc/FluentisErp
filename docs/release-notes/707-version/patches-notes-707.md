@@ -3,6 +3,35 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0031 - 08/05/2025
+
+> - SD - Corretto errore generazione righe duplicate in report ordini a quantità (#TT01991/25) 
+> - WM - corretto calcolo valore totale materiale della stampa distinta base valorizzata che non veniva valorizzato (#TT02077/25) 
+> - PM - corretta gestione numeratori nei vari documenti area progetti - al fine di rispettare la configurazione del periodo annuale/mensile/giornaliero/nessuno (#TT00020/25) 
+> - FI - Registrazioni contabili: attivata la possibilità di modificare il centro aziendale di imputazione per fatture di acquisto estere anche in caso di autofattura contabilizzata e inviata. Modifications in posting analitic tab can have an impact on profiles (rif. TT01112/25) 
+> - MS - Corretto bug nel report Ordini di produzione che non mostrava correttamente il valore della fase esterna. (#TT00242/25) 
+> - WMS Confirm Picking-optimizations(#TT01258/21) 
+> - SD - il campo sconto e sconto finale del widget sconti viene compilato anche in presenza di sconto testata e sconto finale in tutti i documenti area vendite (#TT01455/25) 
+> - MS - Generazione Commesse di produzione - Revisione del metodo di generazione delle commesse da Ordine cliente. Il raggruppamento attua sempre il raggruppamento per Versione (se gestita nella riga articolo dell'ordine cliente).La quantità della riga commessa è la somma delle quantità ordinate considerate nel raggruppamento.La data merce pronta della riga commessa è la minore tra quelle considerate nel raggruppamento. (#TT05586/24) 
+> - EAM - transform Vehicle Plate Number e VehicleRegistrationDate in campi nulabili(#TT02142/25) 
+> - EAM - Correggi Filtro per data sul filtro CreateFromAsset(#TT02144/25) 
+> - Aquisti - Correggere verifica unicita numero seriale(#TT02145/25) 
+> - CO - Nella sezione di filtro del Calcolo Costo, il campo Variante viene ora filtrato sulla base dell’articolo selezionato (#TT02148/25). 
+> - SCM - Implementata la proposta automatica dei lotti di scarico nei documenti di Acquisto. Nel caso in cui sia utilizzata una causale di scarico in un DDT o in una Fattura di Acquisto contenenti articoli gestiti a lotti, se i lotti non sono stati inseriti manualmente nel documento e la Tipologia prelievo è FIFO o Data scadenza, i lotti verranno proposti automaticamente in fase di registrazione a magazzino (#TT01355/25). 
+> - SD - Risolta anomalia in fase di inserimento di un Ordine Cliente che causava un errore premendo "Nuova Riga" con il focus ancora attivo sulla riga precedente (#TT02097/25) 
+> - SD: Ricerca offerte filtrando per anagrafica cliente con abilitato flag “Ricerca contatto anche come contatto padre” - estende la ricerca ai contatti crm che hanno come padre un contatto collegato con l’anagrafica ricercata. Modifications in Filter SalesOffer form can have an impact on profiles.(#TT01265/25) 
+> - CO - Scritture per cost driver, revisione assegnazione conti (#TT02108/25) 
+> - FI - Nella procedura Scritture di assestamento, l’impostazione del flag ‘Spunta tutto’ per la sezione superiore restituisce ora un messaggio di spunta su tutte le righe dei Centri di costo. Modifications in first tab of Gestione assestamento can have an impact on profiles. (TT00890/25).  
+> - FI - Revisione assegnazione link di collegamento alle registrazioni di assestamento. Chiusura automatica conti, revisione contabilizzazione (TT02116/25) 
+> - SD - Risolto errore nella visualizzazione degli sconti articoli in griglia, nel caso di modifica manuale del listino nel documento (#TT01936/25) 
+> - SCM - Risolto errore che, dopo la creazione del DDT da un Ricevimento Merci già registrato a magazzino, non visualizzava più la riga di movimento per gli articoli gestiti a lotti (#TT02141/25). 
+> - SD - Introdotti 2 flag nei parametri per Operatore delle spedizioni per la gestione filtri nel Calendario Spedizioni:  Visualizza tutti gli autisti e Vista settimanale lun-ven (#TT01580/25) 
+> - WM - Nel filtro picking quando clicco il + delle testate dei picking ora vengono visualizzate le righe degli articoli contenuti.Modifications in Filter Picking form can have an impact on profiles. (#TT01443/25) 
+> - SH - Fix other grid summaries in documents when default summary present (TT00322/25) 
+> - SH - Fix aggiornamento totali in ddt vendita(TT01489/25) 
+> - MS - bug fix on updating production job orders state for the production job orders scheduled using a grouping method (#TT00649/25)
+
+
 ### Patch 707.1-0030 - 30/04/2025
 
 > - VendoPayment export - Fix Create SalesDeliveryNote\SalesInvoice from PickingList, case SalesTurnoverType (#TT001258/21).   

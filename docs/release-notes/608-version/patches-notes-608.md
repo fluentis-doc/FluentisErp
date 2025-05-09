@@ -3,6 +3,19 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0073 - 09/05/2025 
+
+> - CO - Corretto bug nel calcolo costo che non leggeva correttamente il valore del listino fornitore di conto lavoro. (#TT01472/25) 
+> - SD - modificato test al salvataggio fatture, per il nuovo tipo delle Autofatture TD29 (#TT01693/25) 
+> - SD - Risolto errore nella cancellazione di un Ordine Cliente creato tramite conversione di un’Offerta, quando il tipo ordine prevedeva la generazione automatica del progetto (#TT01211/25). 
+> - SCM - revisione contabilizzazione fatture da ricevere su bolle acquisto con articoli fittizi caricati su magazzini differenti ( TT01550/25) 
+> - SCM - la contabilizzazione fatture da ricevere utilizza il prezzo netto di riga invece di calcolare (prezzo*qta)-sconti ( TT01612/25) 
+> - FI - revisione gestione causale automatica per giroconto iva in sospensione, escluso messaggio di protocolli non ordinati (#TT01845/25) 
+> - FI - Mancato riporto Dichiarazione d'intento da Documento SDI ( TT01820/25) 
+> - FI - la creazione Intra2 acquisti da fatture di acquisto ora valorizza la nazione della partita iva dal campo IsoCode dell’anagrafica e non dalla nazione dell’anagrafica stessa. (#TT01817/25). 
+> - CO - nelle chiusure infrannuali, le procedure Scritture di rettifica, Scritture di integrazione e Contabilizzazione rimanenze non verificano più se i conti soggetti sono scaduti o no (#TT05145/24) 
+> - FI - Chiusura automatica conti, revisione contabilizzazione (TT02116/25). Nella procedura Scritture di assestamento, revisione assegnazione link di collegamento alle registrazioni di assestamento. 
+
 ### Patch 608.1-0072 - 27/03/2025  
 > - SD - Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili (#TT00881/25)  
 > - FI - revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25)  
