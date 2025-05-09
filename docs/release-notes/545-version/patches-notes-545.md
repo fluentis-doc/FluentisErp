@@ -3,16 +3,20 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0117- 09/05/2025
+
+> - SD - Corretto l’aggiornamento delle quantità residue durante l’evasione DDT da ricerca Ordini Clienti, in presenza di articoli gestiti a lotti e numeri seriali (#TT00900/25). 
+
 ### Patch 545.1-0116- 30/04/2025
 > - FI - revisione calcolo importi cash flow su Ordini fornitori.(#TT01073/25) 
-> - SD – Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili.(#TT00881/25) 
-> - WM – fix su calcoli di stampa brogliaccio di magazzino 
+> - SD - Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili.(#TT00881/25) 
+> - WM - fix su calcoli di stampa brogliaccio di magazzino 
 > - PR - in una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti della testata distinta.(#TT01384/25) 
 > - SD - Ordini clienti: Risolto errore nel calcolo della Quantità residua degli articoli in caso di modifica manuale della quantità evasa in una Fattura di Vendita.(#TT01574/25) 
 > - PR - Corretto malfunzionamento del filtro Stato Partite nella form Gestione Appoggio Pagamenti.( TT01468/25). Modifications in form Gestione Appoggio Pagamenti can have an impact on profile 
 > - SD - modificato test al salvataggio fatture, per il nuovo tipo delle Autofatture TD29.(#TT01693/25) 
 > - SCM - Proponi centro di costo e conto per modificare il tipo fatturato della fattura di acquisto TT01584/25. 
-> - FI – Stampa estratto conto – Corretta anomalia che non permettava la stampa impostando il filtro per agente e per conto cliente.(#TT01719/25) 
+> - FI - Stampa estratto conto - Corretta anomalia che non permettava la stampa impostando il filtro per agente e per conto cliente.(#TT01719/25) 
 > - FI - Mancato riporto Dichiarazione d'intento da Documento SDI.( TT01820/25) 
 > - SD - Risolto errore in fase di evasione ordini in DDT in presenza di articoli gestiti con lotti e numeri seriali.(#TT00900/25) 
 > - FI - la creazione Intra2 acquisti da fatture di acquisto ora valorizza la nazione della partita iva dal campo IsoCode dell’anagrafica e non dalla nazione dell’anagrafica stessa.(#TT01817/25)
