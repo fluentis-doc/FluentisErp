@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ### Patch 545.1-0117- 09/05/2025
 
-> - SD - Corretto l’aggiornamento delle quantità residue durante l’evasione DDT da ricerca Ordini Clienti, in presenza di articoli gestiti a lotti e numeri seriali (#TT00900/25). 
+> - SD - Corretto l’aggiornamento delle quantità residue durante l’evasione DDT da ricerca Ordini Clienti, in presenza di articoli gestiti a lotti e numeri seriali (#TT00900/25)
 
 ### Patch 545.1-0116- 30/04/2025
 > - FI - revisione calcolo importi cash flow su Ordini fornitori.(#TT01073/25) 

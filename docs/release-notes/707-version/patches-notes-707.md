@@ -5,92 +5,93 @@ sidebar_position: 1
 
 ### Patch 707.1-0031 - 08/05/2025
 
+> - SD - Introdotta la possibilità di customizzare la data di creazione dei documenti generati in fase di evasione DDT e Fatture dalla ricerca Ordini Clienti (#TT01863/25)
+> - SD - Quando si crea un ordine di vendita da un'offerta di vendita, lo scambio viene aggiornato (#TT02206/25)
 > - SD - Corretto errore generazione righe duplicate in report ordini a quantità (#TT01991/25) 
 > - WM - corretto calcolo valore totale materiale della stampa distinta base valorizzata che non veniva valorizzato (#TT02077/25) 
 > - PM - corretta gestione numeratori nei vari documenti area progetti - al fine di rispettare la configurazione del periodo annuale/mensile/giornaliero/nessuno (#TT00020/25) 
-> - FI - Registrazioni contabili: attivata la possibilità di modificare il centro aziendale di imputazione per fatture di acquisto estere anche in caso di autofattura contabilizzata e inviata. Modifications in posting analitic tab can have an impact on profiles (rif. TT01112/25) 
-> - MS - Corretto bug nel report Ordini di produzione che non mostrava correttamente il valore della fase esterna. (#TT00242/25) 
-> - WMS Confirm Picking-optimizations(#TT01258/21) 
+> - FI - Registrazioni contabili: attivata la possibilità di modificare il centro aziendale di imputazione per fatture di acquisto estere anche in caso di autofattura contabilizzata e inviata. Modifications in posting analitic tab can have an impact on profiles (#TT01112/25) 
+> - MS - Corretto bug nel report Ordini di produzione che non mostrava correttamente il valore della fase esterna (#TT00242/25) 
+> - WMS - Ottimizzazione conferma Picking (#TT01258/21) 
 > - SD - il campo sconto e sconto finale del widget sconti viene compilato anche in presenza di sconto testata e sconto finale in tutti i documenti area vendite (#TT01455/25) 
 > - MS - Generazione Commesse di produzione - Revisione del metodo di generazione delle commesse da Ordine cliente. Il raggruppamento attua sempre il raggruppamento per Versione (se gestita nella riga articolo dell'ordine cliente).La quantità della riga commessa è la somma delle quantità ordinate considerate nel raggruppamento.La data merce pronta della riga commessa è la minore tra quelle considerate nel raggruppamento. (#TT05586/24) 
-> - EAM - transform Vehicle Plate Number e VehicleRegistrationDate in campi nulabili(#TT02142/25) 
-> - EAM - Correggi Filtro per data sul filtro CreateFromAsset(#TT02144/25) 
-> - Aquisti - Correggere verifica unicita numero seriale(#TT02145/25) 
-> - CO - Nella sezione di filtro del Calcolo Costo, il campo Variante viene ora filtrato sulla base dell’articolo selezionato (#TT02148/25). 
-> - SCM - Implementata la proposta automatica dei lotti di scarico nei documenti di Acquisto. Nel caso in cui sia utilizzata una causale di scarico in un DDT o in una Fattura di Acquisto contenenti articoli gestiti a lotti, se i lotti non sono stati inseriti manualmente nel documento e la Tipologia prelievo è FIFO o Data scadenza, i lotti verranno proposti automaticamente in fase di registrazione a magazzino (#TT01355/25). 
+> - EAM - Resi i campi Targa Veicolo e Data Immatricolazione Veicolo nullable (facoltativi) (#TT02142/25) 
+> - EAM - Correggi Filtro per data sul filtro CreateFromAsset (#TT02144/25) 
+> - SCM - Correggere verifica unicita numero seriale (#TT02145/25) 
+> - CO - Nella sezione di filtro del Calcolo Costo, il campo Variante viene ora filtrato sulla base dell’articolo selezionato (#TT02148/25)
+> - SCM - Implementata la proposta automatica dei lotti di scarico nei documenti di Acquisto. Nel caso in cui sia utilizzata una causale di scarico in un DDT o in una Fattura di Acquisto contenenti articoli gestiti a lotti, se i lotti non sono stati inseriti manualmente nel documento e la Tipologia prelievo è FIFO o Data scadenza, i lotti verranno proposti automaticamente in fase di registrazione a magazzino (#TT01355/25)
 > - SD - Risolta anomalia in fase di inserimento di un Ordine Cliente che causava un errore premendo "Nuova Riga" con il focus ancora attivo sulla riga precedente (#TT02097/25) 
-> - SD: Ricerca offerte filtrando per anagrafica cliente con abilitato flag “Ricerca contatto anche come contatto padre” - estende la ricerca ai contatti crm che hanno come padre un contatto collegato con l’anagrafica ricercata. Modifications in Filter SalesOffer form can have an impact on profiles.(#TT01265/25) 
+> - SD - Ricerca offerte filtrando per anagrafica cliente con abilitato flag “Ricerca contatto anche come contatto padre” - estende la ricerca ai contatti crm che hanno come padre un contatto collegato con l’anagrafica ricercata. Modifications in Filter SalesOffer form can have an impact on profiles (#TT01265/25) 
 > - CO - Scritture per cost driver, revisione assegnazione conti (#TT02108/25) 
 > - FI - Nella procedura Scritture di assestamento, l’impostazione del flag ‘Spunta tutto’ per la sezione superiore restituisce ora un messaggio di spunta su tutte le righe dei Centri di costo. Modifications in first tab of Gestione assestamento can have an impact on profiles. (TT00890/25).  
 > - FI - Revisione assegnazione link di collegamento alle registrazioni di assestamento. Chiusura automatica conti, revisione contabilizzazione (TT02116/25) 
 > - SD - Risolto errore nella visualizzazione degli sconti articoli in griglia, nel caso di modifica manuale del listino nel documento (#TT01936/25) 
-> - SCM - Risolto errore che, dopo la creazione del DDT da un Ricevimento Merci già registrato a magazzino, non visualizzava più la riga di movimento per gli articoli gestiti a lotti (#TT02141/25). 
+> - SCM - Risolto errore che, dopo la creazione del DDT da un Ricevimento Merci già registrato a magazzino, non visualizzava più la riga di movimento per gli articoli gestiti a lotti (#TT02141/25)
 > - SD - Introdotti 2 flag nei parametri per Operatore delle spedizioni per la gestione filtri nel Calendario Spedizioni:  Visualizza tutti gli autisti e Vista settimanale lun-ven (#TT01580/25) 
-> - WM - Nel filtro picking quando clicco il + delle testate dei picking ora vengono visualizzate le righe degli articoli contenuti.Modifications in Filter Picking form can have an impact on profiles. (#TT01443/25) 
-> - SH - Fix other grid summaries in documents when default summary present (TT00322/25) 
-> - SH - Fix aggiornamento totali in ddt vendita(TT01489/25) 
-> - MS - bug fix on updating production job orders state for the production job orders scheduled using a grouping method (#TT00649/25)
+> - WM - Nel filtro picking quando clicco il + delle testate dei picking ora vengono visualizzate le righe degli articoli contenuti. Questa modifica può impattare sui profili (#TT01443/25) 
+> - SH - Corretto il riepilogo di altre griglie nei documenti in presenza di un riepilogo predefinito (#TT00322/25) 
+> - SH - Fix aggiornamento totali in ddt vendita (#TT01489/25) 
+> - MS - Correzione bug nell'aggiornamento dello stato degli ordini di produzione pianificati tramite metodo di raggruppamento (#TT00649/25)
 
 
 ### Patch 707.1-0030 - 30/04/2025
 
-> - VendoPayment export - Fix Create SalesDeliveryNote\SalesInvoice from PickingList, case SalesTurnoverType (#TT001258/21).   
-> - QY - Taratura strumenti - Aprendo un documento di Taratura dall’elenco “Storico rapporti e Certificati di taratura” presente nell’anagrafica dello Strumento di misura, veniva aperto non il documento di Taratura richiesto ma sempre il primo in lista. (#TT01933/25)  
-> - MS - Corretto bug in pianificazione generale sul multiplo del lotto economico. (#TT01522/25)  
-> - SCM - Ottimizzata la procedura di evasione DDT nelle Fatture di Acquisto (#TT01779/25).   
-> - WM– Corretto bug in creazione prototipi quando si inseriva una distinta base già esistente che conteneva un componente con delle note, (#TT01979/25) 
-> - WMS - Corretto bug in gestione spunta e conferma picking che non aggiornava correttamente il lotto dell’articolo nella form di conferma.  (#TT02035/25)  
-> - CO - nel controlling, l’Elaborazione periodi ora va a memorizzare la chiusura utilizzata nelle registrazioni dello Storico registrazioni gestionali create. Modifications in AreaPostingFilterResults form that can have an impact on profiles. ( #TT01919/25)  
-> - FI - all’interno del cespite, la modifica manuale dell’ammortamento calcolato va ora ad aggiornare gli importi a centro di costo così come i campi di deducibilità/indeducibilità. Modifications in fixed asset details tab form that can have an impact on profiles( #TT01809/25)  
-> - FI - la creazione Intra2 acquisti da fatture di acquisto ora valorizza la nazione della partita iva dal campo IsoCode dell’anagrafica e non dalla nazione dell’anagrafica stessa. (#TT01817/25).  
-> - MS - Corretto bug in pianificazione generale che aggiornava la data merce pronta in maniera errata in alcuni casi particolari. (#TT01036/25) 
-> - FI - error in Ro declaration 300 ( TT01632/25)  
-> - WM - Nella maschera di ricerca dei Picking è ora possibile salvare un profilo impostando un filtro sullo stato evasione del picking. Modifications in Filter Picking form that can have an impact on profiles (#TT01190/25)  
-> - SCS - Risolta anomalia nella visualizzazione dell’anteprima righe Ordini di Conto lavoro (#TT01831/25).  
-Modifications in Subcontractro Order result form that can have an impact on profiles  
+> - BZ - Correzione della creazione di Documento di Trasporto/Fattura da Lista di Prelievo, caso SalesTurnoverType (#TT001258/21)
+> - QY - Taratura strumenti - Aprendo un documento di Taratura dall’elenco “Storico rapporti e Certificati di taratura” presente nell’anagrafica dello Strumento di misura, veniva aperto non il documento di Taratura richiesto ma sempre il primo in lista (#TT01933/25)  
+> - MS - Corretto bug in pianificazione generale sul multiplo del lotto economico (#TT01522/25)  
+> - SCM - Ottimizzata la procedura di evasione DDT nelle Fatture di Acquisto (#TT01779/25)   
+> - WM– Corretto bug in creazione prototipi quando si inseriva una distinta base già esistente che conteneva un componente con delle note (#TT01979/25) 
+> - WMS - Corretto bug in gestione spunta e conferma picking che non aggiornava correttamente il lotto dell’articolo nella form di conferma (#TT02035/25)  
+> - CO - nel controlling, l’Elaborazione periodi ora va a memorizzare la chiusura utilizzata nelle registrazioni dello Storico registrazioni gestionali create. La modifica può impattare sui profili ( #TT01919/25)  
+> - FI - all’interno del cespite, la modifica manuale dell’ammortamento calcolato va ora ad aggiornare gli importi a centro di costo così come i campi di deducibilità/indeducibilità. Modifications in fixed asset details tab form that can have an impact on profiles (#TT01809/25)  
+> - FI - la creazione Intra2 acquisti da fatture di acquisto ora valorizza la nazione della partita iva dal campo IsoCode dell’anagrafica e non dalla nazione dell’anagrafica stessa (#TT01817/25)
+> - MS - Corretto bug in pianificazione generale che aggiornava la data merce pronta in maniera errata in alcuni casi particolari (#TT01036/25) 
+> - FI - Correzione errore nella Dichiarazione rumena 300 (#TT01632/25)  
+> - WM - Nella maschera di ricerca dei Picking è ora possibile salvare un profilo impostando un filtro sullo stato evasione del picking. La modifica può impattare sui profili (#TT01190/25)  
+> - SCS - Risolta anomalia nella visualizzazione dell’anteprima righe Ordini di Conto lavoro. La modifica può impattare sui profili (#TT01831/25)
 > - SD - Correzione errore che non inseriva il prezzo di vendita nell’importazione Web API, se nel file di importazione veniva inserita anche la variante (#TT01669/25) 
 > - SD - L’importazione Web API permette l’inserimento dell’ubicazione per lotto per i documenti che lo prevedono (#TT02000/25)  
-> - WM - Nelle registrazioni di magazzino, Sposta articolo, picking, conferma picking e gestione spunta, sono stati implementati i controlli per lo spostamento di un lotto prenotato. (#TT01620/25)  
+> - WM - Nelle registrazioni di magazzino, Sposta articolo, picking, conferma picking e gestione spunta, sono stati implementati i controlli per lo spostamento di un lotto prenotato (#TT01620/25)  
 > - FI - revisione gestione numerazione intrastat, gestione per società (#TT01935/25)  
-> - FI - revisione stampa “Libro cespiti ammortizzabili” e “Schede cespiti” per visualizzazione tipo operazione in lingua. (#TT01929/25)   
-> - FI - Revisione gestione registrazione con incremento cespiti (#TT02082/25, TT01155/25).  
-> - BI - fix loading of ‘Cruscotti’ layouts/profiles (TT01133/25).  
+> - FI - revisione stampa “Libro cespiti ammortizzabili” e “Schede cespiti” per visualizzazione tipo operazione in lingua (#TT01929/25)   
+> - FI - Revisione gestione registrazione con incremento cespiti (#TT02082/25, TT01155/25)  
+> - BI - Correzione del caricamento dei layout/profili dei 'Cruscotti' (#TT01133/25)
 > - SCM - Abilitata la possibilità di effettuare una ricerca multipla per Tipo Fattura, nella ricerca Fatture di acquisto (#TT01939/25)  
-> - SCM - Se Tipo Ordine e Tipo DDT hanno associate causali con ubicazioni diverse, al momento dell'Evasione viene riportata l'ubicazione della causale di magazzino dell'ordine (#TT01993/25).
+> - SCM - Se Tipo Ordine e Tipo DDT hanno associate causali con ubicazioni diverse, al momento dell'Evasione viene riportata l'ubicazione della causale di magazzino dell'ordine (#TT01993/25)
 
 ### Patch 707.1-0029 - 18/04/2025
 
 > - SD - Spedizioni, corretto caso in cui non era possibile aggiungere o eliminare una riga di groupage, e migliorato messaggio di segnalazione in fase di eliminazione spedizione collegata ad altri documenti (#TT01282/25) 
-> - WM - Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo e migliorato lo scorrimento. (#TT01514/25) 
+> - WM - Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo e migliorato lo scorrimento (#TT01514/25) 
 > - SD, SCS - Abilitato l'inserimento di righe nota per offerte, ordini, ddt, fatture e ddt di consegna con prezzo ivato (#TT01811/25) 
 > - FI - revisione gestione causale automatica per giroconto iva in sospensione, escluso messaggio di protocolli non ordinati (#TT01845/25) 
-> - FI - Acquisizione effetti da fatture: revisione del raggruppamento delle scadenze (rif. TT01162/25) 
+> - FI - Acquisizione effetti da fatture: revisione del raggruppamento delle scadenze (#TT01162/25) 
 > - SD - Risolto errore nella cancellazione di un Ordine Cliente creato tramite conversione di un’Offerta, quando il tipo ordine prevedeva la generazione automatica del progetto (#TT01211/25) 
-> - MES - Corretto bug nella stampa delle etichette dal tab etichette del MES, nel quale veniva stampata solamente la prima. (#TT01862/25, #TT01349/25 ) 
+> - MES - Corretto bug nella stampa delle etichette dal tab etichette del MES, nel quale veniva stampata solamente la prima (#TT01862/25, #TT01349/25) 
 > - FI - Scritture di assestamento: revisione procedura di ripristino assestamento. Modifications in rollback assestamento form that can have an impact on profiles (rif. TT01860/25) 
-> - SD - Corretto bug in fase di creazione della fattura tramite la procedura di Creazione da DDT, nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto. (#TT01804/25) 
+> - SD - Corretto bug in fase di creazione della fattura tramite la procedura di Creazione da DDT, nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto (#TT01804/25) 
 > - SD - Stampa portafoglio ordini a quantità - modificato layout stampa ingrandendo alcune label (#TT01251/25) 
 > - FI - Stampa Liquidazione iva periodica - modificato layout in modo che non vada a capo per ogni voce (#TT01838/25) 
 > - SD - Nella maschera di Evasione ordini nei DDT di Vendita, il pulsante Evasione forzata ordine consente di impostare la riga articolo come forzatamente evasa (#TT01603/25) 
 > - WM - Corretto bug in fase di creazione di una nuova distinta base nella versione browser di Fluentis. (#TT01615/25) 
-> - WMS - Corretto bug nelle form conferma picking e gestione spunta che non permetteva di sovraevadere la quantità del picking più di una volta anche se nel tipo picking era attiva la sovrevabilità. (#TT01585/25) 
-> - SH.Dashboards - fix bug when drill down (#TTT01540/25) 
+> - WMS - Corretto bug nelle form conferma picking e gestione spunta che non permetteva di sovraevadere la quantità del picking più di una volta anche se nel tipo picking era attiva la sovrevabilità (#TT01585/25) 
+> - SH - Cruscotti – Correzione bug durante il drill down (#TTT01540/25) 
 > - SD - Risolto errore che, in fase di Evasione di un Ordine cliente in Fattura, applicava lo sconto cliente alle righe di tipo 2 anche se precedentemente rimosso dalla riga dell’ordine (#TT01767/25) 
-> - SCM - Proponi centro di costo e conto per modificare il tipo fatturato della fattura di acquisto TT01584/25. 
-> - WM - Corretto bug nell’import SignalItem tramite webapi nel caso in cui l’articolo avesse una variante. (#TT01904/25) 
+> - SCM - Proponi centro di costo e conto per modificare il tipo fatturato della fattura di acquisto (#TT01584/25)
+> - WM - Corretto bug nell’import SignalItem tramite webapi nel caso in cui l’articolo avesse una variante (#TT01904/25) 
 > - WMS - Corretto bug nelle form carico, scarico articolo e rettifica articolo inerente ad un articolo con zero cifre decimali. 
 > - FI - se la categoria cespite ha la gestione extracontabile/oggettiva, ora l'acquisto da contabilità valorizza automaticamente la scheda. #TT0155/25 
-> - WMS - Corretto bug in conferma picking. (#TT01944/25) 
+> - WMS - Corretto bug in conferma picking (#TT01944/25) 
 > - SD - Implementata la possibilità di effettuare lo Storno di un DDT di Vendita anche quando è già stato valorizzato (#TT01475/25) 
-> - FI - Mancato riporto Dichiarazione d'intento da Documento SDI ( TT01820/25) 
+> - FI - Mancato riporto Dichiarazione d'intento da Documento SDI (#TT01820/25) 
 > - SD - WEB - Corretto errore di visualizzazione nella maschera dei Listini di Vendita (#TT01861/25) 
 > - SCM, SD - Risolta anomalia nel ricalcolo dei riepiloghi documento in presenza di sconto a valore, nel caso di modifica del flag “Prezzo unità di misura alternativa” (#TT01844/25) 
-> - FI - regolarizzazione valuta, quando l'operazione è gestita sulle partite ora è attivo un nuovo parametro per gestire utili e perdite separatamente senza compensarli. Modifications in regolarizzazione valuta form that can have an impact on profiles (#TT01807/25) 
+> - FI - regolarizzazione valuta, quando l'operazione è gestita sulle partite ora è attivo un nuovo parametro per gestire utili e perdite separatamente senza compensarli. La modifica può impattare sui profili (#TT01807/25) 
 > - CO - chiusura infrannuale, nuovi campi per memorizzare la data creazione e l’utente arm di creazione. Modifications in chiusura infrannuale form that can have an impact on profiles (#TT01918/25) 
-> - MES - Corretto bug nel filtro date della form di stampa del Foglio di lavoro. (#TT01928/25) 
-> - WM - Corretto bug nell’export FSItem tramite webapi. Non  venivano esportati correttamente gli extradata delle varianti dell’articolo nel caso in cui il file fosse generato in Json. (#TT01631/25) 
+> - MES - Corretto bug nel filtro date della form di stampa del Foglio di lavoro (#TT01928/25) 
+> - WM - Corretto bug nell’export FSItem tramite webapi. Non  venivano esportati correttamente gli extradata delle varianti dell’articolo nel caso in cui il file fosse generato in Json (#TT01631/25) 
 > - CRM -  Workflow nei contatti crm - risolto avanzamento stato non funzionante in alcune casistiche (#TT01783/25) 
-> - SH.Dashboards: fix exception when visualize dashboard (TT01540/25) 
+> - SH - Risoluzione errore in visualizzazione dashboard (TT01540/25) 
 
 ### Patch 707.1-0028 - 10/04/2025
 
