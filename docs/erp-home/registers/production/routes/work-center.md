@@ -50,7 +50,7 @@ La form si compone di una sezione principale, dove vengono inseriti i seguenti d
 Nella seconda sezione è possibile inserire delle eccezioni per quanto riguarda gli orari di lavoro del centro di lavoro selezionato.
 
 <details>
-<summary> I seguenti campi sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling)  </summary>
+<summary> I seguenti campi sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
 
 **Tipo capacità**:            
 **Tipo schedulazione centro**:            

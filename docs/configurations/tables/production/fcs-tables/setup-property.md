@@ -1,6 +1,6 @@
 ---
 title: Attributi attrezzaggio
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Attributi attrezzaggio**.
@@ -23,6 +23,6 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** dell'attrezzatura.
+Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
