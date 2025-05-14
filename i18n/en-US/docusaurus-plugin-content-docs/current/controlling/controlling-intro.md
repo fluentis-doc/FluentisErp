@@ -39,7 +39,7 @@ import Link from '@docusaurus/Link';
             <p>- for manual management</p>
     </div>
 <div className="card">
-###     <Link to="/docs/controlling/controlling-recordings/controlling_recording_intro">Managerial Accounting</Link>
+###     <Link to="/docs/controlling/controlling-recordings/controlling-recording-intro">Managerial Accounting</Link>
         <p>This module includes all the procedures of true Controlling</p>
 <p>**Journal entries**: an initial entry journal of physical data or records from the analysis area.</p>
         <p><Link to="/docs/controlling/controlling-recordings/first-note/recording-physical-movements" className="bold-link">Recording physical movements</Link>: valued from production/project or manually</p>

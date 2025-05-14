@@ -1,5 +1,5 @@
-- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse (se si parte direttamente con l'inserimento dell'articolo facendo doppio click sulla colonna 'Articolo' o digitando direttamente il codice articolo, la sua *classe*, il *codice* e il *tipo riga - Articolo codificato* vengono inseriti automaticamente):
-> **Articolo codificato**: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
-> **Articolo non-codificato**: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino. <br />
-> **Articolo spese**: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino. <br />
-> **Articolo note**: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
+- **Tip linie** oferă posibilitatea de a selecta, din combo-box, articole cu caracteristici diferite (dacă începeți direct cu introducerea articolului făcând dublu click pe coloana 'Articol' sau tastând direct codul articolului, *clasa*, *codul* și *tipul de linie - Articol codificat* vor fi introduse automat):  
+> **Articol codificat**: sunt articolele codificate în registru și pot fi contabilizate în contabilitatea analitică și înregistrate în gestiune.  
+> **Articol ne-codificat**: sunt articole descriptive care pot fi contabilizate în contabilitatea analitică, dar nu pot fi mișcate în gestiune.  
+> **Articol cheltuieli**: sunt articole codificate sau ne-codificate și sunt însumate distinct în rezumatele documentelor; dacă articolul de cheltuieli este codificat și de interes fiscal, va fi mișcat în gestiune, iar dacă este ne-codificat sau nu este de interes fiscal, nu va fi mișcat în gestiune.   
+> **Articol note**: sunt note descriptive prezentate în listarea documentului; nu afectează contabilitatea și gestiunea.

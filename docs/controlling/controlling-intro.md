@@ -39,7 +39,7 @@ import Link from '@docusaurus/Link';
             <p>- per gestioni manuali</p>
     </div>
 <div className="card">
-###     <Link to="/docs/controlling/controlling-recordings/controlling_recording_intro">Controllo di gestione</Link>
+###     <Link to="/docs/controlling/controlling-recordings/controlling-recording-intro">Controllo di gestione</Link>
         <p>In questo modulo abbiamo tutte le procedure del vero e proprio Controlling</p>
         <p>**Prima nota**: una prima nota di entry di dati fisici o di registrazioni dell'area di analisi.</p>
         <p><Link to="/docs/controlling/controlling-recordings/first-note/recording-physical-movements" className="bold-link">Registrazione movimenti fisici</Link>: valorizzata da produzione/progetto o manualmente</p>

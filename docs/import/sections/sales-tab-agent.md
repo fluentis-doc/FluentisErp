@@ -1,5 +1,4 @@
-- **Agente**: l'agente collegato con la relativa provvigione per l'articolo selezionato; il dato corrisponde a quello presente in *Testata > tab Agenti*. La percentuale può essere cambiata.
+- **Agent (Agente)**: agentul asociat cu comisionul corespunzător pentru articolul selectat; datele corespund celor din *Antet > tab Agenți. Procentul poate fi schimbat.
 
-*Pulsante specifico*
-
-> **Cancella agenti**: permette di cancellare l' agente associato ad un articolo.
+#### Buton specific  
+> **Șterge agent**: permite ștergerea agentului asociat unui articol.

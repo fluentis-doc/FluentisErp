@@ -58,10 +58,11 @@ const features = [
       description: (
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           <li><a href='docs/controlling/mid-year-closures/general-overview'><Translate>Chiusure infrannuali</Translate></a></li> 
-          <li><a href='docs/controlling/reclassifications/reclassifications-management'><Translate>Riclassificazioni</Translate></a></li> 
-          <li><a href='docs/controlling/budget/general-overview'><Translate>Budgeting</Translate></a></li> 
-          <li><a href='docs/controlling/controlling-recordings/first-note/recording-physical-movements'><Translate>Contabilità gestionale</Translate></a></li> 
-          <li><a href='docs/controlling/cost-calculation/cost'><Translate>Calcolo costo</Translate></a></li> 
+          <li><a href='docs/controlling/reclassifications/reclassification-overview'><Translate>Riclassificazioni</Translate></a></li> 
+          <li><a href='docs/controlling/budget/general-overview'><Translate>Budget</Translate></a></li> 
+          <li><a href='docs/controlling/controlling-recordings/controlling-recording-intro'><Translate>Contabilità gestionale</Translate></a></li> 
+          <li><a href='docs/controlling/sales-forecast/sales-forecast-intro'><Translate>Previsioni di vendita</Translate></a></li> 
+          <li><a href='docs/controlling/controlling/cost-calculation/product-cost-intro'><Translate>Calcolo costo</Translate></a></li> 
         </ul>
        ),    
       },

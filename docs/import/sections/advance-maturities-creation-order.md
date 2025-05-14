@@ -1,15 +1,7 @@
-Nella testata dell’ ordine è necessario impostare due righe con le condizioni di pagamento, una riga gestirà l’ anticipo e la seconda riga avrà l’ impostazione per la residua percentuale.
+În antetul ordinului, trebuie să fie configurate două linii cu condițiile de plată: una pentru avans, cealaltă pentru procentul restant.
 
-Si veda in dettaglio l'immagine.
+În rezumatul ordinului, va fi afișată scadența avansului care se poate trimite către contabilitate, dacă se dorește, prin intermediul butonului **Creare angajament avans**.
 
-![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order.png)
+Utilizarea acestui buton va deschide un form în care utilizator va trebui să insereze descrierea și tipul de document care va fi asociat la angajamentul extra-contabil care va fi creat.
 
-Questo porterà nei riepiloghi dell’ ordine la presenza di una scadenza di anticipo da inviare alla contabilità, se lo si desidera, tramite l’ apposito pulsante ***Creazione partita di anticipo:***
-
-![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation.png)
-
-Premendo questo pulsante si aprirà una maschera nella quale verrà richiesto all’ utente due dati aggiuntivi: una descrizione da riportare in gestione dell’ anticipo e un tipo documento da associare alla partita extra-contabile che sarà creata.
-
-![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation-popup.png)
-
-Il risultato sarà la creazione di una partita extra-contabile per l’ importo e la scadenza dell’ ordine. Questa operazione sarà visibile nella maschera specifica di gestione partite d’ anticipo (in commento).
+Rezultatul va fi crearea unui angajament extra-contabil pentru totalul și scandeța ordinului. Această operațiune va fi vizibilă în fereastra specifică pentru gestionarea abgajamentelor avans.
