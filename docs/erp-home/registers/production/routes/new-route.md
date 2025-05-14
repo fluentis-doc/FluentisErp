@@ -81,6 +81,21 @@ Tutte le fasi esterne devono sempre avere i flag **Fase produttiva** e **Fase mo
 
 **Descrizione Centro di Lavoro**, **Descrizione macchina**, **Descrizione Gruppo Manodopera**: in questi campi si troveranno le descrizioni dei codici riferiti alle varie sezioni elencate.
 
+**Sito produzione**: indica il [Sito di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) del centro di lavoro.
+
+**Descrizione sito produzione**: indica la descrizione del [Sito di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) del centro di lavoro.
+
+<details>
+<summary> I seguenti campi sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
+   
+**Tipo schedulazione centro**:            
+**Qualifica attrezzaggio**: indica la qualifica lavoratori necessaria per eseguire attrezzaggio macchine del centro;        
+**Qualifica lavorazione**: indica la qualifica lavoratori necessaria per eseguire la lavorazione nel centro;       
+**Numero operai attrezzaggio**: indica il numero di lavoratori necessario per eseguire l'attrezzaggio delle macchine del centro;          
+**Codice accorpamento**: le fasi aventi lo stesso codice di accorpamento possono essere raggruppate per essere lavorate in una stessa sessione della macchina, in base alla regola di accorpamento definita per essa. Tutte le fasi aventi lo stesso codice di accorpamento nello stesso centro di lavoro, devono avere gli stessi dati (tempo di lavorazione, numero operatori etc.). Se così non fosse, lo schedulatore in fase di importazione segnerebbe l'errore.
+
+</details>
+
 C'è poi una terza sezione in cui si andranno ad indicare i dati più precisi in riferimento alla macchina, agli operai e ai tempi:
 
 **Numero Macchine**: indica il numero di macchine necessarie per lo svolgimento della fase;
@@ -118,6 +133,17 @@ C'è poi una terza sezione in cui si andranno ad indicare i dati più precisi in
 **Alternative**: in questo tabulatore potranno essere inserite delle fasi alternative che verranno considerate, in base alla priorità assegnata, dalle procedure della [Pianificazione generale](/docs/planning/ms-master-scheduling/general-schedule) o dall'[M.R.P.](/docs/planning/ms-master-scheduling/mrp/), se i relativi flag **Considera la fasi alternative**, presenti nei parametri delle procedure sono attivi durante la loro esecuzione;      
 
 **Extra data fasi / Extra data:** in questi due tab si andranno ad inserire, rispettivamente, gli extra data per ogni fase e gli extra data legati al ciclo stesso, selezionandoli tramite combo tra quelli precodificati nella relativa tabella *Extradata* (Utility > Extradata). Per inserire un extra data bisognerà cliccare il tasto destro del mouse e selezionare la voce aggiungi nuovo extra data con la possibilità di scegliere se inserirlo al primo livello, oppure se ci sono già extra data inseriti scegliere se si vuole inserire un extra data figlio all'extra data già esistente; in questo modo comparirà una nuova riga in cui poter procedere con l'inserimento.
+
+<details>
+<summary> I seguenti tab sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
+
+**Macchine alternative**: se la lavorazione va eseguita in un centro con macchine e nessuna di queste è riportata nella fase, lo schedulatore potrà utilizzare qualsiasi macchina del centro. Se invece la lavorazione non può essere eseguita su qualunque macchina del centro (perché non tutte possono eseguire tale lavorazione), allora tramite questo tab si può fornire l'elenco delle sole macchine consentite (in unione con quella eventualmente indicata sulla fase). Per ciascuna macchina si può indicare il relativo tempo di lavorazione, di attrezzaggio, il numero operatori di lavorazione e di attrezzaggio, se questi valori cambiano al variare della macchina  sulla quale viene eseguita la lavorazione.
+
+**Risorse**: le risorse comuni necessarie ad eseguire una lavorazione sono le macchine ed i lavoratori, che vengono gestiti a capacità finita dallo schedulatore. Tramite questo tab si possono indicare ulteriori tipi di risorse produttive necessarie e vincolanti per la lavorazione, e la relativa quantità. Ciascuna di queste risorse è gestita a capacità finita. Tipici esempi sono gli stampi, utensili di lavorazione, mezzi di sollevamento, etc. Se viene specificata una macchina, significa che quel tipo di risorsa è necessario solo se lo schedulatore decide di utilizzare tale macchina. Se il campo macchina viene lasciato vuoto, allora quel tipo di risorsa è necessario indipendentemente dalla macchina scelta dallo schedulatore.
+
+**Valori attributi di attrezzaggio**: tramite questo tab si associano gli [Attributi di attrezzaggio](/docs/configurations/tables/production/fcs-tables/setup-property) con relativo valore, alle fasi da lavorare su macchine con tempi di attrezzaggio rilevanti. 
+
+</details>
 
 *Pulsanti specifici*:
 

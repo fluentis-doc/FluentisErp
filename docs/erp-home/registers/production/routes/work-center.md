@@ -43,8 +43,26 @@ La form si compone di una sezione principale, dove vengono inseriti i seguenti d
 **Data ultima modifica**: indica la data di ultima modifica del record;  
 **Descrizione macchina**: indica la descrizione della macchina;  
 **Descrizione gruppo Manodopera**: indica la descrizione del gruppo di manodopera;  
-**Descrizione reparto**: indica la descrizione del reparto;  
+**Descrizione reparto**: indica la descrizione del reparto;      
+**Sito produzione**: indica il [Sito di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) del centro di lavoro;       
+**Descrizione sito produzione**: indica la descrizione del [Sito di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) del centro di lavoro.
 
 Nella seconda sezione è possibile inserire delle eccezioni per quanto riguarda gli orari di lavoro del centro di lavoro selezionato.
+
+<details>
+<summary> I seguenti campi sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling)  </summary>
+
+**Tipo capacità**:            
+**Tipo schedulazione centro**:            
+**Qualifica attrezzaggio**: indica la qualifica lavoratori necessaria per eseguire attrezzaggio macchine del centro;        
+**Qualifica lavorazione**: indica la qualifica lavoratori necessaria per eseguire la lavorazione nel centro;       
+**Numero operai attrezzaggio**: indica il numero di lavoratori necessario per eseguire l'attrezzaggio delle macchine del centro;          
+**Numero massimo operai lavorazione**: Indica il numero massimo lavoratori (solo per centro di tipo panca flessibile). Lo schedulatore impiegherà un numero di lavoratori minimo pari al numero operatori e massimo pari a questo valore;       
+**Numero massimo tasks**: indica il massimo numero di task contemporaneamente attivi schedulabile. Se non compilato, il limite sarà dato dal numero macchine, o dal numero lavoratori necessari, o dalle risorse di produzione richieste. Se per esempio il centro ha 10 macchine ma si vuole che non ne vengano usate più di 5 contemporaneamente, impostare a 5 questo campo;      
+**Ore mediamente lavorate**: indica le ore mediamente lavorate in un giorno. Per i centri di lavoro che non hanno macchine, questo valore verrà considerato come capacità, mentre nel caso di centri con macchine, verrà considerata la somma delle capacità delle stesse, giorno per giorno in base ai relativi turni di lavoro ed eccezioni di calendario;     
+**Tempo buffer**: indica le ore buffer desiderato. Lo schedulatore cercherà di creare una coda di attività in attesa di essere lavorate presso questo centro, pari al valore di questo campo. Serve per applicare un principio chiave della "theory of constraints", ovvero far si che i centri di lavoro che sono dei colli di bottiglia, non risultino mai inattivi a causa di mancanza di materiale da lavorare, come conseguenza di una cattiva programmazione delle attività.
+
+</details>
+
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
