@@ -1,9 +1,9 @@
-Form-ul permite căutarea tuturor documentelor cu scopul de a le vizualiza, modifica și eventual șterge, sau de a insera un document nou; fereastra este compusă dintr-o zonă de filtrare și un tabel de rezultate.
+La form di Ricerca dei documenti consente di ricercare tutti i documenti con lo scopo di visualizzarli, modificarli, ed eventualmente cancellarli oppure procedere all'inserimento di un nuovo documento; la finestra si compone di un'area di filtro e da una griglia di risultato.
 
-Odată ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** din *Ribbon bar* pentru a vizualiza rezultatele.
+Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
 
-Pentru a deschide detaliile unui document, este suficient să-l selectați și să faceți dublu clic sau să faceți clic pe butonul **Modifică** (permite accesarea detaliilor și modificarea acestora) sau pe butonul **Vizualizare** (permite accesarea detaliilor și vizualizarea acestora, dar fără a le putea modifica).
+Per aprire i dettagli di un documento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
 
-*Detalii suplimentare*:  
-[Funcționalități, butoane și câmpuri comune](/docs/guide/common)  
-[Adugarea de noi câmpuri în formularele de căutare](/docs/object-navigator/load-request-object)
+*Vedi anche*:  
+[Funzionalità, pulsanti e campi comuni](/docs/guide/common)  
+[Aggiungere nuovi campi nelle form di ricerca](/docs/object-navigator/load-request-object)

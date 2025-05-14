@@ -1,1 +1,1 @@
-I dati si inseriscono [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), con l'ausilio del [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure possono essere proposti dalle procedure collegate.
+Datele se introduc [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), cu ajutorul [help-ului de câmp](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau pot fi propuse de procedurile conectate.

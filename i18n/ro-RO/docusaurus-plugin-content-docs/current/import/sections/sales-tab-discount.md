@@ -1,7 +1,12 @@
-**Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica cliente, dalla soluzione di pagamento assegnata al documento, dal listino dall'associazione listino-cliente. Tutti i dati proposti sono modificabili.
+În acest tab sunt afișate ofertele de prețuri și reducerile asociate liniei articolului.
 
-**Valori listino**: viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità, con condizioni particolari di vendita (es. scaglione di sconto) assegnate all'articolo nel listino.
+În secțiunea **Oferte de prețuri** este prezentată lista din care a fost preluat articolul, cu datele de început și sfârșit ale valabilității.  
+În **Tip eşalon** este propus eșalon-ul implicit pe care clientul îl are în registru asociat pentru această ofertă de prețuri; în cazul în care nu există niciun eșalon implicit, se poate selecta manual un eșalon. Amintim că ofertele de prețuri pot avea asociate diferite eșaloane de reduceri pentru același articol (reduceri pentru cantitate, reduceri generale etc.).
 
-*Pulsante specifico*
+Flagul **Preț manual** inactiv înseamnă că oferta de prețuri, prețul și reducerile liniei sunt toate calculate automat; dacă utilizatorul schimbă unul dintre acestea, flagul se activează.
 
-> **Cancella sconto**: permette di cancellare lo sconto associato all'articolo selezionato nella griglia soprastante.
+În tabelul **Discounturi** sunt prezentate toate reducerile asociate articolului, fiecare cu baza sa de calcul și de alocare. Reducerile pot fi preluate: din registrul clientului, din soluția de plată asociată documentului, din oferta de prețuri prin asocierea ofertei de prețuri cu clientului. Toate datele propuse sunt modificabile.
+
+#### Buton specific
+
+> **Şterge discount**: permite ștergerea discountului asociat articolului selectat în tabelul superior.

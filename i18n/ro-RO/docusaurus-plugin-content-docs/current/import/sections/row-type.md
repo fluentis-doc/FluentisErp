@@ -1,8 +1,5 @@
-**Tip linie** ofera posibilitatea de a selecta tipuri diferite de articole:
-
->**Articol codificat**: se refera la articole codificate in registrul de articole al societatii, deci articole care influenteaza atat contabilitatea, cat si gestiunea;
->**Articol necodificat**: se refera la articole care nu sunt codificate in registrul de articole al societatii, influenteaza contabilitatea, dar nu si gestiunea;
->**Articol cheltuieli**: se refera la articole care sunt sau nu codificate, sunt gestionate separat in rezumatul documentelor si nu au miscari in gestiune;
->**Articol note**: este o simpla nota, nu influenteaza contabilitatea si nici gestiunea.
-
-Se poate renunta la inserarea pas cu pas a acestor date, pentru ca, in momentul in care inserati direct o clasa sau o matricola, tipul liniei 'codificat' este selectat automat. In momentul in care il inserati, programul preia automat articolul asociat, cu toate datele din registrul sau. Inserarea clasei sau matricolei se poate realiza manual sau utilizand "Help-ul Articole" (dublu clic pe banda galbena) care va va propune toate datele relative, inserate in Registrul Articole. Dupa ce ati inserat articolul, descrierea lui va fi preluata automat din registru. Daca articolul are variante, trebuie sa selectati varianta corespunzatoare din combobox Variante. Lotul, pentru articolele gestionate cu loturi, se genereaza automat sau poate fi inserat manual.
+- **Tip linie** oferă posibilitatea de a selecta, din combo-box, articole cu caracteristici diferite (dacă începeți direct cu introducerea articolului făcând dublu click pe coloana 'Articol' sau tastând direct codul articolului, *clasa*, *codul* și *tipul de linie - Articol codificat* vor fi introduse automat):  
+> **Articol codificat**: sunt articolele codificate în registru și pot fi contabilizate în contabilitatea analitică și înregistrate în gestiune.  
+> **Articol ne-codificat**: sunt articole descriptive care pot fi contabilizate în contabilitatea analitică, dar nu pot fi mișcate în gestiune.  
+> **Articol cheltuieli**: sunt articole codificate sau ne-codificate și sunt însumate distinct în rezumatele documentelor; dacă articolul de cheltuieli este codificat și de interes fiscal, va fi mișcat în gestiune, iar dacă este ne-codificat sau nu este de interes fiscal, nu va fi mișcat în gestiune.   
+> **Articol note**: sunt note descriptive prezentate în listarea documentului; nu afectează contabilitatea și gestiunea.

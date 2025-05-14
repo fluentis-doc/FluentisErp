@@ -1,7 +1,9 @@
-Permite căutarea tuturor documentelor cu scopul de a le vizualiza, modifica, și eventual șterge. Permite și inserarea unui document nou.  
-Fereastra se compune dintr-o zona de filtrare și un grid de rezultate.  
+Form-ul permite căutarea tuturor documentelor cu scopul de a le vizualiza, modifica și eventual șterge, sau de a insera un document nou; fereastra este compusă dintr-o zonă de filtrare și un tabel de rezultate.
 
-După inserarea tuturor filtrelor dorite, va fi suficient să faceți clic pe butonul **Caută** din *Ribbon bar* pentru ca programul să afișeze rezultatele în gridul inferior.  
-Pentru a deschide un document, faceți dublu clic pe rând-ul relativ sau clic pe butonul **Modifică** (pentru a-l modifica) sau pe **Vizualizează** (dacă nu se dorește modificarea).
+Odată ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** din *Ribbon bar* pentru a vizualiza rezultatele.
 
-Pentru mai multe detalii despre funcționarea comună a form-urilor, citiți [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
+Pentru a deschide detaliile unui document, este suficient să-l selectați și să faceți dublu clic sau să faceți clic pe butonul **Modifică** (permite accesarea detaliilor și modificarea acestora) sau pe butonul **Vizualizare** (permite accesarea detaliilor și vizualizarea acestora, dar fără a le putea modifica).
+
+*Detalii suplimentare*:  
+[Funcționalități, butoane și câmpuri comune](/docs/guide/common)  
+[Adugarea de noi câmpuri în formularele de căutare](/docs/object-navigator/load-request-object)

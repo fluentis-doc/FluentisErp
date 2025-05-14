@@ -1,1 +1,1 @@
-Este afișată lista cu **Extra data** asociate articolului, cu posibilitatea de a adăuga date suplimentare, utile doar pentru documentul selectat. Flag-ul *De listat* permite alegerea datelor suplimentare care trebuie imprimate.
+Viene riportata la lista degli **Extra data** collegati all'articolo, con la possibilità di aggiungere nuovi extra data utili solo per il documento in oggetto. Il flag *Da stampare* permette di scegliere quali extra data stampare.

@@ -1,27 +1,27 @@
-**Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli;
+- **Valoare brută articole**: reprezintă suma valorilor articolelor.
 
-**Acconto**: rappresenta il valore dell' eventuale acconto ricevuto per il documento;
+- **Avans**: reprezintă valoarea eventualului avans primit pentru document.
 
-**Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*
+- **Valoare articole promo**: reprezintă suma articolelor de tip omagiu incluse în tab *Articole*.
 
-**Totale sconti applicati**: rappresenta il valore totale dei sconti applicati sugli articoli, ma senza i sconti finali. 
+- **Total discounturi aplicate**: reprezintă valoarea totală a reducerilor aplicate articolelor, excluzând reducerile finale.
 
-**Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*; 
+- **Valoare netă articole**: *Valoare brută articole* – *Total discounturi aplicate*.
 
-**Totale sconti finali**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli; 
+- **Discounturi finale articole**: reprezintă valoarea reducerilor finale exprimate ca procent din valoarea brută a articolelor.
 
-**Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*;
+- **Valoare netă discounturi finale**: *Valoare netă articole* - *Total discounturi finale*.
 
-**Spese non documentate**: rappresenta il valore delle spese inserite nel tab precedente come articoli di *Tipo spese*; 
+- **Total articole cheltuieli**: reprezintă valoarea cheltuielilor incluse în tab-ul anterior ca articole de *Tip cheltuieli*.
 
-**Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*; 
+- **Cheltuieli de încasare**: reprezintă suma cheltuielilor de încasare incluse în tabelul *Cheltuieli*.
 
-**Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*; 
+- **Cheltuieli timbru**: reprezintă suma cheltuielilor de timbru incluse în tabelul *Cheltuieli*.
 
-**Spese documentate**: rappresenta il valore delle spese inserite nella griglia *Spese*; 
+- **Total cheltuieli/discounturi/majorări**: reprezintă valoarea totală a cheltuielilor incluse în tabelul *Cheltuieli*.
 
-**Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale spese non documentati* + *Totale spese documentati*;
+- **Bază impozitare**: *Valoare netă articole* – *Discounturi finale* + *Total articole cheltuieli* + *Total cheltuieli/discounturi/majorări*.
 
-**Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA;
+- **TVA**: reprezintă suma valorilor conținute în rezumate TVA.
 
-**Totale**: *Imponibile* + *IVA*.
+- **Total**: *Baza impozitării* + *TVA*.
