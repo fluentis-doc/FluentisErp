@@ -1,6 +1,6 @@
 ---
 title: K.P.I. F.C.S.
-sidebar_position: 9
+sidebar_position: 3
 ---
 
 Questa form riporta i valori dei principali key performance indicators.        
