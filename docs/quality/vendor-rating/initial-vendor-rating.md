@@ -77,10 +77,21 @@ L'elenco si compone delle seguenti informazioni:
 > **Sequenza**: è la sequenza di attuazione delle *domande/attività*.   
 > **Descrizione/Domanda**: annotazioni libere sull'argomento.   
 > **Risposta**: annotazioni libere sull'argomento.   
+> **Categoria**: è la *Categoria* associata alla *Descrizione/Domanda* se ripresa dalla *Check-list*.   
 > **Valutazione attesa**: è il *Livello di valutazione* minimo richiesto per la valutazione.   
+> **Peso (%)**: indica il *peso* (importanza), espresso in percentuale, associato alla *Descrizione/Domanda* se ripresa dalla *Check-list*.   
 > **Valutazione rilevata**: è il *Livello di valutazione* valutato.   
 > Il carattere diventa *Rosso* se la *Valutazione rilevata* è inferiore alla *Valutazione attesa*.   
+> **Punteggio Peso**: è il *Punteggio* dato automaticamente dal sistema alla valutazione data alla *Descrizione/Domanda* specifica sulla base del *Livello* della *Valutazione rilevata*;   
+> questo punteggio viene calcolato (Punteggio Peso" = EvaluationLevelDetected.Level / 100 * CheckListQuestion.WeightPercentage).   
 > **Note**: annotazioni libere.
+
+
+:::tip Metodo utilizzato per il calcolo del Punteggio Peso   
+Per ogni singola *Descrizione/Domanda*, dove sono state inserite le informazioni di: *Peso (%)* e *Valutazione rilevata* viene applicata la seguente espressione:   
+- **Punteggio Peso** = **Livello** della **Valutazione rilevata** / **100** * **Peso (%)**;     
+- **Punteggio Peso** = **15** / **100** * **20** = **3**.   
+:::
 
 
 ### Extra data

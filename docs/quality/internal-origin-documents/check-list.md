@@ -62,11 +62,11 @@ L'elenco si compone delle seguenti informazioni:
 > **Domanda**: annotazioni libere sull'argomento.   
 > **Categoria**: alla *Domanda* è possibile associare una *Categoria*.   
 > **Livello di valutazione**: è il *Livello di valutazione competenza* richiesto;   
-questo viene considerato nelle gestioni delle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating) e [*Valutazioni periodiche su Non conformità*](/docs/quality/vendor-rating/vendor-rating-on-nc).   
+> questo viene considerato nelle gestioni delle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating) e [*Valutazioni periodiche su Non conformità*](/docs/quality/vendor-rating/vendor-rating-on-nc).   
 > **Attiva**: indica se la *domanda/attività* è ancora valida e utilizzabile.   
-> **Peso %**: indica il *peso* (importanza), espresso in percentuale, dato alla domanda; la percentuale è da intendersi per *Categoria*;   
-il controllo del 100% dato alla Categoria è possibile effettuarlo tramite la pressione del pulsante *Controlla pesi %*;   
-questo valore può essere considerato nella gestione delle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating).   
+> **Peso (%)**: indica il *peso* (importanza), espresso in percentuale, dato alla domanda; la percentuale è da intendersi per *Categoria*;   
+> il controllo del 100% dato alla Categoria è possibile effettuarlo tramite la pressione del pulsante *Controlla pesi %*;   
+> questo valore può essere considerato nella gestione delle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating).   
 > **Data inizio**: è la data dalla quale la *domanda/attività* è valida e utilizzabile.   
 > **Data fine**: è la data dalla quale la *domanda/attività* cessa di essere valida e utilizzabile.   
 > **Note**: annotazioni libere.
