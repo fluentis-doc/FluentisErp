@@ -13,7 +13,7 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/quality/calibration-tools/measurement-tools/measurement-tool-management">Strumenti di misura</Link>
-        <p>In questa anagrafica vengono memorizzati gli strumenti di misura utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.</p>
+        <p>In questa FANTASTICA anagrafica vengono memorizzati gli strumenti di misura utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.</p>
         <p>Allo strumento di misura è possibile associare le informazioni di acquisto, di responsabilità, le proprietà tecniche/meccaniche, di ubicazione e di taratura.</p>
         <p>Se lo strumento è soggetto a taratura e la taratura è interna, è possibile definire quali sono le attività che devono essere fatte e i valori da rilevare affinché la taratura dia esito positivo.</p>
         <p>Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile definire qual e l'ente terzo che effettuerà la taratura.</p>
