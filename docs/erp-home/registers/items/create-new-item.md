@@ -488,3 +488,15 @@ Il tab è costituito da due griglie. Nella prima griglia viene inserita la varia
 Le informazioni che si trovano nella griglia sono le uniche informazioni che differenziano la variante dall'articolo principale; per tutte le informazione che non sono presenti nella griglia basterà fare affidamento a quelle presenti nei vari tab di quell'articolo.
 
 Nella griglia sottostante si potrà andare ad inserire, se presente, anche il barcode specifico di quella variante. 
+
+## 25. **Pittogrammi**
+
+In questo tab è possibile associare uno o più pittogrammi  agli articoli presenti in anagrafica.        
+I pittogrammi possono essere utilizzati per rappresentare visivamente caratteristiche specifiche dell’articolo, come materiali, destinazione d’uso, certificazioni, o altre proprietà rilevanti.            
+In particolare, questa sezione permette di indicare chiaramente eventuali simboli di pericolosità, conformemente alle normative vigenti, facilitando così il riconoscimento immediato di articoli che necessitano di particolare attenzione nella gestione, nello stoccaggio e nella movimentazione.       L’associazione dei pittogrammi contribuisce a migliorare la comunicazione visiva delle informazioni di sicurezza e a supportare la corretta gestione dei prodotti all’interno dei diversi processi aziendali.
+
+Per inserire un nuovo pittogramma è sufficiente cliccare sulla prima riga libera e selezionarlo tra quelli inseriti nella tabella [Pittogrammi](/docs/configurations/tables/general-settings/pictograms).
+Inoltre, è possibile anche inserire una nota specifica.
+
+
+
