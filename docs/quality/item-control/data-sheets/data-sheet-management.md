@@ -147,9 +147,10 @@ L'elenco si compone delle seguenti informazioni:
 
 
 ### Clienti
-Contiene i *Clienti* interessati agli *Articoli* con *Proprietà* simili ed elencati nei due rispettivi elenchi.   
+Contiene i *Clienti* e *Clienti finali* (Contatti) interessati agli *Articoli* con *Proprietà* simili ed elencati nei due rispettivi elenchi.   
 L'elenco si compone delle seguenti informazioni:   
-> **Cliente**: è la ragione sociale del *Cliente*. Le *Proprietà* sono personalizzate per i *Clienti*/*Articoli associati*.   
+> **Cliente**: è la ragione sociale del *Cliente*.   
+> **Cliente finale**: è il codice e descrizione del *Cliente finale*.   
 > **Note**: annotazioni libere.   
 
 
