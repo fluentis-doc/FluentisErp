@@ -40,7 +40,9 @@ Invece, con un doppio click su un elemento del grafico viene aperto un pop-up co
 *Pulsanti specifici*:  
 
 > **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionando la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
-> **Cambio date**: permette di variare la data di inizio della fase selezionata;         
+> **Cambio date**: permette di variare la data di inizio della fase selezionata;        
+> **Attiva tassativo**: permette di attivare il flag **Tassativo** all'interno di tutti gli ordini selezionati;       
+> **Disattiva tassativo**: permette di disattivare il flag **Tassativo** all'interno di tutti gli ordini selezionati;         
 > **Zoom in**: permette di diminuire il dettaglio temporale nel grafico;          
 > **Zoom alla finestra**: permette di visualizzare il dettaglio temporale nel grafico sulla base delle *Date Inizio/Fine* indicate nei filtri;                    
 > **Zoom out**: permette di aumentare il dettaglio temporale nel grafico;              

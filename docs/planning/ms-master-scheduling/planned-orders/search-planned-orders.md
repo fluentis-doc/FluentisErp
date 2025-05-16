@@ -12,6 +12,8 @@ import SearchForm from './../../../import/sections/search-form.md'
 > [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;             
 > [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
 > [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> **Attiva tassativo**: permette di attivare il flag **Tassativo** all'interno di tutti gli ordini pianificati selezionati;       
+> **Disattiva tassativo**: permette di disattivare il flag **Tassativo** all'interno di tutti gli ordini pianificati selezionati.   
 
 *Campi specifici*:
 

@@ -20,6 +20,8 @@ La colonna *Costificata*, se il flag è attivo, indica che la commessa ha già a
 > **Modifica data commessa**: permette di variare la *data di merce pronta* e *di prevista fine* delle commesse selezionate andando ad indicare semplicemente la data nel pop up e confermando;  
 > **Duplica commessa**: permette di duplicare la commessa selezionata;         
 > **Cambia priorità**: consente di cambiare la priorità assegnata alla commessa;               
-> **Sequenza commesse**: tramite questa funzionalità si può accedere alla sequenza commesse, all'interno della quale si potranno visualizzare le commesse in base alla sequenza che gli è stata attribuita, anche tramite un grafico;                  
-> **Capacità centri di lavoro**: tramite questo pulsante di accede alla finestra relativa alla capacità dei centri di lavoro; in questa finestra è possibile visualizzare filtrando per il centro di lavoro e per il periodo di tempo desiderato l'impegno di tale centro tramite un grafico e l'elenco delle commesse di produzioni previste in produzione;             
-> **Dettagli ordine di produzione**: permette di visualizzare i dettagli dell'ordine.
+> **Attiva tassativa**: permette di attivare il flag **Tassativo** all'interno di tutte le commesse selezionate;      
+> **Disattiva tassativa**: permette di disattivare il flag **Tassativo** all'interno di tutte le commesse selezionate;      
+> **Capacità centri di lavoro**: tramite questo pulsante di accede alla finestra relativa alla capacità dei centri di lavoro; in questa finestra è possibile visualizzare filtrando per il centro di lavoro e per il periodo di tempo desiderato l'impegno di tale centro tramite un grafico e l'elenco delle commesse di produzioni previste in produzione.            
+
+

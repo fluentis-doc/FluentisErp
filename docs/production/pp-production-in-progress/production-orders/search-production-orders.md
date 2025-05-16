@@ -24,7 +24,10 @@ La quantità del lotto di origine non può essere variata nel caso in cui siano 
 > **Seleziona progetto**: questo pulsante permette di associare un progetto agli ordini di produzione selezionati;    
 > **Modifica stato ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di variare lo stato degli ordini selezionati (Lanciato, Esecutivo, Evaso, Storicizzato);     
 > **Completamento dati ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di rigenerare i dati dell'ordine di produzione, sostituendoli con quelli presenti nella distinta base e nel ciclo di lavoro presenti in anagrafica;    
-> **Ricalcolo costi Ordine di Produzione**: questo pulsante permette di effettuare il ricalcolo dei costi di produzione degli ordini di produzione selezionati.    
+> **Ricalcolo costi Ordine di Produzione**: questo pulsante permette di effettuare il ricalcolo dei costi di produzione degli ordini di produzione selezionati;            
+> **Attiva tassativo**: permette di attivare il flag **Tassativo** all'interno di tutti gli ordini di produzione selezionati;       
+> **Disattiva tassativo**: permette di disattivare il flag **Tassativo** all'interno di tutti gli ordini di produzione selezionati. 
+         
 
 
 
