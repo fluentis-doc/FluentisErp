@@ -7,6 +7,9 @@ La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Tipo 
 
 I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
+Un tipo risorsa FCS definisce una categoria di risorse necessarie in alcune lavorazioni e da schedulare a capacità finita.       
+Esempi tipici sono gli stampi, utensili, mezzi di sollevamento etc.
+
 **Ricerca Tipo risorsa F.C.S.**
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.

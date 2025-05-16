@@ -7,6 +7,8 @@ La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Codic
 
 I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
+I codici accorpamento permettono di raggruppare fasi di lavoro da processare insieme nelle macchine a lavorazioni accorpabili.
+
 **Ricerca Codici accorpamento**
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.

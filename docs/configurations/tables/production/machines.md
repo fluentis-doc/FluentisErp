@@ -49,7 +49,8 @@ Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi
 <details>
 <summary> I seguenti campi sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
 
-**Turno di lavoro**:        
+**Turno di lavoro**: scegliere il turno di lavoro standard della macchina (se si sceglie un turno più ampio di quello del relativo centro di lavoro, prevarrà comunque quest'ultimo). Con l'eccezione dei lavoratori, per tutte le altre risorse se è presente una pausa nel turno verrà ignorata. Solo i lavoratori hanno una necessità fisica e legale di pausa. Nel caso la macchina richieda la presenza di un operatore, questa verrà forzata a rispettare la pausa di lavoro dell'operatore, quindi le ore effettivamente lavorabili sono limitate dall'operatore.       
+Se per esempio il turno di lavoro dell'operatore è 08:00 - 12:00, 13:00 -17:00, la macchina non produrrà durante la pausa, anche se per essa è stato impostato un turno senza pausa che inizia alle 08:00 e finisce alle 17:00. La differenza tra impostare per la macchina un turno con pausa o senza, sta solo nella capacità mostrata nel relativo istogramma di carico. Nell'esempio fatto, se si imposta un turno senza pausa l'istogramma mostrerà una capacità di 9 ore, ma la macchina non lavorerà mai più di 8, perchè la sua capacità teorica è di 9 ore, ma nella pratica non riuscirebbe mai a lavorare più di 8 ore. Se se imposta un turno uguale a quello del lavoratore, la capacità mostrata sull'istogramma è di 8 ore.         
 **Descrizione turno di lavoro**: indica la descrizione del turno di lavoro;               
 **% Efficienza**: il tempo di lavoro sulla fase viene aumentato o diminuito in base al valore di questo campo. Se per esempio vale 50%, il tempo di lavorazione sulla macchina sarà doppio rispetto a quello indicato sulla fase. Serve per tenere conto della diversa produttività delle macchine dello stesso centro, ma lo stesso obiettivo può essere raggiunto utilizzando le macchine alternative sulla fase, indicando i relativi tempi di lavorazione;      
 **% Manodopera setup**: indica la percentuale del tempo di lavoro del lavoratore assorbita durante l'attrezzaggio. Se inferiore al 100% il lavoratore può lavorare su più macchine simultaneamente;         
@@ -63,6 +64,9 @@ Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi
 </details>
 
 Nella seconda sezione invece si può andare a dettagliare la **Sequenze** delle macchine alternative.
+
+*Macchine alternative**: se questo tab è vuoto, lo schedulatore userà solo la macchina indicata sulla fase e, se questa non è indicata, utilizzerà una macchina qualsiasi del centro di lavoro (tra quelle libere ovviamente). Se la lavorazione può essere eseguita solo su alcune macchine del centro e non su tutte, verranno considerate quelle indicate in questa scheda più quella sulla fase.       
+Questo tab può essere utilizzato anche indicando tutte le macchine del centro, quando la necessità non è limitare l'elenco delle macchine ma fornire dati diversi per i tempi di lavorazione.
 
 <details>
 <summary> I seguenti tab sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>

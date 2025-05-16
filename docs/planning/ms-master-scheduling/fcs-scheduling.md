@@ -6,7 +6,7 @@ sidebar_position: 5
 :::important A cosa serve
 Il sistema AFCS Fluentis consente di simulare i processi produttivi, di approvvigionamento, vendita e distribuzione di una organizzazione.
 Fluentis AFCS esegue una simulazione di dettaglio molto realistica che consente di raggiungere i seguenti obiettivi:
-- Stimare con precisione le date di consegna a clienti interni ed esterni all’organizzazione (anche in ambiti Ddmrp).
+- Stimare con precisione le date di consegna a clienti interni ed esterni all’organizzazione (anche in ambiti DDMRP).
 - Ottimizzare i processi produttivi in modo da bilanciare al meglio costo di produzione e livello di servizio.
 - Individuare le criticità che riducono le prestazioni del sistema produttivo, e di conseguenza simulare azioni migliorative (per esempio straordinari, esternalizzazione di attività, incremento della capacità produttiva etc.).
 - Misurare la qualità del piano di produzione tramite indicatori numerici di prestazione (K.P.I).
