@@ -15,7 +15,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
-Per il nuovo record si deve inserire almeno il campo obbligatorio richiesto dal programma: il **Codice**.
+Per il nuovo record si deve inserire almeno il campo obbligatorio richiesto dal programma: il **Codice**.      
 Per ogni record è possibile inserire: una descrizione, la categoria selezionandola tra quelle codificate all'interno della tabella [Pittogrammi](/docs/configurations/tables/general-settings/pictograms), un'eventuale nota libera e l'immagine stessa del pittogramma. 
 
 
