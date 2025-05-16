@@ -31,6 +31,12 @@ Per poter inserire nuove *Check-list* è necessario premere il pulsante **Nuovo*
 Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
 
 
+### ![](/img/neutral/common/execute.png) Controlla pesi %
+
+Questo pulsante controlla la somma dei Pesi per ogni singola categoria di domande della *Check-list* selezionata.   
+La somma dei pesi, per *Categoria*, deve essere il 100%. L'assenza della *Categoria* è considerata come una *Categoria* a se stante.   
+
+
 ## Gestione dati
 
 
@@ -54,8 +60,13 @@ E' l'elenco delle domande/attività da utilizzare/effettuare per le valutazioni 
 L'elenco si compone delle seguenti informazioni:   
 > **Sequenza**: è la sequenza di attuazione delle *domande/attività*.   
 > **Domanda**: annotazioni libere sull'argomento.   
-> **Livello di valutazione**: è il *Livello di valutazione competenza* richiesto per la valutazione.   
+> **Categoria**: alla *Domanda* è possibile associare una *Categoria*.   
+> **Livello di valutazione**: è il *Livello di valutazione competenza* richiesto;   
+questo viene considerato nelle gestioni delle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating) e [*Valutazioni periodiche su Non conformità*](/docs/quality/vendor-rating/vendor-rating-on-nc).   
 > **Attiva**: indica se la *domanda/attività* è ancora valida e utilizzabile.   
+> **Peso %**: indica il *peso* (importanza), espresso in percentuale, dato alla domanda; la percentuale è da intendersi per *Categoria*;   
+il controllo del 100% dato alla Categoria è possibile effettuarlo tramite la pressione del pulsante *Controlla pesi %*;   
+questo valore può essere considerato nella gestione delle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating).   
 > **Data inizio**: è la data dalla quale la *domanda/attività* è valida e utilizzabile.   
 > **Data fine**: è la data dalla quale la *domanda/attività* cessa di essere valida e utilizzabile.   
 > **Note**: annotazioni libere.
