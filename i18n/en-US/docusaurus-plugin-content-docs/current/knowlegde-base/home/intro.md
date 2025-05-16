@@ -1,5 +1,5 @@
 ---
-title: FAQ Home (FAQ Home)
+title: FAQ Home
 sidebar_position: 2
 ---
 

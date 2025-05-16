@@ -3,6 +3,40 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0032 - 16/05/2025 
+
+> - Intervento creato da intervento pianificato o da task - proporre valuta dal documento sorgente se esiste, altrimenti proporre dall'account/compania  
+> - WM - Risolto errore che impediva l’importazione Web API del Picking se nel file di importazione venivano inseriti sia il lotto dell’articolo, sia quello della riga spunta (#TT02053/25) 
+> - SCM - Nella maschera del Ricevimento Merci è ora possibile indicare quantità decimali all’interno dei lotti (#TT01885/25). 
+> - SD: Quando si crea un documento  vendita da un altro, lo scambio viene aggiornato. #TT02206/25 
+> - FI - revisione cancellazione commissioni da maschera di ricerca. (#TT02199/25) 
+> - Corretto tracciato per importazione excel cespiti che non riportava correttamente all’interno della scheda il dettaglio dell’ammortamento pregresso. Rif. #TT02237/25 
+> - FI - revisione visibilità del campo ‘Data valuta banca’ all’apertura in modifica delle registrazioni contabili. (#TT02073/25) 
+> - PM - piano di fatturazione interventi - migliorata gestione riferimento a progetto nelle righe di fuori orario. (#TT02165/25) 
+> - SH - Corretto bug che non visualizzata correttamente il context menu aperto con il tsto destro del mouse. 
+> - Quando si crea un ordine di vendita da un’offerta, il sistema propone il tipo di fatturato di vendita per i materiali nel registro articoli.(#TT02225/25) 
+> - SD, SCS - Risolto errore in fase di salvataggio dei documenti che si verificava quando il Numero riga e il Tipo riga erano stati inseriti manualmente (#TT02061/25). 
+> - PM - gestita cancellazione interventi con piano di fatturazione già calcolato, ma intervento non ancora fatturato (TT05270/24) 
+> - Stampa schede cespiti, revisione gestione in lingua del campo tipo proprietà. (#TT02155/25) 
+> - SD - Risolto errore nella procedura di Creazione Listini Avanzata che si verificava filtrando per un cliente la cui ragione sociale conteneva il carattere “&” (#TT02184/25). 
+> - SCM - Risolta anomalia in fase di Valorizzazione DDT di Acquisto che non ricalcolava le spese per il Conai in fattura (#TT01916/25). 
+> - PM - gestita priorità proposta prezzo negli interventi, se prezzo manuale ha priorità maggiore rispetto al progetto (#TT01678/25) 
+> - PM - procedura generazione interventi da attività, corretto caso per attività che terminano a mezzanotte (#TT01677/25) 
+> - SH - In analisi disponibiltà è stata aggiunta la possibilità di filtrare valori incompleti con %xxx anche nel filtro principale e non solo nel filtro di colonna. 
+> - Nella creazione fatture di acquisto da file Sdi, revisione visibilità griglia di assegnazione dei pagamenti. (#TT01958/25) 
+> - SD - Gli sconti finali articolo vengono riportati nelle righe di tipo spesa, anche se gli sconti vengono inseriti dopo l’inserimento degli articoli (#TT00869/25) 
+> - Aggiunte colonne per gestire da data competenza economica a data competenza economica al tracciato excel per import scritture contabili 
+> - SD - Corretta anomalia nella Creazione DDT da Picking che, in presenza di sconti sulla riga articolo, non ricalcolava correttamente le spese riportate nel riepilogo dell’ordine (#TT02129/25) 
+> - SD - Nelle procedure di Scarico DDT e Scarico Fatture Immediate da Magazzino è stata aggiunta nel tab Riepilogativo la possibilità di aprire la stampa degli Errori, per visualizzare eventuali errori che hanno impedito lo Scarico del documento (#TT05465/24) 
+> - SH - Corretta la visualizzazione delle righe nell’Analisi Disponibilità in presenza di Ordini Cliente aventi una causale di scarico con contropartita (#TT01892/25). 
+> - FI - FSPartnerVatStatus Add new filed Notes. Modifications in PartnerVatStatusFilterResults can have an impact on profiles ( TT02146/25) 
+> - QY - Controllo articoli - Risolta anomalia durante la richiesta di apertura di più controlli contemporaneamente; si apriva solamente uno e gli altri rimanevano bloccati.(#TT02161/25) 
+> - SH - WEB - Risolta anomalia nella versione web che non permetteva l’inserimento di pesi con cifre decimali nelle anagrafiche articolo (#TT02194/25). 
+> - SD - Risolto errore in fase di creazione di un nuovo documento mediante l’utilizzo del pulsante Nuovo del tab Articoli (#TT02166/25) 
+> - SCM, SCS, PM - Risolto errore in fase di salvataggio dei documenti che si verificava quando il Numero riga e il Tipo riga erano stati inseriti manualmente (#TT02061/25). 
+> - SCM - Risolto errore nella Registrazione dei DDT di Acquisto in magazzino in presenza di righe articolo di tipo note (#TT02313/25). 
+
+
 ### Patch 707.1-0031 - 08/05/2025
 
 > - SD - Introdotta la possibilità di customizzare la data di creazione dei documenti generati in fase di evasione DDT e Fatture dalla ricerca Ordini Clienti (#TT01863/25)
@@ -75,7 +109,7 @@ sidebar_position: 1
 > - SD - Nella maschera di Evasione ordini nei DDT di Vendita, il pulsante Evasione forzata ordine consente di impostare la riga articolo come forzatamente evasa (#TT01603/25) 
 > - WM - Corretto bug in fase di creazione di una nuova distinta base nella versione browser di Fluentis. (#TT01615/25) 
 > - WMS - Corretto bug nelle form conferma picking e gestione spunta che non permetteva di sovraevadere la quantità del picking più di una volta anche se nel tipo picking era attiva la sovrevabilità (#TT01585/25) 
-> - SH - Cruscotti – Correzione bug durante il drill down (#TTT01540/25) 
+> - SH - Cruscotti - Correzione bug durante il drill down (#TTT01540/25) 
 > - SD - Risolto errore che, in fase di Evasione di un Ordine cliente in Fattura, applicava lo sconto cliente alle righe di tipo 2 anche se precedentemente rimosso dalla riga dell’ordine (#TT01767/25) 
 > - SCM - Proponi centro di costo e conto per modificare il tipo fatturato della fattura di acquisto (#TT01584/25)
 > - WM - Corretto bug nell’import SignalItem tramite webapi nel caso in cui l’articolo avesse una variante (#TT01904/25) 

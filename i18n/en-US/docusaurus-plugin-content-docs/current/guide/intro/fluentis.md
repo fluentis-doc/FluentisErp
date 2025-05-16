@@ -49,4 +49,4 @@ In addition to the documentation, further resources are available to enhance und
 - **Fluentis Training**: Platform dedicated to user training.
 - **Integrations**: Details on integration possibilities with other systems and applications.
 
-For more information, visit the official website: [www.fluentis.com](https://www.fluentis.com/).
+For more information, visit the official website: [www.fluentis.com](https://www.fluentis.com/en/).
