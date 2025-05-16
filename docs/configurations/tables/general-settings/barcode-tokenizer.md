@@ -1,6 +1,6 @@
 ---
 title: Barcode tokenizer
-sidebar_position: 48
+sidebar_position: 4
 ---
 
 Gran parte delle operazioni che possono essere effettuate in Fluentis WMS, possono essere agevolate e velocizzate grazie all’utilizzo del campo *Codice barcode*, che se opportunamente configurato, rielabora in maniera intelligente i dati acquisiti tramite la lettura del barcode e autonomamente va ad inserire i valori nei campi corrispondenti.

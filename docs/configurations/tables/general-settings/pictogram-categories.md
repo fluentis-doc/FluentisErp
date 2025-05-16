@@ -1,6 +1,6 @@
 ---
 title: Categorie pittogrammi
-sidebar_position: 15
+sidebar_position: 7
 ---
 
 All'interno di questa tabella vengono codificate tutte le **Categorie pittogrammi** che possono poi essere richiamati all'interno della tabella [Pittogrammi](/docs/configurations/tables/general-settings/pictograms).
