@@ -3,6 +3,8 @@ title: F.C.S. Gantts
 sidebar_position: 1
 ---
 
+**WORK IN PROGRESS**
+
 ### F.C.S. Gantts di produzione
 
 ### F.C.S. Gantts di acquisto

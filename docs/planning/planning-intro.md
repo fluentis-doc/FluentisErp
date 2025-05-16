@@ -37,7 +37,7 @@ import Link from '@docusaurus/Link';
         <p>Consente di simulare e ottimizzare in modo dettagliato i processi produttivi, migliorando la precisione delle consegne, la gestione delle criticità e l’efficienza dell’intera pianificazione aziendale.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/fcs-execution" className="bold-link">Esecuzioni F.C.S.</Link></p>
         <p>permette di gestire e visualizzare in modo dettagliato tutte le informazioni delle simulazioni di schedulazione</p>
-        <p><Link to="/docs/planning/ms-master-scheduling/fcs-gantts-and-histograms/fcs-kpi" className="bold-link">Gannts e istogrammi F.C.S.</Link></p>
+        <p><Link to="/docs/planning/ms-master-scheduling/fcs-gantts-and-histograms/fcs-kpi" className="bold-link">Gantts e istogrammi F.C.S.</Link></p>
         <p>Consente di visualizzare i dati delle simulazioni sottoforma di gantts e istogrammi.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/planned-orders/new-planned-order" className="bold-link">Ordini pianificati</Link></p>
         <p>Permette la creazione e la gestione efficiente degli ordini pianificati di produzione, acquisto e conto lavoro.</p>
