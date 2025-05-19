@@ -31,6 +31,12 @@ import Link from '@docusaurus/Link';
         <p> Optimizes inventory and production management, improving efficiency and reducing stock levels.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/finite-capacityscheduling" className="bold-link">Finite Capacity Scheduling</Link></p>
         <p>Allows optimizing the management of production resources within a manufacturing company.</p>
+<p><Link to="/docs/planning/ms-master-scheduling/fcs-scheduling" className="bold-link">F.C.S. Scheduling</Link></p>
+<p>Allows for detailed simulation and optimization of production processes, improving delivery accuracy, managing critical issues, and enhancing the overall business planning efficiency.</p>
+<p><Link to="/docs/planning/ms-master-scheduling/fcs-execution" className="bold-link">F.C.S. Executions</Link></p>
+<p>Enables detailed management and visualization of all information from the scheduling simulations.</p>
+<p><Link to="/docs/planning/ms-master-scheduling/fcs-gantts-and-histograms/fcs-kpi" className="bold-link">F.C.S. Gantt Charts and Histograms</Link></p>
+<p>Allows for visualizing simulation data in the form of Gantt charts and histograms.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/planned-orders/new-planned-order" className="bold-link">Planned Orders</Link></p>
         <p>Enables the efficient creation and management of planned production, purchase, and subcontracting orders.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders" className="bold-link">Release Planned Orders</Link></p>
