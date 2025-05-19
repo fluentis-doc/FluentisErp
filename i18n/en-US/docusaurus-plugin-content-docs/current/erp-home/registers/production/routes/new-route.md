@@ -81,6 +81,21 @@ All external phases must always have the **Production Phase** and **Movable Phas
 
 **Work center description**, **Machine description**, **Labour group description**: in these fields, you will find the descriptions of the codes related to the various sections listed.
 
+**Production site**: indicates the [Production Site](/docs/configurations/parameters/production/production-orders-parameters/production-site) of the work center.
+
+**Production site description**: indicates the description of the [Production Site](/docs/configurations/parameters/production/production-orders-parameters/production-site) of the work center.
+
+<details>
+<summary> The following fields are used only in the [F.C.S Scheduling](/docs/planning/ms-master-scheduling/fcs-scheduling) procedure </summary>
+   
+**Center scheduling type**:            
+**Setup qualification**: indicates the qualification of workers necessary to perform machine setup in the center;        
+**Processing qualification**: indicates the qualification of workers necessary to carry out processing in the center;       
+**Number of setup workers**: indicates the number of workers needed to carry out the setup of the machines in the center;          
+**Grouping code**: phases with the same grouping code can be grouped to be processed in the same machine session, based on the grouping rule defined for it. All phases with the same grouping code in the same work center must have the same data (processing time, number of operators, etc.). If not, the scheduler will flag the error during import.
+
+</details>
+
 There is then a third section where more precise data regarding the machine, workers, and times will be indicated:
 
 **Machine number**: indicates the number of machines necessary for carrying out the phase;
@@ -118,6 +133,17 @@ There is then a third section where more precise data regarding the machine, wor
 **Alternatives**: in this tab, alternative phases can be entered, which will be considered based on the priority assigned by the procedures of the [General Planning](/docs/planning/ms-master-scheduling/general-schedule) or by the [M.R.P.](/docs/planning/ms-master-scheduling/mrp/), if the corresponding **Consider Alternative Phases** flags present in the parameters of the procedures are active during their execution;      
 
 **Extra Phase Data / Extra Data:** in these two tabs, respectively, the extra data for each phase and the extra data related to the cycle itself will be entered, selecting them via combo among those pre-coded in the related *Extradata* table (Utility > Extradata). To enter extra data, you will need to right-click and select the option to add new extra data with the possibility of choosing whether to insert it at the first level or, if there are already extra data entered, choose whether to insert a child extra data to the already existing extra data; in this way, a new row will appear where you can proceed with the entry.
+
+<details>
+<summary>The following tabs are used only in the [F.C.S Scheduling](/docs/planning/ms-master-scheduling/fcs-scheduling) procedure</summary>
+
+**Alternative machines**: if the processing is to be carried out in a center with machines and none of these are listed in the phase, the scheduler can use any machine in the center. However, if the processing cannot be performed on any machine in the center (because not all can perform that processing), then this tab can provide a list of only the allowed machines (in addition to any indicated for the phase). For each machine, the corresponding processing time, setup time, number of processing and setup operators can be specified, if these values change depending on the machine being used for the processing.
+
+**Resources**: the common resources needed to perform a processing operation are machines and workers, which are managed by the scheduler with finite capacity. Through this tab, additional types of productive resources necessary and binding for the processing can be indicated, along with the corresponding quantity. Each of these resources is managed with finite capacity. Typical examples include molds, processing tools, lifting equipment, etc. If a machine is specified, it means that that type of resource is only necessary if the scheduler decides to use that machine. If the machine field is left empty, then that type of resource is needed regardless of the machine chosen by the scheduler.
+
+**Setup properties values**: through this tab, the [Setup Properties](/docs/configurations/tables/production/fcs-tables/setup-property) with their corresponding values are associated with the phases to be worked on machines with relevant setup times.
+
+</details>
 
 *Specific Buttons*: 
 
