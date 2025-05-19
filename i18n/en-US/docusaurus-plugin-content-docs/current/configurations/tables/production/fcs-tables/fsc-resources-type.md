@@ -7,7 +7,8 @@ The table is located at the path **Tables > Production > F.C.S. Tables > F.C.S. 
 
 The data present in this table is used only in the [F.C.S. Scheduling](/docs/planning/ms-master-scheduling/fcs-scheduling) procedure.
 
-A FCS resource type defines a category of resources required in certain processes and scheduled at finite capacity. Typical examples include molds, tools, lifting equipment, etc.
+A FCS resource type defines a category of resources required in certain processes and scheduled at finite capacity. 
+Typical examples include molds, tools, lifting equipment, etc.
 
 **Search F.C.S. Resource Type**
 
