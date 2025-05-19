@@ -1,5 +1,5 @@
-Qui viene proposta l'informazione inserita nell' anagrafica fornitore, tab [Spedizioni](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), solo se esistono dati di default.
+Aici este propusă informația introdusă în registrul furnizorului, tab [Expediții](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), doar dacă există date implicite.
 
-Il combo box propone tutti i destinatari e le destinazioni inserite nell'anagrafica fornitore.
+Combo box-ul oferă toți destinatarii și destinațiile introduse în registrul furnizorului.
 
-Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti.
+Adresele de livrare (destinatar/destinație și transportator) pot fi introduse și descriptiv, fără să fi fost anterior incluse în registrul furnizorului.  

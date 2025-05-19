@@ -1,1 +1,1 @@
-- **Magazzino/Descrizione/Causale**: questi dati sono necessari per le registrazioni di carico in magazzino. Vengono ripresi, in base al documento di acquisto, dalla tabella *Tipi ordine/DDT/Fatture di acquisto* oppure si inseriscono manualmente.
+- **Gestiune/Descriere/Șablon**: aceste date sunt necesare pentru înregistrările de încărcare în gestiune. Acestea sunt preluate, pe baza documentului de achiziție, din tabelul *Tipuri de ordine/Avize/Facturi de achiziție* sau pot fi introduse manual.  

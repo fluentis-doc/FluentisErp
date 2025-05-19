@@ -1,6 +1,6 @@
-Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento.           
-Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
+Discounturile propuse în antetul documentului sunt aplicate în fiecare nouă linie de articol inserată în document.  
+Dacă, după introducerea liniilor de articol, se introduce o nouă reducere în antet, aceasta nu este replicată în liniile de articol deja inserate.
 
-*Pulsante specifico*:
+#### Buton specific  
 
-> **Cancella sconti**: utilizzato per cancellare le righe di sconto selezionate.
+> **Șterge discounturi**: utilizat pentru a șterge liniile de reducere selectate.

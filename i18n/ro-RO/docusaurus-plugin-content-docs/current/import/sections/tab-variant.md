@@ -1,4 +1,4 @@
-Vengono riportate le varianti dell'articolo selezionato, codificate nel tab [ Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli oppure possono essere inserite manualmente.  
-Offre la possibilità di gestire le varianti dell'articolo in modo diverso da quello proposto sulla riga articolo.  
-Per esempio, in ogni riga articolo, è possibile inserire la quantità totale; successivamente, nel medesimo tab, possono essere definite diverse quantità per più varianti dell'articolo selezionato e anche per variante e attributo, ovvero gestione taglia/colore.  
-Questa operazione è possibile solo se tutte le varianti dell'articolo hanno il prezzo uguale al prezzo dell'articolo nella configurazione standard.
+Sunt prezentate variantele articolului selectat, codificate în tabul [Variante](/docs/erp-home/registers/items/create-new-item) din registrul articolelor sau pot fi introduse manual.  
+Oferă posibilitatea de a gestiona variantele articolului în mod diferit față de cel propus pe linia articolului.  
+De exemplu, în fiecare linie de articol, se poate insera cantitatea totală. Ulterior, în același tab, pot fi definite cantități diferite pentru mai multe variante ale articolului selectat și, de asemenea, pentru variantă și atribut, adică gestionarea mărimii/culorii.  
+Această operațiune este posibilă doar dacă toate variantele articolului au același preț ca cel al articolului în configurația standard.  

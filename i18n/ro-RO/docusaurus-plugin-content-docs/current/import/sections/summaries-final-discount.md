@@ -1,6 +1,6 @@
-Gli sconti finali applicati a livello di singolo articolo vengono distribuiti (o "spalmati") su ciascuna riga articolo del documento. Questo significa che l'importo dello sconto è suddiviso proporzionalmente tra tutti gli articoli presenti nel documento, e lo sconto relativo sarà visibile nel tab Articoli per ogni singola riga.
+Discounturile finale sunt distribuite pe fiecare linie articol din document. Aceasta înseamnă că valoarea discountului este împărțită proporțional între toate articolele prezente în document, iar discountul aferent va fi vizibil în tab *Articole*, pentru fiecare linie în parte.
 
-- **Tipo/Descrizione sconto**: permette di scegliere le tipologie di sconto (predefiniti in [Tipi sconti](/docs/configurations/tables/general-settings/discount-types)), attribuendo alla tipologia la priorità di applicazione dello sconto e se lo sconto viene calcolato sull'imponibile o in cascata rispetto agli sconti precedentemente applicati.  
-- **Priorità**: rappresenta la priorità di applicazione dello sconto; l'ordinamento da applicare avviene in modo crescente.  
-- **Cascata/Imponibile**: per definire se il calcolo dello sconto usa come imponibile il (prezzo * quantità) - (sconti già calcolati) oppure (prezzo * quantità).  
-- **Valore**: valore numerico dello sconto finale da applicare.  
+- **Tip/Descriere discount**: permite alegerea tipurilor de discount (definite în [Tipuri discount (Tipi sconti)](/docs/configurations/tables/general-settings/discount-types)), atribuindo tipologiei prioritatea de aplicare a discountului și dacă discountul este calculat pe baza sumei impozabile sau în cascadă față de discounturile aplicate anterior.  
+- **Prioritate**: reprezintă prioritatea de aplicare a discountului; ordonarea care trebuie aplicată se face în mod crescător.  
+- **Cascadă/Bază impozitare**: pentru a defini dacă calculul discountului folosește ca bază impozabilă (preț * cantitate) - (discounturi deja calculate) sau (preț * cantitate).  
+- **Valoare**: valoarea numerică a discountului final de aplicat.
