@@ -31,7 +31,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/lots-serial-numbers/Lots-serial-number-intro">Lots and Serial Numbers</Link>
+###     <Link to="/docs/logistics/lots-serial-numbers/lots-serial-number-intro">Lots and Serial Numbers</Link>
         <p><Link to="/docs/logistics/lots-serial-numbers/lots-register" className="bold-link">Lot Registry</Link></p>
         <p>Allows for searching and viewing the details of lots showing the respective loading and unloading movements.</p>
         <p><Link to="/docs/logistics/lots-serial-numbers/lots-register" className="bold-link">Lot Traceability</Link></p>

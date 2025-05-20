@@ -31,7 +31,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/lots-serial-numbers/Lots-serial-number-intro">Lotes y Números de serie (Lotti e Serial number)</Link>
+###     <Link to="/docs/logistics/lots-serial-numbers/lots-serial-number-intro">Lotes y Números de serie (Lotti e Serial number)</Link>
         <p><Link to="/docs/logistics/lots-serial-numbers/lots-register" className="bold-link">Registro de lotes (Anagrafica lotti)</Link></p>
         <p>Permite buscar y visualizar los detalles de los lotes mostrando sus correspondientes movimientos de carga y descarga.</p>
         <p><Link to="/docs/logistics/lots-serial-numbers/lots-register" className="bold-link">Trazabilidad de lotes (Tracciabilità lotto)</Link></p>
