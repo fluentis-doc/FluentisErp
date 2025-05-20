@@ -24,4 +24,6 @@ The quantity of the originating batch cannot be changed if *Pick Lists*, *Produc
 > **Select project**: this button allows you to associate a project with the selected production orders;     
 > **Modify order status**: this button, which only becomes enabled after selecting one or more orders, allows you to change the status of the selected orders (Launched, Executive, Fulfilled, Historical);     
 > **Complete Orders Data**: this button, which only becomes enabled after selecting one or more orders, allows you to regenerate the production order data, replacing it with those present in the bill of materials and in the workflow present in the registry;    
-> **Costs Recalculation of Production Order**: this button allows you to recalculate the production costs of the selected production orders.
+> **Costs Recalculation of Production Order**: this button allows you to recalculate the production costs of the selected production orders;
+> **Activate mandatory**: allows activating the **Mandatory** flag within all selected production orders;       
+> **Deactivate mandatory**: allows deactivating the **Mandatory** flag within all selected production orders.

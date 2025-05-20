@@ -12,6 +12,8 @@ import SearchForm from './../../../import/sections/search-form.md'
 > [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): through this button you can open the screen related to the MRP parameters of the item;             
 > [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): allows you to open the screen related to the bill of materials of the item;  
 > [Work Cycles](/docs/erp-home/registers/production/routes/new-route): allows you to view the work cycle and the related production phases of the item.
+> **Activate mandatory**: allows you to activate the **Mandatory** flag within all selected planned orders;       
+> **Deactivate mandatory**: allows you to deactivate the **Mandatory** flag within all selected planned orders.  
 
 *Specific fields*:
 
