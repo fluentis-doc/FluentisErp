@@ -183,9 +183,10 @@ In this list, it is possible to insert and consult any attachments; a preview ca
 
 
 ### Customers/Suppliers
-Contains the *Customers*/*Suppliers* for whom to carry out the *Planned Tests* on the *Associated Items*.   
+Contains the *Customers*,  *End Costumers* and *Suppliers* for whom to carry out the *Planned Tests* on the *Associated Items*.   
 The list consists of the following information:   
-> **Customers/Supplier**: it is the corporate name of the *Customer* or "Supplier". The *Properties* are customized for *Customers*/*Suppliers*/*Associated Items*.   
+> **Customers/Supplier**: it is the corporate name of the *Customer* or "Supplier".   
+> **End Customer**: it is the code and description of the *End Customer*. 
 > **Specific date**: it is the date of the specification received from the customer.    
 > **Specification references**: free annotations about the reference to the specification received from the customer requiring specific checks to be performed for the *Associated Items*.   
 > **Specific note**: free annotations related to the specification received from the customer.   

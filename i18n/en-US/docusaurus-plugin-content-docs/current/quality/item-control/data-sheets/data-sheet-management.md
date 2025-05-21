@@ -146,10 +146,11 @@ The list consists of the following information:
 > **Notes**: free notes.
 
 
-### Clients
-Contains the *Clients* interested in the *Items* with similar *Properties* listed in the two respective lists.   
+### Customers
+Contains *Customers* and *End Customers* (Contacts) interested in *Items* with similar *Properties* listed in the two respective lists. 
 The list consists of the following information:   
-> **Client**: is the company name of the *Client*. The *Properties* are customized for *Clients*/*Associated items*.   
+> **Customer**: it is the company name of the *Customer*.  
+> **End customer**: it is the code and description of the *End customer*. 
 > **Notes**: free notes.
 
 
