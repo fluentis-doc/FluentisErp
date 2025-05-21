@@ -60,5 +60,20 @@ In questo caso è possibile inserire anche partite non collegate a tipi pagament
 In questa sezione si possono memorizzare i riferimenti dei giranti e degli avallanti.
 
 
+## SDD Sepa Direct Debit
 
+L'Addebito Diretto Sepa, che va a sostituire il precedente RID nazionale, è uno strumento di incasso pre-autorizzato a fronte di un mandato all'addebito rilasciato dal Debitore a favore del suo Creditore.
+
+E' basato su un accordo preventivo (mandato) tra Debitore e Creditore che consente a quest'ultimo di richiedere l'attivazione di una procedura interbancaria per addebitare il conto del Debitore in modo automatico.
+
+
+:::tip[Come creare una distinta SDD]
+Dopo aver compilato i campi necessari [**nell'anagrafica del cliente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#campi-riferiti-alla-gestione-distinte-sdd-sepa-direct-debit--addebiti-diretti-sepa) intestatario dell'SDD e nella tabella con i dati della nostra società, è necessario.
+
+- Definire una apposita tipologia di Effetto "*SDD*" [**qui**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) ed associarlo al rispettivo [**Tipo pagamento**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti)
+- Definire una apposita tipologia di distinta nel portafoglio effetti, vedere il campo Utenze [**qui**](/FluentisErp/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- Utilizzare le procedure [**Creazione effetti dalle partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) oppure [**Creazione effetti dalle scadenze**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) per generare un effetto di tipo "*SDD*"
+- Creare una [**nuova distinta di presentazione**](/docs/treasury/bills-holding/lists-ceation-and-management) di tipo "*SDD*" e inserire al suo interno l'effetto "*SDD*" 
+- Utilizzare il bottone **Esportazione SDD** nella ribbon bar (abilitato dallo specifico tipo distinta settato con flag Utenze) per generare lo specifico tracciato bancario valido per SDD.
+:::
 
