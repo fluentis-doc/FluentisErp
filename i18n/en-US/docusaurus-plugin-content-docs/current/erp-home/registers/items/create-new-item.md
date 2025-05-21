@@ -486,3 +486,11 @@ The tab consists of two grids. In the first grid, the variant is entered with in
 The information found in the grid contains the unique information that differentiates the variant from the main item; for all the information not present in the grid, you can rely on that contained in the various tabs of that item.
 
 In the underlying grid, you can enter, if present, the specific barcode for that variant.
+
+## 25. **Pictograms**
+
+In this tab, it is possible to associate one or more pictograms with the items present in the registry.        
+Pictograms can be used to visually represent specific characteristics of the item, such as materials, intended use, certifications, or other relevant properties.            
+In particular, this section allows for the clear indication of any hazard symbols, in accordance with current regulations, thus facilitating the immediate recognition of items that require special attention in management, storage, and handling. The association of pictograms contributes to improving the visual communication of safety information and supports the correct management of products within various business processes.
+
+To insert a new pictogram, simply click on the first empty row and select it from those entered in the table [Pictograms](/docs/configurations/tables/general-settings/pictograms). Additionally, it is also possible to insert a specific note.
