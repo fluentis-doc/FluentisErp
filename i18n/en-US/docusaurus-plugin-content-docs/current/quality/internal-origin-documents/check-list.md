@@ -31,6 +31,12 @@ To insert new *Check-lists*, you need to press the **New** button.
 To open the management of the results grid, you can double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
 
+### ![](/img/neutral/common/execute.png) Check Weights %
+
+This button checks the sum of the Weights for each single category of the selected *Check-list*.  
+The sum of the weights, for *Category*, must be 100%. The absence of a *Category* is considered as a standalone *Category*.
+
+
 ## Data Management
 
 
@@ -54,8 +60,13 @@ It is the list of questions/activities to be used/performed for evaluations of s
 The list consists of the following information:   
 > **Sequence**: is the sequence of implementation of the *questions/activities*.   
 > **Question**: free annotations on the subject.   
-> **Level of evaluation**: is the required *Competence evaluation level* for the evaluation.   
+> **Category**: to the *Question* it is possible to associate a *Category*.   
+> **Evaluation level**: it is the *Required evaluation competence level*;   
+this is considered in the management of [*Initial and periodic ratings*](/docs/quality/vendor-rating/initial-vendor-rating) and [*Periodic ratings on non-compliance*](/docs/quality/vendor-rating/vendor-rating-on-nc). 
 > **Active**: indicates whether the *question/activity* is still valid and usable.   
+> **Weight %**: indicates the *weight* (importance), expressed as a percentage, given to the demand; the percentage is to be understood for *Category*;   
+the control of 100% given to the Category can be executed by pressing the button *Check weights %*;   
+this value can be considered in the management of [*Initial and Periodic Ratings*](/docs/quality/vendor-rating/initial-vendor-rating).
 > **Start date**: is the date from which the *question/activity* is valid and usable.   
 > **End date**: is the date from which the *question/activity* ceases to be valid and usable.   
 > **Notes**: free annotations.
