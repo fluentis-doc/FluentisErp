@@ -149,6 +149,13 @@ Nella tabella **Società**
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image06.png)
 
+:::tip[Come creare una distinta SDD]
+Dopo aver compilato i campi necessari nell'anagrafica del cliente intestatario dell?ì'SDD e nella tabella con i dati della nostra società, è necessario.
+
+- Definire una apposita tipologia di distinta nel portafoglio effetti, vedere il campo Utenze [**qui**](/FluentisErp/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+:::
+
+
 ### ALTRO
 
 **Gestione cointestatari**: il flag attiva la gestione della fattura di vendita cointestata.
