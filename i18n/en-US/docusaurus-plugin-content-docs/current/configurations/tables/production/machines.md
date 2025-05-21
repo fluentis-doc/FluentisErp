@@ -76,7 +76,6 @@ This tab can also be used by indicating all the machines in the center when the 
 **Initial Configuration**: this tab allows you to define the starting simulation values of the setup attributes (if at the time of importing the factory status the machine is not working, it is not possible to derive the values of the setup attributes from the phase in progress).
 
 **Matrices**: this tab allows you to define the times to move from one value to another of a setup attribute when these depend on the combinations of previous and subsequent states (typical, for example, in the case of painting lines, or allergenic sequences in the food industry).
-</details>
 
 </details>
 
