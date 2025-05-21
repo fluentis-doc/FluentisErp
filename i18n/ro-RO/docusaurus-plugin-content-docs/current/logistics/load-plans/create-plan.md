@@ -1,54 +1,56 @@
 ---
-title: Creazione Piano di Carico
+title: Plan de încărcare nou
 sidebar_position: 2
 ---
 
-Il **Piano di carico** è un documento che viene creato tra l'ordine cliente e il picking.        
+**Planul de încărcare** este un document creat între ordinul client și dispoziția de livrare.
 
-## Ricerca ordini cliente
+## Căutare ordine client
 
-Il punto di partenza per la creazione di un piano di carico è la ricerca e selezione degli ordini clienti da inserire nel piano. Dalla sezione di filtro è possibile effettuare una ricerca avanzata sugli ordini che si vuole evadere tra quelli *Non evasi* o *Parzialmente evasi*.      
-Di default vengono proposte come Da data consegna e A data consegna le date di inizio e fine della settimana corrente, ma possono essere impostate anche diversamente. 
-Nei [Parametri Piani di Carico](/docs/configurations/parameters/logistics/load-plan-parameters) è infatti possibile cambiare le date consegna proposte per la ricerca, scegliere se visualizzare anche righe articoli presenti in piani di carico aperti e impostare colori diversi per riga, a seconda che ci sia la disponibilità necessaria per evadere l’ordine o meno.
+Primul pas pentru crearea unui plan de încărcare este căutarea și selectarea ordinelor clienților care trebuie incluse în plan. 
+În secțiunea de filtrare, este posibilă efectuarea unei căutări avansate a ordinelor care se doresc a fi expediate dintre cele *Neexpediate* sau *Parțial expediate*.  
+În mod implicit, datele de început și sfârșit pentru livrare sunt datele săptămânii curente, dar acestea pot fi setate diferit.  
+În [Parametri Planuri de Încărcare](/docs/configurations/parameters/logistics/load-plan-parameters) puteți să schimbați datele de livrare propuse pentru căutare, să alegeți dacă să vizualizați și rândurile articolelor prezente în planurile de încărcare deschise și să setați culori diferite pentru rând, în funcție de disponibilitatea necesară pentru a expedia ordinul sau nu.
 
-Il flag **Visualizza ordini con data consegna in giorno escluso** permette di visualizzare in griglia anche gli ordini che hanno una data bloccata (es. festiva) sul calendario.         
-**Visualizza ordini con data consegna corretta** permette di visualizzare gli ordini con una data valida.           
-E' possibile aprire gli Ordini con il doppio click.           
+- **Vizualizează ordine cu data livrării în ziua exclusă**: permite vizualizarea în tabel și a ordinelor care au o dată blocată (de ex. sărbătoare) în calendar.  
+- **Vizualizează ordine cu dată de livrare corectă**: permite vizualizarea ordinelor cu data validă.  
+Ordinele pot fi deschise cu un dublu clic.
 
-Di seguito riportati alcuni dei dati presenti nella griglia dei risultati:         
-**Tipo**: contiene la [tipologia](/docs/configurations/tables/sales/sales-order-types) dell'ordine cliente, seguito dai dati dell'ordine come il **Numero**, la **Data**, l'**Articolo**, ecc.;         
-**Note**: sono consultabili le note delle righe ordine e le note del piano di carico;       
-**Quantità**: riporta la quantità totale della riga articolo nell'ordine;        
-**Quantità residua**: riporta il residuo dell'ordine non ancora evaso;          
-**Ordine presente in altro piano carico**: questo flag indica che l'ordine è già presente in un altro piano;         
-**Ordine presente in altro piano carico aperto**: questo flag indica che l'ordine è già presente in un altro piano aperto; questi due flag sono utili se l'utente non imposta diversi colori per le righe (nei [parametri](/docs/configurations/parameters/logistics/load-plan-parameters));          
-**Articolo**: in questa colonna è possibile inserire la quantità dell'articolo che si vuole evadere; questa quantità può essere diversa dalla quantità residua.           
+#### Câmpuri specifice  
+**Tip**: conține [tipul](/docs/configurations/tables/sales/sales-order-types) ordinului client, urmat de datele ordinului precum **Număr**, **Dată**, **Articol** etc.;  
+**Note**: pot fi consultate notele liniilor ordinului și notele planului de încărcare;  
+**Cantitate**: afișează cantitatea totală a liniei articolului din ordin;  
+**Cantitate rămasă**: indică restul ordinului neexpediat;  
+**Ordin prezent în alt plan de încărcare**: dacă este activ, indică faptul că ordinul este deja prezent într-un alt plan;  
+**Ordin prezent în alt plan de încărcare deschis**: dacă este activ, indică faptul că ordinul este deja inclus într-un alt plan deschis.
+Aceste două opțiuni sunt utile dacă utilizatorul nu setează diferite culori pentru linii în [parametri](/docs/configurations/parameters/logistics/load-plan-parameters).    
+**Articol**: în această coloană puteți să introduceți cantitatea articolului pe care doriți să o expediați; această cantitate poate fi diferită de cantitatea rămasă.  
 
-Dopo la selezione delle righe ordine da processare nel piano di carico, è possibile effettuare diverse operazioni con i pulsanti della ribbon bar. Ricordiamo che se nei parametri non è richiesta la disponibilità obbligatoria, allora potranno essere evase righe senza disponibilità.           
+După selecția liniilor ordinului care trebuie procesate în planul de încărcare, se pot efectua diverse operațiuni cu butoanele din ribbon bar. Rețineți că, dacă în parametri nu este cerută *disponibilitatea obligatorie*, atunci vor putea fi expediate linii fără disponibilitate.
 
-**Pulsanti specifici**       
-> **Inserisci ordine**: questo pulsante trasferisce le righe selezionate nella tab **Preparazione piano di carico**; 
-> **Note spedizione**: questo pulsante permette di visualizzare le *Note spedizione* presenti nel tab *Consegna* dell'*Anagrafica cliente*;               
-> **Proprietà ordine**: questo pulsante apre lo **Stato evasione** dell'ordine selezionato;       
-> **Modifica Note piano di carico**: questo pulsante permette di modificare le **Note piano di carico** inserite nel tab *Articoli* dell'Ordine cliente.        
+#### Butoane specifice  
+> **Inserează ordin**: transferă liniile selectate în tab **Pregătire plan de încărcare**;  
+> **Note expediere**: permite vizualizarea *Notelor de expediere* prezente în tab *Livrare* din *Registrul clientului*;  
+> **Proprietăți ordin**: deschide **Starea executării** ordinului selectat;  
+> **Modifică note plan de încărcare**: permite modificarea **Notelor planului de încărcare** introduse în tab *Articole* din  ordinul client.
 
-## Preparazione piano carico
+## Pregătire plan de încărcare
 
-In questo tab vengono proposti i dati per la preparazione del piano di carico. I dati visualizzati di default sono quelli impostati nella tabella [Tipi piano di carico](/docs/configurations/tables/logistics/load-plan-type), gli altri possono essere inseriti manualmente.      
+În acest tab sunt propuse datele pentru pregătirea planului de încărcare. Datele vizualizate în mod implicit sunt cele setate în tabelul [Tipuri plan de încărcare](/docs/configurations/tables/logistics/load-plan-type), celelalte pot fi introduse manual.
 
-**Pulsanti specifici**         
-> **Salva**: permette il salvataggio del piano di carico;     
-> **Imposta vettore**: questo pulsante permette di aprire la maschera di ricerca **Vettori** e selezionarne uno da associare al piano di carico; esso verrà riportato nella colonna Vettore della griglia;      
-> **Modifica note vettore**: questo pulsante permette di modificare le note del vettore e riporta le note nella colonna della griglia *Note vettore*;       
-> **Modifica numero vettore**: se lo stesso vettore arrivasse, per esempio, con più furgoni, potrei dividere la spedizione;       
-> **Rilascio piano**: questo pulsante rende disponibile il piano per la creazione di altri documenti (ad esempio il picking);    
-> **Sposta in altro piano di carico**: questo pulsante sposta la riga in un piano di carico già esistente, scelto dalla maschera di ricerca;      
-> **Creazione picking**: questo pulsante permette di creare il *Picking* dal piano di carico; nella maschera è necessario inserire il **Tipo picking**, l'**Operatore** ed è possibile scegliere se creare un picking diverso per ogni ordine o meno. Il picking creato sarà disponibile nella Ricerca picking.         
+#### Butoane specifice  
+> **Salvează**: permite salvarea planului de încărcare;  
+> **Setează transportator**: permite deschiderea ferestrei de căutare **Transportatori** și selectarea unuia pentru a-l asocia planului de încărcare; acesta va fi afișat în tabel, în coloana *Transportator*;  
+> **Modifică note transportator**: permite modificarea notelor transportatorului și le va afișa în coloana din tabelul *Note transportator*;  
+> **Modifică număr transportator**: dacă același transportator lucrează, de exemplu, cu mai multe furgonete, se va putea diviza expediția;  
+> **Lansează Plan**: face planul disponibil pentru crearea altor documente (de exemplu, dispoziţie de livrare);  
+> **Mută în alt plan de încărcare**: mută linia într-un plan de încărcare existent, ales din fereastra de căutare;  
+> **Creare dispoziţe livrare**: permite crearea *dispoziţie de livrare* din planul de încărcare; în fereastra este necesar să introduceți **Tip dispoziţie livrare**, **Operator** și puteți să alegeți dacă să creați o dispoziţie livrare diferită pentru fiecare ordin sau nu. Dispoziţie de livrare creată va fi disponibilă în *Căutarea dispoziţie livrare*.
 
-## Legenda
+## Legendă
 
-In questo tab vengono visualizzate le posizioni ed i vani per righe del piano di carico; queste vengono configurate nell'anagrafica dell'*Automezzo*.     
+În acest tab sunt vizibile pozițiile și spațiile pentru rândurile planului de încărcare; acestea sunt configurate în registrul *Vehicul*.
 
-## Riepilogo piani di carico
+## Rapoarte planuri de încărcare
 
-In questo tab viene visualizzato il riepilogo dei dati relativi al *Piano di carico*.
+În acest tab este afișat rezumatul datelor referitoare la *Planul de încărcare*.
