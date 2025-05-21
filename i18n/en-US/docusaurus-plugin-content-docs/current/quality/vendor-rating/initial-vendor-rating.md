@@ -77,10 +77,21 @@ The list consists of the following information:
 > **Sequence**: is the sequence of implementation of the *questions/activities*.   
 > **Description/Question**: free notes on the subject.   
 > **Answer**: free notes on the subject.   
+> **Category**: it is the *Category* associated with the *Description/Question* if retrieved from the *Check-list*. 
 > **Rating Expected**: is the minimum required *Rating Level* for the rating.   
+> **Weight (%)**: indicates the *weight* (importance), expressed as a percentage, associated with the *Description/Question* if taken from the *Check-list*.
 > **Rating Detected**: is the evaluated *Rating Level*.   
 > The character turns *Red* if the *Rating Detected* is lower than the *Rating Expected*.   
+> **Weight Score**: it is the *Score* automatically given by the system to the evaluation provided for the specific *Description/Question* based on the *Level* of the *Rating detected*;  
+> this score is calculated (Weight Score = EvaluationLevelDetected.Level / 100 * CheckListQuestion.WeightPercentage).
 > **Notes**: free annotations.
+
+
+:::tip Method used for calculating the Weight Score 
+For each individual *Description/Question*, where the information for *Weight (%)* and *Rating detected* has been entered, the following expression is applied:  
+- **Weight Score** = **Level** of the **Rating detected** / **100** * **Weight (%)**;  
+- **Weight Score** = **15** / **100** * **20** = **3**.  
+:::
 
 
 ### Extra Data

@@ -62,11 +62,11 @@ The list consists of the following information:
 > **Question**: free annotations on the subject.   
 > **Category**: to the *Question* it is possible to associate a *Category*.   
 > **Evaluation level**: it is the *Required evaluation competence level*;   
-this is considered in the management of [*Initial and periodic ratings*](/docs/quality/vendor-rating/initial-vendor-rating) and [*Periodic ratings on non-compliance*](/docs/quality/vendor-rating/vendor-rating-on-nc). 
+> this is considered in the management of [*Initial and periodic ratings*](/docs/quality/vendor-rating/initial-vendor-rating) and [*Periodic ratings on non-compliance*](/docs/quality/vendor-rating/vendor-rating-on-nc). 
 > **Active**: indicates whether the *question/activity* is still valid and usable.   
-> **Weight %**: indicates the *weight* (importance), expressed as a percentage, given to the demand; the percentage is to be understood for *Category*;   
-the control of 100% given to the Category can be executed by pressing the button *Check weights %*;   
-this value can be considered in the management of [*Initial and Periodic Ratings*](/docs/quality/vendor-rating/initial-vendor-rating).
+> **Weight (%)**: indicates the *weight* (importance), expressed as a percentage, given to the demand; the percentage is to be understood for *Category*;   
+> the control of 100% given to the Category can be executed by pressing the button *Check weights %*;   
+> this value can be considered in the management of [*Initial and Periodic Ratings*](/docs/quality/vendor-rating/initial-vendor-rating).
 > **Start date**: is the date from which the *question/activity* is valid and usable.   
 > **End date**: is the date from which the *question/activity* ceases to be valid and usable.   
 > **Notes**: free annotations.
