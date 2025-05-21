@@ -1,81 +1,79 @@
 ---
-title: Creazione lotto da lotto e Creazione lotto da lotto con cambio articolo
+title: Creare lot din lot și Creare lot din lot cu schimbare articol
 sidebar_position: 5
 ---
 
-### Creazione lotto da lotto
+### Crearea lot din lot
 
+:::important Utilizare
+Procedura *Creării Lotului din Lot* în Fluentis este o funcționalitate importantă care permite generarea unui nou lot pornind de la unul existent pentru același articol. Această operație este esențială pentru a gestiona eficient stocul și pentru a răspunde rapid necesităților din producție și logistică.
 
-:::important A cosa serve
-La procedura di Creazione Lotto da Lotto di Fluentis è un'importante funzionalità che permette di generare un nuovo lotto a partire da un lotto esistente dello stesso articolo. Questa operazione è fondamentale per gestire in modo efficace il magazzino e per rispondere tempestivamente alle esigenze di produzione e logistica.
-
-La procedura è strutturata in tre sezioni principali: un filtro per la selezione dei dati, una griglia che visualizza le informazioni relative al lotto scelto e una sezione dedicata ai dati del nuovo lotto. Gli utenti possono inserire informazioni cruciali come la quantità iniziale, il numero di colli, e le causali di scarico e carico per completare la registrazione del nuovo lotto. L'implementazione di questa procedura non solo semplifica la movimentazione dei lotti, ma aiuta anche a mantenere una tracciabilità accurata all'interno del sistema, garantendo i requisiti di qualità e conformità normativa.
+Procedura este structurată în trei secțiuni principale: un filtrul pentru selecția datelor, un tabel care vizualizează informațiile referitoare la lotul ales și o secțiune dedicată datelor noului lot.  
+Utilizatorii pot introduce informații esențiale precum cantitatea inițială, numărul de colete și șabloanele de descărcare și încărcare pentru a completa înregistrarea noului lot.  
+Implementarea acestei proceduri nu doar simplifică manipularea loturilor, ci ajută și la menținerea unei trasabilități precise în sistem, asigurând cerințele de calitate și conformitate regulatoare.
 :::
 
-Questa form permette di creare un nuovo lotto, di uno stesso articolo, partendo dal vecchio lotto.
+Acest form permite crearea unui nou lot, pentru același articol, pornind de la un lot vechi.
 
-La form si compone di 3 sezioni distinte:
+Formul este compus din 3 secțiuni distincte:
 
-- filtro: in cui è possibile filtrare i dati desiderati e tramite il pulsante **Ricerca** presente nella *Ribbon bar* possono essere visualizzati i dati nella griglia sottostante;     
-- griglia dei risultati: contenente tutte le informazioni relative al lotto cercato;          
-- dati nuovo lotto: in questa sezione, sottostante alla griglia dei risultati, sono contenuti i dati relativi al nuovo lotto.
+- filtre: în care este posibilă filtrarea datelor dorite și, cu ajutorul butonului **Căutare** din *Ribbon bar*, pot fi vizualizate datele în tabelul de mai jos;  
+- tabelul rezultatelor: conține toate informațiile referitoare la lotul căutat;  
+- datele noului lot: în această secțiune, situată sub tabelul rezultatelor, sunt incluse datele referitoare la noul lot.
 
-Di seguito sono riportati i dati relativi al nuovo lotto da creare:
+#### Câmpuri specifice
 
-> **Quantità iniziale lotto di destinazione**: indica la quantità iniziale che avrà il lotto di destinazione;         
-> **Numero colli lotto di destinazione**: indica il numero di colli che avrà il lotto di destinazione;              
-> **Causale di scarico lotto di origine**: indica la causale di scarico con la quale verrà scaricato il lotto di origine;        
-> **Causale di carico lotto di destinazione**: indica la causale di carico con la quale verrà caricato il lotto di destinazione;      
-> **Ubicazione lotto di destinazione**: indica l'ubicazione nella quale verrà caricato il lotto di destinazione.
+- **Cantitate inițială lot de destinație (Quantità iniziale lotto di destinazione)**: reprezintă cantitatea inițială pe care o va avea lotul de destinație;  
+- **Număr de colete ai lotului de destinație (Numero colete lotto di destinazione)**: reprezintă numărul de colete pe care îl va avea lotul de destinație;  
+- **Șablon de descărcare a lotului de origine (Causale di scarico lotto di origine)**: reprezintă cauza de descărcare cu care va fi descărcat lotul de origine;  
+- **Șablon de încărcare a lotului de destinatie (Causale di carico lotto di destinazione)**: reprezintă cauza de încărcare cu care va fi încărcat lotul de destinație;  
+- **Locația lotului de destinație (Ubicazione lotto di destinazione)**: reprezintă locația în care va fi încărcat lotul de destinație.
 
-:::note **ATTENZIONE** 
-Le causali di magazzino che possono essere utilizzate in questa procedura sono solo quelle che hanno il flag **Crea lotto da lotto** attivo nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).     
-Per poterlo settare è necessario creare una causale di **Scarico**, con i flag **Gestione lotti** e **Integra quantità iniziale** attivi, il flag **Distinta base** disattivato e deve avere una **contro partita** di **Carico**.
+:::note Important
+Cauzele de gestiune care pot fi utilizate în această procedură sunt doar cele care au flagul **Creează lot din lot (Crea lotto da lotto)** activ în tabela de [Cauze de gestiune (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates/).  
+Pentru a putea seta acest lucru, este necesară crearea unei cauze de **Descărcare (Scarico)**, cu flagurile **Gestionare loturi (Gestione lotti)** și **Integrarea cantității inițiale (Integra quantità iniziale)** active, flagul **Diagrama de bază (Distinta base)** dezactivat și trebuie să aibă o **contraparte (contro partita)** de **Încărcare (Carico)**.
 :::
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Odată ce toate filtrele dorite au fost setate, trebuie să faceți clic pe butonul **Căutare (Ricerca)** prezent în *Ribbon bar* pentru a vizualiza rezultatele în tabelul de rezultate.
 
-Dopo di che, è necessario selezionare il lotto desiderato ed inserire i dati relativi al nuovo lotto nella parte sottostante della form, a questo punto basterà premere il pulsante **Creazione lotto** per poter creare il nuovo lotto per il medesimo articolo.
+După aceea, este necesar să selectați lotul dorit și să introduceți datele referitoare la noul lot în partea de jos a formularului, după care trebuie să apăsați butonul **Crearea lotului (Creazione lotto)** pentru a putea crea noul lot pentru același articol.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-
-
-### Creazione lotto da lotto con cambio articolo
+Pentru detalii despre funcționarea comună a formelor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
 
 
-:::important A cosa serve
-La Creazione Lotto da Lotto con Cambio Articolo è una procedura avanzata di Fluentis che consente di creare un nuovo lotto per un articolo diverso, partendo da un lotto di origine. Questa funzionalità risulta particolarmente utile nel contesto di gestione delle scorte, quando è necessario trasferire quantità da un articolo a un altro, mantenendo sempre una registrazione dettagliata dei lotti.
+### Crearea lotului din lot cu schimbare articol (Creazione lotto da lotto con cambio articolo)
 
-Anche questa procedura è organizzata in tre sezioni: un filtro per la ricerca dei lotti esistenti, una griglia che mostra i risultati della ricerca e una sezione per l'inserimento dei dati relativi al nuovo lotto. Gli utenti possono specificare dettagli come il codice articolo di destinazione, la quantità iniziale e la causale di scarico e carico. Grazie a questa procedura, le aziende possono ottimizzare i flussi di magazzino e garantire una maggiore efficienza operativa, assicurando che tutti i movimenti siano tracciabili e correttamente registrati nel sistema.
+:::important Utilizare
+Crearea Lotului din Lot cu Schimbare Artikel este o procedură avansată în Fluentis care permite crearea unui nou lot pentru un articol diferit, pornind de la un lot de origine. Această funcționalitate este deosebit de utilă în contextul gestionării stocurilor, atunci când este necesar să se transfere cantități de la un articol la altul, menținând întotdeauna o înregistrare detaliată a loturilor.
+
+Această procedură este de asemenea organizată în trei secțiuni: un filtru pentru căutarea loturilor existente, un tabel care arată rezultatele căutării și o secțiune pentru introducerea datelor referitoare la noul lot. Utilizatorii pot specifica detalii precum codul articolului de destinație, cantitatea inițială și șabloanele de descărcare și încărcare. Datorită acestei proceduri, companiile pot optimiza fluxurile de stocuri și asigura o eficiență operațională mai mare, garantând că toate mișcările sunt trasabile și corect înregistrate în sistem.
 :::
 
+Această formă permite crearea unui nou lot cu un articol nou, pornind de la un lot diferit cu un alt articol.
 
-Questa form permette di creare un nuovo lotto con un nuovo articolo partendo da un diverso lotto con un diverso articolo.
+Formul este compusă din 3 secțiuni distincte:
 
-La form si compone di 3 sezioni distinte:
+- filtrul: în care este posibilă filtrarea datelor dorite și, cu ajutorul butonului **Căutare (Ricerca)** prezent în *Ribbon bar*, pot fi vizualizate datele în tabelul de mai jos;  
+- tabelul rezultatelor: conținând toate informațiile referitoare la lotul căutat;  
+- datele noului lot: în această secțiune, situată sub tabelul rezultatelor, sunt incluse datele referitoare la noul lot.
 
-- filtro: in cui è possibile filtrare i dati desiderati e tramite il pulsante **Ricerca** presente nella *Ribbon bar* possono essere visualizzati i dati nella griglia sottostante;     
-- griglia dei risultati: contenente tutte le informazioni relative al lotto cercato;          
-- dati nuovo lotto: in questa sezione, sottostante alla griglia dei risultati, sono contenuti i dati relativi al nuovo lotto.
+Mai jos sunt prezentate datele referitoare la noul lot de creat:
 
-Di seguito sono riportati i dati relativi al nuovo lotto da creare:
+- **Articolul lotului de destinație (Articolo lotto di destinazione)**: permite introducerea clasei, codului și descrierii articolului de destinație;  
+- **Varianta articolului (Variante articolo)**: permite introducerea variantei articolului de destinație;  
+- **Cantitate inițială a lotului de destinație (Quantità iniziale lotto di destinazione)**: reprezintă cantitatea inițială pe care o va avea lotul de destinație;  
+- **Număr de colete ai lotului de destinație (Numero colete lotto di destinazione)**: reprezintă numărul de colete pe care îl va avea lotul de destinație;  
+- **Șablon de descărcare a lotului de origine (Causale di scarico lotto di origine)**: reprezintă causa de descărcare cu care va fi descărcat lotul de origine;  
+- **Șablon de încărcare a lotului de destinație (Causale di carico lotto di destinazione)**: reprezintă cauza de încărcare cu care va fi încărcat lotul de destinație;  
+- **Locația lotului de destinație (Ubicazione lotto di destinazione)**: reprezintă locația în care va fi încărcat lotul de destinație.
 
-> **Articolo lotto di destinazione**: permette di inserire classe, codice e descrizione dell'articolo di destinazione;            
-> **Variante articolo**: permette di inserire la variante dell'articolo di destinazione;              
-> **Quantità iniziale lotto di destinazione**: indica la quantità iniziale che avrà il lotto di destinazione;         
-> **Numero colli lotto di destinazione**: indica il numero di colli che avrà il lotto di destinazione;              
-> **Causale di scarico lotto di origine**: indica la causale di scarico con la quale verrà scaricato il lotto di origine;        
-> **Causale di carico lotto di destinazione**: indica la causale di carico con la quale verrà caricato il lotto di destinazione;      
-> **Ubicazione lotto di destinazione**: indica l'ubicazione nella quale verrà caricato il lotto di destinazione.
-
-:::note **ATTENZIONE** 
-Le causali di magazzino che possono essere utilizzate in questa procedura sono solo quelle che hanno il flag **Crea lotto da lotto** attivo nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).        
-Per poterlo attivare è necessario creare una causale di **Scarico**, con i flag **Gestione lotti** e **Integra quantità iniziale** attivi, il flag **Distinta base** disattivato e deve avere una **contro partita** di **Carico**.
+:::note Important
+Cauzele de gestiune care pot fi utilizate în această procedură sunt doar cele care au flagul **Creează lot din lot (Crea lotto da lotto)** activ în tabela de [Cauze de gestiune (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates/).  
+Pentru a putea activa acest lucru, este necesară crearea unei cauze de **Descărcare (Scarico)**, cu flagurile **Gestionare loturi (Gestione lotti)** și **Integrarea cantității inițiale (Integra quantità iniziale)** active, flagul **Diagrama de bază (Distinta base)** dezactivat și trebuie să aibă o **contraparte (contro partita)** de **Încărcare (Carico)**.
 :::
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Odată ce toate filtrele dorite au fost setate, trebuie să faceți clic pe butonul **Căutare (Ricerca)** prezent în *Ribbon bar* pentru a vizualiza rezultatele în tabelul de rezultate.
 
-Dopo di che, è necessario selezionare il lotto desiderato ed inserire i dati relativi al nuovo lotto nella parte sottostante della form, a questo punto basterà premere il pulsante **Creazione lotto** per poter creare il nuovo lotto per il medesimo articolo.
+După aceea, este necesar să selectați lotul dorit și să introduceți datele referitoare la noul lot în partea de jos a formularului, după care trebuie să apăsați butonul **Crearea lotului (Creazione lotto)** pentru a putea crea noul lot pentru articolul diferit.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a formelor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).

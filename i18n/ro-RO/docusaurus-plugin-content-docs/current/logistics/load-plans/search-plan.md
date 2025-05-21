@@ -1,18 +1,19 @@
 ---
-title: Piani di carico
+title: Planuri de încărcare
 sidebar_position: 1
 ---
 
-Nella maschera di **Ricerca piani di carico** è possibile consultare i piani di carico precedentemente inseriti, oltre a creare liste UDC, picking, fatture e DDT a partire dal piano di carico selezionato, mediante i pulsanti presenti nella testata.
+Fereastra de **Căutare planuri de încărcare** permite consultarea planurilor de încărcare introduse anterior, precum și crearea listelor UDI, dispozițiilor de livrare, facturilor și avizelor plecând de la planul de încărcare selectat și utilizând butoanele disponibile în antet.
 
-*Pulsanti specifici*               
-**Creazione Lista UDC**: crea la Lista UDC a partire dal piano di carico selezionato;            
-**Creazione picking**: crea il picking a partire dal piano di carico selezionato;             
-**Creazione fattura**: crea la fattura UDC a partire dal piano di carico selezionato;              
-**Creazione DDT**: crea il DDT a partire dal piano di carico selezionato.
+### Butoane specifice  
+
+> **Creare listă UDI**: creează lista UDI pe baza planului de încărcare selectat;            
+**Creare dispoziție de livrare**: creează dispozițiilor de livrare pe baza planului de încărcare selectat;             
+> **Creare factură**: creează factura UDI pe baza planului de încărcare selectat;              
+> **Creare avize**: creează avizul pe baza planului de încărcare selectat.
 
 
-:::note Ricorda
-Per poter effettuare la *Creazione Picking* dal Piano di carico è necessario aver prima specificato le dimensioni del piano.    
-Le dimesnsioni vengono calcolate in automatico sulla base delle dimensioni, dei pesi e del volume inseriti per ciascun articolo nel tab [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) della sua anagrafica. 
+:::note Important
+Pentru a putea *Crearea dispoziţiav de livrare* din planul de încărcare, este necesar să fi specificat mai întâi dimensiunile planului.    
+Dimensiunile sunt calculate automat pe baza dimensiunilor, greutăților și volumului introduse pentru fiecare articol în tab-ul [Greutăți/Dimensiuni](/docs/erp-home/registers/items/create-new-item) +n reigstrul propriu.
 :::
