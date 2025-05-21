@@ -26,9 +26,9 @@ En la parte superior se encuentran los campos de **filtro**:
 Si se desea buscar también por una determinada fecha de la anotación contable, siempre es posible intervenir en el filtro de la columna en la cuadrícula de resultados.
 :::
 
-**Operaciones (Operazioni):** filtra en base a las tres categorías (activas, pasivas y autoliquidación) consideradas para la coincidencia entre los códigos de IVA y las líneas de impresión de la Declaración de IVA Anual. Haga referencia a la tabla [**Tipos/ Modalidades de IVA (Aliquote/ Modalità IVA)**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione).
+**Operaciones (Operazioni):** filtra en base a las tres categorías (activas, pasivas y autoliquidación) consideradas para la coincidencia entre los códigos de IVA y las líneas de impresión de la Declaración de IVA Anual. Haga referencia a la tabla [**Tipos/ Modalidades de IVA (Aliquote/ Modalità IVA)**](/docs/configurations/tables/finance/vat-rates).
 
-**Línea de declaración fiscal (Riga Dichiarazione fiscale):** filtro que debe coincidir con el anterior. Después de seleccionar la tipología de operaciones, es posible detallar qué códigos de IVA filtrar en cuanto vinculados a una determinada línea de impresión de la Declaración de IVA Anual. Haga referencia a la tabla [**Tipos/ Modalidades de IVA (Aliquote/ Modalità IVA)**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione).
+**Línea de declaración fiscal (Riga Dichiarazione fiscale):** filtro que debe coincidir con el anterior. Después de seleccionar la tipología de operaciones, es posible detallar qué códigos de IVA filtrar en cuanto vinculados a una determinada línea de impresión de la Declaración de IVA Anual. Haga referencia a la tabla [**Tipos/ Modalidades de IVA (Aliquote/ Modalità IVA)**](/docs/configurations/tables/finance/vat-rates).
 
 **Tipo de IVA (Tipo IVA):** filtro relacionado con el tipo de operación del IVA. El dato puede asociarse a los movimientos de IVA al momento de crear las anotaciones contables, en la sección *detalles del IVA del movimiento*, a través del campo homónimo.
 

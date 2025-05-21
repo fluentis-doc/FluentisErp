@@ -75,7 +75,7 @@ Nella sezione sottostante la griglia vengono riportati i totali del documento:
 
 > **Autorizzazione RDA**: permette di autorizzare tutte le righe articolo selezionate; da questo momento il documento è considerato confermato.   
 
-> **Generatore RDO**: cliccando questo bottone verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe presenti nel tan *Generatore RDO*. Per maggiori dettagli vedere il paragrafo [Generatore RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generatore-rdo).   
+> **Generatore RDO**: cliccando questo bottone verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe presenti nel tan *Generatore RDO*. Per maggiori dettagli vedere il paragrafo [Generatore RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request).   
 
 > **Rollback RDO**: permette di annullare ed eliminare la richiesta di offerta creata precedentemente.   
 

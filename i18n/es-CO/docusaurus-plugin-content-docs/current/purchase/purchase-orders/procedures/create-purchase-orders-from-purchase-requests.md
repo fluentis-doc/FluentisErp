@@ -18,7 +18,7 @@ En esta pestaña se seleccionan los documentos de origen a partir de los cuales 
 
 Después de haber generado el *Prototipo de pedido*, es posible confirmarlo en función de los *Proveedores preferenciales* de los artículos o de los *Listados de proveedores*. En esta sección, es necesario elegir el proveedor desde el cual ordenar.
 
-- **Seleccionar el proveedor para cada artículo (Selezionare il fornitore per ciascun articolo)**: el proveedor se propone automáticamente según el parámetro seleccionado en la sección superior (para los detalles de los indicadores, consulte la pestaña [Parámetros (Parametri)](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests#parametri)).
+- **Seleccionar el proveedor para cada artículo (Selezionare il fornitore per ciascun articolo)**: el proveedor se propone automáticamente según el parámetro seleccionado en la sección superior (para los detalles de los indicadores, consulte la pestaña [Parámetros (Parametri)](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests)).
 
 Las filas de artículos sin proveedor pueden ser seleccionadas con el botón derecho del mouse y trasladadas bajo el proveedor deseado que ya tenga al menos una fila de artículo vinculada. Alternativamente, se puede utilizar el botón *scegli fornitore* en la barra de herramientas (ribbon bar).
 

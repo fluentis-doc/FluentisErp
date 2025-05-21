@@ -23,7 +23,7 @@ The **Fast Start** is a feature designed to make the initialization of the Fluen
 - Subsequently review the generated parameters to ensure compliance with business requirements.
 
 :::tip[Where to Activate]
-**To launch the procedure**, access the [**Company Table**](/docs/configurations/tables/general-settings/company#pulsante-impostazioni-generali), enter the specific company of interest, and press the *General Settings* button present in the ribbon bar.
+**To launch the procedure**, access the [**Company Table**](/docs/configurations/tables/general-settings/company), enter the specific company of interest, and press the *General Settings* button present in the ribbon bar.
 :::
 
 :::note[Info]

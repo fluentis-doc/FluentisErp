@@ -26,9 +26,9 @@ At the top, there are **filter** fields:
 If you want to search for a specific date of the accounting entry, it is always possible to adjust the column filter in the results grid.
 :::
 
-**Operations:** filters based on the three categories (active, passive, and reverse charge) considered for matching VAT codes and lines of the printout for the Annual VAT Declaration. Refer to the table [**Rates / VAT Methods**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Operations:** filters based on the three categories (active, passive, and reverse charge) considered for matching VAT codes and lines of the printout for the Annual VAT Declaration. Refer to the table [**Rates / VAT Methods**](/docs/configurations/tables/finance/vat-rates)
 
-**Fiscal Declaration Row:** filter to be matched with the previous one. After selecting the type of operations, it is possible to detail which VAT codes to filter as they are matched to a specific line of the printout for the Annual VAT Declaration. Refer to the table [**Rates / VAT Methods**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Fiscal Declaration Row:** filter to be matched with the previous one. After selecting the type of operations, it is possible to detail which VAT codes to filter as they are matched to a specific line of the printout for the Annual VAT Declaration. Refer to the table [**Rates / VAT Methods**](/docs/configurations/tables/finance/vat-rates)
 
 **VAT Type:** filter related to the type of VAT operation. This data can be associated with VAT movements when creating accounting entries, section *VAT details of the movement*, through the homonymous field.
 

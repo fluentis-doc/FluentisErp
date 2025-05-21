@@ -18,7 +18,7 @@ In this tab, the source documents from which to create the Purchase Order are ch
 
 After generating the *Order Prototype*, it can be confirmed based on the *Preferred Suppliers* of the items or *Supplier Price Lists*. In this section, the supplier from whom to order must be chosen.
 
-- **Select the supplier for each item:** the supplier is proposed automatically based on the parameter selected in the upper section (for flag details, see the tab [Parameters](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests#parametri)).
+- **Select the supplier for each item:** the supplier is proposed automatically based on the parameter selected in the upper section (for flag details, see the tab [Parameters](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests)).
 
 Item lines without a supplier can be selected with the right mouse button and moved under the desired supplier that already has at least one matching item line. Alternatively, the *Choose Supplier* button in the ribbon bar can be used.
 

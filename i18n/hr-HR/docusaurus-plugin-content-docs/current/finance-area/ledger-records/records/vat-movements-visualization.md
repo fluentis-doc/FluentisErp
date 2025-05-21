@@ -26,9 +26,9 @@ U gornjem dijelu nalaze se **filtri**:
 Ako želite pretraživati i prema određenom datumu računovodstvenog zapisnika, uvijek možete intervenirati u filtru stupca u rezultatnoj tablici.
 :::
 
-**Operacije:** filtrira prema tri kategorije (aktivne, pasivne i reverse charge) koje se razmatraju za povezivanje PDV kodova i redaka ispisa za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Operacije:** filtrira prema tri kategorije (aktivne, pasivne i reverse charge) koje se razmatraju za povezivanje PDV kodova i redaka ispisa za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates)
 
-**Redak porezne prijave:** filtar koji treba povezati s prethodnim. Nakon što se odabere vrsta operacija, moguće je detaljno filtrirati koji PDV kodovi se odnose na određeni redak u ispisu za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Redak porezne prijave:** filtar koji treba povezati s prethodnim. Nakon što se odabere vrsta operacija, moguće je detaljno filtrirati koji PDV kodovi se odnose na određeni redak u ispisu za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates)
 
 **Tip PDV-a:** filtar koji se odnosi na vrstu PDV operacije. Podaci se mogu povezati s PDV kretanjima prilikom izrade računovodstvenih zapisa, u odjeljku *podaci PDV-a za kretanje*, putem istoimenog polja. 
 

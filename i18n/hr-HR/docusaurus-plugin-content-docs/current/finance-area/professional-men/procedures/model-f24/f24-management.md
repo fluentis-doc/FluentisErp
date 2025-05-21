@@ -33,7 +33,7 @@ U zaglavlju modela moguće je ispuniti polja za eventualne **Bankovni troškovi*
 U ovom trenutku je moguće pritisnuti gumb **Knjiženje** za automatsko generiranje knjiženja koje bilježi izlaz iz banke i povrat računa (automatski napunjenih) gdje je učitana dugovanja za zadržane poreze za uplatu i za PDV za uplatu (primjer računa koji se obično nazivaju Državni proračun c/porezi na zadržane iznose i Državni proračun C/PDV).
 
 :::tip[Napomena]
-Računi koji se automatski koriste za učitavanje dugovanja za PDV i dugovanja za akontacije poreza na dohodak postavljeni su, respektivno, u [**parametrima računovodstva**](/docs/configurations/parameters/finance/accounting-parameters#conti) što se tiče PDV-a, te u tablici [**Tipovi odbitka poreza**](/docs/configurations/tables/finance/withholding-tax-types) za akontacije poreza na dohodak, zadani račun koji je mogao biti zamijenjen tijekom faze [**knjigovodstvene obrade isplate naknada**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
+Računi koji se automatski koriste za učitavanje dugovanja za PDV i dugovanja za akontacije poreza na dohodak postavljeni su, respektivno, u [**parametrima računovodstva**](/docs/configurations/parameters/finance/accounting-parameters) što se tiče PDV-a, te u tablici [**Tipovi odbitka poreza**](/docs/configurations/tables/finance/withholding-tax-types) za akontacije poreza na dohodak, zadani račun koji je mogao biti zamijenjen tijekom faze [**knjigovodstvene obrade isplate naknada**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
 :::
 
 

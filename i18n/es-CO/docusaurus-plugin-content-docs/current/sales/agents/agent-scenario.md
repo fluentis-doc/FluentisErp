@@ -112,7 +112,7 @@ El cálculo de la comisión en documentos como el pedido, la guía y la factura 
 
 Se remite a los procedimientos de la [**definición de descuentos**](/docs/sales/price-control/definition/) del área de Ventas.
 
-Nota: en el encabezado de los documentos de venta se destaca el agente o los agentes vinculados, pero para controlar el valor de la comisión calculada (ya a partir del documento en cuestión), es necesario trasladarse a la pestaña [**Artículos**](/docs/sales/sales-invoices/invoicing/sales-invoice#agenti).
+Nota: en el encabezado de los documentos de venta se destaca el agente o los agentes vinculados, pero para controlar el valor de la comisión calculada (ya a partir del documento en cuestión), es necesario trasladarse a la pestaña [**Artículos**](/docs/sales/sales-invoices/invoicing/sales-invoice).
 
 ## Cobro de las facturas (Incasso delle fatture)
 

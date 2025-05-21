@@ -75,7 +75,7 @@ In the section below the grid, the document totals are reported:
 
 > **Authorize PD**: allows you to authorize all selected item lines; from this moment the document is considered confirmed.   
 
-> **RDO Generator**: clicking this button will create the [Offer Request](/docs/purchase/offer-request/settings) for the lines present in the *RDO Generator* tab. For further details, see the section [RDO Generator](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generatore-rdo).   
+> **RDO Generator**: clicking this button will create the [Offer Request](/docs/purchase/offer-request/settings) for the lines present in the *RDO Generator* tab. For further details, see the section [RDO Generator](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request).   
 
 > **Rollback RDO**: allows you to cancel and delete the previously created offer request.   
 

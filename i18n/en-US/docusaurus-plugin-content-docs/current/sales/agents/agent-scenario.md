@@ -111,7 +111,7 @@ The calculation of commissions in documents such as orders, bills, and invoices 
 
 Refer to the procedures for the [**definition of discounts**](/docs/sales/price-control/definition/) in the Sales area.
 
-Note: in the header of the sales documents, the agent or agents attached are highlighted, but to check the value of the calculated commission (starting from the document in question), you must go to the [**Items**](/docs/sales/sales-invoices/invoicing/sales-invoice#agenti) tab.
+Note: in the header of the sales documents, the agent or agents attached are highlighted, but to check the value of the calculated commission (starting from the document in question), you must go to the [**Items**](/docs/sales/sales-invoices/invoicing/sales-invoice) tab.
 
 ## Collection of Invoices 
 

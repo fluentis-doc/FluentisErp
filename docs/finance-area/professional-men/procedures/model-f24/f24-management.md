@@ -33,7 +33,7 @@ Nella testata del modello è possibile compilare i campi per le eventuali **Spes
 A questo punto è possibile premere il bottone **Contabilizzazione** per generare automaticamente la scrittura che rileva l'uscita di banca e lo storno dei conti (alimentati automaticamente) dove è stato caricato il debito per ritenute d'acconto da versare e per iva da versare (esempio conti solitamente denominati Erario c/ritenute d'acconto ed Erario C/Iva).
 
 :::tip[Nota]
-I conti utilizzati automaticamente per caricare il debito IVA e il debito per le ritenute d'acconto sono impostati, rispettivamente, nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters#conti) per quanto riguarda l'iva, e nella tabella [**Tipi Ritenuta**](/docs/configurations/tables/finance/withholding-tax-types) per le ritenute d'acconto, conto di default che può essere stato sovrascritto in fase di [**contabilizzazione pagamento compensi**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
+I conti utilizzati automaticamente per caricare il debito IVA e il debito per le ritenute d'acconto sono impostati, rispettivamente, nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters) per quanto riguarda l'iva, e nella tabella [**Tipi Ritenuta**](/docs/configurations/tables/finance/withholding-tax-types) per le ritenute d'acconto, conto di default che può essere stato sovrascritto in fase di [**contabilizzazione pagamento compensi**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
 :::
 
 

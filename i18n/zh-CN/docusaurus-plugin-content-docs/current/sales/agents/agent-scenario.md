@@ -113,7 +113,7 @@ Il calcolo della provvigione nei documenti quali ordine, bolla e fattura (viene 
 
 Si rinvia alle procedure della [**definizione degli sconti**](/docs/sales/price-control/definition/) dell'area Vendite.
 
-Nota: nella testata dei documenti di vendita viene evidenziato l'agente o gli agenti agganciati, ma per controllare il valore della provvigione calcolata (già a partire dal documento in questione) occorre spostarsi nel tab [**Articoli**](/docs/sales/sales-invoices/invoicing/sales-invoice#agenti) 
+Nota: nella testata dei documenti di vendita viene evidenziato l'agente o gli agenti agganciati, ma per controllare il valore della provvigione calcolata (già a partire dal documento in questione) occorre spostarsi nel tab [**Articoli**](/docs/sales/sales-invoices/invoicing/sales-invoice) 
 
 ## Incasso delle fatture
 

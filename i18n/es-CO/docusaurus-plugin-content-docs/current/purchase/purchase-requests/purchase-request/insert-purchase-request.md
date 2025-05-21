@@ -74,7 +74,7 @@ En la sección inferior de la cuadrícula se reportan los totales del documento:
 
 > **Autorización RDA**: permite autorizar todas las líneas de artículo seleccionadas; a partir de este momento, el documento se considera confirmado.   
 
-> **Generador RDO**: al hacer clic en este botón se creará la [Solicitud de Oferta](/docs/purchase/offer-request/settings) para las líneas presentes en la pestaña *Generador RDO*. Para más detalles, consulte el párrafo [Generador RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generatore-rdo).   
+> **Generador RDO**: al hacer clic en este botón se creará la [Solicitud de Oferta](/docs/purchase/offer-request/settings) para las líneas presentes en la pestaña *Generador RDO*. Para más detalles, consulte el párrafo [Generador RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request).   
 
 > **Rollback RDO**: permite anular y eliminar la solicitud de oferta creada previamente.   
 

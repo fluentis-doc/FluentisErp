@@ -18,7 +18,7 @@ In questa tab vengono scelti i documenti di origine dai quali creare l'ordine fo
 
 Dopo aver generato il *Prototipo ordine*, è possibile confermarlo in base ai *Fornitori preferenziali* degli articoli o ai *Listini fornitori*. In questa sezione è necessario scegliere il fornitore dal quale ordinare.
 
-- **Selezionare il fornitore per ciascun articolo**: il fornitore viene proposto automaticamente in base al parametro selezionato nella sezione superiore (per i dettagli dei flag, vedere il tab [Parametri](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests#parametri)).
+- **Selezionare il fornitore per ciascun articolo**: il fornitore viene proposto automaticamente in base al parametro selezionato nella sezione superiore (per i dettagli dei flag, vedere il tab [Parametri](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests)).
 
 Le righe articolo senza fornitore possono essere selezionate con il tasto destro del mouse e spostate sotto il fornitore desiderato che ha già almeno una riga articolo abbinata. In alternativa, è possibile utilizzare il pulsante *Scegli fornitore* nella ribbon bar.
 

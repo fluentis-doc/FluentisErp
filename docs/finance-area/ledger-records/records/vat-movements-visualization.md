@@ -26,9 +26,9 @@ Nella parte superiore sono presenti i campi di **filtro**:
 Se si desidera ricercare anche per una determinata data della registrazione contabile è sempre possibile intervenire sul filtro della colonna nella griglia dei risultati.
 :::
 
-**Operazioni:** filtra in base alle tre categorie (attive,passive e reverse charge) considerate per l'abbinamento tr i codici iva e i righi della stampa per la Dichiarazione IVA Annuale. Fare riferimento alla tabella [**Aliquote/ Modalità IVA**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Operazioni:** filtra in base alle tre categorie (attive,passive e reverse charge) considerate per l'abbinamento tr i codici iva e i righi della stampa per la Dichiarazione IVA Annuale. Fare riferimento alla tabella [**Aliquote/ Modalità IVA**](/docs/configurations/tables/finance/vat-rates)
 
-**Riga Dichiarazione fiscale:** filtro da abbinare al precedente. Dopo aver selezionato la tipologia di operazioni è possibile dettagliare quali codici iva filtrare inquanto abbinati ad un determinato rigo della stampa per la Dichiarazione IVA Annuale. Fare riferimento alla tabella [**Aliquote/ Modalità IVA**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Riga Dichiarazione fiscale:** filtro da abbinare al precedente. Dopo aver selezionato la tipologia di operazioni è possibile dettagliare quali codici iva filtrare inquanto abbinati ad un determinato rigo della stampa per la Dichiarazione IVA Annuale. Fare riferimento alla tabella [**Aliquote/ Modalità IVA**](/docs/configurations/tables/finance/vat-rates)
 
 **Tipo IVA:** filtro riferito alla tipologia di operazione iva. Il dato può essere associato ai movimenti iva in sede di creazione delle registrazioni contabili, sezione *estremi iva del movimento*, tramite il campo omonimo.
 

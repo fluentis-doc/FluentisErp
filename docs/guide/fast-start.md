@@ -24,7 +24,7 @@ Il **Fast Start** è una funzionalità progettata per rendere rapida e semplice 
 
 
 :::tip[Dove si attiva]
-**Per lanciare la procedura**, accedere alla [**tabella Società**](/docs/configurations/tables/general-settings/company#pulsante-impostazioni-generali), entrare nella specifica società interessata e premere il tasto *Impostazioni Generali* presente nella ribbon bar.
+**Per lanciare la procedura**, accedere alla [**tabella Società**](/docs/configurations/tables/general-settings/company), entrare nella specifica società interessata e premere il tasto *Impostazioni Generali* presente nella ribbon bar.
 :::
 
 
