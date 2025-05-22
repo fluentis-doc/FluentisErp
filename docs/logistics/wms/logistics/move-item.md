@@ -18,10 +18,10 @@ Nel caso in cui l'articolo sia gestito a lotti, verrà visualizzato anche il rel
 Nella parte inferiore della form è presente una griglia che permette di vedere la giacenza e la disponibilità dell'articolo con l'eventuale indicazione del lotto, ubicazione, unità di misura alternativa e giacenza nella quantità alternativa.
 Nella griglia sono riportate le seguente colonne:
 
-> **Unità di misura**: indica l'unità di misura gestionale dell'articolo (principale);     
-> **Disponibile**: indica è la quantità disponibile (non impegnata) di quell'articolo;       
-> **Giacenza (Gest.)**: indica la giacenza nell'unità di misura alternativa ed è presente solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item);            
-> **Unità di misura alternativa**: indica l'unità di misura articolo;          
+> **Unità di misura**: indica l'unità di misura gestionale (principale) dell'articolo;      
+> **Disponibile**: indica la quantità disponibile (non impegnata) di quell'articolo;       
+> **Giacenza (Gest.)**: indica la giacenza nell'unità di misura gestionale dell'articolo;        
+> **Unità di misura alternativa**: indica l'unità di misura alternativa dell'articolo; è presente solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item);                     
 > **Giacenza**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata sulla base dei movimenti di magazzino;         
 > **Giacenza (FC)**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;    
 > **Ubicazione**: indica l'ubicazione di partenza dell'articolo;                      
