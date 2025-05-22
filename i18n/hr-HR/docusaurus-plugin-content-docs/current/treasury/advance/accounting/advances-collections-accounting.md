@@ -1,23 +1,23 @@
 ---
-title: Contabilizzazione Anticipi Incassi
+title: Knjiženje primljenih avansa 
 sidebar_position: 2
 ---
 
-Da questa posizione vengono gestiti contabilmente gli incassi delle fatture o scadenze anticipate dalla banca.
+S ovog obrasca upravlja se knjigovodstvenim prihodima s računa ili dospjelim predujmovima od strane banke.
 
-Operando da qui verranno generate automaticamente le scritture contabili (due) che stornano il debito aperto per acconto e quindi vanno a rilevare l'incasso del credito al netto di commissioni e interessi.
+Ovdje se automatski mogu generirati dva knjigovodstvena dokumenta koji poništavaju otvoreni dug za avans, te će evidentirati naplatu potraživanja umanjenu za naknade i kamate. 
 
-Nella tab Parametri è necessario inserire i conti da utilizzare per l'incasso, per gl i eventuali abbuoni e gli importi di eventuali commissioni ed interessi, oltre alla causale contabile da utilizzare per l'incasso.
+U kartici Parametri potrebno je unijeti račune koji će se koristiti za naplatu, eventualne popuste te iznose eventualnih naknada i kamata, kao i dokument koji će se koristiti za naplatu.
 
-Anche in questo caso lo schema della scrittura è fisso indipendentemente dal template della causale selezionata.
+Proces knjiženja je fiksiran, neovisno o odabranom predlošku.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image01.png)
 
-Nel Tab scadenze è possibile ricercare e filtrare le scadenze da incassare selezionando con l'apposito flag se cercare scadenze già anticipate in distinta o meno, è inoltre possibile escludere o includere scadenze attive riferite a fornitori.
+U kartici dospijeća moguće je pretraživati i filtrirati dospjela potraživanja koja treba naplatiti. Također, moguće je isključiti ili uključiti aktivna dospijeća povezana s dobavljačima.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image02.png)
 
-La contabilizzazione può essere annullata e ripristinata, come di consueto, dal tab **Rollback**.
+Knjiženje se može poništiti i obnoviti, kao i inače putem kartice **Povrat**.
 
 
 
