@@ -137,7 +137,7 @@ Con la versione attuale di Fluentis non ci sono controlli standard che verifican
 L'elenco si compone delle seguenti informazioni:   
 > **Classe**: è la *Classe articolo*.   
 > **Codice**: è il codice dell'*Articolo*.   
-> **Classe**: è la descrizione dell'*Articolo*.   
+> **Descrizione articolo**: è la descrizione dell'*Articolo*.   
 > **Note**: annotazioni libere.   
 
 

@@ -206,7 +206,7 @@ L'elenco si compone delle seguenti informazioni:
 
 ### Riferimento documenti di origine
 
-Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine all'*Azione correttiva*in gestione.   
+Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine all'*Azione correttiva* in gestione.   
 Le informazioni visibili sono:   
 > **Reclamo**: expander dove è possibile visualizzare:   
 >
