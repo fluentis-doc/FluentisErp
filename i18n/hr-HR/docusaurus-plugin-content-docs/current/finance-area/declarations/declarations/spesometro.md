@@ -1,11 +1,11 @@
 ---
-title: Spesometro
+title: Spesometar
 sidebar_position: 7
 ---
 
-Lo "Spesometro" è stato profondamente modificato a partire dall'anno 2017. Da tale anno infatti è previsto l'invio trimestrale tramite un sistema di interscambio simile a quello per la fatturazione elettronica per la pubblica amministrazione.
+"Spesometar" bilo je duboko promijenjeno od 2017. godine. Od te godine je predviđeno slanje na tromjesečnoj bazi putem sustava razmjene sličnog onome za elektroničko fakturiranje za javnu upravu.
 
-Pertanto, pur rimanendo presente la form e le funzionalità in oggetto per retro-compatibilità ed eventuale consultazione, è presente un nuovo comando specifico denominato ** [Spesometro 2017 fatture trimestrali](/docs/finance-area/declarations/declarations/spesometro-2017-quarterly).**
+Stoga, iako forma i funkcionalnosti ostaju prisutne radi unazadne kompatibilnosti i mogućeg konzultiranja, prisutna je nova specifična naredba pod nazivom **[Spesometar 2017. tromjesečne fakture](/docs/finance-area/declarations/declarations/spesometro-2017-quarterly).**
 
 
 

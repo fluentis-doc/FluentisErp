@@ -1,11 +1,11 @@
 ---
-title: Comunicazione IVA annuale
+title: Godišnja prijava PDV-a
 sidebar_position: 3
 ---
 
-Questo adempimento è stato soppresso a partire dall'anno 2017.
+Ova obaveza je ukinuta od godine 2017. godine.
 
-La procedura permetteva di elaborare i valori (pulsante **Calcola valori** nella ribbon bar) ed una stampa di supporto per la compilazione del modello fiscale.
+Postupak omogućuje obradu vrijednosti ( tipka **Izračunajte vrijednosti** u traci izbornika) i ispis potpornog dokumenta za popunjavanje poreznog obrasca.
 
 
 

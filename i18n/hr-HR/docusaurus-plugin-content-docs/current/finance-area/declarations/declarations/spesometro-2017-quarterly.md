@@ -1,200 +1,155 @@
 ---
-title: Spesometro 2017 trimestrale
+title: Spesometar 2017. tromjesečni  
 sidebar_position: 8
 ---
 
-Da questa form è possibile ricercare le elaborazioni dello Spesometro trimestrale già elaborate e presenti nella base dati, oppure procedere alla creazione di un nuovo Spesometro.
+Iz ovog obrasca moguće je pretraživati već obrađene i prisutne kvartalne obrade Spesometra u bazi podataka, ili nastaviti s kreiranjem novog Spesometra.
 
-PREMESSA:
+UVOD:
 
-L'obbligo dello Spesometro è stato introdotto dall'art. 21 del DL 31 maggio 2010, n. 78, che ha previsto l'invio telematico di tutte le operazioni attive e passive rilevanti ai fini Iva (cessioni ed acquisti di beni, prestazioni di servizi rese e ricevute). 
-
+Obaveza Spesometra uvedena je člankom 21. Zakona (DL) od 31. svibnja 2010. godine, br. 78, koji je predvidio elektroničko slanje svih aktivnih i pasivnih transakcija bitnih za PDV (prijenosi i kupnje dobara, pružanje i primanje usluga).
   
+Od 2017. godine, dekret 193/2016. uveo je obvezu tromjesečne komunikacije. 
 
-Dal 2017 il decreto 193/2016 ha introdotto l'obbligo di comunicazione trimestrale.
+**Dokumenti koji ne ulaze u tromjesečni spesometar**:
 
-**Documenti che non rientrano nello spesometro trimestrale**:
+- Nisu obavezna izvještavanja o podacima elektroničkih faktura, izdanih i primljenih, koje su prošle kroz Sustav za razmjenu podataka (SdI). U slučaju da sve izdane i primljene fakture ne prođu kroz SdI, porezni obveznik može se ograničiti na elektroničko slanje podataka o drugim fakturama, ili, ako mu je to prikladnije, može poslati podatke o svim fakturama, uključujući i elektroničke;
 
-- Non devono essere comunicati i dati delle fatture elettroniche, emesse e ricevute, che sono transitate mediante il Sistema di Interscambio (SdI). Nel caso in cui non tutte le fatture emesse e ricevute transitino dallo SdI il contribuente potrà limitarsi a inviare telematicamente i dati delle altre fatture, oppure, nel caso fosse per lui più comodo, potrà inviare comunque i dati relativi a tutte le fatture, comprese quelle elettroniche;
+- Podaci sadržani u dokumentima koji nisu fakture (kao što su podaci sa kartica za gorivo) ne moraju biti izvještavani.
 
-- Non vanno comunicati i dati contenuti in documenti diversi dalle fatture (come ad esempio i dati delle schede carburante).
+PRELIMINARNE AKTIVNOSTI:
 
-ATTIVITA' PRELIMINARI:
+Kako bi se ispravno generirao datoteku (u xml formatu koja se mora prenijeti na odgovarajući portal za razmjenu podataka s Poreznom upravom), potrebno je pripremiti neke osnovne arhive unutar tablica Fluentis-a.
 
-Al fine di procedere con la corretta generazione del file (di tipo xml da caricare sull'apposito portale per l'interscambio con l'Agenzia delle Entrate) è necessario predisporre alcuni archivi di base all'interno delle tabelle di Fluentis. 
+- **[Tipovi dokumenta](/docs/configurations/tables/general-settings/document-types)**
 
- 
-
-- ** [Tipi Documento](/docs/configurations/tables/general-settings/document-types) **
-
-- ** [Aliquote/Modalità Iva ](/docs/configurations/tables/finance/vat-rates) **
+- **[Stopa PDV-a](/docs/configurations/tables/finance/vat-rates)**
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image01.png)
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image02.png)
 
-All'interno delle tabelle di cui sopra è necessario, in particolare, gestire i campi **Codice P.A.** (i medesimi che vengono gestiti per la fatturazione elettronica nei confronti delle Pubbliche Amministrazioni - trattandosi di un sistema di interscambio similare).
+All'interno delle tabelle di cui sopra è necessario, in particolare, gestire i campi **Šifra javne uprave** (isti oni koji se koriste za elektroničko fakturiranje prema Javnim Upravama – budući da se radi o sličnom sustavu razmjene podataka)
 
-La codifica da adottare è stata pubblicata dall'Agenzia delle Entrate nell'ambito della documentazione tecnica per la creazione del file telematico e la riportiamo di seguito:
+Šifriranje koje treba koristiti objavila je Porezna uprava kao dio tehničke dokumentacije za izradu telematske datoteke, a u nastavku ga prenosimo:  
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image03.png)
 
-INDICAZIONI OPERATIVE:
+OPERATIVNE UPUTE:
 
- 
+**Sve transakcije koje uključuju PDV uključene su u prijavu: ako je potrebno (npr. kartice goriva), mogu se ručno ukloniti iz prijave.**  
 
-**Tutte le operazioni che transitano per movimenti iva sono inserite nella dichiarazione: in caso sia necessario (es.: schede carburanti), queste possono essere cancellate dalla dichiarazione manualmente.**
+Intra-EE fakture automatski se unose na temelju vrste PDV transakcije korištene u poslovnom razlogu, s oznakom dokumenta TD10 (krediti za intra-EE ostaju s oznakom TD04); ako se radi o uslugama, potrebno je ručno ispraviti redak u prijavi.
 
-Le fatture intracomunitarie saranno inserite automaticamente, sulla base del tipo movimento IVA della causale utilizzata, con codice documento TD10 (le note di credito intracomunitarie restano con codice TD04): in caso siano servizi sarà necessario intervenire nella riga della dichiarazione con una rettifica manuale. 
+Stopa PDV koja se koristi u nabavama u mehanizmu obrnutog poreza, od 2021. godine, više se ne šalje s kodom N6 te se stoga više ne popunjava automatski s ovim kodom izuzeća (automatizam ostaje aktivan za prethodne godine); čak iu ovom slučaju, međutim, kod izuzeća dostupan je u postupku za ručne izmjene.
 
- 
+Šifre povezane s dospijećem PDV-a ([I] PDV s trenutnim dospijećem, [D] PDV s odgođenim dospijećem, [S] PDV s podjelom plaćanja – split payment), automatski se dodjeljuju prema vrsti PDV kretanja računovodstvene stavke.
 
-Le aliquote iva utilizzate negli acquisti in reverse charge, dall'anno 2021, non vanno più inviate con codice N6 e quindi non vengono più automaticamente compilate con questo codice di esenzione (l'automatismo permare attivo per gli anni precedenti): anche in questo caso, comunque, il codice d'esenzione è disponibile nella procedura per modifiche manuali. 
+Podaci o odbitku/dedukciji PDV-a koji su navedeni, uvijek označeni kao neobavezni u trasi, nisu obrađeni.
 
- 
 
-I codici relativi all'esigibilità iva ([I] iva ad esigibilità immediata, [D] iva ad esigibilità differita, [S] iva con scissione dei pagamenti (split payment)), sono assegnati automaticamente dal tipo di movimento IVA della causale contabile. 
+POSTUPAK IZRADE:
 
- 
+**Podaci zaglavlja**:
 
-I dati della detraibilità/deducibilità dell'iva indicata, indicati sempre come non obbligatori nel tracciato, non sono gestiti. 
+Potrebno je unijeti godinu i tromjesečje za koje se generira datoteka.  
 
- 
+Ostala polja zaglavlja treba popuniti samo ako obveznik dostave podataka o računima nije isti kao obveznik PDV-a na kojeg se ti podaci odnose.  
 
-PROCEDURA DI CREAZIONE:
+NE treba ih popunjavati ako je pošiljatelj:  
 
-**Dati di testata**:
+- isti kao obveznik PDV-a na kojeg se podaci odnose;  
 
-Indicare l'anno e il trimestre per il quale generare il file.
+- u ugovornom odnosu s obveznikom PDV-a na kojeg se podaci odnose;  
 
- 
+- posrednik.  
 
-Gli altri campi della tstata  vanno valorizzati solo se il soggetto obbligato alla comunicazione dei dati fattura non coincide con il soggetto passivo IVA al quale i dati si riferiscono.
-
-NON devono essere valorizzati se il soggetto trasmittente:
-
- 
-
-- coincide  con il soggetto IVA al quale i dati si riferiscono;
-
-- è legato da vincolo di incarico con il soggetto IVA al quale i dati si riferiscono;
-
-- è un intermediario. 
-
- 
-
-**Percorso file:** permette di specificare un percorso locale per il salvataggio del file da inviare telematicamente. Il file verrà comunque salvato nel documentale di Fluentis e sarà possibile scaricarne una copia sul pc locale.
+**Put datoteke:** omogućuje određivanje lokalne putanje za spremanje datoteke koja će se slati elektroničkim putem. Datoteka će se svejedno spremiti u dokumentacijski sustav Fluentis te će biti moguće preuzeti njezinu kopiju na lokalno računalo.  
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image04.png)
 
-**Dati Fatture**:
+**Podaci o računima**:
 
-Premere il pulsante **Calcola** nella ribbon bar per riprendere i dati iva del trimestre, che saranno suddivisi nella sezione delle fatture emesse e in quelle ricevute.
+Pritisnite tipku **Izračunaj** nella ribbon bar per riprendere i dati iva del trimestre, che saranno suddivisi nella sezione delle fatture emesse e in quelle ricevute.
 
-In questa fase, il sistema provvederà a verificare se sono presenti più documenti di quanti il ministero ha previsto che se ne possano inserire in ogni file (1000 clienti e 1000 fatture per ognuno per le emesse, 1000 fornitori e 1000 fatture per ognuno per le ricevute). 
+U ovoj fazi, sustav će provjeriti postoje li više dokumenata nego što je ministarstvo predvidjelo da se mogu unijeti u svaku datoteku (1000 kupaca i 1000 faktura za svakog za izdanja, 1000 dobavljača i 1000 faktura za svakog za primitke).
 
- 
+U slučaju da se taj limit prekorači, Fluentis će obavijestiti korisnika da će biti potrebno kreirati još jednu izjavu za unosi preostale dokumente (može se poslati N datoteka). 
 
-Nel caso in cui tale limite venga superato, Fluentis provvederà ad avvisare l'utente che sarà necessario creare un'altra dichiarazione per inserire i rimanenti documenti (si possono inviare N file).  
+Osim toga, naziv datoteke već će biti kodificiran prema predviđenoj nomenklaturi (polja Naziv datoteke i Broj uzastopnosti).
 
- 
+Polje “Identifikator datoteke” služi za pohranu u sustavu potvrde koju će telematički sustav ministarstva vratiti: nakon što se to polje pohrani, odjeljak više neće biti moguće uređivati.
 
-Inoltre, verrà già codificato il nome file secondo la nomenclatura prevista (campi Nome file e No. Progressivo).  
-
- 
-
-Il campo “Identificativo file” serve per memorizzare a sistema la ricevuta che il sistema telematico del ministero restituirà: una volta memorizzato tale campo, la sezione non sarà più editabile. 
-
- 
-
-Visto che è possibile indicare fino a 1000 documenti per ogni controparte, le righe vengono numerate progressivamente in ordine di partita iva della controparte, non essendo di alcuna rilevanza la protocollazione dei registri iva originari.
+Budući da je moguće naznačiti do 1000 dokumenata za svaku stranu, redovi su numerirani uzastopno po redu poreznog broja strane, bez obzira na to što je protokoliranje izvornih PDV registara bez značaja.
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image05.png)
 
-**SEZIONE DTE / DTR (fatture emesse / ricevute)**
 
- 
+**SEKCIJA DTE / DTR (izdani / primljeni računi)**
 
-I dati da inviare per la sezione DTE e i clienti sono i seguenti (dal 2018): 
+Podaci koji se šalju za sekciju DTE i klijente su sljedeći (od 2018.): 
 
- 
+Kod države PDV broja (uredljiv u tablici)
 
-Codice nazione della partita iva (editabile in griglia)
+PDV broj (ili alternativno OIB) (PDV broj uredljiv u tablici)
 
-Partita iva (o in alternativa il codice fiscale) (partita iva editabile in griglia)
+Referentni podračun (i povezani podaci) mogu se uređivati u tablici
 
-Il sottoconto di riferimento (e la relativa anagrafica collegata) sono modificabili in griglia
 
- 
+Za svaki dokument, treba navesti:
 
-Per ogni documento, sono da indicare: 
+Kod vrste dokumenta (preuzet iz tablice Vrste dokumenata, ali uredljiv u tablici)  
 
- 
+Datum i broj prodajnog dokumenta (uredljivo u tablici) 
 
-Il codice del tipo documento (ripreso dalla tabella Tipi documento ma editabile in griglia)
 
-La data e il numero del documento di vendita (editabili in griglia) 
+U donjoj tablici prikazani su PDV podaci za registraciju, trebaju se unijeti:  
 
- 
+Osnovica
 
-Nella griglia in basso vengono indicati i dati iva della registrazione, si devono indicare: 
+Iznos PDV-a
 
- 
+Postotak PDV-a 
 
-Imponibile
+Kod izuzeća (obavezno ako nema PDV-a)
 
-Importo iva
 
-Percentuale iva
+U ovoj sekciji podaci su detaljni, u datoteci će biti grupirani prema postotku/kodu izuzeća.  
 
-Codice di esenzione (obbligatorio nel caso non ci sia iva) 
 
- 
+**ISPRAVCI/OPROSTA**
 
-In questa sezione i dati sono dettagliati, nel file saranno raggruppati per percentuale/codice esenzione.
+U slučaju da je potrebno poslati ispravak za već poslan dokument, potrebno je kreirati novu izjavu: nije dopušteno unositi, u jedan datoteka, više od jednog ispravka ili poništenja (tj. ispravak DTE u njegovom datoteci, ispravak DTR u njegovom datoteci, poništenje u odjeljku ANN), pa će biti potrebno stvoriti N izjava.
 
-**RETTIFICHE/ANNULLAMENTI**
-
- 
-
-Nel caso in cui sia necessario inviare una rettifica per un documento già inviato, sarà necessario creare una nuova dichiarazione: non è consentito inserire, in un file, più di una rettifica o annullamento (cioè una rettifica di DTE nel suo file, una rettifica di DTR nel suo file, un annullamento nella sezione ANN), per cui sarà necessario creare N dichiarazioni. 
-
- 
-
-Per creare una rettifica di una registrazione già inviata, quindi, è sufficiente creare una nuova dichiarazione e utilizzare il pulsante ‘Inserimento manuale di una rettifica' per andare alla ricerca delle registrazioni già inviate per il trimestre indicato. 
+Za kreiranje ispravka već poslane registracije, dovoljno je stvoriti novu izjavu i koristiti tipku ‘Ručno unošenje ispravka' kako biste pretražili već poslane registracije za navedenu kvartal.
 
  ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image06.png)
 
-
-
- Una volta selezionato da questa ricerca, Fluentis riporterà la riga nella dichiarazione valorizzando nella stessa anche il campo dell'identificativo file e il numero progressivo all'interno del dichiarativo:
+Jednom kada se odabere iz ove pretrage, Fluentis će prikazati redak u prijavi, popunjavajući istovremeno polje identifikatora datoteke i redni broj unutar prijave:
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image07.png)
 
-E' comunque possibile valorizzare questi dati manualmente e/o modificarli. La sezione dell'annullamento prevede i soli dati dell'identificativo file e numero da annullare come di seguito evidenziato:
+Moguće je ručno unijeti i/ili modificirati ove podatke. Sekcija za otkazivanje sadrži samo podatke o identifikacijskom datoteci i broj koji treba otkazati, kako je u nastavku istaknuto:
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image08.png)
 
-**CREAZIONE DEL FILE**
 
- 
+**KREIRANJE DATOTEKE**
 
-Una volta completata la dichiarazione del trimestre, sarà possibile procedere alla creazione del file attraverso il pulsante **Crea file**
+Jednom kada je kvartalna izjava završena, bit će moguće nastaviti s izradom datoteke putem tipke **Kreiraj datoteku**
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image09.png)
 
-Una volta completata l'operazione, i file saranno allegati alla dichiarazione stessa e saranno scaricabili dal documentale come di seguito visualizzato nell'immagine.
+Jednom kada se operacija završi, datoteke će biti priložene samoj izjavi i bit će dostupne za preuzimanje iz dokumentacije, kao što je prikazano na slici ispod.
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image10.png)
 
-**ERRORI NEL TRACCIATO**
 
- 
+**GREŠKE U PRAĆENJU**
 
-I file visualizzati come allegato con nome ‘...Errors' vengono valorizzati a scopo di controllo interno e segnalano possibili errori nei dati presenti nella dichiarazione (partite iva mancanti ecc...).
+Datoteke prikazane kao privitak s imenom ‘...Errors' koriste se u svrhu interne kontrole i označavaju moguće greške u podacima prisutnim u izjavama (nedostajuće porezne identifikacijske brojeve itd.).
 
-ATTENZIONE: i files contenenti gli errori rappresentano una indicazione di massima e NON sostituiscono la procedura di controllo ufficiale dell'Agenzia delle Entrate, tale procedura è liberamente scaricabile dal sito internet dell'Agenzia Entrate. Vedere in tal senso l'allegato al presente articolo. 
-
+PAŽNJA: datoteke koje sadrže pogreške predstavljaju okvirnu indikaciju i NE zamjenjuju službenu proceduru kontrole Agencije za prihode, ta se procedura slobodno može preuzeti s internetske stranice Agencije za prihode. U tu svrhu pogledajte privitak uz ovaj članak.
 
 
 
