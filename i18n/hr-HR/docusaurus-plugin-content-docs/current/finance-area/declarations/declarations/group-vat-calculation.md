@@ -1,12 +1,12 @@
 ---
-title: Liquidazione iva di gruppo
+title: Namirenje PDV-a grupe
 sidebar_position: 4
 ---
 
-Da questa form è possibile calcolare le liquidazioni iva particolari e relative allo stato di GRUPPO IVA (sia quando la società in uso è la capogruppo, sia quando è aderente al gruppo e pertanto il saldo della sua liquidazione viene trasferito alla capogruppo)
+Putem ovog obrasca moguće je izračunati posebne obračune PDV-a vezane uz status PDV GRUPE (bilo da je trenutno aktivna tvrtka vodeća tvrtka grupe, bilo da je riječ o tvrtki članici, čiji se obračun PDV-a prenosi na vodeću tvrtku).
 
-Premendo il tasto NUOVO si inserisce una nuova liquidazione, In testata si inserisce l'anno ed il periodo di calcolo
+Klikom na gumb NOVI unosi se novi obračun. U zaglavlju obrasca unose se godina i obračunsko razdoblje.
 
-Il calcolo acquisirà ed aggregherà tutti i risultati delle società aderenti al gruppo ("controllate") che dovranno essere inserite nella griglia e li totalizzerà sulla capogruppo.
+Prilikom izračuna, sustav će prikupiti i objediniti sve rezultate tvrtki koje su članice grupe (tzv. „kontrolirane“ tvrtke), koje se prethodno moraju unijeti u tablicu, te će ukupne vrijednosti PDV-a prikazati na razini vodeće tvrtke.
 
-A questo punto eseguendo la LIPE con attivato l'apposito flag per il gruppo iva non saranno esposti i risultati dei totali iva a credi te debito ( che continuano a essere riferiti alle singole società), ma i totali dell0iva da versare o a credito trasferiti ed aggregati sulla società capogruppo.
+Nakon toga, pokretanjem LIPE uz aktiviranu oznaku za PDV grupu, neće se prikazivati pojedinačni rezultati PDV-a u potraživanju ili obvezi (koji se i dalje odnose na svaku pojedinu tvrtku), već će se prikazivati ukupni PDV iznosi za plaćanje ili prijenos, objedinjeni i preneseni na vodeću tvrtku grupe.

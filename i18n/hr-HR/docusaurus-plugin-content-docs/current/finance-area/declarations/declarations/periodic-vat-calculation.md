@@ -1,97 +1,96 @@
 ---
-title: Comunicazione liquidazioni periodiche iva
+title: Periodični obračun PDV-a  
 sidebar_position: 4
 ---
 
-Dalla presente form è possibile gestire l'adempimento fiscale (introdotto dall'art. 21-bis del D.L. 193/2016 a decorrere dall'anno 2017) che prevede l'invio telematico di una comunicazione dei dati riepilogativi delle liquidazioni periodiche iva (mensili o trimestrali).
+Iz ovog obrasca moguće je upravljati poreznim obvezama (uvedenim člankom 21-bis Zakona D.L. 193/2016, koji stupa na snagu od 2017. godine) koji predviđa elektroničko slanje komunikacije sa sažetim podacima o periodičnim obračunima PDV-a (mјesečnim ili tromjesečnim).
 
-Tramite il tasto **Ricerca** presente nella ribbon bar è possibile visualizzare la lista delle comunicazioni già elaborate. E' possibile modificarle (tasto **Modifica**) oppure eliminarle (tato **Elimina**) o semplicemente visualizzarle (tasto **Visualizzazione**).
+Korištenjem tipke **Traži** koji se nalazi na traci izbornika, moguće je pregledati popis već obrađenih komunikacija. Moguće je izmijeniti ih (tipka **Izmjeni**), ukloniti ih (tipka **Ukloni**) ili ih jednostavno pregledati (tipka **Prikaži**).
 
-Per inserire una nuova comunicazione premere il tasto **Nuovo**.
+Za unos nove komunikacije pritisnite tipku **Novi**.
 
-**PROCEDURA DI INSERIMENTO**:
+**POSTUPAK UNOSA**:
 
-- indicare l'**Anno** oggetto di comunicazione ed il numero del **Trimestre** da dichiarare. A questo punto il programma procederà a verificare se esite già una dichiarazione per questo periodo ed in caso negativo (in caso contrario viene visualizzato un avviso) procede a creare automaticamente il nome da assegnare al file telematico ed a visualizzare le tab relative ai tre mesi del trimestre con i relativi righi corrispondenti al modello ministeriale.
+- naznačite **Godinu** predmetnog obavještenja i broj **Kvartala** koji treba prijaviti. U ovom trenutku program će provjeriti postoji li već prijava za ovaj period i u slučaju negativnog odgovora (u suprotnom će se prikazati obavijest) automatski će kreirati naziv koji će se dodijeliti telematičkom datoteci i prikazati tablice koje se odnose na tri mjeseca kvartala s pripadajućim stavkama prema ministarskom obrascu.
 
-- compilare gli altri campi della testata:
+- Ispuniti ostala polja zaglavlja:
 
-  **Codice fiscale**: Nel caso in cui la società sia una società di capitali, sarà obbligatorio indicare il Codice fiscale della persona fisica che firma la comunicazione e il relativo Codice carica;
+  **Porezni identifikacijski broj**: U slučaju da je društvo društvo s ograničenom odgovornošću, bit će obavezno navesti porezni identifikacijski broj fizičke osobe koja potpisuje komunikaciju i pripadajući **Kod radnog mjesta**.;
 
-  **Dichiarante:** in alternativa alla compilazione del campo precedente (Cod. fiscale) è possibile selezionare il dipendente firmatario dalla combo box collegata alla tabella Dipendente, all'interno della quale deve essere già stato inserito il dipendente (Amministratore, Responsabile Amministratico ecc...) in questione completo di codice fiscale e codice carica;
+  **Deklarant:** kao alternativa unosu prethodnog polja (OIB), moguće je odabrati potpisnika – zaposlenika iz padajućeg izbornika povezanog s tablicom Zaposlenici, u koju prethodno mora biti unesen navedeni zaposlenik (npr. Direktor, Voditelj računovodstva itd.) zajedno s njegovim OIB-om i šifrom funkcije;
 
-  **Codice carica**: la combo box è collegata ad una tabella fissa con i codici definiti dal modello ministeriale;
+  **Šifra uloge**: padajući izbornik povezan je s fiksnom tablicom koja sadrži šifre definirane prema obrascu propisanom od strane nadležnog ministarstva;  
 
-  **Codice fiscale intermediario**: se ci si avvale di un intermediario abilitato per l'invio della dichiarazione (Caf, Commercialista ecc...) indicare qui il relativo codice fiscale.
+  **Srednji porezni kod**: ako se koristi ovlašteni posrednik za podnošenje prijave (npr. porezni savjetnik, računovodstveni servis itd.), ovdje se unosi njegov OIB.  
 
-  **Data dell'impegno:** capo per indicare la data dell'impegno alla presentazione telematica da parte dell'intermediario abilitato;
+  **Datum opredjeljenja:** polje za unos datuma kada je ovlašteni posrednik preuzeo obvezu elektroničkog podnošenja izjave;  
 
-  **Partita IVA controllante:** (liquidazione iva del gruppo) Se la Comunicazione è presentata da parte di un ente o società commerciale che si sia avvalso nel trimestre della procedura di liquidazione dell'IVA di gruppo, indicare la partita IVA dell'ente o società controllante (anche nella Comunicazione presentata da quest'ultimo soggetto per la propria posizione individuale). Il campo va compilato anche nel caso in cui l'ente o la società con liquidazioni periodiche mensili sia fuoriuscito dalla liquidazione IVA di gruppo nel secondo o terzo mese del trimestre.
+  **Kontroliranje PDV broja:** (grupno poravnanje PDV-a) Ako je Obavijest podnijeta od strane tijela ili trgovačkog društva koje je koristilo postupak grupnog ostvarenja PDV-a u tromjesečju, potrebno je navesti PDV broj tijela ili društva koje kontrolira (također u Obavijesti koju podnosi taj subjekt za svoju pojedinačnu poziciju). Ovo polje treba ispuniti i u slučaju kada je tijelo ili društvo s mjesečnim razdobljima obračuna izašlo iz grupnog ostvarenja PDV-a u drugom ili trećem mjesecu tromjesečja.
 
-  **Liquidazione del gruppo**: barrare la casella nel caso in cui la Comunicazione si riferisce alla liquidazione dell'IVA del gruppo (vedere le istruzioni ministeriali).
-Attivando questo flag per le società appartenenti al gruppo non verranno calcolati alcuni campi quali ad esempio iva da versare (inquanto versa la capogruppo).
+  **Opis grupiranja**: označiti kućicu u slučaju da se komunikacija odnosi na grupno poravnanje PDV-a (pogledati upute ministarstva).  
+Aktiviranjem ove opcije za društva unutar grupe, neki se podaci, poput PDV-a za uplatu, neće izračunavati (budući da uplatu vrši matično društvo). 
 
-NOTA: la comunicazione eseguita in questa modalità si appoggia sulla preventiva elaborazione della (nuova) funzionalità Liquidazione iva di gruppo, che va a calcolare i saldi iva delle varie società appartenenti al gruppo e li trasferisce alla capogruppo.
+NAPOMENA: komunikacija izvršena na ovaj način oslanja se na prethodnu obradu (novu) funkcionalnost Grupne likvidacije PDV-a (Namirenje PDV-a Grupe), koja izračunava dugovanja PDV-a raznih tvrtki unutar grupe i prenosi ih na matičnu tvrtku.
 
-  **Ultimo mese**: In caso di sopravvenuta mancanza dei requisiti per avvalersi della procedura di liquidazione dell'IVA di gruppo, indicare l'ultimo mese di controllo (esempio “02” per il mese di febbraio - Vedere istruzioni ministeriali).
+  **Zadnji mjesec**: In caso di sopravvenuta mancanza dei requisiti per avvalersi della procedura di liquidazione dell'IVA di gruppo, indicare l'ultimo mese di controllo (esempio “02” per il mese di febbraio - Vedere istruzioni ministeriali).
 
-  **Firma:** campo **OBBLIGATORIO**, da mettere sempre.
+  **Potpis:** polje **OBAVEZNO**, potrebno ga je uvijek unijeti.
 
-  **Firma dell'incaricato:** da apporre se vengono compilati i campi relativi all'intermediario abilitato;
+  **Potpis posrednika:** da se primijene ako su ispunjena polja vezana uz ovlaštenog posrednika;  
 
-  **Impegno alla presentazione telematica**: la combo box è collegata ad una tabella fissa e va compilata, in caso di presentazione da parte di un intemediario, selezionando se il modello è stato predisposto dal contribuente o dall'intermediario stesso, in caso contrario lasciando la voce "nessuno".
+  **Posrednička obveza**: padajući izbornik je povezan s fiksnom tablicom i mora se popuniti. U slučaju da prijavu podnosi posrednik, treba odabrati je li obrazac pripremio obveznik ili sam posrednik, a u suprotnom ostaviti opciju "nijedno".
 
-- premere **Salva** per salvare i dati di testata.
+- Pritisnite **Spremi** za spremanje podataka u zaglavlju.
 
-- Premere **Calcola** trimestre per eseguire il calcolo dei dati dei tre mesi del trimeste. A questo punto i campi saranno compilati in automatico, tuttavia è sempre possibile editarli manualmente per eventuali correzioni. Attenzione: se verrà premuto nuovamente Calcola verranno ripristinati i dati calcolati dal sistema.
+- Pritisnite **Izračunaj** tromjesečje kako biste izvršili izračun podataka za tri mjeseca tromjesečja. U tom trenutku, polja će biti automatski popunjena, no uvijek ih je moguće ručno uređivati za eventualne ispravke. Pažnja: ako ponovno pritisnete Izračunaj, podaci izračunati od strane sustava bit će obnovljeni.
 
-- Premere il tasto **Esporta** per generare e memorizzare nella gestione docuumentale di Fluentis il file telematico in formato .xml. Sarà quindi possibil selzionarlo premendo il tasto della gestione documentale direttamemte dalla form in commento e procedere a salvare una copia del file sul proprio pc per l'invio telematico o la trasmissione all'intermediario abilitato. E' possibile anche procedere ad una stampa cartacea (o visione in anteprima) dei dati su modello ministeriale.
+- Pritisnite tipku **Izvezi** Za generiranje i pohranu elektroničkog dokumenta u formatu .xml u upravljanju dokumentima Fluentis, pritisnite gumb za upravljanje dokumentima izravno u obrascu i odaberite ga za pohranu kopije datoteke na vlastitom računaru za daljnju elektroničku predaju ili prijenos ovlaštenom posredniku. Također, moguće je izvršiti ispis (ili pregled u pretpregledu) podataka na obrascu prema ministarskoj formi.  
 
-**ATTENZIONE**:
+**PAŽNJA**:
 
-La corretta elaborazione dei dati proposti dalla procedura di calcolo, in modo che siano conformi al risultato delle varie** [liquidazioni periodiche iva](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement) **,  dipende in particolare dalla corretta attivazione / abilitazione, ai fini del calcolo, dei vari codici iva utilizzati nelle registrazioni contabili.
+Ispravna obrada podataka predloženih od strane računovodstvene procedure, kako bi bili u skladu s rezultatima različitih **[periodičnih obračuna PDV-a](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**,  ovisi osobito o pravilnom aktiviranju / omogućavanju, za potrebe izračuna, različitih PDV kodova korištenih u knjigovodstvenim zapisima.  
 
-Per verificare il corretto settaggio aprire la tabella ** [aliquote / modialità iva](/docs/configurations/tables/finance/vat-rates) ** e verificare in particolare la colonna relativa al flag in dichiarazione iva.
+Za provjeru ispravnog postavljanja, otvorite tablicu **[stopa / načini PDV-a](/docs/configurations/tables/finance/vat-rates)** i provjerite osobito kolonu vezanu uz oznaku u PDV prijavi.  
 
 ![](/img/it-it/finance-area/declarations/declarations/periodic-vat-calculation/image01.png)
 
-Con il flag attivo il codice iva selezionato sarà incluso nel calcolo e riportato nel modello fiscale, mentre con il flag disattivato i valori non saranno inclusi.
+S uključenim flagom, odabrani PDV kod bit će uključen u izračun i prikazan u fiskalnom obrascu, dok se s isključenim flagom vrijednosti neće uključiti.
 
-Tipicamente tutti i codici iva ordinari vanno sempre inclusi. I codici iva di esclusione (es. ex. art 15 dpr 633 / 72) invece NON vanno inclusi. Vanno invece inclusi i codici di non imponibilità (es. per operazioni intra-comunitarie o in reverse charge).
+Tipično, svi obični PDV kodovi uvijek moraju biti uključeni. Kodovi isključenja (npr. ex. art. 15 dpr 633/72) se, međutim, NE smiju uključiti. Umjesto toga, potrebno je uključiti kodove koji se odnose na neobvezivanje (npr. za transakcije unutar zajednice ili u slučaju obrnute porezne obveze).
 
-**N.B.** secondo le istruzioni ministeriali fanno eccezione i codici di esclusione relativi "alle operazioni (attive) non soggette per carenza del presupposto territoriale di cui agli artt. da 7 a 7-septies per le quali è obbligatoria l’emissione della fattura in base alle disposizioni contenute nell’art. 21, comma 6-bis" i quali VANNO inclusi nel dichiarativo (rigo VP2).
+**NAPOMENA** Prema ministarskim uputama, iznimku čine kodovi isključenja koji se odnose na "operacije (aktivne) koje nisu podložne zbog nedostatka teritorijalnog preduvjeta prema člancima od 7 do 7-septies za koje je obvezno izdavanje računa prema odredbama iz članka 21, stavak 6-bis", koji TREBAJU biti uključeni u deklaraciju (redak VP2).
 
-Si consiglia di fare riferimento alla normativa iva ed alle istruzioni ministeriali relative alla dichiarazione iva annuale (o ad uno degli altri modelli di dichiarazione di dati iva che seguono la stessa "logica") per la corretta individuazione del trattamento delle varie casistiche.
-
-A titolo di esempio l'errato settaggio, escludendo ad esempio un codice di non imponibilità, determinerà una corrispondenza tra il modello e le liquidazioni periodiche relativamente all'imposta, ma ci sarà una differenza nei valori relativi agli imponibili (più bassi nella comunicazione rispetto alle liquidazioni).
-
----
-
-**NOTA:**
-Il calcolo del campo VP2 (nel caso in cui si voglia effettuare un confronto e riconciliazione con le liquidazioni iva ed i dati contabili) considera questi tipi movimento:
-Iva Vendite regime Normale
-Iva Vendite IntraCEE
-Iva Vendite ExtraCEE
-Vendita con iva in sospensione
-Corrispettivi
-Vendite Regime Agricolo
-Iva vendite con split payment
-
-**Vengono pertanto automaticamente esclusi i dati di imponibile lato vendite (derivanti da giroconto automatico sui registri vendite) riferiti agli acquisti intra-comunitari ed in reverse charge.**
-Ciò coerentemente con le istruzioni ministeriali.
+Preporučuje se konzultirati propise o PDV-u i ministarske upute vezane uz godišnju PDV prijavu (ili jedan od drugih modela prijave PDV podataka koji slijede istu "logiku") radi ispravnog utvrđivanja obrade raznih slučajeva.
+A naslov kao primjer, pogrešna postavka, isključujući, na primjer, kod koji nije predmet oporezivanja, odredit će podudaranje između obrasca i periodičnih obračuna u vezi s porezom, ali će biti razlika u vrijednostima vezanim uz oporezive iznose (niže u komunikaciji u odnosu na obračune).
 
 ---
 
-**NOTA TECNICA:**
+**NAPOMENA:**
+Računanje polja VP2 (u slučaju kada se želi izvršiti usporedba i pomirenje s PDV-om i računovodstvenim podacima) uzima u obzir sljedeće vrste pokreta:  
+PDV prodaje normalnog režima 
+PDV prodaje IntraCEE 
+PDV prodaje ExtraCEE  
+Prodaja s odgođenim PDV-om 
+Korisnici 
+Prodaje u poljoprivrednom režimu 
+PDV prodaje s podijeljenim plaćanjem 
 
-per l'esportazione xml è necessario:
+**Stoga se automatski isključuju podaci o osnovici za PDV s strane prodaje (proizlaze iz automatskog knjiženja na registrima prodaje) povezani s kupnjama unutar zajednice i u reverse charge postupku.**
+To je u skladu s ministarskim uputama.
 
-- che si attivo il servizio di windows sul server Artinfo Bizlink connector
+---
 
-- che sia creato il connettore ComunicazioneIvaTrim da configurare come nell'immagine seguente
+**TEHNIČKA NAPOMENA**
 
-- che esista la cartella fisica di output (sul server) configurata nel connettore (esempio "Outgoing")
+per izvođenje XML-a potrebno je:
 
-- che esista nella Tabella di Fluentis **Tipi Documento** il tipo **Other Documents** configurato come nell'immagine seguente.
+- Da je aktivirana usluga Windows na poslužitelju Artinfo Bizlink connector  
+
+- Da je kreiran konektor ComunicazioneIvaTrim koji treba biti konfiguriran kao na prikazanoj slici  
+
+- Da postoji fizička mapa za izlazne datoteke (na poslužitelju) koja je konfigurirana u konektoru (na primjer, "Outgoing")  
+
+- Da u tablici Fluentis **Tipovi dokumenta**  postoji tip **Ostali dokumenti** konfigurirano kao na slici ispod.  
 
 ![](/img/it-it/finance-area/declarations/declarations/periodic-vat-calculation/image02.png)
 
@@ -99,7 +98,7 @@ per l'esportazione xml è necessario:
 
 ---
 
-### VIDEO TUTORIALS
+### VIDEO TUTORIJALI
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

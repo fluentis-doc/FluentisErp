@@ -1,37 +1,37 @@
 ---
-title: Dichiarazione iva periodoca
+title: Periodična prijava PDV-a  
 sidebar_position: 6
 ---
 
-Da questa form è possibile gestire manualmente alcuni valori che saranno riportati nella stampa della liquidazione iva periodica nel momento della generazione del report.
+Pomoću ove funkcije može se ručno upravljati nekim vrijednostima koje će biti navedene u ispisu periodične prijave PDV-a prilikom generiranja izvještaja.
 
-Tipicamente due campi utili e frequentemente utilizzati sono:
+Tipično su dva polja korisna i često korištena **dva polja**:
 
-- l'indicazione del credito iva residuo (perché non completamente compensato nel modello F24 con altri tributi) da inserire nella liquidazione;
+- označavanje preostalog PDV kredita (jer nije potpuno kompenziran u obrascu F24 s drugim porezima) koji treba unijeti u obračun;
 
-- l'indicazione del credito iva che emerge nella liquidazione e che si desidera estromettere al fine di compensarlo con altri tributi nel modello F24.
+- označavanje PDV kredita koji se pojavljuje u obračunu i koji se želi isključiti kako bi se kompenzirao s drugim porezima u obrascu F24.   
 
-Poichè al momento dell'elaborazione della stampa della liquidazione periodica (in cui i valori vengono elaborati dall'applicativo per esporli nel report) i valori inseriti manualmente devono già essere presenti, prima di generare la liquidazione periodica inserire una nuova riga (pulsante **Nuovo**).
+Budući da prilikom obrade ispisnog obrasca obračuna (u kojem se vrijednosti obrađuju od strane aplikacije za prikazivanje u izvještaju) unesene vrijednosti moraju već biti prisutne, prije generiranja obračuna potrebno je unijeti novi redak (tipka **Novi**).
 
-All'apertura della nuova form sarà proposto l'anno in corso ed il mese o trimestre successivo all'ultimo memorizzato.
+Pri otvaranju novog obrasca bit će predložena tekuća godina i mjesec ili kvartal koji slijedi nakon posljednje spremljene stavke.
 
-Si ricorda che, nel caso la riga corrispondente al mese o trimestre di riferimento non venga creata manualmente (al fine di gestire i valori di cui sopra) tramite il tasto Nuovo, sarà comunque creata in fase di stampa in definitivo della liquidazione periodica.
+Podsjeća se da, u slučaju da redak koji odgovara mjesecu ili kvartalu na koji se odnosi nije ručno kreiran (kako bi se obradile gore navedene vrijednosti) pomoću tipke Novi, on će biti automatski kreiran prilikom konačnog ispisa obračuna.  
 
-**CREDITO RESIDUO DA RIPORTARE**:
+**PREOSTALI KREDIT ZA PRENOS**:
 
-Compilare SENZA INDICAZIONE DEL SEGNO il campo VP16
+Popuniti BEZ OZNAKE ZNAKA u polje VP16. 
 
 ![](/img/it-it/finance-area/declarations/declarations/periodical-vat-declaration/image01.png)
 
-Allo stesso modo possono essere inseriti altri importi che vanno ad incrementare il credito risultante nella liquidazione, quali lo scomputo dell'acconto iva di dicembre versato (campo VP 20).
+Na isti način mogu se unijeti i drugi iznosi koji povećavaju rezultat kredita u obračunu, poput odbitka predujma PDV-a za prosinac (polje VP20).  
 
-**CREDITO IVA DA COMPENSARE IN F24**:
+**PDV KREDIT ZA KOMPENZACIJU U F24**:
 
-Compilare SENZA INDICAZIONE DEL SEGNO il campo VP32
+Popuniti BEZ OZNAKE ZNAKA u polje VP32.  
 
 ![](/img/it-it/finance-area/declarations/declarations/periodical-vat-declaration/image02.png)
 
-Al momento dell'elaborazione della stampa della liquidazione iva (sia in provvisorio che in definitivo) i valori con segno negativo (VP16) andranno a incrementare il credito iva, mentre quelli con valore positivo (VP32) lo andranno a ridurre (o ad aumentare il debito); tali valori vengono riportati nel riepilogo dopo i valori di debito e credito derivanti dalle operazioni del mese o trimestre.
+Prilikom obrade ispisa PDV obračuna (bilo privremenog ili konačnog), vrijednosti s negativnim predznakom (VP16) povećat će PDV kredit, dok će one s pozitivnom vrijednošću (VP32) smanjiti kredit (ili povećati dugovanje); te vrijednosti prikazuju se u sažetku nakon iznosa potraživanja i obveza koji proizlaze iz poslovanja u mjesecu ili tromjesečju.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
