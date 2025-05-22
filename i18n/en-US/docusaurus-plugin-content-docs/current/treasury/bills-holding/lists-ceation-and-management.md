@@ -79,3 +79,19 @@ The total of the **Payments** section must equal the total of the transferred Bi
 *Delete payments*: Deletes the selected payments in the grid.
 
 *Payments from items*: Opens the help mask for items, from which to select the supplier items to close.
+
+## SDD Sepa Direct Debit Lists 
+
+The Sepa Direct Debit, which replaces the previous national RID, is a pre-authorized collection tool based on a mandate to debit issued by the Debtor in favor of their Creditor.
+
+It is based on a prior agreement (mandate) between the Debtor and the Creditor that allows the latter to request the activation of an inter-bank procedure to automatically debit the Debtor's account.
+
+:::tip[How to create an SDD list]
+After filling in the necessary fields [**in the customer contact**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#campi-riferiti-alla-gestione-distinte-sdd-sepa-direct-debit--addebiti-diretti-sepa) as the holder of the SDD and in the table with our company's data, it is necessary to:
+
+- Define a specific type of bill "*SDD*" [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) and associate it with the respective [**Payment Type**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti)
+- Define a specific type of list in the bills portfolio, see the Utilities field [**here**](/FluentisErp/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- Use the procedures [**Creating bills from maturity values**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) or [**Creating bills from due dates**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) to generate an bill of type "*SDD*"
+- Create a [**new presentation list**](/docs/treasury/bills-holding/lists-ceation-and-management) of type "*SDD*" and insert the "*SDD*" bill into it
+- Use the **SDD Export** button in the ribbon bar (enabled by the specific type of list set with the Utilities flag) to generate the specific bank file valid for SDD.
+:::

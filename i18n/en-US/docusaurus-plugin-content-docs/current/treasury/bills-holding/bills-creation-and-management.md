@@ -57,5 +57,21 @@ In this section, you can view the references of the original parties (in case of
 In this case, it is also possible to enter parties not linked to payment types to be managed with bills (e.g., *Cash order*), as well as parties linked to credit notes.
 
 ### The Other Tab 
-
 In this section, you can store references for endorser and guarantors.
+
+
+## SDD Sepa Direct Debit 
+
+The Sepa Direct Debit, which replaces the previous national RID, is a pre-authorized collection tool based on a mandate for the debit issued by the Debtor in favor of their Creditor.
+
+It is based on a prior agreement (mandate) between the Debtor and Creditor that allows the latter to request the activation of an interbank procedure to automatically debit the Debtor's account.
+
+:::tip[How to create an SDD list]
+After filling in the necessary fields [**in the customer contact**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#campi-riferiti-alla-gestione-distinte-sdd-sepa-direct-debit--addebiti-diretti-sepa) for the SDD holder and in the table with our company data, it is necessary to:
+
+- Define a specific type of bill "*SDD*" [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) and associate it with the respective [**Payment type**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti)
+- Define a specific type of list in the bills portfolio, see the Utilities field [**here**](/FluentisErp/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- Use the procedures [**Creating bills from maturity values**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) or [**Creating bills from due dates**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) to generate an "*SDD*" type bill
+- Create a [**new presentation list**](/docs/treasury/bills-holding/lists-ceation-and-management) of type "*SDD*" and insert the "*SDD*" bill within it
+- Use the **SDD Export** button in the ribbon bar (enabled by the specific list type set with the Utilities flag) to generate the specific bank file valid for SDD.
+:::
