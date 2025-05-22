@@ -29,7 +29,7 @@ Nella sezione è possibile inserire:
 - **Funzione responsabile**: *Funzione aziendale* da proporre come responsabile alla creazione di un nuovo *Reclamo*.   
 - **Costo di gestione**: valore da proporre nel *Costo di gestione* di un nuovo *Reclamo*.   
 - **Ricalcolo automatico totali**: indica se ricalcolare automaticamente i totali del *Reclamo* sulla base dei difetti inseriti altrimenti i valori dovranno essere inseriti manualmente.   
-- **Raggruppamento dati U.D.C.**: indica se riportare automaticamente, tra gli *Oggetti difettosi* di un *Reclamo*, tutti gli articoli contenuti in una U.D.C. all'inserimento di un articolo difettoso che è contenuto nella U.D.C. specificata.   
+- **Raggruppamento dati U.D.C.**: indica se raggruppare gli *Articoli* uguali sommandone le *Quantità* durante l'inserimento di una *Unità di carico* negli *Oggetti difettosi*.   
 
 Sezione **Autorizzazione al rientro**   
 >- **Autorizzazione al rientro**: indica se deve essere gestita l'*Autorizzazione al rientro* nella gestione *Reclamo*.   
@@ -47,7 +47,7 @@ Nell'expander è possibile inserire:
 - **Funzione responsabile**: *Funzione aziendale* da proporre come responsabile alla creazione di una *Non conformità*.   
 - **Costo di gestione**: valore da proporre nel *Costo di gestione* di un *Non conformità*.   
 - **Ricalcolo automatico totali**: indica se ricalcolare automaticamente i totali della *Non conformità* sulla base dei difetti inseriti altrimenti i valori dovranno essere inseriti manualmente.   
-- **Raggruppamento dati U.D.C.**: indica se riportare automaticamente, tra gli *Oggetti difettosi* di una *Non conformità*, tutti gli articoli contenuti in una U.D.C. all'inserimento di un articolo difettoso che è contenuto nella U.D.C. specificata.   
+- **Raggruppamento dati U.D.C.**: indica se raggruppare gli *Articoli* uguali sommandone le *Quantità* durante l'inserimento di una *Unità di carico* negli *Oggetti difettosi*.   
 - **Proposta U.M. alternativa**: indica se visualizzare, negli *Oggetti difettosi*, le informazioni sulle *Quantità* espresse in un'unità di misura alternativa rispetto alla principale.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

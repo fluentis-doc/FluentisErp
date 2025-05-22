@@ -280,7 +280,7 @@ E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selez
 >> **Lotto**: è il codice del *Lotto* interno dell'*Articolo* reclamato.   
 >> **Unità di carico**: è l'*Unità di carico* di origine che conteneva l'Articolo* reclamato.   
 >> L'inserimento di una *Unità di carico* comporta l'automatico inserimento di tutte le righe di dettaglio *Articolo* presenti in essa.   
->> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articolo/Lotto e Numero seriale* uguale verranno riportate raggruppate in un'unica riga con le quantità sommate.   
+>> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articoli* uguali verranno riportate in un'unica riga con le quantità sommate.   
 >> **Numero seriale**:  è il *Numero seriale* dell'*Articolo* reclamato.   
 >> **Unità di carico da rendere**: è l'*Unità di carico* che contiene l'Articolo* reclamato da rendere.   
 >> **Variante**: è la codice variante dell'*Articolo* reclamato.   
