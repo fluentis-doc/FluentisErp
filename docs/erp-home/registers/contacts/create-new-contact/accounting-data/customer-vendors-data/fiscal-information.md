@@ -24,11 +24,11 @@ Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettr
 **Tipo ritenuta**: il campo (menu a discesa) è collegato alla tabella  [**Tipi ritenuta**](/docs/configurations/tables/finance/withholding-tax-types)  all'interno della quale vengono definite le tipologie di ritenuta a titolo d'acconto (o a titolo d'imposta) da utilizzare. Per ogni riga, corripondente ad un tipo ritenuta, devono essere compilati i campi che permettono la gestione automatica del calcolo e della contabilizzazione da parte del  [**modulo Percipienti.**](/docs/finance-area/professional-men/general-overview) 
 
 ***UTILIZZO DEI CAMPI Ritenuta e Tipo Ritenuta NELLE FATTURE ATTIVE***
-E' possibile attivare il flag per le ritenute d'acconto e la relativa tipologia anche ai fini dell'emissione di fattura attiva nel caso in cui sia l'azienda emittente ad essere sottoposta alla ritenuta d'acconto (ritenute d'acconto subite). **Vedere anche** [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)
+E' possibile attivare il flag per le ritenute d'acconto e la relativa tipologia anche ai fini dell'emissione di fattura attiva nel caso in cui sia l'azienda emittente ad essere sottoposta alla ritenuta d'acconto (ritenute d'acconto subite). **Vedere anche** [**qui**](/docs/finance-area/e-invoice/configuration_einvoice)
 
 
 :::tip Vedi anche...
-Per la gestione nella fattura elettronica della ritenuta d'acconto ed in particolare anche del contributo **ENASARCO** vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)
+Per la gestione nella fattura elettronica della ritenuta d'acconto ed in particolare anche del contributo **ENASARCO** vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice)
 :::
 
 **Scissione dei pagamenti**: flag per contrassegnare i soggetti nel regime dello Split Payment, siano essi privati (società quotate in borsa ecc.. soggetti al particolare regime), oppure Pubbliche Amministrazioni (in questo caso si attiverà anche il flag omonimo descritto di seguito). L'attivazione del presente flag gestisce le scadenze in fattura e imposta il calcolo delle partite a solo imponibile.

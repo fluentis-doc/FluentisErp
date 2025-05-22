@@ -20,7 +20,7 @@ Nel piano dei conti delle società che hanno in tabella una società capogruppo,
 :::important[]
 Procedura passo passo di attivazione ed esecuzione (supponiamo due aziende)
 
-- Nella tabella [**società**](/docs/configurations/tables/general-settings/company#dettaglio-anagrafica-societa) di ognuna delle aziende in questione compilare il campo ***Anagrafica associata*** per collegare un Contatto che contraddistingua l'azienda stessa nel consolidamento, ad esempio se l'azienda si chiama Alfa, nella sua tabella società colleghiamo un contatto (precedentemente creato) che si chiama ad es. "Alfa Spa". 
+- Nella tabella [**società**](/docs/configurations/tables/general-settings/company) di ognuna delle aziende in questione compilare il campo ***Anagrafica associata*** per collegare un Contatto che contraddistingua l'azienda stessa nel consolidamento, ad esempio se l'azienda si chiama Alfa, nella sua tabella società colleghiamo un contatto (precedentemente creato) che si chiama ad es. "Alfa Spa". 
 - Nel piano conti di ognuna delle società sarà stato creato il sottoconto (attraverso la gestione **dati contabili** dell'anagrafica) di tipo cliente o fornitore dell'altra azienda del gruppo e saranno stati registrati degli scambi incrociati, ad esempio acquisto da parte dell'azienda 1 e vendita da parte dell'azienda 2 (ognuno dal suo punto di vista). 
 - Ognuna delle aziende lancia una chiusura conti infrannuale per il medesimo periodo 
 - Nella procedura *Consolidamento* selezionerò le due chiusure delle due società di cui generare le scritture di rettifica per consolidamento che vanno a neutralizzare costi e ricavi e crediti e debiti reciproci aggregando invece i movimenti verso l'esterno

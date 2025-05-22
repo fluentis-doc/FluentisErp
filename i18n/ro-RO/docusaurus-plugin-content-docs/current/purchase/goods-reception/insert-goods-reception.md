@@ -24,7 +24,7 @@ Alternativ, puteți să selectați ca *Tip rând* un *Articol necodificat* și s
 
 Pentru a crea recepția mărfurilor, utilizatorul trebuie să introducă următoarele date:
 
-- **Furnizor**: poate fi introdus folosind [help-ul de câmp](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) sau [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+- **Furnizor**: poate fi introdus folosind [help-ul de câmp](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 - **Tip document**: predefinit în tabelul [Tipuri recepţie mărfuri](/docs/configurations/tables/purchase/goods-receipt-types). Acest câmp determină intervalul de numerotare a documentului care se introduce și propune automat *Numărul* pe baza datei inserării și a ultimului număr introdus.
 - **Număr recepție**: este propus automat în funcție de tip, dar poate fi modificat manual, respectând întotdeauna regula de progresie între dată și număr.
 - **Dată recepție**: este propusă automat ca fiind dată curentă, dar poate fi modificată manual, respectând întotdeauna regula de progresie între dată și număr.

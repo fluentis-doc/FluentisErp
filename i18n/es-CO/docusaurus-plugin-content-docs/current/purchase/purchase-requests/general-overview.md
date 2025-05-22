@@ -22,7 +22,7 @@ import Link from '@docusaurus/Link';
         <p>Desde la impresión *sottoscorta*, ubicada en el área *Logística > Impresiones de Gestión > Bajo inventario (Logistica > Stampe Gestionali > Sottoscorta)*, es posible generar las RDA de reintegro de stock para los artículos que tienen disponibilidad menor que su punto de reorden.  </p>
     </div>
     <div className="card">
-###     <Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto">Planificación y Producción (Pianificazione e Produzione)</Link>
+###     <Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders">Planificación y Producción (Pianificazione e Produzione)</Link>
         <p>La planificación general y el MRP pueden generar *órdenes de compra planificadas (ordini pianificati di acquisto)* en base a las solicitudes de materiales necesarios para la producción. Tales órdenes pueden ser transformadas en *richieste di acquisto* automáticamente o manualmente desde el procedimiento de *rilascio ordini pianificati*.</p>
     </div>
 </div>

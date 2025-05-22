@@ -15,7 +15,7 @@ Se poate filtra după: *Furnizor*, *Număr recepţie*, *De la/Până la data rec
 - **Data înregistrare**: permite specificarea datei relative la înregistrarea în gestiune.
 
 :::importantNotă
-Dacă în [Parametri ordine furnizori](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico) > tab *Încărcare*, flagul **Creează înregistrare cu data documentului** este activ, înregistrarea de gestiune va fi întotdeauna executată cu *Data recepţiei* introdusă în antetul documentului, ignorând *Data înregistrării în gestiune* introdusă în acest formular.    
+Dacă în [Parametri ordine furnizori](/docs/configurations/parameters/purchase/purchase-orders-parameters) > tab *Încărcare*, flagul **Creează înregistrare cu data documentului** este activ, înregistrarea de gestiune va fi întotdeauna executată cu *Data recepţiei* introdusă în antetul documentului, ignorând *Data înregistrării în gestiune* introdusă în acest formular.    
 Dacă *Data încărcării* nu este completată, înregistrarea de gestiune va fi creată cu *Data înregistrării în gestiune* introdusă în acest formular sau cu data curentă, dacă câmpul *Data înregistrării* nu este completat.
 :::
 

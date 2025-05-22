@@ -35,11 +35,11 @@ Para crear el pedido, el usuario debe ingresar los campos obligatorios:
 - **anno**: se inserta automáticamente el año en curso, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
 - **numero**: se propone automáticamente según el tipo, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
 - **data inserimento**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente siempre respetando la regla de progresión entre fecha y número;  
-- **fornitore**: puede ser ingresado utilizando la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) o [manualmente (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+- **fornitore**: puede ser ingresado utilizando la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
 ## **testata** {#header}
 
-Continúa introduciendo los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) o con la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+Continúa introduciendo los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
 :::note Recuerda (Ricorda)
 Si el documento se *crea automáticamente*, por ejemplo, desde el filtro de búsqueda de [**ordini clienti**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), desde el procedimiento de [**creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o del procedimiento de [**creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/procedures/order-creation), estos datos se toman del *documento de origen* del cual se generó.

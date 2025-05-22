@@ -24,7 +24,7 @@ En alternativa, es posible seleccionar como *Tipo de línea* un *Artículo no co
 
 Para crear la recepción de mercancías, el usuario debe ingresar los siguientes datos:
 
-- **Proveedor**: puede ser ingresado utilizando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).  
+- **Proveedor**: puede ser ingresado utilizando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
 - **Tipo de documento**: predefinido en la tabla [Tipos de recepción de mercancías](/docs/configurations/tables/purchase/goods-receipt-types). Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el *Número* basado en la fecha de ingreso y en el último número ingresado.  
 - **Número de recibo**: se propone automáticamente basado en el tipo, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número.  
 - **Fecha de recepción**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente siempre respetando la regla de progresión entre fecha y número.  
@@ -82,7 +82,7 @@ Dentro de esta pestaña se reportan/inserta información adicional relacionada c
 
 - **Variante**: en este campo es posible seleccionar una variante del artículo entre las que fueron previamente codificadas en la pestaña [Variantes](/docs/erp-home/registers/items/create-new-item) del registro del artículo. Si en la lista de precios se han ingresado precios y/o descuentos diferentes para cada variante, estos se actualizarán al seleccionar una variante diferente del artículo.   
 
-- **Almacén y causa**: permite ingresar el almacén y la causa de referencia a utilizar para la carga de los artículos relacionados en el almacén. Si la línea de artículo ha sido recuperada de un pedido de compra, se propondrán el almacén y la causa ingresados en el pedido; de lo contrario, pueden ser ingresados manualmente para cada línea de artículo. Si los campos no están valorados, al momento de la carga de la recepción de mercancías se utilizarán los que se ingresaron en los parámetros de pedidos de proveedores, pestaña [Carga](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico). 
+- **Almacén y causa**: permite ingresar el almacén y la causa de referencia a utilizar para la carga de los artículos relacionados en el almacén. Si la línea de artículo ha sido recuperada de un pedido de compra, se propondrán el almacén y la causa ingresados en el pedido; de lo contrario, pueden ser ingresados manualmente para cada línea de artículo. Si los campos no están valorados, al momento de la carga de la recepción de mercancías se utilizarán los que se ingresaron en los parámetros de pedidos de proveedores, pestaña [Carga](/docs/configurations/parameters/purchase/purchase-orders-parameters). 
 
 - **Proyecto**: representa el proyecto a asociar al documento. Si en la cabecera del documento se ha ingresado un proyecto, este se reportará en todas las líneas de artículo; alternativamente, puede ser seleccionado a través de la ayuda de proyectos correspondiente.
 

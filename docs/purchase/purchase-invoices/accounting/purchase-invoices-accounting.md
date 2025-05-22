@@ -63,4 +63,4 @@ I dati nelle griglie in basso, **Fatture di acquisto** e **Registrazione contabi
 
 ### 4. Messaggi di errore
 
-Vedere la pagina sulla [**contabilizzazione fattura di vendita**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting#messaggi-di-errore).
+Vedere la pagina sulla [**contabilizzazione fattura di vendita**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting).

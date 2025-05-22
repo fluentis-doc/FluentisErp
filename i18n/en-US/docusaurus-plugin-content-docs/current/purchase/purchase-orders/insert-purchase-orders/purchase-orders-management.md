@@ -37,11 +37,11 @@ To create the order, the user must enter the mandatory fields:
 - **Year**: the current year is entered automatically, but it can be manually modified while respecting the progression rule between date and number;
 - **Number**: automatically proposed based on the type, but can be manually modified while respecting the progression rule between date and number;
 - **Insert date**: the current date is automatically proposed, but can be manually modified while respecting the progression rule between date and number;
-- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
 ## **2. Header** {#header}
 
-Continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+Continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
 :::note Remember 
 If the document is *automatically created*, for example from the search filter of [**Sales Orders**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), from the [**Automatic Orders Generation**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests), or from the [**Purchase Order Creation from Purchase Offer**](/docs/purchase/offer-request/procedures/order-creation) procedure, this data is retrieved from the *source document* from which it was generated.

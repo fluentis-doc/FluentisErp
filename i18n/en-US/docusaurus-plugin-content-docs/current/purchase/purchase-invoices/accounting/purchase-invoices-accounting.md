@@ -63,4 +63,4 @@ The data in the lower grids, **Purchase Invoices** and **Ledger record**, corres
 
 ### 4. Error Messages 
 
-See the page on [**Sales invoice accounting**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting#messaggi-di-errore).
+See the page on [**Sales invoice accounting**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting).

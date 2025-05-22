@@ -19,7 +19,7 @@ It offers the possibility to enter filters to search for purchase DDTs, to selec
 - **Warehouse posting date**: allows specifying the date related to the warehouse registration.
 
 :::important Remember
-If in the [Purchase DN Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) > Load tab, the flag **Create recording with document date** is active, the warehouse registration will always be executed with the document date, ignoring the *Warehouse posting date* entered in this form.    
+If in the [Purchase DN Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > Load tab, the flag **Create recording with document date** is active, the warehouse registration will always be executed with the document date, ignoring the *Warehouse posting date* entered in this form.    
 If the flag in the parameters is not active, the manually entered *Load date* in the header of the DN will be used.   
 If the *Load date* is not set, the warehouse registration will be created with the *Warehouse posting date* entered in this form.
 :::
@@ -41,7 +41,7 @@ The available options are:
 - **Accept the following data as warehouse and reason**: ensures complete loading of the document. For all items found without a warehouse and reason in the selected DDTs, it sets the data entered immediately after, in the fields: *Warehouse* and *Template*.
 
 :::important Remember
-If in the [Purchase DN Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) > Load tab the flag **Priority warehouse and load template** is active, the *Warehouse* and *Template* entered in the parameters will always be used, ignoring those present in the DN for each item line.
+If in the [Purchase DN Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > Load tab the flag **Priority warehouse and load template** is active, the *Warehouse* and *Template* entered in the parameters will always be used, ignoring those present in the DN for each item line.
 :::
 
 *Specific button*

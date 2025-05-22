@@ -20,7 +20,7 @@ En el plan de cuentas de las empresas que tienen una empresa matriz en la tabla,
 :::important[]
 Procedimiento paso a paso de activación y ejecución (supongamos dos empresas)
 
-- En la tabla [**società**](/docs/configurations/tables/general-settings/company#dettaglio-anagrafica-societa) de cada una de las empresas en cuestión, completar el campo ***Registro asociado (Anagrafica associata)*** para vincular un Contacto que identifique la empresa misma en la consolidación, por ejemplo, si la empresa se llama Alfa, en su tabla de empresas vinculamos un contacto (previamente creado) que se llama, por ejemplo, "Alfa Spa".  
+- En la tabla [**società**](/docs/configurations/tables/general-settings/company) de cada una de las empresas en cuestión, completar el campo ***Registro asociado (Anagrafica associata)*** para vincular un Contacto que identifique la empresa misma en la consolidación, por ejemplo, si la empresa se llama Alfa, en su tabla de empresas vinculamos un contacto (previamente creado) que se llama, por ejemplo, "Alfa Spa".  
 - En el plan de cuentas de cada una de las empresas se habrá creado la subcuenta (a través de la gestión **dati contabili** del registro) de tipo cliente o proveedor de la otra empresa del grupo y se habrán registrado intercambios cruzados, por ejemplo, compra por parte de la empresa 1 y venta por parte de la empresa 2 (cada uno desde su perspectiva).  
 - Cada una de las empresas lanza un cierre de cuentas interanual para el mismo período.  
 - En el procedimiento *consolidamento* seleccionaré los dos cierres de las dos empresas para generar los asientos de ajuste para la consolidación que van a neutralizar costos e ingresos y créditos y deudas recíprocas, agregando en cambio los movimientos hacia el exterior.

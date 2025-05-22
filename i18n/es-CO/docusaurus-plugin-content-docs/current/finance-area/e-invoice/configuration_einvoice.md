@@ -357,5 +357,5 @@ PRESTAR ATENCIÓN A QUE EN LA CONFIGURACIÓN DEL TIPO DE RETENCIÓN ASOCIADO EL 
 :::
 
 :::tip **Ver también**
-Para la gestión del traslado **contribución caja de previsión** en la factura electrónica [**ver aquí**](/docs/configurations/tables/general-settings/expenses-types#ritenuta-dacconto-e-cassa-previdenza). 
+Para la gestión del traslado **contribución caja de previsión** en la factura electrónica [**ver aquí**](/docs/configurations/tables/general-settings/expenses-types). 
 :::

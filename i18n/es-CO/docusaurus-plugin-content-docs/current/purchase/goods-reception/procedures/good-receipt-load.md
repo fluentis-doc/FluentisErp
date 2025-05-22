@@ -15,7 +15,7 @@ Es posible filtrar por: *fornitore*, *Número de recepción (Numero ricevimento)
 - **data registrazione**: permite especificar la fecha relacionada con el registro en el almacén.
 
 :::important Recuerda
-Si en los [Parámetros de pedidos a proveedores (Parametri ordini fornitori)](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico) > pestaña Carga el indicador **crea registrazione con la data del documento** está activo, el registro en el almacén siempre se realizará con la *data ricevimento* ingresada en el encabezado del documento, ignorando la *data registrazione magazzino* ingresada en este formulario.  
+Si en los [Parámetros de pedidos a proveedores (Parametri ordini fornitori)](/docs/configurations/parameters/purchase/purchase-orders-parameters) > pestaña Carga el indicador **crea registrazione con la data del documento** está activo, el registro en el almacén siempre se realizará con la *data ricevimento* ingresada en el encabezado del documento, ignorando la *data registrazione magazzino* ingresada en este formulario.  
 Si la *data carico* no está valorada, el registro en el almacén se creará con la *data registrazione magazzino* ingresada en este formulario o con la fecha actual, si el campo *data registrazione* no está valorado.
 :::
 

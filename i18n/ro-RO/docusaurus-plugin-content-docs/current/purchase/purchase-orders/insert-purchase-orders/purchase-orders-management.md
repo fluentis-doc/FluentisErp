@@ -36,11 +36,11 @@ Pentru a crea ordinul, utilizatorul trebuie să introducă câmpurile obligatori
 - **An**: ste inserat automat anul în curs, dar poate fi modificat manual respectând regula progresiei dintre dată şi număr;  
 - **Numer**: este propus automat pe baza tipului, dar poate fi modificat manual respectând regula progresiei dintre dată şi număr;  
 - **Dată inserare**: este propusă automat data curentă, dar poate fi modificată manual respectând regula progresiei dintre dată şi număr;  
-- **Furnizor**: poate fi inserat utilizând [help-ul](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) sau [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+- **Furnizor**: poate fi inserat utilizând [help-ul](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
  
 ## 2. Antet
  
-Continuați cu inserarea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) sau cu ajutorul [help-ului](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+Continuați cu inserarea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau cu ajutorul [help-ului](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
 :::note Important
 Dacă documentul este *creat automat*, de exemplu din filtrul de căutare al [**Ordinelor clienți**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), din procedura de [**Creare automată ordine**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) sau din procedura de [**Creare ordin furnizor din ofertă furnizor**](/docs/purchase/offer-request/procedures/order-creation), aceste date sunt preluate din *documentul de origine* din care a fost generat. 

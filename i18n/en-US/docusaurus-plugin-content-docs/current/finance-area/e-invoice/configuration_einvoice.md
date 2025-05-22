@@ -352,5 +352,5 @@ PLEASE NOTE THAT IN THE CONFIGURATION OF THE ASSOCIATED WITHHOLDING TYPE, THE **
 :::
 
 :::tip **See also**
-For managing the recharging of the **pension fund contribution**, see [**here**](/docs/configurations/tables/general-settings/expenses-types#ritenuta-dacconto-e-cassa-previdenza) in electronic invoicing.
+For managing the recharging of the **pension fund contribution**, see [**here**](/docs/configurations/tables/general-settings/expenses-types) in electronic invoicing.
 :::

@@ -63,4 +63,4 @@ Los datos en las cuadrículas inferiores, **fatture di acquisto** y **registrazi
 
 ### 4. Mensajes de error (Messaggi di errore)
 
-Consultar la página sobre [**contabilizzazione fattura di vendita**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting#messaggi-di-errore).
+Consultar la página sobre [**contabilizzazione fattura di vendita**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting).

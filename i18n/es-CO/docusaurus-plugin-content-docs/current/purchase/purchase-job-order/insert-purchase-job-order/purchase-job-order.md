@@ -30,7 +30,7 @@ En alternativa, es posible seleccionar como *tipo riga* un *articolo non codific
 
 Para crear una nueva orden de compra, el usuario debe ingresar los siguientes datos:
 
-- **fornitore**: puede ser ingresado usando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).  
+- **fornitore**: puede ser ingresado usando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
 - **tipo commessa**: predeterminado en la tabla [Tipos de orden de compra (Tipi commessa di acquisto)](/docs/configurations/tables/purchase/purchase-job-order-types). Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el *Número* según la fecha de ingreso y el último número ingresado.  
 - **Año/fecha ingresada (Anno/data inserita)**: se propone automáticamente la fecha corriente, pero puede ser modificada manualmente.  
 - **Número**: a cada documento se le asigna un número según la numeración especificada por el usuario en la tabla [Numeración](/docs/configurations/tables/fluentis-numerations). 
@@ -40,7 +40,7 @@ El formulario contiene una serie de pestañas.
 
 ## **testata**
 
-Después de seleccionar los datos obligatorios en la sección superior, el usuario puede continuar ingresando los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) o con la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+Después de seleccionar los datos obligatorios en la sección superior, el usuario puede continuar ingresando los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
 Al ingresar el **fornitore**, se proponen automáticamente todos los datos específicos de la pestaña **testata**, según los datos establecidos previamente en la [anagrafía del proveedor (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) en los campos correspondientes a su dirección y en las secciones:
 

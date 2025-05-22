@@ -22,7 +22,7 @@ import Link from '@docusaurus/Link';
         <p>Dalla stampa *Sottoscorta*, posta sotto l'area *Logistica > Stampe Gestionali > Sottoscorta*, è possibile generare le RDA di reintegro della scorta per gli articoli che hanno disponibilità minore rispetto al loro punto di riordino.  </p>
     </div>
     <div className="card">
-###     <Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto">Pianificazione e Produzione</Link>
+###     <Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders">Pianificazione e Produzione</Link>
         <p>La Pianificazione generale e l'MRP possono generare *ordini pianificati di acquisto* sulla base delle richieste di materiale necessario per la produzione. Tali ordini possono essere trasformati in *Richieste di Acquisto* automaticamente oppure manualmente dalla procedura di *Rilascio ordini pianificati*.</p>
     </div>
 </div>

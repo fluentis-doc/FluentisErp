@@ -32,7 +32,7 @@ En alternativa, se puede seleccionar como *Tipo de línea* un *Artículo no codi
 
 - **Tipo de factura de entrega de compra (Tipo bolla cosegna acquisto)**: predefinido en *Configuración > Tablas > Compras > Tipos DDT de compra*.  
 Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el *Número* del DDT según la fecha de ingreso y el último número ingresado;   
-- **fornitore**: puede ser ingresado utilizando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale);   
+- **fornitore**: puede ser ingresado utilizando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection);   
 - **numero interno**: se propone automáticamente según el tipo, pero puede ser modificado manualmente siguiendo la regla de progresión entre fecha y número;  
 - **data inserimento**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente siguiendo la misma regla de progresión entre fecha y número;  
 - **numero**: en este campo se puede ingresar un número de documento que puede ser diferente al propuesto en el campo anterior.
@@ -124,7 +124,7 @@ Este procedimiento se inicia con la ayuda del botón homónimo que se encuentra 
 El resultado puede ser visualizado en Logística > [Registros (Registrazioni)](/docs/logistics/warehouse/stock-records/records) o en el procedimiento [Registro DDT de compra en almacén (Registrazione DDT di acquisto in magazzino)](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse), pestaña *riepilogativo*.
 
 :::note Nota
-Si en los [Parámetros DDT de compra (Parametri DDT di acquisto)](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) está activo el indicador **carico/scarico automatico**, al momento de activar el indicador *controllata* en la cabecera del DDT se propondrá automáticamente llevar a cabo la carga del DDT. Este campo será editable solo una vez activado el campo *Controlado* e ingresado el *Número* de documento.
+Si en los [Parámetros DDT de compra (Parametri DDT di acquisto)](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) está activo el indicador **carico/scarico automatico**, al momento de activar el indicador *controllata* en la cabecera del DDT se propondrá automáticamente llevar a cabo la carga del DDT. Este campo será editable solo una vez activado el campo *Controlado* e ingresado el *Número* de documento.
 :::
 
 ### *Cumplimiento de pedido (Evasione da ordine)*

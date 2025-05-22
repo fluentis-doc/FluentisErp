@@ -76,4 +76,4 @@ Alternativamente, está disponible el procedimiento de Inicio Rápido descrito a
 
 El Inicio Rápido es un procedimiento diseñado para simplificar y acelerar la inicialización del software de gestión, permitiendo poblar automáticamente el sistema con parámetros y tablas básicas. Esta funcionalidad reduce significativamente el tiempo y el esfuerzo requerido para la configuración inicial, evitando la entrada manual de cada configuración.
  
-Recomendamos consultar el [artículo relacionado](/docs/guide/fast-start#tabelle-acquisti) antes de abordar el módulo.
+Recomendamos consultar el [artículo relacionado](/docs/guide/fast-start) antes de abordar el módulo.

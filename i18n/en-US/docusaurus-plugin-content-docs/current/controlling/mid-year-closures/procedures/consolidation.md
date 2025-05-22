@@ -20,7 +20,7 @@ In the chart of accounts of companies that have a parent company in the table, f
 :::important[]
 Step-by-step activation and execution procedure (let's assume two companies)
 
-- In the table [**company**](/docs/configurations/tables/general-settings/company#dettaglio-anagrafica-societa) of each of the companies in question, fill in the ***Associated Register*** field to link a Contact that distinguishes the company itself in the consolidation; for example, if the company is called Alfa, we link a contact (previously created) in its company table that is named, for example, "Alfa Spa".
+- In the table [**company**](/docs/configurations/tables/general-settings/company) of each of the companies in question, fill in the ***Associated Register*** field to link a Contact that distinguishes the company itself in the consolidation; for example, if the company is called Alfa, we link a contact (previously created) in its company table that is named, for example, "Alfa Spa".
 - In the chart of accounts of each company, a detail account (through the **accounting data management** of the register) of type customer or supplier of the other company in the group will have been created, and some cross-exchanges will have been recorded, for example, a purchase by company 1 and a sale by company 2 (each from its own perspective).
 - Each company runs a mid-year account closure for the same period.
 - In the *Consolidation* procedure, I will select the two closures from the two companies for which to generate the adjustment records for consolidation that will neutralize costs and revenues and mutual receivables and payables while aggregating the movements towards the outside.

@@ -15,7 +15,7 @@ You can filter by: *Supplier*, *Receipt Number*, *From/To Receipt Date*.
 - **Posting date**: allows you to specify the date related to the warehouse registration.
 
 :::important Remember
-If in the [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico) > Load tab the flag **Create recording with document date** is active, the warehouse registration will always be executed with the *Reception date* entered in the document header, ignoring the *Warehouse posting date* entered in this form.    
+If in the [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) > Load tab the flag **Create recording with document date** is active, the warehouse registration will always be executed with the *Reception date* entered in the document header, ignoring the *Warehouse posting date* entered in this form.    
 If the *Load date* is not filled in, the warehouse registration will be created with the *Warehouse posting date* entered in this form or with the current date if the *Posting date* field is not populated.
 :::
 

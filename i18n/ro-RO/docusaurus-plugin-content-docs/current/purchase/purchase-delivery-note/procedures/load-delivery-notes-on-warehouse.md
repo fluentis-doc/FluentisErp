@@ -19,7 +19,7 @@ Offre la possibilità di inserire i filtri per cercare i DDT di acquisto, per se
 - **Data registrazione magazzino**: permette di specificare la data relativa alla registrazione in magazzino.
 
 :::important Ricorda
-Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la data del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
+Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la data del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
 Se il flag nei parametri non è attivo, sarà utilizzata la *Data carico* inserita manualmente nella testata del DDT.   
 Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form.
 :::
@@ -41,7 +41,7 @@ Le opzioni disponibili sono:
 - **Accettare come magazzino e causale i seguenti dati**: assicura il carico completo del documento. Per tutti gli articoli trovati senza magazzino e causale nei DDT selezionati, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale*.
 
 :::important Ricorda
-Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) > tab Carico il flag **Priorità magazzino e causale di carico** è attivo, saranno sempre utilizzati il *Magazzino* e la *Causale* inseriti nei parametri, ignorando quelli presenti nel DDT per ciascuna riga articolo.
+Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > tab Carico il flag **Priorità magazzino e causale di carico** è attivo, saranno sempre utilizzati il *Magazzino* e la *Causale* inseriti nei parametri, ignorando quelli presenti nel DDT per ciascuna riga articolo.
 :::
 
 *Pulsante specifico*

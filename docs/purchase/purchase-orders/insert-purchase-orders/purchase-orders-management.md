@@ -37,11 +37,11 @@ Per creare l'ordine, l'utente deve inserire i campi obbligatori:
 - **Anno**: viene inserito automaticamente l'anno in corso, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
 - **Numero**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
 - **Data inserimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
  
 ## **2. Testata** {#header}
  
-Continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+Continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
  
 :::note Ricorda
 Se il documento viene *creato automaticamente*, ad esempio dal filtro di ricerca degli [**Ordini clienti**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), dalla procedura di [**Creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o dalla procedura di [**Creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/procedures/order-creation), questi dati vengono ripresi dal *documento d'origine* da cui è stato generato.

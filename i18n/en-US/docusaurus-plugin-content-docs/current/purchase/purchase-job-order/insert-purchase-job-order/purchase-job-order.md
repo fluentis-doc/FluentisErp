@@ -30,7 +30,7 @@ The form is opened via the path **Purchases > Purchase Job Orders > New Purchase
 
 To create a new Purchase Job Order, the user must enter the following data:
 
-- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).  
+- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
 - **Job order type**: defaulted in the [Purchase Job Order Types table](/docs/configurations/tables/purchase/purchase-job-order-types). This field determines the range of numbering for the document being entered and automatically proposes the *Number* based on the entry date and the last number entered.   
 - **Year/Entry date**: the current date is proposed automatically but can be modified manually.   
 - **Number**: each document is assigned a number according to the numbering specified by the user in the [Numbering table](/docs/configurations/tables/fluentis-numerations). 
@@ -40,7 +40,7 @@ The form contains a series of tabs.
 
 ## **Header**
 
-After selecting the mandatory data in the upper section, the user can continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+After selecting the mandatory data in the upper section, the user can continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
 By entering the **Supplier**, all specific data from the **Header** tab is proposed automatically according to the data previously set in the [supplier registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) in the fields corresponding to its address and in the sections:
 

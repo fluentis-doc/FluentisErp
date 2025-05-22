@@ -214,7 +214,7 @@ Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra
 
 ## Lotti e Serial Number
 
-Nel tab **Lotti e Serial numbers**, in fase di registrazione della dichiarazione di produzione, vengono riportati in automatico i lotti e i serial numbers degli articoli prodotti in base alla logica indicata nel tab [Lotti e Serial numbers](/docs/erp-home/registers/items/create-new-item#17-lotti-e-serial-number) dell’anagrafica articolo.      
+Nel tab **Lotti e Serial numbers**, in fase di registrazione della dichiarazione di produzione, vengono riportati in automatico i lotti e i serial numbers degli articoli prodotti in base alla logica indicata nel tab [Lotti e Serial numbers](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo.      
 Nel caso in cui fosse indicato un lotto nel campo lotto della riga di dichiarazione, gli articoli prodotti verranno registrati con questo numero di lotto, che ha priorità rispetto alle regole inserite in anagrafica.
 
 La griglia dei *Lotti* si compone delle seguenti colonne:

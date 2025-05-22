@@ -18,7 +18,7 @@ Es posible filtrar por: proveedor, tipo de factura de compra, de/a número de fa
 - **data registrazione magazzino**: permite especificar la fecha relativa al registro en el almacén.
 
 :::important Recuerda
-Si en los [Parámetros de facturas de compra (Parametri fatture di acquisto)](/docs/configurations/parameters/purchase/purchase-invoices-parameters#carico) > pestaña Carga (tab Carico) el indicador **crea registrazione con la data del documento** está activo, el registro del almacén se realizará siempre con la fecha del documento, ignorando la *data registrazione magazzino* ingresada en este formulario.  
+Si en los [Parámetros de facturas de compra (Parametri fatture di acquisto)](/docs/configurations/parameters/purchase/purchase-invoices-parameters) > pestaña Carga (tab Carico) el indicador **crea registrazione con la data del documento** está activo, el registro del almacén se realizará siempre con la fecha del documento, ignorando la *data registrazione magazzino* ingresada en este formulario.  
 Si el indicador en los parámetros no está activo, se utilizará la *data carico* ingresada manualmente en la cabecera de la factura.  
 Si la *data carico* no está asignada, el registro del almacén se creará con la *data registrazione magazzino* ingresada en este formulario.
 :::

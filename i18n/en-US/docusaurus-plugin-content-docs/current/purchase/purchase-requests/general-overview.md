@@ -22,7 +22,7 @@ import Link from '@docusaurus/Link';
         <p>From the *Safety Stock* report, located under the area *Logistics > Management Reports > Safety Stock*, it is possible to generate the restocking Purchase Requests for items that have availability lower than their reorder point.  </p>
     </div>
     <div className="card">
-###     <Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto">Planning and Production</Link>
+###     <Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders">Planning and Production</Link>
         <p>General planning and MRP can generate *planned purchase orders* based on the requests for materials needed for production. Such orders can be transformed into *Purchase Requests* automatically or manually through the *Release Planned Orders* procedure.</p>
     </div>
 </div>

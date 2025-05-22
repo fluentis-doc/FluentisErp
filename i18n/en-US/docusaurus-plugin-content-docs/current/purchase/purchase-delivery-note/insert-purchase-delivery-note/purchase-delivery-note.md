@@ -32,7 +32,7 @@ The form *Create Purchase Delivery Note* opens via the path **New DN** or throug
 
 - **Type of purchase delivery note**: preset in *Configuration > Tables > Purchases > Types of Purchase Delivery Notes*.  
 This field determines the numbering range of the document being entered and automatically proposes the *Number* of the delivery note based on the entry date and the last entered number;   
-- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale);   
+- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection);   
 - **Internal number**: automatically proposed based on the type, but can be manually modified while respecting the progression rule between date and number;  
 - **Insert date**: the current date is proposed automatically, but can be manually modified while always respecting the progression rule between date and number;  
 - **Number**: in this field, it is possible to enter a document number that may differ from that proposed in the previous field.   
@@ -124,7 +124,7 @@ This procedure is launched with the aid of the homonymous button found in the do
 The result can be viewed in Logistics > [Records](/docs/logistics/warehouse/stock-records/records) or in the [Registration of Purchase Delivery Note in Warehouse](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse), *Summary* tab.
 
 :::note Note
-If in the [Purchase Delivery Note Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) the **Automatic load/unload** flag is enabled, upon activating the *Controlled* flag in the delivery note header, it will be automatically proposed to perform the loading of the delivery note. This field will be editable only once the *Controled* field is activated and the *Number* is entered.
+If in the [Purchase Delivery Note Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) the **Automatic load/unload** flag is enabled, upon activating the *Controlled* flag in the delivery note header, it will be automatically proposed to perform the loading of the delivery note. This field will be editable only once the *Controled* field is activated and the *Number* is entered.
 :::
 
 ### *Fulfillment from Order*

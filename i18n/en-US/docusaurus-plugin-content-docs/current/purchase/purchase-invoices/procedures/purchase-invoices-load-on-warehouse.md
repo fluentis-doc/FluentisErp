@@ -18,7 +18,7 @@ Filtering can be done by: supplier, type of purchase invoice, from/to invoice nu
 - **Warehouse posting date**: allows specifying the date related to the registration in the warehouse.
 
 :::important Remember 
-If in the [Purchase Invoice Parameters](/docs/configurations/parameters/purchase/purchase-invoices-parameters#carico) > Load tab the flag **Create recording with document date** is active, the warehouse registration will always be executed with the document date, ignoring the *Warehouse posting date* entered in this form.    
+If in the [Purchase Invoice Parameters](/docs/configurations/parameters/purchase/purchase-invoices-parameters) > Load tab the flag **Create recording with document date** is active, the warehouse registration will always be executed with the document date, ignoring the *Warehouse posting date* entered in this form.    
 If the flag in the parameters is not active, the *Load date* manually entered in the invoice header will be used.   
 If the *Load date* is not set, the warehouse registration will be created with the *Warehouse posting date* entered in this form.
 :::

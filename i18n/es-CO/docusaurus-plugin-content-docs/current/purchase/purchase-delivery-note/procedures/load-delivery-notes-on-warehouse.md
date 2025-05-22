@@ -19,7 +19,7 @@ Ofrece la posibilidad de insertar filtros para buscar los DDT de compra, selecci
 - **data registrazione magazzino**: permite especificar la fecha relacionada con el registro en el almacén.
 
 :::important Recuerda
-Si en los [Parámetros de DDT de compra](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) > pestaña Carga el indicador **crea registrazione con la data del documento** está activo, el registro en el almacén se realizará siempre con la fecha del documento, ignorando la *Fecha de registro en almacén* ingresada en este formulario.  
+Si en los [Parámetros de DDT de compra](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > pestaña Carga el indicador **crea registrazione con la data del documento** está activo, el registro en el almacén se realizará siempre con la fecha del documento, ignorando la *Fecha de registro en almacén* ingresada en este formulario.  
 Si el indicador en los parámetros no está activo, se utilizará la *Fecha de carga* ingresada manualmente en el encabezado del DDT.  
 Si la *Fecha de carga* no está valorada, el registro en el almacén se creará con la *Fecha de registro en almacén* ingresada en este formulario.
 :::
@@ -41,7 +41,7 @@ Las opciones disponibles son:
 - **Aceptar como almacén y causa los siguientes datos (Accettare come magazzino e causale i seguenti dati)**: asegura la carga completa del documento. Para todos los artículos encontrados sin almacén y causa en los DDT seleccionados, establece los datos ingresados inmediatamente después, en los campos: *magazzino* y *causale*.
 
 :::important Recuerda
-Si en los [Parámetros de DDT de compra](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) > pestaña Carga el indicador **priorità magazzino e causale di carico** está activo, siempre se utilizarán el *Almacén* y la *Causa* ingresados en los parámetros, ignorando los presentes en el DDT para cada línea de artículo.
+Si en los [Parámetros de DDT de compra](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > pestaña Carga el indicador **priorità magazzino e causale di carico** está activo, siempre se utilizarán el *Almacén* y la *Causa* ingresados en los parámetros, ignorando los presentes en el DDT para cada línea de artículo.
 :::
 
 *Botón específico*

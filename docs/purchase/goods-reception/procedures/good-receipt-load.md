@@ -15,7 +15,7 @@ In questo tab, l'utente ha la possibilità di inserire filtri per cercare il ric
 - **Data registrazione**: permette di specificare la data relativa alla registrazione in magazzino.
 
 :::important Ricorda
-Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la *Data ricevimento* inserita nella testata del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
+Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la *Data ricevimento* inserita nella testata del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
 Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form oppure con la data corrente, se il campo *Data registrazione* non è valorizzato.
 :::
 

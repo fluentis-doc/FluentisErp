@@ -18,7 +18,7 @@ In questo tab, l'utente ha la possibilità di inserire filtri per cercare le fat
 - **Data registrazione magazzino**: permette di specificare la data relativa alla registrazione in magazzino.
 
 :::important Ricorda
-Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters#carico) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la data del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
+Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la data del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
 Se il flag nei parametri non è attivo, sarà utilizzata la *Data carico* inserita manualmente nella testata della fattura.   
 Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form.
 :::

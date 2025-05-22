@@ -24,10 +24,10 @@ Para la correcta gestión de los códigos CIG y CUP en los trazados de la factur
 **tipo ritenuta**: el campo (menú desplegable) está conectado a la tabla [**Tipos de retención**](/docs/configurations/tables/finance/withholding-tax-types) dentro de la cual se definen los tipos de retención a título de retención (o a título de impuesto) a utilizar. Para cada fila, correspondiente a un tipo de retención, deben ser completados los campos que permiten la gestión automática del cálculo y la contabilización por parte del [**percipienti**](/docs/finance-area/professional-men/general-overview).
 
 ***USO DE LOS CAMPOS Retención y Tipo de Retención EN LAS FACTURAS ACTIVAS***  
-Es posible activar el indicador para las retenciones de impuesto y su respectivo tipo también a efectos de emitir una factura activa en el caso en que sea la empresa emisora la que esté sometida a la retención de impuestos (retenciones de impuestos sufridas). **Ver también** [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)
+Es posible activar el indicador para las retenciones de impuesto y su respectivo tipo también a efectos de emitir una factura activa en el caso en que sea la empresa emisora la que esté sometida a la retención de impuestos (retenciones de impuestos sufridas). **Ver también** [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice)
 
 :::tip Ver también...  
-Para la gestión en la factura electrónica de la retención de impuesto y en particular también de la contribución **ENASARCO**, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta)  
+Para la gestión en la factura electrónica de la retención de impuesto y en particular también de la contribución **ENASARCO**, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice)  
 :::
 
 ### Administración Pública / Facturación Electrónica

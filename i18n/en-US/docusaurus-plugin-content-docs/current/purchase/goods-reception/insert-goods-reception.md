@@ -23,7 +23,7 @@ The form opens through the path **Purchasing > Goods Receipt > Create Goods Rece
 
 To create the goods receipt, the user must enter the following data:
 
-- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).  
+- **Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
 - **Document type**: pre-defined in the table [Goods Receipt Types](/docs/configurations/tables/purchase/goods-receipt-types). This field determines the numbering range of the document being entered and automatically proposes the *Number* based on the entry date and the last entered number.   
 - **Receipt number**: is proposed automatically based on the type, but can be modified manually while respecting the progression rule between date and number.  
 - **Reception date**: the current date is proposed automatically, but it can be modified manually while respecting the progression rule between date and number.
@@ -81,7 +81,7 @@ This tab displays/contains additional information related to the item.
 
 - **Variant**: in this field, it is possible to select a variant of the item among those previously defined in the [Variants tab](/docs/erp-home/registers/items/create-new-item) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the item is selected.   
 
-- **Warehouse and Reason**: allows entering the warehouse and the corresponding reason to be used for loading the related items into the warehouse. If the article line has been taken from a purchase order, the warehouse and reason entered in the order will be proposed; otherwise, they can be entered manually for each article line. If the fields are not filled in, at the time of loading the goods receipt, those entered in the supplier order parameters will be used, tab [Loading](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico). 
+- **Warehouse and Reason**: allows entering the warehouse and the corresponding reason to be used for loading the related items into the warehouse. If the article line has been taken from a purchase order, the warehouse and reason entered in the order will be proposed; otherwise, they can be entered manually for each article line. If the fields are not filled in, at the time of loading the goods receipt, those entered in the supplier order parameters will be used, tab [Loading](/docs/configurations/parameters/purchase/purchase-orders-parameters). 
 
 - **Project**: represents the project to associate with the document. If a project has been entered in the header of the document, it will be reported on all article lines; alternatively, it can be selected via the dedicated project help.
 

@@ -76,4 +76,4 @@ Alternatively, the Fast Start procedure described below is available.
 
 The Fast Start is a procedure designed to simplify and speed up the initialization of the management software, allowing automatic population of the system with basic parameters and tables. This functionality greatly reduces the time and effort required for initial configuration, avoiding the manual entry of each individual setting.
 
-We recommend consulting the related [article](/docs/guide/fast-start#tabelle-acquisti) before tackling the module.
+We recommend consulting the related [article](/docs/guide/fast-start) before tackling the module.

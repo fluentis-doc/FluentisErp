@@ -76,4 +76,4 @@ In alternativa è disponibile la procedura di Fast Start descritta di seguito.
 
 Il Fast Start è una procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale, consentendo di popolare automaticamente il sistema con parametri e tabelle di base. Questa funzionalità riduce notevolmente il tempo e lo sforzo richiesto per la configurazione iniziale, evitando l'inserimento manuale di ogni singola impostazione.    
 
-Consigliamo di consultare il relativo [articolo](/docs/guide/fast-start#tabelle-acquisti) prima di affrontare il modulo.
+Consigliamo di consultare il relativo [articolo](/docs/guide/fast-start) prima di affrontare il modulo.

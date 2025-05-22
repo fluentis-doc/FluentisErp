@@ -215,7 +215,7 @@ For an in-depth description of the extra data, please refer to the article [Extr
 
 ## Lots and Serial Numbers
 
-In the **Lots and Serial Numbers** tab, during the registration of the production declaration, the lots and serial numbers of the items produced are automatically reported based on the logic indicated in the [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item#17-lotti-e-serial-number) tab of the item registry.      
+In the **Lots and Serial Numbers** tab, during the registration of the production declaration, the lots and serial numbers of the items produced are automatically reported based on the logic indicated in the [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item) tab of the item registry.      
 If a lot is indicated in the lot field of the declaration line, the produced items will be registered with this lot number, which takes priority over the rules entered in the registry.
 
 The *Lots* grid consists of the following columns:

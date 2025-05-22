@@ -24,11 +24,11 @@ For the correct management of CIG and CUP codes in electronic invoice layouts, s
 **Withholding-tax type**: the field (dropdown) is linked to the [**Withholding Tax Types**](/docs/configurations/tables/finance/withholding-tax-types) table, within which types of withholding for advance payments (or tax purposes) to be used are defined. For each row corresponding to a type of withholding, the fields necessary for the automatic management of calculation and accounting by the [**Receivers module**](/docs/finance-area/professional-men/general-overview) must be filled out. 
 
 ***USE OF THE Withholding and Type of Withholding FIELDS IN ACTIVE INVOICES***
-It is possible to activate the flag for withholding taxes and the related type also for the purpose of issuing an active invoice if the issuing company is subject to withholding tax (withholdings suffered). **See also** [**here**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta).
+It is possible to activate the flag for withholding taxes and the related type also for the purpose of issuing an active invoice if the issuing company is subject to withholding tax (withholdings suffered). **See also** [**here**](/docs/finance-area/e-invoice/configuration_einvoice).
 
 
 :::tip See also...
-For managing withholding tax in the electronic invoice and particularly also the ENASARCO contribution, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice#ritenuta-dacconto-e-enasarco-tag-2115-datiritenuta).
+For managing withholding tax in the electronic invoice and particularly also the ENASARCO contribution, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice).
 :::
 
 **Split Payment**: flag to mark subjects under the Split Payment regime, whether they are private entities (listed companies, etc., subject to the specific regime) or Public Administrations (in this case, the same flag described below will also be activated). The activation of this flag manages the deadlines in the invoice and sets the calculation of the amounts to only taxable.
