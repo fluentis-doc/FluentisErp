@@ -50,11 +50,14 @@ If both **Mandatory Operator** and **Mandatory Password** flags are enabled, the
 :::
 **Mandatory team**: if active, it enables a check that requires the operator to enter at least one team member before proceeding with the declaration activity;     
 **Allow Overlapping Reporting**: if active, it allows the phases of a production order to be declared without following the indicated sequence in the cycle; if not activated, overlapping phases or declaring phases without following the cycle's sequence is not possible;    
-**Enable multi-phase**: if active, it allows for declarations of multiple phases simultaneously;    
+**Enable multi-phase**: if active, it allows for declarations of multiple phases simultaneously.
+In this case, time is divided among the various phases as follows: if a quantity (produced or scrapped) is declared, then the time for each phase is calculated using the following formula:              
+    *(Declared time / total quantity (produced + scrapped)) * declared quantity (produced + scrapped) for the individual phase = Phase time*           
+If no quantity is declared, but only time, then it is calculated using the formula:              
+    *Declared time / number of phases = Phase time*      
 **Maximum number of phases**: allows indicating the maximum number of phases that can be declared simultaneously;    
 **Manual time entry**: if active, it enables the operator to input working time;     
-**Time Proposed**: if active, it enables the automatic proposal of working time input;      
-**Time Allocation Method**: indicates the method by which time is allocated in the case of simultaneous declarations of multiple processing phases. The active methods are: *Sequence*: time is allocated to the phases in work based on the planned or entered sequence, *Proportional*: time is allocated proportionally based on the produced quantity of the declaration and the quantities to be produced of the individual phases;       
+**Time Proposed**: if active, it enables the automatic proposal of working time input;             
 **Quantity distribution type**: indicates the method by which the quantity is allocated in the case of simultaneous declarations of multiple processing phases. The active methods are: *Sequence*: quantity is allocated to the phases in work based on the planned or entered sequence, *Proportional*: quantity is allocated proportionally based on the produced quantity of the declaration and the quantities to be produced of the individual phases; *Manual* allows for manually indicating the produced quantities in each individual phase;         
 **Mandatory manual material declaration**: if active, along with the flag **Mandatory manual material declaration** present in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) of the item, ensures that in the *Materials* tab of the Production Declarations, the item is proposed with a quantity of zero, thus requiring the user to manually input a value before proceeding;    
 **Mandatory WorkSheet**: if active, it enables a check that prevents the operator from adding a phase that does not yet have the "Final Print" flag enabled. This "Final Print" flag can be enabled through the print procedure of the [Work Sheet](/docs/production/pp-production-in-progress/reports/worksheet);    
