@@ -1,6 +1,5 @@
 ---
-title: Registrul loturilor și Trasabilitate (Anagrafica lotti e Tracciabilità)
-sidebar_position: 3
+title: Registru loturi și Trasabilitate
 ---
 
 :::important Utilizare
@@ -19,11 +18,11 @@ Formularul vizualizează detalii despre lot și este compus din 4 secțiuni dife
 
 #### Câmpuri specifice  
 
-- **Articol**: în cele 3 câmpuri sunt afișate clasa, codul și descrierea articolului la care se referă lotul. Este vorba, cu siguranță, de un articol cu opțiunea *Gestionare loturi* activată în *Registrul articol* > tab *Loturi/SN*, fără de care nu ar fi fost posibilă încărcarea lotului pentru acel articol;
+- **Articol**: reprezintă clasa, codul și descrierea articolului la care se referă lotul. Este vorba, cu siguranță, de un articol cu opțiunea *Gestionare loturi* activată în *Registrul articol* > tab *Loturi/SN*, fără de care nu ar fi fost posibilă încărcarea lotului pentru acel articol;
 
-- **Variantă**: în cele 2 câmpuri sunt afișate codul și descrierea variantei articolului la care se referă lotul, dacă este prezentă;
+- **Variantă**: reprezintă codul și descrierea variantei articolului la care se referă lotul, dacă este prezentă;
 
-- **Lot**: reprezintă codul lotului. Este un câmp editabil, deși în timpul operațiunilor de încărcare poate fi generat automat în funcție de anumite reguli stabilite în *Tipul codului lot (Tipo codice lotto)* legat de articol. Se introduce mai întâi un cod și o descriere a *tipului codului lot*, se salvează linia și apoi se decide ce parametri se doresc utilizați pentru compunerea noului *tip cod lot*. Pentru fiecare parametru utilizat se poate decide din câte caractere trebuie să fie format și, eventual, și caracterul de umplere care trebuie utilizat. De exemplu, cu parametrul *Număr progresiv* stabilind ca și caracter de umplere '0' și Lungimea '5', se vor crea loturi cu primul număr 00000, apoi 00001, apoi 00002 și așa mai departe. *Tipul codului lot* trebuie apoi să fie legat de registrul articolului în câmpul corespunzător situat în tab *Loturi/Numere de serie*, astfel încât în procedurile care generează automat codul lotului pentru articolul respectiv, lotul să fie generat conform regulilor stabilite în *tipul codlot* legat de articol. Câmpul este alfanumeric și poate atinge o lungime maximă de 50 de caractere. Nu este vorba despre identificatorul lotului, deoarece este posibil să se efectueze mai multe încărcări în momente diferite ale aceluiași lot; în acest caz, ar apărea mai multe linii cu același *Cod Lot* în cadrul grilei de *Căutare Lotturi*;
+- **Lot**: reprezintă codul lotului. Este un câmp editabil, deși în timpul operațiunilor de încărcare poate fi generat automat în funcție de anumite reguli stabilite în *Tipul codului lot* asociat articolului. Se introduce mai întâi un cod și o descriere a *tipului codului lot*, se salvează linia și apoi se decide ce parametri se doresc utilizați pentru compunerea noului *tip cod lot*. Pentru fiecare parametru utilizat se poate decide din câte caractere trebuie să fie format și, eventual, și caracterul de umplere care trebuie utilizat. De exemplu, cu parametrul *Număr progresiv* stabilind ca și caracter de umplere '0' și Lungimea '5', se vor crea loturi cu primul număr 00000, apoi 00001, apoi 00002 și așa mai departe. *Tipul codului lot* trebuie apoi să fie asociat registrului articolului în câmpul corespunzător situat în tab *Loturi/Numere de serie*, astfel încât în procedurile care generează automat codul lotului pentru articolul respectiv, lotul să fie generat conform regulilor stabilite în *tipul codlot* asociat articolului. Câmpul este alfanumeric și poate atinge o lungime maximă de 50 de caractere. Nu este vorba despre identificatorul lotului, deoarece este posibil să se efectueze mai multe încărcări în momente diferite ale aceluiași lot; în acest caz, ar apărea mai multe linii cu același *Cod Lot* în cadrul grilei de *Căutare Lotturi*;
 
 - **Furnizor**: în acest câmp se va indica contul/analiticul/descrierea furnizorului;
 
