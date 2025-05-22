@@ -61,7 +61,6 @@ Viene visualizzata una richiesta/conferma dati per:
 
 ## Gestione dati
 
-
 ## Dati di testata del documento
 
 Le informazioni gestite sono:   
@@ -137,14 +136,17 @@ Le informazioni gestite sono:
 ### Riferimento documento
 
 Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine alla *Non conformità* in gestione. Le informazioni presenti sono:   
-> **Fattura di acquisto**, **Bolla di consegna di acquisto**, **Ricevimento merce**, **Rientro da conto lavoro**, **Reclamo**, **Anno/Ordine/Lotto** e **Fase/Sottofase/Dichiarazione n.**: sono tutti riferimenti in sola lettura al documento di origine che ha creato la *Non conformità*.   
+> **Fattura di acquisto**, **Bolla di consegna di acquisto**, **Ricevimento merce**, **Rientro da conto lavoro**, **Reclamo**, **Anno/Ordine/Lotto** e **Fase/Sottofase/Dichiarazione n.**:   
+> sono tutti riferimenti in sola lettura al documento di origine che ha creato la *Non conformità*.   
 > Nello standard, l'unico documento che può creare una *Non conformità* e che imposta automaticamente il riferimento e il *Reclamo*.
 
 
 ### Annotazioni
 
 Nel tabulatore sono contenute annotazioni generali al documento e specifiche per area. Le informazioni presenti sono:   
-> **Note commerciali**, **Note tecniche** e **Note amministrative**: annotazioni libere sull'argomento.
+> **Note commerciali**: annotazioni libere sull'argomento riservate al personale dell'area commerciale.   
+> **Note tecniche**: annotazioni libere sull'argomento riservate al personale dell'area tecnica.   
+> **Note amministrative**: annotazioni libere sull'argomento riservate al personale dell'area amministrativa.
 
 
 ### Extra data
@@ -290,7 +292,7 @@ E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selez
 >> **Resa**: è la quantità di *Articolo* resa.   
 >  
 > **Quantità alternativa**   
-> Le colonne di questo gruppo sono visualizzate solamente se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stata richiesta la *Proposta U.M. alternativa*.   
+>> Le colonne di questo gruppo sono visualizzate solamente se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stata richiesta la *Proposta U.M. alternativa*.   
 >> **Unità di misura**: è l'*Unità di misura alternativa* dell'*Articolo* reclamato.   
 >> **Unità di misura prezzo**: indica se il *Costo unitario del materiale* è riferito all'*Unità di misura alternativa*.   
 >> **Ricevuta**: è la quantità di *Articolo* ricevuta espressa nell'*Unità di misura alternativa*.   
@@ -349,7 +351,7 @@ L'elenco si compone delle seguenti informazioni:
 >> **Costo unitario**: è il costo unitario dell'*Articolo*; il valore deve essere inserito manualmente.   
 >> **Costo totale**:  viene proposto come rapporto tra *Quantità consumata* e *Costo unitario*; il costo può essere variato.   
 >
->> **Note**: annotazioni libere.   
+> **Note**: annotazioni libere.   
 
 
 ### Soggetti coinvolti   
