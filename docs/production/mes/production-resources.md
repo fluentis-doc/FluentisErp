@@ -54,7 +54,7 @@ Nel caso in cui siano abilitati entrambi i flag **Operatore obbligatorio** e **P
 In questo caso il tempo viene suddiviso tra le varie fasi in questo modo: se viene dichiarata una quantità (prodotto o scartata) allora il tempo di ciascuna fase viene calcolato con la seguente formula:             
     *(Tempo dichiarato / quantità totale (prodotta + scartata)) * quantità dichiarata (prodotta + scartata) della singola fase = Tempo della fase *           
 se invece non viene dichiarata nessuna quantità, ma solo tempo, allora viene calcolato con la formula:              
-    *Tempo dichiarato / numero delle fasi = Tempo della fase *   
+    *Tempo dichiarato / numero delle fasi = Tempo della fase *      
 **Numero massimo di fasi**: permette di indicare il numero massimo di fasi che è possibile dichiarare contemporaneamente;    
 **Inserimento tempo manuale**: se attivo, abilita l'inserimento del tempo di lavoro da parte dell'operatore;     
 **Tempo proposto**: se attivo, abilita l'inserimento del tempo di lavoro viene proposto in automatico;         

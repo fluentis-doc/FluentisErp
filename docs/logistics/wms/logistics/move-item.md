@@ -13,7 +13,23 @@ Le successive letture di ubicazioni andranno a sovrascrivere solo l’ubicazione
 A questo punto è possibile inserire la quantità da movimentare tramite i pulsanti **+** e **-** oppure inserendola direttamente.  
 Inoltre, è possibile stampare anche l'etichetta del codice articolo tramite il pulsante **Stampa** o visualizzare l'anteprima direttamente sul terminale con il pulsante **Anteprima**.     
 Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.      
-Nel caso in cui l'articolo sia gestito a lotti, verrà visualizzato anche il relativo campo in cui andare ad inserire il lotto che dovrà essere spostato.        
+Nel caso in cui l'articolo sia gestito a lotti, verrà visualizzato anche il relativo campo in cui andare ad inserire il lotto che dovrà essere spostato.  
+
+Nella parte inferiore della form è presente una griglia che permette di vedere la giacenza e la disponibilità dell'articolo con l'eventuale indicazione del lotto, ubicazione, unità di misura alternativa e giacenza nella quantità alternativa.
+Nella griglia sono riportate le seguente colonne:
+
+> **Unità di misura**: indica l'unità di misura gestionale dell'articolo (principale);     
+> **Disponibile**: indica è la quantità disponibile (non impegnata) di quell'articolo;       
+> **Giacenza (Gest.)**: indica la giacenza nell'unità di misura alternativa ed è presente solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item);            
+> **Unità di misura alternativa**: indica l'unità di misura articolo;          
+> **Giacenza**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata sulla base dei movimenti di magazzino;         
+> **Giacenza (FC)**: viene valorizzata solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;    
+> **Ubicazione**: indica l'ubicazione di partenza dell'articolo;                      
+> **Lotto**: indica il lotto dell'articolo. Viene visualizzato solo se l'articolo è gestito a lotti;     
+> **Serial number**: indica il serial number dell'articolo. Viene visualizzato solo se l'articolo è gestito a serial number.     
+
+Selezionando una riga della griglia, vengono riportate le informazioni nei relativi campi della form. 
+
 Alla conferma viene generato il movimento di magazzino, che in questo caso, oltre alla registrazione principale di scarico, presenta anche la registrazione di contro partita che ha caricato l’articolo nella nuova ubicazione.
 
 :::note Nota
