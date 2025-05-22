@@ -53,7 +53,7 @@ For *Picking Types* that will be used in the *Picking Materials Lists*, therefor
 
 **Execute orders with production job order**: no longer used;
 
-**Mandatory load unit**: picking types that have this flag deactivated cannot be used for the picking of UDCs and will be visible in the [Picking Confirmation](/docs/logistics/wms/sales/check-row-management) form of the WMS. Conversely, picking types that have this flag active will be displayed in the [Check Row Management](/docs/logistics/wms/sales/check-row-management#gestione-spunta) of the WMS. 
+**Mandatory load unit**: picking types that have this flag deactivated cannot be used for the picking of UDCs and will be visible in the [Picking Confirmation](/docs/logistics/wms/sales/check-row-management) form of the WMS. Conversely, picking types that have this flag active will be displayed in the [Check Row Management](/docs/logistics/wms/sales/check-row-management) of the WMS. 
 
 **Is over executed**: if active, allows over-fulfilling the quantity indicated in the picking; it can be used both in the [Check Row Management](/docs/logistics/wms/sales/check-row-management) and in the [Picking Confirmation](/docs/logistics/wms/sales/check-row-management) of the WMS. If it is not active and an attempt is made to move a quantity greater than that indicated, a warning message is displayed that prevents proceeding.
 
