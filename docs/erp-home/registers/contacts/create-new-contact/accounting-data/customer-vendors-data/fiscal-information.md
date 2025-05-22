@@ -11,11 +11,11 @@ In questa tab vendono inseriti dati e parametri di tipo prevalentemente fiscale.
 
 **Escludi da dich. black list**: campo obsoleto presente per retro-compatibilità. L'adempimento fiscale è attualmente abrogato.
 
-**CIG**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice identificativo di gara (esempio per gli appalti pubblici). Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/CIG-and-CUP) per poterlo richiamare.
+**CIG**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice identificativo di gara (esempio per gli appalti pubblici). Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/cig-and-cup) per poterlo richiamare.
 
 Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
 
-**CUP**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice unico progetto (per la fatturazione ad enti pubblici) Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/CIG-and-CUP) per poterlo richiamare.
+**CUP**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice unico progetto (per la fatturazione ad enti pubblici) Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/cig-and-cup) per poterlo richiamare.
 
 Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
 

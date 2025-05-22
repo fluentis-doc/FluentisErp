@@ -11,11 +11,11 @@ In this tab, data and parameters of a predominantly tax-related nature are enter
 
 **Exclude from black list declaration**: obsolete field present for backward compatibility. The tax compliance requirement is currently abrogated.
 
-**Cig**: the flag activates the specific field within sales documents to indicate the tender identification code (e.g., for public contracts). The code must then be entered in the [**appropriate table**](/docs/configurations/tables/finance/CIG-and-CUP) to be recalled.
+**Cig**: the flag activates the specific field within sales documents to indicate the tender identification code (e.g., for public contracts). The code must then be entered in the [**appropriate table**](/docs/configurations/tables/finance/cig-and-cup) to be recalled.
 
 For the correct management of CIG and CUP codes in electronic invoice layouts, since the relevant tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig).
 
-**CUP**: the flag activates the specific field within sales documents to indicate the unique project code (for invoicing to public entities). The code must then be entered in the [**appropriate table**](/docs/configurations/tables/finance/CIG-and-CUP) to be recalled.
+**CUP**: the flag activates the specific field within sales documents to indicate the unique project code (for invoicing to public entities). The code must then be entered in the [**appropriate table**](/docs/configurations/tables/finance/cig-and-cup) to be recalled.
 
 For the correct management of CIG and CUP codes in electronic invoice layouts, since the relevant tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig).
 

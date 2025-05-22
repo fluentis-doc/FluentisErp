@@ -11,11 +11,11 @@ En esta pestaña se ingresan datos y parámetros de tipo principalmente fiscal.
 
 **Excluir de declaración lista negra (Escludi da dich. black list)**: campo obsoleto presente por retro-compatibilidad. El cumplimiento fiscal ha sido actualmente derogado.
 
-**CIG**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código identificativo de la licitación (por ejemplo, para los contratos públicos). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/CIG-and-CUP) para poder ser llamado.
+**CIG**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código identificativo de la licitación (por ejemplo, para los contratos públicos). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/cig-and-cup) para poder ser llamado.
 
 Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
 
-**CUP**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código único del proyecto (para la facturación a entidades públicas). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/CIG-and-CUP) para poder ser llamado.
+**CUP**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código único del proyecto (para la facturación a entidades públicas). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/cig-and-cup) para poder ser llamado.
 
 Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
 
