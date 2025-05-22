@@ -1,15 +1,15 @@
 ---
-title: Contabilizzazione Distinta Anticipi
+title: Računovodstveno knjiženje avansa  
 sidebar_position: 1
 ---
 
-Da questa posizione, dopo aver premuto Ricerca, è possibile contabilizzare le varie distinte inserite.
+S ovog obrasca, nakon pritiska na tipku Traži, moguće je proknjižiti unesene popise avansa. 
 
-Verrà effettuata una scrittura che accredita il conto corrente ed in contropartita rileva il debito verso la banca per anticipi.
+Bit će izvršen knjižni zapis koji tereti redovni konto i u protustavci evidentira dug prema banci za predujmove.
 
-Occorre selezionare la **causale conatbile** desiderata (lo schema della registrazione è comunque gestito dal programma indipendentemente dal template) ed eventualmente cambiare la data di registrazione se necessario.
+Potrebno je odabrati željenu **tip temeljnice** te po potrebi promijeniti datum knjiženja.
 
-La procedura di contabilizzazione può essere ripristinata come di consueto dal tab **Precedente**.
+Procedura knjiženja može se ponovno pokrenuti kao i obično putem kartice **Prethodni**.
 
 ![](/img/it-it/treasury/advance/accounting/advances-list-accounting/image01.png)
 
