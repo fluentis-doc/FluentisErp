@@ -1,91 +1,181 @@
 ---
-title: Modifică lot
-sidebar_position: 4
+title: Registrul loturilor și Trasabilitate (Anagrafica lotti e Tracciabilità)
+sidebar_position: 3
 ---
 
-Această fereastră afișează detaliul lotului și conține 4 secțiuni:
+:::important Utilizare
+Registrul loturilor din Fluentis reprezintă un instrument indispensabil pentru gestionarea precisă și detaliată a loturilor în cadrul unui sistem de trasabilitate a produselor. Această funcționalitate permite utilizatorilor să caute și să vizualizeze detalii specifice despre fiecare lot cu un simplu dublu clic, facilitând astfel monitorizarea și gestionarea stocurilor.
 
-**Antet lot**:
+În cadrul fiecărui lot, utilizatorii pot modifica diverse informații esențiale, cum ar fi furnizorul, codul lotului expediat de furnizor, note specifice și starea lotului. Aceasta din urmă, care poate fi actualizată ușor, joacă un rol fundamental în determinarea utilizabilității lotului în documentele de vânzare și în înregistrările de gestiune. De asemenea, sistemul prevede gestionarea diferitelor stări ale lotului, ceea ce influențează direct disponibilitatea operativă a acestuia.
 
-În această secțiune sunt afișate datele principale relative la lot, date care pot fi modificate:
+Un aspect distinctiv al registrului loturilor este secțiunea care permite vizualizarea istorică a documentelor de încărcare și descărcare care au implicat lotul, menținând astfel o trasabilitate precisă în timp. De asemenea, este posibil să se vizualizeze stocul actual, împărțit pe gestiuni. Datorită acestor funcționalități, registrul loturilor Fluentis nu doar simplifică gestionarea operațională, ci contribuie și la asigurarea conformității normative în domenii în care trasabilitatea este esențială, cum ar fi cel alimentar și cel farmaceutic.
+:::
 
-**Articol** ****: în cele 3 campuri sunt afișate clasa, codul și descrierea articolului din lot. Este vorba despre un articol cu flag ‘Gestiune loturi' activat în tab Loturi/NS din registrul articolului, dacă nu, nu ar fi fost posibilă executarea încărcării lotului pentru articol;
+## Registru loturi
 
-**Variantă** **: în cele 2 campuri sunt afișate codul și descrierea variantei articolului din lot, dacă este prezent;
+Formularul vizualizează detalii despre lot și este compus din 4 secțiuni diferite: 
 
-**Lot nr.** ****: reprezintă codul lotului. Este un câmp editabil, chiar dacă în timpul operațiilor de încărcare poate fi generat automat pe baza unor reguli care se inserează în tab ‘Coduri lot' prezent în Parametrii inițiali de gestiune. Se inserează de la început un cod și o descriere a tipului codului lotului, se salvează linia și apoi se decide care parametri trebuie să fie utilizați pentru compunerea tipului codului lotului tocmai creat. Pentru fiecare parametru utilizat, se poate decide din câte caractere trebuie să fie format și, eventual, și caracterul de umplere de utilizat. De exemplu, cu parametrul ‘Număr progresiv' și cu caracterul de umplere ‘0' și Lungimea 5 vor fi create loturi cu primul număr 00000, apoi 00001, apoi 00002 etc. Tipul codului lotului trebuie apoi să fie atașat la registrul articolului în câmpul situat în tab ‘Loturi/NS', astfel încât în procedurile care crează automat codul lotului pentru articolul ales, lotul însuși să fie generat pe baza regulilor inserate în tab ‘Coduri lot' din Parametri inițiali de gestiune și legate la tipul codului lotului asociat articolului. Câmpul este alfanumeric și poate atinge lungimea de 50 caractere ca limită maximă. Nu este vorba despre identificativul lotului, pentru că se pot efectua mai multe încărcări în diferite momente, pentru același lot; în acest caz ar apărea mai multe linii cu același Cod lot în gridul Caută loturi;
+### Antet lot
 
-**Lot furnizor** ****: este numele pe care furnizorul îl atribuie lotului. Este un câmp editabil și nu se generează automat în timpul operațiilor de încărcare. Și acesta poate atinge lungimea de 50 caractere ca limită maximă și poate fi identic și pentru loturile diferite pentru articole diferite;
+În această secțiune sunt afișate, cu posibilitatea de a modifica unele dintre ele, datele principale referitoare la lot, în special:
 
-**Data început valabilitate** ****: reprezintă data în care a fost încărcat lotul; poate fi modificată de utilizator. Dacă a fost încărcat prin intermediul înregistrării de gestiune, această dată este propusă egală cu data în care a fost creată înregistrarea; dacă lotul a fost încărcat cu ajutorul încărcării unui aviz de achiziții sau a unei înregistrări de reintrare în sistem lohn, această dată este setată ca fiind egală cu data avizului de achiziții sau SL (dacă în aviz utilizatorul nu a modificat-o manual); dacă lotul a fost încărcat cu ajutorul înregistrării unei semnalări de producție, această dată este propusă ca fiind egală cu data semnalării de producție;
+**Articol**: în cele 3 câmpuri referitoare sunt afișate clasa, codul și descrierea articolului la care se referă lotul. Este vorba, cu siguranță, de un articol cu flagul *Gestionare loturi* activat în *Registrul articol (Anagrafica articolo)* > tab *Loturi/SN*, altfel nu ar fi fost posibil să se efectueze încărcarea lotului pentru acel articol;
 
-**Data scadență** **: reprezintă data pentru scadența lotului, poate fi modificată de utilizator, este calculată în momentul creării lotului și deci al încărcării relativei mișcări de gestiune, pornind de la data început și însumând zilele de valabilitate ale lotului, inserate în tab Loturi/NS din registrul articolului;
+**Variantă**: în cele 2 câmpuri referitoare sunt afișate codul și descrierea variantei articolului la care se referă lotul, dacă este prezentă;
 
-**Cantitate** **: reprezintă cantitatea inițială încărcată pentru lot cu ajutorul primului document care a încărcat lotul;
+**Lot**: în acest câmp apare Codul lotului. Este un câmp editabil de utilizator, deși în timpul operațiunilor de încărcare poate fi generat automat în funcție de anumite reguli stabilite în *Tipul codului lot (Tipo codice lotto)* legat de articol. Se introduce mai întâi un cod și o descriere a *tipului codului lot*, se salvează linia și apoi se decide ce parametri se doresc utilizați pentru compunerea noului *tip cod lot*. Pentru fiecare parametru utilizat se poate decide din câte caractere trebuie să fie format și, eventual, și caracterul de umplere care trebuie utilizat. De exemplu, cu parametrul *Număr progresiv* stabilind ca și caracter de umplere '0' și Lungimea '5', se vor crea loturi cu primul număr 00000, apoi 00001, apoi 00002 și așa mai departe. *Tipul codului lot* trebuie apoi să fie legat de registrul articolului în câmpul corespunzător situat în tab *Loturi/SerialNumber*, astfel încât în procedurile care generează automat codul lotului pentru articolul respectiv, lotul să fie generat conform regulilor stabilite în *tipul codlot* legat de articol. Câmpul este alfanumeric și poate atinge o lungime maximă de 50 de caractere. Nu este vorba despre identificatorul lotului, deoarece este posibil să se efectueze mai multe încărcări în momente diferite ale aceluiași lot; în acest caz, ar apărea mai multe linii cu același *Cod Lot* în cadrul grilei de *Căutare Lotturi*;
 
-**Gestiune** **: **în cele 2 campuri sunt afișate codul și descrierea gestiunii în care a fost încărcat lotul;
+**Furnizor**: în acest câmp se va indica contul/subcontul/descrierea furnizorului;
 
-**Com/An** **: reprezintă comanda de vânzare asociată lotului; poate fi modificată de utilizator. De obicei este comanda de vânzare atașată la linia articolului care a fot încărcată și care a încărcat lotul însuși;
+**Producător**: în acest câmp se va indica denumirea/Rațiunea socială a producătorului;
 
-**Note** **: **reprezintă notele inserate în înregistrarea de gestiune, simultan cu încărcarea lotului. Este un câmp editabil și se poate vizualiza și în Caută loturi;
+**Cod furnizor**: în acest câmp apare codul *Lotului furnizor*, deci de obicei numele pe care furnizorul îl atribuie lotului. Este un câmp editabil de utilizator și nu generabil automat în timpul operațiunilor de încărcare. De asemenea, poate atinge o lungime maximă de 50 de caractere și poate fi identic chiar și pentru loturi diferite ale unor articole diferite;
 
-**Închis** ****: dacă este activ, indică faptul că lotul a fost complet descărcat din gestiune. Menționăm că după închiderea de gestiune, toate loturile rămase ale anului care se închide, sunt automat setate ca fiind ‘Închise', pentru că sunt reîncărcate în stocul inițial al noului an, loturile identice, cu cantitățile rămase la sfârșitul anul precedent închiderii;
+**Tip raport etichetă**: în acest câmp se introduce tipul de etichetă care trebuie imprimată pentru acest lot;
 
-**Stare lot** **: este opțional, afișează statusul lotului. Se poate modifica și apelează datele care provin din tabelelul ‘Stări lot'. Starea lotului determină posibilitatea de a utiliza sau nu lotul în documentele de vânzare, de producție și în înregistrările de descărcare de gestiune.
+**Data început**: în acest câmp apare de obicei data la care a fost încărcat lotul, editabil de utilizator. Dacă lotul a fost încărcat prin înregistrarea în gestiune, această dată este propusă identică cu data în care a fost creată înregistrarea; dacă lotul a fost încărcat prin încărcarea unui DDT de achiziție sau prin înregistrarea revenirii de lucru, această dată este setată ca fiind egală cu data DDT-ului de achiziție sau de lucru (cu excepția cazului în care utilizatorul nu a modificat-o manual în cadrul DDT-ului); dacă lotul a fost încărcat prin înregistrarea unei notificări de producție, această dată este propusă ca fiind identică cu data notificării de producție;
 
-**Evaluare lot** **: este opțional, afișează data relativă la evaluarea lotului. Se poate modifica și apelează datele care provin din tabelelul ‘Evaluare lot'. Această informație este o simplă descriere, nu are o influență particulară în proceduri și în ferestrele  aplicației;
+**Data expirare**: în acest câmp apare data de expirare a lotului, editabilă de utilizator, care este calculată în momentul creării lotului, sumând zilele de valabilitate ale lotului introduse în tab *Loturi/SerialNumber* al registrului articolului;
 
-**L. Vânz** **.**: dacă este activ, arată că lotul este disponibil pentru a fi inserat în documentele de vânzare, producție sau în înregistrările de gestiune. Este o posibilitate pe care o are utilizatorul pentru a defini posibilitatea de a extrage sau nu un lot, opțiune alternativă la gestionarea stărilor lotului;
+**Cantitate inițială**: în acest câmp apare cantitatea inițială încărcată pentru lot prin primul document care a încărcat lotul respectiv;
 
-**Documente de încărcare** ****:
+**Număr colete**: indică numărul de colete al lotului încărcat;
 
-În această secțiune sunt afișate datele fundamentale ale documentelor care au contribuit la încărcarea lotului. În general apare detaliul Înregistrării de gestiune care a încărcat lotul; dacă aceasta a fost generată cu încărcarea unui document (aviz, reintrare, etc.), atunci apare o linie în care sunt detaliile și pentru acest document. Aceste date sunt afișate într-un grid în care apar următoarele coloane:
+**Note**: în acest câmp apar notele introduse în înregistrarea de gestiune concomitent cu încărcarea lotului. Câmpul este editabil de utilizator și vizibil și în Căutarea Loturilor, așa cum a fost specificat mai sus;
 
-**Document** ****: reprezintă tipul documentului care a generat încărcarea lotului. Aceasta poate fi o înregistrare de gestiune, un aviz de achiziție sau o reintrare în sistem lohn;
+**Stare lot**: combo-ul vizualizează starea lotului. Aceasta poate fi modificată de utilizator și solicită date din tabelul corespunzător *Stări loturi*. Starea lotului determină posibilitatea de utilizare a lotului în documentele de vânzare, producție și înregistrările de descărcare din gestiune. Totuși, gestionarea nu este obligatorie, utilizatorul nefiind obligat să folosească funcționalitatea tabelului *Stări loturi*;
 
-**Număr** **: **reprezintă numărul documentului;
+**Evaluare lot**: combo-ul vizualizează datele referitoare la evaluarea lotului. Aceasta poate fi modificată de utilizator și solicită date din tabelul corespunzător *Evaluare lot*. Acest date are rol pur descriptiv, fără a avea o influență specifică asupra procedurilor, fiind de asemenea opțional;
 
-**Data** **: reprezintă data documentului;
+**Lot vandabil**: flagul, dacă este activ, indică faptul că lotul este disponibil pentru a fi preluat în documentele de vânzare, de producție sau în înregistrările de gestiune. Acesta oferă utilizatorului posibilitatea de a defini dacă un lot poate fi preluat sau nu, în alternativa gestionării, mai complexe și elaborate, a stărilor lotului;
 
-Cu dublu clic pe linia documentului este posibil, în acord cu drepturile pe care le are utilizatorul, să se deschidă pentru vizualizare documentul relativ.
+**Închis**: flagul, dacă este activat, face ca cantitatea respectivă a lotului să nu fie considerată pentru calculul stocului și disponibilității. Acest flag poate fi activat doar manual.        
 
-**Cantitate și document pentru descărcare lot** ****:
+### Încărcare
 
-În această secțiune sunt afișate datele fundamentale ale primului document, în ordine cronologică, care a utilizat lotul. Dacă lotul a fost descărcat direct cu o înregistrare de gestiune, atunci, în acest grid nu apare nimic, pentru că înregistrarea de descărcare a lotului apare întodeauna în secțiunea 4:
+În această secțiune sunt afișate datele fundamentale ale documentelor care au contribuit la încărcarea lotului. De obicei, este prezent întotdeauna detaliul în *Înregistrarea de gestiune* care a încărcat lotul; dacă aceasta a fost generată prin încărcarea unui document (factură, întoarcere etc.), atunci apare o linie în care sunt afișate și detaliile acestui document.
 
-****Cantitate**: reprezintă cantitatea lotului care a fost utilizat în document;
+*Cu un dublu clic pe linia documentului, în acord cu drepturile utilizatorului, este posibil să se deschidă în vedere unică documentul corespunzător*.
 
-**Document** **: reprezintă tipul documentului care este primul care a utilizat lotul. Acesta poate fi un ordin de producție, o factură de vânzare, o listă de ieșiri, un aviz de livrare în sistem lohn, o reintrare în SL;
+**Cantitate**: în acest câmp este afișată cantitatea lotului care a fost angajată în document;
 
-**Număr** **: reprezintă numărul documentului;
+**Unitate de măsură**: indică unitatea de măsură care a fost utilizată în document;
 
-**Data** ****: reprezintă data documentului;
+**Număr colete**: indică numărul de colete;
 
-Cu dublu clic pe linia documentului este posibil, în acord cu drepturile pe care le are utilizatorul, să se deschidă pentru vizualizare documentul relativ.
+**Data inserare**: indică data introducerii;
 
-**Documente de descărcare** ****:
+**Stare lot**: indică starea lotului;
 
-În această secțiune sunt afișate datele fundamentale ale înregistrării de gestiune care a descărcat lotul și a altor documente în care a fost utilizat lotul, în relație cu documentul selectat în gridul din secțiunea 3. Aceste date sunt afișate într-un grid în care sunt următoarele coloane:
+**Închis forțat**: dacă este activ, indică faptul că lotul a fost închis forțat;
 
-**Document** **: reprezintă tipul documentului în care se află lotul, în relație cu documentul selectat în gridul din secțiunea 3. Acesta poate fi un aviz de vânzare, o factură de vânzare, o listă de ieșiri, un aviz de livrare în sistem lohn, o reintrare în SL;
+**Document de referință**: în acest câmp apare tipul de document care a generat încărcarea lotului;
 
-**Număr** **: reprezintă numărul documentului;
+**Număr**: în acest câmp apare numărul documentului;
 
-**Data** **: reprezintă data documentului;
+**Data inserare**: în acest câmp apare data documentului;
 
-Cu dublu clic pe linia documentului este posibil, în acord cu drepturile pe care le are utilizatorul, să se deschidă pentru vizualizare documentul relativ.
+**Gestiune**: în aceste câmpuri apar codul și descrierea gestiunii pe care a fost încărcat lotul;
 
-RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatilor posibile cuprinde:
+**Locație**: în aceste câmpuri apar codul și descrierea locației;
+
+**Șablon**: în aceste câmpuri apar codul și descrierea cauzei utilizate pentru crearea acelei mișcări de încărcare;
+
+**Client/Furnizor**: în aceste câmpuri apar contul, subcontul și descrierea referitoare la client sau furnizor;
+
+**Proiect**: în acest câmp apare comanda de vânzare, editabilă de utilizator, legată de lot. De obicei, este vorba despre comanda de vânzare legată de linia articolului care a fost încărcată și care a încărcat lotul respectiv;
+
+### Alte documente încărcare
+
+În această secțiune sunt afișate datele fundamentale ale altor eventuale documente în care lotul a fost angajat, în relație cu documentul selectat în grila superioară.
+
+### Descărcare
+
+În această secțiune sunt afișate datele fundamentale ale tuturor documentelor, în ordine cronologică, care implică lotul. 
+
+**Cantitate**: în acest câmp este afișată cantitatea lotului care a fost angajată în document;
+
+**Unitate de măsură**: indică unitatea de măsură care a fost utilizată în document;
+
+**Data inserare**: indică data introducerii;
+
+**Stare lot**: indică starea lotului;
+
+**Document**: în acest câmp apare tipul documentului care a angajat pentru prima dată lotul. Acesta poate fi o comandă de producție, o comandă client, un DDT de vânzare, o factură de vânzare, o listă de preluare, un DDT de livrare de lucru, o întoarcere de lucru;
+
+**Număr**: în acest câmp apare numărul documentului;
+
+**Data**: în acest câmp apare data documentului;
+
+*Cu un dublu clic pe linia documentului, în acord cu drepturile utilizatorului, este posibil să se deschidă în vedere unică documentul corespunzător*.
+
+**Gestiune**: în aceste câmpuri apar codul și descrierea gestiunii pe care a fost încărcat lotul;
+
+**Locație**: în aceste câmpuri apar codul și descrierea locației;
+
+**Șablon**: în aceste câmpuri apar codul și descrierea cauzei utilizate pentru crearea acelei mișcări de încărcare;
+
+**Client/Furnizor**: în aceste câmpuri apar contul, subcontul și descrierea referitoare la client sau furnizor;
+
+**Proiect**: în acest câmp apare comanda de vânzare, editabilă de utilizator, legată de lot. De obicei, este vorba despre comanda de vânzare legată de linia articolului care a fost încărcată și care a încărcat lotul respectiv;
+
+### Alte documente descărcare
+
+În această secțiune sunt afișate datele fundamentale ale altor eventuale documente în care lotul a fost angajat, în relație cu documentul selectat în grila superioară.
+
+**Tip document**: în acest câmp apare tipul de document în cadrul căruia este prezent lotul, în raport cu documentul selectat în grila superioară. Acesta poate fi un DDT de vânzare, o factură de vânzare, o listă de preluare, un DDT de livrare de lucru, o întoarcere de lucru;
+
+**Număr**: în acest câmp apare numărul documentului;
+
+**Data**: în acest câmp apare data documentului.
+
+*Cu un dublu clic pe linia documentului, în acord cu drepturile utilizatorului, este posibil să se deschidă în vedere unică documentul corespunzător*.
+
+### Vizualizare stocuri
+
+În acest tab este posibil să se vizualizeze stocul lotului împărțit pe gestiuni.
+
+Grila este compusă din următoarele câmpuri:
+
+**Cod**: indică codul gestiunii;
+
+**Descriere**: indică descrierea gestiunii;
+
+**Unitate de măsură**: indică unitatea de măsură;
+
+**Cantitate totală încărcată**: indică cantitatea totală încărcată pentru acel articol pentru acel lot;
+
+**Cantitate stoc**: indică stocul actual pentru acel articol pentru acel lot;
+
+**Cantitate disponibilă**: indică stocul disponibil pentru acel articol pentru acel lot.
 
 
+## Trasabilitate lot
 
-| Functie | Functionalitate |
-| --- | --- |
-| Salvează | Buton pentru salvarea modificărilor făcute lotului. |
-| Vizualizează atribute lot | Butonul deschide o altă fereastră în care utilizatorul poate atribui lotului o serie de atribute care provin din tabelele codificatorului. |
+:::important Utilizare
+Trasabilitatea lotului din Fluentis este un modul proiectat pentru a garanta o gestionare eficientă și precisă a loturilor de produse în cadrul ciclului de producție și logistic. Această funcționalitate permite utilizatorilor să urmărească și să înregistreze parcursul fiecărui lot, de la momentul producției sau achiziției până la utilizarea sa finală, contribuind astfel la o gestionare transparentă și sigură a materialelor.
 
+Folosind secțiunea dedicată trasabilității, utilizatorii pot genera rapoarte detaliate pentru loturile selectate, nu doar pentru a vizualiza informațiile referitoare la lotul în sine, ci și pentru a analiza în ce articole a fost utilizat și ce materii prime au contribuit la producția sa. Acest proces este facilitat de o serie de filtre personalizabile care permit adaptarea căutării la necesitățile specifice ale afacerii.
 
+Două dintre principalele instrumente de trasabilitate includ:
 
+**Trasabilitatea Utilizării**: care permite vizualizarea tuturor articolelor în care a fost utilizat lotul în cauză, asigurând astfel o verificare detaliată a trasabilității în sus.  
+**Trasabilitatea Compoziției**: care permite verificarea care articole gestionate pe loturi au fost utilizate pentru producția lotului selectat, oferind o imagine clară asupra trasabilității în jos.
 
+Prin această funcționalitate de trasabilitate a lotului, Fluentis oferă o soluție robustă pentru companii, în special în sectoare precum cel alimentar și farmaceutic, unde trasabilitatea este esențială pentru siguranța și conformitatea cu reglementările actuale.
+:::
 
+Acest formular permite imprimarea unui raport conținând detalii despre trasabilitatea lotului selectat.
 
+Odată ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Căutare** prezent în *Ribbon bar* pentru a vizualiza rezultatele în grila de rezultate.
+
+De menționat că în cadrul secțiunii dedicate filtrelor sunt prezente următoarele opțiuni:
+
+- **Trasabilitate utilizare**: dacă este activ, permite vizualizarea în ce articole a fost utilizat lotul articolului pe care îl considerăm; astfel verificăm trasabilitatea în sus;      
+- **Trasabilitate compoziție**: dacă este activ, permite vizualizarea ce articole (gestionate pe loturi) au fost utilizate pentru producția lotului articolului pe care îl considerăm; astfel verificăm trasabilitatea în jos.      
+
+Aceste două opțiuni sunt, în mod implicit, întotdeauna active, dar utilizatorul le poate activa sau dezactiva în funcție de necesități.
+
+După ce a fost selectat lotul de interes, este suficient să faceți clic pe imprimare sau pe previzualizare de imprimare pentru a putea vizualiza raportul cu rezultatele căutate.
+
+Pentru detalii privind funcționarea comună a formularelor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
