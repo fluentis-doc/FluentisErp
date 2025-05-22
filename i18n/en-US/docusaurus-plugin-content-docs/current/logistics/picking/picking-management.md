@@ -74,7 +74,7 @@ Allows attaching and viewing documents related to individual items.
 
 ### Checkbox
 
-This tab allows for viewing the checked lines through the [Checkbox Management](/docs/logistics/wms/sales/check-row-menagement) of the WMS.    
+This tab allows for viewing the checked lines through the [Checkbox Management](/docs/logistics/wms/sales/check-row-management) of the WMS.    
 If the **WMS** is not used, it is still possible to manually enter new lines of checked items.
 The **Checkbox Management** serves to confirm the lines of the picking actually retrieved by the operator in the warehouse; thus, if at least one checked line is present in this table, the procedures for creating DDT and Invoice will only consider these lines.         
 If there are no lines in the **Checkbox Management** table, then the procedures for creating DDT and Invoice will consider all lines present in the picking.

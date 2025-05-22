@@ -13,11 +13,11 @@ In questa tab vendono inseriti dati e parametri di tipo prevalentemente fiscale.
 
 **CIG**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice identificativo di gara (esempio per gli appalti pubblici). Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/cig-and-cup) per poterlo richiamare.
 
-Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice)
 
 **CUP**: il flag attiva il campo apposito all'interno dei documenti di vendita per indicare il codice unico progetto (per la fatturazione ad enti pubblici) Il codice deve essere poi inserito [**nell'apposita tabella**](/docs/configurations/tables/finance/cig-and-cup) per poterlo richiamare.
 
-Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice)
 
 **Ritenuta d'acconto**: il flag, da associare al successivo campo Tipo ritenuta, attiva, per l'anagrafica di tipo fornitore in uso, la gestione della ritenuta d'acconto sul compenso percipiente. Con questo tipo di gestione attiva lato fornitore, l'inserimento dei documenti e la contabilizzazione della fattura ricevuta e del pagamento effettuato avverrà dal modulo  [**Percipienti**](/docs/finance-area/professional-men/general-overview)  al fine di poter gestire correttamente ed in modo automatico la ritenuta d'acconto e valorizzare le CU.
 

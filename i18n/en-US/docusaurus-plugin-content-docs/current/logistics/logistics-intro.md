@@ -113,7 +113,7 @@ import Link from '@docusaurus/Link';
         <p>Enables the management of all warehouse movements and stock and inventory checks.</p>
         <p><Link to="/docs/logistics/wms/udc/load-move-pallet" className="bold-link">Loading Unit</Link></p>
         <p>Allows for the management of all warehouse movements involving loading units.</p>
-        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Sales</Link></p>
+        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Sales</Link></p>
         <p>Allows for the management of goods shipments to customers.</p>
     </div>
 </div>

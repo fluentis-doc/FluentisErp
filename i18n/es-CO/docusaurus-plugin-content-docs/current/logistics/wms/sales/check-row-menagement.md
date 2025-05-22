@@ -75,7 +75,7 @@ Para toda la información sobre cómo codificar los códigos de barras a leer en
 ## Confirmación de Picking (Conferma Picking)
 
 :::important ¿Para qué sirve? (A cosa serve)
-A partir de un Picking existente, sin embargo, sin utilizar las unidades de carga, que en cambio se crean utilizando el formulario de [Gestión de marcar (Gestione spunta)](/docs/logistics/wms/sales/check-row-menagement), con el formulario de **conferma picking** es posible confirmar las líneas individuales del picking, para mover los artículos entre dos almacenes o ubicaciones, creando directamente los movimientos de almacén de traslado.  
+A partir de un Picking existente, sin embargo, sin utilizar las unidades de carga, que en cambio se crean utilizando el formulario de [Gestión de marcar (Gestione spunta)](/docs/logistics/wms/sales/check-row-management), con el formulario de **conferma picking** es posible confirmar las líneas individuales del picking, para mover los artículos entre dos almacenes o ubicaciones, creando directamente los movimientos de almacén de traslado.  
 Posteriormente, desde WPF, es posible proceder a la creación del DDT o de la factura.
 :::
 

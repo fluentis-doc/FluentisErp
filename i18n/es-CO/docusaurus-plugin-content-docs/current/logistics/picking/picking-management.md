@@ -74,7 +74,7 @@ Permite adjuntar y visualizar los documentos relacionados con los artículos ind
 
 ### Selección
 
-Esta pestaña permite visualizar las líneas seleccionadas a través de la [Gestión de selección (Gestione spunta)](/docs/logistics/wms/sales/check-row-menagement) del WMS.    
+Esta pestaña permite visualizar las líneas seleccionadas a través de la [Gestión de selección (Gestione spunta)](/docs/logistics/wms/sales/check-row-management) del WMS.    
 En caso de que no se utilice el **WMS**, también es posible ingresar nuevas líneas de artículos seleccionados manualmente. 
 La **Gestión de selección** sirve para confirmar las líneas del picking realmente recogidas por el operador en el almacén; por lo tanto, si en esta tabla hay al menos una línea seleccionada, los procedimientos de creación del DDT y la Factura solo tomarán en cuenta estas líneas.         
 Si no hay presente ni una línea en la tabla de **Gestión de selección**, entonces los procedimientos de creación del DDT y la Factura tomarán en cuenta todas las líneas presentes en el picking.

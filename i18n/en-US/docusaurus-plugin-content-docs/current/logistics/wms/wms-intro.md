@@ -66,7 +66,7 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/logistics/wms/wms-intro">Sales (Vendite)</Link>
-        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Tick Management</Link></p>
+        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Tick Management</Link></p>
         <p>The tick management of the Fluentis WMS allows operators to confirm picking lines and group items into load units, thus optimizing handling operations in the warehouse. With this functionality, it is possible to effectively create and manage Loading Units during picking, ensuring accurate control and greater operational efficiency.</p>
     </div>
 </div>

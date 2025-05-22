@@ -53,9 +53,9 @@ Para los *tipi picking* que se utilizarán en las *Listas de prellevo de materia
 
 **Cumple pedidos con orden de producción (Evade ordini con commessa di produzione)**: ya no se utiliza;  
 
-**Unidad de carga obligatoria (Unità di carico obbligatoria)**: los tipos de picking que tienen este indicador desactivado no podrán ser usados para el prellevo de las UDC y serán visibles en el formulario de [Confirmación de picking](/docs/logistics/wms/sales/check-row-menagement#conferma-picking) del WMS. Por el contrario, los tipos de picking que tienen este indicador activo serán visibles en la [Gestión de check (Gestione spunta)](/docs/logistics/wms/sales/check-row-menagement#gestione-spunta) del WMS.
+**Unidad de carga obligatoria (Unità di carico obbligatoria)**: los tipos de picking que tienen este indicador desactivado no podrán ser usados para el prellevo de las UDC y serán visibles en el formulario de [Confirmación de picking](/docs/logistics/wms/sales/check-row-management) del WMS. Por el contrario, los tipos de picking que tienen este indicador activo serán visibles en la [Gestión de check (Gestione spunta)](/docs/logistics/wms/sales/check-row-management#gestione-spunta) del WMS.
 
-**Sujeto a sobrecumplimiento (Sovraevadibile)**: si está activo, permite sobrecumplir la cantidad indicada en el picking; se puede utilizar tanto en la [Gestión de check (Gestione spunta)](/docs/logistics/wms/sales/check-row-menagement) como en la [Confirmación de picking (Conferma picking)](/docs/logistics/wms/sales/check-row-menagement) del WMS. Si no está activo y se intenta mover una cantidad mayor que la indicada se muestra un mensaje de advertencia que impide continuar.
+**Sujeto a sobrecumplimiento (Sovraevadibile)**: si está activo, permite sobrecumplir la cantidad indicada en el picking; se puede utilizar tanto en la [Gestión de check (Gestione spunta)](/docs/logistics/wms/sales/check-row-management) como en la [Confirmación de picking (Conferma picking)](/docs/logistics/wms/sales/check-row-management) del WMS. Si no está activo y se intenta mover una cantidad mayor que la indicada se muestra un mensaje de advertencia que impide continuar.
 
 **stampa**: indica el nombre de la impresión asociada y el **numero di copie** que se deben ejecutar por defecto.
 

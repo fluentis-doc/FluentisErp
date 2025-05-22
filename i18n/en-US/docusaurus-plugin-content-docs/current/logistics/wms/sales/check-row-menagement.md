@@ -74,7 +74,7 @@ For all information on how to encode the barcodes to be read in the **Barcode Co
 ## Picking Confirmation
 
 :::important What it is for
-Starting from an existing Picking, without using load units, which are created using the [Checkbox Management](https://docs/logistics/wms/sales/check-row-menagement) form, with the **Picking Confirmation** form it is possible to confirm the individual lines of the picking, to move items between two warehouses or locations, directly creating the warehouse movement of displacement.
+Starting from an existing Picking, without using load units, which are created using the [Checkbox Management](https://docs/logistics/wms/sales/check-row-management) form, with the **Picking Confirmation** form it is possible to confirm the individual lines of the picking, to move items between two warehouses or locations, directly creating the warehouse movement of displacement.
 Subsequently, from WPF, it is then possible to proceed to the creation of the DDT or the invoice.
 :::
 

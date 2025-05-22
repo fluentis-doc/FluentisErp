@@ -3,7 +3,7 @@ title: Pittogrammi
 sidebar_position: 60
 ---
 
-All'interno di questa tabella vengono codificati tutti i *Pittogrammi* che possono poi essere richiamati all'interno del relativo tab dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item#25-pittogrammi).
+All'interno di questa tabella vengono codificati tutti i *Pittogrammi* che possono poi essere richiamati all'interno del relativo tab dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item).
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

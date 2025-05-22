@@ -13,11 +13,11 @@ In this tab, data and parameters of a predominantly tax-related nature are enter
 
 **Cig**: the flag activates the specific field within sales documents to indicate the tender identification code (e.g., for public contracts). The code must then be entered in the [**appropriate table**](/docs/configurations/tables/finance/cig-and-cup) to be recalled.
 
-For the correct management of CIG and CUP codes in electronic invoice layouts, since the relevant tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig).
+For the correct management of CIG and CUP codes in electronic invoice layouts, since the relevant tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice).
 
 **CUP**: the flag activates the specific field within sales documents to indicate the unique project code (for invoicing to public entities). The code must then be entered in the [**appropriate table**](/docs/configurations/tables/finance/cig-and-cup) to be recalled.
 
-For the correct management of CIG and CUP codes in electronic invoice layouts, since the relevant tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig).
+For the correct management of CIG and CUP codes in electronic invoice layouts, since the relevant tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice).
 
 **Withholding tax**: the flag, to be associated with the subsequent field Type of withholding, activates the management of withholding tax on income for supplier-type registries in use. With this type of management activated on the supplier side, the entry of documents and the accounting of the received invoice and the payment made will occur from the [**Receivers**](/docs/finance-area/professional-men/general-overview) module to manage withholding tax properly and automatically value CU.
 

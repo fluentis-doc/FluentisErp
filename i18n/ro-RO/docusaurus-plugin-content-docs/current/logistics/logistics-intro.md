@@ -114,7 +114,7 @@ import Link from '@docusaurus/Link';
         <p>Permite gestionarea tuturor mișcărilor de gestiune și verificarea stocurilor și inventarului.</p>
         <p><Link to="/docs/logistics/wms/udc/load-move-pallet" className="bold-link">UDI</Link></p>
         <p>Permite gestionarea tuturor mișcărilor de gestiune care implică unități de încărcare.</p>
-        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Vânzări</Link></p>
+        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Vânzări</Link></p>
         <p>Permite gestionarea expedierilor de bunuri către clienți.</p>
     </div>
 </div>

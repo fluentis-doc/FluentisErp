@@ -13,11 +13,11 @@ En esta pestaña se ingresan datos y parámetros de tipo principalmente fiscal.
 
 **CIG**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código identificativo de la licitación (por ejemplo, para los contratos públicos). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/cig-and-cup) para poder ser llamado.
 
-Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice)
 
 **CUP**: el indicador activa el campo correspondiente dentro de los documentos de venta para indicar el código único del proyecto (para la facturación a entidades públicas). El código debe ser luego ingresado [**en la tabla correspondiente**](/docs/configurations/tables/finance/cig-and-cup) para poder ser llamado.
 
-Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+Para la correcta gestión de los códigos CIG y CUP en los trazados de la factura electrónica, dado que el tag correspondiente es un hijo de los datos del pedido, ver [**aquí**](/docs/finance-area/e-invoice/configuration_einvoice)
 
 **ritenuta d'acconto**: el indicador, que se debe asociar al campo siguiente **tipo ritenuta**, activa, para el registro de tipo proveedor en uso, la gestión de la retención de impuesto sobre la compensación del perceptor. Con este tipo de gestión activa del lado del proveedor, la inserción de los documentos y la contabilización de la factura recibida y del pago realizado se llevará a cabo desde el módulo [**percipienti**](/docs/finance-area/professional-men/general-overview) a fin de poder gestionar correctamente y de manera automática la retención de impuesto y valorar las CU.
 

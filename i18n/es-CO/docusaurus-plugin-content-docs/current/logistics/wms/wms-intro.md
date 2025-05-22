@@ -67,7 +67,7 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/logistics/wms/wms-intro">Ventas (Vendite)</Link>
-        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Gestión de confirmación (Gestione spunta)</Link></p>
+        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Gestión de confirmación (Gestione spunta)</Link></p>
         <p>La gestión de confirmación del WMS de Fluentis permite a los operadores confirmar las líneas del picking y agrupar los artículos en unidades de carga, optimizando así las operaciones de movimiento en el inventario. Gracias a esta funcionalidad, es posible crear y gestionar eficazmente las UDC durante el picking, garantizando un control preciso y una mayor eficiencia operativa.</p>
     </div>
 </div>

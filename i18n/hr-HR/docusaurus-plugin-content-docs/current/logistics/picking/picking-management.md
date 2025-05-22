@@ -69,7 +69,7 @@ Omogućuje prilaganje i pregled dokumenata koji se odnose na pojedinačne artikl
 
 **Kontrola**
 
-Ova kartica omogućuje pregled stavki koje su označene pomoću [Kontrole zaliha](/docs/logistics/wms/sales/check-row-menagement) u sustavu upravljanja skladištem (WMS).      
+Ova kartica omogućuje pregled stavki koje su označene pomoću [Kontrole zaliha](/docs/logistics/wms/sales/check-row-management) u sustavu upravljanja skladištem (WMS).      
 Ako se **WMS** ne koristi, i dalje je moguće ručno unijeti nove stavke označenih artikala.
 
 Za detalje o zajedničkom funkcioniranju formi, molimo pogledajte članak o [Funkcionalnostima, gumbima i zajedničkim poljima](/docs/guide/common).

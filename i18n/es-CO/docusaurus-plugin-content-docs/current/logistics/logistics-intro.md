@@ -113,7 +113,7 @@ import Link from '@docusaurus/Link';
         <p>Permite gestionar todos los movimientos de almacén y verificar existencias e inventario.</p>
         <p><Link to="/docs/logistics/wms/udc/load-move-pallet" className="bold-link">UDC</Link></p>
         <p>Permite gestionar todos los movimientos de almacén que implican unidades de carga.</p>
-        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Ventas (Vendita)</Link></p>
+        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Ventas (Vendita)</Link></p>
         <p>Permite gestionar los envíos de mercancías a los clientes.</p>
     </div>
 </div>

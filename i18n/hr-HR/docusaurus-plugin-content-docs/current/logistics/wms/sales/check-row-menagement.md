@@ -62,7 +62,7 @@ Za sve informacije o tome kako kodirati barkodove za čitanje u polju **kod Bark
 
 ## Potvrdite odabir
 
-Obrazac za **Potvrdu odabira** koristi se za potvrdu pojedinačnih linija odabira bez korištenja jedinica za upravljanje skladištem, koje se umjesto toga koriste u formi za [Provjerite upravljanje redovima](/docs/logistics/wms/sales/check-row-menagement).
+Obrazac za **Potvrdu odabira** koristi se za potvrdu pojedinačnih linija odabira bez korištenja jedinica za upravljanje skladištem, koje se umjesto toga koriste u formi za [Provjerite upravljanje redovima](/docs/logistics/wms/sales/check-row-management).
 
 Nakon toga, iz wpf-a, može se nastaviti s kreiranjem Dostavnice ili fakture.
 

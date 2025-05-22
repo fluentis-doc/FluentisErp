@@ -75,7 +75,7 @@ Per tutte le informazioni su come codificare i barcode da leggere nel campo **Co
 ## Conferma Picking
 
 :::important A cosa serve
-A partire da un Picking esistente, senza l’utilizzo però delle unità di carico, che invece vengono create utilizzando la form di [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement), con la form di **Conferma Picking** è possibile confermare le singole righe del picking, per movimentare gli articoli tra due magazzini o ubicazioni, creando direttamente i movimenti di magazzino di spostamento.
+A partire da un Picking esistente, senza l’utilizzo però delle unità di carico, che invece vengono create utilizzando la form di [Gestione spunta](/docs/logistics/wms/sales/check-row-management), con la form di **Conferma Picking** è possibile confermare le singole righe del picking, per movimentare gli articoli tra due magazzini o ubicazioni, creando direttamente i movimenti di magazzino di spostamento.
 Successivamente, da wpf, è poi possibile procedere alla creazione del DDT o della fattura.
 :::
 

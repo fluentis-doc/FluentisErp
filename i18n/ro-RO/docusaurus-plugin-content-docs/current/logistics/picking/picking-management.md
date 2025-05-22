@@ -74,7 +74,7 @@ Permette di allegare e visualizzare i documenti relativi ai singoli articoli.
 
 ### Spunta
 
-Questo tab permette di visualizzare le righe spuntate tramite la [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement) del WMS.    
+Questo tab permette di visualizzare le righe spuntate tramite la [Gestione spunta](/docs/logistics/wms/sales/check-row-management) del WMS.    
 Nel caso in cui non venga utilizzato il **WMS**, è comunque possibile inserire nuove righe di articoli spuntati manualmente.
 La **Gestione spunta** serve a confermare le righe del picking realmente prelevate dall'operatore in magazzino; quindi, se in questa tabella è presente almeno una riga spuntata le procedure di creazione DDT e Fattura prenderanno in considerazione solo queste righe.         
 Nel caso in cui non fosse presente nemmeno una riga nella tabella **Gestione spunta**, allora le procedure di creazione DDT e Fattura prenderanno in considerazione tutte le righe presenti nel picking.

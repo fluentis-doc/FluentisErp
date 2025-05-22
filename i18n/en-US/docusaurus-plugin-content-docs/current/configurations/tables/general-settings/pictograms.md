@@ -3,7 +3,7 @@ title: Pictograms
 sidebar_position: 60
 ---
 
-Within this table, all *Pictograms* are coded, which can then be referenced within the related tab of the [Item Registry](/docs/erp-home/registers/items/create-new-item#25-pittogrammi).
+Within this table, all *Pictograms* are coded, which can then be referenced within the related tab of the [Item Registry](/docs/erp-home/registers/items/create-new-item).
 
 The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 

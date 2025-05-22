@@ -67,7 +67,7 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/logistics/wms/wms-intro">Vendite</Link>
-        <p><Link to="/docs/logistics/wms/sales/check-row-menagement" className="bold-link">Gestione spunta</Link></p>
+        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Gestione spunta</Link></p>
         <p>La gestione spunta del WMS di Fluentis permette agli operatori di confermare le righe del picking e di raggruppare gli articoli in unità di carico, ottimizzando così le operazioni di movimentazione in magazzino. Grazie a questa funzionalità, è possibile creare e gestire efficacemente le UDC durante il prelievo, garantendo un controllo accurato e una maggiore efficienza operativa.</p>
     </div>
 </div>
