@@ -1,45 +1,45 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
 :::note[Info]
-La pratica di anticipare le fatture in banca è un'operazione finanziaria comunemente utilizzata dalle aziende per ottenere liquidità immediata, anticipando l’incasso delle fatture emesse nei confronti dei clienti. Questa operazione, chiamata anche sconto fatture, consente di convertire crediti commerciali in denaro liquido, migliorando così la gestione della cassa aziendale e la capacità di far fronte a pagamenti o investimenti senza dover aspettare i tempi di pagamento dei clienti.
+Praksa predfinanciranja računa u banci predstavlja financijsku operaciju koju poduzeća često koriste kako bi osigurala trenutnu likvidnost. Riječ je o postupku u kojem se računi izdani klijentima naplaćuju unaprijed, prije njihovog dospijeća. Na taj način komercijalna potraživanja pretvaraju se u gotovinu, što omogućuje učinkovitije upravljanje novčanim tokom, pravovremeno podmirenje obveza te lakše planiranje ulaganja – bez potrebe za čekanjem na naplatu od klijenata.
 
-L’azienda presenta alla banca una o più fatture che non sono ancora state pagate dai clienti. La banca anticipa una parte del valore della fattura, solitamente tra il 70% e il 90%, trattenendo una quota come garanzia fino al saldo completo del pagamento. Una volta che il cliente paga la fattura, la banca trattiene una commissione e accredita il saldo residuo all’azienda.
+Tvrtka banci predočuje jedan ili više računa koje klijenti još nisu platili. Banka unaprijed isplaćuje dio vrijednosti računa, obično između 70% i 90%, zadržavajući dio kao jamstvo do potpune otplate. Kada klijent plati račun, banka zadržava proviziju i ostatak iznosa uplaćuje tvrtki.
 
-Contabilmente l'azienda registra un debito verso la banca per l'importo anticipato, quando il cliente paga l'azienda chiude il debito con la banca e registra i costi per commissioni ecc..
+U računovodstvenom smislu, tvrtka bilježi dug prema banci za iznos koji je unaprijed isplaćen. Kada klijent izvrši uplatu, tvrtka zatvara dug prema banci i bilježi troškove za provizije i druge povezane izdatke.
 :::
 
-Con questo modulo di Fluentis ERP, è possibile gestire le distinte di anticipo fatture da presentare alla banca al netto di commissioni e interessi, e contabilizzare sia la presentazione sia l'incasso finale.
+Pomoću ovog modula Fluentis ERP-a moguće je upravljati popisima predfinanciranja računa koje treba dostaviti banci, umanjeno za provizije i kamate, te knjižiti i prezentaciju i konačnu naplatu.
 
-Prima di inserire nuove distinte di anticipo, occorre preliminarmente gestire la Tabella TIPI ANTICIPO.
+Prije unosa novih popisa predfinanciranja, potrebno je unaprijed postaviti tablicu TIPOVI AVANSA.
 
-In questa tabella sono definite le possibili tipologie di distinta ed i relativi parametri.
+U ovoj tablici definiraju se mogući tipovi avansa i odgovarajući parametri.
 
 ![](/img/it-it/treasury/advance/advances-collections/image01.png)
 
-**Codice / Descrizione**: Liberamente assegnabili dall'utente per qualificare la tipologia.
+**Šifra / Opis**: proizvoljan upis šife i opisa avansa.
 
-**Tipo calcolo** (codice / descrizione): le opzioni possibili sono Imponibile / Tot: Documento. Indica se la percentuale anticipata dalla banca debba essere calcolata con riferimento al total efattura oppure al solo imponibile.
+**Vrsta obračuna** (šifra / opis): moguće opcije su Osnovica ili Ukupni dokument. Ovo označava hoće li postotak koji banka predfinancira biti izračunat na temelju ukupnog iznosa računa ili samo na osnovicu bez PDV-a. .
 
-**Percentuale fatture anticipata**: inserire qui il valore della percentuale della fattura che sarà anticipata dalla banca.
+**Postotak računa s predujmom**: ovdje se postavlja vrijednost postotka računa koji će banka predfinancirati.
 
 ![](/img/it-it/treasury/advance/advances-collections/image02.png)
 
-**Tipo Acquisizione**: le possibili opazioni sono Scadenze / Fatture. Questa opzione controlla soltanto il modo in cui sono visualizzati i dati nella maschera di ricerca per la creazione della nuova distinta, ovvero se sarà selezioanbile l'intera fattura oppure le singole scadenze della fattura. In ogni caso dal punto di vista della base dati sono comunque gestite le scadenze (tutte) anche nel caso della modalità Fatture.
+**Vrsta akvizicije**: moguće opcije su Dospijeće ili Računi. Ova opcija kontrolira samo način prikaza podataka u prozoru za pretraživanje prilikom kreiranja novog popisa avansa, odnosno hoće li se moći odabrati cijeli račun ili pojedinačna dospijeća računa. U svakom slučaju, s aspekta baze podataka, upravlja se svim dospijećima, čak i u načinu rada s računima.
 
-**Numerazione**: è necessario impostare una numerazione dalla relativa tabella dei numeratori per questo tipo di documento.
+**Numeracija**: potrebno je postaviti numeraciju iz odgovarajuće tablice numeratora za ovu vrstu dokumenta.
 
-**Banca C/C**: (conto / sottoconto descrizione): inserire qui il sottoconto che sarà utilizzato nelle registrazioni contabili relativo al conto corrente bancario.
+**Banka C/C**: (konto/podkonto opis): ovdje se unosi podkonto koji će se koristiti za knjiženje u vezi s bankovnim računom.
 
-**Conto bancario anticipi**: inserire il conto d'appoggio utilizzato per contabilizzare l'antipo bancario.
+**Bankovni konto avansa**: konto koji će se koristiti za knjiženje bankovnog predfinanciranja/avansa.
 
 ![](/img/it-it/treasury/advance/advances-collections/image03.png)
 
-**Conto interessi passivi**: inserire il conto da utilizzare per la contabilizzazione interessi
+**Konto pasivne kamate**: konto koji će se koristiti za knjiženje kamata na teret.
 
-**Conto commissioni**: inserire il conto da utilizzare per la contabilizzazione commissioni bancarie.
+**Konto za provizije**: konto koji će se koristiti za knjiženje bankovnih provizija.
 
 
 
