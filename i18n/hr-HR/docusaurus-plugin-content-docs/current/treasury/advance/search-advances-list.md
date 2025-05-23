@@ -1,28 +1,28 @@
 ---
-title: Ricerca Distinta Anticipo
+title: Pretraga popisa avansa
 sidebar_position: 2
 ---
 
-Da questa posizione vengono ricercate le distinte di anticipo già presenti a sistema, le quali possono essere aperte per visione o modifica con un doppio click.
+U ovom obrascu pretražuju se već uneseni avansi u sustavu, koji se mogu otvoriti za pregled ili uređivanje dvostrukim klikom.
 
-E' possibile anche procedere all'inserimento di una nuova distinta con il bottone ***Nuovo***.
+Također je moguće unijeti novi popis avansa pomoću gumba ***Novo***.
 
-Nella testata della form sono presenti i **filtri** per la ricerca relativi a: 
+U zaglavlju forme nalaze se **filtri** za pretragu koji se odnose na: 
 
-- conti correnti (ordinari) 
-- conti d'appoggio per l'anticipo da parte della banca 
-- numero distinta 
-- data presentazione 
-- tipo di calcolo 
-- stato della distinta.
+- konto banke (redoviti)  
+- konto za predujmove od strane banke 
+- broj predujma  
+- datum podnošenja  
+- vrstu obračuna  
+- status.
 
-Il flag **Contabilizzata** contrassegna e filtra distinte per le quali è già stata lanciata la procedura di [**contabilizzazione**](/docs/treasury/advance/accounting/advances-list-accounting) o meno.
+Zastavica **Obračunato** označava i filtrira popis za koje je već pokrenut proces [**knjiženja**](/docs/treasury/advance/accounting/advances-list-accounting).
 
-Nella form sono visibili anche:
+U formi su također vidljiva sljedeća polja:
 
-**Totale Distinta:** Campo calcolato che rappresenta la somma del totale delle fatture anticipate
+**Ukupan popis:** Izračunato polje koje predstavlja zbroj ukupnog iznosa avansnih računa. 
 
-**Totale Anticipato:** Campo calcolato che rappresenta la somma della quota anticipata dalla banca per ogni fattura
+**Ukupan predujam:** Izračunato polje koje predstavlja zbroj iznosa koji je banka predvidjela za svaki račun.
 
 
 
