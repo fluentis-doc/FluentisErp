@@ -90,7 +90,7 @@ It is based on a prior agreement (mandate) between the Debtor and the Creditor t
 After filling in the necessary fields [**in the customer contact**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#campi-riferiti-alla-gestione-distinte-sdd-sepa-direct-debit--addebiti-diretti-sepa) as the holder of the SDD and in the table with our company's data, it is necessary to:
 
 - Define a specific type of bill "*SDD*" [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) and associate it with the respective [**Payment Type**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti)
-- Define a specific type of list in the bills portfolio, see the Utilities field [**here**](/FluentisErp/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- Define a specific type of list in the bills portfolio, see the Utilities field [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
 - Use the procedures [**Creating bills from maturity values**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) or [**Creating bills from due dates**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) to generate an bill of type "*SDD*"
 - Create a [**new presentation list**](/docs/treasury/bills-holding/lists-ceation-and-management) of type "*SDD*" and insert the "*SDD*" bill into it
 - Use the **SDD Export** button in the ribbon bar (enabled by the specific type of list set with the Utilities flag) to generate the specific bank file valid for SDD.

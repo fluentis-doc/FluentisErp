@@ -153,7 +153,7 @@ In the **Companies table**
 After filling in the necessary fields in the registry of the customer whose name is on the SDD and in the table with the data of our company, it is necessary to.
 
 - Define a specific type of Effect "*SDD*" [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) and associate it with the respective [**Payment Type**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti)
-- Define a specific type of list in the effects portfolio, see the Utilities field [**here**](/FluentisErp/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- Define a specific type of list in the effects portfolio, see the Utilities field [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
 - Use the procedures [**Creation of bills from maturity values**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) or [**Creation of bills from due dates**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) to generate an effect of type "*SDD*"
 - Create a [**new presentation list**](/docs/treasury/bills-holding/lists-ceation-and-management) of type "*SDD*" and insert the "*SDD*" effect within it
 - Use the **SDD Export** button in the ribbon bar (enabled by the specific type of list set with the Utilities flag) to generate the specific banking layout valid for SDD.
