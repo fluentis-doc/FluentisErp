@@ -3,6 +3,35 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0033 - 23/05/2025 
+
+> - ARM - OData Service code generation:  use interface instead of class for resolving service module(TT02308/25) 
+> - F2023 - Commissioni agenti - ricalcolo. Modifications in Commission can have an impact on profiles ( TT01871/25) 
+> - FI - revisione webapi sull’oggetto FSPosting, revisione gestione messaggi di avviso/errore relativi ai test della causale contabile. (#TT01810/25) 
+> - FI - nuova registrazione contabile, valorizzazione del campo stato partita per le nuove partite in creazione. (#TT02304/25) 
+> - BZ - effettuate correzioni su schema importazione dichiarazione attività di progetto 
+> - CO/PR/CRM/FI - memory leaks improvements - Clear cache data for closed forms/sessions and data older than 1 day ( TT02231/25) 
+> - FI - revisione attivazione pulsanti di gestione nella ribbon della form di modifica Commissioni. (#TT02312/25) 
+> - ARM - snapshot diff fix, format also the nullable DateTime (TT02362/25) 
+> - SD - Inserita la colonna ‘Variante’ nel tab ‘Listini di vendita’ dell’anagrafica articolo. Modifications in Item form can have an impact on profiles (#TT01997/25)” 
+> - WMS - Nelle form del WMS sono stati esclusi gli articoli archiviati. (#TT02210/25) 
+> - MS - Risolto errore nel rilascio Ordini Pianificati di Produzione che non generava gli ordini di Conto Lavoro per le fasi esterne in presenza del flag “Raggruppare gli ordini dello stesso terzista” (#TT02140/25). 
+> - WM - Implementata la gestione del tipo scadenza lotto selezionabile nel tab lotti e serial number dell’anagrafica articolo. (#TT02270/25) 
+> - WM - Creata la nuova webapi GetItemsStock per interrogare le giacenze di magazzino. (#TT02610/24) 
+> - SH - Creazione del Web API Controller per FSDocument (#TT02095/25) 
+> - WM - Fix ItemNavigator-search sales price list for customer problem(#TT02115/25) 
+> - SD - Nel caso in cui più DDT vengano valorizzati in una fattura immediata che non ha il flag "Scollega DDT", i documenti non possono essere scaricati singolarmente. È necessario effettuare lo scarico della fattura oppure lo scarico congiunto di tutti i DDT valorizzati (#TT01416/25) 
+> - WM - Corretto bug nell’import tramite WebApi delle spunte di un picking che caricava in maniera errata i lotti degli articoli spuntati in particolari condizioni. (#TT02373/25) 
+> - FI - revisione gestione widget conti nella form Tipo contabilizzazione cespiti. Modifications in Tipo contabilizzazione cespiti form can have an impact on profiles (#TT02375/25) 
+> - FI - revisione assegnazione numerazione partite/pagamenti, caso di esecuzione compensazione da registrazione contabile e contemporanea contabilizzazione documenti vendite/acquisti. (#TT01832/25) 
+> - MS - Corretto bug nella procedura di rilascio ordini pianificati di acquisto per proporre il prezzo dell’articolo in maniera corretta. (#TT02221/25) 
+> - MES - Nella capacità dei centri di lavoro ora non vengono più visualizzati nel grafico gli impegni delle fasi chiuse. (#TT02042/25) 
+> - SH - Nel Navigatore articoli, tab Listini associati al cliente, vengono ora visualizzati solamente i listini validi alla Data validità inserita nel filtro. Corrette anche alcune anomalie nella ricerca articoli all’interno della sezione di filtro della maschera. (#TT02115/25) 
+> - MES - Corretto bug nel Mes. Nel caso in cui venissero avanzate più fasi contemporaneamente non veniva splittato correttamente il tempo su ciascuna fase. 
+> - Ora nel caso di un centro di lavoro multifase, il tempo viene suddiviso tra le varie fasi in questo modo: se viene dichiarata una quantità (prodotto o scartata) allora il tempo di ciascuna fase viene calcolato con la seguente formula: (Tempo dichiarato / quantità totale (prodotta + scartata)) * quantità dichiarata (prodotta + scartata) della singola fase = Tempo della fase; mentre se non viene dichiarata nessuna quantità, ma solo tempo, allora viene calcolato con la formula: Tempo dichiarato / numero delle fasi = Tempo della fase. (#TT01977/25) 
+> - MS - Corretto bug in costificazione delle commesse che non considerava correttamente il costo delle fasi esterne. (#TT02218/25) 
+> - SH - Navigatore articoli: Risolta anomalia nel caricamento dei dati che causava un rallentamento della maschera (#TT02306/25). 
+
 ### Patch 707.1-0032 - 16/05/2025 
 
 > - Intervento creato da intervento pianificato o da task - proporre valuta dal documento sorgente se esiste, altrimenti proporre dall'account/compania  
