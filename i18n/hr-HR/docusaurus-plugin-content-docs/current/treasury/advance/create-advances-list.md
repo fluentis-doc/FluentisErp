@@ -1,26 +1,26 @@
 ---
-title: Crea Distinta di Anticipo
+title: Kreiraj popis avansa
 sidebar_position: 3
 ---
 
-Accedendo alla form di inserimento della nuova distinta è necessario prima di tutto inserire il Tipo distinta tramite l'apposita combo box.
+Pristupanjem formi za unos novog popisa avansa, prvo je potrebno unijeti Vrstu predujma/avansa pomoću odgovarajuće padajuće liste (combo box).
 
-Tutti i dati collegati al tipo distinta saranno caricati di conseguenza.
+Svi podaci povezani s odabranom vrstom predujma/avansa bit će automatski učitani.
 
-L'anno è proposto pari all'anno in corso, il numeor è incrementato in automatico dal sistema tramite il numeratore.
+Godina je unaprijed postavljena na tekuću godinu, dok se broj automatski povećava putem sustavskog brojača.
 
-E' possibile inserire nuove fatture, o nuove scadenze (a seconda della modalità collegata al tipo distinta) con i bottoni posti nella ribbon bar.
+Moguće je unijeti nove račune ili nove dospjele obveze (ovisno o načinu rada povezanim s vrstom predujma/avansa) pomoću gumba smještenih na alatnoj traci.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image01.png)
 
-Verrà aperto un help che peermette di filtrare le fatture o scdenze da acquisire
+Otvorit će se pomoćni prozor koji omogućuje filtriranje računa ili dospjelih obveza za preuzimanje. 
 
 ![](/img/it-it/treasury/advance/create-advances-list/image02.png)
 
-Dopo l'acquisizione della fattura o scadenza è possibile inserire manualmente sulla riga l'importo delle commissioni bancarie.
+Nakon preuzimanja računa ili dospjele obveze, moguće je ručno unijeti iznos bankovnih naknada u odgovarajući redak.
 
-Questo dato può essere automatizzato inserendolo nell'anagrafica della banca utilizzata per l'operazione.
+Ovaj podatak može se automatizirati unosom u matične podatke banke koja se koristi za operaciju. 
 
 ![](/img/it-it/treasury/advance/create-advances-list/image03.png)
 
-Per procedere a contabilizzare l'anticipo utilizzare l'apposita procedura Contabilizzazione Distinta anticipi.
+Za knjiženje predujma koristi se odgovarajuća procedura - Računovodstveno knjiženje avansa.
