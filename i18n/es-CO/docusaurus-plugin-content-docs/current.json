@@ -1,14 +1,14 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Siguiente",
     "description": "The label for version current"
   },
   "sidebar.financeArea.category.Dichiarazioni": {
-    "message": "Declarations",
+    "message": "Declaración",
     "description": "The label for category Dichiarazioni in sidebar financeArea"
   },
   "sidebar.financeArea.category.Plafond": {
-    "message": "Plafond",
+    "message": "Techo",
     "description": "The label for category Plafond in sidebar financeArea"
   },
   "sidebar.financeArea.category.Intrastat": {
@@ -16,51 +16,51 @@
     "description": "The label for category Intrastat in sidebar financeArea"
   },
   "sidebar.financeArea.category.Ricerca intrastat": {
-    "message": "Search Intrastat",
+    "message": "Buscar intrastat",
     "description": "The label for category Ricerca intrastat in sidebar financeArea"
   },
   "sidebar.financeArea.category.Crea Intrastat1": {
-    "message": "Create Intrastat1",
+    "message": "Crear Intrastat1",
     "description": "The label for category Crea Intrastat1 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Crea Intrastat2": {
-    "message": "Create Intrastat2",
+    "message": "Crear Intrastat2",
     "description": "The label for category Crea Intrastat2 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione automatica - Intrastat1": {
-    "message": "Automatic Creation - Intrastat1",
+    "message": "Creación automática - Intrastat1",
     "description": "The label for category Creazione automatica - Intrastat1 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione da registrazioni - Intrastat1  ": {
-    "message": "Create from Records - Intrastat1",
+    "message": "Creación de registros - Intrastat1  ",
     "description": "The label for category Creazione da registrazioni - Intrastat1   in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione automatica Intrastat2": {
-    "message": "Automatic Creation Intrastat2",
+    "message": "Creación automática Intrastat2",
     "description": "The label for category Creazione automatica Intrastat2 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione da registrazioni Intrastat2": {
-    "message": "Create from Records Intrastat2",
+    "message": "Creación de registros Intrastat2",
     "description": "The label for category Creazione da registrazioni Intrastat2 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Registrazioni contabili": {
-    "message": "Ledger records",
+    "message": "Registros contables",
     "description": "The label for category Registrazioni contabili in sidebar financeArea"
   },
   "sidebar.financeArea.category.Registrazioni": {
-    "message": "Records",
+    "message": "Registros",
     "description": "The label for category Registrazioni in sidebar financeArea"
   },
-  "sidebar.financeArea.category.Creazione registrazione contabile": {
-    "message": "Create Ledger Record",
-    "description": "The label for category Creazione registrazione contabile in sidebar financeArea"
+  "sidebar.financeArea.category.Procedure": {
+    "message": "Procedimiento",
+    "description": "The label for category Procedure in sidebar financeArea"
   },
   "sidebar.financeArea.category.Apertura automatica conti": {
-    "message": "Automatic Accounts Opening",
+    "message": "Apertura automática de cuentas",
     "description": "The label for category Apertura automatica conti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Chiusura automatica conti": {
-    "message": "Automatic Account Closing",
+    "message": "Cierres automáticos de cuentas",
     "description": "The label for category Chiusura automatica conti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Nuova": {
@@ -68,7 +68,7 @@
     "description": "The label for category Nuova in sidebar financeArea"
   },
   "sidebar.financeArea.category.Scritture di assestamento": {
-    "message": "Adjustment Record",
+    "message": "Asientos de ajuste",
     "description": "The label for category Scritture di assestamento in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione": {
@@ -84,31 +84,27 @@
     "description": "The label for category Gestione clienti/fornitori  in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe fiscali": {
-    "message": "Fiscal Report",
+    "message": "Informes fiscales",
     "description": "The label for category Stampe fiscali in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe contabile": {
-    "message": "Accounting Report",
+    "message": "Informes contables",
     "description": "The label for category Stampe contabile in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe analitica": {
-    "message": "Analytic Reports",
+    "message": "Informes analíticos",
     "description": "The label for category Stampe analitica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Partite": {
-    "message": "Maturity values",
+    "message": "Partidas",
     "description": "The label for category Partite in sidebar financeArea"
   },
-  "sidebar.financeArea.category.Procedure": {
-    "message": "Procedures",
-    "description": "The label for category Procedure in sidebar financeArea"
-  },
-  "sidebar.financeArea.category.Calcolo interessi": {
-    "message": "Interest Calculation",
-    "description": "The label for category Calcolo interessi in sidebar financeArea"
+  "sidebar.financeArea.category.Calcolo Interessi": {
+    "message": "Cálculo de Intereses",
+    "description": "The label for category Calcolo Interessi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Generazione solleciti": {
-    "message": "Generation of Dunning Letters",
+    "message": "Generación de avisos de cobro",
     "description": "The label for category Generazione solleciti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Compensazione partite": {
@@ -116,47 +112,47 @@
     "description": "The label for category Compensazione partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Giroconto partite": {
-    "message": "Maturity Values Giro",
+    "message": "Transferencia de partidas",
     "description": "The label for category Giroconto partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar financeArea"
   },
   "sidebar.financeArea.category.Percipienti": {
-    "message": "Professional men",
+    "message": "Perceptores",
     "description": "The label for category Percipienti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Cerca compensi": {
-    "message": "Search Compensations",
+    "message": "Buscar compensaciones",
     "description": "The label for category Cerca compensi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Modello F24": {
-    "message": "Model F24",
+    "message": "Modelo F24",
     "description": "The label for category Modello F24 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizza": {
-    "message": "Accounting",
+    "message": "Registrar",
     "description": "The label for category Contabilizza in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizzazione compensi": {
-    "message": "Compensation Accounting",
+    "message": "Contabilidad dew comisiones",
     "description": "The label for category Contabilizzazione compensi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizza Enasarco": {
-    "message": "Enasarco Accounting",
+    "message": "Contabilidad de Enasarco",
     "description": "The label for category Contabilizza Enasarco in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizza pagamenti": {
-    "message": "Payments Accounting",
+    "message": "Registrar pagos",
     "description": "The label for category Contabilizza pagamenti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione compensi": {
-    "message": "Compensations Management",
+    "message": "Gestión de compensaciones",
     "description": "The label for category Gestione compensi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Cespiti": {
-    "message": "Fixed Assets",
+    "message": "Activos fijos",
     "description": "The label for category Cespiti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione cespiti": {
