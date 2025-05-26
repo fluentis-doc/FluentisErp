@@ -51,10 +51,10 @@ Nel caso in cui siano abilitati entrambi i flag **Operatore obbligatorio** e **P
 **Squadra obbligatoria**: se attivo, abilita un controllo che obbliga l'operatore ad inserire almeno un membro della squadra prima di proseguire nell'attività di dichiarazione;     
 **Consenti segnalazione sovrapposta**: se attivo, è possibile dichiarare le fasi di un ordine di produzione senza seguire la sequenza prevista indicata nel ciclo; nel caso non si attivo, invece, non è possibile effettuare nessuna alcuna sovrapposizione di fasi o dichiarare fasi senza seguirne la sequenza del ciclo;    
 **Abilita multi-fase**: se attivo, permette di abilitare la possibilità di effettuare dichiarazioni di più fasi contemporaneamente.         
-In questo caso il tempo viene suddiviso tra le varie fasi in questo modo: se viene dichiarata una quantità (prodotto o scartata) allora il tempo di ciascuna fase viene calcolato con la seguente formula:             
-    *(Tempo dichiarato / quantità totale (prodotta + scartata)) * quantità dichiarata (prodotta + scartata) della singola fase = Tempo della fase *           
+In questo caso il tempo viene suddiviso tra le varie fasi in questo modo: se viene dichiarata una quantità (prodotta o scartata) allora il tempo di ciascuna fase viene calcolato con la seguente formula:             
+"**(Tempo dichiarato / quantità totale (prodotta + scartata)) x quantità dichiarata (prodotta + scartata) della singola fase = Tempo della fase**"           
 se invece non viene dichiarata nessuna quantità, ma solo tempo, allora viene calcolato con la formula:              
-    *Tempo dichiarato / numero delle fasi = Tempo della fase *      
+"**Tempo dichiarato / numero delle fasi = Tempo della fase**"       
 **Numero massimo di fasi**: permette di indicare il numero massimo di fasi che è possibile dichiarare contemporaneamente;    
 **Inserimento tempo manuale**: se attivo, abilita l'inserimento del tempo di lavoro da parte dell'operatore;     
 **Tempo proposto**: se attivo, abilita l'inserimento del tempo di lavoro viene proposto in automatico;         
