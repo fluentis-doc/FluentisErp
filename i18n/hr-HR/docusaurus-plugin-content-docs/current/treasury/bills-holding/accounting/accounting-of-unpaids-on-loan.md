@@ -1,51 +1,50 @@
 ---
-title: Contabilizzazione Insoluti su cessione
+title: Računovodstvo neplaćenih potraživanja
 sidebar_position: 6
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione insoluti su cessione
+Obrazac se nalazi u **Riznica** > **Portfelj učinaka** > **Knjiženja** > **Računovodstvo neplaćenih potraživanja**.
 
-Da questa maschera si procede alla contabilizzazione degli insoluti girati in pagamento a fornitore: la procedura, secondo le impostazioni della causale contabile impostata, riaprirà le partite clienti associate ai titoli insoluti così come le partite fornitori chiuse con il giro del titolo.
+Iz ove obrasca nastavlja se s knjiženjem nepodmirenih obveza prenesenih na plaćanje dobavljaču: procedura, prema postavkama računovodstvenog uzroka, ponovno će otvoriti kupce povezane s nepodmirenim potraživanjima, kao i zatvorene obveze dobavljača s prijenosom potraživanja.
 
 
 
-## Come contabilizzare un insoluto su cessione
+## Kako računovodstveno obraditi neplaćeno potraživanje na osnovi cesije
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli insoluti da contabilizzare.
-2. Seleziona dalla griglia centrale gli insoluti che desideri contabilizzare.
-3. Compila la Tab parametri per la contabilizzazione, inserendo i dati quali la **Causale di contabilità**, la **data registrazione** e la **data competenza**.
+1. Iskoristite gornji dio obrasca za filtriranje pretraživanja neplaćenih stavki koje treba knjižiti.  
+2. Odaberite iz središnje mreže neplaćene stavke koje želite knjižiti.  
+3. Ispunite karticu parametara za knjiženje, unoseći podatke poput **Predložak knjiženja**, **datuma registracije** i **datuma dospijeća**..
 
 :::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+Ovaj odjeljak može biti unaprijed definiran pomoću [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) unutar modula Portfelj efekata.
 :::
 
-Il flag **Spese di Rivalsa** andrà a gestire l'addebito delle spese sul conto cliente, rilevando il relativo ricavo secondo il sottoconto inserito nella maschera stessa (**Conto / sottoconto addebito spese al cliente**) .
+Zastavica **Troškovi povrata** upravljat će naplatom troškova na računu kupca, prema tome registrirajući pripadajući prihod prema podračunu unesenom u istom obrascu (**Račun / podračun naplate troškova kupcu**).
 
-i sottoconti per le **Spese di protesto** e il conto **Transitorio** sono ripresi dai parametri del modulo, ma possono essere modificati o inseriti di volta in volta.
+Podračuni za **Troškove protesta** i račun **Privremeni** preuzimaju se iz parametara modula, ali se mogu izmijeniti ili dodavati svaki put.
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione insoluti**.
+4. Pritisnite gumb u traci izbornika **Računovodstvo neplaćenih potraživanja**.
 
-**Pulsanti specifici**
+**Specifične tipke**
 
-**Ricerca**: Ricerca la lista degli insoluti da contabilizzare.
+**Traži**: Pretraži popis neplaćenih stavki za knjiženje. 
 
-**Contabilizza**: Esegue la contabilizzazione per le righe selezionate.
+**Knjiženje**: izvršava knjiženje za odabrane stavke.
 
-### Tab Precedenti
+### Predhodni
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Na kartici Predhodni moguće je poništiti već izvršena knjiženja. 
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+Poništenje će biti moguće samo ako je razdoblje još uvijek podložno izmjenama (nisu izvršeni ispis dnevnika ili zatvaranje računa). 
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+Dvostruki klik na odjeljak s knjiženjima omogućit će prikaz povezane knjigovodstvene stavke. 
 
-È presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+Dostupno je i izvješće za pregled pogrešaka zabilježenih tijekom knjiženja.
 
+**Specifične tipke**
 
-**Pulsanti specifici**
+**Traži**: Pretraži popis izvršenih knjiženja. 
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
 
-**Ripristina contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
-
-**Ripristina insoluti**: Esegue il ripristino della registrazione contabile selezionata riferita al singolo insoluto.
+**Poništavanje dugovanja**: Izvršava obnovu odabrane računovodstvene registracije.
