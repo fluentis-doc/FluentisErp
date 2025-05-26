@@ -44,7 +44,7 @@ Formularul vizualizează detalii despre lot și este compus din 4 secțiuni dife
 
 **Stare lot**: poate fi modificată și preia date din tabelul omonim. Starea lotului determină posibilitatea de utilizare a lotului în documentele de vânzare, producție și înregistrările de descărcare din gestiune. Totuși, gestionarea nu este obligatorie, utilizatorul nefiind obligat să folosească funcționalitatea tabelului *Stări loturi*;
 
-**Evaluare lot**: poate fi modificată și preia date din tabelul omonim. Are rol pur descriptiv, fără a avea o influență specifică asupra procedurilor, fiind de asemenea opțional;
+**Evaluare lot**: poate fi modificată și preia date din tabelul omonim. Are rol descriptiv, fără a avea o influență specifică asupra procedurilor, fiind de asemenea opțional;
 
 **Lot vandabil**: opțiunea, dacă este activă, reprezintă faptul că lotul este disponibil pentru a fi preluat în documentele de vânzare, de producție sau în înregistrările de gestiune. Acesta oferă utilizatorului posibilitatea de a defini dacă un lot poate fi preluat sau nu, ca alternativă la gestionarea, mai complexă și elaborată, a stării lotului;
 
