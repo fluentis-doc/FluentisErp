@@ -1,32 +1,25 @@
 ---
-title: Consumo materiali (Filtro)
+title: Consum de materiale (Filtru)
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Logistica > Automezzi > Consumo materiali**.
+Form-ul se află pe calea **Logistică > Autovehicule > Consum de materiale** și permite gestionarea mișcărilor realizate pentru consumul materialelor legate de autovehiculele create în tabelul [Gestionare autovehicul](/docs/logistics/motorvehicles/motorvehicle-management).
 
-Questa form permette di gestire i movimenti realizzati per il consumo dei materiali legati agli automezzi creati nella tabella [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management).
+### Caută gestionare autovehicul
 
-**Ricerca Gestione automezzo**
+Form-ul este compus dintr-o zonă de filtrare și una de rezultate. Odată setate toate filtrele dorite, este suficient să faceți clic pe butonul **Caută** pentru a vizualiza rezultatele în tabelul de rezultate.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+#### Campuri specifice 
+- **Dată materiale**: indică data documentului pentru consum materiale;         
+- **Utilizator**: indică utilizatorul care a creat documentul pentru consum materiale;      
+- **Cod autovehicul**: reprezintă codul autovehiculului prezent în documentul pentru consum materiale;               
+- **Descriere autovehicul**: indică descrierea autovehiculului prezent în documentul pentru consum materiale.             
 
-*Campi specifici*: 
+### Inserare Gestionare autovehicul
 
-> **Numero materiali**: indica la data del documento di consumo materiale;          
-> **Data materiali**: indica la data del documento di consumo materiale;         
-> **Utente**: indica l'utente che ha creato il documento di consumo materiale;      
-> **Codice automezzo**: indica il codice dell'automezzo presente nel documento di consumo materiale;               
-> **Descrizione automezzo**: indica la descrizione dell'automezzo presente nel documento di consumo materiale.             
+Pentru a insera noi mișcări pentru consumul de materiale, este necesar să apăsați butonul **Nou** (consultați documentația referitoare: [Nou consum de materiale](/docs/logistics/motorvehicles/material-consumption/new-material-consumption)).
 
-**Inserimento Gestione automezzo**
+#### Butoane specifice  
 
-Per poter inserire nuovi *movimenti di consumo materiali* è necessario premere il pulsante **Nuovo**.    
-Per il nuovo record vedasi la documentazione relativa a [Nuovo consumo materiali](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
-
-*Pulsanti specifici*: 
-
-> **Crea registrazione**: permette di registrare il consumo di materiale creando il relativo movimento di magazzino;        
-> **Ripristina**: permette di ripristinare il consumo di materiale annullando il relativo movimento di magazzino.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Creează înregistrare**: permite înregistrarea consumului de materiale, creând mișcarea corespunzătoare în gestiune;        
+> **Restaurare**: permite restabilirea consumului de materiale, anulând mișcarea corespunzătoare în gestiune.
