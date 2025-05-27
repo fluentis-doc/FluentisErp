@@ -1,78 +1,105 @@
 ---
-title: Modifică numărul de serie
-sidebar_position: 5
+title: Registru număr serial
+sidebar_position: 8
 ---
 
-Această fereastră afișează detaliul numărului de serie și conține 4 secțiuni:
+:::important Utilizare
+Registrul numerelor de serie din Fluentis este un instrument esențial pentru companiile care doresc să gestioneze și să urmărească fiecare articol individual printr-un cod unic de identificare.
 
-**Antet număr de serie**:
+Această funcționalitate este deosebit de utilă în industrii în care trasabilitatea și siguranța sunt critice – cum ar fi: electronice, echipamente medicale, piese auto sau produse cu valoare ridicată.
+:::
 
-În această secțiune sunt afișate datele principale relative la numărul de serie, date care pot fi modificate:
+Această fereastră afișează detaliile lotului și este compusă din 4 secțiuni diferite:
 
-**Articol** **: în cele 3 campuri sunt afișate clasa, codul și descrierea articolului din NS. Este vorba despre un articol cu flag ‘Gestiune NS' activat în tab Loturi/NS din registrul articolului, dacă nu, nu ar fi fost posibilă executarea încărcării NS pentru articol;
+### Antet număr serial
 
-**Variante** **: în cele 2 campuri sunt afișate codul și descrierea variantei articolului la care se referă NS, dacă este prezent;
+**Articol**: sunt afișate clasa, codul și descrierea articolului la care se referă numărul serial. Articolul are opțiunea *Gestionare SN* activată în *Registru articol* > tab *Loturi/SN* pentru a face posibilă încărcarea lotului articolului;  
 
-**Număr de serie** **: reprezintă codul NS. Este un câmp editabil, chiar dacă în timpul operațiilor de încărcare poate fi generat automat pe baza unor reguli care se inserează în tab ‘Coduri NS' prezent în Parametrii inițiali de gestiune. Se inserează de la început un cod și o descriere a tipului codului NS, se salvează linia și apoi se decide care parametri trebuie să fie utilizați pentru compunerea tipului codului NS tocmai creat. Pentru fiecare parametru utilizat, se poate decide din câte caractere trebuie să fie format și, eventual, și caracterul de umplere de utilizat. De exemplu, cu parametrul ‘Număr progresiv' și cu caracterul de umplere ‘0' și Lungimea 5 vor fi create NS cu primul număr 00000, apoi 00001, apoi 00002 etc. Tipul codului NS trebuie apoi să fie atașat la registrul articolului în câmpul situat în tab ‘Loturi/NS', astfel încât în procedurile care crează automat codul NS pentru articolul ales, NS însuși să fie generat pe baza regulilor inserate în tab ‘Coduri NS' din Parametri inițiali de gestiune și legate la tipul codului NS asociat articolului. Câmpul este alfanumeric și poate atinge lungimea de 50 caractere ca limită maximă;
+**Variantă**: sunt afișate codul și descrierea variantei articolului la care se referă numărul serial, dacă este prezent;  
 
-**Cod lot** **: **reprezintă codul lotului din care face parte NS. Articolul la care se referă NS poate fi gestionat și cu loturi; de exemplu, un lot cu 100 bucăți ar putea fi compus din 100 numere de serie diferite. Același număr de serie ar putea să aparțină unor diverse loturi ale aceluiași articol, sau unor loturi cu articole diferite;
+**Cod lot**: reprezintă codul lotului din care face parte numărul serial.  
+Articolul la care se referă numărul serial ar putea fi gestionat și pe loturi. De exemplu, un lot de 100 de bucăți ar putea fi compus din 100 de număre seriale diferite.  
+Același număr serial ar putea să aparțină unor loturi diferite ale aceluiași articol sau unor loturi ale unor articole diferite;  
 
-**Gestiune** **: **în cele 2 campuri sunt afișate codul și descrierea gestiunii în care a fost încărcat numărul de serie;
+**Tip lot**: indică tipul lotului utilizat;  
 
-**Încărcat/Descărcat** **: în cele 2 campuri sunt afișate informațiile despre starea numărului de serie;
+**Tip cod lot**: indică tipul codului de lot cu care a fost generat lotul;  
 
-**Data **început**** **: reprezintă data în care a fost încărcat NS; poate fi modificată de utilizator. Dacă a fost încărcat prin intermediul înregistrării de gestiune, această dată este propusă egală cu data în care a fost creată înregistrarea; dacă NS a fost încărcat cu ajutorul încărcării unui aviz de achiziții sau a unei înregistrări de reintrare în sistem lohn, această dată este setată ca fiind egală cu data avizului de achiziții sau SL (dacă în aviz utilizatorul nu a modificat-o manual); dacă NS a fost încărcat cu ajutorul înregistrării unei semnalări de producție, această dată este propusă ca fiind egală cu data semnalării de producție;
+**Cod număr serial**: este un câmp editabil, deși în timpul operațiunilor de încărcare poate fi generat automat pe baza unor reguli stabilite în *Tip număr serial* asociat articolului.  
+Se introduce mai întâi un cod și o descriere a *Tipului de cod număr serial*, se salvează linia și apoi se decid parametrii care vor fi utilizați pentru compunerea tipului de cod lot recent creat.  
+Pentru fiecare parametru utilizat se poate decide din câte caractere trebuie să fie format și eventualul caracterul de umplere de utilizat. De exemplu, cu parametrul *Număr progresiv* setând caracterul de umplere '0' și Lungimea '5', se vor crea număre seriale cu primele numere 00000, apoi 00001, apoi 00002 și așa mai departe.  
+*Tipul codului număr serial* trebuie apoi asociat în registrul articolului în câmpul corespunzător situat în tab *Loturi/Număr serial*, pentru ca, în procedurile care generează automat codul *număr serial* pentru articolul respectiv, numărul serial să fie generat conform regulilor stabilite în *tip cod număr serial* asociat articolului.  
+Câmpul este alfanumeric și poate conține maxim 50 de caractere;  
 
-**Data sfârșit** **: **reprezintă data pentru scadența NS, poate fi modificată de utilizator, este calculată în momentul creării NS și deci al încărcării relativei mișcări de gestiune, pornind de la data început și însumând zilele de valabilitate ale NS, inserate în tab Loturi/NS din registrul articolului;
+**Tip număr serial**: indică tipul codului număr serial cu care a fost generat numărul serial;  
 
-**Încărcare înreg. gest.** **: reprezintă înregistrarea de gestiune care a încărcat NS.
+**Dată început**: reprezintă de obicei data la care a fost încărcat numărul serial și este un câmp editabil.  
+- dacă numărul serial a fost încărcat prin înregistrarea de gestiune, această dată este identică cu data la care a fost creată înregistrarea;  
+-dacă numărul serial a fost încărcat prin încărcarea unei aviz de achiziție sau prin înregistrarea reintrării în sistem lohn, această dată este setată egală cu data avizului de achiziție sau sistem lohn (decât dacă utilizatorul nu a modificat-o manual în aviz);  
+- dacă numărul serial a fost încărcat prin înregistrarea unei semnalări de producție, această dată este propusă ca fiind identică cu data semnalării de producție;  
 
-**Documente de încărcare** ****:
+**Dată scadenţă**: reprezintă data de expirare a numărului serial, editabilă, care este calculată la crearea lotului și deci la încărcarea mișcării de gestiune corespunzătoare, pornind de la data de început și adunând zilele de valabilitate ale numărului serial introduse în tab *Loturi/SN* din registrul articolului;  
 
-În această secțiune sunt afișate datele fundamentale ale documentelor car au contribuit la încărcarea NS. În general apare detaliul Înregistrării de gestiune care a încărcat NS; dacă aceasta a fost generată cu încărcarea unui document (aviz, reintrare, etc.), atunci apare o linie în care sunt detaliile și pentru acest document. Aceste date sunt afișate într-un grid în care apar următoarele coloane:
+**Cod client**: reprezintă codul *Lotului client*, deci numele pe care clientul îl atribuie lotului. Este un câmp editabil, care nu poate fi generat automat în timpul operațiunilor de încărcare. Poate avea maxim 50 de caractere și poate fi identic pentru loturi diferite ale unor articole diferite;  
 
-**Document** **: reprezintă tipul documentului care a generat încărcarea NS. Aceasta poate fi o înregistrare de gestiune, un aviz de achiziție sau o reintrare în sistem lohn;
+**Cod furnizor**: reprezintă codul *Lotului furnizor*, deci numele pe care furnizorul îl atribuie lotului. Este un câmp editabil, care nu poate fi generat automat în timpul operațiunilor de încărcare. Poate avea maxim 50 de caractere și poate fi identic pentru loturi diferite ale unor articole diferite;  
 
-**Număr** **: **reprezintă numărul documentului;
+**Furnizor**: reprezintă contul sintetic/analitic/descrierea furnizorului;  
 
-**Data** **: reprezintă data documentului;
+**Anulat**: dacă este activ, înseamnă că numărul serial a fost anulat;  
 
-Cu dublu clic pe linia documentului este posibil, în acord cu drepturile pe care le are utilizatorul, să se deschidă pentru vizualizare documentul relativ.
+**Închis forțat**: dacă este activ, înseamnă că numărul serial a fost închis forțat;  
 
-**Cantitate și d**ocument pentru descărcare** lot** ****:
+**Rezervat**: dacă este activ, înseamnă că  numărul serial a fost rezervat.
 
-În această secțiune sunt afișate datele fundamentale ale primului document, în ordine cronologică, care a utilizat numărul de serie. Dacă NS a fost descărcat direct cu o înregistrare de gestiune, atunci atunci, în acest grid nu apare nimic, pentru că înregistrarea de descărcare a NS apare întodeauna în secțiunea 4:
+### Încărcare
 
-**Tip d**ocument** **: **reprezintă tipul documentului care este primul care a utilizat NS. Acesta poate fi un ordin de producție, un ordin client, un aviz de vânzare, o factură de vânzare, o listă de ieșiri, un aviz de livrare în sistem lohn, o reintrare în SL;
+În această secțiune sunt vizualizate datele fundamentale ale documentelor care au contribuit la efectuarea încărcării numărului serial. De obicei este afișat detaliul *Înregistrării de gestiune* care a încărcat numărul serial.  
 
-**Număr** **: reprezintă numărul documentului;
+*Cu dublu clic pe linia documentului, în funcție de drepturile utilizatorului, se poate deschide documentul corespunzător.*
 
-**Data** **: reprezintă data documentului;
+**Cantitate**: reprezintă cantitatea lotului care a fost rezervată în document;  
 
-Cu dublu clic pe linia documentului este posibil, în acord cu drepturile pe care le are utilizatorul, să se deschidă pentru vizualizare documentul relativ.
+**Unitate de măsură**: indică unitatea de măsură care a fost utilizată în document;  
 
-****Documente de descărcare**** ****:
+**Număr colete**: indică numărul de colete;  
 
-În această secțiune sunt afișate datele fundamentale ale înregistrării de gestiune care a descărcat NS și a altor documente în care a fost utilizat NS , în relație cu documentul selectat în gridul din secțiunea 3. Aceste date sunt afișate într-un grid în care sunt următoarele coloane:
+**Data inserăre**: indică data inserării;  
 
-**Document** **: reprezintă tipul documentului în care se află NS, în relație cu documentul selectat în gridul din secțiunea 3. Acesta poate fi un aviz de vânzare, o factură de vânzare, o listă de ieșiri, un aviz de livrare în sistem lohn, o reintrare în SL;
+**Închis forțat**: dacă este activ, înseamnă că  numărul serial a fost închis forțat;  
 
-**Număr** **: reprezintă numărul documentului;
+**Document de referință**: reprezintă tipul documentului care a generat încărcarea numărului serial. Acesta poate fi o înregistrare de gestiune, un aviz de achiziție sau o Reintrare în sistem lohn;  
 
-**Data** **: reprezintă data documentului;
+**Înregistrare**: reprezintă numărul și data documentului;  
 
-Cu dublu clic pe linia documentului este posibil, în acord cu drepturile pe care le are utilizatorul, să se deschidă pentru vizualizare documentul relativ.
+**Gestiune**: reprezintă codul și descrierea gestiunii în care a fost încărcat numărul serial;  
 
-RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatilor posibile cuprinde:
+**Locație**: reprezintă codul și descrierea locației;  
 
+**Șablon**: reprezintă codul și descrierea șablonului utilizate pentru crearea acelei mișcări de încărcare;  
 
+**Client/Furnizor**: reprezintă contul, analiticul și descrierea referitoare la client sau furnizor.
 
-| Functie | Functionalitate |
-| --- | --- |
-| Salvează | Buton pentru salvarea modificărilor făcute numărului de serie |
+### Descărcare 
 
+În această secțiune sunt afișate datele fundamentale ale primului document, în ordine cronologică, care a rezervat numărul serial.  
 
+**Cantitate**: reprezintă cantitatea lotului care a fost rezervată în document;  
 
+**Unitate de măsură**: indică unitatea de măsură care a fost utilizată în document;  
 
+**Dată inserăre**: indică data inserării;  
 
+**Document de referință**: reprezintă tipul documentului care a rezervat pentru prima dată numărul serial. Poate fi un ordin de producție, un ordin de client, un aviz de vânzare, o factură de vânzare, o listă de preluare, un aviz de livrare sistem lohn sau o reintrare sistem lohn;  
 
+**Înregistrare**: reprezintă numărul și data documentului;  
+
+**Gestiune**: reprezintă codul și descrierea gestiunii în care a fost încărcat numărul serial;  
+
+**Locație**: reprezintă codul și descrierea locației;  
+
+**Șablon**: reprezintă codul și descrierea șablonului utilizate pentru crearea acelei mișcări de dezcărcare;  
+
+**Client/Furnizor**: reprezintă contul, analiticul și descrierea referitoare la client sau furnizor.  
+
+*Cu dublu clic pe linia documentului, în funcție de drepturile utilizatorului, se poate deschide documentul corespunzător.*
