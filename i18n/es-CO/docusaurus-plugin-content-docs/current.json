@@ -264,99 +264,99 @@
     "description": "The label for category Agents Allocation in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabili": {
-    "message": "Accounting",
+    "message": "Contabilidad",
     "description": "The label for category Contabili in sidebar erpHome"
   },
   "sidebar.erpHome.category.Articoli": {
-    "message": "Items",
+    "message": "Artículos",
     "description": "The label for category Articoli in sidebar erpHome"
   },
   "sidebar.erpHome.category.Crea nuovo articolo ": {
-    "message": "Create new items",
+    "message": "Crear nuevos artículos",
     "description": "The label for category Crea nuovo articolo  in sidebar erpHome"
   },
   "sidebar.erpHome.category.Duplica articolo": {
-    "message": "Duplicate Items",
+    "message": "Artículos Duplicados",
     "description": "The label for category Duplica articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Produzione": {
-    "message": "Production",
+    "message": "Producción",
     "description": "The label for category Produzione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Distinta base": {
-    "message": "Bill of Materials",
+    "message": "Lista de Materiales",
     "description": "The label for category Distinta base in sidebar erpHome"
   },
   "sidebar.erpHome.category.Assiemi": {
-    "message": "Assemblies",
+    "message": "Ensambles",
     "description": "The label for category Assiemi in sidebar erpHome"
   },
   "sidebar.erpHome.category.Opzioni": {
-    "message": "Options",
+    "message": "Opciones",
     "description": "The label for category Opzioni in sidebar erpHome"
   },
   "sidebar.erpHome.category.Cicli": {
-    "message": "Routes",
+    "message": "Rutas",
     "description": "The label for category Cicli in sidebar erpHome"
   },
   "sidebar.erpHome.category.Prototipazione": {
-    "message": "Standardization",
+    "message": "Estandarización",
     "description": "The label for category Prototipazione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Dipendente": {
-    "message": "Employee",
+    "message": "Empleado",
     "description": "The label for category Dipendente in sidebar erpHome"
   },
   "sidebar.erpHome.category.Gestione ore produzione": {
-    "message": "Production hours management",
+    "message": "Gestión de horas de producción",
     "description": "The label for category Gestione ore produzione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Utilità": {
-    "message": "Utilities",
+    "message": "Utilidades",
     "description": "The label for category Utilità in sidebar erpHome"
   },
   "sidebar.erpHome.category.ExtraData": {
-    "message": "ExtraData",
+    "message": "Datos Adicionales",
     "description": "The label for category ExtraData in sidebar erpHome"
   },
   "sidebar.erpHome.category.Template": {
-    "message": "Template",
+    "message": "Plantilla",
     "description": "The label for category Template in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri": {
-    "message": "Parameters",
+    "message": "Parámetros",
     "description": "The label for category Parametri in sidebar erpHome"
   },
   "sidebar.erpHome.category.Amministrazione": {
-    "message": "Finance",
+    "message": "Finanzas",
     "description": "The label for category Amministrazione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tesoreria": {
-    "message": "Treasury",
+    "message": "Tesorería",
     "description": "The label for category Tesoreria in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri conto lavoro": {
-    "message": "Subcontracting Parameters",
+    "message": "Parámetros de Subcontratación",
     "description": "The label for category Parametri conto lavoro in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri ordini di produzione": {
-    "message": "Production Orders Parameters",
+    "message": "Parámetros de Órdenes de Producción",
     "description": "The label for category Parametri ordini di produzione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parameteri MRP": {
-    "message": "MRP Parameters",
+    "message": "Parámetros de MRP",
     "description": "The label for category Parameteri MRP in sidebar erpHome"
   },
   "sidebar.erpHome.category.Acquisti": {
-    "message": "Purchase",
+    "message": "Compra",
     "description": "The label for category Acquisti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Vendite": {
-    "message": "Sales",
+    "message": "Ventas",
     "description": "The label for category Vendite in sidebar erpHome"
   },
   "sidebar.erpHome.category.Logistica": {
-    "message": "Logistics",
+    "message": "Logística",
     "description": "The label for category Logistica in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri Picking": {
