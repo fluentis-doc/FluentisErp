@@ -19,6 +19,7 @@ In questo tab, l'utente ha la possibilità di cercare e trasferire i DDT che han
 > **Ricerca**: permette di cercare i DDT da scaricare.  
 > **Scarico**: permette di eseguire lo scarico dei DDT selezionati dal magazzino, in base agli algoritmi di scarico e ai parametri inseriti nel successivo tab *Parametri*.
 
+
 ### Parametri
 
 In questa maschera, l'utente ha la possibilità di specificare, per le righe articolo, il modo di trattare le eccezioni.

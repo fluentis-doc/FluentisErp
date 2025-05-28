@@ -278,6 +278,11 @@ Questa operazione è condizionata dalla presenza dei lotti e dei numeri seriali 
 
 Se l'articolo non prevede la gestione dei Lotti/Numeri seriali, questo tab sarà disabilitato.  
 
+:::tip Ricorda
+Se nei [Parametri iniziali di magazzino](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters) il flag *Lotti e numeri seriali obbligatori* è disabilitato sarà possibile salvare il documento senza inserire i lotti/serial number.    
+Inoltre, se la *Tipologia di prelievo* del lotto codificata nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-item) è *FIFO* o con *Data scadenza*, al momento della registrazione del DDT a magazzino i lotti saranno proposti in automatico, se non sono già stati inseriti in precedenza.
+:::
+
 #### Pulsanti specifici
 
 import DeleteLot from './../../../import/buttons/delete-lot.md'

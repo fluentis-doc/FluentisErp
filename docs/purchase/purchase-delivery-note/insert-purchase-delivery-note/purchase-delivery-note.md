@@ -291,7 +291,8 @@ Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono es
 Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-item), questo tab sarà disabilitato.
 
 :::tip Ricorda
-Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-orders-parameters) il flag *Lotti e S.N. obbligatori* è disabilitato sarà possibile salvare il documento senza inserire i lotti/serial number. Inoltre, se la *Tipologia di prelievo* del lotto codificata nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-item) è *FIFO* o con *Data scadenza* al momento del carico a magazzino del DDT i lotti saranno proposti in automatico se non sono già stati inseriti in precedenza.
+Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) il flag *Lotti e S.N. obbligatori* è disabilitato sarà possibile salvare il documento senza inserire i lotti/serial number. 
+Al momento del carico a magazzino del DDT i lotti saranno proposti in automatico se non sono già stati inseriti in precedenza.
 :::
 
 #### Pulsanti specifici
