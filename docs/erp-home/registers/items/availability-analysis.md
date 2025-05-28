@@ -77,4 +77,9 @@ Per quanto riguarda la descrizione delle funzionalità comuni a tutti le form, p
 *Pulsante specifico*:
 > **Espandi/riduci griglia articoli**: pulsante che permette di espandere o ridurre le griglie di risultato. 
 
+:::note Creazione profili
+In questa form si possono fare profili solo sul filtro e sul tab totale.
+Nei tab dei magazzini non si possono fare profili in quanto sono costruiti e distrutti in maniera dinamica.
+:::
+
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
