@@ -1,17 +1,14 @@
 ---
-title: Inserimento inventari fisici
+title: Inserare inventare faptice
 sidebar_position: 4
 ---
 
-La form si apre tramite il percorso **Logistica > Inventari fisici**, cliccando sul pulsante **Nuovo**.
+Form-ul se află pe calea **Logistică > Inventare faptice**, apăsând pe butonul **Nou**.
 
-*Procedura*
+#### Procedură
 
-Inserire il numero, la data, la descrizione, eventuali note e l'operatore. 
-Il flag **Chiusa** permette, una volta eseguite le differenze inventariali, di rendere chiuso un inventario che non verrà quindi più preso in considerazione per la procedura di allineamento giacenze.
+- introduceți numărul, data, descrierea, eventuale note și operatorul.  
+Opțiunea **Închis** permite marcarea inventarului ca finalizat, după procesarea diferențelor inventariale. Inventarele închise nu vor fi luate în calcul în procedura de aliniere a stocurilor.  
+- după ce inventarul este introdus, este necesar să completați tabelul listelor inventariale care compun inventarul, specificând **Tipul** listei, **Operatorul** și **Gestiunea** de referință. De asemenea, este posibil să introduceți o *Dată de închidere* pentru ca lista să nu fie luată în considerare la calcularea diferențelor inventariale.  
 
-Una volta inserito l'inventario è necessario completare la griglia delle liste inventariali che compongono l'inventario, specificando il **Tipo** lista, l'**Operatore** e il **Magazzino** di riferimento. E' inoltre possibile inserire una *data chiusura* per fare in modo che la lista non venga presa in considerazione per i calcoli delle differenze inventariali.  
-
-Una volta inserite le liste inventariali è necessario compilarle. Per fare ciò si seleziona nella griglia la lista inventariale desiderata e doppio click su di essa si accede alla finestra di [Modifica inventari articoli](/docs/logistics/physical-inventory/inventory-management/inventory-lists-management). 
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+După ce listele inventariale sunt introduse, este necesar să fie completate. Pentru a face acest lucru, selectați în tabel lista inventarială dorită, iar cu un dublu click pe aceasta, accesați fereastra de [Modificare a invențiilor articolelor (Modifica inventari articoli)](/docs/logistics/physical-inventory/inventory-management/inventory-lists-management).  
