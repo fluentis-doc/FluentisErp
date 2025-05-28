@@ -64,7 +64,7 @@
     "description": "The label for category Chiusura automatica conti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Nuova": {
-    "message": "New",
+    "message": "Nuevo",
     "description": "The label for category Nuova in sidebar financeArea"
   },
   "sidebar.financeArea.category.Scritture di assestamento": {
@@ -72,15 +72,15 @@
     "description": "The label for category Scritture di assestamento in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione": {
-    "message": "New",
+    "message": "Nuevo",
     "description": "The label for category Creazione in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione registrazioni provvisorie": {
-    "message": "Bridged recording management",
+    "message": "Gestión de Grabaciones a través de un puente",
     "description": "The label for category Gestione registrazioni provvisorie in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione clienti/fornitori ": {
-    "message": "Customer/Vendor Management",
+    "message": "Gestión de Clientes/Proveedores",
     "description": "The label for category Gestione clienti/fornitori  in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe fiscali": {
@@ -104,7 +104,7 @@
     "description": "The label for category Generazione solleciti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Compensazione partite": {
-    "message": "maturity value compensation",
+    "message": "compensación por valor de vencimiento",
     "description": "The label for category Compensazione partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Giroconto partite": {
@@ -152,83 +152,83 @@
     "description": "The label for category Cespiti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione cespiti": {
-    "message": "Fixed Assets Management",
+    "message": "Gestión de Activos Fijos",
     "description": "The label for category Gestione cespiti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Ammortamento oggettivo": {
-    "message": "Objective depreciations",
+    "message": "Amortizaciones Objetivas",
     "description": "The label for category Ammortamento oggettivo in sidebar financeArea"
   },
   "sidebar.financeArea.category.Ammortamento cespiti": {
-    "message": "Fixed asset depreciation",
+    "message": "Depreciación de activos fijos",
     "description": "The label for category Ammortamento cespiti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe cespiti": {
-    "message": "Reports Fixed Assets",
+    "message": "Informes de Activos Fijos",
     "description": "The label for category Stampe cespiti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Obsoleto e non supportato": {
-    "message": "Outdated and not supported",
+    "message": "Obsoleto y sin soporte",
     "description": "The label for category Obsoleto e non supportato in sidebar financeArea"
   },
   "sidebar.financeArea.category.Elenchi clienti/fornitori": {
-    "message": "Customer/Vendor Lists",
+    "message": "Listas de Clientes/Vendedores",
     "description": "The label for category Elenchi clienti/fornitori in sidebar financeArea"
   },
   "sidebar.financeArea.category.Anticipi Incassi": {
-    "message": "Advances Collections",
+    "message": "Cobros por Anticipado",
     "description": "The label for category Anticipi Incassi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Tabelle e Parametri": {
-    "message": "Tables and Parameters",
+    "message": "Tablas y Parámetros",
     "description": "The label for category Tabelle e Parametri in sidebar financeArea"
   },
   "sidebar.financeArea.category.Crea distinta di anticipo": {
-    "message": "Create Advance List",
+    "message": "Crear Listado de Anticipos",
     "description": "The label for category Crea distinta di anticipo in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizzazione": {
-    "message": "Accounting",
+    "message": "Contabilidad",
     "description": "The label for category Contabilizzazione in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione incassi": {
-    "message": "Collections Management",
+    "message": "Gestión de Cobros",
     "description": "The label for category Gestione incassi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Crea incassi": {
-    "message": "Create Collections",
+    "message": "Generar Cobros",
     "description": "The label for category Crea incassi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Comunicazione Operazioni paesi a fiscalità privilegiata": {
-    "message": "Tax Havens Communication Operations",
+    "message": "Operaciones de Comunicación sobre Paraísos Fiscales",
     "description": "The label for category Comunicazione Operazioni paesi a fiscalità privilegiata in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione solleciti": {
-    "message": "Dunning Letters Issue",
+    "message": "Emisión de Cartas de Cobranza",
     "description": "The label for category Creazione solleciti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Simulazione piani di ammortamento": {
-    "message": "Depreciation plans simulation",
+    "message": "Simulación de planes de Depreciación",
     "description": "The label for category Simulazione piani di ammortamento in sidebar financeArea"
   },
   "sidebar.financeArea.category.Fatturazione Elettronica": {
-    "message": "E-Invoice",
+    "message": "Factura Electrónica",
     "description": "The label for category Fatturazione Elettronica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Leasing": {
-    "message": "Leasing",
+    "message": "Arrendamiento Financiero",
     "description": "The label for category Leasing in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizzazioni": {
-    "message": "Postings",
+    "message": "Asientos Contables",
     "description": "The label for category Contabilizzazioni in sidebar financeArea"
   },
   "sidebar.financeArea.category.Documenti SDI": {
-    "message": "ES Documents",
+    "message": "Documentos en Español",
     "description": "The label for category Documenti SDI in sidebar financeArea"
   },
   "sidebar.erpHome.category.Anagrafici": {
-    "message": "Registers",
+    "message": "Registros",
     "description": "The label for category Anagrafici in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contatti": {
@@ -236,31 +236,31 @@
     "description": "The label for category Contatti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Crea nuovo contatto": {
-    "message": "Create New Contact",
+    "message": "Crear Nuevo Contacto",
     "description": "The label for category Crea nuovo contatto in sidebar erpHome"
   },
   "sidebar.erpHome.category.Dati contabili": {
-    "message": "Accounting data",
+    "message": "Datos Contables",
     "description": "The label for category Dati contabili in sidebar erpHome"
   },
   "sidebar.erpHome.category.Dati clienti/fornitori": {
-    "message": "Customer/Vendors Data",
+    "message": "Datos de Clientes/Proveedores",
     "description": "The label for category Dati clienti/fornitori in sidebar erpHome"
   },
   "sidebar.erpHome.category.Anagrafiche banche": {
-    "message": "Bank Registry",
+    "message": "Registro Bancario",
     "description": "The label for category Anagrafiche banche in sidebar erpHome"
   },
   "sidebar.erpHome.category.Anagrafica agenti": {
-    "message": "Agent Registry",
+    "message": "Registro de Agentes",
     "description": "The label for category Anagrafica agenti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Reports": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Reports in sidebar erpHome"
   },
   "sidebar.erpHome.category.Agents Allocation": {
-    "message": "Agents Allocation",
+    "message": "Asignación de Agentes",
     "description": "The label for category Agents Allocation in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabili": {
