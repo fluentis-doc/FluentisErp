@@ -14,6 +14,11 @@ Tali criteri vengono impostati nella sezione Parametri attraverso l'uso dei flag
 
 Al termine della creazione le partite sollecitate sono visibili nella relativa form, mentre le lettere di sollecito sono stampabili ed inviabili mediante l'apposita stampa (Amministrazione>Partite>Stampe>Lettere di sollecito)
 
+:::danger[Attenzione]
+Diversamente dalla procedura di generazione manuale solleciti, **nella presente procedura NON è possibile gestire** solleciti con Numero **Giorni di Ritardo negativi**. Tipicamente i giorni negativi vengono impostati per creare un avviso prima della scadenza. In questo caso **è necessario utilizzare** la procedura manuale [***Generazione solleciti***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro).
+:::
+
+
 | Funzione | Significato |
 | --- | --- |
 | Salva | Pulsante per salvare la generazione solleciti. |

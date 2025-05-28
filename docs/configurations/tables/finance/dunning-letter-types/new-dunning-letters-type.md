@@ -25,6 +25,10 @@ Una volta salvato il tipo di sollecito è possibile crearne i vari livelli con i
 
 **Giorni di ritardo**: indicazione dei giorni di ritardo che devono decorrere prima di sollecitare la partita.
 
+:::tip[Info]
+Nella procedura di [***Generazione solleciti***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro), possono essere gestiti anche solleciti con Numero **Giorni di Ritardo negativi**. Tipicamente i giorni negativi vengono impostati per creare un avviso prima della scadenza. La Procedura di [*Generazione automatica solleciti*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) invece **NON** supporta il parametro negativo.
+:::
+
 **Giorni**: il numero di giorni di scadenza del sollecito e se questi siano da conteggiare dalla data di creazione o dalla data di scadenza del sollecito precedente.
 
 **Da data movimento precedente**: data di riferimento per i livelli successivi al primo.

@@ -6,6 +6,9 @@ sidebar_position: 1
 Da questa maschera si procederà alla generazione solleciti con la caratteristica di poter impostare un livello di sollecito che andrà oltre l'ordine logico di priorità che invece caratterizza la generazione automatica solleciti. 
 E' possibile inoltre selezionare manualmente le partite da sollecitare dopo averle filtrate avendo di fatto un maggiore controllo sull'operazione.
 
+:::tip[Info]
+Questa procedura, diversamente dalla [*Generazione automatica solleciti*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue), permette di gestire anche solleciti con Numero **Giorni di Ritardo negativi**. Tipicamente i giorni negativi vengono impostati per creare un avviso prima della scadenza.
+:::
 
 Per procedere è necessario, nella parte inferiore della maschera, assegnare la data di creazione dei solleciti e selezionare il tipo di sollecito (precedentemente codificato nella tabella *Tipi solleciti*) dalla combo box.
 Opzionale è invece l'attribuzione di uno specifico livello di sollecito (tramite la combo box ***N. solleciti***), al fine di forzare la creazione oltre l'ordine logico di priorità. Normalmente, infatti, le partite mai sollecitate avranno il sollecito di priorità 1, quelle già sollecitate passeranno ad un nuovo sollecito di priorità 2 e via di seguito per le successive.
