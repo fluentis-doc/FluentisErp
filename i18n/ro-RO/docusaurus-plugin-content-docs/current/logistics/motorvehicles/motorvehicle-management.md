@@ -1,28 +1,22 @@
 ---
-title: Gestione automezzo
+title: Gestionare autovehicule
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Logistica > Automezzi > Gestione automezzo**.
+Tabelul se află pe calea **Logistică > Autovehicule > Gestionare autovehicule** și permite inserarea noilor înregistrări sau căutarea celor existente pentru a le vizualiza, modifica sau șterge.
 
-I dati presenti in questa tabella sono utilizzati per indicare il tipo di automezzo creato.   
+### Căutare gestionare autovehicule  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Formularul este compus dintr-o zonă de filtrare și una de rezultate. După ce toate filtrele dorite sunt setate, trebuie să faceți clic pe butonul **Caută** pentru a vizualiza rezultatele în tabelul de rezultate.
 
-**Ricerca Gestione automezzo**
+### Inserare gestionare autovehicule 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Pentru a putea insera noi *Autovehicule*, este necesar să faceți clic pe prima linie goală din tabel sau să apăsați butonul **Nou**.  
+Pentru noua înregistrare, trebuie să completați cel puțin câmpurile obligatorii solicitate de program: **Cod** și **Descriere**.
 
-**Inserimento Gestione automezzo**
+#### Campuri specifice  
 
-Per poter inserire nuovi *Automezzi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-
-*Campi specifici*: 
-
-> **Tipo automezzo**: indica il tipo di automezzo, che può essere codificato nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/);            
-> **Codice**: indica il codice dell'automezzo;               
-> **Descrizione**: indica la descrizione dell'automezzo;         
-> **Classe/Codice/Descrizione**: permette di collegare l'automezzo ad un articolo presente in anagrafica inserendo classe, codice e descrizione.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Tip autovehicul**: indică tipul de autovehicul, care poate fi codificat în tabelul [Tip autovehicul](/docs/configurations/tables/logistics/motorvehicle-types/);            
+> **Cod**: reprezintă codul autovehiculului;               
+> **Descriere**: indică descrierea autovehiculului;         
+> **Clasificare/Cod/Descriere**: permite conectarea autovehiculului la un articol din registru prin introducerea clasei, codului și descrierii.   

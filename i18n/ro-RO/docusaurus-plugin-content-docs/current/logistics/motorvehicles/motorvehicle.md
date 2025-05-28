@@ -1,70 +1,60 @@
 ---
-title: Nuovo automezzo
+title: Vehicul nou
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Logistica > Automezzi > Nuovo automezzo**.
+Tabelul se află pe calea **Logistică > Vehicule > Vehicul nou** și permite introducerea înregistrărilor noi sau căutarea celor existente pentru a le vizualiza, modifica sau șterge.
 
-In questa tabella è possibile codificare i diversi *Automezzi* utilizzati e le dimensioni di ciascuno di essi.
+Un exemplu de utilizare a vehiculelor codificate în acest tabel poate fi găsit în [Planurile de încărcare](/docs/logistics/load-plans/create-plan/), în ta *Pregătire plan de încărcare*.
 
-Un esempio di utilizzo degli automezzi codificati in questa tabella lo si trova nei [Piani di Carico](/docs/logistics/load-plans/create-plan/), nel tabulatore *Preparazione piano di carico*.
+### Căutare Vehicule 
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Form-ul este compus dintr-o zonă de filtrare și una de rezultate. După ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** pentru a vizualiza rezultatele în tabelul rezultatelor.
 
-**Ricerca Automezzi**
+### Inserare Vehicule 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Pentru a introduce noi *Vehicule*, este necesar să faceți clic în tabel pe prima linie goală sau să apăsați butonul **Nou**.  
 
-**Inserimento Automezzi**
+#### Câmpuri specifice  
+- **Tip vehicul**: indică tipul vehiculului inserat în tabelul [Tip vehicul](/docs/configurations/tables/logistics/motorvehicle-Type);          
+- **Cod**: reprezintă codul vehiculului;       
+- **Număr înmatriculare**: indică numărul de înmatriculare al vehiculului;      
+- **Dată înregistrare**: indică data înregistrării vehiculului;          
+- **Tip combustibil vehicul**: indică [Tipul de combustibil](/docs/configurations/tables/logistics/motorvehicle-gas-type) utilizat de vehicul.  
+- **Marcă**: indică marca vehiculului prezent în tabelul [Mărci vehicule](/docs/configurations/tables/logistics/motorvehicle-brands);             
+- **Model**: indică modelul vehiculului prezent în tabelul [Mărci vehicule](/docs/configurations/tables/logistics/motorvehicle-brands);        
+- **Dată început**: indică data începerii utilizării vehiculului;     
+- **Dată expirare contract**: indică data expirării contractului vehiculului;     
+- **Dată închidere**: indică data de la care vehiculul nu mai poate fi utilizat;     
+- **Descriere**: permite introducerea descrierii libere a vehiculului;       
+- **Cont**: permite introducerea contului clientului vehiculului;        
+- **Proprietate autovehicul**: permite indicarea tipologiei [Proprietății vehiculului](/docs/configurations/tables/logistics/motorvehicle-ownership);        
+- **Șofer atribuit**: permite indicarea [Șoferului atribuit](/docs/logistics/motorvehicles/motorvehicle-drivers) vehiculului;        
+- **Filială**: permite indicarea filialei;        
+- **Proiect**: permite indicarea proiectului asignat vehiculului.
 
-Per poter inserire nuovi *Automezzi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: 
 
-- **Tipo automezzo**: indica la tipologia del mezzo inserita nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-Type);          
-- **Codice**: indica il codice del mezzo;       
-- **Targa**: indica il numero di targa del mezzo;      
-- **Data registrazione**: indica la data di registrazione del mezzo;          
-- **Tipo carburanti autoveicolo**: indica il [Tipo di carburante](/docs/configurations/tables/logistics/motorvehicle-gas-type) usato dal mezzo.
+#### Detalii
 
-Inoltre è possibile inserire non obbligatori, tra cui:
+- **Compartiment**: indică compartimentul vehiculului;                  
+- **Număr înmatriculare**: indică numărul de înmatriculare al vehiculului;             
+- **Unitate de măsură capacitate**: indică capacitatea maximă a vehiculului;         
+- **Capacitate maximă**: indică capacitatea maximă a vehiculului exprimată în **Unitatea de măsură a capacității**;                  
+- **Unitate de măsură dimensiuni**: indică unitatea de măsură cu care sunt exprimate **Înălțimea**, **Lățimea**, **Adâncimea** și toleranțele corespunzătoare;      
+- **Înălțime**: indică înălțimea vehiculului;         
+- **Lățime**: indică lățimea vehiculului;                 
+- **Adâncime**: indică adâncimea vehiculului;                 
+- **Toleranță în înălțime**: indică toleranța în înălțime a vehiculului;           
+- **Toleranță în lățime**: indică toleranța în lățime a vehiculului;       
+- **UM volum**: indică unitatea de măsură a volumului;                    
+- **Volum**: indică volumul vehiculului;                 
+- **Număr unități de încărcare conținute**: indică numărul maxim de unități de încărcare care pot fi conținute în vehicul;
+- **Număr straturi**: indică numărul de straturi care pot fi încărcate în vehicul.
 
-- **Marca**: indica la marca del mezzo presente nella tabella [Marchi automezzi](/docs/configurations/tables/logistics/motorvehicle-brands);             
-- **Modello**: indica il modello del mezzo presente nella tabella [Marchi automezzi](/docs/configurations/tables/logistics/motorvehicle-brands);        
-- **Data inizio**: indica la data di inizio di utilizzo dell'automezzo;     
-- **Data scadenza contratto**: indica la data di scadenza del contratto dell'automezzo;     
-- **Data chiusura**: indica la data dalla quale non è più possibile utilizzare l'automezzo;     
-- **Descrizione**: permette di inserire una descrizione libera dell'automezzo;       
-- **Conto**: permette di inserire il conto del cliente dell'automezzo;        
-- **Proprietà autoveicolo**: permette di indicare la tipologia [Proprietà dell'autoveicolo](/docs/configurations/tables/logistics/motorvehicle-ownership);        
-- **Autista assegnato**: permette di indicare l'[Autista assegnato](/docs/logistics/motorvehicles/motorvehicle-drivers) all'automezzo;        
-- **Filiale aziendale**: permette di indicare la filiale aziendale;        
-- **Progetto**: permette di indicare il progetto assegnato all'automezzo.        
-
-Una volta terminato l'inserimento dei valori di testata, nella parte inferiore della form sono presenti i seguenti tab:
-
-**Dettagli** dell'automezzo, che contiene i seguenti valori:
-
-- **Vano**: indica il vano dell'automezzo;                  
-- **Targa**: indica la targa dell'automezzo;             
-- **Unità di misura portata**: indica la capacità massima dell'automezzo espressa nell'**Unità di misura portata**;         
-- **Portata massima**: indica la capacità massima dell'automezzo espressa nell'**Unità di misura portata**;                  
-- **Unità di misura dimensioni**: indica l'unità di misura con cui sono espresse **Altezza**, **Larghezza**, **Profondità** e le relative tolleranze;      
-- **Altezza**: indica l'altezza dell'automezzo espresso nell'**Unità di misura dimensioni**;         
-- **Larghezza**: indica la larghezza dell'automezzo espresso nell'**Unità di misura dimensioni**;                 
-- **Profondità**: indica la profondità dell'automezzo espresso nell'**Unità di misura dimensioni**;                 
-- **Tolleranza in altezza**: indica la tolleranza in altezza dell'automezzo espresso nell'**Unità di misura dimensioni**;           
-- **Tolleranza in larghezza**: indica la tolleranza in larghezza dell'automezzo espresso nell'**Unità di misura dimensioni**;       
-- **UM volume**: indica l'unità di misura con cui è espresso il **Volume**;                    
-- **Volume**: indica il volume dell'automezzo espresso nell'**Unità di misura volume**;                 
-- **Numero unità di carico contenibili**: indica il numero massimo di unità di carico che possono essere contenute nell'automezzo;
-- **Numero strati**: indica il numero di strati che possono essere caricati nell'automezzo.
-
-**Periodo inattività automezzo** che permette di inserire i periodi di inattività del mezzo, i quali verranno riportati nel [Planning](/docs/logistics/shipping/calendar).
-Quindi si possono inserire i seguenti valori:
-
-- **Descrizione**: permette di indicare la descrizione del periodo di inattività dell'automezzo;          
-- **Da data**: permette di indicare la data di inizio del periodo di inattività dell'automezzo;          
-- **A data**: permette di indicare la data di fine del periodo di inattività dell'automezzo;          
-- **Motivo**: permette di inserire la motivazione codificata in [Motivi di assenza del conducente](/docs/configurations/tables/logistics/driver-off-time-reasons/)
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+#### Perioade de inactivitate ale vehiculului  
+Permit introducerea perioadelor de inactivitate ale vehiculului care vor fi raportate în [Planificare](/docs/logistics/shipping/calendar).  
+#### Câmpuri specifice  
+- **Descriere**: permite indicarea descrierii perioadei de inactivitate a vehiculului;          
+- **De la data**: permite indicarea datei de început a perioadei de inactivitate a vehiculului;          
+- **Până la data**: permite indicarea datei de sfârșit a perioadei de inactivitate a vehiculului;          
+- **Motiv**: permite introducerea motivului codificat în [Motive absență șofer](/docs/configurations/tables/logistics/driver-off-time-reasons/).

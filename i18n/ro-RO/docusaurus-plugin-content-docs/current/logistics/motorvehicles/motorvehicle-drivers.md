@@ -1,35 +1,30 @@
 ---
-title: Autisti automezzi
+title: Șoferi autovehicule
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Logistica > Automezzi > Autisti automezzi**.
+Tabelul se află la calea **Logistică > Autovehicule > Șoferi autovehicule** și permite codificarea *Șoferilor* care pot fi selectați în [Expediții](/docs/logistics/shipping/shippings).
 
-In questa tabella è possibile codificare le *Autisti automezzi* che potranno essere selezionati nelle [Spedizioni](/docs/logistics/shipping/shippings).
+Tabelul permite adăugarea de noi înregistrări sau căutarea celor existente pentru a le vizualiza, modifica sau șterge.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+### Căutare Șoferi autovehicule
 
-**Ricerca Autisti automezzi**
+Formularul este compus dintr-o zonă de filtrare și una de rezultate. Dupè ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** pentru a vizualiza rezultatele în cadrul grilei de rezultate.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+### Inserare Șoferi autovehicule 
 
-**Inserimento Autisti automezzi**
+Pentru a putea adăuga noi șoferi, este necesar să faceți clic pe prima linie goală din tabel sau să apăsați butonul **Nou**.  
+Pentru noua înregistrare trebuie completate cel puțin câmpurile obligatorii solicitate de program: **Nume** și **Prenume**.  
+De asemenea, se pot insera următoarele valori:
+- **Permis de conducere**: permite introducerea permisului de conducere al șoferului dintre cele inserate în [*Permise de conducere autovehicul*](/docs/configurations/tables/logistics/motorvehicle-driving-licences);  
+- **Resursă atribuită**: permite indicarea [Resursei din proiecte](/docs/configurations/tables/project-management/project-resources/) alocate vehiculului;  
+- **Angajat**: permite indicarea angajatului intern asociat;  
+- **Angajat extern desemnat**: permite indicarea manuală a angajatului extern asociat resursei.
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Nome** e il **Cognome**.  
-Inoltre, è possibile inserire anche i seguenti valori:
-- **Licenza di guida**: permette di inserire la patente di guida dell'autista tra quelle inserite in [*Licenze di guida automezzo*](/docs/configurations/tables/logistics/motorvehicle-driving-licences);      
-- **Risorsa assegnata**: permette di indicare la [Risorsa progetti](/docs/configurations/tables/project-management/project-resources/) assegnata al veicolo;       
-- **Dipendente**: permette di indicare il dipendente interno associato;         
-- **Dipendente esterno assegnato**: permette di indicare manualmente il dipendente esterno associato alla risorsa.
+#### Perioade de inactivitate șofer
 
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.  
-
-Nella griglia *Periodo di inattività autista*, è possibile inserire i periodi di inattività dell'autista, i quali verranno riportati nel [Planning](/docs/logistics/shipping/calendar).
-Quindi si possono inserire i seguenti valori:
-- **Descrizione**: permette di indicare la descrizione del periodo di inattività dell'autista;          
-- **Da data**: permette di indicare la data di inizio del periodo di inattività dell'autista;          
-- **A data**: permette di indicare la data di fine del periodo di inattività dell'autista;          
-- **Motivo**: permette di inserire la motivazione codificata in [Motivi di assenza del conducente](/docs/configurations/tables/logistics/driver-off-time-reasons/)
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Permite inserarea perioadelor de inactivitate ale șoferului, care vor fi raportate în [Planificare](/docs/logistics/shipping/calendar).  
+- **Descriere**: permite indicarea descrierii perioadei de inactivitate a șoferului;  
+- **De la data**: permite indicarea datei de început a perioadei de inactivitate a șoferului;  
+- **La data**: permite indicarea datei de sfârșit a perioadei de inactivitate a șoferului;  
+- **Motiv**: permite introducerea motivului codificat în [Motivele absență șofer](/docs/configurations/tables/logistics/driver-off-time-reasons/).

@@ -1,39 +1,37 @@
 ---
-title: Nuovo consumo materiali 
+title: Consum de materiale nou
 sidebar_position: 2
 ---
 
-La form si apre premendo il pulsante **Nuovo** presente nella form che si trova in **Logistica > Automezzi > Consumo materiali**.
+Form-ul se deschide apăsând butonul **Nou** din form-ul care se află pe calea **Logistică > Autovehicule > Consum de materiale**.
 
-Questa form permette di creare e gestire un *documento di consumo materiali* realizzato appunto per il consumo dei materiali legato all'automezzo inserito. 
+Acest form permite crearea și gestionarea unui *document de consum materiale* realizat special pentru consumul materialelor legate de vehiculul introdus.
 
-La form si presenta simile ad una registrazione di magazzino e i dati da inserire per la testata del documento sono i seguenti:
+Form-ul se prezintă similar unei înregistrări de gestiune și datele care trebuie introduse pentru antetul documentului sunt următoarele:
 
-**Automezzo**: indica l'automezzo per il quale vengono consumati i materiali; questo deve essere codificato in [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management);       
-**Numero**: permette di inserire manualemnte il numero del documento;       
-**Responsabile**: indica l'utente che ha creato il docuemnto e viene inserito automaticamente;         
-**Magazzino**: indica il magazzino in cui verrà effettuato il movimento;        
-**Causale**: indica la causale di magazzino can la quale verrà effettuato il movimento.        
+- **Autovehicul**: indică vehiculul pentru care se consumă materialele; acesta trebuie să fie codificat în [Gestionare autovehicule](/docs/logistics/motorvehicles/motorvehicle-management);  
+- **Număr**: permite introducerea manuală a numărului documentului;  
+- **Responsabil**: indică utilizatorul care a creat documentul și este introdus automat;  
+- **Gestiune**: indică gestiunea în care va avea loc mișcarea;  
+- **Şablon**: indică șablonul gestiunii cu care se va efectua mișcarea.  
 
-Successivamente è necessario inserire, nella griglia centrale **Elenco operazioni effettuate**, tutti gli articoli consumati compilando i campi:
+### Listă operații efectuate  
 
-> **Classe / Codice articolo / Descrizione articolo**: indica classe, codice e descrizione dell'articolo;          
-> **Unità di misura**: indica l'unità di misura dell'articolo;       
-> **Quantità**: indica la quantità dell'articolo;       
-> **Variante**: permette di inserire la variante dell'articolo;        
-> **Descrizione variante**: indica di inserire la variante dell'articolo;     
-> **Progetto**: indica il progetto associato all'articolo;         
-> **Descrizione**: indica la descrizione del progetto associato all'articolo.        
-    
-Inoltre, nella tabella sottostante è possibile inserire i lotti relativi all'articolo selezionato nella griglia principale.
+- **Clasificare / Cod articol / Descriere articol**: indică clasa, codul și descrierea articolului;  
+- **Unitate de măsură**: indică unitatea de măsură a articolului;  
+- **Cantitate**: indică cantitatea articolului;  
+- **Variantă**: permite introducerea variantei articolului;  
+- **Descriere variantă**: indică descrierea variantei articolului;  
+- **Proiect**: indică proiectul asociat articolului;  
+- **Descriere**: indică descrierea proiectului asociat articolului.  
 
-*Campi specifici*: 
+În plus, în tabelul inferior se pot insera loturile aferente articolului selectat în tabelul principal.
 
-> **Numero lotti**: indica il numero del lotto;                 
-> **Codice lotto fornitore**: indica il codice lotti fornitore;         
-> **Data inizio**: indica la data inizio del lotto;      
-> **Data scadenza**: indica la data inizio del lotto;               
-> **Quantità**: indica la quantità del lotto;    
-> **Ubicazione**: indica il codice dell'ubicazione del lotto.  
+#### Câmpuri specifice
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+- **Număr loturi (Numero lotti)**: indică numărul lotului;  
+- **Cod lot furnizor**: reprezintă codul loturilor furnizorului;  
+- **Data început**: indică data de început a lotului;  
+- **Data scadență**: indică data de expirare a lotului;  
+- **Cantitate**: reprezintă cantitatea lotului;  
+- **Locație**: reprezintă codul locației lotului.  
