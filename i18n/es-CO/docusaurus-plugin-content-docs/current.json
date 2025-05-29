@@ -360,127 +360,127 @@
     "description": "The label for category Logistica in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri Picking": {
-    "message": "Picking Parameters",
+    "message": "Parámetros de Recolección Selección",
     "description": "The label for category Parametri Picking in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri Carico/Scarico": {
-    "message": "Load/Unload",
+    "message": "Cargar/Descargar",
     "description": "The label for category Parametri Carico/Scarico in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri iniziali magazzino": {
-    "message": "Warehouse Initial Parameters",
+    "message": "Parámetros Iniciales del Almacén",
     "description": "The label for category Parametri iniziali magazzino in sidebar erpHome"
   },
   "sidebar.erpHome.category.Qualità": {
-    "message": "Quality",
+    "message": "Calidad",
     "description": "The label for category Qualità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tabelle": {
-    "message": "Tables",
+    "message": "Tablas",
     "description": "The label for category Tabelle in sidebar erpHome"
   },
   "sidebar.erpHome.category.Causali di contabilità generale": {
-    "message": "Ledger Records Templates",
+    "message": "Plantillas de Registros del Libro Mayor",
     "description": "The label for category Causali di contabilità generale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Inserimento causali di contabilità generale": {
-    "message": "Insert Ledger Records Templates",
+    "message": "Ingresar Plantillas de Registros del Libro Mayor",
     "description": "The label for category Inserimento causali di contabilità generale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tipi ritenuta": {
-    "message": "Withholding Tax Types",
+    "message": "Tipos de retención de impuestos",
     "description": "The label for category Tipi ritenuta in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tipi solleciti": {
-    "message": "Dunning Letter Types",
+    "message": "Tipos de Cartas de Requerimiento de Pago",
     "description": "The label for category Tipi solleciti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tabelle modulo cash flow": {
-    "message": "Cash Flow Module Tables",
+    "message": "Tablas del Módulo de Flujo de Caja",
     "description": "The label for category Tabelle modulo cash flow in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tabelle modulo Portafoglio effetti": {
-    "message": "Bills Portfolio Module Tables",
+    "message": "Tablas del Módulo de Cartera de Facturas",
     "description": "The label for category Tabelle modulo Portafoglio effetti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tabelle modulo DocFinance": {
-    "message": "DocFinance Module Tables",
+    "message": "Tablas del Módulo DocFinance",
     "description": "The label for category Tabelle modulo DocFinance in sidebar erpHome"
   },
   "sidebar.erpHome.category.Controlling": {
-    "message": "Controlling",
+    "message": "Control de Gestión",
     "description": "The label for category Controlling in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabilità analitica": {
-    "message": "Analytical accounting",
+    "message": "Contabilidad Analítica",
     "description": "The label for category Contabilità analitica in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabilità gestionale": {
-    "message": "Managerial accounting",
+    "message": "Contabilidad Gerencial",
     "description": "The label for category Contabilità gestionale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabilità industriale": {
-    "message": "Cost Accounting",
+    "message": "Contabilidad de Costos",
     "description": "The label for category Contabilità industriale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Causali di contabilità industriale": {
-    "message": "Cost Accounting Templates",
+    "message": "Plantillas de Contabilidad de Costos",
     "description": "The label for category Causali di contabilità industriale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Inserimento causali contabilità industriale": {
-    "message": "Insert Cost Accounting Template",
+    "message": "Insertar Plantilla de Contabilidad de Costos",
     "description": "The label for category Inserimento causali contabilità industriale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Business Process": {
-    "message": "Business Process",
+    "message": "Proceso de Negocio",
     "description": "The label for category Business Process in sidebar erpHome"
   },
   "sidebar.erpHome.category.Budgeting": {
-    "message": "Budgeting",
+    "message": "Presupuestación",
     "description": "The label for category Budgeting in sidebar erpHome"
   },
   "sidebar.erpHome.category.Previsionale": {
-    "message": "Forecast",
+    "message": "Pronóstico",
     "description": "The label for category Previsionale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Caratteristiche articolo": {
-    "message": "Item Characteristics",
+    "message": "Características del Artículo",
     "description": "The label for category Caratteristiche articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Stagionalità": {
-    "message": "Seasonality",
+    "message": "Estacionalidad",
     "description": "The label for category Stagionalità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Stagioni": {
-    "message": "Season",
+    "message": "Temporada",
     "description": "The label for category Stagioni in sidebar erpHome"
   },
   "sidebar.erpHome.category.Factory Calendar for Vendor": {
-    "message": "Factory Calendar for Vendor",
+    "message": "Calendario de Fábrica para Proveedor",
     "description": "The label for category Factory Calendar for Vendor in sidebar erpHome"
   },
   "sidebar.erpHome.category.Calendario capacità produttive": {
-    "message": "Production Capacity calendar",
+    "message": "Calendario de Capacidad de Producción",
     "description": "The label for category Calendario capacità produttive in sidebar erpHome"
   },
   "sidebar.erpHome.category.Numerazione Documenti": {
-    "message": "Documents Numeration",
+    "message": "Numeración de Documentos",
     "description": "The label for category Numerazione Documenti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Impostazioni generali": {
-    "message": "General Settings",
+    "message": "Configuración General",
     "description": "The label for category Impostazioni generali in sidebar erpHome"
   },
   "sidebar.erpHome.category.Discount Type": {
-    "message": "Discount Type",
+    "message": "Tipo de Descuento",
     "description": "The label for category Discount Type in sidebar erpHome"
   },
   "sidebar.erpHome.category.Employee": {
-    "message": "Employee",
+    "message": "Empleado",
     "description": "The label for category Employee in sidebar erpHome"
   },
   "sidebar.erpHome.category.Gestione progetti": {
-    "message": "Project management",
+    "message": "Gestión de Proyectos",
     "description": "The label for category Gestione progetti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Generale": {
@@ -488,19 +488,19 @@
     "description": "The label for category Generale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Controllo articolo": {
-    "message": "Item Control",
+    "message": "Control del Artículo",
     "description": "The label for category Controllo articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Reclami e non conformità": {
-    "message": "Complaints and non-compliance",
+    "message": "Reclamaciones y no conformidades",
     "description": "The label for category Reclami e non conformità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Non conformità": {
-    "message": "Non compliance",
+    "message": "No conformidad",
     "description": "The label for category Reclami e non conformità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Certificati": {
-    "message": "Certificates",
+    "message": "Certificados",
     "description": "The label for category Certificati in sidebar erpHome"
   },
   "sidebar.erpHome.category.CRM": {
@@ -516,23 +516,23 @@
     "description": "The label for category EAM in sidebar erpHome"
   },
   "sidebar.planning.category.MPS - Master production scheduling": {
-    "message": "MPS - Master production scheduling",
+    "message": "MPS - Programa Maestro de producción",
     "description": "The label for category MPS - Master production scheduling in sidebar planning"
   },
   "sidebar.planning.category.Definizione MPS": {
-    "message": "Definition MPS",
+    "message": "Definición MPS",
     "description": "The label for category Definizione MPS in sidebar planning"
   },
   "sidebar.planning.category.Commesse di produzione": {
-    "message": "Search Job Orders",
+    "message": "Buscar Órdenes de Trabajo",
     "description": "The label for category Commesse di produzione in sidebar planning"
   },
   "sidebar.planning.category.Nuova Commessa Monoprodotto": {
-    "message": "New Monoproduct Job Order",
+    "message": "Nueva Orden de Trabajo de un solo producto",
     "description": "The label for category Nuova Commessa Monoprodotto in sidebar planning"
   },
   "sidebar.planning.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar planning"
   },
   "sidebar.planning.category.MS - Master scheduling": {
