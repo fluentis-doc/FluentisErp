@@ -99,6 +99,14 @@
     "message": "Partidas",
     "description": "The label for category Partite in sidebar financeArea"
   },
+  "sidebar.financeArea.category.Procedure": {
+    "message": "Procedures",
+    "description": "The label for category Procedure in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Calcolo interessi": {
+    "message": "Interest Calculation",
+    "description": "The label for category Calcolo interessi in sidebar financeArea"
+  },
   "sidebar.financeArea.category.Generazione solleciti": {
     "message": "Generación de avisos de cobro",
     "description": "The label for category Generazione solleciti in sidebar financeArea"
