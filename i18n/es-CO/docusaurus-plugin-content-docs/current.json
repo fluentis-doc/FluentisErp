@@ -544,19 +544,19 @@
     "description": "The label for category Procedure in sidebar planning"
   },
   "sidebar.planning.category.MS - Master scheduling": {
-    "message": "MS - Master scheduling",
+    "message": "MS - Horario Maestro",
     "description": "The label for category MS - Master scheduling in sidebar planning"
   },
   "sidebar.planning.category.Schedulazione generale": {
-    "message": "General schedule",
+    "message": "Programa General",
     "description": "The label for category Schedulazione generale in sidebar planning"
   },
   "sidebar.planning.category.Ordini pianificati": {
-    "message": "Planned Orders",
+    "message": "Órdenes Planificadas",
     "description": "The label for category Ordini pianificati in sidebar planning"
   },
   "sidebar.planning.category.Nuovo Ordine Pianificato": {
-    "message": "New Planned Order",
+    "message": "Nuevo Pedido Planificado",
     "description": "The label for category Nuovo Ordine Pianificato in sidebar planning"
   },
   "sidebar.planning.category.Rilascio ordini pianificati": {
