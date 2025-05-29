@@ -560,7 +560,7 @@
     "description": "The label for category Nuovo Ordine Pianificato in sidebar planning"
   },
   "sidebar.planning.category.Rilascio ordini pianificati": {
-    "message": "Release Planned Orders",
+    "message": "Liberar Órdenes Planificadas",
     "description": "The label for category Rilascio ordini pianificati in sidebar planning"
   },
   "sidebar.planning.category.Gantt": {
@@ -568,135 +568,135 @@
     "description": "The label for category Gantt in sidebar planning"
   },
   "sidebar.planning.category.Gantt di produzione": {
-    "message": "Production outlook",
+    "message": "Perspectiva de producción",
     "description": "The label for category Gantt di produzione in sidebar planning"
   },
   "sidebar.planning.category.Production outlook": {
-    "message": "Production outlook",
+    "message": "Perspectiva de producción",
     "description": "The label for category Production outlook in sidebar planning"
   },
   "sidebar.planning.category.Sequenza fasi": {
-    "message": "Phase sequence",
+    "message": "Secuencia de fases",
     "description": "The label for category Sequenza fasi in sidebar planning"
   },
   "sidebar.production.category.Bolla di consegna": {
-    "message": "Delivery Note",
+    "message": "Nota de Entrega",
     "description": "The label for category Bolla di consegna in sidebar production"
   },
   "sidebar.production.category.Inserimento bolla di consegna": {
-    "message": "Insert Delivery Note",
+    "message": "Inserte la Nota de Entrega",
     "description": "The label for category Inserimento bolla di consegna in sidebar production"
   },
   "sidebar.production.category.Consegne": {
-    "message": "Deliveries",
+    "message": "Entregas",
     "description": "The label for category Consegne in sidebar production"
   },
   "sidebar.production.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar production"
   },
   "sidebar.production.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar production"
   },
   "sidebar.production.category.Ricerca Rientri": {
-    "message": "Subcontractor Returns",
+    "message": "Devoluciones de subcontratistas",
     "description": "The label for category Ricerca Rientri in sidebar production"
   },
   "sidebar.production.category.Inserimento rientri": {
-    "message": "Insert Returns",
+    "message": "Devoluciones de insertos",
     "description": "The label for category Inserimento rientri in sidebar production"
   },
   "sidebar.production.category.Articoli rientrati": {
-    "message": "Returned Items",
+    "message": "Artículos devueltos",
     "description": "The label for category Articoli rientrati in sidebar production"
   },
   "sidebar.production.category.Registrazione rientri": {
-    "message": "Returns Record",
+    "message": "Registro de Devoluciones",
     "description": "The label for category Registrazione rientri in sidebar production"
   },
   "sidebar.production.category.Capacity Requirements": {
-    "message": "Capacity Requirements",
+    "message": "Requerimientos de Capacidad",
     "description": "The label for category Capacity Requirements in sidebar production"
   },
   "sidebar.production.category.Istogramma utilizzo risorse": {
-    "message": "Resource Histogram Use",
+    "message": "Uso del histograma de recursos",
     "description": "The label for category Istogramma utilizzo risorse in sidebar production"
   },
   "sidebar.production.category.Visualizzazione Gantt": {
-    "message": "Gantt Visualization",
+    "message": "Visualización de Gantt",
     "description": "The label for category Visualizzazione Gantt in sidebar production"
   },
   "sidebar.production.category.MRP - Material requirement planning": {
-    "message": "MRP - Material requirement planning",
+    "message": "MRP - Planificación de Requerimientos de Materiales",
     "description": "The label for category MRP - Material requirement planning in sidebar production"
   },
   "sidebar.production.category.PP - Production in progress": {
-    "message": "PP - Production in progress",
+    "message": "PP - Producción en Progreso",
     "description": "The label for category PP - Production in progress in sidebar production"
   },
   "sidebar.production.category.Ordini di produzione": {
-    "message": "Production order",
+    "message": "Orden de producción",
     "description": "The label for category Ordini di produzione in sidebar production"
   },
   "sidebar.production.category.Gestione ordini di produzione": {
-    "message": "Production orders management",
+    "message": "Gestión de órdenes de producción",
     "description": "The label for category Gestione ordini di produzione in sidebar production"
   },
   "sidebar.production.category.consuntivazione ordini di produzione": {
-    "message": "Production times flushing",
+    "message": "Descarga de tiempos de producción",
     "description": "The label for category consuntivazione ordini di produzione in sidebar production"
   },
   "sidebar.production.category.Cruscotto Produzione semplificata": {
-    "message": "Panel - simplified production",
+    "message": "Panel - Producción simplificada",
     "description": "The label for category Cruscotto Produzione semplificata in sidebar production"
   },
   "sidebar.production.category.Segnalazioni": {
-    "message": "Signals",
+    "message": "Señales",
     "description": "The label for category Segnalazioni in sidebar production"
   },
   "sidebar.production.category.Registrazione segnalazioni": {
-    "message": "Signal records",
+    "message": "Registros de señales",
     "description": "The label for category Registrazione segnalazioni in sidebar production"
   },
   "sidebar.production.category.Rilascio ordini di produzione": {
-    "message": "Production orders release",
+    "message": "Liberación de Órdenes de Producción",
     "description": "The label for category Rilascio ordini di produzione in sidebar production"
   },
   "sidebar.production.category.Gestione ore di produzione": {
-    "message": "Production hours management",
+    "message": "Gestión de horas de producción",
     "description": "The label for category Gestione ore di produzione in sidebar production"
   },
   "sidebar.production.category.Log modifiche": {
-    "message": "Modifications Log",
+    "message": "Registro de Modificaciones",
     "description": "The label for category Log modifiche in sidebar production"
   },
   "sidebar.production.category.Tables": {
-    "message": "Tables",
+    "message": "Tablas",
     "description": "The label for category Tables in sidebar production"
   },
   "sidebar.purchase.category.DDT di acquisto": {
-    "message": "Purchase Delivery Note",
+    "message": "Nota de entrega de compra",
     "description": "The label for category DDT di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento DDT di Acquisto": {
-    "message": "Insert Purchase Delivery Note",
+    "message": "Insertar nota de entrega de compra",
     "description": "The label for category Inserimento DDT di Acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Procedure testata": {
-    "message": "Header Procedures",
+    "message": "Procedimientos de cabecera",
     "description": "The label for category Procedure testata in sidebar purchase"
   },
   "sidebar.purchase.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar purchase"
   },
   "sidebar.purchase.category.Creazione DDT da Ricevimento merci": {
-    "message": "Create Delivery Note from Goods Receipt",
+    "message": "Crear nota de entrega a partir del ingreso de mercancías",
     "description": "The label for category Creazione DDT da Ricevimento merci in sidebar purchase"
   },
   "sidebar.purchase.category.Registrazione DDT di acquisto in Magazzino": {
-    "message": "Warehouse purchase delivery note record",
+    "message": "Registro de Nota de Entrega de Compra de Almacén",
     "description": "The label for category Registrazione DDT di acquisto in Magazzino in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase Delivery Notes Accounting": {
@@ -704,7 +704,7 @@
     "description": "The label for category Purchase Delivery Notes Accounting in sidebar purchase"
   },
   "sidebar.purchase.category.Fatture di acquisto": {
-    "message": "Purchase Invoices",
+    "message": "Facturas de Compra",
     "description": "The label for category Fatture di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento fattura di acquisto": {
