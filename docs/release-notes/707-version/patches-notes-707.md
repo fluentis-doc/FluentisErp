@@ -3,6 +3,41 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0034 - 30/05/2025 
+
+> - WM - Corretto bug nella gestione picking che non generava correttamente i DDT e le fatture se contenevano articoli gestiti con CONAI. (#TT02385/25) 
+> - SD - Creazione Listini di Vendita da Listini di Acquisto: risolta anomalia nel calcolo del prezzo di vendita nel caso di utilizzo del flag “Ripresa sconti” (#TT02370/25). 
+> - WM - Stampa liste inventariali - Sostituita la proprietà Location.Code con Location.CodeLocation (#TT02074/25) 
+> - FI - Stampa registri iva - Revisione riporto dei totali sulla stampa registri iva completo (rif. #TT01950/25) 
+> - FI - Stampa estratto conto a partite aperte - revisione formattazione del campo 'Numero documento' (Rif. ticket 2229/25) 
+> - Allow supervisor to use reports with  RepositoryMethodParameters tag ticket. Modifications in Supervisor Activities can have an impact on profiles ( #TT02012/25) 
+> - MS - Corretto bug in generazione commesse di produzione. Nel tab sottoscorta non venivano correttamente riportati nel tab riepilogo prototipi gli articoli selezionati se questi avevano disponibilità nel passato e in due magazzini diversi. (#TT02408/25). 
+> - ARM - Fix Restriction Rule insert exception (#TT01859/25) 
+> - CO - nelle scritture di integrazione, esclusione righe con giorni totali 0 (#TT02417/25) 
+> - SD - Nella ricerca dei DDT e delle Fatture di Vendita è ora possibile aggiungere come filtro il campo Zona (#TT02413/25). 
+> - MS - Corretto bug nel calcolo del costo totale preventivo della costificazione di una commessa. (#TT02182/25) 
+> - FI - Problemi con la stampa 'OpenMaturityValuesAccountStatement'(TT02401/25).  
+> - WMS - Corretto bug nella procedura di Dichiarazione di produzione presente nel WMS. (#TT02368/25) 
+> - FI - nella griglia analitica delle registrazioni contabili, revisione inserimento nuova riga da conto/sottoconto per valorizzazione importo senza ricalcolo importi già inseriti. (#TT02189/25) 
+> - Stampa Riepilogo per tipo operazione, modulo cespiti, revisione report per tipi operazione in lingua utente. (#TT02473/25) 
+> - FI - stampa Riepilogo per tipo operazione, modulo cespiti, revisione visualizzazione in lingua dei tipi operazione. Modifications in Riepilogo per tipo operazione can have an impact on profiles (#TT02473/25) 
+> - ARM - fix Align Object for database views and table value functions (TT02475/25) 
+> - WM - Corretto bug sulla roll back del carico UDC. (#TT01656/25) 
+> - FI - revisione caricamento oggetti in una nuova registrazione creata dall’interno di una registrazione esistente (#TT02508/25) 
+> - SD - Ottimizzata la procedura di creazione Fatture da DDT di Vendita (#TT02317/25, #TT00435/25) 
+> - SH - Fix profile restore (TT02298/25) 
+> - ARM - Fix exporting report (#TT02519/25) 
+> - SD - Rivisto calcolo nella stampa provvigioni maturate per le note di accredito, ora con il criterio del pagamento avvenuto seguono la stessa logica delle fatture. (#TT02360/25) 
+> - SCS - ordine conto lavoro, corretto mancato inserimento unità di misura quando viene inserito un articolo codificato in tab articoli (#TT01773/25) 
+> - FI - nelle registrazioni contabili, l’inserimento manuale di una riga in griglia intrastat propone la sezione bis/quater a seconda del tipo riga iva generico/servizio. (#TT02207/25) 
+> - SH - Corretto errore nell'Analisi Disponibilità che visualizzava anche le righe dei picking forzatamente evasi (#TT02279/25). 
+> - MS - Corretto bug in schedulazione a capacità finita che visualizzava il messaggio "Non è un giorno lavorativo" in alcuni casi particolari. (#TT02228/25) 
+> - MS - In fase di costificazione di una commessa di produzione, corretto bug inerente al calcolo del costo effettivo della manodopera nel caso fossero inseriti i dipendenti nel tab squadra della dichiarazione di produzione. (#TT02415/25) 
+> - FI - revisione creazione automatica solleciti per risolvere creazione solleciti vuoti, ottimizzazione tempi, creazione lettere anche quando numero e data documento partita sono vuoti, assegnazione scadenza sollecito da partita o sollecito precedente, numero partita assegnata alla testata sollecito. (#TT02248/25 e #TT02406/25) 
+> - SD, SCM - È stato introdotto un controllo in fase di inserimento delle date di competenza nei documenti, che impedisce l’inserimento di una data fine antecedente alla data inizio. Il controllo viene effettuato sulle date inserite nel tab Analitica di tutti i documenti di acquisto e vendita e sulle righe articolo delle Fatture di Vendita. (#TT02421/25) 
+> - PR - nella creazione distinte Riba, lettura parametro riba ‘Senza riferimenti per import insoluti’. (#TT01647/25) 
+
+
 ### Patch 707.1-0033 - 23/05/2025 
 
 > - ARM - OData Service code generation:  use interface instead of class for resolving service module(TT02308/25) 
