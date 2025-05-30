@@ -1,18 +1,18 @@
 ---
-title: Liste inventariali
+title: Liste de inventariere
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-Attraverso questo report, gli utenti possono generare e visualizzare liste dettagliate delle giacenze di articoli presenti, consentendo una verifica accurata delle quantità fisiche.
-Questo approccio semplifica notevolmente le attività di controllo e riconciliazione, supportando l'identificazione tempestiva delle variazioni di stock.       
-Le liste inventariali possono essere utilizzate non solo per le operazioni di inventario periodico, ma anche per monitorare la rotazione delle scorte e ottimizzare le strategie di approvvigionamento.     
-Inoltre, l'integrazione con altri report di magazzino garantisce una visione complessiva della gestione delle scorte, favorendo una maggiore efficienza operativa.
+:::important Utilizare
+Cu acest raport utilizatorii pot genera și vizualiza listele detaliate ale stocurilor de articole, permițând o verificare precisă a cantităților fizice.  
+Această abordare simplifică semnificativ activitățile de control, sprijinind identificarea rapidă a variațiilor de stoc.  
+Listele de inventariere pot fi utilizate nu doar pentru operațiunile de inventar periodic, ci și pentru monitorizarea rotației stocurilor și optimizarea strategiilor de aprovizionare.  
+În plus, integrarea cu alte rapoarte de gestionare a stocului garantează o imagine de ansamblu a gestionării stocurilor, favorizând o eficiență operațională sporită.
 :::
 
-La stampa permette all'utente di visualizzare un report contenente le informazioni relative alle liste inventariali filtrate.
-Oltre ai dati del magazzino, codice articolo / variante, lotto, ubicazione ed unità di misura, sono riportati anche i valori di giacenza fisica e logica dei singoli articoli, inoltre è presente anche una colonna vuota chiamata *Quantità conteggiata* che permette all'utente di andare ad inserire la quantità rilevata in fase di inventario.
+Form-ul permite utilizatorului să vizualizeze un raport care conține informațiile referitoare la listele de inventariere filtrate.  
+Pe lângă datele de gestiune, codul articolului/variantă, lotul, locația și unitatea de măsură, sunt incluse și valorile stocului faptic și scriptic al fiecărui articol. Câmpul *Cantitate numărată* care permite utilizatorului să insereze cantitatea observată în timpul inventarului.
 
-Dopo l'inserimento dei filtri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+După introducerea filtrului dorit, se pot tipări rapoarte standard sau personalizate (în baza setărilor efectuate). În cazul în care se dorește tipărirea unui raport personalizat, este necesar să fie ales din lista care se află în  *parametrii raport*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Pentru toate celelalte informații care nu sunt detaliate în acest document referitor la funcționarea comună a rapoartelor, vă rugăm să consultați link-ul: [Previzualizare și imprimare](/docs/guide/common/operations-with-data/reports).

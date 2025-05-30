@@ -1,24 +1,22 @@
 ---
-title: Inventari fisici
+title: Inventare faptice
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-L'introduzione agli inventari fisici di Fluentis permette agli operatori di creare liste inventariali, effettuare rilevazioni delle giacenze fisiche e confrontare i dati ottenuti con le giacenze logiche presenti nel sistema. Attraverso un processo automatizzato, Fluentis facilita l'allineamento tra le giacenze fisiche e quelle logiche, garantendo così un'accurata ottimizzazione della gestione delle risorse.
+:::important Utilizare  
+Această funcționalitate permite operatorilor să creeze liste inventariale, să efectueze măsurători ale stocurilor faptice și să compare datele obținute cu stocurile scriptice prezente în sistem. Printr-un proces automatizat, Fluentis facilitează alinierea între stocurile faptice și cele scriptice, garantând astfel o optimizare precisă a gestionării resurselor.
 
-La form dedicata agli inventari fisici consente di selezionare gli inventari esistenti, composti da una o più liste inventariali, per modificarli o crearne di nuovi. Gli operatori possono facilmente inserire informazioni rilevanti, quale il numero, la data e le note relative all'inventario, e possono contrassegnare l'inventario come "chiuso" una volta completate le operazioni necessarie. Queste funzionalità assicurano che gli inventari siano gestiti in modo efficace e che qualsiasi discrepanza possa essere prontamente affrontata.
+Form-ul dedicat inventarelor faptice permite selectarea inventarelor existente, compuse din una sau mai multe liste inventariale, pentru a le modifica sau a crea altele noi. Operatorii pot introduce ușor informații relevante, precum numărul, data și notele referitoare la inventar și pot marca inventarul ca fiind "închis" după ce operațiunile necesare sunt completate. Aceste funcționalități garantează că inventarele sunt gestionate eficient și că orice discrepanță poate fi abordată prompt.
 
-Inoltre, gli articoli inventariati possono essere inseriti manualmente o tramite sistemi di assistenza come WMS, facilitando così l'inserimento e la registrazione delle giacenze. Dopo aver completato le liste di prelievo, è possibile procedere con il calcolo delle differenze inventariali, rendendo il processo di gestione del magazzino ancora più preciso e efficiente. 
+În plus, articolele inventariate pot fi introduse manual sau prin intermediul sistemelor de asistență, cum ar fi WMS, facilitând astfel inserarea și înregistrarea stocurilor. După finalizarea *listelor de ieșiri*, se pot calcula diferențele inventariale, făcând procesul de gestionare a stocurilor și mai precis și eficient.
 :::
 
-La form si apre tramite il percorso **Logistica > Inventari fisici** e permette di effettuare una selezione degli inventari presenti nel database. Gli inventari sono l'entità che raggruppa una o più liste inventariali.
+Form-ul se află pe calea **Logistică > Inventare faptice** și permite selectarea inventarelor prezente în baza de date. Inventarele grupează una sau mai multe liste inventariale.
 
-Consente di ricercare gli inventari che corrispondono ai dati di filtro specificati con lo scopo di visualizzarli, modificarli, ed eventualmente cancellarli oppure procedere all'inserimento di una nuova lista; la finestra si compone di un'area di filtro e da una griglia di risultato.
+Permite căutarea inventarelor care corespund datelor de filtrare specificate pentru a le vizualiza, modifica, șterge sau pentru a insera o nouă listă. Fereastra este compusă dintr-o zonă de filtrare și un tabel de rezultate.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+După ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** pentru a vizualiza rezultatele în tabelul de rezultate.
 
-Per aprire i dettagli di una lista, basterà selezionarla e fare doppio click con il mouse oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
+Pentru a deschide detaliile unei liste, este suficient să o selectați și să faceți dublu clic sau să faceți clic pe butonul **Modifică** (permite accesarea detaliilor și modificarea acestora) sau pe butonul **Vizualizare** (permite accesarea detaliilor și vizualizarea acestora, fără a le putea modifica).
 
-Sempre da questa form si può inserire una nuova lista utilizzando il pulsante **Nuovo**.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+De asemenea, din acest formular se poate introduce o listă nouă folosind butonul **Nou**.
