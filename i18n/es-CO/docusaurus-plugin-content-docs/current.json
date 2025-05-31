@@ -700,7 +700,7 @@
     "description": "The label for category Registrazione DDT di acquisto in Magazzino in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase Delivery Notes Accounting": {
-    "message": "Purchase Delivery Notes Accounting",
+    "message": "Contabilidad de Notas de Entrega de Compras",
     "description": "The label for category Purchase Delivery Notes Accounting in sidebar purchase"
   },
   "sidebar.purchase.category.Fatture di acquisto": {
@@ -708,87 +708,87 @@
     "description": "The label for category Fatture di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento fattura di acquisto": {
-    "message": "Invoice",
+    "message": "Factura",
     "description": "The label for category Inserimento fattura di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Contabilizzazione": {
-    "message": "Accounting",
+    "message": "Contabilidad",
     "description": "The label for category Contabilizzazione in sidebar purchase"
   },
   "sidebar.purchase.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar purchase"
   },
   "sidebar.purchase.category.Ordini fornitori": {
-    "message": "Purchase Orders",
+    "message": "Órdenes de compra",
     "description": "The label for category Ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento ordini fornitori": {
-    "message": "Insert Purchase Orders",
+    "message": "Registrar Órdenes de Compra",
     "description": "The label for category Inserimento ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase order items": {
-    "message": "Purchase order items",
+    "message": "Artículos de la orden de compra",
     "description": "The label for category Purchase order items in sidebar purchase"
   },
   "sidebar.purchase.category.Listini di acquisto": {
-    "message": "Purchase Price Lists",
+    "message": "Listas de Precios de Compra",
     "description": "The label for category Listini di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Richieste di acquisto": {
-    "message": "Purchase Requests",
+    "message": "Solicitudes de compra",
     "description": "The label for category Richieste di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Ricevimento merci": {
-    "message": "Goods reception",
+    "message": "Recepción de Mercancías",
     "description": "The label for category Ricevimento merci in sidebar purchase"
   },
   "sidebar.purchase.category.Definizione politica sconti": {
-    "message": "Policies discount definition",
+    "message": "Definición de Políticas de Descuento",
     "description": "The label for category Definizione politica sconti in sidebar purchase"
   },
   "sidebar.sales.category.Fatture di vendita": {
-    "message": "Sales Invoices",
+    "message": "Facturas de venta",
     "description": "The label for category Fatture di vendita in sidebar sales"
   },
   "sidebar.sales.category.Fatturazione": {
-    "message": "Invoicing",
+    "message": "Facturación",
     "description": "The label for category Fatturazione in sidebar sales"
   },
   "sidebar.sales.category.Testata": {
-    "message": "Header",
+    "message": "Encabezado",
     "description": "The label for category Testata in sidebar sales"
   },
   "sidebar.sales.category.Articoli": {
-    "message": "Items",
+    "message": "Artículos",
     "description": "The label for category Articoli in sidebar sales"
   },
   "sidebar.sales.category.Riepiloghi": {
-    "message": "Summary",
+    "message": "Resumen",
     "description": "The label for category Riepiloghi in sidebar sales"
   },
   "sidebar.sales.category.Procedure testata": {
-    "message": "Header Procedures",
+    "message": "Procedimientos del Encabezado",
     "description": "The label for category Procedure testata in sidebar sales"
   },
   "sidebar.sales.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar sales"
   },
   "sidebar.sales.category.Creazione fatture da DDT/Bolle": {
-    "message": "Create Invoices from Delivery Note",
+    "message": "Crear facturas a partir de guías de despacho",
     "description": "The label for category Creazione fatture da DDT/Bolle in sidebar sales"
   },
   "sidebar.sales.category.Scarico fatture immediate dal magazzino": {
-    "message": "Warehouse Direct Invoice Unload",
+    "message": "Descarga de Factura Directa en Almacén",
     "description": "The label for category Scarico fatture immediate dal magazzino in sidebar sales"
   },
   "sidebar.sales.category.Contabilizza": {
-    "message": "Accounting",
+    "message": "Contabilidad",
     "description": "The label for category Contabilizza in sidebar sales"
   },
   "sidebar.sales.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar sales"
   },
   "sidebar.sales.category.POS": {
@@ -796,15 +796,15 @@
     "description": "The label for category POS in sidebar sales"
   },
   "sidebar.sales.category.Inserimento POS": {
-    "message": "Insert POS",
+    "message": "Insertar POS",
     "description": "The label for category Inserimento POS in sidebar sales"
   },
   "sidebar.sales.category.Scarico POS": {
-    "message": "Unload POS",
+    "message": "Descargar POS",
     "description": "The label for category Scarico POS in sidebar sales"
   },
   "sidebar.sales.category.DDT/Bolle di vendita": {
-    "message": "Sales Delivery Notes",
+    "message": "Notas de Entrega de Ventas",
     "description": "The label for category DDT/Bolle di vendita in sidebar sales"
   },
   "sidebar.sales.category.Ricerca DDT": {
