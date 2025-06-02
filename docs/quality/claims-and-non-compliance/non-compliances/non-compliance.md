@@ -42,8 +42,8 @@ Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, app
 Viene visualizzata una richiesta/conferma dati per:
 > **Cliente** o **Fornitore**: è il destinatario della nuova *Nota di addebito* (dato obbligatorio), viene proposto il *Cliente* o *Fornitore* della *Non conformità* di origine.   
 > **Tipo fattura**: è il *Tipo documento* della nuova *Nota di addebito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
-> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo non codificato* della nuova *Nota di addebito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione non conformità](/docs/quality/claims-and-non-compliance/non-compliances/procedure), sessione *Riferimenti non conformità*.   
-> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo non codificato* della nuova *Nota di addebito*; viene proposto il *Tipo I.V.A.* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
+> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di addebito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione non conformità](/docs/quality/claims-and-non-compliance/non-compliances/procedure), sessione *Riferimenti non conformità*.   
+> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di addebito*; viene proposto il *Tipo I.V.A.* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
 >
 > Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
 > Al termine dell'elaborazione la *Nota di addebito* appena creata viene visualizzata.   
@@ -52,11 +52,11 @@ Viene visualizzata una richiesta/conferma dati per:
 ### ![](/img/neutral/common/corrective.png) Crea azione correttiva
 
 Pulsante contestuale alla visualizzazione del tabulatore *Gestione difetti*.   
-Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, approvata ed è stato selezionato una riga *Difetto* valida.   
-Viene visualizzata una richiesta/conferma dati per:   
->
-> Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-> Al termine dell'elaborazione l'*Azione correttiva* appena creata viene visualizzata e il riferimento (Tipo, Anno e Numero) viene aggiornato nella riga *Difetto* di origine.   
+Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, approvata ed è stata selezionata una riga *Difetto* valida.   
+
+import CorrectiveActionPopupInsertion from './../../../import/sections/corrective-action-popup-insertion.md'
+
+<CorrectiveActionPopupInsertion />
 
 
 ## Gestione dati
@@ -103,12 +103,10 @@ Le informazioni gestite sono:
 > Solitamente utilizzato per registrare un'eventuale risposta data dal destinatario della *Non conformità* alla notifica della stessa.   
 >
 > **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
->
 >> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito la *Non conformità*.   
 >> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica alla *Non conformità*.   
 >
 > **Approvata/In data**: expander dove è possibile inserire le informazioni di approvazione della *Non conformità:   
->
 >> Solamente la **Persona responsabile** o la **Funzione responsabile** possono approvare la *Non conformità*.  
 >> **Approvata**: indica che la *Non conformità* è *Approvata*.   
 >> All'atto dell'approvazione vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
@@ -120,7 +118,6 @@ Le informazioni gestite sono:
 >> Abilitata solamente se la *Non conformità* è *Approvata*.   
 >
 > **Chiusa/In data**: expander dove è possibile inserire le informazioni di chiusura della *Non conformità*:   
->
 >> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere la *Non conformità*.  
 >> **Chiusa**: indica che la *Non conformità* è *Chiusa*.   
 >> All'atto della chiusura vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
@@ -146,7 +143,7 @@ Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine a
 Nel tabulatore sono contenute annotazioni generali al documento e specifiche per area. Le informazioni presenti sono:   
 > **Note commerciali**: annotazioni libere sull'argomento riservate al personale dell'area commerciale.   
 > **Note tecniche**: annotazioni libere sull'argomento riservate al personale dell'area tecnica.   
-> **Note amministrative**: annotazioni libere sull'argomento riservate al personale dell'area amministrativa.
+> **Note amministrative**: annotazioni libere sull'argomento riservate al personale dell'area amministrativa.   
 
 
 ### Extra data
@@ -161,7 +158,7 @@ Nel tabulatore è possibile inserire altri costi aggiuntivi a quelli derivanti d
 > Un elenco di costi attribuibili in modo diretto al costo degli articoli contestati, al servizio dato e al costo delle lavorazioni sostenute per la gestione della *Non conformità*. In questo elenco sono presenti le informazioni di:   
 >> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Costo diretto (Direct cost)*.   
 >> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Applicazione su ...**: informazione di sola lettura che riporta l'*Applicazione su ...* associata alla *Voce di costo* selezionata e indica dove viene applicato il *Valore* se espresso in percentuale; le possibili attribuzioni sono su:   
+>> **Applicazione su ...**: informazione di sola lettura che riporta su quale componente di costo viene applicato il *Valore* (se espresso in percentuale); le possibili attribuzioni sono su:   
 >>> *Costo materiali*: somma della sola componente dei costi articolo degli *Oggetti difettosi* e dei *Materiali utilizzati*;   
 >>> *Costo macchina*, *Costo manodopera* e *Costo lavorazioni*: somma della sola componente dei costi di lavorazione degli *Oggetti difettosi*;   
 >>> *Costo industriale*: somma del *Totale materiale rilavorato* e *Totale materiale non rilavorato*.   
@@ -193,13 +190,13 @@ Nel tabulatore è possibile inserire altri costi aggiuntivi a quelli derivanti d
 
 Nel tabulatore è possibile inserire informazioni relative a documenti di addebito e accredito della *Non conformità*, i costi sostenuti, quelli da addebitare e i costi riconosciuti dal *Fornitore/Cliente*. Le informazioni presenti sono:   
 > **Divisa**, **Diretto** e **Data valuta**: è la *Divisa* del *Fornitore* o del *Cliente* con la quale vengono specificati tutti i valori del documento, il relativo coefficiente di cambio alla *Divisa* della *Società* e la *Data valuta*.   
-> **Valorizzato** e **Riferimento documento di debito**: informazioni di sola lettura che riportano se la *Non conformità* è stata valorizzata e il riferimento alla *Nota di debito* generata.   
+> **Valorizzata** e **Riferimento documento di debito**: informazioni di sola lettura che riportano se la *Non conformità* è stata valorizzata e il riferimento alla *Nota di debito* generata.   
 > **Riferimento documento accredito**: è il riferimento alla *Nota di accredito* ricevuta dal *Fornitore* o del *Cliente*.   
 > **Note documento di accredito**: annotazioni libere sull'argomento.   
 >   
-> **Totale materiale non rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi articolo degli *Oggetti difettosi* non rilavorati e dei *Materiali utilizzati*se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* non è stato richiesto il *Ricalcolo automatico totali*.   
+> **Totale materiale non rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi articolo degli *Oggetti difettosi* non rilavorati e dei *Materiali utilizzati*.   
 >   
-> **Totale materiale rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi lavorazione degli *Oggetti difettosi* rilavorati; il valore può essere variato se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* non è stato richiesto il *Ricalcolo automatico totali*.   
+> **Totale materiale rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi lavorazione degli *Oggetti difettosi* rilavorati.   
 >   
 > **Totale costi diretti**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco dei *Costi diretti* presenti nel tabulatore *Altri costi*.   
 >   
@@ -271,19 +268,20 @@ Sono le informazioni aggiuntive alla riga *Difetto* selezionato. Le informazioni
 
 
 ### Oggetti reclamati   
+
 E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selezionato e si compone delle seguenti informazioni:   
 > **Oggetto**   
 >> **Bar code**: è la *Classe articolo*.   
 >> **Classe**: è la *Classe articolo* reclamato.   
 >> **Codice articolo**: è il codice dell'*Articolo* reclamato.   
 >> **Descrizione articolo**: è la descrizione dell'*Articolo* reclamato.   
+>> **Variante**: è la codice variante dell'*Articolo* reclamato.   
 >> **Lotto**: è il codice del *Lotto* interno dell'*Articolo* reclamato.   
 >> **Unità di carico**: è l'*Unità di carico* di origine che conteneva l'Articolo* reclamato.   
 >> L'inserimento di una *Unità di carico* comporta l'automatico inserimento di tutte le righe di dettaglio *Articolo* presenti in essa.   
 >> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articoli* uguali verranno riportate in un'unica riga con le quantità sommate.   
 >> **Numero seriale**:  è il *Numero seriale* dell'*Articolo* reclamato.   
 >> **Unità di carico da rendere**: è l'*Unità di carico* che contiene l'Articolo* reclamato da rendere.   
->> **Variante**: è la codice variante dell'*Articolo* reclamato.   
 >  
 > **Quantità**   
 >> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo* reclamato.   
@@ -311,6 +309,7 @@ E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selez
 >> **Lavorate**: sono le ore e i minuti lavorati per la riparazione dell'*Oggetto* non conforme; il valore deve essere inserito manualmente.   
 
 #### Dati oggetto
+
 Sono le informazioni aggiuntive alla riga dell'*Oggetto reclamato* selezionato. Le informazioni gestite sono:   
 > **Progetto**: è il riferimento al *Progetto* del *Difetto* specifico*.   
 > **Note articolo**: annotazioni libere sull'*Articolo* del *Difetto* specifico*.   
@@ -326,14 +325,17 @@ Sono le informazioni aggiuntive alla riga dell'*Oggetto reclamato* selezionato. 
 
 
 #### Extra data   
+
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Oggetto reclamato* selezionato.   
 
 
 #### Documenti allegati   
+
 In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Oggetto reclamato* selezionato.   
 
 
 ### Materiali utilizzati   
+
 In questo elenco è possibile indicare i materiali che sono stati utilizzati per porre rimedio al *Difetto* selezionato.   
 L'elenco si compone delle seguenti informazioni:   
 >   
@@ -341,9 +343,9 @@ L'elenco si compone delle seguenti informazioni:
 >> **Classe**: è la *Classe articolo*.   
 >> **Codice**: è il codice dell'*Articolo*.   
 >> **Descrizione**: è la descrizione dell'*Articolo*.   
->> **Lotti**: è il codice del lotto interno utilizzato.   
->> **Numero seriale**:  è il numero seriale utilizzato.   
 >> **Variante**: è la codice variante dell'*Articolo*.   
+>> **Lotto**: è il codice del lotto interno utilizzato.   
+>> **Numero seriale**:  è il numero seriale utilizzato.   
 >   
 > **Quantità**   
 >> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo*.   
@@ -357,6 +359,7 @@ L'elenco si compone delle seguenti informazioni:
 
 
 ### Soggetti coinvolti   
+
 Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Difetto" selezionato.   
 L'elenco si compone delle seguenti informazioni:   
 > **Sequenza**: è la *Sequenza* di visualizzazione dei "Soggetti coinvolti*; viene proposto un progressivo con la possibilità di essere variato.   
@@ -385,10 +388,12 @@ L'elenco si compone delle seguenti informazioni:
 
 
 ### Extra data   
+
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Difetto* selezionato.   
 
 
 ### Documenti allegati   
+
 In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Difetto* selezionato.   
 
 
