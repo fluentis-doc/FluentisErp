@@ -1,19 +1,19 @@
 ---
-title: Differenze inventariali
+title: Diferenţe inventar
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-Il report "Differenze inventariali" di Fluentis è uno strumento fondamentale per il monitoraggio delle discrepanze tra giacenze fisiche e giacenze logiche all'interno del magazzino. Consente agli utenti di identificare e analizzare le differenze emerse durante le fasi di inventario, permettendo così una corretta gestione delle scorte e una tempestiva rettifica delle registrazioni.
+:::important Utilizare
+Raportul este un instrument esențial pentru monitorizarea discrepanțelor între stocurile faptice și cele scriptice din cadrul gestionării. Permite utilizatorilor să identifice și să analizeze diferențele apărute în timpul fazelor de inventariere, permițând astfel o gestionare corectă a stocurilor și o rectificare promptă a înregistrărilor.
 
-Ogni differenza evidenziata è accompagnata dalle informazioni relative agli articoli coinvolti, consentendo agli utenti di comprendere l'origine delle discrepanze e di adottare le necessarie misure correttive.
+Fiecare diferență evidențiată este însoțită de informații referitoare la articolele implicate, permițând utilizatorilor să înțeleagă originea discrepanțelor și să adopte măsurile corective necesare.
 
-La generazione automatica delle registrazioni di rettifica facilita ulteriormente il processo, garantendo che la contabilizzazione delle differenze sia conforme alle normative vigenti. In questo modo, il report non solo contribuisce all'efficienza operativa, ma assicura anche la compliance normativa nelle pratiche di gestione delle scorte.
+Generarea automată a înregistrărilor de rectificare facilitează și mai mult procesul, astfel încât contabilizarea diferențelor este conformă cu reglementările în vigoare. În acest fel, raportul contribuie nu doar la eficiența operațională, ci asigură și respectarea normelor în practicile de gestionare a stocurilor.
 :::
 
-La stampa permette all'utente di visualizzare un report contenente le informazioni relative alle differenze inventariali filtrate.
-Oltre ai dati del magazzino, codice articolo / variante, lotto, ubicazione, numero / anno commessa e cliente / fornitore, sono riportati anche i valori di giacenza fisica e logica dei singoli articoli, inoltre è anche specificata la causale di magazzino che verrà utilizzata per la creazione del movimento di rettifica positiva o negativa a seconda dei casi.
+Form-ul permite utilizatorului să vizualizeze un raport conținând informațiile referitoare la diferențele inventariale filtrate.  
+Pe lângă datele din gestiune, cod articol / variantă, lot, locație, număr / an comandă și client / furnizor, sunt menționate și valorile stocului faptic și scriptic al fiecărui articol, precum și șablonul de gestiune care va fi utilizat pentru crearea mișcării de rectificare (pozitivă sau negativă).
 
-Dopo l'inserimento dei filtri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+După introducerea filtrului dorit, se pot tipări rapoarte standard sau personalizate (în baza setărilor efectuate). În cazul în care se dorește tipărirea unui raport personalizat, este necesar să fie ales din lista care se află în  *parametrii raport*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Pentru toate celelalte informații care nu sunt detaliate în acest document referitor la funcționarea comună a rapoartelor, vă rugăm să consultați link-ul: [Previzualizare și imprimare](/docs/guide/common/operations-with-data/reports).

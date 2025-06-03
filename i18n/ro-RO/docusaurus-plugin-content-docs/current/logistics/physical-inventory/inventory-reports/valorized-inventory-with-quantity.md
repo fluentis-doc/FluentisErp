@@ -1,82 +1,81 @@
 ---
-title: Inventario quantità valorizzato
+title: Inventar Cantitativ Valorizat
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-Il report "Inventario quantità valorizzato" di Fluentis rappresenta uno strumento chiave per la gestione e il monitoraggio delle giacenze di magazzino, permettendo alle aziende di avere una visione chiara e dettagliata delle proprie scorte. Attraverso questo report, gli utenti possono accedere a informazioni complete non solo sulle quantità fisiche degli articoli presenti in magazzino, ma anche sul loro valore, ottenuto mediante diverse logiche di valorizzazione come costo medio, costo ultimo, FIFO e LIFO.
+:::important Utilizare
+Raportul "Inventar" (Inventario quantità valorizzato) din Fluentis reprezintă un instrument esențial pentru gestionarea și monitorizarea stocurilor de magazin, permițând companiilor să aibă o viziune clară și detaliată asupra propriilor stocuri. Prin acest raport, utilizatorii pot accesa informații complete nu doar despre cantitățile fizice ale articolelor prezente în magazin, ci și despre valoarea acestora, obținută prin diverse logici de evaluare, cum ar fi costul mediu, costul de ultimă achiziție, FIFO și LIFO.
 
-La generazione del report avviene tramite filtri personalizzabili, che consentono di visualizzare dati specifici per magazzino, articolo, categoria merceologica e altro, facilitando l'analisi e la gestione delle scorte. Gli utenti possono anche raggruppare e ordinare i dati in base a parametri significativi, rendendo l'intero processo di controllo inventariale più efficiente e informato.
+Generarea raportului se face prin filtre personalizabile, care permit vizualizarea de date specifice pentru magazin, articol, categorie de produse și altele, facilitând analiza și gestionarea stocurilor. Utilizatorii pot, de asemenea, să grupeze și să ordoneze datele în funcție de parametrii semnificativi, ceea ce face ca întregul proces de control al inventarului să fie mai eficient și informat.
 
-Questo report non solo supporta le decisioni operative quotidiane, ma è anche cruciale per garantire la compliance normativa e per effettuare analisi finanziarie e di performance all'interno dell'organizzazione.
+Acest raport nu doar că sprijină deciziile operaționale zilnice, dar este și crucial pentru a asigura conformitatea normativă și pentru a realiza analize financiare și de performanță în cadrul organizației.  
 :::
 
-La stampa permette all'utente di visualizzare un report contenente le informazioni relative all'inventario.
-La form si compone di una parte superiore contenente una serie di filtri (magazzino, causale, artciolo/variante, tipo articolo, categoria fiscale, categoria merceologica,...) che permettono di visualizzare i dati desiderati.
+Tipărirea permite utilizatorului să vizualizeze un raport ce conține informațiile referitoare la inventar.  
+Form-ul se compune dintr-o parte superioară conținând o serie de filtre (magazin, cauză, articol/variantă, tip articol, categorie fiscală, categorie de produse,...) care permit vizualizarea datelor dorite.
 
-Inoltre, tramite una serie di box dedicati è possibile:
+În plus, printr-o serie de casete dedicate, este posibil:
 
-- raggruppare i dati per articolo o magazzino;      
-- ordinarli per articolo, caratteristica, descrizione e categoria merceologica;     
-- avere un dettaglio per variante, ubicazione, commessa, lotto o cliente/fornitore;       
-- visualizzare gli articoli con giacenza positiva, nulla o negativa.
+- să grupeze datele pe articol sau pe magazin;  
+- să le ordoneze pe articol, caracteristică, descriere și categorie de produse;  
+- să obțină detalii pe variantă, locație, comision, lot sau client/furnizor;  
+- să vizualizeze articolele cu stoc pozitiv, zero sau negativ.
 
-Attivando il box **Con valorizzazione al**, verrà inserito all'interno del report dell'inventario anche il valore del singolo articolo sulla base dei seguenti flags:
+Activând caseta **Cu evaluare la** (Con valorizzazione al), se va adăuga în raportul de inventar și valoarea fiecărui articol pe baza următoarelor opțiuni: 
 
-- **Costo medio**: se attivo, gli articoli vengono valorizzati con il costo medio calcolato in base ai movimenti di magazzino (se il flag **Da anagrafica articolo** è disabilitato);    
-- **Costo ultimo**: se attivo, gli articoli vengono valorizzati con il costo ultimo calcolato in base ai movimenti di magazzino (se il flag **Da anagrafica articolo** è disabilitato);    
-- **FIFO a scatti annuali**: se attivo, gli articoli vengono valorizzati con la logica FIFO a scatti annuali;        
-- **LIFO a scatti annuali**: se attivo, gli articoli vengono valorizzati con la logica LIFO a scatti annuali;        
-- **Area gestionale**: se attivo, gli articoli vengono valorizzati in base all'area gestionale indicata per quel magazzino all'interno della tabella [Magazzini](/docs/configurations/tables/logistics/warehouses/);          
-- **Da costo effettivo lotti**: se attivo, gli articoli vengono valorizzati con il valore indicato in anagrafica lotti;      
-- **Da anagrafica articolo**: se attivo, in concomitanza dei flag **Costo medio** o **Costo ultimo**, gli articoli vengono valorizzati rispettivamente a costo medio o ultimo, ma sulla base dei relativi costi inseriti nell'anagrafica articolo;         
-- **Storicizzazione inventario**: se attivo, i dati dell'elaborazione verranno salvati nello [Storico magazzino](/docs/logistics/physical-inventory/warehouse-history);      
-- **Da storicizzazione**: se attivo, gli articoli vengono valorizzati con i valori presenti nella [Storico magazzino](/docs/logistics/physical-inventory/warehouse-history) con data pari a quella indicata nel campo **Data costo storico**;      
-- **Data costo storico**: si abilita solo se il flag **Da storicizzazione** è attivo, permette di inserire la data del costo storico da utilizzare per la valorizzazione.
+- **Cost mediu**: dacă este activ, articolele vor fi evaluate cu costul mediu calculat pe baza mișcărilor din magazin (dacă flag-ul **Din registrul articolului (Da anagrafica articolo)** este dezactivat);  
+- **Cost de ultimă achiziție**: dacă este activ, articolele vor fi evaluate cu costul de ultimă achiziție calculat pe baza mișcărilor din magazin (dacă flag-ul **Din registrul articolului (Da anagrafica articolo)** este dezactivat);  
+- **FIFO anual**: dacă este activ, articolele vor fi evaluate conform logicii FIFO anual;  
+- **LIFO anual**: dacă este activ, articolele vor fi evaluate conform logicii LIFO anual;  
+- **Zona de gestionare**: dacă este activ, articolele vor fi evaluate pe baza zonei de gestionare specificate pentru acel magazin în tabelul [Magazine](/docs/configurations/tables/logistics/warehouses/);  
+- **Din costul efectiv al loturilor**: dacă este activ, articolele vor fi evaluate cu valoarea indicată în registrul loturilor;  
+- **Din registrul articolului**: dacă este activ, în combinație cu flag-urile **Cost mediu** sau **Cost de ultimă achiziție**, articolele vor fi evaluate, respectiv, la costul mediu sau ultim, dar pe baza costurilor corespunzătoare introduse în registrul articolului;  
+- **Storicizarea inventarului**: dacă este activ, datele procesării vor fi salvate în [Istoricul magazinului](/docs/logistics/physical-inventory/warehouse-history);  
+- **Din istoric**: dacă este activ, articolele vor fi evaluate cu valorile prezente în [Istoricul magazinului](/docs/logistics/physical-inventory/warehouse-history) cu data egală cu cea indicată în câmpul **Data costului istoric**;  
+- **Data costului istoric**: se activează doar dacă flag-ul **Din istoric** este activ, permițând introducerea datei costului istoric care va fi utilizat pentru evaluare.
 
-Dopo l'inserimento dei parametri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+După introducerea parametrilor doriti, este posibil să tipăriți rapoarte standard sau personalizate (după maparea în gestionarea tipăriturilor). În cazul în care doriți să tipăriți un raport personalizat, trebuie să-l alegeți din meniu în parametrii de tipărire.
 
-A standard sono disponibili i seguenti report:
+Standard sunt disponibile următoarele rapoarte:
 
-- **Stampa FIFO**: si tratta di un report con logica FIFO per gli inventari (da utilizzare in concomitanza dell'utilizzo del flag **FIFO a scatti annuali**);              
-- **Stampa inventario**: si tratta di un report standard per gli inventari;       
-- **Stampa LIFO**: si tratta di un report con logica LIFO per gli inventari (da utilizzare in concomitanza dell'utilizzo del flag **LIFO a scatti annuali**).
+- **Tipărire FIFO**: este un raport cu logică FIFO pentru inventare (de utilizat în combinație cu utilizarea flag-ului **FIFO anual**);  
+- **Tipărire inventar**: este un raport standard pentru inventare;  
+- **Tipărire LIFO**: este un raport cu logică LIFO pentru inventare (de utilizat în combinație cu utilizarea flag-ului **LIFO anual**).
 
+**LIFO anual**
 
-**LIFO a scatti annuali**
+LIFO anual, efectuat fără a considera flag-urile *Din registrul articolelor* sau *Zona de gestionare*, funcționează astfel:
 
-Il LIFO a scatti annuali eseguito senza considerare il flag *Da Anagrafica Articoli* o *Area Gestionale* funziona in questo modo: 
+În anul curent, adică de la ultima dată de închidere până la data *Inventar până la* se calculează stocul și costul mediu.
 
-Nell’anno in corso, cioè dalla data ultima chiusura alla data *Inventario Al* viene calcolata la giacenza e il costo medio. 
+Pentru calculul costului mediu ponderat se iau în considerare toate mișcările articolelor cu flag-ul de interes fiscal activ și înregistrările din magazin cu cauză care actualizează costul mediu și care au interes fiscal.
 
-Per il calcolo del costo medio ponderato vengono considerati  tutti i movimenti di articoli con flag interesse fiscale attivo delle registrazioni di magazzino con causale che aggiorna il costo medio e di interesse fiscale.
+Pentru calculul stocului se iau în considerare toate mișcările articolelor cu flag-ul de interes fiscal activ și înregistrările din magazin cu cauză de interes fiscal. 
 
-Per il calcolo della giacenza vengono considerati  tutti i movimenti di articoli con flag interesse fiscale attivo delle registrazioni di magazzino con causale di interesse fiscale. 
+Obținut stocul la sfârșitul perioadei, se verifică stratificările LIFO în *Istoricul magazinului*, calculându-se înapoi stocurile fiecărui an, apoi pentru fiecare an стocul se multiplică cu costul mediu al anului și, adunând valorile fiecărui an din stratificare, se obține costul FIFO pentru fiecare articol.  
+Dacă în *Istoricul magazinului* sunt ani cu stoc 0, căutarea stratificărilor LIFO se oprește și se valorifică de la anul stratificat următor.
 
-Ottenuta la giacenza a fine periodo vengono verificati le stratificazioni LIFO nello *Storico di magazzino*, andando a calcolare all’indietro le rimanenza di ogni anno, poi per ogni anno si moltiplica la rimanenza dell’anno per il costo medio dell’anno e sommando i valori di ogni anno della stratificazione si ottiene il costo FIFO di ogni articolo. 
-Se nello *Storico di magazzino* ci sono anni con rimanenza 0 la ricerca delle stratificazioni LIFO si ferma e si valorizza dall’anno stratificato successivo.
-
-:::note Nota
-Per tutti gli anni precedenti all'ultima chiusura di magazzino viene considerata la giacenza a fine anno, senza suddividerla per magazzino.   
-Di conseguenza, per le stampe LIFO e FIFO è possibile applicare il filtro di *raggruppamento per magazzino* solo per l'anno corrente, ovvero per tutte le registrazioni effettuate dopo la data di ultima chiusura del magazzino.
+:::note Notă  
+Pentru toți anii anteriori ultimei închideri a magazinului se consideră stocul de la sfârșitul anului, fără a-l împărți pe magazine.  
+Prin urmare, pentru tipăriturile LIFO și FIFO este posibil să se aplice filtrul de *grupare pe magazin* doar pentru anul curent, adică pentru toate înregistrările efectuate după ultima dată de închidere a magazinului.  
 :::
 
-Facciamo un esempio:
+Să luăm un exemplu:
 
-la chiusura di magazzino è con data 31/12/2023
-oggi facciamo la stampa inventario valorizzato dell’articolo A che ha giacenza al 23/05/2024 di 170 e costo medio al 23/05/2024 di 3 euro
-Nello storico per l’articolo A troviamo:
+închiderea magazinului este cu data 31/12/2023  
+astăzi facem tipărirea inventarului valorificat pentru articolul A care are stoc la 23/05/2024 de 170 și costul mediu la 23/05/2024 de 3 euro  
+În istoric pentru articolul A găsim:
 
-| Anno | Rimanenza | Costo medio |
+| An | Stoc | Cost mediu |
 | :-- | :-: | :-: |
 | 2020 | 100 | 2 |
-| 2021 |   0 | 0 |
+| 2021 |  0 | 0 |
 | 2022 |  60 | 1,5 |
-| 2023 | 100 | 2,5 |         
+| 2023 | 100 | 2,5 |
 
-Il calcolo viene fatto così:
-170 di oggi sono sicuramente 100 del 2023, dei 100 del 2023 60 sono sicuramente del 2022, non possono essere del 2021 perché la giacenza era 0.
-Allora il costo LIFO al 23/05/2024 è:
+Calculul se face astfel:  
+170 de astăzi sunt cu siguranță 100 din 2023, din cele 100 din 2023, 60 sunt cu siguranță din 2022, nu pot fi din 2021 pentru că stocul era 0.  
+Astfel, costul LIFO la 23/05/2024 este:  
 ((60 * 1,5) + (40 * 2,5) +(70 * 3)) /170 = 2,35
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Pentru orice alte detalii neacoperite în acest document privind funcționarea comună a form-urilor de tipărire, vă rugăm să consultați următorul link [Previzualizare și tipărire](/docs/guide/common/operations-with-data/reports).
