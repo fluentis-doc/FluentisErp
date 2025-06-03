@@ -13,7 +13,7 @@ Le *Note di addebito* verranno create con la **Data creazione** presente sotto l
 Selezionando una o più *Non conformità* la valorizzazione può essere eseguita alla pressione del pulsante **Creazione fatture da Reclami**.   
 
 ## Parametri 
-Nel tabulatore è possibile inserire dei parametri da utilizzare nella procedura e durante la valorizzazione nella gestione della [Non conformità](quality/claims-and-non-compliance/non-compliances/non-compliance).   
+Nel tabulatore è possibile inserire dei parametri da utilizzare nella procedura e durante la valorizzazione nella gestione della [Non conformità](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance).   
 Le informazioni gestite sono:   
 > **Inserimento in fattura**: expander dove sono presenti le indicazioni di:   
 >> **Non conformità con cambi diversi**: se indicato permette di inserire, in una stessa *Nota di addebito*, *Non conformità* con cambi diversi.   
