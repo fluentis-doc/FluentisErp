@@ -52,9 +52,9 @@ If both **Mandatory Operator** and **Mandatory Password** flags are enabled, the
 **Allow Overlapping Reporting**: if active, it allows the phases of a production order to be declared without following the indicated sequence in the cycle; if not activated, overlapping phases or declaring phases without following the cycle's sequence is not possible;    
 **Enable multi-phase**: if active, it allows for declarations of multiple phases simultaneously.
 In this case, time is divided among the various phases as follows: if a quantity (produced or scrapped) is declared, then the time for each phase is calculated using the following formula:              
-    *(Declared time / total quantity (produced + scrapped)) * declared quantity (produced + scrapped) for the individual phase = Phase time*           
+"**(Declared time / total quantity (produced + scrapped)) x declared quantity (produced + scrapped) for the individual phase = Phase time**"           
 If no quantity is declared, but only time, then it is calculated using the formula:              
-    *Declared time / number of phases = Phase time*      
+"**Declared time / number of phases = Phase time**"      
 **Maximum number of phases**: allows indicating the maximum number of phases that can be declared simultaneously;    
 **Manual time entry**: if active, it enables the operator to input working time;     
 **Time Proposed**: if active, it enables the automatic proposal of working time input;             
