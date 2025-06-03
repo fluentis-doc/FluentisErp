@@ -808,79 +808,79 @@
     "description": "The label for category DDT/Bolle di vendita in sidebar sales"
   },
   "sidebar.sales.category.Ricerca DDT": {
-    "message": "Search Delivery Notes",
+    "message": "Buscar Notas de Entrega",
     "description": "The label for category Ricerca DDT in sidebar sales"
   },
   "sidebar.sales.category.Gestione DDT/Bolle": {
-    "message": "Insert Delivery Notes",
+    "message": "Insertar notas de entrega",
     "description": "The label for category Gestione DDT/Bolle in sidebar sales"
   },
   "sidebar.sales.category.Scarico DDT da magazzino": {
-    "message": "Warehouse Delivery Note Unload",
+    "message": "Nota de Entrega de Almacén Descargar",
     "description": "The label for category Scarico DDT da magazzino in sidebar sales"
   },
   "sidebar.sales.category.Contabilizzazione DDT/Bolle": {
-    "message": "Delivery Note Accounting",
+    "message": "Contabilidad de notas de entrega",
     "description": "The label for category Contabilizzazione DDT/Bolle in sidebar sales"
   },
   "sidebar.sales.category.Commesse di vendita": {
-    "message": "Sales Job Orders",
+    "message": "Órdenes de trabajo de ventas",
     "description": "The label for category Commesse di vendita in sidebar sales"
   },
   "sidebar.sales.category.Gestione commessa": {
-    "message": "Insert Job Order",
+    "message": "Insertar orden de trabajo",
     "description": "The label for category Gestione commessa in sidebar sales"
   },
   "sidebar.sales.category.Crea fattura di vendita": {
-    "message": "Create Sales Invoice",
+    "message": "Crear factura de venta",
     "description": "The label for category Crea fattura di vendita in sidebar sales"
   },
   "sidebar.sales.category.Crea richiesta intervento": {
-    "message": "Create Intervention Request",
+    "message": "Crear solicitud de intervención",
     "description": "The label for category Crea richiesta intervento in sidebar sales"
   },
   "sidebar.sales.category.Agenti": {
-    "message": "Agents",
+    "message": "Agentes",
     "description": "The label for category Agenti in sidebar sales"
   },
   "sidebar.sales.category.Tabelle": {
-    "message": "Tables",
+    "message": "Tablas",
     "description": "The label for category Tabelle in sidebar sales"
   },
   "sidebar.sales.category.Inserimento liquidazione": {
-    "message": "Insert Settlement",
+    "message": "Insertar liquidación",
     "description": "The label for category Inserimento liquidazione in sidebar sales"
   },
   "sidebar.sales.category.Creazione automatica liquidazione provvigioni": {
-    "message": "Automatic Creation of Commissions Settlement",
+    "message": "Creación automática de liquidación de comisiones",
     "description": "The label for category Creazione automatica liquidazione provvigioni in sidebar sales"
   },
   "sidebar.sales.category.Crea compenso percipiente": {
-    "message": "Creation of Professional Man Compensation",
+    "message": "Creación del Esquema de Compensación para Profesionales Masculinos",
     "description": "The label for category Crea compenso percipiente in sidebar sales"
   },
   "sidebar.sales.category.Listini di Vendita": {
-    "message": "Sales Price List",
+    "message": "Lista de precios de venta",
     "description": "The label for category Listini di Vendita in sidebar sales"
   },
   "sidebar.sales.category.Offerte": {
-    "message": "Offers",
+    "message": "Ofertas",
     "description": "The label for category Offerte in sidebar sales"
   },
   "sidebar.sales.category.Ordini cliente": {
-    "message": "Sales orders",
+    "message": "Órdenes de venta",
     "description": "The label for category Ordini cliente in sidebar sales"
   },
   "sidebar.sales.category.Inserimento nuovo ordine cliente": {
-    "message": "Create new sales orders",
+    "message": "Creando nuevas órdenes de venta",
     "description": "The label for category Inserimento nuovo ordine cliente in sidebar sales"
   },
   "sidebar.sales.category.Definizione politiche sconti": {
-    "message": "Policies discount definition",
+    "message": "Definición de Políticas de Descuento ",
     "description": "The label for category Definizione politiche sconti in sidebar sales"
   },
   "sidebar.sales.category.Packing list": {
-    "message": "Packing list",
+    "message": "Lista de Empaque",
     "description": "The label for category Packing list in sidebar sales"
   },
   "sidebar.treasury.category.DocFinance": {
@@ -888,39 +888,39 @@
     "description": "The label for category DocFinance in sidebar treasury"
   },
   "sidebar.treasury.category.Pagamenti fornitori": {
-    "message": "Vendors Payments",
+    "message": "Pagos a proveedores",
     "description": "The label for category Pagamenti fornitori in sidebar treasury"
   },
   "sidebar.treasury.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar treasury"
   },
   "sidebar.treasury.category.Creazione automatica pagamento fornitori": {
-    "message": "Automatic Vendor Payments Creation",
+    "message": "Creación Automática de Pagos a Proveedores",
     "description": "The label for category Creazione automatica pagamento fornitori in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizza": {
-    "message": "Accounting",
+    "message": "Contabilidad",
     "description": "The label for category Contabilizza in sidebar treasury"
   },
   "sidebar.treasury.category.Rischio cliente": {
-    "message": "Customer Risk",
+    "message": "Riesgo del Cliente",
     "description": "The label for category Rischio cliente in sidebar treasury"
   },
   "sidebar.treasury.category.Lock manager": {
-    "message": "Lock Manager",
+    "message": "Administrador de Bloqueos",
     "description": "The label for category Lock manager in sidebar treasury"
   },
   "sidebar.treasury.category.Cash flow": {
-    "message": "Cash Flow",
+    "message": "Flujo de Caja",
     "description": "The label for category Cash flow in sidebar treasury"
   },
   "sidebar.treasury.category.Portofoglio Effetti": {
-    "message": "Bills Holding",
+    "message": "Facturas en Espera de Pago",
     "description": "The label for category Portofoglio Effetti in sidebar treasury"
   },
   "sidebar.treasury.category.Riba/Rid/Lcr": {
-    "message": "Search Cash Order/Rid/Lcr",
+    "message": "Buscar Orden de Efectivo / RID / LCR",
     "description": "The label for category Riba/Rid/Lcr in sidebar treasury"
   },
   "sidebar.treasury.category.Generazione Riba/Rid/Lcr": {
