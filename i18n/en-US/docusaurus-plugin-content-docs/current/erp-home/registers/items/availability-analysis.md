@@ -76,4 +76,9 @@ Regarding the description of common functionalities in all forms present in the 
 *Specific button:*
 > **Expand/Collapse Items Grid**: a button that allows you to expand or collapse the result grids. 
 
+:::note Creating profiles   
+In this form, profiles can only be created on the filter and on the total tab.  
+In the warehouse tabs, profiles cannot be created as they are built and destroyed dynamically.  
+:::
+
 For everything not detailed in this document regarding the common functioning of forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).
