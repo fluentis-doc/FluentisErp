@@ -25,6 +25,10 @@ Once the reminder type is saved, it is possible to create its various levels usi
 
 **Late days**: indication of the days of delay that must elapse before reminding about the item.
 
+:::tip[Info]
+In the procedure for [***Dunning Letters Issue***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro), reminders with **Negative Delayed Days** can also be managed. Typically, negative days are set to create a notice before the deadline. The procedure for [*Dunning Letters Automatic Issue*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) **does not** support the negative parameter.
+:::
+
 **Days**: the number of days of expiration of the reminder and whether these are to be counted from the creation date or from the expiration date of the previous reminder.
 
 **From the date of previous transaction**: reference date for levels following the first.

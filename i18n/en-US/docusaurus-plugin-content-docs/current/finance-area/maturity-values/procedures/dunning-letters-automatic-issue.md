@@ -14,6 +14,11 @@ These criteria are set in the Parameters section through the use of flags. It is
 
 At the end of the creation, the dunned maturity values are visible in the relevant form, while the dunning letters can be printed and sent using the specific print option (Finance > Mat. Values > Prints > DUnning Letters)
 
+:::danger[Attention]
+Unlike the manual reminder generation procedure, **in this procedure it is NOT possible to manage** reminders with a **Negative Days of Delay**. Typically, negative days are set to create a notice before the due date. In this case, **it is necessary to use** the manual procedure [***Dunning Letters Issue***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro).
+:::
+
+
 | Function | Extended Description |
 | --- | --- |
 | Save | Button to save the Dunning Letters Issue. |
