@@ -1,17 +1,16 @@
 ---
-title: Differenze inventariali
+title: Diferențe inventar
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso **Logistica > Inventari fisici > Differenze inventariali**.
+Form-ul se deschide prin parcursul **Logistică > Inventare faptice > Diferențe inventar**.
 
-La procedura permette di scegliere la **Data elaborazione** mentre ricerca in automatico l'ultimo inventario non chiuso. E' possibile effettuare l'allineamento delle giacenze ad una certa data spuntando la voce **Calcola differenze inventariali alla data** giacenza e inserendo sul campo **Data calcolo giacenza** la data desiderata. E' inoltre possibile stabilire la data della registrazione di magazzino.
+Procedura permite selectarea **Datei de elaborare** și a inventarului care va fi considerat dintre cele care nu sunt încă *închise*. Se poate efectua alinierea stocurilor la o anumită dată, bifând opțiunea **Calculează diferențe la inventar în data** și introducând data în câmpul **Dată calcul stoc**. De asemenea, se poate stabili data înregistrării de gestiune.
 
-*Pulsante specifico*  
-> **Creazione registrazione**: richiama la procedura per l'allineamento delle giacenze.
+#### Buton specific  
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare l'elenco degli articoli inventariati all'interno della griglia **Differenze inventariali**.
+> **Creare înregistrare**: apelează procedura pentru alinierea stocurilor.
 
-*Nota*: per informazioni dettagliate sulle causali utilizzate dalla procedura, fare riferimento alle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) con il flag *Gestione inventario fisico* attivo.
+După ce ați inserat toate filtrele dorite, faceți clic pe butonul **Caută** pentru a vizualiza lista articolelor inventariate în tabelul **Diferențe inventar**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+*Notă*: pentru informații detaliate despre șabloanele utilizate de procedură, consultați [Șabloane de gestiune](/docs/configurations/tables/logistics/warehouse-templates) care au opțiunea *Gestionare inventar faptic* activă.

@@ -1,57 +1,48 @@
 ---
-title: Valorizzazione magazzino
+title: Valorizare Gestiune
 sidebar_position: 6
 ---
 
-:::important A cosa serve
-L'introduzione alla valorizzazione di magazzino di Fluentis è un elemento fondamentale nella gestione delle scorte e nella determinazione del valore dei beni stoccati. Questa funzionalità consente agli operatori di effettuare chiusure di magazzino a una data specificata, registrando le rimanenze e consentendo l'allineamento delle informazioni logistiche con quelle contabili, garantendo così una gestione accurata delle risorse e dei costi associati.
-
-La procedura di valorizzazione permette di configurare diversi parametri, come la causale di movimentazione per le rimanenze, e offre la flessibilità di selezionare i criteri di valorizzazione adeguati, come il costo ultimo o il costo medio. In questo modo, è possibile tenere conto delle movimentazioni effettuate nel corso dell'anno per ciascun magazzino, ottenendo così una panoramica dettagliata e aggiornata del valore delle scorte.
-
-Inoltre, la procedura non solo esegue la chiusura di magazzino, ma crea automaticamente una registrazione di apertura per il giorno successivo, garantendo la continuità delle operazioni logistiche. Gli utenti possono anche monitorare le chiusure effettuate attraverso uno storico, che riporta i dati relativi ai costi e alle quantità valorizzate, facilitando così analisi e decisioni strategiche per il miglioramento delle performance aziendali.
+:::important Utilizare
+Procedura este un element fundamental în gestionarea stocurilor și determinarea valorii bunurilor stocate. Permite operatorilor să efectueze închideri de gestiune la o dată specificată, înregistrând stocurile și facilitând alinierea informațiilor logistice cu cele contabile, asigurând astfel o gestionare precisă a resurselor și a costurilor asociate.
 :::
 
-La procedura permette di effettuare la chiusura di magazzino ad una certa data che deve essere inserita dall'utente nel campo **Data chiusura**.
-Di default, come **Data chiusura** è proposta la data odierna.
-Inoltre, la procedura creerà anche un movimento di apertura con tutte le rimanenze con data uguale a **Data chiusura** più un giorno, utilizzando la causale presente nelle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) con il flag **Rimanenze** attivo.
+**Valorizare Gestiune** permite efectuarea închiderii de gestiune la data inserată de utilizator în câmpul **Dată închidere** (implicit aceasta este propusă ca fiind data curentă).    
+În plus, procedura creează și o mișcare de deschidere cu toate stocurile care au data egală cu **Data închiderii** plus o zi, utilizând șablonul specificat în [Șabloanele de gestiune](/docs/configurations/tables/logistics/warehouse-templates) cu opțiunea **Stocuri** activată.
 
-*Pulsanti specifici*  
-> **Chiusura**: permette di lanciare la procedura di chiusura che effettua una serie di controlli sulla congruenza dei dati di magazzino segnalando eventuali errori che dovranno poi essere corretti manualmente dall'operatore prima di procedere nuovamente; nel caso in cui non vi sia nessun errore la procedura effettuerà la chiusura di magazzino alla **Data chiusura** e l'apertura il giorno successivo con le rimanenze;             
-> **Crea valorizzazione**: è utilizzato nelle localizzazioni estere tipo Romania/Croazia dove i movimenti di magazzino devono essere registrati anche in contabilità (vedasi documentazione sottostante);      
-> **Ripristina chiusura**: permette di ripristinare l'ultima chiusura effettuata;     
-> **Allineamento con la contabilità**: è utilizzato nelle localizzazioni estere tipo Romania/Croazia dove i movimenti di magazzino devono essere registrati anche in contabilità (vedasi documentazione sottostante).
+#### Butoane specifice  
+> - **Închidere**: permite inițierea procedurii de închidere care efectuează o serie de verificări asupra coerenței datelor de gestiune, semnalând eventualele erori care apoi trebuie corectate manual de către operator înainte de a continua. În cazul în care nu există erori, procedura va efectua închiderea gestiunii la **Data închiderii** și deschiderea în ziua următoare cu stocurile;             
+> - **Creează valorizare**: permite ca mișcările de gestiune să fie înregistrate și în contabilitate (vezi documentația de mai jos);      
+> - **Restaurează închiderea**: permite restaurarea ultimei închideri efectuate;     
+> - **Aliniere cu contabilitatea**: permite ca mișcările de gestiune să fie înregistrate înregistrate și în contabilitate (vezi documentația de mai jos).
 
-:::note CONSIGLIATO
-L’attività di chiusura del magazzino è consigliata in particolare nel caso in cui vi sia un elevato numero di movimenti, perchè questa permette di mantenere nell’archivio i movimenti per una consultazione, ma allo stesso tempo le elaborazioni di calcolo giacenza, disponibilità e costi vengono snellite in quanto i calcoli partiranno dal giorno successivo all’ultima chiusura effettuata.
+:::note Recomandare
+Activitatea de închidere a gestiunii este recomandată în special în cazul în care există un număr mare de mișcări, deoarece aceasta permite păstrarea mișcărilor în arhivă pentru consultare, dar și simplificarea calculării stocului, disponibilității și costurilor deoarece calculele vor porni din ziua următoare ultimei închideri efectuate.
 :::
 
-<u>Le seguenti procedure sono specifiche per localizzazioni estere come Romania e Croazia.</u> 
+## Creează valorizare
 
-## Crea valorizzazione
+Procedura **Creează valorizare** calculează prețurile și modifică valorile în mișcările de gestiune.        
+Este utilizată în cazul documentelor de gestiune incomplete, nefinalizate sau neconciliate.     
+Acest lucru se întâmplă în principal din cauza datelor insuficiente (preț și cantitate) în timpul inserării documentelor de gestiune, erori ale furnizorului sau inserții greșite din partea utilizatorului, întârzieri în livrarea documentelor de gestiune sau modificări ulterioare în documentele existente.     
+Inițiind această procedură, aplicația recalculează valorile noi ale articolelor (FIFO) și le introduce direct în documentul existent.      
+Așadar, pe scurt, procedura modifică valorile în documentele existente, nu creează documente noi care să elimine/să crească valoarea. Ca urmare, procedura este ireversibilă și nu este posibil să se restaureze datele existente înainte de executarea procedurii.      
+Această funcționalitate se aplică în principal perioadei în care se efectuează valorizarea.      
+Recalcularea (FIFO) și modificarea valorilor în documente încep de la data închiderii gestiunii.     
 
-La procedura **Crea valorizzazione** calcola i prezzi e modifica i valori nei movimenti di magazzino.        
-Viene utilizzata nei casi di documenti di magazzino incompleti, non finalizzati o non conciliati.     
-Questo accade principalmente a causa di dati insufficienti (prezzo e quantità) durante l'inserimento dei documenti di magazzino, errori del fornitore o inserimenti errati dell'utente, ritardi nella consegna dei documenti di magazzino o inserimenti successivi di modifiche nei documenti esistenti.     
-Avviando questa procedura, l'applicazione ricalcola nuovamente i nuovi valori degli articoli (FIFO) e li inserisce direttamente nel documento esistente.      
-Quindi, ricapitolando, la procedura modifica i valori nei documenti esistenti, non crea nuovi documenti che rimuovono/aumentano il valore. Di conseguenza, la procedura è irreversibile e non è possibile ripristinare i dati esistenti prima dell'esecuzione della procedura.      
-Questa funzionalità si applica principalmente al periodo durante il quale viene eseguita la valorizzazione.      
-Il ricalcolo (FIFO) e la modifica dei valori nei documenti iniziano dalla data di chiusura del magazzino.     
-
-:::danger ATTENZIONE
-È importante prestare molta attenzione alle impostazioni nei [Parametri iniziali magazzino](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters), specialmente se la data di chiusura del magazzino è nell'anno precedente.       
+:::danger ATENȚIE
+Este important să se acorde o atenție deosebită setărilor din [Parametrii inițiali gestiune](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters), mai ales dacă data închiderii gestiunii aparține anului anterior.       
 :::
 
-Ad esempio, la Data inizio è il 01.10.2023, mentre la data odierna potrebbe essere, ad esempio, il 28.3.2024.       
-Avviando la procedura **Crea valorizzazione**, i valori nei documenti di magazzino sarebbero modificati dal 01.10.2023 fino alla data odierna. Quindi, poiché il 2023 è passato ed è probabilmente già chiuso finanziariamente, i valori nei documenti di magazzino dal 1.10.2023 al 31.12.2023 verrebbero modificati, alterando notevolmente i report già conclusi per il 2023.      
+De exemplu, Data de început este 01.10.2023, în timp ce data curentă ar putea fi, de exemplu, 28.3.2024.       
+Inițiind procedura **Creează valorizare**, valorile din documentele de gestiune ar fi modificate de la 01.10.2023 până la data curentă. Așadar, deoarece 2023 a trecut și este probabil deja închis financiar, valorile din documentele de gestiune din 01.10.2023 până la 31.12.2023 ar fi modificate, afectând semnificativ rapoartele deja finalizate pentru 2023.      
 
-## Allineamento con la contabilità
+## Aliniere cu contabilitatea
 
-La procedura di **Allineamento con la contabilità** viene eseguita dopo la procedura di **Crea valorizzazione**.        
-Dopo che la procedura di **Crea valorizzazione** è stata completata e i valori nei documenti di magazzino sono stati modificati, è necessario apportare modifiche anche ai documenti contabili correlati.        
-In questa fase, la procedura di **Allineamento con la contabilità** allinea le modifiche apportate dalla valorizzazione del magazzino e modifica i valori nei registri contabili per garantire l'allineamento finanziario con i valori nei documenti di magazzino.       
+Procedura de **Aliniere cu contabilitatea** este efectuată după procedura de **Creează valorizare**.        
+După ce procedura de **Creează valorizare** a fost finalizată și valorile din documentele de gestiune au fost modificate, este necesar să se modifice și documentele contabile aferente.        
+În această fază, procedura de **Aliniere cu contabilitatea** aliniază modificările aduse de valorizarea gestiunii și modifică valorile din registrele contabile pentru a asigura alinierea financiară cu valorile din documentele de gestiune.       
 
-:::danger ATTENZIONE
-Anche questa procedura è irreversibile e modifica gli importi nei documenti esistenti.        
+:::danger Atenție
+De asemenea, această procedură este ireversibilă și modifică sumele din documentele existente.        
 :::
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
