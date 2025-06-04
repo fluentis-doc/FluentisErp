@@ -271,7 +271,8 @@ Sono le informazioni aggiuntive alla riga *Difetto* selezionato. Le informazioni
 
 E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selezionato e si compone delle seguenti informazioni:   
 > **Oggetto**   
->> **Bar code**: è la *Classe articolo*.   
+>> **Bar code**: può essere utilizzato per aggiungere o sostituire l'Articolo, Lotto, Numero seriale e Unità di carico.   
+>> Per tutte le informazioni su come codificare i barcode consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).   
 >> **Classe**: è la *Classe articolo* reclamato.   
 >> **Codice articolo**: è il codice dell'*Articolo* reclamato.   
 >> **Descrizione articolo**: è la descrizione dell'*Articolo* reclamato.   

@@ -108,7 +108,7 @@ Le informazioni gestite sono:
 > **Riferimento documenti**: expander dove sono inseribili i riferimenti a documenti di interesse per la gestione del *Reclamo**:   
 >> **Fattura**: è il riferimento alla *Fattura di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia fatturato il bene o il servizio contestato.   
 >> **D.D.T.**: è il riferimento alla *Bolla di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia venduto il bene o il servizio contestato.   
->> **Ricevimento merce**: è il riferimento al *Ricevimento merce* (*Tipo*, *Anno* e *Numero*), con il quale il mittente renda il bene contestato.   
+>> **Ricevimento merce**: è il riferimento al *Ricevimento merce* (*Tipo*, *Anno* e *Numero*), con il quale il mittente rende il bene contestato.   
 >> **Progetto**: è il riferimento al *Progetto* del bene o del servizio contestato.   
 >> **Nostro riferimento**: annotazioni libere su altri riferimenti a documenti interni.   
 >> **Vostro riferimento**: annotazioni libere su altri riferimenti a documenti del mittente del *Reclamo*.   
