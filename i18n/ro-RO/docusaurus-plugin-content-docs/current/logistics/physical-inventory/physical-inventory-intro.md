@@ -1,42 +1,42 @@
 ---
-title: Introduzione
+title: Introducere 
 sidebar_position: 1
 ---
 
-Il modulo consente all'operatore di creare le liste inventariali, popolarle e confrontare i dati sulle giacenze fisiche con le giacenze logiche. Il sistema, in modo automatico e secondo i parametri inseriti dall'utente, procederà all'allineamento delle giacenze logiche con quelle fisiche allineando quindi il magazzino informatico a quello fisico. Una volta effettuata questa operazione sarà poi possibile passare alla valorizzazione del magazzino.
+Modulul permite operatorului să creeze liste de inventar, să le completeze și să compare datele privind stocurile faptice cu stocurile scriptice. Sistemul, în mod automat și conform parametrilor introduși de utilizator, va alinia stocurile scriptice cu cele faptice. După această operațiune, va fi posibilă valorizarea stocului.
 
-## I documenti gestiti
+## Documente gestionate
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/physical-inventory/physical-inventory-intro">Inventari fisici</Link>
-        <p><Link to="/docs/logistics/physical-inventory/inventory-management/search-physical-inventory" className="bold-link">Inventari fisici</Link></p>
-        <p>Permette agli operatori di creare liste inventariali, effettuare rilevazioni delle giacenze fisiche e confrontare i dati ottenuti con le giacenze logiche presenti nel sistema. Attraverso un processo automatizzato, Fluentis facilita l'allineamento tra le giacenze fisiche e quelle logiche, garantendo così un'accurata ottimizzazione della gestione delle risorse.</p>
-        <p><Link to="/docs/logistics/physical-inventory/stock-difference" className="bold-link">Differenze inventariali</Link></p>
-        <p>Garantisce un efficace allineamento tra le giacenze fisiche e logiche all'interno del magazzino. Questa funzionalità consente agli operatori di gestire e registrare le discrepanze identificate in modo sistematico, assicurando che ogni movimento di magazzino sia tracciato e contabilizzato in modo accurato.</p>
-        <p><Link to="/docs/logistics/physical-inventory/closing-history" className="bold-link">Storico chiusura</Link></p>
-        <p>Consente un accesso ai dati storicizzati relativi alle chiusure di magazzino, permettendo agli operatori di monitorare e analizzare le variazioni delle giacenze nel tempo. Questa funzionalità consente di consultare informazioni dettagliate come il costo ultimo, il costo medio e le giacenze di magazzino, tutte realizzate tramite la procedura di valorizzazione.</p>
-        <p><Link to="/docs/logistics/physical-inventory/warehouse-history" className="bold-link">Storico magazzino</Link></p>
-        <p>Permette agli utenti di consultare i dati storicizzati relativi alle operazioni di magazzino. Questa funzionalità consente di visualizzare un archivio dettagliato delle chiusure e delle valorizzazioni effettuate nel tempo, offrendo la possibilità di analizzare informazioni come il costo ultimo e medio di ciascun articolo, nonché le giacenze specifiche associate a ogni chiusura.</p>
-        <p><Link to="/docs/logistics/physical-inventory/warehouse-valorization" className="bold-link">Valorizzazione magazzino</Link></p>
-        <p>Permette agli operatori di effettuare chiusure di magazzino a una data specificata, registrando le rimanenze e consentendo l'allineamento delle informazioni logistiche con quelle contabili, garantendo così una gestione accurata delle risorse e dei costi associati.</p>
-        <p><Link to="/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity" className="bold-link">Inventario quantità valorizzato</Link></p>
-        <p>Garantisce alle aziende di avere una visione chiara e dettagliata delle proprie scorte. Attraverso questo report, gli utenti possono accedere a informazioni complete non solo sulle quantità fisiche degli articoli presenti in magazzino, ma anche sul loro valore</p>
+###     <Link to="/docs/logistics/physical-inventory/physical-inventory-intro">Inventare faptice</Link>
+        <p><Link to="/docs/logistics/physical-inventory/inventory-management/search-physical-inventory" className="bold-link">Inventare faptice</Link></p>
+        <p>Permite operatorilor să creeze liste de inventar, să releve stocurile faptice și să compare datele obținute cu stocurile scriptice prezente în sistem. Printr-un proces automatizat, Fluentis facilitează alinierea între stocurile faptice și cele scriptice, asigurând astfel o optimizare precisă a gestionării resurselor.</p>
+        <p><Link to="/docs/logistics/physical-inventory/stock-difference" className="bold-link">Diferențe de inventar</Link></p>
+        <p>Asigură alinierea eficientă dintre stocurile faptice și cele scriptice din gestiune. Această funcționalitate permite operatorilor să gestioneze și să înregistreze discrepanțele identificate în mod sistematic, asigurându-se că fiecare mișcare de gestiune este urmărită și contabilizată.</p>
+        <p><Link to="/docs/logistics/physical-inventory/closing-history" className="bold-link">Istoric închideri</Link></p>
+        <p>Permite accesul la datele istorice referitoare la închiderile de gestiune, permițând operatorilor să monitorizeze și să analizeze variațiile stocurilor în timp. Această funcționalitate permite consultarea informațiilor detaliate, cum ar fi costul final, costul mediu și stocurile de gestiune, toate realizate prin procedura de valorizare.</p>
+        <p><Link to="/docs/logistics/physical-inventory/warehouse-history" className="bold-link">Arhivă gestiune</Link></p>
+        <p>Permite utilizatorilor să consulte datele istorice referitoare la operațiunile de gestiune. Această funcționalitate permite vizualizarea unei arhive detaliate a închiderilor și valorizărilor realizate în timp, oferind posibilitatea de a analiza informații precum costul final și mediu pentru fiecare articol, precum și stocurile specifice asociate fiecărei închideri.</p>
+        <p><Link to="/docs/logistics/physical-inventory/warehouse-valorization" className="bold-link">Valorizare gestiune</Link></p>
+        <p>Permite operatorilor să efectueze închideri de gestiune la o dată specificată, înregistrând stocurile și permițând alinierea informațiilor logistice cu cele contabile, garantând astfel o gestionare precisă a resurselor și a costurilor asociate.</p>
+        <p><Link to="/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity" className="bold-link">Inventar cantitativ valoric</Link></p>
+        <p>Asigură companiilor o viziune clară și detaliată asupra stocurilor. Cu acest raport, utilizatorii pot accesa informații complete nu doar despre cantitățile faptice ale articolelor prezente în gestiune, ci și despre valoarea acestora.</p>
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Condiții utilizare
 
-gli **Inventari fisici**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)        
-- definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
-- definire i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          
-- definire i [*Parametri differenze inventariali*](/docs/configurations/parameters/logistics/stock-difference/)           
-- definire un [*Tipo lista inventariale*](/docs/configurations/tables/logistics/stock-lists-types/)        
-- creare un dipendente nella tabella [Dipendenti](/docs/project-management/registers/employee/new-employee/)
+**Inventare faptice**:
+- creați articole în [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-item)        
+- definiți corect [*Șabloanele de gestiune*](/docs/configurations/tables/logistics/warehouse-templates) de utilizat        
+- definiți [*Parametrii inițiali ai gestiunii*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          
+- definiți [*Parametrii diferențelor de inventar*](/docs/configurations/parameters/logistics/stock-difference/)           
+- definiți un [*Tip de listă de inventar*](/docs/configurations/tables/logistics/stock-lists-types/)        
+- creați un angajat în tabelul [Angajați](/docs/project-management/registers/employee/new-employee/)
 
+## Conexiuni cu alte module  
 
-## Collegamenti con altri moduli
-Dalle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) è possibile visualizzare i risultati dell'**inventario** e delle **chiusure di magazzino**.
+În [*Înregistrările de gestiune](/docs/logistics/warehouse/stock-records/record) puteți să vizualizați rezultatele **inventarului** și **închiderilor de gestiune**.
