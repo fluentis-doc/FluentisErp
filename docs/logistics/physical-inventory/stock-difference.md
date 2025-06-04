@@ -5,7 +5,7 @@ sidebar_position: 3
 
 La form si apre tramite il percorso **Logistica > Inventari fisici > Differenze inventariali**.
 
-La procedura permette di scegliere la **Data elaborazione** mentre ricerca in automatico l'ultimo inventario non chiuso. E' possibile effettuare l'allineamento delle giacenze ad una certa data spuntando la voce **Calcola differenze inventariali alla data** giacenza e inserendo sul campo **Data calcolo giacenza** la data desiderata. E' inoltre possibile stabilire la data della registrazione di magazzino.
+La procedura permette di scegliere la **Data elaborazione** e l'inventario da considerare tra quelli non ancora *chiusi*. E' possibile effettuare l'allineamento delle giacenze ad una certa data spuntando la voce **Calcola differenze inventariali alla data** giacenza e inserendo sul campo **Data calcolo giacenza** la data desiderata. E' inoltre possibile stabilire la data della registrazione di magazzino.
 
 *Pulsante specifico*  
 > **Creazione registrazione**: richiama la procedura per l'allineamento delle giacenze.
