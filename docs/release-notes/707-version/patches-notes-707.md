@@ -5,100 +5,100 @@ sidebar_position: 1
 
 ### Patch 707.1-0034 - 30/05/2025 
 
-> - WM - Corretto bug nella gestione picking che non generava correttamente i DDT e le fatture se contenevano articoli gestiti con CONAI. (#TT02385/25) 
-> - SD - Creazione Listini di Vendita da Listini di Acquisto: risolta anomalia nel calcolo del prezzo di vendita nel caso di utilizzo del flag “Ripresa sconti” (#TT02370/25). 
+> - WM - Corretto bug nella gestione picking che non generava correttamente i DDT e le fatture se contenevano articoli gestiti con CONAI (#TT02385/25) 
+> - SD - Creazione Listini di Vendita da Listini di Acquisto: risolta anomalia nel calcolo del prezzo di vendita nel caso di utilizzo del flag “Ripresa sconti” (#TT02370/25)
 > - WM - Stampa liste inventariali - Sostituita la proprietà Location.Code con Location.CodeLocation (#TT02074/25) 
-> - FI - Stampa registri iva - Revisione riporto dei totali sulla stampa registri iva completo (rif. #TT01950/25) 
-> - FI - Stampa estratto conto a partite aperte - revisione formattazione del campo 'Numero documento' (Rif. ticket 2229/25) 
-> - Allow supervisor to use reports with  RepositoryMethodParameters tag ticket. Modifications in Supervisor Activities can have an impact on profiles ( #TT02012/25) 
-> - MS - Corretto bug in generazione commesse di produzione. Nel tab sottoscorta non venivano correttamente riportati nel tab riepilogo prototipi gli articoli selezionati se questi avevano disponibilità nel passato e in due magazzini diversi. (#TT02408/25). 
-> - ARM - Fix Restriction Rule insert exception (#TT01859/25) 
+> - FI - Stampa registri iva - Revisione riporto dei totali sulla stampa registri iva completo (#TT01950/25) 
+> - FI - Stampa estratto conto a partite aperte - revisione formattazione del campo 'Numero documento' (#TT02229/25) 
+> - SH- Consentito al Supervisor di utilizzare i report con il tag RepositoryMethodParameters. **Attenzione! Questa modifica può impattare sui profili** (#TT02012/25) 
+> - MS - Corretto bug in generazione commesse di produzione. Nel tab sottoscorta non venivano correttamente riportati nel tab riepilogo prototipi gli articoli selezionati se questi avevano disponibilità nel passato e in due magazzini diversi (#TT02408/25)
+> - ARM - Corretto l'errore di inserimento della regola di restrizione (#TT01859/25) 
 > - CO - nelle scritture di integrazione, esclusione righe con giorni totali 0 (#TT02417/25) 
-> - SD - Nella ricerca dei DDT e delle Fatture di Vendita è ora possibile aggiungere come filtro il campo Zona (#TT02413/25). 
-> - MS - Corretto bug nel calcolo del costo totale preventivo della costificazione di una commessa. (#TT02182/25) 
-> - FI - Problemi con la stampa 'OpenMaturityValuesAccountStatement'(TT02401/25).  
-> - WMS - Corretto bug nella procedura di Dichiarazione di produzione presente nel WMS. (#TT02368/25) 
-> - FI - nella griglia analitica delle registrazioni contabili, revisione inserimento nuova riga da conto/sottoconto per valorizzazione importo senza ricalcolo importi già inseriti. (#TT02189/25) 
-> - Stampa Riepilogo per tipo operazione, modulo cespiti, revisione report per tipi operazione in lingua utente. (#TT02473/25) 
-> - FI - stampa Riepilogo per tipo operazione, modulo cespiti, revisione visualizzazione in lingua dei tipi operazione. Modifications in Riepilogo per tipo operazione can have an impact on profiles (#TT02473/25) 
-> - ARM - fix Align Object for database views and table value functions (TT02475/25) 
-> - WM - Corretto bug sulla roll back del carico UDC. (#TT01656/25) 
+> - SD - Nella ricerca dei DDT e delle Fatture di Vendita è ora possibile aggiungere come filtro il campo Zona (#TT02413/25).
+> - MS - Corretto bug nel calcolo del costo totale preventivo della costificazione di una commessa (#TT02182/25) 
+> - FI - Problemi con la stampa 'OpenMaturityValuesAccountStatement' (TT02401/25)
+> - WMS - Corretto bug nella procedura di Dichiarazione di produzione presente nel WMS (#TT02368/25)
+> - FI - nella griglia analitica delle registrazioni contabili, revisione inserimento nuova riga da conto/sottoconto per valorizzazione importo senza ricalcolo importi già inseriti (#TT02189/25) 
+> - Stampa Riepilogo per tipo operazione, modulo cespiti, revisione report per tipi operazione in lingua utente (#TT02473/25) 
+> - FI - stampa Riepilogo per tipo operazione, modulo cespiti, revisione visualizzazione in lingua dei tipi operazione. **Attenzione! Questa modifica può impattare sui profili** (#TT02473/25) 
+> - ARM - Corretto l'allineamento degli oggetti per le viste di database e le funzioni che restituiscono tabelle (TT02475/25) 
+> - WM - Corretto bug sulla roll back del carico UDC (#TT01656/25) 
 > - FI - revisione caricamento oggetti in una nuova registrazione creata dall’interno di una registrazione esistente (#TT02508/25) 
 > - SD - Ottimizzata la procedura di creazione Fatture da DDT di Vendita (#TT02317/25, #TT00435/25) 
-> - SH - Fix profile restore (TT02298/25) 
-> - ARM - Fix exporting report (#TT02519/25) 
-> - SD - Rivisto calcolo nella stampa provvigioni maturate per le note di accredito, ora con il criterio del pagamento avvenuto seguono la stessa logica delle fatture. (#TT02360/25) 
+> - SH - Risolto errore sul restore profili (#TT02298/25) 
+> - ARM - Risolto errore sull'esportazione report (#TT02519/25) 
+> - SD - Rivisto calcolo nella stampa provvigioni maturate per le note di accredito, ora con il criterio del pagamento avvenuto seguono la stessa logica delle fatture (#TT02360/25) 
 > - SCS - ordine conto lavoro, corretto mancato inserimento unità di misura quando viene inserito un articolo codificato in tab articoli (#TT01773/25) 
 > - FI - nelle registrazioni contabili, l’inserimento manuale di una riga in griglia intrastat propone la sezione bis/quater a seconda del tipo riga iva generico/servizio. (#TT02207/25) 
-> - SH - Corretto errore nell'Analisi Disponibilità che visualizzava anche le righe dei picking forzatamente evasi (#TT02279/25). 
-> - MS - Corretto bug in schedulazione a capacità finita che visualizzava il messaggio "Non è un giorno lavorativo" in alcuni casi particolari. (#TT02228/25) 
-> - MS - In fase di costificazione di una commessa di produzione, corretto bug inerente al calcolo del costo effettivo della manodopera nel caso fossero inseriti i dipendenti nel tab squadra della dichiarazione di produzione. (#TT02415/25) 
-> - FI - revisione creazione automatica solleciti per risolvere creazione solleciti vuoti, ottimizzazione tempi, creazione lettere anche quando numero e data documento partita sono vuoti, assegnazione scadenza sollecito da partita o sollecito precedente, numero partita assegnata alla testata sollecito. (#TT02248/25 e #TT02406/25) 
-> - SD, SCM - È stato introdotto un controllo in fase di inserimento delle date di competenza nei documenti, che impedisce l’inserimento di una data fine antecedente alla data inizio. Il controllo viene effettuato sulle date inserite nel tab Analitica di tutti i documenti di acquisto e vendita e sulle righe articolo delle Fatture di Vendita. (#TT02421/25) 
-> - PR - nella creazione distinte Riba, lettura parametro riba ‘Senza riferimenti per import insoluti’. (#TT01647/25) 
+> - SH - Corretto errore nell'Analisi Disponibilità che visualizzava anche le righe dei picking forzatamente evasi (#TT02279/25)
+> - MS - Corretto bug in schedulazione a capacità finita che visualizzava il messaggio "Non è un giorno lavorativo" in alcuni casi particolari (#TT02228/25) 
+> - MS - In fase di costificazione di una commessa di produzione, corretto bug inerente al calcolo del costo effettivo della manodopera nel caso fossero inseriti i dipendenti nel tab squadra della dichiarazione di produzione (#TT02415/25) 
+> - FI - revisione creazione automatica solleciti per risolvere creazione solleciti vuoti, ottimizzazione tempi, creazione lettere anche quando numero e data documento partita sono vuoti, assegnazione scadenza sollecito da partita o sollecito precedente, numero partita assegnata alla testata sollecito (#TT02248/25 e #TT02406/25) 
+> - SD, SCM - È stato introdotto un controllo in fase di inserimento delle date di competenza nei documenti, che impedisce l’inserimento di una data fine antecedente alla data inizio. Il controllo viene effettuato sulle date inserite nel tab Analitica di tutti i documenti di acquisto e vendita e sulle righe articolo delle Fatture di Vendita (#TT02421/25) 
+> - PR - nella creazione distinte Riba, lettura parametro riba ‘Senza riferimenti per import insoluti’ (#TT01647/25) 
 
 
 ### Patch 707.1-0033 - 23/05/2025 
 
-> - ARM - OData Service code generation:  use interface instead of class for resolving service module(TT02308/25) 
-> - F2023 - Commissioni agenti - ricalcolo. Modifications in Commission can have an impact on profiles ( TT01871/25) 
-> - FI - revisione webapi sull’oggetto FSPosting, revisione gestione messaggi di avviso/errore relativi ai test della causale contabile. (#TT01810/25) 
+> - ARM - Generazione del codice per il servizio OData: usare un’interfaccia al posto di una classe per la risoluzione del modulo di servizio (#TT02308/25) 
+> - F2023 - Commissioni agenti - ricalcolo. Modifications in Commission can have an impact on profiles (#TT01871/25) 
+> - FI - revisione webapi sull’oggetto FSPosting, revisione gestione messaggi di avviso/errore relativi ai test della causale contabile (#TT01810/25) 
 > - FI - nuova registrazione contabile, valorizzazione del campo stato partita per le nuove partite in creazione. (#TT02304/25) 
 > - BZ - effettuate correzioni su schema importazione dichiarazione attività di progetto 
-> - CO/PR/CRM/FI - memory leaks improvements - Clear cache data for closed forms/sessions and data older than 1 day ( TT02231/25) 
-> - FI - revisione attivazione pulsanti di gestione nella ribbon della form di modifica Commissioni. (#TT02312/25) 
-> - ARM - snapshot diff fix, format also the nullable DateTime (TT02362/25) 
-> - SD - Inserita la colonna ‘Variante’ nel tab ‘Listini di vendita’ dell’anagrafica articolo. Modifications in Item form can have an impact on profiles (#TT01997/25)” 
-> - WMS - Nelle form del WMS sono stati esclusi gli articoli archiviati. (#TT02210/25) 
-> - MS - Risolto errore nel rilascio Ordini Pianificati di Produzione che non generava gli ordini di Conto Lavoro per le fasi esterne in presenza del flag “Raggruppare gli ordini dello stesso terzista” (#TT02140/25). 
-> - WM - Implementata la gestione del tipo scadenza lotto selezionabile nel tab lotti e serial number dell’anagrafica articolo. (#TT02270/25) 
-> - WM - Creata la nuova webapi GetItemsStock per interrogare le giacenze di magazzino. (#TT02610/24) 
+> - CO/PR/CRM/FI - miglioramenti delle perdite di memoria - Pulizia dei dati in cache per maschere/sessioni chiuse e dati più vecchi di 1 giorno (#TT02231/25) 
+> - FI - revisione attivazione pulsanti di gestione nella ribbon della form di modifica Commissioni (#TT02312/25) 
+> - ARM - Corretto il confronto tra snapshot, includendo anche il formato dei campi DateTime nullabili (#TT02362/25) 
+> - SD - Inserita la colonna ‘Variante’ nel tab ‘Listini di vendita’ dell’anagrafica articolo. **Attenzione! Questa modifica può impattare sui profili** (#TT01997/25)” 
+> - WMS - Nelle form del WMS sono stati esclusi gli articoli archiviati (#TT02210/25) 
+> - MS - Risolto errore nel rilascio Ordini Pianificati di Produzione che non generava gli ordini di Conto Lavoro per le fasi esterne in presenza del flag “Raggruppare gli ordini dello stesso terzista” (#TT02140/25)
+> - WM - Implementata la gestione del tipo scadenza lotto selezionabile nel tab lotti e serial number dell’anagrafica articolo (#TT02270/25) 
+> - WM - Creata la nuova webapi GetItemsStock per interrogare le giacenze di magazzino (#TT02610/24) 
 > - SH - Creazione del Web API Controller per FSDocument (#TT02095/25) 
 > - WM - Fix ItemNavigator-search sales price list for customer problem(#TT02115/25) 
 > - SD - Nel caso in cui più DDT vengano valorizzati in una fattura immediata che non ha il flag "Scollega DDT", i documenti non possono essere scaricati singolarmente. È necessario effettuare lo scarico della fattura oppure lo scarico congiunto di tutti i DDT valorizzati (#TT01416/25) 
 > - WM - Corretto bug nell’import tramite WebApi delle spunte di un picking che caricava in maniera errata i lotti degli articoli spuntati in particolari condizioni. (#TT02373/25) 
-> - FI - revisione gestione widget conti nella form Tipo contabilizzazione cespiti. Modifications in Tipo contabilizzazione cespiti form can have an impact on profiles (#TT02375/25) 
-> - FI - revisione assegnazione numerazione partite/pagamenti, caso di esecuzione compensazione da registrazione contabile e contemporanea contabilizzazione documenti vendite/acquisti. (#TT01832/25) 
+> - FI - revisione gestione widget conti nella form Tipo contabilizzazione cespiti. **Attenzione! Questa modifica può impattare sui profili** (#TT02375/25) 
+> - FI - revisione assegnazione numerazione partite/pagamenti, caso di esecuzione compensazione da registrazione contabile e contemporanea contabilizzazione documenti vendite/acquisti (#TT01832/25) 
 > - MS - Corretto bug nella procedura di rilascio ordini pianificati di acquisto per proporre il prezzo dell’articolo in maniera corretta. (#TT02221/25) 
-> - MES - Nella capacità dei centri di lavoro ora non vengono più visualizzati nel grafico gli impegni delle fasi chiuse. (#TT02042/25) 
-> - SH - Nel Navigatore articoli, tab Listini associati al cliente, vengono ora visualizzati solamente i listini validi alla Data validità inserita nel filtro. Corrette anche alcune anomalie nella ricerca articoli all’interno della sezione di filtro della maschera. (#TT02115/25) 
+> - MES - Nella capacità dei centri di lavoro ora non vengono più visualizzati nel grafico gli impegni delle fasi chiuse (#TT02042/25) 
+> - SH - Nel Navigatore articoli, tab Listini associati al cliente, vengono ora visualizzati solamente i listini validi alla Data validità inserita nel filtro. Corrette anche alcune anomalie nella ricerca articoli all’interno della sezione di filtro della maschera (#TT02115/25) 
 > - MES - Corretto bug nel Mes. Nel caso in cui venissero avanzate più fasi contemporaneamente non veniva splittato correttamente il tempo su ciascuna fase. 
-> - Ora nel caso di un centro di lavoro multifase, il tempo viene suddiviso tra le varie fasi in questo modo: se viene dichiarata una quantità (prodotto o scartata) allora il tempo di ciascuna fase viene calcolato con la seguente formula: (Tempo dichiarato / quantità totale (prodotta + scartata)) * quantità dichiarata (prodotta + scartata) della singola fase = Tempo della fase; mentre se non viene dichiarata nessuna quantità, ma solo tempo, allora viene calcolato con la formula: Tempo dichiarato / numero delle fasi = Tempo della fase. (#TT01977/25) 
-> - MS - Corretto bug in costificazione delle commesse che non considerava correttamente il costo delle fasi esterne. (#TT02218/25) 
-> - SH - Navigatore articoli: Risolta anomalia nel caricamento dei dati che causava un rallentamento della maschera (#TT02306/25). 
+> - Ora nel caso di un centro di lavoro multifase, il tempo viene suddiviso tra le varie fasi in questo modo: se viene dichiarata una quantità (prodotto o scartata) allora il tempo di ciascuna fase viene calcolato con la seguente formula: (Tempo dichiarato / quantità totale (prodotta + scartata)) * quantità dichiarata (prodotta + scartata) della singola fase = Tempo della fase; mentre se non viene dichiarata nessuna quantità, ma solo tempo, allora viene calcolato con la formula: Tempo dichiarato / numero delle fasi = Tempo della fase (#TT01977/25) 
+> - MS - Corretto bug in costificazione delle commesse che non considerava correttamente il costo delle fasi esterne (#TT02218/25) 
+> - SH - Navigatore articoli: Risolta anomalia nel caricamento dei dati che causava un rallentamento della maschera (#TT02306/25)
 
 ### Patch 707.1-0032 - 16/05/2025 
 
 > - Intervento creato da intervento pianificato o da task - proporre valuta dal documento sorgente se esiste, altrimenti proporre dall'account/compania  
 > - WM - Risolto errore che impediva l’importazione Web API del Picking se nel file di importazione venivano inseriti sia il lotto dell’articolo, sia quello della riga spunta (#TT02053/25) 
-> - SCM - Nella maschera del Ricevimento Merci è ora possibile indicare quantità decimali all’interno dei lotti (#TT01885/25). 
-> - SD: Quando si crea un documento  vendita da un altro, lo scambio viene aggiornato. #TT02206/25 
-> - FI - revisione cancellazione commissioni da maschera di ricerca. (#TT02199/25) 
-> - Corretto tracciato per importazione excel cespiti che non riportava correttamente all’interno della scheda il dettaglio dell’ammortamento pregresso. Rif. #TT02237/25 
-> - FI - revisione visibilità del campo ‘Data valuta banca’ all’apertura in modifica delle registrazioni contabili. (#TT02073/25) 
-> - PM - piano di fatturazione interventi - migliorata gestione riferimento a progetto nelle righe di fuori orario. (#TT02165/25) 
-> - SH - Corretto bug che non visualizzata correttamente il context menu aperto con il tsto destro del mouse. 
-> - Quando si crea un ordine di vendita da un’offerta, il sistema propone il tipo di fatturato di vendita per i materiali nel registro articoli.(#TT02225/25) 
-> - SD, SCS - Risolto errore in fase di salvataggio dei documenti che si verificava quando il Numero riga e il Tipo riga erano stati inseriti manualmente (#TT02061/25). 
-> - PM - gestita cancellazione interventi con piano di fatturazione già calcolato, ma intervento non ancora fatturato (TT05270/24) 
-> - Stampa schede cespiti, revisione gestione in lingua del campo tipo proprietà. (#TT02155/25) 
-> - SD - Risolto errore nella procedura di Creazione Listini Avanzata che si verificava filtrando per un cliente la cui ragione sociale conteneva il carattere “&” (#TT02184/25). 
-> - SCM - Risolta anomalia in fase di Valorizzazione DDT di Acquisto che non ricalcolava le spese per il Conai in fattura (#TT01916/25). 
+> - SCM - Nella maschera del Ricevimento Merci è ora possibile indicare quantità decimali all’interno dei lotti (#TT01885/25)
+> - SD: Quando si crea un documento  vendita da un altro, lo scambio viene aggiornato (#TT02206/25)
+> - FI - revisione cancellazione commissioni da maschera di ricerca (#TT02199/25) 
+> - Corretto tracciato per importazione excel cespiti che non riportava correttamente all’interno della scheda il dettaglio dell’ammortamento pregresso (#TT02237/25)
+> - FI - revisione visibilità del campo ‘Data valuta banca’ all’apertura in modifica delle registrazioni contabili (#TT02073/25) 
+> - PM - piano di fatturazione interventi - migliorata gestione riferimento a progetto nelle righe di fuori orario (#TT02165/25) 
+> - SH - Corretto bug che non visualizzata correttamente il context menu aperto con il tasto destro del mouse. 
+> - Quando si crea un ordine di vendita da un’offerta, il sistema propone il tipo di fatturato di vendita per i materiali nel registro articoli (#TT02225/25) 
+> - SD, SCS - Risolto errore in fase di salvataggio dei documenti che si verificava quando il Numero riga e il Tipo riga erano stati inseriti manualmente (#TT02061/25) 
+> - PM - gestita cancellazione interventi con piano di fatturazione già calcolato, ma intervento non ancora fatturato (#TT05270/24) 
+> - Stampa schede cespiti, revisione gestione in lingua del campo tipo proprietà (#TT02155/25) 
+> - SD - Risolto errore nella procedura di Creazione Listini Avanzata che si verificava filtrando per un cliente la cui ragione sociale conteneva il carattere “&” (#TT02184/25)
+> - SCM - Risolta anomalia in fase di Valorizzazione DDT di Acquisto che non ricalcolava le spese per il Conai in fattura (#TT01916/25) 
 > - PM - gestita priorità proposta prezzo negli interventi, se prezzo manuale ha priorità maggiore rispetto al progetto (#TT01678/25) 
 > - PM - procedura generazione interventi da attività, corretto caso per attività che terminano a mezzanotte (#TT01677/25) 
 > - SH - In analisi disponibiltà è stata aggiunta la possibilità di filtrare valori incompleti con %xxx anche nel filtro principale e non solo nel filtro di colonna. 
-> - Nella creazione fatture di acquisto da file Sdi, revisione visibilità griglia di assegnazione dei pagamenti. (#TT01958/25) 
+> - Nella creazione fatture di acquisto da file Sdi, revisione visibilità griglia di assegnazione dei pagamenti (#TT01958/25) 
 > - SD - Gli sconti finali articolo vengono riportati nelle righe di tipo spesa, anche se gli sconti vengono inseriti dopo l’inserimento degli articoli (#TT00869/25) 
 > - Aggiunte colonne per gestire da data competenza economica a data competenza economica al tracciato excel per import scritture contabili 
 > - SD - Corretta anomalia nella Creazione DDT da Picking che, in presenza di sconti sulla riga articolo, non ricalcolava correttamente le spese riportate nel riepilogo dell’ordine (#TT02129/25) 
 > - SD - Nelle procedure di Scarico DDT e Scarico Fatture Immediate da Magazzino è stata aggiunta nel tab Riepilogativo la possibilità di aprire la stampa degli Errori, per visualizzare eventuali errori che hanno impedito lo Scarico del documento (#TT05465/24) 
-> - SH - Corretta la visualizzazione delle righe nell’Analisi Disponibilità in presenza di Ordini Cliente aventi una causale di scarico con contropartita (#TT01892/25). 
-> - FI - FSPartnerVatStatus Add new filed Notes. Modifications in PartnerVatStatusFilterResults can have an impact on profiles ( TT02146/25) 
-> - QY - Controllo articoli - Risolta anomalia durante la richiesta di apertura di più controlli contemporaneamente; si apriva solamente uno e gli altri rimanevano bloccati.(#TT02161/25) 
-> - SH - WEB - Risolta anomalia nella versione web che non permetteva l’inserimento di pesi con cifre decimali nelle anagrafiche articolo (#TT02194/25). 
+> - SH - Corretta la visualizzazione delle righe nell’Analisi Disponibilità in presenza di Ordini Cliente aventi una causale di scarico con contropartita (#TT01892/25) 
+> - FI - Aggiunto nuovo campp Note in FSPartnerVatStatus. **Attenzione! Questa modifica può impattare sui profili** (#TT02146/25) 
+> - QY - Controllo articoli - Risolta anomalia durante la richiesta di apertura di più controlli contemporaneamente; si apriva solamente uno e gli altri rimanevano bloccati(#TT02161/25) 
+> - SH - WEB - Risolta anomalia nella versione web che non permetteva l’inserimento di pesi con cifre decimali nelle anagrafiche articolo (#TT02194/25) 
 > - SD - Risolto errore in fase di creazione di un nuovo documento mediante l’utilizzo del pulsante Nuovo del tab Articoli (#TT02166/25) 
-> - SCM, SCS, PM - Risolto errore in fase di salvataggio dei documenti che si verificava quando il Numero riga e il Tipo riga erano stati inseriti manualmente (#TT02061/25). 
-> - SCM - Risolto errore nella Registrazione dei DDT di Acquisto in magazzino in presenza di righe articolo di tipo note (#TT02313/25). 
+> - SCM, SCS, PM - Risolto errore in fase di salvataggio dei documenti che si verificava quando il Numero riga e il Tipo riga erano stati inseriti manualmente (#TT02061/25) 
+> - SCM - Risolto errore nella Registrazione dei DDT di Acquisto in magazzino in presenza di righe articolo di tipo note (#TT02313/25)
 
 
 ### Patch 707.1-0031 - 08/05/2025
