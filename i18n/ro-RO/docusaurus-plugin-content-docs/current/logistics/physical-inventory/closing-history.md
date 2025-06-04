@@ -1,16 +1,10 @@
 ---
-title: Storico chiusura
+title: Istoric închidere
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-L'introduzione allo storico chiusura di Fluentis offre un accesso fondamentale ai dati storicizzati relativi alle chiusure di magazzino, permettendo agli operatori di monitorare e analizzare le variazioni delle giacenze nel tempo. Questa funzionalità consente di consultare informazioni dettagliate come il costo ultimo, il costo medio e le giacenze di magazzino, tutte realizzate tramite la procedura di valorizzazione.
+Acest form oferă un acces esențial la datele referitoare la închiderile de gestiune, permițând operatorilor să monitorizeze și să analizeze variațiile stocurilor în timp. Această funcționalitate permite consultarea informațiilor detaliate precum costul ultim, costul mediu și stocurile de gestiune, toate realizate prin procedura de [Valorizare gestiune](/docs/logistics/physical-inventory/warehouse-valorization).
 
-Nella form dedicata allo storico chiusura, gli utenti possono visualizzare e filtrare le chiusure effettuate, permettendo così una facile consultazione dei dati storici e facilitando l'analisi delle performance del magazzino. È importante notare che per salvare correttamente i dati all'interno dello storico, è necessario attivare il flag di Storicizzazione inventario durante l'esecuzione della valorizzazione.
+Este important de menționat că pentru a salva corect datele în cadrul istoricului, este necesar să se activeze opțiunea de *Arhivare inventar* în timpul executării valorizării.  
 
-Questa funzionalità non solo agevola la rendicontazione e la conformità normativa, ma supporta anche le aziende nel prendere decisioni strategiche basate su dati storici consolidati, contribuendo così a una gestione logistica più efficace e consapevole.
-:::
-
-Questa form permette di consultare i dati storicizzati relativi alle chiusure di magazzino effettuate (costo ultimo, costo medio, giacenza,...) realizzate tramite la procedura di [Valorizzazione magazzino](/docs/logistics/physical-inventory/warehouse-valorization)
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Această funcționalitate facilitează raportarea și conformitatea normativă și sprijină companiile la luarea deciziilor strategice pe baza datelor istorice consolidate, contribuind astfel la o gestionare logistică mai eficientă.
