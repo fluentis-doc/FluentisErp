@@ -944,195 +944,195 @@
     "description": "The label for category Contabilizzazione accrediti in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione distinte": {
-    "message": "Lists Accounting",
+    "message": "Listas de contabilidad",
     "description": "The label for category Contabilizzazione distinte in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione effetti": {
-    "message": "Bills Accounting",
+    "message": "Contabilización de Efectos",
     "description": "The label for category Contabilizzazione effetti in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione effetti a fornitore": {
-    "message": "Bills Accounting by Vendor",
+    "message": "Contabilización de Efectos por Proveedor",
     "description": "The label for category Contabilizzazione effetti a fornitore in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione insoluti": {
-    "message": "Unpaid Accounting",
+    "message": "Contabilización de Documentos Pendientes",
     "description": "The label for category Contabilizzazione insoluti in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione insoluti su cessione": {
-    "message": "Accounting of Unpaid on Loan",
+    "message": "Contabilización de Impagos en Préstamos",
     "description": "The label for category Contabilizzazione insoluti su cessione in sidebar treasury"
   },
   "sidebar.treasury.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar treasury"
   },
   "sidebar.treasury.category.Creazione e Gestione distinte": {
-    "message": "Lists Managament",
+    "message": "Gestión de Listas",
     "description": "The label for category Creazione e Gestione distinte in sidebar treasury"
   },
   "sidebar.treasury.category.Creazine e Gestione insoluti": {
-    "message": "Unpaids Management",
+    "message": "Gestión de Impagos",
     "description": "The label for category Creazine e Gestione insoluti in sidebar treasury"
   },
   "sidebar.treasury.category.Creazione e Gestione effetti": {
-    "message": "Bills Management",
+    "message": "Gestión de Efectos",
     "description": "The label for category Creazione e Gestione effetti in sidebar treasury"
   },
   "sidebar.treasury.category.Obsoleto e non supportato": {
-    "message": "Outdated and not supported",
+    "message": "Desactualizado y sin soporte",
     "description": "The label for category Obsoleto e non supportato in sidebar treasury"
   },
   "sidebar.treasury.category.Conti correnti": {
-    "message": "Bank Account",
+    "message": "Cuenta bancaria",
     "description": "The label for category Conti correnti in sidebar treasury"
   },
   "sidebar.treasury.category.Riconciliazione": {
-    "message": "Reconciliation",
+    "message": "Reconciliación",
     "description": "The label for category Riconciliazione in sidebar treasury"
   },
   "sidebar.treasury.category.Anticipi & Incassi": {
-    "message": "Advance",
+    "message": "Anticipo",
     "description": "The label for category Anticipi & Incassi in sidebar treasury"
   },
   "sidebar.logistics.category.Lotti/Numeri di serie": {
-    "message": "Lots/Serial Numbers",
+    "message": "Lotes / Números de Serie",
     "description": "The label for category Lotti/Numeri di serie in sidebar logistics"
   },
   "sidebar.logistics.category.U.D.C.": {
-    "message": "Loading Unit",
+    "message": "Unidad de Carga",
     "description": "The label for category U.D.C. in sidebar logistics"
   },
   "sidebar.logistics.category.Dettaglio ordini in lista": {
-    "message": "Detail Orders in List",
+    "message": "Listado de Órdenes Detalladas",
     "description": "The label for category Dettaglio ordini in lista in sidebar logistics"
   },
   "sidebar.logistics.category.Gestione UDC": {
-    "message": "Loading Unit Management",
+    "message": "Gestión de Unidades de Carga",
     "description": "The label for category Gestione UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Lsiete di prelievo UDC": {
-    "message": "Loading Unit Picking Lists",
+    "message": "Lista de Preparación por Unidad de Carga",
     "description": "The label for category Lsiete di prelievo UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Liste prelievo UDC": {
-    "message": "Loading Unit Picking List",
+    "message": "Listas de Picking por Unidad de Carga ",
     "description": "The label for category Liste prelievo UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Visualizzazione trasferimenti UDC": {
-    "message": "Loading Unit Transfer Visualization",
+    "message": "Visualización de Transferencia de Unidades de Carga",
     "description": "The label for category Visualizzazione trasferimenti UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Magazzino": {
-    "message": "Warehouse",
+    "message": "Bodega",
     "description": "The label for category Magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Registrazioni di magazzino": {
-    "message": "Stock Records",
+    "message": "Registros de Inventario",
     "description": "The label for category Registrazioni di magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Stampe Gestionali": {
-    "message": "Management Reports",
+    "message": "Informes de gestión",
     "description": "The label for category Stampe Gestionali in sidebar logistics"
   },
   "sidebar.logistics.category.Articoli non movimentati": {
-    "message": "Not Handled Items",
+    "message": "Artículos no manejados",
     "description": "The label for category Articoli non movimentati in sidebar logistics"
   },
   "sidebar.logistics.category.Etichette": {
-    "message": "Labels",
+    "message": "Etiquetas",
     "description": "The label for category Etichette in sidebar logistics"
   },
   "sidebar.logistics.category.Sottoscorta": {
-    "message": "Safety Stock",
+    "message": "Inventario de seguridad",
     "description": "The label for category Sottoscorta in sidebar logistics"
   },
   "sidebar.logistics.category.Stampe contabili": {
-    "message": "Accouting Reports",
+    "message": "Informes contables",
     "description": "The label for category Stampe contabili in sidebar logistics"
   },
   "sidebar.logistics.category.Giornale di magazzino": {
-    "message": "Inventory Journal",
+    "message": "Diario de Inventarios",
     "description": "The label for category Giornale di magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Schede di movimentazione": {
-    "message": "Movements Card",
+    "message": "Tarjeta de movimientos",
     "description": "The label for category Schede di movimentazione in sidebar logistics"
   },
   "sidebar.logistics.category.Brogliaccio di magazzino": {
-    "message": "Warehouse Day-Book",
+    "message": "Libro Diario de Bodega",
     "description": "The label for category Brogliaccio di magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Ubicazioni": {
-    "message": "Locations",
+    "message": "Ubicaciones",
     "description": "The label for category Ubicazioni in sidebar logistics"
   },
   "sidebar.logistics.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar logistics"
   },
   "sidebar.logistics.category.Gestione inventario": {
-    "message": "Inventory Management",
+    "message": "Gestión de Inventario",
     "description": "The label for category Gestione inventario in sidebar logistics"
   },
   "sidebar.logistics.category.Picking": {
-    "message": "Picking",
+    "message": "Preparación de Pedidos",
     "description": "The label for category Picking in sidebar logistics"
   },
   "sidebar.logistics.category.Gestione Picking ": {
-    "message": "Picking Management",
+    "message": "Gestión de Preparación de Pedidos",
     "description": "The label for category Gestione Picking  in sidebar logistics"
   },
   "sidebar.logistics.category.Procedure testata": {
-    "message": "Header procedures",
+    "message": "Procedimientos de Encabezado",
     "description": "The label for category Procedure testata in sidebar logistics"
   },
   "sidebar.logistics.category.Stampe": {
-    "message": "Report",
+    "message": "Informe",
     "description": "The label for category Stampe in sidebar logistics"
   },
   "sidebar.logistics.category.Scarico picking": {
-    "message": "Unload Picking",
+    "message": "Descarga de Picking",
     "description": "The label for category Scarico picking in sidebar logistics"
   },
   "sidebar.logistics.category.Articoli": {
-    "message": "Items",
+    "message": "Artículos",
     "description": "The label for category Articoli in sidebar logistics"
   },
   "sidebar.logistics.category.Visualizzazione giacenze": {
-    "message": "Stocks Visualization",
+    "message": "Visualización de acciones",
     "description": "The label for category Visualizzazione giacenze in sidebar logistics"
   },
   "sidebar.logistics.category.Ricerca giacenze": {
-    "message": "Search Stocks",
+    "message": "Consulta de Inventario",
     "description": "The label for category Ricerca giacenze in sidebar logistics"
   },
   "sidebar.logistics.category.Piani di carico ": {
-    "message": "Load Plans",
+    "message": "Planes de Carga",
     "description": "The label for category Piani di carico  in sidebar logistics"
   },
   "sidebar.logistics.category.creazione piani di carico ": {
-    "message": "Create Load Plans",
+    "message": "Crear Planes de Carga",
     "description": "The label for category creazione piani di carico  in sidebar logistics"
   },
   "sidebar.logistics.category.Modello giro consegne": {
-    "message": "Delivery Route Pattern",
+    "message": "Patrón de Ruta de Entrega",
     "description": "The label for category Modello giro consegne in sidebar logistics"
   },
   "sidebar.logistics.category.Attività giornaliere": {
-    "message": "Daily Activity",
+    "message": "Actividad Diaria",
     "description": "The label for category Attività giornaliere in sidebar logistics"
   },
   "sidebar.subcontractor.category.Ordini di conto lavoro": {
-    "message": "Subcontractor Orders",
+    "message": "Órdenes de Subcontratación",
     "description": "The label for category Ordini di conto lavoro in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Tabelle e parametri": {
-    "message": "Tables and Parameters",
+    "message": "Tablas y Parámetros",
     "description": "The label for category Tabelle e parametri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Inserimento ordini di conto lavoro": {
-    "message": "Insert Subcontractor Orders",
+    "message": "Ingresar Órdenes de Subcontratación",
     "description": "The label for category Inserimento ordini di conto lavoro in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Testata": {
