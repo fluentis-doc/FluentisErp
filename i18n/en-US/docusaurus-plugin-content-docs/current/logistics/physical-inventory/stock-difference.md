@@ -5,7 +5,7 @@ sidebar_position: 3
 
 The form can be accessed via the path **Logistics > Physical Inventories > Stock Difference**.
 
-The procedure allows you to choose the **Elaboration date** while automatically searching for the last unclosed inventory. It is possible to align the stock to a certain date by checking the item **Calculate inventory differences as of date** and entering the desired date in the **Stock calculation date** field. It is also possible to specify the inventory recording date.
+The procedure allows you to choose the **Processing Date** and the inventory to consider among those not yet *closed*. It is possible to align the stock to a certain date by checking the item **Calculate inventory differences as of date** and entering the desired date in the **Stock calculation date** field. It is also possible to specify the inventory recording date.
 
 *Specific button*  
 > **Create Record**: calls the procedure for aligning the stock.
