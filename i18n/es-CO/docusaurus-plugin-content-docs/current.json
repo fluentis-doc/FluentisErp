@@ -924,23 +924,23 @@
     "description": "The label for category Riba/Rid/Lcr in sidebar treasury"
   },
   "sidebar.treasury.category.Generazione Riba/Rid/Lcr": {
-    "message": "Cash Order/Rid/Lcr Creation",
+    "message": "Creación de Orden de Efectivo, Débito Directo y Letra de Cambio",
     "description": "The label for category Generazione Riba/Rid/Lcr in sidebar treasury"
   },
   "sidebar.treasury.category.Acquisizione effetti dalle partite": {
-    "message": "Bills Acquisition from Maturity Values",
+    "message": "Captura de Letras por Vencimiento",
     "description": "The label for category Acquisizione effetti dalle partite in sidebar treasury"
   },
   "sidebar.treasury.category.Acquisizione effetti dalle fatture": {
-    "message": "Bills Acquisition from Invoices",
+    "message": "Generación de Letras a partir de Facturas",
     "description": "The label for category Acquisizione effetti dalle fatture in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione": {
-    "message": "Postings",
+    "message": "Registros",
     "description": "The label for category Contabilizzazione in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione accrediti": {
-    "message": "Credits Accounting",
+    "message": "Contabilización de Créditos",
     "description": "The label for category Contabilizzazione accrediti in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione distinte": {
