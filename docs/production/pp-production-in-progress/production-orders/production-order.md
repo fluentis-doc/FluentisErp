@@ -13,10 +13,10 @@ In testata vengono riepilogati tutti i dati riguardanti l'ordine di produzione, 
 
 *Pulsante specifico*:  
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine di produzione, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo;
-> **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine di produzione ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine di produzione;  
-> **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti al'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
-> **Generazione ciclo di lavoro**: permette di creare il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o di aggiornare i dati esistenti con quelli inseriti nell'ordine; 
+> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine di produzione, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di esecuzione del completamento dati**.         
+> **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine di produzione ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine di produzione.  
+> **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti al'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine.  
+> **Generazione ciclo di lavoro**: permette di creare il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o di aggiornare i dati esistenti con quelli inseriti nell'ordine. 
 
 *Campi specifici*: 
 

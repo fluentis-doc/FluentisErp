@@ -26,7 +26,7 @@ I dati obbligatori da inserire sono: l’*articolo* con eventuale variante, e la
 
 *Pulsante specifico*:  
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo. 
+> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di esecuzione del completamento dati**.      
 > **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine pianificato ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine pianificato;  
 > **[Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: consente di aprire la finestra relativa ai parametri MRP dell'articolo;  
 > **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti all'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
