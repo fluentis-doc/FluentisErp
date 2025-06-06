@@ -1,82 +1,83 @@
 ---
-title: Crea picking
+title: Creează dispoziţia de livrare
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La gestione picking di Fluentis è progettata per ottimizzare il processo di prelievo degli articoli dal magazzino. Questa funzionalità consente agli utenti di generare liste di prelievo in modo efficiente, partendo dalle diverse tipologie di picking configurabili nel sistema. Attraverso la creazione di un picking, gli operatori possono selezionare gli articoli da evadere, definendo dettagli cruciali come la quantità e la ubicazione di prelievo.
+:::important Ce este
+Procedura a fost concepută pentru a optimiza procesul de colectare a articolelor din gestiune. Această funcționalitate permite utilizatorilor să genereze liste de colectare în mod eficient, începând de la diferitele tipuri de dispoziție de livrare configurabile în sistem. Prin crearea unui dispoziție de livrare, operatorii pot selecta articolele de executat, definind detalii esențiale cum ar fi cantitatea și locația de colectare.
 
-La procedura di gestione picking si compone di diverse interfacce, che permettono di visualizzare e filtrare gli ordini cliente, facilitando l'evasione totale o parziale degli ordini attraverso una gestione automatizzata delle informazioni relative agli articoli. Inoltre, il sistema automatizza il numero di identificazione del picking, basandosi sui parametri preconfigurati, garantendo così tracciabilità e ordine nelle operazioni.
+Procedura de gestionare a dispoziție de livrare se compune din diverse interfețe care permit vizualizarea și filtrarea ordinelor clienților, facilitând executarea totală sau parțială a ordinelor prin gestionare automatizată a informațiilor referitoare la articole. În plus, sistemul automatizează numărul de identificare al dispoziție de livrare, bazându-se pe parametrii preconfigurați, garantând astfel trasabilitate și ordine în operațiuni.
 
-Grazie a funzionalità come il monitoraggio dello stato di evasione delle righe, la registrazione dei lotti e serial number, e l'integrazione con documenti di trasporto come DDT e fatture, la gestione picking di Fluentis offre un'esperienza operativa completa e flessibile. Ciò consente alle aziende di migliorare l'efficienza logistica, ridurre gli errori durante il prelievo e garantire una migliore soddisfazione del cliente.
+Datorită funcționalităților precum monitorizarea stării de executare a liniilor, înregistrarea loturilor și a numerelor de serie, și integrarea cu documente de transport precum avize și facturi, gestionarea dispoziție de livrare în Fluentis oferă o experiență operațională completă și flexibilă. Acest lucru permite companiilor să îmbunătățească eficiența logistică, să reducă erorile în timpul colectării și să asigure o satisfacție mai bună a clienților.
 :::
 
-La form si apre tramite:  
- -  il percorso **Logistica > Picking > Crea picking** 
+Form-ul se deschide:
+ -  de pe calea **Logistică > Dispoziție de livrare > Creează dispoziție de livrare** 
 
-oppure tramite 
+sau prin 
 
- - il pulsante **Nuovo** che si trova nella form  [Ricerca picking](/docs/logistics/picking/search-picking).
+ - butonul **Nou** care se află în form-ul [Caută dispoziție de livrare](/docs/logistics/picking/search-picking).
 
-## 1. Dati obbligatori
+## 1. Date obligatorii
 
-**Tipo picking**: predefinito in  *Configurazione > Tabelle >Logistica > Tipi picking*. Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il numero picking in base alla data inserimento e all'ultimo numero inserito;  
+**Tip dispoziție de livrare (Tipo picking)**: predefinit în *Configurare > Tabele > Logistică > Tipuri dispoziții de livrare*. Acest câmp determină intervalul de numerotare al documentului care se introduce și propune automat numărul dispoziției de livrare în baza datei inserăriiși a ultimului număr introdus;  
 
-**Conto**: rappresenta il cliente/fornitore di riferimento (non è obbligatorio);  
+**Cont**: reprezintă clientul/ furnizorul de referință (nu este obligatoriu);  
 
-**Numero**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
+**Număr**: este propus automat în funcție de tip, dar poate fi modificat manual, respectând întotdeauna regula progresiei dintre dată și număr;  
 
-**Data/Ora**: vengono proposte automaticamente la data e ora correnti, ma possono essere modificate manualmente sempre rispettando la regola di progressione tra data e numero.
+**Data/Ora**: data și ora curente sunt propuse automat, dar pot fi modificate manual, respectând întotdeauna regula progresiei dintre dată și număr.
 
-**Stato**: rappresenta lo stato del documento (che può essere *Terminato*, *Da verificare* o *Sospeso*).
+**Stare**: reprezintă starea documentului (care poate fi *Finalizat*, *De verificat* sau *Suspendat*).
 
-**Stato evasione**: può assumere i seguenti valori: *Non evaso*, *Evaso*, *Parzialmente evaso* o *Forzatamente evaso*; questo stato si riferisce allo stato di evasione delle singole righe, quindi ad esempio, se tramite la gestione spunta viene evasa anche una singola riga lo **Stato evasione** passerà da *Non evaso* a *Parzialmente evaso*.    
+**Stare executare**: poate avea următoarele valori: *Neexecutat*, *Executat*, *Parțial executat* sau *Executat forțat*. Această stare se referă la starea de executare a fiecărei linii.Deci, de exemplu, dacă o linie este executată utilizând opțiunea, **Starea executare** va trece de la *Neexecutat* la *Parțial executat*.    
 
-:::note Nota
-Da notare che la colonna *Documento* presente in [Ricerca picking](/docs/logistics/picking/search-picking), si riferisce allo stato del picking e non a quello delle righe, quindi passerà in stato evaso solo quando sarà stato creato il DDT o la fattura.
+:::note Notă
+Coloana *Document* prezentă în [Caută dispoziție de livrare](/docs/logistics/picking/search-picking) se referă la starea dispoziției de livrare și nu la cea a liniilor, astfel încât va trece în starea executată doar atunci când avizeul sau factura a fost creată.
 :::
 
-#### Pulsante specifico
+#### Buton specific
 
-> **Evasione da ordine**: permette di inserire gli articoli all'interno del picking evadendo un ordine cliente. Premendo il pulsante si aprirà una maschera dove è possibile filtrare gli ordini cliente relativi al cliente in questione. E' quindi possibile evadere totalmente o parzialmente un intero ordine o una riga.
+> **Executare din ordin**: permite introducerea articolelor în dispoziția de livrare, executând un ordin client. Butonul va deschide o fereastră în care se pot filtra ordinele clientului dorit. Astfel, se poate executa total sau parțial un ordin complet sau o linie.
 
-## 2. Testata
+## 2. Antet
 
-#### Dati necessari per la movimentazione del magazzino  
+#### Date necesare pentru mișcarea de gestiune
 
-**Data prelievo magazzino**: rappresenta la data in cui deve essere fatta la registrazione di magazzino;  
-**Utente**: rappresenta il codice utente di riferimento per il picking corrente. Per quanto riguarda i picking di trasferimento è necessario specificare il **Magazzino di partenza e di destinazione**: informazione utile per i picking di trasferimento;  
-**Ubicazione**: rappresenta l'ubicazione sulla quale caricare gli articoli;  
-**Cliente/fornitore**: rappresenta il conto per il quale effettuare il movimento a magazzino.
+**Dată ieşire gestiune**: reprezintă data în care trebuie efectuată înregistrarea în gestiune;  
+**Utilizator**: reprezintă codul utilizatorului de referință pentru dispoziție de livrare curentă.  
+**Gestiunea de ieșire  și de destinație**: informația utilă pentru dispoziție de livrare de transfer;  
+**Locație**: reprezintă locația în care se vor încărca articolele;  
+**Client/Furnizor**: reprezintă contul pentru care se efectuează mișcarea în gestiune.
 
-## 3. Articoli
+## 3. Articole
 
-Nella griglia di inserimento si vanno ad inserire gli articoli specificando **Classe**, **Codice articolo** e **Quantità di prelievo**. E' inoltre possibile inserire un'**Unità di misura alternativa** con la relativa quantità. Nel campo **Magazzino** si definisce il magazzino di movimentazione e nel campo **Causale** la relativa causale. E' inoltre possibile specificare l'**Ubicazione** dalla quale prelevare l'articolo inserito.
+În tabelul se introduc articolele specificând **Clasă**, **Cod articol** și **Cantitate ieșire**. Se poate insera o **Unitate de măsură alternativă** cu cantitatea corespunzătoare, iar în câmpul **Gestiune** se definește gestiunea mișcării. Este, de asemenea, posibil să se specifice **Locația** din care va fi colectat articolul introdus.
 
-### Lotti
+### Loturi
 
-Il tab, attivo solo se l'articolo selezionato nella griglia è gestito a lotti, permette l'inserimento del numero lotto e della relativa quantità.
+Tab activ doar dacă articolul selectat în tabel este gestionat pe loturi, permite introducerea numărului lotului și a cantității corespunzătoare.
 
-La sezione Numeri di serie, attivo solo se l'articolo selezionato nella griglia è gestito a serial number, permette l'inserimento del numero di serie da attribuire all'articolo in questione.
+### Numere de serie
 
-### Extra Data Articolo
+Tab activ doar dacă articolul selectat în tabel este gestionat pe numere de serie, permite introducerea numărului de serie care trebuie atribuit articolului respectiv.
 
-Permette di inserire e visualizzare gli *Extra data* relativi alla singola riga.           
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+### Date extra articol
 
-### Ordini di produzione collegati
+Permite introducerea și vizualizarea *Datelor extra* referitoare la fiecare linie.  
+Pentru o descriere detaliată a datelor extra, se face referire la articolul [Date extra](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-Se l'articolo è agganciato ad un ordine di produzione, questo tab permette di vedere tutte le informazioni relative all'ordine stesso.
+### Ordine de producție asociate
 
-### Documenti allegati
+Dacă articolul este atașat unui ordin de producție, acest tab permite vizualizarea tuturor informațiilor referitoare la ordinul respectivă.
 
-Permette di allegare e visualizzare i documenti relativi ai singoli articoli.  
+### Documente anexate
 
-### Spunta
+Permite atașarea și vizualizarea documentelor referitoare la fiecare articol.  
 
-Questo tab permette di visualizzare le righe spuntate tramite la [Gestione spunta](/docs/logistics/wms/sales/check-row-management) del WMS.    
-Nel caso in cui non venga utilizzato il **WMS**, è comunque possibile inserire nuove righe di articoli spuntati manualmente.
-La **Gestione spunta** serve a confermare le righe del picking realmente prelevate dall'operatore in magazzino; quindi, se in questa tabella è presente almeno una riga spuntata le procedure di creazione DDT e Fattura prenderanno in considerazione solo queste righe.         
-Nel caso in cui non fosse presente nemmeno una riga nella tabella **Gestione spunta**, allora le procedure di creazione DDT e Fattura prenderanno in considerazione tutte le righe presenti nel picking.
+### Bifă
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Acest tab permite vizualizarea liniilor bifate în [Gestionare bifă](/docs/logistics/wms/sales/check-row-management) a WMS.  
+În cazul în care **WMS** nu este utilizat, este totuși posibil să se introducă manual noi linii de articole bifate.  
+**Gestionare bifă** permite confirmarea liniilor dispoziției de livrare real colectate de operatorul din gestiune. Deci, dacă în acest tabel există cel puțin o linie bifată, procedurile de creare aviz și factură vor lua în considerare doar aceste linii.  
+În cazul în care nu există nicio linie în tabelul **Gestionare bifă**, atunci procedurile de creare aviz și factură vor lua în considerare toate liniile din dispoziția de livrare.
