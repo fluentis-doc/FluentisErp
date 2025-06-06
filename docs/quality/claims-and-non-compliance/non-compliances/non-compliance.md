@@ -42,7 +42,7 @@ Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, app
 Viene visualizzata una richiesta/conferma dati per:
 > **Cliente** o **Fornitore**: è il destinatario della nuova *Nota di addebito* (dato obbligatorio), viene proposto il *Cliente* o *Fornitore* della *Non conformità* di origine.   
 > **Tipo fattura**: è il *Tipo documento* della nuova *Nota di addebito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
-> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di addebito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione non conformità](/docs/quality/claims-and-non-compliance/non-compliances/procedures/non-compliance-valorisation.md), sessione *Riferimenti non conformità*.   
+> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di addebito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione non conformità](/docs/quality/claims-and-non-compliance/non-compliances/procedures/non-compliance-valorisation), sessione *Riferimenti non conformità*.   
 > **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di addebito*; viene proposto il *Tipo I.V.A.* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
 >
 > Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   

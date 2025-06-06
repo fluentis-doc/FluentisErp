@@ -38,7 +38,7 @@ E' possibile creare una *Nota di accredito* verso il mittente del *Reclamo*.
 Il pulsante è abilitato solamente se il *Reclamo* è stato salvato, approvato ed esiste un *Valore da accreditare*.   
 Viene visualizzata una richiesta/conferma dati per:   
 > **Tipo fattura**: è il *Tipo documento* della nuova *Nota di accredito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo reclamo* del *Reclamo* di origine.   
-> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di accredito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione reclami](/docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation.md), sessione *Riferimenti reclami*.   
+> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di accredito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione reclami](/docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation), sessione *Riferimenti reclami*.   
 > **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di accredito*; viene proposto il *Tipo I.V.A.* inserito nel *Tipo reclamo* della *Non conformità* di origine.   
 >
 > Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
@@ -228,6 +228,6 @@ Nel tabulatore è possibile inserire informazioni relative a documenti di addebi
    
    
 Le successive sessioni della gestione variano sulla base del *Modello* specificato nel *Tipo reclamo*: *Gestione difetti* oppure *8D - problem solving*:
-> ### [Gestione difetti](/docs/quality/claims-and-non-compliance/claims/claim-dm.md)   
+> ### [Gestione difetti](/docs/quality/claims-and-non-compliance/claims/claim-dm)   
 >   
-> ### [8D Problem Solving](/docs/quality/claims-and-non-compliance/claims/claim-8d.md)
+> ### [8D Problem Solving](/docs/quality/claims-and-non-compliance/claims/claim-8d)

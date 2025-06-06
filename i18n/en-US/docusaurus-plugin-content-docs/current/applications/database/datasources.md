@@ -44,7 +44,7 @@ Depending on the selected type of datasource, the input fields to be populated w
   * area, a description taken from the dictionary.
   * Business module.
 
-Regarding the use of **FluentisQueryStudio** as a tool for creating/saving queries in the database, please refer to the following [LINK](docs/applications/database/database-intro.md).   
+Regarding the use of **FluentisQueryStudio** as a tool for creating/saving queries in the database, please refer to the following [LINK](docs/applications/database/database-intro).   
 It is essential that the query created via **FluentisQueryStudio** adheres to precise formatting rules:
 * the query must return at least the fields **Id**, **Code**, **Description** to be reused within a datasource, otherwise it will not be visible in the corresponding combobox.   
 

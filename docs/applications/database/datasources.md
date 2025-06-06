@@ -5,7 +5,7 @@ sidebar_position: 0
 ---
 
 ### Form
-Come anticipato nell'overview generale di cui alla sezione [LINK](docs/applications/database/database-intro.md) i datasources permettono di esporre dati in maniera strutturata ed organizzata.  
+Come anticipato nell'overview generale di cui alla sezione [LINK](docs/applications/database/database-intro) i datasources permettono di esporre dati in maniera strutturata ed organizzata.  
 La form dei datasource è raggiungibile tramite il seguente percorso: **Applications Resource Manager** > **Database** > **Data Sources**.  
 
 La form dei datasource si presenta è così composta:
@@ -44,7 +44,7 @@ A seconda della tipologia di datasource selezionato i campi di input da popolare
   * area, si tratta di una descrizione presa da dizionario.
   * Modulo di business.
 
-Per quanto concerne l'utilizzo di **FluentisQueryStudio** quale strumento per la creazione / salvataggio di query in base dati, si rimanda al seguente [LINK](docs/applications/database/database-intro.md).   
+Per quanto concerne l'utilizzo di **FluentisQueryStudio** quale strumento per la creazione / salvataggio di query in base dati, si rimanda al seguente [LINK](docs/applications/database/database-intro).   
 E' fondamentale che la query creata tramite il **FluentisQueryStudio** rispetti delle precise regole di formattazione:
 * la query deve restituire almeno i campi **Id**, **Code**, **Description** per poter essere riutilizzata all'interno di un datasource altrimenti non sarà visibile all'interno della relativa combobox.   
   
