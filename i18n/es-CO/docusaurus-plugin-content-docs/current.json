@@ -1220,139 +1220,139 @@
     "description": "The label for category Attività in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Stato avanzamento lavori": {
-    "message": "Work Project Status",
+    "message": "Estado del Proyecto de Trabajo",
     "description": "The label for category Stato avanzamento lavori in sidebar projectManagement"
   },
   "sidebar.quality.category.Controllo articoli": {
-    "message": "Item Control",
+    "message": "Control de Artículos",
     "description": "The label for category Controllo articoli in sidebar quality"
   },
   "sidebar.quality.category.Schede tecniche": {
-    "message": "Data Sheets",
+    "message": "Hojas de datos",
     "description": "The label for category Schede tecniche in sidebar quality"
   },
   "sidebar.quality.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar quality"
   },
   "sidebar.quality.category.piani di controllo": {
-    "message": "Control Plans",
+    "message": "Planes de control",
     "description": "The label for category piani di controllo in sidebar quality"
   },
   "sidebar.quality.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar quality"
   },
   "sidebar.quality.category.Certificati": {
-    "message": "Certificates",
+    "message": "Certificados",
     "description": "The label for category Certificati in sidebar quality"
   },
   "sidebar.quality.category.Certificati personale": {
-    "message": "Employee Certificates",
+    "message": "Certificados del Empleado",
     "description": "The label for category Certificati personale in sidebar quality"
   },
   "sidebar.quality.category.Reclami e non conformità": {
-    "message": "Complaints and Non-compliance",
+    "message": "Quejas y No Conformidades",
     "description": "The label for category Reclami e non conformità in sidebar quality"
   },
   "sidebar.quality.category.Reclami": {
-    "message": "Complaints",
+    "message": "Quejas",
     "description": "The label for category Reclami in sidebar quality"
   },
   "sidebar.quality.category.non conformità": {
-    "message": "Non-compliance",
+    "message": "No conformidad",
     "description": "The label for category non conformità in sidebar quality"
   },
   "sidebar.controlling.category.Controlling obsoleto": {
-    "message": "Controlling",
+    "message": "Control de Gestión",
     "description": "The label for category Controlling obsoleto in sidebar controlling"
   },
   "sidebar.controlling.category.Bilancio": {
-    "message": "Balance Sheet",
+    "message": "Balance General",
     "description": "The label for category Bilancio in sidebar controlling"
   },
   "sidebar.controlling.category.Nuova comparazione": {
-    "message": "New Comparison",
+    "message": "Nueva comparación",
     "description": "The label for category Nuova comparazione in sidebar controlling"
   },
   "sidebar.controlling.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar controlling"
   },
   "sidebar.controlling.category.Contabilità industriale": {
-    "message": "Cost Accounting",
+    "message": "Contabilidad de Costos",
     "description": "The label for category Contabilità industriale in sidebar controlling"
   },
   "sidebar.controlling.category.Ricerca registrazioni": {
-    "message": "Search Records",
+    "message": "Buscar Registros",
     "description": "The label for category Ricerca registrazioni in sidebar controlling"
   },
   "sidebar.controlling.category.Registrazione industriale": {
-    "message": "Cost Record",
+    "message": "Registro de Costos",
     "description": "The label for category Registrazione industriale in sidebar controlling"
   },
   "sidebar.controlling.category.Visualizzazione conti industriali": {
-    "message": "View Cost Accounts",
+    "message": "Visualizar Cuentas de Costos",
     "description": "The label for category Visualizzazione conti industriali in sidebar controlling"
   },
   "sidebar.controlling.category.Allineamento registrazioni periodiche": {
-    "message": "Periodical Records Alignment",
+    "message": "Alineación de Registros Periódicos",
     "description": "The label for category Allineamento registrazioni periodiche in sidebar controlling"
   },
   "sidebar.controlling.category.Chiusure infrannuali": {
-    "message": "Mid-year closure",
+    "message": "Cierre de mitad de año",
     "description": "The label for category Chiusure infrannuali in sidebar controlling"
   },
   "sidebar.controlling.category.Crea chiusure infrannuali": {
-    "message": "Create Mid-Year Closures",
+    "message": "Crear cierres de mitad de año",
     "description": "The label for category Crea chiusure infrannuali in sidebar controlling"
   },
   "sidebar.controlling.category.Valori chiusure": {
-    "message": "Closures Values",
+    "message": "Valores de cierre",
     "description": "The label for category Valori chiusure in sidebar controlling"
   },
   "sidebar.controlling.category.Consolidamento": {
-    "message": "Consolidation",
+    "message": "Consolidación",
     "description": "The label for category Consolidamento in sidebar controlling"
   },
   "sidebar.controlling.category.Creazione ripartizione costi": {
-    "message": "Costs Distribution Creation",
+    "message": "Creación de la Distribución de Costos",
     "description": "The label for category Creazione ripartizione costi in sidebar controlling"
   },
   "sidebar.controlling.category.Ripresa ammortamento cespiti": {
-    "message": "Fixed Assets Depreciation Retrieve",
+    "message": "Recuperación de la Depreciación de Activos Fijos",
     "description": "The label for category Ripresa ammortamento cespiti in sidebar controlling"
   },
   "sidebar.controlling.category.Valorizzazione area acquisti e vendite": {
-    "message": "Purchase and Sales Area Valorization",
+    "message": "Valorización del Área de Compras y Ventas",
     "description": "The label for category Valorizzazione area acquisti e vendite in sidebar controlling"
   },
   "sidebar.controlling.category.Budget": {
-    "message": "Budget",
+    "message": "Presupuesto",
     "description": "The label for category Budget in sidebar controlling"
   },
   "sidebar.controlling.category.Gestione budget": {
-    "message": "Budget Management",
+    "message": "Gestión presupuestaria",
     "description": "The label for category Gestione budget in sidebar controlling"
   },
   "sidebar.controlling.category.Analisi scostamenti": {
-    "message": "Variances Analysis",
+    "message": "Análisis de Variaciones",
     "description": "The label for category Analisi scostamenti in sidebar controlling"
   },
   "sidebar.controlling.category.Registrazioni extracontabili di chiusura": {
-    "message": "Closing off-book entries",
+    "message": "Cierre de Asientos Extracontables",
     "description": "The label for category Registrazioni extracontabili di chiusura in sidebar controlling"
   },
   "sidebar.controlling.category.procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category procedure in sidebar controlling"
   },
   "sidebar.controlling.category.contabilità gestionale": {
-    "message": "Managerial accounting",
+    "message": "Contabilidad gerencial",
     "description": "The label for category contabilità gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Registrazioni": {
-    "message": "Records",
+    "message": "Registros",
     "description": "The label for category Registrazioni in sidebar controlling"
   },
   "sidebar.controlling.category.prima nota": {
