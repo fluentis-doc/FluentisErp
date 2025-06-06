@@ -77,6 +77,6 @@ Per la gestione del criterio di aggregazione è necessario agire sulla colonna '
 Le **dimensioni** sono un attributo qualitativo, ovvero una categoria o un descrittore. Servono per segmentare o ragruppare i dati.  
 Le **metriche** sono un attributo quantitativo, ovvero un valore numerico che può essere misurato, aggregato o calcolato.  
 Potremmo quindi aggregare le fatture di vendita (oggetto FSSalesInvoice) per tipologia di fattura (FSSalesInvoiceType.Code), così come da screenshot sottostante.  
-![](../../../static/img/it-it/applications/database/20250529162809.png)
+![](/img/it-it/applications/database/20250529162809.png)
 
 

@@ -33,7 +33,7 @@ To create new tables in the database, even through automated wizards (see wizard
 ### Fluentis Query Studio
 The Fluentis Query Studio tool allows interaction with the Fluentis database, provided that specific rights are assigned to the user by Arm.  
 
-![](../../../static/img/it-it/applications/database/20250520090348.png)
+![](/img/it-it/applications/database/20250520090348.png)
 
 The form, as shown in the figure, is made up of:
 * a ribbon (Save, Execute).
@@ -43,7 +43,7 @@ The form, as shown in the figure, is made up of:
 
 ### Data Sources
 
-![](../../../static/img/it-it/applications/database/20250520085246.png)
+![](/img/it-it/applications/database/20250520085246.png)
 
 Data sources are data sources that allow the exposure of data in a structured and organized manner and can be reused to populate dashboards and/or extradata.  
 The data sources form is structured as follows:  

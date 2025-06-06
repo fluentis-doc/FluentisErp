@@ -33,7 +33,7 @@ Per la creazione di nuove tabelle a database, anche mediante dei wizard automati
 ### Fluentis Query Studio
 Lo strumento Fluentis Query Studio permette un'interazione con la base dati Fluentis previa associazione di appositi diritti all'utente da Arm.  
 
-![](../../../static/img/it-it/applications/database/20250520090348.png)
+![](/img/it-it/applications/database/20250520090348.png)
 
 La form, come mostrato in figura, si compone di:
 * un ribbon, (Salva, Esegui).
@@ -43,7 +43,7 @@ La form, come mostrato in figura, si compone di:
 
 ### Data Sources
 
-![](../../../static/img/it-it/applications/database/20250520085246.png)
+![](/img/it-it/applications/database/20250520085246.png)
 
 I datasource sono delle sorgenti dati che permettono l'esposizione di dati in modo strutturato ed organizzato, e possono essere riutilizzato per popolare dashboard e/o extradata.  
 La form dei datasource si compone così come segue:  

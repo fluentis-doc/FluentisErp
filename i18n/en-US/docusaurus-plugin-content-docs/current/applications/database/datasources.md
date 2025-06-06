@@ -77,4 +77,4 @@ To manage the aggregation criterion, it is necessary to act on the 'Aggregation 
 **Dimensions** are a qualitative attribute, meaning a category or descriptor. They are used to segment or group data.  
 **Metrics** are a quantitative attribute, meaning a numerical value that can be measured, aggregated, or calculated.  
 We could thus aggregate sales invoices (object FSSalesInvoice) by invoice type (FSSalesInvoiceType.Code), as shown in the screenshot below.  
-![](../../../static/img/it-it/applications/database/20250529162809.png)
+![](/img/it-it/applications/database/20250529162809.png)
