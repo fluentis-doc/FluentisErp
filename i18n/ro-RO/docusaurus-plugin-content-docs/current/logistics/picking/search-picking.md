@@ -1,16 +1,16 @@
 ---
-title: Ricerca Picking
+title: Caută dispoziții de livrare
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Logistica > Picking**.
+Formularul se aflè pe calea **Logistică > Dispozitie de livrare**.
 
 import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Pulsanti specifici*  
-**DDT**: esegue la procedura per creare il documento DDT partendo da un picking.  
-**Fattura**: esegue la procedura per creare il documento fattura partendo da un picking. 
+#### Buton specific  
+**Aviz**: execută procedura pentru a crea un Aviz dintr-o dispozitie de livrare.  
+**Factură**: execută procedura pentru a crea o factură dintr-o dispozitie de livrare.  
 
-Sempre da questa form è possibile [Creare un nuovo picking](/docs/logistics/picking/picking-management), cliccando sul pulsante **Nuovo**. 
+De asemenea, din acest formular este posibil să [Creerea dispozitiei de livrare](/docs/logistics/picking/picking-management), făcând clic pe butonul **Nou**.
