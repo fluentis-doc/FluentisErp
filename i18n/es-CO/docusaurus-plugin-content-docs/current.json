@@ -1136,87 +1136,87 @@
     "description": "The label for category Inserimento ordini di conto lavoro in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Testata": {
-    "message": "Header",
+    "message": "Encabezado",
     "description": "The label for category Testata in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Reports": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Reports in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Bolle di consegna": {
-    "message": "Delivery Notes",
+    "message": "Notas de entrega",
     "description": "The label for category Bolle di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Nuova bolla di consegna": {
-    "message": "New Delivery Notes",
+    "message": "Nuevas Notas de Entrega",
     "description": "The label for category Nuova bolla di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Rientri": {
-    "message": "Search Returns",
+    "message": "Consulta de Devoluciones",
     "description": "The label for category Rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Nuovo rientro": {
-    "message": "New Return",
+    "message": "Nueva Devolución",
     "description": "The label for category Nuovo rientro in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category stampe in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Listini conto lavoro": {
-    "message": "Subcontractor Price Lists",
+    "message": "Listas de Precios de Subcontratistas",
     "description": "The label for category Listini conto lavoro in sidebar subcontractor"
   },
   "sidebar.projectManagement.category.Gestione progetti": {
-    "message": "Project Management",
+    "message": "Gestión de proyectos",
     "description": "The label for category Gestione progetti in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Nuovi progetti": {
-    "message": "New Project",
+    "message": "Nuevo Proyecto",
     "description": "The label for category Nuovi progetti in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Anagrafiche": {
-    "message": "Registers",
+    "message": "Registros",
     "description": "The label for category Anagrafiche in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Dipendente": {
-    "message": "Employee",
+    "message": "Empleado",
     "description": "The label for category Dipendente in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Gestione calendari": {
-    "message": "Calendars management",
+    "message": "Gestión de calendarios",
     "description": "The label for category Gestione calendari in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Richieste interventi": {
-    "message": "Intervention Requests",
+    "message": "Solicitudes de Intervención",
     "description": "The label for category Richieste interventi in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Interventi pianificati": {
-    "message": "Planned Intervention",
+    "message": "Intervención Planificada",
     "description": "The label for category Interventi pianificati in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Interventi": {
-    "message": "Intervention",
+    "message": "Intervención",
     "description": "The label for category Interventi in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Nuovo intervento": {
-    "message": "New Intervention",
+    "message": "Nueva intervención",
     "description": "The label for category Nuovo intervento in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Attività": {
-    "message": "Activity",
+    "message": "Actividad",
     "description": "The label for category Attività in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Stato avanzamento lavori": {
