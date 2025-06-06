@@ -1,43 +1,43 @@
 ---
-title: Scarico spunta
+title: Descărcare din linii bifate
 sidebar_position: 5
 ---
 
-:::important A cosa serve
-La procedura di Scarico Spunta di Fluentis è un modulo specializzato che consente di gestire il processo di scarico solo per le righe che sono state effettivamente spuntate durante le operazioni di picking. Questa funzionalità garantisce un'ondata di efficienza e precisione, permettendo di selezionare e registrare solo gli articoli che sono stati confermati come prelevati da magazzino.
+:::important Utilizare
+*Descărcare din linii bifate* permite gestionarea procesului de descărcare doar pentru liniile care au fost efectiv selectate în timpul operațiunilor de dispozitie de livrare. Această funcționalitate garantează un val de eficiență și precizie, permițând selectarea și înregistrarea doar a articolelor care au fost confirmate ca fiind prelevate din gestiune.
 
-Gli utenti possono ricercare i picking desiderati attraverso filtri personalizzati per individuare rapidamente quelli pertinenti. Una volta selezionati, l'interfaccia consente di creare le registrazioni di magazzino per le righe spuntate, mentre un riepilogo puntuale delle operazioni effettuate offre la possibilità di visualizzare dettagli e gestire eventuali rollback. 
+Utilizatorii pot căuta dispozitie de livrare-urile dorite prin intermediul filtrelor personalizate pentru a le identifica rapid pe cele relevante. Odată selectate, interfața permite crearea înregistrărilor de gestiune pentru liniile selectate, iar un rezumat prompt al operațiunilor efectuate oferă posibilitatea de a vizualiza detalii și a gestiona eventualele reveniri.
 
-La procedura di scarico spunta non solo riduce il rischio di errori, ma ottimizza anche la produttività, assicurando che le operazioni di scarico siano eseguite in modo coerente e affidabile.
+Procedura de descărcare dispozitie de livrare nu doar că reduce riscul de erori, dar optimizează și productivitatea, asigurând că operațiunile de descărcare sunt executate într-un mod coerent și de încredere.
 :::
 
-:::note Nota
-A differenza dello [Scarico picking](/docs/logistics/picking/unload-picking), questa procedura permette di eseguire le stesse funzioni ma solamente per le righe spuntate.
+:::note Notă
+Spre deosebire de [Descărcarea dispozitie de livrare](/docs/logistics/picking/unload-picking), această procedură permite efectuarea acelorași funcții, dar doar pentru liniile selectate.
 :::
 
-Selezionando uno o più picking e premendo il pulsante **Scarico** si apre una finestra che permette di effettuare la movimentazione dei picking per le righe spuntate.
+Selectând unul sau mai multe dispozitie de livrare-uri și apăsând butonul **Descărcare (Scarico)**, se deschide o fereastră care permite realizarea mișcărilor dispozitie de livrare pentru liniile selectate.
 
-**Filtro**
+**Filtru**
 
-In questo tab è possibile ricercare i picking desiderati in base ai filtri inseriti. E' inoltre possibile specificare la **Data di registrazione di magazzino**.
+În acest tab este posibil să căutați dispozitie de livrare-urile dorite pe baza filtrelor introduse. Este de asemenea posibil să specificați **Data înregistrării de gestiune**.
 
-*Pulsante specifico*:  
-> **Scarico**: crea le registrazioni di magazzino per i picking selezionati.  
+*Buton specific*:  
+> **Descărcare (Scarico)**: creează înregistrările de gestiune pentru dispozitie de livrare-urile selectate.  
 
 **Parametri**
 
-In questo tab è possibile specificare i parametri necessari per la creazione dei movimenti a magazzino. In particolare, per le righe picking sprovviste di magazzino e causale è possibile scegliere di non effettuare lo scarico per l'intero documento, di tralasciare l'articolo senza magazzino e causale, di visualizzare gli articoli che non sono stati scaricati, di utilizzare come magazzino e causale quelle impostate di default.
+În acest tab este posibil să specificați parametrii necesari pentru crearea mișcărilor în gestiune. În special, pentru liniile de dispozitie de livrare fără gestiune și șablon, este posibil să optați să nu efectuați descărcarea pentru întreg documentul, să omiteți articolul fără gestiune și șablon, să vizualizați articolele care nu au fost descărcate, să folosiți ca gestiune și șablon cele stabilite ca fiind implicite.
 
-**Riepilogo**
+**Rezumat**
 
-Il tab riepilogo permette di visualizzare le operazioni effettuate e, eventualmente, eseguire il rollback delle operazioni.
+Tabul rezumat permite vizualizarea operațiunilor efectuate și, eventual, executarea reveniri asupra operațiunilor.
 
-E' possibile inserire dei filtri per visualizzare solo le operazioni desiderate. Selezionando sulla griglia dei risultati una riga sarà possibile vedere il dettaglio (cioè i picking di riferimento e relative registrazioni) sui tab nella parte bassa della finestra.
+Este posibil să introduceți filtre pentru a vizualiza doar operațiunile dorite. Selectând o linie în grila de rezultate, va fi posibil să vedeți detaliile (adică dispozitie de livrare-urile de referință și înregistrările aferente) în tab-urile din partea de jos a ferestrei.
 
-Selezionando una o più righe sulla griglia di ricerca e premendo il pulsante *Cancella gli scarichi selezionati* saranno cancellate le registrazioni di magazzino effettuate.
+Selectând una sau mai multe linii în grila de căutare și apăsând butonul *Șterge descărcările selectate*, vor fi șterse înregistrările de gestiune efectuate.
 
-*Pulsanti specifici*:
-> **Cancella gli scarichi selezionati**: cancella le registrazioni derivate dalle righe selezionate sulla griglia dei risultati.  
-> **Ripristina picking**: cancella le registrazioni limitatamente alle righe picking selezionate.  
+*Buton specific*:
+> **Șterge descărcările selectate (Cancella gli scarichi selezionati)**: șterge înregistrările derivate din liniile selectate în grila de rezultate.  
+> **Restaurare dispozitie de livrare (Ripristina dispozitie de livrare)**: șterge înregistrările limitat la liniile dispozitie de livrare selectate.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru tot ceea ce nu este detaliat în acest document referitor la funcționarea comună a formularelor, consultați următorul link [Funcționalități, butoane și câmpuri comune](/docs/guide/common).

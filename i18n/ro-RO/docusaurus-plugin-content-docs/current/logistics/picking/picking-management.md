@@ -3,12 +3,12 @@ title: Creează dispoziţia de livrare
 sidebar_position: 3
 ---
 
-:::important Ce este
+:::important Utilizare
 Procedura a fost concepută pentru a optimiza procesul de colectare a articolelor din gestiune. Această funcționalitate permite utilizatorilor să genereze liste de colectare în mod eficient, începând de la diferitele tipuri de dispoziție de livrare configurabile în sistem. Prin crearea unui dispoziție de livrare, operatorii pot selecta articolele de executat, definind detalii esențiale cum ar fi cantitatea și locația de colectare.
 
-Procedura de gestionare a dispoziție de livrare se compune din diverse interfețe care permit vizualizarea și filtrarea ordinelor clienților, facilitând executarea totală sau parțială a ordinelor prin gestionare automatizată a informațiilor referitoare la articole. În plus, sistemul automatizează numărul de identificare al dispoziție de livrare, bazându-se pe parametrii preconfigurați, garantând astfel trasabilitate și ordine în operațiuni.
+Procedura de gestionare a dispoziției de livrare se compune din diverse interfețe care permit vizualizarea și filtrarea ordinelor clienților, facilitând executarea totală sau parțială a ordinelor prin gestionare automatizată a informațiilor referitoare la articole. În plus, sistemul automatizează numărul de identificare al dispoziție de livrare, bazându-se pe parametrii preconfigurați, garantând astfel trasabilitate și ordine în operațiuni.
 
-Datorită funcționalităților precum monitorizarea stării de executare a liniilor, înregistrarea loturilor și a numerelor de serie, și integrarea cu documente de transport precum avize și facturi, gestionarea dispoziție de livrare în Fluentis oferă o experiență operațională completă și flexibilă. Acest lucru permite companiilor să îmbunătățească eficiența logistică, să reducă erorile în timpul colectării și să asigure o satisfacție mai bună a clienților.
+Datorită funcționalităților precum monitorizarea stării de executare a liniilor, înregistrarea loturilor și a numerelor de serie, și integrarea cu documente de transport precum avize și facturi, gestionarea dispoziției de livrare în Fluentis oferă o experiență operațională completă și flexibilă. Acest lucru permite companiilor să îmbunătățească eficiența logistică, să reducă erorile în timpul colectării și să asigure o satisfacție mai bună a clienților.
 :::
 
 Form-ul se deschide:
@@ -20,7 +20,7 @@ sau prin
 
 ## 1. Date obligatorii
 
-**Tip dispoziție de livrare (Tipo picking)**: predefinit în *Configurare > Tabele > Logistică > Tipuri dispoziții de livrare*. Acest câmp determină intervalul de numerotare al documentului care se introduce și propune automat numărul dispoziției de livrare în baza datei inserăriiși a ultimului număr introdus;  
+**Tip dispoziție de livrare**: predefinit în *Configurare > Tabele > Logistică > Tipuri dispoziții de livrare*. Acest câmp determină intervalul de numerotare al documentului care se introduce și propune automat numărul dispoziției de livrare în baza datei inserăriiși a ultimului număr introdus;  
 
 **Cont**: reprezintă clientul/ furnizorul de referință (nu este obligatoriu);  
 
