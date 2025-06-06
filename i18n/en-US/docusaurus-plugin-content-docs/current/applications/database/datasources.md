@@ -5,7 +5,7 @@ sidebar_position: 0
 ---
 
 ### Form
-As mentioned in the general overview in section [LINK](docs/applications/database/database-intro.md), datasources allow exposing data in a structured and organized manner.  
+As mentioned in the general overview in section [LINK](/docs/applications/database/database-intro), datasources allow exposing data in a structured and organized manner.  
 The datasource form can be accessed through the following path: **Applications Resource Manager** > **Database** > **Data Sources**.  
 
 The datasource form is composed as follows:
