@@ -43,7 +43,11 @@ Viene visualizzata una richiesta/conferma dati per:
 > **Cliente** o **Fornitore**: è il destinatario della nuova *Nota di addebito* (dato obbligatorio), viene proposto il *Cliente* o *Fornitore* della *Non conformità* di origine.   
 > **Tipo fattura**: è il *Tipo documento* della nuova *Nota di addebito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
 > **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di addebito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione non conformità](/docs/quality/claims-and-non-compliance/non-compliances/procedures/non-compliance-valorisation), sessione *Riferimenti non conformità*.   
-> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di addebito*; viene proposto il *Tipo I.V.A.* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
+> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di addebito*.   
+> Viene proposto il *Tipo I.V.A.* con le seguenti priorità:   
+> 1. se esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* presente nel documento;   
+> 2. se non esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* associato al *Fornitore* della *Non conformità*;   
+> 3. se non esiste una *Dichiarazione di intento' e non è stato indicato un *Tipo I.V.A.* associato al *Fornitore* della *Non conformità*, viene considerato il *Tipo I.V.A.* associato al *Tipo non conformità*.   
 >
 > Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
 > Al termine dell'elaborazione la *Nota di addebito* appena creata viene visualizzata.   
@@ -234,13 +238,14 @@ E' l'elenco delle difettosità riscontrate da notificare al destinatario del doc
 >> **Note**: annotazioni libere sulla *Fase di rilevamento*.   
 >  
 > **Gravità**
->> **Codice**: è il codice della *Gravità* attribuita la difettosità; è possibile inserire solamente le *Gravità* attive.   
+>> **Codice**: è il codice della *Gravità* attribuita alla difettosità; è possibile inserire solamente le *Gravità* attive.   
 >> **Descrizione**: informazione di sola lettura è la descrizione della *Gravità*. 
 >  
 > **Chiusura difetto**   
 > Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere la gestione del *Difetto* specifico.   
+> La chiusura di tutti i *Difetti* non comporta automaticamente la chiusura della *Non conformità*.   
 >> **Chiuso**: indica che la gestione del *Difetto* specifico è stata completata; deve essere indicato manualmente dall'operatore.   
-All'atto della chiusura viene automaticamente proposta la data odierna come *Data chiusura* e con la possibilità di essere variata.   
+>> All'atto della chiusura vengono automaticamente proposte: *Data chiusura*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.* (*Nome* e *Persona* sono informazioni presenti nell'expander *Dati chiusura difetto* presente nel tabulatore *Dati difetto*).   
 >> **Data chiusura**: è la data in cui la gestione del *Difetto* specifico è stata completata.   
 >> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
 >  
@@ -253,15 +258,14 @@ All'atto della chiusura viene automaticamente proposta la data odierna come *Dat
 ### Dati difetto
 
 Sono le informazioni aggiuntive alla riga *Difetto* selezionato. Le informazioni gestite sono:   
-**Causa effettiva**: è la causa effettiva che ha generato la difettosità; è possibile inserire solamente le *Cause*, effettive, attive e previste dalla tipologia di *Non conformità* del documento.   
-**Note causa effettiva**: annotazioni libere sulla *Causa effettiva*.   
-**Soluzione proposta**: è il suggerimento di soluzione tecnica/commerciale/amministrativa da adottare; è possibile inserire solamente le *Soluzioni* attive.   
-**Note soluzione proposta**: annotazioni libere sulla *Soluzione proposta*.   
-**Decisione intrapresa**: è la decisione tecnica/commerciale/amministrativa effettuata per la risoluzione del difetto; è possibile inserire solamente le *Decisioni* attive.   
-**Note decisione intrapresa**: annotazioni libere sulla *Decisione intrapresa*.   
-**Risposta Fornitore/Interna**: annotazioni libere sull'argomento. Solitamente utilizzato per registrare un'eventuale risposta data dal destinatario della *Non conformità* relativa al *Difetto*.   
-
-**Dati chiusura difetto**: expander dove è possibile inserire le informazioni di chiusura del *Difetto*:   
+> **Causa effettiva**: è la causa effettiva che ha generato la difettosità; è possibile inserire solamente le *Cause*, effettive, attive e previste dalla tipologia di *Non conformità* del documento.   
+> **Note causa effettiva**: annotazioni libere sulla *Causa effettiva*.   
+> **Soluzione proposta**: è il suggerimento di soluzione tecnica/commerciale/amministrativa da adottare; è possibile inserire solamente le *Soluzioni* attive.   
+> **Note soluzione proposta**: annotazioni libere sulla *Soluzione proposta*.   
+> **Decisione intrapresa**: è la decisione tecnica/commerciale/amministrativa effettuata per la risoluzione del difetto; è possibile inserire solamente le *Decisioni* attive.   
+> **Note decisione intrapresa**: annotazioni libere sulla *Decisione intrapresa*.   
+> **Risposta Fornitore/Interna**: annotazioni libere sull'argomento. Solitamente utilizzato per registrare un'eventuale risposta data dal destinatario della *Non conformità* relativa al *Difetto*.   
+> **Dati chiusura difetto**: expander dove è possibile inserire le informazioni di chiusura del *Difetto*:   
 > **Nome**: è l'*Utente A.R.M.* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
 > **Persona**: è il *Dipendente* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
 > **Funzione**: è la *Funzione aziendale* che ha chiuso il *Difetto*.   

@@ -21,7 +21,7 @@ E' l'elenco degli *Oggetti reclamati* e si compone delle seguenti informazioni:
 >> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Reclami* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articoli* uguali verranno riportate in un'unica riga con le quantità sommate.   
 >  
 > **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo* reclamato.   
+>> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* principale dell'*Articolo* reclamato.   
 >> **Venduta**: è la quantità di *Articolo* venduta al mittente del *Reclamo*.   
 >> **Contestata**: è la quantità di *Articolo* contestata dal mittente del *Reclamo*.   
 >> **Resa**: è la quantità di *Articolo* resa dal mittente del *Reclamo*.   
@@ -67,6 +67,7 @@ In questo elenco è possibile inserire e consultare eventuali documenti allegati
 
 
 ### Team
+
 E' il gruppo di risorse che prenderanno parte alla gestione del *Reclamo* e si compone delle seguenti informazioni:   
 > **Funzione aziendale**   
 >> **Codice**: è il codice della *Funziona aziendale* da coinvolgere/coinvolta.   
@@ -83,6 +84,7 @@ E' il gruppo di risorse che prenderanno parte alla gestione del *Reclamo* e si c
 
 
 ### Azioni di contenimento
+
 Sono le azioni immediate che verranno intraprese fino all’implementazione dell’azione correttiva permanenti.   
 Queste permetteranno che il problema segnalato non si ripresenti e si compone delle seguenti informazioni:   
 > **Dati azione**   
@@ -109,6 +111,7 @@ Queste permetteranno che il problema segnalato non si ripresenti e si compone de
 
 
 ### Cause
+
 Sono le potenziali *Cause* che potrebbero spiegare perché il problema è accaduto con l'attribuzione di una percentuale di probabilità.   
 > **Sequenza**: è la *Sequenza* di visualizzazione delle *Cause*; viene proposto un progressivo con la possibilità di essere variato.   
 > **Causa** e **Descrizione causa**: è la causa che ha probabilmente generato il problema; è possibile inserire solamente le *Cause* attive e previste dai *Reclamo*.   
@@ -120,6 +123,7 @@ Sono le potenziali *Cause* che potrebbero spiegare perché il problema è accadu
 
 
 ### Azioni permanenti
+
 Sono le azioni permanenti che verranno intraprese tenendo presente che le stesse oltre a risolvere il problema, non causeranno effetti collaterali indesiderati.   
 L'elenco si compone delle seguenti informazioni:   
 > **Dati azione**   
@@ -147,6 +151,7 @@ L'elenco si compone delle seguenti informazioni:
 
 
 ### Convalida azioni
+
 Elenco, precompilato con tutte le *Azioni permanenti* precedentemente inserite ed *Attuate*, utilizzato per il controllo che le *Azioni* siano portate a termine entro le date previste e per valutarne l’implementazione e l’efficacia. Da questo elenco non è quindi possibile inserire nuove *Azioni* o eliminane di esistenti. L'elenco si compone delle seguenti informazioni:   
 > **Dati azione attuata**   
 >> **Sequenza**: è la *Sequenza* di visualizzazione delle *Azione permanente*; viene riportato il progressivo dell'*Azione permanente*. L'informazione è di sola lettura.   
@@ -171,6 +176,7 @@ All'inserimento di una qualsiasi altra informazione viene automaticamente propos
 
 
 ### Fasi
+
 Sono altre attività dove implementare altre azioni. L'elenco si compone delle seguenti informazioni:   
 > **Fasi identificate e/o implementate**   
 >> **Sequenza**: è la *Sequenza* di visualizzazione della *Fase*.   
@@ -193,3 +199,6 @@ Sono altre attività dove implementare altre azioni. L'elenco si compone delle s
 >   
 > **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto responsabile dell'*Attività*, non sia *Funziona aziendale* o *Dipendente*.   
 > **Note**: annotazioni libere.   
+
+
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   

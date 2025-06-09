@@ -39,7 +39,11 @@ Il pulsante è abilitato solamente se il *Reclamo* è stato salvato, approvato e
 Viene visualizzata una richiesta/conferma dati per:   
 > **Tipo fattura**: è il *Tipo documento* della nuova *Nota di accredito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo reclamo* del *Reclamo* di origine.   
 > **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di accredito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione reclami](/docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation), sessione *Riferimenti reclami*.   
-> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di accredito*; viene proposto il *Tipo I.V.A.* inserito nel *Tipo reclamo* della *Non conformità* di origine.   
+> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di accredito*.   
+> Viene proposto il *Tipo I.V.A.* con le seguenti priorità:   
+> 1. se esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* presente nel documento;   
+> 2. se non esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* associato al mittente del *Reclamo*;   
+> 3. se non esiste una *Dichiarazione di intento' e non è stato indicato un *Tipo I.V.A.* associato al mittente del *Reclamo*, viene considerato il *Tipo I.V.A.* associato al *Tipo reclamo*.   
 >
 > Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
 > Al termine dell'elaborazione la *Nota di accredito* appena creata viene visualizzata.   
@@ -137,7 +141,7 @@ Le informazioni gestite sono:
 > **Chiuso/In data**: expander dove è possibile inserire le informazioni di chiusura del *Reclamo*:   
 >> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere il *Reclamo*.  
 >> **Chiuso**: indica che il *Reclamo* è *Chiuso*.   
->> All'atto della chiusura vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
+>> All'atto della chiusura vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*.   
 >> **In data**: è la data in cui il *Reclamo* è stato *Chiuso*.   
 >> All'atto dell'inserimento della data vengono automaticamente proposte: *Nome* e *Persona* proposte come *Utente A.R.M.* collegato, *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiuso*.   
 >> **Nome**: è l'*Utente A.R.M.* che ha chiuso il *Reclamo*. L'informazione è di sola lettura.   
@@ -231,3 +235,6 @@ Le successive sessioni della gestione variano sulla base del *Modello* specifica
 > ### [Gestione difetti](/docs/quality/claims-and-non-compliance/claims/claim-dm)   
 >   
 > ### [8D Problem Solving](/docs/quality/claims-and-non-compliance/claims/claim-8d)
+
+
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
