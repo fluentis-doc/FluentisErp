@@ -1,40 +1,36 @@
 ---
-title: Scarico picking
+title: Descărcare dispoziţie livrare
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La procedura di Scarico Picking in Fluentis è progettata per facilitare la movimentazione degli articoli prelevati dal magazzino durante il processo di picking. Questa funzionalità consente agli utenti di scegliere uno o più picking già creati e, mediante un'interfaccia intuitiva, effettuare le registrazioni di magazzino necessarie per il corretto scarico degli articoli.
+:::important Utilizare
+Procedura este concepută pentru a facilita manipularea articolelor colectate din gestiune și permite utilizatorilor să aleagă unul sau mai multe dispoziții de livrare deja create și, printr-o interfață intuitivă, să efectueze înregistrările de gestiune necesare pentru descărcarea corectă a articolelor.
 
-All'interno della procedura, gli utenti possono applicare filtri per selezionare i picking desiderati e specificare la data di registrazione a magazzino. 
-Una volta selezionati, è possibile avviare il processo di scarico, assicurando che le movimenti siano registrati correttamente nel sistema. 
+În cadrul procedurii, utilizatorii pot aplica filtre pentru a selecta dispoziții de livrare dorite și a specifica data înregistrării în gestiune. 
+Odată selectate, se poate începe procesul de descărcare, asigurându-se că mișcările sunt înregistrate corect în sistem.
 
-Inoltre, il modulo offre funzionalità per gestire anomalie, come articoli senza magazzino e causale, o per visualizzare articoli non scaricati, migliorando così l'efficienza operativa e la tracciabilità delle giacenze.
+În plus, modulul oferă funcționalități pentru gestionarea anomaliilor, cum ar fi articolele fără gestiune și șablon, sau pentru a vizualiza articolele care nu au fost descărcate, îmbunătățind astfel eficiența operațională și trasabilitatea stocurilor.
 :::
 
-Selezionando uno o più picking e premendo il pulsante **Scarico** si apre una finestra che permette di effettuare la movimentazione dei picking.
+Selectând una sau mai multe dispoziții de livrare și apăsând butonul **Descărcare** se deschide o fereastră care permite efectuarea mișcărilor dispozițiilor de livrare.
 
-**Filtro**
+### Filtru  
 
-In questo tab è possibile ricercare i picking desiderati in base ai filtri inseriti. E' inoltre possibile specificare la **Data di registrazione di magazzino**.
+Permite căutarea dispozițiilor de livrare dorite pe baza filtrului introdus. De asemenea, se poate specifica **Data înregistrării în gestiune**.
 
-*Pulsante specifico*:  
-> **Scarico**: crea le registrazioni di magazzino per i picking selezionati.  
+#### Buton specific  
+> **Descărcare**: creează înregistrările de gestiune pentru dispozițiile de livrare selectate.
 
-**Parametri**
+### Parametri  
 
-In questo tab è possibile specificare i parametri necessari per la creazione dei movimenti a magazzino. In particolare, per le righe picking sprovviste di magazzino e causale è possibile scegliere di non effettuare lo scarico per l'intero documento, di tralasciare l'articolo senza magazzino e causale, di visualizzare gli articoli che non sono stati scaricati, di utilizzare come magazzino e causale quelle impostate di default.
+Permite inserarea parametrilor creării mișcărilor în gestiune. În special, pentru liniile cu dispoziții de livrare fără gestiune și șablon, se poate alege să nu se efectueze descărcarea pentru întreg documentul, să se ignore articolul fără gestiune și șablon, să se afișeze articolele care nu au fost descărcate și să se utilizeze gestiunea și șablonul prestabilite.
 
-**Riepilogo**
+### Rezumat  
 
-Il tab riepilogo permette di visualizzare le operazioni effettuate e, eventualmente, eseguire il rollback delle operazioni.
+Permite vizualizarea operațiunilor efectuate și, eventual, realizarea rollback-ului operațiunilor.
 
-E' possibile inserire dei filtri per visualizzare solo le operazioni desiderate. Selezionando sulla griglia dei risultati una riga sarà possibile vedere il dettaglio (cioè i picking di riferimento e relative registrazioni) sui tab nella parte bassa della finestra.
+Se pot insera filtre pentru a vizualiza doar operațiunile dorite. Pentru fiecare linie selectată în tabelul de rezultate sunt afișate detaliile (dispozițiile de livrare de referință și înregistrările aferente) în tab-urile din partea de jos a ferestrei.
 
-Selezionando una o più righe sulla griglia di ricerca e premendo il pulsante *Cancella gli scarichi selezionati* saranno cancellate le registrazioni di magazzino effettuate.
-
-*Pulsanti specifici*:
-> **Cancella gli scarichi selezionati**: cancella le registrazioni derivate dalle righe selezionate sulla griglia dei risultati.  
-> **Ripristina picking**: cancella le registrazioni limitatamente alle righe picking selezionate.  
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+#### Butoane specifice
+> **Șterge descărcările selectate**: șterge înregistrările derivate din liniile selectate în tabelul de rezultate.  
+> **Restaurează dispoziția de livrare**: reface starea anterioară a dispozițiilor de livrare selectate.  
