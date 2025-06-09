@@ -1,14 +1,14 @@
 ---
-title: Activity
-sidebar_label: Activity
+title: Attività
+sidebar_label: Attività
 sidebar_position: 0
 ---
 
-The *Activity* has been created to solve a complexity problem linked to the previous version of *Fluentis* and therefore reduce the skills required by the potential user (it was decided to divide the problem into blocks).
-The *Activity* can be seen as an atomic unit, or an element with a series of input and output parameters, which is analyzed and then divided into types (that they will be described later in this document). 
+Le **Attività** sono delle azioni atomiche che possono essere configurate per poter essere eseguite e concatenate in altri contesti.  
+L'utente crea un'attività quanto un'azione necessita di essere applicata in modo ripetitivo in diversi scenari d'azione.  
+Tramite le attività è possibile definire degli script che svolgono una determinata funzione in modo che poi possano essere riutilizzati all'interno di un Task.  
 
-The **Activity** form opens via the path **Application > Supervisor > Activities**.
+Infine, le Attività sono organizzate in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo.  
+Per creare un nuovo gruppo di Attività vedere l'articolo [creazioni gruppi](../../group-creation).
 
-Some of the functionalities inside the form refer to a standard use, therefore for anything not detailed in this document on the standard functions of the form, refer to the following link [functionalities, buttons and common entries](/docs/guide/common).
-
-The activities displayed are organized in groups (e.g. *Examples, Utilities, Demo*) by context of use. A new group of activities can be created, refer to the following link [group creation](../../group-creation) for more.
+La form **Attività** si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Attività**.
