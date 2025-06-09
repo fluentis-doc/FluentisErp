@@ -1,6 +1,6 @@
 ---
 title: Shipment Search 
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 The filter is located on the path Logistics > Shipments > Shipments.

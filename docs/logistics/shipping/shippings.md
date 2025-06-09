@@ -23,7 +23,7 @@ oppure
 
 Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno** corrente, ma possono essere modificati.
 
-## **2. Dati obbligatori**
+## **1. Dati obbligatori**
 
 - **Tipo di spedizione**: indica il tipo di spedizione e automaticamente viene inserito anche il *numero* della spedizione. Questo è predefinito in *Configurazione > Tabelle > Logistica > [Tipi di spedizione](/docs/configurations/tables/logistics/shipping-type)*.       
 - **Stato di spedizione**: predefinito in *Configurazione > Tabelle > Logistica > [Stati di spedizione](/docs/configurations/tables/logistics/shipping-states)*.        
@@ -73,7 +73,7 @@ Informazioni relative allo stato di evasione della spedizione:
 - **Stato evasione**: quando la spedizione è evasa tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso indicando lo stato *Evaso forzatamente*;
 - **Data chiusura**: indica la data di evasione del documento.
 
-## **3.  Groupage**
+## **3. Groupage**
 
 In questo tab vengono inserite tutte le informazioni relative al **gruopage**.      
 Questo consiste nel raggruppare diverse spedizioni di merci provenienti da mittenti differenti, ma destinate alla stessa area geografica, in un unico carico o container. In questo modo, è possibile sfruttare al meglio lo spazio disponibile nei mezzi di trasporto (come camion, container marittimi o aerei) e offrire un servizio più economico rispetto alla spedizione di singole partite di merci.
