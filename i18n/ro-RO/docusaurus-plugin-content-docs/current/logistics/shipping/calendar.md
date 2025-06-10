@@ -1,64 +1,38 @@
 ---
-title: Calendario
+title: Calendar
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-Il **planning** delle spedizioni è uno strumento fondamentale per ottimizzare la gestione logistica all'interno di un'azienda. Esso consente di pianificare, monitorare e coordinare tutte le attività legate alla spedizione delle merci, garantendo una distribuzione efficiente delle risorse e un'ottimizzazione dei tempi.      
-Grazie alla visualizzazione di dati cruciali come orari, vettori, automezzi e clienti, il **planning** facilita la programmazione delle attività quotidiane, riducendo i ritardi e migliorando la puntualità delle consegne. Inoltre, integrando funzionalità come la gestione dei periodi di inattività e l'aggiornamento dello stato delle spedizioni, offre un quadro completo e aggiornato delle operazioni logistiche, favorendo una migliore capacità decisionale e una maggiore efficienza operativa.
+:::important Utilizare
+Planificarea expedierilor este esențială pentru optimizarea gestionării logistice în cadrul unei companii. Aceasta permite planificarea, monitorizarea și coordonarea tuturor activităților legate de expedierea mărfurilor, asigurând o distribuție eficientă a resurselor și o optimizare a timpilor.  
+Datorită vizualizării unor date (orele, transportatorii, autovehiculele și clienții), planificarea facilitează programarea activităților zilnice, reducând întârzierile și îmbunătățind precizia expedierilor. În plus, integrând funcționalități precum gestionarea perioadelor de inactivitate și actualizarea stării expedierilor, oferă o imagine de ansamblu completă și actualizată a operațiunilor logistice, promovând o capacitate decizională mai bună și o eficiență operațională mai mare.
 :::
 
-Il calendario delle spedizioni si trova in: Logistica > Spedizioni > Calendario
+Calendarul expedierilor se află pe calea: **Logistică > Expedieri > Calendar** și afișează toate expedierile introduse în sistem, grupate în *timeline view* în funcție de șofer/transportator/autovehicul/client/fără grupare.  
+La deschiderea sa, intervalul vizualizat va fi data curentă + 7 zile, dacă există expedieri în această perioadă. În caz contrar, va fi arătat primul interval următor în care sunt expedieri.
 
-Il **calendario delle spedizioni** mostra tutte le spedizioni inserite a sistema, raggruppate in vista timeline in base a autista/vettore/automezzo/cliente/nessun raggruppamento.              
-All'apertura l'intervallo visualizzato sarà data odierna + 7 giorni se sono presenti spedizioni in tal periodo, altrimenti verrà mostrato il primo intervallo successivo in cui sono presenti spedizioni. 
+Pe lângă expedieri, în calendar sunt prezentate și perioadele de inactivitate ale autovehiculelor și transportatorilor.
 
-Oltre alle spedizioni, nel caledario sono mostrati i periodi di inattività degli automezzi e dei vettori. 
+În coloana din stânga se află datele referitoare la **șofer/transportator/autovehicul/client** în funcție de gruparea aleasă, iar în tabelul calendarului sunt afișate diferitele expedieri.  
+Chiar dacă durata expedierii este de doar o oră, aceasta va fi afișată în calendar ca fiind zilnică, pentru a facilita vizualizarea. În cazul în care se dorește o vizualizare mai detaliată, în ribbon bar faceți clic pe **Vizualizare cronologică orară**.  
+În acest fel, expedierea va fi afișată cu dimensiunea corespunzătoare duratei sale efective. Această opțiune poate fi utilă în cazul în care se utilizează zoom in/zoom out (ctrl + scroll al mouse-ului) pentru a obține cel mai mare detaliu orar al zilei.  
+Pentru a reveni la vizualizarea expedierilor zilnice, faceți clic pe butonul **Vizualizare cronologică zilnică** din ribbon bar.
 
-Nella colonna a sinistra sono presenti i dati relativi a **autista/vettore/automezzo/cliente in base al raggruppamento scelto**, e nella griglia del calendario sono posizionate le varie spedizioni.            
-Anche se la durata della spedizione è anche solo di un'ora, nel calendario questa verrà mostrata come giornaliera, per facilitarne la visualizzazione. Nel caso si volesse invece avere una vista più puntuale, dalla ribbon bar cliccare su **Vista timeline oraria**.                    
-In questo modo la spedizione verrà mostrata con la dimensione effettivamente corrispondente alla sua durata. Questa opzione può essere utile nel caso si utilizzi lo zoom in/zoom out (ctrl + scroll del mouse) per andare nel massimo dettaglio orario della giornata.               
-Per tornare alla visualizzazione delle spedizioni in modalità giornaliera, cliccare sul bottone **Vista timeline giornaliera** nella ribbon bar.
+#### Butoane specifice  
+> - **Vizualizează pe transportator**: în coloana din stânga vor fi afișati întâi toți transportatorii și expedierile respective; dacă în rândurile de grupare nu este prezent transportatorul, va fi considerat transportatorul din antetul expedierii.   
+- Dacă transportatorul nu este indicat nicăieri, la sfârșitul listei de transportatori afișați, vor fi enumerați șoferii corespunzători; dacă nu sunt prezenți șoferii în rândurile de grupare, va fi considerat șoferul din antetul expedierii.    
+- Dacă șoferul nu este indicat nicăieri, la sfârșitul listei de transportatori afișați, vor fi enumerați clienții.  
+- **Vizualizează pe șofer**: în coloana din stânga vor fi afișați întâi toți șoferii și expedierile respective; dacă în rândurile de grupare nu este prezent șoferul, va fi considerat șoferul din antetul expedierii.  
+- Dacă șoferul nu este indicat nicăieri, la sfârșitul listei de șoferi afișați, vor fi enumerați transportatorii corespunzători; dacă nu sunt prezenți transportatorii în rândurile de grupare, va fi considerat transportatorul din antetul expedierii.  
+- Dacă transportatorul nu este indicat nicăieri, la sfârșitul listei de șoferi afișați, vor fi enumerați clienții.  
+> - **Vizualizează pe client**: în coloana din stânga vor fi afișați toți clienții; dacă nu sunt prezenți, va exista o opțiune de tip "*altul*" care va grupa toate expedierile fără client asignat.  
+> - **Vizualizează pe autovehicul**: în coloana din stânga vor fi afișate toate autovehiculele; dacă în rândurile de grupare nu este prezent autovehiculul, va fi considerat autovehiculul din antetul expedierii.  
+- Dacă nu este prezent, va exista o opțiune de tip "*altul*" care va grupa toate expedierile fără autovehicul asignat.  
+> - **Fără grupare**: va fi afișat un calendar pentru tipul de expediere.
 
-Nella ribbon sono inoltre presenti i seguenti pulsanti: 
+Cu butonul din dreapta este posibil să se introducă o nouă expediere sau o perioadă de inactivitate pentru șofer sau autovehicul.
 
-- Ricerca: effettua un refresh della visualizzazione
+Culorile expedierilor reprezintă [Starea expedierii](/docs/configurations/tables/logistics/shipping-states).    
+Cu butonul din dreapta pe *expediere*, este posibil avansarea stării.
 
-- Visualizza per vettore: nella colonna a sinistra verranno mostrati prima tutti i vettori e le relative spedizioni; se nelle righe di groupage non è presente il vettore, verrà considerato il vettore presente nella testata della spedizione. 
->> Se il vettore non è indicato da alcuna parte, in coda alla lista dei vettori mostrati, verranno elencati i relativi autisti; se non presenti gli autisti nelle righe di groupage, verrà considerato l'autista presenti nella testata della spedizione. 
->> Se l'autista non è indicato da alcuna parte, in coda alla lista dei vettori mostrati, verranno elencati i clienti.
-
-- Visualizza per autista: nella colonna a sinistra verranno mostrati prima tutti gli autisti e le relative spedizioni; se nelle righe di groupage non è presente l'autista verrà considerato il l'autista presente nella testata della spedizione. 
->> Se l'autista non è indicato da alcuna parte, in coda alla lista degli autisti mostrati, verranno elencati i relativi vettori; se non presenti i vettori nelle righe di groupage, verrà considerato il vettore presente nella testata della spedizione. 
->> Se il vettore non è indicato da alcuna parte, in coda alla lista degli autisti mostrati, verranno elencati i clienti.
-
-- Visualizza per cliente: nella colonna a sinistra verranno mostrati tutti i clienti; se non presenti, ci sarà una voce di tipo "altro" che raggrupperà tutte le spedizioni senza cliente assegnato. 
-
-- Visualizza per automezzo: nella colonna a sinistra verranno mostrati tutti gli automezzi; se nelle righe di groupage non è presente l'automezzo, verrà considerato l'automezzo presente nella testata della spedizione. 
->> se non presente, ci sarà una voce di tipo "altro" che raggrupperà tutte le spedizioni senza automezzo assegnato. 
-
-- Nessun raggruppamento: verrà mostrato un calendario per tipo spedizione.
-
-Con il tasto destro è possibile inserire una nuova spedizione, oppure un periodo di inattività per autista o automezzo. 
-
-A sinistra sono presenti i filtri per: 
-- tipo trasporto: mittente, destinatario, vettore
-- automezzo
-- targa
-- numero di tracking
-- cliente
-- vettore
-- autista
-- Riferimento ordini cliente
-- Sito produttivo
-
-I colori delle spedizioni rappresentano lo [Stato della spedizione](/docs/configurations/tables/logistics/shipping-states).       
-Con tasto destro sulla spedizione, è possibile avanzare lo stato. 
-
-I colori assegnati all'elenco di autisti/automezzi/vettori/clienti sono casuali e vengono assegnati all'apertura del calendario, fino al prossimo cambio vista.
-
-
-
-
-
-
+Culorile atribuite listei de șoferi/autovehicule/transportatori/clienți sunt aleatoare și sunt asignate la deschiderea calendarului, până la următoarea vizualizare.
