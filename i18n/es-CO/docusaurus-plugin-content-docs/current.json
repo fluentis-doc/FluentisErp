@@ -1404,27 +1404,27 @@
     "description": "The label for category Periodi in sidebar controlling"
   },
   "sidebar.controlling.category.previsioni di vendita": {
-    "message": "Sales Forecast",
+    "message": "Pronóstico de Ventas",
     "description": "The label for category previsioni di vendita in sidebar controlling"
   },
   "sidebar.controlling.category.Famiglie prodotti": {
-    "message": "Product family",
+    "message": "Familia de Productos",
     "description": "The label for category Famiglie prodotti in sidebar controlling"
   },
   "sidebar.controlling.category.Costo prodotto": {
-    "message": "Product cost",
+    "message": "Costo del Producto",
     "description": "The label for category Costo prodotto in sidebar controlling"
   },
   "sidebar.guide.category.Avviamento applicazione": {
-    "message": "Start Application",
+    "message": "Iniciar Aplicación",
     "description": "The label for category Avviamento applicazione in sidebar guide"
   },
   "sidebar.guide.category.Operare con i dati": {
-    "message": "Data Operations",
+    "message": "Operaciones de Datos",
     "description": "The label for category Operare con i dati in sidebar guide"
   },
   "sidebar.guide.category.Glossario": {
-    "message": "Glossary",
+    "message": "Glosario",
     "description": "The label for category Glossario in sidebar guide"
   },
   "sidebar.guide.category.Pannelli laterali": {
@@ -1432,47 +1432,47 @@
     "description": "The label for category Pannelli laterali in sidebar guide"
   },
   "sidebar.guide.category.Form Navigator": {
-    "message": "Form Navigator",
+    "message": "Navegador de Formularios",
     "description": "The label for category Form Navigator in sidebar guide"
   },
   "sidebar.guide.category.Object Navigator": {
-    "message": "Object Navigator",
+    "message": "Navegador de Objetos",
     "description": "The label for category Object Navigator in sidebar guide"
   },
   "sidebar.guide.category.Status Bar": {
-    "message": "Status Bar",
+    "message": "Barra de Estado",
     "description": "The label for category Status Bar in sidebar guide"
   },
   "sidebar.guide.category.Applications": {
-    "message": "Applications",
+    "message": "Aplicaciones",
     "description": "The label for category Applications in sidebar guide"
   },
   "sidebar.guide.category.ARM": {
-    "message": "ARM",
+    "message": "Gestión de Relaciones Avanzadas",
     "description": "The label for category ARM in sidebar guide"
   },
   "sidebar.guide.category.Business Layer": {
-    "message": "Business Layer",
+    "message": "Capa de Negocio",
     "description": "The label for category Business Layer in sidebar guide"
   },
   "sidebar.guide.category.Data Sources": {
-    "message": "Data Sources",
+    "message": "Fuentes de datos",
     "description": "The label for category Data Sources in sidebar guide"
   },
   "sidebar.guide.category.Datasource Object Form": {
-    "message": "Datasource Object Form",
+    "message": "Formulario del Objeto de fuentes de Datos",
     "description": "The label for category Datasource Object Form in sidebar guide"
   },
   "sidebar.guide.category.User Interface Wizard": {
-    "message": "User Interface Wizard",
+    "message": "Asistente de Interfaz de Usuario",
     "description": "The label for category User Interface Wizard in sidebar guide"
   },
   "sidebar.guide.category.Dashboard Designer Wizard": {
-    "message": "Dashboard Designer Wizard",
+    "message": "Asistente de Diseño de Tableros",
     "description": "The label for category Dashboard Designer Wizard in sidebar guide"
   },
   "sidebar.guide.category.BizLink": {
-    "message": "BizLink",
+    "message": "Conector Empresarial",
     "description": "The label for category BizLink in sidebar guide"
   },
   "sidebar.guide.category.CRM": {
@@ -1480,43 +1480,42 @@
     "description": "The label for category CRM in sidebar guide"
   },
   "sidebar.financeArea.category.Calcolo Interessi": {
-    "message": "Interest Calculation",
+    "message": "Cálculo de intereses",
     "description": "The label for category Calcolo Interessi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gest. Autofattura Elettronica": {
-    "message": "Electronic Self-Invoicing Management",
+    "message": "Gestión de Autofacturación Electrónica",
     "description": "The label for category Gest. Autofattura Elettronica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Casi particolari e Regimi specifici": {
-    "message": "Special Cases and Specific Regimes",
+    "message": "Casos Especiales y Regímenes Específicos",
     "description": "The label for category Casi particolari e Regimi specifici in sidebar financeArea"
   },
   "sidebar.erpHome.category.Anagrafiche": {
-    "message": "Registers",
+    "message": "Registros",
     "description": "The label for category Anagrafiche in sidebar erpHome"
   },
   "sidebar.erpHome.category.Crea anagrafica": {
-    "message": "Create Register",
+    "message": "Crear Registro",
     "description": "The label for category Crea anagrafica in sidebar erpHome"
   },
   "sidebar.erpHome.category.Anagrafiche clienti/fornitori": {
-    "message": "Customer/Vendor Registers",
+    "message": "Registros de Clientes/Proveedores",
     "description": "The label for category Anagrafiche clienti/fornitori in sidebar erpHome"
   },
   "sidebar.erpHome.category.Crea nuovo articolo": {
-    "message": "Create New Item",
+    "message": "Crear Nuevo Artículo",
     "description": "The label for category Crea nuovo articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Anagrafica articolo": {
-    "message": "Item Registry",
+    "message": "Registro de Artículos",
     "description": "The label for category Anagrafica articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Cicli di lavoro": {
-    "message": "Production cycles",
-    "description": "The label for category Cicli di lavoro in sidebar erpHome"
-  },
+    "message": "Ciclos de Producción",
+    "description": "The label for category Cicli di lavoro in sidebar erpHome"  },
   "sidebar.erpHome.category.Crea assieme": {
-    "message": "Create Assembly",
+    "message":    ",
     "description": "The label for category Crea assieme in sidebar erpHome"
   },
   "sidebar.erpHome.category.Dipendenti": {

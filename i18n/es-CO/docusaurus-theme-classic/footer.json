@@ -1,6 +1,6 @@
 {
   "link.title.Fluentis Documentation": {
-    "message": "Fluentis Documentation",
+    "message": "Documentación de Fluentis",
     "description": "The title of the footer links column with title=Fluentis Documentation in the footer"
   },
   "link.title.Integration": {
@@ -24,15 +24,15 @@
     "description": "The label of footer link with label=ARM linking to https://docs.fluentis.com/Arm/"
   },
   "link.item.label.Integration": {
-    "message": "Integration",
+    "message": "Integración",
     "description": "The label of footer link with label=Integration linking to https://docs.fluentis.com/Integration/"
   },
   "link.item.label.Training": {
-    "message": "Training",
+    "message": "Capacitación",
     "description": "The label of footer link with label=Training linking to https://training.fluentis.com/"
   },
   "link.item.label. Web Site": {
-    "message": " Web Site",
+    "message": " Sitio web",
     "description": "The label of footer link with label= Web Site linking to https://www.fluentis.com/it/"
   },
   "link.item.label. Instagram": {
