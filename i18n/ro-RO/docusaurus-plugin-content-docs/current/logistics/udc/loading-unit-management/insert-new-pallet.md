@@ -1,12 +1,26 @@
 ---
-title: Inserare UdI nou
+title: Inserimento nuova UDC
 sidebar_position: 3
 ---
 
-Pentru a crea un nou UdI, este suficient să fie inserată, în gridul principal, o linie nouă cu anul, grupul și tipul paletului. Vor fi completate automat câmpurile din registru relative la dimensiuni și greutăți. Este obligatorie inserarea operatorului (operatorul trebuie să aibă drepturi pentru crearea paletului). Câmpurile care fac referire la documente sunt populate doar dacă paletul este creat din procedurile: dispoziție de livrare sau listă de ieșiri.
+Al fine di creare una nuova UDC è sufficiente inserire una nuova riga sulla griglia principale specificando anno, gruppo, numero e tipo. Questi campi definiscono la chiave univoca per ogni UDC.      
+Verranno completati in automatico i campi di anagrafica relativi a dimensioni e pesi (ricavandole da quanto indicato nella tabella **Tipi UDC**) che comunque possono essere cambiati.        
 
-După crearea paletului se poate insera articolul sau articolele care îl compun. Pentru aceasta este necesară selectarea paletului din gridul principal și inserarea unei noi linii în gridul secundar (cel care se referă la articole). Inserarea prevede specificarea clasei, codului (varianta, daca articolul este are variante) și cantitate. Și în acest caz câmpurile care se referă la documente  sunt populate doar dacă crearea este realizată din proceduri automate.
+Inoltre, è necessario indicare il magazzino e l’ubicazione, dopo di che è possibile spostarsi nel tab Dettaglio UDC, dove è possibile inserire all'interno l'articolo o gli articoli che la compongono.
 
+L'inserimento, può avvenire tramite il pulsante dedicato *Nuovo articolo UDC*, oppure tramite l’inserimento direttamente nella prima riga libera. In entrambi i casi, questo prevede di specificare obbligatoriamente classe, codice, eventualmente la variante se l'articolo è gestito a variante, e quantità. È possibile associare all'articolo anche la riga ordine cliente, scegliendo nell'apposita colonna il Tipo e il numero dell'Ordine cliente. Le informazioni relative al magazzino verranno aggiornate automaticamente dopo il carico dell’UDC.
+
+*Flag*:
+
+- **Stampata**: viene settato automaticamente una volta che è stata stampata l'unità di carico;      
+- **Caricata**: viene settato automaticamente una volta che è stata caricata l'unità di carico;          
+- **Scaricata**: viene settato automaticamente una volta che è stata scaricata l'unità di carico; 
+- **Da unità di carico**: viene settato automaticamente quando l'unità di carico ha un'unità di carico padre. 
+
+*Pulsanti specifici*:
+
+> **Nuovo articolo UDC**: permette di aggiungere un nuovo articolo all'unità di carico;         
+> **Cancella articolo UDC**: permette di rimuovere un nuovo articolo dall'unità di carico.         
 
 
 
