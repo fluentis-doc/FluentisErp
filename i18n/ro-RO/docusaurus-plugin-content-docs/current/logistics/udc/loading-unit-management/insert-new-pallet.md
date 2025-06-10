@@ -1,28 +1,18 @@
 ---
-title: Inserimento nuova UDC
+title: Inserare UdI nouă
 sidebar_position: 3
 ---
 
-Al fine di creare una nuova UDC è sufficiente inserire una nuova riga sulla griglia principale specificando anno, gruppo, numero e tipo. Questi campi definiscono la chiave univoca per ogni UDC.      
-Verranno completati in automatico i campi di anagrafica relativi a dimensioni e pesi (ricavandole da quanto indicato nella tabella **Tipi UDC**) che comunque possono essere cambiati.        
+Pentru a crea o nouă UdI, este suficient să inserați un nou rând în tabelul principal specificând anul, grupul, numărul și tipul. Aceste câmpuri definesc cheia unică pentru fiecare UdI.      
+Câmpurile referitoare la dimensiuni și greutăți vor fi completate automat (pe baza tabelului **Tipuri UdI**), dar pot fi modificate.
 
-Inoltre, è necessario indicare il magazzino e l’ubicazione, dopo di che è possibile spostarsi nel tab Dettaglio UDC, dove è possibile inserire all'interno l'articolo o gli articoli che la compongono.
+De asemenea, este necesar să indicați gestiunea și locația, după care puteți să accesați tab-ul *Detaliu UdI*, unde puteți insera articolul sau articolele care o compun.
 
-L'inserimento, può avvenire tramite il pulsante dedicato *Nuovo articolo UDC*, oppure tramite l’inserimento direttamente nella prima riga libera. In entrambi i casi, questo prevede di specificare obbligatoriamente classe, codice, eventualmente la variante se l'articolo è gestito a variante, e quantità. È possibile associare all'articolo anche la riga ordine cliente, scegliendo nell'apposita colonna il Tipo e il numero dell'Ordine cliente. Le informazioni relative al magazzino verranno aggiornate automaticamente dopo il carico dell’UDC.
+Inserarea se poate efectua cu butonul *Articol UdI nou* sau inserându-l direct în primul rând liber. În ambele cazuri, este obligatoriu să specificați clasa, codul, eventual varianta, dacă articolul este gestionat pe variante, și cantitatea. 
+Articolului i se poate asocia și rândul ordinului client, alegând în coloana corespunzătoare *Tipul* și *Numărul* ordinului client. Informațiile referitoare la gestiune vor fi actualizate automat după încărcarea UdI-ului.
 
-*Flag*:
-
-- **Stampata**: viene settato automaticamente una volta che è stata stampata l'unità di carico;      
-- **Caricata**: viene settato automaticamente una volta che è stata caricata l'unità di carico;          
-- **Scaricata**: viene settato automaticamente una volta che è stata scaricata l'unità di carico; 
-- **Da unità di carico**: viene settato automaticamente quando l'unità di carico ha un'unità di carico padre. 
-
-*Pulsanti specifici*:
-
-> **Nuovo articolo UDC**: permette di aggiungere un nuovo articolo all'unità di carico;         
-> **Cancella articolo UDC**: permette di rimuovere un nuovo articolo dall'unità di carico.         
-
-
-
-
-
+#### Parametri  
+- **Tipărită**: se setează automat odată ce unitatea de încărcare a fost tipărită;      
+- **Încărcatăă**: se setează automat odată ce unitatea de încărcare a fost încărcată;          
+- **Descărcatăă**: se setează automat odată ce unitatea de încărcare a fost descărcată; 
+- **Din unitate de încărcare**: se setează automat atunci când unitatea de încărcare are o unitate de încărcare paternă.
