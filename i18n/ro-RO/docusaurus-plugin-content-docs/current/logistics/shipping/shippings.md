@@ -148,6 +148,6 @@ Pentru a introduce o nouă cheltuială este necesar să completați următoarele
 - **Tip cheltuieli / Descriere**: permite alegerea tipurilor de cheltuieli predefinite în tabelul [Tipuri cheltuieli](/docs/configurations/tables/general-settings/expenses-types/);  
 - **Sumă cheltuieli**: indică valoarea cheltuielii exprimată în moneda documentului;  
 - **Descriere cheltuieli**: Detaliu declarații: se introduce eventual declarația de intenție valabilă pentru client;  
-- **TVA**: permite alegerea cotei TVA, predefinite în tabelul [Cote/Modalități TVA](/docs/configurations/tables/finance/vat-rates/).  
+- **TVA**: permite alegerea cotei TVA, predefinite în tabelul [Cote TVA](/docs/configurations/tables/finance/vat-rates/).  
 - **Note**: permite introducerea unei note libere;  
 - **Sumă totală**: permite vizualizarea sumei totale a expedierii dată de suma valorilor introduse în tabelul *Cheltuieli*.
