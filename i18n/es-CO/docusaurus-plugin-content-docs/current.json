@@ -1356,51 +1356,51 @@
     "description": "The label for category Registrazioni in sidebar controlling"
   },
   "sidebar.controlling.category.prima nota": {
-    "message": "Journal Entry",
+    "message": "Asiento en el Diario",
     "description": "The label for category prima nota in sidebar controlling"
   },
   "sidebar.controlling.category.storico": {
-    "message": "History",
+    "message": "Historial",
     "description": "The label for category storico in sidebar controlling"
   },
   "sidebar.controlling.category.visualizzazione": {
-    "message": "View",
+    "message": "Vista",
     "description": "The label for category visualizzazione in sidebar controlling"
   },
   "sidebar.controlling.category.Budgeting": {
-    "message": "Budgeting",
+    "message": "Presupuestación",
     "description": "The label for category Budgeting in sidebar controlling"
   },
   "sidebar.controlling.category.registrazioni extra contabili di budget": {
-    "message": "Off-balance Sheet Recording",
+    "message": "Registros fuera de balance",
     "description": "The label for category registrazioni extra contabili di budget in sidebar controlling"
   },
   "sidebar.controlling.category.registrazioni di budget": {
-    "message": "Budget Records",
+    "message": "Registros presupuestales",
     "description": "The label for category registrazioni di budget in sidebar controlling"
   },
   "sidebar.controlling.category.Reporting": {
-    "message": "Reporting",
+    "message": "Generación de informes",
     "description": "The label for category Reporting in sidebar controlling"
   },
   "sidebar.controlling.category.Riclassificazioni": {
-    "message": "Reclassifications",
+    "message": "Reclasificaciones",
     "description": "The label for category Riclassificazioni in sidebar controlling"
   },
   "sidebar.controlling.category.modelli di riclassificazione": {
-    "message": "Reclassifications patterns",
+    "message": "Patrones de reclasificación",
     "description": "The label for category modelli di riclassificazione in sidebar controlling"
   },
   "sidebar.controlling.category.Comparazione riclassificazioni": {
-    "message": "Reclassifications comparisons",
+    "message": "Comparaciones de reclasificaciones",
     "description": "The label for category Comparazione riclassificazioni in sidebar controlling"
   },
   "sidebar.controlling.category.Previsioni di vendita": {
-    "message": "Sales Forecast",
+    "message": "Pronóstico de ventas",
     "description": "The label for category Previsioni di vendita in sidebar controlling"
   },
   "sidebar.controlling.category.Periodi": {
-    "message": "Periods",
+    "message": "Períodos",
     "description": "The label for category Periodi in sidebar controlling"
   },
   "sidebar.controlling.category.previsioni di vendita": {
