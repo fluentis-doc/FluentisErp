@@ -18,7 +18,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Nome** e il **Cognome**.  
 Inoltre, è possibile inserire anche i seguenti valori:
-- **Licenza di guida**: permette di inserire la patente di guida dell'autista tra quelle inserite in [*Licenze di guida automezzo*](/docs/configurations/tables/logistics/motorvehicle-driving-licences);      
+- **Patenti di guida**: permette di inserire la patente di guida dell'autista tra quelle inserite in [*Patenti di guida automezzi*](/docs/configurations/tables/logistics/motorvehicle-driving-licences);      
 - **Risorsa assegnata**: permette di indicare la [Risorsa progetti](/docs/configurations/tables/project-management/project-resources/) assegnata al veicolo;       
 - **Dipendente**: permette di indicare il dipendente interno associato;         
 - **Dipendente esterno assegnato**: permette di indicare manualmente il dipendente esterno associato alla risorsa.

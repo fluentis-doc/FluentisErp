@@ -32,7 +32,7 @@ le **Spedizioni**:
 - definire gli [*Autisti automezzo*](/docs/logistics/motorvehicles/motorvehicle-drivers)      
 - definire i [*Motivi di fermo autoveicolo*](/docs/configurations/tables/logistics/motorvehicle-off-time-reasons)     
 - definire i [*Motivi di assenza del conducente*](/docs/configurations/tables/logistics/driver-off-time-reasons) 
-- definire le [*Licenze di guida automezzo*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)     
+- definire le [*Patenti di guida automezzi*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)     
 - definire il tipo [*Proprietà automezzi*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
 - definire i [*Marchi automezzi*](/docs/configurations/tables/logistics/motorvehicle-brands)   
 - definire i [*Tipo carburante automezzo*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
