@@ -1,43 +1,43 @@
 ---
-title: Introduzione
+title: Introducere
 sidebar_position: 1
 ---
 
-Questo nuovo strumento è stato sviluppato per ottimizzare e semplificare il processo di spedizione, consentendo un controllo più efficace e integrato di tutte le attività logistiche.
-La **gestione spedizioni** di Fluentis include la funzione di **groupage**, che permette di consolidare diverse spedizioni di merci provenienti da vari mittenti ma dirette verso la stessa area geografica in un unico carico o container.       
-Ciò consente di utilizzare in modo più efficiente lo spazio disponibile sui mezzi di trasporto, come camion, container marittimi o aerei, e di offrire un servizio più economico rispetto alla spedizione di singole merci.         
-In aggiunta, è stato implementato un **avanzato strumento di pianificazione** che consente di visualizzare le spedizioni per mezzo, autista, vettore e cliente. Grazie a una semplice funzionalità di drag & drop, gli operatori possono facilmente organizzare le spedizioni, anticipandole o posticipandole, e modificare il mezzo o l'autista incaricato, garantendo una gestione più flessibile e reattiva.
+Acest nou instrument a fost dezvoltat pentru a optimiza și simplifica procesul de expediere, permițând un control mai eficient și integrat al tuturor activităților logistice.  
+**Gestionare expedieri** include procedura de **groupage**, care permite consolidarea diferitelor expedieri de mărfuri provenind de la diferiți expeditori, dar direcționate către aceeași zonă geografică, într-un singur transport sau container.        
+Aceasta permite utilizarea mai eficientă a spațiului disponibil în mijloacele de transport, precum camioane, containere maritime sau aeriene, și oferă un serviciu mai economic în comparație cu expedierea de mărfuri individuale.         
+În plus, a fost implementat un **instrument avansat de planificare** care permite vizualizarea expedierilor pe: mijloc de transport, șofer, transportator și client. Datorită unei funcționalități simple de drag & drop, operatorii pot organiza cu ușurință expedierile, anticipându-le sau amânându-le și modificând mijlocul de transport sau șoferul responsabil, garantând o gestionare mai flexibilă.
 
-## Moduli dell'area 
+## Module arie 
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/shipping/shippings-intro">Spedizioni</Link>
-        <p><Link to="/docs/logistics/shipping/shippings" className="bold-link">Spedizioni</Link></p>
-        <p>Tramite la gestione groupage, è possibile raggruppare le spedizioni di diversi clienti o fornitori in un'unica unità di trasporto.</p>
-        <p><Link to="/docs/logistics/shipping/calendar" className="bold-link">Calendario</Link></p>
-        <p>Consente di pianificare e gestire in modo efficiente le attività operative e logistiche, ottimizzando le risorse e migliorando il coordinamento delle spedizioni.</p>
+###     <Link to="/docs/logistics/shipping/shippings-intro">expedieri</Link>
+        <p><Link to="/docs/logistics/shipping/shippings" className="bold-link">expedieri</Link></p>
+        <p>Prin gestionarea groupage, este posibil să se grupeze expedierile de la diferiți clienți sau furnizori într-o singură unitate de transport.</p>
+        <p><Link to="/docs/logistics/shipping/calendar" className="bold-link">Calendar</Link></p>
+        <p>Permite planificarea și gestionarea eficientă a activităților operaționale și logistice, optimizând resursele și îmbunătățind coordonarea expedierilor.</p>
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Condiții utilizare expedierile
 
-le **Spedizioni**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) 
-- definire un [*Tipi di spedizione*](/docs/configurations/tables/logistics/shipping-type)        
-- definire un [*Stati di spedizione*](/docs/configurations/tables/logistics/shipping-states)     
-- definire gli [*Automezzi*](/docs/logistics/motorvehicles/motorvehicle)   
-- definire gli [*Autisti automezzo*](/docs/logistics/motorvehicles/motorvehicle-drivers)      
-- definire i [*Motivi di fermo autoveicolo*](/docs/configurations/tables/logistics/motorvehicle-off-time-reasons)     
-- definire i [*Motivi di assenza del conducente*](/docs/configurations/tables/logistics/driver-off-time-reasons) 
-- definire le [*Licenze di guida automezzo*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)     
-- definire il tipo [*Proprietà automezzi*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
-- definire i [*Marchi automezzi*](/docs/configurations/tables/logistics/motorvehicle-brands)   
-- definire i [*Tipo carburante automezzo*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
-- definire i [*Tipi automezzi*](/docs/configurations/tables/logistics/motorvehicle-Type)  
+- creați articole în [*Registru articole*](/docs/erp-home/registers/items/create-new-item) 
+- definiți un [*Tip de expediere*](/docs/configurations/tables/logistics/shipping-type)        
+- definiți un [*Stare de expediere*](/docs/configurations/tables/logistics/shipping-states)     
+- definiți [*Autovehicule*](/docs/logistics/motorvehicles/motorvehicle)   
+- definiți [*Șoferi autovehicul*](/docs/logistics/motorvehicles/motorvehicle-drivers)      
+- definiți [*Motive oprire autovehicul*](/docs/configurations/tables/logistics/motorvehicle-off-time-reasons)     
+- definiți [*Motive absență șofer*](/docs/configurations/tables/logistics/driver-off-time-reasons) 
+- definiți [*Permise de conducere autovehicul*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)     
+- definiți tipul [*Proprietăți autovehicul*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
+- definiți [*Mărci autovehicul*](/docs/configurations/tables/logistics/motorvehicle-brands)   
+- definiți [*Tip carburant autovehicul*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
+- definiți [*Tipuri de autovehicul*](/docs/configurations/tables/logistics/motorvehicle-Type)  
 
-## Collegamenti con altri moduli
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) e agli [*Ordini clienti*](/docs/sales/sales-orders/settings) dato che è possibile aggiungere gli articoli direttamente da un ordine.           
-Inoltre da una spedizione è possibile creare direttamente [*DDT*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*Fatture*](/docs/sales/sales-invoices/general-overview) di vendita ed anche [Picking](/docs/logistics/picking/picking-intro). 
+## Conexiuni cu alte module
+
+Acestea sunt strâns legate de [*Registru articole*](/docs/erp-home/registers/items/create-new-item) și de [*Ordine clienți*](/docs/sales/sales-orders/settings), deoarece vă permite să adăugați articole direct dintr-un ordin.           
+În plus, dintr-o expediere se poate crea direct [*Avize de expediere*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*Facturi*](/docs/sales/sales-invoices/general-overview) de vânzare și, de asemenea, [*Dispoziţii de livrare*](/docs/logistics/picking/picking-intro).

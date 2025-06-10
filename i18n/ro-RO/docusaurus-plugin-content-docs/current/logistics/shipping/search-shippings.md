@@ -1,19 +1,16 @@
 ---
-title: Ricerca spedizioni
+title: Căutare expedieri
 sidebar_position: 2
 ---
 
-Il filtro si trova sul percorso Logistica > Spedizioni > Spedizioni.
+Filtrul se află pe calea **Logistica > Expedieri > Expedieri**.
 
-La gestione delle **Spedizioni** in Fluentis permette di gestire e organizzare in modo efficace le spedizioni dei clienti, consolidandole in un unico processo per massimizzare l'efficienza. Attraverso il raggruppamento delle spedizioni, il sistema ottimizza le operazioni logistiche, riducendo i costi e migliorando i tempi di consegna.
+Gestionarea **Expedierilor** în Fluentis permite organizarea și gestionarea eficientă a expedierilor clienților, consolidându-le într-un singur proces pentru a maximiza eficiența. Prin gruparea expedierilor, sistemul optimizează operațiunile logistice, reducând costurile și îmbunătățind timpii de livrare.
 
-Il modulo **Spedizioni** consente di gestire le spedizioni create.
+Modulul **Expedieri** permite gestionarea expedierilor create.
 
 import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-Per poter inserire una nuova [Spedizione](/docs/logistics/shipping/shippings) è necessario premere il pulsante **Nuovo**.
-
-
-
+Pentru a putea introduce o nouă [Expediere](/docs/logistics/shipping/shippings), apăsați butonul **Nou**.
