@@ -1,181 +1,153 @@
 ---
-title: Spedizioni
+title: Expedieri
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La gestione delle **Spedizioni** in Fluentis rappresenta un significativo avanzamento nella gestione logistica e operativa per le aziende che utilizzano questa piattaforma ERP. Questa è stata progettata per ottimizzare e semplificare il processo di spedizione, offrendo un controllo più efficiente e integrato di tutte le attività logistiche.
-Il sistema di gestione delle spedizioni in Fluentis introduce anche la possibilità di creare groupage, un processo logistico attraverso cui le spedizioni di diversi clienti o fornitori vengono raggruppate in un'unica unità di trasporto. 
+:::important Utilizare
+Gestionarea **Expedierilor** în Fluentis reprezintă un progres semnificativ în managementul logistic și operațional pentru companiile care utilizează această platformă ERP. A fost concepută pentru a optimiza și simplifica procesul de expediere, oferind un control mai eficient și integrat al tuturor activităților logistice. 
+Sistemul de gestionare a expedierilor din Fluentis introduce de asemenea posibilitatea de a crea grupări, un proces logistic prin care expedierile diferitelor clienți sau furnizori sunt consolidate într-o singură unitate de transport.
 
-Questo metodo di consolidamento offre vari benefici:
+Această metodă de consolidare oferă diverse beneficii:
 
-- **Riduzione dei Costi**: La creazione di groupage permette di ottimizzare l'uso degli spazi di carico e di ridurre i costi di trasporto per unità di merce spedita. È particolarmente vantaggioso per le aziende che spediscono merci in quantità inferiori al carico completo.
-- **Efficienza Operativa**: Consolidare più spedizioni in un unico carico semplifica la gestione delle operazioni e riduce i tempi di transito, migliorando l'efficienza complessiva del processo logistico.
-- **Flessibilità e Scalabilità**: Le aziende possono facilmente adattare la loro strategia di spedizione in base alla domanda e alle variazioni del mercato, sfruttando la flessibilità offerta dai groupage per gestire picchi di spedizione o avere più controllo sui tempi di consegna.
+- **Reducerea costurilor**: Crearea grupărilor permite optimizarea utilizării spațiilor de încărcare și diminuarea costurilor de transport pe unitate de marfă expediată. Este deosebit de avantajoasă pentru companiile care expediază mărfuri în cantități inferioare unei încărcături complete.
+- **Eficiență operațională**: Consolidarea mai multor expedieri într-o singură încărcare simplifică gestionarea operațiunilor și reducerea timpilor de tranzit, îmbunătățind eficiența generală a procesului logistic.
+- **Flexibilitate și scalabilitate**: Companiile pot adapta cu ușurință strategia lor de expediere în funcție de cerere și de variațiile pieței, profitând de flexibilitatea oferită de grupări pentru a gestiona vârfurile de expediere sau a avea un control mai mare asupra timpilor de livrare.
 
-In sintesi, questa funzionalità per la gestione delle spedizioni di Fluentis offre alle aziende un potente strumento per ottimizzare la logistica, migliorare l'efficienza e ridurre i costi, mantenendo al contempo un alto livello di servizio e soddisfazione del cliente.
+În concluzie, această funcționalitate pentru gestionarea expedierilor din Fluentis oferă companiilor un instrument puternic pentru optimizarea logisticii, îmbunătățirea eficienței și reducerea costurilor, menținând în același timp un nivel înalt de servicii și satisfacție a clientului.
 :::
 
-La form **Nuova Spedizione** si apre:  
-- tramite il percorso **Logistica > Spedizioni > Nuova Spedizione**  
-oppure  
-- tramite il pulsante **Nuovo** che si trova nella form [Ricerca Spedizioni](/docs/logistics/shipping/search-shippings).
+Form-ul **Nouă expediere** se deschide:  
+- pe calea **Logistică > Expedieri > Nouă expediere**  
+sau  
+- cu butonul **Nou** care se află în [Caută Expedieri](/docs/logistics/shipping/search-shippings).
 
-Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno** corrente, ma possono essere modificati.
+În form sunt propuse automat **Data** și **Anul** curent, dar acestea pot fi modificate.
 
-## **1. Dati obbligatori**
+## **1. Date obligatorii**
 
-- **Tipo di spedizione**: indica il tipo di spedizione e automaticamente viene inserito anche il *numero* della spedizione. Questo è predefinito in *Configurazione > Tabelle > Logistica > [Tipi di spedizione](/docs/configurations/tables/logistics/shipping-type)*.       
-- **Stato di spedizione**: predefinito in *Configurazione > Tabelle > Logistica > [Stati di spedizione](/docs/configurations/tables/logistics/shipping-states)*.        
-- **Trasporto tramite**: l'utente può scegliere tra le seguenti voci: *Mittente*, *Destinatario* e *Vettore*.
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente e al tipo di spedizione che contiene la numerazione.       
-- **Vettore**: permette di indicare il vettore che effettuerà la spedizione.
-- **Cliente**: permette di indicare il cliente della spedizione.
+- **Tip expediere**: indică tipul expedierii și, automat, este inserat și *numărul* expedierii. Acesta este definit în *Configurare > Tabele > Logistică > [Tipuri de expediere](/docs/configurations/tables/logistics/shipping-type)*.       
+- **Stare expediere**: este predefinită în *Configurare > Tabele > Logistică > [Stări expediere](/docs/configurations/tables/logistics/shipping-states)*.        
+- **Transport cu**: utilizatorul poate alege dintre următoarele opțiuni: *Expeditor*, *Destinatar* și *Transportator*.
+- **Număr**: fiecărui document i se alocă un număr conform numerotării specificate de utilizator și tipului de expediere care conține numerotarea.       
+- **Transportator**: permite indicarea transportatorului care va efectua expedierea.
+- **Client**: permite indicarea clientului expedierii.
 
-## **2. Testata**
+## **2. Antet**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati:
-- **Data inizio**: permette di indicare la data di inizio della spedizione;      
-- **Data fine**: permette di indicare la data di fine della spedizione;    
-- **Ore pianificate**: indica il totale delle ore necessarie per la spedizione. Viene calcolato automaticamente sulla base della data inizio e fine;
-
-Le informazioni relative al mezzo e all'autista:
-- **Automezzo**: permette di selezionare il mezzo con il quale verrà effettuata la spedizione tra quelli indicati nella tabella [Automezzi](/docs/logistics/motorvehicles/motorvehicle);
-- **Autista assegnato**: permette di selezionare l'autista che effettuerà la spedizione tra quelli indicati nella tabella [Autisti](//docs/logistics/motorvehicles/motorvehicle-drivers);       
-- **Volume**: permette di indicare il volume della spedizione e la relativa unità di misura;
-- **Peso netto**: permette di indicare il peso netto della spedizione e la relativa unità di misura;
-- **Peso lordo**: permette di indicare il peso lordo della spedizione e la relativa unità di misura;
-
-Le informazioni relative ai beni:
-- **Aspetto esteriore dei beni**: permette di selezionare l'aspetto esteriore della merce spedita tra quelli indicati nella tabella [Aspetto esteriore beni](/docs/configurations/tables/logistics/type-of-packaging/);
-- **Numero tracking**: permette di indicare il numero di tracking della spedizione. Questo verrà proposto di default per tutte le spedizioni inserite nel tab **gruopage**;
-- **Numero totale di colli**: permette di indicare il numero di colli della spedizione.
-
-Le informazioni relative alla valuta:
-- **Divisa**: sezione contenente i dati relativi alla [Divisa](/docs/guide/common/glossary/glossary-intro#currency)
-- **Data valuta**: indica la [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date)
-
-Le informazioni relative a destinatario e destinazione:
-- **Sito produttivo**: permette di scegliere il sito produttivo da cui verrà effettuata la spedizione e riporta in automatico l'indirizzo associato al *Contatto* (inserito nel *Sito di Produzione*) nel l'Indirizzo del luogo di carico della spedizione;
-- **Indirizzo del luogo di carico**: all'apertura della form, questo campo viene valorizzato di default con l'indirizzo della società, dal quale normalmente dovrebbero partire le merci. È anche possibile modificarlo manualmente; 
-- **Indirizzo del luogo di destinazione**: permette di indicare il luogo di destinazione della spedizione.
-
-Le informazioni relative alla spedizione:
-- **Spedizione**: permette di indicare i dati relativi alla [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment);
-- **Porto**: permette di indicare i dati relativi al [Porto](/docs/guide/common/glossary/glossary-intro#carriage);
-- **Imballo**: permette di indicare i dati relativi all'[Imballo](/docs/guide/common/glossary/glossary-intro#packing).
-
-Eventuali note:
-- **Nota**: permette di inserire una nota libera;         
-- **Nota iniziale**: permette di inserire un'ulteriore nota libera.     
-
-Informazioni relative allo stato di evasione della spedizione:
-- **Stato evasione**: quando la spedizione è evasa tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso indicando lo stato *Evaso forzatamente*;
-- **Data chiusura**: indica la data di evasione del documento.
+- **Data început**: permite indicarea datei de început a expedierii;      
+- **Data sfârșit**: permite indicarea datei de sfârșit a expedierii;    
+- **Ore planificate**: indică totalul orelor necesare pentru expediere. Acesta se calculează automat pe baza datei de început și de sfârșit; 
+- **Vehicul**: permite selectarea vehiculului cu care se va efectua expedierea dintre cele indicate în tabelul [Autovehicule](/docs/logistics/motorvehicles/motorvehicle);
+- **Șofer atribuit**: permite selectarea șoferului care va efectua expedierea dintre cei menționați în tabelul [Șoferi](//docs/logistics/motorvehicles/motorvehicle-drivers);       
+- **Volum**: permite indicarea volumului expedierii și a unității de măsură corespunzătoare;
+- **Greutate netă**: permite indicarea greutății nete a expedierii și a unității de măsură corespunzătoare;
+- **Greutate brută**: permite indicarea greutății brute a expedierii și a unității de măsură corespunzătoare;
+- **Aspect exterior bunuri**: permite selectarea aspectului exterior al mărfii expediate dintre cele indicate în tabelul [Aspect exterior bunuri](/docs/configurations/tables/logistics/type-of-packaging/);
+- **Număr tracking**: permite indicarea numărului de tracking al expedierii. Acesta va fi propus implicit pentru toate expedierile introduse în tab-ul **grupaj**;
+- **Numărul total colete**: permite indicarea numărului de colete al expedierii.
+- **Monedă**: secțiune ce conține datele referitoare la [Monedă](/docs/guide/common/glossary/glossary-intro#currency)
+- **Data monedă**: indică [Data monedei](/docs/guide/common/glossary/glossary-intro#currency-date)  
+- **Locație de producție**: permite alegerea locației de producție de unde va fi efectuată expedierea și preia automat adresa asociată cu *Contactul* (introdus în *Locație de producție*) în adresa locului de încărcare a expedierii;
+- **Adresă loc de încărcare**: la deschiderea form-ului, acest câmp este populat implicit cu adresa companiei, de unde în mod normal ar trebui să plece mărfurile, dar se poate modifica manual; 
+- **Adresă loc de destinație**: permite indicarea locului de destinație al expedierii.
+- **Expediere**: permite indicarea datelor referitoare la [expediere](/docs/guide/common/glossary/glossary-intro#shipment);
+- **Incoterm**: permite indicarea datelor referitoare la [Incoterm](/docs/guide/common/glossary/glossary-intro#carriage);
+- **Ambalaj**: permite indicarea datelor referitoare la [Ambalaj](/docs/guide/common/glossary/glossary-intro#packing).  
+- **Notă**: permite inserarea unei note libere;  
+- **Note inițiale**: permite inserarea unei alte note libere.   
+- **Stare executare**: atunci când expedirea este executată cu documentele aviz sau facturi, starea sa de executare se schimbă automat de la *Neexecutat* la *Parțial executat* sau *Executat*; utilizatorul poate forța livrarea unui ordin neexecutat complet indicând starea *Executat forțat*;  
+- **Dată închidere**: indică data executării documentului.
 
 ## **3. Groupage**
 
-In questo tab vengono inserite tutte le informazioni relative al **gruopage**.      
-Questo consiste nel raggruppare diverse spedizioni di merci provenienti da mittenti differenti, ma destinate alla stessa area geografica, in un unico carico o container. In questo modo, è possibile sfruttare al meglio lo spazio disponibile nei mezzi di trasporto (come camion, container marittimi o aerei) e offrire un servizio più economico rispetto alla spedizione di singole partite di merci.
+În acest tab se inserează informațiile referitoare la **gruopage**.  
+Acesta constă în agregarea mai multor expedieri de mărfuri care provin de la expeditori diferiți, dar destinate aceleași zone geografice, într-o singură încărcătură sau container. Astfel, se poate utiliza optim spațiul disponibil în mijloacele de transport (cum ar fi camioane, containere maritime sau aeriene) și oferi un serviciu mai ieftin comparativ cu expedierea de loturi individuale de mărfuri.
 
-### Spedizioni groupage
+### Expedieri groupage
 
-In questa griglia vengono inserite le informazioni relative alle spedizioni contenute in questo **groupage**, quindi per inserire una nuova spedizione nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. 
+Cuprinde informațiile referitoare la expedierile incluse în acest **groupage**.  
+Pentru a adăuga o nouă expediere, poziționați-vă pe un rând nou sau folosiți butonul **Nou** din ribbon bar.  
 
-Le colonne disponibili sono le seguenti e raggruppate per:
+#### Câmpuri specifice   
+- **Număr rând**: indică numărul rândului expedierii și este introdus automat;  
+- **Data început**: indică data / ora început expediere;  
+- **Data sfârșit**: indică data / ora sfârșit expediere;  
+- **Ore planificate**: indică durata în ore a expedierii și este calculată automat pe baza datelor de început și de sfârșit;  
+- **Număr tracking**: indică numărul de tracking al fiecărei expedieri; dacă este indicat în tab *Antet*, numărul de tracking este propus în toate expedierile create, dar poate fi modificat manual de utilizator.  
+- **Proveniență**: indică numele / denumirea locului de încărcare;  
+- **Cod poștal**: indică codul poștal al locului de încărcare;  
+- **Oraș**: indică orașul locului de încărcare;  
+- **Județ**: indică județul locului de încărcare;  
+- **Adresă loc de încărcare**: indică adresa locului de încărcare. Acesta este completat în mod implicit cu adresa companiei, de unde în mod normal ar trebui să pornească mărfurile, menționată și în antetul documentului.  
+- **Destinatie**: indică numele / denumirea locului de destinație;  
+- **Cod poștal**: indică codul poștal al locului de destinație;  
+- **Oraș**: indică orașul locului de destinație;  
+- **Județ**: indică județul locului de destinație;  
+- **Adresă loc de destinație**: indică adresa locului de destinație. Aceasta este completată automat, fiind preluată din registrul clientului, dar poate fi totuși modificată manual de utilizator.  
+- **Autovehicul**: indică mijlocul de transport cu care va fi efectuată expedierea;  
+- **Șofer atribuit**: indică șoferul care va efectua expedierea.
 
-Spedizione 
-- **Numero riga**: indica il numero delle riga della spedizione e viene inserito automaticamente;
-- **Data inizio**: indica la data / ora di inizio della spedizione;
-- **Data fine**: indica la data / ora di fine della spedizione;
-- **Ore pianificate**: indica la durata in ore della spedizione e viene calcolato automaticamente in base alla data inizio e fine;
-- **Numero di tracking**: indica il numero di tracking della singola spedizione; se indicato nel tab testata, il numero di tracking viene proposto in tutte le spedizioni create, ovviamente può sempre essere modificato manualmente dall'utente.
+În plus, pentru fiecare rând al groupage-ului, se pot vedea detaliile corespunzătoare accesând **+**, pentru a completa și următoarele câmpuri:
+- **Telefon**: permite introducerea numărului de telefon referitor la locul de încărcare;  
+- **E-mail**: permite introducerea adresei de e-mail referitoare la locul de încărcare;  
+- **Note**: permite introducerea unei note libere referitoare la locul de încărcare;  
+și la destinație:
+- **Telefon**: permite introducerea numărului de telefon referitor la destinație;  
+- **E-mail**: permite introducerea adresei de e-mail referitoare la destinație;  
+- **Note**: permite introducerea unei note libere referitoare la destinație.
 
-Indirizzo del luogo di carico
-- **Provenienza**: indica la ragione sociale / nome del luogo di carico;         
-- **CAP**: indica il CAP del luogo di carico;
-- **Città**: indica la città del luogo di carico;
-- **Provincia**: indica la provincia del luogo di carico;
-- **Indirizzo del luogo di carico**: indica l'indirizzo del luogo di carico. Questo viene valorizzato di default con l'indirizzo della società, dal quale normalmente dovrebbero partire le merci, indicato anche nella testata del documento.
+### Articole expediere
 
-Indirizzo del luogo di destinazione
-- **Destinazione**: indica la ragione sociale / nome del luogo di destinazione;            
-- **CAP**: indica il CAP del luogo di destinazione;
-- **Città**: indica la città del luogo di destinazione;
-- **Provincia**: indica la provincia del luogo di destinazione;
-- **Indirizzo del luogo di destinazione**: indica l'indirizzo del luogo di destinazione. Questo viene valorizzato in automatico prendendolo dall'anagrafica del cliente, ma può comunque essere modificato manualmente dall'utente.
+În această secțiune sunt afișate toate articolele incluse în expedierea selectată în groupage.   
 
-Automezzo
-- **Automezzo**: indica l'automezzo con il quale verrà effettuata la spedizione;
-- **Autista assegnato**: indica l'autista che effettuerà la spedizione.
+#### Procedură adăugare articol
 
-Inoltre, per ciascuna riga del groupage, è possibile aprire espandere il relativo dettaglio di riga cliccando sul **+**, in modo da poter gestire anche i seguenti campi relativamente al luogo di carico:
-- **Telefono**: permette di inserire il numero di telefono relativo al luogo di carico;
-- **E-mail**: permette di inserire l'indirizzo e-mail relativo al luogo di carico;
-- **Note**: permette di inserire una nota libera relativa al luogo di carico;
-e alla destinazione:
-- **Telefono**: permette di inserire il numero di telefono relativo alla destinazione;
-- **E-mail**: permette di inserire l'indirizzo e-mail relativo alla destinazione;
-- **Note**: permette di inserire una nota libera relativa alla destinazione.
+- poziționați-vă pe un rând gol sau folosiți butonul **Nou** din ribbon bar.  
+- utilizați butonul **Transfer articole**. Acesta deschide form-ul numit **Asociere ordine clienți**, în care implicit este inserat clientul expedierii în filtrul corespunzător. Apăsând butonul **Caută**, vor fi afișate în tabelul din dreapta toate articolele din ordinele neexecutate și parțial executate ale acelui client.  
+În partea stângă a form-ului sunt afișate tabelele referitoare la *expedieri groupage* și la *articole expediere* cu datele introduse în form-ul principal al groupage-ului.  
+Apoi, cu drag & drop, utilizatorul poate să tragă articolele de la tabelul din dreapta direct în fiecare expediere, iar acestea vor fi incluse automat în tabelul *articole expediere* referitoare la acea expediere.  
+De asemenea, se pot adăuga articole care provin din ordinele altor clienți, variind pur și simplu valoarea filtrelor *Client* și apăsând din nou **Caută**.  
 
-### Articoli di spedizione
+După adăugarea articolelor, apăsați butonul **Achiziţie** pentru a confirma toate modificările.
 
-In questa sezione vengono visualizzati tutti gli articoli contenuti all'interno della spedizione selezionata nel gruopage.         
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.            
-In alternativa, è anche possibile aggiungere gli articoli prendendoli direttamente dagli ordini clienti tramite la procedura **Trasferimento articoli**.           
-Premendo il pulsante **Trasferimento articoli**, si apre la form denominata **Collegamento degli ordini di vendita**, nella quale di default viene già proposto il cliente della spedizione nel relativo filtro. Quindi premendo il pulsante **Ricerca** verranno visualizzati sulla griglia di destra tutti gli articoli degli ordini non evasi e parzialmente evasi di quel cliente.        
-Sulla parte sinistra della form, sono visualizzate le griglie relative alle *spedizioni goupage* e agli *articoli di spedizione* con i dati inseriti nel form principale del gruopage.         
-A questo punto, l'utente può, con il drag & drop, trascinare gli articoli dalla griglia di destra direttamente sulla singola spedizione ed in automatico verranno inseriti nella griglia *articoli di spedizione* relativa a quella spedizione.
-Inoltre, è anche possibile aggiungere articoli proveniente da ordini di altri clienti, semplicemente andando a variare il valore del filtro *Cliente* e premendo nuovamente **Ricerca**.
-Una volta terminato di aggiungere tutti gli articoli, l'utente premendo il pulsante **Acquisizione** confermerà tutte le modifiche.       
+#### Câmpuri specifice     
+- **Marcă**: afișează valoarea mărcii inserate în registrul articolelor;  
+- **Cantitate**: indică cantitatea articolului;  
+- **Unitate de măsură alternativă**: indică unitatea de măsură alternativă a articolului;  
+- **Cantitate alternativă**: indică cantitatea alternativă a articolului;  
+- **Volum**: indică volumul articolului;  
+- **Greutate netă**: indică greutatea netă a articolului;  
+- **Greutate brută**: indică greutatea brută a articolului;  
+- **Cont ordin client**: afișează contul ordinului client din care face parte articolul;  
+- **Tip ordin client**: afișează tipul de ordin client din care face parte articolul;  
+- **Data ordin client**: afișează data ordinului client din care face parte articolul;  
+- **Factură sau aviz**: afișează referința facturii / aviz-ului creat(ă) apăsând butoanele **Factură** sau **Aviz**. Valoarea este afișată în formatul: tip document / data document / număr document;  
+- **Referință dispoziție de livrare**: afișează referința dispoziției de livrare creată apăsând butonul **Dispoziție de livrare**. Valoarea este afișată în formatul: tip document / data document / număr document.
 
-#### Campi specifici     
-- **Numero riga**: indica il numero riga dell'articolo inserito nel gruopage; 
-- **Classe**: indica la classe dell'articolo; 
-- **Articolo**: indica il codice dell'articolo; 
-- **Variante articolo**: indica la variante dell'articolo; 
-- **Descrizione variante**: indica la descrizione variante dell'articolo; 
-- **Unità di misura**: indica l'unità di misura dell'articolo;
-- **Marca**: visualizza il valore della marca inserita nell'anagrafica articoli;
-- **Quantità**: indica la quantità dell'articolo;
-- **Unità di misura alternativa**: indica l'unità di misura alternativa dell'articolo;           
-- **Quantità alternativa**: indica la quantità dell'articolo;            
-- **Volume**: indica il volume dell'articolo;             
-- **Peso netto**: indica il peso netto dell'articolo;
-- **Peso lordo**: indica il peso lordo dell'articolo;
-- **Conto ordine cliente**: visualizza il conto dell'ordine cliente a cui appartiene l'articolo;
-- **Tipo ordine cliente**: visualizza il tipo dell'ordine cliente a cui appartiene l'articolo;
-- **Data ordine cliente**: visualizza la data dell'ordine cliente a cui appartiene l'articolo;
-- **Fattura o DDT**: visualizza il riferimento della fattura / DDT rispettivamente creati premendo i pulsanti **Fattura** o **DDT**; il valore viene visualizzato nel formato tipo documento / data documento / numero documento;
-- **Riferimento picking**: visualizza il riferimento del picking creato premendo il pulsante **Picking**; il valore viene visualizzato nel formato tipo documento / data documento / numero documento.
+#### Butoane specifice  
+> - **Nou groupage**: permite introducerea unei noi expedieri în groupage;  
+> - **Șterge groupage**: permite eliminarea expedierii selectate din groupage;  
+> - **Transfer articole**: permite adăugarea articolelor la expediere luându-le direct din ordinele clienților;  
+> - **Aviz**: permite crearea automată a [Avizului](/docs/sales/sales-delivery-notes/general-overview) pentru expedierile selectate din groupage;  
+> - **Factură**: permite crearea automată a [Facturilor](/docs/sales/sales-invoices/general-overview) pentru expedierile selectate din groupage;  
+> - **Dispoziție de livrare**: permite crearea automată a [Dispoziției de livrare](/docs/logistics/picking/picking-intro) pentru expedierile selectate din groupage.  
 
-#### Pulsanti specifici  
-> - **Nuova groupage**: permette di inserire una nuova spedizione nel gruopage; 
-> - **Elimina groupage**: permette di eliminare la spedizione selezionata dal gruopage; 
-> - **Trasferimento articoli**: permette di aggiungere gli articoli alla spedizione prendendoli direttamente dagli ordini clienti;
-> - **DDT**: permette di creare automaticamente i [DDT](/docs/sales/sales-delivery-notes/general-overview) per le spedizioni selezionare nel gruopage;
-> - **Fattura**: permette di creare automaticamente le [Fatture](/docs/sales/sales-invoices/general-overview) per le spedizioni selezionare nel gruopage;
-> - **Picking**: permette di creare automaticamente i [Picking](/docs/logistics/picking/picking-intro) per le spedizioni selezionare nel gruopage.  
+## **4. Rezumate**
 
-## **4. Riepiloghi**
+În *Rezumate* sunt prezentate informațiile referitoare la costurile întregului document.
 
-Nei Riepiloghi sono presentate le informazioni relative ai costi dell'intero documento.
+### Cheltuieli
 
-### Spese
+În această tabel se pot insera eventuale cheltuieli, care trebuie introduse în pozitiv, eventuale reduceri în negativ.
 
-In questa griglia è possibile inserire eventuali spese che devono essere inserite in positivo, eventuali sconti in negativo.
+Aceste elemente se aplică întregului document și nu sunt distribuite între rândurile articolelor. Pot include costuri suplimentare, reduceri globale sau majorări aplicate întregului document.  
 
-Questi elementi vengono applicati alla totalità del documento e non sono distribuiti tra le righe degli articoli. Possono includere costi aggiuntivi, sconti globali, o maggiorazioni applicate all'intero documento. 
+Pentru a introduce o nouă cheltuială este necesar să completați următoarele date:
 
-Per inserire una nuova spesa è necessario compilare i seguenti dati:
-
-- **Numero riga**: indica il numero riga della spesa inserita, viene compilato automaticamente;
-- **Tipo spesa / Descrizione**: permette di scegliere le tipologie di spesa predefiniti nella tabella [Tipi spese](/docs/configurations/tables/general-settings/expenses-types/);
-- **Importo spesa**: indica il valore della spesa espresso nella divisa del documento;
-- **Descrizione spesa**: Dettaglio dichiarazioni: viene inserita l'eventuale dichiarazione d'intento valida per il cliente;
-- **Imposta**: premette di scegliete dell'aliquota IVA, predefinite nella tabella [Aliquote/Modalità IVA](/docs/configurations/tables/finance/vat-rates/).
-
-Sulla destra della form sono presenti i seguenti campi:
-
-- **Note**: permette di inserire una nota libera;
-- **Importo totale**: permette di visualizzare l'importo totale della spedizione dato dalla somma dei valori inseriti nella tabella *Spese*.
+- **Număr rând**: indică numărul rândului cheltuielii introduse, completat automat;  
+- **Tip cheltuieli / Descriere**: permite alegerea tipurilor de cheltuieli predefinite în tabelul [Tipuri cheltuieli](/docs/configurations/tables/general-settings/expenses-types/);  
+- **Sumă cheltuieli**: indică valoarea cheltuielii exprimată în moneda documentului;  
+- **Descriere cheltuieli**: Detaliu declarații: se introduce eventual declarația de intenție valabilă pentru client;  
+- **TVA**: permite alegerea cotei TVA, predefinite în tabelul [Cote/Modalități TVA](/docs/configurations/tables/finance/vat-rates/).  
+- **Note**: permite introducerea unei note libere;  
+- **Sumă totală**: permite vizualizarea sumei totale a expedierii dată de suma valorilor introduse în tabelul *Cheltuieli*.
