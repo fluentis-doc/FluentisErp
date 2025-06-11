@@ -1515,7 +1515,7 @@
     "message": "Ciclos de Producción",
     "description": "The label for category Cicli di lavoro in sidebar erpHome"  },
   "sidebar.erpHome.category.Crea assieme": {
-    "message":    ",
+    "message": "Create Assembly",
     "description": "The label for category Crea assieme in sidebar erpHome"
   },
   "sidebar.erpHome.category.Dipendenti": {
