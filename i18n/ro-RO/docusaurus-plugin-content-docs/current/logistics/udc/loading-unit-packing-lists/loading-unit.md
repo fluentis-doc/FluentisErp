@@ -1,9 +1,9 @@
 ---
-title: Liste di prelievo/Packing list (versione WPF e WMS)
+title: Liste ieşiri UdI/Listă ambalare (versione WPF e WMS)
 sidebar_position: 1
 ---
 
-### Liste di prelievo/Packing list (versione WPF)
+### Liste ieşiri UdI/Listă ambalare (versione WPF)
 
 :::important A cosa serve
 La Lista Prelievo UDC / Packing List di Fluentis offre un metodo innovativo per gestire il prelievo di unità di carico, in contrapposizione alla tradizionale procedura di picking che si basa su singoli articoli. Questa funzionalità è particolarmente utile quando si desidera spedire merce a un cliente, consentendo di raggruppare articoli all'interno di unità di carico predefinite.
@@ -34,9 +34,9 @@ Tornando nella maschera di *Ricerca Liste di prelievo*, la Lista sarà presente 
 > **DDT**: crea il DDT dalla *Lista* selezionata; nella maschera uscente è richiesto il [Tipo DDT](/docs/configurations/tables/sales/delivery-notes-type) da creare e l'eventuale raggruppamento da adottare; il DDT viene creato già *Scaricato* (per evitare il rischio del doppio scarico).   
 > **Gestione UDC**: selezionando una *Lista di prelievo* e cliccando questo pulsante viene aperta la maschera **Gestione UDC** in cui vengono pre filtrate le UDC della lista. In questa maschera le UDC possono essere gestite a magazzino con i vari pulsanti della ribbon bar.       
          
-Per tutte le informazioni su come utilizzare questa form da WMS consultare le [Liste di prelievo/Packing list](/docs/logistics/wms/udc/loading-unit-picking-list)
+Per tutte le informazioni su come utilizzare questa form da WMS consultare le [Liste ieşiri UdI/Listă ambalare](/docs/logistics/wms/udc/loading-unit-picking-list)
 
-### Liste di prelievo/Packing list (versione WMS)
+### Liste ieşiri UdI/Listă ambalare (versione WMS)
 
 :::important A cosa serve
 La funzione Liste di Prelievo / Packing List del WMS di Fluentis consente di creare un picking di unità di carico, facilitando la preparazione delle spedizioni direttamente collegate agli ordini cliente. 
@@ -111,5 +111,3 @@ Altrimenti, è possibile entrare nella lista tramite il pulsante **Apri** e visu
 Questo parametro deve essere creato con il magazzino della *lista di prelievo* e con casuale di magazzino con tipo di scarico e senza contropartita.
 
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
-
