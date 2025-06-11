@@ -22,7 +22,7 @@ or via
 
 *Specific button*:  
 
-> **Complete order data**: calls the procedure that allows you to enter and/or update all data related to materials, phases, setup, equipment, attributes, and various notes for the item entered in the planned order, retrieving them from the bill of materials and production cycle of the item.  
+> **Complete order data**: calls the procedure that allows you to enter and/or update all data related to materials, phases, setup, equipment, attributes, and various notes for the item entered in the planned order, retrieving them from the bill of materials and production cycle of the item and **valid on the date of data completion execution**.
 > **Recalculate initial date**: Calls the procedure that allows you to perform an update of the planned order's start date and potentially its processing phases following a change in the processing times and/or the quantity to be produced of the item subject to the planned order;  
 > **[MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: allows you to open the window related to the MRP parameters of the item;  
 > **Generate BOM**: allows you to generate the bill of materials based on the data entered within the production order or to update the existing data with those entered in the order;  

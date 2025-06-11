@@ -13,10 +13,10 @@ It is also possible to specify the warehouse and the reason, which will be used 
 
 *Specific buttons:*  
 
-> **Complete Orders Data**: calls the procedure that allows entering and/or updating all data related to materials, phases, setup, equipment, attributes, and various notes for the article entered in the production order, pulling them from the bill of materials and routing of the article;  
-> **Recalculate Initial Date**: Calls the procedure that allows updating the start date of the production order and, if necessary, the processing phases as a result of a change in processing times and/or the quantity to be produced for the article subject to the production order;  
-> **Generate Bill of Materials**: allows generating the bill of materials based on the data entered in the production order or updating existing data with those entered in the order;  
-> **Generate Work Cycle**: allows creating the work cycle of the article based on the data entered in the order, or updating existing data with those entered in the order;  
+> **Complete Orders Data**: calls the procedure that allows entering and/or updating all data related to materials, phases, setup, equipment, attributes, and various notes for the article entered in the production order, pulling them from the bill of materials and routing of the article and **valid at the data execution of data completion**.
+> **Recalculate Initial Date**: Calls the procedure that allows updating the start date of the production order and, if necessary, the processing phases as a result of a change in processing times and/or the quantity to be produced for the article subject to the production order.
+> **Generate Bill of Materials**: allows generating the bill of materials based on the data entered in the production order or updating existing data with those entered in the order.  
+> **Generate Work Cycle**: allows creating the work cycle of the article based on the data entered in the order, or updating existing data with those entered in the order.  
 
 *Specific fields:*  
 
