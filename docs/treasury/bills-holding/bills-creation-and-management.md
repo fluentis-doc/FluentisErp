@@ -68,9 +68,9 @@ E' basato su un accordo preventivo (mandato) tra Debitore e Creditore che consen
 
 
 :::tip[Come creare una distinta SDD]
-Dopo aver compilato i campi necessari [**nell'anagrafica del cliente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#campi-riferiti-alla-gestione-distinte-sdd-sepa-direct-debit--addebiti-diretti-sepa) intestatario dell'SDD e nella tabella con i dati della nostra società, è necessario.
+Dopo aver compilato i campi necessari [**nell'anagrafica del cliente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) intestatario dell'SDD e nella tabella con i dati della nostra società, è necessario.
 
-- Definire una apposita tipologia di Effetto "*SDD*" [**qui**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) ed associarlo al rispettivo [**Tipo pagamento**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti)
+- Definire una apposita tipologia di Effetto "*SDD*" [**qui**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) ed associarlo al rispettivo [**Tipo pagamento**](/docs/configurations/tables/general-settings/payment-types)
 - Definire una apposita tipologia di distinta nel portafoglio effetti, vedere il campo Utenze [**qui**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
 - Utilizzare le procedure [**Creazione effetti dalle partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) oppure [**Creazione effetti dalle scadenze**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) per generare un effetto di tipo "*SDD*"
 - Creare una [**nuova distinta di presentazione**](/docs/treasury/bills-holding/lists-ceation-and-management) di tipo "*SDD*" e inserire al suo interno l'effetto "*SDD*" 

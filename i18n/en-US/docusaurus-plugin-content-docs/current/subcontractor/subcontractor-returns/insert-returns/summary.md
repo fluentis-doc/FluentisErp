@@ -24,7 +24,7 @@ These elements are applied to the entirety of the document and are not distribut
 - **Percent Completed**: numerical value of the expense percentage.  
 
 :::note Note
-If the *Charge type* entered has the [split](/docs/configurations/tables/general-settings/expenses-types#link-to-logic) flag active, during the restocking process, the expense will be distributed across all items based on the total amounts of each item line. The result of the expense allocation is visible in the [warehouse record](/docs/logistics/warehouse/stock-records/record).    
+If the *Charge type* entered has the [split](/docs/configurations/tables/general-settings/expenses-types) flag active, during the restocking process, the expense will be distributed across all items based on the total amounts of each item line. The result of the expense allocation is visible in the [warehouse record](/docs/logistics/warehouse/stock-records/record).    
 1. If the items have a price: the total expense will be allocated proportionally to the net amounts of each item; the result will be added to the initial price of the item in the *Total amount* field of the record. If for some lines the amount is 0, it will be considered as 1 to allow an allocation of the expense across all items.   
 2. If all items have a price of 0: the expense will be distributed equally among all item lines, and from this distribution, the *movement amount/operational amount* will be calculated in the record, taking into account the quantities of each item.   
 :::

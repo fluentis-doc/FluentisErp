@@ -456,7 +456,7 @@ Estos elementos se aplican a la totalidad del documento y no están distribuidos
 - **percentuale**: valor numérico del porcentaje de gasto.  
 
 :::note Nota
-Si el *Tipo de gasto* ingresado tiene el indicador [repartido](/docs/configurations/tables/general-settings/expenses-types#link-to-logic) activo, durante la carga de la factura en el almacén, el gasto será repartido entre todos los artículos en función de los importes totales de cada línea de artículo. El resultado de la repartición del gasto es visible en la [registro de almacén](/docs/logistics/warehouse/stock-records/record).    
+Si el *Tipo de gasto* ingresado tiene el indicador [repartido](/docs/configurations/tables/general-settings/expenses-types) activo, durante la carga de la factura en el almacén, el gasto será repartido entre todos los artículos en función de los importes totales de cada línea de artículo. El resultado de la repartición del gasto es visible en la [registro de almacén](/docs/logistics/warehouse/stock-records/record).    
 1. Si los artículos tienen un precio: el gasto total será repartido proporcionalmente sobre los importes netos de cada artículo; el resultado se sumará al precio inicial del artículo en el campo *Total importe* de la registro. Si para algunas líneas el importe es 0, este será considerado como 1 para permitir una repartición del gasto sobre todos los artículos.   
 2. Si todos los artículos tienen un precio igual a 0: el gasto será distribuido equitativamente entre todas las líneas de artículo y, a partir de esta distribución, se calculará el *importe movimiento/importe gestionable* en el registro, teniendo en cuenta las cantidades de cada artículo.   
 :::

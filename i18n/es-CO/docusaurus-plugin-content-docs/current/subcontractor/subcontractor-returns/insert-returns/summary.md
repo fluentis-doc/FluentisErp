@@ -24,7 +24,7 @@ Estos elementos se aplican a la totalidad del documento y no se distribuyen entr
 - **percentuale**: valor numérico del porcentaje de gasto.  
 
 :::note Nota
-Si el *tipo spesa* ingresado tiene el indicador [repartido (ripartito)](/docs/configurations/tables/general-settings/expenses-types#link-to-logic) activo, durante la carga del regreso al almacén, el gasto será repartido entre todos los artículos según los importes totales de cada línea de artículo. El resultado de la repartición del gasto es visible en el [registro de almacén (registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record).  
+Si el *tipo spesa* ingresado tiene el indicador [repartido (ripartito)](/docs/configurations/tables/general-settings/expenses-types) activo, durante la carga del regreso al almacén, el gasto será repartido entre todos los artículos según los importes totales de cada línea de artículo. El resultado de la repartición del gasto es visible en el [registro de almacén (registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record).  
 1. Si los artículos tienen un precio: el gasto total se repartirá proporcionalmente sobre los importes netos de cada artículo; el resultado se añadirá al precio inicial del artículo en el campo *totale importo* de la registración. Si para algunas líneas el importe es 0, se considerará como 1 para permitir la repartición del gasto entre todos los artículos.  
 2. Si todos los artículos tienen un precio de 0: el gasto se distribuirá equitativamente entre todas las líneas de artículo y, a partir de esta distribución, se calculará el *importe del movimiento/importe de gestión (importo movimento/importo gestionale)* en la registración, teniendo en cuenta las cantidades de cada artículo.  
 :::

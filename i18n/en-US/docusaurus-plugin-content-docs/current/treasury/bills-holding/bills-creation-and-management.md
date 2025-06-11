@@ -67,9 +67,9 @@ The Sepa Direct Debit, which replaces the previous national RID, is a pre-author
 It is based on a prior agreement (mandate) between the Debtor and Creditor that allows the latter to request the activation of an interbank procedure to automatically debit the Debtor's account.
 
 :::tip[How to create an SDD list]
-After filling in the necessary fields [**in the customer contact**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#campi-riferiti-alla-gestione-distinte-sdd-sepa-direct-debit--addebiti-diretti-sepa) for the SDD holder and in the table with our company data, it is necessary to:
+After filling in the necessary fields [**in the customer contact**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) for the SDD holder and in the table with our company data, it is necessary to:
 
-- Define a specific type of bill "*SDD*" [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) and associate it with the respective [**Payment type**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti)
+- Define a specific type of bill "*SDD*" [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) and associate it with the respective [**Payment type**](/docs/configurations/tables/general-settings/payment-types)
 - Define a specific type of list in the bills portfolio, see the Utilities field [**here**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
 - Use the procedures [**Creating bills from maturity values**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) or [**Creating bills from due dates**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) to generate an "*SDD*" type bill
 - Create a [**new presentation list**](/docs/treasury/bills-holding/lists-ceation-and-management) of type "*SDD*" and insert the "*SDD*" bill within it
