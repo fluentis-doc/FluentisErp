@@ -12,12 +12,12 @@ import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/UdI/loading-unit-intro">UdI</Link>
-        <p><Link to="/docs/logistics/UdI/loading-unit-management/search-pallet" className="bold-link">Gestionare UdI</Link></p>
+###     <Link to="/docs/logistics/udc/loading-unit-intro">UdI</Link>
+        <p><Link to="/docs/logistics/udc/loading-unit-management/search-pallet" className="bold-link">Gestionare UdI</Link></p>
         <p>Permite operatorilor să gestioneze întregul ciclu de viață al UdI, de la crearea lor până la mișcare și vânzare. UdI pot fi create manual sau prin WMS Mobile.</p>
-        <p><Link to="/docs/logistics/UdI/loading-unit-packing-lists/loading-unit" className="bold-link">Liste ieşiri UdI / Lista de Ambalare</Link></p>
+        <p><Link to="/docs/logistics/udc/loading-unit-packing-lists/loading-unit" className="bold-link">Liste ieşiri UdI / Lista de Ambalare</Link></p>
         <p>Oferă o metodă inovatoare pentru gestionarea preluării unităților de încărcare, în contrast cu procedura tradițională de colectare care se bazează pe articole individuale. Această funcționalitate este deosebit de utilă atunci când se dorește expedierea mărfii către un client, permițând gruparea articolelor în unități de încărcare predefinite.</p>
-        <p><Link to="/docs/logistics/UdI/loading-unit-packing-lists/transfer-unit" className="bold-link">Lista de transfer UdI</Link></p>
+        <p><Link to="/docs/logistics/udc/loading-unit-packing-lists/transfer-unit" className="bold-link">Lista de transfer UdI</Link></p>
         <p>Permite gestionarea mișcărilor Unitatilor de Încărcare în cadrul propriilor depozite, oferind o abordare sistematică și intuitivă pentru transferul mărfurilor. Spre deosebire de Liste ieşiri UdI, care este folosită pentru expedierea către clienți, lista de transfer se concentrează pe optimizarea fluxurilor interne ale UdI între diferitele locații de gestiune.</p>
     </div>
 </div>
