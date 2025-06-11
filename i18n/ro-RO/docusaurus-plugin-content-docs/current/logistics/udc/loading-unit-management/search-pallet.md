@@ -1,54 +1,52 @@
 ---
-title: Ricerca UDC e Visualizzazione trasferimenti UDC
+title: Căutare UdI și Vizualizare transferuri UdI
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La gestione delle Unità Di Carico (UDC) in Fluentis consente agli operatori di gestire l'intero ciclo di vita delle UDC, dalla loro creazione alla movimentazione, fino alla vendita. Le UDC possono essere create manualmente o tramite WMS Mobile, rendendo il sistema versatile e adattabile alle diverse necessità operative.
+:::important Utilizare
+Gestionarea *Unităților de Încărcare* în Fluentis permite operatorilor să gestioneze întregul ciclu de viață al UdI, de la crearea până la vânzare. 
 
-La procedura di gestione offre un filtro dettagliato per visualizzare tutte le UDC create, consentendo di controllare lo stato di carico e scarico delle unità. Ogni UDC è identificata da una chiave univoca composta da anno, gruppo e numero, e le informazioni relative a dimensioni e peso possono essere modificate in base alle esigenze specifiche.
+Procedura de gestionare oferă un filtru detaliat pentru a vizualiza toate UdI create, permițând controlul stării de încărcare și descărcare a unităților. Fiecare UdI este identificată printr-o cheie unică formată din an, grup și număr, iar informațiile referitoare la dimensiuni și greutate pot fi modificate în funcție de cerințele specifice.
 
-Inoltre, il modulo consente di gestire il dettaglio articoli all'interno di ogni UDC, facilitando l'associazione con ordini clienti e la registrazione dei movimenti di magazzino. Operazioni come il carico, lo scarico, e il trasferimento di UDC tra ubicazioni sono gestite con flessibilità, assicurando che i dati siano sempre aggiornati e accurati. Grazie a queste funzionalità, la gestione UDC di Fluentis contribuisce a migliorare l'efficienza operativa e la tracciabilità delle giacenze.
+În plus, modulul permite gestionarea detaliului articolelor din fiecare UdI, facilitând asocierea cu ordinele clienților și înregistrarea mișcărilor de gestiune. Operațiuni precum încărcarea, descărcarea și transferul UdI între locații sunt gestionate cu flexibilitate, asigurând că datele sunt întotdeauna actualizate și precise. Datorită acestor funcționalități, gestionarea UdI în Fluentis contribuie la îmbunătățirea eficienței operaționale și a trasabilității stocurilor.
 :::
 
-### Ricerca UDC
+### Căutare UdI
 
-La form si apre tramite il percorso **Logistica > Gestione UDC**.
+Form-ul se află pe calea **Logistică > Gestionare UdI**.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-:::note Nota
-In apertura della form i flag *Carico* e *Scarico*, presenti nel filtro, non sono spuntati, quindi verranno visualizzate solo le UDC che non sono ancora state caricate.
-Mentre attivando il flag *Carico* verranno visualizzate solo le UDC caricate e abilitando anche il flag *Scarico* si vedranno solo le UDC che sono state anche scaricate.
+:::note Notă
+La deschiderea form-ului, opțiunile *Încărcare* și *Descărcare* din filtrul respectiv nu sunt bifate, deci vor fi vizualizate doar UdI care nu au fost încărcate.
+Activând opțiunea *Încărcare* vor fi vizualizate doar UdI încărcate, iar dacă se activează și opțiunea *Descărcare* se vor vedea doar UdI care au fost și descărcate.
 :::
 
-Nel caso in cui un'*Unità di carico* sia stata inserita in una *lista di consegna o di trasferimento*, nella griglia dei risultati vengono visualizzati il numero e la data della lista. 
+În cazul în care o *Unitate de încărcare* a fost inserată într-o *listă de livrare sau de transfer*, în tabelul de rezultate sunt vizibile numărul și data listei.
 
-Inoltre, è interessante notare che è anche possibile ricercare le UDC per ordine cliente a cui sono state collegate.
+De asemenea, este interesant de menționat că este posibil să se caute UdI după ordinul client la care au fost asociate.
 
-Da questa form, è possibile effettuare il carico delle UDC selezionandole e premendo il tasto **Carico UDC** e anche lo scarico (solo se già caricata e presente in una lista) tramite il pulsante **Scarico UDC**.
-
-:::note ATTENZIONE
-Se si desidera trasferire articoli dal magazzino direttamente all'interno dell'unità di carico, utilizzando una causale di carico per inserire gli articoli nell'unità e una contropartita di scarico per rimuoverli dal magazzino, è importante ricordare di spostare prima gli articoli nell'ubicazione indicata nella causale di contropartita.
+:::note ATENȚIE
+Dacă doriți să transferați articole din gestiune direct în unitatea de încărcare, utilizând un motiv de încărcare pentru a insera articolele în unitate și un contrapartidă de descărcare pentru a le elimina din gestiune, este important să rețineți că trebuie să mutați mai întâi articolele în locația indicată în motivul contrapartidei.
 :::
 
-*Pulsanti specifici*:
+#### Butoane specifice  
 
-> **Nuovo**: il pulsante permette di [Creare un nuovo UDC](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
-> **Reso cliente**: permette di creare una nuova *Unità di carico*, utilizzando come *Tipo UDC* quella con il flag *Per Reso* abilitato e tutte le altre proprietà sono copiate dall'*Unità di carico* originale; questo pulsante si abilita solo per righe che sono caricate e consegnate;  
-> **Inserimento ordini in UDC**: permette di inserire gli articoli di un ordine cliente all'interno di una *Unità di carico*. Questa procedura crea un legame tra l'UDC e l'Ordine cliente;  
-> **Carico UDC**: esegue la procedura di creazione di registrazione/movimento di carico dell'*Unità di carico*;          
-> **Scarico UDC**: esegue la procedura di creazione di registrazione/movimento di scarico dell'*Unità di carico*; questo è abilitato solamente se l'*Unità di carico* è presente in una lista di prelievo UDC;            
-> **Visualizza registrazione di carico**: apre la registrazione di magazzino del carico UDC;  
-> **Visualizza registrazione di scarico**: apre la registrazione di magazzino dello scarico UDC;  
-> **Rollback carico UDC**: se l'UDC è caricata esegue il rollback della registrazione di magazzino di carico;  
-> **Rollback scarico UDC**: se l'UDC è caricata e scaricata esegue il rollback della registrazione di magazzino di scarico;  
-> **Aggiungi/togli articoli**: permette all'utente di aggiungere o rimuovere un articolo dall'*Unità di carico* selezionata; inoltre, l'utente ha la possibilità di rimuovere un articolo da un'altra *Unità di carico* e di aggiungerlo a quella selezionata. questo pulsante è abilitato per le righe caricate, non consegnate, non legate a *Picking* o *Liste di trasferimento* e non legate a dichiarazioni di produzione;    
-> **Sposta UDC**: permette di spostare l'UDC da un'ubicazione ad un'altra;  
-> **Rollback stampa**: permette di settare il flag di stampa a "False"; questo pulsante è abilitato solo per le righe non caricate e non legate a dichiarazioni di produzione.      
+> - **Nou**: butonul permite [Crearea unei noi UdI](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
+> - **Retur client**: permite crearea unei noi *Unități de încărcare*, folosind ca *Tip UdI* cel cu opțiunea *Pentru retur* activat, iar toate celelalte proprietăți sunt copiate din *Unitatea de încărcare* originală. Acest buton se activează doar pentru liniile care sunt încărcate și livrate;  
+> - **Inserare ordine în UdI**: permite inserarea articolelor dintr-un ordin client într-o *Unitate de încărcare*. Această procedură creează o legătură între UdI și Ordinul client;  
+> - **Încărcare UdI**: execută procedura de creare a înregistrării/miscării de încărcare a *Unității de încărcare*;          
+> - **Descărcare UdI**: execută procedura de creare a înregistrării/miscării de descărcare a *Unității de încărcare*. Acest lucru este posibil doar dacă *Unitatea de încărcare* a fost deja încărcată și este prezentă într-o listă de preluare UdI;            
+> - **Vizualizare înregistrare de încărcare**: deschide înregistrarea de gestiune a încărcării UdI;  
+> - **Vizualizare înregistrare de descărcare**: deschide înregistrarea de gestiune a descărcării UdI;  
+> - **Restaurare încărcare UDI**: dacă UdI este încărcată, execută rollback-ul înregistrării de gestiune a încărcării;  
+> - **Restaurare descărcare UdI**: dacă UdI este încărcată și descărcată, execută rollback-ul înregistrării de gestiune a descărcării;  
+> - **Adaugă/Elimină articole**: permite utilizatorului să adauge sau să elimine un articol din *Unitatea de încărcare* selectată. De asemenea, utilizatorul are posibilitatea să elimine un articol dintr-o altă *Unitate de încărcare* pentru a-l adăuga în cea selectată. Acest buton este activat pentru liniile încărcate, nelivrate, neasociate la *Dispoziția de livrare* sau *Liste de transfer* și neasociate la declarații de producție;    
+> - **Mută UdI**: permite mutarea UdI dintr-o locație în alta;  
+> - **Restaurare raport**: permite setarea opțiunii de imprimare **Fals**. Acest buton este activat doar pentru liniile neîncărcate și neasociate la declarații de producție.      
 
-### Visualizzazione trasferimenti UDC
+### Vizualizare transferuri UdI
 
-La procedura è stata disegnata per permettere all'utente di interrogare facilmente il magazzino UDC con lo scopo di tenere sotto controllo le giacenze e avere in un tempo di interrogazione minimo tutte le informazioni relative alle UDC presenti a magazzino e che sono state trasferite o meno tra magazzini.
+Procedura a fost concepută pentru a permite utilizatorului să interogheze cu ușurință gestiunea UdI cu scopul de a menține controlul asupra stocurilor și de a obține în timp minim toate informațiile referitoare la UdI prezente în gestiune și care au fost transferate sau nu între gestiuni.
