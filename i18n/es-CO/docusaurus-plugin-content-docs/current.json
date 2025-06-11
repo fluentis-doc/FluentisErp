@@ -1515,27 +1515,27 @@
     "message": "Ciclos de Producción",
     "description": "The label for category Cicli di lavoro in sidebar erpHome"  },
   "sidebar.erpHome.category.Crea assieme": {
-    "message": "Create Assembly",
+    "message": "Crear Ensamblaje",
     "description": "The label for category Crea assieme in sidebar erpHome"
   },
   "sidebar.erpHome.category.Dipendenti": {
-    "message": "Employees",
+    "message": "Empleados",
     "description": "The label for category Dipendenti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Consegne/Resi D.P.I.": {
-    "message": "P.P.E. Delivery/Return",
+    "message": "Entrega y Devolución de Equipos de Protección Personal (E.P.P.)",
     "description": "The label for category Consegne/Resi D.P.I. in sidebar erpHome"
   },
   "sidebar.erpHome.category.Corsi di formazione": {
-    "message": "Training Courses",
+    "message": "Cursos de Capacitación",
     "description": "The label for category Corsi di formazione in sidebar erpHome"
   },
   "sidebar.planning.category.MPS - Master Production Schedule": {
-    "message": "MPS - Master Production Schedule",
+    "message": "PMP - Programa Maestro de Producción",
     "description": "The label for category MPS - Master Production Schedule in sidebar planning"
   },
   "sidebar.planning.category.Stampe": {
-    "message": "Reports",
+    "message": "Informes",
     "description": "The label for category Stampe in sidebar planning"
   },
   "sidebar.planning.category.MS - Master Scheduling": {
