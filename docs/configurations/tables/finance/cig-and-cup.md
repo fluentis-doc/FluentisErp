@@ -18,5 +18,5 @@ Si ricorda che sono presenti due flag nelle [**anagrafiche clienti**](/docs/erp-
 **IBAN:** permette di inserire il codice IBAN del conto corrente bancario che, tipicamente, è associato specificamente alla gara d'appalto o al progetto al fine di canalizzare gli incassi relativi.
 
 :::tip[Nota]
-Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig)
+Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice)
 :::

@@ -18,5 +18,5 @@ Se recuerda que hay dos indicadores en las [**fichas de clientes (anagrafiche cl
 **IBAN:** permite ingresar el código IBAN de la cuenta bancaria que, por lo general, está asociada específicamente a la licitación o al proyecto para canalizar los ingresos correspondientes.
 
 :::tip[Nota (Nota)]
-Para la correcta gestión de los códigos CIG y CUP en los documentos de la factura electrónica, siendo la etiqueta correspondiente un hijo de los datos del pedido, ver [**aquí (qui)**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig).
+Para la correcta gestión de los códigos CIG y CUP en los documentos de la factura electrónica, siendo la etiqueta correspondiente un hijo de los datos del pedido, ver [**aquí (qui)**](/docs/finance-area/e-invoice/configuration_einvoice).
 :::

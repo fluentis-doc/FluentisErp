@@ -18,5 +18,5 @@ It is noted that there are two flags in the [**customer vendor**](/docs/erp-home
 **IBAN:** allows the entry of the IBAN code of the bank account that is typically specifically associated with the bid or project in order to channel the related receipts.
 
 :::tip[Note]
-For the correct management of CIG and CUP codes in the electronic invoice layouts, since the related tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice#codici-cig-e-cup-tag-2126-codicecup-e-2127-codicecig).
+For the correct management of CIG and CUP codes in the electronic invoice layouts, since the related tag is a child of the order data, see [**here**](/docs/finance-area/e-invoice/configuration_einvoice).
 :::
