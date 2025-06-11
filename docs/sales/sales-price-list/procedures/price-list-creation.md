@@ -6,6 +6,11 @@ sidebar_position: 3
 Questa procedura permette di creare nuovi listini di vendita, partendo dagli articoli dei documenti preesistenti.
 Nella parte alta della maschera sono presenti i filtri per ricercare i Dati di origine: scegliere tra Listino di vendita, Listino di acquisto, Anagrafica articoli, DDT di acquisto, Fatture di acquisto o Ordini fornitori; esplodendo la Ricerca documento è inoltre possibile filtrare ulteriormente per cercare uno specifico listino. Per visualizzare i risultati premere Ricerca listini.
 
+:::note Attenzione
+Il campo **Arrotondamenti**, situato nella parte inferiore della maschera, rappresenta un campo obbligatorio. Per poter visualizzare i dati e procedere con la creazione die listini, è necessario selezionare uno degli [arrotondamenti](/docs/sales/sales-price-list/procedures/rounding) precedentemente codificati nell'apposita maschera. 
+:::
+
+
 Nella prima griglia verranno riportati i documenti risultanti dalla ricerca, e selezionando una riga, nella griglia in basso verranno riportati gli articoli del documento. Analizziamo le colonne:       
 - **Classe/Codice/Descrizione articolo**: dati identificativi dell'articolo, seguiti da **Variante**, **Quantità**, **UM**, **Marca**.       
 - **Non considerare**: gli articoli che presentano questo valore spuntato non saranno variati nel nuovo listino.     
