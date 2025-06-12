@@ -1539,35 +1539,35 @@
     "description": "The label for category Stampe in sidebar planning"
   },
   "sidebar.planning.category.MS - Master Scheduling": {
-    "message": "MS - Master Scheduling",
+    "message": "MS - Programación Maestra",
     "description": "The label for category MS - Master Scheduling in sidebar planning"
   },
   "sidebar.planning.category.CRP - Capacity Requirements Planning": {
-    "message": "CRP - Capacity Requirements Planning",
+    "message": "CRP - Planificación de Requerimientos de Capacidad",
     "description": "The label for category CRP - Capacity Requirements Planning in sidebar planning"
   },
   "sidebar.planning.category.Visualizzazione Gantt": {
-    "message": "View Gantt",
+    "message": "Vista Gantt",
     "description": "The label for category Visualizzazione Gantt in sidebar planning"
   },
   "sidebar.production.category.MRP": {
-    "message": "MRP",
+    "message": "MRP - Planificación de Requerimientos de Materiales",
     "description": "The label for category MRP in sidebar production"
   },
   "sidebar.production.category.PP-Production in Progress": {
-    "message": "PP-Production in Progress",
+    "message": "PP - Producción en Proceso ",
     "description": "The label for category PP-Production in Progress in sidebar production"
   },
   "sidebar.production.category.Ordini di Produzione": {
-    "message": "Production Orders",
+    "message": "Órdenes de Producción",
     "description": "The label for category Ordini di Produzione in sidebar production"
   },
   "sidebar.production.category.Dichiarazioni": {
-    "message": "Declarations",
+    "message": "Declaraciones",
     "description": "The label for category Dichiarazioni in sidebar production"
   },
   "sidebar.production.category.Production control": {
-    "message": "Production control",
+    "message": "Control de Producción",
     "description": "The label for category Production control in sidebar production"
   },
   "sidebar.production.category.Fluentis MES": {
@@ -1575,63 +1575,63 @@
     "description": "The label for category Fluentis MES in sidebar production"
   },
   "sidebar.ddmrp.category.Anagrafiche": {
-    "message": "Registers",
+    "message": "Registros",
     "description": "The label for category Anagrafiche in sidebar ddmrp"
   },
   "sidebar.ddmrp.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar ddmrp"
   },
   "sidebar.ddmrp.category.Forms e reports": {
-    "message": "Forms and reports",
+    "message": "Formularios y Reportes",
     "description": "The label for category Forms e reports in sidebar ddmrp"
   },
   "sidebar.crm.category.Home CRM": {
-    "message": "Home CRM",
+    "message": "Inicio CRM",
     "description": "The label for category Home CRM in sidebar crm"
   },
   "sidebar.crm.category.My CRM area": {
-    "message": "My CRM area",
+    "message": "Mi Área CRM",
     "description": "The label for category My CRM area in sidebar crm"
   },
   "sidebar.crm.category.Visit report": {
-    "message": "Visit Report",
+    "message": "Informe de Visita",
     "description": "The label for category Visit report in sidebar crm"
   },
   "sidebar.crm.category.Contatti": {
-    "message": "Contacts",
+    "message": "Contactos",
     "description": "The label for category Contatti in sidebar crm"
   },
   "sidebar.crm.category.Nuovo contatto CRM": {
-    "message": "New CRM Contact",
+    "message": "Nuevo Contacto CRM",
     "description": "The label for category Nuovo contatto CRM in sidebar crm"
   },
   "sidebar.crm.category.Newsletter": {
-    "message": "Newsletter",
+    "message": "Boletín Informativo",
     "description": "The label for category Newsletter in sidebar crm"
   },
   "sidebar.crm.category.Liste di distribuzione": {
-    "message": "Distribution Lists",
+    "message": "Listas de Distribución",
     "description": "The label for category Liste di distribuzione in sidebar crm"
   },
   "sidebar.crm.category.Template": {
-    "message": "Template",
+    "message": "Plantilla",
     "description": "The label for category Template in sidebar crm"
   },
   "sidebar.crm.category.Campagne Marketing": {
-    "message": "Marketing Campaigns",
+    "message": "Campañas de Marketing",
     "description": "The label for category Campagne Marketing in sidebar crm"
   },
   "sidebar.crm.category.Opportunità": {
-    "message": "Opportunities",
+    "message": "Oportunidades",
     "description": "The label for category Opportunità in sidebar crm"
   },
   "sidebar.crm.category.Previsioni di vendita": {
-    "message": "Sales Forecast",
+    "message": "Pronóstico de Ventas",
     "description": "The label for category Previsioni di vendita in sidebar crm"
   },
   "sidebar.crm.category.Helpdesk": {
-    "message": "Helpdesk",
+    "message": "Mesa de Ayuda",
     "description": "The label for category Helpdesk in sidebar crm"
   },
   "sidebar.purchase.category.Richiesta di offerta": {
