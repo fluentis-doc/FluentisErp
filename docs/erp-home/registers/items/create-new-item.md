@@ -180,6 +180,10 @@ In **Fluentis ERP** non ci sono dei parametri già definiti che indicano come im
 La form è composta da una griglia all'interno della quale si va ad inserire un **Nuovo** barcode, tramite il pulsante **Inserisci** presente nella ribbon bar, oppure andando direttamente su una nuova riga.  
 Nel campo **Tipo barcode** si va a selezionare, tramite la relativa combo, il tipo di barcode che si vuole codificare e nel campo **Barcode** il codice barcode.
 
+:::note Nota
+Attivando il flag **Export pubblica amministrazione**, presente nella tabella [Tipi barcode](https://docs.fluentis.com/FluentisErp/docs/configurations/tables/general-settings/barcode-types/), il controllo di unicità del barcode inserito viene fatto solo a livello del singolo articolo, mentre se il flag è disattivato il controllo dell'unicità del barcode viene effettuato a livello globale, quindi per tutti gli articoli.
+:::
+
 #### Pulsanti specifici  
 > **Validation**: premendo questo pulsante, il sistema va a verificare che il codice corrisponda alle norme citate in precedenza riguardanti la lunghezza che il codice deve avere in base al tipo di codice che si sta inserendo;  
 > **Cancella codici barcode**: permette di cancellare un codice a barre precedentemente inserito.
