@@ -289,8 +289,9 @@ This flag along with the *Alternative Measurement Unit* and *Alternative quantit
 In the two grids, lots and serial numbers that must be loaded into the warehouse can be entered.   
 If the item does not provide for the management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item), this tab will be disabled.
 
-:::tip Remember (Ricorda)
-If in the [Purchase Delivery Note Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) the *Batches and S.N. compulsory* flag is disabled, it will be possible to save the document without entering lots/serial numbers. Furthermore, if the *Lot Retrieval Type* coded in the [item registry](/docs/erp-home/registers/items/create-new-item) is *FIFO* or with *Expiry date*, at the time of loading the delivery note into the warehouse, the lots will be automatically proposed if they have not already been entered previously.
+:::tip Remember 
+If in the [Purchase Delivery Note Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) the *Batches and S.N. compulsory* flag is disabled, it will be possible to save the document without entering lots/serial numbers. 
+At the time of loading the delivery note into the warehouse, the lots will be automatically proposed if they have not already been entered previously.
 :::
 
 #### Specific Buttons

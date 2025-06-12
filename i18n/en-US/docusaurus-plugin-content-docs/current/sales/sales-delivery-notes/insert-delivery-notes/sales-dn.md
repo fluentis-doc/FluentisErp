@@ -278,6 +278,11 @@ This operation is conditioned by the presence of lots and serial numbers in the 
 
 If the item does not require the management of Lots/Serial Numbers, this tab will be disabled.  
 
+:::tip Remember   
+If in the [Initial Warehouse Parameters](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters) the flag *Batches and serial numbers required* is disabled, it will be possible to save the document without entering batches/serial numbers.  
+Furthermore, if the *Withdrawal type* of the batch coded in the [item registry](/docs/erp-home/registers/items/create-new-item) is *FIFO* or with *Expiry date*, at the time of registering the Delivery Note to the warehouse, the batches will be proposed automatically, if they have not already been entered previously.
+:::
+
 #### Specific buttons
 
 import DeleteLot from './../../../import/buttons/delete-lot.md'

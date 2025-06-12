@@ -366,7 +366,8 @@ In these two grids, lots and serial numbers that must be loaded into the warehou
 If the article does not require the management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item), this tab will be disabled.
 
 :::tip Remember 
-If in the [Purchase Invoice Parameters](/docs/configurations/parameters/purchase/purchase-invoices-parameters) the flag *Batches and S.N. compulsory* is disabled, it will be possible to save the document without entering lots/serial numbers. Furthermore, if the *Withdrawal Type* of the lot coded in the [item registry](/docs/erp-home/registers/items/create-new-item) is *FIFO* or *Expiry date* at the time of loading the invoice into the warehouse, the lots will be proposed automatically if they have not already been entered previously.
+If in the [Purchase Delivery Note Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) the flag *Batches and S.N. compulsory* is disabled, it will be possible to save the document without entering the batches/serial numbers.  
+At the time of warehouse loading of the DN, the batches will be proposed automatically if they have not already been entered previously.
 :::
 
 ### 3.6 Analytical 

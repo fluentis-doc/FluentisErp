@@ -19,6 +19,7 @@ In this tab, the user has the ability to search for and transfer the DN that hav
 > **Search**: allows you to search for DN to be shipped.  
 > **Unload**: allows you to execute the shipment of the selected DN from the warehouse, based on the shipment algorithms and the parameters entered in the following *Parameters* tab.
 
+
 ### Parameters 
 
 In this form, the user can specify how to handle exceptions for the item lines.
