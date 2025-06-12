@@ -5,23 +5,23 @@ sidebar_position: 1
 
 ### Patch 707.1-0035 - 06/06/2025 
 
-> - SD - Nel caso in cui più DDT vengano valorizzati in una fattura immediata che non ha il flag "Scollega DDT", i documenti non possono essere movimentati singolarmente. Lo scarico e l’eventuale ripristino della registrazione di magazzino devono essere eseguiti congiuntamente per tutti i DDT valorizzati nella stessa fattura. (#TT02481/25) 
-> - PR - Vendor Payment - manage exchange rate differences ( TT02563/25) 
-> - MS - Implementato in pianificazione generale nel caso in cui venga usato il raggruppamento, gli ordini pianificati creati sono raggruppati anche per versione della distinta base. (#TT02179/25) 
-> - MES, repository method - disporre del campo FSSignalLabelDeclaration - BatchRegister-Note. (#TT02543/25) 
-> - FI - Comunicazione liquidazioni periodiche IVA: rivista la generazione del file nel caso in cui il campo "Impegno alla presentazione telematica" sia impostato su "Nessuno". (Rif. TT02451/25) 
-> - PR - risolto errore in fase di apertura form parametri pagamenti fornitori “l’oggetto è stato cancellato da un altro utente” ( TT00246/25) 
-> - WM - Nella procedura differenze inventariali è stato implementato un widget per poter scegliere l’inventario da considerare. (#TT00700/25)                                                                       (forms modified:  StockDifferenceFilterWidget, StockDifferenceReport) 
+> - SD - Nel caso in cui più DDT vengano valorizzati in una fattura immediata che non ha il flag "Scollega DDT", i documenti non possono essere movimentati singolarmente. Lo scarico e l’eventuale ripristino della registrazione di magazzino devono essere eseguiti congiuntamente per tutti i DDT valorizzati nella stessa fattura (#TT02481/25) 
+> - PR - Pagamenti fornitore – gestite le differenze di cambio (#TT02563/25) 
+> - MS - Implementato in pianificazione generale nel caso in cui venga usato il raggruppamento, gli ordini pianificati creati sono raggruppati anche per versione della distinta base (#TT02179/25) 
+> - MES, repository method - disporre del campo FSSignalLabelDeclaration - BatchRegister-Note (#TT02543/25) 
+> - FI - Comunicazione liquidazioni periodiche IVA: rivista la generazione del file nel caso in cui il campo "Impegno alla presentazione telematica" sia impostato su "Nessuno" (#TT02451/25) 
+> - PR - risolto errore in fase di apertura form parametri pagamenti fornitori “l’oggetto è stato cancellato da un altro utente” (#TT00246/25) 
+> - WM - Nella procedura differenze inventariali è stato implementato un widget per poter scegliere l’inventario da considerare (#TT00700/25) (forms modificate: StockDifferenceFilterWidget, StockDifferenceReport) 
 > - SD - Nei listini di vendita è ora possibile inserire una Data fine validità antecedente alla Data aggiornamento delle righe articolo (#TT02062/25) 
 > - SD - Nella fattura di vendita, il calcolo sconti prende ora in considerazione anche le righe di tipo 6 e 7 (#TT02243/25) 
-> - SH - Blazor sql query windows - reorganize/resize (#TT02595/25) 
-> - MS - Corretto bug nel report di stampa della costificazione commesse. (#TT02218/25 ) 
-> - MS - In Sequenza fasi non vengono più visualizzate le fasi che hanno una dichiarazione di produzione di chiusura. (#TT02028/25) 
+> - SH - Blazor sql query windows - riorganizzazione/ridimensionamento (#TT02595/25) 
+> - MS - Corretto bug nel report di stampa della costificazione commesse (#TT02218/25) 
+> - MS - In Sequenza fasi non vengono più visualizzate le fasi che hanno una dichiarazione di produzione di chiusura (#TT02028/25) 
 > - MES - Corretto bug sulla proposta dei lotti nelle dichiarazioni di produzione (TT02471/25) 
 > - MES - bug fix per MES - Aggiornamento (#TT02621/25) 
 > - SH - revisione gestione inserimento gruppi di parametri generali con natura custom (#TT01965/25) 
 > - SD - Nel caso in cui nel Tipo documento non sia presente il flag ‘Verifica lotti’, è permessa la cancellazione di lotti e numeri seriali tramite Web API (#TT01142/25) 
-> - Solved problem to generate scripts for prefix different from Fluentis (#TT02551/25).
+> - SH - Risolto problema nella generazione degli script per prefissi diversi da Fluentis (#TT02551/25)
 
 
 ### Patch 707.1-0034 - 30/05/2025 
