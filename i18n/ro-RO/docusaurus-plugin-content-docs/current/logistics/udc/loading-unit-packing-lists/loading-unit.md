@@ -1,113 +1,121 @@
 ---
-title: Liste ieșiri UdI/Listă ambalare (versione WPF e WMS) (Liste ieşiri UdI/Listă ambalare (versione WPF e WMS))
+title: Liste ieșiri UdI/Listă ambalare (versiune WPF și WMS)
 sidebar_position: 1
 ---
 
-### Liste ieșiri UdI/Listă ambalare (versione WPF) (Liste ieşiri UdI/Listă ambalare (versione WPF))
+## Liste de ieșire UdI / Listă de ambalare (versiune WPF)
 
-:::important A cosa serve (Ce este util)
-Lista de Prelevare UDC / Lista de Ambalare din Fluentis oferă o metodă inovatoare pentru gestionarea prelevării unităților de încărcare, în contrast cu procedura tradițională de picking care se bazează pe articole individuale. Această funcționalitate este deosebit de utilă atunci când doriți să expediați mărfuri unui client, permițând gruparea articolelor în unități de încărcare predefinite.
-
-Crearea unei noi liste de prelevare necesită pur și simplu introducerea de informații precum tipul de picking, depozitul și utilizatorul. Operatorii pot apoi selecta unitățile de încărcare deja create și încărcate în depozit direct în tab-ul "Detaliu unitate de încărcare", facilitând astfel asocierea articolelor de expediat cu comanda client corespunzătoare. Datorită butonului "Ajutor UDC", utilizatorii pot naviga cu ușurință între unitățile de încărcare disponibile, făcând procesul de selecție rapid și eficient.
-
-Listele de prelevare UDC nu doar simplifică pregătirea expedierilor, ci permit de asemenea generarea directă de documente de transport precum DDT și facturi, conținând toate informațiile necesare referitoare la articolele și unitățile de încărcare implicate în expediere. Această integrare garantează o gestionare mai fluidă și eficientă în procesul de logistică și expedieri.
+:::important Utilizare  
+Funcționalitatea *Listă de ieșire UdI / Listă de ambalare* din Fluentis oferă un mod eficient și structurat de gestionare a expedierilor prin utilizarea unităților de încărcare (UdI).  
+Acest instrument este ideal pentru pregătirea livrărilor către clienți, permițând gruparea articolelor în UdI predefinite.  
+Crearea unei noi *liste de ieșire* presupune completarea obligatorie a tipului dispoziției de livrare, a gestiunii și a utilizatorului. Operatorul poate selecta UdI deja existente și încărcate în gestiune direct din tab-ul *Detalii unitate de încărcare*.   
+Listele de ieșire UdI permit și generarea automată a documentelor de transport (avize, facturi), incluzând toate detaliile despre articolele și unitățile implicate în livrare.  
 :::
 
-Cu **listele de prelevare (liste de prelevare)** este posibilă crearea unui picking de unități de încărcare, spre deosebire de picking-ul normal care este compus din articole individuale.  
-Din masca de **Căutare (Ricerca)** este posibil să căutați listele introduse anterior.  
-Pentru a crea o nouă listă, faceți clic pe **Nou (Nuovo)**.  
+Cu ajutorul *listelor de ieșire*, puteți crea dispoziții de livrare bazate pe unități de încărcare, spre deosebire de cele clasice, care includ articole individuale.
 
-Datele obligatorii de introdus sunt:  
-**Tip picking (Tipo picking)**: introduceți tipul de [picking](/docs/logistics/picking/picking-management) care urmează a fi utilizat;  
-**Utilizator (Utente)**: introduceți angajatul codificat care creează documentul;  
-**Utilizator pentru confirmare (Utente per conf.)**: introduceți angajatul care are dreptul de a confirma lista.  
+Pentru a accesa listele existente deschideți form-ul de **Căutare**, iar pentru o nouă listă, faceți clic pe butonul **Nou**.
 
-După introducerea datelor necesare, este posibil să salvați lista de prelevare.  
-Cu butonul din ribbon bar **ajutor UDC (help UDC)** este posibil să deschideți masca în care să selectați UDC-urile care trebuie prelevate.  
-Căutarea poate fi efectuată pe unitățile de încărcare asociate comenzilor client (activând flag-ul **Căutare pe comenzi client (Ricerca su ordini clienti)**), deci, pentru fiecare comandă client putem vizualiza articolele care o compun și dacă acestea au fost introduse anterior în cadrul unei unități de încărcare; în tabelul de mai jos putem vedea toate detaliile referitoare la UDC-ul care le conține. Odată ce UDC-urile de interes sunt selectate, acestea sunt adăugate la listă.  
-Alternativ, dezactivând flag-ul **Căutare pe comenzi client**, unitățile de încărcare pot fi căutate și între toate cele create, chiar dacă nu sunt legate de o comandă client, și la fel pot fi selectate și adăugate la lista de prelevare.  
-În grila de *Detaliu* vor apărea doar UDC-urile în stare încărcată, după care este posibil să salvați *Lista* și să o închideți.  
-Întorcându-ne la masca de *Căutare Liste de prelevare*, lista va fi prezentă cu starea **Suspendată (Sospeso)**. Este necesar să descărcați UDC-urile din listă (vezi *Butonii specifici* mai jos) pentru a trece la starea **Controlată (Controllato)**. Doar în această ultimă stare se vor activa butoanele din ribbon bar **Factură (Fattura)** și **DDT**.  
+### Date obligatorii  
+- **Tip dispoziție de livrare**: selectați tipul [dispoziției de livrare](/docs/logistics/picking/picking-management).  
+- **Utilizator**: angajatul care creează documentul.  
+- **Confirmare utilizator**: angajatul responsabil cu validarea listei.
 
-*Butonii specifici:* 
-> **Facturi (Fatture)**: creează factura din *Lista* selectată; în masca care apare este solicitat [Tipul Facturii (Tipo Fattura)](/docs/configurations/tables/sales/invoices-type) care urmează a fi creat și eventual gruparea care trebuie adoptată; factura este creată deja *Descărcată (Scaricata)* (pentru a evita riscul unei descărcări duble).  
-> **DDT**: creează DDT din *Lista* selectată; în masca care apare este solicitat [Tipul DDT (Tipo DDT)](/docs/configurations/tables/sales/delivery-notes-type) care urmează a fi creat și eventual gruparea care trebuie adoptată; DDT-ul este creat deja *Descărcat (Scaricato)* (pentru a evita riscul unei descărcări duble).  
-> **Gestionare UDC (Gestione UDC)**: selectând o *Listă de prelevare* și făcând clic pe acest buton se deschide masca **Gestionare UDC** în care UDC-urile din listă sunt pre-filtrate. În această mască UDC-urile pot fi gestionate în depozit cu diversele butoane din ribbon bar.  
+După completarea câmpurilor, salvați lista pentru a continua procesul.
 
-Pentru toate informațiile despre cum să utilizați această formă din WMS consultați [Liste ieșiri UdI/Listă ambalare](/docs/logistics/wms/udc/loading-unit-picking-list)
+#### Selecție unități de încărcare
 
-### Liste ieșiri UdI/Listă ambalare (versione WMS) (Liste ieșiri UdI/Listă ambalare (versione WMS))
+Utilizați butonul **Help UdI** din ribbon bar pentru a deschide fereastra de selecție a UdI-urilor.
 
-:::important A cosa serve (Ce este util)
-Funcția Liste de Prelevare / Lista de Ambalare din WMS-ul Fluentis permite crearea unui picking de unități de încărcare, facilitând pregătirea expedierilor direct legate de comenzile client.  
-Datorită acestui instrument, utilizatorii pot selecta, modifica și gestiona eficient UDC-urile, optimizând procesul de prelevare și asigurând o documentație corectă pentru expedieri.
+*Opțiuni de căutare*:  
+- activând opțiunea pe ordine client: pentru fiecare ordin client sunt afișate articolele care il compun, iar dacă acestea au fost deja incluse într-o UdI, în tabelul inferior sunt vizualizare toate detaliile UdI. Odată selectate UdI dorite, acestea sunt adăugate în listă.
+- neactivând opțiunea pe ordine client: sunt afișate toate UdI pentru a fi selectate.
+
+În tabelul **Detaliu** vor apărea doar UdI cu starea *încărcată*, după care este posibil să salvați *Lista* și să o închideți.  
+În form-ul de **Căutare**, lista va fi prezentă cu starea **Suspendată**. Este necesar să descărcați UdI ale listei (vedeți *Butoane specifice* mai jos) pentru a trece la starea **Verificată** și pentru a activa butoanele din ribbon bar **Facturi** și **Avize**.  
+
+#### Butoane specifice  
+> - **Facturi**: creează factura din *Lista* selectată; în formul care se deschide este solicitat [Tipul Facturii](/docs/configurations/tables/sales/invoices-type) care urmează a fi creată și eventual gruparea care trebuie adoptată; factura este creată deja *Descărcată* (pentru a evita riscul unei descărcări duble).  
+> - **Avize**: creează avize din *Lista* selectată; în formul care se deschide este solicitat [Tipul avizului](/docs/configurations/tables/sales/delivery-notes-type) care urmează a fi creat și eventual gruparea care trebuie adoptată; aviz-ul este creat deja *Descărcat* (pentru a evita riscul unei descărcări duble).  
+> - **Gestionare UdI**: selectând o *Listă de ieșire* și făcând clic pe acest buton se deschide formul **Gestionare UdI** în care UdI din listă sunt deja filtrate. În acest form, UdI pot fi gestionate în depozit cu diversele butoane din ribbon bar.  
+
+Pentru toate informațiile despre cum să utilizați acest form din WMS consultați [Liste ieșiri UdI/Listă ambalare](/docs/logistics/wms/udc/loading-unit-picking-list)
+
+## Liste ieșiri UdI/Listă ambalare (versiune WMS)
+
+:::important Utilizare
+Funcționalitatea *Liste de ieșiri/Lista de ambalare* din WMS Fluentis permite crearea unui dispozitii de livrare cu unități de încărcare, facilitând pregătirea expedierilor direct legate ordinelor client.  
+Datorită acestui instrument, utilizatorii pot selecta, modifica și gestiona eficient UdI, optimizând procesul de colectare și asigurând o documentație corectă pentru expedieri.
 :::
 
-Această procedură este utilizată pentru crearea de liste de prelevare cu unități de încărcare.  
+Procedura este utilizată pentru crearea de *liste de ieșiri* cu unități de încărcare.  
+ 
+*Listele de ieșiri UdI* sunt folosite în cazul în care se dorește expedierea mărfii către un client.  
+În cazil mișcărilor UdI în propriile depozite este oportun să se utilizeze [Listele de transfer UdI](/docs/logistics/wms/udc/loading-unit-transfer-list).  
 
-Cu **Listele de prelevare UDC / Lista de ambalare** este posibil să creați un *picking* de unități de încărcare, spre deosebire de procedura normală de picking care creează o listă de prelevare formată din articole individuale.  
-Listele de prelevare UDC sunt folosite în cazul în care se dorește expedierea mărfii către un client, în timp ce în cazul transferurilor de UDC în interiorul propriilor depozite este oportun să se utilizeze [Listele de Transfer UDC](/docs/logistics/wms/udc/loading-unit-transfer-list).  
+#### Căutare liste
 
-În form-ul de filtrare este posibil să căutați listele de interes filtrând: după data introducerii, data expedierii și de asemenea după starea listei de prelevare; odată ce a fost selectată, este posibil să deschideți lista cu butonul **Deschide (Apri)**, în cadrul căreia utilizatorul are posibilitatea de a modifica unitățile de încărcare conținute în tab-ul *Detaliu UDC*.  
-În acest tab este posibil să: selectați o unitate de încărcare existentă și să o eliminați din listă cu butonul **Șterge UDC (Cancella UDC)**; sau, să adăugați una nouă pur și simplu citind codul de bare corespunzător.  
-Odată ce modificările sunt finalizate, este necesar să salvați lista prin butonul **Salvează (Salva)**.  
+După căutarea listelor dorite, acestea pot fi deschise cu butonul **Deschide** și apoi modificate în tab *Detaliu UdI*.  
+În acest tab puteți să selectați o unitate de încărcare existentă și să o eliminați din listă cu butonul **Șterge UdI** sau să adăugați una nouă citind codul de bare corespunzător.  
+Odată ce modificările sunt finalizate, este necesar să salvați lista cu butonul **Salvează**.  
 
-Din filtrare este posibil de asemenea să creați o nouă listă cu butonul **Nou (Nuovo)**.  
-Automat sunt propuse: data curentă și depozitul indicat în tabelul Parametrii depozitului de Încărcare/Descărcare pentru utilizator; de asemenea, în funcție de tipul de picking, este propus și numărul listei. 
-În acest moment, utilizatorul poate introduce, în tab-ul *Detaliu UDC*, unitățile de încărcare de adăugat la listă prin citirea codurilor de bare corespunzătoare. Odată ce introducerea s-a finalizat, va fi suficient să salvați lista cu butonul corespunzător.
+#### Creare liste
 
-**Parametrii de încărcare/descărcare (Parametri carico/scarico)** de introdus în tabelul [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+Tot din form-ul principal se pote crea o nouă listă utilizând butonul **Nou**.  
 
-| Area | Modulo | Form |
+Automat sunt propuse: data curentă și gestiunea indicată în tabelul *Parametrii gestiune încărcare/descărcare pe utilizator*. De asemenea, simutan cu inserearea tipului dispozitiei de livrare, este propus și numărul listei. 
+Utilizatorul poate introduce, în tab *Detaliu UdI*, unitățile de încărcare care vor fi adăugate listei prin citirea codurilor de bare corespunzătoare. 
+
+**Parametrii de încărcare/descărcare** de introdus în tabelul [Parametrii încărcare/descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+
+| Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | PickingList |
 
-Pentru acest parametru, cauza de depozit poate fi lăsată liberă.
+Pentru acest parametru, șablonul de gestiune poate fi necompletat.
 
-:::note Nota (Notă)
-Dacă în [Parametrii Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) este asociat pentru acel utilizator un singur depozit, se propune implicit acela; altfel, dacă există mai multe asociate, implicit nu se propune niciunul și utilizatorul poate alege doar dintre cele introduse.
+:::note Nota  
+Dacă în [Parametrii încărcare/descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) este asociată pentru acel utilizator o singură gestiune, se propune implicit aceea. Dacă însă sunt mai multe asociate, nu este propus implicit niciunul și utilizatorul poate alege doar dintre cele existente.
 :::
 
-Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod Barcode (Codice barcode)** consultați pagina relevantă pentru [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod Barcode** consultați pagina [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
-### Confirmare transfer UDC (versione WMS) (Confirmare transfer UDC (versione WMS))
+## Confirmare transfer UdI (versiune WMS)
 
-:::important A cosa serve (Ce este util)
-Această procedură este utilizată pentru a căuta și a confirma o [Listă de Transfer UDC](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existentă pentru a efectua mișcarea în depozit.
+:::important Utilizare
+Această procedură este utilizată pentru a căuta și a confirma o [Listă de Transfer UdI](/docs/logistics/UdI/loading-unit-packing-lists/transfer-unit) existentă pentru a efectua mișcarea de gestiune.
 :::
 
-Form-ul **Confirmare transfer UDC** este utilizat pentru a confirma o [Listă de Transfer UDC](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existentă pentru a efectua mișcarea în depozit.
+Puteți să căutați lista dorită după: dată, număr și gestiune și puteți să o confirmați direct cu butonul **Confirmă** fără a fi necesar să o deschideți.  
+Altfel, puteți să deschideți lista cu butonul **Deschide** și să vizualizați unitățile de încărcare care nu au fost încă descărcate și pe cele care au fost deja descărcate în tab-urile corespunzătoare, pentru ca apoi să o confirmați și să creați mișcarea de gestiune.
 
-În filtrare este posibil să căutați lista de interes după: dată, număr și depozit, de asemenea, este posibil să o confirmați direct cu butonul **Confirmă (Conferma)** fără a fi necesar să o deschideți.  
-Altfel, este posibil să intrați în listă prin butonul **Deschide (Apri)** și să vizualizați unitățile de încărcare care nu au fost încă descărcate și cele care au fost deja descărcate în tab-urile corespunzătoare: unități de încărcare netransferite și transferite, pentru a putea apoi să o confirmați și să creați mișcarea de depozit.
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii încărcare/descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-**Parametrii de încărcare/descărcare (Parametri carico/scarico)** de introdus în tabelul [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
-
-| Area | Modulo | Form |
+| Aria | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmPickingList |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmPickingList |
 
-Parametrii sunt introduși de două ori deoarece form-ul utilizează: atât o cauză de încărcare cu ca depozit ceea ce este destinația listei, cât și una de descărcare cu ca depozit cel în care sunt stocate unitățile de încărcare care trebuie transferate.  
-Ambele cauze utilizate trebuie să aibă flag-ul *Listă de materiale (Distinta base)* dezactivat și să nu aibă contraparte.  
+Parametrii sunt introduși de două ori deoarece form-ul utilizează atât un șablon de încărcare cu gestiunea identică cu cea a destinației listei, cât și una de descărcare cu gestiunea cea în care sunt stocate unitățile de încărcare care trebuie transferate.  
+Ambele șabloane utilizate trebuie să aibă flag-ul *Listă componente* dezactivat și să nu aibă contrapartide.  
 
-Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod Barcode (Codice barcode)** consultați pagina relevantă pentru [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod Barcode** consultați pagina [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
-### Confirmare prelevare UDC (versione WMS) (Confirmare prelevare UDC (versione WMS))
+### Confirmare ieșire UdI (versiune WMS)
 
-:::important A cosa serve (Ce este util)
-Form-ul **Confirmare prelevare UDC** este utilizat pentru a căuta și a confirma o [Lista de prelevare UDC / Lista de ambalare](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existentă pentru a efectua mișcarea de depozit de descărcare.
+:::important Utilizare
+Form-ul **Confirmare ieșire UdI** este utilizat pentru a căuta și a confirma o [Lista ieșiri UdI/Lista de ambalare](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existentă pentru a efectua mișcarea de gestiune de descărcare.
 :::
 
-În filtrare este posibil să căutați lista de interes după: dată, număr și depozit, de asemenea, este posibil să o confirmați direct cu butonul **Confirmă (Conferma)** fără a fi necesar să o deschideți.  
-Altfel, este posibil să intrați în listă prin butonul **Deschide (Apri)** și să vizualizați unitățile de încărcare care nu au fost încă descărcate și cele care au fost deja descărcate în tab-urile corespunzătoare: unități de încărcare ne-descărcate și descărcate, pentru a putea apoi să o confirmați și să creați mișcarea de depozit.
-   
-**Parametrii de încărcare/descărcare (Parametri carico/scarico)** de introdus în tabelul [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+Puteți să căutați lista dorită după: dată, număr și gestiune și puteți să o confirmați direct cu butonul **Confirmă** fără a fi necesar să o deschideți.  
+Altfel, puteți să deschideți lista cu butonul **Deschide** și să vizualizați unitățile de încărcare care nu au fost încă descărcate și pe cele care au fost deja descărcate în tab-urile corespunzătoare, pentru ca apoi să o confirmați și să creați mișcarea de gestiune.
 
-| Area | Modulo | Form |
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii încărcare/descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+
+| Aria | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmUnloadPickingList |
 
-Acest parametru trebuie creat cu depozitul listelor de *prelevare* și cu cauza de depozit cu tip de descărcare și fără contraparte.
+Acest parametru trebuie creat cu gestiunea listelor de *ieșire* și cu șablonul de gestiune cu tipul de descărcare și fără contrapartidă.
 
-Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod Barcode (Codice barcode)** consultați pagina relevantă pentru [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod Barcode** consultați pagina [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
