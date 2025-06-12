@@ -45,28 +45,28 @@ Unutar sekcije koja se odnosi na kontakt podatke nalaze se (otvorite expander) p
 
 **Skup / Detaljan**: ovo polje specificira hoće li jedinstvena potvrda koja će biti obrađena biti detaljna (prikazat će podatke odvojeno za svaki pojedinačni iznos isplaćen svakom primatelju) ili agregirana (prikazat će agregirane i ukupne podatke za svakog pojedinačnog primatelja). Pogledajte upute ministarstva.
 
-**Soggetto che effettua la dichiarazione, pers. fis.**: la combo box, collegata alla tabella Dipendente, permette di inserire il soggetto che firma la dichiarazione (il dato è obbligatorio).
+**Osoba koja podnosi izjavu, fizička osoba**: padajući izbornik, povezan s tablicom Zaposlenik, omogućuje unos osobe koja potpisuje izjavu (ovaj podatak je obavezan). 
 
-**Codice carica**: inserire tramite la combo box il codice carica del soggetto che firma la dichiarazione (es. rappresentante legale) vedere le istruzioni ministeriali;
+**Šifra funkcije**: unesite putem padajućeg izbornika šifru funkcije osobe koja potpisuje izjavu (npr. zakonski zastupnik); pogledati službene upute ministarstva;
 
-**Soggetto che effettua la dichiaraz. pers. giuridica**: in questo campo è possibile inserire i dati anagrafici (ripresi dalle anagrafiche già presenti nel sistema) di una società che presenta la dichiarazione per conto dell'azienda in uso (vedere istruzioni ministeriali);
+**Osoba koja daje izjavu, pravna osoba**: u ovom polju moguće je unijeti podatke o pravnoj osobi (preuzeti iz postojećih podataka u sustavu) koja podnosi izjavu u ime poduzeća koje je trenutno u upotrebi (vidjeti upute ministarstva);
 
-**Data firma sostituto d'imposta**: è necessario indicare la data della firma della dichiarazione;
+**Datum potpisa zamjenika obveznika poreza**: potrebno je unijeti datum potpisa izjave.;
 
-**Firma**: attivare sempre il flag che indica che la dichiarazione è firmata e riporta in stampa il nome del soggetto firmatario (vedere campo Soggetto che effettua la dich...)
+**Potpis**: uvijek aktivirati flag koji označava da je izjava potpisana i da se na ispisu prikazuje ime osobe koja je potpisala (vidi polje Osoba koja daje izjavu...)
 
-### GRIGLIA DETTAGLIO
+### DETALJNA TABLICA
 
-I campi ricalcano i dati presenti nel modello ministeriale e pertanto si rinvia alle istruzioni fiscali l'illustrazione del contenuto.
+Polja odgovaraju podacima navedenima u službenom obrascu ministarstva, te se za objašnjenja sadržaja upućuje na porezne upute.  
 
-E' possibile intervenire manualmente modificando i dati che vengono generati automaticamente con la procedura di calcolo, attivabile dalla ribbon bar.![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image03.png)
+Moguće je ručno intervenirati i izmijeniti podatke koji se automatski generiraju pomoću postupka izračuna, koji se može pokrenuti putem trake izbornika.![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image03.png)
 
-Per generare il file da trasmettere telematicamente utilizzare il pulsante **Esporta**. Il file verrà memorizzato nel documentale di Fluentis e sarà possibile scaricarne una copia sul proprio pc locale.
+Za generiranje datoteke za elektroničko slanje koristi se tipku **Izvezi**. Datoteka će biti pohranjena u dokument menadžeru Fluentis sustava, a moguće ju je i preuzeti na lokalno računalo.
 
 ![](/img/neutral/common/document-manager.png)
 
-### GRIGLIA INFERIORE 
+### DONJA TABLICA  
 
-**Codici AU....** è riservata all'inserimento, per ogni riga della griglia Dettaglio, di informazioni ulteriori richieste in particolari situazioni per le quali si rinvia alle istruzioni ministeriali.
+**AU kodovi....** namijenjeni su unosu dodatnih informacija za svaki redak u detaljnoj tablici, koje su potrebne u posebnim slučajevima. Za više informacija potrebno je konzultirati službene upute ministarstva.  
 
 ![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image05.png)
