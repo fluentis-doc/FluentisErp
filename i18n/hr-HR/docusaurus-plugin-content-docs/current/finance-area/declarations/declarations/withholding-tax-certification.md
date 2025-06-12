@@ -1,50 +1,49 @@
 ---
-title: Certificazione ritenuta telematica
+title: Elektronička potvrda o obustavljenom porezu
 sidebar_position: 2
 ---
 
-Da questa form è possibile gestire la Certificazione Unica delle ritenute d'acconto operate nei confronti dei percipienti generando il file per l'invio telematico.
+Iz ovog obrasca moguće je upravljati Jedinstvenim certifikatom odbitaka po osnovi ugovora prema korisnicima generirajući datoteku za slanje putem interneta.
 
-:::danger **ATTENZIONE**:
- Per la corretta elaborazione dei dati da parte dell'applicativo è fondamentale che sia i compensi dei percipienti, **sia il relativo pagamento**, siano stati registrati tramite le funzionalità del modulo percipienti, affinchè possa essere calcolato correttamente il debito per ritenute d'acconto.
+:::danger **PAŽNJA**:
+ Za ispravnu obradu podataka od strane aplikacije, važno je da su i primici isplatnih korisnika, kao i **pripadajuća plaćanja**, evidentirani putem funkcionalnosti modula za isplatne korisnike, kako bi se mogao ispravno izračunati dug po osnovi poreza po odbitku.
 :::
 
+Struktura obrasca, malo drugačija od ostatka aplikacije, predviđa izlaganje postojećih komunikacija i njihovih detalja sve u jednom prozoru.
 
-La struttura della form, leggermente diversa del resto dell'applicativo, prevede l'esposizione delle comunicazioni esistenti e del relativo dettaglio tutto in un' unica videata.
+Tipka **Traži**, prisutan u traci izbornika, omogućuje pretraživanje već unesenih komunikacija koje će biti prikazane u gornjoj mreži Rezultat.
 
-Il pulsante **Ricerca**, presente nella ribbon bar, permette di ricercare le comunicazioni già inserite che saranno riportate nella griglia superiore Risultato.
+Odabirom komunikacije bit će vidljiv pregled pripadajućih detalja u središnjoj mreži Detalji. 
 
-Selezionando una comunicazione sarà visibile un'anteprima del relativo dettaglio nella griglia centrale Dettaglio (senza bisogno di entrare in modifica).
+Dvojnim klikom na izjavu moguće je ući u njezinu izmjenu.
 
-Con il doppio click sulla dichiarazione è possibile entrare in modifica della stessa.
+Tipka **Novi** će umetnuti novu izjavu.
 
-Il pulsante **Nuovo** andrà ad inserire una nuova dichiarazione.
-
-### GESTIONE DELLE ANAGRAFICHE:
+### UPRAVLJANJE MATIČNIM PODACIMA:
 
 ![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image01.png)
 
-All'interno della sezione relativa a i dati di contatto sono presenti (aprire l'expander) i campi per i dati del percipiente (data e luogo di nascita). Tali dati saranno inseriti nella certificazione unica. Devono essere compilati anche i due campi relativi al **Nome** e **Cognome** poichè il campo unico Ragione sociale non rileva ai fini del modello fiscale.
+Unutar sekcije koja se odnosi na kontakt podatke nalaze se (otvorite expander) polja za podatke o primatelju (datum i mjesto rođenja). Ovi podaci bit će uneseni u jedinstvenu potvrdu. Također je potrebno ispuniti dva polja vezana uz **Ime** i **Prezime** jer jedinstveno polje "Naziv društva" nije relevantno za porezni obrazac.
 
-### INSERIMENTO DATI DI TESTATA:
+### UNOS PODATAKA ZAGLAVLJA:
 
-**Anno**: proposto automaticamente pari all'anno in corso;
+**Godina**: automatski predložen kao tekuća godina;
 
-**Cod. Fiscale Sogg. Obbl.**: inserire il codice fiscale dell'azienda (sostituto d'imposta). Il dato sarà riportato nel tracciato telematico e nella testata della stampa del modello fiscale.
+**OIB obveznog subjekta**: unesite OIB poduzeća (poreznog obveznika). Taj podatak bit će uključen u elektronički zapis i u zaglavlje ispisa poreznog obrasca.
 
-**Cod. Fiscale intermediario**:se ci si avvale di un intermediario abilitato per l'invio della dichiarazione (Caf, Commercialista ecc...) indicare qui il relativo codice fiscale.
+**OIB posrednika**: se ci si avvale di un intermediario abilitato per l'invio della dichiarazione (Caf, Commercialista ecc...) indicare qui il relativo codice fiscale.
 
-**Nr. iscrizione Caf**: il campo permette di inserire il nr di iscrizione all'albo dei caf dell'intermediario abilitato all'invio telematico;
+**Broj upisa CAF-a**: polje omogućuje unos broja registracije u registar CAF-a posrednika ovlaštenog za elektroničko slanje.o;
 
-**Data impegno invio**:campo per indicare la data dell'impegno alla presentazione telematica da parte dell'intermediario abilitato;
+**Datum upotrebe otpreme**:  polje za unos datuma kada je ovlašteni posrednik preuzeo obvezu elektroničkog podnošenja prijave;
 
-**Nome file**: è necessario specificare il nome del file telematico che sarà generato;
+**Naziv datoteke**: potrebno je navesti naziv elektroničke datoteke koja će biti generirana;
 
-**Percorso file**: è necessario specificare un percorso locale per il salvataggio del file da inviare telematicamente, il documento sarà inoltre memorizzato nella gestione documentale di Fluentis ed accessibile dalla form in commento tramite il tasto ![](/img/neutral/common/document-manager.png);
+**Putanja datoteke**: potrebno je navesti lokalnu putanju za spremanje datoteke koja će se slati elektroničkim putem. Dokument će također biti pohranjen u sustavu za upravljanje dokumentima unutar Fluentisa i bit će dostupan iz komentirane forme putem pripadajuće tipke ![](/img/neutral/common/document-manager.png);
 
-**Tipo invio**: specificare in questo campo, tramite la combo box, se si tratta di invio ordinario oppure sostitutivo o di annullamento (vedere istruzioni ministeriali). Questo campo dovrà essere gestito in abbinamento ai flag **Annullamento** e **Sostituzione** che aggiornano i rispettivi campi all'interno del modello fiscale.
+**Vrsta slanja**: u ovom polju, putem padajućeg izbornika, potrebno je odabrati radi li se o redovnom slanju, zamjenskom slanju ili poništenju (vidi upute Ministarstva). Ovo polje treba koristiti u kombinaciji s flagovima **Otkazivanje** i **Zamjena** koji automatski ažuriraju odgovarajuća polja unutar poreznog obrasca.  
 
-**Aggregata / Dettagliata**: questo campo specifica se la certificazione unica che sarà elaborata sarà di tipo dettagliato (riporterà i dati distinti per ogni singolo compenso intestato ad ogni percipiente) oppure di tipo aggregato (riporterà i dati aggregati e totalizzati per ogni singolo percipiente). Vedere le istruzioni ministeriali.
+**Skup / Detaljan**: ovo polje specificira hoće li jedinstvena potvrda koja će biti obrađena biti detaljna (prikazat će podatke odvojeno za svaki pojedinačni iznos isplaćen svakom primatelju) ili agregirana (prikazat će agregirane i ukupne podatke za svakog pojedinačnog primatelja). Pogledajte upute ministarstva.
 
 **Soggetto che effettua la dichiarazione, pers. fis.**: la combo box, collegata alla tabella Dipendente, permette di inserire il soggetto che firma la dichiarazione (il dato è obbligatorio).
 
