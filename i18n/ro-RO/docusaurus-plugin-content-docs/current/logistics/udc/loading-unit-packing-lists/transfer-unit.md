@@ -1,75 +1,75 @@
 ---
-title: Liste di Trasferimento UDC (versione WPF e WMS)
+title: Liste de Transfer UdI (versiune WPF și WMS)
 sidebar_position: 2
 ---
 
-### Liste di Trasferimento UDC (versione WPF)
+### Liste de Transfer UdI (versiune WPF)
 
-:::important A cosa serve
-La Lista Trasferimento UDC di Fluentis è uno strumento progettato per gestire le movimentazioni delle Unità Di Carico (UDC) all'interno dei propri magazzini, offrendo un metodo sistematico e intuitivo per il trasferimento di merce. A differenza della Lista di Prelievo UDC, che è utilizzata per la spedizione ai clienti, la lista di trasferimento si concentra sull'ottimizzazione dei flussi interni delle UDC tra le varie ubicazioni del magazzino.
+:::important Utilizare
+*Lista de Transfer UdI* din Fluentis este un instrument conceput pentru a gestiona mișcările Unităților de Încărcare (UdI) în interiorul propriilor gestiuni, oferind o metodă sistematică și intuitivă pentru transferul de marfă. Spre deosebire de *Lista de ieșire UdI*, care este utilizată pentru expedierea către clienți, lista de transfer se concentrează pe optimizarea fluxurilor interne ale UdI între diferitele locații din magazin.
 
-Per creare una nuova lista di trasferimento, gli utenti devono semplicemente inserire i dettagli necessari, come la tipologia di picking, il magazzino di origine e l'utente coinvolto. La selezione delle unità di carico da trasferire può essere effettuata facilmente attraverso l'interfaccia, anche in questo caso grazie al pulsante Help UDC, che assiste nella ricerca delle UDC da includere nel trasferimento.
-
-Questa procedura consente anche di visualizzare gli articoli collegati a specifici ordini cliente, fornendo una panoramica chiara dei dettagli delle UDC selezionate. Una volta completata la lista di trasferimento, è possibile generare un DDT (Documento di Trasporto) direttamente dalla lista stessa, garantendo che tutte le informazioni relative agli articoli e alle unità di carico siano riportate in modo accurato e completo. Questo approccio non solo semplifica la gestione delle movimentazioni interne, ma contribuisce anche a mantenere una tracciabilità precisa delle scorte.
+Procedură permite vizualizarea articolelor asociate ordinelor clienți, oferind o imagine clară a detaliilor UdI selectate. Odată finalizată lista de transfer, este posibil să se genereze un aviz de expediție direct din lista, garantând că toate informațiile referitoare la articole și unități de încărcare sunt prezentate în mod complet. Această abordare nu doar simplifică gestionarea mișcărilor interne, ci contribuie de asemenea la menținerea unei trasabilități precise a stocurilor.
 :::
 
-Le **Liste di Trasferimento UDC** sono molto simili alle [Liste di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la differenza che vengono utilizzate nel caso di movimentazioni di UDC all’interno dei propri magazzini, mentre **Liste di prelievo UDC / Packing list** sono impiegate nel caso in cui si voglia spedire la merce ad un cliente.     
+**Listele de Transfer UdI** sunt similare cu [Listele de ieșire UdI / Listă ambalare](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), cu excepția faptului că sunt utilizate în cazul mișcărilor UdI în gestiunile proprii, în timp ce **Listele de ieșire UdI / Listă ambalare** sunt folosite atunci când se dorește expedierea mărfii către un client. 
 
-Dalla maschera di **Ricerca** è possibile ricercare le liste precedentemente inserite.     
+Fereastra de **Căutare** permite căutarea listelor introduse anterior. 
 
-Per creare una nuova lista cliccare **Nuovo**.          
-I dati obbligatori da inserire sono:         
-**Tipo picking**: inserire la tipologia di [picking](/docs/logistics/picking/picking-management) da utilizzare;       
-**Utente**: inserire il dipendente codificato che crea il documento;      
-**Utente per conf.**: inserire il dipendente che ha il diritto di confermare la lista.    
+Pentru a crea o nouă listă, faceți clic pe **Nou**.  
 
-Dopo aver inserito questi dati e gli altri se necessario è possibile salvare la Lista di trasferimento. Dato che si tratta di un trasferimento, è necessario inserire anche il **Magazzino di partenza** e il **Magazzino di destinazione**.       
+### Date obligatorii  
+- **Tip dispoziție de livrare**: selectați tipul [dispoziției de livrare](/docs/logistics/picking/picking-management).  
+- **Utilizator**: angajatul care creează documentul.  
+- **Confirmare utilizator**: angajatul responsabil cu validarea listei.
 
-*Pulsanti specifici presenti nella form di dettaglio:*
+Fiind vorba de un transfer, este necesar să introduceți și **Gestiunea de expediere** și **Gestiunea de destinație**.  
 
-> **Cancella UDC**: permette di cancellare un'unità di carico presente nella lista;      
-> **Rollback trasferimento**: permette di fare la rollback del movimento di conferma trasferimento; quindi, viene cancellato il movimento di carico creato con la conferma del traferimento e viene sostituito con un movimento di carico sul magazzino di partenza;         
-> **Help UDC**: permette di aggiungere nuove uni di carico tramite l'help.
+#### Butoane specifice  
+> **Șterge UdI**: permite ștergerea unei unități de încărcare prezente în listă;  
+> **Restaurare transfer**: permite revenirea la starea anterioară a mișcării de confirmare a transferului; astfel, se șterge mișcarea de încărcare creată prin confirmarea transferului și se înlocuiește cu o mișcare de încărcare pe gestiunea de expediere;  
+> **Help UdI**: permite adăugarea de noi unități de încărcare prin ajutor.  
+> **Gestionare UdI**: selectând o Lista de transfer și făcând clic pe acest buton, se va deschide fereastra **Gestionare UdI** în care sunt propuse UdI disponibile pentru transfer. Puteți să transferați UdI cu butonul **Mută UdI**.  
+> **Aviz**: creează avizul din **Lista de Transfer UdI** selectată.  
 
-*Pulsanti specifici presenti nel filtro:*
+Pentru toate informațiile despre cum să utilizați acest form din WMS, consultați [Liste de Transfer UdI](/docs/logistics/wms/udc/loading-unit-transfer-list)
 
-> **Gestione UDC**: selezionando una Lista di trasferimento e cliccando questo bottone viene aperta la maschera **Gestione UDC** in cui vengono proposti le UDC disponibili per il trasferimento. E' possibile trasferire l'UDC con il pulsante **Sposta UDC**.             
-> **DDT**: crea il DDT dalla **Liste di Trasferimento UDC** selezionata.    
+### Liste transfer UdI (versiune WMS)  
 
-Per tutte le informazioni su come utilizzare questa form da WMS consultare le [Liste di Trasferimento UDC](/docs/logistics/wms/udc/loading-unit-transfer-list)
-
-### Liste trasferimento UDC (versione WMS)
-
-:::important A cosa serve
-La funzione Liste di Trasferimento UDC del WMS di Fluentis consente di gestire le movimentazioni delle unità di carico all'interno dei magazzini, facilitando l'organizzazione e la tracciabilità delle UDC durante i trasferimenti tra diverse ubicazioni.        
-Questa funzionalità permette di creare e modificare liste di trasferimento in modo efficiente, migliorando così la gestione logistica interna
+:::important Utilizare
+Funcția *Liste de Transfer UdI* din WMS de Fluentis permite gestionarea mișcărilor unităților de încărcare în interiorul gestiunilor, facilitând organizarea și trasabilitatea UdI în timpul transferurilor între diferite locații.  
+Această funcționalitate permite crearea și modificarea listelor de transfer în mod eficient, îmbunătățind astfel gestionarea logistică internă.
 :::
 
-Questa procedura è utilizzata per la creazione di liste di trasferimento con unità di carico.         
-Le **Liste di Trasferimento UDC** sono molto simili alle [Liste di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la differenza che vengono utilizzate nel caso di movimentazioni di unità di carico all’interno dei propri magazzini, mentre **Liste di prelievo UDC / Packing list** sono impiegate nel caso in cui si voglia spedire la merce ad un cliente.          
-Nella form di filtro è possibile ricercare le liste di interesse filtrando: per *tipo*, *data inserimento*, *data spedizione* e anche per lo *stato* della lista di prelievo; una volta selezionata, è possibile aprire la lista con il pulsante **Apri**, all’interno della quale, l’utente ha la possibilità di modificare le unità di carico contenute nel tab **Dettaglio UDC**.       
-In questo tab è possibile: selezionare un’unità di carico esistente ed eliminarla dalla lista con il pulsante **Cancella UDC**; oppure, aggiungerne una nuova semplicemente leggendo il relativo barcode.            
-Una volta ultimate le modifiche è necessario salvare la lista tramite il pulsante **Salva**.           
-Dal filtro è possibile anche creare una nuova lista con il pulsante **Nuovo**.        
-In automatico vengono proposte: la *data odierna* ed il *magazzino d partenza* indicato nella tabella [Parametri Magazzino Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping); quindi l'operatore dovrà inserire i dati relativi a magazzino ed ubicazione di destinazione.           
-Inoltre, con l’inserimento del *tipo picking* viene proposto anche il numero della lista.        
-A questo punto, l’utente può inserire, nel tab *Dettaglio UDC*, le unità di carico da aggiungere alla lista tramite la lettura dei relativi barcode.          
-Ultimato l’inserimento sarà sufficiente salvare la lista con l’apposito pulsante **Salva**.
-Sempre dal tab di filtro, è possibile: aprire una lista selezionata in sola visualizzazione con il pulsante **Visualizzazione**, ed eliminarne una con il pulsante **Elimina**.
+Această procedură este utilizată pentru crearea listelor de transfer cu unități de încărcare.  
+**Listele de Transfer UdI** sunt foarte similare cu [Listele de ieșire UdI / Listă ambalare](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), cu excepția faptului că sunt utilizate în cazul mișcărilor unităților de încărcare în interiorul gestiunilor proprii, în timp ce **Listele de ieșire UdI / Listă ambalare** sunt utilizate în cazul în care se dorește expedierea mărfii către un client.  
 
-Il relativo movimento di magazzino verrà generato solo tramite la procedura di [Conferma trasferimento](/docs/logistics/wms/udc/confirm-transfer). 
+#### Căutare liste
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+După căutarea listelor dorite, acestea pot fi deschise cu butonul **Deschide** și apoi modificate în tab *Detaliu UdI*.  
+În acest tab puteți să selectați o unitate de încărcare existentă și să o eliminați din listă cu butonul **Șterge UdI** sau să adăugați una nouă citind codul de bare corespunzător.  
+Odată ce modificările sunt finalizate, este necesar să salvați lista cu butonul **Salvează**. 
 
-| Area | Modulo | Form |
+#### Creare liste
+
+Tot din form-ul principal se pote crea o nouă listă utilizând butonul **Nou**.  
+
+Automat sunt propuse: data curentă și *gestiunea de expediere* indicată în tabelul [Parametrii Gestiuneaui de Încărcare/Descărcare pentru utilizator (Parametrii gestiune încărcare/descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping); astfel, operatorul va trebui să introducă datele referitoare la gestiunea și locația de destinație.  
+În plus, cu introducerea *tipului dispoziției de livrare*, este propus și numărul listei.  
+Utilizatorul poate introduce, în tab *Detaliu UdI*, unitățile de încărcare care vor fi adăugate listei prin citirea codurilor de bare corespunzătoare.   
+De asemenea, în tab-ul de filtru, se poate deschide o listă selectată doar pentru vizualizare cu butonul **Vizualizează** și se poate șterge cu butonul omonim.
+
+Mișcarea de gestiune relativă va fi generată numai prin procedura [Confirmă transfer](/docs/logistics/wms/udc/confirm-transfer).
+
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pentru utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+
+| Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | TransferPickingList |
 
-Per questo parametro la casuale di magazzino può essere lasciata vuota.
+Pentru acest parametru, șablonul de gestiune poate fi necompletat.
 
-:::note Nota
-Se nei [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) è associato per quell’utente, un solo magazzino, viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti.
+:::note Nota  
+Dacă în [Parametrii încărcare/descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) este asociată pentru acel utilizator o singură gestiune, se propune implicit aceea. Dacă însă sunt mai multe asociate, nu este propus implicit niciunul și utilizatorul poate alege doar dintre cele existente.
 :::
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod Barcode** consultați pagina [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
