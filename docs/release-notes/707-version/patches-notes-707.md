@@ -3,10 +3,41 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0036 - 13/06/2025 
+
+> - Fluentis WEB - Risolto errore in apertura anagrafica articolo (rif ticket #TT02662/25) 
+> - SD - Il pulsante Cerca era mancante nella scheda Riepilogo dello scarico diretto delle fatture del magazzino TT02649/25 
+> - FI - revisione inserimento righe in tabella tassi d’interesse per non memorizzare ore/minuti nelle date, revisione form calcolo interessi per visualizzazione flag attivi, revisione calcolo interessi per lettere di sollecito (#TT02552/25) 
+> - FI - revisione form di “Generazione solleciti”, esclusione creazione solleciti vuoti (#TT02554/25) 
+> - FI - Contabilizzazione pagamenti compensi: risolto problema in fase di contabilizzazione dei pagamenti compensi con ritenuta e previdenza sociale attiva (Rif. TT01857/25). 
+> - MS - In pianificazione generale corretto bug sul calcolo del lotto economico e i suoi multipli. (#TT02641/25) 
+> - SD - Fix SalesOrder/SalesDeliveryNote execution in object form, with quantity modification problem(#TT02659/25) 
+> - PR - generazione file bonifici Sepa, sostituzione automatica caratteri invalidi (#TT02214/25) 
+> - Sh - profili - Risolta anomalia su blazor in caso di profilo custom nei riepiloghi fattura 
+> - FI - nelle stampe ‘Controllo sbilanci centri di costo/centri di ricavo/progetti’, ‘Brogliaccio’, ‘Riepilogo movimenti per causale’ è stato aggiunto il filtro per divisione impostato con la divisione attiva ma modificabile. Modifications in Controllo sbilanci centri di costo/centri di ricavo/progetti’, ‘Brogliaccio’, ‘Riepilogo movimenti per causale’ forms can have an impact on profiles (#TT02118/25) 
+> - FI - Stampa Intrastat - Risolta anomalia nella stampa in caso di più società che utilizzando l’intrastat sulla stessa base dati. Modifications in ‘Modelli intrastat’ form can have an impact on profiles (#TT01937/25) 
+> - FI - Stampa lista partite - Corretta anomalia su stampa (#TT01891/25) 
+> - SH - Risolto errore che si verificava cambiando riga articolo durante l’utilizzo del Context Panel per l’Analisi Disponibilità negli Ordini cliente (#TT02314/25). 
+> - WM - Corretto bug nelle liste di prelievo UDC che non permetteva di inserire dati correttamente nel campo note (aggiunto dall’object navigator e salvato nel profilo). (#TT02647/25) 
+> - FI - revisione contabilizzazione fatture acquisto e vendita per valorizzazione campo numero documento in sezione Intrastat della registrazione. (#TT02640/25) 
+> - MS - Corretto errore nella procedura di Rilascio ordini pianificati di Conto Lavoro che non aggiornava correttamente la quantità residua nei Materiali da impiegare (#TT02477/25). 
+> - SCM - Stampa Listino - Corrette anomalie su stampa listino e dettaglio sconti (#TT01248/25) 
+> - FI - Stampa registri iva - Corrette anomalie su stampa registri iva in caso di stampa riepilogativa per trimestre (#TT02537/25) 
+> - FI - revisione contabilizzazione fatture di vendita con totale a zero per chiusura automatica commissioni nella registrazione stessa (#TT02257/25) 
+> - WMS - corretto bug nella procedura di dichiarazione di produzione che permetteva di richiamare fasi di ordini evasi. (#TT02368/25) 
+> - WMS - Corretto bug nella procedura di dichiarazione di produzione inerente al pulsante conferma + stampa. (#TT0 2634/25) 
+> - WMS - Corretto bug nella procedura di dichiarazione di produzione che non aggiornava correttamente lo stato dell’ordine di produzione in evaso. (#TT0 2634/25) 
+> - PR - import DocFinance error (#TT02102/25) 
+> - MS - Corretto bug in pianificazione generale che si verificava nel caso fosse attivo il flag relativo all’MRP. (#TT02430/25) 
+> - FI - take first not empty description for PostingData.MovementDescription on DocFinance import/management (#TT02172/25) 
+> - SD - Risoluzione errore che lasciava valorizzato il DDT dopo la cancellazione della fattura collegata (#TT02690/25) 
+> - FI - download cambi ufficiali per localizzazione serba (#TT02725/25) 
+> - WM - Corretto bug in fase di chiusura di magazzino. (#TT02409/25) 
+
 ### Patch 707.1-0035 - 06/06/2025 
 
 > - SD - Nel caso in cui più DDT vengano valorizzati in una fattura immediata che non ha il flag "Scollega DDT", i documenti non possono essere movimentati singolarmente. Lo scarico e l’eventuale ripristino della registrazione di magazzino devono essere eseguiti congiuntamente per tutti i DDT valorizzati nella stessa fattura (#TT02481/25) 
-> - PR - Pagamenti fornitore – gestite le differenze di cambio (#TT02563/25) 
+> - PR - Pagamenti fornitore - gestite le differenze di cambio (#TT02563/25) 
 > - MS - Implementato in pianificazione generale nel caso in cui venga usato il raggruppamento, gli ordini pianificati creati sono raggruppati anche per versione della distinta base (#TT02179/25) 
 > - MES, repository method - disporre del campo FSSignalLabelDeclaration - BatchRegister-Note (#TT02543/25) 
 > - FI - Comunicazione liquidazioni periodiche IVA: rivista la generazione del file nel caso in cui il campo "Impegno alla presentazione telematica" sia impostato su "Nessuno" (#TT02451/25) 
