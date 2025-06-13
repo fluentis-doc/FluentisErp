@@ -1,17 +1,17 @@
 ---
-title: Creazione da registrazioni
+title: Kreiranje iz zapisa   
 sidebar_position: 1
 ---
 
-Il pulsante di **Creazione da registrazioni** apre una procedura guidata dedicata alla ripresa dati dalle registrazioni di contabilità generale, abilitando opportunamente la **gestione intrastat** nella causale di contabilizzazione (flag ***Intrastat*** nella tab *Dettaglio registrazione*).
+Tipka **b Kreiranje iz knjiženja** otvara vođeni postupak posvećen preuzimanju podataka iz glavne knjige, pri čemu se odgovarajuće aktivira **Intrastat upravljanje** u knjiženju (flag ***Intrastat*** na kartici *Detalji knjiženja*).
 
-Tab:
+Kartice:
 
-** [Filtro registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter) **
+** [Filtar knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter) **
 
 ** [Parametri](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/parameters) **
 
-** [Rollack](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore) **
+** [Rollback](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore) **
 
  
 

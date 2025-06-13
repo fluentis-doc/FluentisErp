@@ -1,23 +1,23 @@
 ---
-title: Filtro fatture
+title: Filter računa
 sidebar_position: 2
 ---
 
-La presente tab visualizza la lista delle fatture di tipo intracomunitario intestate a soggetti definiti intrastat nell'anagrafica (**che siano stampate e contabilizzate nel periodo di riferimento della dichiarazione**).
+Tablica prikazuje popis računa izdanih subjektima definiranima kao Intrastat u šifarniku  (**koji su ispisani i evidentirani u razdoblju na koje se odnosi izjava**).
 
 ![](/img/it-it/finance-area/declarations/intrastat/automatic-creation-intrastat1/invoices-filter/image01.png)
 
-La lista degli articoli all'interno di ogni documento non riporterà le righe collegate ad aliquote IVA definite come 'Non intra' nella tabella Aliquote/modalità IVA. 
+Popis artikala unutar svakog dokumenta neće sadržavati retke povezane sa stopama PDV-a definiranima kao 'Not intra' u tablici Stopa PDV-a.
 
-La selezione viene confermata premendo il pulsante **Avanti** presente nella ribbon bar, che sposterà la visualizzazione alla seconda scheda **Parametri**.
+Odabir se potvrđuje pritiskom na tipke **Sljedeće** u traci izbornika, što će prikaz premjestiti na drugu karticu  **Parametri**.
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per ricercare la lista delle fatture di tipo intracomunitario. |
-| Seleziona tutti | Permette di selezionarte tutte le righe presenti nella griglia di ricerca |
-| Deseleziona tutti | Permette di togliere la selezione da tutte le righe della griglia di ricerca |
+| Traži | Tipka za pokretanje filtara pretraživanja prethodno umetnutih Intrastat1 deklaracija.  |
+| Odznači sve  | Omogućuje odabir svih redaka  pregledu podataka. |
+| Deseleziona tutti | Omogućuje uklanjanje odabira sa svih redaka u pregledu pretrage. |
 
 
 

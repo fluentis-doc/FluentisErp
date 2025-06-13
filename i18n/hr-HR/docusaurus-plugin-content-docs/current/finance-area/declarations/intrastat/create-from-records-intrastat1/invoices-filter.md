@@ -1,20 +1,18 @@
 ---
-title: Filtro fatture
+title: Filter faktura
 sidebar_position: 2
 ---
 
-La presente Tab visualizza la lista delle registrazioni di tipo intracomunitario, intestate a soggetti definiti **intrastat** nell'anagrafica, **che abbiano la tab Intrastat compilata (tale tab è visibile se la causale contabile ha il flag INTRASTAT attivo).**  
+Ova kartica prikazuje popis zapisa koji su namijenjeni subjektima definiranim kao, **te imaju popunjeni Intrastat karticu (ova kartica je vidljiva ako je stavka označena s flagom INTRASTAT).**  
 
-La selezione viene confermata premendo il pulsante **Avanti** presente nella ribbon bar, che sposterà la visualizzazione alla seconda scheda Parametri.
+Odabir se potvrđuje pritiskom na tipku **Naprijed** koji se nalazi na vrpci, što će premjestiti prikaz na drugu karticu Parametri.
 
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per ricercare la lista delle registrazioni contabili di tipo intracomunitario. |
-| Seleziona tutti | Permette di selezionare tutte le righe della griglia di ricerca |
-| Deseleziona tutti | Permette di deselezionare tutte le righe della griglia di ricerca |
-| Avanti | Trasferisce le righe selezionate alla Tab Parametri (dove sarà visualizzata l'anteprima delle righe del modello intra per il completamento di eventuali dati mancanti) |
+| Pretraži | Tipka za pretraživanje popisa intrakomunitarnih knjiženja. |
+| Odaberi sve | Omogućuje odabir svih redaka u tablici rezultata pretraživanja. |
+| Poništi odabir | Omogućuje poništavanje odabira svih redaka u tablici rezultata pretraživanja. |
+| Dalje | Prenosi odabrane retke na karticu Parametri (gdje će se prikazati pregled redaka Intrastat obrasca radi dopune mogućih nedostajućih podataka). |
 
 
 

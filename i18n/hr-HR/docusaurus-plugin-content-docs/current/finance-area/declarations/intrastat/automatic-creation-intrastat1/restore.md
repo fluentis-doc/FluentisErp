@@ -1,17 +1,17 @@
 ---
-title: Ripristino
+title: Poništi
 sidebar_position: 4
 ---
 
-Utilizzare la presente Tab per annullare gli inserimenti nelle sezioni del modello rendendo il relativo documento nuovamente disponibile per l'inserimento nel modello.
+Ova kartica koristi se za poništavanje unosa Intrastata kako bi dokument ponovno bio dostupan za unos u obrazac.
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca   | Pulsante per cancellare le fatture di tipo intracomunitario selezionate. |
-| Ripristina Intrastat | Pulsante per ripristinare l'intera dichiarazione Intrastat. |
-| Ripristina fattura | Pulsante per ripristinare una sola fattura presente nella dichiarazione Intrastat. |
+| Traži  | Tipka za brisanje odabranih faktura unutar pregleda |
+| Povrati Intrastat | Tipka za poništavanje cijelog Intrastat obrasca. |
+| Povrati zapis | Tipka za vraćanje samo jedne fakture u Intrastatu. |
 
 
 
