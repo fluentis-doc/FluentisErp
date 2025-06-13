@@ -2007,59 +2007,59 @@
     "description": "The label for category Interventi Pianificati in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Riepiloghi per cedolini": {
-    "message": "Totals for payroll",
+    "message": "Totales de nómina",
     "description": "The label for category Riepiloghi per cedolini in sidebar projectManagement"
   },
   "sidebar.quality.category.Documenti di origine esterna": {
-    "message": "External Origin Documents",
+    "message": "Documentos de origen externo",
     "description": "The label for category Documenti di origine esterna in sidebar quality"
   },
   "sidebar.quality.category.Documenti di origine interna": {
-    "message": "Internal Origin Documents",
+    "message": "Documentos de origen interno",
     "description": "The label for category Documenti di origine interna in sidebar quality"
   },
   "sidebar.quality.category.Controlli articolo": {
-    "message": "Item Controls",
+    "message": "Controles de artículos",
     "description": "The label for category Controlli articolo in sidebar quality"
   },
   "sidebar.quality.category.Piani di controllo": {
-    "message": "Control Plans",
+    "message": "Planes de control",
     "description": "The label for category Piani di controllo in sidebar quality"
   },
   "sidebar.quality.category.Certificati di Analisi": {
-    "message": "Analysis Certificates",
+    "message": "Certificados de análisis",
     "description": "The label for category Certificati di Analisi in sidebar quality"
   },
   "sidebar.quality.category.Non conformità": {
-    "message": "Non conformità",
+    "message": "No conformidad",
     "description": "The label for category Non conformità in sidebar quality"
   },
   "sidebar.quality.category.Azioni correttive": {
-    "message": "Corrective Actions",
+    "message": "Acciones correctivas",
     "description": "The label for category Azioni correttive in sidebar quality"
   },
   "sidebar.quality.category.Taratura strumenti": {
-    "message": "Calibration Tools",
+    "message": "Calibración de Instrumentos",
     "description": "The label for category Taratura strumenti in sidebar quality"
   },
   "sidebar.quality.category.Strumenti di misura": {
-    "message": "Measurement Tools",
+    "message": "Instrumentos de medición",
     "description": "The label for category Strumenti di misura in sidebar quality"
   },
   "sidebar.quality.category.Qualificazione fornitore": {
-    "message": "Vendor Qualification",
+    "message": "Calificación de proveedores",
     "description": "The label for category Qualificazione fornitore in sidebar quality"
   },
   "sidebar.controlling.category.Panoramica Generale Controlling": {
-    "message": "Controlling Overview",
+    "message": "Visión general del control de gestión",
     "description": "The label for category Panoramica Generale Controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri controlling": {
-    "message": "Controlling Tables and Parameters",
+    "message": "Tablas y parámetros de control de gestión",
     "description": "The label for category Tabelle e Parametri controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri specifici della contabilità analitica e gestionale": {
-    "message": "Analytical and Managerial Accounting Tables and Parameters",
+    "message": "Tablas y parámetros de contabilidad analítica y de gestión",
     "description": "The label for category Tabelle e Parametri specifici della contabilità analitica e gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri all'interno delle altre Aree": {
