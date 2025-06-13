@@ -36,7 +36,7 @@ The button is enabled only if the *Non-Compliance* has been saved, approved, is 
 A data request/confirmation is displayed for:
 > **Customer** or **Supplier**: is the recipient of the new *Debit Note* (mandatory data), with the *Customer* or *Supplier* of the originating *Non-Compliance* proposed.   
 > **Invoice Type**: is the *Document Type* of the new *Debit Note* (mandatory data); the *Invoice Type* entered in the *Non-Compliance Type* of the originating *Non-Compliance* is proposed.   
-> **Description**: is the description that will be used for the *Expense Item* line of the new *Debit Note* (mandatory data); the description parameterized in the [Non-Compliance Valorization Parameters](/docs/quality/claims-and-non-compliance/non-Compliances/procedures/non-compliance-valorisation), section *Non-Compliance References*, is proposed.   
+> **Description**: is the description that will be used for the *Expense Item* line of the new *Debit Note* (mandatory data); the description parameterized in the [Non-Compliance Valorization Parameters](/docs/quality/claims-and-non-compliance/non-compliances/procedures/non-compliance-valorisation), section *Non-Compliance References*, is proposed.   
 > **VAT**: is the *VAT Type* that will be used for the *Expense Item* line of the new *Debit Note*.   
 > The *VAT Type* is proposed with the following priorities:   
 > 1. if a *Declaration of intent* exists, the *VAT Type* present in the document is considered;   
