@@ -1,249 +1,255 @@
 ---
-title: Înregistrare nouă
+title: Nuova registrazione
 sidebar_position: 3
 ---
 
-:::important Utilizare  
-Înregistrările de gestiune în Fluentis reprezintă un element estențial pentru gestionarea eficientă a operațiunilor logistice, permițând înregistrarea precisă a mișcărilor articolelor în cadrul sistemului.  
-Înregistrările pot fi create automat prin diverse proceduri, cum ar fi încărcarea documentelor (de exemplu: avize și facturi de achiziție) sau descărcarelor (utilizând avize și facturi de vânzare). Acest proces nu doar simplifică introducerea mișcărilor, dar asigură și sincronizarea informațiilor între diferitele documente operative.
+:::important A cosa serve
+L'introduzione alle registrazioni di magazzino di Fluentis rappresenta un elemento cruciale per la gestione efficiente delle operazioni logistiche, permettendo una registrazione accurata dei movimenti di beni all'interno del sistema. Le registrazioni possono essere create automaticamente attraverso diverse procedure, come carico di documenti (ad esempio, DDT e fatture di acquisto) o scarico (tramite DDT e fattura di vendita). Questo processo non solo semplifica l'inserimento dei movimenti, ma garantisce anche la sincronizzazione delle informazioni tra i vari documenti operativi.
 
-Fiecare înregistrare de gestiune permite operatorului să specifice detalii fundamentale precum gestiunea, șablonul și data. Înregistrarea articolului solicită indicarea cantității și unității de măsură, cu opțiunea de a gestiona loturi și numere de serie când este necesar. În plus, sunt implementate diverse opțiuni care gestionează necesitatea documentelor obligatorii și tratamentul șabloanelor din contrapartidă, garantând astfel trasabilitatea și conformitatea operațiunilor de gestiune.
+Ogni registrazione di magazzino permette all'operatore di specificare dettagli fondamentali quali magazzino, causale e data. La registrazione dell'articolo avviene attraverso una griglia che consente di indicare quantità e unità di misura, con l'opzione di gestire lotti e numeri di serie quando necessario. Inoltre, sono implementati diversi flag che governano la necessità di documenti obbligatori e il trattamento delle causali di contropartita, garantendo così la tracciabilità e la conformità delle operazioni di magazzino.
 
-Un alt aspect este posibilitatea de a personaliza înregistrările în funcție de cerințele specifice ale gestiunii, alegând între gestiuni pentru locație, proiect sau client/furnizor. Această flexibilitate permite adaptarea sistemului la diversele configurații logistice ale companiei, făcând din Fluentis un instrument important pentru gestionarea depozitului.
+Un altro aspetto distintivo è la possibilità di personalizzare le registrazioni in base alle esigenze specifiche del magazzino, scegliendo tra gestioni per ubicazione, progetto o cliente/fornitore. Questa flessibilità consente di adattare il sistema alle varie configurazioni logistiche aziendali, rendendo Fluentis uno strumento potente per la gestione del magazzino
 :::
 
-Form-ul se deschide:
-- utilizând calea **Logistică > gestiune > Înregistrări > Înregistrare nouă**  
-sau  
-- făcând clic pe butonul **Nou** din form-ul de căutare **Înregistrări**.
+La form si apre:
+- tramite il percorso **Logistica > Magazzino  > Registrazioni > Nuova registrazione**  
+oppure  
+- cliccando sul pulsante **Nuovo** dalla form di ricerca **Registrazioni**.
 
-## Creare automată înregistrare
+## Creazione automatica della registrazione
 
-Înregistrările de gestiune pot fi create automat prin *procedurile de încărcare* a avize de achiziție, facturi de achiziție, recepții mărfuri și prin *procedurile de descărcare* avize de vânzare, factură de vânzare, dispoziția de livrare, lista de ieșiri materiale, avize de livrare în sistem lohn, sau prin *procedurile de înregistrare a semnalărilor de producție și de reintrări din sistem lohn*.
+Le registrazioni di magazzino possono essere create automaticamente mediante le *procedure di carico* di DDT di acquisto, fatture di acquisto, ricevimenti merci, mediante le *procedure di scarico* DDT di vendita, fattura di vendita, picking list, lista di prelievo materiali, DDT di consegna di conto lavoro, oppure mediante le *procedure di registrazione di segnalazioni di produzione e di rientri di conto lavoro*. 
 
-## Creare manuală înregistrare
+## Creazione manuale della registrazione
 
-Utilizatorul poate introduce și manual înregistrările de gestiune, setând toate câmpurile necesare în funcție de tipul de articol și de tipul de șablon pe care decide să o utilizeze.
+L'utente può inserire anche manualmente le registrazioni di magazzino, impostando tutti i campi richiesti a seconda del tipo di articolo e del tipo di causale che si decide di utilizzare.
 
-Form-ul noii înregistrări de gestiune conține 2 taburi: **Înregistrare** și **Contrapartide**.
+La finestra della nuova registrazione di magazzino consta di 2 tab: **Registrazione** e **Contropartita**.
 
-:::note Notă
-Tabul **Contrapartide** devine activ doar dacă șablonul introdus în primul tab are un șablon contrapartidă asociat în tabelul dedicat [Șabloane de gestiune](/docs/configurations/tables/logistics/warehouse-templates).
+:::note Nota
+Il tab **Contropartita** risulta attivo solo se la causale che viene inserita nel primo tab ha una causale di contropartita associata nell'apposita tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates).     
 :::
 
-În înregistrarea de gestiune pot fi introduse diverse mișcări de gestiune pentru diverse articole diferite.
+All'interno della registrazione di magazzino possono essere inseriti diversi movimenti di magazzino per articoli differenti e con gestioni diverse tra loro. 
 
-## Înregistrare
+## Registrazione
 
-Acest tab este constituit dintr-un antet și din 4 tabele diferite. Primul afișează articolele care sunt mișcate prin înregistrarea de gestiune. Celelalte 3 tabele sunt utilizate pe baza setărilor articolului și șablonului de gestiune introduse în antet.
+Questo tab è costituito da una testata e da 4 diverse griglie, la prima delle quali è quella al cui interno vengono inseriti gli articoli che vengono movimentati mediante la registrazione di magazzino; le altre 3 griglie vengono utilizzate a seconda di come sono impostate l'anagrafica dell'articolo e la causale di magazzino inserita in testata.
 
-### Înregistrare - secțiune fixă
+### Registrazione - sezione fissa
 
-**Gestiune**: reprezintă codul depozitului în care se efectuează înregistrarea;  
-**Şablon de gestiune**: obligatoriu pentru introducerea mișcărilor de gestiune. Se selectează utilizând combo-box-ul dedicat, în care sunt propuse doar șabloanele asociate gestiunii selectae.       
-**Dată înregistrare**: este propusă automat egală cu data curentă și identifică ziua în care sunt efectuate mișcările de gestiune care vor fi apoi introduse în tabelul dedicat, deci poate fi și modificată setând, de exemplu, o dată anterioară datei curente. Această dată trebuie însă să fie întotdeauna cuprinsă între datele de Început și Sfârșit perioadă introduse în primul tab *Parametri inițiali gestiune*;   
-**Număr înregistrare**: este propus automat. Este un progresiv pe gestiune care se resetează în fiecare zi, reluând automat de la numărul 1. Ambele date sunt editabile de utilizator;
+**Magazzino**: rappresenta il codice del magazzino sul quale effettuare la registrazione;  
+**Causale di magazzino**: dato obbligatorio al fine dell'inserimento dei movimenti di magazzino. Si seleziona utilizzando l'apposita combo box, nella quale vengono proposte solo le causali legate al magazzino selezionato.       
+**Data registrazione**: viene proposta in automatico uguale alla data corrente e identifica nello specifico il giorno in cui vengono effettuati i movimenti di magazzino che saranno poi inseriti nell'apposita griglia, quindi può anche essere modificata impostando per esempio una data precedente alla data corrente. Questa data deve però essere sempre compresa tra le date di Inizio e Fine Periodo inserite nel primo tab dei *Parametri iniziali di magazzino*;   
+**Numero della registrazione**: viene proposta in automatico; è un progressivo per magazzino che si azzera ogni giorno, ripartendo automaticamente dal numero 1. Entrambi i dati sono editabili dall'utente;
 
-:::note Notă
-După introducerea primului articol în tabel, data și numărul înregistrării devin read-only.
+:::note Nota
+Dopo l'inserimento del primo articolo nella griglia, la data e il numero della registrazione diventano read-only.
 :::
 
-După introducerea aceste date, utilizatorul poate continua cu introducerea mișcărilor în tabelul articolelor.
+Dopo aver inserito questi dati, l'utente può procedere all'inserimento dei movimenti nella griglia degli articoli. Tuttavia esistono altri dati di testata che si possono compilare, e precisamente:
 
-**Document intern**: în acest câmp utilizatorul poate oferi o informație suplimentară privind motivul pentru care este creată înregistrarea. Dacă înregistrarea a fost creată automat din înregistrarea unei *Semnalări de producție*, afișează indicația privind numărul semnalării și faza pentru care a fost efectuată.  
-**Document intern**: permite inserarea datei referitoare la documentul pe baza căruia inserează înregistrarea. Dacă înregistrarea a fost creată automat prin *încărcarea* sau *descărcarea* unui document, în acest câmp este setată automat data introducerii documentului.  
-Dacă înregistrarea a fost creată automat din înregistrarea unei *Semnalări de producție*, afișează data de început efectivă a ordinului de producție pentru care a fost efectuată semnalarea de producție.
+**Documento interno**: in questo campo l'utente può dare una specifica ulteriore riguardo al motivo per cui vene creata la registrazione. Se la registrazione è stata creata in automatico dalla registrazione di una *Segnalazione di produzione*, in questo campo compare l'indicazione riguardante il numero della segnalazione e la fase per cui la stessa è stata effettuata; nel campo data del **Documento interno** l'utente può specificare la data relativa al documento in base al quale sta inserendo la registrazione. Se la registrazione è stata creata in automatico tramite il *carico* o lo *scarico* di un documento, in questo campo viene impostata automaticamente la data di inserimento del documento.  
+Se la registrazione è stata creata in automatico dalla registrazione di una *Segnalazione di produzione*, in questo campo compare la data di effettivo inizio dell'ordine di produzione per cui è stata effettuata la segnalazione di produzione.  
 
-**Versiune**: cu acest combo-box utilizatorul poate seta o versiune diferită de cea implicită, propusă automat de procedură;
+**Versione**: tramite questa combo box l'utente può impostare una versione diversa da quella di default, proposta comunque in automatico dalla procedura;
 
-**Cont**: în aceste 3 câmpuri sunt specificate datele relative Clientului/Furnizorului: *cont sintetic*, *cont analitic*, *nume companie*.  
-Dacă înregistrarea a fost creată automat prin *încărcarea* sau *descărcarea* unui document, în acest câmp sunt setate automat datele clientului sau ale furnizorului documentului.
+**Conto**: in questi 3 campi vengono specificati i relativi dati del Cliente/Fornitore: *conto*, *sottoconto*, *ragione sociale*.  
+Se la registrazione è stata creata in automatico tramite il *carico* o lo *scarico* di un documento, in questo campo vengono impostati automaticamente i dati del cliente o del fornitore intestatario del documento stesso.
 
-**Document de referință**: reprezintă documentul care a generat înregistrarea.  
-Dacă înregistrarea a fost creată automat prin *încărcarea* sau *descărcarea* unui document, în acest câmp este setată automat o descriere parametrică a documentului, cu referire la tipul documentului și numărul său.  
-Dacă înregistrarea a fost creată automat din înregistrarea unei *Semnalări de producție*, afișează numărul ordinului de producție pentru care a fost efectuată semnalarea de producție.
+**Documento di riferimento**: in questo campo l'utente può specificare il documento che ha generato la registrazione stessa.  
+Se la registrazione è stata creata in automatico tramite il *carico* o lo *scarico* di un documento, in questo campo viene impostata automaticamente una descrizione parametrica del documento, in cui compaiono anche la descrizione del tipo di documento ed il suo numero.  
+Se la registrazione è stata creata in automatico dalla registrazione di una *Segnalazione di produzione*, in questo campo compare il numero dell'ordine di produzione per cui è stata effettuata la segnalazione di produzione.  
 
-**Proiect**: cu dublu click se deschide *Help proiecte* care permite asocierea unui proiect la înregistrare care se inserează. Aceasta este apoi replicată în fiecare rând articol introdus în tabel;
+**Progetto**: con un doppio click si apre un *Help progetti* che permette di collegare un progetto all'intera registrazione che si sta inserendo. Essa viene poi replicata in ciascuna delle righe articolo inserite nella griglia;
 
-**Notă**: în acest câmp se poate insera o notă liberă pentru înregistrarea de gestiune.
+**Nota**: in questo campo è possibile inserire una nota libera relativa alla registrazione di magazzino.
 
+Come già sopra specificato, l'utente può passare a questo punto all'inserimento dei movimenti nella prima griglia, quella che conterrà gli articoli da movimentare.
 
+### Articoli
 
-### Articole
+In questa prima griglia l'utente può inserire, usando il *Help articoli*, la lista di articoli da movimentare.
 
-În acest prim tabel utilizatorul poate introduce, folosind *Help articole*, lista de articole care vor fi înregistrate.
+**Numero movimento**: in questa colonna compare il numero progressivo del movimento. Esso parte sempre da 1 ed è un semplice progressivo che si azzera non appena si apre un'altra registrazione di magazzino. Il campo è read-only e non consente il recupero manuale dei numeri di movimento, nel caso di eliminazione manuale di righe movimento.
 
-**Număr mișcare**: în această coloană apare numărul progresiv al mișcării. Acesta începe întotdeauna de la 1 și este un simplu progresiv care se resetează imediat ce se deschide o altă înregistrare de depozit. Câmpul este read-only și nu permite recuperarea manuală a numerelor de mișcare, în cazul eliminării manuale a rândurilor de mișcare.
+**Classe**: in questo campo, tramite l'apposita combo box, è possibile selezionare la classe dell'articolo;
 
-**Clasă**: permite selectarea clasei articolului;
+**Codice articolo**: in questa colonna è possibile digitare manualmente il codice oppure usando il *Help Articoli*;
 
-**Cod articol**: permite inserarea codului atât manual, cât și utilizând *Help Articole*;
+**Variante**: tramite questa combo box l'utente può selezionare ed inserire una delle varianti dell'articolo. Se l'articolo non presenta varianti, la combo box risulta disattivata;
 
-**Variantă**: permite selectarea variantei articolului. Dacă articolul nu prezintă variante, combo-box-ul este dezactivat;
+**Unità di misura**: in questa colonna compare, in read-only, il codice dell'unità di misura gestionale dell'articolo;
 
-**Unitate de măsură**: afișează, în read-only, codul unității de măsură a articolului;
+**Unità di misura alternativa**: in questa colonna l'utente può selezionare, tramite l'apposita combo box, il codice di una delle unità di misura alternative dell'articolo, ove presenti, al fine di eseguire il movimento imputando la quantità nell'unità di misura alternativa prescelta. La quantità gestionale verrebbe in questo caso calcolata automaticamente in base al fattore di conversione impostato nel *Anagrafica articolo* > tab *UM Alternative*;
 
-**Unitate de măsură alternativă**: permite selectarea variantei unității de măsură alternative ale articolului, pentru a efectua mișcarea imputând cantitatea în unitatea de măsură alternativă aleasă. Cantitatea ar fi în acest caz calculată automat pe baza factorului de conversie setat în *Registrul articolului* > tab *UM Alternative*;
-Cantitate mișcare (Quantità movimento)
+**Quantità movimento**: in questa colonna l'utente deve obbligatoriamente inserire la quantità del movimento, espressa nell'unità di misura gestionale nel caso in cui la colonna *U.M. alt.* risulti vuota; in caso contrario la quantità sarebbe espressa nell'unità di misura alternativa inserita nella colonna *U.M. alt.*. Dopo che l'utente ha inserito il codice dell'articolo e l'ha fatto riconoscere come valido alla procedura, la quantità movimento viene inserita automaticamente come uguale a 1; a questo punto l'utente la può modificare. La quantità del movimento va sempre inserita in valore assoluto, in quanto il fatto che si tratti di un movimento di carico oppure di scarico è determinato dal tipo di causale utilizzata;
 
-**Cantitate mișcare**: acest câmp este obligatoriu și trebuie să conțină cantitatea mișcării, exprimată în unitatea de măsură principală a gestiunii (U.M. gestionară), dacă câmpul U.M. alternativă (U.M. alt.) este necompletat. În caz contrar, cantitatea se exprimă în unitatea de măsură alternativă specificată în *U.M. alt.*
-După introducerea codului articolului și validarea acestuia, procedura atribuie automat cantității mișcării valoarea implicită „1”. Această valoare poate fi ulterior modificată de utilizator. Cantitatea trebuie introdusă întotdeauna în valoare absolută, tipul de mișcare (încărcare/descărcare) fiind determinat automat de șablonul de gestiune specificat.
+**Quantità gestionale**: in questa colonna compare, in rea-only, la quantità espressa nell'unità di misura gestionale dell'articolo. Essa è identica alla quantità movimento nel caso in la colonna *U.M. alt.* risulti vuota; in caso contrario la colonna diventa editabile e l'utente deve inserire la quantità gestionale manualmente, vedendo poi calcolata automaticamente la quantità movimento, che avrebbe quindi un valore pari alla quantità gestionale divisa o moltiplicata (a seconda di quanto impostato nei *Parametri Iniziali di Magazzino*) per il fattore di conversione impostato nel nel *Anagrafica articolo* > tab *UM Alternative*;
 
-**Cantitate gestionară**: această coloană afișează, în mod read-only, cantitatea exprimată în unitatea de măsură a articolului. Aceasta este identică cu cantitatea mișcării dacă *U.M. alt.* este necompletat. În caz contrar, coloana devine editabilă, iar utilizatorul trebuie să introducă manual cantitatea gestionară. Sistemul va calcula automat cantitatea mișcării, utilizând factorul de conversie definit în *Registrul articolului* > tab *UM Alternative*, în funcție de setările din *Parametrii inițiali de gestiune*.
+**Importo movimento**: in questa colonna compare in automatico il valore di *costo ultimo, costo medio, costo standard o prezzo di vendita*, a seconda dell'impostazione della causale di magazzino utilizzata nella registrazione.  
+Se nella causale vi sia come costo proposto l'indicazione *Nessuno*, la procedura propone come costo della registrazione un valore pari a zero.  
+Se la colonna *U.M. alt.* risulti vuota, l'importo movimento risulta sempre identico all'importo gestionale; diversamente, in questa colonna sarebbe da inserire l'importo unitario dell'articolo in base alla unità di misura alternativa inserita nella riga del movimento.  
+Se nei *Parametri Iniziali di Magazzino* sia attivato, per l'anno in corso, il flag *Mostra tooltip di giacenza in registrazioni*, la procedura visualizza, in una tooltip, la giacenza di quell'articolo sul magazzino su cui si sta creando il movimento, esattamente nel momento in cui l'utente sta inserendo o modificando la quantità stessa.  
+Se la giacenza non sia sufficiente e nei *Parametri Iniziali di Magazzino* sia disattivato, per l'anno in corso, il flag ‘*Permetti giacenza negativa*' per quel magazzino, la riga di movimento non verrà salvata.
 
-**Valoare mișcare**: în această coloană este afișată automat valoarea corespunzătoare unui *cost ultim, cost mediu, cost standard* sau *preț de vânzare*, în baza șablonului de gestiune utilizat.  
-Dacă în șablon este indicat *Niciun cost propus*, sistemul atribuie valoarea 0.  
-Dacă *U.M. alt.* este necompletat, valoarea mișcării este identică cu valoarea gestionară; altfel, trebuie introdusă manual valoarea unitară a articolului, raportată la unitatea de măsură alternativă.  
-Dacă opțiunea *Afișează tooltip de stoc în înregistrări* este activată în *Parametrii inițiali de gestiune*, utilizatorul poate vizualiza stocul curent al articolului în gestiunea selectată. În cazul în care stocul este insuficient, iar opțiunea *Permite stoc negativ* este dezactivată, salvarea rândului mișcării nu va fi permisă.
+**Importo gestionale**: in questa colonna compare in automatico il valore di *costo ultimo, costo medio, costo standard, o prezzo di vendita*, a seconda dell'impostazione della causale di magazzino utilizzata nella registrazione.  
+Nel caso nella causale vi sia come costo proposto l'indicazione *Nessuno*, la procedura propone come costo della registrazione un valore pari a zero.  
+Nel caso in la colonna *U.M. alt.* risulti vuota, l'importo gestionale risulta sempre identico all'importo movimento; diversamente, in questa colonna, sempre comunque read-only, verrebbe calcolato il valore unitario del movimento in base all'unità di misura gestionale, tramite la seguente formula: *Importo movimento * Quantità movimento / Quantità gestionale*;
 
-**Valoare gestionară**: afișează automat valoarea corespunzătoare *costului ultim, mediu, standard* sau *prețului de vânzare*, în baza șablonului de gestiune utilizat.  
-Dacă în șablon este indicat *Niciun cost propus*, sistemul atribuie valoarea 0.  
-Dacă *U.M. alt.* este necompletat, valoarea gestionară este identică cu valoarea mișcării. Altfel, această coloană, întotdeauna read-only, calculează valoarea gestionară utilizând formula:  
-*Valoare mișcare * Cantitate mișcare / Cantitate gestionară*.
+**Progetto**: in questa colonna l'utente può inserire, tramite l'apposito *Help progetti* che si esplode con un doppio click sul campo giallo, la commessa di vendita che deve essere associata alla riga del movimento;
 
-**Proiect**: reprezintă comandă de vânzare asociată rândului mișcării utilizând *Help proiecte*, accesibil cu dublu click pe câmpul galben.
+**Importo totale**: in questa colonna compare, non editabile, l'importo totale della riga del movimento. Esso risulta dalla moltiplicazione della quantità gestionale per l'importo gestionale;
 
-**Valoare totală**: câmp read-only, în care se afișează valoarea totală a rândului mișcării, calculată automat prin înmulțirea cantității gestionare cu valoarea gestionară.
+**Descrizione articolo**: in questa colonna compare la descrizione dell'articolo. Essa viene impostata automaticamente non appena viene riconosciuto dalla griglia l'articolo inserito dall'utente;
 
-**Descriere articol**: sse completează automat cu descrierea articolului imediat ce acesta este recunoscut de sistem.
+**Descrizione variante**: in questa colonna compare la descrizione della variante dell'articolo. Essa viene impostata automaticamente non appena viene riconosciuto dalla griglia il codice della variante dell'articolo inserito dall'utente;
 
-**Descriere variantă**: se completează automat cu descrierea variantei articolului recunoscute de sistem.
+**Note**: in questo campo è possibile inserire una nota libera relativamente alla singola riga della registrazione di magazzino;
 
-**Note**: permite introducerea unor observații suplimentare referitoare la rândul mișcării.
+**Ubicazione**: in questo campo viene specificata l'ubicazione da cui verrà scaricato o su cui verrà caricato l'articolo, in base ovviamente al tipo di causale di magazzino (carico / scarico);   
 
-**Locație**: specifică locația de unde articolul va fi descărcat sau unde va fi încărcat, în funcție de tipul șablonului de gestiune.
+**Peso netto**: viene riportato il Peso netto totale delle righe articolo. Viene riportato il peso netto di anagrafica articolo moltiplicato per la quantità di riga;
 
-**Greutate netă**: afișează greutatea netă totală a articolului, calculată prin înmulțirea greutății nete din registrul articolului cu cantitatea din rând.
+**Peso lordo**: viene riportato il Peso lordo totale delle righe articolo. Viene riportato il peso lordo di anagrafica articolo moltiplicato per la quantità di riga;
 
-**Greutate brută**: afișează greutatea brută totală a articolului, calculată similar greutății nete, dar utilizând greutatea brută.
+Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura può eseguire correttamente il salvataggio e rendere disponibile la riga successiva per l'inserimento di un nuovo movimento, oppure può imporre all'utente di completare l'inserimento tramite il carico dei lotti e/o dei serial numbers nelle apposite griglie sottostanti.
 
-În momentul salvării rândului mișcării, sistemul verifică completitudinea datelor. Dacă sunt necesare informații suplimentare despre loturi și/sau numere seriale, procedura va solicita utilizatorului completarea acestora.
+### Lotti e Serial number
 
-### Loturi și Numere Seriale
+**Lotti**
 
-#### Loturi
+In questa griglia, attiva solo se la causale di magazzino utilizzata ha il flag *Gestione lotti* attivato e se anche l'articolo è designato come articolo gestito a lotti, l'utente deve obbligatoriamente inserire le informazioni legate al lotto o ai lotti da movimentare.
 
-Această secțiune este activă dacă șablonul de gestiune are activată opțiunea *Gestionare loturi* și articolul este setat ca fiind gestionat pe loturi. Utilizatorul trebuie să completeze informațiile privind loturile, în funcție de tipul mișcării:
+Come sappiamo, la registrazione di magazzino può essere di carico o di scarico; a seconda dei 2 diversi casi, la griglia dei lotti ha differenti utilizzi ed impostazioni.
 
-> **1° caz: Înregistrare de încărcare**  
-După salvarea rândului, utilizatorul trebuie să completeze tabelul *Loturi*. Coloanele disponibile includ:  
+> *1° caso: Registrazione di carico*
 
-**Tip cod lot**: tipul codului lotului definit în registrul articolului.  
-**Tip lot**: se poate selecta opțional un tip de lot din combo-box.  
-**Număr lot**: reprezintă codul lotului de încărcat, construit pe baza regulilor stabilite în *Parametrii inițiali de gestiune* asociați tipului de cod lot introdus. Câmpul este de culoare galbenă deoarece utilizatorul poate decide să efectueze o nouă încărcare a unui lot deja existent în baza de date. În acest caz, cu un dublu clic pe câmpul galben care deschide *Help loturi*, poate alege lotul de încărcat filtrându-l între loturile gestionate până în acel moment în baza de date și în compania în care se află;
+Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in update la riga stessa, invitando l'utente a spostarsi nella griglia *Lotti* ed a indicare i dettagli dei lotti da caricare.
 
-**Cod lot furnizor**: permite inserarea manuală a codului lotului furnizor (deci numele pe care furnizorul îl atribuie lotului). Este un câmp care nu este generat automat în timpul operațiunilor de încărcare și nu este obligatoriu. În cazul în care *Cod lot* este introdus folosind *Help loturi*, această coloană va fi completată automat cu *Lotul furnizor* asociat lotului ales;
+Le colonne presenti nella griglia sono le seguenti:
 
-**Dată început**: afișează aceeași dată a înregistrării de gestiune, editabilă de utilizator. În cazul în care *Cod lot* este introdus folosind *Help loturi*, această coloană va fi completată automat cu data de început a lotului ales;
+**Tipo codice lotto**: in questa colonna viene inserito il tipo codice lotto inserito nell'anagrafica articolo;
 
-**Dată scadenţă**: afișează data de expirare a lotului, editabilă de utilizator, care este calculată, pornind de la data de început la care se adună zilele de valabilitate ale lotului introduse în tab-ul *Loturi/SN* din registrul articolului. În cazul în care *Codul lot* este introdus folosind *Help loturi*, această coloană va fi completată automat cu data de expirare a lotului ales;
+**Tipo lotto**: in questa colonna può essere opzionalmente inserito dall'utente il Tipo Lotto, tramite l'apposita combo box, che attinge dall'omonima tabella. Si tratta di un dato comunque non obbligatorio;
 
-**Cantitate**: afișează cantitatea pe care dorim să o atribuim lotului introdus. În cazul creării lotului prin apăsarea butonului „Auto”, cantitatea este completată automat cu cantitatea conținută în linia mișcării. Aceasta poate fi editată de utilizator, care poate decide să modifice cantitatea, diminuând-o, efectuând apoi click pe butonul „Auto” pe linia următoare. În acest mod va crea un nou lot, cu caracteristici similare lotului deja introdus, dar cu un *Cod lot* diferit;
+**Numero Lotti**: in questa colonna viene inserito il codice del lotto da caricare, costruito in base alle regole impostate nei *Parametri Iniziali di Magazzino* associate al *Tipo codice lotto* inserito. Il campo è di colore giallo in quanto l'utente potrebbe decidere di eseguire un nuovo carico di un lotto già esistente nel database; in questo caso con un doppio click sul campo giallo avrebbe modo, tramite un apposito *Help lotti*, di scegliere il lotto da caricare filtrandolo tra i lotti gestiti sino a quel momento nel database e nella società in cui sta lavorando;
 
-**Închis**: dacă este activat, indică faptul că lotul a fost complet descărcat din gestiune. Logic, în cazul încărcării lotului, opțiunea rămâne întotdeauna dezactivat;
+**Codice lotto fornitore**: in questa colonna viene inserito manualmente il codice del lotto fornitore, quindi di solito il nome che il fornitore attribuisce al lotto. Si tratta di un campo non generabile automaticamente durante le operazioni di carico e non obbligatorio. Nel caso in cui il Codice Lotto venga inserito attingendo dall'*Help Lotti*, questa colonna verrebbe compilata automaticamente con il Lotto Fornitore agganciato al lotto prescelto;
 
-**Lot vandabil**: dacă este activat, indică faptul că lotul este disponibil pentru a fi prelevat în documentele de vânzare, producție sau în înregistrările de gestiune. Practic, este o posibilitate pe care utilizatorul o are pentru a defini oportunitatea de a preleva sau nu un lot, alternativ la gestionarea, mai complexă și detaliată, a stărilor lotului. Așadar, în cazul încărcării automate a lotului, opțiunea rămâne activă în mod implicit, chiar dacă utilizatorul poate decide deja în această fază să o dezactiveze, făcând astfel lotul indisponibil;
+**Data inizio**: in questo campo compare la stessa data della registrazione di magazzino, editabile dall'utente. Nel caso in cui il Codice Lotto venga inserito attingendo dall''Help Lotti', questa colonna verrebbe compilata automaticamente con la data di inizio del lotto prescelto;
 
-**Notă**: reprezintă o notă referitoare la lotul care se încarcă. În cazul în care *Cod lot* este introdus folosind *Help loturi*, această coloană va fi completată automat cu nota asociată lotului ales.
+**Data scadenza**: in questo campo compare la data di scadenza del lotto, editabile dall'utente, che viene calcolata, partendo dalla data di inizio e sommando i giorni di validità del lotto inseriti nel tab *Lotti/SN* dell'anagrafica articolo. Nel caso in cui il Codice Lotto venga inserito attingendo dall'*Help Lotti*, questa colonna verrebbe compilata automaticamente con la data di scadenza del lotto prescelto;
 
-După ce utilizatorul a completat inserarea loturilor în tabelul *Loturi* și s-a asigurat că în linia mișcării cantitatea este egală cu suma cantităților loturilor încărcate, poate salva linia mișcării fără a mai primi mesaje de eroare de la procedură.
+**Quantità**: in questo campo compare la quantità che si vuole attribuire al lotto inserito. Nel caso di creazione del lotto tramite la pressione del tasto ‘Auto', la quantità viene riempita automaticamente con la quantità contenuta nella riga del movimento; essa è però editabile dall'utente, il quale potrebbe quindi decidere di modificare la quantità, diminuendola, ed eseguendo poi un'ulteriore pressione sul tasto ‘Auto' ma sulla riga sottostante: in tal modo creerebbe un nuovo lotto, con caratteristiche simili al lotto già inserito ma con Codice Lotto diverso;
 
-> *2° cazul: Înregistrare descărcare*
+**Chiuso**: se attivo, evidenzia che il lotto è stato completamente scaricato dal magazzino. Logicamente nel caso di carico del lotto il flag risulta sempre disattivato;
 
-În momentul salvării liniei mișcării, procesul va pune linia respectivă în starea *Actualizare*, solicitând utilizatorului să acceseze tabelul *Loturi* și să completeze detaliile loturilor de descărcat.
+**Lotto vendibile**(Lotto Vendibile): se attivo, evidenzia che il lotto è disponibile per essere prelevato all'interno dei documenti di vendita, di produzione o nelle registrazioni di magazzino. Si tratta praticamente di una possibilità che ha l'utente per definire la possibilità di prelevare o meno un lotto, in alternativa alla gestione, più complessa ed articolata, degli stati lotto. Quindi nel caso del carico automatico del lotto, il flag risulta attivo di default, anche se l'utente può decidere già in questa fase di disattivarlo, rendendo quindi già indisponibile il lotto stesso;
 
-#### Coloane specifice
+**Nota**: in questo campo l'utente può inserire una nota relativa al lotto che sta caricando. Nel caso in cui il Codice Lotto venga inserito attingendo dall'*Help Lotti*, questa colonna verrebbe compilata automaticamente con la nota legata al lotto prescelto.
 
-**Număr loturi**: cu un dublu clic pe câmpul galben care deschide *Help loturi*, utilizatorul poate alege lotul de descărcat;
+Dopo aver completato l'inserimento dei lotti nella griglia *Lotti*, facendo in modo che la quantità della riga del movimento sia pari alla somma delle quantità dei lotti caricati, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
 
-**Cod lot furnizor**: această coloană este completată automat cu *Lotul furnizorului* asociat lotului ales;
+> *2° caso: Registrazione di scarico*
 
-**Dată început**: afișează data de început a lotului ales;
+Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in ‘update' la riga stessa, invitando l'utente a spostarsi nella griglia Lotti ed a indicare i dettagli dei lotti da scaricare.
 
-**Dată scadenţă**: afișează data de expirare a lotului ales;
+Le colonne presenti nella griglia sono le seguenti:
 
-**Cantitate**: afișează cantitatea pe care dorim să o descărcăm din lotul ales. Aceasta poate fi editată de utilizator, care poate decide să modifice cantitatea, diminuând-o, și să efectueze apoi o altă căutare cu ajutorul *Help loturi*, dar pe linia următoare;
+**Numero Lotti**: in questa colonna con un doppio click sul campo giallo l'utente ha modo, tramite l'apposito *Help lotti*, di scegliere il lotto da scaricare filtrandolo tra i lotti disponibili nel magazzino della registrazione;
 
-**Locație**: afișează locația în care este încărcat lotul ales.
+**Codice lotto fornitore**: questa colonna viene compilata automaticamente con il *Lotto fornitore* agganciato al lotto prescelto;
 
-După ce a completat introducerea loturilor de descărcat în tabelul *Loturi*, asigurându-se că pe  liniei mișcării cantitatea este egală cu suma cantităților loturilor descărcate, utilizatorul poate salva linia mișcării fără a mai primi mesaje de eroare din partea procedurii.
+**Data inizio**: in questo campo compare la data di inizio del lotto prescelto;
 
-### Numere seriale
+**Data scadenza**: in questo campo compare la data di scadenza del lotto prescelto;
 
-În acest tabel, activ doar dacă șablonul de gestiune utilizat are opțiunea *Gest. loturi* activată și dacă articolul este semnalat ca articol gestionat cu numere seriale, utilizatorul trebuie să introducă obligatoriu informațiile asociate numerelor seriale de mișcat.
+**Quantità**: in questo campo compare la quantità che si vuole scaricare del lotto prescelto. Essa è editabile dall'utente, il quale potrebbe quindi decidere di modificare la quantità, diminuendola, ed eseguendo poi un'ulteriore ricerca tramite l'help lotti ma sulla riga sottostante;
 
-Înregistrarea de gestiune poate fi de încărcare sau de descărcare. În funcție de cele 2 cazuri diferite, tabelul *Numere seriali* are utilizări și setări diferite.
+**Ubicazione**: in questo campo viene visualizzata l'ubicazione in cui è caricato il lotto prescelto.
 
-> *1° caz: Înregistrare de încărcare (Registrazione di carico)*
+Dopo aver completato l'inserimento dei lotti da scaricare nella griglia *Lotti*, facendo in modo che la quantità della riga del movimento sia pari alla somma delle quantità dei lotti scaricati, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
 
-În momentul salvării liniei mișcării, procesul va pune linia respectivă în starea *Actualizare*, solicitând utilizatorului să acceseze tabelul *Numere Seriali* și să indice detaliile numerelor seriale de încărcat.
+**Numeri seriali**
 
-#### Câmpuri specifice
+In questa griglia, attiva solo se la causale di magazzino utilizzata ha il flag *Gest. lotti* attivato e se anche l'articolo è designato come articolo gestito a serial numbers, l'utente deve obbligatoriamente inserire le informazioni legate ai serial numbers da movimentare.
 
-**Tip serial number**: reprezintă automat tipul codului SN introdus în registrul articolului. Acesta este însă modificabil;
+Come sappiamo, la registrazione di magazzino può essere di carico o di scarico; a seconda dei 2 diversi casi, la griglia Numeri Seriali ha differenti utilizzi ed impostazioni.
 
-**Serial number**: reprezintă codul numărului serial de încărcat, construit pe baza regulilor stabilite în *Parametrii inițiali de gestiune* asociați tipului de cod SN introdus. Este un câmp editabil.
+> *1° caso: Registrazione di carico*
 
-**Client serial number**: indică Numărul Serial utilizat de client;
+Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in ‘update' la riga stessa, invitando l'utente a spostarsi nella griglia Numeri Seriali ed a indicare i dettagli dei Serial Numbers da caricare.
 
-**Furnizor serial number**: indică Numărul Serial utilizat de furnizor;
+Le colonne presenti nella griglia sono le seguenti:
 
-**Dată început**: indică data de început de valabilitate a Numărului Serial;
+**Tipo Serial Number**: in questa colonna viene inserito automaticamente, il tipo codice SN inserito nell'anagrafica articolo. Esso è comunque modificabile dall'utente
 
-**Dată scadenţă**: indică data de expirare a Numărului Serial;
+**Serial Number**: in questa colonna viene inserito il codice del Serial Number da caricare, costruito in base alle regole impostate nei *Parametri Iniziali di Magazzino* associate al tipo codice SN inserito. Esso è comunque editabile dall'utente.
 
-**Data ultimei modificări**: indică data ultimei modificări;
+**Cliente Serial Number**: indica il Serial Number utilizzato dal cliente;
 
-**Anulat**: indică faptul că Numărul Serial se află în stare anulată;
+**Fornitore Serial Number**: indica il Serial Number utilizzato dal fornitore;
 
-**Închis forțat**: indică faptul că Numărul Serial a fost închis forțat;
+**Data inizio**: indica la data inizio di validità del Serial Number;
 
-**Lot**: indică numărul lotului corespunzător acelui Număr Serial.
+**Data scadenza**: indica la data di scadenza del Serial Number;
 
-După ce utilizatorul a completat introducerea loturilor în tabelul *Numere seriale*, și s-a asigurat că în linia mișcării cantitatea este egală cu numărul Numerelor seriale introduse în tabel, poate salva linia mișcării fără a mai primi mesaje de eroare din partea procedurii.
+**Data ultima modifica**: indica la data di ultima modifica;
 
-> *2° cazul: Înregistrare de descărcar*
-În momentul salvării liniei mișcării, procesul va pune linia respectivă în starea *Actualizare*, solicitând utilizatorului să acceseze tabelul *Numere Seriali* și să indice detaliile numerelor seriale de descărcat.
+**Annullato**: indica che il Serial Number si trova in stato annullato;
 
-#### Câmpuri specifice  
+**Chiuso forazatamente**: indica che il Serial Number è stato chiuso forzatamente;
+ 
+**Lotto**: indica il numero di lotto corrispondente a quel Serial Number.
 
-**Număr serial**: cu un dublu clic pe câmpul galben care deschide *Help numere seriale*, utilizatorul poate alege lotul de descărcat;
+Dopo aver completato l'inserimento dei lotti nella griglia *Numeri Seriali*, facendo in modo che la quantità della riga del movimento sia pari al numero dei Serial Numbers inseriti nella griglia, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
 
-**Dată inserare**: indică data introducerii Numărului Serial;
+> *2° caso: Registrazione di scarico*
 
-**Client serial number**: indică Numărul Serial utilizat de client;
+Nel momento in cui l'utente procede al salvataggio della riga del movimento, la procedura lascia in update la riga stessa, invitando l'utente a spostarsi nella griglia Numeri Seriali ed a indicare i dettagli dei Serial Numbers da scaricare.
 
-**Furnizor serial number**: indică Numărul Serial utilizat de furnizor;
+Le colonne presenti nella griglia sono le seguenti:
 
-**Dată ultimă modificare**: indică data ultimei modificări;
+**Serial Number**: in questa colonna l'utente deve inserire, tramite un doppio click sul campo giallo, i Serial Numbers da scaricare, attingendo dall'apposito *Help Serial Numbers*.
 
-**Dată început**: indică data de început a valabilității numărului serial;
+**Data inserimento**: indica la data inserimento del Serial Number;
 
-**Anulat**: indică faptul că numărul serial se află în stare anulată;
+**Cliente Serial Number**: indica il Serial Number utilizzato dal cliente;
 
-**Lot**: indică numărul lotului corespunzător numărului serial.
+**Fornitore Serial Number**: indica il Serial Number utilizzato dal fornitore;
 
-După ce utilizatorul a completat introducerea numerelor de descărcat în tabelul *Numere seriale*, și s-a asigurat că în linia mișcării cantitatea este egală cu numărul Numerelor seriale introduse în tabel, poate salva linia mișcării fără a mai primi mesaje de eroare din partea procedurii.
-### Centre de cost
+**Data ultima modifica**: indica la data di ultima modifica;
 
-În acest tabel, utilizatorul poate asocia liniei mișcării unul sau mai multe centre de cost, atribuind astfel cantități diferite ale mișcării diverselor centre de cost.
+**Data inizio**: indica la data inizio di validità del Serial Number;
 
-Cu dublu clic in *Help Centre de cost*, utilizatorul poate selecta centrul de cost, completând apoi linia cu cantitatea la care acest centru de cost trebuie să se raporteze. Dacă suma cantităților introduse în rândurile tabelului centrelor de cost este diferită de cantitatea gestionară a liniei mișcării, procedura va lansa un avertisment și va împiedica salvarea mișcării.
+**Annullato**: indica che il Serial Number si trova in stato annullato;
+
+**Lotto**: indica il numero di lotto corrispondente a quel Serial Number.
+
+Dopo aver completato l'inserimento dei lotti da scaricare nella griglia *Numeri Seriali*, facendo in modo che la quantità della riga del movimento sia pari al numero dei Serial Numbers inseriti nella griglia, l'utente può provvedere a salvare la riga del movimento senza più ricevere messaggi di errore dalla procedura.
+
+### Centri di Costo
+
+In questa griglia l'utente può agganciare alla riga movimento uno o più centri di costo, attribuendo quindi differenti quantità del movimento a differenti centri di costo.
+
+La griglia si compone di una colonna in cui compare un campo di colore giallo, sul quale l'utente può, esercitando un doppio click, aprire l'**Help Centri di Costo*, mediante in quale può inserire il centro di costo nella riga della griglia, completando poi la riga con la quantità a cui questo centro di costo deve essere riferito. Se la somma delle quantità inserite nella righe della griglia dei centri di costo è diversa dalla quantità gestionale della riga movimento, la procedura dà un avviso e impedisce di salvare il movimento.
 
 ### Extra Data
 
-Vă rugăm sa consultați documentul [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).
+Si rinvia alla documentazione relativa agli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).
 
-## Contrapartidă
+## Contropartita
 
-Acest tab are aceeași structură și funcționalitate ca tab-ul *Înregistrare*, fiind activat doar în cazul în care șablonul de gestiune configurat în tab-ul *Înregistrare* include o gestiune și un șablon de contrapartidă. Șablonele de contrapartidă sunt utilizate atunci când se dorește gestionarea unei mișcări de gestiune duble într-o singură înregistrare. Astfel, în tabelul șablonelor de gestiune, se poate defini un șablon de încărcare în contrapartidă pentru un șablon de descărcare și viceversa.
+Questo tab è esattamente identico al tab *Registrazione*, ma risulta attivo solo se la causale di magazzino impostata nel tab *Registrazione* presenta un magazzino e una causale di contropartita.  
+Le causali di contropartita vengono impostate nel caso in cui si voglia gestire un doppio movimento di magazzino, con una sola registrazione. Quindi è possibile, nella tabella delle causali di magazzino, impostare una causale di carico come contropartita di una causale di scarico e vicevesa.
 
-În tab-ul *Contrapartidă*, sunt redate exact aceleași informații setate în tab-ul *Înregistrare*, însă utilizatorul are posibilitatea de a modifica doar anumite date de antet, cum ar fi: Document intern, Document de referință și Comandă de vânzare.
+Nel tab *Contropartita* vengono quindi riportati esattamente tutti i dati impostati all'interno del tab *Registrazione*, con la possibilità per l'utente di modificare solo alcuni dei dati di testata: Documento interno, Documento di riferimento, Commessa di vendita.
 
-Datele liniei mișcării trebuie să fie identice în cele două tab-uri. De asemenea, aceleași reguli se aplică pentru tabelele Loturi, Numere de Serie, Variante și Centre de Cost ale fiecărei mișcări. Singurul câmp editabil în tab-ul *Contropartidă* este câmpul *Locație*.
+I dati della riga del movimento devono invece essere identici tra i 2 tab; stesso discorso per le griglie Lotti, Numeri di Serie, Varianti e Centri di Costo del singolo movimento. Solo il campo dell'ubicazione è editabile all'interno del tab contropartita.
 
-În cazul unui scenariului **special**, în care în tab-ul *Înregistrare* este introdus un articol și în tab-ul *Contrapartidă* sunt introduse altele, acest lucru se întâmplă doar atunci când șablonul de contrapartidă asociat șablonului principal are activată opțiunea *Listă componente*. Aceasta este o opțiune care permite utilizatorului să încarce articolul în tab-ul *Înregistrare* (utilizând un șablon de încărcare) și să vizualizeze lista sa de componente în tab-ul *Contrapartidă*, unde va fi afișat un șablon de descărcare. Evident, acest proces poate fi gestionat și invers.
+C'è un caso **particolare** in cui nel tab *Registrazione* viene inserito un articolo e nel tab *Contropartita* ne vengono inseriti altri: ciò accade solo quando la causale di contropartita agganciata alla causale principale ha attivato il flag *Distinta Base*, flag che consente all'utente di caricare l'articolo nel tab *Registrazione* (quindi utilizzando una causale di carico) e vedere la sua distinta base inserita nel tab *Contropartita*, all'interno del quale sarà quindi presente una causale di scarico. Ovviamente può essere gestito anche il viceversa.
 
-O situație **particulară** în care se gestionează șabloanele cu contrapartida asociată este descărcarea automată a *Avizului de livrare în sistem lohn*, care se referă la descărcarea materialelor destinate livrării către terți din gestiunea de materii prime (sau semifabricate, în funcție de caz), urmată de descărcarea imediată și consecventă a acelorași materiale în gestiunea terțului, care trebuie ulterior utilizate pentru a produce bunurile solicitate prin ordinul în sistem lohn.
+Una situazione **particolare** che richiede la gestione di causali con la contropartita agganciata è riconducibile allo *scarico automatico del DDT di consegna di conto lavoro*, che esegue lo scarico dei materiali da consegnare al terzista dal magazzino materie prime (o semilavorati, a seconda dei casi) con conseguente ed immediato carico sul magazzino del terzista degli stessi materiali, che dovranno da lui poi essere utilizzati per produrre ciò che gli è stato richiesto tramite l'ordine di conto lavoro.
 
-Pentru tot ceea ce nu este detaliat în acest document privind funcționarea comună a form-urilor, consultați link-ul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

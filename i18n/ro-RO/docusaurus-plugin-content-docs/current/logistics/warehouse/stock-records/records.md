@@ -1,47 +1,41 @@
 ---
-title: Caută înregistrări
+title: Ricerca registrazioni
 sidebar_position: 2
 ---
 
-Această fereastră se află în [Logistică>Gestiune>Înregistrări] și prezintă lista cu toate înregistrările de gestiune prezente în baza de date, înregistrări care pot fi modificate sau vizualizate în detaliu.
+Consente di ricercare tutte le registrazioni di magazzino presenti nel database con lo scopo di visualizzarle, modificarle, ed eventualmente cancellarle oppure procedere all'inserimento di una nuova registrazione; la finestra si compone di un'area di filtro e da una griglia di risultato.
 
-Descriem în continuare câteva câmpuri:
+Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Document de referință** ****: reprezintă documentul care a generat înregistrarea;
+Per aprire i dettagli di una registrazione, basterà selezionarla e fare doppio click con il mouse oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
 
-**Data document** ****: este data dcumentului de referință, și anume cel care a generat înregistrarea;
+Sempre da questa form si può inserire una nuova registrazione di magazzino utilizzando il pulsante **Nuovo**.
 
-**Client/Furnizor** ****: reprezintă clientul/furnizorul documentului a cărui descărcare/încărcare a generat înregistrarea;
+*La griglia dei risultati si compone dei seguenti campi*:
 
-**Com. prod.** **: în aceste 2 câmpuri se inserează anul și numărul comenzii de producție din care a fost generată înregistrarea de gestiune, cu succesive lansări și semnalări;
+**Magazzino**: la colonna visualizza il codice del magazzino su cui è stata generata la registrazione;   
 
-**Articol** **: primul combo permite inserarea clasei articolului, iar cu dubluc clic în următorul se deschide 'Help articole' cu ajutorul căruia se poate selecta un singur articol (cod și descriere). Filtrând după articol sunt afișate toate înregistrările în care este prezent cel puțin o mișcare articol;
+**Causale**: la colonna visualizza il codice della causale di magazzino che ha effettuato il movimento e che quindi è stata inserita nella testata della registrazione;  
 
-**Variantă** ****: cu dubluc clic se deschide help-ul variantelor cu ajutorul căruia se poate selecta varianta articolului și se pot filtra înregistrările în care este prezentă cel puțin o mișcare pentru varianta selectată;
+**Data**: la colonna visualizza la data di inserimento della registrazione di magazzino;   
 
-**Loturi** **: cu ajutorul acestui câmp se pot filtra înregistrările pe baza codului lotului, găsind astfel toate înregistrările în care este prezent cel puțin o mișcare pentru lotul selectat;
+**Numero**: la colonna visualizza il numero progressivo della registrazione di magazzino;   
 
-**Comanda** **: cu ajutorul acestui câmp se pot filtra înregistrările pe baza comenzii de vânzare asociată în antet, utilizând help comenzi.
+**Documento di riferimento**: la colonna visualizza ciò che è presente nel campo “Documento di riferimento” della testata della 
+registrazione;   
 
-RIBBON BAR: reprezintă meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatiilor posibile conține:
+**Data documento**: la colonna visualizza la data del documento di riferimento presente nella testata della registrazione;   
 
+**Carico / Scarico**: la colonna visualizza il tipo di registrazione. Essa può essere infatti solo di carico o di scarico;   
 
+**Magazzino di Contropartita**: la colonna visualizza il codice del magazzino della registrazione di contropartita, ove presente;   
 
-| Functie | Functionalitate |
-| --- | --- |
-| Caută | Buton pentru căutarea înregistrărilor de gestiune inserate în baza de date. |
-| Inserează | Buton pentru inserarea unei noi înregistrări de gestiune. |
-| Modifică | Buton pentru modificarea unei înregistrări de gestiune. |
-| Vizualizează | Buton pentru vizualizarea înregistrării de gestiune selectate. |
-| Șterge | Buton pentru ștergerea înregistrării de gestiune selectate. |
-| Modifică filtru atribute | Deschide o fereastră care va permite utilizatorului să decidă activarea sau nu a Filtrului atribute, care eprmite filtrarea înregistrărilor de gestiune pe baza atributelor inserate cu ajutorul codificatorului în articolele obiect ale înregistrării. |
+**Causale di Contropartita**: la colonna visualizza il codice del magazzino della registrazione di contropartita, ove presente;   
 
-ARIA DE FILTRE: conţine lista cu posibilele tipuri de date cu ajutorul cărora se poate efectua o selecţie/căutare a înregistrărilor de gestiune. În general, filtrele sunt în condiţie “AND” şi există posibilitatea inserării simultane a mai multor criterii de filtrare.
+**Numero contropartita**: la colonna visualizza il numero progressivo della registrazione di contropartita, ove presente;   
 
-GRID REZULTATE: este afișată lista cu înregistrările de gestiune care corespund datelor din filtrele inserate sus. Utilizatorul, după ce a inserat filtrele și a apăsat butonul [Caută] prezent în ribbonul relativ, va obține, în gridul rezultatelor, lista cu înregistrările dorite.
+**Documento Riferimento contropartita**: la colonna visualizza ciò che è presente nel campo 'Documento di riferimento' della testata della registrazione di contropartita, ove presente;   
 
+**Conto / Sottoconto / Descrizione conto**: la colonna visualizza conto, sottoconto e ragione sociale del cliente o del fornitore inserito nella testata della registrazione di magazzino.
 
-
-
-
-
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
