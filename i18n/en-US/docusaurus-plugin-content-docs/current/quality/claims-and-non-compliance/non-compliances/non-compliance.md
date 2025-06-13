@@ -1,405 +1,385 @@
 ---
-title: Non conformità
+title: Non-Compliance 
 sidebar_position: 2
 ---
 
+The management can be found along the path **Quality > Non-Compliance > New Non-Compliance** or it can be executed from the **Search Non-Compliance**.
 
-La gestione si trova sul percorso **Qualità > Non conformità > Nuova non conformità** oppure è possibile eseguirla dalla **Ricerca non conformità**.   
+:::important What it is for
+Non-Compliance serve to identify and document deviations from established standards or requirements, whether production or service-related.  
+This process helps ensure that products, services, or processes are corrected and improved to maintain quality and safety. Additionally, it facilitates the adoption of corrective actions to prevent future issues.  
+*Non-Compliance* must:   
+- determine the causes of the Non-Compliance;   
+- determine whether there are or can be similar Non-Compliance;   
+- assess the need for actions to eliminate the causes of the Non-Compliance.    
 
-
-:::important A cosa serve
-Le Non conformità servono a identificare e documentare deviazioni dagli standard o dai requisiti prestabiliti, produttivi o di servizio.   
-Questo processo aiuta a garantire che i prodotti, i servizi o i processi siano corretti e migliorati per mantenere la qualità e la sicurezza. Inoltre, facilita l'adozione di azioni correttive per prevenire futuri problemi.   
-Le *Non conformità* devono:   
-- determinare le cause della non conformità;   
-- determinare se esistono o possono verificarsi non conformità simili;   
-- valutare l’esigenza di azioni per eliminare le cause della non conformità.    
-
-A standard sono disponibili le reportistiche di:   
-> **Non conformità**: scheda della *Non conformità*;   
-> **Non conformità 8D**: scheda compilabile per la gestione 8D della *Non conformità*.   
+As a standard, the following reports are available:   
+> **Non-Compliance**: *Non-Compliance* record;   
+> **8D Non-Compliance**: fillable form for 8D management of *Non-Compliance*.   
 :::
 
+## Command Buttons 
 
-## Pulsanti di comando
+### ![](/img/neutral/common/save.png) Save Non-Compliance 
 
+Pressing this button saves all modified information of the displayed *Non-Compliance*.
 
-### ![](/img/neutral/common/save.png) Salva non conformità
+### ![](/img/neutral/common/new.png) New Non-Compliance 
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Non conformità* visualizzata.   
+Pressing this button saves all modified information of the displayed *Non-Compliance* and opens a new form, creating a new one.
 
+### ![](/img/neutral/common/execute.png) Non-Compliance Valorization
 
-### ![](/img/neutral/common/new.png) Nuova non conformità
-
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Non conformità* visualizzata e apre una nuova form creandone una nuova.   
-
-
-### ![](/img/neutral/common/execute.png) Valorizzazione non conformità
-
-Pulsante contestuale alla visualizzazione del tabulatore *Testata*.   
-E' possibile creare una *Nota di addebito* nei confronti del *Fornitore* o *Cliente* a cui è assegnata la *Non conformità*.   
-Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, approvata, è di *Tipo non conformità a Cliente* o *a fornitore* ed esiste un *Valore da addebitare*.   
-Viene visualizzata una richiesta/conferma dati per:
-> **Cliente** o **Fornitore**: è il destinatario della nuova *Nota di addebito* (dato obbligatorio), viene proposto il *Cliente* o *Fornitore* della *Non conformità* di origine.   
-> **Tipo fattura**: è il *Tipo documento* della nuova *Nota di addebito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
-> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di addebito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione non conformità](/docs/quality/claims-and-non-compliance/non-compliances/procedures/non-compliance-valorisation), sessione *Riferimenti non conformità*.   
-> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di addebito*.   
-> Viene proposto il *Tipo I.V.A.* con le seguenti priorità:   
-> 1. se esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* presente nel documento;   
-> 2. se non esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* associato al *Fornitore* della *Non conformità*;   
-> 3. se non esiste una *Dichiarazione di intento' e non è stato indicato un *Tipo I.V.A.* associato al *Fornitore* della *Non conformità*, viene considerato il *Tipo I.V.A.* associato al *Tipo non conformità*.   
+Button contextual to the display of the *Header* tab.  
+It is possible to create a *Debit Note* against the *Supplier* or *Customer* to whom the *Non-Compliance* is assigned.  
+The button is enabled only if the *Non-Compliance* has been saved, approved, is of *Customer Non-Compliance type* or *Supplier type*, and there exists a *Value to be charged*.  
+A data request/confirmation is displayed for:
+> **Customer** or **Supplier**: is the recipient of the new *Debit Note* (mandatory data), with the *Customer* or *Supplier* of the originating *Non-Compliance* proposed.   
+> **Invoice Type**: is the *Document Type* of the new *Debit Note* (mandatory data); the *Invoice Type* entered in the *Non-Compliance Type* of the originating *Non-Compliance* is proposed.   
+> **Description**: is the description that will be used for the *Expense Item* line of the new *Debit Note* (mandatory data); the description parameterized in the [Non-Compliance Valorization Parameters](/docs/quality/claims-and-non-compliance/non-Compliances/procedures/non-compliance-valorisation), section *Non-Compliance References*, is proposed.   
+> **VAT**: is the *VAT Type* that will be used for the *Expense Item* line of the new *Debit Note*.   
+> The *VAT Type* is proposed with the following priorities:   
+> 1. if a *Declaration of intent* exists, the *VAT Type* present in the document is considered;   
+> 2. if no *Declaration of intent* exists, the *VAT Type* associated with the *Supplier* of the *Non-Compliance* is considered;   
+> 3. if no *Declaration of intent* exists and no *VAT Type* associated with the *Supplier* of the *Non-Compliance* has been specified, the *VAT Type* associated with the *Non-Compliance Type* is considered.   
 >
-> Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-> Al termine dell'elaborazione la *Nota di addebito* appena creata viene visualizzata.   
+> Then press the **OK** button or the **Cancel** button if you want to continue or not with the creation activity.   
+> At the end of the Working, the newly created *Debit Note* will be displayed.
 
+### ![](/img/neutral/common/corrective.png) Create Corrective Action 
 
-### ![](/img/neutral/common/corrective.png) Crea azione correttiva
-
-Pulsante contestuale alla visualizzazione del tabulatore *Gestione difetti*.   
-Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, approvata ed è stata selezionata una riga *Difetto* valida.   
+Button contextual to the display of the *Defect Management* tab.  
+The button is enabled only if the *Non-Compliance* has been saved, approved, and a valid *Defect* line has been selected.
 
 import CorrectiveActionPopupInsertion from './../../../import/sections/corrective-action-popup-insertion.md'
 
 <CorrectiveActionPopupInsertion />
 
 
-## Gestione dati
+## Data Management 
 
-## Dati di testata del documento
+## Document Header Information 
 
-Le informazioni gestite sono:   
-> **Tipo non conformità**: è il *Tipo* del documento (dato obbligatorio).   
-> All'inserimento di una nuova *Non conformità* viene proposto il *Tipo non conformità* indicato nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
+The managed information includes:   
+> **Non-Compliance type**: it is the *Type* of the document (required data).   
+> Upon the creation of a new *Non-Compliance*, the *Non-Compliance type* indicated in the *Complaints and Non-Compliances Parameters* section *Non-Compliances* is proposed.   
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* della *Non conformità* (dati obbligatori).   
-> All'inserimento di una nuova *Non conformità*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo non conformità*.   
+> **Year/Number/Date**: these are the *Year*, *Number*, and *Date* of the *Non-Compliance* (required data).   
+> Upon the creation of a new *Non-Compliance*:   
+> - the *Date* is proposed as today’s date;   
+> - the *Year* and the *Number* are proposed based on the *Date* and the *Numbering* associated with the *Non-Compliance type*.   
 >
-> **Cliente** o **Fornitore**: è il riferimento del *Cliente* o del *Fornitore* destinatario della *Non conformità*  (dato obbligatorio se il *Tipo non conformità* è *A fornitore* o *A cliente*).   
-> *Cliente* o del *Fornitore* si abilitano sulla base del *Tipo non conformità* indicato.   
+> **Customer** or **Supplier**: it is the reference of the *Customer* or *Supplier* recipient of the *Non-Compliance* (required data if the *Non-Compliance type* is *To supplier* or *To customer*).   
+> *Customer* or *Supplier* are enabled based on the indicated *Non-Compliance type*.   
 >
-> **Funzione/Area/Reparto**: è il riferimento della *Funzione/Area/Reparto* (dato obbligatorio se il *Tipo non conformità* è *Interna*).   
-> Si abilita sulla base del *Tipo non conformità* indicato.   
+> **Function/Area/Department**: it is the reference of the *Function/Area/Department* (required data if the *Non-Compliance type* is *Internal*).   
+> It is enabled based on the indicated *Non-Compliance type*.   
 
+## Header
 
-## Testata
-
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile della *Non conformità*.   
-> All'inserimento di una nuova *Non conformità* viene proposta la *Persona responsabile* indicata nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
+The managed information includes:   
+> **Responsible person**: this is the *Employee* responsible for the *Non-Compliance*.   
+> Upon the creation of a new *Non-Compliance*, the *Responsible person* indicated in the *Complaints and Non-Compliances Parameters* section *Non-Compliances* is proposed.   
 >
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile della *Non conformità*.   
-> All'inserimento di una nuova *Non conformità* viene proposta la *Funzione responsabile* indicata nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
+> **Responsible function**: it is the *Business Function* responsible for the *Non-Compliance*.   
+> Upon the creation of a new *Non-Compliance*, the *Responsible function* indicated in the *Complaints and Non-Compliances Parameters* section *Non-Compliances* is proposed.   
 >
-> **Referente esterno**: annotazioni libere sulla persona di riferimento del *Cliente*, *Fornitore* o *Funzione/Area/Reparto* destinatario della *Non conformità*.   
+> **External reference**: free notes on the contact person of the *Customer*, *Supplier*, or *Function/Area/Department* recipient of the *Non-Compliance*.   
 >
-> **Sito produttivo**: è il riferimento del *Sito produttivo* di dove è stata riscontrata la *Non conformità*.   
+> **Production site**: this is the reference of the *Production site* where the *Non-Compliance* was identified.   
 >
-> **Motivo**: annotazioni libere sul motivo dell'inserimento della *Non conformità* (dato obbligatorio).   
+> **Reason**: free notes on the reason for the entry of the *Non-Compliance* (required data).   
 >
-> **Proposta di soluzione**: annotazioni libere sull'argomento.   
-> Solitamente utilizzato per indicare una proposta di soluzione al destinatario della della *Non conformità*.   
+> **Proposed solution**: free notes on the subject.   
+> Usually used to indicate a proposed solution to the recipient of the *Non-Compliance*.   
 >
-> **Notificata/In data**: Sono le indicazioni manuali se la *Non conformità* è stata notificata e in quale data al destinatario della stessa.   
+> **Notified/On date**: These are manual indications of whether the *Non-Compliance* has been notified and on what date to the recipient.   
 >
-> **Risposta Fornitore/Interna**: annotazioni libere sull'argomento.   
-> Solitamente utilizzato per registrare un'eventuale risposta data dal destinatario della *Non conformità* alla notifica della stessa.   
+> **Supplier/Internal response**: free notes on the subject.   
+> Usually used to record any response given by the recipient of the *Non-Compliance* to the notification thereof.   
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito la *Non conformità*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica alla *Non conformità*.   
+> **Audit Trail**: read-only expander where the following information is visible:   
+>> **Creation date/Name**: it is the date and the *A.R.M. User* who entered the *Non-Compliance*.   
+>> **Last modification date/Name**: it is the date and the *A.R.M. User* who made the last modification to the *Non-Compliance*.   
 >
-> **Approvata/In data**: expander dove è possibile inserire le informazioni di approvazione della *Non conformità:   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono approvare la *Non conformità*.  
->> **Approvata**: indica che la *Non conformità* è *Approvata*.   
->> All'atto dell'approvazione vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
->> **In data**: è la data in cui la *Non conformità* è stata *Approvata*.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Nome* e *Persona* proposte come *Utente A.R.M.* collegato, *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Approvata*.   
->> **Nome**: è l'*Utente A.R.M.* che ha approvato la *Non conformità*. L'informazione è di sola lettura.   
->> **Persona**: è il *Dipendente* che ha approvato la *Non conformità*. L'informazione è di sola lettura.   
->> **Funzione**: è la *Funzione aziendale* che ha approvato la *Non conformità*.   
->> Abilitata solamente se la *Non conformità* è *Approvata*.   
+> **Approved/On date**: expander where it is possible to enter the approval information for the *Non-Compliance*:   
+>> Only the **Responsible person** or **Responsible function** can approve the *Non-Compliance*.  
+>> **Approved**: indicates that the *Non-Compliance* is *Approved*.   
+>> At the time of approval, the following are automatically proposed: *On date*, proposed as today’s date and with the possibility of being changed, *Name* and *Person* proposed as *A.R.M. User* linked and *Employee* linked to the *A.R.M. User*.   
+>> **On date**: it is the date when the *Non-Compliance* was *Approved*.   
+>> At the time of entering the date, the following are automatically proposed: *Name* and *Person* proposed as *A.R.M. User* linked, *Employee* linked to the *A.R.M. User* and the *Approved* flag is set.   
+>> **Name**: this is the *A.R.M. User* who approved the *Non-Compliance*. The information is read-only.   
+>> **Person**: this is the *Employee* who approved the *Non-Compliance*. The information is read-only.   
+>> **Function**: this is the *Business Function* that approved the *Non-Compliance*.   
+>> Enabled only if the *Non-Compliance* is *Approved*.   
 >
-> **Chiusa/In data**: expander dove è possibile inserire le informazioni di chiusura della *Non conformità*:   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere la *Non conformità*.  
->> **Chiusa**: indica che la *Non conformità* è *Chiusa*.   
->> All'atto della chiusura vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
->> **In data**: è la data in cui la *Non conformità* è stata *Chiusa*.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Nome* e *Persona* proposte come *Utente A.R.M.* collegato, *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiusa*.   
->> **Nome**: è l'*Utente A.R.M.* che ha chiuso la *Non conformità*. L'informazione è di sola lettura.   
->> **Persona**: è il *Dipendente* che ha chiuso la *Non conformità*. L'informazione è di sola lettura.   
->> **Funzione**: è la *Funzione aziendale* che ha chiuso la *Non conformità*.   
->> Abilitata solamente se la *Non conformità* è *Chiusa*.   
->> **Notifica chiusura/In data**: Sono le indicazioni manuali se la chiusura della *Non conformità* è stata notificata e in quale data al destinatario della stessa.   
+> **Closed/On date**: expander where it is possible to enter the closing information for the *Non-Compliance*:   
+>> Only the **Responsible person** or **Responsible function** can close the *Non-Compliance*.  
+>> **Closed**: indicates that the *Non-Compliance* is *Closed*.   
+>> At the time of closing, the following are automatically proposed: *On date*, proposed as today’s date and with the possibility of being changed, *Name* and *Person* proposed as *A.R.M. User* linked and *Employee* linked to the *A.R.M. User*.   
+>> **On date**: it is the date when the *Non-Compliance* was *Closed*.   
+>> At the time of entering the date, the following are automatically proposed: *Name* and *Person* proposed as *A.R.M. User* linked, *Employee* linked to the *A.R.M. User* and the *Closed* flag is set.   
+>> **Name**: this is the *A.R.M. User* who closed the *Non-Compliance*. The information is read-only.   
+>> **Person**: this is the *Employee* who closed the *Non-Compliance*. The information is read-only.   
+>> **Function**: this is the *Business Function* that closed the *Non-Compliance*.   
+>> Enabled only if the *Non-Compliance* is *Closed*.   
+>> **Closure notification/On date**: These are manual indications of whether the closure of the *Non-Compliance* has been notified and on what date to the recipient. 
 
 
-### Riferimento documento
+### Document Reference 
 
-Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine alla *Non conformità* in gestione. Le informazioni presenti sono:   
-> **Fattura di acquisto**, **Bolla di consegna di acquisto**, **Ricevimento merce**, **Rientro da conto lavoro**, **Reclamo**, **Anno/Ordine/Lotto** e **Fase/Sottofase/Dichiarazione n.**:   
-> sono tutti riferimenti in sola lettura al documento di origine che ha creato la *Non conformità*.   
-> Nello standard, l'unico documento che può creare una *Non conformità* e che imposta automaticamente il riferimento e il *Reclamo*.
+In the tab, there are indications about the documents that gave rise to the *Non-Compliance* being managed. The information present includes:   
+> **Purchase Invoice**, **Purchase Delivery Note**, **Goods Receipt**, **Subcontractor Return**, **Claim**, **Year/Order/Lot**, and **Phase/Subphase/Declaration No.**:   
+> these are all read-only references to the original document that created the *Non-Compliance*.   
+> In the standard, the only document that can create a *Non-Compliance* and automatically sets the reference and the *Claim*.
 
+### Annotations 
 
-### Annotazioni
+In the tab, there are general annotations for the document and specific ones for the area. The information present includes:   
+> **Commercial Notes**: free annotations on the subject reserved for the commercial area staff.   
+> **Technical Notes**: free annotations on the subject reserved for the technical area staff.   
+> **Administrative Notes**: free annotations on the subject reserved for the administrative area staff.   
 
-Nel tabulatore sono contenute annotazioni generali al documento e specifiche per area. Le informazioni presenti sono:   
-> **Note commerciali**: annotazioni libere sull'argomento riservate al personale dell'area commerciale.   
-> **Note tecniche**: annotazioni libere sull'argomento riservate al personale dell'area tecnica.   
-> **Note amministrative**: annotazioni libere sull'argomento riservate al personale dell'area amministrativa.   
+### Extra Data 
 
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) related to the *Non-Compliance*.
 
-### Extra data
+### Other Costs 
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) generali per la *Non conformità*.   
-
-
-### Altri costi
-
-Nel tabulatore è possibile inserire altri costi aggiuntivi a quelli derivanti dal Costo degli articoli contestati e da quello di Gestione del documento.   
-> **Costi diretti**   
-> Un elenco di costi attribuibili in modo diretto al costo degli articoli contestati, al servizio dato e al costo delle lavorazioni sostenute per la gestione della *Non conformità*. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Costo diretto (Direct cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Applicazione su ...**: informazione di sola lettura che riporta su quale componente di costo viene applicato il *Valore* (se espresso in percentuale); le possibili attribuzioni sono su:   
->>> *Costo materiali*: somma della sola componente dei costi articolo degli *Oggetti difettosi* e dei *Materiali utilizzati*;   
->>> *Costo macchina*, *Costo manodopera* e *Costo lavorazioni*: somma della sola componente dei costi di lavorazione degli *Oggetti difettosi*;   
->>> *Costo industriale*: somma del *Totale materiale rilavorato* e *Totale materiale non rilavorato*.   
+In the tab, it is possible to enter additional costs beyond those resulting from the Cost of contested items and from Document Management.   
+> **Direct Costs**   
+> A list of costs directly attributable to the cost of contested items, the service provided, and the costs of the work needed to manage the *Non-Compliance*. This list includes the information of:   
+>> **Cost Element** and **Cost Element Description**: only *Cost elements* of *Cost type = Direct cost* can be selected.   
+>> **Cost Type**: read-only information that reports the *Cost type* associated with the selected *Cost element*.   
+>> **Application on ...**: read-only information that indicates on what cost component the *Value* is applied (if expressed as a percentage); the possible attributions are to:   
+>>> *Material Cost*: the sum of the single component of the article costs of *Defective Objects* and *Materials Used*;   
+>>> *Machine Cost*, *Labor Cost*, and *Working Cost*: the sum of the single component of the Working costs of *Defective Objects*;   
+>>> *Industrial Cost*: the sum of the *Total Reworked Material* and *Total Non-Reworked Material*.   
 >>>   
->> **Percentuale / Valore**: informazione di sola lettura che riporta le modalità di calcolo da applicare sul *Valore* (*Percentuale* o *Valore fisso*).   
->> **Valore**: è la *Percentuale* che verrà applicata, o il *Valore* che verrà aggiunto, alla componente di costo specificata in *Applicazione su ...* .   
->> **Nota**: annotazioni libere.   
+>> **Percentage / Value**: read-only information that indicates the calculation methods to be applied to the *Value* (*Percentage* or *Fixed Value*).   
+>> **Value**: it is the *Percentage* that will be applied, or the *Value* that will be added, to the specified cost component in *Application on ...*.   
+>> **Note**: free annotations.   
 >>   
-> **Costi generali**   
-> Un elenco di costi generali, non direttamente imputabili alla *Non conformità* e che supportano l'intero processo aziendale. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Costo generale (General cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Percentuale / Valore**: informazione di sola lettura che riporta le modalità di calcolo da applicare sul *Valore* (*Percentuale* o *Valore fisso*).   
->> **Valore**: è la *Percentuale* che verrà applicata, o il *Valore* che verrà aggiunto, alla somma del *Totale materiale rilavorato* e *Totale materiale non rilavorato*.   
->> **Nota**: annotazioni libere.   
+> **General Costs**   
+> A list of general costs not directly attributable to the *Non-Compliance* and that support the entire business process. This list includes the information of:   
+>> **Cost Element** and **Cost Element Description**: only *Cost elements* of *Cost type = General cost* can be selected.   
+>> **Cost Type**: read-only information that reports the *Cost type* associated with the selected *Cost element*.   
+>> **Percentage / Value**: read-only information that indicates the calculation methods to be applied to the *Value* (*Percentage* or *Fixed Value*).   
+>> **Value**: it is the *Percentage* that will be applied, or the *Value* that will be added, to the sum of the *Total Reworked Material* and *Total Non-Reworked Material*.   
+>> **Note**: free annotations.   
 >>   
-> **Altri costi**   
-> Un elenco di altri costi. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Altro costo (Other cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Unità di misura**: è l'*Unità di misura* con la quale si desidera esprimere l'informazione della *Quantità*.   
->> **Quantità**: è la *Quantità* della *Voce di costo*.   
->> **Costo unitario**: è il *Costo unitario* della *Voce di costo*.   
->> **Costo totale**: informazione di sola lettura che riporta il prodotto tra *Quantità* e *Costo unitario*.   
->> **Nota**: annotazioni libere.   
+> **Other Costs**   
+> A list of other costs. This list includes the information of:   
+>> **Cost Element** and **Cost Element Description**: only *Cost elements* of *Cost type = Other cost* can be selected.   
+>> **Cost Type**: read-only information that reports the *Cost type* associated with the selected *Cost element*.   
+>> **Unit of Measure**: it is the *Unit of Measure* with which the information of the *Quantity* is to be expressed.   
+>> **Quantity**: it is the *Quantity* of the *Cost element*.   
+>> **Cost per unit**: it is the *Cost per unit* of the *Cost element*.   
+>> **Total Cost**: read-only information that reports the product of *Quantity* and *Cost per unit*.   
+>> **Note**: free annotations.   
+
+### Values 
+
+In the tab, it is possible to enter information related to debit and credit documents of the *Non-Compliance*, the incurred costs, those to be charged, and the costs recognized by the *Supplier/Customer*. The information present includes:   
+> **Currency**, **Direct**, and **Value Date**: it is the *Currency* of the *Supplier* or *Customer* with which all values of the document are specified, the corresponding exchange rate to the *Company Currency*, and the *Value Date*.   
+> **Valorized** and **Debit Document Reference**: read-only information that indicates if the *Non-Compliance* has been valued and the reference to the generated *Debit Note*.   
+> **Credit Document Reference**: it is the reference to the *Credit Note* received from the *Supplier* or *Customer*.   
+> **Credit Document Notes**: free annotations on the subject.   
+>   
+> **Total Non-Reworked Material**: read-only information if, in the *Complaints and Non-Compliance Parameters*, for the year of the document date, in the *Non-Compliance* section, the *Automatic Total Recalculation* has been requested; it proposes the sum of the single component of the article costs of *Non-Reworked Defective Objects* and of the *Materials Used*.   
+>   
+> **Total Reworked Material**: read-only information if, in the *Complaints and Non-Compliance Parameters*, for the year of the document date, in the *Non-Compliance* section, the *Automatic Total Recalculation* has been requested; it proposes the sum of the single component of the Working costs of the *Reworked Defective Objects*.   
+>   
+> **Total Direct Costs**: read-only information, it is the sum of the application of the *Values* from the list of *Direct Costs* present in the *Other Costs* tab.   
+>   
+> **Total General Costs**: read-only information, it is the sum of the application of the *Values* from the list of *General Costs* present in the *Other Costs* tab.   
+>   
+> **Total Other Costs**: read-only information, it is the sum of the application of the *Values* from the list of *Other Costs* present in the *Other Costs* tab.   
+>   
+> **Management Cost**: it is the *Management Cost* taken from the *Management Cost* present in the *Complaints and Non-Compliance Parameters*, for the year of the document date, in the *Non-Compliance* section; the value can be changed.   
+>   
+> **Total Non-Compliance (Totale non conformità)**: read-only information if, in the *Complaints and Non-Compliance Parameters*, for the year of the document date, in the *Non-Compliance* section, the *Automatic Total Recalculation* has been requested; in this case, the total is recalculated as the sum of: *Total Non-Reworked Material*, *Total Reworked Material*, *Total Direct Costs*, *Total General Costs*, *Total Other Costs*, and *Management Cost*; if the *Automatic Total Recalculation* has not been requested, the value must be manually entered.   
+>   
+> **Value to be charged**: it is the *Value to be charged* to the *Customer* or *Supplier*; if in the *Complaints and Non-Compliance Parameters*, for the year of the document date, in the *Non-Compliance* section, the *Automatic Total Recalculation* has been requested, the value is suggested to be equal to the *Total Non-Compliance* and can then be modified.    
+>   
+> **Recognized Value**: it is the value recognized by the *Customer* or *Supplier*; the value can be entered manually.  
 
 
-### Valori
+## Defect Management 
 
-Nel tabulatore è possibile inserire informazioni relative a documenti di addebito e accredito della *Non conformità*, i costi sostenuti, quelli da addebitare e i costi riconosciuti dal *Fornitore/Cliente*. Le informazioni presenti sono:   
-> **Divisa**, **Diretto** e **Data valuta**: è la *Divisa* del *Fornitore* o del *Cliente* con la quale vengono specificati tutti i valori del documento, il relativo coefficiente di cambio alla *Divisa* della *Società* e la *Data valuta*.   
-> **Valorizzata** e **Riferimento documento di debito**: informazioni di sola lettura che riportano se la *Non conformità* è stata valorizzata e il riferimento alla *Nota di debito* generata.   
-> **Riferimento documento accredito**: è il riferimento alla *Nota di accredito* ricevuta dal *Fornitore* o del *Cliente*.   
-> **Note documento di accredito**: annotazioni libere sull'argomento.   
->   
-> **Totale materiale non rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi articolo degli *Oggetti difettosi* non rilavorati e dei *Materiali utilizzati*.   
->   
-> **Totale materiale rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi lavorazione degli *Oggetti difettosi* rilavorati.   
->   
-> **Totale costi diretti**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco dei *Costi diretti* presenti nel tabulatore *Altri costi*.   
->   
-> **Totale costi generali**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco dei *Costi generali* presenti nel tabulatore *Altri costi*.   
->   
-> **Totale altri costi**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco degli *Altri costi* presenti nel tabulatore *Altri costi*.   
->   
-> **Costo di gestione**: è il *Costo di gestione* ripreso dal *Costo di gestione* presente nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità*; il valore può essere variato.   
->   
-> **Totale non conformità**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; in questo caso il totale viene ricalcolato come somma di: *Totale materiale non rilavorato*, *Totale materiale rilavorato*, *Totale costi diretti*, *Totale costi generali*, *Totale altri costi* e *Costo di gestione*; se non è stato richiesto il *Ricalcolo automatico totali* il valore deve essere inserito manualmente.   
->   
-> **Valore da addebitare**: è il *Valore da addebitare* al *Cliente* o *Fornitore*; se nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali* il valore viene proposto pari al *Totale non conformità* e successivamente può essere modificato.    
->   
-> **Valore riconosciuto**: è il valore che ci viene riconosciuto dal *Cliente* o *Fornitore*; il valore può essere inserito manualmente.   
-
-
-## Gestione difetti
-
-E' l'elenco delle difettosità riscontrate da notificare al destinatario del documento e si compone delle seguenti informazioni:   
-> **Sequenza**: è la *Sequenza* di visualizzazione delle difettosità; viene proposto un progressivo con la possibilità di essere variato.   
+This is the list of defects to be notified to the recipient of the document and consists of the following information:   
+> **Sequence**: it is the *Sequence* for displaying defects; a progressive number is proposed with the possibility of being changed.   
 >  
-> **Difetto riscontrato**
->> **Codice**: è il codice del *Difetto riscontrato*; è possibile inserire solamente i *Difetti* attivi e previsti dalla tipologia di *Non conformità* del documento.   
->> **Descrizione**: informazione di sola lettura è la descrizione del *Difetto riscontrato*.   
->> **Note**: annotazioni libere sul *Difetto riscontrato*.   
+> **Defect detected**
+>> **Code**: it is the code of the *Defect detected*; only *Active Defects* that are anticipated by the *Non-Compliance* type of the document can be entered.   
+>> **Description**: read-only information is the description of the *Defect detected*.   
+>> **Notes**: free annotations about the *Defect detected*.   
 >  
-> **Causa presunta**
->> **Codice**: è il codice della *Causa presunta* che ha generato la difettosità; è possibile inserire solamente le *Cause*, presunte, attive e previste dalla tipologia di *Non conformità* del documento; la *Causa presunta*, successivamente ad una analisi sugli *Oggetti difettosi*, può venire confermata o meno nella *Causa effettiva*.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Causa presunta*.   
->> **Note**: annotazioni libere sulla *Causa presunta*.   
+> **Alleged cause**
+>> **Code**: it is the code of the *Alleged cause* that generated the defect; only *Active Alleged causes* that are active and anticipated by the *Non-Compliance* type of the document can be entered; the *Alleged cause* may later be confirmed or denied in the *Effective cause* after an analysis of the *Defective Objects*.   
+>> **Description**: read-only information is the description of the *Alleged cause*.   
+>> **Notes**: free annotations about the *Alleged cause*.   
 >  
-> **Fase di rilevamento**
->> **Codice**: è il codice della *Fase di rilevamento* del processo dove si è riscontrata la difettosità; è possibile inserire solamente le *Fasi di rilevamento* attive.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Fase di rilevamento*.   
->> **Note**: annotazioni libere sulla *Fase di rilevamento*.   
+> **Detecting step**
+>> **Code**: it is the code of the *Detecting step* of the process where the defect was found; only *Active Detecting steps* can be entered.   
+>> **Description**: read-only information is the description of the *Detecting step*.   
+>> **Notes**: free annotations about the *Detecting step*.   
 >  
-> **Gravità**
->> **Codice**: è il codice della *Gravità* attribuita alla difettosità; è possibile inserire solamente le *Gravità* attive.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Gravità*. 
+> **Severity**
+>> **Code**: it is the code of the *Severity* attributed to the defect; only *Active severities* can be entered.   
+>> **Description**: read-only information is the description of the *Severity*. 
 >  
-> **Chiusura difetto**   
-> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere la gestione del *Difetto* specifico.   
-> La chiusura di tutti i *Difetti* non comporta automaticamente la chiusura della *Non conformità*.   
->> **Chiuso**: indica che la gestione del *Difetto* specifico è stata completata; deve essere indicato manualmente dall'operatore.   
->> All'atto della chiusura vengono automaticamente proposte: *Data chiusura*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.* (*Nome* e *Persona* sono informazioni presenti nell'expander *Dati chiusura difetto* presente nel tabulatore *Dati difetto*).   
->> **Data chiusura**: è la data in cui la gestione del *Difetto* specifico è stata completata.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Defective closure**   
+> Only the **Responsible person** or the **Responsible function** can close the management of the specific *Defect*.   
+> Closing all *Defects* does not automatically close the *Non-Compliance*.   
+>> **Closed**: indicates that the management of the specific *Defect* has been completed; it must be manually indicated by the operator.   
+>> At the time of closure, the following are automatically proposed: *Closure date*, proposed as today's date and with the possibility of being changed, *Name* and *Person* proposed as *A.R.M. User* linked and *Employee* linked to the *A.R.M. User* (*Name and Person are information present in the expander *Defect closure data* in the *Defect data* tab).   
+>> **Closure date**: it is the date when the management of the specific *Defect* was completed.   
+>> At the time of entering the date, the *Closed* flag is automatically set.   
 >  
-> **Riferimento azione correttiva**   
->> **Tipo**, **Anno**, e **Numero**: sono i riferimenti, in sola lettura, all'*Azione correttiva* associata alla riga *Difetto* e generata tramite il pulsante **Crea azione correttiva**.    
+> **Reference corrective action**   
+>> **Type**, **Year**, and **Number**: are the read-only references to the *Corrective action* associated with the specific *Defect* line and generated through the **Create corrective action** button.    
 >   
-> **Note**: annotazioni libere sulla riga del *Difetto* specifico*.   
+> **Notes**: free annotations about the specific *Defect* line.   
+
+### Defect Data 
+
+These are additional information for the selected *Defect* line. The managed information includes:   
+> **Effective cause**: it is the effective cause that generated the defect; only *Effective causes* that are active and anticipated by the document's *Non-Compliance* type can be entered.   
+> **Effective cause notes**: free annotations about the *Effective cause*.   
+> **Proposed solution**: it is the suggested technical/commercial/administrative solution to adopt; only *Active solutions* can be entered.   
+> **Proposed solution notes**: free annotations about the *Proposed solution*.   
+> **Decision taken**: it is the technical/commercial/administrative decision taken to resolve the defect; only *Active decisions* can be entered.   
+> **Decision taken notes**: free annotations about the *Decision taken*.   
+> **Supplier/Internal response**: free annotations on the subject. Usually used to record any response given by the recipient of the *Non-Compliance* related to the *Defect*.   
+> **Defect closure data**: expander where you can enter the closure information of the *Defect*:   
+> **Name**: it is the *A.R.M. User* who closed the *Defect*. This information is read-only.   
+> **Person**: it is the *Employee* who closed the *Defect*. This information is read-only.   
+> **Function**: it is the *Business function* that closed the *Defect*.  
 
 
-### Dati difetto
+### Claimed Objects 
 
-Sono le informazioni aggiuntive alla riga *Difetto* selezionato. Le informazioni gestite sono:   
-> **Causa effettiva**: è la causa effettiva che ha generato la difettosità; è possibile inserire solamente le *Cause*, effettive, attive e previste dalla tipologia di *Non conformità* del documento.   
-> **Note causa effettiva**: annotazioni libere sulla *Causa effettiva*.   
-> **Soluzione proposta**: è il suggerimento di soluzione tecnica/commerciale/amministrativa da adottare; è possibile inserire solamente le *Soluzioni* attive.   
-> **Note soluzione proposta**: annotazioni libere sulla *Soluzione proposta*.   
-> **Decisione intrapresa**: è la decisione tecnica/commerciale/amministrativa effettuata per la risoluzione del difetto; è possibile inserire solamente le *Decisioni* attive.   
-> **Note decisione intrapresa**: annotazioni libere sulla *Decisione intrapresa*.   
-> **Risposta Fornitore/Interna**: annotazioni libere sull'argomento. Solitamente utilizzato per registrare un'eventuale risposta data dal destinatario della *Non conformità* relativa al *Difetto*.   
-> **Dati chiusura difetto**: expander dove è possibile inserire le informazioni di chiusura del *Difetto*:   
-> **Nome**: è l'*Utente A.R.M.* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
-> **Persona**: è il *Dipendente* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
-> **Funzione**: è la *Funzione aziendale* che ha chiuso il *Difetto*.   
-
-
-### Oggetti reclamati   
-
-E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selezionato e si compone delle seguenti informazioni:   
-> **Oggetto**   
->> **Bar code**: può essere utilizzato per aggiungere o sostituire l'Articolo, Lotto, Numero seriale e Unità di carico.   
->> Per tutte le informazioni su come codificare i barcode consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).   
->> **Classe**: è la *Classe articolo* reclamato.   
->> **Codice articolo**: è il codice dell'*Articolo* reclamato.   
->> **Descrizione articolo**: è la descrizione dell'*Articolo* reclamato.   
->> **Variante**: è la codice variante dell'*Articolo* reclamato.   
->> **Lotto**: è il codice del *Lotto* interno dell'*Articolo* reclamato.   
->> **Unità di carico**: è l'*Unità di carico* di origine che conteneva l'Articolo* reclamato.   
->> L'inserimento di una *Unità di carico* comporta l'automatico inserimento di tutte le righe di dettaglio *Articolo* presenti in essa.   
->> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articoli* uguali verranno riportate in un'unica riga con le quantità sommate.   
->> **Numero seriale**:  è il *Numero seriale* dell'*Articolo* reclamato.   
->> **Unità di carico da rendere**: è l'*Unità di carico* che contiene l'Articolo* reclamato da rendere.   
+This is the list of *Claimed Objects* associable with the selected *Defect defected* and consists of the following information:
+> **Object**   
+>> **Bar code**: can be used to add or replace the Item, Batch, Serial number, and Load unit.   
+>> For all information on how to encode barcodes, refer to the page on the [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).   
+>> **Class**: is the *Claimed Item Class*.   
+>> **Item code**: is the code of the *Claimed Item*.   
+>> **Item description**: is the description of the *Claimed Item*.   
+>> **Variant**: is the variant code of the *Claimed Item*.   
+>> **Batch**: is the code of the internal *Batch* of the *Claimed Item*.   
+>> **Load unit**: is the *Load unit* of origin that contained the *Claimed Item*.   
+>> The entry of a *Load unit* automatically includes all the detail lines of the *Item* contained within it.   
+>> If, in the *Complaints and Non-Compliance Parameters*, for the year of the document date, the *Non-Compliance* session has requested *Data grouping U.D.C.*, lines with identical *Items* will be reported in a single line with quantities summed.   
+>> **Serial number**: is the *Serial number* of the *Claimed Item*.   
+>> **Load unit to return**: is the *Load unit* that contains the *Claimed Item* to be returned.   
 >  
-> **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo* reclamato.   
->> **Ricevuta**: è la quantità di *Articolo* ricevuta.   
->> **Contestata**: è la quantità di *Articolo* che si vuole contestare.   
->> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata.   
->> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata.   
->> **Resa**: è la quantità di *Articolo* resa.   
+> **Quantity**   
+>> **Unit of measure**: read-only information is the *Unit of measure* of the *Claimed Item*.   
+>> **Received**: is the quantity of the *Item* received.   
+>> **Contested**: is the quantity of the *Item* that is being contested.   
+>> **Not reworked**: is the quantity of the contested *Item* that has not been reworked.   
+>> **Reworked**: is the quantity of the contested *Item* that has been reworked.   
+>> **Returned**: is the quantity of the *Item* returned.   
 >  
-> **Quantità alternativa**   
->> Le colonne di questo gruppo sono visualizzate solamente se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stata richiesta la *Proposta U.M. alternativa*.   
->> **Unità di misura**: è l'*Unità di misura alternativa* dell'*Articolo* reclamato.   
->> **Unità di misura prezzo**: indica se il *Costo unitario del materiale* è riferito all'*Unità di misura alternativa*.   
->> **Ricevuta**: è la quantità di *Articolo* ricevuta espressa nell'*Unità di misura alternativa*.   
->> **Contestata**: è la quantità di *Articolo* che si vuole contestare espressa nell'*Unità di misura alternativa*.   
->> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata espressa nell'*Unità di misura alternativa*.   
->> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata espressa nell'*Unità di misura alternativa*.   
->> **Resa**: è la quantità di *Articolo* resa espressa nell'*Unità di misura alternativa*.   
+> **Alternative Quantity**   
+>> The columns in this group are displayed only if, in the *Complaints and Non-Compliance Parameters*, for the year of the document date, the *Non-Compliance* session has requested the *Alternative U.M. proposal*.   
+>> **Unit of measure**: is the *Alternative unit of measure* of the *Claimed Item*.   
+>> **Price unit of measure**: indicates whether the *Unit material cost* refers to the *Alternative unit of measure*.   
+>> **Received**: is the quantity of the *Item* received expressed in the *Alternative unit of measure*.   
+>> **Contested**: is the quantity of the *Item* being contested expressed in the *Alternative unit of measure*.   
+>> **Not reworked**: is the quantity of the contested *Item* that has not been reworked expressed in the *Alternative unit of measure*.   
+>> **Reworked**: is the quantity of the contested *Item* that has been reworked expressed in the *Alternative unit of measure*.   
+>> **Returned**: is the quantity of the *Item* returned expressed in the *Alternative unit of measure*.   
 >
-> **Costo unitario**   
->> **Materiale**: è il *Costo unitario* dell'*Articolo*; il valore deve essere inserito manualmente.   
->> **Lavorazione**: è il *Costo unitario* della *Lavorazione*; viene proposto pari alla tariffa associata ai *Centri di costo* associati a *Macchina* e *Gruppo manodopera* del *Centro di lavoro*; il valore può essere variato.   
+> **Cost per unit**   
+>> **Material**: is the *Cost per unit* of the *Item*; the value must be entered manually.   
+>> **Working**: is the *Cost per unit* of the *Working*; it is proposed equal to the rate associated with the *Cost Centers* linked to *Machine* and *Labor group* of the *Work center*; the value can be modified.   
 >  
-> **Ore**   
->> **Lavorate**: sono le ore e i minuti lavorati per la riparazione dell'*Oggetto* non conforme; il valore deve essere inserito manualmente.   
+> **Hours**   
+>> **Worked**: are the hours and minutes worked for the repair of the non-conforming *Object*; the value must be entered manually.  
 
-#### Dati oggetto
+#### Object Data 
 
-Sono le informazioni aggiuntive alla riga dell'*Oggetto reclamato* selezionato. Le informazioni gestite sono:   
-> **Progetto**: è il riferimento al *Progetto* del *Difetto* specifico*.   
-> **Note articolo**: annotazioni libere sull'*Articolo* del *Difetto* specifico*.   
-> **Note lotto**: annotazioni libere sul *Lotto* del *Difetto* specifico*.   
-> **Note unità di carico**: annotazioni libere sulla *Unità di carico* riga del *Difetto* specifico*.   
-> **Note**: annotazioni libere sulla riga del *Difetto* specifico*.   
-> **Centro di lavoro**: è il *Centro di lavoro* con il quale vengono effettuate le lavorazioni di riparazione dell'*Oggetto* non conforme.   
-> La scelta del *Centro di lavoro* proporrà, nel *Costo unitario lavorazione*, la tariffa da applicare al tempo dedicato alla lavorazione.   
-> La tariffa proposta è la somma delle tariffe dei *Centri di costo* associati a *Macchina* e *Gruppo manodopera* del *Centro di lavoro*.   
-> **Totale materiale non rilavorato**: informazione di sola lettura, viene proposto il valore del prodotto tra la *Quantità non rilavorata" e il *Costo unitario materiale* dell'*Oggetto difettoso* selezionato.   
-> **Totale materiale rilavorato**: informazione di sola lettura, viene proposto il valore del prodotto tra la *Quantità rilavorata" e il *Costo unitario lavorazione* sommato al prodotto tra le *Ore lavorate* e la somme delle tariffe associate ai *Centri di costo* associati a *Macchina* e *Gruppo manodopera* del *Centro di lavoro*.   
-> **Totale difetto**: informazione di sola lettura, è la somma di *Totale materiale non rilavorato* e *Totale materiale rilavorato*.   
+These are additional information for the line of the *Claimed Object* selected. The information managed includes:   
+> **Project**: it is the reference to the *Project* of the specific *Defect*.   
+> **Item notes**: free annotations about the *Item* of the specific *Defect*.   
+> **Batch notes**: free annotations about the *Batch* of the specific *Defect*.   
+> **Load unit notes**: free annotations about the *Load unit* line of the specific *Defect*.   
+> **Notes**: free annotations about the line of the specific *Defect*.   
+> **Work center**: it is the *Work center* with which the repair work of the non-compliant *Object* is performed.   
+> The choice of *Work center* will propose, in the *Cost per unit of processing*, the rate to apply to the time dedicated to the processing.   
+> The proposed rate is the sum of the rates of the *Cost Centers* associated with *Machine* and *Labor group* of the *Work center*.   
+> **Total non-reworked material**: read-only information, it proposes the value of the product between the *Non-reworked quantity* and the *Cost per unit of material* of the selected *Defective Object*.   
+> **Total reworked material**: read-only information, it proposes the value of the product between the *Reworked quantity* and the *Cost per unit of processing* plus the product between the *Worked hours* and the sum of the rates associated with the *Cost Centers* related to *Machine* and *Labor group* of the *Work center*.   
+> **Total defect**: read-only information, it is the sum of *Total non-reworked material* and *Total reworked material*.   
 
+#### Extra Data 
 
-#### Extra data   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for the selected *Claimed Object*.   
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Oggetto reclamato* selezionato.   
+#### Attached Documents 
 
+In this list, it is possible to enter and consult any documents attached to the selected *Claimed Object*.   
 
-#### Documenti allegati   
+### Materials Used 
 
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Oggetto reclamato* selezionato.   
-
-
-### Materiali utilizzati   
-
-In questo elenco è possibile indicare i materiali che sono stati utilizzati per porre rimedio al *Difetto* selezionato.   
-L'elenco si compone delle seguenti informazioni:   
+In this list, it is possible to indicate the materials that were used to remedy the selected *Defect*.   
+The list consists of the following information:   
 >   
-> **Articolo**   
->> **Classe**: è la *Classe articolo*.   
->> **Codice**: è il codice dell'*Articolo*.   
->> **Descrizione**: è la descrizione dell'*Articolo*.   
->> **Variante**: è la codice variante dell'*Articolo*.   
->> **Lotto**: è il codice del lotto interno utilizzato.   
->> **Numero seriale**:  è il numero seriale utilizzato.   
+> **Item**   
+>> **Class**: it is the *Item class*.   
+>> **Code**: it is the code of the *Item*.   
+>> **Description**: it is the description of the *Item*.   
+>> **Variant**: it is the variant code of the *Item*.   
+>> **Batch**: it is the code of the internal batch used.   
+>> **Serial number**: it is the serial number used.   
 >   
-> **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo*.   
->> **Quantità consumata**: è la quantità di *Articolo* utilizzata per porre rimedio al *Difetto* selezionato.   
+> **Quantity**   
+>> **Unit of measure**: read-only information, it is the *Unit of measure* of the *Item*.   
+>> **Consumption quantity**: it is the quantity of *Item* used to remedy the selected *Defect*.   
 >   
-> **Valore**   
->> **Costo unitario**: è il costo unitario dell'*Articolo*; il valore deve essere inserito manualmente.   
->> **Costo totale**:  viene proposto come rapporto tra *Quantità consumata* e *Costo unitario*; il costo può essere variato.   
+> **Value**   
+>> **Cost per unit**: it is the Cost per unit of the *Item*; the value must be entered manually.   
+>> **Total cost**: it is proposed as the ratio between *Consumption quantity* and *Cost per unit*; the cost can be changed.   
 >
-> **Note**: annotazioni libere.   
+> **Notes**: free annotations.   
 
+### Subjects involved 
 
-### Soggetti coinvolti   
-
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Difetto" selezionato.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la *Sequenza* di visualizzazione dei "Soggetti coinvolti*; viene proposto un progressivo con la possibilità di essere variato.   
+The tab contains information about the *Business Functions* and/or *Employees* who will take part in managing the selected *Defect*.   
+The list consists of the following information:   
+> **Sequence**: it is the *Sequence* for displaying the "Subjects involved"; a progressive number is proposed with the possibility of being changed.   
 >
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+> **Business function**   
+>> **Code**: it is the code of the involved *Business Function*.   
+>> **Description**: it is the description of the involved *Business Function*.   
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **Employee**   
+>> **Code**: it is the code of the involved *Employee*.   
+>> **Description**: it is the last name and first name of the involved *Employee*.   
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* della *Non conformità* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* della *Non conformità* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Involvement Management**   
+>> **Subject description**: free annotation in case the involved subject is neither a *Business Function* nor an *Employee*.   
+>> **Reason for involvement**: free annotations on the subject.   
+>> **Expiry date**: it is the date by which the involved subject must complete the activities related to the reason for their involvement.   
+>> **Response**: free annotations on the subject.   
+>> **Closed**: indicates that the involvement of the subject has been completed.   
+>> Only the *Responsible Function or Person* of the *Non-compliance* or the involved *Business Function* or *Employee* can close the involvement.   
+>> Upon closure, the *Closure date* is automatically proposed, set to the current date and can be changed.   
+>> **Closure date**: it is the date on which the involvement of the subject has been completed.   
+>> Only the *Responsible Function or Person* of the *Non-compliance* or the involved *Business Function* or *Employee* can enter or change this date.   
+>> Upon entering the date, the *Closed* flag is automatically set.   
 >
-> **Nota**: annotazioni libere.   
+> **Note**: free annotations.   
 
+### Extra Data
 
-### Extra data   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for the selected *Defect*.   
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Difetto* selezionato.   
+### Attached Documents
 
+In this list, it is possible to enter and consult any documents attached to the selected *Defect*.   
 
-### Documenti allegati   
-
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Difetto* selezionato.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+For everything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).
