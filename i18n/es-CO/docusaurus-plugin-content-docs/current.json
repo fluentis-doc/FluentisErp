@@ -1635,211 +1635,211 @@
     "description": "The label for category Helpdesk in sidebar crm"
   },
   "sidebar.purchase.category.Richiesta di offerta": {
-    "message": "Offer Request",
+    "message": "Solicitud de Oferta",
     "description": "The label for category Richiesta di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Richieste di offerta": {
-    "message": "Offer Requests",
+    "message": "Solicitud de Ofertas",
     "description": "The label for category Richieste di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Commesse di acquisto": {
-    "message": "Purchase Job Orders",
+    "message": "Órdenes de Trabajo de Compra",
     "description": "The label for category Commesse di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Gestione prezzi": {
-    "message": "Price Management",
+    "message": "Gestión de Precios",
     "description": "The label for category Gestione prezzi in sidebar purchase"
   },
   "sidebar.purchase.category.Listini fornitori": {
-    "message": "Purchase Price List",
+    "message": "Lista de Precios de Compra",
     "description": "The label for category Listini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Procedure comuni": {
-    "message": "Common Procedure",
+    "message": "Procedimiento Común",
     "description": "The label for category Procedure comuni in sidebar purchase"
   },
   "sidebar.sales.category.DDT di vendita": {
-    "message": "Sales DN",
+    "message": "Remisión de Venta",
     "description": "The label for category DDT di vendita in sidebar sales"
   },
   "sidebar.sales.category.Contabilizzazione": {
-    "message": "Accounting",
+    "message": "Contabilidad",
     "description": "The label for category Contabilizzazione in sidebar sales"
   },
   "sidebar.sales.category.Liquidazione agenti": {
-    "message": "Agent Settlement",
+    "message": "Liquidación de Agentes",
     "description": "The label for category Liquidazione agenti in sidebar sales"
   },
   "sidebar.sales.category.Listini di vendita": {
-    "message": "Sales Price List",
+    "message": "Lista de Precios de Venta",
     "description": "The label for category Listini di vendita in sidebar sales"
   },
   "sidebar.sales.category.Gestione prezzi": {
-    "message": "Price Management",
+    "message": "Gestión de precios",
     "description": "The label for category Gestione prezzi in sidebar sales"
   },
   "sidebar.sales.category.Procedure comuni": {
-    "message": "Common Procedure",
+    "message": "Procedimiento Común",
     "description": "The label for category Procedure comuni in sidebar sales"
   },
   "sidebar.sales.category.Documenti SDI e NSO": {
-    "message": "ES and NSO Documents",
+    "message": "Documentos ES y Documentos NSO",
     "description": "The label for category Documenti SDI e NSO in sidebar sales"
   },
   "sidebar.sales.category.Documenti SDI": {
-    "message": "ES Documents",
+    "message": "Documentos ES",
     "description": "The label for category Documenti SDI in sidebar sales"
   },
   "sidebar.sales.category.Documenti NSO": {
-    "message": "NSO Documents",
+    "message": "Documentos NSO",
     "description": "The label for category Documenti NSO in sidebar sales"
   },
   "sidebar.logistics.category.Stampe gestionali": {
-    "message": "Management Reports",
+    "message": "Informes Gerenciales",
     "description": "The label for category Stampe gestionali in sidebar logistics"
   },
   "sidebar.logistics.category.Inventari fisici": {
-    "message": "Physical Inventory",
+    "message": "Inventario Físico",
     "description": "The label for category Inventari fisici in sidebar logistics"
   },
   "sidebar.logistics.category.Liste di prelievo UDC/Packing list": {
-    "message": "Loading Unit - Packing Lists",
+    "message": "Unidad de Carga Listas de Empaque",
     "description": "The label for category Liste di prelievo UDC/Packing list in sidebar logistics"
   },
   "sidebar.logistics.category.Piani di carico": {
-    "message": "Load Plans",
+    "message": "Planes de Carga",
     "description": "The label for category Piani di carico in sidebar logistics"
   },
   "sidebar.logistics.category.Spedizioni": {
-    "message": "Shipments",
+    "message": "Despachos",
     "description": "The label for category Spedizioni in sidebar logistics"
   },
   "sidebar.logistics.category.Automezzi": {
-    "message": "Motorvehicles",
+    "message": "Vehículos Motorizados",
     "description": "The label for category Automezzi in sidebar logistics"
   },
   "sidebar.logistics.category.Consumo materiali": {
-    "message": "Material Consumption",
+    "message": "Consumo de Materiales",
     "description": "The label for category Consumo materiali in sidebar logistics"
   },
   "sidebar.logistics.category.WMS": {
-    "message": "WMS",
+    "message": "Gestión de Almacenes",
     "description": "The label for category WMS in sidebar logistics"
   },
   "sidebar.logistics.category.Acquisti": {
-    "message": "Purchase",
+    "message": "Compras",
     "description": "The label for category Acquisti in sidebar logistics"
   },
   "sidebar.logistics.category.Logistica": {
-    "message": "Logistics",
+    "message": "Logística",
     "description": "The label for category Logistica in sidebar logistics"
   },
   "sidebar.logistics.category.UDC": {
-    "message": "Loading Unit",
+    "message": "Unidad de Carga",
     "description": "The label for category UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Vendita": {
-    "message": "Sales",
+    "message": "Ventas",
     "description": "The label for category Vendita in sidebar logistics"
   },
   "sidebar.subcontractor.category.DDT di consegna": {
-    "message": "Delivery Note",
+    "message": "Remisión",
     "description": "The label for category DDT di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Inserimento DDT di consegna": {
-    "message": "Insert Delivery Note",
+    "message": "Registrar Remisión",
     "description": "The label for category Inserimento DDT di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Procedure testata": {
-    "message": "Header Procedure",
+    "message": "Procedimiento de Encabezado",
     "description": "The label for category Procedure testata in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimiento",
     "description": "The label for category Procedure in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Ricerca Rientri": {
-    "message": "Search Returns",
+    "message": "Búsqueda de Devoluciones",
     "description": "The label for category Ricerca Rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Inserimento rientri": {
-    "message": "Insert Returns",
+    "message": "Registrar Devoluciones",
     "description": "The label for category Inserimento rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Registrazione rientri": {
-    "message": "Returns Record",
+    "message": "Registro de Devoluciones",
     "description": "The label for category Registrazione rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Listini di conto lavoro": {
-    "message": "Subcontractor Price List",
+    "message": "Lista de Precios de Subcontratistas",
     "description": "The label for category Listini di conto lavoro in sidebar subcontractor"
   },
   "sidebar.configurations.category.Parametri": {
-    "message": "Parameters",
+    "message": "Parámetros",
     "description": "The label for category Parametri in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri generali": {
-    "message": "General Parameters",
+    "message": "Parámetros generales",
     "description": "The label for category Parametri generali in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri Generali": {
-    "message": "General Parameters",
+    "message": "Parámetros generales",
     "description": "The label for category Parametri Generali in sidebar configurations"
   },
   "sidebar.configurations.category.Acquisti": {
-    "message": "Purchase",
+    "message": "Compras",
     "description": "The label for category Acquisti in sidebar configurations"
   },
   "sidebar.configurations.category.Amministrazione": {
-    "message": "Finance",
+    "message": "Finanzas",
     "description": "The label for category Amministrazione in sidebar configurations"
   },
   "sidebar.configurations.category.Dipendenti": {
-    "message": "Employees",
+    "message": "Empleados",
     "description": "The label for category Dipendenti in sidebar configurations"
   },
   "sidebar.configurations.category.Logistica": {
-    "message": "Logistics",
+    "message": "Logistica",
     "description": "The label for category Logistica in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri iniziali magazzino": {
-    "message": "Warehouse Initials Parameters",
+    "message": "Parámetros Iniciales del Almacén",
     "description": "The label for category Parametri iniziali magazzino in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri carico/scarico": {
-    "message": "Load/Unload Parameters",
+    "message": "Parámetros de Carga/Descarga",
     "description": "The label for category Parametri carico/scarico in sidebar configurations"
   },
   "sidebar.configurations.category.Gestione progetti": {
-    "message": "Project Management",
+    "message": "Gestión de Proyectos",
     "description": "The label for category Gestione progetti in sidebar configurations"
   },
   "sidebar.configurations.category.Produzione": {
-    "message": "Production",
+    "message": "Producción",
     "description": "The label for category Produzione in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri ordini di produzione": {
-    "message": "Production Orders Parameters",
+    "message": "Parámetros de Órdenes de Producción",
     "description": "The label for category Parametri ordini di produzione in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri MRP": {
-    "message": "MRP Parameters",
+    "message": "Parámetros de MRP",
     "description": "The label for category Parametri MRP in sidebar configurations"
   },
   "sidebar.configurations.category.Qualità": {
-    "message": "Quality",
+    "message": "Calidad",
     "description": "The label for category Qualità in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri reclami e non conformità": {
-    "message": "Complaints and Non-compliance parameters",
+    "message": "Parámetros de Quejas e Incumplimientos",
     "description": "The label for category Parametri reclami e non conformità in sidebar configurations"
   },
   "sidebar.configurations.category.Tesoreria": {
-    "message": "Treasury",
+    "message": "Tesorería",
     "description": "The label for category Tesoreria in sidebar configurations"
   },
   "sidebar.configurations.category.Vendite": {
-    "message": "Sales",
+    "message": "Ventas",
     "description": "The label for category Vendite in sidebar configurations"
   },
   "sidebar.configurations.category.CRM": {
@@ -1847,63 +1847,63 @@
     "description": "The label for category CRM in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle": {
-    "message": "Tables",
+    "message": "Tablas",
     "description": "The label for category Tabelle in sidebar configurations"
   },
   "sidebar.configurations.category.Causali di contabilità generale": {
-    "message": "General ledger templates",
+    "message": "Plantillas del Libro Mayor",
     "description": "The label for category Causali di contabilità generale in sidebar configurations"
   },
   "sidebar.configurations.category.Tipi solleciti": {
-    "message": "Dunning Letters Types",
+    "message": "Tipos de Cartas de Cobro",
     "description": "The label for category Tipi solleciti in sidebar configurations"
   },
   "sidebar.configurations.category.Controlling": {
-    "message": "Controlling",
+    "message": "Control de Gestión",
     "description": "The label for category Controlling in sidebar configurations"
   },
   "sidebar.configurations.category.Contabilità analitica": {
-    "message": "Analytic Accounting",
+    "message": "Contabilidad Analítica",
     "description": "The label for category Contabilità analitica in sidebar configurations"
   },
   "sidebar.configurations.category.Contabilità gestionale": {
-    "message": "Managerial accounting",
+    "message": "Contabilidad de Gestión",
     "description": "The label for category Contabilità gestionale in sidebar configurations"
   },
   "sidebar.configurations.category.Contabilità industriale": {
-    "message": "Cost Accounting",
+    "message": "Contabilidad de Costos",
     "description": "The label for category Contabilità industriale in sidebar configurations"
   },
   "sidebar.configurations.category.Budgeting": {
-    "message": "Budgeting",
+    "message": "Presupuestación",
     "description": "The label for category Budgeting in sidebar configurations"
   },
   "sidebar.configurations.category.Reporting": {
-    "message": "Reporting",
+    "message": "Informes",
     "description": "The label for category Reporting in sidebar configurations"
   },
   "sidebar.configurations.category.Previsionale": {
-    "message": "Forecast",
+    "message": "Pronóstico",
     "description": "The label for category Previsionale in sidebar configurations"
   },
   "sidebar.configurations.category.Costo prodotto / commessa": {
-    "message": "Product cost/project",
+    "message": "Costo de Producto / Proyecto",
     "description": "The label for category Costo prodotto / commessa in sidebar configurations"
   },
   "sidebar.configurations.category.D.P.I.": {
-    "message": "P.P.E.",
+    "message": "P.P.E. Propiedades, Planta y Equipo",
     "description": "The label for category D.P.I. in sidebar configurations"
   },
   "sidebar.configurations.category.Mansioni": {
-    "message": "Tasks",
+    "message": "Tareas",
     "description": "The label for category Mansioni in sidebar configurations"
   },
   "sidebar.configurations.category.Corsi di formazione": {
-    "message": "Training courses",
+    "message": "Cursos de Capacitación",
     "description": "The label for category Corsi di formazione in sidebar configurations"
   },
   "sidebar.configurations.category.Gestione Progetti": {
-    "message": "Projects Management",
+    "message": "Gestión de Proyectos",
     "description": "The label for category Gestione Progetti in sidebar configurations"
   },
   "sidebar.configurations.category.Generale": {
@@ -1911,99 +1911,99 @@
     "description": "The label for category Generale in sidebar configurations"
   },
   "sidebar.configurations.category.Controlli articolo": {
-    "message": "Item Controls",
+    "message": "Controles de Artículos",
     "description": "The label for category Controlli articolo in sidebar configurations"
   },
   "sidebar.configurations.category.Documenti": {
-    "message": "Documents",
+    "message": "Documentos",
     "description": "The label for category Documenti in sidebar configurations"
   },
   "sidebar.configurations.category.Qualificazione fornitori": {
-    "message": "Vendor Qualification",
+    "message": "Calificación de Proveedores",
     "description": "The label for category Qualificazione fornitori in sidebar configurations"
   },
   "sidebar.configurations.category.Reclami e Non conformità": {
-    "message": "Complaints and Non-compliance",
+    "message": "Reclamaciones e Incumplimientos",
     "description": "The label for category Reclami e Non conformità in sidebar configurations"
   },
   "sidebar.configurations.category.Azioni correttive": {
-    "message": "Corrective Actions",
+    "message": "Acciones Correctivas",
     "description": "The label for category Azioni correttive in sidebar configurations"
   },
   "sidebar.configurations.category.Taratura strumenti": {
-    "message": "Calibration Tools",
+    "message": "Herramientas de Calibración",
     "description": "The label for category Taratura strumenti in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo cash flow": {
-    "message": "Cash Flow Tables",
+    "message": "Tablas de Flujo de Caja",
     "description": "The label for category Tabelle modulo cash flow in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo Portafoglio effetti": {
-    "message": "Bills portfolio Tabels",
+    "message": "Tablas de Cartera de Cobros y Pagos",
     "description": "The label for category Tabelle modulo Portafoglio effetti in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo DocFinance": {
-    "message": "DocFinance Tabels",
+    "message": "Tablas de DocFinance",
     "description": "The label for category Tabelle modulo DocFinance in sidebar configurations"
   },
   "sidebar.configurations.category.Impostazioni generali": {
-    "message": "General Settings",
+    "message": "Configuración General",
     "description": "The label for category Impostazioni generali in sidebar configurations"
   },
   "sidebar.configurations.category.Contatti": {
-    "message": "Contacts",
+    "message": "Contactos",
     "description": "The label for category Contatti in sidebar configurations"
   },
   "sidebar.configurations.category.Opportunità": {
-    "message": "Opportunities",
+    "message": "Oportunidades",
     "description": "The label for category Opportunità in sidebar configurations"
   },
   "sidebar.configurations.category.Previsioni di vendita": {
-    "message": "Sales Forecast",
+    "message": "Pronóstico de ventas",
     "description": "The label for category Previsioni di vendita in sidebar configurations"
   },
   "sidebar.configurations.category.Ticket": {
-    "message": "Ticket",
+    "message": "Caso",
     "description": "The label for category Ticket in sidebar configurations"
   },
   "sidebar.configurations.category.CPQ": {
-    "message": "CPQ",
+    "message": "Configurar, Valorar y Cotizar",
     "description": "The label for category CPQ in sidebar configurations"
   },
   "sidebar.configurations.category.Utilità": {
-    "message": "Utilities",
+    "message": "Utilidades",
     "description": "The label for category Utilità in sidebar configurations"
   },
   "sidebar.configurations.category.ExtraData": {
-    "message": "ExtraData",
+    "message": "Datos Adicionales",
     "description": "The label for category ExtraData in sidebar configurations"
   },
   "sidebar.configurations.category.Template": {
-    "message": "Template",
+    "message": "Plantilla",
     "description": "The label for category Template in sidebar configurations"
   },
   "sidebar.projectManagement.category.Progetti": {
-    "message": "Projects",
+    "message": "Proyectos",
     "description": "The label for category Progetti in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Nuovo Progetto": {
-    "message": "New Project",
+    "message": "Nuevo Proyecto",
     "description": "The label for category Nuovo Progetto in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Gestione Risorse": {
-    "message": "Resources Management",
+    "message": "Gestión de Recursos",
     "description": "The label for category Gestione Risorse in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Gestione Calendari": {
-    "message": "Calendars Management",
+    "message": "Gestión de Calendarios",
     "description": "The label for category Gestione Calendari in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Richieste di Intervento": {
-    "message": "Intervention Requests",
+    "message": "Solicitudes de Intervención",
     "description": "The label for category Richieste di Intervento in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Interventi Pianificati": {
-    "message": "Planned Intervention",
+    "message": "Solicitudes de Intervención",
     "description": "The label for category Interventi Pianificati in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Riepiloghi per cedolini": {
