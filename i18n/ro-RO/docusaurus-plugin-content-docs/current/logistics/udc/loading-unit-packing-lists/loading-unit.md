@@ -83,7 +83,7 @@ Pentru toate informațiile despre cum să codificați codurile de bare care treb
 ## Confirmare transfer UdI (versiune WMS)
 
 :::important Utilizare
-Această procedură este utilizată pentru a căuta și a confirma o [Listă de Transfer UdI](/docs/logistics/UdI/loading-unit-packing-lists/transfer-unit) existentă pentru a efectua mișcarea de gestiune.
+Această procedură este utilizată pentru a căuta și a confirma o [Listă de Transfer UdI](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) existentă pentru a efectua mișcarea de gestiune.
 :::
 
 Puteți să căutați lista dorită după: dată, număr și gestiune și puteți să o confirmați direct cu butonul **Confirmă** fără a fi necesar să o deschideți.  
