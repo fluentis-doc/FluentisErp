@@ -2063,59 +2063,59 @@
     "description": "The label for category Tabelle e Parametri specifici della contabilità analitica e gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri all'interno delle altre Aree": {
-    "message": "Tables and Parameters Across Other Areas",
+    "message": "Tablas y parámetros en otras áreas",
     "description": "The label for category Tabelle e Parametri all'interno delle altre Aree in sidebar controlling"
   },
   "sidebar.controlling.category.Gestione del controlling nelle varie aree": {
-    "message": "Controlling Management in Various Areas",
+    "message": "Gestión del control de gestión en diversas áreas",
     "description": "The label for category Gestione del controlling nelle varie aree in sidebar controlling"
   },
   "sidebar.controlling.category.Procedure": {
-    "message": "Procedures",
+    "message": "Procedimientos",
     "description": "The label for category Procedure in sidebar controlling"
   },
   "sidebar.controlling.category.Contabilità gestionale": {
-    "message": "Managerial Accounting",
+    "message": "Contabilidad de gestión",
     "description": "The label for category Contabilità gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Prima nota": {
-    "message": "Journal Entry",
+    "message": "Asiento contable",
     "description": "The label for category Prima nota in sidebar controlling"
   },
   "sidebar.controlling.category.Storico gestionale": {
-    "message": "History Management",
+    "message": "Gestión del historial",
     "description": "The label for category Storico gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Visualizzazione": {
-    "message": "View",
+    "message": "Vista",
     "description": "The label for category Visualizzazione in sidebar controlling"
   },
   "sidebar.controlling.category.Storico di progetto": {
-    "message": "Project History",
+    "message": "Historial del proyecto",
     "description": "The label for category Storico di progetto in sidebar controlling"
   },
   "sidebar.controlling.category.Calcolo costo": {
-    "message": "Cost Calculation",
+    "message": "Cálculo de costos",
     "description": "The label for category Calcolo costo in sidebar controlling"
   },
   "sidebar.guide.category.Introduzione": {
-    "message": "Introduction",
+    "message": "Introducción",
     "description": "The label for category Introduzione in sidebar guide"
   },
   "sidebar.guide.category.Avviamento Fluentis ERP": {
-    "message": "Start Fluentis ERP",
+    "message": "Iniciar Fluentis ERP",
     "description": "The label for category Avviamento Fluentis ERP in sidebar guide"
   },
   "sidebar.guide.category.Common Fields, Functions, and Buttons (Campi, funzionalità e pulsanti comuni)": {
-    "message": "Common Fields, Functions, and Buttons",
+    "message": "Campos comunes, funciones y botones",
     "description": "The label for category Common Fields, Functions, and Buttonsin sidebar guide"
   },
   "sidebar.guide.category.Campi comuni": {
-    "message": "Common Fields",
+    "message": "Campos comunes",
     "description": "The label for category Campi comuni in sidebar guide"
   },
   "sidebar.guide.category.Funzionalità comuni": {
-    "message": "Common Features",
+    "message": "Funcionalidades comunes",
     "description": "The label for category Funzionalità comuni in sidebar guide"
   },
   "sidebar.applications.category.BizLink": {
@@ -2127,123 +2127,123 @@
     "description": "The label for category Supervisor in sidebar applications"
   },
   "sidebar.applications.category.Funzionalità": {
-    "message": "Features",
+    "message": "Funcionalidades",
     "description": "The label for category Funzionalità in sidebar applications"
   },
   "sidebar.applications.category.Attività": {
-    "message": "Activity",
+    "message": "Actividad",
     "description": "The label for category Attività in sidebar applications"
   },
   "sidebar.applications.category.Task": {
-    "message": "Task",
+    "message": "Tarea",
     "description": "The label for category Task in sidebar applications"
   },
   "sidebar.applications.category.Eventi": {
-    "message": "Events",
+    "message": "Eventos",
     "description": "The label for category Eventi in sidebar applications"
   },
   "sidebar.applications.category.Liste di Distribuzione": {
-    "message": "Distribution Lists",
+    "message": "Listas de distribución",
     "description": "The label for category Liste di Distribuzione in sidebar applications"
   },
   "sidebar.knowlegdeBase.category.Amministrativa": {
-    "message": "Finance",
+    "message": "Finanzas",
     "description": "The label for category Amministrativa in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Home": {
-    "message": "Home",
+    "message": "Inicio",
     "description": "The label for category Home in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Acquisti": {
-    "message": "Purchase",
+    "message": "Compras",
     "description": "The label for category Acquisti in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Vendite": {
-    "message": "Sales",
+    "message": "Ventas",
     "description": "The label for category Vendite in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Logistica": {
-    "message": "Logistics",
+    "message": "Logística",
     "description": "The label for category Logistica in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Produzione": {
-    "message": "Production",
+    "message": "Producción",
     "description": "The label for category Produzione in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Qualità": {
-    "message": "Quality",
+    "message": "Calidad",
     "description": "The label for category Qualità in sidebar knowlegdeBase"
   },
   "sidebar.video.category.Amministrativa": {
-    "message": "Finance",
+    "message": "Finanzas",
     "description": "The label for category Amministrativa in sidebar video"
   },
   "sidebar.video.category.Home": {
-    "message": "Home",
+    "message": "Inicio",
     "description": "The label for category Home in sidebar video"
   },
   "sidebar.video.category.Tesoreria": {
-    "message": "Treasury",
+    "message": "Tesorería",
     "description": "The label for category Tesoreria in sidebar video"
   },
   "sidebar.video.category.Acquisti": {
-    "message": "Purchases",
+    "message": "Compras",
     "description": "The label for category Acquisti in sidebar video"
   },
   "sidebar.video.category.Vendite": {
-    "message": "Sales",
+    "message": "Ventas",
     "description": "The label for category Vendite in sidebar video"
   },
   "sidebar.video.category.Logistica": {
-    "message": "Logistics",
+    "message": "Logística",
     "description": "The label for category Logistica in sidebar video"
   },
   "sidebar.video.category.Produzione": {
-    "message": "Production",
+    "message": "Producción",
     "description": "The label for category Produzione in sidebar video"
   },
   "sidebar.video.category.Qualità": {
-    "message": "Quality",
+    "message": "Calidad",
     "description": "The label for category Qualità in sidebar video"
   },
   "sidebar.releaseNotes.category.Versione 545": {
-    "message": "Version 545",
+    "message": "Versión 545",
     "description": "The label for category Versione 545 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 605": {
-    "message": "Version 605",
+    "message": "Versión 605",
     "description": "The label for category Versione 605 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 606": {
-    "message": "Version 606",
+    "message": "Versión 606",
     "description": "The label for category Versione 606 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 607": {
-    "message": "Version 607",
+    "message": "Versión 607",
     "description": "The label for category Versione 607 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 608": {
-    "message": "Version 608",
+    "message": "Versión 608",
     "description": "The label for category Versione 608 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 704": {
-    "message": "Version 704",
+    "message": "Versión 704",
     "description": "The label for category Versione 704 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 705": {
-    "message": "Version 705",
+    "message": "Versión 705",
     "description": "The label for category Versione 705 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 706": {
-    "message": "Version 706",
+    "message": "Versión 706",
     "description": "The label for category Versione 706 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 707": {
-    "message": "Version 707",
+    "message": "Versión 707",
     "description": "The label for category Versione 707 in sidebar releaseNotes"
   },
   "sidebar.guide.category.Common Fields, Functions, and Buttons": {
-    "message": "Common Fields, Functions, and Buttons",
+    "message": "Campos comunes, funciones y botones",
     "description": "The label for category Common Fields, Functions, and Buttons in sidebar guide"
   }
 }
