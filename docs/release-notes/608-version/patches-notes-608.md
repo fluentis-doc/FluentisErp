@@ -3,6 +3,27 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0074 - 13/06/2025
+
+> - PM - Interventi - servizi, cambiato parametro nell’algoritmo dell’assegnazione prezzo. Ora è sempre abilitata la ricerca in tutti i listini predefiniti. (#TT01320/25) 
+> - SD - La riga spesa Conai, al salvataggio del documento, prende la stessa IVA della riga articolo che l’ha generata (#TT02599/24) 
+> - CO - nelle scritture di integrazione, esclusione righe con giorni totali 0 (#TT02417/25) 
+> - SCM - Nella maschera di Dettaglio righe ordini fornitori è ora possibile applicare un filtro sul campo Descrizione fornitore (#TT02511/25). Modification that can affect the profiles on the purchase order items details 
+> - WM - Implementata la migrazione dei Serial Number dalla versione F2015. (#TT01764/25) 
+> - SD - Ottimizzata la procedura di creazione Fatture da DDT di Vendita (#TT02317/25, #TT00435/25) 
+> - SD - Rivisto calcolo nella stampa provvigioni maturate per le note di accredito, ora con il criterio del pagamento avvenuto seguono la stessa logica delle fatture. (#TT02360/25) 
+> - SCS - ordine conto lavoro, corretto mancato inserimento unità di misura quando viene inserito un articolo codificato in tab articoli (#TT01773/25) 
+> - SD, SCM - È stato introdotto un controllo in fase di inserimento delle date di competenza nei documenti, che impedisce l’inserimento di una data fine antecedente alla data inizio. Il controllo viene effettuato sulle date inserite nel tab Analitica di tutti i documenti di acquisto e vendita e sulle righe articolo delle Fatture di Vendita. (#TT02421/25) 
+> - PR - Vendor Payment - manage exchange rate differences ( TT02563/25) 
+> - FI - Comunicazione liquidazioni periodiche IVA: rivista la generazione del file nel caso in cui il campo "Impegno alla presentazione telematica" sia impostato su "Nessuno". (Rif. TT02451/25) 
+> - FI, SD - Migrazione ambiente 2015-2023 ( TT02327/25) 
+> - FI - Contabilizzazione pagamenti compensi: risolto problema in fase di contabilizzazione dei pagamenti compensi con ritenuta e previdenza sociale attiva (Rif. TT01857/25). 
+> - PR - generazione file bonifici Sepa, sostituzione automatica caratteri invalidi (#TT02214/25) 
+> - PR - import DocFinance error ( TT02102/25) 
+> - FI - take first not empty description for PostingData.MovementDescription on DocFinance import/management ( TT02172/25) 
+> - PR - l’esportazione del cash flow per DocFinance ora inserisce nel file tutti i cash flow di tutte le società che esportano dati a DocFinance (#TT02723/25) 
+> - MES - Risolto errore che, nel caso di cancellazione di un Ordine di Produzione associato a una riga articolo di un Ordine di Conto Lavoro, comportava l’eliminazione dell’intero Ordine di Conto Lavoro (#TT01078/25). 
+
 ### Patch 608.1-0073 - 09/05/2025 
 
 > - CO - Corretto bug nel calcolo costo che non leggeva correttamente il valore del listino fornitore di conto lavoro (#TT01472/25) 
