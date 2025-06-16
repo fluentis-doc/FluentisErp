@@ -1,29 +1,29 @@
 ---
-title: parametri gestione del personale
+title: Parámetros de Gestión del Personal
 sidebar_position: 1
 ---
 
-Los parámetros se encuentran en la ruta **parametri gestione del personale**.
+Los parámetros se encuentran en la ruta **Parámetros de Gestión del Personal**.
 
 Los datos presentes en esta gestión se utilizan para ofrecer información en las gestiones:  
-> **corsi base** - en los *dati di testata*;  
-> **corsi di formazione** - en los *dati di testata*;  
-> **consegne/resi d.p.i.** - en las impresiones de *Ficha de entrega de E.P.I. (Scheda consegna D.P.I.)* y *Ficha de devolución de E.P.I. (Scheda reso D.P.I.)*.  
+> **Cursos básicos** - en la *información del encabezado*;  
+> **Cursos de capacitación** - en la *información del encabezado*;  
+> **Entregas/devoluciones de E.P.P.** - en las impresiones de *Hoja de entrega de Equipos de Protección Personal* y *Formulario de devolución de Equipos de Protección Personal*.  
 
-**Guardado de los parametri gestione del personale (Salvataggio dei Parametri gestione del personale)**
+**Guardado de los Parámetros de Gestión del Personal**
 
-Para poder guardar la información modificada es necesario presionar el botón **salva**.  
+Para poder guardar la información modificada es necesario presionar el botón **Guardar**.  
 
-#### Campos específicos (Campi specifici)
+#### Campos específicos
 
-> expander **corsi di formazione**  
->> **tipo corso base**: *Tipo de curso básico* a proponer para la inserción de un *corso base*.  
->> **tipo corso di formazione**: *Tipo de curso de formación* a proponer para la inserción de un *corso di formazione*.  
+> expander **Cursos de capacitación**  
+>> **Tipo de curso básico**: *Tipo de curso básico* a proponer para la inserción de un *curso básico*.  
+>> **Tipo de curso de capacitación**: *Tipo de curso de capacitación* a proponer para la inserción de un *curso de capacitación*.  
 
-> expander **gestione d.p.i.**  
->> **nota corpo scheda consegna**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de entrega de E.P.I. (Scheda consegna D.P.I.)*.  
->> **nota piè scheda consegna**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de entrega de E.P.I. (Scheda consegna D.P.I.)*.  
->> **nota corpo scheda reso**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de devolución de E.P.I. (Scheda reso D.P.I.)*.  
->> **nota piè scheda reso**: anotaciones libres sobre el tema, se proponen en la impresión *Ficha de devolución de E.P.I. (Scheda reso D.P.I.)*.  
+> expander **Gestión de E.P.P.**  
+>> **Nota del cuerpo de la hoja de entrega**: anotaciones libres sobre el tema, se proponen en la impresión *Hoja de entrega de Equipos de Protección Personal*.  
+>> **Nota al pie de la hoja de entrega**: anotaciones libres sobre el tema, se proponen en la impresión *Hoja de entrega de Equipos de Protección Personal*.  
+>> **Devolver nota del cuerpo de la hoja**: anotaciones libres sobre el tema, se proponen en la impresión *Formulario de devolución de Equipos de Protección Personal*.  
+>> **Nota de pie de página de la hoja de retorno**: anotaciones libres sobre el tema, se proponen en la impresión *Formulario de devolución de Equipos de Protección Personal*.  
 
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidad, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidad, botones y campos comunes](/docs/guide/common).
