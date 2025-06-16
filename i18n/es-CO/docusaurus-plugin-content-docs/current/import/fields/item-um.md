@@ -1,1 +1,1 @@
-- **unità di misura**: se propone la unidad de medida principal del artículo, pero en caso de que en el registro del artículo estén codificadas unidades de medida alternativas, el usuario tiene la posibilidad de elegir otra.
+- **unidad de medida**: se propone la unidad de medida principal del artículo, pero en caso de que en el registro del artículo estén codificadas unidades de medida alternativas, el usuario tiene la posibilidad de elegir otra.

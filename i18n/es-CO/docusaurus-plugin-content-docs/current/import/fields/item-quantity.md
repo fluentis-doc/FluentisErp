@@ -1,1 +1,1 @@
-- **quantità**: representa la cantidad de la U.M. principal y por defecto tiene el valor 1; puede ser modificada manualmente o puede ser tomada del documento considerado para el cumplimiento.
+- **cantitad**: representa la cantidad de la U.M. principal y por defecto tiene el valor 1; puede ser modificada manualmente o puede ser tomada del documento considerado para el cumplimiento.
