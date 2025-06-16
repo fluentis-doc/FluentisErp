@@ -15,11 +15,10 @@ moguća **Vrijednost u valuti** prema unesenom prilikom registracije (polje je p
 
 Nakon što su podaci popunjeni, moguće je nastaviti s kreiranjem, operacija koja će unijeti detalje u odjeljke bis - ter - quater.
 
-Il corretto inserimento, automatico, nella sezione adeguata del modello dipende dalla gestione, in fase di inserimento della scrittura contabile, del campo **Tipo IVA** nella griglia iva. Se impostato su *Generico* il movimento sarà inserito nella sezione Bis, se impostato su *Servizio*, sarà inserita nella sezione quater. 
-Tale dato, a sua volta, andrà a valorizzare correttamente il campo ***BisTer*** (da intendersi come sezione dle modello) presente nella tab *Intrastat* della registrazione, che è poi il dato di fatto passato in fase di creazione modello.
+Ispravan unos, automatski, u odgovarajući odjeljak obrasca ovisi o upravljanju unosa knjigovodstvenog zapisa, poljem **Tip PDV-a** u PDV prikazu. Ako je postavljen na *Generički* transakcija će biti unesena u odjeljak Bis, ako je postavljen na *Usluga*, , bit će unesena u odjeljak quater.   
+Taj podatak će, zauzvrat, pravilno popuniti polje ***BisTer*** (koje se smatra odjeljkom modela) prisutno u *Intrastat* kartici zapisa, a to je zapravo podatak koji se prenosi u fazi izrade modela.
 
-la sezione Ter viene invece valorizzata, sempre attraverso il tab *Intrastat* della registrazione, quando registrando una nota di accredito, in corrispondenza della griglia iva della registrazione, viene attivato il flag ***Nota di variazione anni precedenti*** (che identifica in ogni caso una variazione non relativa al mese o trimestre di registrazione la quale richiede la compilazione della sezione ter). Accanto a tale flag è possibile inserire la data di riferimento della fattura che viene rettificata.
-
+Odjeljak Ter se popunjava također putem  *Intrastat* kartice, kada se bilježi odobrenje, a u PDV priakzu zapisa aktivira se flag ***Odobrenje za prethodne godine*** (koja u svakom slučaju identificira izmjenu koja se ne odnosi na mjesec ili tromjesečje registracije i koja zahtijeva popunjavanje odjeljka ter). Pored te zastavice moguće je unijeti referentni datum računa koji se ispravlja.
 
 
 

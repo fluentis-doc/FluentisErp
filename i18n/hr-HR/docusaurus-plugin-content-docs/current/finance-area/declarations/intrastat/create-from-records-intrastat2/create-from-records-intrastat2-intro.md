@@ -1,9 +1,9 @@
 ---
-title: Creazione da registrazioni
+title: Kreiranje zapisa 
 sidebar_position: 1
 ---
 
-Vedere pagina corrispondente per ** [Intra 1](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro) **
+Pogledajte odgovarajuću stranicu za  **[Intra 1](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)**
 
 
 
