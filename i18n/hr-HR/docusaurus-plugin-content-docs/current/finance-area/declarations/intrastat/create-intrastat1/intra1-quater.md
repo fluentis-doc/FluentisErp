@@ -3,9 +3,9 @@ title: Intra1 quater
 sidebar_position: 5
 ---
 
-La sezione 'quater' delle dichiarazioni Intrastat contiene i dati di dettaglio del periodo, relativi a cessione di servizi. 
+Odjeljak 'quater' Intrastat prijava sadrži detaljne podatke za razdoblje koji se odnose na isporuku usluga.
 
-La sezione è compilata dalla procedura automaticamente riportando i dati dai** [ tipi fattura](/docs/configurations/tables/sales/invoices-type) ** con natura transazione 'S – servizi' 
+Ovaj se odjeljak automatski popunjava preuzimanjem podataka iz **[Vrsta računa](/docs/configurations/tables/sales/invoices-type)** s vrstom transakcije 'S – usluge' 
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image01.png)
 
@@ -13,24 +13,24 @@ La sezione è compilata dalla procedura automaticamente riportando i dati dai** 
 
  
 
-oppure dalle registrazioni contabili (non generate da acquisti/vendite) sempre con righe di tipo 'IVA Servizio', 
+ili iz knjiženja u glavnoj knjizi (koja nisu nastala iz kupovine/prodaje), također s redovima vrste 'PDV usluga', 
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image03.png)
 
-ma ne è consentita la modifica e l'integrazione manuale.
+ali je dopuštena ručna izmjena i nadopuna.
 
-**NOTA**: la causale contabile relativa alla registrazione contabile deve avere il flag INTRASTAT attivo e la relativa tab Intrastat della registrazione deve essere compilata
+**NAPOMENA**: Predložak knjiženja povezan s knjiženjem mora imati aktiviran INTRASTAT flag, a odgovarajuća Intrastat kartica knjiženja mora biti ispunjena.  
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image04.png)
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
-|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
-|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
-| Cancella | Pulsante per cancellare la riga di dettaglio selezionata. |
+| Spremi | Tipka kojim se sprema prijava. |
+|  [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz područja prodaje. |
+|  [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz knjiženja u računovodstvu. |
+| Izbriši | Tipka za brisanje odabrane stavke (retka) s detaljima. |
 
 
 

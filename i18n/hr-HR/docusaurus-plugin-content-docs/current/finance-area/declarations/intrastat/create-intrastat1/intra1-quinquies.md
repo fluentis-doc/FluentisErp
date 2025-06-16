@@ -3,18 +3,17 @@ title: Intra1 quinquies
 sidebar_position: 6
 ---
 
-La sezione 'quinquies' delle dichiarazioni Intrastat contiene le rettifiche relative a dichiarazioni di periodi precedenti, relativi a cessione di servizi. La sezione è compilata dalla procedura automaticamente riportando i dati dai tipi fattura con natura transazione 'S – servizi' oppure dalle registrazioni contabili (non generate da acquisti/vendite) sempre con righe di tipo 'IVA Servizio', ma ne è consentita la modifica e l'integrazione manuale.
+Odjeljak 'quinquies' Intrastat prijava sadrži ispravke prijava za prethodna razdoblja koje se odnose na isporuku usluga. Ovaj se odjeljak automatski popunjava preuzimanjem podataka iz vrsta računa s vrstom transakcije 'S – usluge' ili iz računovodstvenih knjiženja (koja nisu nastala iz kupnje/prodaje), s redovima vrste 'PDV usluga', ali je dopuštena ručna izmjena i dopuna.  
 
-Vedere sezione  ** [Intra 1 Quater](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quater) **
+Vidi odjeljak: **[Intra 1 Quater](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quater)**
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
-|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
-|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
-| Cancella | Pulsante per cancellare la riga di dettaglio selezionata. |
+| Spremi | Tipka kojom se sprema prijava. |
+|  [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz područja prodaje. |
+|  [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz računovodstvenih knjiženja. |
+| Izbriši | Tipka za brisanje odabrane stavke (retka) s detaljima. |
 
 
 

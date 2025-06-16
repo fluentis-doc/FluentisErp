@@ -3,20 +3,20 @@ title: Intra1 bis
 sidebar_position: 3
 ---
 
-La sezione 'bis' delle dichiarazioni intrastat contiene i dati di dettaglio del periodo, relativo alla cessione di beni. 
+Odjeljak ‘bis’ Intrastat prijava sadrži detaljne podatke za razdoblje, koji se odnose na isporuku dobara.
 
-La sezione è compilata dalla procedura automaticamente, ma ne è consentita la modifica e l'integrazione manuale.
+Ovaj se odjeljak automatski popunjava putem postupka, ali je dopuštena ručna izmjena i dopuna.
 
-Nella ribbon bar è presente il pulsante di raggruppamento delle righe sulla base dei dati della controparte ed a parità di nomenclatura combinata e natura della transazione oltre che Codice e modo trasporto e paese di destinazione e provincia d'origine (questi ultimi generalmente omogenei in relazione alla stessa controparte).
+Na traci izbornika nalazi se tipka za grupiranje redaka na temelju podataka o poslovnom partneru, uz uvjet da su kombinirana nomenklatura, priroda transakcije, kao i šifra i način prijevoza, zemlja odredišta i županija podrijetla jednaki (ovi posljednji podaci obično su jednolični u odnosu na istog partnera).
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
-|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
-|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
-| Cancella | Pulsante per cancellare la riga di dettaglio selezionata. |
+| Spremi | Tipka kojim se sprema prijava. |
+|  [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Tipka koja poziva čarobnjak za preuzimanje podataka iz područja prodaje. |
+|  [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Tipka koja poziva čarobnjak za preuzimanje podataka iz knjiženja u računovodstvu. |
+| Izbriši | Tipka za brisanje odabrane stavke s detaljima. |
 
 
 

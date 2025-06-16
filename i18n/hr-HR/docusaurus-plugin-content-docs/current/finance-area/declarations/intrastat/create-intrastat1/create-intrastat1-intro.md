@@ -1,11 +1,11 @@
 ---
-title: Crea Intrastat1
+title: Kreiranje Intrastat1
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Frontespizio](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1) **
+** [Naslovnica](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1) **
 
 ** [Bis](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-bis) **
 
@@ -17,17 +17,15 @@ LINK:
 
  
 
- 
+Zaglavlje Intrastat obrazaca predviđa navođenje:
 
-La testata dei modelli Intrastat prevede l'indicazione di:
+- periodičnosti izvještaja: mjesečna / tromjesečna
 
-- periodicità della dichiarazione  mensile / trimestrale 
+- referentnog razdoblja (godina i mjesec)  
 
-- periodo di riferimento (anno e mese) 
+- datuma podnošenja i broja Intrastat obrasca   
 
-- data presentazione e il numero dell'Intrastat. 
-
-Il flag di dichiarazione Semplificata disabilita l'indicazione del valore statistico, codice trasporto e modalità trasporto.
+Flag za pojednostavljenu prijavu onemogućuje navođenje statističke vrijednosti, šifre prijevoza i načina prijevoza.  
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/create-intrastat1/image01.png)
 

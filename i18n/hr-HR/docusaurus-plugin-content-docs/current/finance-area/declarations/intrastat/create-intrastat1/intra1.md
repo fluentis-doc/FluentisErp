@@ -3,33 +3,29 @@ title: Intra1
 sidebar_position: 2
 ---
 
-La tab Intra 1 contiene i dati del frontespizio del modello: i dati di base sono compilati secondo quanto inserito nella tabella Società.
+Kartica Intra 1 sadrži podatke s naslovnice obrasca: osnovni podaci popunjavaju se automatski prema informacijama unesenima u tablicu Društvo. 
 
-Restano a gestione manuale i flag di prima presentazione e quello di cessazione dell'attività o variazione partita IVA, così come la sezione del soggetto delegato alla presentazione.
+Ručnom obradom ostaju flag za prvu prijavu i flag za prestanak djelatnosti ili promjenu PDV identifikacijskog broja, kao i odjeljak o ovlaštenoj osobi za podnošenje prijave.  
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image01.png)![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image02.png)
 
- 
 
-Alla base della finestra sono presenti campi di riepilogo delle sezioni bis, ter, quater e quinquies del modello; 
+Na dnu prozora nalaze se polja za sažetak odjeljaka bis, ter, quater i quinquies obrasca.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image03.png)
 
-infine la selezione relativa agli eventuali cambi di periodicità presenti nella dichiarazione in uso.
+Na kraju, tu je i opcija za označavanje eventualnih promjena periodičnosti prisutnih u trenutnoj prijavi.  
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image04.png)
 
 
 
 
-
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
-|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
-|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
+| Spremi | Tipka kojom se sprema prijava. |
+|  [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz područja prodaje. |
+|  [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz računovodstvenih knjiženja. |
 
 
 
