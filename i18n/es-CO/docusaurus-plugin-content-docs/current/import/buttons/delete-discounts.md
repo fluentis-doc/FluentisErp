@@ -1,1 +1,1 @@
-- **cancella sconti**: permite eliminar el descuento seleccionado de la cuadrícula correspondiente.
+- **Eliminar descuentos**: permite eliminar el descuento seleccionado de la cuadrícula correspondiente.

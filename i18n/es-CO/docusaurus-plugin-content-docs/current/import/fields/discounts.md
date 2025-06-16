@@ -1,1 +1,1 @@
-- **sconti**: se proponen todos los descuentos asociados al artículo, cada uno con su propia base de cálculo y asignación.
+- **Descuentos**: se proponen todos los descuentos asociados al artículo, cada uno con su propia base de cálculo y asignación.

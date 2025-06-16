@@ -1,1 +1,1 @@
-- **storno ricevimenti**: permite anular los tipos de documentos que tienen la naturaleza de tipo devolución.
+- **Reversión de recepciones**: permite anular los tipos de documentos que tienen la naturaleza de tipo devolución.

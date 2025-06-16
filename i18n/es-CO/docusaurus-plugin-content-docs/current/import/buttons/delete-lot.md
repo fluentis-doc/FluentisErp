@@ -1,1 +1,1 @@
-- **cancella lotto**: permite cancelar la línea del lote seleccionada.
+- **Eliminar Lote**: permite cancelar la línea del lote seleccionada.

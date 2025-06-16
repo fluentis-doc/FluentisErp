@@ -1,1 +1,2 @@
-- **aggiornamento listini**: permite actualizar el precio de la lista de precios en función del nuevo precio ingresado para el artículo. <br /> Al hacer clic en la flecha desplegable al lado del botón ![](/img/neutral/common/down-arrow.png), será posible crear una nueva lista de precios si aún no se ha creado.
+- **Actualizar listas de precios**: permite actualizar el precio de la lista de precios en función del nuevo precio ingresado para el artículo. <br />   
+Al hacer clic en la flecha desplegable al lado del botón ![](/img/neutral/common/down-arrow.png), será posible crear una nueva lista de precios si aún no se ha creado.
