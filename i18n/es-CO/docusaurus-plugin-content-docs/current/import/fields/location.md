@@ -1,1 +1,1 @@
-- **ubicazione**: se propone solo si para el artículo seleccionado se ha elegido el almacén.
+- **ubicación**: se propone solo si para el artículo seleccionado se ha elegido el almacén.

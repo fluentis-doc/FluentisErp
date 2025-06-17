@@ -1,1 +1,1 @@
-- **progetto**: representa el proyecto asociado al documento. Se puede ingresar también a través de la ayuda correspondiente de proyectos (help progetti).
+- **proyecto**: representa el proyecto asociado al documento. Se puede ingresar también a través de la ayuda correspondiente de proyectos.

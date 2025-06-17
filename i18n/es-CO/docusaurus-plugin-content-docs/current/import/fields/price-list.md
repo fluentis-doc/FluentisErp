@@ -1,1 +1,1 @@
-- **listino**: se propone la lista de precios de la cual se ha tomado el artículo, con la fecha de inicio/final de validez, y con condiciones particulares (por ejemplo, escalón de descuento) asignadas al artículo en la lista de precios.
+- **Lista de precios**: se propone la lista de precios de la cual se ha tomado el artículo, con la fecha de inicio/final de validez, y con condiciones particulares (por ejemplo, escalón de descuento) asignadas al artículo en la lista de precios.

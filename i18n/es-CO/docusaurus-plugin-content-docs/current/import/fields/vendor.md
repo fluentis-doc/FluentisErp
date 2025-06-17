@@ -1,1 +1,1 @@
-- **fornitore**, usando el [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o ingresando [manualmente (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) los datos.
+- **proveedor**, usando el [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o ingresando [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) los datos.

@@ -1,1 +1,1 @@
-- **iva**: es *prioritario* el dato insertado en el campo IVA de la *Registro de contacto (Anagrafica contatto)*. Si este no está presente, se propone el valor presente en el *anagrafica articolo*, pero el usuario tiene la opción de ingresar otro dato. Es un campo obligatorio.
+- **iva**: es *prioritario* el dato insertado en el campo IVA de la *Registro de contacto*. Si este no está presente, se propone el valor presente en el *Registro de artículos*, pero el usuario tiene la opción de ingresar otro dato. Es un campo obligatorio.
