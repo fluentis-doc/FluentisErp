@@ -1,30 +1,30 @@
 ---
-title: parametri importazione paghe
+title: Parámetros de importación de nómina
 sidebar_position: 3
 ---
 
-## Datos de la tabla (Dati tabella)
+## Datos de la tabla 
 
 Los parámetros presentes son necesarios para gestionar la funcionalidad de importación de registros contables relacionados con las nóminas de los empleados a través de archivos .csv (formato Zucchetti) adquiridos a través del servicio Bizlink.
 
-Aquí se configura para cada empresa el **giorno**, la **causale** contable y el **utente** que se utilizará para crear las registraciones.
+Aquí se configura para cada empresa el **día**, la **causal** contable y el **usuario** que se utilizará para crear las registraciones.
 
-**permetti ricerca in tabella**: (siempre se debe establecer) hace que se busquen los mapeos (transcodificaciones) de las cuentas en la tabla de transcodificación correspondiente;  
+**Permitir búsqueda en tabla**: (siempre se debe establecer) hace que se busquen los mapeos (transcodificaciones) de las cuentas en la tabla de transcodificación correspondiente;  
  
-**Agrupar por centro de costos / Agrupar por empleado (Raggruppa per centro di costo / Raggruppa per Dipendente)**: indica a Fluentis qué tipo de archivo esperar (de Zucchetti se puede crear un archivo agrupado por cdc o por empleado, que difieren en número y posición de las columnas a leer).
+**Agrupación por centro de costos / Agrupar por empleado**: indica a Fluentis qué tipo de archivo esperar (de Zucchetti se puede crear un archivo agrupado por cdc o por empleado, que difieren en número y posición de las columnas a leer).
 
 Nota: Los últimos dos campos no están relacionados con esta importación de nómina, sino con la importación para el controlling, que actualmente se realiza mediante la importación de una hoja de Excel y, por lo tanto, en realidad no son utilizados.
 
-## Generalidades de la importación de nómina Bizlink (Generalità Importazione paghe Bizlink)
+## Generalidades de la importación de nómina Bizlink 
 
 La funcionalidad prevé la creación de una carpeta monitoreada por el servicio Bizlink donde depositar los archivos a importar, logrando el procesamiento e importación automática.
 
 A pesar de que es posible crear la carpeta que es monitoreada por el conector Bizlink para la importación directamente en el servidor, por razones de seguridad, se prefiere evitar que los usuarios accedan al servidor y establecer la carpeta de importación en un PC cliente.
 
-## Configuración del servicio Bizlink local y otros parámetros necesarios (Configurazione del servizio Bizlink locale e degli altri parametri necessari)
+## Configuración del servicio Bizlink local y otros parámetros necesarios 
 
 1. Crear un usuario Bizlink en Arm (formulario Usuarios Bizlink) que se utilizará en el PC interesado para la importación.  
-Ejemplo: Nombre: PC-Nómina (PC-Paghe) Contraseña: xxxxx Cuadrícula de Conexiones: Marcar Está activo en la conexión de producción efectivamente utilizada.
+Ejemplo: Nombre: PC-Nómina Contraseña: xxxxx Cuadrícula de Conexiones: Marcar Está activo en la conexión de producción efectivamente utilizada.
 
 2. Instalar Bizlink en el PC manualmente  
    A través del comando ejecutado desde cmd como administrador.  
@@ -45,7 +45,7 @@ El recorrido estándar es este: C:\Program Files (x86)\Fluentis\Fluentis\Bin\Too
 
 ![](/img/it-it/configurations/parameters/finance/payroll5.png)
 
-Los recorridos de los archivos (ejemplo C:\Temp\Bizlink\Incoming; C:\Temp\Bizlink\Processed; C:\Temp\Bizlink\Failed) deben estar presentes en el PC del usuario y el pool Fluentis debe poder leer desde esa carpeta. Si no funciona, intente otorgar permisos de control total a todos (everyone full control).  
+Los recorridos de los archivos (ejemplo C:\Temp\Bizlink\Incoming; C:\Temp\Bizlink\Processed; C:\Temp\Bizlink\Failed) deben estar presentes en el PC del usuario y el pool Fluentis debe poder leer desde esa carpeta. Si no funciona, intente otorgar permisos de control total a todos.  
 Establecer también un identificador que se registre posteriormente en el archivo de configuración de Bizlink.
 
 5. Ajustar el archivo de configuración de Bizlink con usuario, contraseña, servidor e identificador. El archivo se llama **Fluentis.BizLink.Tools.Service.exe.config**.  
@@ -57,7 +57,7 @@ De esta manera, el servicio de Bizlink instalado en el PC trabajará solo con es
 
 6. Iniciar Bizlink.
 
-## Gestión del archivo a importar (Gestione del file da importare)
+## Gestión del archivo a importar 
 
 ![](/img/it-it/configurations/parameters/finance/payroll7.png)
 
