@@ -628,16 +628,16 @@
     "message": "Newsletter"
   },
   "Campagne marketing": {
-    "message": "Campagne marketing"
+    "message": "Marketinške kampanje"
   },
   "Previsioni di vendita": {
-    "message": "Previsioni di vendita"
+    "message": "Prognoze prodaje"
   },
   "Helpdesk": {
     "message": "Helpdesk"
   },
   "Offerte": {
-    "message": "Offerte"
+    "message": "Ponude"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 item|{count} items",
@@ -671,16 +671,23 @@
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
   },
-  "siteConfig.title":{
-     "message":"Fluentis ERP Documentation",
-     "description":"Homepage title"
+  "siteConfig.title": {
+    "message": "Fluentis ERP Documentation"
   },
-  "siteConfig.tagline":{
-     "message":"The complete ERP solution for your business",
-     "description":"Homepage subtitle"
+  "siteConfig.tagline": {
+    "message": "The complete ERP solution for your business"
   },
-  "siteConfig.introductionButton":{
-     "message":"Overview",
-     "description":"Label for the introduction button on the homepage"
+  "siteConfig.introductionButton": {
+    "message": "Overview"
+  },
+  "Budget": {
+    "message": "Budget"
+  },
+  "Spedizioni": {
+    "message": "Spedizioni"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   }
 }

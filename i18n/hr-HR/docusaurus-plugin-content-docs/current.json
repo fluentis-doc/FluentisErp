@@ -2270,5 +2270,61 @@
   "sidebar.releaseNotes.category.Versione 706": {
     "message": "Versione 706",
     "description": "The label for category Versione 706 in sidebar releaseNotes"
+  },
+  "sidebar.planning.category.Gannts e istogrammi F.C.S.": {
+    "message": "Gannts e istogrammi F.C.S.",
+    "description": "The label for category Gannts e istogrammi F.C.S. in sidebar planning"
+  },
+  "sidebar.purchase.category.Richieste di offerta": {
+    "message": "Richieste di offerta",
+    "description": "The label for category Richieste di offerta in sidebar purchase"
+  },
+  "sidebar.purchase.category.Commesse di acquisto": {
+    "message": "Commesse di acquisto",
+    "description": "The label for category Commesse di acquisto in sidebar purchase"
+  },
+  "sidebar.sales.category.Documenti SDI e NSO": {
+    "message": "Documenti SDI e NSO",
+    "description": "The label for category Documenti SDI e NSO in sidebar sales"
+  },
+  "sidebar.sales.category.Documenti SDI": {
+    "message": "Documenti SDI",
+    "description": "The label for category Documenti SDI in sidebar sales"
+  },
+  "sidebar.sales.category.Documenti NSO": {
+    "message": "Documenti NSO",
+    "description": "The label for category Documenti NSO in sidebar sales"
+  },
+  "sidebar.logistics.category.Spedizioni": {
+    "message": "Spedizioni",
+    "description": "The label for category Spedizioni in sidebar logistics"
+  },
+  "sidebar.configurations.category.Tabelle F.C.S.": {
+    "message": "Tabelle F.C.S.",
+    "description": "The label for category Tabelle F.C.S. in sidebar configurations"
+  },
+  "sidebar.guide.category.Polja, funkcionalnosti i uobičajeni gumbi": {
+    "message": "Polja, funkcionalnosti i uobičajeni gumbi",
+    "description": "The label for category Polja, funkcionalnosti i uobičajeni gumbi in sidebar guide"
+  },
+  "sidebar.applications.category.Database": {
+    "message": "Database",
+    "description": "The label for category Database in sidebar applications"
+  },
+  "sidebar.applications.category.docs": {
+    "message": "docs",
+    "description": "The label for category docs in sidebar applications"
+  },
+  "sidebar.applications.category.applications": {
+    "message": "applications",
+    "description": "The label for category applications in sidebar applications"
+  },
+  "sidebar.applications.category.database": {
+    "message": "database",
+    "description": "The label for category database in sidebar applications"
+  },
+  "sidebar.releaseNotes.category.Versione 707": {
+    "message": "Versione 707",
+    "description": "The label for category Versione 707 in sidebar releaseNotes"
   }
 }
