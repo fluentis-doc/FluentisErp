@@ -631,7 +631,7 @@
     "message": "Marketinške kampanje"
   },
   "Previsioni di vendita": {
-    "message": "Prognoze prodaje"
+    "message": "Prodajne prognoze"
   },
   "Helpdesk": {
     "message": "Helpdesk"
@@ -684,7 +684,7 @@
     "message": "Budget"
   },
   "Spedizioni": {
-    "message": "Spedizioni"
+    "message": "Dostave"
   },
   "theme.blog.author.noPosts": {
     "message": "This author has not written any posts yet.",
