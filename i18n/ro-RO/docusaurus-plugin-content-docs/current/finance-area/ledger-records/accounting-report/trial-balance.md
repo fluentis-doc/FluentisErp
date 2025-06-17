@@ -8,5 +8,5 @@ Raportul **Balanţă de verificare** afișează o listă cu conturile analitice,
 Este disponibil și un filtru după cod și flagurile pentru excluderea detaliilor registrelor.
 
 Opțiuni disponibile:
-> **Previzualizare** - Buton pentru previzualizarea raportului.  
+> **Vizualizare** - Buton pentru vizualizarea raportului.  
 > **Listare** - Buton pentru listarea raportului. 

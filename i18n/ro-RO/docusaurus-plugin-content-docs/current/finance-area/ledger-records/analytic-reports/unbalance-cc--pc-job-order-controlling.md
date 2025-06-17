@@ -7,5 +7,5 @@ Cu ajutorului acestui raport sunt extrase înregistrările contabile care nu res
 
 Funcționalități disponibile:
 
-> **Previzualizare** - Buton pentru vizualizarea documentului.  
+> **Vizualizare** - Buton pentru vizualizarea documentului.  
 > **Listare** - Buton pentru listarea documentului.

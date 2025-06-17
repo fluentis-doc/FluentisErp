@@ -7,5 +7,5 @@ Din această fereastră puteți să listați modelele intrastat create pe baza p
 
 Opțiunile sunt:
 
-> **Previzualizare** - Buton pentru previzualizarea raportului.  
+> **Vizualizare** - Buton pentru vizualizarea raportului.  
 >** Listare** - Buton pentru listarea raportului.

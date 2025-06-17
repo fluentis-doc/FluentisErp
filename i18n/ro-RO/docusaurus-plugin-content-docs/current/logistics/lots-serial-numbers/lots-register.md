@@ -173,6 +173,6 @@ Odată ce toate filtrele dorite sunt setate, este suficient să faceți clic pe 
 
 Aceste două opțiuni sunt, în mod implicit, întotdeauna active, dar utilizatorul le poate activa sau dezactiva în funcție de necesități.
 
-După ce a fost selectat lotul dorit, este suficient să faceți clic pe listare sau pe previzualizare pentru a putea vizualiza raportul cu rezultatele căutate.
+După ce a fost selectat lotul dorit, este suficient să faceți clic pe listare sau pe vizualizare pentru a putea vizualiza raportul cu rezultatele căutate.
 
 Pentru detalii privind funcționarea comună a formularelor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).

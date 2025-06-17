@@ -15,4 +15,4 @@ Pe lângă datele de gestiune, codul articolului/variantă, lotul, locația și 
 
 După introducerea filtrului dorit, se pot tipări rapoarte standard sau personalizate (în baza setărilor efectuate). În cazul în care se dorește tipărirea unui raport personalizat, este necesar să fie ales din lista care se află în  *parametrii raport*.
 
-Pentru toate celelalte informații care nu sunt detaliate în acest document referitor la funcționarea comună a rapoartelor, vă rugăm să consultați link-ul: [Previzualizare și imprimare](/docs/guide/common/operations-with-data/reports).
+Pentru toate celelalte informații care nu sunt detaliate în acest document referitor la funcționarea comună a rapoartelor, vă rugăm să consultați link-ul: [Vizualizare și imprimare](/docs/guide/common/operations-with-data/reports).

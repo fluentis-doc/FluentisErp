@@ -11,7 +11,7 @@ RIBBON BAR: reprezintă meniul Form-ului în discuţie. Mai precis, aria în car
 
 | Functie | Functionalitate |
 | --- | --- |
-| Previzualizare | Buton pentru vizualizarea documentului. |
+| Vizualizare | Buton pentru vizualizarea documentului. |
 | Listare | Buton pentru listarea documentului. |
 
 

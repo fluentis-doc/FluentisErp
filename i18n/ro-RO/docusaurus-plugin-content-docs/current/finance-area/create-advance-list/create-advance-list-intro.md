@@ -18,7 +18,7 @@ RIBBON BAR: reprezintă meniul Forum-ului în discuţie, mai precis aria în car
 | Preluare facturi| Apelează procedura pentru achiziția facturilor din aria vânzări. Cu dublu clic pe factura selectată aceasta se va deschide și va putea fi modificată. |
 | Preluare din scadențe | Apelează procedura pentru preluarea fiecărei scadențe a facturilor. |
 | Șterge facturi | Buton pentru ștergerea listei unei facturi selectate anterior . |
-| Previzualizare facturi inserate | Buton pentru previzualizarea listei. |
+| Vizualizare facturi inserate | Buton pentru vizualizarea listei. |
 | Listare facturi | Buton pentru tipărirea listei. |
 
 

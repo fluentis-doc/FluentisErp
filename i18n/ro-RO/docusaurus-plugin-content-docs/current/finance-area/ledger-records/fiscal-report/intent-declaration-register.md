@@ -7,5 +7,5 @@ Procedura permite listarea registrului declarațiilor de intenție, atât cel al
 
 Opțiuni disponibile:
 
-> **Previzualizează**- Buton pentru previzualizarea raportului.  
+> **Previzualizează**- Buton pentru vizualizarea raportului.  
 > **Listează** - Buton pentru listarea raportului.

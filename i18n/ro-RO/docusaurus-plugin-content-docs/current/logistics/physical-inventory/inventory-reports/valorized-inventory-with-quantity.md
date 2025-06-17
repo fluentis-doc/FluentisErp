@@ -75,4 +75,4 @@ Calculul se face astfel:
 Astfel, costul LIFO la 23/05/2024 este:  
 ((60 * 1,5) + (40 * 2,5) +(70 * 3)) /170 = 2,35
 
-Pentru alte detalii privind funcționarea comună a rapoartelor, vă rugăm să consultați următorul link [Previzualizare și tipărire](/docs/guide/common/operations-with-data/reports).
+Pentru alte detalii privind funcționarea comună a rapoartelor, vă rugăm să consultați următorul link [Vizualizare și tipărire](/docs/guide/common/operations-with-data/reports).

@@ -16,7 +16,7 @@ RIBBON BAR: reprezintă meniul Forum-ului în discuţie, mai precis aria în car
 | Functie | Functionalitate |
 | --- | --- |
 | Calculează valori | Execută calculul datelor remuneraţiei (reţineri, TVA, scadenţe). |
-| Previzualizare raport | Execută operaţia de previzualizare a raportului remuneraţiei. |
+| Vizualizare raport | Execută operaţia de vizualizare a raportului remuneraţiei. |
 
 
 

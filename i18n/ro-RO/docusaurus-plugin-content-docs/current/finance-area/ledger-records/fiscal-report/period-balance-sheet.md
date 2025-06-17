@@ -25,5 +25,5 @@ Reamintim că maxima flexibilitate de reclasificare se obține utilizând modulu
 
 Opțiuni disponibile:
 
-> **Previzualizare** - Buton pentru previzualizarea raportului bilanţ exerciţiu.  
+> **Vizualizare** - Buton pentru vizualizarea raportului bilanţ exerciţiu.  
 > **Listare** - Buton pentru listarea raportului bilanţ exerciţiu.

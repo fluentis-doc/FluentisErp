@@ -38,7 +38,7 @@ Aceasta va deschide form-ul pentru expedierea newsletter-ului, care conține inf
 Pentru **Email** sunt prezente următoarele butoane: 
 
 > **Imprimare**: buton pentru imprimarea fizică a newsletter-ului;  
-> **Print preview**: buton pentru a efectua previzualizarea imprimării newsletter-ului;  
+> **Print preview**: buton pentru a efectua vizualizarea imprimării newsletter-ului;  
 > **Salvare**: buton pentru a salva modificările aduse newsletter-ului;  
 > **Trimite**: buton pentru trimiterea newsletter-ului;  
 > **Undo**: buton pentru a șterge ultima modificare a newsletter-ului;  

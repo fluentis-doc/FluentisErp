@@ -13,7 +13,7 @@ RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie 
 
 | Functie | Functionalitate |
 | --- | --- |
-| Previzualizarea | Buton pentru vizualizarea raportului. |
+| Vizualizarea | Buton pentru vizualizarea raportului. |
 | Listare | Buton pentru listare raportului. |
 
 

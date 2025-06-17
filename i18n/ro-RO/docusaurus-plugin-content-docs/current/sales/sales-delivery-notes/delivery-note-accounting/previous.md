@@ -12,7 +12,7 @@ RIBBON BAR: reprezintă meniul cu butoanele de executie, pentru fiecare operatie
 | Functie | Functionalitate |
 | --- | --- |
 | Cautare contabilizari | Permite filtrarea si vizualizarea inregistrarilor contabile. |
-| Previzualizare contabilizare | Vizualizeaza un raport pentru contabilizarea selectata. |
+| Vizualizare contabilizare | Vizualizeaza un raport pentru contabilizarea selectata. |
 | Vizualizeaza inregistrarea | Vizualizeaza inregistrarea contabila selectata. |
 | Restaureaza contabilizarea | Eliminarea contabilizarii asociate mai multor avize. |
 | Restaureaza aviz | Eliminarea contabilizarii asociata avizului selectat. |

@@ -13,5 +13,5 @@ Raportul este realizat setând doar intervalul de date de înregistrare pe fieca
 
 Opțiuni disponibile:
 
-> **Vizualizează** - Buton pentru previzualizarea raportului registru jurnal.  
+> **Vizualizează** - Buton pentru vizualizarea raportului registru jurnal.  
 > **Listează** - Buton pentru listarea raportului registru jurnal.

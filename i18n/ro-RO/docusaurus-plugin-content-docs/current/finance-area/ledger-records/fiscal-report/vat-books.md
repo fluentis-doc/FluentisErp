@@ -15,10 +15,10 @@ Flagul **Vizualizează tip document** va adăuga, în referințele documentelor
 
 Titlul registrului este preluat din numele jurnalului TVA și va fi cel preluat în raport cu opțiunea *Vizualizează antet*.
 
-Cu opțiunea *Definitivă* aplicația va modifica perioada de referință pentru a o face să corespundă cu cea succesivă ultimei perioade listate definitiv: în plus, vor fi dezactivate filtrul după diviziune și numărul de copii de listat. Executarea previzualizării raportului definitiv nu va bloca perioada și nu va actualiza numărătorii: doar listarea efectivă va bloca perioada/registrul în contabilitate și va actualiza numărătorul de pagini al tabelului  registre TVA. În procesul de listare/previzualizare aplicația va verifica dacă sunt goluri în numerotare și dacă ordinea cronologică a fost respectată, și va bloca listarea definitivă în cazul în care, pentru jurnalul TVA, nu a fost dezactivat flagul de control. Listarea definitivă NU este necesară pentru listarea raportului Lichidare TVA periodică.
+Cu opțiunea *Definitivă* aplicația va modifica perioada de referință pentru a o face să corespundă cu cea succesivă ultimei perioade listate definitiv: în plus, vor fi dezactivate filtrul după diviziune și numărul de copii de listat. Executarea previzualizării raportului definitiv nu va bloca perioada și nu va actualiza numărătorii: doar listarea efectivă va bloca perioada/registrul în contabilitate și va actualiza numărătorul de pagini al tabelului  registre TVA. În procesul de listare/vizualizare aplicația va verifica dacă sunt goluri în numerotare și dacă ordinea cronologică a fost respectată, și va bloca listarea definitivă în cazul în care, pentru jurnalul TVA, nu a fost dezactivat flagul de control. Listarea definitivă NU este necesară pentru listarea raportului Lichidare TVA periodică.
 
 Raportul registru rezumat grupează totalurile cotelor pe fiecare registru, cu un rezumat final pentru toate achizițiile și pentru toate vânzările.
 
 Opțiuni disponibile:
-> **Vizualizează** - Buton pentru previzualizarea raportului Registru TVA.  
+> **Vizualizează** - Buton pentru vizualizarea raportului Registru TVA.  
 > **Listează** - Buton pentru listarea raportului Registru TVA.

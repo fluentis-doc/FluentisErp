@@ -10,7 +10,7 @@ RIBBON BAR: reprezintă meniul Forum-ului în discuţie, mai precis aria în car
 
 | Functie | Functionalitate |
 | --- | --- |
-| Previzualizare | Buton pentru previzualizarea raportului. |
+| Vizualizare | Buton pentru vizualizarea raportului. |
 | Listare | Buton pentru listarea raportului. |
 
 

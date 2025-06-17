@@ -7,5 +7,5 @@ Menționăm prezența a două dispuneri particulare: una pentru identificarea ev
 
 Opțiuni disponibile:
 
-> **Previzualizare** - Buton pentru previzualizarea raportului.  
+> **Vizualizare** - Buton pentru vizualizarea raportului.  
 > **Listare** - Buton pentru listarea raportului.

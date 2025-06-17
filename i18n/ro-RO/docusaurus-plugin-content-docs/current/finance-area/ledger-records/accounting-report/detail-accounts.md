@@ -6,5 +6,5 @@ sidebar_position: 6
 Raportul permite vizualizarea detaliului mișcărilor diverselor conturi analitice contabile.
 
 Opțiuni disponibile:
-> **Previzualizare** - Buton pentru previzualizarea raportului.  
+> **Vizualizare** - Buton pentru vizualizarea raportului.  
 > **Listare** - Buton pentru listarea raportului.

@@ -11,7 +11,7 @@ RIBBON BAR: Reprezintă meniul Forum-ului în discuţie, mai precis aria în car
 
 | Functie | Functionalitate |
 | --- | --- |
-| Previzualizare | Buton pentru vizualizarea documentului. |
+| Vizualizare | Buton pentru vizualizarea documentului. |
 | Listare | Buton pentru vizualizarea documentului. |
 
 

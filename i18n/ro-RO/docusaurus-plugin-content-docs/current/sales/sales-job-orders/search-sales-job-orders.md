@@ -20,7 +20,7 @@ RIBBON BAR: reprezintă meniul cu butoanele de executie, pentru fiecare operatie
 | Duplica comanda | Procedura de duplicare a unei comenzi pe permite crearea unei copii a unui document, preluand toate conditiile documentului initial, dar cu date actuale. |
 | Propietate | Procedura de vizualizare a executarii unei comenzi, cu date despre articolele din comanda cat si date despre documentele asociate. |
 | Conversie | Procedura de  conversie a preturilor din document intr-o alta deviza. |
-| Previzualizare | Procedura de previzualizare a unei comenzi  deja inserate in functie de criteriile selectate in partea de filtrare (tip comanda, numar, data, client, etc). |
+| Vizualizare | Procedura de vizualizare a unei comenzi  deja inserate in functie de criteriile selectate in partea de filtrare (tip comanda, numar, data, client, etc). |
 | Listare | Procedura de listare cu ajutorul unor filtre a unei comenzi inserate in functie de criteriile selectate in partea de filtrare (tip comanda, numar, data, client). |
 
 ARIA FILTRE: zona de filtrare este dedicata pentru a putea vizualiza o lista cu posibilele tipuri de date, prin care se poate face o multipla selecţie, a comenzilor inserate. Exista posibilitatea să specificaţi mai multe criterii de filtrare.
