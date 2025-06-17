@@ -1,1 +1,1 @@
-Se presenta la lista de los **extra data** asociados al artículo, con la posibilidad de agregar nuevos datos extra útiles solo para el documento en cuestión. El indicador *da stampare* permite elegir cuáles datos extra imprimir.
+Se presenta la lista de los **extra data** asociados al artículo, con la posibilidad de agregar nuevos datos extra útiles solo para el documento en cuestión. El indicador *Para imprimir* permite elegir cuáles datos extra imprimir.

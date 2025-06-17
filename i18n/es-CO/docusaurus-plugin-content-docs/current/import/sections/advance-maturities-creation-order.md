@@ -4,7 +4,7 @@ Véase en detalle la imagen.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order.png)
 
-Esto llevará en los resúmenes del pedido la presencia de un vencimiento de anticipo para enviar a la contabilidad, si así se desea, a través del botón correspondiente ***Creación de partida de anticipo (Creazione partita di anticipo):***
+Esto llevará en los resúmenes del pedido la presencia de un vencimiento de anticipo para enviar a la contabilidad, si así se desea, a través del botón correspondiente ***Creación de partida de anticipo:***
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation.png)
 
