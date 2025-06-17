@@ -1,21 +1,21 @@
 ---
-title: Stampe modelli Intrastat
+title: Ispis intrastata  
 sidebar_position: 11
 ---
 
-Dalla maschera è possibile stampare, secondo i parametri impostati, i modelli intrastat creati. 
+Moguće je ispisati, prema postavljenim parametrima, kreirane Intrastat obrasce.   
 
-Per ogni testata e sezione **bis**/**ter**/**quater**/**quinquies**/**sexies** sarà creata un'anteprima di stampa separata, selezionabile dalla tendina prima di premere il bottone *Anteprima*. 
+Za svako zaglavlje i za svaki odjeljak  **bis**/**ter**/**quater**/**quinquies**/**sexies** bitI će izrađena zasebna pretpregledna verzija ispisa, koja se može odabrati iz padajućeg izbornika prije nego što se pritisne tipku *Pretpregled*. 
 
-La stampa denominata ***Dettagli*** permette invece di stampare tutte le sezioni di cui sopra.
+Ispis nazvan ***Detalji*** omogućuje ispis svih prethodno navedenih sekcija.  
 
-Parallelamente alla scelta della stampa in funzione delle sezioni da stampare, operano i filtri presenti nella form che rendono visibili o non visibili i modelli relativi alle vendite o agli acquisti e le specifiche sezioni.
+Paralelno s odabirom ispisa prema sekcijama koje se žele ispisati, dostupni su i filtri unutar forme koji omogućuju prikaz ili skrivanje modela vezanih uz prodaju ili kupnju, kao i pojedinačnih sekcija.  
 
-Sono inoltre presenti filtri per numero e per data.
+Također su dostupni filtri prema broju i datumu. 
 
-La combinazione di tutti i vari filtri e dei diversi report di stampa permette di elaborare il dato che si desidera estrarre. 
+Kombinacija svih dostupnih filtara i različitih izvještaja za ispis omogućuje obradu i izdvajanje željenih podataka. 
 
-La stampa non ha alcuna influenza sulle dichiarazioni intrastat (non esistono blocchi legati a questo processo).
+Ispis nema nikakav utjecaj na Intrastat prijave (ne postoje blokade povezane s ovim postupkom). 
 
 
 

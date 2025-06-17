@@ -1,33 +1,33 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
-**Dichiarazioni**: Il modulo Dichiarazioni di Fluentis ERP supporta la gestione delle principali dichiarazioni e adempimenti fiscali richiesti dalle normative italiane, consentendo alle aziende di automatizzare la preparazione e l'invio telematico di documenti fiscali.
-Funzionalità Principali
+**Deklaracije**: modul Fluentis ERP Deklaracije podržava upravljanje glavnim deklaracijama i poreznim obvezama koje zahtijevaju talijanski propisi, omogućujući tvrtkama automatizaciju pripreme i elektroničkog slanja poreznih dokumenata.  
 
-- Fatturazione elettronica con soggetti non residenti: Con l'abolizione dell'adempimento dell'"Esterometro" che veniva precedentemente gestito, è stata implementata la creazione automatica delle autofatture per la comunicazione degli acquisti effettuati da fornitori intracomunitari o extracomunitari per acquisti di servizi (oltre che italiano nel regime del reverse charge).
+Glavne značajke 
 
-- Certificazione Unica: Gestisce la creazione e l'invio telematico della Certificazione Unica per le ritenute d'acconto operate nei confronti dei percipienti. La procedura genera il file telematico necessario per l’invio all'Agenzia delle Entrate​
+- Elektroničko fakturiranje s nerezidentnim subjektima: s ukidanjem zahtjeva "Esterometro" kojim se prethodno upravljalo, implementirano je automatsko kreiranje samofaktura za komunikaciju o kupnjama koje su izvršili dobavljači unutar zajednice ili dobavljači izvan zajednice za kupnju usluga (uz talijanski u režimu obrnute naknade).  
 
-- Liquidazione IVA di gruppo: Gestisce le liquidazioni IVA periodiche in contesti di gruppo IVA, aggregando i dati delle società controllate per calcolare l'IVA da versare a livello di gruppo​
+- Jedinstvena potvrda: Upravlja stvaranjem i elektroničkim slanjem Jedinstvene potvrde za poreze po odbitku primateljima. Postupkom se generira elektronička datoteka potrebna za slanje Poreznoj upravi  
 
-- Comunicazione liquidazioni periodiche IVA (LIPE): Permette la generazione e l’invio telematico delle comunicazioni riepilogative delle liquidazioni IVA mensili o trimestrali​
+- Obračun PDV-a grupe: Upravlja periodičnim obračunima PDV-a u kontekstu grupe PDV-a, agregirajući podatke iz podružnica za izračun PDV-a koji treba platiti na razini grupe  
 
-- Dichiarazione di intento: Gestisce l'inserimento e la modifica delle dichiarazioni di intento emesse o ricevute, con particolare attenzione alla gestione di gruppi IVA e delle fatturazioni internazionali​
+- Komunikacija periodičnih plaćanja PDV-a (LIPE): Omogućuje stvaranje i elektroničko slanje komunikacija sa sažetkom mjesečnih ili tromjesečnih plaćanja PDV-a
 
-- Dichiarazione annuale IVA periodica: Consente di elaborare i valori delle liquidazioni IVA periodiche, generando un report di supporto per la compilazione dei modelli fiscali​
+- Izjava namjere: Upravlja umetanjem i izmjenama izdanih ili primljenih izjava namjere, s posebnom pozornošću na upravljanje PDV grupama i međunarodno fakturiranje 
 
-- Ventilazione dei corrispettivi: Permette di gestire la ventilazione IVA basata sui movimenti di vendita, collegando i registri delle vendite e degli acquisti per elaborare le operazioni rilevanti​
+- Periodična godišnja prijava PDV-a: Omogućuje vam obradu vrijednosti periodičnih plaćanja PDV-a, generiranje izvješća podrške za sastavljanje poreznih obrazaca 
 
-- Gestione del Plafond iva per esportatori abituali
+- Provjetravanje razmatranja: Omogućuje vam upravljanje provjetravanjem PDV-a na temelju kretanja prodaje, povezujući registre prodaje i kupnje za obradu relevantnih operacija  
 
-Stampe Disponibili
+- Upravljanje plafonom PDV-a za redovite izvoznike
 
-- Stampa della Certificazione Unica: Fornisce un riepilogo dettagliato delle ritenute operate sui percipienti, conforme alle normative fiscali​
+Ispisi dostupni  
 
-- Stampa delle dichiarazioni di intento: Consente di monitorare e verificare i limiti ancora fatturabili per le dichiarazioni di intento​.
+- Ispis jedinstvene potvrde: pruža detaljan sažetak zadržanih prihoda od primatelja, u skladu s poreznim propisima  
+
+- Ispis izjava namjere: Omogućuje vam praćenje i provjeru preostalih naplativih ograničenja za izjave namjere  
 
 
 
-**Intrastat**: dedicato alla creazione delle comunicazioni statistiche *Intrastat*: è prevista sia una gestione manuale dei dati che una creazione automatica rispetto ai dati presenti all'interno delle fatture di acquisto e di vendite delle relative aree acquisti e vendite, così come una ripresa dei dati dalle registrazioni contabili. Le due modalità sono alternative ed interdipendenti.
-Contabilizzando le fatture interessate con i settaggi opportuni è possibile gestire la creazione automatica sempre attraverso le registrazioni contabili, sia per i beni che per i servizi. [**Ulteriori informazioni**](/docs/finance-area/declarations/intrastat/general-overview)
+**Intrastat**: posvećen stvaranju Intrastat statističkih komunikacija: predviđeno je i ručno upravljanje podacima i automatsko kreiranje s obzirom na podatke prisutne u fakturama nabave i prodaje relevantnih područja nabave i prodaje, kao i oporavak podataka iz računovodstva zapisa. Dvije su metode alternativne i međusobno ovisne. Računovodstvom zahvaćenih faktura s odgovarajućim postavkama moguće je upravljati automatskim kreiranjem kroz knjigovodstvene evidencije, kako za proizvode  tako i za usluge. [**Saznajte više**](/docs/finance-area/declarations/intrastat/general-overview)

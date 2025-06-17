@@ -1,11 +1,11 @@
 ---
-title: Associazione di articolo vendita
+title: Pridruživanje artikala prodaji  
 sidebar_position: 10
 ---
 
-Da questa form è possibile visualizzare la lista degli articoli ai quali non è stato ancora assegnato un codice nomenclatura (attivando il flag apposito) oppure la lista completa degli articoli. 
+Iz ove forme moguće je prikazati popis artikala kojima još nije dodijeljena šifra nomenklature (aktiviranjem odgovarajućeg flaga) ili potpuni popis artikala.
 
- Alla base della form è possibile assegnare, in maniera massiva, un codice di nomenclatura semplicemente premendo il pulsante di gestione relativo.
+Na dnu forme moguće je dodijeliti šifru nomenklature jednostavnim pritiskom na odgovarajući gumb za upravljanje.  
 
 ![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image01.png)
 
@@ -13,21 +13,20 @@ Da questa form è possibile visualizzare la lista degli articoli ai quali non è
 
 ![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image03.png)
 
-Ricordiamo che il campo **Codice nomenclatura da associare** è un widget di ricerca e pertanto, iniziando semplicemente a scrivere nel campo saranno proposti i dati (che iniziano per.... oppure che contengono.... se si utilizza il carattere % prima della lettera o parola digitata). Inoltre è possibile fare doppio click con il tasto sinistro del mouse per richiamare l'help di ricerca
+Za polje **Šifra nomenklature za pridružiti** postoji widget za pretraživanje i jednostavnim upisivanjem u polje, bit će predloženi podaci (koji počinju ili sadrže utipkane znakove ako se koristi znak % prije upisa slova ili riječi). Također je moguće dvaput kliknuti lijevom tipkom miša kako bi se otvorila pomoć za pretraživanje.  
 
 ![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image04.png)
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca degli articoli a cui assegnare un codice nomenclatura. |
-| Associazione articolo fornitore | Pulsante per operare l'associazione del codice nomenclatura agli articoli selezionati. |
+| Traži | Pretraživanje artikala kojima treba dodijeliti nomenklaturu. |
+| Pridruživanje artikla dobavljača | Tipka za povezivanje nomenklature s odabranim artiklima. |
 
-AREA DI FILTRO: l'area di filtro è quella dedicata ad ospitare l'elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I Filtri sono tipicamente sempre in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+PODRUČJE FILTERA: područje filtera je posvećeno prikazivanju popisa mogućih vrsta podataka putem kojih je moguće izvršiti odabir. Filteri su tipično uvijek u 'AND' uvjetu i može se specificirati više kriterija filtera istovremeno.
 
-GRIGLIA DI RISULTATO: la griglia di risultato rappresenta l'elenco degli articoli che corrispondono ai dati di filtro sopra specificati. L'utente, dopo aver specificato i valori attraverso i quali desidera ottenere una ricerca degli articoli, premendo il pulsante [Ricerca] presente nella relativa Ribbon, otterrà nella griglia di risultato l'elenco degli articoli desiderati.
-
+PRIKAZ REZULTATA: Ova tablica prikazuje popis artikala koji odgovaraju gore navedenim filterima. Nakon što korisnik specificira vrijednosti putem kojih želi izvršiti pretragu artikala te pritisne tipku [Traži] na pripadajućoj traci izbornika, u prikazu podataka će dobiti popis željenih artikala.  
 
 
 

@@ -1,34 +1,34 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo Intrastat è dedicato alla creazione delle dichiarazioni statistiche Intrastat: è prevista sia una gestione manuale dei dati che un inserimento automatico rispetto ai dati presenti all'interno delle fatture di acquisto e di vendite delle relative aree acquisti e vendite, così come una ripresa dei dati dalle registrazioni contabili. Le due modalità sono alternative ed interdipendenti.
-Contabilizzando le fatture interessate con i settaggi opportuni (in particolare attivando il **flag** *Intrastat* all'interno delle **causali** contabili coinvolte) è possibile gestire la creazione automatica sempre attraverso le registrazioni contabili, sia per i beni che per i servizi.
+Modul Intrastat služi za izradu statističkih izvještaja Intrastat: predviđeno je kako ručno upravljanje podacima tako i automatski unos podataka temeljenih na podacima prisutnim u ulaznim i izlaznim računima iz odgovarajućih područja nabave i prodaje, kao i preuzimanje podataka iz računovodstvenih evidencija. 
+Knjiženjem relevantnih faktura s odgovarajućim postavkama (konkretno aktiviranjem **flag** *Intrastat* unutar **predložaka** knjiženja) moguće je upravljati automatskim stvaranjem putem računovodstvenih evidencija, kako za robu tako i za usluge.
 
-Le impostazioni di base sono legate alle **anagrafiche** e ai **tipi di documento** in acquisto e vendita: 
+Osnovne postavke vezane su uz **matične podatke** i **vrste dokumenata** u nabavi i prodaji: 
 
-**è necessario, infatti, che il documento sia di tipo intracomunitario e che l'anagrafica intestataria dello stesso sia stato definito come soggetto Intrastat.**
+**potrebno je, naime, da dokumenti budu pravilno podešeni i da je partner označen u šifrarniku kao subjekt Intrastata.**
 
-Per ottenere il massimo degli automatismi sarà necessario definire, nelle anagrafiche articoli, i codici nomenclatura di ognuno così come gli eventuali fattori di conversione per ottenere la valorizzazione automatica dell'unità di misura complementare. Chiaramente necessario, per quanto possibile, definire all'interno dei vari documenti in modo completo i dati del tipo di trasporto e le condizioni di resa.
+Da bi se postigla maksimalna automatizacija, potrebno je definirati u matičnim podacima artikala, šifre i nomenklature svakog od njih, kao i eventualne faktore konverzije kako bi se automatski izračunala vrijednost alternativne jedinice mjere. Potrebno je, koliko je to moguće, unutar različitih dokumenata u potpunosti definirati podatke o vrsti prijevoza i uvjetima isporuke.  
 
-L'utilizzo del modulo si effettua con la creazione di una nuova dichiarazione intrastat1 (per le vendite) e Intrastat2 (per gli acquisti): si andranno a completare i dati prelevandoli dalle fatture acquisto e vendite, oppure dalle registrazioni contabili, oppure con l'inserimento manuale nelle sezioni relative.
+Korištenje modula provodi se stvaranjem nove Intrastat1 izjave (za prodaju) i Intrastat2 (za nabavu) podaci se popunjavaju preuzimanjem iz ulaznih ili izlaznih računa, iz računovodstvenih zapisa ili ručnim unosom u odgovarajuće odjeljke.  
 
-Completati i dati dei modelli sarà possibile procedere alla stampa dei modelli o all'invio telematico degli stessi con la creazione del file previsto.
+Nakon popunjavanja podataka, bit će moguće nastaviti s ispisom obrasca ili elektroničkim slanjem uz stvaranje predviđene datoteke. 
 
-**Elenco tabelle obbligatorie per utilizzare il modulo**: 
+**Popis obaveznih tablica za korištenje modula**: 
 
-[Home>Tabelle>Amministrazione] e [Home>Tabelle>Impostazioni generali] per identificare le corrette impostazioni della gestione Intra. 
+[Početna stranica>Tablice>Administracija] i [Početna stranica>Tablice>Opće postavke] za identifikaciju ispravnih postavki Intra obračuna. 
 
-[Natura transazione intrastat](/docs/configurations/tables/finance/nature-of-intrastat-transaction), 
+[Vrsta Intrastat transakcije](/docs/configurations/tables/finance/nature-of-intrastat-transaction), 
 
-[Numerazione intrastat](/docs/configurations/tables/fluentis-numerations), 
+[Numeriranje Intrastat](/docs/configurations/tables/fluentis-numerations), 
 
-[Codici nomenclatura](/docs/configurations/tables/finance/nomenclature-codes), 
+[Šifre nomenklature](/docs/configurations/tables/finance/nomenclature-codes), 
 
-[Porto](/docs/configurations/tables/general-settings/carriages), 
+[Paritet](/docs/configurations/tables/general-settings/carriages), 
 
-[Spedizioni](/docs/configurations/tables/general-settings/shipments).
+[Dostave](/docs/configurations/tables/general-settings/shipments).
 
 
 
