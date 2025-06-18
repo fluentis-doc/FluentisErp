@@ -1,74 +1,74 @@
 ---
-title: Contabilizzazione Effetti
+title: Knjiženje vrijednosnih papira 
 sidebar_position: 1
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione effetti
+Obrazac se nalazi u Riznica > Portfelj efekata > Knjiženja > Knjiženja vrijednosnih papira.
 
-Da questa maschera si procede alla contabilizzazione effetti: la procedura, secondo le impostazioni della causale contabile impostata, chiuderà le partite clienti associate agli effetti selezionati.
+Iz ove maske prelazi se na knjiženje vrijednosnih papira: procedura će, prema postavkama knjiženog predloška, zatvoriti stavke kupaca povezane s odabranim vrijednosnim papirima.
 
-:::tip[Nota]
-Generalmente si può eseguire questa procedura direttamente eseguendo ***l'acquisizione automatica effetti dalle partite***
-dove, abilitando l'apposito flag, si esegue contemporaneamente anche la presente procedura.
+:::tip[Napomena]
+Općenito, ovu proceduru moguće je izvesti izravno izvršavanjem ***Automatska akvizicija učinaka iz partija**
+gdje, omogućujući odgovarajući flag, istovremeno se izvršava i ova procedura.
 
-**Risulta invece necessario accedere specificamente alla presente form per il ripristino della contabilizzazione effetti**. 
+**Umjesto toga, potrebno je posebno pristupiti ovom obrascu za obnavljanje knjiženja efekata.**. 
 :::
 
-## Come contabilizzare un effetto
+## Knjiženje vrijednosnih papira
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli effetti da contabilizzare.
+1. Iskoristite gornji dio obrasca za filtriranje vrijednosnih papira koji se trebaju knjižiti.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri contabilizzare 
+2. Odaberite iz središnje mreže vrijednosne papire koje želite knjižiti.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Ispunite parametre za računovodstvo, kao što su **Računovodstveni predložak**, **datum knjiženja** i datum obračuna.
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti. 
+:::note[Napomena]
+Ova sekcija može biti unaprijed definirana unutar [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) unutar modula Portfelj efekata. 
 
-Il flag di **raggruppamento per conto effetto** significa eseguire una registrazione unica dove saranno presenti tante righe quante sono gli effetti da contabilizzare ed in contropartita il conto associato alla tipologia di effetto (nella **tabella Tipi Effetti**).
+Flag **grupiranja po računima efekta** znači izvršiti jedinstveno knjiženje u kojem će biti prisutno onoliko redaka koliko ima efekata za knjiženje, ili suprotno račun povezan s tipologijom efekta (u **tablici Tipovi efekata**)..
 
-Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di tipo provvisorio.
+Flag **privremenog upravljanja** generirat će privremene računovodstvene upise.
 
-Se la causale contabile prevede il flag di apertura partite e l'effetto è stato creato manualmente senza associare una partita (o il suo importo è superiore all'importo delle partite collegate), allora sarà create una partita cliente in avere da compensare in seguito.
+Ako računovodstveni predložak predviđa flag za otvaranje stavki, a učinak je stvoren ručno bez povezivanja stavki (ili je njegov iznos veći od iznosa povezanih stavki), tada će biti stvorena stavka kupca u dugu koja će se kasnije poravnati.
 
-Si ricorda che non sarà possibile contabilizzare effetti creati da fatture stampate quando queste non sono state ancora contabilizzate.
+Zapamtite da neće biti moguće evidentirati efekte stvorene iz tiskanih računa kada oni još nisu evidentirani.
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione effetti**
+4. Pritisnite gumb na traci izbornika **Knjiži efekte**
 
 
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-**Ricerca**: Ricerca la lista degli effetti da contabilizzare.
+**Traži**: Pretraži popis efekata za knjiženje. 
 
-**Contabilizzazione effetti**: Esegue la contabilizzazione per le righe selezionate.
+**Knjiženje vrijednosnih papira**: Izvršava knjiženje za odabrane stavke.
 
-### Tab Precedenti
+### Predhodni
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+S kartice *prethodni* moguće je poništiti izvršena knjiženja. 
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+Poništavanje će biti moguće samo ako je razdoblje još uvijek moguće mijenjati (knjiga dnevnika nije ispisana i računi nisu zatvoreni).
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+Dvostruki klik na odjeljak s registracijama omogućit će prikaz pripadajuće računovodstvene registracije.
 
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+Dostupan je izvještaj za pregled grešaka uočenih tijekom knjiženja.
 
-:::tip[Nota]
-Il ripristino della contabilizzazione dell'effetto deve **necessariamente** essere eseguito dalla presente form.
+:::tip[Napomena]
+Obnova knjiženja efekata mora **nužno** biti izvršena putem ovog obrasca.
 
-In fase di creazione dell'effetto è possibile, infatti, lanciare contestualmente la sua contabilizzazione, ma NON il contrario. 
+U fazi kreiranja efekta moguće je, naime, istovremeno pokrenuti njegovu knjiženje, ali NE obrnuto. 
 
-Pertanto si dovrà procedere prima ad annullarne la contabilizzazione da qui, e poi si potrà annullare la procedura di creazione, tornando ad una situazione precedente (partita cliente aperta e saldo cliente non ancora stornato).
+Stoga će se prvo morati postupiti s poništavanjem knjiženja odavde, a zatim se može poništiti postupak stvaranja, vraćajući se na prethodnu situaciju (otvorena stavka kupca i stanje kupca još nije otkazano).
 :::
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+**Traži**: Pretraži popis izvršenih knjiženja. 
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate per tutti i documenti in esse contenuti.
+**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
 
-**Rollback effetti**: Esegue il ripristino della registrazione contabile selezionata riferita al singolo effetto. ATTENZIONE: questa modalità è possibile solo se in fase di contabilizzazione non è stata attivata l'opzione per raggruppare per tipo effetto (che genera registrazioni uniche per ogni tipo effetto).
+**Poništavanje registracija**: Izvodi obnovu odabrane računovodstvene evidencije vezane uz pojedinačni učinak. **PAŽNJA**: ova opcija je moguća samo ako tijekom računovodstvene obrade nije aktivirana opcija grupiranja po vrsti učinka (što generira jedinstvene evidencije za svaku vrstu učinka).
 
 
 
