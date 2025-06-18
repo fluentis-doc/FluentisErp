@@ -3,129 +3,156 @@ title: Nuevo ciclo (Nuovo ciclo)
 sidebar_position: 2
 ---
 
-Después de crear las listas de materiales de los artículos, se debe proceder con la definición de los ciclos de trabajo, es decir, el conjunto de las distintas fases de producción de un producto.
+Después de crear las listas de materiales de los artículos, se debe proceder a la definición de los ciclos de trabajo, es decir, el conjunto de las diversas fases de producción de un producto.
 
-El procedimiento para crear un **Nuevo ciclo** se abre a través de la ruta:
+La procedura de creación de un **Nuevo ciclo (Nuovo ciclo)** se abre a través del recorrido:
 
-**Producción > Ciclos de trabajo > Ciclos de trabajo**, haciendo clic en el botón **Nuevo**
+**Producción > Ciclos de trabajo > Ciclos de trabajo**, haciendo clic en el botón **Nuevo (Nuovo)**
 
 o
 
-**Producción > Ciclos de trabajo > Nuevo ciclo de trabajo**.
+**Producción > Ciclos de trabajo > Nuevo ciclo de trabajo (Nuovo ciclo di lavoro)**.
 
-Con ambos procedimientos se abrirá el formulario **Gestión de ciclos de trabajo** compuesto por una sección en la que se determinarán las características obligatorias del ciclo y por una sección compuesta por varias pestañas que agrupan sus características específicas.
+Con ambos procedimientos se abrirá el formulario **Gestión de ciclos de trabajo (Gestione cicli di lavoro)** compuesto por una sección en la que se definirán las características obligatorias del ciclo y por una sección compuesta de diferentes pestañas que agrupan las características específicas.
 
 ### Sección superior
 
-Aquí se ingresan la información básica relacionada con el ciclo:
+Aquí se insertan las informaciones básicas relativas al ciclo:
 
-**ciclo**: se ingresará el código y la descripción del ciclo de trabajo;  
+**Ciclo (Ciclo):** se debe introducir el código y la descripción del ciclo de trabajo;
 
-**articolo e variante**: a través de la ayuda se ingresará el artículo relacionado con el ciclo y la variante en caso de que exista la variante del artículo seleccionado;  
+**Artículo y Variante (Articolo e Variante)**: a través de la ayuda se insertará el artículo relacionado con el ciclo y la variante en caso de que exista la variante del artículo seleccionado;
 
-**versione**: se seleccionará a través del combo correspondiente la versión de la lista para la cual se desea ingresar un nuevo ciclo de trabajo;  
+**Versión (Versione)**: se seleccionará a través de la combo correspondiente la versión de la lista para la que se quiere insertar un nuevo ciclo de trabajo;
 
-**ciclo**: se define si se trata de un ciclo *operativo* o *non operativo*, y en este último caso no es utilizable;  
+**Ciclo (Ciclo)**: se define si se trata de un ciclo *Operativo (Operativo)* o *No operativo (Non operativo)* y, por lo tanto, en este caso no utilizable;
 
-**tipo ciclo**: puede ser *standard* para el ciclo principal, que se propondrá como default para ese artículo y tendrá como número de ciclo 1, o en el caso de que haya más ciclos para el mismo artículo, se activará la opción *alternativo* y se habilitará también la posibilidad de variar el número de ciclo. Para cada artículo, solo es posible tener un ciclo *estándar*;  
+**Tipo ciclo (Tipo ciclo)**: que puede ser *Estándar (Standard)* para el ciclo principal y que se propondrá como default para ese artículo y tendrá como número ciclo 1, o en caso de que haya más ciclos para el mismo artículo, se marcará el indicador en *Alternativo (Alternativo)* y también se habilitará la posibilidad de variar el número de ciclo. Por cada artículo, es posible tener solo un ciclo *estándar (standard)*;
 
-**Fecha de ingreso / Fecha de modificación (Data inserimento / Data modifica)**: las fechas *Fecha de ingreso / Fecha de modificación* se completarán automáticamente, respectivamente, con la fecha de ingreso del ciclo y, si se realiza alguna modificación, también con la fecha de última modificación del ciclo;  
+**Fecha de inserción / Fecha de modificación (Data inserimento / Data modifica)**: las fechas *Fecha de inserción / Fecha de modificación* se completarán automáticamente respectivamente con la fecha de inserción del ciclo y si se realiza alguna modificación, también con la fecha de última modificación del ciclo;
 
 ### Fases
 
-En la cuadrícula se ingresan las fases de trabajo del ciclo; para cada ciclo podemos tener múltiples fases de trabajo. Las fases se codifican dentro de la tabla [Fases Estándar (Fasi Standard)](/docs/configurations/tables/production/standard-phases) que se encuentra entre las tablas de la sección *produzione*.
+En la cuadrícula se insertan las fases de trabajo del ciclo; para cada ciclo se pueden tener múltiples fases de trabajo. Las fases se codifican dentro de la tabla [Fases Estándar (Fasi Standard)](/docs/configurations/tables/production/standard-phases) que se encuentra entre las tablas de la sección *Producción*.  
 
-Las informaciones importantes que conciernen a la fase y que son relevantes a nivel productivo son:
+Las informaciones importantes que conciernen a la fase y que servirán a nivel productivo son:
 
-**codice**: indica el código de la fase estándar; una vez seleccionada la fase, la cuadrícula se completará con los datos establecidos en la tabla;  
+**Código (Codice)**: indica el código de la fase estándar; una vez seleccionada la fase, la cuadrícula se completará con los datos establecidos dentro de la tabla;  
 
-**fase**: indica el número progresivo de fase; que se propone automáticamente en base al valor del parámetro *proposta sequenza fase*, presente en configuración; *Parámetros > Producción > Parámetros de pedidos de producción (Parametri > Produzione > Parametri ordini di produzione)*. Este parámetro permite elegir, durante la creación de un ciclo de trabajo, el número de secuencia de la fase que se propone, que puede ser tomado del número de secuencia de la fase estándar o como progresivo del orden de ingreso, indicando también el valor progresivo de ingreso en el campo paso.  
+**Fase (Fase)**: indica el número progresivo de fase; que se propone automáticamente en base al valor del parámetro *Propuesta de secuencia de fase (Proposta sequenza fase)*, presente en configuración; *Parámetros > Producción > Parámetros de pedidos de producción (Parametri > Produzione > Parametri ordini di produzione)*. Este parámetro permite elegir, durante la creación de un ciclo de trabajo, el número de secuencia de la fase que se propone, que puede ser tomado del número de secuencia de la fase estándar o como progresivo del orden de inserción, indicando también el valor progresivo de inserción en el campo step.  
 
-**sottofase**: indica el número de subfase para diferenciarlas dentro del mismo número de fase;  
+**Subfase (Sottofase)**: indica el número de subfase para diferenciarlas a igualdad de número de fase;  
 
 **Descripción fase / subfase (Descrizione fase / sottofase)**: indica la descripción de la fase / subfase;  
 
-**tipo**: permite definir si se trata de una fase interna, implicando únicamente la creación de órdenes de producción internas, o si es una fase externa, generando también una orden de trabajo;  
+**Tipo (Tipo)**: permite definir si se trata de una fase interna y, por lo tanto, implicará solamente la creación de órdenes de producción internos, o si es una fase externa, generando también una orden de trabajo;  
 
-**centro di lavoro**: indica el centro de trabajo, es decir, la máquina en la que se llevará a cabo esa fase específica;  
+**Centro de trabajo (Centro di lavoro)**: indica el centro de trabajo, es decir, la máquina en la que se realizará esa fase específica;  
 
-**tempo fisso**: si está habilitado, indica que el tiempo de esa fase es fijo y, por lo tanto, no variable según la cantidad; esto se hereda del centro de trabajo ingresado;  
+**Tiempo fijo (Tempo fisso)**: si está habilitado, indica que el tiempo de esa fase es fijo y, por lo tanto, no variable según la cantidad; esto se hereda del centro de trabajo ingresado;  
 
-**controllo qualità**: si está activado, este indicador indica que esta fase está sujeta a control de calidad y en la pestaña específica se puede indicar el *piano di controllo* que se utilizará para verificar el artículo una vez realizada la declaración de producción;  
+**Control de calidad (Controllo qualità)**: si se activa, este indicador indica que esta fase está sujeta a control de calidad y en la pestaña específica se puede indicar el *Plan de control (Piano di controllo)* que se utilizará para verificar el artículo a declaración de producción realizada;  
 
-**Fase productiva (Fase produttiva)**: si está activo, indica que la fase es productiva y se puede proceder a ingresar las señales de producción (por lo tanto, al activarlo, se desea que la producción para esta fase sea registrada); si no está activo, no será posible declarar la fase misma;  
+**Fase productiva (Fase produttiva)**: si está activo, indica que la fase es productiva y se puede proceder a la inserción de las anotaciones de producción (activándolo se desea que la producción para esta fase sea registrada); si no está activo, no será posible declarar la fase misma;  
 
-**Fase movilizable (Fase movimentabile)**: si está activo, indica que en el momento en que se registre la fase de producción, también se crearán movimientos de almacén; esto significa que al proceder con la señalización de producción, también se procederá al ingreso del producto terminado en el almacén y a la salida de la materia prima utilizada para la producción en esa fase;  
+**Fase movilizable (Fase movimentabile)**: si está activo, indica que en el momento en que se registra la fase de producción, también se crean movimientos de almacén; esto significa que, al proceder con la anotación de producción, también se procederá a la carga del producto terminado en el almacén y al descargue de la materia prima utilizada para la producción en esa fase;  
 
 :::note Nota
 Todas las fases externas deben tener siempre los indicadores **Fase productiva (Fase produttiva)** y **Fase movilizable (Fase movimentabile)** activos.
-:::
+:::  
 
-**Máquina / Grupo de mano de obra (Macchina/Gruppo manodopera)**: en estos campos se seleccionará, a través de la combo box, el código de la *máquina* en la que se lleva a cabo la fase y el código *grupo de mano de obra* que se utilizará; estos dos códigos provienen de las respectivas tablas previamente codificadas: [Grupos de mano de obra (Gruppi manodopera)](/docs/configurations/tables/production/labour-group) y [Máquinas (Macchine)](/docs/configurations/tables/production/machines), que siempre se encuentran entre las tablas de la sección *produzione*;  
+**Máquina / Grupo de mano de obra (Macchina/Gruppo manodopera)**: en estos campos se seleccionarán a través de la combo box, el código de la *máquina* en la que tiene lugar la fase y el código del *grupo de mano de obra* que se utiliza; estos dos códigos se toman de las respectivas tablas codificadas previamente: [Grupos de mano de obra (Gruppi manodopera)](/docs/configurations/tables/production/labour-group) y [Máquinas (Macchine)](/docs/configurations/tables/production/machines) que se encuentran siempre entre las tablas de la sección *Producción*;  
 
-**unità di misura tempo**: permite especificar la unidad de medida de los tiempos de la fase, que puede expresarse en días, horas, minutos y segundos;    
+**Unidad de medida tiempo (Unità di misura tempo)**: permite especificar la unidad de medida de los tiempos de la fase, que puede expresarse en días, horas, minutos y segundos;  
 
-**Inicio / Fin validez (Inizio/Fine validità)**: permiten indicar la fecha de inicio y la fecha final de validez de una fase en caso de que se decida que esa fase específica será válida solo por un período determinado;  
+**Inicio / Fin de validez (Inizio/Fine validità)**: permiten indicar la fecha de inicio y la fecha de fin de validez de una fase en caso de que se decida que esa fase específica será válida solo por un determinado periodo de tiempo;  
 
-**tipo di sovrapposizione**: en este campo, por defecto se establece el valor *nessuna*. Si existe una fase que se superpone a otra, se indicará el tipo de superposición entre los propuestos en el combo: *totale*, *Por pieza (A pezzo)* y *a tempo*. Al ingresar el valor *Total*, significa que la fase y subfase seleccionadas pueden comenzar al mismo tiempo que la fase indicada en los campos *Fase y subfase Superposición (Fase e sottofase Sovrapposizione)*. Mientras que al elegir la opción *a quantità* o *a tempo*, la fase seleccionada solo podrá comenzar a ser trabajada al alcanzar, respectivamente, el valor de cantidad producida o el tiempo de la fase indicada en los campos *Fase y subfase Superposición (Fase e sottofase Sovrapposizione)* que se ha indicado en el campo *valor*.
+**Tipo de Superposición (Tipo di Sovrapposizione)**: en este campo se establece por defecto el valor *Ninguna (Nessuna)*. Si en cambio hay una fase que se superpone a otra, se indicará el tipo de superposición entre los propuestos en la combo: *Total (Totale)*, *Por pieza (A pezzo)* y *Por tiempo (A Tempo)*. Al ingresar el valor *Total*, significa que la fase y subfase seleccionada pueden comenzar al mismo tiempo que la fase indicada en los campos *Fase y subfase de Superposición (Fase e sottofase Sovrapposizione)*. Mientras que al elegir la opción *por cantidad (a quantità)* o *por tiempo (a tempo)*, la fase seleccionada podrá comenzar a ser procesada solo al alcanzar respectivamente el valor de cantidad producida o el tiempo de la fase indicada en los campos *Fase y subfase de Superposición (Fase e sottofase Sovrapposizione)* transcurrido según el valor indicado en el campo *valore*.  
+El tipo **Superposición a porcentaje**, activo solo para la [Programación F.C.S (Schedulazione F.C.S)](/docs/planning/ms-master-scheduling/fcs-scheduling), se utiliza cuando la cantidad a producir es muy pequeña (1 o pocas unidades) y las horas de trabajo no son pocas (si fueran pocas se podría evitar indicar la superposición). En ese caso, definir la superposición a través de la cantidad puede ser imposible (cantidad igual a 1) o muy impreciso. Si se utiliza el porcentaje de superposición, la fase puede ser programada solo si la que la precede ha alcanzado un porcentaje de avance igual al valor indicado como porcentaje de superposición, pero no se debe utilizar un valor igual a cero, ya que se entendería como ausencia de valor y, por lo tanto, superposición no admitida. Si, por ejemplo, se desea que la fase comience lo antes posible después del inicio de la que la precede, se debe indicar un valor muy pequeño mayor que cero.  
 
-**valore**: permite indicar el valor relativo al tipo de superposición y no tiene relación con el valor económico (por ejemplo, si la superposición es *Por piezas (A pezzi)*, entonces en el campo *Valor* es necesario indicar cuántas piezas deben producirse antes de poder comenzar la fase, mientras que si la superposición es *a tempo* se debe ingresar en el campo *Valor* el tiempo que debe transcurrir para poder comenzar con la fase); 
+**Valor (Valore):** permite indicar el valor relativo al tipo de superposición y no tiene nada que ver con el valor económico (por ejemplo, si la superposición es *Por piezas (A pezzi)*, entonces en el campo *Valor* es necesario indicar después de cuántas piezas es posible comenzar la fase, mientras que si la superposición es *Por tiempo (A tempo)*, en el campo *Valor* es necesario insertar el tiempo que debe transcurrir para poder comenzar con la fase);  
 
-**Fase de superposición / subfase de superposición (Fase sovrapposizione / sottofase sovrapposizione)**: en estos dos campos, en caso de superposición, se indicará la fase que se pretende superponer a la fase principal;  
+**Fase de superposición / subfase de superposición (Fase sovrapposizione / sottofase sovrapposizione)**: en estos dos campos, en caso de superposición, se indicará la fase que se pretende superponer a la fase seleccionada. En el caso de la [Programación F.C.S (Schedulazione F.C.S)](/docs/planning/ms-master-scheduling/fcs-scheduling), la superposición solo es posible con la fase anterior.  
 
-**costo unitario**: en este campo se ingresará el costo de la fase cuando se decide no valorar con la valorización de la máquina y grupo de mano de obra;  
+**Costo Unitario (Costo Unitario)**: en este campo se inserta el costo de la fase cuando se decide no valorizar con la valorización de la máquina y el grupo de mano de obra;  
 
-**ubicazione**: permite asociar una ubicación de almacén a la fase; esto significa que todos los artículos utilizados en esa fase estarán presentes en esa ubicación.
+**Ubicación (Ubicazione)**: permite asociar también una ubicación de almacén a la fase; esto significa que todos los artículos utilizados en esa fase estarán presentes en esa ubicación.  
 
-**descrizione terzista**: en caso de que la fase sea externa, se podrá indicar en este campo el contratista que se encargará de la fase externa;  
+**Descripción del proveedor (Descrizione terzista)**: en caso de que la fase sea externa, se podrá indicar en este campo el proveedor que se encargará de la fase externa;  
 
-**descrizione centro di lavoro**, **descrizione macchina**, **descrizione gruppo manodopera**: en estos campos se encontrará las descripciones de los códigos relacionados con las diferentes secciones enumeradas.
+**Descripción Centro de Trabajo (Descrizione Centro di Lavoro)**, **Descripción máquina (Descrizione macchina)**, **Descripción Grupo de Mano de Obra (Descrizione Gruppo Manodopera)**: en estos campos se encontrarán las descripciones de los códigos referidos a las varias secciones enumeradas.  
 
-Luego hay una tercera sección donde se indicarán los datos más precisos en referencia a la máquina, a los trabajadores y a los tiempos:
+**Sitio de producción (Sito produzione)**: indica el [Sitio de producción (Sito di produzione)](/docs/configurations/parameters/production/production-orders-parameters/production-site) del centro de trabajo.  
 
-**numero macchine**: indica el número de máquinas necesarias para la ejecución de la fase;  
+**Descripción del sitio de producción (Descrizione sito produzione)**: indica la descripción del [Sitio de producción (Sito di produzione)](/docs/configurations/parameters/production/production-orders-parameters/production-site) del centro de trabajo.  
 
-**Tiempos de máquina (Tempi macchina)**: permite indicar los tiempos de máquina expresados en la unidad de medida de referencia seleccionada anteriormente en la cuadrícula de fases, expresada en la unidad de medida indicada en el campo **unità di misura tempo**;  
+<details>
+<summary> Los siguientes campos son utilizados solamente en el procedimiento de [Programación F.C.S (Schedulazione F.C.S)](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
 
-**quantità fase**: indica la cantidad de producto que se estima producir durante la fase seleccionada (en cada ejecución de esa fase);  
+**Tipo de programación centro (Tipo schedulazione centro)**:            
+**Calificación de equipamiento (Qualifica attrezzaggio)**: indica la calificación de los trabajadores necesaria para realizar el equipamiento de las máquinas del centro;        
+**Calificación de trabajo (Qualifica lavorazione)**: indica la calificación de los trabajadores necesaria para realizar el trabajo en el centro;       
+**Número de operarios de equipamiento (Numero operai attrezzaggio)**: indica el número de trabajadores necesario para realizar el equipamiento de las máquinas del centro;          
+**Código de agrupamiento (Codice accorpamento)**: las fases que tengan el mismo código de agrupamiento pueden ser agrupadas para ser trabajadas en una misma sesión de la máquina, según la regla de agrupamiento definida para ella. Todas las fases que tengan el mismo código de agrupamiento en el mismo centro de trabajo, deben tener los mismos datos (tiempo de trabajo, número de operadores, etc.). Si no fuera así, el programador marcaría el error en el momento de la importación.
 
-**numero operai**: indica el número de trabajadores necesarios para la ejecución de la fase;  
+</details>
 
-**Tiempo de Trabajadores (Tempo Operai)**: el tiempo de empleo necesario para la ejecución de la fase, expresado en la unidad de medida indicada en el campo **unità di misura tempo**;  
+Hay luego una tercera sección en la que se indicarán los datos más precisos en relación con la máquina, los operarios y los tiempos:
 
-**Tiempo de espera de cola (Tempo attesa coda)**: indica el tiempo de espera/cola que se sumará a la duración de la fase; es el tiempo de espera al final de cada ejecución de esa fase;  
+**Número de Máquinas (Numero Macchine)**: indica el número de máquinas necesarias para el desarrollo de la fase;  
 
-**Tiempo de espera-Cola crea compromiso (Tempo attesa-Coda crea impegno)**: si está activo, indica que el tiempo de espera/cola crea un compromiso, por lo que no es posible comenzar una nueva fase ya que el centro de trabajo está ocupado hasta que expire el tiempo de espera/cola.
+**Tiempos de máquina (Tempi macchina)**: permite indicar los tiempos de la máquina expresados en la unidad de medida de referencia seleccionada previamente en la cuadrícula de fase, expresados en la unidad de medida indicada en el campo **Unidad de medida tiempo**;  
 
-### Las pestañas (I tab)
+**Cantidad fase (Quantità fase)**: indica la cantidad de producto que se estima producir durante la fase seleccionada (en cada ejecución de esa fase);  
 
-**attrezzaggio**: en esta pestaña se indicarán los tiempos de equipamiento de la máquina para iniciar la fase y los tiempos de reajuste en caso de que sea necesario reajustar el centro de trabajo entre una ejecución y otra de la misma fase, respectivamente en los campos *tempo attrezzaggio* y *tempo riattrezzaggio*. Se podrá indicar el número de máquinas y trabajadores necesarios para la fase de equipamiento en los campos *numero macchine* y *numero operai*. Además, en caso de que el equipamiento se realice con *Centro de trabajo / Máquina / Grupo de mano de obra* diferente al de la fase, será posible especificar los nuevos datos a través de los combos respectivos.
+**Número de Operarios (Numero Operai)**: indica el número de operarios necesarios para el desarrollo de la fase;  
 
-**materiali**: en esta pestaña se indicarán los materiales que se desean descargar no al final de las fases de producción de ese producto terminado, sino al final de la fase específica. Al asociar un material a una determinada fase, este ya no se visualiza en la ayuda entre los materiales que quedan por asociar a las fases individuales. Se recuerda que todos los materiales no asociados a una fase específica se descargarán junto con la última fase *productiva* y *movilizable* del ciclo;          
+**Tiempo de Operarios (Tempo Operai)**: el tiempo de uso necesario para el desarrollo de la fase, expresado en la unidad de medida indicada en el campo **Unidad de medida tiempo**;  
 
-**attrezzature**: en esta pestaña se ingresarán los equipos que se utilizarán dentro de la fase; se ingresará el equipo seleccionándolo a través del combo correspondiente entre los equipos codificados dentro de la tabla [Equipos (Attrezzature)](/docs/configurations/tables/production/equipments) que se encuentra en la sección de tablas dedicadas a la *produzione*. Si está activo, el indicador *schedulata* indicará que el equipo estará ocupado durante la producción; con este indicador la programación tomará en cuenta, no el artículo ingresado a través del combo de equipos, sino el artículo ingresado en los campos clase y código, el cual debe tener como *natura articolo* la tipología *attrezzatura* o *utensile*;  
+**Tiempo de espera en cola (Tempo attesa coda)**: indica el tiempo de espera/cola que se sumará a la duración de la fase; es el tiempo de espera al final de cada ejecución de esa fase;  
 
-**utensili**: en esta pestaña se ingresarán las herramientas eventuales, seleccionándolas a través del combo entre las que están codificadas dentro de la tabla [Herramientas (Utensili)](/docs/configurations/tables/production/tools) que se encuentra en la sección de tablas dedicadas a la *produzione*;  
+**Tiempo de espera — Cola crea compromiso (Tempo attesa-Coda crea impegno)**: si está activo, indica que el tiempo de espera/cola crea compromiso, por lo que no es posible comenzar una nueva fase porque el centro de trabajo está ocupado hasta que expire el tiempo de espera/cola.  
 
-**controllo qualità**: si se ha activado el indicador **controllo qualità** relacionado con la fase seleccionada, en esta pestaña se seleccionará el *piano di controllo*. Automáticamente se propondrán las *prove pianificate* que deben realizarse para el control del artículo. Para la comprensión de las columnas de esta cuadrícula se remite a la documentación relacionada con los Planes de control;     
+### Las pestañas
 
-**disegni**: en esta pestaña se ingresarán los diseños técnicos del artículo relacionados con las operaciones específicas de la fase; 
+**Equipamiento (Attrezzaggio)**: en esta pestaña se indicarán los tiempos de equipamiento de la máquina para poder iniciar la fase y los tiempos de reenvasado en caso de que sea necesario reacondicionar el centro de trabajo entre una ejecución y otra de la fase misma, respectivamente en los campos *Tiempo de equipamiento (Tempo attrezzaggio)* y *Tiempo de reenvasado (Tempo riattrezzaggio)*. Se podrá indicar el número de máquinas y operarios necesarios para la fase de equipamiento en los campos *Número de máquinas (Numero macchine)* y *Número de operarios (Numero operai)*. Además, si el equipamiento se realiza con *Centro de trabajo / Máquina / Grupo de mano de obra* diferente al de la fase, será posible especificar los nuevos datos mediante las respectivas combo;
 
-**annotazioni**: en estos campos se podrán ingresar anotaciones técnicas o de otro tipo relacionadas con la fase;  
+**Materiales (Materiali)**: en esta pestaña se indicarán los materiales que se desea que se descarguen no al final de las fases de producción de ese producto terminado, sino al final de la fase específica. Cuando se asocia un material a una fase determinada, este ya no se visualiza en la ayuda entre los materiales que quedan por asociar a las distintas fases. Se recuerda que todos los materiales no asociados a una fase específica se descargarán en concomitancia con la última fase *productiva (produttiva)* y *movible (movimentabile)* del ciclo;  
 
-**istruzioni operative**: permite cargar documentos de diversos tipos relacionados con la fase, los cuales luego también se visualizarán dentro de Fluentis MES;  
+**Equipos (Attrezzature)**: en esta pestaña se insertarán los equipos que se utilizarán dentro de la fase; se seleccionará el equipo mediante la respectiva combo entre los equipos codificados dentro de la tabla [Equipos (Attrezzature)](/docs/configurations/tables/production/equipments) presente en la sección de tablas dedicadas a la *Producción*. Si está activo, el indicador *Programada (Schedulata)* indicará que el equipo estará ocupado durante la producción; con este indicador, la programación tendrá en cuenta, no el artículo ingresado a través de la combo de los equipos, sino el artículo ingresado en los campos de clase y código, el cual debe tener como *Naturaleza de artículo (Natura articolo)* la tipología *Equipo (Attrezzatura)* o *Utensilio (Utensile)*;  
 
-**alternative**: en esta pestaña se podrán ingresar fases alternativas que serán consideradas, en función de la prioridad asignada, por los procedimientos de la [Programación general (Pianificazione generale)](/docs/planning/ms-master-scheduling/general-schedule) o por el [M.R.P. (M.R.P.)](/docs/planning/ms-master-scheduling/mrp/), si los indicadores respectivos **Considerar las fases alternativas (Considera la fasi alternative)**, presentes en los parámetros de los procedimientos están activos durante su ejecución;      
+**Utensilios (Utensili)**: en esta pestaña se insertarán los utensilios eventuales, seleccionándolos mediante combo entre aquellos codificados dentro de la tabla [Utensilios (Utensili)](/docs/configurations/tables/production/tools) presente en la sección de tablas dedicadas a la *Producción*;  
 
-**Datos extra de fases / Datos extra (Extra data fasi / Extra data)**: en estas dos pestañas se ingresarán, respectivamente, los datos extra para cada fase y los datos extra relacionados con el ciclo mismo, seleccionándolos a través del combo entre los que están precodificados en la tabla respectiva *Extradata* (Utility > Extradata). Para ingresar un dato extra se debe hacer clic con el botón derecho del ratón y seleccionar la opción agregar nuevo dato extra con la posibilidad de elegir si insertarlo en el primer nivel, o si ya hay datos extra ingresados, elegir si se desea insertar un dato extra hijo al dato extra ya existente; de esta manera aparecerá una nueva fila en la que se podrá proceder con la inserción.
+**Control de calidad (Controllo qualità)**: si se ha activado el indicador **Control de calidad (Controllo qualità)** relativo a la fase seleccionada, en esta pestaña se seleccionará el *Plan de control (Piano di controllo)*. Se propondrán automáticamente las *Pruebas planificadas* que se llevarán a cabo para el control del artículo. Para la comprensión de las columnas de esta cuadrícula se remite a la documentación relativa a los Planes de control;  
 
-*Botones específicos*:
+**Diseños (Disegni)**: en esta pestaña se insertarán eventuales dibujos técnicos del artículo relativos a los trabajos específicos de la fase;  
 
-> **inserisci fasi**: permite insertar nuevas fases en la cuadrícula relacionada con las fases;  
-> **cancella fase**: permite eliminar una o varias fases seleccionadas;  
-> **Actualizar de fase / Borrar datos de equipamiento (Aggiorna da fase / Cancella i dati attrezzaggio)**: aparecen en la Ribbon bar cuando nos posicionamos en la pestaña *Equipamiento*: a través del botón *Actualizar de fase* se actualizarán los datos de equipamiento tomándolos de la fase; a través del botón *Borrar datos de equipamiento* se eliminarán los datos relacionados con el equipamiento;  
-> **aggiorna materiali da distinta base**: este botón aparece en la Ribbon bar cuando nos posicionamos en la pestaña *Materiales*: a través de este botón se agregarán en la pestaña los materiales tomándolos de la lista de materiales del artículo;  
-> **Insertar / Borrar equipo (Inserisci / Cancella attrezzatura)**: estos botones aparecen en la Ribbon cuando nos posicionamos en la pestaña *Equipamiento*: a través de estos botones se pueden insertar los equipos o eliminar los equipos seleccionados;  
-> **Insertar / Borrar herramientas (Inserisci / Cancella utensili)**: estos botones aparecen en la Ribbon cuando nos posicionamos en la pestaña *Herramientas*: a través de estos botones se pueden insertar las herramientas o eliminar las herramientas seleccionadas.  
+**Notas (Annotazioni)**: en estos campos se pueden insertar eventuales anotaciones técnicas o de otro tipo relativas a la fase;  
 
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+**Instrucciones operativas (Istruzioni operative)**: permite cargar documentos de diversos tipos relacionados con la fase, los cuales luego serán visualizados también dentro de Fluentis MES;  
+
+**Datos alternativos (Alternative)**: en esta pestaña se podrán insertar fases alternativas que se considerarán, según la prioridad asignada, por los procedimientos de la [Programación general (Pianificazione generale)](/docs/planning/ms-master-scheduling/general-schedule) o por el [M.R.P. (M.R.P.)](/docs/planning/ms-master-scheduling/mrp/), si los respectivos indicadores **Considera fases alternativas (Considera la fasi alternative)**, presentes en los parámetros de los procedimientos, están activos durante su ejecución;  
+
+**Datos extra de fases (Extra data fasi) / Datos extra (Extra data)**: en estas dos pestañas se insertarán, respectivamente, los datos extra para cada fase y los datos extra relacionados con el ciclo mismo, seleccionándolos a través de combo entre los precodificados en la tabla respectiva *Extradata* (Utility > Extradata). Para insertar un dato extra se debe hacer clic en el botón derecho del ratón y seleccionar la opción agregar nuevo dato extra con la posibilidad de elegir si insertarlo en el primer nivel, o si ya hay datos extra insertados, elegir si se quiere insertar un dato extra hijo al dato extra ya existente; de esta forma aparecerá una nueva fila donde se podrá proceder con la inserción.
+
+<details>
+<summary> Los siguientes pestañas son utilizados solamente en el procedimiento de [Programación F.C.S (Schedulazione F.C.S)](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
+
+**Máquinas alternativas (Macchine alternative)**: si el trabajo debe realizarse en un centro con máquinas y ninguna de ellas está indicada en la fase, el programador podrá utilizar cualquier máquina del centro. Si se indica que la operación no puede realizarse en cualquier máquina del centro (porque no todas pueden realizar dicha operación), entonces a través de esta pestaña se puede proporcionar la lista de solo las máquinas permitidas (en unión con la que eventualmente se indique en la fase). Para cada máquina se puede indicar el respectivo tiempo de trabajo, de equipamiento, el número de operadores de trabajo y de equipamiento, si estos valores cambian al variar la máquina sobre la cual se realiza el trabajo.  
+
+**Recursos (Risorse)**: los recursos comunes necesarios para realizar un trabajo son las máquinas y los trabajadores, que se gestionan a capacidad finita por el programador. A través de esta pestaña se pueden indicar otros tipos de recursos productivos necesarios y vinculantes para el trabajo, y la cantidad respectiva. Cada uno de estos recursos se gestiona a capacidad finita. Ejemplos típicos son los moldes, herramientas de trabajo, medios de elevación, etc. Si se especifica una máquina, significa que ese tipo de recurso es necesario solo si el programador decide utilizar esa máquina. Si el campo de la máquina se deja vacío, entonces ese tipo de recurso es necesario independientemente de la máquina elegida por el programador.  
+
+**Valores de atributos de equipamiento (Valori attributi di attrezzaggio)**: a través de esta pestaña se asocian los [Atributos de equipamiento (Attributi di attrezzaggio)](/docs/configurations/tables/production/fcs-tables/setup-property) con el valor correspondiente a las fases que se trabajarán en máquinas con tiempos de equipamiento relevantes.  
+
+</details>
+
+*Botones específicos*:  
+
+> **Insertar fases (Inserisci fasi)**: permite insertar nuevas fases en la cuadrícula relativa a las fases;  
+> **Eliminar fase (Cancella fase)**: permite eliminar una o más fases seleccionadas;  
+> **Actualizar de fase / Eliminar los datos de equipamiento (Aggiorna da fase / Cancella i dati attrezzaggio)**: aparecen en la barra de herramientas cuando nos posicionamos en la pestaña *Equipamiento (Attrezzaggio)*: a través del botón *Actualizar de fase (Aggiorna da fase)* se actualizarán los datos de equipamiento tomándolos de la fase; a través del botón *Eliminar los datos de equipamiento (Cancella i dati di attrezzaggio)* se eliminarán los datos relativos al equipamiento;  
+> **Actualizar materiales de Lista de Materiales (Aggiorna materiali da Distinta Base)**: este botón aparece en la barra de herramientas cuando nos posicionamos en la pestaña *Materiales (Materiali)*: a través de este botón se agregarán en la pestaña los materiales tomándolos de la lista de materiales del artículo;  
+> **Insertar / Eliminar equipamiento (Inserisci / Cancella attrezzatura)**: estos botones aparecen en la barra cuando nos posicionamos en la pestaña *Equipos (Attrezzature)*: a través de estos botones se pueden insertar los equipos o eliminar los equipos seleccionados;  
+> **Insertar / Eliminar utensilios (Inserisci / Cancella utensili)**: estos botones aparecen en la barra cuando nos posicionamos en la pestaña *Utensilios (Utensili)*: a través de estos botones se pueden insertar los utensilios o eliminar los utensilios seleccionados.  
+
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
