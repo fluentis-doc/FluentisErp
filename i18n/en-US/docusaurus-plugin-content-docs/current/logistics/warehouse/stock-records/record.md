@@ -33,7 +33,7 @@ The **Offset** tab is active only if the reason entered in the first tab has an 
 Within the warehouse record, multiple warehouse movements can be entered for different items and with different management types.
 
 ## Record 
-This tab consists of a header and 4 different grids, the first of which contains the items that are being moved through the warehouse record; the other 3 grids are used depending on how the item registry and the warehouse reason entered in the header are set.
+This tab consists of a header and 4 different grids, the first of which contains the items that are being moved through the warehouse record; the other 3 grids are used depending on how the item registry and the warehouse template entered in the header are set.
 
 ### Record - Fixed Section 
 
@@ -86,13 +86,13 @@ In this first grid, the user can enter, using the *Help items*, the list of item
 
 **Operational quantity**: in this column, the quantity expressed in the item's management unit of measure appears in read-only. It is identical to the movement quantity if the *Alt. M.U.* column is empty; otherwise, this column becomes editable, and the user must manually enter the management quantity while seeing the movement quantity automatically calculated, which would then equal the management quantity divided or multiplied (depending on what is set in the *Initial Warehouse Parameters*) by the conversion factor set in the *Item registry* > *Alternative MU* tab;
 
-**Amount movement**: in this column, the value of *last cost, average cost, standard cost, or sale price* appears automatically, depending on the setting of the warehouse reason used in the record.  
+**Amount movement**: in this column, the value of *last cost, average cost, standard cost, or sale price* appears automatically, depending on the setting of the warehouse template used in the record.  
 If in the reason, the proposed cost indicates *None*, the procedure proposes a value of zero for the record's cost.  
 If the *Alt. M.U.* column is empty, the movement amount is always identical to the management amount; otherwise, this column should contain the unit amount of the item based on the alternative unit of measure entered in the movement line.  
 If in the *Initial Warehouse Parameters* the *Show tooltip for stock in records* flag is activated for the current year, the procedure displays the stock of that item in the warehouse where the movement is being created in a tooltip, exactly at the moment when the user is entering or modifying the quantity itself.  
 If the stock is insufficient and in the *Initial Warehouse Parameters* the *Allow negative stock* flag is deactivated for that warehouse for the current year, the movement row will not be saved.
 
-**Operational amount**: in this column, the value of *last cost, average cost, standard cost, or selling price* appears automatically, depending on the setting of the warehouse reason used in the record.  
+**Operational amount**: in this column, the value of *last cost, average cost, standard cost, or selling price* appears automatically, depending on the setting of the warehouse template used in the record.  
 If in the reason, the proposed cost indicates *None*, the procedure proposes a value of zero for the record's cost.  
 If the *Alt. M.U.* column is empty, the management amount is always identical to the movement amount; otherwise, in this column, which is always read-only, the unit value of the movement is calculated based on the management unit of measure using the following formula: *Movement Amount × Movement Quantity / Management Quantity*;
 
@@ -106,7 +106,7 @@ If the *Alt. M.U.* column is empty, the management amount is always identical to
 
 **Notes**: in this field, a free note can be entered regarding that particular line of the warehouse record;
 
-**Location**: in this field, the location from which the item will be shipped or on which the item will be loaded is specified, obviously based on the type of warehouse reason (loading/unloading);   
+**Location**: in this field, the location from which the item will be shipped or on which the item will be loaded is specified, obviously based on the type of warehouse template (loading/unloading);   
 
 **Net weight**: the total net weight of the item rows is reported. It is the net weight of the item registry multiplied by the quantity of the row;
 
@@ -118,7 +118,7 @@ When the user proceeds to save the movement row, the procedure can either succes
 
 **Batches**
 
-In this grid, active only if the warehouse reason used has the *Batches management* flag activated and if the item is designated as a batch-managed item, the user must necessarily enter information related to the batch or the batches to be moved.
+In this grid, active only if the warehouse template used has the *Batches management* flag activated and if the item is designated as a batch-managed item, the user must necessarily enter information related to the batch or the batches to be moved.
 
 As we know, the warehouse record can be for loading or unloading; depending on the two different cases, the batch grid has different uses and settings.
 
@@ -172,7 +172,7 @@ Once the user has completed the entry of batches to be unloaded in the *Batches*
 
 **Serial number**
 
-In this grid, active only if the warehouse reason used has the *Batches manag.* flag activated and if the item is designated as a serial number-managed item, the user must necessarily enter information related to the serial numbers to be moved.
+In this grid, active only if the warehouse template used has the *Batches manag.* flag activated and if the item is designated as a serial number-managed item, the user must necessarily enter information related to the serial numbers to be moved.
 
 As we know, the warehouse record can be for loading or unloading; depending on the two different cases, the Serial Numbers grid has different uses and settings.
 
@@ -240,8 +240,8 @@ Please refer to the documentation regarding the [Extra Data](/docs/configuration
 
 ## Counterparty
 
-This tab is exactly the same as the *Record* tab but is active only if the warehouse reason set in the *Record* tab has a warehouse and a counterparty reason.  
-Counterparty reasons are set when you want to manage a double warehouse movement with a single record. Therefore, in the warehouse reason table, it is possible to set a loading reason as a counterpoint to a unloading reason and vice versa.
+This tab is exactly the same as the *Record* tab but is active only if the warehouse template set in the *Record* tab has a warehouse and a counterparty reason.  
+Counterparty reasons are set when you want to manage a double warehouse movement with a single record. Therefore, in the warehouse template table, it is possible to set a loading reason as a counterpoint to a unloading reason and vice versa.
 
 In the *Offset* tab, all the data set in the *Record* tab is reported, with the possibility for the user to modify only some of the header data: Internal Document, Reference Document, Sales Order.
 

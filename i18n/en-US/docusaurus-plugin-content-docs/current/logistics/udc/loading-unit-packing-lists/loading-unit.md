@@ -62,7 +62,7 @@ At this point, the user can enter, in the *Loading Unit Detail* tab, the load un
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | PickingList |
 
-For this parameter, the warehouse reason can be left empty.
+For this parameter, the warehouse template can be left empty.
 
 :::note Note
 If in the [Load/Unload Parameters for user](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) a single warehouse is associated for that user, it will be proposed by default; otherwise, if there are multiple warehouses associated, none will be proposed by default, and the user can only choose among those entered.
@@ -108,6 +108,6 @@ Otherwise, it is possible to enter the list via the **Open** button and view the
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmUnloadPickingList |
 
-This parameter must be created with the warehouse of the *picking list* and with a warehouse reason with unloading type and without a counter-party.
+This parameter must be created with the warehouse of the *picking list* and with a warehouse template with unloading type and without a counter-party.
 
 For all information on how to encode the barcodes to be scanned in the **Input code** field, refer to the page regarding the [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).

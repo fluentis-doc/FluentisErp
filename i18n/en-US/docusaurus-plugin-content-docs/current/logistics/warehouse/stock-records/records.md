@@ -15,7 +15,7 @@ From this form, you can also insert a new warehouse record using the **New** but
 
 **Warehouse**: the column displays the code of the warehouse for which the record was generated;   
 
-**Template**: the column displays the code of the warehouse reason that generated the movement and thus has been entered in the header of the record;  
+**Template**: the column displays the code of the warehouse template that generated the movement and thus has been entered in the header of the record;  
 
 **Date**: the column displays the date of entry of the warehouse record;   
 

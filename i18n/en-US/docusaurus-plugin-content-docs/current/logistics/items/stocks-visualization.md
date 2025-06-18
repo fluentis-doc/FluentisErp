@@ -59,7 +59,7 @@ In the **Detail** tab of the item stock, you can use the **Generate Records** bu
 - select an *ITEM* in the result grid, 
 - choose a *Warehouse* from the filters 
 - set the stock display with the flag for displaying **Positive Stock** or **Negative Stock** depending on whether you want to create a *Unload* or *Load* record,
-- press the *Generate Records* button, which will open the *MOVEMENT* form where you need to enter the values for *Template*, *Quantity*, *Posting date*, and optionally *Location*. The warehouse reasons present in the combo are of type *Load* if the negative stock display flag is active, and *Unload* if the positive stock display flag is active.
+- press the *Generate Records* button, which will open the *MOVEMENT* form where you need to enter the values for *Template*, *Quantity*, *Posting date*, and optionally *Location*. The warehouse templates present in the combo are of type *Load* if the negative stock display flag is active, and *Unload* if the positive stock display flag is active.
 - once you finish entering the fields in the *MOVEMENT* form, pressing the *OK* button will open the recently created *Record* for any modifications, and the *Stocks Visualization* screen will already be updated based on the entered record.   
 
 When entering a reason with a counterpart in the *MOVEMENT* form, this will be proposed in the **Offset template** field along with its **Location** if codified in the reason table.    

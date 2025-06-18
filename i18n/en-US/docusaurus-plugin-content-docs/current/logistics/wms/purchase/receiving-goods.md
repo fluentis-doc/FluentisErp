@@ -22,7 +22,7 @@ After selecting the supplier order, through the *Create delivery note* button, y
 Additionally, information related to the first item on the order will be displayed, along with the header information of the order itself.
 
 > **Warehouse**: indicates the warehouse where movements will be made;          
-> **Warehouse template**: indicates the warehouse reason for the movements;     
+> **Warehouse template**: indicates the warehouse template for the movements;     
 > **Delivery note type**: indicates the type of Delivery Note with which the transport document will be created;                
 > **Date**: indicates the date of the Delivery Note being created; by default, today’s date is proposed;     
 > **Order**: indicates the supplier order number;           

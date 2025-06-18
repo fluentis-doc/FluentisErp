@@ -65,7 +65,7 @@ The related warehouse movement will be generated only through the [Transfer Conf
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | TransferPickingList |
 
-For this parameter, the warehouse reason can be left empty.
+For this parameter, the warehouse template can be left empty.
 
 :::note Note
 If a single warehouse is associated for that user in the [Loading/Unloading Parameters by User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping), it is proposed by default; otherwise, if more than one is associated, none is proposed by default, and the user can only choose from those entered.

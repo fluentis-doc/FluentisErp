@@ -13,7 +13,7 @@ The form resembles a warehouse registration and the data to be entered for the d
 **Number**: allows you to manually enter the document number;       
 **Responsible**: indicates the user who created the document and is automatically entered;         
 **Warehouse**: indicates the warehouse in which the movement will take place;        
-**Template**: indicates the warehouse reason with which the movement will be made.        
+**Template**: indicates the warehouse template with which the movement will be made.        
 
 Subsequently, you need to enter, in the central grid **List of executed operations**, all consumed items by filling in the fields:
 

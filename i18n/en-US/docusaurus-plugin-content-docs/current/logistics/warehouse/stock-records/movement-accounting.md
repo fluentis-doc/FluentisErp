@@ -16,7 +16,7 @@ After setting all the desired filters, simply click the Search button to view th
 
 The results grid consists of the following fields:     
 **Warehouse**: the field shows the code of the warehouse where the record was generated;      
-**Template**: the field shows the code of the warehouse reason used for the movement and thus included in the header of the record;      
+**Template**: the field shows the code of the warehouse template used for the movement and thus included in the header of the record;      
 **Date**: the field shows the date of the warehouse record entry;     
 **Number**: the field shows the progressive number of the warehouse record;     
 **Reference doc.**: the field shows what is present in the *Reference doc.* field in the header of the record;      
@@ -41,7 +41,7 @@ Additionally, in these last two tables, there is the possibility to view the cor
 
 The results grid of the **Documents** contains the following main fields:     
 **Warehouse**: the field shows the code of the warehouse where the record was generated;     
-**Warehouse Reason**: the field shows the code of the warehouse reason used for the movement and has thus been included in the header of the record;     
+**warehouse template**: the field shows the code of the warehouse template used for the movement and has thus been included in the header of the record;     
 **Accounting date**: the field shows the accounting date of the warehouse record;     
 **Movement no.**: the field shows the progressive number of the warehouse record;     
 **Document**: the field shows what is present in the *Reference doc.* field in the header of the record;     
