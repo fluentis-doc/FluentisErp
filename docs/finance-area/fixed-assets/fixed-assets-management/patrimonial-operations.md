@@ -96,6 +96,17 @@ Al salvataggio della riga con flag *Contabilizzato*, Fluentis chiederà se si vu
 
 Il flag di Ammortamento fiscale prevede la gestione fiscale della riga ammortamento: viene proposto sulla base dello stesso flag previsto in categoria cespite. In qualche caso può essere utilizzato manualmente per rilevare a libro cespiti, il giro degli ammortamenti anticipati utilizzati nel bilancio ordinario ad ammortamenti fiscali da gestire solo per il calcolo della tassazione. La gestione fiscale, invece, si ha attraverso la valorizzazione dei campi con gli importi deducibili/indeducibili dell'ammortamento, valorizzati automaticamente sulla base della percentuale di deducibilità associata al cespite o alla sua categoria.
 
+### Ammortamento indeducibile
+Sono presenti due colonne per il calcolo della quota *deducibile* ed *indeducibile* dell'ammortamento.
+
+La percentuale di indeducibilità dell'ammortamento è definita attraverso il campo ***Tipo deducibilità*** all'interno delle [**categorie cespite**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+
+Il **Conto / Sottoconto/ Descrizione non deducibile** viene popolato in automatico se all'interno della categoria cespite in abbinamento con il Tipo deducibilità è stato definito il conto contabile da utilizzare automaticamente.
+
+Se nelle procedure di contabilizzazione automatica ammortamento viene attivato il flag **Usa conto indeducibile**, la parte non deducibile fiscalmente dell'ammortamento sarà contabilizzata automaticamente sul conto specifico.
+
+
+
 Nell'ultima sezione è presente il dettaglio di valorizzazione a centro di costo degli ammortamenti selezionati nella seconda griglia.
 
 

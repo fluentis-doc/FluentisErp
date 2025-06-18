@@ -9,7 +9,21 @@ Questa procedura permette di eseguire/ripristinare la creazione del compenso per
 
 ## Liquidazioni provvigioni
 
-In questo tab, l'utente ha la possibilità di cercare le liquidazioni non ancora valorizzate in un compenso percipiente. Dopo aver selezionato le varie righe, premendo il pulsante *Calcolo liquidazioni* si crea il compenso percipiente.
+In questo tab, l'utente ha la possibilità di cercare le liquidazioni non ancora valorizzate in un compenso percipiente. 
+
+I filtri disponibili per agevolare la ricerca sono:
+- Sottoconto agente
+- Anno / Numero / Data della liquidazione (da - a)
+- Descrizione attribuita in fase di creazione della liquidazione agente
+
+:::note[Flag Ricalcola Enasarco]
+Con il flag attivo verrà sempre eseguito un ricalcolo dei valori relativi ai contributi Enasarco, pertanto, se all'interno della liquidazione provvigioni (entrando in modifica dopo la creazione) è stato impostato il radio button *Calcolo Manuale* (al fine di poter forzare manualmente i dati calcolati da sistema), se non si desidera che i dati enasarco vengano **comunque** ricalcolati e resettati nel compenso, occorre disattivare il flag prima di eseguire la creazione del compenso.
+
+Il flag **NON** influisce sul ricalcolo dei dati relativi alla ritenuta d'acconto (eventualmente presente nella liquidazione provvigionale).
+:::
+
+
+Dopo aver selezionato le varie righe, premendo il pulsante *Calcolo liquidazioni* si crea il compenso percipiente.
 
 
 #### Pulsanti specifici

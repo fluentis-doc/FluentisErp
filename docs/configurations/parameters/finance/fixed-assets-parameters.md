@@ -34,6 +34,8 @@ I parametri del modulo Cespiti si trovano in **Parametri > Amministrativa**.
 
 - **Causale contabilizzazione ammortamenti**: campo per inserire la causale di default da proporre nella form di contabilizzazione ammortamenti, anche per il controlling.
 
+- **Usa conto non deducibile**: questo flag permette di predefinire il valore del medesimo parametro all'interno delle form di contabilizzazione ammortamenti o ripresa ammortamento nelle chiusure infrannuali. Se attivato, lo stesso flag sarà proposto attivo all'interno delle maschere citate e la parte non deducibile fiscalmente dell'ammortamento sarà contabilizzata automaticamente sul conto specifico che è stato definito all'interno della tabella delle [**categorie cespite**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+
 - **Singola registrazione in contabilizzazione ammortamenti**: con questa spunta ogni scheda cespite darà luogo ad una singola registrazione contabile di ammortamento.
 
 - **Abilitazione centro contabilità**: questo flag abilita la lettura del centro di costo inserito nel tab **Dettaglio** della scheda cespite il quale si riferisce alla quota ammortamento calcolata dalle logiche contabili, e rende non obbligatoria la gestione alternativa di utilizzo dell'ammortamento tecnico gestito nell'apposita tab (Ammortamento per controlling).

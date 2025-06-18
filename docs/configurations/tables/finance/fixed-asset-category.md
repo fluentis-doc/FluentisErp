@@ -75,6 +75,8 @@ La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento a
 
 **Descr. deducibilità**: descrizione del tipo di deducibilità.
 
+**Conto / sottoconto / descrizione Non Deducibile**: in questo campo è possibile inserire il sottoconto contabile sul quale contabilizzare automaticamente la parte indeducibile fiscalmente della quota di ammortamento. Il conto viene riportato all'interno della scheda cespite in corrispondenza della riga relativa alla quota di ammortamento. Affinchè venga movimentato, sia in fase di contabilizzazione dell'ammortamento annuale, sia in fase di ripresa ammortamento nelle chiusure dei conti infrannuali, è necessario attivare l'apposito flag. Il flag può essere predefinito all'interno dei [**parametri cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters).
+
 #### Pulsanti specifici
 
 **Cerca nella tabella superiore**: permette di effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione.  
