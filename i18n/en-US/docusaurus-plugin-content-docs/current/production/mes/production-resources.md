@@ -146,7 +146,7 @@ This section allows hiding various unnecessary information within Fluentis MES.
 > **Tolerance limits**: if active, hides information related to Tolerance Limits (L.min.(toll-), L.min.(toll+), L.max.(toll-) and L.max.(toll+)) in the *Quality Controls* tab;     
 > **Control Type and Frequency**: if active, hides information related to the Control Test Type and Frequency in the *Quality Controls* tab;        
 > **Warehouse**: if active, hides information related to the warehouse in the *Quality Controls* tab;         
-> **Template**: if active, hides information related to the warehouse reason for non-conforming items in the *Quality Controls* tab;       
+> **Template**: if active, hides information related to the warehouse template for non-conforming items in the *Quality Controls* tab;       
 
 ### **Other**
 

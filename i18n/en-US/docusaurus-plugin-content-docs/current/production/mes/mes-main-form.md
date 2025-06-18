@@ -127,7 +127,7 @@ The *Tests* table consists of the following fields:
 > *Outcome*: indicates the outcome of the test and is determined automatically based on the parameters entered;       
 > *Non-conforming quantity*: indicates the quantity that has been detected as non-conforming;        
 > *Warehouse*: indicates the warehouse where non-conforming items are present; this value is automatically reported based on what is indicated in the *Type of item control*;                    
-> *Warehouse reason for non-conforming items*: indicates the reason with which non-conforming items will be removed; this value is automatically reported based on what is indicated in the *Type of item control*. This transaction is made at the time of registering the production declaration;                    
+> *Warehouse template for non-conforming items*: indicates the reason with which non-conforming items will be removed; this value is automatically reported based on what is indicated in the *Type of item control*. This transaction is made at the time of registering the production declaration;                    
 > *Notes*: allows inserting a free note.       
 
 The **Multiple Value Detection** table is used if multiple values are detected, and these will contribute to determining the *Average of Detected Values*.
