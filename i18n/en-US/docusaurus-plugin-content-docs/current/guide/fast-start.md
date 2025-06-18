@@ -51,7 +51,7 @@ Tables involved (Stored Procedure Fluentis.SH_CreateNewYear_IT):
  - > Portfolio Parameters (active - effects) 
  - > Outstanding Parameters 
  - > MPS Parameters 
- - > Accounting Reasons 
+ - > Accounting templates 
  - > VAT Codes 
  - > VAT Registers
  - > Document Types 
@@ -77,7 +77,7 @@ Tables involved (Stored Procedure Fluentis.SH_CreateNewYear_IT):
  - > Effects Numbering 
  - > [Sales Document Numbering](/docs/configurations/tables/fluentis-numerations)  
  - > [Purchase Document Numbering](/docs/configurations/tables/fluentis-numerations)  
- - > Invoice Types ([purchase](/docs/configurations/tables/purchase/purchase-invoices-type) and [sales](/docs/configurations/tables/sales/invoices-type)) with links to accounting reasons
+ - > Invoice Types ([purchase](/docs/configurations/tables/purchase/purchase-invoices-type) and [sales](/docs/configurations/tables/sales/invoices-type)) with links to accounting templates
  - > Delivery Note Types ([purchase](/docs/configurations/tables/purchase/purchase-delivery-notes-type) and [sales](/docs/configurations/tables/sales/delivery-notes-type)) linking to invoice types
  - > Order Types ([purchase](/docs/configurations/tables/purchase/purchase-orders-type) and [sales](/docs/configurations/tables/sales/sales-order-types)) linking to delivery note types
  - > [Offer Types](/docs/configurations/tables/sales/sales-offer-type) 
@@ -226,8 +226,8 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
   1. Pay attention to populate the PA Code field on exemption/exclusion/non-taxability codes for Electronic Invoices
   2. Check the IN VAT Declaration field necessary for quarterly VAT settlements
   3. Check where necessary the VAT field at 0 in LG which allows VAT lines at zero
-  4. Check where necessary the VAT field for automatic reasons (reverse charge cases with non-deductibility on purchase)
-  5. Check the field Exclude from automatic reasons (mixed reverse charge cases - non-reverse part)
+  4. Check where necessary the VAT field for automatic templates (reverse charge cases with non-deductibility on purchase)
+  5. Check the field Exclude from automatic templates (mixed reverse charge cases - non-reverse part)
     
 
 </details>
@@ -241,7 +241,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
   1. Plan a distribution between Italy, EU and Extra EU, advisable to distinguish between goods and services EU in light of document codes TD17 - TD18 for self-invoices to communicate to the SDI (advisable distribution also for extra EU)
   2. For purchase registers in reverse charge (Italy and EU), plan the respective registers on the sales side for the giroconto, do not share the giroconto register with EU sales (for example).
   3. It is advisable to provide for a specific register for VAT settlements (to facilitate the definitive print and reprint in case only this section is unlocked)
-  4. Plan (and then verify) the correct matching between Invoice Type, Invoice Type Numbering, Accounting Reason, and VAT Register to avoid creating gaps in protocols or conflicts. The reasons on the sales side generally have the option to impose the protocol equal to the invoice number.
+  4. Plan (and then verify) the correct matching between Invoice Type, Invoice Type Numbering, Accounting template, and VAT Register to avoid creating gaps in protocols or conflicts. The templates on the sales side generally have the option to impose the protocol equal to the invoice number.
   5. Ensure you have entered the current year and any previous years if necessary, then the year will be created automatically by the new year counter generation utility.
     
 
@@ -303,7 +303,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
   1. Insert the current year and any previous years if necessary, then the year will be created automatically by the utility for generating the new year counters.
   2. Fill in the three date ranges for exercise management
-  3. Fill in, if available, also the reasons for closing and opening accounts, or take them back later
+  3. Fill in, if available, also the templates for closing and opening accounts, or take them back later
   4. Fill in the VAT periodicity
   5. Enter the pairings between ledgers related to customers and suppliers, banks, and agents, and the respective account types
   6. Define the accounts for automatic procedures in the second tab
@@ -313,19 +313,19 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>GENERAL ACCOUNTING REASONS  Click to expand!</summary>
+  <summary>GENERAL ACCOUNTING TEMPLATE  Click to expand!</summary>
  
  ## Necessary for accounting
 
-  1. Plan the reasons connected to the main types of purchase and sale invoices, and connect them to their respective VAT registers (A template with general accounts on Customer Supplier and cost revenue, specific sub-account for credit debt VAT is necessary) Be careful with the type of amount in the lines.
-  2. Also plan reasons for giroconto for Reverse Charge and EU
-  3. Provide reasons for payments and collections with account closing (necessary also for bank transfer lists, etc.) pay attention to the template and type of amount in the lines
-  4. Provide reasons for the phases of the active portfolio (issuance of effects, Presentation and Credit), presentation and credit do not need a template, while issuance requires a template Effects in portfolio to Customer
-  5. Plan reasons for credit notes with inverted template signs, for reverse charge use the inversion of the first and share the giroconto that has the option for automatic sign inversion
-  6. Provide reasons for recipients (with template) and for recipient payments (template not needed)
-  7. Provide reasons for opening closing, accruals, and deferrals, amortizations (template not needed)
-  8. It is advisable to provide for other reasons for the journal entries and a general journal entry reason without a template.
-  9. Provide settings for sending self-invoices to SDI and a reason for EU service purchases without VAT connecting to the self-invoice  
+  1. Plan the templates connected to the main types of purchase and sale invoices, and connect them to their respective VAT registers (A template with general accounts on Customer Supplier and cost revenue, specific sub-account for credit debt VAT is necessary) Be careful with the type of amount in the lines.
+  2. Also plan templates for giroconto for Reverse Charge and EU
+  3. Provide templates for payments and collections with account closing (necessary also for bank transfer lists, etc.) pay attention to the template and type of amount in the lines
+  4. Provide templates for the phases of the active portfolio (issuance of effects, Presentation and Credit), presentation and credit do not need a template, while issuance requires a template Effects in portfolio to Customer
+  5. Plan templates for credit notes with inverted template signs, for reverse charge use the inversion of the first and share the giroconto that has the option for automatic sign inversion
+  6. Provide templates for recipients (with template) and for recipient payments (template not needed)
+  7. Provide templates for opening closing, accruals, and deferrals, amortizations (template not needed)
+  8. It is advisable to provide for other templates for the journal entries and a general journal entry template without a template.
+  9. Provide settings for sending self-invoices to SDI and a template for EU service purchases without VAT connecting to the self-invoice  
  
     
 </details>
@@ -386,7 +386,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
  ## Necessary for recipient management
 
   1. Provide necessary types for recipients (1040) at 20% withholding, for agents and for flat-rate taxpayers (0% on 100%)
-  2. Link the reasons for the compensation accounting 
+  2. Link the templates for the compensation accounting 
   3. Link the agent category in the type reserved for agents
    
 </details>
