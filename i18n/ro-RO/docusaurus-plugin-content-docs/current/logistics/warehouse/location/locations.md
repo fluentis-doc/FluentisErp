@@ -1,89 +1,74 @@
 ---
-title: Ubicazioni
+title: Locatii  
 sidebar_position: 1
 ---
 
 
-:::important A cosa serve
-La gestione delle ubicazioni in Fluentis è un elemento cruciale per l'ottimizzazione delle operazioni di magazzino. Questo modulo consente agli utenti di strutturare le ubicazioni di stoccaggio all'interno dei magazzini secondo uno schema gerarchico, facilmente modificabile per adattarsi alle esigenze aziendali. Ogni ubicazione può essere definita in base a vari parametri, inclusi il tipo di ubicazione (ad esempio, area, ripiano, scaffale, sezione) e le sue caratteristiche fisiche come larghezza, altezza e capacità di carico.
+:::important Utilizare
+Gestionarea locațiilor în Fluentis reprezintă un element esențial pentru optimizarea operațiunilor de gestiune a stocurilor. Acest modul le oferă utilizatorilor posibilitatea de a structura spațiile de stocare din cadrul depozitelor conform unei scheme ierarhice flexibile și ușor de adaptat. Fiecare locație poate fi definită în funcție de diferiți parametri, precum tipul locației (ex: zonă, raft, poliță, secțiune) și caracteristicile sale fizice, cum ar fi lățimea, înălțimea sau capacitatea de încărcare.
 
-Grazie alla creazione di un albero delle ubicazioni, gli operatori possono inserire nuove ramificazioni e visualizzare il contenuto di ciascuna ubicazione, con dettagli sugli articoli e le quantità in giacenza. La sezione degli attributi dell'ubicazione permette ulteriormente una personalizzazione, consentendo di definire requisiti specifici per le singole ubicazioni.
+Prin utilizarea unui arbore de locații, operatorii pot adăuga noi nivele de organizare și pot vizualiza conținutul fiecărei locații, cu detalii privind articolele și cantitățile disponibile în stoc. Secțiunea dedicată atributelor locațiilor permite personalizarea acestora, oferind posibilitatea de a defini cerințe specifice pentru fiecare locație în parte.
 
-Questa gestione efficiente delle ubicazioni non solo migliora il controllo delle giacenze, ma supporta anche la logistica operativa, contribuendo a una gestione più agile e efficace delle scorte all'interno dell'azienda.
+Această abordare eficientă a gestionării locațiilor contribuie nu doar la un control mai bun al stocurilor, ci și la susținerea logisticii operaționale, asigurând o administrare mai agilă și performantă a fluxurilor interne din companie.
 :::
 
-La form consente all'operatore di creare e gestire l’albero delle ubicazioni di magazzino.
 
-Attraverso i filtri è possibile fare una ricerca mirata secondo i parametri e visualizzare il risultato dell'interrogazione nelle griglie dei risultati. Tali risultati possono essere raggruppati per vari parametri per facilitare la lettura dei dati. L'unico parametro di filtro obbligatorio è quello del magazzino.
+Prin intermediul filtrelor disponibile, utilizatorii pot efectua căutări pe baza unor parametri specifici, iar rezultatele interogării sunt afișate în tabele dedicate. Acestea permit gruparea datelor pe diferiți parametri, facilitând astfel analiza și interpretarea informațiilor.
 
-I risultati della ricerca sono suddivisi in due sezioni: una prima sezione in cui sono inserite le informazioni relative alle ubicazioni del magazzino, mentre nella seconda è presente il dettaglio degli articoli e attributi relativi all’ubicazione selezionata.
+Rezultatele cautarii sunt impartite in doua sectiuni: o prima sectiune in care sunt inserate informatiile referitoare la locatiile depozitului, iar in a doua este prezentat detaliul articolelor si atributelor legate de locatia selectata.
 
-*Le informazioni relative alla prima sezione della finestra, nel dettaglio sono:*
+### Informații generale locație
 
-**Ubicazione**: Indica l’ubicazione di magazzino;
+- **Locație**: Reprezintă locația fizică din cadrul depozitului.  
+- **Cod**: Codul unic atribuit locației.  
+- **Descriere**: Descrierea locației pentru o identificare mai facilă.  
+- **Tip locație**: Tipul locației, cum ar fi zonă, raft sau secțiune.  
+- **Descriere tip locație**: Informații suplimentare despre tipul locației.  
+- **Stare locație**: Codul care indică starea actuală a locației. 
+- **Descriere stare locație**: Detalii privind starea locației.  
+- **Locație de grup**: Specifică dacă locația face parte dintr-un grup de locații.
 
-**Codice**: indica il codice dell’ubicazione di magazzino;
+### Atribute locație 
 
-**Descrizione**: indica la descrizione dell’ubicazione di magazzino;
+În această secțiune se pot introduce detalii tehnice și caracteristici ale fiecărei locații:
 
-**Tipo ubicazione**: indica il codice del tipo dell’ubicazione di magazzino;
+- **Lățime**: Lățimea disponibilă a locației.  
+- **Înălțime**: Înălțimea maximă utilizabilă a locației.  
+- **Adâncime**: Adâncimea locației.  
+- **Capacitate**: Capacitatea maximă de încărcare a locației.  
+- **Prioritate**: Nivelul de prioritate atribuit locației în procesul de alocare.  
+- **Număr straturi**: Numărul maxim de straturi de marfă care pot fi depozitate.  
+- **Tip unitate de încărcare**: Tipul unității de încărcare acceptate (ex: palet, container).  
+- **Număr unități de încărcare**: Numărul maxim de unități de încărcare admise.  
+- **Stoc minim**: Nivelul minim de stoc recomandat pentru această locație.  
+- **Stoc maxim**: Nivelul maxim de stoc admis în locație.
 
-**Descrizione tipo ubicazione**: indica la descrizione del tipo dell’ubicazione di magazzino;
+### Parametri locație
 
-**Stato ubicazione**: indica il codice dello stato dell’ubicazione di magazzino;
+- **Mono articol**: dacă este activ, înseamnă că locația este mono articol, adică nu va fi posibilă mișcarea unui articol diferit față de cel deja existent în acea locație.
 
-**Descrizione stato ubicazione**: indica la descrizione dello stato dell’ubicazione di magazzino;
+- **Mono lot**: dacă este activ, înseamnă că locația este mono lot, adică nu va fi posibilă mișcarea aceluiași articol cu un lot diferit față de cel deja prezent în locație.
 
-**Ubicazione gruppo**: indica che si tratta di un’ubicazione di gruppo.
+**Activă**: daca este activ, înseamnă ca locatia este activă;  
 
-Nella seconda parte della finestra nel tab *Attributi dell’ubicazione* è possibile andare ad inserire una serie di dati relativi all’ubicazione.
+**Blocată**: daca este activ, înseamnă ca locatia este blocată (deci este o stocare ne-disponibila);  
 
-**Larghezza**: indica la larghezza dell'ubicazione; 
+**Rezervată**: daca este activ, înseamnă ca locatia este rezervata;  
 
-**Altezza**: indica l'altezza dell'ubicazione; 
+**De stoc**: daca este activ, înseamnă ca locatia este de tip stoc (folosit in personalizari);  
 
-**Profondità**: indica la profondità dell'ubicazione; 
+**De dispoziție livrare**: daca este activ, înseamnă ca locatia este de tip picking (folosit in personalizari);  
 
-**Portata**: indica la portata dell'ubicazione; 
+**Obsoletă**: daca este activ, înseamnă ca locatia este obsoletă.
 
-**Priorità**: indica la priorità dell'ubicazione; 
+### Articole
 
-**Numero strati**: indica il numero massimo di strati che è possibile caricare nell'ubicazione; 
+În acest tab pot fi afișate articolele încărcate în acea locație.
 
-**Tipo unità di carico**: indica il tipo di unità di carico che è possibile caricare nell'ubicazione;
+### Butoane specifice
 
-**Numero unità di carico**: indica il numero di unità di carico che è possibile caricare nell'ubicazione;
-
-**Scorta minima**: indica la scorta minima per quell'ubicazione;
-
-**Scorta massima**: indica la scorta massima per quell'ubicazione.
-  
-Inoltre, nell'expander *Parametri* possono essere anche attivati i seguenti flag relativi alla singola ubicazione:
-
-**Mono articolo**: se attivo indica che l’ubicazione è mono articolo; quindi, non sarà possibile movimentare su quell’ubicazione un articolo diverso da quello già presente;
-
-**Mono lotto**: se attivo indica che l’ubicazione è mono lotto; quindi, non sarà possibile movimentare su quell’ubicazione uno stesso articolo con lotto diverso da quello già presente;
-
-**Attiva**: se attivo, indica che l’ubicazione è attiva;
-
-**Bloccata**: se attivo, indica che l’ubicazione è bloccata (quindi è una giacenza non disponibile);
-
-**Prenotata**: se attivo, indica che l’ubicazione è prenotata;
-
-**Di stock**: se attivo, indica che l’ubicazione è di tipo di stock (usato nelle personalizzazioni);
-
-**Di pick**: se attivo, indica che l’ubicazione è di tipo di picking (usato nelle personalizzazioni);
-
-**Obsoleta**: se attivo, indica che l’ubicazione è obsoleta.
-
-Nel tab **Articoli** è possibile vedere quali sono gli articoli caricati su quell’ubicazione.
-
-*Pulsanti specifici*:
-
-> **Ricerca**: permette di ricercare i dati;   
-> **Cancella ubicazione**: permette di cancellare una riga delle ubicazioni;   
-> **Inserisci ubicazione figlia**: questo pulsante compare nella Ribbon bar dopo aver effettuato la ricerca; permette di inserire una nuova ubicazione figlia rispetto alla riga selezionata;   
-> **Inserisci ubicazione padre**: questo pulsante compare nella Ribbon bar dopo aver effettuato la ricerca; permette di inserire una nuova ubicazione padre rispetto alla riga selezionata;   
-> **Replica attributi**: questo pulsante compare nella Ribbon bar dopo aver effettuato la ricerca; permette di replicare gli attributi.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Caută**: permite căutarea datelor.  
+> **Șterge locație**: permite ștergerea unei locații.  
+> **Adaugă locație fiu**: buton disponibil în Ribbon bar după efectuarea căutării; permite introducerea unei noi locații fiu față de linia selectată.  
+> **Adaugă locație părinte**: buton disponibil în Ribbon bar după efectuarea căutării; permite introducerea unei noi locații părinte față de linia selectată.  
+> **Replica atribute**: buton disponibil în Ribbon bar după efectuarea căutării; permite replicarea atributelor.
