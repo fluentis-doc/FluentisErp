@@ -1,6 +1,6 @@
 ---
-title: Parámetros de Configuración de Agrupación (Parametri Configurazione Raggruppamento)
+title: Parámetros de Configuración de Agrupamiento
 sidebar_position: 5
 ---
 
-Trabajo en progreso (Work in progress)
+Trabajo en progreso 
