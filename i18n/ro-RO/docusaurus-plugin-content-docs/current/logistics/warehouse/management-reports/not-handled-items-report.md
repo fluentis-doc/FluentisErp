@@ -1,10 +1,10 @@
 ---
-title: Articoli non movimentati
+title: Articole fără mişcări
 sidebar_position: 1
 ---
 
-La stampa si trova sul percorso **Logistica > Magazzino  >  Stampe gestionali > Articoli non movimentati** e permette all'utente di interrogare facilmente il sistema ed estrapolare velocemente informazioni riguardanti gli articoli non movimentati a magazzino. Tale stampa permette di creare quindi delle statistiche di stampo logistico sugli articoli.
+Raportul se află pe calea **Logistică > Gestiune > Rapoarte de gestiune > Articole fără mişcări** și permite utilizatorului să interogheze sistemul și să extragă rapid informații referitoare la articolele fără mişcări din gestiune. Acest raport permite crearea de statistici de tip logistic privind articolele.
 
-Dopo l'inserimento dei filtri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+După introducerea filtrelor dorite, se pot lista rapoarte standard sau personalizate (anterior definite in *Gestionare rapoarte*). În cazul în care se dorește imprimarea unui rapor personalizat, este necesar să fie ales din tabelul  **Parametrii raport**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Pentru detalii despre funcționarea comună a form-urilor de imprimare, consultați [Vizualizare și listare](/docs/guide/common/operations-with-data/reports).

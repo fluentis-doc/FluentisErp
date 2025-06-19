@@ -1,24 +1,23 @@
 ---
-title: Indice di rotazione
+title: Indice de Rotaţie
 sidebar_position: 4
 ---
 
-La stampa si trova sul percorso **Logistica > Magazzino  >  Stampe gestionali > Indice di rotazione** e permette all'utente di interrogare il database per estrapolare una stampa riepilogativa degli articoli e del loro indice di rotazione.
+Raportul se află pe calea **Logistică > Gestiune > Rapoarte de gestiune > Indice de Rotaţie** și permite utilizatorului să interogheze baza de date pentru a extrage un raport sumar al articolelor și al indexului lor de rotație.
 
-Si chiama indice di rotazione del magazzino o tasso di rotazione del magazzino il rapporto tra la quantità esistente in media in magazzino (la cosiddetta scorta media) in un certo periodo di tempo e la quantità venduta nel corso dello stesso periodo di tempo. 
+Se numește **Indice de rotație gestiune** raportul dintre cantitatea existentă în medie în gestiune (cunoscută sub numele de *stoc mediu*) într-o anumită perioadă de timp și cantitatea vândută pe parcursul aceleași perioade de timp.  
 
-INDICE DI ROTAZIONE DEL MAGAZZINO = SCORTA MEDIA /SCARICO DI MAGAZZINO 
+**Indice de rotație a gestiunii = Stoc mediu / Descărcare de gestiune**
 
-Questo indice esprime il numero di volte in cui le scorte di merci si rinnovano completamente nell'arco di tempo preso in esame.
+Acest index exprimă numărul de ori în care stocurile de mărfuri se reînnoiesc complet în perioada analizată.  
+Perioada considerată poate fi un an, dar și o perioadă mai scurtă (o lună, un trimestru, un semestru etc.)
 
-Il lasso di tempo considerato potrà essere l'anno, ma anche un periodo inferiore (un mese, un trimestre, un semestre, ecc..)
-
-Il calcolo dell'indice di rotazione del magazzino è importante per comprendere qual è il tempo necessario affinché, i mezzi  finanziari investiti nelle merci, vengano recuperati.
+Calculul indicelui de rotație al gestiunii este important pentru a înțelege cât timp este necesar pentru ca fondurile financiare investite în mărfuri să fie recuperate.
 
 :::note Nota
-Per visualizzare i risultati riguardante l'indice di rotazione è necessario settare il flag **Indice di rotazione** nelle *Causali di magazzino* legate alle movimentazioni degli articoli e contemporaneamente il flag “Rimanenze” deve essere disattivato.
+Pentru a vizualiza rezultatele referitoare la indicele de rotație, este necesar să activați opțiunea **Indice de rotație** în *Şabloane Gestiune* asociate mișcărilor articolelor și în același timp opțiunea *Stocuri* trebuie să fie dezactivat.
 :::
 
-Dopo l'inserimento dei parametri desiderati è possibile stampare il report standard oppure personalizzato (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
+După introducerea parametrilor doriți, se poate imprima raportul standard sau personalizat (anterior definite in *Gestionare rapoarte*). În cazul în care se dorește imprimarea unui rapor personalizat, este necesar să fie ales din tabelul  **Parametrii raport**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Pentru detalii despre funcționarea comună a form-urilor de imprimare, consultați [Vizualizare și listare](/docs/guide/common/operations-with-data/reports).
