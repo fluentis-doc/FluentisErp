@@ -1,35 +1,35 @@
 ---
-title: Sottoscorta
+title: Substoc
 sidebar_position: 3
 ---
 
-La stampa si trova sul percorso **Logistica > Magazzino  >  Stampe gestionali > Sottoscorta** e permette all'operatore di effettuare dei controlli al fine di gestire correttamente le scorte. In particolare è possibile, dopo aver opportunamente compilato l'anagrafica articoli, interrogare il sistema per ricercare gli articoli che in futuro andranno in sottoscorta. E' inoltre possibile, una volta eseguita la procedura, emettere le richieste di acquisto in automatico e nei tempi corretti per gli articoli che vanno in sottoscorta.
+Raportul se află pe calea **Logistică > Gestiune > Rapoarte de gestiune > Substoc** și permite operatorului să efectueze verificări pentru a gestiona corect stocurile. În mod special, după completarea corespunzătoare a registrului articole, poate să interogheze sistemul pentru a căuta articolele care în viitor vor ajunge în sub-stoc. De asemenea, este posibil, după ce procedura a fost efectuată, să emită automat cereri de achiziție în timpii corecți pentru articolele care ajung în sub-stoc.
 
-**Tabelle e parametri**
+### Tabele și parametrii 
 
-Una serie di impostazioni di natura sia tabellare precodificata, che anche una corretta parametrizzazione degli algoritmi di base, sono consigliate prima di procedere con l'esecuzione del sottoscorta:
-- in *Anagrafica articoli* è necessario compilare il tab *Approvvigionamento* e in particolare i dati per l'approvvigionamento.        
-- nei *Parametri MRP* degli articoli che si desidera gestire con il sottoscorta è necessario che la *politica di gestione sia a scorta*.        
-- la Scorta minima deve essere minore o uguale al Punto di riordino.
+O serie de setări, atât de natură tabelară predefinită, cât și o parametrizare corectă a algoritmilor de bază, sunt recomandate înainte de a executa sub-stocului:
+- în *Registrul articolelor* este necesar să se completeze tab-ul *Aprovizionare*, în special datele pentru aprovizionare.        
+- în *Parametrii MRP* ai articolelor care vo fi gestionate pe sub-stoc, este necesar ca *politica de gestionare să fie pe stoc*.        
+- *Stocul minim* trebuie să fie mai mic sau egal cu *Momentul de reaprovizionare*.
 
-**Procedura**
+### Procedura 
 
-La procedura del sottoscorta utilizza un algoritmo che si basa sul consumo medio giornaliero calcolato dal tab *Approvvigionamento* dell'*Anagrafica articoli*.
+Procedura de sub-stoc utilizează un algoritm bazat pe consumul mediu zilnic calculat din tab-ul *Aprovizionare* al *Registrului articolelor*.
 
-Si parte quindi dalla giacenza al momento dell'elaborazione e si controlla se alla data richiesta, tramite il consumo medio, si va o meno in sottoscorta.
+Se pornește de la stocul din momentul procesării și se verifică dacă, la data solicitată, prin consumul mediu, se ajunge sau nu în sub-stoc.
 
-(Scorta minima - Punto di riordino) / Giorni per il riordino
+(*Stoc minim* - *Moment de reaprovizionare*) / *Zile pentru lansare comandă*
 
-La procedura permette di scegliere: **Articolo** (classe, codice articolo, descrizione), eventuale **Variante** solo per articoli gestiti a variante, la **Data** limite fino alla quale si vuole calcolare il sottoscorta. E' inoltre possibile abilitare la **Creazione automatica delle richieste di acquisto** per gli articoli in sottoscorta. Se viene attivata questa funzione è necessario specificare il **Tipo** richiesta documento e, volendo, una **Nota** da inserire in testata richiesta di acquisto.
+Procedura permite completarea câmpurilor: **Articol** (clasă, cod, descriere), eventuala **Variantă** doar pentru articolele gestionate pe variantă, **Data** limită până la care se dorește calcularea sub-stocului. De asemenea, este posibil să se activeze **Creare automată cereri de achiziție** pentru articolele în sub-stoc. Dacă această funcție este activată, este necesar să se specifice **Tipul** cererii documentului și, opțional, o **Notă** care să fie inserată în antetul cererii de achiziție.
 
-Dopo l'inserimento di questi filtri premere il pulsante **Esegui** per elaborare i dati.
+După introducerea acestor filtre, apăsați butonul **Execută** pentru a procesa datele.
 
-La griglia di risultato dell’esecuzione rappresenta l’elenco delle elaborazioni effettuate specificando **Numero** e **Data elaborazione**.
+Tabelul de rezultate al execuției reprezintă lista procesărilor realizate, specificând **Numărul** și **Data procesării**.
 
-È importante notare che nella procedura del sottoscorta quanto la RDA viene generata e la disponibilità è inferiore al Punto di Riordino, se per l’articolo non è stato impostato un valore di *scorta massima*, la quantità richiesta sarà pari a **Punto di Riordino – Disponibilità**; mentre, se è presente anche il valore di *scorta massima*, la quantità richiesta sarà pari a **Scorta max – Disponibilità**.
+Este important de remarcat că în procedura sub-stoc, atunci când CdA este generată și disponibilitatea este sub Punctul de Reîntregire, dacă pentru articol nu a fost setat un valoare de *stoc maxim*, cantitatea solicitată va fi egală cu **Moment de reaprovizionare – Disponibilitate**; în timp ce, dacă există și valoarea de *stoc maxim*, cantitatea solicitată va fi egală cu **Stoc max – Disponibilitate**.
 
 :::note Nota
-Da notare che nel caso in cui l'articolo sia di tipo approvvigionamento *Acquisto* verrà creata la richiesta di acquisto ma non la commessa, mentre nel caso in cui l'articolo sia di approvvigionamento *Produzione* o *Conto lavoro* allora verrà creata la relativa commessa,
+Se observă că, în cazul în care articolul este de tip aprovizionare *Achiziție*, va fi creată cererea de achiziție, dar nu comanda, în timp ce în cazul în care articolul este de aprovizionare *Producție* sau *Sistem lohn*, va fi creată comanda corespunzătoare.
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Pentru detalii despre funcționarea comună a form-urilor de listare, consultați [Vizualizare și listare](/docs/guide/common/operations-with-data/reports).
