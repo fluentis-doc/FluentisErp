@@ -1,18 +1,13 @@
 ---
-title: Giacenze in ubicazioni
+title: Stocuri pe locaţii
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La funzionalità "Giacenze in ubicazioni" di Fluentis è un elemento cruciale per la gestione efficiente del magazzino, consentendo agli utenti di monitorare il posizionamento degli articoli stoccati all'interno delle diverse ubicazioni.      
-Grazie a un'interfaccia intuitiva, gli operatori possono visualizzare in tempo reale le quantità disponibili per ciascun articolo e identificare facilmente la loro collocazione specifica.
-:::
+:::important Utilizare  
+Funcționalitatea este importantă pentru gestionarea eficientă a stocului, permițând utilizatorilor să monitorizeze plasarea articolelor stocate în diferitele locații.  
+Datorită unei interfețe intuitive, operatorii pot vizualiza în timp real cantitățile disponibile pentru fiecare articol și pot identifica cu ușurință locația specifică a acestora.  
+:::  
 
-La form consente all'operatore di visualizzare, per l'articolo selezionato, tutte le ubicazioni in cui è presente con la relativa giacenza.
-
-La form si compone di due sezioni:
-- quella di sinistra, dove è possibile ricercare l'articolo di interesse 
-- quella di destra dedicata alla visualizzazione delle ubicazioni, comprensive di giacenza, relative all'articolo selezionato.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+Formularul este compus din două secțiuni:
+- partea din stânga, unde este posibil să căutați articolul dorit   
+- partea din dreapta dedicată vizualizării locațiilor, incluzând stocul articolului selectat.
