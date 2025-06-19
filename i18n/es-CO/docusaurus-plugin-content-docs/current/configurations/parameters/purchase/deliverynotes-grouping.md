@@ -1,5 +1,5 @@
 ---
-title: parametri raggruppamento nota di ricezione della merce
+title: Parámetros de Agrupamiento de Nota de Recepción de Mercancías
 sidebar_position: 9
 ---
 
@@ -8,10 +8,10 @@ Estos parámetros generales de agrupamiento deben configurarse una sola vez y se
 De este modo, se garantiza una gestión flexible y adaptable de las evasiones, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, manteniendo al mismo tiempo una configuración centralizada y coherente para la mayoría de las operaciones.
 
 En esta interfaz se deciden las reglas de agrupamiento para los procedimientos:  
-- **Creación de NIR a partir de factura de compra (Creazione NIR da fattura di acquisto)**;  
-- **Creación de NIR a partir de DDT de compra (Creazione NIR da DDT di acquisto)**.  
+- **Crear nota de recepción de mercancía a partir de la factura de compra**;  
+- **Crear nota de recepción de mercancía a partir de nota de entrega de compra**.  
 
 Estos procedimientos se utilizan solo en caso de localización rumana.  
 
 Es necesario marcar las columnas que prevén los agrupamientos que se desean para estas evasiones.  
-El indicador Resumen (Riepilogativa) es fundamental para crear un único documento teniendo varios documentos de partida. Los otros indicadores, en cambio, se refieren a agrupamientos particulares.
+El indicador Resumen es fundamental para crear un único documento teniendo varios documentos de partida. Los otros indicadores, en cambio, se refieren a agrupamientos particulares.
