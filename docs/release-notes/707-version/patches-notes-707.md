@@ -3,6 +3,46 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0037 - 20/06/2025 
+
+> - PR - l’esportazione del cash flow per DocFinance ora inserisce nel file tutti i cash flow di tutte le società che esportano dati a DocFinance (#TT02723/25) 
+> - FI - inserimento manuale di righe nell’analitica delle registrazioni, revisione assegnazione Fluentis.FluentisErp.Core.Scs.SubcontractorReturns.ReadWrite.Algorithmslink alle righe di giornale. (#TT00729/25, TT04630/24) 
+> - MES - Risolto errore che, nel caso di cancellazione di un Ordine di Produzione associato a una riga articolo di un Ordine di Conto Lavoro, comportava l’eliminazione dell’intero Ordine di Conto Lavoro (#TT01078/25). 
+> - WM - In Gestione Spunta e conferma picking (WPF e WMS) è possibile prelevare un lotto diverso da quelli riportati nel tab lotti e serial number collegato all’articolo del picking e, di conseguenza viene aggiornata le quantità dell’articolo e del relativo lotto dopo aver effettuato il salvataggio della spunta. Questo permette anche la liberazione dei lotti non utilizzati inseriti nel tab lotti e serial number del picking stesso. (#TT01474/25) 
+> - ARM - enable new validation rule on std object when Arm in custom mode 
+> - MS - Corretto bug nella procedura MRP che andava in time out nel caso in cui avesse dovuto cancellare una mole molto elevata di dati presenti nel tab storico. (#TT00608/25) 
+> - FI - vendor payment rollback tab - show automatic postins in previous tab ( TT02623/25) 
+> - SD - Le note finali inserite nella testata delle Offerte di Vendita vengono ora riportate anche nell’Ordine cliente generato mediante conversione dell’offerta (#TT02493/25) 
+> - SD - Listini di Vendita - Duplica e Manutenzione Listini: apportate le modifiche necessarie per poter customizzare l'oggetto (rif.ticket  #TT02782/25) 
+> - Add support on ExcelImport for Xlsx,Xls,txt,csv 
+> - SCM - Corretto errore nella procedura Evasione da Ordini che, a seguito della creazione del DDT, non aggiornava correttamente lo stato di evasione nell’ordine (#TT02346/25). 
+> - SCS - Negli Ordini di Conto Lavoro è ora possibile associare un Ordine di Produzione alla riga articolo solo se viene specificata anche la fase (#TT01078/25). 
+> - SCM - Creazione compenso da documenti SDI in entrata: Revisionata la procedura di eliminazione del compenso generato da fatture di acquisto provenienti dal ciclo passivo SDI. (Rif. TT00648/25) 
+> - FI - aggiunto nuovo controllo sulla data di fine validità della causale contabile rispetto alle registrazioni contabili già presenti create con quella causale #TT02356/25. 
+> - PR - creazione automatica cash flow, revisione Data scadenza e Data prevista per righe di tipo saldo contabile. (#TT02672/25) 
+> - SH - Reload filter form result widget when default layout selected. (TT00474/24)  
+> - ARM - fix publish references of extension object (TT02289/25)  
+> - ARM - new validation Rule fix when Arm in custom mode 
+> - WM - Corretto bug nella procedura di chiusura magazzino inerente ai serial number. (#TT02528/25) 
+> - WMS - Corretto bug nella form di dichiarazione di produzione inerente ai lotti dei materiali. (#TT02805/25) 
+> - MES - Ottimizzata la proposta dei materiali una volta premuto il pulsante inizia. (#TT02674/25) 
+> - MS - Corretto bug nel calcolo del costo manodopera in costificazione, nel caso fossero indicati i dipendenti nelle dichiarazioni di produzione. (#TT02619/25) 
+> - SH - Corretto bug in gestione prototipi che non salvava correttamente dopo aver importato una distinta. (#TT02759/25) 
+> - PM: dichiarazione attività progetti - corretto funzionamento del salvataggio extradata in profilo, relativo ad una tabella configurata in produzione (#TT02307/25) 
+> - WM - Inserita la gestione profilo nella maschera degli inventari e delle liste inventariali. (#TT02584/25) 
+> - PM: Interventi - corretto ordine di inserimento righe da tab Materiali in tab Fatturazione, viene rispettata la sequenza del numero riga materiali (#TT02664/25) 
+> - PM - piano di fatturazione interventi - corretta data spese nel piano di fatturazione, affinchè prenda la data impostata nella riga della spesa e non più la data dalla testata intervento (#TT02783/25) 
+> - SH - Fluentis WEB - I file XML dei Documenti di Acquisto in entrata possono essere scaricati massivamente (#TT02718/25). 
+> - WM - Corretto bug nel report Inventario a quantità valorizzato che non storicizzava correttamente alcuni valori. (#TT02793/25). 
+> - MS - Ora gli stati delle commesse di produzione raggruppate in pianificazione vengono correttamente aggiornati su tutte le commesse raggruppate. (#TT00649/25) 
+> - SH - Dichiarazioni di produzione, risolto blocco applicazione su filtro campo numerico con valore alfanumerico (TT02629/25) 
+> - SD - WEB - Negli Ordini Clienti è ora possibile ridimensionare la griglia articoli. Modifications in SalesOrder object form can have an impact on profiles  (#TT02811/25) 
+> - FI/PR - corretto il comportamento del flag Visualizza partite percipienti nella form Creazione automatica pagamenti fornitori rif #TT02022/25 
+> - WM - Codificatore Articoli - Implementazione Extradata con origine dati di tipo Datasource. 
+> - (Rif.ticket #TT03912/24) 
+> - MES - La procedura di Ricalcolo Costi ordine di Produzione ora ricalcola anche i costi presenti nei movimenti dei rientri di conto lavoro. (#TT02522/25) 
+
+
 ### Patch 707.1-0036 - 13/06/2025 
 
 > - Fluentis WEB - Risolto errore in apertura anagrafica articolo (rif ticket #TT02662/25) 

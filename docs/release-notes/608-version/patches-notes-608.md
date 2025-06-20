@@ -3,6 +3,12 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0075 - 20/06/2025
+
+> - SD - Risoluzione errore che lasciava valorizzato il DDT dopo la cancellazione della fattura collegata (#TT02690/25).  
+> - SCS - Negli Ordini di Conto Lavoro è ora possibile associare un Ordine di Produzione alla riga articolo solo se viene specificata anche la fase (#TT01078/25). 
+> - PM - dichiarazione attività progetti - corretto funzionamento del salvataggio extradata in profilo, relativo ad una tabella configurata in produzione (#TT02307/25).
+
 ### Patch 608.1-0074 - 13/06/2025
 
 > - PM - Interventi - servizi, cambiato parametro nell’algoritmo dell’assegnazione prezzo. Ora è sempre abilitata la ricerca in tutti i listini predefiniti. (#TT01320/25) 
