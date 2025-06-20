@@ -1,36 +1,36 @@
 ---
-title: parametri azioni correttive
+title: Parámetros de Acciones Correctivas
 sidebar_position: 4
 ---
 
-Los parámetros se encuentran en la ruta **parametri azioni correttive**.
+Los parámetros se encuentran en la ruta **Parámetros de Acciones Correctivas**.
 
-Los datos presentes en esta gestión se utilizan para proponer información en la gestión: *azioni correttive*.
+Los datos presentes en esta gestión se utilizan para proponer información en la gestión: *Acciones Correctivas*.
 
 #### Botón específico
 
-**salva**: permite almacenar la información modificada.
+**Guardar**: permite almacenar la información modificada.
 
 #### Campos específicos
 
-- **tipo azione proposta**: *Tipo de acción* a proponer en caso de inserción de una nueva *azione correttiva*.  
-- **Sector de propuesta (Settore proposta)**: *Sector calidad* a proponer en caso de inserción de una nueva *azione correttiva*.  
-- **area proposta**: *Área calidad* a proponer en caso de inserción de una nueva *azione correttiva*.  
-- **persona responsabile proposta**: *dipendente* a proponer como responsable de la creación de una nueva *azione correttiva*.  
-- **funzione responsabile proposta**: *Función empresarial* a proponer como responsable de la creación de una nueva *azione correttiva*.
+- **Tipo de acción propuesta**: *Tipo de acción* a proponer en caso de inserción de una nueva *Acción correctiva*.  
+- **Sector de propuesta**: *Sector calidad* a proponer en caso de inserción de una nueva *Acción correctiva*.  
+- **Área propuesta**: *Área calidad* a proponer en caso de inserción de una nueva *Acción correctiva*.  
+- **Persona responsable propuesta**: *Empleado* a proponer como responsable de la creación de una nueva *Acción correctiva*.  
+- **Función responsable propuesta**: *Función empresarial* a proponer como responsable de la creación de una nueva *Acción correctiva*.
 
-- **colore azioni correttive**  
-> En esta lista se pueden definir varios colores para reconocer los diferentes estados de una *azione correttiva*.  
-> Tales colores se aplican en el *Filtro de las Acciones correctivas (Filtro delle Azioni correttive)*. La lista se compone de la siguiente información:   
-> - **Colores de acciones correctivas (Colori azioni correttive)**: es el estado de la *azione correttiva* al que se asociarán las coloraciones.   
+- **Acciones correctivas de color**  
+> En esta lista se pueden definir varios colores para reconocer los diferentes estados de una *Acción correctiva*.  
+> Tales colores se aplican en el *Filtro de las Acciones correctivas*. La lista se compone de la siguiente información:   
+> - **Colores de acciones correctivas**: es el estado de la *Acción correctiva* al que se asociarán las coloraciones.   
 >> La tabla contiene valores predefinidos por el sistema y no es posible insertar nuevos, eliminarlos o modificarlos. Los valores predefinidos son:  
->> - *approvate*;  
->> - *bloccate*;  
->> - *chiuse*;  
->> - *da valutare*;  
->> - *verificate*.  
+>> - *Aprobado*;  
+>> - *Bloqueado*;  
+>> - *Cerrado*;  
+>> - *Para ser evaluado*;  
+>> - *Verificado*.  
 >>
->- **sfondo**: es el color aplicado al fondo de la línea de la *azione correttiva* del estado específico.  
->- **testo**: es el color aplicado al texto de la línea de la *azione correttiva* del estado específico.  
+>- **Color de fondo**: es el color aplicado al fondo de la línea de la *Acción correctiva* del estado específico.  
+>- **Color de fuente**: es el color aplicado al texto de la línea de la *Acción correctiva* del estado específico.  
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

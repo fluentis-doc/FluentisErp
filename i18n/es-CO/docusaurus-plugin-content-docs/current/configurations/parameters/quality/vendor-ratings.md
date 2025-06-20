@@ -1,46 +1,46 @@
 ---
-title: parametri qualificazione fornitore
+title: Parámetros de calificación de proveedores
 sidebar_position: 5
 ---
 
-Los parámetros se encuentran en la ruta **parametri qualificazione fornitore**.
+Los parámetros se encuentran en la ruta **Parámetros de calificación de proveedores**.
 
 Los datos presentes en esta gestión se utilizan para proponer información en las gestiones:  
-- **Evaluaciones de proveedores iniciales y periódicas (Valutazioni fornitori iniziali e periodiche)** - en la lista de *dati di testata*;  
-- **Evaluaciones de proveedores periódicas sobre No conformidades (Valutazioni fornitori periodiche su Non conformità)** - en la lista de *dati di testata*;  
-- **anagrafiche contatti** - en la pestaña *Datos contables > Datos de calidad (Dati contabili > Dati qualità)*.  
+- **Evaluaciones de proveedores iniciales y periódicas** - en la lista de *Información del encabezado*;  
+- **Evaluaciones de proveedores periódicas sobre No conformidades** - en la lista de *Información del encabezado*;  
+- **Registro de contactos** - en la pestaña *Datos contables > Datos de calidad*.  
 
 #### Botón específico
 
-**salva**: permite almacenar la información modificada.  
+**Guardar**: permite almacenar la información modificada.  
 
-**proponi valutazioni**
+**Proponer calificaciones**
 
-Para proponer las *valutazioni fornitore* en la lista de *Intervalos de puntuación para la evaluación (Intervalli punteggio per la valutazione)*, presione el botón **proponi valutazioni**.  
-Se mostrarán todas las *Evaluaciones* que aún no están insertadas en la lista; los valores en *punteggio da* de las *Evaluaciones* preexistentes no se modifican.  
+Para proponer las *Vendor ratings* en la lista de *Rangos de puntuación para calificación*, presione el botón **Proponer calificaciones**.  
+Se mostrarán todas las *Evaluaciones* que aún no están insertadas en la lista; los valores en *Puntuación de* de las *Evaluaciones* preexistentes no se modifican.  
 
-## Evaluaciones iniciales (Valutazioni iniziali)
+## Initial ratings
 
-En este expander es posible insertar datos para proponer en la *Evaluación inicial y periódica (Valutazione iniziale e periodica)*.  
+En este expander es posible insertar datos para proponer en la *Calificación inicial y periódica*.  
 En el expander, se pueden ingresar:  
-- **tipo valutazione proposta**: *Tipo de evaluación* a proponer al insertar una *Evaluación inicial y periódica*.  
-- **ispettore proposto**: *Inspector* a proponer al insertar una *Evaluación inicial y periódica*.  
-- **sospensione automatica**: indica si, al reconocimiento de una *Evaluación de proveedor de suspensión (Valutazione fornitore di sospensione)*, el proveedor será automáticamente *sospeso*.  
+- **Propuesta de tipo de calificación**: *Tipo de Calificación* a proponer al insertar una *Calificación inicial y periódica*.  
+- **Propuesta de auditoría**: *Inspector* a proponer al insertar una *Calificación inicial y periódica*.  
+- **Suspensión automática**: indica si, al reconocimiento de una *Calificación de proveedor de suspensión*, el proveedor será automáticamente *Suspendido*.  
 
-## Evaluaciones periódicas no conformidad (Valutazioni periodiche non conformità)
+## Periodic non-compliance ratings
 
-En este expander es posible insertar datos para proponer en la *Evaluación periódica sobre No conformidades (Valutazione periodica su Non conformità)*.  
+En este expander es posible insertar datos para proponer en la *Calificación periódica sobre No conformidades*.  
 En el expander, se pueden ingresar:  
-- **tipo valutazione proposta**: *Tipo de evaluación* a proponer al insertar una *Evaluación periódica sobre No conformidades (Valutazione periodica su Non conformità)*.  
-- **sospensione automatica**: indica si, al reconocimiento de una *Evaluación de proveedor de suspensión (Valutazione fornitore di sospensione)*, el proveedor será automáticamente *sospeso*.  
+- **Propuesta de tipo de calificación**: *Tipo de Calificación* a proponer al insertar una *Calificación periódica sobre No conformidades*.  
+- **Suspensión automática**: indica si, al reconocimiento de una *Calificación de proveedor de suspensión*, el proveedor será automáticamente *Suspendido*.  
 >
-- **Intervalos de puntuación para la evaluación (Intervalli punteggio per la valutazione)**  
-> En esta lista, se pueden definir los rangos de porcentaje para la atribución automática de la *Evaluación periódica sobre No conformidades (Valutazione periodica su Non conformità)*.  
+- **Rangos de puntuación para calificación**  
+> En esta lista, se pueden definir los rangos de porcentaje para la atribución automática de la *Calificación periódica sobre No conformidades*.  
 > La tabla permite insertar nuevos registros, modificarlos o eliminarlos. La lista se compone de la siguiente información:  
->- **valutazione**: es el código de la *valutazione fornitore*.  
->- **descrizione valutazione**: es la descripción de la *valutazione fornitore*.  
->- **punteggio da**: valor expresado en porcentaje, es el valor inicial del intervalo al cual se atribuye la *Evaluación*;  
->> la *Evaluación* que se atribuirá a un *fornitore* se calculará considerando el porcentaje obtenido de la evaluación;  
+>- **Valoración**: es el código de la *Calificación de proveedores*.  
+>- **Descripción de la calificación**: es la descripción de la *Calificación de proveedores*.  
+>- **Puntuación de**: valor expresado en porcentaje, es el valor inicial del intervalo al cual se atribuye la *Calificación*;  
+>> la *Calificación* que se atribuirá a un *fornitore* se calculará considerando el porcentaje obtenido de la Calificación;  
 >> el porcentaje debe ser igual o mayor al valor inicial y menor que el valor del porcentaje del rango superior.  
 
 Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
