@@ -1,27 +1,27 @@
-- **importo lordo articoli**: representa la suma de los valores de todos los artículos.  
+- **monto bruto de los artículos**: representa la suma de los valores de todos los artículos.  
 
-- **acconto**: representa el valor del posible anticipo recibido por el documento.  
+- **anticipo**: representa el valor del posible anticipo recibido por el documento.  
 
-- **importo omaggio**: representa el importe de los artículos de tipo regalo introducidos en la pestaña *articoli*.  
+- **cantidad de regalo**: representa el importe de los artículos de tipo regalo introducidos en la pestaña *artículos*.  
 
-- **totale sconti applicati**: representa el valor total de los descuentos aplicados a los artículos, excluyendo los descuentos finales.  
+- **descuentos totales aplicados**: representa el valor total de los descuentos aplicados a los artículos, excluyendo los descuentos finales.  
 
-- **importo netto articoli**: *importo lordo articoli* – *totale sconti applicati*.  
+- **monto neto de los artículos**: *monto bruto de los artículos* – *descuentos totales aplicados*.  
 
-- **sconti finali articoli**: representa el valor de los descuentos finales expresados en porcentaje sobre el importe bruto de los artículos.  
+- **descuentos en artículos finales**: representa el valor de los descuentos finales expresados en porcentaje sobre el importe bruto de los artículos.  
 
-- **Importe neto descuentos finales (Importo netto sconti finali)**: *importo netto articoli* - *totale sconti finali*.  
+- **importe neto descuentos finales**: *monto neto de los artículos* - *descuentos finales totales*.  
 
-- **totale articoli spese**: representa el valor de los gastos introducidos en la pestaña anterior como artículos de *tipo spese*.  
+- **total de cargos por artículos**: representa el valor de los gastos introducidos en la pestaña anterior como artículos de *tipo de cargo*.  
 
-- **spese di incasso**: representa la suma de los gastos de cobro introducidos en la cuadrícula de *spese*.  
+- **cargos por cobranza**: representa la suma de los gastos de cobro introducidos en la cuadrícula de *cargos*.  
 
-- **spese bollo**: representa la suma de los gastos de timbre introducidos en la cuadrícula de *spese*.  
+- **cargos por estampilla**: representa la suma de los gastos de timbre introducidos en la cuadrícula de *cargos*.  
 
-- **Total gastos/descuentos/suprimentos (Totale spese/sconti/maggiorazioni)**: representa el valor total de los gastos introducidos en la cuadrícula *spese*.  
+- **Total gastos/descuentos/suprimentos**: representa el valor total de los gastos introducidos en la cuadrícula *cargos*.  
 
-- **imponibile**: *importo netto articoli* – *sconti finali* + *totale articoli spese* + *Total gastos/descuentos/suprimentos (Totale spese/sconti/maggiorazioni)*.  
+- **Imponible**: *monto neto de los artículos* – *Descuentos finales* + *total de cargos por artículos* + *Total gastos/descuentos/suprimentos*.  
 
-- **imposta**: representa la suma de los valores contenidos en los resúmenes de IVA.  
+- **Impuesto**: representa la suma de los valores contenidos en los resúmenes de IVA.  
 
-- **totale**: *imponibile* + *IVA*.
+- **Total**: *imponibile* + *IVA*.

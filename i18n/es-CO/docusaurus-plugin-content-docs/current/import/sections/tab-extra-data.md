@@ -1,1 +1,1 @@
-Aquí se propone la información ingresada en la *Registro del sujeto (Anagrafica del soggetto) > pestaña Datos adicionales (tab Extra data)*, solo si existen datos predeterminados.
+Aquí se propone la información ingresada en la *Registro del sujeto > pestaña Datos adicionales*, solo si existen datos predeterminados.

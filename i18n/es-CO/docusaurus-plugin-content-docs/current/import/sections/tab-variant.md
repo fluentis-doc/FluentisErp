@@ -1,4 +1,4 @@
-Se reportan las variaciones del artículo seleccionado, codificadas en la pestaña [Variaciones (Varianti)](/docs/erp-home/registers/items/create-new-item) del registro de artículos, o pueden ser ingresadas manualmente.  
+Se reportan las variaciones del artículo seleccionado, codificadas en la pestaña [Variaciones](/docs/erp-home/registers/items/create-new-item) del registro de artículos, o pueden ser ingresadas manualmente.  
 Ofrece la posibilidad de gestionar las variaciones del artículo de manera diferente a la propuesta en la línea del artículo.  
 Por ejemplo, en cada línea de artículo, es posible ingresar la cantidad total; posteriormente, en la misma pestaña, se pueden definir diferentes cantidades para varias variaciones del artículo seleccionado, así como para variación y atributo, es decir, gestión de talla/color.  
 Esta operación solo es posible si todas las variaciones del artículo tienen el mismo precio que el precio del artículo en la configuración estándar.

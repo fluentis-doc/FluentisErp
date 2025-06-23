@@ -1,6 +1,6 @@
 Los descuentos finales aplicados a nivel de artículo individual se distribuyen (o "reparten") sobre cada línea de artículo del documento. Esto significa que el monto del descuento se divide proporcionalmente entre todos los artículos presentes en el documento, y el descuento correspondiente será visible en la pestaña Artículos para cada línea individual.
 
-- **Tipo/Descripción del descuento (Tipo/Descrizione sconto)**: permite elegir los tipos de descuento (predefinidos en [Tipos de descuentos (Tipi sconti)](/docs/configurations/tables/general-settings/discount-types)), asignando a cada tipo la prioridad de aplicación del descuento y si el descuento se calcula sobre la base imponible o en cascada respecto a los descuentos aplicados previamente.  
-- **priorità**: representa la prioridad de aplicación del descuento; el orden de aplicación debe ser en orden ascendente.  
-- **cascata/imponibile**: para definir si el cálculo del descuento utiliza como base imponible el (precio * cantidad) - (descuentos ya calculados) o (precio * cantidad).  
-- **valore**: valor numérico del descuento final a aplicar.
+- **Tipo/Descripción del descuento**: permite elegir los tipos de descuento (predefinidos en [Tipos de descuentos](/docs/configurations/tables/general-settings/discount-types)), asignando a cada tipo la prioridad de aplicación del descuento y si el descuento se calcula sobre la base imponible o en cascada respecto a los descuentos aplicados previamente.  
+- **prioridad**: representa la prioridad de aplicación del descuento; el orden de aplicación debe ser en orden ascendente.  
+- **cascada/monto**: para definir si el cálculo del descuento utiliza como base imponible el (precio * cantidad) - (descuentos ya calculados) o (precio * cantidad).  
+- **valor**: valor numérico del descuento final a aplicar.
