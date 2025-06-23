@@ -1,77 +1,77 @@
 ---
-title: Contabilizzazione Accrediti
+title: Knjiženje odobrenja
 sidebar_position: 3
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione accrediti
+Obrazac se nalazi u Riznica > Portfelj potraživanja > Knjiženja > Knjiženje prihoda.
 
-Da questa maschera si procede all'ultima fase del portafoglio effetti: la procedura chiuderà il conto transitorio della banca di presentazione per accreditare il conto corrente effettivo dell'anagrafica banca in distinta.
+S ovog obrasca prelazi se na završnu fazu portfelja mjenica: postupak će zatvoriti prijelazni račun banke koja je izvršila prezentaciju kako bi se iznos prenio na stvarni tekući račun banke navedene u nalogu.
 
-:::tip[Nota]
-**Risulta necessario accedere specificamente alla presente form per questa contabilizzazione, non essendo previsto alcun bottone dentro l'effetto o la distinta**. 
+:::tip[Napomena]
+**Potrebno je izričito pristupiti ovom obrascu za ovu knjiženje, budući da nije predviđen nikakav gumb unutar mjenice ili naloga**. 
 :::
 
-## Come contabilizzare un accredito
+## Knjiženje odobrenja
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli effetti da accreditare: la contabilizzazione accrediti può essere effettuata solo per effetti contabilizzati. La selezione viene effettuata sul dettaglio degli effetti per poter individuare  gli importi accreditati per ogni data di scadenza.
+1. Koristite gornji dio obrasca za filtriranje pretrage mjenica koje treba knjižiti kao priljev: knjiženje priljeva može se izvršiti samo za već knjižene mjenice. Odabir se vrši na detaljima mjenica kako bi se mogli utvrditi iznosi koji se knjiže za svaki datum dospijeća
 
-2. Seleziona dalla griglia centrale gli effetti che desideri gestire 
+2. Odaberite iz središnjeg dijela mjenice koje želite obraditi. 
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Popuni parametre za knjiženje, kao što su kontrolna **šifra knjiženja**, **datum knjiženja** i datum razgraničenja.
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+:::note[Napomena]
+Ovaj se odjeljak može unaprijed postaviti unutar [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) modula Portfelj mjenica.
 :::
 
-4. Compila inoltre gli altri campi per la gestione della contabilizzazione:
+4. Također popunite i ostala polja za upravljanje knjiženjem:
 
-**Spese commissioni**: il sottconto dove saranno contabilizzate le spese per commissioni, da indicare nel campo successivo
+**Troškovi provizija**: podračun na koji će se knjižiti troškovi provizija, koji treba navesti u sljedećem polju.
 
-**Commissioni**: valore delle commissioni sull'accredito degli effetti che viene contabilizzato; può essere proposto, per ogni effetto, sulla base delle *commissioni* impostate nell'[***anagrafica banca***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry).  
+**Provizije**: Iznos provizija na knjiženje priljeva mjenica koji se evidentira u računovodstvu; za svaku mjenicu može biti automatski predložen na temelju *provizija* postavljenih u [***šifarniku banaka***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry).  
 
-**Oneri passivi**: conto dove saranno contabilizzati gli interessi passivi calcolati per distinte allo sconto.
+**Pasivni troškovi**:  račun na koji će se knjižiti obračunati pasivni kamatni troškovi za mjenice na eskont.
 
-:::note[Nota]
-In questa sezione sono presenti anche tre campi per la visualizzazione dei totali degli effetti selezionati nella grigli centrale:
+:::note[Napomena]
+U ovom su odjeljku također dostupna tri polja za prikaz ukupnih iznosa odabranih mjenica u središnjoj tablici:
 
-**Totale selezione oneri passivi**: sommatoria del valore Oneri passivi per tutti gli effetti selezionati;
+**Ukupno odabranih pasivnih troškova**: zbroj vrijednosti pasivnih troškova za sve odabrane mjenice;
 
-**Totale selezione commissioni**: sommatoria del valore Commissioni per tutti gli effetti selezionati;
+**Ukupno odabranih provizija**: zbroj vrijednosti provizija za sve odabrane mjenice;
 
-**Totale effetti selezionati**: sommatoria del valore degli effetti selezionati;
+**Ukupan iznos odabranih mjenica**:  zbroj vrijednosti svih odabranih mjenica;
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione accrediti**
+4. Klikni gumb **Knjiženje priljeva** na traci izbornika
 
 
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-**Ricerca**: Ricerca la lista degli effetti di cui contabilizzare l'accredito.
+**Traži**: Pretraži popis efekata za uplatu.
 
-**Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
-
-
-
-### Tab Precedenti
-
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
-
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
-
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
-
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+**Knjiženje**: Izvršava knjiženje za odabrane stavke.
 
 
 
-**Pulsanti specifici**
+### Predhodni
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+S kartice Prethodni moguće je poništiti već izvršena knjiženja.
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate per tutti i documenti in esse contenuti.
+Poništenje će biti moguće samo ako je razdoblje još uvijek izmjenjivo (knjiga dnevnika nije ispisana i računi nisu zatvoreni).
 
-**Rollback registrazioni**: Esegue il ripristino della singola registrazione contabile selezionata.
+Dvostruki klik na odjeljak s evidentiranim stavkama omogućit će prikaz pripadajućeg računovodstvenog zapisa. 
+
+Prisutna je kartica za detaljno pregledavanje uočenih grešaka tijekom knjiženja.
+
+
+
+**Specifični gumbi**
+
+**Traži**: Pretraži popis izvršenih knjiženja.
+
+**Poništavanje knjiženja**: Izvršava obnavljanje odabranih knjiženja za sve dokumente koji se u njima nalaze.
+
+**Poništavanje registracija**: Izvršava obnovu odabrane računovodstvene registracije.
 
 
 
