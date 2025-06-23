@@ -1,41 +1,34 @@
 ---
-title: Ricerca registrazioni
+title: Căutare înregistrări 
 sidebar_position: 2
 ---
 
-Consente di ricercare tutte le registrazioni di magazzino presenti nel database con lo scopo di visualizzarle, modificarle, ed eventualmente cancellarle oppure procedere all'inserimento di una nuova registrazione; la finestra si compone di un'area di filtro e da una griglia di risultato.
+Permite căutarea tuturor înregistrărilor de gestiune prezente în baza de date cu scopul de a le vizualiza, modifica și eventual șterge sau de a insera noi înregistrări.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Fereastra este compusă dintr-o zonă de filtrare și un tabel de rezultate. 
 
-Per aprire i dettagli di una registrazione, basterà selezionarla e fare doppio click con il mouse oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
+#### Câmpuri specifice 
 
-Sempre da questa form si può inserire una nuova registrazione di magazzino utilizzando il pulsante **Nuovo**.
+**Gestiune**: reprezintă codul gestiunii în care a fost generată înregistrarea;  
 
-*La griglia dei risultati si compone dei seguenti campi*:
+**Șablon**: reprezintă codul șablonului pentru care a avut loc mișcarea în gestiune și care, prin urmare, a fost inserat în antetul înregistrării;  
 
-**Magazzino**: la colonna visualizza il codice del magazzino su cui è stata generata la registrazione;   
+**Data**: reprezintă data inserării înregistrării de gestiune;  
 
-**Causale**: la colonna visualizza il codice della causale di magazzino che ha effettuato il movimento e che quindi è stata inserita nella testata della registrazione;  
+**Număr**: reprezintă numărul progresiv al înregistrării de gestiune;  
 
-**Data**: la colonna visualizza la data di inserimento della registrazione di magazzino;   
+**Document de referință**: reprezintă *Documentul de referință* din antetul înregistrării;  
 
-**Numero**: la colonna visualizza il numero progressivo della registrazione di magazzino;   
+**Dată document**: reprezintă data documentului de referință prezent în antetul înregistrării;  
 
-**Documento di riferimento**: la colonna visualizza ciò che è presente nel campo “Documento di riferimento” della testata della 
-registrazione;   
+**Încărcare / Descărcare**: reprezintă tipul înregistrării. Acesta poate fi doar de încărcare sau de descărcare;  
 
-**Data documento**: la colonna visualizza la data del documento di riferimento presente nella testata della registrazione;   
+**Gestiune contrapartidă**: reprezintă codul gestiunii înregistrării de contrapartidă, dacă este prezent;  
 
-**Carico / Scarico**: la colonna visualizza il tipo di registrazione. Essa può essere infatti solo di carico o di scarico;   
+**Motiv de contrapartidă**: reprezintă codul șablonului pentru gestiunea de contrapartidă, dacă este prezent;  
 
-**Magazzino di Contropartita**: la colonna visualizza il codice del magazzino della registrazione di contropartita, ove presente;   
+**Număr de contrapartidă**: reprezintă numărul progresiv al înregistrării de contrapartidă, dacă este prezent;  
 
-**Causale di Contropartita**: la colonna visualizza il codice del magazzino della registrazione di contropartita, ove presente;   
+**Document de referință de contrapartidă**: reprezintă *Documentul de referință* din antetul înregistrării de contrapartidă, dacă este prezent;  
 
-**Numero contropartita**: la colonna visualizza il numero progressivo della registrazione di contropartita, ove presente;   
-
-**Documento Riferimento contropartita**: la colonna visualizza ciò che è presente nel campo 'Documento di riferimento' della testata della registrazione di contropartita, ove presente;   
-
-**Conto / Sottoconto / Descrizione conto**: la colonna visualizza conto, sottoconto e ragione sociale del cliente o del fornitore inserito nella testata della registrazione di magazzino.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+**Cont sintetic/ analitic / Descriere cont**: reprezintă contul sintetic, analitic și denumirea clientului sau furnizorului inserat în antetul înregistrării de gestiune.
