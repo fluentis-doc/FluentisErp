@@ -1,61 +1,61 @@
 ---
-title: Contabilizzazione Distinte
+title: Knjiženje popisa
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione distinte
+Obrazac se nalazi u Riznica > Portfelj efekata > Knjiženja > Knjiženje popisa.
 
-Da questa maschera si procede alla contabilizzazione distinte: la procedura chiuderà il conto collegato al [**tipo**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) degli effetti inseriti in distinta e aprirà il conto transitorio della banca inserito nella distinta.
+Iz ovog obrasca pristupa se knjiženju naloga za plaćanje: postupak će zatvoriti račun povezan s [**vrstom**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) mjenica unesenih u nalog te otvoriti prijelazni račun banke unesen u nalogu.
 
-::tip[Nota]
-Generalmente si può eseguire questa procedura direttamente **dentro la distinta** con l'apposito pulsante per la sua **Contabilizzazione**.
+::tip[Napomena]
+Generalno, ovu proceduru možete izvesti izravno **unutar popisa materijala** pomoću odgovarajuće tipke za **Knjiženje**..
 
-Dalla presente maschera risulta invece possibile eseguire una contabilizzazione massiva di più distinte.
+Iz ovog obrasca moguće je izvršiti masovno knjiženje više popisa materijala.
 :::
 
-## Come contabilizzare una distinta
+## Knjiženje popisa
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle distinte da contabilizzare. La contabilizzazione distinte può essere effettuata solo per distinte stampate.
+1. Iskoristite gornji dio obrasca za filtriranje pretraživanja popisa za knjiženje. Knjiženje popisa može se izvršiti samo za popise koji su otisnuti.
 
-2. Seleziona dalla griglia centrale le distinte che desideri contabilizzare 
+2. Odaberite iz središnjeg dijela obrasca popise koje želite knjižiti.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Ispunite parametre za contabilizaciju, kao što su **knjigovodstveni predložak**, **datum registracije** i datum odobrenja.
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.  
+:::note[Napomena]
+Ovaj se odjeljak može unaprijed definirati unutar [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) modula Portfelj mjenica.  
 :::
 
-Il flag di **contabilizzazione in data maturazione**: spezzerà la registrazione della distinta alle varie date scadenza degli effetti con l'aggiunta dei giorni banca impostati in anagrafica banca per la causale impostata.
+Flag **knjigovodstvo na datum dospijeća**: razdijelit će registraciju popisa na različite datume dospijeća efekata s dodatkom dana banke postavljenih u kartonu banke za zadani uzrok.
 
-Il flag **data scadenza con data valuta uguale a data maturazione**: registrerà i vari effetti alle varie date scadenza ma con data valuta banca rettificata secondo i giorni banca impostati in anagrafica banca.
+Flag **datum isteka s datumom valute koji je jednak datumu dospijeća**: zabilježiti će različite učinke na razne datume isteka, ali s datumom valute banke ispravljenim prema danima banke postavljenim u kartonu banke.
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione distinte**
-
-
-**Pulsanti specifici**
-
-**Ricerca**: Ricerca la lista delle distinte da contabilizzare.
-
-**Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
+4. Kliknite gumb na traci izbornika **Knjiži popise**
 
 
-### Tab Precedenti
+**Specifični gumbi**
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+**Traži**: Pretraži popis izvještaja za knjiženje.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
-
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+**Knjiženje**: Izvršava knjiženje za odabrane stavke.
 
 
-**Pulsanti specifici**
+### Predhodni
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+S kartice prethodne moguće je poništiti izvršena knjiženja. 
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
+Poništavanje će biti moguće samo ako je razdoblje još uvijek moguće mijenjati (knjiga dnevnika nije ispisana i računi nisu zatvoreni). 
 
-**Rollback distinte**: Esegue il ripristino della registrazione contabile selezionata.
+Dvostruki klik na odjeljak s registracijama omogućit će prikaz pripadajuće računovodstvene registracije.
 
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+
+**Specifični gumbi**
+
+**Traži**: Pretraži popis izvršenih knjiženja.
+
+**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
+
+**Poništavanje registracija**: Izvršava obnovu odabrane računovodstvene registracije.
+
+Prisutna je kartica sa detaljima za prikaz grešaka otkrivenih tijekom knjiženja.
 
 
