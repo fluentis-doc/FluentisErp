@@ -1,38 +1,27 @@
 ---
-title: Configurazione
+title: Configurare 
 sidebar_position: 2
 ---
 
-**Installazione su device**
+### Instalare pe device 
 
-Per poter installare l’app su dispositivo, occorre utilizzare un file .apk.
+Pentru a instala aplicația pe dispozitiv, este necesar să folosiți un fișier .apk.
 
-**Download aggiornamenti**
+### Descărcare actualizări
 
-Se l’ambiente cliente viene aggiornato non occorre installare nuovamente l'applicazione, perché in automatico l’app recupera tutte le informazioni dal server e scarica gli aggiornamenti.
-Ci sono casi specifici in cui però è necessario procedere con la sostituzione dell’apk sul device, quindi sarà necessario installare nuovamente l'applicazione.
+Dacă mediul client este actualizat, nu este necesară reinstalarea aplicației, deoarece automat aplicația preia toate informațiile de pe server și descarcă actualizările. 
+Există cazuri specifice în care este necesară înlocuirea apk-ului pe dispozitiv, deci va fi necesar să reinstalați aplicația.
 
-**Configurazione in WPF**
+### Configurare în WPF
 
-- **Menu/Utente**: creare un *Menu* personalizzato in cui mostrare solo le form da utilizzare. L’utente del wms deve avere il flag sulla *Soluzione Fluentis WMS*.
+- **Meniu/Utilizator**: creați un *Meniu* personalizat în care să afișați doar form-urile  utilizate. Utilizatorul WMS trebuie să aibă opțiunea activată pe *Soluție Fluentis WMS*.
 
-- **Parametri magazzino carico/scarico per utente**: questi parametri servono ad introdurre delle restrizioni per gli utenti e possono essere settati nella tabella [Parametri magazzino carico/scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) presente in *Parametri > Parametri generali*. In assenza di questi parametri, l’utente può effettuare le operazioni di movimentazione su qualsiasi magazzino, ma questo implica il dover scegliere un magazzino all’interno delle singole form con la relativa causale. Ovviamente questa operatività non è corretta e non è gestibile dall’operatore. In questi parametri è invece possibile indicare per ciascuna form e ciascun operatore, il magazzino e la casuale di default che saranno precompilate all’apertura della form.       
+- **Parametrii gestiune încărcare/descărcare pe utilizator**: acești parametri sunt utilizați pentru a introduce restricții pentru utilizatori și pot fi setați în tabelul [Parametri gestiune încărcare/descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) disponibil în *Parametri > Parametri generali*. În absența acestor parametri, utilizatorul poate efectua operațiuni de mișcare pe orice gestiune, dar aceasta implică selectarea unei gestiuni în fiecare form cu șablonul aferent. Desigur, această modalitate nu este corectă și nu este gestionabilă de operator. În acești parametrii se poate insera, pe fiecare form și operator, gestiunea și șablonul de bază care vor fi completate automat la deschiderea form-ului.
 
-- **Barcode tokenizer**: i barcode possono essere configurati all’interno della form [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer), presente in: Tabelle > Impostazioni generali > Barcode tokenizer. Questi permettono di "istruire" il programma ad interpretare i barcode ed ad eseguire delle determinare azioni.
+- **Barcode tokenizer**: codurile de bare pot fi configurate în [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer), disponibil în: *Tabele > Setări generale > Barcode tokenizer*. Acestea permit "instruirea" programului să interpreteze codurile de bare și să execute anumite acțiuni.
 
-- **U.M. Alternativa - Def. WMS**: per le sole form *Carico Articolo*, *Scarico Articolo*, *Sposta Articolo*, *Rettifica Articolo*, *Giacenza* e *Inventario*, è stata introdotta la possibilità di movimentare la merce tramite l’UM Alternativa. La configurazione si ottiene attivando il flag *Default WMS* nel Tab [U.M. Alternative](/docs/erp-home/registers/items/create-new-item) presente nell'*Anagrafica Articolo*. Nelle form indicate viene visualizzata la solo UM Alternativa nel campo UM, le movimentazioni create hanno l’ UM Alternativa e la Quantità Alternativa popolate secondo il fattore di conversione.
+- **U.M. Alternativă - Def. WMS**: pentru form-urile  *Încărcare Articol*, *Descărcare Articol*, *Mută Articol*, *Ajustare Articol*, *Stoc* și *Inventar*, a fost introdusă posibilitatea de a mișca mărfurile cu U.M. Alternativă. Configurarea se obține activând opțiunea *Default WMS* în tab-ul [U.M. Alternative](/docs/erp-home/registers/items/create-new-item) disponibil în *Registrul Articolului*. În form-urile  menționate, va fi afișată doar U.M. Alternativă în câmpul U.M., iar mișcările create vor avea U.M. Alternativă și Cantitatea Alternativă populate conform factorului de conversie.
 
-- **Form in WPF**: per accedere alle form in WPF occorre avere sull’utente la soluzione F21-WMS.
+- **Form în WPF**: pentru a accesa form-urile în WPF, utilizatorul trebuie să aibă soluția F21-WMS.
 
-- **Licenza WMS**: il WMS ha le licenze dedicate. Nel tab Licenza in wpf è possibile verificare il numero di licenze dedicate al WMS. La licenza viene occupata dall’utente che utilizza la Soluzione F21-WMS. Quindi sia se l’accesso viene effettuato su dispositivo Mobile, sia da wpf con quella Soluzione. 
-
-
-
-
-
-
-
-
-
-  
-
+- **Licență WMS**: WMS are licențe dedicate. În tab-ul Licență în WPF este posibil să verificați numărul de licențe dedicate pentru WMS. Licența este utilizată de utilizatorul care folosește Soluția F21-WMS. Deci, fie că accesul este efectuat pe dispozitiv mobil, fie din WPF cu acea soluție.
