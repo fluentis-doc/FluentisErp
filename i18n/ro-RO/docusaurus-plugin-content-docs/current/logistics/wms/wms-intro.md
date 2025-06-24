@@ -1,86 +1,84 @@
 ---
-title: Introduzione
+title: Introducere 
 sidebar_position: 1
 ---
 
-L'adozione di un sistema di gestione del magazzino **WMS** è essenziale per le aziende che cercano di ottimizzare le proprie operazioni logistiche. 
-Un **WMS**, come **Fluentis**, offre una serie di strumenti e funzionalità progettate per migliorare l'efficienza, la precisione e la tracciabilità all'interno del magazzino. Con **Fluentis WMS**, le aziende possono automatizzare processi chiave come la ricezione delle merci, lo stoccaggio, il picking, il confezionamento e la spedizione, riducendo gli errori umani e aumentando la produttività.
+Adoptarea unui sistem de gestionare a stocurilor **WMS** este esențială pentru companiile care doresc să optimizeze operațiunile logistice.  
+Un **WMS**, precum **Fluentis**, oferă o serie de instrumente și funcționalități concepute pentru a îmbunătăți eficiența, precizia și trasabilitatea în cadrul gestiunii. Cu **Fluentis WMS**, companiile pot automatiza procesele cheie, cum ar fi recepția mărfurilor, stocarea, dispoziția de livrare, ambalarea și expedierea, reducând astfel erorile umane și crescând productivitatea.
 
-L'implementazione di un **WMS** consente di gestire in modo più efficace le scorte, riducendo il rischio di eccedenze o carenze. Inoltre, grazie alla visibilità in tempo reale delle operazioni, il **WMS** permette alle aziende di prendere decisioni informate e di rispondere rapidamente alle variazioni della domanda. La capacità di tracciare le merci durante tutto il loro ciclo di vita nel magazzino contribuisce anche a garantire la conformità normativa e a migliorare la soddisfazione del cliente.
+Implementarea unui **WMS** permite o gestionare mai eficientă a stocurilor, reducând riscul de exces sau lipsurile. În plus, datorită vizibilității în timp real a operațiunilor, **WMS** permite companiilor să ia decizii informate și să răspundă rapid variațiilor cererii. Capacitatea de a urmări mărfurile pe tot parcursul ciclului lor de viață în depozit contribuie de asemenea la asigurarea conformității normative și la îmbunătățirea satisfacției clienților.
 
-In definitiva, l'utilizzo di un **WMS** aiuta le aziende a snellire le operazioni logistiche, ridurre i costi e migliorare la qualità del servizio, creando un vantaggio competitivo in un mercato sempre più dinamico e complesso.
+În concluzie, utilizarea unui **WMS** ajută companiile să eficientizeze operațiunile logistice, să reducă costurile și să îmbunătățească calitatea serviciilor, creând un avantaj competitiv pe o piață din ce în ce mai dinamică și complexă.
 
 
-## Moduli dell'area 
+## Module arie
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/wms/wms-intro">Acquisti</Link>
-        <p><Link to="/docs/logistics/wms/purchase/receiving-goods" className="bold-link">Ricevimento merci</Link></p>
-        <p>La funzione di ricevimento merci è cruciale per la gestione logistica, consentendo l’identificazione e il caricamento preciso delle merci in arrivo. Attraverso il sistema, gli operatori possono filtrare e selezionare gli ordini fornitori non evasi, generare il Documento di Trasporto (DDT) e gestire le unità di carico, se necessario. Questo processo assicura che ogni articolo venga registrato con le informazioni di lotto e quantità, migliorando l’efficienza del magazzino e garantendo un accurato controllo delle movimentazioni.</p>
+###     <Link to="/docs/logistics/wms/wms-intro">Achiziții</Link>
+        <p><Link to="/docs/logistics/wms/purchase/receiving-goods" className="bold-link">Recepție mărfuri</Link></p>
+        <p>Procedura de recepție a mărfurilor este importantă pentru gestionarea logisticii, permițând identificarea și încărcarea precisă a mărfurilor. Operatorii pot filtra și selecta ordinele furnizorilor neexecutate, genera avizul de expediție și gestiona unitățile de încărcare, dacă este necesar. Acest proces se asigură ca fiecare articol este înregistrat cu informațiile despre lot și cantitate, îmbunătățind eficiența gestiunii și asigurând un control precis al mișcărilor.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/wms/wms-intro">Logistica</Link>
-        <p><Link to="/docs/logistics/wms/logistics/load-item" className="bold-link">Carico articolo</Link></p>
-        <p>La funzione di carico merci consente di registrare in modo preciso l’arrivo degli articoli nei magazzini.</p>
-        <p><Link to="/docs/logistics/wms/logistics/unload-item" className="bold-link">Scarico articolo</Link></p>
-        <p>La funzione di scarico merci è progettata per facilitare il prelievo degli articoli da un magazzino.</p>
-        <p><Link to="/docs/logistics/wms/logistics/move-item" className="bold-link">Sposta articolo</Link></p>
-        <p>La funzione sposta articolo consente di creare un movimento di spostamento di un articolo da una specifica ubicazione ad un’altra.</p>
-        <p><Link to="/docs/logistics/wms/logistics/item-adjustment" className="bold-link">Rettifica articolo</Link></p>
-        <p>Questa procedura è utilizzata per creare delle rettifiche positive o negative di un articolo.</p>
-        <p><Link to="/docs/logistics/wms/logistics/item-stocks" className="bold-link">Giacenza articolo</Link></p>
-        <p>La funzione di giacenza articolo consente agli operatori di visualizzare rapidamente le giacenze di magazzino per ogni articolo registrato.</p>
-        <p><Link to="/docs/logistics/wms/logistics/inventory" className="bold-link">Inventario</Link></p>
-        <p>Questa procedura consente di registrare e gestire le giacenze fisiche degli articoli, facilitando e velocizzando il conteggio.</p>
-        <p><Link to="/docs/logistics/wms/logistics/confirm-picking" className="bold-link">Conferma picking</Link></p>
-        <p>Questo strumento permette di gestire efficacemente il trasferimento degli articoli spuntati tra diversi magazzini o ubicazioni, creando automaticamente i movimenti di magazzino necessari per lo spostamento.</p>
+###     <Link to="/docs/logistics/wms/wms-intro">Logistică</Link>
+        <p><Link to="/docs/logistics/wms/logistics/load-item" className="bold-link">Încărcare articol</Link></p>
+        <p>Procedura de încărcare a mărfurilor permite o înregistrare precisă a sosirii articolelor în depozite.</p>
+        <p><Link to="/docs/logistics/wms/logistics/unload-item" className="bold-link">Descărcare articol</Link></p>
+        <p>Procedura de descărcare a mărfurilor este concepută pentru a facilita colectarea articolelor dintr-un depozit.</p>
+        <p><Link to="/docs/logistics/wms/logistics/move-item" className="bold-link">Mută articol</Link></p>
+        <p>Procedura permite crearea unei mișcări de mutare a unui articol de la o locație specifică la alta.</p>
+        <p><Link to="/docs/logistics/wms/logistics/item-adjustment" className="bold-link">Ajustare articol</Link></p>
+        <p>AProcedură este utilizată pentru a crea ajustări pozitive sau negative pentru un articol.</p>
+        <p><Link to="/docs/logistics/wms/logistics/item-stocks" className="bold-link">Stoc articol</Link></p>
+        <p>Procedura permite operatorilor să vizualizeze rapid stocurile din gestiune pentru fiecare articol înregistrat.</p>
+        <p><Link to="/docs/logistics/wms/logistics/inventory" className="bold-link">Inventar</Link></p>
+        <p>Această procedură permite înregistrarea și gestionarea stocurilor faptice ale articolelor, facilitând și accelerând numărarea.</p>
+        <p><Link to="/docs/logistics/wms/logistics/confirm-picking" className="bold-link">Confirmare dispoziție livrare</Link></p>
+        <p>Aceast instrument permite gestionarea eficientă a transferului articolelor selectate între diferite gestiuni sau locații, creând automat mișcările de gestiune necesare pentru mutare.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/wms/wms-intro">UDC</Link>
-        <p><Link to="/docs/logistics/wms/udc/load-move-pallet" className="bold-link">Carico/Sposta UDC</Link></p>
-        <p>La funzione consente di caricare o spostare unità di carico tramite scansione del codice a barre, semplificando e velocizzando le operazioni logistiche.</p>
-        <p><Link to="/docs/logistics/wms/udc/load-move-udc-multiple" className="bold-link">Carico/Sposta UDC multiplo</Link></p>
-        <p>Permette di gestire simultaneamente più unità di carico, migliorando l'efficienza delle operazioni di magazzino in modo da caricare o spostare più UDC contemporaneamente.</p>
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-picking-list" className="bold-link">Liste di prelievo / Packing List</Link></p>
-        <p>Consente di creare un picking di unità di carico, facilitando la preparazione delle spedizioni direttamente collegate agli ordini cliente.</p>
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-transfer-list" className="bold-link">Liste trasferimento UDC</Link></p>
-        <p>Consente di gestire le movimentazioni delle unità di carico all'interno dei magazzini, facilitando l'organizzazione e la tracciabilità delle UDC durante i trasferimenti tra diverse ubicazioni.</p>
-        <p><Link to="/docs/logistics/wms/udc/confirm-packing-list" className="bold-link">Conferma prelievo UDC</Link></p>
-        <p>La funzione è utilizzata per confermare le liste di prelievo e creare i movimenti di magazzino di scarico.</p>
-        <p><Link to="/docs/logistics/wms/udc/confirm-transfer" className="bold-link">Conferma trasferimento UDC</Link></p>
-        <p>Questa procedura destinata a confermare le liste di trasferimento esistenti e a gestire i movimenti di magazzino correlati.</p>
-        <p><Link to="/docs/logistics/wms/udc/move-loading-unit-item" className="bold-link">Spostamento articoli tra due unità di carico</Link></p>
-        <p>Questa funzione permette di trasferire facilmente articoli da un'unità di carico di partenza a una di destinazione.</p>
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-adjustment" className="bold-link">Rettifica unità di carico</Link></p>
-        <p>Permette di apportare modifiche agli articoli contenuti in un'unità di carico, consentendo rettifiche positive e negative.</p> 
-        <p><Link to="/docs/logistics/wms/udc/loading-unit-inventory" className="bold-link">Inventario unità di carico</Link></p>
-        <p>Questa procedura consente di effettuare un inventario accurato delle unità di carico presenti a magazzino.</p>      
+###     <Link to="/docs/logistics/wms/wms-intro">UdI</Link>
+        <p><Link to="/docs/logistics/wms/udc/load-move-pallet" className="bold-link">Încărcare/Mutare UdI</Link></p>
+        <p>Procedura permite încărcarea sau mutarea unităților de încărcare prin scanarea codului de bare, simplificând și accelerând operațiunile logistice.</p>
+        <p><Link to="/docs/logistics/wms/udc/load-move-udc-multiple" className="bold-link">Încărcare/Mutare UdI multiplu</Link></p>
+        <p>Permite gestionarea simultană a mai multor unități de încărcare, îmbunătățind eficiența operațiunilor de gestiune astfel încât să se poată încărca sau muta mai multe UdI simultan.</p>
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-picking-list" className="bold-link">Liste cu dispoziții de livrare / Lista de ambalare</Link></p>
+        <p>Permite crearea unui dispoziții de livrare pentru unitățile de încărcare, facilitând pregătirea expedierilor direct legate de ordinele clienților.</p>
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-transfer-list" className="bold-link">Liste transfer UdI</Link></p>
+        <p>Permite gestionarea mișcărilor unităților de încărcare în interiorul gestiunii, facilitând organizarea și trasabilitatea UdI-urilor în timpul transferurilor între diferite locații.</p>
+        <p><Link to="/docs/logistics/wms/udc/confirm-packing-list" className="bold-link">Confirmare dispoziții de livrare UdI</Link></p>
+        <p>Procedura este utilizată pentru a confirma listele cu dispoziții de livrare și a crea mișcările de gestiune pentru descărcare.</p>
+        <p><Link to="/docs/logistics/wms/udc/confirm-transfer" className="bold-link">Confirmare transfer UdI</Link></p>
+        <p>Permite confirmarea listelor de transfer existente și gestionării mișcărilor de gestiune corespunzătoare.</p>
+        <p><Link to="/docs/logistics/wms/udc/move-loading-unit-item" className="bold-link">Mută articole între două unități de încărcare</Link></p>
+        <p>Permite transferul simplu al articolelor de la o unitate de încărcare de pornire la una de destinație.</p>
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-adjustment" className="bold-link">Ajustare unitate de încărcare</Link></p>
+        <p>Permite modificarea articolelor conținute într-o unitate de încărcare, permițând ajustări pozitive și negative.</p>
+        <p><Link to="/docs/logistics/wms/udc/loading-unit-inventory" className="bold-link">Inventar unități de încărcare</Link></p>
+        <p>Permite efectuarea unui inventar precis al unităților de încărcare prezente în gestiune.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/wms/wms-intro">Vendite</Link>
-        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Gestione spunta</Link></p>
-        <p>La gestione spunta del WMS di Fluentis permette agli operatori di confermare le righe del picking e di raggruppare gli articoli in unità di carico, ottimizzando così le operazioni di movimentazione in magazzino. Grazie a questa funzionalità, è possibile creare e gestire efficacemente le UDC durante il prelievo, garantendo un controllo accurato e una maggiore efficienza operativa.</p>
+###     <Link to="/docs/logistics/wms/wms-intro">Vânzări</Link>
+        <p><Link to="/docs/logistics/wms/sales/check-row-management" className="bold-link">Gestionare bifă</Link></p>
+        <p>Gestionarea bifelor WMS din Fluentis permite operatorilor să confirme liniile dispozițiilor de livrare și să grupeze articolele în unități de încărcare, optimizând astfel operațiunile de manipulare în gestiune. Datorită acestei funcționalități, este posibil să creați și să gestionați eficient UdI în timpul colectării, asigurând un control precis și o eficiență operațională crescută.</p>
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Pentru utilizare
 
-la **Gestione UDC**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)
-- definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
-- definire i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)                      
-- creare un dipendente nella tabella [Dipendenti](/docs/project-management/registers/employee/new-employee/)
-- [configurare](https://docs.fluentis.com/FluentisErp/docs/logistics/wms/configuration) l'app **Fluentis WMS**
-- definire i [*Parametri Carico/Scarico per utente*](/docs/configurations/parameters/general-parameters/deliverynotes-grouping)        
-- definire i [*Barcode Tokenizer*](/docs/configurations/tables/general-settings/barcode-tokenizer)  
-
-
+**Gestionarea UdI**:
+- creați articole în [*Registru articole*](/docs/erp-home/registers/items/create-new-item)  
+- definiți corect [*Șabloane de gestiune*](/docs/configurations/tables/logistics/warehouse-templates) care urmează a fi utilizate  
+- definiți [*Parametrii inițiali de depozit*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)  
+- creați un angajat în tabelul [Angajați](/docs/project-management/registers/employee/new-employee/)  
+- [configurați](/docs/logistics/wms/configuration) aplicația **Fluentis WMS**  
+- definiți [*Parametrii Încărcare/Descărcare pe utilizator*](/docs/configurations/parameters/general-parameters/deliverynotes-grouping)  
+- definiți [*Tokenizatorul de coduri de bare*](/docs/configurations/tables/general-settings/barcode-tokenizer)
