@@ -26,11 +26,11 @@ Per rimuove, invece, un articolo basterà portare la relativa quantità a zero.
 
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustLoadingUnit |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustLoadingUnit |
 
 I parametri sono inseriti due volte poiché la form utilizza una causale di scarico per le rettifiche negative e una di carico per le rettifiche positive.
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).

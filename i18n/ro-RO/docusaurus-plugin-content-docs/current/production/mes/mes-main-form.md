@@ -37,7 +37,7 @@ Questo da un grande vantaggio all’operatore sia in termini di velocità di ins
 I Barcode possono essere configurati all’interno della form Barcode tokenizer, presente in: Tabelle > Impostazioni generali > Barcode tokenizer.               
 Quindi, questo campo *Codice barcode*, nel MES, può essere utilizzato dall’operatore per aggiungere singole fasi o gruppi di fasi, o ad esempio anche le fasi di un intero ordine di produzione, oppure ancora caricare i lotti e/o serial number dei materiali da scaricare, il tutto semplicemente leggendo i vari barcode. 
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
 - **Workstation**      
 La procedura è in grado di riconoscere la workstation su cui sta lavorando e se a questa è stato associato un centro di lavoro, caricherà in automatico tutte le fasi che erano in lavorazione su quel centro di lavoro, a quel punto l’operatore può scegliere se proseguire con la segnalazione di quelle fasi o ad esempio aggiungerne altre. Tutte le ulteriori informazioni si possono consultare nella sezione dedicata alla [Workstation](/docs/production/mes/workstation).     

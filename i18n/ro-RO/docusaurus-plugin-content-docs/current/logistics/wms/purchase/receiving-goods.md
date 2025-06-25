@@ -82,7 +82,7 @@ Una volta ultimato l’inserimento e la conferma di tutte le righe, con il pulsa
 
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Area | Modulo | Form |
+| Arie | Modul | Form |
 | :-- | :-- | :-- |
 | Scm | Fluentis.FluentisErp.Mvvm.Scm.PurchaseDeliveryNotes.ReadWrite.Views | ReceivingGoodsCreateDocument |
 | Scm | Fluentis.FluentisErp.Mvvm.Scm.PurchaseDeliveryNotes.ReadWrite.Views | LoadingUnitCreationFromPurchaseDeliveryNoteItem |
@@ -92,7 +92,7 @@ Nello specifico sono utilizzati nel seguente modo:
 > ReceivingGoodsCreateDocument: dopo aver selezionato **Ricevimento merci** e premuto il pulsante **Creazione DDT acquisto** il magazzino e la causale indicati in questo parametro vengono usati nelle righe degli articoli del DDT appena creato.
 > LoadingUnitCreationFromPurchaseDeliveryNoteItem: dopo aver selezionato **Ricevimento merci** e premuto il pulsante **Creazione DDT acquisto** il magazzino e la causale indicati in questo parametro vengono usati nella creazione e il carico delle unità di carico appena create. Questo parametro è necessario solo nel caso in cui vengano utilizzare le unità di carico.
 
-Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
 ## **Ricevimento merci con creazione etichette**
 
