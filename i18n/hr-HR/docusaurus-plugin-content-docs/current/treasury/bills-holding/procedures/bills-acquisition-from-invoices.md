@@ -3,43 +3,43 @@ title: Acquisizione effetti dalle fatture
 sidebar_position: 1
 ---
 
-La procedura di acquisizione effetti dalle fatture, ricalca quella relativa alle [**partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), alla quale **si rinvia**.
+Postupak evidentiranja efekata iz računa sličan je onome koji se odnosi na [**stavke**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), na koji se **upućuje** radi dodatnih informacija..
 
-Il dato di origine sarà, anzichè le partite aperte, direttamente le **scadenze delle fatture del ciclo attivo**.
+Izvorni podaci neće biti otvorene stavke, već izravno **rokovi dospijeća računa iz izlaznog ciklusa**.
 
 
-:::tip[Nota]
-Ciò consente di anticipare la creazione e la presentazione in banca degli effetti (ad esempio le ricevute bancarie da portare al salvo buon fine) ancora prima di aver contabilizzato le fatture attive.
+:::tip[Napomena]
+To omogućuje da se izrada i predaja efekata banci (na primjer bankovnih mjenica za naplatu uz klauzulu „uz dobar ishod”) obavi unaprijed, čak i prije knjiženja izdanih računa.
 
-Si raccomanda di contabilizzare le fatture attive prima di contabilizzare l'emissione degli effetti per poter gestire la chiusura automatica delle partite aperte tramite la prima registrazione.
+Preporučuje se prvo knjiženje izdanih računa, a tek nakon toga knjiženje izdavanja efekata, kako bi se omogućilo automatsko zatvaranje otvorenih stavki putem prvog knjiženja.
 :::
 
 
-:::danger[Attenzione]
-La **gestione dell'acquisizione effetti dalle fatture** è alternativa all'acquisizione dalle partite.
+:::danger[Pažnja]
+**Upravljanje evidentiranjem efekata iz računa** predstavlja alternativu evidentiranju iz stavki.
 :::
 
-**Pulsanti specifici:**
+**Specifični gumbi:**
 
-**Ricerca**: Ricerca la lista delle scadenze per le quali creare gli effetti.
+**Traži**: Pretraži popis rokova za koje je potrebno stvoriti efekte.
 
-**Acquisizione** Esegue la creazione degli effetti per le scadenze selezionate.
-
-
-### Tab Precedenti
-
-Eseguita la creazione, le righe spariranno dalla griglia del *filtro* e il risultato sarà visibile nella scheda **Precedenti** all'interno della quale è possibile annullare l'operazione. 
-
-Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+**Preuzimanje** Izvršava stvaranje efekata za odabrane rokove.
 
 
-**Pulsanti specifici:**
+### Predhodni
 
-**Ricerca**: Ricerca la lista delle creazioni eseguite.
+Nakon izvršenja kreiranja, redci će nestati iz mreže, a rezultat će biti vidljiv u kartici **Vrati** unutar koje je moguće poništiti operaciju. 
 
-**Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
+Nije moguće poništiti kreiranje efekata ako su oni već računovodstveno evidentirani ili prikazani na popisu.
 
-**Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.
+
+**Specifični gumbi:**
+
+**Traži**: Pretraga popisa izvršenih kreacija.
+
+**Poništavanje preuzimanja**: Ovim gumbom bit će izbrisano cijelo preuzimanje, uključujući sve povezane efekte. 
+
+**Poništavanje efekta**: Ovim gumbom bit će izbrisano kreiranje pojedinačnog odabranog efekta.
 
 
 
