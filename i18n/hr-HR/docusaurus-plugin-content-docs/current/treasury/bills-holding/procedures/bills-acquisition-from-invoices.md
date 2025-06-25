@@ -1,5 +1,5 @@
 ---
-title: Acquisizione effetti dalle fatture
+title: Preuzimanje vrijednosnih papira iz računa 
 sidebar_position: 1
 ---
 
