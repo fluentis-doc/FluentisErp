@@ -18,7 +18,8 @@ Dopo aver selezionato uno o più ordini fornitore, è possibile visualizzare gli
 La form principale si compone dei seguenti tab:
 
 - **Creazione DDT acquisto**
-Dopo aver selezionato l'ordine fornitore, tramite il pulsante *Creazione DDT acquisto* è possibile aprire la form sul tab *Creazione DDT acquisto*, dove il focus sarà posizionato direttamente sul campo "DDT" in modo da inserire per prima cosa il numero del documento.
+Dopo aver selezionato l'ordine fornitore, tramite il pulsante *Creazione DDT acquisto* è possibile aprire la form sul tab *Creazione DDT acquisto*, dove il focus sarà posizionato direttamente sul campo **DDT** in modo da inserire per prima cosa il numero del documento.      
+Come [Tipo DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type) da utilizzare verrà proposto quello indicato nel [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type/) dell’ordine utilizzato. Se non indicato viene proposto il primo [Tipo DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type) presente in tabella e l’utente potrà modificalo manualmente.        
 Inoltre, verranno visualizzate le informazioni relative al primo articolo presente sull'ordine, oltre alle informazioni di testata dell'ordine stesso.
 
 > **Magazzino**: indica il magazzino in cui verranno effettuate le movimentazioni;          
@@ -103,5 +104,13 @@ Una volta inseriti i dati correttamente l’operatore dovrà premere il pulsante
 Una volta terminate tutte le etichette sarà possibile stamparle con il relativo pulsante e poi tramite il pulsante chiudi si potrà ritornare alla form principale di creazione del DDT, dalla quale l’operatore potrà proseguire con nuove righe.      
 Anche in questo caso l’operatore può richiamare la riga confermata in precedenza e riaprirla con il pulsante conferma più stampa per modificarne le etichette.      
 Concluse le modifiche con il pulsante chiudi verrà creato il DDT di acquisto con i relativi movimenti di magazzino.     
+
+In questo caso i **Parametri carico/scarico** sono gli stessi visti nei casi precedenti.
+
+## **Ricevimento merci con unità di misura alternative**
+
+La gestione dell’unità di misura alternativa viene abilitata se il flag **Default WMS** presente nel [tab UM alternative dell’anagrafica dell’articolo](/docs/erp-home/registers/items/create-new-item#23-um-alternativa) è attivo.        
+In quel caso nella form del ricevimento vengono visualizzati anche i campi dell’unità di misura e quantità alternative, dove il fattore di conversione utilizzato è calcolato dividendo la quantità gestionale per la quantità alternativa (se coincide con quella che ha il flag default WMS) presente nell’ordine fornitore.         
+Questo fattore di conversione viene utilizzato moltiplicando o dividendo (in base al relativo parametro indicato nei parametri iniziali di magazzino) per ottenere le quantità nell’unità di misura alternativa nella form principale di creazione ddt e in quella di creazione delle UDC.
 
 In questo caso i **Parametri carico/scarico** sono gli stessi visti nei casi precedenti.
