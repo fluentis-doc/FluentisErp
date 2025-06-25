@@ -28,6 +28,4 @@ Ispisi dostupni
 
 - Ispis izjava namjere: Omogućuje vam praćenje i provjeru preostalih naplativih ograničenja za izjave namjere  
 
-
-
 **Intrastat**: posvećen stvaranju Intrastat statističkih komunikacija: predviđeno je i ručno upravljanje podacima i automatsko kreiranje s obzirom na podatke prisutne u fakturama nabave i prodaje relevantnih područja nabave i prodaje, kao i oporavak podataka iz računovodstva zapisa. Dvije su metode alternativne i međusobno ovisne. Računovodstvom zahvaćenih faktura s odgovarajućim postavkama moguće je upravljati automatskim kreiranjem kroz knjigovodstvene evidencije, kako za proizvode  tako i za usluge. [**Saznajte više**](/docs/finance-area/declarations/intrastat/general-overview)

@@ -1,54 +1,51 @@
 ---
-title: Generazione automatica autofattura
+title: Automatsko generiranje samofakture
 sidebar_position: 4
 ---
-:::note NOTA:
-Le seguenti istruzioni riguardano la procedura di generazione automatizzata delle auto-fatture di vendita create al fine di comunicare allo SDI, tramite il circuito della fatturazione elettronica, i dati sugli acquisti precedentemente comunicati tramite l'abrogato adempimento noto come "Esterometro".
+:::note BILJEŠKA:
+Sljedeće upute odnose se na postupak za automatizirano generiranje faktura za samoprodaju stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro".
 :::
 
-Al momento del salvataggio della registrazione contabile Fluentis andrà a creare i documenti automatici impostati nella causale: quindi sia il giroconto contabile per neutralizzare l'iva sia l’autofattura nelle vendita. Chiudendo la maschera verranno quindi restituiti due messaggi, quello di apertura della registrazione automatica di giroconto ed il nuovo messaggio di visualizzazione dell’autofattura.
+Prilikom spremanja računovodstvenog unosa, Fluentis će kreirati automatske dokumente postavljene u predlošku plaćanja: dakle i administrativni(računovodstveni) prijenos za neutralizaciju PDV-a i samofakturiranje za prodaju. Zatvaranje obrasca tada će vratiti dvije poruke, onu koja otvara registraciju automatskog prijenosa i novu poruku koja prikazuje samoračun.  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation1.png)
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation2.png)
 
-Nell’autofattura generata automaticamente: nel campo del cedente abbiamo il fornitore estero, nei riferimenti il numero e la data della fattura fornitore
+U automatski generiranom samoračunu: u polju prijenosnik imamo i dobavljača, u referencama broj i datum računa dobavljača.  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation3.png)
 
-La fattura è già stampata e contabilizzata (visto che c’è già il giroconto contabile automatico a rilevarla) 
-Nelle righe abbiamo un articolo non codificato, con la descrizione ripresa dalla descrizione movimento della registrazione contabile d’origine, per l’imponibile iva della registrazione e l’aliquota della riga.
+Faktura je već ispisana i obračunata (budući da već postoji automatski administrativni (računovodstveni) prijenos za njegovu detekciju u redovima imamo nekodiranu stavku, s opisom preuzetim iz opisa kretanja izvornog administrativnog (računovodstvenog) unosa, za iznos PDV-a). unosa i cijene linije.  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation4.png)
 
-Siamo quindi pronti già all’interno del documento per eseguire il cambio stato di spedizione allo Sdi dell’autofattura.
-Eventuali modifiche alla registrazione d’origine andranno a ricalcolare, se la fattura di vendita non è già stata oggetto di creazione file Sdi, sia il giroconto contabile che l’autofattura nelle vendite. L’operazione di aggiornamento automatico non viene eseguita neanche nel caso in cui nella causale contabile sia stato impostato il flag ‘Non ricalcolare la registrazione automatica’
+Stoga smo već spremni unutar dokumenta promijeniti status otpreme u SDI samofakture. Sve promjene izvornog knjiženja ponovno će izračunati i administrativni (računovodstveni) prijenos i samofakturiranje u prodaji, ako prodajna faktura već nije bila podvrgnuta stvaranju SDI datoteke. Operacija automatskog ažuriranja se ne izvodi čak i ako je zastavica ‘Nemoj ponovno izračunati automatsku registraciju" postavljena u računovodstvenom predlošku’. 
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation5.png)
 
-La cancellazione della registrazione originale (anche il rollback della contabilizzazione che l’ha creata) andrà ad eliminare l’autofattura nelle vendite, se questa non è stata oggetto di creazione file Sdi.
+Poništenje izvorne registracije (također vraćanje računovodstva koje ju je kreiralo) će eliminirati samofakturiranje u prodaji, ako to nije bilo predmet kreiranja SDI datoteke.  
 
-### **CASI PARTICOLARI**
+### **POSEBNI SLUČAJEVI**
 
-A) Nel caso di fattura di acquisto mista, con parte di reverse charge interno e parte no, la registrazione contabile avrà una o più righe iva con il flag ‘Escludi da causali automatiche’ e queste non saranno riportate nel giro automatico e neanche nell’autofattura
+A) U slučaju mješovite fakture za kupnju, s dijelom interne obrnute obveze i brojem dijela, računovodstveni unos će imati jedan ili više redaka PDV-a s oznakom ‘Isključi iz automatskih predložaka’ i oni se neće prijaviti u automatskom povratu niti u samofakturi.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation6.png)
 
-B) Nel caso di acquisto intra con detraibilità parziale, è possibile indicare nel campo ‘Iva per causali automatiche’ quale sarà l’aliquota da utilizzare nella registrazione automatica di giro. Questa aliquota sarà anche utilizzate nell’autofattura in vendita
+B) U slučaju intra kupnje s djelomičnim odbitkom, moguće su u polju 'PDV iz automatskih predložaka’ naznačiti koja će se stopa koristiti pri automatskoj prijavi putovanja. Ova će se stopa također koristiti u fakturi za vlastitu prodaju.  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation7.png)
 
-C) Acquisto di servizi esteri
-In questo caso l’acquisto sarà rilevato con causale non iva. In questo caso è possibile impostare in questo modo: nella causale non iva che rileva questi servizi è possibile andare ad indicare l’autofattura TD17 da creare nelle vendite, senza una causale automatica
+C) Kupnja stranih usluga   
+U ovom slučaju kupnja će biti evidentirana s predloškom koji nije povezan s PDV-om. U ovom slučaju moguće je postaviti na sljedeći način: u ne-PDV predlošku koji detektira ove usluge moguće je naznačiti da se TD17 samofaktura kreira u prodaji, bez automatskog predloška.    
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation8.png)
 
-Sarà necessario indicare nel fornitore l’aliquota iva da utilizzare nell’autofattura vendita, poi nella registrazione contabile dovrà avere in testata il fornitore e nel totale di testata il valore del servizio fatturato:
+Dobavljaču će biti potrebno naznačiti stopu PDV-a koja će se koristiti u fakturi za samoprodaju, zatim u administraciji (računovodstvu) dobavljač mora imati dobavljača u zaglavlju i vrijednost fakturirane usluge u zaglavlju ukupno:  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation9.png)
 
-Dato che la causale fornitore non ha una causale automatica ma solo il tipo fattura da creare, l’autofattura creata non avrà il flag ‘Contabilizzata’ per dar modo all’utente di contabilizzarla dalle vendite.
+Budući da predložak dobavljača nema automatski predložak, već samo vrstu fakture koju treba izraditi, kreirana samofaktura neće imati flag 'Obračunato' kako bi se korisniku omogućilo da je obračuna iz prodaje.
 
-### ALTRE CONTABILIZZAZIONI
-Le procedure di contabilizzazione fatture di acquisto, la contabilizzazione compensi e la registrazione da file acquisto Sdi verificano tutte questa nuova impostazione della causale contabile per eseguire automaticamente la creazione dei documenti di vendita così come mostrati nel caso di registrazioni manuali.
-Nel caso di contabilizzazione da file acquisto Sdi, la registrazione contabile sarà collegata al file Sdi: in questo caso l’autofattura avrà valorizzato automaticamente, oltre ai riferimenti al numero/data fattura, anche il protocollo Sdi originale.
+### OSTALO KNJIGOVODSTVO  
+Računovodstveni postupci fakture kupnje, računovodstvo kompenzacije i registracija iz Sdi datoteke kupnje provjeravaju ovu novu postavku računovodstvenog predloška za automatsko stvaranje prodajnih dokumenata kao što je prikazano u slučaju ručnih registracija. U slučaju računovodstva iz datoteke kupnje Sdi, računovodstveni unos bit će povezan sa datotekom Sdi: u ovom slučaju samofaktura će automatski valorizirati, uz reference na broj/datum fakture, i izvorni Sdi protokol.  

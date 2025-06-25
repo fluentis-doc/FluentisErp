@@ -1,31 +1,30 @@
 ---
-title: Altre configurazioni specifiche fatt. elett.
+title: Dodatna podešavanja za elektroničko fakturiranje
 sidebar_position: 4
 ---
-### Gestione della nota di accredito
+### Upravljanje knjižnim odobrenjem  
 
-A partire dalla versione 606 le note di accredito devono essere inserite in Fluentis sempre con il segno negativo, in particolare verrà inserito un valore negativo a partire dal campo Quantità.
-Nel documento viene restituito un messaggio di avviso nel caso in cui il totale non sia negativo con proposta di inversione segni.
+Počevši od verzije 606, knjižna odobrenja uvijek se moraju unositi u Fluentis s negativnim predznakom, posebno će se negativna vrijednost umetnuti počevši od polja Količina. Dokument vraća poruku upozorenja ako zbroj nije negativan s prijedlogom za obrnuti predznak.  
 
-Per quanto riguarda la fatturazione elettronica, è richiesto ai fini dei controlli operati dallo SDI che il segno del documento sia positivo, il parser di generazione del file xml provvederà dunque alla nuova inversione del segno (quando il tipo documento è TD04).
+Što se tiče elektroničkog fakturiranja, za potrebe provjera koje provodi SDI potrebno je da znak dokumenta bude pozitivan, stoga će parser koji generira xml datoteku omogućiti novu inverziju znaka (kada je vrsta dokumenta TD04).  
 
-:::note Nota
-Ai fini della contabilizzazione, nel caso in cui all'interno della nota di credito siano presenti segni misti (righe positive e righe negative) è necessario abilitare la possibilità di gestirne la contabilizzazione variando un parametro interno al database (variare da 0 a 1, in passato veniva settato -1 prima del cambiamento di cui sopra). Fare riferimento alla documentazione tecnica ed eventualmente al servizio di supporto.
+:::note BILJEŠKA
+Za računovodstvene potrebe, u slučaju da su unutar odobrenja prisutni mješoviti predznaci (pozitivne linije i negativne linije), potrebno je omogućiti mogućnost upravljanja njihovim mijenjanjem u administraciji (računovodstvu) internog parametra u bazi podataka (varijacija od 0 do 1, u prošlosti je postavljeno -1 prije gornje promjene). Obratite se tehničkoj dokumentaciji i eventualno službi za podršku.  
 :::
 
-### Codifica articolo per cliente  (Tag 2.2.1.3 CodiceArticolo)
+### Kodiranje artikla po kupcu (Oznaka 2.2.1.3 Šifra artikla)
 
-Il tag codice articolo può essere ripetuto più volte, generando una doppia codifica, cambiando il codice nel tag 2.2.1.3.1 
+Oznaka koda stavke može se ponoviti nekoliko puta, generirajući dvostruko kodiranje, promjenom koda u oznaci 2.2.1.3.1 
 
 ```xml
     <CodiceTipo> . 
 ```
-Il codice Tipo che viene proposto di default (nelle fatture di vendita) è quello riferito al codice articolo presente in Fluentis (dalle anagrafiche articoli dell'azienda in uso) che può essere riportato con due diversi 
+Šifra vrste koja je predložena prema zadanim postavkama (u prodajnim fakturama) je ona koja se odnosi na šifru stavke prisutnu u Fluentisu (iz matičnih podataka o stavci tvrtke u upotrebi) koja se može prijaviti s dva različita. 
     
 ```xml
     <CodiceTipo> 
 ```
-**Di default la codifica avviene secondo questo schema**
+**Prema zadanim postavkama kodiranje se odvija prema ovoj shemi**
     
 ```xml
     <CodiceArticolo> 
@@ -34,10 +33,10 @@ Il codice Tipo che viene proposto di default (nelle fatture di vendita) è quell
     </CodiceArticolo> 
 ```         
 
-Oppure il *CodiceTipo* può essere personalizzato valorizzando il campo **[Codice articolo fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)** presente in anagrafica cliente nel tab *informazioni fiscali*. 
+Ili se *TipKoda* može prilagoditi popunjavanjem polja **[može prilagoditi popunjavanjem polja](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)** u bazi podataka kupaca na kartici s *fiskalnim informacijama*. 
 
-:::note Nota
-Prestare attenziaone, si tratta di una coppia di campi adiacenti relativi, rispettivamente, alla codifica della nostra società (fornitore) per la personalizzazione rispetto al default, ed al cliente per una doppia codifica da inserire nel tracciato della fattura
+:::note BILJEŠKA
+Obratite pažnju, ovo je par susjednih polja koja se odnose na kodiranje naše tvrtke (dobavljača) za prilagodbu u usporedbi sa zadanim i na kupca za dvostruko kodiranje koje se umeće u izgled fakture. 
 :::
 
 Esempio:
@@ -49,9 +48,9 @@ Esempio:
     </CodiceArticolo>
 ```
 
-Sono possibili altre tipologie di codifica specifiche quali ad esempio la codifica EAN o quella specifca per il settore dei dispositivi medici.
+Moguće su i druge specifične vrste kodiranja, kao što je EAN kodiranje ili specifično kodiranje za sektor medicinskih uređaja. 
 
-Esempio:
+Primjer:
 
 ```xml
     <CodiceArticolo> 
@@ -60,18 +59,18 @@ Esempio:
     </CodiceArticolo>
 ```
 
-E' possibile appoggiare la codifica alla tabella **[Tipi Barcode](/docs/configurations/tables/general-settings/barcode-types)**
+Moguće je podržati kodiranje na tablici **[Vrste barkodova](/docs/configurations/tables/general-settings/barcode-types)**
 
-Esempio pratico d’uso per i ‘Dispositivi medici’: si codificano 3 tipi barcode (attivando anche il flag **Export Pubblica amministrazione** per la gestione del barcode nel tracciato xml della fattura elettronica): 
+Praktičan primjer korištenja za 'Medicinske uređaje': Kodirane su 3 vrste crtičnog koda (također aktiviranje flaga **Export Public računovodstvo** za upravljanje barkodom u xml putu elektroničke fakture): 
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode.png)
 
-poi  **[nell’anagrafica articolo](/docs/erp-home/registers/items/create-new-item)** si indica il valore per il ongi tipo codice: 
+tada je u **[šifarniku artikla](/docs/erp-home/registers/items/create-new-item)** naznačena vrijednost za svaku vrstu koda: 
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode2.png)
 
 
-il risultato sarà 
+Rezultat će biti  
 
 ```xml
      <CodiceArticolo> 
@@ -80,14 +79,13 @@ il risultato sarà
      </CodiceArticolo> 
 ```
 
-come richiesto dalla normativa del ministero della salute. 
+prema propisima Ministarstva zdravstva. 
 
-Relativamente alla possibilità di una doppia codifica in fattura, aggiungendo quella lato cliente intestatario del documento, il codice articolo cliente, se inserito nel tab Clienti dell' anagrafica articolo, riferito al cliente della fattura, può 
-essere espresso in 2 modi diversi: 
+Što se tiče mogućnosti dvostrukog kodiranja na fakturi, dodajući da na strani kupca koji je vlasnik dokumenta, šifra artikla kupca, ako je umetnuta u kartici Kupci šifarnika artkla, koji se odnosi na kupca fakture, može biti izraženo na 2 različita načina: 
 
-- con il tag CodiceTipo avente dicitura “Codice Art. cliente” 
+- s oznakom CodiceTipo koja sadrži riječi "Klijent Art Kod".
 
-esempio:
+primjer:
 
 ```xml
     <CodiceArticolo> 
@@ -96,10 +94,8 @@ esempio:
     </CodiceArticolo> 
 ```
 
-- con il tag CodiceTipo uguale al codice articolo cliente (della coppia di campi *tipo codice articolo fornitore/cliente*) presente in anagrafica del cliente nel tab 
-informazioni fiscali
-
-esempio:
+- s oznakom CodiceTipo koja je jednaka kodu artikla kupca (od para polja *tipa koda artikla dobavljača/kupca*) koji se nalazi u bazi podataka kupca na kartici s poreznim podacima 
+primjer:
 
 ```xml
     <CodiceArticolo>
@@ -108,17 +104,10 @@ esempio:
     </CodiceArticolo>
 ```
 
-dove CODCLI è il valore inserito nel campo *tipo codice articolo cliente* in anagrafica cliente.
+gdje je CODCLI vrijednost unesena u polje *vrste šifre artikla kupca* u Šifarniku o kupcima. 
 
-:::tip Approfondimento
-Se si vuole visualizzare il codice articolo di Fluentis in modo diverso dallo standard si deve personalizzare in arm la 
-trasformation di FSItem che si chiama FullTextDescriptionXMLFE. 
-Se non si vuole inserire nulla nel tag CodiceArticolo per il CodiceTipo “codice art. fornitore”, nella trasformation, 
-nella griglia, in corrispondenza della stringa “Engine Parameters” non deve essere inserito niente. 
-Per escludere il codice classe nelle singole righe del documento, è necessario personalizzare in Arm la trasformation 
-FullTextDesctiption dell’oggetto FSItem modificando il testo contenuto nella sezione EngineParameters della riga 
-“Default” da “ItemClassCode +”-“+ Code” in “Code” 
-
+:::tip UVID 
+Ako želite vidjeti kod članka Fluentis drugačije od standarda, morate prilagoditi FSItem transformaciju u ruci koja se zove FullTextDescriptionXMLFE. Ako ne želite ništa umetnuti u oznaku CodiceArticolo za CodiceType “art. dobavljač", u transformaciji, u mreži, ništa se ne smije unijeti u korespondenciju s nizom " Engine Parameters ". Da biste isključili kod klase u pojedinačnim redcima dokumenta, potrebno je prilagoditi transformaciju FullTextDesctiption FSItem objekta u Arm promjenom teksta sadržanog u odjeljku EngineParameters retka “Default” iz “ItemClassCode +”-“+ Šifra” u “Šifra”  
 :::
 
 ### Dichiarazione di intento ( tag 2.2.1.16 AltriDatiGestionali) 

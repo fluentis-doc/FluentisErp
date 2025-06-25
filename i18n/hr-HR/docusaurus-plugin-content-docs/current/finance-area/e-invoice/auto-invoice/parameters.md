@@ -1,20 +1,20 @@
 ---
-title: Parametri contabili per autofattura
+title: Računovodstveni parametri za samofakturiranje
 sidebar_position: 1
 ---
-:::note NOTA:
-Le seguenti istruzioni riguardano la procedura di generazione automatizzata delle auto-fatture di vendita create al fine di comunicare allo SDI, tramite il circuito della fatturazione elettronica, i dati sugli acquisti precedentemente comunicati tramite l'abrogato adempimento noto come "Esterometro".
+:::note BILJEŠKA:
+Sljedeće upute odnose se na postupak za automatizirano generiranje faktura za samoprodaju stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro".
 :::
 
-È necessario indicare alcuni elementi di default per la creazione del documento autofattura nelle vendite:
+Za izradu dokumenta samofakture u prodaji potrebno je naznačiti neke zadane elemente:
 
-1)	l’unità di misura da utilizzare nell’articolo non codificato che sarà inserito nel documento
+1)	mjerna jedinica koja će se koristiti u nekodificiranom članku koji će biti umetnut u dokument  
 
-2)	il relativo fatturato vendite per una eventuale contabilizzazione
+2)	pripadajući promet od prodaje za eventualno obračunavanje  
 
-3)	il sottoconto del cliente dell’autofattura, cioè il cliente che identifica l’azienda stessa
+3)	podračun kupca samofakture, odnosno kupca koji identificira samu tvrtku  
 
-La contabilizzazione dell’autofattura non è obbligatoria, in quanto solitamente si effettua direttamente una registrazione automatica collegata alla fattura fornitore in rilevazione: si può quindi solitamente indicare uno dei fatturati vendite già presenti, senza necessità di definirne uno specifico.
+Računovodstvo za samofakturiranje nije obavezno jer se automatska registracija obično provodi izravno povezana s fakturom dobavljača koja se bilježi: stoga je obično moguće naznačiti jednu od prodajnih faktura koje su već prisutne, bez potrebe za definiranjem određene.  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/parameters1.png)
 

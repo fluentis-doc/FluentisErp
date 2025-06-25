@@ -1,42 +1,41 @@
 ---
-title: Configurazioni Bizlink per l'interscambio con lo SDI
+title: Konfiguracija Bizlinka za razmjenu sa SDI-jem  
 sidebar_position: 7
 ---
 
-Fluentis permette lo scambio dei documenti elettronici in entrata ed in uscita con SDI. E' necessario controllare le seguenti impostazioni prima di sfruttare questa funzionalità, in quanto Fluentis deve poter comunicare con l'esterno attraverso lo strumento di BizLink.
+Fluentis omogućuje razmjenu ulaznih i izlaznih elektroničkih dokumenata putem sustava SDI, tj. ES. Prije korištenja ove funkcionalnosti, potrebno je provjeriti sljedeće postavke jer Fluentis mora komunicirati s vanjskim sustavima putem alata BizLink.  
 
-## Tabella Configurazione documenti elettronici
+## Tablica konfiguracije elektroničkih dokumenata 
 
-Questa tabella è accessibile in Fluentis da Configurazione > Tabelle > Impostazione generali > Configurazione documenti elettronici.    
-Il primo controllo da effettuare è cliccare *Verifica connessione* nella ribbon bar dopo aver aperto la tabella. Se tutte le impostazioni sono state effettuate correttamente, la connessione sarà abilitata. 
+Ova tablica dostupna je u Fluentisu putem: Konfiguriranje > Tablice > Opće postavke > Konfiguracija elektroničkih dokumenata. 
+Prva provjera koju treba izvršiti jest kliknuti na *Provjeri vezu* na traci izbornika nakon otvaranja tablice. Ako su sve postavke ispravno konfigurirane, veza će biti omogućena.
 
-:::danger ATTENZIONE
-Nel caso in cui riceviate un errore di contesto durante la verifica connessione, vuole dire che al momento dell'attivazione del servizio sono stati comunicati un nome server e un nome database errati. Sarà necessario contattare l'assistenza per fornire i dati corretti.
+:::danger PAŽNJA 
+Ako se tijekom provjere veze primi pojavi greška, to znači da su prilikom aktivacije usluge uneseni pogrešni naziv poslužitelja (servera) ili baze podataka. U tom slučaju potrebno je kontaktirati podršku i dostaviti ispravne podatke.  
 :::
 
 
-## Tabella Utenti BizLink
+## Tablica korisnika BizLink 
 
-Questa tabella è accessibile in ARM da Home > Connessioni > Utenti BizLink.    
-Nella griglia di sinistra sono presenti gli Utenti codificati con la password, mentre nella griglia di destra sono presenti le Connessioni disponibili con i relativi nome server e database.
-In questa tabella è necessario controllare che gli Utenti impostati nella griglia di sinistra abbiano il flag 'E' attivo' nella griglia di destra. 
+Ova tablica dostupna je u ARM-u putem  Početna stranica > Spajanja > BizLink Korisnici.    
+U lijevom dijelu pregleda nalaze se korisnici sa skrivenim lozinkama, dok se u desnom dijelu nalaze dostupne veze s pripadajućim nazivima poslužitelja i baza podataka.   
+U ovoj tablici potrebno je provjeriti da korisnici postavljeni u lijevom dijelu pregleda imaju aktiviran flag u desnom dijelu pregleda.
 
+## Usluge BizLink  
 
-## Servizi di BizLink
-
-A questo punto è necessario aprire l'app Servizi nel proprio pc e arrestare il servizio di BizLink.     
-Una volta arrestato il servizio, è necessario aprire la cartella Servizi (il cui percorso potete trovarlo nelle proprietà del servizio BizLink) e controllare le chiavi all'interno del file di configurazione. Esse devono coincidere con le seguenti:
+Zatim je potrebno otvoriti aplikaciju Servise na korisničkom računalu i zaustaviti uslugu BizLink.  
+ Nakon zaustavljanja usluge, otvoriti mapu Servisi (putanja mape može se pronaći u svojstvima usluge BizLink) i provjeriti ključeve unutar konfiguracijske datoteke. Oni moraju odgovarati sljedećim vrijednostima:
 
 ```xml
         <"GlobalUser" value="FlConServiceUser"/>
         <"GlobalPwd" value="FlConServiceUserPwd"/>
         <"GlobalUrl" value="http://localhost/arm/"/>
 ```
-L'utente e la Password devono essere uguali a quelli presenti nella Tabella Utenti BizLink precedentemente analizzata. Se non ne siete sicuri, consigliamo di effettuare un copia e incolla.      
+Korisničko ime i lozinka moraju biti isti kao oni iz tablice BizLink users, prethodno provjerene. Preporučuje se korištenje opcije kopiraj i zalijepi.     
 
-A questo punto è possibile cancellare il file di testo presente nella cartella Servizi e riavviare il serivizo di BizLink. In questo modo, il file di testo verrà ricreato. Se non è presente il file testo, eseguire il file .exe.    
-Se il file di testo non presenta errori, il servizio risulterà attivo. 
+U ovom trenutku moguće je obrisati tekstualnu datoteku prisutnu u mapi Servisi i ponovo pokrenuti servis BizLink. Na taj će način tekstualna datoteka biti ponovno kreirana. Ako tekstualna datoteka nije prisutna, pokrenite .exe datoteku.  
+Ako tekstualna datoteka ne sadrži greške, servis će biti aktivan.
 
-:::danger ATTENZIONE
-Se il file .exe si chiude subito, allora il servizio è ancora attivo oppure c'è qualche problema sul file di configurazione.
+:::danger PAŽNJA
+Ako se .exe datoteka odmah zatvara, to znači da je usluga još uvijek aktivna ili postoji neki problem s datotekom konfiguracije.
 :::

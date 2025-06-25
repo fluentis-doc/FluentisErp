@@ -1,18 +1,14 @@
 ---
-title: Gestione allegati alla fattura elettronica
+title: Upravljanje prilozima elektroničkog računa
 sidebar_position: 3
 ---
 
+E-računu, uz PDF kopiju samog računa, moguće je prilikom slanja pridodati i neke popratne dokumente, poput neke specifikacije. 
 
-CASISTICA:
-Come allegare un file alla fattura elettronica XML in più rispetto alla copia pdf della fattura stessa.
+ŠTO JE POTREBNO?
 
+- Aktivirati umetanje privitka u šifarniku kupaca > kartica Porezni podaci ili (za sve šifre) u Konfiguriranje > Tablice > Opće postavke > Konfiguracija elektroničkog dokumenta.  
 
+- Otvoriti račun kojem se žele priložiti dokumente, pritisnuti tipku Dokumenti u gornjem izborniku, priložiti dokumente umetanjem prefiksa ATTACHMENT_ uz naziv dokumenta prije generiranja XML datoteke. Može se priložiti bilo koja vrsta datoteke (.jpeg .xls itd., ali preporuka je svakako PDF)  
 
-SOLUZIONE
-- Attivare l'inserimento dell'allegato nell'anagrafica del cliente > tab informazioni fiscali oppure (per tutte le anagrafiche) in Tabelle > impostazioni generali >configurazione documenti elettronici.
-
-- Aprire la fattura nella quale si vuole allegare i documenti, premere il pulsante documenti nel top menu, allegare i documenti inserendo il prefisso ALLEGATO_ al nome del documento prima di generare il file XML. 
-Può essere allegato qualsiasi tipo di file (.jpeg .xls ecc...)
-
-Per visualizzare gli allegati aprire il registro sdi, cliccare sul nome dell'allegato nella griglia presente sotto l'anteprima della fattura.
+Za pregled privitaka otvoriti Registar SDI dokumenata i kliknuti na naziv privitka u pregledu ispod pregleda računa.

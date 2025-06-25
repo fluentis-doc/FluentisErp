@@ -1,16 +1,16 @@
 ---
-title: Causali contabili per autofattura
+title: Računovodstveni predlošci za samofakturiranje
 sidebar_position: 3
 ---
-:::note NOTA:
-Le seguenti istruzioni riguardano la procedura di generazione automatizzata delle auto-fatture di vendita create al fine di comunicare allo SDI, tramite il circuito della fatturazione elettronica, i dati sugli acquisti precedentemente comunicati tramite l'abrogato adempimento noto come "Esterometro".
+:::note BILJEŠKA:
+Sljedeće upute odnose se na postupak za automatizirano generiranje faktura za samoprodaju stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro".
 :::
 
-All’interno delle causali di contabilità generale che rilevano le fatture di acquisto intra/reverse interno, è necessario andare ad indicare quale sia il tipo fattura da generare nelle vendite. Ad esempio sia per le fatture che per le note di credito degli acquisti intra andremo ad indicare
+U okviru općih računovodstvenih predložaka koji detektiraju interne intra/storne fakture za kupnju, potrebno je navesti vrstu fakture koja će se generirati za prodaju. Na primjer, navest ćemo i za fakture i za knjižna odobrenja za unutarnje kupnje  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/ledger-templates1.png)
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/ledger-templates2.png)
 
 
-L’agenzia delle entrate, infatti, ha indicato di utilizzare sempre autofatture di tipo TD18 (o quelle del caso specifico TD16 ecc.) anche per inviare eventuali dati delle note di credito, avendo cura che i dati al loro interno siano con segno negativo per indicarne appunto lo storno.
+Porezna agencija je, naime, naznačila da se uvijek koriste samofakture tipa TD18 (ili one u konkretnom slučaju TD16 itd.) i za slanje bilo kakvih podataka o odobrenju, vodeći računa da podaci u njima budu s negativnim predznakom za označiti otkazivanje.  
