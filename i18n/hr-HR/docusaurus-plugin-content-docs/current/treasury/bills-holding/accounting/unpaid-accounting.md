@@ -1,69 +1,69 @@
 ---
-title: Contabilizzazione Insoluti
+title: Knjiženje dugovanja 
 sidebar_position: 4
 ---
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione Insoluti
+Obrazac se nalazi u Riznica > Portfelj Efekata > Knjiženje > Knjiženje dugovanja.
 
 
-Da questa maschera si procede alla contabilizzazione insoluti: la procedura riapre le partite clienti associate agli effetti insoluti ed eventualmente genera una fattura di addebito spese.
+Iz ovog obrasca prelazi se na knjiženje dugovanja: postupak ponovno otvara račune kupaca povezane s nepodmirenim potraživanjima i eventualno generira račun za naplatu troškova.
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-**Ricerca**: Ricerca la lista degli insoluti da contabilizzare.
+**Traži**: Pretraži popis dugovanja za knjiženje.
 
-**Contabilizza**: Esegue la contabilizzazione per le righe selezionate.
+**Knjiženje**: Izvršava knjiženje za odabrane stavke.
 
-## Come contabilizzare un insoluto
+## Knjiženje dugovanja
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli insoluti da contabilizzare. ATTENZIONE: Occorre prima procedere alla loro creazione.
+1. Iskoristite gornji dio obrasca za filtriranje pretrage dugovanja za knjiženje. PAŽNJA: Prvo je potrebno izvršiti njihovo kreiranje.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri contabilizzare 
+2. Odaberite iz središnjeg dijela obrasca efekte koje želiš knjižiti.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità** e la **data registrazione**.
+3. Ispunite parametre za knjiženje kao što su **računovodstveni predložak** i **datum knjiženja**..
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/unpaids-parameters) del modulo Insoluti. 
+:::note[Napomena]
+Ova sekcija može biti unaprijed definirana unutar [**parametara**](/docs/configurations/parameters/treasury/unpaids-parameters) unutar modula Dugovanja. 
 
-In particolare:
+Posebice:
 
-- la causale contabile viene proposta sulla base dei parametri del modulo, 
-- le date di registrazione sono proposte come data odierna; 
-- i sottoconti per le **Spese di protesto** e il conto **Transitorio** sono ripresi dai parametri del modulo, ma possono essere modificati o inseriti di volta in volta.
+- računovodstveni predložak se predlaže prema parametrima modula, 
+- datumi registracije su postavljeni na današnji datum; 
+- i podračuni za **Troškove protesta** i račun **Tranzit** preuzimaju se iz parametara modula, ali mogu se mijenjati ili unositi prema potrebi.
 
-Il flag **Contabilizzazione riepilogativa** rileva in un'unica registrazione tutti gli insoluti presentati sullo stesso istituto di credito (banca): normalmente questa opzione non viene sfruttata, in particolare se è stata inserita l'obbligatorietà della data e numero fattura nella causale contabile da utilizzare.
+Flag **Sistematizacija knjiženja** bilježi u jednoj registraciji sve dugove predstavljene na istoj kreditnoj instituciji (banci): obično se ova opcija ne koristi, posebno ako je postavljena obaveza unosa datuma i broja fakture u računovodstveni predložak koji se koristi.
 
-Il flag **Spese di rivalsa** impone la rilevazione del riaddebito spese al cliente: con questa opzione si attiverà (in basso) la sezione di gestione della fattura per queste spese, invece che registrarle direttamente in contabilità. In questa sezione tutti i campi dovranno essere impostati al fine di poter creare la fattura di vendita.
+Flag **Naknada troškova** omogućava ponovno naplaćivanje troškova kupcu: s ovom opcijom, aktivira se sekcija za upravljanje mogućnošću fakturiranja tih troškova umjesto izravnog knjiženja u računovodstvu. U ovoj sekciji svi se podaci moraju postaviti kako bi se mogla stvoriti faktura za prodaju. 
 
-Infine resta da inserire: 
-- il **tipo di pagamento** e 
-- la **data scadenza** da assegnare per la riapertura della partita. In alternativa il flag **Data scadenza uguale alla data scadenza effetto** (andato insoluto)
+Konačno, obavezno je unijeti: 
+- **tip plaćanja** i
+- **datum dospijeća plaćanja** koji će se dodijeliti za ponovno otvaranje stavke. Alternativno, flag **Datum dospijeća jednak datumu dospijeća efekta** 
 
-Anche in questo caso avviene la lettura dei parametri del modulo per la proposta di questi due dati.
+Također u ovom slučaju dolazi do čitanja parametara obrasca za prijedlog ova dva podatka.
  
-4. Premi il bottone nella ribbon bar **Contabilizzazione**
+4. Kliknite gumb na traci izbornika **Knjiži**
 
-### Tab Precedenti
+### Predhodni
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Sa prethodne kartice moguće je izvršiti poništavanje izvršenih knjiženja.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+Poništavanje će biti moguće samo ako je razdoblje još uvijek moguće mijenjati (ako ispis knjige dnevnika i zatvaranje računa nisu izvršeni).
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+Dvostruki klik na sekciju registracija omogućit će pregled povezane računovodstvene registracije.
 
-E' presente un report di visualizzazione degli errori rilevati nel corso della contabilizzazione.
-
-
+Prisutan je izvještaj za pregled uočenih pogrešaka tijekom knjiženja.
 
 
-**Pulsanti specifici**
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
+**Specifični gumbi**
 
-**Rollback insoluti**: Esegue il ripristino della registrazione contabile selezionata.
+**Traži**: Pretraži popis izvršenih knjiženja.
 
-E' presente una tab per visualizzare gli errori memorizzati in fase di contabilizzazione.
+**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
+
+**Poništavanje dugovanja**: Izvršava obnovu odabrane računovodstvene registracije.
+
+Prisutan je tab za pregled grešaka pohranjenih tijekom knjiženja.
 
 
 
