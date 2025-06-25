@@ -1,23 +1,22 @@
 ---
-title: Sposta articolo
+title: Mută articol
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La funzione di **spostamento articolo** consente di trasferire un prodotto da una specifica ubicazione a un'altra all'interno del magazzino. Gli operatori possono inserire l'ubicazione di partenza e di destinazione, e specificare la quantità da movimentare. Nel caso di articoli gestiti a lotti, è possibile anche indicare il lotto da spostare. Questa procedura genera automaticamente il movimento di magazzino necessario per registrare sia lo scarico dalla vecchia ubicazione che il carico nella nuova.
+:::important Utilizare
+Procedura permite transferul unui articol dintr-o locație în alta în cadrul gestiunii. Operatorii pot introduce locația de plecare și cea de destinație și pot specifica cantitatea de mutat. În cazul articolelor gestionate pe loturi, este de asemenea posibil să se indice lotul care trebuie mutat. Această procedură generează automat mișcarea de gestiune necesară pentru a înregistra atât descărcarea din vechea locație, cât și încărcarea în noua locație.
 :::
 
-Questa procedura è utilizzata per creare un movimento di spostamento di un articolo da una specifica ubicazione ad un’altra. 
-La lettura della prima ubicazione nella form andrà a popolare il campo relativo all’ubicazione di partenza, mentre la seconda andrà a popolare l’ubicazione di destinazione.     
-Le successive letture di ubicazioni andranno a sovrascrivere solo l’ubicazione di destinazione.     
-A questo punto è possibile inserire la quantità da movimentare tramite i pulsanti **+** e **-** oppure inserendola direttamente.  
-Inoltre, è possibile stampare anche l'etichetta del codice articolo tramite il pulsante **Stampa** o visualizzare l'anteprima direttamente sul terminale con il pulsante **Anteprima**.     
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.      
-Nel caso in cui l'articolo sia gestito a lotti, verrà visualizzato anche il relativo campo in cui andare ad inserire il lotto che dovrà essere spostato.        
-Alla conferma viene generato il movimento di magazzino, che in questo caso, oltre alla registrazione principale di scarico, presenta anche la registrazione di contro partita che ha caricato l’articolo nella nuova ubicazione.
+Citirea primei locații din form va completa câmpul referitor la locația de plecare, în timp ce a doua va completa locația de destinație.  
+Lecturile ulterioare ale locațiilor vor suprascrie doar locația de destinație.  
+După citire se va putea insera cantitatea de mutat manual sau cu ajutorul butoanelor **+** și **-**.  
+În plus, este posibil să se imprime eticheta codului articolului cu butonului **Listare** sau să se vizualizeze cu butonul **Vizualizare**.          
+Butonul **Șterge tot** permite golirea formuluide toate datele introduse.
+În cazul în care articolul este gestionat pe loturi, va fi vizibil și câmpul în care trebuie introdus lotul care trebuie mutat.  
+La confirmare, se generează mișcarea de gestiune, care în acest caz, pe lângă înregistrarea principală de descărcare, prezintă și înregistrarea de contrapartidă, care a încărcat articolul în noua locație.
 
-:::note Nota
-La causale utilizzata dovrà essere una causale di scarico con una causale di carico in contropartita.
+:::note Notă
+Șablonul utilizat trebuie să fie de descărcare cu un șablon de încărcare în contrapartidă.
 :::
 
 **Parametri de încărcare/descărcare** care trebuie introduși în tabelul [Parametrii Încărcare/Descărcare pu utilizatori](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).

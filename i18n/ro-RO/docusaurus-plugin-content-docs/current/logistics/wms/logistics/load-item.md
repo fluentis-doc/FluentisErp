@@ -14,7 +14,7 @@ Ulterior, va trebui să introducă cantitatea de mișcat, iar odată confirmat, 
 Butonul **Șterge tot** permite golirea formuluide toate datele introduse.
 
 :::note Notă
-*Cod articol* și *Lot* trebuie să fie prezente în registrul din Fluentis.
+*Cod articol* și *Lot* trebuie să fie prezente în registru.
 :::
 
 **Parametri de încărcare/descărcare** care trebuie introduși în tabelul [Parametrii Încărcare/Descărcare pu utilizatori](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).

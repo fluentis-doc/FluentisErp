@@ -1,21 +1,20 @@
 ---
-title: Scarico articolo
+title: Descărcare articol
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La funzione di **scarico articolo** è progettata per facilitare il prelievo degli articoli da un magazzino. Utilizzando il codice a barre, l'operatore può selezionare l’articolo e l’ubicazione da cui effettuare il prelievo, inserire la quantità da scaricare e, se necessario, il lotto specifico. Questa procedura genera il movimento di scarico di magazzino, aggiornando le giacenze e garantendo la corretta registrazione dei flussi di merci.
+:::important Utilizare
+Procedura permite preluarea articolelor dintr-o gestiune. Utilizând codul de bare, operatorul poate selecta articolul și locația din care va efectua preluarea, introduce cantitatea de descărcat și, dacă este necesar, lotul specific. Această procedură generează mișcarea de descărcare din gestiune, actualizând stocurile și asigurând înregistrarea corectă a fluxurilor de mărfuri.
 :::
 
-Questa procedura è utilizzata per creare un movimento di scarico di un articolo da una determinata ubicazione.        
-Nel campo **Codice barcode**, l’operatore dovrà solamente leggere il Barcode dell’articolo, poi quello dell’ubicazione da cui vuole scaricarlo.        
-Successivamente dovrà solo inserire la quantità da movimentare, ed una volta confermato verrà creato anche il relativo movimento di magazzino.        
-Nel caso in cui l'articolo sia gestito a lotti, verrà visualizzato anche il relativo campo in cui andare ad inserire il lotto che dovrà essere scaricato.         
-Inoltre, è possibile stampare anche l'etichetta del codice articolo tramite il pulsante **Stampa** o visualizzare l'anteprima direttamente sul terminale con il pulsante **Anteprima**.        
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.
+În câmpul **Cod de bare**, operatorul va trebui să citească doar codul de bare al articolului, apoi al locației în care dorește să îl descarce.           
+Ulterior, va trebui să introducă cantitatea de mișcat, iar odată confirmat, va fi creată și mișcarea de gestiune corespunzătoare.       
+În cazul în care articolul este gestionat pe loturi, va fi vizibil și câmpul corespunzător în care se va introduce lotul care trebuie descărcat.  
+În plus, este posibil să se imprime eticheta codului articolului cu butonului **Listare** sau să se vizualizeze cu butonul **Vizualizare**.          
+Butonul **Șterge tot** permite golirea formuluide toate datele introduse.
 
-:::note Nota
-Il *Codice Articolo* e il *Lotto* devono avere l’anagrafica presente su Fluentis.
+:::note Notă
+*Cod articol* și *Lot* trebuie să fie prezente în registru.
 :::
 
 **Parametri de încărcare/descărcare** care trebuie introduși în tabelul [Parametrii Încărcare/Descărcare pu utilizatori](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
