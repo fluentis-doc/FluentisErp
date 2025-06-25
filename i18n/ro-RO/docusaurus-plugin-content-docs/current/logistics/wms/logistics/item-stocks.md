@@ -43,7 +43,7 @@ Coloanele referitoare la stoc sunt trei:
 
 **Parametri încărcare/descărcare** de introdus în tabelul [Parametri Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-| Zonă | Modul | Form |
+| Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | ItemStocks |
 
