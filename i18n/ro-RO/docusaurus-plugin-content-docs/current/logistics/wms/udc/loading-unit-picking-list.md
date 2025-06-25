@@ -1,6 +1,6 @@
 ---
-title: Liste di prelievo / Packing List
+title: Liste de ieșiri / Listă de ambalare
 sidebar_position: 4
 ---
 
-Vedasi documentazione al seguente link: [Liste di prelievo / Packing List (versione WMS)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)
+Consultați documentația: [Liste de ieșiri / Listă de ambalare (versiune WMS)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)

@@ -1,6 +1,6 @@
 ---
-title: Conferma trasferimento UDC
+title: Confirmă transfer UDI
 sidebar_position: 7
 ---
 
-Vedasi documentazione al seguente link: [Conferma trasferimento UDC (versione WMS)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)
+Consultați documentația: [Confirmă transfer UDI (versiune WMS)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)
