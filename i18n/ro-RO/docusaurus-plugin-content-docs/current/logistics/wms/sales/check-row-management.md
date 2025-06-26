@@ -1,134 +1,122 @@
 ---
-title: Gestione spunta e Conferma picking
+title: Gestionare bifă și Confirmare dispoziție de livrare
 sidebar_position: 2
 ---
 
-## Gestione spunta
+## Gestionare bifă
 
-:::important A cosa serve
-La gestione spunta del WMS di Fluentis è uno strumento progettato per confermare le righe del picking effettivamente prelevate dall'operatore in magazzino. Se almeno una riga è spuntata, le procedure di creazione del Documento di Trasporto (DDT) e della fattura considerano solo queste righe; in caso contrario, si considerano tutte le righe del picking. Questo sistema semplifica e velocizza la creazione dei documenti di trasporto e fatturazione, permettendo anche l'inserimento manuale di nuove righe di articoli. Inoltre, la gestione spunta permette di creare le Unità di Carico (UDC) durante la conferma delle righe del picking, raggruppando gli articoli in unità di carico. Una volta selezionata una riga e inseriti i dati necessari, è possibile creare e gestire nuove UDC con gli articoli confermati.
+:::important Utilizare
+Gestionarea bifei WMS din Fluentis este un instrument destinat confirmării liniilor dispoziției de livrare efectiv preluate de operator în depozit. Dacă cel puțin o linie este bifată, procedurile de creare a avizului de expediție și a facturii iau în considerare doar aceste linii. În caz contrar, se consideră toate liniile dispoziției de livrare. Acest sistem simplifică și accelerează crearea avizelor de expediție și facturilor, permițând, de asemenea, introducerea manuală a unor noi linii de articole. În plus, gestionarea bifei permite crearea Unitatilor de Încărcare (UdI) în timpul confirmării liniilor dispoziției de livrare, grupând articolele în unități de încărcare. Odată selectată o linie și introduse datele necesare, este posibil să se creeze și să se gestioneze noi UDI cu articolele confirmate.
 :::
 
-A partire da un Picking esistente, si ha la possibilità di leggere gli articoli presenti e raggrupparli in UDC.    
-Da wpf è poi possibile procedere alla creazione del DDT o della fattura.
+Pornind de la o dispoziție de livrare existentă, se pot citi articolele prezente și se pot grupa în UdI.  
+Din WPF, se poate continua cu crearea avizului sau a facturii.
 
-:::note Nota
-Nella form di **Gestione spunta** verranno visualizzati solamente i picking creati con un *tipo picking* con il flag *Unità di carico obbligatoria* abilitato nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).
+:::note Notă
+În formul de **Gestionare bife** vor fi afișate doar dispozițiile de livrare care au opțiunea *Unitate de încărcare obligatorie* activată în [Tipuri dispoziție de livrare](/docs/configurations/tables/logistics/picking-type/).
 :::
 
-La form si apre sul filtro dei picking, dove è possibile visualizzare tutti i picking in stato *Non evaso* o *Parzialmente evaso* e con un *tipo picking* con il flag *Unità di carico obbligatoria* attivato.     
-I risultati possono essere filtrati per *Tipo picking*, *Numero*, *Data* e *Cliente*.    
-Tramite il pulsante *Apri* è possibile aprire il picking selezionato.
+### Articole 
 
-La form principale si compone dei seguenti tab:
+În acest tab sunt afișate toate liniile de articole prezente în dispoziția de livrare.
 
-- **Articoli**
-In questo tab sono visualizzate tutte le righe articoli presenti nel picking.
+#### Butoane specifice  
+> - **Detaliu**: permite poziționarea pe tab-ul **Articole bifate**;  
+> - **Confirmă**: după selectarea unei linii în tab **Articole**, se deschide tab-ul **Confirmare** care propune articolul selectat.
 
-**Pulsanti specifici**
-> **Dettaglio**: permette di posizionarsi sul tab **Articoli spuntati**;        
-> **Conferma**: dopo aver selezionato una riga nel tab **Articoli**, apre il tab **Conferma** proponendo l’articolo selezionato.
+### Confirmare
 
-- **Conferma**
-Tramite il campo **Input code** (quindi utilizzando un lettore barcode) è possibile inserire i dati relativi al lotto, all'ubicazione, alla quantità di prelievo e all’articolo se lo si vuole variare rispetto a quello proposto.
-L’utente può anche variare l’articolo spostandosi nel tab **Articoli**, dove sono visualizzate tutte le righe articoli presenti nel picking, selezionando quello di interesse e premendo il pulsante **Conferma** o spostandosi nuovamente nel tab **Conferma** per poter inserire i dati relativi all’articolo appena selezionato.      
-Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per il quale non sia stato inserito il lotto, verrà mostrato un messaggio che ricorda di inserire il lotto. È presente nel tab anche il campo *Unità di carico* da valorizzare per poter procedere alla conferma dei dati. 
+**Cod de introducere** (deci utilizând un cititor de coduri de bare) permite inserarea datelor referitoare la lot, la locație, la *cantitatea de colectat* și la articol, dacă se dorește modificarea acestuia față de cel propus.  
+Utilizatorul poate, de asemenea, să schimbe articolul mutându-se în tab **Articole**, unde sunt afișate toate liniile de articole prezente în dispoziția de livrare, selectând cel dorit și apăsând butonul **Confirmă** sau revenind în tab-ul **Confirmare** pentru a introduce datele referitoare la articolul recent selectat.  
 
-**Pulsanti specifici**
-> **Dettaglio spunta**: permette di posizionarsi sul tab **Articoli spuntati**;        
-> **Conferma**: permette di confermare i dati inseriti e successivamente di caricare i dati relativi alla riga successiva;          
-> **Nuova UDC**: permette di creare una nuova *Unità di carico* dopo aver selezionato il tipo.         
+În cazul în care utilizatorul confirmă linia unui articol gestionat pe loturi, pentru care nu a fost introdus lotul, va fi afișat un mesaj pentru inserarea acestuia. În tab este prezent și câmpul *Unitate de încărcare* care trebuie completat pentru a putea confirma datele.
 
-Al di sotto della quantità prelievo, è presente una griglia in sola lettura con le seguenti colonne: *Quantità*, *Ubicazione* e *Lotto*. Questa si aggiorna dinamicamente ed ad esempio, se viene solo indicato l’articolo deve fare vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo, se è indicato anche il lotto, deve far vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo con quel lotto.
+#### Butoane specifice  
+> - **Detaliu bifă**: permite poziționarea pe tab-ul **Articole bifate**;  
+> - **Confirmă**: permite confirmarea datelor introduse și apoi încărcarea datelor referitoare la linia succesivă;  
+> - **Nou UdI**: permite crearea unei noi *Unități de încărcare* după ce s-a selectat tipul.  
 
-- **UDC**
-Permette di visualizzare la composizione delle *Unità di carico* create per il picking corrente.          
+Sub câmpul *cantitatea de colectare*, este prezent un tabel cu următoarele coloane: *Cantitate*, *Locație* și *Lot*. Acesta se actualizează dinamic, iar de exemplu, dacă este indicat doar articolul, trebuie să arate toate locațiile cu stoc > 0 în care se află acel articol. Dacă este indicat și lotul, trebuie să arate toate locațiile cu stoc > 0 în care se află acel articol cu acel lot.
 
-**Pulsanti specifici**
-> **Apri UDC**: permette di visualizzare il dettaglio dell'*Unità di carico* selezionata. Inoltre, l'ultima *Unità di carico* aperta verrà proposta come *Unità di carico* in cui inserire i inserire i prossimi articoli da confermare.            
+### UdI 
 
-- **Articoli spuntati**
-Il tab **Articoli Spuntati** si popola solo dopo aver selezionato un articolo nel tab **Articoli** del Picking.
-Quindi dalla lista articoli del Picking, si seleziona un articolo e nel tab **Articoli Spuntati** compaiono tutte le letture fatte dell’articolo selezionato.
-Quando una riga *Picking* viene evasa completamente va in coda nel tab **Articoli** ed viene evidenziata in rosso. Selezionando quella riga e premendo il pulsante *Dettaglio spunta* verrà aperto il tab **Articoli spuntati** dove si potranno vedere le righe confermate, le quali possono anche essere cancellate tramite l'apposito pulsante *Cancella*. 
-Da questo tab è possibile selezionare un articolo spuntato e cancellarlo.
+Permite vizualizarea compunerii *Unităților de încărcare* create pentru dispoziție de livrare-ul curent.          
 
-**Pulsanti specifici**
-> **Cancella**: permette di eliminare la riga selezionata.
+#### Butoane specifice  
+> - **Deschide UdI**: permite vizualizarea detaliului *Unității de încărcare* selectate. În plus, ultima *Unitate de încărcare* deschisă va fi propusă ca *Unitate de încărcare* în care se inserează următoarele articole de confirmat.          
 
-:::note Nota
-Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantità indicata nel picking, è necessario abilitare il flag **Sovraevadibile** presente nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).
+### Articole bifate 
+
+Acest tab se completează după ce a fost selectat un articol în tabul **Articole** din dispoziție de livrare.  
+Deci, din lista articolelor dispoziției de livrare, se selectează un articol și în tab-ul **Articole Bifate** sunt afișate toate citirile efectuate ale articolului selectat.  
+Când o linie *dispoziție de livrare* este complet procesată, va fi evidențiată cu roșu. Selectând acea linie și apăsând butonul *Detaliu bifă*, se va deschide tab-ul **Articole bifate** unde se vor putea vizualiza liniile confirmate, care pot fi șterse cu butonul *Șterge*.  
+
+:::note Notă
+Când este necesar să fie depășită cantitatea indicată în dispoziție de livrare, trebuie să activați opțiunea **Executat în plus** prezent în tabelul [Tipuri dispoziție de livrare](/docs/configurations/tables/logistics/picking-type/).
 :::
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii de încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 
-I parametri sono ripetuti poiché la form utilizza una causale di scarico (senza contropartita), per scaricare gli articoli prelevati, ed una di carico per caricarli all’interno delle unità di carico appena create. Per la causale di carico è importante indicare anche una ubicazione di default che verrà utilizzata per caricare l'unità di carico appena creata.    
-                                         
+Parametrii sunt repetați deoarece form-ul utilizează un șablon de descărcare (fără contrapartidă), pentru a descărca articolele preluate, și unul de încărcare pentru a le încărca în unitățile de încărcare recent create. Este important să se indice, de asemenea, o locație implicită care va fi utilizată pentru a încărca unitatea de încărcare creată recent.    
+                                          
 Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
+## Confirmare dispoziție de livrare
 
-## Conferma Picking
-
-:::important A cosa serve
-A partire da un Picking esistente, senza l’utilizzo però delle unità di carico, che invece vengono create utilizzando la form di [Gestione spunta](/docs/logistics/wms/sales/check-row-management), con la form di **Conferma Picking** è possibile confermare le singole righe del picking, per movimentare gli articoli tra due magazzini o ubicazioni, creando direttamente i movimenti di magazzino di spostamento.
-Successivamente, da wpf, è poi possibile procedere alla creazione del DDT o della fattura.
+:::important Utilizare
+Pornind de la o dispoziție de livrare existentă, fără utilizarea unităților de încărcare, care sunt create utilizând [Gestionare bife](/docs/logistics/wms/sales/check-row-management), cu formul de **Confirmare dispoziție de livrare** este posibil să confirmați fiecare linie ale dispoziției de livrare, pentru a muta articolele între două gestiuni sau locații, creând direct mișcările de gestiune pentru mutare.  
+Ulterior, din WPF, se poate continua cu crearea avizului sau a facturii.
 :::
 
-:::note Nota
-Nella form di **Conferma Picking** verranno visualizzati solamente i picking creati con un *tipo picking* con il flag *Unità di carico obbligatoria* disattivato nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).
+:::note Notă
+În **Confirmare dispoziție de livrare** vor fi afișate doar dispozițiile de livrare care au opțiunea *Unitate de încărcare obligatorie* dezactivată în [Tipuri dispoziție de livrare](/docs/configurations/tables/logistics/picking-type/).
 :::
 
-La form si apre sul filtro dei picking, dove è possibile visualizzare tutti i picking in stato *Non evaso* o *Parzialmente evaso* e con un *tipo picking* con il flag *Unità di carico obbligatoria* disattivato.     
-I risultati possono essere filtrati per *Tipo picking*, *Numero*, *Data* e *Cliente*.    
-Tramite il pulsante *Apri* è possibile aprire il picking selezionato.
+### Articole 
 
-La form principale si compone dei seguenti tab:
+În acest tab sunt afișate toate liniile de articole prezente în dispoziție de livrare.
 
-- **Articoli**
-In questo tab sono visualizzate tutte le righe articoli presenti nel picking.
+#### Butoane specifice
+> - **Detaliu**: permite poziționarea pe tab-ul **Articole bifate**;  
+> - **Confirmare**: după selectarea unei linii în tab **Articole**, se deschide tab-ul **Confirmare** care propune articolul selectat.
 
-**Pulsanti specifici**
-> **Dettaglio**: permette di posizionarsi sul tab **Articoli spuntati**;        
-> **Conferma**: dopo aver selezionato una riga nel tab **Articoli**, apre il tab **Conferma** proponendo l’articolo selezionato.
+### Confirmare 
 
-- **Conferma**
-Tramite il campo **Input code** (quindi utilizzando un lettore barcode) è possibile inserire i dati relativi al lotto, all'ubicazione, alla quantità di prelievo e all’articolo se lo si vuole variare rispetto a quello proposto.
-Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per il quale non sia stato inserito il lotto, verrà mostrato un messaggio che ricorda di inserire il lotto. 
+**Cod de introducere** (deci utilizând un cititor de coduri de bare) permite inserarea datelor referitoare la lot, la locație, la *cantitatea de colectat* și la articol, dacă se dorește modificarea acestuia față de cel propus.  
+În cazul în care utilizatorul confirmă linia unui articol gestionat pe loturi, pentru care nu a fost introdus lotul, va fi afișat un mesaj pentru inserarea acestuia.
 
-**Pulsanti specifici**
-> **Dettaglio**: permette di posizionarsi sul tab **Articoli spuntati**;        
-> **Conferma**: permette di confermare i dati inseriti e successivamente di caricare i dati relativi alla riga successiva;          
+#### Butoane specifice
+> - **Detaliu**: permite poziționarea pe tab-ul **Articole bifate**;  
+> - **Confirmare**: permite confirmarea datelor introduse și ulterior încărcarea datelor referitoare la linia următoare.  
 
-Al di sotto della quantità prelievo, è presente una griglia in sola lettura con le seguenti colonne: *Quantità*, *Ubicazione* e *Lotto*. Questa si aggiorna dinamicamente ed ad esempio, se viene solo indicato l’articolo deve fare vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo, se è indicato anche il lotto, deve far vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo con quel lotto.
+Sub câmpul *cantitatea de colectare*, este prezent un tabel cu următoarele coloane: *Cantitate*, *Locație* și *Lot*. Acesta se actualizează dinamic, iar de exemplu, dacă este indicat doar articolul, trebuie să arate toate locațiile cu stoc > 0 în care se află acel articol. Dacă este indicat și lotul, trebuie să arate toate locațiile cu stoc > 0 în care se află acel articol cu acel lot.
 
-- **Articoli spuntati**       
-Il tab **Articoli Spuntati** si popola solo dopo aver selezionato un articolo nel tab **Articoli** del Picking.
-Quindi dalla lista articoli del Picking, si seleziona un articolo e nel tab **Articoli Spuntati** compaiono tutte le letture fatte dell’articolo selezionato.
-Quando una riga *Picking* viene evasa completamente va in coda nel tab **Articoli** ed viene evidenziata in rosso. Selezionando quella riga e premendo il pulsante *Dettaglio* verrà aperto il tab **Articoli spuntati** dove si potranno vedere le righe confermate, le quali possono anche essere cancellate tramite l'apposito pulsante *Cancella*. 
-Da questo tab è possibile selezionare un articolo spuntato e cancellarlo.
+### Articole bifate  
 
-**Pulsanti specifici**
-> **Cancella**: permette di eliminare la riga selezionata.
+Acest tab se completează după ce a fost selectat un articol în tabul **Articole** din dispoziție de livrare.  
+Deci, din lista articolelor dispoziției de livrare, se selectează un articol și în tab-ul **Articole Bifate** sunt afișate toate citirile efectuate ale articolului selectat.  
+Când o linie *dispoziție de livrare* este complet procesată, va fi evidențiată cu roșu. Selectând acea linie și apăsând butonul *Detaliu bifă*, se va deschide tab-ul **Articole bifate** unde se vor putea vizualiza liniile confirmate, care pot fi șterse cu butonul *Șterge*.  
+Din acest tab, este posibil să selectați un articol bifat și să-l ștergeți.  
 
-:::note Nota
-Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantità indicata nel picking, è necessario abilitare il flag **Sovraevadibile** presente nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).
+:::note Notă
+Când este necesar să fie depășită cantitatea indicată în dispoziție de livrare, trebuie să activați opțiunea **Executat în plus** prezent în tabelul [Tipuri dispoziție de livrare](/docs/configurations/tables/logistics/picking-type/).
 :::
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii de încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 
-:::note Nota
-È importante ricordare che la causale utilizzata dovrà essere una causale di scarico con una causale di carico in contropartita.
+:::note Notă
+Șablonul utilizat va trebui să fie de descărcare și să aibă un șablon de încărcare în contrapartidă.
 :::
 
-Per ogni Picking verrà creata un’unica registrazione di scarico con in contropartita un’unica registrazione di carico che contiene i movimenti di tutti gli articoli spuntati. 
+Pentru fiecare dispoziție de livrare, va fi creată o singură înregistrare de descărcare cu o singură înregistrare de încărcare în contrapartidă care va conține mișcările tuturor articolelor bifate. 
 
-Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
