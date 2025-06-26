@@ -26,7 +26,7 @@ Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi
 **Attiva**: indica se la macchina è attiva o meno, quindi se sia utilizzabile e pianificabile;  
 **Dichiarazione materiale mobile**: è utilizzato nella form delle dichiarazioni di produzione del WMS; se attivo, in fase di dichiarazione verrà richiesto anche di inserire i materiali consumati;      
 **Stampa etichetta**: è utilizzato nella form delle dichiarazioni di produzione del WMS; se attivo, alla conferma della dichiarazione di produzione permette di stampare le relative etichette;      
-**Centri di lavoro**: indica su quale centro di lavoro è collocata la macchina;  
+**Centri di lavoro**: indica su quale centro di lavoro è associata la macchina; è possibile associare più macchine ad uno stesso centro di lavoro e tra queste sarà possibile scegliere quale utilizzare nel widget ***Macchina*** presente nel [tab Produzione del MES](/docs/production/mes/mes-main-form#tab-produzione);        
 **Centro aziendale**: indica il centro di costo a cui si riferisce la macchina;  
 **Reparti**: indica il codice del reparto in cui è inserita la macchina;  
 **Classe macchina**: indica la classe della macchina (nel caso in cui la macchina sia codificata come articolo);  

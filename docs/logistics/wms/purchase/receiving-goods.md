@@ -110,7 +110,7 @@ In questo caso i **Parametri carico/scarico** sono gli stessi visti nei casi pre
 ## **Ricevimento merci con unità di misura alternative**
 
 La gestione dell’unità di misura alternativa viene abilitata se il flag **Default WMS** presente nel [tab UM alternative dell’anagrafica dell’articolo](/docs/erp-home/registers/items/create-new-item#23-um-alternativa) è attivo.        
-In quel caso nella form del ricevimento vengono visualizzati anche i campi dell’unità di misura e quantità alternative, dove il fattore di conversione utilizzato è calcolato dividendo la quantità gestionale per la quantità alternativa (se coincide con quella che ha il flag default WMS) presente nell’ordine fornitore.         
-Questo fattore di conversione viene utilizzato moltiplicando o dividendo (in base al relativo parametro indicato nei parametri iniziali di magazzino) per ottenere le quantità nell’unità di misura alternativa nella form principale di creazione ddt e in quella di creazione delle UDC.
+In quel caso nella form del ricevimento vengono visualizzati anche i campi dell’unità di misura e quantità alternative, dove il fattore di conversione (CF) utilizzato è calcolato dividendo la quantità gestionale (UM Gest) presente nell’ordine fornitore per la quantità alternativa (UM Alt) (se coincide con quella che ha il flag default WMS) sempre presente nell'ordine fornitore: **CF = UM Gest / UM Alt**          
+Quindi all'interno della form, quando viene modificata la quantità alternativa, la quantità gestionale sarà calcolata moltiplicando la quantità alternativa per il fattore di conversione calcolato in precedenza; mentre, se viene modificata la quantità gestionale, la quantità alternativa sarà calcolata dividendo la quantità gestionale per il fattore di conversione.
 
 In questo caso i **Parametri carico/scarico** sono gli stessi visti nei casi precedenti.
