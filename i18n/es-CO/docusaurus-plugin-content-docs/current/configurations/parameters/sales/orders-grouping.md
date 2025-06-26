@@ -1,10 +1,10 @@
 ---
-title: Parámetros de agrupamiento de pedidos (Parametri raggruppamento ordini)
+title: Parámetros de Agrupamiento de Pedidos 
 sidebar_position: 7
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[Inicio Rápido]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido**](/docs/guide/fast-start)
 
 En caso de que se desee configurar manualmente, consultar la lista de verificación de la página enlazada.
 :::
@@ -14,15 +14,15 @@ Estos parámetros generales de agrupamiento deben configurarse una sola vez y se
 De esta manera, se garantiza una gestión flexible y adaptable de los cumplimientos, permitiendo satisfacer las necesidades específicas de cada cliente o proveedor, manteniendo a la vez una configuración centralizada y coherente para la mayoría de las operaciones.
 
 En esta interfaz se deciden las reglas de agrupamiento para el procedimiento:  
-**Creación de órdenes de venta a partir de ofertas (Creazione ordine di vendita da offerte)**: en caso de cumplimiento de múltiples ofertas en un pedido, es posible agrupar las ofertas según las siguientes propiedades:  
-- **tipo documento**: las ofertas con el mismo [Tipo (Tipo)](/docs/configurations/tables/sales/sales-offer-type) crearán un solo pedido.  
-- **anno**: las ofertas del mismo año crearán un solo pedido.  
-- **mese**: las ofertas del mismo mes crearán un solo pedido.  
-- **cambio**: las ofertas con el mismo cambio crearán un solo pedido.  
-- **progetto**: las ofertas con el mismo proyecto en [Encabezado (Testata)](/docs/sales/offers/insert-offer) crearán un solo pedido.  
-- **tipo y solución de pago (tipo e soluzione di pagamento)**: las ofertas con las mismas condiciones de pago crearán un solo pedido.  
-- **destinazione**: las ofertas con el mismo destino y transportista crearán un solo pedido.  
+**Crear Orden de Venta a partir de Oferta de Venta**: en caso de cumplimiento de múltiples ofertas en un pedido, es posible agrupar las ofertas según las siguientes propiedades:  
+- **Tipo de documento**: las ofertas con el mismo [Tipo](/docs/configurations/tables/sales/sales-offer-type) crearán un solo pedido.  
+- **Año**: las ofertas del mismo año crearán un solo pedido.  
+- **Mes**: las ofertas del mismo mes crearán un solo pedido.  
+- **Intercambio**: las ofertas con el mismo cambio crearán un solo pedido.  
+- **Orden de trabajo**: las ofertas con el mismo proyecto en [Encabezado (Testata)](/docs/sales/offers/insert-offer) crearán un solo pedido.  
+- **Tipo y Término de Pago**: las ofertas con las mismas condiciones de pago crearán un solo pedido.  
+- **Enviar a**: las ofertas con el mismo destino y transportista crearán un solo pedido.  
 
 Es necesario activar las columnas que prevean los agrupamientos que se desean considerar para este cumplimiento.  
-El indicador **riepilogativa** es fundamental para crear un único documento a partir de varios documentos de origen. Los otros indicadores, en cambio, se refieren a agrupamientos especiales.  
-La columna **priorità** no se utiliza en este momento.
+El indicador **Summary** es fundamental para crear un único documento a partir de varios documentos de origen. Los otros indicadores, en cambio, se refieren a agrupamientos especiales.  
+La columna **Prioridad** no se utiliza en este momento.
