@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 :::important Utilizare
-Cu acest raport utilizatorii pot genera și vizualiza listele detaliate ale stocurilor de articole, permițând o verificare precisă a cantităților fizice.  
+Cu acest raport utilizatorii pot genera și vizualiza listele detaliate ale stocurilor de articole, permițând o verificare precisă a cantităților faptice.  
 Această abordare simplifică semnificativ activitățile de control, sprijinind identificarea rapidă a variațiilor de stoc.  
 Listele de inventariere pot fi utilizate nu doar pentru operațiunile de inventar periodic, ci și pentru monitorizarea rotației stocurilor și optimizarea strategiilor de aprovizionare.  
 În plus, integrarea cu alte rapoarte de gestionare a stocului garantează o imagine de ansamblu a gestionării stocurilor, favorizând o eficiență operațională sporită.

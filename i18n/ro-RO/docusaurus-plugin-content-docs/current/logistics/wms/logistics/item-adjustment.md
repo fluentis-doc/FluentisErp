@@ -1,4 +1,4 @@
-reprezintă---
+---
 title: Rectificare articol 
 sidebar_position: 4
 ---

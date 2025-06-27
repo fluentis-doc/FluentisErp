@@ -4,7 +4,7 @@ sidebar_position: 3
 ---
 
 :::important Utilizare
-Introducerea parametrilor diferențelor inventariale în Fluentis este esențială pentru a asigura o aliniere eficientă dintre stocurile fizice și cele logice din gestiune. Această funcționalitate le permite operatorilor să gestioneze și să înregistreze în mod sistematic discrepanțele identificate, asigurând că fiecare mișcare de stoc este urmărită și contabilizată cu precizie.
+Introducerea parametrilor diferențelor inventariale în Fluentis este esențială pentru a asigura o aliniere eficientă dintre stocurile faptice și cele scriptice din gestiune. Această funcționalitate le permite operatorilor să gestioneze și să înregistreze în mod sistematic discrepanțele identificate, asigurând că fiecare mișcare de stoc este urmărită și contabilizată cu precizie.
 
 Parametrii diferențelor inventariale se află în secțiunea de configurare și permit stabilirea șabloanelor de gestiune care trebuie utilizate în procesul de calcul al diferențelor. Fiecare depozit poate avea configurații personalizate, fiind necesar să se stabilească atât un șablon de încărcare pentru ajustările inventariale pozitive, cât și unul de descărcare pentru ajustările negative. În plus, sistemul automatizează generarea înregistrărilor de compensare, simplificând astfel gestionarea eventualelor variații ale stocurilor.
 

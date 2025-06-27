@@ -1,4 +1,4 @@
- ---
+---
 title: Stoc  
 sidebar_position: 5
 ---

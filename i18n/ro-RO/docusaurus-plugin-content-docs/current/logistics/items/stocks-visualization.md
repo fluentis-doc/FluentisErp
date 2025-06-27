@@ -1,6 +1,5 @@
 ---
-title: Vizualizarea stocurilor (Visualizzazione giacenze)
-sidebar_position: 2
+title: Vizualizare stocuri
 ---
 
 :::important Utilizare

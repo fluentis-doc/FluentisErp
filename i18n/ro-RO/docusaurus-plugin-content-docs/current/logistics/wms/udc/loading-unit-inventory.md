@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::important Ce utilizează
 Procedura *Inventar UdI* din WMS Fluentis permite realizarea unui inventar precis al unităților de încărcare prezente în gestiune.  
-Operatorii pot citi locația pentru a vizualiza UdI conținute și proceda cu înregistrarea cantităților, generând automat mișcări de rectificare pentru alinierea stocurilor scriptice cu cele fizice.
+Operatorii pot citi locația pentru a vizualiza UdI conținute și proceda cu înregistrarea cantităților, generând automat mișcări de rectificare pentru alinierea stocurilor scriptice cu cele faptice.
 :::  
 
 Această procedură este utilizată pentru a efectua un inventar al UdI prezente în gestiune.

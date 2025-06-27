@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 :::important Utilizare
-Raportul reprezintă un instrument esențial pentru gestionarea și monitorizarea stocurilor de gestiune, permițând companiilor să aibă o viziune clară și detaliată asupra propriilor stocuri. Cu acest raport, utilizatorii pot accesa informații complete nu doar despre cantitățile fizice ale articolelor prezente în gestiune, ci și despre valoarea acestora, obținută prin diverse proceduri de valorizare, cum ar fi costul mediu, costul din ultima achiziție, FIFO și LIFO.
+Raportul reprezintă un instrument esențial pentru gestionarea și monitorizarea stocurilor de gestiune, permițând companiilor să aibă o viziune clară și detaliată asupra propriilor stocuri. Cu acest raport, utilizatorii pot accesa informații complete nu doar despre cantitățile faptice ale articolelor prezente în gestiune, ci și despre valoarea acestora, obținută prin diverse proceduri de valorizare, cum ar fi costul mediu, costul din ultima achiziție, FIFO și LIFO.
 
 Generarea raportului se face cu ajutorul filtrelor personalizabile, care permit vizualizarea datelor specifice pentru gestiune, articol, categorie de produse și altele, facilitând analiza și gestionarea stocurilor. Utilizatorii pot, de asemenea, să grupeze și să ordoneze datele în funcție de parametrii semnificativi, ceea ce face ca întregul proces de control al inventarului să fie mai eficient și informat.
 :::
