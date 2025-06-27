@@ -1,28 +1,25 @@
 ---
-title: Carico/Sposta UDC
+title: Încarcă/Mută UdI
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La funzione **Carico/Sposta UDC** del WMS di Fluentis è progettata per semplificare il processo di gestione delle unità di carico. Consente agli operatori di caricare un'unità di carico non ancora registrata nel sistema o di spostare un'unità già caricata da una ubicazione a un'altra, tutto tramite la scansione del codice a barre. Grazie a questa funzionalità, il sistema facilita le operazioni di magazzino in tempo reale.
+:::important Utilitate
+Procedura **Încarcă/Mută UdI** din WMS Fluentis simplifică procesul de gestionare a unităților de încărcare. Permite operatorilor să încarce o unitate de încărcare care nu a fost înregistrată în sistem sau să mute o unitate deja încărcată dintr-o locație în alta.
 :::
 
-Questa procedura è utilizzata per la lettura di una unità di carico per poter procedere al *Carico* se l’unità di carico risulta non caricata o allo *Spostamento* se, invece, l’unità di carico risulta già essere caricata.
+Rapid și ușor, operatorul poate efectua aceste operații citind direct codul de bare al unității de încărcare. 
+Dacă aceasta nu este încărcată, procedura propune automat ca locație în care trebuie să fie încărcată UdI locația prezentă în antetul UdI și se activează butonul **Încărcare**, cu ajutorul căruia se creează mișcarea de gestiune în timp real.  
+Dacă este deja încărcată, procedura va solicita introducerea locației de destinație a mutării, activând butonul **Mută**, cu ajutorul căruia vor fi create mișcările de descărcare cu contrapartida de încărcare în noua locație.
 
-In maniera semplice e veloce l’operatore può effettuare queste operazioni leggendo direttamente il barcode dell’unità di carico, nel caso in cui questa non sia caricata, la procedura propone automaticamente come ubicazione in cui deve essere caricata l’UDC quella presente nella testata dell'UDC stessa e viene abilitato il pulsante **Carico**, con il quale viene creato il movimento di magazzino in tempo reale.      
+Butonul **Șterge tot** permite golirea formulului de toate datele introduse.
 
-Mentre, nel caso in cui sia già caricata, la procedura richiederà di inserire l’ubicazione di destinazione dello spostamento, attivando il pulsante **Sposta** con il quale verranno creati i relativi movimenti di scarico con contropartita di carico nella nuova ubicazione.     
-  
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.    
-
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadMoveLoadingUnit |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadMoveLoadingUnit |
 
-I parametri sono inseriti due volte poiché la form utilizza sia una causale di carico per le unità di carico da caricare, sia una di scarico per le unità di carico già caricate e quindi da scaricare. La causale di scarico deve avere una causale di carico in contropartita.     
+Parametrii sunt inserați de două ori deoarece formul utilizează atât un șablon de încărcare pentru UdI de încărcat, cât și unul de descărcare pentru unitățile de încărcare deja încărcate și, prin urmare, de descărcat. Șablonul de descărcare trebuie să aibă un șablon de încărcare în contrapartidă.
 
 Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-   

@@ -17,12 +17,12 @@ Alla lettura dell'ubicazione vengono visualizzate nella griglia sottostante tutt
 > **Data inventario**: indica l'ultima data in cui è stata inventariata l'unità di carico contenuta nell'ubicazione.  
 
 Lo step successivo è quello di leggere l'unità di carico da inventariare; se questa è presente tra quelle contenute nell'ubicazione selezionata viene aggiornata la **Data inventario** con la data odierna. Nel caso in cui, invece, l'unità di carico letta non sia presente nell'ubicazione viene mostrato un messaggio di avviso all'utente.      
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
+Butonul **Șterge tot** permite golirea formulului de toate datele introduse.     
 
 Una volta ultimate le letture dell'unità di carico, con la pressione del pulsante **Conferma**, solo nel caso in cui siano presenti delle unità di carico non inventariate, la procedura creerà dei movimenti di scarico di quelle unità di carico dall'ubicazione selezionata e di carico delle stesse nell'ubicazione di default indicata nella causale presente nei 
 [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |

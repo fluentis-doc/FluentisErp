@@ -19,12 +19,12 @@ Alla lettura dell'unità di carico vengono visualizzati nella griglia sottostant
 
 Selezionando uno degli articoli, con i pulsanti **+** e **-**, oppure tramite tastiera, è possibile variare rispettivamente in positivo o negativo la quantità riporta in griglia.       
 Una volta ultimate le correzioni su tutti gli articoli interessati, tramite il pulsante **Conferma** verranno confermati ed effettuati i relativi movimenti di magazzino di rettifica positivi e negativi all'interno dell'unità di carico selezionata.
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
+Butonul **Șterge tot** permite golirea formulului de toate datele introduse.     
 
 Nel caso in cui venga aggiunto un nuovo articolo non presente nell'unità di carico, verrà visualizzato un messaggio che permette all'utente di decidere se questo nuovo articolo debba essere aggiunto o meno all'unità di carico. In questa situazione, è importante ricordare che se l'articolo (da aggiungere), è gestito a lotti, deve essere obbligatoriamente inserito anche un lotto valido.          
 Per rimuove, invece, un articolo basterà portare la relativa quantità a zero.       
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |

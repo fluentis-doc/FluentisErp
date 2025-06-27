@@ -12,7 +12,7 @@ Alla lettura della prima unità di carico, questa viene inserita come unità di 
 La seconda lettura, invece, va ad inserire l'unità di carico di destinazione ed ogni successiva lettura di unità di carico verrà considerata come la nuova destinazione.      
 Lo step successivo è quello di leggere l'articolo da spostare (che in automatico viene flaggato nella griglia sottostante) ed inserire la quantità; anche in questa form se l'articolo è gestito a lotti viene visualizzato anche il relativo campo di inserimento.      
 Dopo di che sarà sufficiente premere il pulsante **Sposta** per effettuare il movimento di scarico dall'unità di carico di partenza e di carico nell'unità di carico di destinazione.           
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
+Butonul **Șterge tot** permite golirea formulului de toate datele introduse.     
 
 :::note Regole da tenere presente per il corretto utilizzo della form:
 - Le unità di carico di partenza e arrivo devono essere valide.
@@ -24,7 +24,7 @@ Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inser
 - Le unità di carico di partenza e di destinazione non devono essere contenute in una **Lista di prelievo UDC / Packing list** o in una **Lista di trasferimento UDC**. 
 :::
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |

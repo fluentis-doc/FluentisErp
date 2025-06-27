@@ -12,17 +12,17 @@ Questa procedura è utilizzata per la lettura di una o più unità di carico per
 L’operatore può effettuare queste operazioni leggendo direttamente il barcode di una o più unità di carico, nel caso in cui queste non siano caricate, queste vengono direttamente aggiunte nella griglia sottostante il campo codice barcode.     
 La procedura propone automaticamente come ubicazione in cui deve essere caricata l’UDC quella presente nella testata dell'UDC stessa viene abilitato il pulsante **Carico**, con il quale viene creato il movimento di magazzino in tempo reale.        
 
-Mentre, nel caso in cui siano già caricate, la procedura richiederà di inserire l’ubicazione di destinazione dello spostamento, attivando il pulsante **Sposta** con il quale verranno creati i relativi movimenti di scarico con contropartita di carico nella nuova ubicazione.          
+Dacă este deja încărcată, procedura va solicita introducerea locației de destinație a mutării, activând butonul **Mută**, cu ajutorul căruia vor fi create mișcările de descărcare cu contrapartidă de încărcare în noua locație.          
 
-Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.   
+Butonul **Șterge tot** permite golirea formulului de toate datele introduse.   
 
-**Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadMoveMultipleLoadingUnit |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadMoveMultipleLoadingUnit |
 
-I parametri sono inseriti due volte poiché la form utilizza sia una causale di carico per le unità di carico da caricare, sia una di scarico per le unità di carico già caricate e quindi da scaricare. La causale di scarico deve avere una causale di carico in contropartita.     
+Parametrii sunt inserați de două ori deoarece formul utilizează atât un șablon de încărcare pentru UdI de încărcat, cât și unul de descărcare pentru unitățile de încărcare deja încărcate și, prin urmare, de descărcat. Șablonul de descărcare trebuie să aibă un șablon de încărcare în contrapartidă.    
 
 Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
