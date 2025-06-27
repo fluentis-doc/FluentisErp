@@ -12,7 +12,7 @@ Počevši od verzije 606, knjižna odobrenja uvijek se moraju unositi u Fluentis
 Za računovodstvene potrebe, u slučaju da su unutar odobrenja prisutni mješoviti predznaci (pozitivne linije i negativne linije), potrebno je omogućiti mogućnost upravljanja njihovim mijenjanjem u administraciji (računovodstvu) internog parametra u bazi podataka (varijacija od 0 do 1, u prošlosti je postavljeno -1 prije gornje promjene). Obratite se tehničkoj dokumentaciji i eventualno službi za podršku.  
 :::
 
-### Kodiranje artikla po kupcu (Oznaka 2.2.1.3 Šifra artikla)
+### Kodiranje artikla po kupcu (Oznaka 2.2.1.3 Šifraartikla)
 
 Oznaka koda stavke može se ponoviti nekoliko puta, generirajući dvostruko kodiranje, promjenom koda u oznaci 2.2.1.3.1 
 
@@ -110,64 +110,59 @@ gdje je CODCLI vrijednost unesena u polje *vrste šifre artikla kupca* u Šifarn
 Ako želite vidjeti kod članka Fluentis drugačije od standarda, morate prilagoditi FSItem transformaciju u ruci koja se zove FullTextDescriptionXMLFE. Ako ne želite ništa umetnuti u oznaku CodiceArticolo za CodiceType “art. dobavljač", u transformaciji, u mreži, ništa se ne smije unijeti u korespondenciju s nizom " Engine Parameters ". Da biste isključili kod klase u pojedinačnim redcima dokumenta, potrebno je prilagoditi transformaciju FullTextDesctiption FSItem objekta u Arm promjenom teksta sadržanog u odjeljku EngineParameters retka “Default” iz “ItemClassCode +”-“+ Šifra” u “Šifra”  
 :::
 
-### Dichiarazione di intento ( tag 2.2.1.16 AltriDatiGestionali) 
+### Izjava namjere ( tag 2.2.1.16 Ostalipodacioupravljanju) 
 
-I dati della dichiarazione intento sono inseriti automaticamente come “altri dati gestionali”: 
+Podaci iz izjave volje automatski se upisuju kao "ostali podaci o upravljanju": 
 
-2.2.1.16.1 TipoDato INTENTO 
+2.2.1.16.1 Vrstapodataka POKUŠAJ 
 
-2.2.1.16.2 RiferimentoTesto viene riportato il riferimento identificativo e progressivo leggendoli dal **[registro delle dichiarazioni di intento](/docs/finance-area/declarations/declarations/intent-declaration)**
+2.2.1.16.2 Referencateksta identifikacijska i progresivna referenca prijavljuju se čitanjem iz **[registra izjava namjere](/docs/finance-area/declarations/declarations/intent-declaration)**
 
-2.2.1.16.4 RiferimentoData viene riportata la data protocollo leggendola dal registro delle dichiarazioni di intento
+2.2.1.16.4 Referentnidatum datum protokola prijavljuje se čitanjem iz registra izjava namjere 
 
 
-### Annotazioni fisse in fattura ( tag 2.1.1.11 Causale)
+### Fiksne zabilješke na fakturi ( tag 2.1.1.11 Predložak)
 
-Per gestire le annotazioni che nelle stampe delle vecchie fatture venivano inserite fisse nel report (esempio “Contributo 
-Conai assolto ove dovuto”), devono essere inserite nuove note nella tabella Note codificate (Utilità->Gestione note 
-codificate). Questo tipo di annotazioni vengono riportate nel tag Causale del file XML. 
+Za upravljanje bilješkama koje su u ispisima starih faktura trajno umetnute u izvješće (na primjer "Doprinos Conai plaćen gdje je dospjelo"), nove bilješke moraju se umetnuti u tablicu Šifrirane bilješke (Alati -> Upravljanje šifriranim bilješkama). Questo tipo di annotazioni vengono riportate nel tag Causale del file XML. 
 Le condizioni da rispettare per avere compilato il tag Causale sono: 
 - il tipo nota codificata deve avere codice        
    
 ```
-   FATTURAZIONEELETTRONICA_CAUSALE
+   ELEKTRONIČKO FAKTURIRANJE_PREDLOŽAK
 ```
    
-- la nota deve essere legata alla singola società 
-- viene riportato quello che c’è scritto nel campo Descrizione, se questo è vuoto quello che c’è nel campo ‘Titolo’
+- zabilježba mora biti povezana s pojedinom tvrtkom
+- javlja se ono što je napisano u polju Opis, ako je ovo prazno ono što je u polju ‘Naslov’
  
-### Annotazione fisse per cliente ( tag 2.1.1.11 Causale)
+### Fiksne napomene za korisnika  ( tag 2.1.1.11 Predložak)
 
-Per gestire delle annotazioni da riportare in base al cliente, devono essere gestite le note codificate nella relativa tabella 
-(Utilità->Gestione note codificate). Questo tipo di annotazioni vengono riportate nel tag Causale del file XML che può 
-essere replicato più volte nel file. 
+Za upravljanje bilješkama koje se trebaju prijaviti na temelju kupca, mora se upravljati šifriranim bilješkama u relevantnoj tablici (Alati -> Upravljanje šifriranim bilješkama). O ovoj vrsti komentara izvješćuje se u oznaci predloška XML datoteke koja se može replicirati više puta u datoteci. 
 
-Le condizioni da rispettare per avere compilato il tag Causale sono: 
-- il tipo nota codificata deve avere codice
+Uvjeti koje treba poštovati da bi se ispunila oznaka predloška su: 
+- šifrirana vrsta bilješke mora imati šifru 
 ```
-   FATTURAZIONEELETTRONICA_CAUSALE
+   ELEKTRONIČKO FAKTURIRANJE_PREDLOŽAK
 ```
-- le note devono essere inserire nella scheda ‘Varie’ dell’anagrafica cliente, dedicato alla gestione delle note 
-specifiche da riportare in stampa dei documenti. 
-- la nota deve avere il flag ‘Stampa in Fatture Vendita’ o, se questo è vuoto, si riporta quanto scritto nel campo ‘Note’ della riga
+- bilješke moraju biti umetnute u karticu 'Razno' baze podataka o korisnicima, namijenjenu upravljanju specifičnim bilješkama koje treba prijaviti prilikom ispisa dokumenata.
+- bilješka mora imati oznaku 'Ispis u prodajnim fakturama' ili, ako je prazna, prijavljuje se ono što je napisano u polju retka 'Napomene'  
  
-### Gestione dati aggiuntivi liberi (tag 2.2.1.16 AltriDatiGestionali)
+### Upravljanje dodatnim slobodnim podacima (tag 2.2.1.16 Ostalipodacioupravljanju)
 
-Per gestire dati aggiuntivi ‘liberi’ di riga, in Fluentis è necessario inserire degli ExtraData con codice che inizia con 
+Za upravljanje dodatnim 'besplatnim' podacima reda, u Fluentis je potrebno umetnuti ExtraData s kodom koji počinje s
 
 ```
   AltriDGes_
 ```
 (es. AltriDGes_AltriDati3). 
 
-Questi Extradata, di tipo semplice, vanno collegati all’oggetto padre  
+Ovi ekstrapodaci, jednostavnog tipa, moraju biti povezani s nadređenim objektom
 
 ```
    FSSalesInvoiceItem
 ```
-sulla proprietà, appunto, ExtraData (sono previsti 3 tipi: stringa, numerico, data). 
+na svojstvo, zapravo, ExtraData (postoje 3 vrste: niz, numerički, podaci). 
 
-In ogni riga articolo, quindi, l’utente può aggiungere liberamente (manualmente) questi dati aggiuntivi; come risultato la riga articolo avrà, (ad esempio, se l’extra data è di tipo stringa), questa sezione aggiuntiva: 
+U svaki redak članka, dakle, korisnik može slobodno (ručno) dodati ove dodatne podatke; kao rezultat će redak članka imati, (na primjer, ako su dodatni podaci tipa string), ovaj dodatni odjeljak: 
 
 ```xml
     <AltriDatiGestionali> 
@@ -176,15 +171,15 @@ In ogni riga articolo, quindi, l’utente può aggiungere liberamente (manualmen
     </AltriDatiGestionali> 
 ```
 
-dove: 
-- il ‘TipoDato’ è ripreso dal testo che segue il codice 
+gdje: 
+- ‘Vrsta podataka’ preuzeta je iz teksta koji slijedi iza koda  
 ```
    AltriDGes_ 
 ```
-dell’extra data, 
-- quando il tipo dell’extra data è numerico, quello che c’è nel campo ‘Valore’ dell’extra data finisce nel tag ‘RiferimentoNumero’ e quello che c’è nel campo ‘Descrizione’ (se non è vuota) dell’extra data stesso finirà nel ‘RiferimentoTesto’. 
+dodatnog datuma, 
+- kada je vrsta dodatnih podataka numerička, ono što je u polju 'Vrijednost' dodatnih podataka završava u oznaci 'Referentni broj', a ono što je u polju 'Opis' (ako nije prazno) dodatnih podataka sami podaci će završiti u 'Reference teksta'. 
 
-Esempio
+Primjer
 
 ```xml
     <AltriDatiGestionali>
@@ -193,24 +188,22 @@ Esempio
     </AltriDatiGestionali>
 ```
 
-### Gestione del “riferimento amministrazione” in testata documento (tag 1.2.6 RiferimentoAmministrazione) 
+### Upravljanje "administrativnom referencom" u zaglavlju dokumenta (oznaka tag 1.2.6 Administrativna referenca) 
 
-Il “RiferimentoAmministrazione” in testata fattura viene gestito riprendendo dall’anagrafica cliente la ‘Persona di 
-riferimento’ inserita con nota 
+“Administrativna referenca” u zaglavlju fakture upravlja se uzimanjem "Referentne osobe" umetnute uz bilješku iz baze podataka kupaca. 
 
 ```
    XMLPA
 ```
 
 
-In fattura vengono riportati i campi “Nome” + “ “ + “Cognome” della persona 
-così inserita.
+Na računu su prikazana polja “Ime” + “ “ + “Prezime” tako upisane osobe.  
 
-### Gestione del “riferimento amministrazione” per dettaglio linee (tag 2.2.1.15 RiferimentoAmministrazione)
+### Upravljanje "administrativnom referencom" prema detaljima retka (oznaka 2.2.1.15 Administrativna referenca)
 
-Alcuni enti pubblici richiedono un ‘Riferimento amministrazione’ per la singola riga articolo (e non in testata). 
+Neka javna tijela zahtijevaju 'administrativnu referencu' za jedan redak članka (a ne u zaglavlju).   
 
-In Fluentis è possibile inserire degli ‘ExtraData’ con codice 
+U Fluentis je moguće umetnuti 'ExtraData' s kodom 
 
 ```
    RiferimentoAmminis
@@ -218,24 +211,24 @@ In Fluentis è possibile inserire degli ‘ExtraData’ con codice
 
  
 
-Questo extradata, di tipo semplice, deve essere collegato all’oggetto padre 
+Ovi ekstrapodaci, jednostavnog tipa, moraju biti povezani s nadređenim objektom  
 
 ```
    FSSalesInvoiceItem
 ```
 
 
-con proprietà ExtraData (previsto come stringa). 
+sa svojstvom Dodatni podaci (očekuje se kao niz). 
 
-In ogni riga articolo, quindi, l’utente può aggiungere liberamente (manualmente) questi dati aggiuntivi e il risultato sarà che quella riga articolo avrà questa sezione aggiuntiva: 
+Stoga u svaki redak članka korisnik može slobodno (ručno) dodati ove dodatne podatke i rezultat će biti da će taj redak članka imati ovaj dodatni odjeljak:  
 
 ```xml
     <RiferimentoAmministrazione>RifAmm</RiferimentoAmministrazione> 
 ```
 
-Dove il valore ‘RifAmm’ è preso dalla “Descrizione” dell’extra data inserito nella riga articolo. 
+Gdje je vrijednost ‘RifAmm’ preuzeta iz “Opisa” dodatnih podataka umetnutih u retku stavke.
 
-### Unità di misura alternativa (tag 2.2.1.16 AltriDatiGestionali)
+### Alternativna mjerna jedinica (oznaka 2.2.1.16 Ostaliupravljačkipodaci)
  
 La quantità utilizzata per il calcolo del prezzo di riga (indifferentemente che sia la prima o la seconda, dipende dal flag UMPrezzo della riga stessa) viene riportata nel tag 2.2.1.5 Quantità. 
 
