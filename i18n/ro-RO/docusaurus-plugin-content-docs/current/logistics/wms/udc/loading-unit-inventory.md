@@ -1,38 +1,40 @@
 ---
-title: Inventario unità di carico
+title: Inventar Unitate de încărcare
 sidebar_position: 9
 ---
 
-:::important A cosa serve
-La funzione Inventario Unità di Carico del WMS di Fluentis consente di effettuare un inventario accurato delle unità di carico presenti a magazzino.        
-Gli operatori possono leggere l'ubicazione per visualizzare le UDC contenute e procedere con la registrazione delle quantità, generando automaticamente movimenti di rettifica per allineare le giacenze logiche con quelle fisiche.
+:::important Ce utilizează
+Procedura *Inventar UdI* din WMS Fluentis permite realizarea unui inventar precis al unităților de încărcare prezente în gestiune.  
+Operatorii pot citi locația pentru a vizualiza UdI conținute și proceda cu înregistrarea cantităților, generând automat mișcări de rectificare pentru alinierea stocurilor scriptice cu cele fizice.
 :::  
 
-Questa procedura è utilizzata per eseguire un inventario delle UDC presenti a magazzino.
+Această procedură este utilizată pentru a efectua un inventar al UdI prezente în gestiune.
 
-Alla lettura dell'ubicazione vengono visualizzate nella griglia sottostante tutte le unità di carico contenute al suo interno, con l'indicazione dei seguenti campi: 
+La citirea locației, în tabelul inferior vor fi afișate toate unitățile de încărcare conținute în aceasta, cu următoarele câmpuri:
 
-> **Unità di carico**: indica il numero dell'unità di carico contenuta nell'ubicazione;        
-> **Tipo**: indica il tipo dell'unità di carico contenuta nell'ubicazione;     
-> **Data inventario**: indica l'ultima data in cui è stata inventariata l'unità di carico contenuta nell'ubicazione.  
+- **Unitate de încărcare**: indică numărul unității de încărcare conținute în locație;  
+- **Tip**: indică tipul unității de încărcare conținute în locație;  
+- **Data inventar**: indică ultima dată în care a fost inventariată unitatea de încărcare conținută în locație.  
 
-Lo step successivo è quello di leggere l'unità di carico da inventariare; se questa è presente tra quelle contenute nell'ubicazione selezionata viene aggiornata la **Data inventario** con la data odierna. Nel caso in cui, invece, l'unità di carico letta non sia presente nell'ubicazione viene mostrato un messaggio di avviso all'utente.      
-Butonul **Șterge tot** permite golirea formulului de toate datele introduse.     
+Următorul pas este citirea unității de încărcare care trebuie inventariată.  
+Dacă aceasta se află între cele conținute în locația selectată, **Data inventar** va fi actualizată cu data curentă.  
+Dacă unitatea de încărcare citită nu este prezentă în locație, va fi afișat un mesaj de avertizare.  
+Butonul **Șterge tot** permite golirea formularului de toate datele introduse.
 
-Una volta ultimate le letture dell'unità di carico, con la pressione del pulsante **Conferma**, solo nel caso in cui siano presenti delle unità di carico non inventariate, la procedura creerà dei movimenti di scarico di quelle unità di carico dall'ubicazione selezionata e di carico delle stesse nell'ubicazione di default indicata nella causale presente nei 
-[Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+Odată ce citirile unităților de încărcare sunt finalizate, prin apăsarea butonului **Confirmă**, doar în cazul în care sunt prezente unități de încărcare neinventariate, procedura va crea mișcări de descărcare a acelor unități de încărcare din locația selectată și de încărcare a acestora în locația implicită indicată în șablonul prezent în 
+[Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-**Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Parametrii de încărcare/descărcare (Parametri încărcare/descărcare)** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator (Parametri Încărcare/Descărcare per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Arie | Modul | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadingUnitInventory |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadingUnitInventory |
 
-I parametri sono inseriti due volte poiché la form utilizza una causale di scarico dell'unità di carico dall'ubicazione di partenza e una di carico dell'unità di carico nell'ubicazione di destinazione.
+Parametrii sunt introduși de două ori deoarece formularul utilizează o cauză de descărcare a unității de încărcare din locația de plecare și una de încărcare a unității de încărcare în locația de destinație.
 
-:::note ATTENZIONE
-La causale di carico associata deve avere indicata un'ubicazione di default all'interno della tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).
+:::note ATENȚIE
+Șablonul de încărcare asociat trebuie să aibă conțină o locație implicită în tabel [Șabloanwe de gestiune](/docs/configurations/tables/logistics/warehouse-templates/).
 :::
 
 Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).

@@ -1,6 +1,6 @@
 ---
-title: Liste trasferimento UDC
+title: Liste transfer UdI
 sidebar_position: 5
 ---
 
-Vedasi documentazione al seguente link: [Liste trasferimento UDC (versione WMS)](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit)
+Consultați documentația: [Liste transfer UdI (versiune WMS)](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit)
