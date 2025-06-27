@@ -3,6 +3,37 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0038 - 27/06/2025 
+
+> - SD - Spedizioni -risolto caso per cui sulla prima riga di groupage l'indirizzo di provenienza  non veniva proposto correttamente, mentre sulle righe a seguire sì. (#TT01276/25) 
+> - SD - Stampa Fatture di Vendita: corretto il campo Totale a pagare che in alcuni casi non corrispondeva al totale riportato nel riepilogo del documento (#TT02739/25). 
+> - SD - righe groupage spedizioni - indirizzo del luogo di carico proposto dai dati società oppure dal sito produttivo se indicato; Indirizzo del luogo di destinazione proposto dall’anagrafica cliente.  Modifications in Shipping object form can have an impact on profiles (#TT00514/25) 
+> - SD - Nel file XML generato per l’invio allo SDI, le righe spese vengono ora raggruppate anche per aliquota IVA (#TT02705/25) 
+> - PR - nelle distinte di anticipo è stata abilitata la possibilità di cambiare l’importo anticipato, ricalcolando la relativa percentuale. (#TT02585/25) 
+> - SCM - Creazione Automatica Ordini: quando l'ordine viene creato da RDA la data di prevista consegna e la data consegna vengono riportate nei prototipi di creazione e poi anche nell'ordine fornitore. (rif. Ticket - #TT02696/25) 
+> - SCM - Corretto errore nel Carico a magazzino di DDT in valuta estera che non convertiva il valore delle spese ripartite inserite nel riepilogo del DDT (#TT02447/25). 
+> - MES - Corretto bug nell’help fasi del MES nel caso in cui fossero state ordinate le righe per sequenza. (#TT02658/25) 
+> - PM - Interventi - servizi, cambiata la priorità di ricerca prezzo. Se il prezzo viene assegnato manualmente ed è attivo il flag "E' manuale" non verrà fatto alcun ricalcolo. Nel caso di flag disattivo, la priorità è prima il progetto se presente; se non presente verrà considerato il prezzo da listino; se non presente verrà considerato il prezzo di vendita dell'articolo (#TT01678/25) 
+> - PM - elaborazione SAL di progetto - risolto caso in cui la singola spesa dell'intervento veniva moltiplicata per ogni riga di servizio intervento (#TT02781/25) 
+> - SD - Nella procedura di Creazione compenso percipiente del modulo agenti, quando viene eseguita senza impostare il flag di ‘ricalcolo enasarco’ ora mantiene i dati enasarco originali della liquidazione agenti. (#TT02376/25) 
+> - SCM - Corretto il calcolo del costo totale dei materiali nella Stampa Materiali Conai per l’Articolo (#TT02803/25) 
+> - MS - Corretto bug in pianificazione generale nel caso in cui fosse lanciata con la logica al più presto. (#TT02796/25) 
+> - MS - Corretto bug in costificazione nel caso in cui in distinta fosse utilizzata una unità di misura alternativa per la quantità di utilizzo. (#TT01823/25) 
+> - MS - Implementata la stampa disponibilità nel tab Storico della procedura MRP. Questa permette di visualizzare nell’analisi disponibilità tutti gli articoli considerati in quell’elaborazione del MRP. (#TT00841/25) 
+> - SD - Risoluzione errore uscente nella ricerca, dopo il trascinamento di alcune proprietà dal Navigatore oggetti della Ricerca Offerte (#TT02870/25) 
+> - SD - Localizzazione dei campi della ‘Base liquidazione agenti’ (#TT02893/25) 
+> - SCS - Creazione Ordine di Conto Lavoro da rilascio ordini pianificati: Se il fornitore ha un listino predefinito, questo viene riportato su tutte le righe articolo. In caso di articoli non presenti nel listino, il prezzo sarà impostato a 0 e sarà attivato il flag Prezzo manuale nell’ordine. Se il fornitore non ha un listino predefinito, il listino verrà riportato sulle righe solo se utilizzato per la ripresa del prezzo (#TT00776/25). 
+> - WMS - Corretto bug in ricevimento merci nel caso in cui fosse attivo il flag “lotti e serial number obbligatori” nei parametri dei DDT di acquisto. (#TT02756/25) 
+> - WEB - SCM, SD - Corretto errore che non permetteva l’inserimento di una nuova riga articolo nei documenti (#TT02892/25). 
+> - Solved problem to generate code for Async Method 
+> - QY - Reclami e Non conformità - Gestione dell'Unità di misura, ora obbligatoria per la generazione delle righe Spesa delle Note di accredito e addebito generate dai Reclami e Non conformità.(#TT02607/25) 
+> - QY - Reclami e Non conformità - Allineamento della metodologia di proposta dell'I.V.A. nelle Note di accredito e di addebito generate dai Reclami e dalle Non conformità.(#TT04331/24) 
+> - MES -  Sono state implementati dei controlli e delle restrizioni nel widget Macchina presente nel tab produzione del MES. Per i dettagli fare riferimento alla documentazione. (#TT02769/25) 
+> - FI - modificata la procedura ‘Liquidazione iva di gruppo’ per abilitare la creazione della liquidazione di gruppo anche quando non c’è un gruppo iva. Modifications in VatSettlementGroupDeclaration and VatSettlementRWFilterResults forms can have an impact on profiles  (#TT02321/25) 
+> - MS - Ora gli stati delle commesse di conto lavoro e acquisto raggruppate in pianificazione vengono correttamente aggiornati su tutte le commesse raggruppate. (#TT00649/25)  
+> - FI - compensazione veloce, abilitata la compensazione anche su partite con pagamenti fornitori non contabilizzati (saranno conteggiate per la differenza nell’edit del residuo da pagare presente sopra la griglia). Modifications in MaturityFilterResultsSimple forms can have an impact on profiles (#TT02037/25) 
+> - SH - La verifica sulla validità delle date di competenza inserite nel tab Analitica dei documenti di Acquisto e di Vendita e sulle righe articolo delle Fatture di Vendita viene ora effettuata alla conferma della riga (#TT02693/25).
+
 ### Patch 707.1-0037 - 20/06/2025 
 
 > - PR - l’esportazione del cash flow per DocFinance ora inserisce nel file tutti i cash flow di tutte le società che esportano dati a DocFinance (#TT02723/25) 
