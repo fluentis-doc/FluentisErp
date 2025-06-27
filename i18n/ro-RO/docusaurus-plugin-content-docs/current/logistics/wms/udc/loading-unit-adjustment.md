@@ -1,28 +1,26 @@
 ---
-title: Rettifica unità di carico
+title: Rectificare unități de încărcare
 sidebar_position: 8
 ---
 
-:::important A cosa serve
-La funzione Rettifica Unità di Carico del WMS di Fluentis permette di apportare modifiche agli articoli contenuti in un'unità di carico, consentendo rettifiche sia positive che negative.     
-Gli operatori possono visualizzare tutti gli articoli presenti, variare le quantità e aggiungere o rimuovere articoli, rendendo il processo di aggiornamento delle giacenze più preciso ed efficiente.
+:::important Utilitate
+Funcția Rectificare UdI din WMS Fluentis permite modificarea articolelor conținute într-o unitate de încărcare, permițând rectificări atât pozitive cât și negative.  
+Operatorii pot vizualiza toate articolele prezente, varia cantitățile și adăuga sau elimina articole, făcând procesul de actualizare a stocurilor mai precis și eficient.
 :::  
 
-Questa procedura è utilizzata per rettificare gli articoli di un'unità di carico, in positivo o negativo, oppure per aggiungere un nuovo articolo o toglierne uno già presente.   
-Alla lettura dell'unità di carico vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno, con l'indicazione dei seguenti campi:
+#### Câmpuri specifice  
+ - **Articol**: indică clasa și codul articolului conținut în unitatea de încărcare;       
+ - **Descriere**: indică descrierea articolului conținut în unitatea de încărcare;       
+ - **Cantitate**: reprezintă cantitatea articolului conținut în unitatea de încărcare;   
+ - **Lot**: indică lotul articolului conținut în unitatea de încărcare (prezent doar dacă este gestionat pe loturi);           
+ - **Variantă**: indică varianta articolului conținut în unitatea de încărcare (prezentă doar dacă este gestionată pe variante).      
 
-> **Articolo**: indica la classe e il codice dell'articolo contenuto nell'unità di carico;       
-> **Descrizione**: indica la descrizione dell'articolo contenuto nell'unità di carico;       
-> **Quantità**: indica la quantità dell'articolo contenuto nell'unità di carico;   
-> **Lotto**: indica il lotto dell'articolo contenuto nell'unità di carico (presente solo se gestito a lotti);           
-> **Variante**: indica la variante dell'articolo contenuto nell'unità di carico (presente solo se gestito a variante).       
+Selectând unul dintre articole, cu butoanele **+** și **-**, puteți să modificați în pozitiv sau negativ cantitatea raportată în tabel.  
+După finalizarea acestor ajustări, cu butonul **Confiră** vor fi confirmate și efectuate mișcările de gestiune de rectificare pozitive și negative în unitatea de încărcare selectată.  
+Butoanele **Șterge tot (Șterge tot)** permit golirea formularului de toate datele introduse.  
 
-Selezionando uno degli articoli, con i pulsanti **+** e **-**, oppure tramite tastiera, è possibile variare rispettivamente in positivo o negativo la quantità riporta in griglia.       
-Una volta ultimate le correzioni su tutti gli articoli interessati, tramite il pulsante **Conferma** verranno confermati ed effettuati i relativi movimenti di magazzino di rettifica positivi e negativi all'interno dell'unità di carico selezionata.
-Butonul **Șterge tot** permite golirea formulului de toate datele introduse.     
-
-Nel caso in cui venga aggiunto un nuovo articolo non presente nell'unità di carico, verrà visualizzato un messaggio che permette all'utente di decidere se questo nuovo articolo debba essere aggiunto o meno all'unità di carico. In questa situazione, è importante ricordare che se l'articolo (da aggiungere), è gestito a lotti, deve essere obbligatoriamente inserito anche un lotto valido.          
-Per rimuove, invece, un articolo basterà portare la relativa quantità a zero.       
+Dacă se adaugă un articol nou, care nu este prezent în unitatea de încărcare, va fi afișat un mesaj care permite utilizatorului să decidă dacă acest nou articol trebuie adăugat sau nu la unitatea de încărcare. În această situație, dacă articolul (de adăugat) este gestionat pe loturi, trebuie să fie introdus obligatoriu și un lot valid.  
+Pentru a elimina un articol, inserați numărul zero în câmpul *cantitate*.   
 
 **Parametrii încărcare/descărcare** de introdus în tabelul [Parametrii Încărcare/Descărcare pe utilizator](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
@@ -31,6 +29,6 @@ Per rimuove, invece, un articolo basterà portare la relativa quantità a zero.
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustLoadingUnit |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | AdjustLoadingUnit |
 
-I parametri sono inseriti due volte poiché la form utilizza una causale di scarico per le rettifiche negative e una di carico per le rettifiche positive.
+Parametrii sunt inserați de două ori deoarece formul utilizează un șablon de descărcare pentru rectificările negative și unul de încărcare pentru rectificările pozitive.
 
 Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
