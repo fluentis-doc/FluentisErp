@@ -1,17 +1,17 @@
 ---
-title: Carico/Sposta UDC Multiplo
+title: Încarcă/Mută UdI Multiplu
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La funzione **Carico/Sposta UDC** del WMS di Fluentis è progettata per semplificare il processo di gestione delle unità di carico. Consente agli operatori di caricare un'unità di carico non ancora registrata nel sistema o di spostare un'unità già caricata da una ubicazione a un'altra, tutto tramite la scansione del codice a barre. Grazie a questa funzionalità, il sistema facilita le operazioni di magazzino in tempo reale.
+:::important Utilitate
+Procedura **Încarcă/Mută UdI** din WMS Fluentis simplifică procesul de gestionare a unităților de încărcare. Permite operatorilor să încarce o unitate de încărcare care nu a fost înregistrată în sistem sau să mute o unitate deja încărcată dintr-o locație în alta.
 :::
 
-Questa procedura è utilizzata per la lettura di una o più unità di carico per poter procedere al *Carico massivo*, se le unità di carico risultano non caricate o allo *Spostamento massivo* se le unità di carico risultano già essere caricate.   
+Această procedură este utilizată pentru citirea unei sau mai multor unități de încărcare pentru a putea continua cu *Încărcare masivă*, dacă unitățile de încărcare nu sunt încărcate, sau cu *Mutare masivă*, dacă unitățile de încărcare sunt deja încărcate.
 
-L’operatore può effettuare queste operazioni leggendo direttamente il barcode di una o più unità di carico, nel caso in cui queste non siano caricate, queste vengono direttamente aggiunte nella griglia sottostante il campo codice barcode.     
-La procedura propone automaticamente come ubicazione in cui deve essere caricata l’UDC quella presente nella testata dell'UDC stessa viene abilitato il pulsante **Carico**, con il quale viene creato il movimento di magazzino in tempo reale.        
-
+Operatorul poate efectua aceste operațiuni citind direct codul de bare al uneia sau mai multor unități de încărcare.  
+Dacă acestea nu sunt încărcate, vor fi adăugate direct în tabelul de sub câmpul *cod de bare*.  
+Procedura propune automat ca locație, pentru încărcarea UdI, cea prezentă în antetul UdI și cu butonul **Încărcare** se creează mișcarea de gestiune în timp real.
 Dacă este deja încărcată, procedura va solicita introducerea locației de destinație a mutării, activând butonul **Mută**, cu ajutorul căruia vor fi create mișcările de descărcare cu contrapartidă de încărcare în noua locație.          
 
 Butonul **Șterge tot** permite golirea formulului de toate datele introduse.   
