@@ -1,26 +1,25 @@
 ---
-title: Introduzione
+title: Introducere 
 sidebar_position: 1
 ---
 
-Il MES (Manufacturing Execution System) di Fluentis è una soluzione software progettata per ottimizzare e gestire i processi produttivi all'interno delle aziende manifatturiere. Il MES di Fluentis integra diverse funzionalità, come la gestione delle ordini di lavoro, la tracciabilità delle materie prime e dei prodotti finiti, la raccolta dei dati delle macchine e l'analisi delle performance. Questo sistema aiuta le aziende a ridurre i tempi di fermo, ottimizzare l'uso delle risorse e migliorare la qualità del prodotto finale, garantendo una maggiore competitività nel mercato globale.   
+Fluentis MES este o soluție software proiectată pentru a optimiza și gestiona procesele de producție în companiile de manufacturing. Fluentis MES integrează diverse funcționalități, cum ar fi gestionarea ordinelor de lucru, urmărirea materiilor prime și a produselor finite, colectarea datelor de la mașini și analiza performanței. Acest sistem ajută companiile să reducă timpii de inactivitate, să optimizeze utilizarea resurselor și să îmbunătățească calitatea produsului final, garantând o competitivitate sporită pe piața globală.
 
-## Moduli dell'area 
+## Module arie
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/planning/ms-master-scheduling/mrp">Fluentis MES</Link>
-        <p><Link to="/docs/production/mes/configuration" className="bold-link">Installazione</Link></p>
-        <p>breve guida sull'installazione di Fluentis MES</p>
-        <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation</Link></p>
-        <p>Sono progettate per ottimizzare la gestione delle operazioni produttive, offrendo una piattaforma intuitiva per la codifica, la modifica e la cancellazione delle workstation. Gli utenti possono facilmente filtrare e cercare workstation, associando risorse specifiche per ogni attività. Questo sistema migliora l'efficienza del flusso di lavoro, consentendo di gestire in modo efficace le risorse di produzione, quali macchine e operatori, e facilitando la pianificazione delle attività operative.</p>
-        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Risorse di produzione</Link></p>
-        <p>Permettono di gestire articoli, macchine, dipendenti e strumenti di misura, garantendo una pianificazione ottimizzata delle operazioni. È possibile personalizzare il layout e il comportamento del singolo centro di lavoro, rendendo il sistema flessibile e adattabile alle esigenze specifiche dell'azienda, e facilitando la copia delle impostazioni predefinite per un'efficienza maggiore.</p>
+        <p><Link to="/docs/production/mes/configuration" className="bold-link">Instalare</Link></p>
+        <p>ghid scurt despre instalarea Fluentis MES</p>
+        <p><Link to="/docs/production/mes/workstation" className="bold-link">Stații de lucru</Link></p>
+        <p>Acestea sunt concepute pentru a optimiza gestionarea operațiunilor de producție, oferind o platformă intuitivă pentru codificarea, modificarea și ștergerea stațiilor de lucru. Utilizatorii pot filtra și căuta ușor stații de lucru, asociind resurse specifice fiecărei activități. Acest sistem îmbunătățește eficiența fluxului de lucru, permițând gestionarea eficace a resurselor de producție, cum ar fi mașinile și operatorii, și facilitând planificarea activităților operaționale.</p>
+        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Resurse de producție (Risorse di produzione)</Link></p>
+        <p>Permite gestionarea articolelor, mașinilor, angajaților și instrumentelor de măsură, garantând planificarea optimizată a operațiunilor. Layout-ul și comportamentul fiecărui centru de lucru pot fi personalizate, făcând sistemul flexibil și adaptabil la nevoile specifice ale companiei, și facilitând copia setărilor implicite pentru o eficiență sporită.</p>
         <p><Link to="/docs/production/mes/mes-main-form" className="bold-link">MES</Link></p>
-        <p>La forma principale del MES di Fluentis è progettata per ottimizzare il monitoraggio e la gestione delle attività produttive in tempo reale. Questa interfaccia consente agli operatori di inserire e modificare rapidamente i dati delle risorse di produzione, grazie a funzionalità intuitive.</p>
-        <p>Questo approccio integrato non solo migliora la visibilità delle operazioni, ma contribuisce anche a ottimizzare i flussi di lavoro e la produttività complessiva dell'impresa.</p>
+        <p>Formul principal este proiectat pentru a optimiza monitorizarea și gestionarea activităților de producție în timp real. Această interfață permite operatorilor să introducă și să modifice rapid datele resurselor de producție, datorită funcționalităților intuitive.</p>
+        <p>Acest abordare integrată îmbunătățește vizibilitatea operațiunilor și contribuie și la optimizarea fluxurilor de lucru și a productivității generale a companiei.</p>
     </div>
 </div>
-
