@@ -1,5 +1,5 @@
 ---
-title: interventi
+title: Intervenciones
 sidebar_position: 13
 ---
 
@@ -7,33 +7,34 @@ En esta pestaña se configuran todos los parámetros relacionados con el cliente
 
 Hay 2 pestañas adicionales:
 
-### Gastos de Viaje (Oneri di Viaggio)
+### Gastos de Viaje 
 
 Aquí se pueden ingresar todos los gastos que se propondrán en las intervenciones como Gastos a Facturar.
 
-**tipologia di spese viaggio**
+**Tipo de gastos de viaje**
 
-**tipo spesa**: tipo de gasto a proponer. Solo se mostrarán en la lista los gastos con el indicador "Viaje" activo en su configuración.
+**Tipo de cargo**: tipo de gasto a proponer. Solo se mostrarán en la lista los gastos con el indicador "Viaje" activo en su configuración.
 
-**tipo forfait**: si el tipo de gasto ingresado está configurado con "Tipo gasto viaje" = forfait, el campo se activará para elegir el tipo de forfait a utilizar.
+**Paquete tipo**: si el tipo de gasto ingresado está configurado con "Tipo gasto viaje" = forfait, el campo se activará para elegir el tipo de forfait a utilizar.
 
 **Importe**: importe del gasto. Activado para todos los tipos de gasto que no sean distancia o horas de viaje.
 
-**ore viaggio**: horas de viaje para llegar a la sede del cliente/sede de la intervención. Activado solo si el tipo de gasto está configurado correctamente como "Horas de viaje".
+**Horas de viaje**: horas de viaje para llegar a la sede del cliente/sede de la intervención. Activado solo si el tipo de gasto está configurado correctamente como "Horas de viaje".
 
-**km andata/ritorno**: KM de viaje para llegar a la sede del cliente/sede de la intervención. Activado solo si el tipo de gasto está configurado correctamente como "Distancia".
+**Km de viaje de ida y vuelta**: KM de viaje para llegar a la sede del cliente/sede de la intervención. Activado solo si el tipo de gasto está configurado correctamente como "Distancia".
 
-**costo orario**: gasto por hora, se multiplicará por las horas de viaje. Activado solo si el tipo de gasto está configurado correctamente como "Horas de viaje".
+**Costo por hora**: gasto por hora, se multiplicará por las horas de viaje. Activado solo si el tipo de gasto está configurado correctamente como "Horas de viaje".
 
-**costo km**: gasto por km, se multiplicará por los km indicados. Activado solo si el tipo de gasto está configurado correctamente como "Distancia".
+**Costo por kilómetro**: gasto por km, se multiplicará por los km indicados. Activado solo si el tipo de gasto está configurado correctamente como "Distancia".
 
-**Tipo de contrato de la recurso (Tipo di contratto della risorsa) y descripción**: utilizado como filtro para seleccionar el gasto correspondiente al contrato configurado en el registro de recursos.
+**Tipo de contrato de la recurso y descripción**: utilizado como filtro para seleccionar el gasto correspondiente al contrato configurado en el registro de recursos.
 
-**sede di lavoro**: utilizado como filtro para seleccionar el gasto correspondiente a la sede de trabajo configurada en el registro de recursos.
+**Sitio de trabajo**: utilizado como filtro para seleccionar el gasto correspondiente a la sede de trabajo configurada en el registro de recursos.
 
-**tipo intervento**: utilizado como filtro para seleccionar el gasto correspondiente al tipo de intervención utilizada.
+**Tipo de intervención**: utilizado como filtro para seleccionar el gasto correspondiente al tipo de intervención utilizada.
 
-**spesa viva**: si está habilitado, en la fase de cálculo de gastos considerará también los datos declarados por el recurso. 
+**Carga en vivo**: si está habilitado, en la fase de cálculo de gastos considerará también los datos declarados por el recurso. 
+
 :::note[Ejemplo]
 en el registro del cliente configuramos el gasto Costo km 0.50 sin indicar los KM ida/vuelta y habilitamos el indicador. 
 El recurso inserta la intervención declarando en los gastos incurridos el mismo gasto indicando 150 km. 
@@ -41,19 +42,20 @@ Al cambiar el estado de la intervención de Insertado a Por Aprobar, los gastos 
 La misma lógica se aplica a los otros tipos de gasto. 
 :::
 
-**Tipo de gastos de viaje - detalle del forfait (Tipologia di spese viaggio - dettaglio forfait)**
+**Tipo de gastos de viaje - detalle del forfait**
 
 El forfait, compuesto por múltiples gastos que en la factura se insertarán como 1 línea acumulativa, permite en este cuadro la visualización del detalle del forfait y la indicación del importe de los conceptos individuales. La línea forfait en la intervención y en la factura se insertará como la suma de todos los valores configurados en esta vista.
 
-**tipo spesa**: tipo de gasto considerado en el forfait.
+**Tipo de cargo**: tipo de gasto considerado en el forfait.
 
 **Importe**: importe para el gasto.
 
-**una tantum**: independientemente del número de recursos y/o días de servicio dentro de la misma intervención, el gasto se considerará solo 1 vez.
+**Una vez.**: independientemente del número de recursos y/o días de servicio dentro de la misma intervención, el gasto se considerará solo 1 vez.
 
-**per giorno**: en función de los días de servicio dentro de la misma intervención, el gasto se multiplicará por cada día de servicio.
+**Durante el día**: en función de los días de servicio dentro de la misma intervención, el gasto se multiplicará por cada día de servicio.
 
-**per risorsa**: según los recursos indicados en los servicios dentro de la misma intervención, el gasto se multiplicará por cada recurso. 
+**Por recurso**: según los recursos indicados en los servicios dentro de la misma intervención, el gasto se multiplicará por cada recurso. 
+
 :::note[Ejemplo]
 el forfait está compuesto por: 
 Autopista: 100
@@ -63,13 +65,14 @@ En la intervención de duración de un día hay 3 recursos, por lo que se declar
 El gasto forfait a facturar resultará en un total de 250 (100 autopista fijos, 50 almuerzo por cada recurso). El cálculo se realizará al cambiar el estado de la intervención de "Insertado" a "Por Aprobar".
 :::
 
-### Configuración del plan de facturación (Impostazioni del piano di fatturazione)
+### Configuración del plan de facturación 
 Las reglas a aplicar al plan de facturación de la intervención se pueden establecer en los parámetros generales de la Gestión de Proyectos, y ser válidas para todos los clientes, o específicas por cliente. 
 El procedimiento de cálculo del plan de facturación verificará primero la presencia de configuraciones específicas para el cliente, y si no están presentes, considerará las que estén en los parámetros generales. 
 
-**sede di lavoro** y **tipo intervento**: utilizados como filtro; si están vacíos, se consideran válidos para todas las sedes de trabajo y para todos los tipos de intervenciones. Si están configurados, solo se tendrán en cuenta en correspondencia con la sede de trabajo configurada en el registro del recurso que realiza la intervención, y del tipo de intervención utilizada.
+**Sitio de trabajo** y **Tipo de intervención**: utilizados como filtro; si están vacíos, se consideran válidos para todas las sedes de trabajo y para todos los tipos de intervenciones. Si están configurados, solo se tendrán en cuenta en correspondencia con la sede de trabajo configurada en el registro del recurso que realiza la intervención, y del tipo de intervención utilizada.
 
-**tipo fascia oraria**: indica la franja horaria de trabajo acordada con el cliente y el monto de horas diarias. 
+**Tipo de horario**: indica la franja horaria de trabajo acordada con el cliente y el monto de horas diarias. 
+
 :::note[Observación] 
 Se podrá establecer que para un cliente el monto de horas diarias sean 7 horas, mientras que para otro 8. Las horas indicadas en la franja horaria se utilizarán en la conversión entre diferentes unidades de medida temporales: 
 - por ejemplo, si hemos trabajado 7 horas para el cliente y su franja corresponde a 7 horas, en la conversión a Días tendremos como cantidad 1. 
@@ -78,19 +81,20 @@ Se podrá establecer que para un cliente el monto de horas diarias sean 7 horas,
 La franja también se considerará para el cálculo del tiempo extra que se tarificará a un precio diferente, tanto por el excedente del monto total de horas como de los horarios establecidos. 
 :::
 
-**tipo fascia oraria notturna**: el funcionamiento es análogo al del campo "Tipo Franja horaria" pero se utilizará en caso de realizar servicios tanto diurnos como nocturnos, para permitir una tarificación diferente.
+**Tipo de Tabla Nocturna**: el funcionamiento es análogo al del campo "Tipo Franja horaria" pero se utilizará en caso de realizar servicios tanto diurnos como nocturnos, para permitir una tarificación diferente.
 
-**tipo arrotondamento**: indica la regla matemática con la que redondear las horas de trabajo. El redondeo se aplicará luego sobre las horas totales de la intervención. Por ejemplo, total de horas 7.45 h, si se prevé redondeo a la media hora, las horas facturadas serán 8.
+**Tipo de redondeo**: indica la regla matemática con la que redondear las horas de trabajo. El redondeo se aplicará luego sobre las horas totales de la intervención. Por ejemplo, total de horas 7.45 h, si se prevé redondeo a la media hora, las horas facturadas serán 8.
 
-**categoria commerciale**: filtro adicional para la selección de la regla para el plan de facturación. Si está vacío, se considerará válido para todas las categorías comerciales de clientes; en caso de indicación específica, se seleccionará la correspondiente introducida en el registro del cliente - pestaña Administración.
+**Categoría comercial**: filtro adicional para la selección de la regla para el plan de facturación. Si está vacío, se considerará válido para todas las categorías comerciales de clientes; en caso de indicación específica, se seleccionará la correspondiente introducida en el registro del cliente - pestaña Administración.
 
-**Incluir horas de viaje en los servicios (Includi ore viaggio nei servizi)**: permite considerar las horas de viaje presentes en la intervención en la pestaña "Gastos a facturar", como si fueran horas de servicio. Por lo tanto, todas las reglas de facturación (franja horaria, redondeos, etc.) se aplicarán también a las horas de viaje, como si fueran un servicio realizado.
+**Incluir horas de viaje en los servicios**: permite considerar las horas de viaje presentes en la intervención en la pestaña "Gastos a facturar", como si fueran horas de servicio. Por lo tanto, todas las reglas de facturación (franja horaria, redondeos, etc.) se aplicarán también a las horas de viaje, como si fueran un servicio realizado.
 
-**escludi arrotondamenti**: si está habilitado, no se aplicarán redondeos en el plan de facturación.
+**Excluir el redondeo**: si está habilitado, no se aplicarán redondeos en el plan de facturación.
 
-**escludi calcolo fuori orario**: si está habilitado, no se calcularán las horas extra en el plan de facturación. Para la conversión entre diferentes unidades de medida temporales (por ejemplo, de horas a días) se utilizará el monto de horas indicado en el campo "Turno de trabajo" en los parámetros generales de la Gestión de Proyectos. 
+**Excluir horas extras**: si está habilitado, no se calcularán las horas extra en el plan de facturación. Para la conversión entre diferentes unidades de medida temporales (por ejemplo, de horas a días) se utilizará el monto de horas indicado en el campo "Turno de trabajo" en los parámetros generales de la Gestión de Proyectos. 
 
-**considera tutte le fasce orarie calcolo fuori orario**: si se habilita, en el cálculo de horas extra se tomarán en cuenta tanto la franja horaria diurna como la franja horaria nocturna. Se considerará fuera de horario solo lo que esté fuera de ambas franjas o exceda el monto de horas diarias. Si se deshabilita, solo se considerará una franja horaria (nocturna o diurna, dependiendo de la hora de inicio del servicio) y todo lo que esté fuera de esta franja horaria considerada se tarificará como horas extra. 
+**Considere todos los horarios para horas extras**: si se habilita, en el cálculo de horas extra se tomarán en cuenta tanto la franja horaria diurna como la franja horaria nocturna. Se considerará fuera de horario solo lo que esté fuera de ambas franjas o exceda el monto de horas diarias. Si se deshabilita, solo se considerará una franja horaria (nocturna o diurna, dependiendo de la hora de inicio del servicio) y todo lo que esté fuera de esta franja horaria considerada se tarificará como horas extra. 
+
 :::note[Ejemplo]
 Franja diurna 7:00 - 18:00
 Franja horaria nocturna 20:00 - 5:00
