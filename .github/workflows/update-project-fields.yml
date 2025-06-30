@@ -50,26 +50,27 @@ jobs:
               }
 
               console.log(`⚙️ Running manually with project number #${projectNumber}`);
-            } else if (context.eventName === "issues") {
-              const issue = context.payload.issue;
-              const issueNodeId = issue.node_id;
+            } else 
+              if (context.eventName === "issues") 
+              {
+                const issue = context.payload.issue;
+                const issueNodeId = issue.node_id;
+                const { owner, repo } = context.repo;
+                const issueNumber = issue.number;
 
-              console.log("🔎 Searching user-level projects to find one linked to this issue...");
+                console.log(`🔎 Fetching Projects v2 linked to issue #${issueNumber} (${issue.title})...`);
 
-              // Fetch user's projects
-              const userProjectsResponse = await github.graphql(`
-                query($login: String!) {
-                  organization(login: $login) {
-                    projectsV2(first: 10) {
-                      nodes {
-                        id
-                        number
-                        title
-                        items(first: 50) {
+                const response = await github.graphql(`
+                  query($owner: String!, $repo: String!, $issue: Int!) {
+                    repository(owner: $owner, name: $repo) {
+                      issue(number: $issue) {
+                        projectItems(first: 10) {
                           nodes {
-                            content {
-                              ... on Issue {
-                                id
+                            id
+                            project {
+                              ... on ProjectV2 {
+                                title
+                                number
                               }
                             }
                           }
@@ -77,34 +78,34 @@ jobs:
                       }
                     }
                   }
-                }
-              `, { login: owner });
+                `, {
+                  owner,
+                  repo,
+                  issue: issueNumber
+                });
 
-              const projects = userProjectsResponse.organization.projectsV2.nodes;
+                const items = response.repository.issue.projectItems.nodes;
 
-              let foundProject = null;
+                if (!items || items.length === 0) {
+                  console.log("❌ Issue is not linked to any Projects v2. Skipping.");
+                  return;
+                }
 
-              for (const proj of projects) {
-                console.log(`🔍 Project: ${proj.title}`);
-                
-                for (const item of proj.items.nodes) {
-                  console.log(`   - Item content.title: ${item.content?.title ?? 'No title'}`);
+                // You can loop or just take the first match (if only one project is expected)
+                for (const item of items) {
+                  console.log(`✅ Linked to project: '${item.project.title}' (number: ${item.project.number})`);
                 }
-                const itemMatch = proj.items.nodes.find(item => item.content?.id === issueNodeId);
-                if (itemMatch) {
-                  foundProject = proj;
-                  break;
+
+                // Use the first project's number (or add logic if you expect multiple)
+                const foundProject = items.find(item => item.project?.number);
+                if (!foundProject) {
+                  console.log("❌ No valid project info found on linked items.");
+                  return;
                 }
+
+                const projectNumber = foundProject.project.number;
+                console.log(`➡️ Using project number: ${projectNumber}`);
               }
-
-              if (!foundProject) {
-                console.log("❌ Issue is not linked to any organization-level project. Skipping.");
-                return;
-              }
-
-              console.log(`✅ Found project '${foundProject.title}' (number: ${foundProject.number}) containing this issue.`);
-              projectNumber = foundProject.number;
-            }
 
             console.log("🔹 Fetching all issues in the project...");
 
