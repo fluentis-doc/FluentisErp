@@ -1,4 +1,4 @@
 ---
-title: tipi documento per la ripresa dei dati consuntivi
+title: Tipos de documentos para la copia de datos históricos
 sidebar_position: 6
 ---

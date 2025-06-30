@@ -1,5 +1,5 @@
 ---
-title: tipi periodo
+title: Tipos de período
 sidebar_position: 5
 ---
 

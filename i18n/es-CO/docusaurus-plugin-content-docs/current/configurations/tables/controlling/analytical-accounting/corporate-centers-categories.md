@@ -1,15 +1,15 @@
 ---
-title: categorie centri aziendali
+title: Categoría de centros corporativos
 sidebar_position: 3
 ---
 
-El formulario se encuentra en la ruta: **Tablas > Control (Tabelle) > Contabilidad analítica (Controlling) > categorie centri aziendali (Categorie centri aziendali)**
+El formulario se encuentra en la ruta: **Tablas > Control > Contabilidad analítica > Categoría de centros corporativos**
 
 :::tip Nota
-La tabla es de interés solo en las empresas con el indicador *controlling* activo.
+La tabla es de interés solo en las empresas con el indicador *control* activo.
 :::
 
-La segunda característica *obligatoria* de los centros de costos es la ***Categoría de los centros empresariales***: esta tabla representa una "etiqueta" asociada a los centros empresariales para poder gestionarlos en grupos lógicos homogéneos entre sí.
+La segunda característica *obligatoria* de los centros de costos es la ***Categoría de los centros corporativos***: esta tabla representa una "etiqueta" asociada a los centros corporativos para poder gestionarlos en grupos lógicos homogéneos entre sí.
 
 ![Imagen](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers-categories.png)
 
@@ -27,5 +27,5 @@ Por lo tanto, podemos citar <u>sólo algunos ejemplos</u> para una mejor compren
 ***5) CENTROS VIRTUALES/CÓMODOS:*** nos sirven para gestionar todo el modelo, son centros de apoyo a los drivers de redistribución más que centros donde descargar datos contables que no se utilizarán en el modelo.
 
 :::tip Nota
-La categorización de los centros, además de tener validez teórica sobre la estructura del modelo de análisis, tiene también un aspecto operativo: al definir los enlaces de los centros a nivel de plan de cuentas, es posible asociar a cada subcuenta los varios centros que pueden ser valorados o, más rápidamente, se puede indicar una categoría de centros, de modo que solo sean visibles para el usuario en el menú desplegable de selección aquellos que pertenecen a esa categoría.
+La categorización de los centros, además de tener validez teórica sobre la estructura del modelo de análisis, tiene también un aspecto operativo: al definir los enlaces de los centros a nivel de plan de cuentas, es posible asociar a cada cuenta detallada los varios centros que pueden ser valorados o, más rápidamente, se puede indicar una categoría de centros, de modo que solo sean visibles para el usuario en el menú desplegable de selección aquellos que pertenecen a esa categoría.
 :::

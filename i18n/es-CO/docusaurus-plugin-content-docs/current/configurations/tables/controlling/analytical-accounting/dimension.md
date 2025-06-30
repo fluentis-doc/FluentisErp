@@ -1,17 +1,17 @@
 ---
-title: dimensione
+title: Dimensión
 sidebar_position: 5
 ---
 
-El formulario se encuentra en la ruta: **Tablas > Control (Tabelle) > Contabilidad analítica (Controlling) > dimensione (Dimensione)**
+El formulario se encuentra en la ruta: **Tablas > Control > Contabilidad analítica > Dimensión**
 
 :::tip Nota
 La tabla es de interés solo en las empresas con el indicador *controlling* activo.
 :::
 
-El concepto de dimensione se puede explicar como un criterio de análisis y una división coherente de COSTOS y INGRESOS dentro de la empresa.
+El concepto de dimensión se puede explicar como un criterio de análisis y una división coherente de COSTOS y INGRESOS dentro de la empresa.
 
-Es posible crear y mover múltiples dimensiones de análisis simultáneamente.
+Es posible crear y mover múltiples dimensiones de análisis simultáneamente. 
 
 ![Imagen](/img/it-it/configurations/tables/controlling/analytical-accounting/dimension.png)
 
@@ -27,12 +27,12 @@ Luego tenemos la posibilidad de definir dimensiones **específicas** donde la em
 
 La dimensión, por lo tanto, también puede verse como una ETIQUETA que se adjunta a los centros. 
 
-A través de los *cost drivers*, podemos trasladar los datos (costos y beneficios) de una dimensión a otra. 
+A través de las *Determinantes de costos*, podemos trasladar los datos (costos y beneficios) de una dimensión a otra. 
 
 #### Campos específicos
 
 - El indicador **CUADRATURA OBLIGATORIA** identifica que debe tener cuadratura con la contabilidad. Ya no es la contabilidad general la que debe cuadrar con el centro de costo/beneficio o comisión, sino que debe cuadrar con la dimensión de análisis individual que requiere cuadratura. La prueba de cuadratura se realizará solo si la causa contable de movimiento prevé a su vez el bloqueo del guardado de movimientos no cuadrados a nivel de valorización de los centros;  
-- El indicador **commessa** indica que la línea analítica se asocia prioritariamente al proyecto para el cual el costo o ingreso se mueve de forma directa, y de este proyecto se derivará un centro de costo a valorar, centro que puede ser un código genérico igual para todos los proyectos o quizás un centro vinculado a una característica específica del proyecto seleccionado;  
+- El indicador **ORDEN DE TRABAJO** indica que la línea analítica se asocia prioritariamente al proyecto para el cual el costo o ingreso se mueve de forma directa, y de este proyecto se derivará un centro de costo a valorar, centro que puede ser un código genérico igual para todos los proyectos o quizás un centro vinculado a una característica específica del proyecto seleccionado;  
 - El indicador **VINCULO CUENTA/CENTRO** señala que se desea limitar lo que el usuario puede hacer al registrar en contabilidad un centro de esta dimensión: dado que en el plan de cuentas podemos agregar a cada subcuenta de costo y de ingreso uno o más centros empresariales, con esta opción indico que lo que está insertado en el plan de cuentas no puede ser modificado por el usuario. En esencia, un costo de producción no puede convertirse en un costo asignado al centro direccional. La restricción puede estar relacionada con el centro individual, en lugar de sobre las categorías de los centros;  
-- El indicador **abilita commessa**, por otro lado, sirve para poder vincular una comisión de referencia también en las líneas de la dimensión industrial/direccional normal, para evitar gestionar dos dimensiones diferentes.
+- El indicador **HABILITAR ORDEN DE TRABAJO**, por otro lado, sirve para poder vincular una comisión de referencia también en las líneas de la dimensión industrial/direccional normal, para evitar gestionar dos dimensiones diferentes.
 :::

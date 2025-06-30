@@ -1,5 +1,5 @@
 ---
-title: tipi budget
+title: Tipos de presupuesto
 sidebar_position: 1
 ---
 

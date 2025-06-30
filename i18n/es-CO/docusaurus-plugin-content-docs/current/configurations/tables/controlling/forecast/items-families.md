@@ -1,4 +1,4 @@
 ---
-title: famiglie articoli
+title: Familia de artículos
 sidebar_position: 1
 ---

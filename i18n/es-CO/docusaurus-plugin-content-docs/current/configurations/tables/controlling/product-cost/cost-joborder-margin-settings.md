@@ -1,4 +1,4 @@
 ---
-title: Configuración de costo / margen de pedido (Impostazione costo / margine commessa)
+title: Establecimiento del costo/margen del pedido de trabajo
 sidebar_position: 2
 ---

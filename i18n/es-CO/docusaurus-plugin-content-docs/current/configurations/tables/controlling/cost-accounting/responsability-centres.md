@@ -1,5 +1,5 @@
 ---
-title: centri di responsabilità
+title: Centros de Responsabilidad
 sidebar_position: 4
 ---
 
@@ -7,6 +7,6 @@ La tabla permite definir los centros de responsabilidad a los cuales se asignar�
 
 - **CdR (Código de Responsabilidad)**: código alfanumérico del CdR. 
 
-- **descrizione**: descripción del CdR. 
+- **Descripción**: descripción del CdR. 
 
-- **risorsa**: campo opcional de enlace al **dipendente*** responsable del centro mismo.
+- **Activo**: campo opcional de enlace al **Empleado*** responsable del centro mismo.
