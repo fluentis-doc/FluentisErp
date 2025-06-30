@@ -17,6 +17,7 @@ jobs:
           github-token: ${{ secrets.GH_PAT }}
           script: |
             const issue = context.payload.issue;
+            const issueNumber = issue.number;
             const repo = context.repo;
             const repoName = repo.repo;
             const owner = repo.owner;
@@ -34,54 +35,46 @@ jobs:
             }
 
             if (context.eventName === "issues") {
-              const issue = context.payload.issue;
-              const issueNodeId = issue.node_id;
+                console.log(`🔎 Fetching linked Projects v2 for issue #${issueNumber}: "${issue.title}"`);
 
-              console.log("🔎 Searching organization-level projects to find one linked to this issue...");
-
-              // Fetch organization's projects
-              const userProjectsResponse = await github.graphql(`
-                query($login: String!) {
-                  organization(login: $login) {
-                    projectsV2(first: 10) {
+            const result = await github.graphql(`
+              query($owner: String!, $repo: String!, $issue: Int!) {
+                repository(owner: $owner, name: $repo) {
+                  issue(number: $issue) {
+                    projectItems(first: 10) {
                       nodes {
-                        id
-                        number
-                        title
-                        items(first: 50) {
-                          nodes {
-                            content {
-                              ... on Issue {
-                                id
-                              }
-                            }
+                        project {
+                          ... on ProjectV2 {
+                            number
+                            title
                           }
                         }
                       }
                     }
                   }
                 }
-              `, { login: owner });
-
-              const projects = userProjectsResponse.organization.projectsV2.nodes;
-
-              let foundProject = null;
-
-              for (const proj of projects) {
-                const itemMatch = proj.items.nodes.find(item => item.content?.id === issueNodeId);
-                if (itemMatch) {
-                  foundProject = proj;
-                  break;
-                }
               }
+            `, {
+              owner,
+              repo: repoName,
+              issue: issueNumber
+            });
 
-              if (!foundProject) {
-                console.log("❌ Issue is not linked to any organization-level project. Skipping.");
-                return;
-              }
+            const items = result.repository.issue.projectItems.nodes;
 
-              console.log(`✅ Found project '${foundProject.title}' (number: ${foundProject.number}) containing this issue.`);
-              projectNumber = foundProject.number;
+            if (!items || items.length === 0) {
+              console.log("❌ Issue is not linked to any Projects v2. Skipping.");
+              return;
+            }
+
+            const linkedProject = items.find(item => item.project?.number);
+            if (!linkedProject) {
+              console.log("❌ No usable ProjectV2 object found.");
+              return;
+            }
+
+            projectNumber = linkedProject.project.number;
+            console.log(`✅ Linked project found: "${linkedProject.project.title}" (Project #${projectNumber})`);
             }
 
             // Fetch the project ID
