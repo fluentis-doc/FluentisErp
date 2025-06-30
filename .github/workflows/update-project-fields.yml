@@ -54,8 +54,6 @@ jobs:
               if (context.eventName === "issues") 
               {
                 const issue = context.payload.issue;
-                const issueNodeId = issue.node_id;
-                const { owner, repo } = context.repo;
                 const issueNumber = issue.number;
 
                 console.log(`🔎 Fetching Projects v2 linked to issue #${issueNumber} (${issue.title})...`);
