@@ -1,10 +1,10 @@
 ---
-title: Introduzione anagrafiche DDMRP
+title: Uvod u šifarnik DDMRP-a 
 sidebar_position: 0
 ---
 
-In questa sezione ci sono i dati anagrafici relativi agli articoli gestiti secondo logica DDMRP, ovvero i cosidetti buffer cioè scorte strategiche dimensionate e rifornite secondo la logica DDMRP.
+U ovom odjeljku nalaze se matični podaci o artiklima koji se upravljaju prema DDMRP logici, odnosno takozvani bufferi, odnosno strateške zalihe koje se dimenzioniraju i obnavljaju prema DDMRP logici.
 
-Per prima cosa si deve comunicare a Fluentis che un articolo è un buffer DDMRP tramite la scheda [**Parametri MRP**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) selezionando un valore per la Politica di approvvigionamento tra quelli disponibili (buffer dinamici, buffer fissi, buffer min-max).
+Prvo, potrebno je obavijestiti Fluentis da je artikal DDMRP buffer putem kartice [**Parametri MRP**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) selekcijom vrijednosti za Politiku opskrbe među dostupnim opcijama (bufferi dinamički, bufferi fiksni, bufferi min-max).
 
-I buffer dinamici prevedono la variazione nel tempo delle tre zone caratteristiche (verde,gialla,rossa) e di conseguenza anche il livello medio di giacenza, i buffer fissi invece utilizzano valori fissi delle zone e di conseguenza anche un livello medio di giacenza fisso (si utilizzano in caso di limitazioni di spazio, di investimento, per limiti di sicurezza etc), i buffer min-max usano invece solo la zona rossa e la zona verde.
+Dinamički bufferi predviđaju promjene u vremenu triju karakterističnih zona (zelena, žuta, crvena), a time i prosječnu razinu zaliha; fiksni bufferi koriste fiksne vrijednosti zona, pa je i prosječna razina zaliha nepromjenjiva (koriste se u slučajevima ograničenog skladišnog prostora, investicijskih ograničenja, sigurnosnih zahtjeva itd.); min-max bufferi koriste samo crvenu i zelenu zonu. 

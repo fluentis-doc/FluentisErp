@@ -3,22 +3,22 @@ title: Ispravak zelene zone
 sidebar_position: 8
 ---
 
-Il valore della zona verde viene calcolato automaticamente dalla procedura aggiornamento zone in base al valore dei parametri DDMRP dell'articolo.
+Vrijednost zelene zone automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
 
-Tramite questa tabella è possibile forzare un valore diverso in date specificate.
+Putem ove tablice moguće je prisilno postaviti drugačiju vrijednost na određene datume.   
 
-Il sistema di pianificazione tiene conto di eventuali valori di rettifica delle zone nel calcolo NFP anche se la procedura aggiornamento zone non è stata eseguita.
+Planerski sustav uzima u obzir eventualne ispravke zona pri izračunu NFP-a, čak i ako postupak ažuriranja zona nije proveden. 
 
-Tipicamente si può imporre un valore diverso dal normale calcolo per un periodo di tempo limitato, per alterare la dimensione degli ordini emessi.
+Tipično se može nametnuti drugačija vrijednost od one dobivene normalnim izračunom za ograničeno vremensko razdoblje, kako bi se promijenila veličina izdanih narudžbi.   
+ 
+Ako se vrijednost zelene zone poveća, izdavat će se veće narudžbe i rjeđe će se naručivati; ako se smanji, događa se suprotno. 
 
-Se il valore della zona verde viene incrementato verranno emessi ordini più grandi e si ordinerà meno spesso, se viene diminuito avviene l'esatto contrario.
+Tipičan primjer odnosi se na proizvodne resurse s značajnim vremenima pripreme.   
 
-Un esempio tipico riguarda risorse produttive con tempi di setup non trascurabili.
+Ako proizvodni ciklus artikla na skladištu uključuje obradu na resursu s nezanemarivim vremenom postavljanja i ako je taj resurs usko grlo, tj. resurs s radnim opterećenjem vrlo blizu njegovog proizvodnog kapaciteta, nastoji se smanjiti vrijeme neaktivnosti resursa zbog postavljanja povećanjem veličine proizvodnih serija. To se postiže određivanjem minimalne naručive količine u DDMRP parametrima artikla, što posljedično određuje i veličinu njegove zelene zone.   
 
-Se il ciclo produttivo di un articolo a scorta prevede una lavorazione su una risorsa con tempi di attrezzaggio non trascurabili e se la risorsa stessa è un collo di bottiglia, ovvero una risorsa con un carico di lavoro molto prossimo alla sua capacità produttiva, si cerca di ridurre il tempo di inattività della risorsa a causa dell'attrezzaggio aumentando la dimensione dei lotti di produzione, il che viene ottenuto indicando una quantità minima ordinabile nei parametri Ddmrp dell'articolo che di conseguenza determina la dimensione della zona verde dello stesso. 
+Ako je ova potreba prisutna samo u određenom vremenskom razdoblju, umjesto postavljanja minimalne naručive količine, unosi se iznimka za zelenu zonu za to razdoblje.   
 
-Se questa necessità si ha solo in un dato periodo di tempo, allora invece di impostare una quantità minima ordinabile si inserisce una eccezione della zona verde per tale periodo di tempo.
+Ovo se, primjerice, događa kod proizvoda s izraženom sezonalnošću, gdje se u razdoblju prije vrhunca sezonske potražnje stvara odgovarajuća zaliha privremenim povećanjem zelene zone, čime se povećava produktivnost zasićenog resursa. Nakon toga, kada je resurs manje opterećen i više nije zasićen, odnosno kada postoji višak proizvodnog kapaciteta, provodi se češća proizvodnja manjih narudžbi, dajući prednost fleksibilnosti proizvodnog sustava.   
 
-Questo per esempio accade per i prodotti a forte stagionalità, dove nel periodo precedente al picco di domanda stagionale si crea una scorta adeguata tramite un incremento temporaneo della zona verde incrementando di conseguenza la produttività della risorsa satura, successivamente la risorsa sarà meno carica, quindi non satura, ovvero con capacità produttiva in eccesso, pertanto si faranno più produzioni di ordini piccoli privilegiando la flessibilità del sistema produttivo.
-
-I maggiori tempi complessivi di setup in questo periodo non sono un problema perchè la risorsa non risulta pienamente caricata e quindi c'è tempo risorsa inutilizzato a disposizione.
+Dulja ukupna vremena postavljanja u tom razdoblju nisu problem jer resurs nije u potpunosti opterećen, pa postoji raspoloživo neiskorišteno vrijeme resursa. 

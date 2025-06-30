@@ -1,20 +1,27 @@
 ---
-title: Previsioni di vendita
+title: Prognoze prodaje
 sidebar_position: 11
 ---
 
-Questa tabella contiene le previsioni di vendita di prodotti finiti realizzati in fabbrica ed hanno un dettaglio settimanale (previsione di vendita settimanale).
+Ova tablica sadrži prognoze prodaje gotovih proizvoda proizvedenih u tvornici te ima maksimalnu razinu detalja na tjednoj razini (tjedna prognoza prodaje).   
 
-Il bisogno di una previsione delle vendite in DDMRP è molto più raro rispetto ad un MRP perché il Master Production Schedule non viene utilizzato e non è necessario per anticipare la domanda come in un MRP convenzionale. 
+Za distribuirane proizvode ne koristi se ova tablica, već ona s prognozama dnevne potrošnje.   
 
-L'uso della previsione delle vendite è necessario solo quando si sa che in futuro la domanda di un articolo varierà notevolmente e in un breve periodo (un periodo di tempo paragonabile al tempo di produzione cumulativo del prodotto finito). 
+Potreba za prognozom prodaje u DDMRP-u mnogo je rjeđa nego u MRP-u, jer se Master Production Schedule ne koristi, budući da nije potrebno unaprijed predviđati potražnju kao u klasičnom MRP-u.   
 
-Quando questo non è il caso, la [**procedura di aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/ADU-update) lavorando sui valori passati di consumo adatta automaticamente il consumo medio giornaliero (ADU) alla variazione della domanda. 
+Prognoza prodaje potrebna je samo kada je unaprijed poznato da će se potražnja za gotovim proizvodom u budućnosti znatno promijeniti u kratkom vremenskom razdoblju (razdoblje usporedivo sa zbrojem vremena proizvodnje gotovog proizvoda).   
 
-Situazioni tipiche che richiedono la previsione delle vendite sono:
--   Promozioni di vendita
--   Stagionalità
--   Introduzione di nuovi prodotti
--   Eliminazione di vecchi prodotti.
+U takvim situacijama, postojeće zalihe artikala u bufferima unutar sastavnice gotovog proizvoda ne bi bile dovoljne, što bi onemogućilo proizvodnju gotovih proizvoda u potrebnim količinama i vremenskim okvirima predviđenim prodajnim prognozama
+
+Ako bi došlo do značajne, ali postupne promjene potražnje tijekom duljeg razdoblja od ukupnog vremena proizvodnje, prodajne prognoze ne bi bile potrebne. To je zato što bi [**postupak ažuriranja prosječne dnevne potrošnje (ADU**](/docs/ddmrp/procedures/ADU-update) temeljen na povijesnim podacima potrošnje, automatski prilagodio ADU promjeni potražnje, čime bi se povećale zone i prosječna razina zaliha.  
+
+Tipične situacije koje zahtijevaju korištenje prognoza prodaje uključuju:   
+
+-   Promotivne akcije   
+-   Sezonalnost   
+-   Ulazak na novo tržište   
+-   Povlačenje s tržišta   
+-   Uvođenje novih proizvoda
+-   Ukidanje starih proizvoda  
 
 
