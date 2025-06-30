@@ -101,7 +101,7 @@ jobs:
                   return;
                 }
 
-                const projectNumber = foundProject.project.number;
+                projectNumber = foundProject.project.number;
                 console.log(`➡️ Using project number: ${projectNumber}`);
               }
 
