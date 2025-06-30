@@ -1,9 +1,13 @@
 ---
-title: Previsioni di consumo
+title: Predviđanja potrošnje 
 sidebar_position: 7
 ---
-Questa tabella contiene le previsioni di consumo degli articoli buffer.
+Ova tablica sadrži predviđanja potrošnje za buffer artikle.  
 
-Per ciascun articolo a buffer e per ciascuna unità logistica è possibile indicare quale valore di consumo si prevede con dettaglio giornaliero.
+Za svaki buffer artikl i za svaku logističku jedinicu predviđa potrošni iznos s dnevnim detaljima.  
 
-I dati contenuti in questa tabella vengono utilizzati dalla procedura [**aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/ADU-update) nel caso di tecnica di calcolo che considera i dati di previsione consumo futuro, e possono essere inseriti manualmente o possono provenire dalla procedura di calcolo che sviluppa le previsioni di vendita dei prodotti finiti.
+Podaci sadržani u ovoj tablici koriste se u postupku [**ažuriranja prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/ADU-update) u slučaju korištenja tehnike izračuna koja uzima u obzir predviđanja buduće potrošnje, a mogu se unijeti ručno ili mogu dolaziti iz postupka izračuna koji određuje predviđanja prodaje gotovih proizvoda. 
+
+U slučaju ručnog unosa nije potrebno unositi vrijednost za svaki dan, dovoljno je unijeti jedan za svaki vremenski period čija je dužina jednaka parametru **Budući dani** u DDMRP parametrima artikla. 
+
+Ako je, na primjer, **Budući dani** u 10 dana, dovoljno je unijeti jedan iznos svakih 10 dana koji predstavlja ukupnu potrošnju u tom razdoblju, jer će postupak ažuriranja prosječne dnevne potrošnje, u situaciji koja uključuje budućnost, zbrojiti predviđanja za to razdoblje i podijeliti s **Budućim danima**.

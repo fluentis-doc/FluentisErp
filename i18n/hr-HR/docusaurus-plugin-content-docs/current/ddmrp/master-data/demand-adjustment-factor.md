@@ -1,11 +1,11 @@
 ---
-title: Fattore di rettifica del consumo giornaliero medio
+title: Faktor korekcije prosječne dnevne potrošnje  
 sidebar_position: 6
 ---
-Il consumo giornaliero medio di un buffer è specificato nella tabella dei parametri DDMRP per ciascun articolo e per ciascuna unià logistica (centro distribuzione hub o fabbrica).
+Prosječna dnevna potrošnja (ADU) buffer artikla navedena je u tablici DDMRP parametara za svaki artikl i svaku logističku jedinicu (distribucijski centar, hub ili tvornicu).   
 
-Tramite questa tabella è possibile indicare un coefficiente moltiplicativo del consumo medio giornaliero da applicare in specifiche date. 
+Putem ove tablice moguće je odrediti multiplikativni koeficijent prosječne dnevne potrošnje koji će se primijeniti na određene datume s vrijednostima većim ili jednakim nuli.     
 
-Il sistema di pianificazione in tali date considererà un valore del consumo medio giornaliero pari a quanto presente nella tabella DDMRP moltiplicato per il coefficiente presente in questa tabella.
+Postupak **Ažuriranja vrijednosti zona buffer** artikla na tim datumima uzimat će u obzir vrijednost prosječne dnevne potrošnje iz tablice DDMRP parametara, pomnoženu s koeficijentom iz ove tablice, a zelena, žuta i crvena zona bit će izračunate na temelju tog produkta (postupak neće mijenjati ADU vrijednost u DDMRP parametrima). 
 
-Serve per alterare il normale valore del consumo medio giornaliero solo per un breve periodo, se si sa già in anticipo che ci saranno delle variazioni consistenti della domanda ma che non rappresentano un cambiamento strutturale e permanente della stessa.
+Ovaj parametar služi za privremenu prilagodbu uobičajene vrijednosti prosječne dnevne potrošnje, u slučaju da je unaprijed poznato da će doći do značajnih, ali kratkoročnih promjena u potražnji, koje ne predstavljaju trajnu i strukturnu promjenu. Primjeri takvih situacija su promotivne kampanje, uvođenje novih proizvoda ili povlačenje starih proizvoda. 

@@ -1,39 +1,39 @@
 ---
-title: Profili di buffer
+title: Profili buffer-a 
 sidebar_position: 4
 ---
 
-Un profilo di buffer definisce delle caratteristiche comuni a molti articoli buffer.
-In questo modo si può associare ad ogni articolo a buffer il suo profilo di buffer e rendere più semplice e veloce la modifica dei relativi parametri, infatti apportando una modifica ad un profilo di buffer la stessa verrà automaticamnte applicata a tutti gli articoli che sono associati a tale profilo.
+Profil buffer-a definira zajedničke karakteristike za mnoge artikle sa buffer-om.    
+Na taj način, svaki artikl sa buffer-om može imati svoj profil, što olakšava i ubrzava izmjenu njegovih parametara. Naime, svaka izmjena u profilu automatski će se primijeniti na sve artikle povezane s tim profilom.   
 
-Un profilo è individuato dalla combinazione di tre parametri:
+Profil se definira kombinacijom tri parametra:  
 
-1. **tipo parte**
+1. **vrsta dijela**
 
-   - M = manufacturing, cioè parte prodotta in fabbrica (prodotto finito o semilavorato)
-   - I = intermediate, cioè parte semilavorata prodotta in fabbrica (questa distinzione rispetto alla M è facoltativa)
-   - P = purchase, parte acquistata
-   - D = distributed, parte stoccata in un centro di distribuzione (in questo caso il record non può avere il campo magazzino vuoto)
+   - M = proizvodnja, tj. dio proizveden u tvornici (gotov proizvod ili poluproizvod)    
+   - I = poluproizvod, tj. poluproizvod proizveden u tvornici (ova distinkcija u odnosu na M je opcionalna)     
+   - P =  kupnja, kupljeni dio   
+   - D = distribucija, dio pohranjen u distribucijskom centru (u ovom slučaju zapis ne može imati prazno polje skladišta)   
 
-2. **categoria di lead time**
+2. **kategorija vremena isporuke**
 
-   confrontando tra loro articoli con lo stesso tipo parte, si possono definire un valore inferiore ed uno superiore del lead time che consentono di raggruppare gli articoli in tre gruppi con un coefficiente associato compreso tra 0 ed 1.
+  Upoređujući artikle s istom vrstom dijela, može se definirati niža i viša vrijednost vremena isporuke koja omogućuju grupiranje artikala u tri skupine s pripadajućim koeficijentom između 0 i 1.
 
-   - S = short lead time items (coefficiente tra 0.61 ed 1)
-   - M = mid lead time items (coefficiente tra 0.41 e 0.6)
-   - L = long lead time items (coefficiente tra 0 e 0.4)
+   - S = artikli s kratkim vremenom isporuke (koeficijent između 0,61 i 1)  
+   - M = artikli s srednjim vremenom isporuke (koeficijent između 0,41 i 0,6) 
+   - L = artikli s dugim vremenom isporuke (koeficijent između 0 i 0,4)  
 
-   Il valore del coefficiente è inversamente proporzionale al lead time.
+   Vrijednost koeficijenta je obrnuto proporcionalna vremenu isporuke, jer je za artikle s dugim vremenom isporuke bolje imati više narudžbi manjih količina nego nekoliko narudžbi velikih količina, kako bi se smanjio rizik od problema s isporukom.   
 
-3. **categoria di variabiltà**
+3. **kategorija varijabilnosti**
 
-   confrontando tra loro articoli con lo stesso tipo parte, analizzando la variabilità lato domanda e lato fornitura, si decide se un buffer è caratterizzato da variabilità bassa, media o alta.
-   Si tratta di un analisi più complessa di quella del lead time poichè deve tenere conto della variabilità della domanda (per esempio verificando la dispersione statistica dei valori della domanda su un arco di tempo significativo), della varibilità lato fornitura (per esempio considerando la dispersione statistica dei ritardi di fornitura), e tenendo presente se come figli di distinta o come padri sono presenti altri buffer, che per loro natura riducono la variabilità.
+   Uspoređujući artikle s istom vrstom dijela i analizirajući varijabilnost u potražnji i opskrbi, odlučuje se je li buffer karakteriziran niskom, srednjom ili visokom varijabilnošću.    
+   Ovo je složenija analiza od one za vrijeme isporuke jer mora uzeti u obzir varijabilnost potražnje (na primjer, provjerom statističke disperzije vrijednosti potražnje kroz značajan vremenski period), varijabilnost opskrbe (na primjer, uzimajući u obzir statističku disperziju kašnjenja isporuke), te uzimajući u obzir jesu li kao "djeca" ili "roditelji" prisutni drugi buffer-i koji prirodno smanjuju varijabilnost.    
 
-   Vengono considerati tre livelli di variabiltà associati ad un coefficiente compreso tra 0 ed 1 come segue:
+   Razmatraju se tri razine varijabilnosti povezane s koeficijentom između 0 i 1, kako slijedi:    
 
-   - L = low variability (coefficiente compreso tra 0 e 0.4)
-   - M = mid variability (coefficiente compreso tra 0.41 e 0.6)
-   - H = high variability (coefficiente compreso tra 0.61 e 1)
+   - L = niska varijabilnost (koeficijent između 0 i 0,4)  
+   - M = srednja varijabilnost (koeficijent između 0,41 i 0,6)  
+   - H = visoka varijabilnost (koeficijent između 0,61 i 1)   
 
-   Più è alta la variabilità e più elevato è il livello di scorta di sicurezza del buffer (zona rossa).
+   Što je varijabilnost veća, to mora biti viša razina sigurnosnih zaliha buffer-a (crvena zona), što je zapravo proporcionalno koeficijentu varijabilnosti.   
