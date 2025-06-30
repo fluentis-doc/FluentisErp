@@ -85,6 +85,11 @@ jobs:
               let foundProject = null;
 
               for (const proj of projects) {
+                console.log(`🔍 Project: ${proj.title}`);
+                
+                for (const item of proj.items.nodes) {
+                  console.log(`   - Item content.title: ${item.content?.title ?? 'No title'}`);
+                }
                 const itemMatch = proj.items.nodes.find(item => item.content?.id === issueNodeId);
                 if (itemMatch) {
                   foundProject = proj;
