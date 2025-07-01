@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.financeArea.category.Dichiarazioni": {
-    "message": "Dichiarazioni",
+    "message": "Deklaracije",
     "description": "The label for category Dichiarazioni in sidebar financeArea"
   },
   "sidebar.financeArea.category.Plafond": {
@@ -2112,7 +2112,7 @@
     "description": "The label for category MS - Master Scheduling in sidebar planning"
   },
   "sidebar.production.category.Dichiarazioni": {
-    "message": "Signali",
+    "message": "Deklaracije",
     "description": "The label for category Dichiarazioni in sidebar production"
   },
   "sidebar.production.category.Production control": {
