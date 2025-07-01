@@ -1,17 +1,17 @@
 ---
-title: Stato dei buffer
+title: Stanje buffer-a 
 sidebar_position: 1
 ---
-Questo report mostra lo stato del livello di giacenza di un buffer.
+Ovo izvješće prikazuje stanje razine zaliha unutar buffer-a.   
 
-Dato un buffer (scorta in un dato magazzino) viene analizzata la giacenza attuale e quella futura in un periodo di tempo paragonabile al DLT dell'articolo.
+Za određeni buffer (zaliha u određenom skladištu) analizira se trenutna i buduća razina zaliha u vremenskom razdoblju usporedivom s DLT-om artikla.   
 
-Vengono mostrate delle righe in varie date a partire da oggi, e per ciascuna viene indicato il valore della giacenza (valore effettivo) ed il valore percentuale della giacenza considerato rispetto alla zona rossa dell'articolo.
+Prikazane su stavke s različitim datumima počevši od danas, a za svaku se navodi stvarna razina zaliha te postotna vrijednost zaliha u odnosu na crvenu zonu artikla.   
 
-Si utilizza un sistema di colori per richiamare l'attenzione sul livello di criticità della giacenza.
+Koristi se sustav boja kako bi se istaknula razina kritičnosti zaliha.   
 
-Se la giacenza è minore di 0 si usa il rosso scuro (situazione altamente critica con rottura di stock e doamda che non può essere evasa), se è compresa tra 0 e 50% della zona rossa si usa il colore rosso (situazione critica con rischio di rottura di stock), se è compresa tra il 50% ed il 100% della zona rossa si usa il colore giallo (situazione non critica da monitorare), se è superiore al 100% si usa il colore verde (situazione priva di criticità).
+Ako je zaliha manja od 0, koristi se tamno crvena boja (vrlo kritična situacija s prekidom zaliha i nemogućnošću ispunjenja potražnje). Ako je između 0% i 50% crvene zone, koristi se crvena boja (kritična situacija s rizikom prekida zaliha). Ako je između 50% i 100% crvene zone, koristi se žuta boja (nije kritično, ali zahtijeva praćenje). Ako je iznad 100%, koristi se zelena boja (situacija bez kritičnosti).   
 
-Notare che una giacenza negativa indica mancanza di scorta in presenza di domanda che non è possibile soddisfare (quindi si avranno ritardi ed interruzione del flusso dei materiali), una giacenza nulla indica mancanza di scorta ma senza domanda da soddisfare, quaindi una condizione che al momento non genera ritardi ed interruzione del flusso di materiali ma che potenzialmente può diventare tale se si manifesta una domanda prima che si abbia il tempo di rifornire il buffer.
+Treba napomenuti da negativna zaliha označava nedostatak robe uz postojeću potražnju, što dovodi do kašnjenja i prekida opskrbnog lanca. Nulta zaliha označava odsutnost robe, ali bez trenutne potražnje, što ne uzrokuje trenutačne probleme, ali može postati kritično ako se potražnja pojavi prije nego što se buffer obnovi.   
 
-Le righe con date nel futuro si riferiscono a previsioni del valore della giacenza considerando la domanda già nota al momento, in modo da evidenziare in anticipo possibili situazioni critiche (quelle con colore rosso).
+Redovi s budućim datumima odnose se na prognoze vrijednosti zalihe uzimajući u obzir već poznatu potražnju u tom trenutku, kako bi se unaprijed istaknule moguće kritične situacije (one označene crvenom bojom).
