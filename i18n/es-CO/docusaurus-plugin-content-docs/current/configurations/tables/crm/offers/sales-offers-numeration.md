@@ -1,5 +1,5 @@
 ---
-title: numerazione preventivi
+title: Numeración de ofertas de ventas
 sidebar_position: 2
 ---
 

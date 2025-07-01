@@ -1,5 +1,5 @@
 ---
-title: tipo nota contatto
+title: Tipo de nota de contacto
 sidebar_position: 8
 ---
 
