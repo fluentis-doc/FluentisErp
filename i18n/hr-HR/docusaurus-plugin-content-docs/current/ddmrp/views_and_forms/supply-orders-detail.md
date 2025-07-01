@@ -18,3 +18,7 @@ Boje su: tamno crvena za negativnu zalihu, crvena za zalihe niže od 50% crvene 
 Ako artikl nije buffer u skladištu isporuke navedenom u retku narudžbe, kolona status zaliha ostat će prazna, a redak neće biti obojen. 
 
 Ako skladište u retku narudžbe nije specificirano, smatrat će se skladištem Tvornica. 
+
+
+
+

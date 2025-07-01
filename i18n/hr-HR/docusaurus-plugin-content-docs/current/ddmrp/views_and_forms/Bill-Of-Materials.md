@@ -38,5 +38,3 @@ Važno je napomenuti da kapital u optjecaju prikazan u osnovnoj listi možda nij
 Za sigurnu i ažuriranu vrijednost potrebno je pokrenuti postupak izračuna kapitala u optjecaju. 
 
 
-
-

@@ -2,7 +2,6 @@
 title: Upozorenja o prosječnoj dnevnoj potrošnji  
 sidebar_position: 7
 ---
-
 Ovo izvješće omogućuje provjeru je li se prosječna dnevna potrošnja (ADU) nekog artikla prekomjerno promijenila tijekom određenog vremenskog razdoblja. 
 
 Postoji procedura čije izvođenje treba biti automatski zakazano, koja analizira sve DDMRP buffer-e u svim logističkim jedinicama i sprema u posebnu tablicu samo one čija je postotna promjena ADU-a veća od postavljenog limita. 

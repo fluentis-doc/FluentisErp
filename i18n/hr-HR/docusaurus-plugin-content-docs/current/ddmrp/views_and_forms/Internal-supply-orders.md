@@ -34,3 +34,5 @@ Kada vrijeme isporuke nije zanemarivo, tijekom transporta bit će ažurirana kol
 Razlozi za uplatu i povlačenje definirani su u tablici Facilities (logistička struktura). 
 
 
+
+
