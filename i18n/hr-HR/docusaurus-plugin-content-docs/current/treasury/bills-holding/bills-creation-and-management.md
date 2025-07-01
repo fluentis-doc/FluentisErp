@@ -1,63 +1,63 @@
 ---
-title: Creazione e Gestione effetti
+title: Kreiranje i upravljanje dospijećima plaćanja
 sidebar_position: 5
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Effetto** e permette la creazione *manuale* e la gestione, modifica/visualizzazione dell'effetto.
+Obrazac se nalazi na putu **Riznica > Dospijeća plaćanja > Kreiraj dospijeće plaćanja** i omogućuje *ručno* kreiranje te upravljanje, izmjenu/pregled dospijeća plaćanja.
 
-## Come creare un Nuovo effetto
+## Kako kreirati novo dospijeće plaćanja
 
-:::tip[Attenzione]
-Stiamo per illustrare i passaggi per la creazione ***manuale*** di un effetto. Tuttavia **questa modalità è scarsamente utilizzata. Si consiglia di utilizzare le procedure automatiche:**
+:::tip[Pažnja]
+U nastavku su prikazani koraci za ***ručno***  kreiranje dospijeća plaćanja. Međutim, **ovaj način se rijetko koristi. Preporučuje se korištenje automatskih procedura:**
 
-[**Acquisizione effetti dalle partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
+[**Preuzimanje vrijednosnih papira iz dospijeća plaćanja**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
 
-[**Acquisizione effetti dalle fatture**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
+[**Preuzimanje vrijednosnih papira iz računa**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
 :::
 
-Da questa maschera:
+Iz ovog obrasca:
 
-1. Seleziona il **tipo effetto**: il programma procederà ad assegnare un **numero** secondo il numeratore collegato al tipo effetto e all'**anno** di riferimento, che propone come l'anno della data di sistema.
+1. Odaberite **Vrsta računa**: program će automatski dodijeliti **broj** prema brojčaniku povezanom s odabranom vrstom dospijeća i prema **godini** na koju se odnosi, koja je zadano postavljena kao godina sistemskog datuma.
  
-2. Compila i campi **Debitore** (con il conto contabile del soggetto intestatario delle effetto) e **Scadenza** (con la data scadenza dell'effetto).
+2. Ispunite polja **Dužnik** (s kontom glavne knjige osobe na koju glasi dospijeće plaćanja) i **Krajnji Rok** (s datumom dospijeća tog dospijeća plaćanja).
 
-3. Salva la testata dell'effetto.
+3. Spremite zaglavlje dospijeća plaćanja.
 
-4. Compila i campi **importo valuta** e **importo effetto** manualmente o gestisci automaticamente sulla base delle partite/scadenze selezionate dalle tab dei **riferimenti scadenze/partite**. Importo bollo è in campo non utilizzato. Nelle tab dei riferimenti partite o scadenze puoi utilizzare i comandi **Inserimento partite o Inserimento scadenze** per ricercare e inserire partite / scadenze nell'effetto.
+4. Unesite **Iznos u valuti** i **Iznos računa**  ručno, ili ih izračunaj automatski na temelju stavki/dospijeća odabranih iz kartica **referenci dospijeća/stavki**. Polje za iznos takse nije u upotrebi. U karticama referenci stavki ili dospijeća možeš koristiti naredbe **Unos stavki ili Unos dospijećae** kako bi pretražio i dodao stavke ili dospijeća u dospijeće plaćanja.
 
-La **data valuta** è la data per il cambio nel caso di effetti in valuta. Viene proposta pari alla data effetto.
+**Datum valute** je datum za primjenu tečaja u slučaju dospijeća plaćanja u valuti. Predlaže se jednak datumu dospijeća plaćanja.
 
-Gli elementi obbligatori da indicare sono la data scadenza, divisa e cambio, il cliente debitore e la piazza (compilata sulla base dell'anagrafica collegata al cliente).
+Obvezni elementi koje je potrebno navesti su datum dospijeća, valuta i tečaj, kupac-dužnik te mjesto (popunjava se na temelju matičnih podataka povezanih s kupcem).
 
-L'**agente** è un semplice campo di riferimento dell'agente principale della fattura d'origine.
+**Agent** je jednostavno referentno polje glavnog agenta izvorne fakture.
 
-Lo **stato effetto** viene proposto come *emesso* e sarà aggiornato automaticamente sulla base delle operazioni che saranno eseguite per l'effetto.
+**Status računa** predlaže se kao *izdano* i automatski će se ažurirati na temelju operacija koje će se izvršiti za dospijeće plaćanja.
 
-Il flag **Stampato** non è gestito, mentre il *contabilizzato* e *accreditato* dipendono dalle procedure di contabilizzazione effetti e accrediti eseguite.
+Oznaka **Ispisano** nije u upotrebi, dok *proknjiženo* i *odobreno* ovise o izvršenim postupcima knjiženja i odobrenja dospijeća plaćanja.
 
-Il campo **riferimenti** è un campo note libero, che viene riportato nel file come riferimento dell'operazione.
+Polje **Referenca** je slobodno napomensko polje koje se prenosi u datoteku kao referenca operacije.
 
-### La Tab Presentazione
+### Kartica prezentacija
 
-Presenta due sezioni: 
+Sadrži dva dijela:
 
-**Appoggio bancario**, dove sono riportati gli estremi della banca d'appoggio quali **abi/cab** (obbligatori per poter inserire l'effetto in una distinta di presentazione) oltre a *conto corrente* (IBAN e SWIFT) e *CIN* che sono necessari solo in caso di effetti RID. 
+**Banka**, gdje su prikazani podaci banke za naplatu kao što su **Šifre ABI/CAB** (obvezni za unos dospijeća plaćanja u platnu listu), uz *broj računa* (IBAN i SWIFT) i *CIN*, koji su potrebni samo u slučaju dospijeća plaćanja tipa RID.
 
-**Estremi Presentazione**
-riporta gli estremi della distinta con la quale è stato presentato in banca (ad esempio al salvo buon fine o all'incasso).
+**Podaci o prezentaciji**
+Prikazuje podatke o platnoj listi kojom je dospijeće plaćanja predano banci (na primjer, uz odgodu ili za naplatu).
 
-### La Tab Riferimenti scadenze
+### Kartica Referencije dospijeća
 
-In questa sezione si possono visualizzare i riferimenti della fattura d'origine (in caso di utilizzo della procedura *acquisizione effetti dalle scadenze*) oppure aggiungere manualmente scadenze attraverso il pulsante *inserimento scadenze*. In questo caso è possibile inserire anche scadenze non collegate a tipi pagamento da gestire con effetti (esempio *ricevute bancarie*), così come scadenze collegate a note di credito.
+Ovdje se mogu vidjeti reference na izvornu fakturu (u slučaju korištenja postupka *preuzimanja dospijeća plaćanja prema dospijećima*), ili se mogu ručno dodavati dospijeća pomoću gumba *unos dospijeća*. U ovom slučaju moguće je unijeti i dospijeća koja nisu povezana s vrstama plaćanja kojima se upravlja dospijećima plaćanja (npr. *bankovne potvrde*), kao i dospijeća povezana s odobrenjima.
 
-### La Tab Riferimento partite
+### Kartica Referencije stavki
 
-In questa sezione si possono visualizzare i riferimenti delle partite d'origine (in caso di acquisizione effetti dalle partite) oppure aggiungere manualmente partite attraverso il pulsante *inserimento partite*.
+Ovdje se mogu vidjeti reference na izvorne stavke (u slučaju preuzimanja dospijeća plaćanja prema stavkama), ili se ručno mogu dodavati stavke pomoću gumba *unos stavki*.
 
-In questo caso è possibile inserire anche partite non collegate a tipi pagamento da gestire con effetti (esempio *ricevute bancarie*), così come partite collegate a note di credito.
+Također je moguće unijeti i stavke koje nisu povezane s vrstama plaćanja kojima se upravlja dospijećima plaćanja (npr. *bankovne potvrde*), kao i stavke povezane s odobrenjima.
 
-### La Tab Altro
-In questa sezione si possono memorizzare i riferimenti dei giranti e degli avallanti.
+### Kartica Ostalo
+Ovdje se mogu pohraniti reference na girante i avaliste.
 
 
 
