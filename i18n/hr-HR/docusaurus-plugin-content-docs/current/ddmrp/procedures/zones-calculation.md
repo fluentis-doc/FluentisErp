@@ -3,17 +3,22 @@ title: Aggiornamento valore zone articoli a buffer
 sidebar_position: 3
 ---
 
-Questa procedura esegue il calcolo delle zone verde, gialla e rossa di ciascun buffer in base ai parametri DDMRP degli articoli.
+Ova procedura izračunava vrijednosti zelenih, žutih i crvenih zona svakog buffer-a na temelju DDMRP parametara artikala.
 
-La zona verde è determinata considerando il maggiore tra i tre seguenti elementi:
+Zelena zona određuje se uzimajući u obzir najveću vrijednost među sljedećim elementima:   
 
-1. quantità minima ordinabile
-2. quantità consumata nel periodo di riordino (se definito) = ADU x DOC cioè conumo medio giornaliero x ciclo di riordino in giorni
-3. ADU x DLT x LTF ovvero consumo medio giornaliero x lead time disaccoppiato x fattore di lead time
+1. minimalna količina narudžbe
+2. količina potrošena u razdoblju ponovnog naručivanja (ako je definirano) = (ADU x DOC) odnosno prosječna dnevna potrošnja × ciklus ponovnog naručivanja u danima 
+3. ADU x DLT x LTF odnosno prosječna dnevna potrošnja × razdvojeno vrijeme isporuke × faktor vremena isporuke
 
-La zona gialla è determinata come ADU x DLT cioè consumo medio giornaliero x lead time disaccoppiato
+Veličina zelene zone određuje minimalnu količinu narudžbe, što znači da nije moguće izdati narudžbu za količinu manju od vrijednosti ove zone. Također, veća zelena zona smanjuje učestalost naručivanja, jer se narudžbe izdaju rjeđe
 
-La zona rossa è calcolata come ADU x DLT x LTF ( 1 + VAF) cioè consumo medio giornaliero x lead time disaccoppiato x fattore del lead time (che può avere un valore diverso da quello usato nel calcolo della zona verde ma sempre entro i limiti del fattore lead time del profilo di buffer associato), il tutto moltiplicato per 1 sommato al fattore di variabilità.
+Zona žuta određena je kao ADU x DLT, tj. prosječna dnevna potrošnja x neovisno vrijeme isporuke.
 
-E' per questo motivo che all'aumentare della variabilità aumenta la zona rossa, cioè la scorta di sicurezza dell'articolo, cioè quella parte di scorta che serve per fronteggiare gli imprevisti.
+Zona crvena se izračunava kao ADU x DLT x LTF (1 + VAF), što znači prosječna dnevna potrošnja x razdvojeni vrijeme isporuke x faktor vremena isporuke, sve pomnoženo sa 1 uvećanom za faktor varijabilnosti.
 
+Povećanjem varijabilnosti potrošnje povećava se i crvena zona, koja predstavlja sigurnosnu zalihu artikla, odnosno onu količinu zaliha koja je namijenjena nepredviđenim situacijama.   
+
+Ova procedura uzima u obzir mogući **Korekcijski faktor za prosječnu dnevnu potrošnju** kao i eventualne iznimke za crvenu, žutu i zelenu zonu koje su važeće u trenutku njezina izvođenja.   
+
+Dobiveni rezultat koristi se za ažuriranje vrijednosti zona u tablici DDMRP parametara.  
