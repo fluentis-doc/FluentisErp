@@ -1,67 +1,67 @@
 ---
-title: Acquisizione effetti dalle partite
+title: Preuzimanje vrijednosnih papira iz dospijeća plaćanja
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Procedure > Acquisizione effetti dalle partite
+Obrazac se nalazi u Blagajna > Portfelj dospijeća plaćanja > Postupci > Preuzimanje vrijednosnih papira iz dospijeća plaćanja
 
-Da questa form è possibile eseguire un *wizard* che esegue contemporaneamente:
+Putem ovog obrasca moguće je pokrenuti *čarobnjak* koji istovremeno izvršava::
 
-- La ricerca delle partite aperte dei clienti idonee alla creazione degli effetti (ad esempio una ricevuta bancaria)
-- La creazione dell'effetto (esempio una ricevuta bancaria) leggendo i dati della partita
-- La contabilizzazione dell'effetto che,  sua volta, chiude la partita parta e crea la scrittura contabile di storno credito cliente e accredito conto associato alla tipologia di effetto utilizzato.
+- Pretragu otvorenih stavki kupaca koje su pogodne za kreiranje dospijeća plaćanja (na primjer, bankovna potvrda)
+- Kreiranje dospijeća plaćanja (na primjer, bankovna potvrda) čitajući podatke iz stavke
+- Knjiženje dospijeća plaćanja koje, zauzvrat, zatvara otvorenu stavku i stvara računovodstvenu promjenu storniranja potraživanja od kupca i odobrenja računa povezanog s vrstom korištenog dospijeća plaćanja.
 
-## Come creare un nuovo effetto automaticamente dalle partite aperte
+## Kako automatski kreirati novo dospijeće plaćanja iz otvorenih stavki
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle partite aperte da trasformare in effetti (ad esempio Ricevute bancarie o cambiali). 
+1. Upotrijebi gornji dio obrasca za filtriranje pretrage otvorenih stavki koje treba pretvoriti u dospijeća plaćanja (na primjer, bankovne potvrde ili mjenice). 
 
-:::note[Nota]
-Sono presenti, nella parte bassa della zona di filtro, alcuni flag di ricerca: 
+:::note[Napomena]
+U donjem dijelu zone za filtriranje nalaze se određene oznake za pretragu: 
 
-- secondo l'impostazione del [**raggruppamento scadenze**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) delle anagrafiche clienti; di default sono attivi e quindi visibili entrambi i gruppi, con e senza raggruppamento scadenze negli effetti
--  Per visualizzare anche le partite attive dei fornitori (disattivata di default) oltre che quelle clienti (attiva di default)
+- prema postavci [**grupiranja dospijeća**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) u matičnim podacima kupaca; zadane su aktivne i vidljive obje skupine - s grupiranjem dospijeća u dospijećima plaćanja i bez njega
+-  Za prikaz i otvorenih stavki dobavljača (zadano deaktivirano), uz one kupaca (zadano aktivirano)
 :::
 
-:::tip[Attenzione]
-Sono visibili in questa sezione **SOLO** le partite contabili collegate a tipi pagamento di natura ricevuta bancaria o cambiale.
+:::tip[Pažnja]
+U ovom su dijelu vidljive **SAMO** računovodstvene stavke povezane s vrstama plaćanja prirode bankovne potvrde ili mjenice.
 
-Questo è un filtro a monte, attivo per sicurezza, che è possibile gestire dalla tabella [**Tipi pagamento**](/docs/configurations/tables/general-settings/payment-types) abbinando ad ogni tipo di pagamento il corrispondente tipo effetto.
+Ovo je unaprijed postavljen sigurnosni filtar koji je moguće upravljati putem tablice [**Vrste plaćanja**](/docs/configurations/tables/general-settings/payment-types) gdje se svakoj vrsti plaćanja može pridružiti odgovarajuća vrsta dospijeća plaćanja.
 :::
 
-2. Seleziona con il mouse dalla griglia centrale le partite che desideri acquisire negli effetti. In base all'impostazione del flag *Raggruppa scadenze / Raggruppa note di accredito in effetti*, presente nelle [**anagrafiche clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), ed al flag *Raggruppa note di accredito per data scadenza*, presente nei [**parametri portafoglio effetti**](/docs/configurations/parameters/treasury/bills-portfolio-parameters), le partite saranno accorpate (**a parità di banca d'appoggio e data scadenza**) oppure creeranno in ogni caso effetti distinti.
+2. Odaberite mišem iz središnje mreže stavke koje želiš preuzeti kao dospijeća plaćanja. Na temelju postavki oznake *Grupiraj dospijeća / Grupiraj odobrenja u dospijećima plaćanja*, prisutne u [**Šifarik kupaca**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), i oznake *Grupiraj odobrenja prema datumu dospijeća*, prisutne u [**Parametri popisa vrijednosnih papira**](/docs/configurations/parameters/treasury/bills-portfolio-parameters), stavke će se grupirati (**ako imaju istu banku i datum dospijeća**) ili će se, u suprotnom, uvijek kreirati kao zasebna dospijeća plaćanja.
 
-3. Nella parte bassa della maschera imposta la **data di emissione** degli effetti ed il **tipo effetto**.
+3. U donjem dijelu obrasca postavljaju se **datum kreiranja podataka** dospijeća plaćanja i **Vrsta računa**.
 
-La sezione di **contabilizzazione** può essere impostata di default all'interno dei parametri del modulo Portafoglio effetti. Può comunque essere attivata e disattivata da qui, prima di procedere a lanciare l'acquisizione.
+Sekcija za **Knjiženje** može se unaprijed postaviti unutar parametara modula Portfelj dospijeća plaćanja. Ipak, ovdje ju je moguće ručno uključiti ili isključiti prije nego što se pokrene preuzimanje.
 
-La procedura di contabilizzazione, se non attivata contestualmente alla creazione in questa form, può essere lanciata successivamente [**dall'apposita form**](/docs/treasury/bills-holding/accounting/bills-accounting). La scrittura contabile generata provvederà a stornare il credito verso il cliente, chiudendo la relativa partita aperta e accreditando il conto relativo alla [**tipologia di effetto**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) selezionato.
+Ako knjiženje nije aktivirano istovremeno s kreiranjem putem ovog obrasca, može se naknadno pokrenuti putem [**odgovarajućeg obrasca**](/docs/treasury/bills-holding/accounting/bills-accounting). Generirana računovodstvena promjena poništava potraživanje prema kupcu, zatvara pripadajuću otvorenu stavku i odobrava račun koji odgovara odabranoj [**vrsti dospijeća plaćanja**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) .
 
-Il flag  **raggruppa per conto effetto**  esegue una registrazione unica, dove in questo saranno presenti tante righe quante sono gli effetti da contabilizzare.
+Oznaka  **Grupiranje po kontu računa** izvršava jedno knjiženje, unutar kojeg će biti onoliko redaka koliko je dospijeća plaćanja potrebno proknjižiti.
 
-Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di tipo provvisorio.
+Oznaka **privremeno knjiženje** generira računovodstvene zapise u obliku privremenih knjiženja.
 
-:::danger[Attenzione]
-La **gestione dell'acquisizione effetti dalle partite** è alternativa all'acquisizione dalle fatture.
+:::danger[Pažnja]
+**Upravljanje preuzimanjem dospijeća plaćanja iz otvorenih stavki** isključuje mogućnost istovremenog preuzimanja iz računa.
 :::
 
-4. Premi il bottone nella ribbon bar **Acquisizione** per avviare la procedura.
+4. Pritisnite gumb **Preuzmi** na traci izbornika kako bi pokrenuo postupak.
 
-#### Pulsanti specifici
+#### Specifični gumbi
 
-> **Ricerca**: Ricerca la lista delle partite per le quali creare gli effetti.
+> **Traži**: Pretražuje popis stavki za koje treba kreirati dospijeća plaćanja.
 
-> **Acquisizione** Esegue la creazione degli effetti per le partite selezionate.
+> **Preuzmi** Izvršava kreiranje dospijeća plaćanja za odabrane stavke.
 
-### Precedenti
+### Prethodni
 
-Eseguita la creazione, le righe spariranno dalla griglia del *filtro* e il risultato sarà visibile nella scheda **Precedenti** all'interno della quale è possibile annullare l'operazione. 
+Nakon što je kreiranje izvršeno, retci će nestati iz mreže u *filtru*, a rezultat će biti vidljiv u kartici *Prethodni*, unutar koje je moguće poništiti operaciju.
 
-Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+Nije moguće poništiti kreiranje dospijeća plaćanja ako su ona već proknjižena ili uključena u platnu listu.
 
-#### Pulsanti specifici
+#### Specifični gumbi
 
-> **Ricerca**: Ricerca la lista delle creazioni eseguite.
+> **Traži**: Pretražuje popis izvršenih kreiranja.
 
-> **Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
+> **Poništi preuzimanje**: Ovim se gumbom briše cijelo provedeno preuzimanje, zajedno sa svim povezanim dospijećima plaćanja.
 
-> **Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.
+> **Poništi dospijeće plaćanja**: Ovim se gumbom briše kreiranje pojedinačnog odabranog dospijeća plaćanja.
