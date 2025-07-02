@@ -33,6 +33,8 @@ sidebar_position: 1
 > - MS - Ora gli stati delle commesse di conto lavoro e acquisto raggruppate in pianificazione vengono correttamente aggiornati su tutte le commesse raggruppate. (#TT00649/25)  
 > - FI - compensazione veloce, abilitata la compensazione anche su partite con pagamenti fornitori non contabilizzati (saranno conteggiate per la differenza nell’edit del residuo da pagare presente sopra la griglia). Modifications in MaturityFilterResultsSimple forms can have an impact on profiles (#TT02037/25) 
 > - SH - La verifica sulla validità delle date di competenza inserite nel tab Analitica dei documenti di Acquisto e di Vendita e sulle righe articolo delle Fatture di Vendita viene ora effettuata alla conferma della riga (#TT02693/25).
+> - SCS – Risolto errore nella Duplicazione di un Ordine di Conto lavoro in presenza di un Extra Data di riga articolo riferito all’oggetto FSBatchRegister (#TT02134/25).
+> - EAM – Corretto errore nella maschera di ricerca delle Anagrafiche impianti che si verificava impostando un filtro sulla data (#TT02418/25).
 
 ### Patch 707.1-0037 - 20/06/2025 
 
