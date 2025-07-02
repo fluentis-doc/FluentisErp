@@ -1,47 +1,47 @@
 ---
-title: Effetti
+title: Vrijednosni papiri
 sidebar_position: 3
 ---
 
-La form della ricerca effetti 
-- si trova in Tesoreria > Portafoglio Effetti > Effetti > Effetti
+Obrazac za pretraživanje dospijeća plaćanja 
+- nalazi se na putu Riznica > Dospijeća plaćanja > Dospijeća > Dospijeća
 
-- permette all'utente di ricercare gli effetti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+- omogućuje korisniku da pretraži prethodno izdana dospijeća plaćanja s ciljem njihova pregleda, izmjene ili eventualnog brisanja.
 
-Da questa form è possibile anche inserire manualmente un nuovo effetto, ma questa modalità è scarsamente utilizzata nella pratica. Solitamente si procede tramite le procedure di creazione automatica effetti (dalle partite o dalle fatture).
-
-
-## Pulsanti della Ribbon Bar
-
-> - **Ricerca effetti:** Pulsante per ricercare gli effetti secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo effetto:** Richiama la form per inserire un nuovo effetto.
-> - **Modifica effetto:** Permette di modificare un effetto precedentemente inserito.
-> - **Visualizzazione effetto:** Permette di visualizzare un effetto precedentemente inserito.
-> - **Cancella effetto:** Cancella un effetto precedentemente inserito.
-
-> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli effetti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più effetti contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/bill-holding-situation) del modulo
-
-> - *Avviso scadenza effetti*: Lettera indirizzata al cliente (una pagina per ogni effetto selezionato) che evidenzia gli effetti in scadenza con relativi riferimenti
-> - *Lettera di cumulo*:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
-> - *Portafoglio effetti:* Stampa una lista di effetti con evidenza dei dati principali relativi
-> - *Situazione castelletti:* Stampa per ogni banca (relativa agli effetti selezionati) la situazione del castelletto concesso, utilizzato e residuo
+Iz ovog obrasca također je moguće ručno unijeti novo dospijeće plaćanja, no ta se mogućnost u praksi rijetko koristi. Uobičajeno se koristi automatizirani postupak kreiranja dospijeća plaćanja (iz stavki ili iz računa).
 
 
-## Filtri di ricerca
+## Gumbi na traci izbornika
 
-- **Conto:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
-- **Anno / Tipo effetto:** filtri riferiti agli omonimi campi presenti all'interno dell'effetto 
-- **DA / A / data scadenza / Dat emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'effetto
-- **Stati effetti:** filtro riferito allo *Stato effetto* presente all'interno delle'effetto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Emesso , poi diventa presentato, Accreditato, insoluto ecc...
-- **Divisa:** per filtrare solo effetti denominati ad esempio in dollari ecc...
-- **Piazza / ABI / CAB / Descrizione Banca:** riferiti alla banca d'appoggio del debitore
-- **Flag della sezione Stato Effetto:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati .....
+> - **Pretraživanje dospijeća plaćanja:** Gumb za pretragu dospijeća plaćanja prema filtrima definiranima u zaglavlju obrasca.
+> - **Novo dospijeće plaćanja:** Otvara obrazac za unos novog dospijeća plaćanja.
+> - **Uredi dospijeće plaćanja:** Omogućuje izmjenu prethodno unesenog dospijeća plaćanja.
+> - **Pregled dospijeća plaćanja:** Omogućuje pregled prethodno unesenog dospijeća plaćanja.
+> - **Obriši dospijeće plaćanja:** Briše prethodno uneseno dospijeće plaćanja.
 
-## Griglia dei risultati
+> Pokretanje **ispisa** (*Anteprima* oppure *Stampa*) pokreće, za dospijeća plaćanja odabrana mišem (moguće je odabrati više njih držeći tipku Ctrl), istoimeni ispis dostupan u [**izborniku ispisa**](/docs/treasury/bills-holding/reports/bill-holding-situation) modula.
 
-In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
+> - *Obavijest o dospijeću*: Pismo namijenjeno klijentu (jedna stranica za svako odabrano dospijeće plaćanja), s naglaskom na dospijeća koja uskoro dospijevaju, uključujući njihove reference.
+> - *Zbirno pismo*:  Pismo za klijenta koje prikazuje stavke ili račune uključene u svako pojedino dospijeće plaćanja. 
+> - *Portfelj dospijeća plaćanja:* Ispis popisa dospijeća plaćanja s prikazom glavnih podataka.
+> - *Stanje kreditnih okvira:* Ispis koji prikazuje, za svaku banku povezanu s odabranim dospijećima, stanje dodijeljenog, iskorištenog i preostalog kreditnog okvira.
 
-Presenta inoltre gli **Importi** (in valuta, esempio dollari, e in Euro) dell'effetto (coincidenti se l'effetto è denominato in euro).
+
+## Filteri pretraživanja
+
+- **Konto:** filter koji se odnosi na polje ***Dužnik*** unutar dospijeća plaćanja
+- **Godina / Vrsta dospijeća:** filteri koji se odnose na istoimena polja unutar dospijeća plaćanja
+- **Od / Do / Datum dospijeća / Datum izdavanja / Broj**:  odnose se na istoimena polja unutar dospijeća
+- **Statusi dospijeća plaćanja:** filter koji se odnosi na *status dospijeća* , koji se automatski mijenja ovisno o izvršenim postupcima – npr. počinje kao Izdano, a zatim prelazi u Prezentirano, Odobreno, Nepodmireno itd.
+- **Valuta:** za filtriranje samo dospijeća u određenoj valuti, npr. dolarima
+- **Lokacija / Sintetički kod banke / Vodeći broj banke / Naziv banke:** odnose se na banku za naplatu dužnika
+- **Oznake u odjeljku Status dospijeća:** Po zadanim postavkama aktivna je opcija *Svi*, no moguće je odabrati više stanja istovremeno kako bi se proširila pretraga – npr. dospijeća koja su i otisnuta i proknjižena, i ona koja NISU otisnuta itd.
+
+## Mreža rezultata
+
+U ovom obrascu prikazani su isti podaci kao u filterima opisanima iznad.
+
+Također su prikazani i **iznosi**  (u valuti, npr. dolarima, i u eurima) dospijeća plaćanja – iznosi će biti isti ako je dospijeće denominirano u eurima.
 
 
 
