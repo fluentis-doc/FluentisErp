@@ -1,59 +1,59 @@
 ---
-title: mansioni
+title: Tareas
 sidebar_position: 2
 ---
 
-La tabla se encuentra en la ruta **Tablas > Empleados > mansioni > mansioni**.  
+La tabla se encuentra en la ruta **Tablas > Empleados > Tareas > Tareas**.  
 
-En esta tabla es posible codificar las *mansioni* empresariales.  
-Algunos ejemplos de uso de las *mansioni* los encontramos en la gestión de:  
-> **dipendenti** - en la pestaña *mansioni*;  
-> **corsi base** - en la pestaña *mansioni interessate*;  
-> **corsi di formazione** - en la pestaña *mansioni coinvolte*;  
-> **d.p.i.** - en la lista *Dispositivo de Protección Individual utilizado en las mansioni*;  
-> **competenze** - en la lista *Competencia mencionada en las funciones*.  
+En esta tabla es posible codificar las *Tareas* empresariales.  
+Algunos ejemplos de uso de las *Tareas* los encontramos en la gestión de:  
+> **Empleados** - en la pestaña *Tareas*;  
+> **Cursos básicos** - en la pestaña *Tareas de interés*;  
+> **Cursos de capacitación** - en la pestaña *Tareas involucradas*;  
+> **E.P.P.** - en la lista *Equipo de protección personal utilizado en las tareas*;  
+> **Competencias** - en la lista *Competencia mencionada en las tareas*.  
 
-La tabla permite insertar nuevas *mansioni* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.  
+La tabla permite insertar nuevas *Tareas* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.  
 
-## Búsqueda de mansioni (Ricerca Mansioni)  
+## Búsqueda de Tareas 
 
-El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-## Inserción de mansioni (Inserimento Mansioni)  
+## Inserción de Tareas   
 
-Para poder insertar nuevas *mansioni*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
-Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
+Para poder insertar nuevas *Tareas*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **Nuevo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **código** y la **descripción**.  
 
-### mansioni (Mansioni)  
+### Tareas 
 
-Es la lista donde se insertan las informaciones principales de la *mansione*.  
+Es la lista donde se insertan las informaciones principales de la *Tarea*.  
 La lista se compone de la siguiente información:  
-> **codice**: es el código de la *mansione*.  
-> **descrizione**: es la descripción de la *mansione*.  
-> **centro aziendale**: es el código del *Centro empresarial*.  
-> **voce costo**: es el código de la *Partida de costo*.  
-> **Descripción de partida de costo (Descrizione voce di costo)**: es la descripción de la *Partida de costo*.  
+> **Código**: es el código de la *Tarea*.  
+> **Descripción**: es la descripción de la *Tarea*.  
+> **centro aziendale**: es el código del *Centro corporativo*.  
+> **Elemento de costo**: es el código del *Elemento de costo*.  
+> **Descripción del elemento de costo**: es la descripción del *Elemento de costo*.  
 
-### E.P.I. a entregar (D.P.I. da consegnare)  
+### E.P.I. a entregar 
 
-Es la lista donde se insertan los *d.p.i.* necesarios para la *mansione* seleccionada.  
-Esta información se utiliza en la gestión de *consegne/resi d.p.i.*  
+Es la lista donde se insertan los *E.P.P.* necesarios para la *Tarea* seleccionada.  
+Esta información se utiliza en la gestión de *Entregas/devoluciones de E.P.P.*  
 La lista se compone de la siguiente información:  
-> **codice d.p.i.**: es el código del *d.p.i.*  
-> **descrizione d.p.i.**: es la descripción del *d.p.i.*  
-> **mesi validità**: son los meses de validez del *d.p.i.* para la *mansione* seleccionada.  
-> **uso**: anotaciones libres sobre el tema.  
-> **prescrizioni o raccomandazioni per l'uso**: anotaciones libres sobre el tema.  
-> **note**: anotaciones libres.  
+> **Código P.P.E.**: es el código del *E.P.P.*  
+> **Equipo de E.P.P.**: es la descripción del *E.P.P.*  
+> **Validez mensual**: son los meses de validez del *E.P.P.* para la *Tarea* seleccionada.  
+> **Usar**: anotaciones libres sobre el tema.  
+> **Prescripciones o recomendaciones para uso**: anotaciones libres sobre el tema.  
+> **Notas**: anotaciones libres.  
 
-### Competencias (Competenze)  
+### Competencias   
 
-Es la lista donde se insertan las *Competencias* requeridas para desempeñar la *mansione* seleccionada.  
-Esta información se utiliza en la gestión de *Evaluaciones de competencias (Valutazioni competenze)*  
+Es la lista donde se insertan las *Competencias* requeridas para desempeñar la *Tarea* seleccionada.  
+Esta información se utiliza en la gestión de *Evaluaciones de competencias*.  
 La lista se compone de la siguiente información:  
-> **codice competenza**: es el código de la *Competencia*.  
-> **descrizione competenza**: es la descripción de la *Competencia*.  
-> **codice livello**: es el código del *Nivel de evaluación de competencias* requerido para desempeñar la *mansione* seleccionada.  
-> **descrizione livello**: es la descripción del *Nivel de evaluación de competencias*.  
-> **criteri di valutazione**: anotaciones para definir los *Criterios de evaluación* a utilizar para evaluar la *Competencia* en la específica *mansione*.  
-> **note**: anotaciones libres.
+> **Código de Competencia**: es el código de la *Competencia*.  
+> **Descripción de Competencia**: es la descripción de la *Competencia*.  
+> **Nivel Cod**: es el código del *Nivel de evaluación de competencias* requerido para desempeñar la *Tarea* seleccionada.  
+> **Descripción del nivel**: es la descripción del *Nivel de evaluación de competencias*.  
+> **Criterios de evaluación**: anotaciones para definir los *Criterios de evaluación* a utilizar para evaluar la *Competencia* en la específica *Tarea*.  
+> **Notas**: anotaciones libres.

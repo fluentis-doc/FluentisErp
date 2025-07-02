@@ -1,28 +1,28 @@
 ---
-title: categorie d.p.i.
+title: Categoría de E.P.P.
 sidebar_position: 3
 ---
 
-La tabla se encuentra en la ruta **categorie d.p.i.**.
+La tabla se encuentra en la ruta **Categoría de E.P.P.**.
 
-En esta tabla es posible codificar las *categorie d.p.i.* que se utilizan para categorizar los *d.p.i.*.  
-Un ejemplo de uso lo encontramos en la gestión **d.p.i.**.
+En esta tabla es posible codificar las *Categorías de E.P.P.* que se utilizan para categorizar los *E.P.P.*.  
+Un ejemplo de uso lo encontramos en la gestión **E.P.P.**.
 
 La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-#### Búsqueda de categorie d.p.i. (Ricerca Categorie D.P.I.)
+#### Búsqueda de Categoría de E.P.P. 
 
-El formulario consta de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario consta de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-#### Inserción de categorie d.p.i. (Inserimento Categorie D.P.I.)
+#### Inserción de Categoría de E.P.P. 
 
-Para poder insertar nuevas *categorie d.p.i.*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
-Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
+Para poder insertar nuevas *Categorías de E.P.P.*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **código** y la **descripción**.
 
-#### Campos específicos (Campi specifici)
+#### Campos específicos 
 
-> **codice**: es el código de la *Categoría E.P.P. (Categoria D.P.I.)*.  
-> **descrizione**: es la descripción de la *Categoría E.P.P. (Categoria D.P.I.)*.  
-> **note**: anotaciones libres.
+> **Código**: es el código de la *Categoría E.P.P.*.  
+> **Descripción**: es la descripción de la *Categoría E.P.P.*.  
+> **Notas**: anotaciones libres.
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

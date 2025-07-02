@@ -1,33 +1,33 @@
 ---
-title: tipi corso base
+title: Tipos básicos de cursos
 sidebar_position: 3
 ---
 
-La tabla se encuentra en la ruta **Tablas > Empleados > Cursos de formación > tipi corso base (Tabelle > Dipendenti > Corsi di formazione > Tipi corso base)**.
+La tabla se encuentra en la ruta **Tablas > Empleados > Cursos de capacitación > Tipos básicos de cursos**.
 
-En esta tabla es posible codificar los *tipi corso base*.  
-Algunos ejemplos de uso de *tipi corso base* los encontramos en las gestiones:  
-> **corsi base** - en los *dati di testata*;  
-> **corsi di formazione** - en los *dati di testata*;  
-> **Parámetros de gestión del personal (Parametri di gestione del personale)** - en los *dati di testata*.
+En esta tabla es posible codificar los *Tipos básicos de cursos*.  
+Algunos ejemplos de uso de *Tipos básicos de cursos* los encontramos en las gestiones:  
+> **Cursos básicos** - en los *Información del encabezado*;  
+> **Cursos de capacitación** - en los *Información del encabezado*;  
+> **Parámetros de gestión del personal** - en los *Información del encabezado*.
 
 La tabla permite insertar nuevos registros o buscar aquellos ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-### Búsqueda de tipi corso base (Ricerca Tipi corso base)
+### Búsqueda de Tipos básicos de cursos
 
-El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### Inserción de tipi corso base (Inserimento Tipi corso base)
+### Inserción de Tipos básicos de cursos 
 
-Para poder insertar nuevos *tipi corso base* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
-Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
+Para poder insertar nuevos *Tipos básicos de cursos* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **código** y la **descripción**.
 
-#### Campos específicos (Campi specifici)
+#### Campos específicos 
 
-> **tipo**: es el código del *tipo corso base*.  
-> **descrizione tipo**: es la descripción del *tipo corso base*.  
-> **tipo corso di formazione**: es el código del *Tipo de curso de formación* que se propone al crear un nuevo *corso di formazione* desde este *tipo corso base*.  
-> **descrizione tipo corso di formazione**: es la descripción del *tipo corso di formazione*.  
-> **note**: anotaciones libres.
+> **Tipo**: es el código del *Tipo de Curso Básico*.  
+> **Descripción del tipo**: es la descripción del *Tipo de Curso Básico*.  
+> **Tipo de curso de capacitación**: es el código del *Tipo de curso de formación* que se propone al crear un nuevo *Curso de capacitación* desde este *Tipo de Curso Básico*.  
+> **Descripción del tipo de curso de formación**: es la descripción del *Tipo de curso de capacitación*.  
+> **Notas**: anotaciones libres.
 
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
