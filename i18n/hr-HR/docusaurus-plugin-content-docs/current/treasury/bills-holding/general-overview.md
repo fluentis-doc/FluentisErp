@@ -1,68 +1,68 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo Portafoglio Effetti di Fluentis ERP è progettato per gestire e monitorare gli effetti commerciali, come tratte, ricevute bancarie e altri strumenti di pagamento posticipato. 
+Modul Portfelj dospijeća plaćanja u Fluentis ERP-u osmišljen je za upravljanje i praćenje dospijeća plaćanja, kao što su mjenice, bankovne potvrde i drugi instrumenti odgođenog plaćanja.
 
-Questo modulo permette di gestire tutte le operazioni legate agli effetti, dalla loro creazione alla presentazione in banca al salvo buon fine o all'incasso, fino alla registrazione degli accrediti finali delle somme riscosse, fornendo un controllo completo sui flussi di cassa derivanti dai pagamenti differiti.
+Ovaj modul omogućuje upravljanje svim operacijama povezanim s dospijećima plaćanja – od njihove izrade, preko prezentacije banci na naplatu ili uz rezervu naplate, do knjiženja konačnih iznosa koji su naplaćeni – pružajući potpunu kontrolu nad novčanim tokovima koji proizlaze iz odgođenih plaćanja.
 
-## Il flusso operativo: 
+## Operativni tijek: 
 
-- parte riprendendo i dati dalle fatture di vendita o dalle partite contabili. 
+- započinje preuzimanjem podataka iz prodajnih računa ili knjižnih stavki. 
 
-- Esegue la chiusura del conto clienti, la generazione delle distinte di presentazione e l'eventuale creazione dell'insoluto finale. 
+- izvršava zatvaranje računa kupca, generiranje prezentacijskih lista te eventualno kreiranje konačnog nepodmirenog dospijeća.
 
-E' possibile definire a piacimento i vari tipi di effetto necessario. 
+Moguće je slobodno definirati različite potrebne vrste dospijeća plaćanja. 
 
-Sono già presenti a sistema (previa configurazione iniziale Fast Start) le **Ricevute bancarie**, lo strumento attualmente più utilizzato in Italia.
-
-
-## Elenco tabelle necessarie per gestire il modulo:
-
-[Numerazione effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-numeration),  
-
-[Numerazione distinte di presentazione](/docs/configurations/tables/treasury/bills-portfolio-module-tables/presentation-lists-numeration),  
-
-[Tipi effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types),  
-
-[Tipi presentazione distinte effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types),  
-
-[Stati effetti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-status),  
-
-[Stati insoluti](/docs/configurations/tables/treasury/bills-portfolio-module-tables/unpaid-status),  
-
-[Tipi pagamento](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types).
+U sustavu su već dostupne (nakon početne konfiguracije Fast Start) **Doznaka u gotovini**, trenutno najčešće korišteni instrument u Italiji.
 
 
+## Popis tablica potrebnih za upravljanje modulom:
 
-## Parametri necessari per gestire il modulo:
+[Numeriranje vrijednosnih papira](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-numeration),  
 
-[Parametri portafoglio effetti](/docs/configurations/parameters/treasury/bills-portfolio-parameters).
+[Numeriranje popisa prezentacije](/docs/configurations/tables/treasury/bills-portfolio-module-tables/presentation-lists-numeration),  
+
+[Tipovi vrijednosnih papira](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types),  
+
+[Tipovi prezentacije popisa vrijednosnih papira](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types),  
+
+[Statusi vrijednosnih papira](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-status),  
+
+[Status potraživanja](/docs/configurations/tables/treasury/bills-portfolio-module-tables/unpaid-status),  
+
+[Načini placanja](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types).
+
+
+
+## Parametri potrebni za upravljanje modulom:
+
+[Parametri popisa vrijednosnih papira](/docs/configurations/parameters/treasury/bills-portfolio-parameters).
 
  
 
-## Procedure presenti nel modulo
+## Postupci dostupni u modulu
 
-| Funzione | Significato | Dettaglio Video Tutorial |
+| Funkcija | Značenje | Detalji Video Tutorijala |
 | --- | --- | --- |
-|  [Acquisizione effetti dalle fatture](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)  | Richiama la procedura per creare in automatico gli effetti dalle scadenze fatture. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Acquisizione effetti dalle partite](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Richiama la procedura per creare in automatico gli effetti dalle partite aperte. |<a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Contabilizzazione effetti](/docs/treasury/bills-holding/accounting/bills-accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti e chiudere il conto cliente. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=02m55s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  **Contabilizzazione effetti a fornitore**  | Richiama la procedura per effettuare la contabilizzazione effetti a fornitore e chiudere il conto fornitore. | |
-|  [Contabilizzazione distinte](/docs/treasury/bills-holding/accounting/lists-accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05m05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  Contabilizzazione accrediti  | Richiama la procedura per effettuare la contabilizzazione dell'accredito in conto. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=07m51s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Importazione insoluti](/docs/treasury/bills-holding/procedures/import-unpaids)  | Richiama la procedura di importazione del tracciato telematico Insoluti. |
-|  [Contabilizzazione insoluti](/docs/treasury/bills-holding/accounting/unpaid-accounting)  | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura della partita cliente secondo i parametri del modulo. | |
-|  Contabilizzazione insoluti su cessione | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura delle partite cliente e fornitore secondo i parametri del modulo. | |
+|  [Preuzimanje vrijednosnih papira iz računa](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)  | Pokreće proceduru za automatsko kreiranje dospijeća iz dospijeća računa. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link za Video Tutorial</a> |
+|  [Preuzimanje vrijednosnih papira iz dospijeća plaćanja](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Pokreće proceduru za automatsko kreiranje dospijeća iz otvorenih stavki. |<a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
+|  [Knjiženje vrijednosnih papira](/docs/treasury/bills-holding/accounting/bills-accounting)  | Pokreće proceduru za knjiženje dospijeća i zatvaranje računa kupca. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=02m55s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
+|  **Knjiženje vrijednosnih papira prema dobavljaču**  | Pokreće proceduru za knjiženje dospijeća prema dobavljaču i zatvaranje računa dobavljača. | |
+|  [Knjiženje popisa](/docs/treasury/bills-holding/accounting/lists-accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05m05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  Knjiženje odobrenja  | Pokreće proceduru za knjiženje prezentacijskih lista i valorizaciju računa prezentacije. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=07m51s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
+|  [Neplaćeni uvoz](/docs/treasury/bills-holding/procedures/import-unpaids)  | 	Pokreće proceduru uvoza datoteke s nenaplaćenim dospjelim dospijećima. |
+|  [Knjiženje nenaplaćenih dospjelih računa](/docs/treasury/bills-holding/accounting/unpaid-accounting)  | Pokreće proceduru knjiženja nenaplaćenih dospjelih računa uz ponovno otvaranje stavki kupca po parametrima modula. | |
+|  Knjiženje neplaćenog na cesiju | Pokreće proceduru knjiženja nenaplaćenih računa uz ponovno otvaranje stavki kupca i dobavljača po parametrima modula. | |
 
-## Stampe del modulo
+## Ispisi modula
 
-| Funzione | Significato | Dettaglio Video Tutorial |
+| Funkcija | Opis | Link na video tutorijal |
 | --- | --- | --- |
-|  [Stampa distinte di presentazione](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Richiama la procedura per stampare le Distinte di presentazione in banca degli effetti. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Stampa Situazione portafoglio effetti](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Richiama la procedura per stampare la statistica della Situazione del portafoglio effetti. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Stampa Lista insoluti](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Richiama la procedura per stampare la lista degli insoluti presente. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
+|  [Ispis prezentacijskih lista](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Pokreće proceduru ispisa prezentacijskih lista dospijeća u banci. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
+|  [Izvještaj - Status blokiranih računa](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Pokreće proceduru ispisa statistike stanja portfelja dospijeća. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
+|  [Ispis liste nenaplaćenih](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Pokreće proceduru ispisa liste nenaplaćenih dospijeća. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=09m26s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
 
 
 
