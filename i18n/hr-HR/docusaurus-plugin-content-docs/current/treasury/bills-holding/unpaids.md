@@ -1,49 +1,49 @@
 ---
-title: Insoluti
+title: Potraživanja
 sidebar_position: 4
 ---
 
-La form della ricerca insoluti 
+Forma za pretraživanje potraživanja
 
-- si trova in Tesoreria > Portafoglio Effetti > Effetti > Insoluti
+- nalazi se u Riznica > Portfelj efekata > Efekti > Potraživanja
 
-- permette all'utente di ricercare gli insoluti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+- omogućava korisniku pretraživanje prethodno unesenih potraživanja radi pregleda, izmjene ili eventualnog brisanja.
 
-Da questa form è possibile anche inserire manualmente un nuovo insoluto tramite il bottone **Nuovo**.
-
-
-## Pulsanti della Ribbon Bar
-
-> - **Ricerca:** Pulsante per ricercare gli insoluti secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo:** Richiama la form per inserire un nuovo insoluto.
-> - **Modifica:** Permette di modificare un insoluto precedentemente inserito.
-> - **Visualizzazione:** Permette di visualizzare un insoluto precedentemente inserito.
-> - **Elimina:** Cancella un insoluto precedentemente inserito.
-> - **Creazione multipla insoluti:** esegue il comando per creare più di un insoluto contemporaneamente
-
-> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli insoluti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più insoluti contemporaneamente) le omonime stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-unpaid-list) del modulo
-
-> - *Insoluti*: evidenza degli effetti insoluti con relativi riferimenti e importi, maggiorati di eventuali interessi e spese
-> - *Lettera di sollecito*:  Lettera indirizzata al debitore che evidenzia gli effetti insoluti e ne sollecita il pagamento 
+Iz ove forme moguće je i ručno unijeti novo potraživanje pritiskom na gumb **Novo**.
 
 
-## Filtri di ricerca
+## Gumbi na alatnoj traci
 
-- **Tipi Effetti:** Filtra sulla tipologia di effetto che è stato inserito nell'insoluto in fase di creazione, ad esempio Ricevuta bancaria, Cambiale ecc...
-- **Debitore:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
-- **DA / A / data insoluto / Data scadenza / Data emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'insoluto e in particolare riferiti alla data creazione insoluto, alla data scadenza della partita che si riapre con l'insoluto, alla data emissione dell'effetto andato insoluto e al numero dell'effetto insoluto
-- **Stato insoluto:** filtro riferito allo *Stato insoluto* presente all'interno dell'insoluto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Insoluto , poi diventa incassato, oppure emessa nota di addebito ecc...
-- **Flag di filtro:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati ..... E' inoltre presente l'ulteriore sezione espandibile per filtrare insoluti che provengono da effetti generati dalle partite o dalle fatture con relativi riferimenti data / numero. Questo aiuta la ricerca inquanto le due procedure di creazione dell'effetto sono tra loro alternative.
+> - **Traži:** Gumb za pretraživanje potraživanja prema kriterijima unesenim u zaglavlju forme.
+> - **Novo:** Otvara formu za unos novog potraživanja.
+> - **Izmjeni:** Omogućuje izmjenu već unesenog potraživanja.
+> - **Prikaži:**  Omogućuje pregled već unesenog potraživanja.
+> - **Ukloni:**  Briše odabrano potraživanje.
+> - **Zbirno stvaranje nenaplativih potraživanja:** Pokreće naredbu za istovremeno kreiranje više potraživanja.
 
-## Griglia dei risultati
+> Izvršavanje **Ispisa** (*Pregled* ili *Ispis*) pokreće, za odabrana potraživanja (može se odabrati više držeći Ctrl), odgovarajuće izvještaje iz [**izbornika ispisa**](/docs/treasury/bills-holding/reports/print-unpaid-list) modula.
 
-In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
+> - *Potraživanja*: prikaz efekata potraživanja s pripadajućim podacima i iznosima, uvećanim za eventualne kamate i troškove
+> - *Pismo opomene*:  Pismo upućeno dužniku u kojem se ističu potraživanja i traži plaćanje 
 
-Presenta inoltre 
-- l'importo dell'effetto insoluto e  **Spese Bancarie** presente nella testata insoluto che viene riaddebitato al cliente e contabilizzato
-- la **data** e **numero** Importazione riferiti alla procedura di **Importazione insoluti**
-- il **Numero di fattura** che ha generato l'effetto andato insoluto
-- la **Banca di presentazione** dell'effetto insoluto
+
+## Filteri za pretragu
+
+- **Vrste efekata:** Filtrira po tipu efekta unesenog u potraživanje prilikom kreiranja, npr. Bankovna priznanica, Mjenica itd.
+- **Dužnik:** filter se odnosi na polje ***Dužnik*** unutar efekta
+- **OD / DO / datum potraživanja / datum dospijeća / datum izdavanja / broj**: odnose se na istoimena polja unutar potraživanja, posebno na datum kreiranja potraživanja, datum dospijeća računa koji se ponovo otvara zbog potraživanja, datum izdavanja efekta koji je postao potraživanje i broj potraživanja
+- **Status potraživanja:** filter se odnosi na *Status potraživanja* unutar potraživanja, koji se automatski mijenja ovisno o izvršenim procedurama, npr. kreira se kao Potraživanje, zatim postaje naplaćeno, ili je izdata zadužnica itd.
+- **Filter flagovi:** Po defaultu je aktivno *Svi*, ali se može promijeniti odabirom različitih uvjeta pretrage koje, ako se aktiviraju istovremeno, proširuju opseg pretrage, npr. ispisani + knjiženi + NE ispisani... Također postoji dodatni proširivi dio za filtriranje potraživanja koja potječu od efekata nastalih iz otvorenih stavki ili faktura s pripadajućim datumskim i brojčanim referencama. Ovo olakšava pretragu jer su te dvije procedure za kreiranje efekta međusobno alternativne.
+
+## Mreža rezultata
+
+U ovoj formi prikazuju se isti podaci koji su detaljno opisani u filterima gore.
+
+Također prikazuje:
+- iznos potraživanja i  **Bankovni troškovi** iz zaglavlja potraživanja, koji se ponovno tereće klijentu i knjiže
+- **Datum** i **Broj** uvoza vezan za proceduru **Neplaćeni uvoz**
+- **Broj fakture** koja je generirala efekt koji je postao potraživanje
+- **Banka prezentacije** potraživanja
 
 
 
