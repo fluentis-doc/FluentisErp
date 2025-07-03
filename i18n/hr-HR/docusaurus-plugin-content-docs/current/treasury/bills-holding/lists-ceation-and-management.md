@@ -1,81 +1,81 @@
 ---
-title:  Creazione e Gestione Distinta di Presentazione
+title:  Izrada i upravljanje prezentacijskom listom
 sidebar_position: 6
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Distinta** e permette la creazione di una *nuova* distinta oppure la *modifica/visualizzazione* di una distinta già esistente.
+Obrazac se nalazi na putanji **Riznica > Dospijeća plaćanja > Kreiraj popis** i omogućuje izradu *novog* popisa ili *izmjenu/pregled* već postojećeg popisa.
 
-## Come creare una Distinta di presentazione
+## Kako kreirati popis za prezentaciju
 
 <details>
 
-  <summary>Clicca per i passaggi fondamentali</summary>
+  <summary>Kliknite za glavne korake</summary>
  
-  1. Richiama il **Tipo** (di distinta), se hai associato dei Sottoconti / Contropartite si caricheranno automaticamente anche questi campi, altrimenti inseriscili manualmente;  
-  2. **Salva** la testata appena creata;  
-  3. Usa il pulsante **Acquisizione effetti** (nella ribbon bar) per inserire in distinta effetti precedentemente creati;  
-  4. Usa il pulsante **Creazione file Ri.Ba.** (nella ribbon bar) per creare il file telematico da inviare alla banca;  
-  5. Apri la lista con il pulsante **Documenti** (nella ribbon br) per accedere al file telematico allegato;  
-  6. Dopo aver aperto il file telematico usa **Salva allegato** per scaricare una copia sul tuo PC da inviare alla banca;  
-  7. Stampa la distinta o attiva il flag **Stampato**;  
-  8. Usa **Contabilizza e chiudi** se vuoi contabilizzare la distinta.
+  1. Odaberite **Tip** (popisa); ako ste povezali podračune / protustavke, ti će se podaci automatski popuniti, u suprotnom ih unesite ručno;  
+  2. **Spremi** upravo kreirano zaglavlje popisa;  
+  3. Koristite gumb **Preuzimanje vrijednosnog papira** (na traci izbornika) kako biste u popis dodali prethodno kreirane vrijednosne papire;  
+  4. Koristite gumb **Izrada Ri.Ba. datoteke** (na traci izbornika) za kreiranje telematičke datoteke koju ćete poslati banci;  
+  5. Otvorite popis pomoću gumba **Documenti** (na traci izbornika)  za pristup telematičkoj datoteci u privitku;  
+  6. Nakon što otvorite telematičku datoteku, koristite **Spremi privitak** kako biste preuzeli kopiju na svoje računalo i poslali je banci;  
+  7. Ispišite popis ili aktivirajte oznaku **Ispisano**;  
+  8. Koristite **Knjiži i zatvori** ako želite knjižiti popis.
 
 </details>
 
-1. *Inserimento dati*:  
+1. *Unos podataka*:  
 
-> 1.1. Inserisci il *Tipo della distinta* con la combo box **Tipo**: il programma crea in automatico il numero progressivo della distinta secondo il **numeratore** collegato al tipo per **l'anno** di riferimento.  
->1.2. La **data di presentazione** è proposta come data *oggi* e può essere cambiata se necessario.  
->1.3. La **divisa** della distinta viene proposta sulla base della divisa della società attiva: nel caso in cui sia assegnata una divisa differente dall'euro questa obbliga ad inserire nella distinta solo effetti con la stessa divisa.  
-1.4. La sezione dei **Sottoconti / Contropartite** può essere valorizzata automaticamente sulla base dell'impostazione del [**tipo distinta**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types) selezionato. Se non sono stati predefiniti i conti collegati al tipo distinta inseriscili manualmente nei due campi (widget): 
->> - **Banca conto corrente** (si tratta del sottoconto collegato all'anagrafica banca sul quale avverrà l'accredito finale al buon fine dell'operazione) e      
->> - **Contropartita presentato al salvo buon fine / sconto / dopo incasso** (conto transitorio di presentazione; in fase di *contabilizzazione della distinta* sarà stornato il *conto del portafoglio attivo* e accreditate le somme sul presente conto, successivamente, in fase di contabilizzazione accredito, da questo conto le somme saranno girocontate al conto *Banca conto corrente*).  
-> 1.5. Se hai definito nell'anagrafica della banca un valore limite per il castelletto, l'importo concesso e residuo utilizzabile saranno visualizzati nella sezione *Situazione castelletto bancario*.  
+> 1.1. Unesite *Vrstu popisa* pomoću padajuće liste **Tip**: sustav će automatski generirati uzastopni broj popisa prema **brojaču** povezanim s vrstom i za odgovarajuću **godinu**.
+>1.2. **Datum popisa prezentacija** predlaže se kao današnji datum, ali ga možete promijeniti po potrebi.  
+>1.3. **Valuta** popisa predlaže se na temelju valute aktivnog društva: ako je dodijeljena valuta različita od eura, tada će popis sadržavati samo vrijednosne papire u istoj valuti.  
+1.4. Sekcija **Podkonta / Protustavke** može se automatski popuniti na temelju postavki [**Tip sastavnice materijala**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types). Ako konti nisu unaprijed definirani za odabranu vrstu popisa, ručno ih unesite u sljedeća dva polja: 
+>> - **Tekući račun banke** (si tratta del sottoconto collegato all'anagrafica banca sul quale avverrà l'accredito finale al buon fine dell'operazione) e      
+>> - **Protustavka prezentirano na naplatu / Popust / Nakon naplate** (prijelazni konto prezentacije; prilikom *knjiženja popisa* ovaj konto zatvara *konto aktivnog portfelja* i knjiži iznos na protustavku; kasnije, kod knjiženja naplate, iznos će se preknjižiti s ovog konta na *Tekući račun banke*).  
+> 1.5. Ako ste u matičnim podacima banke definirali ograničenje za castelletto (kreditni limit), prikazat će se iznosi odobrenog limita i preostalog raspoloživog iznosa u sekciji *Status kreditne linije*.  
 
-Se hai compilato il valore del castelletto nella sezione *Differenziato* (anzichè *Globale*) imposta la tipologia di distinta in creazione con i radio buttons nella sezione **Tipo presentazione** per gestire specificamente i valori del castelletto *Concesso* e *Residuo*.
+Ako ste vrijednost castelletta postavili u sekciji *Razlikuj* (umjesto *Globalno*)  odaberite vrstu prezentacije pomoću radio gumba u sekciji **Tip prezentacije** kako biste posebno upravljali vrijednostima *Odobren* i *Ostatak*.
 
-2. **Salva** la testata della distinta appena creata. Una volta salvata la distinta saranno, infatti, attivati i vari pulsanti di gestione nella ribbon bar. 
+2. **Spremi** zaglavlje popisa koji ste upravo kreirali. Nakon spremanja, aktivirat će se različiti upravljački gumbi u traci izbornika. 
 
-3. Usa il pulsante **Acquisizione effetti** (nella ribbon bar) per inserire gli effetti precedentemente creati nella distinta. In particolare questo comando apre una maschera di ricerca degli effetti emessi ma non ancora presentati in distinta. ATTENZIONE: Da questa maschera sarà possibile inserire in distinta solo gli effetti completi dei riferimenti abi/cab necessari.
+3. Pomoću gumba **Preuzimanje vrijednosnih papira** (na traci izbornika) unesite prethodno kreirane vrijednosne papire u popis. Ova funkcija otvara prozor za pretraživanje vrijednosnih papira koji su izdani, ali još nisu uključeni u neki popis. VAŽNO: U ovaj popis moguće je uključiti samo one vrijednosne papire koji imaju ispravno popunjene podatke o banci (abi/cab).
 
-L'inserimento degli effetti in distinta aggiorna il *Totale distinta* visualizzato in basso nella form: per eliminare dalla distinta un effetto sarà sufficiente selezionarlo e premere il pulsante *Canc* della tastiera, Oppure il bottone ***Cancella Effetti*** dalla ribbon bar.
+Dodavanje vrijednosnih papira u popis automatski ažurira *Ukupno račun / Ukupno unaprijed plaćeno* , prikazan pri dnu forme. Za uklanjanje vrijednosnog papira iz popisa, označite ga i pritisnite tipku *Delete* a tipkovnici, ili kliknite na gumb ***Izbriši vrijednosne papire*** na traci izbornika.
 
-4. Usa il pulsante **Generazione file Ri.Ba.** per creare il tracciato telematico della distinta da inviare alla banca. In alternativa, a seconda del tipo di distinta creata, sono disponibili le esportazioni per tracciati SDD (ex RID ora a livello Sepa Europeo) ed LCR (Francese).
+4. Pomoću gumba **Generiranje Ri.Ba. datoteke**  izradite telematski zapis popisa koji ćete poslati banci. Alternativno, ovisno o vrsti popisa, možete generirati i druge formate kao što su SDD (bivši RID, sada SEPA standard) ili LCR (francuski format).
 
-5. Apri il documentale con il pulsante **Documenti** (nella ribbon bar) per scaricare sul tuo PC il file da inviare alla banca.  
+5. Otvorite dokument menadžer klikom na gumb **Dokumenti** (na traci izbornika) kako biste preuzeli datoteku na svoje računalo za slanje banci.  
 
-6. Dopo aver aperto il documento nel documentale usa il pulsante **Salva allegato** per scaricare una copia sul tuo PC da inviare alla banca.
+6. Nakon što otvorite dokument u dokument menadžeru, kliknite na gumb **Spremi privitak** kako biste preuzeli kopiju na svoje računalo i poslali je banci.
 
-7. Una volta completata la distinta sarà possibile procedere alla **stampa** diretta della stessa (oppure attivare il flag *Stampato*). 
+7. Po dovršetku popisa moguće je izvršiti **ispis** popisa (ili označiti polje *Ispisano*).
 
 :::tip[Info]
-Lo **stato di distinta stampata è necessaria per poter procedere alla sua contabilizzazione**, che può essere eseguita direttamente da questa maschera con il pulsante **Contabilizza e chiudi**: sarà necessario aver predefinito la causale contabile all'interno dei parametri del modulo.
+**Status popisa kao ispisan je obavezan uvjet za njegovo knjiženje**, koje se može izvršiti izravno iz ovog prozora pomoću gumba **Knjiži i zatvori**: potrebno je unaprijed definirati knjižnu šifru u parametrima modula.
 :::
 
-8. Usa il pulsante **Contabilizza e chiudi** se serve contabilizzare la distinta.
+8. Pomoću gumba **Knjiži i zatvori** izvršite knjiženje popisa, ako je potrebno.
 
-:::note[Nota]
-La situazione del castelletto bancario propone i dati del castelletto sbf memorizzato in anagrafica banca *Conto corrente* e il residuo disponibile sulla base dell'importo degli effetti presentati ma non ancora accreditati.
+:::note[Napomena]
+Pregled stanja bankarskog kreditnog limita prikazuje podatke o odobrenom limitu SBF (salvo buon fine) upisanom u matične podatke banke *Bankovni račun* i raspoloživi ostatak temeljen na iznosima vrijednosnih papira koji su predani, ali još nisu odobreni na računu.
 
-Una serie di flag memorizza se la distinta è stata: 
-- stampata (questa condizione è obbligatoria per poter procedere alla sua contabilizzazione), 
-- se è stato **creato** un **File** telematico, 
-- se è stata **Contabilizzata** e 
-- se si tratta di una distinta **RID** relativa a **utenze** oppure LCR.
+Niz oznaka bilježi sljedeće informacije o popisu:
+- je li popis ispisan (obavezan uvjet za knjiženje), 
+- ako je **Izrađena** telematička **Datoteka**, 
+- ako je **Knjiženo** i 
+- ako se radi o **RID** povezano s **Potrošnja** ili o popisu LCR.
 :::
 
-### La scheda **Pagamenti** 
+### Kartica **Plaćanja**
 
-- è attiva **solo nel caso di** tipo distinta con flag ***Effetti a fornitore***
+- aktivna je **samo u slučaju** popisa s oznakom ***Vrijednosni papiri prema dobavljaču***
 
-- è dedicata all'individuazione delle partite fornitori da chiudere con il giro degli effetti presenti nella distinta stessa. 
+- koristi se za odabir otvorenih stavki dobavljača koje će biti zatvorene prijenosom vrijednosnih papira unutar samog popisa.
 
-Il totale della sezione **Pagamenti** dovrà essere uguale al totale degli effetti girati: per ottenere questa uguaglianza è consentito l'inserimento di una riga manuale di differenza, che sarà gestita come apertura partita in capo al fornitore se la causale contabile utilizzata prevede l'apertura partite stessa.
+Ukupni iznos u sekciji **Plaćanja** mora odgovarati ukupnom iznosu predanih vrijednosnih papira: kako bi se postiglo ovo usklađenje, moguće je ručno unijeti redak razlike, koji će se knjižiti kao otvorena stavka na strani dobavljača, ako knjižna šifra omogućuje otvaranje novih stavki.
 
-**Pulsanti specifici**:
+**Specifični gumbi**:
 
-*Nuovo pagamento*: Attiva il cursore in una nuova riga di pagamento.
+*Novo plaćanje*: Aktivira kursor na novom retku plaćanja.
 
-*Cancella pagamenti*: Cancella i pagamenti selezionati nella griglia.
+*Brisanje plaćanja*: Briše odabrana plaćanja u mreži.
 
-*Pagamenti da partite:* Apre la maschera di help partite, dalla quale selezionare le partite fornitore da chiudere.
+*Plaćanja iz otvorenih stavki*: Otvara pomoćni prozor za odabir stavki dobavljača koje treba zatvoriti.
