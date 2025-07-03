@@ -28,9 +28,9 @@ Obrazac se nalazi na putanji **Riznica > Dospijeća plaćanja > Kreiraj popis** 
 >1.2. **Datum popisa prezentacija** predlaže se kao današnji datum, ali ga možete promijeniti po potrebi.  
 >1.3. **Valuta** popisa predlaže se na temelju valute aktivnog društva: ako je dodijeljena valuta različita od eura, tada će popis sadržavati samo vrijednosne papire u istoj valuti.  
 1.4. Sekcija **Podkonta / Protustavke** može se automatski popuniti na temelju postavki [**Tip sastavnice materijala**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types). Ako konti nisu unaprijed definirani za odabranu vrstu popisa, ručno ih unesite u sljedeća dva polja: 
->> - **Tekući račun banke** (si tratta del sottoconto collegato all'anagrafica banca sul quale avverrà l'accredito finale al buon fine dell'operazione) e      
+>> - **Tekući račun banke** (radi se o pomoćnom računu povezanim s matičnim podacima banke, na koji će biti izvršena konačna uplata nakon uspješnog završetka transakcije) i      
 >> - **Protustavka prezentirano na naplatu / Popust / Nakon naplate** (prijelazni konto prezentacije; prilikom *knjiženja popisa* ovaj konto zatvara *konto aktivnog portfelja* i knjiži iznos na protustavku; kasnije, kod knjiženja naplate, iznos će se preknjižiti s ovog konta na *Tekući račun banke*).  
-> 1.5. Ako ste u matičnim podacima banke definirali ograničenje za castelletto (kreditni limit), prikazat će se iznosi odobrenog limita i preostalog raspoloživog iznosa u sekciji *Status kreditne linije*.  
+> 1.5. Ako ste u matičnim podacima banke definirali ograničenje za kreditni limit, prikazat će se iznosi odobrenog limita i preostalog raspoloživog iznosa u sekciji *Status kreditne linije*.  
 
 Ako ste vrijednost castelletta postavili u sekciji *Razlikuj* (umjesto *Globalno*)  odaberite vrstu prezentacije pomoću radio gumba u sekciji **Tip prezentacije** kako biste posebno upravljali vrijednostima *Odobren* i *Ostatak*.
 
