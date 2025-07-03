@@ -43,7 +43,7 @@ Također prikazuje:
 - iznos potraživanja i  **Bankovni troškovi** iz zaglavlja potraživanja, koji se ponovno tereće klijentu i knjiže
 - **Datum** i **Broj** uvoza vezan za proceduru **Neplaćeni uvoz**
 - **Broj fakture** koja je generirala efekt koji je postao potraživanje
-- **Banka prezentacije** potraživanja
+- **Banka prezentacije** potraživanja.
 
 
 
