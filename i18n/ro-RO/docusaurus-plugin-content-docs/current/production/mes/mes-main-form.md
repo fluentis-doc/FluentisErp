@@ -3,261 +3,237 @@ title: MES
 sidebar_position: 5
 ---
 
-:::important A cosa serve
-La forma principale del Modulo di Esecuzione della Produzione (MES) di Fluentis è progettata per ottimizzare e semplificare il processo di dichiarazione delle attività produttive. Questa interfaccia consente agli operatori di monitorare e gestire in tempo reale le risorse di produzione, facilitando l'inserimento dei dati relativi alle fasi di lavorazione e alle quantità prodotte.
+:::important Utilitate
+Formul principal al modulului de Execuție a Producției (MES) din Fluentis este proiectat pentru a optimiza și a simplifica procesul de declarare a activităților productive. Permite operatorilor să monitorizeze și să gestioneze în timp real resursele de producție, facilitând introducerea datelor referitoare la fazele de lucru și la cantitățile produse.
 
-Gli operatori possono gestire facilmente l'inserimento e la modifica dei dati, grazie a funzionalità come il barcode Tokenizer e l'abilitazione di controlli specifici per garantire la correttezza delle registrazioni. Inoltre, il sistema supporta diversi metodi di ripartizione del tempo e delle quantità, consentendo un'analisi dettagliata delle performance produttive e garantendo una gestione efficiente delle risorse impiegate.
-
-Questo approccio integrato non solo migliora la visibilità delle operazioni, ma contribuisce anche a ottimizzare i flussi di lavoro e la produttività complessiva dell'impresa.
+Operatorii pot gestiona cu ușurință introducerea și modificarea datelor, datorită unor funcționalități precum barcode Tokenizer și activarea unor controale specifice pentru a garanta corectitudinea înregistrărilor. În plus, sistemul suportă diferite metode de repartizare a timpului și a cantităților, permițând o analiză detaliată a performanțelor productive și asigurând o gestionare eficientă a resurselor utilizate.
 :::
 
-## *Pulsanti specifici*:  
+#### Butoane specifice
 
-**Navigabilità**
-> *Precedente*: permette di passare al tab precedente;     
-> *Successivo*: permette di passare al tab successivo;     
-> *Aggiorna*: permette di aggiornare tutti i dati della form, da usare nel caso in cui vengano fatte modifiche sulla risorsa utilizzata;      
-> *Cancella selezione*: permette di annullare la selezioni delle fasi presenti nella griglia principale.     
+**Navigabilitate**  
+> *Precedent*: permite trecerea la tabul anterior;     
+> *Următor*: permite trecerea la tabul următor;     
+> *Actualizează*: permite actualizarea tuturor datelor din form, de utilizat în cazul în care se fac modificări asupra resursei utilizate;      
+> *Șterge selecția*: permite anularea selecției fazelor existente în Tabelul principală.     
 
-**Conferma segnalazione**
-> *Inizia*: permette di creare una segnalazione di produzione di apertura;    
-> *Avanza*: permette di creare una segnalazione di produzione di avanzamento;    
-> *Sospendi*: permette di creare una segnalazione di produzione di sospensione;    
-> *Riprendi*: permette di creare una segnalazione di produzione di ripresa;    
-> *Chiudi*: permette di creare una segnalazione di produzione di chiusura;    
-> *Annulla*: permette di azzerare tutti i dati inseriti in Fluentis MES.                   
+**Confirmă semnalare**  
+> *Începe*: permite crearea unei semnalări de producție de deschidere;    
+> *Avansează*: permite crearea unei semnalări de producție de avansare;    
+> *Întrerupe*: permite crearea unei semnalări de producție de suspendare;    
+> *Reia*: permite crearea unei semnalări de producție de reluare;    
+> *Închide*: permite crearea unei semnalări de producție de închidere;    
+> *Anulează*: permite resetarea tuturor datelor introduse în Fluentis MES.                   
 
-## Form principale
+## MES
 
-La form principale si compone di una sezione con i seguenti campi ed una griglia contenente le fasi in lavoro: 
+- **Cod de bare**: o mare parte dintre operațiunile care pot fi efectuate în Fluentis MES pot fi facilitate și accelerate datorită câmpului *Cod de bare*, care, dacă este configurat corespunzător, prelucrează inteligent datele achiziționate prin citirea codurilor de bare pe care le introduce automat în câmpurile corespunzătoare.    
+Acest lucru oferă un mare avantaj operatorului atât în ceea ce privește viteza de introducere, cât și eficiența, deoarece va citi datele mereu în același câmp *Cod de bare* fără să fie nevoie să schimbe periodic focusul.     
+Codurile de bare pot fi configurate în formul *Barcode tokenizer*, disponibil în: Tabele > Setări Generale > Barcode tokenizer.               
+Prin urmare, acest câmp *Cod de bare*, în MES, poate fi utilizat de operator pentru a adăuga faze individuale sau grupuri de faze sau, de exemplu, toate fazele unui întreg ordin de producție, ori pentru a încărca loturile și/sau numerele de serie ale materialelor de descărcat prin citirea codurilor de bare corespunzătoare.
 
-- **Codice barcode**      
-Gran parte delle operazioni che possono essere effettuate in Fluentis MES, possono essere agevolate e velocizzate grazie all’utilizzo del campo *Codice barcode*, che se opportunamente configurato, rielabora in maniera intelligente i dati acquisiti tramite la lettura del barcode e autonomamente va ad inserire i valori nei campi corrispondenti.    
-Questo da un grande vantaggio all’operatore sia in termini di velocità di inserimento che di efficienza, dato che dovrà leggere i dati sempre nello stesso campo *Codice barcode* senza avere il problema di dover cambiare il focus.     
-I Barcode possono essere configurati all’interno della form Barcode tokenizer, presente in: Tabelle > Impostazioni generali > Barcode tokenizer.               
-Quindi, questo campo *Codice barcode*, nel MES, può essere utilizzato dall’operatore per aggiungere singole fasi o gruppi di fasi, o ad esempio anche le fasi di un intero ordine di produzione, oppure ancora caricare i lotti e/o serial number dei materiali da scaricare, il tutto semplicemente leggendo i vari barcode. 
+Pentru detalii despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
-Pentru toate informațiile despre cum să codificați codurile de bare care trebuie citite în câmpul **Cod de bare**, consultați documentația [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
+- **Workstation**: procedura recunoaște workstation-ul pe care se lucrează și, dacă la acesta a fost asociat un centru de lucru, va încărca automat toate fazele care erau în lucru pe acel centru de lucru. În acest punct, operatorul poate decide dacă să continue cu raportarea respectivelor faze sau, de exemplu, să adauge altele. Pentru detalii consultați [Workstation](/docs/production/mes/workstation).     
 
-- **Workstation**      
-La procedura è in grado di riconoscere la workstation su cui sta lavorando e se a questa è stato associato un centro di lavoro, caricherà in automatico tutte le fasi che erano in lavorazione su quel centro di lavoro, a quel punto l’operatore può scegliere se proseguire con la segnalazione di quelle fasi o ad esempio aggiungerne altre. Tutte le ulteriori informazioni si possono consultare nella sezione dedicata alla [Workstation](/docs/production/mes/workstation).     
+- **Resursă**: este utilizat pentru a introduce orice tip de resursă de producție.     
+În cazul în care este introdusă o resursă de tip *Centru de lucru*, acesta va fi înlocuit automat și în câmpul aferent *Centrului de lucru*, încărcând, în consecință, fazele aferente noului centru introdus.    
+Dacă, în schimb, se introduce o resursă de tip *Angajat*, aceasta va fi utilizată drept utilizator de declarare. Introducerea unei resurse de tip Angajat este obligatorie atunci când este activat flag-ul *Operator obligatoriu* din tabul *Generale* aflat în [Resurse de producție](/docs/production/mes/production-resources).        
 
-- **Risorsa**      
-Il campo *Risorsa*, viene utilizzato per inserire un qualsiasi tipo di risorsa di produzione.     
-Nel caso in cui venga inserita una risorsa di tipo *Centro di lavoro*, questo verrà sostituito automaticamente anche nel relativo campo del *Centro di lavoro*, andando di conseguenza a caricare le fasi inerenti al nuovo centro appena inserito.    
-Nel caso in cui, invece venga inserita una risorsa di tipo *Dipendente*, questo sarà utilizzato come utente di dichiarazione. L'inserimento di una risorsa di tipo dipendente è richiesto obbligatoriamente nel caso in cui sia attivo il flag *Operatore obbligatorio* presente nel tab *Generali* delle [Risorse di produzione](/docs/production/mes/production-resources).        
+- **Centru de lucru**: reprezintă centrul de lucru pe care operatorul face declarația; pot fi vizualizate doar centrele de lucru legate de *Workstation*. În cazul în care *Workstation* nu a fost introdus sau nu a fost asociat niciun *Centru de lucru* la *Workstation*, va fi posibilă vizualizarea tuturor *Resurselor de producție* de tip *Centru de lucru*.    
 
-- **Centro di lavoro**
-Indica il centro di lavoro su cui l'operatore sta facendo la dichiarazione; è possibile visualizzare solo i centri di lavoro legati alla *Workstation*. Nel caso in cui, la *Workstation* non sia stata inserita, oppure non sia stato associato nessun *Centro di lavoro* alla *Workstation*, sarà possibile visualizzare tutte le *Risorse di produzione* di tipo *Centro di lavoro*.    
+- **Faze în lucru**: fazele pot fi adăugate în tabel cu câmpul *Cod de bare* sau folosind butonul specific *Selectează faze noi* din meniul din dreapta. Tabelul conține o serie de informații referitoare la comandă, ordinul de producție, proiect, variantă etc.  
+Toate aceste informații pot fi afișate sau ascunse prin gestionarea în tabul *Layout* al [Resurse de producție](/docs/production/mes/production-resources).   
+Pentru linia selectată, în partea dreaptă a tabelului, este posibil să vizualizați imaginea implicită introdusă în [Registru articol](/docs/erp-home/registers/items/create-new-item); în plus, un dublu click o va afișa pe tot ecranul.
 
-- **Fasi in lavoro**
-Le fasi possono essere aggiunte all'interno della griglia tramite il campo *Codice barcode*, oppure utilizzando il pulsante specifico *Seleziona nuove fasi* presente nel menù di destra. La griglia contiene una serie di informazioni relative alla commessa, all'ordine di produzione, al progetto, alla variante, ecc... 
-Tutte queste informazioni possono essere rese visibili o nascoste tramite la gestione nel tab *Layout* delle [Risorse di produzione](/docs/production/mes/production-resources).   
-Per la riga selezionata, sulla parte destra della griglia, è possibile visualizzare l'immagine di default inserita nell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item); inoltre, con il doppio click verrà visualizzata a tutto schermo.       
-                
-### Tab Produzione      
+### Producție 
 
-*Pulsanti specifici*:
+Este dedicat introducerii informațiilor referitoare la timpii de producție / setup și la cantitățile produse / rebutate.
 
-> *Pulisci risorsa*: permette di rimuovere il valore inserito nel campo *Risorsa*;    
-> *Seleziona nuove fasi*: permette di aprire un help per selezionare nuove fasi da aggiungere a quelle presenti nella griglia principale;      
-> *Elimina fase*: permette di rimuove la fase o le fasi selezionate dalla griglia principale.    
+#### Butoane specifice
 
-Il tab **Produzione** è dedicato all'inserimento delle informazioni relative ai tempi di produzione / setup e alle quantità prodotte / scartate. Questo è l'unico che non può essere reso invisibile e si compone dei seguenti campi:
-> **Macchina**: in questo campo viene proposta di default la *Macchina* che è indicata nel *Centro di lavoro* se la fase deve essere ancora iniziata, mentre se sono già state inserite delle dichiarazioni, propone quella della dichiarazione precedente. Inoltre, è comunque possibile variarla manualmente, ma solo con una delle macchine alternative indicate nell'anagrafica della macchina principale;      
-> **Tempo lavoro**: permette di visualizzare / modificare manualmente il tempo di lavoro; è possibile variarne il comportamento tramite i flag *Inserimento tempo manuale* e *Tempo proposto* presenti in [Risorse di produzione](/docs/production/mes/production-resources). Il tempo viene calcolato automaticamente come differenza tra il tempo della dichiarazione attuale e della precedente;                   
-> **Tempo setup**: permette di inserire / modificare manualmente il tempo di lavoro;         
-> **Quantità prodotta**: permette di inserire la quantità prodotta con quella dichiarazione;         
-> **Quantità alternativa**: permette di inserire la quantità alternativa prodotta con quella dichiarazione;      
-> **Magazzino versamento**: indica il magazzino di carico dei prodotti realizzati con la dichiarazione;       
-> **Causale versamento**: indica la causale di carico dei prodotti realizzati con la dichiarazione;       
-> **Ubicazione versamento**: indica l'ubicazione di carico dei prodotti realizzati con la dichiarazione;       
-> **Magazzino versamento scarto**: indica il magazzino di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Causale versamento scarto**: indica la causale di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Ubicazione versamento scarto**: indica l'ubicazione di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Difetto**: indica il difetto di scarico dei prodotti realizzati e scartati con la dichiarazione; è attivabile un controllo dedicato tramite il flag *Difetto obbligatorio se dichiarato scarto* presente in [Risorse di produzione](/docs/production/mes/production-resources);           
-> **Causale di sospensione**: indica la causale di sospensione che viene utilizzata nella dichiarazione; nel caso in cui un operatore crei una sospensione, senza indicare la causale di sospensione, verrà utilizzata la causale di default indicata nel campo *Causale di sospensione proposta* presente nella form delle [Risorse di produzione](/docs/production/mes/production-resources).       
+> *Șterge resursa*: permite ștergerea valorii introduse în câmpul *Resursă*;    
+> *Selectează faze noi*: permite deschiderea unui help pentru selectarea fazelor noi care să fie adăugate la cele existente în tabelul principal;      
+> *Șterge faza*: permite ștergerea fazei sau fazelor selectate în tabelul principal.    
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).      
+#### Câmpuri specifice  
+> **Mașină**: mașina este propusă în următorul mod:  
+- dacă faza are asociată o mașină, aceasta este propusă doar dacă în tabelul [Mașini](/docs/configurations/tables/production/machines/) acea mașină are asociat același centru de lucru selectat în MES. În acest caz, utilizatorul poate modifica mașina, dar numai alegând dintre cele din tabelul mașini care au asociat acel centru de lucru. 
+- în situația în care mașina din fază nu se regăsește printre cele asociate acelui centru de lucru, widgetul nu va propune nicio mașină.  
+În plus, în acest caz, dacă utilizatorul încearcă să creeze o declarație, va primi un mesaj care îl obligă să introducă o mașină pentru a continua. Dacă, însă, faza nu are asociată nicio mașină, nu va exista obligația de a o introduce pentru a putea continua cu declarațiile.
+Dacă sunt selectate mai multe faze simultan, mașina va fi preluată de la prima fază selectată (sau de la cea cu secvența prioritară, dacă este specificată) dintre cele cu același centru de lucru selectat în MES.          
+> **Timp de lucru**: permite vizualizarea / modificarea manuală a timpului de lucru; comportamentul îi poate fi modificat prin flag-urile *Inserare manuală timp* și *Timp propus* din [Resurse de producție](/docs/production/mes/production-resources). Timpul este calculat automat ca diferență dintre momentul declarației curente și cea precedentă;                   
+> **Timp de setup**: permite introducerea / modificarea manuală a timpului de lucru;         
+> **Cantitate produsă**: permite introducerea cantității produse cu respectiva declarație;         
+> **Cantitate alternativă**: permite introducerea cantității alternative produse cu acea declarație;      
+> **Gestiune depozitare**: indică gestiunea unde se încarcă produsele obținute cu declarația;       
+> **Șablon depozitare**: indică șablonul de încărcare a produselor obținute cu declarația;       
+> **Locație depozitare**: indică locația de încărcare a produselor obținute cu declarația;       
+> **Gestiune depozitare deșeuri**: indică gestiunea de descărcare a produselor obținute și rebutate cu declarația;       
+> **Șablon depozitare deșeuri**: indică șablonul de descărcare a produselor obținute și rebutate cu declarația;       
+> **Locație depozitare deșeuri**: indică locația de descărcare a produselor obținute și rebutate cu declarația;       
+> **Defect**: indică defectul produselor obținute și rebutate cu declarația; poate fi activat un control dedicat cu flag-ul *Defect obligatoriu în cazul în care este declarat rebutat* din [Resurse de producție](/docs/production/mes/production-resources);            
+> **Motiv întrerupere**: indică motivul folosit în declarație; în cazul în care un operator creează o întrerupere fără să indice motivul, se va utiliza automat cel indicat ca implicit în câmpul *Motiv de întrerupere propus* din form [Resurse de producție](/docs/production/mes/production-resources).       
 
-### Tab Controlli qualità
+### Control calitate
 
-*Pulsanti specifici*:
+Acest tab permite gestionarea controalelor de calitate pentru articolele produse și/sau rebutate. 
 
-> *Seleziona articoli*: permette di selezionare quali articoli inserire nella tabella dei controlli qualità tra quelli prodotti o scartati;       
-> *Importa tutti*: permette di inserire nella tabella dei controlli qualitàtutti gli articoli prodotti o scartati;     
-> *Elimina controllo*: permette di eliminare il controllo selezionato;           
-> *Duplica prova*: permette di duplicare la prova selezionata;       
-> *Elimina prova*: permette di eliminare la prova selezionata.   
+#### Butoane specifice
 
-Questo tab permette di gestire i controlli della qualità per gli articoli prodotti e/o scartati. 
+> *Selectează articole*: permite selectarea articolelor care urmează să fie inserate în tabelul *Control calitate* dintre cele produse sau rebutate;       
+> *Importă toate*: permite introducerea în tabelul *Control calitate* a tuturor articolelor produse sau rebutate;     
+> *Șterge control*: permite ștergerea controlului selectat;           
+> *Duplică test*: permite duplicarea testului selectat;       
+> *Șterge test*: permite ștergerea testului selectat.   
+       
+#### Câmpuri specifice  
+> *Clasă*: reprezintă clasa articolului;          
+> *Cod articol*: reprezintă codul articolului;          
+> *Variantă*: indică varianta articolului;    
+> *Detaliu articol de luat în considerare*: indică detaliul maxim al articolului care va fi luat în considerare pentru efectuarea testelor (Nici unul, Lot, S.N., UdI). Acesta este selectat în tabul *Control de calitate* din [Resurse de producție](/docs/production/mes/production-resources);             
+> *Ref. detaliu*: indică valoarea *Detaliu articol de luat în considerare*; de exemplu numărul lotului;          
+> *U.M.*: indică unitatea de măsură a articolului;    
+> *Cantitate*: reprezintă cantitatea articolului;    
+> *Deșeu*: dacă este activ, indică faptul că respectiva cantitate este de tip *Deşeu*; dacă nu este activ, indică o cantitate produsă care nu a fost rebutată;             
+> *Descriere articol*: indică descrierea articolului;          
+> *Descriere variantă*: indică descrierea variantei.      
 
-Le righe possono essere inserite all'interno della tabella *Controlli qualità* tramite i due pulsanti specifici.          
-In questa tabella vengono riportati i seguenti dati:
-> *Classe*: indica la classe dell'articolo;          
-> *Codice articolo*: indica il codice dell'articolo;          
-> *Variante*: indica la variante dell'articolo;    
-> *Dettaglio articolo da considerare*: indica il massimo dettaglio dell'articolo che si va a considerare per effettuare i test (Nessuno, Lotto, S.N., U.D.C.). Questo viene selezionato nel tab *Controlli Qualità* della gestione delle [Risorse di produzione](/docs/production/mes/production-resources);             
-> *Rifer. dettaglio*: indica il valore del *Dettaglio articolo da considerare*, ad esempio il numero del lotto;          
-> *U.M.*: indica l'unità di misura dell'articolo;    
-> *Quantità*: indica quantità dell'articolo;    
-> *Scarto*: se attivo, indica che la quantità indicata è di tipo scarto; se non attivo, invece, indica che la quantità prodotta e non scarta;             
-> *Descrizione articolo*: indica la descrizione dell'articolo;          
-> *Descrizione variante*: indica la descrizione della variante.      
+Dacă, în ordinul de producție legat de acea fază, faza este supusă controlului de calitate și a fost deja asociat un plan de control (mostenit din faza ciclului de lucru standard, dar care poate fi modificat manual atât în ordinul planificat, cât și în ordinul de producție), testele legate de planul de control indicat vor fi introduse automat în tabelul *Teste*.      
 
-Se nell'ordine di produzione legato a quella fase, la fase è soggetta al controllo qualità e abbiamo già associato un piano di controllo (che viene ereditato dalla fase del ciclo di lavoro standard, ma ovviamente può essere variato manualmente sia nell'ordine pianificato che nell'ordine di produzione), le prove legate al piano di controllo indicato verranno riportate automaticamente all'interno della tabella *Prove*.      
+#### Teste     
 
-La tabella *Prove* si compone dei seguenti campi:         
-> *Sequenza*: indica la sequenza delle prove da effettuare;          
-> *Tipo di Prova*: indica il codice della prova da effettuare;         
-> *Descrizione tipo di prova*: indica la descrizione della prova da effettuare;           
-> *Categoria strumento*: indica la categoria dello strumento utilizzato;         
-> *Tipo valore*: indica se il valore è di tipo *Testo*, di tipo *Si/No* oppure di tipo *Numerico*;      
-> *Tipo limite*: permette di indicare un *Tipo limite*; si abilita solo se il *Tipo valore* è *Numerico*;       
-> *Valore Unità di misura*: indica l'unità di misura dei valori;           
-> *Valore nominale*: indica il valore numerico che deve avere la prova;      
-> *Limite minimo* / *Limite massimo*: indicano il limite minimo e massimo di errore che può avere la prova, in percentuale o valore assoluto in base al flag *%*; il *Limite minimo* va sottratto al *Valore nominale*, mentre il *Limite massimo* va sommato;       
-> *L. min (toll-/+)* / *L. Max (toll-/+)*: indica le tolleranze sui limiti minimo e massimo che si aggiungono alle tolleranze precedenti; può essere presente per esempio l'incertezza sull'unità di misura; è un valore percentuale;                
-> *%*: indica se i valori sono espressi in percentuale o sono assoluti;               
-> *Tipo controllo prova*: indica il tipo di controllo della prova;        
-> *Frequenza*: indica la frequenza del controllo;       
-> *Strumento di misura*: indica lo strumento utilizzato, nel caso siano presenti valori da rilevare; è composto da un Codice/Categoria;      
-> *Valore rilevato*: indica il valore rilevato (viene utilizzato se ho un valore puntuale);      
-> *Media valori rilevati*: indica la media dei valori rilevati (viene valorizzato in base ai valori inseriti nella tabella **Rilevazione valori multipli**);      
-> *Esito*: indica l'esito della prova e viene determinato in automatico in base ai parametri inseriti;       
-> *Quantità non conforme*: indica la quantità che è stata rilevata non conferme;        
-> *Magazzino*: indica il magazzino in cui sono presenti gli articoli non conformi; questo valore viene riportato automaticamente in base a quanto indicato nel *Tipo di controllo articolo*;                    
-> *Causale magazzino per articoli non conformi*: indica la causale con la quale saranno scaricati gli articoli non conformi;questo valore viene riportato automaticamente in base a quanto indicato nel *Tipo di controllo articolo*. Questa movimentazione viene effettuata al momento della registrazione della dichiarazione di produzione;                    
-> *Note*: permette di inserire una nota libera.       
+> *Secvență*: indică secvența testelor care trebuie efectuate;          
+> *Tip de test*: reprezintă codul testului care trebuie efectuat;         
+> *Descriere tip de test*: indică descrierea testului care trebuie efectuat;           
+> *Categorie instrument*: reprezintă categoria instrumentului utilizat;         
+> *Tip valoare*: indică dacă valoarea este de tip *Text*, *Da/Nu* sau *Numeric*;      
+> *Tip limită*: permite indicarea unui *Tip de limită*; este activ doar dacă *Tipul valorii* este *Numeric*;       
+> *Valoare unitate de măsură*: indică unitatea de măsură a valorilor;           
+> *Valoare nominală*: indică valoarea numerică pe care trebuie să o aibă testul;      
+> *Limită minimă* / *Limită maximă*: indică limitele minime și maxime de eroare pe care le poate avea testul, în procente sau valoare absolută, în funcție de flag-ul *%*; *Limita minimă* se scade din *Valoarea nominală*, iar *Limita maximă* se adaugă;       
+> *L. min (tol-/+)* / *L. Max (tol-/+)*: indică, procentual, toleranțele asupra limitelor minime și maxime care se adaugă toleranțelor precedente; poate fi prezentă, de exemplu, incertitudinea asupra unității de măsură;      
+> *%*: indică dacă valorile sunt exprimate în procente sau sunt absolute;               
+> *Tip control test*: indică tipul controlului testului;        
+> *Frecvență*: indică frecvența controlului;       
+> *Instrument de măsură*: indică instrumentul utilizat, în cazul în care există valori de constatat; este compus dintr-un Cod/Categorie;      
+> *Valoare constatată*: indică valoarea măsurată;      
+> *Media valorilor constatate*: indică media valorilor măsurate (se completează pe baza valorilor introduse în tabelul **Constatare multiplă valori**);      
+> *Rezultat*: indică rezultatul testului și este determinat automat, în funcție de parametrii introduși;       
+> *Cantitate neconformă*: indică valoarea care a fost identificată drept neconformă;        
+> *Gestiune*: indică gestiunea în care se află articolele neconforme; această valoare este preluată automat în funcție de cât este indicat în *Tipul control articol*;                    
+> *Șablon de gestiune pentru articole neconforme*: indică șablonul cu care vor fi descărcate articolele neconforme; această valoare este preluată automat pe baza a ceea ce este indicat în *Tip control articol*. Această mișcare de stoc se face în momentul înregistrării declarației de producție;                    
+> *Note*: permite introducerea unei note libere.       
 
-La tabella **Rilevazione valori multipli** viene utilizzata nel caso in cui siano rilevati più valori e questi concorreranno a determinare la *Media valori rilevati*.
-Questa si compone delle seguenti colonne:
-> *Sequenza*: indica la sequenza dei valori rilevati;      
-> *Posizione*: è un campo descrittivo che permette di indicare in quale posizione è stata effettuata la misurazione;       
-> *Strumento di misura*: indica lo strumento utilizzato per quella rilevazione;            
-> *Valore rilevato*: indica il valore rilevato;            
-> *Note*: permette di inserire una nota libera.  
+#### Constatare multiplă valori
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources). 
+Tabelul este utilizat în cazul în care sunt constatate mai multe valori care vor contribui la determinarea *Mediei valorilor constatate*.  
+> *Secvență*: indică secvența valorilor măsurate;      
+> *Poziție*: este un câmp descriptiv care permite indicarea poziției în care a fost efectuată măsurarea;       
+> *Instrument de măsură*: indică instrumentul utilizat pentru acea măsurare;            
+> *Valoare constatată*: indică valoarea măsurată;            
+> *Note*: permite introducerea unei note libere.  
+ 
 
-Maggiori dettagli sull'area relativa alla gestione della qualità sono presenti in [Qualità](/docs/quality/quality-intro).          
+Mai multe detalii despre aria dedicată gestionării calității se găsesc în [Calitate](/docs/quality/quality-intro).          
 
-### Tab Lotti e S/N
+### Loturi și SN
 
-*Pulsanti specifici*:
+#### Butoane specifice
 
-> *Genera*: permette di generare i lotti e i serial number;        
-> *Elimina*: permette di eliminare il lotto / serial number selezionato.       
+> *Generează*: permite generarea loturilor și a numerelor de serie;        
+> *Șterge*: permite ștergerea lotului / numărului de serie selectat.       
 
-In questo tab è possibile visualizzare tutti gli articoli realizzati con l'indicazione delle relative quantità prodotte e scartate; inoltre, attraverso le apposite griglie è possibile inserire / modificare le informazioni relative ai *Lotti* e *Serial number*.         
+În acest tab este posibilă vizualizarea tuturor articolelor realizate, cu menționarea cantităților produse și rebutate. De asemenea, în tabelele corespunzătoare se pot introduce/modifica informațiile referitoare la *Loturi* și *Numere de serie*.         
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+### Etichete
 
-### Tab Etichette
+#### Butoane specifice
 
-*Pulsanti specifici*:
+> *Nou*: permite crearea unei linii pentru introducerea unei noi etichete;          
+> *Șterge*: permite ștergerea liniei etichetei selectate;       
+> *Nouă UdI*: permite regenerarea codului UdI selectat;      
+> *Tipărește selecția*: permite tipărirea doar a etichetelor selectate;       
+> *Tipărește tot*: permite tipărirea tuturor etichetelor.          
 
-> *Nuova*: permette di creare una riga per l'inserimento una nuova etichetta;          
-> *Cancella*: permette di cancellare la riga dell'etichetta selezionata;       
-> *Nuova UDC*: permette di rigenerare il codice dell'UDC selezionata;      
-> *Stampa selezione*: permette di stampare solo le etichette selezionate;       
-> *Stampa tutto*: permette di stampare tutte le etichette.          
+#### Etichete  
+În acest tab sunt create automat etichetele aferente articolelor produse.  
+Cantitatea de articole pentru fiecare etichetă este determinată de informațiile introduse în registrul articolului, după cum urmează:
+1. Tab *Ambalare*: consideră UdI și cantitatea introduse în linia cu flag-ul *Unitate de încărcare obligatorie* activ;       
+2. Tab *Greutate/Dimensiuni*: consideră UdI și cantitatea introduse în câmpurile *Tip UDI* și *Număr articole pe UDI*;    
+3. Tab *Greutate/Dimensiuni* > *Număr colete*: consideră cantitatea introdusă în *Articole existente într-un colet*; în acest caz nu va fi propusă UdI.
 
-Nel tab **Etichette** vengono create automaticamente le etichette inerenti agli articoli prodotti.
-La quantità di articoli per ciascuna etichetta è determinata dalle informazioni inserite nell'anagrafica articolo come segue:
-1. Tab *Confezionamento*: considera l'UDC e la quantità inserite nella riga con il flag "Unità di carico obbligatoria" attivo;       
-2. Tab *Peso/Dimensioni*: considera l'UDC e la quantità inserite nei campi *Tipo unità di carico* e *Numero articoli per unità di carico*;    
-3. Tab *Peso/Dimensioni* > *Numero colli*: considera la quantità inserita in *Articoli presenti in un collo*; in questo caso non verrà proposta l'UDC.
+În plus, operatorul poate introduce manual sau prin câmpul *Cod de bare* *Loturi* și *Numere de serie*, dacă este necesar.      
+Câmpul **Stare raport** poate lua valorile *Nelistat*, *Listat* sau *Retipărit* în funcție de numărul de ori în care eticheta a fost tipărită.       
 
-Inoltre, l'operatore potrà inserire manualmente o tramite il campo *Codice barcode* *Lotti* e *Serial number* se necessari.      
-Il campo **Stato stampa** può assumere i valori di *Non stampato*, *Stampato* o *Ristampato* in base al numero di volte che l'etichetta è stata stampata.
+### Materiale  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+În tabul **Materiale** sunt redate automat materialele consumate, pe baza cantității articolului părinte care urmează să fie produs și a listei sale de materiale. Doar în cazul în care este activ flag-ul **Dichiarazione quantità materiale obbligatoria** în tab *Generale* din [Resurse de producție](/docs/production/mes/production-resources), materialul va fi propus evidențiat cu galben și cu cantitatea zero, iar operatorul va fi obligat să îl introducă manual.   
+De asemenea, este posibilă indicarea cantităților rebutate pentru fiecare material în parte, inclusiv gestiunea și șablonul rebuturi; prin intermediul tabelelor corespunzătoare pot fi introduse / modificate informații referitoare la *Loturi* și *Numere de serie* aferente fiecărui material selectat.   
 
-### Tab Materiali
+### Echipă 
 
-Nel tab **Materiali** vengono riportati automaticamente i materiali consumati in base alla quantità dell'articolo padre da produrre e alla sua distinta base; solo nel caso in cui sia attivo il flag **Dichiarazione quantità materiale obbligatoria** presente nel tab *Generali* della gestione delle [Risorse di produzione](/docs/production/mes/production-resources), il materiale verrà proposto evidenziato in giallo con quantità zero e l'operatore sarà costretto ad inserirlo manualmente.   
-Inoltre, è possibile indicare le quantità scartate di ogni singolo materiale con anche magazzino e causale di scarto; attraverso le apposite griglie è possibile inserire / modificare le informazioni relative ai *Lotti* e *Serial number* relativi al singolo materiale selezionato.            
+#### Butoane specifice  
+> *Intră în echipă*: permite introducerea unuia sau mai multor operatori în echipa de lucru;        
+> *Ieși din echipă*: permite scoaterea unuia sau mai multor operatori din echipa de lucru;      
+> *Substituie operator*: permite înlocuirea unui operator (activ) cu un altul, menținând datele/orele de intrare și ieșire din echipă;        
+> *Șterge din echipă*: permite ștergerea liniei aferente operatorului selectat.        
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+#### Câmpuri specifice  
+> **Listă operatori activi**: permite introducerea și vizualizarea operatorilor activi în declarația de producție; primul operator introdus primește automat flag-ul de *Șef de echipă* (care poate fi modificat manual);            
+> **Listă operatori inactivi**: permite vizualizarea operatorilor care nu mai sunt activi (care au lucrat la această sau la aceste faze în declarațiile anterioare).
+  
 
-### Tab Squadra
+### Analiză
 
-*Pulsanti specifici*:
+Tabul este dedicat vizualizării și consultării datelor referitoare la performanțele activității de producție; acesta este compus din trei secțiuni:
+- Diagrame OEE
+- Diagrame tip bară: **Analiza cantitativă** și **Analiză timp**
+- Tabele: **Valori cantitate** și **Valori timp** 
 
-> *Entra in squadra*: permette di inserire un o più operatori all'interno della squadra di lavoro;        
-> *Esci da squadra*: permette di fare uscire un o più operatori dalla squadra di lavoro;      
-> *Sostituisce operatore*: permette di sostituire un operatore (attivo) con un altro mantenendo le date/ore di ingresso e uscita dalla squadra;        
-> *Rimuovi da squadra*: permette di rimuovere la riga relativa all'operatore selezionato.        
+**OEE**, **Overall Equipment Effectiveness** (Eficiența generală a resursei productive) este un indicator de performanță (KPI) pentru măsurarea capacității de producție a unei companii de producție.
 
-Il tab **Squadra** si compone di due sezioni:
-> Elenco operatori attivi: permette di inserire e visualizzare gli operatori attivi nella dichiarazione di produzione; il primo operatore inserito assume il flag di *Capo squadra* (che può essere cambiato manualmente);            
-> Elenco operatori non attivi: permette di visualizzare gli operatori non più attivi (che hanno lavorato su questa o queste fasi nelle dichiarazioni precedenti).
-
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
-
-### Tab Analisi
-
-Il tab **Analisi** è dedicato alla visualizzazione e consultazione dei dati relativi alle performance dell'attività di produzione; questo si compone di tre sezioni:
-- Diagrammi OEE
-- Diagrammi a barre: **Analisi quantità** e **Analisi tempo**
-- Tabelle: **Valori quantità** e **Valori tempi** 
-
-L'**OEE**, **Overall Equipment Effectiveness** (Efficienza complessiva della risorsa produttiva) è un indice di performance (KPI) per misurare la capacità produttiva di una azienda di produzione.
-
-Il valore **OEE** è costituito dai seguenti tre fattori:
-- **Disponibilità operativa (Availability)**: percentuale del tempo lavorato (B) rispetto al tempo disponibile (A).
-Si utilizza il rapporto tra il tempo disponibile di lavoro dell'impianto (A) rispetto al reale tempo in cui l'impianto ha prodotto (B).
-- **Tempi lavorazione (Performance) - Efficienza**: percentuale tra gli articoli realmente lavorati (D) rispetto agli articoli teoricamente lavorabili (C).
-Nella pianificazione vengono calcolati gli articoli lavorabili a regime ottimale (C), eventuali riduzioni di tali performance indicano un calo produttivo (D).
-- **Qualità del prodotto (Quality)**: è il rapporto percentuale tra gli articoli conformi (F) rispetto agli articoli prodotti (E).
-Si evidenziano in tal modo cali produttivi relativi a scarti o rilavorazioni che incidono sull'inefficienza generale.
-- **Efficienza complessiva (OEE)**: deriva dal calcolo dalle tre precedenti analisi ed è dato da: 
+Valoarea **OEE** este alcătuită din următorii trei factori:
+- **Disponibilitate operațională (Availability)**: procentul de timp lucrat (B) raportat la timpul disponibil (A).
+Se utilizează raportul dintre timpul disponibil de lucru al instalației (A) și timpul real în care instalația a produs (B).
+- **Timpi de lucru (Performance) - Eficiență**: procentul dintre articolele prelucrate efectiv (D) și articolele care teoretic se pot prelucra (C).
+În planificare sunt calculate articolele care se pot prelucra în regim optim (C). Orice reducere a acestor performanțe indică o scădere a productivității (D).
+- **Calitate produs (Quality)**: este raportul procentual dintre articolele conforme (F) și articolele produse (E).
+Astfel apar scăderi de productivitate legate de rebuturi sau prelucrări ulterioare care influențează eficiența în general.
+- **Eficiența globală (OEE)**: rezultă din calculul celor trei analize anterioare și este dată de: 
 
 OEE = Availability x Performance x Quality x 100 = B/A x D/C x F/E x 100
 
-L'indice di **Efficienza complessiva** può essere calcolato con o senza l'attrezzaggio.
+Indicele de **Eficiență globală (OEE)** poate fi calculat cu sau fără montaj.
 
-Nella sezione dei diagrammi a barre sono presenti i diagrammi **Analisi quantità** e **Analisi tempo** nei quali è possibile visualizzare i dati di quantità e tempi preventivi e quelli  
-consuntivi dichiarati fino a quel momento.      
+În secțiunea diagramelor tip bară există diagramele **Analiza cantitativă** și **Analiză timp**, în care este posibilă vizualizarea datelor cantității și timpului estimate, precum și a celor efectiv declarate până în acel moment.      
 
-Nelle tabelle presenti nell'ultima sezione, è ancora possibile visualizzare i dati di quantità e tempi preventivi e quelli consuntivi dichiarati fino a quel momento, ma in questo caso sottoforma di dati tabellari.
+În tabelele din ultima secțiune, este posibilă vizualizarea datelor cantității și timpului estimate, precum și a celor declarate până în momentul respectiv, dar sub formă de date tabelare.
 
-I dati riportati in tutte le sezioni del tab **Analisi** sono relativi alle fasi selezionate, nel caso in cui non sia selezionata nessuna delle fasi i dati riportatati rappresenteranno il totale di tutte le fasi presenti nella griglia *Fasi in lavoro*.
+Datele afișate în toate secțiunile tabului **Analize** se referă la fazele selectate. Dacă nu este selectată nicio fază, datele afișate vor reprezenta totalul tuturor fazelor din Tabelul *Faze în lucru*.
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+### Documente și Instrucțiuni operative  
 
-### Tab Documenti e Istruzioni operative
+Acest tab este compus din secțiunile **Documente** și **Instrucțiuni operative**.
 
-Questo tab si compone delle sezioni **Documenti** e **Istruzioni operative**.
+#### Documente  
 
-La sezione **Documenti**, a sua volta si suddivide in:
-> **Documenti allegati alla fase selezionata**: permette di visualizzare tutti i documenti allegati all'*Anagrafica articolo*, all'*Ordine cliente*, alla *Commessa di produzione*, all'*Ordine di produzione*, in accordo con quanto indicato nella tab *Gestione documentale* presente nelle [Risorse di produzione](/docs/production/mes/production-resources);       
-> **Documenti allegati alla segnalazione della fase selezionata**: permette di consultare o allegare direttamente alla dichiarazione dei nuovi documenti anche tramite drag & drop;       
-> **Istruzioni operative**: permette di visualizzare tutti i documenti allegati alla fase del ciclo di produzione.          
+> **Documente atașate fazei selectate**: permite vizualizarea tuturor documentelor atașate la *Registru articol*, la *Ordin client*, la *Comanda de producție*, la *Ordin de producție*, în conformitate cu ceea ce este indicat în tabul *Document Management* din [Resurse de producție](/docs/production/mes/production-resources);  
+> **Documente atașate semnalarii fazei selectate**: permite consultarea sau atașarea directă la declarație a documentelor noi, inclusiv prin drag & drop;       
+> **Instrucțiuni operative**: permite vizualizarea tuturor documentelor atașate fazei ciclului de producție.        
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+### Note
+         
+> **Lista note (selectați o fază)**: permite consultarea și vizualizarea notelor aferente fazei selectate; notele afișate în acest tabel sunt preluate direct din fazele ciclului de lucru, mai exact din tabul *Note*;                
+> **Lista note semnalare**: permite introducerea și consultarea notelor aferente declarației curente.     
 
-### Tab Note
+### Semnalări anterioare 
 
-Il tab si compone di due sezioni:            
-> **Elenco note (seleziona una fase)**: permette di consultare e visualizzare le note relative alla fase selezionata; le note che vengono visualizzate in questa tabella sono prese direttamente dalle fasi del ciclo di lavoro e più precisamente dal tab *Annotazioni*;                
-> **Elenco note segnalazione**: permette di inserire e consultare le note relative alla dichiarazione in corso.     
+Acest tab permite vizualizarea tuturor semnalărilor anterioare aferente fazei selectate.  
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+### ExtraData
 
-### Tab Segnalazioni precedenti
+> *Lista extra data (selectați o fază)*: permite gestionarea extra datelor aferente fazei selectate;       
+> *Lista extra data semnalare*: permite gestionarea extra datelor aferente declarației care se execută.       
 
-Questo tab permette di visualizzare tutte le segnalazioni precedenti relative alla fase selezionata.
-
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
-
-### Tab ExtraData
-
-Questo tab si compone di due griglie:
-> *Elenco extra data (selezionare una fase)*: permette di gestire gli extra data relativi alla fase selezionata;       
-> *Elenco extra data segnalazione*: permette di gestire gli extra data relativi alla dichiarazione che si sta eseguendo.       
-
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
-
-
+Funcționarea și layout-ul formului pot fi modificate în [Resurse de producție](/docs/production/mes/production-resources).
