@@ -1,44 +1,44 @@
 ---
-title: Creazione e gestione insoluti
+title: Kreiranje i upravljanje potraživanjima
 sidebar_position: 6
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Insoluto** e permette la creazione di una *nuovo* insoluto.
+Forma se nalazi na putanji **Riznica > Potraživanja > Kreiraj** potraživanje i omogućuje kreiranje *novog* potraživanja.
 
-## Come creare un Insoluto
+## Kako kreirati potraživanje
 
-1. Dopo l'apertura della form, sebbene sia possibile compilare i campi manualmente, **utilizza** il comando ***Acquisizione dati*** (nella ribbon bar) per richiamare l'effetto che risulterà insoluto, tramite l'apposita finestra di dialogo e ricerca che viene aperta.
+1. Nakon otvaranja forme, iako je moguće ručno popuniti polja, **Korišteno** naredbu ***Preuzimanje podataka*** (na traci izbornika) za dohvat potraživanja koji će postati efekt, putem odgovarajućeg dijaloškog prozora i pretrage koja se otvara.
 
-2. Dalla finestra di dialogo che è stata aperta, seleziona l'effetto, dopo aver utilizzato eventualmente i filtri presenti, e premi **Seleziona**. Tutti i dettagli dell'insoluto vengono compilati automaticamente, quali ad esempio importo, debitore, numero , tipo effetto ecc.... leggendoli dall'effetto stesso.
+2. Iz dijaloškog prozora koji se pojavi, odaberi efekt, eventualno koristeći dostupne filtre, i pritisni **Označi**. Svi detalji potraživanja će se automatski ispuniti, kao što su iznos, dužnik, broj, tip efekta itd., čitajući ih iz samog efekta.
 
-3. **Aggiungi** manualmente le **Spese** Bancarie e gli altri valori nel tab **Nota di addebito** per poter procedere successivamente alla contabilizzazione ed al riaddebito al debitore anche di questi importi. Alcuni di questi campi possono essere automatizzati, quali ad esempio gli interessi moratori e le spese bancarie, configurando opportunamente l'anagrafica della banca di presentazione e i [**parametri generali del modulo**](/docs/configurations/parameters/treasury/unpaids-parameters) insoluti (campo Tipo Interesse)
+3. **Dodaj** ručno **Troškove** banke i druge vrijednosti u kartici **Obavijest o terećenju** kako bi se kasnije moglo pristupiti knjiženju i naknadnom terećenju dužnika za ove iznose. Neka polja mogu biti automatizirana, poput zakonskih kamata i bankovnih troškova, pravilnim podešavanjem bankovne evidencije i [**općih parametara modula**](/docs/configurations/parameters/treasury/unpaids-parameters) potraživanja (polje Tip kamate).
 
-4. **Salva** l'insoluto creato
+4. **Spremi** kreirano potraživanje
 
-La form **Gestione insoluto** presenta una testata fissa con i dati principali dell'insoluto e poi, nella parte inferiore, è suddivisa in 4 tab di dettaglio più un quinto per allegare documenti:
+Obrazac **Upravljanje neplaćenim** potraživanjima prikazuje fiksni zaglavni dio s osnovnim podacima o potraživanju, a donji dio je podijeljen u 4 detaljna taba i peti za dodavanje dokumenata:
 
-## 1. Testata fissa
+## 1. Fiksno zaglavlje
 
-Contiene i dati generali dell'insoluto, in particolare: 
+Sadrži opće podatke potraživanja, posebno: 
 
-- il campo delle **spese bancarie** per un'ulteriore modifica manuale 
-- il **numero** dell'insoluto che è uguale al numero dell'effetto d'origine. 
-- vari **flag di stato** a seconda delle operazioni effettuate sull'insoluto, quali ad esempio al contabilizzazione, la stampa , l'incasso definitivo delle somme dovute ecc...
+- polje za **bankarske troškove** koje se može dodatno ručno mijenjati
+- **broj** potraživanja koji je jednak broju izvornog efekta 
+- razne **statusne zastavice** ovisno o operacijama izvršenim nad potraživanjem, kao što su knjiženje, ispis, konačno naplaćivanje duga i slično
 
-### 1.1 Nota debito
+### 1.1 Obavijest o terećenju
 
-E' gestita per quanto riguarda: 
-- il calcolo interessi con relativo **tasso** e **interessi di mora** (sulla base del tipo tasso inserito nei parametri del modulo e il differenziale di **giorni** tra data scadenza e data creazione dell'insoluto).
-- **Spese amministrative** di rivalsa (da compilare manualmente) che saranno riaddebitate con l'emissione not di addebito
-- **Recupero bolli** (da compilare manualmente) che saranno riaddebitate con l'emissione not di addebito
+Upravlja se za:
+- izračun kamata s pripadajućom **Stopa** i **zakonskim zateznim kamatama** (temeljem vrste kamatne stope unesene u parametre modula i razlike u *danima* između datuma dospijeća i datuma kreiranja potraživanja).
+- **Naknada za administrativne troškove** (ručno se unose) koji će biti terećeni ponovo izdavanjem zadužnice
+- **Povrat ovjere** (ručno se unose) koji će također biti terećeni ponovo izdavanjem zadužnice
 
-### 1.2 Presentazione
-Visualizza gli estremi della distinta di presentazione associata all'effetto di origine.
+### 1.2 Prezentacija
+Prikazuje podatke o listi prezentacije povezanoj s izvornim efektom.
 
-### 1.3 Riferimento insoluto
+### 1.3 Referenca potraživanja
 
-Questo tab visualizza le partite create con la contabilizzazione dell'insoluto, con i pagamenti associati.
+Ovaj tab prikazuje stavke stvorene knjiženjem potraživanja, zajedno s povezanim uplatama.
 
-### 1.4 Rif. doc originale
+### 1.4 Referenca izvornog dokumenta
 
-Visualizza i riferimenti dei documenti (partite/fatture) di origine degli effetti creati.
+Prikazuje reference na dokumente (stavke/fakture) koji su osnova za nastanak efekata.
