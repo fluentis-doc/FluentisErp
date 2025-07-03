@@ -1,5 +1,5 @@
 ---
-title: Causales contables. VIDEO TUTORIALS (Causali contab. VIDEO TUTORIALS)
+title: Causales contables VIDEO TUTORIALS 
 sidebar_position: 1
 ---
 
@@ -11,10 +11,10 @@ Mientras que es completamente necesaria para quienes desean configurar un entorn
 
 A través de una correcta configuración y aplicación de estos procedimientos, el usuario de ERP puede optimizar el flujo de contabilización automática, reduciendo los errores manuales y mejorando la trazabilidad de las operaciones contables.  
 
-:::important Ver También (Vedi Anche)  
-[**VIDEO TUTORIALS SOBRE LAS CAUSALES CONTABLES (VIDEO TUTORIALS SULLE CAUSALI CONTABILI)**](/docs/video/finance/intro)  
+:::important Ver También   
+[**VIDEO TUTORIALS SOBRE LAS CAUSALES CONTABLES**](/docs/video/finance/intro)  
 :::  
 
-:::tip[Más información (Maggiori informazioni)]  
-Consulte la página sobre el [**Inserción de una nueva causal (Inserimento di una nuova causale)**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)  
+:::tip[Más información]  
+Consulte la página sobre el [**Inserción de una nueva plantilla**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)  
 :::

@@ -1,12 +1,12 @@
 ---
-title: voci di spesa
+title: Elementos de carga
 sidebar_position: 31
 ---
 
-La definición de la tabla de cuentas de gasto permite codificar cuentas que se asociarán al plan de cuentas con fines estadísticos.
+La definición de la tabla de elementos de carga permite codificar cuentas que se asociarán al plan de cuentas con fines estadísticos.
 
-#### Campos específicos (Campi specifici)
+#### Campos específicos 
 
-**codice**: código de cuentas de gasto.  
+**Código**: código de elementos de carga.  
 
-**descrizione**: descripción de cuentas de gasto.
+**Descripción**: descripción de elementos de carga.
