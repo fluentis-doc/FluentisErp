@@ -1,46 +1,46 @@
 ---
-title: Distinte
+title: Popisi
 sidebar_position: 3
 ---
 
-La form della ricerca distinte 
-- si trova in Tesoreria > Portafoglio Effetti > Effetti > Distinte
+Forma za pretraživanje lista: 
+- nalazi se u Riznica > Portfelj vrijednosnih papira > Vrijednosni papiri > Liste prezentacije
 
-- permette all'utente di ricercare le distinte di presentazione emesse precedentemente con lo scopo di visualizzarle, modificarle ed eventualmente cancellarle.
-
-
-## Pulsanti della Ribbon Bar
-
-> - **Ricerca distinte:** Pulsante per ricercare le distinte secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo distinte:** Richiama la form per inserire una nuova distinta.
-> - **Modifica distinte:** Permette di modificare una distinta precedentemente inserita.
-> - **Visualizzazione distinte:** Visualizza una distinta precedentemente inserita.
-> - **Cancella distinte:** Cancella una distinta precedentemente inserita.
-
-> Esecuzione della **stampa** (*Anteprima* oppure *Stampa*) *Distinta di presentazione*: lancia, relativamente alle distinte selezionate con il mouse, (tenendo premuto Ctrl si possono selezionare più distinte contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-presentation-lists) del modulo
-
-## Filtri nella testata della form
-
-- **Tipo:** filtra per tipo di distinta, dato a sua volta definito nella tabella [***Tipi presentazione distinte effetti***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
-
-- **Banca:** filtra per conto **Banca Conto Corrente** impostato sulla testata distinta
-
-- **DA - A Numero distinta:** filtra per numero distinta, dato impostato al numeratore automatico in fase di creazione della distinta
-
-- **DA / A data presentazione:** filtra per data di presentazione, campo ella testata distinta proposto generalmente pari ad "*oggi*" ma può essere variato dall'utente
-
-- **Divise:** filtra per divisa, dato di testata che si riferisce alla divisa degli effetti contenuti in distinta, ad esempio per estrarre solo le divise denominate in dollari.
-
-- **Stampato:** se attivato, questo flag estrae solo distinte stampate (o comunque con flag *stampato* "true")
-
-- **Contabilizzata:** se attivato, questo flag estrae solo distinte contabilizzate attraverso [l'apposita procedura](/docs/treasury/bills-holding/accounting/lists-accounting) (o comunque con flag *contabilizzata* "true")
+- omogućuje korisniku pretraživanje prethodno kreiranih lista prezentacije u svrhu njihovog pregleda, izmjene ili eventualnog brisanja.
 
 
-## Griglia dei risultati
+## Gumbi na traci izbornika
 
-In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
+> - **Pretraživanje lista:** Gumb za pretraživanje lista prema filtrima definiranima u zaglavlju forme.
+> - **Nova lista:** Otvara formu za unos nove liste.
+> - **Izmjena liste:** Omogućuje izmjenu prethodno unesene liste.
+> - **Prikaz liste:** Prikazuje prethodno unesenu listu.
+> - **Brisanje liste:** Briše prethodno unesenu listu.
 
-Presenta inoltre il **Totale** della distinta (somma gli importi degli effetti in distinta)
+> Izvršavanje **ispis** (*Pregled* ili *Ispis*) *Liste prezentacije*: pokreće, za selektirane liste (može ih se odabrati više istovremenim pritiskom na Ctrl), istoimeni ispis dostupan u [**izborniku ispisa**](/docs/treasury/bills-holding/reports/print-presentation-lists) modula.
+
+## Filtri u zaglavlju forme
+
+- **Vrsta:** filtrira prema vrsti liste, definiranoj u tablici [***Tipovi prezentacije popisa vrijednosnih papira***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+
+- **Banka:** filtrira prema **Tekući račun banke** postavljenom u zaglavlju liste.
+
+- **OD - DO Broj liste:** filtrira prema broju liste, vrijednosti generiranoj automatskim brojačem prilikom kreiranja liste.
+
+- **OD / DO datum prezentacije:** filtrira prema datumu prezentacije, podatku iz zaglavlja liste koji je po defaultu postavljen na *danas*, ali ga korisnik može promijeniti.
+
+- **Valute:** filtrira prema valuti, podatku iz zaglavlja koji se odnosi na valutu vrijednosnih papira unutar liste, npr. za prikaz samo onih u dolarima.
+
+- **Ispisano:** ako je označeno, ovaj filter prikazuje samo ispisane liste (ili one s oznakom *ispisano* „true”).
+
+- **Knjiženo:** ako je označeno, ovaj filter prikazuje samo knjižene liste putem [odgovarajuće procedure](/docs/treasury/bills-holding/accounting/lists-accounting) (ili one s oznakom *knjiženo* „true”)
+
+
+## Tablica rezultata
+
+Ova forma prikazuje ista polja kao i filtri detaljno opisani gore.
+
+Također prikazuje **Ukupan iznos** liste (zbroj iznosa vrijednosnih papira unutar liste).
 
 
 
