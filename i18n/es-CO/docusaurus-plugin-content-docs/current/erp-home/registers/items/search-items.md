@@ -1,11 +1,11 @@
 ---
-title: ricerca articoli
+title: Buscar artículos
 sidebar_position: 1
 ---
 
-**Introducción (Introduzione)**: [Identificación de productos y sus partes (Identificazione dei prodotti e relative parti)](/docs/erp-home/registers/items/master-item-intro) 
+**Introducción**: [Identificación de productos y sus partes](/docs/erp-home/registers/items/master-item-intro) 
 
-:::important ¿Para qué sirve? (A cosa serve)
+:::important ¿Para qué sirve? 
 El filtro del registro de artículos de Fluentis es una función clave que permite buscar, visualizar y gestionar los artículos dentro del sistema.  
 Organizado en una sección para ingresar los criterios de búsqueda y una cuadrícula para los resultados, permite realizar búsquedas dirigidas a través de varios parámetros como código, clase, categoría comercial o proveedor.  
 También es posible realizar búsquedas más avanzadas, por ejemplo, para identificar artículos en agotamiento o archivados, mejorando la eficiencia en la gestión del almacén.
@@ -20,11 +20,11 @@ La sección **Lotes y números de serie** permite filtrar mostrando solo los art
 
 Veremos en detalle la explicación de estos indicadores a medida que vayamos analizando las diversas pestañas que componen cada artículo en los correspondientes artículos de documentación, donde se indican sus características asociadas.
 
-Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
+Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **buscar** para visualizar los resultados en la cuadrícula de resultados.
 
-Para abrir los detalles de un artículo, solo hay que seleccionarlo y hacer doble clic con el ratón, o hacer clic en el botón **modifica** (permite entrar en los detalles y modificarlos) o en el botón **visualizza** (permite entrar en los detalles y visualizarlos, pero sin poder modificarlos).
+Para abrir los detalles de un artículo, solo hay que seleccionarlo y hacer doble clic con el ratón, o hacer clic en el botón **modificar** (permite entrar en los detalles y modificarlos) o en el botón **ver** (permite entrar en los detalles y visualizarlos, pero sin poder modificarlos).
 
 *Botones específicos*:
 
-> **nuovo**: el botón permite crear un nuevo artículo;  
-> **modifica massiva**: el botón permite, después de seleccionar una serie de artículos que necesitan la misma modificación, ingresarla y aplicarla de forma masiva, sin necesidad de modificar un artículo a la vez.
+> **nuevo**: el botón permite crear un nuevo artículo;  
+> **cambio masivo**: el botón permite, después de seleccionar una serie de artículos que necesitan la misma modificación, ingresarla y aplicarla de forma masiva, sin necesidad de modificar un artículo a la vez.

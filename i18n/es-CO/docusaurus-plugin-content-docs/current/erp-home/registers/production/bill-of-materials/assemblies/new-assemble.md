@@ -1,16 +1,16 @@
 ---
-title: nuova distinta base
+title: Nuevo listado de materiales
 sidebar_position: 1
 ---
 
-**Introducción (Introduzione)**: [Lista de Materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
+**Introducción**: [Lista de Materiales](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
 
-El procedimiento para crear un **nuovo** se abre a través de la ruta:
+El procedimiento para crear un **nuevo** se abre a través de la ruta:
 
-**Producción (Produzione) > Listas de Materiales (Distinte Base) > Listas de Materiales (Distinte Base)**, haciendo clic en el botón presente en la barra de herramientas (ribbon bar); 
+**Producción > Listas de Materiales > Listas de Materiales**, haciendo clic en el botón presente en la barra de herramientas; 
 
 o 
 
-**Producción (Produzione) > Listas de Materiales (Distinte Base) > Nueva lista de materiales (Nuova distinta base)**
+**Producción > Listas de Materiales > Nueva lista de materiales**
 
-Con ambos procedimientos se abrirá el formulario [Lista de Materiales (Distinta Base)](structure-management) compuesto por una sección en la que se definirán las características obligatorias del conjunto y por una sección compuesta por varias pestañas que agrupan las características específicas.
+Con ambos procedimientos se abrirá el formulario [Lista de Materiales](structure-management) compuesto por una sección en la que se definirán las características obligatorias del conjunto y por una sección compuesta por varias pestañas que agrupan las características específicas.

@@ -3,7 +3,7 @@ title: Nuevo artículo
 sidebar_position: 1.1
 ---
 
-**Introducción (Introduzione)**: [Identificación de productos y sus partes](/docs/erp-home/registers/items/master-item-intro) 
+**Introducción**: [Identificación de productos y sus partes](/docs/erp-home/registers/items/master-item-intro) 
 
 :::important ¿Para qué sirve? 
 La base de datos de artículos de Fluentis desempeña un papel crucial en la gestión y organización de la información relacionada con los artículos de una empresa. Se presenta como una base de datos central donde se registran y actualizan los detalles de cada producto, permitiendo una visión clara y sistemática de las existencias, los costos y las operaciones de almacén.
@@ -104,7 +104,7 @@ Dentro de esta pestaña se ingresan los centros empresariales (centros de costo)
 Si el parámetro *Gestión de controlling*, presente en la pestaña *Otras configuraciones* de la tabla [**Empresa**](/docs/configurations/tables/general-settings/company) está desactivado, este campo se utiliza para ingresar el centro de costo.  
 :::
 
-**Centro de beneficios**: solo si el parámetro *Gestión de controlling*, presente en la pestaña *Otras configuraciones (Altre impostazioni)* de la tabla **Empresa** está desactivado, será gestionable y servirá para ingresar el centro de beneficios.
+**Centro de beneficios**: solo si el parámetro *Gestión de controlling*, presente en la pestaña *Otras configuraciones* de la tabla **Empresa** está desactivado, será gestionable y servirá para ingresar el centro de beneficios.
 
 ## 4. **Aprovisionamiento**
 
@@ -130,7 +130,7 @@ Si en los parámetros MRP se activa el indicador *Considerar índice de cobertur
 Luego hay dos secciones llamadas:  
 - **Impresoras de etiquetas**: permite elegir las impresoras propuestas por defecto para imprimir las etiquetas de los lotes para los diferentes *Estados de lote*; se podrá elegir entre la impresora para el estado de lote *Único*, *Conforme*, *No conforme*, y *Cuarentena*.  
 
-- **Tipos de informes de etiquetas (Tipi report etichette)**: permite especificar los informes por defecto a imprimir para los lotes en los diferentes *Estados de lote (Stati lotto)*; se podrá elegir informes diferentes según el estado del lote *Único (Unico)*, *Conforme (Conforme)*, *No conforme (Non conforme)*, y *Cuarentena (Quarantena)*.  
+- **Tipos de informes de etiquetas**: permite especificar los informes por defecto a imprimir para los lotes en los diferentes *Estados de lote*; se podrá elegir informes diferentes según el estado del lote *Único*, *Conforme*, *No conforme*, y *Cuarentena*.  
 
 b. En la segunda parte de la ventana, se indican los diferentes almacenes donde se puede encontrar el artículo y, si es necesario, se pueden definir algunos de los datos mencionados anteriormente (stock mínimo/máximo y días para el stock, punto de reabastecimiento y días para el reabastecimiento, impresión de etiqueta única/conforme/no conforme/cuarentena) para cada almacén individual (por ejemplo, el stock mínimo o el stock máximo que se podrá tener de ese artículo en ese almacén específico, y así sucesivamente para el resto de la información).
 
@@ -148,7 +148,7 @@ En esta pestaña se puede asociar al artículo la lista de clientes que lo han a
 
 **Tipo de muestreo**: combo para definir el modo por defecto de muestreo de las muestras de un pedido de producción para ese artículo (por ejemplo, una muestra cada 100 piezas, o 1 muestra cada 3 pedidos, etc.). Los tipos de muestreo se codifican previamente en la tabla en la ruta **Tablas > Logística**.  
 
-Grilla superior:  
+Rejilla superior:  
 **Cliente**: se debe indicar la cuenta/subcuenta y la descripción del cliente;  
 **Lote económico**: se debe indicar el lote económico (la cantidad mínima que el cliente puede adquirir) con la unidad de medida correspondiente;  
 **Artículo cliente**: en esta sección se puede indicar el código y la descripción que el cliente asigna al artículo dentro de su base de datos; al indicar en esta sección su referencia, esta se incluirá en todos los documentos relacionados con ese cliente para ese artículo;  
@@ -159,7 +159,7 @@ Grilla superior:
 **Variante**: en este campo se debe ingresar la posible variante de ese artículo, seleccionándola a través del combo que contiene las variantes previamente codificadas en la tabla **Variantes Artículo**;  
 **Notas**: sección donde se pueden ingresar notas adicionales.  
 
-La grilla inferior puede contener información sobre los [Datos extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata).
+La grilla inferior puede contener información sobre los [Datos extra](/docs/configurations/utility/extra-data/extradata/search-extradata).
 
 #### Botones específicos  
 > **Insertar clientes**: permite ingresar un nuevo cliente;  
@@ -178,11 +178,11 @@ En **Fluentis ERP** no hay parámetros ya definidos que indiquen cómo configura
 El formulario está compuesto por una cuadrícula en la que se puede insertar un **Nuevo** código de barras, mediante el botón **Insertar** presente en la barra de herramientas, o yendo directamente a una nueva fila.  
 En el campo **Tipo de código de barras** se selecciona, a través del combo correspondiente, el tipo de código de barras que se desea codificar y en el campo **Código de barras** se ingresa el código de barras.
 
-:::note Nota (Nota)  
+:::note Nota 
 Al activar el indicador **Exportar administración pública**, presente en la tabla [Tipos de código de barras](https://docs.fluentis.com/FluentisErp/docs/configurations/tables/general-settings/barcode-types/), el control de unicidad del código de barras ingresado se realiza solo a nivel del artículo individual, mientras que si el indicador está desactivado, el control de unicidad del código de barras se realiza a nivel global, es decir, para todos los artículos.  
 :::
 
-#### Botones específicos> **Validación**: al presionar este botón, el sistema verifica que el código cumpla con las normas mencionadas anteriormente respecto a la longitud que debe tener según el tipo de código que se está ingresando;  
+#### Botones específicos > **Validación**: al presionar este botón, el sistema verifica que el código cumpla con las normas mencionadas anteriormente respecto a la longitud que debe tener según el tipo de código que se está ingresando;  
 > **Eliminar códigos de barras**: permite eliminar un código de barras ingresado anteriormente.
 
 ## 9. **Embalaje**
@@ -276,7 +276,7 @@ La ventana se compone de dos secciones:
 **Proveedor**: se indicará la cuenta/subcuenta/descripción del proveedor;  
 **Predeterminado**: este indicador, si está activo, indica el proveedor predeterminado en caso de múltiples proveedores;  
 **Lote económico**: en esta sección se indicará el lote económico mínimo y sus múltiplos para cada proveedor;  
-**Artículo proveedor (Articolo fornitore)**: en esta sección se podrá agregar el código y la descripción que el proveedor utiliza para identificar el artículo;  
+**Artículo proveedor**: en esta sección se podrá agregar el código y la descripción que el proveedor utiliza para identificar el artículo;  
 **Tiempo de aprovisionamiento**: se indicará para cada proveedor la gestión, es decir, el tiempo necesario para que el proveedor reproduzca/adquiera ese artículo, el tiempo de envío y el tiempo total, la suma de los dos datos anteriores que indica el tiempo necesario para reabastecer el stock de material;  
 **Orden de compra**: en esta sección se indicarán para cada proveedor las informaciones relativas a los pedidos de compra ya detalladas anteriormente (U.M, bloqueo de fila, fecha de bloqueo, número máximo de filas, valor máximo, % de tolerancia en cantidad recibida en exceso/difecto);  
 **Productor**: en esta sección se indicará la cuenta y la descripción del productor del material;  
@@ -324,7 +324,7 @@ Dentro de esta pestaña, se irán a definir los parámetros en función del tipo
 
 ### Gestión por lotes
 **Tipo de extracción del lote**: indica si el tipo de extracción es F.I.F.O., por fecha de caducidad o manual (es decir, elegido por el operador);  
-**Tipo de código de lote**: en este caso se selecciona el tipo de código de lote (y las características relacionadas establecidas para crearlo) que se ha definido en la ventana *Tipo código de lotto* y que está dado por la concatenación de varios campos;  
+**Tipo de código de lote**: en este caso se selecciona el tipo de código de lote (y las características relacionadas establecidas para crearlo) que se ha definido en la ventana *Tipo código de lote* y que está dado por la concatenación de varios campos;  
 **Estado inicial del lote**: normalmente, cada lote se caracteriza también por un estado que define su validez. Para ciertos tipos de materiales, como productos alimentarios y farmacéuticos, el estado es obligatorio (por ejemplo, en el ámbito farmacéutico un lote que necesita análisis antes de poder ser utilizado tendrá como estado inicial *en cuarentena* hasta que se completen los análisis); para este tipo de productos, el estado estará acompañado de una fecha de caducidad para evitar la venta y el uso de mercancía caducada. Según el estado del lote, se podrá elegir gestionar de manera Rfid o Rfid único;  
 **Gestionado por RFID**: si se activa, el artículo será gestionado mediante tecnología Rfid (radiofrecuencia) a través de la aplicación;  
 **RFID único**: si se activa, el código RFID asociado al artículo es único para ese artículo;  
@@ -351,7 +351,7 @@ Esta pestaña se activa solo si se ha configurado una [Configuración](/docs/con
 Se gestiona en caso de que sea necesario gestionar las matrices para la combinación de los atributos de un artículo y permite definir las combinaciones posibles para el artículo.  
 Primero es necesario asignar un **Código** identificativo único y una **[Definición de matriz](/docs/configurations/tables/CPQ/matrices-definition)** (que contiene el conjunto de atributos que compondrán la matriz); según la definición seleccionada, en las pestañas siguientes será posible seleccionar solo los [Datos Extra](/docs/configurations/utility/extra-data/extradata/search-extradata) válidos para esta matriz.  
 
-Al moverse a la sección *Valores de dimensión permitidos*, el siguiente paso es seleccionar, uno a uno, los Datos Extra del combo box **Atributo**. Una vez seleccionado el atributo, en la cuadrícula *Resultados disponibles (Risultati disponibili)* se muestran los valores del Extra Data (por ejemplo, si seleccionamos el atributo Talla, en esta cuadrícula se mostrarán los valores del Extra Data: XS, S, M, L, XL, etc.). Una vez seleccionados los valores del atributo que queremos hacer válidos para esta matriz, es necesario arrastrarlos a la cuadrícula *Valores admitidos* para indicar que esos valores serán válidos para las combinaciones de la matriz.  
+Al moverse a la sección *Valores de dimensión permitidos*, el siguiente paso es seleccionar, uno a uno, los Datos Extra del combo box **Atributo**. Una vez seleccionado el atributo, en la cuadrícula *Resultados disponibles* se muestran los valores del Extra Data (por ejemplo, si seleccionamos el atributo Talla, en esta cuadrícula se mostrarán los valores del Extra Data: XS, S, M, L, XL, etc.). Una vez seleccionados los valores del atributo que queremos hacer válidos para esta matriz, es necesario arrastrarlos a la cuadrícula *Valores admitidos* para indicar que esos valores serán válidos para las combinaciones de la matriz.  
 Una vez elegidos los valores válidos para cada atributo, automáticamente aparecerán nuevas pestañas, una para cada matriz de soporte y una pestaña para la matriz completa, que unirá las varias matrices de soporte para tener una única con todas las combinaciones posibles.  
 Al moverse a las pestañas generadas por las matrices de soporte, es necesario marcar las combinaciones de valores válidos. Para cada combinación, se debe insertar el indicador solo si es válida.  
 En la pestaña de la *Matriz completa*, en cambio, se genera una matriz única con todas las combinaciones válidas, establecidas en la pestaña anterior.  
@@ -380,7 +380,7 @@ Además, también es posible definir el tipo de perfil del material con las dime
 En el combo se seleccionará la unidad de medida del peso, y se indicará a continuación el peso bruto, el peso neto y el peso específico. El peso bruto y el peso neto son los que se reflejan en los varios documentos relacionados con el artículo.
 
 #### Tipo de unidad de carga
-En el combo se define el embalaje del artículo (si pallet, europallet, etc.) y en el campo inferior se pueden indicar el número de artículos por unidad de carga. Según el tipo de unidad de carga y los artículos por tipo de unidad de carga, al crear los planes de carga se podrá obtener automáticamente el cálculo de las cantidades y el embalaje para la preparación de los medios. Es importante notar que estos valores se tienen en cuenta si no hay valores generales en la pestaña [Embalaje (Confezionamento)](/docs/erp-home/registers/items/create-new-item).
+En el combo se define el embalaje del artículo (si pallet, europallet, etc.) y en el campo inferior se pueden indicar el número de artículos por unidad de carga. Según el tipo de unidad de carga y los artículos por tipo de unidad de carga, al crear los planes de carga se podrá obtener automáticamente el cálculo de las cantidades y el embalaje para la preparación de los medios. Es importante notar que estos valores se tienen en cuenta si no hay valores generales en la pestaña [Embalaje](/docs/erp-home/registers/items/create-new-item).
 
 #### Número de bultos
 Esta sección sirve para gestionar el número de bultos en los documentos; se pueden gestionar en base al número de artículos por bulto, o al número de bultos para formar el artículo, configurando el indicador en el parámetro que se desea utilizar para este cálculo; de este modo, el cálculo del número de bultos se reflejará automáticamente en los documentos.

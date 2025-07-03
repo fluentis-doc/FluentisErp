@@ -1,20 +1,20 @@
 ---
-title: distinta base
+title: Lista de materiales
 sidebar_position: 2
 ---
 
-**Introducción (Introduzione)**: [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/bom-intro)
+**Introducción**: [Lista de materiales](/docs/erp-home/registers/production/bill-of-materials/bom-intro)
 
-Como se mencionó anteriormente, desde el formulario [Conjuntos (Assiemi)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), al seleccionar la lista de materiales que se desea visualizar y haciendo doble clic, se accede al detalle de la misma para su modificación y se visualizará su representación gráfica en forma de árbol.
+Como se mencionó anteriormente, desde el formulario [Conjuntos](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), al seleccionar la lista de materiales que se desea visualizar y haciendo doble clic, se accede al detalle de la misma para su modificación y se visualizará su representación gráfica en forma de árbol.
 
-La lista de materiales es una estructura multinivel, en forma de árbol, en la que hay una relación de tipo padre-hijo. El [hijo (figlio)](/docs/guide/common/glossary/glossary-intro#a) puede ser también padre y así sucesivamente por un número indeterminado de niveles hasta llegar al último nivel donde se encuentran los materiales.
+La lista de materiales es una estructura multinivel, en forma de árbol, en la que hay una relación de tipo padre-hijo. El [hijo](/docs/guide/common/glossary/glossary-intro#a) puede ser también padre y así sucesivamente por un número indeterminado de niveles hasta llegar al último nivel donde se encuentran los materiales.
 
 La pantalla se presenta dividida en dos partes: en la parte izquierda se encuentra la representación en árbol de la lista de materiales, mientras que en la parte derecha se verán en detalle las informaciones relativas a los varios componentes del árbol.
 
 
-## Estructura de la lista de materiales (Struttura della distinta base)
+## Estructura de la lista de materiales
 
-Para visualizar el árbol, basta con hacer clic con el ratón en el **+** al lado del código del artículo o hacer clic en el botón **esplodi** para verlo todo. De esta manera, se abrirán en cascada los varios niveles de la lista de materiales y cada nivel estará representado por íconos que identificarán la categoría de pertenencia de cada artículo o mejor dicho, el tipo de aprovisionamiento del artículo:
+Para visualizar el árbol, basta con hacer clic con el ratón en el **+** al lado del código del artículo o hacer clic en el botón **expandir** para verlo todo. De esta manera, se abrirán en cascada los varios niveles de la lista de materiales y cada nivel estará representado por íconos que identificarán la categoría de pertenencia de cada artículo o mejor dicho, el tipo de aprovisionamiento del artículo:
 
 ![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image02.png) : representa los artículos de producción;  
 
@@ -22,9 +22,9 @@ Para visualizar el árbol, basta con hacer clic con el ratón en el **+** al lad
 
 ![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image04.png) : representa los artículos de trabajo por encargo.
 
-El tipo de aprovisionamiento del artículo se indica dentro de los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del propio artículo.
+El tipo de aprovisionamiento del artículo se indica dentro de los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del propio artículo.
 
-La lista puede ser construida y modificada muy fácilmente utilizando los botones correspondientes: **inserisci**, **cancella componente** o **copia**, **taglia** e **incolla componente**.        
+La lista puede ser construida y modificada muy fácilmente utilizando los botones correspondientes: **Insertar**, **eliminar este componente** o **copia**, **taglia** e **incolla componente**.        
 Por ejemplo, al posicionarse sobre un elemento del árbol y presionar el botón **insertar componente**, se tiene la posibilidad de insertar un artículo que se convertirá en hijo del artículo seleccionado inicialmente; mientras que, al presionar el botón eliminar componente, este será removido de la lista.            
 Los botones **copiar**, **cortar** y **pegar componente** permiten copiar, cortar o pegar el artículo seleccionado dentro del árbol de la lista de materiales.            
 Además, es posible mover el artículo al nivel y la posición deseada dentro del árbol utilizando la función *Arrastrar y soltar (Drag and Drop)* de manera simple y rápida.       

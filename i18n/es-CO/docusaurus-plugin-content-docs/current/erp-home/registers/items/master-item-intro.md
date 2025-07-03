@@ -1,9 +1,9 @@
 ---
-title: Introducción (Introduzione)
+title: Introducción
 sidebar_position: 0
 ---
 
-:::important **Identificación de productos y sus partes (Identificazione dei prodotti e relative parti)**
+:::important **Identificación de productos y sus partes**
 
 Cada empresa manufacturera vende productos físicos comúnmente denominados productos terminados.  
 
