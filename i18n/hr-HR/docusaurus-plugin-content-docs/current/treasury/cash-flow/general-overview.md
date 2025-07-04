@@ -1,38 +1,38 @@
 ---
-title: Introduzione
+title: Uvod 
 sidebar_position: 1
 ---
 
-Il modulo Cash Flow di Fluentis ERP è uno strumento utile per l'analisi dei flussi di cassa aziendali previsti. 
+Modul Novčani tijek (Cash Flow) u Fluentis ERP-u je koristan alat za analizu predviđenih poslovnih novčanih tokova.   
 
-Esso permette di monitorare in modo preciso l'entrata e l'uscita di denaro, aiutando le aziende a mantenere una visione chiara e aggiornata della propria liquidità. Il modulo si integra con i dati contabili e di tesoreria per fornire un'analisi accurata e previsioni dettagliate sui flussi di cassa futuri.
+Omogućuje precizno praćenje prihoda i izdataka novca, pomažući tvrtkama da zadrže jasnu i ažuriranu sliku o svojoj likvidnosti. Modul se integrira s računovodstvenim i financijskim podacima kako bi pružio preciznu analizu i detaljne prognoze budućih novčanih tokova.  
 
-Il modulo è completo della possibilità di inserire manualmente delle scadenze extra contabili riferiti a dati non presenti a sistema, quali ad esempio una proiezione futura degli stipendi dei dipendenti, un piano di rientro per un credito già stralciato dalla contabilità e così via.
+Modul također uključuje mogućnost ručnog unosa dodatnih rokova koji se ne nalaze u sustavu, poput budućih projekcija plaća zaposlenika, plana otplate već otpisanog duga iz računovodstva i slično. 
 
-**Funzionalità Principali**:
+**Glavne funkcionalnosti**:
 
-- Generazione automatica del cashflow con possibilità di includere o escludere le tipologie di flusso finanziario abilitato manovrando un semplice flag.
-- Possibilità di filtro sulle date per ogni singolo flusso 
-- Visualizzazione di dettaglio dell'elaborazione del cashflow con possibilità di esportazione del dato in vari formati tra i quali excel
-- Esecuzione di una stampa analitica per la lettura dei risultati con evidenza dell'andamento del cashflow di ogni fine mese
-- Possibilità di lettura della stampa analitica raggruppando per banca d'appoggio
-- Possibilità di definire una data prevista per ogni flusso, parallela alla data di scadenza naturale
+- Automatsko generiranje novčanog tijeka s mogućnošću uključivanja ili isključivanja tipova financijskog tijeka, uz jednostavno upravljanje putem oznake.
+- Mogućnost filtriranja po datumima za svaki pojedini tijek.
+- Detaljan pregled obrade novčanog tijeka s mogućnošću izvoza podataka u različite formate, uključujući Excel.
+- Izvršenje analitičkog izvještaja za čitanje rezultata s naglaskom na kretanje novčanog tijeka na kraju svakog mjeseca.
+- Mogućnost pregleda analitičkog izvještaja s grupiranjem po matičnoj banci. 
+- Mogućnost definiranja predviđenog datuma za svaki tijek, paralelno s datumom prirodnog dospijeća.
 
-**Elenco tabelle necessarie per gestire il modulo:** 
+**Popis tablica potrebnih za upravljanje modulom:** 
 
-[Tipi conto finanziario](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types),  
+[Tipovi financijskih konta](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types),  
 
-[Tipi flusso](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types),  
+[Tip tijeka](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types),  
 
-[Tipi scadenza](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types),  
+[Tipovi datuma dospijeća](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types),  
 
-[Tipi ordine/bolla/fattura](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types)  
+[Tipovi narudžbe/otpremnice/fakture](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types)  
 
-[Anagrafica cliente/fornitore/agente](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register).
+[Šifarnik klijenta/dobavljača/agenta](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register).
 
-Inoltre, relativamente ad ogni tipologia di flusso finanziario che viene attivato, occorre gestire all'interno delle tabelle relative, quali ad esempio Tipi DDT, Tipi ordine (clienti e fornitori) ecc... quali tipologie specifiche di documento devono essere monitorate.
+Također, u vezi sa svakom vrstom financijskog tijeka koja se aktivira, potrebno je upravljati unutar odgovarajućih tablica, poput Tipova otpremnica, Tipova narudžbi (kupci i dobavljači) itd., kako bi se odredile specifične vrste dokumenata koje trebaju biti praćene.
 
-Ad esempio tipicamente si escluderà un DDT che non sia in conto vendita, quali ad esempio il conto deposito , conto visione ecc... inquanto non genereranno flusso di cassa.
+Na primjer, obično će se isključiti otpremnice koje nisu u sklopu prodaje, poput računa na skladištu, jer one neće generirati novčani tijek. 
 
  
 
