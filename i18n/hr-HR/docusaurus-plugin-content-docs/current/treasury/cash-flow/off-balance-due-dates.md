@@ -1,32 +1,32 @@
 ---
-title: Scadenze Extracontabili
+title: Datum dospijeća vanbilančnih konta
 sidebar_position: 3
 ---
 
-La form si trova in Tesoreria > Cash Flow > Cash Flow > Scadenze extra-contabili
+Obrazac se nalazi u Riznica > Novčani tok > Novčani tok > Dugovanja za vanjske obveze.
 
 
-Con questa maschera è possibile gestire le scadenze extracontabili che vengono lette nell'apposito flusso di cash flow (definito nella tabella [**Tipi Flusso**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) dal flag *Extra contabile*), come ad esempio prevedere le uscite per tributi, salari/stipendi, ecc. ecc..
+Ovim ekranom moguće je upravljati izvanknjižnim dospijećima koja se uključuju u odgovarajući cash flow tok (definiran u tablici [**Tip tijeka**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) pomoću oznake *Izvanknjižno*), kao što je primjerice predviđanje izlaznih tokova za poreze, plaće itd.
 
-## Come inserire una scadenza extra contabile per la lettura nel cashflow
+## Kako unijeti izvanknjižno dospijeće za prikaz u cash flow-u
 
-Inserire direttamente nella griglia le scadenze previste.
+Izravno u mrežu unose se planirana dospijeća.
 
-- Il campo **Tipi scadenza** è collegato all'omonima tabella dove poter definire liberamente una "etichetta" per rappresentare la tipologia di scadenza
-- La Data scadenza definirà la rappresentazione nel cashflow (nel mese corrispondente) essendo da considerare come la data di manifestazione del flusso finanziario che stiamo inserendo
-- La Divisa sarà proposta pari a quella della società (es. L'Euro) e può essere variata per inserire un flusso in divisa estera, in questo caso si gestirà anche il cambio in base alla dat scadenza.
-- L'importo in valuta è quello denominato nella divisa selezionata nel campo precedente, mentre l'importo Dare (flusso finanziario positivo, esempio un credito) o Avere (flusso negativo esempio un debito) sono denominati in divisa della società (es. Euro)
-- il flag **chiusa** può essere usto per non considerare più la riga nelle prossime simulazioni senza dover cancellare la riga, nel caso si voglia conservarla e memorizzarla.
+- Polje **Tipovi datuma dospijeća** povezano je s istoimenom tablicom, gdje se slobodno definira „oznaka” kojom se opisuje vrsta dospijeća.
+- Datum dospijeća određuje prikaz u cash flow-u (u odgovarajućem mjesecu), jer se smatra datumom kada će se financijski tok realizirati.
+- Valuta je po defaultu postavljena na onu tvrtke (npr. euro), ali je moguće odabrati drugu valutu ako se želi unijeti tok u stranoj valuti. U tom slučaju se upravlja i tečajem na datum dospijeća.
+- Iznos u valuti odnosi se na odabranu valutu u prethodnom polju, dok su iznosi Potražuje (pozitivan financijski tok, npr. potraživanje) ili Duguje (negativan tok, npr. obveza) iskazani u valuti tvrtke (npr. euro).
+- Oznaka **zatvoreno** koristi se kada se redak više ne želi uključivati u buduće simulacije, ali ga se želi zadržati i arhivirati bez brisanja.
 
 
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-**Ricerca** Pulsante per applicare i filtri di ricerca sulla lista delle scadenze extracontabili.
+**Traži** - gumb za primjenu filtera pretrage na popis izvanknjižnih dospijeća.
 
-**Nuovo** Imposta il cursore all'inserimento di una nuova scadenza extracontabile.
+**Novo** - postavlja pokazivač na unos novog izvanknjižnog dospijeća.
 
-**Cancella** Cancella la scadenza extracontabile selezionata.
+**Otkaži** - briše označeno izvanknjižno dospijeće.
 
 
 
