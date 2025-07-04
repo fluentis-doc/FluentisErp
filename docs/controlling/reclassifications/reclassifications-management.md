@@ -5,6 +5,12 @@ sidebar_position: 4
 
 Le riclassificazioni sono sostanzialmente l'applicazione dei dati di una *Chiusura conti infrannuale* (o di un *Consolidato*) ad un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model).
 
+:::danger[Attenzione]
+La riclassificazione eseguibile dalla presente form **NON considera i risultati delle procedure di contabilità gestionale**, quali ad esempio Elaborazione periodi (per lanciare i cost driver) oppure Ripresa dati da produzione, anche se tali procedure elaborano i dati generati con le chiusure infrannuali.
+
+Per eseguire riclassificazioni complete con i dati della contabilità gestionale è necessario utilizzare la form [**Comparazione riclassificazioni**](/docs/controlling/reclassifications/comparations) attivando il flag Dati dal controlling nella testata della nuova comparazione.
+:::
+
 Nel caso di inserimento di una nuova riclassificazione, all'apertura della maschera è necessario impostare il codice univoco di *5* caratteri alfanumerici, la descrizione della riclassificazione e inserire il modello di riclassificazione: a questo punto avremo la possibilità di richiamare una *Chiusura conti infrannuale* da utilizzare oppure utilizzare il pulsante di creazione di una nuova *Chiusura conti infrannuale*. In questo secondo caso si aprirà la maschera di creazione della chiusura, una volta completata la procedura ***FluentisERP*** assegnerà automaticamente la nuova creazione alla riclassificazione in elaborazione.
 
 :::tip Nota
