@@ -3,6 +3,17 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0076 - 03/07/2025
+
+> - MPS - Corretto bug in schedulazione generale nel caso in cui fosse lanciata con la logica al più presto. (#TT02745/25) 
+> - SCM - Corretto errore nel Carico a magazzino di DDT in valuta estera che non convertiva il valore delle spese ripartite inserite nel riepilogo del DDT (#TT02447/25). 
+> - CRM - Risoluzione non funzionamento della Mappa Opportunità (#TT02741/25) 
+> - SCS - Creazione Ordine di Conto Lavoro da rilascio ordini pianificati: Se il fornitore ha un listino predefinito, questo viene riportato su tutte le righe articolo. In caso di articoli non presenti nel listino, il prezzo sarà impostato a 0 e sarà attivato il flag Prezzo manuale nell’ordine. Se il fornitore non ha un listino predefinito, il listino verrà riportato sulle righe solo se utilizzato per la ripresa del prezzo (#TT00776/25). 
+> - SH - La verifica sulla validità delle date di competenza inserite nel tab Analitica dei documenti di Acquisto e di Vendita e sulle righe articolo delle Fatture di Vendita viene ora effettuata alla conferma della riga (#TT02693/25) 
+> - WM - Corretto bug nella valorizzazione di magazzino inerente al carico dei serial number. (#TT02681/25) 
+> - SCM - Risolto errore che non riportava il flag Prezzo manuale nell’Ordine fornitore generato da una Richiesta di Offerta (#TT02721/25). 
+
+
 ### Patch 608.1-0075 - 20/06/2025
 
 > - SD - Risoluzione errore che lasciava valorizzato il DDT dopo la cancellazione della fattura collegata (#TT02690/25).  

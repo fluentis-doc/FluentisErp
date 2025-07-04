@@ -3,6 +3,34 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0039 - 02/07/2025 
+
+> - Solved problem with SSL Protocol on BizLink email connector 
+> - SD - Planner spedizioni - risolto caso in cui dava un messaggio di errore cambiando il sito produttivo nei filtri di ricerca (#TT02953/25) 
+> - WM - Ora attivando il flag forzatamente evaso su picking, ordini e DDT di vendita, l’eventuale quantità impegnata di un lotto (non movimentato) viene automaticamente liberata. (#TT01474/25) 
+> - WM - Conferma Picking, risolto il problema che impediva la modifica del lotto e dell'ubicazione durante la conferma picking da WMS (Ticket #TT02950/25). 
+> - QY - Controllo articoli - Nei filtri di ricerca per tipo documento e nell'elenco risultato dell' "Importa articoli da controllare" sono state aggiunte le informazioni di "Lotto fornitore" e "Commessa di produzione". In particolare nelle ricerche di: "Importa articoli da controllare", "Ricerca Controlli articolo" e "Ricerca Certificati di analisi": - il "Lotto fornitore" è stato aggiunto per i tipi documento: "Ricevimento merce", "DDT di acquisto", "Fattura di acquisto", "Rientro da conto lavoro" e "Movimentazione di carico"; - la "Commessa di produzione" è stata aggiunta per i tipi documento: "Rientro da conto lavoro", "Fase ordine di produzione", "Dichiarazioni di produzione" e "Movimentazione di carico".(#TT04271/24) 
+> - WMS - Nelle form gestione spunta e conferma picking, è possibile vedere nella tabella sottostante la quantità impegnata per quell’articolo e per quel lotto. (#TT00035/25) 
+> - PM - Corretta la visualizzazione dei diagrammi “Globale” e “Vendite” nei Progetti generati automaticamente dalla conversione di Offerte di Vendita contenenti righe non codificate. (#TT02550/25) 
+> - WMS - Aggiunto il messaggio che avvisa di inserire l’ubicazione nella form rettifica articolo prima di confermare la rettifica stesse. (#TT02753/25) 
+> - SCM, SCS - Gli sconti inseriti nelle Fatture di Acquisto generate da un Rientro di Conto lavoro vengono ora riportati anche nel Rientro e nella relativa registrazione di magazzino. (#TT02900/25) 
+> - WM - Corretto bug nella valorizzazione di magazzino inerente al carico dei serial number. (#TT02681/25) 
+> - WM - Corretto bug nella procedura duplica articolo che si verificava nel caso in cui venisse duplicato un articolo su un’altra società. (#TT02928/25) 
+> - MES - Corretto bug nel MES nel caso in cui si effettuassero degli avanzamenti con una work station associata ad un unico centro di lavoro. (#TT02930/25) 
+> - WMS - Corretto bug nella lettura di alcuni codici  ubicazione contenenti il carattere “–“. (#TT03008/25) 
+> - FI - revisione setter della data valuta per errore in gestione cambio con ricalcolo partite (#TT02940/25) 
+> - SCM - Generazione RDO da RDA: se nella Richiesta di Acquisto il prezzo dell’articolo non è stato modificato manualmente, in fase di generazione delle RDO il sistema propone automaticamente prezzo e sconti dal listino dei fornitori preferenziali associati all’articolo. Se invece il prezzo è stato modificato manualmente nella RDA, sarà possibile intervenire anche sul campo Prezzo nel tab Generatore RDO della Richiesta di acquisto. In questo caso, la RDO verrà generata utilizzando il prezzo inserito nel tab stesso e sarà attivato automaticamente il flag Prezzo manuale nella RDO risultante. (#TT01951/25, #TT02553/25) 
+> - SCM - Risolto errore che non riportava il flag Prezzo manuale nell’Ordine fornitore generato da una Richiesta di Offerta (#TT02721/25). 
+> - SCS - Ordini di Conto Lavoro: alla modifica della quantità dei Materiali da impiegare viene ricalcolato automaticamente anche il coefficiente di impiego unitario del materiale. (#TT02873/25) 
+> - WMS - Nel report della form sposta articolo sono stati passati anche i parametri relativi al lotto e alla quantità. (#TT03026/25) 
+> - SD - La creazione fatture d'anticipo dalla gestione partite d'anticipo ora restituisce il messaggio di cliente bloccato nel rischio cliente. (#TT02855/25) 
+> - WM - Ora attivando il flag forzatamente evaso su picking e ordini di vendita, l’eventuale quantità impegnata di un lotto (non movimentato) viene automaticamente liberata. (#TT02977/25)   
+> - SD - Set Project for all Item rows, including NoteItem.(#TT02904/25)   
+> - SD - Listini di Vendita: abilitata la possibilità di gestire delle customizzazioni nela procedura di duplica e manutenzione listini (rif.ticket 2914/25) 
+> - WM - Nel momento in cui viene creato un movimento di magazzino con costo medio o ultimo, questo viene calcolato al momento stesso del movimento. (#TT01412/25) 
+> - WEB - SCM, SCS, PM - Risolto errore che impediva la visualizzazione in anteprima del dettaglio articoli nei documenti, tramite il pulsante “+” nella griglia di ricerca. (#TT02892/25)
+
+
 ### Patch 707.1-0038 - 27/06/2025 
 
 > - SD - Spedizioni -risolto caso per cui sulla prima riga di groupage l'indirizzo di provenienza  non veniva proposto correttamente, mentre sulle righe a seguire sì. (#TT01276/25) 
@@ -33,8 +61,8 @@ sidebar_position: 1
 > - MS - Ora gli stati delle commesse di conto lavoro e acquisto raggruppate in pianificazione vengono correttamente aggiornati su tutte le commesse raggruppate. (#TT00649/25)  
 > - FI - compensazione veloce, abilitata la compensazione anche su partite con pagamenti fornitori non contabilizzati (saranno conteggiate per la differenza nell’edit del residuo da pagare presente sopra la griglia). Modifications in MaturityFilterResultsSimple forms can have an impact on profiles (#TT02037/25) 
 > - SH - La verifica sulla validità delle date di competenza inserite nel tab Analitica dei documenti di Acquisto e di Vendita e sulle righe articolo delle Fatture di Vendita viene ora effettuata alla conferma della riga (#TT02693/25).
-> - SCS – Risolto errore nella Duplicazione di un Ordine di Conto lavoro in presenza di un Extra Data di riga articolo riferito all’oggetto FSBatchRegister (#TT02134/25).
-> - EAM – Corretto errore nella maschera di ricerca delle Anagrafiche impianti che si verificava impostando un filtro sulla data (#TT02418/25).
+> - SCS - Risolto errore nella Duplicazione di un Ordine di Conto lavoro in presenza di un Extra Data di riga articolo riferito all’oggetto FSBatchRegister (#TT02134/25).
+> - EAM - Corretto errore nella maschera di ricerca delle Anagrafiche impianti che si verificava impostando un filtro sulla data (#TT02418/25).
 
 ### Patch 707.1-0037 - 20/06/2025 
 
