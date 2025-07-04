@@ -1,67 +1,67 @@
 ---
-title: Generazione automatica CashFlow
+title: Automatsko generiranje novčanog tijeka 
 sidebar_position: 4
 ---
 
-Normalmente la simulazione di cash flow viene creata attraverso questa maschera, che consente di definire i parametri di gestione per ogni tipo flusso. 
+Obično se simulacija novčanog toka kreira kroz ovaj obrazac, koji omogućuje definiranje parametara upravljanja za svaki tip toka.
 
-Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero**, assegnato automaticamente. E' possibile inoltre associare una **Descrizione** di dettaglio.
+Svaka nova obrada sprema izračun povezan s poljem **Broj**, koji se automatski dodjeljuje. Također je moguće dodati detaljan **Opis**.
 
-*Campi specifici*
+*Specifična polja*
 
-**Tipo / Descrizione flusso:** ripresi dalla tabella Tipi flusso
+**Tip / Opis tijeka:** preuzeto iz tablice Tipovi toka 
 
-**Da Data / A Data:** Range di date di filtro che agiscono secondo la logica specifica di ogni tipo flusso (vedere qui sotto)
+**Od datuma / Do datuma:** Raspon datuma filtra koji djeluje prema specifičnoj logici svakog tipa toka 
 
-**Abilitato:** flag che gestisce l'effettivo utilizzo del tipo flusso corrispondente nel calcolo che si sta per lanciare
+**Omogući:** oznaka koja upravlja stvarnom upotrebom odgovarajućeg tipa tijeka u izračunu koji će biti pokrenut 
 
-**Registrazioni provvisorie:** considera o meno anche i dati collegati a registrazioni contabili in stato *Provvisorio*
+**Privremeni zapis:** uzima ili ne uzima u obzir podatke povezane s računovodstvenim zapisima u statusu *Privremeno*
 
-**Non pagabili:** considera i meno anche le partite aperte nello stato *Non pagabile*
+**Neplativo:** uzima ili ne uzima u obzir stavke koje su *nenaplative*
 
-**Usa q.ta residua:** permette di considerare gli ordini secondo la quantità residua da evadere
+**Koristi preostalu količinu:** omogućuje uzimanje u obzir narudžbi prema preostalom iznosu koji treba isporučiti 
 
-**Usa nella disp. attuale:** legge gli effetti in portafoglio PRESENTATI e non insoluti con scadenze superiori ad oggi e li espone alla data di oggi nel conto ORDINARIO presente nella distinta di presentazione (anche se contabilmente l’accredito sarà solo al dopo incasso)
+**Koristi trenutnu dostupnost:** čita račune u portfelju koji nisu neplaćeni s rokom koji je veći od današnjeg, te ih prikazuje na današnji datum u grupnom računu (iako će knjiženje biti izvršeno tek nakon naplate) 
 
-**Usa in scad. nel castelletto:** permette di considerare anche gli effetti presentati al salvo buon fine. In particolare usa il conto bancario di appoggio per il s.b.f. (salvo buon fine) inserito nella distinta di presentazione (anzichè il conto del cliente così come fa quando l'effetto è soltanto *Emesso*) e lo movimenta in dare in base a quanto presentato nelle varie date di scadenza degli effetti inseriti in distinta.
+**Koristi dospijeće:** omogućuje uzimanje u obzir i računa "po primitku".  
 
-:::danger ATTENZIONE
-Gli effetti inseriti in distinta saranno visibili solo se hanno il flag **Contabilizzato** attivo al loro interno (inquanto è stata effettuata la contabilizzazione dell'emissione). Poichè è comunque possibile inserirli in distinta per la presentazione in banca anche se non stati contabilizzati si consiglia di fare attenzione.
+:::danger PAŽNJA
+Stavke unesene u popis bit će vidljive samo ako imaju aktiviranu oznaku **Knjiženo** unutar njih (jer je izvršeno računovodstveno knjiženje). Budući da ih je ipak moguće unijeti u popis za prezentaciju banci, čak i ako nisu knjiženi, preporuča se obratiti pažnju.
 
-Altra condizione importante è il filtro che esclude (indipendentemente dalla data di filtro impostata prima del lancio del calcolo) gli effetti con data scadenza precedente ad "oggi" ovvero la data di elaborazione del cashflow in questione
+Drugi važan uvjet je filtriranje koje isključuje (neovisno o datumu filtra postavljenom prije pokretanja izračuna) račune s datumom dospijeća koji je prije "današnjeg", odnosno datumom obrade novčanog toka u pitanju. 
 :::
 
-Se abilitato in relazione al tipo flusso **Anticipi**, va a rilevare gli importi delle distinte di anticipo fatture non contabilizzate per l'importo anticipato sul conto bancario, con data uguale alla data scadenza anticipata.
+Ako se radi s tipom tijeka **Avansi**, tada će se uzimati iznosi iz popisa predujma faktura koje nisu knjižene za iznos predujma na bankovnom računu, s datumom jednakim datumu dospijeća predujma.
 
-**ATTENZIONE:**
-Se viene scelta questa opzione NON devono essere inseriti anche i conti d'appoggio utilizzati per il s.b.f. nella consistenza finanziaria iniziale (tramite la gestione dei *tipi conto finanziario*,) altrimenti il dato (in termini di flusso di cassa positivo) verrà duplicato e dunque il risultato sarà falsato e non attendibile.
+**PAŽNJA:**
+Ako se odabere ova opcija, NE smiju se unositi i pomoćni računi koji se koriste u početnoj financijskoj ravnoteži (putem upravljanja tipovima financijskih računa), inače će se podaci (u smislu pozitivnog novčanog toka) duplicirati i rezultat će biti iskrivljen i nepouzdan. 
 
 
-*Dettaglio delle logiche applicate ai tipi flusso*:
+*Detalj logika primijenjenih na tipove toka*:
 
-**Saldo contabile**: il range di date viene utilizzato per calcolare il saldo contabile secondo la data registrazione contabile;
+**Stanje glavne knjige**: raspon datuma koristi se za izračunavanje računovodstvenog salda prema datumu računovodstvenog knjiženja;
 
-**Partite**: il range di date viene utilizzato per filtrare sulle date scadenza delle partite. Sono presenti poi flag per considerare le partite collegate a registrazioni provvisorie così come le partite non pagabili;
+**Dospijeća plaćanja**: raspon datuma koristi se za filtriranje prema datumima dospijeća. Također su prisutne oznake za uzimanje u obzir dospijeća povezanih s privremenim knjiženjima, kao i dospijeća koja nisu plaćena;
 
-**Ordini clienti/fornitori**: il range di date filtra sulla data ordine. Sono considerati solo le tipologie con flag *cash flow* impostato, stampate e confermate. Si consiglia di impostare il flag *usa Qta residue* in modo da simulare un ordine secondo la quantità residua da consegnare/ricevere. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, prendendo come data di partenza la data di consegna della riga (se mancante la data consegna di testata dell'ordine) o la data odierna se questa è antecedente a oggi;
+**Narudžbe kupaca/dobavljača**: raspon datuma filtrira prema datumu narudžbe. Uzimaju se u obzir samo tipovi s označenim *novčani tijekom* koji su ispisani i potvrđeni. Preporučuje se postaviti oznaku *Koristi preostalu količinu* kako bi se simulirala narudžba prema preostalom iznosu koji treba isporučiti/primiti. Ispod se računaju hipotetski rokovi temeljem postavki tipa/načina plaćanja postavljenih u zaglavlju, uzimajući kao početni datum isporuke stavke (ako nedostaje datum isporuke iz zaglavlja narudžbe) ili današnji datum ako je on prije današnjeg. ;
 
-**DDT di acquisto/vendita**: il range di date filtra sulla data DDT. Sono considerati solo le tipologie impostate di ‘cash flow', stampate o controllate, non già valorizzate in fattura. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, a partire dalla data DDT;
+**Otpremnice/primke**: raspon datuma filtrira prema datumu otpremnice. Uzimaju se u obzir samo vrste postavljene za 'novčani tijek', ispisane ili kontrolirane, koje nisu već valorizirane u fakturi. Ispod se računaju hipotetski rokovi temeljem postavki tipa/načina plaćanja postavljenih u zaglavlju, počevši od datuma otpremnice;
 
-**Fatture di acquisto/vendita**: il range di date filtra sulla data scadenza in fattura. Sono considerati i documenti non proforma, stampate o controllate, non già contabilizzate;
+**Fakture prodaja/nabava**: raspon datuma filtrira prema datumu dospijeća na fakturi. Razmatraju se dokumenti koji nisu proforma, isprintani, kontrolirani ili oni koji nisu knjiženi;
 
-**Ordini di conto lavoro**: il range di date filtra sulla data ordine, solo ordini stampati non evasi. Vengono create scadenze ipotetiche sulla base del residuo non rientrato e il costo della lavorazione;
+**Narudžbe/radni nalog**: raspon datuma filtrira prema datumu narudžbe, samo otisnute narudžbe koje nisu izvršene. Stvaraju se hipotetski rokovi temeljem preostalog iznosa koji nije naplaćen i troška obrade;
 
-**Rientri di conto lavoro**: il range di date filtra sulla data rientro, solo rientri stampati non fatturati.
+**Povrat/radni nalog**: raspon datuma filtrira prema datumu povratka, samo otisnuti povratci koji nisu fakturirani. 
 
-I rientri devono essere generati evadendo l'ordine di conto lavoro e non inseriti manualmente altrimenti non saranno visibili;
+Povrati moraju biti generirani tako da se izvrši narudžba za radni nalog, a ne unosom ručno, inače neće biti vidljiva;
 
-**Extracontabile**: il range di date filtra sulla data scadenza extracontabile.
+**Vanbilančni zapisi**: raspon datuma filtrira prema datumu dospijeća vanbilančnih zapisa.
 
-I parametri di esecuzione sono memorizzati: solo la data finale del tipo flusso saldo contabile viene sempre riproposto come data odierna all'apertura. Una volta impostata la descrizione del cash flow sarà possibile premere il pulsante di calcolo. In considerazione dei movimenti degli ordini, per i quali il sistema deve fare una simulazione riga ordine per riga ordine, l'elaborazione può essere particolarmente lunga a seconda della numerosità dei dati presenti nel filtro impostato. Una volta completata l'elaborazione sarà possibile aprire il cash flow attraverso il pulsante di gestione relativo.
+Samo završni datum za vrstu toka računovodstvenog salda uvijek će biti postavljen kao današnji datum pri otvaranju. Nakon što je postavljen opis novčanog tijeka, moguće je pritisnuti gumb za izračun. S obzirom na pomake narudžbi, za koje sustav mora napraviti simulaciju redak po redak, obrada može biti osobito duga, ovisno o broju podataka prisutnih u postavljenom filtru. Kada obrada bude završena, moguće je otvoriti novčani tijek putem odgovarajućeg gumba za upravljanje. 
 
-**Portafoglio attivo**: ATTENZIONE: in merito al flusso delle distinte SBF bisogna fare attenzione agli effetti presentati ma non contabilizzati (contabilizzazione dell'emissione), la situazione può generarsi ad esempio emettendoli dalle scadenze fatture e poi inserendoli in distinta senza contabilizzare l'emissione. In tale situazione gli effetti non saranno inseriti nel cashflow. Altra condizione di cui tenere conto è il fatto che indipendentemente dal filtro, la data scadenza effetto deve essere maggiore o uguale a "oggi" (data elaborazione cashflow)
+**Aktivni portfelj**: PAŽNJA: potrebno je obratiti pažnju na stavke koji su prikazane, ali nisu knjižene. Takva situacija može nastati, na primjer, ako su računi izdani iz dospjelih dugovanja i zatim uneseni u popis bez knjiženja. U tom će slučaju računi biti isključeni iz novčanog tijeka. Drugi uvjet na koji treba obratiti pažnju je taj da, neovisno o filtru, datum dospijeća učinka mora biti veći ili jednak od "današnjeg" (datum obrade novčanog toka). 
 
-| Funzione | Significato |
+| Funkcija  | Značenje |
 | --- | --- |
-| Creazione | Esegue la procedura di generazione del cash flow secondo le impostazioni inserite nella maschera. |
-| Modifica | Apre in modifica il cash flow creato. |
+| Kreiranje | Izvršava postupak generiranja novčanog tijeka prema postavkama unesenim u obrazac. |
+| Izmjeni | Otvara novčani tijek koji je stvoren u načinu uređivanja. |
