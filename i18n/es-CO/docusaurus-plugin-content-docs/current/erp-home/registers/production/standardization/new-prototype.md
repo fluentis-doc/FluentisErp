@@ -1,5 +1,5 @@
 ---
-title: Gestión de Prototipos (Gestione Prototipi)
+title: Gestión de Prototipos 
 sidebar_position: 2
 ---
 
