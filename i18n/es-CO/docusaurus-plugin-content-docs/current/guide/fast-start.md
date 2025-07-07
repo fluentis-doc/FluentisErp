@@ -1,5 +1,5 @@
 ---
-title: Fluentis Fast Start - hoja de ruta para el nuevo entorno operativo (Fluentis Fast Start - roadmap startup nuovo ambiente operativo)
+title: Fluentis Fast Start - hoja de ruta para el nuevo entorno operativo 
 sidebar_position: 2
 ---
 
@@ -24,7 +24,7 @@ El **Fast Start** es una funcionalidad diseñada para hacer rápida y sencilla l
 
 
 :::tip[Dónde se activa]
-**Para iniciar el procedimiento**, accede a la [**tabla de Empresas (tabella Società)**](/docs/configurations/tables/general-settings/company), ingresa a la empresa específica interesada y presiona el botón *impostazioni generali* presente en la barra de herramientas.
+**Para iniciar el procedimiento**, accede a la [**tabla de Empresas**](/docs/configurations/tables/general-settings/company), ingresa a la empresa específica interesada y presiona el botón *configuración general* presente en la barra de herramientas.
 :::
 
 
@@ -52,7 +52,7 @@ Tablas involucradas (Stored Procedure Fluentis.SH_CreateNewYear_IT):
  - > Parámetros de contabilidad general
  - > Parámetros de activos
  - > Parámetros de cartera (activos - efectos)
- - > Parámetros de saldos (insoluti)
+ - > Parámetros de saldos (no remunerado)
  - > Parámetros MPS
  - > Causales contables
  - > Códigos IVA
@@ -61,7 +61,7 @@ Tablas involucradas (Stored Procedure Fluentis.SH_CreateNewYear_IT):
  - > Tipos de pago
  - > Soluciones de pago
  - > Categorías de agentes
- - > Tipos de retención (d'acconto)
+ - > Tipos de retención (de anticipo)
  - > Categorías de activos
  - > Tipos de flujo financiero
  - > Tipos de anticipo
@@ -115,7 +115,7 @@ Tablas involucradas (Stored Procedure Fluentis.SH_CreateNewYear_IT):
  - > Unidades de medida
  - > Puerto (Incoterms - términos de entrega)
  - > Envíos (tipos)
- - > Modelos de reclasificación (controlling)
+ - > Modelos de reclasificación (controlando)
  - > Vínculo del modelo de reclasificación para el Balance CEE con detalle del plan de cuentas
  - > Horarios de trabajo (gestión de empleados)
  - > Severidad (tickets CRM)
@@ -140,7 +140,7 @@ En el caso en que no inicie el Fast Start, es necesario poblar manualmente las s
 
 <details>
 
-  <summary>PAÍSES (NAZIONI) Click to expand!</summary>
+  <summary>PAÍSES Click to expand!</summary>
  
  ## Tabla necesaria para todos los documentos y la inserción de registros de CLIENTES
 
@@ -153,7 +153,7 @@ En el caso en que no inicie el Fast Start, es necesario poblar manualmente las s
 
 <details>
 
-  <summary>DIVISAS (DIVISE) Click to expand!</summary>
+  <summary>DIVISAS Click to expand!</summary>
  
  ## Tabla necesaria para gestionar los cambios de moneda y los registros contables
 
@@ -169,7 +169,7 @@ En el caso en que no inicie el Fast Start, es necesario poblar manualmente las s
 
 <details>
 
-  <summary>EMPRESA (SOCIETA') Click to expand!</summary>
+  <summary>EMPRESA Click to expand!</summary>
  
  ## Tabla necesaria para la facturación electrónica y para los datos de la empresa en documentos e impresiones
 
@@ -224,7 +224,7 @@ Atención al vínculo con los tipos de efectos (grilla inferior derecha), de lo 
 
 <details>
 
-  <summary>TIPOS DE IVA (ALIQUOTE IVA) Click to expand!</summary>
+  <summary>TIPOS DE IVA Click to expand!</summary>
  
  ## Necesaria para la contabilidad, documentos, facturación electrónica
 
@@ -409,7 +409,7 @@ Atención al vínculo con los tipos de efectos (grilla inferior derecha), de lo 
  
  ## Necesaria para la gestión de la cartera
 
-  1. Prever al menos las tipologías fundamentales Emitido, Presentado SBF, Rit. Accr (Acreditado) y Rit. Ins (insoluto) para emparejar al respectivo indicador
+  1. Prever al menos las tipologías fundamentales Emitido, Presentado SBF, Rit. Accr (Acreditado) y Rit. Imp (impagado) para emparejar al respectivo indicador
    
 </details>
 

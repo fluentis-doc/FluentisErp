@@ -1,5 +1,5 @@
 ---
-title: Acceso a Fluentis (Accesso a Fluentis)
+title: Acceso a Fluentis
 sidebar_position: 1
 ---
 
@@ -11,10 +11,10 @@ Para acceder a **Fluentis** se puede usar:
 
 De esta manera se tendrá acceso a la vista relacionada con las credenciales para acceder a la base de datos.
 
-**Conexión a la base de datos (Connessione a database)**
+**Conexión a la base de datos**
 
-La conexión a **Fluentis** implica la entrada de los datos: *utente*, *Contraseña (Parola)*, nombre del *server* y *database*.
+La conexión a **Fluentis** implica la entrada de los datos: *utente*, *Contraseña*, nombre del *server* y *database*.
 
-Si se ha seleccionado la opción *Usuario predeterminado (Utente predefinito)*, el nombre del usuario y la contraseña ya no serán solicitados porque los datos se recuperarán automáticamente al abrir la aplicación.
+Si se ha seleccionado la opción *Usuario predeterminado*, el nombre del usuario y la contraseña ya no serán solicitados porque los datos se recuperarán automáticamente al abrir la aplicación.
 
-Confirmen presionando la tecla enter o haciendo clic en el botón **Conectar (Connect)**.
+Confirmen presionando la tecla enter o haciendo clic en el botón **Conectar**.
