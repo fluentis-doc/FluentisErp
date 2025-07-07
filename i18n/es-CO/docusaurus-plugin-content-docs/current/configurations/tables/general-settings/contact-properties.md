@@ -1,5 +1,5 @@
 ---
-title: proprietà anagrafica
+title: Propiedad de nomenclatura
 sidebar_position: 49
 ---
 

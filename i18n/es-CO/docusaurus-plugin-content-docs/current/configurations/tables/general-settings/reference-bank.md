@@ -1,9 +1,9 @@
 ---
-title: banca d'appoggio
+title: Banco de presentaciones
 sidebar_position: 1
 ---
 
-En esta tabla se insertan los bancos de apoyo que pueden ser llamados en los registros de Clientes y Proveedores (y Registro de Bancos) para gestionar diversas automatizaciones, como principalmente la inclusión en las impresiones (por ejemplo, coordenadas bancarias de pago en una factura activa) y la canalización de flujos financieros referidos a cuentas por cobrar, etc.
+En esta tabla se insertan los bancos de presentaciones que pueden ser llamados en los registros de Clientes y Proveedores (y Registro de Bancos) para gestionar diversas automatizaciones, como principalmente la inclusión en las impresiones (por ejemplo, coordenadas bancarias de pago en una factura activa) y la canalización de flujos financieros referidos a cuentas por cobrar, etc.
 
 Dentro de esta tabla es posible ingresar tanto los bancos de la empresa como los bancos de la contraparte (cliente o proveedor).
 

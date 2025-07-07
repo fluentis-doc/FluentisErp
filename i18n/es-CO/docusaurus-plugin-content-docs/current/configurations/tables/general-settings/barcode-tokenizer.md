@@ -1,20 +1,20 @@
 ---
-title: barcode tokenizer
+title: Tokenizador de código de barras
 sidebar_position: 48
 ---
 
-Gran parte de las operaciones que se pueden realizar en Fluentis WMS pueden ser facilitadas y aceleradas gracias al uso del campo *Código de código de barras*, que si se configura adecuadamente, reinterpreta de manera inteligente los datos adquiridos a través de la lectura del código de barras e inserta automáticamente los valores en los campos correspondientes.  
-Esto proporciona una gran ventaja al operador tanto en términos de velocidad de entrada como de eficiencia, ya que solo tendrá que leer los datos siempre en el mismo campo *Código de código de barras* sin tener el problema de tener que cambiar el enfoque.
+Gran parte de las operaciones que se pueden realizar en Fluentis WMS pueden ser facilitadas y aceleradas gracias al uso del campo *Código de entrada*, que si se configura adecuadamente, reinterpreta de manera inteligente los datos adquiridos a través de la lectura del código de barras e inserta automáticamente los valores en los campos correspondientes.  
+Esto proporciona una gran ventaja al operador tanto en términos de velocidad de entrada como de eficiencia, ya que solo tendrá que leer los datos siempre en el mismo campo *Código de entrada* sin tener el problema de tener que cambiar el enfoque.
 
 En la tabla de encabezado, los campos a ingresar son:
 
-> **codice**: indica el prefijo del tokenizador de código de barras;        
-> **descrizione**: indica la descripción del tokenizador de código de barras;        
-> **separatore**: indica el carácter separador del tokenizador de código de barras.
+> **Código**: indica el prefijo del tokenizador de código de barras;        
+> **Descripción**: indica la descripción del tokenizador de código de barras;        
+> **Separador**: indica el carácter separador del tokenizador de código de barras.
 
 En la tabla de detalle se deben definir los objetos y las propiedades que vamos a leer del código de barras.
 
-El código de barras debe ser creado utilizando **CódigoDeBarras (CodiceBarcode)** + **Separador** + **ObjetoBusiness.Propiedad (OggettoBusiness.Proprietà)** [ + **Separador** + **ObjetoBusiness.Propiedad** ]  
+El código de barras debe ser creado utilizando **Código de entrada** + **Separador** + **ObjetoBusiness.Propiedad** [ + **Separador** + **ObjetoBusiness.Propiedad** ]  
 
 La última parte **ObjetoBusiness.Propiedad** puede repetirse varias veces; será la Longitud o el **Separador** definido en la tabla que permitirá identificar los valores correctos.      
 

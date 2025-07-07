@@ -1,10 +1,10 @@
 ---
-title: società
+title: Empresa
 sidebar_position: 3
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[Inicio Rápido]
+La tabla está sujeta al procedimiento de [**Inicio Rápido**](/docs/guide/fast-start)
 
 En caso de que se pretenda configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
@@ -39,7 +39,7 @@ Se presentan en cuadrícula, para comodidad, algunos campos presentes en el deta
 **Para crear una nueva empresa** (que se definirán como la única o las diversas divisiones relacionadas) **pulse el botón *NUEVO***.
 
 :::note Nota
-Después de crear la nueva empresa en la presente tabla, es necesario gestionar sus permisos de visibilidad para los diversos usuarios a través de la aplicación ARM y preliminarmente definir también la propia empresa en ARM (menú società).
+Después de crear la nueva empresa en la presente tabla, es necesario gestionar sus permisos de visibilidad para los diversos usuarios a través de la aplicación ARM y preliminarmente definir también la propia empresa en ARM.
 :::
 
 ### DETALLE DE REGISTRO DE LA EMPRESA
@@ -83,7 +83,7 @@ También es necesario el campo **Socios** y el **Estado**, si está en liquidaci
 **Régimen fiscal**: en este campo se indica en qué régimen fiscal opera. La tabla es fija y predefinida.
 
 :::tip GRUPO IVA
-En la lista de posibles regímenes, se ha añadido el código 61 GRUPO IVA. Al seleccionar esta opción (si la empresa que estamos gestionando es parte de un grupo IVA y, por lo tanto, presenta su número de IVA pero el número de IVA de la empresa matriz), en la fase de exportación del archivo XML de la factura electrónica de venta, se reportará tanto el número de IVA como el número de código fiscal. De hecho, el SDI controla ambos campos (y no solo el número de IVA) en caso de que la empresa declare que forma parte de un grupo IVA.
+En la lista de posibles regímenes, se ha añadido el código 61 GRUPO IVA. Al seleccionar esta opción (si la empresa que estamos gestionando es parte de un grupo IVA y, por lo tanto, presenta su número de IVA pero el número de IVA de la empresa matriz), en la fase de exportación del archivo XML de la factura electrónica de venta, se reportará tanto el número de IVA como el número de código fiscal. De hecho, el ES controla ambos campos (y no solo el número de IVA) en caso de que la empresa declare que forma parte de un grupo IVA.
 
 En lo que respecta a los archivos XML de las facturas de compra recibidas, con esta configuración se lleva a cabo el control tanto sobre el número de IVA y, si dentro de la base de datos hay más empresas con el mismo número de IVA, también del código fiscal.
 :::
@@ -91,13 +91,13 @@ En lo que respecta a los archivos XML de las facturas de compra recibidas, con e
 **Número de decimales para los campos de cantidad**: que indica cuántos decimales mostrar en las impresiones para los campos de cantidad de los documentos.  
 El indicador **Mostrar símbolo de moneda** indica si se debe mostrar o no el símbolo de la moneda (y los campos iguales a cero) en las máscaras de visualización de los movimientos contables.  
 
-Indicador **Gestión de controlling** que habilita los procedimientos "avanzados" (conjunto completo de funciones) del área de controlling para la empresa que estamos modificando.
+Indicador **Gestión de control** que habilita los procedimientos "avanzados" (conjunto completo de funciones) del área de control para la empresa que estamos modificando.
 
-**Empresa matriz**: campo gestionado en el procedimiento del módulo controlling *Consolidación maestra*. Esta realiza una consolidación de datos específica sobre la empresa matriz.
+**Empresa matriz**: campo gestionado en el procedimiento del módulo control *Consolidación maestra*. Esta realiza una consolidación de datos específica sobre la empresa matriz.
 
 Al ingresar la empresa matriz, el campo para la correspondencia con el plan de cuentas de la matriz también se hace visible dentro del plan de cuentas de la empresa seleccionada.  
 Por lo tanto, en la fase de consolidación, el movimiento contable de la empresa controlada será reflejado en la cuenta indicada relacionada con la empresa matriz.  
-El dato que se gestiona en esta elaboración, en cualquier caso, es el gestionado en el módulo controlling y ya elaborado por los cost drivers relacionados, no el dato de contabilidad general.  
+El dato que se gestiona en esta elaboración, en cualquier caso, es el gestionado en el módulo control y ya elaborado por los cost drivers relacionados, no el dato de contabilidad general.  
 Solo la parte de dato de naturaleza contable será transcodificada, mientras que el movimiento del centro de costo (centro empresarial) se reportará sin modificaciones y el prerequisito para el reporte es, de hecho, que el código del centro empresarial sea igual tanto en la empresa matriz como en la empresa controlada.
 
 #### Sección inferior
@@ -111,7 +111,7 @@ En la sección **Gastos de timbre**, en cambio, se indica el valor de los gastos
 **Expansor Ri.Ba.**: se colocan los datos identificativos de la empresa para el sistema telemático bancario: el código SIA (5 caracteres alfanuméricos) y el código CUC (8 caracteres) para el Sepa.
 
 
-### Grilla de divisiones, Banco de apoyo por defecto y Logo
+### Cuadrícula de divisiones, Banco de apoyo por defecto y Logo
 
 En la columna derecha de la máscara tenemos tres cuadrículas.
 
@@ -146,7 +146,7 @@ Se recomienda completar de manera completa todos los datos gestionados por el re
 - En cuanto al teléfono y fax, si se desea completarlos, se sugiere no usar la barra para separar el prefijo, para evitar posibles problemas en los controles formales del sistema de intercambio, ante caracteres no reconocidos.
 - Los campos relativos a la oficina REA, el primero acepta la sigla de la provincia y el segundo el número.
 - También es necesario el campo Socios y el Estado, si está en liquidación o no.
-- Debe completarse también, con este fin, el capital suscrito y aportado, teniendo cuidado de no poner el puntito de los miles y de separar los dos decimales con el punto en lugar de la coma, nuevamente por motivos de los controles formales del SdI, 
+- Debe completarse también, con este fin, el capital suscrito y aportado, teniendo cuidado de no poner el puntito de los miles y de separar los dos decimales con el punto en lugar de la coma, nuevamente por motivos de los controles formales del ES, 
 - la naturaleza jurídica y el régimen fiscal.
 :::
 
