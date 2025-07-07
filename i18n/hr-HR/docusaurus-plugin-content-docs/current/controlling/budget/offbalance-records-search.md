@@ -1,14 +1,13 @@
 ---
-title: Registrazioni extra-contabili di Budget
+title: Izvanproračunska evidencija 
 sidebar_position: 2
 ---
 
-Dalla form di ricerca è possibile ricercare ed inserire, tramite il tasto **Nuovo**, le registrazioni extra-contabili di Budget.
+Ovdje je moguće pretraživati i unositi izvanproračunske zapise budžeta pomoću tipke **Novi**.
 
-Per inserire un nuovo movimento è obbligatorio selezionare un [**Area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi (che si consiglia di codificare adeguatamente, ad esempio *Budget* per distinguerla, ad esempio, dal *Consuntivo* o *Simulazione* ecc....)
+Za unos novog kretanja obavezno je odabrati [**Područje**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize (preporučuje se pravilno šifrirati, npr.  *Budžet* kako bi se razlikovao od *konačnih* rezultata, *simulacije* itd....)
 
-Si procede selezionando una causale contabile (analogamente a quanto previsto per i movimenti contabili) ed una data.
-E' prevista l'indicazione della valuta di riferimento, Euro o altra divisa.
+Postupak unosa uključuje odabir predloška knjiženja (analogno onome što je predviđeno za knjigovodstvene transakcije), unos datuma knjiženja, navođenje referentne valute, bilo eura ili druge valute. 
 
-Si procede quindi inserendo, come di consueto, i sottoconti contabili, l'eventuale progetto / commessa associato e i valori dare / avere.
-I movimenti sono associati alla divisione aziendale (elemento fondamentale in particolare in presenza di più divisioni).
+Nakon toga, unosi se knjigovodstveni podkonto, pripadajući projekt (ako postoji), dugovna i potražna vrijednost.   
+Svi unosi povezani su s poslovnom podjelom poduzeća, što je posebno važno u slučaju višestrukih poslovnih jedinica.  

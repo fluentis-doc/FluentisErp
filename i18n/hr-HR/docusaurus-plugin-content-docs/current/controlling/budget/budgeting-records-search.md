@@ -1,15 +1,14 @@
 ---
-title: Registrazioni di budget
+title: Zapisi proraračuna 
 sidebar_position: 3
 ---
 
-Dalla form di ricerca è possibile ricercare ed inserire, tramite il tasto **Nuovo**, le registrazioni di Budget per i singoli periodi.
+Ovdje je moguće pretraživati i unositi zapise proračuna za pojedine periode korištenjem tipke **Novo**. 
 
-Per inserire una nuova registrazione è obbligatorio selezionare un'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi, che può essere solo una di quelle associate ad un [***Tipo area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di Budget.
+Za unos novog zapisa obavezno je odabrati [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize, pri čemu se može odabrati isključivo jedno od područja povezanih s [***Tipom područja***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) budžeta. 
 
-Si procede selezionando una causale contabile (analogamente a quanto previsto per i movimenti contabili) ed una data.
-E' prevista l'indicazione della valuta di riferimento, Euro o altra divisa.
+Zatim se odabire predložak knjiženja (kao i kod računovodstvenih transakcija), datum unosa i referentna valuta (Euro ili druga valuta). 
 
-Nella griglia dei dettagli si potrà poi andare ad inserire, come di consueto, i sottoconti contabili, i relativi centri aziendali connessi alla relativa Dimensione, l'eventuale progetto / commessa associato e i valori dare / avere.
-I movimenti dovranno essere collegati alla divisione aziendale.
+U tablici unosa detalja mogu se dodati podkonta, centri troška povezani s odgovarajućom dimenzijom, projekt (ako postoji povezanost), dugovne i potražne vrijednosti.   
+Svi unosi moraju biti povezani s odgovarajućium odjelom. 
 

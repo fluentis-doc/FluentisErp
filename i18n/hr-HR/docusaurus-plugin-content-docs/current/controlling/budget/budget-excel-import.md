@@ -1,35 +1,35 @@
 ---
-title: Importazione excel delle registrazioni extracontabili di Budget
+title: Uvoz excel datoteka za izvanproračunske evidencije 
 sidebar_position: 3
 ---
 
-Nel menù degli strumenti, all'interno del gruppo **Bizlink**, troviamo le ***Importazioni on demand*** e quindi le ***Importazioni excel***: fra queste abbiamo a disposizione l'import con codice **OffBalanceRecordsForArea**, che consente di importare facilmente le registrazioni Extracontabili di Area, quindi sia registrazioni dell'area gestionale che saranno utilizzati in integrazione all'area dei consuntivi di periodo (ad esempio, registrazioni dei compensi collegio sindacale che si caricano ad inizio anno, piuttosto che valorizzazioni extracontabili delle paghe del singolo mese) che registrazioni da utilizzare per elaborare il dettaglio del Budget di periodo.
+U izborniku alata, unutar grupe **Bizlink**, nalaze se ***uvozi na zahtjev*** uključujući ***uvoz Excel***: datoteka: među dostupnim opcijama nalazi se uvoz s šifrom **OffBalanceRecordsForArea**,(Vanbilančna knjiženja (kontroling)), koji omogućuje jednostavan uvoz izvanbilančnih zapisa za određeno područje. To su npr. knjiženja naknada odbora ili knjiženja koja služe za razradu detalja budžeta za određeni period.  
 
-I campi disponibili sono i seguenti:
-- ***Data registrazione***: obbligatorio, è la data registrazione da assegnare
+Dostupna polja za unos:
+- ***Datum unosa***: obavezno, datum koji će biti dodijeljen registraciji.
 
-- ***Data competenza***: obbligatorio, è la data competenza della registrazione, sarà sempre uguale alla data precedente
+- ***Datum obračuna***: obavezno, uvijek isti kao prethodno navedeni datum zapisa. 
 
-- ***Numero registrazione***: obbligatorio, si consiglia di impostare un numero registrazione alto, in modo da non rischiare di sovrapporsi con eventuali registrazioni già presenti alla data, create magari automaticamente da procedure di contabilizzazione (es. l'elaborazione degli ammortamenti del controlling, piuttosto che la Contabilizzazione rimanenze delle Chiusure infrannuali)
+- ***Broj zapisa***: obavezno,  preporučuje se koristiti visoke brojeve kako bi se izbjeglo preklapanje s postojećim zapisima (npr. onima generiranim automatskim postupcima poput obračuna amortizacije u kontrolingu ili knjiženja zaliha u privremenim zatvaranjima). 
 
-- ***Causale***: la causale del movimento, obbligatoria, che deve gestire i centri di costo
+- ***Predložak***: obavezno, mora biti povezan s centrima troškova.
 
-- ***Conto e SottoConto***: obbligatorio, il conto/sottoconto da assegnare al movimento
+- ***Konto i podkonto***: obavezno, konto/podkonto koji se dodjeljuje transakciji.  
 
-- [***CENTRO AZIENDALE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obbligatorio, il centro aziendale da assegnare 
+- [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obavezno, poslovni centar koji se dodjeljuje zapisu. 
 
-- ***Tipo-Numero interno-Anno-Numero WBS***: opzionalmente l'eventuale aggancio ad un progetto
+- ***Tip – Interni broj – Godina – WBS broj***: opcionalno, ako se registracija povezuje s projektom. 
 
-- ***Importo dare***: da valorizzare (magari a zero) obbligatoriamente
+- ***Duguje***: obavezno, može biti 0. 
 
-- ***Importo avere***: da valorizzare (magari a zero) obbligatoriamente
+- ***Potražuje***: obavezno, može biti 0. 
 
-- ***Da data competenza***: la data iniziale di competenza economica della riga, non obbligatoria ma da valorizzare sempre quando si tratta di movimenti economici
+- ***Od datuma obračuna***: nije obavezno, ali se preporučuje za ekonomske transakcije.
 
-- ***A data competenza***: la data finale di competenza economica della riga, non obbligatoria ma da valorizzare sempre quando si tratta di movimenti economici
+- ***Do datuma obračuna***: nije obavezno, ali se preporučuje za ekonomske transakcije. 
 
-- ***Divisione***: non obbligatoria, se non indicata sarà utilizzata quella dei parametri d'importazione, di default quella attiva
+- ***Divisione***: nije obavezno, ako nije navedeno, koristi se odjel postavljen u parametrima uvoza 
 
-Una volta inseriti tutti i campi necessari, si potrà validare il range dei dati inseriti al fine di verificare eventuali codici mancanti o errati (pulsante ***Valida range di dati***), piuttosto che lanciare direttamente l'import con il pulsante ***Importa foglio excel***: verrà richiesta la valorizzazione dell'**Area** da utilizzare e della divisa di riferimento dell'operazione.
+Nakon unosa svih potrebnih podataka, moguće je validirati raspon unesenih podataka pomoću (tipke ***Validiraj raspon podataka***), kako bi se provjerilo ima li nedostajućih ili pogrešnih šifri. Zatim se može pokrenuti uvoz podataka klikom na tipku ***Uvezite Excel tablicu***: pri čemu će biti zatražena specifikacija **Odjela**  i referentne valute operacije.
 
 
