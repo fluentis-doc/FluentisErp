@@ -27,4 +27,4 @@ Il modulo DocFinance di Fluentis ERP è un'integrazione che consente di gestire 
 
  
 **Elenco tabelle obbligatorie**: è opportuno riferirsi alla sezione  Configurazione > Tabelle >Tesoreria per identificare le corrette impostazioni di DocFinance.  
-Le form sono:  [Anagrafici ](/docs/configurations/tables/treasury/docfinance-module-tables/registers) e  [Derogabilità](/docs/configurations/tables/treasury/docfinance-module-tables/derogability)
+Le form sono:  [**Anagrafiche** ](/docs/configurations/tables/treasury/docfinance-module-tables/registers) e  [**Derogabilità**](/docs/configurations/tables/treasury/docfinance-module-tables/derogability)
