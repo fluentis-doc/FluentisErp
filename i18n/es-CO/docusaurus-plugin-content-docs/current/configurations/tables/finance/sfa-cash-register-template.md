@@ -1,5 +1,5 @@
 ---
-title: causali cassa sfa
+title: Plantillas de caja registradora SFA
 sidebar_position: 6
 ---
 

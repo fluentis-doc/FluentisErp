@@ -1,12 +1,12 @@
 ---
-title: numerazione registrazioni contabili
+title: Registros del libro de numeración
 sidebar_position: 19
 ---
 
-Ruta del formulario: **Configuración > Administración > numerazione registrazioni contabili (Configurazione > Amministrazione > Numerazione registrazioni contabili)**
+Ruta del formulario: **Configuración > Finanzas > Registros del libro de numeración**
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
+:::tip[Inicio Rápido]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido**](/docs/guide/fast-start).
 
 Si se desea configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
@@ -31,5 +31,5 @@ También se desaconseja insertar una fecha de finalización de validez para la n
 :::
 
 :::important Ver También
-[**TUTORIALES EN VIDEO SOBRE LAS TABLAS ADMINISTRATIVAS**](/docs/video/finance/intro)
+[**TUTORIALES EN VIDEO SOBRE LAS TABLAS FINANZAS**](/docs/video/finance/intro)
 :::

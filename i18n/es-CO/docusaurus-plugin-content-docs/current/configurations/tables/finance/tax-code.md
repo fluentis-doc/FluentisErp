@@ -1,35 +1,35 @@
 ---
-title: codice tributo
+title: Código Tributario
 sidebar_position: 10
 ---
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[Inicio Rápido]
+La tabla está relacionada con el procedimiento de [**Inicio Rápido**](/docs/guide/fast-start)
 
 En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
 :::
 
-La tabla ‘codice tributo (Codice tributo)', preconfigurada, almacena todos los códigos de tributo previstos para la declaración F24 gestionada dentro del módulo de perceptores: se trata de códigos oficiales ministeriales.
+La tabla ‘Código Tributario', preconfigurada, almacena todos los códigos de tributo previstos para la declaración F24 gestionada dentro del módulo de perceptores: se trata de códigos oficiales ministeriales.
 
-Los campos 'Uso (Utilizzo)', 'Tipo (Tipo)', 'Cuota (Rata)', 'Año (Anno)', 'Oficina (Ufficio)' y 'Acto (Atto)' son relevantes para la gestión del modelo F24.
+Los campos 'Uso', 'Tipo', 'Cuota', 'Año', 'Oficina' y 'Acto' son relevantes para la gestión del modelo F24.
 
-**codice**: código de tributo ministerial;  
+**Código**: código de tributo ministerial;  
 
-**descrizione**: descripción del código de tributo;  
+**Descripción**: descripción del código tributario;  
 
-**utilizzo**: código de uso;  
+**Uso**: código de uso;  
 
-**tipo**: tipo de tributo (ej. Sección Hacienda (Sez. Erario), sección Entidades locales (sez. Enti locali), etc.);  
+**Tipo**: tipo de tributo (ej. Sección Hacienda, sección Sociedades locales, etc.);  
 
-**rata**: cuota de tributo (cf. Instrucciones del modelo F24);  
+**Cuota**: cuota de tributo (cf. Instrucciones del modelo F24);  
 
-**anno**: año del tributo;  
+**Año**: año del tributo;  
 
-**uff.**: oficina;  
+**Oficina**: oficina;  
 
-**atto**: acto;  
+**Acto**: acto;  
 
-**data fine validità**: permite bloquear el uso del código en cuestión.  
+**Fecha de validez final**: permite bloquear el uso del código en cuestión.  
 
 **IVA**: califica los códigos de tributo a utilizar en la gestión de los pagos de IVA.  
 
-La sección CUENTA (CONTO) permite asignar una subcuenta contable al código de tributo, la cual prevalecerá sobre las cuentas configuradas en los parámetros generales de contabilidad en el ámbito de la contabilización del modelo F24.
+La sección CUENTA permite asignar una subcuenta contable al código tributario, la cual prevalecerá sobre las cuentas configuradas en los parámetros generales de contabilidad en el ámbito de la contabilización del modelo F24.

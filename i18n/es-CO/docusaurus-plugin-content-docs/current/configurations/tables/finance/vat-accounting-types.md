@@ -1,15 +1,15 @@
 ---
-title: tipi contabilizzazione iva
+title: Tipos de contabilidad del IVA
 sidebar_position: 24
 ---
-Esta tabla se llama dentro del registro de clientes / proveedores al que se refiere y luego dentro de las Tarifas/modalidades del IVA, para definir los subcuentas específicas a utilizar para cada tipo.
+Esta tabla se llama dentro del registro de clientes / proveedores al que se refiere y luego dentro de las Tarifas/modalidades del IVA, para definir las cuentas detalladas específicas a utilizar para cada tipo.
 
-**codice**: código identificativo del tipo de contabilización del IVA.
+**Código**: código identificativo del tipo de contabilidad del IVA.
 
-**descrizione**: descripción del tipo de contabilización del IVA.
+**Descripción**: descripción del tipo de contabilidad del IVA.
 
-**cliente**: indicador para especificar si la línea se refiere a un cliente.
+**Cliente**: indicador para especificar si la línea se refiere a un cliente.
 
-**fornitore**: indicador para especificar si la línea se refiere a un proveedor.  
+**Proveedor**: indicador para especificar si la línea se refiere a un proveedor.  
 
 Es posible seleccionar ambos indicadores cuando la línea es tanto cliente como proveedor.

@@ -1,5 +1,5 @@
 ---
-title: numerazione registri iva
+title: Numeración de registros IVA
 sidebar_position: 22
 ---
 
@@ -7,7 +7,7 @@ Permite establecer para cada registro un numerador de los protocolos IVA con las
 
 Las configuraciones del numerador son las mismas que las de los otros numeradores estándar.
 
-La numeración establecida en esta tabla se llama dentro de la [**tabla de registros IVA (tabella dei registri iva)**](/docs/configurations/tables/finance/vat-books/)
+La numeración establecida en esta tabla se llama dentro de la [**tabla de libros de IVA)**](/docs/configurations/tables/finance/vat-books/)
 
 :::tip Nota
 En la realidad italiana **no** es necesario definir ningún numerador en esta tabla, ya que la protocolización sigue **siempre** el año calendario, independientemente del año contable que cruce o no el año calendario, por lo que la numeración estándar ya prevista en la tabla de Registros IVA es suficiente para su gestión.  

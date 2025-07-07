@@ -1,14 +1,14 @@
 ---
-title: modalità di versamento
+title: Modalidad de depósito
 sidebar_position: 13
 ---
 
-La tabla permite definir y gestionar las modalidades de pago de impuestos en el módulo de Beneficiarios (Percipienti).
+La tabla permite definir y gestionar las modalidades de pago de impuestos en el módulo de Hombres profesionales.
 
-#### Campos específicos (Campi specifici)
+#### Campos específicos 
 
-**codice**: código de la modalidad de pago.  
+**Código**: código de la modalidad de pago.  
 
-**descrizione**: descripción de la modalidad de pago.  
+**Descripción**: descripción de la modalidad de pago.  
 
-Ejemplo: un registro típico que se debe insertar en esta tabla para luego llamarlo con el fin de actualizar los datos del pago de las retenciones de los beneficiarios es ***F24*** (modelo de pago de impuestos).
+Ejemplo: un registro típico que se debe insertar en esta tabla para luego llamarlo con el fin de actualizar los datos del pago de las retenciones de los hombres profesionales es ***F24*** (modelo de pago de impuestos).

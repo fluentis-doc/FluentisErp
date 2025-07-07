@@ -1,12 +1,12 @@
 ---
-title: Propiedades del activo (Proprietà cespite)
+title: Propiedades del activo fijo
 sidebar_position: 19
 ---
 
-Esta tabla permite definir un código simple y la descripción de la característica que se asignará a los diferentes activos: se podrá utilizar como filtro de búsqueda/imprimir para obtener una lista de activos que tengan una determinada propiedad o característica.
+Esta tabla permite definir un código simple y la descripción de la característica que se asignará a los diferentes activos fijos: se podrá utilizar como filtro de búsqueda/imprimir para obtener una lista de activos fijos que tengan una determinada propiedad o característica.
 
-#### Campos específicos (Campi specifici)
+#### Campos específicos
 
-**tipo**: Tipo de la propiedad del activo.  
+**Tipo**: Tipo de la propiedad del activo fijo.  
 
-**descrizione**: descripción de la propiedad del activo.
+**Descripción**: descripción de la propiedad del activo fijo.
