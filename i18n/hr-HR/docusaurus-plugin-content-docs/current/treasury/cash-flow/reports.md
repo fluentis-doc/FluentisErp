@@ -1,27 +1,27 @@
 ---
-title: Analisi Cashflow
+title: Analiza novčanog toka
 sidebar_position: 5
 ---
-La fom si trova in Tesoreria > Cash Flow > Stampa > Analisi Cash Flow
+Ovaj se modul nalazi u izborniku Riznica > Cash Flow > Ispis > Analiza novčanog toka.
 
 
-Da questa maschera è possibile ottenere la stampa delle elaborazioni di cash flow calcolate e presenti a sistema: il sistema all'apertura propone come filtro l'ultima elaborazione eseguita dall'utente attuale.
+Iz ovog obrasca moguće je dobiti ispis obrađenih i u sustavu pohranjenih analiza novčanog toka: pri otvaranju sustav automatski predlaže kao filter posljednju obradu koju je izvršio trenutni korisnik.
 
-E' possibile impostare i seguenti filtri: 
+Moguće je postaviti sljedeće filtere:
 
-- quali tipi flusso riportare in stampa, disattivando il flag **Tutti i tipi flusso** e selezionando i tipi desiderati dalla griglia
+- koje vrste tokova uključiti u ispis, tako da se deaktivira oznaka **Svi tipovi toka** i odaberu željene vrste u mrežnom prikazu
  
-- le 6 date di riferimento dei calcoli, modificando i relativi campi nella sezione **Riepilogo alle seguenti scadenze**
+- 6 referentnih datuma za izračun, mijenjanjem odgovarajućih polja u sekciji **Sažetak do slijedećih dospjelosti**
 
-- il **tipo di Stampa** da visualizzare, raggruppando per tipo flusso o per tipo pagamento,
+- **Tip izvještaja** koju želite vidjeti, grupiranu prema vrsti toka ili vrsti plaćanja,
 
-- la **visualizzazione del dato** canalizzato **per banca**, 
+- **prikaz podataka** raspoređen po **banci**, 
 
-- il filtro per **Progetto** (ex commessa), 
+- filter po **Nalog za posao**  (prijašnje nalog), 
 
-- la visualizzazione dei **dettagli** di ogni singolo flusso (es. tutti gli ordini, tutti i DDT ecc.).
+- prikaz **Detalji** svakog pojedinog toka (npr. svi nalozi, svi otpremni dokumenti itd.).
 
-- Il flag **Data prevista** che espone i flussi rispetto alla data prevista anzichè rispetto al dto di default che è la *data scadenza* (se la data prevista non è stata variata, per default corrisponde alla data scadenza).
+- oznaku **Predviđeni datum** koja prikazuje tokove prema predviđenom datumu, umjesto prema zadanim postavkama koje koriste *Rok trajanja do* (ako predviđeni datum nije promijenjen, po zadanom odgovara datumu dospijeća).
 
 
 
