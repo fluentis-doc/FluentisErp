@@ -1,5 +1,5 @@
 ---
-title: Adjuntar Documentos (Allega Documenti)
+title: Adjuntar Documentos 
 sidebar_position: 7
 ---
 
@@ -13,7 +13,7 @@ La funcionalidad se encuentra en la barra de herramientas del formulario con el 
 
 </p>
 
-Al hacer clic en la **flecha (freccia)** presente en el ícono, se abrirá un menú que ofrece la posibilidad de adjuntar un nuevo documento o vincular un documento a un documento ya adjunto.
+Al hacer clic en la **flecha** presente en el ícono, se abrirá un menú que ofrece la posibilidad de adjuntar un nuevo documento o vincular un documento a un documento ya adjunto.
 
 <p align="center">
 
@@ -21,7 +21,7 @@ Al hacer clic en la **flecha (freccia)** presente en el ícono, se abrirá un me
 
 </p>
 
-Al elegir la opción **nuovo documento**, se abrirá una nueva pantalla en la que se debe seleccionar, a través de las combinaciones correspondientes, el tipo de documento que se desea adjuntar eligiendo entre las diversas categorías propuestas y el tipo de archivo que se desea adjuntar.
+Al elegir la opción **nuevo documento**, se abrirá una nueva pantalla en la que se debe seleccionar, a través de las combinaciones correspondientes, el tipo de documento que se desea adjuntar eligiendo entre las diversas categorías propuestas y el tipo de archivo que se desea adjuntar.
 
 <p align="center">
 
@@ -33,9 +33,9 @@ Esta información es obligatoria para poder proceder con el adjunto del archivo.
 
 Una vez establecida la información obligatoria y cualquier información adicional, para adjuntar el archivo se puede proceder de dos maneras:
 
-- al hacer clic en el botón **allega file**, se abrirá la carpeta que contiene los documentos a adjuntar, presente en el escritorio del usuario, donde podrá seleccionar el archivo a adjuntar. Una vez adjuntado el archivo, es necesario hacer clic en el botón **salva** para completar la operación.
+- al hacer clic en el botón **adjuntar un archivo**, se abrirá la carpeta que contiene los documentos a adjuntar, presente en el escritorio del usuario, donde podrá seleccionar el archivo a adjuntar. Una vez adjuntado el archivo, es necesario hacer clic en el botón **guardar** para completar la operación.
 
-- haciendo clic en el botón **acquisizione**, se podrá adjuntar el documento mediante escaneo; para completar la operación, siempre hay que hacer clic en el botón **salva**.
+- haciendo clic en el botón **transferir**, se podrá adjuntar el documento mediante escaneo; para completar la operación, siempre hay que hacer clic en el botón **guardar**.
 
 Cuando un archivo está adjunto, al hacer clic nuevamente en la flecha del ícono Documentos, aparecerá el nombre del archivo.
 
@@ -47,6 +47,6 @@ Cuando un archivo está adjunto, al hacer clic nuevamente en la flecha del ícon
 
 Al seleccionar el archivo, se abrirá nuevamente la pantalla de adjunto de documentos y en la barra de herramientas se habilitarán otras tres funciones, como:
 
-> **apri allegato**: al hacer clic en este botón, será posible abrir el adjunto y luego decidir si guardarlo, imprimirlo o simplemente visualizarlo;  
-> **salva allegato**: al hacer clic en este botón, se guardará directamente el adjunto en su computadora, sin visualizarlo primero;  
-> **Imprimir adjunto (Stampa allegato)**: mediante este botón se procederá directamente a imprimir el adjunto sin visualizarlo primero.
+> **Abrir archivo adjunto**: al hacer clic en este botón, será posible abrir el adjunto y luego decidir si guardarlo, imprimirlo o simplemente visualizarlo;  
+> **Guardar adjunto**: al hacer clic en este botón, se guardará directamente el adjunto en su computadora, sin visualizarlo primero;  
+> **Imprimir adjunto**: mediante este botón se procederá directamente a imprimir el adjunto sin visualizarlo primero.

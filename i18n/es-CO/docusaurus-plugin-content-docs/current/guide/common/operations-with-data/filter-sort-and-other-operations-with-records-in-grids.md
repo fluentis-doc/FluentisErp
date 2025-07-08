@@ -1,9 +1,9 @@
 ---
-title: Filtrar, ordenar y otras operaciones con los registros en las cuadrículas (Filtrare, ordinare e altre operazioni con i record nelle griglie)
+title: Filtrar, ordenar y otras operaciones con los registros en las cuadrículas 
 sidebar_position: 4
 ---
 
-### Filtrar los registros (Filtrare i record)
+### Filtrar los registros 
 
 Dentro de las cuadrículas, se pueden filtrar y/o ordenar los registros (ver el ejemplo en la imagen abajo).  
 
@@ -17,7 +17,7 @@ En el encabezado de la columna, además, hay un botón activo (un ícono similar
 
 ![](/img/it-it/guide/operations-with-data/filter-sort-and-other-operations-with-records-in-grids/image04.png)
 
-### Ordenar los registros (Ordinare i record)
+### Ordenar los registros 
 
 En las cuadrículas, además de la primera fila de filtro, es posible ordenar los registros (en orden ascendente o descendente) por una columna presionando en el encabezado de la columna misma: si se desea ordenar en cascada por otras columnas, es necesario mantener presionada la tecla ‘Shift' y hacer clic en ellas con el ratón.  
 
@@ -27,48 +27,48 @@ En la parte inferior de la máscara hay un texto que indica el registro seleccio
 
 Con el botón derecho en los encabezados de cuadrícula se permiten las siguientes operaciones:  
 
-**ordinamento crescente**: establece el ordenamiento ascendente para el campo  
+**Ordenar de forma ascendente**: establece el ordenamiento ascendente para el campo  
 
-**ordinamento decrescente**: establece el ordenamiento descendente para el campo  
+**Ordenar de manera descendente**: establece el ordenamiento descendente para el campo  
 
-**rimuovi ordinamento**: elimina el ordenamiento  
+**Ordenar claro**: elimina el ordenamiento  
 
-### Otras operaciones (Altre operazioni)
+### Otras operaciones 
 
 Con el botón derecho en los encabezados de cuadrícula se permiten las siguientes operaciones:  
 
-**raggruppa per questa colonna**: los registros de la cuadrícula estarán agrupados por el mismo campo y al presionar el + del grupo se abrirán sus detalles. Se permiten múltiples grupos uno dentro del otro.  
+**Agrupado por esta columna**: los registros de la cuadrícula estarán agrupados por el mismo campo y al presionar el + del grupo se abrirán sus detalles. Se permiten múltiples grupos uno dentro del otro.  
 
-**de-raggruppa**: (presente si se ha definido un agrupamiento) anula el agrupamiento establecido.  
+**Desagrupar**: (presente si se ha definido un agrupamiento) anula el agrupamiento establecido.  
 
-**mostra il pannello di raggruppamento**: muestra arriba de la cuadrícula la sección de gestión del agrupamiento.  
+**Mostrar panel de grupo**: muestra arriba de la cuadrícula la sección de gestión del agrupamiento.  
 
-**nascondi il pannello di raggruppamento**: (si el panel de agrupamiento está presente) oculta la sección de gestión del agrupamiento.  
+**Ocultar panel de grupo**: (si el panel de agrupamiento está presente) oculta la sección de gestión del agrupamiento.  
 
-**visualizza selettore colonne**: permite añadir columnas previstas para la cuadrícula pero que han sido ocultadas.  
+**Mostrar Selector de columnas**: permite añadir columnas previstas para la cuadrícula pero que han sido ocultadas.  
 
-**adatta**: ajusta el tamaño de la columna seleccionada a los valores presentes en el campo.  
+**Mejor ajuste**: ajusta el tamaño de la columna seleccionada a los valores presentes en el campo.  
 
-**Ajustar (todas las columnas) (Adatta (tutte le colonne))**: ajusta el tamaño de todas las columnas respecto a los valores presentes en el campo.  
+**Ajustar (todas las columnas)**: ajusta el tamaño de todas las columnas respecto a los valores presentes en el campo.  
 
-**modifica indice di raggruppamento**: (solo en caso de datos agrupados) abre un formulario donde se puede establecer un contador de ocurrencias por grupo, configurando la etiqueta correspondiente y su formato. (Las totales no deben gestionarse en esta opción sino estableciendo la cuadrícula a carga total y luego a través del panel de resumen de totales, como se explicó más abajo.)  
+**Editor de Resumen de grupo**: (solo en caso de datos agrupados) abre un formulario donde se puede establecer un contador de ocurrencias por grupo, configurando la etiqueta correspondiente y su formato. (Las totales no deben gestionarse en esta opción sino estableciendo la cuadrícula a carga total y luego a través del panel de resumen de totales, como se explicó más abajo.)  
 
-**Editor de filtro (Editor filtro)**: abre el panel de escritura manual del filtro en la cuadrícula.  
+**Editor de filtro**: abre el panel de escritura manual del filtro en la cuadrícula.  
 
-**mostra pannello di ricerca**: abre un campo de búsqueda sobre las ocurrencias de la cuadrícula, filtrando los registros mismos.  
+**Mostrar panel de búsqueda**: abre un campo de búsqueda sobre las ocurrencias de la cuadrícula, filtrando los registros mismos.  
 
-**stile fisso**: permite establecer una columna como fija a la izquierda o derecha en la cuadrícula, haciendo que las otras se desplacen horizontalmente. Para establecer más columnas como fijas, mantenga presionada la tecla CTRL y luego haga clic derecho para añadir las siguientes.  
+**Estilo fijo**: permite establecer una columna como fija a la izquierda o derecha en la cuadrícula, haciendo que las otras se desplacen horizontalmente. Para establecer más columnas como fijas, mantenga presionada la tecla CTRL y luego haga clic derecho para añadir las siguientes.  
 
-**pannello riepilogo**: abre el panel de resumen de la cuadrícula, donde visualizar el número total de filas, por ejemplo.  
+**Panel de resumen**: abre el panel de resumen de la cuadrícula, donde visualizar el número total de filas, por ejemplo.  
 
-**pannello riepilogo totali**: permite visualizar el panel de totalización de los campos visualizados. Esta opción se gestiona solo en caso de que la cuadrícula ha sido configurada para cargar todos los datos (detalles más debajo).  
+**Panel de resumen total**: permite visualizar el panel de totalización de los campos visualizados. Esta opción se gestiona solo en caso de que la cuadrícula ha sido configurada para cargar todos los datos (detalles más debajo).  
 
-**riga filtro**: habilita/deshabilita la fila inicial de filtro.  
+**Filtrar fila**: habilita/deshabilita la fila inicial de filtro.  
 
-**Fin de grupo (Fine gruppo)**: muestra una sección final para cada grupo, donde es posible visualizar totales y valores de las columnas para ese grupo (para cuadrículas de carga total, como se explicó más abajo).  
+**Fin de grupo**: muestra una sección final para cada grupo, donde es posible visualizar totales y valores de las columnas para ese grupo (para cuadrículas de carga total, como se explicó más abajo).  
 
-**Exportar (Exporta)**…: permite exportar la cuadrícula en varios formatos (csv, html, imagen, mht, pdf, rtf, texto, xls, xlsx, xps).  
+**Exportar**: permite exportar la cuadrícula en varios formatos (csv, html, imagen, mht, pdf, rtf, texto, xls, xlsx, xps).  
 
-**anteprima di stampa**: abre una vista previa de impresión de la tabla de la cuadrícula, desde la cual se puede a su vez exportar los datos, adjuntarlos a un correo electrónico, imprimirlos. Las configuraciones son las de la impresora predeterminada.  
+**Vista previa de impresión**: abre una vista previa de impresión de la tabla de la cuadrícula, desde la cual se puede a su vez exportar los datos, adjuntarlos a un correo electrónico, imprimirlos. Las configuraciones son las de la impresora predeterminada.  
 
-**stampa**: ejecuta directamente la impresión de la tabla de la cuadrícula, en la impresora predeterminada.
+**Imprimir**: ejecuta directamente la impresión de la tabla de la cuadrícula, en la impresora predeterminada.

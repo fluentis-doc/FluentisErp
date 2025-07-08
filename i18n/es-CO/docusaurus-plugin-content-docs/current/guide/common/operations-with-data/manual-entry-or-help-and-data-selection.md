@@ -1,15 +1,15 @@
 ---
-title: Inserción y Selección de datos (Inserimento e Selezione dati)
+title: Inserción y Selección de datos 
 sidebar_position: 1
 ---
 
-## Inserción de datos (Inserimento dati)
+## Inserción de datos 
 
 Los datos a ingresar pueden ser:
 
-- **opcionales (opzionali)**
+- **Opcionales**
 
-- **obligatorios (obbligatori)**: en este caso, si el usuario no los ha ingresado, se resaltan antes de guardar con el ícono ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image01.png) o con un rectángulo rojo.
+- **Obligatorios**: en este caso, si el usuario no los ha ingresado, se resaltan antes de guardar con el ícono ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image01.png) o con un rectángulo rojo.
 
 ### Inserción manual  
 
@@ -37,7 +37,7 @@ Los datos a ingresar pueden ser:
 
 </p>
 
-- seleccionando el dato desde la **combo-box** (ver también  [Filtrar y ordenar registros (Filtrare e ordinare i record)](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids))  
+- seleccionando el dato desde la **combo-box** (ver también [Filtrar y ordenar registros](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids))  
 
 <p align="center">
 
@@ -47,7 +47,7 @@ Los datos a ingresar pueden ser:
 
 ### Inserción con ayuda de campo  
 
-- en todos los campos que tienen el fondo azul, con F9 o un doble clic se abre la *ayuda de campo* donde se pueden ingresar filtros para buscar los datos deseados (ver también [Buscar datos (Ricerca dati)](/docs/guide/common/operations-with-data/data-search-in-read-only-forms)).  
+- en todos los campos que tienen el fondo azul, con F9 o un doble clic se abre la *ayuda de campo* donde se pueden ingresar filtros para buscar los datos deseados (ver también [Buscar datos](/docs/guide/common/operations-with-data/data-search-in-read-only-forms)).  
 
 - ingresar el dato de forma parcial y elegir de la lista que aparecerá el dato deseado. La aplicación completará automáticamente todos los demás campos de la ayuda. En el ejemplo al lado, para el Proveedor, el primer campo es la cuenta, el segundo es el subcuenta y el tercero es la descripción del proveedor. Al ingresar los caracteres 'am', aparece la lista con las alternativas de donde se puede seleccionar el registro.  
 
@@ -57,7 +57,7 @@ Los datos a ingresar pueden ser:
 
 </p>
 
-### Inserción con Copiar y Pegar (Copia&Incolla)  
+### Inserción con Copiar y Pegar 
 
 Según el tipo de campo en el que el usuario esté ubicado, con clic derecho del mouse se abre un formulario que permite pegar el texto copiado anteriormente.  
 
@@ -67,7 +67,7 @@ Según el tipo de campo en el que el usuario esté ubicado, con clic derecho del
 
 </p>
 
-## Selección de datos (Selezione dati)
+## Selección de datos
 
 ### Selección de campo/fila  
 
@@ -75,4 +75,4 @@ Se puede seleccionar un campo (colocándose en el deseado) o una fila entera (ye
 
 ### Selección múltiple de datos  
 
-Se puede realizar sobre un campo ejecutando clic con el botón izquierdo del mouse y manteniéndolo presionado mientras se baja o sube sobre las filas que se desean seleccionar. En ciertos campos, con clic derecho del mouse se puede elegir la opción de *Seleccionar todo (Selezionare tutta)* la tabla/campo en el que el usuario está posicionado (ver imagen justo arriba).
+Se puede realizar sobre un campo ejecutando clic con el botón izquierdo del mouse y manteniéndolo presionado mientras se baja o sube sobre las filas que se desean seleccionar. En ciertos campos, con clic derecho del mouse se puede elegir la opción de *Seleccionar todo* la tabla/campo en el que el usuario está posicionado (ver imagen justo arriba).

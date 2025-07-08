@@ -1,9 +1,9 @@
 ---
-title: Navegación y aceleradores (Navigazione e acceleratori)
+title: Navegación y aceleradores
 sidebar_position: 8
 ---
 
-### Navegar en los formularios (Navigare nelle form)
+### Navegar en los formularios 
 
 - Se avanza al siguiente campo con la tecla **TAB**, tanto en los formularios como en las cuadrículas; de igual manera hacia atrás con Shift+TAB;
 
@@ -24,10 +24,10 @@ En el menú desplegable, la primera línea, identificada por el ícono del embud
 En los menús desplegables presentes en los formularios de búsqueda o impresión, generalmente, se permite la selección múltiple (manteniendo presionado **Ctrl** o **Shift**).
 
 Ejemplos de teclas disponibles en los menús, según el tipo de campo en el que se ha posicionado:
-- **help** con F9 (o doble clic): se abre la máscara de Ayuda
-- **apri form** con Ctrl+F9: se accede a la tabla de referencia en modo edición
-- **apri** con Alt+FlechaAbajo: abre el menú desplegable
-- **aggiorna** con Shift+F9: se actualiza la lista de registros cuando estás en un menú desplegable
+- **Ayuda** con F9 (o doble clic): se abre la máscara de Ayuda
+- **Formulario abierto** con Ctrl+F9: se accede a la tabla de referencia en modo edición
+- **Abrir** con Alt+FlechaAbajo: abre el menú desplegable
+- **Actualizar** con Shift+F9: se actualiza la lista de registros cuando estás en un menú desplegable
 Varios otros vínculos a formularios relacionados como en el ejemplo de la imagen debajo.
 
 <p align="center">
@@ -36,7 +36,7 @@ Varios otros vínculos a formularios relacionados como en el ejemplo de la image
 
 </p>
 
-### Navegar entre varios formularios (Navigare tra più form)
+### Navegar entre varios formularios 
 
 Cada formulario se abre en pantalla completa, con una etiqueta que permite saltar de uno a otro.  
 
@@ -48,7 +48,7 @@ Cada formulario se abre en pantalla completa, con una etiqueta que permite salta
 
 </p>
 
-2. Al hacer clic derecho en la *etiqueta del formulario*, se abrirá un *menú contextual* en el que es posible: separar el formulario (*Float*), cerrarlo (*Hide*), cerrar todos los demás (*Close all but this*), o posicionar las máscaras abiertas en sentido horizontal o vertical (*New horizontal tab group* o *New vertical tab group*).  
+2. Al hacer clic derecho en la *etiqueta del formulario*, se abrirá un *menú contextual* en el que es posible: separar el formulario (*Flotar*), cerrarlo (*Ocultar*), cerrar todos los demás (*Cierra todo menos esto*), o posicionar las máscaras abiertas en sentido horizontal o vertical (*Nuevo grupo de pestañas horizontal* o *Nuevo grupo de pestañas vertical*).  
 
 <p align="center">
 
@@ -64,12 +64,12 @@ Cada formulario se abre en pantalla completa, con una etiqueta que permite salta
 
 </p>
 
-Estos dos paneles se pueden cerrar respectivamente con las **x** que se encuentran a la izquierda del formulario (debajo de la etiqueta vertical *Filtro*), o a la derecha del nombre de la cuadrícula. El botón al lado de esta ‘x’ de cierre (un triángulo apuntando hacia abajo) permite, en caso de haber cerrado uno de estos paneles, visualizar los paneles cerrados en la parte superior (*Closed panels*), lo cual hará aparecer entre la cinta y la etiqueta del formulario una sección con la lista de los paneles cerrados, desde la cual se pueden seleccionar y reactivar.
+Estos dos paneles se pueden cerrar respectivamente con las **x** que se encuentran a la izquierda del formulario (debajo de la etiqueta vertical *Filtro*), o a la derecha del nombre de la cuadrícula. El botón al lado de esta ‘x’ de cierre (un triángulo apuntando hacia abajo) permite, en caso de haber cerrado uno de estos paneles, visualizar los paneles cerrados en la parte superior (*Paneles cerrados*), lo cual hará aparecer entre la cinta y la etiqueta del formulario una sección con la lista de los paneles cerrados, desde la cual se pueden seleccionar y reactivar.
 
-Los paneles también se pueden *separar/volver a conectar* del formulario, presionando el botón derecho del ratón sobre la etiqueta correspondiente y eligiendo *Float* o *Dock*.
-También se pueden crear grupos de paneles (*Move to next tab group*, siempre presionando el botón derecho sobre la etiqueta del panel). De este modo, los paneles serán visibles como etiquetas verticales a la izquierda del formulario.
+Los paneles también se pueden *separar/volver a conectar* del formulario, presionando el botón derecho del ratón sobre la etiqueta correspondiente y eligiendo *Flotar* o *Acoplado*.
+También se pueden crear grupos de paneles (*Mover al siguiente grupo de pestañas*, siempre presionando el botón derecho sobre la etiqueta del panel). De este modo, los paneles serán visibles como etiquetas verticales a la izquierda del formulario.
 
-### Aceleradores (Acceleratori)
+### Aceleradores 
 
 <p align="center">
 

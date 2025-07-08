@@ -1,5 +1,5 @@
 ---
-title: Búsqueda de datos (Ricerca dati)
+title: Búsqueda de datos 
 sidebar_position: 2
 ---
 
@@ -22,9 +22,9 @@ El criterio de búsqueda, si se ingresan más de una palabra clave, puede ser:
 
 :::note Nota
 
-Para conocer en qué campos del documento se realiza la búsqueda, es posible acceder al *object navigator* (a la derecha) y haciendo clic con el botón derecho presionar *dettagli*.  
+Para conocer en qué campos del documento se realiza la búsqueda, es posible acceder al *Navegador de objetos* (a la derecha) y haciendo clic con el botón derecho presionar *detalles*.  
 
-En la máscara que se abre, seleccionar nuevamente el objeto y haciendo clic con el botón derecho seleccionar *modifica oggetto standard*. Luego, seleccionar la pestaña *modelli di ricerca* en la cuadrícula inferior izquierda.
+En la máscara que se abre, seleccionar nuevamente el objeto y haciendo clic con el botón derecho seleccionar *editar objeto estándar*. Luego, seleccionar la pestaña *patrones de búsqueda* en la cuadrícula inferior izquierda.
 
 :::
 
@@ -32,9 +32,9 @@ En la máscara que se abre, seleccionar nuevamente el objeto y haciendo clic con
 
 Los filtros están típicamente en condición 'AND', es decir, es posible ingresar varios filtros simultáneamente.
 
-Haga clic en las flechas ![](/img/neutral/common/arrow.png) para abrir los [expansores (expander)](/docs/guide/common/glossary/glossary-intro#expander) y filtrar también en base a los datos contenidos en ellos.
+Haga clic en las flechas ![](/img/neutral/common/arrow.png) para abrir los [expansores](/docs/guide/common/glossary/glossary-intro#expander) y filtrar también en base a los datos contenidos en ellos.
 
-Después de ingresar los filtros deseados, presione el botón **ricerca** para obtener la lista de datos.
+Después de ingresar los filtros deseados, presione el botón **búsqueda** para obtener la lista de datos.
 
 :::note Nota
 El área de filtro puede visualizarse ya expandida al abrir la máscara si se mantiene "bloqueada" presionando el botón con el ícono de chincheta (*Pin*).
@@ -54,4 +54,4 @@ La primera fila de la cuadrícula es de filtro (el ícono en el campo de encabez
 
 El filtro en los campos de texto no distingue entre mayúsculas y minúsculas. Una vez que se comienza a filtrar los registros a través de los encabezados de columna, aparecerá en la base de la máscara un panel que muestra cómo se aplicará el filtro: en el extremo derecho de esta sección aparecerán tanto un botón de cierre/anulación del filtro como un útil botón ![](/img/neutral/common/pencil.png) de edición del filtro, donde se pueden agregar de manera guiada filtros más complejos.
 
-*Profundizaciones*: [Filtrar y ordenar los registros en las cuadrículas (Filtrare e ordinare i record nelle griglie)](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).
+*Profundizaciones*: [Filtrar y ordenar los registros en las cuadrículas](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).

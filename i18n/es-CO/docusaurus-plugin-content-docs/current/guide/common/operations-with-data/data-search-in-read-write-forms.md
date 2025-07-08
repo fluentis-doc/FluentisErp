@@ -1,9 +1,9 @@
 ---
-title: Búsqueda e inserción de datos (Ricerca e inserimento dati)
+title: Búsqueda e inserción de datos 
 sidebar_position: 3
 ---
 
-Los formularios permiten encontrar los registros insertados anteriormente para *visualizarlos*, *modificarlos*, *eliminarlos*, pero también para agregar registros **Nuevos (Nuovi)**, si el usuario tiene los **derechos necesarios (diritti necessari)** para estas operaciones.
+Los formularios permiten encontrar los registros insertados anteriormente para *visualizarlos*, *modificarlos*, *eliminarlos*, pero también para agregar registros **Nuevos**, si el usuario tiene los **derechos necesarios** para estas operaciones.
 
 Un formulario se divide en varias secciones:
 
@@ -18,9 +18,9 @@ El criterio de búsqueda, en caso de insertar más de una palabra clave, puede s
 
 :::note Nota
 
-Para conocer en qué campos del documento se realiza la búsqueda, es posible acceder al *object navigator* (a la derecha) y haciendo clic con el botón derecho seleccionar *dettagli*.
+Para conocer en qué campos del documento se realiza la búsqueda, es posible acceder al *object navigator* (a la derecha) y haciendo clic con el botón derecho seleccionar *detalles*.
 
-En la máscara que se abre, seleccione nuevamente el objeto y haciendo clic con el botón derecho seleccione *modifica oggetto standard*. Luego seleccione la pestaña *modelli di ricerca* en la cuadrícula en la parte inferior izquierda.
+En la máscara que se abre, seleccione nuevamente el objeto y haciendo clic con el botón derecho seleccione *editar objeto estándar*. Luego seleccione la pestaña *patrones de búsqueda* en la cuadrícula en la parte inferior izquierda.
 
 :::
 
@@ -28,9 +28,9 @@ En la máscara que se abre, seleccione nuevamente el objeto y haciendo clic con 
 
 Los filtros suelen estar en condición 'AND' y es posible especificar varios criterios de filtro simultáneamente para visualizar: un único registro (filtro por número de documento), varios registros (filtro por fecha), los registros ingresados en un año (filtro por año), los registros ingresados por cierta entidad (filtro por cuenta/subcuenta), etc.
 
-Haga clic en las flechas ![](/img/neutral/common/arrow.png) para abrir los [expansores (expander)](/docs/guide/common/glossary/glossary-intro#expander) y filtrar también en base a los datos contenidos en ellos.
+Haga clic en las flechas ![](/img/neutral/common/arrow.png) para abrir los [expansores](/docs/guide/common/glossary/glossary-intro#expander) y filtrar también en base a los datos contenidos en ellos.
 
-Después de insertar los filtros deseados, presione el botón **ricerca** para obtener la lista de datos.
+Después de insertar los filtros deseados, presione el botón **búsqueda** para obtener la lista de datos.
 
 :::note Nota
 El área de filtro puede visualizarse ya expandida al abrir la máscara si se mantiene "bloqueada" presionando el botón con el ícono del sujetapapeles (*Pin*). 
@@ -46,7 +46,7 @@ Representa la lista de datos que coinciden con los filtros insertados en el áre
 
 Los formularios de lectura/escritura también permiten la inserción de registros.
 
-Para hacer esto, colóquese en la última fila de la primera cuadrícula o use el botón **nuovo**. El guardado se realiza haciendo clic en otra fila.
+Para hacer esto, colóquese en la última fila de la primera cuadrícula o use el botón **nuevo**. El guardado se realiza haciendo clic en otra fila.
 
 :::note Particularidad
 Ciertos formularios tienen más cuadrículas conectadas entre sí. Para una fila de la cuadrícula superior, se pueden insertar nuevos detalles en la cuadrícula inferior.

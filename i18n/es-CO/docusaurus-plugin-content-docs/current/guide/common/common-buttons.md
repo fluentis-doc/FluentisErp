@@ -1,10 +1,10 @@
 ---
-title: Botones comunes (Pulsanti comuni)
+title: Botones comunes 
 sidebar_position: 7
 ---
 
 
-### General (Generale)
+### General 
 
 
 | <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
@@ -47,7 +47,7 @@ sidebar_position: 7
 
 
 
-### Gestión de perfiles (Gestione profili)
+### Gestión de perfiles 
 
 
 | <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
@@ -68,7 +68,7 @@ sidebar_position: 7
 
 
 
-### Actividades/Tareas (Attività/Task)
+### Actividades/Tareas 
 
 
 | <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
@@ -78,9 +78,9 @@ sidebar_position: 7
 
 
 
-### Gestor de Documentos (Document Manager)
+### Gestor de Documentos 
 
 
 | <div style={{ width:'200px' }}>Función</div> | <div style={{ width:'400px' }}>Significado</div> |
 | --- | --- |
-| ![](/img/neutral/common/document-manager.png)[Gestor de documentos (Document manager)](/docs/guide/common/operations-with-data/document-manager) | Botón que permite adjuntar archivos externos al documento en uso. |
+| ![](/img/neutral/common/document-manager.png)[Gestor de documentos](/docs/guide/common/operations-with-data/document-manager) | Botón que permite adjuntar archivos externos al documento en uso. |
