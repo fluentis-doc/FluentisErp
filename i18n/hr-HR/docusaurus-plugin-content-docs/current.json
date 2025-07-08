@@ -416,7 +416,7 @@
     "description": "The label for category Tabelle modulo DocFinance in sidebar erpHome"
   },
   "sidebar.erpHome.category.Controlling": {
-    "message": "Controlling",
+    "message": "Kontroling",
     "description": "The label for category Controlling in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabilità analitica": {
@@ -1380,7 +1380,7 @@
     "description": "The label for category Reporting in sidebar controlling"
   },
   "sidebar.controlling.category.Riclassificazioni": {
-    "message": "Riclassificazioni",
+    "message": "Reklasifikacije",
     "description": "The label for category Riclassificazioni in sidebar controlling"
   },
   "sidebar.controlling.category.modelli di riclassificazione": {
@@ -1808,7 +1808,7 @@
     "description": "The label for category Contabilità analitica in sidebar configurations"
   },
   "sidebar.configurations.category.Contabilità gestionale": {
-    "message": "Contabilità gestionale",
+    "message": "Upravljačko računovodstvo",
     "description": "The label for category Contabilità gestionale in sidebar configurations"
   },
   "sidebar.configurations.category.Contabilità industriale": {
@@ -1960,7 +1960,7 @@
     "description": "The label for category Parametri controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Panoramica Generale Controlling": {
-    "message": "Panoramica Generale Controlling",
+    "message": "Opći pregled kontrolinga",
     "description": "The label for category Panoramica Generale Controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Buget": {
@@ -1972,7 +1972,7 @@
     "description": "The label for category Modelli di riclassificazione in sidebar controlling"
   },
   "sidebar.controlling.category.Calcolo costo": {
-    "message": "Calcolo costo",
+    "message": "Izračun troška",
     "description": "The label for category Calcolo costo in sidebar controlling"
   },
   "sidebar.guide.category.Funzionalità comuni": {
@@ -2228,19 +2228,19 @@
     "description": "The label for category Riepiloghi per cedolini in sidebar projectManagement"
   },
   "sidebar.controlling.category.Tabelle e Parametri controlling": {
-    "message": "Tabelle e Parametri controlling",
+    "message": "Tablice i parametri kontrolinga",
     "description": "The label for category Tabelle e Parametri controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri specifici della contabilità analitica e gestionale": {
-    "message": "Tabelle e Parametri specifici della contabilità analitica e gestionale",
+    "message": "Tablice i specifični parametri analitičkog i upravljačkog računovodstva",
     "description": "The label for category Tabelle e Parametri specifici della contabilità analitica e gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri all'interno delle altre Aree": {
-    "message": "Tabelle e Parametri all'interno delle altre Aree",
+    "message": "Tablice i parametri unutar ostalih područja",
     "description": "The label for category Tabelle e Parametri all'interno delle altre Aree in sidebar controlling"
   },
   "sidebar.controlling.category.Gestione del controlling nelle varie aree": {
-    "message": "Gestione del controlling nelle varie aree",
+    "message": "Upravljanje kontrolingom u različitim područjima poslovanja",
     "description": "The label for category Gestione del controlling nelle varie aree in sidebar controlling"
   },
   "sidebar.controlling.category.Storico di progetto": {
