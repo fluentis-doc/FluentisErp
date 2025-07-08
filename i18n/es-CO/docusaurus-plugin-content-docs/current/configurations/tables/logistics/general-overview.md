@@ -1,5 +1,5 @@
 ---
-title: generalità
+title: Generalidad
 sidebar_position: 1
 ---
 

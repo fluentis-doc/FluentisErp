@@ -1,21 +1,21 @@
 ---
-title: tipi lotto
+title: Tipos de Lote
 sidebar_position: 33
 ---
 
-La tabla se encuentra en la ruta **Tablas > Logística > tipi lotto (Tippi lotto)**.
+La tabla se encuentra en la ruta **Tablas > Logística > Tipos de Lote**.
 
-En esta tabla es posible gestionar la codificación de las diferentes tipologías de *tipi lotto*.
+En esta tabla es posible gestionar la codificación de las diferentes tipologías de *Tipos de Lote*.
 
 Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda de tipi lotto (Ricerca Tipi lotto)**
+**Búsqueda de Tipos de Lote**
 
-El formulario consta de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** para ver los resultados en la cuadrícula de resultados.
+El formulario consta de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar** para ver los resultados en la cuadrícula de resultados.
 
-**Inserción de tipi lotto (Inserimento Tipi lotto)**
+**Inserción de Tipos de Lote**
 
-Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **nuovo**.  
-Para el nuevo registro, se deben ingresar los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **Nuevo**.  
+Para el nuevo registro, se deben ingresar los campos obligatorios requeridos por el programa: el **código** y la **descripción**.
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,6 +1,6 @@
 ---
-title: assortimenti matrix
+title: Asortimientos de matriz
 sidebar_position: 48
 ---
 
-trabajo en progreso (work in progress)
+En progreso
