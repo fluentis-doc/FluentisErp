@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento lead time disaccoppiato (DLT)
+title: Ažuriranje disociranog vremena vođenja (DLT)
 sidebar_position: 2
 ---
 

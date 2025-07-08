@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento valore zone articoli a buffer
+title: Ažuriranje vrijednosti zona artikala u bufferu
 sidebar_position: 3
 ---
 
