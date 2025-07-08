@@ -1,147 +1,173 @@
 ---
-title: ordini di produzione
+title: Órdenes de Producción (Ordini di Produzione)
 sidebar_position: 3
 ---
 
-Normalmente, las órdenes de producción se generan automáticamente a partir del procedimiento de *Liberación de órdenes planificadas*. Para crear manualmente una orden de producción, primero es necesario crear la orden planificada de producción y luego liberarla a través del procedimiento dedicado.
+Normalmente las órdenes de producción se generan automáticamente mediante el procedimiento de *Liberación de órdenes planificadas (Rilascio ordini di pianificati)*.  
+Para crear manualmente una orden de producción, es necesario crear primero la orden planificada de producción y luego liberarla mediante el procedimiento dedicado. 
 
 ## Cabecera de la orden de producción (Testata ordine di produzione)
 
-En la cabecera se resumen todos los datos referentes a la orden de producción, como: número de pedido y cliente de referencia, proyecto asociado, fecha de inicio/finalización, artículo, versión de la lista de materiales y ciclo, cantidad a producir, etc.
+En la cabecera se resumen todos los datos relativos a la orden de producción, como: número, lote y año, los datos de la orden y del cliente de referencia, el proyecto vinculado, la fecha de inicio y fin, la información relativa al artículo que se va a producir, con la versión de la lista de materiales (distinta base) y el ciclo, la cantidad que se va a producir y la producida.  
+También es posible indicar el almacén y la causal, que se utilizarán para la entrada del producto terminado en el almacén; estas tendrán máxima prioridad respecto a todos los demás parámetros, como se explica en detalle en [Parámetros de producción (Parametri di produzione)](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
 
-*Botón específico*:  
+*Botón específico (Pulsante specifico)*:  
 
-> **completamento dati ordine**: invoca el procedimiento que permite ingresar y/o actualizar, para el artículo ingresado en la orden de producción, todos los datos relacionados con materiales, fases, equipamiento, herramientas, atributos y notas varias, recuperándolos de la lista de materiales y ciclo de trabajo del artículo;  
-> **ricalcola data inizio**: Invoca el procedimiento que permite realizar una actualización de la fecha de inicio de la orden de producción y, eventualmente, de las fases de trabajo debido a una modificación de los tiempos de procesamiento y/o de la cantidad a producir del artículo objeto de la orden de producción;  
-> **Generar lista de materiales (Genera distinta base)**: permite generar la lista de materiales basándose en los datos ingresados en la orden de producción o actualizar los datos existentes con los ingresados en la orden;  
-> **Generación del ciclo de trabajo (Generazione ciclo di lavoro)**: permite crear el ciclo de trabajo del artículo basándose en los datos ingresados en la orden, o actualizar los datos existentes con los ingresados en la orden;  
+> **Finalización de datos del orden (Completamento dati ordine)**: invoca el procedimiento que permite insertar y/o actualizar, para el artículo incluido en la orden de producción, todos los datos relativos a materiales, fases, preparación, equipamientos, atributos y notas varias, tomándolos de la lista de materiales (distinta base) y del ciclo de trabajo del artículo y **válidos en la fecha de ejecución de la finalización de datos**.         
+> **Recalcular fecha de inicio (Ricalcola data inizio)**: Llama al procedimiento que permite ejecutar una actualización de la fecha de inicio de la orden de producción y eventualmente de las fases de trabajo de la misma, como resultado de una modificación de los tiempos de trabajo y/o de la cantidad a producir del artículo objeto de la orden de producción.  
+> **Generar lista de materiales (Genera distinta base)**: permite generar la lista de materiales (distinta base) con base en los datos introducidos en la orden de producción o actualizar los datos existentes con los introducidos en la orden.  
+> **Generación del ciclo de trabajo (Generazione ciclo di lavoro)**: permite crear el ciclo de trabajo del artículo basándose en los datos introducidos en la orden, o actualizar los datos existentes con los datos de la orden. 
 
-*Campos específicos*:  
+*Campos específicos (Campi specifici)*: 
 
-**stato**: indica el estado de la orden de producción: *lanciato* es el estado inicial de la orden de producción recién generada por el procedimiento de liberación de órdenes planificadas, mientras que *esecutivo* es el estado que debe asignarse a la orden para luego poder proceder con los informes de producción.     
+**Estado (Stato)**: indica el estado de la orden de producción: *Lanzado (Lanciato)* es el estado inicial de la orden de producción recién generada por el procedimiento de liberación de órdenes planificadas, mientras que *Ejecutivo (Esecutivo)* es el estado que se debe asignar a la orden para poder proceder con las notificaciones de producción.     
 
-## Materiales
+**Obligatorio (Tassativo)**: al habilitar esta bandera, la orden de producción se vuelve obligatoria, por lo tanto, la [Planificación con capacidad finita (Schedulazione a capacità finita)](/docs/planning/ms-master-scheduling/finite-capacityscheduling) no la recolocará en el tiempo y la mantendrá fija en esas fechas. Además, esto también se tendrá en cuenta en el procedimiento [M.R.P.](/docs/planning/ms-master-scheduling/mrp) cuando esté activada la bandera *Diferenciar demanda de producción confirmada (Differenzia domanda di produzione confermata)*.
 
-En esta pestaña se informan los materiales de primer nivel de la lista de materiales relativa al producto terminado a producir, pero el usuario puede modificar los datos y/o agregar materiales adicionales a la lista de componentes de la orden de producción. Para importar los datos directamente de la lista de materiales del artículo, es necesario hacer clic en el botón **completamento dati ordine** que se encuentra en la barra de ribbon.
+## Materiales (Materiali)
 
-*Botones específicos*:
+En esta pestaña se muestran los materiales de primer nivel de la lista de materiales (distinta base) correspondiente al producto terminado que se va a producir, pero el usuario puede modificar los datos y/o añadir otros materiales a la lista de componentes de la orden de producción.  
+Para importar los datos directamente de la lista de materiales (distinta base) del artículo, es necesario hacer clic en el botón **Finalización de datos del orden (Completamento dati ordine)** presente en la barra de herramientas (ribbon bar).
 
-> **inserisci materiale**: permite insertar un nuevo material en la cuadrícula;  
-> **cancella materiale**: permite eliminar los materiales ingresados en la cuadrícula. 
+*Botones específicos (Pulsanti specifici)*:
 
-*Campos específicos*:
+> **Insertar material (Inserisci materiale)**: permite insertar un nuevo material en la cuadrícula;  
+> **Borrar material (Cancella materiale)**: permite borrar los materiales insertados en la cuadrícula. 
 
-**priorità**: aquí se muestra la prioridad del componente, si está presente, insertada en la lista de materiales. Puede ser modificada, al igual que todos los demás datos presentes en esta cuadrícula;  
-**C/L**: en este campo se recupera el indicador presente en los *Parámetros MRP* del artículo llamado 'considerar en CL', es decir, indica si el artículo debe incluirse como material en las órdenes de trabajo;  
-**unità di misura**: en este campo se ingresa la posible unidad de medida alternativa del artículo;  
-**data impiego**: coincide con la fecha de inicio prevista de la orden de producción (al modificar la primera, también se cambia automáticamente esta última);  
-**Cant. de uso (Q.tà impiego)**: representa la cantidad unitaria necesaria para este artículo (prevista por la lista de materiales) que puede ser modificada;  
-**Cant. total (Q.tà totale)**: representa la cantidad que se obtiene multiplicando la *Cant. de uso (Q.tà d'impiego)* por la *Cant. a producir (Q.tà da produrre)*;   
-**Cant. alternativa (Q.tà alternativa)**: representa la cantidad total pero expresada en la unidad de medida alternativa;  
-**% scarto**: en esta casilla se inserta o se recupera de la lista de materiales el posible % de desperdicio para este artículo;  
-**fase/stfase**: con un doble clic se abre una ayuda de fases de trabajo desde la cual se puede seleccionar la fase y subfase correspondientes, y, por lo tanto, asignar el material seleccionado a una determinada fase de trabajo del artículo;  
-**Cant. disp (Q.tà disp)**: en este campo aparece la cantidad disponible del artículo a la fecha de uso;  
-**A declarar en móvil (Da dichiarare su mobile)**: si está habilitado, se declarará en móvil.
+*Campos específicos (Campi specifici)*:
 
-## Fases
+**Clase (Classe)**: Indica la clase del artículo;       
+**Código de artículo (Codice articolo)**: indica el código del artículo;          
+**Variante (Variante)**: en este campo se introduce la posible variante del artículo;           
+**UM (UM)**: en este campo se muestra la unidad de medida principal del artículo;        
+**Unidad de medida (Unità di misura)**: en este campo se introduce la posible unidad de medida alternativa del artículo;  
+**Fecha de uso (Data impiego)**: coincide con la fecha de inicio prevista de la fase de la orden de producción a la que se asocia ese material; si no se asocia a ninguna fase, coincide con el inicio de la primera fase del ciclo;      
+**Cantidad de uso (Quantità impiego)**: representa la cantidad unitaria necesaria para este artículo (prevista por la [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)) que puede modificarse igualmente;  
+**Cantidad total (Quantità totale)**: representa la cantidad que se obtiene multiplicando la *Cantidad de uso (Quantità d'impiego)* por la *Cantidad a producir (Quantità da produrre)*;      
+**Cantidad alternativa (Quantità alternativa)**: representa la cantidad total pero expresada en la unidad de medida alternativa;        
+**Cantidad retirada (Quantità prelevata)**: representa la cantidad retirada mediante la [Lista de retiro de materiales (Lista di prelievo)](/docs/production/pp-production-in-progress/picking-materials-list);      
+**Fija / Variable (Fissa / Variabile)**: indica si la cantidad del material es fija o variable; esto se hereda de la [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management);              
+**Porcentaje de desperdicio (Percentuale scarto)**: en este campo se introduce o se toma de la [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management) el porcentaje de desperdicio eventual para este artículo;  
+**Fase / Subfase (Fase / Sotto Fase)**: con doble clic se abre una ayuda de fases de trabajo desde la cual se puede seleccionar la fase y la subfase correspondientes y, por tanto, asignar el material seleccionado a una determinada fase de trabajo del artículo;     
+**Almacén (Magazzino)**: indica el almacén desde el cual se descargará este artículo;       
+**Causal (Causale)**: indica la causal de almacén con la cual se descargará este artículo;    
+**Prioridad (Priorità)**: aquí se visualiza la prioridad del componente, si está presente, introducida en la [Lista de materiales (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). Esta contribuye a la unicidad del material, por lo que el mismo material puede insertarse más veces con diferentes prioridades. Además, puede modificarse manualmente, como todos los demás datos presentes en esta cuadrícula;      
+**Cantidad disponible (Quantità disponibile)**: en este campo aparece la cantidad disponible del artículo proporcionada por el procedimiento **Recalcular viabilidad (Ricalcola fattibilità)** presente en [Secuencia de fases (Sequenza fasi)](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);           
+**A declarar en móvil (Da dichiarare su mobile)**: si está habilitado, el material se propondrá automáticamente en el formulario de declaración de producción presente en el WMS.
 
-En esta pestaña se informan las fases del ciclo de trabajo relativo al producto terminado a producir, pero el usuario puede modificar los datos y/o agregar fases adicionales a la orden de producción. Para importar los datos directamente del ciclo de trabajo del artículo, es necesario hacer clic en el botón **completamento dati ordine** presente en la barra de ribbon. En la orden de producción es posible variar una fase de interna a externa, por lo que también será posible ingresar al subcontratista, y al guardar la misma, el procedimiento creará la orden de trabajo. Además, en caso de que una fase externa se convierta en interna, el procedimiento eliminará automáticamente la orden de trabajo asociada.
+## Fases (Fasi)
 
-*Botones específicos*:
-> **inserisci fase**: permite insertar una nueva fase en la cuadrícula;  
-> **cancella fase**: permite eliminar las fases ingresadas en la cuadrícula. 
+En esta pestaña se muestran las fases del ciclo de trabajo relativas al producto terminado que se va a producir, pero el usuario puede modificar los datos y/o añadir otras fases a la orden de producción.  
+Para importar los datos directamente del ciclo de trabajo del artículo, es necesario hacer clic en el botón **Finalización de datos del orden (Completamento dati ordine)** presente en la barra de herramientas.  
+En la orden de producción es posible modificar una fase de interna a externa, por lo que será posible introducir también el subcontratista y, al guardar la misma, el procedimiento creará la orden de trabajo externo (orden de conto lavoro). Además, en el caso de que una fase externa pase a ser interna, el procedimiento eliminará automáticamente la orden de trabajo externo asociada.
 
-*Campos específicos*:
+*Botones específicos (Pulsanti specifici)*:
+> **Insertar fase (Inserisci fase)**: permite insertar una nueva fase en la cuadrícula;  
+> **Borrar fase (Cancella fase)**: permite borrar las fases insertadas en la cuadrícula. 
 
-**Código fase/Fase/Sotto Fase (Codice fase/Fase/Sotto Fase)**: con un doble clic se abre la ayuda de fases de trabajo desde la cual se puede seleccionar la fase y subfase correspondiente;  
-**ctrl. qual.**: este indicador indica si el material debe estar sujeto a control de calidad antes de su utilización;  
-**Fase prod (Fase prod)**: si el indicador está marcado, identifica que la fase en cuestión es una fase productiva, y que, por lo tanto, deberá ser informada;  
-**centro di lavoro**: desde esta combinación se establece el Centro de trabajo. Se propone automáticamente, recuperado de la fase que ha sido seleccionada e insertada previamente en la cuadrícula;  
-**Fecha inicio/final prevista (Data inizio/fine prevista)**: se trata de las fechas de inicio y fin de la fase correspondiente; al cambiar las fechas previstas de inicio y fin de trabajo, estas también se modifican automáticamente. Se calculan en función de los tiempos ingresados en las fases de trabajo, y más precisamente en base al mayor entre el tiempo de operario y el tiempo de máquina total para la fase seleccionada;  
-**tempo macchina**: es el tiempo que la máquina tarda en realizar la fase, en relación a la cantidad de piezas por fase;  
-**numero macchine**: indica el número de máquinas involucradas en esta fase;  
-**Cant. piezas por fase (Qtà pezzi per fase)**: indica el número de piezas por fase;  
-**tempo operaio**: es el tiempo que el operario tarda en realizar esta fase, en relación a la cantidad de piezas por fase;  
-**numero operai**: es el número de operarios involucrados en esta fase;  
-**Cuenta subcontratista/descripción subcontratista (Conto terzista/descrizione terzista)**: al hacer doble clic en la casilla se abre la ayuda para poder seleccionar la cuenta y subcuenta del subcontratista correspondiente. Esta *casilla está activa solo* en caso de que la fase se designe como fase *esterna*. Cabe notar que el *subcontratista* también se recupera de la fase de trabajo insertada en el ciclo de trabajo del artículo;  
-**Ord. CL creado (Ord. CL creato)**: si está marcado, indica que ya se ha creado la correspondiente orden de trabajo;  
-**sequenza**: indica la secuencia con la que debe realizarse esa fase, es posible modificarlo directamente desde la orden de producción.   
-**Costo operario (Costo operaio)**: se valora desde el inicio de la declaración de producción;    
-**costo macchina**: se valora desde el inicio de la declaración de producción;    
-**costo attrezzaggio**: se valora desde el inicio de la declaración de producción.   
+*Campos específicos (Campi specifici)*:
+
+**Código de fase / Fase / Subfase (Codice fase / Fase / Sotto Fase)**: haciendo doble clic se abre la ayuda correspondiente a fases de trabajo desde la cual se puede seleccionar la fase y subfase relativas;  
+**Control de calidad (Controllo qualità)**: si está activada, esta bandera indica que la fase está sujeta a control de calidad y en la pestaña específica se puede indicar el *Plan de control (Piano di controllo)* que se utilizará para verificar el artículo una vez realizada la declaración de producción;     
+**Fase productiva (Fase produttiva)**: si está activo, indica que la fase es productiva y se puede proceder con la inserción de las notificaciones de producción (por lo tanto, al habilitarlo, se desea que haya registro de la producción para esta fase); si no está activo, no será posible declarar la fase en sí;         
+**Fase movilizable (Fase movimentabile)**: si está activo, indica que en el momento en que se registra la fase de producción también se crean movimientos de almacén; esto significa que al proceder con la notificación de producción se procederá también con la entrada en el almacén del producto terminado y la salida de la materia prima empleada para la producción en esa fase;     
+**Centro de trabajo (Centro di lavoro)**: indica el centro de trabajo, es decir, la máquina en la que se llevará a cabo esa fase específica;     
+**Tiempo fijo (Tempo fisso)**: si está habilitado, indica que el tiempo de esa fase es fijo y, por lo tanto, no varía en función de la cantidad; esto se hereda del centro de trabajo introducido;     
+**Cantidad de la fase (Quantità fase)**: indica la cantidad total de piezas que se producirán en esa fase;        
+**Fecha de inicio / fin prevista (Data inizio / fine prevista)**: se trata de las fechas de inicio y fin de la fase correspondiente; al cambiar las fechas previstas de inicio y fin de trabajo, también se modifican automáticamente estas últimas. Se calculan basándose en los tiempos introducidos en las fases de trabajo, y más precisamente en función del mayor valor entre el tiempo total de operario y el tiempo total de máquina para la fase seleccionada;          
+**Tiempo total de máquina (Totale tempo macchina)**: indica el tiempo total de máquina, dado por el producto de *tiempo de máquina (tempo macchina)* por el *número de máquinas (numero di macchine)*;       
+**Tiempo de máquina (Tempo macchina)**: indica el tiempo de trabajo de esa máquina para esa fase;      
+**Número de máquinas (Numero macchine)**: indica el número de máquinas utilizadas en esa fase;     
+**Tiempo total de operario (Totale tempo operaio)**: indica el tiempo total de operario, dado por el producto de *tiempo de operario (tempo operaio)* por el *número de operarios (numero di operai)*;     
+**Tiempo de operario (Tempo operaio)**: indica el tiempo de trabajo de la mano de obra para esa fase;        
+**Número de operarios (Numero operai)**: indica el número de operarios empleados en esa fase;     
+**Fase / Subfase superpuesta (Fase / Sotto fase sovrapposta)**: en estos dos campos, en el caso de superposición, se indicará la fase que se desea superponer a la fase seleccionada;  
+**Ubicación (Ubicazione)**: permite asociar también una ubicación de almacén a la fase; esto significa que todos los artículos empleados en esa fase estarán presentes en esa ubicación;     
+**Descripción del subcontratista (Descrizione terzista)**: con doble clic en la casilla se abre la ayuda para poder seleccionar la cuenta y la subcon cuenta del subcontratista correspondiente. Esta casilla está activa solo cuando la fase está designada como fase *Externa (Esterna)*. Cabe destacar que el *subcontratista (terzista)* también se toma de la fase de trabajo introducida en el ciclo de trabajo del artículo;  
+**Orden de trabajo externo creado (Ordine conto lavoro creato)**: indica que se ha creado la orden de trabajo externo (orden de conto lavoro). Solo funciona para fases externas;        
+**Descripción del centro de trabajo (Descrizione centro lavoro)**: indica la descripción del centro de trabajo de la fase;       
+**Impresión definitiva (Stampa definitivo)**: indica que se ha impreso el [Parte de trabajo (Foglio di lavoro)](/docs/production/pp-production-in-progress/reports/worksheet) de manera definitiva;   
+**Fecha de impresión del parte de trabajo (Data stampa foglio di lavoro)**: indica la fecha de impresión del [Parte de trabajo (Foglio di lavoro)](/docs/production/pp-production-in-progress/reports/worksheet) de manera definitiva;      
+**Número progresivo del parte de trabajo (Numero progressivo foglio lavoro)**: indica el número progresivo del [Parte de trabajo (Foglio di lavoro)](/docs/production/pp-production-in-progress/reports/worksheet) impreso de manera definitiva.      
 
 ### Fases - Propiedades (Fasi - Proprietà)
 
-Contiene las propiedades relativas a la fase seleccionada.
+En la pestaña **Propiedades (Proprietà)** se visualizan los siguientes datos relativos a la fase seleccionada en la cuadrícula:
 
-**descrizione fase/sottofase**: en este campo aparece la descripción de la fase seleccionada;  
-**tipo**: en esta combinación es posible establecer el tipo de trabajo (interna o externa);  
-**Superposición (Sovrapp)**: a través de esta combinación se inserta el tipo de una posible superposición entre fases. Podemos tener superposición *totale* (en este caso, la fase objeto está totalmente superpuesta a la fase sucesiva indicada), *Por piezas (A pezzi)* (en este caso, es necesario indicar después de cuántas piezas producidas por esta fase comenzará la siguiente), *a tempo* (en este caso, es necesario indicar después de cuántos minutos desde que comenzó la fase objeto comenzará la siguiente);  
-**um tempi**: en esta combinación aparece la Unidad de Medida de Tiempos de la Fase; se puede decidir gestionar los tiempos de la fase en segundos, minutos, horas y días. Generalmente, se gestionan en minutos los tiempos de las fases internas y en días los de las fases externas, pero obviamente depende mucho del tipo de empresa para la que se está configurando el trabajo;  
-**macchina**: en esta combinación se puede seleccionar el código (y descripción) de la máquina correspondiente. Se propone automáticamente, recuperada del centro de trabajo que ha sido previamente insertado en la cuadrícula;  
-**gruppo manodopera**: en esta combinación se puede seleccionar el código (y descripción) del grupo de mano de obra correspondiente. Se propone automáticamente, recuperado del centro de trabajo que ha sido previamente insertado en la cuadrícula;  
-**Superposición referida a la fase/subfase (Sovrapposiz. riferita alla fase/sottofase)**: aquí se indica el código de la fase y subfase que presentan una superposición con la fase objeto. Generalmente se indica la fase siguiente, pero también aquí se trata solo de una costumbre;  
-**valore**: aquí se indica el valor de la posible superposición, utilizando los criterios especificados anteriormente;  
-**utilizzo**: si el indicador está activado, significa que se desea que el tiempo de espera/cola aumente el tiempo de compromiso del Centro de Trabajo en esa fase;  
-**tempo di attesa o coda**: indica el posible tiempo de espera/cola previsto para esta máquina.  
+**Descripción de la fase (Descrizione fase)**: indica la descripción de la fase y subfase seleccionadas;      
+**Tipo (Tipo)**: en este cuadro combinado es posible configurar el tipo de trabajo (interno o externo);  
+**Superposición (Sovrapposizione)**: mediante este cuadro combinado se introduce el tipo de superposición entre fases, en caso de que exista. Podemos tener superposición *Total (Totale)* (en este caso la fase en cuestión se superpone totalmente a la fase indicada), *Por piezas (A pezzi)* (en este caso es necesario indicar después de cuántas piezas producidas por esta fase comenzará la fase siguiente), *Por tiempo (A tempo)* (en este caso es necesario indicar después de cuántos minutos desde que comenzó la fase indicada iniciará la fase siguiente);  
+**UM Tiempos (UM Tempi)**: en este cuadro combinado aparece la Unidad de Medida de los Tiempos de la Fase; se puede decidir gestionar los tiempos de la fase en segundos, minutos, horas o días. Normalmente se gestionan en minutos los tiempos de las fases internas y en días los de las fases externas, pero depende mucho del tipo de empresa para la que se está configurando el trabajo;  
+**Máquina (Macchina)**: en este cuadro combinado se puede seleccionar el código (y descripción) de la máquina relativa. Se propone automáticamente, tomado del centro de trabajo que se ha introducido previamente en la cuadrícula;     
+**Sitio productivo (Sito produttivo)**: indica el sitio de producción en el que se producirá el artículo; esto se hereda de la orden de producción;       
+**Grupo de mano de obra (Gruppo manodopera)**: en este cuadro combinado se puede seleccionar el código (y descripción) del grupo de mano de obra correspondiente. Se propone automáticamente, tomado del centro de trabajo que se haya introducido previamente en la cuadrícula;  
+**Cantidad de piezas por fase (Quantità pezzi per fase)**: indica el número de piezas producidas por cada ejecución de esa fase;         
+**Valor (Valore)**: aquí se indica el valor de la posible superposición, utilizando los criterios especificados arriba;  
+**Uso (Utilizzo)**: si la bandera está activada, significa que se desea que el tiempo de espera / cola aumente el tiempo de compromiso del centro de trabajo en esa fase;  
+**Tiempo de espera o cola (Tempo di attesa o coda)**: indica el tiempo que es necesario esperar al finalizar la ejecución de la fase antes de poder ejecutarla de nuevo. Además, habilitando la bandera **Uso (Utilizzo)**, este tiempo de espera se considerará como un compromiso adicional del tiempo del centro de trabajo en esa fase.
 
-### Fases - Datos Extra (Fasi - Extra Data)
+### Fases - Extra Data (Fasi - Extra Data)
 
-Contiene los posibles datos extra relativos a la fase seleccionada.
+Contiene los posibles datos adicionales (extra data) relativos a la fase seleccionada.
 
-## Equipamiento (Attrezzaggio)
+### Fases - Documentos adjuntos (Fasi - Documenti allegati)
 
-En esta pestaña es posible definir los tiempos relativos al equipamiento de la fase seleccionada en la pestaña anterior. 
+Permite adjuntar documentos a la fase seleccionada, los cuales serán visibles también en el [MES (MES)](/docs/production/mes/mes-intro).
 
-*Campos específicos*:
+## Preparación (Attrezzaggio)
 
-**fase/sottofase**: en estos campos se visualizan las informaciones relativas a la fase que está seleccionada en la pestaña *Fases*;  
-**tipo**: indica la tipología de la fase (interna o externa);  
-**tipo sovrapposizione**: indica la tipología de la superposición;  
-**um tempi**: indica la unidad de medida temporal de la fase;  
-**centro di lavoro**: en estos campos se inserta el código (y la descripción correspondiente) del Centro de Trabajo establecido para el equipamiento;  
-**macchina**: en estos campos se inserta el código (y la descripción correspondiente) de la máquina para el equipamiento;  
-**gruppo mdo**: en estos campos se inserta el código (y la descripción correspondiente) del Grupo de mano de obra para el equipamiento;  
-**valore**: indica el valor de la posible superponibilidad;  
-**cdl**: en estos campos se visualiza el código y la descripción del respectivo Centro de Trabajo de la fase seleccionada;  
-**data inizio**: se muestra la fecha de inicio de la fase seleccionada en la pestaña *Fases*;  
-**data fine**: se muestra la fecha de fin de la fase seleccionada en la pestaña *Fases*;  
-**tempo attrezzaggio**: se inserta el tiempo del equipamiento. Se trata de un tiempo fijo, que no varía al cambiar las cantidades a producir en la fase seleccionada;  
-**tempo riattrezzaggio**: se inserta el tiempo de re-equipamiento, que se suma al tiempo de equipamiento;  
-**Num. de máquinas (Num. macchine)**: se indica el número de máquinas empleadas para el equipamiento;  
-**Num. de operarios (Num. operai)**: se indica el número de operarios empleados para el equipamiento.
+En esta pestaña es posible definir los tiempos relativos a la preparación de la fase seleccionada en la pestaña anterior.      
+Es importante recordar que los datos relativos al centro de trabajo, máquina y mano de obra, se deben introducir solo si son diferentes de los utilizados para la fase; de lo contrario, si quedan vacíos, se considerarán automáticamente los de la fase principal.  
 
-## Equipos (Attrezzature)
+*Campos específicos (Campi specifici)*:
 
-En esta pestaña, constituida principalmente por una cuadrícula, es posible definir cuáles y cuántas herramientas deberán ser utilizadas en la producción de la fase seleccionada en la pestaña *Fases*. 
+**Fase / Subfase / Descripción (Fase / Sottofase / Descrizione)**: en estos campos se muestran las informaciones relativas a la fase que está seleccionada en la pestaña *Fases (Fasi)*;  
+**Tipo (Tipo)**: indica el tipo de la fase (interna o externa);  
+**Tipo de superposición (Tipo sovrapposizione)**: indica la posible tipología de superposición;  
+**UM Tiempos (UM Tempi)**: indica la unidad de medida temporal de la fase;  
+**Centro de trabajo (Centro di Lavoro)**: en estos campos se introduce el código (y descripción) del centro de trabajo configurado para la preparación; (solo se usa si el centro de trabajo de preparación es diferente del centro de trabajo utilizado en la fase seleccionada);      
+**Máquina (Macchina)**: en estos campos se introduce el código (y descripción) de la máquina para la preparación; (solo se usa si la máquina utilizada para la preparación es diferente de la máquina utilizada en la fase seleccionada);        
+**Grupo de mano de obra (Gruppo Manodopera)**: en estos campos se introduce el código (y descripción) del grupo de mano de obra para la preparación; (solo se usa si el grupo de mano de obra utilizado para la preparación es diferente del grupo de mano de obra utilizado en la fase seleccionada);         
+**Valor (Valore)**: indica el valor de la posible superponibilidad;  
+**Centro de trabajo (Centro di lavoro)**: en estos campos se muestra el código y la descripción del centro de trabajo relativo a la fase seleccionada;  
+**Fecha de inicio (Data inizio)**: se muestra la fecha de inicio de la fase seleccionada en la pestaña *Fases (Fasi)*;  
+**Fecha de fin (Data fine)**: se muestra la fecha de fin de la fase seleccionada en la pestaña *Fases (Fasi)*;  
+**Tiempo de preparación (Tempo attrezzaggio)**: se introduce el tiempo de preparación. Se trata de un tiempo fijo, que no varía en función de la cantidad que se vaya a producir en la fase seleccionada;  
+**Tiempo de re-preparación (Tempo riattrezzaggio)**: se introduce el tiempo de re-preparación. Se utiliza en caso de que sea necesario volver a preparar el centro de trabajo entre una ejecución y otra de la misma fase y se suma al tiempo de preparación;           
+**Núm. máquinas (Num. macchine)**: se indica el número de máquinas empleadas para la preparación;  
+**Núm. operarios (Num. operai)**: se indica el número de operarios empleados para la preparación.
 
-*Campos específicos*:
+## Equipamientos (Attrezzature)
 
-**sequenza**: en este campo es posible indicar la secuencia con la que deben ser utilizadas las herramientas;  
+En esta pestaña, compuesta principalmente por una cuadrícula, es posible definir qué equipamientos y cuántos se utilizarán en la producción de la fase seleccionada en la pestaña *Fases (Fasi)*. 
 
-**attrezzature**: con esta combinación es posible recuperar el código del equipo, recuperado de la tabla correspondiente [Herramientas](/docs/configurations/tables/production/equipments);  
-**classe/codice articolo**: en estos campos es posible indicar la clase y el código del artículo (la ayuda filtra automáticamente solo los artículos que están identificados como *Herramientas* en el campo *Naturaleza Artículo* de la base de datos de inventario);  
-**variante**: representa la variante del artículo;  
-**quantità**: representa la cantidad del artículo.
+*Campos específicos (Campi specifici)*:
 
-## Control de calidad
+**Secuencia (Sequenza)**: en este campo es posible indicar la secuencia con la que deben usarse los equipamientos;  
 
-En esta pestaña, constituida principalmente por una cuadrícula, es posible visualizar los detalles de las pruebas de control de calidad programadas para la fase/subfase.
+**Equipamientos (Attrezzature)**: con este cuadro combinado se puede llamar al código del equipamiento, tomado de la tabla correspondiente [Equipamientos (Attrezzature)](/docs/configurations/tables/production/equipments);  
+**Clase/Código de artículo (Classe/Codice articolo)**: en estos campos es posible indicar la clase y el código del artículo (la ayuda filtra automáticamente solo los artículos que están identificados como *Equipamientos (Attrezzature)* en el campo *Naturaleza del artículo (Natura Articolo)* de la ficha de almacén);  
+**Variante (Variante)**: representa la variante del artículo;  
+**Cantidad (Quantità)**: representa la cantidad del artículo.
 
-## Nota fase
+## Control de calidad (Controllo qualità)
 
-En esta pestaña se muestra la nota vinculada a la fase de trabajo seleccionada en la pestaña *Fases*. Esta es modificable por el usuario en relación con la orden de producción en cuestión.
+En esta pestaña, compuesta principalmente por una cuadrícula, es posible visualizar los detalles de las pruebas planificadas de [control de calidad (controllo qualità)](/docs/quality/quality-intro) para la fase / subfase.
 
-## Instrucciones operativas
+## Nota de la fase (Nota fase)
 
-En esta pestaña es posible adjuntar y visualizar las *Instrucciones operativas* relacionadas con la fase de trabajo seleccionada en la pestaña *Fases*.
+En esta pestaña se muestra la nota vinculada a la fase de trabajo seleccionada en la pestaña *Fases (Fasi)*. Es modificable por el usuario al mismo tiempo que la orden de producción correspondiente.
 
-## Personal
+## Instrucciones operativas (Istruzioni operative)
 
-En esta pestaña es posible ingresar a los operadores que deberán realizar las fases individuales del ciclo productivo.    
+En esta pestaña es posible adjuntar y visualizar las *Instrucciones operativas (Istruzioni operative)* vinculadas a la fase de trabajo seleccionada en la pestaña *Fases (Fasi)*. Estas serán visibles también en [Fluentis MES (Fluentis MES)](/docs/production/mes/mes-intro). 
 
-## Datos Extra
+## Personal (Personale)
 
-Para una descripción detallada sobre los datos extra, consulte el artículo [Datos extra (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).
+En esta pestaña es posible introducir a los operadores que deberán desempeñar las distintas fases del ciclo productivo. (*Se utiliza solo para personalizaciones*).    
 
-Para más detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
+## Extra Data (Extra Data)
+
+Para una descripción detallada sobre los datos adicionales (extra data), consúltese el artículo [Extra data (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).
+
+Para más detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common). 
