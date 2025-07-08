@@ -87,7 +87,10 @@ In questa sezione vengono visualizzati i dati fondamentali dei documenti che han
 
 ### Altri documenti di carico
 
-In questa sezione vengono visualizzati i dati fondamentali degli altri eventuali documenti in cui il lotto è stato impegnato, in relazione al documento selezionato nella griglia superiore.
+In questa sezione vengono visualizzati i dati fondamentali degli altri eventuali documenti in cui il lotto è stato impegnato, in relazione al documento selezionato nella griglia superiore.         
+Le righe vengono visualizzate quando un movimento di lotto viene ereditato da un altro documento, cioè quando più documenti fanno riferimento alle stesse righe di movimento di lotto.    
+Esempio: i movimenti di lotto delle bolle di consegna di acquisto possono essere ereditati dalle fatture di acquisto.         
+Nella prima griglia sono visualizzate le righe principali (sorgenti) dei movimenti di lotto provenienti dai documenti, mentre nella seconda griglia sono visualizzate le righe dei movimenti di lotto provenienti da documenti che derivano dalla riga presente nella griglia superiore (quindi ereditate).
 
 ### Scarico
 
@@ -121,7 +124,10 @@ In questa sezione vengono visualizzati i dati fondamentali di tutti i documenti,
 
 ### Altri documenti di scarico
 
-In questa sezione vengono visualizzati i dati fondamentali degli altri eventuali documenti in cui il lotto è stato impegnato, in relazione al documento selezionato nella griglia superiore.
+In questa sezione vengono visualizzati i dati fondamentali degli altri eventuali documenti in cui il lotto è stato impegnato, in relazione al documento selezionato nella griglia superiore.              
+Le righe vengono visualizzate quando un movimento di lotto viene ereditato da un altro documento, cioè quando più documenti fanno riferimento alle stesse righe di movimento di lotto.      
+Esempio: i movimenti di lotto dei materiali di un ordine di produzione possono essere ereditati dai materiali degli articoli segnalati, i movimenti di lotto degli ordini di vendita possono essere ereditati in picking, nelle bolle di consegna (DDT) o nelle fatture di vendita.                   
+Nella prima griglia sono visualizzate le righe principali (sorgenti) dei movimenti di lotto provenienti dai documenti, mentre nella seconda griglia sono visualizzate le righe dei movimenti di lotto provenienti da documenti che derivano dalla riga presente nella griglia superiore (quindi ereditate).
 
 **Tipo documento**: in questo campo viene visualizzato il tipo di documento all'interno del quale è presente il lotto, in relazione al documento selezionato nella griglia superiore. Esso può essere una DDT di vendita, una fattura di vendita, una lista di prelievo, una DDT di consegna di conto lavoro, un rientro di conto lavoro;
 
