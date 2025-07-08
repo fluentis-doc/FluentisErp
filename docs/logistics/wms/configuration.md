@@ -5,7 +5,7 @@ sidebar_position: 2
 
 **Installazione su device**
 
-Per poter installare l’app su dispositivo, occorre utilizzare un file .apk.
+Per poter installare l’app su dispositivo, occorre utilizzare un file .apk scaricabile dal repository on line. 
 
 **Download aggiornamenti**
 
