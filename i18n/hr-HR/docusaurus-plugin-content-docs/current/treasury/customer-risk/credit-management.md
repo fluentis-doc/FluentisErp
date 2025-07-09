@@ -1,21 +1,21 @@
 ---
-title: Gestione fidi
+title: Upravljanje dugovanjima 
 sidebar_position: 2
 ---
 
-Questa maschera consente di verificare e gestire le impostazioni dei fidi delle anagrafiche cliente, senza dover entrare ad una ad una dalla gestione contatti del tab ‘Home'-‘Anagrafici'-‘Anagrafiche contatti'.
+Ovaj obrazac omogućava provjeru i upravljanje postavkama limita kreditnog salda za evidencije kupaca, bez potrebe da se pojedinačno ulazi kroz upravljanje kontaktima u tabu ‘Home’ - ‘Šifarnici’ - ‘Šifarnici kontakata’.
 
-Sono previsti quattro tipi di controllo fido:
+Predviđene su četiri vrste kontrole:
 
-**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
+**Blokada dokumenata i nadzor kreditnog limita**: dokument iz prodajnog područja koji premašuje odobreni kreditni limit bit će blokiran, stoga će biti potrebna autorizacija za nastavak sljedećih faza poslovanja s klijentom;
 
-**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
+**Nadzor kreditnog limita**: provodi se jednostavna kontrola kreditnog limita uz eventualnu poruku korisniku o prekoračenju;  
 
-**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
+**Grupna blokada**: kao u prvom slučaju, ali izračun je kumulativan za sve tvrtke u bazi podataka koje pripadaju istoj klijentskoj evidenciji; 
 
-**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
+**Grupni nadzor**: kao u drugom slučaju, ali izračun je kumulativan za sve tvrtke u bazi podataka koje pripadaju istoj klijentskoj evidenciji. 
 
-Il campo del **fido assicurato** è solo un riferimento non gestito in modo attivo dal programma, così come le note fido.
+Polje **osiguranog kreditnog limita** služi samo kao referenca i nije aktivno upravljano programom, isto kao i bilješke o kreditnom limitu.
 
 
 
