@@ -1,73 +1,73 @@
 ---
-title: Esposizione clienti
+title: Izloženost kupaca 
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Rischio Cliente > Procedure > Esposizione clienti
+Obrazac se nalazi u Riznica > Rizik kupca > Procedure> Izloženost kupaca
 
-Consente di avere un quadro generale complessivo di tutta la situazione di rischio nei confronti dei vari clienti, con la possibilità di ottenere dati per agente, nazione, raggruppando anche per gruppi societari. 
+Obrazac "Izloženost kupaca" omogućuje pregled cjelokupne situacije rizika prema različitim klijentima, s mogućnošću dobivanja podataka po agentu, zemlji i grupiranju po grupama društava.  
 
-## Come verificare l'esposizione clienti
+## Kako provjeriti izloženost kupaca 
 
-1. Espandere, se necessario, la sezione dei filtri per inserire l'intervallo di date di riferimento entro cui verificare ed il criterio di raggruppamento desiderato (Per nazione, per agente o per cliente).
+1. Ako je potrebno, proširite odjeljak filtera kako biste unijeli raspon referentnih datuma za provjeru i željeni kriterij grupiranja (po državi, po agentu ili po kupcu).
 
-2. Premere il tasto **Ricerca**: i clienti presentati nella maschera sono quelli per i quali in anagrafica è stato inserito il flag *Esposizione clienti*.
+2. Premere il tasto **Traži**: kupci prikazani u ovom obrascu su oni za koje je u matičnim podacima označen parametar *Izloženost kupaca*.
 
-:::note[Nota]
-La sezione iniziale dei *parametri rischio cliente* ripropone gli stessi parametri di default di calcolo impostati per il modulo, con in più il range di date registrazione utilizzato per il controllo rimesse (per i dettagli si veda il documento successivo).
+:::note[Napomena]
+Početni odjeljak *parametara rizika kupca* prikazuje iste zadane parametre izračuna postavljene za modul, s dodatnim rasponom datuma knjiženja koji se koristi za provjeru uplata (za detalje pogledajte sljedeći dokument).
 :::
 
-:::note[Ulteriori filtri disponibili]
-E' possibile filtrare per un determinato responsabile (il dipendente che è stato associato all'anagrafica cliente, primo tab *Amministrazione*), filtrare i clienti *Esteri* o *Italia*, visualizzare i dati raggruppati per *gruppo societario* (verrà visualizzato un solo totale per il sottoconto inserito nel campo del *gruppo societario* presente nel tab *amministrazione* dell'anagrafica cliente invece che i singoli sottoconti cliente di dettaglio) e infine raggruppare (e filtrare) i dati per agente o nazione. 
+:::note[Dostupni dodatni filteri]
+Moguće je filtrirati prema odgovornoj osobi (zaposleniku koji je povezan s matičnim podacima kupca, prvi tab *Administracija *), filtrirati kupce na međunarodna *tržišta* ili *Hrvatsku*, prikazati podatke grupirane po *grupi društava* (prikazat će se samo jedan ukupni iznos za podračun unesen u polje *grupa društava* unutar taba *administracija* matičnih podataka kupca, umjesto pojedinačnih podračuna kupaca) te konačno grupirati (i filtrirati) podatke po agentu ili državi.
 
-E' prevista la possibilità di ordinare i dati per codice di conto/sottoconto o per descrizione (ragione sociale) del cliente.
+Predviđena je i mogućnost sortiranja podataka po šifri računa/podračuna ili po opisu (nazivu tvrtke) kupca.
 :::
 
-### Dati visualizzati in griglia 
+### Dati prikazani u mreži  
 
-Saranno visualizzate in rosso le righe con scostamento.
+Bit će prikazani u crvenoj boji redovi s odstupanjem.
 
-**Insoluti**: viene qui visualizzato l'importo degli insoluti non contabilizzati, oppure (se il flag in testata è inserito) anche quelli già contabilizzati;
+**Potraživanje**: Ovdje se prikazuje iznos neplaćenih stavki koje nisu knjižene, ili (ako je označena zastavica u zaglavlju) i one koje su već knjižene;
 
-**Fatt. ultimi 12 mesi**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
+**Promet zadnjih 12 mjeseci**: To je ukupni iznos prometa (iz prodajnog odjela, fakture za prodaju) u posljednjih 12 mjeseci do referentnog datuma;
 
-**Scostamento giorni**: indica il numero di giorni di scostamento tra la scadenza media e la data valuta d'incasso media, secondo quanto calcolato con la logica della maschera ‘Controllo rimesse' cui si rinvia per dettagli; La particolarità è che è una media pesata sull’importo della partita. Infatti il dato è espresso in numeri creditori (come in estratto conto scalare bancario)
+**Varijanca dani**: Označava broj dana odstupanja između prosječnog roka dospjelog i prosječnog dana plaćanja, prema izračunu napravljenom u obrascu "Kontrola doznake" koji se poziva za detalje. Posebnost je što se koristi ponderirani prosjek temeljen na iznosu stavki. Zapravo, podatak je izražen u broju dana dugovanja (kao u izvatku s bankovnog računa);
 
-**Scostamento GG scad.**: indica i giorni di scostamento medi della data scadenza rispetto alla data documento; considera solo le partite scadute = SOMMA (residuo partita * giorni ad oggi di ritardo dalla data scadenza) / somma dei residui partite. Calcola dunque un valore medio dei ritardi
+**Prosjek dana dospijeća**: Označava prosječan broj dana odstupanja od datuma dospjelosti u odnosu na datum dokumenta; uzima se u obzir samo neplaćeni iznos = Zbroj (preostali iznos stavke * broj dana zakašnjenja od datuma dospjelosti) / zbroj preostalih stavki. Izračunava prosječnu vrijednost kašnjenja;
 
-**Fatturato**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
+**Fakturirani iznos**: To je ukupni iznos prometa (iz prodajnog odjela, fakture za prodaju) od početka godine;
 
-**Giorni medi incasso**: Equivale all'indicatore denominato DSO (Days of Sales Outstanding), i giorni di rotazione del credito. La formula di calcolo è 365 * (Partite Dare – Partite avere + Effetti in scadenza + Insoluti + Fatture da contabilizzare) / Fatt. Ultimi 12 Mesi. Nel caso in cui il fatturato degli ultimi 12 mesi sia 0 allora anche il DSO sarà 0;
+**Prosječni dani naplate**: Odgovara pokazatelju poznatom kao DSO (Days of Sales Outstanding), odnosno broju dana rotacije potraživanja. Formula za izračun glasi: 365 * (Otvorene stavke potraživanja – otvorene stavke obveza + dospjeli efekti + nepodmirena potraživanja + računi koji još nisu proknjiženi) / Promet zadnjih 12 mjeseci. Ako je promet u zadnjih 12 mjeseci jednak 0, tada će i DSO biti 0;
 
-**Fido **e** Fido assicurato**: importo del fido gestionale e del fido assicurato;
+**Kredit **i** Dodijeljeni kredit**: Iznos odobrenog kredita i osigurani kredit;
 
-**Saldo partitario**: ripropone i totali dare/avere calcolati dalle partite o dal saldo contabile;
+**Stanje glavne knjige**: Prikazuje ukupne iznose na naplatu izračunate od stavki ili iz bilance;
 
-**Pagam. da reg. provv.**: importo dei pagamenti partite collegati a registrazioni provvisorie;
+**Plaćanja iz privremenih zapisa**:  Iznosi plaćanja koji su povezani s privremenim evidencijama;
 
-**Effetti in scadenza**: importo degli effetti in maturazione (effetti emessi + presentati);
+**Računi koji ističu**: Iznosi računa koji su u datumu dospjelosti;
 
-**Da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
+**Za knjiženje**: To su iznosi faktura koje su ispisane, ali još nisu knjižene;
 
-**Da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
+**Za fakturiranje**: To su iznosi otpremnica koje su ispisne, ali još nisu fakturirane;
 
-**Tot. Esposizione**: somma di ordini aperti + ddt da fatt. +fatt. da cont. + saldo partite/cont + effetti a scadere + insoluti non contab.;
+**Ukupna izloženost**: zbroj otvorenih narudžbi + otpremnica koje treba fakturirati + računa koji još nisu proknjiženi + saldo otvorenih stavki / računa + dospjelih efekata + nepodmirenih (neproknjiženih) insoluta;
 
-**Scaduto**: importo delle partite aperte e già scadute;
+**Istekao**: Iznos otvorenih stavki koje su već prošle datum dospjelosti;
 
-**Scaduto da reg. provv.**: come il precedente, ma derivanti da registrazioni provvisorie;
+**Kašnjenja iz privremenih zapisa**: Kao prethodno, ali povezano s privremenim evidencijama;
 
-**Ordini**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampati, confermati ma non ancora evasi.
+**Narudžbe**:  Iznosi narudžbi koje su ispisane, potvrđene, ali još nisu realizirane.
 
-Dalla maschera dell'esposizione clienti è possibile: effettuare una stampa dei dati visualizzati, oppure passare alla maschera del ‘Controllo rimesse' relativamente alla riga del cliente selezionato, attraverso il relativo pulsante di gestione.
+Iz obrasca "Izloženost kupaca" moguće je izvršiti ispis prikazanih podataka, ili prijeći na obrazac "Kontrola doznake" za odabranu klijentovu stavku, pomoću odgovarajućeg gumba za upravljanje.  
 
 
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-**Calcola** Pulsante per calcolare il rischio clienti secondo i filtri e le impostazioni indicate.
+**Izračunaj** Tipka za izračunavanje rizika klijenta prema označenim filtrima i postavkama.
 
-**Controllo rimesse** Richiama la procedura per aprire la maschera di controllo rimesse.
+**Kontrola doznake** Pokreće postupak za otvaranje obrasca kontrole uplata.
 
 
 
