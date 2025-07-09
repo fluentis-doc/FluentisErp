@@ -1,91 +1,91 @@
 ---
-title: Controllo rimesse
+title: Kontrola doznake 
 sidebar_position: 1
 ---
-La form si trova in Tesoreria > Rischio Cliente > Procedure >Controllo rimesse
+Obrazac se nalazi u Riznica > Rizik kupca > Procedure > Kontrola doznake.
 
-La maschera presenta il dettaglio delle registrazioni di incasso rilevate in capo al cliente, all'interno dei range di date e dei filtri inseriti in testata. 
+Ovaj obrazac prikazuje detaljan pregled evidentiranih uplata (primitaka) koje su povezane s kupcem, unutar vremenskog raspona i prema filtrima unesenima u zaglavlje obrasca.
 
-## Come verificare la situazione rimesse di un cliente
+## Kako provjeriti stanje uplata kupca
 
-1. Espandere, se necessario, la sezione dei filtri per inserire (obbligatorio) il conto del cliente da verificare
-2. Utilizzare gli altri filtri per ricercare le registrazioni di incasso interessate
-3. Premere il tasto Ricerca e leggere i risultati nella griglia centrale ed i risultati, per la media riferita al cliente nel suo complesso, nella zona in basso della form.
+1. Po potrebi proširite sekciju filtera i obavezno unesite račun kupca čije uplate želite provjeriti
+2. Upotrijebite ostale filtere za pretraživanje relevantnih evidencija uplata
+3. Pritisnite gumb Pretraži i pregledajte rezultate u središnjoj mreži, dok se prosječne vrijednosti za cjelokupno stanje kupca prikazuju u donjem dijelu obrasca.
 
-## Come si leggono e si interpretano i risultati
+## Kako čitati i tumačiti rezultate
 
-- Le registrazioni di incasso per il cliente selezionato nell'intervallo di date impostato, vengono esposte nell'ordine di data dal primo all'ultimo. Nella form sono rappresentati dal più recente in alto al meno recente in basso e viene riportata la **Data scadenza** presente nella partita aperta che è stata incassata.
+- Evidencije uplata za odabranog kupca, unutar postavljenog vremenskog raspona, prikazuju se po datumu, od najstarije prema najnovijoj. U obrascu su prikazane od najnovije na vrhu prema najstarijoj na dnu, a prikazuje se i **datum dospijeća** otvorene stavke koja je naplaćena.
 
-- Il calcolo è di tipo **scalare**, quindi le righe vengono confrontate per calcolare le differenze in giorni dalla prima alle righe successive. Vengono calcolati i **Numeri**, ovvero l'importo moltiplicato per il numero di giorni (come avviene negli estratti conto scalari inviati dalle banche e relativi ai conti correnti)
+- Izračun je **skalarnog tipa**, što znači da se retci međusobno uspoređuju kako bi se izračunale razlike u danima od prvog retka prema sljedećima. Računaju se tzv. **Brojevi**, odnosno iznos pomnožen s brojem dana (na isti način kao u skalarno obračunatim izvodima koje banke šalju za tekuće račune).
 
-- Viene considerata anche una **Valuta banca**, ovvero nel movimento contabile di incasso potrebbero essere stati aggiunti dei giorni valuta banca tra la disposizione di pagamento da parte del cliente e l'effettivo incasso. Questi giorni valuta sono visibili nella scrittura contabile attivando l'apposito flag *Giorni Banca* nella [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) e possono essere proposti attraverso [l'anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry) (Tab *Giorni Banca*) della banca di incasso, oppure valorizzati manualmente nella registrazione.
+- Uzima se u obzir i **valuta banke**,  tj. na računovodstvenom knjiženju naplate mogu biti dodani tzv. bankovni valutni dani, odnosno razmak između dana kada je kupac naložio uplatu i stvarnog primitka sredstava. Ovi valutni dani prikazani su na računovodstvenom knjiženju ako je aktivirana oznaka *Dani banke* u [Tip temeljnice](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates), a mogu biti automatski predloženi kroz [šifarnik ](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry) (Tab *Dani banke*) banke naplate ili ručno uneseni prilikom knjiženja. 
 
-Se questa data valuta non viene compilata, di default, viene considerata la data della registrazione contabile dell'incasso, e pertanto il numero dei **Giorni Valuta** aggiunti rispetto alla data dell'incasso sarà pari a zero.
+Ako se ova valuta ne unese, prema zadanim postavkama uzima se datum knjiženja naplate, pa je broj dodatnih **Valutnih dana** u odnosu na datum naplate jednak nuli.
 
-Quindi il campo **Valuta incasso** sarà pari alla data di registrazione, i campi **Giorni Valuta** e **Numeri valuta** saranno pari a zero.
+Dakle, polje **Valuta naplate** bit će jednako datumu knjiženja, dok će polja **Valutni dani** i **Valutni brojevi** biti jednaka nuli.
 
-- Il calcolo prevede un conteggio dei **Giorni Scadenza** come confronto tra la prima riga (dove il calcolo sarà sempre zero) e le righe successive. Ad esempio se la prima scadenza cadeva il giorno 9 febbraio e la successiva il giorno 20 febbraio, i giorni scadenza rispetto alla seconda riga sarnano 11. 
+- Izračun uključuje brojanje **Dana dospijeća** kao usporedbu između prvog retka (gdje je izračun uvijek nula) i sljedećih redaka. Na primjer, ako je prvo dospijeće bilo 9. veljače, a sljedeće 20. veljače, tada je broj dana dospijeća za drugi redak 11. 
 
-- Il calcolo dei **Numeri Scadenza** è dato dal prodotto dei Giorni scadenza per l'importo della rimessa. 
+- Izračun **Valutnih brojeva dospijeća** dobiva se množenjem broja dana dospijeća s iznosom naplate. 
 
 
 <details>
 
-  <summary>**Gli altri campi della griglia di dettaglio**: Click to expand!</summary>
+  <summary>**Ostali podaci u detaljnoj mreži**: Kliknite za proširenje!</summary>
  
- - **Data / Numero Registrazione**: Ripresi dalla testata della registrazione di incasso della partita cliente
- - **Descrizione causale**: causale contabile utilizzata nella scrittura di incasso
- - **Tipo documento**: ripreso dalla partita aperta che è stata incassata e riferito solitamente al tipo di fattura
- - **Numero documento**: riferito alla fattura che ha aperto la partita incassata
- - **Data Documento**: riferito alla fattura che ha aperto la partita incassata
- - **Divisa**: riferito alla partita incassata
- - **Importo originario in divisa**: riferito alla partita incassata, se diversa dalla divisa della società (cioè se diversa da Euro)
- - **Importo originario in divisa della Società**: riferito alla partita incassata, nella divisa della società (cioè in genere Euro)
- - **Importo residuo in divisa / in divisa della società**: riferito alla partita, nel caso sia parzialmente incassata, (valore espresso nella divisa originaria se diversa dalla divisa della società, cioè se diversa da Euro, oppure in Euro)
- - **Importo rimessa in divisa**: valore dell'incasso avvenuto riferito alla partita incassata, se diversa dalla divisa della società (cioè se diversa da Euro, oppure in Euro)
+ - **Datum / Broj knjiženja**: Preuzeto iz zaglavlja knjiženja naplate kupca
+ - **Opis uzroka**: knjigovodstveni razlog korišten u knjiženju naplate
+ - **Vrsta dokumenta**: preuzeto iz otvorenog dokumenta koji je naplaćen, obično se odnosi na vrstu fakture
+ - **Broj dokumenta**: broj fakture koja je otvorila naplaćeni dokument
+ - **Datum dokumenta**: datum fakture koja je otvorila naplaćeni dokument
+ - **Valuta**: valuta naplaćenog dokumenta
+ - **Izvorni iznos u valuti**: iznos izvorne partije ako je valuta različita od valute tvrtke (npr. različito od eura)
+ - **Izvorni iznos u valuti tvrtke**: iznos partije u valuti tvrtke (obično euro)
+ - **Preostali iznos u valuti / u valuti tvrtke**: preostali iznos partije ako je djelomično naplaćena (izražen u izvornim valutama ako je različito od valute tvrtke, ili u eurima)
+ - **Iznos naplate u valuti**: vrijednost izvršene naplate vezana za naplaćenu partiju, ako je valuta različita od valute tvrtke (npr. različito od eura) ili u eurima
 
 </details>
 
 
-### Nella parte bassa della form viene eseguito il calcolo finale dei <u>valori medi</u>.
+### U donjem dijelu forme izvršava se konačni izračun <u>prosječnih vrijednosti</u>.
 
-I dati medi calcolati dalla form sono:
+Izračunati prosječni podaci u formi su:
 
-- **Data valuta media di incasso** : calcolata sommando tutti gli importi delle rimesse (cioè degli incassi) visibili nella form e sommando tutti i *numeri Valuta* visibili nella form e facendo il rapporto tra le due somme (Sommatoria Numeri valuta / Sommatoria Importo rimesse) per trovare il **numero di giorni medi valuta.** Infine sommando il numero di giorni medi valuta alla prima data Valuta incasso (cioè la meno recente).
+- **Prosječni datum valute naplate** : izračunava se zbrajanjem svih iznosa uplata (tj. naplata) prikazanih u formi i zbrajanjem svih *brojeva valute* prikazanih u formi, te dijeljenjem tih dvaju zbrojeva (Zbroj brojeva valute / Zbroj iznosa uplata) kako bi se dobio prosječni broj dana valute. Na kraju se **prosječni broj dana valute** dodaje na najraniji datum valute naplate (tj. na najstariji datum).
 
-- **Data scadenza media** : calcolata sommando tutti gli importi delle rimesse (cioè degli incassi) visibili nella form e sommando tutti i *numeri Scadenza* visibili nella form e facendo il rapporto tra le due somme (Sommatoria Numeri scadenza / Sommatoria Importo rimesse) per trovare il **numero di giorni medi scadenza.** Infine sommando il numero di giorni medi scadenza alla prima data Scadenza (cioè la meno recente).
+- **Prosječni datum dospijeća** : izračunava se zbrajanjem svih iznosa uplata prikazanih u formi i zbrajanjem svih *brojeva dospijeća* prikazanih u formi, te dijeljenjem tih dvaju zbrojeva (Zbroj brojeva dospijeća / Zbroj iznosa uplata) kako bi se dobio prosječni broj dana dospijeća. Na kraju se **prosječni broj dana dospijeća** dodaje na najraniji datum dospijeća (tj. na najstariji datum).
 
-:::note[Nota]
-in caso di effetti la data valuta è impostata uguale alla data scadenza, indipendentemente dalla data di contabilizzazione dell'effetto.
+:::note[Napomena]
+U slučaju efekata, datum valute postavlja se jednak datum dospijeća, neovisno o datumu knjiženja efekta.
 :::
 
 <details>
 
-  <summary>**Il calcolo della media in pratica**: Click to expand!</summary>
+  <summary>**Izračun prosjeka u praksi**: Kliknite za proširenje!</summary>
  
- dal rapporto tra somma importi e somma giorni*importi si ottiene un nr. di giorni medi da aggiungere alla prima data per ottenere la data media.
+ odnosom između zbroja iznosa i zbroja dana*iznosa dobiva se prosječan broj dana koji se dodaje na prvi datum kako bi se dobio prosječni datum.
 
 </details>
 
 
-- **Scostamento** ovvero differenza tra data scadenza media e data valuta media incasso, che rappresenta il ritardo medio nell'incasso tra scadenza e valuta: questo numero di giorni può essere memorizzato, attraverso il pulsante **Aggiorna gg. ritardo**,  in anagrafica cliente nel campo *Giorni medi ritardo*, campo utilizzato nelle simulazioni di cash flow per ottenere la data scadenza prevista del flusso finanziario.
+- **Odmak** ili razlika između prosječnog datuma dospijeća i prosječnog datuma valute naplate, koji predstavlja prosječno kašnjenje u naplati između dospijeća i valute: ovaj broj dana može se spremiti, putem gumba **Ažuriraj broj dana kašnjenja**, u kartoteci klijenta u polju *Prosječni broj dana kašnjenja*, polju koje se koristi u simulacijama cash flow-a za dobivanje predviđenog datuma dospijeća financijskog toka.
 
 <details>
 
-  <summary>**Gli altri campi calcolai della zona di riepilogo**: Click to expand!</summary>
+  <summary>**Ostala polja za izračun u odjeljku sažetka**: Kliknite za proširenje!</summary>
  
- - **Totale Importo Originario in divisa**: Sommatoria dell'importo in divisa delle partite incassate
- - **Totale Importo Originario in Euro**: controvalore in euro el campo precedente
- - **Totale importo Residuo Divisa**: sommatoria dei valori residui delle partite incassate, se le partite sono state incassate completamente il valore sarà zero, altrimenti sarà utile per le partite parzialmente incassate
- - **Totale importo Residuo Euro**: controvalore in euro el campo precedente
- - **Totale Rimesse divisa**: sommatoria del valore in divisa degli incassi avvenuti
- - **Totale Rimesse Euro**: controvalore in euro el campo precedente
- - **Totale Numeri Valuta**: sommatoria del campo *Numeri Valuta* delle righe della griglia, utilizzato nei calcoli delle medie finali
- - **Totale Numeri Scadenza**: sommatoria del campo *Numeri Scadenza* delle righe della griglia, utilizzato nei calcoli delle medie finali
+ - **Ukupni izvorni iznos u valuti**: Zbroj iznosa u valuti naplaćenih stavki
+ - **Ukupni izvorni iznos u eurima**: protuvrijednost u eurima iz prethodnog polja
+ - **Ukupni preostali iznos u valuti**: zbroj preostalih vrijednosti naplaćenih stavki; ako su stavke potpuno naplaćene, vrijednost je nula, inače korisno za djelomično naplaćene stavke
+ - **Ukupni preostali iznos u eurima**: protuvrijednost u eurima iz prethodnog polja
+ - **Ukupni iznos naplate u valuti**: zbroj iznosa naplata u valuti
+ - **Ukupni iznos naplate u eurima**: protuvrijednost u eurima iz prethodnog polja
+ - **Ukupni brojevi valuta**: zbroj polja Brojevi valuta iz redaka tablice, koristi se za izračun konačnih prosjeka
+ - **Ukupni brojevi dospijeća**: zbroj polja Brojevi dospijeća iz redaka tablice, koristi se za izračun konačnih prosjeka
 
 </details>
 
-La maschera prevede una stampa del dettaglio del calcolo.
+Obrazac omogućava ispis detalja izračuna.
 
 
 
