@@ -1,40 +1,40 @@
 ---
-title: imballi a rendere
+title: Paquete a ser devuelto
 sidebar_position: 15
 ---
 
-La tabla se encuentra en la ruta **imballi a rendere**.
+La tabla se encuentra en la ruta **Paquete a ser devuelto**.
 
-En esta tabla es posible codificar los diferentes *imballi a rendere* que se utilizarán en la *Gestión de envases* en los documentos de compra, venta y trabajo por encargo.
+En esta tabla es posible codificar los diferentes *Paquete a ser devuelto* que se utilizarán en la *Gestión de paquetes* en los documentos de compra, venta y trabajo por encargo.
 
 Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda de envases retornables (Ricerca Imballi a rendere)**
+**Búsqueda de paquete a ser devuelto**
 
-El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, simplemente haga clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, simplemente haga clic en el botón **Buscar** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserción de envases retornables (Inserimento Imballi a rendere)**
+**Inserción de paquete a ser devuelto**
 
-Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **inserimento**.  
+Para poder insertar nuevas codificaciones, es necesario hacer clic en la cuadrícula en la primera línea vacía o presionar el botón **Inserción**.  
 
-Esta tabla contiene los artículos que se consideran *imballi a rendere* para la trazabilidad del inventario. El artículo ingresado en esta tabla debe tener como Naturaleza de artículo: *imballo* (la Naturaleza de artículo se inserta en el Registro de artículo, pestaña [Generalidades (Generalità)](/docs/erp-home/registers/items/create-new-item)).  
+Esta tabla contiene los artículos que se consideran *paquetes a ser devueltos* para la trazabilidad del inventario. El artículo ingresado en esta tabla debe tener como Naturaleza de artículo: *paquete* (la Naturaleza de artículo se inserta en el Registro de artículo, pestaña [Generalidad](/docs/erp-home/registers/items/create-new-item)).  
 A través de los indicadores en la cuadrícula, es posible elegir en qué áreas el artículo será gestionable para ser movilizado.    
 
-#### Datos obligatorios (Dati obbligatori)
+#### Datos obligatorios
 
-> **codice**: es el código del *imballo a rendere*;  
-> **descrizione**: es la descripción del *imballo a rendere*;  
-> **classe articolo**: indica la [Clase (Classe)](/docs/configurations/tables/logistics/item-class) a la que pertenece el artículo;  
-> **codice articolo**: indica el código del artículo.  
+> **Código**: es el código del *paquete a ser devuelto*;  
+> **Descripción**: es la descripción del *paquete a ser devuelto*;  
+> **Clase de ítem**: indica la [Clase](/docs/configurations/tables/logistics/item-class) a la que pertenece el artículo;  
+> **Código de artículo**: indica el código del artículo.  
 
-#### Campos específicos (Campi specifici)  
+#### Campos específicos  
 
-> **utilizzo negli acquisti**: al activar este indicador, el envase será visible en los documentos del área de compras;  
-> **utilizzo nel conto lavoro**: al activar este indicador, el envase será visible en los documentos del área de trabajo por encargo;  
-> **utilizzo nelle vendite**: al activar este indicador, el envase será visible en los documentos del área de ventas.  
+> **Uso en compras**: al activar este indicador, el envase será visible en los documentos del área de compras;  
+> **Uso en subcontratación**: al activar este indicador, el envase será visible en los documentos del área de trabajo por encargo;  
+> **Uso en ventas**: al activar este indicador, el envase será visible en los documentos del área de ventas.  
 
-Finalmente, es posible insertar **magazzino** y **causale** que se utilizarán para el artículo en cada área.
+Finalmente, es posible insertar **Almacén** y **Plantilla** que se utilizarán para el artículo en cada área.
 
-Una vez parametrizada esta tabla, en los documentos que lo contemplen, será posible abrir el formulario de envases retornables con el botón de ribbon **gestione imballi**. Este botón abrirá el procedimiento de *Gestión de envases*, ya completado con los envases definidos en la tabla *imballi a rendere*, de modo que el usuario solo deba ingresar las cantidades.  
+Una vez parametrizada esta tabla, en los documentos que lo contemplen, será posible abrir el formulario de paquete a ser devuelto con el botón de ribbon **Gestión de paquetes**. Este botón abrirá el procedimiento de *Gestión de paquetes*, ya completado con los paquetes definidos en la tabla *paquete a ser devuelto*, de modo que el usuario solo deba ingresar las cantidades.  
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,62 +1,62 @@
 ---
-title: tipi picking
+title: Tipos de Selección
 sidebar_position: 34
 ---
 
-:::important ¿Para qué sirve? (A cosa serve)
-La tabla Tipo Picking de Fluentis permite codificar y definir las diferentes modalidades de picking que pueden ser utilizadas durante la creación de listas de prellevo. Los usuarios pueden insertar nuevos registros, modificar los existentes o eliminarlos según las necesidades operativas.
+:::important ¿Para qué sirve? 
+La tabla Tipos de Selección de Fluentis permite codificar y definir las diferentes modalidades de picking que pueden ser utilizadas durante la creación de listas de prellevo. Los usuarios pueden insertar nuevos registros, modificar los existentes o eliminarlos según las necesidades operativas.
 
-Cada tipo de picking puede asociarse a parámetros específicos, incluidos un código alfanumérico único, la numeración de los documentos y las causas de movimiento. También es posible establecer el tipo de factura o DDT a utilizar y gestionar configuraciones como el estado inicial del picking y la prioridad de las ubicaciones de almacén. Esta flexibilidad permite a las empresas adaptar el sistema a sus necesidades, mejorando así la eficiencia en las operaciones de almacén y contribuyendo a una gestión óptima de los flujos de materiales.
+Cada tipo de selección puede asociarse a parámetros específicos, incluidos un código alfanumérico único, la numeración de los documentos y las plantillas de movimiento. También es posible establecer el tipo de factura o nota de entrega a utilizar y gestionar configuraciones como el estado inicial del picking y la prioridad de las ubicaciones de almacén. Esta flexibilidad permite a las empresas adaptar el sistema a sus necesidades, mejorando así la eficiencia en las operaciones de almacén y contribuyendo a una gestión óptima de los flujos de materiales.
 :::
 
-La tabla se encuentra en la ruta **Tablas > Logística > tipi picking**.
+La tabla se encuentra en la ruta **Tablas > Logística > Tipos de selección**.
 
-En esta tabla es posible codificar los diferentes tipos de picking a utilizar al crear un [Nuevo Picking](/docs/logistics/picking/picking-management).
+En esta tabla es posible codificar los diferentes tipos de selección a utilizar al crear una [Nueva Selección](/docs/logistics/picking/picking-management).
 
 Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda Tipo picking (Ricerca Tipo picking)**
+**Búsqueda Tipos de Selección**
 
-El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados en la cuadrícula de resultados.
+El formulario se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserción Tipo picking (Inserimento Tipo picking)**
+**Inserción Tipos de Selección**
 
-Para poder insertar nuevas codificaciones es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
+Para poder insertar nuevas codificaciones es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.
 
-**Tipo/Descripción (Tipo/Descrizione)**: código alfanumérico único y descripción del *Tipo picking*;  
+**Tipo/Descripción**: código alfanumérico único y descripción del *Tipos de Selección*;  
 
-**numerazione**: en este campo debe ingresarse el código de numeración apropiado. Para más detalles, consulte el artículo relacionado con [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations);  
+**Numeración**: en este campo debe ingresarse el código de numeración apropiado. Para más detalles, consulte el artículo relacionado con [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations);  
 
-**numerazione lista di prelievo**: indica la numeración a utilizar para las listas UDC creadas con este tipo de picking;  
+**Numeración de listas de picking**: indica la numeración a utilizar para las listas de notas de entrega creadas con este tipo de selección;  
 
-**evasione tipo fattura**: en este campo se debe definir el tipo de factura que debe proponerse para crear la factura a partir del picking mediante el procedimiento adecuado;  
+**Ejecución del tipo de factura**: en este campo se debe definir el tipo de factura que debe proponerse para crear la factura a partir del picking mediante el procedimiento adecuado;  
 
-**evasione tipo ddt**: en este campo se debe definir el tipo de DDT que debe proponerse para crear la nota de entrega a partir del picking mediante el procedimiento adecuado;  
+**Ejecución del tipo de nota de entrega**: en este campo se debe definir el tipo de nota de entrega que debe proponerse para crear la nota de entrega a partir del picking mediante el procedimiento adecuado;  
 
-**stato iniziale**: indica el *Estado* por defecto con el que se crea el picking;  
+**Estado inicial**: indica el *Estado* por defecto con el que se crea el picking;  
 
-**Almacén/Descripción del almacén (Magazzino/Descrizione magazzino)**: en estos campos se inserta el almacén de movimiento de la mercancía que se propondrá automáticamente en las líneas de artículo ingresadas en el picking;  
+**Almacén/Descripción del almacén**: en estos campos se inserta el almacén de movimiento de la mercancía que se propondrá automáticamente en las líneas de artículo ingresadas en el picking;  
 
-**Causa/Descripción de la causa (Causale/Descrizione causale)**: en estos campos se indica la causa de movimiento de la mercancía contenida en los pickings pertenecientes a este tipo;  
+**Plantilla/Descripción de la plantilla**: en estos campos se indica la plantilla de movimiento de la mercancía contenida en los pickings pertenecientes a este tipo;  
 
-**senza evasione**: al momento del cumplimiento del pedido, el estado de cumplimiento del pedido en el picking no se modifica;  
+**Sin ejecución**: al momento del cumplimiento del pedido, el estado de cumplimiento del pedido en el picking no se modifica;  
 
-**evasione quantità articolo non sommata**: si este indicador está activo, al crear un picking a partir de otro documento, las cantidades de las líneas de artículo cumplidas no se sumarán;  
+**Cantidad de pedido no consumida**: si este indicador está activo, al crear un picking a partir de otro documento, las cantidades de las líneas de artículo cumplidas no se sumarán;  
 
-**trasferimento**: si está activo, indica que se trata de un picking de transferencia entre almacenes internos;  
+**Transferencia**: si está activo, indica que se trata de un picking de transferencia entre almacenes internos;  
 
-**lista prelievo materiali**: los *tipi picking* que tienen este indicador activo serán visibles en la *Lista de prellevo de materiales*;  
+**Lista de materiales para picking**: los *Tipos de selección* que tienen este indicador activo serán visibles en la *Lista de materiales para picking*;  
 
 :::note Nota
-Para los *tipi picking* que se utilizarán en las *Listas de prellevo de materiales*, por lo tanto, para aquellos que tengan el indicador *Lista de prellevo de materiales* activo, es necesario insertar una causa de almacén que también tenga una contrapartida.
+Para los *Tipos de selección* que se utilizarán en las *Lista de materiales para picking*, por lo tanto, para aquellos que tengan el indicador *Lista de materiales para picking* activo, es necesario insertar una plantilla de almacén que también tenga una contrapartida.
 :::
 
-**Cumple pedidos con orden de producción (Evade ordini con commessa di produzione)**: ya no se utiliza;  
+**Ejecute órdenes con la orden de trabajo de producción**: ya no se utiliza;  
 
-**Unidad de carga obligatoria (Unità di carico obbligatoria)**: los tipos de picking que tienen este indicador desactivado no podrán ser usados para el prellevo de las UDC y serán visibles en el formulario de [Confirmación de picking](/docs/logistics/wms/sales/check-row-management) del WMS. Por el contrario, los tipos de picking que tienen este indicador activo serán visibles en la [Gestión de check (Gestione spunta)](/docs/logistics/wms/sales/check-row-management) del WMS.
+**Unidad de carga obligatoria**: los tipos de selección que tienen este indicador desactivado no podrán ser usados para el prellevo de las notas de entrega y serán visibles en el formulario de [Confirmar recogida](/docs/logistics/wms/sales/check-row-management) del WMS. Por el contrario, los tipos de selección que tienen este indicador activo serán visibles en la [Gestión de filas](/docs/logistics/wms/sales/check-row-management) del WMS.
 
-**Sujeto a sobrecumplimiento (Sovraevadibile)**: si está activo, permite sobrecumplir la cantidad indicada en el picking; se puede utilizar tanto en la [Gestión de check (Gestione spunta)](/docs/logistics/wms/sales/check-row-management) como en la [Confirmación de picking (Conferma picking)](/docs/logistics/wms/sales/check-row-management) del WMS. Si no está activo y se intenta mover una cantidad mayor que la indicada se muestra un mensaje de advertencia que impide continuar.
+**Está excesivamente ejecutado**: si está activo, permite sobrecumplir la cantidad indicada en el picking; se puede utilizar tanto en la [Gestión de filas](/docs/logistics/wms/sales/check-row-management) como en [Confirmar recogida](/docs/logistics/wms/sales/check-row-management) del WMS. Si no está activo y se intenta mover una cantidad mayor que la indicada se muestra un mensaje de advertencia que impide continuar.
 
-**stampa**: indica el nombre de la impresión asociada y el **numero di copie** que se deben ejecutar por defecto.
+**Imprimir Informe**: indica el nombre de la impresión asociada y el **Número de copias** que se deben ejecutar por defecto.
 
 Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
