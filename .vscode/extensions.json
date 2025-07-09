@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "streetsidesoftware.code-spell-checker-italian",
-        "hyoretsu.code-spell-checker-language-pack"
+        "hyoretsu.code-spell-checker-language-pack",
+        "artinfo.translationextension"
     ]
 }
