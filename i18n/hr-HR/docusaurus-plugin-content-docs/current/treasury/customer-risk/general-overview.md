@@ -1,34 +1,33 @@
 ---
-title: Introduzione
+title: Uvod 
 sidebar_position: 1
 ---
 
-Il modulo Rischio Cliente di Fluentis ERP è uno strumento utile per monitorare e gestire il rischio finanziario associato ai clienti, garantendo un controllo costante dell'esposizione creditizia aziendale. Questo modulo permette di analizzare e valutare il rischio di insolvenza dei clienti, aiutando le imprese a prendere decisioni informate e a migliorare la gestione dei crediti.
+Modul Rizik Klijenta u sklopu Fluentis ERP-a koristan je alat za praćenje i upravljanje financijskim rizikom povezanim s klijentima, osiguravajući stalnu kontrolu izloženosti poduzeća kreditnom riziku. Ovaj modul omogućuje analizu i procjenu rizika insolventnosti klijenata, pomažući tvrtkama u donošenju informiranih odluka i poboljšanju upravljanja kreditima.   
 
-Il modulo consente all'operatore di definire e controllare gli affidamenti dei clienti. In relazione ad ogni cliente verrà definito il valore del fido e la modalità di monitoraggio, con semplice avviso, oppure con un blocco in caso di superamento.
-Potranno essere definiti i diritti e ruoli aziendali degli utenti deputati all'autorizzazione dei documenti bloccati ai fini della loro eventuale evasione in deroga al superamento del limite.
+Modul omogućuje operateru definiranje i kontrolu kreditnih odobrenja za klijente. Za svakog klijenta definira se iznos kredita i način praćenja, bilo putem jednostavne obavijesti ili blokade u slučaju prekoračenja. Također, moguće je definirati prava i uloge unutar poduzeća za korisnike zadužene za autorizaciju blokiranih dokumenata, kako bi se omogućila njihova eventualna obrada u iznimnim slučajevima prekoračenja limita. 
 
-Il modulo è presente nell'area tesoreria e preleva i dati dal flusso documentale attivo, dai dati di contabilità e dal portafoglio effetti.
+Modul je smješten u području Riznice te preuzima podatke iz aktivnog dokumentacijskog toka i računovodstvenih podataka.
 
-Una serie di impostazioni di natura sia tabellare precodificata, che anche una corretta parametrizzazione degli algoritmi di base, sono consigliate prima di procedere con la gestione del rischio cliente.
+Prije početka upravljanja rizikom klijenta, preporučuje se niz postavki koje uključuju unaprijed definirane tablične konfiguracije, kao i pravilnu parametizaciju osnovnih algoritama. 
 
- Funzionalità Principali
+ Glavne Funkcionalnosti 
 
-- Monitoraggio dell'esposizione creditizia: Il modulo consente di definire limiti di credito personalizzati per ciascun cliente e di monitorare continuamente la loro esposizione finanziaria, confrontando il credito disponibile con il credito utilizzato.
+- Praćenje kreditne izloženosti: Modul omogućuje definiranje prilagođenih kreditnih limita za svakog klijenta i kontinuirano praćenje njihove financijske izloženosti, uspoređujući dostupno dugovanje s korištenim kreditom.  
 
-- Valutazione del rischio: Integra strumenti di analisi che permettono di classificare i clienti in base al loro comportamento di pagamento, quali ad esempio i tempi medi di ritardo nel pagamento, consentendo di prendere decisioni proattive per la gestione dei crediti e dei flussi di cassa.
+- Procjena rizika: Integrira alate za analizu koji omogućuju klasifikaciju klijenata prema njihovom ponašanju u plaćanju, poput prosječnog kašnjenja u plaćanjima, što omogućuje proaktivno donošenje odluka za upravljanje dugovima i novčanim tokovima.
 
-- Blocchi automatici e avvisi: Se un cliente supera i limiti di credito o presenta fatture scadute, il sistema può attivare blocchi automatici sulla creazione di nuovi ordini o inviare avvisi al reparto vendite o amministrativo.
+- Automatske blokade i obavijesti: Ako klijent prekorači kreditne limite ili ima dospjele račune, sustav može aktivirati automatske blokade za kreiranje novih narudžbi ili slati obavijesti prodajnom ili administrativnom odjelu.
 
-- Integrazione con la contabilità: Il modulo è completamente integrato con la contabilità generale e la gestione delle partite, dalle quali legge i dati per aggiornare la reportistica di esposizione al rischio e l'utilizzo del fido di ogni cliente. E' inoltre interfacciato con il ciclo attivo intervenendo direttamente nella creazione dei documenti, ordine, DDT e fatture, al fine di avvisare o bloccare l'evasione della fornitore qualora il limite vanga superato
-
+- Integracija s računovodstvom: Modul je u potpunosti integriran s glavnim knjigovodstvom i upravljanjem otvorenim stavkama, odakle preuzima podatke za ažuriranje izvještaja o izloženosti riziku i korištenju kredita svakog klijenta. Također je povezan s procesom aktivnog ciklusa, direktno intervenirajući u kreiranju dokumenata poput narudžbi, otpremnica (DDT) i računa, kako bi upozorio ili blokirao isporuku u slučaju prekoračenja limita.   
 
 
-**Tabelle:** non sono presenti tabelle specifiche del modulo in oggetto, ma va segnalato che vari tipi documento in acquisto e vendita presentano impostazioni collegate al rischio cliente ( [tabelle collegate al modulo Rischio cliente](/docs/configurations/tables/treasury/customer-risk-module-tables) ).
+
+**Tablice:** Ne postoje specifične tablice za ovaj modul, no treba napomenuti da razni tipovi dokumenata za nabavu i prodaju sadrže postavke povezane s rizikom klijenta ( [tablice povezane s modulom Rizik klijenta](/docs/configurations/tables/treasury/customer-risk-module-tables) ).
 
  
 
-**Parametri preliminari da impostare**:  [Parametri rischio cliente](/docs/configurations/parameters/treasury/customer-risk-parameters).
+**Preliminarni parametri za postavljanje**:  [Parametri rizika klijenta](/docs/configurations/parameters/treasury/customer-risk-parameters).
 
  
 
