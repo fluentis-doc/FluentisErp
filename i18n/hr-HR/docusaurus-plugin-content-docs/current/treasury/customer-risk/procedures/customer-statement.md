@@ -23,7 +23,7 @@ Moguće je filtrirati prema odgovornoj osobi (zaposleniku koji je povezan s mati
 Predviđena je i mogućnost sortiranja podataka po šifri računa/podračuna ili po opisu (nazivu tvrtke) kupca.
 :::
 
-### Dati prikazani u mreži  
+### Podatci prikazani u mreži  
 
 Bit će prikazani u crvenoj boji redovi s odstupanjem.
 
