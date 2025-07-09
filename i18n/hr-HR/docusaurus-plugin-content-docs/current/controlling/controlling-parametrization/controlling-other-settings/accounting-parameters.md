@@ -1,15 +1,15 @@
 ---
-title: Parametri di Contabilità
+title: Parametri knjiženja   
 sidebar_position: 30
 ---
 
-Dato che possiamo collegare i Centri aziendali a più anagrafiche di Fluentis, dobbiamo definire in che priorità andare a valorizzarle quando stiamo registrando manualmente in contabilità (o stiamo eseguendo una contabilizzazione da un modulo che non gestisce l'analitica).
+Budući da se centri poduzeća mogu povezati s više šifrarnika unutar Fluentis ERP-a, potrebno je definirati prioritet prema kojem će se centri troškova dodjeljivati prilikom ručnog knjiženja ili pri knjiženju iz modula koji ne upravlja analitikom.   
 
-All'interno del parametri di contabilità, in basso a Destra, troviamo la **PROPOSTA CENTRI DI COSTO/PROFITTO**, le cui opzioni sono:
-- *Costo contabile*: significa leggere la configurazione dei centri dal sottoconto del *Piano dei conti*
-- *Anagrafica*: significa leggere la configurazione dall'*Anagrafica cliente/fornitore/agente* intestataria della registrazione contabile che si sta inserendo
-- *Costo industriale*: non attivo
+Unutar parametara knjiženja, dolje desno, nalazi se opcija **PREDLOŽI TROŠKOVNI/PROFITNI CETNAR**, koja uključuje sljedeće mogućnosti:  
+- *Knjigovodstveni trošak*: centri se preuzimaju iz konfiguracije konta u *Kontnom planu*;     
+- *Šifarnik*: centri se preuzimaju iz *šifrarnika kupca/dobavljača/agenta* povezanog s knjiženjem;    
+- *Industrijski trošak*: opcija nije aktivna  
 
-Utilizzando i pulsanti *Sposta su* e *Sposta giù*, presenti all'interno della ribbon, andremo a mettere le opzioni nell'ordine desiderato.
+Pomoću tipke *Premjesti gore* i *Premjesti dolje*, dostupnih unutar alatne trake, moguće je postaviti željeni redoslijed opcija. 
 
-La logica di attribuzione è sempre legata al piano dei conti e quindi, consigliamo di avere come priorità il COSTO CONTABILE. 
+Logika dodjele uvijek je povezana s kontnim planom, stoga se preporučuje da KNJIGOVODSTVENI TROŠAK bude postavljen kao prioritet. 

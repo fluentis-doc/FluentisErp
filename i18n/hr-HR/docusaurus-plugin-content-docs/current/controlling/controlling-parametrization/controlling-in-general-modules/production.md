@@ -1,10 +1,10 @@
 ---
-title: Dichiarazioni di produzione
+title: Procesi proizvodnje 
 sidebar_position: 40
 ---
 
-Le procedura di produzione, al momento della rilevazione di una segnalazione di produzione (un avanzamento ad esempio), sulla base delle macchine e/o dei gruppi manodopera e dei relativi agganci ai centri, andrà a riportare nella dichiarazione di produzione il collegamento al centro relativo.
+Proizvodni procesi, prilikom evidentiranja proizvodne prijave (npr. napredovanja u proizvodnji), na temelju strojeva i/ili grupa radne snage te njihovih poveznica s centrima, prenose u dokumente proizvodnje odgovarajući centar.
 
-:::tip Nota
-Dalle dichiarazioni di produzione andremo a leggere i tempi (macchina, uomo e attrezzaggio uomo e macchina) piuttosto che le quantità prodotte, attraverso la procedura di ***Ripresa dati da produzione***.
+:::tip NAPOMENA
+Iz dokumenata proizvodnje moguće je očitati vremena (vrijeme rada stroja, radnika te pripreme radnika i stroja) kao i proizvedene količine putem procedure  ***Dohvat podataka iz proizvodnje***.
 :::

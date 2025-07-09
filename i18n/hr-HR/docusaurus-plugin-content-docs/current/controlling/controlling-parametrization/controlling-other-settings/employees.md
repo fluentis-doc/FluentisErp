@@ -1,12 +1,12 @@
 ---
-title: Dipendenti e Categorie attività
+title: Zaposlenici i kategorije aktivnosti  
 sidebar_position: 10
 ---
 
-All'interno del singolo ***Dipendente*** è possibile associare il [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento, che sarà utilizzato per le importazioni dei movimenti delle paghe ma anche all'interno della ***Dichiarazione attività*** dell'area progetti, in combinazione con la ***Categoria attività***.
+Unutar podataka o pojedinom ***Zaposleniku*** moguće je dodijeliti odgovarajući [***CENTAR TROŠKOVA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) koji će se koristiti za uvoz platnih transakcija, ali i unutar ***Aktivnosti*** u sklopu modula projekata, u kombinaciji s ***Kategorijom aktivnosti***.
 
-:::tip Nota
-All'interno della *Dichiarazione attività*, in particolare, il Centro di origine sarà impostato dal centro del dipendente/risorsa mentre il centro di destinazione dalla categoria attività.
+:::tip NAPOMENA 
+Unutar *aktivnosti*, izvorni centar postavlja se prema centru zaposlenika/resursa, dok se odredišni centar određuje prema kategoriji aktivnosti.
 
-In questo modo si riescono a gestire casi nei quali, ad esempio, il personale dell'ufficio tecnico lavora per il commerciale, ribaltando quindi i costi del centro di appartenenza al centro di destinazione delle attività
+Na taj način moguće je upravljati slučajevima u kojima, primjerice, tehnički ured obavlja rad za komercijalni sektor, prebacujući tako troškove s centra kojem pripada zaposlenik na odredišni centar aktivnosti.   
 :::
