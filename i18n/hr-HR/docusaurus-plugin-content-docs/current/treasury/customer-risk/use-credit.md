@@ -1,51 +1,51 @@
 ---
-title: Utilizzo fidi
+title: Korištenje kredita 
 sidebar_position: 3
 ---
 
-La maschera **Utilizzo fidi** consente di creare e memorizzare un calcolo di utilizzo del fido cliente per ogni conto cliente e visualizzarne quindi una serie storica. Nella lista dei calcoli visualizzata nella maschera saranno visualizzate in rosso le righe con scostamento.
+Obrazac **Korištenje kredita** omogućuje kreiranje i spremanje izračuna korištenja kredita za svakog klijenta te pregled povijesnog prikaza. U listi izračuna prikazanoj u maski, redovi s odstupanjem bit će prikazani crvenom bojom. 
 
-Per elaborare un nuovo calcolo premere il tasto **Nuovo**.
+Za izradu novog izračuna pritisne se tipka **Novo**.
 
-All'apertura della maschera di dettaglio inserire il conto del cliente da analizzare.
+Nakon otvaranja detaljne obrasca, unese se račun klijenta koji se želi analizirati.
 
-Inserire o modificare la data di inizio calcolo che rappresentala data dalla quale vengono letti i dati utilizzati nel calcolo.
+Unese se ili izmijeni datum početka izračuna koji predstavlja datum od kojeg se čitaju podaci za izračun.
 
-Premere quindi il pulsante **Calcola**.
+Zatim se pritisne tipka **Izračunavanje**.
 
-Il calcolo può essere salvato con il comando **Salva**.
+Izračun se može spremiti pomoću naredbe **Spremi**.
 
-La **data di riferimento** costituisce il gorno in riferimento al quale viene calcolato il fido disponibile.
+**Referentni datum** predstavlja dan na koji se izračunava raspoloživi kredit.
 
-ATTENZIONE: nel caso, ad esempio did ricevute bancarie emesse e presentate al salvo buon fine, anche laddove queste siano state accreditate con l'apposita procedura contabile, ai fini del fido cliente l'importo si considera ancora impegnato fino alla data di scadenza della partita che ha generato la ricevuta bancaria. Pertanto modificando la data di riferimento del calcolo oltre detta data si potrà notare che il valore del fido viene liberato per l'importo corrispondente.
+NAPOMENA: U slučaju, primjerice, bankovnih mjenica koje su izdane i predane na naplatu, čak i ako su knjižene putem odgovarajuće računovodstvene procedure, iznos se za potrebe izračuna kredita smatra zauzetim sve do datuma dospijeća obveze koja je generirala mjenicu. Stoga, ako se referentni datum izračuna promijeni na datum nakon tog roka, može se uočiti da je iznos kredita oslobođen za odgovarajući iznos. 
 
-All'interno dei documenti di vendita, ad esempio l'ordine cliente, invece, il calcolo del fido disponibile (visibile sulla testata) è sempre vincolato alla data odierna, senza poter effettuare modifiche della data di riferimento, pertanto un nuovo ordine, se fuori fido, ,non sarà evadibile (salvo percorso autorizzativo) fino al giorno della scadenza dell'ipotetico effetto che nel ibera un valore sufficiente.
+Kod prodajnih dokumenata, poput narudžbe klijenta, izračun raspoloživog kredita (vidljiv u zaglavlju) uvijek je vezan za današnji datum, bez mogućnosti izmjene referentnog datuma. Stoga, nova narudžba koja prelazi dugovanje neće biti obradiva (osim putem autorizacijskog postupka) do dana dospijeća hipotetskog efekta koji oslobađa dovoljan iznos.
 
 
-Il Pulsante **Aggiorna fido cliente** va ad aggiornare l'anagrafica del cliente inserito nella testata del calcolo e imposta in anagrafica il valore che legge nel campo **Fido stimato**.
+Gumb **Ažurirajte kredit klijenta** ažurira evidenciju klijenta unesenu u zaglavlje izračuna i postavlja u evidenciji vrijednost koju očitava iz polja **Procijenjeni kredit**. 
 
-Questo campo, a sua volta viene popolato dal comando Calcola applicando il valore del campo **Moltiplicatore valutazione fido** (ad es. 1) ad un calcolo (ponderato) basato sul fatturato del periodo considerato per quel cliente.
+Ovo polje, pak, popunjava naredba Izračunavanje, primjenjujući vrijednost iz polja **Multiplikator kreditne procjene** (npr. 1) na ponderirani izračun temeljen na prometu klijenta u razmatranom razdoblju.
 
-In dettaglio il calcolo è così sviluppato:
+Izračun je razvijen na sljedeći način:
 
-Fatturato 12M” / 365 * “Moltiplicatore” * “Giorni dilazione medi”, dove questi ultimi sono a loro volta calcolati sulle scadenze delle fatture degli ultimi 12 mesi, come “(somma(Importo scadenza *GiorniDilazione))/(somma totale scadenze).
+Promet 12M / 365 * Množitelj * Prosječni broj dana kašnjenja, gdje su posljednji parametri izračunati na osnovu dospjelih faktura u zadnjih 12 mjeseci, prema formuli: (suma(Iznos dospijeća * Dani Kašnjenja)) / (ukupna suma dospijeća). 
 
-**ALTRI CAMPI DELLA FORM:**
+**OSTALA POLJA FORME:**
 
-**Fatt 12 m**. = fatturato dei dodici mesi precedenti
+**Promet 12M**. = promet u posljednjih dvanaest mjeseci
 
-**Partite** dare avere e relativo saldo
+**Stavke** dugovanja/potraživanja i pripadajući saldo
 
-**Dare / avere** = movimenti di incasso da registrazioni provvisorie (dato informativo)
+**Duguje / Potražuje** = naplate iz privremenih evidencija (informativni podaci)
 
-**Saldo dare / avere** = movimento contabile se è stata scelta la modalità contabile
+**Dugovani / potražni saldo** = računovodstveni pokreti ako je odabrana računovodstvena metoda 
 
-**Fatt. da contabilizzare** = non ancora contabilizzate,  (avere perché ci sono le Note di Credito) Acconti è un di cui per fatture con righe acconti
+**Promet za knjiženje** = promet koji još nije knjižen (potraživanje jer uključuje odobrenja)
 
-**DDT da fatturare** (avere se DDT di reso)
+**Otpremnice za fakturiranje** (potraživanje ako su povratne otpremnice)
 
-**Valore e nr insoluti** (statistico non entra nel calcolo)
+**Vrijednost i broj neplaćenih stavki** (statistički podatak, nije uključen u izračun)
 
-**Scaduto** = quanto delle partite aperte sono scadute 
+**Dospjelo** = iznos dospjelih otvorenih stavki 
 
 
