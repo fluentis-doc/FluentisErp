@@ -1,47 +1,47 @@
 ---
-title: Lock manager
+title: Upravljanje zaključavanjem 
 sidebar_position: 3
 ---
 
-La form si trova in Tesoreria > Rischio Cliente > Procedure > Lock Manager
+Obrazac se nalazi u Put Riznica > Rizik Klijenta > Procedure > Upravljanje zaključavanjem.
 
-Attraverso questa procedura si gestisce l'autorizzazione dei documenti che sforano i fidi, così come il blocco diretto del cliente indipendentemente dal superamento del fido.
+Putem ovog postupka upravlja se autorizacijom dokumenata koji premašuju odobrene kreditne limite, kao i izravnim blokiranjem klijenta, neovisno o prekoračenju limita.
 
-Ricordiamo che il blocco dei documenti presuppone la gestione [**dell'anagrafica cliente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) (sui clienti da sottoporre a fido e secondo la modalità scelta) e delle vari tabelle relative ai [**tipi documenti di vendita**](/docs/configurations/tables/sales/sales-order-types) (es. Tipo Ordine, Tipo DDT ...) al fine di impostare quali tipologie siano sottoposte a controllo ed eventualmente a blocco.
-
-
+Podsjećamo da blokiranje dokumenata pretpostavlja ispravnu postavku [**Cjenici Kupaca / dobavljača**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) (za klijente podložne kontroli limita i u skladu s odabranim načinom upravljanja) te odgovarajućih tablica za [**vrste prodajnih dokumenata**](/docs/configurations/tables/sales/sales-order-types) (npr. Vrsta narudžbe, Vrsta otpremnice itd.), kako bi se definiralo koje vrste dokumenata podliježu kontroli i eventualnom blokiranju.
 
 
-## Scheda Autorizzazione
 
-l'utente che ha i diritti di accesso ha la possibilità di verificare la lista dei documenti segnalati, bloccati, autorizzati ecc. 
 
-Nella griglia sarà possibile modificare lo stato da ***Doc. bloccato*** ad ***Autorizzazione rilasciata*** per consentire la continuazione del flusso documentale relativo al documento stesso. 
+## Kartica autorizacija
+
+Korisnik koji ima pristupna prava može pregledavati popis označenih, blokiranih, autoriziranih dokumenata itd. 
+
+U prikazanoj tablici moguće je promijeniti status iz ***Dok. blokiran*** u ***Autorizacija odobrena*** kako bi se omogućio nastavak dokumentacijskog tijeka za taj dokument. 
 
 :::tip Info
-Con un doppio click nella griglia sarà possibile visualizzare il documento stesso in tutti i suoi dettagli.
+Dvostrukim klikom na redak tablice moguće je otvoriti sam dokument i pregledati sve njegove detalje.
 :::
 
-## Scheda **Blocco clienti**
+## Kartica **Blokada klijenata**
 
-consente di forzare un ***Blocco ordini*** o ***Blocco ddt*** (o entrambi tramite i rispettivi flag) per una determinata lista di clienti, con un range di date blocco. 
+Omogućuje ručno postavljanje ***Blokade narudžbi*** ili ***Blokade otpremnica*** (ili oboje, putem odgovarajućih oznaka) za određeni popis klijenata, uz definiranje vremenskog razdoblja blokade. 
 
-### Come bloccare un cliente
+### Kako blokirati klijenta
 
-Ad esempio, se il cliente ha mandato insoluta una riba, l'amministrazione potrebbe  e forzare il blocco di tutte le operazioni nei confronti del cliente. 
+Na primjer, ako klijent nije podmirio ratu (npr. nepodmirena mjenica), financijsko odjeljenje može odlučiti blokirati sve poslovne transakcije s tim klijentom. 
 
-1. accedere a questa maschera
-2. compilare il campo Descrizione inserendo l'anagrafica del cliente da bloccare
-3. attivare i flag del Blocco ordini e/o del Blocco DDT e compilare le date di inizio e fine blocco
+1. pristupiti ovom obrascu
+2. ispuniti polje Opis unosom matice klijenta kojeg treba blokirati
+3. aktivirati oznake Blokada narudžbi i/ili Blokada otpremnica te upisati datume početka i kraja blokade
 
-:::note[MNota]
-Per riabilitare il cliente sarà sufficiente impostare una **data di fine validità** (in modo da tenere una traccia storica del blocco) oppure direttamente eliminare la riga dal sistema. 
-Viene memorizzato **l'utente e la data di blocco e di sblocco**.
+:::note[Napomena]
+Za ponovno omogućavanje poslovanja s klijentom dovoljno je unijeti **Datum završetka valjanosti zaključavanja** (čime se zadržava povijesni zapis blokade) ili potpuno obrisati red iz sustava. 
+Sustav bilježi **korisnika i datum blokade i deblokade**.
 :::
 
 
 
 
-I flag **Autorizza Ordine** e **Autorizza Bolle** fanno in modo che sia richiesta sempre l’autorizzazione all’ordine o al ddt, indipendentemente dal fatto che ci sia disponibilità di fido o meno.
+Oznake **Autoriziraj narudžbu** i **Autoriziraj Ovlaštene prodajne napomene** omogućuju da se za narudžbu ili otpremnicu uvijek traži autorizacija, neovisno o tome postoji li raspoloživi kreditni limit ili ne.
 
-**Note**: permette di aggiungere una nota libera all'operazione di blocco (o sblocco se viene mantenuta la riga).
+**Napomene**: omogućuju unos slobodnog komentara uz radnju blokade (ili deblokade, ako se redak zadrži).
