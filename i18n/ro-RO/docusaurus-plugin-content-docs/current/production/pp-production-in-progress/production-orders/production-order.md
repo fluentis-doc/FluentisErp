@@ -1,151 +1,174 @@
 ---
-title: Ordini di Produzione
+title: Ordine de Producție
 sidebar_position: 3
 ---
 
-Normalmente gli ordini di produzione vengono generati automaticamente dalla procedura di *Rilascio ordini di pianificati*.
-Per creare un ordine di produzione manualmente, è necessario creare prima l'ordine pianificato di produzione e poi rilasciarlo tramite la procedura dedicata. 
+În  mod normal*, ordinele de producție sunt generate automat de procedura de *Lansare ordine planificate*.
+Pentru a crea un ordin de producție manual, este necesar să creați mai întâi ordinul planificat de producție și apoi să-l lansați utilizând procedura dedicată.
 
-## Testata ordine di produzione 
+## 1. Antet
 
-in testata vengono riepilogati tutti i dati riguardanti l'ordine di produzione, come: numero commessa e cliente di riferimento, progetto collegato, data inizio/fine, articolo, versione distinta base e ciclo, quantità da produrre, ecc...
+În antet sunt rezumate toate datele referitoare la ordinul de producție, cum ar fi: numărul, lotul și anul, datele comenzii și ale clientului de referință, proiectul asociat, data de început și sfârșit, informațiile referitoare la articolul de produs, cu versiunea structurii de bază și ciclul, cantitatea de produs și produsă.
+Este de asemenea posibilă inserarea gestiunii și șablonului, care vor fi folosite pentru încărcarea produsului finit în gestiune; acestea vor avea prioritate maximă față de toți ceilalți parametri, așa cum este explicat în detaliu în [Parametrii de producție](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
 
-*Pulsante specifico*:  
+#### Butoane specifice
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine di produzione, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo;
-> **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine di produzione ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine di produzione;  
-> **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti al'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
-> **Generazione ciclo di lavoro**: permette di creare il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o di aggiornare i dati esistenti con quelli inseriti nell'ordine; 
+> **Completare date ordin (Completamento dati ordine)**: apelează procedura care permite introducerea și/sau actualizarea, pentru articolul introdus în ordinul de producție, a tuturor datelor referitoare la materiale, faze, echipamente, echipamente, atribute și note diverse, preluându-le din structura de bază și ciclul de lucru al articolului și **valabile la data de execuție a completării datelor**.
+> **Recalculează data de început (Ricalcola data inizio)**: Apelează procedura care permite efectuarea unei actualizări a datei de început a ordinului de producție și eventual a fazelor de lucru ale acestuia în urma unei modificări a timpilor de lucru și/sau a cantității de produs a articolului obiect al ordinului de producție.
+> **Generează structura de bază (Genera distinta base)**: permite generarea structurii de bază pe baza datelor introduse în ordinul de producție sau actualizarea datelor existente cu cele introduse în ordin.
+> **Generare ciclu de lucru (Generazione ciclo di lavoro)**: permite crearea ciclului de lucru al articolului bazându-se pe datele introduse în ordin sau actualizarea datelor existente cu cele introduse în ordin.
 
-*Campi specifici*: 
+*Câmpuri specifice*:
 
-**Stato**: indica lo stato dell'ordine di produzione: *Lanciato* è lo stato iniziale dell'ordine di produzione appena generato dalla procedura di rilascio ordini pianificati, mentre *Esecutivo* è lo stato da assegnare all'ordine per poi poter procedere con le segnalazioni di produzione.     
+**Stare (Stato)**: indică starea ordinului de producție: *Lansat* este starea inițială a ordinului de producție abia generat de procedura de lansare ordine planificate, în timp ce *Executiv* este starea de atribuit ordinului pentru a putea continua cu raportările de producție.
 
-## Materiali
+**Obligatoriu (Tassativo)**: activând acest flag, ordinul de producție devine obligatoriu, astfel încât [Programarea la capacitate finită (Schedulazione a capacità finita)](/docs/planning/ms-master-scheduling/finite-capacityscheduling) nu îl va repoziționa în timp și îl va menține fix în acele date. În plus, acesta va fi luat în considerare și de procedura [M.R.P.](/docs/planning/ms-master-scheduling/mrp) când este activat flagul *Diferențiază cererea de producție confirmată*.
 
-In questo tab vengono riportati i materiali di primo livello della distinta base relativa al prodotto finito da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali alla lista componenti dell'ordine di produzione.  
-Per importare i dati direttamente dalla distinta base dell'articolo, è necessario cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
+## Materiale
 
-*Pulsanti specifici*:
+În acest tab sunt raportate materialele de prim nivel ale structurii de bază referitoare la produsul finit de produs, dar utilizatorul poate modifica datele și/sau adăuga materiale suplimentare la lista de componente a ordinului de producție.
+Pentru a importa datele direct din structura de bază a articolului, este necesar să faceți clic pe butonul **Completare date ordin (Completamento dati ordine)** prezent în bara de ribbon.
 
-> **Inserisci materiale**: consente di inserire un nuovo materiale nella griglia;  
-> **Cancella materiale**: consente di cancellare i materiali inseriti nella griglia. 
+#### Butoane specifice
 
-*Campi specifici*:
+> **Introduceți material (Inserisci materiale)**: permite introducerea unui nou material în grilă;
+> **Ștergeți material (Cancella materiale)**: permite ștergerea materialelor introduse în grilă.
 
-**Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in distinta base. Essa può essere modificata, come tutti gli altri dati presenti in questa griglia;  
-**C/L**: in questo campo viene ripreso il flag presente nei *Parametri MRP* dell'articolo chiamato 'considera in CL' ovvero indica se l'articolo deve essere incluso come materiale negli ordini di conto lavoro;  
-**Unità di misura**: in questo campo si inserisce l'eventuale unità di misura alternativa dell'articolo;  
-**Data impiego**: coincide con la data inizio prevista dell'ordine di produzione (modificando la prima viene automaticamente cambiata anche quest'ultima);  
-**Q.tà impiego**: rappresenta la quantità unitaria necessaria per questo articolo (prevista dalla DB) che può essere comunque modificata;  
-**Q.tà totale**: rappresenta la quantità che si ottiene moltiplicando la *Q.tà d'impiego* per la *Q.tà da produrre*; 
-**Q.tà alternativa**: rappresenta la quantità totale ma espressa nell'unità di misura alternativa;  
-**% scarto**: in questa casella viene inserita o ripresa dalla distinta base l'eventuale % di scarto per questo articolo;  
-**Fase/StFase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase, e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;  
-**Q.tà disp**: in questo campo compare la quantità disponibile dell'articolo alla data di impiego;
-**Da dichiarare su mobile**: se abilitato, verrà dichiarato su mobile.
+*Câmpuri specifice*:
 
-## Fasi
+**Clasă (Classe)**: Indică clasa articolului;
+**Cod articol (Codice articolo)**: indică codul articolului;
+**Variantă (Variante)**: în acest câmp este introdusă eventual varianta articolului;
+**UM (UM)**: în acest câmp este raportată unitatea de măsură principală a articolului;
+**Unitate de măsură (Unità di misura)**: în acest câmp se introduce eventual unitatea de măsură alternativă a articolului;
+**Data utilizării (Data impiego)**: coincide cu data de început prevăzută a fazei ordinului de producție la care este asociat acel material; dacă nu este asociat cu nicio fază coincide cu începutul primei faze a ciclului;
+**Cantitate utilizare (Quantità impiego)**: reprezintă cantitatea unitară necesară pentru acest articol (prevăzută de [Structura de bază (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)) care poate fi totuși modificată;
+**Cantitate totală (Quantità totale)**: reprezintă cantitatea obținută prin înmulțirea *Cantității de utilizare* cu *Cantitatea de produs*;
+**Cantitate alternativă (Quantità alternativa)**: reprezintă cantitatea totală dar exprimată în unitatea de măsură alternativă;
+**Cantitate prelevată (Quantità prelevata)**: reprezintă cantitatea prelevată prin [Lista de prelevare (Lista di prelievo)](/docs/production/pp-production-in-progress/picking-materials-list);
+**Fixă / Variabilă (Fissa / Variabile)**: indică dacă cantitatea materialului este fixă sau variabilă, aceasta fiind moștenită din [Structura de bază (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management);
+**Procentaj deșeu (Percentuale scarto)**: în această casetă este introdus sau preluat din [Structura de bază (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management) eventualul procentaj de deșeu pentru acest articol;
+**Fază / Sub Fază (Fase / Sotto Fase)**: cu un dublu clic se deschide un ajutor faze de lucru din care se poate selecta faza și sub faza corespunzătoare și astfel să se aloce materialul selectat unei anumite faze de lucru a articolului;
+**Depozit (Magazzino)**: indică depozitul din care va fi descărcat acest articol;
+**Motiv (Causale)**: indică motivul de depozit cu care va fi descărcat acest articol;
+**Prioritate (Priorità)**: aici este vizualizată prioritatea componentului, dacă este prezentă, introdusă în [Structura de bază (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). Aceasta contribuie la unicitatea materialului, astfel încât același material poate fi introdus de mai multe ori cu priorități diferite. În plus, poate fi modificată manual, la fel ca toate celelalte date prezente în această grilă;
+**Cantitate disponibilă (Quantità disponibile)**: în acest câmp apare cantitatea disponibilă a articolului dată de procedura de **Recalculează fezabilitatea (Ricalcola fattibilità)** prezentă în [Secvența fazelor (Sequenza fasi)](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);
+**De declarat pe mobil (Da dichiarare su mobile)**: dacă este activat, materialul va fi propus automat în formularul de declarație de producție prezent pe WMS.
 
-In questo tab vengono riportate le fasi del ciclo di lavoro relativo al prodotto finito da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori fasi all'ordine di produzione.  
-Per importare i dati direttamente dal ciclo di lavorazione dell'articolo, è necessario cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
-Nell'ordine di produzione è possibile variare una fase da interna ad esterna, quindi sarà possibile inserire anche il terzista e al salvataggio dello stesso la procedura creerà l'ordine di conto lavoro. Inoltre, nel caso in cui una fase esterna venga convertita in interna, la procedura eliminerà automaticamente l'ordine di conto lavoro collegato.
+## Faze
 
-*Pulsanti specifici*:
-> **Inserisci fase**: consente di inserire una nuova fase nella griglia;  
-> **Cancella fase**: consente di cancellare le fasi inserite nella griglia. 
+În acest tab sunt raportate fazele ciclului de lucru referitor la produsul finit de produs, dar utilizatorul poate modifica datele și/sau adăuga faze suplimentare la ordinul de producție.
+Pentru a importa datele direct din ciclul de lucru al articolului, este necesar să faceți clic pe butonul **Completare date ordin (Completamento dati ordine)** prezent în bara de ribbon.
+În ordinul de producție este posibil să variați o fază de la internă la externă, astfel încât va fi posibil să introduceți și subcontractorul (terzista) și la salvarea acestuia procedura va crea ordinul de subcontractare (ordine di conto lavoro). În plus, în cazul în care o fază externă este convertită în internă, procedura va elimina automat ordinul de subcontractare asociat.
 
-*Campi specifici*:
+#### Butoane specifice
 
-**Codice fase/Fase/Sotto Fase**: con un doppio click si apre il relativo help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase;  
-**Ctrl. qual.**: questo flag indica se il materiale debba essere sottoposto a controllo qualità prima del suo utilizzo;  
-**Fase prod**: se il flag è spuntato identifica che la fase in questione è una fase produttiva, e che quindi dovrà essere segnalata;  
-**Centro di lavoro**: da questa combo si imposta il Centro di lavoro. Esso viene proposto in automatico, ripreso dalla fase che è stata precedentemente selezionata ed inserita nella griglia;  
-**Data inizio/fine prevista**: si tratta delle date di inizio e fine della relativa fase; cambiando le Date previste di inizio e fine lavorazione vengono automaticamente modificate anche quest'ultime. Esse vengono calcolate in base i tempi inseriti nelle fasi di lavorazione, e più precisamente in base al maggiore tra il tempo operaio e il tempo macchina totale per la fase selezionata;  
-**Tempo macchina**: è il tempo impiegato dalla macchina per realizzare la fase, riferito alla quantità di pezzi per fase;  
-**Numero macchine**: indica il numero di macchine coinvolte in questa fase;  
-**Qtà pezzi per fase**: indica il numero di pezzi per fase;  
-**Tempo operaio**: è il tempo impiegato dall'operaio per realizzare questa fase, riferito alla quantità di pezzi per fase;  
-**Numero operai**: è il numero di operai coinvolti in questa fase;  
-**Conto terzista/descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa *casella è attiva solo* nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo;
-**Ord. CL creato**: se flaggato, indica che è già stato creato il relativo ordine di conto lavoro;
-**Sequenza**: indica la sequenza con cui dovrà essere realizzata quella fase, è possibile modificarlo direttamente dall'ordine di produzione.   
-**Costo operaio**: viene valorizzato da quando inizio a fare lesegnalazioni di produzione;    
-**Costo macchina**: viene valorizzato da quando inizio a fare lesegnalazioni di produzione;    
-**Costo attrezzaggio**: viene valorizzato da quando inizio a fare lesegnalazioni di produzione.   
+> **Introduceți fază (Inserisci fase)**: permite introducerea unei noi faze în grilă;
+> **Ștergeți fază (Cancella fase)**: permite ștergerea fazelor introduse în grilă.
 
-### Fasi - Proprietà
+*Câmpuri specifice*:
 
-Contiene le proprietà relative alla fase selezionata.
+**Cod fază / Fază / Sub Fază (Codice fase / Fase / Sotto Fase)**: cu un dublu clic se deschide ajutorul faze de lucru din care se poate selecta faza și sub faza corespunzătoare;
+**Control calitate (Controllo qualità)**: dacă este activat, acest flag indică faptul că această fază este supusă controlului calității și în tabul specific se poate indica *Planul de control* care va fi utilizat pentru a verifica articolul la declarația de producție efectuată;
+**Fază productivă (Fase produttiva)**: dacă este activ, indică faptul că faza este productivă și se poate proceda la introducerea raportărilor de producție (deci activându-l se dorește ca producția pentru această fază să fie înregistrată); dacă nu este activ, nu va fi posibil să se declare faza însăși;
+**Fază mobilizabilă (Fase movimentabile)**: dacă este activ, indică faptul că în momentul în care se înregistrează faza de producție se creează și mișcări de depozit; acest lucru înseamnă că procedând cu raportarea de producție se va proceda și la încărcarea produsului finit în depozit și la descărcarea materiei prime utilizate pentru producție în acea fază;
+**Centru de lucru (Centro di lavoro)**: indică centrul de lucru, adică mașina în care se va desfășura acea fază specifică;
+**Timp fix (Tempo fisso)**: dacă este activat, indică faptul că timpul acelei faze este fix și deci nu variabil în funcție de cantitate; acest lucru este moștenit din centrul de lucru introdus;
+**Cantitate fază (Quantità fase)**: indică cantitatea totală de piese de produs în acea fază;
+**Data de început / sfârșit prevăzută (Data inizio / fine prevista)**: acestea sunt datele de început și sfârșit ale fazei corespunzătoare; schimbând Datele prevăzute de început și sfârșit ale lucrării sunt modificate automat și acestea. Ele sunt calculate pe baza timpilor introduși în fazele de lucru, și mai precis pe baza celui mai mare dintre timpul total al muncitorului și timpul total al mașinii pentru faza selectată;
+**Timp total mașină (Totale tempo macchina)**: indică timpul total al mașinii, dat de produsul *timpului mașinii* pentru *numărul de mașini*;
+**Timp mașină (Tempo macchina)**: indică timpul de lucru al acelei mașini pentru acea fază;
+**Număr mașini (Numero macchine)**: indică numărul de mașini utilizate în acea fază;
+**Timp total muncitor (Totale tempo operaio)**: indică timpul total al muncitorului, dat de produsul *timpului muncitorului* pentru *numărul de muncitori*;
+**Timp muncitor (Tempo operaio)**: indică timpul de lucru al forței de muncă pentru acea fază;
+**Număr muncitori (Numero operai)**: indică numărul de muncitori angajați în acea fază;
+**Fază / Sub fază suprapusă (Fase / Sotto fase sovrapposta)**: în aceste două câmpuri, în cazul suprapunerii, se va indica faza care se intenționează a fi suprapusă fazei selectate;
+**Locație (Ubicazione)**: permite asocierea și a unei locații de depozit fazei; acest lucru înseamnă că toate articolele utilizate în acea fază vor fi prezente în acea locație;
+**Descriere subcontractor (Descrizione terzista)**: cu dublu clic pe casetă se deschide ajutorul pentru a putea selecta contul și subcontul subcontractorului corespunzător. Această casetă este activă doar în cazul în care faza este desemnată ca fază *Externă*. De remarcat că *subcontractorul* este de asemenea preluat din faza de lucru introdusă în ciclul de lucru al articolului;
+**Ordin de subcontractare creat (Ordine conto lavoro creato)**: indică faptul că a fost creat ordinul de subcontractare. Funcționează doar pentru fazele externe;
+**Descriere centru de lucru (Descrizione centro lavoro)**: indică descrierea centrului de lucru al fazei;
+**Tipărire definitivă (Stampa definitivo)**: indică faptul că a fost tipărit [Foaia de lucru (Foglio di lavoro)](/docs/production/pp-production-in-progress/reports/worksheet) în mod definitiv;
+**Data tipăririi foii de lucru (Data stampa foglio di lavoro)**: indică data tipăririi [Foii de lucru (Foglio di lavoro)](/docs/production/pp-production-in-progress/reports/worksheet) în mod definitiv;
+**Număr progresiv foaie de lucru (Numero progressivo foglio lavoro)**: indică numărul progresiv al [Foii de lucru (Foglio di lavoro)](/docs/production/pp-production-in-progress/reports/worksheet) tipărită în mod definitiv.
 
-**Descrizione fase/sottofase**: in questo campo appare la descrizione della fase selezionata;  
-**Tipo**: in questa combo è possibile impostare il tipo di lavorazione (interna o esterna);  
-**Sovrapp**: tramite questa combo inserisco la tipologia di un'eventuale sovrapposizione tra fasi. Possiamo avere sovrapposizione *Totale* (in questo caso la fase in oggetto è sovrapposta totalmente alla fase indicata successiva), *A pezzi* (in questo caso è necessario indicare dopo quanti pezzi prodotti da questa fase avrà inizio la fase successiva), *A tempo* (in questo caso è necessario indicare dopo quanti minuti da quando è iniziata la fase in oggetto avrà inizio la fase successiva);  
-**UM Tempi**: in questa combo box compare l'Unità Misura Tempi della Fase; si può decidere di gestire i tempi della fase in secondi, minuti, ore e giorni. Di solito si gestiscono a minuti i tempi delle fasi interne e a giorni quelli delle fasi esterne, ma ovviamente dipende molto dalla tipologia di azienda per cui si sta impostando il lavoro;  
-**Macchina**: in questa combo può essere selezionato il codice (e descrizione) della relativa macchina. Essa viene proposta in automatico, ripresa dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Gruppo manodopera**: in questa combo può essere selezionato il codice (e descrizione) del relativo gruppo manodopera. Essa viene proposto in automatico, ripreso dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Sovrapposiz. riferita alla fase/sottofase**: qui viene indicato il codice della fase e Sottofase che presentano una sovrapposizione con la fase in oggetto. Di solito si indica la fase successiva, ma anche qui si tratta solo di una consuetudine; 
-**Valore**: qui si indica il valore dell'eventuale sovrapposizione, utilizzando i criteri specificati sopra;  
-**Utilizzo**: se il flag è attivato, significa che si vuole che il tempo di attesa/coda aumenti il tempo di impegno del Centro di Lavoro su quella fase;  
-**Tempo di attesa o coda**: indica l'eventuale tempo di attesa/coda prevista per questa macchina.  
+### Faze - Proprietăți
 
-### Fasi - Extra Data
+În tabul **Proprietăți** sunt vizualizate următoarele date referitoare la faza selectată în grilă:
 
-Contiene gli eventuali extra data relativi alla fase selezionata.
+**Descriere fază (Descrizione fase)**: indică descrierea fazei și subfazei selectate;
+**Tip (Tipo)**: în această combo este posibil să se seteze tipul de lucru (intern sau extern);
+**Suprapunere (Sovrapposizione)**: prin această combo se introduce tipologia unei eventuale suprapuneri între faze. Putem avea suprapunere *Totală* (în acest caz faza în cauză este suprapusă total fazei indicate), *Pe bucăți* (în acest caz este necesar să se indice după câte bucăți produse de această fază va începe faza următoare), *Pe timp* (în acest caz este necesar să se indice după câte minute de la începutul fazei indicate va începe faza următoare);
+**UM Timpuri (UM Tempi)**: în această combo box apare Unitatea de Măsură a Timpurilor Fazei; se poate decide să se gestioneze timpii fazei în secunde, minute, ore și zile. De obicei, timpii fazelor interne sunt gestionați în minute și cei ai fazelor externe în zile, dar desigur depinde foarte mult de tipologia de companie pentru care se setează munca;
+**Mașină (Macchina)**: în această combo poate fi selectat codul (și descrierea) mașinii corespunzătoare. Aceasta este propusă automat, preluată din centrul de lucru care a fost introdus anterior în grilă;
+**Site de producție (Sito produttivo)**: indică site-ul de producție în care va fi produs articolul; acesta este moștenit din comanda de producție;
+**Grup muncitori (Gruppo manodopera)**: în această combo poate fi selectat codul (și descrierea) grupului de muncitori corespunzător. Aceasta este propusă automat, preluată din centrul de lucru care a fost introdus anterior în grilă;
+**Cantitate bucăți pe fază (Quantità pezzi per fase)**: indică numărul de bucăți produse pentru fiecare execuție a acelei faze;
+**Valoare (Valore)**: aici se indică valoarea eventualei suprapuneri, utilizând criteriile specificate mai sus;
+**Utilizare (Utilizzo)**: dacă flagul este activat, înseamnă că se dorește ca timpul de așteptare/coadă să crească timpul de angajament al Centrului de Lucru pe acea fază;
+**Timp de așteptare sau coadă (Tempo di attesa o coda)**: indică timpul care este necesar să se aștepte la sfârșitul execuției fazei înainte de a putea să o reexecutați. În plus, activând flagul **Utilizare (Utilizzo)** acest timp de așteptare va fi considerat ca un angajament suplimentar al timpului Centrului de Lucru pe acea fază.
 
-## Attrezzaggio
+### Faze - Date Extra
 
-In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente. 
+Conține eventualele date extra referitoare la faza selectată.
 
-*Campi specifici*:
+### Faze - Documente atașate
 
-**Fase/Sottofase**: in questi campi vengono visualizzate le informazioni relative alla fase che è selezionata nel tab *Fasi*;  
-**Tipo**: indica la tipologia della fase (interna o esterna);  
-**Tipo sovrapposizione**: indica l'eventuale tipologia della sovrapposizione;  
-**UM Tempi**: indica l'unità di misura temporale della fase;  
-**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per l'attrezzaggio;  
-**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per l'attrezzaggio;  
-**Gruppo MDO**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio;  
-**Valore**: indica il valore dell'eventuale sovrapponibilità;  
-**CdL**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
-**Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
-**Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
-**Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
-**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio, che viene sommato al tempo attrezzaggio;  
-**Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
-**Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
+Permite atașarea de documente la faza selectată, care vor fi apoi vizibile și în [MES](/docs/production/mes/mes-intro).
 
-## Attrezzature
+## Echipamente
 
-In questo tab, costituito principalmente da una griglia, è possibile definire quali e quante attrezzature dovranno essere utilizzate nella produzione della fase selezionata nel tab *Fasi*. 
+În acest tab este posibil să se definească timpii referitori la echiparea fazei selectate în tabul anterior.
+Este important să se rețină că datele referitoare la centrul de lucru, mașină și muncitori, trebuie introduse doar dacă sunt diferite de cele utilizate pentru fază, altfel dacă sunt goale vor fi considerate automat cele ale fazei principale.
 
-*Campi specifici*:
+*Câmpuri specifice*:
 
-**Sequenza**: in questo campo è possibile indicare la sequenza con cui devono essere utilizzate le attrezzature;  
+**Fază / Subfază / Descriere (Fase / Sottofase / Descrizione)**: în aceste câmpuri sunt vizualizate informațiile referitoare la faza care este selectată în tabul *Faze*;
+**Tip (Tipo)**: indică tipologia fazei (internă sau externă);
+**Tip suprapunere (Tipo sovrapposizione)**: indică eventual tipologia suprapunerii;
+**UM Timpuri (UM Tempi)**: indică unitatea de măsură temporală a fazei;
+**Centru de Lucru (Centro di Lavoro)**: în aceste câmpuri este introdus codul (și descrierea corespunzătoare) al Centrului de Lucru setat pentru echipare; (de utilizat doar dacă centrul de lucru de echipare este diferit de centrul de lucru utilizat în faza selectată);
+**Mașină (Macchina)**: în aceste câmpuri este introdus codul (și descrierea corespunzătoare) al mașinii pentru echipare; (de utilizat doar dacă mașina utilizată pentru echipare este diferită de mașina utilizată în faza selectată);
+**Grup Muncitori (Gruppo Manodopera)**: în aceste câmpuri este introdus codul (și descrierea corespunzătoare) al Grupului de muncitori pentru echipare; (de utilizat doar dacă grupul de muncitori utilizat pentru echipare este diferit de grupul de muncitori utilizat în faza selectată);
+**Valoare (Valore)**: indică valoarea eventualei suprapunerii;
+**Centru de lucru (Centro di lavoro)**: în aceste câmpuri este vizualizat codul și descrierea centrului de lucru corespunzător fazei selectate;
+**Data de început (Data inizio)**: este vizualizată data de început a fazei selectate în tabul *Faze*;
+**Data de sfârșit (Data fine)**: este vizualizată data de sfârșit a fazei selectate în tabul *Faze*;
+**Timp echipare (Tempo attrezzaggio)**: este introdus timpul de echipare. Este un timp fix, care nu variază în funcție de cantitățile de produs în faza selectată;
+**Timp reechipare (Tempo riattrezzaggio)**: este introdus timpul de reechipare. Se utilizează în cazul în care este necesar să se reechipeze centrul de lucru între o execuție și alta a fazei însăși și este adăugat la timpul de echipare;
+**Număr mașini (Num. macchine)**: se indică numărul de mașini utilizate pentru echipare;
+**Număr muncitori (Num. operai)**: se indică numărul de muncitori utilizat pentru echipare.
 
-**Attrezzature**: con questa combo box è possibile richiamare il codice dell'attrezzatura, ripreso dall'apposita tabella [Attrezzature](/docs/configurations/tables/production/equipments);  
-**Classe/Codice articolo**: in questi campi è possibile indicare la classe e il codice dell'articolo (l'help filtra automaticamente solo gli articoli che sono identificati come *Attrezzature* nel campo *Natura Articolo* dell'anagrafica di magazzino);  
-**Variante**: rappresenta la variante dell'articolo;  
-**Quantità**: rappresenta la quantità dell'articolo.
+## Echipamente
 
-## Controllo qualità
+În acest tab, constituit în principal dintr-o grilă, este posibil să se definească care și câte echipamente vor fi utilizate în producția fazei selectate în tabul *Faze*.
 
-In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di controllo qualità per la fase/sottofasse.
+*Câmpuri specifice*:
 
-## Nota fase
+**Secvență (Sequenza)**: în acest câmp este posibil să se indice secvența cu care trebuie utilizate echipamentele;
 
-In questo tab viene visualizzata la nota legata alla fase di lavorazione selezionata nel tab *Fasi*. Essa è modificabile dall'utente contestualmente all'ordine di produione in oggetto.
+**Echipamente (Attrezzature)**: cu această combo box este posibil să se apeleze codul echipamentului, preluat din tabelul corespunzător [Echipamente (Attrezzature)](/docs/configurations/tables/production/equipments);
+**Clasă/Cod articol (Classe/Codice articolo)**: în aceste câmpuri este posibil să se indice clasa și codul articolului (ajutorul filtrează automat doar articolele care sunt identificate ca *Echipamente* în câmpul *Natura Articol* al registrului de depozit);
+**Variantă (Variante)**: reprezintă varianta articolului;
+**Cantitate (Quantità)**: reprezintă cantitatea articolului.
 
-## Istruzioni opertative
+## Control calitate
 
-In questo tab è possibile allegare e visualizzate le *Istruzioni operative* legate alla fase di lavorazione selezionata nel tab *Fasi*.
+În acest tab, constituit în principal dintr-o grilă, este posibil să se vizualizeze detaliile testelor planificate de [control calitate (controllo qualità)](/docs/quality/quality-intro) pentru faza / subfaza.
 
-## Personale
+## Notă fază
 
-In questo tab è possibile inserire gli operatori che dovranno svolgere le singole fasi del ciclo produttivo.    
+În acest tab este vizualizată nota legată de faza de lucru selectată în tabul *Faze*. Aceasta este modificabilă de utilizator în contextul ordinului de producție în cauză.
 
-## Extra Data
+## Instrucțiuni operative
 
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+În acest tab este posibil să se atașeze și să se vizualizeze *Instrucțiunile operative* legate de faza de lucru selectată în tabul *Faze*. Acestea vor fi vizualizabile și în [Fluentis MES](/docs/production/mes/mes-intro).
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+## Personal
+
+În acest tab este posibil să se introducă operatorii care vor trebui să desfășoare fazele individuale ale ciclului de producție. (*Este utilizat doar pentru personalizări*).
+
+## Date Extra
+
+Pentru o descriere detaliată a datelor extra se face referire la articolul [Date Extra (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).
+
+Pentru detalii despre funcționarea comună a formularelor, consultați linkul [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
