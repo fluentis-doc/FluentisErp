@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Acest raport afișează starea nivelului stocului unui buffer.
 
-Pentru un buffer (stoc într-un anumit depozit), se analizează stocul actual și cel viitor într-o perioadă de timp comparabilă cu DLT-ul articolului.
+Pentru un buffer (stoc într-un anumit depozit), se analizează stocul actual și cel viitor într-o perioadă de timp comparabilă cu dlt-ul articolului.
 
 Sunt afișate diverse linii în diferite date începând cu data curentă, iar pentru fiecare se indică valoarea stocului (valoare reală) și valoarea procentuală a stocului raportată la zona roșie a articolului.
 

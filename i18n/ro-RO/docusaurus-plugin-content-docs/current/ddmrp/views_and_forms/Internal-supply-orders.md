@@ -24,7 +24,7 @@ Data ordinului este considerată data cererii (echivalentă cu *Data început* a
 
 Dacă facilitatea de destinație este alimentată de o facility care nu este fabrica, timpul de livrare al articolelor la destinație este același pentru toți și egal cu lead time-ul introdus în tabelul *Facilities* pentru facilitatea de destinație (cu excepții stabilite în tabelul *Parametri DDMRP* pentru unele articole).
 
-Dacă facilitatea furnizoare este fabrica, în mod normal DLT-ul fiecărui articol din facilitatea de destinație variază deoarece este suma timpului de transport de la fabrică și a DLT-ului articolului în aceasta care, dacă nu este un buffer în aceasta din urmă, este egal cu timpul necesar pentru producerea sa.
+Dacă facilitatea furnizoare este fabrica, în mod normal dlt-ul fiecărui articol din facilitatea de destinație variază deoarece este suma timpului de transport de la fabrică și a dlt-ului articolului în aceasta care, dacă nu este un buffer în aceasta din urmă, este egal cu timpul necesar pentru producerea sa.
 
 Pentru fiecare articol din ordin sunt afișate: cantitatea comandată, expediată și primită.
 

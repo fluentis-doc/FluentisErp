@@ -34,6 +34,6 @@ La documentación está dividida en las siguientes áreas:
 
 [**MAESTROS** (ANAGRAFICHE)](/docs/ddmrp/master-data/introduction)
 
-[**PROCEDIMIENTOS** (PROCEDURE)](/docs/ddmrp/procedures/ADU-update)
+[**PROCEDIMIENTOS** (PROCEDURE)](/docs/ddmrp/procedures/adu-update)
 
 [**FORMULARIOS y REPORTES** (FORMS e REPORTS)](/docs/ddmrp/views_and_forms/buffer-status)

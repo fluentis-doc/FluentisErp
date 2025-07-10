@@ -34,6 +34,6 @@ The documentation is divided into the following areas:
 
 [**Registers**](/docs/ddmrp/master-data/introduction)
 
-[**Procedures**](/docs/ddmrp/procedures/ADU-update)
+[**Procedures**](/docs/ddmrp/procedures/adu-update)
 
 [**FORMS and REPORTS**](/docs/ddmrp/views_and_forms/buffer-status)

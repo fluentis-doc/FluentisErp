@@ -3,9 +3,9 @@ title: Actualizare Lead Time Decuplat (DLT)
 sidebar_position: 2
 ---
 
-Această procedură calculează lead time-ul decuplat (DLT) al tuturor articolelor buffer, atât din fabrică cât și din centrele de distribuție/hub-uri. Este  foarte important pentru determinarea dimensiunii zonelor unui buffer și, implicit, a nivelurilor de stoc care sunt proporționale cu DLT-ul.
+Această procedură calculează lead time-ul decuplat (DLT) al tuturor articolelor buffer, atât din fabrică cât și din centrele de distribuție/hub-uri. Este  foarte important pentru determinarea dimensiunii zonelor unui buffer și, implicit, a nivelurilor de stoc care sunt proporționale cu dlt-ul.
 
-Dacă un centru de distribuție/hub este alimentat de un hub, DLT-ul articolelor stocate în acesta este același pentru toate și este dat de lead time-ul indicat în tabela structurii logistice (dacă articolul nu are o excepție de furnizare în parametrii DDMRP).
+Dacă un centru de distribuție/hub este alimentat de un hub, dlt-ul articolelor stocate în acesta este același pentru toate și este dat de lead time-ul indicat în tabela structurii logistice (dacă articolul nu are o excepție de furnizare în parametrii DDMRP).
 
 Dacă centrul de distribuție/hub este alimentat de la fabrică, fiecare articol va avea un DLT specific, dat de suma lead time-ului de transport de la fabrică și timpul necesar pentru realizarea produsului în fabrică (nul doar pentru acele articole care sunt buffer în fabrică).
 
@@ -17,7 +17,7 @@ Pentru toate articolele de fabrică care au lista componentelor, procedura va î
 
 Suma cea mai mare a diferitelor ramuri determină valoarea DLT a articolului, adică timpul necesar pentru a obține produsul.
 
-Acest calcul este efectuat și pentru produsele care nu sunt stocuri DDMRP în fabrică, deoarece acestea pot fi în schimb în centrele de distribuție/hub-uri. Deci, DLT-ul lor este egal cu valoarea DLT în fabrică plus timpul de transport.
+Acest calcul este efectuat și pentru produsele care nu sunt stocuri DDMRP în fabrică, deoarece acestea pot fi în schimb în centrele de distribuție/hub-uri. Deci, dlt-ul lor este egal cu valoarea DLT în fabrică plus timpul de transport.
 
 Procedura determină, de asemenea, calea critică a fiecărui articol, adică identifică toate articolele aflate pe cel mai lung lanț de aprovizionare, și anume cele care determină valoarea DLT a articolului.
 

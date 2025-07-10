@@ -13,7 +13,7 @@ The use of the sales forecast is only necessary when it is known that in the fut
 
 In such a situation, the inventory present for the buffer items in the bill of materials for the finished product would not be sufficient, making it impossible to produce the finished products in the times and quantities established in the sales forecasts.
 
-If there were a strong demand variation, but progressive and over a time period longer than the cumulative production time, sales forecasts would not be necessary as the [**average daily consumption update procedure (ADU)**](/docs/ddmrp/procedures/ADU-update), working on past consumption values, automatically adjusts the average daily consumption (ADU) to the variation in demand, resulting in an increase in zones and the average inventory level.
+If there were a strong demand variation, but progressive and over a time period longer than the cumulative production time, sales forecasts would not be necessary as the [**average daily consumption update procedure (ADU)**](/docs/ddmrp/procedures/adu-update), working on past consumption values, automatically adjusts the average daily consumption (ADU) to the variation in demand, resulting in an increase in zones and the average inventory level.
 
 Typical situations that require the use of sales forecasts include:
 

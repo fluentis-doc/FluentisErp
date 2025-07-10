@@ -44,7 +44,7 @@ The DDMRP parameters to be defined are as follows:
 
   is the average quantity consumed daily at the logistic unit of the record (therefore varies for each logistic unit) and must consider a sufficiently long time period (multiple times the lead time of the item) over which to perform the average.
   
-  This value strongly influences the stock level of the item and must be updated periodically [(see procedure)](/docs/ddmrp/procedures/ADU-update).
+  This value strongly influences the stock level of the item and must be updated periodically [(see procedure)](/docs/ddmrp/procedures/adu-update).
 
 - **Decoupled Lead Time (DLT)**,
 

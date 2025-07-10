@@ -35,6 +35,6 @@ La documentazione è suddivisa nelle seguenti aree:
 
 [**ŠIFARNICI**](/docs/ddmrp/master-data/introduction)
 
-[**PROCEDURE**](/docs/ddmrp/procedures/ADU-update)
+[**PROCEDURE**](/docs/ddmrp/procedures/adu-update)
 
 [**OBRASCI I IZVJEŠTAJI**](/docs/ddmrp/views_and_forms/buffer-status)

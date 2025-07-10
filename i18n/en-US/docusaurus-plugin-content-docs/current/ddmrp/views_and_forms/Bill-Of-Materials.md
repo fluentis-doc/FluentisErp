@@ -9,7 +9,7 @@ Items managed on Ddmrp stock are highlighted with a three-colored trash can symb
 
 These values are the ones valid today as found in the **DDMRP parameters** form, while for working capital, it should be highlighted that the value refers to the item and not to the stock needed to produce the product for which the bill of materials is being viewed. Therefore, the value is determined by the needs of all items that require the stock product. The working capital value shown is relative to the last calculation performed; therefore, to ensure it is updated, simply run the relevant calculation procedure.
 
-From this form, you can launch the [**DLT Calculation**](/docs/ddmrp/procedures/DLT-calculation), the [**Zones Calculation**](/docs/ddmrp/procedures/zones-calculation), the [**Average Daily Consumption Update (ADU)**](/docs/ddmrp/procedures/ADU-update), and the [**Stock value calculation**](/docs/ddmrp/procedures/inventory-value). 
+From this form, you can launch the [**DLT Calculation**](/docs/ddmrp/procedures/dlt-calculation), the [**Zones Calculation**](/docs/ddmrp/procedures/zones-calculation), the [**Average Daily Consumption Update (ADU)**](/docs/ddmrp/procedures/adu-update), and the [**Stock value calculation**](/docs/ddmrp/procedures/inventory-value). 
 
 The DDMRP view of the bill is useful when running simulations to verify variations in DLT and working capital (use the working capital printout for more meaningful analysis).
 

@@ -9,13 +9,13 @@ Artikli koji se upravljaju kao DDMRP zalihe označeni su simbolom košarice u tr
 
 Ove vrijednosti vrijede za trenutni dan, kako je prikazano u obrascu za **DDMRP parametre**. Kapital u optjecaju odnosi se na artikl, a ne na zalihe potrebne za proizvodnju proizvoda čiju osnovnu listu prikazuje. Vrijednost je određena potrebom za svim artiklima koji zahtijevaju proizvod na skladištu. Vrijednosti kapitala u optjecaju temelje se na posljednjem izvršenom izračunu. Ako želite ažurirane podatke, potrebno je pokrenuti odgovarajući postupak izračuna.
 
-Putem ovog obrasca mogu se pokrenuti različiti postupci, poput [**izračuna DLT-a (odvojeno vrijeme isporuke)**](/docs/ddmrp/procedures/DLT-calculation), procedura [**Izračun zona**](/docs/ddmrp/procedures/zones-calculation), procedura [**Ažuriranje prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/ADU-update), procedura [**Izračun vrijednosti zaliha**](/docs/ddmrp/procedures/inventory-value). 
+Putem ovog obrasca mogu se pokrenuti različiti postupci, poput [**izračuna dlt-a (odvojeno vrijeme isporuke)**](/docs/ddmrp/procedures/dlt-calculation), procedura [**Izračun zona**](/docs/ddmrp/procedures/zones-calculation), procedura [**Ažuriranje prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/adu-update), procedura [**Izračun vrijednosti zaliha**](/docs/ddmrp/procedures/inventory-value). 
 
-DDMRP prikaz osnovne liste posebno je koristan za simulacije promjena u DLT-u i kapitalu u optjecaju (korisno je koristiti ispis kapitala u optjecaju za značajniju analizu). 
+DDMRP prikaz osnovne liste posebno je koristan za simulacije promjena u dlt-u i kapitalu u optjecaju (korisno je koristiti ispis kapitala u optjecaju za značajniju analizu). 
 
 Za određene artikle koji nisu DDMRP zalihe, DLT se i dalje prikazuje. Takvi artikli označeni su crvenom bojom i nalaze se na kritičnoj putanji nekog gotovog proizvoda.  
 
-Razlog tome je što su neki od njih pohranjeni u distribucijskim centrima, pa za izračun DLT-a u distribucijskim centrima treba zbrojiti vrijeme transporta iz tvornice i vrijeme potrebno za proizvodnju proizvoda. 
+Razlog tome je što su neki od njih pohranjeni u distribucijskim centrima, pa za izračun dlt-a u distribucijskim centrima treba zbrojiti vrijeme transporta iz tvornice i vrijeme potrebno za proizvodnju proizvoda. 
 
 Za artikle koji nisu gotovi proizvodi, DLT se izračunava jer postupak mora identificirati sve artikle na "kritičnoj putanji" zalihe. 
 

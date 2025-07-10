@@ -9,7 +9,7 @@ Gli articoli che sono gestiti a scorta Ddmrp sono evidenziati tramite il simbolo
 
 Questi valori sono quelli validi oggi come riscontrabili nel form dei **Parametri Ddmrp**, mentre per il capitale circolante qui si vuole solo evidenziare che il valore si riferisce all'articolo e non alla scorta necessaria per realizzare il prodotto di cui si sta visualizzando la distinta base, pertanto il valore è determinato dal fabbisogno di tutti gli articoli che necessitano del prodotto a scorta. Il valore del capitale circolante mostrato è relativo all'ultimo calcolo eseguito, pertanto se si vuole essere sicuri che sia aggiornato basta lanciare la relativa procedura di calcolo.
 
-Da questa form è possibile lanciare la procedura [**Calcolo DLT (lead time disaccoppiato)**](/docs/ddmrp/procedures/DLT-calculation), la procedura [**Calcolo delle zone**](/docs/ddmrp/procedures/zones-calculation), la procedura [**Aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/ADU-update), la procedura [**Calcolo valori scorte**](/docs/ddmrp/procedures/inventory-value). 
+Da questa form è possibile lanciare la procedura [**Calcolo DLT (lead time disaccoppiato)**](/docs/ddmrp/procedures/dlt-calculation), la procedura [**Calcolo delle zone**](/docs/ddmrp/procedures/zones-calculation), la procedura [**Aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/adu-update), la procedura [**Calcolo valori scorte**](/docs/ddmrp/procedures/inventory-value). 
 
 La visualizzazione DDMRP della distinta è utile quando si fanno delle simulazioni per verificare le variazioni di DLT e di capitale circolante (utilizzare la stampa capitale circolante per una analisi più significativa).
 

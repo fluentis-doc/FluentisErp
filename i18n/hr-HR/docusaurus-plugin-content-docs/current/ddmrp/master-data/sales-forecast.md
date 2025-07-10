@@ -13,7 +13,7 @@ Prognoza prodaje potrebna je samo kada je unaprijed poznato da će se potražnja
 
 U takvim situacijama, postojeće zalihe artikala u bufferima unutar sastavnice gotovog proizvoda ne bi bile dovoljne, što bi onemogućilo proizvodnju gotovih proizvoda u potrebnim količinama i vremenskim okvirima predviđenim prodajnim prognozama
 
-Ako bi došlo do značajne, ali postupne promjene potražnje tijekom duljeg razdoblja od ukupnog vremena proizvodnje, prodajne prognoze ne bi bile potrebne. To je zato što bi [**postupak ažuriranja prosječne dnevne potrošnje (ADU**](/docs/ddmrp/procedures/ADU-update) temeljen na povijesnim podacima potrošnje, automatski prilagodio ADU promjeni potražnje, čime bi se povećale zone i prosječna razina zaliha.  
+Ako bi došlo do značajne, ali postupne promjene potražnje tijekom duljeg razdoblja od ukupnog vremena proizvodnje, prodajne prognoze ne bi bile potrebne. To je zato što bi [**postupak ažuriranja prosječne dnevne potrošnje (ADU**](/docs/ddmrp/procedures/adu-update) temeljen na povijesnim podacima potrošnje, automatski prilagodio ADU promjeni potražnje, čime bi se povećale zone i prosječna razina zaliha.  
 
 Tipične situacije koje zahtijevaju korištenje prognoza prodaje uključuju:   
 

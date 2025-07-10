@@ -9,16 +9,16 @@ Articolele gestionate pe stoc DDMRP sunt evidențiate prin pictograma *coș cu t
 
 Aceste valori sunt cele valabile astăzi, conform tabelului **Parametri DDMRP**, în timp ce pentru capitalul circulant se dorește doar evidențierea faptului că valoarea se referă la articol și nu la stocul necesar pentru a realiza produsul pentru care este vizualizată lista componentelor. Prin urmare, valoarea este determinată de necesarul tuturor articolelor care au nevoie de articolul pe stoc. Valoarea capitalului circulant afișată este cea relativă la ultimul calcul efectuat, așadar, pentru a vă asigura că este actualizată, trebuie să lansați procedura corespunzătoare de calcul.
 
-Formul permite lansarea procedurii [**Calcul DLT (lead time disociat)**](/docs/ddmrp/procedures/DLT-calculation), procedurii [**Calcul zone**](/docs/ddmrp/procedures/zones-calculation), procedurii [**Actualizare consum mediu zilnic (ADU)**](/docs/ddmrp/procedures/ADU-update)și procedurii [**Calcul valori stocuri**](/docs/ddmrp/procedures/inventory-value).
+Formul permite lansarea procedurii [**Calcul DLT (lead time disociat)**](/docs/ddmrp/procedures/dlt-calculation), procedurii [**Calcul zone**](/docs/ddmrp/procedures/zones-calculation), procedurii [**Actualizare consum mediu zilnic (ADU)**](/docs/ddmrp/procedures/adu-update)și procedurii [**Calcul valori stocuri**](/docs/ddmrp/procedures/inventory-value).
 
 Vizualizarea DDMRP a listei componentelor este utilă când se fac simulări pentru verificarea variațiile DLT și capitalului circulant (utilizați raportul *Capitalului circulant* pentru o analiză mai detaliată).
 
 *Notă*:  
-Pentru unele articole care nu sunt stocuri DDMRP este oricum afișat DLT-ul lor. Aceasta se întâmplă pentru acele articole care sunt evidențiate în roșu, adică cele care se află pe calea critică a unui produs finit.
+Pentru unele articole care nu sunt stocuri DDMRP este oricum afișat dlt-ul lor. Aceasta se întâmplă pentru acele articole care sunt evidențiate în roșu, adică cele care se află pe calea critică a unui produs finit.
 
-Motivul este că unele dintre acestea sunt stocate în centrele de distribuție, deci pentru a calcula DLT-ul în centrele de distribuție trebuie să adunăm timpul de transport de la fabrică cu timpul necesar pentru realizarea produselor.
+Motivul este că unele dintre acestea sunt stocate în centrele de distribuție, deci pentru a calcula dlt-ul în centrele de distribuție trebuie să adunăm timpul de transport de la fabrică cu timpul necesar pentru realizarea produselor.
 
-Pentru unele articole care nu sunt produse finite, acest lucru se datorează faptului că pentru a calcula DLT-ul unui buffer DDMRP, procedura trebuie să calculeze acest timp și pentru articolele care se află pe *calea critică* a bufferului respectiv.
+Pentru unele articole care nu sunt produse finite, acest lucru se datorează faptului că pentru a calcula dlt-ul unui buffer DDMRP, procedura trebuie să calculeze acest timp și pentru articolele care se află pe *calea critică* a bufferului respectiv.
 
 Procedura pentru calcularea DLT identifică toate articolele care se află pe căile critice ale tuturor listelor de componente prezente în sistem (deci nu doar cele de articole buffer DDMRP).
 

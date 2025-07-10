@@ -29,7 +29,7 @@ De exemplu, articolele acestei unități logistice sunt furnizate în mod normal
 
 **Consum mediu zilnic (ADU)**: reprezintă cantitatea medie consumată în fiecare zi la unitatea logistică a înregistrării (deci variază pentru fiecare unitate logistică) și trebuie să ia în considerare o perioadă de timp suficient de lungă (de câteva ori timpul de aprovizionare al articolului) pentru a efectua media.
   
-Această valoare afectează mult nivelul stocului articolului și trebuie actualizat periodic [(vedeți procedura)](/docs/ddmrp/procedures/ADU-update).
+Această valoare afectează mult nivelul stocului articolului și trebuie actualizat periodic [(vedeți procedura)](/docs/ddmrp/procedures/adu-update).
 
 **Lead time decuplat (DLT)**: câmp nemodificabil, rezultat din calculul procedurii relative.  
 Este timpul necesar furnizării articolului, având în vedere prezența altor buffere în lista sa sau în rețeaua logistică.

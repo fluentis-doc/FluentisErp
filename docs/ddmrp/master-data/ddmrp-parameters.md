@@ -44,7 +44,7 @@ I parametri DDMRP da definire sono i seguenti:
 
   è la quantità mediamente consumata ogni giorno presso l'unità logistica del record (varia quindi per ogni unità logistica) e deve tenere conto di un periodo temporale sufficientemente lungo (più volte il tempo di approvvigionamento dell'articolo) sul quale eseguire la media.
   
-  Questo valore influisce fortemente sul livello di scorta dell'articolo e va aggiornato periodicamente [(vedi procedura)](/docs/ddmrp/procedures/ADU-update).
+  Questo valore influisce fortemente sul livello di scorta dell'articolo e va aggiornato periodicamente [(vedi procedura)](/docs/ddmrp/procedures/adu-update).
 
 - **Lead time disaccoppiato (DLT)**,
 

@@ -6,7 +6,7 @@ Esta tabla contiene las previsiones de consumo de los artículos de buffer.
 
 Para cada artículo de buffer y para cada unidad logística, es posible indicar qué valor de consumo se prevé con detalle diario.
 
-Los datos contenidos en esta tabla son utilizados por el procedimiento [**actualización de consumo medio diario (ADU)**](/docs/ddmrp/procedures/ADU-update) en caso de que la técnica de cálculo considere los datos de previsión del consumo futuro, y pueden ser ingresados manualmente o pueden provenir del procedimiento de cálculo que desarrolla las previsiones de venta de los productos terminados.
+Los datos contenidos en esta tabla son utilizados por el procedimiento [**actualización de consumo medio diario (ADU)**](/docs/ddmrp/procedures/adu-update) en caso de que la técnica de cálculo considere los datos de previsión del consumo futuro, y pueden ser ingresados manualmente o pueden provenir del procedimiento de cálculo que desarrolla las previsiones de venta de los productos terminados.
 
 En el caso de inserción manual, no es necesario ingresar un valor para cada día, basta con ingresar uno por cada período de tiempo con una duración igual al parámetro **giorni nel futuro** de los parámetros DDMRP del artículo.
 

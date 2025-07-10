@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 Ovo izvješće prikazuje stanje razine zaliha unutar buffer-a.   
 
-Za određeni buffer (zaliha u određenom skladištu) analizira se trenutna i buduća razina zaliha u vremenskom razdoblju usporedivom s DLT-om artikla.   
+Za određeni buffer (zaliha u određenom skladištu) analizira se trenutna i buduća razina zaliha u vremenskom razdoblju usporedivom s dlt-om artikla.   
 
 Prikazane su stavke s različitim datumima počevši od danas, a za svaku se navodi stvarna razina zaliha te postotna vrijednost zaliha u odnosu na crvenu zonu artikla.   
 

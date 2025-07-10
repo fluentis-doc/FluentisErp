@@ -5,7 +5,7 @@ sidebar_position: 7
 
 Form-ul permite verificarea consumului mediu zilnic (ADU) care a variat foarte mult într-o anumită perioadă de timp.
 
-Există o procedură a cărei execuție trebuie programată automat, care analizează toate bufferele DDMRP din toate unitățile logistice și memorează într-un tabel doar acele articole pentru care variațiile procentuale ale ADU-ului sunt superioare limitelor impuse.
+Există o procedură a cărei execuție trebuie programată automat, care analizează toate bufferele DDMRP din toate unitățile logistice și memorează într-un tabel doar acele articole pentru care variațiile procentuale ale adu-ului sunt superioare limitelor impuse.
 
 În parametrii generali DDMRP este setată limita maximă a variației procentuale care nu generează alarme și numărul de zile din trecut în care trebuie efectuată analiza (care se încheie întotdeauna în ziua anterioară calculului).
 

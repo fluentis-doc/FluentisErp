@@ -43,7 +43,7 @@ Los parámetros DDMRP a definir son los siguientes:
 
   es la cantidad consumida en promedio cada día en la unidad logística del registro (por lo tanto, varía según la unidad logística) y debe tener en cuenta un período de tiempo lo suficientemente largo (más de una vez el tiempo de aprovisionamiento del artículo) para realizar el promedio.
   
-  Este valor influye fuertemente en el nivel de stock del artículo y debe actualizarse periódicamente [(ver procedimiento)](/docs/ddmrp/procedures/ADU-update).
+  Este valor influye fuertemente en el nivel de stock del artículo y debe actualizarse periódicamente [(ver procedimiento)](/docs/ddmrp/procedures/adu-update).
 
 - **Tiempo de entrega desacoplado (DLT)**,
 

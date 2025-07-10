@@ -9,7 +9,7 @@ Los artículos que se gestionan con stock Ddmrp están destacados con el símbol
 
 Estos valores son los válidos hoy tal como se pueden encontrar en el formulario de **parametri ddmrp**, mientras que para el capital circulante aquí solo se quiere resaltar que el valor se refiere al artículo y no al stock necesario para fabricar el producto cuya lista de materiales se está visualizando, por lo tanto, el valor está determinado por la necesidad de todos los artículos que requieren el producto en stock. El valor del capital circulante mostrado es relativo al último cálculo realizado, por lo que si se desea asegurar que está actualizado, basta con ejecutar el procedimiento de cálculo correspondiente.
 
-Desde este formulario es posible lanzar el procedimiento [**Cálculo DLT (lead time disacoplado)**](/docs/ddmrp/procedures/DLT-calculation), el procedimiento [**Cálculo de zonas**](/docs/ddmrp/procedures/zones-calculation), el procedimiento [**Actualización del consumo medio diario (ADU)**](/docs/ddmrp/procedures/ADU-update), y el procedimiento [**Cálculo de valores de stock**](/docs/ddmrp/procedures/inventory-value).
+Desde este formulario es posible lanzar el procedimiento [**Cálculo DLT (lead time disacoplado)**](/docs/ddmrp/procedures/dlt-calculation), el procedimiento [**Cálculo de zonas**](/docs/ddmrp/procedures/zones-calculation), el procedimiento [**Actualización del consumo medio diario (ADU)**](/docs/ddmrp/procedures/adu-update), y el procedimiento [**Cálculo de valores de stock**](/docs/ddmrp/procedures/inventory-value).
 
 La visualización DDMRP de la lista es útil cuando se realizan simulaciones para verificar las variaciones de DLT y de capital circulante (utilizar la impresión del capital circulante para un análisis más significativo).
 

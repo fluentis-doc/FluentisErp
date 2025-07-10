@@ -4,7 +4,7 @@ sidebar_position: 7
 ---
 Ovo izvješće omogućuje provjeru je li se prosječna dnevna potrošnja (ADU) nekog artikla prekomjerno promijenila tijekom određenog vremenskog razdoblja. 
 
-Postoji procedura čije izvođenje treba biti automatski zakazano, koja analizira sve DDMRP buffer-e u svim logističkim jedinicama i sprema u posebnu tablicu samo one čija je postotna promjena ADU-a veća od postavljenog limita. 
+Postoji procedura čije izvođenje treba biti automatski zakazano, koja analizira sve DDMRP buffer-e u svim logističkim jedinicama i sprema u posebnu tablicu samo one čija je postotna promjena adu-a veća od postavljenog limita. 
 
 U općim parametrima DDMRP postavlja se maksimalni postotak promjene koji ne izaziva upozorenje, kao i broj dana u prošlosti za koje se treba izvršiti analiza (koja se uvijek zaključuje dan prije izračuna). 
 

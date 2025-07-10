@@ -6,7 +6,7 @@ Ova tablica sadrži predviđanja potrošnje za buffer artikle.
 
 Za svaki buffer artikl i za svaku logističku jedinicu predviđa potrošni iznos s dnevnim detaljima.  
 
-Podaci sadržani u ovoj tablici koriste se u postupku [**ažuriranja prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/ADU-update) u slučaju korištenja tehnike izračuna koja uzima u obzir predviđanja buduće potrošnje, a mogu se unijeti ručno ili mogu dolaziti iz postupka izračuna koji određuje predviđanja prodaje gotovih proizvoda. 
+Podaci sadržani u ovoj tablici koriste se u postupku [**ažuriranja prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/adu-update) u slučaju korištenja tehnike izračuna koja uzima u obzir predviđanja buduće potrošnje, a mogu se unijeti ručno ili mogu dolaziti iz postupka izračuna koji određuje predviđanja prodaje gotovih proizvoda. 
 
 U slučaju ručnog unosa nije potrebno unositi vrijednost za svaki dan, dovoljno je unijeti jedan za svaki vremenski period čija je dužina jednaka parametru **Budući dani** u DDMRP parametrima artikla. 
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Ova procedura izračunava dekuplirano vrijeme isporuke (DLT) za sve artikle upravljane buffer-om, bilo da se nalaze u tvornici ili u distribucijskim centrima/hubovima. 
 
-Ovo je vrlo važan parametar za određivanje veličine zone buffer-a, a time i razine zaliha koje su proporcionalne DLT-u. 
+Ovo je vrlo važan parametar za određivanje veličine zone buffer-a, a time i razine zaliha koje su proporcionalne dlt-u. 
 
 Ako distribucijski centar/hub dobiva zalihe iz drugog huba, DLT artikla koji se u njemu skladište jednak je za sve i određen je vremenom isporuke navedenim u tablici logističke strukture, osim ako artikl u parametrima DDMRP-a ne sadrži iznimku za opskrbu. 
 
@@ -17,12 +17,12 @@ Artikli s nedosljednim ili nepotpunim podacima neće biti uzeti u obzir pri izra
 
 Za sve artikle u tvornici koji imaju definiranu listu materijala, procedura zbraja vremena isporuke svakog artikla unutar liste materijala, pri čemu se izračun zaustavlja kada naiđe na artikl s buffer-om, budući da je takav artikl već dostupan i ne zahtijeva dodatno vrijeme za nabavu. 
 
-Najveći zbroj među različitim ograncima određuje vrijednost DLT-a artikla, odnosno vrijeme potrebno za proizvodnju proizvoda. 
+Najveći zbroj među različitim ograncima određuje vrijednost dlt-a artikla, odnosno vrijeme potrebno za proizvodnju proizvoda. 
 
-Ovaj se izračun provodi i za proizvode koji u tvornici nisu buffer artikli prema DDMRP-u, budući da oni mogu biti buffer artikli u distribucijskim centrima ili hubovima, pri čemu njihov DLT odgovara vrijednosti DLT-a u tvornici uvećanoj za vrijeme transporta. 
+Ovaj se izračun provodi i za proizvode koji u tvornici nisu buffer artikli prema DDMRP-u, budući da oni mogu biti buffer artikli u distribucijskim centrima ili hubovima, pri čemu njihov DLT odgovara vrijednosti dlt-a u tvornici uvećanoj za vrijeme transporta. 
 
-Procedura također određuje kritični put svakog artikla, odnosno identificira sve artikle koji se nalaze na najduljem opskrbnom lancu i time određuju vrijednost DLT-a artikla. 
+Procedura također određuje kritični put svakog artikla, odnosno identificira sve artikle koji se nalaze na najduljem opskrbnom lancu i time određuju vrijednost dlt-a artikla. 
 
-Ako se želi smanjiti vrijednost DLT-a artikla, potrebno je odabrati artikle na kritičnom putu kao nove artikle s buffer-om, budući da odabir artikala koji nisu na kritičnom putu neće donijeti nikakvu korist. 
+Ako se želi smanjiti vrijednost dlt-a artikla, potrebno je odabrati artikle na kritičnom putu kao nove artikle s buffer-om, budući da odabir artikala koji nisu na kritičnom putu neće donijeti nikakvu korist. 
 
 Po završetku postupka automatski se pokreće procedura ažuriranja zona.

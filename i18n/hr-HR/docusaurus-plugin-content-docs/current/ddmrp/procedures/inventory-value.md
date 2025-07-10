@@ -15,7 +15,7 @@ Ako odluka dovodi do smanjenja ukupne vrijednosti kapitala, smatra se opravdanom
 
 Ako artikl s buffer-om ima definiranu listu materijala, unutar koje postoji ogranak koji vodi do nabavnih proizvoda i koji predstavlja lanac kritičnih komponenti, odnosno onaj lanac koji određuje vrijednost dekupliranog vremena isporuke (DLT) matičnog buffer-a.   
 
-Uobičajeno je da uvođenje buffer-a za jedan od takvih artikala smanjuje vrijednost DLT-a matičnog buffer-a, što dovodi do smanjenja njegove prosječne zalihe, dok se istovremeno uvodi nova zaliha za novi buffer.   
+Uobičajeno je da uvođenje buffer-a za jedan od takvih artikala smanjuje vrijednost dlt-a matičnog buffer-a, što dovodi do smanjenja njegove prosječne zalihe, dok se istovremeno uvodi nova zaliha za novi buffer.   
 
 Budući da jedinični trošak raste što se više napreduje u hijerarhiji liste materijala, takva radnja obično dovodi do smanjenja ukupne vrijednosti kapitala uloženog u matični i podređeni buffer.   
 

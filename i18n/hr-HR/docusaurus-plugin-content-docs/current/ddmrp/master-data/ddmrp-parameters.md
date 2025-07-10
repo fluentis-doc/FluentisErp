@@ -44,7 +44,7 @@ DDMRP parametri koje je potrebno definirati su sljedeći:
 
   Količina koja se prosječno troši svaki dan u logističkoj jedinici ovog zapisa (razlikuje se za svaku jedinicu). Treba uzeti u obzir dovoljno dug vremenski period (višestruko duži od vremena nabave artikla) za izračun prosjeka. 
   
-  Ova vrijednost značajno utječe na razinu zaliha artikla i potrebno ju je periodično ažurirati [(vidi proceduru)](/docs/ddmrp/procedures/ADU-update).
+  Ova vrijednost značajno utječe na razinu zaliha artikla i potrebno ju je periodično ažurirati [(vidi proceduru)](/docs/ddmrp/procedures/adu-update).
 
 - **Razdvojeni lead time (DLT)**,
 

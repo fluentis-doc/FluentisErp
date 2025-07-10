@@ -13,7 +13,7 @@ Utilizarea procedurii *Previziuni vânzări* este necesară doar atunci când se
 
 Într-o astfel de situație, stocurile existente pentru articolele buffer în lista produsului finit nu ar fi suficiente, iar realizarea produselor finite în timpul și cantitățile stabilite în previziunile de vânzări ar fi imposibilă.
 
-Dacă ar exista o variație semnificativă a cererii, dar progresivă și pe o perioadă de timp mai lungă decât timpul de producție cumulat, previziunile de vânzări nu ar fi necesare, deoarece procedura de [actualizare a consumului mediu zilnic (ADU)](/docs/ddmrp/procedures/ADU-update), lucrând pe valorile de consum din trecut, ajustează automat consumul mediu zilnic (ADU) la variația cererii, ceea ce duce la creșterea zonelor și a nivelului mediu de stocuri.
+Dacă ar exista o variație semnificativă a cererii, dar progresivă și pe o perioadă de timp mai lungă decât timpul de producție cumulat, previziunile de vânzări nu ar fi necesare, deoarece procedura de [actualizare a consumului mediu zilnic (ADU)](/docs/ddmrp/procedures/adu-update), lucrând pe valorile de consum din trecut, ajustează automat consumul mediu zilnic (ADU) la variația cererii, ceea ce duce la creșterea zonelor și a nivelului mediu de stocuri.
 
 Situațiile tipice care necesită utilizarea previziunilor de vânzări sunt:  
 - Promoții vânzări  
