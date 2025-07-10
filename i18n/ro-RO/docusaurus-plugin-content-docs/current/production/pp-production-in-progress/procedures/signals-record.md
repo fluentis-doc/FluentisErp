@@ -1,34 +1,32 @@
 ---
-title: Registrazione dichiarazioni
+title: Înregistrare declarații
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-La procedura di registrazione delle dichiarazioni di produzione in Fluentis consente di registrare più dichiarazioni contemporaneamente.
+:::important Utilizare
+Procedura de înregistrare a declarațiilor de producție în Fluentis permite înregistrarea mai multor declarații simultan.
 :::
 
-## Filtro
+## Filtru 
 
-In questo tab è possibile visualizzare la lista delle segnalazioni di produzione non ancora registrate ed è possibile filtrarle attraverso una serie di criteri di selezione. 
+În acest tab este posibilă vizualizarea listei declarațiilor de producție care nu au fost încă înregistrate și se pot filtra folosind o serie de criterii de selecție.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+După inserarea filtrelor, faceți clic pe butonul **Caută** prezent în *ribbon bar* pentru a vizualiza rezultatele în tabelul rezultatelor.
 
-*Pulsanti specifici*: 
+#### Butoane specifice
 
-> **Registrazione dichiarazioni**: questo pulsante permette di registrare tutte le dichiarazioni selezionate dall'utente nella griglia sottostante.
+> **Înregistrarea declarații**: permite înregistrarea tuturor declarațiilor selectate de utilizator în grila de mai jos.
 
 
-## Riepilogativa
+## Rezumat
 
-In questo tab è possibile ripristinare le registrazioni effettuate ed è possibile filtrarle attraverso una serie di criteri di selezione.
+În acest tab este posibilă restaurarea înregistrărilor efectuate pe care le filtra folosind o serie de criterii de selecție.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+După inserarea filtrelor, faceți clic pe butonul **Caută** prezent în *ribbon bar* pentru a vizualiza rezultatele în tabelul rezultatelor.
 
-Selezionando una registrazione, nel tab sottostante **dichiarazioni** è possibile visualizzare le relative dichiarazioni registrate e per ciascuna di esse, nel tab **Registrazione di magazzino**, i relativi movimenti di magazzino.
+Selectând o înregistrare, în tabul **declarații** se afișează declarațiile înregistrate corespunzătoare iar pentru fiecare dintre acestea, în tab **Înregistrare de gestiune**, mișcările respective de gestiune.
 
-*Pulsanti specifici*: 
+#### Butoane specifice
 
-> **Cancellazione registrazione dichiarazioni**: questo pulsante permette di ripristinare tutte le dichiarazioni registrate in quella registrazione;
-> **Ripristino dichiarazione**: questo pulsante permette di ripristinare la singola registrazione selezionata dall'utente nella griglia sottostante, lasciando le altre registrate.
-
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Şterge înregistrare semnalări**: permite restaurarea tuturor declarațiilor înregistrate în acea înregistrare;
+> **Restaurare declarație (Ripristino dichiarazione)**: permite restaurarea înregistrării selectate de utilizator în tabelul inferior, lăsând celelalte înregistrate.
