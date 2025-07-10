@@ -1,24 +1,24 @@
 ---
-title: Esportazioni
+title: Izvozi
 sidebar_position: 2
 ---
 
-Da questa maschera si eseguono le esportazioni dati per DocFinance, con tre diverse opzioni.
+Iz ovog obrasca možete izvesti podatke za DocFinance, s tri različite opcije. 
 
-**Esporta anagrafica**: l'attivazione di questo flag imporrà al sistema di creare il file di allineamento del piano dei conti e delle anagrafiche. Una volta impostato si attiveranno i campi collegati successivi, dove impostare il nome file e il percorso condiviso di creazione (entrambi i dati saranno memorizzati per essere riproposti alla creazione successiva). Il primo campo ‘Data ultima esportazione' consente di definire la data di riferimento per l'esportazione dei soli dati modificati/aggiunti nel piano dei conti: è consentito cancellare questa data in modo da creare un file completo di tutte le impostazioni di piano dei conti/anagrafiche (la cosa ha chiaramente un impatto significativo sui tempi necessari all'allineamento tra i due sistemi)
+**Izvoz šifarnika**: aktiviranje ove zastavice prisilit će sustav da kreira datoteku za usklađivanje kontnog plana i matičnih podataka. Nakon postavljanja, aktivirat će se sljedeća povezana polja, gdje možete postaviti naziv datoteke i zajednički put stvaranja (oba će se podatka pohraniti kako bi se ponovno predložila za sljedeću izradu). Prvo polje 'Datum zadnjeg izvoza' omogućuje definiranje referentnog datuma za izvoz samo izmijenjenih/dodanih podataka u kontnom planu: moguće je izbrisati ovaj datum kako bi se stvorila potpuna datoteka sa svim postavkama kontnog plana /osobni podaci (ovo ima značajan utjecaj na vrijeme potrebno za usklađivanje dva sustava)
 
-**Creazione automatica cash flow**: con questo flag il programma andrà a creare un nuovo cash flow nel modulo omonimo, prima di procedere all'eventuale esportazione dati del punto successivo. La creazione avverrà con i parametri di default della procedura ‘Creazione automatica cash flow': si rinvia alla documentazione specifica per ulteriori dettagli.
+**Automatsko stvaranje novčanog toka**: s ovom zastavom program će stvoriti novi novčani tok u istoimenom modulu, prije nego što nastavi s izvozom podataka sljedeće točke. Izrada će se odvijati sa zadanim parametrima postupka 'Automatsko stvaranje novčanog toka': molimo pogledajte posebnu dokumentaciju za dodatne pojedinosti.
 
-**Esporta cash flow**: con questo flag il sistema andrà a creare il file dei flussi finanziari, sia come partite contabili che come previsionali. Quando il flag viene impostato, si attiva il successivo flag ‘Derogabilità da anagrafici/tipi pagamento' e i campi con i nomi e il percorso condiviso di creazione del file (entrambi memorizzati). In dettaglio, a seconda che sia stato impostato il flag ‘Derogabilità da anagrafici/tipi pagamento' o meno, la logica di assegnazione della derogabilità cambia: in caso non sia impostato, la derogabilità per i fornitori sarà rilevato dal tipo di pagamento e per i clienti dall'anagrafica; in caso sia impostato, la derogabilità deriverà dall'anagrafica cliente/fornitore e se qui non è impostata sarà calcolata con codici fissi (‘01' per le riba, oppure ‘01' – ‘02' – ‘03' – ‘04' a seconda che la differenza tra data scadenza e data attuale restituisca una data scaduta, una differenza inferiore ai 30 giorni, dai 30 ai 90, oltre i 90).
+**Izvoz novčanog toka**: s ovom zastavom sustav će stvoriti datoteku financijskog tijeka, poput računovodstvenih stavki i predviđanja. Kada je zastavica postavljena, aktiviraju se sljedeća zastavica "Može se odstupiti od osobnih podataka/vrsta plaćanja" i aktiviraju se polja s imenima i zajedničkom putanjom stvaranja datoteke (oba pohranjena). Detaljno, ovisno o tome je li zastavica 'Odstupanje od zapisa/vrsta plaćanja' postavljena ili ne, logika za dodjelu odstupanja se mijenja: ako nije postavljena, odstupanje za dobavljače će se detektirati prema vrsti plaćanja i za kupci iz registra; ako je postavljeno, odstupanje će potjecati iz registra kupaca/dobavljača, a ako nije postavljeno ovdje, izračunat će se s fiksnim kodovima ('01' za ribas, ili '01' – '02' – '03' – ' 04' jer ovisno o tome daje li razlika između datuma isteka i trenutnog datuma istekli rok, razliku manju od 30 dana, od 30 do 90 ili više od 90). 
 
-Alla base della maschera va definito l'utente che andrà ad eseguire la creazione dei file. È necessario che questo abbia accesso alle cartelle condivise impostate per la creazione dei file.
+Korisnik koji će kreirati datoteke mora biti definiran na dnu forme te mora imati pristup dijeljenim mapama postavljenim za stvaranje datoteke. 
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Con questo pulsante è possibile salvare le impostazioni da proporre di default nella maschera. |
-| Esportazione | Esegue la creazione del/i file/s così come impostati nella maschera. |
+| Spremi | Ovim gumbom moguće je spremiti postavke koje će se prema zadanim postavkama predložiti u obrascu. |
+| Izvoz | Stvara datoteke kako je postavljeno u obrascu.  |
 
 
 
