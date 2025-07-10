@@ -1,15 +1,15 @@
 ---
-title: definizione politiche sconti
+title: Definición de descuento de políticas
 sidebar_position: 1
 ---
 
-En esta pantalla se definen las políticas de descuento según las configuraciones ingresadas en otras pantallas del grupo **gestione prezzi**.
+En esta pantalla se definen las políticas de descuento según las configuraciones ingresadas en otras pantallas del grupo **Gestión de precios**.
 
 En la primera cuadrícula están presentes las siguientes columnas:
 
->- **descrizione conto**: contiene el registro del destinatario de la política de descuento.  
->- **classe**: se refiere a la clase de artículo destinataria de la política de descuento; es un campo opcional.  
->- **categoria sconto acquisti**: permite elegir la categoría de descuento de compras para asociar al registro entre las codificadas en la tabla [Categoría de descuento de compras (Categoria sconto acquisti)](/docs/configurations/tables/purchase/category-discounts-price-management/).  
+>- **Descripción de la cuenta**: contiene el registro del destinatario de la política de descuento.  
+>- **Clase**: se refiere a la clase de artículo destinataria de la política de descuento; es un campo opcional.  
+>- **categoria sconto acquisti**: permite elegir la categoría de descuento de compras para asociar al registro entre las codificadas en la tabla [Categoría de descuento de compras](/docs/configurations/tables/purchase/category-discounts-price-management/).  
 >- **dettaglio categoria sconti**: si el usuario desea gestionar también la *Subcategoría de descuento (Sottocategoria di sconto)*, debe ingresar en este campo el mismo código utilizado por el proveedor.  
 >- **data validità**: contiene la validez de la política de descuento; esto permite aplicar diversas políticas en diferentes períodos del año.
 
