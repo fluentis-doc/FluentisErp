@@ -1,15 +1,15 @@
 ---
-title: arrotondamenti temporali
+title: Redondeos de tiempo
 sidebar_position: 24
 ---
 
-La tabla está ubicada en Configuración > tablas > Gestión de proyectos > arrotondamenti temporali (Configurazione > tabelle > Gestione progetti > Arrotondamenti temporali).
+La tabla está ubicada en **Configuración > tablas > Gestión de proyectos > Redondeos de tiempo**.
 
 En esta tabla se configuran los redondeos que se aplicarán en el plan de facturación a las horas de servicio declaradas en las intervenciones.
 
-**minuti** indica el intervalo a partir del cual comienza el redondeo, utilizado para encontrar el redondeo que se aplicará según las horas de servicio de la intervención realizada.  
-**arrotondamento** número de minutos a los que redondear.  
-**tolleranza** minutos de tolerancia antes de activar el redondeo o el posible intervalo siguiente.
+**Minutos** indica el intervalo a partir del cual comienza el redondeo, utilizado para encontrar el redondeo que se aplicará según las horas de servicio de la intervención realizada.  
+**Redondeo** número de minutos a los que redondear.  
+**Tolerancia** minutos de tolerancia antes de activar el redondeo o el posible intervalo siguiente.
 
 La tabla opera en “intervalos”.
 
