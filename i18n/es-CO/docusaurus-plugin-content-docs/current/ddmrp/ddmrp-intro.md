@@ -36,4 +36,4 @@ La documentación está dividida en las siguientes áreas:
 
 [**PROCEDIMIENTOS** (PROCEDURE)](/docs/ddmrp/procedures/adu-update)
 
-[**FORMULARIOS y REPORTES** (FORMS e REPORTS)](/docs/ddmrp/views_and_forms/buffer-status)
+[**FORMULARIOS y REPORTES** (FORMS e REPORTS)](/docs/ddmrp/views-and-forms/buffer-status)

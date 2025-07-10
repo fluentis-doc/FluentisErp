@@ -36,4 +36,4 @@ The documentation is divided into the following areas:
 
 [**Procedures**](/docs/ddmrp/procedures/adu-update)
 
-[**FORMS and REPORTS**](/docs/ddmrp/views_and_forms/buffer-status)
+[**FORMS and REPORTS**](/docs/ddmrp/views-and-forms/buffer-status)

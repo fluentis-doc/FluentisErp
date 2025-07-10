@@ -181,7 +181,7 @@ const features = [
                           <ul style={{ listStyleType: 'none', padding: 0 }}>
                             <li><a href='docs/ddmrp/master-data/introduction'><Translate>Anagrafiche</Translate></a></li> 
                             <li><a href='docs/ddmrp/procedures/adu-update'><Translate>Procedure</Translate></a></li> 
-                            <li><a href='docs/ddmrp/views_and_forms/buffer-status'><Translate>Forms e report</Translate></a></li> 
+                            <li><a href='docs/ddmrp/views-and-forms/buffer-status'><Translate>Forms e report</Translate></a></li> 
                           </ul>
                          ),    
                         },
