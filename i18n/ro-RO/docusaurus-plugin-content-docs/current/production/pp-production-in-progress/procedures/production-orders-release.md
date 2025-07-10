@@ -1,34 +1,34 @@
 ---
-title: Rilascio ordini di produzione
+title: Lansare ordine de producţie
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La procedura di **Rilascio degli ordini di produzione** in Fluentis permette di gestire in modo efficiente il passaggio degli ordini dallo stato *Lanciato* a *Esecutivo*. Mediante un'interfaccia intuitiva, è possibile filtrare e selezionare gli ordini da rilasciare, generando al contempo i relativi movimenti di magazzino per il prelievo automatico dei materiali. Inoltre, questa procedura consente di ripristinare ordini già rilasciati, garantendo una flessibilità operativa significativa nel processo produttivo.
+:::important Utilizare
+Procedura permite gestionarea eficientă a tranziției ordinelor de la starea *Lansat* în *Executiv*. Printr-o interfață intuitivă, este posibil să filtrați și să selectați ordinele de lansat, generând în același timp mișcările de gestiune necesare pentru colectarea automată a materialelor. În plus, această procedură permite restabilirea ordinelor deja eliberate, garantând o flexibilitate operațională semnificativă în procesul de producție.
 :::
 
-Questa form permette di effettuare il cambio di stato degli ordini di produzione e contemporaneamente creare anche i relativi movimenti di magazzino di scarico di tutti gli articoli che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+Acest formular permite schimbarea stării ordinelor de producție și, simultan, crearea mișcărilor de gestiune pentru descărcarea tuturor articolelor ce au, în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ale articolului, *Tipul de preluare* cu valoarea **Automatic**.
 
-## Filtro
+## Filtru (Filtro)
 
-In questo tab è possibile visualizzare la lista degli ordini pianificati che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+În acest tab este posibilă vizualizarea listei ordinelor planificate care trebuie să fie încă eliberate și este posibil să le filtrați folosind o serie de criterii de selecție.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Odată ce toți filtrii doriti sunt setați, va trebui să faceți clic pe butonul **Căutare (Ricerca)** prezent în *bara de panglică (ribbon bar)* pentru a vizualiza rezultatele în cadrul grilei de rezultat.
 
-Dopo aver individuato e selezionato gli ordini che si vogliono rilasciare, per procedere bisognerà utilizzare con il pulsante **Rilascio ordini**  presente nella *ribbon bar*, questo permetterà di variare lo stato degli ordini da *Lanciato* ad *Esecutivo* e allo stesso tempo di creare i movimenti di magazzino di scarico di tutti i materiali che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+După ce ați identificat și selectat ordinele pe care doriți să le eliberați, pentru a continua va trebui să folosiți butonul **Eliberare ordine (Rilascio ordini)** prezent în *bara de panglică (ribbon bar)*, acest lucru va permite schimbarea stării ordinelor de la *Lansat* în *Executiv* și, în același timp, crearea mișcărilor de gestiune pentru descărcarea tuturor materialelor ce au, în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ale articolului, *Tipul de preluare* cu valoarea **Automatic**.
 
-## Ripristino
+## Restaurare (Ripristino)
 
-In questo tab è possibile eseguire la procedura di ripristino che consente di annullare il rilascio dell'ordine di produzione precedentemente effettuato, ripristinando la situazione antecedente al rilascio stesso, riportando lo stato dell'ordine di produzione a *Lanciato* ed eliminando il relativo movimento di magazzino.
+În acest tab este posibilă executarea procedurii de restaurare care permite anularea eliberării ordinului de producție efectuat anterior, restabilind situația anterioară eliberării, readucând starea ordinului de producție la *Lansat* și eliminând mișcarea de gestiune corespunzătoare.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.  
+Odată ce toți filtrii doriti sunt setați, va trebui să faceți clic pe butonul **Căutare (Ricerca)** prezent în *bara de panglică (ribbon bar)* pentru a vizualiza rezultatele în cadrul grilei de rezultat.
 
-Tenendo selezionata una delle righe presenti nella griglia di risultato, vengono visualizzati nella griglia sottostante i relativi movimenti di magazzino creati.
+Ținând selectată una dintre rândurile prezente în grila de rezultat, mișcările de gestiune create corespunzătoare sunt afișate în grila de mai jos.
 
-Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino**. 
+Pentru a lansa restaurarea, selectați unul sau mai multe ordine și faceți clic pe butonul **Restaurare (Ripristino)**.
 
-Il ripristino dell'ordine di produzione è possibile solo se l'ordine di produzione generato si trova nello stato di *Esecutivo* e non sono ancora state iniziate le relative dichiarazioni di produzione; mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine di produzione, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazioni di produzione.
+Restaurarea ordinului de producție este posibilă numai dacă ordinul de producție generat se află în starea de *Executiv (Esecutivo)* și nu au început încă declarațiile de producție corespunzătoare; în cazul în care este deja *Epuizat (Evaso)*, nu mai este posibilă executarea restaurării ordinului de producție, cu excepția cazului în care se merge înapoi pornind de la rollback-ul înregistrării declarațiilor de producție.
 
-Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
+Executând această procedură, ordinele restaurate vor fi din nou vizibile în tabul de **Filtru (Filtro)** unde va fi posibil să reexecutați eliberarea.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii privind funcționarea comună a formularelor, vă rugăm să consultați linkul [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
