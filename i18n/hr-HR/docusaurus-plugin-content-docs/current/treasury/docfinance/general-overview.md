@@ -1,30 +1,30 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
 :::note[Info]
-DocFinance è un software specifico per la gestione della tesoreria, per monitorare e ottimizzare i flussi di cassa, la gestione dei conti bancari e il controllo delle liquidità.
+DocFinance je specifičan softver za upravljanje riznicom, za praćenje i optimizaciju novčanih tokova, upravljanje bankovnim računima i kontrolu likvidnosti. 
 
-Funzionalità principali di DocFinance:
+Glavne značajke DocFinancea: 
 
-- Gestione del cash flow
+- Upravljanje novčanim tokom 
 
-- Interfaccia bancaria: integrazione con i sistemi bancari, consentendo la gestione di bonifici, RID, incassi e pagamenti, oltre alla riconciliazione automatica dei movimenti bancari.
+- Bankarsko sučelje: integracija s bankovnim sustavima, omogućavajući upravljanje bankovnim prijenosima, RID-ovima, naplatama i plaćanjima, kao i automatsko usklađivanje bankovnih kretanja. 
 
-- Analisi finanziaria: analisi delle liquidità, con la possibilità di verificare l’esposizione finanziaria e valutare la salute economica aziendale.
+- Financijska analiza: analiza likvidnosti, s mogućnošću provjere financijske izloženosti i ocjene ekonomskog zdravlja poduzeća. 
 
-- Gestione degli investimenti: Per le aziende che effettuano operazioni finanziarie più complesse, come investimenti a breve termine, DocFinance consente di monitorare tali transazioni.
+- Upravljanje investicijama: Za tvrtke koje provode složenije financijske transakcije, kao što su kratkoročna ulaganja, DocFinance omogućuje praćenje takvih transakcija. 
 
-DocFinance si integra bene con altri software come Fluentis ERP, permettendo una gestione fluida tra la contabilità e la tesoreria. È molto utilizzato in Italia, soprattutto nelle PMI che hanno necessità di gestire con precisione la liquidità e i rapporti con le banche.
+DocFinance se dobro integrira s drugim softverom kao što je Fluentis ERP, omogućujući jednostavno upravljanje između računovodstva i riznice. Široko se koristi u Italiji, posebno u malim i srednjim poduzećima koja trebaju precizno upravljati likvidnošću i odnosima s bankama.
 :::
 
 
 
-Il modulo DocFinance di Fluentis ERP è un'integrazione che consente di gestire in maniera centralizzata e automatizzata le attività legate alla tesoreria aziendale. Questa integrazione permette di utilizzare le funzionalità avanzate di DocFinance direttamente all'interno dell'ecosistema Fluentis ERP, migliorando la gestione dei flussi di cassa, dei pagamenti e degli incassi.
+Modul DocFinance Fluentis ERP-a integracija je koja vam omogućuje centralizirano i automatizirano upravljanje aktivnostima vezanim uz riznicu tvrtke. Ova integracija omogućuje vam korištenje naprednih značajki DocFinancea izravno unutar Fluentis ERP sustava, poboljšavajući upravljanje novčanim tokovima, plaćanjima i naplatama.
 
 
 
  
-**Elenco tabelle obbligatorie**: è opportuno riferirsi alla sezione  Configurazione > Tabelle >Tesoreria per identificare le corrette impostazioni di DocFinance.  
-Le form sono:  [Anagrafici ](/docs/configurations/tables/treasury/docfinance-module-tables/registers) e  [Derogabilità](/docs/configurations/tables/treasury/docfinance-module-tables/derogability)
+**Popis obaveznih tablica**: preporučljivo je pogledati odjeljak Konfiguracija > Tablice > Riznica kako biste identificirali ispravne postavke DocFinancea.  
+Obrasci su:  [Šifarnici ](/docs/configurations/tables/treasury/docfinance-module-tables/registers) i  [Odstupanje](/docs/configurations/tables/treasury/docfinance-module-tables/derogability)
