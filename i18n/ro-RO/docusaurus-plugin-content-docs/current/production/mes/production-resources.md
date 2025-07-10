@@ -68,7 +68,7 @@ Tipurile de documente care pot fi excluse sunt:
 > *Niciunul*: niciunul dintre tipurile de documente nu este exclus;  
 > *Articol*: toate documentele (fișiere, imagini,...) legate de articol nu vor fi afișate în tabul *Documente și Instrucțiuni operative*;  
 > *Ordin client*: toate documentele (fișiere, imagini,...) legate de ordinul client nu vor fi afișate în tabul *Documente și Instrucțiuni operative*;  
-> *Comandă (Commessa)*: toate documentele (fișiere, imagini,...) legate de comandă nu vor fi afișate în tabul *Documente și Instrucțiuni operative*;  
+> *Comandă*: toate documentele (fișiere, imagini,...) legate de comandă nu vor fi afișate în tabul *Documente și Instrucțiuni operative*;  
 > *Ordin de producție*: toate documentele (fișiere, imagini,...) legate de ordinul de producție nu vor fi afișate în tabul *Documente și Instrucțiuni operative*;  
 > *Fază ordin de producție*: toate documentele (fișiere, imagini,...) legate de faza a unui ordin de producție (în tabul *Documente atașate (Documenti allegati)* aferent fazei) nu vor fi afișate în tabul *Documente și Instrucțiuni operative*.
 
@@ -77,7 +77,7 @@ Tipurile de documente care pot fi excluse sunt:
 Conține o serie de controale legate de tabul *Control calitate* din Fluentis MES.  
 **Tip de control de luat în considerare**: este tipul de document pentru controlul articolelor în care vor fi memorizate valorile înregistrate;  
 **Detaliu articol de luat în considerare**: este nivelul maxim de detaliu al articolului pe care îl luăm în considerare pentru efectuarea testelor (Niciunul, Lot, S.N., UdI);  
-*Faza este blocabilă**: la prima valoare neconformă sau la media valorilor înregistrate ca neconforme, faza respectivă și fazele următoare sunt blocate până când sunt deblocate de un operator autorizat. În acest caz va fi folosită **Motiv întrerupere blocare fază** indicată în secțiunea dedicată *Motivelor întreruperilor*.
+**Faza este blocabilă**: la prima valoare neconformă sau la media valorilor înregistrate ca neconforme, faza respectivă și fazele următoare sunt blocate până când sunt deblocate de un operator autorizat. În acest caz va fi folosită **Motiv întrerupere blocare fază** indicată în secțiunea dedicată *Motivelor întreruperilor*.
 
 ### Motive întrerupere
 
@@ -107,65 +107,63 @@ Această secțiune permite ascunderea diferitelor informații nenecesare în Flu
 
 ### General
 
-> *Grup (Gruppo)*: dacă este activ, ascunde informațiile referitoare la grup;  
+> *Grup*: dacă este activ, ascunde informațiile referitoare la grup;  
 > *Secvență*: dacă este activ, ascunde informațiile referitoare la secvență;  
-> *Subfază (Sottofase)*: dacă este activ, ascunde informațiile referitoare la subfază;  
+> *Subfază*: dacă este activ, ascunde informațiile referitoare la subfază;  
 > *Centru de lucru*: dacă este activ, ascunde informațiile referitoare la centrul de lucru;  
 > *Mașină*: dacă este activ, ascunde informațiile referitoare la mașină;  
-> *Grup manoperă (Gruppo manodopera)*: dacă este activ, ascunde informațiile referitoare la grupul de manoperă;  
+> *Grup manoperă*: dacă este activ, ascunde informațiile referitoare la grupul de manoperă;  
 > *Date planificate (Date previste)*: dacă este activ, ascunde informațiile referitoare la datele planificate;  
-> *Variantă (Variante)*: dacă este activ, ascunde informațiile referitoare la variantă;  
+> *Variantă*: dacă este activ, ascunde informațiile referitoare la variantă;  
 > *Ordin de producție*: dacă este activ, ascunde informațiile referitoare la ordinul de producție;  
-> *Comandă (Commessa)*: dacă este activ, ascunde informațiile referitoare la comandă;  
-> *Proiect (Progetto)*: dacă este activ, ascunde informațiile referitoare la proiect;  
-> *Loturi (Lotti)*: dacă este activ, ascunde informațiile referitoare la gestionarea loturilor;  
-> *Număr de serie (Serial number)*: dacă este activ, ascunde informațiile referitoare la gestionarea numerelor de serie;  
-> *UDC*: dacă este activ, ascunde informațiile referitoare la gestionarea UDC-urilor;
+> *Comandă*: dacă este activ, ascunde informațiile referitoare la comandă;  
+> *Proiect*: dacă este activ, ascunde informațiile referitoare la proiect;  
+> *Loturi*: dacă este activ, ascunde informațiile referitoare la gestionarea loturilor;  
+> *Număr de serie*: dacă este activ, ascunde informațiile referitoare la gestionarea numerelor de serie;  
+> *UdI*: dacă este activ, ascunde informațiile referitoare la gestionarea UdI-urilor;
 
-### **Articole produse (Articoli prodotti)**
-> *Depozit de transfer (Magazzino versamento)*: dacă este activ, ascunde informațiile referitoare la depozitul de transfer al articolelor produse în tabul *Producție*;  
-> *motiv transfer (Causale versamento)*: dacă este activ, ascunde informațiile referitoare la cauza de transfer a articolelor produse în tabul *Producție*;  
-> *Ubicare de transfer (Ubicazione versamento)*: dacă este activ, ascunde informațiile referitoare la ubicarea de transfer a articolelor produse în tabul *Producție*;  
-> *Depozit de transfer rebut (Magazzino versamento scarto)*: dacă este activ, ascunde informațiile referitoare la depozitul de transfer rebut al articolelor produse în tabul *Producție*;  
-> *motiv transfer rebut (Causale versamento scarto)*: dacă este activ, ascunde informațiile referitoare la cauza de transfer rebut a articolelor produse în tabul *Producție*;  
-> *Ubicare de transfer rebut (Ubicazione versamento scarto)*: dacă este activ, ascunde informațiile referitoare la ubicarea de transfer rebut a articolelor produse în tabul *Producție*;  
-> *Cantitate alternativă (Quantità alternativa)*: dacă este activ, ascunde informațiile referitoare la gestionarea cantității alternative;
+### Articole produse
+> *Gestiune de depozitare*: dacă este activ, ascunde informațiile referitoare la gestiunea de depozitare al articolelor produse în tabul *Producție*;  
+> *Șablon transfer*: dacă este activ, ascunde informațiile referitoare la șablonul de depozitare a articolelor produse în tabul *Producție*;  
+> *Locație depozitare*: dacă este activ, ascunde informațiile referitoare la locația de depozitare a articolelor produse în tabul *Producție*;  
+> *Gestiune de depozitare rebut*: dacă este activ, ascunde informațiile referitoare la gestiunea de depozitare rebut al articolelor produse în tabul *Producție*;  
+> *Șablon transfer rebut*: dacă este activ, ascunde informațiile referitoare la șablonul de depozitare rebut a articolelor produse în tabul *Producție*;  
+> *Locație depozitare rebut*: dacă este activ, ascunde informațiile referitoare la locația de depozitare rebut a articolelor produse în tabul *Producție*;  
+> *Cantitate alternativă*: dacă este activ, ascunde informațiile referitoare la gestionarea cantității alternative;
 
-### **Materiale**
-> *Depozit de prelevare (Magazzino prelievo)*: dacă este activ, ascunde informațiile referitoare la depozitul de descărcare a materialelor în tabul *Materiale*;  
-> *motiv prelevare (Causale prelievo)*: dacă este activ, ascunde informațiile referitoare la cauza de descărcare a materialelor în tabul *Materiale*;  
-> *Depozit de transfer rebut (Magazzino versamento scarto)*: dacă este activ, ascunde informațiile referitoare la depozitul de descărcare rebut pentru materiale în tabul *Materiale*;  
-> *motiv transfer rebut (Causale versamento scarto)*: dacă este activ, ascunde informațiile referitoare la cauza de descărcare rebut a materialelor în tabul *Materiale*;
+### Materiale
+> *Gestiune colectare*: dacă este activ, ascunde informațiile referitoare la gestiunea de descărcare a materialelor în tabul *Materiale*;  
+> *Șablon colectare*: dacă este activ, ascunde informațiile referitoare la șablonul de descărcare a materialelor în tabul *Materiale*;  
+> *Gestiune de depozitare rebut*: dacă este activ, ascunde informațiile referitoare la gestiunea de descărcare rebut pentru materiale în tabul *Materiale*;  
+> *Șablon depozitare rebut*: dacă este activ, ascunde informațiile referitoare la șablonul de descărcare rebut a materialelor în tabul *Materiale*;
 
-### **Control calitate (Controlli qualità)**
+### Control calitate
 
-> **Secvență**: dacă este activ, ascunde informațiile referitoare la secvență în tabul *Control calitate (Controlli qualità)*;  
-> **Tip de probă (Tipo di prova)**: dacă este activ, ascunde informațiile referitoare la tipul de probă în tabul *Control calitate (Controlli qualità)*;  
-> **Instrumente de măsură (Strumenti di misura)**: dacă este activ, ascunde informațiile referitoare la Categoria instrument de măsură și la Instrumente de măsură (strumenti di misura) în tabul *Control calitate (Controlli qualità)*;  
-> **Limite de toleranță (Limiti tolleranze)**: dacă este activ, ascunde informațiile referitoare la Limitele de toleranță (L.min.(toll-), L.min.(toll+), L.max.(toll-) și L.max.(toll+)) în tabul *Control calitate (Controlli qualità)*;  
-> **Tip de control și Frecvență (Tipo controllo e Frequenza)**: dacă este activ, ascunde informațiile referitoare la Tipul controlului de probă și la Frecvență în tabul *Control calitate (Controlli qualità)*;  
-> **Depozit (Magazzino)**: dacă este activ, ascunde informațiile referitoare la depozit în tabul *Control calitate (Controlli qualità)*;  
-> **Cauză (Causale)**: dacă este activ, ascunde informațiile referitoare la cauza de depozit pentru articolele neconforme în tabul *Control calitate (Controlli qualità)*;
+> **Secvență**: dacă este activ, ascunde informațiile referitoare la secvență în tabul *Control calitate*;  
+> **Tip de test**: dacă este activ, ascunde informațiile referitoare la tipul de test în tabul *Control calitate*;  
+> **Instrumente de măsură **: dacă este activ, ascunde informațiile referitoare la Categoria instrumente de măsură și la Instrumente de măsură în tabul *Control calitate*;  
+> **Limite de toleranță**: dacă este activ, ascunde informațiile referitoare la Limitele de toleranță (L.min.(tol-), L.min.(toll+), L.max.(tol-) și L.max.(tol+)) în tabul *Control calitate*;  
+> **Tip control și Frecvență**: dacă este activ, ascunde informațiile referitoare la Tipul controlului de test și la Frecvență în tabul *Control calitate*;  
+> **Gestiune**: dacă este activ, ascunde informațiile referitoare la gestiune în tabul *Control calitate*;  
+> **Șablon**: dacă este activ, ascunde informațiile referitoare la șablonul de gestiune pentru articolele neconforme în tabul *Control calitate*;
 
-### **Altele (Altro)**
+### Altele
 
 *Producție*
-> *Widget mașină (Widget macchina)*: dacă este activ, ascunde informațiile referitoare la Mașină în tabul *Producție*;  
-> *Defect (Difetto)*: dacă este activ, ascunde informațiile referitoare la defect (difetto) în tabul *Producție*;  
-> *motiv întrerupere (Causale sospensione)*: dacă este activ, ascunde informațiile referitoare la Motiv întrerupere (causale di sospensione) în tabul *Producție*;
+> *Widget mașină*: dacă este activ, ascunde informațiile referitoare la Mașină în tabul *Producție*;  
+> *Defect*: dacă este activ, ascunde informațiile referitoare la defect în tabul *Producție*;  
+> *Motiv întrerupere*: dacă este activ, ascunde informațiile referitoare la Motiv întrerupere în tabul *Producție*;
 
-*Echipă (Squadra)*
-> *Operatori inactivi (Operatori non più attivi)*: dacă este activ, ascunde tabelul referitoare la *Lista operatorilor inactivi (Elenco operatori non più attivi)* din tabul *Echipă (Squadra)*;
+*Echipă*
+> *Operatorii care nu mai sunt activi*: dacă este activ, ascunde tabelul referitoare la *Lista operatorilor inactivi* din tabul *Echipă*;
 
 *Note*
-> *Lista note (Elenco note)*: dacă este activ, ascunde tabelul referitoare la *Documentele atașate semnalării fazei selectate (Documenti allegati alla segnalazione della fase selezionata)* din tabul *Documente și Instrucțiuni operative* din tabul *Note*;
+> *Lista note*: dacă este activ, ascunde tabelul referitor la *Documentele atașate semnalării fazei selectate* din tabul *Documente și Instrucțiuni operative* din *Note*;
 
 *Analiză*  
 > *OEE*: dacă este activ, ascunde graficele OEE din tabul *Analiză*;  
-> *Grafice (Grafici)*: dacă este activ, ascunde graficele sub formă de bare (*Analiză cantități (Analisi quantità)*, *Analiză timp (Analisi tempo)*) din tabul *Analiză*;  
-> *Tabele (Griglie)*: dacă este activ, ascunde tabelele (*Valori cantități (Valori quantità)*, *Valori timp (Valori tempo)*) din tabul *Analiză*.
+> *Grafice*: dacă este activ, ascunde graficele sub formă de bare *Analiza cantitativă*, *Analiză timp* din tabul *Analiză*;  
+> *Tabele*: dacă este activ, ascunde tabelele *Valori cantitate*, *Valori timp* din tabul *Analiză*.
 
 *Extra Data*  
-> *Lista extra data (Elenco extra data)*: dacă este activ, ascunde tabelul referitoare la *Elenco extra data (selezionare o fază) (Elenco extra data (selezionare una fase))* din tabul *Extra data*;
-
-Pentru tot ceea ce nu este detaliat în acest document cu privire la funcționarea comună a formularelor, consultați următorul link [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+> *Lista extra data*: dacă este activ, ascunde tabelul referitoare la *Lista de date suplimentare (selectaţi o fază)* din tabul *Extra data*.
