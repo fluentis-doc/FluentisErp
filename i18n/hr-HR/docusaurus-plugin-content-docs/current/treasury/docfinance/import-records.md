@@ -1,27 +1,27 @@
 ---
-title: Importazione registrazioni
+title: Uvoz zapisa
 sidebar_position: 3
 ---
 
-Attraverso questa procedura si esegue la procedura di importazione del file delle registrazioni contabili creato da DocFinance.
+Ovim postupkom provodite postupak uvoza datoteke računovodstvenih evidencija koju je izradio DocFinance. 
 
-L'importazione avviene attraverso un flusso *Folder Monitor* di Bizlink.
+Uvoz se vrši putem Bizlink *Folder Monitor* streama.
 
-Pertanto il file con le registrazioni da importare sarà depositato nella cartella monitorata dal servizio il quale provvederà ad importarle n automatico.
+Stoga će datoteka sa snimkama za uvoz biti pohranjena u mapi koju nadzire servis koji će ih automatski uvoziti. 
 
-A questo punto il sistema andrà a creare le registrazioni contabili relative, chiudendo le partite indicate da DocFinance e rilevando contabilmente i movimenti sui conti mappati nel sistema (le causali contabili devono avere lo stesso codice tra ERP e DocFinance).
+U ovom trenutku sustav će kreirati relevantne računovodstvene evidencije, zatvarajući stavke koje je označio DocFinance i računovodstveno bilježeći kretanja na računima mapiranim u sustavu (računovodstveni predlošci moraju imati isti kod između ERP-a i DocFinancea). 
 
-Il risultato dell'importazione sarà visibile nella griglia inferiore (mentre nella superiore saranno visualizzati le importazioni eseguite) e con i comandi della ribbon bar sarà possibile cancellare l'importazione e visualizzare il dettaglio degli errori riscontrati nel corso dell'importazione.
+Rezultat uvoza bit će vidljiv u donjoj rešetki (dok će izvršeni uvozi biti prikazani u gornjem), a pomoću naredbi na traci izbornika moći će se poništiti uvoz i pregledati pojedinosti o pogreškama pronađenim tijekom uvoz. 
 
-:::danger ATTENZIONE
-L'importazione dei pagamenti prevede che nel tracciato Docfinance sia passato l'id della partita aperta da chiudere andando così a generare da parte di Fluentis un pagamento ad essa agganciato.
+:::danger PAŽNJA 
+Uvoz plaćanja zahtijeva da se ID otvorene stavke, koje treba zatvoriti, proslijede u Docfinance putanju. Čime se generira plaćanje koje s njim povezuje Fluentis. 
 
-Se per qualsiasi motivo l'id della partita non corrisponde a quello presente nel tracciato (modifiche manuali di qualsiasi genere effettuate dopo l'esportazione partite che sono state poi gestite in Docfinance) saranno generati dei pagamenti, ma essi non saranno correttamente agganciati alle partite le quali rimarranno aperte. E' possibile procedere a compensare tali partite oppure a ricercare i pagamenti importati in questa situazione, cancellarli e manualmente ricrearli agganciando correttamente la relativa partita. L'operazione si esegue, dopo aver cancellato il pagamento, premendo il tasto *Nuovo* e poi *Crea da partite / pagamenti* e selezionando la partita da chiudere.
+Ako iz bilo kojeg razloga ID serije ne odgovara onom koji je prisutan u zapisu (ručne promjene bilo koje vrste, napravljene nakon izvoza serija, kojima se tada upravljalo u Docfinanceu), plaćanja će se generirati, ali neće biti ispravno povezano sa serijama koje će ostati otvorene. Moguće je nastaviti kompenzaciju ovih stavki ili tražiti plaćanja uvezena u ovoj situaciji, izbrisati ih i ručno ponovno kreirati ispravnim povezivanjem relevantne stavke. Operacija se provodi, nakon storniranja uplate, pritiskom na tipku Novo i potom Kreiraj iz stavki/uplata i odabirom stavke za zatvaranje. 
 :::
 
 
 :::note Info
-[Link alle specifiche tecniche **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+[Veza na **Docfinance** tehničke specifikacije](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
 :::
 
 
