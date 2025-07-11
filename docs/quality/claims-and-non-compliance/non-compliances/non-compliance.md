@@ -290,21 +290,21 @@ E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selez
 >  
 > **Quantità**   
 >> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo* reclamato.   
->> **Ricevuta**: è la quantità di *Articolo* ricevuta.   
->> **Contestata**: è la quantità di *Articolo* che si vuole contestare.   
->> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata.   
->> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata.   
->> **Resa**: è la quantità di *Articolo* resa.   
+>> **Ricevuta**: è la quantità di *Articolo* ricevuta; il valore deve essere inserito manualmente.   
+>> **Contestata**: è la quantità di *Articolo* che si vuole contestare; il valore deve essere inserito manualmente.   
+>> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata; il valore deve essere inserito manualmente.   
+>> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata; il valore deve essere inserito manualmente.   
+>> **Resa**: è la quantità di *Articolo* resa; il valore deve essere inserito manualmente.   
 >  
 > **Quantità alternativa**   
 >> Le colonne di questo gruppo sono visualizzate solamente se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stata richiesta la *Proposta U.M. alternativa*.   
 >> **Unità di misura**: è l'*Unità di misura alternativa* dell'*Articolo* reclamato.   
 >> **Unità di misura prezzo**: indica se il *Costo unitario del materiale* è riferito all'*Unità di misura alternativa*.   
->> **Ricevuta**: è la quantità di *Articolo* ricevuta espressa nell'*Unità di misura alternativa*.   
->> **Contestata**: è la quantità di *Articolo* che si vuole contestare espressa nell'*Unità di misura alternativa*.   
->> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata espressa nell'*Unità di misura alternativa*.   
->> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata espressa nell'*Unità di misura alternativa*.   
->> **Resa**: è la quantità di *Articolo* resa espressa nell'*Unità di misura alternativa*.   
+>> **Ricevuta**: è la quantità di *Articolo* ricevuta espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
+>> **Contestata**: è la quantità di *Articolo* che si vuole contestare espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
+>> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
+>> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
+>> **Resa**: è la quantità di *Articolo* resa espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
 >
 > **Costo unitario**   
 >> **Materiale**: è il *Costo unitario* dell'*Articolo*; il valore deve essere inserito manualmente.   

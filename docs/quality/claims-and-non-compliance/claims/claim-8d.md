@@ -22,15 +22,15 @@ E' l'elenco degli *Oggetti reclamati* e si compone delle seguenti informazioni:
 >  
 > **Quantità**   
 >> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* principale dell'*Articolo* reclamato.   
->> **Venduta**: è la quantità di *Articolo* venduta al mittente del *Reclamo*.   
->> **Contestata**: è la quantità di *Articolo* contestata dal mittente del *Reclamo*.   
->> **Resa**: è la quantità di *Articolo* resa dal mittente del *Reclamo*.   
->> **Rilavorata**: è la quantità di *Articolo* rilavorata dal mittente del *Reclamo*.   
->> **Accettata**: è la quantità di *Articolo* accettata.   
+>> **Venduta**: è la quantità di *Articolo* venduta al mittente del *Reclamo*; il valore deve essere inserito manualmente.   
+>> **Contestata**: è la quantità di *Articolo* contestata dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
+>> **Resa**: è la quantità di *Articolo* resa dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
+>> **Rilavorata**: è la quantità di *Articolo* rilavorata dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
+>> **Accettata**: è la quantità di *Articolo* accettata; il valore deve essere inserito manualmente.   
 >
 > **Valore**   
->> **Reclamato**: è il valore reclamato dal mittente del *Reclamo*.   
->> **Accettato**: è il valore accettato.   
+>> **Reclamato**: è il valore reclamato dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
+>> **Accettato**: è il valore accettato; il valore deve essere inserito manualmente.   
 >
 > **Dati reso**   
 >> **Autorizzazione al rientro**: indica che si autorizza il rientro dell'*Articolo* reso per la *Quantità accettata*.   
