@@ -50,7 +50,7 @@ Ako kontni nalog uključuje upravljanje datumom valute banke i u šifrarniku ban
 7. Pritisni gumb **Pokreni kreiranje plaćanja iz stavki.**
 
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Pogledaj tutorijal – YouTube link </a>**
 
 ### Kartica za poništavanje
 
