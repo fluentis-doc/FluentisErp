@@ -7,7 +7,8 @@ La procedura di Valorizzazione non conformità permette la creazione contemporan
 Per utilizzare la procedura è necessario che, al conto *Fornitore*, al quale viene contestato il prodotto o il servizio, sia associato un conto *Cliente* al quale intestare la fattura.   
 
 ## Valorizzazione
-In questa sessione è possibile selezionare le *Non conformità* da valorizzare. E' possibile ricercare le *Non conformità* da valorizzare utilizzando i filtri disponibili.   
+In questa sessione è possibile selezionare le *Non conformità* da valorizzare.   
+E' possibile ricercare le *Non conformità* da valorizzare utilizzando i filtri disponibili.   
 Le *Non conformità* ricercabili sono tra quelle di *Tipo a Fornitore*, *Autorizzate*, con un *Valore da addebitare* e non ancora *Valorizzate*.   
 Le *Note di addebito* verranno create con la **Data creazione** presente sotto l'elenco.   
 Selezionando una o più *Non conformità* la valorizzazione può essere eseguita alla pressione del pulsante **Creazione fatture da Reclami**.   
@@ -28,7 +29,8 @@ Le informazioni gestite sono:
 Una volta modificati i parametri, per poterli utilizzare, è necessario memorizzare le modifiche tramite la pressione del pulsante **Salva**.
 
 ## Ripristino valorizzazione
-            In questa tab è possibile ricercare le fatture precedentemente create con la procedura.
-            Sono presenti dei filtri per effettuare una ricerca più mirata.      
-            Nella prima griglia sono presenti le operazioni effettuate, mentre nella seconda griglia sono presenti le **Fatture** e le **Non conformità** di ogni operazione.       
-            Per annullare le operazioni, è necessario selezionare le operazioni da cancellare e cliccare **Ripristina creazione** nella ribbon bar. Per annullare invece delle singole fatture tra più fatture create in una stessa operazione, è necessario selezionare nella seconda griglia le fatture da cancellare e cliccare il pulsate **Ripristina fattura** nella ribbon bar.
+In questa sessione è possibile ricercare le *Note di addebito* precedentemente create con la procedura di valorizzazione.   
+E' possibile ricercare le *Note di addebito* da ripristinare utilizzando i filtri disponibili.   
+Nella prima griglia sono presenti le operazioni effettuate, mentre nella seconda griglia sono presenti le **Fatture** e le **Non conformità** di ogni operazione.   
+Per annullare le operazioni, è necessario selezionare le operazioni da cancellare e premere il pulsante **Ripristina creazione**.   
+Per annullare invece delle singole fatture tra più fatture create in una stessa operazione, è necessario selezionare nella seconda griglia le fatture da cancellare e premere il pulsante **Ripristina fattura**.   
