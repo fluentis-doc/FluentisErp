@@ -52,7 +52,7 @@ Pentru a importa datele direct din lista componentelor articolului, este necesar
 **Gestiune**: indică gestiuneul din care va fi descărcat acest articol;
 **Șablon**: indică șablonul de gestiune cu care va fi descărcat acest articol;
 **Prioritate**: reprezintă prioritatea componentei, dacă este inserată în [Lista de componente](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). Aceasta contribuie la unicitatea materialului, astfel încât același material poate fi inserat de mai multe ori cu priorități diferite. În plus, poate fi modificată manual, la fel ca toate celelalte date prezente în această tabel;
-**Cantitate disponibilă**: reprezintă cantitatea disponibilă a articolului dată de procedura **Recalculează fezabilitatea** prezentă în [Secvența fazelor (Sequenza fasi)](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);
+**Cantitate disponibilă**: reprezintă cantitatea disponibilă a articolului dată de procedura **Recalculează fezabilitatea** prezentă în [Secvența fazelor](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);
 **De declarat pe mobil**: dacă este activat, materialul va fi propus automat în formul declarației de producție din WMS.
 
 ## 3. Faze
@@ -63,7 +63,7 @@ Pentru a importa datele direct din ciclul de lucru al articolului, utilizați bu
 
 #### Butone specifice
 
-> **Inserează faza**: permite introducerea unei noi faze în tabel;
+> **Inserează faza**: permite introducerea unei noi faze în tabel;  
 > **Șterge fază**: permite ștergerea fazelor introduse în tabel.
 
 #### Câmpuri specifice
@@ -87,24 +87,24 @@ Pentru a importa datele direct din ciclul de lucru al articolului, utilizați bu
 **Descriere terț**: cu dublu clic puteți deschide help-ul de câmp pentru a putea selecta contul sintetic și analiticul terțului. Această câmp este activ doar în cazul în care faza este *Externă*. Se observă că *terțul* este, de asemenea, preluat din faza de lucru inserată în ciclul de lucru al articolului;
 **Ordin sistem lohn**: funcționează doar pentru fazele externe;
 **Descriere centru de lucru**: indică descrierea centrului de lucru al fazei;
-**Raport definitiv**: indică faptul că a fost listat definitiv [Foaie de lucru](/docs/production/pp-production-in-progress/reports/worksheet);
-**Dată listare foaie de lucru**: indică data listării [Foaie de lucru](/docs/production/pp-production-in-progress/reports/worksheet) în mod definitiv;
+**Raport definitiv**: indică faptul că a fost listat definitiv [Foaia de lucru](/docs/production/pp-production-in-progress/reports/worksheet);
+**Dată listare foaie de lucru**: indică data listării [Foii de lucru](/docs/production/pp-production-in-progress/reports/worksheet) în mod definitiv;
 **Număr progresiv fișă de lucru**: indică numărul progresiv al [Foii de lucru](/docs/production/pp-production-in-progress/reports/worksheet) listată în mod definitiv.
 
 ### Faze - Proprietăți
 
 În tabul **Proprietăți** sunt vizualizate datele referitoare la faza selectată în tabel:
 
-**Descriere fază**: indică descrierea fazei și subfazei selectate;
-**Tip**: în această combo se poate seta tipul lucrării (intern sau extern);
-**Suprapunere**: permite inserarea tipului unei eventuale suprapuneri a fazelor. Putem avea suprapunere *Totală* (în acest caz faza în cauză se suprapune total pe faza indicată), *Pe bucăți* (în acest caz este necesar să se indice după câte bucăți produse de această fază va începe faza următoare), *Pe timp* (în acest caz este necesar să se indice după câte minute de când a început faza indicată va începe faza următoare);
+**Descriere fază**: indică descrierea fazei și subfazei selectate;  
+**Tip**: în această combo se poate seta tipul lucrării (intern sau extern);  
+**Suprapunere**: permite inserarea tipului unei eventuale suprapuneri a fazelor. Putem avea suprapunere *Totală* (în acest caz faza în cauză se suprapune total pe faza indicată), *Pe bucăți* (în acest caz este necesar să se indice după câte bucăți produse de această fază va începe faza următoare), *Pe timp* (în acest caz este necesar să se indice după câte minute de când a început faza indicată va începe faza următoare);  
 **UM Timp**: reprezintă unitatea de măsură a timpilor fazei; se poate decide să se gestioneze timpii fazei în secunde, minute, ore și zile. De obicei, timpii fazelor interne se gestionează în minute iar cei ai fazelor externe în zile, dar depinde foarte mult de tipologia de companie pentru care se setează lucrul;
-**Mașină**: este propusă automat, preluată din centrul de lucru care a fost anterior introdus în tabel;
+**Mașină**: este propusă automat, preluată din centrul de lucru care a fost anterior introdus în tabel;  
 **Locaţie producţie**: indică locația de producție în cadrul căruia va fi produs articolul; acest lucru este preluat din comanda de producție;
-**Grup manoperă**: este propusă automat, preluată din centrul de lucru care a fost anterior introdus în tabel;
-**Cantitate de bucăți pe fază**: indică numărul de bucăți produse pentru fiecare execuție a acelei faze;
-**Valoare**: reprezintă valoarea eventualei suprapuneri, utilizând criteriile specificate mai sus;
-**Utilizare**: dacă opțiunea este activată, înseamnă că se dorește ca timpul de așteptare/coadă să crească timpul de rezervare a Centrului de Lucru pentru acea fază;
+**Grup manoperă**: este propusă automat, preluată din centrul de lucru care a fost anterior introdus în tabel;  
+**Cantitate de bucăți pe fază**: indică numărul de bucăți produse pentru fiecare execuție a acelei faze;  
+**Valoare**: reprezintă valoarea eventualei suprapuneri, utilizând criteriile specificate mai sus;  
+**Utilizare**: dacă opțiunea este activată, înseamnă că se dorește ca timpul de așteptare/coadă să crească timpul de rezervare a Centrului de Lucru pentru acea fază;  
 **Timp de așteptare sau coadă**: indică timpul care este necesar să se aștepte la sfârșitul execuției fazei înainte de a o reexecuta. În plus, activând opțiunea **Utilizare** acest timp de așteptare va fi considerat ca rezervare suplimentară a timpului centrului de lucru pentru acea fază.
 
 ### Faze - Extra Data
@@ -115,7 +115,7 @@ Conține eventualele date suplimentare referitoare la faza selectată.
 
 Permite atașarea de documente la faza selectată, acestea vor fi vizibile și în [MES](/docs/production/mes/mes-intro).
 
-## Montaj
+## 4. Montaj
 
 În acest tab este posibil să se definească timpii referitori la montajul fazei selectate în tabul anterior.
 Este important de reținut că, datele referitoare la centrul de lucru, mașină și operatori ar trebui introduse doar dacă sunt diferite de cele utilizate pentru fază, altfel dacă sunt goale, acestea vor fi considerate automat ca făcând parte din faza principală.
@@ -134,42 +134,38 @@ Este important de reținut că, datele referitoare la centrul de lucru, mașină
 **Data început**: este vizualizată data începutului fazei selectate în tabul *Faze*;
 **Data sfârșit**: este vizualizată data de sfârșit a fazei selectate în tabul *Faze*;
 **Timp montaj**: este introdus timpul montajului. Este un timp fix, care nu variază odată cu modificarea cantității de produs în faza selectată;
-**Timp remontaj**: se utilizează în cazul în care este necesară reprocesarea centrului de lucru între o execuție și alta a fazei respective și se adaugă la timpul de montaj;
-**Număr mașini (Num. macchine)**: se indică numărul de mașini angajate pentru montaj;
-**Număr operatori (Num. operai)**: se indică numărul de operatori angajați pentru montaj.
+**Timp remontaj**: se utilizează în cazul în care este necesară remontarea centrului de lucru între o execuție și alta a fazei respective și se adaugă la timpul de montaj;
+**Număr mașini**: se indică numărul de mașini rezervate pentru montaj;
+**Număr operatori**: se indică numărul de operatori rezervați pentru montaj.
 
-## Echipamente (Attrezzature)
+## 5. Echipamente
 
-În acest tab, constituit în principal dintr-o tabel, este posibil să se definească care și câte echipamente trebuie să fie utilizate în producția fazei selectate în tabul *Faze*.
+Acest tab permite inserarea echipamentelor care trebuie să fie utilizate în producția fazei selectate în tabul *Faze*.
 
 #### Câmpuri specifice
 
-**Secvență (Sequenza)**: în acest câmp este posibil să se indice secvența în care trebuie folosite echipamentele;
+**Secvență**: în acest câmp se inserează secvența în care trebuie folosite echipamentele;  
+**Echipamente**: reprezintă codul echipamentului, preluat din tabelul [Echipamente](/docs/configurations/tables/production/equipments);  
+**Clasă/Cod articol**: reprezintă clasa și codul articolului (helpul filtrează automat doar articolele care sunt identificate drept *Echipamente* în câmpul *Natura Articol*);  
+**Variantă**: reprezintă varianta articolului;  
+**Cantitate**: reprezintă cantitatea articolului.
 
-**Echipamente (Attrezzature)**: cu această casetă combo este posibil să se apeleze codul echipamentului, reprins din tabelul special [Echipamente (Attrezzature)](/docs/configurations/tables/production/equipments);
+## 6. Control calitate
 
-**Clasă/Cod articol (Classe/Codice articolo)**: în aceste câmpuri este posibil să se indice clasa și codul articolului (ajutorul filtrează automat doar articolele care sunt identificate drept *Echipamente* în câmpul *Natura Articol* al registrelor de gestiune);
-**Variante (Variante)**: reprezintă varianta articolului;
-**Cantitate (Quantità)**: reprezintă cantitatea articolului.
+Acest tab afișează detaliile testelor planificate de [controlul de calitate](/docs/quality/quality-intro) pentru fază/subfază.
 
-## Control calitate
+## 7. Notă fază
 
-În acest tab, constituit în principal dintr-o tabel, este posibil să se vizualizeze detaliile testelor planificate de [control al calității](/docs/quality/quality-intro) pentru fază/sub fază.
+În acest tab este vizualizată nota asociată fazei de lucru selectate în tabul *Faze*. 
 
-## Notă fază
+## 8. Instrucțiuni operative
 
-În acest tab este vizualizată nota legată de faza de lucru selectată în tabul *Faze*. Aceasta este modificabilă de către utilizator în termenii ordinului de producție în cauză.
+În acest tab sunt afișate *Instrucțiunile operative* referitoare la faza de lucru selectată în tabul *Faze*. Acestea vor fi vizualizate și în [Fluentis MES](/docs/production/mes/mes-intro).
 
-## Instrucțiuni operative
+## 9. Angajați
 
-În acest tab este posibil să se atașeze și să se vizualizeze *Instrucțiunile operative* referitoare la faza de lucru selectată în tabul *Faze*. Acestea vor fi vizualizabile și în [Fluentis MES](/docs/production/mes/mes-intro).
+În acest tab se inserează operatorii care trebuie să realizeze fazele individuale ale ciclului de producție. (*Acest lucru este utilizat doar pentru personalizări*).
 
-## Personal
+## 10. Extra Data
 
-În acest tab este posibil să se introducă operatorii care trebuie să efectueze fazele individuale ale ciclului de producție. (*Acest lucru este utilizat doar pentru personalizări*).
-
-## Date suplimentare (Extra Data)
-
-Pentru o descriere detaliată a datelor suplimentare, se face trimitere la articolul [Date suplimentare (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).
-
-Pentru detalii privind funcționarea comună a formularelor, faceți referire la linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
+Pentru o descrierea detaliată a acestora consultați documentul [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
