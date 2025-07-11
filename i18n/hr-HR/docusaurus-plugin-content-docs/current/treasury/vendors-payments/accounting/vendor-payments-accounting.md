@@ -1,45 +1,45 @@
 ---
-title: Contabilizzazione Pagamenti Fornitore
+title: Knjiženje Plaćanja Dobavljača
 sidebar_position: 1
 ---
 
-La form si trova in Tesoreria > Pagamenti Fornitori > Contabilizzazione > Contabilizzazione Pagamenti Fornitore
+Ova forma se nalazi u Riznica > Plaćanja dobavljača > Knjiženje > Knjiženje plaćanja dobavljača.
 
-Da questa maschera è possibile contabilizzare i pagamenti inseriti nelle distinte precedentemente create.
+Iz ovog prozora moguće je knjižiti plaćanja koja su prethodno unesena u platne naloge.
 
-In alternativa è possibile usare la procedura integrata [*Creazione Automatica Pagamenti Fornitori*](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation), che genera la distinta e contabilizza i pagamenti allo stesso tempo.
+Alternativno, može se koristiti integrirana procedura [*Automatsko generiranje plaćanja dobavljačima*](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation), koja istovremeno generira platni nalog i knjiži plaćanja.
 
-## Come contabilizzare i pagamenti
+## Kako knjižiti plaćanja
 
-1. Utilizza la parte superiore della maschera con i filtri per ricercare i pagamenti creati ma non ancora contabilizzati:premi il bottone *Ricerca*, nella griglia saranno visualizzati tutte le righe di dettaglio dei pagamenti presenti nelle varie distinte, che potrebbero quindi essere contabilizzate parzialmente. La situazione normale, comunque, prevede di filtrare con i riferimenti della distinta e contabilizzarla in blocco.
+1. Koristite gornji dio obrasca s filtrima za pretraživanje plaćanja koja su kreirana, ali još nisu knjižena: pritisnite gumb *Pretraži*, a u rešetki će biti prikazane sve stavke plaćanja unutar različitih platnih naloga, koje se stoga mogu knjižiti i djelomično. Uobičajena situacija ipak predviđa filtriranje prema referenci platnog naloga i njegovo grupno knjiženje.
 
-2. Inserisci in basso i dati di gestione dell'operazione: la **Causale di contabilità** da utilizzare per la registrazione, le **Date di registrazione e competenza**. Se espandi la sezione puoi scegliere un **criterio di raggruppamento** per la scrittura contabile. 
+2. U donjem dijelu unesite podatke za upravljanje operacijom: **Predložak zapisa knjige** koja će se koristiti za knjiženje, te **datume knjiženja i razgraničenja**. Ako proširite sekciju, možete odabrati **kriterij grupiranja** za knjiženje. 
 
-L'opzione di default, *raggruppamento banca*, consente di rilevare una registrazione per ogni sottoconto banca di uscita, che è la gestione migliore al fine di semplificare la riconciliazione dei movimenti bancari dalle stampe degli estratti conto. In alternativa è disponibile un *raggruppamento per sottoconto fornitore* e un'opzione di registrazione dettagliata pagamento per pagamento (*Non raggruppare*).
+Zadana opcija, *grupiranje po banci*, omogućuje knjiženje jednog zapisa za svaki bankovni podračun izlaznih sredstava, što je optimalno rješenje za pojednostavljenje usklađivanja bankovnih transakcija s ispisima iz bankovnih izvoda. Alternativno, dostupno je *grupiranje po podračunu dobavljača* ili detaljno knjiženje svake pojedinačne uplate (*Bez grupiranja*).
 
-Il **sottoconto** di rilevazione degli **abbuoni attivi e passivi** inseriti in distinta è proposto sulla base del sottoconto *sopravvenienze attive* presente nei parametri di contabilità. 
+**Podračun** za evidentiranje **aktivnih i pasivnih rabata** unesenih u platnom nalogu predlaže se na temelju podračuna *izvanredni prihodi* koji je definiran u parametrima glavne knjige. 
 
-**Data e numero document**o sono opzionali da inserire come riferimenti della testata della registrazione (potrebbe essere il numero/data distinta).
+**Datum i broj dokumenta** su opcionalni i mogu se unijeti kao referenca zaglavlja knjiženja (na primjer, broj/datum platnog naloga).
 
-Il flag **chiusura partita** (proposto di default, da non togliere) gestisce correttamente il pagamento nello scadenziario.
-
-
-Se la causale contabile prevede la gestione della data valuta banca e all'interno dell'anagrafica banche è stato definito un numero di giorni per il suo calcolo in relazione alla causale contabile utilizzata, il campo sarà gestito in automatico nella registrazione risultante.
-
-3. Premi il bottone **Contabilizza** per avviare la procedura
+Oznaka **zatvaranje stavke** (zadano uključena, ne preporučuje se isključivati) omogućuje ispravno zatvaranje stavke u knjizi dospijeća.
 
 
-### La scheda di ripristino 
+Ako kontna šifra predviđa upravljanje valutnim datumom banke, te je u registru banaka definiran broj dana za njegovo izračunavanje u odnosu na korištenu kontnu šifru, polje će automatski biti popunjeno prilikom knjiženja.
 
-consente di visualizzare la registrazione contabile attraverso un doppio click nella sezione relativa alle registrazioni, così come l'annullamento parziale/totale delle operazioni di pagamento selezionate. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite).
+3. Pritisnite gumb **Knjiži** za pokretanje postupka.
 
-**Pulsanti specifici**
 
-**Ricerca** Ricerca la lista delle registrazioni contabili eseguite.
+### Kartica za vraćanje knjiženja
 
-**Rollback Contabilizzazione** Il pulsante esegue il ripristino dell'intera contabilizzazione selezionata.
+Omogućuje pregled knjiženja dvostrukim klikom u odjeljku za knjiženja, kao i djelomično/potpuno poništavanje odabranih platnih transakcija. Poništavanje je moguće samo ako je obračunsko razdoblje još uvijek otvoreno (nije izvršten ispis dnevnika i zaključenje računa).
 
-**Rollback Registrazioni contabili** Il pulsante esegue il ripristino delle singole registrazioni contabili selezionate.
+**Specifični gumbi**
+
+**Traži** Pretražuje popis izvršenih knjiženja.
+
+**Poništi knjiženje** Izvršava povratak (rollback) cijelog odabranog knjiženja.
+
+**Poništi pojedinačna knjiženja**  Izvršava povratak (rollback) odabranih pojedinačnih knjiženja.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
