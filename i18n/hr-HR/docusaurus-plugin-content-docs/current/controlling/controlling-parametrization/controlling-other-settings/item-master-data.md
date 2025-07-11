@@ -1,14 +1,14 @@
 ---
-title: Anagrafica articolo 
+title: Šifarnik artikala
 sidebar_position: 5
 --- 
 
-All'interno dell'articolo, nel tab **AMMINISTRAZIONE**, abbiamo la possibilità di associare all'articolo i [***CENTRI DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
+Unutar artikla, u kartici **ADMINISTRACIJA**, postoji mogućnost dodjele [***CENTARA TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
 
-In particolare, le società che **non** hanno il *Controlling* attivo avranno a disposizione un unico campo di associazione di un singolo centro, mentre per quelle con la gestione **attiva** si abiliterà una griglia nella quale poter valorizzare una molteplicità di centri, anche di dimensioni differenti, replicando sostanzialmente la logica già dettagliata nel *Piano dei conti* (quindi anche lasciando il centro vuoto e la sola dimensione attiva da valorizzare).
+Poduzeća koja **nemaju** aktiviran kontroling imat će dostupno samo jedno polje za povezivanje s jednim centrom, dok će se za ona s **aktiviranim** kontrolingom omogućiti tablica u kojoj se može dodijeliti više centara, čak i različitih dimenzija, replicirajući logiku već opisanu u *Kontnom planu* (što znači da se može ostaviti prazno polje za centar i aktivirati samo određena dimenzija za dodjelu).
 
-:::tip Nota
-Il centro di profitto è visibile per retrocompatibilità, nelle società con il *Controlling* attivo si consiglia di sostituire i centri di profitto con una dimensione specifica da valorizzare nei centri aziendali
+:::tip NAPOMENA
+Centar profita je vidljiv, ali u poduzećima s aktiviranim *kontrolingom* preporučuje se zamjena centara profita specifičnom dimenzijom koja će se koristiti za dodjelu u centrima poduzeća.
 :::
 
-Per la procedura di ***Contabilizzazione rimanenze*** presente all'interno delle simulazioni di bilancio del modulo ***Chiusure infrannuali***, inoltre, è di fondamentale importanza l'assegnazione ad ogni articolo (rilevante per la valorizzazione di magazzino) della sua relativa ***Categoria fiscale***: da questa tabella, infatti, ***FluentisERP*** andrà a recuperare i sottoconti da utilizzare per valorizzare le rimanenze iniziali e finali
+Za postupak ***Knjiženja zaliha*** unutar simulacija bilance u modulu ***Privremeno zatvaranje***, ključno je svakom artiklu (koji je relevantan za vrednovanje skladišta) dodijeliti odgovarajuću ***Fiskalnu kategoriju***. Na temelju te tablice ***FluentisERP*** preuzima odgovarajuća podkonta koji će se koristiti za vrednovanje početnih i završnih zaliha. 

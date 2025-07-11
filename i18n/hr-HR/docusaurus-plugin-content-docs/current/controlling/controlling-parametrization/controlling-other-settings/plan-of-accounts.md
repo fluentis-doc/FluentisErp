@@ -1,29 +1,29 @@
 ---
-title: Piano dei Conti  
+title: Kontni plan 
 sidebar_position: 3
 ---
 
-La tabella del [***Piano dei conti***](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) presenta una serie di caratteristiche molto importanti a livello di logiche del Controlling, sia questo inteso come simulazioni di bilancio infrannuali che di contabilità analitica/gestionale vera e propria. Andiamo a vedere punto per punto le caratteristiche specifiche.
+Tablica [***Kontnog plana***](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) sadrži niz važnih značajki koje su ključne za logiku kontrolinga, bilo da se radi o simulacijama bilanci ili o pravom analitičkom/menadžerskom računovodstvu. U nastavku su detaljno opisane specifične funkcionalnosti.  
 
-## GRIGLIA DEI SOTTOCONTI
+## POPIS PODKONTA 
 
-- ***TIPO CONTO***: il collegamento al tipo conto è di fondamentale importanza: in particolar modo il tipo conto che prevede il flag 'Servizio' attivo (nel ***FastStart*** sono i *Costi da rettificare* e i *Ricavi da rettificare*) sarà quello che attiverà la gestione automatica dei ratei/risconti, sia a livello di contabilità generale (procedura delle ***Scritture di assestamento*** che per i bilanci infrannuali e le relative ***Scritture di rettifica*** e ***Scritture di integrazione***)
+- ***TIP KONTA***: povezivanje s tipom konta je od presudne važnosti. Posebno je bitan tip konta s aktivnim flagom 'Usluga' (u ***FastStartu***  to su *Ispravci troškova* i *Ispravci prihoda*) jer aktivira automatsko upravljanje obračunima i razgraničenjima, kako u glavnom računovodstvu (postupak ***Prilagodbenih knjiženja*** za bilance), tako i kroz povezane ***Ispravke i dopunska knjiženjae***. 
 
-- flag ***GESTIONE CENTRI AZIENDALI***: se tutti associati a tipi conto economici hanno automaticamente la valorizzazione dell'analitica (se la causale contabile a sua volta ne prevede la gestione), questa può essere abilitata anche per Sottoconti patrimoniali tramite questo flag.
+- flag ***UPRAVLJANJA KORPORATIVNIM CENTRIMA***: ako su svi tipovi podkonta ekonomski, automatski imaju analitičku valorizaciju (ako je predviđena kroz uzročno-posljedične šifre). Ova se funkcionalnost može omogućiti i za bilančna podkonta putem ovog parametra.
 
-- ***VARIABILITA'***: quando la società ha il flag *Controlling* attivo, la contabilità gestionale che si valorizza dall'analitica prevede la suddivisione degli importi in *quota fissa* e *quota variabile*, che può essere definita con questo valore di default quando non è valorizzata la griglia di ***VARIABILITA' CENTRI DI COSTO*** presente sulla destra della maschera.
+- ***VARIJABILNOST***: u društvima s aktivnim *Kontrolingom* analitičko računovodstvo omogućuje podjelu iznosa na *fiksni* i *varijabilni* dio, koji se može definirati pomoću ovog polja ako nije postavljena  ***VARIJABILNOST CENTARA TROŠKOVA*** na desnoj strani sučelja.
 
-:::tip Nota
-Quando il campo non è valorizzato, si intende che il sottoconto è al 100% un costo fisso
+:::tip NAPOMENA 
+Ako ovo polje nije popunjeno, podrazumijeva se da je podkonto 100% fiksni trošak. 
 :::
 
-- ***NON UTILIZZARE IN CONTROLLING*** quando la società ha il flag *Controlling* attivo, con questo campo possiamo indicare che il dato che la contabilità fornisce non è da utilizzare nelle elaborazioni del controlling, perché sostituito ad esempio da un dato stimato previsionale di inizio anno (es. Compensi collegio sindacale) o da una logica extracontabile (es. ammortamenti)
+- ***NE KORISTI SE U KONTROLINGU***: u poduzećima s aktivnim *kontrolingom*, ovom oznakom se može označiti da podaci iz računovodstva ne ulaze u obračune kontrolinga, npr. kada ih zamjenjuje procijenjena godišnja vrijednost (npr. naknade nadzornog odbora) ili kada se koriste izvanračunovodske logike (npr. obračuni amortizacije).
 
-- ***TEMPI DI BILANCIAMENTO*** il campo si attiva se il precedente flag è stato attivato e consente di dire, se impostato, *quando* si vuole eseguire il conguaglio tra gestionale e dato contabile. Le opzioni disponibili sono
-    - *Annuale*
-    - *Infrannuale*
+- ***VRIJEME USKLAĐENJA***: aktivira se ako je prethodan flag postavljen i omogućuje određivanje trenutka usklađenja između upravljačkog i knjigovodstvenog podatka. Opcije su:  
+    - *Godišnje*
+    - *Infragodišnje*
 
-- ***TIPO DI BILANCIAMENTO*** il campo si attiva se il precedente flag è stato attivato e consente di dire, se impostato, *come* si vuole conguagliare il dato contabile. Le opzioni disponibili sono
+- ***TIP BILANCIRANJA*** il campo si attiva se il precedente flag è stato attivato e consente di dire, se impostato, *come* si vuole conguagliare il dato contabile. Le opzioni disponibili sono
     - *Riproporziona gestionale*: si andranno ad inserire delle righe automatiche per portare il totale del controlling ai valori contabili
     - *Differenze analitica*: si andrà ad annullare il dato del controlling per sostituirlo con i valori e i centri effettivamente utilizzati in contabilità
 
