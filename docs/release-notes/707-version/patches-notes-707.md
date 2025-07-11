@@ -3,6 +3,44 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0040 - 11/07/2025
+
+> - PR - risolto problema in fase di elaborazione del cashflow a causa della mancanza del codice DocFinance nella tabella Anagrafiche in corrispondenza della società in uso. Rif. #TT02965/25 
+> - SD-Fix SalesOrder widget problem (rif.ticket 1258/21) 
+> - WMS - Corretto bug in gestione spunta e conferma picking che non riportava correttamente i lotti spuntati nel tab lotti e serial number. (#TT03052/25) 
+> - MS - In sequenza fasi implementata la possibilità di filtrare con stringhe concatenate e separate dal simbolo "%". (#TT02901/25) 
+> - PM - progetti - tab fatturazione, nel campo Valore reso possibile inserimento di più decimali (#TT02937/25) 
+> - PM - generazione interventi da attività, corretto caso per cui la quantità del servizio era arrotondata nel caso di attività con ora fine 00.00 (#TT02732/25) 
+> - WMS - Corretto bug in gestione spunta e conferma picking nel caso in cui ci fossero dei lotti indicati nel tab lotti e serial number della riga articolo e ne venissero spuntati degli altri. (#TT03082/25) 
+> - WMS - Implementata nella form ricevimento merci la possibilità di leggere barcode tokenizer composti da articolo + lotto e barcode codificati con la quantità. (#TT02603/25) 
+> - MS - Corretto bug in costificazione della commessa sul costo dei materiali. (#TT02704/25) 
+> - SCM - Corretta anomalia che disabilitava alcuni campi della sezione “Annotazioni Fornitore” durante la creazione di una nuova fattura dall’interno di una fattura esistente. (#TT03033/25) 
+> - ARM - importazione interventi tramite webapi - risolto caso per cui non importava i servizi in presenza di materiali (#TT02431/25) 
+> - SCM - Risolto errore che, in presenza di articoli con la Gestione Conai, non aggiornava correttamente lo stato dei DDT di Acquisto a seguito della valorizzazione del documento. (#TT03072/25) 
+> - SD - spedizioni - gestiti destinatari/destinazioni impostati come default in anagrafica cliente Modifications in Shipping form can have an impact on profiles (#TT00524/25) 
+> - SCM - Corretto il ricalcolo della quantità residua dell’ordine evaso in una Fattura di Acquisto caricata a magazzino, che risultava errata dopo il ripristino della registrazione. (#TT03020/25) 
+> - PR - creazione file Sepa, modificata gestione caratteri speciali ‘-‘ (#TT02214/25) 
+> - FI - revisione del rollback della contabilizzazione compensi o la modifica della data/numero documento definitivo nel compenso, quando questi sono stato esportati nel cash flow (#TT02868/25) 
+> - MS - Corretto bug in costificazione della commessa di produzione inerente al valore dell'articolo in conto lavoro nel caso venisse usata un unità di misura alternativa. (#TT02907/25) 
+> - SD - Nella maschera di Ricerca degli Ordini Clienti è stata implementata la possibilità di salvare un profilo impostando dei filtri relativi allo stato di evasione dell’ordine.  (#TT02637/25) 
+> - WMS - Corretto bug nella form ricevimento merci che generava DDT con quantità zero. (#TT03089/25) 
+> - WMS - Ricevimento merci con Serial number (#TT02878/25) 
+> - SCM - Risolto un errore che aggiornava erroneamente la quantità dell’articolo nel DDT a seguito di una sua evasione parziale in una Fattura di Acquisto. (#TT03116/25) 
+> - WM - Risolto blocco in fase di cancellazione articolo con ricalcolo costi già eseguito (#TT02818/25) 
+> - FI - La fatturazione di una partita d’anticipo ora non inserisce più gli sconti finali impostati in anagrafica o nei tipi pagamento (#TT03087/25) 
+> - WM - In anagrafica lotti sono state nascoste le righe relative a righe di documenti (ad esempio picking) forzatamente evase, che venivano visualizzate erroneamente. (#TT02903/25) 
+> - WMS - In Rievimento merci è possibile anche sovraevadere le quantità presenti nell’ordine fornitore. (#TT03148/25) 
+> - FI - importazione registrazioni da DocFinance, revisione gestione importi per separatori migliaia/decimali (#TT03076/25) 
+> - FI - revisione contabilizzazione da acquisti/vendite per assegnazione, in tab intrastat della registrazione, della nazione del codice iso partita iva; modifica dell’inserimento manuale in griglia intrastat. (#TT01817/25) 
+> - WM - In gestione picking è stata variata la logica nel seguente modo: nel caso di inserimento di un lotto manualmente, in automatico dalla riga spunta, con importazione WebApi (se manca la data inserimento lotto nel file), la data inserimento per la riga lotto del picking sarà la data odierna. Mentre, la data inserimento per la riga lotto del picking sarà la data del picking nel caso della proposta automatica lotti, all’evasione da ordine cliente, alla creazione del picking per lista UDC e dal Piano carico.  Modifications in Picking form can have an impact on profiles(#TT03114/25) 
+> - WM - In gestione picking i lotti, presenti nel tab lotti e serial number, durante la spunta vengono liberati a partire dall’ultimo inserito.  (#TT03137/25) 
+> - MES - Migliorato il calcolo delle ore degli operatori nel report Consuntivo ore operatori presente nel filtro delle dichiarazioni di magazzino. (#TT03091/25) 
+> - SD - Nell'importazione Web API, se il flag Prezzo Manuale viene impostato a true, non vengono riportati gli sconti di listino (#TT03009/25) 
+> - MES - Migliorato il calcolo del tempo macchina e manodopera nel report Controllo utilizzo risorse. (#TT02648/25) 
+> - WMS - Corretto bug in ricevimento merci che creava i DDT con i riepiloghi a zero nel caso in cui le quantità fossero sovra evase. (#TT03168/25) 
+> - PM - webapi interventi - risolto caso in cui il progetto nelle righe servizi non veniva riconosciuto e gli orari dei servizi non erano corretti (#TT02412/25) 
+> - FI - revisione calcolo visualizzazione conti per conteggio saldo precedente nella colonna progressivo (#TT03163/25).
+
 ### Patch 707.1-0039 - 02/07/2025 
 
 > - Solved problem with SSL Protocol on BizLink email connector 
