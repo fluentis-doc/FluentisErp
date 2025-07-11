@@ -5,25 +5,32 @@ sidebar_position: 2
 
 La tabella si apre tramite il percorso **Tabelle > Vendite > Categorie agenti**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
-
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
-
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
-
-La tabella **Categorie agenti**, unica per le società presenti nel database, è la tabella di base per i calcoli enasarco/firr degli agenti.
+La tabella è unica per tutte le società presenti nel database ed è la base per i calcoli enasarco/firr degli agenti.
 
 ### Categorie agente
 
-La griglia contiene le categorie per la specifica dell'Enasarco, quali:
+E' la griglia principale della form e contiene le categorie agenti. Per ogni riga di questa griglia vengono definiti i dati di dettaglio nelle due griglie successive per la specifica dell'Enasarco e del FIRR.
 
-**Codice/Descrizione**: codice e descrizione che indica il codice di riferimento agente. Il codice deve essere univoco;
+:::tip[Collegamento]
+Le voci della griglia principale (che si collega ai dettagli di calcolo) possono essere agganciate nell'[**anagrafica agente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) oppure (a titolo di default) all'interno dei dettagli della tabella [**Tipi ritenuta**](/docs/configurations/tables/finance/withholding-tax-types). Il tipo ritenuta a sua volta può essere agganciato all'anagrafica agente (ed in questo caso, se ha la categoria agente di default permette di non dover abbinare quest'ultima ogni volta all'agente)
+:::
 
-**Min Enasarco**: valore in base trimestrale. È l'importo minimo del contributo enasarco (esempio 250,50 per monomandatario);
+**Codice/Descrizione**: codice e descrizione che indica la tipologia di agente. Il codice deve essere univoco;
 
-**Max Enasarco:** valore in base annuale. È l'importo massimo dell'imponibile provvigionale ai fini del contributo enasarco (massimale) e una volta raggiunto, non è più possibile fare versamenti previdenziali in favore dell'agente (esempio 44.727,00 per monomandatario);
+**Monomandatario:** Flag che identifica le categoria monomandatarie (mandato in esclusiva con un'unica casa mandante);
 
-**Tipo ritenuta**: è il tipo di ritenuta da applicare all'agente. Per ulteriori approfondimenti fare riferimento alla sezione della parte amministrativa [Tipi Ritenuta](/docs/configurations/tables/finance/withholding-tax-types). Si consiglia di impostare questo codice in anagrafica agente.
+**Plurimandatario:** Flag che identifica le categoria plurimandatarie (es. agente che collabora con più aziende mandanti);
+
+**Generico:** Flag che identifica le categorie generiche (es. agenzie costituite in forma di società);
+
+
+### Enasarco
+
+**Data inizio validità**: la data di inizio validità del dettaglio, il quale continuerà ad operare finchè non verrà letto un nuovo dettaglio con data inizio validità successiva 
+
+**Min Enasarco**: ***valore in base trimestrale***. È l'importo minimo del contributo enasarco (esempio 250,50 per monomandatario);
+
+**Max Enasarco:** ***valore in base annuale***. È l'importo massimo dell'imponibile provvigionale ai fini del contributo enasarco (massimale) e una volta raggiunto, non è più possibile fare versamenti previdenziali in favore dell'agente (esempio 44.727,00 per monomandatario);
 
 **Perc Enasarco**: percentuale dell'Enasarco a carico dell'agente;
 
@@ -31,11 +38,7 @@ La griglia contiene le categorie per la specifica dell'Enasarco, quali:
 
 **Imp Enasarco**: la percentuale (100%) di applicazione delle percentuali Enasarco sul totale provvigionale;
 
-**Monomandatario:** Flag che identifica le categoria monomandatarie;
 
-**Plurimandatario:** Flag che identifica le categoria plurimandatarie;
-
-**Generico:** Flag che identifica le categorie generiche;
 
 ### Firr
 
@@ -59,5 +62,4 @@ Aliquote per agenti plurimandatari
 
  ![](/img/it-it/configurations/tables/sales/agent-category/image05.png)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 
