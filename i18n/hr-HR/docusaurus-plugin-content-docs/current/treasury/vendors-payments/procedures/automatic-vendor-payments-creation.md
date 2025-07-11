@@ -1,69 +1,68 @@
 ---
-title: Creazione automatica pagamento fornitori
+title: Automatsko kreiranje plaćanja dobavljačima
 sidebar_position: 1
 ---
-La form si trova in Tesoreria > Pagamenti fornitori > Procedure > Creazione automatica pagamenti fornitori
+Ova forma se nalazi u Riznica > Plaćanja dobavljačima > Procedure > Automatsko kreiranje plaćanja dobavljačima
 
-Questa procedura è alternativa alla creazione di una nuova [distinta di pagamento](/docs/treasury/vendors-payments/create-vendor-payments) ed alla sua successiva contabilizzazione, permettendo di eseguire queste operazioni in maniera integrata direttamente da questa form.
+Ova procedura predstavlja alternativu ručnom kreiranju nove [isplatne liste](/docs/treasury/vendors-payments/create-vendor-payments)  i njezinom naknadnom knjiženju, omogućujući da se obje operacije izvrše integrirano, direktno iz ove forme.
 
-## Come creare automaticamente un pagamento fornitori
-
-
-1. Utilizza la prima scheda *Filtro partite* localizzare le partite da pagare. (E' possibile filtrare anche per codici abi/cab degli appoggi bancari collegati alla partita contabile, oltre che per codice / descrizione della banca d'appoggio - espandendo la sezione *Banca*). 
-
-Espandendo la sezione *Tipo partite* sono **esclusi** di default i **pagamenti delle partite percipienti**, per i quali <u>**l'operazione va effettuata dall'interno del modulo percipienti**</u> se si vuole poter utilizzare la procedura di [certificazione ritenute](/docs/finance-area/declarations/declarations/withholding-tax-certification). 
-
-Il filtro per *sottoconto* banca di *pagamento* consente di gestire la creazione della distinta sulla base di quello che è stato canalizzato sulle varie banche attraverso le impostazioni di anagrafica e della procedura di [Gestione Appoggio Pagamenti](/docs/treasury/vendors-payments/procedures/payments-support-management) del modulo stesso.
-
-2. Controlla, in basso, i totali delle righe selezionate.
+## Kako automatski kreirati plaćanje dobavljačima
 
 
-3. Passa alla seconda scheda **Dati pagamento fornitore** e imposta i vari elementi di gestione della procedura: innanzi tutto va inserita la **banca di pagamento**, che sarà la banca intestataria della distinta. 
-Questo campo sblocca il pulsante **Inizia la creazione del pagamento da partite**.
+1. Na prvom tabu *Filtriranje otvorenih stavki* pronađite stavke koje treba platiti. (Moguće je filtrirati i po ABI/CAB kodovima banke preko koje je vezana pojedina stavka, kao i po šifri/opisu banke – širenjem sekcije *Banka*).
+
+Ako proširite sekciju *Vrsta stavki*, *plaćanja stavki primatelja naknada* su *isključena* po defaultu, jer <u> ovu operaciju treba izvršiti unutar modula primatelja naknada</u> ako želite koristiti proceduru za [izdavanje potvrda o obračunatim porezima na dohodak](/docs/finance-area/declarations/declarations/withholding-tax-certification). 
+
+Filtriranje po **analitičkom kontu banke za plaćanje** omogućava kreiranje isplatne liste na temelju kanala plaćanja postavljenih u parametrima partnera i u proceduri [Upravljanje plaćanjima](/docs/treasury/vendors-payments/procedures/payments-support-management).
+
+2. Provjerite ukupne iznose odabranih stavki prikazane na dnu ekrana.
 
 
-4. Gestisci gli altri parametri:
+3. Prijeđite na drugi tab **Podaci o plaćanju dobavljača** i postavite različite parametre za upravljanje procedurom: prije svega je potrebno odabrati **banku za plaćanje**, koja će biti nositelj isplatne liste. Unosom ovog podatka aktivira se gumb **Pokreni kreiranje plaćanja iz stavki**.
 
-- Il flag **Utilizza la banca di pagamento dalla partita del fornitore, in assenza dall'anagrafica** imporrà alla procedura di creare tante distinte quante sono le banche di pagamento assegnate alle varie partite selezionate nella procedura di gestione appoggio pagamento, oppure inserite in anagrafica del fornitore. In assenza di entrambe il pagamento sarà inserito nella distinta per il codice banca impostato nel campo iniziale.
 
-- Il flag **Utilizza la banca d'appoggio presente in anagrafica del fornitore** forza l'assegnazione dei codici bancari del beneficiario leggendoli dalla riga banca di default inserita nella sezione banche d'appoggio della scheda pagamenti dell'anagrafica fornitore. Questo flag può essere predefinito all'interno dei parametri del modulo.
+4. Postavite ostale parametre:
 
-- Il **Tipo pagamento** consente di definire la tipologia di pagamento da assegnare alla distinta: il campo diventa obbligatorio solo quando le partite da pagare prevedono tipologie di pagamento non uniforme.
+- Oznaka **Koristi banku za plaćanje sa stavke dobavljača, a u nedostatku iz partnera** nalaže proceduri da kreira onoliko isplatnih lista koliko ima različitih banaka za plaćanje dodijeljenih pojedinim stavkama, prema postavkama u proceduri *Upravljanje bankama za plaćanje* ili prema podacima u šifrarniku dobavljača. Ako nije definirano ni jedno ni drugo, plaćanje će biti uključeno u isplatnu listu s bankom unesenom u početnom polju.
 
-- L'anno e la data di emissione sono definiti di default sulla base della data di sistema.
+- Oznaka **Koristi banku dobavljača iz šifrarnika** prisiljava proceduru da pročita podatke o banci primatelja iz banke postavljene kao default u sekciji *Banke dobavljača* na kartici plaćanja partnera. Ova postavka može biti unaprijed definirana u parametrima modula.
 
-- Il flag di **Imponi data valuta beneficiario** consente di assegnare, all'interno del tracciato telematico, una data valuta per il beneficiario del pagamento, che se non è impostata viene assegnata come data odierna. Se il flag non è impostato la data valuta sarà uguale alla data scadenza.
+- **Vrsta plaćanja** omogućava definiranje vrste plaćanja koja će biti dodijeljena isplatnoj listi; polje postaje obavezno ako odabrane stavke uključuju različite vrste plaćanja.
 
-- Il campo **Note iniziali** è un campo libero di note del pagamento, non utilizzato nello standard.
+- Godina i datum izdavanja po defaultu se određuju prema datumu sustava.
 
-- Il campo **Note finali** viene utilizzato nella contabilizzazione pagamenti per valorizzare la descrizione di dettaglio del movimento contabile del sottoconto banca.
+- Oznaka **Nametni datum valute primatelja** omogućava postavljanje datuma valute za primatelja plaćanja unutar SEPA/telematskog zapisa. Ako nije postavljeno, kao valuta se uzima današnji datum. Ako oznaka nije uključena, datum valute će biti jednak datumu dospijeća.
 
-5. Se desideri contabilizzare immediatamente i pagamenti attiva Il flag di **Contabilizzazione della partita** che consente di rilevare direttamente la chiusura delle partite e i relativi movimenti di partita doppia dei pagamenti in creazione: se non utilizzata sarà possibile utilizzare in seguito la *procedura separata di contabilizzazione*.
+- Polje **Početna napomena** je slobodno polje za unos bilješki o plaćanju, nije standardno korišteno.
 
-6. Compila la causale di contabilità da utilizzare per la registrazione, le date di registrazione e competenza. I sottoconti di rilevazione degli abbuoni attivi e passivi sono proposti sulla base del sottoconto *sopravvenienze attive* presente nei parametri di contabilità. La data e numero documento  da inserire come riferimenti della testata della registrazione sono opzionali (potrebbe essere il numero/data distinta).
+- Polje **Završne napomene** koristi se prilikom knjiženja plaćanja za unos opisa stavke u kontu banke.
 
-Sulla destra è presente un flag di default di **Chiusura della partite** (proposto di default, da non togliere) e il criterio di gestione del raggruppamento in contabilità **Raggruppa Banca** che consente di rilevare una registrazione per ogni sottoconto banca di uscita. 
+5. Ako želiš odmah proknjižiti plaćanja, uključi oznaku **Knjiženje stavke**, koja omogućava istovremeno zatvaranje stavki i kreiranje pripadajućih dvostranih knjiženja za plaćanja koja se generiraju. Ako ova opcija nije uključena, knjiženje možeš obaviti naknadno koristeći *odvojenu proceduru knjiženja*.
 
-In alternativa è disponibile un **Raggruppa per sottoconto** fornitore e un'opzione di registrazione dettagliata pagamento per pagamento (**Nessun raggruppamento**).
+6. Unesi kontni nalog koji će se koristiti za knjiženje, datume knjiženja i razdoblja pripadnosti. Konti za knjiženje prihoda i rashoda po osnovi zaokruženja automatski se predlažu na temelju konta *izvanredni prihodi* definiranog u parametrima kontnog plana. Datum i broj dokumenta, kao referenca zaglavlja knjiženja, su opcionalni (npr. broj i datum isplatne liste).
 
-Se la causale contabile prevede la gestione della data valuta banca e all'interno dell'anagrafica banche è stato definito un numero di giorni per il suo calcolo in relazione alla causale contabile utilizzata, il campo sarà gestito in automatico nella registrazione risultante.
+S desne strane nalazi se zadano uključena oznaka **Zatvaranje stavki** (ne preporučuje se isključiti) i kriterij za grupiranje knjiženja **Grupiraj po banci**, koji omogućuje da se evidentira jedno knjiženje po svakom bankovnom kontu s kojeg ide isplata.
 
-7. Premi il pulsante **Inizia la creazione del pagamento da partite**
+Alternativno su dostupne opcije **Grupiraj po kontu dobavljača** i **Ne grupiraj**, koja knjiži svako plaćanje pojedinačno.
+
+Ako kontni nalog uključuje upravljanje datumom valute banke i u šifrarniku banaka je definiran broj dana za obračun valute u odnosu na odabrani kontni nalog, polje datum valute automatski će se popuniti prilikom knjiženja.
+
+7. Pritisni gumb **Pokreni kreiranje plaćanja iz stavki.**
 
 
 **<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
 
-### La scheda di ripristino 
+### Kartica za poništavanje
 
-consente di visualizzare la registrazione contabile attraverso un doppio click nella sezione relativa alle registrazioni, così come l'annullamento parziale/totale delle operazioni di pagamento selezionate. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite).
+Omogućuje pregled knjiženja dvostrukim klikom na dio ekrana s prikazom knjiženja, kao i djelomično ili potpuno poništavanje odabranih plaćanja. Poništavanje je moguće samo ako je razdoblje još uvijek otvoreno za izmjene (nije izvršten ispis dnevnika glavne knjige i nije provedeno zaključenje razdoblja).
 
 
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-**Ricerca precedenti**: Ricerca la lista delle creazioni eseguite.
+**Pretraži prethodne**: Pretražuje popis prethodno izvršenih kreiranja.
 
-**Cancella creazione**: Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i pagamenti associati.
+**Poništi kreiranje**: Ovom tipkom briše se cjelokupno izvršeno knjiženje, uključujući sva povezana plaćanja.
 
-**Cancella pagamenti**: Il pulsante esegue il ripristino del pagamento selezionato.
+**Poništi plaćanje**: Ova tipka omogućava poništavanje odabranog plaćanja.
 
