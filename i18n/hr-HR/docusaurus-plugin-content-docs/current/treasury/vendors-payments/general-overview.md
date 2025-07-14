@@ -1,39 +1,39 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo pagamenti fornitori si utilizza principalmente per creare **distinte di pagamento**, tipicamente per **bonifico bancario**: il modulo, infatti, prevede la possibilità dell'invio telematico del tracciato **SEPA** (.xml) dei pagamenti per bonifico.
+Modul plaćanja dobavljača uglavnom se koristi za **izradu uplatnica**, obično za **bankovne prijenose**: modul pruža mogućnost elektroničkog slanja **SEPA** (.xml) plaćanja bankovnim prijenosom. 
 
-E' possibile inoltre gestire tracciati per **distinte SDD** (Sepa Direct Debit) un formato che ha sostituito, a livello europeo, le precedenti distinte R.i.d. utilizzate per le autorizzazioni di addebito automatico in conto corrente.
+Također je moguće upravljati **putanjama za SDD** (Sepa Direct Debit) slipove, format koji je na europskoj razini zamijenio prethodne R.i.d. koristi se za automatske autorizacije zaduženja na bakovnim računima. 
 
-Il modulo consente inoltre di importare telematicamente gli **avvisi di pagamento per le ricevute bancarie passive** e procedere quindi con la loro autorizzazione e pagamento, tramite invio alla banca del flusso di ritorno con le ricevute autorizzate, quindi completare la procedura con la contabilizzazione automatica dei pagamenti eseguiti.
+Modul također omogućuje elektronički uvoz **obavijesti o plaćanju za pasivne bankovne potvrde**, koje se mogu autorizirati i platiti, slanjem povratnog tijeka s autoriziranim potvrdama u banku, a zatim se dovrši postupak automatskim obračunom izvršenih plaćanja. 
 
-Si procede alla creazione di una nuova distinta di pagamento andando a prelevare i dati dalle partite aperte fornitori presenti , direttamente interfacciandosi con il modulo amministrativo: sarà possibile procedere alla contabilizzazione dei movimenti relativi, con la chiusura delle partite relative inserite nella distinta di pagamento e lo storno del relativo saldo a livello contabile.
+Za izradu novog popisa plaćanja uzimajući podatke iz prisutnih otvorenih stavki dobavljača, izravno u sučelju s administrativnim modulom, bit će moguće nastaviti s knjiženjem povezanih kretanja, s uključenim zatvaranjem povezanih stavki u isplatnoj listi i storno predmetnog knjigovodstvenog stanja. 
 
 
 
-**Tabelle Preliminari per utilizzare il modulo**:
+**Preliminarna podešavanja za korištenje obrasca**:
 
-- **Anagrafiche associate a tipo conto Banca**: necessarie per intestare la distinta, il tipo conto Banca viene popolato alla procedura di Fast Start
-- Causali contabili da utilizzare per la contabilizzazione: sono quelle normali di pagamento fornitore che vengono create dalla procedura di Fast Start
-- Tabella Tipi pagamento: da richiamare in testata distinta, tabella già popolata dalla procedura di Fast Start
-- Numerazione pagamenti fornitori: per definire i numeratori associati, tabella già popolata dal fast Start
+- **Podaci povezani s vrstom bankovnog računa**: su potrebni za prepoznavanje stavka, a vrsta bankovnog računa popunjava se tijekom postupka brzog pokretanja (Fast Start) 
+- Predlošci knjiženja koji se koriste za računovodstvo su uobičajeni predlošci plaćanja dobavljačima koji se stvaraju postupkom Fast Start
+- Tablica vrsta plaćanja: treba se pozvati u zasebnom zaglavlju, tablica koja je već popunjena postupkom Fast Starta 
+- Numeriranje plaćanja dobavljača: za definiranje pridruženih brojača, tablicu je već popunjena postupkom Fast Starta 
 
  
 
 **Parametri**:   
 
-[Parametri pagamenti fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters).
+[Parametri plaćanja dobavljača](/docs/configurations/parameters/treasury/vendor-payments-parameters).
 
 ---
 
-| Funzione | Significato | Link Video Tutorial |
+| Funkcija | Značenje | Link za Video Tutorial |
 | --- | --- | --- |
-|  [Blocco partite passive](/docs/treasury/vendors-payments/procedures/block-passive-maturity-values)  | Pulsante per  procedere alla gestione massiva dei blocchi delle partite passive. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
-|  **Creazione automatica pagamento fornitori** | Pulsante per la creazione automatica di un pagamento fornitore. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
-|  [Gestione appoggi pagamenti](/docs/treasury/vendors-payments/procedures/payments-support-management)  | Pulsante per gestire gli appoggi bancari dei pagamenti. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
-|  [Contabilizzazione](/docs/finance-area/professional-men/accounting/payments-accounting/filter)  | Pulsante per procedere alla contabilizzazione dei pagamenti fornitore. | <a href="https://youtu.be/CDCVq0iC29s&amp;t=5m40s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+|  [Blokiraj pasivna dospijeća plaćanja](/docs/treasury/vendors-payments/procedures/block-passive-maturity-values)  | Procedura za nastavak masivnog upravljanja blokiranjem pasivnog dospijeća plaćanja.  | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+|  **Automatsko kreiranje plaćanja dobavljača** | Procedura za automatsko kreiranje plaćanja dobavljaču. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+|  [Upravljanje plaćanjima](/docs/treasury/vendors-payments/procedures/payments-support-management)  | Procedura za upravljanje bankovnim plaćanjima. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+|  [Knjiženje](/docs/finance-area/professional-men/accounting/payments-accounting/filter)  | Procedura za nastavak obračuna plaćanja dobavljača. | <a href="https://youtu.be/CDCVq0iC29s&amp;t=5m40s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
 
 ---
  
