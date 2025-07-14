@@ -1,58 +1,57 @@
 ---
-title: Crea pagamenti fornitore
+title: Kreiranje plaćanja dobavljaču 
 sidebar_position: 2
 ---
-La form si trova in **Tesoreria > Pagamenti > Crea pagamenti fornitore** e consente la creazione di una nuova distinta di pagamento. La stessa maschera viene utilizzata anche per l'apertura in modifica o visualizzazione di una distinta già salvata.
+Obrazac se nalazi u **Riznica > Plaćanja > Kreiraj plaćanja dobavljačima** i omogućuje kreiranje nove platne liste. Isti obrazac koristi se i za otvaranje već spremljene platne liste radi izmjene ili pregleda.
 
-Dalla form di ricerca è possibile creare un nuovo documento mediante il pulsante **> Nuovo pagamento** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
+Iz obrasca za pretraživanje moguće je kreirati novi dokument putem gumba **> Novo plaćanje**, ili otvoriti već postojeći kako bi se pregledao i/ili izmijenio.
 
-## Come creare una distinta di pagamento
+## Kako kreirati platnu listu
 
-Clicca per i passaggi fondamentali:
+Kliknite za osnovne korake:
 
-1. Seleziona il **Tipo di pagamento** della distinta dal primo campo a discesa.
-2. I campi seguenti vengono compilati automaticamente:
-   - **Anno**: propone l'anno attuale del sistema.
-   - **Numero distinta**: numerazione progressiva della distinta.
-   - **Data emissione**: propone la data odierna.
-3. Compila i campi obbligatori della testata:
-   - **Banca**: inserire il codice di sottoconto dell'anagrafica banca sulla quale emettere la distinta.
-   - **Conto corrente**: compilato automaticamente sulla base dell'anagrafica banca collegata al sottoconto.
-   - **Note iniziali**: campo libero per eventuali annotazioni (non utilizzato nello standard).
-   - **Note finali**: utilizzato nella contabilizzazione per valorizzare la descrizione del movimento contabile della banca.
-4. Imposta eventuali opzioni aggiuntive:
-   - **Imponi questa data valuta beneficiario**: definisce la data valuta del beneficiario nel tracciato telematico.
-5. Controlla i flag di stato della distinta:
-   - **Stampato**: non gestito automaticamente dal programma.
-   - **File emesso**: aggiornato automaticamente dopo la creazione del file telematico.
-6. Seleziona le partite da pagare:
-   - Premi il pulsante **> Crea un pagamento dalle partite** per selezionare le partite contabili da chiudere.
-   - Attenzione all'uso del flag *visualizzazione partite percipienti*: la gestione del pagamento deve avvenire dal modulo percipienti.
-   - Il flag *Imponi banca d'appoggio dall'anagrafica del fornitore* permette di utilizzare la banca predefinita nel fornitore.
-7. Modifica, se necessario, i valori di pagamento in griglia.
-   - È possibile inserire pagamenti parziali o aggiungere righe manuali.
-   - Attenzione: l'aggiunta manuale può causare discrepanze nel saldo contabile se non gestita correttamente.
-8. Controlla le **Note** in griglia: vengono compilate automaticamente con i riferimenti delle partite pagate e saranno riportate in contabilità generale.
+1. Odaberite **Vrstu plaćanja** platne liste iz prvog padajućeg polja.
+2. Sljedeća se polja popunjavaju automatski:
+   - **Godina**: predlaže se tekuća godina iz sustava.
+   - **Broj popisa prezentacije**: progresivna numeracija platne liste.
+   - **Datum izdavanja**: predlaže se današnji datum.
+3. Ispunite obavezna polja zaglavlja:
+   - **Banka**:  unijeti šifru analitičkog konta iz matice banaka preko kojeg se izdaje platna lista.
+   - **Bankovni račun**: automatski se popunjava na temelju banke povezane s analitičkim kontom.
+   - **Početne bilješke**:  slobodno polje za eventualne napomene (nije korišteno u standardu).
+   - **Završne bilješke**: koristi se pri knjiženju za popunjavanje opisa kontne stavke za banku.
+4. Postavite eventualne dodatne opcije:
+   - **Nametni ovaj datum valute primatelja**: definira datum valute primatelja u telematskom zapisu.
+5. Provjerite statuse (oznake) platne liste:
+   - **Ispisano**: nije automatski upravljano od strane programa.
+   - **Datoteka je izdana**: automatski se ažurira nakon izrade telematske datoteke.
+6. Odaberi stavke za plaćanje:
+   - Pritisni gumb **> Kreiraj plaćanje** iz stavki za odabir kontabilnih stavki koje treba zatvoriti.
+   - Pažnja na korištenje oznake prikaz stavki isplatitelja: upravljanje plaćanjem mora se izvršiti iz modula isplatitelja.
+   - Oznaka *Nametni banku za uplatu iz matice dobavljača* omogućuje korištenje unaprijed definirane banke iz matice dobavljača.
+   - Moguće je unijeti djelomična plaćanja ili ručno dodavati retke.
+   - Pažnja: ručno dodavanje može uzrokovati razlike u kontnom saldu ako nije pravilno upravljano.
+8. Provjerite **Bilješke** u mreži: automatski se popunjavaju referencama plaćenih stavki i bit će prenesene u glavnu knjigu.
 
-:::tip ATTENZIONE
-Sulla testata della distinta è presente un flag **Autorizzato** per consentire la creazione del tracciato XML ed eseguire il pagamento. Il flag memorizza l'utente e la data di autorizzazione. Può essere attivato di default accedendo alla form **Parametri pagamenti fornitori** e attivando il flag *Autorizzato di default*.
+:::tip PAŽNJA
+U zaglavlju platne liste nalazi se oznaka **Odobren** koja omogućuje izradu XML traka i izvršenje plaćanja. Ova oznaka pohranjuje korisnika i datum autorizacije. Može se unaprijed automatski aktivirati pristupom u formu **Parametri plaćanja dobavljaču** i aktiviranjem oznake *Ovlašteno prema zadanim postavkama*.
 :::
 
-9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente.
+9. **Pritisnite gumb Izrada SEPA datoteke** za automatsko generiranje .xml traka s popisom plaćanja i njegovo automatsko arhiviranje u dokumentacijski sustav. Datoteku možeš preuzeti iz dokumentacije i potom je prenijeti u sustav korporativnog bankarstva, bez potrebe za ručnim unosom plaćanja.
 
-10. Premi il bottone **Documenti**, nel gruppo Document manager per accedere al documentale con l'allegato .xml Da dentro la form del documentale premi poi il bottone **Salva allegato** per scaricare la copia sul PC locale.
+10. Pritisnite gumb **Dokumenti**, u grupi Document manager za pristup dokumentacijskom sustavu s priloženim .xml. Iz samog dokumentacijskog sučelja zatim klikni na gumb **Spremi privitak** kako bi preuzeo kopiju na lokalno računalo.
 
-#### Pulsanti specifici
+#### Specifični gumbi
 
-> **Nuovo pagamento**: Inserisce manualmente una riga di pagamento fornitore.
+> **Novo plaćanje**: Ručno umetanje red plaćanja dobavljaču.
 
-> **Salva**: Salva la testata della distinta dopo aver inserito il tipo di pagamento e il sottoconto di banca.
+> **Spremi**: Sprema zaglavlje platne liste nakon unosa vrste plaćanja i bankovnog analitičkog konta.
 
-> **Cancella pagamenti selezionati**: Cancella i pagamenti fornitori creati manualmente o da creazione pagamento da partite.
+> **Izbriši označena plaćanja**: Briše plaćanja dobavljačima stvorena ručno ili putem izrade plaćanja iz stavki.
 
-> **Crea un pagamento dalle partite**: Attivabile dopo il salvataggio della testata, acquisisce i dati dall'archivio partite.
+> **Kreiraj plaćanje iz stavki**: Aktivira se nakon spremanja zaglavlja, preuzima podatke iz arhive stavki.
 
-> **Documenti**: Pulsante per il collegamento alla gestione documentale.
+> **Dokumenti**:  Gumb za povezivanje s dokumentacijskim sustavom.
 
 
 ---
