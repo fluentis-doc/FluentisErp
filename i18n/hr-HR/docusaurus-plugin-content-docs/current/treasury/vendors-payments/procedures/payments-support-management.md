@@ -1,5 +1,5 @@
 ---
-title: Gestione appoggio pagamenti
+title: Upravljanje plaćanjima
 sidebar_position: 2
 ---
 
