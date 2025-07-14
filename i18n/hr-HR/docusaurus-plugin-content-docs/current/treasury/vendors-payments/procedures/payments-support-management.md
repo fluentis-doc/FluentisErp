@@ -3,13 +3,13 @@ title: Gestione appoggio pagamenti
 sidebar_position: 2
 ---
 
-Da questa maschera si procede alla gestione dei dati degli appoggi bancari previsti per i pagamenti (ed eventualmente per gli incassi). All'interno delle anagrafiche clienti/fornitori è possibile definire il sottoconto banca di pagamento predefinito: sulla base di questo ogni partita, all'atto della sua creazione, viene canalizzata su questo conto, ma il dato può essere modificato dalla presente maschera.
+Unutar evidencije kupaca/dobavljača moguće je definirati zadani podkonto banke za plaćanje: na temelju toga se svaka stavka prilikom kreiranja usmjerava na ovaj račun, ali se podaci mogu mijenjati iz ovog obrasca. 
 
-Oltre a questa funzione, la maschera consente di visualizzare la distinta all'interno della quale la partita è stata pagata, così come consente di memorizzare manualmente la ricezione dell'avviso di pagamento, del suo controllo e dell'avvenuto invio dello stesso attraverso i flag relativi in griglia.
+Osim ove funkcije, obrazac omogućuje pregled liste u kojoj je dospijeće uplaćeno, kao i ručno memoriranje primitka obavijesti o uplati, njezinu kontrolu i slanje iste kroz zastavice u glavnom pregledu. 
 
-La gestione puntuale dell'appoggio pagamenti è molto utile per ottenere successivamente una elaborazione del **[*Cash Flow*](/docs/treasury/cash-flow/reports)** raggruppata per banca, in modo da conoscere l'andamento e la consistenza, non solo del cash flow generale, ma anche di valutare la situazione e l'eventuale possibile scopertura di ogni singolo conto bancario aziendale.
+Pravodobno upravljanje plaćanjima vrlo je korisno za naknadno dobivanje obrade **[*Cash Flow-a*](/docs/treasury/cash-flow/reports)** (novčani tok) grupiranog po bankama, kako bi se znao trend i dosljednost, ne samo općeg novčanog tijeka, već i za procjenu situacije i mogućeg prekoračenja bankovnog računa poduzeća. 
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Molimo pogledajte Tutorial - YouTube Link</a>**
 
 
 
