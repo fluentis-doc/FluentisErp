@@ -1,18 +1,18 @@
 ---
-title: Blocco partite passive
+title: Blokiraj pasivna dospijeća plaćanja 
 sidebar_position: 1
 ---
 
-Da questa maschera si procede alla gestione massiva dei blocchi delle partite passive. L'utente abilitato (gestendo i diritti utente all'interno dell'applicazione ARM) potrà quindi procedere a bloccare e/o sbloccare la lista delle partite visualizzate secondo i filtri di ricerca impostati. La procedura andrà a memorizzare chi e quando ha bloccato la partita e chi e quando ha autorizzato lo stesso.
+Korisnik (s odgovarajućim korisničkim pravima unutar ARM aplikacije) može nastaviti s uređivanjem popisa dospijeća plaćanja prikazanim prema postavljenim filtrima pretraživanja. Procedura će memorirati tko je i kada uređivao dospijeće te tko je i kada isto autorizirao. 
 
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Molimo pogledajte Tutorial - YouTube Link </a>**
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca partite | Pulsante, per attivare la ricerca partite, dopo aver specificato i filtri attraverso i quali ottenere il dato. |
-| Blocco partite | Pulsante per bloccare le partite selezionate nella griglia risultato. |
-| Sblocco partite | Pulsante per sbloccare le partite selezionate nella griglia risultato. |
+| Traži | Tipka za pokretanje traženja dospijeća, nakon određivanja filtara kroz koje će se dobiti podaci. |
+| Blokiraj dospijeća plaćanja | Tipka za zaključavanje odabranih dospijeća u tablici rezultata. |
+| Otključaj dospijeća | Tipka za otključavanje odabranih dospijeća u tablici rezultata.  |
 
 
 
