@@ -1,18 +1,18 @@
 ---
-title: generazione contatori nuovo anno
+title: Generación de contador de año nuevo
 sidebar_position: 3
 ---
 
 El formulario permite gestionar los numeradores presentes en Fluentis, en particular en el momento del cambio de año.
 
-Al abrir el formulario, Fluentis mostrará el **ultimo anno gestionale esistente** (tomado de los parámetros de contabilidad) y el filtro para los *contadores no válidos para el próximo año*.
+Al abrir el formulario, Fluentis mostrará el **Último año gestionado existente** (tomado de los parámetros de contabilidad) y el filtro para los *contadores no válidos para el próximo año*.
 
 La cuadrícula presenta la lista de numeradores no definidos (o no definidos correctamente) para el próximo año, permitiendo al usuario, con un doble clic, identificar la razón: generalmente el problema radica en la configuración del numerador con una fecha de fin de validez sin una razón válida, obligando (antes de la creación del presente automatismo) a crear una nueva línea cada año, en lugar de establecer el numerador con la opción Anual que reinicia automáticamente cada año. Sin embargo, podría ser que el numerador haya sido bloqueado por una razón específica (cambio de política de numeración, etc.).
 
 #### Botones específicos
 
-> **creazione**: el botón muestra un mensaje de confirmación de la corrección automática de los numeradores para las líneas seleccionadas en la cuadrícula.  
-> **rollback**: realiza la restauración del procedimiento.
+> **Creación**: el botón muestra un mensaje de confirmación de la corrección automática de los numeradores para las líneas seleccionadas en la cuadrícula.  
+> **Revertir Todo**: realiza la restauración del procedimiento.
 
 *Ejemplo*  
 Si al mensaje se responde de la siguiente manera:  
