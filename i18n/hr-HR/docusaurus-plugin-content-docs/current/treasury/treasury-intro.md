@@ -1,108 +1,108 @@
 ---
-title: TESORERIA
+title: RIZNICA
 sidebar_position: 1
 ---
 
-## Funzionalità
+## Funkcionalnosti
 
-L'area Tesoreria di **Fluentis ERP** presenta una serie di moduli e procedure che consentono all'azienda di analizzare l'andamento dei flussi finanziari previsti, valutarne la rischiosità, e gestirne la comunicazione con gli istituti di credito sia in entrata che in uscita.
+Područje Riznice unutar sustava **Fluentis ERP** obuhvaća niz modula i procedura koje poduzeću omogućuju analizu tijeka planiranih novčanih tokova, procjenu pripadajućih rizika te upravljanje komunikacijom s financijskim institucijama – kako za ulazne, tako i za izlazne tokove.
 
-A queste funzionalità di monitoraggio ed analisi, si affiancano varie procedure per la gestione corrente e quotidiana delle operazioni di pagamento e incasso, di emissione e presentazione al salvo buon fine o all'incasso di effetti e ricevute bancarie, di anticipo fatture di vendita press la banca.
+Uz ove funkcionalnosti praćenja i analize, dostupne su i različite procedure za svakodnevno operativno upravljanje transakcijama plaćanja i naplate, izdavanja te prezentacije mjenica i bankovnih priznanica na naplatu ili inkaso, kao i za upravljanje predujmovima na temelju izdanih računa prema banci.
 
-Il modulo dialoga strettamente con l'Amministrazione e permette pertanto di leggere le partite aperte dello scadenziario al fine di generare i pagamenti ed i bonifici da eseguire, oppure di emettere gli effetti e le ricevute bancarie.
+Modul je usko povezan s modulom Financije, što omogućuje čitanje otvorenih stavki iz dospijeća radi generiranja naloga za plaćanje i doznaka koje treba izvršiti, ili pak za izdavanje mjenica i bankovnih priznanica (Ri.Ba.).
 
-Quando il dato viene elaborato, le stesse procedure premettono di generare in automatico le scritture contabili per la rilevazione dei vari incassi e pagamento oppure per l'emissione, presentazione ed incasso di effetti e Ri.Ba.
+Nakon obrade podataka, iste procedure omogućuju automatsko generiranje računovodstvenih zapisa za knjiženje raznih uplata i isplata, kao i za izdavanje, prezentaciju i naplatu mjenica i Ri.Ba. dokumenata.
 
 
-### Dettaglio Funzionalità
+### Detaljan pregled funkcionalnosti
 
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###   <Link to="/docs/treasury/cash-flow/general-overview/">Cash Flow</Link>
-        <p>per eseguire analisi preventive del flusso di cassa potenziale, consentendo di creare diversi scenari includendo o escludendo alcune tipologie di flusso finanziario (es. con o senza gli ordini clienti, per un CF più o meno consolidato)</p>
-        <p>Completo di</p>
-        <p><Link to="/docs/treasury/cash-flow/off-balance-due-dates" className="bold-link">Scadenze extracontabili</Link></p>
-        <p>per integrare manualmente il cahsflow con flussi previsionali extra sistema</p>
-        <p><Link to="/docs/treasury/cash-flow/reports" className="bold-link">Stampa analitica cashflow</Link></p>
-        <p>per la rappresentazione completa dei risultati futuri attesi</p>
+###   <Link to="/docs/treasury/cash-flow/general-overview/">Novčani tok (Cash Flow)</Link>
+        <p>za provođenje preventivne analize potencijalnog novčanog toka, s mogućnošću kreiranja više scenarija uključivanjem ili isključivanjem određenih vrsta financijskih tokova (npr. s ili bez narudžbi kupaca, za više ili manje konsolidiran prikaz CF-a)</p>
+        <p>Uključuje i</p>
+        <p><Link to="/docs/treasury/cash-flow/off-balance-due-dates" className="bold-link">Vanjskobilančne dospjelosti</Link></p>
+        <p>za ručno uključivanje izvan-sustavnih predviđenih tokova u novčani tok</p>
+        <p><Link to="/docs/treasury/cash-flow/reports" className="bold-link">Analitički ispis novčanog toka</Link></p>
+        <p>za cjeloviti prikaz očekivanih budućih rezultata</p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/advance/advances-collections">Anticipo Fatture</Link>
-        <p>Modulo specifico per l'anticipazione bancaria sulla fatturazione (solitamente estera)</p>
+###   <Link to="/docs/treasury/advance/advances-collections">Predujmovi po fakturama</Link>
+        <p>Specifični modul za bankovno predfinanciranje temeljem izdanih faktura (obično za inozemne kupce)</p>
     </div>
 </div>
 
 <div className="cardContainer">
     <div className="card">
-###   <Link to="/docs/treasury/bills-holding/general-overview">Portafoglio Effetti</Link>
-        <p>per l'emissione, la presentazione , l'incasso di effetti e ricevute bancarie e le relative rilevazioni contabili, oltre alla gestione e relative scritture contabili degli effetti insoluti</p>
-        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/" className="bold-link">Creazione effetti dalle Fatture</Link></p>
-        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/" className="bold-link">Creazione effetti dalle Partite</Link></p>
+###   <Link to="/docs/treasury/bills-holding/general-overview">Portfelj mjenica</Link>
+        <p>za izdavanje, predaju i naplatu mjenica i bankovnih priznanica, uključujući njihovo automatsko knjiženje, kao i upravljanje nepodmirenim mjenicama i povezanim knjiženjima</p>
+        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/" className="bold-link">Kreiranje mjenica iz faktura</Link></p>
+        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/" className="bold-link">Kreiranje mjenica iz otvorenih stavaka</Link></p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/vendors-payments/general-overview">Pagamenti Fornitori</Link>
-        <p>per la gestione delle distinte di Bonifico, SDD, e Avvisi Ri.Ba. passivi e la relativa rilevazione contabile in automatico</p>
-        <p><Link to="/docs/treasury/vendors-payments/procedures/block-passive-maturity-values" className="bold-link">Blocco partite passive</Link></p>
-        <p>gestione massiva del blocco autorizzazione al pagamento delle partite passive</p>
-        <p><Link to="/docs/treasury/vendors-payments/procedures/payments-support-management" className="bold-link">Gestione appoggio pagamenti</Link></p>
-        <p>gestione dei dati degli appoggi bancari previsti per i pagamenti</p>
+###   <Link to="/docs/treasury/vendors-payments/general-overview">Plaćanja dobavljačima</Link>
+        <p>za upravljanje nalozima za plaćanje putem bankovnog transfera, SDD naloga i pasivnih Ri.Ba. obavijesti, s automatskim knjiženjem</p>
+        <p><Link to="/docs/treasury/vendors-payments/procedures/block-passive-maturity-values" className="bold-link">Blokiranje pasivnih stavaka</Link></p>
+        <p>masovno upravljanje blokadom autorizacije za plaćanje pasivnih stavaka</p>
+        <p><Link to="/docs/treasury/vendors-payments/procedures/payments-support-management" className="bold-link">Upravljanje bankama za plaćanja</Link></p>
+        <p>upravljanje podacima o bankama predviđenima za izvršenje plaćanja</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###   <Link to="/docs/treasury/bank-account/bank-movements">Conti Correnti Bancari</Link>
-        <p>per l'importazione delle liste movimenti bancari telematiche e la loro riconciliazione con la contabilità, oppure per sfruttarli nella generazione delle scritture</p>
+###   <Link to="/docs/treasury/bank-account/bank-movements">Bankovni računi</Link>
+        <p>za uvoz elektroničkih bankovnih izvoda i njihovo usklađivanje s računovodstvom, ili za korištenje istih pri generiranju knjiženja</p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/customer-risk/general-overview">Rischio Cliente</Link>
-        <p>per la gestione del fido sulle forniture a credito ed il monitoraggio o blocco a fronte del superamento del limite imposto, l'analisi dell'esposizione al rischio di credito tramite vari pannelli ed indici</p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager" className="bold-link">Lock manager per autorizzare lo sconfinamento</Link></p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/customer-statement" className="bold-link">Esposizione clienti</Link></p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/remittances-check" className="bold-link">Gestione Rimesse</Link></p>
-        <p>Per il controllo tempi medi nel ritardo pagamenti</p>
+###   <Link to="/docs/treasury/customer-risk/general-overview">Kreditni rizik kupaca</Link>
+        <p>za upravljanje kreditnim limitom kod isporuka na odgodu plaćanja, nadzor ili blokadu u slučaju prekoračenja limita, analizu izloženosti kreditnom riziku putem raznih panela i pokazatelja</p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager" className="bold-link">Lock manager za autorizaciju prekoračenja</Link></p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/customer-statement" className="bold-link">Izloženost kupaca</Link></p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/remittances-check" className="bold-link">Upravljanje doznakama</Link></p>
+        <p>Za kontrolu prosječnog kašnjenja u plaćanjima</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/treasury/docfinance/general-overview">DocFinance e Piteco</Link>
-        <p>per la gestione dell'importazione ed esportazione dati verso i maggiori e più diffusi software verticali per la tesoreria.</p>
+###     <Link to="/docs/treasury/docfinance/general-overview">DocFinance i Piteco</Link>
+        <p>za upravljanje uvozom i izvozom podataka prema najpoznatijim specijaliziranim softverima za trezor.</p>
     </div>
 </div>
 
-## Dati di Base
-:::danger[Attenzione]
-Prima di utilizzare le funzionalità disponibili occorre gestire una serie di dati di base: essi sono suddivisi in due macro gruppi, [**Tabelle**](/docs/configurations/tables/finance/general-overview) e [**Parametri**](/docs/configurations/parameters/finance/general-overview).
+## Osnovni podaci
+:::danger[Pažnja]
+Prije korištenja dostupnih funkcionalnosti potrebno je upravljati nizom osnovnih podataka: oni su podijeljeni u dvije velike skupine, [**Tablice**](/docs/configurations/tables/finance/general-overview) i [**Parametri**](/docs/configurations/parameters/finance/general-overview).
 
-In alternativa è disponibile la procedura di **Fast Start** descritta di seguito.
+Alternativno je dostupna procedura **Fast Start** opisana u nastavku.
 :::
 
-## Procedura di Fast Start
+## Procedura Fast Start
 
 :::important[**Fast Start**]
-Anche l'area Tesoreria può essere configurata come [**ambiente *FastStart* totalmente pronto all'uso**](/docs/guide/fast-start) e permettere un utilizzo immediato.
+I područje Riznice može biti konfigurirano kao [**FastStart okruženje potpuno spremno za korištenje**](/docs/guide/fast-start) i omogućiti odmah upotrebu.
 :::
 
-## Flusso di inserimento dei dati
+## Tijek unosa podataka
 
-Benchè sia possibile l'inserimento manuale di dati quali ad esempio la creazione di una ricevuta bancaria o di una distinta di bonifico, solitamente si ricorre a **procedure automatiche** di creazione (esempio *creazione effetti dalle partite o dalle fatture*) o di predisposizione dei pagamenti a partire dalle partite aperte.
+Iako je moguće ručno unositi podatke kao što su izrada bankovne priznanice ili liste za plaćanje, obično se koriste **automatske procedure** za kreiranje (npr. *kreiranje efekata iz stavki ili računa*) ili za pripremu uplata na temelju otvorenih stavki.
 
-Si ricorre inoltre generalmente a procedure automatiche di contabilizzazione del portafoglio o dei bonifici eseguiti.
+Također se općenito koriste automatske procedure za knjiženje portfelja ili izvršenih uplata.
 
-Altre funzionalità risultano invece elaborazioni del software a partire dai dati presenti, es. il Cashflow con la procedura dui creazione automatica, (benchè esista la possibilità di crearlo manualmente richiamando i flussi finanziari uno ad uno, raramente utilizzato) oppure i dati estratti dal modulo Rischio cliente.
+Ostale funkcionalnosti predstavljaju softversku obradu na temelju postojećih podataka, npr. Cashflow s procedurom automatskog kreiranja (iako postoji mogućnost ručnog kreiranja pozivanjem financijskih tokova jedan po jedan, što se rijetko koristi) ili podaci izdvojeni iz modula Upravljanje rizikom kupaca.
 
-## Flusso di lavoro tipico area tesoreria
+## Tipičan tijek rada u području riznice
 
-- Procedure "Correnti": 
-    - esecuzione dei pagamenti fornitori leggendo le partite aperte e contabilizzazione automatica del pagamento stesso con chiusura partite
-    - emissione di effetti attivi (frequentemente ricevute bancarie) leggendo le fatture o le partite aperte e contabilizzazione automatica dell'emissione
-    - creazione di distinte di presentazione effetti (Ri.Ba.) l salvo buon fine o all'incasso ed esportazione del file telematico per l'invio alla banca; contabilizzazione automatica della presentazione
-    - incasso degli effetti al salvo buon fine (giroconto automatico)
-    - eventuale emersione insoluto con riapertura del credito cliente, contabilizzazione automatica
-    - creazione di distinte di presentazione fatture allo sconto leggendo le scadenze delle fatture, contabilizzazione automatica dell'anticipo e del successivo incasso completo
+- "Trenutne" procedure: 
+    - izvršavanje plaćanja dobavljačima čitanjem otvorenih stavki i automatsko knjiženje samog plaćanja s zatvaranjem stavki
+    - izdavanje aktivnih mjenica (često bankovnih priznanica) čitanjem računa ili otvorenih stavki te automatsko knjiženje izdanih dokumenata
+    - izrada zbirnih naloga za prezentaciju mjenica (Ri.Ba.) na naplatu ili po principu "salvo buon fine" te izvoz telematske datoteke za slanje banci; automatsko knjiženje prezentacije
+    - naplata mjenica po principu automatsko preknjiženje
+    - eventualno pojavljivanje nepodmirenih potraživanja s ponovnim otvaranjem potraživanja kupca i automatskim knjiženjem
+    - izrada zbirnih naloga za predočenje faktura na diskont temeljem dospijeća, automatsko knjiženje predujma i naknadne potpune naplate
 
-- Procedure "On demand":
-    - Elaborazione cashflow leggendo i dati presenti a sistema (saldi, partite, documenti ciclo attivo e passivo, effetti, documenti di conto lavoro e produzione)
-    - Elaborazione di statistiche di utilizzo fidi clienti o ritardo pagamenti
+- Procedure "na zahtjev":
+    - izrada novčanog toka (cash flow) na temelju postojećih podataka u sustavu (stanja, stavki, dokumenata iz ciklusa nabave i prodaje, mjenica, dokumenata kooperacije i proizvodnje)
+    - izrada statistika korištenja kreditnih limita kupaca ili kašnjenja u plaćanjima
