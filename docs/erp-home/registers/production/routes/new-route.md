@@ -74,7 +74,7 @@ Il tipo **Sovrapposizione a percentuale**, attivo solo per la [Schedulazione F.C
 
 **Fase sovrapposizione / sottofase sovrapposizione**: in questi due campi, nel caso di sovrapposizione, si andrà ad indicare la fase che si intende sovrapporre alla fase selezionata. Nel caso della [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling) la sovrapposizione è possibile solo con la fase precedente.
 
-**Costo Unitario**: in questo campo si va ad inserire il costo della fase quando si decide di non valorizzare con la valorizzazione di macchina e gruppo manodopera;
+**Costo Unitario**: in questo campo si va ad inserire il costo della fase quando si decide di non valorizzare con la valorizzazione di macchina e gruppo manodopera. Il valore indicato in questo campo viene considerato come prioritario su tutti gli altri in fase di [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization) solo per il calcolo del costo preventivo di una fase;         
 
 **Ubicazione**: permette di associare anche un'ubicazione di magazzino alla fase; questo significa che tutti gli articoli impiegati in quella fase saranno presenti in quell'ubicazione.
 
