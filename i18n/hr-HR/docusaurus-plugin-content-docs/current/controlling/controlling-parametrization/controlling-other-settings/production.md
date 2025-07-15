@@ -1,15 +1,15 @@
 ---
-title: Impostazioni di produzione
+title: Postavke proizvodnje
 sidebar_position: 9
 ---
 
-I collegamenti dei centri aziendali nelle configurazioni di produzione sono sostanzialmente due
+Povezivanje centara poduzeća u konfiguracijama proizvodnje odvija se na dva načina:
 
-- nella tabella ***Macchine***, ad ogni singola macchina possiamo associare il [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento
+- U tablici ***Strojevi***, svakoj pojedinoj mašini može se dodijeliti odgovarajući [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) 
 
-- nella tabella dei ***Gruppi manodopera***, ad ogni gruppo possiamo associare il [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento
+- U tablici ***Grupe radne snage***, svakoj grupi može se dodijeliti odgovarajući [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) 
 
-:::tip Nota
-Ricordiamo che, per rendere visibile i centri aziendali a livello di tabelle di produzione, il centro aziendale deve avere spuntato il flag *Visibile in produzione*
+:::tip NAPOMENA
+Kako bi centri poduzeća bili vidljivi u tablicama proizvodnje, potrebno je označiti opciju *Vidljivo u proizvodnji* u postavkama centra.
 :::
 
