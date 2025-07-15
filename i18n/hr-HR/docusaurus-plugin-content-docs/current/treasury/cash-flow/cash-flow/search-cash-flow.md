@@ -1,43 +1,43 @@
 ---
-title: Ricerca cash flow
+title: Traženje novčanog tijeka 
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Tabelle preliminari da gestire](/docs/treasury/cash-flow/general-overview) **
+** [Preliminarne tablice za upravljanje](/docs/treasury/cash-flow/general-overview) **
 
-** [Elaborazione automatica](/docs/treasury/cash-flow/procedures) **
+** [Automatska obrada](/docs/treasury/cash-flow/procedures) **
 
-** [Stampa](/docs/treasury/cash-flow/reports) **
-
- 
+** [Ispis](/docs/treasury/cash-flow/reports) **
 
  
 
-Dalla presente form è possibile ricercare e modificare elaborazioni inserite precedentemente. 
+ 
 
-E' anche possibile inserire una nuova elaborazione che risulterebbe, in questo caso, completamente manuale (e quindi di scarso utilizzo pratico).
+Iz ovog obrasca moguće je pretraživati i mijenjati prethodno unesene obrade.   
 
-Si consiglia di creare il cash flow dalla procedura ** [Generazione automatica cash flow](/docs/treasury/cash-flow/procedures) **.
+Također, moguće je unijeti novu obradu koja bi u tom slučaju bila potpuno ručna (a time manje korisna u praksi).   
+
+Preporučuje se kreiranje novčanog tijeka putem postupka ** [Automatska generacija novčanog toka](/docs/treasury/cash-flow/procedures) **.
 
 
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei cash flow inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo cash flow. |
-| Modifica | Richiama la procedura per modificare un cash flow precedentemente inserito. |
-| Visualizza | Richiama la procedura per visualizzare un cash flow precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un cash flow precedentemente inserito. |
+| Traži | Tipka za primjenu filtara pretraživanja na cijeli bazu podataka unesenih novčanih tokova. |
+| Novo | Tipka za unos novog novčanog tijeka. |
+| Izmjeni | Tipka za izmjenu prethodno unesenog novčanog tijeka. |
+| Prikaži | Tipka za pregled prethodno unesenog novčanog tijeka. |
+| Otkaži | Izvršava postupak brisanja prethodno unesenog novčanog tijek. |
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Analisi cash flow | Richiama la procedura per stampare un cash flow. |
+| Analiza novčanog toka | Poziva se procedura za ispis novčanog toka. |
 
 
 
