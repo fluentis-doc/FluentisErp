@@ -1,12 +1,14 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 0
 ---
 
-In questa sezione della guida andiamo a spiegare nel dettaglio le varie configurazioni presenti nelle tabelle collegate all'uso del Controlling.
-Riprenderemo quindi la lista delle tabelle specifiche del controlling, già presenti nella sezione generale delle [***Configurazioni***](/docs/configurations/configuration) di ***Fluentis ERP***, ordinandole per il processo logico di definizione passo passo per quanto riguarda quelle specifiche del Controlling, per poi richiamare e focalizzare l'attenzione alle specificità del Controlling presenti nelle tabelle e parametrizzazioni delle varie aree e moduli del sistema.
+Ovaj odjeljak detaljno objašnjava različite konfiguracije prisutne u tablicama povezanim s korištenjem kontrolinga.
+Bit će obrađena lista specifičnih tablica za kontroling, već navedena u općem dijelu [***konfiguracija***](/docs/configurations/configuration) ***Fluentis ERP-a***, ali će biti prikazana prema logičnom slijedu koraka definicije kontrolinga. Također će biti
+istaknute specifičnosti kontrolinga unutar tablica i parametarskih postavki različitih područja i modula sustava.
 
-:::tip Nota
-Dove necessario andremo a specificare le eventuali differenze d'utilizzo tra società con Controlling attivo o meno
+
+:::tip Napomena
+Gdje je potrebno, biti će navedene eventualne razlike u korištenju između poduzeća s aktivnim modulom Kontrolinga i onih bez njega.
 :::
 
