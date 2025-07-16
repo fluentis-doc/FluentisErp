@@ -1,89 +1,96 @@
 ---
-title: Parametri nei moduli dell'area Acquisti e Vendite
+title: Parametri u modulima područja Nabave i Prodaje
 sidebar_position: 35
 ---
 
-I documenti del ciclo passivo e attivo prevedono le loro impostazioni specifiche di valorizzazione dei *Centri aziendali*
+Dokumenti u tijeku poslovanja imaju svoje specifične postavke za vrednovanje *centara poduzeća*.
 
-## Area acquisti
-Nell'area acquisti le configurazioni sono disponibili per le Richieste di acquisto, gli Ordini fornitori, le Bolle di acquisto e le Fatture di acquisto.
+## Područje nabave
+U području nabave postavke su dostupne za Zahtjeve za nabavu, Narudžbe dobavljača, Primke i Ulazne račune.
 
-### Richieste di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* cioè fornitore associato alla riga di Richiesta
-    - *Magazzino* cioè il magazzino legato alla riga articolo
+### Zahtjevi za nabavu
+Unutar parametara modula, na kartici Analitički, moguće je definirati prioritet vrednovanja centara među sljedećim opcijama:
+    - *Tip prometa* prema kontu u kontnom planu povezanim s prihodima od nabave artikla
+    - *Šifrarnik artikala* prema odabranom artiklu
+    - *Šifarnik* prema dobavljaču povezanom s linijom zahtjeva
+    - *Skladište* prema skladištu povezanim s linijom artikla
 
-### Ordini fornitori
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. richiesta di acquisto), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Centri di costo/ricavo obbligatori*: vincola l'utente a valorizzare al 100% l'analitica della singola riga articolo
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
 
-### Bolle di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. ordine fornitore), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+### Narudžbe dobavljača
+Unutar parametara modula, na kartici *Analitički*, također je moguće definirati prioritet vrednovanja centara među sljedećim opcijama
+    - *Tip prometa* prema kontu u kontnom planu povezanim s prihodima od nabave artikla
+    - *Šifrarnik artikala* prema odabranom artiklu
+    - *Šifrarnik dobavljača* prema dobavljaču na narudžbi
+    - *Skladište* prema skladištu povezanim s linijom artikla
+Također su prisutni sljedeći flagovi:
+- *Preračun*: kada se narudžba stvori iz prethodnog dokumenta (npr. zahtjeva za nabavu), ovaj flag omogućava ponovno izračunavanje analitike prema parametrima ciljnog modula
+- *Obavezan je centar troškova/prihoda*: : obvezuje korisnika na 100% vrednovanje analitike za svaku liniju artikla
+- *Ocijeni prioritet za svaku dimenziju*: flag je dostupan samo za poduzeća s aktiviranim *kontrolingom*. Ako **nije** prisutan, ***FluentisERP*** će primijeniti prioritet pretrage i zaustaviti vrednovanje na prvom entitetu koji
+omogućuje vrednovanje centara poduzeća. **Ako je prisutan**, ***FluentisERP*** će primijeniti prioritet za vrednovanje svih mogućih dimenzija koje su postavljene u različitim izvorima (konto, artikl, skladište, dobavljač).
 
-Nella procedura ***Creazione DDT da Ricevimento Merci*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+### Primke
+Unutar parametara modula, na kartici *Analitički*, moguće je definirati prioritet vrednovanja centara na isti način kao za narudžbe dobavljača.
+    - *Tip prometa* prema kontu u kontnom planu povezanim s prihodima od nabave artikla
+    - *Šifrarnik artikala* prema odabranom artiklu
+    - *Šifrarnik dobavljača* prema dobavljaču na narudžbi
+    - *Skladište* prema skladištu povezanim s linijom artikla
+Također su prisutni sljedeći flagovi:
+- *Preračun*: : kada se narudžba stvori iz prethodnog dokumenta (npr. zahtjeva za nabavu), ovaj flag omogućava ponovno izračunavanje analitike prema parametrima ciljnog modula
+- *Procjena prioriteta po svakoj dimenziji*: lag je dostupan samo za poduzeća s aktiviranim *kontrolingom*. Ako **nije** prisutan, ***FluentisERP*** će primijeniti prioritet pretrage i zaustaviti vrednovanje na prvom entitetu koji
+omogućuje vrednovanje centara poduzeća. **Ako je prisutan**, ***FluentisERP*** će primijeniti prioritet za vrednovanje svih mogućih dimenzija koje su postavljene u različitim izvorima (konto, artikl, skladište, dobavljač).
 
-### Fatture di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. bolla di acquisto), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+U postupku ***Izrade primke iz prijema robe***  dostupan je tabu je Parametar flag za ***Preračunavanje centara troška/profita***, koji postavlja ponovni izračun analitike prema parametrima modula odredišta.
 
-Nella procedura ***Creazione Fatture da Ricevimento Merci*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+### Ulazni računi
+U parametrima modula, u kartici *Analitički*, može se definirati prioritet vrednovanja centara između:
+    - *Tip prometa* prema kontu u kontnom planu povezanim s prihodima od nabave artikla
+    - *Šifrarnik artikala* prema odabranom artiklu
+    - *Šifrarnik dobavljača* prema dobavljaču na narudžbi
+    - *Skladište* prema skladištu povezanim s linijom artikla
+Također su prisutni sljedeći flagovi:
+- *Preračun*: : kada se narudžba stvori iz prethodnog dokumenta (npr. zahtjeva za nabavu), ovaj flag omogućava ponovno izračunavanje analitike prema parametrima ciljnog modula
+- *Procjena prioriteta po svakoj dimenziji*: lag je dostupan samo za poduzeća s aktiviranim *kontrolingom*. Ako **nije** prisutan, ***FluentisERP*** će primijeniti prioritet pretrage i zaustaviti vrednovanje na prvom entitetu koji
+omogućuje vrednovanje centara poduzeća. **Ako je prisutan**, ***FluentisERP*** će primijeniti prioritet za vrednovanje svih mogućih dimenzija koje su postavljene u različitim izvorima (konto, artikl, skladište, dobavljač).
 
-Nella procedura ***Valorizzazione DDT di acquisto*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+U postupku ***Kreiranja računa iz prijema robe*** dostupan je u tabu Parametar flag za ***Preračunavanje centara troška/profita***, koji postavlja ponovni izračun analitike prema parametrima modula odredišta.
 
-Nella procedura ***Valorizzazione DDT di acquisto e di rientro*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+U postupku ***Valorizacije primke*** dostupan je u tabu Parametar flag za ***Preračunavanje centara troška/profita***, koji postavlja ponovni izračun analitike prema parametrima modula odredišta.
 
-## Area vendite
-Nell'area vendite le configurazioni sono disponibili per gli Ordini clienti, le Bolle di vendita e le Fatture di vendita.
+U postupku ***Valorizacije primke i povrata*** dostupan je u tabu Parametar flag za ***Preračunavanje centara troška/profita***, koji postavlja ponovni izračun analitike prema parametrima modula odredišta.
 
-### Offerte di vendita
+## Područje prodaje
+U području prodaje, konfiguracije su dostupne za narudžbe kupaca, otpremnice i izlazne fakture.
 
-### Ordini clienti
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Ponude
 
-### Bolle di vendita
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Narudžbe kupaca
+U parametrima modula, u kartici *Analitički*, postoji mogućnost definiranja prioriteta vrednovanja centara između:
+    - *Tip prometa* prema kontu u kontnom planu povezanim s prihodima od nabave artikla
+    - *Šifrarnik artikala* prema odabranom artiklu
+    - *Šifrarnik dobavljača* prema dobavljaču na narudžbi
+    - *Skladište* prema skladištu povezanim s linijom artikla
+Također su prisutni sljedeći flagovi:
+- *Procjena prioriteta po svakoj dimenziji*: flag je dostupan samo za poduzeća s aktiviranim *kontrolingom*. Ako **nije** prisutan, ***FluentisERP*** će primijeniti prioritet pretrage i zaustaviti vrednovanje na prvom entitetu koji
+omogućuje vrednovanje centara poduzeća. **Ako je prisutan**, ***FluentisERP*** će primijeniti prioritet za vrednovanje svih mogućih dimenzija koje su postavljene u različitim izvorima (konto, artikl, skladište, dobavljač).
 
-### Fatture di vendita
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili [*dimensioni*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Otpremnica
+U parametrima modula, u kartici *Analitički*, postoji mogućnost definiranja prioriteta vrednovanja centara između:
+    - *Tip prometa* prema kontu u kontnom planu povezanim s prihodima od nabave artikla
+    - *Šifrarnik artikala* prema odabranom artiklu
+    - *Šifrarnik dobavljača* prema dobavljaču na narudžbi
+    - *Skladište* prema skladištu povezanim s linijom artikla
+Također su prisutni sljedeći flagovi:
+- *Procjena prioriteta po svakoj dimenziji*: flag je dostupan samo za poduzeća s aktiviranim *kontrolingom*. Ako **nije** prisutan, ***FluentisERP*** će primijeniti prioritet pretrage i zaustaviti vrednovanje na prvom entitetu koji
+omogućuje vrednovanje centara poduzeća. **Ako je prisutan**, ***FluentisERP*** će primijeniti prioritet za vrednovanje svih mogućih dimenzija koje su postavljene u različitim izvorima (konto, artikl, skladište, dobavljač).
 
-Nella procedura ***Creazione da DDT*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+### Prodajne fakture
+U parametrima modula, u kartici *Analitički*, postoji mogućnost definiranja prioriteta vrednovanja centara između:
+    - *Tip prometa* prema kontu u kontnom planu povezanim s prihodima od nabave artikla
+    - *Šifrarnik artikala* prema odabranom artiklu
+    - *Šifrarnik dobavljača* prema dobavljaču na narudžbi
+    - *Skladište* prema skladištu povezanim s linijom artikla
+Također su prisutni sljedeći flagovi:
+- *Procjena prioriteta po svakoj dimenziji*: flag je dostupan samo za poduzeća s aktiviranim *kontrolingom*. Ako **nije** prisutan, ***FluentisERP*** će primijeniti prioritet pretrage i zaustaviti vrednovanje na prvom entitetu koji
+omogućuje vrednovanje centara poduzeća. **Ako je prisutan**, ***FluentisERP*** će primijeniti prioritet za vrednovanje svih mogućih [*dimenzija*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) koje su postavljene u različitim izvorima (konto, artikl, skladište, dobavljač).
+
+U postupku ***Izrada iz otpremnice*** dostupan je u tabu Parametar flag za **Preračunavanje centara troška/profita**, koji postavlja ponovni izračun analitike prema parametrima modula odredišta.
