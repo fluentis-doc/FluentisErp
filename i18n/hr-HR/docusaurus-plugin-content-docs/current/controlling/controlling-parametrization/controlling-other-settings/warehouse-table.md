@@ -1,13 +1,13 @@
 ---
-title: Tabella Magazzini
+title: Tablica skladišta
 sidebar_position: 6
 ---
 
 
-All'interno della tabella **MAGAZZINI** abbiamo la possibilità di associare una lista di [***CENTRI DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) ad ogni magazzino.
+Unutar tablice **SKLADIŠTA** postoji mogućnost povezivanja liste [***CENTARA TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) sa svakim skladištem.
 
-In particolare, le società che **non** hanno il *Controlling* attivo avranno a disposizione una griglia dove caricare una lista di centri da valorizzare; mentre per quelle con la gestione **attiva** la griglia consentirà di associare una molteplicità di centri, anche di [*dimensioni*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) differenti, replicando sostanzialmente la logica già dettagliata nel [*Piano dei conti*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (quindi anche lasciando il centro vuoto e la sola dimensione attiva da valorizzare).
+Poduzeća koja **nemaju** aktiviran *kontroling* imat će na raspolaganju tablicu u koju se može unijeti lista centara za dodjelu; u. Za poduzeća s **aktiviranim** kontrolingom, tablica će omogućiti povezivanje više centara, čak i različitih,[*dimenzija*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) replicirajući logiku već opisanu u [*kontnom planu*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (što znači da se može ostaviti prazno polje za centar i aktivirati samo određena dimenzija za dodjelu).
 
-:::tip Nota
-Il centro di profitto è visibile per retrocompatibilità, nelle società con il *Controlling* attivo si consiglia di sostituire i centri di profitto con una dimensione specifica da valorizzare nei centri aziendali
+:::tip NAPOMENA
+Centar profita je vidljiv, ali u poduzećima s aktiviranim *kontrolingom* preporučuje se zamjena centara profita specifičnom dimenzijom koja će se koristiti za dodjelu u centrima poduzeća.
 :::
