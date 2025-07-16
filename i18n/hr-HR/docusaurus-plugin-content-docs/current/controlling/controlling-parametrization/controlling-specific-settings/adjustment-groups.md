@@ -1,5 +1,5 @@
 ---
-title: Gruppi di conguaglio
+title: Grupe ravnoteže
 sidebar_position: 12
 ---
 
