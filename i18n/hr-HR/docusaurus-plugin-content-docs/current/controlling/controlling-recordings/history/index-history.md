@@ -1,34 +1,34 @@
 ---
-title: Storico indici
+title: Povijest indeksa
 sidebar_position: 4
 ---
 
-Lo storico indici è il punto dove troviamo tutti i dati storici delle nostre tariffe di costo, che otterremo dal rapporto tra i totali dei numeratori e i denominatori. La griglia infatti presenta gli importi, non direttamente l'indice del singolo periodo
+Povijest indeksa prikazuje sve povijesne podatke troškova, koji se dobivaju iz omjera između ukupnih vrijednosti brojitelja i nazivnika. U tablici su prikazani iznosi, ali ne i izračunati indeks za pojedino razdoblje
 
-:::tip Nota
-Quando poi utilizziamo gli indici per i cost driver di ribaltamento, prenderemo il singolo periodo per i driver della *Dimensione* direzionale piuttosto che un indice elaborato magari dalle somme dei numeratori e denominatori degli ultimi dodici mesi quando siamo in un driver per la *dimensione* progetti/commesse
+:::tip NAPOMENA
+Prilikom korištenja indeksa za nositelje troškova raspodjele, koristi se pojedinačno razdoblje za nositelje troškova *dimenzije* upravljanja, dok se kod nositelja troškova za projekte/narudžbe može koristiti indeks izračunat zbrojem brojitelja i nazivnika iz posljednjih dvanaest mjeseci.
 :::
 
-In particolare abbiamo:
+Dostupna polja:
 
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento dell'indice
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) referentnog indeksa
 
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- ***Godina*** i ***period***
 
-- il ***Valore fisso*** e il ***Valore variabile***: sono le due parti del totale costi attribuiti al centro tramite il *Modello di riclassificazione* associato al centro stesso
+- ***Fiksna vrijednost*** i ***varijabilna vrijednost***: dva dijela ukupnih troškova dodijeljenih centru putem modela reklasifikacije povezanog s centrom
 
-- le quattro [*unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) possibili per ogni centro: l'***Unità di misura fissa***, la ***Seconda unità di misura fissa***, l'***Unità di misura variabile*** e la ***Seconda unità di misura variabile***. I campi saranno valorizzati sugli indici fisici e a seconda delle impostazioni del singolo centro
+- Četiri moguće [*jedinice mjere*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) za svaki centar: ***Fiksna mjerna jedinica***, ***Druga fiksna jedinica mjere***, ***Promijenjiva mjerna jedinica*** i ***Druga promijenjiva jedinica mjere***. Polja su popunjena na temelju fizičkih indeksa i prema postavkama pojedinog centra.
 
-- la ***Prima unità di misura quantità fissa*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice fisso, è il denominatore per l'indice fisso per la prima unità di misura
+- ***Prva jedinica mjere za fiksnu količinu*** - brojnik za fiksni indeks prve jedinice mjere
 
-- la ***Prima unità di misura quantità variabile*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice variabile della prima unità di misura
+- ***Prva mjerna jedinica za promijenjivu količinu*** – brojnik za varijabilni indeks prve jedinice mjere
 
-- la ***Seconda unità di misura quantità fissa*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice fisso della seconda unità di misura
+- ***Druga mjerna jedinica za fiksnu količinu*** - brojnik za fiksni indeks druge jedinice mjere
 
-- la ***Seconda unità di misura quantità variabile*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice variabile della seconda unità di misura
+- ***Druga jedinica mjere za promijenivu količinu*** – brojnik za varijabilni indeks druge jedinice mjere
 
-- il ***Denominatore***, valorizzato per gli indici percentuali
+- ***Nazivnik*** – koristi se za postotne indekse
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.
