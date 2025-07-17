@@ -3,6 +3,26 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0118- 17/07/2025
+
+> - FI - Importazione registrazioni da DocFinance, revisione assegnazione data fine competenza economica (#TT02815/25) 
+> - FI - Registrazioni contabili: risolto il problema relativo alla moltiplicazione delle righe degli estremi IVA nei registri contabili di vendita cespiti (Rif. TT01371/25). 
+> - FI - revisione contabilizzazione da acquisti/vendite per assegnazione, in tab intrastat della registrazione, della nazione del codice iso partita iva; modifica dell’inserimento manuale in griglia intrastat. (#TT01817/25) 
+> - FI - stampa registri iva - corretta anomalia in caso di iva registrata nel periodo successivo (#TT02906/25) 
+> - MES - Risolto errore che, nel caso di cancellazione di un Ordine di Produzione associato a una riga articolo di un Ordine di Conto Lavoro, comportava l’eliminazione dell’intero Ordine di Conto Lavoro (#TT01078/25). 
+> - PF - Rollback 545 PF_RollbackContReg ( TT02623/25) 
+> - PR - creazione file Sepa, modificata gestione caratteri speciali ‘-‘ (#TT02214/25) 
+> - PR - generazione file bonifici Sepa, sostituzione automatica caratteri invalidi (#TT02214/25) 
+> - PR - Vendor Payment - manage exchange rate differences ( TT02563/25) 
+> - SCM - Corretto errore nel Carico a magazzino di DDT in valuta estera che non convertiva il valore delle spese ripartite inserite nel riepilogo del DDT (#TT02447/25). 
+> - SCM - vengono usati i dettagli categoria sconti per validare l'inserimento delle categorie sconti (00607/25) 
+> - SCS - Negli Ordini di Conto Lavoro è ora possibile associare un Ordine di Produzione alla riga articolo solo se viene specificata anche la fase (#TT01078/25). 
+> - SD - Abilitata la cancellazione di Fatture di Vendita contenenti ordini che non rispettano la progressione data/numero (#TT02342/25) 
+> - SD - Fix SalesInvoice-create SDI, null extra data description problem(#TT02448/25) 
+> - SH - Anagrafica cliente fornitore corretto errore inserimento agente (#TT02353/25) 
+> - WM - Risolto blocco in fase di cancellazione articolo con ricalcolo costi già eseguito (#TT02818/25) 
+
+
 ### Patch 545.1-0117- 09/05/2025
 
 > - SD - Corretto l’aggiornamento delle quantità residue durante l’evasione DDT da ricerca Ordini Clienti, in presenza di articoli gestiti a lotti e numeri seriali (#TT00900/25)
