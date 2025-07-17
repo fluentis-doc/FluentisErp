@@ -1,28 +1,28 @@
 ---
-title: Storico ammortamenti
+title: Povijest amortizacije
 sidebar_position: 2
 ---
 
-La maschera dello ***Storico ammortamenti*** consente di visualizzare il dettaglio, cespite per cespite, del risultato di elaborazione degli ammortamenti tecnici specifici del *Controlling*. Nella maschera abbiamo visibilità dei seguenti campi:
+***Povijest amortizacije*** omogućuje pregled detalja obračuna tehničke amortizacije specifične za *kontroling*, prikazane po pojedinačnom osnovnom sredstvu. Vidljiva su sljedeća polja:
 
-- L'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- Referentno [***područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) 
 
-- Il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di attribuzione dell'ammortamento
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) kojem je amortizacija pripisana
 
-- L'***Anno*** e il ***Periodo*** di riferimento
+- Referentna ***godina*** i ***period*** 
 
-- La ***Percentuale*** utilizzata, se il calcolo è a percentuale
+- ***Postotak*** korišten ako je obračun temeljen na postotku
 
-- La ***Quantità*** del periodo, se il calcolo è a quantità
+- ***Količina*** ako je obračun temeljen na količini
 
-- L'***Importo*** dell'ammortamento
+- ***Iznos*** amortizacije
 
-- Il ***Costo unitario***, se il calcolo è a quantità
+- ***Trošak po jedinici***, ako je obračun temeljen na količini
 
-- Il ***Sottoconto*** di costo utilizzato
+- ***Konto i podkonto troška*** 
 
-- i riferimenti al ***Numero*** e ***Descrizione*** del cespite di riga
+- Referentni ***broj*** i ***opis osnovnog sredstva***  na koje se redak odnosi
 
-A partite da questo dettaglio calcolato dalla form di ***Elaborazione periodi***, ***FluentisERP*** avrà creato una ***Registrazione extracontabile di area*** che presenterà l'analitica valorizzata dai totali di conto/centro e range di date di competenza di questa origine dati.
+Na temelju ovih podataka, izračunatih putem **Obrade perioda**, **FluentisERP** kreira **posebno knjiženje područja**, koje sadrži analitičke podatke valorizirane prema ukupnim vrijednostima **konta/centra** i relevantnom rasponu datuma.
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.
