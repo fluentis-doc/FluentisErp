@@ -1,44 +1,40 @@
 ---
-title: Lista prelievo materiali
+title: Lista ieşiri materiale
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La **lista prelievo materiali** di Fluentis è uno strumento fondamentale per la gestione efficace dei materiali destinati agli ordini di produzione. Consente di creare e gestire elenchi dettagliati di materiali da prelevare, collegando direttamente l'operazione alle specifiche esigenze di produzione. Questa funzione è molto utilizzata per creare un documento di picking per gestire efficacemente il trasferimento dei materiali (ad esempio nel WIP), semplificando il processo logistico e garantendo una tracciabilità accurata.
+:::important Utilizare
+**Lista ieşiri materiale** este un instrument fundamental pentru gestionarea eficientă a materialelor destinate ordinelor de producție. Permite crearea și gestionarea listelor detaliate de materiale care urmează să fie prelevate, conectând direct operațiunea la cerințele specifice ale producției. Această funcție este foarte utilizată pentru a crea un dispoziție de livrare pentru a gestiona eficient transferul de materiale (de exemplu în WIP), simplificând procesul logistic și asigurând o trasabilitate precisă.
 :::
 
-La lista prelievo materiali consente di creare e gestire le liste di prelievo dei materiali per gli ordini di produzione che ne prevedono l'utilizzo.
+Form-ul permite căutarea ordinelor de producție aflate în stadiul lansat și executiv, pentru a efectua două operațiuni diferite:  
+- prima, prin intermediul butonului **Caută materiale**, permite efectuarea descărcării tuturor materialelor conținute în ordinul de producție care, în **Parametri MRP** ai articolului, au ca **Tip de ieşire** valoarea **Cu listă**. Aceste materiale sunt consumate în momentul în care se apasă butonul **Creează mișcări**, care în acest caz, creează mișcarea  de descărcare din gestiune.
 
-È possibile ricercare tra gli ordini di produzione, in stato lanciato ed esecutivo, quello di interesse per poi effettuare due operazioni differenti.
+- a doua operațiune permite mutarea materialelor din gestiunea în care sunt stocate, în gestiunea WIP, de exemplu. Acest lucru se realizează utilizând butonul **Caută materiale dispoziție de livrare**, care permite crearea unor dispoziții de livrare. Așadar nu a unor înregistrări propriu-zise, ci documente de mutare a materialelor ce pot fi vizualizate în fereastra **Dispoziție de livrare** din aria logistică.              
+În acest caz, butonul **Creează mișcări** generează dispoziția de livrare, în care, pentru materialele ce au *Tip de ieșire cu listă* vor fi setate șablonul și gestiunea deja prezente în rândul materialelor corespunzătoare din ordinul de producție pentru a putea fi descărcate definitiv; în schimb, pentru materialele cu *Tip de ieșire manual* vor fi stabilite șablonul și gestiunea setate în *Tip dispoziție de livrare* utilizat. Materialele mutate în gestiunea WIP vor fi apoi descărcate în declarațiile de producție.            
+Înregistrarea va fi făcută ulterior prin procedura dedicată descărcării dispoziției de livrare.
 
-La prima, tramite il pulsante **Cerca materiali**, permette di effettuare lo scarico di tutti i materiali contenuti nell’ordine di produzione che hanno come **tipo prelievo**, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell’articolo, il valore **Con lista**. Questi materiali vengono consumati nel momento in cui viene premuto il pulsante crea movimenti, che in questo caso, crea il movimento di scarico di magazzino.            
+## Filtru
 
-La seconda operazione permette di spostare i materiali dal magazzino in cui sono stoccati, al magazzino WIP ad esempio. Questo si verifica utilizzando il pulsante **Cerca materiali picking**; il quale permette di creare dei documenti di picking, quindi non delle vere e proprie registrazioni, ma dei documenti di spostamento dei materiali che si potranno visualizzare nella finestra Picking presente nell'area logistica.                
-In questo caso, il pulsante **Crea movimenti** genera il documento di picking, nel quale per i materiali che sono con *Tipo prelievo con lista* verranno settate la causale e il magazzino che sono già presenti nella riga dei materiali dell'ordine di produzione per poter essere scaricati definitivamente; mentre, per i materiali con *Tipo prelievo Manuale* varranno settate la causale e il magazzino impostati nel “Tipo picking” utilizzato.  I materiali spostati nel magazzino WIP verranno poi scaricati all’interno delle dichiarazioni di produzione.            
-La registrazione verrà fatta in un secondo momento tramite la procedura dedicata allo scarico del picking.        
+În acest tab este posibilă căutarea dispozițiilor de livrare dorite pe baza filtrelor introduse.
 
-## Filtro
+#### Butoane specifice
 
-In questo tab è possibile ricercare i picking desiderati in base ai filtri inseriti.
+> **Caută materiale**: permite crearea directă a înregistrărilor de gestiune.  
+Dacă opțiunea **Mov.** este activă, înseamnă că pentru acel material s-a ales tipul de ieșire cu listă în *Parametri MRP* ai articolului: dacă nu este activă înseamnă că pentru acel material s-a optat pentru tipul de ieșire manual. (Pentru detalii suplimentare despre semnificația acestui tip de ieșire, consultați articolul despre [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului).      
+> **Caută materiale dispoziție de livrare**: permite crearea dispozițiilor de livrare, deci nu a unor înregistrări propriu-zise, ci documente de mutare a materialelor care pot fi vizualizate în fereastra [Dispoziții de livrare](/docs/logistics/picking/search-picking) din aria logistică. În acest caz, înregistrarea se va face ulterior, după un al doilea control.             
+> **Creează mișcări**: permite, după ce au fost selectate materialele pe baza tipului de căutare efectuat, să se creeze mișcările de gestiune (descărcarea) sau dispoziția de livrare.      
+În cazul în care se creează dispoziția de livrare, pentru materialele care au *Tip de ieșire cu listă* vor fi setate șablonul și gestiunea deja prezente în rândul materialelor ordinului de producție. Iar pentru materialele cu *Tip de ieșire manual* vor fi setate șablonul și gestiunea din *Tipul de dispoziție de livrare* utilizat.
 
-*Pulsanti specifici*:
+## Restaurare înregistrare
 
-> **Cerca materiali**: ricercando i materiali tramite questo pulsante, sarà poi possibile creare direttamente le registrazioni di magazzino. Tra tutti i dati riportati sotto riguardanti il dettaglio di ogni materiale, va sottolineata l'importanza del flag Mov. che dove attivo indica che per quel materiale è stato scelto il tipo di prelievo con lista nei Parametri MRP dell'articolo, mentre se il flag non è attivo significa che per quel materiale si è optato per il tipo di prelievo manuale. (Per maggiori dettagli sul significato di questo tipo di prelievi si rimanda all'articolo relativo ai [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo).      
-> **Cerca materiali picking**: ricercando i materiali tramite questo pulsante, sarà poi possibile creare dei documenti di picking, quindi non delle vere e proprie registrazioni, ma dei documenti di spostamento dei materiali che si potranno visualizzare nella finestra [Picking](/docs/logistics/picking/search-picking) presente nell'area logistica. In questo caso la registrazione verrà fatta in un secondo momento, dopo un secondo controllo.             
-> **Crea movimenti**: permette, dopo aver selezionato i materiali in base al tipo di ricerca effettuata, di creare i movimenti di magazzino (lo scarico) oppure il documento di picking.      
-Nel caso in cui venga creato il picking, per i materiali che sono con *Tipo prelievo Con lista* verranno settati la causale e il magazzino che sono già presenti nella riga dei materiali dell'ordine di produzione; mentre, per i materiali con *Tipo prelievo Manuale* varranno settati la causale e il magazzino impostati nel *Tipo picking* del *Tipo picking* utilizzato.
+În acest tab este posibilă reinstaurarea mișcărilor create anterior.            
+Selectând un rând, se pot vizualiza înregistrările și dispozițiile de livrare create, în tab-urile **Înregistrări ieşiri generate** și **Dispoziții de livrare generate din ieșiri**.  
+Prin intermediul butonului **Șterge lista de ieşiri** este posibilă reinstaurarea simultană atât a mișcărilor, cât și a dispozițiilor de livrare create.  
+În timp ce, cu butoanele **Șterge înregistrări** și **Șterge dispoziții de livrare**, utilizatorul poate alege să reinstaureze doar înregistrarea sau doar dispoziția de livrare selectată.
 
-## Ripristino registrazione
+#### Butoane specifice
 
-In questo tab è possibile ripristinare le movimentazioni create in precedenza.           
-Selezionando una riga è possibile visualizzare le registrazioni e i picking creati, rispettivamente nei tab **Registrazioni di prelievo generate** e **Picking generati da prelievo**.
-Tramite il pulsante **Cancella lista prelievo**, è possibile ripristinare contemporaneamente i sia i movimenti che i picking creati.
-Mentre con i pulsanti **Cancella registrazioni** e **Cancella picking**, l’utente può scegliere di ripristinare solamente la registrazione o il picking selezionato.
-
-*Pulsanti specifici*:
-
-> **Cancella lista prelievo**: permettei di ripristinare contemporaneamente i sia i movimenti che i picking creati.         
-> **Cancella registrazioni**: permettei di ripristinare la registrazione di magazzino selezionata nel tab **Registrazioni di prelievo generate**.        
-> **Cancella picking**: permettei di ripristinare il picking selezionato nel tab **Picking generati da prelievo**.      
-
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Șterge lista de ieşiri**: permite reinstaurarea simultană atât a mișcărilor, cât și a dispozițiilor de livrare create.         
+> **Șterge înregistrări**: permite reinstaurarea înregistrării de gestiune selectate în tab-ul **Înregistrări ieşiri generate**.        
+> **Șterge dispoziții de livrare**: permite reinstaurarea dispoziției de livrare selectat în tab-ul **Dispoziții de livrare generate din ieșiri**. 
