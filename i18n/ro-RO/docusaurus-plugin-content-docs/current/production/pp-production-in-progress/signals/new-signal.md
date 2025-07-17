@@ -1,227 +1,241 @@
 ---
-title: Nuova dichiarazione
+title: Declarație nouă
 sidebar_position: 2
 ---
 
-Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fluentis [MES](/docs/production/mes/mes-intro), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
+În mod normal, *Declarațiile de producție* sunt generate automat cu Fluentis [MES](/docs/production/mes/mes-intro), însă utilizatorul are posibilitatea să le genereze manual folosind acest form.
 
-All'apertura della form è necessario inserire l'ordine di produzione e la relativa fase/sottofase che si vuole dichiarare, in questo modo vengono caricati in automatico i realtivi dati nella parte superiore della form.
+Pentru a crea o declarație nouă este necesară inserarea ordinului de producție cu indicarea anului, numărului și lotului, fie manual, fie prin intermediul help-ului, precum și faza și subfaza de declarat, tot manual sau prin intermediul help-ului.  
+Astfel se încarcă automat datele fazei selectate în partea superioară a formului, unde putem vedea informațiile referitoare la tipul ordinului de producție, comanda cu anul, numărul și tipul, proiectul asociat, centrul de lucru și mașina pe care se execută faza, data de finalizare estimată a lucrării, precum și informațiile articolului cu varianta sa, dacă există.  
+Se inserează cantitatea totală de produs, cantitatea produsă care este egală cu suma cantităților declarate de ultima fază productivă și care se poate înregistra a ciclului (corespunzătoare, deci, produsului finit), și cantitatea fazei produse, care rezultă din suma cantităților prezente în declarația fazei respective.
 
-Nella griglia centrale vanno inserite le righe della dichiarazione di produzione.
-Il primo dato da inserire è lo *Stato della dichiarazione* che può assumere i seguenti valori:
+Câmpul **barcode** din antet este utilizat pentru introducerea ordinului de producție sau a fazei care urmează să fie declarată.  
+Barcode-ul trebuie să fie compus dintr-un identificator fix pentru recunoașterea ordinului de producție (707) sau a fazei unui ordin de producție(718), caracterul de separare "-" și identificatorul ordinului de producție ori al fazei pe care dorim să o declarăm.
 
-- *Apertura*: permette di creare una segnalazione di produzione di apertura;    
-- *Sospensione*: permette di creare una segnalazione di produzione di sospensione;    
-- *Ripresa*: permette di creare una segnalazione di produzione di ripresa; va inserito solo dopo una *Sospensione*;          
-- *Avanzamento*: permette di creare una segnalazione di produzione di avanzamento;    
-- *Chiusura*: permette di creare una segnalazione di produzione di chiusura;    
+Exemplu: 707-1234 sau 718-98765
 
-Ogni dichiarazione di produzione deve avere come prima riga una dichiarazione di apertura che determina il momento in cui inizia la lavorazione.              
-Questa può essere seguita da un avanzamento o direttamente da una fase di chiusura a seconda dei casi. La differenza sostanziale sta nel fatto che la chiusura non permette di inserire ulteriori righe di dichiarazione, mentre l'avanzamento si.         
-Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una di ripresa, nel caso in cui sia necesario fermare la produzione per qualche motivo.
+În tabelul central se introduc liniile declarației de producție.  
+Primul lucru de introdus este *Starea declarației*, care poate avea următoarele valori:
 
-*Pulsante specifico*:  
+- *Deschidere*: permite crearea unei declarații de producție de deschidere;  
+- *Întrerupere*: permite crearea unei declarații de producție de înrerupere;  
+- *Reluare*: permite crearea unei declarații de producție de reluare; se introduce doar după o *Întrerupere*;  
+- *Avansare*: permite crearea unei declarații de producție de progres;  
+- *Închidere*: permite crearea unei declarații de producție de închidere;
 
-> **Nuova dichiarazione**: permette di inserire una nuova riga della dichiarazione;          
-> **Nuova sospensione/ripresa**: permette di inserire contemporaneamente un riga di sospensione e una riga di ripresa indicando nel pop-up data ed ora per ciascuna; il pulsante si attiva solo se l'ultimo stato della dichiarazione è di *Apertura* o *Avanzamento*;                 
-> **Ricalcola tempo macchina**: permette di ricalcolare il tempo macchina di tutte le righe della dichiarazione;          
-> **Ricalcola tempo uomo**: permette di ricalcolare il tempo di manodopera di tutte le righe della dichiarazione;          
-> **Inserisci dichiarazione**: permette di inserire una nuova riga di dichiarazione successiva a quelle già inserite;         
-> **Cancella dichiarazione**: permette di cancellare la riga di dichiarazione selezionata;             
-> **Gestione UDC**: permette di aprire la *Gestione unità di carico* con filtrata l'unità di carico relativa alla riga delle dichiarazione selezionata;          
-> **Crea UDC**: permette di creare un'unità di carico relativa alla riga delle dichiarazione selezionata. Per crearla è necessario prima inserire manualmente *Tipo unità di carico* e il *Dipendente*;
-> **Registrazione dichiarazione**: permette di creare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata;          
-> **Ripristino dichiarazione**: permette di annullare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata.                                     
+Fiecare declarație de producție trebuie să aibă ca prim rând o declarație de deschidere, care determină momentul în care începe prelucrarea.  
+Aceasta poate fi urmată de avansare sau direct de o fază de închidere, în funcție de caz. Diferența esențială este că închiderea nu permite introducerea altor rânduri de declarație, în timp ce *Avansare* da.  
+De asemenea, este posibilă introducerea declarațiilor de înrerupere, urmate de o declarație de reluare, în cazul în care este necesară oprirea producției dintr-un anumit motiv.
 
-*Campi specifici*: 
+#### Butoane specifice
 
-**Registrato**: indica che la riga della dichiarazione è stata registrata ed è stato creato il relativo movimento di magazzino;        
-**Data**: indica la data di inizio relativa alla riga della dichiarazione;         
-**Ora**: indica l'ora di inizio relativa alla riga della dichiarazione;         
-**Numero**: è un numero progressivo che viene attribuito alle singolo righe della dichiarazione (parte sempre da 1);        
-**Stato dichiarazione**: permette di definire lo stato relativo alla riga della dichiarazione. Può assumere i seguenti valori: *Apertura*, *Sospensione*, *Ripresa*, *Avanzamento* o *Chiusura*;        
-**Causale di sospensione**: permette di indicare la causale di sospensione da utilizzare per la relativa riga di dichiarazione. Si abilità solo se lo *Stato dichiarazione* è di tipo *Sospensione*;     
-**Lotto**: permette di inserire manualmente il numero di lotto relativo alla quantità prodotta;    
-**Quantità prodotta**: indica la quantità prodotta relativa alla riga della dichiarazione;         
-**Unità di misura alternativa**: indica l'unità di misura laternativa utilizzata;     
-**Quantità alternativa**: indica la quantità prodotta nell'unità di misura laternativa utilizzata;       
-**Magazzino versamento**: indica il magazzino di versamento della quantità prodotta;         
-**Causale versamento**: indica la causale di versamento utilizzata per la quantità prodotta;         
-**Versamento ubicazione**: indica l'ubicazione di versamento della quantità prodotta;         
-**Quantità scartata**: indica la quantità scartata relativa alla riga della dichiarazione;        
-**Magazzino di scarto**: indica il magazzino di versamento della quantità scartata;      
-**Causale di scarto**: indica la causale di versamento utilizzata per la quantità scartata;       
-**Scarto ubicazione**: indica l'ubicazione di versamento della quantità scartata;        
-**Macchine**: indica il numero delle macchine indica la descrizione della causale di versamento della quantità prodotta;             
-**Numero macchine**: indica il numero delle macchine utilizzata relativo alla riga della dichiarazione;        
-**Gruppi manodopera**: indica il codice del gruppo manodopera utilizzato relativo alla riga della dichiarazione;         
-**Numero operai**: indica il numero di operai utilizzati relativo alla riga della dichiarazione;        
-**Sito produttivo**: indica il codice del sito produttivo relativo alla riga della dichiarazione;     
-**Minuti macchina**: indica il tempo macchina in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;           
-**Minuti manodopera**: indica il tempo manodopera in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;              
-**Minuti attrezzaggio**: indica il tempo di attrezzaggio in minuti relativo alla riga della dichiarazione; viene indicato manualmente;           
-**Dipendente**: indica il codice dell'utente che sta effettuando la dichiarazione;             
-**Cognome**: indica il cognome dell'utente che sta effettuando la dichiarazione;            
-**Nome**: indica il nome dell'utente che sta effettuando la dichiarazione;           
-**Unità di carico**: indica il numero dell'unità di carico, composto da anno, numero ordine di produzione e un progressivo;                
-**Tipo unità di carico**: indica il tipo di unità di carico;     
-**Descrizione tipo unità di carico**: indica la descrizione del tipo unità di carico;         
-**Numero unità di carico**: indica il numero dell'unità di carico;    
-**Unità di carico di scarico**: **Work in progress**       
-**Altezza**: indica l'altezza dell'unità di carico;    
-**Larghezza**: indica la larghezza dell'unità di carico;    
-**Profondità**: indica la profondità dell'unità di carico;    
-**Descrizione causale di sospensione**: indica la descrizione della *Causale di sospensione* utilizzata nella riga della dichiarazione;                       
-**Descrizione magazzino di versamento**: indica la descrizione del magazzino di versamento della quantità prodotta;         
-**Descrizione causale di versamento**: indica la descrizione della causale di versamento della quantità prodotta;      
-**Descrizione magazzino di scarto**: indica la descrizione del magazzino di versamento della quantità scartata;      
-**Descrizione causale di scarto**: indica la descrizione della causale di versamento della quantità scartata;      
-**Descrizione macchina**: indica la descrizione della macchina utilizzata;            
-**Descrizione gruppo manodopera**: indica la descrizione del gruppo manodopera utilizzato;              
-**Descrizione sito produzione**: indica la descrizione del sito produttivo utilizzato.
+> **Salvează**: permite salvarea modificărilor efectuate;  
+> **Declarație de producție nouă**: permite inserarea unui nou rând în declarație;  
+> **Recalculează timp mașină**: permite recalcularea timpului de funcționare a mașinii pentru toate rândurile declarației;  
+> **Recalculează timp operator**: permite recalcularea timpului de manoperă pentru toate rândurile declarației;  
+> **Inserează declarații**: permite introducerea unui nou rând de declarație, ulterior celor deja introduse;  
+> **Nouă întrerupere/reluare**: permite inserarea simultană a unui rând de înrerupere și a unui rând de reluare, indicând în pop-up data și ora pentru fiecare; butonul este activ numai dacă ultima stare a declarației este *Deschidere (Apertura)* sau *Avansare*;  
+> **Șterge declarații (Cancella dichiarazioni)**: permite ștergerea rândului de declarație selectat;  
+> **Deschide UDC (Apri UDC)**: permite deschiderea gestiunii unității de încărcare (Gestione unità di carico) cu filtrul corespunzător unității de încărcare aferente rândului declarației selectate;  
+> **Creează UDC (Crea UDC)**: permite crearea unei unități de încărcare aferente rândului declarației selectate. Pentru a o crea, este necesar să fie introduse manual *Tipul unității de încărcare (Tipo unità di carico)* și *Angajatul (Dipendente)*;  
+> **Înregistrare declarații (Registrazione dichiarazioni)**: permite crearea înregistrării (registrazione) mișcării (movimento) de gestiune (magazzino) pentru rândul de declarație selectat;  
+> **Restabilire declarații (Ripristino dichiarazioni)**: permite anularea înregistrării (registrazione) mișcării (movimento) de gestiune (magazzino) pentru rândul de declarație selectat.
 
-La parte inferiore della form si compone di una serie di tab relativi alla riga della dichiarazione selezionata.
+*Câmpuri specifice*:  
 
-## Materiali
+**Înregistrat (Registrato)**: indică faptul că rândul declarației a fost înregistrat și a fost creată mișcarea (movimento) corespunzătoare de gestiune (magazzino);  
+**Data**: indică data de început aferentă rândului declarației;  
+**Ora**: indică ora de început aferentă rândului declarației;  
+**Număr (Numero)**: este un număr progresiv atribuit fiecărui rând al declarației (pornește întotdeauna de la 1);  
+**Stare declarație (Stato dichiarazione)**: definește starea rândului declarației. Poate fi: *Deschidere (Apertura)*, *Întrerupere*, *Reluare*, *Avansare* sau *Închidere*;  
+**Cauză de înrerupere (Causale di sospensione)**: permite indicarea cauzei de înrerupere utilizate pentru rândul de declarație în cauză. Se activează numai dacă *Starea declarației* este de tip *Întrerupere*;  
+**Lot (Lotto)**: permite introducerea manuală a numărului de lot (lotto) aferent cantității produse;  
+**Cantitate produsă (Quantità prodotta)**: indică cantitatea produsă aferentă rândului declarației;  
+**Unitate de măsură alternativă (Unità di misura alternativa)**: indică unitatea de măsură alternativă utilizată;  
+**Cantitate alternativă (Quantità alternativa)**: indică cantitatea produsă în unitatea de măsură alternativă;  
+**Gestiune de vărsare (Magazzino versamento)**: indică gestiunea (magazzino) în care se varsă cantitatea produsă;  
+**Cauză de vărsare (Causale versamento)**: indică cauza (causale) de vărsare utilizată pentru cantitatea produsă;  
+**Locație de vărsare (Versamento ubicazione)**: indică locația (ubicazione) în care se varsă cantitatea produsă;  
+**Cantitate respinsă (Quantità scartata)**: indică cantitatea respinsă (scartata) aferentă rândului declarației;  
+**Gestiune de scarto (Magazzino di scarto)**: indică gestiunea (magazzino) pentru cantitatea de scarto (scarto);  
+**Cauză de scarto (Causale di scarto)**: indică cauza (causale) de scarto (scarto) utilizată pentru cantitatea respinsă;  
+**Locație de scarto (Ubicazione di scarto)**: indică locația (ubicazione) de scarto (scarto) pentru cantitatea respinsă;  
+**Defect (Difetto)**: permite introducerea defectului aferent cantității respinse. Se activează numai după ce s-a introdus o valoare mai mare de zero în câmpul **Cantitate respinsă (Quantità scartata)**;  
+**Gestiune de consum (Magazzino di consumo)**: permite specificarea gestiunii (magazzino) de consum a articolului (în antetul declarației de producție) utilizat în faza anterioară;  
+**Cauză de consum (Causale di consumo)**: permite specificarea cauzei (causale) de consum a articolului (în antetul declarației de producție) utilizat în faza anterioară;  
+**Locație de consum (Ubicazione di consumo)**: permite specificarea locației (ubicazione) de consum a articolului (în antetul declarației de producție) utilizat în faza anterioară;  
+**Mașini (Macchine)**: indică descrierea cauzei (causale) de vărsare a cantității produse;  
+**Număr mașini (Numero macchine)**: indică numărul de mașini folosit pentru rândul declarației;  
+**Grupuri de manoperă (Gruppi manodopera)**: indică codul grupului de manoperă folosit pentru rândul declarației;  
+**Număr de operatori (Numero operai)**: indică numărul de operatori folosiți pentru rândul declarației;  
+**Situl productiv (Sito produttivo)**: indică codul sitului productiv aferent rândului declarației;  
+**Timp mașină (Tempo macchina)**: indică timpul mașinilor aferent rândului declarației. Se calculează ca diferență între *data/ora* declarației actuale și cele ale declarației anterioare. (Eticheta câmpului se modifică în funcție de unitatea de măsură a timpului fazei declarate);  
+**Timp manoperă (Tempo manodopera)**: indică timpul de manoperă aferent rândului declarației. Se calculează ca diferență între *data/ora* declarației actuale și cele ale declarației anterioare. (Eticheta câmpului se modifică în funcție de unitatea de măsură a timpului fazei declarate);  
+**Timp de pregătire (Tempo attrezzaggio)**: indică timpul de pregătire aferent rândului declarației; acesta se indică manual. (Eticheta câmpului se modifică în funcție de unitatea de măsură a timpului fazei declarate);  
+**Angajat (Dipendente)**: indică codul utilizatorului care efectuează declarația;  
+**Nume de familie (Cognome)**: indică numele de familie al utilizatorului care efectuează declarația;  
+**Prenume (Nome)**: indică prenumele utilizatorului care efectuează declarația;  
+**Unitate de încărcare (Unità di carico)**: indică numărul unității de încărcare, format din an, număr comandă de producție (ordine di produzione) și un progresiv. Pentru ca unitatea de încărcare să poată fi folosită în declarațiile de producție, este necesar ca **Grupul (Gruppo)**, configurat în [Tip grup UDC (Tipo gruppo UDC)](/docs/configurations/tables/logistics/loading-unit-group-type/) al unității de încărcare, să fie de tip *Lucrare de producție (Commessa di produzione)* sau *Comandă de producție (Ordine di produzione)*;  
+**Tip unitate de încărcare (Tipo unità di carico)**: indică tipul unității de încărcare;  
+**Descriere tip unitate de încărcare (Descrizione tipo unità di carico)**: indică descrierea tipului unității de încărcare;  
+**Număr unitate de încărcare (Numero unità di carico)**: indică numărul unității de încărcare;  
+**Unitate de încărcare de scarico (Unità di carico di scarico)**: **Work in progress**;  
+**Înălțime (Altezza)**: indică înălțimea unității de încărcare;  
+**Lățime (Larghezza)**: indică lățimea unității de încărcare;  
+**Adâncime (Profondità)**: indică adâncimea unității de încărcare;  
+**Descriere cauză de înrerupere (Descrizione causale di sospensione)**: indică descrierea cauzei de înrerupere (causale di sospensione) folosite în rândul declarației;  
+**Descriere gestiune de vărsare (Descrizione magazzino di versamento)**: indică descrierea gestiunii (magazzino) de vărsare pentru cantitatea produsă;  
+**Descriere cauză de vărsare (Descrizione causale di versamento)**: indică descrierea cauzei (causale) de vărsare pentru cantitatea produsă;  
+**Descriere gestiune de scarto (Descrizione magazzino di scarto)**: indică descrierea gestiunii (magazzino) aferente cantității de scarto (scarto);  
+**Descriere cauză de scarto (Descrizione causale di scarto)**: indică descrierea cauzei (causale) de scarto (scarto);  
+**Descriere mașină (Descrizione macchina)**: indică descrierea mașinii utilizate;  
+**Descriere grup manoperă (Descrizione gruppo manodopera)**: indică descrierea grupului de manoperă utilizat;  
+**Descriere site producție (Descrizione sito produzione)**: indică descrierea sitului productiv utilizat.
 
-In questo tab vengono riportati automaticamente i materiali utilizzati nella fase per la realizzazione dell'articolo da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali in base alle necessità.      
-Ovviamente, per far si che i materiali siano riporatati automaticamente, la fase deve essere l'ultima di tipo *Produttivo* e *Movimentabile* presente nel ciclo; nel caso in cui non fosse l'ultima, deve comunque essere di tipo *Produttivo* e *Movimentabile* ed ad essa devono essere stati assegnati dei materiali direttamente.  
+Partea inferioară a formului se compune dintr-o serie de taburi aferente rândului declarației selectate.
 
-*Campi specifici*: 
+## Materiale (Materiali)
 
-**Unità di carico materiale**: permette di indicare l'unità di carico da cui prelevo il materiale;             
-**Classe**: indica la classe dell'articolo;         
-**Codice articolo**: indica il codice dell'articolo;         
-**Variante**: indica il codice variante dell'articolo;         
-**Unità di misura**: indica l'unità di misura principale del materiale;        
-**Quantità consumata**: indica la quantità utilizzata del materiale;         
-**Unità di misura alternativa**: indica l'unità di misura alternativa del materiale;        
-**Quantità alternativa**: indica la quantità utilizzata del materiale nell'unità di misura alternativa;        
-**Magazzino consumo**: indica il codice del magazzino di consumo del materiale;         
-**Causale consumo**: indica il codice della causale di consumo del materiale;         
-**Quantità scartata**: indica la quantità scartata del materiale;     
-**Magazzino di scarto**: indica il codice del magazzino di scarto del materiale;     
-**Causale di scarco**: indica il codice della casuale di scarto del materiale;     
-**Descrizione articolo**: indica la descrizione dell'articolo;        
-**Descrizione variante**: indica la descrizione della variante dell'articolo;        
-**Descrizione magazzino consumo**: indica la descrizione del magazzino di consumo del materiale;        
-**Descrizione causale consumo**: indica la descrizione della causale di consumo del materiale;        
-**Descrizione magazzino di scarto**: indica la descrizione del magazzino di scarto del materiale;        
-**Descrizione causale di scarto**: indica la descrizione della causale di scarto del materiale;        
-**Priorità**: indica la priorità con la quale vengono visualizzati i materiali,        
+În acest tab sunt afișate automat materialele utilizate în faza pentru realizarea articolului de produs, dar utilizatorul poate modifica datele și/sau adăuga materiale suplimentare, în funcție de necesități.  
+Desigur, pentru ca materialele să fie afișate automat, faza trebuie să fie ultima de tip *Productiv (Produttivo)* și *Transportabilă (Movimentabile)* din ciclu; dacă nu este ultima, tot trebuie să fie de tip *Productiv (Produttivo)* și *Transportabilă (Movimentabile)* și să-i fie asociate direct materiale.
 
-Inoltre, nella parte sottostante è possibile inserire i lotti e anche i serial number nelle relative griglie.
+*Câmpuri specifice*:  
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+**Înregistrat (Registrato)**: indică faptul că materialul aferent rândului declarației selectate a fost înregistrat și a fost creată mișcarea (movimento) de gestiune (magazzino) corespunzătoare;  
+**Unitate de încărcare material (Unità di carico materiale)**: permite indicarea unității de încărcare din care preluăm materialul;  
+**Clasă (Classe)**: indică clasa articolului;  
+**Cod articol (Codice articolo)**: indică codul articolului;  
+**Variantă (Variante)**: indică codul variantei articolului;  
+**Unitate de măsură (Unità di misura)**: indică unitatea de măsură principală pentru material;  
+**Cantitate prelevată (Quantità prelevata)**: indică cantitatea ridicată prin procedura [Lista de ridicare materiale (Lista prelievo materiali)](/docs/production/pp-production-in-progress/picking-materials-list);  
+**Cantitate consumată (Quantità consumata)**: indică cantitatea utilizată de material;  
+**Unitate de măsură alternativă (Unità di misura alternativa)**: indică unitatea de măsură alternativă a materialului;  
+**Cantitate alternativă (Quantità alternativa)**: indică cantitatea de material utilizată în unitatea de măsură alternativă;  
+**Gestiune de consum (Magazzino consumo)**: indică codul gestiunii (magazzino) de consum al materialului;  
+**Cauză de consum (Causale consumo)**: indică codul cauzei (causale) de consum al materialului;  
+**Locație de consum (Ubicazione consumo)**: indică codul locației (ubicazione) gestiunii de consum al materialului;  
+**Cantitate respinsă (Quantità scartata)**: indică cantitatea respinsă a materialului;  
+**Gestiune de scarto (Magazzino di scarto)**: indică codul gestiunii (magazzino) de scarto (scarto) pentru material;  
+**Locație de scarto (Ubicazione di scarto)**: indică codul locației (ubicazione) de scarto (scarto) pentru material;  
+**Cauză de scarto (Causale di scarico)**: indică codul cauzei (causale) de scarto (scarto) pentru material;  
+**Descriere articol (Descrizione articolo)**: indică descrierea articolului;  
+**Descriere variantă (Descrizione variante)**: indică descrierea variantei articolului;  
+**Descriere gestiune de consum (Descrizione magazzino consumo)**: indică descrierea gestiunii (magazzino) de consum al materialului;  
+**Descriere cauză de consum (Descrizione causale consumo)**: indică descrierea cauzei (causale) de consum al materialului;  
+**Descriere gestiune de scarto (Descrizione magazzino di scarto)**: indică descrierea gestiunii (magazzino) de scarto (scarto) a materialului;  
+**Descriere cauză de scarto (Descrizione causale di scarto)**: indică descrierea cauzei (causale) de scarto (scarto) a materialului;  
+**Prioritate (Priorità)**: indică prioritatea cu care sunt afișate materialele.
 
-**Lotto**: indica il numero di lotto del materiale selezionato;        
-**Codice lotto fornitore**: indica il numero di lotto del fornitore del materiale selezionato;         
-**Quantità**: indica la quantità di materiale selezionato per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto del materiale selezionato;     
-**Data inizio**: indica la data inizio del lotto del materiale selezionato;         
-**Data scadenza**: indica la data scadenza del lotto del materiale selezionato;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore del materiale selezionato.   
+În plus, în partea de jos se pot introduce loturile și numerele seriale (serial number) în grilele corespunzătoare.
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+Grila *Loturi (Lotti)* conține următoarele coloane:
 
-**Barcode**: il codice barcode riporta il numero di serial number e le altre informazione relative. Per tutte le informazioni su come codificare i barcode da leggere in questo campo consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer);          
-**Tipo Serial numnber**: indica il tipo di serial number del materiale selezionato;    
-**Serial number**: indica il serial number del materiale selezionato;    
-**Data inizio**: indica la data inizio del serial number del materiale selezionato;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number del materiale selezionato.             
+**Lot (Lotto)**: indică numărul de lot (lotto) al materialului selectat;  
+**Cod lot furnizor (Codice lotto fornitore)**: indică numărul de lot al furnizorului pentru materialul selectat;  
+**Cantitate (Quantità)**: indică cantitatea de material selectat aferentă acelui lot;  
+**Locație (Ubicazione)**: indică locația (ubicazione) lotului materialului selectat;  
+**Data începerii (Data inizio)**: indică data de început pentru lotul materialului selectat;  
+**Data expirării (Data scadenza)**: indică data de expirare pentru lotul materialului selectat;  
+**Cont/Subitcont/Descriere cont (Conto/Sottoconto/Descrizione conto)**: indică respectiv contul, sub-contul și descrierea clientului/furnizorului pentru materialul selectat.
 
-## Dipendente
+Grila *Numere Seriale (Serial number)* conține următoarele coloane:
 
-Questo tab permette di gestire i membri della squadra che svolgono la lavorazione relativa alla riga della dichiarazione selezionta andando ad indicare per ognuno data inizio e fine lavorazione.
+**Barcode (Barcode)**: codul barcode include numărul serial și alte informații aferente. Pentru toate informațiile despre cum se codifică barcode-ul care urmează a fi citit în acest câmp, consultați pagina [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer);  
+**Tip Număr Serial (Tipo Serial number)**: indică tipul de număr serial pentru materialul selectat;  
+**Număr Serial (Serial number)**: indică numărul serial al materialului selectat;  
+**Data începerii (Data inizio)**: indică data de început a numărului serial al materialului selectat;  
+**Anulat (Annullato)**: indică faptul că nr. serial este în stare anulată;  
+**Lot (Lotto)**: indică codul lotului pentru numărul serial al materialului selectat.
 
-*Campi specifici*: 
+## Echipa (Squadra)
 
-**Codice**: indica il codice dell'operatore che sta lavorando sulla dichiarazione;             
-**Cognome**: indica il cognome dell'operatore che sta lavorando sulla dichiarazione;     
-**Nome**: indica il nome dell'operatore che sta lavorando sulla dichiarazione;        
-**Capo squdra**: indica che quell'operatore è anch ecapo squadra;      
-**Attività**: indica l'attività che sta svolgendo l'operatore;        
-**Descrzione**: indica la descrizione dell'attività che sta svolgendo l'operatore;      
-**Attrezzaggio**: indica che il tempo lavorato dall'operatore verrà calcolato come tempo di attrezzaggio nelle successive analisi;       
-**Data inizio**: indica la data di inizio della lavorazione dell'operatore;         
-**Ora inizio**: indica l'ora di inizio della lavorazione dell'operatore;         
-**Data fine**: indica la data di fine della lavorazione dell'operatore;         
-**Ora fine**: indica lìora di fine della lavorazione dell'operatore;         
-**Data creazione**: indica la data di creazione del record;         
-**Data ultima modifica**: indica la data di ultima modifica del record;         
-**Operatore**: indica l'utente di creazione del record.
+Acest tab permite gestionarea membrilor echipei care lucrează asupra rândului declarației selectate, indicând pentru fiecare data de început și data de final a lucrării.
 
-## Articoli alternativi
+*Câmpuri specifice*:  
 
-Questo tab permette di aggiungere e gestire tutti quegli articoli (spin-off) che vengono realizzati come conseguenza della produzione di un articolo principale.       
-Quindi, è possibile inserirli nella griglia dedicata con la possibilità di gestirne anche i relativi lotti e serial numbers. Ovviamente, i lotti e serial numbers sono riferiti alla riga dell'articolo alternativo selezionato.
+**Cod (Codice)**: indică codul operatorului care lucrează la declarație;  
+**Nume de familie (Cognome)**: indică numele de familie al operatorului;  
+**Prenume (Nome)**: indică prenumele operatorului;  
+**Șef echipă (Capo squadra)**: indică faptul că acel operator este șeful de echipă;  
+**Activitate (Attività)**: indică activitatea desfășurată de operator;  
+**Descriere (Descrizione)**: indică descrierea activității desfășurate de operator;  
+**Pregătire (Attrezzaggio)**: indică faptul că timpul lucrat de operator va fi considerat ca timp de pregătire în analizele ulterioare;  
+**Data începerii (Data inizio)**: indică data de început a lucrării operatorului;  
+**Ora începerii (Ora inizio)**: indică ora de început a lucrării operatorului;  
+**Data finalizării (Data fine)**: indică data de final a lucrării operatorului;  
+**Ora finalizării (Ora fine)**: indică ora de final a lucrării operatorului;  
+**Data creării (Data creazione)**: indică data creării înregistrării;  
+**Data ultimei modificări (Data ultima modifica)**: indică data ultimei modificări a înregistrării;  
+**Operator (Operatore)**: indică utilizatorul care a creat înregistrarea.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+## Articole alternative (Articoli alternativi)
 
-**Lotto**: indica il numero di lotto dell'articolo;  
-**Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
-**Tipo lotto**: indica il tipo del lotto dell'articolo;         
-**Codice lotto fornitore**: indica il numero di lotto del fornitore dell'articolo;       
-**Note**: permette di inserire una nota relativa al lotto;                 
-**Quantità**: indica la quantità dell'articolo per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto dell'articolo;     
-**Data inizio**: indica la data inizio del lotto dell'articolo;         
-**Data scadenza**: indica la data scadenza del lotto dell'articolo;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
+Acest tab permite adăugarea și gestionarea articolelor (spin-off) care sunt realizate ca urmare a producției unui articol principal.  
+Astfel, pot fi introduse în tabelul dedicată, cu posibilitatea de a gestiona și loturile și numerele seriale aferente.  
+Desigur, loturile și numerele seriale se referă la rândul articolului alternativ selectat.  
+Mișcările de încărcare pentru articolele alternative se vor face în gestiunea (magazzino), cu cauza (causale) și locația (ubicazione) indicate pe rând.
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
-    
-**Codice Serial number**: indica il serial number dell'articolo;      
-**Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
-**Serial number cliente**: indica il serial number del cliente per quell'articolo;      
-**Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
-**Data inizio**: indica la data inizio del serial number dell'articolo;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+Grila *Loturi (Lotti)* conține următoarele coloane:
 
-## Sospensioni
+**Lot (Lotto)**: indică numărul de lot (lotto) al articolului;  
+**Tip cod lot (Tipo codice lotto)**: indică tipul codului de lot (lotto) al articolului;  
+**Tip lot (Tipo lotto)**: indică tipul lotului (lotto) al articolului;  
+**Cod lot furnizor (Codice lotto fornitore)**: indică numărul de lot al furnizorului articolului;  
+**Notă (Note)**: permite introducerea unei note aferente lotului;  
+**Cantitate (Quantità)**: indică cantitatea articolului pentru acel lot;  
+**Locație (Ubicazione)**: indică locația (ubicazione) lotului articolului;  
+**Data începerii (Data inizio)**: indică data de început a lotului articolului;  
+**Data expirării (Data scadenza)**: indică data de expirare a lotului articolului;  
+**Cont/Subitcont/Descriere cont (Conto/Sottoconto/Descrizione conto)**: indică respectiv contul, sub-contul și descrierea clientului/furnizorului aferent articolului.
 
-Questo tab permette di specificare più causali di sospensione con i relativi minuti e si abilità solamente in corrispondenza di una riga con stato dichiarazione *Sospensione*.  
+Grila *Numere Seriale (Serial number)* conține următoarele coloane:
 
-## Scarto
+**Cod Număr Serial (Codice Serial number)**: indică numărul serial al articolului;  
+**Tip Număr Serial (Tipo Serial numnber)**: indică tipul de număr serial al articolului;  
+**Număr Serial client (Serial number cliente)**: indică numărul serial al clientului pentru articolul respectiv;  
+**Număr Serial furnizor (Serial number fornitore)**: indică numărul serial al furnizorului pentru articolul respectiv;  
+**Data începerii (Data inizio)**: indică data de început a numărului serial al articolului;  
+**Anulat (Annullato)**: indică faptul că numărul serial este în stare anulată;  
+**Lot (Lotto)**: indică codul lotului (lotto) pentru numărul serial al articolului.
 
-Questo tab permette di specificare più magazzini e causali di scarto con le relative quantità e si abilità solamente se viene dichiarata una quantità scartata.  
+## Suspendări (Sospensioni)
 
-## Extra Data
+Acest tab permite specificarea mai multor cauze (causali) de înrerupere, cu minutele corespunzătoare, și se activează doar pentru un rând cu *Stare declarație (Stato dichiarazione)* de tip *Întrerupere*.
 
-Permmette di gestire e visualizzare gli Extra Data relativi alla segnalazione.
+## Deșeuri (Scarto)
 
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+Acest tab permite specificarea mai multor gestiuni (magazzino) și cauze (causali) de scarto (scarto), cu cantitățile aferente, și se activează numai dacă se declară o cantitate respinsă.
 
-## Lotti e Serial Number
+## Date extra (Extra Data)
 
-Questo tab permette di gestire i lotti e serial numbers degli articoli principali prodotti tramite le apposite griglie.
+Permite gestionarea și vizualizarea Extra Data asociate declarației.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+Pentru o descriere detaliată despre extra data, consultați articolul [Extra data (Extra data)](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-**Lotto**: indica il numero di lotto dell'articolo;  
-**Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
-**Tipo lotto**: indica il tipo del lotto dell'articolo;         
-**Codice lotto fornitore**: indica il numero di lotto del fornitore dell'articolo;       
-**Note**: permette di inserire una nota relativa al lotto;                 
-**Quantità**: indica la quantità dell'articolo per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto dell'articolo;     
-**Data inizio**: indica la data inizio del lotto dell'articolo;         
-**Data scadenza**: indica la data scadenza del lotto dell'articolo;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
+## Loturi și Numere Seriale (Lotti e Serial Number)
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
-    
-**Codice Serial number**: indica il serial number dell'articolo;      
-**Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
-**Serial number cliente**: indica il serial number del cliente per quell'articolo;      
-**Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
-**Data inizio**: indica la data inizio del serial number dell'articolo;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+În tabul **Loturi și Numere Seriale (Lotti e Serial numbers)**, în timpul înregistrării (registrazione) declarației de producție, loturile și numerele seriale ale articolelor produse sunt aduse automat, pe baza logicii indicate în tabul [Loturi și Numere Seriale (Lotti e Serial numbers)](/docs/erp-home/registers/items/create-new-item) al datelor articolului (anagrafica articolo).  
+Dacă este indicat un lot (lotto) în câmpul lotului (lotto) al rândului declarației, articolele produse vor fi înregistrate cu acest număr de lot, care are prioritate față de regulile introduse în anagrafica articolului.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Grila *Loturi (Lotti)* conține următoarele coloane:
 
+**Lot (Lotto)**: indică numărul de lot (lotto) al articolului;  
+**Tip cod lot (Tipo codice lotto)**: indică tipul codului de lot (lotto) al articolului;  
+**Tip lot (Tipo lotto)**: indică tipul lotului (lotto) al articolului;  
+**Cod lot furnizor (Codice lotto fornitore)**: indică numărul de lot al furnizorului articolului;  
+**Notă (Note)**: permite introducerea unei note aferente lotului;  
+**Cantitate (Quantità)**: indică cantitatea articolului pentru acel lot;  
+**Locație (Ubicazione)**: indică locația (ubicazione) lotului articolului;  
+**Data începerii (Data inizio)**: indică data de început a lotului articolului;  
+**Data expirării (Data scadenza)**: indică data de expirare a lotului articolului;  
+**Cont/Subitcont/Descriere cont (Conto/Sottoconto/Descrizione conto)**: indică respectiv contul, sub-contul și descrierea clientului/furnizorului aferent articolului.
 
+Grila *Numere Seriale (Serial number)* conține următoarele coloane:
 
+**Cod Număr Serial (Codice Serial number)**: indică numărul serial al articolului;  
+**Tip Număr Serial (Tipo Serial number)**: indică tipul de număr serial al articolului;  
+**Număr Serial client (Serial number cliente)**: indică numărul serial al clientului pentru articolul respectiv;  
+**Număr Serial furnizor (Serial number fornitore)**: indică numărul serial al furnizorului pentru articolul respectiv;  
+**Data începerii (Data inizio)**: indică data de început a numărului serial al articolului;  
+**Anulat (Annullato)**: indică faptul că numărul serial este în stare anulată;  
+**Lot (Lotto)**: indică codul lotului (lotto) pentru numărul serial al articolului.
