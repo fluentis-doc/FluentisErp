@@ -3,7 +3,7 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
-### Patch 707.1-0041 - 11/07/2025
+### Patch 707.1-0041 - 17/07/2025
 
 > - CO - la ripresa dei dati da produzione (ripresa ore di progetto / ripresa movimenti fisici) applicano le logiche di duplicazione impostate nel “Flusso movimenti fisici” ai movimenti per progetto. (#TT02025/25) 
 > - CO - Fix CO SalesForecast ModelDocumentFilter problem(#TT03248/25) 
