@@ -130,6 +130,8 @@ L'elenco si compone delle seguenti informazioni:
 >> **Cartacea**: indica che al momento della distribuzione il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
 >> **Metodo di consegna**: indica la metodologia di consegna abituale del *Documento*.   
 >> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
+>> **Consegna**: indica che la consegna è stata effettuata; viene impostata automaticamente all’atto della distribuzione del documento ed è successivamente modificabile.   
+>> **Data consegna**: riporta la data di consegna del documento; è un'informazione aggiornata automaticamente all’atto della distribuzione del documento ed è successivamente modificabile.   
 >> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
 >> **Note**: annotazioni libere.   
 
@@ -141,7 +143,7 @@ Questi allegati sono separati dal Documentale di Fluentis, che è sempre present
 
 ### Accesso consentito alle funzioni
 
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso al *Documento*.   
+In questo elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso al *Documento*.   
 Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
 Alla creazione del *Documento* la lista delle *Funzioni aziendali* viene ereditata dalla *Categoria documento di origine esterna* e le informazioni sono modificabili.   
 L'elenco si compone delle seguenti informazioni:   

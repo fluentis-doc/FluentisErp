@@ -9,7 +9,7 @@ La gestione si trova sul percorso **Qualità > Documenti di origine interna > Nu
 :::important A cosa serve
 La gestione dei documenti di origine interna permette: la catalogazione, la gestione delle edizioni/revisioni e la loro distribuzione (sia in formato cartaceo che elettronico) alle funzioni aziendali che sono interessate nel visionare tali documenti.   
 
-Elenchiamo alcuni esempi di documenti di origine esterna che possono essere catalogati:   
+Elenchiamo alcuni esempi di documenti di origine interna che possono essere catalogati:   
 > *Manuale della qualità*   
 > *Politica di gestione*   
 > *Organigramma*   
@@ -123,12 +123,12 @@ Successivamente alla richiesta di conferma elaborazione e al termine dell'elabor
 
 Le informazioni gestibili sono:   
 > **Categoria documento**: è la *Categoria documento di origine interna* del *Documento* (dato obbligatorio).   
-> Inserendo la categoria, la *Lista di distribuzione* e i dati di *Accesso consentito alle funzioni*, vengono ereditati nel *Documento*.   
+> Inserendo la categoria, le informazioni sull'Ubicazione, le Funzioni di verifica/approvazione e redazione/emissione, la *Lista di distribuzione* e i dati di *Accesso consentito alle funzioni*, vengono ereditati nel *Documento* e sono successivamente modificabili.   
 >
-> **Codice**: è il Codice del *Documento* (dato obbligatorio).   
+> **Codice**: è il Codice del *Documento* (dato obbligatorio); se nella Categoria di appartenenza è stato impostato un metodo di codifica automatica, il codice viene proposto ma con la possibilità di essere variato altrimenti è possibile inserirlo manualmente ma solo se il documento è nello stato di In creazione altrimenti l’informazione è di sola lettura.   
 >
 > **Edizione/Revisione**: sono l'Edizione e la Revisione del *Documento*. Le informazioni sono di sola lettura.   
-Le informazioni sono modificabili se il documento è nello stato di *In creazione* altrimenti sono di sola lettura; si possono variare in modo pilotato dal sistema usando i pulsanti *Crea nuova revisione* e *Crea nuova revisione* che incrementano il precedente valore di *Revisione* e *Edizione* di una unità.   
+Le informazioni sono modificabili se il documento è nello stato di *In creazione* altrimenti sono di sola lettura; si possono variare in modo pilotato dal sistema usando i pulsanti *Crea nuova edizione* e *Crea nuova revisione* che incrementano il precedente valore di *Edizione* e *Revisione* di una unità.   
 >
 > **Titolo**: è il *Titolo* del *Documento* (dato obbligatorio).   
 >
@@ -165,19 +165,19 @@ Le informazioni sono modificabili se il documento è nello stato di *In creazion
 > **Informazioni su ubicazione**: expander dove è possibile visualizzare/inserire:   
 >
 >> **Archivio**: è il *Magazzino* fisico di dove abitualmente viene archiviato il *Documento* (esempio: Ufficio tecnico, Direzione, ...).   
->> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+>> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
 >>
 >> **Ubicazione**: è l'*Ubicazione* fisica di dove abitualmente viene archiviato il *Documento* (esempio: Armadio, Scaffale, Cassetto, , ...).   
->> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+>> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
 >>
 >> **Ubicazione descrittiva**: è l'*Ubicazione* fisica in caso di non codifica di *Archivio* e/o *Ubicazione*.   
->> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+>> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
 >
 > **Funzione di verifica/approvazione**: è la *Funzione aziendale* responsabile della verifica/approvazione del documento.   
->> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+>> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
 >
 > **Funzione di redazione/emissione**: è la *Funzione aziendale* responsabile della redazione/emissione del documento.   
->> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+>> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
 >
 > **Note**: annotazioni libere.
 
@@ -232,6 +232,8 @@ L'elenco si compone delle seguenti informazioni:
 >> **Cartacea**: indica che al momento della distribuzione il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
 >> **Metodo di consegna**: indica la metodologia di consegna abituale del *Documento*.   
 >> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
+>> **Consegna**: indica che la consegna è stata effettuata; viene impostata automaticamente all’atto della distribuzione del documento ed è successivamente modificabile.   
+>> **Data consegna**: riporta la data di consegna del documento; è un'informazione aggiornata automaticamente all’atto della distribuzione del documento ed è successivamente modificabile.   
 >> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
 >> **Note**: annotazioni libere.   
 
@@ -263,7 +265,7 @@ L'elenco si compone delle seguenti informazioni:
 > **Stato**: è lo *Stato* del *Documento*.   
 > **Dalla data**: è la data in cui il *Documento* ha assunto l'attuale *Stato*.   
 > **Riferimento paragrafi**: è il riferimento al numero dei paragrafi variati rispetto alla *revisione/edizione* precedente.   
-> **Riferimento su pagine**: è il al numero delle pagine variate rispetto alla *revisione/edizione* precedente.   
+> **Riferimento su pagine**: è il riferimento al numero delle pagine variate rispetto alla *revisione/edizione* precedente.   
 > **Funzione di verifica/approvazione**: è la *Funzione aziendale* responsabile della verifica/approvazione.   
 > **Funzione di redazione/emissione**: è la *Funzione aziendale* responsabile della redazione/emissione.   
 

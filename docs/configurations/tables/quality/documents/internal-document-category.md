@@ -36,7 +36,7 @@ L'elenco si compone delle seguenti informazioni:
 > **Descrizione categoria**: è la descrizione della *Categoria Documento*.   
 > **Sequenza**: è la sequenza di visualizzazione negli elenchi delle *Categorie Documento*.   
 > **Documento obbligatorio**: indica se è obbligatorio allegare il documento.   
-> **Codifica automatica**: indica se si desidera abilitare la codifica automatica del documento; la codifica sarà composta da: *Codice categoria* più un progressivo di un numero di cifre indicato in *Numero di cifre progressive* a partire nal numero indicato in *Progressivo iniziale*.   
+> **Codifica automatica**: indica se si desidera abilitare la codifica automatica del documento; la codifica sarà composta da: *Codice categoria* più un progressivo di un numero di cifre indicato in *Numero di cifre progressive* a partire dal numero indicato in *Progressivo iniziale*.   
 > **Numero di cifre progressive**: abilitato se richiesta la *Codifica automatica*, è il numero di cifre del progressivo che comporranno il codice del documento.   
 > **Progressivo iniziale**: abilitato se richiesta la *Codifica automatica* è il numero di progressivo che verrà proposto all'inserimento del primo documento.   
 > **Funzione di verifica/approvazione**: è la *Funzione aziendale* responsabile della verifica/approvazione del documento.   
@@ -93,7 +93,7 @@ L'elenco si compone delle seguenti informazioni:
 **Cancella destinatario**: cancella la riga selezionata dall'elenco.   
 
 ### Accesso consentito alle funzioni
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
+In questo elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
 Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
 L'elenco si compone delle seguenti informazioni:   
 > **Funzione**: è il codice della *Funzione aziendale*.   

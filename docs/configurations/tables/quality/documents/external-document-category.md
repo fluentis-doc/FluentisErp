@@ -76,7 +76,7 @@ L'elenco si compone delle seguenti informazioni:
 **Cancella destinatario**: cancella la riga selezionata dall'elenco.   
 
 ### Accesso consentito alle funzioni
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
+In questo elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
 Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
 L'elenco si compone delle seguenti informazioni:   
 > **Funzione**: è il codice della *Funzione aziendale*.   

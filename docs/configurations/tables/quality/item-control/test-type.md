@@ -36,7 +36,7 @@ E' l'elenco dove vengono inserite le informazioni principali del *Tipo prova*.
 L'elenco si compone delle seguenti informazioni:   
 > **Codice**: è il codice del *Tipo prova*.   
 > **Descrizione**: è la descrizione del *Tipo prova*.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
+> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di metodologie di prove riconosciute standard.   
 >  
 > **Categoria**
 >> **Codice**: è il codice della *Categoria*.   
@@ -46,27 +46,27 @@ L'elenco si compone delle seguenti informazioni:
 > **Laboratorio interno**: indica se la prova viene effettuata internamente.   
 >  
 > **Laboratorio esterno**
->> **Descrizione**: abilitato se il Laboratorio è esterno, è la ragione sociale del *laboratorio di analisi* (*fornitore*) esterno che effettuerà la prova.
+>> **Descrizione**: abilitato se il Laboratorio interno non è stato indicato, è la ragione sociale del *laboratorio di analisi* (*fornitore*) che effettuerà la prova.   
 >  
 > **Strumento di misura**
 >> **Codice**: è il codice della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.   
->> **Descrizione**: è la descrizione della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.
+>> **Descrizione**: è la descrizione della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.   
 >  
 > **Valori**
 >> **Da rilevare**: indica se la prova è da rilevare o è solamente una *Proprietà* e non è rilevabile e viene quindi utilizzato nelle *Schede tecniche*.   
 >> **Unità di misura**: è l'*Unità di misura* dei valori da rilevare.   
 >> **Tipo valore**: è il *Tipo valore* da rilevare: *Numerico*, *Si/No* o *Testo*.   
->> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* da che verrà proposto nelle Prove.   
+>> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che verrà proposto nelle Prove.   
 >  
 > **Tipo controllo prova**
 >> **Generico**: indica se la prova è comunemente attuata sulle tipologie di documento che si potranno specificare nelle successive colonne.   
 >> **Tipo documento**: abilitato se il *Tipo valore* è *Generico*, è il documento dove il *Tipo prova* viene comunemente attuata.   
 >> **Proposta in...**: abilitato se il *Tipo valore* è *Generico* e se il *Tipo documento* lo prevede, è il dettaglio (*Testata documento* o *Riga documento*) dove il *Tipo prova* viene comunemente attuata.   
 >> **Codice**: è il codice del *Tipo controllo prova* da utilizzare.   
->> **Descrizione**: è la descrizione del *Tipo controllo prova* da utilizzare.
->> **Frequenza**: è la frequenza descrittiva con la quale effettuare il controllo.
+>> **Descrizione**: è la descrizione del *Tipo controllo prova* da utilizzare.   
+>> **Frequenza**: è la frequenza descrittiva con la quale effettuare il controllo.   
 >  
-> **Note**: annotazioni libere.
+> **Note**: annotazioni libere.   
 
 ### Attributi Tipo di prova
 
