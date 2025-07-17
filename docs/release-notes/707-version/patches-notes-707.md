@@ -3,6 +3,26 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0041 - 11/07/2025
+
+> - CO - la ripresa dei dati da produzione (ripresa ore di progetto / ripresa movimenti fisici) applicano le logiche di duplicazione impostate nel “Flusso movimenti fisici” ai movimenti per progetto. (#TT02025/25) 
+> - CO - Fix CO SalesForecast ModelDocumentFilter problem(#TT03248/25) 
+> - FI - visualizzazione delle partite percipienti in ricerca partite e stampe partitari (#TT03050/25) 
+> - FI/SD - la creazione della partita d’anticipo da ordine, se è attiva la gestione contabile delle provvigioni, consente (tramite un flag disattivabile) di creare i dati delle commissioni per la quota parte della partita creata, in modo da registrarne la chiusura al momento dell’incasso. La procedura di creare fattura d’anticipo, se è prevista la gestione delle provvigioni per le righe acconto e storno acconto, riporta tale valore in fattura. (#TT03010/25) 
+> - MS - Corretto bug in pianificazione generale nel caso in cui venissero ripianificate commesse in stato evaso o lanciato. (#TT03166/25) 
+> - MS - Costificazione commesse: Considerazione del Costo di Fase manuale. Per il calcolo del costo di lavorazione di una fase preventivo, ora il la priorità maggiore viene data al valore indicato nel campo Costo unitario presente nel ciclo di lavoro. (#TT01782/25) 
+> - PM - generazione intervento da attività, se nelle attività sono presenti delle spese sostenute queste vengono riportate anche nell’intervento (TT00461/25) 
+> - PR - nella distinta di presentazione effetti, l’help effetti ora presenta i filtri di ricerca per Cig/Cup. Modifications in Effetti filter can have an impact on profiles (#TT03078/25) 
+> - SCM - Richieste di Acquisto: corretta la proposta del costo zero/ultimo in assenza di listini. (#TT03169/25) 
+> - SCM - Risolta un'anomalia che, in caso di ordine evaso in DDT successivamente valorizzato, non aggiornava correttamente lo stato di evasione delle righe articolo dell'ordine a seguito di una modifica delle quantità in fattura. (#TT03193/25) 
+> - SCM, SCS - Gli sconti inseriti nelle Fatture di Acquisto generate da un Rientro di Conto lavoro vengono riportati nel Rientro e nella relativa registrazione di magazzino, anche quando il prezzo degli articoli non viene modificato. (#TT02900/25) 
+> - SCS - Nell’Anagrafica Lotti viene ora riportato correttamente il numero del Rientro di Conto Lavoro utilizzato per lo scarico del materiale. (#TT03187/25) 
+> - SD - Nella stampa “Provvigioni maturate” e nella procedura di “Creazione automatica liquidazione provvigioni” è stato aggiunto un nuovo flag di conteggio dei pagamenti in registrazioni provvisorie.  Modifications in both forms can have an impact on profiles .(#TT03196/25) 
+> - SD - Offerte di Vendita: Aggiunta una barra di scorrimento verticale nel tab Dati articolo per facilitare visualizzazione dei dati nelle offerte contenenti un numero elevato di righe articolo. Modifications in SalesOffer form can have an impact on profiles  (#TT03170/25) 
+> - WM - Corretto bug nella procedura di valorizzazione di magazzino nel caso in cui fossero presenti delle unità di carico. (#TT03094/25) 
+> - WMS - In conferma picking e gestione spunta, se nel tab lotti e serial number del picking sono presenti dei lotti prenotati, quando vado a confermare la spunta selezionando uno di quei lotti viene proposta la quantità residua per quel lotto, altrimenti se il lotto inserito non è tra quelli prenotati viene proposta la quantità residua totale della riga articolo. (#TT03104/25) 
+
+
 ### Patch 707.1-0040 - 11/07/2025
 
 > - PR - risolto problema in fase di elaborazione del cashflow a causa della mancanza del codice DocFinance nella tabella Anagrafiche in corrispondenza della società in uso. Rif. #TT02965/25 
