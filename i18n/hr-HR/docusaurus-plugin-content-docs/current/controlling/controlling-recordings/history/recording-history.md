@@ -1,61 +1,61 @@
 ---
-title: Storico registrazioni gestionali
+title: Povijest zapisa upravljanja
 sidebar_position: 3
 ---
 
-In questa maschera abbiamo la lista delle registrazioni create dalla procedura di ***Elaborazione periodi*** del controlling: si tratta della base dati, non modificabile, che contiene il dettaglio di ogni riga valorizzata, a partire dai valori mensilizzati di origine contabile fino al singolo ribaltamento dei Cost driver elaborati (ad esclusione di quelli del consuntivo di progetto, che hanno una procedura di calcolo e una form di visualizzazione a se stante).
+Ovdje se prikazuje popis zapisa koji su kreirani putem postupka ***Obrade perioda*** kontrolinga. Radi se o bazi podataka koju nije moguće mijenjati, a sadrži detalje svake pojedinačne valorizirane stavke, počevši od mjesečnih računovodstvenih vrijednosti do pojedinačnih raspodjela nositelja troškova (izuzimajući one iz konačnih proračuna projekta, koji imaju zaseban postupak obrade i prikaz podataka).
 
-:::tip Nota
-Dato che l'***Elaborazione periodi*** del Controlling cancella e ricrea i valori dell'anno, avremo un'unica registrazione per ogni anno e area elaborata
+:::tip Napomena
+Budući da postupak ***Obrada perioda*** kontrolinga briše i ponovno kreira vrijednosti za cijelu godinu, svaka godina i obrađeno područje imat će samo jedan zapis.
 :::
 
-Possiamo aprire in visualizzazione ogni registrazione per andare a verificare i singoli step di elaborazione e il dettaglio dei dati elaborati, con piena visibilità di tutte le caratteristiche di origine del dato, della distribuzione periodi, del cost driver applicato e del ciclo di elaborazione: da questa form, quindi, possiamo risalire ai motivi logici di eventuali incongruenze causate da impostazioni incoerenti con i risultati ricercati.
+Svaki zapis može se otvoriti u prikazu kako bi se analizirali koraci obrade i detalji obrađenih podataka, uz potpunu vidljivost svih izvornih karakteristika podataka, raspodjele razdoblja, primijenjenog nositelja troškova i ciklusa obrade. Na temelju ovih podataka moguće je identificirati uzroke mogućih nesukladnosti uzrokovanih neusklađenim postavkama.
 
-I campi disponibili in griglia sono i seguenti:
+Dostupna polja u tablici:
 
-- ***Sottoconto***
-- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
-- [***Centro cedente***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), che sarà valorizzato solo per le righe legate ai driver
-- ***Anno***
-- ***Periodo***
-- ***Dare***
-- ***Avere***
-- ***Valore fisso***, che sommato al successivo valore variabile darà il valore Dare o Avere precedente
-- ***Valore variabile***, che sommato al precedente valore fisso darà il valore Dare o Avere precedente
-- ***Divisione***
-- ***Divisa***, sempre uguale alla divisa della società
-- ***Distribuzione periodi*** associata alla riga
-- ***Tipo riga***, che possono essere
-    - *0* cioè righe di origine: si usa sia per le righe che nascono dalle chiusure o dalle registrazioni manuali di chiusura o di area, ma anche per le righe dei driver di attribuzione
-    - *1* cioè righe cedute: per i driver di ribaltamento, sono le righe che stornano il valore dal *Centro aziendale*
-    - *2* cioè righe ricevute: per i driver di ribaltamento, sono le righe che ribaltano il valore dal *Centro cedente* al *Centro aziendale*
-:::tip Nota
-Le righe di *attribuzione* sono sostanzialmente le righe di ribaltamento dei *Cost driver* che dal Centro di comodo *Conti da riassegnare* valorizzano i *Centri aziendali* effettivi della direzionale. I driver di *ribaltamento* sono sostanzialmente tutti gli altri.
+- ***Konto***
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+- [***Centar prijenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) (prikazuje se samo za stavke povezane s nositeljima troškova)
+- ***Godina***
+- ***Razdoblje***
+- ***Duguje***
+- ***Potražuje***
+- ***Fiksna vrijednost***,(zbrojena s varijabilnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
+- ***Varijabilna vrijednost***, (zbrojena s fiksnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
+- ***Odjel***
+- ***Valuta***, (uvijek jednaka valuti poduzeća)
+- ***Distribucija*** perioda povezana s redom
+- ***Vrsta retka***, može biti:
+    - *0* – Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, ali i iz redova nositelja troškova raspodjele)
+    - *1* Preneseni redovi (za nositelje troškova raspodjele, to su redovi koji storniraju vrijednost iz *poslovnog centra*)
+    - *2* Primljeni redovi (za nositelje troškova raspodjele, to su redovi koji prenose vrijednost iz centra nositelja u *centar troška*)
+:::tip NAPOMENA
+Redovi *raspodjele* su u osnovi redovi raspodjele *nositelja troškova*, koji iz *prijelaznih konta* preraspodjeljuju vrijednosti na stvarne *centre troška*. Nositelji troškova raspodjele *uključuju* sve ostale metode prijenosa vrijednosti.
 :::
-- ***Tipo distribuzione*** del driver applicato
-- [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) applicato
-- ***Sorgente***, cioè l'origine del dato, che può essere:
-    - *Contabile* (1), cioè proveniente direttamente dalla *Chiusura infrannuale*
-    - *Manuale* (2), cioè proveniente dalle *Registrazioni extracontabili di area*
-    - *Formula* (3), cioè proveniente da registrazioni create dalle *Formule di calcolo*
-    - *Ammortamenti* (4), cioè proveniente da registrazioni create dall'elaborazione degli ammortamenti del controlling
-    - *Conguagli* (5), cioè proveniente da registrazioni dei conguagli infrannuali o annuali
-    - *Driver delle tariffe* (6), cioè proveniente dai driver di applicazione delle tariffe 
-    - *Rimanenze* (7), cioè proveniente da registrazioni delle rimanenze nel controlling
-    - *Materiali produzione* (8), cioè proveniente da costi per i materiali di produzione
-    - *Lavorazioni esterne* (9), cioè proveniente da costi del conto lavoro
-    - *Trasformazioni di produzione* (10), cioè dalle lavorazioni interne in produzione
-    - *Consolidamento controlling* (15), cioè dalla procedura di *Consolidamento master* del controlling, in installazioni multisocietarie
+- ***Vrsta distribucije*** primijenjenog nositelja troškova
+- [***Nositelj troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) primijenjen
+- ***Izvor*** podataka može biti:
+    - *Računovodstveni podaci* (1), izravno iz *privremenog zatvaranja*
+    - *Ručno uneseni podaci* (2), *izvanbilančna knjiženja* područja
+    - *Formula* (3), knjiženja stvorena pomoću *računalnih formula*
+    - *Amortizacija* (4), – knjiženja stvorena putem obračuna amortizacije kontrolinga
+    - *Korigiranja* (5), zapisi iz privremenih ili godišnjih korekcija
+    - *Nositelji troškova tarifa* (6),  primjena nositelja troškova tarifa
+    - *Zalihe* (7), zapisi zaliha u kontrolingu
+    - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
+    - *Vanjske usluge* (9), troškovi vanjskih radova
+    - *TProizvodne transformacije* (10), interni proizvodni procesi
+    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u multicompany postavkama
 
-:::tip Nota
-Esistono altre 4 tipologie di origini dati, visibili nello storico del consolidato di progetto:
-    - *tempo macchina* (11)
-    - *tempo uomo* (12)
-    - *attrezzaggio macchina* (13)
-    - *attrezzaggio uomo* (14)
+:::tip NAPOMENA
+Postoje dodatne četiri kategorije izvora podataka, vidljive u povijesti konačnog proračuna projekta:
+    - *Vrijeme stroja* (11)
+    - *Vrijeme čovjeka* (12)
+    - *Priprema stroja* (13)
+    - *Priprema čovjeka* (14)
 :::
 
-- ***Numero***, ***Anno***, ***Riga***, ***Wbs***: riferimenti ai progetti, non valorizzati
+- ***Broj***, ***Godina***, ***Redak***, ***Wbs***: referentni podaciza projekte (nisu valorizirani).
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.
