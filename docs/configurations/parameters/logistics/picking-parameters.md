@@ -31,7 +31,7 @@ Nella sezione **Gestione lotti e serial number** è possibile attivare i seguent
 
 **Proposta Lotti / Serial number**: se attivo, al variare di una quantità della riga picking, se l'articolo è gestito a lotti con tipologia prelievo FIFO o per data scadenza, vengono proposti in automatico i lotti nella relativa griglia.
 
-**Movimentazione spunta automatica**: se attivo, nella form *Gestione Spunta* fa lo scarico automatico della riga.   
+**Movimentazione spunta automatica**: se attivo, nelle form *Gestione Spunta* e *Conferma picking* fa lo scarico automatico della riga, ed in questo caso non servirà farlo da [Scarico da spunta](/docs/logistics/picking/unload-check-row-management); mentre se il flag non è attivo, allora verrà effettuata la spunta ma senza il movimento che dovrà essere effettuato tramite la procedura [Scarico da spunta](/docs/logistics/picking/unload-check-row-management).
 
 **Visualizzazione griglia evasione**: se attivo, il flag abilita la modalità griglia nella form di evasione picking.
 
