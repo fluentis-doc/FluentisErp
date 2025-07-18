@@ -1,25 +1,25 @@
 ---
-title: Storico flusso fisico
+title: Povijest fizičkog toka
 sidebar_position: 1
 ---
 
-Da questa form è possibile interrogare, in sola modalità visualizzazione, lo storico delle registrazioni gestionali espresse in grandezze fisiche non economiche.
+Iz ovog sučelja moguće je pregledavati povijest upravljačkih zapisa izraženih u fizičkim veličinama koje nisu ekonomske prirode, isključivo u načinu vizualizacije.
 
-La griglia presenta i seguenti campi:
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi
+Tablica sadrži sljedeća polja:
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
 
-- il [***Centro aziendale di origine***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) della quantità
+- [***Izvorni centar***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) iz kojeg potječe količina
 
-- il [***Centro di destinazione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) della quantità
+- [***Odredišni centar***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) kojem je količina namijenjena
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- Referentna ***Godina*** i ***period*** 
 
-- l'[***Unità di misura*** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
+- [***Jedinica mjere*** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
 
-- la ***Quantità***
+- ***Količina***
 
-- nel campo ***Calcolato*** abbiamo la vizualizzaione dell'origine del dato: solitamente sarà la *Registrazione movimenti fisici*, ma potrebbe anche essere il *Flusso movimenti fisici*
+- Polje ***Izračunato*** prikazuje izvor podataka
 
-- i campi ***Codice***, ***Numero*** e ***Descrizione*** del cespite di riferimento della riga
+- ***Šifra, broj i opis osnovnog sredstva*** dna koje se redak odnosi
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.
