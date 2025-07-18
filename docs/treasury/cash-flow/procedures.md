@@ -17,7 +17,7 @@ Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero*
 
 **Registrazioni provvisorie:** considera o meno anche i dati collegati a registrazioni contabili in stato *Provvisorio*
 
-**Non pagabili:** considera i meno anche le partite aperte nello stato *Non pagabile*
+**Non pagabili:** considera o meno anche le partite aperte nello stato *Non pagabile*
 
 **Usa q.ta residua:** permette di considerare gli ordini secondo la quantità residua da evadere
 
@@ -60,6 +60,8 @@ I rientri devono essere generati evadendo l'ordine di conto lavoro e non inserit
 I parametri di esecuzione sono memorizzati: solo la data finale del tipo flusso saldo contabile viene sempre riproposto come data odierna all'apertura. Una volta impostata la descrizione del cash flow sarà possibile premere il pulsante di calcolo. In considerazione dei movimenti degli ordini, per i quali il sistema deve fare una simulazione riga ordine per riga ordine, l'elaborazione può essere particolarmente lunga a seconda della numerosità dei dati presenti nel filtro impostato. Una volta completata l'elaborazione sarà possibile aprire il cash flow attraverso il pulsante di gestione relativo.
 
 **Portafoglio attivo**: ATTENZIONE: in merito al flusso delle distinte SBF bisogna fare attenzione agli effetti presentati ma non contabilizzati (contabilizzazione dell'emissione), la situazione può generarsi ad esempio emettendoli dalle scadenze fatture e poi inserendoli in distinta senza contabilizzare l'emissione. In tale situazione gli effetti non saranno inseriti nel cashflow. Altra condizione di cui tenere conto è il fatto che indipendentemente dal filtro, la data scadenza effetto deve essere maggiore o uguale a "oggi" (data elaborazione cashflow)
+
+**RDA**: filtra le RDA autorizzate, non evase o forzatamente evase, e raggruppa le righe per data richiesta (oppure data di consegna se prevista). Calcola le scadenze ipotetiche (iva compresa) sulla base della soluzione di pagamento associata all'anagrafica fornitore inserita nella RDA.
 
 | Funzione | Significato |
 | --- | --- |
