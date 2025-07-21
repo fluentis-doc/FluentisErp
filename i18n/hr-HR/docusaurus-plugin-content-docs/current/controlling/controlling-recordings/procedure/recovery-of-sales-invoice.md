@@ -1,28 +1,28 @@
 ---
-title: Ripresa dati da fatture di vendita
+title: Dohvat podataka s izlaznih računa
 sidebar_position: 2
 ---
 
-La procedura ***Ripresa dati da fatture di vendita*** consente di integrare i nostri dati di area con due tipi di dati presenti in fatturazione vendite: le provvigioni e gli sconti.
+Postupak ***dohvata (preuzimanja) podataka iz izlaznih (prodajnih) računa*** omogućuje integraciju podataka iz područja analize s dva ključna podatka iz prodaje: provizijama i popustima.
 
-## RIPRESA PROVVIGIONI
-Per le provvigioni, l’esigenza è rilevare nel periodo i costi delle provvigioni che invece la contabilità rileverà solo alla maturazione della provvigione, cioè magari solo al momento dell’incasso totale della fattura. Imposteremo come sempre 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- la ***Data*** 
-- l’***Anno***
-poi sulla destra inseriremo 
-- la ***Causale*** 
-- il range ***Da data*** e ***A data*** di date fattura da filtrare per prelevare i dati.
+## DOHVAT PROVIZIJE
+Kod provizija, cilj je evidentirati troškove provizija unutar odabranog perioda, iako će ih financijsko računovodstvo registrirati tek u trenutku nastanka obveze, primjerice tek nakon potpune naplate računa.Za postavljanje ovog postupka definiraju se sljedeći parametri:
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
+- ***Datum*** 
+- ***Godina***
+Zatim ćemo s desne strane unijeti
+- ***Predložak*** knjiženja
+- Raspon ***datuma Od*** - ***datuma Do*** koji određuje vremenski okvir računa za dohvat podataka
 
 
-## RIPRESA SCONTI
-Gli sconti, invece, sono un valore che normalmente la contabilità analitica non trova dalle rilevazioni contabili, che tipicamente valorizzano il netto del ricavo e non il lordo meno il costo dello sconto applicato. In determinate analisi potrebbe essere interessare mettere in evidenza questo costo nascosto che l’azienda sostiene per vendere, da qui l’elaborazione di questi dati.
+## DOHVAT POPUSTA
+Popusti predstavljaju vrijednost koja nije izravno vidljiva u analitičkom računovodstvu, budući da se uobičajeno evidentira neto prihod, a ne bruto prihod umanjen za trošak popusta. U određenim analizama može biti korisno istaknuti ovaj skriveni trošak koji poduzeće snosi prilikom prodaje, što opravdava potrebu za obradom ovih podataka.
 
-Imposteremo come sempre 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- il ***Conto*** sul quale rilevare questi costi commerciali
-- la ***Data***
-- l’***Anno***
-poi sulla destra inseriremo 
-- la ***Causale*** 
-- il range ***Da data*** e ***A data*** di date fattura da filtrare per prelevare i dati.
+Za postavljanje ovog postupka definiraju se sljedeći parametri:
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
+- ***Konto*** na kojem će se evidentirati ovi komercijalni troškovi
+- ***Datum***
+- ***Godina***
+Zatim ćemo s desne strane unijeti
+- ***Predložak*** knjiženja
+- Raspon ***datuma Od*** - ***datuma Do*** koji određuje vremenski okvir računa za dohvat podataka
