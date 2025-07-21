@@ -1,54 +1,57 @@
 ---
-title: Consolidato di commessa
+title: Konsolidacija naloga za posao
 sidebar_position: 5
 ---
 
-Ad ogni Elaborazione di un ***Consolidato di progetto*** creato dalla maschera di ***Elaborazione periodi*** troveremo qui dentro la relativa registrazione che ne contiene il dettaglio di tutti i costi e ricavi assegnati a progetti, siano questi diretti o indiretti da ribaltamento di cost driver applicati sui dati della dimensione direzionale.
+Prilikom svake obrade ***konsolidiranog projekta*** putem ***Obrade perioda***, ovdje će se prikazati odgovarajući zapisi koji sadrže detalje svih troškova i prihoda dodijeljenih projektima, bilo da su izravni ili neizravni putem preraspodjele nositelja troškova primijenjenih na podatke direkcijske dimenzije.
 
-I campi visualizzati sono:
+Prikazana polja:
 
-- ***Sottoconto***
-- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): si tratta in questo caso del *Centro di progetto/commessa*, cioè del centro che ha il flag 'Default per dimensione progetti* piuttosto che del centro assegnato al progetto tramite la tabella di ***Associazione centri progetti/commesse***.
-- [***Centro cedente***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), che sarà valorizzato dal centro di origine del movimento, sia esso derivato da un cost driver o meno
-- ***Anno***
-- ***Periodo***
-- ***Dare***
-- ***Avere***
-- ***Valore fisso***, che sommato al successivo valore variabile darà il valore Dare o Avere precedente
-- ***Valore variabile***, che sommato al precedente valore fisso darà il valore Dare o Avere precedente
-- ***Divisione***
-- ***Divisa***, sempre uguale alla divisa della società
-- ***Tipo riga***, che possono essere
-    - *0* cioè righe di origine: si usa sia per le righe che nascono dalle chiusure o dalle registrazioni manuali di chiusura o di area, ma anche per le righe dei driver di attribuzione
-    - *2* cioè righe ricevute: per i driver di ribaltamento, sono le righe che ribaltano il valore dal *Centro cedente* al *Centro aziendale*
-:::tip Nota
-Le righe di *attribuzione* sono sostanzialmente le righe di ribaltamento dei *Cost driver* che dal Centro di comodo *Conti da riassegnare* valorizzano i *Centri aziendali* effettivi della direzionale. I driver di *ribaltamento* sono sostanzialmente tutti gli altri.
+- ***Podkonto***
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): u ovom slučaju centar projekta/naloga, tj. centar koji ima flag *Zadano za dimenziju projekata* ili centar dodijeljen projektu putem ***tablice pridruživanja centara projektima/nalozima***
+- [***Centar prijenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), (prikazuje se samo za stavke povezane s nositeljima troškova)
+- ***Godina***
+- ***Razdoblje***
+- ***Duguje***
+- ***Potražuje***
+- ***Fiksna vrijednost***, (zbrojena s varijabilnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
+- ***Varijabilna vrijednost***, (zbrojena s fiksnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
+- ***Odjel***
+- ***Valuta***, (uvijek jednaka valuti poduzeća)
+- ***Vrsta retka***, može biti:
+    - *0* Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, ali i iz redova nositelja troškova raspodjele)
+    - *2* Primljeni redovi (za nositelje troškova raspodjele, to su redovi kojiprenose vrijednost iz centra nositelja u centar troška)
+
+:::tip NAPOMENA
+Redovi *raspodjele* su u osnovi redovi raspodjele *nositelja troškova*, koji iz prijelaznih konta preraspodjeljuju vrijednosti na stvarne *centre troška*. Nositelji troškova *raspodjele* uključuju sve ostale metode prijenosa vrijednosti.
+
 :::
-- ***Tipo distribuzione*** del driver applicato
-- [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) applicato
-- ***Sorgente***, cioè l'origine del dato, che può essere:
-    - *Contabile* (1), cioè proveniente direttamente dalla *Chiusura infrannuale*
-    - *Manuale* (2), cioè proveniente dalle *Registrazioni extracontabili di area*
-    - *Formula* (3), cioè proveniente da registrazioni create dalle *Formule di calcolo*
-    - *Ammortamenti* (4), cioè proveniente da registrazioni create dall'elaborazione degli ammortamenti del controlling
-    - *Conguagli* (5), cioè proveniente da registrazioni dei conguagli infrannuali o annuali
-    - *Driver delle tariffe* (6), cioè proveniente dai driver di applicazione delle tariffe 
-    - *Rimanenze* (7), cioè proveniente da registrazioni delle rimanenze nel controlling
-    - *Materiali produzione* (8), cioè proveniente da costi per i materiali di produzione
-    - *Lavorazioni esterne* (9), cioè proveniente da costi del conto lavoro
-    - *Trasformazioni di produzione* (10), cioè dalle lavorazioni interne in produzione
-    - *tempo macchina* (11)
-    - *tempo uomo* (12)
-    - *attrezzaggio macchina* (13)
-    - *attrezzaggio uomo* (14)
-    - *Consolidamento controlling* (15), cioè dalla procedura di *Consolidamento master* del controlling, in installazioni multisocietarie
+- ***Vrsta distribucije*** primijenjenog nositelja troškova
+- [***Nositelj troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) koji je primijenjen
+- ***Izvor***, podataka može biti:
+    - *Računovodstveni podaci* (1), izravno iz *privremenog zatvaranja*
+    - *Ručno uneseni podaci* (2),  *izvanbilančna knjiženja* područja
+    - *Formula* (3), knjiženja stvorena pomoću *računalnih formula*
+    - *Amortizacija* (4), knjiženja stvorena putem obračuna amortizacije kontrolinga
+    - *Korigiranja* (5), zapisi iz privremenih ili godišnjih korekcija
+    - *Nositelji troškova tarifa* (6), primjena nositelja troškova tarifa 
+    - *Zalihe* (7), zapisi zaliha u kontrolingu
+    - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
+    - *Vanjske usluge* (9), troškovi vanjskih radova
+    - *Proizvodne transformacije* (10), – interni proizvodni procesi
+    - *Vrijeme stroja* (11)
+    - *Vrijeme čovjeka* (12)
+    - *Priprema stroja* (13)
+    - *Priprema čovjeka* (14)
+    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u *multicompany* postavkama
+
 :::
 
-- ***Tipo costo*** applicato alla riga, per le righe con ogirine *Materiali*
+- ***Vrsta troška*** *(za retke podrijetlom iz materijala)*
 
-- ***Numero***, ***Anno***, ***Riga***, ***Wbs***: riferimenti ai progetti, non valorizzati
+- ***Broj***, ***godina***, ***linija***, ***Wbs broj***: reference na projekte (nepopunjeno)
 
-- [***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), ***Articolo***, ***Descrizione articolo***, ***Fase***, ***Sottofase***, ***Numero***, ***Descrizione*** e ***Quantità*** dell'articolo prodotto o lavorato
+- [***Jedinica mjere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), ***artikl***, ***opis artikla***, ***faza***, ***podfaza***, ***broj***, ***opis*** i ***količina***  proizvedenog ili obrađenog artikla
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Nije dopušteno brisanje, izmjena ili unos novih podataka u prikazanoj tablici.
