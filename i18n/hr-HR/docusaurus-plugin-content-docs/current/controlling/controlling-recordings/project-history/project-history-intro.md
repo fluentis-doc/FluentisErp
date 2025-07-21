@@ -1,18 +1,18 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-In questa sezione della ***Contabilità gestionale*** abbiamo le varie voci di visualizzazione dei dati elaborati sulla dimensione *Progetti/commesse*.
+U ovom dijelu ***upravljanja knjigovodstvom*** nalaze se različite opcije za pregled podataka obrađenih na dimenziji *Projekti/Nalozi*.
 
-Abbiamo a disposizione le seguenti voci:
+Dostupne su sljedeće opcije:
 
-- ***Storico movimenti fisici di commessa**, per vedere il dettaglio dei tempi (macchina/uomo/attrezzaggio) legati ai progetti
+- ***Povijest fizičkih kretanja naloga**, za pregled detalja vremena (stroj/čovjek/priprema) povezanih s projektima.
 
-- ***Registrazioni gestionali***, per vedere costi e ricavi direttamente imputati a progetto/commessa dalla Chiusura infrannuale
+- ***Povijest zapisa***, za pregled troškova i prihoda koji su izravno dodijeljeni projektu/nalogu putem privremenog zatvaranja.
 
-- ***Valori da produzione***, per vedere i costi di materiali e lavorazioni imputati a progetto/commessa
+- ***Vrijednosti proizvodnje***, za pregled troškova materijala i obrade koji su dodijeljeni projektu/nalogu.
 
-- ***Consolidato di progetto***, per vedere il risultato dell'elaborazione del consuntivo di progetto, che accoglierà costi diretti e indiretti attribuiti tramite Cost driver della dimensione progetti.
+- ***Konsolidacija projekta***, za pregled rezultata obrade projekta, koja uključuje izravne i neizravne troškove raspoređene putem nositelja troškova dimenzije projekata
 
 
