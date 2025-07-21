@@ -1,26 +1,26 @@
 ---
-title: Valori da produzione
+title: Vrijednosti proizvodnje
 sidebar_position: 4
 ---
 
-In questa maschera possiamo visualizzare i costi dei materiali collegati a progetto/commessa, sia quelli lavorati internamente che esternamente.
+Ovdje se prikazuju troškovi materijala povezane s projektom/nalogom, uključujući materijale obrađene interno i eksterno.
 
-I campi disponibili sono i seguenti:
+Dostupna polja su:
 
-- il ***Sottoconto*** di costo, che sarà tipicamente il Fatturato acquisti collegato all'articolo piuttosto che il conto delle lavorazioni esterne
+- ***Konto/Podkonto*** troška, obično fakturirani troškovi nabave povezani s artiklom ili konto za vanjske obrade
 
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) collegato alla riga, che arriva tipicamente dell'impostazione nel piano dei conti del sottoconto precedente
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) povezan s redom, koji se tipično preuzima iz postavki u kontnom planu za prethodno navedeni podkonto
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- ***Godina*** i ***period*** 
 
-- ***Numero progetto***, ***Anno progetto***, ***Riga***, ***Numero Wbs***: saranno sempre valorizzati dai riferimenti ai progetti
+- ***Broj projekta***, ***godina projekta***, ***linija***, ***WBS broj***: uvijek popunjeni referencama na projekte
 
-- ***Articolo*** e ***Descrizione articolo*** i dati dell'articolo movimentato
+- ***Artikl*** i ***opis artikla*** koji je predmet analize
 
-- l'[***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimento
+- [***Jedinica mjere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
 
-- la ***Quantità*** del movimento
+- ***Količina*** 
 
-- il ***Costo medio***, piuttosto che ***Costo standard*** o ***Costo ultimo*** per la riga
+- ***Prosječni trošak***, ***standardni trošak*** ili ***posljednji trošak*** za dotični red
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Nije dopušteno brisanje, izmjena ili unos novih podataka u prikazanoj tablici.
