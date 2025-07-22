@@ -20,16 +20,16 @@ This is the list of *Claimed Objects* and it consists of the following informati
 >> If, in the *Complaints and Non-compliance Parameters*, for the year of the document date, session *Complaints* has requested the *U.D.C. Data Grouping*, rows with the same *Items* will be reported in a single row with the quantities summed.   
 >  
 > **Quantity**   
->> **Unit of measure**: read-only information is the *Unit of measure* of the claimed *Item*.   
->> **Sold**: is the quantity of *Item* sold to the sender of the *Complaint*.   
->> **Contested**: is the quantity of *Item* contested by the sender of the *Complaint*.   
->> **Returned**: is the quantity of *Item* returned by the sender of the *Complaint*.   
->> **Reworked**: is the quantity of *Item* reworked by the sender of the *Complaint*.   
->> **Accepted**: is the quantity of *Item* accepted.   
+>> **Unit of measure**: read-only information is the main *Unit of measure* of the claimed *Item*.   
+>> **Sold**: is the quantity of *Item* sold to the sender of the *Complaint*; the value must be entered manually.
+>> **Contested**: is the quantity of *Item* contested by the sender of the *Complaint*; the value must be entered manually.   
+>> **Returned**: is the quantity of *Item* returned by the sender of the *Complaint*; the value must be entered manually.   
+>> **Reworked**: is the quantity of *Item* reworked by the sender of the *Complaint*; the value must be entered manually.   
+>> **Accepted**: is the quantity of *Item* accepted; the value must be entered manually.   
 >
 > **Value**   
->> **Claimed**: is the value claimed by the sender of the *Complaint*.   
->> **Accepted**: is the accepted value.   
+>> **Claimed**: is the value claimed by the sender of the *Complaint*; the value must be entered manually.   
+>> **Accepted**: is the accepted value; the value must be entered manually.   
 >
 > **Return data**   
 >> **Return authorization**: indicates that the return of the *returned Item* for the *Accepted Quantity* is authorized.   
