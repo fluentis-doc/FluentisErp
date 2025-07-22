@@ -34,10 +34,14 @@ The button is enabled only if the complaint has been saved, approved, and there 
 A data request/confirmation is displayed for:   
 > **Invoice Type**: it is the document type of the new credit note (mandatory data); the invoice type entered in the complaint type of the source complaint is proposed.   
 > **Description**: it is the description that will be used for the expense item line of the new credit note (mandatory data); the description parameterized in the [Complaint Valorization Parameters](/docs/quality/claims-and-non-compliance/non-compliances/procedure), section *Complaint References* is proposed.   
-> **VAT**: it is the VAT type that will be used for the expense item line of the new credit note; the VAT type entered in the complaint type of the source non-compliance is proposed.   
->
-> Then press the **OK** button or the **Cancel** button if you wish to continue with the creation activity or not.   
-> At the end of the processing, the newly created credit note is displayed.
+> **VAT**: it is the *VAT Type* that will be used for the *Expense Item* line of the new *Credit Note*.  
+> The *VAT Type* is proposed with the following priorities:  
+> 1. if there is a *Declaration of intent*, the *VAT Type* present in the document is considered;  
+> 2. if there is no *Declaration of intent*, the *VAT Type* associated with the sender of the *Complaint* is considered;  
+> 3. if there is no *Declaration of intent* and no *VAT Type* associated with the sender of the *Complaint* has been indicated, the *VAT Type* associated with the *Complaint Type* is considered.
+
+> Then press the **OK** button or the **Cancel** button if you wish to continue with the creation activity or not.  
+> At the end of the processing, the newly created *Credit Note* is displayed.
 
 ### ![](/img/neutral/common/corrective.png) Create Corrective Action 
 
