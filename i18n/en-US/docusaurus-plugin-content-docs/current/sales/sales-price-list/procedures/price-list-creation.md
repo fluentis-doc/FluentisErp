@@ -5,6 +5,11 @@ sidebar_position: 3
 
 This procedure allows you to create new sales price lists, starting from the items of existing documents. At the top of the form, there are filters to search the Source Data: choose between Sales Price List, Purchase Price List, Item Registry, Purchase DN, Purchase Invoices, or Supplier Orders; by expanding the Document Search, it is also possible to further filter to search for a specific price list. To view the results, press Search Price Lists.
 
+:::note Attention 
+The **Roundings** field, located at the bottom of the form, is a mandatory field. To view the data and proceed with the creation of price lists, it is necessary to select one of the previously coded [Roundings](/docs/sales/sales-price-list/procedures/rounding) in the appropriate form.
+:::
+
+
 In the first grid, the documents resulting from the search will be displayed, and by selecting a row, the items from the document will be displayed in the lower grid. Let's analyze the columns:       
 - **Class/Code/Description of the item**: identifying data of the item, followed by **Variant**, **Quantity**, **UM**, **Brand**.       
 - **Not Consider**: items that have this value checked will not be changed in the new price list.     
