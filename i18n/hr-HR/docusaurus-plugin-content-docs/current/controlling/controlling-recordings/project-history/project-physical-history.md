@@ -1,32 +1,32 @@
 ---
-title: Storico movimenti fisici di commessa
+title: Povijest fizičkih kretanja naloga
 sidebar_position: 2
 ---
 
-Nello ***Storico movimenti fisici di commessa*** abbiamo visibilità delle quantità di produzione collegate ai progetti/commesse. In particolare abbiamo:
+U ***Povijesti fizičkih kretanja naloga*** prikazane su proizvodne količine povezane s projektima/nalozima. Konkretno, dostupni su sljedeći podaci:
 
-- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- Referentno [***područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 
-- ***Anno*** e ***Periodo***
+- ***Godina*** i ***period***
 
-- ***Progetto*** di riferimento
+- Referentni ***projekt*** 
 
-- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di origine del movimento
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) iz kojeg potječe kretanje
 
-- ***Classe*** e ***Codice*** dell'articolo prodotto/lavorato
+- ***Klasa*** i ***šifra*** proizvedenog/obrađenog artikla
 
-- ***Fase*** e ***Sottofase*** di produzione
+- ***Faza*** i ***Podfaza*** proizvodnje
 
-- [***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimento
+- [***Jedinica mjere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) kretanja
 
-- ***Quantità da produzione***, cioè il consuntivo rilevato dalle dichiarazioni di produzione
+- ***Količina proizvodnje***, tj. obračunata količina prema prijavama iz proizvodnje
 
-- ***Quantità da fase ciclo***, cioè la quantità rispetto al teorico di ciclo
+- ***Količina faze ciklusa***, tj. količina u odnosu na teorijski ciklus
 
-- ***Quantità da fase standard***, cioè la quantità rispetto alla fase standard
+- ***Standardna fazna količina***, tj. količina u odnosu na standardnu fazu
 
-- ***Lista tempi*** va di pari passo con il tipo di quantità rilevato nei campi precedenti
+- ***Vremenski popis*** usklađen s vrstom količine evidentirane u prethodnim poljima
 
-- ***Sorgente*** indica qual è l'origine del dato rilevato, tipicamente la *Produzione*
+- ***Izvor*** označava podrijetlo evidentiranih podataka, obično *proizvodnju*
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Nije dopušteno brisanje, izmjena ili unos novih podataka u prikazanoj tablici.
