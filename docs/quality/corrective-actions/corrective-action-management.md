@@ -144,7 +144,7 @@ Le informazioni gestite sono:
 >> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
 >> All'atto dell'inserimento della data vengono automaticamente proposte: *Verificata da utente* e *Verificata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Verificata*.   
 >>
->> **Esito complessivo**: è l'*Esito* che ha viene attribuito alla verifica dell'*Azione correttiva*.   
+>> **Esito complessivo**: è l'*Esito* che viene attribuito alla verifica dell'*Azione correttiva*.   
 >> **Verifica efficacia**: annotazioni libere sull'esito della verifica o meno dell'efficacia dell'*Azione correttiva*.   
 >> **Verificata da utente**: è l'*Utente A.R.M.* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
 >> **Verificata da persona**: è il *Dipendente* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
@@ -160,18 +160,18 @@ Le informazioni gestite sono:
 >> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
 >> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
 >> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che ha viene attribuito alla verifica intermedia dell'*Azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che ha viene attribuito alla verifica dell'*Azione correttiva*.   
+>> **Esito**: è l'*Esito* che viene attribuito alla verifica intermedia dell'*Azione correttiva*.   
+>> **Descrizione esito**: è la descrizione dell'*Esito* che viene attribuito alla verifica dell'*Azione correttiva*.   
 >
 > **Verificata da utente**   
->> **Utente**: è l'*Utente* che ha effettuato la verifica intermedia.   
+>> **Utente**: è l'*Utente A.R.M.* che ha effettuato la verifica intermedia.   
 >
 > **Verificata da persona**   
 >> **Operatore**: è il codice del *Dipendente* che ha effettuato la verifica intermedia.   
 >> **Cognome**: è il cognome del *Dipendente* che ha effettuato la verifica intermedia.   
 >> **Nome**: è il nome del *Dipendente* che ha effettuato la verifica intermedia.   
 >
-> **Verificata da persona**   
+> **Verificata da funzione**   
 >> **Codice**: è il codice della *Funzione aziendale* che ha effettuato la verifica intermedia.   
 >> **Descrizione**: è la descrizione della *Funzione aziendale* che ha effettuato la verifica intermedia.   
 >
@@ -180,7 +180,7 @@ Le informazioni gestite sono:
 
 ### Soggetti coinvolti
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione dell'*Azione correttiva*.   
+Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione dell'*Azione correttiva*, i motivi del coinvolgimento, date previste attuazione e di chiusura.   
 L'elenco si compone delle seguenti informazioni:   
 > **Funzione aziendale**   
 >> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
@@ -206,15 +206,15 @@ L'elenco si compone delle seguenti informazioni:
 
 ### Riferimento documenti di origine
 
-Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine all'*Azione correttiva* in gestione.   
-Le informazioni visibili sono:   
+Nel tabulatore sono contenuti i riferimenti ai documenti che hanno dato origine all'*Azione correttiva* in gestione.   
+Le informazioni presenti sono:   
 > **Reclamo**: expander dove è possibile visualizzare:   
 >
 >> **Reclamo**: è il riferimento al *Reclamo* di origine.   
 >> **Gestione difetti**: è il riferimento alla riga di *Gestione difetti* del *Reclamo* di origine.   
->> **Azione di contenimento**: è il riferimento alla riga dell'*Azione di contenimento* del *Reclamo* di modello *8D - Problem solving* di origine.   
->> **Azione permanente**: è il riferimento alla riga dell'*Azione permanente* del *Reclamo* di modello *8D - Problem solving* di origine.   
->> **Fase**: è il riferimento alla riga della *Fase di attuazione* del *Reclamo* di modello *8D - Problem solving* di origine.   
+>> **Azione di contenimento**: è il riferimento alla riga dell'*Azione di contenimento* di origine del *Reclamo* modello *8D - Problem solving* .   
+>> **Azione permanente**: è il riferimento alla riga dell'*Azione permanente* di origine del *Reclamo* modello *8D - Problem solving*.   
+>> **Fase**: è il riferimento alla riga della *Fase di attuazione* di origine del *Reclamo* modello *8D - Problem solving* di origine.   
 >
 > **Non conformità**: expander dove è possibile visualizzare:   
 >
@@ -252,7 +252,7 @@ L'elenco si compone delle seguenti informazioni:
 > **Chiusa**: indica che il *Programma di azione correttiva* è *Chiusa*.   
 > **Costo effettivo**: è il costo totale sostenuto per la gestione del *Programma di azione correttiva*.   
 > **Verificata**: indica che il *Programma di azione correttiva* è stata *Verificata*.   
-> **Esito**: è l'*Esito* che ha viene attribuito alla verifica del *Programma di azione correttiva*.   
+> **Esito**: è l'*Esito* che viene attribuito alla verifica del *Programma di azione correttiva*.   
 > **Descrizione esito**: è la descrizione dell'*Esito*.   
 
 
@@ -277,7 +277,7 @@ Le informazioni gestite sono:
 >> **Chiuso da utente**: è l'*Utente A.R.M.* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
 >> **Chiuso da persona**: è il *Dipendente* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
 >> **Chiuso da funzione**: è la *Funzione aziendale* che ha chiuso il *Programma di azione correttiva*.   
->> Abilitata solamente se il *Programma di azione correttiva* è *Chiuso*.   
+>> Abilitato solamente se il *Programma di azione correttiva* è *Chiuso*.   
 >
 > **Note**: annotazioni libere.   
 > **Riferimento azione correttiva**: è il riferimento all'*Azione correttiva* che potrebbe essere creata dal *Programma di azione correttiva*.   
@@ -296,7 +296,7 @@ Le informazioni gestite sono:
 >> **Verificato da utente**: è l'*Utente A.R.M.* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
 >> **Verificato da persona**: è il *Dipendente* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
 >> **Verificato da funzione**: è la *Funzione aziendale* che ha verificato il *Programma di azione correttiva*.   
->> Abilitata solamente se il *Programma di azione correttiva* è *Verificato*.   
+>> Abilitato solamente se il *Programma di azione correttiva* è *Verificato*.   
 
 
 ### Verifiche intermedie programma azione
@@ -307,8 +307,8 @@ Le informazioni gestite sono:
 >> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
 >> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
 >> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che ha viene attribuito alla verifica intermedia del *Programma di azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che ha viene attribuito alla verifica del *Programma di azione correttiva*.   
+>> **Esito**: è l'*Esito* che viene attribuito alla verifica intermedia del *Programma di azione correttiva*.   
+>> **Descrizione esito**: è la descrizione dell'*Esito* che viene attribuito alla verifica del *Programma di azione correttiva*.   
 >
 > **Verificata da utente**   
 >> **Utente**: è l'*Utente* che ha effettuato la verifica intermedia.   
@@ -327,7 +327,7 @@ Le informazioni gestite sono:
 
 ### Soggetti coinvolti
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Programma di azione correttiva*.   
+Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Programma di azione correttiva*, i motivi del coinvolgimento, date previste attuazione e di chiusura.   
 L'elenco si compone delle seguenti informazioni:   
 > **Funzione aziendale**   
 >> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
