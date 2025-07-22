@@ -1,6 +1,6 @@
 ---
-title: Controllo scarti di produzione
+title: Control deșeuri din producție
 sidebar_position: 3
 ---
 
-Questa form consente di stampare il report **Controllo scarti di produzione** che per ogni articolo riporta tutte le quantità scartate nel periodo selezionato.
+Acest form permite listarea raportului **Control deșeuri din producție** care, pentru fiecare articol, afișează toate cantitățile rebutate din perioada selectată.

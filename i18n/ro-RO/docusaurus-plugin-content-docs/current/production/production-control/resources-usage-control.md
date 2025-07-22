@@ -1,14 +1,15 @@
+
 ---
-title: Controllo utilizzo risorse
+title: Control utilizare resurse
 sidebar_position: 4
 ---
 
-Questa form consente di stampare il report **Controllo utilizzo risorse**.
+Acest form permite listarea raportului **Control utilizare resurse**.
 
-Una volta selezionato l'oggetto di riferimento tra:
+După ce a fost selectat obiectul de referință dintre opțiunile:
 
-- Centro di lavoro
-- Macchina
-- Manodopera
+- Centru de lucru  
+- Mașină  
+- Manoperă  
 
-il report permette di visualizzare tutte le informazioni relative alle fasi che interessano l'oggetto selezionato e ne determinano l'utilizzo.
+raportul permite vizualizarea tuturor informațiilor aferente fazelor care privesc obiectul selectat și îi determină utilizarea.
