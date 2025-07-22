@@ -1,13 +1,13 @@
 ---
-title: Controllo utilizzo materiali
+title: Control utilizare materiale
 sidebar_position: 5
 ---
 
-Questa form consente di stampare il report **Controllo utilizzo materiali** che permette di visualizzare l'impiego di tutti i materiali raggruppati per:
+Această form permite tipărirea raportului **Control utilizare materiale**, care afișează utilizarea tuturor materialelor grupate pe:
 
-- commesse di produzione 
-- Ordine
-- Articolo
-- Data impiego
+- comenzi de producție   
+- ordin  
+- articol  
+- data consum  
 
-con per ciascuno l'indicazione delle relative quantità prelevate, consumate e scartate.
+cu detalii, pentru fiecare, despre cantitățile ieșite, consumate și rebutate.

@@ -1,16 +1,16 @@
 ---
-title: Verifica avanzamento di produzione
+title: Verifică avansarea producției
 sidebar_position: 1
 ---
 
-Questa form consente di stampare il report **Verifica avanzamento di produzione** che per ogni ordine di produzione mostra lo stato di avanzamento delle singole fasi tramite una *barra di avanzamento*, in base al tempo o alla quantità prodotta.
+Acest form permite tipărirea raportului **Verifică avansarea producției**, care, pentru fiecare ordin de producție, afișează starea de avansare a fiecărei faze  printr-o *bară de avansare*, în funcție de timpul sau de cantitatea produsă.
 
-Nel report è presente un campo *Stato* che indica lo stato della fase tramite un quadratino colorato con il seguente significato:
+În raport există un câmp *Stare* care indică starea fazei printr-un pătrat colorat cu următoarea semnificație:
 
-- **Verde**: indica che la fase non è in ritardo;       
-- **Rosso**: indica che la fase è in ritardo;        
-- **Grigio**: indica che la fase è evasa.
+- **Verde**: indică faptul că faza nu este în întârziere;  
+- **Roșu**: indică faptul că faza este în întârziere;  
+- **Gri**: indică faptul că faza este executată.
 
-La **Percentuale di avanzamento** della fase nel grafico, viene calcolata sulla base della somma delle quantità prodotte e scartate nelle dichiarazioni di produzione, oppure sulla base del valore maggiore tra la somma dei tempi macchina e la somma dei tempi manodopera. L'utente, può scegliere il criterio di valorizzazione della **Percentuale di avanzamento** tramite gli appositi flag presenti nel box *Previsione fine lavori* del filtro del report.       
-Nel caso in cui la **Percentuale di avanzamento** superi il 100 % verrà mostrato, accanto al grafico, un *Triangolino rosso* che indica appunto il superamento del valore preventivato.
+**Procentul de avansare** al fazei din grafic este calculat pe baza sumei cantităților produse și rebutate în declarațiile de producție, sau pe baza valorii mai mari dintre suma timpilor mașină și suma timpilor manoperă. Utilizatorul poate alege criteriul de valorificare a **Procentului de avansare** prin intermediul opțiunilor dedicate prezente în *Previziune sfârșit lucrări* din filtrul raportului.  
 
+În cazul în care **Procentul de avansare** depășește 100 %, lângă grafic va fi afișat un *Triunghi roșu* care indică depășirea valorii estimate.
