@@ -1,18 +1,18 @@
 ---
-title: Dichiarazioni
+title: Declarații
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-Il modulo per le **Dichiarazioni di Produzione** di Fluentis è uno strumento essenziale per gestire e monitorare efficacemente il ciclo produttivo. Ogni dichiarazione inizia con un'apertura, seguita da possibili segnalazioni di avanzamento, sospensione, ripresa e chiusura del processo. Gli operatori possono facilmente inserire dati cruciali come quantità prodotte, scartate, materiali impiegati, personale coinvolto e indicare lotti e serial number, garantendo una tracciabilità completa delle operazioni produttive; inoltre, al loro interno è anche integrato il controllo qualità. Questo approccio strutturato ottimizza l'efficienza, migliorando il controllo delle attività e la gestione delle risorse.
+:::important Utilizare
+Modulul este un instrument esențial pentru gestionarea și monitorizarea eficientă a ciclului de producție. Fiecare declarație începe cu o deschidere, urmată de posibile semnalări de avansare, întrerupere, reluare și închidere a procesului. Operatorii pot introduce cu ușurință date esențiale precum cantități produse, cantități rebutate, materiale utilizate, personal implicat, precum și să indice loturi și numere seriale, asigurând trasabilitatea completă a operațiunilor de producție. În plus, în interiorul lor este integrat și controlul calității. Această abordare structurată optimizează eficiența, îmbunătățind controlul activităților și gestionarea resurselor.
 :::
 
-Il modulo **Dichiarazioni** consente di gestire le dichiarazioni di produzione.
+Modulul **Declarații** permite gestionarea declarațiilor de producție.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-:::note Nota
-Nel caso in cui si voglia visualizzare anche le dichiarazioni di produzione già registrate, è necessario abilitare il flag "Registrato" nel filtro della form.
+:::note Notă
+În cazul în care se dorește afișarea declarațiilor de producție deja înregistrate, este necesar să fie activată opțiunea *Înregistrat* în filtrul form-ului.
 :::
