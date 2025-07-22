@@ -1,6 +1,6 @@
 ---
-title: Conti non utilizzati in controlling
+title: Konta koja se ne koriste u kontrolingu
 sidebar_position: 1
 ---
 
-La maschera consente di visualizzare la lista dei conti non utilizzati per il controlling, così come memorizzati ad ogni elaborazione di una nuova *Chiusura infrannuale*. Da questa maschera, nel caso sia necessario, sarà possibile intervenire per allineare in corsa i dati di chiusure già effettuate, quando ci si rendesse conto della necessità di una modifica delle logiche applicate in precedenza.
+Ovdje se omogućuje prikaz popisa konta koja nisu korištena u kontrolingu, pošto su zabilježena tijekom svake obrade nove *privremenog zatvaranja*. Ako je potrebno, moguće je izvršiti intervenciju radi usklađivanja već provedenih zatvaranja, u slučaju da se utvrdi potreba za izmjenom ranije primijenjenih logika
