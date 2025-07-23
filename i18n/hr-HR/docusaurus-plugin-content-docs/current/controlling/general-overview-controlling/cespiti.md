@@ -1,15 +1,15 @@
 ---
-title: Cespiti per il controlling
+title: Osnovna sredstva u kontrolingu
 sidebar_position: 2.6
 --- 
 
-Sesto step sono i cespiti ovvero le quote di ammortamento che rappresentano una componente importante nella strutturazione dei nostri costi.
+Sljedeći korak su osnovna sredstva, odnosno amortizacijske stope koje predstavljaju važnu komponentu u strukturiranju troškova
 
-Dal punto di vista del Controllo di gestione è importante poter calcolare queste quote di ammortamento in un’ottica *tecnica*, svincolandoci da quelle che sono le logiche fiscali e civilistiche che sono alterate rispetto alle necessità del controllo. Dobbiamo avere la possibilità eventualmente di sostituire il costo storico di acquisto con un costo di sostituzione quindi un costo più aggiornato e avere la possibilità di stabilire la durata tecnica indipendentemente dalle tabelle ministeriali, così come di applicare un ammortamento senza verifica del residuo per considerare il costo del macchinario anche quando questo contabilmente è completamente ammortizzato.
-Tramite la durata tecnica vado ad individuare le quote di ammortamento calcolate in funzione dei giorni solari dell’anno e non legate alle logiche fiscali di prodotto che per il primo anno sono del 50%, può essere ammortizzato indipendentemente dalla data di entrata in funzione. Ad esempio, se io acquisto un cespite il primo di gennaio o il 31 dicembre fiscalmente non cambia nulla poiché ho sempre il 50% di quota ammortizzabile. Gestionalmente questo non va bene poiché se lo acquisto il primo di gennaio avrò 365 giorni di ammortamento da considerare, se lo acquisto il 31/12 ne avrò solo uno.
-E' quindi importante valutare con attenzione la situazione dei cespiti (ad es. per un'azienda con un parco macchine antiquato da rinnovare probabilmente è da considerare l'applicazione di un ammortamento 'senza residuo', per non sovrastimare la marginalità di prodotto/progetto che si ottiene)
+Iz perspektive kontrolinga važno je moći izračunati te amortizacijske stope s tehničkog stajališta, neovisno o fiskalnim i računovodstvenim pravilima, koja su često prilagođena drugačijim potrebama. Bitno je imati mogućnost zamjene povijesnog troška nabave s troškom zamjene, dakle ažuriranijim troškom, te mogućnost određivanja tehničkog vijeka trajanja neovisno o službenim tablicama. Također, potrebno je omogućiti amortizaciju bez provjere preostale vrijednosti kako bi se u troškovima prikazao i stroj koji je računovodstveno već potpuno amortiziran.
+Kroz tehnički vijek trajanja moguće je odrediti amortizacijske stope na temelju kalendarskih dana u godini, a ne prema fiskalnim pravilima koja, primjerice, za prvu godinu predviđaju 50% amortizacije, bez obzira na datum puštanja u upotrebu. Primjerice, ako se  osnovno sredstvo nabavi 1. siječnja ili 31. prosinca, s fiskalnog aspekta nema razlike jer je amortizacijska stopa uvijek 50%. Međutim, u upravljačkom računovodstvu to nije prihvatljivo jer, ako je sredstvo  nabavljeno 1. siječnja, treba uzeti u obzir 365 dana amortizacije, dok će za kupnju 31. prosinca biti samo jedan dan. Stoga je važno pažljivo procijeniti situaciju s
+osnovnim sredstvima – primjerice, kod poduzeća s dotrajalim strojevima koje treba obnoviti može biti korisno primijeniti amortizaciju "bez preostale vrijednosti" kako bi se izbjeglo precjenjivanje profitabilnosti proizvoda ili projekata.
 
 
-:::tip Nota
-L'elaborazione dei dati degli ammortamenti di periodo contabili e di quelli extracontabili di Contabilità gestionale possono essere eseguiti parallelamente, con l'accortezza di escludere nel piano dei conti l'uso del dato contabile nel controlling: uno avrà valenza per le Chiusure infrannuali e quindi per il bilancio riclassificato di contabilità, l'altro si andrà ad utilizzare extracontabilmente solo all'interno delle simulazioni del controlling.
+:::tip NAPOMENA
+Obrada podataka o računovodstvenim i izvanknjigovodstvenim amortizacijama za kontroling može se provoditi paralelno, uz osiguranje da se u kontnom planu isključi korištenje računovodstvenih podataka u kontrolingu. Računovodstveni podaci koriste se za periodična zatvaranja i klasificiranu bilancu, dok se izvanknjigovodstveni podaci koriste isključivo za simulacije u kontrolingu.
 :::
