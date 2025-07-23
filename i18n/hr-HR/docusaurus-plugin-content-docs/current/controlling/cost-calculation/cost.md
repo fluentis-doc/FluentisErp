@@ -1,21 +1,23 @@
 ---
-title: Calcolo costo
+title: Izračun troškova
 sidebar_position: 2
 ---
 
-Nella parte superiore della maschera è presente il filtro, nel quale è possibile effettuare una ricerca più mirata per gli articoli da considerare nella procedura; nella griglia con i risultati di ricerca è possibile selezionare gli articoli da considerare. La procedura viene effettuata con il pulsante della ribbon bar **Calcolo costi articoli selezionati**; i risultati della procedura di calcolo saranno riportati direttamente nella griglia degli articoli. Con il pulsante della ribbon bar **Valorizzazione assiemi**, invece, viene aperta la relativa stampa, che a sua volta conterrà le stampe di Valorizzazione Assiemi.          
-Gli articoli selezionati nella procedura di Calcolo Costo verranno valorizzati in base all’opzione selezionata nella sezione apposita **Valorizzazione a**:
+U gornjem dijelu obrasca nalazi se filtar gdje je moguće preciznije pretraživanje artikala koji će biti uključeni u
+postupak. U prikazu rezultata pretrage moguće je odabrati artikle koji će se uzeti u obzir. Postupak se pokreće pomoću tipke **Izračunavanje troškova odabranih artikala**; u alatnoj traci. Rezultati postupka izračuna bit će izravno prikazani u donjoj tablici. Pomoću gumba **Valorizacija sastavnica**, otvara se odgovarajući ispis, koji sadrži razne ispise. 
+Odabrani artikli u postupku izračuna troškova bit će valorizirani prema opciji označenoj u odjeljku **Valorizacija prema**:
 
--	**Costo ultimo** e **Costo medio**: per costo ultimo si intende l'ultimo costo di acquisto (il più recente), mentre per costo medio ponderato si intende il costo medio che deriva dalle movimentazioni di magazzino. Questo valore è presente in anagrafica articolo, tab Costi.
+-	**Posljednji trošak** i **prosječni trošak**: Zadnji trošak odnosi se na posljednju nabavnu cijenu. Prosječni ponderirani trošak izračunava se na temelju skladišnih kretanja. Ove vrijednosti nalaze se u šifrarniku artikala, kartica Troškovi.
 
--	**Costo standard/costo standard anno prossimo**: il costo standard è un costo impostato manualmente o dalla procedura di calcolo costo e indica il costo di riferimento per un dato articolo da usare durante l'anno. Solitamente è un costo che viene aggiornato all'inizio o alla fine dell'anno. Per gli articoli di acquisto solitamente corrisponde al costo medio mentre per gli altri articoli viene calcolato dalla procedura di calcolo costo che si trova nell'area Controlling, come somma dei costi dei materiali e dei costi delle fasi di produzione. Tutti questi costi possono essere usati per le valorizzazioni della distinta base, delle rimanenze di magazzino oppure (per gli articoli di acquisto) per la valorizzazione degli ordini di produzione (e relativi movimenti di carico) quando si carica a magazzino l'articolo di un ordine di produzione. Questo valore è presente in anagrafica articolo, tab Costi.
+-	**Standardni trošak / standardna iduća godina**: Standardni trošak je ručno postavljena vrijednost ili rezultat postupka izračuna troškova. Označava referentni trošak artikla koji se koristi tijekom godine. Obično se ažurira na početku ili kraju godine. Za nabavne artikle obično odgovara prosječnom trošku. Za ostale artikle izračunava se postupkom izračuna troškova u kontrolingu kao zbroj troškova materijala i faza proizvodnje. Može se koristiti za valorizaciju strukture proizvoda,
+skladišnih zaliha ili valorizaciju proizvodnih naloga (i pripadajućih skladišnih kretanja). Ova vrijednost se također nalazi u šifrarniku artikala, kartica Troškovi.
 
--	**Da area gestionale**: se viene selezionata questa opzione, è necessario indicare accanto l’Area gestionale dalla quale prendere il costo. L’area gestionale è una tabella composta da due griglie: nella prima si inseriscono Codice e Descrizione; nella seconda invece è possibile imputare una serie di dati quali il Tipo costo da utilizzare per l’area. La tabella Tipo costo può contenere a sua volta svariate tipologie di costo; può anche basarsi sui listini di vendita o acquisto. 
 
-Il flag **Aggiorna costi articoli** permette di aggiornare i costi in anagrafica articolo. Senza questo flag invece il calcolo non modificherà i valori. È possibile scegliere di Considerare i lotti economici ed è inoltre possibile inserire una data dalla quale considerare validi i nuovi costi.
-La parte sinistra **Parametri strutture Distinte base e Cicli** serve a indicare quale **Versione Articolo** considerare e quale **Ciclo** considerare dell’articolo, per la procedura di Calcolo costi. Basterà selezionare il flag relativo e i relativi Versione e/o Ciclo. 
+-	**Iz područja upravljanja**: Ako se odabere ova opcija, potrebno je navesti Upravljačko područje iz kojeg će se preuzeti trošak. Upravljačko područje sadrži dva prikaza. Prvi je unos šifre i opisa. Drugi je unos različitih parametara, uključujući vrstu troška koja će se koristiti za to područje. Tablica Vrsta troška može sadržavati različite vrste troškova i može se temeljiti na prodajnim ili nabavnim cjenicima.
 
-I risultati della procedura sono visibili cliccando nella ribbon bar **Calcolo costi articoli selezionati**; in base ai parametri inseriti, saranno ricalcolate solo alcune colonne.
+Opcija **Ažuriranje troška stavke** omogućuje ažuriranje troškova u šifrarniku artikla. Ako nije označena, izračun neće mijenjati postojeće vrijednosti. Moguće je odabrati opciju Uzimi u obzir jeftiniju seriju materijala, kao i datum od kojeg novi troškovi postaju valjani.  Lijevi dio ekrana, **Parametri popisa materijala i ciklusa proizvodnje** služi za određivanje **verzije artikla i ciklusa** koji će se uzeti u obzir tijekom postupka izračuna troškova. Dovoljno je označiti pripadajući checkbox i unijeti verziju i/ili ciklus.
+
+Rezultati postupka vidljivi su klikom na tipku **Izračunavanje troškova odabranih artikala** u alatnoj traci. Ovisno o unesenim parametrima, ponovo će se izračunati samo određeni stupci.
 
 -------------
 
