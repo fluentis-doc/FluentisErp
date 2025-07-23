@@ -1,11 +1,11 @@
 ---
-title: Ricalcolo costo
+title: Preračun troškova
 sidebar_position: 3
 ---
 
-La procedura di **Ricalcolo costo** presente nel Controlling permette di ricalcolare i costi ultimo e medio degli articoli in base ai movimenti di magazzino.
-Nella parte superiore della maschera è presente il filtro, nel quale è possibile effettuare una ricerca più mirata per gli articoli da considerare nella procedura; nella griglia con i risultati di ricerca è possibile selezionare gli articoli da considerare. La procedura viene effettuata con il pulsante della ribbon bar **Ricalcolo costi**; i risultati della procedura di calcolo saranno riportati direttamente nella griglia degli articoli.
+Postupak **Preračun troškova** dostupan u modulu kontrolinga, omogućuje ponovni izračun zadnjeg i prosječnog troška artikala na temelju skladišnih kretanja.
+U gornjem dijelu obrasca nalazi se filtar, gdje je moguće preciznije pretraživanje artikala koji će biti uključeni u postupak. U prikazu rezultata pretrage moguće je odabrati artikle koji će se uzeti u obzir. Postupak se pokreće pomoću tipke **Preračun troškova**; u alatnoj traci. Rezultati izračuna bit će izravno prikazani u tablici.
 
-:::note Nota
-È importante tenere presente che i movimenti di magazzino considerati dalla procedura per il calcolo del *Costo ultimo* o del *Costo medio* sono tutti quelli a partire dalla data di ultima chiusura più un giorno ad oggi; inoltre, i movimenti devono essere effettuati con causali che hanno i seguenti flag abilitati: *Aggiorna costo ultimo* e/o *Aggiorna costo medio* e *Interesse fiscale*.
+:::note NAPOMENA
+Važno je imati na umu da skladišna kretanja koja postupak uzima u obzir za izračun *zadnjeg troška* ili *prosječnog troška* obuhvaćaju sva kretanja od datuma posljednjeg zatvaranja plus jedan dan do danas. Osim toga, kretanja moraju biti evidentirana pomoću predloška koji imaju omogućene sljedeće oznake (flagove): *Ažuriraj posljednju cijenu* i/ili *Ažuriraj prosječnu cijenu* i *Zatezna kamata*.
 :::
