@@ -33,7 +33,7 @@ It is possible to create a *Credit Note* towards the sender of the complaint.
 The button is enabled only if the complaint has been saved, approved, and there is a *Value to be credited*.   
 A data request/confirmation is displayed for:   
 > **Invoice Type**: it is the document type of the new credit note (mandatory data); the invoice type entered in the complaint type of the source complaint is proposed.   
-> **Description**: it is the description that will be used for the expense item line of the new credit note (mandatory data); the description parameterized in the [Complaint Valorization Parameters](/docs/quality/claims-and-non-compliance/non-compliances/procedure), section *Complaint References* is proposed.   
+> **Description**: it is the description that will be used for the expense item line of the new credit note (mandatory data); the description parameterized in the [Complaint Valorization Parameters](//docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation), section *Complaint References* is proposed.   
 > **VAT**: it is the *VAT Type* that will be used for the *Expense Item* line of the new *Credit Note*.  
 > The *VAT Type* is proposed with the following priorities:  
 > 1. if there is a *Declaration of intent*, the *VAT Type* present in the document is considered;  
@@ -216,6 +216,6 @@ In the tab, it is possible to enter information related to debit and credit docu
 > **Valorized** and **Credit Document Reference**: read-only information that indicates whether the complaint has been valued and the reference to the generated credit note.   
 
 The subsequent sections of the management vary based on the model specified in the complaint type: *Defect Management* or *8D - problem solving*:
-> ### [Defect Management](/docs/quality/claims-and-non-compliance/claims/claim-dm.md)   
+> ### [Defect Management](/docs/quality/claims-and-non-compliance/claims/claim-dm)   
 >   
-> ### [8D Problem Solving](/docs/quality/claims-and-non-compliance/claims/claim-8d.md)
+> ### [8D Problem Solving](/docs/quality/claims-and-non-compliance/claims/claim-8d)
