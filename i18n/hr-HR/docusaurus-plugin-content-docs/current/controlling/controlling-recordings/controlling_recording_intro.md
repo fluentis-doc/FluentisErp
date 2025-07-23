@@ -38,6 +38,6 @@ import Link from '@docusaurus/Link';
         <p>- *Povijest fizičkih kretanja po nalogu*: povijesna baza vremena i količina obrađenih na projektu/nalogu</p>
         <p>- *Upravljački zapisi*: povijesna baza izravnih troškova i prihoda projekta</p>
         <p>- *Vrijednosti iz proizvodnje*: materijali i obrade izravno korišteni na projektu/nalogu</p>
-        <p>- *Konsolidirani pregled naloga*: konačna baza podataka s izravnim, neizravnim troškovima i troškovima raspodijeljenim putem drivere</p>
+        <p>- *Konsolidirani pregled naloga*: konačna baza podataka s izravnim, neizravnim troškovima i troškovima raspodijeljenim putem drivera</p>
     </div>
 </div>
