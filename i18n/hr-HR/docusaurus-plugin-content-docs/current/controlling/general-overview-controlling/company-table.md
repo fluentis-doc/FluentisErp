@@ -1,14 +1,15 @@
 ---
-title: Tabella Società
+title: Tablica Poduzeća
 sidebar_position: 2.1
 ---
 
-La prima decisione da prendere è sul tipo di controlling che l'azienda vuole gestire: se l'obiettivo è quello di costruire un sistema di centri aziendali, tra loro collegati da logiche di ribaltamento di valori di costo/ricavo, al fine di valorizzare la contabilità analitica in tutte le sue caratteristiche è necessario entrare nella ***Tabella società*** e impostare il flag di gestione del *Controlling*, presente nella scheda *Altre impostazioni*.
+Prva odluka koju treba donijeti odnosi se na vrstu kontrolinga koju tvrtka želi implementirati. Ako je cilj izgraditi sustav poslovnih centara međusobno povezanih logikom prijenosa vrijednosti troškova i prihoda, kako bi se omogućila analitička
+računovodstvena valorizacija, potrebno je otvoriti ***Tablicu tvrtke*** i označiti opciju upravljanja *Kontrolingom*, (nalazi se u kartici *Ostale postavke*).
 
-Continueremo la configurazione spostandoci nella griglia *Divisioni* in alto a destra, nella quale andremo ad impostare la periodicità *mensile* (che è l'opzione di default) o *settimanale*.
+Nakon toga, konfiguracija se nastavlja u obrascu *Odjeli* smještenoj u gornjem desnom kutu, gdje se postavlja učestalost izvještavanja. To može biti *Mjesečno* (zadana opcija) ili o *Tjedno* (može se odabrati ako je potrebna detaljnija analiza).
 
-Generalmente nel controlling valorizziamo solo i movimenti economici dei costi e ricavi, se volessimo portare anche il patrimoniale possiamo impostare il flag 'Importa patrimoniale in controlling'.
+U kontrolingu se obično valoriziraju samo ekonomski pokreti troškova i prihoda. Međutim, ako je potrebno uključiti i bilancu stanja, može se aktivirati opcija *Uvoz imovine u kontroling*.
 
-:::tip Nota
-Se l'azienda è interessata alla sola gestione dei bilanci infrannuali contabili o ad una configurazione di base dei centri aziendali che non preveda driver di ribaltamento fra loro, la gestione *Controlling* in tabella società può essere omessa.
+:::tip NAPOMENA
+Ako je cilj tvrtke isključivo upravljanje unutar računovodstvenim kretanjima ili je osnovna konfiguracija poslovnih centara bez upravljanja prijenosima, tada aktiviranje *kontrolinga* u tablici poduzeća nije nužno.
 :::
