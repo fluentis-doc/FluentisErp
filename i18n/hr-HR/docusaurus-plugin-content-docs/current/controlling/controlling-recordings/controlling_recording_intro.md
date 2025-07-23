@@ -1,42 +1,43 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-All'interno del modulo della Contabilità gestionale abbiamo tutte le procedure di inserimento ed elaborazione dati della contabilità per centro aziendale sulle aree di analisi diverse dall'area di budget: avremo la prima nota dei movimenti fisici o le registrazioni extracontabili di area, lo storico dei dati elaborati (sia fisici che a valore) per l'anno/periodo, le varie visualizzazioni di controllo e di estrazione dati, la visualizzazione del rendiconto consuntivo dei dati per la dimensione di analisi di progetto.
+Unutar modula ‘računovodstvo upravljanja’ nalaze se sve procedure za unos i obradu podataka računovodstva po centrima u područjima analize različitim od područja proračuna: dostupni su zapisi fizičkih kretanja ili vanbilančna knjiženja, povijest
+obrađenih podataka (bilo fizičkih ili vrijednosnih) za godinu/razdoblje, različiti prikazi kontrole i izvlačenja podataka, kao i prikaz izvještaja ostvarenih podataka za analitičku dimenziju projekta.
 
-## Configurazione iniziale del modulo
-Suggeriamo di fare riferimento alla sezione della [*Panoramica Generale Controlling*](/docs/controlling/general-overview-controlling/general-overview) per una overview delle tabelle e degli step logici della configurazione, che deve partire da una analisi precisa della struttura produttiva aziendale e degli obiettivi che si vogliono ottenere implementando il Controllo di Gestione.
+## Početna konfiguracija modula
+Preporučujemo da se obratite odjeljku [*Opći pregled Kontrolinga*](/docs/controlling/general-overview-controlling/general-overview) za uvid u tablice i logičke korake konfiguracije, koja mora započeti preciznom analizom proizvodne strukture poduzeća i ciljeva koje se žele postići implementacijom Kontrolinga.
 
-## Documenti gestiti
+## **Dokumenti koji se obrađuju**
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-        <p>Il modulo è strutturato dalle seguenti sezioni:</p>
-###     Prima nota
-        <p>Una prima nota di entry di dati fisici o di registrazioni dell'area di analisi:</p>
-        <p>- *Registrazione movimenti fisici*: valorizzata da produzione/progetto o manualmente</p>
-        <p>- *Registrazioni extracontabili di area*: valorizzate in automatico da ammortamenti o rimanenze, piuttosto che manuali</p>
-        <p>- *Tariffe standard dei centri*: a gestione manuale</p>
-###     Storico gestionale
-        <p>In questa sezione abbiamo tutti gli storici delle varie base dati elaborate:</p>
-        <p>- *Storico flusso fisico*: la base dati storica dei movimenti fisici</p>
-        <p>- *Storico ammortamenti*: la base dati storica degli ammortamenti elaborati</p>
-        <p>- *Storico registrazioni gestionali*: la base dati mensilizzata e rielaborata da tutti i driver</p>
-        <p>- *Storico indici*: la base dati storica degli indici di costo elaborati sui vari centri</p>
+        <p>Modul je strukturiran kroz sljedeće sekcije:</p>
+###     Dnevnik unosa
+        <p>Dnevnik početnog unosa fizičkih podataka ili zapisa iz područja analize:</p>
+        <p>- *Knjiženje fizičkih kretanja*: vrednovanje iz proizvodnje/projekta ili ručno</p>
+        <p>- *Vanjskobilančni zapisi iz područja*: automatski generirani iz amortizacije ili zaliha, ili uneseni ručno</p>
+        <p>- *Standardne tarife centara troška*: ručno upravljanje</p>
+###     Povijesni zapisi upravljanja
+        <p>U ovoj sekciji nalaze se svi povijesni podaci različitih obrađenih baza:</p>
+        <p>- *Povijesni fizički tok*: povijesna baza fizičkih kretanja</p>
+        <p>- *Povijest amortizacije*: povijesna baza obrađenih amortizacija</p>
+        <p>- *Povijest zapisa upravljanja*: baza podataka obrađena po mjesecima i reobrađena pomoću svih drivere</p>
+        <p>- *Povijest indeksa*: povijesna baza troškovnih pokazatelja obrađenih po centrima</p>
 ###     Procedure
-        <p>In questa sezione troviamo le varie procedure di ripresa e elaborazione dati:</p>
-        <p>- *Ripresa dati da produzione*: per riprendere tempi e costi dai progetti, tempi dalla produzione, costi dalle lavorazioni interne/esterne</p>
-        <p>- *Ripresa dati da fatture di vendita*: per riprendere provvigioni e sconti applicati</p>
-        <p>- *Elaborazione periodi*: per elaborare dati fisici, ammortamenti, ed elaborare la base dati applicando driver</p>
-        <p>- *Aggiornamento tariffe di produzione*: per allineare le tariffe dei centri produttivi</p>
-        <p>- *Consolidamento master*: per creare un controlling unificato di gruppo</p>
-###     Storico di progetto
-        <p>In questa sezione abbiamo tutti gli storici delle varie base dati elaborate per chi lavora a progetto/commessa:</p>
-        <p>- *Storico movimenti fisici di commessa*: la base dati storica dei tempi e quantità lavorate su progetto/commessa</p>
-        <p>- *Registrazioni gestionali*: la base dati storica dei costi e ricavi diretti di progetto</p>
-        <p>- *Valori da produzione*: materiali e lavorazioni direttamente utilizzati su progetto/commessa</p>
-        <p>- *Consolidato di commessa*: la base dati risultante con costi diretti, indiretti e driver di ribaltamento di costi generali</p>
+        <p>Ova sekcija sadrži razne procedure za dohvat i obradu podataka:</p>
+        <p>- *Dohvat podataka iz proizvodnje*: dohvat vremena i troškova iz projekata, vremena iz proizvodnje, troškova iz unutarnjih/vanjskih obrada</p>
+        <p>- *Dohvat podataka iz izlaznih računa*: dohvat provizija i primijenjenih popusta</p>
+        <p>- *Obrada razdoblja*: obrada fizičkih podataka, amortizacije i izgradnja baze primjenom drivere</p>
+        <p>- *Ažuriranje tarifa proizvodnje*:  usklađivanje tarifa proizvodnih centara</p>
+        <p>- *Konsolidacija mastera*: stvaranje jedinstvenog grupnog kontrolinga</p>
+###     Povijest projekta
+        <p>Ova sekcija sadrži sve povijesne podatke za korisnike koji rade po projektima/nalozima:</p>
+        <p>- *Povijest fizičkih kretanja po nalogu*: povijesna baza vremena i količina obrađenih na projektu/nalogu</p>
+        <p>- *Upravljački zapisi*: povijesna baza izravnih troškova i prihoda projekta</p>
+        <p>- *Vrijednosti iz proizvodnje*: materijali i obrade izravno korišteni na projektu/nalogu</p>
+        <p>- *Konsolidirani pregled naloga*: konačna baza podataka s izravnim, neizravnim troškovima i troškovima raspodijeljenim putem drivere</p>
     </div>
 </div>
