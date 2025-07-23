@@ -22,7 +22,7 @@ Di seguito riportati alcuni dei dati presenti nella griglia dei risultati:
 **Quantità residua**: riporta il residuo dell'ordine non ancora evaso;          
 **Ordine presente in altro piano carico**: questo flag indica che l'ordine è già presente in un altro piano;         
 **Ordine presente in altro piano carico aperto**: questo flag indica che l'ordine è già presente in un altro piano aperto; questi due flag sono utili se l'utente non imposta diversi colori per le righe (nei [parametri](/docs/configurations/parameters/logistics/load-plan-parameters));          
-**Articolo**: in questa colonna è possibile inserire la quantità dell'articolo che si vuole evadere; questa quantità può essere diversa dalla quantità residua.           
+**Articolo**: in questa colonna è possibile inserire la quantità dell'articolo che si vuole evadere; questa quantità può essere diversa dalla quantità residua. Il valore *Articoli*, viene calcolato per gli articoli non gestiti ad udc e mentre viene calcolato il *Numero unità di carico* per quelli gestiti ad udc;se il valore *Articoli* è uguale a zero significa che le righe ordine sono senza disponibilità per il piano carico.          
 
 Dopo la selezione delle righe ordine da processare nel piano di carico, è possibile effettuare diverse operazioni con i pulsanti della ribbon bar. Ricordiamo che se nei parametri non è richiesta la disponibilità obbligatoria, allora potranno essere evase righe senza disponibilità.           
 
