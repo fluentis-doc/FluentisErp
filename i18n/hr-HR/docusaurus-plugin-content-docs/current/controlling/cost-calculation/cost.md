@@ -17,7 +17,7 @@ skladišnih zaliha ili valorizaciju proizvodnih naloga (i pripadajućih skladiš
 
 Opcija **Ažuriranje troška stavke** omogućuje ažuriranje troškova u šifrarniku artikla. Ako nije označena, izračun neće mijenjati postojeće vrijednosti. Moguće je odabrati opciju Uzimi u obzir jeftiniju seriju materijala, kao i datum od kojeg novi troškovi postaju valjani.  Lijevi dio ekrana, **Parametri popisa materijala i ciklusa proizvodnje** služi za određivanje **verzije artikla i ciklusa** koji će se uzeti u obzir tijekom postupka izračuna troškova. Dovoljno je označiti pripadajući checkbox i unijeti verziju i/ili ciklus.
 
-Rezultati postupka vidljivi su klikom na tipku **Izračunavanje troškova odabranih artikala** u alatnoj traci. Ovisno o unesenim parametrima, ponovo će se izračunati samo određeni stupci
+Rezultati postupka vidljivi su klikom na tipku **Izračunavanje troškova odabranih artikala** u alatnoj traci. Ovisno o unesenim parametrima, ponovo će se izračunati samo određeni stupci.
 
 -------------
 
