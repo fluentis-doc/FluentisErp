@@ -1,8 +1,8 @@
 ---
-title: Visualizzazione movimenti dei centri nell'area
+title: Prikaz kretanja centara u području
 sidebar_position: 2
 ---
 
-Questa maschera è dedicata alla visualizzazione dei dati presenti nell'analitica delle registrazioni create all'interno della *Contabilità gestionale*.
+Ovak obrazac namijenjen je prikazu podataka prisutnih u analitici zapisa kreiranih unutar *računovodstva*.
 
-Una volta impostata l'area per la quale visualizzare i dati, si potranno quindi chiedere i movimenti dei centri filtrandoli per conto/sottoconto o per codice di centro di costo.
+Nakon što se postavi područje za koje se žele prikazati podaci, moguće je zatražiti kretanja centara, filtrirajući ih prema kontu/podkontu ili prema šifri centra troška.
