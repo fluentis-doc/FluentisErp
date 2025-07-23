@@ -26,7 +26,7 @@ I dati obbligatori da inserire sono: l’*articolo* con eventuale variante, e la
 
 *Pulsante specifico*:  
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di esecuzione del completamento dati**.      
+> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, setup, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di esecuzione del completamento dati**.      
 > **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine pianificato ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine pianificato;  
 > **[Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: consente di aprire la finestra relativa ai parametri MRP dell'articolo;  
 > **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti all'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
@@ -131,7 +131,7 @@ Contiene gli eventuali extra data relativi alla fase selezionata.
 
 ## Attrezzaggio
 
-In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente. 
+In questo tab è possibile definire i tempi relativi al setup della fase selezionata nel tab precedente. 
 
 *Campi specifici*:
 
@@ -139,17 +139,17 @@ In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase
 **Tipo**: indica la tipologia della fase (interna o esterna);  
 **Tipo sovrapposizione**: indica l'eventuale tipologia della sovrapposizione;  
 **UM Tempi**: indica l'unità di misura temporale della fase;  
-**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per l'attrezzaggio;  
-**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per l'attrezzaggio;  
-**Gruppo MDO**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio;  
+**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per setup;  
+**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per setup;  
+**Gruppo MDO**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per setup;  
 **Valore**: indica il valore dell'eventuale sovrapponibilità;  
 **CdL**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
 **Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
 **Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
-**Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
-**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio, che viene sommato al tempo attrezzaggio;  
-**Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
-**Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
+**Tempo setup**: viene inserito il tempo del setup. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
+**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio, che viene sommato al tempo di setup;  
+**Num. macchine**: si indica il numero di macchine impiegate per setup;  
+**Num. operai**: si indica il numero di operai impiegati per setup.
 
 ## Attrezzature
 
