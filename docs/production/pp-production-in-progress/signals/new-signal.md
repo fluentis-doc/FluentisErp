@@ -48,6 +48,7 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 **Ora**: indica l'ora di inizio relativa alla riga della dichiarazione;         
 **Numero**: è un numero progressivo che viene attribuito alle singolo righe della dichiarazione (parte sempre da 1);        
 **Stato dichiarazione**: permette di definire lo stato relativo alla riga della dichiarazione. Può assumere i seguenti valori: *Apertura*, *Sospensione*, *Ripresa*, *Avanzamento* o *Chiusura*;        
+**Attività di setup**: nelle Dichiarazioni di produzione e nelle Dichiarazioni M.E.S. è stato aggiunto un indicatore di Attività di setup. Il flag è abilitato (nelle Dichiarazioni di produzione) e visibile (Dichiarazioni M.E.S.) solamente se la fase dichiarata, o la prima fase di un gruppo di fasi, prevede l'utilizzo di una macchina. Attivare il flag di un'attività di setup comporta l'incremento del contatore del tempo come **Tempo di setup**, altrimenti l'incremento avverrà sul contatore del **Tempo di lavoro**.     
 **Causale di sospensione**: permette di indicare la causale di sospensione da utilizzare per la relativa riga di dichiarazione. Si abilità solo se lo *Stato dichiarazione* è di tipo *Sospensione*;     
 **Lotto**: permette di inserire manualmente il numero di lotto relativo alla quantità prodotta;    
 **Quantità prodotta**: indica la quantità prodotta relativa alla riga della dichiarazione;         
