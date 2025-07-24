@@ -1,15 +1,18 @@
 ---
-title: Individuazione delle fonti dati delle grandezze fisiche utilizzate nel modello di calcolo 
+title: Identifikacija izvora podataka za fizičke veličine korištene u modelu izračuna
 sidebar_position: 2.4
 ---
 
-:::tip Nota
-questa sezione è strettamente legata all'applicazione dei driver estesi del controlling
+:::tip NAPOMENA
+Ovaj odjeljak usko je povezan s primjenom proširenih opcija kontrolinga.
 :::
 
-Una volta che abbiamo identificato la necessità di gestire driver di ribaltamento su quantità fisiche sorgerà la necessità di individuare, come quinto step, le fonti da cui possiamo attingere i valori di queste grandezze fisiche: se parliamo di ore macchina, ore uomo, piuttosto che di tonnellate o altre unità dobbiamo anche individuare dove andiamo ad estrapolarle, così come le [*Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) che si vogliono utilizzare. Generalmente l’ambiente è quello di produzione e, se parliamo di ore macchina ed ore uomo, la fonte sono gli avanzamenti di produzione attraverso i quali siamo in grado mensilmente di andare a rilevare a consuntivo le ore uomo e le ore macchina impiegate per i nostri centri. Ma potrebbe anche essere un dato disponibile in un sistema esterno, dal quale ottenere un file excel da importare facilmente in ***FluentisERP*** tramite l'apposita procedura; oppure potrebbe essere ottenuta tramite la rilevazione delle ore del personale degli uffici tramite il caricamento delle ore nella Dichiarazione ore di progetto; oppure un caricamento generico manuale di inizio anno, da replicare o spalmare in modo proporzionato a seconda della *distribuzione periodi* associata al movimento fisico.
+Nakon što se identificirala potreba za upravljanjem nositelja prijenosa na temelju fizičkih količina, kao peti korak javlja se potreba za određivanjem izvora iz kojih se može preuzeti vrijednosti tih fizičkih veličina. Ako se govori o radnim satima strojeva, radnim satima zaposlenika, tonama ili drugim jedinicama, mora se također identificirati gdje će se to izvući, kao i [*jedinice mjere*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) koje će se koristiti. Općenito, podaci se nalaze u proizvodnom okruženju i, ako se govori o radnim satima strojeva i zaposlenika, izvor su proizvodni izvještaji, pomoću kojih možemo mjesečno evidentirati stvarno utrošene sate rada i strojeva za centre. No, ti
+podaci mogu također biti dostupni u vanjskom sustavu, iz kojeg se može preuzeti Excel datoteka i jednostavno uvesti u ***FluentisERP*** putem odgovarajuće procedure. Također, podaci se mogu dobiti praćenjem radnih sati administrativnog osoblja putem unosa sati na projektu, ili kroz ručni unos na početku godine, koji se potom može *proporcionalno rasporediti* prema periodizaciji povezanoj s fizičkim kretanjima.
 
-:::tip Nota
-L'elaborazione dei [*Cost driver*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) basati sulle quantità, come tutti i cost driver, prevede di default il blocco dell'elaborazione quando la quantità necessaria per la ripartizione del dato d'origine non è presente in uno dei periodi che si sta elaborando. Questo settaggio è utile per non dimenticare la valorizzazione del dato d'origine, soprattutto quando questo è legato ad un inserimento manuale e non da ripresa dati da produzione.
-E' comunque possibile disabilitare il blocco per applicare una media dei valori esistenti (si veda la *gestione errori* nei cost driver) quando ci si trovasse in casi dove può effettivamente mancare una quantità in un periodo (ad es. in periodi di chiusura aziendale tipo agosto)
+:::tip NAPOMENA
+Obrada [*nositelja troškova*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) temeljenih na količinama, kao i svih drugih takvih nositelja, prema zadanim postavkama uključuje blokadu obrade kada potrebna
+količina za raspodjelu izvornog podatka nije dostupna u jednom od razdoblja koja se obrađuju. Ova postavka korisna je kako bi se spriječilo zaboravljanje valorizacije izvornog podatka, posebno kada je riječ o ručnom unosu podataka, a ne o podacima preuzetim iz proizvodnje.
+Ipak, moguće je onemogućiti blokadu kako bi se primijenila prosječna vrijednost postojećih podataka (pogledati *upravljanje greškama* u nositeljima troškova), u slučajevima kada doista može nedostajati količina u određenom razdoblju (npr. tijekom
+kolektivnih godišnjih odmora, poput kolovoza).
 :::
