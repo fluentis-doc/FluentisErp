@@ -63,12 +63,12 @@ Per la riga selezionata, sulla parte destra della griglia, è possibile visualiz
 > *Seleziona nuove fasi*: permette di aprire un help per selezionare nuove fasi da aggiungere a quelle presenti nella griglia principale;      
 > *Elimina fase*: permette di rimuove la fase o le fasi selezionate dalla griglia principale.    
 
-Il tab **Produzione** è dedicato all'inserimento delle informazioni relative ai tempi di produzione / setup e alle quantità prodotte / scartate. Questo è l'unico che non può essere reso invisibile e si compone dei seguenti campi:
+Il tab **Produzione** è dedicato all'inserimento delle informazioni relative ai tempi di produzione / attrezzaggio e alle quantità prodotte / scartate. Questo è l'unico che non può essere reso invisibile e si compone dei seguenti campi:
 > **Macchina**: in questo widget la macchina viene proposta nel seguente modo: se la fase ha una macchina associata questa viene proposta nel widget, solo se nella tabella [Macchine](/docs/configurations/tables/production/machines/), quella macchina ha associato lo stesso centro di lavoro selezionato nel MES. In questo caso poi, l'utente può variare la macchina, ma scegliendola solo tra quelle nella tabella macchine che hanno associato quel centro di lavoro. Nel caso in cui la macchina presente sulla fase non rientri tra quelle associate a quel centro di lavoro, nel widget non sarà proposta nessuna macchina.           
 Inoltre, in questo caso, se l'utente proverà a creare una dichiarazione riceverà un messaggio che lo obbligherà ad inserire una macchina per proseguire. Se invece, alla fase non è associata alcuna macchina, non vi sarà nemmeno l'obbligo di inserirla per poter proseguire con le dichiarazioni.        
 Nel caso in cui vengano selezionate più fasi contemporaneamente, la macchina verrà presa dalla prima fase selezionata (o da quella con la sequenza prioritaria nel caso in cui sia indicata) tra quelle con lo stesso centro di lavoro selezionato nel MES.         
-> **Tempo setup**: permette di inserire / modificare manualmente il tempo di lavoro;   
-> **Attività di setup**: Nelle Dichiarazioni di produzione e nelle Dichiarazioni M.E.S. è stato aggiunto un indicatore di Attività di setup. Il flag è abilitato (nelle Dichiarazioni di produzione) e visibile (Dichiarazioni M.E.S.) solamente se la fase dichiarata, o la prima fase di un gruppo di fasi, prevede l'utilizzo di una macchina. Attivare il flag di un'attività di setup comporta l'incremento del contatore del tempo come **Tempo di setup**, altrimenti l'incremento avverrà sul contatore del **Tempo di lavoro**.        
+> **Tempo attrezzaggio**: permette di inserire / modificare manualmente il tempo di lavoro;   
+> **Attività di attrezzaggio**: Nelle Dichiarazioni di produzione e nelle Dichiarazioni M.E.S. è stato aggiunto un indicatore di Attività di attrezzaggio. Il flag è abilitato (nelle Dichiarazioni di produzione) e visibile (Dichiarazioni M.E.S.) solamente se la fase dichiarata, o la prima fase di un gruppo di fasi, prevede l'utilizzo di una macchina. Attivare il flag di un'attività di attrezzaggio comporta l'incremento del contatore del tempo come **Tempo di attrezzaggio**, altrimenti l'incremento avverrà sul contatore del **Tempo di lavoro**.        
 > **Tempo lavoro**: permette di visualizzare / modificare manualmente il tempo di lavoro; è possibile variarne il comportamento tramite i flag *Inserimento tempo manuale* e *Tempo proposto* presenti in [Risorse di produzione](/docs/production/mes/production-resources). Il tempo viene calcolato automaticamente come differenza tra il tempo della dichiarazione attuale e della precedente;                   
 > **Quantità prodotta**: permette di inserire la quantità prodotta con quella dichiarazione;         
 > **Quantità alternativa**: permette di inserire la quantità alternativa prodotta con quella dichiarazione;      
@@ -88,7 +88,7 @@ Nel caso in cui vengano selezionate più fasi contemporaneamente, la macchina ve
 *Pulsanti specifici*:
 
 > *Seleziona articoli*: permette di selezionare quali articoli inserire nella tabella dei controlli qualità tra quelli prodotti o scartati;       
-> *Importa tutti*: permette di inserire nella tabella dei controlli qualitàtutti gli articoli prodotti o scartati;     
+> *Importa tutti*: permette di inserire nella tabella dei controlli qualità tutti gli articoli prodotti o scartati;     
 > *Elimina controllo*: permette di eliminare il controllo selezionato;           
 > *Duplica prova*: permette di duplicare la prova selezionata;       
 > *Elimina prova*: permette di eliminare la prova selezionata.   
