@@ -1,9 +1,9 @@
 ---
-title: CONTO LAVORO
+title: Sistem lohn 
 sidebar_position: 1
 ---
 
-La gestione Conto Lavoro di **Fluentis** consente la creazione degli ordini di Conto Lavoro sia manualmente dalla produzione, sia automaticamente tramite la conferma delle proposte di riordino generate dalle procedure di analisi fabbisogni.
-Una volta effettuato l'inoltro degli ordini ai fornitori terzisti, il modulo gestisce l'emissione dei documenti di trasporto per i materiali (tenendo in considerazione i materiali forniti direttamente dai terzisti e la loro giacenza in magazzino), infine il caricamento dei documenti di trasporto di acquisto che andranno a scaricare il magazzino del terzista.
-Il modulo è integrato con la distinta base e consente di gestire i codici di rientro dal conto lavoro, attraverso l'organizzazione dei rientri.
-Il tutto è integrato con la gestione dei listini, che consente l'assegnazione del prezzo sia per codice sia, eventualmente, per codice – fase.
+Managementul sistemului lohn din **Fluentis** permite crearea ordinelor în sistem lohn fie manual, din producție, fie automat, prin confirmarea propunerilor de lansare a comenzilor generate de procedurile de analiză a necesarului.  
+După ce au fost transmise ordinele către furnizorii terți, modulul gestionează emiterea documentelor de transport pentru materiale, ținând cont de materialele furnizate direct de terți și de stocul lor în gestiune. În final, se realizează încărcarea documentelor de transport de achiziție, care vor descărca gestiunea terțului.  
+Modulul este integrat cu *Lista de componente* și permite gestionarea codurilor reitrărilor din sistem lohn  prin organizarea reintrărilor.  
+Totul este integrat cu gestionarea ofertelor de preț, care permite atribuirea prețului atât pe cod, cât și pe cod – fază.
