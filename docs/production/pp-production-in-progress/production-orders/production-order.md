@@ -13,7 +13,7 @@ In testata vengono riepilogati tutti i dati riguardanti l'ordine di produzione, 
 
 *Pulsante specifico*:  
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine di produzione, tutti i dati relativi a materiali, fasi, setup, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di esecuzione del completamento dati**.         
+> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine di produzione, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di esecuzione del completamento dati**.         
 > **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine di produzione ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine di produzione.  
 > **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti al'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine.  
 > **Generazione ciclo di lavoro**: permette di creare il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o di aggiornare i dati esistenti con quelli inseriti nell'ordine. 
@@ -116,7 +116,7 @@ Permette di allegare dei documenti alla fase selezionata, i quali saranno poi vi
 
 ## Attrezzaggio
 
-In questo tab è possibile definire i tempi relativi al setup della fase selezionata nel tab precedente.      
+In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente.      
 È importante ricordare che i dati inserenti al centro di lavoro, macchina e manodopera, vanno inseriti solamente se sono differenti da quelli usati per la fase, altrimenti se vuoti verranno automaticamente considerati quello della fase principale.  
 
 *Campi specifici*:
@@ -125,17 +125,17 @@ In questo tab è possibile definire i tempi relativi al setup della fase selezio
 **Tipo**: indica la tipologia della fase (interna o esterna);  
 **Tipo sovrapposizione**: indica l'eventuale tipologia della sovrapposizione;  
 **UM Tempi**: indica l'unità di misura temporale della fase;  
-**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per setup; (da utilizzare solo se il centro di lavoro di setup è diverso dal centro di lavoro utilizzato nella fase selezionata);      
-**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per setup; (da utilizzare solo se la macchina utilizzata per setup è diversa dalla macchina utilizzata nella fase selezionata);        
-**Gruppo Manodopera**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per setup; (da utilizzare solo se il gruppo manodopera utilizzato per setup è diverso dalla gruppo manodopera utilizzata nella fase selezionata);         
+**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per l'attrezzaggio; (da utilizzare solo se il centro di lavoro di attrezzaggio è diverso dal centro di lavoro utilizzato nella fase selezionata);      
+**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per l'attrezzaggio; (da utilizzare solo se la macchina utilizzata per l'attrezzaggio è diversa dalla macchina utilizzata nella fase selezionata);        
+**Gruppo Manodopera**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio; (da utilizzare solo se il gruppo manodopera utilizzato per l'attrezzaggio è diverso dalla gruppo manodopera utilizzata nella fase selezionata);         
 **Valore**: indica il valore dell'eventuale sovrapponibilità;  
 **Centro di lavoro**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
 **Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
 **Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
-**Tempo setup**: viene inserito il tempo del setup. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
-**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio. Si utilizza nel caso in cui sia necessario riattrezzare il centro di lavoro tra un'esecuzione e l'altra della fase stessa e viene sommato al tempo setup;           
-**Num. macchine**: si indica il numero di macchine impiegate per setup;  
-**Num. operai**: si indica il numero di operai impiegati per setup.
+**Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
+**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio. Si utilizza nel caso in cui sia necessario riattrezzare il centro di lavoro tra un'esecuzione e l'altra della fase stessa e viene sommato al tempo attrezzaggio;           
+**Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
+**Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
 
 ## Attrezzature
 

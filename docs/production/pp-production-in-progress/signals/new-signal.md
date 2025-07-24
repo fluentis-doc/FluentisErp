@@ -72,7 +72,7 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 **Sito produttivo**: indica il codice del sito produttivo relativo alla riga della dichiarazione;     
 **Tempo macchina**: indica il tempo macchina relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente. (La label del campo si modifica in base all'unità di misura del tempo della fase dichiara);           
 **Tempo manodopera**: indica il tempo manodopera relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente. (La label del campo si modifica in base all'unità di misura del tempo della fase dichiara);                    
-**Tempo setup**: indica il tempo di setup relativo alla riga della dichiarazione; viene indicato manualmente. (La label del campo si modifica in base all'unità di misura del tempo della fase dichiara);             
+**Tempo attrezzaggio**: indica il tempo di attrezzaggio relativo alla riga della dichiarazione; viene indicato manualmente. (La label del campo si modifica in base all'unità di misura del tempo della fase dichiara);             
 **Dipendente**: indica il codice dell'utente che sta effettuando la dichiarazione;             
 **Cognome**: indica il cognome dell'utente che sta effettuando la dichiarazione;            
 **Nome**: indica il nome dell'utente che sta effettuando la dichiarazione;           
@@ -160,7 +160,7 @@ Questo tab permette di gestire i membri della squadra che svolgono la lavorazion
 **Capo squadra**: indica che quell'operatore è anche capo squadra;      
 **Attività**: indica l'attività che sta svolgendo l'operatore;        
 **Descrizione**: indica la descrizione dell'attività che sta svolgendo l'operatore;      
-**Attrezzaggio**: indica che il tempo lavorato dall'operatore verrà calcolato come tempo di setup nelle successive analisi;       
+**Attrezzaggio**: indica che il tempo lavorato dall'operatore verrà calcolato come tempo di attrezzaggio nelle successive analisi;       
 **Data inizio**: indica la data di inizio della lavorazione dell'operatore;         
 **Ora inizio**: indica l'ora di inizio della lavorazione dell'operatore;         
 **Data fine**: indica la data di fine della lavorazione dell'operatore;         
