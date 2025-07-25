@@ -1,9 +1,10 @@
 ---
-title: Definizione piano dei centri aziendali
+title: Definicija plana poslovnih centara
 sidebar_position: 2.1
 ---
 
-Il piano dei [***Centri aziendali***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) è il primo punto da affrontare ed anche quello fondamentale per una corretta impostazione della contabilità analitica/gestionale: per poter codificare i centri dovremo definire innanzi tutto le ***Dimensioni*** di analisi e poi le ***Categorie dei centri aziendali***.
+Plan [***poslovnih centara***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) je prvi i najvažniji korak za  pravilno postavljanje analitičkog i upravljačkog računovodstva. Kako bi se mogli centri šifrirati, prvo je
+potrebno definirati ***Dimenzije*** analize, a zatim ***Kategorije poslovnih centara***.
 
 :::tip Nota
 In società senza l'opzione *Controlling* attiva è consentita la creazione di Centri di costo senza una dimensione di riferimento e senza una categoria di centro
