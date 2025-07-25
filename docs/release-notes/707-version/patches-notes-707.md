@@ -3,6 +3,34 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0042 - 25/07/2025
+
+> - FI - Anagrafiche contatti: Risolto problema nella versione web relativo alla ricerca delle anagrafiche. Modifications in nomenclature filter can have an impact on profiles. (Rif. Ticket TT03225/25). 
+> - FI - completamento webapi FSMaturityOnDate (#TT03068/25) 
+> - FI - la generazione solleciti avvisa se mancano i parametri di default di generazione automatica solleciti. (#TT02737/25) 
+> - FI - stampe intrastat, revisione valorizzazione campo numero trimestre (#TT00095/25) 
+> - MES - Aggiunto il tab note (relativo alla note della singola dichiarazione) presente nel MES anche nelle dichiarazioni standard di Fluentis. (#TT03295/25) 
+> - MES - Corretto bug nelle dichiarazioni di produzione che non aggiornava correttamente la data fine effettiva dell’ordine di produzione quando veniva effettuata la dichiarazione di chiusura. (#TT03071/25) 
+> - MES - Corretto bug nelle dichiarazioni di produzione che non inseriva correttamente il costo per gli articoli alternativi prodotti. (#TT03238/25) 
+> - PM - interventi - servizi , gestite alcune casistiche di assegnazione prezzo da progetto. Se la riga di progetto ha un'unità di misura che non è "tempo" oppure se la riga di progetto è di tipo note, il prezzo e la UM non verranno proposti da progetto; il prezzo quindi verrà con le priorità già esistenti - listino ed articolo (#TT03256/25) 
+> - PR - corretto errore nel calcolo del cashflow relativamente al flusso delle richiesta di acquisto. Rif.  #TT03145/25 
+> - PR - la contabilizzazione pagamenti fornitori verifica se la riga è già stata contabilizzata. (#TT03216/25) 
+> - SCM - Corretto errore che impediva la Registrazione dei DDT di Acquisto a magazzino, nel caso di utilizzo di una causale di scarico con contropartita e di articoli gestiti a lotti con quantità superiore a uno. (#TT03305/25) 
+> - SCM - Dettaglio Righe Ordini - Aprendo l'ordine dalla procedura di Dettaglio Righe Ordine viene proposto il profilo come all'apertura dell'ordine dalla form di Ricerca Ordini Fornitori (#TT03252/25) 
+> - SCM - Ricevimento merci: Corretto il mancato salvataggio del valore di un Extra data associato all’articolo. (#TT03265/25) 
+> - SCM - Risolto errore che non calcolava correttamente il valore della percentuale nella stampa Fatturato acquisti (#TT02798/25, #TT05463/24). 
+> - SCS - Listini di Conto lavoro con prezzi per fase: Corretta la ripresa dei prezzi negli Ordini di Conto lavoro generati da Ordini di Produzione con fase esterna. (#TT03313/25) 
+> - SD - Calendario spedizioni - gestito caso di assenza vettore-autista senza causale valida assegnata (#TT03357/25) 
+> - SD - Generazione progetto in automatico da ordine, se i contatti di destinatario e destinazione sono impostati nell'ordine verranno riportati anche nel progetto (#TT03281/25) 
+> - SD - Risolto errore che impediva la valorizzazione di un DDT di Vendita in presenza di articoli gestiti a lotti, nel caso in cui fossero presenti più righe con lo stesso codice lotto. (#TT03286/25) 
+> - SH - Datasource - load Extension property if customization present for business object (TT03250/25)  
+> - SH - Introdotta la possibilità di salvare la riga filtro all'interno dei profili. (#TT02942/25) 
+> - WM - Aggiunta la colonna ubicazione nella griglia lotti e serial number del picking. Inoltre, corretto bug in gestione spunta nel caso in cui venisse spuntato un lotto, già presente nel tab lotti e serial number, ma con un'altra ubicazione. Modifications in Picking form can have an impact on profiles. (#TT03288/25) 
+> - WM - Corretto bug nell’help articoli movimentati delle liste inventariali che non visualizzava correttamente gli articoli nel caso in cui le date di inizio e fine ricerca fossero uguali. (#TT03340/25) 
+> - WM - Corretto bug nelle spedizioni che non permetteva di rimuovere il mezzo inserito in precedenza. (#TT03324/25) 
+> - WM - In fase di creazione DDT e Fattura da picking, è stato aggiunto un nuovo flag: Utilizza magazzino e causale da tipo DDT / Fattura. Questo fa si che la procedura utilizzerà per le righe del ddt/fattura magazzino e causale presi da quelli indicati nel tipo DDT/Fattura. (#TT03254/25)  
+> - Allineamento tecnico script editor “rimosso OnSelectedCloudServerChanged” 
+
 ### Patch 707.1-0041 - 17/07/2025
 
 > - CO - la ripresa dei dati da produzione (ripresa ore di progetto / ripresa movimenti fisici) applicano le logiche di duplicazione impostate nel “Flusso movimenti fisici” ai movimenti per progetto. (#TT02025/25) 
