@@ -1,13 +1,14 @@
 ---
-title: Reportistica
+title: Izvještavanje
 sidebar_Position: 2.9
 --- 
 
-Possiamo suddividere la reportistica in due tipologie: 
+Izvještavanje se može podijeliti u dvije kategorije:
 
-***RENDICONTO ECONOMICO AZIENDALE (REPORTISTICA AZIENDALE):*** il classico conto economico a margine di contribuzione piuttosto che a valore aggiunto o a valore di produzione ottenuta o venduta;  
-***RENDICONTO ECONOMICO DI CENTRO:*** tramite il quale in funzione del cost driver di misurazione del centro siamo in grado di determinare la nostra tariffa parametrica che, per quanto riguarda i centri produttivi è quasi sempre euro/ora. Questa tariffa la andremo ad impiegare per la costificazione a livello di commessa o di prodotto dei tempi impiegati per la trasformazione medesima.
+***IZVJEŠTAJ O DOBITI I GUBITKU (POSLOVNO IZVJEŠTAVANJE):*** klasičan račun dobiti i gubitka temeljen na marginalnom doprinosu, dodanoj vrijednosti ili vrijednosti ostvarene ili prodane proizvodnje;  
+***EKONOMSKI IZVJEŠTAJ CENTARA:*** izvještaj koji, ovisno o odabranom nositelju troškova mjerenja centra, omogućuje određivanje parametarske tarife koja je za proizvodne centre gotovo uvijek izražena u eurima po satu. Ta tarifa koristi se za izračun troška na razini narudžbe ili proizvoda, uzimajući u obzir vrijeme utrošeno na samu transformaciju.
 
-Naturalmente questa reportistica dovrà avere anche la possibilità di confrontare periodi o orari diversi per poter fare un minimo di analisi degli scostamenti. Per esempio, per aree diverse potremmo confrontare un consuntivo rispetto a un budget.
+Ovakvo izvještavanje treba omogućiti i usporedbu različitih razdoblja ili vremenskih jedinica kako bi se provela barem osnovna analiza odstupanja. Primjerice, za različita područja može se usporediti ostvareni rezultat s budžetom.
 
-Per le aziende che valorizzano la [*dimensione progetti/commesse*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) sarà disponibile la procedura di stampa del consuntivo di progetto, sempre basato su un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) specifico.
+Za poduzeća koja koriste vrednovanje kroz [*projekte/narudžbe*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) bit će dostupna i procedura ispisa izvještaja o ostvarenju projekta, uvijek temeljenog na
+specifičnom [*modelu klasifikacije*](/docs/controlling/reclassifications/create-reclassification-model).
