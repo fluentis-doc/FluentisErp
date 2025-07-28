@@ -1,27 +1,21 @@
 ---
-title: Ricerca
+title: Traži
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Introduzione](/docs/finance-area/declarations/intrastat/general-overview) **
+** [Uvod](/docs/finance-area/declarations/intrastat/general-overview) **
 
- 
+Preko ove forme moguće je pretraživati i pristupati SVIM obrađenim intrastat modelima, dakle i INTRA 1 (prodaja) i INTRA 2 (nabava). 
 
- 
-
-Attraverso la presente form è possibile ricercare ed accedere a TUTTI i modelli intrastat elaborati, dunque sia agli INTRA 1 (vendite) sia INTRA 2 (acquisti).
-
-NOTA: nella griglia di ricerca il flag della colonna Intrastat è solo informativo per distinguere gli INTRA 1 (flag NON attivo) dagli INTRA 2 (flag attivo).
-
- 
+NAPOMENA: u pregledu rezultata pretrage, flag u stupcu Intrastat je informativna samo za razlikovanje INTRA 1 (flag NIJE aktivan) od INTRA 2 (flag aktivan). 
 
 ![](/img/it-it/finance-area/declarations/intrastat/search-intrastat/search/image01.png)
 
-Nelle impostazioni dei filtri nella testata della form è possibile selezionare solo INTRA 1 o INTRA 2 per una ricerca mirata.
+U postavkama filtera u zaglavlju forme moguće je odabrati samo INTRA 1 ili INTRA 2 za ciljano pretraživanje.  
 
-In alternativa alla presente form di ricerca generale ci sono due form corrispondenti denominate ** [INTRASTAT 1](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat1) ** e ** [INTRASTAT 2 ](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat2) **che eseguono la stessa funzione, ma sono riservate alla ricerca soltanto dei modelli corrispondenti.
+Kao alternativa ovom glavnom obrascu za pretraživanje, postoje I dva odgovarajuća obrasca pod nazivom **[INTRASTAT 1](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat1)** i **[INTRASTAT 2](/docs/finance-area/declarations/intrastat/search-intrastat/intrastat2)** koji imaju istu funkciju, ali su rezervirani za pretraživanje samo odgovarajućih modela. 
 
  
 

@@ -3,19 +3,19 @@ title: Intrastat1
 sidebar_position: 2
 ---
 
-Form per la ricerca specifica dei modelli INTRA 1 e l'inserimento di un nuovo modello (sia manualmente sia tramite procedura automatica).
+Obrazac za pretraživanje INTRA 1 modela i unos novog modela (ručno i automatski). 
 
-Nella ribbon bar sono presenti anche i comandi per la stampa del modello, è necessario selezionare distintamente dalla combobox le varie sezioni da stampare oltre al frontespizio.
+Traka izbornika također sadrži naredbe za ispis predloška; potrebno je odabrati različite odjeljke za ispis, zasebno iz kombiniranog okvira, osim naslovne stranice.
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database delle dichiarazioni Intrastat1 precedentemente inserite. Possibilità di poter ricercare per tipo riepilogo, periodo, anno e numero di presentazione. |
-| Nuovo | Richiama la procedura per inserire una nuova dichiarazione Intrastat1. |
-| Modifica | Richiama la procedura per modificare una dichiarazione Intrastat1 precedentemente inserita. |
-| Elimina | Cancella una dichiarazione Intrastat1 precedentemente inserita. |
-| Esporta su file | Pulsante per la creazione e contestuale esportazione del file telematico, con  salvataggio del file in una  directory a scelta dell'utente e nella gestione documentale di Fluentis . |
+| Traži | Tipka za pokretanje filtara pretraživanja prethodno umetnutih Intrastat1 deklaracija. Mogućnost pretraživanjapo tipu, razdoblju, godini i broju. |
+| Novo | Pokretanje procedure za umetanje nove Intrastat1 deklaracije. |
+| Izmijeni | Pokreće postupak izmjene prethodno umetnute Intrastat1 deklaracije. |
+| Izbriši | Brisanje prethodno upisane Intrastat 1 deklaracije. |
+| Izvoz u datoteku | Tipka za kreiranje i izvoz elektroničke datoteke, uz spremanje datoteke u direktorij po izboru korisnika i u Upravljanje dokumentima Fluentisa. |
 
 
 

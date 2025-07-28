@@ -1,20 +1,17 @@
 ---
-title: Ammortamento
+title: Amortizacija
 sidebar_position: 2
 ---
 
-All'apertura della maschera si procederà a impostare l'anno di riferimento, le date di registrazione e competenza (di cui questa seconda sarà certamente la fine esercizio dell'anno di riferimento mentre la prima potrebbe essere nell'anno in corso), 
-
-la causale contabile di rilevazione e il flag di raggruppamento in una singola registrazione. Con questa opzione tutti i movimenti saranno inseriti nella stessa registrazione e gli importi facenti capo allo stesso sottoconto saranno raggruppati in un unico movimento.
+Nakon otvaranja obrasca, potrebno je postaviti referentnu godinu, datuma unosa i obračuna (od kojih će potonji svakako biti kraj referentne godine, a prvi može biti u tekućoj godini),
+predložak knjiženja i flag za grupiranje Pojedinačnog zapisivanja. Ovom opcijom svi zapisi se unose u isto knjiženje, a iznosi koji pripadaju istom podkontu grupiraju se u jedno knjiženje.
 
 ![](/img/it-it/finance-area/fixed-assets/accounting/depreciation/image01.png)
 
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
-| Ammortamento | Esegue il calcolo per le righe selezionate. |
+| Traži | Traži popis izvršenih obračuna amortizacije. |
+| Knjiži | Izvođenje knjiženja za odabrane retke. |
 
 
 
