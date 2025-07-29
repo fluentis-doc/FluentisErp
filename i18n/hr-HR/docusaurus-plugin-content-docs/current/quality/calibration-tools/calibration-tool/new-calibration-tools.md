@@ -3,7 +3,7 @@ title: Nuova taratura strumenti
 sidebar_position: 2
 ---
 
-Elenchiamo i polja principalipresenti u creazione di un **Nuovo strumento di taratura**.      
+Elenchiamo i polja principali presenti u creazione di un **Nuovo strumento di taratura**.      
 
 **Tipo taratura**: contiene la tipologia di taratura;     
 **Anno/Numero**: in base alla numerazione inserita nella tipologia, verranno proposti anno e numero;     
