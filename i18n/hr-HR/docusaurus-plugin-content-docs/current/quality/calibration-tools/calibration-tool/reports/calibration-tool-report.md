@@ -1,13 +1,13 @@
 ---
-title: Elenco Tarature strumenti
+title: Popis kalibracija instrumenata
 sidebar_position: 1
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti > Procedure > Elenco Tarature strumenti**.   
+Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kalibracija uređaja > Kalibracija uređaja > Procedure > Popis Kalibracije uređaja**.   
 
-Il filtro di esecuzione report consente di ricercare le *Tarature strumenti* per poterle stampare.   
+Filter za izvršenje izvještaja omogućava pretraživanje *Kalibracije uređaja* kako bi se mogli ispisati.   
 
-A standard è disponibile la reportistica di:   
-> **Registro Tarature Strumenti**: elenco delle *Tarature strumenti* raggruppabili per: *Rapporto*, *Strumento* e *Effettuata da*.   
+Dostupan je standardni izvještaj o:   
+> **Registar Kalibracija uređaja**: popis *Kalibracija uređaja* koji se može grupirati po: *Izvještaju*, *Instrumentu* i tko je *Izvršio*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
