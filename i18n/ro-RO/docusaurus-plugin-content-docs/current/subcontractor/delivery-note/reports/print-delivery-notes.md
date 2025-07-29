@@ -1,27 +1,10 @@
 ---
-title: Raport avize de livrare
+title: Stampa DDT di consegna
 sidebar_position: 2
 ---
 
-Această fereastră permite listarea avizelor de livrare care trebuie expediate terțului. Fereastra se află în [Sistem lohn>Avize de livrare>Rapoarte>Aviz de livrări]. Este compusă din 2 secțiuni:
+Questa finestra consente di stampare i DDT di consegna da inviare al terzista e si trova nel percorso *Conto Lavoro > DDT di Consegna > Stampe > DDT di consegna*. Essa è composta da 2 diverse sezioni:
 
-**Filtre**: în această secțiune utilizatorul poate insera filtrele după care dorește să fie făcută căutarea. De asemenea, se poate decide dacă să fie listate sau nu și avizele deja listate, utilizând relativul radio button;
+**Filtri**: in questa sezione è possibile filtrare per terzista, per tipo DDT di conto lavoro, da numero DDT a numero DDT di conto lavoro, per data inserimento DDT da…a…. Infine è possibile decidere se stampare o meno anche i DDT già stampate, utilizzando l'apposito radio button;
 
-**Parametrii raport:**se poate insera numărul de copii de listat și dispunerea in tabel. De asemenea, se poate decide dacă raportul trebuie să fie 'Provizoriu' (în acest caz flagul 'Listat' nu ar fi activat în antetul avizului) sau 'Definitiv'.
-
-În final, se poate decide utilizarea dispunerii în tabel asociată la tipul avizului din tabelul 'Tipuri avize de vânzari', activând flagul 'Utilizează setările asociate tipului avizului'.
-
-RIBBON BAR: reprezintă meniul Form-ului în discuţie. Prezentăm în continuare lista cu funcţionalităţile posibile:
-
-
-
-| Functie | Functionalitate |
-| --- | --- |
-| Vizualizează  | Buton pentru vizualizarea raportului pe baza filtrelor inserate. |
-| Listează | Buton pentru listarea raportului pe baza filtrelor inserate. |
-
-
-
-
-
-
+**Parametri di stampa**: in questa sezione si possono impostare il numero copie da stampare e il tabulato di stampa da utilizzare, e decidere se la stampa debba essere **Provvisoria** (nel qual caso il flag *Stampata* non verrebbe attivato nella testata del DDT stessa) o **Definitiva**.

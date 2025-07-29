@@ -1,6 +1,6 @@
 ---
-title: generalità
+title: Introduzione
 sidebar_position: 1
 ---
 
-El módulo de **ddt di consegna** de Trabajo por Encargo (Conto Lavoro) permite gestionar las entregas de materiales a los subcontratistas y controlar el calendario de las entregas a realizar.
+Il modulo delle **DDT di Consegna** di Conto Lavoro consente di gestire le consegne dei materiali ai terzisti e controllare lo scadenzario delle consegne da effettuare.

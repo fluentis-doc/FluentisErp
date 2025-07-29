@@ -1,6 +1,6 @@
 ---
-title: Informații generale
+title: Introduzione
 sidebar_position: 1
 ---
 
-Modulul Avize de livrare în sistem lohn permite gestionarea livrarilor materialelor la terți și controlarea scadențelor livrărilor care trebuie efectuate.
+Il modulo delle **DDT di Consegna** di Conto Lavoro consente di gestire le consegne dei materiali ai terzisti e controllare lo scadenzario delle consegne da effettuare.

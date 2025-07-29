@@ -1,33 +1,34 @@
 ---
-title: Descarga DDT de entrega (Scarico DDT di consegna)
+title: Scarico DDT di consegna
 sidebar_position: 1
 ---
 
-El procedimiento se abre a través de la ruta **Trabajo por cuenta (Conto Lavoro) > DDT de entrega (DDT di consegna) > Procedimientos (Procedure) > Descarga DDT (Scarico DDT)** y permite descargar del almacén los DDT de entrega de trabajo por cuenta ya impresos y no aún descargados.
+La procedura si apre tramite il percorso **Conto Lavoro > DDT di consegna > Procedure  > Scarico DDT** e permette di scaricare dal magazzino i DDT di consegna di conto lavoro già stampate e non ancora scaricate.
 
 ## Filtro
 
-En esta pestaña es posible filtrar los DDT de entrega según el subcontratista a quien están a nombre, según la fecha del DDT (De…a…), según el número de DDT, etc.
+In questo tab è possibile filtrare i DDT di consegna in base al terzista a cui sono intestate, in base alla data del DDT (Da…a…), in base al numero di DDT, ecc
 
-*Botones específicos*:  
-> **ricerca**: botón para aplicar los filtros de búsqueda a toda la base de datos de los DDT de entrega ingresados, controlados y no aún registrados;  
-> **scarico**: llama al procedimiento que ejecuta el registro de la Bolla de Entrega y, por lo tanto, los movimientos de almacén relacionados.  
+*Pulsanti specifici*:
+> **Ricerca**: pulsante per applicare i filtri di ricerca all'intero database degli DDT di Consegna inseriti, controllati e non ancora registrati;  
+> **Scarico**: richiama la procedura che esegue la registrazione della Bolla di Consegna e quindi i movimenti di magazzino ad essa correlati.  
 
-*Campos específicos*: 
+*Campi specifici*: 
 
-En la parte inferior del formulario aparece un campo de fecha, llamado **data registrazione magazzino**, configurado por defecto a la fecha actual. El usuario, al modificar esta fecha, puede decidir que el registro de almacén se realice en una fecha diferente a la fecha actual.
+Nella zona inferiore della form compare un campo data, chiamato **Data registrazione magazzino**, impostato di default sulla data corrente. L'utente, modificando questa data, può decidere che la registrazione di magazzino venga effettuata in una data diversa dalla data corrente.
 
-Una vez seleccionados los DDT de entrega que se desean registrar, se puede utilizar el botón **scarico** ubicado en la barra de ribbon y ejecutar los movimientos de almacén: simultáneamente a esta operación, la aplicación realiza la descarga del almacén de los materiales a entregar al subcontratista y la carga de los mismos materiales en el almacén del subcontratista.
+Una volta selezionati i DDT di consegna che si vogliono registrare, è possibile utilizzare il pulsante **Scarico** posto sulla ribbon bar ed eseguire i movimenti di magazzino: contestualmente a questa operazione l'applicazione esegue lo scarico dal magazzino di prelievo dei materiali da consegnare al terzista e il carico degli stessi materiali sul magazzino del terzista.
 
-## Resumen (Riepilogo)
 
-En esta pestaña es posible realizar el rollback de la operación de registro del DDT de entrega, restaurando así la situación anterior a la operación misma. En el encabezado de esta pestaña hay algunos filtros de búsqueda, que permiten al usuario seleccionar las operaciones filtrando por número de descarga (De…a…), fecha de descarga del DDT (De…a…), número de DDT (De…a…).
+## Riepilogo
 
-Los resultados son visibles dentro de la cuadrícula situada en la parte superior de la ventana, denominada **scarico ddt**.  
-Al mantener seleccionada una fila de esta cuadrícula, en la cuadrícula situada en la parte inferior del formulario se pueden visualizar los DDT de entrega descargados (en la pestaña correspondiente *DDT*), así como los registros de almacén que se han generado automáticamente con la descarga del DDT seleccionado en la pestaña *DDT* (en la pestaña correspondiente *Registro*).
+In questo tab è possibile eseguire il rollback dell'operazione di registrazione del DDT di consegna, ripristinando quindi la situazione antecedente all'operazione stessa. Nella testata di questo tab sono presenti alcuni filtri di ricerca, che consentono all'utente di selezionare le operazioni filtrando per numero scarico (Da…a…), data scarico DDT (Da…a…), numero DDT (Da…a…).
 
-*Botones específicos*:  
-> **ricerca**: botón para aplicar los filtros de búsqueda a toda la base de datos de DDT de entrega ingresados, impresos y ya descargados.  
-> **cancella**: llama al procedimiento que ejecuta el rollback de toda la operación de descarga del DDT seleccionado en la cuadrícula *scarico ddt*; por lo tanto, si con la misma operación de registro se han descargado varios DDT, todos estos DDT se volverán al estado de *no descargados*.  
-> **ripristina ddt**: llama al procedimiento que ejecuta el rollback del registro de los DDT seleccionados en la cuadrícula inferior, en la pestaña *DDT*.  
-> **ripristina**: llama al procedimiento que ejecuta la simple eliminación de los registros de almacén seleccionados en la pestaña *Registro*, sin devolver el DDT relacionado al estado de *no descargado*. Se aconseja no utilizar nunca este botón a menos que sea en situaciones de particular necesidad.
+I risultati sono visibili all'interno della griglia posta nella parte superiore della finestra, denominata **Scarico DDT**.  
+Tenendo selezionata una riga di questa griglia, nella griglia posta nella parte inferiore della form si possono visualizzare i DDT di consegna scaricati (nell'apposito tab *DDT*), nonché le relative registrazioni di magazzino che sono state automaticamente generate dallo scarico del DDT selezionato nel tab *DDT* (nell'apposito tab *Registrazione*).
+
+*Pulsanti specifici*:  
+> **Ricerca**: pulsante per applicare i filtri di ricerca all'intero database delle DDT di consegna inserite, stampate e già scaricate.  
+> **Cancella**: richiama la procedura che esegue il rollback dell'intera operazione di scarico del DDT selezionato nella griglia *Scarico DDT*; quindi se con la stessa operazione di registrazione sono stati scaricati più DDT, tutti questi DDT saranno riportati nello stato di *non scaricate*.  
+> **Ripristina DDT**: richiama la procedura che esegue il rollback della registrazione dei DDT selezionati nella griglia inferiore, nel tab *DDT*.  
+> **Ripristina**: richiama la procedura che esegue la semplice cancellazione delle registrazioni di magazzino selezionate nel tab *Registrazione*, senza riportare il DDT relativo nello stato di *non scaricata*. Si consiglia di non usare mai questo tasto se non in situazioni di particolare necessità.  
