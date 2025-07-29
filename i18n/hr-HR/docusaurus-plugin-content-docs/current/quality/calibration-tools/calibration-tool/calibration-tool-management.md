@@ -13,75 +13,75 @@ Ako je instrument podložan kalibraciji i kalibracija je eksterna, moguće je pr
 A standard sono disponibili le reportistiche di: Registro tarature strumenti raggruppati per: Rapporto, Strumento e Operatore.   
 
 Standardno su dostupni sljedeći izvještaji:   
-> **Dnevnik kalibracije instrumenta**: popis *Kalibracija instrumenata* koji se može grupirati prema: *Izvještaj*, *Instrument* e *Izvršeno od strane*.   
+> **Dnevnik kalibracije instrumenta**: popis *Kalibracija instrumenata* koji se može grupirati prema: *Izvještaj*, *Instrument* i *Izvršeno od strane*.   
 :::
 
 
-## Pulsanti di comando
+## Tipke za naredbe
 
 
-### Salva
+### Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Taratura strumento* visualizzata.   
-
-
-## Gestione dati
+Pritiskom na ovu tipku spremaju se sve izmijenjene informacije o prikazanoj *Kalibraciji instrumenta*.   
 
 
-### Dati di testata
+## Upravljanje podacima
 
-Le informazioni gestite sono:   
-> **Tipo taratura**: è il *Tipo taratura* (dato obbligatorio).   
-> All'inserimento manuale di una nuova *Taratura* viene proposto il *Tipo taratura manuale* indicato nei *Parametri Taratura strumenti*.   
+
+### Podaci zaglavlja
+
+Upravljane informacije su:   
+> **Vrsta kalibracije**: to je *Tip kalibracije* (obavezni podatak).   
+> Prilikom ručnog unosa nove *kalibracije* predložen je ručni *Tip kalibracije* naveden u *Parametrima kalibracije instrumenata*.   
 >
-> **Anno/Numero**: sono l'*Anno* e *Numero* della *Taratura strumento* (dati entrambe obbligatori).   
->  All'inserimento di una nuova *Taratura strumento*:   
-> - la *Data taratura effettiva* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data taratura effettiva* e alla *Numerazione* associata al *Tipo taratura*.   
+> **Godina/Broj**: to su *Godina* i *Broj kalibracije instrumenta* (oba podatka su obavezna).   
+>  Prilikom unosa nove *Kalibracije instrumenta*:   
+> - *Stvarni datum kalibracije* predložen je jednak trenutnom datumu;   
+> - *Godina* i *Broj* predloženi su na temelju stvarnog *datuma kalibracije* i *Numeracije* pridružene *Vrsti kalibracije*.   
 >
-> **Taratura effettuata da**: expander dove è possibile inserire:   
+> **Kalibraciju izvršio**: expander u kojem je moguće unijeti sljedeće:   
 >
->> **Taratura interna**: indica che lo *Strumento di misura* viene tarato da un soggetto interno all'azienda.   
->> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
->> **Funzione**: è la *Funziona aziendale* che effettua la taratura interna.   
->> **Dipendente**: è il *Dipendente* che effettua la taratura interna.   
+>> **Interna kalibracija**: označava da *kalibraciju uređaja* obavlja osoba unutar poduzeća.   
+>> **Vanjski laboratorij**: to je naziv tvrtke koja provodi vanjsku kalibraciju.   
+>> **Funkcija**: to je *poslovna funkcija* unutar poduzeća koja provodi internu kalibraciju.   
+>> **Zaposlenik**: to je *Zaposlenik* koji provodi internu kalibraciju.   
 >
-> **Schedulata**: indica che la *Taratura strumento* è stata pianificata.   
-> **Esito taratura**: è il l'*Esito* complessivo della taratura.   
-> E' calcolato automaticamente, sulla base degli *Esiti* dei *Valori rilevati*, se è una *Taratura interna*.
-> Viene attribuito manualmente se è una *Taratura esterna*.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+> **Planirana**: označava da je *kalibracija uređaja* planirana.   
+> **Rezultat kalibracije**: to je ukupni *rezultat* kalibracije.   
+> Automatski se izračunava na temelju *rezultata* iz *izmjerenih vrijednosti*, ako je riječ o *unutarnjoj kalibraciji*.
+> Ručno se unosi ako je riječ o *vanjskoj kalibraciji*.   
+> **Zapažanja**: slobodne bilješke na temu.   
+> **Napomene**: slobodne bilješke.   
 >
-> **Data taratura prevista**: è la data di prevista taratura.   
-> Viene proposta dalla *Pianifica nuove tarature* e non è modificabile.   
-> **Data taratura effettiva**: è la data di effettiva taratura.   
-> All'inserimento manuale di una nuova taratura viene proposta pari alla data odierna.
-> Viene proposta dalla *Pianifica nuove tarature* pari alla *Data taratura prevista* ed è successivamente modificabile.   
-> **Strumento di misura**: è il rifermento allo *Strumento di misura* soggetto alla *Taratura*.   
+> **Datum predviđene kalibracije**: to je datum predviđene kalibracije.   
+> Predlaže se iz opcije *Planiraj nove kalibracije* i nije ga moguće mijenjati.   
+> **Datum stvarne kalibracije**: to je datum stvarne kalibracije.   
+> Pri ručnom unosu nove kalibracije predlaže se današnji datum.
+> Predlaže se iz opcije *Planiraj nove kalibracije* jednak *predviđenom datumu kalibracije* i kasnije se može mijenjati.   
+> **Alat za mjerenje**: to je referenca na *mjerni instrument* podložan *kalibraciji*.   
 >
-> **Proprietà dello strumento**: expander dove è possibile visualizzare:   
+> **Svojstva instrumenta**: expander gdje je moguće pregledati:   
 >
->> **Proprietà dello strumento**: è il *Modello* dello *Strumento di misura*.   
->> **Attivo**: indica che lo *Strumento di misura* è ancora *attivo*.   
->> **Classificazione**: è la *Classificazione*; esempi: Meccanico, Elettrico, Elettronico, ecc.   
->> **Unità di misura**: è l'*Unità di misura* dei valori rilevati dallo *Strumento di misura*.   
->> **Intervallo di misura**: è il range misurabile dallo *Strumento di misura*.   
->> **Precisione**: è la *Precisione di misura* minima.   
->> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
+>> **Svojstva instrumenta**: to je *Model mjernog instrumenta*.   
+>> **Aktivan**: označava da je *Mjerni Instrument* još uvijek *aktivan*.   
+>> **Klasifikacija**: to je *klasifikacija*; primjeri: Mehanički, Električni, Elektronički, itd.   
+>> **Jedinica mjere**: to je *jedinica mjere* za vrijednosti izmjerene *mjernim instrumentom*.   
+>> **Raspon mjerenja**: to je mjerljivi raspon *mjernog instrumenta*.   
+>> **Preciznost**: to je minimalna *preciznost mjerenja*.   
+>> **Ograničenja**: to su *ograničenja prihvatljivost* iz *mjernog uređaja* za upotrebu; primjeri: eventualna ograničenja preciznosti, okruženja u kojima se ne smije koristiti, itd.
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **Audit Trail**: expander samo za čitanje gdje su vidljive sljedeće informacije:   
 >
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito l'*Azione correttiva*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica all'*Azione correttiva*.   
+>> **Datum kreiranja/Ime**: to je datum i *A.R.M. korisnik* koji je unio *korektivnu radnju*.   
+>> **Datum zadnje izmjene/Ime**: to je datum i *A.R.M. korisnik* koji je napravio zadnju izmjenu *korektivne radnje*.   
 
 
-### Valori rilevati
-Il tabulatore è visibile solamente se lo *Strumento di misura* è soggetto a *Taratura interna*
-In questo elenco è possibile indicare i valori da rilevati durante le attività di *Taratura interna*.   
-Se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura* e se è di *Taratura interna* questi valori vengono ereditati dall'anagrafica dello *Strumento di misura*.   
-Tutte le informazioni sono disabilitate ad esclusione di: *Dato rilevato*, *Esito*, *Osservazioni* e *Note*
-L'elenco si compone delle seguenti informazioni:   
+### Otkrivene vrijednosti
+Kartica je vidljiva samo ako je *mjerni uređaj* podložan *internom kalibriranju*
+U ovom popisu moguće je navesti vrijednosti koje treba zabilježiti tijekom aktivnosti *internog kalibriranja*.  
+Ako je *mjerni instrument Aktivan*, podložan *umjeravanju* i ako je podložan *internom umjeravanju* te vrijednosti se nasljeđuju iz šifarnika *mjernog instrumenta*.   
+Sve informacije su onemogućene osim: *Zabilježena vrijednost*, *Iskaz*, *Napomene* i *Bilješke*.
+Popis se sastoji od sljedećih informacija:   
 > **Sequenza**: è la sequenza di rilevazione.   
 > **Posizione**: annotazioni libere sull'argomento.   
 > **Intervallo lettura**: annotazioni libere sull'argomento.   
