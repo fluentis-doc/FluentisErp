@@ -68,7 +68,7 @@ Upravljane informacije su:
 >> **Jedinica mjere**: to je *jedinica mjere* za vrijednosti izmjerene *mjernim instrumentom*.   
 >> **Raspon mjerenja**: to je mjerljivi raspon *mjernog instrumenta*.   
 >> **Preciznost**: to je minimalna *preciznost mjerenja*.   
->> **Ograničenja**: to su *ograničenja prihvatljivost* iz *mjernog uređaja* za upotrebu; primjeri: eventualna ograničenja preciznosti, okruženja u kojima se ne smije koristiti, itd.
+>> **Ograničenja**: to su *ograničenja prihvatljivost* iz *mjernog instrumenta* za upotrebu; primjeri: eventualna ograničenja preciznosti, okruženja u kojima se ne smije koristiti, itd.
 >
 > **Audit Trail**: expander samo za čitanje gdje su vidljive sljedeće informacije:   
 >
@@ -77,58 +77,58 @@ Upravljane informacije su:
 
 
 ### Otkrivene vrijednosti
-Kartica je vidljiva samo ako je *mjerni uređaj* podložan *internom kalibriranju*
+Kartica je vidljiva samo ako je *mjerni instrument* podložan *internom kalibriranju*
 U ovom popisu moguće je navesti vrijednosti koje treba zabilježiti tijekom aktivnosti *internog kalibriranja*.  
 Ako je *mjerni instrument Aktivan*, podložan *umjeravanju* i ako je podložan *internom umjeravanju* te vrijednosti se nasljeđuju iz šifarnika *mjernog instrumenta*.   
 Sve informacije su onemogućene osim: *Zabilježena vrijednost*, *Iskaz*, *Napomene* i *Bilješke*.
 Popis se sastoji od sljedećih informacija:   
-> **Sequenza**: è la sequenza di rilevazione.   
-> **Posizione**: annotazioni libere sull'argomento.   
-> **Intervallo lettura**: annotazioni libere sull'argomento.   
-> **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Dato rilevato**: è il valore rilevato dalla lettura dello strumento fatta nella *posizione* indicata.   
-> **Scostamento**: è il valore calcolato dalla differenza tra *Dato rilevato* e *Dato richiesto*.   
-Se lo scostamento è superiore al *Dato richiesto* sommato all'*Incertezza (±)* (applicazione in percentuale) l'*Esito* della rilevazione sarà negativo.   
-Al primo valore negativo dell'*Esito* nell'elenco dei *Valori rilevati* anche l'*Esito* complessivo della *Taratura* sarà negativo.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Nota**: annotazioni libere.   
+> **Sekvenca**: to je sekvenca očitavanja.  
+> **Pozicija**: slobodne bilješke na temu.   
+> **Interval čitanja**: slobodne bilješke na temu.   
+> **Tražena vrijednost**: to je nominalna vrijednost koja se traži.   
+> **Nesigurnost (-)**: to je vrijednost negativne nesigurnosti (izražene u postotku) koja će se primijeniti na *Očitanu vrijednost*.   
+> **Nesigurnost (+)**: to je vrijednost pozitivne nesigurnosti (izražene u postotku) koja će se primijeniti na *Očitanu vrijednost*.   
+> **Očitana vrijednost**: to je vrijednost očitana s instrumenta u navedenoj *poziciji*.    
+> **Odstupanje**: to je vrijednost izračunata kao razlika između *Očitane vrijednosti* i *Tražene vrijednosti*.
+Ako je odstupanje veće od *Tražene vrijednosti* zbrojene s *Nesigurnošću (±)* (primijenjenom u postotku), *Rezultat očitavanja* bit će negativan.   
+Na prvi negativni rezultat u popisu *Očitavanih vrijednosti* i *Ukupni rezultat kalibracije* bit će također negativan.   
+> **Opservacije**: slobodne bilješke na temu.   
+> **Napomena**: slobodne bilješke.   
 
 
-### Storico Rapporti e Certificati di taratura
-In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pienificati ed effettuati per lo *Strumento di misura* associato alla *Taratura* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Taratura* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**: è il codice del *Tipo taratura*.   
-> **Descrizione tipo taratura**: è la descrizione del *Tipo taratura*.   
-> **Anno**: è l'*Anno* del documento.   
-> **Numero**: è il *Numero* del documento.   
-> **Taratura interna**: indica se è stato emesso una *Taratura interna*.   
-> **Schedulata**: indica se il documento è stato schedulato (pianificato).   
-> **Data prevista**: è la data di prevista taratura.   
-> **Data taratura**: è la data di effettiva taratura.   
-> **Esito**: è il codice dell'*Esito* della taratura.   
-> **Descrizione esito**: è la descrizione dell'*Esito* della taratura.   
-> **Categoria**: è il codice della *Categoria strumento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria strumento*.   
-> **Codice**: è il codice dello *Strumento di misura*.   
-> **Matricola**: è la matricola dello *Strumento di misura*.   
-> **Modello**: è il modello dello *Strumento di misura*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
-> **Funzione**: è il codice della *Funziona aziendale* che effettua la taratura interna.   
-> **Descrizione funzione**: è la descrizione della *Funziona aziendale* che effettua la taratura interna.   
-> **Codice**: è il codice del *Dipendente* che effettua la taratura interna.   
-> **Cognome**: è il cognome del *Dipendente* che effettua la taratura interna.   
-> **Nome**: è il nome del *Dipendente* che effettua la taratura interna.   
+### Povijest Izvještaja i Certifikata kalibracije 
+U ovom popisu moguće je pregledati povijest *Kalibracija* i *Certifikata kalibracije* planiranih i izvršenih za *mjerni instrument* povezan s prikazanom *Kalibracijom*.  
+Dvostrukim klikom miša na željeni red moguće je upravljati odabranom *Kalibracijom*.   
+Popis se sastoji od sljedećih informacija:   
+> **Vrsta kalibracije**: šifra *Tipa kalibracije*.   
+> **Opis tipa kalibracije**: opis *Tipa kalibracije*.   
+> **Godina**: *Godina* dokumenta.   
+> **Broj**: *Broj* dokumenta.   
+> **Interna kalibracija**: označava je li izvršena *interna kalibracija*.   
+> **Planirano**: označava je li dokument planiran.   
+> **Predviđeni datum**: predviđeni datum kalibracije.   
+> **Datum kalibracije**: stvarni datum kalibracije.   
+> **Rezultat**: kod *rezultata* kalibracije.   
+> **Opis rezultata**: opis *rezultata* kalibracije.   
+> **Kategorija**: kod *Kategorije instrumenta*.   
+> **Opis kategorije**: opis *Kategorije instrumenta*.   
+> **Kod**: kod *mjernog instrumenta*.   
+> **Serijski broj**: serijski broj *mjernog instrumenta*.   
+> **Model**: model *mjernog instrumenta*.   
+> **Vanjski laboratorij:**: naziv *dobavljača* koji obavlja vanjsku kalibraciju.   
+> **Funkcija**: šifra *Funkcije u poduzeću* koja obavlja internu kalibraciju.    
+> **Opis funkcije**: opis *Funkcije u poduzeću* koja obavlja internu kalibraciju.
+> **Šifra**: šifra *Zaposlenika* koji obavlja internu kalibraciju.    
+> **Prezime**: prezime *Zaposlenika* koji obavlja internu kalibraciju.   
+> **Ime**: ime *Zaposlenika* koji obavlja internu kalibraciju.   
 
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Taratura strumento*.   
+### Dodatni podaci
+Moguće je unijeti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaku *Kalibraciju uređaja*.   
 
 
-### Immagine
-Viene riportata l'immagine associata nella gestione dello *Strumento di misura*.   
+### Slika
+Prikazana je slika povezana s upravljanjem *mjernim instrumentom*.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).   
