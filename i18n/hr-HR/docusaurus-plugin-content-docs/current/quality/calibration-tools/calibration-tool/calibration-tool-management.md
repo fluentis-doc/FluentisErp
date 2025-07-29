@@ -1,19 +1,19 @@
 ---
-title: Taratura strumenti
+title: Kalibracija uređaja
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti > Nuovo taratura strumento** oppure è possibile eseguirla dalla **Ricerca Taratura strumenti**.   
+Upravljanje se nalazi na putanji **Kvaliteta > Kalibracija uređaja > Kalibracija uređaja > Nova kalibracija uređaja** ili se može izvršiti putem **Pretraživanja kalibracije uređaja**.   
 
 
-:::važno A cosa serve
-Nella gestione Taratura strumenti è possibile la registrazione delle Tarature interne e dei Certificati di taratura.   
-Se lo strumento è soggetto a taratura e la taratura è interna, è possibile inserire, per le posizioni previste, i valori rilevati. Fluentis assegnerà automaticamente un esito positivo o negativo, per singola posizione e generale.   
-Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile allegare il Certificato di taratura ricevuto dall'ente terzo che ha effettuato la taratura. L'esito, in questo caso, verrà attribuito manualmente dall'operatore.   
+:::important ČEMU SLUŽI
+U okviru upravljanja Kalibracijom uređaja moguće je zabilježiti interne kalibracije i Certifikate kalibracije.   
+Ako je instrument podložan kalibraciji i kalibracija je interna, moguće je unijeti, za predviđene pozicije, izmjerene vrijednosti. Fluentis će automatski dodijeliti pozitivan ili negativan rezultat, za svaku pojedinačnu poziciju i općenito.   
+Ako je instrument podložan kalibraciji i kalibracija je eksterna, moguće je priložiti Certifikat kalibracije koji je izdao vanjski entitet koji je izvršio kalibraciju. Rezultat će u ovom slučaju ručno dodijeliti operater.   
 A standard sono disponibili le reportistiche di: Registro tarature strumenti raggruppati per: Rapporto, Strumento e Operatore.   
 
-A standard è disponibile la reportistica di:   
-> **Registro Tarature Strumenti**: elenco delle *Tarature strumenti* raggruppabili per: *Rapporto*, *Strumento* e *Effettuata da*.   
+Standardno su dostupni sljedeći izvještaji:   
+> **Dnevnik kalibracije instrumenta**: popis *Kalibracija instrumenata* koji se može grupirati prema: *Izvještaj*, *Instrument* e *Izvršeno od strane*.   
 :::
 
 
