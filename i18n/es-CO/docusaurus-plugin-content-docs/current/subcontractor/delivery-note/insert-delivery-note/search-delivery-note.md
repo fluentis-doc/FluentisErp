@@ -5,7 +5,7 @@ sidebar_position: 2
 
 La form si apre tramite il percorso **Conto Lavoro > DDT di Consegna > DDT di Consegna**.
 
-import SearchForm from './../../import/sections/search-form.md'
+import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 

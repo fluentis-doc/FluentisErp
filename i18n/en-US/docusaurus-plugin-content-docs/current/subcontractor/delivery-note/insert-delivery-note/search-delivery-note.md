@@ -5,7 +5,7 @@ sidebar_position: 2
 
 The form is opened via the path **Subcontractor > Delivery Note > Delivery Note**.
 
-import SearchForm from './../../import/sections/search-form.md'
+import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
