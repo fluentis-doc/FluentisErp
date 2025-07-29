@@ -21,7 +21,7 @@ Entering the **Supplier** will *automatically propose* all specific data from th
 
 **Specific buttons**
 
-> [Expected deliveries](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): calls up the procedure to create a Delivery Note from an order. It activates with the entry of the supplier and Delivery Note type. The order to be fulfilled must have the *Printed* flag set and the *Order confirmation date* must be filled in;  
+> [Expected deliveries](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note): calls up the procedure to create a Delivery Note from an order. It activates with the entry of the supplier and Delivery Note type. The order to be fulfilled must have the *Printed* flag set and the *Order confirmation date* must be filled in;  
 > **Automatic unload**: used to automatically download the warehouse with the selected items. This field will be editable only once the *Printed* field is activated.
 
 ### Payments

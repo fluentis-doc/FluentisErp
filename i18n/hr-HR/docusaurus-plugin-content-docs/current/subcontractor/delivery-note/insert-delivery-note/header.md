@@ -21,7 +21,7 @@ Unosom **Dobavljača** automatski se *predlažu* svi specifični podaci iz karti
 
 **Specifični gumbi**
 
-> [Očekivane isporuke](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): pokreće postupak stvaranja otpremnice iz narudžbe. Aktivira se unosom dobavljača i vrste otpremnice. Narudžba koja se mora izvršiti mora imati postavljenu oznaku *Ispisano* i popunjeno polje *Datum potvrde narudžbe*;    
+> [Očekivane isporuke](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note): pokreće postupak stvaranja otpremnice iz narudžbe. Aktivira se unosom dobavljača i vrste otpremnice. Narudžba koja se mora izvršiti mora imati postavljenu oznaku *Ispisano* i popunjeno polje *Datum potvrde narudžbe*;    
 > **Automatsko preuzimanje**: koristi se za automatsko preuzimanje skladišta odabranih artikala. Ovo polje će biti editabilno samo nakon što je polje *Ispisano* aktivirano.  
 
 ### Plaćanja

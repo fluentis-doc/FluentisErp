@@ -31,7 +31,7 @@ Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifi
 
 #### Pulsanti specifici
 
-> [Consegne previste](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): richiama la procedura per creare un DDT da un ordine. Si attiva con l'inserimento del fornitore e del tipo DDT. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata;  
+> [Consegne previste](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note): richiama la procedura per creare un DDT da un ordine. Si attiva con l'inserimento del fornitore e del tipo DDT. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata;  
 > **Scarico automatico**: utilizzato per scaricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Stampato*.
 
 ### 2.3 Pagamenti

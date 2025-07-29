@@ -21,7 +21,7 @@ Al ingresar el **fornitore**, se *proponen (proposti)* automáticamente todos lo
 
 **Botones específicos**
 
-> [Entregas previstas (Consegne previste)](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): llama el procedimiento para crear un DDT a partir de un pedido. Se activa ingresando el proveedor y el tipo de DDT. El pedido a cumplir debe tener configurado el indicador *stampato* y la *data conferma ordine* valorada;  
+> [Entregas previstas (Consegne previste)](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note): llama el procedimiento para crear un DDT a partir de un pedido. Se activa ingresando el proveedor y el tipo de DDT. El pedido a cumplir debe tener configurado el indicador *stampato* y la *data conferma ordine* valorada;  
 > **scarico automatico**: utilizado para descargar automáticamente el almacén con los artículos seleccionados. Este campo será editable solo una vez activado el campo *stampato*.
 
 ### Pagos
