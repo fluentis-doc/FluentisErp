@@ -82,7 +82,7 @@ All'interno nella tabella *Tipi Ritenuta*, aprire la tipologia associata al clie
 
 <details>
 
-  <summary> 8.Fluentis mi propone all'interno di una nuova registrazione contabile sempre l'ultima divisa utilizzata con la causale selezionata ignorando la divisa di default del cliente o fornitore, perchè? </summary>
+  <summary> 8. Fluentis mi propone all'interno di una nuova registrazione contabile sempre l'ultima divisa utilizzata con la causale selezionata ignorando la divisa di default del cliente o fornitore, perchè? </summary>
 
 Verificare il settaggio del parametro generale nella tabella PARAM_Parameter codice CA-RegCont-General_PurposeCurrencyByTemplate. Se il parametro è impostato a 1 verrà proposta la divisa ultima utilizzata con la causale, se impostato a 0 non verrà proposta alcuna divisa seguendo la logica base della divisa della società e poi lettura della divisa del cliente o fornitore.
 
@@ -90,8 +90,35 @@ Verificare il settaggio del parametro generale nella tabella PARAM_Parameter cod
 
 <details>
 
-  <summary> 9.ho la necessità di creare più numerazioni per le fatture si vendita. Non è chiaro se devo creare tanti registri iva vendita per quante sono le numerazioni o l'unico registro vendita può avere più numerazioni </summary>
+  <summary> 9. Ho la necessità di creare più numerazioni per le fatture si vendita. Non è chiaro se devo creare tanti registri iva vendita per quante sono le numerazioni o l'unico registro vendita può avere più numerazioni </summary>
 
 la relazione presente nel ciclo di contabilizzazione delle vendite è Tipo Fattura > Numerazione > Causale contabile associata > Registro iva associato alla causale. In un ambiente standard si nota che possono esserci più tipologie, ma se abbinate alla stessa causale, che quindi ha lo stesso sezionale iva, la numerazione è la stessa (condivisa, quindi la FT nr 1 per il tipo A e poi per il tipo B nascerà la nr 2). Nel caso di diversi tipi fattura con diverse numerazioni concorrenti è opportuno differenziare i sezionali iva e pertanto abbinargli anche diverse causali, altrimenti la protocollazione iva andrà in conflitto. Questo inquanto normalmente nelle causali è attiva una spunta di opzione che propone il protocollo iva pari al numero del documento (in modo da non dover fare attenzione a contabilizzare le fatture nell'ordine di numero). Diversamente è necessario disattivare tale opzione
 
+</details>
+
+<details>
+
+  <summary> 10. Come posso gestire una nota di accredito semplificata di sola iva TD08 per il recupero, ad esempio, dell'iva di un cliente fallito? </summary>
+
+1. Nella tabella Amministrazione > **Tipi Documento** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Nota di accredito semplificata per recupero IVA*, oppure *Nota di accredito di sola iva* ecc...; il flag **Nota di accredito** deve essere **attivo** ed il campo **Codice per fatture elettroniche** deve riportare *TD08*
+2. Nella tabella Vendite > **Tipi Fatture** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Nota di accredito semplificata per recupero IVA*, oppure *Nota di accredito di sola iva* ecc... ; nel campo **Natura Fattura** DEVE essere selezionata la voce ***Nota di variazione di sola IVA***; il campo **Tipo documento** riporterà la tipologia di cui al punto 1. ed il campo **Causale** (contabile) riporterà la corretta causale (da creare o selezionare all'interno della tabella Amministrativa > Causali di contabilità generale) in modo che la scrittura contabile risulti adeguata alla situazione in questione. (ad esempio sarà una causale che gestisce le note di accredito con conseguente schema contabile).
+3. Creare il nuvo documento nel modulo Vendita > Fatture di Vendita utilizzando la tipologia di fattura creata al punto 2. 
+    - La particolare tipologia impostata nel campo Natura Fattura di cui al punto 2. permette di inserire, nella griglia Articoli del documento, unicamente righe di tipo *Note* dove potremo inserire una breve descrizione della rettifica effettuata, ad esempio: "Documento emesso ai sensi dell'art. 26, comma 3 bis, D.P.R. n. 633/1972, al solo fine di recuperare l'IVA".
+    - Espandendo la sezione *Tipo Riferimento* della *Testata* del documento è possibile, oltre al campo Tipo riferimento, valorizzare anche il dettaglio della fattura precedente che viene rettificata.
+    - In questo particolare tipo di Nota di accredito la possibilità di gestire i valori è limitata esclusivamente alla sezione **Riepilogo** e precisamente nella griglia *Riepilogo IVA* dove si movimenterà direttamente il campo **Imposta** (in negativo) oltre al campo (codice) IVA (es. 22%), lasciano a zero l'imponibile (parliamo infatti di nota di accredito di sola iva)
+4. Generare il tracciato xml ed inviare la fattura elettronica come di consueto (secondo le istruzioni della guida in linea).
+5. Contabilizzare la Nota di accredito come di consueto. Abbinando una causale contabile tipica per le note di accredito Italia, ad esempio (presente nella lista degli ambienti Fast Start), la scrittura contabile sarà comunque eseguita in modo adeguato movimentando, nella sezione iva, solo l'imposta e non l'imponibile e nella sezione contabile stornando dal credito verso il cliente (in Avere) il valore dell'iva che viene dedotta dal conto iva vendite (in Dare) a fronte del recupero effettuato.
+</details>
+
+<details>
+
+  <summary> 11. Come posso gestire una "Comunicazione" TD29 per comunicare una omessa o irregolare fatturazione da parte del fornitore? </summary>
+
+1. Nella tabella Amministrazione > **Tipi Documento** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Comunicazione per errata fatturazione fornitore*, il flag **Autofattura** deve essere **attivo**, il campo **Codice per fatture elettroniche** deve riportare *TD29*
+2. Nella tabella Vendite > **Tipi Fatture** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Comunicazione per errata fatturazione*; nel campo **Natura Fattura** deve essere selezionata la voce ***Fattura***; il campo **Tipo documento** riporterà la tipologia di cui al punto 1. nel campo **Causale** (contabile) non è detto che sia necessario collegare una voce essendo questa solo una comunicazione di omessa fatturazione del fornitore, senza rilevanza ai fini IVA.
+3. Creare il nuvo documento nel modulo Vendita > Fatture di Vendita utilizzando la tipologia di fattura creata al punto 2. 
+   - Espandendo la sezione *Tipo Riferimento* della *Testata* del documento è possibile, se necessario, oltre al campo Tipo riferimento, valorizzare anche il dettaglio della fattura precedente che viene rettificata.
+   - Nel campo Cedente, nella testata del documento inserire i dati del Fornitore, mentre nel campo Cliente inserire l'anagrafica della nostra società appositamente creata per le autofatture.
+   - Nella sezione Articoli del documento inserire una riga con, ad esempio, la descrizione della merce non fatturata ed i relativi importi, oppure e si tratta di rettifica di irregolare o errata fattura il valore della rettifica.
+4. Creare il file xml ed inviarlo con le consuete procedure.
 </details>
