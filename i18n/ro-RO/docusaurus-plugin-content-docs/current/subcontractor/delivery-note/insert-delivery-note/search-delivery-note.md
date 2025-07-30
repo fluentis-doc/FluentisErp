@@ -1,18 +1,19 @@
 ---
-title: Ricerca DDT di Consegna
+title: Căutare avize de livrare
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > DDT di Consegna > DDT di Consegna**.
+Formularul se deschide prin calea **Sistem lohn > Avize de livrare > Aviz de livrare**.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Filtri specifici*
+#### Filtre specifice
 
-**Scaricate**: questo flag consente di filtrare i DDT di Consegna già scaricati dal magazzino, cioè i DDT per cui è stata effettuata l'operazione di *Scarico DDT*;  
-**Stampate**: questo flag consente di i DDT di Consegna già stampati.  
-La finestra della ricerca DDT di apre con questi 2 flag disattivati di default, quindi per visualizzare tutte i DDT è necessario attivarli.
+**Descărcate**: acest flag permite filtrarea avizelor de livrare deja descărcate din gestiune, adică acele avize pentru care s-a efectuat operația de *descărcare*.
 
-Sempre da questa form è possibile creare un nuovo DDT di consegna, cliccando sul pulsante [Nuovo](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note).
+**Listate**: acest flag permite filtrarea avizelor de livrare deja tipărite.  
+*Nota*: fereastra de căutare a avizelor se deschide cu aceste 2 opàiuni dezactivate implicit.
+
+Tot din acest form se poate crea un nou aviz de livrare, făcând clic pe butonul [Nou](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note).
