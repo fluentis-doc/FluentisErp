@@ -36,7 +36,7 @@ Zatim treba pritisnuti tipku **OK** ili **Cancel** ako seeželi nastaviti ili od
 
 *Metoda korištena za planiranje*:   
 Kao prvi korak, uklanjaju se sve prethodno planirane, a još neizvršene *kalibracije* za *instrument*.  
-Zatim, počevši od datuma posljednje *kalibracije*, kreira se onoliko *kalibracija* koliko ih je moguće kreirati u zadanom vremenskom intervalu počevši od današnjeg datuma, e frekvencijom definiranom *razdobljem kalibracije*. Ako predloženi datum pada na neradni dan naveden u *Kalendaru tvornice* predloženi datum će biti pomaknut na prvi sljedeći radni dan.   
+Zatim, počevši od datuma posljednje *kalibracije*, kreira se onoliko *kalibracija* koliko ih je moguće kreirati u zadanom vremenskom intervalu počevši od današnjeg datuma, frekvencijom definiranom *razdobljem kalibracije*. Ako predloženi datum pada na neradni dan naveden u *Kalendaru tvornice* predloženi datum će biti pomaknut na prvi sljedeći radni dan.   
 Ako za instrument nikada nije bila planirana ili izvršena *kalibracija* ili ako posljednji datum *kalibracije* pada prije *razdoblja Kalibracije* koje se računa unatrag od današnjeg datuma, prva *kalibracija* će biti predložena za današnji datum, a sve ostale će biti planirane nakon toga.
 
 ### Nova kalibracija

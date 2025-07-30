@@ -1,99 +1,99 @@
 ---
-title: Strumento di misura
+title: Mjerni instrument
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Taratura strumenti > Strumenti di misura > Nuovo Strumento di misura** oppure è possibile eseguirla dalla **Ricerca Strumenti di misura**.   
+Upravljanje se nalazi na putanji **Kvaliteta > Kalibracija uređaja >  Mjerni instrumenti > Novi mjerni instrument** ili se može izvršiti putem **Pretrage mjernih instrumenata**.   
 
 
-:::important A cosa serve
-In questa anagrafica vengono memorizzati gli strumenti di misura utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.   
-Allo strumento di misura è possibile associare le informazioni di acquisto, di responsabilità, le proprietà tecniche/meccaniche, di ubicazione e di taratura.   
-Se lo strumento è soggetto a taratura e la taratura è interna, è possibile definire quali sono le attività che devono essere fatte e i valori da rilevare affinché la taratura dia esito positivo.   
-Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile definire qual e l'ente terzo che effettuerà la taratura.   
-Se inserita una periodicità temporale di taratura il pulsante di "Pianifica nuove tarature" permette la creazione automatica, per un periodo desiderato, delle tarature pianificate.   
-A standard sono disponibili le reportistiche di: Registro strumenti raggruppati per: Strumento, Categoria, Fornitore, Ubicazione, Utilizzatore, Scadenza garanzia e Scadenza taratura, Registro Strumenti non soggetti a taratura e Scheda Strumento di misura.   
+:::important ČEMU SLUŽI
+U ovom šifarniku pohranjuju se mjerni instrumenti koji se koriste za osiguranje prikladnosti proizvoda i pružanje ponuđenih usluga.   
+Uz mjerni instrument moguće je povezati informacije o kupnji, odgovornosti, tehničkim/mehaničkim svojstvima, lokaciji i kalibraciji.   
+Ako je instrument podložan kalibraciji i kalibracija se provodi interno, moguće je definirati koje aktivnosti treba provesti i koje vrijednosti zabilježiti kako bi kalibracija bila uspješna.   
+Ako je instrument podložan kalibraciji, a kalibracija se provodi eksterno, moguće je definirati koja će treća strana obaviti kalibraciju.   
+Ako je definirana vremenska periodičnost kalibracije, tipka "Planiraj nove kalibracije" omogućuje automatsko stvaranje planiranih kalibracija za željeno razdoblje.   
+Standardno su dostupna sljedeća izvješća: Registar instrumenata grupiranih prema: Instrument, Kategorija, Dobavljač (nabave), Lokacija, Korisnik, Jamstvo datuma i Istek kalibracije, Registar instrumenata koji nisu podložni kalibraciji i Kartica mjernog instrumenta.   
 
-A standard sono disponibili le reportistiche di:   
-> **Registro Strumenti di misura**: elenco degli *Strumenti di misura* raggruppabili per: *Strumento*, *Categoria*, *Fornitore* (di acquisto), *Ubicazione*, *Utilizzatore*, *Scadenza garanzia* e *Scadenza taratura*.   
-> **Registro Strumenti non soggetti a taratura**: elenco degli *Strumenti di misura* dove non è prevista la *Taratura*; per la stampa di questo report non ha effetto il filtro *Stato - Non soggetti a taratura: Tutti, Soggetti a taratura, Non soggetti a taratura*.   
-> **Scheda Strumento di misura**: scheda degli *Strumenti di misura*.   
+Standardno su dostupna sljedeća izvješća:   
+> **Registar mjernih instrumenata**: popis *mjernih instrumenata* koji se može grupirati po: *Instrument*, *Kategorija*, *Dobavljač* (nabave), *Lokacija*, *Korisnik*, *Jamstvo datuma* i *Istek kalibracije*.   
+> **Registar Instrumenata koji ne podliježu umjeravanju**: popis *mjernih instrumenata* gdje nije predviđena *Kalibracija*; filter nema utjecaja na ispis ovog izvješća *Status - Nisu podložni kalibraciji: Svi, Podložno kalibraciji, Nisu podložni kalibraciji*.   
+> **Kartica Alati za mjerenje**: kartica za *mjerne instrumente*.   
 :::
 
 
-## Pulsanti di comando
+## Upravljačke tipke
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dello *Strumento di misura* visualizzato.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica strumento
-
-Per duplicare lo *Strumento di misura* visualizzato in un nuovo *Strumento di misura* è sufficiente premere il pulsante **Duplica**.   
-Le informazioni dello strumento di origine non duplicate sono: *Codice*,  *Matricola*, *Data acquisto*, *Scadenza garanzia*, *Ubicazione fornitore*, *Cliente proprietario*, *Immagine* e i dati dell'ultima taratura effettuata: *Data ultima taratura* ed *Esito*.   
-Al termine dell'elaborazione il nuovo *Strumento di misura* viene visualizzato.
+Pritiskom na ovu tipku pohranjuju se sve izmijenjene informacije o prikazanom *mjernom instrumentu*.   
 
 
-### Pianifica nuove tarature
+### ![](/img/neutral/common/duplicate.png) Dupliciraj instrument
 
-Il pulsante è abilitato solamente se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura*, ed esiste un *Periodo di taratura* temporale (*Unità di misura* *Giorni* o *Mesi*). Viene visualizzata una richiesta di:   
-> **Pianificare fino al**: è la data di fine pianificazione delle nuove tarature schedulate.   
-
-*Metodo utilizzato per la pianificazione*:   
-Come prima cosa vengono eliminate tutte le precedenti *Tarature* pianificate e non ancora attuate per lo *Strumento*.  
-Successivamente, a partire dalla data di ultima *Taratura*, si creano tante *Tarature* quante sono possibili creare nell'intervallo richiesto a partire dalla data odierna e cadenziate per il *Periodo di taratura*. Se la prima data proposta ricade in una giornate non lavorativa specificata nel *Calendario di fabbrica* la data proposta verrà posticipata alla prima data lavorativa utile.   
-Se per lo strumento non è mai stata pianificata o effettuata una *Taratura* o l'ultima data di *Taratura* risale a un periodo antecedente alla data odierna detratta dal
-*Periodo di taratura*, la prima *Taratura* sarà proposta in data odierna e successivamente le altre.
+Za dupliciranje prikazanog *mjernog instrumenta* u novi *mjerni instrument* dovoljno je pritisnuti tipku **Dupliciraj**.   
+Informacije koje se ne dupliciraju s izvornog instrumenta su: *Šifra*,  *Serijski broj*, *Datum kupnje*, *Datum isteka jamstva*, *Lokacija dobavljača*, *Kupac vlasnik*, *Slika* te podaci o posljednjoj obavljenoj kalibraciji: *Datum posljednje kalibracije* i *Rezultat*.   
+Nakon završetka obrade prikazuje se novi *mjerni instrument*.
 
 
-### Nuova taratura
+### Planiranje novih kalibracija  
 
-Il pulsante è abilitato solamente se lo *Strumento di misura* è *Attivo* ed è *Soggetto a taratura*.   
-Per poter creare una nuova *Taratura* non pianificata per lo *Strumento di misura* visualizzato è necessario premere il pulsante **Nuova taratura**.   
-Alla conferma della richiesta viene creata una nuova *Taratura*; viene proposto il *Tipo taratura* (interna o esterna), indicata nei *Parametri taratura strumenti*, i riferimenti dello *Strumenti di misura* e le sue proprietà.   
-Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.   
+Tipka je omogućena samo ako je *mjerni instrument* *Aktivan*, *podložan kalibraciji*, i postoji vremenski *period kalibracije* (*mjerna jedinica*: *Dani* ili *Mjeseci*). Prikazuje se zahtjev za:   
+> **Planirati do**: ovo je datum završetka planiranja novih zakazanih kalibracija.   
+
+*Metoda korištena za planiranje*:   
+Kao prvi korak, uklanjaju se sve prethodno planirane, a još neizvršene *kalibracije* za *instrument*.  
+Zatim, počevši od datuma posljednje *kalibracije*, kreira se onoliko *kalibracija* koliko ih je moguće kreirati u zadanom vremenskom intervalu počevši od današnjeg datuma, frekvencijom definiranom *razdobljem kalibracije*. Ako predloženi datum pada na neradni dan naveden u *Kalendaru tvornice* predloženi datum će biti pomaknut na prvi sljedeći radni dan.   
+Ako za instrument nikada nije bila planirana ili izvršena *kalibracija* ili ako posljednji datum *kalibracije* pada prije
+*razdoblja Kalibracije* koje se računa unatrag od današnjeg datuma, prva *kalibracija* će biti predložena za današnji datum, a sve ostale će biti planirane nakon toga.
 
 
-## Gestione dati
+### Nova kalibracija
+
+Tipka je omogućena samo ako se iz pregleda rezultata odabere jedan *mjerni instrument* koji je *aktivan* i *podložan kalibraciji*.
+Kako bi se kreirala nova *neplanirana kalibracija* za prikazani *mjerni instrument*, potrebno je pritisnuti tipku *Nova kalibracija*. 
+Nakon potvrde zahtjeva kreira se nova *kalibracija*; predlaže se *vrsta kalibracije* (interna ili eksterna), navedena u *Parametrima umjeravanja instrumenata*, zajedno s referencama na *mjerni instrument* i njegova svojstva.   
+Po završetku obrade prikazuje se *nova kalibracija*.    
 
 
-### Dati di testata
+## Upravljanje podacima
 
-Le informazioni gestite sono:   
-> **Categoria**: è la *Categoria strumento* dello *Strumento di misura* (dato obbligatorio).   
-> **Codice**: è il codice dello *Strumento di misura* (dato obbligatorio).   
-> **Matricola**: è la matricola dello *Strumento di misura*; informazione descrittiva libera.   
-> **Modello**: è il modello dello *Strumento di misura*; informazione descrittiva libera.   
+
+### Podaci zaglavlja
+
+Upravljane informacije uključuju:   
+> **Kategorija**: Kategorija *mjernog instrumenta* (obvezan podatak).   
+> **Šifra**: šifra *mjernog instrumenta* (obvezan podatak).   
+> **Serijski broj**: serijski broj *mjernog instrumenta*; slobodna opisna informacija.   
+> **Model**: model *mjernog instrumenta*; slobodna opisna informacija.   
 >
-> **Dati di acquisto**: expander dove è possibile inserire:   
+> **Podaci o kupnji**: proširivi odjeljak u kojem je moguće unijeti:   
 >
->> **Fornitore**: è la ragione sociale del *Fornitore* di acquisto.   
->> **Produttore**: è il contatto del *Produttore* dello strumento.   
->> **Data di acquisto**: è la data di acquisto.   
->> **Scadenza garanzia**: è la data di scadenza della garanzia di acquisto.   
->> **Fornitore manutenzione/assistenza**: è la ragione sociale del *Fornitore* abituale di manutenzione/assistenza.   
+>> **Dobavljač**: naziv *dobavljača* pri kupnji.    
+>> **Proizvođač**: Kontakt **proizvođača* instrumenta.   
+>> **Datum kupnje**: datum kupnje/nabave.   
+>> **Datum isteka jamstva**: datum isteka jamstva pri kupnji.   
+>> **Dobavljač održavanja/servisa**: naziv uobičajenog *dobavljača* za održavanje/servis.   
 >
-> **Funzione responsabile**: expander dove è possibile inserire:   
+> **Odgovorna funkcija**: proširivi odjeljak u kojem je moguće unijeti:   
 >
->> **Funzione**: è la *Funzione aziendale* responsabile.   
->> **Dipendente**: è il *Dipendente* responsabile*.   
+>> **Funkcija**: *poslovna funkcija* u poduuzeću odgovorna za instrument.   
+>> **Zaposlenik**: odgovorni *zaposlenik*.   
 >
-> **Proprietà di taratura**: expander dove è possibile inserire:   
+> **Svojstva kalibracije**: proširivi odjeljak u kojem je moguće unijeti:   
 >
->> **Non soggetto a taratura**: indica che lo *Strumento di misura* non è soggetto a taratura.   
->> In questo caso tutte le altre informazioni presenti nell'expander sono disabilitate.   
->> **Taratura interna**: indica che lo *Strumento di misura* viene tarato da un soggetto interno all'azienda.   
->> **Periodo di taratura**: è il periodo (espresso nella successiva *Unità di misura*) di taratura dello *Strumento di misura*.   
->> **Unità di misura**: è l'*Unità di misura* del *Periodo* di taratura.   
->> **Ultima taratura**: è la data dell'ultima taratura effettuata; il valore viene automaticamente impostato all'attribuzione dell'*Esito* dell'ultima *Taratura* effettuata ma può essere indicato anche manualmente.   
->> **Esito**: è l'*Esito* dell'ultima taratura effettuata; il valore viene automaticamente impostato all'attribuzione dell'*Esito* dell'ultima *Taratura* effettuata ma può essere indicato anche manualmente.   
->> **Data prossima taratura**: è la data della prossima taratura; il valore viene automaticamente impostato all'attribuzione dell'*Esito* dell'ultima *Taratura* effettuata ma può essere indicato anche manualmente.   
->> **Fornitore taratura**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
+>> **Nije podložno kalibraciji**: označava da *mjerni instrument* nije podložan kalibraciji.   
+>> U tom slučaju sve ostale informacije u ovom odjeljku su onemogućene.   
+>> **Interna kalibracija**: označava da *mjerni instrument* kalibrira osoba unutar tvrtke.   
+>> **Period kalibracije:**: razdoblje (izraženo u povezanoj *mjernoj jedinici*) kalibracije mjernog instrumenta.    
+>> **Mjerna jedinica**: *mjerna jedinica* za razdoblje kalibracije.   
+>> **Posljednja kalibracija**: datum posljednje provedene *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *provedene kalibracije*, ali može se unijeti i ručno.   
+>> **Rezultat**: *rezultat* posljednje provedene *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *kalibracije*, ali može se unijeti i ručno.   
+>> **Datum sljedeće kalibracije**: datum sljedeće *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *kalibracije*, ali može se unijeti i ručno.    
+>> **Dobavljač kalibracije**: naziv *dobavljača* koji provodi vanjsku kalibraciju.   
 >
-> **Classificazione**: è la *Classificazione*; esempi: Meccanico, Elettrico, Elettronico, ecc.   
-> **Articolo**: è l'*Articolo* associato allo *Strumento di misura*; l'articolo, per poter essere selezionato, deve di *Natura articolo* *Attrezzatura* oppure *Utensile*.   
+> **Klasifikacija**: *klasifikacija*; primjeri: Mehanički, Električni, Elektronički, itd.    
+> **Articolo**: *artikl* povezan s *mjernim instrumentom*; *artikl*, kako bi bio odabran, mora biti tipa *Oprema* ili *Alat*.    
 >
 > **Proprietà dello strumento**: expander dove è possibile inserire:   
 >
