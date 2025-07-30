@@ -1,50 +1,49 @@
 ---
-title: Ricerca Strumenti di misura
+title: Pretraživanje mjernih instrumenata
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Taratura strumenti > Strumenti di misura**.   
+Filter se nalazi na putanji **Kvaliteta > Kalibracija uređaja > Mjerni instrumenti**.   
 
-Il filtro dati consente di inserire nuovi *Strumenti di misura* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+Filter podataka omogućuje unos novih *mjernih instrumenata* ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili izbrisalo.   
 
-### ![](/img/neutral/common/search.png) Ricerca Strumenti di misura
+### ![](/img/neutral/common/search.png) Pretraživanje mjernih instrumenata
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je pritisnuti na tipku **Traži** kako bi se prikazali rezultati unutar prikaza rezultata.  
 
-### ![](/img/neutral/common/new.png) Inserimento Strumenti di misura
+### ![](/img/neutral/common/new.png) Unos mjernih instrumenata
 
-Per poter inserire nuovi *Strumenti di misura* è necessario premere il pulsante **Nuovo**.   
+Za unos novih *mjernih instrumenata* potrebno je pritisnuti tipku **Novo**.   
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Strumenti di misura
+### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Pregled mjernih instrumenata
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na željeni redak ili, odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**.   
 
-*Pulsanti specifici*: 
+*Specifične tipke*: 
 
-### Pianifica nuove tarature
+### Planiranje novih kalibracija
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Strumento di misura* e lo *Strumento* deve essere:   
-> *Attivo*;   
-> *Soggetto a taratura*;   
-> a taratura periodica e di tipo temporale (expander *Proprietà di taratura* con *Periodo di taratura* diverso da *zero* e *Unità di misura* di tipo *Giorno* o *Mese*).   
+Tipka je omogućеna samo ako se iz prikaza rezultata odabere samo jedan *mjerni instrument* i taj *instrument* mora biti:    
+> *Aktivan*;   
+> *Podložan kalibraciji*;   
+> Podložan periodičnoj i vremenski definiranoj kalibraciji (expander *Svojstva kalibracije* s *razdobljem kalibracije* različitim od *nule* i *jedinicom mjere* tipa *Dan* ili *Mjesec*).   
 
-Per poter pianificare nuove *Tarature strumento pianificate* da uno *Strumento di misura* è necessario cliccare nella griglia sullo *Strumento di misura* da cui si desidera pianificare le *Tarature* e premere il pulsante **Pianifica nuove tarature**. Si può pianificare un solo *Strumento di misura* alla volta.   
-Verrà visualizzata una richiesta di:   
-> **Pianificare fino al**: è la data di fine periodo di pianificazione (dato obbligatorio), viene proposto un anno di pianificazione a partire dalla data odierna.   
+Kako bi se mogle planirati nove *kalibracije instrumenta* iz *mjernog instrumenta*, potrebno je kliknuti na *instrument* u pregledu za koji se želi planirati kalibracija i pritisnuti tipku **Planiranje novih kalibracija**. Može se planirati samo jedan *mjerni instrument* odjednom.    
+Bit će prikazan zahtjev za:   
+> **Planiranje do**: to je datum završetka razdoblja planiranja (obavezni podatak), predlaže se godina planiranja počevši od današnjeg datuma.   
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di pianifica o meno.   
+Zatim treba pritisnuti tipku **OK** ili **Cancel** ako seeželi nastaviti ili odustati od planiranja.   
 
-*Metodo utilizzato per la pianificazione*:   
-Come prima cosa si eliminano tutte le precedenti *Tarature* pianificate e non ancora attuate per lo *Strumento*.  
-Successivamente, a partire dalla data di ultima *Taratura*, si creano tante *Tarature* quante sono possibili creare nell'intervallo richiesto a partire dalla data odierna e cadenziate per il *Periodo di taratura*. Se la data proposta ricade in una giornate non lavorativa specificata nel *Calendario di fabbrica* la data proposta verrà posticipata alla prima data lavorativa utile.   
-Se per lo strumento non è mai stata pianificata o effettuata una *Taratura* o l'ultima data di *Taratura* risale a un periodo antecedente alla data odierna detratta dal
-*Periodo di taratura*, la prima *Taratura* sarà proposta in data odierna e successivamente le altre.
+*Metoda korištena za planiranje*:   
+Kao prvi korak, uklanjaju se sve prethodno planirane, a još neizvršene *kalibracije* za *instrument*.  
+Zatim, počevši od datuma posljednje *kalibracije*, kreira se onoliko *kalibracija* koliko ih je moguće kreirati u zadanom vremenskom intervalu počevši od današnjeg datuma, e frekvencijom definiranom *razdobljem kalibracije*. Ako predloženi datum pada na neradni dan naveden u *Kalendaru tvornice* predloženi datum će biti pomaknut na prvi sljedeći radni dan.   
+Ako za instrument nikada nije bila planirana ili izvršena *kalibracija* ili ako posljednji datum *kalibracije* pada prije *razdoblja Kalibracije* koje se računa unatrag od današnjeg datuma, prva *kalibracija* će biti predložena za današnji datum, a sve ostale će biti planirane nakon toga.
 
-### Nuova taratura
+### Nova kalibracija
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Strumento di misura* e lo *Strumento* deve essere *Attivo*.   
-Per poter creare una nuova *Taratura strumento* da uno *Strumento di misura* è necessario cliccare nella griglia sullo *Strumento di misura* da cui si desidera creare le *Taratura* e premere il pulsante **Nuova taratura**. Si può creare una *Taratura strumento* da un solo *Strumento di misura* alla volta.   
-Al termine dell'elaborazione la nuova *Taratura strumento pianificata* viene visualizzata.   
+Tipka je omogućena samo ako se iz pregleda rezultata odabere jedan *mjerni instrument* i *instrument* mora biti *aktivan*. 
+Za kreiranje nove *kalibracije instrumenta* iz *mjernog instrumenta* potrebno je kliknuti u pregledu na *mjerni instrument* iz kojeg se želi kreirati kalibracija i pritisnuti tipka **Nova kalibracija**. *Kalibracija instrumenta* može se kreirati samo iz jednog *mjernog instrumenta* odjednom.   
+Nakon završetka obrade, *nova planirana kalibracija* instrumenta bit će prikazana.    
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledajte sljedeći link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
