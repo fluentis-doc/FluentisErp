@@ -1,16 +1,16 @@
 ---
-title: Ricerca Taratura strumenti
+title: Pretraživanje kalibracije uređaja 
 sidebar_position: 1
 ---
 
-Il filtro dati consente di inserire nuove *Tarature strumenti* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+Filter podataka omogućuje unos novih *kalibracija uređaja* ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.    
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja filtra i rezultatskog područja. Nakon što postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** da bi se vidjeli rezultati unutar pregleda. 
 
-Per poter inserire nuove *Tarature strumenti* è necessario premere il pulsante **Nuovo**.   
+Za unos novih *Kalibracija uređaja* potrebno je pritisnuti tipku **Novo**.    
 
-### Modifica o Visualizzazione Taratura strumenti
+### Izmjena ili prikaz kalibracije uređaja
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Za otvaranje upravljanja u prikazu, potrebno je dvostruko kliknuti na željeni redak ili, odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju obrazaca, upućujemo vas na sljedeći link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

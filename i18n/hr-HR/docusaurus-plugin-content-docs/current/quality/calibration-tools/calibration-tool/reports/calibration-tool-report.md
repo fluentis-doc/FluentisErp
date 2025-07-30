@@ -1,5 +1,5 @@
 ---
-title: Popis kalibracija instrumenata
+title: Popis kalibracija uređaja
 sidebar_position: 1
 ---
 
