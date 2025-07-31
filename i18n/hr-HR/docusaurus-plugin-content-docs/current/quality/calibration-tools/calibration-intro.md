@@ -38,7 +38,7 @@ import Link from '@docusaurus/Link';
 - morate se definirati [*Kategorija mjernog instrumenta*](/docs/configurations/tables/quality/calibration-tools/measurement-tool-categories)   
 - mora se unijeti novi [*Mjerni instrument*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
 
-la **Kalibracija uređaja**:
+   **Kalibracija uređaja**:
 - morate se definirati:[*Vrsta kalibracije*](/docs/configurations/tables/quality/calibration-tools/calibration-type), pripadajuća *Numeracija* i [*Mjerni instrument*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
 - kako bi se olakšalo upravljanje *kalibracijom instrumenata*, postaviti [*Parametri umjeravanja instrumenata*](/docs/configurations/parameters/quality/calibration-tools)   
 - mora se unijeti nova [*Kalibracija uređaja*](/docs/quality/calibration-tools/calibration-tool/calibration-tool-management)   

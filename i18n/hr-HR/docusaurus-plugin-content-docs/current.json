@@ -1932,7 +1932,7 @@
     "description": "The label for category Taratura strumenti in sidebar quality"
   },
   "sidebar.quality.category.Strumenti di misura": {
-    "message": "Strumenti di misura",
+    "message": "Mjerni instrumenti",
     "description": "The label for category Strumenti di misura in sidebar quality"
   },
   "sidebar.controlling.category.Procedure": {
@@ -2172,7 +2172,7 @@
     "description": "The label for category Azioni correttive in sidebar configurations"
   },
   "sidebar.configurations.category.Taratura strumenti": {
-    "message": "Taratura strumenti",
+    "message": "Kalibracija uređaja",
     "description": "The label for category Taratura strumenti in sidebar configurations"
   },
   "sidebar.configurations.category.Previsioni di vendita": {
