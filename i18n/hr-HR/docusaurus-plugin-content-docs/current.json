@@ -1928,7 +1928,7 @@
     "description": "The label for category Azioni correttive in sidebar quality"
   },
   "sidebar.quality.category.Taratura strumenti": {
-    "message": "Taratura strumenti",
+    "message": "Kalibracija uređaja",
     "description": "The label for category Taratura strumenti in sidebar quality"
   },
   "sidebar.quality.category.Strumenti di misura": {
