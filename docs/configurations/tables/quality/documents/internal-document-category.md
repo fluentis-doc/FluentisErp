@@ -106,6 +106,6 @@ L'elenco si compone delle seguenti informazioni:
 
 ### Extra data
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Documento di origine interna*.   
-Questi *Extra data* vengono ereditati nel *Documento interno* di quella determinata categoria.   
+Questi *Extra data* possono venire ereditati nel *Documento interno* di quella determinata categoria.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

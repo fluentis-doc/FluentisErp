@@ -53,7 +53,7 @@ L'elenco si compone delle seguenti informazioni:
 
 ### Attributi Tipo di non conformità
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di non conformità*.   
-Questi *Extra data* vengono ereditati nelle *Non conformità* di quella determinata tipologia.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di Non conformità*.   
+Questi *Extra data* possono venire ereditati nelle *Non conformità* di quella determinata tipologia.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

@@ -44,7 +44,7 @@ L'elenco si compone delle seguenti informazioni:
 ### Extra data
 
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi piano di controllo*.   
-Questi *Extra data* vengono ereditati nei *Piani di controllo* di quella determinata tipologia.   
+Questi *Extra data* possono venire ereditati nei *Piani di controllo* di quella determinata tipologia.   
 
 ### Prove pianificate
 
@@ -54,11 +54,11 @@ Questi *Tipi prova* vengono ereditati nei *Piani di controllo* di quella determi
 #### Attributi Prove Pianificate
 
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Prova pianificata*.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
 
 #### Configurazione Prove Pianificate
 
 Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

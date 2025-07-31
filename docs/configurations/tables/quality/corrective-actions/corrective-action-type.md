@@ -29,4 +29,9 @@ Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal 
 > **Descrizione numerazione**: è la descrizione della *Numerazione*.   
 > **Note**: annotazioni libere.
 
+### Attributi Tipo azione correttiva
+
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di azione correttiva*.   
+Questi *Extra data* possono venire ereditati nelle *Azioni correttive* di quella determinata tipologia.   
+
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

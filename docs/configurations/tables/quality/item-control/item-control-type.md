@@ -53,6 +53,6 @@ non è prevista la *Causale* di contropartita in quanto la *Prova* è di tipo *D
 ### Extra data
 
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi controllo articolo*.   
-Questi *Extra data* vengono ereditati nei *Controlli articolo* di quella determinata tipologia.   
+Questi *Extra data* possono venire ereditati nei *Controlli articolo* di quella determinata tipologia.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

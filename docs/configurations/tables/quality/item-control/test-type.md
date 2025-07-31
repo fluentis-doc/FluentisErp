@@ -71,12 +71,12 @@ L'elenco si compone delle seguenti informazioni:
 ### Attributi Tipo di prova
 
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo prova*.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
 
 ### Parametri di configurazione Prova e strumento di misura
 
 Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
 
 ### Esiti possibili
 

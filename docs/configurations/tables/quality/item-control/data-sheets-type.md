@@ -34,7 +34,7 @@ L'elenco si compone delle seguenti informazioni:
 ### Attributi Tipo scheda tecnica
 
 E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo scheda tecnica*.   
-Questi *Extra data* vengono ereditati nelle *Schede tecniche* di quella determinata tipologia.   
+Questi *Extra data* possono venire ereditati nelle *Schede tecniche* di quella determinata tipologia.   
 
 ### Metodo di codifica
 
