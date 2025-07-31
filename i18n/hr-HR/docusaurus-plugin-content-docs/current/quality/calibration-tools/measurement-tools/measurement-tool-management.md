@@ -93,92 +93,92 @@ Upravljane informacije uključuju:
 >> **Dobavljač kalibracije**: naziv *dobavljača* koji provodi vanjsku kalibraciju.   
 >
 > **Klasifikacija**: *klasifikacija*; primjeri: Mehanički, Električni, Elektronički, itd.    
-> **Articolo**: *artikl* povezan s *mjernim instrumentom*; *artikl*, kako bi bio odabran, mora biti tipa *Oprema* ili *Alat*.    
+> **Artikl**: *artikl* povezan s *mjernim instrumentom*; *artikl*, kako bi bio odabran, mora biti tipa *Oprema* ili *Alat*.    
 >
-> **Proprietà dello strumento**: expander dove è possibile inserire:   
+> **Svojstva instrumenta**: proširivi odjeljak u kojem je moguće unijeti:   
 >
->> **Unità di misura**: è l'*Unità di misura* dei valori rilevati dallo *Strumento di misura*.   
->> **Intervallo di misura**: è il range misurabile dallo *Strumento di misura*.   
->> **Precisione**: è la *Precisione di misura* minima.   
->> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
->> **Ubicazione fornitore**: è la ragione sociale del *Fornitore* dove è ubicato lo *Strumento di misura*.   
->> **E' uno Strumento primario**: indica che lo *Strumento di misura* visualizzato viene utilizzato per la taratura di altri strumenti.   
->> **Strumento primario**: è lo *Strumento di misura* che viene utilizzato per effettuare la taratura dello strumento visualizzato.   
+>> **Mjerna jedinica**: *mjerna jedinica* vrijednosti koje *mjerni instrument* bilježi.   
+>> **Raspon mjerenja**: Raspon koji *mjerni instrument* može mjeriti.   
+>> **Preciznost**: *minimalna preciznost* mjerenja.   
+>> **Granice**: *granice prihvatljivosti* *mjernog instrumenta* za njegovu upotrebu; primjeri: eventualna ograničenja preciznosti, okruženja u kojima se ne smije koristiti, itd. 
+>> **Lokacija dobavljača**: naziv *dobavljača* gdje se nalazi *mjerni instrument*.   
+>> **Ovo je primarni instrument**: označava da se *mjerni instrument* koristi kao *referentni instrument* za određenu klasifikaciju instrumenta.    
+>> **Primarni instrument**: ovo je *mjerni instrument* koji se koristi za kalibraciju prikazanog instrumenta.   
 >
-> **Funzione di utilizzo**: expander dove è possibile inserire:   
+> **Funkcija upotrebe**: proširivi odjeljak u kojem je moguće unijeti:  
 >
->> **Funzione**: è la *Funzione aziendale* che utilizza abitualmente lo *Strumento di misura*.   
->> **Dipendente**: è il *Dipendente* che utilizza abitualmente lo *Strumento di misura*.   
+>> **Funkcija**: *poslovna funkcija* koja redovito koristi *mjerni instrument*.    
+>> **Zaposlenik**: *zaposlenik* koji redovito koristi *mjerni instrument*.    
 >
-> **Classe strumento**: è la *Classe strumento*; è abitualmente utilizzata per definire diversi livelli di declassamento dello *Strumento di misura*.   
-> **Magazzino/Ubicazione**: è il *Magazzino/Ubicazione* dove è ubicato lo *Strumento di misura*.   
-> **Cliente proprietario**: è la ragione sociale del *Cliente* proprietario.   
-> **Attivo**: indica che lo *Strumento di misura* è ancora *attivo*.   
-> **Non attivo dal**: indica la data dalla quale lo *Strumento di misura* non è più *attivo*.   
-> **Annotazioni**: annotazioni libere.   
+> **Kategorija instrumenta**: *kategorija instrumenta*; obično se koristi za definiranje različitih razina degradacije *mjernog instrumenta*.    
+> **Skladište/Lokacija**: *skladište/Lokacija* gdje se nalazi *mjerni instrument*.    
+> **Vlasnik kupac**: naziv *vlasnika kupca*.    
+> **Aktivan**: označava da je *mjerni instrument* još uvijek *aktivan*.    
+> **Neaktivan od**: označava datum od kojeg *mjerni instrument* više nije *aktivan*.    
+> **Bilješke**: slobodne bilješke.   
 
 
-### Valori da rilevare
-In questo elenco è possibile definire i tipi di rilevazione e i valori da rilevare durante le attività di *Taratura interna*.   
-Se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura* e se è di *Taratura interna* questi valori vengono riportati nelle *Tarature interne*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di rilevazione.   
-> **Posizione**: annotazioni libere sull'argomento.   
-> **Intervallo lettura**: annotazioni libere sull'argomento.   
-> **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato richiesto*.   
-> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato richiesto*.   
-> **Nota**: annotazioni libere.   
+### Vrijednosti za bilježenje
+Na ovom popisu moguće je definirati vrste mjerenja i vrijednosti koje treba zabilježiti tijekom aktivnosti *interne kalibracije*.    
+Ako je *mjerni instrument* označen kao *aktivan*, *podložan kalibraciji* i ako je *kalibracija interna*, ove vrijednosti bit će navedene u *internim kalibracijama*.   
+Popis se sastoji od sljedećih informacija:   
+> **Sekvenca**: sekvenca mjerenja.   
+> **Pozicija**: slobodne bilješke o temi.   
+> **Interval čitanja**: slobodne bilješke o temi.   
+> **Tražena vrijednost**: nominalna vrijednost koja se traži.   
+> **Nesigurnost (-)**: vrijednost negativne neizvjesnosti (izražena u postocima) koja će se primijeniti na *traženu vrijednost*.   
+> **Nesigurnost (+)**: vrijednost pozitivne neizvjesnosti (izražena u postocima) koja će se primijeniti na *traženu vrijednost*.    
+> **Napomena**: slobodne bilješke.   
 
 
-### Articoli associati
-In questo elenco è possibile associare gli *Articoli* misurabili con lo *Strumento di misura*.   
-Con la versione attuale di Fluentis non ci sono controlli standard che verificano l'utilizzo dello strumento per rilevare valori dagli *Articoli* presenti in questo elenco.   
-L'elenco si compone delle seguenti informazioni:   
-> **Classe**: è la *Classe articolo*.   
-> **Codice**: è il codice dell'*Articolo*.   
-> **Descrizione articolo**: è la descrizione dell'*Articolo*.   
-> **Note**: annotazioni libere.   
+### Povezani artikli
+Na ovom popisu moguće je povezati *artikle* koji se mogu mjeriti s *mjernim instrumentom*.   
+S trenutnom verzijom Fluentisa ne postoje standardne provjere koje potvrđuju upotrebu instrumenta za mjerenje vrijednosti s *artikala* navedenih na ovom popisu.    
+Popis se sastoji od sljedećih informacija:   
+> **Klasa**: to je *klasa artikla*.   
+> **Šifra**: to je šifra *artikla*.   
+> **Opis artikla**: opis *artikla*.   
+> **Bilješke**: slobodne bilješke.   
 
 
-### Storico Rapporti e Certificati di taratura
-In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pianificati ed effettuati per lo *Strumento di misura*.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Taratura* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**: è il codice del *Tipo taratura*.   
-> **Descrizione tipo taratura**: è la descrizione del *Tipo taratura*.   
-> **Anno**: è l'*Anno* del documento.   
-> **Numero**: è il *Numero* del documento.   
-> **Taratura interna**: indica se è stato emesso una *Taratura interna*.   
-> **Schedulata**: indica se il documento è stato schedulato (pianificato).   
-> **Data prevista**: è la data di prevista taratura.   
-> **Data taratura**: è la data di effettiva taratura.   
-> **Esito**: è il codice dell'*Esito* della taratura.   
-> **Descrizione esito**: è la descrizione dell'*Esito* della taratura.   
-> **Categoria**: è il codice della *Categoria strumento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria strumento*.   
-> **Codice**: è il codice dello *Strumento di misura*.   
-> **Matricola**: è la matricola dello *Strumento di misura*.   
-> **Modello**: è il modello dello *Strumento di misura*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
-> **Funzione**: è il codice della *Funziona aziendale* che effettua la taratura interna.   
-> **Descrizione funzione**: è la descrizione della *Funziona aziendale* che effettua la taratura interna.   
-> **Codice**: è il codice del *Dipendente* che effettua la taratura interna.   
-> **Cognome**: è il cognome del *Dipendente* che effettua la taratura interna.   
-> **Nome**: è il nome del *Dipendente* che effettua la taratura interna.   
+### Povijest izvještaja i certifikata kalibracije
+Na ovom popisu moguće je pregledati *povijest K+kalibracija* i *certifikata kalibracije* planiranih i provedenih za *mjerni instrument*.    
+Pomoću dvostrukog klika miša na željeni redak moguće je upravljati odabranom *kalibracijom*.    
+Popis se sastoji od sljedećih informacija:   
+> **Vrsta kalibracije**: šifra *vrste kalibracije*.   
+> **Opis vrste kalibracije**: opis *vrste kalibracije*.   
+> **Godina**: *godina* dokumenta.   
+> **Broj**: *broj dokumenta*.   
+> **Interna kalibracija**: označava je li izdana *interna kalibracija*.   
+> **Planirano**: označava je li dokument planiran (raspoređen).   
+> **Planirani datum**: datum planirane kalibracije.   
+> **Datum kalibracije**: datum stvarne kalibracije.   
+> **Rezultat**: šifra *rezultata* kalibracije.   
+> **Opis rezultata**: opis *rezultata* kalibracije.   
+> **Kategorija**: šifra *kategorije instrumenta*.   
+> **Opis kategorije**: opis *kategorije instrumenta*.   
+> **Šifra**: šifra *mjernog instrumenta*.   
+> **Serijski broj**: serijski broj *mjernog instrumenta*.   
+> **Model**: model *mjernog instrumenta*.   
+> **Vanjski laboratorij**: naziv *dobavljača* koji provodi vanjsku kalibraciju.
+> **Funkcija**: šifra *poslovne funkcije* koja provodi internu kalibraciju.   
+> **Opis funkcije**: opis *poslovne funkcije* koja provodi internu kalibraciju.   
+> **Šifra**: šifra *zaposlenika* koji provodi internu kalibraciju.  
+> **Prezime**: prezime *zaposlenika* koji provodi internu kalibraciju.   
+> **Ime**: ime *zaposlenika* koji provodi internu kalibraciju.   
 
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Strumento di misura*.   
+### Dodatni podaci
+Moguće je unijeti [Dodatne Podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *mjerni instrument*. 
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Povezani dokumenti
+Na ovom popisu moguće je unijeti i pregledati eventualne privitke; moguće je vidjeti pretpregled.   
 
 
-### Immagine
-E' possibile allegare un'immagine dello *Strumento di misura* tramite l'utilizzo del drag&drop; viene visualizzata l'anteprima.   
-Questo allegato non viene incluso nel Documentale di Fluentis.   
+### Slika
+Moguće je priložiti sliku *mjernog instrumenta* koristeći drag and drop; vidljiv je pretpregled. 
+Ovaj privitak nije uključen u dokumentaciju Fluentis-a.    
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju obrazaca, postoji sljedeći link: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
