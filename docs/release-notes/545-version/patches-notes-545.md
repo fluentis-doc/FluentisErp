@@ -3,7 +3,7 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
-### Patch 545.1-0118- 31/07/2025
+### Patch 545.1-0119- 31/07/2025
 
 > - SCM - Risolto errore che non calcolava correttamente il valore della percentuale nella stampa Fatturato acquisti (#TT02798/25, #TT05463/24). 
 > - SD - In fase di duplicazione di un documento di vendita con Dichiarazione di intento viene verificata la presenza di una dichiarazione attiva; in assenza, l’aliquota IVA degli articoli viene ripresa dall’anagrafica del cliente o dell’articolo. (#TT03382/25) 
