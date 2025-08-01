@@ -6,13 +6,14 @@ sidebar_position: 1
 La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Procedure > Gestione massiva dei dati**
 
 :::important A cosa serve
-Questa gestione permette di gestire molte delle informazioni delle *Schede tecniche* in modo massivo, senza dover entrare manualmente in ogni *Piano di controllo*.   
+Questa procedura permette la gestione massiva di alcune informazioni presenti nei *Piani di controllo*, senza avere l'obbligo di dover entrare in ogni documento, apportare le modifiche desiderate e memorizzarle.   
 :::
 
 La form è suddivisa in:
-- un'area di filtro, contestuale alle sessioni delle informazioni che si desidera variare;   
+- un'area di filtro relativa alla ricerca delle informazioni di testata dei *Piani di controllo*;   
+- un'area di filtro contestuale alle sessioni delle informazioni che si desidera modificare;   
 - un'area composta da diversi tabulatori ognuno dei quali contiene le griglie dedicate alla modifica e risultato del filtro;   
-- l'ultimo tabulatore contiene lo *Storico errori* riscontrati durante le attività di *Modifica*.   
+- l'ultimo tabulatore contiene lo *Storico errori* riscontrati durante le attività di modifica.  
 
 I tabulatori sono:   
 > **Piani di controllo**;   
@@ -46,8 +47,8 @@ Premendo il pulsante **Ricerca** sono visualizzati i risultati all'interno della
 #### Area di modifica
 
 Contenuta in ogni tabulatore (eccetto nel tabulatore *Storico errori*), è la "griglia" superiore composta da una singola riga.   
-In questa griglia, che riporta le medesime colonne della griglia risultato (quella inferiore), è possibile inserire tutte le informazioni che si desiderano riportare nelle righe della griglia risultato alla pressione del pulsanta *Modifica*.   
-Una volta terminata la sostituzione dei valori, i valori preesisenti nella griglia superiore verranno eliminati.   
+In questa griglia, che riporta le medesime colonne della griglia risultato (quella inferiore), è possibile inserire tutte le informazioni che si desiderano riportare nelle righe della griglia risultato alla pressione del pulsante *Modifica*.   
+Una volta terminata la sostituzione dei valori, i valori preesistenti nella griglia superiore verranno eliminati.   
 
 #### Area di risultato
 Contenuta in ogni tabulatore, è la "griglia" inferiore che contiene il risultato della *Ricerca* applicata all'area di filtro.   
