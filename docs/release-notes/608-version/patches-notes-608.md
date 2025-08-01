@@ -3,6 +3,23 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0077 - 31/07/2025
+
+> - CO - nel modulo Chiusure infrannuali, per la procedura Valorizzazione area acquisti e vendite sono stati rivisti i test effettuati all’esecuzione del rollback (#TT04436/24) 
+> - CO - revisione esecuzione procedura. (#TT03054/25) 
+> - FI - revisione calcolo visualizzazione conti per conteggio saldo precedente nella colonna progressivo (#TT03163/25) 
+> - FI - revisione contabilizzazione da acquisti/vendite per assegnazione, in tab intrastat della registrazione, della nazione del codice iso partita iva; modifica dell’inserimento manuale in griglia intrastat. (#TT01817/25) 
+> - PR - corretto errore nel calcolo del cashflow relativamente al flusso delle richiesta di acquisto. Rif.  #TT03145/25 
+> - PR - creazione file Sepa, modificata gestione caratteri speciali ‘-‘ (#TT02214/25) 
+> - PR - risolto problema in fase di elaborazione del cashflow a causa della mancanza del codice DocFinance nella tabella Anagrafiche in corrispondenza della società in uso. (#TT02965/25).  
+> - SCM - Corretto errore nella procedura Evasione da Ordini che, a seguito della creazione del DDT, non aggiornava correttamente lo stato di evasione nell’ordine. (#TT03117/25) 
+> - SCM - Risolto errore che non calcolava correttamente il valore della percentuale nella stampa Fatturato acquisti (#TT02798/25, #TT05463/24). 
+> - SD - In fase di duplicazione di un documento di vendita con Dichiarazione di intento viene verificata la presenza di una dichiarazione attiva; in assenza, l’aliquota IVA degli articoli viene ripresa dall’anagrafica del cliente o dell’articolo. (#TT03382/25) 
+> - SD - Fix SalesOrder widget problem (rif.ticket 1258/21) 
+> - WM - Ottimizzata l’esplosione dei component nei prototipi e corretto bug che non visualizzava correttamente i componenti. (#TT03144/25) 
+> - WM - Risolto blocco in fase di cancellazione articolo con ricalcolo costi già eseguito (#TT02818/25) 
+
+
 ### Patch 608.1-0076 - 03/07/2025
 
 > - MPS - Corretto bug in schedulazione generale nel caso in cui fosse lanciata con la logica al più presto. (#TT02745/25) 

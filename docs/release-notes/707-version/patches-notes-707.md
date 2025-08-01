@@ -3,6 +3,45 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0043 - 01/08/2025
+
+> - CO - Corretto bug che non permetteva il rollback delle scritture di rettifica e integrazione nella chiusura conti infrannuale ( TT03342/25) 
+> - CO - nel modulo Chiusure infrannuali, per la procedura Valorizzazione area acquisti e vendite sono stati rivisti i test effettuati all’esecuzione del rollback (#TT04436/24) 
+> - CO - revisione esecuzione procedura. (#TT03054/25) 
+> - CRM - In fase di conversione contatto crm in anagrafica erp, viene notificato un avviso in caso di anagrafica già esistente con la stessa partita iva (#TT03299/25) 
+> - FI - contabilizzazione fatture di vendita, revisione per omaggi senza rivalsa iva nelle note di credito (#TT03298/25) 
+> - FI - creazione registrazioni contabili da file Sdi di acquisto, ottimizzazione caricamento dati (#TT03272/25) 
+> - FI - revisione contabilizzazione enasarco per chiusura partita nei compensi con partite gestite al lordo. (#TT03400/25) 
+> - FI - Stampa registri iva: revisione del riporto dei totali in caso di stampa del registro IVA con il flag Riepilogativo attivo (Rif. ticket 3414/25) 
+> - Fluentis Browser - WM - Tabelle - Categoria fiscale - Corretto l'errato layout della griglia di dettaglio, non presente nella versione Browser rispetto alla WPF. 
+> - MES - Corretto bug in lista prelievo materiali che non calcolava correttamente la quantità residua se venivano fatti due o più evasioni parziali di seguito. (#TT03368/25) 
+> - MES - Nel widget Macchina del tab produzione del MES, non vengono  più visualizzate le macchine non attive. (#TT03456/25) 
+> - MES - Nella stampa Etichette, presente nel tab etichette del MES, ora è possibile disporre del campo MESSI_User. (#TT03356/25) 
+> - MS - Corretto bug in pianificazione generale che si verificava nel caso in cui venissero pianificate contemporaneamente più commesse in stato esecutivo. (#TT03451/25) 
+> - PM - WEB - parametri per operatore , corretto caso in cui non si riusciva ad inserire nuova riga (#TT03044/25) 
+> - SCM - Procedura di creazione automatica ordini, tab Scelta fornitore: corretto un malfunzionamento nel trascinamento degli articoli tra fornitori. (#TT03358/25) 
+> - SCS - Ordini di Conto Lavoro: Corretto errore nel calcolo delle quantità dei Materiali da impiegare, nel caso di proposta dei materiali mediante esplosione livello da distinta base contenente componenti fittizi. (#TT02947/25) 
+> - SD - Blazor correzione sul comportamento dell combobox sdi. (#TT03375/25) 
+> - SD - Calendario spedizioni - nel caso di assenza vettore-autista senza causale valida assegnata, verranno mostrati i dati principali su sfondo bianco (#TT03357/25) 
+> - SD - Fix Convert SalesOffer into Sales Order -already linked problem(#TT02871/25) 
+> - SD - Gli sconti finali inseriti nel riepilogo dei documenti non vengono applicati alla riga spesa relativa alla Gestione Conai. (#TT03284/25) 
+> - SD - Il pulsante “Nuovo” rimane attivo dopo il salvataggio e lo scarico del DDT di consegna (#TT01515/25) 
+> - SD - In fase di duplicazione di un documento di vendita con Dichiarazione di intento viene verificata la presenza di una dichiarazione attiva; in assenza, l’aliquota IVA degli articoli viene ripresa dall’anagrafica del cliente o dell’articolo. (#TT03382/25) 
+> - SD - La data trasporto del DDT viene valorizzata con data e ora di creazione, non ereditata dall’ordine cliente (#TT02030/25) 
+> - SD - Stampa liquidazioni provvigioni e Stampa provvigioni maturate: risolto problema che si verificava in caso di inserimento di un agente con ‘pagamento totale’ come tipo documento considerato nel calcolo provvigionale. Modifications in both forms can have an impact on profiles. (rif.ticket #TT03352/25) 
+> - SH - Risolta anomalia che in alcuni casi impediva l’attivazione del pulsante Salva a seguito di una modifica del Volume nell’anagrafica articolo. (#TT03371/25) 
+> - SH - WEB corretto caso in cui non si riusciva ad inserire una nuova banca d'appoggio nella tabella dedicata (#TT03237/25) 
+> - SH - WEB in alcune form in inserimento nuove righe il font utilizzato bianco non era ben visibile. Impostato colore font nero. (#TT03025/25) 
+> - WM - Corretta la liberazione dei lotti nel picking tramite spunta, che in alcuni casi particolare non liberava correttamente il lotto prenotato. (#TT03439/25) 
+> - WM - Corretto bug in fase di inserimento di un nuovo magazzino nella versione web. (#TT03438/25) 
+> - WM - Corretto bug in fase di inserimento di una nuova causale di magazzino nella versione web. (#TT03440/25) 
+> - WM - Corretto bug in Valorizzazione magazzino nel caso in cui venisse fatta la rollback senza chiusure presenti. (#TT03409/25) 
+> - WM - Il contenuto del tab Amministrazione viene copiato durante l'utilizzo della funzione Duplica articoli (#TT03181/25) 
+> - WM - In Analisi disponibilità non viene tracciata tutta la parte di semilavorato di produzione interna e di conto lavoro di fase (esterna); quindi la giacenza presente in analisi disponibilità potrebbe differire dalla giacenza presente in visualizzazione giacenze, la quale considera anche tutti i movimenti dei semilavorati delle fasi intermedie. Per fare in modo che coincidano, è necessario utilizzare un magazzino WIP per la produzione interna e un magazzino di conto lavoro WIP per quella esterna. (#TT03347/25) 
+> - WM - Nel filtro dell’anagrafica articolo premendo il tasto +, ora vengono visualizzate correttamente i valori dei campi seconda descrizione e note. (#TT03428/25) 
+> - WM - Registrazioni di magazzino della versione WEB: Corretto bug che non visualizzata correttamente i dati della riga articolo fino alla su a conferma nel caso in cui fosse utilizzato un certo tema. (#TT03424/25) 
+
+
 ### Patch 707.1-0042 - 25/07/2025
 
 > - FI - Anagrafiche contatti: Risolto problema nella versione web relativo alla ricerca delle anagrafiche. Modifications in nomenclature filter can have an impact on profiles. (Rif. Ticket TT03225/25). 

@@ -3,6 +3,12 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0118- 31/07/2025
+
+> - SCM - Risolto errore che non calcolava correttamente il valore della percentuale nella stampa Fatturato acquisti (#TT02798/25, #TT05463/24). 
+> - SD - In fase di duplicazione di un documento di vendita con Dichiarazione di intento viene verificata la presenza di una dichiarazione attiva; in assenza, l’aliquota IVA degli articoli viene ripresa dall’anagrafica del cliente o dell’articolo. (#TT03382/25) 
+> - SD - Nelle Fatture di Vendita con la Gestione Conai, il peso dei materiali e l’eventuale esenzione vengono ora valorizzati anche in caso di evasione DDT in Fattura. (#TT03327/25) 
+
 ### Patch 545.1-0118- 17/07/2025
 
 > - FI - Importazione registrazioni da DocFinance, revisione assegnazione data fine competenza economica (#TT02815/25) 
