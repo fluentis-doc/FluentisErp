@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Tramite questa form è possibile creare manualmente un nuovo ordine di conto lavoro oppure si possono modificare quelli già esistenti.
 
-La form si apre tramite il percorso **Conto Lavoro > Ordine di conto lavoro > Nuovo ordine di conto lavoro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca ordine di conto lavoro](/docs/subcontractor/subcontractor-orders/search-subcontractor-orders).
+La form si apre tramite il percorso **Conto Lavoro > Ordine di conto lavoro > Nuovo ordine di conto lavoro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca ordine di conto lavoro](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/search-subcontractor-orders).
 
 ## **1. Dati obbligatori**
 
