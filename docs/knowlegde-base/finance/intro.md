@@ -122,3 +122,70 @@ la relazione presente nel ciclo di contabilizzazione delle vendite è Tipo Fattu
    - Nella sezione Articoli del documento inserire una riga con, ad esempio, la descrizione della merce non fatturata ed i relativi importi, oppure e si tratta di rettifica di irregolare o errata fattura il valore della rettifica.
 4. Creare il file xml ed inviarlo con le consuete procedure.
 </details>
+
+<details>
+  <summary> 12. Come posso sbloccare una liquidazione periodica IVA stampata in definitivo? </summary>
+
+1. Nella form Amministrazione > DICHIARAZIONI > **Versamenti Iva**, dove sono riportati tutti i periodi per i quali è presente la liquidazione in definitivo, selezionare il periodo (anche più di uno) da sbloccare e premere il pulsante ***Cancella Liquidazioni IVA***.
+2. Normalmente, se quando è stata fatta la liquidazione in definitivo, è stata abilitata l'opzione per le scritture automatiche di giroconto, verrà visualizzato un messaggio che conferma la cancellazione automatica dei giroconti. Verrà inoltre mostrato un messaggio di avviso che ricorda di cancellare manualmente il record (per il periodo corrispondente) presente nella form **Dichiarazione iva periodica** che era stato creato automaticamente al lancio della liquidazione in definitivo.
+3. Come riportato al punto precedente cancellare manualmente il record presente nella form **Dichiarazione iva periodica** per il periodo corrispondente a quello sbloccato. Ricordiamo che in questa tabella vengono memorizzati i dati per la gestione dei campi manuali della liquidazione (riporto credito, compensazione ecc...)
+4. Riportare indietro il contatore delle pagine e la data i ultima stampa per il sezionale IVA sul quale vengono stampate le liquidazioni periodiche (generalmente codice RIE in database FastStart). Accedere alla tabella Registri IVA, localizzare il sezionale da ripristinare (es. *RIE*) e manualmente correggere, per l'anno corrente nella griglia inferiore di dettaglio, i campi **Ultima pagina stampata**, **Data ultima stampa**.
+5. Se le liquidazioni periodiche vengono stampate accodandole ad un sezionale iva ordinario (ad esempio alle vendite o agli acquisti), ed in tutti i casi in cui si necessiti di modificare movimenti iva per i quali, oltre alla liquidazione in definitivo, sono stati stampati in definitivo anche i sezionali, dalla tabella **Registri IVA** premere il pulsante nella ribbon bar **Annulla stampe definitive**. Verrà mostrato un popup dove selezionare e confermare il periodo da sbloccare ed il sezionale iva da sbloccare. Nel caso di sblocco di più periodi per un determinato sezionale, si consiglia di procedere in modo consecutivo e sbloccando tutti gli eventuali periodi intermedi, procedendo dal più recente al più vecchio. Procedere quindi al ripristino manuale dei dati di *ultima pagina stampata, ultima data stampa, ed ultimo protocollo IVA*.
+
+</details>
+
+<details>
+
+  <summary> 13. Come procedo per sbloccare la stampa in definitivo del LIbro Giornale? </summary>
+
+1. Quando è stata creata la stampa in definitivo, nella form di stampa **Libro Giornale**  avevamo lanciato la stampa attivando il flag *Definitiva*. In quel momento, ricordiamo, veniva eseguito anche un controllo con relativo messaggio di avviso, se erano presenti movimenti contabili precedenti alle date selezionate nel filtro per la stampa, che non erano ancora state stampate in definitivo. Era comunque possibile ignorare l'avviso. Il period stampato in definitivo veniva bloccato da possibili modifiche alle registrazioni contabili.
+2. **Per sbloccare** un periodo stampato in definitivo accedere alla form Configurazione > Parametri > Amministrazione > **Parametri di contabilità**  per l'anno corrente o quello da sbloccare ed utilizzare il pulsante **Annulla stampe definitive**. Apparirà un popup dove specificare il periodo (da data a data) per il quale eseguire lo sblocco. Lo sblocco consiste, tecnicamente, nel porre le registrazioni interessate nel periodo in stato non definitivo (campo visibile solo nel database oppure trascinando la proprietà IsPrintedInJournal - Stampato in libro giornale, in una form che punta all'oggetto FSPosting quale ad esempio la form *Registrazioni contabili* accessibile dal menu Amministrazione > Registrazioni > Registrazioni), pertanto si consiglia di agire in modo ordinato e consecutivo evitando di lasciare periodi non in definitivo, i quali saranno comunque segnalati dall'avviso di cui al punto precedente.
+3. Dopo lo sblocco occorre ripristinare manualmente i dati memorizzati nella form dei Parametri di contabilità in fase di stampa definitiva:
+    - Data ultima stampa libro giornale: riportandola indietro all'ultima data registrazione non sbloccata
+    - Ultima pagina / riga: riportandola all'ultima non sbloccata
+    - Saldo Dare / Avere: cancellando i valori che poi saranno ricreati automaticamente con la nuova stampa definitiva.
+</details>
+
+<details>
+
+  <summary> 14. Come posso chiudere forzatamente una partita aperta? </summary>
+
+Lo stato di una partita, (aperta, chiusa, parzialmente aperta) è calcolato dal sistema e non può essere forzato agendo direttamente sul campo dello Stato partita, verrebbe immediatamente ricalcolato.
+La partita è *chiusa* (e viene rilevato questo stato) solo se esiste un pagamento per quella partita (ad essa agganciato ed avente lo stesso numero).
+
+Pertanto il modo corretto per la chiusura di una partita creata extra-contabilmente, oppure rimasta aperta inquanto una registrazione contabile di pagamento non ha generato anche il pagamento a livello di partite, consiste nell'utilizzare la seguente procedura.
+
+1. Accedere alla form Amministrazione > Partite > **Pagamenti**
+2. Creare un nuovo pagamento con il tasto **Nuovo** 
+3. Subito dopo l'apertura della form con i dati del nuovo pagamento, anzichè compilare manualmente, utilizzare il comando **Crea da partite / Pagamenti** che fa comparire un popup per la ricerca e selezione della partita aperta che si vuole chiudere. Nel popup sono presenti i consueti campi di ricerca delle partite, è sufficiente selezionare con il mouse la partita da chiudere e premere il bottone **Seleziona**. Verranno creati automaticamente i collegamenti tra partita e pagamento in modo corretto. Lo stato della partita verrà automaticamente ricalcolato come *Chiusa*.
+
+</details>
+
+<details>
+
+  <summary> 15. Come posso ripristinare una ricevuta bancaria già presentata o accreditata? </summary>
+
+La procedura di emissione di una ricevuta bancaria e la sua successiva contabilizzazione e presentazione la salvo buon fine prevede una serie di passaggi tra loro sequenziali. Pertanto nel caso in cui si tenti di eseguire il ripristino (rollback) ad esempio della,creazione di una ricevuta bancaria che è già stata presentata in banca o accreditata, il software impedirà questa operazione restituendo un messaggio di avviso.
+
+Tutte le fasi della creazione e presentazione con successivo accredito, nonchè le operazioni di contabilizzazione, possono essere ripristinate, ma occorre agire nell'ordine logico corretto, partendo dalle operazioni eseguite successivamente fino ad arrivare alle prime fasi.
+
+Se, pertanto, la sequenza delle operazioni compiute per la creazione è la seguente:
+
+- Contabilizzazione della fattura di vendita con apertura partita
+- Creazione automatica delle Ricevuta bancaria dalle partite aperte
+- Contabilizzazione dell'emissione della ricevuta bancaria (spesso eseguita contestualmente al punto precedente - wizard)
+- Creazione distinta di presentazione e inserimento degli effetti (ricevute bancarie) nella distinta
+- Contabilizzazione della presentazione distinta
+- Contabilizzazione Accredito Ricevute bancarie
+
+Il rollback dovrà seguire questo ordine
+
+- Ripristino contabilizzazione accredito
+- Ripristino contabilizzazione distinta
+- Rimozione dell'effetto (ricevuta bancaria) dalla distinta (che potrebbe non essere cancellabile contenendo anche altri effetti) selezionandolo da dentro la distinta e premendo il tasto CANC
+- Ripristino della contabilizzazione effetti (PRIMA DEL PUNTO SUCCESSIVO)
+- Ripristino della creazione automatica effetti dalle partite
+ 
+Ricordiamo che le procedure di ripristino sono accessibili dalle stesse form dove è avvenuta la creazione, nell'apposito tab successivo, sempre presente.
+
+</details>
