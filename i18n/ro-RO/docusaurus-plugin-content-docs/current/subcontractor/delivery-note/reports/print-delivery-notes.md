@@ -1,10 +1,10 @@
 ---
-title: Stampa DDT di consegna
+title: Avize de livrare
 sidebar_position: 2
 ---
 
-Questa finestra consente di stampare i DDT di consegna da inviare al terzista e si trova nel percorso *Conto Lavoro > DDT di Consegna > Stampe > DDT di consegna*. Essa è composta da 2 diverse sezioni:
+Această fereastră permite imprimarea avizelor de livrare care vor fi expediate terțului și se află pe calea *Sistem lohn > Avize de livrare > Rapoarte > Avize de livrare > Rapoarte*. Este compusă din 2 secțiuni diferite:
 
-**Filtri**: in questa sezione è possibile filtrare per terzista, per tipo DDT di conto lavoro, da numero DDT a numero DDT di conto lavoro, per data inserimento DDT da…a…. Infine è possibile decidere se stampare o meno anche i DDT già stampate, utilizzando l'apposito radio button;
+**Filtre**: permite filtrarea după terț, tipul avizelor în sistem lohn, etc. pentru a selecta documentele de imprimat.
 
-**Parametri di stampa**: in questa sezione si possono impostare il numero copie da stampare e il tabulato di stampa da utilizzare, e decidere se la stampa debba essere **Provvisoria** (nel qual caso il flag *Stampata* non verrebbe attivato nella testata del DDT stessa) o **Definitiva**.
+**Parametri raport**: în această secțiune se pot seta numărul de copii de imprimat și tabulatul de imprimare de utilizat, și se decide dacă imprimarea trebuie să fie **Provizorie** (caz în care flag-ul *Tipărit* nu va fi activat în antetul avizului) sau **Definitivă**.

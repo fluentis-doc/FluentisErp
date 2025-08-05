@@ -1,6 +1,6 @@
 ---
-title: Introduzione
+title: Introducere
 sidebar_position: 1
 ---
 
-Il modulo delle **DDT di Consegna** di Conto Lavoro consente di gestire le consegne dei materiali ai terzisti e controllare lo scadenzario delle consegne da effettuare.
+Acest modul permite livrarea materialelor către terți și controlarea scadențelor livrărilor de realizat.
