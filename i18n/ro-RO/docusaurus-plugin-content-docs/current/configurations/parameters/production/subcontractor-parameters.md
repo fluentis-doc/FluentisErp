@@ -57,7 +57,7 @@ Posibilitățile sunt:
 ### Gestiuni
 
 **Livrare materiale la terți**  
-În secțiune se inserează gestiunea și șablonul care trebuie să fie considerate pentru descărcarea materialelor destinate terților. Deci, gestiunea inserată este cea din care vor fi descărcate materialele inserate în tab [Materiale de livrat](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) al ordinului în sistem lohn.
+În secțiune se inserează gestiunea și șablonul care trebuie să fie considerate pentru descărcarea materialelor destinate terților. Deci, gestiunea inserată este cea din care vor fi descărcate materialele inserate în tab [Materiale de livrat](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) al ordinului în sistem lohn.
 
 **Încărcare materiale la terți**  
 În secțiune se inserează gestiunea și șablonul care trebuie să fie considerate pentru încărcarea materialelor destinate terților. Deci, gestiunea inserată este cea în care vor fi încărcate materialele inserate în tab *Materiale de livrat* al ordinului în sistem lohn. Aceste date sunt preluate din șablonul de contrapartidă inserat în tabelul șabloanelor în corespondență cu șablonul care efectuează descăcarea materialelor destinate terților (și anume șablonul inserat în combo box-ul din secțiunea *Livrare materiale la terți*).

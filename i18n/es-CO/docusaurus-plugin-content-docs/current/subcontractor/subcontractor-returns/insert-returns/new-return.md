@@ -17,7 +17,7 @@ La aplicación requiere que se ingrese el **terzista** titular del pedido, utili
 
 El formulario contiene una serie de pestañas:
 
-- [Encabezado (Testata)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) y sus Procedimientos;  
-- [Artículos (Articoli)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);  
-- [Materiales (Materiali)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Resúmenes (Riepiloghi)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Encabezado (Testata)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) y sus Procedimientos;  
+- [Artículos (Articoli)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);  
+- [Materiales (Materiali)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);  
+- [Resúmenes (Riepiloghi)](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).

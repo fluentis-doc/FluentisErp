@@ -11,7 +11,7 @@ L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del
 
 La form contiene una serie di tab:
 
-- [Testata](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) e le sue Procedure;  
-- [Articoli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
-- [Materiali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Riepiloghi](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Testata](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) e le sue Procedure;  
+- [Articoli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);   
+- [Materiali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);  
+- [Riepiloghi](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).

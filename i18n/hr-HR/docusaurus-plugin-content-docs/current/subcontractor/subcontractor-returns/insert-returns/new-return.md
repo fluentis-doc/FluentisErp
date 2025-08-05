@@ -17,7 +17,7 @@ Aplikacija zahtijeva unos  **Dobavljača** (Podizvođača) na čije ime je narud
 
 Obrazac sadrži niz kartica:
 
-- [Zaglavlje](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) i njegove Procedure;  
-- [Artikli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
-- [Materijali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Sažeci](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Zaglavlje](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) i njegove Procedure;  
+- [Artikli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);   
+- [Materijali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);  
+- [Sažeci](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).

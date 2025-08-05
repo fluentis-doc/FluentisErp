@@ -11,7 +11,7 @@ The application requires the user to enter the **Supplier** who is the header of
 
 The form contains a series of tabs:
 
-- [Header](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) and its Procedures;  
-- [Items](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
-- [Materials](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Summaries](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Header](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) and its Procedures;  
+- [Items](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);   
+- [Materials](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders);  
+- [Summaries](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).
