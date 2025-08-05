@@ -5,7 +5,7 @@ sidebar_position: 3
 
 The form opens via the path **Subcontractor Order > Orders > Subcontractor Orders**.
 
-import SearchForm from './../../import/sections/search-form.md'
+import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 

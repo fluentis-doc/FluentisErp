@@ -5,7 +5,7 @@ sidebar_position: 3
 
 La form si apre tramite il percorso **Conto Lavoro > Ordini > Ordini di Conto Lavoro**.
 
-import SearchForm from './../../import/sections/search-form.md'
+import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
