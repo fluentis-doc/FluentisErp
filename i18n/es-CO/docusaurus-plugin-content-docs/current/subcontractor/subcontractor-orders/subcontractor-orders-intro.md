@@ -1,11 +1,11 @@
 ---
-title: Configuración de Pedidos de Trabajo por Encargo (Impostazioni Ordini di Conto Lavoro)
+title: Impostazioni Ordini di Conto Lavoro
 sidebar_position: 1
 ---
 
-El pedido de Trabajo por Encargo puede ser creado a partir de la planificación en función de fases de trabajo externas declaradas en el pedido de producción o puede ser creado de forma autónoma.
+L'ordine di Conto Lavoro può essere creato dalla pianificazione in funzione di fasi di lavoro esterne dichiarate in ordine di produzione oppure può essere creato in modo autonomo.
 
-Una serie de **impostazioni** de naturaleza tabular precodificada y una correcta parametrización de los algoritmos básicos son aconsejables antes de proceder con la generación de los pedidos C/L.
+Una serie di **impostazioni** di natura tabellare precodificata e una corretta parametrizzazione degli algoritmi di base sono consigliate prima di procedere con la generazione degli ordini C/L.
 
-> **tabelle**: es conveniente referirse a la sección *Configuración (Configurazione) > Tablas (Tabelle) > Producción (Produzione)* para identificar las configuraciones correctas del módulo de Trabajo por Encargo.  
-> **parametri**: el formulario es [Parámetros de C/Laboro (Parametri C/Lavoro)](/docs/configurations/parameters/production/subcontractor-parameters).
+> **Tabelle**: è opportuno riferirsi alla sezione *Configurazione > Tabelle > Produzione* per identificare le corrette impostazioni del modulo Conto Lavoro.  
+> **Parametri**: la form è [Parametri C/Lavoro](/docs/configurations/parameters/production/subcontractor-parameters).
