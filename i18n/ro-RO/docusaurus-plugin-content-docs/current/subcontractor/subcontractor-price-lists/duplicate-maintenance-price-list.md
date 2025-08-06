@@ -1,32 +1,35 @@
 ---
-title: Duplica e Manutenzione listini di conto lavoro
+title: Duplicare și mentenanță oferte de preț în sistem lohn
 sidebar_position: 2
 ---
 
-Tramite questa procedura è possibile aggiornare, chiudere, duplicare, riaprire o modificare gli sconti dei listini preesistenti.
-All’apertura notiamo che sono presenti dei filtri, tramite i quali è possibile ricercare il listino da trattare in maniera più mirata.
-Cliccando il pulsante Ricerca, vengono proposti gli articoli di listino in base ai filtri impostati.
-E’ necessario selezionare uno o più articoli, quelli che saranno destinatari della modifica, per effettuare la procedura. Con i pulsanti della ribbon bar **Modifica** e **Visualizzazione** è possibile rispettivamente entrare in modifica o visualizzazione del listino di riferimento; ricordiamo che la visualizzazione non permette la modifica.
+Prin intermediul acestei proceduri este posibil să actualizați, închideți, duplicați, redeschideți sau să modificați discounturile ofertelor de preț deja existente.  
+La deschidere, observăm că sunt prezente anumite filtre care permit căutarea specifică a ofertei de preț.  
+Făcând clic pe butonul *Caută*, sunt propuse articolele corespondente ofertei de preț în funcție de filtrele setate.  
+Este necesar să selectați unul sau mai multe articole, cele care vor fi ținta modificării, pentru a efectua procedura. Cu butoanele din ribbon bar **Modifică** și **Vizualizare** este posibil să modificați sau să vizualizați oferta de preț de referință.
 
-Con il pulsante **Aggiorna**, si apre una maschera nella quale vengono richiesti i dati da applicare nell’aggiornamento:
--	**Data inizio validità** e **Data fine validità** devono essere uguali a quelle del listino di origine, altrimenti Fluentis non è in grado di effettuare l’aggiornamento; è possibile consultare queste date direttamente nella riga articolo;
--	**Percentuale incremento**: è possibile indicare una percentuale di incremento da applicare al prezzo;
--	**Arrotondamenti**: questo campo esclude il precedente, quindi per poterlo editare è necessario cancellare il contenuto del campo precedente; qui è possibile scegliere la tipologia di Arrotondamneto da applicare al prezzo; ricordiamo che gli arrotondamenti possono contenere a loro volta una percentuale di incremento: per questo non avrebbe senso lasciare editabile il campo precedente.
-Una volta impostati gli aggiornamenti desiderati, per eseguire la procedura clicchiamo **OK**.
-Notiamo che il prezzo delle righe selezionate è variato, secondo le impostazioni inserite.
+#### Butoane specifice
 
-Con il pulsante **Chiudi listini** invece, è possibile inserire una data di fine validità agli articoli di listino selezionati. Infatti, cliccando il pulsante Chiudi si aprirà una maschera nella quale inserire una Data fine 
-Validità, data dalla quale l’articolo non sarà più considerato valido nel listino.
+**Actualizează**: permite deschiderea fereastrei în care se inserează datele de aplicat în actualizare:  
+- **Data început valabilitate** și **Data sfârșit valabilitate** trebuie să fie egale cu cele ale ofertei de preț de origine, altfel Fluentis nu poate efectua actualizarea; este posibil să consultați aceste date direct în linia articolului;  
+- **Procent majorare**: se poate indica un procent de creștere aplicat prețului;  
+- **Rotunjiri**: acest câmp îl exclude pe cel precedent, astfel încât, pentru a-l edita, este necesar să ștergeți conținutul câmpului anterior; aici se poate alege tipologia de rotunjire care se aplică prețului; reamintim că rotunjirile pot conține, la rândul lor, un procent de creștere: din acest motiv nu ar avea sens să lăsăm editabil câmpul precedent.
 
-Con il pulsante **Duplica listini** è possibile creare un nuovo listino partendo dalla riga articolo selezionata. Cliccando il pulsante duplica listini, verranno chiesti i dati obbligatori per la creazione di un listino e quindi:
--	Il Fornitore;
--	La data inizio validità e una eventuale data fine;
--	La Divisa.
-Cliccando OK, verrà generato il listino con i dati inseriti. Possiamo notare che adesso i risultati di ricerca presentano una riga in più, che è proprio la riga del nuovo listino creato.
+Odată setate actualizările dorite, pentru executarea procedurii apăsăm **OK**.  
+Observăm că prețul liniilor selectate s-a modificat, conform setărilor introduse.
 
-Cliccando **Sconti** nella ribbon bar, invece, è possibile gestire gli sconti relativi alla riga articolo selezionata. Il flag **Cancella gli sconti precedenti** cancella eventuali sconti preesistenti nel listino, per quell’articolo. Nella griglia è poi possibile inserire degli sconti da inserire nel listino di origine in corrispondenza dell’articolo selezionato. Per inserire gli sconti è necessario inserire degli sconti precodificati, per permettere all’applicativo di ricavare la tipologia di sconto e la relativa proprità. 
-Quindi, inseriamo la tipologia e il valore.
+**Închide oferte de preț**: permite inserarea datei pentru sfârșitul valabilității pentru articolele selectate în ofertă. De fapt, făcând clic pe butonul *Închide* se va deschide o fereastră în care se introduce o dată de sfârșit a valabilității, dată de la care articolul nu va mai fi considerat valid în oferte.
 
-Il pulsante della ribbon bar **Riapertura listini**, infine, permette di riaprire un listino precedentemente chiuso, quindi un listino che abbia una Data fine validità. Cliccando questo pulsante, la data fine validità verrà cancellata.
+**Duplica oferte de preț**: permite să creați o nouă oferta de preț pornind de la linia de articol selectată. Făcând clic pe butonul *Duplica oferte de preț*, vi se vor cere datele obligatorii pentru crearea unei oferte de preț și anume:  
+- Furnizorul;  
+- Data început valabilitate și eventual o dată de sfârșit;  
+- Moneda.  
 
-Nella ribbon bar sono poi presenti ulteriori pulsanti. E’ possibile quindi stampare le righe selezionate, creare dei profili nel caso fosse necessario modificare la maschera, infine è possible creare delle attività da assegnare ai dipendenti.
+Făcând clic pe **OK**, se va genera oferta de preț cu datele introduse. Putem observa că acum rezultatele căutării prezintă o linie în plus, care este chiar linia noii oferte de preț create.
+
+**Discounturi**: permite gestionarea discounturilor aferente liniei de articol selectate. Opțiunea **Șterge reducerile precedente** șterge eventualele discounturi deja existente în oferta, pentru acel articol.  
+În tabel este apoi posibilă introducerea discounturilor care vor fi inserate în oferte de preț sursă, în corespondență cu articolul selectat.Pentru a selecta discounturile, este necesar să le introduceți pe cele predefinite, pe care aplicația le va prelua.  
+
+**Redeschidere oferte de preț**: permite să redeschideți o oferta de preț închisă anterior, deci o oferta de preț care are *Data de sfârșit a valabilității*. Făcând clic pe acest buton, *Data sfârșit valabilitate* va fi ștearsă.
+
+În ribbon bar sunt apoi disponibile și alte butoane. Este posibil, astfel, să tipăriți liniile selectate, să creați profiluri în cazul în care este necesară modificarea ferestrei și, în final, să creați activități care să fie atribuite angajaților.

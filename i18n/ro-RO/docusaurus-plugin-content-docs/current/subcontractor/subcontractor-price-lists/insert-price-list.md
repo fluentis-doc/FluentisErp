@@ -1,103 +1,86 @@
 ---
-title: Inserimento Listini di Conto lavoro
+title: Inserare oferte de preț în sistem lohn
 sidebar_position: 1
 ---
 
-Da questa applicazione sarà possibile inserire i listini di conto lavoro.
+Pwermite inserarea ofertelor de preț în sistem lohn.
 
-## Sezione superiore
+## Secțiunea superioară
 
-Nella sezione superiore è necessario inserire il **Fornitore**.
-Nella form di inserimento vengono proposte automaticamente i valori dei campi **Da data validità** (viene proposta la data corrente per inizio validità) e la [Divisa](/docs/guide/common/glossary/glossary-intro#currency) (viene proposta la divisa della società, ma possono essere modificati.
-Viene riportato un eventuale **Sconto listino da anagrafica** ed è possibile inserire delle **Note**
+În secțiunea superioară este necesar să introduceți **furnizorul**.  
+Valorile câmpurilor **Data valabilității** (este propusă data curentă pentru începerea valabilității) și [Moneda](/docs/guide/common/glossary/glossary-intro#currency) (este propusă moneda societății, dar poate fi modificată) sunt preluate automat.  
+Este preluat din registru și eventualul **Discount ofertă de preț** și se pot insera **Note**.
 
-Nella sezione superiore è presente anche il filtro per ricercare gli Articoli all'interno del listino
+În secțiunea superioară este prezent și filtrul pentru a căuta **articole** în oferta de preț.
 
-## Articoli
+## Articole
 
-In questa form verranno indicati gli articoli ed eventuali sconti associati a questo listino.
+**Clasă/Articol/Descriere**: reprezintă codul articolului de inclus în oferta de preț. Descrierea este recuperată automat prin intermediul codului. Pentru a insera un articol nou, este suficient să vă poziționați pe un rând liber sau să utilizați butonul *Articol nou* din ribbon bar.  
+**Cod variantă/Descriere variantă**: se utilizează în cazul în care, pe lângă codul articolului, și varianta deosebește un articol de altul.  
+**Cod fază**: permite să asociați articolului o eventuală **Fază externă** care va fi efectuată de terț. Astfel se poate defini un preț pentru fiecare fază a aceluiași articol. Sistemul va completa automat câmpurile **Fază** și **Subfază**.  
+**Unitate de măsură**: poate fi cea de gestiune a articolului sau una dintre unitățile sale de măsură alternative.  
+**Cantitate**: în mod implicit este 1 și reprezintă cantitatea de referință pentru preț; dacă este diferită de 1, atunci când va fi calculat prețul, acesta se împarte la cantitatea din ofertă.  
+**Preț** este în raport cu moneda ofertei de preț.  
+**TVA**: acest câmp este preluat automat. Dacă pentru client nu a fost setat, va fi necesar să completați câmpul cu codul TVA.  
+**Preț cu TVA**: sistemul calculează acest preț pornind de la preț și de la cota TVA introdusă.  
+**Înălțime/Lățime/Adâncime**: sunt date informative referitoare la ofertă. Sistemul nu utilizează aceste câmpuri pentru eventuale prelucrări.
 
-**Classe/Articolo/Descrizione**: indicare il codice dell'articolo da includere nel listino. La descrizione verrà recuperata in automatico grazie al codice articolo. Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
+Pentru fiecare articol din ofertă se pot insera anumite tipuri de discount. Se indică un **Tip de eşalon** în câmpul omonim, iar în câmpurile următoare sunt raportate datele referitoare la articolele inserate în ofertă. Aceste eșaloane sunt indicate în tabelul *Tipuri de discount*.  
+În partea dreaptă a formularului se află un tabel în care sunt indicate toate discounturile posibile pentru acest articol. Acestea se completează doar selectând un articol prezent în ofertă.
 
-**Codice/Descrizione variante**: serve se oltre al codice articolo anche la variante contraddistingue un articolo da un altro.
+### Discounturi
 
-**Codice fase**: è possibile associare all'articolo un'eventuale [Fase esterna](/docs/configurations/tables/production/standard-phases) che sarà svolta dal terzista. In questo modo è possibile definire un prezzo per ogni fase dello stesso articolo; verranno compilati in automatico i campi **Fase** e **Sottofase**;
+Aceste discounturi sunt fixe și sunt raportate în documente. 
 
-**Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative.
+**N**: populat de sistem, indică ordinea în care sunt considerate discounturile.
 
-**Quantità**: proposta uguale a 1, è la quantità di riferimento del prezzo; se diversa da 1, quando deve essere calcolato il prezzo viene diviso per la quantità del listino.
+**Tip discount/Descriere**: selectați tipul de discount dintre cele existente. Există 3 tipologii standard: *discount comercial*, *discount pe cantitate* și *discount pe valoare*.
 
-**Prezzo** riferito alla divisa del listino.
+**Valoare**: setați procentul de discount care trebuie aplicat.
 
-**IVA**: questo campo viene recuperato. Qualora sul cliente non fosse impostato sarà necessario popolare questo campo con il codice IVA.  
+**Prioritate**: această prioritate este preluată din setările efectuate în tabelul [Tipuri discount](/docs/configurations/tables/general-settings/discount-types).
 
-**Prezzo Ivato**: il sistema calcola questo prezzo a partire fa prezzo e dall'aliquota del codice IVA inserito. 
+**Casc./B. imp.**: este populat pe baza valorii introduse în tabelul *Tipuri discount*.
 
-**Altezza/Larghezza/Profondità**: dati informativi relativi al listino. Il sistema non utilizza questi campi per eventuali elaborazioni. 
+### Discounturi pe cantitate 
 
-Per ogni articolo del listino è possibile inserire alcune tipologie di sconto come spiegato di seguito.
+Această tipologie de discount poate avea diverse procente în funcție de cantitate.
 
-Si indica il **Tipo scaglione** nel campo omonimo, mentre nei campi successivi verranno riportati i dati relativi agli articoli inseriti a listino.
+**Tip**: setați tipul de discount, care trebuie să fie *discount pe cantitate*. Această denumire va fi apoi raportată în raport.
 
-Questi scaglioni sono indicati nella tabella *Tipi Sconti*.
+**Cantitate**: setați cantitatea de la care discountul devine activ.
 
-Nella parte destra della form troviamo una griglia in cui sono indicati tutti i possibili sconti per questo articolo. Queste vengono compilate solo selezionando un articolo presente nel listino.
-
-### Sconti
-
-Questi sconti sono degli sconti fissi che vengono riportati nei documenti.
-
-Di seguito la corretta compilazione di questa griglia:
-
-**N**: popolato dal sistema, indica l'ordine in cui vengono considerati gli sconti.
-
-**Tipo sconto/Descrizione**: selezionare il tipo sconto tra quelli presenti. A standard sono previsti 3 tipologie diverse: *Sconto commerciale*, *Sconto a quantità* e *Sconto a valore*.
-
-**Valore**: impostare la percentuale di sconto da applicare.
-
-**Priorità**: questa priorità viene riportata dalle impostazioni eseguite nella tabella [Tipi sconti](/docs/configurations/tables/general-settings/discount-types).
-
-**Casc./Imp.**: viene popolato a partire dal valore inserito nella tabella Tipi sconti.
-
-### Sconti a quantità
-
-Questa tipologia di sconto può avere diverse percentuali a seconda della quantità. 
-
-**Tipo**: impostare il tipo sconto che dovrà essere *Sconto a quantità*. Questa dicitura verrà riportata poi nella stampa.
-
-**Quantità**: impostare la quantità per la quale verrà attivato lo sconto.
-
-**Percentuale**: inserire la percentuale di sconto al raggiungimento della quantità indicata
+**Procent**: introduceți procentul de discount la atingerea cantității indicate.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image07.png)
 
-### Sconti a Valore
+### Discounturi pe valoare
 
-In questa tipologia lo sconto scatta quando si raggiunge un determinato importo per riga.
+În această tipologie, discountul se aplică atunci când se atinge un anumit total pe linie.
 
-**Tipo**: impostare il tipo sconto che dovrà essere *Sconto a valore*.
+**Tip**: setați tipul de discount, care trebuie să fie *discount pe valoare*.
 
-**Valore**: impostare un valore superato il quale scatta lo sconto.
+**Valoare**: setați un prag de la care, dacă este depășit, discountul devine activ.
 
-**Percentuale**: inserire la percentuale di sconto al raggiungimento del valore.
+**Procent**: introduceți procentul de discount la atingerea valorii stabilite.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image09.png)
 
-### Prezzo per quantità
+### Preț per cantitate
 
-In questa caso, al raggiungimento di una certa quantità , il prezzo unitario cambia.
+În acest caz, la atingerea unei anumite cantități, prețul unitar se modifică.
 
-**Quantità**: impostare un valore superato il quale scatta il prezzo "personalizzato".
+**Cantitate**: setați un prag de la care, dacă este depășit, se aplică prețul unitar „personalizat”.
 
-**Prezzo unitario**: inserire il prezzo unitario per la quantità ordinata.
+**Preț unitar**: introduceți prețul unitar pentru cantitatea comandată.
 
-Questi sconti si sommeranno ad altri eventuali sconti presenti.
+Aceste discounturi se vor cumula cu alte discounturi existente.
 
 ### Note
 
-A livello informativo è possibile inserire delle note legate ad un particolare tipo di scontistica.
+Din punct de vedere informativ, se pot insera note pentru un anumit tip de discount.
 
-### Documenti allegati
+### Documente atașate 
 
 import DocAttachDocument from './../../import/sections/doc-attach-document.md'
 
