@@ -1,20 +1,16 @@
 ---
-title: Ricerca Rientri
+title: Caută reintrări
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Ricerca Rientri**.
+Formul se deschide pe calea **Sistem lohn > Reintrări > Căutare reintrări**.
 
-import SearchForm from './../../../import/sections/search-form.md'
+#### Butoane specifice
 
-<SearchForm />
+> **Nou**: permite [Crearea unei noi reintrări](/docs/subcontractor/subcontractor-returns/insert-returns/new-return).  
 
-*Pulsanti specifici*:
+#### Câmpuri specifice
 
-> **Nuovo**: il pulsante permette di [Creare un nuovo rientro](/docs/subcontractor/subcontractor-returns/insert-returns/new-return).  
-
-*Campi specifici*:
-
-**Valorizzati**: questo flag consente di filtrare i rientri già valorizzati, cioè i rientri da cui è già stata creata una fattura di acquisto nell'area Acquisti;  
-**Caricati**: questo flag consente di filtrare i rientri già caricati a magazzino, cioè i rientri per cui è già stata effettuata l'operazione di *Registrazione rientro*;  
-**Tutti**: questo consente di filtrare tutti i rientri di conto lavoro, indipendentemente dal fatto che siano stati caricati e/o valorizzati.  
+**Valorizate**: permite filtrarea reintrărilor deja valorizate, adică cele pentru care a fost deja creată o factură de achiziție în aria Achiziții;  
+**Încărcate**: permite filtrarea reintrărilor deja încărcate în gestiune, adică reintrările pentru care a fost deja efectuată operația de *Înregistrare rientrare*;  
+**Toate**: permite filtrarea tuturor reintrărilor de sistem lohn, indiferent dacă au fost încărcate și/sau valorizate.

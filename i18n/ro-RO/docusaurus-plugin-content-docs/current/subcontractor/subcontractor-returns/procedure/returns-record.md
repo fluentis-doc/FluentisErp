@@ -1,35 +1,34 @@
 ---
-title: Registrazione rientri
+title: Înregistrare rientri
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Procedure > Registrazione rientri** e permette di registrare a magazzino i rientri di conto lavoro già controllati e non ancora registrati.
+Formul se afă pe calea **Sistem lohn > Reintrări > Proceduri > Înregistrare rientri** și permite să fie înregistrate în gestiune *Reintrări în Sistem lohn* deja controlate și încă neregistrate.
 
-## Filtro
+## Filtru
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire in magazzino i rientri, secondo i criteri di filtro disponibili. 
-  
+În acest tab, utilizatorul are posibilitatea de a căuta și transfera articolele reintrate în gestiune, conform criteriilor de filtrare disponibile.
 
-*Pulsanti specifici*:
+#### Butoane specifice
 
-> **Ricerca**: permette di applicare i filtri di ricerca all'intero database dei Rientri di Conto Lavoro inseriti, controllati e non ancora registrati;    
-> **Scarico**: permette di eseguire lo scarico dei rientri selezionati dal magazzino, in base agli algoritmi di scarico.
+> **Caută**: permite aplicarea filtrelor de căutare asupra întregii baze de date a reintrărilor în sistem lohn introduse, controlate și încă neregistrate;  
+> **Descărcare**: permite executarea descărcării reintrărilor selectate din gestiune, conform algoritmilor de descărcare.
 
-*Campi specifici*:
+#### Câmpuri specifice
 
-**Numero doc. def.**: in questa colonna viene visualizzato il numero del rientro di conto lavoro;  
-**Data doc. def.**: in questa colonna viene visualizzata la data del rientro di conto lavoro;  
-**Data registrazione magazzino**: si trova nella zona inferiore della form ed è impostata di default sulla data corrente, ma può essere modificata.
+**Număr doc. def.**: în această coloană este afișat numărul reintrării în sistem lohn;  
+**Data doc. def.**: în această coloană este afișată data reintrării în sistem lohn;  
+**Dată înregistrare în gestiune**: se află în zona inferioară a formului și este setată implicit la data curentă, dar poate fi modificată.
 
-Una volta selezionati i rientri di conto lavoro, utilizzare il tasto *Scarico* per eseguire i movimenti di magazzino: contestualmente a questa operazione l'applicazione esegue il carico sul magazzino di rientro degli articoli prodotti dal terzista, lo scarico dal magazzino del terzista dei materiali utilizzati e l'eventuale carico dei resi sull'apposito magazzino resi.
+Odată ce au fost selectate reintrările în sistem lohn, utilizați butonul *Descărcare* pentru a executa mișcările de gestiune. Concomitent cu această operațiune, aplicația efectuează încărcarea în gestiunea de reintrare a articolelor produse de terț, descărcarea din gestiunea terțului a materialelor utilizate și eventuala încărcare a retururilor în gestiunea specifică pentru retururi.
 
-## Riepiloghi
+## Rezumate 
 
-In questo tab è possibile eseguire il 'rollback' dell'operazione di registrazione del rientro di conto lavoro, ripristinando quindi la situazione antecedente all'operazione stessa.
+În acest tab este posibil să se execute restaurarea operațiunii de înregistrare a reintrării în sistem lohn, restabilind astfel situația anterioară operațiunii însăși.
 
-I dati nelle griglie in basso, **Rientri** e **Registrazioni**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati).
+Datele din tabelele **Reintrări* și **Înregistrări**, corespund înregistrării descărcării selectate în tabelul superior (după ce datele au fost filtrate).
 
-*Pulsanti specifici*:
-> **Ricerca**: per cercare i rientri scaricati. Il risultato di questa procedura viene visualizzata nella griglia di risultato, *Scarico rientri*;    
-> **Ripristina**: Richiama la procedura che esegue il rollback dell'intera operazione di registrazione rientri selezionata nella griglia *Scarico rientri*; quindi se con la stessa operazione di registrazione sono stati registrati più rientri, tutti questi rientri saranno riportati nello stato di 'non caricati';  
-> **Ripristina rientri**: richiama la procedura che esegue il rollback della registrazione dei soli rientri selezionati nella griglia inferiore, nel tab *Rientri*.
+#### Butoane specifice  
+> **Caută**: pentru a căuta reintrările descărcate. Rezultatul acestei proceduri este afișat în tabelul cu rezultate, *Descărcare reintrări*;  
+> **Restaurează**: apelează procedura care execută rollback-ul întregii operațiuni de înregistrare a reintrării selectate în tabelul *Descărcare reintrări*. Așadar, dacă în cadrul aceleiași operațiuni de înregistrare au fost înregistrate mai multe reintrări, acestea vor fi readuse la starea *neîncărcat*;  
+> **Restaurează reintrări**: apelează procedura care execută rollback-ul înregistrării doar pentru reintrările selectate în tabelul inferioar, din tab *Reintrări*.
