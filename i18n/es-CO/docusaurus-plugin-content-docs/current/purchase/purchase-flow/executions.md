@@ -1,11 +1,11 @@
 ---
-title: Evasiones (Evasioni)
+title: Ejecuciónes 
 sidebar_position: 5
 ---
 
-El ciclo de **evasione** en Fluentis sirve para gestionar de manera estructurada e integrada todo el flujo operativo de compra, desde la fase inicial de solicitud de compra hasta la fase final de facturación. Cada fase se caracteriza por procedimientos específicos y configuraciones que garantizan una gestión fluida e integrada del flujo de trabajo.
+El ciclo de **Ejecución** en Fluentis sirve para gestionar de manera estructurada e integrada todo el flujo operativo de compra, desde la fase inicial de solicitud de compra hasta la fase final de facturación. Cada fase se caracteriza por procedimientos específicos y configuraciones que garantizan una gestión fluida e integrada del flujo de trabajo.
 
-## Conversión de Oferta a Pedido (Conversione da Offerta a Ordine)
+## Conversión de Oferta a Pedido
 
 El procedimiento de **conversión de oferta de proveedor a orden de compra** puede ser iniciado:
 
@@ -15,23 +15,23 @@ Este procedimiento permite transformar una solicitud de oferta en un pedido de c
 Para realizar la conversión, es necesario configurar el Tipo de orden de proveedor deseado en la tabla [Tipo de solicitud de oferta](/docs/configurations/tables/purchase/purchase-offer-type).
 
 Durante el procedimiento de conversión, aparece un pop-up con las siguientes opciones:  
-- **richiesta di offerta**: permite crear un pedido de compra para cada solicitud de oferta.  
-- **conto**: permite agrupar las solicitudes de oferta por proveedor.  
-- **chiudi le offerte collegate**: inserta una *Fecha de cierre* para las RDO convertidas en pedidos de compra.
+- **Solicitud de oferta**: permite crear un pedido de compra para cada solicitud de oferta.  
+- **Cuenta**: permite agrupar las solicitudes de oferta por proveedor.  
+- **Cerrar automáticamente las ofertas conectadas**: inserta una *Fecha de cierre* para las RDO convertidas en pedidos de compra.
 
 Una vez confirmada la conversión, el sistema genera un nuevo pedido de proveedor utilizando los datos de la solicitud de oferta y notifica al usuario con un mensaje pop-up sobre el éxito de la conversión.
 
 Para más detalles sobre el procedimiento, se remite a la página correspondiente de la documentación.
 
-## Conversión de Solicitud de Compra a Pedido (Conversione da Richiesta di Acquisto a Ordine)
+## Conversión de Solicitud de Compra a Pedido 
 
-El procedimiento de **creación de Orden de proveedor desde Solicitud de Compra** puede ser iniciado:
+El procedimiento de **Creación de Orden de proveedor desde Solicitud de Compra** puede ser iniciado:
 
 - Desde el Menú [Procedimientos](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): yendo a *Compras > Órdenes de Proveedores > Procedimientos > Creación automática de órdenes*.
 
 Este procedimiento permite la creación de uno o más pedidos de compra a partir de una o más solicitudes de compra y consta de cinco pestañas:
 
-- **filtro da**: permite ingresar filtros para seleccionar las RDA (con estado "Autorizada") a convertir en pedido.  
+- **Filtrar desde**: permite ingresar filtros para seleccionar las RDA (con estado "Autorizada") a convertir en pedido.  
 - **scelta fornitore**: permite realizar la elección del proveedor al que se le asignará el pedido basándose en diferentes criterios, como: mejor precio de compra, proveedor preferente por defecto, mejor condición de pago, etc.  
 - **prototipi ordine**: muestra el resumen del pedido a crear y permite generar un nuevo pedido o agregar las líneas de artículo a un pedido existente.  
 - **parametri**: configura las opciones de creación del pedido, como el tipo de pedido a crear y los datos a utilizar si no están codificados para cada artículo. También se puede optar por considerar las disponibilidades provenientes de las diversas áreas del sistema.  
