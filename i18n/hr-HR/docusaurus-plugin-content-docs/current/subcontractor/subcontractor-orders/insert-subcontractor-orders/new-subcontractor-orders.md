@@ -7,11 +7,11 @@ Pomoću ovog obrasca moguće je ručno kreirati novu narudžbu za rad na temelju
 
 Obrazac se otvara putem puta **Podizvođač > Nalog Podizvođača > Novi nalog Podizvođača** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga narudžbi Podizvođača](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/search-subcontractor-orders).
 
-## **1. Dati obbligatori**
+## **1. Obavezni podaci**
 
 Aplikacija zahtijeva unos **Dobavljača** (izvršitelja) koji je nositelj narudžbe, koristeći odgovarajuću pomoć za račune. Automatski će biti predloženi: trenutna **Godina**, **Broj**, **Datum** i **Tip dokumenta** (predložena jednaka onoj unesenoj u *Parametre Podizvođača*), a korisnik ih može izmijeniti.
 
-## **2. Zaglavlje**
+## **2. Zaglavlje** {#header}
 
 Nakon što odabere obavezne podatke u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoć polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, na temelju podataka unesenih u evidenciju izvršitelja, aplikacija *automatski* popunjava polja.
 
