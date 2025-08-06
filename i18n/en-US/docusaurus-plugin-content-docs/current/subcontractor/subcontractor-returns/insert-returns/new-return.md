@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Through this form, it is possible to manually create a new return for subcontracting or modify existing ones.
 
-The form is opened via the path **Subcontractor > Returns > New Return** or through the **New** button found in the [Search Returns](/docs/subcontractor/subcontractor-returns/search-returns) form.
+The form is opened via the path **Subcontractor > Returns > New Return** or through the **New** button found in the [Search Returns](/docs/subcontractor/subcontractor-returns/insert-returns/search-returns) form.
 
 The application requires you to enter the **Supplier** holding the order, using the specific account help, the **Type**, the **Number**, and the **Return date** (which usually corresponds to the current date).
 

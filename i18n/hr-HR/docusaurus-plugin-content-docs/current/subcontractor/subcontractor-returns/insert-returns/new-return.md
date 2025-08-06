@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Putem ovog obrasca moguće je ručno stvoriti novi povrat podizvođača ili izmijeniti već postojeće. 
 
-Obrazac se otvara putem puta  **Podizvođač > Povrati >  Novi povrat** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga Povrata](/docs/subcontractor/subcontractor-returns/search-returns).
+Obrazac se otvara putem puta  **Podizvođač > Povrati >  Novi povrat** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga Povrata](/docs/subcontractor/subcontractor-returns/insert-returns/search-returns).
 
 Aplikacija zahtijeva unos  **Dobavljača** (Podizvođača) na čije ime je narudžba, koristeći odgovarajuću pomoć za račune, te  **Tip**, **Broj** i **Datum** stvarnog povrata (koji obično odgovara trenutnom datumu). 
 

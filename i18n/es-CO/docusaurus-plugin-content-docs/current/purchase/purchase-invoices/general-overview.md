@@ -31,7 +31,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/subcontractor/subcontractor-returns/search-returns"> Devolución de Trabajo Por Cuenta (Rientro di Conto Lavoro)</Link>
+###     <Link to="/docs/subcontractor/subcontractor-returns/insert-returns/search-returns"> Devolución de Trabajo Por Cuenta (Rientro di Conto Lavoro)</Link>
         <p>El procedimiento de *Valoración DDT de devolución* permite generar una factura de compra aplicando uno o más retornos de trabajo por cuenta.  </p>
     </div>
     <div className="card">

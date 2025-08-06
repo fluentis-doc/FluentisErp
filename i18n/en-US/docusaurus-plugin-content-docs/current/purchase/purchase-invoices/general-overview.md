@@ -30,7 +30,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/subcontractor/subcontractor-returns/search-returns">Subcontractor Return from Order</Link>
+###     <Link to="/docs/subcontractor/subcontractor-returns/insert-returns/search-returns">Subcontractor Return from Order</Link>
         <p>The *Valorization Subcontractor Return Procedure* allows generating a purchase invoice by fulfilling one or more subcontractor returns.   </p>
     </div>
     <div className="card">

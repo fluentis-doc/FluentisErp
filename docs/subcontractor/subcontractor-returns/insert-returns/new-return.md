@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Tramite questa form è possibile creare manualmente un nuovo rientro di conto lavoro oppure si possono modificare quelli già esistenti.
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Nuovo Rientro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca Rientri](/docs/subcontractor/subcontractor-returns/search-returns).
+La form si apre tramite il percorso **Conto Lavoro > Rientri > Nuovo Rientro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca Rientri](/docs/subcontractor/subcontractor-returns/insert-returns/search-returns).
 
 L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti, il **Tipo**, il **Numero** e la **Data rientro** effettivo (che di solito corrisponde alla data corrente).
 
