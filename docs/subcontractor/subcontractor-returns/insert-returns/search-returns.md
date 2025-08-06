@@ -5,7 +5,7 @@ sidebar_position: 2
 
 La form si apre tramite il percorso **Conto Lavoro > Rientri > Ricerca Rientri**.
 
-import SearchForm from './../../import/sections/search-form.md'
+import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
