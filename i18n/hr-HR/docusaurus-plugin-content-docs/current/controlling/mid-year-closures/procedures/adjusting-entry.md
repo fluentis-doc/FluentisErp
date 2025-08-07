@@ -1,13 +1,13 @@
 ---
-title: Scritture di rettifica
+title: Zapisi usklađenja
 sidebar_position: 6
 ---
 
-Siamo all'interno del modulo Chiusure infrannuali e selezioniamo la procedura ‘Scritture di rettifica'. La maschera consente di gestire separatamente le operazioni di rettifica che si possono eseguire contestualmente alla creazione di una nuova chiusura infrannuale.
+Unutar modula Privremenih zatvaranja odabire se postupak "Zapisi usklađenja". Ovaj obrazac omogućuje zasebno upravljanje ispravnim knjiženjima koja se mogu provesti istovremeno s izradom novog privremenog zatvaranja.
 
-Per gestire la procedura è sufficiente impostare la chiusura di riferimento, il tipo di calendario da utilizzare (si consiglia di lasciare il calendario solare e il raggruppamento per registrazione) e la causale da utilizzare (che deve avere il flag cdc/cdp per gestire la rettifica dei centri di costo/profitto).
+Za upravljanje postupkom potrebno je postaviti: referentno zatvaranje, vrstu kalendara koji će se koristiti (preporučuje se godišnji kalendar i grupiranje po zapisu), tip temeljnice (predložak mora imati oznaku cdc/cdp za upravljanje ispravkom centara
+troškova/profita).
 
-Con questa procedura il programma verificherà le righe di costo/ricavo riprese dalla contabilità secondo i range di date registrazione/competenza impostate, per creare i risconti dei giorni al di fuori del range di date competenza impostate per la chiusura. I sottoconti di risconto da utilizzare saranno quelli inseriti nel piano dei conti in corrispondenza del singolo sottoconto di costo/ricavo oppure il sottoconto generico inserito nei parametri di contabilità dell'anno della chiusura infrannuale stessa. Nella maschera è presente un pulsante di ripristino/cancellazione dei movimenti già registrati da questa maschera.
+Ovim postupkom program provjerava retke troškova/prihoda preuzete iz računovodstva prema rasponima datuma knjiženja/pripadnosti koji su postavljeni. Na temelju tih podataka kreiraju se razgraničenja za dane koji su izvan raspona ekonomske pripadnosti postavljenog za zatvaranje. Podkonta razgraničenja koji će se koristiti su oni navedeni u kontnom planu za pojedini podkonto troška/prihoda ili generički podkonto naveden u računovodstvenim parametrima godine privremenog zatvaranja. Unutar obrasca nalazi se gumb za vraćanje ili brisanje pokreta koje je ova procedura već evidentirala.
 
-Le griglie alla base della maschera presentano la lista delle righe di costo/ricavo, presenti nella chiusura infrannuale, che saranno oggetto di rettifica.
-
+Tablice na dnu obrasca prikazuju popis redaka troškova/prihoda prisutnih u privremenom zatvaranju, koji će biti predmet ispravaka.
