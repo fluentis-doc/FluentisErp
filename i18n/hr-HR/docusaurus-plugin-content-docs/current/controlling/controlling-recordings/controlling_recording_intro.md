@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 Unutar modula ‘računovodstvo upravljanja’ nalaze se sve procedure za unos i obradu podataka računovodstva po centrima u područjima analize različitim od područja proračuna: dostupni su zapisi fizičkih kretanja ili vanbilančna knjiženja, povijest
-obrađenih podataka (bilo fizičkih ili vrijednosnih) za godinu/razdoblje, različiti prikazi kontrole i izvlačenja podataka, kao i prikaz izvještaja ostvarenih podataka za analitičku dimenziju projekta.
+obrađenih podataka (bilo fizičkih ili vrijednosnih) za godinu/razdoblje, različiti prikazi kontrole i izvlačenja podataka, kao i prikaz izvještaja ostvarenih podataka za analitičku dimenziju projekta..
 
 ## Početna konfiguracija modula
 Preporučujemo da se obratite odjeljku [*Opći pregled Kontrolinga*](/docs/controlling/general-overview-controlling/general-overview) za uvid u tablice i logičke korake konfiguracije, koja mora započeti preciznom analizom proizvodne strukture poduzeća i ciljeva koje se žele postići implementacijom Kontrolinga.
