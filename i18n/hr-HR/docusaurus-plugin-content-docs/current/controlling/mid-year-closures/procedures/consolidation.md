@@ -1,31 +1,37 @@
 ---
-title: Consolidamento
+title: Konsolidacija
 sidebar_position: 1
 ---
 
-La procedura consente innanzi tutto di legare le chiusure infrannuali delle varie società presenti nel database, al fine di creare un **bilancio consolidato di gruppo** da stampare o valorizzare in un riclassificato di bilancio, ma andrà anche a creare una registrazione di consolidamento nella quale **si andranno ad elidere i movimenti** economici **intercompany** e i crediti e debiti intercompany.
+Postupak omogućuje prvo povezivanje privremenih zatvaranja raznih poduzeća prisutnih u bazi podataka, kako bi se stvorio **konsolidirani račun** dobiti i gubitka za grupu koji se može ispisati ili obraditi u reklassificiranom bilanciranju, ali također stvara i knjiženje konsolidacije u kojem će se **eliminirati interkompanijska ekonomska kretanja** te **interkompanijski** dugovi i potraživanja (u intercompany konfiguraciji).
 
-Nella testata della maschera è possibile filtrare il range di date delle chiusure da considerare ma anche impostare, opzionalmente, la società capogruppo d'interesse: in questo modo nella griglia della maschera saranno visualizzate le società che non hanno impostato una società capogruppo o quelle che fanno capo alla capogruppo selezionata; per ogni società, poi, sarà visualizzata l'ultima chiusura conti creata all'interno del range di filtro impostatato (E' possibile selezionare una chiusura infrannuale differente dall'ultima proposta). Il flag ‘Sel.' andrà a individuare su quali eseguire l'operazione di consolidamento, mentre nella colonna 'Cambio' è possibile impostare un cambio specifico da utilizzare per la conversione dei saldi provenienti da società con divisa differente da quelle della capogruppo.
+U zaglavlju obrazca moguće je filtrirati raspon datuma za zatvaranja koja se žele uzeti u obzir, ali također i postaviti, opcionalno, društvo matičnog poduzeća od interesa: na ovaj način u tablici obrazca bit će prikazana poduzeća koja nisu postavila matično poduzeće ili ona koja pripadaju odabranom matičnom poduzeću; za svako poduzeće zatim će biti prikazano posljednje
+zatvaranje konta stvoreno unutar postavljenog raspona filtriranja (moguće je odabrati privremeno zatvaranje koje se razlikuje od posljednjeg predloženog). Flag 'Označen' će odrediti na koja će se poduzeća izvršiti konsolidacija, dok je u stupcu 'Tečaj' moguće postaviti specifičnu tečajnu stopu koja će se koristiti za konverziju salda koji dolaze od poduzeća s različitim valutama od matičnog poduzeća.
 
-Al di sotto della griglia si andranno a inserire alcuni parametri da utilizzare: la descrizione da attribuire al consolidamento, una causale di registrazione, l'utente dell'operazione (proposto già come l'utente attivo) e infine un flag di conversione dei codici di sottoconto su quelli della società capogruppo.
+Ispod tablice unose se neki parametri koji će se koristiti: opis koji će biti dodijeljen konsolidaciji, predložak
+knjiženja, korisnik (koji je već predložen kao aktivni korisnik) i na kraju oznaka za konverziju podkonta u one matičnog poduzeća.
 
-All'interno della tabella società, riga per riga, è possibile associare un'anagrafica: da questa anagrafica si andranno a individuare i sottoconti clienti/fornitori del gruppo (ad es. nella società X si andrà a vedere se l'anagrafica legata alla società Y è codificata come cliente e/o fornitore). Dalle registrazioni intestate a questi sottoconti valorizzate nelle chiusure selezionate, si andranno a inserire con segno inverso i costi/ricavi nella nuova registrazione; per gli stessi sottoconti si andranno a verificare le partite aperte, al momento del consolidamento, e si andranno a stornare i saldi anche di questi.
+Unutar tablice poduzeća, redak po redak, moguće je povezati osnovne podatke: iz tih podataka bit će moguće identificirati podkonta kupaca/dobavljača grupe (npr. u poduzeću X pogledat će se jesu li osnovni podaci povezani s poduzećem Y šifrirani kao kupac i/ili dobavljač). Iz knjiženja vezanih uz ova podkonta koje su obuhvaćene zatvaranjima, u novom knjiženju unijet će
+se troškovi/prihodi s obrnuto označenim iznosima; za ista podkonta također će se provjeriti otvorene stavke, u trenutku konsolidacije, i saldi će se obrisati i od njih.
 
-:::tip Nota
-Nel piano dei conti delle società che hanno in tabella una società capogruppo, sono visibili i campi per assegnare i codici di conto/sottoconto della capogruppo.
+:::tip NAPOMENA
+U kontnom planu poduzeća koja u tablici imaju matično poduzeće, vidljiva su polja za dodjeljivanje konta/podkonta matičnog poduzeća.
 :::
 
-## Procedura
+## Postupak
 
 :::important[]
-Procedura passo passo di attivazione ed esecuzione (supponiamo due aziende)
+Postupak korak po korak za aktivaciju i izvršenje (pretpostavka da su dva poduzeća)
 
-- Nella tabella [**società**](/docs/configurations/tables/general-settings/company) di ognuna delle aziende in questione compilare il campo ***Anagrafica associata*** per collegare un Contatto che contraddistingua l'azienda stessa nel consolidamento, ad esempio se l'azienda si chiama Alfa, nella sua tabella società colleghiamo un contatto (precedentemente creato) che si chiama ad es. "Alfa Spa". 
-- Nel piano conti di ognuna delle società sarà stato creato il sottoconto (attraverso la gestione **dati contabili** dell'anagrafica) di tipo cliente o fornitore dell'altra azienda del gruppo e saranno stati registrati degli scambi incrociati, ad esempio acquisto da parte dell'azienda 1 e vendita da parte dell'azienda 2 (ognuno dal suo punto di vista). 
-- Ognuna delle aziende lancia una chiusura conti infrannuale per il medesimo periodo 
-- Nella procedura *Consolidamento* selezionerò le due chiusure delle due società di cui generare le scritture di rettifica per consolidamento che vanno a neutralizzare costi e ricavi e crediti e debiti reciproci aggregando invece i movimenti verso l'esterno
+- U tablic [**poduzeća**](/docs/configurations/tables/general-settings/company) svake od tvrtki koje su u pitanju treba ispuniti polje ***Šifrarnik*** kako bi se povezali s kontaktom koji će označiti samo to poduzeće u konsolidaciji, na primjer, ako se
+poduzeće zove Alfa, u njegovoj tablici poduzeća povezujemo kontakt (koji je prethodno stvoren) koji se zove npr. "Alfa d.o.o.". 
+- U kontnom planu za svaku od poduzeća bit će stvoren podkonto (putem upravljanja **računovodstvenim podacima** osnovnih podataka) tipa kupac ili dobavljač druge tvrtke u grupi i bit će registrirane međusobne transakcije, na primjer, kupnja od strane
+poduzeća 1 i prodaja od strane poduzeća 2 (svako s vlastite točke gledišta). 
+- Svaka od poduzeća izvodi privremeno zatvaranje za isti period.
+- U postupku *Konsolidacija* odaberu se dva zatvaranja tih dvaju poduzeća za koja će se generirati ispravci u bilješkama za
+konsolidaciju koje neutraliziraju troškove i prihode, te međusobna potraživanja i dugove, dok će se kretanja prema vanjskim subjektima agregirati.
 :::
 
-## Precedenti
+## Prethodni
 
-Dalla scheda precedenti è possibile procedere alla cancellazione delle procedure di consolidamento eseguite.
+Na kartici Prethodni moguće je izbrisati izvršene postupke konsolidacije.
