@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: Generalidades (Generalità)
 sidebar_position: 1
 ---
 
-Il modulo consente di gestire i rientri delle lavorazione inviate ai terzisti, effettuare l'evasione degli ordini di conto lavoro e controllare lo scadenzario dei rientri.
+El módulo permite gestionar los retornos de las elaboraciones enviadas a los subcontratistas, realizar el cumplimiento de los pedidos de trabajo por encargo y controlar el calendario de los retornos.

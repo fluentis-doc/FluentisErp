@@ -1,150 +1,150 @@
 ---
-title: Nuovo rientro
+title: Nuevo rientro (Nuovo rientro)
 sidebar_position: 1
 ---
 
-Tramite questa form è possibile creare manualmente un nuovo rientro di conto lavoro oppure si possono modificare quelli già esistenti.
+A través de este formulario es posible crear manualmente un nuevo rientro de trabajo por encargo o modificar los ya existentes.
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Nuovo Rientro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca Rientri](/docs/subcontractor/subcontractor-returns/insert-returns/search-returns).
+El formulario se abre a través de la ruta **Trabajo por encargo > Rientros > Nuevo Rientro** o mediante el botón **Nuevo** que se encuentra en el formulario [Buscar Rientros](/docs/subcontractor/subcontractor-returns/insert-returns/search-returns).
 
-## **1. Dati obbligatori**
+## **1. Datos obligatorios**
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti, il **Tipo**, il **Numero** e la **Data rientro** effettivo (che di solito corrisponde alla data corrente).
+La aplicación requiere que se ingrese el **Proveedor (Terzista)** titular del pedido, utilizando la ayuda correspondiente, el **Tipo**, el **Número** y la **Fecha de rientro** efectiva (que generalmente corresponde a la fecha actual).
 
-**Controllato**: il flag viene attivato manualmente dall'utente;  
-**Valorizzato e Caricato**: vengono attivati automaticamente nel momento in cui si procede ad eseguire nell'ordine la valorizzazione e la registrazione a magazzino del documento.
+**Controlado**: el indicador se activa manualmente por el usuario;  
+**Valorizado y Cargado**: se activan automáticamente en el momento en que se procede a realizar en el pedido la valorización y el registro en almacén del documento.
 
-> **Rientri previsti**: il pulsante si attiva dopo il salvataggio dei dati obbligatori e apre la form *Evasione da ordine*, all'interno della quale l'utente visualizza tutti gli ordini di conto lavoro che hanno ancora righe parzialmente o completamente inevase e da cui è possibile quindi generare dei rientri;  
-> **Registrazione rientri**:
+> **Rientros previstos**: el botón se activa después de guardar los datos obligatorios y abre el formulario *Cumplimiento de pedido*, dentro del cual el usuario visualiza todos los pedidos de trabajo por encargo que aún tienen líneas parcialmente o completamente no cumplidas y desde los cuales es posible generar rientros;  
+> **Registro de rientros**:
 
-## **2. Testata**
+## **2. Cabecera**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base ai dati inseriti nell'anagrafica del terzista', l'applicazione compila i campi *automaticamente*.
+Después de seleccionar los datos obligatorios en la sección superior, el usuario puede continuar ingresando los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o, según los datos ingresados en el registro del proveedor, la aplicación completa los campos *automáticamente*.
 
-Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+Al ingresar el **Proveedor**, se *proponen* automáticamente todos los datos específicos de la pestaña **Cabecera**, según los datos establecidos anteriormente en la [anagrafica del proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) en los campos correspondientes a su dirección y en las *secciones*:  
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Spedizione**: [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de cambio](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Nación**: [Nación](/docs/guide/common/glossary/glossary-intro#country), [Idioma](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Envío**: [Envío](/docs/guide/common/glossary/glossary-intro#shipment), [Puerto](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Lista de precios](/docs/guide/common/glossary/glossary-intro#sales-price-list) y su [rango de validez](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-### 2.1 Pagamenti
+### 2.1 Pagos
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica terzista > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+Las **Soluciones de pago** se reportan automáticamente desde la *Anagrafica del proveedor > pestaña Pagos* y pueden ser modificadas/eliminadas por el usuario.
 
-#### Pulsante specifico  
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+#### Botón específico  
+> **Eliminar pagos**: utilizado para eliminar las líneas de pago seleccionadas.
 
-### 2.2 Sconti
+### 2.2 Descuentos
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica terzista > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Se proponen solo los descuentos predefinidos tomados de la *Anagrafica del proveedor > pestaña Descuentos* y pueden ser modificados/eliminados por el usuario.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-## Procedure testata:
+## Procedimientos de cabecera:
 
-### *Evasione da ordine*
+### *Cumplimiento de pedido*
 
-In questa finestra, che si apre utilizzando il pulsante *Rientri Previsti* posto sulla ribbon bar, è possibile filtrare gli ordini di conto lavoro.
+En esta ventana, que se abre utilizando el botón *Rientros Previsti* ubicado en la barra de ribbon, es posible filtrar los pedidos de trabajo por encargo.
 
-Nella griglia sottostante compare una riga per ciascun ordine di conto lavoro ancora non evaso o parzialmente evaso.  
-L'utente, con un doppio click sulla riga dell'ordine, ha la possibilità di esplodere le righe che devono essere ancora fatte rientrare dal terzista, può selezionarle o inserire la quantità su ciascuna di esse e premere il tasto *Acquisizione* per  trasferire le quantità degli articoli selezionati all'interno della griglia del tab *Articoli* del rientro di conto lavoro.
+En la cuadrícula inferior aparece una línea para cada pedido de trabajo por encargo que aún no ha sido cumplido o que ha sido cumplido parcialmente.  
+El usuario, con un doble clic en la línea del pedido, tiene la posibilidad de desglosar las líneas que aún deben ser devueltas por el proveedor, puede seleccionarlas o ingresar la cantidad en cada una de ellas y presionar el botón *Adquisición* para transferir las cantidades de los artículos seleccionados dentro de la cuadrícula de la pestaña *Artículos* del rientro de trabajo por encargo.
 
-#### Pulsanti specifici  
-> **Ricerca ordini**: consente di applicare i filtri di ricerca all'intero database degli Ordini di Conto Lavoro inseriti e non ancora evasi o solo parzialmente evasi;  
-> **Acquisizione**: richiama la procedura che trasferisce nella griglia del tab Articoli Rientrati del rientro di conto lavoro gli articoli selezionati nella finestra sottostante;  
-> **Evasione forzata ordine**: richiama la procedura che consente di rendere forzatamente evasa la riga dell'ordine di conto lavoro che l'utente sta trasferendo;  
-> **Seleziona tutti**: consente di selezionare tutte le righe presenti nella sezione di destra della finestra in cui compaiono gli articoli da trasferire;  
+#### Botones específicos  
+> **Buscar pedidos**: permite aplicar los filtros de búsqueda a toda la base de datos de Pedidos de Trabajo por Encargo ingresados y que aún no han sido cumplidos o solo han sido cumplidos parcialmente;  
+> **Adquisición**: llama al procedimiento que transfiere a la cuadrícula de la pestaña Artículos Devueltos del rientro de trabajo por encargo los artículos seleccionados en la ventana inferior;  
+> **Cumplimiento forzado de pedido**: llama al procedimiento que permite marcar como cumplida forzosamente la línea del pedido de trabajo por encargo que el usuario está transfiriendo;  
+> **Seleccionar todo**: permite seleccionar todas las líneas presentes en la sección derecha de la ventana donde aparecen los artículos a transferir;  
 
-### *Registrazione rientri*
+### *Registro de rientros*
 
-Vedi dettagli sull'argomento nella [Registrazione rientri](/docs/subcontractor/subcontractor-returns/procedure/returns-record).
+Vea detalles sobre el tema en la [Registro de rientros](/docs/subcontractor/subcontractor-returns/procedure/returns-record).
 
-## **3. Articoli**
+## **3. Artículos**
 
-La form è costituita da una griglia, all'interno della quale l'utente può inserire manualmente gli articoli rientrati.
+El formulario consta de una cuadrícula, dentro de la cual el usuario puede ingresar manualmente los artículos devueltos.
 
-### 3.1 Dati
+### 3.1 Datos
 
-In questo tab vengono visualizzate le informazioni relative alla riga selezionata nella griglia degli articoli, tra quali:
+En esta pestaña se visualizan las informaciones relacionadas con la línea seleccionada en la cuadrícula de artículos, entre las cuales:
 
-**Ordine prod.**: si tratta dell'ordine di produzione la cui fase esterna ha generato la riga di ordine di conto lavoro che è stata evasa con la riga di rientro selezionata;
+**Orden prod.**: se trata del pedido de producción cuya fase externa ha generado la línea de pedido de trabajo por encargo que ha sido cumplida con la línea de rientro seleccionada;
 
-**Progetto**: in questo campo viene visualizzata il progetto legato alla riga del rientro. Di solito viene richiamato il progetto inserito nella riga dell'ordine di conto lavoro da cui è stata generata la riga di rientro;
+**Proyecto**: en este campo se visualiza el proyecto relacionado con la línea del rientro. Generalmente se llama al proyecto ingresado en la línea del pedido de trabajo por encargo desde el cual se generó la línea de rientro;
 
-**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
+**Pesos**: se reportan el Peso neto y el Peso bruto totales de las líneas de artículo. Se reportan los pesos del registro del artículo multiplicados por la cantidad de línea.
 
-### 3.2 Lotti/SN
+### 3.2 Lotes/Números de serie
 
-In questo tab viene data la possibilità di impostare, per la riga selezionata nella griglia, i lotti o i serial numbers da caricare a magazzino con la quantità di articolo rientrata, nel caso che si tratti di più lotti diversi rientrati con la stessa riga di rientro. A seconda del fatto che l'articolo sia gestito a lotti o a serial numbers risulta attivata la corrispondente griglia di questo tab.
+En esta pestaña se da la posibilidad de establecer, para la línea seleccionada en la cuadrícula, los lotes o los números de serie que se cargarán en almacén con la cantidad de artículo devuelta, en caso de que se trate de varios lotes diferentes devueltos con la misma línea de rientro. Dependiendo de si el artículo se gestiona por lotes o por números de serie, se activará la cuadrícula correspondiente de esta pestaña.
 
 :::note Nota
-La somma delle quantità dei vari lotti/numeri di serie dovrà corrispondere esattamente alla quantità rientrata della riga articolo.
+La suma de las cantidades de los varios lotes/números de serie deberá corresponder exactamente a la cantidad devuelta de la línea de artículo.
 :::
 
-## **4. Materiali**
+## **4. Materiales**
 
-In questo tab vengono visualizzati i materiali che il terzista dovrebbe aver utilizzato per produrre ciò che è stato inserito nel tab *Articoli*. La proposta dei materiali viene definita nei Parametri di Conto lavoro, nel campo **Dati materiali proposti**.
+En esta pestaña se visualizan los materiales que el proveedor debería haber utilizado para producir lo que se ha ingresado en la pestaña *Artículos*. La propuesta de materiales se define en los Parámetros de Trabajo por Encargo, en el campo **Datos materiales propuestos**.
 
-La sezione *Articolo* contiene le informazioni della riga selezionata nel tab *Articoli*
+La sección *Artículo* contiene la información de la línea seleccionada en la pestaña *Artículos*.
 
-### 4.1 Materiali
+### 4.1 Materiales
 
-Per ogni articolo visualizzato sopra si possono inserire i materiali e i loro dettagli, oppure questi dati verranno proposti.
+Para cada artículo visualizado arriba se pueden ingresar los materiales y sus detalles, o estos datos serán propuestos.
 
-### Dettaglio materiale
+### Detalle de material
 
-In questa tab vengono inseriti i Materiali che non sono stati utilizzati dal terzista, perchè in eccesso o perchè scartati.
+En esta pestaña se ingresan los Materiales que no han sido utilizados por el proveedor, ya sea por exceso o porque han sido desechados.
 
-#### Campi specifici
+#### Campos específicos
 
-**Magazzino**: in questa colonna viene visualizzato il codice del magazzino Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente;
+**Almacén**: en esta columna se visualiza el código del almacén de Devoluciones, tomado de los parámetros de trabajo por encargo, visualizado automáticamente solo si se ingresa la cantidad devuelta en la línea del material, editable por el usuario;
 
-**Causale**: in questa colonna viene visualizzato il codice della causale per il carico dei Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente. Se i materiali non utilizzati dall'utente sono stati scartati, allora la causale non deve avere contropartita. Se invece i materiali sono stati tornati, allora la causale deve avere una contropartita di carico per indicare dove collocare i materiali resi.
+**Causa**: en esta columna se visualiza el código de la causa para la carga de las Devoluciones, tomado de los parámetros de trabajo por encargo, visualizado automáticamente solo si se ingresa la cantidad devuelta en la línea del material, editable por el usuario. Si los materiales no utilizados por el usuario han sido desechados, entonces la causa no debe tener contrapartida. Si, en cambio, los materiales han sido devueltos, entonces la causa debe tener una contrapartida de carga para indicar dónde colocar los materiales devueltos.
 
-**Carico Lotto**
-Nella griglia, l'utente può indicare quali siano i lotti dei materiali che sono stati utilizzati dal terzista. Le colonne visualizzate e le regole di utilizzo della griglia sono le stesse rispetto alla griglia lotti del tab Lotti\SN che si trova nel tab *Articoli*.
+**Carga de Lote**
+En la cuadrícula, el usuario puede indicar cuáles son los lotes de materiales que han sido utilizados por el proveedor. Las columnas visualizadas y las reglas de uso de la cuadrícula son las mismas que las de la cuadrícula de lotes de la pestaña Lotes\SN que se encuentra en la pestaña *Artículos*.
 
-## **5. Riepiloghi**
+## **5. Resúmenes**
 
-Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
+En los Resúmenes se presentan las informaciones principales de todo el documento.
 
-### 5.1 Sconti finali articoli
+### 5.1 Descuentos finales de artículos
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 5.2 Spese
+### 5.2 Gastos
 
-Sono proposte le spese inserite nell'anagrafica contatto, nel tab *Spese/Sconti*. In questa griglia eventuali spese devono essere inserite in positivo, eventuali sconti in negativo.      
+Se proponen los gastos ingresados en el registro del contacto, en la pestaña *Gastos/Descuentos*. En esta cuadrícula, los gastos deben ser ingresados en positivo, los descuentos en negativo.      
 
-Questi elementi vengono applicati alla totalità del documento e non sono distribuiti tra le righe degli articoli. Possono includere costi aggiuntivi, sconti globali, o maggiorazioni applicate all'intero documento. Se impostati nell'anagrafica articolo, vengono automaticamente proposti al momento della creazione del documento.
+Estos elementos se aplican a la totalidad del documento y no se distribuyen entre las líneas de los artículos. Pueden incluir costos adicionales, descuentos globales o recargos aplicados a todo el documento. Si están establecidos en el registro del artículo, se proponen automáticamente al momento de la creación del documento.
 
-- **Tipo/Descrizione**: permette di scegliere le tipologie di spesa (predefiniti nella tabella [Tipi spese](/docs/configurations/tables/general-settings/expenses-types)), attribuendo alla tipologia la percentuale di spesa da applicare.  
-- **Importo spesa**: indica il valore della spesa espresso nella divisa del documento.    
-- **IVA**: indica l'aliquota IVA da applicare alle spese inserite.   
-- **Percentuale/Valore**: indica se calcolare le spese con una percentuale oppure con un valore monetario predefinito. Selezionando *valore* l'importo della spesa va inserito sotto la voce omonima.      
-- **Percentuale**: valore numerico della percentuale di spesa.  
+- **Tipo/Descripción**: permite elegir los tipos de gasto (predefinidos en la tabla [Tipos de gastos](/docs/configurations/tables/general-settings/expenses-types)), atribuyendo a la tipología el porcentaje de gasto a aplicar.  
+- **Importe del gasto**: indica el valor del gasto expresado en la divisa del documento.    
+- **IVA**: indica la tasa de IVA a aplicar a los gastos ingresados.   
+- **Porcentaje/Valor**: indica si calcular los gastos con un porcentaje o con un valor monetario predefinido. Al seleccionar *valor*, el importe del gasto debe ser ingresado bajo la misma denominación.      
+- **Porcentaje**: valor numérico del porcentaje de gasto.  
 
 :::note Nota
-Se il *Tipo spesa* inserito ha il flag [ripartito](/docs/configurations/tables/general-settings/expenses-types) attivo, durante il carico del rientro a magazzino la spesa sarà ripartita su tutti gli articoli in base agli importi totali di ogni riga articolo. Il risultato della ripartizione della spesa è visibile nella [registrazione di magazzino](/docs/logistics/warehouse/stock-records/record).    
-1. Se gli articoli hanno un prezzo: la spesa totale sarà ripartita proporzionalmente sugli importi netti di ciascun articolo; il risultato verrà aggiunto al prezzo iniziale dell'articolo nel campo *Totale importo* della registrazione. Se per alcune righe l'importo è 0, esso sarà considerato come 1 per consentire una ripartizione della spesa su tutti gli articoli.   
-2. Se tutti gli articoli hanno prezzo pari a 0: la spesa verrà distribuita equamente tra tutte le righe articolo e, a partire da questa distribuzione, sarà calcolato l'*importo movimento/importo gestionale* nella registrazione, tenendo conto delle quantità di ciascun articolo.   
+Si el *Tipo de gasto* ingresado tiene el indicador [repartido](/docs/configurations/tables/general-settings/expenses-types) activo, durante la carga del rientro en almacén, el gasto será repartido entre todos los artículos en función de los importes totales de cada línea de artículo. El resultado de la repartición del gasto es visible en la [registro de almacén](/docs/logistics/warehouse/stock-records/record).    
+1. Si los artículos tienen un precio: el gasto total será repartido proporcionalmente sobre los importes netos de cada artículo; el resultado se añadirá al precio inicial del artículo en el campo *Importe total* del registro. Si para algunas líneas el importe es 0, se considerará como 1 para permitir una repartición del gasto sobre todos los artículos.   
+2. Si todos los artículos tienen un precio igual a 0: el gasto se distribuirá equitativamente entre todas las líneas de artículo y, a partir de esta distribución, se calculará el *importe movimiento/importe gestionado* en el registro, teniendo en cuenta las cantidades de cada artículo.   
 :::
 
-### 5.3 Totali documento
+### 5.3 Totales del documento
 
-**Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli;  
-**Acconto**: rappresenta il valore dell' eventuale acconto ricevuto per il documento;  
-**Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*;  
-**Totale sconti applicati**: rappresenta il valore totale dei sconti applicati sugli articoli, ma senza i sconti finali;  
-**Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*;  
-**Totale sconti finali**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli;  
-**Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*;  
-**Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*;  
-**Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*;   
-**Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale spese non documentati* + *Totale spese documentati*;  
-**Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA;  
-**Totale**: *Imponibile* + *IVA*.
+**Importe bruto de artículos**: representa la suma de los valores de todos los artículos;  
+**Anticipo**: representa el valor del eventual anticipo recibido por el documento;  
+**Importe de obsequio**: representa el importe de los artículos de tipo obsequio ingresados en la pestaña *Artículos*;  
+**Total de descuentos aplicados**: representa el valor total de los descuentos aplicados sobre los artículos, pero sin los descuentos finales;  
+**Importe neto de artículos**: *Importe bruto de artículos* – *Total de descuentos aplicados*;  
+**Total de descuentos finales**: representa el valor de los descuentos finales expresados en porcentaje sobre el importe bruto de los artículos;  
+**Importe neto de descuentos finales**: *Importe neto de artículos* - *Total de descuentos finales*;  
+**Gastos de cobro**: representa la suma de los gastos de cobro ingresados en la cuadrícula de *Gastos*;  
+**Gastos de timbre**: representa la suma de los gastos de timbre ingresados en la cuadrícula de *Gastos*;   
+**Imponible**: *Importe neto de artículos* – *Descuentos finales* + *Total de gastos no documentados* + *Total de gastos documentados*;  
+**Impuesto**: representa la suma de los valores contenidos en los resúmenes de IVA;  
+**Total**: *Imponible* + *IVA*.

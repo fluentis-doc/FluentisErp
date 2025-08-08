@@ -1,20 +1,20 @@
 ---
-title: Ricerca Rientri
+title: Búsqueda de Devoluciones (Ricerca Rientri)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Ricerca Rientri**.
+El formulario se abre a través de la ruta **Trabajo por encargo > Devoluciones > Búsqueda de Devoluciones (Conto Lavoro > Rientri > Ricerca Rientri)**.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Pulsanti specifici*:
+*Botones específicos (Pulsanti specifici)*:
 
-> **Nuovo**: il pulsante permette di [Creare un nuovo rientro](/docs/subcontractor/subcontractor-returns/insert-returns/new-return).  
+> **Nuevo (Nuovo)**: el botón permite [Crear una nueva devolución (Creare un nuovo rientro)](/docs/subcontractor/subcontractor-returns/insert-returns/new-return).  
 
-*Campi specifici*:
+*Campos específicos (Campi specifici)*:
 
-**Valorizzati**: questo flag consente di filtrare i rientri già valorizzati, cioè i rientri da cui è già stata creata una fattura di acquisto nell'area Acquisti;  
-**Caricati**: questo flag consente di filtrare i rientri già caricati a magazzino, cioè i rientri per cui è già stata effettuata l'operazione di *Registrazione rientro*;  
-**Tutti**: questo consente di filtrare tutti i rientri di conto lavoro, indipendentemente dal fatto che siano stati caricati e/o valorizzati.  
+**Valorizados (Valorizzati)**: este indicador permite filtrar las devoluciones ya valorizadas, es decir, las devoluciones de las que ya se ha creado una factura de compra en el área de Compras;  
+**Cargados (Caricati)**: este indicador permite filtrar las devoluciones ya cargadas en el almacén, es decir, las devoluciones para las que ya se ha realizado la operación de *Registro de devolución (Registrazione rientro)*;  
+**Todos (Tutti)**: esto permite filtrar todas las devoluciones de trabajo por encargo, independientemente de si han sido cargadas y/o valorizadas.
