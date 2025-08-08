@@ -3,6 +3,11 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0078 - 07/08/2025
+
+> - Bizlink - importazione da DocFinance, se la partita da chiudere è legata ad un compenso professionista con partite gestite al netto ora Fluentis aggiunge automaticamente la registrazione che valorizza il debito della ritenuta (#TT03211/25). 
+> - SD - Stampa Fattura e DDT di Vendita: Risolta anteprima di stampa che esce vuota se non è già attivo il flag stampata. (rif.ticket 3536/25, 3531/25).  
+
 ### Patch 608.1-0077 - 31/07/2025
 
 > - CO - nel modulo Chiusure infrannuali, per la procedura Valorizzazione area acquisti e vendite sono stati rivisti i test effettuati all’esecuzione del rollback (#TT04436/24) 

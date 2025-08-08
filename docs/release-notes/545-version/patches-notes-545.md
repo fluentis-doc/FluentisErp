@@ -3,13 +3,18 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
-### Patch 545.1-0119- 31/07/2025
+### Patch 545.1-0120 - 07/08/2025
+
+> - SD - Stampa Fattura e DDT di Vendita: Risolta anteprima di stampa che esce vuota se non è già attivo il flag stampata. (rif.ticket 3536/25, 3531/25) 
+> - WM - Create SalesInvoice From Picking-check for stamp charges( #TT02058/25).  
+
+### Patch 545.1-0119 - 31/07/2025
 
 > - SCM - Risolto errore che non calcolava correttamente il valore della percentuale nella stampa Fatturato acquisti (#TT02798/25, #TT05463/24). 
 > - SD - In fase di duplicazione di un documento di vendita con Dichiarazione di intento viene verificata la presenza di una dichiarazione attiva; in assenza, l’aliquota IVA degli articoli viene ripresa dall’anagrafica del cliente o dell’articolo. (#TT03382/25) 
 > - SD - Nelle Fatture di Vendita con la Gestione Conai, il peso dei materiali e l’eventuale esenzione vengono ora valorizzati anche in caso di evasione DDT in Fattura. (#TT03327/25) 
 
-### Patch 545.1-0118- 17/07/2025
+### Patch 545.1-0118 - 17/07/2025
 
 > - FI - Importazione registrazioni da DocFinance, revisione assegnazione data fine competenza economica (#TT02815/25) 
 > - FI - Registrazioni contabili: risolto il problema relativo alla moltiplicazione delle righe degli estremi IVA nei registri contabili di vendita cespiti (Rif. TT01371/25). 
@@ -29,11 +34,11 @@ sidebar_position: 1
 > - WM - Risolto blocco in fase di cancellazione articolo con ricalcolo costi già eseguito (#TT02818/25) 
 
 
-### Patch 545.1-0117- 09/05/2025
+### Patch 545.1-0117 - 09/05/2025
 
 > - SD - Corretto l’aggiornamento delle quantità residue durante l’evasione DDT da ricerca Ordini Clienti, in presenza di articoli gestiti a lotti e numeri seriali (#TT00900/25)
 
-### Patch 545.1-0116- 30/04/2025
+### Patch 545.1-0116 - 30/04/2025
 > - FI - revisione calcolo importi cash flow su Ordini fornitori.(#TT01073/25) 
 > - SD - Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili.(#TT00881/25) 
 > - WM - fix su calcoli di stampa brogliaccio di magazzino 

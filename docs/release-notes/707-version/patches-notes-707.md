@@ -3,6 +3,19 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0044 - 08/08/2025
+
+> - Bizlink - importazione da DocFinance, se la partita da chiudere è legata ad un compenso professionista con partite gestite al netto ora Fluentis aggiunge automaticamente la registrazione che valorizza il debito della ritenuta (#TT03211/25) 
+> - PM - corretto caso di calcolo SAL con documenti parzialmente evasi nelle vendite (#TT03389/25) 
+> - SCS - Conto Lavoro di fase: La creazione di un Rientro aggiorna lo stato dell’Ordine di Produzione e della Commessa solo quando il rientro è riferito all’ultima fase produttiva e movimentabile dell’ordine. (#TT03393/25) 
+> - SD - Add BatchRegisterSetter for FSSalesOrderItemBatchMovement(#TT03486/25) 
+> - SD - Creazione Fatture da DDT: Corretto l’aggiornamento dello stato del DDT in fase di ripristino valorizzazione, che non veniva aggiornato correttamente in presenza di righe di tipo Note. (#TT03493/25) 
+> - SD - Stampa Fattura di Vendita: Risolta anteprima di stampa che esce vuota se non è già attivo il flag stampata. (rif.ticket 3536/25 3531/25) 
+> - WM - In Analisi disponibilità non viene tracciata tutta la parte di semilavorato di produzione interna e di conto lavoro di fase (esterna); quindi la giacenza presente in analisi disponibilità potrebbe differire dalla giacenza presente in visualizzazione giacenze, la quale considera anche tutti i movimenti dei semilavorati delle fasi intermedie. Per fare in modo che coincidano, è necessario utilizzare un magazzino WIP per la produzione interna e un magazzino di conto lavoro WIP per quella esterna.  Migliorata anche la velocità della procedura. (#TT03565/25 - #TT03566/25 - #TT03571/25).   
+> - WMS - Aggiunto il pulsante Chiudi nei pop up di ricerca presenti nel WMS. (#TT03526/25) 
+> - WMS - Corretto bug in fase di creazione DDT da Ricevimento merci che non aggiornava correttamente la quantità residua visualizzata. (#TT03545/25). 
+
+
 ### Patch 707.1-0043 - 01/08/2025
 
 > - CO - Corretto bug che non permetteva il rollback delle scritture di rettifica e integrazione nella chiusura conti infrannuale ( TT03342/25) 
