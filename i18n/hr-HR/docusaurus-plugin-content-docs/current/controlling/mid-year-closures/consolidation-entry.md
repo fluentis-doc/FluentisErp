@@ -1,16 +1,16 @@
 ---
-title: Scritture di consolidamento
+title: Zapisi konsolidacije
 sidebar_position: 6
 ---
 
-Questa form serve innanzitutto per ricercare e visualizzare le scritture generate dalla procedura *Consolidamento* del modulo chiusure infrannuali.
+Ova forma prvenstveno služi za pretragu i pregled knjiženja generiranih postupkom konsolidacije u modulu privremenih zatvaranja.
 
-Occorre selezionare dall'apposita combo box il consolidamento di riferimento elaborato al fine di visualizzare le relative scritture.
+Potrebno je odabrati odgovarajuće konsolidacijsko zatvaranje iz padajućeg izbornika kako bi se prikazale pripadajuće knjižene stavke.
 
-Come per le Registrazioni extracontabili, da questa posizione sarà inoltre possibile completare le operazioni di consolidamento con registrazioni completamente manuali (per le partecipazioni infrasocietarie per esempio). 
+Kao i kod izvanknjigovodstvenih knjiženja, iz ovog prozora moguće je dovršiti operacije konsolidacije dodavanjem potpuno ručnih knjiženja (npr. za međusobna vlasnička sudjelovanja unutar poduzeća).
 
-Anche queste registrazioni prevedono una causale contabile di riferimento: rispetto alle normali registrazioni, ogni singola riga di contabilità prevede innanzi tutto l'indicazione della società di riferimento della riga stessa.
+I ova knjiženja zahtijevaju odgovarajući predložak knjiženja. Za razliku od standardnih knjiženja, svaka pojedinačna redovna stavka u konsolidaciji prije svega sadrži oznaku poduzeća na koje se odnosi.
 
-:::tip[]
-Per la procedura di configurazione ed esecuzione del consolidamento vedere [**qui**](/docs/controlling/mid-year-closures/procedures/consolidation)
+:::SAVJET[]
+Za postupak konfiguracije i izvršenja konsolidacije pogledati  [**ovdje**](/docs/controlling/mid-year-closures/procedures/consolidation)
 :::
