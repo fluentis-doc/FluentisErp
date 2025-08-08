@@ -1,13 +1,12 @@
 ---
-title: Ricerca Template
+title: Caută Template
 sidebar_position: 1 
 ---
 
-La procedura del Template del documento permette di creare dei modelli di base per il corpo delle Newsletter che si intende inviare.
+Procedura permite căutarea modelelor de bază pentru corpul newsletter-ului pe care intenționați să îl trimiteți.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
-In particolare è possibile filtrare sul **Nome del Template** e sul **Nome oggetto** su cui si basa il Template.
+Zona de filtrare este dedicată selectării posibilelor tipuri de date. Filtrele sunt în condiția 'AND' pentru a vă permite să specificați mai multe criterii de filtrare simultan, cum ar fi: **Numele template-ului** și după **Numele obiectului** pe care se bazează template-ul.
