@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione dei movimenti dei centri nelle chiusure
+title: Prikaz kretanja centara tvrtke u zatvaranju
 sidebar_position: 7
 ---
 
