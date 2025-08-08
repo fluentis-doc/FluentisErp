@@ -1,67 +1,54 @@
 ---
-title: Nuova Lista di Distribuzione
+title: Nouă Listă de Distribuție
 sidebar_position: 3
 ---
 
-La procedura di creazione di una nuova **Lista di distribuzione** permette di andare a definire quali saranno le caratteristiche della lista che verrà poi utilizzato nella procedura di invio delle [Newsletter](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), oltre a definire quali saranno i **contatti CRM** facenti parte di tale lista. Per creare una nuova lista è necessario cliccare sul pulsante ![](/img/neutral/common/new.png) Nuovo dalla maschera di ricerca liste di distribuzione.
+Procedura permite definirea caracteristicilor listei care va fi ulterior utilizată în procedura de expediere a [Newsletter](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), precum și definirea **contactelor CRM** care vor face parte din această listă. Pentru a crea o listă nouă este necesar să faceți clic pe butonul **Nou** din ribbon bar.
 
-La form è composta da due sezioni.
+#### Câmpuri specifice
 
-La sezione superiore permette di definire le seguenti informazioni:
+**Nume**: corespunde codului identificativ al listei de distribuție;
 
-**Nome**: corrisponde al codice identificativo della lista di distribuzione;
+**Dată creare**: este data la care a fost creată lista;
 
-**Data creazione**: è la data in cui la lista è stata creata;
+**Notă**: câmp alfanumeric care permite introducerea unor note libere;
 
-**Nota**: campo alfanumerico che permette di inserire delle note libere;
+**Autor**: se indică utilizatorul care a generat lista;
 
-**Autore**: viene indicato l’utente che ha generato la lista;
+**Tip**: permite definirea tipologiei listei de distribuție între **Static** sau **Dinamic**.
 
-**Tipo**: permette di definire la tipologia di lista di distribuzione tra **Statica** o **Dinamica**.
+Tabelul inferior diferă în funcție de tipul listei: *Static* sau *Dinamic*.
 
+### **Listă Statică**
 
-La form inferiore si differenzia a seconda che la lista sia di tipo Statico o di tipo Dinamico.
+Secțiunea este împărțită în 2 tab-uri.
 
-## ***LISTA STATICA***
+#### Atribuit
 
-La sezione è suddivisa in 2 tab.
+Afișează subiecții care au fost deja adăugați la lista de distribuție.
 
-**Tab Assegnato**
+#### Neatribuit
 
-Nella tab Assegnato vengono mostrati i soggetti che sono stati già assegnati alla lista di distribuzione.
+Afișează contactele care nu au fost încă incluse în lista vizată. 
 
-![](/img/it-it/applications/crm/distribution-list/assigned.png)
+Conține o secțiune de *Filtre*, unde este posibil să setați o serie de filtre referitoare la contactele care urmează să fie extrase și una de rezultate, unde se afișează contactele extrase pe baza filtrelor setate anterior, după apăsarea butonului *Caută*.
+Butonul **Atribuie** mută contactul din tab-ul **Neatribuit** în tab-ul **Atribuit**, inserând astfel contactul în Lista de distribuție.
 
-**Tab Non Assegnato**
-
-Nella tab Non Assegnato vengono mostrati i contatti che non sono stati ancora assegnati alla lista in oggetto.
-La tab è divisa in 2 sezioni.
-Una prima sezione di Filtro, dove è possibile impostare una serie di filtri riguardanti i contatti da estrapolare.
-
-![](/img/it-it/applications/crm/distribution-list/not-assigned.png)
-
-La seconda sezione invece, la griglia risultato, mostra i soggetti estratti in base ai filtri impostati in precedenza dopo aver premuto il pulsante Search ![](/img/neutral/common/search.png).
-Il pulsante Assegna ![](/img/neutral/common/assign-row.png) sposta il contatto dalla tab **Non assegnato** alla tab **Assegnato**, inserendo quindi il contatto nella Lista di distribuzione.
-
-**Raggruppa per contatto**: permette di raggruppare i soggetti (contatti e riferimenti) in un’unica riga in base al contatto di cui fanno parte.
+**Grupare după contact**: permite gruparea subiecților (contacte și referințe) într-un singur rând, pe baza contactului din care fac parte.
 
 
-## ***LISTA DINAMICA***
+### Listă Dinamică
 
-La sezione è suddivisa in 2 tab.
+Secțiunea este împărțită în 2 tab-uri.
 
-**Tab Configurazione**
+#### Configurare
 
-Devono essere inizialmente indicati questi 3 dati:
-**Area**: serve per definire l’area di Fluentis in cui dovranno essere recuperati i dati;
-**Modulo**: è riferito all’Area selezionata in precedenza;
-**Sql Query**: deve essere selezionata la Query Sql precedentemente creata in Fluentis (per maggiori informazioni fare riferimento alla sezione Fluentis Query Studio)
-Nella griglia sottostante vengono mostrate le proprietà e come sono state mappate.
+Inițial, trebuie indicate următoarele 3 date:  
+**Arie**: este folosită pentru a defini aria din Fluentis în care vor fi recuperate datele;  
+**Modul**: este asociat ariei selectate anterior;  
+**Sql Query**: trebuie selectată Query Sql creată anterior în Fluentis (pentru mai multe informații, consultați secțiunea *Fluentis Query Studio*).  
+În tabelul următor sunt afișate proprietățile și modul în care au fost mapate.
 
-![](/img/it-it/applications/crm/distribution-list/configuration.png)
+#### Mapare
 
-**Tab Mapping**
-
-In questa tab vengono mostrate in tempo reali i contatti elaborati e inseriti nella lista di distribuzione in base alla Sql Query indicata nella tab Configurazione.
-
-![](/img/it-it/applications/crm/distribution-list/mapping.png)
+În acest tab sunt afișate, în timp real, contactele prelucrate și adăugate în lista de distribuție, conform Sql Query indicată în tab-ul *Configurare*.
