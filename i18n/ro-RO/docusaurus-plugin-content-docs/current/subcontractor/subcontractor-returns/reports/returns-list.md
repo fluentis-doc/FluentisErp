@@ -1,5 +1,5 @@
 ---
-title: Lista rientri
+title: Listă reintrări
 sidebar_position: 1
 ---
 

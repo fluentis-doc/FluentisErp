@@ -1,150 +1,152 @@
 ---
-title: Nuovo rientro
+title: Nouă reintrare
 sidebar_position: 1
 ---
 
-Tramite questa form è possibile creare manualmente un nuovo rientro di conto lavoro oppure si possono modificare quelli già esistenti.
+Acest form permite crearea manuală a unei noi reintrări în sistem lohn sau modificarea reintrărilor existente.
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Nuovo Rientro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca Rientri](/docs/subcontractor/subcontractor-returns/insert-returns/search-returns).
+Form-ul se deschide prin calea **Sistem lohn > Reintrări > Nouă reintrare** sau cu butonul **Nou** din form-ul [Caută reintrări](/docs/subcontractor/subcontractor-returns/insert-returns/search-returns).
 
-## **1. Dati obbligatori**
+## **1. Date obligatorii**
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti, il **Tipo**, il **Numero** e la **Data rientro** effettivo (che di solito corrisponde alla data corrente).
+Aplicația solicită introducerea **Furnizorului** (terț) ordinului, utilizând help-ul de conturi, **Tipul**, **Numărul** și **Data reintrării** efectivă (care de obicei corespunde datei curente).
 
-**Controllato**: il flag viene attivato manualmente dall'utente;  
-**Valorizzato e Caricato**: vengono attivati automaticamente nel momento in cui si procede ad eseguire nell'ordine la valorizzazione e la registrazione a magazzino del documento.
+**Controlat**: acest flag este activat manual de utilizator;  
+**Valorizat și Încărcat**: se activează automat în momentul în care se efectuează valorizarea ordinului și înregistrarea în gestiune a documentului.
 
-> **Rientri previsti**: il pulsante si attiva dopo il salvataggio dei dati obbligatori e apre la form *Evasione da ordine*, all'interno della quale l'utente visualizza tutti gli ordini di conto lavoro che hanno ancora righe parzialmente o completamente inevase e da cui è possibile quindi generare dei rientri;  
-> **Registrazione rientri**:
+> **Reintrări prevăzute**: butonul se activează după salvarea datelor obligatorii și deschide form-ul *Executare din ordin*, în care sunt afișate toate ordinele în sistem lohn care au linii parțial sau complet neexecutate și din care se pot genera reintrări;  
+> **Înregistrare reintrări**:
 
-## **2. Testata**
+## **2. Antet**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base ai dati inseriti nell'anagrafica del terzista', l'applicazione compila i campi *automaticamente*.
+După ce au fost selectate datele obligatorii în secțiunea superioară, utilizatorul poate continua introducerea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau cu [help de câmp](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ori, în baza datelor introduse în registrul terțului, aplicația completează câmpurile *automat*.
 
-Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+Introducând **Furnizorul** sunt *propuse* automat toate datele specifice din tab-ul **Antet**, conform datelor setate anterior în [registrul furnizorului](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), în câmpurile corespunzătoare adresei și în *secțiunile*:
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Spedizione**: [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Monedă**: [Monedă](/docs/guide/common/glossary/glossary-intro#currency), [Curs](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valută](/docs/guide/common/glossary/glossary-intro#currency-date).  
+- **Națiune**: [Națiune](/docs/guide/common/glossary/glossary-intro#country), [Limbă](/docs/guide/common/glossary/glossary-intro#language), [Zonă)](/docs/guide/common/glossary/glossary-intro#zone)  
+- **Expediere**: [Expediere](/docs/guide/common/glossary/glossary-intro#shipment), [Incoterm](/docs/guide/common/glossary/glossary-intro#carriage), [Ambalaj](/docs/guide/common/glossary/glossary-intro#packing), [Oferta de prețuri](/docs/guide/common/glossary/glossary-intro#sales-price-list) și [Intervalul său de valabilitate](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-### 2.1 Pagamenti
+### 2.1 Plăți
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica terzista > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+**Soluțiile de plată** sunt preluate automat din *Registru terț > tab Plăți* și pot fi modificate/șterse de utilizator.
 
-#### Pulsante specifico  
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+#### Buton specific  
+> **Șterge plăți**: utilizat pentru a șterge liniile de plată selectate.
 
-### 2.2 Sconti
+### 2.2 Discounturi
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica terzista > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Sunt propuse doar discounturile predefinite preluate din *Registru terț > tab Discounturi* și pot fi modificate/șterse de utilizator.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-## Procedure testata:
+## Proceduri antet:
 
-### *Evasione da ordine*
+### *Executare din ordin*
 
-In questa finestra, che si apre utilizzando il pulsante *Rientri Previsti* posto sulla ribbon bar, è possibile filtrare gli ordini di conto lavoro.
+În această fereastră, care se deschide utilizând butonul *Reintrări prevăzute* din ribbon bar, se pot filtra ordinele în sistem lohn.
 
-Nella griglia sottostante compare una riga per ciascun ordine di conto lavoro ancora non evaso o parzialmente evaso.  
-L'utente, con un doppio click sulla riga dell'ordine, ha la possibilità di esplodere le righe che devono essere ancora fatte rientrare dal terzista, può selezionarle o inserire la quantità su ciascuna di esse e premere il tasto *Acquisizione* per  trasferire le quantità degli articoli selezionati all'interno della griglia del tab *Articoli* del rientro di conto lavoro.
+În tabelul inferior este afișată o linie pentru fiecare ordin în sistem lohn care nu este executată sau este parțial executată.  
+Utilizatorul, cu dublu click pe linia ordinului, poate detalia liniile care încă trebuie să reintre de la terț, poate să le selecteze sau să introducă cantitatea pentru fiecare și să apese butonul *Achiziție* pentru a transfera cantitățile articolelor selectate în tabelul din tab *Articole* din reintrarea în sistem lohn.
 
-#### Pulsanti specifici  
-> **Ricerca ordini**: consente di applicare i filtri di ricerca all'intero database degli Ordini di Conto Lavoro inseriti e non ancora evasi o solo parzialmente evasi;  
-> **Acquisizione**: richiama la procedura che trasferisce nella griglia del tab Articoli Rientrati del rientro di conto lavoro gli articoli selezionati nella finestra sottostante;  
-> **Evasione forzata ordine**: richiama la procedura che consente di rendere forzatamente evasa la riga dell'ordine di conto lavoro che l'utente sta trasferendo;  
-> **Seleziona tutti**: consente di selezionare tutte le righe presenti nella sezione di destra della finestra in cui compaiono gli articoli da trasferire;  
+#### Butoane specifice  
+> **Caută ordine**: permite aplicarea filtrelor de căutare asupra întregii baze de date a ordinelor în sistem lohn introduse și încă neexecutate sau doar parțial efectuate;  
+> **Achiziție**: apelează procedura care transferă în tabelul din tab *Articole reintrate* din *Reintrarea în sistem lohn* articolele selectate în fereastra de mai jos;  
+> **Executare forțată ordine**: apelează procedura care permite să se considere forțat executată linia ordinului în sistem lohn pe care utilizatorul o transferă;  
+> **Selectează tot**: permite selectarea tuturor liniilor prezente în secțiunea din dreapta ferestrei în care apar articolele de transferat;
 
-### *Registrazione rientri*
+### *Înregistrare reintrări*
 
-Vedi dettagli sull'argomento nella [Registrazione rientri](/docs/subcontractor/subcontractor-returns/procedure/returns-record).
+Vezi detalii în documentul [Înregistrare reintrări](/docs/subcontractor/subcontractor-returns/procedure/returns-record).
 
-## **3. Articoli**
+## **3. Articole**
 
-La form è costituita da una griglia, all'interno della quale l'utente può inserire manualmente gli articoli rientrati.
+Conține un tabel în care utilizatorul poate introduce manual articolele reintrate.
 
-### 3.1 Dati
+### 3.1 Date
 
-In questo tab vengono visualizzate le informazioni relative alla riga selezionata nella griglia degli articoli, tra quali:
+În acest tab sunt vizualizate informațiile referitoare la linia selectată în tabelul de articole:
 
-**Ordine prod.**: si tratta dell'ordine di produzione la cui fase esterna ha generato la riga di ordine di conto lavoro che è stata evasa con la riga di rientro selezionata;
+**Ordin de prod.**: este ordinul de producție a cărei fază externă a generat linia de ordin în sistem lohn care a fost executată cu linia de reintrare selectată;
 
-**Progetto**: in questo campo viene visualizzata il progetto legato alla riga del rientro. Di solito viene richiamato il progetto inserito nella riga dell'ordine di conto lavoro da cui è stata generata la riga di rientro;
+**Proiect**: în acest câmp este afișat proiectul asociat liniei cu reintrarea. De obicei, este preluat proiectul inserat în linia ordinului de sistem lohn din care a fost generată linia de reintrare;
 
-**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
+**Greutăți**: sunt afișate *Greutatea netă* și *Greutatea brută* totale ale liniilor de articol. Sunt preluate greutățile din registrul articolului înmulțite cu cantitatea din linie.
 
-### 3.2 Lotti/SN
+### 3.2 Loturi/SN
 
-In questo tab viene data la possibilità di impostare, per la riga selezionata nella griglia, i lotti o i serial numbers da caricare a magazzino con la quantità di articolo rientrata, nel caso che si tratti di più lotti diversi rientrati con la stessa riga di rientro. A seconda del fatto che l'articolo sia gestito a lotti o a serial numbers risulta attivata la corrispondente griglia di questo tab.
+Permite inserarea loturilore sau numerelor de serie care vor fi încărcate în gestiune cu cantitatea de articol reintrată, în cazul în care este vorba despre mai multe loturi diferite reintrate cu aceeași linie de reintrare. Dacă articolul este gestionat pe loturi sau pe numere de serie, se activează tabelul corespunzător din acest tab.
 
 :::note Nota
-La somma delle quantità dei vari lotti/numeri di serie dovrà corrispondere esattamente alla quantità rientrata della riga articolo.
+Suma cantităților diferitelor loturi/numere de serie trebuie să corespundă exact cantității reintrate a liniei articolului.
 :::
 
-## **4. Materiali**
+## **4. Materiale**
 
-In questo tab vengono visualizzati i materiali che il terzista dovrebbe aver utilizzato per produrre ciò che è stato inserito nel tab *Articoli*. La proposta dei materiali viene definita nei Parametri di Conto lavoro, nel campo **Dati materiali proposti**.
+În acest tab sunt vizualizate materialele pe care terțul ar fi trebuit să le utilizeze pentru a produce ceea ce s-a introdus în tab-ul *Articole*. Propunerea materialelor este definită în Parametriisistem lohn, în câmpul **Date materiale propuse**.
 
-La sezione *Articolo* contiene le informazioni della riga selezionata nel tab *Articoli*
+Secțiunea *Articol* conține informațiile despre linia selectată în tab-ul *Articole*.
 
-### 4.1 Materiali
+### 4.1 Materiale
 
-Per ogni articolo visualizzato sopra si possono inserire i materiali e i loro dettagli, oppure questi dati verranno proposti.
+Pentru fiecare articol afișat mai sus se pot introduce materialele și detaliile lor, sau aceste date vor fi propuse automat.
 
-### Dettaglio materiale
+### Detaliu material
 
-In questa tab vengono inseriti i Materiali che non sono stati utilizzati dal terzista, perchè in eccesso o perchè scartati.
+În acest tab se introduc Materialele care nu au fost utilizate de terț, deoarece sunt în exces sau pentru că au fost rebutate.
 
-#### Campi specifici
+#### Câmpuri specifice
 
-**Magazzino**: in questa colonna viene visualizzato il codice del magazzino Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente;
+**Gestiune**: reprezintă codul gestiunii retururilor, preluat din *parametrii în sistem lohn*, afișat automat doar dacă se introduce cantitatea returnată pe linia de material, editabil de utilizator;
 
-**Causale**: in questa colonna viene visualizzato il codice della causale per il carico dei Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente. Se i materiali non utilizzati dall'utente sono stati scartati, allora la causale non deve avere contropartita. Se invece i materiali sono stati tornati, allora la causale deve avere una contropartita di carico per indicare dove collocare i materiali resi.
+**Șablon**: reprezintă codul șablonului pentru încărcarea retururilor, preluat din *parametrii în sistem lohn*, afișat automat doar dacă se introduce cantitatea returnată pe linia de material, editabil de utilizator. Dacă materialele neutilizate au fost rebutate, atunci șablonul nu trebuie să aibă contrapartidă. Dacă materialele au fost returnate, atunci șablonul trebuie să aibă o contrapartidă de încărcare pentru a indica unde se plasează materialele returnate.
 
-**Carico Lotto**
-Nella griglia, l'utente può indicare quali siano i lotti dei materiali che sono stati utilizzati dal terzista. Le colonne visualizzate e le regole di utilizzo della griglia sono le stesse rispetto alla griglia lotti del tab Lotti\SN che si trova nel tab *Articoli*.
+#### Loturi 
 
-## **5. Riepiloghi**
+**Încarcă lot**  
+În tabel, utilizatorul poate indica ce loturi de materiale au fost utilizate de terț. Coloanele afișate și regulile de utilizare a tabelului sunt identice cu cele din tabelul loturi din tab-ul *Loturi\SN* din *Articole*.
 
-Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
+## **5. Rezumate**
 
-### 5.1 Sconti finali articoli
+Sunt prezentate informațiile principale ale întregului document.
+
+### 5.1 Discounturi finale articole
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 5.2 Spese
+### 5.2 Cheltuieli
 
-Sono proposte le spese inserite nell'anagrafica contatto, nel tab *Spese/Sconti*. In questa griglia eventuali spese devono essere inserite in positivo, eventuali sconti in negativo.      
+Sunt propuse cheltuielile introduse în registrul contactului, în tab *Cheltuieli/discounturi*. În acest tabel, eventualele cheltuieli trebuie introduse cu semn pozitiv, iar eventualele discounturi cu semn negativ.
 
-Questi elementi vengono applicati alla totalità del documento e non sono distribuiti tra le righe degli articoli. Possono includere costi aggiuntivi, sconti globali, o maggiorazioni applicate all'intero documento. Se impostati nell'anagrafica articolo, vengono automaticamente proposti al momento della creazione del documento.
+Aceste elemente se aplică întregului document și nu sunt distribuite în liniile de articole. Ele pot include costuri suplimentare, discounturi globale sau majorări aplicate întregului document. Dacă sunt setate în registrul articolului, sunt propuse automat la momentul creării documentului.
 
-- **Tipo/Descrizione**: permette di scegliere le tipologie di spesa (predefiniti nella tabella [Tipi spese](/docs/configurations/tables/general-settings/expenses-types)), attribuendo alla tipologia la percentuale di spesa da applicare.  
-- **Importo spesa**: indica il valore della spesa espresso nella divisa del documento.    
-- **IVA**: indica l'aliquota IVA da applicare alle spese inserite.   
-- **Percentuale/Valore**: indica se calcolare le spese con una percentuale oppure con un valore monetario predefinito. Selezionando *valore* l'importo della spesa va inserito sotto la voce omonima.      
-- **Percentuale**: valore numerico della percentuale di spesa.  
+- **Tip/Descriere**: permite alegerea tipurilor de cheltuieli (predefinite în [Tipuri cheltuieli](/docs/configurations/tables/general-settings/expenses-types)), atribuind tipului procentul de cheltuială care trebuie aplicat.  
+- **Valoare cheltuieli**: indică valoarea cheltuielii exprimată în divisa documentului.  
+- **TVA**: reprezintă cota TVA de aplicat cheltuielilor introduse.  
+- **Procent/Valoare**: indică dacă cheltuielile se calculează procentual sau cu o valoare monetară predefinită. Dacă se selectează *valoare*, valoarea cheltuielii se introduce în câmpul cu același nume.  
+- **Procent**: reprezintă valoarea numerică a procentului de cheltuieli.
 
 :::note Nota
-Se il *Tipo spesa* inserito ha il flag [ripartito](/docs/configurations/tables/general-settings/expenses-types) attivo, durante il carico del rientro a magazzino la spesa sarà ripartita su tutti gli articoli in base agli importi totali di ogni riga articolo. Il risultato della ripartizione della spesa è visibile nella [registrazione di magazzino](/docs/logistics/warehouse/stock-records/record).    
-1. Se gli articoli hanno un prezzo: la spesa totale sarà ripartita proporzionalmente sugli importi netti di ciascun articolo; il risultato verrà aggiunto al prezzo iniziale dell'articolo nel campo *Totale importo* della registrazione. Se per alcune righe l'importo è 0, esso sarà considerato come 1 per consentire una ripartizione della spesa su tutti gli articoli.   
-2. Se tutti gli articoli hanno prezzo pari a 0: la spesa verrà distribuita equamente tra tutte le righe articolo e, a partire da questa distribuzione, sarà calcolato l'*importo movimento/importo gestionale* nella registrazione, tenendo conto delle quantità di ciascun articolo.   
+Dacă *Tip cheltuieli* introdus are flag-ul [Repartizat](/docs/configurations/tables/general-settings/expenses-types) activ, în timpul încărcării reintrării în gestiune, cheltuiala va fi repartizată pe toate articolele în funcție de valorile totale ale fiecărei linii de articol. Rezultatul repartizării cheltuielii este vizibil în [înregistrarea de gestiune](/docs/logistics/warehouse/stock-records/record).  
+1. Dacă articolele au un preț: cheltuielile totale vor fi repartizate proporțional pe valorile nete ale fiecărui articol; rezultatul va fi adăugat la prețul inițial al articolului în câmpul *Valoare totală* din înregistrare. Dacă pentru unele linii valoarea este 0, aceasta va fi considerată ca 1 pentru a permite repartizarea cheltuielilor pe toate articolele.  
+2. Dacă toate articolele au preț 0: cheltuielile vor fi distribuite în mod egal între toate liniile articol și, plecând de la această distribuție, se va calcula *valoarea mișcării/valoarea de gestională* în înregistrare, ținând cont de cantitățile fiecărui articol.  
 :::
 
-### 5.3 Totali documento
+### 5.3 Totaluri document
 
-**Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli;  
-**Acconto**: rappresenta il valore dell' eventuale acconto ricevuto per il documento;  
-**Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*;  
-**Totale sconti applicati**: rappresenta il valore totale dei sconti applicati sugli articoli, ma senza i sconti finali;  
-**Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*;  
-**Totale sconti finali**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli;  
-**Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*;  
-**Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*;  
-**Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*;   
-**Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale spese non documentati* + *Totale spese documentati*;  
-**Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA;  
-**Totale**: *Imponibile* + *IVA*.
+**Valoare brută articole**: reprezintă suma valorilor tuturor articolelor;  
+**Acont**: reprezintă valoarea eventualului avans primit pentru document;  
+**Valoare promo**: reprezintă valoarea articolelor de tip promo introduse în tab *Articole*;  
+**Total discounturi aplicate**: reprezintă valoarea totală a discounturilor aplicate pe articole, fără discounturile finale;  
+**Valoare netă articole**: *Valoare brută articole* – *Total discounturi aplicate*;  
+**Total discounturi finale**: reprezintă valoarea discounturilor finale exprimate procentual din valoarea brută a articolelor;  
+**Valoare netă discounturi finale**: *Valoare netă articole* - *Total discounturi finale*;  
+**Cheltuieli de încasare**: reprezintă suma cheltuielilor de încasare introduse în tabelul *Cheltuieli*;  
+**Taxă timbru**: reprezintă suma cheltuielilor de timbru introduse în tabelul *Cheltuieli*;  
+**Bază de impozitare**: *Valoare netă articole* – *Discounturi finale* + *Total cheltuieli nedocumentate* + *Total cheltuieli documentate*;  
+**TVA**: reprezintă suma valorilor conținute în rapoartele de TVA;  
+**Total**: *Bază de impozitare* + *TVA*.
