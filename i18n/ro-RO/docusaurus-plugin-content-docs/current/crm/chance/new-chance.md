@@ -1,91 +1,90 @@
 ---
-title: Oportunitate nouă
-sidebar_position: 2
+title: Nuova Opportunità
+sidebar_position: 3
 ---
 
-În acest formular vor fi inserate toate informațiile generale legate de **Oportunitatea** pe care doriți să o inserați. Fereastra constă dintr-o primă secțiune în care vor fi introduse informații referitoare la datele pur personale ale companiei, o a doua secțiune centrală, constând din conducta de flux și activitățile legate de aceasta, și o a treia compusă din mai multe file, inclusiv cea a activităților desfășurate cu privire la oportunitate, detaliile acesteia și orice oferte conexe.
+In questa form verranno inserite tutte le informazioni generali legate all’**Opportunità** che si vuole inserire. La schermata del'Opportunità si compone di tre parti:
 
-## Gestionare oportunități
+- la prima parte in alto presenta eventuali workflow associati; ognuno può creare il proprio workflow in base alle esigenze CRM aziendali; si rimanda alla relativa guida sui Workflow per approfondimenti in merito;    
+- la parte centrale presenta la Testata dell'Opportunità, con le informazioni generali e anagrafiche, alcune obbligatorie altre no;    
+- sotto si trovano diverse tab, che riportano le diverse operazioni effettuate e che verranno trattate successivamente in questa guida.    
 
-*Butoane specifice*: 
-> **Salvează**: buton pentru a salva oportunitatea și modificările acesteia;  
-> **Rulați fluxul de lucru**: buton pentru a efectua acțiunea Flux de lucru;  
-> **Back**: buton pentru a trece la etapa anterioară a Flux Pipeline;  
-> **Next**: buton pentru a trece la următoarea etapă a Flux Pipeline;  
-> **Calculați valorile**: Buton pentru a recalcula valorile oportunității pe baza ofertei la care este legată oportunitatea.  
 
-Informațiile referitoare la prima secțiune a ferestrei, în detaliu, sunt:
+## Gestione opportunità
 
-**Tip oportunitate**: utilizat pentru a defini [Tip oportunitate](/docs/configurations/tables/crm/opportunities/opportunity-type) pe care îl introduceți. Pe tipul de oportunitate este, de asemenea, posibil să se indice o conductă de flux implicită;
+*Pulsanti specifici* nella ribbon bar:  
+> **Salva**: pulsante per salvare l’Opportunità e le relative modifiche;    
+> **Calcola valori**: pulsante per ricalcolare i valori dell’opportunità sulla base dell’offerta alla quale l’opportunità è collegata.  
 
-**Pipeline Flux**: *Pipeline flux* trebuie indicat și afișat în oportunitate;
+### Testata    
 
-**Număr**: este o valoare atribuită automat de Fluentis care vă permite să identificați în mod unic oportunitatea;
+**Tipo opportunità**: serve per definire la [tipologia di Opportunità](/docs/configurations/tables/crm/opportunities/opportunity-type) che si sta inserendo. Sul tipo opportunità è possibile inoltre indicare una pipeline flux di default;
 
-**Titlu**: acest câmp, obligatoriu de completat, vă permite să definiți un titlu pentru oportunitate în așa fel încât să îl recunoașteți mai ușor;
+**Numero**: è un valore assegnato automaticamente da Fluentis che permette di identificare in modo univoco l’opportunità;
 
-**Data creării**: această dată indică data la care oportunitatea a fost adăugată la Fluentis;
+**Titolo**: tale campo, di compilazione obbligatoria, permette di definire un titolo per l’opportunità in modo tale da riconoscerla più facilmente;
 
-**Data închiderii**: acest câmp vă permite să indicați o dată de închidere a oportunității și poate acționa ca un filtru în masca de căutare a oportunităților;
+**Data Creazione**: tale data indica la data di inserimento dell’opportunità in Fluentis;
 
-**Contact**: acest câmp este utilizat pentru a indica persoana de contact căreia îi este numită oportunitatea. Se referă la datele de contact ale CRM;
+**Data di Chiusura**: tale campo permette di indicare una data di chiusura dell’opportunità e può fungere da filtro nella maschera di ricerca delle opportunità;
 
-** Agent principal **: aceste date sunt preluate automat pe baza a ceea ce este indicat pe datele personale ale titularului de contact CRM al oportunității;
+**Contatto**: questo campo serve per indicare il Contatto a cui è intestata l’opportunità. Fa riferimento all’anagrafica [contatti](/docs/crm/home-crm/contacts/new-contact/header) del CRM;
 
-**Uniform**: indică moneda în care trebuie exprimate valorile oportunității;
+**Agente Principale**: questo dato viene reperito automaticamente in base a quanto indicato sull’anagrafica del contatto CRM intestatario dell’opportunità;    
 
-**Timpul scurs de la ultima activitate**: indică timpul scurs de la introducerea ultimei activități introduse pentru oportunitatea în cauză;
+**Divisa**: indica la divisa in cui dovranno essere espressi i valori dell’opportunità;
 
-**Probabilitatea de succes**: utilizată pentru a indica un % din [probabilitate](/docs/configurations/tables/crm/opportunities/probability-progress) de succes legat de oportunitate;
+**Tempo Trascorso dall’ultima attività**: indica il tempo trascorso dall’inserimento dell’ultima attività inserita per l’opportunità in oggetto;
 
-**Calitatea contactului**: utilizată pentru a indica [calitatea] (/docs/configurations/tables/crm/contacts/contact-quality) persoanei de contact care deține oportunitatea;
+**Probabilità Successo**: serve per indicare una % di [probabilità](/docs/configurations/tables/crm/opportunities/probability-progress) di successo legata all’opportunità;
 
-**Câștigat/Pierdut**: folosit pentru a indica dacă oportunitatea a fost câștigată sau pierdută;
+**Qualità Contatto**: serve per indicare la [qualità](/docs/configurations/tables/crm/contacts/contact-quality) del contatto intestatario dell’opportunità;
 
-**Motive**: în acest câmp puteți selecta [motivele] (/docs/configurations/tables/crm/opportunities/closing-reason) pentru câștigarea sau pierderea oportunității;
+**Vinto/Perso**: serve per indicare se l’opportunità sia stata vinta o persa;
 
-**Descriere**: servește la detalierea motivelor care au dus la câștigarea sau pierderea oportunității;
+**Motivazioni**: in questo campo è possibile selezionare le [motivazioni](/docs/configurations/tables/crm/opportunities/closing-reason) della vittoria o della perdità dell’opportunità;
 
-**Valoare netă**: acest câmp arată valoarea totală a oportunității fără reduceri;
+**Descrizione**: serve per dettagliare ulteriormente le motivazioni che hanno portato alla vincita o alla perdita dell’opportunità;
 
-**Sumă brută**: acest câmp arată valoarea totală a oportunității, inclusiv reducerile;
+**Valore Netto**: in questo campo viene riportato il totale del valore dell’opportunità al netto degli sconti; questo campo viene compilato automaticamente compilando il tab sottostante *Dettaglio*;     
 
-**Reduceri**: acest câmp arată reducerea totală a oportunității;
+**Importo Lordo**: in questo campo viene riportato il totale del valore dell’opportunità comprensivo degli sconti; questo campo viene compilato automaticamente compilando il tab sottostante *Dettaglio*;     
 
-**Marja brută așteptată**: în acest câmp, completat manual, utilizatorul trebuie să indice marja brută așteptată pentru oportunitate;
+**Sconti**: in questo campo viene riportato il totale degli sconti dell’opportunità; questo campo viene compilato automaticamente compilando il tab sottostante *Dettaglio*;     
 
-**Data preconizată a comenzii de vânzare**: în acest câmp puteți indica o dată preconizată pentru emiterea primei comenzi legate de oportunitate;
+**Margine Lordo Previsto**: in questo campo, di compilazione manuale, deve essere indicato dall’utente il margine lordo previsto per l’opportunità;
 
-**Data preconizată a notelor de vânzare**: în acest câmp este posibil să se indice o dată preconizată pentru emiterea primei bule legate de oportunitate;
+**Data prevista dell’ordine cliente**: in questo campo è possibile indicare una data prevista per l’emissione del primo ordine legato all’opportunità;
 
-**Data preconizată a facturilor de vânzare**: în acest câmp puteți indica o dată preconizată pentru emiterea primei facturi legate de oportunitate.
+**Data prevista bolle di vendita**: in questo campo è possibile indicare una data prevista per l’emissione della prima bolla legata all’opportunità;
 
-În a treia și ultima secțiune a Managementului oportunităților există 4 file:
+**Data prevista fatture di vendita**: in questo campo è possibile indicare una data prevista per l’emissione della prima fattura legata all’opportunità.
 
-### Activități de contact
+Nella terza ed ultima sezione della Gestione Opportunità sono presenti 4 tab:
 
-Această filă afișează activitățile legate de oportunitatea afișată. Debifarea  câmpului **Filtrați numai activitățile legate de această oportunitate**  va afișa, de asemenea, activitățile persoanei de contact care deține oportunitatea, precum și cele ale oportunității în sine.
-Pentru mai multe informații privind activitățile de contact, consultați secțiunea [Contacte] (/docs/crm/contacts/search-contacts)
+### Workflow logs
 
-### Detaliu
+In questa tab vengono visualizzate le attività relative al workflow associato a questa Opportunità. Questa tab compare se per questo oggetto è previsto un workflow associato.        
 
-Această filă prezintă detaliile economice ale ofertei. Pentru fiecare linie de detaliu puteți indica:
-**Familia de produse**: se referă la tabelul cu familia de produse;  
-**Descriere**: este descrierea familiei de produse selectate mai sus;  
-**Suma brută**: vă permite să indicați valoarea oportunității, pentru familia de produse indicată mai sus, fără reduceri;  
-**Reducere**: vă permite să indicați valoarea reducerii aplicate pentru familia de produse indicată mai sus;  
-**Valoarea netă**: se calculează ca diferența dintre  câmpurile **Sumă brută**  și  **Reducere**;  
-**Venit așteptat**: vă permite să indicați care va fi valoarea reală prognozată a rândului de oportunități;  
-**Data estimată a facturii de vânzare**: corespunde datei la care estimați că veți factura oportunitatea în cauză;  
-**Data preconizată a notelor de vânzare**: corespunde datei la care se preconizează facturarea oportunității în cauză;  
-**Data preconizată a comenzii de vânzare**: corespunde datei la care se preconizează emiterea comenzii pentru oportunitatea în cauză;  
-**Data închiderii**: este data la care linia în cauză a fost închisă;  
-**Notă**: În acest câmp puteți indica orice note din această linie.
+### Dettaglio
 
-### Oferte
+In questa tab viene mostrato il dettaglio economico dell’offerta. Per ogni riga di dettaglio è possibile indicare:  
+**Famiglia Prodotti**: fa riferimento alla tabella Famiglia prodotti;  
+**Descrizione**: è la descrizione della Famiglia Prodotti selezionata in precedenza;  
+**Importo lordo**: permette di indicare l’importo dell’opportunità, per la famiglia prodotti indicata in precedenza, al netto degli sconti;  
+**Sconto**: permette di indicare l’importo dello sconto applicato per la famiglia prodotti indicata in precedenza;  
+**Valore netto**: viene calcolato come differenza tra i campi **Importo Lordo** e **Sconto**;  
+**Entrate previste**: permette di indicare quello che sarà il valore effettivo previsionale della riga dell’opportunità;  
+**Data prevista fattura di vendita**: corrisponde alla data in cui si prevede di fatturare l’opportunità in oggetto;  
+**Data prevista bolle di vendita**: corrisponde alla data in cui si prevede di bollettare l’opportunità in oggetto;  
+**Data prevista ordine di vendita**: corrisponde alla data in cui si prevede di emettere l’ordine per l’opportunità in oggetto;  
+**Data di chiusura**: è la data in cui la riga in oggetto è stata chiusa;  
+**Nota**: in questo campo è possibile indicare eventuali note della riga in oggetto.
 
-Această filă afișează ofertele legate de oportunitate. Dacă faceți dublu clic pe linia ofertei, veți ajunge la modul de vizualizare / editare a ofertei în sine.
-**Notă**: Note suplimentare pot fi furnizate în acest câmp.
+### Offerte
 
-### Documente conexe
-În această filă puteți vizualiza fișierele atașate oportunității sau puteți continua să atașați fișiere noi cu procedura drag and drop.
+In questa tab vengono mostrate le offerte collegate all’opportunità. Facendo doppio click sulla riga dell’offerta si accede alla modalità di visualizzazione/modifica dell’offerta stessa.  
+**Nota**: in questo campo è possibile indicare delle note aggiuntive.
+
+### Documenti relativi  
+In questa tab è possibile visualizzare i file allegati all’opportunità o procedere ad allegare nuovi file con la procedura di drag and drop.

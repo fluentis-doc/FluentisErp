@@ -1,9 +1,9 @@
 ---
 title: Mappa opportunità CRM
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-Aceasta functionalitate permite di visualizzare graficamente la dislocazione geografica delle **Opportunità** in essere sulla base delle indicazioni geografiche indicate nell’anagrafica dei contatti CRM presenti sulle opportunità.
+Questa funzionalità permette di visualizzare graficamente la dislocazione geografica delle **Opportunità** in essere sulla base delle indicazioni geografiche indicate nell’anagrafica dei contatti CRM presenti sulle opportunità.
 
 Con l’aiuto dei filtri si può visualizzare: una sola tipologia di opportunità (**Tipo Opportunità**), più opportunità inserite dallo stesso utente (**Operatore**), più opportunità con la medesima probabilità di successo (**Probabilità Successo**).
 
@@ -14,6 +14,5 @@ Cliccando sull’indicatore vengono visualizzate, in una finestra di pop up le s
 
 -	Ragione Sociale del contatto titolare dell’opportunità;
 -	La Qualità del contatto;
--	Lo stadio della Pipeline Flux in cui si trova l’opportunità;
 -	Il valore dell’opportunità;
 -	L’indirizzo del Contatto.

@@ -1,12 +1,11 @@
 ---
-title: Liste di distribuție
+title: Liste di Distribuzione
 sidebar_position: 1
 ---
 
-Permite crearea listelor de contacte CRM cărora le vor fi trimise Newsletter-urile.  
+La procedura **Liste di distribuzione** permette di creare le liste di contatti CRM a cui dovranno essere inviate le **Newsletter**.
+Le liste di distribuzione si dividono in due tipologie:
+-	**Liste Statiche**: richiedono all’utente di aggiungere manualmente i nuovi contatti CRM creati alla lista;
+-	**Liste Dinamiche**: calcolano in tempo reale, in base ai filtri impostati sulla query Sql abbinata alla lista, i contatti che ne devono far parte in fase di invio della Newsletter.
 
-Listele de distribuție pot fi de două tipuri:  
-- **Liste statice**: permite inserarea manuală a noilor contacte CRM create în listă;  
-- **Liste dinamice**: calculează în timp real, pe baza filtrelor setate în query Sql asociată listei, contactele care trebuie să facă parte din listă, în momentul trimiterii Newsletter-ului.
-
-Listele de distribuție pot conține atât contactele CRM, cât și referințele acestor contacte.
+Le liste di distribuzione possono contenere sia i contatti CRM o i riferimenti dei contatti stessi.

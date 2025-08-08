@@ -1,59 +1,68 @@
 ---
-title: Newsletter nouă
+title: Nuova Newsletter
 sidebar_position: 2
 ---
 
-Procedura de creare a unei noi **Newsletter** permite definirea caracteristicilor newsletter-ului care va fi expediat, de la *Template* la *Listele de distribuție*.
+La procedura di creazione di una nuova **Newsletter** permette di andare a definire quali saranno le caratteristiche della Newsletter che verrà inviata, dal Template alle liste di distribuzione.
 
-*Câmpuri specifice*
+La form è divisa in due parti.
 
-**Titlu**: corespunde codului newsletter-ului;
+Nella parte superiore sono presenti i seguenti campi:
 
-**Descriere**: câmp alfanumeric, permite inserarea detaliilor newsletter-ului;
+**Titolo**: corrisponde al codice della Newsletter;
 
-**Template**: permite selectarea unui [Template](/docs/crm/budget-marketing-automation/template/new-template);
+**Descrizione**: campo alfanumerico per indicare nel dettaglio il significato della Newsletter;
 
-**Autor**: este indicat utilizatorul care a creat newsletter-ului;
+**Template**: serve per selezionare il [Template](/docs/crm/budget-marketing-automation/template/new-template);
 
-**De la**: în acest câmp se inserează adresa de e-mail de la care va fi expediat newsletter-ul;
+**Autore**: viene indicato l’utente che ha creato la newsletter;
 
-**Data creării**: corespunde datei creării newsletter-ului;
+**Da**: in questo campo deve essere indicato l’indirizzo mail da cui risulterà inviata la Newsletter per chi la riceverà;
 
-**Data şi ora planificată**: corespund datei și orei programate pentru trimiterea newsletter-ului;  
+**Data creazione**: corrisponde alla data di creazione della newsletter;
 
-**Subiect**: corespunde obiectului e-mailului;
+**Data e ora programmata**: corrispondono alla data e ora programmati per l’invio della newsletter (campo puramente indicativo);
 
-**Planificată**: parametrul indică faptul că expedierea newsletter-ului a fost programată;
+**Soggetto**: corrisponde a quello che viene solitamente chiamato Oggetto della mail;
 
-**Expediată**: parametrul indică faptul că newsletter-ului a fost expediat.
+**Schedulata**: questo flag serve per indicare che l’invio della newsletter è stato schedulato (campo puramente indicativo);
 
-*Procedură*
+**Inviati**: questo flag indica che la Newsletter è stata inviata.
 
-- în tabelul inferior selectați listele de distribuție care conțin contactele și adresele lor de e-mail la care trebuie trimis newsletter-ul (clic pe butonul **+** pentru a expanda listele).  
+![](/img/it-it/applications/crm/newsletter/new-newsletter.png)
 
-- pentru a trimite Newsletter-ul, după ce ați indicat parametrii afișați anterior, apăsați butonul **Expediază** din ribbon bar.
-Aceasta va deschide form-ul pentru expedierea newsletter-ului, care conține informații similare cu cele din [Template](/docs/crm/budget-marketing-automation/template/new-template)
+Nella parte inferiore della form devono essere invece selezionate le liste di distribuzione contenenti i soggetti ed i relativi indirizzi mail a cui dovrà essere inviata la newsletter.
 
+![](/img/it-it/applications/crm/newsletter/distribution-list.png)
 
-Pentru **Email** sunt prezente următoarele butoane: 
+Premendo sul pulsante ![](/img/neutral/common/plus.png) alla sinistra della singola lista sarà possibile visualizzare i contatti appartenenti a tale lista:
 
-> **Imprimare**: buton pentru imprimarea fizică a newsletter-ului;  
-> **Print preview**: buton pentru a efectua vizualizarea imprimării newsletter-ului;  
-> **Salvare**: buton pentru a salva modificările aduse newsletter-ului;  
-> **Trimite**: buton pentru trimiterea newsletter-ului;  
-> **Undo**: buton pentru a șterge ultima modificare a newsletter-ului;  
-> **Redo**: buton pentru a reveni la ultima modificare a newsletter-ului. 
+![](/img/it-it/applications/crm/newsletter/contacts.png)
 
-Secțiunea inferioară conține câteva câmpuri, unele raportate din formul-ul anterior:
+Per inviare la Newsletter, una volta indicati i parametri mostrati in precedenza, è necessario premere sul pulsante Invia ![](/img/neutral/common/send.png) presente sulla Ribbon bar.
+In tal modo si aprirà la form effettiva di invio della Newsletter, che presenta i tab **Home**, **Insert** e **Merge Data**, già presenti nella sezione Template Documento (per maggiori informazioni a riguardo fare riferimento alla sezione [Template](/docs/crm/budget-marketing-automation/template/new-template)), oltre alla tab **Email** che presenta le seguenti funzioni:
 
-**Destinatari**: câmpul permite inserarea destinatarilor e-mailului selectându-i dintre referințele contactelor CRM sau dintre utilizatorii Fluentis;
+**Stampa** Pulsante per effettuare la stampa fisica della newsletter;  
+**Anteprima di stampa** Pulsante per effettuare l’anteprima di stampa della newsletter;  
+**Salva** Pulsante per salvare le modifiche alla Newsletter;  
+**Invia** Pulsante per inviare la Newsletter;  
+**Undo** Pulsante per cancellare l’ultima modifica alla newsletter;  
+**Redo** Pulsante per ripristinare l’ultima modifica alla newsletter  
 
-**Subiect**: corespunde obiectului e-mailului;
+![](/img/it-it/applications/crm/newsletter/email.png)
 
-**Mail template**: permite selectarea unui [Template](/docs/crm/budget-marketing-automation/template/new-template);
+Nella sezione sottostante vengono sono presenti alcuni campi, alcuni dei quali  riportati dalla form precedente:
 
-**Bcc**: Fluentis completează automat acest câmp cu adresele de e-mail ale contactelor CRM, astfel încât fiecare persoană care primește newsletter-ul să nu vadă adresele de e-mail ale altor destinatari;
+**Destinatari**: il campo permette di indicare i destinatari della mail selezionandoli tra i riferimenti dei contatti CRM o tra gli utenti di Fluentis;
 
-**Embedded Image**: dacă este activ, imaginile din template nu vor fi inserate ca atașamente la e-mailul creat, ci ca elemente reale ale e-mailului;
+**Soggetto**: corrisponde a quello che viene solitamente chiamato Oggetto della mail;
 
-**Atașamente**: sunt afișate fișierele care vor fi atașate la newsletter.
+**Mail Template**: serve per selezionare il [Template](/docs/crm/budget-marketing-automation/template/new-template);
+
+**Cc**: serve per indicare gli indirizzi mail che dovranno ricevere la mail in copia conoscenza;
+
+**Bcc**: serve per indicare gli indirizzi mail che dovranno ricevere la mail in conoscenza nascosta. Fluentis compila automaticamente questo campo con gli indirizzi mail dei contatti CRM di Fluentis in modo tale che ogni soggetto che riceve la newsletter non veda gli indirizzi mail degli altri destinatari;
+
+**Embedded Image**: mettendo questo flag le eventuali immagini presenti nel template non verranno inseriti come allegati alla mail creata ma come veri e propri elementi della mail;
+
+**Allegati**: vengono mostrati i file che verranno allegati alla Newsletter.
