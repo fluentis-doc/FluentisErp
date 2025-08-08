@@ -1,16 +1,14 @@
 ---
-title: Ripristino
+title: Povrati u prethodno stanje 
 sidebar_position: 3
 ---
 
-La scheda di Ripristino consente di visualizzare la registrazione contabile attraverso un doppio click nella sezione relativa alle registrazioni, così come l'annullamento parziale/totale delle operazioni selezionate. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite).
+Ova kartica/tab omogućuje pregled knjigovodstvene evidencije dvoklikom u dijelu evidencije, kao i djelomično/potpuno otkazivanje odabranih operacija. Otkazivanje će biti moguće samo ako se razdoblje još može promijeniti (nije izvršen ispis glavne knjige i zatvaranje konta).
 
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca la lista delle contabilizzazioni eseguite. |
-| Ripristina contabilizzazione | Esegue il ripristino delle registrazioni contabili selezionate. |
+| Traži | Traži popis obavljenih knjiženja. |
+| Povrati knjiženje | Esegue il ripristino delle registrazioni contabili selezionate. |
 
 
 

@@ -3,51 +3,52 @@ title: Elektronički račun iz San Marina
 sidebar_position: 5
 ---
 
-:::note NOTA
-In questa sezione viene trattata la gestione della fattura elettronica relativamente a operatori economici utenti Fluentis **residenti** o stabiliti a San Marino.
+:::note NAPOMENA
+U ovom se odjeljku obrađuje upravljanje elektroničkim računom u vezi s gospodarskim subjektima, korisnicima Fluentisa **stanovnicima**  ili onima koji imaju poslovni nastan u San Marinu.
 
-NON riguarda pertanto gli aspetti connessi con la fatturazione di soggetti italiani verso San Marino oppure ricevuta da San Marino.
+NE odnosi se stoga na aspekte povezane s izdavanjem računa od strane talijanskih subjekata prema San Marinu ili na račune primljene iz San Marina.
 :::
 
-### Tabella *Configurazione documenti elettronici* 
+### Tablica *Konfiguracija elektroničkih dokumenata* 
 
-All'interno della tabella, normalmente compilata per la configurazione del Fluentis Business Hub il quale si collega con lo SDI italiano, occorre in questo caso compilare, oltre ai consueti campi per i quali si rinvia [**qui (video *Configurazione iniziale Fatturazione elettronica*)**](/docs/finance-area/sdi-documents/sdi-documents-intro/), due campi appositi validi per San Marino:
+Unutar tablice, koja se inače ispunjava za konfiguraciju Fluentis Business Hub-a koji se povezuje s talijanskim SDI-jem, u ovom je slučaju potrebno ispuniti, osim uobičajenih polja za koja se upućuje [**ovdje (video Početna konfiguracija elektroničkog fakturiranja)*)**](/docs/finance-area/sdi-documents/sdi-documents-intro/), i dva posebna polja koja vrijede za San Marino:
 
-- il flag **Test S. Marino** (per identificare la connessione all'ambiente fiscale di simulazione) il quale prevale e bypassa il flag *E' test* presente in testata (che in questo caso è irrilevante)
+- flag **Test San Marino** (za identifikaciju veze s fiskalnim simulacijskim okruženjem), koji ima prednost i zaobilazi flag *Je test* u zaglavlju (koji je u ovom slučaju nevažeći) 
 
-- **Token S. Marino** per inserire la credenziale di collegamento con l'ufficio fiscale sanmarinese (al posto dello SDI italiano).
+- **Token San Marino** za unos vjerodajnice za povezivanje s poreznim uredom San Marina (umjesto s talijanskim SDI-jem) 
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/sdiconfig.png)
 
 :::tip INFO
-Benchè i campi in tabella riferiti alla connessione con Fluentis Business Hub e lo SDI italiano siano obbligatori (quali ad esempio user name e password) nel caso di San Marino la chiamata avverrà direttamente al web service dell'amministrazione finanziaria di San Marino. Pertanto potrebbe essere necessario inserire delle credenziali Fluentis Business Hub "fittizie" al fine di salvare il contenuto della maschera e poter valorizzare i campi realmente necessari al collegamento quali il Token per il webservice di San Marino.
+Iako su polja u tablici koja se odnose na povezivanje s Fluentis Business Hub-om i talijanskim SDI-jem obvezna (kao što su korisničko ime i lozinka), u slučaju San Marina poziv će se izvršavati izravno prema web servisu Porezne uprave San Marina. Stoga može biti potrebno unijeti "fiktivne" vjerodajnice za Fluentis Business Hub kako bi se omogućilo spremanje sadržaja obrasca i unos stvarno potrebnih polja za povezivanje, kao što je Token za web servis San Marina.
 :::
 
-### Connettori Bizlink da abilitare
+### Bizlink konektori koje je potrebno omogućiti
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/bizlinkconnectors.png)
 
-Nel caso in cui i connettori visibili nell'immagine non fossero già presenti a sistema e si renda necessario procedere inserendoli manualmente si consiglia di copiare i codici e descrizioni presenti e poi selezionare nei vari campi le tipologie connesse con la fatturazione elettronica sanmarinese.
+U slučaju da konektori prikazani na slici nisu već prisutni u sustavu i potrebno ih je unijeti ručno, preporučuje se kopirati prikazane kodove i opise, a zatim u odgovarajućim poljima odabrati vrste povezane s elektroničkim fakturiranjem San Marina.  
 
 
 <details>
 
-  <summary>In Particolare: (Click to expand)</summary>
+  <summary>Konkretno: (Click to expand)</summary>
  
 
 
-  1. Tipo connettore: San Marino INPUT e OUTPUT rispettivamente per le fatture in entrata e in uscita
+  1. Vrsta konektora: San Marino INPUT i OUTPUT – za ulazne i izlazne račune 
   
   2. Partner: Fluentis
   
-  3. Flusso: San Marino
+  3. Tijek: San Marino
    
-  4. Identificativo: Deve corrispondere al parametro *Globalidentifier* settato nelle configurazioni del servizio Bizlink, altrimenti i connettori in questione risulteranno inibiti.
-  Pertanto al momento dell'installazione e prima dell'utilizzo i connettori, per precauzione, potrebbero risultare inibiti ed occorre attivarli cancellando la stringa SANMARINO dai connettori se il parametro del servizio bizlink risulta impostato a NULL, oppure riportare nel parametro *Globalidentifier* del servizio la stringa SANMARINO lasciando i connettori come stanno; in questo caso, però, la stringa SANMARINO dovrà essere riportata in tutti gli altri connettori che risultano necessari per le funzionalità desiderate.
+  4. Identifikator: Mora odgovarati parametru *Globalidentifier* postavljenom u konfiguraciji usluge Bizlink, inače će dotični konektori biti onemogućeni. 
+  Stoga, prilikom instalacije i prije upotrebe, konektori bi iz predostrožnosti mogli biti onemogućeni te ih je potrebno aktivirati brisanje stringa SANMARINO iz konektora ako je parametar usluge Bizlink postavljen na NULL,
+  ili unijeti u parametar *Globalidentifier* usluge string SANMARINO, ostavljajući konektore nepromijenjene; u tom slučaju, međutim, string SANMARINO mora biti unesen u sve ostale konektore koji su potrebni za željene funkcionalnosti.
   
-  5. Operazione di Flusso: selezionare le voci rispettivamente per l'invio, la ricezione o cancellazione, rispettivamente per fatture di acquisto o vendita, le voci sono coerenti con i codici visibili nell'immagine (che sono i connettori necessari) 
+  5. Operacija toka: odabrati stavke za slanje, primanje ili brisanje, odgovarajuće za ulazne ili izlazne račune. Stavke su usklađene s kodovima vidljivima na slici (koji predstavljaju potrebne konektore).
     
-Documento di flusso: selezionare le voci rispettivamente per l'invio o la ricezione
+Dokument toka: odabrati stavke za slanje ili primanje, prema potrebi.
   
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/bizlinkconnectors2.png)
 
@@ -56,22 +57,22 @@ Documento di flusso: selezionare le voci rispettivamente per l'invio o la ricezi
 
 </details>
 
-## LOGICA DI BASE
+## OSNOVNA LOGIKA
 
-### **Acquisti**:
+### **Nabava**:
 
-l’operatore economico di S.Marino riceve dall'ufficio tributario sanmarinese, contestualmente ad una pec che notifica la fattura "estera" in arrivo (ovvero da una società italiana che vende ad un sanmarinese), il documento proveniente dallo Sdi italiano e trova il file nei *Documenti acquisto in entrata* come di consueto.
+Gospodarski subjekt iz San Marina prima od poreznog ureda San Marina – istovremeno s PEC porukom koja obavještava o dolaznoj "inozemnoj" fakturi (odnosno od talijanskog poduzeća koje prodaje subjektu iz San Marina) – dokument koji dolazi iz talijanskog SDI sustava te se datoteka nalazi u *Ulaznim dokumentima nabave* kao i inače.
 
-La fattura elettronica di acquisto di cui sopra risulta in questo momento, all'interno di Fluentis, nello stato ***Non assegnato***. 
+Navedena elektronička faktura za nabavu u tom trenutku unutar Fluentisa ima status ***Nepridruženo***. 
 
-Per la società in questione deve esser stato attivato (nella tabella Società - SH_Companies direttamente sul database) il flag che attiva la creazione delle fatture di acquisto da File Sdi.
-L’utente quindi crea la fattura di acquisto (la fattura elettronica a questo punto passa nello stato ***Ricevuta***) ne integra i dati necessari, in particolare il tipo fatturato acquisti nelle righe, per specificare il tipo merce - vedi immagine sotto -, e l'aliquota iva ai fini del calcolo dell'imposta monofase, dati richiesti dalla fiscalità di S.Marino.
+Za dotično poduzeće mora biti aktiviran flag (u tablici Società - SH_Companies izravno u bazi podataka) koji omogućuje kreiranje ulaznih računa iz SDI datoteke.
+Korisnik zatim kreira ulazni račun u tom trenutku elektronička faktura prelazi u status ***Primljeno*** nadopunjuje potrebne podatke, posebno vrstu troška nabave u redovima – kako bi se specificirala vrsta robe (vidi sliku dolje) – te stopu PDV-a u svrhu obračuna jednofaznog poreza, podaci koji su zahtijevani prema poreznim propisima San Marina.
 
 <details>
 
-  <summary>Dettagli integrazione fattura: (Click to expand)</summary>
+  <summary>Detalji nadopune računa: (Click to expand)</summary>
 
-L'indicazione della tipologia di merce avviene direttamente attraverso la tabella di definizione delle voci di Fatturato acquisti dove, nel campo Tipo IVA (tabella fissa) sono contenute le informazioni che andranno valorizzare l'apposito tag.
+Navođenje vrste robe vrši se izravno putem tablice za definiranje stavki Fakturirane nabave, gdje se u polju Vrsta PDV-a (fiksna tablica) nalaze informacije koje će se koristiti za popunjavanje odgovarajućeg taga. 
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/purchaseintegration.png)
 
@@ -83,47 +84,47 @@ L'indicazione della tipologia di merce avviene direttamente attraverso la tabell
 
 </details>
 
-Una volta che ha integrato la fattura, tramite un apposito cambio stato (workflow) crea il file di integrazione dell’importazione da spedire all'ufficio tributario di San Marino.
+Nakon što korisnik nadopuni račun, pomoću odgovarajuće promjene statusa (workflow) kreira se datoteka za integraciju uvoza, koja se šalje Poreznom uredu San Marina. 
 
-Gli stati del documento, specifici per San Marino sono a questo punto:
+U ovom trenutku, statusi dokumenta specifični za San Marino su sljedeći: 
 
-- **Controllato**: esegue un test sulla fattura di acquisto Fluentis per verificare che siano stati compilati i campi necessari;
-- **Generato**: crea il file con struttura XML-SM
-- **Da spedire**: trasmette il file a FBH e da qui all'ufficio tributario di S.M.
-- **Respinto HUB_SM**: se il file non viene acquisto e dunque nemmeno processato della'ufficio tributario di S.M. - da questo stato può essere riportato a *Ricevuta*
-- **in HUB-SM**: per il tempo in cui il file rimane presso l'ufficio tributario di S.M.
-- **Scartato Non conforme HUB-SM**: se l'ufficio tributario di S.M. scarta il file; da qui può essere riportata nello stato *Ricevuta* per correzioni e nuovo invio	
-- **Acquisito HUB-SM**:	se l'elaborazione va a buon fine. Il successo dell'acquisizione dei dati dal formato XML-RSM determina l'atto di presentazione della fattura all'Ufficio Tributario, registrato alla data di trasmissione del file.
-- **Cancellato**: stato che si può raggiungere inviando una richiesta di cancellazione; se la richiesta va a buon fine è possibile riportare poi il documento in stato *Ricevuto*
+- **Kontrolirano**: izvršava se provjera nad računom nabave u Fluentisu kako bi se utvrdilo jesu li ispunjena potrebna polja;
+- **Generirano**: kreira se datoteka u XML-SM strukturi
+- **Za slanje**: datoteka se šalje na FBH, a odatle Poreznom uredu San Marina; 
+- **Odbijeno HUB_SM**: ako datoteku ne prihvati, a time ni obradi, Porezni ured San Marina – iz ovog stanja može se vratiti u stanje *Primljeno*;
+- **U HUB-SM**: dok je datoteka pohranjena kod Poreznog ureda San Marina;  
+- **Odbijeno – Nekompatibilno HUB-SM**: ako Porezni ured San Marina odbije datoteku; iz ovog stanja može se vratiti u stanje Primljeno radi ispravka i ponovnog slanja;  	
+- **Prihvaćeno HUB-SM**: ako je obrada uspješna. Uspješno preuzimanje podataka iz XML-RSM formata predstavlja službeno podnošenje računa Poreznom uredu, zabilježeno na datum slanja datoteke;  
+- **Obrisano**: stanje koje se postiže slanjem zahtjeva za brisanjem; ako je zahtjev uspješan, dokument se može ponovno vratiti u stanje *Primljeno*.
  
 :::note **NOTA**
-Nel lasso di tempo fra la trasmissione dei file e la loro effettiva elaborazione, l'operatore ha la possibilità di cancellarli, qualora nel frattempo si accorga di eventuali errori di compilazione.
+U vremenskom razdoblju između slanja datoteka i njihove stvarne obrade, operater ima mogućnost njihovog brisanja, u slučaju da u međuvremenu uoči eventualne greške pri ispunjavanju.
 
-L'upload di un file di integrazione nell'area temporanea innesca la cancellazione immediata di qualsiasi altro file di integrazione che sia riferibile al medesimo file FE Import e sia presente in quel momento nell'area temporanea; in sostanza nell'area temporanea per ciascun FE Import di riferimento prevale l'ultima versione caricata del file di integrazione.
+Postavljanje (upload) datoteke za integraciju u privremeno područje automatski pokreće brisanje bilo koje druge datoteke za integraciju koja se odnosi na isti FE Import i koja je u tom trenutku prisutna u privremenom području;
+drugim riječima, u privremenom području za svaki FE Import vrijedi posljednja učitana verzija datoteke za integraciju.
 :::
 
 		
-L'Ufficio Tributario tramite elaborazioni automatizzate effettua la lavorazione delle fatture in distinte e procede all'emissione di eventuali Avvisi di pagamento relativi all'imposta sulle 
-importazioni (Monofase)
-Ultimo step del percorso è la conferma della ricezione e accettazione del file da parte dell'ufficio tributario di S. Marino (notifica di "Vidimazione"), che aggiorna lo stato del documento.
+Porezni ured putem automatiziranih procesa obrađuje račune u skupinama te izdaje eventualne obavijesti o plaćanju vezane uz porez na uvoz (Jednofazni porez).  
+Zadnja faza procesa je potvrda primitka i prihvaćanja datoteke od strane Poreznog ureda San Marina (obavijest o „Vidimaciji“), koja ažurira status dokumenta.
 
-La fattura di acquisto viene poi contabilizzata come di consueto, per registrarla in contabilità.
+Ulazni račun se potom, kao i obično, knjiži za svrhe računovodstva.
 
 
-:::note **Nota**
-Le fatture in importazione di servizi esenti dal pagamento dell'imposta monofase devono essere integrate presso l'HUB-SM indicando Tipo Merce 9 "Servizi Esenti", tramite le modalità descritte in questo documento, onde evitare la loro giacenza a tempo indefinito nella lista delle fatture da presentare.
-Per questo tipo di fatture non sono previsti né la lavorazione in distinte né l'inoltro di alcuna notifica di "vidimazione" rivolta al SdI.
+:::note **Napomena** 
+Računi za uvoz usluga oslobođenih plaćanja jednofaznog poreza moraju se integrirati u HUB-SM označavanjem Vrste robe 9 "Oslobođene usluge", prema postupcima opisanim u ovom dokumentu, kako bi se izbjeglo njihovo zadržavanje na neodređeno vrijeme na popisu računa za podnošenje.
+Za ovu vrstu računa nije predviđena ni obrada u skupinama ni slanje bilo kakve obavijesti o „vidimaciji“ prema SDI sustavu.  
 :::
 
-### **Vendite**:
+### **Prodaja**:
 
-Il flusso è simile a quello italiano (è lo stesso tracciato Sdi, pur se con qualche tag compilato in modo particolare). 
+Tijek je sličan talijanskom (koristi se isti SDI format, iako su neki tagovi ispunjeni na poseban način).  
 
 <details>
 
-  <summary>Tag Specifici per San Marino (specifici per SM): (Click to expand)</summary>
+  <summary>Specifični tagovi za San Marino(specifični za SM): (Click to expand)</summary>
 
-Tag fisso Partita IVA del trasmittente esempio:
+Fiksni tag PDV identifikacijskog broja pošiljatelja, primjer: 
 
 ```xml
     <IdTrasmittente>
@@ -132,7 +133,7 @@ Tag fisso Partita IVA del trasmittente esempio:
     </IdTrasmittente>
 ```    
 
-Per ogni sezione 2.2.1 DettaglioLinee della sezione 2.2DatiBeniServizi 
+Za svaki odjeljak 2.2.1 Detalji stavki u odjeljku 2.2 Podaci o robi i uslugama
 
 ```xml
     <AltriDatiGestionali>
@@ -141,11 +142,11 @@ Per ogni sezione 2.2.1 DettaglioLinee della sezione 2.2DatiBeniServizi
     	</AltriDatiGestionali>
 ```
 
-dove il valore del Tag TipoDato *TM* è fisso e il valore del tag RiferimentoTesto è preso dalla lista di valori del campo **Tipo IVA** collegati alle classi di **Fatturato vendite** (tabella Fluentis) inseriti in fattura
+gdje je vrijednost taga Tip podatka *TM* fiksna, a vrijednost taga RiferimentoTesto uzeta je s popisa vrijednosti polja **Vrsta PDV-a** povezanim s klasama **Promet prodaje** (tablica Fluentis) unesenim na računu.
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/salesturnover.png)
 
-Nella sezione DatiRiepilogo viene inserito, per ogni valore del campo Tipo IVA (di cui sopra) collegato al fatturato vendite, trovato nel documento, un tag specifico *RiferimentoNormativo* dove il valore è preso concatenando il codice del Tipo IVA collegato a fatturato e il valore del campo Categoria IVA presente nella tabella [**Aliquote IVA**](/docs/configurations/tables/finance/vat-rates). 
+U odjeljku Sažetak podataka za svaku vrijednost polja Vrsta PDV-a  (navedenog gore) povezanu s prodajnim prometom, pronađenu u dokumentu, umetnut je specifičan tag *Normativni referent* gdje je vrijednost dobivena spajanjem koda Vrsta PDV-a  povezanog s prometom i vrijednosti polja Kategorija PDV-a prisutnog u tablici  [**Stopa PDV-a**](/docs/configurations/tables/finance/vat-rates). 
 
 ```xml
     <DatiRiepilogo>
@@ -161,137 +162,137 @@ Nella sezione DatiRiepilogo viene inserito, per ogni valore del campo Tipo IVA (
 
 </details>
 
-L'ufficio tributario di S.Marino fa da intermediario nel processo di invio, quindi sono previsti degli stati particolari del documento legati al fatto che il file transita per l'ufficio tributario sanmarinese (quindi è S.Marino a fare un primo test delle richieste specifiche in termini di valorizzazione dei tag) e poi, se viene accettata anche dallo Sdi italiano, lo stato del documento arriva a quello consueto (es. Consegnato). 
+Porezni ured San Marina djeluje kao posrednik u procesu slanja, stoga su predviđena posebna stanja dokumenta vezana uz činjenicu da datoteka prolazi kroz porezni ured San Marina (dakle, San Marino obavlja prvu provjeru zahtjeva specifičnih u pogledu ispunjavanja tagova), a zatim, ako ju prihvati i talijanski SDI, stanje dokumenta prelazi u uobičajeno stanje (npr. Dostavljeno).
 
-Le informazioni in merito alle notifiche di consegna ecc. (italiane) passano attraverso l’ufficio tributario di S.Marino che li inoltra al Fluentis Business Hub per l'acquisizione nel gestionale.
+Informacije o obavijestima o dostavi i slično (talijanske) prolaze kroz porezni ured San Marina koji ih prosljeđuje Fluentis Business Hubu za evidentiranje u sustavu upravljanja.
 
-(Principali) STATI DEL WORKFLOW (in *corsivo* quelli *SPECIFICI PER SM*):
+(Glavna) STANJA (u *kurzivu* ona *SPECIFIČNA ZA SM*):
 
-- **Controllato**: esegue un test sulla fattura di acquisto Fluentis per verificare che siano stati compilati i campi necessari; un controllo particolare per S. Marino che è stato aggiunto è il requisito che nella stessa fattura possano essere contenute esclusivamente le seguenti combinazioni relative al tipo merce (tag TM); Materie prime con Beni di Consumo e con Beni Strumentali e separatamente I servizi di conto lavoro, sia con che senza materie prime (separati tra di loro). 
-- **Generato**: crea il file con struttura XML-SM
-- **Da spedire**: trasmette il file a FBH e da qui all'ufficio tributario di S.M.
-- ***Respinto HUB_SM***: se il file viene scartato della'ufficio tributario di S.M. per errori formali rispetto alle specifiche del tracciato xml - da questo stato può essere riportato a *Non esaminato*
-- ***in HUB-SM***: per il tempo in cui il file rimane presso l'ufficio tributario di S.M.
-- ***Cancellato HUB SM***: a seguito di istanza di cancellazione attivata da apposito cambio stato
-- ***Scartato Non conforme HUB-SM***: se l'ufficio tributario di S.M. scarta il file per errori sostanziali relativi alla correttezza dei dati in fattura (L'Ufficio Tributario tramite elaborazioni automatizzate effettua l'acquisizione dati e la lavorazione delle fatture in distinte, quindi procede ad eventuali controlli (es. versamenti dell'IVA addebitata in fattura e da inoltrare all'Amministrazione Finanziaria italiana, ecc.), poi determina la prosecuzione dell'iter.); da qui può essere riportata nello stato *Ricevuta* per correzioni e nuovo invio	
-- ***Non consegnato allo SDI***: in caso di impossibilità di recapito 
-- ***In attesa di risposta***: il attesa del messaggio di risposta da parte dello Sdi italiano
-- **In SDI**: in transito presso il Sdi italiano che effettua i normali controlli previsti in Italia.
-- **Non conforme**: scartata per non aderenza ai controlli effettuati dallo Sdi italiano
-- **Mancata consegna**: impossibilità di recapito al destinatario
-- **Consegnata**: avvenuta consegna al destinatario
+- **Kontrolirano**: Izvršava se provjera računa nabave u Fluentisu kako bi se potvrdilo da su ispunjena potrebna polja; posebno za San Marino dodan je zahtjev da ista faktura može sadržavati isključivo sljedeće kombinacije vezane uz vrstu robe (tag TM): sirovine zajedno s potrošnim materijalom i osnovnim sredstvima, te zasebno usluge po ugovoru o radu, i to i sa i bez sirovina (odvojeno jedna od druge); 
+- **Generirano**: kreira datoteku sa XML-SM strukturom;  
+- **Za slanje**: prenosi datoteku na FBH, a od tamo dalje Poreznom uredu San Marina;
+- ***Odbijeno HUB_SM***: ukoliko Ured za poreze S.M.-a odbaci datoteku zbog formalnih pogrešaka u skladu sa specifikacijama XML formata, može li se iz tog statusa ponovno vratiti u status *Nije pregledano*.  
+- ***U HUB-SM***: za vrijeme dok se datoteka nalazi u Poreznom uredu S.M.-a.
+- ***Obrisano u HUB-u S.M.-a***: na temelju zahtjeva za brisanje pokrenutog odgovarajućom promjenom statusa.
+- ***Odbijeno – Nesukladno u HUB-u S.M.-a***: ako Porezni ured S.M.-a odbaci datoteku zbog bitnih pogrešaka vezanih uz ispravnost podataka na računu (Porezni ured putem automatiziranih obrada provodi preuzimanje podataka i obradu računa u skupinama, nakon čega provodi eventualne provjere – npr. uplate PDV-a iskazanog na računu koje se prosljeđuju talijanskoj Financijskoj upravi, itd.), zatim odlučuje o nastavku postupka; iz tog statusa datoteka se može ponovno postaviti u stanje *Zaprimljeno* radi ispravka i ponovnog slanja.    
+- ***Nije dostavljeno SDI-u***: u slučaju nemogućnosti dostave
+- ***U očekivanju odgovora***: u iščekivanju poruke s odgovorom od talijanskog SDI sustava  
+- **U SDI-u**: u prijenosu kod talijanskog SDI sustava koji provodi uobičajene kontrole predviđene u Italiji.
+- **Nesukladno**: odbijeno zbog neusklađenosti s kontrolama koje provodi talijanski SDI sustav.
+- **Nedostavljena**: nemogućnost dostave primatelju. 
+- **Dostavljeno**: dostava primatelju je izvršena. 
 
 <details>
 
-  <summary>Dettagli passaggi di stato (specifici per SM): (Click to expand)</summary>
+  <summary>Detalji promjena statusa (specifični za SM): (Click to expand)</summary>
 
-Da Spedire --> Respinto da HUB - SM (automatico)
+Za slanje --> Odbijeno od HUB-a S.M. (automatski)
 
-Da Spedire --> Trasferimento all' HUB - SM (automatico)
+Za poslati --> Prijenos u HUB - SM (automatski) 
 
-Respinto da HUB - SM --> Riporta in non esaminata (manuale)
+Odbijeno od strane HUB - SM --> Vrati u neispitano (ručno)
 
-Trasferimento all' HUB - SM --> Da cancellare dall’HUB-SM (manuale) --> Da questo stato sarà automaticamente resettato a Non esaminato (oppure ad altri stati a seconda della risposta da parte di HUB-SM)
-
----
-
-Trasferimento all’HUB-SM --> Scartato dall’HUB-SM (automatico)
-
-Trasferimento all’HUB-SM --> Non acquisito dall’HUB-SM (automatico) --> Passa a Scartato dall’HUB-SM (automatico) oppure Accettato dall’HUB-SM (automatico)
-
-Trasferimento all’HUB-SM --> Accettato dall’HUB-SM (automatico)
+Prijenos u HUB - SM --> Za brisanje iz HUB - SM (ručno) --> Iz ovog stanja će automatski biti resetiran na Neispitano (ili na druge statusne oznake, ovisno o odgovoru od HUB - SM) 
 
 ---
 
-Scartato dall'Hub SM Non conforme  --> Riporta in non esaminata (manuale)
+Prijenos u HUB-SM --> Odbijeno od strane HUB - SM (automatski) 
 
-Accettato dall’HUB-SM --> In Sdi (automatico)
+Prijenos u HUB-SM --> Nije preuzeto od strane HUB-SM (automatski) --> Prelazi u Odbijeno od strane HUB-SM  (automatski) ili Prihvaćeno od strane HUB-SM (automatski)
 
-Accettato dall’HUB-SM --> Non trasmesso allo Sdi (automatico)
+Prijenos u HUB-SM --> Prihvaćeno od strane HUB-SM (automatski)
 
-Accettato dall’HUB-SM --> Attesa di risposta dallo Sdi (automatico)
+---
+
+Odbijeno od strane Hub SM Nesukladno --> Vrati u neispitano (ručno) 
+
+Prihvaćeno od strane HUB-SM --> U SDI (automatski)
+
+Prihvaćeno od strane HUB-SM --> Nije poslano u SDI (automatski) 
+
+Prihvaćeno od strane HUB-SM --> Čeka se odgovor od SDI-ja (automatski) 
 
 
 </details>
 
-:::note Nota
-Qualora la fattura rientri nel perimetro degli accordi di interscambio, l'HUB-SM trasmette a SdI il file FE e si prosegue con i passi successivi, altrimenti l'iter si conclude.
+:::note Napomena
+Ako je račun unutar okvira sporazuma o razmjeni, HUB-SM šalje FE datoteku prema SDI-u i postupak se nastavlja sljedećim koracima. U suprotnom, postupak se završava. 
 
-SdI notifica all'HUB-SM il recepimento o lo scarto del file FE. In caso di recepimento, il Cessionario/Committente soggetto italiano ha nelle sue disponibilità la fattura elettronica sul 
-portale italiano "Fatture e corrispettivi" oppure nel "cassetto fiscale". Se la fattura contiene addebito IVA, allora giace in uno stato "sospeso" (in attesa di vidimazione), altrimenti si 
-considera perfezionata dal punto di vista del cessionario.
+SDI obavještava HUB-SM o zaprimanju ili odbacivanju FE datoteke. U slučaju zaprimanja, kupac/naručitelj koji je talijanski porezni obveznik ima elektronički račun na raspolaganju putem talijanskog portala "Računi i potvrde" ili u "poreskoj ladici". Ako račun sadrži naplatu PDV-a, tada se nalazi u stanju "na čekanju" (u očekivanju ovjere), inače se smatra dovršenim s aspekta kupca.  
 
-HUB-SM notifica all'OESM l'esito pervenuto da SdI (ricevuta/scarto)
+HUB-SM obavještava OESM o ishodu zaprimljenom od SDI-a (potvrda/očitovanje o odbacivanju).
 :::
 
-il Cedente/Prestatore OESM produce la fattura elettronica e la trasmette all'HUB-SM (sia nella casistica di addebito IVA - dove l'imposta sarà poi inviata dall'Ufficio tributario SM all'Agenzia Entrate italiana, sia senza addebito IVA).
+Izdavatelj/davatelj usluga OESM izrađuje elektronički račun i šalje ga HUB-SM-u (bilo u slučaju zaračunavanja PDV-a – gdje će porez naknadno proslijediti Porezni ured San Marina talijanskoj Agenziji za prihode, bilo bez zaračunavanja PDV-a). 
 
-durante la fase di trasmissione avvengono:
-- il calcolo del codice hash corrispondente al file, il valore dell'hash viene memorizzato nell'HUB-SM e restituito al trasmittente.
-- il controllo sintattico del file FE: se si riscontrano errori, questi sono immediatamente segnalati al trasmittente e il file FE viene subito respinto.
+Tijekom faze prijenosa događaju se sljedeće radnje:
+- izračunava se hash kod koji odgovara datoteci; vrijednost hasha pohranjuje se u HUB-SM i vraća pošiljatelju.   
+- provodi se sintaktička provjera FE datoteke: ako se otkriju pogreške, one se odmah prijavljuju pošiljatelju i FE datoteka se odmah odbacuje.
+  
+Nakon što je poslana HUB-SM-u, svaka FE datoteka ostaje pohranjena u privremenom području do izvršenja automatske obrade koja potvrđuje, preuzima i obrađuje podatke.
+Tijekom tog vremenskog razdoblja, pošiljatelj može izbrisati ili zamijeniti datoteke koje su poslane, ali još nisu obrađene.  
 
-Una volta trasmesso all'HUB-SM, ciascun file FE rimane depositato in un'area temporanea fino all'esecuzione dell'elaborazione automatica che convalida, acquisisce e
-lavora i dati; entro tale lasso di tempo il trasmittente può cancellare o sostituire i file trasmessi e ancora non elaborati.
+Računi koji ne sadrže PDV prolaze kroz kraći postupak: račun koji je uspješno zaprimljen od strane HUB-SM uključuje se u Sastavnica materijala Export i šalje se talijanskom SDI-u.
+Pozitivna povratna informacija od strane SDI-ja pokreće, od strane Poreznog ureda, registraciju zahtjeva za povrat na Porezni račun, čime se stvara dostupnost poreznog kredita. 
 
-Le fatture che non contengono IVA seguono un iter più corto, la fattura acquisita con successo dall'HUB SM viene inserita in una Distinta Export ed inviata allo SDI italiano. La comunicazione di un esito positivo da parte dello SdI innesca da parte dell'Ufficio Tributario la registrazione delle Richieste di Rimborso sul Conto Fiscale, creando così la disponibilità del credito.
+Isporuke s PDV-om, nakon prve formalne provjere, unose se u izvozne liste, ali ostaju na čekanju dok OESM ne izvrši uplatu PDV-a na tekući račun Porezne uprave San Marina i ne preda papirnatu potvrdu o uplati Poreznoj upravi.
+Tek tada će datoteke pripadajućih računa biti proslijeđene talijanskom SDI-u.
 
-Le cessioni con IVA, dopo il promo controllo formale, sono inserite in Distinte Export ma rimangono in attesa che l'OESM effettui il versamento in banca sul conto corrente dell'Ufficio tributario di S.M. dell'IVA e presenti la quietanza cartacea del versamento all'Ufficio tributario. Solo a questo punto i file delle relative fatture saranno inoltrati allo Sdi italiano.
+Za račune s obračunatim PDV-om, pozitivan ishod koji stigne od SDI-a pokreće, sa strane Porezne uprave, registraciju zahtjeva za povrat na Porezni račun, čime se stvara raspoloživost poreznog kredita.
+U tom trenutku, talijanski kupac moći će pregledati račune s obračunatim PDV-om, a koji još nisu konačno obrađeni, putem portala "Fatture e corrispettivi", uz prikaz sljedeće dvije faze obrade:
 
-Per le fatture con addebito dell'IVA, la comunicazione di un esito positivo da parte del SdI innesca dal lato dell'Ufficio Tributario la registrazione delle Richieste di Rimborso sul Conto Fiscale, creando così la disponibilità del credito. A questo punto, l'acquirente Italiano potrà consultare le fatture con addebito dell'IVA e non ancora perfezionate sul portale "Fatture e corrispettivi" " con l'evidenza dei seguenti due stadi di elaborazione:
+- Račun još nije ovjeren od strane talijanske Porezne uprave (Provincijska direkcija PU), te je stoga valjan samo u komercijalne svrhe;
+- Račun je ovjeren od strane talijanske Porezne uprave (Provincijska direkcija PU), te je stoga valjan za odbitak PDV-a od strane talijanskog kupca.
 
-- Fattura non ancora vidimata da Agenzia delle Entrate (Direzione Provinciale PU), quindi valida ai soli fini commerciali;
-- Fattura vidimata da Agenzia delle Entrate (Direzione Provinciale PU), quindi valida ai fini della detrazione dell'IVA da parte dell'acquirente italiano
-
-Per ciascun file FE inoltrato dall'HUB-SM al SdI, quest'ultimo sistema produce e restituisce all'HUB SM un file XML di ricevuta, attestante la consegna o la mancata consegna o lo scarto.
+Za svaku FE datoteku koju HUB-SM proslijedi SDI-u, taj sustav generira i vraća HUB-SM-u XML datoteku potvrde, kojom se potvrđuje dostava, nedostava ili odbacivanje. 
 
 
-## GESTIONE IMPOSTA MONOFASE A IMPORTO FISSO
+## UPRAVLJANJE JEDNOFAZNIM POREZOM U FIKSNOM IZNOSU 
 
 :::tip Info
-Il regime fiscale di San Marino prevede attualmente, in generale, un'imposta monofase al 17% sugli acquisti / importazioni di beni generici oppure altre aliquote in base al tipo di bene, come ad esempio i carburanti ecc...
+Porezni sustav San Marina trenutno predviđa, općenito, jednofazni porez od 17% na kupnju / uvoz opće robe, odnosno druge stope ovisno o vrsti robe, poput goriva itd...
 
-Per i soli servizi di agenzia è prevista l'imposta monofase in misura fissa di 2€.
-Gli altri tipi di servizi sono esenti dall'imposta monofase ma la fattura d'acquisto (come meglio spiegato di seguito) viene in ogni caso lavorata dalle aziende residenti a San Marino per inviare all'ufficio tributario il file con l'integrazione dell'acquisto, seppur con codice iva esente.
+Samo za posredničke usluge (agencijske usluge) predviđen je jednofazni porez u fiksnom iznosu od 2 €.
+Ostale vrste usluga izuzete su od jednofaznog poreza, ali ulazni račun (kako će biti detaljnije objašnjeno u nastavku) svejedno obrađuju poduzeća sa sjedištem u San Marinu kako bi poslali Poreznoj upravi datoteku s integracijom kupnje – iako s oznakom oslobođenja od PDV-a.
 
-Per quanto riguarda le vendite di  BENI verso l'Italia l'applicazione dell'iva (italiana) è facoltativa e si applica su richiesta del cliente, altrimenti vengono fatturati con il codice iva di esenzione.
+Što se tiče prodaje robe prema Italiji, primjena talijanskog PDV-a je neobavezna i primjenjuje se na zahtjev kupca, u suprotnom se fakturira s šifrom oslobođenja od PDV-a.
 
-La vendita di servizi è sempre esente.
+Prodaja usluga je uvijek oslobođena PDV-a.
 :::
 
-Per gli acquisti di servizi di agenzia (provvigioni), la normativa di S.Marino prevede l’imposizione di un’imposta monofase fissa di 2€ per ogni documento: in sostanza, qualsiasi sia la base imponibile dell’imposta, l’importo è fissato in questo importo fisso.
+Za kupnju agencijskih usluga (provizije), zakonodavstvo San Marina predviđa jednofazni porez u fiksnom iznosu od 2 € po dokumentu: u suštini, bez obzira na poreznu osnovicu, iznos poreza je uvijek fiksan i iznosi 2 €.
 
-### CONFIGURAZIONE IN TABELLA ALIQUOTE IVA
-L’imposta monofase è sostanzialmente l’aliquota iva applicata ai vari articoli, per la localizzazione di S.Marino abbiamo la visibilità del campo **Valore fisso**:
+### KONFIGURACIJA U TABLICI STOPOVA PDV-a
+Jednofazni porez se u biti smatra PDV stopom koja se primjenjuje na različite artikle. Za lokalizaciju San Marina, dostupan je prikaz polja **Fiksna vrijednost**:
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase1.png)
 
-Quando si imposta un valore in questo campo, il campo percentuale sarà resettato a zero e viceversa.
+Kada se u ovo polje unese vrijednost, polje za postotak automatski se postavlja na nulu, i obrnuto.
 
-### USO NEI DOCUMENTI DEL CICLO ACQUISTI/VENDITE, NEI COMPENSI, NELLE REGISTRAZIONI, NELLE CONTABILIZZAZIONI
+### PRIMJENA U DOKUMENTIMA NABAVNO/PRODAJNOG CIKLUSA, U NAKNADAMA, KNJIŽENJIMA I OBRAČUNIMA
 
-Es. fattura di vendita: **prima riga articolo** con imposta monofase fissa, viene valorizzata con l’importo relativo:
+Npr. prodajni račun: **prvi redak artikla** s fiksnim jednofaznim porezom bit će popunjen s odgovarajućim iznosom:
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase2.png)
 
-Tutte le altre righe articolo (o spese) con stessa aliquota fissa avranno invece imposta = 0:
+Svi ostali redci artikala (ili troškova) s istom fiksnom stopom imat će porez = 0.:
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase3.png)
 
-Totale nei riepiloghi iva: indipendentemente dal totale imponibile per questa aliquota, l’importo dell’imposta sarà quello fissato in tabella
+Ukupno u PDV rekapitulacijama: bez obzira na ukupnu poreznu osnovicu za ovu stopu, iznos poreza bit će onaj fiksiran u tablici.
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase4.png)
 
-Risultato in contabilizzazione: solo una riga avrà l’importo fisso dei 2€
+Rezultat u knjiženju: samo jedan redak imat će fiksni iznos od 2 €
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase5.png)
 
-Nelle registrazioni manuali, il campo dell’imposta fissa sarà non modificabile: per essere precisi, sembra modificabile, ma una volta usciti dal campo Fluentis annullerà la modifica per ripristinare l’importo precedente preso da tabella iva.
+U ručno unesenim knjiženjima, polje za fiksni porez neće biti moguće mijenjati: preciznije rečeno, polje se čini izmjenjivim, ali nakon izlaska iz njega, Fluentis će automatski poništiti izmjenu i vratiti prethodni iznos preuzet iz tablice PDV-a. 
 
-### INTEGRAZIONE FATTURA D’IMPORTAZIONE, DETTAGLI PER L’IMPOSTA MONOFASE FISSA
-Quando viene ricevuta una fattura elettronica dall’Italia, dal file Sdi si crea le fatture di acquisto, si assegnano alle righe i fatturati acquisti e le varie aliquote iva del caso, per fare poi l’invio telematico al ufficio tributario di SM dell’integrazione fatta e versare la relativa imposta.
+### INTEGRACIJA UVOZNOG RAČUNA – DETALJI ZA FIKSNI JEDNOFAZNI POREZ 
+Kada se zaprimi elektronički račun iz Italije, iz SDI datoteke se generira ulazni račun; stavkama se dodjeljuju nabavne vrijednosti i odgovarajuće PDV stope, kako bi se zatim telematski poslala integracija Poreznoj upravi San Marina i platila odgovarajuća porezna obveza.
 
 
-:::note Nota
-Il flag per identificare l’imposta fissa dei 2€ denominato ‘S.Marino’ utilizzato anche ai fini della creazione del file di integrazione è da considerare obsoleto inquanto attualmente viene letto direttamente il nuovo campo specifico, che viene gestito correttamente nel documento e nella contabilizzazione.
-
+:::note Napomena 
+Flag za identifikaciju fiksnog poreza od 2 €, nazvana ‘S.Marino’, koja se prethodno koristila za kreiranje integracijske datoteke, više nije u upotrebi, jer se sada izravno koristi novo posebno polje, koje se pravilno obrađuje u dokumentima i knjiženjima.
 :::

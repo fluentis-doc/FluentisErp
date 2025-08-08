@@ -1,29 +1,26 @@
 ---
-title: Contabilizzazione ammortamenti
+title: Knjiženje amortizacije 
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Ammortamento](/docs/finance-area/fixed-assets/accounting/depreciation) **
+**[Amortizacija](/docs/finance-area/fixed-assets/accounting/depreciation)**
 
-** [Ripristina](/docs/finance-area/fixed-assets/accounting/restore) **
-
- 
+**[Reset](/docs/finance-area/fixed-assets/accounting/restore)**
 
  
+Ova procedura ažurira kartice sredstsva/imovine (dodavanjem flaga Knjiženo i ažuriranjem vrijednosti akumulirane amortizacije i neto knjigovodstvene vrijednosti) i bilježi povezana kretanja amortizacije u računovodstvu
 
-La procedura di contabilizzazione andrà ad aggiornare le schede cespiti ( aggiungendo il flag Contabilizzato ed aggiornando pertanto il valore del fondo ammortamento e del valore netto contabile) ed a rilevare in contabilità i relativi movimenti d'ammortamento.
+Da bi postupak bio uspješan potrebno je: 
 
-Affinché la procedura possa andare a buon fine è necessario che:
+- Postaviti parametre u **[Parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters)** za referentnu godinu;  
 
-- Siano stati creati i ** [Parametri contabilità generale](/docs/configurations/parameters/finance/accounting-parameters) ** per l'anno di riferimento;
+- Postaviti parametre u **[Parametri osnovnih sredstava](/docs/configurations/parameters/finance/fixed-assets-parameters)**;
 
-- Siano stati creati i ** [Parametri cespiti](/docs/configurations/parameters/finance/fixed-assets-parameters) **;
+- Unutar tablice  **[Kategorija osnovnog sredstva](/docs/configurations/tables/finance/fixed-asset-category)** definirati konta koja se odnose na amortizaciju (za svaku kategoriju);
 
-- All'interno della tabella ** [Categorie Cespiti](/docs/configurations/tables/finance/fixed-asset-category) ** siano stati definiti (per ogni categoria) i conti relativi alla quota di ammortamento e del fondo ammortamento;
-
-- Sia definita la causale contabile che si desidera utilizzare per la contabilizzazione ammortamenti.
+- Definirati predložak knjiženja koji se koristi za obračun amortizacije. 
 
  
 

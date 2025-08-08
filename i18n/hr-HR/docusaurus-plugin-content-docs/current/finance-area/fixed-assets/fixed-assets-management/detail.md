@@ -1,59 +1,56 @@
 ---
-title: Dettaglio
+title: Kartica Detalj
 sidebar_position: 1
 ---
 
-**Stato cespite**: viene gestito automaticamente sulla base delle operazioni collegate al cespite e non va forzato. In caso di cespite pregresso inserendo anche il fondo ammortamento lo stato passerà a Parzialmente/Totalmente ammortizzato. Per il corretto inserimento di un cespite pregresso vedere  [**l'allegato all'articolo sulla registrazione contabile di un cespite**.](/docs/finance-area/ledger-records/records/ledger-record) 
+**Status osnovnog sredstva**: statusom se upravlja automatski na temelju operacija povezanih s imovinom/sredstvom i ne bi se trebalo ručno mijenjati. U slučaju prethodnog/prenesenog sredstva, koje također unosi akumuliranu amortizaciju, status će se promijeniti u Djelomično/Potpuno amortizirano. Za točan unos prethodnog/prenesenog sredstva  [**pogledati članak o knjigovodstvenom evidentiranju sredstva**.](/docs/finance-area/ledger-records/records/ledger-record) 
 
 
-
-La **data d'inizio attività**, proposta come data odierna, è la data alla quale il cespite è effettivamente entrato in uso nella società: solo a partire da questa data sarà possibile ammortizzare il cespite. La **data di fine attività** normalmente non va impostata se non in casi particolari per bloccare il calcolo dell'ammortamento e non visualizzare più il cespite a libro cespiti: nella gestione normale, infatti, al completamento dell'ammortamento residuo il cespite non sarà comunque più ammortizzato. Le **date** relative alle **garanzie** hanno una funzione informativa non collegata ad alcun automatismo.
-
+**Početak aktivnosti**, predložen je današnji datum, a predstavlja datum na koji je poduzeće stvarno počelo koristiti sredstvo. Tek od tog datuma bit će moguće amortizirati sredstvo. **Kraj aktivnosti** obično ne bi trebalo biti postavljeno, osim u posebnim slučajevima da se blokira izračun amortizacije i da se imovina više ne prikazuje u knjizi imovine. U normalnom upravljanju imovinom/sredstvom, zapravo, nakon završetka preostale amortizacije, imovina/sredstvo više neće biti prikazano kao amortizirano. **Datumi** koji se odnose na **jamstva/garanciju** imaju informativnu funkciju koja nije povezana ni s kakvim automatskim mehanizmom.  
 
 
-Nel campo **Cespite** viene riportato automaticamente il sottoconto patrimoniale di riferimento per la categoria cespite selezionata; il successivo codice del fornitore non viene gestito automaticamente dal programma, in quanto i fornitori e i clienti di riferimento delle varie operazioni saranno indicati specificatamente all'interno di queste. Il sottoconto industriale fa riferimento in dettaglio del piano dei conti industriale, normalmente non utilizzato.
+Podkonto **osnovnog sredstva** za odabranu kategoriju imovine/sredstva automatski se prikazuje u polju Osnovno sredstvo; Šifrom dobavljača osnovnog sredstva program ne upravlja automatski, jer će dobavljači i referentni kupci različitih operacija biti posebno naznačeni unutar njih. 
 
-Il campo **Ubicazione** richiama la tabella omonima e serve per memorizzare dove si trova fisicamente il cespite (ad es. una sede aziendale) mentre **Matricola** è un campo testuale libero, dove annotare l'ubicazione e la matricola del cespite; il codice **dipendente** può consentire di memorizzare il soggetto che ha in uso il cespite.
+Polje **Lokacija** poziva istoimenu tablicu i koristi se za pohranjivanje mjesta na kojem se imovina fizički nalazi (npr. sjedište tvrtke), dok je **serijski broj** slobodno tekstualno polje, gdje se može zabilježiti lokacija i serijski broj imovine/sredstva; šifra **zaposlenika** može omogućiti unos osobu koja koristi sredstvo.
 
-A seconda delle impostazioni dei parametri (Configurazione > Utilità > Parametri Cespiti), può essere visibile inoltre una **percentuale di ammortamento** civile 'personalizzata' per il singolo cespite, da utilizzare in via prioritaria rispetto a quella della categoria d'appartenenza come anche l'unità di misura per le quantità valorizzate nella scheda cespite.
+Ovisno o postavkama parametara (Konfiguracija > Parametri > Administracija > Parametri osnovnih sredstava), 'prilagođeni' **postotak amortizacije** također može biti vidljiv za pojedinačnu imovinu, a koji će se koristiti s prioritetom u odnosu na kategoriju kojoj pripada, kao i jedinicu mjere za količine. 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image01.png)
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image02.png)
 
  
+U polju **Vrste odbitaka**, pojedinačno sredstvo može se povezati s prioritetnim tipom poreznog odbitka amortizacije. Padajući izbornik odnosi se na specifičnu tablicu u kojoj se može šifrirati i opis mogućih vrsta odbitka, a u donjoj mreži relativni postotak odbitka koji će se koristiti tijekom izračuna.  
 
-Nel campo **Tipi Deducibilità** si può associare al singolo cespite il suo tipo prioritario di deducibilità fiscale degli ammortamenti. La combo box rinvia alla specifica tabella dove codificare il codice e descrizione dei possibili tipi di deducibilità e nella griglia inferiore la relativa percentuale di deducibilità che sarà utilizzata, durante il calcolo della quota di ammortamento, per calcolare la quota deducibile fiscalmente. I campi data inizio / data fine permettono di gestire eventuali cambiamenti di aliquota tenendo traccia dei precedenti.
-
-La sezione dei **Centri di costo**: consente di attribuire una percentuale di valorizzazione automatica degli ammortamenti ai vari centri di costo definiti nella società.
-Per abilitarne la lettura occorre attivare, all'interno della form Parametri > Amministrazione > Parametri cespiti, il **flag Abilitazione centro contabilità**
+Odjeljak **Trošak centri**: omogućuje dodjeljivanje automatskog postotka vrednovanja amortizacije različitim centrima troška definiranim u tvrtki. Za omogućavanje ovog odjeljka potrebno je aktivirati **flag Omogućen računovodstveni centar** u obrascu Parametri > Administracija > Parametri osnovnih sredstava.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image03.png)
 
  
 
-Sono poi presenti una serie di check box visibili aprendo l'Expander Extra Data: 
+Nakon toga postoji još niz opcija vidljivih otvaranjem proširenja Extra Data:
+
+
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image04.png)
 
  
 
-il default del cespite **in uso** (se il flag non è presente, il cespite non potrà essere ammortizzato), lo stato di cespite **usato** (se il flag è impostato, l'ammortamento anticipato sarà applicato solo il primo anno di acquisto e il flag Ammortamento primo anno (presente nella tabella delle ** [Categorie cespiti](/docs/configurations/tables/finance/fixed-asset-category) **) non avrà effetto, per cui le percentuali di applicazione  degli ammortamenti del primo anno non saranno dimezzate); 
+Zadana je vrijednost osnovnih sredstava **u uporabi** (se il flag non è presente, il cespite non potrà essere ammortizzato), lo stato di cespite **usato**  (ako flag nije prisutan, imovina se ne može amortizirati), status iskorištenog osnovnog sredstva ako je oznaka postavljena, amortizacija će se primijeniti samo za prvu godinu kupnje i oznaka Prva godina amortizacije (prisutna u tablici **[Kategorije osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category)**) neće imati učinka, stoga se postoci primjene amortizacije prve godine neće prepoloviti.; 
 
-**In manutenzione** significa che il cespite è da conteggiare nella stampa manutenzioni; 
+**U održavanju** znači da se sredstvo treba ubrojiti u ispis održavanja; 
 
-**Cessato** è un flag attivo solo per categorie cespiti immateriali e serve ad escluderne la stampa a libro cespiti nel caso in cui il valore patrimoniale sia stato stornato dal bilancio (ammortamento diretto in conto e non a fondo); 
+**Posuđen** flag je aktivan samo za kategorije nematerijalne imovine i služi za isključivanje njihovog ispisa u pregledu osnovnih sredstava u slučaju da je vrijednost imovine stornirana iz bilance; 
 
-**Amm**. **Totale** consente di attribuire al cespite l'ammortamento al 100% direttamente al primo anno: al salvataggio del cespite ERP sarà effettuata una verifica della correttezza di questa impostazione in relazione al limite impostato in categoria cespite; sarà visibile lo stato di cespite stampato o meno, che indicherà la non modificabilità dei riferimenti di testata del cespite nel caso in cui questo sia già stato inserito in una stampa definitiva del libro cespiti ammortizzabili;
+**Ukupna amortizacija** omogućuje da se imovini pripiše 100% amortizacije izravno u prvoj godini. Kada je sredstvo/imovina spremljena, ERP će provjeriti ispravnost ove postavke u odnosu na ograničenje postavljeno u kategoriji imovine. Bit će vidljiv status imovine ispisano ili ne, što će značiti da se reference zaglavlja imovine/sredstva ne mogu mijenjati ako su one već umetnute u konačan ispis pregleda osnovnih sredstava;
 
-Per concludere, i flag **Ricavometro** e **Studi di settore** servono per identificare i cespiti da considerare per questi adempimenti fiscali.
+Flag **Prihod** i **Studija sektora** koristi se za identifikaciju imovine koja se uzima u obzir za posebne porezne obveze.
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Salva il cespite, obbligatorio per assegnare un numero al cespite e attivare i vari tab. |
-|  [Documenti](/docs/guide/common/operations-with-data/document-manager)  | Gestione dell'archiviazione documentale associata alla maschera in uso. |
+| Spremi | Spremanje sredstva/imovine, obavezno dodijeliti broj sredstvu i aktivirati različite opcije. |
+|  [Dokumenti](/docs/guide/common/operations-with-data/document-manager)  | Upravljanje arhiviranjem dokumenata vezanih uz obrazac u uporabi. |
 
 
 
