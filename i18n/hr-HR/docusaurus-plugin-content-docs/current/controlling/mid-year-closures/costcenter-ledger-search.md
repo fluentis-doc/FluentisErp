@@ -3,6 +3,6 @@ title: Visualizzazione dei movimenti dei centri nelle chiusure
 sidebar_position: 7
 ---
 
-Questa maschera è dedicata alla visualizzazione dei dati presenti nell'analitica delle registrazioni create all'interno di una chiusura conti infrannuale.
+Ova forma namijenjena je prikazu podataka iz analitike knjiženja kreiranih unutar privrememog zatvaranja konta.
 
-Una volta impostata la chiusura per la quale visualizzare i dati, si potranno quindi chiedere i movimenti dei centri filtrandoli per conto/sottoconto o per codice di [***Centro di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
+Nakon što se odabere zatvaranje za koje se žele prikazati podaci, moguće je dohvatiti kretanja centara filtrirajući ih prema kontu/podkontu ili prema šifri [***centra troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
