@@ -1,14 +1,16 @@
 ---
-title: Valorizzazione area acquisti e vendite
+title: Valorizacija prodaje i nabave
 sidebar_position: 8
 ---
 
-Siamo all'interno del modulo Chiusure infrannuali e selezioniamo la procedura ‘Valorizzazione area acquisti/vendite': con questa procedura è possibile assegnare alla chiusura infrannuale i documenti degli acquisti/vendite non ancora passati alla contabilità generale. Il riferimento è alle fatture da ricevere/emettere, che qui saranno valorizzate direttamente come se il documento fosse già stato ricevuto dal fornitore o emesso al cliente.
+Unutar modula Privremenih zatvaranja odabire se postupak "Valorizacija prodaje i nabave". Ovaj postupak omogućuje pridruživanje dokumenata nabave/prodaje privremenom zatvaranju, ako još nisu proknjiženi u glavnoj knjizi. Odnosi se na račune koji
+trebaju biti zaprimljeni/izdani te će ih ovaj postupak vrednovati kao da su dokumenti već zaprimljeni od dobavljača ili izdani kupcu.
 
-All'apertura della maschera è necessario indicare, alla sua base, su quale chiusura infrannuale si vuole lavorare. Nelle schede superiori saranno visualizzati, per l'area acquisti, i DDT di acquisto non valorizzate in fattura, le fatture di acquisto non contabilizzate, i ricevimenti merce a loro volta non valorizzati in fattura, i rientri del conto lavoro non ancora fatturati; per l'area vendite i DDT non ancora fatturate e le fatture di vendita non ancora contabilizzate (tutti questi non ancora assegnati alla chiusura selezionata).
+Prilikom otvaranja obrasca, potrebno je na dnu naznačiti na kojem privremenom zatvaranju će se raditi. U gornjim karticama prikazivat će se za područje kupnje(nabave): otpremnice (DDT) nabave koje nisu vrednovane u računu, neproknjiženi računi za nabavu, zaprimanja robe koja još nisu vrednovana u računu, povrati iz obrade po nalogu koji još nisu fakturirani. Za područje prodaje: otpremnice (DDT) koje još nisu fakturirane, računi prodaje koji još nisu proknjiženi. Svi navedeni dokumenti još nisu pridruženi odabranom privremenom zatvaranju.
 
-Una volta filtrati e selezionati i dati di interesse, si andrà a premere il pulsante di contabilizzazione (nel caso dei DDT e del ricevimento merci sarà obbligatorio indicare la causale di fattura di acquisto/vendita da utilizzare). La procedura andrà a valorizzare la fattura o il documento come se questo fosse già il documento definitivo (in sostanza, eseguirà la registrazione al fornitore intestatario del documento in acquisto o al cliente per le vendite; per i ddt di acquisto, inoltre, a meno che non sia presente una causale contabile impostata prioritaria tramite l'apposito flag, che ne gestisca solo il costo rispetto al conto fatture da ricevere): chiaramente, è necessario che nel documento siano presenti tutti gli elementi necessari all'operazione (tipicamente devono esserci tutti i fatturati acquisti/vendite per poter registrare l'operazione).
+Nakon filtriranja i odabira relevantnih podataka, pritisne se gumb za valorizaciju. Kod DDT-a i zaprimanja robe obavezno je naznačiti predložak knjiženja računa nabave/prodaje koji će se koristiti. Postupak zatim vrednuje račun ili dokument kao da je već konačan: generira knjiženje prema dobavljaču kojem je dokument namijenjen (za nabavu) ili prema kupcu (za prodaju),
+kod dokumenta nabave, ako nije unaprijed postavljen prioritetni predložak (putem posebne oznake), postupak će upravljati samo troškom u odnosu na konto računa koje treba primiti. Za ispravnu obradu potrebno je da dokument sadrži sve potrebne elemente, odnosno sve fakturirane nabave/prodaje.
 
-## Precedenti
+## Prethodni
 
-In questa è possibile annullare l'operazione eseguita nella tab precedente.
+Postoji mogućnost poništavanja operacije izvršene u prethodnoj kartici.
