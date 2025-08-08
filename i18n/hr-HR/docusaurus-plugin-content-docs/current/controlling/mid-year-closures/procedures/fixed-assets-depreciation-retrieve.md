@@ -1,28 +1,29 @@
 ---
-title: Ripresa ammortamento cespiti
+title: Povrat amortizacije osnovnog sredstva
 sidebar_position: 3
 ---
 
-All'interno del modulo chiusure infrannuali, dopo aver creato una chiusura infrannuale è possibile valorizzare automaticamente gli ammortamenti di competenza del periodo economico impostato in essa.
+Unutar modula za privremena zatvaranja, nakon što je stvoreno privremeno zatvaranje, moguće je automatski vrednovati amortizaciju koja pripada ekonomskom razdoblju postavljenom unutar zatvaranja.
 
-## Ammortamento
+## Amortizacija
 
-All'apertura della maschera, in basso saranno da impostare obbligatoriamente:
+Pri otvaranju obrasca, u donjem dijelu obavezno je postaviti sljedeće parametre:
 
-- la **Chiusura di riferimento** (dalla quale viene letto il range di date competenza economica);
+- Referentno **zatvaranje** (iz kojeg se čita raspon datuma ekonomske pripadnosti);
 
-- la **Data di registrazione** del movimento nelle registrazioni extracontabili;
+- **Datum knjiženja** zapisa unutar izvanknjigovodstvenih knjiženja;
 
-- la **Causale** da utilizzare (anche qui è necessario che la causale preveda la gestione dei cdc/job-orders per valorizzarli nella registrazione).
+- **Tip** temeljnice  koji će se koristiti (ovdje je također potrebno da predložak omogućuje upravljanje troškovnim centrima/projektima kako bi se mogli vrednovati unutar knjiženja).
 
-Il flag **Singola registrazione** per creare un'unica registrazione extracontabile con all'interno i vari sottoconti di ammortamento/fondo.
+Flag **Pojedinačno zapisivanje** omogućuje stvaranje jednog izvanknjigovodstvenog knjiženja unutar koje će biti sadržani različita podkonta amortizacije/fonda.
 
-È interessante segnalare che all'interno dei filtri di ricerca superiori è presente un flag di ricerca dei cespiti appartenenti alle categorie 'incrementali' o meno.
+Važno je napomenuti da se unutar gornjih filtera za pretraživanje nalazi flag za filtriranje osnovnih sredstva koje ili pripadaju "inkrementalnim" kategorijama ili ne pripadaju.
 
-Lanciando la ricerca dei dati, il programma valorizzerà la griglia della maschera con i dati degli ammortamenti da calcolare, proporzionati sul numero di giorni di competenza della chiusura. In particolare, per ogni cespite sarà verificato se l'ammortamento dell'anno (dall'anno impostato come parametro della chiusura) è già presente nella sua scheda e questo valore sarà riproporzionato sul numero di giorni: se questo non è presente, sarà simulato un calcolo (sulla base dei parametri della categoria di appartenenza e dei residui a disposizione) e poi questo valore sarà proporzionato sul numero di giorni di competenza.
+Pokretanjem pretrage podataka, program će popuniti tablicu obrasca podacima o amortizacijama koje treba izračunati,  proporcionalno broju dana ekonomske pripadnosti zatvaranja. Konkretno, za svako osnovno sredstvo provjerava se je li amortizacija za godinu (iz godine postavljene kao parametar zatvaranja) već unesena u karticu sredstva. Ako je unesena, vrijednost
+će se ponovno proporcionalno raspodijeliti na broj dana; ako nije unesena, provest će se simulacija izračuna (na temelju parametara kategorije kojoj pripada i preostalog iznosa za amortizaciju), a zatim će se i ta vrijednost proporcionalno raspodijeliti na broj dana ekonomske pripadnosti.
 
-Si ricorda di selezionare tutte le righe presenti nella griglia per valorizzarle nella chiusura.
+Potrebno je označiti sve redove u tablici kako bi se mogli vrednovati unutar zatvaranja.
 
-## Precedenti
+## Povrat
 
-In questa è possibile annullare l'operazione eseguita nella tab precedente, *Ammortamento*.
+U ovom dijelu moguće je poništiti prethodno izvršenu operaciju u kartici *Amortizacija*.
