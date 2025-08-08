@@ -1,17 +1,21 @@
 ---
-title: Scritture di integrazione
+title: Zapisi integracije
 sidebar_position: 5
 ---
 
-Siamo all'interno del modulo Chiusure Infrannuali e selezioniamo la procedura ‘Scritture di integrazione'. La maschera consente di gestire separatamente le operazioni di integrazione che si possono eseguire contestualmente alla creazione di una nuova chiusura infrannuale.
+Unutar modula Privremenih zatvaranja odabire se postupak "Zapisi integracije". Ovaj obrazac omogućuje zasebno upravljanje integracijskim operacijama koje se mogu provesti istovremeno s izradom novog privremenog zatvaranja.
 
-Per gestire la procedura è sufficiente impostare la chiusura di riferimento, la data di inizio competenza di riferimento, il tipo di calendario da utilizzare (si consiglia di lasciare il calendario solare) e la causale da utilizzare (che deve avere il flag cdc/cdp per gestire l'integrazione dei centri di costo/profitto).
+Za upravljanje postupkom potrebno je postaviti: referentno zatvaranje, datum početka ekonomske pripadnosti, vrstu kalendara koji će se koristiti (preporučuje se ostaviti godišnji kalendar), tip temeljnice (predložak mora imati oznaku cdc/cdp za upravljanje integracijom troškovnih/profitnih centara).
 
-Con questa procedura il sistema verificherà, a partire dalla 'Data di inizio competenza per le scritture di integrazione', le righe di costo/ricavo presenti in contabilità e non inserite nella chiusura (cioè registrazioni al di fuori dei range di date registrazione/competenza impostate al momento della ripresa dalla contabilità), per creare i ratei dei giorni all'interno del range di date competenza economica. I sottoconti di rateo da utilizzare saranno quelli inseriti nel piano dei conti in corrispondenza del singolo sottoconto di costo/ricavo oppure il sottoconto generico inserito nei parametri di contabilità dell'anno della chiusura infrannuale stessa. È presente un pulsante di ripristino/cancellazione dei movimenti già rilevati da questa procedura.
+Ovim postupkom sustav provjerava, počevši od "Datuma početka", retke troškova/prihoda prisutne u računovodstvu, ali ne i uključene u zatvaranje (odnosno knjiženja izvan raspona datuma knjiženja/pripadnosti postavljenih pri preuzimanju podataka iz
+računovodstva). Na temelju tih podataka kreiraju se vremenska razgraničenja za dane unutar raspona ekonomskih datuma. Pokonta vremenskih razgraničenja koji će se koristiti su oni navedeni u kontnom planu za pojedini podkonto troška/prihoda ili generički
+podkonto naveden u računovodstvenim parametrima godine privremenog zatvaranja. Dostupan je i gumb za vraćanje ili brisanje pokreta koje je ova procedura već evidentirala.
 
-Merita un'attenzione particolare la data di inizio da impostare, in quanto normalmente questa data sarà da impostare uguale alla data dell'ultima apertura conti rilevata in contabilità. Esemplifichiamo: se stiamo creando la chiusura del primo trimestre dell'esercizio, il range di date per la sezione economica sarà tipicamente 01/01/anno – 31/03/anno e se è presente la riapertura conti dell'esercizio precedente allora all'interno di questo range ci sarà direttamente il giroconto a costo/ricavo dei ratei rilevati nel bilancio 'anno-1' e quindi la data inizio per le integrazioni sarà da impostare come 01/01/anno in modo che  il gestionale verifichi se dopo del 31/03 ci sono righe con competenza nel trimestre precedente. Se la riapertura non è presente, invece, sarà necessario impostare la data inizio come 01/01/anno-1 per far si che **FluentisERP** verifichi se anche in tutto l'esercizio precedente vi sono costi/ricavi che cadono nel trimestre iniziale di questo esercizio.
+Posebnu pažnju treba obratiti na početni datum koji se postavlja, jer će taj datum obično biti isti kao datum posljednjeg otvaranja konta evidentiranog u računovodstvu. Primjer: Ako se kreira zatvaranje za prvo tromjesečje poslovne godine, raspon datuma za ekonomski dio obično će biti 01.01.godina – 31.03.godina. Ako je provedeno ponovno otvaranje konta iz prethodne poslovne godine, tada će se unutar ovog raspona automatski nalaziti prijenos troškova/prihoda vremenskih razgraničenja
+evidentiranih u bilanci godina-1. U tom slučaju, datum početka integracije treba postaviti na 01.01.godina, kako bi sustav provjerio postoje li nakon 31.03. stavke s pripadnošću prethodnom tromjesečju. Ako ponovno otvaranje nije provedeno, početni datum potrebno je postaviti na 01.01.godina-1, kako bi **FluentisERP** provjerio postoje li i u cijeloj prethodnoj poslovnoj
+godini troškovi/prihodi koji pripadaju početnom tromjesečju nove poslovne godine.
 
-:::tip Nota
-Attenzione alla gestione manuale in contabilità dei ratei/risconti nelle registrazioni di chiusura e poi riapertura dei conti, in quanto l'assegnazione delle date competenza di riga è fondamentale per la correttezza della ripresa nel controlling delle Scritture di integrazione o nell'elaborazione periodi del controlling.
-La gestione automatizzata che si effettua tramite le **Scritture di Assestamento** consente di evitare errori su questo delicato tema, errori che potrebbero causare doppie o errate rilevazioni nell'area Controlling.
+:::tip NAPOMENA
+Posebnu pažnju treba posvetiti ručnom upravljanju vremenskim razgraničenjima u računovodstvu, posebno pri zatvaranju i ponovnom otvaranju konta, jer je ispravno dodjeljivanje datuma pripadnosti stavkama ključno za točnost preuzimanja podataka u kontroling
+putem zapisa integracije ili tijekom obračuna razdoblja u kontrolingu. Automatizirano upravljanje putem **Zapisa usklađenja** omogućuje izbjegavanje pogrešaka u ovom osjetljivom procesu, čime se sprječavaju dvostruke ili netočne evidencije unutar područja kontrolinga.
 :::
