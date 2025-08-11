@@ -1,20 +1,20 @@
 ---
-title: Proprietà Cespiti
+title: Svojstva osnovnih sredstava 
 sidebar_position: 5
 ---
 
-Ultima scheda standard è quella relativa alle 'Proprietà del cespite': è possibile assegnare una lista di proprietà differenti al cespite in uso, con un'eventuale nota esplicativa aggiuntiva.
+Posljednja standardna kartica je ona koja se odnosi na 'Svojstva osnovnih sredstva’: moguće je dodijeliti popis različitih svojstava imovini/sredstvu u uporabi, s bilo kojim dodatnim objašnjenjem. 
 
-Vedere l'articolo sulla **[registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record)**.
-
-
+Pogledati članak o **[računovodstvenom evidentiranju](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 
 
-| Funzione | Significato |
+
+
+| Funkcija | Značenje |
 | --- | --- |
-| Nuova proprietà | Attiva il cursore per l'inserimento di una proprietà cespite. |
-| Cancella proprietà | Cancella la proprietà selezionata in griglia. |
+| Novo svojstvo | Umetanje svojstva sredstva. |
+| Otkaži | Briše odabrano svojstvo u pregledu. |
 
 
 

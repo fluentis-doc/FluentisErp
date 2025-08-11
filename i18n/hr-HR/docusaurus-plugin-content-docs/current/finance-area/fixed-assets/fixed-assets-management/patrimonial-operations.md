@@ -1,73 +1,70 @@
 ---
-title: Operazioni patrimoniali
+title: Kartica imovinske operacije
 sidebar_position: 2
 ---
 
-All'interno della presente scheda si inseriscono i dettagli delle varie operazioni a libro cespite.
+Unutar ove kartice unose se detalji raznih operacija u knjizi imovine.
 
-Rappresenta pertanto, assieme al tab Dettaglio, la sezione principale della scheda cespite.
+Stoga predstavlja, zajedno s tabom Detalji, glavnu sekciju kartice imovine.
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Nuova operazione | Attiva il cursore nella prima griglia delle operazioni patrimoniali. |
-| Cancella operazione | Cancella l'operazione selezionata nella griglia dell'operazione patrimoniale. |
-| Nuovo ammortamento | Attiva il cursore nella seconda griglia degli ammortamenti. |
-| Cancella ammortamento | Cancella l'ammortamento selezionato nella griglia ammortamenti. |
-| Esegue ammortamento automatico | Calcola l'ammortamento del cespite in uso per l'anno impostato nel campo immediatamente sopra la griglia ammortamenti. |
-| Inserimento cdc | Attiva il cursore nella griglia dei centri di costo. |
-| Cancella cdc | Cancella il movimento del centro di costo selezionato nella griglia. |
-| Calcolo centri di costo | Esegue il calcolo dei centri di costo per il valore della riga ammortamento selezionata. |
-| Inserimento commesse | Attiva il cursore nella griglia delle commesse. |
-| Cancella commesse | Cancella il calcolo commessa selezionato in griglia. |
-| Calcolo commesse | Esegue il calcolo della commessa per il valore della riga ammortamento selezionata. |
-| Dettagli rivalutazione | Apre la gestione dei dettagli di rivalutazione. Il pulsante è attivo solo se il flag ‘rivalutazioni' è impostato per la categoria del cespite in uso. Vedi applicazione a. |
-| Documenti | Gestione dell'archiviazione documentale associata alla maschera in uso. |
+| Nova operacija | Aktivira kursor u prvoj tablici imovinskih operacija. |
+| Brisanje operacije | Briše odabranu operaciju u tablici imovinskih operacija. |
+| Nuovo ammortamento | Aktivira kursor u drugoj tablici amortizacija. |
+| Brisanje amortizacije | Briše odabranu amortizaciju iz tablice amortizacija. |
+| Automatsko knjiženje amortizacije | Izračunava amortizaciju za aktivu u upotrebi za godinu postavljenu u polju iznad tablice amortizacija. |
+| Unos troškovnog centra (cdc) | Aktivira kursor u tablici troškovnih centara. |
+| Brisanje troškovnog centra | Briše odabrani unos troškovnog centra iz tablice. |
+| Izračun troškovnih centara | Izvršava izračun troškovnih centara za iznos odabrane stavke amortizacije. |
+| Unos naloga/projekta | Aktivira kursor u tablici naloga/projekata. |
+| Brisanje naloga/projekta | Briše odabrani unos naloga/projekta iz tablice. |
+| Izračun naloga/projekta | Izvršava izračun za odabrani red amortizacije prema pripadajućem nalogu/projektu. |
+| Detalji revalorizacije | Otvara upravljanje detaljima revalorizacije. Tipka je aktivna samo ako je flag „revalorizacija” postavljena za kategoriju aktive u upotrebi. |
+| Dokumenti | Upravljanje dokumentacijom povezanoj s trenutnim prikazom (maskom). |
 
-### GRIGLIA SUPERIORE
+### GORNJI PREGLED
 
-Questa griglia vien utilizzata sia per operazioni di acquisto (o incremento) del cespite , sia per operazioni di vendita (totale o parziale).
+Ova mreža se koristi kako za operacije nabave (ili povećanja) imovine, tako i za operacije prodaje (ukupno ili djelomično).
 
-La prima riga è sempre utilizzata per l'acquisto iniziale del cespite: la **data dell'operazione**, il suo numero **progressivo** e il successivo **importo** inserito nella colonna relativa: 
+Prvi redak se uglavnom odnosi na početnu kupnju imovine/sredstva: **datum operacije**, njen **progresivni** broj i naknadni **iznos** upisuju se u odgovarajući stupac: 
 
-**Costo originario**: se l'importo è relativo ad una operazione di acquisto e rappresenta dunque il costo storico;
+**Izvorni trošak**: ako se iznos odnosi na samu transakciju kupnje, predstavlja i početni trošak;
 
-**Alienazione**: se l'importo si riferisce ad una alienazione totale e rappresenta il valore di vendita;
+**Otuđenje**: ako se iznos odnosi na ukupno otuđenje, predstavlja i prodajnu vrijednost;
 
-**Alienazione parziale**: se l'importo si riferisce ad una alienazione parziale e rappresenta il valore di vendita;
-
- 
-
-Se è attiva la gestione delle quantità, deve essere valorizzato anche il campo **quantità**.
+**Djelomično otuđenje**: ako se iznos odnosi na djelomično otuđenje, predstavlja i prodajnu vrijednost;
 
  
-:::danger NOTA:
-Nel caso del caricamento di un cespite storico preesistente l'importo dei fondi ammortamento già calcolati **NON** deve essere inserito direttamente in questa sezione ma riportato nella sezione sottostante (inserendo il valore totale dell'ammortamento accumulato in un' unica quota ammortamento con anno pari all'anno precedente la data di inserimento) **con stato *Contabilizzato*** tramite spunta del flag corrispondente per far si che questa sezione sia ricalcolata dall'ERP. **Si veda il video tutorial corrispondente**
+
+Ako je aktivno upravljanje količinama potrebno je popuniti i polje **količine**.
+
+ 
+:::danger BILJEŠKA:
+U slučaju učitavanja već postojeće povijesne imovine/sredstva, iznos sredstava amortizacije koji su već izračunati **NE** smije se unijeti izravno u ovaj odjeljak, već se prijaviti u odjeljku u nastavku (umetanjem ukupne vrijednosti akumulirane amortizacije) **sa statusom *Knjiženo*** kako bi se osiguralo da ovaj odjeljak ponovno izračunava ERP. 
 :::
 
 **![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image01.png)**
 
-Inserendo una riga relativa ad una operazione patrimoniale (es. acquisto, ma anche alienazione) ed impostando il relativo importo nella colonna adeguata (es. costo originario in caso di acquisto), si nota che i campi evidenziati in giallo vengono aggiornati in automatico dal programma.
+Umetanjem retka koji se odnosi na neku operaciju nad imovinom/sredstvom (npr. kupnja) i postavljanjem relevantnog iznosa u odgovarajući stupac (npr. izvorni trošak u slučaju kupnje), polje Iznos za amortizirati automatski ažurira program.  
 
-**Importo da ammortizzare**: valore di "carico" (acquisto o comunque costo storico caricato) sul quale calcolare l'ammortamento;
+**Iznos za amortizirati**: vrijednost "učitavanja" (kupnja ili u svakom slučaju učitani povijesni trošak) na temelju koje se izračunava amortizacija;
 
+**Knjižna vrijednost**: Nabavna cijena - Akumulirana amortizacija;
 
-**Valore contabile**: Costo storico - Fondo ammortamento accumulato;
-
-
-**Già ammortizzato**: Valore provvisorio che sarà aggiornato al momento del calcolo dell'ammortamento e poi sarà nuovamente azzerato aggiornando il totale dell'ammortamento accumulato (nel momento della contabilizzazione ammortamento).
+**Već amortiziran**: Privremena vrijednost koja će se ažurirati u vrijeme obračuna amortizacije, a zatim će se vratiti na nulu ažuriranjem ukupne akumulirane amortizacije (u vrijeme obračuna amortizacije).
 
 
+### SREDIŠNJI PRIKAZ Amortizacije:
 
-### GRIGLIA CENTRALE Ammortamenti:
+predstavlja popis obračunate amortizacije za sredstvo/imovinu: unos može biti ručni ili automatski.  
 
-presenta la lista degli ammortamenti calcolati per il cespite: l'inserimento può essere manuale oppure automatico. 
-
-- L'inserimento manuale prevede l'indicazione dell'anno di riferimento, del numero riga progressivo di riferimento (ma solo per categorie non incrementali, per le altre il campo è nascosto in quanto l'ammortamento sarà sempre collegato al progressivo 1), il tipo di ammortamento da applicare: a questo punto l'ERP riporterà le impostazioni della categoria cespite di riferimento, con un conto e sottoconto per la contabilizzazione della quota, la percentuale e gli importi (valori che si possono forzare e modificare a piacimento). Alla fine della griglia è presente la data di riferimento dell'ammortamento, proposta come la fine esercizio dell'anno contabile di riferimento della riga, e infine gli importi della quota deducibile e indeducibile dell'ammortamento. 
+- Ručni unos zahtijeva naznaku referentne godine, progresivni referentni broj retka (ali samo za neinkrementalne kategorije, za ostale je polje skriveno jer će amortizacija uvijek biti povezana s progresivnim brojem) i vrstu amortizacije koja se primjenjuje. Ovdje će ERP izvijestiti o postavkama referentne kategorije imovine, s kontom i podkontom za postotak i iznose. Na kraju mreže nalazi se referentni datum amortizacije, predložen kao kraj financijske godine referentne računovodstvene godine retka, te na kraju iznosi odbitnog i neodbitnog dijela amortizacije.  
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image02.png)
 
 
-- L'inserimento automatico prevede la definizione dell'anno di riferimento nel campo superiore alla griglia e l'uso del pulsante di gestione *Esegue ammortamento automatico* che andrà a riportare i dati degli ammortamenti previsti in categoria per tutto il cespite in uso.
+- Automatsko umetanje uključuje definiranje referentne godine u polju iznad i korištenje tipke *Izvrši automatsku amortizaciju* koji će prijaviti očekivane podatke o amortizaciji u kategoriji za cjelokupno sredstvo u upotrebi.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image03.png)
 
@@ -77,7 +74,7 @@ presenta la lista degli ammortamenti calcolati per il cespite: l'inserimento pu�
 
  
 
-Il calcolo dell'ammortamento sarà riportato nella colonna ***Già ammortizzato*** della griglia superiore che servirà ad indicare un importo non ancora definitivo: solo con l'indicazione del flag ***Contabilizzato***, nelle varie righe, gli importi superiori saranno attribuiti alla colonna del fondo relativo alla tipologia dell'ammortamento stesso. 
+Izračun amortizacije bit će prikazan u stupcu ***Već amortiziran*** gornjeg prikaza koji će služiti za označavanje iznosa koji još nije konačan. Samo uz naznaku flaga ***Knjiženo***, u različitim redovima, veći će se iznosi pripisati stupcu fonda koji se odnosi na samu vrstu amortizacije. 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image06.png)
 
@@ -88,101 +85,79 @@ Il calcolo dell'ammortamento sarà riportato nella colonna ***Già ammortizzato*
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image08.png)
 
  
-:::danger Nota
-L'inserimento manuale del flag **NON** effettua una registrazione in contabilità (per questo c'è la procedura di contabilizzazione ammortamenti): si utilizza normalmente solo per il caricamento manuale iniziale della situazione storica, per la quale, di norma, si effettua un inserimento unico dell'importo totale ammortizzato all'anno precedente all'inizio dell'uso del gestionale e non di tutto il dettaglio dell'ammortamento. 
+:::danger BILJEŠKA
+Ručno umetanje flaga se **NE** bilježi u računovodstvu (zbog toga postoji postupak obračuna amortizacije). Obično se koristi samo za početno ručno učitavanje povijesne situacije, za što je obično potrebno jedno umetanje koje se sastoji od ukupnog iznosa amortiziranog u godini koja prethodi početku korištenja novog softvera, a ne od cjelokupnog detalja amortizacije.  
 :::
 
-Al salvataggio della riga con flag *Contabilizzato*, Fluentis chiederà se si vuole collegare una registrazione contabile già esistente, messaggio al quale normalmente (in caso di ripresa di dati storici) si risponde negativamente. 
+Prilikom spremanja retka s flagom *Knjiženo*, Fluentis će pitati za povezivanje postojećeg računovodstvenog zapisa, poruka na koju se obično odgovara negativno (u slučaju obnavljanja povijesnih podataka).
 
-Il flag di Ammortamento fiscale prevede la gestione fiscale della riga ammortamento: viene proposto sulla base dello stesso flag previsto in categoria cespite. In qualche caso può essere utilizzato manualmente per rilevare a libro cespiti, il giro degli ammortamenti anticipati utilizzati nel bilancio ordinario ad ammortamenti fiscali da gestire solo per il calcolo della tassazione. La gestione fiscale, invece, si ha attraverso la valorizzazione dei campi con gli importi deducibili/indeducibili dell'ammortamento, valorizzati automaticamente sulla base della percentuale di deducibilità associata al cespite o alla sua categoria.
+Flag "Fiskalni" omogućuje fiskalno upravljanje amortizacijskom stavkom te se predlaže na temelju istog flaga postavljenog u kategoriji imovine. U nekim slučajevima može se koristiti ručno za bilježenje u knjizi imovine/sredstava, ciklusa ubrzane amortizacije koja se koristi u redovnom proračunu i fiskalne amortizacije kojom se upravlja samo za izračun poreza. Fiskalno upravljanje, s druge strane, postiže se valorizacijom polja s odbitnim/neodbitnim iznosima amortizacije, koji se automatski valoriziraju na temelju postotka odbitka povezanog s imovinom/sredstvom ili povezanom kategorijom.
 
-Nell'ultima sezione è presente il dettaglio di valorizzazione a centro di costo degli ammortamenti selezionati nella seconda griglia.
-
-
-### Caricamento di un cespite pregresso
-
-Per inserire nel sistema i cespiti già esistenti al momento dell’inizio delle registrazioni, con la relativa
-situazione del fondo ammortamento operare come segue:
-1. Inserire una nuova scheda cespite con i dati anagrafici del cespite: descrizione, categoria ecc… (tab *Dettaglio*) e
-porre attenzione alla **data inizio attività** che deve essere quella storica
-
-2. Nella tab *Operazioni patrimoniali* inserire il costo storico indicando la data di acquisto e compilando
-il campo **Costo originario**
-
-3. **NON** compilare manualmente il campo *Fondo ammortamento* nella riga (altrimenti verrebbe
-sovrascritto al prossimo ammortamento), ma inserire una riga (sotto) nella griglia Ammortamenti
-con anno uguale all’ anno precedente a quello di inserimento ed il totale degli ammortamenti già
-calcolati. E mettere il flag contabilizzato. L’ammortamento si deve inserire nel campo costo
-(imponendolo indipendentemente dagli altri campi precedenti)
+Posljednji odjeljak sadrži detalje o vrednovanju mjesta troška za amortizaciju odabranu u srednjem prikazu.
 
 
-### Gestione dell'alienazione cespite (casi di alienazione parziale)
+### Učitavanje naslijeđenog sredstva
 
-#### Caso del cespite già ammortizzato
-Esempio valido se il cespite non è stato gestito tramite componenti o incrementi ma in maniera indivisa
+Za umetanje imovine u sustav koja već postoji u trenutku početka knjiženja, s povezanom situacijom fonda amortizacije, postupi se na sljedeći način:
+1. Umetne se nova imovina/sredstvo s matičnim podacima o imovini/sredstvu: opis, kategorija itd. (kartica *Detalji*) i obratiti pozornost na **datum početka aktivnosti** koji mora biti neki prijšanji;
 
-1. La scrittura contabile automatica non viene gestita, quindi si può anche gestire il cespite da dentro
-la scheda e poi fare la scrittura Fondo amm. a Cespite separatamente.
-2. Per scaricare il cespite parzialmente inserire un importo negativo nella colonna del fondo per un
-valore corrispondente alla quota del costo storico ceduto o distrutto.
-3. Nella colonna Alienazione parziale indicare (**sempre**) il valore al quale viene ceduto (o 0,00 se distrutto)
-4. La colonna costo originario ceduto si aggiornerà automaticamente.
+2. Na kartici *Imovinske operacije* unese se povijesni trošak tako da se naznači datum kupnje i ispuni polje **Izvorni trošak**;
+
+3. **NE** ručno ispuniti polje *Zbirna linearna amortizacija* u retku (inače bi bilo prebrisano pri sljedećoj amortizaciji), već se umetne redak (ispod) u pregled Amortizacije s godinom koja je jednaka godini koja prethodi godini umetanja i ukupan iznos već obračunate amortizacije, te se postavi flag knjiženo. Amortizacija se mora unijeti u polje troška (nametajući je neovisno o ostalim prethodnim poljima).
 
 
-#### Caso del cespite NON completamente ammortizzato
+### Upravljanje raspolaganjem imovinom (slučajevi djelomičnog raspolaganja) 
 
-Situazione iniziale
+#### Slučaj imovine koja je već amortizirana 
+Valjani primjer ako se imovinom nije upravljalo putem komponenti ili povećanja, već na nepodijeljen način
+
+1. Automatski računovodstveni unos se ne radi, tako da se može upravljati imovinom/sredstvom i unutar kartice/šifrarnika, a zatim upisati unos amortizacijskog fonda na imovinu zasebno. 
+2. Da bi se djelomično razdužila imovina, unese se negativan iznos u stupac amortizacije koji odgovara udjelu povijesnog troška prodanog ili uništenog. 
+3. U stupcu Djelomično otuđenje se naznači (**uvijek**) vrijednost po kojoj se prodaje (ili 0,00 ako je uništeno).  
+4. Stupac prenesenog izvornog troška automatski će se ažurirati.
+
+
+#### Slučaj da imovina NIJE u potpunosti amortizirana 
+
+Početna situacija
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling1.png)
 
-Per scaricare il cespite parzialmente inserire un importo negativo nella colonna del fondo per un valore
-corrispondente alla quota del fondo accantonato proporzionale al costo storico ceduto o distrutto.
+Da bi se djelomično razdužila imovina, unese se negativan iznos u stupac vrijednosti koji odgovara dijelu izdvojenog fonda proporcionalnom povijesnom trošku prodanog ili uništenog sredstva/imovine. 
 
-Nella colonna Alienazione parziale indicare il valore al quale viene ceduto (o 0,00 se distrutto, in questo
-caso si può indicare il valore anche nella colonna Distruzione)
-La colonna costo originario ceduto si aggiornerà automaticamente.
+Da bi se djelomično razdužila imovina, unese se negativan iznos u stupac vrijednosti koji odgovara dijelu izdvojenog fonda proporcionalnom povijesnom trošku prodanog ili uništenog sredstva/imovine. 
 
-Il calcolo che viene fatto nella colonna costo originario ceduto tiene conto anche della plus / minusvalenza
-di cessione, che dovrà essere inserita tenendo conto della quota parte di valore netto contabile che viene
-ceduto.
+Izračun koji se radi u stupcu izvornog troška također uzima u obzir kapitalni dobitak/gubitak od prodaje, koji se mora unijeti uzimajući u obzir dio neto knjigovodstvene vrijednosti koji se prodaje.  
 
-**Esempio 1:**
-Costo storico 1000, ammortizzato per 125
-Ne vendo la metà al prezzo di 200
+**Primjer 1**:
+Povijesni trošak 1000, amortiziran za 125.   
+Prodana je polovica po cijeni od 200.  
 
-Rettifico il fondo accantonato per la metà, quindi -62,50 e ho un valore di vendita (attenzione a compilare
-la colonna Alienazione parziale, altrimenti se compilo alienazione totale forza a scaricare tutto il costo
-storico) di 200.
+Prilagođava se rezerviranje izdvojeno za polovicu, dakle -62,50 i prodajna vrijednost (paziti da se ispuni stupac Djelomično otuđeno, inače, ako seispunim ukupno raspolaganje, prisiljava se na preuzimanje cjelokupnog povijesnog troška) od 200. 
 
-Quindi dovrò calcolare la minusvalenza da inserire sulla base della metà del valore netto contabile, quindi
-875 / 2 = 437,50
-Minusvalenza = 437,50 – 200 = 237,50
+Stoga s mora izračunati kapitalni gubitak koji treba unijeti na temelju polovice neto knjigovodstvene vrijednosti, dakle 875 / 2 = 437,50   
+Kapitalni gubitak = 437,50 – 200 = 237,50
 
-Il campo Costo originario ceduto si calcola automaticamente a 500 che è il costo storico effettivamente
-scaricato dal libro cespiti per la metà.
+Polje prijenosa izvornog troška automatski se izračunava na 500 što je povijesni trošak stvarno preuzet iz knjige sredstava/imoivne za polovicu.  
 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling2.png)
 
-**Esempio 2:**
-Costo storico 1000, ammortizzato per 125
-Ne smaltisco la metà a prezzo 0,00
+**Primjer 2**:
+Povijesni trošak 1000, amortiziran za 125.   
+Otuđena polovicu po cijeni od 0,00  
 
-Rettifico il fondo accantonato per la metà, quindi -62,50 e ho un valore di vendita (attenzione a compilare
-la colonna Alienazione parziale, altrimenti se compilo alienazione totale forza a scaricare tutto il costo
-storico) di 0,00.
+Prilagođava se rezerviranje izdvojeno za polovicu, dakle -62,50 i ima se prodajna vrijednost (paziti da se ispunite stupac Djelomično otuđeno, inače ako se ispuni ukupno otpuštanje, prisiljava se na preuzimanje cjelokupnog povijesnog troška) od 0,00. 
 
-Quindi dovrò calcolare la minusvalenza da inserire sulla base della metà del valore netto contabile, quindi
-875 / 2 = 437,50
-Minusvalenza = 437,50 – 0 = 437,50
+Stoga se mora izračunati kapitalni gubitak koji treba unijeti na temelju polovice neto knjigovodstvene vrijednosti, dakle 875 / 2 = 437,50   
+Kapitalni gubitak = 437,50 – 0 = 437,50
 
-Il campo Costo originario ceduto si calcola automaticamente a 500 che è il costo storico effettivamente
-scaricato dal libro cespiti per la metà.
+Polje prijenosa izvornog troška automatski se izračunava na 500 što je povijesni trošak stvarno preuzet iz knjige sredstava/imovine za polovicu. 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling3.png)
 
-:::tip[Suggerimento]
-L'alienazione cespite, in particolare nei casi più semplici di alienazione totale, può essere gestita con maggiore automatismo attraverso la registrazione contabile della vendita effettuata con una causale che ha abilitato la funzionalità per i cespiti e con tipo operazione Alienazione totale (o parziale).
+:::tip[Prijedlog]
+Prodaja (alijenacija) osnovnog sredstva, osobito u jednostavnijim slučajevima potpune prodaje, može se automatiziranije obraditi putem knjiženja prodaje s kontnim događajem koji ima omogućenu funkcionalnost za osnovna sredstva i s vrstom operacije Potpuna (ili djelomična) alijenacija.  
 
-Nella scrittura comparirà [**l'apposita sezione Cespite**](/docs/finance-area/ledger-records/records/ledger-record)
+U knjiženju će se prikazati [**odgovarajući odjeljak Osnovno sredstvo**](/docs/finance-area/ledger-records/records/ledger-record)
 :::
