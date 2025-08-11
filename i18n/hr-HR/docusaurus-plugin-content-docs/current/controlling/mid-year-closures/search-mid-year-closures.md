@@ -1,14 +1,13 @@
 ---
-title: Ricerca chiusura conti infrannuale
+title: Pretraga privrememog zatvaranja konta
 sidebar_position: 2
 ---
 
-La form viene utilizzata per ricercare le chiusure elaborate ed eventualmente cancellarle.
+Ova forma koristi se za pretragu obrađenih zatvaranja i njihovo eventualno brisanje.
 
-Da questa maschera sarà possibile cercare e visualizzare i parametri utilizzati in ogni singola chiusura, così come creare nuove chiusure o cancellare (operazione consentita solo se sulla chiusura non sono state gestite procedure automatiche).
-Il flag 'Definitiva' presente in griglia consente di rendere non più modificabile la chiusura stessa.
+Putem ovog prozora moguće je pretraživati i pregledavati parametre korištene u svakom pojedinom zatvaranju, kao i kreirati nova zatvaranja ili ih brisati (brisanje je dozvoljeno samo ako nad zatvaranjem nisu provedene automatske procedure). Prisutni flag 'Definitivno' u prikazu omogućuje onemogućavanje daljnjih izmjena zatvaranja.
 
 
-:::danger ATTENZIONE
-Non è possibile riaprire una chiusura una volta che questa è stata resa definitiva!
+:::danger PAŽNJA
+Nije moguće ponovno otvoriti zatvaranje nakon što je označeno kao definitivno!
 :::
