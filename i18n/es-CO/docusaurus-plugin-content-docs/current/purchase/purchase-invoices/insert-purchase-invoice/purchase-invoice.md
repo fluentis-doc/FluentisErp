@@ -1,5 +1,5 @@
 ---
-title: Nueva Factura de compra (Nuova Fattura di acquisto)
+title: Nueva Factura de compra 
 sidebar_position: 2
 ---
 
@@ -28,12 +28,12 @@ Alternativamente, es posible seleccionar como *Tipo de línea* un *Artículo no 
 
 ## **1. Datos obligatorios**
 
-- **tipo fattura acquisto** predeterminado en *Tablas > Compras > [Tipo de factura de compra](/docs/configurations/tables/purchase/purchase-invoices-type)*;   
+- **Tipo de factura de compra** predeterminado en *Tablas > Compras > [Tipo de factura de compra](/docs/configurations/tables/purchase/purchase-invoices-type)*;   
 Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el *Número interno* de la factura en función de la fecha de ingreso y el último número ingresado;   
-- **fornitore** puede ser ingresado usando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o manualmente;  
-- **data**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente respetando la regla de progresión entre fecha y número;  
-- **numero interno**: se propone automáticamente en función del tipo de factura, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
-- **numero documento**: en este campo es posible ingresar un número de documento que puede ser diferente al propuesto en el campo anterior.
+- **Proveedor** puede ser ingresado usando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o manualmente;  
+- **Fecha**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente respetando la regla de progresión entre fecha y número;  
+- **Número interno**: se propone automáticamente en función del tipo de factura, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
+- **Número de documento**: en este campo es posible ingresar un número de documento que puede ser diferente al propuesto en el campo anterior.
 
 El formulario contiene una serie de pestañas.
 
@@ -49,9 +49,9 @@ Si el documento es *creado automáticamente*, por ejemplo, mediante **Cumplimien
 
 Al ingresar el **Proveedor** se proponen automáticamente todos los datos específicos de la pestaña **Cabecera**, según los datos configurados anteriormente en el [registro del proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) en los campos correspondientes a su dirección y en las *secciones*:  
 
-- **divisa**: sección que contiene los datos [Divisa](/docs/configurations/tables/general-settings/currencies), [Tipo de cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de divisa](/docs/guide/common/glossary/glossary-intro#currency-date).   
-- **nazione**: sección que contiene los datos [*Nación*](/docs/guide/common/glossary/glossary-intro#country), [Idioma](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).   
-- **spedizione**: sección que contiene los datos [*Envios*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Flete](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Listado](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) predeterminado y su [intervalo de validez](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Moneda**: sección que contiene los datos [Moneda](/docs/configurations/tables/general-settings/currencies), [Tipo de cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de divisa](/docs/guide/common/glossary/glossary-intro#currency-date).   
+- **Nación**: sección que contiene los datos [*Nación*](/docs/guide/common/glossary/glossary-intro#country), [Idioma](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).   
+- **Envío**: sección que contiene los datos [*Envios*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Flete](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Listado](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) predeterminado y su [intervalo de validez](/docs/guide/common/glossary/glossary-intro#validity-date).
 
 Todos estos campos pueden ser eliminados o modificados manualmente por el usuario.
 
@@ -59,27 +59,27 @@ Todos estos campos pueden ser eliminados o modificados manualmente por el usuari
 
 - **Estado de las facturas**: cuando la factura es creada, no tiene ningún indicador activo. La sección incluye los campos:
 
-    > **controllata**: el indicador activo permite contabilizar la factura;  
-    > **contabilizzata**: el indicador se activa automáticamente cuando la factura soporta el procedimiento de [Contabilización](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting);  
-    > **caricata**: el indicador se activa cuando la factura soporta el procedimiento de [Carga en el almacén](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice). En el caso de una factura creada a partir de un documento de transporte ya cargado, está presente el parámetro general VE-PurchaseInvoices_VerifyLoadStatusDDT que bloquea el indicador Cargada también en la factura.  
-    > **storicizzata**: al activar este indicador, el documento no será más visible para los procedimientos posteriores.   
-    > **annullata**: el indicador activo permite anular la factura.
+    > **Controlado**: el indicador activo permite contabilizar la factura;  
+    > **Contabilizado**: el indicador se activa automáticamente cuando la factura soporta el procedimiento de [Contabilización](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting);  
+    > **Cargado**: el indicador se activa cuando la factura soporta el procedimiento de [Carga en el almacén](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice). En el caso de una factura creada a partir de un documento de transporte ya cargado, está presente el parámetro general VE-PurchaseInvoices_VerifyLoadStatusDDT que bloquea el indicador Cargada también en la factura.  
+    > **Historizado**: al activar este indicador, el documento no será más visible para los procedimientos posteriores.   
+    > **Cancelada**: el indicador activo permite anular la factura.
 
 :::note
 Los indicadores pueden ser desactivados mediante los procedimientos de restauración de operación.
 :::
 
-- **data di arrivo**: en este campo se puede ingresar la fecha de llegada de la mercancía.
+- **Fecha de llegada**: en este campo se puede ingresar la fecha de llegada de la mercancía.
 
-- **data carico**: este campo se completa automáticamente con la fecha actual al momento de la carga o con la fecha utilizada para el registro de almacén, dependiendo del procedimiento utilizado.   
+- **Fecha de carga**: este campo se completa automáticamente con la fecha actual al momento de la carga o con la fecha utilizada para el registro de almacén, dependiendo del procedimiento utilizado.   
 
-- **Anotaciones del proveedor (Annotazioni fornitore)**: este campo se toma del registro del proveedor, mientras que en el caso de creación a partir de un solo pedido/DDT se tomarán los mismos datos contenidos en el campo homónimo del documento de partida. Puede ser ingresado también manualmente. 
+- **Anotaciones del proveedor**: este campo se toma del registro del proveedor, mientras que en el caso de creación a partir de un solo pedido/DDT se tomarán los mismos datos contenidos en el campo homónimo del documento de partida. Puede ser ingresado también manualmente. 
 
-- **nostro/vostro riferimento**: en estos campos generalmente se indica una referencia interna y una referencia del proveedor para el documento.    
+- **Nuestra/Su referencia**: en estos campos generalmente se indica una referencia interna y una referencia del proveedor para el documento.    
 Si está presente, se toma del registro del proveedor, de lo contrario puede ser ingresado manualmente.  
 En caso de que el pedido se complete con el procedimiento [Cumplimiento de pedido](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) o mediante [Valoración DDT de compra](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), en los campos *Anotaciones del proveedor* y *Nuestra/Su referencia* se propone la información presente en los campos homónimos del documento de partida (esta transferencia es válida solo en el caso de una factura creada mediante la recopilación de datos de un solo documento de partida).
 
-- **note iniziali**: en caso de cumplimiento, se propondrán las informaciones presentes en el pedido. Alternativamente, se pueden seleccionar las notas que se han ingresado previamente en la tabla homónima que se encuentra en el camino *Configuración > Utilidades > Gestión de notas codificadas*; para esto el usuario debe hacer un doble clic en el campo para abrir la Ayuda y seleccionar los datos; de lo contrario, puede ingresarlas manualmente.
+- **Nota inicial**: en caso de cumplimiento, se propondrán las informaciones presentes en el pedido. Alternativamente, se pueden seleccionar las notas que se han ingresado previamente en la tabla homónima que se encuentra en el camino *Configuración > Utilidades > Gestión de notas codificadas*; para esto el usuario debe hacer un doble clic en el campo para abrir la Ayuda y seleccionar los datos; de lo contrario, puede ingresarlas manualmente.
 
 - **progetto**: utilizando la ayuda de campo se puede vincular el documento a un proyecto. Esta asociación solo funciona a nivel de la cabecera del artículo. El proyecto se inserta automáticamente si el DDT fue creado mediante el cumplimiento de un pedido que lo contiene.
 
