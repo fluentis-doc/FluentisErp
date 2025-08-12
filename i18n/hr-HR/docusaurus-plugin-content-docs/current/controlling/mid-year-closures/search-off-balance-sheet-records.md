@@ -1,11 +1,11 @@
 ---
-title: Ricerca registrazioni extracontabili
+title: Pretraga izvanknjigovodstvenih knjiženja
 sidebar_position: 4
 ---
 
-La ricerca delle registrazioni extracontabili consente di visualizzare tutti i movimenti associati ad una determinata ***Chiusura infrannuale***. La maschera avrà tutti i pulsanti disabilitati fino a che non si imposterà su quale chiusura infrannuale si vuole operare.
+Pretraga izvanknjigovodstvenih knjiženja omogućuje pregled svih zapisa povezanih s određenim ***privremenim zatvaranjem***. Svi gumbi u prozoru bit će onemogućeni dok se ne odredi na koje periodično zatvaranje se želi primijeniti pretraga.
 
-Da questa maschera sarà possibile: trovare e modificare le registrazioni associate alla chiusura infrannuale; cancellare le registrazioni associate alla chiusura infrannuale; aggiungere registrazioni manuali alla chiusura infrannuale (es.: rilevare gli accantonamenti di competenza delle paghe);  duplicare una registrazione manuale (non quelle automatiche create con le procedure del modulo) selezionata in griglia in un'altra chiusura già presente nel modulo.
+Iz ovog prozora moguće je pronaći i izmijeniti knjiženja povezana s privremenim zatvaranjem, izbrisati knjiženja povezane s privremenim zatvaranjem, dodati ručna knjiženja u privremeno zatvaranje (npr. evidentirati rezervacije koje se odnose na obračun plaća), duplicirati odabranu ručno knjiženje (ali ne i automatska knjiuženja kreirana postupcima iz modula) u drugo zatvaranje koje je već prisutno u modulu.
 
-La creazione di una registrazione extracontabile è del tutto simile alla creazione di una registrazione di prima nota: si selezionerà sempre una causale di contabilità generale e da qui si procederà alla registrazione (l'unica differenza è che non esiste il concetto di protocollo iva nell'infrannuale: il modulo, comunque, è una copia che prevede le stesse tabelle logiche della contabilità, pur essendo fisicamente differenti per non sporcare in alcun modo i dati ufficiali di contabilità). Sono consentite registrazioni extracontabili di soli movimenti per centro di costo/profitto.
+Kreiranje izvanknjigovodstvenog knjiženja u potpunosti je slično kreiranju unosa u dnevniku glavne knjige: uvijek se odabirepredložak knjiženja, a zatim se pristupa samom knjiženju. Jedina razlika je u tome što u privremenom zatvaranju ne postoji koncept PDV protokola. Modul, međutim, predstavlja kopiju s istim logičkim tablicama kao i knjigovodstvo, ali fizički je odvojen kako ne bi utjecao na službene podatke knjigovodstva. Dozvoljena su isključivo izvanknjigovodstvena knjiženja po centru troška/profita.
 
