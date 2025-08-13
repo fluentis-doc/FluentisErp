@@ -1,5 +1,5 @@
 ---
-title: Riclassificazione di Bilancio formato CEE Video Tutorial
+title: Reklasicikacija bilance video tutorijal
 sidebar_position: 3
 ---
 
