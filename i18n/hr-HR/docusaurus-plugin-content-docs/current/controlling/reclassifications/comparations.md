@@ -1,85 +1,85 @@
 ---
-title: Comparazione riclassificazioni
+title: Usporedba reklasifikacije
 sidebar_position: 5
 ---
 
-Le comparazioni delle riclassificazioni consentono, a partire da un determinato [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model), di elaborare dei confronti tra le varie riclassificazioni memorizzate in ***FluentisERP***.
+Usporedbe reklasifikacija omogućuju, polazeći od određenog [*modela reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model), izradu usporedbi između različitih reklasifikacija pohranjenih u ***FluentisERP-u***.
 
 
-## COMPARAZIONI SU DATI DEI RICLASSIFICATI DI CHIUSURE INFRANNUALI
-Imposteremo il modello, inseriremo una Descrizione identificativa della comparazione, sulla destra non andremo ad impostare il flag **Dati del controlling** in modo che ***FluentisERP*** vada a leggere i dati dei riclassificati elaborati dai dati della *Chiusura infrannuale* o dal *Consolidamento*.
+## USPOREDBE NA TEMELJU PODATAKA REKLASIFICIRANIH PRIVREMENIH ZAVRŠNICA
+Potrebno je postaviti model, unijeti opis usporedbe, a na desnoj strani ne označiti status **Podaci iz kontrolinga** kako bi ***FluentisERP*** pročitao podatke reklasificiranih modela izrađenih iz podataka privremenog zatvaranja ili *konsolidacije*.
 
-Nella griglia sottostanti dei ***Dettagli*** avremo i seguenti campi:
-- *Progressivo* di riga, sarà l'elemento identificativo del dato nella scheda successiva degli ***Scostamenti***
-- *Codice/Chiusura* (con la relativa Descrizione e Data)
+U donjem obrascu ***Detalji*** nalaze se sljedeća polja:
+- *Progresivan* redni broj – identifikacijski element podatka za karticu ***Odstupanja***
+- *Šifra/Zatvaranje* (s pripadajućim opisom i datumom)
 
-Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
+Nakon spremanja ovih postavki, u kartici ***Odstupanja*** prikazat će se rezultat usporedbe. Dostupne su sljedeće opcije:
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+- *Prikaz odstupanja*: omogućuje prikaz postotnog odstupanja između unesenih reklasifikacija. Na desnoj strani može se postaviti u kojem stupcu (u susjednom ili fiksnom) će se izračunati odstupanje
 
-- *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
+- *Prikaži detalje podataka*: prikazuje detalje podkonta ili centara koji valoriziraju pojedini čvor modela
 
-- *Visualizza centri*: non attivo su comparati non del controlling
+- *Prikaz centara*: nije aktivno za usporedbe koje nisu iz kontrolinga
 
-- *Cifre decimali*: decimali da utilizzare per la colonna sostamenti
-
-
-## COMPARAZIONI SU DATI DELLA CONTABILITA' GESTIONE DEL CONTROLLING
-Imposteremo il modello, inseriremo una Descrizione identificativa della comparazione, sulla destra andremo ad impostare il flag **Dati del controlling** in modo che ***FluentisERP*** vada a leggere i dati della *Contabilità gestionale* del controlling.
-
-Nella griglia sottostanti dei ***Dettagli*** avremo i seguenti campi:
-- *Progressivo* di riga, sarà l'elemento identificativo del dato nella scheda successiva degli ***Scostamenti***
-- *Area*, obbligatorio, sarà l'area dalla quale leggere i dati
-- [*Dimensione*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), obbligatorio, cioè da quale dimensione leggere i dati
-- [*Centro aziendale*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, cioè di quale centro si vuole visualizzare i dati
-- *Progetto*, non in uso
-- *Periodo inizio* e *Periodo fine*, obbligatori, è il range di periodi da considerare
-- *Anno inizio* e *Anno fine*, obbligatori, è il range di anni da considerare
-- *Visualizza dettagli periodo*: significa che per la riga, si richiede l'esplosione di N colonne una per ogni periodo del range definito
-- *Centro/Commessa su colonna*: significa che il codice del *Centro* impostato sulla riga sarà riportato nel nome della colonna
-- *Calcola indici*: questa opzione forzerà un calcolo 'al volo' degli indici di costo dei centri. Questa opzione è valida quando si sta eseguendo un comparato sul codice modello utilizzato per la misurazione dei centri, in tabella dei *Centri di costo*
+- *Decimalna mjesta*: broj decimalnih mjesta za stupac odstupanja
 
 
-Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
+## USPOREDBE NA TEMELJU PODATAKA IZ UPRAVLJAČKOG RAČUNOVODSTVA KONTROLINGA
+Potrebno je postaviti model, unijeti opis usporedbe, a na desnoj strani označiti status **Podaci kontrolinga** kako bi ***FluentisERP*** pročitao podatke iz upravljačkog računovodstva kontrolinga.
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+U donjem obrascu ***Detalji*** nalaze se sljedeća polja:
+- *Progresivan* redni broj – identifikacijski element podatka u kartici ***Odstupanja***
+- *Područje*, (obavezno) – područje iz kojeg se čitaju podaci
+- [*Dimenzija*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), (obavezno) – dimenzija iz koje se čitaju podaci
+- [*Centar troška*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), (opcionalno) – centar za koji se žele prikazati podaci
+- *Projekt*, nije u uporabi
+- *Početno* i *završno razdoblje*, (obavezno) – vremenski raspon razdoblja koji se uzima u obzir
+- *Početna i završna godina* (obavezno) – vremenski raspon godina koji se uzima u obzir
+- *Prikaz detalja razdoblja*: omogućuje prikaz podataka za svaki period unutar definiranog raspona kao zaseban stupac
+- *Centar/nalog po stucpu*: omogućuje prikaz šifre *centra* unutar naziva stupca
+- *Izračun indeksa*: – opcija koja forsira trenutni izračun indeksa troškova centara. Ova opcija vrijedi prilikom usporedbe modela korištenog za mjerenje centara u tablici *Centri troškova*
 
-- *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
 
-- *Visualizza centri*: mostrerà anche il dettaglio dei centri associati ai sottoconti del nodo
+Nakon spremanja ovih postavki, u kartici ***Odstupanja*** prikazat će se rezultat usporedbe. Dostupne su sljedeće opcije:
 
-- *Visualizza totali*: aggiungerà una colonna finale di totalizzazione di tutte le colonne visualizzate nella griglia sottostante
+- *Prikaz odstupanja*: – omogućuje prikaz postotnog odstupanja između unesenih reklasifikacija. Na desnoj strani može se postaviti u kojem stupcu (u susjednom ili fiksnom) će se izračunati odstupanje
 
-- *Cifre decimali*: decimali da utilizzare per la colonna sostamenti
+- *Prikaži detaljne podatke*: – prikazuje detalje podkonta ili centara koji valoriziraju pojedini čvor modela
 
-In caso di visualizzazione degli scostamenti, avremo le seguenti colonne di scostamento:
-- *%*: si tratta della *percentuale verticale* tra il nodo che ha il flag 'Riferimento percentuale' (che quindi avrà 100%) e tutti gli altri
-- *Scostamento*: si tratta dello scostamento in valore assoluto
-- *Scost.%': si tratta dello scostamento in percentuale
-- *Scost.% su %': mette a confronto le *percentuali verticali* delle due colonne
+- *Prikaz centara* – prikazuje i detalje centara povezanih s podkontima čvora
 
-Nel caso in cui si fosse nel comparato del modello di attribuzione costi ai centri per il calcolo degli indici, se nel dettaglio di impostazione abbiamo filtrato per i vari centri produttivi misurati avremo la possibilità di vedere, all'interno del sottostante expander, i totali di elaborazione dell'indice di costo per ognuno di questi. I campi visualizzati sono:
+- *Prikaz ukupnih iznosa* – dodaje završni stupac sa zbrojem svih prikazanih stupaca u donjem prikazu
 
-- *UM1-F NUMERATORE*: numeratore per il calcolo indice fisso sulla UM1 del centro
-- *UM1-F DENOMINATORE*: denominatore per il calcolo indice fisso sulla UM1 del centro
-- *UM1-F VALORE INDICE*: valore dell'indice fisso sulla UM1 del centro
-- *UM1-V NUMERATORE*: numeratore per il calcolo indice variabile sulla UM1 del centro
-- *UM1-V DENOMINATORE*: denominatore per il calcolo indice variabile sulla UM1 del centro
-- *UM1-V VALORE INDICE*: valore dell'indice variabile sulla UM1 del centro
-- *UM1 TOTALE*: indice totale della UM1 del centro
+- *Decimalna mjesta*– broj decimalnih mjesta za stupac odstupanja
 
-- *UM2-F NUMERATORE*: numeratore per il calcolo indice fisso sulla UM2 del centro
-- *UM2-F DENOMINATORE*: denominatore per il calcolo indice fisso sulla UM2 del centro
-- *UM2-F VALORE INDICE*: valore dell'indice fisso sulla UM2 del centro
-- *UM2-V NUMERATORE*: numeratore per il calcolo indice variabile sulla UM2 del centro
-- *UM2-V DENOMINATORE*: denominatore per il calcolo indice variabile sulla UM2 del centro
-- *UM2-V VALORE INDICE*: valore dell'indice variabile sulla UM2 del centro
-- *UM2 TOTALE*: indice totale della UM2 del centro
+U slučaju prikaza odstupanja, dostupni su sljedeći stupci odstupanja:
+- *%* – vertikalni postotak između čvora s oznakom Referentni postotak (koji će imati vrijednost 100%) i svih ostalih
+- *Odstupanje* – apsolutna vrijednost odstupanja
+- *% Odstupanja* – odstupanje izraženo u postotcima
+- *% Odstupanja u odnosu na %* - uspoređuje postotke između dva stupca
 
-- *% NUMERATORE* numeratore per il calcolo indice percentuale
-- *% DEMONIMATORE* denominatore per il calcolo indice percentuale
-- *% PERCENTUALE* valore dell'indice percentuale
+Ako se uspoređuje model za dodjelu troškova centrima radi izračuna indeksa, a u detaljima postavki filtrirani su različiti proizvodni centri, u donjem proširenju bit će dostupni ukupni rezultati izračuna indeksa troškova za svaki od centara. Prikazani podaci uključuju:
 
-:::tip NOTA
-Quando si elaborano le comparazioni del controlling, ***FluentisERP*** creerà automaticamente tante riclassificazioni sul modello quante sono le combinazioni di centro, anno,mese e dettagli richiesti, prima di rendere disponibile il risultato dell'elaborazione. Più è complessa la lista, più sarà lunga l'elaborazione.
+- *UM1-F BROJNIK*: brojnik za izračun fiksnog indeksa na UM1 centra
+- *UM1-F NAZIVNIK*: nazivnik za izračun fiksnog indeksa na UM1 centra
+- *UM1-F VRIJEDNOST INDEKSA*: vrijednost fiksnog indeksa na UM1 centra
+- *UM1-V BROJNIK*: brojnik za izračun varijabilnog indeksa na UM1 centra
+- *UM1-F NAZIVNIK*: nazivnik za izračun varijabilnog indeksa na UM1 centra
+- *UM1-F VRIJEDNOST INDEKSA*: vrijednost varijabilnog indeksa na UM1 centra
+- *UM1 UKUPNO*: ukupni indeks UM1 centra
+
+- *UM2-F BROJNIK*: brojnik za izračun fiksnog indeksa na UM2 centra
+- *UM2-F NAZIVNIK*: nazivnik za izračun fiksnog indeksa na UM2 centra
+- *UM2-F VRIJEDNOST INDEKSA*: vrijednost fiksnog indeksa na UM2 centra
+- *UM2-V BROJNIK*: brojnik za izračun varijabilnog indeksa na UM2 centra
+- *UM2-V NAZIVNIK*: nazivnik za izračun varijabilnog indeksa na UM2 centra
+- *UM2-V VRIJEDNOST INDEKSA*: vrijednost varijabilnog indeksa na UM2 centra
+- *UM2 UKUPNO*: ukupni indeks UM2 centra
+
+- *% BROJNIK* brojnik za izračun postotnog indeksa
+- *% NAZIVNIK* nazivnik za izračun postotnog indeksa
+- *% POSTOTAK* vvrijednost postotnog indeksa
+
+:::tip NAPOMENA
+Prilikom obrade usporedbe u kontrolingu, ***FluentisERP*** će automatski stvoriti onoliko reklasifikacija na modelu koliko ima kombinacija centra, godine, mjeseca i detalja koje je potrebno obraditi prije prikaza rezultata. Što je lista složenija, to će obrada trajati duže.
 :::
