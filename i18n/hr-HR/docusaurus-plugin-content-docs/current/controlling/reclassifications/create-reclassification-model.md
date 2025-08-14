@@ -1,175 +1,189 @@
 ---
-title: Crea modello di riclassificazione
+title: Kreiranje modela reklasifikacije
 sidebar_position: 2
 ---
 
-:::note Percorso
-**Controlling > Riclassificazioni > Modelli di riclassificazione>Crea modello di riclassificazione**
+:::note Put
+**Kontroling > Reklasifikacije > Sheme reklasifikacije > Kreiraj model reklasifikacije**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+NAPOMENA:
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
 
 :::
 
 ---
 
-### INSERIMENTO NUOVO MODELLO - TESTATA
+### UNOS NOVOG MODELA – NASLOV
 
-I modelli di riclassificazione sono elementi comuni a tutte le società caricate nello stesso database: la struttura del riclassificato, quindi, sarà visibile in tutte le società mentre quello che sarà specifico in ognuna di queste sarà l'assegnazione della propria struttura di piano dei conti (cdc/cdp ecc.) ai vari modelli. In questo modo sarà possibile anche creare un riclassificato consolidato di gruppo.
+Modeli reklasifikacije su zajednički elementi za sva poduzeća učitana u isti bazu podataka: struktura reklasifikacije će biti vidljiva u svim poduzećima, dok će specifično za svako od njih biti dodjela vlastite strukture kontnog plana (cdc/cdp itd.) različitim modelima. Na ovaj način bit će moguće stvoriti i konsolidiranu reklasifikaciju za grupu.
 
-:::tip Nota
-Sono comuni a tutte le società, o a tutte le società della stessa localizzazione geografica assegnata al *Tipo riclassificazione* tramite la sua proprietà *Nazione*
+:::tip NAPOMENA
+Modeli su zajednički za sva poduzeća, ili za sva poduzeća iste geografske lokacije dodijeljene *tipu reklasifikacije* putem svojstva *Države*.
 :::
 
-Gli elementi necessari per poter creare un nuovo modello sono: 
+Elementi potrebni za kreiranje novog modela su: 
 
-- **Tipo riclassificazione** di appartenenza, 
+- **Tip reklasifikacije**,
 
-- **Codice del modello** (alfanumerico di 10 caratteri), 
+- **Šifra modela** (alfanumerički od 10 znakova), 
 
-- **Descrizione** dello stesso.
+- **Opis** modela.
 
-- **Inversione segno**, disponibile solo in tipi riclassificazione legati al *Controlling*, consente di forzare l'inversione +- su tutti i nodi del modello
+- **Povratni znak odabranog čvora**, flag dostupno samo za tipove reklasifikacija povezane s *Kontrolingom*, omogućava prisilno
+obrtanje +- na svim čvorovima modela.
 
-- **Indice in valore assoluto**, disponibile solo in tipi riclassificazione legati al *Controlling*, imposta il calcolo degli indici percentuali in valore assoluto appunto.
+- **Indeks u apsolutnoj vrijednosti**, dostupan samo za tipove reklasifikacija povezane s *Kontrolingom*, postavlja izračun postotnih indeksa u apsolutnoj vrijednosti.
 
-Attribuiti questi valori si attiveranno i vari pulsanti di definizione della struttura di riclassificazione: con il pulsante **Inserimento nodo radice** si andranno a creare i primi livelli della struttura, mentre con il successivo **Inserimento nodo** si aggiungeranno sottolivelli a quello selezionato nella struttura. 
+Nakon dodijele ovih vrijednosti, aktivirat će se različiti gumbi za definiranje strukture reklasifikacije: pomoću
+gumba **Umetni čvor korijena** kreirat će se prvi nivoi strukture, dok će se pomoću sljedećeg gumba **Umetni čvora** dodati podnivoi odabranom čvoru u strukturi.
 
-Ogni livello della struttura, a sua volta, sarà definito attraverso un codice (alfanumerico di 8 caratteri) e una descrizione: l'univocità in questo caso particolare è data dalla combinazione di entrambi i valori, codice e descrizione insieme (questo perché in un riclassificato UE, ad esempio, sono presenti più livelli ‘A' nelle varie sezioni del modello, con descrizioni differenti). Vediamo nei punti successivi in dettaglio i *Tipi di livello* che si possono assegnare a questi codici, tenendo conto che la cancellazione dei vari livelli è consentita solo se questi non sono valorizzati in una formula ('somma dei figli' o 'espressione').
-
-
-### UTILITY NELLA RIBBON BAR
-
-
- 1. La maschera **ricerca sottoconti mancanti** consente di ricercare e stampare i sottoconti non inseriti in nessun punto del modello di riclassificazione: nel filtro di ricerca sono disponibili i flag *Visualizza conti scaduti - con data fine validità*, il flag *Visualizza il conto non utilizzato nella griglia dei centri di costo* e il flag *Visualizza il conto non utilizzato nella griglia dei conti*, questi ultimi due che consentono di definire se ricercare nei nodi di tipo *Centi di costo* o *Sottoconti*
- In particolare, se è stato inserito il generico conto, non saranno visualizzati i suoi sottoconti pur se questi non sono specificatamente inseriti nel modello stesso
- 2. La maschera **ricerca sottoconti doppi** consente di ricercare e stampare la lista dei sottoconti che sono stati inseriti in più punti del modello, considerando solo i nodi dei conti o i nodi dei centri tramite i due flag *Visualizza il conto duplicato nella griglia centri di costo* e *Visualizza il conto duplicato nella griglia dei conti* presenti nel filtro. In particolare, se è stato inserito il generico conto e un suo sottoconto, questo sarà visualizzato in quanto considerato sia nel totale che come dettaglio
+Svaki nivo strukture bit će definiran putem šifre (alfanumerički od 8 znakova) i opisa: jedinstvenost u ovom posebnom slučaju osigurava kombinacija obje vrijednosti, šifre i opisa zajedno (to je zato što u reklasifikaciji EU, na primjer, postoje različiti nivoi ‘A' u različitim sekcijama modela, s različitim opisima). Sljedeći će koraci detaljno opisati tipove razina koje je
+moguće dodijeliti, uzimajući u obzir da je brisanje razina dopušteno samo ako nisu korištene u formuli.
 
 
-### CAMPI DI TESTATA
+### ALATI U IZBORNOJ TRACI
 
-**Tipo del nodo** - Rappresenta il tipo di riga del modello di riclassificazione. Sono disponibili le seguenti tipologie:
 
-- ***Sottoconti*** è dedicato alla valorizzazione dei dati di contabilità generale, secondo i dettagli della struttura del piano dei conti della società.
+ 1. Obrazac za **pretraživanje podkonta koji nedostaju** omogućava pretraživanje i ispis podkonta koji nisu uneseni ni na jednom mjestu modela reklasifikacije: u filtrima pretrage dostupne su opcije za *prikaz konta s istekom roka valjanosti*, *prikaz konta koji nije korišten u pregledu centara troškova*, te *prikaz konta koji nije korišten u pregledu konta*, pri čemu posljednja dva
+omogućuju definiranje pretrage u čvorovima tipa *Centri troškova* ili *Podkonta*. 
+Konkretno, ako je unesen opći konto, njegova podkonta neće biti prikazana, čak iako nisu specifično uneseni u sam model.
+ 2. Obrazac za pretraživanje **višestruko umetnutih podkonta** omogućava pretraživanje i ispis popisa podkonta koji su uneseni na više mjesta modela, uzimajući u obzir samo čvorove konta ili čvorove centara putem dvaju flagova: *Prikaz dupliciranog konta u
+pregledu centara troškova* i *Prikaz dupliciranog konta u pregledu konta*, koji su dostupni u filtrima. Ako je opći konto unesen zajedno s njegovim podkontom, bit će prikazan jer se smatra i ukupnim iznosom i kao detalj.
 
-- ***Centri di costo***  dedicato alla valorizzazione dei dati dell'analitica. Nel caso in cui il modello sia legato al controlling avrà disponibili alcune caratteristiche specifiche.
 
-- ***Centri di profitto*** (presente per retro-compatibilità, solo se la società non ha il flag *Controlling*) dedicato alla valorizzazione dei dati della contabilità per centro di profitto/ricavo
 
-- ***Somma dei figli***: è un nodo che valorizzato automaticamente con la somma dei nodi presenti nel primo livello sottostante.
+### POLJA ZAGLAVLJA
 
-- ***Espressione***: in questo caso la sezione di compilazione dell'espressione è liberamente configurabile. Sono consentite le parentesi, la gestione dei 4 segni matematici principali, l'inserimento di numeri. Per riportare nella formula un nodo del modello è consigliato l'uso del pulsante 'Formula', che aprirà un help di selezione dei nodi del modello: in questa maschera, i nodi in rosso identificano quelli non ancora salvati e quindi non ancora utilizzabili in una formula.
+**Tip čvora** - Predstavlja vrstu retka u modelu reklasifikacije. Dostupne su sljedeće vrste:
 
-- ***Commesse*** (presente per retro-compatibilità, solo se la società non ha il flag *Controlling*) dedicato alla valorizzazione dei dati della contabilità per commesse, secondo i dettagli della commessa.
+- ***Podkonta*** posvećeni valorizaciji podataka iz glavne knjige, prema detaljima strukture kontnog plana poduzeća
 
-- **Tipo del dato**, il campo è attivo solo in nodi di tipo *Espressione* e ha le opzioni *Valuta* o *Numero*: nel primo caso il livello visualizzerà un valore monetario con il simbolo e relativi decimali dalla divisa della società; nel secondo caso, il livello visualizzerà un generico valore numerico arrotondato al numero di decimali impostato nel campo successivo.
+- ***Centri troškova***  - posvećeni valorizaciji analitičkih podataka. Ako je model vezan uz kontroling, bit će dostupne specifične karakteristike.
 
-- **Inversione del segno del nodo selezionato** consente di invertire i segni negativi in positivi e viceversa: nei riclassificati di ***FluentisERP*** qualsiasi dato con saldo dare sarà visualizzato con segno positivo, l'avere con segno negativo. Attraverso questo flag, quindi, si potranno visualizzare totali positivi per livelli che per natura hanno saldo avere (passività, ricavi). Attenzione che questa impostazione ha un'influenza determinante sul risultato delle sommatorie e delle espressioni in genere. L'inversione del segno è applicato al risultato del livello, non ai dettagli (sottoconti, cdc, cdp, commesse) che lo valorizzano: questi continueranno ad avere il segno del saldo (vedi oltre in questo documento per l'inversione dei segni di specifici sottoconti).
+- ***Centri profita*** (samo ako poduzeće nema flag Kontroling) - posvećen valorizaciji podataka iz knjigovodstva za centre profita/prihoda.
 
-- **Da stampare**: indica se il livello va riportato in stampa o meno.
+- ***Zbroj ‘djece’***:čvor koji se automatski valorizira zbrojem čvorova koji se nalaze na prvom nižem nivou.
 
-:::tip Nota
-L'uso di questo flag dipende chiaramente dalla sua gestione nella visibilità all'interno dei report di stampa
+- ***Izraz***: u ovom slučaju, sekcija za unos izraza je slobodno konfigurabilna. Dozvoljeni su zagrade, osnovni matematički znakovi i unos brojeva. Za unos čvora modela u formulu preporučuje se korištenje gumba ‘Formula’, koji će otvoriti pomoć za selekciju čvorova modela.
+
+- ***Nalozi*** (samo ako poduzeće nema flag Kontroling) - posvećen valorizaciji podataka iz knjigovodstva za poslove, prema detaljima posla.
+
+- **Tip podataka**, polje je aktivno samo u čvorovima tipa Izraz i ima opcije: *Valuta* ili *Broj*. Ako je odabrana valuta, nivo će prikazivati novčani iznos s simbolom i pripadajućim decimama prema valuti poduzeća. Ako je odabran broj, nivo će prikazivati opći broj sa zaokruženim decimalama prema postavci u sljedećem polju.
+
+- **Povratni znaka odabranog čvora** omogućava obrtanje negativnih u pozitivne i obratno: u reklasifikacijama FluentisERP-a, svi podaci s iznosom “dugovno” bit će prikazani s pozitivnim znakom, a “potražni” s negativnim. Pomoću ovog flagova moguće je prikazivati ukupne pozitivne iznose za razine koje po  svojoj prirodi imaju iznos “primanja” (obveze, prihodi). Obrtanje se primjenjuje na rezultat razine, ali ne i na detalje (podračune, cdc, cdp, poslove) koji ga valoriziraju. 
+
+- **Ispisati**: označava hoće li nivo biti prikazan na ispisu ili ne.
+
+:::tip NAPOMENA
+Korištenje ovog flaga ovisi o upravljanju vidljivošću unutar izvještaja za ispis.
 :::
 
-- **Mostra dettagli**: abilita la possibilità di evidenziare, nei comparati, i dettagli interni del nodo (cioè la lista di sottoconti o centri)
+- **Pokaži detalje**: omogućava je mogućnost označavanja, u usporedbama, unutarnjih detalja čvora (tj. popisa podkonta ili centara)
 
-- **Gestione divisa**: l'opzione è valida per i nodi di tipo *Sottoconto*, indica a ***FluentisERP*** di valorizzare eventuali saldi in divisa per i sottoconti che hanno il flag *Gestione divisa* nel piano dei conti (tipicamente tutte le anagrafiche clienti/fornitori/agenti/banche). In questo caso, quindi, nei riclassificati di questo modello potremo avere N righe per ogni sottoconto, una per ogni divisa di movimentazione nella chiusura infrannuale utilizzata.
+- **Upravljanje valutom**: opcija je važeća za čvorove tipa *Podkonto*, označava ***FluentisERP-u*** da procijeni eventualne salde u valuti za podkonta koji imaju oznaku Upravljanje valutom u kontnom planu (tipično svi podaci o kupcima/dobavljačima/agencijama/bankovnim računima). U tom slučaju, dakle, u reklasificiranim podacima ovog modela bit će N redaka za svaki podkonto, jedan za svaku valutu kretanja u privremenom zatvaranju korištenoj u privremenom zatvaranju.
 
-- La sezione **Natura raggruppamento** consente di impostare i tipi di conto che si potranno assegnare a questo livello, ed è visibile solo quando siamo in un nodo di tipo *Sottoconti*: in sostanza, all'atto dell'inserimento del sottoconto sarà applicato un filtro per tipo conto già limitato a quanti presentano flag coerenti con l'impostazione stessa. 
+- Odjeljak **Priroda grupiranja** omogućava postavljanje tipova konta koji se mogu dodijeliti ovom nivou, a vidljiv je samo u čvoru
+tipa *Podkonto*: zapravo, prilikom unosa podkonta primijenit će se filtriranje prema tipu konta već ograničeno na ona koja imaju
+oznaku usklađenu s postavkom.
 
-:::tip Esempi
-Ad esempio, se la natura è ‘Patrim. attivo', sarà possibile inserire i tipi conto che hanno questo flag in tabella: tipicamente l'attivo, i clienti e le banche. Nel caso in cui si modifichi questa impostazione con sottoconti già presenti nel livello, all'atto del salvataggio della modifica sarà richiesto se cancellare o meno i sottoconti non coerenti.
+:::tip PRIMJERI
+Na primjer, ako je priroda "Imovina", bit će moguće unijeti tipove konta koji imaju ovu oznaku u tablici: tipično imovina, kupci i banke. U slučaju da se ova postavka mijenja s već postojećim podkontima na razini, prilikom spremanja promjena bit će zatraženo hoće li se izbrisati podkonta koji nisu usklađena.
 :::
 
-Con il flag **Considera c.d.c./c.d.p. figli** (per modelli non legati a tipi del *Controlling*) si potrà inserire nel livello il centro di costo X e ***FluentisERP*** riporterà nel riclassificato tutti i suoi centri di costo interni che abbiano un valore. Il flag consente, quindi, di evitare di riportare e manutenere tutto il possibile dettaglio dei centri di costo ma solo il centro di costo superiore che li raggruppa.
+S oznakom **Razmotri podređeni centar troška/prihoda**, bit će moguće unijeti centar troška X, a ***FluentisERP*** će
+prikazati sve njegove interne centre troškova u reklasifikaciji koji imaju neku vrijednost. Ova oznaka omogućava izbjegavanje unosa i održavanje svih mogućih detalja centara troškova, već samo onog višeg centra troška koji ih grupira.
 
-### GRIGLIA AGGANCIO CONTI 
 
-La griglia **Conti** consente di definire la lista dei conti e/o sottoconti che andranno a valorizzare questo livello del modello. Non è consentito l'inserimento dello stesso conto o sottoconto con lo stesso tipo saldo nello stesso livello, mentre questo può essere inserito in altri punti del riclassificato senza alcun vincolo. È consentito l'inserimento del solo conto (mastro) generico: il caso tipico è il conto generico che contiene i sottoconti di anagrafica, senza dettagliare la lista dei clienti/fornitori nel modello che causerebbe la necessità di un continuo allineamento dei vari modelli.
+### PREGLED DODIJELJIVANJE KONTA
 
-Il **tipo di saldo** della singola riga di conto o sottoconto prevede le seguenti possibilità: 
+Pregled **konta** omogućava definiranje popisa konta i/ili podkonta koji će valorizirati ovaj nivo modela. Nije
+dopušten unos istog konta ili podkonta s istim tipom salda u istom nivou, dok se isti može unositi u druge dijelove reklasifikacije bez ikakvih ograničenja. Dopušten je unos samo općeg konta (glavnog): tipičan slučaj je opći konto koji sadrži podkonta iz evidencije, bez detaljnog popisa kupaca/dobavljača u modelu koji bi zahtijevao stalnu usklađenost raznih modela.
 
-**Generale** (sarà inserito il saldo del sottoconto indipendentemente dal suo segno; nel caso di conto generico, sarà inserita la somma dei saldi dei sottoconti appartenenti a quel conto), 
+**Tip salda** pojedinog retka konta ili podkonta uključuje sljedeće mogućnosti: 
 
-**Dare** (sarà inserito il saldo del sottoconto solo se questo ha segno dare; nel caso di conto generico, sarà inserita la somma dei saldi dare dei sottoconti appartenenti a quel conto), 
+**Općenito**  (bit će unesen saldo podkontoa neovisno o njegovom znaku; u slučaju općeg konta, bit će unesen zbroj salda podkonta koji pripadaju tom kontu),
 
-**Avere** (sarà inserito il saldo del sottoconto solo se questo ha segno avere; nel caso di conto generico, sarà inserita la somma dei saldi avere dei sottoconti appartenenti a quel conto), 
+**Duguje** (bit će unesen saldo podkonta samo ako ima znak dugovanja; u slučaju općeg konta, bit će unesen
+zbroj salda dugovanja podkonta koji pripadaju tom kontu),
 
-**Incremento** (per il sottoconto o conto sarà calcolato il valore come differenza tra la chiusura infrannuale del riclassificato e un'altra chiusura di riferimento: questa tipologia è utile in caso di analisi per flussi).
+**Potražuje** (bit će unesen saldo podkonta samo ako ima znak potraživanja; u slučaju općeg konta, bit će unesen
+zbroj salda potraživanja podkonta koji pripadaju tom kontu),
 
-L'ultimo flag presente in griglia è denominato **Inv. col.**: significa che, sul sottoconto selezionato, il segno del saldo sarà invertito.
+**Povećanje** (za podkonto ili konto izračunat će se vrijednost kao razlika između privremenog zatvaranja reklasifikacije i drugog referentnog zatvaranja: ovaj tip je koristan za analizu prema tijekovima).
 
-:::tip Nota
-Può tornare utile, ad esempio, per detrarre dal saldo di un conto il valore di un suo sottoconto: ad esempio, togliere un cliente intercompany che è stato codificato all'interno del mastro clienti standard, per poterlo gestire in un nodo separato senza duplicare valori
+PosljednjI flag u mreži naziva se **Inverzija kolona**: znači da će se, za odabrani podkonto, znak salda invertirati
+
+:::tip Napomena
+Može biti korisno, na primjer, za oduzimanje od salda jednog konta vrijednosti njegovog podkonta: primjerice, ukloniti interkompanijskog kupca koji je šifriran unutar glavnog konta kupaca, kako bi ga obradili u odvojenom čvoru bez dupliciranja vrijednosti.
 :::
 
-L'inserimento, in questa griglia, può essere effettuato con due metodologie: il caricamento direttamente in griglia, digitando il codice o attraverso l'help conti che consente la selezione di un unico record, oppure l'uso del pulsante ‘Inserimento multiplo sottoconti' per avere un help conti con la selezione multipla attiva.
+Unos u ovaj pregled može se izvršiti s dvije metode: izravnim unosom, unosom šifre ili putem pomoći za konta koja omogućuje odabir jednog zapisa ili korištenjem gumba "Višestruko umetanje podkonta" za aktivaciju višestrukog odabira u pomoći za konta.
 
-### GRIGLIA AGGANCIO CENTRI AZIENDALI
+### PREGLED ZA DODIJELJIVANJE CENTARA PODUZEĆA
 
-Nella griglia dei centri di costo si vanno a caricare i centri di costo che valorizzeranno il livello. I campi disponibili sono i seguenti:
+U mreži centara troškova unose se centri troškova koji će valorizirati razinu. Dostupna polja su:
 
-- **Tipo riga**: il campo è legato alla gestione dei *Cost driver* nel *Controlling* ed è quindi in uso solo nei modelli di tipi legati alla contabilità gestionale del controlling, la selezione possibile è fra
-    - *Sorgente* le righe di analitica assegnate direttamente al centro o attribuite al primo ciclo dei driver
-    - *Ceduta* ad altri Centri di costo, che saranno indicati in griglia
-    - *Ricevuta* da altri Centri di costo, che saranno indicati in griglia
+- **Tip linije**: ovo polje je povezano s upravljanjem nositelja troškova u kontrolingu i stoga se koristi samo u modelima tipova povezanih s računovodstvom kontrole, mogući odabir je između:
+    - *Izvor* analitičkih redaka dodijeljenih izravno centru ili dodijeljenih prvom ciklusu nositelja troškova
+    - *Prodan* Primljeno od drugih centara troškova, koji će biti navedeni u pregledu
+    - *Primka* Primljeno od drugih centara troškova, koji će biti navedeni u pregledu
 
-- **Conto-Sottoconto-Descrizione**: serve per indicare con quale conto (o conto-sottoconto) contabile filtrare i dati dell'analitica o della gestionale
+- **Konto-Podkonto-Opis**: služi za označavanje s kojim kontom (ili konto-podkonto) se filtriraju podaci analitike ili računovodstvenog upravljanja
 
-- [**Centro di costo**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): il campo è facoltativo nei modelli di tipo legato al Controlling, mentre è obbligatorio negli altri casi. E' il centro da utilizzare per filtrare i dati dell'analitica o della gestionale.
+- [**Centri troška**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): polje je opcionalno u modelima povezanima s kontrolingom, dok je obavezno u ostalim slučajevima. To je centar koji će se koristiti
+za filtriranje podataka analitike ili računovodstvenog upravljanja.
 
-- **Inversione colonne**: significa che, sulla riga selezionata, il segno del saldo sarà invertito
+- **Inverzija kolona**: znači da će, za odabrani redak, znak salda biti invertiran
 
-- **Variabili**: il campo è visibile solo nei modelli di tipo legato al Controlling, consente di definire se utilizzare la 
-    - quota *variabile* 
-    - quota *fissa*
-    - *generale* (dare o avere), che è il default quando non indicato
+- **Varijable**: polje je vidljivo samo u modelima povezanima s kontrolingom, omogućuje definiranje hoće li se koristiti 
+    - *promjenjiva* kvota
+    - *fiksna* kvota
+    - *opći* (dugovanje ili potraživanje), koji je zadani tip kada nije označeno
 
-**Tipo saldo**: viene sempre gestito il saldo di tipo *Generale*, solo nei modelli di tipo legato al Controlling dovremo utilizzare i tipi saldo 
-    - *Iniziale*
-    - *Finale* 
+**Tip salda**: uvijek se upravlja saldom tipa Općenito, dok se u modelima povezanima s Kontrolingom koristi tip salda
+    - *Početni*
+    - *Završni* 
     
-per le righe dei sottoconti delle rimanenze iniziali/finali
+za retke podkonta početnih/završnih zaliha
 
 
-### PARTICOLARITA' DEL TIPO NODO CENTRI DI COSTO PER MODELLI DEL CONTROLLING
-Nei modelli con tipo legato al Controlling, abbiamo disponibilità di alcune opzioni specifiche nei nodi dei Centri di costo. In particolare:
+### POSEBNOSTI VRSTE ČVORA U CENTRIMA TROŠKOVA ZA MODELE KONTROLINGA
+U modelima povezanima s kontrolingom, dostupne su neke specifične opcije u čvorovima centara troškova. Posebno:
 
-- **Riferimento percentuale**: serve per capire, nelle comparazioni, qual è il nodo di riferimento per calcolare una percentuale 'verticale' nel modello
+- **Postotna referenca**: služi za razumijevanje, u usporedbama, koji je čvor referenca za izračunavanje postotka "vertikalno" u modelu.
 
-:::tip Nota
-ad esempio lo imposteremo sul totale ricavi in modo da poter capire quanto incide, in percentuale, ogni nodo di costo rispetto ad esso
+:::tip NAPOMENA
+Na primjer, ovo se postavi na ukupne prihode kako bi se moglorazumjeti koliko svaki troškovni čvor doprinosi postotno prema tom čvoru.
 :::
 
-- **Numeratore per calcolo indici**: in un modello di totalizzazione costi dei centri, indica il nodo che totalizza i costi per usarlo come numeratore per il calcolo delle tariffe dei centri
+- **Brojnik za izračunavanje indeksa**: u modelu ukupnog troška centara, označava čvor koji zbraja troškove kako bi ga koristio kao brojnik za izračun tarifa centara.
 
-- **Variabili**: consente di definire se utilizzare la 
-    - quota *variabile* 
-    - quota *fissa*
-    - *generale* (dare o avere), che è il default quando non indicato
+- **Varijable**: omogućuje definiranje hoće li se koristiti
+    - *promjenjiva* kvota
+    - *fiksna* kvota
+    - *općenito* (dugovanje ili potraživanje), koji je zadani tip kada nije označeno
 
-l'indicazione a livello di nodo viene applicata se non è indicata a livello di singola riga in griglia
+Oznaka na razini čvora primjenjuje se ako nije označena na razini pojedinog retka u mreži
 
-- **Indice del nodo**: non utilizzato
+- **Indeks čvora**: ne koristi se
 
-### PARTICOLARITA' DEL TIPO NODO CENTRI DI COSTO PER MODELLI DI CONSOLIDATO DI PROGETTO/COMMESSA
+### POSEBNOSTI VRSTE ČVORA ZA CENTRE TROŠKOVA ZA MODELE KONSOLIDACIJE PROJEKTA/NALOGA
 
-- **Numeratore per calcolo redditività**: indica il nodo che totalizza il margine di progetto/commessa
+- **Brojnik za izračun profitabilnosti**: označava čvor koji zbraja maržu projekta/naloga
 
-- **Tipo sorgente**: indica che tipo di origine dati andrà a valorizzare il nodo. Sono possibili le seguenti origini:
-    - *Contabile*: utilizzato tipicamente per il nodo che totalizza i ricavi diretti di commessa, il dato arriva nella gestionale dalla contabilità
-    - *Manuale*: per dati che arrivano da registrazioni extracontabili di area
-    - *Formula*: per dati che arrivano dalle formule di calcolo
-    - *Ammortamenti*: per dati che arrivano dal calcolo tecnico degli ammortamenti nel controlling
-    - *Stanziamenti residui*: per i conguagli di fine periodo, solitamente non utilizzato
-    - *Reversione a tariffa*: solitamente non utilizzato
-    - *Rimanenze*: per dati che arrivano dalla contabilizzazione delle rimanenze nel controlling
-    - *Materiali*: per evidenziare i consumi degli articoli (materiali) in produzione
-    - *Lavorazioni esterne*: per evidenziare i costi delle lavorazioni esterne (dal conto lavoro)
-    - *Trasformazione*: per evidenziare i costi delle lavorazioni interne (dalla produzione)
-    - *Tempo macchina*: per mostrare i tempi macchina impiegati nella produzione
-    - *Tempo uomo*: per mostrare i tempi uomo impiegati nella produzione
-    - *Tempo macchina attrezzaggio*: per mostrare i tempi attrezzaggio macchina
-    - *Tempo uomo attrezzaggio*: per mostrare i tempi attrezzaggio uomo
-    - *Consolidamento*: per le registrazioni di consolidamento intercompany, solitamente non utilizzato
+- **Vrsta izvora**: označava koja vrsta izvora podataka će valorizirati čvor. Mogući izvori uključuju sljedeće:
+    - *Knjiženje*: tipično korišten za čvor koji zbraja direktne prihode, podaci dolaze iz računovodstva
+    - *Ručni obračun*: za podatke koji dolaze iz izvanknjigovodstvenih unosa
+    - *Formula*: za podatke koji dolaze iz formula za izračun
+    - *Amortizacije*: za podatke koji dolaze iz tehničkog izračuna amortizacija u kontrolingu
+    - *Ostatci*: za usklađenja na kraju razdoblja, obično se ne koristi
+    - *Preokret po tarifi:*: obično se ne koristi
+    - *Zalihe*: za podatke koji dolaze iz računovodstvenih zaliha u kontrolingu
+    - *Materijali*:za prikaz troškova potrošnjen materijala u proizvodnjo
+    - *Vanjsko djelovanje*: za prikaz troškova vanjskih radova (s računa za rad)
+    - *Transformacija*: za prikaz troškova unutrašnje obrade (iz proizvodnje)
+    - *Vrijeme stroja*: za prikaz vremena korištenja strojeva u proizvodnji
+    - *Vrijeme ljudskih resursa*: za prikaz vremena rada ljudi u proizvodnji
+    - *Vrijeme pripreme stroja*: za prikaz vremena za pripremu stroja
+    - *Vrijeme pripreme ljudi*: za prikaz vremena za pripremu ljudi
+    - *Konsolidacija*: za unos konsolidacijskih podataka između tvrtki, obično se ne koristi.
