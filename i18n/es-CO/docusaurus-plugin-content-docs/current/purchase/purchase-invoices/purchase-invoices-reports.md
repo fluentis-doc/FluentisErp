@@ -1,11 +1,11 @@
 ---
-title: stampe
+title: Informes
 sidebar_position: 6
 ---
 
-Están disponibles diferentes **stampe** estándar. Para visualizar una vista previa de cada impresión, es necesario establecer los filtros deseados y presionar el botón *anteprima* en la barra de herramientas. Esta operación mostrará la impresión en pantalla sin modificar el estado del documento. Si es necesario proceder con la impresión en papel o guardarla en un archivo, se debe hacer clic en el botón *stampa*.
+Están disponibles diferentes **Informes** estándar. Para visualizar una vista previa de cada impresión, es necesario establecer los filtros deseados y presionar el botón *Vista previa* en la barra de herramientas. Esta operación mostrará la impresión en pantalla sin modificar el estado del documento. Si es necesario proceder con la impresión en papel o guardarla en un archivo, se debe hacer clic en el botón *stampa*.
 
-### Impresión de Facturas de Compra (Stampa Fatture di Acquisto)
+### Impresión de Facturas de Compra
 
 Este informe sirve para imprimir masivamente las facturas de compra ya ingresadas en el sistema, según los filtros especificados en el formulario inicial. La primera opción que se solicita es la elección entre la impresión *Temporal (Temporanea)* y la impresión *definitiva*: la diferencia entre los dos tipos es que la temporal no tiene ningún efecto en el estado de la factura, mientras que la impresión en papel o digital realizada en definitiva lleva el documento al estado *controllato*.  
 Los primeros filtros que se nos muestran son los relativos a la información del encabezado de los documentos, como el *tipo fattura*, el *numero documento*, el *fornitore* y el *progetto*.  

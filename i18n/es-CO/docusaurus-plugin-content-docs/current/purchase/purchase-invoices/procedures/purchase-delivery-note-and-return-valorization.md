@@ -43,18 +43,18 @@ A diferencia de los dos procedimientos análogos [Valorización DDT de compra](/
 - **Tipo de factura**: indica el tipo de factura a crear.
 - **Clasificar DDT por número de documento del proveedor**: si está configurado, permite insertar los retornos dentro de las facturas resumidas ordenándolos por *número de documento*. De lo contrario, los retornos serán ordenados por fecha de documento.  
 
-*riferimenti rientro*
+*Devolver referencias*
 
-- **metti riferimenti rientri**: si este indicador está activado, en la pestaña [Artículos (Articoli)](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) de la factura se mostrará un *Artículo nota* que recogerá las referencias del retorno del cual se ha creado la factura. El contenido de esta nota debe ser ingresado en el campo *descrizione*, de acuerdo con los parámetros descritos en la etiqueta. 
+- **Mantener referencias de retorno**: si este indicador está activado, en la pestaña [Artículos](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) de la factura se mostrará un *Artículo nota* que recogerá las referencias del retorno del cual se ha creado la factura. El contenido de esta nota debe ser ingresado en el campo *descripción*, de acuerdo con los parámetros descritos en la etiqueta. 
 
-:::tip Recuerda (Ricorda)
-Para la facturación resumida, es necesario establecer en los [Parámetros de agrupación de facturas (Parametri raggruppamento fatture)](/docs/configurations/parameters/purchase/invoice-grouping/) las condiciones de agrupación a utilizar. 
+:::tip Recuerda 
+Para la facturación resumida, es necesario establecer en los [Parámetros de agrupación de facturas](/docs/configurations/parameters/purchase/invoice-grouping/) las condiciones de agrupación a utilizar. 
 :::
 
 *Botones específicos*: 
 
-> **salva parametri ddt**: permite guardar los parámetros establecidos para la valorización de los DDT de compra.   
-> **Guardar parámetros de retornos (Salva parametri rientri)**: permite guardar los parámetros establecidos para la valorización de los retornos de trabajo por encargo.
+> **Guardar parámetros de DDT**: permite guardar los parámetros establecidos para la valorización de los DDT de compra.   
+> **Guardar parámetros de retornos**: permite guardar los parámetros establecidos para la valorización de los retornos de trabajo por encargo.
 
 Después de haber seleccionado los DDT (desde la pestaña *Valorización*) y establecido los parámetros, se puede crear la factura con la ayuda del botón *valorizzazione*.
 
@@ -62,8 +62,8 @@ Después de haber seleccionado los DDT (desde la pestaña *Valorización*) y est
 
 La última pestaña es la de restauración: se puede utilizar para filtrar, visualizar y anular las operaciones.
 
-En la cuadrícula superior se visualizan todas las facturas creadas. Al seleccionar una, se puede ver en las cuadrículas inferiores el **nome operatore** y la fecha de la valorización, el **ddt di acquisto** o el **Retorno de trabajo por encargo (Rientro di conto lavoro)** desde el cual se generó la factura, con la lista de los artículos valorados. También hay la posibilidad de abrir el DDT, el retorno o la factura generada haciendo doble clic en la línea deseada.
+En la cuadrícula superior se visualizan todas las facturas creadas. Al seleccionar una, se puede ver en las cuadrículas inferiores el **Nombre del operador** y la fecha de la valorización, la **Notas de entrega de compra.** o el **Retorno de trabajo por encargo** desde el cual se generó la factura, con la lista de los artículos valorados. También hay la posibilidad de abrir el DDT, el retorno o la factura generada haciendo doble clic en la línea deseada.
 
 *Botones específicos*:
-> **ricerca valorizzazioni**: para buscar las facturas creadas y los DDT valorados en base a los filtros establecidos. El resultado de este procedimiento se visualiza en la cuadrícula de resultados.  
-> **Restaurar facturas (Rirpistino fatture)**: para cancelar la factura seleccionada en la cuadrícula inferior.
+> **Buscar valorizaciones**: para buscar las facturas creadas y los DDT valorados en base a los filtros establecidos. El resultado de este procedimiento se visualiza en la cuadrícula de resultados.  
+> **Restaurar facturas**: para cancelar la factura seleccionada en la cuadrícula inferior.
