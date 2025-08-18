@@ -31,5 +31,5 @@ Nakon što su parametri izmijenjeni, da bi se mogli koristiti, promjene se moraj
 U ovom pregledu moguće je pretraživati *račune* prethodno kreirane postupkom valorizacije.   
 Mogu se pretraživati *računi* u svrhu vraćanja pomoću dostupnih filtera.   
 Prva tablica sadrži izvršene operacije, dok druga tablica sadrži **Račune** i **Reklamacije** za svaku operaciju.   
-Za otkazivanje operacija, mora se odabrati operacije koje se želi otkazati/izbrisati i pritisnuti gumb **Povrati stvaranje**.   
+Za otkazivanje operacija, mora se odabrati operacije koje se želi otkazati i pritisnuti gumb **Povrati stvaranje**.   
 Za poništavanje pojedinačnih faktura iz više faktura kreiranih u istoj operaciji, moraju se u donjoj tablici odabrati fakture koje se žele izbrisati i pritisnuti gumb **Povrati račun**.   
