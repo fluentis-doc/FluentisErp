@@ -1,27 +1,27 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo **Reporting** consente all'operatore di gestire le riclassificazioni di bilancio, sia sui dati di contabilità generale che sui dati della contabilità analitica per centro di costo. Oltre ai report, è presente una potente procedura di comparazione delle riclassificazioni elaborate, sia sui dati di generale che quelli di contabilità gestionale, in questo secondo caso potendo confrontare liberamente aree di analisi e periodi (mesi o settimane a seconda della configurazione iniziale) differenti.
-Il modulo è presente nell'area *Controlling* e legge come dati di origine quelli elaborati nella *Chiusura infrannuale* o nelle *Registrazioni gestionali*: questa seconda opzione è disponibile solo per le società che hanno attivato e configurato il *Controlling*.
+Modul **Reporting** omogućuje operateru upravljanje reklasifikacijama bilance, kako na podacima iz glavnog knjigovodstva, tako i na podacima iz analitičkog računovodstva po troškovnim centrima. Osim izvještaja, dostupan je i napredan postupak usporedbe izrađenih reklasifikacija, i na podacima iz glavnog knjigovodstva i na onima iz upravljačkog računovodstva; u potonjem slučaju moguće je slobodno uspoređivati različita područja analize i razdoblja (mjesece ili tjedne, ovisno o početnoj konfiguraciji).
+Modul se nalazi u području *Kontrolinga* i koristi kao izvorne podatke one obrađene u *Međuzatvaranju* ili u *Upravljačkim knjiženjima*. Ova druga opcija dostupna je samo za društva koja su aktivirala i konfigurirala *Kontroling*.
 
-## Configurazione iniziale del modulo
-- [***Tipi riclassificazione***](/docs/configurations/tables/controlling/reporting/reclassification-types): per definire le tipologie delle riclassificazioni da gestire.
+## Početna konfiguracija modula
+- [***Tipovi reklasifikacije***](/docs/configurations/tables/controlling/reporting/reclassification-types): za definiranje vrsta reklasifikacija koje će se koristiti.
 
-- [***Modelli di riclassificazione***](/docs/controlling/reclassifications/create-reclassification-model): verificare la completezza dei modelli precaricati da Fast start, rispetto ad eventuali codifiche custom a livello di Piano dei conti.
+- [***Sheme reklasifikacije***](/docs/controlling/reclassifications/create-reclassification-model): potrebno je provjeriti potpunost unaprijed učitanih modela iz Fast start opcije u odnosu na eventualne prilagođene šifrarnike na razini Kontnog plana.
 
 
-## Documenti gestiti
+## Upravljani dokumenti
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/controlling/reclassifications/create-reclassification-model">Modelli di riclassificazione</Link>
-        <p>- per definire la struttura logica di visualizzazione e valorizzazione della reportistica</p>
-###     <Link to="/docs/controlling/reclassifications/reclassifications-management" className="bold-link">Riclassificazioni</Link>
-        <p>- per applicare i dati di una chiusura infrannuale ad un modello di riclassificazione</p>
-###     <Link to="/docs/controlling/reclassifications/comparations" className="bold-link">Comparazione riclassificazioni</Link>
-        <p>- per comparare i dati dei riclassificati, basati sullo stesso modello di riclassificazione, tra anni e periodi differenti</p>
+###     <Link to="/docs/controlling/reclassifications/create-reclassification-model">Sheme reklasifikacije</Link>
+        <p>- za definiranje logičke strukture prikaza i vrednovanja izvještavanja</p>
+###     <Link to="/docs/controlling/reclassifications/reclassifications-management" className="bold-link">Reklasifikacije</Link>
+        <p>- za primjenu podataka međuzatvaranja na model reklasifikacije</p>
+###     <Link to="/docs/controlling/reclassifications/comparations" className="bold-link">Usporedba reklasifikacije</Link>
+        <p>- za usporedbu podataka reklasificiranih na temelju istog modela reklasifikacije, između različitih godina i razdoblja</p>
     </div>
 </div>
