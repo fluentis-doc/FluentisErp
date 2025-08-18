@@ -1,7 +1,7 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo **Previsioni di vendita** consente all'operatore di gestire l'elaborazione del previsionale di vendita, sia annuale che di periodo, dettagliato per famiglia prodotto, per agente, per area geografica.
-Il modulo è presente nell'area *Controlling* e legge come dati di origine quelli di ordini, bolle e fatture di vendita.
+Modul **Plan prodaje** omogućuje operateru upravljanje izradom prodajnih planova i prognoza, kako godišnjih tako i periodičnih, s detaljima po proizvodnoj grupi, prodajnom agentu i geografskom području.
+Modul se nalazi u području *Kontrolinga* i koristi kao izvorne podatke narudžbe, otpremnice i prodajne račune.
