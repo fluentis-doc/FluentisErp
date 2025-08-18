@@ -1,43 +1,43 @@
 ---
-title: Reclami - 8D problem solving
+title: Reklamacije - 8D rješavanje problema
 sidebar_position: 3
 ---
 
 
-## Oggetti reclamati
+## Predmeti reklamacije
 
-E' l'elenco degli *Oggetti reclamati* e si compone delle seguenti informazioni:   
-> **Oggetto**   
->> **Bar code**: può essere utilizzato per aggiungere o sostituire l'Articolo, Lotto, Numero seriale e Unità di carico.   
->> Per tutte le informazioni su come codificare i barcode consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).   
->> **Classe**: è la *Classe articolo* reclamato.   
->> **Codice articolo**: è il codice dell'*Articolo* reclamato.   
->> **Descrizione articolo**: è la descrizione dell'*Articolo* reclamato.   
->> **Variante**: è la codice variante dell'*Articolo* reclamato.   
->> **Lotto**: è il codice del *Lotto* interno dell'*Articolo* reclamato.   
->> **Numero seriale**:  è il *Numero seriale* dell'*Articolo* reclamato.   
->> **Unità di carico**: è l'*Unità di carico* di origine che conteneva l'Articolo* reclamato.   
->> L'inserimento di una *Unità di carico* comporta l'automatico inserimento di tutte le righe di dettaglio *Articolo* presenti in essa.   
->> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Reclami* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articoli* uguali verranno riportate in un'unica riga con le quantità sommate.   
+Ovo je popis *Predmeta reklamacije* i sastoji se od sljedećih informacija:
+> **Predmet**   
+>> **Barkod**: može se koristiti za dodavanje ili zamjenu artikla, serije, serijskog broja i jedinice utovara.   
+>> Za sve informacije o kodiranju barkodova pogledati stranicu [Barkod numeracija](/docs/configurations/tables/general-settings/barcode-tokenizer).   
+>> **Klasa**: ovo je *Klasa artikla* za koju se traži reklamacija.   
+>> **Šifra artikla**: ovo je šifra *artikla* reklamacije.   
+>> **Opis predmeta**: Ovo je opis *predmeta* reklamacije.   
+>> **Varijanta**: ovo je šifra varijante *artikla*.   
+>> **Lot**: je interna šifra *lota* traženog *artikla*.   
+>> **Serijski broj**: Ovo je *serijski broj* *artikla*.   
+>> **Utovarna jedinica**: Ovo je originalna *utovarna jedinica* koja je sadržavala *artikl*.   
+>> Umetanjem *jedinice za utovar* automatski se stavljaju svi retci s detaljima *artikla* koji se u njoj nalaze.  
+>> Ako je u *Parametrima neusklađenosti*, za godinu datuma dokumenta, u sekciji *Reklamacije*, označeno *razvrstavanje podataka utovarne jedinice*, retci s jednakim *artiklima* bit će prikazani u jednom retku s dodanim količinama.   
 >  
-> **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* principale dell'*Articolo* reclamato.   
->> **Venduta**: è la quantità di *Articolo* venduta al mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Contestata**: è la quantità di *Articolo* contestata dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Resa**: è la quantità di *Articolo* resa dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Rilavorata**: è la quantità di *Articolo* rilavorata dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Accettata**: è la quantità di *Articolo* accettata; il valore deve essere inserito manualmente.   
+> **Kvaliteta**   
+>> **Mjerna jedinica**: *Mjerna jedinica* traženog *artikla*.
+>> **Prodano**: ovo je količina *artikla* prodanog pošiljatelju *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.  
+>> **Osporeno**: ovo je količina *artikla* koju je pošiljatelj *Reklamacije* osporio; vrijednost se mora unijeti ručno.   
+>> **Povrat**: ovo je količina *artikla* koju je vratio pošiljatelj *Reklamacije*; vrijednost se mora unijeti ručno.   
+>> **Prerađeno**: ovo je količina *artkla* koju je preradio podnositelj *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.   
+>> **Prihvaćeno**: ovo je prihvaćena količina *artikla*; ovu vrijednost potrebno je unijeti ručno.
 >
-> **Valore**   
->> **Reclamato**: è il valore reclamato dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Accettato**: è il valore accettato; il valore deve essere inserito manualmente.   
+> **Vrijednost**   
+>> **Reklamirano**: ovo je vrijednost koju je zatražio pošiljatelj *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.
+>> **Prihvaćeno**: ovo je prihvaćena vrijednost; vrijednost se mora unijeti ručno.
 >
-> **Dati reso**   
->> **Autorizzazione al rientro**: indica che si autorizza il rientro dell'*Articolo* reso per la *Quantità accettata*.   
->> **Data rientro prevista**: è la data prevista di rientro dell'*Articolo* reso.   
->> **Lotto**: è il *lotto* di rientro dell'*Articolo* reso.   
->> **Numero seriale**:  è il *Numero seriale* di rientro dell'*Articolo* reso.   
->> **Unità di carico**: è l'*Unità di carico* di rientro dell'*Articolo* reso.   
+> **Povrat”**   
+>> **Ovlaštenje za povrat**: označava da se odobrava povrat vraćenog *Artikla* za *Prihvaćenu količinu*.   
+>> **Očekivani datum povrata**: ovo je očekivani datum povrata vraćenog *Artikla*.   
+>> **Lot**: je *povratni lot* vraćenog *Artikla*.   
+>> **Serijski broj**: Ovo je *serijski broj* vraćenog *artikla*.   
+>> **Jedinica utovara**: je *Jedinica utovara* vraćenog *artikla*.   
 
 
 ### Dati oggetto
