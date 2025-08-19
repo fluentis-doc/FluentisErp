@@ -40,47 +40,47 @@ Ovo je popis *Predmeta reklamacije* i sastoji se od sljedećih informacija:
 >> **Jedinica utovara**: je *Jedinica utovara* vraćenog *artikla*.   
 
 
-### Dati oggetto
+### Podaci o predmetu
 
-Sono le informazioni aggiuntive alla riga dell'*Oggetto reclamato* selezionato. Le informazioni gestite sono:   
-> **Progetto**: è il riferimento al *Progetto* del *Difetto* specifico*.   
-> **Note articolo**: annotazioni libere sull'*Articolo* del *Difetto* specifico*.   
-> **Note lotto**: annotazioni libere sul *Lotto* del *Difetto* specifico*.   
-> **Note unità di carico**: annotazioni libere sulla *Unità di carico* riga del *Difetto* specifico*.   
-> **Note**: annotazioni libere sulla riga del *Difetto* specifico*.   
-> **DDT cliente**: è il riferimento alla *Bolla di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia venduto l'*Articolo* .   
-> **Fattura di vendita**: è il riferimento alla *Fattura di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia fatturato l'*Articolo*.   
-> **Ricevimento merce**: è il riferimento al *Ricevimento merce* (*Tipo*, *Anno* e *Numero*), con il quale il mittente rende l'*Articolo*.   
-> **DDT di acquisto**: è il riferimento alla *Bolla di acquisto* (*Tipo*, *Anno* e *Numero*), con il quale il mittente rende l'*Articolo*.   
+Ovo su dodatne informacije za odabrani redak *reklamacije*. Informacije su:   
+> **Projekt**: To je referenca na *Projekt* određenog *nedostatka*.   
+> **Napomene o artiklu**: slobodne napomene o *artiklu* određenog *nedostatka*.  
+> **Napomene o lotu**: slobodne napomene o *lotu* određenog *nedostatka*.   
+> **Napomene o jedinici utovara**: slobodne napomene o *Jedinici utovara* za određeni *nedostatak*.   
+> **Napomena**: napomena za određeni *nedostatak*. 
+> **DDT kupca**: je referenca na *prodajni dokument* (*Vrsta*, *Godina* i *Broj*), za koji se pretpostavlja da je *artikl* prodan.   
+> **Prodajni račun**: je referenca na *Prodajni račun* (*Vrsta*, *Godina* i *Broj*) za koji se pretpostavlja da je *artikl* fakturiran. 
+> **Potvrda o primitku robe**: je referenca na *Potvrdu o primitku robe* (*Vrsta*, *Godina* i *Broj*), s kojom pošiljatelj vraća *artikl*.   
+> **DDT nabave**: je referenca na *Potvrdu o kupnji* (*Vrsta*, *Godina* i *Broj*), s kojom pošiljatelj vraća *artikl*.   
 
-### Extra data
+### Dodatni podaci
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Oggetto reclamato* selezionato.   
-
-
-### Documenti allegati
-
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Oggetto reclamato* selezionato.   
+Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za odabrani *predmet reklamacije*.   
 
 
-## Gestione 8D
+### Povezani dokumenti
+
+Ovdje se mogu umetnuti i pregledati svi dokumenti priloženi odabranom *predmetu reklamacije*.   
 
 
-### Team
+## Upravljanje 8D
 
-E' il gruppo di risorse che prenderanno parte alla gestione del *Reclamo* e si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* da coinvolgere/coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* da coinvolgere/coinvolta.   
+
+### Tim
+
+Ovo je skupina resursa koji će sudjelovati u upravljanju *Reklamacijom* i sastoji se od sljedećih informacija:   
+> **Funkcija u poduzeću**   
+>> **Šifra**: to je šifra *Funkcije tvrtke* koja će biti uključena.   
+>> **Opis**: je opis *Funkcije tvrtke* koja će biti uključena.   
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* da coinvolgere/coinvolto.   
->> **Cognome**: è il cognome del *Dipendente* da coinvolgere/coinvolto.   
->> **Nome**: è il nome del *Dipendente* da coinvolgere/coinvolto.   
+> **Zaposlenik**
+>> **Šifra**: je šifra *zaposlenika* koji će biti uključen.   
+>> **Prezime**: je prezime *zaposlenika* koji će biti uključen.   
+>> **Ime**: ime *zaposlenika* koji će biti uključen.   
 >   
-> **Leader**: indica che il soggetto da coinvolgere/coinvolto è il *Team leader*.   
-> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto da coinvolgere/coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
-> **Note**: annotazioni libere.   
+> **Voditelj**: označava da je osoba koja će biti uključena/uključene *Voditelj tima*.   
+> **Opis teme**: slobodna napomena u slučaju da tema koja će biti uključena/uključene nije *Funkcija tvrtke* ili *Zaposlenik*.   
+> **Napomena**: slobodne bilješke.   
 
 
 ### Azioni di contenimento
