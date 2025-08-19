@@ -1,30 +1,33 @@
 ---
-title: Unità di misura
+title: Jedinice mjere
 sidebar_position: 13
 ---
 
-All'interno della tabella delle ***Unità di misura*** dovremo innanzi tutto andare a codificare tutte quelle unità di misura che si dovessero rendere necessarie per la gestione del *Controlling*: andremo a codificare, tipicamente, le ore uomo e le ore macchina per riprendere i dati da produzione, piuttosto che le unità che servono alle registrazioni manuali della ***Prima nota movimenti fisici*** (kww, mq, nr teste, nr postazioni telefoniche, ecc. ecc.). Per ognuna di queste UM dovremo in particolare andare a definire la proprietà ***Tipo valutazione del tempo***, che prevede due opzioni:
+U tablici ***Jedinice mjere*** potrebno je šifrirati sve jedinice mjere koje su neophodne za upravljanje *kontrolingom*. Tipično će to biti radni sati ljudi i radni sati strojeva, kako bi se podaci mogli preuzeti iz proizvodnje, ali i druge jedinice koje su potrebne za ručne unose u ***Zapisu fizičkih kretanja*** (kWh, m², broj radnih mjesta, broj telefonskih priključaka itd.).
 
-- ***Stato***: quando le quantità rilevate sono sostanzialmente fisse, cioè si replicano ad ogni periodo
-- ***Flusso***: quando sono specifiche del singolo periodo
+Za svaku od ovih jedinica mjere posebno je važno definirati svojstvo **Vrsta procjene vremena**, koje može imati dvije opcije:
 
-:::tip nota
-L'impostazione è determinante per la gestione che ***FluentisERP*** richiederà nell'inserimento delle quantità nella maschera della ***Prima nota movimenti fisici***: l'inserimento di una UM di *Stato* ***non richiederà***  l'indicazione obbligatoria di un ***Periodo di distribuzione***, in quanto la quantità indicata sarà replicata per ogni periodo del range inserito, mentre al contrario una UM di *Flusso* ***richiederà*** obbligatoriamente un ***Periodo di distribuzione*** per spalmare la quantità su ogni periodo del range inserito
+- ***Stanje***: kada su evidentirane količine u osnovi fiksne i ponavljaju se u svakom razdoblju.
+- ***Tijek***: kada su specifične za pojedino razdoblje.
+
+:::tip Napomena
+Ova postavka je ključna za način na koji će ***FluentisERP*** zahtijevati unos količina u ***Zapisu fizičkih kretanja***: Ako se unosi ***jedinica mjere tipa Stanje***, nije potrebno obavezno unositi razdoblje distribucije, jer će se unesena količina replicirati za svaki period unutar zadanog raspona. Ako se unosi ***jedinica mjere tipa Tijek***, obavezno je definirati razdoblje distribucije kako bi se količina rasporedila na sve periode unutar unesenog raspona.
 :::
 
-Per la ripresa da produzione dei tempi, inoltre, è necessario tener conto che le *dichiarazioni di produzione* rilevano sempre i tempi in *minuti*, e quindi abbiamo necessità di configuare come ***FluentisERP*** deve gestire la conversione nelle Unità di misura utilizzate per rilevare i tempi dei centri.
-Dovremo innanzi tutto definire la conversione tra i minuti della produzione e la UM dei tempi che utilizzeremo nel *Controlling*: se abbiamo ad esempio una UM 'ore uomo', allora all'interno della tabella ***Unità di misura***, quindi, indicheremo nel tab ***Conversioni tra altre UM***
-- *UM alternativa*: 'Min' (cioè la UM che ha i flag ***UM tempo***  e ***Minuti*** settati)
-- *Fatt. Conv.*: 60
-- *Da moltiplicare*: flag settato
+Kod preuzimanja podataka o vremenu iz proizvodnje, treba uzeti u obzir da se *deklaracije proizvodnje* uvijek evidentiraju u *minutama*. Stoga je potrebno konfigurirati način na koji će ***FluentisERP*** izvršiti konverziju u jedinice mjere koje se koriste za evidentiranje vremena u kontrolingu. 
 
-In secondo luogo, dovremo agganciare queste UM del Controlling ai nostri *Centri aziendali produttivi*, cosa che si esegue nella tabella ***Unità di misura dei centri aziendali per il controlling***. In questa maschera andremo a configurare:
+Prvi korak je definiranje konverzije između minuta iz proizvodnje i jedinice mjere vremena koja će se koristiti u *kontrolingu*. Ako, primjerice, postoji jedinica mjere "radni sat čovjeka", tada će se u tabeli  ***Jedinica mjere***, unutar taba/kartice **Konverzije među ostalim jedinicama mjere**, definirati sljedeće postavke
+- *Alternativna jedinica mjere*: 'Min' (jedinica koja ima označene opcije ***Jedinica vremena*** i ***Minute***).
+- *Faktor konverzije*: 60
+- *Za umnožiti*: flag/opcija označena
 
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento della configurazione
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) produttivo che avrà una valorizzazione dei tempi da produzione
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo attrezzaggio***
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo uomo***
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo macchina***
-- il range ***Da data*** e ***A data*** di validità della configurazione
-- i flag che indicano se considerare o meno i vari tempi nel calcolo della produttività del centro
+Drugi korak je povezivanje ovih jedinica mjere kontrolinga s proizvodnim poslovnim centrima. To se podešava u tabeli ***Mjerne jedinice poslovnih centara za kontroling***. Ovdje se konfiguriraju sljedeći parametri:
+
+- Referentno [***područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) konfiguracije
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) kojem se dodjeljuju podaci o vremenu iz proizvodnje
+- Jedinica mjere za evidentiranje  ***vremena ponovnog opremanja***
+- Jedinica mjere za evidentiranje ***vremena ljudske radne snage***
+- Jedinica mjere za evidentiranje ***vremena stroja***
+- Raspon datuma važenja konfiguracije ***(Od datuma – Do datuma)*** 
+- Flagovi za uključivanje ili isključivanje različitih vremenskih podataka u izračun produktivnosti centra
 
