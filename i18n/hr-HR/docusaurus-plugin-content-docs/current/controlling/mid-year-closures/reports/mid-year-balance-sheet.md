@@ -1,24 +1,24 @@
 ---
-title: Bilancio infrannuale
+title: Bilanca perioda
 sidebar_position: 1
 ---
 
-La stampa consente di eseguire una stampa sintetica delle sezioni di bilancio base sui dati della chiusura infrannuale (o del *consolidamento*) selezionata.
+Ispis omogućuje izvršavanje sažetog ispisa osnovnih sekcija bilance na temelju odabrane među­bilance (ili *konsolidacije*).
 
-**Consolidato**: attivando il flag la combo box permetterà di selezionare chiusure consolidate tramite la procedura di [**consolidamento**](/docs/controlling/mid-year-closures/consolidation-entry) anzichè chiusure ordinarie (della singola società). 
+**Konsolidirano**: aktiviranjem ove opcije padajući izbornik omogućit će odabir konsolidiranih bilanci putem postupka [**konsolidacije**](/docs/controlling/mid-year-closures/consolidation-entry), umjesto običnih bilanci (pojedinačnog društva).  
 
-**Visualizza importi con segno negativo**: opzione analoga a quella contenuta nelle stampe del [bilancio di esercizio](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) dell'area amministrazione.
+**Prikaži iznose s negativnim predznakom**: opcija jednaka onoj koja se nalazi u ispisima [godišnje bilance](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) u području administracije.
 
-**Visualizza Anagrafiche**: rende visibile nel bilancio il dettaglio dei saldi per le anagrafiche clienti/fornitori 
+**Prikaz registra**: omogućuje prikaz u bilanci detalja salda po analitikama kupaca/dobavljača.
 
-**Visualizza saldo in valuta**: rende visibile il dettaglio del saldo in valuta per i conti che nel piano dei conti hanno la gestione valutaria attiva 
+**Prikaz prodane valute**: omogućuje prikaz detalja salda u valuti za račune koji u kontnom planu imaju aktivno valutno praćenje. 
 
 
-**Confrontare**: effettuare un confronto tra due chiusure infrannuali specifiche. Attivando il flag si attiva la seconda combo box di selezione della chiusura da confrontare alla principale
+**Usporediti**: omogućuje usporedbu dviju specifičnih među­bilanci. Aktiviranjem opcije aktivira se drugi padajući izbornik za odabir bilance koju treba usporediti s glavnom.
 
-**Visualizza dati per centro di costo**: Con questo flag verranno riportati in stampa i dati presenti nella sezione *analitica* della chiusura (quindi solo l’economico normalmente), con i dati totalizzati per centro di costo e di seguito per conto/sottoconto.
+**Prikaži podatke po centru troška**: aktiviranjem ove opcije u ispisu će se prikazati podaci iz *analitičkog* dijela bilance (uglavnom ekonomski dio), s podacima zbrojenima po centrima troška, a zatim po računu/podračunu.
 
-**ATTENZIONE**: attivando questo flag utilizzare il secondo report di stampa selezionabile dalla tendina nella ribbon bar denominato ***Bilancio per centri aziendali***
+**UPOZORENJE**: aktiviranjem ove opcije potrebno je koristiti drugi izvještaj za ispis, dostupan u padajućem izborniku na traci s alatima, pod nazivom ***Bilanca po poslovnim centrima***.
 
 
 
