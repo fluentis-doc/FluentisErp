@@ -79,47 +79,47 @@ Ovo je skupina resursa koji će sudjelovati u upravljanju *Reklamacijom* i sasto
 >> **Ime**: ime *zaposlenika* koji će biti uključen.   
 >   
 > **Voditelj**: označava da je osoba koja će biti uključena/uključene *Voditelj tima*.   
-> **Opis teme**: slobodna napomena u slučaju da tema koja će biti uključena/uključene nije *Funkcija tvrtke* ili *Zaposlenik*.   
+> **Opis predmeta**: slobodna napomena u slučaju da predmet koja će biti uključena/uključene nije *Funkcija tvrtke* ili *Zaposlenik*.   
 > **Napomena**: slobodne bilješke.   
 
 
-### Azioni di contenimento
+### Mjere suzbijanja
 
-Sono le azioni immediate che verranno intraprese fino all’implementazione dell’azione correttiva permanenti.   
-Queste permetteranno che il problema segnalato non si ripresenti e si compone delle seguenti informazioni:   
-> **Dati azione**   
->> **Sequenza**: è la *Sequenza* di visualizzazione delle *Azione di contenimento*; viene proposto un progressivo con la possibilità di essere variato.   
->> **Azione di contenimento**: annotazione libera sull'*Azione di contenimento* da effettuare.   
->> **Data scadenza**: è la data entro la quale si deve completare le attività inerenti all'*Azione di contenimento*.   
->> **Attuata**: indica che l'*Azione di contenimento* è stata completata.   
->> **Data attuazione**: è la data in cui l'*Azione di contenimento* è stata completata.   
+To su neposredne mjere koje će se poduzeti dok se ne provedu trajne korektivne mjere.   
+To će osigurati da se prijavljeni problem ne ponovi i sastoje se od sljedećih informacija:  
+> **Podaci o akciji**   
+>> **Slijed**: to je *Slijed* prikazivanja *Mjera suzbijanja*; predlaže se progresivni slijed s mogućnošću mijenjanja.   
+>> **Mjera suzbijanja**: slobodna bilješka o *Mjeri suzbijanja* koja će se provesti.   
+>> **Rok dospijeća**: ovo je datum do kojeg se moraju dovršiti aktivnosti povezane s *Mjerom suzbijanja*.  
+>> **Provedeno**: Označava da je *Mjeri suzbijanja* dovršena.   
+>> **Datum provedbe**: Ovo je datum na koji je *Mjera suzbijanja* dovršena.   
 >
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* responsabile dell'azione.    
->> **Descrizione**: è la descrizione della *Funziona aziendale* responsabile dell'azione.   
+> **Funkcija u poduzeću**   
+>> **Šifra**: to je šifra *Funkcije tvrtke* koja će biti uključena.   
+>> **Opis**: je opis *Funkcije tvrtke* koja će biti uključena.      
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* responsabile dell'azione.   
->> **Cognome**: è il cognome del *Dipendente* responsabile dell'azione.   
->> **Nome**: è il nome del *Dipendente* responsabile dell'azione.   
+> **Zaposlenik**
+>> **Šifra**: je šifra *zaposlenika* koji će biti uključen.   
+>> **Prezime**: je prezime *zaposlenika* koji će biti uključen.   
+>> **Ime**: ime *zaposlenika* koji će biti uključen.    
 >   
-> **Riferimento azione correttiva**   
->> **Tipo**, **Anno**, e **Numero**: sono i riferimenti, in sola lettura, all'*Azione correttiva* associata alla riga dell'*Azione di contenimento* e generata tramite il pulsante **Crea azione correttiva**.   
+> **Referenca korektivnih mjera**   
+>> **Vrsta**, **Godina** i **Broj**: ovo su reference samo za pregled *Korektivne mjere* povezanu s retkom *Mjere suzbijanja* i generiranu putem gumba **Stvori korektivnu mjeru**.   
 >   
-> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto responsabile dell'azione, non sia *Funziona aziendale* o *Dipendente*.   
-> **Note**: annotazioni libere.   
+> **Opis predmeta**: napomena u slučaju da osoba odgovorna za radnju nije *Funkcija tvrtke* ili *Zaposlenik*.  
+> **Napomena**: slobodne bilješke. 
 
 
-### Cause
+### Uzrok
 
-Sono le potenziali *Cause* che potrebbero spiegare perché il problema è accaduto con l'attribuzione di una percentuale di probabilità.   
-> **Sequenza**: è la *Sequenza* di visualizzazione delle *Cause*; viene proposto un progressivo con la possibilità di essere variato.   
-> **Causa** e **Descrizione causa**: è la causa che ha probabilmente generato il problema; è possibile inserire solamente le *Cause* attive e previste dai *Reclamo*.   
-> **Descrizione aggiuntiva**: annotazioni libere sulla *Causa*.   
-> **Tipo causa**: è il tipo di causa; ne esistono di tue tipi previsti: la tipologia che ha permesso il generarsi dell'*Evento* e quello che ne ha permesso le *Fuga* senza che l'*Evento* venisse rilevato.   
-> **Peso (%)**: è il peso (espresso in percentuale) di ogni singola *Causa*. La sommatoria di tutti i Pesi deve essere il 100%.   
-> **Dati del problema**: annotazione libera sull'argomento.   
-> **Note**: annotazioni libere.   
+Ovo su potencijalni *uzroci* koji bi mogli objasniti zašto se problem pojavio dodjeljivanjem postotka vjerojatnosti.   
+> **Slijed**: je *Slijed* prikazivanja *Uzroka*; predlaže se progresivni slijed s mogućnošću promjene.   
+> **Uzrok** i **Opis uzroka**: Ovo je uzrok koji je vjerojatno generirao problem; mogu se unijeti samo aktivni *Uzroci* koji su obuhvaćeni *Reklamacijama*.  
+> **Dodatni opis**: slobodne bilješke o *Uzroku*.
+> **Vrsta uzroka**: ovo je vrsta uzroka; postoje dvije vrste: vrsta koja je omogućila generiranje *Događaja* i vrsta koja je omogućila *Bijeg* bez otkrivanja *Događaja*.  
+> **Težina (%)**: Ovo je težina (izražena kao postotak) svakog pojedinog *Uzroka*. Zbroj svih težina mora biti 100%.  
+> **Podaci o problemu**: slobodna bilješka o temi/predmetu.  
+> **Napomena**: slobodne bilješke.  
 
 
 ### Azioni permanenti
