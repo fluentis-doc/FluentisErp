@@ -1,9 +1,9 @@
 ---
-title: Brogliaccio chiusure
+title: Kartica zatvaranja
 sidebar_position: 2
 ---
 
-La stampa può essere lanciata dalla maschera di Ricerca registrazioni extracontabili di chiusura e consente di stampare, appunto, le registrazioni extracontabili associate ad una determinata chiusura infrannuale.
+Ispis se može pokrenuti iz obrasca Zatvaranje izvanknjigovodstvenih knjiženja i omogućuje ispis izvanknjigovodstvenih knjiženja povezanih s određenim privremenim zatvaranjem.
 
 
 
