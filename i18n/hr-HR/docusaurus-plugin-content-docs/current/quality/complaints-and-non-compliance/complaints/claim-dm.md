@@ -120,67 +120,67 @@ Mogu se unijeti [Dodatni podaci](/docs/configurations/utility/extra-data/extrada
 U ovom pregledu mogu se umetnuti i pregledati svi dokumenti priloženi odabranom *Reklamiranom artiklu*.   
 
 
-### Materiali utilizzati
+### Korišteni materijali
 
-In questo elenco è possibile indicare i materiali che sono stati utilizzati per porre rimedio al *Difetto* selezionato.   
-L'elenco si compone delle seguenti informazioni:   
+Na ovom popisu možete navesti materijale korištene za otklanjanje odabranog *Nedostatka*.
+Popis uključuje sljedeće informacije:   
 >   
-> **Articolo**   
->> **Classe**: è la *Classe articolo*.   
->> **Codice**: è il codice dell'*Articolo*.   
->> **Descrizione**: è la descrizione dell'*Articolo*.   
->> **Variante**: è la codice variante dell'*Articolo*.   
->> **Lotto**: è il codice del lotto interno utilizzato.   
->> **Numero seriale**:  è il numero seriale utilizzato.   
+> **Artikl**   
+>> **Klasa**: to je *klasa artikla*.   
+>> **Šifra**: to je šifra *artikla*.   
+>> **Opis**: opis *artikla*.   
+>> **Varijanta**: varijanta *artikla*.   
+>> **Lot**: to je interni lot artikla.   
+>> **Serijski broj**: korišteni serijski broj.   
 >   
-> **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo*.   
->> **Quantità consumata**: è la quantità di *Articolo* utilizzata per porre rimedio al *Difetto* selezionato.   
+> **Količina**   
+>> **Mjerna jedinica**: *Mjerna jedinica* *artikla*, samo za čitanje  
+>> **Potrošena količina**: ovo je količina *artikla* korištena za otklanjanje odabranog *nedostatka*.
 >   
-> **Valore**   
->> **Costo unitario**: è il costo unitario dell'*Articolo*; il valore deve essere inserito manualmente.   
->> **Costo totale**:  viene proposto come rapporto tra *Quantità consumata* e *Costo unitario*; il costo può essere variato.   
+> **Vrijednost**
+>> **Jedinična cijena**: ovo je jedinična cijena *artikla*; vrijednost se mora unijeti ručno.
+>> **Ukupna cijena**: ovo je omjer između *Potrošene količine* i *Jedinične cijene*; cijena se može mijenjati.  
 >
-> **Note**: annotazioni libere.   
+> **Napomena**: slobodne bilješke.   
 
 
-### Soggetti coinvolti
+### Uključeni subjekti
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Difetto" selezionato.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la *Sequenza* di visualizzazione dei "Soggetti coinvolti*; viene proposto un progressivo con la possibilità di essere variato.   
+Kartica sadrži informacije o *Funkcijama tvrtke* i/ili *Zaposlenicima* koji će biti uključeni u upravljanje odabranim *Nedostatkom*.
+Popis se sastoji od sljedećih informacija:  
+> **Slijed**: je *Slijed* prikaza "Uključenih subjekata*; predlaže se progresivni broj s mogućnošću promjene.  
 >
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+> **Funkcija tvrtke**
+>> **šifra**: ovo je šifra uključene *Funkcije tvrtke*.
+>> **Opis**: ovo je opis uključene *Funkcije tvrtke*.   
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **Zaposlenik**
+>> **Šifra**: ovo je šifra uključenog *zaposlenika*.
+>> **Opis**: ovo je prezime i ime uključenog *zaposlenika*. 
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Reclamo* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Reclamo* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Upravljanje angažmanom**   
+>> **Opis predmeta**: napomena u slučaju da tema/predmet nije *Funkcija tvrtke* ili *Zaposlenik*.
+>> **Razlog sudjelovanja**: slobodne bilješke o temi/predmetu.  
+>> **Datum isteka**: ovo je datum do kojeg uključena osoba mora dovršiti aktivnosti povezane s razlogom svog sudjelovanja.  
+>> **Odgovor**: slobodne bilješke o temi/predmetu.   
+>> **Zatvoreno**: označava da je angažman ispitanika završen.   
+>> Samo *Funkcija ili osoba odgovorna* za *Reklamaciju* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može zaključiti angažman.  
+>> Prilikom zatvaranja, *Datum zatvaranja* se automatski predlaže, predlaže se kao današnji datum i može se promijeniti.   
+>> **Datum zatvaranja**: ovo je datum kada je sudjelovanje ispitanika završeno.  
+>> Samo *Funkcija ili odgovorna osoba* za *Reklamaciju* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može umetnuti ili promijeniti ovaj datum.
+>> Kada unesete datum, automatski se postavlja oznaka *Zatvoreno*.   
 >
-> **Nota**: annotazioni libere.   
+> **Napomena**: slobodne bilješke.     
 
 
-### Extra data
+### Dodatni podaci
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Difetto* selezionato.   
-
-
-### Documenti allegati
-
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Difetto* selezionato.   
+Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za odabrano *Nedostatak*.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+### Povezani dokumenti
+
+U ovom popisu mogu se umetnuti i pregledati svi dokumenti priloženi odabranom *Nedostatku*.   
+
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
