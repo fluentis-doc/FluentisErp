@@ -69,7 +69,7 @@ Ovdje se mogu umetnuti i pregledati svi dokumenti priloženi odabranom *predmetu
 ### Tim
 
 Ovo je skupina resursa koji će sudjelovati u upravljanju *Reklamacijom* i sastoji se od sljedećih informacija:   
-> **Funkcija u poduzeću**   
+> **Funkcija tvrtke**   
 >> **Šifra**: to je šifra *Funkcije tvrtke* koja će biti uključena.   
 >> **Opis**: je opis *Funkcije tvrtke* koja će biti uključena.   
 >   
@@ -94,7 +94,7 @@ To će osigurati da se prijavljeni problem ne ponovi i sastoje se od sljedećih 
 >> **Provedeno**: Označava da je *Mjeri suzbijanja* dovršena.   
 >> **Datum provedbe**: Ovo je datum na koji je *Mjera suzbijanja* dovršena.   
 >
-> **Funkcija u poduzeću**   
+> **Funkcija tvrtke**   
 >> **Šifra**: to je šifra *Funkcije tvrtke* koja će biti uključena.   
 >> **Opis**: je opis *Funkcije tvrtke* koja će biti uključena.      
 >   
@@ -122,83 +122,83 @@ Ovo su potencijalni *uzroci* koji bi mogli objasniti zašto se problem pojavio d
 > **Napomena**: slobodne bilješke.  
 
 
-### Azioni permanenti
+### Trajne radnje
 
-Sono le azioni permanenti che verranno intraprese tenendo presente che le stesse oltre a risolvere il problema, non causeranno effetti collaterali indesiderati.   
-L'elenco si compone delle seguenti informazioni:   
-> **Dati azione**   
->> **Sequenza**: è la *Sequenza* di visualizzazione delle *Azione permanente*; viene proposto un progressivo con la possibilità di essere variato.   
->> **Azione permanente**: annotazione libera sull'*Azione permanente* da effettuare.   
->> **Causa origine** e **Descrizione causa origine**: è la causa, tra quelle specificate precedentemente nel tabulatore **Cause**, sulla quale si andrà ad effettuare l'*Azione*.   
->> **Data scadenza**: è la data entro la quale si deve completare le attività inerenti all'*Azione permanente*.   
->> **Attuata**: indica che l'*Azione permanente* è stata completata e la *Data attuazione* viene automaticamente proposta alla data odierna, con la possibilità di essere variata.   
->> **Data attuazione**: è la data in cui l'*Azione permanente* è stata completata. All'atto dell'inserimento della data viene impostato il flag *Attuata*.   
+To su trajne radnje (mjere) koje će se poduzeti, imajući na umu da, osim što će riješiti problem, neće uzrokovati neželjene nuspojave.
+Popis se sastoji od sljedećih informacija:   
+> **Podaci o radnji** 
+>> **Slijed**: je *Slijed* prikaza *trajnih radnji*; predlaže se progresivni slijed s mogućnošću mijenjanja.   
+>> **Trajna radnja**: slobodna napomena o *trajnoj radnji* koja će se izvršiti.  
+>> **Uzrok izvora** i **Opis uzroka izvora**: ovo je uzrok, među onima prethodno navedenima na kartici **Uzroci**, na temelju kojeg će se izvršiti *Radnja*.   
+>> **Rok dospijeća**: ovo je datum do kojeg se moraju dovršiti aktivnosti povezane s *trajnom radnjom*.   
+>> **Provedeno**: označava da je *Trajna radnja* dovršena i da je *Datum provedbe* automatski postavljen na današnji datum, s mogućnošću promjene.   
+>> **Datum provedbe**: ovo je datum kada je *Trajna radnja* dovršena. Zastavica *Prevedeno* postavlja se kada se unese datum.   
 >
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* responsabile dell'azione.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* responsabile dell'azione.   
+> **Funkcija tvrtke**   
+>> **Šifra**: to je šifra *Funkcije tvrtke* koja će biti uključena.   
+>> **Opis**: je opis *Funkcije tvrtke* koja će biti uključena.      
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* responsabile dell'azione.   
->> **Cognome**: è il cognome del *Dipendente* responsabile dell'azione.   
->> **Nome**: è il nome del *Dipendente* responsabile dell'azione.   
+> **Zaposlenik**
+>> **Šifra**: je šifra *zaposlenika* koji će biti uključen.   
+>> **Prezime**: je prezime *zaposlenika* koji će biti uključen.   
+>> **Ime**: ime *zaposlenika* koji će biti uključen.    
 >   
-> **Riferimento azione correttiva**   
->> **Tipo**, **Anno**, e **Numero**: sono i riferimenti, in sola lettura, all'*Azione correttiva* associata alla riga dell'*Azione permanente* e generata tramite il pulsante **Crea azione correttiva**.   
+> **Referenca na korektivne radnje**   
+>> **Vrsta**, **Godina** i **Broj**: ovo su reference samo za čitanje na *Korektivnu radnju* povezanu s retkom *Trajna radnja* i generiranu pomoću gumba **Stvori korektivnu radnju**.   
 >   
-> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto responsabile dell'azione, non sia *Funziona aziendale* o *Dipendente*.   
-> **Note**: annotazioni libere.   
+> **Opis predmeta**: napomene ako osoba odgovorna za radnju nije *Funkcija tvrtke* ili *Zaposlenik*.
+> **Napomene**: slobodne napomene.   
 
 
-### Convalida azioni
+### Validiranje radnji
 
-Elenco, precompilato con tutte le *Azioni permanenti* precedentemente inserite ed *Attuate*, utilizzato per il controllo che le *Azioni* siano portate a termine entro le date previste e per valutarne l’implementazione e l’efficacia. Da questo elenco non è quindi possibile inserire nuove *Azioni* o eliminane di esistenti. L'elenco si compone delle seguenti informazioni:   
-> **Dati azione attuata**   
->> **Sequenza**: è la *Sequenza* di visualizzazione delle *Azione permanente*; viene riportato il progressivo dell'*Azione permanente*. L'informazione è di sola lettura.   
->> **Azione permanente**: *Azione permanente* effettuata. L'informazione è di sola lettura.   
->> **Causa origine** e **Descrizione causa origine**: è la *Causa di origine* dell*Azione permanente* effettuata. L'informazione è di sola lettura.   
+Unaprijed popunjen popis svih prethodno unesenih i dovršenih *Trajnih Radnji*. Ovaj se popis koristi za provjeru jesu li *Radnje* dovršene do planiranih rokova te za procjenu njihove provedbe i učinkovitosti. Stoga, nije moguće dodavati nove *Radnje* ili brisati postojeće s ovog popisa. Popis sadrži sljedeće informacije:  
+> **Podaci o provedenoj radnji**  
+>> **Slijed**: Ovo je *Slijed* u kojem je prikazana *Trajna radnja*; prikazan je progresivni broj *Trajne radnje*. Ove su informacije samo za čitanje.   
+>> **Trajna radnja**: izvršena *Trajna radnja*. Ove su informacije samo za čitanje.
+>> **Uzrok izvora** i **Opis uzroka izvora**: ovo je *Uzrok izvora* izvršene *Trajne radnje*. Ove su informacije samo za čitanje.   
 >
-> **Dati convalida azione attuata**   
->> **Convalidata il**: è la data in cui l'*Azione permanente* è stata convalidata.   
-All'inserimento di una qualsiasi altra informazione viene automaticamente proposta alla data odierna, con la possibilità di essere variata.   
->> **Test attuati per convalidare l'efficacia dell'azione**: annotazione libera sull'argomento.   
+> **Podaci o validaciji za poduzete radnje**  
+>> **Potvrđeno**: Ovo je datum na koji je *Trajna radnja* potvrđena.   
+Prilikom unosa bilo kojeg drugog podatka, on se automatski prikazuje kao trenutni datum, s mogućnošću promjene.   
+>> **Testovi provedeni radi provjere učinkovitosti djelovanja**: slobodna bilješka.  
 >
-> **Convalidata dalla Funzione**   
->> **Codice**: è il codice della *Funziona aziendale* responsabile della convalida.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* responsabile della convalida.   
+> **Potvrda od strane funkcije tvrtke**   
+>> **Šifra**: ovo je šifra *Funkcije tvrtke* odgovorne za validaciju.
+>> **Opis**: ovo je opis *Funkcije tvrtke* odgovorne za validaciju. 
 >   
-> **Convalidata dal Dipendente**   
->> **Codice**: è il codice del *Dipendente* responsabile della convalida.   
->> **Cognome**: è il cognome del *Dipendente* responsabile della convalida.   
->> **Nome**: è il nome del *Dipendente* responsabile della convalida.   
+> **Potvrda od strane zaposlenika**   
+>> **Šifra**: je šifra *zaposlenika* koji je uključen.   
+>> **Prezime**: je prezime *zaposlenika* koji je uključen.   
+>> **Ime**: ime *zaposlenika* koji je uključen.   
 >   
-> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto responsabile dell'*Azione*, non sia *Funziona aziendale* o *Dipendente*.   
+> **Opis predmeta**: slobodna napomena u slučaju da osoba odgovorna za *Radnju* nije *Funkcija u poduzeću* ili *Zaposlenik*.  
 
 
-### Fasi
+### Faze
 
-Sono altre attività dove implementare altre azioni. L'elenco si compone delle seguenti informazioni:   
-> **Fasi identificate e/o implementate**   
->> **Sequenza**: è la *Sequenza* di visualizzazione della *Fase*.   
->> **Attività da intraprendere**: annotazione libera dell'*Attività* da effettuare per il completamento della fase.   
->> **Data implementazione prevista**: è la data prevista di completamento dell'*Attività*.   
->> **Attività intrapresa**: annotazione libera dell'*Attività* effettuata per il completamento della fase.   
->> **Data implementazione**: è la data effettiva di completamento dell'*Attività*.   
+Ovo su druge radnje/aktivnosti u kojima treba provesti daljnje radnje. Popis uključuje sljedeće informacije: 
+> **Identificirani i/ili provedeni koraci**   
+>> **Slijed**: je *Slijed* prikazivanja *Faze*.   
+>> **Aktivnost koju treba poduzeti**: slobodna bilješka o *Aktivnosti* koju treba poduzeti za dovršetak faze.  
+>> **Očekivani datum provedbe**: ovo je očekivani datum završetka *Aktivnosti*.   
+>> **Provedena aktivnost**: bilješka o *Aktivnosti* provedenoj za dovršetak faze.   
+>> **Datum provedbe**: ovo je stvarni datum završetka *Aktivnosti*.   
 >
-> **Convalidata dalla Funzione**   
->> **Codice**: è il codice della *Funziona aziendale* responsabile della convalida.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* responsabile della convalida.   
+> **Potvrda od strane funkcije tvrtke**  
+>> **Šifra**: ovo je šifra *Funkcije tvrtke* odgovorne za validaciju.
+>> **Opis**: ovo je opis *Funkcije tvrtke* odgovorne za validaciju. 
 >   
-> **Convalidata dal Dipendente**   
->> **Codice**: è il codice del *Dipendente* responsabile della convalida.   
->> **Cognome**: è il cognome del *Dipendente* responsabile della convalida.   
->> **Nome**: è il nome del *Dipendente* responsabile della convalida.   
+> **Potvrda od strane zaposlenika**   
+>> **Šifra**: je šifra *zaposlenika* koji je uključen.   
+>> **Prezime**: je prezime *zaposlenika* koji je uključen.   
+>> **Ime**: ime *zaposlenika* koji je uključen.     
 >   
-> **Riferimento azione correttiva**   
->> **Tipo**, **Anno**, e **Numero**: sono i riferimenti, in sola lettura, all'*Azione correttiva* associata alla riga dell'*Attività* e generata tramite il pulsante **Crea azione correttiva**.   
+> **Referenca na korektivne radnje**   
+>> **Vrsta**, **Godina** i **Broj**: ovo su reference samo za čitanje na *Korektivnu radnju* povezanu s retkom *Aktivnosti* i generiranu pomoću gumba **Stvori korektivnu radnju**.    
 >   
-> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto responsabile dell'*Attività*, non sia *Funziona aziendale* o *Dipendente*.   
-> **Note**: annotazioni libere.   
+> **Opis predmeta**: napomene u slobodnom obliku ako osoba odgovorna za *Aktivnost* nije *Funkcija tvrtke* ili *Zaposlenik*.
+> **Napomene**: Napomene u slobodnom obliku.  
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
