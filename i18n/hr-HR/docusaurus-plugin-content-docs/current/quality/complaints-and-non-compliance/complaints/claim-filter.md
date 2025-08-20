@@ -1,22 +1,22 @@
 ---
-title: Ricerca Reclami
+title: Pretraživanje reklamacija
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Reclami e Non conformità > Reclami**.   
+Filter se nalazi na putanji **Kvaliteta > Reklamacije i nesukladnosti > Reklamacije**.  
 
-Il filtro dati consente di inserire nuovi *Reclami* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+Filter podataka omogućuje unos novih *Reklamacija* ili pretraživanje postojećih kako bi se pregledale, izmijenile ili izbrisale.  
 
-### ![](/img/neutral/common/search.png) Ricerca Reclami
+### ![](/img/neutral/common/search.png) Pretraživanje reklamacija
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikni tipka **Traži** da bi se vidjeli rezultate u prikazu rezultata.   
 
-### ![](/img/neutral/common/new.png) Inserimento Reclami
+### ![](/img/neutral/common/new.png) Unos reklamacija
 
-Per poter inserire nuovi *Reclami* è necessario premere il pulsante **Nuovo**.   
+Za unos novih *Reklamacija* potrebno je pritisnuti gumb **Novo**.   
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Reclami
+### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) prikaz reklamacija
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na željeni redak, odabirom jednog ili više redaka, treba pritisnuti tipku **Izmijeni** ili **Prikaži**.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).
