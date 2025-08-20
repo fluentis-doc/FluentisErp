@@ -10,7 +10,7 @@ Napomena: Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funk
 
 Unutar ove tablice moguće je kodirati grupe računa korisne za upravljanje izvještavanjem specifičnim za kontroling.
 
-![](/img/it-it/controlling/controlling-parametrization/controlling-specific-settings/adjustment-groups/adjustment-groups-199c61dab5d20badc9f5feb5a9a093b5.png)
+![](/img/it-it/controlling/controlling-parametrization/controlling-specific-settings/adjustment-groups/image01.png)
 
 Neki kontni računi ne koriste se odmah, izravno, u kontrolingu, već samo neizravno i naknadno;
 
