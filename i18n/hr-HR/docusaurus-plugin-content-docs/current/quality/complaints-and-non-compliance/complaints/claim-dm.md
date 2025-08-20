@@ -1,123 +1,123 @@
 ---
-title: Reclami - Gestione difetti
+title: Reklamacije - Upravljanje nedostacima
 sidebar_position: 4
 ---
 
 
-## Gestione difetti
+## Upravljanje nedostacima
 
-E' l'elenco delle difettosità riscontrate dal mittente del documento e si compone delle seguenti informazioni:   
-> **Sequenza**: è la *Sequenza* di visualizzazione delle difettosità; viene proposto un progressivo con la possibilità di essere variato.   
+Ovo je popis nedostataka koje je pronašao pošiljatelj dokumenta i sastoji se od sljedećih informacija:  
+> **Slijed**: ovo je *Slijed* za prikaz nedostataka; predlaže se progresivni slijed s mogućnošću promjene.   
 >  
-> **Difetto riscontrato**
->> **Codice**: è il codice del *Difetto riscontrato*; è possibile inserire solamente i *Difetti* attivi e previsti dalla tipologia del *Reclamo* del documento.   
->> **Descrizione**: informazione di sola lettura è la descrizione del *Difetto riscontrato*.   
->> **Note**: annotazioni libere sul *Difetto riscontrato*.   
+> **Pronađen nedostatak**
+>> **Šifra**: ovo je šifra *Pronađenog nedostatka*; moguće je unijeti samo *Nedostatke* koji su aktivni i predviđeni vrstom *Reklamacije* dokumenta.   
+>> **Opis**: informacije samo za čitanje koje opisuju *Pronađeni nedostatak*.
+>> **Napomene**: slobodno napisani komentari o *Pronađenom nedostatku*.  
 >  
-> **Causa presunta**
->> **Codice**: è il codice della *Causa presunta* che ha generato la difettosità; è possibile inserire solamente le *Cause*, presunte, attive e previste dalla tipologia del *Reclamo* del documento; la *Causa presunta*, successivamente ad una analisi sugli *Oggetti difettosi*, può venire confermata o meno nella *Causa effettiva*.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Causa presunta*.   
->> **Note**: annotazioni libere sulla *Causa presunta*.   
+> **Pretpostavljeni uzrok**
+>> **Šifra**: ovo je šifra *Pretpostavljenog uzroka* koji je generirao nedostatak; moguće je unijeti samo *Uzroke*, pretpostavljene, aktivne i predviđene vrstom *Reklamacije* dokumenta; *Pretpostavljeni uzrok*, nakon analize *Neispravnih predmeta*, može se potvrditi ili ne u *Stvarnom uzroku*.  
+>> **Opis**: informacije samo za čitanje koje opisuju *Pretpostavljeni uzrok*.
+> **Napomene**: napomene u slobodnom obliku o *Pretpostavljenom uzroku*.  
 >  
-> **Fase di rilevamento**
->> **Codice**: è il codice della *Fase di rilevamento* del processo dove si è riscontrata la difettosità; è possibile inserire solamente le *Fasi di rilevamento* attive.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Fase di rilevamento*.   
->> **Note**: annotazioni libere sulla *Fase di rilevamento*.   
+> **Faza detekcije**
+>> **Šifra**: je šifra *Faze detekcije* procesa u kojem je pronađen kvar; moguće je unijeti samo aktivne *Faze detekcije*.
+>> **Opis**: informacije samo za čitanje koje opisuju *Fazu otkrivanja*.
+>> **Napomene**: napomene u slobodnom obliku o *Fazi otkrivanja*.  
 >  
-> **Quantità**
-> Informazioni sintetiche da utilizzarsi esclusivamente se non si desidera dettagliare le *Quantità* nella sessione degli *Oggetti reclamati*. Queste *Quantità* non vengono considerate in alcun calcolo.   
->> **Venduta**: è la quantità di *Articoli* venduta al mittente del *Reclamo*.   
->> **Contestata**: è la quantità di *Articoli* contestata dal mittente del *Reclamo*.   
->> **Resa**: è la quantità di *Articoli* resa dal mittente del *Reclamo*.   
+> **Količina**
+> Sažetak informacija koristi se isključivo ako se ne žele detaljno navesti *Količine* u odjeljku *Reklamiranim predmetima*. Ove *Količine* se ne uzimaju u obzir ni u kakvim izračunima**.   
+>> **Prodano**: ovo je količina *artikala* prodanih pošiljatelju *reklamacije*.   
+>> **Osporeno**: količina *artikala* koje je pošiljatelj *reklamacije* osporio.  
+>> **Povrat**: predstavlja količinu *artikala* koje je vratio pošiljatelj *reklamacije*.  
 >   
-> **Riferimento azione correttiva**   
->> **Tipo**, **Anno**, e **Numero**: sono i riferimenti, in sola lettura, all'*Azione correttiva* associata alla riga del '*Difetto* e generata tramite il pulsante **Crea azione correttiva**.   
+> **Referenca na korektivne radnje**  
+>> **Vrsta**, **Godina** i **Broj**: ovo su reference samo za čitanje na *Korektivnu radnju* povezanu s retkom '*Nedostatak*' i generiranu pomoću gumba **Stvori korektivnu radnju**. 
 >   
-> **In garanzia**: indicazione manuale se il *Difetto riscontrato* è coperto da garanzia. Questa informazione non viene considerata in alcun calcolo.   
-> **Chiuso**: indica che la gestione del *Difetto* è stata completata; deve essere indicato manualmente dall'operatore.   
-> All'atto della chiusura vengono automaticamente proposte: *Data chiusura*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.* (*Data chiusura*, *Nome* e *Persona* sono informazioni presenti nel tabulatore *Dati difetto*).   
-> La chiusura di tutti i *Difetti* non comporta automaticamente la chiusura del *Reclamo*.   
-> **Note**: annotazioni libere.   
+> **Pod jamstvom**: ručna naznaka je li *Pronađeni nedostatak* pokriven jamstvom. Ova se informacija ne uzima u obzir u izračunima.  
+> **Zatvoreno**: označava da je upravljanje *Kvarom* završeno; operater ovo mora ručno naznačiti.   
+> Prilikom zatvaranja, automatski se predlažu sljedeći podaci: *Datum zatvaranja*, predložen kao današnji datum s mogućnošću promjene, *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezani i *Zaposlenik* povezan s *A.R.M. korisnikom* (*Datum zatvaranja*, *Ime* i *Osoba* su informacije prisutne na kartici *Zadani podaci*).  
+> Zatvaranje svih *Nedostataka* ne zatvara automatski *Zahtjev*.  
+> **Napomena**: slobodne bilješke.   
 
 
-### Dati difetto
+### Podaci o nedostacima
 
-Sono le informazioni aggiuntive alla riga *Difetto* selezionato. Le informazioni gestite sono:   
-> **Gravità** è la *Gravità* attribuita alla difettosità; è possibile inserire solamente le *Gravità* attive.   
-> **Causa effettiva**: è la causa effettiva che ha generato la difettosità; è possibile inserire solamente le *Cause*, effettive, attive e previste dalla tipologia del *Reclamo* del documento.   
-> **Note causa effettiva**: annotazioni libere sulla *Causa effettiva*.   
-> **Soluzione proposta**: è il suggerimento di soluzione tecnica/commerciale/amministrativa da adottare; è possibile inserire solamente le *Soluzioni* attive.   
-> **Note soluzione proposta**: annotazioni libere sulla *Soluzione proposta*.   
-> **Decisione intrapresa**: è la decisione tecnica/commerciale/amministrativa effettuata per la risoluzione del difetto; è possibile inserire solamente le *Decisioni* attive.   
-> **Note decisione intrapresa**: annotazioni libere sulla *Decisione intrapresa*.   
-> **Risoluzione commerciale**: è la decisione commerciale/amministrativa effettuata per la risoluzione del difetto; è possibile inserire solamente le *Decisioni* attive.   
-> **Note risoluzione commerciale**: annotazioni libere sulla *Risoluzione commerciale*.   
-> **Data chiusura**: è la data in cui la gestione del *Difetto* specifico è stata completata.   
-> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso* presente nella riga del *Difetto* selezionato.   
-> **Nome**: è l'*Utente A.R.M.* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
-> **Persona**: è il *Dipendente* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
-> **Funzione**: è la *Funzione aziendale* che ha chiuso il *Difetto*.   
+Ovo su dodatne informacije za odabrani redak *Nedostatak*. Upravljane informacije su:   
+> **Stupanj ozbiljnosti** je *Stupanj ozbiljnosti* pripisan kvaru; mogu se unijeti samo aktivni *Stupnji ozbiljnosti*.   
+> **Stvarni uzrok**: ovo je stvarni uzrok koji je generirao nedostatak; moguće je unijeti samo *Uzroke*, učinkovite, aktivne i predviđene vrstom *Reklamacije* dokumenta.  
+> **Bilješke o stvarnom uzroku**: slobodne bilješke o *stvarnom uzroku*.   
+> **Predloženo rješenje**: ovo je predloženo tehničko/komercijalno/administrativno rješenje koje treba usvojiti; mogu se unijeti samo aktivna *Rješenja*.   
+> **Bilješke o predloženom rješenju**: bilješke o *Predloženom rješenju*.   
+> **Donesena odluka**: Ovo je tehnička/komercijalna/administrativna odluka donesena za rješavanje nedostatka; mogu se unijeti samo aktivne *Odluke*.   
+> **Bilješke o donesenoj odluci**: bilješke o *Donesenoj odluci*.   
+> **Komercijalna odluka**: Ovo je komercijalna/administrativna odluka donesena za rješavanje nedostatka; mogu se unijeti samo aktivne *Odluke*.   
+> **Bilješke o komercijalnom rješenju**: bilješke o *Komercijalnom rješenju*.   
+> **Datum zatvaranja**: ovo je datum na koji je dovršeno upravljanje određenim *Nedostatkom*.   
+> Prilikom unosa datuma, automatski se postavlja oznaka *Zatvoreno* u odabranom retku *Nedostatak*.  
+> **Ime**: Ovo je *A.R.M. korisnik* koji je zatvorio *Nedostatak*. Ove informacije su samo za čitanje.   
+> **Osoba**: Ovo je *Zaposlenik* koji je zatvorio *Nedostatak*. Ove informacije su samo za čitanje.   
+> **Funkcija**: je *Funkcija tvrtke* koja je zatvorila *Nedostatak*.   
 
 
-### Oggetti reclamati
+### Predmeti reklamacije
 
-E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selezionato e si compone delle seguenti informazioni:   
-> **Oggetto**   
->> **Bar code**: può essere utilizzato per aggiungere o sostituire l'Articolo, Lotto, Numero seriale e Unità di carico.   
->> Per tutte le informazioni su come codificare i barcode consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).   
->> **Classe**: è la *Classe articolo* reclamato.   
->> **Codice articolo**: è il codice dell'*Articolo* reclamato.   
->> **Descrizione articolo**: è la descrizione dell'*Articolo* reclamato.   
->> **Variante**: è la codice variante dell'*Articolo* reclamato.   
->> **Lotto**: è il codice del *Lotto* interno dell'*Articolo* reclamato.   
->> **Unità di carico**: è l'*Unità di carico* di origine che conteneva l'Articolo* reclamato.   
->> L'inserimento di una *Unità di carico* comporta l'automatico inserimento di tutte le righe di dettaglio *Articolo* presenti in essa.   
->> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Reclami* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articoli* uguali verranno riportate in un'unica riga con le quantità sommate.   
->> **Numero seriale**:  è il *Numero seriale* dell'*Articolo* reclamato.   
+To je popis *Reklamiranih artikala/predmeta* koji se mogu povezati s odabranim *Pronađenim nedostatkom* i sastoji se od sljedećih informacija:  
+> **Predmet**   
+>> **Bar kod**: može se koristiti za dodavanje ili zamjenu artikla, serije, serijskog broja i jedinice utovara.   
+>> Za sve informacije o kodiranju barkodova pogledati stranicu [Barkode brojač].(/docs/configurations/tables/general-settings/barcode-tokenizer).   
+>> **Klasa**: ovo je *Klasa artikla* za koju se traži reklamacija.   
+>> **Šifra artikla**: ovo je šifra *artikla* za koji se traži reklamacija.  
+>> **Opis artikla**: ovo je opis *artikla* za koji se traži reklamacija.   
+>> **Varijanta**: ovo je šifra varijante *artikla* za koji se traži reklamacija.   
+>> **Lot**: je interna šifra *Lota* zatraženog *Artikla*. 
+>> **Utovarna jedinica**: Ovo je originalna *Utovarna jedinica* koja je sadržavala zatraženi *artikl*.   
+>> Umetanjem *utovarne jedinice* automatski se umeću svi retci s detaljima *artikla* koji se u njoj nalaze.   
+>> Ako je u *Parametrima pritužbi i neusklađenosti*, za datum dokumenta po godini, u odjelu *Rewklamacije*, zatraženo *UDC grupiranje podataka*, retci s jednakim *Artiklima* bit će prikazani u jednom retku s dodanim količinama.   
+>> **Serijski broj**: Ovo je *serijski broj* *artikla* za koji se traži reklamacija.   
 >  
-> **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* principale dell'*Articolo* reclamato.   
->> **Venduta**: è la quantità di *Articolo* venduta al mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Contestata**: è la quantità di *Articolo* contestata dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Resa**: è la quantità di *Articolo* resa dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Rilavorata**: è la quantità di *Articolo* rilavorata dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Accettata**: è la quantità di *Articolo* accettata; il valore deve essere inserito manualmente.   
+> **Količina**   
+>> **Mjerna jedinica**: to je *Mjerna jedinica* zatraženog *artikla*, informacije samo za čitanje.  
+>> **Prodano**: ovo je količina *Artikla* prodanog pošiljatelju *Reklamacije*; ovu vrijednost potrebno je unijeti ručno. 
+>> **Osporeno**: ovo je količina *Artikla* koju je pošiljatelj *Reklamacije* osporio; vrijednost se mora unijeti ručno.  
+>> **Povrat**: ovo je količina *Artikla* koju je vratio pošiljatelj *Reklamacije*; vrijednost se mora unijeti ručno.   
+>> **Prerađeno**: ovo je količina *Artikla* koju je preradio podnositelj *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.  
+>> **Prihvaćeno**: ovo je količina prihvaćenog *Artikla*; ovu vrijednost potrebno je unijeti ručno.  
 >
-> **Valore**   
->> **Reclamato**: è il valore reclamato dal mittente del *Reclamo*; il valore deve essere inserito manualmente.   
->> **Accettato**: è il valore accettato; il valore deve essere inserito manualmente.   
+> **Vrijednost**
+>> **Reklamirano**: ovo je vrijednost koju je zatražio pošiljatelj *Reklamacije*; ovu vrijednost treba unijeti ručno.
+>> **Prihvaćeno**: ovo je prihvaćena vrijednost; ovu vrijednost treba unijeti ručno.
 >
-> **Dati reso**   
->> **Autorizzazione al rientro**: indica che si autorizza il rientro dell'*Articolo* reso per la *Quantità accettata*.   
->> **Data rientro prevista**: è la data prevista di rientro dell'*Articolo* reso.   
->> **Lotto**: è il *lotto* di rientro dell'*Articolo* reso.   
->> **Numero seriale**:  è il *Numero seriale* di rientro dell'*Articolo* reso.   
->> **Unità di carico**: è l'*Unità di carico* di rientro dell'*Articolo* reso.   
+> **Podaci o povratu**   
+>> **Ovlaštenje za povrat**: označava da se odobrava povrat vraćenog *Artikla* za *Prihvaćenu količinu*.
+>> **Očekivani datum povrata**: ovo je očekivani datum povrata vraćenog *Artikla*.   
+>> **Lot**: je povratni *lot* vraćenog *Artikla*.   
+>> **Serijski broj**: ovo je *serijski broj* vraćenog *Artikla*.   
+>> **Utovarna jedinica**: je *Utovarna jedinica* vraćenog *Artikla*.   
 
 
-#### Dati oggetto
+#### Podaci o predmetu
 
-Sono le informazioni aggiuntive alla riga dell'*Oggetto reclamato* selezionato. Le informazioni gestite sono:   
-> **Progetto**: è il riferimento al *Progetto* del *Difetto* specifico*.   
-> **Note articolo**: annotazioni libere sull'*Articolo* del *Difetto* specifico*.   
-> **Note lotto**: annotazioni libere sul *Lotto* del *Difetto* specifico*.   
-> **Note unità di carico**: annotazioni libere sulla *Unità di carico* riga del *Difetto* specifico*.   
-> **Note**: annotazioni libere sulla riga del *Difetto* specifico*.   
+Ovo su dodatne informacije za odabrani redak *Reklamiranog artikla/predmeta*. Upravljane informacije su:   
+> **Projekt**: ovo je referenca na *projekt* određenog *nedostatka*.   
+> **Napomene o artiklu**: napomene o *artiklu* određenog *nedostatka*.   
+> **Napomene o lotu**: napomene o *lotu* određenog *nedostatka*.
+> **Napomene o utovarnoj jedinici**: napomene za *Utovarna jedinica* određenog *nedostatka*.
+> **Napomene**: napomene u slobodnom obliku na retku određenog *nedostatka*.  
 
-> **D.D.T. cliente**: è il riferimento alla *Bolla di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia venduto il bene o il servizio contestato.   
-> **Fattura di vendita**: è il riferimento alla *Fattura di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia fatturato il bene o il servizio contestato.   
-> **Ricevimento merce**: è il riferimento al *Ricevimento merce* (*Tipo*, *Anno* e *Numero*), con il quale il mittente rende il bene contestato.   
-> **D.D.T. di acquisto**: è il riferimento alla *Bolla di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia venduto il bene o il servizio contestato.   
-
-
-#### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Oggetto reclamato* selezionato.   
+> **Otpremnica kupcu**: je referenca na *prodajni dokument* (*Vrsta*, *Godina* i *Broj*), kojim se pretpostavlja da je sporna roba ili usluga prodana. 
+> **Prodajni račun**: je referenca na *Prodajni račun* (*Vrsta*, *Godina* i *Broj*) za koji se pretpostavlja da je sporna roba ili usluga fakturirana.   
+> **Potvrda o primitku robe**: je referenca na *Potvrdu o primitku robe* (*Vrsta*, *Godina* i *Broj*), s kojom pošiljatelj vraća spornu robu.   
+> **Dokument nabave**: je referenca na *prodajni dokument* (*Vrsta*, *Godina* i *Broj*), kojim se pretpostavlja da je sporna roba ili usluga prodana.   
 
 
-### Documenti allegati
+#### Dodatni podaci
 
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Oggetto reclamato* selezionato.   
+Mogu se unijeti [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata) za odabrani *Reklamirani artikl/predmet*.  
+
+
+### Povezani dokumenti
+
+U ovom pregledu mogu se umetnuti i pregledati svi dokumenti priloženi odabranom *Reklamiranom artiklu*.   
 
 
 ### Materiali utilizzati
