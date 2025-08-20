@@ -7,6 +7,7 @@ sidebar_position: 12
 Tablice > Kontroling > Analitičko računovodstvo > Grupe poravnanja
 
 Napomena: Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledati sljedeću poveznicu  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+:::
 
 Unutar ove tablice moguće je kodirati grupe računa korisne za upravljanje izvještavanjem specifičnim za kontroling.
 
