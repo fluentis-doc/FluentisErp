@@ -11,6 +11,8 @@ Napomena: Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funk
 
 Unutar ove tablice moguće je kodirati grupe računa korisne za upravljanje izvještavanjem specifičnim za kontroling.
 
+slika
+
 Neki kontni računi ne koriste se odmah, izravno, u kontrolingu, već samo neizravno i naknadno;
 
 PRIMJER: trošak direktora ili naknada nadzornog odbora pojavljuju se uvijek tek nakon što se naprave analize za pojedine mjesece, možda se čak odnoseći na prethodnu poslovnu godinu.
