@@ -1,47 +1,47 @@
 ---
-title: Parametri insoluti
+title: Parametri Neplaćeno
 sidebar_position: 2
 ---
 
-I parametri del modulo **Insoluti** si trovano in **Parametri > Tesoreria**.
+Parametri modula **Potraživanje** nalaze se u **Parametri > Riznica**.
 
-Nei parametri degli insoluti si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo.
+U parametrima neplaćenih stavki mogu se unaprijed postaviti zadane stavke koje će se predlagati u procedurama modula.
 
-*Tipo di registrazione*:  
-> **Conto transitorio + spese di protesto**: con tale impostazione si procederà alla riapertura della partita cliente su un conto transitorio ,per lo stesso importo dell'effetto d'origine, e addebitare le spese al conto bancario.   
-> **Cliente + spese di protesto**: si consiglia l'impostazione della scelta su ‘Cliente +spese di protesto ' al fine di poter riaprire la partita cliente ,per lo stesso importo dell'effetto d'origine, e addebitare le spese al conto bancario.  
+*Tip zapisa*:  
+> **Privremeni račun + troškovi protestacije**: s ovom postavkom otvorit će se stavka klijenta na privremenom računu za isti iznos kao izvorni efekt te će se troškovi terećiti na bankovni račun.   
+> **Klijent + troškovi protestacije**: preporučuje se postavka ‘Klijent + troškovi protestacije’ kako bi se mogla ponovo otvoriti stavka klijenta za isti iznos kao izvorni efekt i terećiti troškove na bankovni račun.
 
-*Gestione partite*:  
-> **Riapertura della partita relativa alla fattura**: si consiglia l'impostazione della scelta su ‘Riapertura della partita relativa alla fattura'. Con questa opzione, infatti la procedura aprirà una nuova partita, ma con gli stessi riferimenti al numero e data documento della fattura d'origine.In caso di effetto riepilogativo di più documenti sarà inserito il primo della lista, ma nelle note della partita sarà gestita la lista di tutti i riferimenti.  
-> **Apertura di una nuova partita**: l'opzione alternativa, apertura di una nuova partita, andrà invece a creare una nuova partita con numero e data documento attribuiti sulla base del numero e data dell'effetto andato insoluto. 
+*Upravljanje dospijećima plaćanja*:  
+> **Ponovno otvaranje dospjele vrijednosti računa**: preporučuje se postavka ‘Ponovno otvaranje stavke vezane uz fakturu’. Ova opcija otvara novu stavku, ali sa istim referencama na broj i datum izvorne fakture. Ako je efekt sažetak više dokumenata, uzet će se prvi s liste, dok će u bilješkama stavke biti navedeni svi ostali referentni dokumenti.  
+> **Otvaranje nove stavke**: alternativna opcija kreira novu stavku s brojem i datumom dokumenta temeljenim na broju i datumu efekta koji je ostao neplaćen. 
 
-*Spese*:
+*Troškovi*:
 
-La sezione è da impostare nel caso si voglia avere un default da proporre per la creazione della fattura al cliente per le spese di insoluto.
+Ovaj odjeljak treba postaviti ako se želi imati zadana postavka koja će se predlagati prilikom kreiranja fakture klijentu za troškove neplaćenih stavki.
 
-> **Tipo fattura**: consente di impostare il tipo di fattura da utilizzare.  
-> **Tipo pag.**: consente di impostare il tipo pagamento da utilizzare.  
-> **Unità di misura**: consente di impostare il l'unità di misura della riga articolo.  
-> **Sol. pagamento**: consente di impostare la soluzione di pagamento per generare la scadenza relativa.  
+> **Vrsta računa**: omogućuje postavljanje tipa fakture koji će se koristiti.  
+> **Vrsta plaćanja**: omogućuje postavljanje tipa plaćanja koji će se koristiti.  
+> **Jedinica mjere**: omogućuje postavljanje jedinice mjere stavke artikla.  
+> **Rok plaćanja**: omogućuje postavljanje rješenja plaćanja za generiranje odgovarajućeg roka plaćanja.  
 
-*Spese di rivalsa*:
+*Troškovi regresije*:
 
-> **Tipo fatturazione**: consente di impostare il fatturato vendite ovvero la contropartita di ricavo con la quale rilevare in prima nota l'operazione.  
-> **Aliq. IVA**: consente di impostare l'aliquota iva. 
+> **Tip izdavanja računa**: omogućuje postavljanje prihoda od prodaje, odnosno konta prihoda kojim se knjiži operacija u glavnu knjigu.  
+> **Postotak PDV-a**: omogućuje postavljanje stope PDV-a. 
 
 *Parametri*:
-> **Causale di contabilità**: è la causale da proporre nelle procedure di contabilizzazione insoluti.  
-> **Conto spese di protesto**: è il conto da utilizzare per rilevare le spese addebitate dalla banca.  
-> **Conto transitorio**: è il sottoconto di transito che sarebbe utilizzato per la contabilizzazione nel caso sia stato impostata la gestione ‘Conto transitorio +spese di protesto '. Si consiglia di compilare comunque il campo (magari con lo stesso conto delle spese) in quanto sarà richiesto obbligatoriamente per l'esecuzione della procedura di contabilizzazione.  
-> **Conto transitorio banca**: è il  conto transitorio banca da utilizzare nel caso in cui l'insoluto sia relativo a effetti non presentati con la procedura (es. in caso di utilizzo del modulo DocFinance). 
+> **Knjigovodstvena oznaka**: oznaka koja se predlaže u procedurama knjiženja neplaćenih stavki.  
+> **Konto troškova protestacije**: konto koji se koristi za evidentiranje troškova naplaćenih od banke.  
+> **Prijelazni konto**: privremeni konto koji bi se koristio za knjiženje ako je postavljena opcija ‘Privremeni konto + troškovi protestacije’. Preporučuje se ipak popuniti ovo polje (može biti isti kao konto troškova) jer će biti obavezno prilikom izvršenja procedure knjiženja.  
+> **Bankovni prijelazni račun**: privremeni bankovni konto koji se koristi ako se neplaćena stavka odnosi na efekte koji nisu prezentirani procedurom (npr. pri korištenju modula DocFinance).
  
-:::danger Attenzione
-Valorizzando questo campo il conto impostato verrà utilizzato, indipendentemente dal settaggio dei flag sopra descritti nella sezione *Tipo di registrazione*, con priorità rispetto al conto di contropartita normalmente movimentato (il conto effetti se l'effetto è *emesso*, il conto s.b.f in testata distinta se l'effetto è *presentato*, ed il conto banca C/C se l'effetto è *accreditato*).
+:::danger Pažnja
+Ako se ovo polje popuni, postavljeni konto će se koristiti bez obzira na postavke zastavica opisane u odjeljku *Tip knjiženja*, s prioritetom u odnosu na normalno korišteni konto protuvrijednosti (konto efekta ako je efekt *izdan*, konto s.b.f. u zaglavlju stavke ako je efekt *prezentiran*, te bankovni račun C/C ako je efekt *priznat*).
 
-**Si consiglia pertanto di non valorizzarlo se non necessario.**
+**Stoga se preporučuje da se polje ne popunjava ako nije potrebno.**
 :::
 
-> **Conto addebito spese a cliente**: è il  sottoconto di ricavo da utilizzare nella procedura di contabilizzazione insoluti su cessione nel caso in cui sia stata scelta l'opzione di addebito spese al cliente.  
-> **Tipo interesse**: all'insoluto può essere collegato un tasso di interesse di riferimento. In caso di cambiali può essere simulato un calcolo iniziale di interessi tra la data scadenze prevista del titolo e la data di rilevazione dell'insoluto.  
-> **Creazione singola partita**: questo flag consente di aprire un'unica partita per l'insoluto di una riba creata da N partite diverse.  
-> **Data scadenza uguale a data scadenza effetto**: attivando questo parametro la data di scadenza della partita riaperta a fronte dell'insoluto viene imposta pari alla data di scadenza dell'effetto, anzichè alla data dell'insoluto.
+> **Konto terećenja troškova klijentu**: podkonto prihoda koji se koristi u proceduri knjiženja neplaćenih stavki u slučaju da je odabrana opcija terećenja troškova klijentu.  
+> **Tip kamate**: neplaćenoj stavci može biti pridružen referentni kamatni stopa. U slučaju mjenica može se simulirati početni izračun kamata između predviđenog datuma dospijeća i datuma evidentiranja neplaćene stavke.  
+> **Kreiranje jedne stavke**: ova zastavica omogućuje otvaranje samo jedne stavke za neplaćenu riba kreiranu iz više različitih stavki.  
+> **Datum dospijeća jednak datumu dospijeća efekta**: aktiviranjem ovog parametra datum dospijeća ponovno otvorene stavke zbog neplaćene stavke postavlja se jednak datumu dospijeća efekta, umjesto datumu neplaćene stavke.
