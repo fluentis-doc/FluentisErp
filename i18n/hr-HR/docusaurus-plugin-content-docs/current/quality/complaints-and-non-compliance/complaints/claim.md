@@ -1,240 +1,240 @@
 ---
-title: Reclami
+title: Reklamacija
 sidebar_position: 2
 ---
 
 
-La gestione si trova sul percorso **Qualità > Reclami > Nuovo reclamo** oppure è possibile eseguirla dalla **Ricerca reclami**.   
+Upravljanje reklamacijama se može pronaći na putanji **Kvaliteta > Reklamacije > Nova reklamacija** ili se to može učiniti putem **Pretraživanja reklamacija**.  
+ 
 
+:::važno Čemu služi?
+Reklamacije se koriste za evidentiranje nezadovoljstva uslugom ili proizvodom, što tvrtki omogućuje prepoznavanje i ispravljanje bilo kakvih problema. One su alat za poboljšanje kvalitete i održavanje dobrih odnosa s kupcima te bi trebale:      
+- utvrditi uzroke neusklađenosti;
+- utvrditi postoje li slične anomalije ili se mogu pojaviti;
+- procijeniti potrebu za djelovanjem kako bi se uklonili uzroci koji su    uzrokovali pronađene anomalije.
 
-:::important A cosa serve
-I Reclami servono a registrare le insoddisfazione riguardo a un servizio o prodotto, permettendo all'azienda di riconoscere e correggere eventuali problemi. Sono uno strumento per migliorare la qualità e mantenere una buona relazione con i clienti e devono:      
-- determinare le cause della non conformità;   
-- determinare se esistono o possono verificarsi anomalie simili;   
-- valutare l’esigenza di azioni per eliminare le cause che .    hanno generato le anomalie riscontrate
-
-A standard sono disponibili le reportistiche di:   
-> **Reclamo**: scheda del *Reclamo*;   
-> **Reclamo 8D**: scheda, in formato 8D, del *Reclamo*;   
-> **Autorizzazione al rientro**: scheda del *Reclamo* utilizzato per l'autorizzazione al rientro dei prodotti resi dal *Cliente*;   
-> **Notifica di recesso**: scheda del *Reclamo* utilizzato per la notifica del recesso del *Reclamo* al *Cliente*;   
-> **Elenco reclami per cliente**: elenco dei reclami selezionati dalla *Ricerca reclami* raggruppati per *Cliente*;   
-> **Elenco reclami per tipo**: elenco dei reclami selezionati dalla *Ricerca reclami* raggruppati per *Tipo reclamo*.   
+Izvještavanje je standardno dostupno za:   
+> **Reklamacija**: obrazac za *reklamaciju*;  
+> **Reklamacija 8D**: obrazac *reklamacije* u 8D formatu;  
+> **Ovlaštenje za povrat**: Obrazac za *reklamaciju* koji se koristi za ovlaštenje povrata proizvoda koje je vratio *Kupac*;   
+> **Obavijest o odustajanju**: Obrazac za *reklamaciju* koji se koristi za obavještavanje *Kupca* o odustajanju od *Reklamacije*;   
+> **Popis reklamacija po kupcu**: popis reklamacija odabranih iz *Pretraživanja reklamacija* grupiranih po *Kupcu*;   
+> **Popis reklamacija prema vrsti**: Popis reklamacija odabranih iz *Pretraživanja reklamacija* grupiranih prema *Vrsti reklamacije*.   
 :::
 
 
-## Pulsanti di comando
+## Kontrolne tipke
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Reclamo* visualizzato.   
+Pritiskom na ovaj gumb spremaju se svi promijenjeni podaci za prikazanu *Reklamaciju*.   
 
 
-### ![](/img/neutral/common/execute.png) Valorizzazione reclamo
+### ![](/img/neutral/common/execute.png) Valoriziranje reklamacije
 
-Pulsante contestuale alla visualizzazione del tabulatore *Testata*.   
-E' possibile creare una *Nota di accredito* verso il mittente del *Reclamo*.   
-Il pulsante è abilitato solamente se il *Reclamo* è stato salvato, approvato ed esiste un *Valore da accreditare*.   
-Viene visualizzata una richiesta/conferma dati per:   
-> **Tipo fattura**: è il *Tipo documento* della nuova *Nota di accredito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo reclamo* del *Reclamo* di origine.   
-> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di accredito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione reclami](/docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation), sessione *Riferimenti reclami*.   
-> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di accredito*.   
-> Viene proposto il *Tipo I.V.A.* con le seguenti priorità:   
-> 1. se esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* presente nel documento;   
-> 2. se non esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* associato al mittente del *Reclamo*;   
-> 3. se non esiste una *Dichiarazione di intento' e non è stato indicato un *Tipo I.V.A.* associato al mittente del *Reclamo*, viene considerato il *Tipo I.V.A.* associato al *Tipo reclamo*.   
+To je tipka u pregledu kartice *Zaglavlje*.   
+Moguće je kreirati *odobrenje* prema pošiljatelju *reklamacije*.   
+Tipka je omogućena samo ako je *Reklamacija* spremljena, odobrena i ako postoji *Vrijednost za kredit*.   
+Zahtjev za podatke/potvrda se pojavljuje za:  
+> **Vrsta računa**: ovo je *Vrsta dokumenta* novog *odobrenja* (obavezni podatak); predlaže se *Vrsta računa* unesena u *Vrstu reklamacije* izvorne *Reklamacije*.   
+> **Opis**: je opis koji će se koristiti za redak *Stavke troška* novog *odoborenja* (obavezni podatak); opis koji je parametriziran u [Parametri valorizacije reklamacije](/docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation), odjel *Reference reklamacije*.   
+> **PDV**: je *Vrsta PDV-a* koja će se koristiti za redak *Trošak* novog *odoborenja*.  
+> Predlaže se *Vrsta PDV-a* sa sljedećim prioritetima:  
+> 1. ako postoji *Izjava namjere', uzima se u obzir *Vrsta PDV-a* prisutna u dokumentu;   
+> 2. ako ne postoji *Izjava namjere', uzima se u obzir *Vrsta PDV-a* povezana s pošiljateljem *Reklamacije*;   
+> 3. Ako ne postoji *Izjava namjere' i nije navedena *Vrsta PDV-a* povezana s pošiljateljem *Reklamacije*, uzima se u obzir *Vrsta PDV-a* povezana s *Vrstom reklamacije*.  
 >
-> Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-> Al termine dell'elaborazione la *Nota di accredito* appena creata viene visualizzata.   
+> Zatim se pritisne tipka **U redu** ili **Otkaži** kako bi se odlučilo želi li se nastaviti s postupkom izrade ili ne.
+> Nakon što je obrada dovršena, prikazat će se novoizrađeno *Odobrenje*.  
 
 
-### ![](/img/neutral/common/corrective.png) Crea azione correttiva
+### ![](/img/neutral/common/corrective.png) Stvaranje korektivne radnje
 
-Pulsante contestuale alla visualizzazione del tabulatore:   
-> *Gestione difetti* - Se il *Modello* del *Tipo reclamo* è *Classic*;   
-> *Azioni di contenimento*, *Azioni permanenti* e *Fasi* - Se il *Modello* del *Tipo reclamo* è *8D Problem Solving*.   
+Tipka za prikaz u kartici:  
+> *Upravljanje nedostacima* - Ako je *Predložak* *Vrsta reklamacije* *Klasični*;
+> *Radnje suzbijanja*, *Trajne radnje* i *Faze* - Ako je *Predložak* *Vrsta pritužbe* *8D rješavanje problema*.   
 >
-Il pulsante è abilitato solamente se il *Reclamo* è stato salvato, approvato ed è stata selezionata una riga valida dall'elenco contestuale.   
+Tipka je omogućena samo ako je *Reklamacija* spremljena, odobrena i ako je s popisa odabran valjani redak. 
 
 import CorrectiveActionPopupInsertion from './../../../import/sections/corrective-action-popup-insertion.md'
 
 <CorrectiveActionPopupInsertion />
 
 
-### Crea non conformità
+### Stvaranje nove neusklađenosti
 
-Pulsante contestuale alla visualizzazione del tabulatore:   
-> *Gestione difetti* - Se il *Modello* del *Tipo reclamo* è *Classic*;   
-> *Cause* - Se il *Modello* del *Tipo reclamo* è *8D Problem Solving*.   
-Il pulsante è abilitato solamente se il *Reclamo* è stato salvato, approvato ed è stata selezionata una riga valida dall'elenco contestuale.   
-Viene visualizzata una richiesta/conferma dati per:   
+Tipka za prikaz u kartici:   
+> *Upravljanje nedostacima* - Ako je *Predložak* *Vrsta reklamacije* *Klasični*;   
+> *Predložak* - ako je *Vrsta reklamacije* *Predložak* *8D rješavanje problema*.   
+Tipka je omogućena samo ako je *Reklamacije* spremljena, odobrena i ako je s popisa odabran valjani redak.
+Zahtjev/potvrda podataka prikazuje se za: *. 
 >
-> ** sessione da implementare **
+> ** sesija za implementaciju **
 >
-> Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-> Al termine dell'elaborazione la *Non conformità* appena creata viene visualizzata per dare modo di completare le informazioni mancanti.   
+> Zatim se pritisne gumb **U redu** ili **Otkaži** kako bi se odlučilo želite li se nastaviti s postupkom stvaranja ili ne.
+> Nakon što je obrada dovršena, prikazuje se novostvorena *Neusklađenost* kako bi se mogli dopuniti nedostajući podaci.
 
 
-## Gestione dati
+## Upravljanje podacima
 
-## Dati di testata del documento
+## Podaci zaglavlja dokumenta
 
-Le informazioni gestite sono:   
-> **Tipo non conformità**: è il *Tipo* del documento (dato obbligatorio).   
-> All'inserimento di una nuova *Non conformità* viene proposto il *Tipo reclamo* indicato nei *Parametri Reclami e Non conformità*, sessione *Reclami*.   
-> Sulla base del *Modello* specificato nel *Tipo reclamo*, verrà abilitata la gestione del *Reclamo* in modalità *Gestione difetti* oppure *8D - problem solving*.   
+Informacije kojima se upravlja su:  
+> **Vrsta neusklađenosti**: je *Vrsta* dokumenta (obavezni podatak).  
+> Prilikom unosa nove *Nesukladnosti*, predlaže se *Vrsta reklamacije* naznačena u *Parametrima reklamacije i nesukladnosti*, odjel *Reklamacije*.
+> Na temelju *Predloška* navedenog u *Vrsti reklamacije*, *reklamacijom* će se upravljati u načinu rada *Upravljanje nedostacima* ili *8D - Rješavanje problema*.  
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* del *Reclamo* (dati obbligatori).   
-> All'inserimento di un nuovo *Reclamo*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo reclamo*.   
+> **Godina/Broj/Datum**: ovo su *Godina*, *Broj* i *Datum* *reklamacije* (obavezni podaci).
+> Prilikom unošenja nove *Reklamacije*:  
+> - *Datum* se predlaže kao današnji datum;
+> - *Godina* i *Broj* se predlažu na temelju *Datuma* i *Numeriranja* povezanih s *Vrstom reklamacije*.  
 >
-> **Cliente**, **Cliente contatto** o **Rivenditore**: sono i riferimenti dei mittenti (almeno uno dei tre è un dato obbligatorio).   
-> Il *Cliente contatto* è un cliente non diretto, codificato nell'anagrafica dei *Contatti*, il cui bene o servizio è stato venduto da un soggetto terzo.   
-> Il *Rivenditore* è posizionato tra le informazioni dell tabulatore *Testata*.   
+> **Kupac**, **Kontakt kupca** ili **Prodavač**: ovo su podaci pošiljatelja (barem jedan od ta tri je obavezan).  
+> *Kontakt kupca* je neizravni kupac, šifriran u glavnim podacima *Kontakti*, čiju je robu ili usluge prodala treća strana.
+> *Preprodavač* se nalazi u informacijama na kartici *Zaglavlje*.  
 > 
 
 
-## Testata
+## Zaglavlje
 
-Le informazioni gestite sono:   
-> **Mezzo di notifica**: è la modalità con cui è stato ricevuto o notificato il *Reclamo*.   
+Informacije kojima se upravlja su: 
+> **Vrsta obavijesti**: ovo je način na koji je *Reklamacija* primljena ili obaviještena.  
 >
-> **Orario notifica**: è l'orario (ore e minuti) di ricevimento del *Reclamo*.   
+> **Vrijeme obavijesti**: je vrijeme (sati i minute) primitka *Reklamacije*.   
 >
-> **Persona responsabile**: è il *Dipendente* responsabile della *Non conformità*.   
-> All'inserimento di una nuova *Non conformità* viene proposta la *Persona responsabile* indicata nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
+> **Odgovorna osoba**: je li *zaposlenik* odgovoran za *neusklađenost*. 
+> Prilikom unosa nove *Neusklađenosti*, predlaže se *Odgovorna osoba* navedena u *Parametrima pritužbi i neusklađenosti*, odjel *Neusklađenost*.   
 >
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile della *Non conformità*.   
-> All'inserimento di una nuova *Non conformità* viene proposta la *Funzione responsabile* indicata nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
+> **Odgovorna funkcija**: je li *Funkcija tvrtke* odgovorna za *Neusklađenost*.   
+> Prilikom unosa nove *Nesukladnosti*, predlaže se *Odgovorna funkcija* naznačena u *Parametrima pritužbi i nesukladnosti*, odjel *Nesukladnost*.   
 >
-> **Riferimento documenti**: expander dove sono inseribili i riferimenti a documenti di interesse per la gestione del *Reclamo**:   
->> **Fattura**: è il riferimento alla *Fattura di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia fatturato il bene o il servizio contestato.   
->> **D.D.T.**: è il riferimento alla *Bolla di vendita* (*Tipo*, *Anno* e *Numero*), con la quale si presume si sia venduto il bene o il servizio contestato.   
->> **Ricevimento merce**: è il riferimento al *Ricevimento merce* (*Tipo*, *Anno* e *Numero*), con il quale il mittente rende il bene contestato.   
->> **Progetto**: è il riferimento al *Progetto* del bene o del servizio contestato.   
->> **Nostro riferimento**: annotazioni libere su altri riferimenti a documenti interni.   
->> **Vostro riferimento**: annotazioni libere su altri riferimenti a documenti del mittente del *Reclamo*.   
+> **Referenca dokumenta**: proširenje u koji se mogu umetnuti reference na dokumente od interesa za upravljanje *Reklamacijom**:   
+>> **Račun**: je referenca na *Prodajni račun* (*Vrsta*, *Godina* i *Broj*) kojim se pretpostavljalo da je sporna roba ili usluga fakturirana.  
+>> **Primka/otpremnica**: je referenca na *Prodajni dokument* (*Vrsta*, *Godina* i *Broj*), kojim se pretpostavlja da je sporna roba ili usluga prodana.   
+>> **Potvrda o prijemu robe**: je referenca na *Potvrdu o primitku robe* (*Vrsta*, *Godina* i *Broj*), s kojom pošiljatelj vraća spornu robu.   
+>> **Projekt**: ovo je referenca na *Projekt* sporne robe ili usluge.
+>> **Naša referenca**: slobodne bilješke o drugim referencama na interne dokumente.
+>> **Vaša referenca**: S+slobodne bilješke o drugim referencama na dokumente od pošiljatelja *Reklamacije*.  
 >
-> **Approvato/In data**: expander dove è possibile inserire le informazioni di approvazione del *Reclamo:   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono approvare il *Reclamo*.  
->> **Approvato**: indica che il *Reclamo* è *Approvato*.   
->> All'atto dell'approvazione vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
->> **In data**: è la data in cui il *Reclamo* è stata *Approvato*.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Nome* e *Persona* proposte come *Utente A.R.M.* collegato, *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Approvato*.   
->> **Nome**: è l'*Utente A.R.M.* che ha approvato il *Reclamo*. L'informazione è di sola lettura.   
->> **Persona**: è il *Dipendente* che ha approvato il *Reclamo*. L'informazione è di sola lettura.   
->> **Funzione**: è la *Funzione aziendale* che ha approvato il *Reclamo*.   
->> Abilitata solamente se il *Reclamo* è *Approvato*.   
+> **Odobreno/Datum**: proširenje u koje se mogu unijeti podaci o odobrenju za *Reklamaciju*:   
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može odobriti *Reklamaciju*.  
+>> **Odobreno**: Označava da je *Reklamacija* *Odobrena*.   
+>> Nakon odobrenja, automatski se predlažu sljedeći podaci: *Na datum*, predloženo na današnji datum i s mogućnošću promjene, *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan i *Zaposlenik* povezan s *A.R.M. korisnikom*.  
+>> **Datum**: Ovo je datum kada je *Reklamacija* *Odobrena*.   
+>> Prilikom unosa datuma, automatski se predlažu sljedeći podaci: *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan, *Zaposlenik* povezan s *A.R.M. korisnikom* i postavljena je oznaka *Odobreno*.  
+>> **Ime**: Ovo je *A.R.M. korisnik* koji je odobrio *Reklamaciju*. Ove su informacije samo za čitanje.
+>> **Osoba**: Ovo je *Zaposlenik* koji je odobrio *Reklamaciju*. Ove su informacije samo za čitanje.  
+>> **Funkcija**: je *Funkcija tvrtke* koja je odobrila *Reklamaciju*.   
+>> Omogućeno samo ako je *Reklamacija* *Odobrena*.   
 >  
-> **Rivenditore**: informazione già descritta precedentemente tra i mittenti del *Reclamo*.   
+> **Prodavač**: podaci koji su već prethodno opisani među pošiljateljima *Reklamacije*. 
 >
-> **Riferimento sito del cliente**: annotazioni libere sull'argomento.   
+> **Referenca klijenta**: slobodne bilješke o temi.   
 >
-> **Referente esterno**: annotazioni libere sulla persona di riferimento del mittente del *Reclamo*.   
+> **Vanjski kontakt**: slobodne napomene o kontakt osobi pošiljatelja *Reklamacije*. 
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito il *Reclamo*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica al *Reclamo*.   
+> **Audit**: proširenje samo za čitanje gdje su vidljive sljedeće informacije:   
+>> **Datum kreiranja/Ime**: Ovo je datum i *A.R.M. korisnik* koji je unio *Reklamaciju*.
+>> **Datum zadnje promjene/Ime**: Ovo je datum i *A.R.M. korisnik* koji je napravio posljednju izmjenu *Reklamacije*.  
 >
-> **Chiuso/In data**: expander dove è possibile inserire le informazioni di chiusura del *Reclamo*:   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere il *Reclamo*.  
->> **Chiuso**: indica che il *Reclamo* è *Chiuso*.   
->> All'atto della chiusura vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*.   
->> **In data**: è la data in cui il *Reclamo* è stato *Chiuso*.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Nome* e *Persona* proposte come *Utente A.R.M.* collegato, *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiuso*.   
->> **Nome**: è l'*Utente A.R.M.* che ha chiuso il *Reclamo*. L'informazione è di sola lettura.   
->> **Persona**: è il *Dipendente* che ha chiuso il *Reclamo*. L'informazione è di sola lettura.   
->> **Funzione**: è la *Funzione aziendale* che ha chiuso il *Reclamo*.   
->> Abilitata solamente se il *Reclamo* è *Chiuso*.   
->> **Notifica chiusura/In data**: Sono le indicazioni manuali se la chiusura del *Reclamo* è stato notificato e in quale data al mittente dello stesso.   
+> **Datum zatvaranja/objavljivanja**: proširenje u koje se mogu unijeti podaci o zatvaranju *Reklamacije*:   
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može zatvoriti *Reklamaciju*.
+>> **Zatvoreno**: označava da je *Reklamacija* *Zatvorena*.  
+>> Prilikom zatvaranja, automatski se predlažu sljedeći podaci: *Na datum*, predloženo od današnjeg datuma i s mogućnošću promjene, *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan i *Zaposlenik* povezan s *A.R.M. korisnikom*.  
+>> **Datum**: Ovo je datum kada je *Reklamacija* *Zatvorena*.   
+>> Prilikom unosa datuma, automatski se predlažu sljedeći podaci: *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan, *Zaposlenik* povezan s *A.R.M. korisnikom* i postavljena je zastavica *Zatvoreno*.   
+>> **Ime**: je *A.R.M. korisnik* koji je zatvorio *Reklamaciju*. Ova informacija je samo za čitanje.
+>> **Osoba**: je *Zaposlenik* koji je zatvorio *Reklamaciju*. Ova informacija je samo za čitanje.
+>> **Funkcija**: je *Funkcija tvrtke* koja je zatvorila *Reklamaciju*. 
+>> Omogućeno samo ako je *Reklamacija* *Zatvorena*.
+> **Obavijest o zatvaranju/Datum zatvaranja**: Ovo su ručne naznake je li pošiljatelj obaviješten o zatvaranju *Reklamacije* i kojeg datuma. 
 
 
-### Notifiche
+### Obavijesti
 
-Nel tabulatore sono contenute le indicazioni di:   
-> **Motivo contestazione**: annotazioni libere sul motivo dell'inserimento del *Reclamo* (dato obbligatorio).   
+Kartica sadrži sljedeće podatke:   
+> **Razlog pritužbe**: opisne napomene o razlogu unošenja *Reklamacije* (obavezno polje).
 >
-> **Sito produttivo**: è il riferimento del *Sito produttivo* di dove è stato riscontrato o si suppone sia l'origine del *Reclamo*.   
+> **Mjesto proizvodnje**: referenca na *mjesto proizvodnje* gdje je *Reklamacija* pronađena ili se sumnja da je izvor.  
 >
-> **Il motivo della contestazione e difetto riscontrato è stato accettato**: indica che il *Reclamo* è stato accettato.   
+> **Razlog pritužbe i pronađeni nedostatak su prihvaćeni**: označava da je *Reklamacija* prihvaćena.
 >
-> **Motivo del recesso**: annotazioni libere sulla motivazione della non accettabilità del *Reclamo*; informazione abilitata solamente se il *Reclamo* non è stato accettato.   
+> **Razlog povlačenja**: napomene o razlogu neprihvatljivosti *Reklamacije*; informacije su omogućene samo ako *Reklamacija* nije prihvaćena.  
 >
->> **Notifico/In data**: Sono le indicazioni di notifica al mittente del *Reclamo* se lo stesso è stato accettato o meno e in quale data.   
+>> **Obavijest/Datum**: ovo su upute za obavještavanje pošiljatelja *Reklamacije* o tome je li ista prihvaćena ili ne i na koji datum.   
 
 
-### Annotazioni
+### Bilješke
 
-Nel tabulatore sono contenute annotazioni generali al documento e specifiche per area. Le informazioni presenti sono:   
-> **Note commerciali**: annotazioni libere sull'argomento riservate al personale dell'area commerciale.   
-> **Note tecniche**: annotazioni libere sull'argomento riservate al personale dell'area tecnica.   
-> **Note amministrative**: annotazioni libere sull'argomento riservate al personale dell'area amministrativa.   
-
-
-### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) generali per il *Reclamo*.   
+Kartica sadrži opće i specifične za područje bilješke za dokument. Uključene informacije su:  
+> **Komercijalne bilješke**: bilješke o temi rezervirane za prodajno osoblje.
+> **Tehničke bilješke**: bilješke o temi rezervirane za tehničko osoblje.
+> **Administrativne bilješke**: bilješke o temi rezervirane za administrativno osoblje. 
 
 
-### Altri costi
+### Drugi podaci
 
-Nel tabulatore è possibile inserire altri costi aggiuntivi a quelli derivanti dal Costo degli articoli contestati e da quello di Gestione del documento.   
-> **Costi diretti**   
-> Un elenco di costi attribuibili in modo diretto al costo degli articoli contestati, al servizio dato e al costo delle lavorazioni sostenute per la gestione del *Reclamo*. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Costo diretto (Direct cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Applicazione su ...**: informazione di sola lettura che riporta su quale componente di costo viene applicato il *Valore* (se espresso in percentuale); nel caso della gestione *Reclami* non c'è distinzione tra : *Costo materiali*, *Costo macchina*, *Costo manodopera*, *Costo lavorazioni* e *Costo industriale*, tutte le voci vengono applicate sul *Totale reclamo*.      
->> **Percentuale / Valore**: informazione di sola lettura che riporta le modalità di calcolo da applicare sul *Valore* (*Percentuale* o *Valore fisso*).   
->> **Valore**: è la *Percentuale* che verrà applicata, o il *Valore* che verrà aggiunto, alla componente di costo specificata in *Applicazione su ...* .   
->> **Nota**: annotazioni libere.   
+Moguće je unijeti općenite [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za *Reklamaciju*.   
+
+
+### Ostali troškovi
+
+U kartici je moguće unijeti i druge troškove uz one koji proizlaze iz Troškova spornih stavki i Troškova upravljanja dokumentima.
+> **Izravni troškovi**  
+> Popis troškova koji se izravno mogu pripisati cijeni spornih artikala, pruženoj usluzi i cijeni rada nastalog u rješavanju *Reklamacije*. Ovaj popis sadrži informacije o:   
+>> **Stavka troška** i **Opis stavke troška**: mogu se odabrati samo *Stavke troška* od *Vrsta troška = Izravni trošak*.   
+>> **Vrsta troška**: informacije samo za čitanje koje prikazuju *Vrstu troška* povezanu s odabranom *Stavkom troška*.   
+>> **Primjena na ...**: informacije samo za čitanje koje izvještavaju na koju se komponentu troškova primjenjuje *Vrijednost* (ako je izražena kao postotak); u slučaju upravljanja *Reklamacijama* ne pravi se razlika između: *Troškova materijala*, *Troškova stroja*, *Troškova rada*, *Troškova obrade* i *Industrijskih troškova*, sve se stavke primjenjuju na *Ukupni iznos reklamacija*.      
+>> **Postotak / Vrijednost**: informacije samo za čitanje koje određuju metodu izračuna koja će se primijeniti na *Vrijednost* (*Postotak* ili *Fiksna vrijednost*).
+>> **Vrijednost**: ovo je *Postotak* koji će se primijeniti ili *Vrijednost* koja će se dodati komponenti troška navedenoj u *Primjena na ...*.
+>> **Napomena**: Napomene u slobodnom obliku.  
 >>   
-> **Costi generali**   
-> Un elenco di costi generali, non direttamente imputabili al *Reclamo* e che supportano l'intero processo aziendale. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Costo generale (General cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Percentuale / Valore**: informazione di sola lettura che riporta le modalità di calcolo da applicare sul *Valore* (*Percentuale* o *Valore fisso*).   
->> **Valore**: è la *Percentuale* che verrà applicata, o il *Valore* che verrà aggiunto, al *Totale Reclamo*.   
->> **Nota**: annotazioni libere.   
+> **Generalni troškovi**  
+> Popis generalnih troškova koji se ne mogu izravno pripisati *Pritužbi* i koji podržavaju cijeli poslovni proces. Ovaj popis sadrži informacije o:
+>> **Stavka troška** i **Opis stavke troška**: mogu se odabrati samo *Stavke troška* s *Vrsta troška = Opći trošak*.
+>> **Vrsta troška**: informacije samo za čitanje koje prikazuju *Vrstu troška* povezanu s odabranom *Stavkom troška*.
+>> **Postotak / Vrijednost**: informacije samo za čitanje koje prikazuju metode izračuna koje će se primijeniti na *Vrijednost* (*Postotak* ili *Fiksna vrijednost*).
+>> **Vrijednost**: ovo je *Postotak* koji će se primijeniti ili *Vrijednost* koja će se dodati *Ukupnom iznosu pritužbe*.
+>> **Napomena**: Napomene u slobodnom obliku.
 >>   
-> **Altri costi**   
-> Un elenco di altri costi. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Altro costo (Other cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Unità di misura**: è l'*Unità di misura* con la quale si desidera esprimere l'informazione della *Quantità*.   
->> **Quantità**: è la *Quantità* della *Voce di costo*.   
->> **Costo unitario**: è il *Costo unitario* della *Voce di costo*.   
->> **Costo totale**: informazione di sola lettura che riporta il prodotto tra *Quantità* e *Costo unitario*.   
->> **Nota**: annotazioni libere.   
+> **Ostali troškovi**   
+> Popis ostalih troškova. Ovaj popis sadrži informacije o:
+>> **Troškovnoj stavci** i **Opisu troškovne stavke**: mogu se odabrati samo *Troškovne stavke* s *Vrsta troška = Ostali trošak*.
+>> **Vrsta troška**: informacije samo za čitanje koje prikazuju *Vrstu troška* povezanu s odabranom *Troškovnom stavkom*.
+>> **Mjerna jedinica**: ovo je *Mjerna jedinica* koja se koristi za izražavanje informacija o *Količini*.
+>> **Količina**: ovo je *Količina* *Troškovne stavke*.
+>> **Jedinična cijena**: ovo je *Jedinična cijena* *Troškovne stavke*.
+>> **Ukupna cijena**: informacije samo za čitanje koje prikazuju umnožak *Količine* i *Jedinične cijene*.
+>> **Napomena**: Napomene u slobodnom obliku.  
 
 
-### Valori
+### Vrijednosti
 
-Nel tabulatore è possibile inserire informazioni relative a documenti di addebito e accredito al *Reclamo*, i costi sostenuti e quelli da accreditare al mittente del *Reclamo*. Le informazioni presenti sono:   
-> **Divisa**, **Diretto** e **Data valuta**: è la *Divisa* del mittente del *Reclamo* con la quale vengono specificati tutti i valori del documento, il relativo coefficiente di cambio alla *Divisa* della *Società* e la *Data valuta*.   
-> **Riferimento documento addebito**: è il riferimento alla *Nota di addebito* ricevuta dal *Cliente*.   
-> **Note documento di addebito**: annotazioni libere sull'argomento.   
+U karticu se mogu unijeti podaci koji se odnose na potražne (odobrenja) i dugovne (zaduženja) dokumente za *Reklamaciju*, nastale troškove i one koji će se knjižiti pošiljatelju *Reklamacije*. Uključene informacije su:
+> **Valuta**, **Tečaj** i **Datum valute**: Ovo je *Valuta* pošiljatelja *Reklamacije*, koja navodi sve vrijednosti dokumenata, odgovarajući tečaj prema *Valuti* *Tvrtke* i *Datum valute*.
+> **Referentni dokument zaduženja**: ovo je referenca na *Zaduženje* primljeno od *Kupca*.
+> **Napomen na dokumentu odobrenja**: napomene u slobodnom obliku o predmetu.  
 >   
-> **Totale reclamo**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Reclami* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi lavorazione degli *Oggetti difettosi* rilavorati.   
+> **Ukupni iznos reklamacija**: podaci samo za čitanje ako je u *Parametrima reklamacija i neusklađenosti*, za datum godine dokumenta, odjel *Reklamacije*, zatražen *Automatski ponovni izračun ukupnih iznosa*; predlaže se zbroj komponente troškova obrade prerađenih *Neispravnih stavki*. 
 >   
-> **Totale costi diretti**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco dei *Costi diretti* presenti nel tabulatore *Altri costi*.   
->   
-> **Totale costi generali**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco dei *Costi generali* presenti nel tabulatore *Altri costi*.   
->   
-> **Totale altri costi**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco degli *Altri costi* presenti nel tabulatore *Altri costi*.   
->   
-> **Costo di gestione**: è il *Costo di gestione* ripreso dal *Costo di gestione* presente nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Reclami*; il valore può essere variato.   
->   
-> **Valore da accreditare**: è il *Valore da accreditare* al mittente del *Reclamo*; se nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali* il valore viene proposto pari alla sommatoria del *Valore accettato* degli *Oggetti difettosi* e successivamente può essere modificato.    
+> **Ukupni direktni troškovi**: informacije samo za čitanje, to je zbroj *vrijednosti* primijenjenih s popisa *Izravni troškovi* na kartici *Ostali troškovi*.
 >
-> **Valorizzato** e **Riferimento documento di accredito**: informazioni di sola lettura che riportano se il *Reclamo* è stata valorizzato e il riferimento alla *Nota di accredito* generata.   
+> **Ukupni generalni troškovi**: informacije samo za čitanje, to je zbroj *vrijednosti* primijenjenih s popisa *Ostali troškovi* na kartici *Ostali troškovi*.
+>
+> **Ukupni ostali troškovi**: informacije samo za čitanje, to je zbroj *vrijednosti* primijenjenih s popisa *Ostali troškovi* na kartici *Ostali troškovi*.   
+>   
+> **Trošak upravljanja**: je *Trošak upravljanja* preuzet iz *Troška upravljanja* prisutnog u *Parametrima pritužbi i neusklađenosti*, za datum godine dokumenta, odjel *Reklamacije*; vrijednost se može promijeniti.  
+>   
+> **Vrijednost koja se naplaćuje**: je *Vrijednost koja će biti uplaćena* pošiljatelju *Reklamacije*; ako je *Automatski ponovni izračun ukupnih iznosa* zatražen u *Parametrima Reklamacija i Nesukladnosti* za datum godine dokumenta, odjel *Nesukladnosti*, vrijednost se predlaže kao jednaka zbroju *Prihvaćene vrijednosti* *Neispravnih stavki* i naknadno se može izmijeniti.    
+>
+> **Valorizirano** i **Referenca dokumenta odobrenja**: informacije samo za čitanje koje pokazuju je li *Reklamacija* procijenjena i je li generirana referenca na *Odobrenje*   
    
    
-Le successive sessioni della gestione variano sulla base del *Modello* specificato nel *Tipo reclamo*: *Gestione difetti* oppure *8D - problem solving*:
-> ### [Gestione difetti](/docs/quality/claims-and-non-compliance/claims/claim-dm)   
+Naknadni načini upravljanja razlikuju se ovisno o *Modelu* navedenom u *Vrsti reklamacije*: *Upravljanje nedostacima* ili *8D - Rješavanje problema*:
+> ### [Upravljanje nedostacima](/docs/quality/claims-and-non-compliance/claims/claim-dm)   
 >   
-> ### [8D Problem Solving](/docs/quality/claims-and-non-compliance/claims/claim-8d)
+> ### [8D Rješavanje problema](/docs/quality/claims-and-non-compliance/claims/claim-8d)
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
