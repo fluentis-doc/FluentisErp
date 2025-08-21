@@ -1,18 +1,18 @@
 ---
-title: Parametri Ri.Ba
+title: Parametri RIBA
 sidebar_position: 5
 ---
 
-I parametri del modulo Ricevute bancarie si trovano in **Parametri > Tesoreria**
+Parametri modula Doznaka u gotovini nalaze se u **Parametri > Riznica**
 
-Nei parametri relativi si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo. In particolare:
+U pripadajućim parametrima mogu se unaprijed postaviti zadane stavke koje će se predlagati u procedurama ovog modula. Konkretno:
 
-**Percorso di creazione dei tracciati Riba**: Impostazione della  directory standard di creazione del tracciato telematico per le ricevute bancarie. Si consiglia di creare una directory condivisa di rete all'interno di un server, per poter accedere da tutte le postazioni della procedura.  
-**Riferimenti del cliente**: E' la ragione sociale della società attiva.  
-**Descrizione standard del credito**: E' possibile codificare, sfruttando i codici indicati tra parentesi, il testo da inserire nel file quale descrizione del documento di riferimento dell'emissione riba. Si tratta di un testo del tipo Ft. Nr. (2) del (3).  
-**Inserisci carattere di controllo finale**: Per alcuni programmi di remote banking è necessario un ritorno a capo finale nel file, impostare questo flag se necessario.  
-**Senza riferimento per importazione insoluti**: In alcuni programmi di remote banking è previsto un aggiornamento automatico delle anagrafiche sulla base dei dati inseriti nel file riba. Il campo che sfruttiamo per la procedura di importazione insoluti può causare un continuo aggiornamento delle anagrafiche che si può evitare con questo flag (cosa che comporta la non utilizzabilità della procedura di importazione insoluti stessa).  
-**Gestione seconda descrizione**: Con questo flag la descrizione del cliente inserita nel file sarà composta come prima descrizione + seconda descrizione.  
+**Putanja za kreiranje Riba datoteka**: Postavka standardnog direktorija za kreiranje telematske datoteke za bankovne priznanice. Preporučuje se kreirati zajednički mrežni direktorij na serveru kako bi mu se moglo pristupiti sa svih radnih stanica u postupku.  
+**Reference kupca**: Naziv pravnog subjekta koji je aktivan.  
+**Standardni opis kredita**: Moguće je kodirati, koristeći kodove navedene u zagradama, tekst koji će biti umetnut u datoteku kao opis referentnog dokumenta za izdavanje riba. To je tekst tipa Ft. Br. (2) od (3). 
+**Umetni znak konačne kontrole**: Za neke programe daljinskog bankarstva potreban je završni prijelaz u novi red u datoteci. Ovu opciju treba uključiti ako je to potrebno. 
+**Bez referenca za neplaćene uvoz**: U nekim programima daljinskog bankarstva predviđeno je automatsko ažuriranje evidencija na temelju podataka iz riba datoteke. Polje koje koristimo za postupak uvoza neplaćenih stavki može uzrokovati stalno ažuriranje evidencija, što se može izbjeći označavanjem ove opcije (što, međutim, onemogućuje korištenje samog postupka uvoza neplaćenih stavki). 
+**Upravljanje drugim opisom**: Ovom opcijom opis klijenta unesen u datoteku sastoji se od prvog opisa + drugog opisa.  
 
 ---
 
