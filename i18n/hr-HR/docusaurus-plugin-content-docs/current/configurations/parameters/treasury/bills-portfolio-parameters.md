@@ -27,7 +27,7 @@ U parametrima modula Portfelj računa mogu se unaprijed postaviti zadane stavke 
 > **Provizijske naknade**: omogućuje definiranje podračuna za troškove provizija za knjiženja izvršena tim postupkom.  
 > **Pasivni troškovi**: omogućuje definiranje podračuna za financijske rashode za knjiženja izvršena tim postupkom.  
 
-*Parametri Konfiguriranja Grupiranja *:  
+*Parametri Konfiguriranja Grupiranja*:  
 > **Grupiraj iznose manje od**: ovo polje, ako nije prazno i različito od nule, određuje graničnu vrijednost stavki koje će se grupirati. Ako je, primjerice, postavljeno na ‘1000’, to znači da će se grupirati sve stavke manje od tog iznosa, dakle do 999,99.  
 
 ---
