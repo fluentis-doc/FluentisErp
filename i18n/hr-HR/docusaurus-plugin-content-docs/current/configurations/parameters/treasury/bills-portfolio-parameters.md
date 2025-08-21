@@ -1,34 +1,34 @@
 ---
-title: Parametri portafoglio effetti
+title: Parametri popisa vrijednosnih papira
 sidebar_position: 4
 ---
 
 
 
-I parametri del modulo Portafoglio Effetti si trovano in **Parametri > Tesoreria**.
+Parametri modula Portfelj računa nalaze se u Parametri > Riznica.
 
-Nei parametri del modulo Portafoglio effetti  si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo. In particolare:
+U parametrima modula Portfelj računa mogu se unaprijed postaviti zadane stavke koje će se predlagati u procedurama modula. Konkretno:
 
-*Acquisizioni effetti*:  
-> **Contabilizzazione automatica**: consente di predefinire la contabilizzazione effetti direttamente al momento dell'acquisizione effetti da fatture o da partite. 
+*Prijem računa*:  
+> **Automatsko knjiženje označenih računa**: omogućuje unaprijed postavljanje automatskog knjiženja računa izravno u trenutku preuzimanja efekata iz faktura ili otvorenih stavki. 
 
-*Contabilizzazione effetti*:  
-> **Causale di contabilità**: consente di definire la causale contabile di default da proporre nella procedura omonima.  
-> **Raggruppa per conto effetto**: consente di definire il parametro di raggruppamento effetto alle registrazioni effettuate con tale procedura.  
-> **Registrazioni provvisorie**: consente di definire lo stato di registrazione provvisoria alle registrazioni effettuate con tale procedura.  
+*Knjiženje vrijednosnih papira*:  
+> **Predložak zapisa knjige**: omogućuje definiranje zadane knjigovodstvene šifre koja će se predlagati u istoimenom postupku.
+> **Grupiranje po kontu računa**: omogućuje definiranje parametra grupiranja računa za knjiženja izvršena tim postupkom.  
+> **Razmotrite dospjele vrijednosti iz privremenih zapisa**: omogućuje definiranje statusa privremenog knjiženja za knjiženja izvršena tim postupkom.  
 
-*Contabilizzazione distinte*:  
-> **Causale di contabilità**: consente di definire la causale contabile di default da proporre nella procedura omonima.  
-> **Contabilizza alla data di maturazione**: la prima opzione andrà a spezzare la registrazione della distinta alle varie date scadenza degli effetti con l'aggiunta dei giorni banca impostati in anagrafica banca per la causale impostata.  
-> **Contabilizza in data scadenza con data valuta banca = data di maturazione**: la seconda opzione, invece, registrerà i vari effetti alle varie date scadenza ma con data valuta banca rettificata secondo i giorni banca impostati in anagrafica banca per la causale impostata. 
+*Knjiženje popisa*:  
+> **Predložak zapisa knjige**: omogućuje definiranje zadane knjigovodstvene šifre koja će se predlagati u istoimenom postupku.  
+> **Knjiženje na datum dospijeća**: prva opcija razdijelit će knjiženje zbirnog naloga na pojedine datume dospijeća računa, uz dodavanje bankovnih dana definiranih u evidenciji banke za postavljenu šifru.  
+> **Knjiženje na datum dospijeća s datumom valute banke = datum dospijeća**: druga opcija će knjižiti pojedine račune na njihove datume dospijeća, ali s datumom valute banke prilagođenim prema bankovnim danima definiranim u evidenciji banke za postavljenu šifru. 
 
-*Contabilizzazione accrediti*:  
-> **Causale di contabilità**: consente di definire la causale contabile di default da proporre nella procedura omonima.  
-> **Spese commissioni**: consente di definire il sottoconto delle spese di commissioni per le registrazioni effettuate con tale procedura.  
-> **Oneri passivi**: consente di definire il sottoconto degli oneri passivi per le registrazioni effettuate con tale procedura.  
+*Knjiženje odobrenja*:  
+> **Predložak zapisa knjige**: omogućuje definiranje zadane knjigovodstvene šifre koja će se predlagati u istoimenom postupku.  
+> **Provizijske naknade**: omogućuje definiranje podračuna za troškove provizija za knjiženja izvršena tim postupkom.  
+> **Pasivni troškovi**: omogućuje definiranje podračuna za financijske rashode za knjiženja izvršena tim postupkom.  
 
-*Raggrupamento*:  
-> **Raggruppa importi inferiori a**: questo campo, se non vuoto e differente da zero, determina il valore soglia delle partite da raggruppare. Se, ad esempio, viene impostato ‘1000', significa che saranno raggruppate le partite inferiori a questa cifra, quindi fino a 999,99.  
+*Parametri Konfiguriranja Grupiranja *:  
+> **Grupiraj iznose manje od**: ovo polje, ako nije prazno i različito od nule, određuje graničnu vrijednost stavki koje će se grupirati. Ako je, primjerice, postavljeno na ‘1000’, to znači da će se grupirati sve stavke manje od tog iznosa, dakle do 999,99.  
 
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
