@@ -4,142 +4,142 @@ sidebar_position: 2
 ---
 
 
-La gestione si trova sul percorso **Qualità > Non conformità > Nuova non conformità** oppure è possibile eseguirla dalla **Ricerca non conformità**.   
+Upravljanje se može pronaći na putanji **Kvaliteta > Nesukladnost > Nova nesukladnost** ili se može izvršiti iz **Pretrage nesukladnosti**.   
 
 
-:::important A cosa serve
-Le Non conformità servono a identificare e documentare deviazioni dagli standard o dai requisiti prestabiliti, produttivi o di servizio.   
-Questo processo aiuta a garantire che i prodotti, i servizi o i processi siano corretti e migliorati per mantenere la qualità e la sicurezza. Inoltre, facilita l'adozione di azioni correttive per prevenire futuri problemi.   
-Le *Non conformità* devono:   
-- determinare le cause della non conformità;   
-- determinare se esistono o possono verificarsi non conformità simili;   
-- valutare l’esigenza di azioni per eliminare le cause della non conformità.    
+:::važno Čemu služi
+Nesukladnosti se koriste za identifikaciju i dokumentiranje odstupanja od utvrđenih standarda ili zahtjeva, bilo da se odnose na proizvodnju ili uslugu.
+Ovaj proces pomaže osigurati da su proizvodi, usluge ili procesi ispravni i poboljšani kako bi se održala kvaliteta i sigurnost. Također, olakšava usvajanje korektivnih radnji/mjera kako bi se spriječili budući problemi.  
+*Nesukladnosti* moraju:
+- utvrditi uzroke nesukladnosti;
+- utvrditi postoje li ili se mogu pojaviti slične nesukladnosti;
+- procijeniti potrebu za djelovanjem kako bi se uklonili uzroci nesukladnosti.  
 
-A standard sono disponibili le reportistiche di:   
-> **Non conformità**: scheda della *Non conformità*;   
-> **Non conformità 8D**: scheda compilabile per la gestione 8D della *Non conformità*.   
+Sljedeća izvješća su standardno dostupna:
+> **Nesukladnost**: Obrazac *Nesukladnosti*;
+> **8D Nesukladnost**: obrazac za popunjavanje za 8D upravljanje *Nesukladnostima*.   
 :::
 
 
-## Pulsanti di comando
+## Kontrolne tipke
 
 
-### ![](/img/neutral/common/save.png) Salva non conformità
+### ![](/img/neutral/common/save.png) Spremi nesukladnost
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Non conformità* visualizzata.   
-
-
-### ![](/img/neutral/common/new.png) Nuova non conformità
-
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Non conformità* visualizzata e apre una nuova form creandone una nuova.   
+Pritiskom na ovaj gumb spremaju se sve izmijenjene informacije o prikazanoj *Nesukladnosti*.   
 
 
-### ![](/img/neutral/common/execute.png) Valorizzazione non conformità
+### ![](/img/neutral/common/new.png) Nova nesukladnost
 
-Pulsante contestuale alla visualizzazione del tabulatore *Testata*.   
-E' possibile creare una *Nota di addebito* nei confronti del *Fornitore* o *Cliente* a cui è assegnata la *Non conformità*.   
-Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, approvata, è di *Tipo non conformità a Cliente* o *a fornitore* ed esiste un *Valore da addebitare*.   
-Viene visualizzata una richiesta/conferma dati per:
-> **Cliente** o **Fornitore**: è il destinatario della nuova *Nota di addebito* (dato obbligatorio), viene proposto il *Cliente* o *Fornitore* della *Non conformità* di origine.   
-> **Tipo fattura**: è il *Tipo documento* della nuova *Nota di addebito* (dato obbligatorio); viene proposto il *Tipo fattura* inserito nel *Tipo non conformità* della *Non conformità* di origine.   
-> **Descrizione**: è la descrizione che verrà utilizzata per la riga di *Articolo spesa* della nuova *Nota di addebito* (dato obbligatorio); viene proposta la descrizione che viene parametrizzata nei [Parametri di Valorizzazione non conformità](/docs/quality/claims-and-non-compliance/non-compliances/procedures/non-compliance-valorisation), sessione *Riferimenti non conformità*.   
-> **I.V.A.**: è il *Tipo I.V.A.* che verrà utilizzato per la riga di *Articolo spesa* della nuova *Nota di addebito*.   
-> Viene proposto il *Tipo I.V.A.* con le seguenti priorità:   
-> 1. se esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* presente nel documento;   
-> 2. se non esiste una *Dichiarazione di intento', viene considerato il *Tipo I.V.A.* associato al *Fornitore* della *Non conformità*;   
-> 3. se non esiste una *Dichiarazione di intento' e non è stato indicato un *Tipo I.V.A.* associato al *Fornitore* della *Non conformità*, viene considerato il *Tipo I.V.A.* associato al *Tipo non conformità*.   
+Pritiskom na ovaj gumb spremaju se sve izmijenjene informacije o prikazanoj *Nesukladnosti* i otvara se novi obrazac stvaranjem novog.  
+
+
+### ![](/img/neutral/common/execute.png) Valorizacija nesukladnosti
+
+Tipke prilikom pregleda kartice *Zaglavlje*.   
+Moguće je kreirati *odobrenje* za *Dobavljača* ili *Kupca* kojem je dodijeljena *Nesukladnost*.   
+Tipka je omogućena samo ako je *Nesukladnost* spremljena, odobrena, ako je *Nesukladnost tipa *s kupcem* ili *s dobavljačem* i ako postoji *vrijednost za naplatu*.   
+Zahtjev za podatke/potvrda se pojavljuje za:
+> **Kupac** ili **Dobavljač**: je primatelj novog *odobrenja* (obavezni podatak), predlaže se *Kupac* ili *Dobavljač* izvorne *Nesukladnosti*.  
+> **Vrsta računa**: ovo je *Vrsta dokumenta* novog *odobrenja* (obavezni podatak); predlaže se *Vrsta računa* unesena u *Vrstu nesukladnosti* izvorne *Nesukladnosti*.   
+> **Opis**: ovo je opis koji će se koristiti za redak *Trošak* novog *odobrenja* (obavezni podatak); predlaže se opis koji je parametriziran u [Parametrima nesukladnosti](/docs/quality/claims-and-non-compliance/non-compliances/procedures/non-compliance-valorisation), odjel *Reference o nesukladnosti*.   
+> **PDV**: je *Vrsta PDV-a* koja će se koristiti za redak *Trošak* novog *odobrenja*.  
+> Predlaže se *Vrsta PDV-a* sa sljedećim prioritetima:   
+> 1. Ako postoji *Izjava o namjeri*, uzima se u obzir *Vrsta PDV-a* prisutna u dokumentu;
+> 2. Ako *Izjava o namjeri* ne postoji, uzima se u obzir *Vrsta PDV-a* povezana s *Dobavljačem* *Nesukladnosti*;
+> 3. Ako *Izjava o namjeri* ne postoji i *Vrsta PDV-a* povezana s *Dobavljačem* *Nesukladnosti* nije navedena, uzima se u obzir *Vrsta PDV-a* povezana s *Vrstom nesukladnosti*.  
 >
-> Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-> Al termine dell'elaborazione la *Nota di addebito* appena creata viene visualizzata.   
+> Zatim se pritisne tipka **U redu** ili **Otkaži** kako bi se odlučilo želi li se nastaviti s postupkom izrade ili ne.
+> Nakon što je obrada dovršena, prikazuje se novoizrađeno *odobrenje*.
 
 
-### ![](/img/neutral/common/corrective.png) Crea azione correttiva
+### ![](/img/neutral/common/corrective.png) Stvaranje korektivne radnje
 
-Pulsante contestuale alla visualizzazione del tabulatore *Gestione difetti*.   
-Il pulsante è abilitato solamente se la *Non conformità* è stata salvata, approvata ed è stata selezionata una riga *Difetto* valida.   
+Tipka prilikom pregleda kartice *Upravljanje nedostacima*.
+Tipka je omogućena samo ako je *Nesukladnost* spremljena, odobrena i ako je odabran valjani redak *Nedostatak*.   
 
 import CorrectiveActionPopupInsertion from './../../../import/sections/corrective-action-popup-insertion.md'
 
 <CorrectiveActionPopupInsertion />
 
 
-## Gestione dati
+## Upravljanje podacima
 
-## Dati di testata del documento
+## Podaci zaglavlja dokumenta
 
-Le informazioni gestite sono:   
-> **Tipo non conformità**: è il *Tipo* del documento (dato obbligatorio).   
-> All'inserimento di una nuova *Non conformità* viene proposto il *Tipo non conformità* indicato nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
+Informacije kojima se upravlja su:   
+> **Vrsta nesukladnost**: ovo je *Vrsta* dokumenta (obavezni podatak).
+> Prilikom unosa nove *Nesukladnosti* predlaže se *Vrsta nesukladnosti* navedena u *Parametrima nesukladnosti*, odjeljak *nesukladnosti*.
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* della *Non conformità* (dati obbligatori).   
-> All'inserimento di una nuova *Non conformità*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo non conformità*.   
+> **Godina/Broj/Datum**: ovo su *Godina*, *Broj* i *Datum* *Nesukladnosti* (obavezni podaci).   
+> Prilikom unosa nove *Nesukladnosti*:  
+> - *Datum* se predlaže kao današnji datum;
+> - *Godina* i *Broj* se predlažu na temelju *Datuma* i *Numeriranja* povezanih s *Vrstom nesukladnosti*.  
 >
-> **Cliente** o **Fornitore**: è il riferimento del *Cliente* o del *Fornitore* destinatario della *Non conformità*  (dato obbligatorio se il *Tipo non conformità* è *A fornitore* o *A cliente*).   
-> *Cliente* o del *Fornitore* si abilitano sulla base del *Tipo non conformità* indicato.   
+> **Kupac** ili **Dobavljač**: Ovo je referenca na *Kupca* ili *Dobavljača* kojem je *Nesukladnost* upućena (obavezno ako je *Vrsta nesukladnosti* *Dobavljaču* ili *Kupcu*).
+> *Kupac* ili *Dobavljač* omogućen je na temelju naznačene *Vrste nesukladnosti*.   
 >
-> **Funzione/Area/Reparto**: è il riferimento della *Funzione/Area/Reparto* (dato obbligatorio se il *Tipo non conformità* è *Interna*).   
-> Si abilita sulla base del *Tipo non conformità* indicato.   
-
-
-## Testata
-
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile della *Non conformità*.   
-> All'inserimento di una nuova *Non conformità* viene proposta la *Persona responsabile* indicata nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
->
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile della *Non conformità*.   
-> All'inserimento di una nuova *Non conformità* viene proposta la *Funzione responsabile* indicata nei *Parametri Reclami e Non conformità*, sessione *Non conformità*.   
->
-> **Referente esterno**: annotazioni libere sulla persona di riferimento del *Cliente*, *Fornitore* o *Funzione/Area/Reparto* destinatario della *Non conformità*.   
->
-> **Sito produttivo**: è il riferimento del *Sito produttivo* di dove è stata riscontrata la *Non conformità*.   
->
-> **Motivo**: annotazioni libere sul motivo dell'inserimento della *Non conformità* (dato obbligatorio).   
->
-> **Proposta di soluzione**: annotazioni libere sull'argomento.   
-> Solitamente utilizzato per indicare una proposta di soluzione al destinatario della della *Non conformità*.   
->
-> **Notificata/In data**: Sono le indicazioni manuali se la *Non conformità* è stata notificata e in quale data al destinatario della stessa.   
->
-> **Risposta Fornitore/Interna**: annotazioni libere sull'argomento.   
-> Solitamente utilizzato per registrare un'eventuale risposta data dal destinatario della *Non conformità* alla notifica della stessa.   
->
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito la *Non conformità*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica alla *Non conformità*.   
->
-> **Approvata/In data**: expander dove è possibile inserire le informazioni di approvazione della *Non conformità:   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono approvare la *Non conformità*.  
->> **Approvata**: indica che la *Non conformità* è *Approvata*.   
->> All'atto dell'approvazione vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
->> **In data**: è la data in cui la *Non conformità* è stata *Approvata*.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Nome* e *Persona* proposte come *Utente A.R.M.* collegato, *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Approvata*.   
->> **Nome**: è l'*Utente A.R.M.* che ha approvato la *Non conformità*. L'informazione è di sola lettura.   
->> **Persona**: è il *Dipendente* che ha approvato la *Non conformità*. L'informazione è di sola lettura.   
->> **Funzione**: è la *Funzione aziendale* che ha approvato la *Non conformità*.   
->> Abilitata solamente se la *Non conformità* è *Approvata*.   
->
-> **Chiusa/In data**: expander dove è possibile inserire le informazioni di chiusura della *Non conformità*:   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere la *Non conformità*.  
->> **Chiusa**: indica che la *Non conformità* è *Chiusa*.   
->> All'atto della chiusura vengono automaticamente proposte: *In data*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.*   
->> **In data**: è la data in cui la *Non conformità* è stata *Chiusa*.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Nome* e *Persona* proposte come *Utente A.R.M.* collegato, *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiusa*.   
->> **Nome**: è l'*Utente A.R.M.* che ha chiuso la *Non conformità*. L'informazione è di sola lettura.   
->> **Persona**: è il *Dipendente* che ha chiuso la *Non conformità*. L'informazione è di sola lettura.   
->> **Funzione**: è la *Funzione aziendale* che ha chiuso la *Non conformità*.   
->> Abilitata solamente se la *Non conformità* è *Chiusa*.   
->> **Notifica chiusura/In data**: Sono le indicazioni manuali se la chiusura della *Non conformità* è stata notificata e in quale data al destinatario della stessa.   
+> **Funkcija/Područje/Odjel**: Ovo je referenca za *Funkciju/Područje/Odjel* (obavezno ako je *Vrsta nesukladnosti* *Interna*).
+> Omogućuje se na temelju naznačene *Vrste nesukladnosti*. 
 
 
-### Riferimento documento
+## Zaglavlje
 
-Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine alla *Non conformità* in gestione. Le informazioni presenti sono:   
-> **Fattura di acquisto**, **Bolla di consegna di acquisto**, **Ricevimento merce**, **Rientro da conto lavoro**, **Reclamo**, **Anno/Ordine/Lotto** e **Fase/Sottofase/Dichiarazione n.**:   
-> sono tutti riferimenti in sola lettura al documento di origine che ha creato la *Non conformità*.   
-> Nello standard, l'unico documento che può creare una *Non conformità* e che imposta automaticamente il riferimento e il *Reclamo*.
+Upravljane informacije su:
+> **Odgovorna osoba**: ovo je *Zaposlenik* odgovoran za *Nesukladnost*.
+> Prilikom unosa nove *Nesukladnosti* prikazuje se *Odgovorna osoba* navedena u odjeljku *Parametri nesukladnosti*, *Nesukladnost*. 
+>
+> **Odgovorna funkcija**: Ovo je *Funkcija tvrtke* odgovorna za *Nesukladnost*.
+> Prilikom unosa nove *Nesukladnosti*, predlaže se *Odgovorna funkcija* naznačena u odjeljku *Parametri nesukladnosti*, *Nesukladnost*.  
+>
+> **Vanjski referent**: slobodne napomene o kontakt osobi *Kupca*, *Dobavljača* ili *Funkcije/Područja/Odjela* primatelja *Nesukladnosti*.   
+>
+> **Proizvodno mjesto**: je referenca *Proizvodnog mjesta* gdje je pronađena *Nesukladnost*.   
+>
+> **Razlog**: slobodne napomene o razlogu unosa *Nesukladnosti* (obavezni podatak).   
+>
+> **Prijedlog rješenja**: napomene u slobodnom obliku o temi.
+> Obično se koristi za označavanje predloženog rješenja primatelju *Nesukladnost*.  
+>
+> **Obaviješteno/Na datum**: ručni unos oznake je li *Nesukladnost* obaviještena primatelju i kojeg datuma.   
+>
+> **Odgovor dobavljača/interni odgovor**: Slobodne bilješke o temi.
+> Obično se koristi za bilježenje bilo kakvog odgovora primatelja *Nesukladnosti* na obavijest. 
+>
+> **Audit**: proširenje samo za čitanje gdje su vidljive sljedeće informacije:
+>> **Datum kreiranja/Ime**: ovo je datum i *A.R.M. korisnik* koji je unio *Nesukladnost*.
+>> **Datum zadnje izmjene/Ime**: ovo je datum i *A.R.M. korisnik* koji je napravio posljednju izmjenu *Nesukladnosti*.   
+>
+> **Odobreno/Datum**: proširenje u koje se mogu unijeti podaci o odobrenju za *Nesukladnost*:
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može odobriti *Nesukladnost*.
+>> **Odobreno**: Označava da je *Nesukladnost* *Odobrena*.   
+>> Nakon odobrenja, automatski se predlažu sljedeći podaci: *Na datum*, predloženo na današnji datum i s mogućnošću promjene, *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan i *Zaposlenik* povezan s *A.R.M. korisnikom*
+>> **Datum**: ovo je datum na koji je *Nesukladnost* *Odobrena*.   
+>> Prilikom unosa datuma automatski se predlažu sljedeći podaci: *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan, *Zaposlenik* povezan s *A.R.M. korisnikom* i postavljena je zastavica *Odobreno*.   
+>> **Ime**: Ovo je *A.R.M. korisnik* koji je odobrio *Nesukladnost*. Ove su informacije samo za čitanje.
+>> **Osoba**: Ovo je *Zaposlenik* koji je odobrio *Nesukladnost*. Ove su informacije samo za čitanje.
+>> **Funkcija**: Ovo je *Funkcija tvrtke* koja je odobrila *Nesukladnost*. 
+>> Omogućeno samo ako je *Nesukladnost* *Odobrena*.   
+>
+> **Datum zatvaranja/na dan**: proširenje u koje se mogu unijeti podaci o zatvaranju *Nesukladnost*:
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može zatvoriti *Nesukladnost*.  
+>> **Zatvoreno**: označava da je *Nesukladnost* *Zatvorena*.  
+>> Nakon zatvaranja, automatski se predlažu sljedeći podaci: *Na datum*, predloženo od današnjeg datuma i s mogućnošću promjene, *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan i *Zaposlenik* povezan s *A.R.M. korisnikom*  
+>> **Datum**: datum na koji je *Nesukladnost* *Zatvorena*.   
+>> Prilikom unosa datuma automatski se predlažu sljedeći podaci: *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezan, *Zaposlenik* povezan s *A.R.M. korisnikom* i postavljena je oznaka *Zatvoreno*.  
+>> **Ime**: je *A.R.M. korisnik* koji je zatvorio *Nesukladnost*. Ova informacija je samo za čitanje.
+>> **Osoba**: je *Zaposlenik* koji je zatvorio *Nesukladnost*. Ova informacija je samo za čitanje.
+>> **Funkcija**: je *Funkcija tvrtke* koja je zatvorila *Nesukladnost*.   
+>> Omogućeno samo ako je *Nesukladnost* *Zatvorena*.
+>> **Obavijest o zatvaranju/Datum zatvaranja**: ručni unos oznake je li *Nesukladnost* obaviještena primatelju i kojeg datuma.  
+
+
+### Referenca dokumenta
+
+Kartica sadrži informacije o dokumentima koji su doveli do upravljanja *Nesukladnosću*. Uključene informacije su:
+> **Račun**, **Primka/Otpremnica**, **Prijem robe**, **Povrat od podizvođača**, **Reklamacija**, **Godina/Narudžba/Serija** i **Broj faze/podfaze/deklaracije**:
+> Sve su to reference samo za čitanje na izvorni dokument koji je stvorio *Nesukladnost*.
+> U standardu, ovo je jedini dokument koji može stvoriti *Nesukladnost* i automatski postavlja referencu i *Reklamaciju*.
 
 
 ### Annotazioni
