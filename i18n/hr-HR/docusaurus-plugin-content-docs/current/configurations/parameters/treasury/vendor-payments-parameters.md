@@ -1,14 +1,15 @@
 ---
-title: Parametri Pagamenti Fornitore
+title: Parametri plaćanja dobavljača 
 sidebar_position: 3
 ---
 
-I parametri del modulo **Pagamenti fornitore** si trovano in **Parametri > Tesoreria**.
+Parametri modula **Plaćanja Dobavljača** nalaze se u **Parametri > Riznica**.
 
-Nei parametri del modulo Pagamenti fornitore si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo. 
+U parametrima modula Plaćanja dobavljača možete unaprijed postaviti zadane elemente koji će se predložiti u procedurama modula. 
 
-> **Percorso di creazione dei tracciati Riba**: impostazione della  directory standard di creazione del tracciato telematico per i bonifici Italia. Si consiglia di creare una directory condivisa di rete all'interno di un server, per poter accedere da tutte le postazioni della procedura.ATTENZIONE: il campo è obbligatorio ma, Fluentis 2015 utilizza il sistema della gestione documentale integrato per memorizzare il file .xml del tracciato telematico per le distinte di pagamento. Il file sarà dunque prelevabile direttamente dalla form della distinta di pagamento.  
-> **Standard ABI**: impostazione del formato del file telematico secondo lo standard ABI (raccomandato).  
-> **ABI Centro Applicativo**: impostazione di un codice ABI dell'eventuale centro applicativo che procederà a veicolare le comunicazioni (normalmente è un campo non necessario).  
-> **Imponi la banca d'appoggio presente in anagrafica del fornitore**: con il flag attivo verrà imposto l'utilizzo della banca d'appoggio inserita nell'anagrafica del fornitore (Griglia Banca d'appoggio) rispetto alla banca d'appoggio definita nella registrazione contabile, e collegata alla partita aperta, tramite la griglia Tipi Pagamento nell'anagrafica. Il parametro è visibile (e nuovamente disattivabile di volta in volta) nella procedura Creazione Automatica Pagamenti Fornitori. Non è visibile, invece, se si crea una nuova distinta di pagamento (Pagamenti Fornitori > Crea Pagamento Fornitore) e pertanto in questo caso va gestito da qui.  
-> **Gestione rif. Iban**: impostazione dell'obbligo di gestione dei codici IBAN: in questo caso il tracciato non sarà creato in caso manchino gli Iban di alcuni pagamenti in distinta. 
+> **Put kreiranja Riba traga**: postavljanje standardnog imenika za kreiranje elektroničkog traga za talijanske bankovne transfere. Preporučljivo je stvoriti dijeljeni mrežni direktorij unutar poslužitelja kako biste mogli pristupiti postupku sa svih stanica  
+PAŽNJA: polje je obavezno, ali Fluentis 2015 koristi integrirani sustav upravljanja dokumentima za pohranu .xml datoteke elektroničkog izgleda za. uplatnice. Datoteka se stoga može preuzeti izravno s obrasca uplatnice.  
+> **Standard ABI**: postavljanje telematskog formata datoteke prema ABI standardu (preporučeno).  
+> **HUB aplikacijski centar**: postavljanje ABI koda mogućeg aplikacijskog centra koji će nastaviti s prijenosom komunikacije (obično je ovo nepotrebno polje).  
+> **Umetnite banku prisutnu u registru dobavljača**:  s aktivnom zastavom, nametnut će se upotreba prateće banke umetnute u registar dobavljača (mreža prateće banke) u usporedbi s pratećom bankom definiranom u računovodstvenom zapisu i povezanom s otvorenim stavka, preko mreže Vrste plaćanja u registru. Parametar je vidljiv (i može se povremeno deaktivirati) u postupku automatskog kreiranja plaćanja dobavljača. Međutim, nije vidljivo ako kreirate novu uplatnicu (Plaćanja dobavljača > Kreiraj plaćanje dobavljača) i stoga se u ovom slučaju mora upravljati odavde.  
+> **Ref Iban**: postavljanje obveze upravljanja IBAN kodovima: u ovom slučaju neće biti kreiran izgled ako nedostaju Ibani nekih plaćanja u listi.
