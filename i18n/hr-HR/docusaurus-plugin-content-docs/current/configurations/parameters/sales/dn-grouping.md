@@ -1,35 +1,35 @@
 ---
-title: Parametri raggruppamento DDT
+title: Parametri grupiranja otpremnice 
 sidebar_position: 8
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju da se želi izvršiti ručna konfiguracija, potrebno je pogledati kontrolni popis na povezanoj stranici.
 :::
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Parametri grupiranja omogućuju definiranje načina na koji će se dokumenti razdvajati tijekom postupaka obrade. U tu svrhu mogu se koristiti određene oznake (flagovi) za grupiranje dokumenata prema različitim svojstvima, poput kategorije, vrste dokumenta ili drugih relevantnih karakteristika.
+Ovi opći parametri grupiranja konfiguriraju se samo jednom i automatski će se primjenjivati na sve postupke, te će vrijediti za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva ponašanje različito od onoga postavljenog u općim parametrima, tada je potrebno prilagoditi parametre grupiranja unutar njihove specifične evidencije.
+Na taj se način osigurava fleksibilno i prilagodljivo upravljanje obradama, omogućujući ispunjavanje specifičnih potreba svakog kupca ili dobavljača, uz održavanje centralizirane i dosljedne konfiguracije za većinu operacija.
 
-In questa maschera vengono decise le regole di raggruppamento per le procedure:  
-- **Creazione DDT di vendita da Picking**;  
-- **Creazione DDT di vendita da Liste di prelievo UDC**;   
-- **Creazione DDT di vendita da Liste Trasferimento UDC**;   
-- **Creazione DDT di vendita da Pos**;  
-- **Creazione DDT di vendita da ordine cliente**.      
+Pomoću ovih parametara odlučuju se pravila grupiranja za postupke:   
+- **Stvaranje otpremnice prema Picking listi**;  
+- **Stvaranje otpremnice iz Picking liste utovarnih jedinica**;   
+- **Stvaranje otpremnice iz liste prijenosa utovarnih jedinica**;   
+- **Stvaranje otpremnice prema POS-u**;  
+- **Izrada otpremnice za prodaju iz narudžbe kupca**.      
 
-Nel caso di evasione di più documenti, è possibile raggrupparli in base alle seguenti proprietà, inserendo i relativi flag:  
-- **tipo documento**: i documenti di origine con lo stesso [Tipo](/docs/configurations/tables/sales/sales-order-types) creeranno un singolo DDT  
-- **anno**: i documenti di origine dello stesso anno creeranno un singolo DDT  
-- **mese**: i documenti di origine dello stesso mese creeranno un singolo DDT  
-- **cambio**: i documenti di origine con lo stesso cambio creeranno un singolo DDT  
-- **progetto**: i documenti di origine con lo stesso progetto in [Testata](/docs/sales/sales-orders/create-new-sales-orders/sales-order) creeranno un singolo DDT  
-- **tipo e soluzione di pagamento**: i documenti di origine con le stesse condizioni di pagamento creeranno un singolo DDT  
-- **destinazione**: i documenti di origine con la stessa destinazione e vettore creeranno un singolo DDT   
-- **cointestatari**: i documenti di origine con lo stesso tipo operazione per la gestione dei cespiti creeranno un singolo DDT  
+U slučaju obrade (evidencije) više dokumenata, moguće ih je grupirati prema sljedećim svojstvima dodavanjem odgovarajućih oznaka (flagova):  
+- **vrsta dokumenta**: izvorni dokumenti s istom [Vrstom](/docs/configurations/tables/sales/sales-order-types) kreirat će jedinstvenu otpremnicu  
+- **godina**: izvorni dokumenti iz iste godine kreirat će jedinstvenu otpremnicu 
+- **mjesec**: izvorni dokumenti iz istog mjeseca kreirat će jedinstvenu otpremnicu 
+- **tečaj**: izvorni dokumenti s istim tečajem kreirat će jedinstvenu otpremnicu  
+- **projekt**: izvorni dokumenti s istim projektom u [Zaglavlje](/docs/sales/sales-orders/create-new-sales-orders/sales-order) kreirat će jedinstvenu otpremnicu 
+- **vrsta i uvjeti plaćanja**: izvorni dokumenti s istim uvjetima plaćanja kreirat će jedinstvenu otpremnicu  
+- **odredište**: izvorni dokumenti s istim odredištem i prijevoznikom kreirat će jedinstvenu otpremnicu   
+- **suvlasnici**: izvorni dokumenti s istom vrstom operacije za upravljanje osnovnim sredstvima kreirat će jedinstvenu otpremnicu
 
-E' necessario flaggare le colonne che prevedono i raggruppamenti che si vogliono prevedere per queste evasioni.      
-Il flag **Riepilogativa** è fondamentale per creare un unico documento avendo diversi documenti di partenza. Gli altri flag invece riguardano i raggruppamenti particolari.     
-La colonna **Priorità** non è utilizzata al momento. 
+Potrebno je označiti stupce (flagirati) koji odgovaraju grupiranjima koja želite primijeniti za te obrade.     
+Oznaka **Sažetak** ključna je za izradu jedinstvene otpremnice na temelju više početnih dokumenata. Ostale oznake odnose se na posebna grupiranja.     
+Stupac **Prioritet** trenutno se ne koristi.
