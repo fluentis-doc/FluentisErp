@@ -7,6 +7,12 @@ La procedura si apre tramite il percorso **Vendite > DDT > Procedure > Scarico f
 
 Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nella fattura. 
 
+:::tip Ricorda
+Se il documento contiene **articoli fittizi**, la procedura terrà conto della *Tipologia di approvvigionamento* definita nei Parametri MRP dell’articolo:
+- Gli articoli di tipo *Acquisto* non verranno inseriti nella registrazione di magazzino.   
+- Gli articoli di tipo *Produzione* o *Conto Lavoro* verranno registrati in magazzino con il primo livello della distinta base.
+:::
+
 ### Filtro
 
 In questo tab, l'utente ha la possibilità di cercare e di trasferire le fatture che hanno impostato al loro interno il flag *Stampata*.

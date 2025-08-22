@@ -7,9 +7,9 @@ I parametri delle commesse di acquisto permettono l'impostazione di base per ges
 
 #### Campi specifici
 
-- **Evasione obbligatoria**: quando è settato e l'utente si trova nella testata dell'ordine fornitore e passa al tab *Articoli* automaticamente si apre la form *Evasione da commessa*, perciò l'utente è obbligato ad evadere le commesse aperte per il fornitore s-pecificato nell'ordine.
+- **Evasione obbligatoria**: se attivo, al momento dell’inserimento di un nuovo ordine fornitore si aprirà la form di Evasione commesse e non sarà possibile aggiungere manualmente articoli nell’ordine senza aver prima evaso almeno una riga di una Commessa di acquisto. 
 
-- **Evasione articoli da commessa obbligatoria**: quando è settato e sono inseriti degli articoli nel tab *Articoli* viene controllato che l'articolo sia presente in una commessa del fornitore prescelto.
+- **Evasione articoli da commessa obbligatoria**: se attivo, l'inserimento degli articoli negli Ordini fornitori può essere effettuato solo mediante Evasione da commessa; non sarà possibile aggiungere altri articoli all’ordine, oltre a quelli inseriti mediante evasione. 
 
 - **Quantità fissa**: quando è settato non può essere evasa la commessa per una quantità maggiore a quella inserita nella commessa.
 

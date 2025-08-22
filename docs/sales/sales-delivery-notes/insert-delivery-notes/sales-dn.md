@@ -76,7 +76,12 @@ Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sc
 
 ### 2.2 Sconti
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.    
+
+:::important Ricorda
+Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
+Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
@@ -112,7 +117,11 @@ Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devo
  -  nella tabella [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type) deve essere presente il flag su *Ordine* (che indica che il DDT può derivare da un ordine).    
  - solo se la procedura viene eseguita dalla Ricerca ordini, i tipi documento devono essere compatibili: nella tabella [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) il tipo ordine che si vuole evadere deve avere impostato il tipo DDT corrispondente.        
 
-Si dovrà poi andare ad impostare nella testata del nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
+Si dovrà poi andare ad impostare nella testata del nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.   
+
+:::tip Ricorda 
+Eventuali annotazioni inserite in testata dell'ordine (come *Nostro/Vostro riferimento*, *Riferimento al Numero Ordini Cliente*, *Note iniziali*) vengono riportate nella testata del DDT solo nel caso di ripresa dei dati da un unico ordine.   
+:::
 
 #### Procedimento:
 

@@ -81,6 +81,11 @@ Gli sconti proposti in testata del documento vengono riportati in ogni nuova rig
 
 Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
 
+:::important Ricorda
+Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
+Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::
+
 Il pulsante specifico di questa tab è il **Cancella sconti**, utilizzato per cancellare le righe di sconto selezionate.
 
 

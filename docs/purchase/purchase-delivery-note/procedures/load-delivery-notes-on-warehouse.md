@@ -12,6 +12,12 @@ La procedura si apre tramite il percorso **Acquisti > DDT di acquisto > Procedur
 Il DDT di Acquisto può essere registrato a magazzino anche mediante il pulsante di [*Carico automatico nel magazzino*](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) presente all'interno del documento.
 :::
 
+:::tip Ricorda
+Se il documento contiene **articoli fittizi**, la procedura terrà conto della *Tipologia di approvvigionamento* definita nei Parametri MRP dell’articolo:
+- Gli articoli di tipo *Acquisto* non verranno inseriti nella registrazione di magazzino.   
+- Gli articoli di tipo *Produzione* o *Conto Lavoro* verranno registrati in magazzino con il primo livello della distinta base.
+:::
+
 ### Filtro
 
 Offre la possibilità di inserire i filtri per cercare i DDT di acquisto, per selezionarli e dopo registrarli in magazzino.

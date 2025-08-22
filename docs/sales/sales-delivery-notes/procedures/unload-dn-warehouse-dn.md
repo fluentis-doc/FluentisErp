@@ -8,6 +8,12 @@ La procedura massiva si apre tramite il percorso **Vendite > DDT > Procedure > S
 Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel DDT.    
 Ricordiamo che la procedura può essere eseguita anche all'interno della [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del singolo DDT con il pulsante [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
 
+:::tip Ricorda
+Se il documento contiene **articoli fittizi**, la procedura terrà conto della *Tipologia di approvvigionamento* definita nei Parametri MRP dell’articolo:
+- Gli articoli di tipo *Acquisto* non verranno inseriti nella registrazione di magazzino.   
+- Gli articoli di tipo *Produzione* o *Conto Lavoro* verranno registrati in magazzino con il primo livello della distinta base.
+:::
+
 La procedura massiva è composta da tre tab che analizziamo di seguito. 
 
 ### Filtro

@@ -25,6 +25,11 @@ Gli **sconti** possono essere configurati in vari modi:
 - **Listino Articoli**: Gli sconti possono essere specificati per ogni riga articolo nel listino, anche a livello di scaglione (sconti a quantità o a valore).
 - **Definizione Politiche di Sconto**: Gli sconti possono essere configurati per fornitori, classi di articoli, categorie di sconto e dettagli di categoria sconto.
 
+:::important Ricorda
+Per poter gestire gli **sconti su imponibile** è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
+Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::
+
 ## Procedura di Ripresa Prezzi e Sconti
 
 Quando si inserisce un articolo in un documento di acquisto, viene attivata la procedura di **ripresa dei prezzi e degli sconti**. Il sistema cerca un listino valido tra quelli associati al fornitore, partendo dalla tipologia con il flag "default" o seguendo la priorità di ricerca impostata.

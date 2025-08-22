@@ -105,7 +105,12 @@ Se il documento nasce da un:
 
 ### 2.2 Sconti
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.   
+
+:::important Ricorda
+Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
+Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::
   
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
@@ -149,7 +154,11 @@ Tramite questa procedura è possibile creare una fattura di vendita dall'evasion
 
 Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
  -  i/il cliente deve essere lo stesso della fattura;
- -  il DDT che si vuole evadere deve avere impostato il flag *Stampato*;
+ -  il DDT che si vuole evadere deve avere impostato il flag *Stampato*;   
+
+:::tip Ricorda 
+Eventuali annotazioni inserite in testata del DDT (come *Nostro/Vostro riferimento*, *Riferimento al Numero Ordini Cliente*, *Note iniziali*) vengono riportate nella testata della Fattura solo nel caso di ripresa dei dati da un unico DDT.   
+:::
 
 #### Procedimento 
 
@@ -195,7 +204,11 @@ Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devo
  -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato* e la *Data conferma ordine*;
  -  i tipi documento devono essere compatibili: nella tabella dei *Tipi ordini* il tipo ordine che si vuole evadere deve avere impostato il tipo fattura corrispondente, mentre nella tabella dei *Tipi fatture* deve essere presente il flag su *Ordine* (che indica che la fattura deriva da un ordine);
 
-Si dovrà poi andare ad impostare nella testata della nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
+Si dovrà poi andare ad impostare nella testata della nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.   
+
+:::tip Ricorda 
+Eventuali annotazioni inserite in testata dell'ordine (come *Nostro/Vostro riferimento*, *Riferimento al Numero Ordini Cliente*, *Note iniziali*) vengono riportate nella testata della Fattura solo nel caso di ripresa dei dati da un unico ordine.   
+:::
 
 #### Procedimento 
 

@@ -161,7 +161,11 @@ Nella griglia di risultati, l'utente ha poi la possibilità di:
  - Selezionare tutti o alcuni degli articoli proposti: per farlo basterà selezionare il flag presente all'inizio della riga articolo. La *Quantità da evadere* sarà automaticamente impostata uguale alla *Quantità residua*.
  - Selezionare alcuni articoli per una *quantità parziale*. In questo caso si dovrà andare a modificare la *Quantità da evadere*.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.
+Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.  
+
+:::tip Ricorda 
+Eventuali annotazioni inserite in testata dell'ordine (come *Nostro/Vostro riferimento*, *Note iniziali*) vengono riportate nella testata del DDT solo nel caso di ripresa dei dati da un unico ordine.   
+:::
 
 #### Pulsanti specifici
 
@@ -259,7 +263,12 @@ Quando si crea/aggiorna un listino mediante questa procedura vengono riportati n
 
 - **Prezzo manuale**: si attiva automaticamente quando il prezzo dell'articolo è stato inserito o modificato manualmente.
 
-- **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.        
+- **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.     
+
+:::important Ricorda
+Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
+Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::
 
 #### Pulsante specifico
 
@@ -430,6 +439,13 @@ I dati presenti sono:
 - **Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei parametri della fattura. 
 - **Peso netto**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri della fattura. 
 - **Peso lordo**: viene proposto il peso lordo cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quella inserita nei parametri della fattura.     
+
+:::tip Ricorda
+Le condizioni per il calcolo automatico di pesi e volumi nel riepilogo del documento sono: 
+- l'attivazione del flag *Ricalcola trasporto* nei [parametri](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) del documento;
+- l'inserimento di un'*unità di misura predefinita* per i pesi e per i volumi nei parametri DDT di acquisto. 
+:::
+
 - **Aspetto esteriore bene**: combo box che rimanda all'omonima tabella in cui codificare i dati.     
 - **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab Pesi/Dimensioni*, nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.     
 - **Valori modificati manualmente**: con questo flag rendiamo possibile la modifica dei campi Volume, Peso netto, Peso lordo e Colli, che altrimenti riportano i dati da anagrafica articolo senza possibilità di modifica.     

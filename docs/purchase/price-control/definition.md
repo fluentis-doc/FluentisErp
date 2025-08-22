@@ -16,6 +16,21 @@ Nella prima griglia sono presenti le seguenti colonne:
 
 Nella seconda griglia vengono definiti gli **Sconti** da proporre per le combinazioni della prima griglia. Gli sconti verranno proposti nei documenti intestati all'anagrafica per quella determinata classe articolo. 
 
+Gli sconti inseriti nella Definizione politiche sconti vengono ripresi con il seguente ordine di priorità
+1) Fornitore + Classe articolo + Categoria sconto dell'articolo + Sottocategoria sconto dell'articolo   
+2) Fornitore + Classe articolo + Categoria sconto dell'articolo   
+3) Fornitore + Categoria sconto dell'articolo + Sottocategoria sconto dell'articolo   
+4) Fornitore + Categoria sconto dell'articolo  
+5) Fornitore + Classe articolo  
+6) Fornitore
+
+Nel caso in cui per un determinato articolo risultino valide più condizioni di sconto, nel documento viene riportato il primo sconto individuato.   
+
+Ad esempio, qualora nelle politiche sconti sia stata definita una condizione associata esclusivamente al fornitore ed un’altra associata al fornitore e ad una specifica classe articolo:   
+- per gli articoli appartenenti alla classe indicata verrà applicato lo sconto definito nella seconda condizione;
+- in assenza della corrispondenza con la classe articolo, verrà applicato lo sconto definito esclusivamente per il fornitore.
+
+
 ### Gestione categorie sconto nei documenti
 
 È possibile assegnare degli sconti per categoria articolo che siano poi ripresi all'interno dei documenti di acquisto. Per fare questo sono necessari alcuni passaggi.

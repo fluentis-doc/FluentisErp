@@ -22,3 +22,7 @@ I campi presenti sono:
 **Controllo qualità**: i *tipi Ricevimento* che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
 
 **Gerstione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ricevimento e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.
+
+:::tip NOTA
+Il Magazzino e la Causale da utilizzare per il Carico ricevimento merci vanno definiti nei Parameti Ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
+:::

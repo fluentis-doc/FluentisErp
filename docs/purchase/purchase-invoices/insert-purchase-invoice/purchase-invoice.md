@@ -168,7 +168,11 @@ Nella griglia di risultati, l'utente ha poi la possibilità di:
  - Selezionare tutti o alcuni degli articoli proposti: per farlo basterà selezionare il flag presente all'inizio della riga articolo. La *Quantità da evadere* sarà automaticamente impostata uguale alla *Quantità residua*.
  - Selezionare alcuni articoli per una *quantità parziale*. In questo caso si dovrà andare a modificare la *Quantità da evadere*.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nei DDT seezionati e li riporterà nella fattura.
+Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nei DDT seezionati e li riporterà nella fattura.   
+
+:::tip Ricorda 
+Eventuali annotazioni inserite in testata del DDT (come *Nostro/Vostro riferimento*, *Note iniziali*) vengono riportate nella testata della Fattura solo nel caso di ripresa dei dati da un unico DDT.   
+:::
 
 #### Pulsanti specifici
 
@@ -206,7 +210,7 @@ Una volta impostati tutti i Filtri desiderati, cliccando sul pulsante di *Ricerc
 :::note Nota
 La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate.   
 Nel caso di evasione di più ordini aventi la stessa soluzione di pagamento e/o stessa destinazione, verranno riportate nella fattura le informazioni contenute nell'ordine; in alternativa saranno riprese quelle dell'anagrafica fornitore. 
-:::
+:::   
 
 Nella griglia di risultati, l'utente ha poi la possibilità di:
 
@@ -214,6 +218,10 @@ Nella griglia di risultati, l'utente ha poi la possibilità di:
  - Selezionare alcuni articoli per una *quantità parziale*. In questo caso si dovrà andare a modificare la *Quantità da evadere*.
 
 Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nella fattura.
+
+:::tip Ricorda 
+Eventuali annotazioni inserite in testata dell'ordine (come *Nostro/Vostro riferimento*, *Note iniziali*) vengono riportate nella testata della Fattura solo nel caso di ripresa dei dati da un unico ordine.   
+:::
 
 #### Pulsanti specifici 
 
@@ -364,6 +372,11 @@ Quando si crea/aggiorna un listino mediante questa procedura vengono riportati n
 
 - **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.        
 
+:::important Ricorda
+Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
+Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::
+
 ### 3.4 Dati articolo 
 
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
@@ -377,7 +390,8 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 - **Prezzo unità di misura alternativa**: se attivo indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale.    
 Questo flag assieme ai campi *Unità di misura alternativa* e *Quantità alternativa* sono visibili solo se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters) è stato attivato il flag *Gestione doppia unità di misura*.
 - **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.   
-- **Rivalsa IVA**: se settata, l'IVA dell'omaggio viene considerata per il totale fattura.
+- **Da/A data competenza**: permettono di definire le Date di competenza del documento. Se nella tabella *Società* è attiva la *Gestione Controlling*, la creazione di una fattura da DDT o da rientro di Conto Lavoro riporta come date di competenza quelle del carico documento. Nel caso di documenti non registrati a magazzino o di articoli inseriti manualmente in fattura, le date di competenza coincidono invece con la data della fattura.   
+- **Rivalsa IVA**: se settata, indica che l'IVA dell'omaggio deve essere considerata per il totale fattura.
 - **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
 - **Riferimento ordine**: nel caso in cui la fattura sia generata da un ordine, il riferimento all'ordine sarà riportato automaticamente in questo campo.
 - **Dettaglio dichiarazioni**: viene riportata la [Dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) usata per proporre l'iva dell'articolo; dalla combo box è possibile cambiare la dichiarazione d'intento di riferimento, se presenti più dichiarazioni valide.

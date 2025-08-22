@@ -65,6 +65,11 @@ In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* 
 
 - **Data di arrivo stimata**: se la RDA è stata rilasciata dalla pianificazione e la *Data ETA* dell'ordine pianificato è valorizzata, essa sarà riportata in questo campo; può anche essere inserita o modificata manualmente. 
 
+:::tip Ricorda
+Nelle Richieste di Acquisto generate dal rilascio di Ordini Pianificati viene sempre riportata la *Quantità di utilizzo* dell’ordine pianificato, con la relativa unità di misura.   
+Se l’unità di misura non coincide con quella gestionale dell’articolo, al momento della creazione dell’Ordine Fornitore essa verrà inserita nel campo *Unità di misura alternativa* assieme alla quantità indicata nell’ordine. Nella griglia articolo, invece, sarà riportata l’unità di misura gestionale e la quantità verrà ricalcolata sulla base del fattore di conversione definito nell’anagrafica articolo.  
+:::
+
 Nella sezione sottostante la griglia vengono riportati i totali del documento:   
 
 - **Imponibile**: riporta il totale imponibile della Richiesta di acquisto.    

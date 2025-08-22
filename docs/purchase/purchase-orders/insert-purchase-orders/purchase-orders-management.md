@@ -130,7 +130,12 @@ import TabExtraData from './../../../import/sections/tab-extra-data.md'
  
 La procedura di ripresa articoli da progetto permette di evadere anche parzialmente la commessa di acquisto. Sono proposte tutte le commesse non evase, non forzatamente evase e parzialmente evase. Per poter essere evasa una commessa di acquisto, deve essere *Stampata* e avere una *Data conferma*.
  
-Prima di procedere con l'evasione, sarà necessario inserire il *Tipo di ordine* che si vuole creare e il *Fornitore* nella testata del documento. Successivamente, premendo il pulsante **Evasione da progetto**, si aprirà la form dove è possibile filtrare le commesse relative al fornitore del documento.
+Prima di procedere con l'evasione, sarà necessario inserire il *Tipo di ordine* che si vuole creare e il *Fornitore* nella testata del documento. Successivamente, premendo il pulsante **Evasione da progetto**, si aprirà la form dove è possibile filtrare le commesse relative al fornitore del documento. 
+
+:::tip Ricorda
+Se nei Parametri Commesse di Acquisto il flag **Evasione obbligatoria** è attivo, al momento dell’inserimento di un nuovo ordine fornitore si aprirà la form di Evasione da progetto e non sarà possibile aggiungere manualmente articoli nell’ordine senza aver prima evaso almeno una riga di una Commessa di acquisto.    
+Il flag **Evasione articoli da commessa obbligatoria**, invece, non permette l’aggiunta di altri articoli all’ordine, oltre a quelli inseriti mediante evasione da commessa. 
+:::
  
 Nell'area di filtro, è possibile scegliere se visualizzare i dati in una Griglia, una Struttura gerarchica oppure entrambe.
  
@@ -215,6 +220,12 @@ import Vat from './../../../import/fields/item-vat.md'
 - **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
  
 - **Data richiesta consegna** e **Data consegna**: indicano la data richiesta e prevista per la consegna. Possono essere proposte le date inserite nel tab testata oppure si possono modificare manualmente.
+
+:::tip Ricorda
+Per gli Ordini Fornitori generati da Richieste di Acquisto, la Data consegna viene determinata come segue:   
+- se nella RDA è presente la *Data di arrivo stimata*, questa viene riportata nell’ordine;   
+- in assenza, viene utilizzata la *Data richiesta* della RDA.
+:::
  
 #### Pulsanti specifici
  
@@ -236,6 +247,11 @@ Quando si crea/aggiorna un listino mediante questa procedura, nel listino vengon
 - **Listini da aggiornare**: se tale flag è attivo, il prezzo dell'articolo si aggiorna automaticamente nel relativo listino di acquisto in fase di salvataggio.
  
 - **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.        
+
+:::important Ricorda
+Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
+Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::
  
 #### Pulsante specifico
  

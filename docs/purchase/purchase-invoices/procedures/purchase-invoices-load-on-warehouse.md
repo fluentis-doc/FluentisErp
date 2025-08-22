@@ -10,6 +10,16 @@ La procedura si apre tramite il percorso **Acquisti > Fatture di acquisto > Proc
 
 Essa permette di eseguire/ripristinare le operazioni di registrazione automatica in magazzino degli articoli presenti nella fattura.
 
+:::important Ricorda
+Le fatture possono essere movimentate a magazzino solo se di tipo *Immediato*. 
+:::
+
+:::tip NOTA
+Se il documento contiene **articoli fittizi**, la procedura terrà conto della *Tipologia di approvvigionamento* definita nei Parametri MRP dell’articolo:
+- Gli articoli di tipo *Acquisto* non verranno inseriti nella registrazione di magazzino.   
+- Gli articoli di tipo *Produzione* o *Conto Lavoro* verranno registrati in magazzino con il primo livello della distinta base.
+:::
+
 ### Filtro
 
 In questo tab, l'utente ha la possibilità di inserire filtri per cercare le fatture di acquisto, per selezionarle e dopo registrarle in magazzino.   

@@ -11,4 +11,4 @@ Nella sezione di filtro è possibile filtrare per fornitore, date validità, div
 
 *Pulsante specifico*:   
 
-> **Chiudi**: questo pulsante permette di modificare massivamente la *Data fine validità* dei listini presenti a sistema. Cliccandolo si aprirà un pop-up in cui inserire la nuova *Data fine validità* che sarà applicata a tutti i listini selezionati nella griglia.   
+> **Chiudi**: questo pulsante permette di modificare massivamente la *Data fine validità* dei listini presenti a sistema. Cliccandolo si aprirà un pop-up in cui inserire la nuova *Data fine validità* che sarà applicata a tutti i listini selezionati nella griglia. Nel caso in cui il listino sia utilizzato in DDT o Fatture con data successiva, sarà visualizzato un pop-up riepilogativo con tutti i documenti aventi data successiva alla *Data fine validità* impostata.     
