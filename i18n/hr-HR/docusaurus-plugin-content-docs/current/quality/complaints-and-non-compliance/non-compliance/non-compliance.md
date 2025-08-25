@@ -142,117 +142,117 @@ Kartica sadrži informacije o dokumentima koji su doveli do upravljanja *Nesukla
 > U standardu, ovo je jedini dokument koji može stvoriti *Nesukladnost* i automatski postavlja referencu i *Reklamaciju*.
 
 
-### Annotazioni
+### Bilješke
 
-Nel tabulatore sono contenute annotazioni generali al documento e specifiche per area. Le informazioni presenti sono:   
-> **Note commerciali**: annotazioni libere sull'argomento riservate al personale dell'area commerciale.   
-> **Note tecniche**: annotazioni libere sull'argomento riservate al personale dell'area tecnica.   
-> **Note amministrative**: annotazioni libere sull'argomento riservate al personale dell'area amministrativa.   
-
-
-### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) generali per la *Non conformità*.   
+Kartica sadrži opće i specifične bilješke o dokumentu. Sadržane informacije su:
+> **Komercijalne bilješke**: slobodne bilješke o temi rezervirane za prodajno osoblje.
+> **Tehničke bilješke**: slobodne bilješke obliku o temi rezervirane za tehničko osoblje.
+> **Administrativne bilješke**: slobodne bilješke obliku o temi rezervirane za administrativno osoblje.
 
 
-### Altri costi
+### Dodatni podaci
 
-Nel tabulatore è possibile inserire altri costi aggiuntivi a quelli derivanti dal Costo degli articoli contestati e da quello di Gestione del documento.   
-> **Costi diretti**   
-> Un elenco di costi attribuibili in modo diretto al costo degli articoli contestati, al servizio dato e al costo delle lavorazioni sostenute per la gestione della *Non conformità*. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Costo diretto (Direct cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Applicazione su ...**: informazione di sola lettura che riporta su quale componente di costo viene applicato il *Valore* (se espresso in percentuale); le possibili attribuzioni sono su:   
->>> *Costo materiali*: somma della sola componente dei costi articolo degli *Oggetti difettosi* e dei *Materiali utilizzati*;   
->>> *Costo macchina*, *Costo manodopera* e *Costo lavorazioni*: somma della sola componente dei costi di lavorazione degli *Oggetti difettosi*;   
->>> *Costo industriale*: somma del *Totale materiale rilavorato* e *Totale materiale non rilavorato*.   
+Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) općenito za *Nesukladnost*.   
+
+
+### Ostali troškovi
+
+U ovoj kartici je moguće unijeti i druge troškove uz one koji proizlaze iz troška spornih stavki i troška upravljanja dokumentima.
+> **Direktni troškovi**
+> Popis troškova koji se izravno mogu pripisati cijeni spornih artikala, pruženoj usluzi i cijeni rada nastalog u upravljanju *Nesukladnošću*. Ovaj popis sadrži informacije o:  
+>> **Element troška** i **Opis elementa troška**: moguće je odabrati samo *Element troška* s *Vrst troškova = Izravni trošak*.
+>> **Vrsta troškova**: informacije samo za čitanje koje izvještavaju o *Vrsti troškova* povezanim s odabranim *Elementom troška*.
+>> **Primjeni na ...**: informacije samo za čitanje koje izvještavaju na koju se komponentu troška primjenjuje *Vrijednost* (ako je izražena kao postotak); moguće dodjele su:   
+>>> *Trošak materijala*: zbroj troškova stavke *Neispravnih predmeta* i *Upotrijebljenih materijala*;
+>>> *Trošak stroja*, *Trošak rada* i *Trošak obrade*: zbroj troškova obrade *Neispravnih predmeta*;
+>>> *Industrijski trošak*: zbroj *Ukupnog obrađenog materijala* i *Ukupnog neobrađenog materijala*.  
 >>>   
->> **Percentuale / Valore**: informazione di sola lettura che riporta le modalità di calcolo da applicare sul *Valore* (*Percentuale* o *Valore fisso*).   
->> **Valore**: è la *Percentuale* che verrà applicata, o il *Valore* che verrà aggiunto, alla componente di costo specificata in *Applicazione su ...* .   
->> **Nota**: annotazioni libere.   
+>> **Postotak / Vrijednost**: informacije samo za čitanje koje određuju metodu izračuna koja će se primijeniti na *Vrijednost* (*Postotak* ili *Fiksna vrijednost*).
+>> **Vrijednost**: ovo je *Postotak* koji će se primijeniti ili *Vrijednost* koja će se dodati komponenti troška navedenoj u *Primjeni na ...*.
+>> **Napomena**: Napomene u slobodnom obliku.  
 >>   
-> **Costi generali**   
-> Un elenco di costi generali, non direttamente imputabili alla *Non conformità* e che supportano l'intero processo aziendale. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Costo generale (General cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Percentuale / Valore**: informazione di sola lettura che riporta le modalità di calcolo da applicare sul *Valore* (*Percentuale* o *Valore fisso*).   
->> **Valore**: è la *Percentuale* che verrà applicata, o il *Valore* che verrà aggiunto, alla somma del *Totale materiale rilavorato* e *Totale materiale non rilavorato*.   
->> **Nota**: annotazioni libere.   
+> **Opći troškovi**
+> Popis općih troškova koji se ne mogu izravno pripisati *Nesukladnosti* i koji podržavaju cijeli poslovni proces. Ovaj popis sadrži informacije o:   
+>> **Element troška** i **Opis elementa troška**: mogu se odabrati samo *Elementi troška* s *Vrsta troškova = Opći trošak*.
+>> **Vrsta troškova**: informacije samo za čitanje koje prikazuju *Vrstu troškova* povezanu s odabranim *Elementom troška*.
+>> **Postotak / Vrijednost**: informacije samo za čitanje koje prikazuju metode izračuna koje će se primijeniti na *Vrijednost* (*Postotak* ili *Fiksna vrijednost*).
+>> **Vrijednost**: Ovo je *Postotak* koji će se primijeniti ili *Vrijednost* koja će se dodati zbroju *Ukupno obrađenog materijala* i *Ukupno neobrađenog materijala*.
+>> **Napomena**: Napomene u slobodnom obliku.
 >>   
-> **Altri costi**   
-> Un elenco di altri costi. In questo elenco sono presenti le informazioni di:   
->> **Voce di costo** e **Descrizione voce di costo**: sono selezionabili le sole *Voci di costo* di *Tipo costo = Altro costo (Other cost)*.   
->> **Tipo costo**: informazione di sola lettura che riporta il *Tipo costo* associato alla *Voce di costo* selezionata.   
->> **Unità di misura**: è l'*Unità di misura* con la quale si desidera esprimere l'informazione della *Quantità*.   
->> **Quantità**: è la *Quantità* della *Voce di costo*.   
->> **Costo unitario**: è il *Costo unitario* della *Voce di costo*.   
->> **Costo totale**: informazione di sola lettura che riporta il prodotto tra *Quantità* e *Costo unitario*.   
->> **Nota**: annotazioni libere.   
+> **Ostali troškovi**
+> Popis ostalih troškova. Ovaj popis sadrži informacije o:
+>> **Elementu troška** i **Opis elementa troška**: Mogu se odabrati samo *Elementi troška* s *Vrsta troškova = Ostali trošak*.
+>> **Vrsta troškova**: informacije samo za čitanje koje prikazuju *Vrstu troškova* povezanu s odabranom *Elementom troška*.
+>> **Mjerna jedinica**: ovo je *Mjerna jedinica* koja se koristi za izražavanje informacija o *Količini*.
+>> **Količina**: ovo je *Količina* *Elementa troška*.
+>> **Jedinična cijena**: Ovo je *Jedinična cijena* *Elementa troška*.
+>> **Ukupna cijena**: Informacije samo za čitanje koje prikazuju umnožak *Količine* i *Jedinične cijene*.
+>> **Napomena**: Napomene u slobodnom obliku.  
 
 
-### Valori
+### Vrijednosti
 
-Nel tabulatore è possibile inserire informazioni relative a documenti di addebito e accredito della *Non conformità*, i costi sostenuti, quelli da addebitare e i costi riconosciuti dal *Fornitore/Cliente*. Le informazioni presenti sono:   
-> **Divisa**, **Diretto** e **Data valuta**: è la *Divisa* del *Fornitore* o del *Cliente* con la quale vengono specificati tutti i valori del documento, il relativo coefficiente di cambio alla *Divisa* della *Società* e la *Data valuta*.   
-> **Valorizzata** e **Riferimento documento di debito**: informazioni di sola lettura che riportano se la *Non conformità* è stata valorizzata e il riferimento alla *Nota di debito* generata.   
-> **Riferimento documento accredito**: è il riferimento alla *Nota di accredito* ricevuta dal *Fornitore* o del *Cliente*.   
-> **Note documento di accredito**: annotazioni libere sull'argomento.   
+U karticu se mogu unijeti podaci koji se odnose na dugovne i potražne dokumente za *Nesukladnost*, nastale troškove, one koji će se naplatiti i troškove koje je *Dobavljač/Kupac* priznao. Prisutni podaci su: 
+> **Valuta**, **Tečaj** i **Datum valute**: Ovo je *Valuta* *Dobavljača* ili *Kupca* u kojoj su navedene sve vrijednosti dokumenta, odgovarajući tečaj prema *Valuti* *Tvrtke* i *Datum valute*.
+> **Valorizirano** i **Referenca dokumenta zaduženja**: Informacije samo za čitanje koje pokazuju je li *Nesukladnost* procijenjena i referenca na generirano *odobrenje*.  
+> **Referenca dokumenta odobrenja**: ovo je referenca na *odobrenje* primljeno od *dobavljača* ili *kupca*.
+> **Napomene na dokumentu o odobrenju**: Slobodne bilješke o temi.   
 >   
-> **Totale materiale non rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi articolo degli *Oggetti difettosi* non rilavorati e dei *Materiali utilizzati*.   
+> **Ukupno neobrađeni materijal**: informacija samo za čitanje ako je u *Parametrima reklamacija i neusklađenosti*, za godinu datuma dokumenta, odjel *Nesukladnosti*, zatražen *Automatski ukupni ponovni izračun*; predlaže se zbroj komponente troška stavke neprerađenih *Neispravnih stavki* i *korištenih materijala*.
 >   
-> **Totale materiale rilavorato**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; viene proposta la sommatoria della sola componente dei costi lavorazione degli *Oggetti difettosi* rilavorati.   
+> **Ukupno obrađeni materijal**: informacija samo za čitanje ako je u *Parametrima reklamacija i neusklađenosti*, za godinu datuma dokumenta, odjel *Nesukladnosti*, zatražen *Automatski ponovni izračun ukupnih iznosa*; predlaže se zbroj komponente troškova obrade prerađenih *Neispravnih stavki*. 
 >   
-> **Totale costi diretti**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco dei *Costi diretti* presenti nel tabulatore *Altri costi*.   
+> **Ukupni izravni troškovi**: informacije samo za čitanje, to je zbroj *vrijednosti* primijenjenih s popisa *Direktni troškovi* na kartici *Ostali troškovi*.
+>
+> **Ukupni opći troškovi**: informacije samo za čitanje, to je zbroj *vrijednosti* primijenjenih s popisa *Ostali troškovi* na kartici *Ostali troškovi*.
+>
+> **Ukupni ostali troškovi**: informacije samo za čitanje, to je zbroj *vrijednosti* primijenjenih s popisa *Ostali troškovi* na kartici *Ostali troškovi*.   
 >   
-> **Totale costi generali**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco dei *Costi generali* presenti nel tabulatore *Altri costi*.   
+> **Troškovi upravljanja**: je *Trošak upravljanja* preuzet iz *Troška upravljanja* prisutnog u *Parametrima reklamacija i neusklađenosti*, za godinu datuma dokumenta, odjel *Nesukladnosti*; vrijednost se može promijeniti. 
 >   
-> **Totale altri costi**: informazione di sola lettura, è la somma dell'applicazione dei *Valori* dell'elenco degli *Altri costi* presenti nel tabulatore *Altri costi*.   
+> **Ukupno nesukladnosti**: informacija samo za čitanje ako je u *Parametrima reklamacija i neusklađenosti*, za godinu datuma dokumenta, odjel *Nesukladnosti*, zatražen *Automatski ponovni izračun ukupnih iznosa*; u tom slučaju, ukupan iznos se preračunava kao zbroj: *Ukupnog neobrađenog materijala*, *Ukupnog obrađenog materijala*, *Ukupnih izravnih troškova*, *Ukupnih općih troškova*, *Ukupnih ostalih troškova* i *Troškova upravljanja*; ako nije zatražen *Automatski ponovni izračun ukupnih iznosa*, vrijednost se mora unijeti ručno.  
 >   
-> **Costo di gestione**: è il *Costo di gestione* ripreso dal *Costo di gestione* presente nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità*; il valore può essere variato.   
+> **Vrijednost koja se naplaćuje**: je *Vrijednost za naplatu* *Kupcu* ili *Dobavljaču*; ako je *Automatski ukupni ponovni izračun* zatražen u *Parametrima reklamacija i neusklađenosti* za godinu datuma dokumenta, odjel *Nesukladnosti*, vrijednost se predlaže kao jednaka *Ukupnom iznosu nesukladnosti* i naknadno se može izmijeniti.    
 >   
-> **Totale non conformità**: informazione di sola lettura se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali*; in questo caso il totale viene ricalcolato come somma di: *Totale materiale non rilavorato*, *Totale materiale rilavorato*, *Totale costi diretti*, *Totale costi generali*, *Totale altri costi* e *Costo di gestione*; se non è stato richiesto il *Ricalcolo automatico totali* il valore deve essere inserito manualmente.   
->   
-> **Valore da addebitare**: è il *Valore da addebitare* al *Cliente* o *Fornitore*; se nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Ricalcolo automatico totali* il valore viene proposto pari al *Totale non conformità* e successivamente può essere modificato.    
->   
-> **Valore riconosciuto**: è il valore che ci viene riconosciuto dal *Cliente* o *Fornitore*; il valore può essere inserito manualmente.   
+> **Prepoznata vrijednost**: ovo je vrijednost koju prepoznaje *Kupac* ili *Dobavljač*; vrijednost se može unijeti ručno. 
 
 
-## Gestione difetti
+## Upravljanje nedostacima
 
-E' l'elenco delle difettosità riscontrate da notificare al destinatario del documento e si compone delle seguenti informazioni:   
-> **Sequenza**: è la *Sequenza* di visualizzazione delle difettosità; viene proposto un progressivo con la possibilità di essere variato.   
+Ovdje je popis pronađenih nedostataka koji će biti prijavljeni primatelju dokumenta i sastoji se od sljedećih informacija:
+> **Redoslijed**: ovo je *Redoslijed* u kojem su prikazani nedostaci; prikazuje se progresivni slijed s mogućnošću promjene. 
 >  
-> **Difetto riscontrato**
->> **Codice**: è il codice del *Difetto riscontrato*; è possibile inserire solamente i *Difetti* attivi e previsti dalla tipologia di *Non conformità* del documento.   
->> **Descrizione**: informazione di sola lettura è la descrizione del *Difetto riscontrato*.   
->> **Note**: annotazioni libere sul *Difetto riscontrato*.   
+> **Ustanovljeni kvarovi**
+>> **Šifra**: ovo je šifra za *Pronađeni nedostatak*; mogu se unijeti samo aktivni *Nedostaci* obuhvaćeni vrstom *Nesukladnosti* dokumenta.
+>> **Opis**: ove informacije samo za čitanje opisuju *Pronađeni nedostatak*.
+>> **Napomene**: slobodno definirane napomene o *Pronađenom nedostatku*. 
 >  
-> **Causa presunta**
->> **Codice**: è il codice della *Causa presunta* che ha generato la difettosità; è possibile inserire solamente le *Cause*, presunte, attive e previste dalla tipologia di *Non conformità* del documento; la *Causa presunta*, successivamente ad una analisi sugli *Oggetti difettosi*, può venire confermata o meno nella *Causa effettiva*.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Causa presunta*.   
->> **Note**: annotazioni libere sulla *Causa presunta*.   
+> **Navodni uzrok**
+>> **Šifra**: ovo je šifra *Pretpostavljenog uzroka* koji je generirao nedostatak; za vrstu *Nesukladnosti* dokumenta mogu se unijeti samo pretpostavljeni, aktivni i očekivani *Uzroci*; nakon analize *Neispravnih stavki*, *Pretpostavljeni uzrok* može, ali i ne mora biti potvrđen kao *Stvarni uzrok*.
+>> **Opis**: ove informacije samo za čitanje opisuju *Pretpostavljeni uzrok*.
+>> **Napomene**: slobodne bilješke o *Pretpostavljenom uzroku*.   
 >  
-> **Fase di rilevamento**
->> **Codice**: è il codice della *Fase di rilevamento* del processo dove si è riscontrata la difettosità; è possibile inserire solamente le *Fasi di rilevamento* attive.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Fase di rilevamento*.   
->> **Note**: annotazioni libere sulla *Fase di rilevamento*.   
+> **Faza otkrivanja**
+>> **Šifra**: ovo je Šifra *Faze otkrivanja* procesa u kojem je otkriven nedostatak; mogu se unijeti samo aktivne *Faze otkrivanja*.
+>> **Opis**: ove informacije samo za čitanje opisuju *Fazu otkrivanja*.
+>> **Napomene**: slobodne bilješke o *Fazi otkrivanja*.  
 >  
-> **Gravità**
->> **Codice**: è il codice della *Gravità* attribuita alla difettosità; è possibile inserire solamente le *Gravità* attive.   
->> **Descrizione**: informazione di sola lettura è la descrizione della *Gravità*. 
+> **Ozbiljnost**
+>> **Šifra**: ovo je šifra za *Stupanj ozbiljnosti* dodijeljen nedostatku; mogu se unijeti samo aktivni *Stupnjevi ozbiljnosti*.
+>> **Opis**: ove informacije samo za čitanje opisuju *Stupanj ozbiljnosti*.
 >  
-> **Chiusura difetto**   
-> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere la gestione del *Difetto* specifico.   
-> La chiusura di tutti i *Difetti* non comporta automaticamente la chiusura della *Non conformità*.   
->> **Chiuso**: indica che la gestione del *Difetto* specifico è stata completata; deve essere indicato manualmente dall'operatore.   
->> All'atto della chiusura vengono automaticamente proposte: *Data chiusura*, proposta alla data odierna e con la possibilità di essere variata, *Nome* e *Persona* proposte come *Utente A.R.M.* collegato e *Dipendente* collegato all'*Utente A.R.M.* (*Nome* e *Persona* sono informazioni presenti nell'expander *Dati chiusura difetto* presente nel tabulatore *Dati difetto*).   
->> **Data chiusura**: è la data in cui la gestione del *Difetto* specifico è stata completata.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Zatvaranje nedostatka**
+> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može zatvoriti upravljanje određenim *Nedostatkom*.
+> Zatvaranje svih *Nedostataka* ne zatvara automatski *Nesukladnost*.  
+>> **Zatvoren**: označava da je upravljanje određenim *Nedostatkom* dovršeno; operater ga mora ručno unijeti.
+>> Nakon zatvaranja, automatski se prikazuje sljedeće: *Datum zatvaranja*, predložen kao današnji datum i s mogućnošću promjene, *Ime* i *Osoba* predloženi kao povezani *A.R.M. korisnik* i *Zaposlenik* povezan s *A.R.M. korisnikom* (*Ime* i *Osoba* su informacije prisutne u proširenju *Podaci o zatvaranju nedostatka* na kartici *Podaci o nedostatku*).   
+>> **Datum zatvaranja**: ovo je datum na koji je određeni *Nedostatak* dovršen.
+>> Kada se unese datum, oznaka *Zatvoren* se automatski postavlja.  
 >  
-> **Riferimento azione correttiva**   
->> **Tipo**, **Anno**, e **Numero**: sono i riferimenti, in sola lettura, all'*Azione correttiva* associata alla riga *Difetto* e generata tramite il pulsante **Crea azione correttiva**.    
+> **Referenca korektivne radnje**
+>> **Vrsta**, **Godina** i **Broj**: Ovo su reference samo za čitanje na *Korektivnu radnju* povezanu s retkom *Nedostatka* i generiranu pomoću gumba **Stvori korektivnu radnju**. 
 >   
-> **Note**: annotazioni libere sulla riga del *Difetto* specifico*.   
+> **Napomena**: besplatne bilješke na određenom retku *Nedostatka*.   
 
 
 ### Dati difetto
