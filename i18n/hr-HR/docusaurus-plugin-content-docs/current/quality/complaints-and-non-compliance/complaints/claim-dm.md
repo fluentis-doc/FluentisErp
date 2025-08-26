@@ -64,7 +64,7 @@ Ovo su dodatne informacije za odabrani redak *Nedostatak*. Upravljane informacij
 To je popis *Reklamiranih artikala/predmeta* koji se mogu povezati s odabranim *Pronađenim nedostatkom* i sastoji se od sljedećih informacija:  
 > **Predmet**   
 >> **Bar kod**: može se koristiti za dodavanje ili zamjenu artikla, serije, serijskog broja i jedinice utovara.   
->> Za sve informacije o kodiranju barkodova pogledati stranicu [Barkode brojač].(/docs/configurations/tables/general-settings/barcode-tokenizer).   
+>> Za sve informacije o kodiranju barkodova pogledati stranicu [Barkod numeracija](/docs/configurations/tables/general-settings/barcode-tokenizer).   
 >> **Klasa**: ovo je *Klasa artikla* za koju se traži reklamacija.   
 >> **Šifra artikla**: ovo je šifra *artikla* za koji se traži reklamacija.  
 >> **Opis artikla**: ovo je opis *artikla* za koji se traži reklamacija.   

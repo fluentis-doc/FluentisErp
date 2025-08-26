@@ -252,154 +252,154 @@ Ovdje je popis pronađenih nedostataka koji će biti prijavljeni primatelju doku
 > **Referenca korektivne radnje**
 >> **Vrsta**, **Godina** i **Broj**: Ovo su reference samo za čitanje na *Korektivnu radnju* povezanu s retkom *Nedostatka* i generiranu pomoću gumba **Stvori korektivnu radnju**. 
 >   
-> **Napomena**: besplatne bilješke na određenom retku *Nedostatka*.   
+> **Napomena**: slobodne bilješke na određenom retku *Nedostatka*.   
 
 
-### Dati difetto
+### Podaci o nedostacima
 
-Sono le informazioni aggiuntive alla riga *Difetto* selezionato. Le informazioni gestite sono:   
-> **Causa effettiva**: è la causa effettiva che ha generato la difettosità; è possibile inserire solamente le *Cause*, effettive, attive e previste dalla tipologia di *Non conformità* del documento.   
-> **Note causa effettiva**: annotazioni libere sulla *Causa effettiva*.   
-> **Soluzione proposta**: è il suggerimento di soluzione tecnica/commerciale/amministrativa da adottare; è possibile inserire solamente le *Soluzioni* attive.   
-> **Note soluzione proposta**: annotazioni libere sulla *Soluzione proposta*.   
-> **Decisione intrapresa**: è la decisione tecnica/commerciale/amministrativa effettuata per la risoluzione del difetto; è possibile inserire solamente le *Decisioni* attive.   
-> **Note decisione intrapresa**: annotazioni libere sulla *Decisione intrapresa*.   
-> **Risposta Fornitore/Interna**: annotazioni libere sull'argomento. Solitamente utilizzato per registrare un'eventuale risposta data dal destinatario della *Non conformità* relativa al *Difetto*.   
-> **Dati chiusura difetto**: expander dove è possibile inserire le informazioni di chiusura del *Difetto*:   
-> **Nome**: è l'*Utente A.R.M.* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
-> **Persona**: è il *Dipendente* che ha chiuso il *Difetto*. L'informazione è di sola lettura.   
-> **Funzione**: è la *Funzione aziendale* che ha chiuso il *Difetto*.   
+Ovo su dodatne informacije za odabrani redak *Nedostatka*. Upravljane informacije su:
+> **Stvarni uzrok**: ovo je stvarni uzrok koji je generirao nedostatak; za vrstu *Nesukladnosti* dokumenta mogu se unijeti samo stvarni, aktivni i očekivani *Uzroci*.  
+> **Napomene o stvarnom uzroku**: napomene u slobodnom obliku o *Stvarnom uzroku*.
+> **Predloženo rješenje**: ovo je predloženo tehničko/komercijalno/administrativno rješenje koje treba usvojiti; mogu se unijeti samo aktivna *Rješenja*.
+> **Napomene o predloženom rješenju**: napomene u slobodnom obliku o *Predloženom rješenju*.
+> **Donesena odluka**: ovo je tehnička/komercijalna/administrativna odluka donesena za rješavanje nedostatka; mogu se unijeti samo aktivne *Odluke*.   
+> **Bilješke o odluci**: Slobodne bilješke o *Donesenoj odluci*.
+> **Odgovor dobavljača/internog odgovora**: slobodne bilješke o temi. Obično se koriste za bilježenje bilo kakvog odgovora primatelja *Nesukladnosti* u vezi s *Nedostatkom*.  
+> **Podaci o zatvaranju nedostatka**: proširenje u koje se mogu unijeti podaci o zatvaranju *Nedostatka*:
+> **Ime**: ovo je *A.R.M. korisnik* koji je zatvorio *Nedostatak*. Ove su informacije samo za čitanje.
+> **Osoba**: ovo je *Zaposlenik* koji je zatvorio *Nedostatak*. Ove su informacije samo za čitanje.
+> **Funkcija**: ovo je *Funkcija tvrtke* koja je zatvorila *Nedostatak*.   
 
 
-### Oggetti reclamati   
+### Predmeti reklamacije   
 
-E' l'elenco degli *Oggetti reclamati* associabili al *Difetto riscontrato* selezionato e si compone delle seguenti informazioni:   
-> **Oggetto**   
->> **Bar code**: può essere utilizzato per aggiungere o sostituire l'Articolo, Lotto, Numero seriale e Unità di carico.   
->> Per tutte le informazioni su come codificare i barcode consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).   
->> **Classe**: è la *Classe articolo* reclamato.   
->> **Codice articolo**: è il codice dell'*Articolo* reclamato.   
->> **Descrizione articolo**: è la descrizione dell'*Articolo* reclamato.   
->> **Variante**: è la codice variante dell'*Articolo* reclamato.   
->> **Lotto**: è il codice del *Lotto* interno dell'*Articolo* reclamato.   
->> **Unità di carico**: è l'*Unità di carico* di origine che conteneva l'Articolo* reclamato.   
->> L'inserimento di una *Unità di carico* comporta l'automatico inserimento di tutte le righe di dettaglio *Articolo* presenti in essa.   
->> Se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stato richiesto il *Raggruppamento dati U.D.C.*, le righe con *Articoli* uguali verranno riportate in un'unica riga con le quantità sommate.   
->> **Numero seriale**:  è il *Numero seriale* dell'*Articolo* reclamato.   
->> **Unità di carico da rendere**: è l'*Unità di carico* che contiene l'Articolo* reclamato da rendere.   
+To je popis *Reklamiranih artikala* koji se mogu povezati s odabranim *Pronađenim nedostatkom* i sastoji se od sljedećih informacija:   
+> **Predmeti/artikli**   
+>> **Barkod**: može se koristiti za dodavanje ili zamjenu artikla, serije, serijskog broja i jedinice utovara.
+>> Za potpune informacije o kodiranju barkodova pogledati stranicu [Barkod numeracija](/docs/configurations/tables/general-settings/barcode-tokenizer).
+>> **Klasa**: ovo je *Klasa artikla*.
+>> **Šifra artikla**: ovo je šifra *Artikla*.
+>> **Opis artikla**: ovo je opis *Artikla*.
+>> **Varijanta**: ovo je šifra varijante *Artikla*.
+>> **Lot**: ovo je interna šifra *lota* *Artikla*.
+>> **Utovarna jedinica**: ovo je originalna *Utovarna jedinica* koja je sadržavala *Artikl*.  
+>> Unos *Utovarne jedinice* automatski ubacuje sve retke s detaljima *Artikla* koji se nalaze u njoj.
+>> Ako je *UDC grupiranje podataka* označeno u *Parametrima reklamacija i neusklađenosti* u odjelu *Nesukladnosti*, retci s identičnim *Artiklima* bit će prikazani u jednom retku s dodanim količinama.  
+>> **Serijski broj**: Ovo je *Serijski broj* zatraženog *predmeta/artikla*.   
+>> **Povratna jedinica tereta**: je *jedinica tereta* koja sadrži predmet* za koji se traži povrat.   
 >  
-> **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo* reclamato.   
->> **Ricevuta**: è la quantità di *Articolo* ricevuta; il valore deve essere inserito manualmente.   
->> **Contestata**: è la quantità di *Articolo* che si vuole contestare; il valore deve essere inserito manualmente.   
->> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata; il valore deve essere inserito manualmente.   
->> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata; il valore deve essere inserito manualmente.   
->> **Resa**: è la quantità di *Articolo* resa; il valore deve essere inserito manualmente.   
+> **Količina**
+>> **Mjerna jedinica**: ova informacija, samo za čitanje, predstavlja *Mjernu jedinicu* traženog *artikla*.
+>> **Primljeno**: ovo je količina primljenog *artikla*; vrijednost se mora unijeti ručno.
+>> **Osporeno**: ovo je količina *artikla* koji se želi osporiti; vrijednost se mora unijeti ručno.
+>> **Nije obrađeno**: ovo je količina osporenog i neobrađenog *artikla*; vrijednost se mora unijeti ručno.
+>> **Obrađeno**: ovo je količina osporenog i obrađenog *artikla*; vrijednost se mora unijeti ručno.
+>> **Vraćeno**: ovo je količina vraćenog *artikla*; vrijednost se mora unijeti ručno. 
 >  
-> **Quantità alternativa**   
->> Le colonne di questo gruppo sono visualizzate solamente se, nei *Parametri Reclami e Non conformità*, per l'anno data del documento, sessione *Non conformità* è stata richiesta la *Proposta U.M. alternativa*.   
->> **Unità di misura**: è l'*Unità di misura alternativa* dell'*Articolo* reclamato.   
->> **Unità di misura prezzo**: indica se il *Costo unitario del materiale* è riferito all'*Unità di misura alternativa*.   
->> **Ricevuta**: è la quantità di *Articolo* ricevuta espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
->> **Contestata**: è la quantità di *Articolo* che si vuole contestare espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
->> **Non rilavorata**: è la quantità di *Articolo* contestata e non rilavorata espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
->> **Rilavorata**: è la quantità di *Articolo* contestata e rilavorata espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
->> **Resa**: è la quantità di *Articolo* resa espressa nell'*Unità di misura alternativa*; il valore deve essere inserito manualmente.   
+> **Alternativna količina**
+>> Stupci u ovoj grupi prikazuju se samo ako je u *Parametrima reklamacija i nesukladnosti*, za godinu datuma dokumenta, odjel *Nesukladnosti*, označeno *Alternativni prijedlog U.M.*.
+>> **Jedinica mjere**: ovo je *Alternativna jedinica mjere* reklamiranog *Artikla*.
+>> **Cijena jedinica mjere**: ovo označava odnosi li se *Jedinična cijena materijala* na *Alternativnu jedinicu mjere*.
+>> **Primljeno**: ovo je količina *artikla* primljena u *Alternativnoj jedinici mjere*; vrijednost se mora unijeti ručno.
+>> **Osporeno**: ovo je količina *artikla* koja se želi osporiti u *Alternativnoj jedinici mjere*; vrijednost se mora unijeti ručno.
+>> **Nije obrađeno**: ovo je količina *artikla* koja je osporena i nije obrađena u *Alternativnoj jedinici mjere*; vrijednost se mora unijeti ručno.
+>> **Obrađeno**: ovo je količina *artikla* koja je osporena i prerađena u *Alternativnoj jedinici mjere*; vrijednost se mora unijeti ručno.
+>> **Vraćeno**: je količina vraćenog *artikla* izražena u *Alternativnoj mjernoj jedinici*; vrijednost se mora unijeti ručno.  
 >
-> **Costo unitario**   
->> **Materiale**: è il *Costo unitario* dell'*Articolo*; il valore deve essere inserito manualmente.   
->> **Lavorazione**: è il *Costo unitario* della *Lavorazione*; viene proposto pari alla tariffa associata ai *Centri di costo* associati a *Macchina* e *Gruppo manodopera* del *Centro di lavoro*; il valore può essere variato.   
+> **Jedinična cijena**
+>> **Materijal**: ovo je *Jedinična cijena* *artikla*; vrijednost se mora unijeti ručno.
+>> **Proces**: ovo je *Jedinična cijena* *Procesa*; postavljena je na stopu povezanu s *Troškovnim centrima* povezanim sa *Strojem* i *Radnom grupom* *Radnog centra*; vrijednost se može promijeniti.
 >  
-> **Ore**   
->> **Lavorate**: sono le ore e i minuti lavorati per la riparazione dell'*Oggetto* non conforme; il valore deve essere inserito manualmente.   
+> **Sati**
+>> **Radno vrijeme**: ovo su sati i minute rada na popravku neusklađenog *artikla*; ovu vrijednost potrebno je unijeti ručno.
 
-#### Dati oggetto
+#### Podaci o predmetu
 
-Sono le informazioni aggiuntive alla riga dell'*Oggetto reclamato* selezionato. Le informazioni gestite sono:   
-> **Progetto**: è il riferimento al *Progetto* del *Difetto* specifico*.   
-> **Note articolo**: annotazioni libere sull'*Articolo* del *Difetto* specifico*.   
-> **Note lotto**: annotazioni libere sul *Lotto* del *Difetto* specifico*.   
-> **Note unità di carico**: annotazioni libere sulla *Unità di carico* riga del *Difetto* specifico*.   
-> **Note**: annotazioni libere sulla riga del *Difetto* specifico*.   
-> **Centro di lavoro**: è il *Centro di lavoro* con il quale vengono effettuate le lavorazioni di riparazione dell'*Oggetto* non conforme.   
-> La scelta del *Centro di lavoro* proporrà, nel *Costo unitario lavorazione*, la tariffa da applicare al tempo dedicato alla lavorazione.   
-> La tariffa proposta è la somma delle tariffe dei *Centri di costo* associati a *Macchina* e *Gruppo manodopera* del *Centro di lavoro*.   
-> **Totale materiale non rilavorato**: informazione di sola lettura, viene proposto il valore del prodotto tra la *Quantità non rilavorata" e il *Costo unitario materiale* dell'*Oggetto difettoso* selezionato.   
-> **Totale materiale rilavorato**: informazione di sola lettura, viene proposto il valore del prodotto tra la *Quantità rilavorata" e il *Costo unitario lavorazione* sommato al prodotto tra le *Ore lavorate* e la somme delle tariffe associate ai *Centri di costo* associati a *Macchina* e *Gruppo manodopera* del *Centro di lavoro*.   
-> **Totale difetto**: informazione di sola lettura, è la somma di *Totale materiale non rilavorato* e *Totale materiale rilavorato*.   
-
-
-#### Extra data   
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Oggetto reclamato* selezionato.   
+Ovo su dodatne informacije za odabrani redak *Reklamiranog artikla*. Upravljane informacije su:
+> **Projekt**: ovo je referenca na *Projekt* određenoga *Nedostatka*.
+> **Napomene o artiklu**: napomene u slobodnom obliku o *artiklu* određenog *Nedostatka*.
+> **Napomene o lotu**: napomene u slobodnom obliku o *lotu* određenog *Nedostatka*.
+> **Napomene o utovarnoj jedinici**: napomene u slobodnom obliku za *Utovarnu jedinicu* određenog *Nedostatka*.
+> **Napomene**: napomene u slobodnom obliku u retku određenog *Nedostatka*.  
+> **Radni centar**: ovo je *Radni centar* koji se koristi za popravke neusklađenog *Predmeta*.
+> Odabirom *Radnog centra*, u *Jediničnoj cijeni* predložit će se stopa koja će se primijeniti na vrijeme utrošeno na posao.
+> Predložena stopa je zbroj stopa *Troškovnih centara* povezanih sa *Strojem* i *Radnom grupom* *Radnog centra*.  
+> **Ukupni neobrađeni materijal**: informacija samo za čitanje, predlaže se vrijednost proizvoda između *Neobrađene količine" i *Jedinične cijene materijala* odabranog *Neispravnog pedmeta*.   
+> **Ukupno obrađeni materijal**: informacije samo za čitanje. Ova vrijednost je umnožak *Obrađene količine" i *Jedinične cijene* plus umnožak *Radnih sati* i zbroja stopa povezanih s *Troškovnim centrima* povezanim sa *Strojem* i *Radnom grupom* *Radnog centra*.
+> **Ukupni nedostaci**: informacije samo za čitanje. Ova vrijednost je zbroj *Ukupnog neobrađenog materijala* i *Ukupnog obrađenog materijala*. 
 
 
-#### Documenti allegati   
+#### Dodatni podaci 
 
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Oggetto reclamato* selezionato.   
+Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za odabranu *predmet nedostatka*.   
 
 
-### Materiali utilizzati   
+#### Povezani dokumenti   
 
-In questo elenco è possibile indicare i materiali che sono stati utilizzati per porre rimedio al *Difetto* selezionato.   
-L'elenco si compone delle seguenti informazioni:   
+U ovom popisu možete umetnuti i pregledati sve dokumente priložene odabranom *Predmetu nedostatka*.   
+
+
+### Korišteni materijali  
+
+Na ovom popisu mogu se navesti materijali korištene za otklanjanje odabranog *Nedostatka*.
+Popis uključuje sljedeće informacije:   
 >   
-> **Articolo**   
->> **Classe**: è la *Classe articolo*.   
->> **Codice**: è il codice dell'*Articolo*.   
->> **Descrizione**: è la descrizione dell'*Articolo*.   
->> **Variante**: è la codice variante dell'*Articolo*.   
->> **Lotto**: è il codice del lotto interno utilizzato.   
->> **Numero seriale**:  è il numero seriale utilizzato.   
+> **Artikl**
+>> **Klasa**: ovo je *Klasa artikla*.
+>> **Šifra**: ovo je šifra *Artikla*.
+>> **Opis**: ovo je opis *Artikla*.
+>> **Varijanta**: ovo je šifra varijante *Artikla*.
+>> **Lot**: ovo je korištena interna šifra lota.
+>> **Serijski broj**: ovo je korišteni serijski broj. 
 >   
-> **Quantità**   
->> **Unità di misura**: informazione di sola lettura è l'*Unità di misura* dell'*Articolo*.   
->> **Quantità consumata**: è la quantità di *Articolo* utilizzata per porre rimedio al *Difetto* selezionato.   
+> **Količina**
+>> **Mjerna jedinica**: ova informacija je samo za čitanje za *Mjernu jedinicu* *Artikla*.
+>> **Potrošena količina**: ovo je količina *Artikla* korištena za otklanjanje odabranog *Nedostatka*.
 >   
-> **Valore**   
->> **Costo unitario**: è il costo unitario dell'*Articolo*; il valore deve essere inserito manualmente.   
->> **Costo totale**:  viene proposto come rapporto tra *Quantità consumata* e *Costo unitario*; il costo può essere variato.   
+> **Vrijednost**
+>> **Jedinična cijena**: ovo je jedinična cijena *Artikla*; vrijednost se mora unijeti ručno.
+>> **Ukupna cijena**: ovo je omjer između *Potrošene količine* i *Jedinične cijene*; cijena se može mijenjati.   
 >
-> **Note**: annotazioni libere.   
+> **Napomena**: slobodne bilješke.  
 
 
-### Soggetti coinvolti   
+### Uključeni subjekti   
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Difetto" selezionato.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la *Sequenza* di visualizzazione dei "Soggetti coinvolti*; viene proposto un progressivo con la possibilità di essere variato.   
+Kartica sadrži informacije o *Funkcijama tvrtke* i/ili *Zaposlenicima* koji će biti uključeni u upravljanje odabranim *Nedostatkom*.
+Popis se sastoji od sljedećih informacija:  
+> **Slijed**: je *Slijed* prikaza "Uključenih subjekata*; predlaže se progresivni broj s mogućnošću promjene.  
 >
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+> **Funkcija tvrtke**
+>> **Šifra**: ovo je šifra uključene *Funkcije tvrtke*.
+>> **Opis**: ovo je opis uključene *Funkcije tvrtke*. 
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **Zaposlenik**
+>> **Šifra**: ovo je šifra uključenog *zaposlenika*.
+>> **Opis**: ovo je prezime i ime uključenog *zaposlenika*.  
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* della *Non conformità* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* della *Non conformità* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Upravljanje angažmanom**  
+>> **Opis predmeta**: bilješke u slobodnom obliku ako uključena osoba nije *Funkcija tvrtke* ili *Zaposlenik*.
+>> **Razlog sudjelovanja**: bilješke u slobodnom obliku o temi.
+>> **Rok dospijeća**: ovo je datum do kojeg uključena osoba mora dovršiti zadatke povezane s razlogom svog sudjelovanja.
+>> **Odgovor**: bilješke u slobodnom obliku o temi.  
+>> **Zatvoreno**: označava da je angažman ispitanika završen.   
+>> Samo *Funkcija ili odgovorna osoba* za *Nesuklanost* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može zatvoriti incident/angažman.
+>> Nakon zatvaranja, automatski se predlaže *Datum zatvaranja*, koji je postavljen na današnji datum i može se promijeniti.  
+>> **Datum zatvaranja**: ovo je datum kada je uključenost subjekta završena.
+>> Samo *Funkcija ili odgovorna osoba* za *Nesuklanost* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može unijeti ili promijeniti ovaj datum.
+>> Kada se unese datum, automatski se postavlja oznaka *Zatvoreno*.
 >
-> **Nota**: annotazioni libere.   
+> **Napomena**: slobodne bilješke. 
 
 
-### Extra data   
+### Dodatni podaci   
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per *Difetto* selezionato.   
-
-
-### Documenti allegati   
-
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Difetto* selezionato.   
+Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za odabrani *Nedostatak*.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+### Povezani dokumenti    
+
+U ovom popisu možete umetnuti i pregledati sve dokumente priložene odabranom *Predmetu nedostatka*.   
+
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
