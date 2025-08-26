@@ -32,18 +32,18 @@ El procedimiento de **Creación de Orden de proveedor desde Solicitud de Compra*
 Este procedimiento permite la creación de uno o más pedidos de compra a partir de una o más solicitudes de compra y consta de cinco pestañas:
 
 - **Filtrar desde**: permite ingresar filtros para seleccionar las RDA (con estado "Autorizada") a convertir en pedido.  
-- **scelta fornitore**: permite realizar la elección del proveedor al que se le asignará el pedido basándose en diferentes criterios, como: mejor precio de compra, proveedor preferente por defecto, mejor condición de pago, etc.  
-- **prototipi ordine**: muestra el resumen del pedido a crear y permite generar un nuevo pedido o agregar las líneas de artículo a un pedido existente.  
-- **parametri**: configura las opciones de creación del pedido, como el tipo de pedido a crear y los datos a utilizar si no están codificados para cada artículo. También se puede optar por considerar las disponibilidades provenientes de las diversas áreas del sistema.  
-- **operazioni**: permite visualizar, filtrar y anular las operaciones anteriores.
+- **Elección de proveedor**: permite realizar la elección del proveedor al que se le asignará el pedido basándose en diferentes criterios, como: mejor precio de compra, proveedor preferente por defecto, mejor condición de pago, etc.  
+- **Pedir prototipos**: muestra el resumen del pedido a crear y permite generar un nuevo pedido o agregar las líneas de artículo a un pedido existente.  
+- **Parámetros**: configura las opciones de creación del pedido, como el tipo de pedido a crear y los datos a utilizar si no están codificados para cada artículo. También se puede optar por considerar las disponibilidades provenientes de las diversas áreas del sistema.  
+- **Operaciones**: permite visualizar, filtrar y anular las operaciones anteriores.
 
-Una vez confirmado el prototipo de pedido, al hacer clic en el botón *Generar órdenes de proveedor (Genera ordini fornitore)*, el sistema creará los pedidos de compra en base a los parámetros seleccionados.
+Una vez confirmado el prototipo de pedido, al hacer clic en el botón *Generar órdenes de proveedor*, el sistema creará los pedidos de compra en base a los parámetros seleccionados.
 
 El mismo procedimiento puede ser utilizado para la creación de **Órdenes de proveedor desde Órdenes de cliente**. Para más detalles, se remite a la página correspondiente [página](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) de la documentación.
 
-## Evasión de Pedidos a DDT (Evasione da Ordini a DDT)
+## Evasión de Pedidos a DDT 
 
-El procedimiento de **ddt** está disponible en dos modalidades:
+El procedimiento de **Nota de entrega** está disponible en dos modalidades:
 
 - Desde el Menú [Procedimientos](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): yendo a *Compras > DDT de Compra > Procedimientos > Evasión de pedidos*.  
 - Evasión desde la [Cabecera](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) del DDT: utilizando el botón *Evasión de Pedido* para abrir una ventana de selección de los pedidos confirmados del proveedor a transferir al DDT.
@@ -62,7 +62,7 @@ Después de seleccionar los pedidos y establecer los filtros, al hacer clic en *
 
 La evasión de pedido a DDT también se puede completar desde la cabecera de la factura misma a través del botón *Evasión de pedido*.
 
-## Evasión de DDT a Facturas (Evasione da DDT a Fatture)
+## Evasión de DDT a Facturas
 
 El procedimiento de **evasión de DDT a factura** puede ser iniciado de dos maneras:
 
@@ -71,9 +71,9 @@ El procedimiento de **evasión de DDT a factura** puede ser iniciado de dos mane
 
 Este procedimiento permite crear una o más facturas a partir de uno o más DDT. El procedimiento se compone de tres pestañas principales:
 
-- **valorizzazione**: permite ingresar filtros para seleccionar los DDT a facturar (con estado "Controlado") y especificar la fecha de creación de la factura.  
-- **parametri**: configura el tipo de factura a crear, si no se indica en la tabla [Tipos de DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) y los referencias DDT a incluir en la factura.  
-- **precedenti**: permite visualizar, filtrar y anular las operaciones de facturación previas.
+- **Valorización**: permite ingresar filtros para seleccionar los DDT a facturar (con estado "Controlado") y especificar la fecha de creación de la factura.  
+- **Parámetros**: configura el tipo de factura a crear, si no se indica en la tabla [Tipos de DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) y los referencias DDT a incluir en la factura.  
+- **Anterior**: permite visualizar, filtrar y anular las operaciones de facturación previas.
 
 Las condiciones de agrupamiento de los DDT en la factura pueden definirse en los [Parámetros de agrupamiento de factura de compra](/docs/configurations/parameters/purchase/invoice-grouping/).
 

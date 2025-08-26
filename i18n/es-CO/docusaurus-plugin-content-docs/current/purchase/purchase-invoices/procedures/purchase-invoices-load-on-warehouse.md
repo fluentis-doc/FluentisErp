@@ -44,7 +44,7 @@ Las opciones disponibles son:
 
 ### Resumen 
 
-En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y anular las operaciones de registro realizadas, tanto las efectuadas mediante el uso de este procedimiento, como aquellas realizadas desde dentro del documento mediante el botón de *carico automatico nel magazzino*.
+En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y anular las operaciones de registro realizadas, tanto las efectuadas mediante el uso de este procedimiento, como aquellas realizadas desde dentro del documento mediante el botón de *Carga automática en el almacén*.
 
 Los datos en las cuadrículas en la parte inferior, **facturas** y **registro**, corresponden al registro de carga seleccionado en la cuadrícula superior (después de filtrar los datos). Además, en estas dos últimas cuadrículas, hay la posibilidad de visualizar la factura y su registro en el almacén (doble clic en la fila).
 

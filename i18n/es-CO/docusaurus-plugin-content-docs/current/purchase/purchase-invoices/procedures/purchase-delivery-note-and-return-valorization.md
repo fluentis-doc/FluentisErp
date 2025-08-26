@@ -56,7 +56,7 @@ Para la facturación resumida, es necesario establecer en los [Parámetros de ag
 > **Guardar parámetros de DDT**: permite guardar los parámetros establecidos para la valorización de los DDT de compra.   
 > **Guardar parámetros de retornos**: permite guardar los parámetros establecidos para la valorización de los retornos de trabajo por encargo.
 
-Después de haber seleccionado los DDT (desde la pestaña *Valorización*) y establecido los parámetros, se puede crear la factura con la ayuda del botón *valorizzazione*.
+Después de haber seleccionado los DDT (desde la pestaña *Valorización*) y establecido los parámetros, se puede crear la factura con la ayuda del botón *valorización*.
 
 ### Precedentes
 
