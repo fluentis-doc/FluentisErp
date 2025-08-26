@@ -1,5 +1,5 @@
 ---
-title: Neuskladnost
+title: Nesukladnost
 sidebar_position: 2
 ---
 
