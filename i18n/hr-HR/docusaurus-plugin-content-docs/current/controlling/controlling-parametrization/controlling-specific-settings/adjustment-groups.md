@@ -3,22 +3,20 @@ title: Grupe ravnoteže
 sidebar_position: 12
 ---
 
-:::note[Putanja]
-Tablice > Kontroling > Analitičko računovodstvo > Grupe poravnanja
+Obrazac se nalazi na putanji: **Tablice > Kontroling > Analitičko računovodstvo > Grupe ravnoteže.**
 
-Napomena: Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledati sljedeću poveznicu  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+:::tip NAPOMENA 
+Ova tablica je za isključivu upotrebu tvrtki koje su postavile *kontrolinga*.   
 :::
 
-Unutar ove tablice moguće je kodirati grupe računa korisne za upravljanje izvještavanjem specifičnim za kontroling.
+Unutar ove tablice moguće je kodirati grupiranja računa koja su korisna za upravljanje izvještavanjem specifičnim za kontroling. Neki konti glavne knjige ne koriste se izravno od strane kontrolinga, nego samo neizravno i naknadno. Grupe za usklađivanje služe stoga za identificiranje logičkih skupina kojima se pojedini troškovi dodjeljuju radi usklađivanja koje ćemo provoditi unutar godine ili tek na kraju obračunskog razdoblja, kako bismo ih prikladno grupirali u obrascu **Kontrolnih vrijednosti** i provjerili njihovu usklađenost s računovodstvom na kraju razdoblja.
 
-slika
+[**Specifična polja**](/docs/controlling/controlling-parametrization/controlling-specific-settings/adjustment-groups)
 
-Neki kontni računi ne koriste se odmah, izravno, u kontrolingu, već samo neizravno i naknadno;
+- **ŠIFRA**
+- **OPIS**
+- **TIPO SLADO**: Ovo je od temeljne važnosti za podračune početnih i završnih zaliha, za koje je obvezno definirati dvije specifične kategorije.
 
-PRIMJER: trošak direktora ili naknada nadzornog odbora pojavljuju se uvijek tek nakon što se naprave analize za pojedine mjesece, možda se čak odnoseći na prethodnu poslovnu godinu.
-
-U prvim mjesecima stoga nemamo trošak za vrednovanje poslovnog centra „uprava” (primjer). Ista stvar vrijedi i za amortizaciju.
-
-Grupe poravnanja služe dakle za identificiranje logičkih skupina kojima se dodjeljuju pojedini troškovi za poravnanja koja radimo unutar godine ili tek na kraju poslovne godine.
-
-To nam treba kako bismo razumjeli, kada radimo provjeru usklađenosti, jesu li grupe poravnanja sve usklađene ili ne.
+:::tip NAPOMENA 
+Konkretno, **postupak knjiženja** zaliha za potrebe kontrolinga evidentira, u izvanknjižnim zapisima sustava, početne i završne zalihe za svaki pojedini obračunski period (mjesec) koji se obrađuje tijekom godine. Kada se zatim u modulu za izvještavanje zatraže iznosi početnih i završnih zaliha za prvo polugodište godine YYYY, **FluentisERP mora** znati za koje račune treba uzeti samo podatak o početnom stanju iz siječnja, a za koje samo završno stanje iz lipnja. U suprotnom bi se zbrojile zalihe za svih šest mjeseci, i početne i završne, čime bi se potpuno iskrivila obrada podataka!  
+:::
