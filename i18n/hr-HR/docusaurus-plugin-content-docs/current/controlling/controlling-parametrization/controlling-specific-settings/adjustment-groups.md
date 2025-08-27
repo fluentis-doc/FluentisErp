@@ -15,7 +15,7 @@ Unutar ove tablice moguće je kodirati grupiranja računa koja su korisna za upr
 
 - **ŠIFRA**
 - **OPIS**
-- **TIPO SLADO**: Ovo je od temeljne važnosti za podračune početnih i završnih zaliha, za koje je obvezno definirati dvije specifične kategorije.
+- **TIP SALDA**: Ovo je od temeljne važnosti za podračune početnih i završnih zaliha, za koje je obvezno definirati dvije specifične kategorije.
 
 :::tip NAPOMENA 
 Konkretno, **postupak knjiženja** zaliha za potrebe kontrolinga evidentira, u izvanknjižnim zapisima sustava, početne i završne zalihe za svaki pojedini obračunski period (mjesec) koji se obrađuje tijekom godine. Kada se zatim u modulu za izvještavanje zatraže iznosi početnih i završnih zaliha za prvo polugodište godine YYYY, **FluentisERP mora** znati za koje račune treba uzeti samo podatak o početnom stanju iz siječnja, a za koje samo završno stanje iz lipnja. U suprotnom bi se zbrojile zalihe za svih šest mjeseci, i početne i završne, čime bi se potpuno iskrivila obrada podataka!  
