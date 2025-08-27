@@ -11,7 +11,7 @@ Ova tablica je za isključivu upotrebu tvrtki koje su postavile *kontrolinga*.
 
 Unutar ove tablice moguće je kodirati grupiranja računa koja su korisna za upravljanje izvještavanjem specifičnim za kontroling. Neki konti glavne knjige ne koriste se izravno od strane kontrolinga, nego samo neizravno i naknadno. Grupe za usklađivanje služe stoga za identificiranje logičkih skupina kojima se pojedini troškovi dodjeljuju radi usklađivanja koje ćemo provoditi unutar godine ili tek na kraju obračunskog razdoblja, kako bismo ih prikladno grupirali u obrascu **Kontrolnih vrijednosti** i provjerili njihovu usklađenost s računovodstvom na kraju razdoblja.
 
-## Specifična polja
+### Specifična polja
 
 - **ŠIFRA**
 - **OPIS**
