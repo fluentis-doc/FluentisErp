@@ -5,7 +5,7 @@ sidebar_position: 1
 
 LINK:
 
-** [Uvod](/docs/finance-area/declarations/intrastat/general-overview) **
+**[Uvod](/docs/finance-area/declarations/intrastat/general-overview)**
 
 Preko ove forme moguće je pretraživati i pristupati SVIM obrađenim intrastat modelima, dakle i INTRA 1 (prodaja) i INTRA 2 (nabava). 
 

@@ -5,15 +5,15 @@ sidebar_position: 1
 
 LINK:
 
-** [Naslovnica](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1) **
+**[Naslovnica](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1)**
 
-** [Bis](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-bis) **
+**[Bis](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-bis)**
 
-** [Ter](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-ter) **
+**[Ter](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-ter)**
 
-** [Quater](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quater) **
+**[Quater](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quater)**
 
-** [Quinquies](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quinquies) **
+**[Quinquies](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quinquies)**
 
  
 

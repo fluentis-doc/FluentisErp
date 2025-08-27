@@ -7,11 +7,11 @@ Tipka **b Kreiranje iz knjiženja** otvara vođeni postupak posvećen preuzimanj
 
 Kartice:
 
-** [Filtar knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter) **
+**[Filtar knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter)**
 
-** [Parametri](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/parameters) **
+**[Parametri](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/parameters)**
 
-** [Rollback](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore) **
+**[Rollback](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore)**
 
  
 

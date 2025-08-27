@@ -7,11 +7,11 @@ Tipka 'Automatsko kreiranje' otvara proceduru za dohvaćanje podataka iz prodajn
 
 Procedura se sastoji od tri kartice:
 
-** [Filtriranje računa](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/invoices-filter) **
+**[Filtriranje računa](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/invoices-filter)**
 
-** [Parametri](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters) **
+**[Parametri](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters)**
 
-** [Vraćanje promjena](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/restore) **
+**[Vraćanje promjena](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/restore)**
 
 Tijekom **kreiranja** Intrastata koristi se **Filter računa**, gdje se pretražuju aktivni računi koji će biti uključeni u Instrastat, i **Parametri** koji predstavljaju pregled podataka s ciljem dodavanja eventualnih nedostajućih podataka.
 

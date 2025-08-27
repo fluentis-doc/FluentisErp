@@ -230,17 +230,17 @@ Gdje je vrijednost ‘RifAmm’ preuzeta iz “Opisa” dodatnih podataka umetnu
 
 ### Alternativna mjerna jedinica (oznaka 2.2.1.16 Ostaliupravljačkipodaci)
  
-La quantità utilizzata per il calcolo del prezzo di riga (indifferentemente che sia la prima o la seconda, dipende dal flag UMPrezzo della riga stessa) viene riportata nel tag 2.2.1.5 Quantità. 
+Količina koja se koristi za izračun cijene linije (bez obzira je li prva ili druga, ovisi o UMPrezzo zastavici same linije) navedena je u oznaci 2.2.1.5 Količina.
 
-L’unità di misura non riferita al prezzo viene riportata come ‘Altri dati gestionali’, 
+Jedinica mjerenja koja se ne odnosi na cijenu prijavljena je kao "Ostali podaci upravljanja", 
 
-con TipoDato = 
+con DataType = 
 ```
    QTALTERNA
 ```
-e quantità riportata nel tag ‘RiferimentoNumero’. 
+i količina navedena u oznaci ‘RiferimentoNumero’. 
 
-Esempio
+Primjer
 
 ```xml
     <AltriDatiGestionali>
@@ -249,44 +249,44 @@ Esempio
     </AltriDatiGestionali>
 ```
 
-### Dati Ordine Acquisto (tag 2.1.2 DatiOrdineAcquisto) 
+### Podaci o narudžbi (oznaka 2.1.2 DatiOrdineAcquisto)
 
-Nel tag 
+U oznaci
 
-2.1.2 DatiOrdineAcquisto 
+2.1.2 Podaci o narudžbi
 
-2.1.2.1 RiferimentoNumeroLinea 
+2.1.2.1 RiferimentoNumeroLinea
 
-2.1.2.2 IdDocumento 
+2.1.2.2 ID dokumenta
 
-Viene riportato il riferimento all’ordine del cliente. 
+Prijavljuje se referenca na narudžbu kupca.
 
-Nel tag **IdDocumento** viene riportato il testo presente nel campo **Vostro Riferimento** della **testata ordine cliente** collegata alla riga articolo fattura e **in mancanza di tale valore** viene riportato il *Vostro Riferimento* della **testata della fattura**. 
+Oznaka **IdDocumento** izvješćuje o tekstu koji se nalazi u polju **Vaša referenca** u **zaglavlju narudžbe kupca** povezanom s retkom stavke fakture, a u **nedostatku te vrijednosti** prijavljuje se *Vaša referenca* **zaglavlja fakture**. 
 
-Questo tag è inserito solo per le righe fatture che sono collegate a righe ordine cliente. 
+Ova oznaka umetnuta je samo za retke fakture koji su povezani s redovima prodajnog naloga.
 
-Nel caso la fattura non sia stata creata da ordini clienti di Fluentis per avere il riferimento all’ordine di acquisto si deve inserire un codice nel campo **Rif.ordine** presente, per ogni riga della fattura, nel tab di dettaglio per riga **Dati articolo**. 
+Ako faktura nije stvorena iz Fluentisovih narudžbi korisnika, da biste imali referencu na narudžbenicu, mora se unijeti kod u polje **Referenca narudžbe** koje je prisutno, za svaki redak fakture, u kartici s pojedinostima za redak **podataka artikla**. 
 
 ![](/img/it-it/finance-area/e-invoice/configuration/datiarticolo.png)
 
-### Dati DDT (tag 2.1.8 DatiDDT)
+### DDT podaci (oznaka 2.1.8 DatiDDT)
  
 Nel tag 
 
-2.1.8 Dati DDT 
+2.1.8 DDT podaci
 
-2.1.8.1 NumeroDDT 
+2.1.8.1 NumeroDDT
 
 2.1.8.2 DataDDT 
 
 2.1.8.3 RiferimentoNumeroLinea 
 
-Viene riportato il riferimento al DDT da cui è stata creata la fattura. 
-Nel “RiferimentoNumeroLinea” vengono riportate solo i numeri riga fattura collegati con una riga DDT. 
+Prijavljuje se referenca na DDT iz kojeg je faktura izrađena.   
+U “RiferimentoNumeroLinea” prijavljeni su samo brojevi reda fakture povezani s DDT redom.  
 
-### Spese di Bollo (Tag 2.1.1.6 DatiBollo)
+### Biljegovina (Oznaka 2.1.1.6 DatiBollo)  
 
-Per la gestione delle spese di bollo devono essere osservate le seguenti regole:
+Sljedeća pravila moraju se poštovati za upravljanje biljegovinom:
 
 - Nella tabella **[Tipi spese](/docs/configurations/tables/general-settings/expenses-types)** deve essere inserita la spesa di tipo “bollo” con flag sul campo *Bollo* e con il *Valore Bollo* 2 euro 
 - In anagrafica cliente si deve aggiungere una spesa di tipo “bollo” nella sezione **[Spese sconti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/charges-discounts)** selezionando il codice precedentemente creato nella tabella *Tipi spesa* 

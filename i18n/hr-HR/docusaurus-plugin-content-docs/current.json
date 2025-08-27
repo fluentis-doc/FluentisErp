@@ -16,31 +16,31 @@
     "description": "The label for category Intrastat in sidebar financeArea"
   },
   "sidebar.financeArea.category.Ricerca intrastat": {
-    "message": "Ricerca intrastat",
+    "message": "Pretraga Intrastat",
     "description": "The label for category Ricerca intrastat in sidebar financeArea"
   },
   "sidebar.financeArea.category.Crea Intrastat1": {
-    "message": "Crea Intrastat1",
+    "message": "Kreiranje Intrastat1",
     "description": "The label for category Crea Intrastat1 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Crea Intrastat2": {
-    "message": "Crea Intrastat2",
+    "message": "Kreiranje Intrastat2",
     "description": "The label for category Crea Intrastat2 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione automatica - Intrastat1": {
-    "message": "Creazione automatica - Intrastat1",
+    "message": "Automatsko stvaranje - Intrastat1",
     "description": "The label for category Creazione automatica - Intrastat1 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione da registrazioni - Intrastat1  ": {
-    "message": "Creazione da registrazioni - Intrastat1  ",
+    "message": "Stvaranje iz zapisa - Intrastat1",
     "description": "The label for category Creazione da registrazioni - Intrastat1   in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione automatica Intrastat2": {
-    "message": "Creazione automatica Intrastat2",
+    "message": "Automatsko stvaranje Intrastat2",
     "description": "The label for category Creazione automatica Intrastat2 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Creazione da registrazioni Intrastat2": {
-    "message": "Creazione da registrazioni Intrastat2",
+    "message": "Stvaranje iz zapisa Intrastat2",
     "description": "The label for category Creazione da registrazioni Intrastat2 in sidebar financeArea"
   },
   "sidebar.financeArea.category.Registrazioni contabili": {
@@ -96,7 +96,7 @@
     "description": "The label for category Stampe analitica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Partite": {
-    "message": "Partite",
+    "message": "Stavke",
     "description": "The label for category Partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Procedure": {
@@ -104,7 +104,7 @@
     "description": "The label for category Procedure in sidebar financeArea"
   },
   "sidebar.financeArea.category.Calcolo interessi": {
-    "message": "Calcolo interessi",
+    "message": "Izračun kamata",
     "description": "The label for category Calcolo interessi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Generazione solleciti": {
@@ -220,7 +220,7 @@
     "description": "The label for category Simulazione piani di ammortamento in sidebar financeArea"
   },
   "sidebar.financeArea.category.Fatturazione Elettronica": {
-    "message": "E-Invoice",
+    "message": "E-račun",
     "description": "The label for category Fatturazione Elettronica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Leasing": {
@@ -228,7 +228,7 @@
     "description": "The label for category Leasing in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizzazioni": {
-    "message": "Contabilizations",
+    "message": "Knjigovodstvo",
     "description": "The label for category Contabilizzazioni in sidebar financeArea"
   },
   "sidebar.financeArea.category.Documenti SDI": {
@@ -1476,15 +1476,15 @@
     "description": "The label for category CRM in sidebar guide"
   },
   "sidebar.financeArea.category.Calcolo Interessi": {
-    "message": "Calcolo Interessi",
+    "message": "Izračun kamata",
     "description": "The label for category Calcolo Interessi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gest. Autofattura Elettronica": {
-    "message": "Gest. Autofattura Elettronica",
+    "message": "Upravljanje elektroničkom samofakturom",
     "description": "The label for category Gest. Autofattura Elettronica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Casi particolari e Regimi specifici": {
-    "message": "Casi particolari e Regimi specifici",
+    "message": "Posebni slučajevi i posebni režimi",
     "description": "The label for category Casi particolari e Regimi specifici in sidebar financeArea"
   },
   "sidebar.erpHome.category.Anagrafiche": {
