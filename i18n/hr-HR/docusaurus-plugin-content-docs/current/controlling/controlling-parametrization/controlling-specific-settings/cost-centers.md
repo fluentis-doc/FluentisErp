@@ -1,5 +1,5 @@
 ---
-title: Centri aziendali
+title: Korporativni centri
 sidebar_position: 4
 ---
 
