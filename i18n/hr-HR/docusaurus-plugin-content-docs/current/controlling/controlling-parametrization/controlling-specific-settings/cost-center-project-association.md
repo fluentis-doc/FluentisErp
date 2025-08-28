@@ -1,5 +1,5 @@
 ---
-title: Associazione centri-progetti
+title: Povezivanje centara / naloga
 sidebar_position: 14
 ---
 
