@@ -1,11 +1,11 @@
 ---
-title: Contabilizzazione maxicanone
+title: Knjiženje maksimalne naknade
 sidebar_position: 2
 ---
 
-Da questa posizione è possibile procedere a contabilizzare massivamente tutti i maxicanoni relativi a tutti i contratti di leasing presenti nella base dati non ancora contabilizzati.
+S ovog mjesta moguće je masovno proknjižiti sve maksimalne naknade (maxicanoni) povezane sa svim leasing ugovorima u bazi podataka koji još nisu proknjiženi.
 
-Nel dettaglio la procedura contabile risulta la medesima attivabile dall'interno del **[dettaglio del leasing](/docs/finance-area/leasing/new)** stesso.
+Detaljno gledano, računovodstveni postupak identičan je onome koji se može pokrenuti izravno unutar **[detalja leasing ugovora](/docs/finance-area/leasing/new)**.
 
 
 

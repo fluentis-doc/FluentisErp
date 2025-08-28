@@ -1,16 +1,15 @@
 ---
-title: Contabilizzazione Risconto Maxicanone
+title: Knjiženje razgraničenja za maksimalne naknade 
 sidebar_position: 3
 ---
 
-Da questa form è possibile procedere a contabilizzare i risconti dei maxicanoni leasing calcolati nell'apposita form **[Risconto Maxicanone](/docs/finance-area/leasing/procedures/maxifee-accrual-calculation)**.
+Putem ovog obrasca moguće je izvršiti knjiženje razgraničenja maksimalnih leasing naknada (maxicanoni) koje su prethodno izračunate u posebnom obrascu **[Razgraničenje maksimalne naknade](/docs/finance-area/leasing/procedures/maxifee-accrual-calculation)**.
 
-Saranno proposte soltanto le righe alle quali è stato attivato il flag Controllata nella maschera di calcolo del risconto.
+Bit će prikazane samo one stavke za koje je u obrascu za izračun razgraničenja aktiviran flag Kontrolirano.
 
-Selezionare le righe che si desidera contabilizzare e premere il pulsante Contabilizzazione risconto Maxicanone nella ribbon bar.
+Odaberite stavke koje želite proknjižiti te pritisnite tipku Knjiženje razgraničenja maksimalne naknade u traci izbornika.
 
-E' presente anche la consueta tab per ripristinare la contabilizzazione.
-
+Dostupna je i standardna kartica za poništavanje knjiženja.
 
 
 

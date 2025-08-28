@@ -1,51 +1,51 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo **Cespiti** consente all'operatore di gestire i beni ad utilizzo pluriennali presenti in azienda.  
-Il modulo è presente nell'*Area amministrativa* e viene aggiornato in acquisto/vendita dalle registrazioni di contabilità generale basate su causali specifiche che ne prevedano la movimentazione, ma le anagrafiche di questo modulo possono essere introdotte ed allineate anche manualmente. Da questo modulo si operano i calcoli degli ammortamenti civilistici/fiscali così come le simulazioni pluriennali e le stampe fiscali.  
-Prima di procedere all'introduzione o alla realizzazione di un cespite è necessario accertarsi di avere correttamente impostato tutti i dati tabellari nonché i parametri del modulo.
+Modul **Imovina** omogućuje operateru upravljanje dugotrajnom imovinom koja se koristi u tvrtki.  
+Modul se nalazi u *Administrativnom području* i ažurira se prilikom kupnje/prodaje putem unosa u općoj knjigovodstvenoj evidenciji temeljenoj na specifičnim uzrocima koji predviđaju njeno kretanje, no evidencije ovog modula mogu se također unositi i usklađivati ručno. Iz ovog modula provode se proračuni amortizacije prema računovodstvenim/poreznim pravilima, kao i višegodišnje simulacije i porezni ispisi.  
+Prije nego što se pristupi unosu ili izradi imovine, potrebno je osigurati da su svi tablični podaci i parametri modula ispravno postavljeni.
 
-*Stampe specifiche*  
+*Specifični ispisi*  
 
-> [Stampa Acquisto cespiti annuali](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase): richiama la procedura per stampare la lista dei cespiti acquistati nell'anno.  
-> [Stampa Ammortamento cespiti](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-depreciation): richiama la procedura per stampare la lista degli ammortamenti cespiti.  
-> [Stampa Libro Cespiti ammortizzabili](/docs/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal): richiama la procedura per stampare il registro annuale dei cespiti.  
-> [Stampa Prospetto rivalutazioni](/docs/finance-area/fixed-assets/revaluations-prospect): richiama la procedura per stampare il prospetto delle rivalutazioni.  
-> [Stampa Riepilogo per tipo operazione](/docs/finance-area/fixed-assets/reports-fixed-assets/summary-per-operation-type): richiama la procedura per stampare un riepilogo per tipo operazione.  
-> [Stampa Schede cespiti](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets): richiama la procedura di stampa delle singole schede cespiti.  
-
-
-*Procedure specifiche*
-
-> [Ammortamento cespite](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/fixed-assets-depreciation): richiama la procedura per calcolare in automatico gli ammortamenti dei cespiti.  
-> [Contabilizzazione ammortamenti](/docs/finance-area/fixed-assets/accounting/depreciations-accounting): richiama la procedura per contabilizzare in automatico degli ammortamenti.  
-> [Simulazione piani di ammortamento](/docs/finance-area/fixed-assets/depreciation-plans-simulation): richiama la procedura per effettuare la simulazione dei piani di ammortamento.  
+> [Ispis godišnje kupnje dugotrajne imovine](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase): pokreće postupak za ispis popisa dugotrajne imovine kupljene tijekom godine.   
+> [Ispis amortizacije dugotrajne imovine](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-depreciation): pokreće postupak za ispis popisa amortizacija dugotrajne imovine.    
+> [Ispis knjige amortizirajuće dugotrajne imovine](/docs/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal): pokreće postupak za ispis godišnjeg registra dugotrajne imovine.  
+> [Ispis pregleda revalorizacija](/docs/finance-area/fixed-assets/revaluations-prospect): pokreće postupak za ispis pregleda izvršenih revalorizacija.  
+> [Ispis sažetka po vrsti operacije](/docs/finance-area/fixed-assets/reports-fixed-assets/summary-per-operation-type): pokreće postupak za ispis sažetka prema vrsti operacije.   
+> [Ispis kartica dugotrajne imovine](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets): pokreće postupak za ispis pojedinačnih kartica dugotrajne imovine.  
 
 
-**Tabelle necessarie per gestire il modulo**: 
-[Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  
+*Specifične procedure*
 
-[Aliquote IVA](/docs/configurations/tables/finance/vat-rates),  
-
-[Cambi fissi euro](/docs/configurations/tables/finance/euro-fixed-exchanges),  
-
-[Cambi valute](/docs/configurations/tables/finance/currency-exchange),  
-
-[**Categoria cespite**](/docs/configurations/tables/finance/fixed-asset-category), 
-
-[Piani di ammortamento alternativi](/docs/configurations/tables/finance/alternative-depreciation-plans),  
-
-[Precodice cespite](/docs/configurations/tables/finance/fixed-asset-precode),  
-
-[Proprietà cespite](/docs/configurations/tables/finance/fixed-asset-property), Tipi contabilizzazione cespiti,  
-
-[Tipi ammortamenti oggetivi](/docs/configurations/tables/finance/objective-amortization-types),  
-
-[Tipi deducibilità](/docs/configurations/tables/finance/deductibility-types),  
-
-[Tipi rivalutazione](/docs/configurations/tables/finance/revaluation-types).
+> [Amortizacija dugotrajne imovine](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/fixed-assets-depreciation): pokreće postupak za automatski izračun amortizacije dugotrajne imovine.
+> [Knjiženje amortizacije](/docs/finance-area/fixed-assets/accounting/depreciations-accounting): pokreće postupak za automatsko knjiženje amortizacije.    
+> [Simulacija planova amortizacije](/docs/finance-area/fixed-assets/depreciation-plans-simulation): pokreće postupak za simulaciju amortizacijskih planova. 
 
 
-**Parametri**:   [Parametri cespiti](/docs/configurations/parameters/finance/fixed-assets-parameters).
+**Potrebne tablice za upravljanje modulom**: 
+[Knjigovodstveni plan konta](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  
+
+[Stope PDV-a](/docs/configurations/tables/finance/vat-rates),  
+
+[Fiksni tečajevi eura](/docs/configurations/tables/finance/euro-fixed-exchanges),  
+
+[Valutni tečajevi](/docs/configurations/tables/finance/currency-exchange),  
+
+[Kategorije dugotrajne imovine](/docs/configurations/tables/finance/fixed-asset-category), 
+
+[Prekod dugotrajne imovine](/docs/configurations/tables/finance/alternative-depreciation-plans),  
+
+[Vlasništvo dugotrajne imovine](/docs/configurations/tables/finance/fixed-asset-precode),  
+
+[Tipovi knjiženja dugotrajne imovine](/docs/configurations/tables/finance/fixed-asset-property), Tipi contabilizzazione cespiti,
+
+[Vrste objektivne amortizacije](/docs/configurations/tables/finance/objective-amortization-types),  
+
+[Vrste porezne priznate amortizacije](/docs/configurations/tables/finance/deductibility-types),  
+
+[Vrste revalorizacija](/docs/configurations/tables/finance/revaluation-types).
+
+
+**Parametri**: [Parametri za dugotrajnu imovin](/docs/configurations/parameters/finance/fixed-assets-parameters).

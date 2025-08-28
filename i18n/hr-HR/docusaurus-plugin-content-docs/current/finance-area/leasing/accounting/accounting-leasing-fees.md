@@ -1,11 +1,11 @@
 ---
-title: Contabilizzazione canoni
+title: Knjiženje naknada
 sidebar_position: 1
 ---
 
-Da questa posizione è possibile procedere a contabilizzare tutte le rate di tutti i contratti di leasing presenti nella base dati, anche massivamente.
+S ovog mjesta moguće je izvršiti knjiženje svih rata za sve leasing ugovore koji se nalaze u bazi podataka, uključujući i masovno knjiženje.  
 
-La procedura in dettaglio risulta la medesima attivabile dall'interno del **[dettaglio dei singoli leasing](/docs/finance-area/leasing/new).**
+Postupak je identičan onome koji je dostupan unutar **[detalja pojedinačnih leasing ugovora](/docs/finance-area/leasing/new).**
 
 
 

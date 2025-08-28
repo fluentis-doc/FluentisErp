@@ -116,7 +116,7 @@
     "description": "The label for category Compensazione partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Giroconto partite": {
-    "message": "Giroconto partite",
+    "message": "Prenos stavki",
     "description": "The label for category Giroconto partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe": {

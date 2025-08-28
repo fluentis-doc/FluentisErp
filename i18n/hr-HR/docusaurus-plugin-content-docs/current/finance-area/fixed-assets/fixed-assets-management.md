@@ -1,57 +1,47 @@
 ---
-title: Gestione Cespiti
+title: Osnovna sredstva
 sidebar_position: 3
 ---
 
 LINK:
 
-**[Dettaglio](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
+**[Detalj](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
 
-**[Operazioni Patrimoniali](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
+**[Operacije imovine](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
 
-**[Operazioni Economiche](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
+**[Ekonomske operacije](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
 
-**[Cespiti collegati](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
+**[Povezana osnovna sredstva](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
 
-**[Proprietà cespiti](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
+**[Svojstva imovine](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
 
  
-
 Dalla presente form è possibile inserire manualmente una nuova scheda cespite (questo tipo di operazione non è normalmente previsto, un esempio pratico può essere l'inserimento di cespiti pregressi di cui non si intende caricare la registrazione contabile già presente, magari, su un precedente software).
 
 Questa procedura è alternativa all'inserimento della scheda direttamente dalla registrazione contabile della fattura di acquisto configurata appositamente per la gestione cespiti (procedura, quest'ultima, consigliata).
 
- 
 
-**Testata**
+**Zaglavlje**
 
-Impostazione della **Categoria cespite** d'appartenenza: selezionare la categoria dalla combo box (collegata alla tabella **[categoria cespite](/docs/configurations/tables/finance/fixed-asset-category)**);
+Postavljanje relevantne **Kategorije osnovnog sredstva** moguće je iz padaćujeg izbornika (povezano s tablicom **[kategorije osnovnog sredstva](/docs/configurations/tables/finance/fixed-asset-category)**);
 
-**Tipo proprietà**: normalmente di proprietà come proposto di default; sono previsti anche i cespiti in leasing e a noleggio, che sono numerati separatamente dagli altri e non finiscono nelle stampe del libro cespiti ammortizzabili. Questa gestione consente di simulare il calcolo degli ammortamenti di fine anno per la comparazione al canone di leasing pagato al fine del calcolo delle imposte. In caso di cespite non di proprietà sarà possibile inserire qualche nota di riferimento al contratto relativo.
+**Vrsta posjedovanja**: Normalno vlasništvo je predloženo prema zadanim postavkama (osnovno sredstvo u vlasništvu); postoji i osnovno sredstvo u najmu i leasingu, koja se numerira odvojeno od ostalih i ne završava u ispisu knjige amortiziranih sredstava. Ovo upravljanje omogućuje simulaciju izračuna amortizacije na kraju godine za usporedbu s naknadom za leasing plaćenom u svrhu izračuna poreza. U slučaju osnovnog sredstva koja nije u vlasništvu, bit će moguće umetnuti neke referentne bilješke.  
 
-**Divisione**: impostata di default sulla divisione in uso, può essere variata in caso di necessità. Il campo può essere impostato unicamente al momento dell'inserimento del nuovo cespite, non potendo poi più essere modificato.
+**Odjel**: prema zadanim postavkama, postavljeno je na odjel koji se koristi, a može se promijeniti ako je potrebno. Polje se može postaviti tek kada se umetne novo osnovno sredstvo jer se više ne može mijenjati.  
 
-**Tipo contab. **: (tipo contabilizzazione): campo normalmente non valorizzato in fase di inserimento manuale della scheda, viene valorizzato nella registrazione contabile per imporre un conto di contropartita particolare (definito nella tabella Tipi contabilizzazione cespiti) rispetto a quello definito nella categoria cespite di appartenenza.
+**Vrsta obračuna**: polje koje se obično ne popunjava prilikom ručnog unosa obrasca. Popunjava se u računovodstvenom zapisu (definirano u tablici Vrste knjiženja osnovnih sredstava). 
 
- 
+**Predšifra**: može se pripisati i numeraciji sredstava; ako nije umetnuto, predloženo numeriranje bit će jedinstveno za svako osnovno sredstvo aktivnog poduzeća/odjela,. Umetanjem predšifre broj osnovnog sredstva bit će jedinstven za svaku od postojećih predšifara.  
 
-**Precodice**: può essere attribuito alla numerazione del cespite; se non inserito, infatti, la numerazione proposta sarà unica su tutti i cespiti della società/divisione attiva, inserendo un precodice il numero del cespite sarà univoco per ognuno dei precodici esistenti.
+**Materijalna/Nematerijalna**: odnosi se na “prirodu" osnovnog sredstva (materijalno ili nematerijalno); automatski se predlaže na temelju podataka sadržanih u kategoriji osnovnih sredstava kojoj pripada.  
 
+**Bilješke o sredstvu**: slobodno polje za napomene.  
 
-**Mat./Immat.**: natura del cespite (materiale o immateriale); viene proposto in automatico sulla base del dato contenuto nella categoria cespite di appartenenza.
+**Broj sredstva**: automatski se predlaže progresivnim redoslijedom, može se ručno unijeti kao jedinstvena oznaka (također u odnosu na prethodni kod).  
 
+**Opis**: obavezno polje, bit će prikazano i u različitim ispisima i postupcima povezanih procedura.  
 
-**Note propr.**: campo note libero
- 
-
-**Numero cespite**: proposto automaticamente in ordine progressivo, può essere forzato manualmente nel rispetto dell'univocità (anche in relazione al precodice).
-
-
-**Descrizione del cespite**: campo obbligatorio, sarà visualizzata e riportata nelle varie stampe e procedure del modulo. 
-
- 
-
-A seconda delle impostazioni delle categorie cespiti e dei parametri del modulo, può essere visibile anche il tipo di ammortamento oggettivo assegnato al cespite, con, eventualmente, una percentuale specifica da utilizzare per il cespite stesso al posto dello standard del tipo.
+Ovisno o postavkama kategorija osnovnih sredstava i parametrima modula, vrsta amortizacije koja je dodijeljena osnovnom sredstvu također može biti vidljiva, s eventualnim određenim postotkom koji će se koristiti za samo to osnovno sredstvo umjesto standardnog tipa.  
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/image01.png)
 

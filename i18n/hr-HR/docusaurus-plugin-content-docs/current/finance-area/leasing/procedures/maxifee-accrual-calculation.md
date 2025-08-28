@@ -1,19 +1,19 @@
 ---
-title: Calcolo Risconto Maxicanone
+title: Izračun razgraničenja za maksimalnu naknadu  
 sidebar_position: 1
 ---
 
-Da questa form è possibile ricercare i risconti già calcolati e procedere al calcolo di nuovi risconti annuali per quanto riguarda il maxicanone.
+Putem ovog obrasca moguće je pretražiti već izračunata razgraničenja te izvršiti novi godišnji izračun razgraničenja za maksimalne leasing naknade (maxicanone).  
 
-La procedura, in modo simile rispetto alle procedure per le scritture di assestamento del modulo Contabilità, prevedono di eseguire **prima** il **calcolo** del risconto da questa posizione e **poi** di procedere alla sua **contabilizzazione** tramite l'apposita procedura contabile del modulo.
+ostupak je, slično kao i kod knjiženja obračuna razgraničenja u modulu Glavno knjigovodstvo, podijeljen u dvije faze: **najprije** se s ove pozicije izvršava **izračun** azgraničenja, a **zatim** se nastavlja s njegovim **knjiženjem** putem odgovarajuće računovodstvene procedure unutar modula.  
 
-Premendo il tasto nuovo si inizializza la form di inserimento parametri per il calcolo.
+Pritiskom na tipku Novo inicijalizira se obrazac za unos parametara za izračun.  
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image01.png)
 
-E' necessario specificare l'**Anno** contabile, la **Causale** da utilizzare per la scrittura di rettifica, la **Data** registrazione e di competenza contabile che sarà inserita nella scrittura.
+Potrebno je definirati sljedeće: **Računovodstvenu godinu**, **Vrstu naloga** koja će se koristiti za knjiženje korektivne stavke, **Datum** knjiženja i datum obračunskog razdoblja, koji će biti korišteni u knjiženju.  
 
-Nonostante l'inserimento della casuale, lo schema della scrittura contabile sarà pilotato dalla logica della procedura.
+Iako se unosi vrsta naloga, struktura knjiženja automatski se određuje logikom postupka.
 
 Dopo aver salvato è possibile premere Calcola per ottenere la proposta dei valori che potranno essere confermati tramite la spunta (spunta tutto per confermare i risconti relativi ai vari leasing presenti) per poi procedere a contabilizzarli.
 

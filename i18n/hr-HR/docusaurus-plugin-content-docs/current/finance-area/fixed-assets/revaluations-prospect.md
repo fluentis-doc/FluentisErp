@@ -1,20 +1,20 @@
 ---
-title: Prospetto rivalutazioni
+title: Tablica revalorizacije 
 sidebar_position: 4
 ---
 
-La maschera di stampa del Prospetto rivalutazioni consente di definire i consueti filtri di ricerca all'estrazione dati.
+Obrazac za ispis izvješća o revalorizaciji omogućuje definiranje uobičajenih filtera pretraživanja za izdvajanje podataka. 
 
-Il report consente di riepilogare i dati di dettaglio delle rivalutazioni associate ai vari cespiti, secondo il codice di raggruppamento impostato in tabella categorie cespiti.
+Izvješće omogućuje sažetak detaljnih podataka o revalorizacijama povezanim s različitim osnovnim sredstvima, prema vrsti grupiranja postavljenoj u tablici kategorije osnovnih sredstava.   
 
-Per ulteriori informazioni sui parametri di filtro della form **[vedere qui](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
+Za više informacija o parametrima filtera obrazaca **[pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Značenje | Tipka za pretpregled ispisa. |
+| Ispiši | Tipka za fizički ispis dokumenta. |
 
 
 
