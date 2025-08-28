@@ -1,89 +1,95 @@
 ---
-title: Centri aziendali
+title: Korporativni centri
 sidebar_position: 4
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Centri aziendali**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Obrazac se nalazi u: **Tablice > Kontroling > Troškovno računovodstvo > Korporativni centri**
 
+:::tip Napomena
+Ova je tablica relevantna samo za društva kod kojih je aktivirana opcija *Kontroling*.
 :::
 
----
+Tablica omogućuje definiranje strukture, uključujući više razina, te karakteristika poslovnih centara.
 
-La tabella consente la definizione della struttura, anche su diversi livelli, e le caratteristiche dei centri aziendali.
+#### Specifični gumbi
 
-
-| **PULSANTI della RIBBON BAR** | Significato |
-| --- | --- |
-| Nuovo CDC | Pulsante per effettuare l'inserimento di un nuovo centro di costo. |
-| Nuovo legame CDC | Pulsante per effettuare l'inserimento di un sotto-livello rispetto a quello su cui si è posizionati. |
-| Cancella legame CDC | Pulsante per effettuare la cancellazione del sotto-livello del CDC. |
+**Novi CDC**: omogućuje unos novog centra troška.|
+**Novi podređeni CDC**: omogućuje dodavanje podrazine (podcentra) u odnosu na razinu na kojoj se trenutno nalazite. |
+**Brisanje veze CDC**: omogućuje brisanje podrazine centra troška. |
 
 
-:::tip **Modalità di inserimento nuovi centri**
-La struttura ad albero creata per organizzare i centri, ed i centri nel dettaglio, sono visibili nella griglia centrale della form, ma i nuovi centri vengono inseriti compilando i campi nella zona inferiore della maschera.
-ATTENZIONE: alcuni campi sono, tuttavia, modificabili agendo direttamente sulla riga della griglia superiore dopo aver inserito il nuovo centro (es. il campo *Cost driver*) 
+:::tip **Način unosa novih centara**
+Struktura stabla koja organizira centre, kao i detalji centara, vidljiva je u središnjoj mreži forme, dok se novi centri unose popunjavanjem polja u donjem dijelu ekrana.
+Upozorenje: pojedina polja moguće je mijenjati izravno u gornjoj mreži nakon što se novi centar unese (npr. polje *Cost driver*).
 :::
 
+## Opće postavke
 
+### Obavezna polja (lijevi stupac)
+- [**Dimenzija**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) kojoj centar pripada
+- **Šifra** alfanumerička, do 15 znakova
+- **Naziv konta** centra
+- **Kategorija** centra
 
+### Neobavezna polja (lijevi stupac) 
+- **Drugi opis**
+- **Tip centra** (direktni/indirektni) – ova postavka ne utječe na izračune.
 
-**Centro aziendale**: codice alfanumerico del CDC.
+### Neobavezna polja (desni stupac) 
+- **DATUM POČETKA/DATUM ZAVRŠETKA VALJANOSTI** omogućuje provjeru je li centar troška valjan na datum knjiženja ili datum dokumenta. Padajući izbornik prikazuje samo one centre koji su važeći u zadanom razdoblju (ili bez zadanog raspona).
+- FLAG **VALORIZIRAJUĆI**: označava može li se centar koristiti u knjiženjima ili dokumentima, ili je samo logička struktura.
+- FLAG **VIDLJIV U PROIZVODNJI**: čini centar vidljivim u tablici [Trošak centri](/docs/configurations/tables/production/cost-center) u proizvodnji.
+- **CENTAR ODGOVORNOSTI**. slobodna tablica u kojoj se može evidentirati odgovorna osoba za centar; nema izravnog utjecaja na analitičko računovodstvo, ali se može koristiti za obavještavanje zaposlenika (npr. u slučaju prekoračenja budžeta).
 
-**Descrizione**: descrizione del CDC.
+## Postavke kontrolinga
 
-**Seconda descrizione**: seconda descrizione del CDC.
+- **Računi koji se trebaju dodijeliti**: samo jedan centar u istoj tvrtki može imati ovaj flag. Koristi se kao generički centar (npr. "VRIJEDNOSTI ZA ATRIBUCIJU U KONTROLINGU") u koji se knjiže troškovi koji se ne mogu precizno dodijeliti. Ova opcija se primjenjuje kada: računovodstvo nema dovoljno informacija za pravilnu dodjelu u trenutku knjiženja, ili kada bi detaljna dodjela zahtijevala previše vremena.
 
-**Cost driver**: assegna al centro di costo un cost driver di ri-attribuzione percentuale nelle Chiusure infrannuali.
+:::tip Napomena
+Primjer: trošak najma može se odmah raspodijeliti po unaprijed definiranim postocima u kontnom planu, no ako se koristi generički centar, može se primijeniti *cost driver* (npr. površina u m²) za fleksibilnije raspoređivanje troškova. Promjenom cost drivera ažuriraju se postotci unutar kontrolinga bez potrebe za izmjenama u povijesnim knjiženjima.
+Drugi primjer: potrošnja kWh strojeva može se privremeno knjižiti u generički centar, a kasnije, kada su dostupni stvarni podaci, izvršiti raspodjela u kontrolingu na temelju *cost drivera*.
+:::
 
-**Tipo centro di costo**: definisce se il centro di costo è diretto o indiretto.
+- **Zadana centar za imovinu**: generički centar kojem se dodjeljuju sva knjiženja vezana uz imovinske stavke. Iako se analitika najčešće primjenjuje samo na ekonomske stavke, tvrtka može odabrati proširenje na imovinske zapise radi potpunijeg pregleda bilance.
 
-**Centro di responsabilità**: collega il centro di costo al relativo centro di responsabilità.
+- **Zadani centar za projekte**: generički centar za knjiženje izravnih troškova/prihoda po projektima/narudžbama. Ako je u analitici obavezno popuniti centar, a nema specificirane detaljne veze centara s projektima, koristi se ovaj zadani centar. Detaljna pravila postavljaju se u [TABLICI POVEZIVANJA CENTARA I PROJEKATA](/docs/configurations/tables/controlling/analytical-accounting/projects-centers-association).
 
-**Data inizio**: definisce la data inizio del CDC.
-
-**Data fine**: definisce la data di fine utilizzo dei CDC.
-
-**Flag valorizzabile**: quando questo flag è impostato il centro di costo può essere valorizzato con movimenti di contabilità. Togliere il flag dai livelli di struttura che non si vogliono valorizzare erroneamente e lasciarlo solo, quindi, al livello più basso.
-
-**Flag MRP**: il flag consente di utilizzare il centro di costo nel modulo della produzione.
-
-**Flag Conti da riassegnare:** Va ad identificare questo centro come "bidone" dove la contabilità generale assegna quei costi che non è in grado di attribuire in modo preciso e diretto, oppure che potrebbe gestire con delle logiche percentuali fisse legate al piano dei conti. Esempio: il costo degli affitti potrebbe essere abbastanza gestibile nel piano dei conti con delle percentuali, in base ai metri quadri dei vari centri si ricava la percentuale di ripartizione da vincolare nel piano dei conti. 
-Potrebbero però esserci logiche di cui la contabilità non ha visibilità ovvero il numero delle persone, ad esempio, dei vari centri; dati che la contabilità non sa dove reperire e quindi intanto il costo viene "parcheggio" nel centro "bidone" e poi a fine periodo si saprà quanti dipendenti sono registrati in ogni centro e quindi viene demandata la logica di attribuzione ad un COST DRIVER.
-
-**Flag Centro default patrimoniale:** identifica che questo è il centro generico al quale assegnare tutti i movimenti patrimoniali della contabilità. Tutta la gestione della contabilità analitica interessa il conto economico, ma potrebbe essere interesse dell’ azienda avere quadratura dei dati complessivi dell’ analitica coi dati complessivi del bilancio. Si può dunque identificare un centro generico unico nel quale tutto il patrimoniale viene assegnato per avere tutto il bilancio completo anche nella parte di controllo di gestione. Serve solo per quadratura.
-
-**Flag Commessa:** identifica il centro aziendale generico che accoglie i costi diretti di commessa. Il centro in questione deve essere associato alla dimensione avente nella relativa tabella il flag *Commessa*. Un costo o ricavo diretto di commessa, può essere associato a questo centro generico di commessa  oppure in alternativa verrà valorizzata la [TABELLA ASSOCIAZIONE CENTRI/COMMESSE](/docs/configurations/tables/controlling/analytical-accounting/projects-centers-association).
-
-Successivamente si potrà indicare a FLUENTIS con quale LOGICA valorizzare il centro aziendale. Infatti potrebbero esserci dei driver differenti di analisi in base al centro aziendale. Occorre tener presente che parliamo di costi diretti di commessa, ma è possibile eseguire successivamente vari ribaltamenti da centro a centro e anche da una dimensione di analisi all’ altra, ragionando su centri di destinazione differenti che raggruppano le commesse. 
-
-**Modelli di riclassificazione:** permette di abbinare al centro aziendale un modello di riclassificazione (modello che può gestire sia movimenti contabili sia movimenti di centri aziendali) al fine di determinare il totale dei costi assegnati al centro per ottenere l’ indice di costo del centro stesso. Questo perchè alcuni centri (in genere produttivi) sono tipicamente valorizzati in termini di grandezze fisiche (es. ore di lavoro o numero di pezzi utilizzati) ed è necessario determinare la tariffa di valorizzazione per il costo della singola ora di lavoro o del singolo pezzo. Il modello di riclassificazione tipicamente determinerà i costi totali del centro che saranno suddivisi per il valore totale delle ore (ad esempio, o dei pezzi), caricati sul centro stesso.
-:::tip Nota
-Il modello di riclassificazione da abbinare al centro aziendale per la determinazione della tariffa può dipendere dall'impostazione teorica che si vuole dare al proprio sistema di controllo di gestione, in ogni caso, comunque, sarà un modello che tende a determinare il costo complessivo del centro anche attraverso l'attribuzione di quota parte dei costi indiretti e comuni. Nel dettaglio del modello di riclassificazione è previsto di indicare tramite apposito flag il nodo (la riga) che espone il risultato della riclassificazione e dunque il totale dei costi del centro che diventerà il numeratore del quoziente (esempio Totale cosi del centro / totale ore di lavoro del centro) al fine di determinare ad esempio il costo orario del centro. Nelle immagini si può vedere un esempio di modello specifico denominato Quadro controllo costi. Tale modello è configurato per gestire come numeratore del rapporto la riga Totale costi di Funzionamento. Cfr [**MODELLO DI RICLASSIFICAZIONE**](/docs/controlling/reclassifications/create-reclassification-model).
+- [**Model reklasifikacije**](/docs/controlling/reclassifications/create-reclassification-model): omogućuje povezivanje poslovnog centra s modelom reklasifikacije kako bi se odredio ukupni trošak dodijeljen centru i dobio pokazatelj troška samog centra. To je zato što su neki centri (uglavnom proizvodni) obično vrednovani u fizičkim veličinama (npr. radni sati ili broj korištenih komada) te je potrebno odrediti tarifu vrednovanja za trošak pojedinog radnog sata ili pojedinog komada. Model reklasifikacije obično određuje ukupne troškove centra koji se zatim dijele s ukupnom vrijednošću sati (ili komada) zabilježenih za taj centar.
+:::tip Napomena
+Model reklasifikacije koji se povezuje s poslovnim centrom za određivanje tarife može ovisiti o teorijskom pristupu koji želite primijeniti u svom sustavu kontrolinga, ali u svakom slučaju to će biti model koji teži odrediti ukupni trošak centra, uključujući i raspodjelu dijela neizravnih i zajedničkih troškova. U detaljima modela reklasifikacije predviđeno je označiti odgovarajući čvor (redak) koji prikazuje rezultat reklasifikacije, odnosno ukupni trošak centra, koji će postati brojnik u omjeru (npr. ukupni trošak centra / ukupni broj radnih sati centra) kako bi se odredio, primjerice, satni trošak centra. Na slikama je prikazan primjer specifičnog modela nazvanog Quadro controllo costi. Taj je model konfiguriran tako da kao brojnik koristi redak Ukupni troškovi rada.
 :::
 
 ![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/corporate-center-model-connection.png)
 
 ![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/QCC-model.png)
 
-**Tipo misurazione:**  indica la modalità con la quale sarà valorizzato il centro in base ai possibili criteri selezionabili che sono:
-- **Nessuno:** indica che il centro verrà valorizzato con un criterio diverso dai successivi presenti in lista, ovvero in maniera diretta tramite attribuzione del valore attraverso la contabilità analitica dalla contabilità generale
-- **Dimensione fisica:** indica che il centro sarà valorizzato tramite dei movimenti espressi in misurazioni fisiche (ore, pezzi ecc.) e in questo caso nei campi collegati che appaiono verrà definita l'unità di misura rispettivamente per la quota fissa di costo e per la quota variabile. Sono possibili fino a due unità di misura in contemporanea.
+- **Vrsta mjerenja**: mogu se koristiti tri metode:
+    - *fizička dimenzija*
+    - *postotak*
+    - *postotak i fizička dimenzija*.
 
-:::note Nota
-Si veda la [TABELLA DELLE UNITA' DI MISURA](/docs/configurations/tables/general-settings/measurement-units) per la definizione del **Tipo di valutazione del tempo**
+Ako odaberemo posljednju opciju, prikazat će se sve dostupne mogućnosti.
+
+- **Filter vrijednosti nazivnika**: ovo polje koristi se u postotnim izračunima za definiranje logike izračuna nazivnika. Dostupne opcije su:
+    - *02 Ukupno dugovno*
+    - *03 Ukupno potražuje*
+    - *04 Marža*
+    - *05 Na odabrani podkonto*
+    - *06 Na odabrani konto*
+    - *07 Isključujući odabrane podkonte*
+    - *08 Isključujući odabrane konte*
+
+Ako, primjerice, odaberemo kod 02 Ukupno dugovno, zbrojit će se samo dugovni iznosi centara navedenih u donjoj lijevoj mreži; s kodom 03 Ukupno potražno, s 04 marže (razlika dugovno-potražno), a ostale opcije omogućuju dodatno filtriranje u desnoj mreži za preciznije podatke centara.
+
+- [**JEDINICA MJERE 1** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), [**JEDINICA MJERE 2**], **FIKSNI DIO** i **VARIJABILNI DIO**. Četiri su polja vezana uz izračune temeljem količina, gdje se definira koja je jedinica mjere relevantna za dobivanje ukupne količine koja se koristi kao nazivnik u fizičkom indeksu. Moguće je postaviti dvije jedinice mjere (UM1 i UM2) za izračun dvostrukog indeksa, dok se ista jedinica koristi i za fiksni i za varijabilni dio prvog ili drugog indeksa.
+
+:::tip Napomena
+Izračun prema fizičkim veličinama, tipičan za proizvodne centre, omogućuje dobivanje troškovnih tarifa centara, poput €/sat rada stroja ili €/sat rada čovjeka, što omogućuje izračun i provjeru standardnih troškova korištenih u izračunu troškova proizvoda, bilo za procjene u sastavnici, bilo za ponude.
 :::
 
-- **Percentuale:** indica che il centro sarà valorizzato con un criterio percentuale rispetto ad altri centri o ad altri conti, e più precisamente come coefficiente (rapporto) tra un modello di riclassificazione al numeratore e alcuni centri al denominatore. Selezionando questo criterio si abilitano un altro campo (**Filtro valori denominatore**) per indicare il criterio di calcolo del denominatore del coefficiente, ed una griglia secondaria (in basso a sinistra) per abbinare i centri collegati al calcolo in questione.
-    I criteri di calcolo possibili sono:
-    - Totale dare: legge solo la sezione Dare dei movimenti dei centri inseriti nella griglia in basso a sinistra 
-    - Totale avere: legge solo la sezione Avere dei movimenti dei centri inseriti nella griglia in basso a sinistra
-    - Margini: = Totale dare - Totale avere
-    - Su sottoconto selezionato: attivando questo criterio compare una ulteriore griglia in basso a destra per abbinare i conti contabili da considerare nel calcolo. Dunque saranno considerati i movimenti dei centri della griglia di sinistra, se questi sono riferiti ai sottoconti inseriti nella griglia di destra.
-    - Su conto selezionato: similmente al punto precedente è possibile inserire direttamente il conto mastro anzichè i singoli sottoconti di dettaglio, ottenendo la lettura di tutti i suoi sottoconti 
-    - Ad esclusione dei sottoconti selezionati: verranno letti tutti i sottoconti ad esclusione di quelli inseriti nella griglia e pertanto i movimenti dei centri saranno considerati se NON si riferiscono ai sottoconti inseriti nella griglia di destra.
-    - Ad esclusione dei conti selezionati: verranno letti tutti i conti con relativi sottoconti ad esclusione d quelli inseriti nella griglia e pertanto i movimenti dei centri della griglia di sinistra saranno considerati solo se NON riferiti ai conti inseriti a destra. 
-- **Percentuale e grandezza fisica:** criterio che permette di combinare elementi dei due precedenti parametrizzando sia le unità di misura, sia il coefficiente (rapporto) di ripartizione di altri centri
+- **REFERENCA MJERENJA CENTRA**: omogućuje definiranje polja iz povijesnih podataka fizičkih kretanja koja će se filtrirati radi identifikacije količina vezanih uz centar. To može biti centar podrijetla, centar odredišta ili, s prioritetom, odredište, a u suprotnom podrijetlo.
+
+## Lokalizacije
+
+U slučaju instalacije s različitim geografskim lokalizacijama, moguće je koristiti sekciju Lokalizacije za upravljanje opisima na alternativnim jezicima, što se može koristiti, primjerice, u ispisu izvještaja analize centara troška.
