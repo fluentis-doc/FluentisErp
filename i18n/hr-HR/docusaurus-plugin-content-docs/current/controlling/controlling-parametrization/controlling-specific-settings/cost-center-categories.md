@@ -1,5 +1,5 @@
 ---
-title: Categorie dei centri aziendali
+title: Kategorije centara tvrtke
 sidebar_position: 3
 ---
 
