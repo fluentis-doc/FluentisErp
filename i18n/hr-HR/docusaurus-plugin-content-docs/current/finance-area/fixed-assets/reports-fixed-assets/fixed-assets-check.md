@@ -1,22 +1,20 @@
 ---
-title: Controllo cespiti
+title: Kontrola osnovnih sredstava  
 sidebar_position: 4
 ---
 
-Con questo report è possibile eseguire una quadratura, conto per conto, tra le registrazioni contabili relative al cespite selezionato e le risultanze del libro cespiti.
+Ovim izvješćem moguće je izvršiti bilancu, tj. provjeru usklađenja, konto po konto, između zapisa u administraciji (računovodstvu) koji se odnose na odabrano sredstvo i stanja knjige osnovnih sredstava. Ukupni iznosi prisutni u modulu osnovnih sredstava uspoređuju se s ukupnim iznosima prisutnim u glavnoj knjizi. 
 
-Vengono confrontati i totali presenti a modulo cespiti rispetto ai totali presenti in contabilità generale. Il risultato del report sarà una lista di conti contabili (individuati dalle categorie cespiti selezionate nella form e valorizzate a modulo cespiti) con i relativi valori totali rilevati nei due moduli di Fluentis, al fine di facilitarne la verifica della quadratura.
+Rezultat izvješća bit će popis računovodstvenih računa (identificiranih u kategorijama osnovnih sredstava odabranih u obrascu i valoriziranih u modulu osnovnih sredstva) s povezanim ukupnim vrijednostima zabilježenim u dva Fluentis modula, kako bi se olakšala provjera usklađenosti
 
-La form di parametrizzazione della stampa è simile a quella delle altre stampe disponibili nel modulo cespiti, pertanto evidenziamo 3 campi in particolare:
+Obrazac za parametriziranje ispisa sličan je onom kod drugih ispisa dostupnih u modulu osnovnih sredstava. Posebno se ističu 3 polja:  
 
-**Data riferimento:**  viene impostato di default con la data odierna ed è la data finale che Fluentis utilizzerà per la ricerca dei dati all’interno del modulo cespiti: in sostanza, prenderemo tutti i valori patrimoniali che sono minori-uguali a questa data (quindi tutto l’attivo e tutti i fondi fino a questa data) mentre andremo a leggere i soli ammortamenti nell’anno, fino a questa data.
-
-
-**Da data - a data**: obbligatorio per poter eseguire il report, sarà invece il periodo di ricerca dei dati all’interno della contabilità generale: per ogni sottoconto (attivo, fondo, ammortamento) utilizzato nei cespiti delle categorie selezionate si andrà a calcolare il saldo contabile all’interno di questo range di date.
-Nell’ottica di controllo di quadratura di fine anno, quindi, andremo a impostare la data riferimento 31/12/yyyy e il range come 01/01/yyyy – 31/12/yyyy.
+**Referentni datum**: postavljen je prema zadanim postavkama s današnjim datumom i konačni je datum koji će Fluentis koristiti za traženje podataka unutar modula osnovnih sredstava. U biti, uzimaju se sve vrijednosti osnovnih sredstavakoje su manje ili jednake ovom datumu (dakle sva osnovna sredstva do ovog datuma), ali će se očitati amortizacija u godini samo do ovog datuma.
 
 
-**Flag Dettagli operazioni**: attivando questo flag viene creato un dettaglio per ogni data movimentata al fine di capire se per ogni data registrazione esiste il relativo movimento nella scheda cespite.
+**Od datuma do datuma**: obavezno kako bi se moglo pokrenuti izvješće, biti će razdoblje pretraživanja podataka unutar računovodstva: za svaki podkonto (osnovno sredstvo, fond, amortizacija) koji se koristi u osnovnih sredstava odabranih kategorija, saldo će se izračunati unutar ovog datumskog raspona. S ciljem provjere stanja na kraju godine, referentni datum se postavi kao 31/12/gggg i raspon kao 01/01/gggg – 31/12/gggg.  
 
-Il report visualizza la lista dei conti utilizzati nei cespiti delle categorie selezionate, la colonna con il valore ottenuto dal modulo cespiti, quello dalla contabilità e poi l’eventuale differenza tra i due.
+**Flag Detalji operacija**: aktiviranjem ove zastavice kreira se detalj za svaki datum kako bi se razumjelo postoji li relevantno kretanje u  kartici osnovnih sredstava za svaki datum bilježenja. 
+
+Izvješće prikazuje popis računa korištenih u osnovnom sredstvu odabranih kategorija, stupac s vrijednošću dobivenom iz modula osnovnih sredstava, onu iz računovodstva i zatim sve razlike između te dvije vrijednosti
 

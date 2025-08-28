@@ -1,43 +1,36 @@
 ---
-title: Libro cespiti ammortizzabili
+title: Popis osnovnih sredstava  
 sidebar_position: 4
 ---
 
-La maschera di stampa del libro cespiti consente di definire i consueti filtri di ricerca all'estrazione dati.
+Ovaj obrazac omogućuje ispis knjige osnovnih sredstava pomoću uobičajenih filtara pretraživanja za izdvajanje podataka.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image01.png)
 
-Il flag **Categoria Cespite**, se attivo, consente di selezionare una o più (con il tasto Ctrl) categorie dalla griglia sottostante.
+Flag **Kategorija osnovnog sredstva**, ako je aktivna, omogućuje odabir jedne ili više (s tipkom Ctrl) kategorija iz glavnog pregleda. 
 
- 
+S desne strane: obično se osnovno sredstvo, prodana ili uništena u godinama koje prethode umetnutoj referentnoj godini, više neće izvještavati u tiskanom obliku, osim ako se ne postavi odgovarajući flag. Postoji flag čijim aktiviranjem se prikazuju osnovna sredstva prema željenom svojstvu.
 
-Nella parte destra: normalmente i cespiti venduti o distrutti negli anni precedenti all'anno di riferimento inserito non saranno più riportati in stampa, se non imponendo l'apposito flag. 
-
-Anche per i cespiti 'Cessati' è previsto un pulsante di inserimento nel report. Allo stesso modo saranno esclusi dalla stampa i cespiti che hanno una data di fine attività in anagrafica.
+Također je predviđena tipka za unos u izvješće i za imovinu označenu kao "Rashodovana". Na isti način, iz ispisa će biti isključena imovina koja u evidenciji ima upisan datum završetka aktivnosti.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image02.png)
 
-I flag ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image03.png)
+Flagovi ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image03.png)
 
-**Non ammortizzati**
+**Neamortizirano**
 
-**Parzialmente ammortizzati**
+**Djelomično amortizirano**
 
-**Totalmente ammortizzati**
+**Ukupna amortizacija**
 
-sono di default attivi per visualizzare tutte le tipologie di cespite, possono essere disattivati quelli relativi alle tipologie che si vuole nascondere.
-
- 
+su prema zadanim postavkama aktivna za prikaz svih vrsta osnovnih sredstava, oni koji se odnose na vrste koje se žele sakriti, mogu se deaktivirati.
 
  
+Flag **Definitivno** blokirat će ispis podataka ispisanih zapisa sredstava, također će blokirati brisanje jednog ispisanog retka i ažurirati brojač stranica za referentnu godinu unutar općih parametara knjiženja. Otkazivanje definitivnog/konačnog ispisa može izvršiti ovlašteni korisnik iz obrasca Parametri knjiženja.  
 
-Il flag di **Stampa definitiva** andrà a bloccare i dati di testata delle varie anagrafiche cespiti stampati, andrà a bloccare anche la cancellazione della singola riga stampata e aggiornerà il contatore delle pagine per l'anno di riferimento all'interno dei parametri di contabilità generale. L'annullamento della stampa definitiva può essere eseguita, dall'utente abilitato, dalla maschera dei Parametri d contabilità generale.
+**Fiskalni podaci**: prikazuju dodatne stupce s poreznim podacima koji se odnose na amortizaciju.  
 
-**Dati fiscali**: visualizza ulteriori colonne con i dati fiscali relativi agli ammortamenti.
-
-
-
-**Visualizza intestazione**: se disattivato non riporterà in stampa l'intestazione della stampa permettendo di stampare su moduli prestampati.
+**Prikaži zaglavlje**: ako je deaktivirano, neće prikazati zaglavlje ispisa, što omogućuje ispis na unaprijed ispisanim obrascima.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

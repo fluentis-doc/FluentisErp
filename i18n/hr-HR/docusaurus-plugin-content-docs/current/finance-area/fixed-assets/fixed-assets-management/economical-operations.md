@@ -8,9 +8,6 @@ U kartici 'Ekonomske operacije’ moguće je pohraniti troškove upravljanja imo
 Pogledati i odgovarajući članak u odjeljku  **[Računovodstvena knjiženja](/docs/finance-area/ledger-records/records/ledger-record)**. 
 
 
-
-
-
 | Funkcija | Značenje |
 | --- | --- |
 | Nova ekonomska operacija | Unos nove ekonomske operacije. |

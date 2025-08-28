@@ -1,5 +1,5 @@
 ---
-title: Ripristino
+title: Povrat 
 sidebar_position: 3
 ---
 
@@ -8,12 +8,11 @@ Eseguito il calcolo, le righe spariranno dalla griglia e il risultato sarà visi
 RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
-| Ripristina | Esegue il ripristino del calcolo per le righe selezionate. |
-| Visualizza cespite | Apre in visualizzazione l'anagrafica del cespite il cui ammortamento è selezionato in griglia. |
+| Traži | Potražite popis izvršenih obračuna amortizacije. |
+| Vrati | Vrši poništavanje izračuna za odabrane retke. |
+| Prikaži sredstvo | Otvara matične podatke sredstva čija je amortizacija odabrana u mreži. |
 
 
 

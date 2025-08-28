@@ -1,19 +1,18 @@
 ---
-title: Ammortamento
+title: Amortizacija  
 sidebar_position: 2
 ---
 
-Innanzi tutto è di fondamentale importanza gestire il flag **Operazioni incrementali**: essendo la procedura di ammortamento gestita con logiche differenti, nel caso l'azienda utilizzi l'opzione incrementale per le sue categorie sarà necessario importare questo flag al fine di individuare i dati. Alla base della maschera, invece, va impostato l'anno di rifermento del calcolo: normalmente sarà da modificare al fine di inserire l'anno precedente all'attuale.
+Prije svega, od temeljne je važnosti upravljati flagom **inkrementalnih operacija**: budući da se postupkom amortizacije upravlja drugačijom logikom, ako tvrtka koristi inkrementalnu opciju za svoje kategorije, bit će potrebno uvesti ovu oznaku kako bi se identificirali podaci . U podnožju obrasca, međutim, mora biti postavljena referentna godina izračuna: obično će se morati modificirati kako bi se umetnula godina koja prethodi tekućoj.  
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
+TRAKA IZBORNIKA: predstavlja izbornik predmetnog obrasca, odnosno područje u kojem je moguće provoditi radnje vezane uz proceduru koja se koristi. Popis mogućih funkcija prikazan je u nastavku: 
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca la lista degli ammortamenti da calcolare. |
-| Ammortamento | Esegue il calcolo per le righe selezionate. |
-| Visualizza cespite | Apre in visualizzazione l'anagrafica del cespite il cui ammortamento è selezionato in griglia. |
+| Traži | Potražite popis amortizacije za izračun. |
+| Amortizacija | Izvodi izračun za odabrane retke. |
+| Prikaži sredstvo | Otvara matične podatke sredstva čija je amortizacija odabrana u mreži. |
 
 
 

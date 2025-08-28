@@ -8,9 +8,6 @@ Posljednja standardna kartica je ona koja se odnosi na 'Svojstva osnovnih sredst
 Pogledati članak o **[računovodstvenom evidentiranju](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 
-
-
-
 | Funkcija | Značenje |
 | --- | --- |
 | Novo svojstvo | Umetanje svojstva sredstva. |

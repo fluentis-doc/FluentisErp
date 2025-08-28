@@ -1,17 +1,17 @@
 ---
-title: Riepilogo per tipo operazione
+title: Pregled po tipu radnje  
 sidebar_position: 5
 ---
 
-Da questa form è possibile estrarre le varie tipologie di operazioni relative ai cespiti selezionati nella griglia.
+Iz ovog obrasca moguće je izdvojiti različite vrste operacija koje se odnose na osnovno sredstvo odabranu u prikazu.  
 
-La form si compone di tre parti: 
+Obrazac se sastoji od tri dijela:  
 
-- la zona di filtro in alto (**[per dettagli vedere qui](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**); 
+- područje filtra na vrhu (**[za detalje pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**); 
 
-- la griglia della categorie cespiti che permette, previa attivazione dle flag **Categoria cespite** di selezionare la categoria (o le categorie premendo il tasto Ctrl) desiderata. Se il flag non è attivo verranno estratti i dati per tutte le categorie;
+- pregled kategorije osnovnog sredstva koji omogućuje, nakon aktiviranja flaga **Kategorija osnovnog sredstva** odabir željene kategorije (ili kategorija pritiskom na tipku Ctrl). Ako zastavica nije aktivna, podaci će biti prikazani za sve kategorije;  
 
-- la griglia a destra permette di selezionare la tipologia (o le tipologie premendo il tasto Ctrl) desiderata. Con il flag **Tutte le operazioni** attivo verranno considerate tutte le tipologie.
+- donji prikaz omogućuje odabir željene vrste operacija (ili tipova pritiskom na tipku Ctrl). Uz aktivnog flaga **Sve operacije** sve će se vrste uzeti u obzir.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

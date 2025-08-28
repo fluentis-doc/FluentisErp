@@ -288,13 +288,13 @@ U “RiferimentoNumeroLinea” prijavljeni su samo brojevi reda fakture povezani
 
 Sljedeća pravila moraju se poštovati za upravljanje biljegovinom:
 
-- Nella tabella **[Tipi spese](/docs/configurations/tables/general-settings/expenses-types)** deve essere inserita la spesa di tipo “bollo” con flag sul campo *Bollo* e con il *Valore Bollo* 2 euro 
-- In anagrafica cliente si deve aggiungere una spesa di tipo “bollo” nella sezione **[Spese sconti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/charges-discounts)** selezionando il codice precedentemente creato nella tabella *Tipi spesa* 
-- Per non addebitarle al cliente: nella spesa bollo in anagrafica cliente il valore deve essere 0 
-- Nella tabella **[Società](/docs/configurations/tables/general-settings/company)** compilare il campo *Spese bollo* (2 euro) e *Roof min spese* (77,47 euro) 
-- Nelle fatture di vendita le spese di bollo appaiono in automatico se presenti in anagrafica del cliente 
-- Nella fattura di vendita è possibile cambiare il valore della spesa proposta (Pannello riepiloghi > Agenti/Sconti/Spese), perciò per singola fattura può essere fatta la scelta di addebito o meno (per non addebitare il bollo ma ottenere comuque l’evidenza in fattura è sufficiente inserire la spesa con importo = 0) 
-- Quando viene creato il file XML, se c’è nei riepiloghi fattura una spesa di tipo bollo, viene aggiunta la sezione del bollo virtuale 
+- U tablici **[Vrste troškova](/docs/configurations/tables/general-settings/expenses-types)** trošak tipa “marka” mora biti upisan sa zastavicom u polju *Marka* i s *vrijednošću marke* od 2 eura.  
+- U bazi podataka o kupcima, trošak tipa “markica” mora se dodati u odjeljak **[Troškovi popusta](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/charges-discounts)** odabirom koda koji je prethodno kreiran u tablici *Vrste troškova*.   
+- Kako biste izbjegli njihovo naplatu kupcu: u trošku biljege u registru kupaca vrijednost mora biti 0.  
+- U tablici **[Tvrtka](/docs/configurations/tables/general-settings/company)** ispunite polja *Troškovi marke* (2 eura) i *Min. troškovi roof* (77,47 eura) 
+- Troškovi markica automatski se pojavljuju na prodajnim fakturama ako ih ima u evidenciji kupaca   
+- U prodajnoj fakturi moguće je promijeniti vrijednost predloženog troška (Ploča Sažetak > Agenti/Popusti/Troškovi), stoga se za svaku pojedinačnu fakturu može napraviti izbor hoće li se naplatiti ili ne (kako ne bi naplatili biljegovina, ali ipak pribavite dokaz na fakturi, jednostavno unesite trošak s iznosom = 0)  
+- Kada se kreira XML datoteka, ako u sažetcima faktura postoji trošak tipa biljege, dodaje se odjeljak virtualne biljege  
 
 ```xml
         <DatiBollo>
@@ -303,9 +303,9 @@ Sljedeća pravila moraju se poštovati za upravljanje biljegovinom:
         </DatiBollo> 
 ```
 
-- Se nei riepiloghi della fattura è presente la spesa di tipo bollo con il valore diverso da 0 (caso di addebito in fattura), nell’XML viene aggiunta una sezione dettaglio linee con numero linea l’ultimo della fattura + 1 e il valore del bollo. 
+- Ako u sažetcima faktura postoji trošak biljegine s vrijednošću koja nije 0 (slučaj zaduženja na fakturi), odjeljak s pojedinostima retka dodaje se u XML s brojem zadnjeg retka fakture + 1 i vrijednošću žig.  
  
-Questa sezione viene aggiunta per il controllo dei totali fattura 
+Ovaj odjeljak je dodan za provjeru ukupnih iznosa računa  
 
 ```xml
     <NumeroLinea>2</NumeroLinea>
@@ -318,9 +318,9 @@ Questa sezione viene aggiunta per il controllo dei totali fattura
     <Natura>N3</Natura>
 ```
 
-### Codici Cig e Cup (Tag 2.1.2.6 CodiceCUP e 2.1.2.7 CodiceCIG)
+### Kodovi Cig i Cup (oznaka 2.1.2.6 CodiceCUP i 2.1.2.7 CodiceCIG) 
  
-Nel tag dei dati ordine di acquisto sono contenuti il CIG e CUP, per questo per poter riportare questi 2 codici la fattura deve riferirsi ad un ordine cliente di Fluentis oppure deve essere specificato il rif. Ordine nell’omonimo edit presente nel tab Dati Articolo del tab Articoli della fattura. 
+Podatkovna oznaka narudžbenice sadrži CIG i CUP, zbog čega se za prijavu ova 2 koda faktura mora odnositi na narudžbu korisnika Fluentisa ili mora biti naveden ref. Narudžba u istoimenom uređivanju prisutna u kartici Podaci stavke kartice Stavke na fakturi.  
 
     2.1.2 \<DatiOrdineAcquisto> 
     2.1.2.1 \<RiferimentoNumeroLinea> 
@@ -329,32 +329,28 @@ Nel tag dei dati ordine di acquisto sono contenuti il CIG e CUP, per questo per 
     2.1.2.6 \<CodiceCUP> 
     2.1.2.7 \<CodiceCIG>
 
-### Decimali da utilizzare per i campi numerici 
-Per sapere quanti decimali massimi si possono specificare per ogni campo numerico fare riferimento alle specifiche tecniche per la fattura elettronica dell’Agenzia delle Entrate:
+### Decimale koje se koriste za numerička polja 
+Kako biste saznali koliko se maksimalnih decimala može navesti za svako numeričko polje, pogledajte tehničke specifikacije za elektronički račun Porezne uprave: 
 
-Come da specifiche: 
-- quantità articolo: decimali da 2 a 8 
-- prezzo unitario: decimali da 2 a 8 
-- percentuale di sconto: 2 decimali
+Prema specifikacijama: 
+- količina artikla: decimale od 2 do 8  
+- jedinična cijena: decimale od 2 do 8  
+- postotak popusta: 2 decimale  
  
-### Ritenuta d’acconto e Enasarco (tag 2.1.1.5 DatiRitenuta) 
+### Porez po odbitku i Enasarco (oznaka 2.1.1.5 DatiRitenuta)  
 
-Per la gestione della ritenuta d’acconto: 
+Za upravljanje porezom po odbitku:  
 
-- in anagrafica cliente attivare il flag **Ritenuta d'acconto** nel tab **informazioni fiscali** e specificare qual è il tipo di ritenuta da utilizzare tramite la combo box **Tipo ritenuta**
-- nella tabella **Tipi ritenute** codificare correttamente il codice per la fatturazione elettronica (RT01, RT02) 
-- compilare la fattura come di consueto, il documento reperisce in automatico l'assoggettamento alla ritenuta per le righe sulle quali è possibile fare il calcolo e in automatico calcola l'importo della ritenuta 
-- creare il file XML che riporta l'indicazione della ritenuta e, per ogni riga, il tag "Ritenuta SI" se la riga è assoggettata 
+- u bazi podataka o kupcima aktivirajte flag **Porez po odbitku** u kartici **fiskalnih informacija** i navedite vrstu poreza po odbitku koji će se koristiti putem kombiniranog okvira **Vrsta poreza** po odbitku.   
+- u tablici **Vrste poreza** po odbitku ispravno kodirajte šifru za elektroničko fakturiranje (RT01, RT02).   
+- ispunite račun kao i obično, dokument automatski pronalazi obvezu poreza po odbitku za retke na kojima je moguće napraviti obračun i automatski izračunava iznos poreza po odbitku.   
+- kreirajte XML datoteku koja sadrži naznaku poreza po odbitku i za svaki redak oznaku "Porez po odbitku DA" ako je red predmet.     
 
-Per quanto riguarda l’Enasarco, con la versione 1.6 dello schema della fatturazione elettronica (in vigore dal 01/10/2020) è stato definito che la sezione 2.1.1.5, dedicata inizialmente alle sole ritenute, ora possa essere replicata N volte per indicare anche l’Enasarco, al quale è stato assegnato il codice RT04. Fluentis, se la ritenuta 
-inserita in testata ha le impostazioni enasarco, valorizza nel documento anche il conteggio dell’enasarco, e valorizza come richiesto la sezione 2.1.1.5
+Što se tiče Enasarca, s verzijom 1.6 sheme elektroničkog fakturiranja (na snazi od 01.10.2020.) definirano je da se odjeljak 2.1.1.5, u početku posvećen samo zadržavanjima, sada može replicirati N puta kako bi se također naznačio Enasarco, za kojoj je dodijeljena šifra RT04. Fluentis, ako porez po odbitku umetnut u zaglavlje ima postavke enasarco, također vrednuje broj enasarco u dokumentu i valorizira odjeljak 2.1.1.5 prema potrebi  
 
+:::danger[PAŽNJA]
+RAČUNOVODSTVO: aktivna faktura povezana s nastalim porezom po odbitku i Enasarco doprinosom bit će obračunata automatskim generiranjem ispravnog računovodstvenog unosa koji poništava porez po odbitku i doprinos iz kredita kupcu. OBRATITE PAŽNJU DA JE U KONFIGURACIJI POVEZANE VRSTE ZADRŽANJA, POLJE **Vrste dospijeća** postavljeno na *Neto stavke*, inače će računovodstveni unos i izračun otvorenih stavki biti netočni i nedostajati u prijenosu poreza po odbitku.  
 
-:::danger[Attenzione]
-CONTABILIZZAZIONE: la fattura attiva collegata alla ritenuta d'acconto subita ed al contributo enasarco sarà contabilizzata generando automaticamente la scrittura contabile corretta che storna dal credito verso il cliente la ritenuta ed il contributo.
-PRESTARE ATTENZIONE CHE NELLA CONFIGURAZIONE DEL TIPO RITENUTA ASSOCIATO IL CAMPO **Tipi Partite** sia impostato su *Partite nette,* altrimenti la scrittura contabile ed il calcolo partite aperte risulteranno errati e mancanti del giroconto delle ritenuta.
-:::
-
-:::tip **Vedere anche**
-Per la gestione del riaddebito **contributo cassa previdenza** nella fattura elettronica [**vedere qui**](/docs/configurations/tables/general-settings/expenses-types)
+:::tip **VIDI TAKOĐER**
+Za upravljanje povratom **doprinosa za socijalno osiguranje** u elektroničkom računu pogledajte [**ovdje**](/docs/configurations/tables/general-settings/expenses-types)
 :::

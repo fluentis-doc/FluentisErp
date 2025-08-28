@@ -1,9 +1,9 @@
 ---
-title: Ammortamenti oggettivi
+title: Ciljana amortizacija   
 sidebar_position: 1
 ---
 
-In questa maschera è possibile procedere al calcolo massivo degli ammortamenti oggettivi su tutti i cespiti facenti capo a categorie che li gestiscono. Tali ammortamenti non possono essere contabilizzati.
+U ovom obrascu moguće je pristupiti masovnom obračunu objektivne amortizacije na sva osnovna sredstva koja pripadaju kategorijama koje njima upravljaju. Takva se amortizacija ne može obračunati.  
 
 
 

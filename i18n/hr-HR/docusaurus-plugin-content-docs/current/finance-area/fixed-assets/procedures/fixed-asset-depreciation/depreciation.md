@@ -1,30 +1,30 @@
 ---
-title: Ammortamento
+title: Amortizacija
 sidebar_position: 2
 ---
 
-Innanzitutto è di fondamentale importanza gestire il flag **Operazioni incrementali**: essendo la procedura di ammortamento gestita con logiche differenti, nel caso l'azienda utilizzi l'opzione incrementale per le sue categorie sarà necessario importare questo flag al fine di individuare i dati. 
+Prije svega, od temeljne je važnosti upravljati flagom **Operazioni incrementali**. Budući da se postupkom amortizacije upravlja drugačijom logikom, ako poduzeće koristi inkrementalnu opciju za svoje kategorije, bit će potrebno aktivirati ovu oznaku kako bi se identificirali podaci.
 
-Pertanto, se sono presenti sia categorie cespiti con l'opzione incrementale, sia categorie senza l'opzione, l'ammortamento dei cespiti dovrà essere effettutato in due tempi seguendo la ricerca con e senza il flag in commento.
+Stoga, ako postoje obje kategorije osnovnog sredstva s inkrementalnom opcijom i kategorije bez te opcije, amortizacija osnovnog sredstva mora se provesti u dvije faze nakon pretraživanja sa i bez tog flaga.
 
 ![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image01.png)
 
-Alla base della maschera, invece, va impostato l'anno di rifermento del calcolo: normalmente sarà da modificare al fine di inserire l'anno precedente all'attuale. Non è consentito il calcolo degli ammortamenti dell'anno X quando non siano stati contabilizzati gli ammortamenti dell'anno X-1.
+U podnožju obrasca, međutim, mora biti postavljena referentna godina izračuna: obično će se morati modificirati kako bi se umetnula godina koja prethodi tekućoj. Obračun amortizacije za godinu X nije dopušten ako amortizacija za godinu X-1 nije obračunata.  
 
 ![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image02.png)
 
- Una volta effettuata la ricerca dei dati vediamo che è possibile, riga per riga, andare a forzare il numero di giorni di applicazione così come la percentuale d'ammortamento: si consiglia, in realtà, di effettuare il calcolo di questi casi particolari direttamente all'interno della singola scheda cespite oppure di modificare direttamente la tabella delle categorie cespiti al fine di effettuare un calcolo veloce con una selezione totale delle righe. 
+ Nakon što se izvrši pretraživanje podataka, moguće je, redak po redak, unijeti broj dana primjene kao i postotak amortizacije. U stvarnosti, preporučljivo je izvršiti izračun ovih posebnih slučajeva izravno unutar pojedinačne kartice osnovnog sredstva kako bi se izvršio brzi izračun s ukupnim odabirom redaka.   
 
-Una opzione alternativa da utilizzare, se si vogliono utilizzare percentuali differenti fra i vari cespiti, può essere la definizione del **[parametro del modulo cespiti ](/docs/configurations/parameters/finance/fixed-assets-parameters)** denominato **Percentuale su singolo cespite**, che consente di definire in testata di ogni cespite una percentuale di ammortamento da utilizzare.
+Alternativna opcija koja se može koristiti, ako se žele koristiti različiti postoci između različitih sredstava, može se postaviti definicija **[parametra modula osnovnih sredstava](/docs/configurations/parameters/finance/fixed-assets-parameters)** pod nazivom **Postotak pojedinačne imovine**, što omogućuje da se definira postotak amortizacije koji će se koristiti definiran za svako sredstvo.  
 
 ![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image03.png)
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca la lista degli ammortamenti da calcolare. |
-| Ammortamento | Esegue il calcolo per le righe selezionate. |
+| Traži | Traži popis amortizacije za izračun. |
+| Amortizacija | Izvodi izračun za odabrane retke. |
 
 
 

@@ -1,35 +1,32 @@
 ---
-title: Schede cespiti
+title: Pregled osnovnih sredstava
 sidebar_position: 1
 ---
 
-I report di questa maschera consentono di visualizzare i dati cespiti scheda per scheda. 
+Izvješća u ovom obrascu omogućuju pregled podataka o osnovnog sredstva karticu po karticu.   
 
-E' presente sia la classica scheda cespite, sia la scheda di manutenzione contenente i dati relativi.
+Postoji klasična lista/knjiga osnovnih sredstava i shema održavanja s relevantnim podacima.  
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image01.png)
 
  
 
-Le schede sono stampate secondo i criteri di ordinamento definiti alla base della maschera.
-
+Kartice se tiskaju prema kriterijima razvrstavanja definiranim u podnožju obrasca.  
  
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image02.png)
 
-E' possibile variarne la priorità selezionando il criterio ed utilizzando i comandi posti nella ribbon bar. ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image03.png)
+Prioritet je moguće promijeniti odabirom kriterija i korištenjem naredbi koje se nalaze u traci izbornika. ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image03.png)
 
-La priorità di lettura dei criteri va dall'alto in basso.
+Prioritet čitanja kriterija je odozgo prema dolje.  
 
-(Nell'immagine l'ordinamento avverrà prima per categoria, a parità di categoria per tipo di proprietà, a parità di tipo proprietà in base al precodice ed al numero ecc...)
+(Sortiranje će se izvršiti prvo po kategoriji pa s istom kategorijom po vrsti svojstva, s istom vrstom svojstva na temelju predšifre i broja itd...)
+ 
+Flag **Fiskalni podaci** prikazuje dodatne stupce koji sadrže podatke koji se odnose na poreznu amortizaciju.  
 
- 
+Ostala polja filtera su ona uobičajena koja su već obrađena za druge ispise i druge obrasce u području osnovnih sredstava.  
 
-Il flag **dati fiscali** fa comparire ulteriori colonne contenenti i dati relativi agli ammortamenti fiscali.
-
-Gli altri campi di filtro sono i consueti già trattati per le altre stampe e le altre form dell'area cespiti.
-
-Per il funzionamento della griglia di selezione categoria cespiti **[vedere qui.](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**
+Kako funkcionira pregled za odabir kategorije osnovnog sredstva, **[ pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

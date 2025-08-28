@@ -1,15 +1,13 @@
 ---
-title: Acquisti cespiti annuali
+title: Godišnja nabava osnovnih sredstava
 sidebar_position: 2
 ---
 
- 
+Izvješće služi za posebno izdvajanje operacija nabave i povećanja iz kartica osnovnog sredstva za postavljenu referentnu godinu.
 
-Il report è dedicato all'estrazione specifica delle operazioni di acquisto e di incremento delle schede cespiti per l'anno di riferimento impostato.
+Prilikom otvaranja obrasca moguće je u gornjem dijelu postaviti neke parametre filtera uključujući referentnu godinu nabave i broj sredstva (od br. do br.).
 
-All'apertura della maschera è possibile impostare, nella parte alta, alcuni parametri di filtro tra cui l'anno di riferimento ed il numero della scheda cespite (da nr. a nr.).
-
-Attivando il flag **Categoria Cespite**, è possibile selezionare, nella griglia centrale, la categoria (o le categorie utilizzando il tasto Ctrl) per le quali estrarre i dati.
+Aktiviranjem flaga **Kategorija osnovnog sredstva** moguće je u središnjem pregledu odabrati kategoriju (ili kategorije pomoću tipke Ctrl) za koje se želi izdvojiti podatke.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase/image01.png)
 
