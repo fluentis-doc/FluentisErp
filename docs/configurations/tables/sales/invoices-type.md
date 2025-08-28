@@ -67,7 +67,7 @@ Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima
 
 **Calcola provvigioni**: se attivo, le fatture appartenenti a questa tipologia, verranno conteggiate nel il calcolo delle provvigioni agenti;
 
-**Scollega DDT**: se attivo, è possibile scaricare da magazzino anche le fatture differite (Normalmente lo scarico magazzino avviene tramite DDT);
+**Scollega DDT**: se attivo, e in presenza di una fattura di tipo Immediata, consente di effettuare lo scarico sia del DDT che della fattura che lo valorizza. Questa opzione viene generalmente utilizzata quando è necessario movimentare la merce prima dello scarico effettivo del documento. In tali casi, nel DDT si indica una causale di scarico con contropartita di carico (per spostare la merce in un altro magazzino) e successivamente si utilizza la fattura per scaricare definitivamente la merce dal secondo magazzino;   
 
 **Non evade Picking**: se attivo, non farà evadere il picking qualora venga generata una fattura;
 
