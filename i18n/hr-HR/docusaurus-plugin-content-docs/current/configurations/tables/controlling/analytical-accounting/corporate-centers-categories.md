@@ -1,38 +1,39 @@
 ---
-title: Categorie centri aziendali
+title: Kategorije centara tvrtke 
 sidebar_position: 3
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Categorie centri aziendali**
+:::note STAZA
+**Tablice > Kontroling > Troškovno računovodstvo > Kategorije centara tvrtke**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Napomena:
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).
 
 :::
 
 ---
 
-Questa tabella rappresenta un' "etichetta" associata ai centri aziendali per poterli gestire in gruppi logici omogenei tra loro.
+Ova tablica predstavlja "oznaku" povezanu s centrima poduzeća kako bi se njima moglo upravljati u logičkim grupama koje su međusobno homogene.
 
 ![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers-categories.png)
 
-La scelta delle categorie e lo "stile" con cui può essere popolata la presente tabella **può dipendere da molti fattori** e da varie **teorie** sul controllo di gestione.
-Pertanto possiamo citare <u>solo qualche esempio</u> per una migliore comprensione.
+Izbor kategorija i "stil" kojim se ova tablica može popuniti **može ovisiti o mnogim faktorima** i različitim **teorijama** o upravljačkoj kontroli.
+Stoga možemo navesti <u>samo nekoliko primjera</u> radi boljeg razumijevanja.
 
-I centri *Virtuali*  sono in genere associati a conti ad attribuzione diretta sulla commessa (es. i materiali) e ad attribuzione indiretta.
-Quelli ad attribuzione indiretta vengono presi in carico dalla contabilità industriale (che fa parte della contabilità direzionale) e poi ribaltati sulle commesse tramite i cost driver.
+*Virtualni* centri općenito su povezani s računima s izravnim pripisivanjem narudžbe (npr. materijali) i neizravnim pripisivanjem.
 
-I *Centri di comodo* sono utilizzati per attribuire i costi generali residuali, straordinari o comunque non caratteristici (es. plus-minusvalenze ecc...).
+One s neizravnim pripisivanjem zbrinjava industrijsko računovodstvo (koje je dio upravljačkog računovodstva), a zatim ih preokreće u narudžbe putem pokretača troškova.
+
+*Pogodni centri* koriste se za pripisivanje preostalih, izvanrednih ili na drugi način neuobičajenih općih troškova (npr. kapitalni dobici-gubici itd...). 
 
 
 
 ![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers-categories-example.png)
 
 
-:::tip Nota
+:::tip BILJEŠKA 
 
 
-È un campo OBBLIGATORIO. NON SI POTRA’ SALVARE UN CENTRO AZIENDALE SENZA LA SUA CATEGORIA.
+To je OBAVEZNO polje. NE MOŽETE SPREMITI KORPORATIVNI CENTAR BEZ NJEGOVE KATEGORIJE. 
 
 :::
