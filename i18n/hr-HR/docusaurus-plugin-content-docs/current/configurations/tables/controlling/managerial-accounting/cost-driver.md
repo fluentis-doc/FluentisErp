@@ -1,111 +1,132 @@
 ---
-title: Cost Driver
+title: Nositelji troškova
 sidebar position: 6
 ---
 
-Il nocciolo fondamentale di tutte quelle che sono le attribuzioni e le reversioni che abbiamo da un centro all’altro per ottenere, il totale de costi piuttosto che i risultati, assegnare i costi alle commesse. Tutte le logiche le troviamo all'interno di questa tabella. 
+Unutar tablice **nositelja troškova (Cost drivera)** možemo kodirati sve logike preraspodjele između centara.
+Pogledajmo detaljno pojedinačna dostupna svojstva.
+
+:::tip Napomena
+Tablica nositelja troškova dostupna je, u *pojednostavljenoj* verziji, i za tvrtke koje nemaju aktiviran modul *kontrolinga*.
+U tom slučaju — koji ovdje ne opisujemo detaljno jer je od sporednog interesa — nositelj troška sadrži samo šifru i opis, te popis odredišnih centara izraženih isključivo u postocima (koji se opcionalno mogu mijenjati po poslovnim godinama). Nakon toga, nositelj troška mora se povezati s poslovnim centrima koje treba raspodijeliti prema toj postotnoj logici, kroz postupak **Knjiženja po nositelju troška** koji se nalazi u modulu **Međugodišnja zatvaranja**. 
+
+Primjerice, možemo definirati kriterij „kvadratura skladišta X“, koji predviđa raspodjelu 60% – 40% na dva proizvodna centra, a zatim taj nositelj povezati s centrom „Skladište X“, u kojem su objedinjeni svi pripadajući troškovi, kako bi se raspodijelili na odredišne proizvodne centre.
+:::
+
+## Opći podaci
+
+- **Šifra** pravila koje unosimo. Unutar svakog ciklusa obrade, **FluentisERP** evaluira nositelje troškova prema redoslijedu šifri.
+
+:::tip Napomena
+Za davanje logike kodiranja preporučujemo:
+    -   A: kao ATRIBUCIJE – svi zapisi s oznakom „A“ odnose se na generički centar „VRIJEDNOSTI S ATRIBUCIJOM U KONTROLINGU“, što je poslovni centar koji ima označenu opciju „KONTI ZA PONOVNU DODJELU“. Prvi korak obrade u kontrolingu je dodjela tih generičkih konta koje računovodstvo ne može precizno raspodijeliti, ili onih koji se dodjeljuju prema fleksibilnijim logikama od standardnih računovodstvenih pravila.
+    -   R: za PRERASPODJELE – kada se vrijednosti jednog centra raspoređuju na druge centre.
+    -   P: kao PROJEKTI – imajte na umu da se obrade vezane uz projekte logički primjenjuju na samom kraju procesa, jer se njima projektima dodjeljuju neizravni troškovi već obračunati u „industrijskoj/direkcijskoj“ dimenziji.
+:::
+
+- **OPIS** nositelja troška, koji može biti manje ili više detaljan, ovisno o tome što se s njim upravlja.
+
+- [**PODRUČJE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas): kod nositelja troška (Cost Drivera) *područje je uvijek obavezno*. Možemo imati specifična pravila za određena područja (primjerice za simulacije), dok će opća pravila biti vezana uz generičko područje iz skupa pravila.
+
+- **BROJ CIKLUSA**: obrada kontrolinga u **FluentisERP-u** mora slijediti logičan redoslijed. Prvo se obračunavaju fizički pokreti u razdoblju, zatim amortizacija dugotrajne imovine, a potom slijedi primjena nositelja troška. Najprije se započinje s atribucijama označenima brojem ciklusa 1 (jer se najprije mora isprazniti generički centar za ponovnu dodjelu), zatim se nastavlja s preraspodjelama prema njihovom redoslijedu ciklusa, a na kraju, za one koji koriste dimenziju projekta ili naloga, slijede driveri zadnjeg ciklusa — prijenosi troškova s direkcijske na projektne dimenzije.
+
+- **KONTO/PODKONTO**: ovaj parametar povezuje nositelja troška s kombinacijom podkonta i centra. U praksi, uzima se ukupni promet tog konta i pripadajućeg centra, a zatim nositelj troška određuje kamo i kako se ti iznosi redistribuiraju prema odredišnim centrima u donjoj lijevoj tablici. Konto/podkonto je obavezno polje samo za nositelje troška povezane s generičkim centrom za ponovnu dodjelu, dok je za sve ostale opcionalno.
+
+- [**DIMENZIJA ODREDIŠNIH CENTARA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension); ova dimenzija služi kao filtar za odredišne centre kojima će se dodijeliti vrijednosti iz donje lijeve tablice. U **FluentisERP-u** moguće je definirati drivere koji prenose ili kopiraju podatke iz jedne dimenzije centara u drugu. Tipičan primjer je dodjela direktnih i indirektnih troškova dimenziji namijenjenoj analizi projekata.
+
+- **DATUM POČETKA** i **DATUM ZAVRŠETKA**: u ova polja unosi se vremenski raspon tijekom kojeg vrijedi nositelj troška.
+Nije dopušteno da se dva pravila iste zone, za isti centar (i konto, ako je specificiran), vremenski preklapaju.
+Ako se tijekom vremena pokaže potreba za izmjenom pravila, postojeće se može zatvoriti na određeni datum, a novo primijeniti od sljedećeg razdoblja.
+
+## TIPOVI DISTRIBUCIJE
+
+- **TIPOVI DISTRIBUCIJE**: definira način na koji se provodi atribucija ili preraspodjela (ribaltamento).
+Dostupni su kodovi od 01 do 09 za atribucije; dodaju se još 3 koda za preraspodjele između centara, kada je moguće koristiti i tarife centra; dok za dimenziju odredišta projekti/nalozi postoji 6 posebnih tipova distribucije. U nastavku su detalji:
+    - Tipovi distribucije za atribucije i preraspodjele
+        - **01 Postotak**: il dato di origine, periodo per periodo, sarà ripartito in base alla percentuale del singolo centro destinatario
+        - **02 Ukupno potražuje**: izvorni podatak, razdoblje po razdoblje, raspodjeljuje se prema unaprijed definiranim postocima svakog odredišnog centra.
+        - **03 Ukupno duguje**: isto kao prethodno, ali na temelju ukupnog duguje.
+        - **04 Marže**: kao i prethodni modeli, ali se izračun temelji na razlici potražuje-duguje.
+        - **05 Na odabranom podkontu**: postotak se izračunava na temelju razlike potražuje-duguje (u apsolutnim vrijednostima) odredišnih centara, ali filtrirano prema popisu podkonta u desnoj tablici.
+        - **06 Na odabranom kontu**: postotak se računa kao i gore, ali filtriran prema popisu *konta* u desnoj tablici.
+        - **07 Isključujući odabrane podkonte**: postotak se računa kao kod modela 05, ali isključuje navedene podkonte iz desne tablice.
+        - **08 AIsključujući odabrane konte**: postotak se računa kao kod modela 06, ali isključuje navedene konte iz desne tablice.
+        - **09 Na fizičkoj veličini**: postotak se računa na temelju količina (jedinice mjere navedene u odgovarajućem polju) odredišnih centara u odnosu na ukupan zbroj količina svih centara.
+    - Tipovi distribucije specifični za preraspodjele između centara
+        - **10 Reverzija na proizvodnju po standardnoj tarifi**: troškovi jednog centra raspoređuju se na više centara na temelju fizičkih tokova između izvornog centra (povezanog s driverom) i odredišnih centara. Broj sati izvornog centra jednak je broju sati odredišnih centara. Izvorni centar se ne prazni u potpunosti, te zadržava određenu preostalu vrijednost.
+        - **11 Direktna reverzija po standardnoj tarifi**: omogućuje raspodjelu troškova centra na više centara prema standardnoj tarifi izvornog centra i fizičkim tokovima u odredišnim centrima. Dodijeljeni iznos računa se kao umnožak standardne tarife izvornog centra i vrijednosti fizičke veličine svakog odredišnog centra. Izvorni centar također zadržava preostalu vrijednost.
+        - **12 RReverzija na proizvodnju po izračunatoj tarifi**: raspodjela troškova jednog centra na više centara temeljem izračunate tarife izvornog centra i fizičkih tokova. Broj sati izvornog centra jednak je broju sati odredišnih centara. Dodijeljeni iznos računa se kao izračunata tarifa izvornog centra pomnožena s fizičkom veličinom svakog odredišnog centra. Ovdje se izvorni centar potpuno prazni, te nema preostale vrijednosti.
+    - Tipovi distribucije specifični za dimenziju projekata/naloga
+        - **13 Reverzija na proizvodnju za projekt**
+        - **14 Reverzija marži za projekt**
+        - **15 Reverzija specifičnih amortizacija za projekt**
+        - **16 Reverzija na prihode projekta**
+        - **17 Reverzija na troškove projekta**
+        - **18 Reverzija na industrijski trošak projekta**
 
 
-![](/img/it-it/controlling/cost-driver.png)
+- [**JEDINICA MJERE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units): ovo se polje aktivira za tipove distribucije 09 - 10 - 11 - 12 i služi za odabir jedinice mjere koja će se koristiti u analizi fizičkih kretanja.
 
-***ESEMPIO DELLE ATTRIBUZIONI***	
+## DRUGA POLJA
 
-**CODICE:** codice della regola che stiamo inserendo. 
+- **POGREŠKA U OBRADI**: u ovom polju određujemo kako će se sustav ponašati u slučajevima kada ne postoje potrebni podaci za primjenu pravila. Opcije su:
+    - *BLOKIRAJ*: proces obrade se zaustavlja ako nema potrebnih podataka za primjenu nositelja troška.
+    - *OSTATAK VRIJEDNOSTI*: ova opcija nije dostupna za atribucije, već samo za preraspodjele, jer u izvornom centru ostavlja dio vrijednosti koji nije mogao biti raspodijeljen na odredišne centre. Generički centar uvijek mora biti prazan, pa se ova opcija ne koristi kod atribucija.
+    - *PROSJEK POSTOJEĆIH VRIJEDNOSTI*, kada u određenom razdoblju nema vrijednosti, sustav raspodjeljuje podatke na temelju prosjeka iz drugih razdoblja u tekućoj godini obrade.
 
-**Esempi di codici della regola**
+:::tip Napomena
+Ova opcija može biti korisna za sprječavanje prekida obrade u mjesecima poput kolovoza, kada količine ili vrijednosti za primjenu nositelja troška mogu biti nula zbog kolektivnog godišnjeg odmora.
+:::
 
-**A: ATTRIBUZIONI**. Tutte le A sono tutte quelle con il CENTRO AZIENDALE che ha il FLAG su CONTI DA RIASSEGNARE. La logica di caricamento dei cost driver, parte dal definire come attribuire questi conti generici che contabilità non sa gestire, oppure che vanno attribuiti con logiche più variabili rispetto alle logiche che un contabile conosce.
+- **VRIJEDNOSTI ZA UPOTREBU**: određuje koje podatke treba uzeti u obzir za odredišne centre. Dostupne opcije:
+    - SVE – čitaju se svi dodijeljeni pokreti (do ciklusa koji se trenutno obrađuje).
+    - SAMO IZVORNI REDOVI – uzimaju se samo podaci iz početnih atribucija.
 
-**C: COMMESSE** Bisogna tener conto che le elaborazioni che riguardano le commesse, quando la dimensione di analisi è quella delle commesse, questi sono driver che verranno applicati alla fine di tutto. Per elaborare le commesse devo aver già elaborato tutta la dimensione standard industriale, per potergli attribuire i miei costi generali devo averli calcolati, altrimenti non so come ripartirlo
+:::tip Napomena
+Kod preraspodjela ovo polje određuje treba li u obzir uzeti i vrijednosti koje su odredišni centri primili kroz preraspodjele iz drugih centara. Dakle, ovo se odnosi samo na tipove distribucije od 02 do 08, dok je za tipove temeljene na tarifama ova postavka nebitna.
+:::
 
-**R: REVERSIONI** quando da un centro vado in un altro centro.Inizio a fare i passaaggi per ribaltare da un centro all’altro. 
+- **OZNAKA STORNA**: definira hoće li se podaci iz izvorne dimenzije zadržati ili u potpunosti *premjestiti* u dimenziju odredišta.
 
-***CAMPI TABELLA COST DRIVER***
+:::tip Napomena
+Ako je nositelj troška povezan s dimenzijom projekata/naloga, vrijednost se mora zadržati i u izvornoj (direkcijskoj) dimenziji. U suprotnom, moglo bi doći do nedostataka u iskazivanju troškova te netočnosti u izvještajima.
+:::
 
-***DESCRIZIONE***: inserire una descrizione 
+- **PO DIVIZIJI**: omogućuje filtriranje podataka za raspodjelu prema diviziji specificiranoj u sljedećem polju.
 
-***AREA/DESCRIZIONE***. richiama la tabella AREA 
+:::tip Napomena
+Ako poduzeće posluje u više divizija i aktiviran je *opći parametar za upravljanje centrima po divizijama*, moguće je definirati drivere koji omogućuju prijenos troškova ili prihoda iz jedne divizije u drugu.
+:::
 
-***NUMERO CICLO:*** Fluentis ha un ordine logico nella quale vengono elaborati i dati. Parte dai movimenti fisici, poi ci sono gli ammortamenti dei cespiti e successivamente parte con le attribuzioni.
-In prima istanza deve assegnare tutti i centri generici. inizia con le attribuzioni (nell'ordine del numero ciclo) e successivamente passa alle reversioni. Anche qui è fondamentale capire con che ordine logico vengono settati i dati poichè dovrò verificare la bontà dei dati del resoconto finale. 
+## POSEBNOSTI ZA DIMENZIJU PROJEKT/NALOG
 
-***CONTO/SOTTOCONTO:**  per ordine di attribuzione. Prende il movimento parcheggiato nel centro ausiliare a vado a dire come andarli a riassegnare. 
+Sada prelazimo na polja povezana s driverima za projekte/naloge. Prvo objašnjavamo posljednja tri polja u tablici.
 
- 
+- **TIP MJERENJA**: u ovom polju postavlja se indeks troška (tarifa) koji će se koristiti za vrednovanje centra povezanog s nositeljem troška. Dostupne su sljedeće opcije:
+    - *UM1*: koristi se indeks povezan s prvom jedinicom mjere centra
+    - *UM2*: koristi se indeks povezan s drugom jedinicom mjere centra
+    - *%*: koristi se postotni indeks centra
 
-***DATA INIZIO, DATA FINE DELLA REGOLA:*** è una regola generale multiambiente e qui dico da che data a che data vale. Bisogna stare attenti al fatto che se io ho l’area mutiambiente non posso avere lo stesso sottoconto con lo stesso range di date. 
+- **PODRUČJE ZA INDEKS**: ovdje definiramo iz kojeg područja treba preuzeti prethodno navedeni indeks troška. Drugim riječima, za dimenziju projekata možemo odabrati specifično područje iz kojeg će se čitati indeksi, neovisno o području odabranom za *obračun stvarnih podataka projekta*.
 
-***Nei Cost Driver l'indicazione dell'AREA È SEMPRE OBBLIGATORIA.*** 
+- **TIP IZRAČUNA INDEKSA**: određuje kako će se izračunati indeks, s dostupnim opcijama:
+    - *Mjesec*: koristi se indeks za pojedini mjesec
+    - *Do razdoblja*: koristi se indeks izračunat na temelju kumulativnih podataka od početka godine koja se obrađuje
+    - *Tekuća godina*: koristi se indeks izračunat na temelju kumulativnih podataka iz 12 mjeseci koji prethode razdoblju obrade
+    - *Godina*: koristi se indeks izračunat na temelju kumulativnih podataka iz svih dostupnih mjeseci u godini
+    - *Standardna tarifa*: koristi se standardna tarifa centra, važeća za obrađivano razdoblje
 
-***TIPO DI DISTRIBUZIONE:*** andiamo ad indicare come è gestita l’attribuzione. Possiamo scegliere, ad esempio,la tipologia "grandezza fisica", ma abbiamo anche altre tipologie di distribuzione. 
+- **TIPOVI DISTRIBUCIJE** Prvo, driver uvijek predviđa odredišne centre, ali za dimenziju projekata imamo ne samo ove „projektne“ centre već i specifični projekt povezan s njima. Odnosi se na mogućnost da postoji jedini projektni centar (putem opcije Centar zadan za projekte), koji će stoga biti jedini upisan kao odredište drivera, umjesto korištenja tablice Povezivanje centara/naloga putem koje se može povezati lista kodova centara ovisno o određenim karakteristikama projekata. Ova posljednja mogućnost potencijalno omogućuje različite drivere za različite vrste projekata (jer, na primjer, postoje različite strukture troškova ovisno o tipu projekta). U detalje, tipovi distribucije su:
 
- 
-Quando inserisco la grandezza fisica, si attivano nelle colonne sulla destra 
+    - **13 Preraspodjela na proizvodnju po projektu**: pročitat će se indeks troška (prema UM1 ili UM2, području i odabranom tipu izračuna) centra drivera i primijeniti ga na odrađene sate centra na projektima/nalozima povezanima s centrima u donjoj lijevoj tablici.
+    - **14 Preraspodjela marži po projektu**: pročitat će se postotni indeks troška centra drivera i primijeniti ga na marže projekata/naloga povezanih s centrima u donjoj lijevoj tablici.
+    - **15 Preraspodjela specifičnih amortizacija po projektu**: tražit će se jedinični troškovi tehničkih amortizacija u kontrolingu pojedinog sredstva i množiti ih s količinama koje je sredstvo proizvelo za pojedini projekt/nalog povezan s centrima u donjoj lijevoj tablici.
+    - **16 Preraspodjela na prihode projekta**: pročitat će se postotni indeks troška centra drivera i primijeniti ga na prihode projekata/naloga povezanih s centrima u donjoj lijevoj tablici, uz mogućnost filtriranja podataka po kontima navedenima u desnoj tablici.
+    - **17 Preraspodjela na troškove projekta**: pročitat će se postotni indeks troška centra drivera i primijeniti ga na troškove projekata/naloga povezanih s centrima u donjoj lijevoj tablici, uz mogućnost filtriranja podataka po kontima navedenima u desnoj tablici.
+    - **18 Preraspodjela na industrijski trošak projekta**: u ovom slučaju postotni indeks primijenit će se na izračunati industrijski trošak, projekt po projekt, koristeći tipove *izvora podataka* konfigurirane u desnoj tablici. Moguće je odabrati *Materijale*, *Unutarnje obrade*, *Vanjske obrade* i eventualno iznose određenih podkonta preuzetih iz izvora *Računovodstvo*.
 
-***UNITA’ DI MISURA:*** attivazione dell’unità di misura;(i MQ ad esempio)
-
-***ESEMPIO***
-
-Nella tabella dei movimenti fisici, registro i metri quadri dei miei centri e so da data a data quali sono i metri quadri di competenza. Io qui sto solo dicendo che gli affitti li gestisco in metri quadri dei centri. Può essere che a budget gli affitti li gestisco a numero di persone dei centri e farò un’altra regola, valida per il budget, nel quale lo stesso centro e lo stesso conto lo uso con una regola di applicazione diversa. 
-
-
-***ERRORE DI GESTIONE***
-
-
-**BLOCCA:** Potrebbero esserci casi in cui invece, al contrario, la REGOLA c’è, ma ci manca il DATO. Esempio dell’energia elettrica; se nessuno nei movimenti fisici mi va a registrare quali sono le kw di quel mese come faccio ad assegnarlo? In questo caso va bloccato l’elaborato per vincolare i miei utenti a mettere KW ora dei centri in basso a sinistra. 
-
-**VALORE DI RESIDUO:** quando non è necessario avere un dato puntuale ma voglio derivarlo dall'altro che ho inserito in altri periodi, utilizzo o il VALORE RESIDUO o la MEDIA DEI DENOMINATORI ESISTENTI. Il Valore residuo però non può essere utilizzato per le A(attribuzioni) ma solo per le R (reversioni). 
-
-ESEMPIO: ufficio tecnico può aver lavorato per il commerciale ma può essere anche che non lo sia. Il costo lo teniamo nell’ufficio tecnico o lo assegniamo a qualcos’altro?  Se devo assegnarlo magari li dirò MEDIA DENOMITATORI ESISTENTI, ovvero faccio la media di gennaio e febbraio e a marzo valorizzo lo stesso, magari ad aprile faccio una compensazione. Altrimenti valore residuo, ovvero, il costo resta. L’ufficio tecnico si farà carico del suo costo. 
-
-**L’ERRORE DI GESTIONE serve per capire come fluentis si deve comportare nel caso in cui il criterio del driver di quella riga si deve comportare nel caso in cui non abbia i valori per fare l’elaborazione che viene richiesta. Possiamo decidere se bloccarlo, mediarlo o lasciare lì un valore.**
-
-Abbiamo visto quelle che sono le attribuzioni 
-
-**ESEMPIO DELLE COMMESSE**
-
- 
-Il mio centro di partenza è il centro industriale di produzione. Come faccio a ribaltare la fase di fresatura alle singole commesse, se voglio fare un’analisi per commessa? Devo avere un driver che prende quel costo, e me lo ribalta in questo caso su produzione su commessa che andrà a vedere dalla produzione, commessa per commessa quanto è stato lavorato. A seconda della singola commessa fa il totale del costo del 1105 e lo assegna come costo, non diretto ma indiretto di commessa. 
-
-
-***FLAG STORNO***: la dimensione di origine, in questo caso industriale, altrimenti dai miei dati di industriale mi mancherebbero dei costi. La dimensione di partenza non viene svuotata del dato e, mettendo il flag storno viene fatto un movimento di avere che chiude l’avere ed inserisce il dare sui centri di destinazione. 
-
-
-![](/img/it-it/controlling/cost-driver-2.png)
- 
-***Lo storno ha senso quando la dimensione dei centri destinatari è diversa da quella sulla quale partiamo.***
-
-***TIPI DI DISTRIBUZIONE PER LE COMMESSE***
-
- 
-
-Cerco di assegnare i COSTI INDIRETTI DI COMMESSA: ad esempio prendo il centro aziendale X
-
- 
-ed assegnerò il 50% del valore che ho alle commesse d tipo A ed il 50% alle commesse di tipo B; 
-
-Dentro le commesse di TIPO A andrò a filtrare i movimenti che mi arrivano dalla produzione registrati commessa per commessa e li proporzionerò nell’uno e nell’altra con cosa? Con l’unità di misura 1.
-
- 
-***ESEMPIO DELLE REVERSIONI***
-
-La differenza rispetto alle commesse è che le attribuzioni devono avere sia il sottoconto che il centro di riferimento. Nelle assegnazioni il sottoconto c’è sempre. Mentre nelle reversioni non è necessario che esso ci sia.
-
-
-I ***TIPI DI DISTRIBUZIONE*** hanno dati in più.
-
-
-
-
-
-**CAMPO “VALORI DA UTILIZZARE”**
-
- 
-Quali sono i dati di origine di questi centri di destinazione che devo considerare: 
-
-**TUTTI**: mi legge tutti i movimenti assegnati a quel determinato ciclo.
-**SOLO RIGHE DI ORIGINE**: solo i dati che mi arrivano dalle attribuzioni (come se fosse il CICLO 1), oppure direttamente assegnati dalla contabilità generale. 
-
-**Mi serve per depurare i dati che devo leggere**
+:::tip Napomena
+Ako trebamo vrednovati centar strojne obrade, koji je proizvodni centar, na projektima u obradi u određenom razdoblju, morat ćemo imati driver koji uzima taj trošak i preraspodjeljuje ga, primjerice, kroz *Preraspodjelu na proizvodnju po projektu*: tada ćemo čitati podatke iz proizvodnje, projekt po projekt, koliko je radno vrijeme odrađeno u tom centru, na temelju tipa mjerenja centra (UM1 ili UM2 za proizvodne centre). Postotni indeks se, s druge strane, obično koristi kada je kriterij distribucije vezan uz troškove/prihode/marže projekta.
+:::
 
 
