@@ -1,5 +1,5 @@
 ---
-title: Cost driver
+title: Nositelji troškova
 sidebar_position: 6
 ---
 
