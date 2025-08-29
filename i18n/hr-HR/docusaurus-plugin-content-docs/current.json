@@ -1252,7 +1252,7 @@
     "description": "The label for category Reclami e non conformità in sidebar quality"
   },
   "sidebar.quality.category.Reclami": {
-    "message": "Complaints",
+    "message": "Reklamacije",
     "description": "The label for category Reclami in sidebar quality"
   },
   "sidebar.quality.category.non conformità": {
