@@ -1,28 +1,22 @@
 ---
-title: Analisi Centri di Costo
+title: Analiza centara troška  
 sidebar_position: 1
 ---
 
-Il report dell'analisi centri di costo consente di stampare il dettaglio dei movimenti contabili che hanno valorizzato ogni singolo centro di costo, totalizzando gli importi sul centro di costo stesso. 
+Izvješće o analizi mjesta troška omogućuje ispis pojedinosti računovodstvenih kretanja/zapisa koja su valorizirala svako pojedinačno mjesto troška, zbrajajući iznose na samom mjestu troška.  
 
+U obrascu postoji područje filtera s raznim poljima, a glavna su odjel poduzeća i konto.  
 
+U donjem dijelu nalaze se kriteriji grupiranja. 
 
-E' presente nella form un'area di filtro con diversi campi, tra i quali i principali sono il centro aziendale ed il conto contabile.
+Tipičan koristan kriterij grupiranja je centar troška za promatranje kretanja različitih konta koji se razlikuju za svaki centar.  
 
-Nell'area inferiore sono presenti i criteri di raggruppamento.
+U vezi s korištenjem kriterija grupiranja, pogledati **[Pregled knjiženja po shemi knjiženja](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
 
-Un tipico criterio di raggruppamento utile è il centro aziendale per osservare i movimenti dei vari conti distinti per ogni centro.
-
-In merito all'utilizzo dei criteri di raggruppamento si veda  **[Riepilogo movimenti per causale](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
-
-
-
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'analisi centri di costo. |
-| Stampa | Pulsante per eseguire la stampa fisica dell'analisi centri di costo. |
+| Prethodni pregled | Tipka za pretpregled ispisa analize centra toška. |
+| Ispiši | Tipka za izvođenje fizičkog ispisa analize mjesta troška. |
 
 
 

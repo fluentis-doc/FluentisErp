@@ -1,18 +1,16 @@
 ---
-title: Controllo sbilanci cdc/cdp/job-orders
+title: Kontrola neravnoteže centra troška/profitnog centra/radnog naloga 
 sidebar_position: 4
 ---
 
-Con questo report di controllo si estraggono i movimenti contabili che non rispettano l'uguaglianza di valorizzazione tra movimenti di contabilità e movimenti a centro di costo, o profitto o commessa di vendita: per le società che hanno attivato la gestione del controlling, sarà possibile analizzare la quadratura di ogni dimensione dei centri aziendali.
+Ovim kontrolnim izvješćem izdvajaju se računovodstvena kretanja/zapisi koja nisu zadovoljila uravnoteženost valorizacije između računovodstvenih kretanja/zapisa i kretanja/zapisa u mjestu troška, odnosno prihoda ili prodajnog naloga: za tvrtke koje imaju aktiviran kontroling menadžment, moći će se analizirati uravnoteženost svake dimenzije centara/odjela poduzeća.  
 
-Si ricorda che è possibile, all'interno delle impostazioni delle **[causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, vincolare gli utenti al momento del salvataggio delle registrazioni contabili in modo da garantire l'uguaglianza dei dati all'origine.
+Moguće je unutar postavki **[parametara knjiženja ](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, vezati korisnike prilikom spremanja računovodstvenih zapisa kako bi se zajamčila jednakost podataka.  
 
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del controllo sbilanci cdc/cdp/job-orders. |
-| Stampa | Pulsante per eseguire la stampa fisica del controllo sbilanci cdc/cdp/job-orders. |
+| Prethodni pregled | Tipka za izvođenje pregleda ispisa kontrole neravnoteže centra troška/profitnog centa/radnog naloga. |
+| Ispiši | Tipka za fizički ispis kontrole neravnoteže centra troška/profitnog centa/radnog naloga. |
 
 
 

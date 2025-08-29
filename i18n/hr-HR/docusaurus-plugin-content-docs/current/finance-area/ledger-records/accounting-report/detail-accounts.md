@@ -1,32 +1,26 @@
 ---
-title: Sottoconti
+title: Detalji računa
 sidebar_position: 6
 ---
 
-La stampa visualizza il dettaglio dei movimenti dei vari sottoconti contabili.
+Ispis prikazuje pojedinosti kretanja različitih računovodstvenih podkonta.  
 
-Il layout è simile alla stampa **[Estratto conto](/docs/finance-area/ledger-records/accounting-report/account-statement)** di cui rappresenta, in qualche modo, una versione semplificata ed al quale si rinvia.
-
- 
-
-ELEMENTI SPECIFICI:
-
- 
-
-Visualizza descrizione: attivando questo flag viene visualizzata in stampa la colonna descrizione movimento che riporta il contenuto della riga descrittiva di dettaglio per quel sottoconto presente nella registrazione contabile.
+Izgled je sličan ispisu **[Bankovnog izvoda](/docs/finance-area/ledger-records/accounting-report/account-statement)** što ga čini na neki način čini pojednostavljenom verzijom i na koju se upućuje operatera. 
 
 
+SPECIFIČNI ELEMENTI:
+
+Prikaz opisa: aktiviranjem ove zastavice ispisuje se stupac opisa kretanja u kojem se prikazuje sadržaj retka s detaljnim opisom za taj podkonto prisutan u administraciji (računovodstvu).  
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Pregled | Tipka za pretpregled ispisa. |
+| Ispiši | Tipka za fizički ispis dokumenta. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER 
+[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
 :::
 
 

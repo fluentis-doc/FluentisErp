@@ -1,18 +1,17 @@
 ---
-title: Analisi Centri di Profitto
+title: Analiza profitnih centara  
 sidebar_position: 2
 ---
 
-Il report dell'analisi centri di profitto consente di stampare il dettaglio dei movimenti contabili che hanno valorizzato ogni singolo centro di profitto, totalizzando gli importi sul centro di profitto stesso.
+Izvješće analize profitnog centra omogućuje ispis pojedinosti računovodstvenih kretanja/zapisa koja su valorizirala svaki pojedinačni profitni centar, zbrajajući iznose na samom profitnom centru.  
 
-Vedere **[Analisi centri di costo](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)**
+Pogledati **[Analizu mjesta troška](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)**
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'analisi centri di profitto. |
-| Stampa | Pulsante per eseguire la stampa fisica dell'analisi centri di profitto. |
+| Prethodni pregled | Tipka za pokretanje pregleda ispisa analize profitnog centra. |
+| Stampa | Tipka za izvođenje fizičkog ispisa analize profitnog centra. |
 
 
 

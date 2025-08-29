@@ -1,16 +1,16 @@
 ---
-title: Introduzione
+title: Uvod  
 sidebar_position: 1
 ---
 
-Il modulo Leasing di Fluentis ERP è specificamente pensato per la gestione dei contratti di leasing accesi per l'acquisizione dei fattori produttivi e gli Asset aziendali.
+Modul Leasing posebno je dizajniran za upravljanje ugovorima o leasingu sklopljenim za stjecanje proizvodnih faktora i imovine poduzeća.   
 
-Permette di calcolare, inserendo semplicemente i dati di base del contratto, il piano di ammortamento del leasing.
+Omogućuje izračun amortizacijskog plana leasinga jednostavnim unosom osnovnih podataka ugovora.  
 
-Si potrà quindi procedere alla contabilizzazione automatica dei canoni relativi alle varie rate e dell'eventuale maxicanone iniziale.
+Tada će biti moguće nastaviti s automatskim obračunom naknada koje se odnose na različite rate i sve početne maksimalne naknade.  
 
-Alla fine dell'esercizio, tipicamente, è necessario stanziare un risconto per neutralizzare l'effetto distorsivo del maxicanone sull'utile aziendale, agendo con i corretti criteri di competenza economica.
+Na kraju financijske godine, obično je potrebno dodijeliti odgodu kako bi se neutralizirao iskrivljujući učinak maksimalne naknade na dobit tvrtke, postupajući prema ispravnim ekonomskim kriterijima obračuna.
 
-E' presente una procedura specifica per questa operazione che calcola il valore del risconto da contabilizzare poi automaticamente, sulla base degli esatti giorni di competenza e del relativo costo.
+Postoji posebna procedura za ovu operaciju koja izračunava vrijednost avansa koja se potom automatski obračunava, na temelju točnih dana obračuna i povezanih troškova. 
 
-**Tabelle necessarie per utilizzare il modulo:** Tipi Leasing
+**Potrebne tablice za korištenje obrasca**: Vrste leasinga

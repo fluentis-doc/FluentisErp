@@ -1,94 +1,77 @@
 ---
-title: Estratto Conto
+title: Konto kartica  
 sidebar_position: 3
 ---
 
-Si tratta del report base per ottenere il dettaglio dei movimenti contabili di ogni sottoconto, qualsiasi sia il tipo (attivo, passivo, costo, ricavo, anagrafici): con il report standard per ogni sottoconto ci sarà un nuovo foglio di stampa.
+Ovo je osnovno izvješće za dobivanje pojedinosti o računovodstvenim kretanjima svakog podkonta, bez obzira na vrstu (aktiva, pasiva, trošak, prihod): uz standardno izvješće za svaki podkonto bit će novi list za ispis.  
 
-Questa stampa corrisponde a ciò che, nella terminologia contabile, viene definito "mastrino".
+Ovaj ispis odgovara onome što se u računovodstvenoj terminologiji naziva "glavna knjiga".  
 
-**PRINCIPALI FILTRI**:
+**GLAVNI FILTRI**:
 
-- Dati relativi alla registrazione contabile
+- Podaci koji se odnose na knjiženje  
 
-   - **Conto**: Sottoconto di riferimento (ad esempio per visualizzare i movimenti ed il saldo risultante di un determinato fornitore per un certo range di date, oppure per  visualizzare i ricavi riferiti ad un determinato sottoconto del piano dei conti);
+   - **Konto**: Referentni podkonto (npr. za pregled kretanja i rezultirajućeg stanja određenog dobavljača za određeni raspon datuma ili za pregled prihoda koji se odnose na određeni podkonto kontnog plana);  
 
-   - Data registrazione
+   - Datum knjiženja  
 
-   - Data competenza **contabile**
+   - Datum **obračuna**
 
-   - Numero registrazione
+   - Broj knjiženja  
 
-   - Tipo / Data / numero documento in testata registrazione (se presenti - possono non essere presenti data e numero documento per le registrazioni di prima nota)
+   - Vrsta / datum / broj dokumenta, ako postoji - datum i broj dokumenta možda neće biti prisutni za unose u dnevnik
 
-   - Tipo conto
+   - Tip konta 
 
-- Dati IVA
+- PDV podaci 
 
-   - Registro
+   - Registar
 
-   - Protocollo (aprire l'expander)
+   - Protokol (otvoriti proširivi izbornik)
 
-- Tipo di registrazioni (provvisorie e/o definitive)
+- Vrsta knjiženja (privremena i/ili konačna)
 
  
 
-**ALTRI ELEMENTI CARATTERISTICI DEL REPORT**:
+**OSTALI KARAKTERISTIČNI ELEMENTI IZVJEŠĆA**:
 
+- filtri **Agent** i **Banka**: moguće je zatražiti npr. izvode računa svih kupaca označenih nekim agentom ili svih dobavljača plaćenih preko određenog bankovnog računa.  
 
+- filter **Projekti**: moguće je filtrirati podkonta vezana uz određeni projekt
 
-- filtri **Agente** e **Banca**: è possibile richiedere ad esempio l'estratto conto di tutti i clienti nella cui anagrafica è stato inserito questo agente, oppure di tutti i fornitori pagati tramite un certo conto bancario.
+- **Prikaži iznose u valuti**: uz aktivan flag bit će prikazani i iznosi u valuti (uz iznose u eurima, bez ikakvog grupiranja) bez ove zastavice bit će prikazani samo podaci o dugovanju/potraživanju u valuti poduzeća,, 
 
-- filtro **Progetti** (ex Commesse): è possibile filtrare i sottoconti collegati ad un determinato progetto (commessa).
+- **Prikaži povezana knjiženja**: aktivan flag prikazuje povezana knjiženja koji se odnose na kretanja odabranog podkonta (vodoravni A4 format)
 
+- **Broj redova**: U ovom polju, koje postaje aktivno ako je prethodno navedena oznaka uključena, navodi se koliko redaka protustavke unesenih u odjeljak **[Zapis glavne knjige](/docs/finance-area/ledger-records/records/ledger-record)** će biti prikazano u izvatku računa. Na primjer, ako postoji više konta prihoda koji se odnose na zapis izdanog računa, vrijednost se može povećati ako knjiženje ne uključuje sva suprotna konta kako su upisana u knjiženju.  
 
+- **Bilješke**: ovo polje omogućuje unos alfanumeričkih podataka koji će biti prikazani u ispisu. Može biti korisno za umetanje brze bilješke koja ostaje važeća samo za ispis koji se u tom trenutku obrađuje, polje se resetira zatvaranjem obrasca.  
 
-- **Visualizza importi in valuta**: con flag attivo saranno riportati anche gli importi in valuta (accanto agli importi in euro, senza alcun raggruppamento) senza questo flag, saranno visualizzati solo i  dati dare/avere nella divisa della società, 
+Mogućnost pregleda kretanja izraženih u određenoj valuti putem:  
 
-- **Visualizza contropartite**: il flag attivo visualizza i movimenti di contropartita riferiti ai movimenti del sottoconto selezionato (formato A4 orizzontale)
-
-- **No. righe**: in questo campo, attivo se il flag di cui sopra viene attivato, viene specificato quante righe di contropartita inserite nella sezione Libro giornale della **[registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record)** saranno visualizzate in estratto conto. Ad esempio in presenza di diversi conti di ricavo riferiti alla registrazione di una fattura emessa, il valore può essere aumentato se nella stampa non vengono riportati tutti i conti di contropartita così come inseriti nella registrazione.
-
-- **Annotazioni**: questo campo permette di inserire dati alfanumerici che saranno riportati nella stampa. Può essere utile per inserire un'annotazione veloce che rimane valida solo per la stampa elaborata in quel momento, il campo infatti si resetta chiudendo la form.
-
-
-
-
-
-Possibilità di visualizzare i movimenti espressi in una specifica divisa tramite: 
-
-- **Visualizza E/C in valuta**: flag che attiva anche la combo box per la scelta della valuta e disattiva il flag Visualizza importi in valuta e Visualizza contropartite
-
+- **Pregledajte E/C u valuti**: flag koji također aktivira izbornik za odabir valute i deaktivira oznake ‘Prikaži iznose u valuti’
 permette inoltre di raggruppare i movimenti per ogni singola valuta e di totalizzarli
 
+- **Valuta**: omogućuje odabir referentne valute za filtriranje prikaza vrijednosti. Bit će prikazane samo vrijednosti denominirane u odabranoj valuti za odabrani podkonto.    
 
+Zapise je moguće sortirati prema datumu knjiženja ili prema datumu obračuna. Opcija postaje posebno zanimljiva u slučaju da se zatvaranje/ponovno otvaranje konta provodi s drugim datumom knjiženja, kako bi se imao progresivni saldo;
 
-- **Divisa**: permette di selezionare la divisa di riferimento per filtrare l'esposizione dei valori. Saranno dunque mostrati soltanto i valori denominati nella valuta selezionata per il sottoconto selezionato.
+**Zadnji datum otvaranja konta**:Za razliku od **[prikaza računa](/docs/finance-area/ledger-records/records/view-accounts)**,  u kojem su sva kretanja svakog podkonta uvijek vidljiva, ispis izvješća je proces u kojem je važno ograničiti broj zapisa koji se prikazuju kako ne bi utjecali na zauzimanje resursa računala.  
 
+U tom smislu aplikacija će ispisivati zapise uzimajući u obzir početno stanje počevši od zadnjeg datuma otvaranja konta koji je predložen kao najviši datum prije početnih filtera izvješća.  
 
+Primjer: ako korisnik filtrira kretanja od 01.09.2017. do 31.12.2017. (i kao datum knjiženja i kao datum obračuna), postupak predlaže zadnje otvaranje računa s datumom 01.01.2017., rezultat će biti: početno stanje izračunato od 01.01.2017. do 31.08.2017., detalji kretanja povezanih s knjiženjima s datumima unutar raspona 01.09.-31.12.2017. (dakle, samo podkontakoja imaju barem jedno kretanje između zadnjeg datuma otvaranja konta i datuma konačnog filtra). Međutim, ako korisnik izbriše zadnji datum otvaranja konta, rezultat će biti identičan onom prikazanom u prikazu konta.  
 
-
-
-E' possibile ordinare le registrazioni per data registrazione o per data competenza. L'opzione diventa di particolare interesse nel caso in cui la chiusura/riapertura conti sia effettuata con data registrazione e competenza differenti, al fine di avere un saldo progressivo significativo;
-
- 
-
-**Data ultima apertura conti**: A differenza della **[Visualizzazione conti](/docs/finance-area/ledger-records/records/view-accounts)**, nel quale sono sempre visibili tutti i movimenti di ogni sottoconto, il report di stampa è un processo dove è importante limitare la numerosità dei record da visualizzare per non inficiare le prestazioni della macchina. 
-
-In questo senso l'applicativo proporrà in stampa i movimenti considerando il saldo iniziale a partire dalla data ultima apertura conti, che viene proposta come la data più alta che sia antecedente ai filtri iniziali del report.
-
-Esempio: se l'utente filtra i movimenti dal 01/09/2017 al 31/12/2017 (sia come data reg. che comp.), la procedura propone ultima apertura conti con data 01/01/2017, il risultato sarà: saldo iniziale calcolato dal 01/01/2017 al 31/08/2017, dettaglio dei movimenti collegati a registrazioni con data all'interno del range 01/09-31/12/2017 (per cui, nel report saranno inseriti solo i sottoconti che hanno almeno un movimento tra la data ultima apertura conti e la data finale di filtro). Se l'utente, invece, cancella la data ultima apertura conti il risultato sarà identico a quello presente nella visualizzazione conti.
-
-**Visualizza sintetico**: si tratta di un report sintetico che presenta la lista di tutti i sottoconti senza alcun salto pagina. Si consiglia l'uso di questo report per stampare i mastrini da allegare alle stampe di chiusura dell'esercizio contabile.
+**Više podataka na 1 stranici**: ovo je sažetak izvješća koji predstavlja popis svih podkonta bez ikakvih skokova na stranice. Preporuča se korištenje ovog izvješća za ispis knjiga koje će se priložiti završnim ispisima obračunske godine.  
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'estratto conto. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento estratto conto. |
+| Prethodni pregled | Tipka za pregled ispisa konta kartice |
+| Ispiši | Tipka za fizički ispis dokumenta konta kartice |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER 
+[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
 :::

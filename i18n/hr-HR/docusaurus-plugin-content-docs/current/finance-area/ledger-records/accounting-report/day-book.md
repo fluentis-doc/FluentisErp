@@ -1,46 +1,41 @@
 ---
-title: Brogliaccio
+title: Kartica  
 sidebar_position: 2
 ---
 
-Il 'Brogliaccio' è una stampa provvisoria del libro giornale. 
+'Kartica' je privremeni ispis dnevnika knjiženja.  
 
-Sono presenti varie versioni della stampa (secondo diversi layout) selezionabili tramite la combo box in alto a sinistra.
+Postoje različite verzije ispisa (prema različitim izgledima) koje se mogu odabrati preko izbornik u gornjem lijevom kutu.  
 
-Possibilità di filtrare per:
+Mogućnost filtriranja prema:  
 
-- Date delle registrazioni contabili (da - a);
+- Datumi knjiženja (od - do);
 
-- Date di competenza **contabile** delle registrazioni (da - a), da non confondere con il concetto di competenza economica;
+- **Računovodstveni** obračunski datumi zapisa (od - do), ne smiju se miješati s konceptom ekonomskog obračuna;
 
-- Numero delle registrazioni contabili (da - a ) e protocollo iva (da - a);
+- Broj knjiženja (od - do) i PDV-a (od - do);
 
-- Registro IVA che contiene i movimenti che saranno restituiti (se non viene selezionato saranno esposti tutti i movimenti)
+- Knjiga PDV-a koja sadrži kretanja koja će biti prikazana (ako nije odabrana, sva kretanja će biti prikazana)  
 
-- Widget per selezionare un sottoconto al fine di restituire solo i movimenti che contengono il sottoconto inserito
+- Widget za odabir podkonta kako bi se prikazali zapisi koji sadrže odabrani podkonto
 
+- Vrsta dokumenta računovodstvenog zapisa
 
+- Operater
 
-- Tipo documento presente nella testata della registrazione contabile
+- Predložak knjiženja na temelju kojeg su zapisi kreirani
 
-- Operatore che ha creato le registrazioni
-
-- Causale contabile con la quale sono state create le registrazioni. 
-
-**Si ricorda che è possibile selezionare più di una voce dalle combo box tenendo premuto il tasto Ctrl.**
+**Moguće je odabrati više od jedne stavke iz izbornika držeći pritisnutu tipku Ctrl.**
 
 
-
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Prethodni pregled | Tipka za pretpregled ispisa. |
+| Ispiši | Tipka za fizički ispis dokumenta. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER  
+[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
 :::
 
 

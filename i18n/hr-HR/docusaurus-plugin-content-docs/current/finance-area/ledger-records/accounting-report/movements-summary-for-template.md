@@ -1,33 +1,32 @@
 ---
-title: Riepilogo movimenti per causale
+title: Pregled knjiženja po shemi knjiženja 
 sidebar_position: 4
 ---
 
-La stampa consente di visualizzare i movimenti contabili filtrando per causale di contabilità.
+Ispis omogućuje pregled računovodstvenih zapisa filtriranjem prema predlošku knjiženja.  
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image01.png)
 
-Sono presenti inoltre i consueti filtri sui dati principali delle registrazioni contabili ed in particolare un widget per ricercare le registrazioni che contengono il sottoconto desiderato.
+Tu su i uobičajeni filteri na glavnim podacima računovodstvenih evidencija, a posebno widget za traženje evidencija po željenom podračunu.  
 
-Nella parte inferiore della form sono presenti due griglie che consentono di gestire un eventuale raggruppamento dei dati all'interno della stampa.
+U donjem dijelu obrasca nalaze se dva prikaza koja omogućuju upravljanje bilo kojim grupiranjem podataka unutar ispisa.  
 
-Sulla destra sono proposti i criteri di raggruppamento disponibili, mentre sulla sinistra quelli attivi. Per inserire un raggruppamento è sufficiente trascinare da destra a sinistra il criterio desiderato. Nel caso siano trascinati più di un criterio la priorità di raggruppamento verrà letta dall'alto in basso.
+Dostupni kriteriji grupiranja predloženi su s desne strane, dok su aktivni s lijeve strane. Za umetanje grupiranja jednostavno se prebace drag’n’dropom željeni kriterij s desna na lijevo. Ako se povuče više od jednog kriterija, prioritet grupiranja bit će se odozgo prema dolje.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image02.png)
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image03.png)
 
-Nella ribbon bar sono presenti alcuni comandi per la gestione dei raggruppamenti:
+Na traci izbornika nalaze se neke naredbe za upravljanje grupama:  
 
-**Cancella**: rimuove il raggruppamento selezionato
+**Otkaži**: uklanja odabrano grupiranje  
 
-**Rimuovi raggruppamenti**: rimuove tutti i raggruppamenti presenti (se sono attivi più di uno)
+**Ukloni grupiranje**: uklanja sve postojeće grupiranje (ako je više od jednog aktivno)  
 
-**Sposta su /giù**: sposta il raggruppamento selezionato in alto o in basso al fine di variare la priorità di raggruppamento.
+**Premjesti gore/dolje**: Pomaknite odabrano grupiranje gore ili dolje za promjenu prioriteta grupiranja.
 
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER  
+[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
 :::
 
 

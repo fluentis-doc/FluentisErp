@@ -1,18 +1,16 @@
 ---
-title: Analisi movimenti per Cdc
+title: Analiza knjiženja za centar troška  
 sidebar_position: 3
 ---
 
-Il report dell'analisi movimenti per centro di costo consente di stampare il dettaglio dei centri di costo associati ai vari movimenti contabili, totalizzando gli importi sul movimento complessivo stesso.
+Izvješće o analizi kretanja prema mjestu troška omogućuje ispis pojedinosti mjesta troška povezanih s različitim računovodstvenim kretanjima/zapisima, zbrajajući iznose na samom cjelokupnom kretanju/zapisu.  
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili è di seguito rappresentata: 
+TRAKA IZBORNIKA: predstavlja izbornik otvorenog obrasca, odnosno područje u kojem je moguće provoditi radnje. Popis mogućih funkcija prikazan je u nastavku:
 
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'analisi movimenti per centro di costo. |
-| Stampa | Pulsante per eseguire la stampa fisica dell'analisi movimenti per centro di costo. |
+| Prethodni pregled | Tipka za pregled ispisa analize knjiženja po mjestu troška. |
+| Ispiši | Tipka za fizički ispis analize knjiženja po mjestu troška. |
 
 
 

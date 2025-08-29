@@ -1,54 +1,42 @@
 ---
-title: Situazione contabile sottoconti
+title: Saldo po podkontima
 sidebar_position: 5
 ---
 
-La stampa visualizza il dare/avere/saldo dei sottoconti.
+Na ispisu se ispisuje dugovno/potražno/stanje podkonta.
 
- 
+Moguće je posebno filtrirati podračune povezane s određenim projektom (bivši Ugovor).
 
-E' possibile, in particolare, filtrare i sottoconti collegati ad uno specifico progetto (ex Commessa).
+**SPECIFIČNE OPCIJE IZVJEŠĆA**:
 
-**OPZIONI SPECIFICHE DEL REPORT**:
+**Prikaži duguje / potražuje**: opcija aktivna prema zadanim postavkama, ako je deaktivirana neće biti prikazani stupci dugovanja/potraživanja, već samo stupac stanja. 
 
-**Visualizza dare / avere**: opzione attiva per default, se viene disattivata non saranno visualizzate le colonne dare / avere ma soltanto la colonna saldo.
+**Prikaži saldo**: opcija je standardno aktivna, ako je deaktivirana stupac stanja više neće biti vidljiv. Pažnja, deaktiviranjem ove i prethodne opcije ispis će biti neupotrebljiv jer je prazan. 
 
-**Visualizza bilancio**: opzione attiva di default, se viene disattivata non sarà più visibile la colonna saldo. Attenzione, disattivando sia la presente opzione sia l'opzione precedente la stampa sarà di fatto inutilizzabile in quanto vuota.
+**Prikaži iznose u valuti**: aktiviranjem ove opcije podkonta će se grupirati na temelju valute, a ukupni iznosi po grupama bit će prikazani u valuti i za protuvrijednost u eurima (ili u svakom slučaju u valuti koju tvrtka koristi).  
 
-
-
-**Visualizza importi in valuta**: attivando questa opzione i sottoconti saranno raggruppati in base alla valuta e saranno visualizzati i totali per gruppo sia in valuta sia per il controvalore in Euro (o comunque nella divisa della società in uso).
+**Prikaži prethodni saldo**: aktivacijom ove opcije prikazat će se još dva stupca koji prikazuju početne vrijednosti konta za svaki pojedinačni podkonto. Prijavljene vrijednosti odnose se na postupak **[Automatskog otvaranja konta](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
 
 
+**Ispiši konta sa saldom nula**: opcija je deaktivirana prema zadanim postavkama, stoga podkonta s iznosom 0,00 neće biti prikazani, moguće ju je aktivirati dobivanjem uključivanja tih podkonta.  
 
-**Visualizza valori di apertura**: attivando questa opzione saranno visualizzate anche due ulteriori colonne che riportano i valori dell'apertura conti per ogni singolo sottoconto. I valori riportati sono quelli relativi alla procedura **[Apertura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
+**KRITERIJI GRUPIRANJA**:
 
+**Bez grupiranja**: grupiranje se neće izvršiti  
 
+**Predstavnik**: podkonta koja se odnose na evidenciju kupaca bit će grupirani na temelju predstavnika/agenta koji je povezan s odgovarajućim evidencijom/zapisima. Ako u bazi ima više agenata/predstavnika, u obzir će se uzeti zadnji upisani.  
 
-**Stampa conti con saldo a zero**: opzione disattivata di default, dunque i sottoconti con saldo a zero non verranno visualizzati, è possibile attivarla ottenendo l'inclusione di questi sottoconti.
+**Zona**: podkonta koja se odnose na evidenciju kupaca bit će grupirana na temelju Zone prisutne u **[Šifarniku](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)**
 
-**CRITERI DI RAGGRUPPAMENTO**:
+**Agente / Zona**: bit će aktivan kriterij dvostrukog grupiranja, po agentu, a zatim, za svakog agenta, grupirano po zoni.  
 
-**Nessuno**: non saranno eseguiti raggruppamenti
-
-**Agente**: i sottoconti relativi alle anagrafiche clienti saranno raggruppati in base all'agente agganciato nella rispettiva anagrafica. In caso siano presenti più agenti in anagrafica sarà considerato quello inserito per ultimo.
-
-**Zona**: i sottoconti relativi alle anagrafiche clienti saranno raggruppati in base alla Zona presente nell'**[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)**
-
-**Agente / Zona**: sarà attivo un doppio criterio di raggruppamento, per agente e poi, per ogi agente, raggruppati per zona.
-
-
-
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Prethodni pregled | Tipka za pretpregled ispisa. |
+| Ispiši | Tipka za fizički ispis dokumenta. |
 
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER  
+[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
 :::
 
 

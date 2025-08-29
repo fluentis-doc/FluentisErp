@@ -15,47 +15,48 @@ Potrebno je definirati sljedeće: **Računovodstvenu godinu**, **Vrstu naloga** 
 
 Iako se unosi vrsta naloga, struktura knjiženja automatski se određuje logikom postupka.
 
-Dopo aver salvato è possibile premere Calcola per ottenere la proposta dei valori che potranno essere confermati tramite la spunta (spunta tutto per confermare i risconti relativi ai vari leasing presenti) per poi procedere a contabilizzarli.
+Nakon spremanja moguće je pritisnuti gumb Izračunaj kako bi se dobio prijedlog vrijednosti koje se mogu potvrditi putem kvačice (opcija Označi sve za potvrdu obračuna vezanih uz sve prisutne leasinge), a zatim se može pristupiti knjiženju tih vrijednosti.
 
-I valori proposti dal calcolo sono editabili e pertanto possono essere forzati nel caso in cui il calcolo ottenuto necessiti di leggeri aggiustamenti ad esempio nel numero di giorni di competenza calcolati o nei valori risultanti.
+Prijedložene vrijednosti iz izračuna su podesive i mogu se ručno korigirati u slučaju da je potrebno napraviti manje prilagodbe, primjerice u broju dana obračuna ili u izračunatim iznosima. 
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image02.png)
 
-Vengono ripresi **Tipo Leasing**, **Data di stipula**, **Numero Leasing**, **Descrizione** e **Data di estinzione**.
+Preuzimaju se sljedeći podaci: **Vrsta leasinga**, **Datum sklapanja**, **Broj leasinga**, **Opis** i **Datum isteka ugovora**.
 
-**Totale giorni**: = differenza in giorni tra **data stipula** e **data estinzione**
+**Izračun polja**: = razlika u danima između **datuma sklapanja** i **datuma isteka** leasing ugovora.
 
-**Costo giornaliero**: = Valore totale del contratto / Totale giorni:  (dove Valore totale del contratto = Maxicanone + Spese istruttorie e pratica + Sommatoria di (Quota capitale + Quota interessi + Spese per ogni singolo canone)).
+**Dnevni trošak**: = Ukupna vrijednost ugovora / Ukupno dana
+(gdje je Ukupna vrijednost ugovora = Maksikanon + Troškovi obrade i administracije + Zbroj (Glavnica + Kamate + Troškovi za svaku pojedinu ratu)).  
 
-**Giorni di competenza**: = numero di giorni intercorrenti tra (la più recente tra data stipula e data inizio esercizio) e Data registrazione impostata per il risconto del maxicanone.
+**Dani obračuna**: = broj dana između (najnovijeg od datuma sklapanja i početka poslovne godine) i datuma knjiženja koji je postavljen za obračun maksikanona.  
 
-**Costo di competenza**: = Costo giornaliero * Giorni di competenza
+**Trošak obračuna**: = Dnevni trošak * Dani obračuna  
 
-**Pagato contab. **: calcolo di quanto pagato nell'esercizio dal punto di vista contabile (canoni contabilizzati + Maxicanone se contabilizzato) 
+**Plaćeno knjiženo**: izračun koliko je plaćeno unutar poslovne godine s računovodstvenog aspekta (knjižene rate + knjiženi maksikanon)
 
-= Sommatoria del Maxicanone contabilizzato e dei canoni (quota capitale + quota interessi + spese) aventi il flag Contabilizzato attivo (a seguito di manovra di contabilizzazione o impostato manualmente) e la data prevista scadenza per il canone, indicata sulla riga di dettaglio del piano di ammortamento del leasing, minore rispetto alla data di registrazione del risconto maxicanone.
+= Zbroj knjiženog maksikanona i rata (glavnica + kamata + troškovi) koje imaju označenu opciju Knjiženo i čiji je planirani datum dospijeća manji od datuma knjiženja maksikanona.  
 
-Viene verificato anche che l'anno contenuto nelle date dei canoni e nella testata del leasing (data stipula) siano compatibili, rispetto alla data della contabilizzazione del risconto, con la presenza dei parametri contabili per l'anno in questione.
+Također se provjerava da godina sadržana u datumima rata i u zaglavlju leasing ugovora (datum ugovaranja) bude usklađena s godinom knjiženja obračuna, odnosno da postoji kontni parametar za dotičnu godinu.  
 
-**Risconto anno precedente**: in questo campo viene riportato il valore del campo Valore risconto relativo all'anno precedente e pertanto il primo anno in cui viene caricato il contratto di leasing a sistema risulterà zero.
+**Obračun prethodne godine**: u ovom se polju prikazuje vrijednost iz polja Vrijednost obračuna iz prethodne godine. Stoga će za prvu godinu u kojoj se ugovor o leasingu unosi u sustav, ovo polje imati vrijednost nula.  
 
-**Valore risconto**: in questo campo viene calcolato il valore del risconto da applicare:
+**Vrijednost obračuna**: u ovom se polju izračunava iznos obračuna koji se treba primijeniti:  
 
-= Pagato contab. + Risconto anno prec. - Costo di competenza
+= Plaćeno (knjiženo) + Obračun prethodne godine - Trošak obračunskog razdoblja  
 
-**Controllata**: apporre il flag in corrispondenza della riga per abilitare la possibilità di contabilizzare il risconto in quanto approvato il calcolo automatico o dopo aver editato i campi manualmente.
+**Kontrolirano**: potrebno je postaviti flag u retku kako bi se omogućilo knjiženje obračuna, bilo da je izračun automatski prihvaćen ili nakon ručnog uređivanja vrijednosti.
 
-E' possibile mettere il flag su Spunta tutto (sopra la griglia) per approvare massivamente tutti i risconti proposti.
+Također je moguće koristiti flag "Označi sve" (iznad tablice) za masovno potvrđivanje svih predloženih obračuna.
 
-**Contabilizzata**: il flag si attiva in seguito al lancio della contabilizzazione del risconto proposto ed approvato. Vengono inseriti i riferimenti alla scrittura contabile generata.
+**Knjiženo**: ovaj flag se automatski aktivira nakon što je obračun potvrđen i knjižen. U tom trenutku se upisuju i referentni podaci o kreiranoj knjiženoj stavci.
 
-La procedura di contabilizzazione può essere eseguita dalla presente form attraverso i bottoni sulla ribbon bar oppure, indifferentemente utilizzando la procedura accessibile dal menù delle procedure contabili del modulo.
+Postupak knjiženja može se pokrenuti iz trenutnog obrasca putem tipki na traci izbornika ili, jednako tako, korištenjem procedure dostupne u izborniku računovodstvenih postupaka unutar modula.
 
-Sempre da questa posizione è possibile eseguire anche il ripristino della procedura di contabilizzazione.
+S iste lokacije moguće je također izvršiti i poništavanje (vraćanje) postupka knjiženja.
 
-Il risconto Maxicanone calcolato e contabilizzato come sopra illustrato può essere gestito automaticamente anche nella fase di riapertura automatica conti (attivabile dalla **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) attivando il flag Giroconto scritture di assestamento.
+Obračun Maxikanona, koji je prethodno izračunat i knjižen, može se automatski obraditi i tijekom faze automatskog otvaranja konta (koja se može aktivirati putem **[Automatsko zatvaranja konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) uključivanjem flag Žiro račun - prilagodba zapisa.
 
-In questo caso saranno eseguite automaticamente le consuete scritture di riapertura dei risconti per maxicanone, accodandole alle altre scritture automatiche di apertura saldi e giroconti degli altri ratei e risconti attivi e passivi.
+U ovom slučaju bit će automatski izvršene uobičajene knjiženja ponovnog otvaranja predujma za maxicanone, pridružujući ih ostalim automatskim knjiženjima otvaranja salda i prebacivanja drugih aktivnih i pasivnih troškova i predujma.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image03.png)
 

@@ -1,21 +1,21 @@
 ---
-title: Bilancio di Verifica
+title: Nezaključana bilanca razdoblja  
 sidebar_position: 1
 ---
 
-La stampa del Bilancio di verifica visualizza una lista dei sottoconti con i relativi totali dare/avere e i saldi.
+Ispis probnog stanja prikazuje popis podkonta s njihovim ukupnim dugovanjima/potraživanjima i saldima. 
 
-I principali parametri di filtro da gestire prima di lanciare la stampa sono:
+Glavni parametri filtra kojima treba upravljati prije pokretanja ispisa su:  
 
- - il range di date di registrazione; di default viene proposto il periodo da inizio anno ad oggi.
+ - raspon datuma registracije; prema zadanim postavkama predloženo je razdoblje od početka godine do danas. 
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image01.png)
 
-- il range di date di competenza **contabile** (da non confondere con il concetto di competenza economica).
+- raspon **knjigovodstvenih** obračunskih datuma (ne miješati s konceptom ekonomskog obračunskog razdoblja).
 
  ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image02.png)
 
-E' possibile filtrare solo alcuni sottoconti riferiti alle anagrafiche clienti (coppia di widget più in alto) e fornitori (seconda coppia di widget)
+Moguće je filtrirati samo neka podkonta koji se odnose na evidenciju kupaca (gornji par widgeta) i dobavljača (drugi par widgeta)  
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image03.png)
 
@@ -23,15 +23,12 @@ Oppure è possibile escludere alcuni tipi conti di anagrafica affinché non veng
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image04.png)
 
- 
-
-Si possono richiedere tutti i sottoconti, solo quelli movimentati, oppure i movimentati con saldo diverso da zero.
+Ili je moguće isključiti neke vrste konta tako da se ne prikazuju detalji svakog pojedinog podkonta koji se odnose na vrstu za koju je zastavica aktivirana.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image05.png)
 
- 
 
-Con la descrizione standard del sottoconto oppure utilizzando la **[seconda descrizione](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**.
+Sa standardnim opisom podkonta ili korištenjem **[alternativnog opisa](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image06.png)
 
@@ -39,31 +36,27 @@ Con la descrizione standard del sottoconto oppure utilizzando la **[seconda desc
 
  ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image08.png)
 
-E' possibile includere anche le registrazioni provvisorie (di default sono attive solo quelle definitive).
+Također je moguće uključiti privremena knjiženja (prema zadanim postavkama aktivne su samo konačna tj. definitivna).
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image09.png)
 
-**OPZIONI**:
+**OPCIJE**:
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image10.png)
 
-**Divisione**: la combo box permette di selezionare solo una delle divisioni presenti nel data base al fine di elaborare il bilancio solo per quella selezionata, diversamanete, se non vien selezionata una (o più di una tenendo premuto il tasto Ctrl) si otterrà il bilancio dell'intera società in uso. Si ricorda che il concetto di divisione si riferisce ad una unità operativa specifica (alla quale sono riferiti i documenti ed i movimenti contabili) riferita però alla stessa società (quindi allo stresso soggetto giuridico) la quale fiscalmente e legalmente presenta il bilancio ed i dati contabili e fiscali.
+**Odjel**: izbornik omogućuje da se odabere samo jedna od sekcija/odjela poduzeća prisutnih u bazi podataka kako bi se obradila bilanca samo za tu odabranu, međutim, ako nijedna nije odabrana dobit će se bilancu cjelokupnog poduzeća. Treba imati na umu da se koncept podjele odnosi na određenu poslovnu jedinicu (na koju se odnose dokumenti i knjiženja), ali se odnosi na isto poduzeće (dakle na istu pravnu osobu) koja fiskalno i pravno prikazuje financijska izvješća i računovodstvene podatke i porez.
 
-**Escludi causale**: tramite la combo box è possibile escludere i movimenti riferiti alla causale contabile selezionata. La possibilità è particolarmente utile quando si desidera ristampare un bilancio relativo ad un periodo per il quale è già intervenuta la chiusura dei conti e pertanto i saldi risultano a zero. Si inserirà allora nel campo in commento la causale utilizzata per la chiusura conti (esempio causale codice BILCH) per visualizzare nuovamente il bilancio con situazione saldi prima della chiusura.
+**Isključi predložak**: pomoću izbornik je moguće isključiti kretanja koja se odnose na odabrani računovodstveni predložak. Mogućnost je posebno korisna kada se želi ponovno ispisati bilancu koja se odnosi na razdoblje za koje su konta već zatvorena i stoga su stanja nula.   
 
-**Apertura**: flag che, se attivato, esclude dall'elaborazione del bilancio i movimenti di apertura conti generati dalla procedura di riapertura conti contestuale alla **[chiusura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
+**Otvaranje**: flag koji, ako je aktiviran, isključuje iz obrade bilance početna knjiženja generirana postupkom ponovnog otvaranja računa istovremeno s **[Automatsko zatvaranja konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Prethodni pregled | Tipka za pretpregled ispisa. |
+| Ispiši | Tipka za fizički ispis dokumenta. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER
+[**VIDEO TUTORIJALI O IZVJEŠTAJIMA RAČUNOVODSTVA**](/docs/video/finance/intro)
 :::
-
-
-
