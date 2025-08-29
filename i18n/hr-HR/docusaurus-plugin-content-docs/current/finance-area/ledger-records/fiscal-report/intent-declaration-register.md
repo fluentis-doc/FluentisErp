@@ -1,22 +1,18 @@
 ---
-title: Registro dichiarazioni di intento
+title: Registar izjave o namjeri  
 sidebar_position: 8
 ---
 
-La procedura consente di stampare il registro delle dichiarazioni di intento, sia quello clienti che fornitori, a seconda della selezione **Dichiarante** o **Ricevente**.
+Procedura omogućuje ispis registra izjava namjera, kako kupaca tako i dobavljača, ovisno o odabiru **Deklarant** ili **Primatelja**.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/intent-declaration-register/image01.png)
 
-Sono presenti anche dei campi di filtro per protocollo o per anagrafica del cliente o fornitore.
+Postoje i polja za filtriranje po protokolu ili po detaljima kupca ili dobavljača.
 
- 
-
-
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del registro dichiarazioni di intento. |
-| Stampa | Pulsante per eseguire la stampa fisica del registro dichiarazioni di intento. |
+| Prethodni pregled | Tipka za pregled ispisa registra deklaracija namjera. |
+| Ispiši | Tipka za fizički ispis registra izjava namjere. |
 
 
 

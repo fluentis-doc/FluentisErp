@@ -1,32 +1,31 @@
 ---
-title: Dichiarazione di intento
+title: Izjava o namjeri
 sidebar_position: 2
 ---
 
-All'apertura della finestra viene proposto l'esercizio contabile attuale.
+Pri otvaranju prozora prikazuje se trenutno računovodstveno razdoblje.
 
-E' possibile stampare tutte le dichiarazioni di intento o filtrare la stampa per:
+Moguće je ispisati sve izjave o namjeri ili filtrirati ispis prema:
 
-**Tipo Dichiarazione**: Cliente o Fornitore;
+**Tip deklaracije**: Kupac ili Dobavljač;
 
-**Ricercare un Sottoconto di anagrafica cliente o fornitore**: in funzione di quanto selezionato al campo precedente;
+**Pretraživanje pomoćnog računa u šifrarniku kupaca ili dobavljača**: ovisno o prethodno odabranoj opciji;
 
-**Numero di ns. protocollo da / a**.
+**Broj našeg protokola od / do**.
 
-Tra gli elementi da stampare è possibile variare la descrizione del campo Ufficio IVA di -  e il campo Descrizione Operazione.
+Među stavkama za ispis moguće je izmijeniti opis polja Porezni ured iz – te polje Opis operacije.  
 
-La data di stampa proposta è la data odierna di sistema.
+Datum ispisa koji se predlaže je današnji datum prema sustavu.  
 
-ATTENZIONE:
+PAŽNJA:
 
-Sono presenti diverse stampe selezionabili dalla tendina in alto a sinistra, da combinare per ottenere le diverse parti del modello ministeriale (es. frontespizio, dettagli, plafond).
+Dostupni su različiti ispisi koji se mogu odabrati iz padajućeg izbornika u gornjem lijevom kutu, koje je moguće kombinirati kako bi se dobili različiti dijelovi službenog obrasca (npr. naslovnica, detalji, plafon).
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa delle dichiarazioni di intento. |
-| Stampa | Pulsante per eseguire la stampa fisica delle dichiarazioni di intento. |
+| Pregled ispisa | Tipka za pregled ispisa izjava o namjeri prije stvarnog ispisa. |
+| Ispis | Tipka za fizički ispis izjava o namjeri. |
 
 
 
