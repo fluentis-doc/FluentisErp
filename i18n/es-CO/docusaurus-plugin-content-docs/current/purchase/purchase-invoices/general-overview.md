@@ -35,8 +35,7 @@ import Link from '@docusaurus/Link';
         <p>El procedimiento de *Valoración DDT de devolución* permite generar una factura de compra aplicando uno o más retornos de trabajo por cuenta.  </p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Recepción de mercancías 
-</Link>
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Recepción de mercancías</Link>
         <p>El procedimiento de [Creación de facturas desde Recepción de mercancías](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt) permite la creación de la factura a partir de una recepción de mercancías ya registrada.  </p>
     </div>
 </div>
