@@ -1,20 +1,19 @@
 ---
-title: Moduli Bollati
+title: Ispis za ovjeru  
 sidebar_position: 7
 ---
 
-Questo report permette di stampare i moduli DDTti apponendo l'intestazione della società ed i numeri di pagina per l'anno.
+Ovo izvješće vam omogućuje ispis DDTti obrazaca dodavanjem zaglavlja tvrtke i brojeva stranica za godinu.  
 
-Si ricorda che la stampa su moduli DDTti è stata abolita per diversi registri fiscali. Si consiglia di verificare periodicamente la normativa.
+Napominjemo da je ispis na DDTti obrascima ukinut za nekoliko poreznih registara. Preporučljivo je povremeno provjeriti zakonodavstvo.  
 
-**Pagina iniziale**: il numero è riportato in stampa e si riferisce alla prima pagina da stampare.
+**Početna stranica**: broj se prikazuje prilikom ispisa i odnosi se na prvu stranicu koja se ispisuje.  
 
-**Numero pagine da stampare**: indica quante pagine devono essere stampate.
+**Broj stranica za ispis**: pokazuje koliko se stranica mora ispisati.  
 
-**Anno**: viene proposto di default l'anno corrente. L'anno sarà aggiunto al nr. pagina creando la stringa 1/2018; 2/2018 ecc....
+**Godina**: prema zadanim postavkama predložena je tekuća godina. Godina će biti dodana u br. stranica izrada niza 1/2018; 2/2018 itd....  
 
-**Titolo**: stringa libera che sarà riportata direttamente in stampa nella posizione del titolo. Può essere utilizzata per titolare la stampa a fronte dell'opzione che disattiva la testata presente sui vari report che si possono stampare utilizzando i DDTti.
-
+**Naslov**: slobodni niz koji će se ispisati izravno na mjestu naslova. Može se koristiti za titriranje ispisa u odnosu na opciju koja deaktivira zaglavlje prisutno na raznim izvješćima koja se mogu ispisati pomoću DDTti.  
 
 
 

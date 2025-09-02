@@ -16,23 +16,23 @@ MOGUĆE OPCIJE:
 
 **Definitivno**: aktivira način konačnog ispisa koji, nakon što se izvrši, blokira naknadne promjene u računovodstvenim evidencijama razdoblja;  
 
-**Preštampati**: flag è pensato per permettere di **ristampare il giornale già stampato in definitivo**, attivandolo, i campi relativi agli ultimi saldi Dre / Avere, ultima pagina ed ultima riga, che sono stati popolati e memorizzati dalla stampa in definitivo, diventeranno editabili al fine di gestire una ristampa del libro giornale, senza dover procedere all'annullamento della precedente stampa definitiva, nè alla modifica e salvataggio dei valori precedenti all'interno della maschera dei *parametri di contabilità generale* (per ottenere gli stessi progressivi finali dopo la ristampa).
+**Ponovno ispisivanje**: flag je osmišljena kako bi omogućila **ponovni ispis već konačno ispisanog dnevnika**. Aktiviranjem ove opcije, polja vezana uz posljednje stanje potraživanja/dugovanja, posljednju stranicu i posljednji red, koja su popunjena i pohranjena tijekom konačnog ispisa, postat će dostupna za uređivanje s ciljem upravljanja ponovnim ispisom knjige dnevnika,bez potrebe za poništavanjem prethodnog konačnog ispisa, niti izmjenom i spremanjem prethodnih vrijednosti unutar maske *parametara glavne knjige* (kako bi se zadržali isti završni iznosi nakon ponovnog ispisa). 
 
-All'esecuzione della stampa in via definitiva il programma effettua un controllo sulla presenza di registrazioni antecedenti non stampate e sulla presenza all'interno del range di date già riportati in stampa. Una volta lanciato il processo di stampa (quindi la semplice anteprima non opera alcuna operazione, ma si dovrà eseguire la stampa fisica, anche su file, indipendentemente dal buon fine del processo) le registrazioni relative saranno bloccate in tutta la parte fiscale mentre saranno aggiornati i contatori memorizzati nella tabella  **[Parametri di contabilità:](/docs/configurations/parameters/finance/accounting-parameters)** all'interno di questa tabella è presente il pulsante per la cancellazione delle stampe definitive (può essere posto sotto specifici diritti utente): una volta premuto bisognerà indicare il range di date da sbloccare, dare conferma dell'operazione e poi aggiornare manualmente tutti i relativi contatori;
+Tijekom izvršavanja konačnog ispisa, program provodi provjeru o postojanju ranijih, još neispisanih knjiženja te o postojanju datuma koji su već obuhvaćeni prethodnim ispisom. Nakon što se pokrene proces ispisa (sama pretpregled ne izvodi nikakve operacije, već je potrebno izvršiti fizički ispis, čak i u datoteku, neovisno o ishodu procesa), relevantne će se evidencije zaključati u svom fiskalnom dijelu, dok će se brojači ažurirati u tablici **[Parametri knjigovodstva](/docs/configurations/parameters/finance/accounting-parameters)**, unutar ove tablice nalazi se i gumb za brisanje konačnih ispisa (mogućnost dostupna korisnicima sa specifičnim pravima): nakon pritiska potrebno je unijeti raspon datuma koji se želi otključati, potvrditi operaciju i ručno ažurirati sve relevantne brojače.
 
-**Divisione**: permette di gestire la stampa specificando una delle divisioni presenti nel database;
+**Podjela**: omogućuje izvođenje ispisa za jednu od podjela prisutnih u bazi podataka;  
 
-**Da n. registrazione / A nr. registrazione**: permette di filtrare la stampa per numero di registrazione (meno significativo in caso di stampa definitiva).
+**Od br. knjiženja / Do br. knjiženja**: omogućuje filtriranje ispisa po broju knjiženja (manje značajno u slučaju konačnog ispisa).  
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del libro giornale. |
-| Stampa | Pulsante per eseguire la stampa fisica del libro giornale. |
+| Pretpregled | Tipka za prikaz pretpregleda ispisa knjige dnevnika. |
+| Ispis | Tipka za izvršenje fizičkog ispisa knjige dnevnika. |
 
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important Pogledaj također  
+[**VIDEO TUTORIJALI O FISKALNIM ISPISIMA**](/docs/video/finance/intro)
 :::
 

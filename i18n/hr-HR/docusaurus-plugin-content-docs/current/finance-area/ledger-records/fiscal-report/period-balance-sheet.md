@@ -1,46 +1,38 @@
 ---
-title: Bilancio d'esercizio
+title: Bilanca razdoblja  
 sidebar_position: 1
 ---
 
-Questo report ha la funzione di presentare un prospetto base del bilancio aziendale, suddividendo di default le quattro sezioni attivo/passivo/costi/ricavi tipiche. Si sottolinea che il report funziona unicamente per data competenza contabile inserita nella testata della registrazione, indipendentemente quindi dalla data di registrazione della stessa a libro giornale.
+Ovo izvješće ima funkciju predstavljanja osnovnog izvješća o bilanci poduzeća, dijeleći prema zadanim postavkama četiri tipična odjeljka aktiva/pasiva/troškovi/prihodi. Naglašava se da izvješće radi samo za obračunski datum upisan u zaglavlju knjiženja, dakle bez obzira na datum evidentiranja istog u dnevniku.
 
-Inoltre bisogna tener presente che le date di competenza sono state distinte per i conti dello stato patrimoniale, rispetto a quelli economici.
+Nadalje, treba imati na umu da su datumi obračuna razdvojeni za konta bilance u usporedbi s ekonomskim obračunom.  
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-balance-sheet/image01.png)
 
-In questo modo è possibile, e raccomandato, mantenere il range di date economiche all'interno dell'anno in corso (esempio 01/01/2018 - 31/12/2018) e portare la data di inizio della competenza contabile patrimoniale fino all'ultima apertura conti (esempio 01/01/2017) nel caso in cui l'anno precedente (2017) non sia stato ancora chiuso. Ciò è necessario in tale situazione per ottenere il corretto saldo attuale dei conti in assenza dei valori di apertura per l'anno in corso che verrebbero altrimenti omessi filtrando normalmente.
+Na ovaj način je moguće i preporučljivo održavati raspon ekonomskih datuma unutar tekuće godine (primjer 01.01.2018. - 31.12.2018.) i dovesti početni datum obračuna financijskog računovodstva do posljednjeg otvaranja računa (primjer 01.01.2017.) ako prethodna godina (2017.) još nije zatvorena. Ovo je neophodno u ovoj situaciji kako bi se dobio ispravan saldo tekućeg računa u nedostatku početnih vrijednosti za tekuću godinu koje bi inače bile izostavljene normalnim filtriranjem.  
 
- 
+Mogući su različiti izgledi, uključujući prikaz sa suprotnim dijelovima i jedan s grupiranjem kako bi se dobili ukupni iznosi po kontu i po razini strukture kontnog plana. Željeni ispis može se odabrati iz padajućeg izbornika u gornjem lijevom kutu.  
 
-Sono possibili vari layout tra i quali una rappresentazione a sezioni contrapposte ed una con raggruppamento al fine di ottenere i totali per conto e per livello della struttura del piano dei conti. La stampa desiderata si può selezionare dalla tendina in alto a sinistra.
+**Prikaži iznose s negativnim predznakom**: ako je postavljeno, aplikacija će svaki podkonto ubaciti u rubriku kojoj pripada (prema vrsti konta) s eventualnim negativnim predznakom kada je stanje u suprotnoj rubrici. Ako zastavica nije aktivna, kao prema zadanim postavkama, svaki podkonto bit će prikazan u odjeljku koji se odnosi na njegovo stanje;  
 
- 
+**Detalji nomenklature**: prema zadanim postavkama aplikacija isključuje sve pojedinosti o podkontima povezanim s kupcima/dobavljačima i agentima. Samo s relevantnom oznakom bit će prikazani detalji ovih podračuna matičnih podataka;  
 
+**Isključi privremena konta**: privremena konta prikazana su na dnu odjeljaka aktive i pasive. S ovom zastavom/oznakom takva konta neće biti prikazana u izvješću. Treba imati na umu da ovakva konta nikada ne podliježu zatvaranju/otvaranju konta u automatskom postupku aplikacije;  
 
+**Usporedba s prethodnom godinom**: s ovom opcijom prikazat će se stupac za tekuću godinu i jedan za stanje istog razdoblja, ali godine koja prethodi onoj postavljenoj kao filter;  
 
+**Isključi predložak**: ako su prikazani unosi zatvaranja konta, za dobivanje bilanci bit će potrebno isključiti kretanja na temelju samog predloška zatvaranja. Pokretanje izvješća bez isključivanja ove opcije će dati izvješće sa svim saldima na nuli (osim za privremena konta kao što je gore navedeno): ovo se može koristiti kao provjera za provjeru stvarnog uspjeha provedenih operacija zatvaranja računa;  
 
-
-**Visualizzazione importi segno negativo**: se impostato l'applicativo inserirà ogni sottoconto nella sezione di appartenenza (secondo il suo tipo conto) con eventualmente il segno negativo quando il saldo sia nella sezione opposta. Se il flag non è inserito, come di default, ogni sottoconto sarà visualizzato nella sezione relativa al suo saldo;
-
-**Dettaglio della anagrafiche**: di default l'applicativo esclude tutto il dettaglio dei sottoconti collegati ai clienti/fornitori e agli agenti. Solo con il flag relativo saranno visualizzati i dettagli di questi sottoconti di anagrafica;
-
-**Escludi conti d'ordine**: i conti d'ordine sono visualizzati in calce alle sezioni dell'attivo e passivo. Con questo flag i conti d'ordine non saranno visualizzati nel report. Si ricorda, in particolare, che i conti d'ordine non sono mai oggetto di chiusura/apertura conti nella procedura automatica dell'applicativo;
-
-**Comparazione anno precedente**: con questa opzione sarà visualizzata la colonna dell'anno in corso e una per il saldo dello stesso periodo ma dell'anno precedente a quello impostato come filtro
-
-**Escludi causale**: nel caso in cui siano state rilevate le registrazioni di chiusura dei conti, per ottenere i saldi di bilancio sarà necessario escludere i movimenti basati sulla causale di chiusura stessa. Eseguire il report senza escludere questa darà un report con tutti i saldi a zero (salvo i conti d'ordine per quanto detto sopra): questa può essere utilizzato come controllo di verifica dell'effettivo buon fine delle operazioni di chiusura conti effettuate;
-
-È possibile inserire nella stampa anche i movimenti derivanti dalle registrazioni provvisorie.
+Također je moguće uključiti u ispis I kretanja koja proizlaze iz privremenih knjiženja.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 ---
 
-### Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE)
+### Reklasifikacija bilance za izradu financijskog izvještaja prema talijanskom civilnom zakonu (CEE shema)  
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important Pogledaj također  
+[**VIDEO TUTORIJALI O FISKALNIM ISPISIMA**](/docs/video/finance/intro)
 :::
 
 

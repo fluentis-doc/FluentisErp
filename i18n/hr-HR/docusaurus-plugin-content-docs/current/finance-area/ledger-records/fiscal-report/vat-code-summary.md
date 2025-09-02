@@ -1,33 +1,33 @@
 ---
-title: Riepilogo per codici iva
+title: Pregled po tipu PDV-a  
 sidebar_position: 10
 ---
 
-La stampa permette di estrarre e raggruppare, utilizzando varie possibilità di filtro e criteri di raggruppamento, movimenti iva.
+Ispis omogućuje izdvajanje i grupiranje kretanja PDV-a pomoću različitih opcija filtriranja i kriterija grupiranja.  
 
-La form è suddivisa in due zone: l'area dei filtri per la ricerca dei dati e la zona per la scelta dei criteri di raggruppamento.
+Obrazac je podijeljen na dva područja: područje filtra za pretraživanje podataka i područje za odabir kriterija grupiranja.  
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/vat-code-summary/image01.png)
 
-Tra i filtri principali, relativi alla finalità principale della stampa, si segnalano il codice iva (per ricercare i movimenti relativi) Da / A data competenza (IVA), il registro IVA e al data della registrazione contabile.
+Među glavnim filtrima, koji se odnose na glavnu svrhu ispisa, izdvaja se Šifra PDV-a, Od / Do datuma obračuna, knjiga računa i datumi knjiženja.  
 
-Per utilizzare uno o più (a cascata) criteri di raggruppamento, effettuare un drag and drop dalla zona di destra verso quella di sinistra.
+Za korištenje jednog ili više (kaskadnih) kriterija grupiranja, potrebno je napraviti drag’n’drop kriterija s desne tablice na lijevu. 
 
-La stampa mostrerà a quel punto i dati raggruppandoli a seconda del criterio o dei criteri attivi.
+Ispis će tada prikazati podatke grupirane prema aktivnom kriteriju ili kriterijima.  
 
-I criteri di raggruppamento possono essere poi rimossi o riorganizzati nella posizione (si ricorda che la priorità è dall'alto verso il basso) con i comandi post nella ribbon bar.
+Kriteriji grupiranja mogu se zatim ukloniti ili preurediti po položaju (prioritet je od vrha prema dolje) pomoću naredbi na traci izbornika.  
 
-- Cancella: toglie il criterio di raggruppamento 
-- Rimuovi raggruppamenti: toglie tutti i raggruppamenti
-- Sposta su: in presenza di più criteri sposta quello selezionato più in alto in modo da dare maggiore priorità
-- Sposta giù: in presenza di più criteri sposta quello selezionato più in basso in modo da dare minore priorità
+- Otkaži: uklanja kriterij grupiranja  
+- Ukloni grupiranje: uklanja sve grupiranje  
+- Premjesti gore: ako postoji više kriterija, pomiče odabrani kriterij prema gore kako bi mu se dao veći prioritet  
+- Pomakni dolje: ako postoji više kriterija, pomiče odabrani prema dolje kako bi mu se dao niži prioritet  
 
-Per ulteriori informazioni sul raggruppamento vedere **[Riepilogo movimenti per causale](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
+Za više informacija o grupiranju pogledati **[Pregled knjiženja po shemi knjiženja](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
 
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER  
+[**VIDEO TUTORIJALI O TISKU POREZA**](/docs/video/finance/intro)
 :::
 
 

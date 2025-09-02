@@ -1,48 +1,42 @@
 ---
-title: Liquidazione iva periodica
+title: Obračun PDV-a
 sidebar_position: 5
 ---
 
-Con questa procedura di stampa si procede al calcolo dell'IVA a credito/debito del periodo di riferimento: per questo report non è obbligatorio che siano già stampati i registri IVA del periodo, ma al fine di riportare l'eventuale credito del periodo precedente, ci dovrà essere stata la stampa in definitiva della liquidazione IVA del periodo precedente (oppure un caricamento manuale nella tabella **[Versamenti IVA ](/docs/finance-area/declarations/declarations/vat-payment)** che dà lo stesso risultato di bloccare il periodo IVA in contabilità). Diversamente la stampa potrà comunque essere eseguita ma senza il riporto del credito del mese o trimestre precedente.
+Ovim postupkom ispisa nastavlja se s izračunom PDV-a referentnog razdoblja: za ovo izvješće nije obavezno da su registri PDV-a razdoblja već ispisani, ali kako bi se prijavilo bilo kakvo stanje prethodnog razdoblja, mora postojati konačan ispis plaćanja PDV-a za prethodno razdoblje (ili ručno učitavanje u tablicu **[Plaćanja PDV-a](/docs/finance-area/declarations/declarations/vat-payment)** što daje isti rezultat blokiranja PDV razdoblja u računovodstvu). U suprotnom, ispis se još uvijek može izvršiti, ali bez prijenosa iznosa iz prethodnog mjeseca ili kvartala.
 
+Postavi se referentno razdoblje i godina (pri čemu će razdoblje biti mjesečno ili tromjesečno ovisno o periodičnosti plaćanja PDV-a određenoj u **[parametrima knjiženja](/docs/configurations/parameters/finance/accounting-parameters)**); 
 
+Odabere se Knjiga PDV-a na koju se želi ispisati uplata iz kombiniranog okvira: 
 
-Impostare il periodo e l'anno di riferimento (dove il periodo sarà mensile o trimestrale a seconda della periodicità della liquidazione IVA periodica impostata nei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**); 
+Ispis se može izvršiti u  pregledu ili odmah.
 
-selezionare dalla combo box il registro iva sul quale stampare la liquidazione: 
+Ukoliko je odabrano zadnje razdoblje u godini, bit će omogućena mogućnost ispisa **izračunavanja zaduženja** PDV-a, na temelju čega će se u izvješću prikazati prijave do datuma 20.12.gggg.  
 
-la stampa può essere effettuata in coda al registro vendite o su un registro riepilogativo dedicato (opzione consigliata). 
+**Datum uplate/Modalitet uplate**: ova polja (datum koji se zatim prijavljuje u tekstualnom nizu) dopuštaju da se tekst koji se odnosi na datum i način plaćanja poreza pojavi u ispisu (ili, njihovom izmjenom, dodatna napomena).
 
-Nel caso in cui sia stato selezionato l'ultimo periodo dell'anno si abiliterà la possibilità di stampa/**calcolo dell'acconto** IVA, in base al quale il report riporterà le registrazioni fino alla data del 20/12/yyyy.
+**Prikaži zaglavlje**: flag predložena prema zadanim postavkama: treba je ukloniti samo ako tvrtka i dalje ispisuje na starim obrascima.
 
-**Data versamento / Modalità di versamento**: questi campi (una data che poi viene riportata nella stringa testuale) permettono di far comparire nella stampa una dicitura relativa alla data e modalità di versamento dell'imposta (oppure, modificandoli, un'annotazione libera).
-
- 
-
-**Visualizza intestazione**: flag proposto di default: va tolto solo nel caso in cui la società proceda ancora a stampare su moduli DDTti. 
-
-Stampa **definitiva**: il flag attivo renderà definitiva la stampa bloccando il periodo iva di riferimento ed aggiornando i contatori di pagina del registro sul quale si sta stampando. Permette inoltre di abilitare la sezione sottostante per i giroconti automatici. Inoltre andrà a modificare il periodo di riferimento per farlo corrispondere a quello successivo all'ultimo stampato in definitivo e sarà disabilitato il numero di copie da stampare. 
+**Definitivno**: il flag attivo renderà definitiva la stampa bloccando il periodo iva di riferimento ed aggiornando i contatori di pagina del registro sul quale si sta stampando. Permette inoltre di abilitare la sezione sottostante per i giroconti automatici. Inoltre andrà a modificare il periodo di riferimento per farlo corrispondere a quello successivo all'ultimo stampato in definitivo e sarà disabilitato il numero di copie da stampare. 
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image01.png)
 
- 
 
-L'esecuzione dell'anteprima di stampa in definitivo non basta per bloccare il periodo e aggiornare i contatori: solo l'esecuzione del processo di stampa fisica andrà ad operare il blocco del periodo in contabilità e ad aggiornare il contatore delle pagine della tabella Registri iva (e non è rilevante che il processo di stampa vada a buon fine o meno, potrebbe essere anche una stampa su file).
+Izvršavanje pregleda ispisa u konačnici nije dovoljno za zatvaranje razdoblja i ažuriranje brojača. Samo će izvršenje procesa fizičkog ispisa zatvoriti razdoblje u računovodstvu i ažurirati brojač stranica tablice knjiga PDV-a (i nije relevantno je li postupak uspješan ili ne, to također može biti ispis u datoteku).
 
-La stampa definitiva abiliterà l'opzione di **contabilizzazione liquidazione** (del saldo del periodo): impostando questa opzione l'applicativo attiverà la lista dei conti da utilizzare (riprendendoli dai parametri di contabilità) e l'utente dovrà semplicemente confermare causale e date di riferimento: una volta eseguito il processo di stampa saranno aggiunti in contabilità due registrazioni di giroconto dell'iva acquisti e vendite ai sottoconti di iva a debito/credito sul conto erario C/iva.
+Konačni ispis omogućit će opciju **knjiženje namirenja** (stanja razdoblja): postavljanjem ove opcije aplikacija će aktivirati popis konta koji će se koristiti (preuzimajući ih iz računovodstvenih parametara) te će korisnik samo morati potvrditi razlog i referentni datum. Nakon što je proces ispisa proveden, dva knjiženja prijenosa PDV-a za dugovnu i potražnu stranu bit će dodana na konta na PDV dugovnim/potražni stranama podkonta.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image02.png)
 
 
-
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa della liquidazione. |
-| Stampa | Pulsante per eseguire la stampa fisica della liquidazione. |
+| Prethodni pregled | Tipka za pregled ispisa. |
+| Ispiši | Tipka za fizički ispis. |
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER
+[**VIDEO TUTORIJALI O TISKU POREZA**](/docs/video/finance/intro)
 :::
 
 
