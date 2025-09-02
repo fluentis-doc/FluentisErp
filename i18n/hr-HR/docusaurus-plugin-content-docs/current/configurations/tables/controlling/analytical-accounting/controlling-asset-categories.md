@@ -1,66 +1,52 @@
 ---
-title: Categorie cespiti per il controllo
+title: Kategorija osnovnih sredstava za kontrolu
 sidebar_position: 2
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Categorie cespiti per il controllo**
+Obrazac se nalazi u: **Tablice > Kontroling > Troškovno računovodstvo > Kategorije osnovnih sredstva za kontrolu**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+:::tip Napomena
+Ova je tablica namijenjena tvrtkama koje imaju aktiviranu funkcionalnost *Kontroling*, ali nije obavezna ako se žele primjenjivati računovodstvene logike za vrednovanje amortizacije unutar kontrolinga.
 :::
 
----
+U ovoj tablici definiramo različite tipologije izračuna koje želimo koristiti pri obračunu tehničke amortizacije za potrebe controllinga. Logike upravljačkog računovodstva, kada je riječ o dugotrajnoj imovini, razlikuju se od računovodstvenih logika s ciljem primjene metoda vezanih, primjerice, uz količine proizvedene određenim strojem, umjesto uz njegovu nabavnu vrijednost. Na ovaj način izbjegavaju se iskrivljenja koja proizlaze iz računovodstvenih kriterija amortizacije, koji su često snažno pod utjecajem poreznih pravila. 
 
-Questa tabella serve per definire una serie di logiche standard di GESTIONE DEI CESPITI. 
+#### POLJA TABLICE 
 
-In particolare CONTI DI COSTO e di FONDO specifici per il controllo di gestione. 
+- **Šifra** kategorije
 
-Le logiche del controllo di gestione, relativamente ai cespiti, si discostano da quelle contabili al fine di utilizzare delle logiche legate, ad esempio, alle quantità prodotte da un determinato macchinario, piuttosto che ad un valore di riacquisto.
-Facendo questo si evitano le distorsioni legate, ad esempio, ai criteri di ammortamento contabili che sono fortemente influenzati dalle logiche fiscali. 
+- **Opis** kategorije
 
-I dati contabili e dunque i movimenti sui sottoconti contabili degli ammortamenti, andranno successivamente conguagliati, ovvero riconciliati, con i calcoli effettuati nel modulo controlling.
+- **PODRAČUN TROŠKA** i **PODRAČUN REZERVE** koji će se koristiti: mogu biti isti podračuni povezani s kategorijama dugotrajne imovine u računovodstvu, kako bi se na kraju godine mogle uskladiti dvije logike obračuna, ili pak posebni podračuni za controlling koji se ne koriste u financijskom računovodstvu.
 
-
-:::note Campi tabella
-
-**CODICE / DESCRIZIONE:** Necessari per per distinguere e richiamare le varie logiche che si stanno codificando
-
-**Conto / Sottoconto / Descrizione COSTO:** Widget per inserire il conto contabile desitnato ad accogliere la quota di ammortamento calcolata in modo specifico per il controlling rispetto alla quota ordinaria calcolata per la contabilità
-
-**Conto / Sottoconto / Descrizione FONDO:** Widget per inserire il conto contabile desitnato ad accogliere l'incremento del fondo ammortamento calcolato in modo specifico per il controlling rispetto alla  la contabilità generale
-
-**BASE DI CALCOLO:** Valore sul quale sarà calcolato l'ammortamento per il controlling
-
-> VALORE PATRIMONIALE: il valore di bilancio che sarà la base imponibile dell’ ammortamento 
-
-> VALORE OGGETTIVO: un dato extra-contabile del cespite
-
-> VALORE DI RIACQUISTO: dato specifico del controlling basato sul costo di riacquisto del bene.
-
-**TIPO DI CALCOLO:** Metodo di calcolo che sarà usato nel calcolo ammortamento per il controlling
-
-> PERCENTUALE: sempre un residuo fino a fine vita utile
-
-> PERCENTUALE PERPETUA: finché utilizzo quel cespite, continuo ad ammortizzarlo.
-
-> QUANTITA’: quantità totale che il cespite può produrre nella sua vita utile
-
-> QUANTITA’ PERPETUA: Se continuo a registrare quantità prodotte su quel centro aziendale/cespite continuerò ad ammortizzare ed a assegnare i costi rispetto alla quantità che produco. 
-
-**PERCENTUALE:** Aliquota percentuale per il calcolo della quota di ammortamento (specifica per il controlling)
-
-**USA ATTUALIZZAZIONE PERCENTUALE:** Il flag, riportato anche nella corrispondente tab *Ammortamento per controlling* presente nella scheda cespite, se attivato, fa si che il valore del cespite venga incrementato di anno in anno in base al valore impostato nel campo *Fattore di attualizzazione* nei ** [*Parametri di contabilità* ](/docs/configurations/parameters/finance/accounting-parameters) **. Questa impostazione ha effetto unicamente ai fini dell'ammortamento calcolato in mdo specifico all'interno del modulo Controlling.
-
-**RICREARE I VALORI DI CONTROLLO:** Permette, se attivo, di ricalcolare lo storico dei dati del controlling a seguito del cambiamento di qualche logica. (Ad esempio se ho cambiato in corsa qualche percentuale o caratteristica di quella categoria). 
-
+:::tip Napomena
+Ako se u kontrolingu, u određenim slučajevima, žele koristiti posebni podračuni odvojeni od onih iz glavnog računovodstva, preporučuje se definirati poseban *Tip konta* s uključenom oznakom *Kontroling*, jer se ti podračuni neće moći koristiti, čak ni greškom, u knjiženjima glavnog računovodstva.
 :::
 
----
+- **OSNOVICA ZA IZRAČUN** možemo izabrati između:  
+    - *VRIJEDNOST KAPITALA*, odnosno isti kao u računovodstvu
+    - *OBJEKTIVNA VRIJEDNOST*, izvanračunovodstveni podatak imovine
+    - *PONOVNA VRIJEDNOST*, specifično polje za kontroling
 
-:::tip Nota
+- **VRSTA IZRAČUNA** može imati pet različitih tipova:  
+    - *Postotak*: prema postotku za controlling postavljenom na pojedinom sredstvu
+    - *Trajni postotak*: kao prethodni, ali bez provjere preostale vrijednosti za amortizaciju
+    - *Količina*: za sredstva čiji je vijek trajanja vezan uz određenu teoretsku proizvedenu količinu (npr. kalup koji može izvesti određeni broj otkucaja)
+    - *Trajna količina*: kao prethodni tip, ali bez provjere je li ukupna teoretska količina dosegnuta
+    - *Potpuno u godini*: za potpuno amortiziranje sredstva u godini nabave.
 
-Le categorie inserite in questa tabella, con i relativi settaggi, saranno poi richiamate all'interno delle [**schede cespite**](/docs/finance-area/fixed-assets/fixed-assets-management) nella tab *Ammortamento per controlling*, per associare il singolo cespite alla categoria.
+- **POSTOTAK** ovdje se može unaprijed postaviti postotak za ovu kategoriju, koji će se automatski prenijeti na pojedino sredstvo, ili se polje može ostaviti praznim kako bi se postotak unosio pojedinačno po sredstvu.
+
+- **KORIŠTENJE AŽURIRANJA POSTOTKA** ako je ova oznaka aktivirana (prisutna i na kartici *Amortizacija za kontroling* unutar kartice sredstva), vrijednost sredstva svake se godine povećava u skladu s vrijednošću zadanom u polju *Faktor* ažuriranja u odjeljku [*Parametri računovodstva*](/docs/configurations/parameters/finance/accounting-parameters).
+
+- **OBNOVA KONTROLNIH VRIJEDNOSTI** koristi se u slučajevima kada nismo sigurni koje izvanknjižne kriterije primijeniti za izračun tehničke amortizacije. Budući da izračun amortizacije započinje od godine YYYY, **FluentisERP** mora prvo izračunati preostale vrijednosti na kraju godine YYYY-1. Ako se promijene postotci ili logike, može biti potrebno resetirati početne podatke kako bi se obračuni mogli ponovno ispravno pokrenuti.
+
+:::danger UPOZORENJE
+Budite oprezni pri izmjenama ovih kategorija: ako, primjerice, označite opciju i spremite redak kako biste potvrdili promjenu, **FluentisERP** će vas pitati želite li ažurirati sredstva (cespite) unutar te kategorije.
+Ako potvrdite, a riječ je o kategoriji s postotnim izračunom, ali bez unaprijed postavljenog postotka, sustav će resetirati i postotke na pojedinačnim sredstvima.
+:::
+
+:::tip Napomena
+Kategorije unesene u ovu tablicu, zajedno s pripadajućim postavkama, bit će kasnije dostupne unutar [**kartica sredstva**](/docs/finance-area/fixed-assets/fixed-assets-management) na kartici *Amortizacija za kontroling*, gdje se pojedino sredstvo može povezati s odgovarajućom kategorijom.
 
 :::

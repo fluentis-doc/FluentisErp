@@ -1,5 +1,5 @@
 ---
-title: Categorie cespiti per il controllo
+title: Kategorija osnovnih sredstava za kontrolu
 sidebar_position: 7
 ---
 
