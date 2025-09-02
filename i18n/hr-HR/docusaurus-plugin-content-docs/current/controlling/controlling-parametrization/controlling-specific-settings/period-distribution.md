@@ -1,5 +1,5 @@
 ---
-title: Distribuzione periodi
+title: Distribucija razdoblja
 sidebar_position: 10
 ---
 
