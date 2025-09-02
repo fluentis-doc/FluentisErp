@@ -424,7 +424,7 @@
     "description": "The label for category Contabilità analitica in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabilità gestionale": {
-    "message": "Contabilità gestionale",
+    "message": "Upravljačko računovodstvo",
     "description": "The label for category Contabilità gestionale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contabilità industriale": {
@@ -1344,7 +1344,7 @@
     "description": "The label for category procedure in sidebar controlling"
   },
   "sidebar.controlling.category.contabilità gestionale": {
-    "message": "contabilità gestionale",
+    "message": "Upravljačko računovodstvo",
     "description": "The label for category contabilità gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Registrazioni": {
@@ -1352,7 +1352,7 @@
     "description": "The label for category Registrazioni in sidebar controlling"
   },
   "sidebar.controlling.category.prima nota": {
-    "message": "prima nota",
+    "message": "Pomoćna knjiga",
     "description": "The label for category prima nota in sidebar controlling"
   },
   "sidebar.controlling.category.storico": {
@@ -1940,19 +1940,19 @@
     "description": "The label for category Procedure in sidebar controlling"
   },
   "sidebar.controlling.category.Contabilità gestionale": {
-    "message": "Contabilità gestionale",
+    "message": "Upravljačko računovodstvo",
     "description": "The label for category Contabilità gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Prima nota": {
-    "message": "Prima nota",
+    "message": "Pomoćna knjiga",
     "description": "The label for category Prima nota in sidebar controlling"
   },
   "sidebar.controlling.category.Storico gestionale": {
-    "message": "Storico gestionale",
+    "message": "Povijest upravljačkih knjiženja",
     "description": "The label for category Storico gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Visualizzazione": {
-    "message": "Visualizzazione",
+    "message": "Prikaz",
     "description": "The label for category Visualizzazione in sidebar controlling"
   },
   "sidebar.controlling.category.Parametri controlling": {
@@ -2244,7 +2244,7 @@
     "description": "The label for category Gestione del controlling nelle varie aree in sidebar controlling"
   },
   "sidebar.controlling.category.Storico di progetto": {
-    "message": "Storico di progetto",
+    "message": "Povijest projekta",
     "description": "The label for category Storico di progetto in sidebar controlling"
   },
   "sidebar.guide.category.Introduzione": {
