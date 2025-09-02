@@ -1,30 +1,42 @@
 ---
-title: Distribuzione periodi
+title: Distribucija razdoblja
 sidebar_position: 1
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità gestionale > Distribuzione periodi**
+Obrazac se nalazi na: **Tabelice > Kontroling > Računovodstvo upravljanja > Distribucija razdoblja**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+:::tip Napomena
+Ova je tablica namijenjena isključivo tvrtkama koje imaju aktiviranu funkcionalnost *Kontroling*
 :::
 
----
+U raspodjeli perioda možemo, za svako područje i za svaku godinu, definirati kako će se raspodijeliti naši mjeseci. Dostupna polja su:
 
-In questa tabella è possibile codificare, per ogni anno e per ogni *area* riferita ai centri aziendali, diverse logiche di distribuzione dei movimenti contabili tra i periodi oggetto delle chiusure infrannuali.
+- **Šifra**
+- **Opis**
+- Oznaka **Zadano**
 
-:::tip Esempio
-Generalmente in un sistema di controllo di gestione si ragiona in termini mensili, generando dunque, solitamente, chiusure contabili mensili da elaborare successivamente con ribaltamenti tramite cost driver ecc... In questa tabella possiamo definire come vengono mensilizzati i dati
+:::danger UPOZORENJE
+Obavezno je unijeti barem jedan zapis s ovom oznakom, inače će pri obračunu perioda u controllingu sustav zatražiti unos takvog zapisa.
 :::
 
-Esempio: "Giorni lavorativi" , per una determinata area di analisi si vogliono definire, per l'anno in corso, i giorni lavorativi effettivi di ogni mese. In fase di ripartizione la lettura della logica definita in questa tabella sommerà il totale dei giorni di ogni mese e dividerà il movimento per tale totale giorni e moltiplicherà per il dato del campo **Valore**. In questo modo si ottiene un peso sul totale riferito al singolo mese per il quale si sta ripartendo.
+Ispod se prikazuje popis zapisa za svaki uneseni kod, gdje se nalaze sljedeća polja:
+- [**PODRUČJE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- **GODINA** 
+- **PERIOD**
+- **VRIJEDNOST**, odnosno težina pojedinog perioda unutar godine.
 
-![](/img/it-it/configurations/tables/controlling/managerial-accounting/periods-distribution/image01.png)
+:::tip Primjeri  
+Godinu možemo podijeliti na dvanaestina, ili na jedanaestina uz prilagodbu težina za kolovoz/prosinac i siječanj, ili pak svake godine unijeti stvarne planirane dane proizvodnje za svaki mjesec.
+:::
 
-Ulteriore esempio: la regola degli "Undicesimi" che considera solo undici mesi come operativi ed assegna un peso ad ogni mese, ad es. gennaio 0,75 , febbraio, marzo ecc... 1 , agosto 0,5 ecc....
+*Distribucija perioda* povezuje se na dva mjesta: 
+- U [*Planu konta*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts): možemo odrediti da se određeni podračun, za koji se evidentira raspon datuma, raspodjeljuje prema određenoj distribuciji perioda umjesto po stvarnim danima u zadanom rasponu, što je zadana logika kada distribucija nije definirana.
+- U *Knjizi fizičkih kretanja*, obavezno za *Jedinice mjere* koje su definirane kao *tok*, a ne kao *stanje*.
 
+
+:::tip Napomena
+U obrascu postoji gumb za dupliciranje odabrane distribucije, što je praktično na početku godine za pripremu nove liste koja će vrijediti za novu poslovnu godinu.
+:::
 
 
 
