@@ -1,20 +1,18 @@
 ---
-title: Ricerca Campagne Marketing
+title: Caută Campanii Marketing
 sidebar_position: 1
 ---
 
-La gestione delle campagne marketing in Fluentis è una funzione pensata per supportare e ottimizzare le attività di marketing dell'azienda. Attraverso questa funzionalità, è possibile pianificare, eseguire, monitorare e analizzare campagne di marketing in modo integrato e coordinato, utilizzando i dati già presenti nel sistema gestionale. Di seguito viene spiegato a cosa serve e come può essere utilizzata.
+Această funcționalitate din Fluentis este gândită pentru a sprijini și optimiza activitățile de marketing ale companiei. Permite planificarea, executarea, monitorizarea și analizarea campaniilor de marketing în mod integrat și coordonat, folosind datele deja existente în sistemul de management. 
 
-**Pianificazione delle Campagne Marketing**
-La gestione delle campagne marketing consente di pianificare attività promozionali a breve, medio e lungo termine. È possibile definire gli obiettivi della campagna, il target di riferimento, il budget, le risorse coinvolte e le tempistiche. Questa pianificazione dettagliata aiuta a organizzare le iniziative in modo strutturato, allineandole con la strategia di marketing complessiva dell'azienda.
+## Planificare campanii de marketing  
+Gestionarea campaniilor de marketing permite planificarea activităților promoționale pe termen scurt, mediu și lung. Se pot defini obiectivele campaniei, publicul țintă, bugetul, resursele implicate și calendarul. Această planificare detaliată ajută la organizarea inițiativelor în mod structurat, aliniindu-le cu strategia generală de marketing a companiei.
 
-**Segmentazione e Targeting dei Contatti**
-E' possibile segmentare i contatti in base a criteri specifici attraverso le [Liste di distribuzione](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-search). Questo permette di identificare gruppi specifici di clienti o potenziali clienti su cui focalizzare le campagne, aumentando la rilevanza e l'efficacia delle comunicazioni.
+## Segmentare și targetare contacte  
+Este posibil să segmentați contactele pe baza unor criterii specifice cu [Listele de distribuție](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-search). Acest lucru permite identificarea unor grupuri specifice de clienți sau potențiali clienți asupra cărora să vă concentrați campaniile, crescând relevanța și eficacitatea comunicărilor.
 
-**Esecuzione e Gestione delle Campagne**
-Una volta pianificata la campagna, Fluentis offre strumenti per eseguirla in modo coordinato. È possibile gestire diversi tipi di attività di marketing, come invii di email, campagne social, telefonate, eventi, e altre iniziative promozionali. La gestione delle campagne consente di assegnare compiti ai membri del team attraverso l'assegnazione delle Attività, monitorare lo stato di avanzamento delle attività e coordinare le varie azioni coinvolte nella campagna.
+## Execuție și administrare campanii  
+Odată ce campania a fost planificată, Fluentis oferă instrumente pentru a o executa pe rețele sociale, apeluri telefonice, evenimente și alte inițiative promoționale. Gestionarea campaniilor permite atribuirea task-urilor membrilor echipei prin alocarea activităților, monitorizarea progresului activităților și coordonarea diverselor acțiuni implicate în campanie.
 
-**Analisi dei Risultati e ROI (Return on Investment)**
-La gestione delle campagne marketing in Fluentis include strumenti di reporting che permettono di analizzare i risultati delle campagne, grazie alla possibilità di utilizzare i Workflow. È possibile valutare metriche come il tasso di conversione, il numero di nuovi lead generati, il costo per acquisizione (CPA), e il ritorno sull'investimento (ROI). Questi dati sono fondamentali per comprendere l’efficacia delle campagne, identificare aree di miglioramento e ottimizzare le strategie future.
-
-In sintesi, la gestione delle campagne marketing nel gestionale Fluentis è un potente strumento per orchestrare e ottimizzare le attività di marketing dell'azienda. Dalla pianificazione alla segmentazione, dall'esecuzione al monitoraggio e all'analisi, Fluentis fornisce tutte le funzionalità necessarie per gestire campagne marketing efficaci e per migliorare continuamente le performance grazie a un’analisi dettagliata dei risultati.
+## Analizare rezultate și ROI (Return on Investment)  
+Gestionarea campaniilor de marketing în Fluentis include unelte de raportare care permit analizarea rezultatelor campaniilor, datorită posibilității de a utiliza Workflow. Se pot evalua metrici precum rata de conversie, numărul de noi lead-uri generate, costul per achiziție (CPA) și rentabilitatea investiției (ROI). Aceste date sunt esențiale pentru a înțelege eficacitatea campaniilor, pentru a identifica zonele de îmbunătățire și pentru a optimiza strategiile viitoare.
