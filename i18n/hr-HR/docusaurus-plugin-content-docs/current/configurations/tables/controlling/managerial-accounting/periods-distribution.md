@@ -3,7 +3,7 @@ title: Distribucija razdoblja
 sidebar_position: 1
 ---
 
-Obrazac se nalazi na: **Tabelice > Kontroling > Računovodstvo upravljanja > Distribucija razdoblja**
+Obrazac se nalazi na: **Tablice > Kontroling > Računovodstvo upravljanja > Distribucija razdoblja**
 
 :::tip Napomena
 Ova je tablica namijenjena isključivo tvrtkama koje imaju aktiviranu funkcionalnost *Kontroling*
