@@ -1920,7 +1920,7 @@
     "description": "The label for category Certificati di Analisi in sidebar quality"
   },
   "sidebar.quality.category.Non conformità": {
-    "message": "Non conformità",
+    "message": "Nesukladnosti",
     "description": "The label for category Non conformità in sidebar quality"
   },
   "sidebar.quality.category.Azioni correttive": {
