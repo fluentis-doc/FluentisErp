@@ -402,4 +402,4 @@ Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/ex
 U ovom popisu možete umetnuti i pregledati sve dokumente priložene odabranom *Predmetu nedostatka*.   
 
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   

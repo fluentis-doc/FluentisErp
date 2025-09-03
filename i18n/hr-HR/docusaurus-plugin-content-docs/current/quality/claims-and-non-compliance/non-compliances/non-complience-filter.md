@@ -1,22 +1,22 @@
 ---
-title: Ricerca Non conformità
+title: Pretraga Nesukladnosti
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Reclami e Non conformità > Non conformità**.   
+Filter se nalazi na putanji **Kvaliteta > Reklamacije i Nesukladnosti > Nesukladnosti**.  
 
-Il filtro dati consente di inserire nuove *Non conformità* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+Filtar podataka omogućuje unos novih *Nesukladnosti* ili pretraživanje postojećih kako bi se dokumenti pregledali, izmijenili ili izbrisali.   
 
-### ![](/img/neutral/common/search.png) Ricerca Non conformità
+### ![](/img/neutral/common/search.png) Pretraga Nesukladnosti
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne gumb **Traži** da bi se vidjeli rezultati u području rezultata.   
 
-### ![](/img/neutral/common/new.png) Inserimento Non conformità
+### ![](/img/neutral/common/new.png) Unos Nesukladnosti
 
-Per poter inserire nuovi *Non conformità* è necessario premere il pulsante **Nuovo**.   
+Za unos novih *Nesukladnosti* potrebno je pritisnuti gumb **Novo**.   
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Non conformità
+### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Prikaz Nesukladnosti
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak koji se želi otvoriti, a za odabir jednog ili više redaka, nakon označavanja, pritisnuti tipku **Uredi** ili **Prikaži**.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
