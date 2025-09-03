@@ -1256,7 +1256,7 @@
     "description": "The label for category Reclami in sidebar quality"
   },
   "sidebar.quality.category.non conformità": {
-    "message": "non-compliance",
+    "message": "Nesukladnosti",
     "description": "The label for category non conformità in sidebar quality"
   },
   "sidebar.controlling.category.Controlling obsoleto": {
