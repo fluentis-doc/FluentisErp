@@ -1,23 +1,23 @@
 ---
-title: Liquidazione Iva annuale
+title: Godišnji obračun PDV-a 
 sidebar_position: 4
 ---
 
-La stampa presenta un layout analogo alla **[Liquidazione periodica IVA](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**, rappresenta infatti una totalizzazione dei vari mesi o trimestri dell'anno al fine di supportare la redazione della dichiarazione IVA annuale (attualmente non gestita da Fluentis).
+Ispis ima izgled sličan **[periodičnom obračunu PDV-a](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**, zapravo predstavlja zbroj različitih mjeseci ili tromjesečja u godini kako bi se podržala izrada godišnjeg povrata PDV-a (trenutačno ne upravlja Fluentis).  
 
-**Anno Contabile / Da data registrazione / a data registrazione**: questi filtri relativi al periodo di elaborazione vengono proposti di default con l'anno in corso e con le date di registrazione dal 1/1 al 31/12;
+**Računovodstvena godina / Od datuma registracije / do datuma registracije**: ovi filteri koji se odnose na razdoblje obrade predloženi su prema zadanim postavkama s tekućom godinom i s datumima registracije od 1.1. do 31.12.;
 
-**Da data competenza a / data competenza**: questo filtro è proposto di default come vuoto e si consiglia di non filtrare anche per data competenza (contabile) le registrazioni oggetto della stampa, limitandosi a lavora per data di registrazione, per così dire, "formale";
+**Od datuma obračuna do /  datuma obračuna**: ovaj je filtar prema zadanim postavkama predložen kao prazan i preporučljivo je ne filtrirati registracije koje se ispisuju prema (računovodstvenom) datumu kompetencije, ograničavajući se na rad prema, da tako kažem, "formalno" datum registracije;  
 
-**Liquidazione iva annuale**: flag impostato di default;
+**Godišnji obračun PDV-a**: zastavica postavljena prema zadanim postavkama;
 
-**Comunicazione iva annuale**: non gestito;
+**Godišnja prijava PDV-a**: nije upravljana;
 
-Nella stampa NON è previsto un flag per la versione in definitiva, in quanto formalmente e legalmente saranno stampate in definitiva le liquidazioni dei vari mesi o trimestri e la presente stampa rimane a supporto della redazione della dichiarazione iva annuale su modello ministeriale: è presente comunque un flag per memorizzare il numero dell'ultimo numero di pagina per quanti volessero stamparlo in coda alle liquidazioni dell'anno.
+U ispisu NEMA oznake za konačnu verziju, budući da će plaćanja za različite mjesece ili tromjesečja biti formalno i pravno ispisana, a ovaj ispis ostaje kao potpora pri izradi godišnje prijave PDV-a na ministarskom obrascu: postoji međutim zastavica za pohranjivanje broja posljednje stranice za one koji je žele ispisati na kraju godišnjih plaćanja.
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::important VIDI TAKOĐER
+[**VIDEO TUTORIJALI O TISKU POREZA**](/docs/video/finance/intro)
 :::
 
 
