@@ -1,72 +1,72 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-I documenti gestiti in questo modulo servono per incrementare la Soddisfazione dei clienti, migliorando la qualità dei prodotti e dei servizi, per soddisfare la normativa, raccogliere, catalogare, reperire facilmente le segnalazioni.   
-La gestione comprende la gestione dei Reclami, Prodotti Resi e  Segnalazioni di disservizi.   
-Le informazioni raccolte possono essere un aiuto validissimo per orientarsi tra i difetti e le mancanze dei processi.   
+Dokumenti kojima se upravlja u ovom modulu služe za povećanje zadovoljstva kupaca, poboljšanje kvalitete proizvoda i usluga, za ispunjavanje zakonskih propisa te za prikupljanje, katalogiziranje i jednostavno pronalaženje prijava.
+Upravljanje obuhvaća rukovanje reklamacijama, vraćenim proizvodima i prijavama nedostataka u uslugama.
+Prikupljene informacije mogu biti dragocjena pomoć u snalaženju među nedostacima i manjkavostima procesa.
 
 
-## I documenti gestiti
+## Upravljani dokumenti
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/claims-and-non-compliance/claims/claim">Reclami (da cliente)</Link>
-        <p>I Reclami servono a registrare le insoddisfazione riguardo a un servizio o prodotto, permettendo all'azienda di riconoscere e correggere eventuali problemi. Sono uno strumento per migliorare la qualità e mantenere una buona relazione con i clienti.</p>
-        <p>Tramite il Tipo reclamo sono possibili due diversi modelli di gestione: 8D problem solving e Gestione difetti.</p>
-        <p>Per entrambe i modelli i dati di testata sono gli stessi ed è possibile inserire: la Persona o la Funziona aziendale responsabile del documento, eventuali riferimenti a documenti: Fattura di vendita, DDT di vendita, Ricevimento merci, Progetto, informazioni di approvazione Reclamo: data e chi l’ha approvato, dati relativi all’Audit-trail, informazioni di chiusura gestione Reclamo: data e chi l’ha chiuso.</p>
-        <p>Nella sessione Notifiche vengono gestiti: il motivo della contestazione, a quale Sito produttivo verrà assegnato il reclamo e dati di eventuale non recepimento del reclamo.</p>
-        <p>Nella sessione Valori vengono gestiti: la divisa, i riferimenti dell’eventuale nota di debito ricevuta, i Valori del Reclamo suddivisi in: Totale reclamo, Costo di gestione e valore da accreditare, tutti espressi nella divisa indicata e i riferimenti della Nota di credito, se generata.</p>
-        <p>Il modello di gestione è pilotabile dal Tipo reclamo e la gestione cambia in modo strutturale.</p>
-        **modello: 8D problem solving**
-        <p>Nel Reclamo in modalità 8D Problem Solving la gestione si diversifica nelle due successive sessioni: Oggetti reclamati e Gestione 8D.</p>
-        <p>Nella prima possiamo indicare gli articoli o servizi che il cliente ha contestato.</p>
-        <p>Nella seconda sessione la vera e propria gestione 8D: l’indicazione del team che gestirà il Reclamo con l’indicazione del Team leader; le Azioni di contenimento immediate per assicurare che, nel breve periodo, l’anomalia segnalata non si verifichi nuovamente; l’analisi delle Cause che hanno creano la non conformità; le Azioni permanenti che devono essere attuate per garantire che l’anomalia segnalata non si verifichi nuovamente; la Convalida, nel lungo periodo, che le Azioni permanenti abbiano avuto un effetto desiderato; le Fasi di implementazione delle Azioni intraprese.</p>
-        <p>Per ogni azione di contenimento o permanente e per ogni fase di implementazione è possibile creare un’Azione Correttiva.</p>
-        **modello: gestione difetti**
-        <p>Nel Reclamo in modalità Gestione difetti la gestione si diversifica dalla precedente con la sessione: Gestione difetti.</p>
-        <p>Nella sessione è possibile gestire: più difetti segnalati e, per ognuno: la causa presunta, la fase di rilevazione del difetto, la gravità, la causa effettiva, la soluzione tecnica proposta, la decisione tecnica intrapresa e la risoluzione commerciale; altre sessioni dedicate alla gestione: la sessione degli articoli o servizi che il cliente ha contestato, valorizzabili e con le indicazioni, in caso di reso, di accettazione dello stesso; la sessione di eventuali materiali utilizzati per porre rimedio al difetto segnalato; la sessione per i soggetti coinvolti alla gestione del difetto con le indicazioni di coinvolgimento, data scadenza e della gestione effettuata.</p>
-        <p>Per ogni difetto è possibile creare un’Azione Correttiva ed una o più Non conformità interne, a fornitore o a cliente.</p>
-        <p>Questa gestione permette di allegare documenti a tre livelli: per documento, per singolo difetto e per singolo articolo o servizio.</p>
-        <p>A standard sono disponibili le reportistiche di: Elenco reclami raggruppati per Cliente e Tipo, Autorizzazione al rientro, Notifica di recesso, Scheda Reclamo e dashboards con analisi di Pareto su Difetti riscontrati e Cause.</p>
+###     <Link to="/docs/quality/claims-and-non-compliance/claims/claim">Reklamacije (od kupaca)</Link>
+        <p>Reklamacije služe za bilježenje nezadovoljstva u vezi s uslugom ili proizvodom, omogućujući poduzeću da prepozna i ispravi eventualne probleme. One su sredstvo za poboljšanje kvalitete i održavanje dobrih odnosa s kupcima.</p>
+        <p>Putem tipa reklamacije moguća su dva različita modela upravljanja: 8D rješavanje problema i Upravljanje nedostacima.</p>
+        <p>Za oba modela podaci u zaglavlju su isti i moguće je unijeti: osobu ili poslovnu funkciju odgovornu za dokument, eventualne reference na dokumente (prodajni račun, otpremnicu prodaje, prijem robe, projekt), informacije o odobrenju reklamacije (datum i tko ju je odobrio), podatke vezane uz audit te informacije o zatvaranju upravljanja reklamacijom (datum i tko ju je zatvorio).</p>
+        <p>U odjeljku Obavijesti upravlja se: razlogom prigovora, proizvodnim pogonom kojem će reklamacija biti dodijeljena te podacima o eventualnom neprihvaćanju reklamacije.</p>
+        <p>U odjeljku Vrijednosti upravlja se: valutom, referencama eventualne primljene zadužnice, vrijednostima reklamacije podijeljenima na: ukupan iznos reklamacije, trošak upravljanja i iznos za odobravanje, svi izraženi u naznačenoj valuti, te referencama na odobrenje (ako je izdano).</p>
+        <p>Model upravljanja određuje se tipom reklamacije, a način upravljanja mijenja se na strukturnoj razini.</p>
+        **model: 8D rješavanje problema**
+        <p>Kod reklamacije u načinu 8D rješavanja problema, upravljanje se razlikuje u dva sljedeća odjeljka: Reklamirani objekti i 8D upravljanje.</p>
+        <p>U prvom odjeljku navode se artikli ili usluge na koje se kupac žalio.</p>
+        <p>U drugom odjeljku odvija se stvarno 8D upravljanje: navodi se tim koji će upravljati reklamacijom zajedno s voditeljem tima; definiraju se neposredne korektivne radnje kako bi se osiguralo da se prijavljena nepravilnost u kratkom roku više ne ponovi; provodi se analiza uzroka koji su doveli do nekonformnosti; utvrđuju se trajne mjere koje se moraju provesti kako bi se osiguralo da se prijavljena nepravilnost više ne ponovi; provodi se dugoročna validacija učinka trajnih mjera; te se planiraju faze provedbe poduzetih mjera.</p>
+        <p>Za svaku mjere za ograničavanje ili trajnu mjeru te za svaku fazu implementacije moguće je kreirati Korektivnu radnju.</p>
+        **model: Upravljanje nedostacima**
+        <p>Kod reklamacije u načinu Upravljanje nedostacima, upravljanje se razlikuje od prethodnog kroz odjeljak: Upravljanje nedostacima.</p>
+        <p>U odjeljku se mogu upravljati: više prijavljenih nedostataka, pri čemu se za svaki evidentira: pretpostavljeni uzrok, faza u kojoj je nedostatak uočen, ozbiljnost, stvarni uzrok, predloženo tehničko rješenje, donesena tehnička odluka i komercijalno rješenje; dodatni odjeljci posvećeni upravljanju uključuju: odjeljak s artiklima ili uslugama na koje se kupac žalio, s mogućnošću vrednovanja i, u slučaju povrata, evidentiranja prihvaćanja istog; odjeljak s eventualnim materijalima korištenim za otklanjanje prijavljenog nedostatka; odjeljak s osobama uključenima u upravljanje nedostatkom, uz informacije o stupnju uključenosti, datumu isteka roka i provedenim aktivnostima.</p>
+        <p>Za svaki nedostatak moguće je kreirati Korektivnu radnju te jednu ili više nekonformnosti: interne, prema dobavljaču ili prema kupcu.</p>
+        <p>Ovo upravljanje omogućuje prilaganje dokumenata na tri razine: uz dokument, uz pojedini nedostatak i uz pojedini artikl ili uslugu.</p>
+        <p>U standardu su dostupna izvješća: Popis reklamacija grupiranih po kupcu i tipu, Odobrenje za povrat, Obavijest o odustajanju, Kartica reklamacije te nadzorne ploče s Pareto analizom uočenih nedostataka i uzroka.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/claims-and-non-compliance/non-compliances/non-compliance">Non conformità (a fornitore, interne e a cliente)</Link>
-        <p>Le Non conformità servono a identificare e documentare deviazioni dagli standard o dai requisiti prestabiliti. Questo processo aiuta a garantire che i prodotti, i servizi o i processi siano corretti e migliorati per mantenere la qualità e la sicurezza. Inoltre, facilita l'adozione di azioni correttive per prevenire futuri problemi.</p>
-        <p>Tramite il Tipo non conformità sono possibili tre diverse gestioni di Non conformità: a Fornitore, Interne e a Cliente.</p>
-        <p>Per tutte e tre le modalità le informazioni gestite sono le stesse fatta eccezione per il destinatario della Non conformità; vengono differentemente abilitati: il conto del Fornitore, quello del Cliente, o la Funzione/Area/Reparto.</p>
-        <p>I dati di testata sono: la Persona o la Funziona aziendale responsabile del documento, a quale Sito produttivo verrà assegnata la non conformità, il motivo della contestazione, la proposta di soluzione, la risposta del fornitore, dati relativi all’Audit-trail, informazioni di approvazione Non conformità: data e chi l’ha approvata, informazioni di chiusura gestione Non conformità: data e chi l’ha chiusa.</p>
-        <p>Nella sessione Riferimenti documenti vengono gestiti i riferimenti a documenti che potrebbero aver creato la Non conformità.</p>
-        <p>Nella sessione Valori vengono gestiti: la divisa, i riferimenti dell’eventuale Nota di dedito, se generata, della nota di accredito ricevuta, i Valori della Non conformità suddivisi in: Totale materiale non rilavorato, Totale materiale rilavorato, Costo di gestione, Valore da addebitare e Valore riconosciuto, tutti espressi nella divisa indicata precedentemente.</p>
-        <p>Nella sessione Gestione difetti è possibile gestire: più difetti segnalati e, per ognuno: la causa presunta, la fase di rilevazione del difetto, la gravità, la causa effettiva, la soluzione tecnica proposta, la decisione tecnica intrapresa e la risposta del fornitore; altre sessioni dedicate alla gestione: la sessione degli articoli o servizi che si stanno contestando, valorizzabili e con le indicazioni di eventuali costi di lavorazioni sostenute; la sessione di eventuali materiali utilizzati per porre rimedio al difetto segnalato; la sessione per i soggetti coinvolti alla gestione del difetto con le indicazioni di coinvolgimento, data scadenza e della gestione effettuata.</p>
-        <p>Per ogni difetto è possibile creare un’Azione Correttiva.</p>
-        <p>Questa gestione permette di allegare documenti a tre livelli: per documento, per singolo difetto e per singolo articolo o servizio.</p>
-        <p>A standard è disponibile il report di Scheda Non conformità e dashboards con analisi di Pareto su Difetti riscontrati e Cause.</p>
+###     <Link to="/docs/quality/claims-and-non-compliance/non-compliances/non-compliance">Nesukladnosti (prema dobavljaču, interne i prema kupcu)</Link>
+        <p>Nesukladnosti služe za identificiranje i dokumentiranje odstupanja od standarda ili unaprijed utvrđenih zahtjeva. Ovaj proces pomaže osigurati da proizvodi, usluge ili procesi budu ispravni i poboljšani radi održavanja kvalitete i sigurnosti. Također, omogućuje provedbu korektivnih radnji za sprječavanje budućih problema.</p>
+        <p>Preko tipa nesukladnosti moguće su tri različite vrste upravljanja nesukladnostima: prema dobavljaču, interne i prema kupcu.</p>
+        <p>Za sve tri vrste upravljanja informacije koje se obrađuju su iste, osim primatelja nesukladnosti; različito se omogućuje: račun dobavljača, račun kupca ili funkcija/područje/odjel.</p>
+        <p>Podaci u zaglavlju uključuju: osobu ili poslovnu funkciju odgovornu za dokument, proizvodni pogon kojem će nesukladnost biti dodijeljena, razlog prigovora, predloženo rješenje, odgovor dobavljača, podatke vezane uz audit, informacije o odobrenju nesukladnosti (datum i tko ju je odobrio) te informacije o zatvaranju upravljanja nesukladnošću (datum i tko ju je zatvorio).</p>
+        <p>U odjeljku Reference dokumenata upravlja se referencama na dokumente koji su mogli prouzročiti nesukladnost.</p>
+        <p>U odjeljku Vrijednosti upravlja se: valutom, referencama eventualne zadužnice (ako je izdana) i primljenog odobrenja, te vrijednostima nesukladnosti podijeljenim na: ukupnu vrijednost materijala koji nije prerađen, ukupnu vrijednost materijala koji je prerađen, trošak upravljanja, iznos za naplatu i priznat iznos, svi izraženi u prethodno naznačenoj valuti.</p>
+        <p>U odjeljku Upravljanje nedostacima moguće je upravljati s više prijavljenih nedostataka, pri čemu se za svaki evidentira: pretpostavljeni uzrok, faza u kojoj je nedostatak uočen, ozbiljnost, stvarni uzrok, predloženo tehničko rješenje, donesena tehnička odluka i odgovor dobavljača. Dodatni odjeljci posvećeni upravljanju uključuju: odjeljak s artiklima ili uslugama koje se osporavaju, s mogućnošću vrednovanja i evidencijom eventualnih troškova obrade; odjeljak s materijalima korištenim za otklanjanje prijavljenog nedostatka; te odjeljak s osobama uključenima u upravljanje nedostatkom, uz informacije o stupnju uključenosti, datumu isteka roka i provedenim aktivnostima.</p>
+        <p>Za svaki nedostatak moguće je kreirati Korektivnu radnju.</p>
+        <p>Ovo upravljanje omogućuje prilaganje dokumenata na tri razine: uz dokument, uz pojedini nedostatak i uz pojedini artikl ili uslugu.</p>
+        <p>U standardu je dostupno izvješće Kartica nesukladnosti te nadzorne ploče s Pareto analizom uočenih nedostataka i njihovih uzroka.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Za početak korištenja  
 
-i **Reclami (da cliente)**:
-- devi definire: un [*Tipo Reclamo*](/docs/configurations/tables/quality/claim-and-non-compliance/claim-type) e relativa *Numerazione*, un conto [*Cliente*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o un [*Contatto*](/docs/erp-home/registers/contacts/create-new-contact/general) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
-- per agevolare la gestione dei *Reclami* impostare, per l'anno desiderato, i [*Parametri Reclami e Non conformità*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) nella sessione *Reclami*   
-- devi inserire un nuovo [*Reclamo*](/docs/quality/claims-and-non-compliance/claims/claim)   
+i **Reklamacije (od kupaca)**:
+- treba definirati: jedan [*Tip Reklamacije*](/docs/configurations/tables/quality/claim-and-non-compliance/claim-type) i povezanu *Numeraciju*, konto [*Kupca*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), [*Kontakt*](/docs/erp-home/registers/contacts/create-new-contact/general) i [*Nedostatak*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
+- radi lakšeg upravljanja *Pritužbama* za željenu godinu, postave se [*Parametri Reklamacija i Nesukladnosti*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) u odjeljku *Reklamacija*   
+- mora se unijeti nova [*Reklamacija*](/docs/quality/claims-and-non-compliance/claims/claim)   
 
-le **Non conformità (a fornitore, interne e a cliente)**:
-- devi definire: un [*Tipo Non conformità*](/docs/configurations/tables/quality/claim-and-non-compliance/non-compliance-type) e relativa *Numerazione*, un conto [*Cliente* o *Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o una [*Funzione aziendale*](/docs/configurations/tables/quality/general/company-function) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
-- per agevolare la gestione delle *Non conformità* impostare, per l'anno desiderato, i [*Parametri Reclami e Non conformità*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) nella sessione *Non conformità*   
-- devi inserire una nuova [*Non conformità*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance)   
+za **Nesukladnosti (prema dobavljaču, interne i prema kupcu)**:
+- treba definirati: jedan [*Tip Nesukladnosti*](/docs/configurations/tables/quality/claim-and-non-compliance/non-compliance-type) i povezanu *Numeraciju*, konto [*Kupca* ili *Dobavljača*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), [*Funkciju poduzeća*](/docs/configurations/tables/quality/general/company-function) i [*Nedostatak*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
+- kako bi se olakšalo upravljanje skupom *Nesukladnosti* za željenu godinu, [*Parametri Reklamacija i Nesukladnosti*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) u odjeljku *Nesukladnosti*   
+- mora se unijeti nova [*Nesukladnost*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance)   
 
 
-## Collegamenti con altri moduli
-E' possibile generare:
-- dalla gestione dei *Reclami*, delle [*Non conformità*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) per ogni riga di *Difetto riscontrato*;   
-- sempre dalla gestione dei *Reclami*, delle [*Note di accredito*](/docs/quality/corrective-actions/corrective-action-management) del modulo [*Vendite*](/docs/sales/sales-intro);   
-- dalla gestione delle *Non conformità*, delle [*Note di addebito*](/docs/quality/corrective-actions/corrective-action-management) del modulo [*Vendite*](/docs/sales/sales-intro);   
-- da entrambe le gestioni, delle [*Azioni correttive*](/docs/quality/corrective-actions/corrective-action-management) del [*modulo omonimo*](/docs/quality/corrective-actions/corrective-action-intro).  
+## Veze s drugim modulima
+Moguće je generirati:
+- iz upravljanja *Reklamacijama*, [*Nesukladnosti*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) za svaki redak *Pronađeni nedostatak*;   
+- uvijek iz upravljanja *Reklamacijama*, [*Odobrenja*](/docs/quality/corrective-actions/corrective-action-management) iz modula [*Prodaje*](/docs/sales/sales-intro);   
+- iz upravljanja *Nesukladnosti*, [*Odobrenja*](/docs/quality/corrective-actions/corrective-action-management) iz modula [*Prodaje*](/docs/sales/sales-intro);   
+- iz oba upravljanja, [*Korektivne radnje*](/docs/quality/corrective-actions/corrective-action-management) iz [*modula korektivne radnje*](/docs/quality/corrective-actions/corrective-action-intro).  
