@@ -7,7 +7,7 @@ La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di con
 
 
 :::important A cosa serve
-Questa procedura permette di assegnare massivamente le *Richieste* a *Piani di controllo* già esistenti o di crearne di nuovi.   
+Questa procedura permette di assegnare le Richieste generate durante l’associazione dei Piani di controllo ai Controlli articoli dove non è stato possibile tale associazione. Una volta associato il Controllo al Piano, le prove del Piano di controllo verranno proposte automaticamente al Controllo articoli.   
 Per poter usufruire della funzione di *Associazione*/*Inserimento* è necessario:   
 - dal tabulatore **Richieste** scegliere le righe di *Controlli articolo*;  
 - dal tabulatore **Piani di controllo** scegliere i *Piani di controllo*;      
@@ -35,7 +35,7 @@ Premendo il pulsante vengono eseguite le gestioni dei *Piani di controllo* selez
 ### ![](/img/neutral/common/new.png) Nuovo Piano di controllo   
 Abilitato se si seleziona almeno una riga dalla griglia risultato del tabulatore *Richieste*.   
 Premendo il pulsante viene creato un nuovo *Piano di controllo* contenente gli *Articoli* dei *Controlli articolo* selezionati.   
-Alle righe di **Controllo articolo* selezionate viene associato il *Piano di controllo* appena creato e le righe nascoste.   
+Alle righe di *Richieste* selezionate viene associato il *Piano di controllo* appena creato e le righe *Richieste* vengono nascoste.   
 Per poterle rivedere è necessario agire nell'area filtro indicando il filtro *Già associati* e premere il pulsante **Ricerca richieste**
 
 ### ![](/img/neutral/common/duplicate.png) Scegli Piani di controllo   
@@ -69,10 +69,10 @@ Premendo il pulsante, al *Piano di controllo* selezionato, vengono associati gli
 Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Richieste**.   
 
 
-## Parametri   
+## Proprietà   
 
 In questo tabulatore è possibile indicare i criteri con i quali creare/associare gli *Articoli* ai *Piani di controllo*.   
-I due criteri possibili sono - *Creazione/associazione ad un Piano di controllo*:   
+I due criteri possibili sono:   
 > **Standard**: permette la creazione/associazione di righe di *Controlli articolo* prive di riferimenti a conti *Cliente/Fornitore* a *Piani di controllo* privi di riferimenti a conti *Cliente/Fornitore*.   
 > **Cliente/Fornitore**: permette la creazione/associazione di righe di *Controlli articolo* con riferimenti a conti *Cliente/Fornitore* a *Piani di controllo* con il medesimo conto *Cliente/Fornitore*.   
 

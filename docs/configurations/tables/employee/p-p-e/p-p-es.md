@@ -5,7 +5,7 @@ sidebar_position: 1
 
 La tabella si trova sul percorso **Tabelle > Dipendenti > D.P.I. > D.P.I.**.
 
-In questa tabella è possibile codificare i *D.P.I.* (Dispositivi di Protezione Individuale) che sono utilizzati per categorizzare i *D.P.I.*.   
+In questa tabella è possibile codificare i D.P.I., acronimo di Dispositivi di Protezione Individuale, che gli operatori necessitano di possedere per svolgere determinate mansioni.   
 Alcuni esempi di utilizzo dei *D.P.I.* li troviamo nelle gestioni:
 > **Mansioni** - nel tabulatore *D.P.I. da consegnare*;   
 > **Consegne/Resi D.P.I.**;   
@@ -37,7 +37,7 @@ L'elenco si compone delle seguenti informazioni:
 > **Attivo**: indica se il *D.P.I.* è ancora valido e utilizzabile.   
 > **Uso**: annotazioni libere sull'argomento.   
 > **Prescrizioni o raccomandazioni per l'uso**: annotazioni libere sull'argomento.   
-> **Documentazione disponible**: annotazioni libere sull'argomento.   
+> **Documentazione disponibile**: annotazioni libere sull'argomento.   
 > **Note**: annotazioni libere.
 
 ### Dispositivo di Protezione Individuale utilizzato nelle Mansioni

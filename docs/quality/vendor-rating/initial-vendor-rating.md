@@ -58,10 +58,10 @@ L'elenco si compone delle seguenti informazioni:
 >
 > **Motivo valutazione**: annotazioni libere sull'argomento, è una descrizione della motivazione della valutazione.   
 >
-> **Valutazione**: è la *Valutazione* data al *Fornitore* dell'*Ispettore*.   
+> **Valutazione**: è la *Valutazione* data al *Fornitore* dall'*Ispettore*.   
 > La cella viene colorata con i colori di *sfondo* e di *testo* previsti nella tabella delle *Valutazioni fornitore*.   
-> Se la *Valutazione* attribuita è assoviata ad una *Valutazione fornitore* con *Sospensione automatica* il *Fornitore* valutato verrà *Sospeso* dalla *Data valutazione*.
-> Il ripristino della sospensione deve essere fatta manualmente dalla *Funzione aziendale* preposta.   
+> Se la *Valutazione* attribuita è associata ad una *Valutazione fornitore* con *Sospensione automatica* il *Fornitore* valutato verrà *Sospeso* dalla *Data valutazione*.
+> Il ripristino della sospensione deve essere fatto manualmente dalla *Funzione aziendale* preposta.   
 > Associata una *Valutazione* le informazioni di: *Data valutazione*, *Fornitore* e *Tipo valutazione* non saranno più modificabili.   
 >
 > **Descrizione tipo valutazione**: è la descrizione del *Tipo valutazione*.   

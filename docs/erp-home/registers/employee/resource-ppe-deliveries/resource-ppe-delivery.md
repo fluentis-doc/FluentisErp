@@ -53,7 +53,7 @@ Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca re
 Propone la *Quantità resa* a 0 (zero) in tutte le righe visualizzate nell'*Area risultato*.   
 
 
-### ![](/img/neutral/common/save.png) Salva   
+### ![](/img/neutral/common/save.png) Registra   
 Tutte le righe presenti nell'*Area risultato* con *Quantità consegnata* o *Quantità resa* maggiore di *zero* verranno inserite nello *Storico consegne/resi D.P.I.*, alla data *Consegnato/Reso in data* presenti nell'area *Dati proposti per le consegne/resi*.   
 
 
@@ -71,6 +71,7 @@ Le informazioni contenute in questo expander sono obbligatorie per la registrazi
 L'expander è composto dalle seguenti informazioni:   
 > **Consegnato da/Reso a**: è la *persona* che consegna i *D.P.I.* ai *Dipendenti* / riceve i *D.P.I.* dai *Dipendenti*.   
 > **Consegnato/Reso in data**: è la data consegna/reso dei *D.P.I.* ai *Dipendenti*.   
+> **Firmato**: indica che, le consegne o i resi che verranno effettuate, apporranno l'indicazione di firmato o meno per accettazione.   
 
 
 ### Risultato   
@@ -90,7 +91,6 @@ L'elenco si compone delle seguenti informazioni:
 >> **Consegnata**: è la *Quantità consegnata* del *D.P.I.* al *Dipendente*.   
 >> **Resa**: è la *Quantità resa* del *D.P.I.* dal *Dipendente*.   
 >
-> **Firmato**: indica se il *Dipendente* ha firmato la *Scheda consegna/reso*, per accettazione.   
 > **Uso**: annotazioni libere sull'argomento; viene proposta dall'elenco dei *D.P.I.* previsti per la *Mansione* ricoperta dal *Dipendente*.   
 > **Prescrizioni**: annotazioni libere sull'argomento; viene proposta dall'elenco dei *D.P.I.* previsti per la *Mansione* ricoperta dal *Dipendente*.   
 > **Note**: annotazioni libere.   

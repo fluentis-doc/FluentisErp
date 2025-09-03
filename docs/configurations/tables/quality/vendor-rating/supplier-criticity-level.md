@@ -6,9 +6,7 @@ sidebar_position: 2
 La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Livelli di criticità del fornitore**.
 
 I dati presenti in questa tabella sono utilizzati per attribuire una valutazione ai fornitori.   
-Alcuni esempi di utilizzo dei *Livelli di criticità del fornitore* li troviamo nelle gestioni:
-> **Classi di fornitura** - nel tabulatore *Dati contabili > Dati qualità*.   
-> **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+Un esempio di utilizzo dei *Livelli di criticità del fornitore* la troviamo nella gestione **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

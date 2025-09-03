@@ -17,7 +17,7 @@ I dati presenti in questa gestione sono utilizzati per proporre informazioni nel
 
 ## Generale   
 
-In questa tabulatore è possibile inserire dati da proporre di default nei documenti del modulo *Controllo articoli*.   
+In questo tabulatore è possibile inserire dati da proporre di default nei documenti del modulo *Controllo articoli*.   
 
 ### Tipi prova      
 
@@ -54,9 +54,9 @@ Nell'expander è possibile inserire:
 
 In questa tabulatore è possibile inserire dati:
 > - da proporre di default nei *Controllo articoli*;   
-> - per definire varie colorazioni per riconoscere i vari stati di un *Controllo*;   
+> - per definire varie colorazioni, utilizzate nel filtro di ricerca, per riconoscere vari stati di un *Controllo*;   
 > - per impostare parametri di gestione;   
-> - ricerca e associazione automatica dei *Piani di controllo* da associare al *Controllo articolo*.   
+> - per la ricerca e associazione automatica dei *Piani di controllo* da associare al *Controllo articolo*.   
 
 - **Abilita il rilevamento multiplo valori**: indica l'abilitazione della possibilità di rilevare più valori per ogni prova, in tutte le tipologie di documento.   
 - **Approvazione automatica dei valori rilevati**: indica l'*Approvazione* automatica della *Prova* alla rilevazione dei *Valori* e all'attribuzione automatica dell'*Esito*.   
@@ -108,8 +108,7 @@ Tali colori sono applicati nel *Filtro dei Controlli articolo*. L'elenco si comp
 > - *Controlli con più Piani di controllo*;   
 > - *Controlli ancora da rilevare*;   
 > - *Controlli con esiti Non conformi*;   
-> - *Controlli ancora da rilevare*;   
-> - *Controlli ancora da rilevare*;   
+> - *Controlli ancora da validare*;   
 > - *Controlli già validati*.   
 >
 - **Sfondo**: è il colore applicato allo sfondo della riga del *Controllo articolo* dello stato specifico.   
@@ -125,9 +124,9 @@ Tramite un doppio click sulla cella è possibile selezionare la *Proprietà* des
 
 :::tip *Esempio:*   
 per la tipologia documento *Fattura di Acquisto* è possibile aggiungere il valore della *Proprietà* di testata *Vostro riferimento*.   
-Tramite il doppio click del mouse sulla colonna *Testo 01* viene eseguito l'Help sulle proprietà di riga del documento *Fattura di Acquisto*.   
+Essendo *Vostro riferimento* un’informazione di testo, tramite il doppio click del mouse sulla colonna *Testo 01* viene eseguito l'Help sulle proprietà di riga del documento *Fattura di Acquisto*.   
 Espandere il riferimento *Invoice (Fattura)*, selezionare la proprietà *Your reference (Vostro riferimento)* e premere il pulsante *Seleziona*.   
-Nella cella dove è stato effettuata la selezione comparirà la proiprietà *YourReference*.
+Nella cella dove è stata effettuata la selezione comparirà la proprietà *YourReference*.
 :::
 
 ### Personalizzazione intestazioni colonne per tipo documento      
@@ -140,7 +139,7 @@ Tramite un doppio click sulla cella è possibile selezionare la *Voce del dizion
 
 :::tip *Esempio:*   
 per la tipologia documento *Fattura di Acquisto* è possibile indicare l'intestazione corrispondente all'esempio fatto precedentemente per il valore della *Proprietà* di testata *Vostro riferimento*.   
-Tramite il doppio click del mouse sulla colonna *Testo 01* o digitando manualmente la *Voce del dizionerio* inserire *Vostro riferimento*.   
+Tramite il doppio click del mouse sulla colonna *Testo 01* o digitando manualmente la *Voce del dizionario* inserire *Vostro riferimento*.   
 :::
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
