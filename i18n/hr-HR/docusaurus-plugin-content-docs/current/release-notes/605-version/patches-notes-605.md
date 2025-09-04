@@ -1,212 +1,184 @@
 ---
-title: Patch notes Versione 605
+title: Patch notes version 605
 sidebar_position: 1
 ---
 
-<details>
-<summary>Patch 605.1-0001: 28/06/2022</summary>   
 
-- MPS: Risolto problema del rilascio di un ordine di produzione con nel ciclo una sola fase esterna, ora crea ordine di produzione e ordine di conto lavoro.         
-- MES: Corretto rilascio degli ordini pianificati di item con di distinta base con articoli fittizi.   
+## Patch 605.1-0013: 09/23/2022
 
-</details>
+> - FI: automatic account closure: wrong calculations (#TT02397/22)      
+> - ARM: fix for workflow attachments      
+> - ARM: New Table Validation: The old schema must not be null when the old table name is not empty.      
+> - CO: Anomaly in reclassified balance calculations (#TT02427/22)      
 
-<details>
-<summary>Patch 605.1-0002: 29/06/2022</summary>      
+## Patch 605.1-0012: 09/15/2022
 
-- PR: Revisione per campo null nelle spese per operazione (#TT01774/22)        
-- Aggiornamento righe di configurazione di BizLink orfane         
-- Modifica per prevenire un errore che veniva generato quando veniva creato il file xml della fattura di acquisto  
+> - SD: In the duplicate sales invoices, the agent category is now also reported if present (#TT02409/22)      
+> - Alignment of CashFlow export to new functionalities      
+> - Extradata: Extradati based on data sources with propagation case      
+> - FI: Change in Romanian logic for 390      
+> - SD: Fixed error when trying to open card items in SalesDeliveryNote (#TT02485/22)      
+> - SH: Datasources: removed the "AdvancedClass" property not used by the user interface      
+> - CO: automatic account closure: wrong calculations (#TT02397/22)      
+> - FI: modified the print of the book of depreciable assets in Fluentis2021 for managing the display of sold/destroyed assets (#TT02000/22)      
+> - MPS: Fixed MPS Definition: data filter problem (#TT02502/22)      
+> - FI: recalculated VAT and ledgers of the general ledger when the exchange rate of recording is modified (#TT02481/22)      
+> - SCM: NIr: Fixed timeout when opening the edit module (#TT02512/22)      
+> - CRM: resolved activity creation from suspended activities entered in the Workflow (#TT02480/22)      
 
-</details>    
+## Patch 605.1-0011: 09/09/2022
 
-<details>
-<summary>Patch 605.1-0003: 01/07/2022</summary>       
+> - Fixed datetime parser bug in script reference      
+> - Fixed Blockly region update bug      
+> - SCS: Bug Fixed: Corrected single and multiple selection in serial number help in job order DDT.      
+> - SH : company: increased size for SHC_PostalCode to 10 characters and SHC_VATOffice to 50 characters (#TT02238/22)      
+> - PM: intervention valuation, managed grouping of invoice plan lines in the invoice also based on the "taxed price" flag in the invoice. (#TT02309/22)      
+> - FI: automatic account closure (#TT02397/22)      
+> - Increased '2xTap' times and added fixes for the 'Xamarin' scheduler      
+> - FI: adjustments: resolved outgoing exception when trying to control adjustment calculation (#TT02401/22)      
+> - FI: resolved anomaly in accounting compensation with negative values, with flag disabled for sign reversal for values less than zero. (#TT02356/22)      
+> - CO: review of project hours recovery management to convert according to UM settings (#TT02157/22)      
+> - FI: Declarations 300 and 3xx: changes for RO logic (#TT02431/22)      
+> - Fixed the creation of DDT from Picking in some cases (#TT02416/22)      
+> - FI, SCM: Error in assignment of electronic purchase invoices to records (#TT02350/22)      
+> - FI, SCM: XML purchase linkage to accounting records (#TT01403/22)      
+> - SCM: Rounding problem in general ledger registration in accounting of purchase invoices for RO (#TT02445/22)      
+> - SD: in Italian electronic invoicing, in the 'Checked' step, a new check on the presence of the ISO code and VAT number of the 'supplier' of self-invoices has been added (both in the main registry and in its possible alternative address of type 'tax representative') (#TT02411/22)      
+> - CO: review DDT filter in purchase valuation area (#TT02258/22)      
+> - PR: risk management: increased RSUE_Descr1 size to 80 characters (#TT02392/22)      
+> - Bizlink: Export cash flow for DocFinance: Fluentis2021 (#TT02451/22)  
 
-- Aggiornamento template per client script ObjectForm      
-- FI: 394 fix dichiarazione      
+## Patch 605.1-0010: 08/31/2022
 
-</details>
-   
-<details>
-<summary>Patch 605.1-0004: 06/07/2022</summary>     
+> - SD: Bug fixed: corrected bug in updating production order when customer order data changes (#TT02232/22)      
+> - CO: in controlling, review calculation of 'Project cost recovery' for Fluentis2021      
+> - SCS: Job order fulfillment      
+> “SCS: Corrected job order fulfillment, the job becomes fulfilled once the job order is in 'Fulfilled' or 'Forced Fulfilled' state.”
+> - SCM: Purchase order fulfillment       
+> “SCM: Corrected purchase order fulfillment, the job becomes fulfilled when all documents generated from it are in 'Fulfilled' or 'Forced Fulfilled' state (R.D.A. and Supplier Orders).”      
+> - PM: resolved anomaly on rollback of invoices generated by interventions, resetting the status to "checked" for all non-billed interventions, not just those subject to rollback (#TT02233/22)      
+> - PM: resolved anomaly on rollback of invoices generated by interventions, resetting the status to "checked" for all non-billed interventions, not just those subject to rollback (#TT02233/22)      
+> - PM: in interventions, for incurred expenses, a preview of attachments was added (#TT02187/22)      
+> - PM: in interventions, filling in the "description of activities performed" field for a service, if the max allowed characters were exceeded, the field was reset. Now replaced with input blocking without field reset (#TT02186/22)      
+> - ARM: Default sending address added for emails sent with a Workflow action. If not set, the email address of the operator performing the workflow advancement will be used.      
+> - PM: changing the "actual time" and "rounding" fields in an intervention invoice plan would not recalculate the quantity field. Resolved. (#TT02067/22)      
+> - PM: new activity insertion for resource, the proposed date automatically considers the working hours for the resource, suggesting any missing time slots for the day. If inserting a date overlapping with another activity, it asks whether to proceed. If inserting an activity date that is non-working, it will be flagged. (#TT02104/22)      
+> - PM: for some extratime lines (related to travel hours), the taxed price field in the invoice plan was not being valued. Resolved (#TT01592/22)      
+> - PM: in invoice plan calculation, for certain cases where travel is partially included in services, there were anomalies in conversion of actual time. Resolved (#TT01561/22)      
+> - PM: in invoice plan calculation, in the case of including travel hours in services for which the travel hours are totally in extratime, one line remained at 0. Resolved (#TT01968/22)      
+> - PM: improved activity generation from interventions, including automatic insertion of the activity upon changing intervention state to “approved”. A new field “activity category” was added in expenses, used in the case of activity generation from travel hours; in activities generated from interventions, only incurred expenses are reported, not those to be billed (#TT01516/22)      
+> - PM: intervention valuation, in the case of service lines with and without WIP in the same intervention, invoice line groupings take WIP into account. Therefore, in the invoice, there will be two separate groupings for lines with and without WIP, with the corresponding reversed entry (#TT02047/22)      
+> - PM: in the case of changing resources in an intervention, incurred and billable expenses and the corresponding invoice plan are recalculated, consistent with the resource and the expected configurations (#TT02319/22)      
+> - FI: CashFlow: resolved bug in detailed cashflow analysis printing phase (#TT02183/22)      
+> - PM: in the rollback of the activity generation procedure from intervention, new filters were added for searching documents to perform the rollback: search by date/number/customer/resource of the intervention, by date/number/customer/resource of the activity. (#TT02313/22)      
+> - FI: error in using the 'Accounting Commission' procedure in the Finance area:-> professional man (#TT02356/22)      
+> - FI: automatic account closure (#TT02370/22)      
+> - SCS: Bug Fixed. Corrected a bug in DDT and Job Returns that did not allow the display of lines to import in “Fulfillment from orders” when the DDT or the Return was deleted respectively (#TT02366/22)   
 
-- PM: Risolta anomalia in salvataggio interventi, nel caso di wbs senza prezzo o quantità collegate alle righe di servizi (#TT01839/22)      
-- SH: fix extradata basati su DataSource      
-- MPS: questo messaggio di errore "Errore: Articolo di Produzione Bloccato o senza la Distinta Base richiesta o Distinta ciclica", verrà sostituito da dei messaggi con l'indicazione specifica dell'errore, quindi in merito al flag "bloccato per produzione" fra parametri rmrp e al flag "non necessario autorizzazione" in the "Errore: Articolo di Produzione Bloccato o senza la Distinta Base richiesta o Distinta ciclica" distinta base.      
-- Allineamento Xamarin con l'ultima versione di Trk            
-- Aggiunto CheckRowManagement (Gestione Spunte) form per la piattaforma Xamarin e cambiamento CheckRowManagement ViewModel per Wpf      
-- MES: Rilascio ordini pianificati: In caso di fasi esterne, la procedura non generava correttamente gli ordini di conto lavoro e non proponeva correttamente i materiali da consegnare e da impiegare      
-- Aggiunto script di ricompilazione automatica per le nuove versioni installate      
-- FI: Risolta eccezione uscente nello Scarica tassi di cambio (#TT01880/22)      
-- SD: Nella creazione file Sdi fatture di vendita, gestione della sezione del 'rappresentante fiscale' del cedente/prestatore (es. caso di autofatture TD19). La sezione viene valorizzata se nell'anagrafica del cedente/prestatore si definisce un indirizzo alternativo di tipo 'Rappresentante fiscale' (#TT01915/22).      
-- MRP: Corretto l'algoritmo che, in alcuni casi, generava ordini pianificati con quantità doppie.      
-- MRP: Ora gli ordini cliente non confermati e senza le date di consegna e di merce pronta non vengono più presi in considerazione dall'mrp, se nei parametri mrp per gli ordini clienti c'è il flag sulla voce "Non considerare gli articoli privi di data consegna      
-- FI: File per Dichiarazioni di Intento in Fluentis2021 (#TT01902/22)  
 
-</details>
+## Patch 605.1-0009: 08/05/2022
 
-<details>
-<summary>Patch 605.1-0005: 08/07/2022</summary>     
+> - Fixed bug in managing accounting movement description from Excel      
+> - SD: Validation rules for e-Invoice Romania for Checked state (#TT01987/22)      
+> - SD: Fix SalesInvoice-added new item errors in documents (#TT02179/22)      
+> - MRP: bug fixed: corrected a bug in the MRP procedure when the "Differentiate confirmed production demand" flag is activated.      
+> - FI: intrastat: modified allocation of allocated expenses to exclude down payment/storno down payment lines. Revised assignment of the bis/ter section based on the document header reference date (#TT02074/22)      
+> - Xamarin: WM: The Input Code widget did not gain focus when the DetailsConfirmation tab was selected; corrected the exception that occurred when creating a new load unit was canceled, in the DetailsConfirmation tab; correction of the "Open load unit" button (located on the ribbon), which was not enabled when a line in the Details tab was selected.      
+> - added support for commands in auto-completion      
+> - SD: Corrected invoice discharge procedure (#TT02239/22)       
+> - Xamarin: SH: Correction of a bug preventing saving and taking photos on Xamarin      
+> - Xamarin: Framework: Correction of permissions for camera and localization of the popup    
 
-- PM: Risolta cancellazione interventi, nel caso di interventi senza righe di servizi o materiali, non veniva effettuata (#TT01789/22)      
-- PM: Risolta anomalia spese sostenute negli interventi, nel caso di abilitazione flag "Da Rimborsare" il campo importo spesa impostato uguale al campo "costo totale" (azzerato). Ora il valore viene mantenuto (#TT01939/22)      
-- SH: nel piano dei conti, revisione gestione pulsante nuovo sottoconto quando il precedente non è ancora salvato e manca della descrizione (#TT01936/22)      
-- PM: Creazione SalesInvoice da Project Sal: modifica pagamenti (#TT01515/22)      
-- PM: Risolto inserimento nuove righe di WBS, in caso di progetto con gestione gannt dava errore. (#TT01922/22)      
-- PM: variando il cliente intestatario di un progetto con conferma di aggiornamento listini, articoli , etc, in caso di prezzo nullo per wbs non permetteva il salvataggio senza dare alcun messaggio di alert (#TT01927/22)      
-- PM: nel caso di utilizzo di parentesi quadre dentro la descrizione di una wbs, generava errore in apertura del progetto dopo il salvataggio (#TT01790/22)      
-- PM: aprendo un intervento con Fluentis in lingua diversa da italiano, nell’invoice plan mostrava i campi relativi al prezzo con valuta estera specifica per la lingua impostata.     
 
-</details>
+## Patch 605.1-0008: 07/27/2022
 
-<details>
-<summary>Patch 605.1-0006: 15/07/2022</summary>    
+> - FI: communication of periodic VAT settlement, export revision from button in Fluentis2021 (#TT02094/22)      
+> - WM: Cost Calculation: bug fixed for execution of Cost Calculation for Selected Items.      
+> - Fixed bug in importing text files on Linux systems      
+> - PM: added possibility to generate activities from interventions via the procedure, also for interventions with “approved” status (#TT02059/22)      
+> - Changes to PM module, FI module, SH module, CRM module, Xamarin framework, for the fix of specific CRM forms (mobile app only)      
+> - ModalFormParameter: added support for PasswordBoxEdit control  
 
-- SalesInvoice: correzione esecuzione da SalesDeliveryNote: problema alle righe note.      
-- CO- data retrieve dalla produzione (#TT01956/22)      
-- PM: la ricerca interventi applicando un filtro per articolo generava un'anomalia, che è stata risolta (#TT01967/22)      
-- PM: risolta anomalia in generazione attività da cambio stato intervento in "approvato". In presenza di parametri progetti :per operatore, funzionava solo per l'intervento specificato nei parametri. Ora è funzionante per tutte le tipologie interventi. (#TT01566/22)      
-- CO: revisione stampe bilancio infrannuale nel controlling      
-- SH: risolta anomalia in visualizzazione fattura acquisto elettronica, verificata per certe casistiche in cui il file aveva estensione .XML scritta in maiuscolo (#TT01855/22)      
-- PM: negli interventi pianificati modificando la data inizio, viene richiesto se aggiornare anche le date seguenti (pausa e fine) nella videata. Rispondendo affermativamente non sempre venivano proposti gli orari corretti in base al turno di lavoro della risorsa. La casistica è stata risolta (#TT01594/22)      
-- PM: procedura di generazione interventi da attività, nella lingua romena dava un messaggio incompleto cliccando sul bottone di crea intervento. Risolto (#TT01894/22)      
-- MRP: Ora la procedura cancella correttamente gli ordini pianificati, non legati a commesse, ad ogni esecuzione per poi ricrearli. Inoltre, corretto anche il funzionamento del parametro "GG raggruppamento" presente nei parametri mrp.      
-- MPS: Schedulazione: Nel caso in cui vengano selezionate una o più commesse, la procedura schedula correttamente solo presenti nella selezione.      
-- PM: migliorata gestione di cancellazione di attività/interventi collegati tra loro e con gli sprint.       
-o	Nel caso di cancellazione intervento già inserito nello sprint, viene cancellato anche il riferimento all’intervento nello sprint.            
-o	Nel caso di cancellazione di ore viaggio presenti nell’intervento per cui è stata generata un’attività collegata, viene cancellata anche la relativa attività.       
-o	Nel caso di cancellazione di un intervento che ha generato una o più attività collegate, vengono cancellate anche le relative attività.      
-o	Nel caso di cancellazione di un intervento che è stato generato DA una o più attività, viene cancellato solo l’intervento, mentre le attività rimangono e viene ripristinato il flag “fatturato” = falso.          
-- Aggiunte API scripting per gestione controlli e relativi widgets Blockly      
-- PM: cancellando le ore di viaggio da interventi già approvati, dava un errore in quanto presente un'attività collegata alle ore di viaggio. La casistica è stata risolta cancellando anche le attività collegate alle ore di viaggio dell'intervento (#TT01893/22)      
-- MRP: Nel tab risultati dell' MRP la data dei documenti presente nel campo "descrizione azione da intraprendere" è correttamente nel formato della lingua selezionata.      
-- PM: migliorata generazione attività da conferma periodo ferie/permessi, non generava correttamente tutte le attività se nello stesso periodo erano già presenti altre dichiarazioni attività. (#TT01835/22)      
-- PM: la modifica della data attività nella dichiarazione attività, comporta il ricalcolo degli altri campi "ora inizio/ora fine/ora inizio pausa/ora fine pausa". Altrettanto, se si modifica il campo "ora inizio", il campo "data attività" viene aggiornato (#TT02018/22)      
-- PM: cambio stato intervento da ribbon bar da "inserito" in "da approvare", non riusciva ad effettuare il calcolo invoice plan . Risolto. (#TT01997/22)      
-- PM: se un intervento è stato approvato e quindi ha generato un'attività collegata, vengono bloccati alla modifica i seguenti campi: cliente (in testata intervento), risorsa/data/ore/descrizione/progetto/categoria di attività/ticket (nei servizi). Gli altri campi (es. prezzo, iva, .W.I.P., percentuale di avanzamento, etc) invece possono essere modificati. (#TT02012/22)      
-- Sh: Gestione proprietà StatiscticalAgent (#TT02005/22)   
 
-</details>
+## Patch 605.1-0007: 07/19/2022
 
-<details>
-<summary>Patch 605.1-0007: 19/07/2022</summary>
+> - FI: revised handling of end-of-line characters for Intrastat files (#TT02075/22)      
+> - MRP: The MRP procedure correctly generates planned orders even if the parameters do not have all the active flags related to the creation of planned orders for: purchase, job order, and production.      
+> - PM: from the rollback procedure of "activity generation from interventions," it became possible to rollback activities related to both services and travel hours (#TT01999/22)      
+> - PM: resolved anomaly where incurred expenses in the intervention were not correctly reported in the corresponding activities generated from the intervention (#TT02001/22)      
+> - WM: Cost Calculation: bug fixed for execution of Cost Calculation for Selected Items  
 
-- FI: revisione gestione caratteri di fine riga per file Intrastat (#TT02075/22)      
-- MRP: La procedura MRP genera correttamente gli ordini pianificati anche se ne parametri non sono tutti attivi i flag relativi alla creazione degli ordini pianificati di: acquisto, conto lavoro e produzione.      
-- PM: dalla procedura di rollback di "generazione attività da interventi", reso possibile il rollback delle attività relative sia dei servizi che delle ore di viaggio (#TT01999/22)      
-- PM: risolta anomalia per cui le spese sostenute nell'intervento non venivano riportate correttamente nelle corrispondenti attività generate dall'intervento (#TT02001/22)      
-- WM: Calcolo Costi: bug fixed per esecuzione Calcolo Costi Articoli Selezionati   
 
-</details>
+## Patch 605.1-0006: 07/15/2022
 
-<details>
-<summary>Patch 605.1-0008: 27/07/2022</summary>     
+> - SalesInvoice: correction execution from SalesDeliveryNote: issue with note lines.      
+> - CO: data retrieval from production (#TT01956/22)      
+> - PM: searching for interventions applying a filter for items generated an anomaly, which has been resolved (#TT01967/22)      
+> - PM: resolved anomaly in activity generation from intervention state change to "approved". In the presence of project parameters :per operator, it only worked for the intervention specified in the parameters. Now it works for all types of interventions. (#TT01566/22)      
+> - CO: revision of interim balance prints in controlling      
+> - SH: resolved anomaly in electronic purchase invoice visualization, checked for certain cases where the file had an extension of .XML written in uppercase (#TT01855/22)      
+> - PM: in planned interventions, when changing the start date, it is asked whether to also update the following dates (pause and end) in the display. Responding affirmatively did not always propose the correct times based on the working shift of the resource. This case has been resolved (#TT01594/22)      
+> - PM: procedure for generating interventions from activities, in Romanian, gave an incomplete message when clicking the create intervention button. Resolved (#TT01894/22)      
+> - MRP: The procedure now correctly deletes non-linked scheduled orders with each execution to recreate them. Additionally, the functionality of the "Grouping GG" parameter present in the MRP parameters has also been corrected.      
+> - MPS: Scheduling: If one or more job orders are selected, the procedure correctly schedules only those present in the selection.      
+> - PM: improved management of cancellation of activities/interventions linked to each other and with sprints.       
+>> 1. When canceling an intervention already included in the sprint, the reference to the intervention in the sprint is also deleted.            
+>> 2. When canceling travel hours present in the intervention for which a linked activity has been generated, the corresponding activity is also deleted.       
+>> 3. When canceling an intervention that has generated one or more linked activities, the corresponding activities are also deleted.      
+>> 4. When canceling an intervention that has been generated BY one or more activities, only the intervention is deleted, while the activities remain and the "billed" flag is restored to false.          
+> - Added API scripting for control management and related Blockly widgets      
+> - PM: when deleting travel hours from already approved interventions, an error occurred as a linked activity was present for the travel hours. This case has been resolved by also deleting the activities linked to the travel hours of the intervention (#TT01893/22)      
+> - MRP: In the MRP results tab, the date of the documents present in the "action description" field is correctly formatted according to the selected language.      
+> - PM: improved generation of activities from confirmation of leave/permit period, did not correctly generate all activities if other activity declarations were already present in the same period. (#TT01835/22)      
+> - PM: changing the activity date in the activity declaration causes recalculation of the other fields "start hour/end hour/start pause hour/end pause hour". Likewise, if the "start hour" field is modified, the "activity date" field is updated (#TT02018/22)      
+> - PM: changing the intervention state from the ribbon bar from "entered" to "to be approved," failed to calculate the invoice plan. Resolved. (#TT01997/22)      
+> - PM: if an intervention has been approved and thus generated a linked activity, the following fields are locked from modification: customer (in the intervention header), resource/date/hours/description/project/activity category/ticket (in services). Other fields (e.g., price, VAT, .W.I.P., progress percentage, etc.) can still be modified. (#TT02012/22)      
+> - SH: Management of StatisticalAgent property (#TT02005/22)  
 
-- FI: comunicazione liquidazione iva periodica, revisione export da pulsante in form Fluentis2021 (#TT02094/22)      
-- WM: Calcolo Costi: bug fixed per esecuzione Calcolo Costi Articoli Selezionati.      
-- Risolto bug in importazione file di testo su sistemi Linux      
-- PM: aggiunta possibilità di generare attività da interventi da procedura, anche per gli interventi con stato "approvato" (#TT02059/22)      
-- Cambiamednto di PM module, FI module, SH module, CRM module, Xamarin framework, per il fix di specifiche forms CRM (solo mobile app)      
-- ModalFormParameter: aggiunto supporto per il controllo PasswordBoxEdit     
 
-</details>
+## Patch 605.1-0005: 07/08/2022
 
-<details>
-<summary>Patch 605.1-0009: 05/08/2022</summary>     
+> - PM: Resolved cancellation of interventions, in the case of interventions without service or material lines, it was not carried out (#TT01789/22)      
+> - PM: Resolved anomaly in expenses incurred in interventions, in the case of enabling the "To Be Reimbursed" flag, the expense amount field was set equal to the "total cost" field (zeroed). Now the value is maintained (#TT01939/22)      
+> - SH: in the chart of accounts, revision of management of the new subaccount button when the previous one is not yet saved and lacks a description (#TT01936/22)      
+> - PM: Creation of SalesInvoice from Project Sal: payment modification (#TT01515/22)      
+> - PM: Fixed insertion of new WBS lines, in the case of a project with gantt management gave an error. (#TT01922/22)      
+> - PM: changing the customer holder of a project with confirmation of price list updates, items, etc., in the case of a null price for WBS would not allow saving without giving any alert message (#TT01927/22)      
+> - PM: in case of using square brackets in the description of a WBS, it generated an error opening the project after saving (#TT01790/22)      
+> - PM: opening an intervention with Fluentis in a language other than Italian, in the invoice plan displayed the price fields with a specific foreign currency for the set language.    
 
-- Risolto bug gestione descrizione movimento contabile da Excel      
-- SD: Validation rules per e-Invoice Romania per lo stato Controllata (#TT01987/22)      
-- SD: Fix SalesInvoice-aggiunti nuovi errori articolo nei documenti (#TT02179/22)      
-- MRP: bug fixed: corretto un bug nella procedura MRP nel caso in cui il flag "Differenzia domanda di produzione confermata" sia attivato.      
-- FI: intrastat: modifica attribuzione spese ripartite per escludere le righe acconto/storno acconto. Revisione assegnazione della sezione bis/ter sulla base della data riferimento in testata documento (#TT02074/22)      
-- Xamarin: WM: Il widget Codice di input non otteneva il focus quando è selezionata la scheda DettagliConferma; corretta l'eccezione che si verificava quando veniva annullata la creazione di una nuova unità di carico, nella scheda DettagliConferma; correzione del pulsante "Apri unità di carico" (posizionato sulla barra multifunzione), non era abilitato quando era selezionata una riga nella scheda Dettagli.      
-- aggiunto il supporto per i comandi nel completamento automatico      
-- SD: Corretto procedura di scarico fattura (#TT02239/22)       
-- Xamarin: SH: Correzione di un bug che impedisce di salvare e scattare foto su Xamarin      
-- Xamarin: Framework: Correzione delle autorizzazioni per la fotocamera e localizzazione del popup     
 
-</details> 
+## Patch 605.1-0004: 07/06/2022
 
-<details>
-<summary>Patch 605.1-0010: 31/08/2022</summary>     
+> - PM: Resolved anomaly in saving interventions, in the case of WBS without price or quantity linked to service lines (#TT01839/22)      
+> - SH: fix extradata based on DataSource      
+> - MPS: this error message "Error: Production Item Blocked or without the required Bill of Materials or cyclic bill," will be replaced by messages specifying the error, thus regarding the "blocked for production" flag between rmrp parameters and the "no authorization needed" flag in the "Error: Production Item Blocked or without the required Bill of Materials or cyclic bill" bill of materials.      
+> - Alignment of Xamarin with the latest version of Trk            
+> - Added CheckRowManagement form for the Xamarin platform and changed CheckRowManagement ViewModel for Wpf      
+> - MES: Release of planned orders: In the case of external phases, the procedure did not correctly generate job orders and did not propose materials to deliver and use correctly.      
+> - Added automatic recompilation script for newly installed versions      
+> - FI: Resolved outgoing exception in Download exchange rates (#TT01880/22)      
+> - SD: In the creation of Sdi sales invoice files, management of the section of the 'tax representative' of the supplier (e.g., case of self-invoices TD19). The section is populated if an alternative address of type 'Tax Representative' is defined in the supplier's registry (#TT01915/22).      
+> - MRP: Corrected the algorithm that, in some cases, generated planned orders with double quantities.      
+> - MRP: Now, unconfirmed customer orders without delivery and goods ready dates are no longer considered by MRP, if the MRP parameters for customer orders have the flag on the "Do not consider items without delivery date" option.      
+> - FI: File for Declarations of Intent in Fluentis2021 (#TT01902/22)  
 
-- SD: Bug fixed: corretto bug nell'aggiornamento della commessa di produzione al variare dei dati presenti nell'ordine cliente (#TT02232/22)      
-- CO: nel controlling, revisione calcolo ‘Ripresa costi di commessa’ per Fluentis2021      
-- SCS: Evasione commessa di conto lavoro      
-“SCS : Corretta l’evasione delle commesse di conto lavoro, la commessa diventa evasa una volta che l’ordine di conto lavoro risulta in stato “Evaso” o “Forz. Evaso”.”
-- SCM: Evasione commessa di acquisto       
-“SCM : Corretta l’evasione delle commessa di acquisto, la commessa diventa evasa quando tutti i documenti generati da essa risultano in stato “Evaso” o “Forz. Evaso” (R.D.A. e Ordini fornitore).”      
-- PM: risolta anomalia su rollback fatture generate da interventi, riassegnava lo stato "controllato" a tutti gli interventi non fatturati, non solo a quelli oggetto del rollback (#TT02233/22)      
-- PM: risolta anomalia su rollback fatture generate da interventi, riassegnava lo stato "controllato" a tutti gli interventi non fatturati, non solo a quelli oggetto del rollback (#TT02233/22)      
-- PM: negli interventi, per le spese sostenute è stata aggiunta la visualizzazione in anteprima degli allegati (#TT02187/22)      
-- PM: negli interventi, compilando il campo "descrizione attività svolta" di un servizio, se si superava il max dei caratteri ammessi il campo veniva resettato. Sostituito ora con blocco inserimento senza reset del campo (#TT02186/22)      
-- ARM: Aggiunto indirizzo di invio default per le email inviate con un’azione di Workflow. Se non valorizzato, verrà utilizzato l’indirizzo email dell’operatore che effettua l’avanzamento del WF      
-- PM: variando i campi "tempo effettivo" ed "arrotondamento" nell'invoice plan di un intervento, il campo quantità non veniva ricalcolato. Risolto. (#TT02067/22)      
-- PM: inserimento nuova attività per risorsa, la data proposta in automatico considera l'orario lavorativo per la risorsa, proponendo eventuali fasce orarie mancanti per la giornata. Nel caso di inserimento di data sovrapposta con un'altra attività, viene richiesto se proseguire. Nel caso di inserimento data attività che risulta non lavorativa, viene segnalato. (#TT02104/22)      
-- PM: per alcune righe di extratime (inerenti alle ore viaggio), il campo prezzo ivato nell'invoice plan non veniva valorizzato. Risolto (#TT01592/22)      
-- PM: nel calcolo invoice plan, per determinati casi in cui il viaggio viene incluso parzialmente nei servizi c’erano anomalie di conversione del tempo effettivo. Risolto (#TT01561/22)      
-- PM: nel calcolo invoice plan, nel caso di inclusione ore viaggio nei servizi per cui si le ore viaggio vanno totalmente in extratime, rimaneva una riga a 0. Risolto (#TT01968/22)      
-- PM: migliorata generazione attività da interventi, prevedendo l’inserimento automatico dell’attività al cambio stato intervento “approvato”. Inserito nuovo campo “categoria attività” nelle spese, utilizzato nel caso di generazione attività da ore di viaggio; nelle attività generate da intervento vengono riportate solo le spese sostenute e non quelle da fatturare (#TT01516/22)      
-- PM: valorizzazione interventi, nel caso di righe servizi con e senza wip nello stesso intervento, gli accorpamenti delle righe in fattura tengono conto del wip. Per cui in fattura saranno presenti due accorpamenti separati per le righe con wip e senza, con il relativo storno corretto (#TT02047/22)      
-- PM: nel caso di cambio risorsa in un intervento, le spese sostenute e da fatturare ed il relativo invoice plan vengono ricalcolati, coerentemente con la risorsa e le configurazioni previste (#TT02319/22)      
-- FI: CashFlow: risolto bug nella fase di stampa analisi cashflow che risultava sempre in forma dettagliata (#TT02183/22)      
-- PM: nel rollback della procedura di generazione attività da intervento, inseriti nuovi filtri per la ricerca dei documenti per cui effettuare il rollback: ricerca per data/numero/cliente/risorsa dell'intervento, per data/numero/cliente/risorsa dell'attività. (#TT02313/22)      
-- FI: errore nell'utilizzo della procedura 'Commissioni contabili' nell'area Finanza:-> professionista uomo (#TT02356/22)      
-- FI: chiusura automatica conti (#TT02370/22)      
-- SCS: Bug Fixed. Corretto bug nei DDT e nei Rientri di Conto Lavoro che non permetteva di visualizzare le righe da importare in “Evasione da ordini”, nel caso in cui fosse stato cancellato rispettivamente il DDT o il Rientro stesso (#TT02366/22)      
+ 
+## Patch 605.1-0003: 07/01/2022  
 
-</details>
+> - Updated template for client script ObjectForm      
+> - FI: 394 fix declaration
 
-<details>
-<summary>Patch 605.1-0011: 09/09/2022</summary> 
+This patch release of planned orders for items with bill of materials containing fictitious items.  
 
-- Risolto il bug del parser datetime sul riferimento allo script      
-- Risolto il bug dell'aggiornamento della regione di Blockly      
-- SCS: Bug Fixed: Corretta la selezione singola e multipla nell’help dei serial number nei DDT di conto lavoro.      
-- SH : company: aumentata la dimensione per SHC_PostalCode a 10 caratteri e SHC_VATOffice a 50 caratteri (#TT02238/22)      
-- PM: valorizzazione interventi, gestito il raggruppamento righe invoice plan in fattura anche in base al flag "prezzo ivato" in fattura. (#TT02309/22)      
-- FI: chiusura automatica conti (#TT02397/22)      
-- Aumentati i tempi di '2xTap' e aggiunte correzioni per lo scheduler 'Xamarin'      
-- FI: scritture di assestamento: risolta eccezione uscente cercando di controllare calcolo assestamento' (#TT02401/22)      
-- Fi: risolta anomalia in contabilizzazione compensi con valori negativi, con flag disabilitato per l’inversione segni per valori minori di zero. (#TT02356/22)      
-- CO: revisione gestione ripresa ore progetto per convertire secondo le impostazioni della UM (#TT02157/22)      
-- FI: Dichiarazioni 300 e 3xx: modifiche per la logica RO (#TT02431/22)      
-- Corretta la creazione di DDT da Picking in alcuni casi (#TT02416/22)      
-- FI, SCM: Errore nell'assegnazione delle fatture di acquisto elettroniche alle registrazioni (#TT02350/22)      
-- FI, SCM: Collegamento xml acquisto a registrazioni contabili (#TT01403/22)      
-- SCM: Problema di arrotondamento nella registrazione del libro mastro nella contabilità delle fatture d'acquisto per RO (#TT02445/22)      
-- SD: nella fatturazione elettronica italiana, nello step 'Controllata' è stato inserito un nuovo controllo sulla presenza di cod iso e partita iva del 'cedente prestatore' delle autofatture (sia nell'anagrafica principale che nel suo eventuale indirizzo alternativo di tipo 'rappresentante fiscale') (#TT02411/22)      
-- CO: revisione filtro bolle di acquisto in Valorizzazione area acquisti/vendite (#TT02258/22)      
-- PR: risk management: aumentata la dimensione di RSUE_Descr1 a 80 caratteri (#TT02392/22)      
-- Bizlink: Export cash flow per DocFinance: Fluentis2021 (#TT02451/22)      
+## Patch 605.1-0002: 06/29/2022 
 
-</details>
+> - PR: Review for null field in expenses for operation (#TT01774/22)        
+> - Updated orphan configuration lines of BizLink         
+> - Modification to prevent an error that was generated when creating the XML file for the purchase invoice  
 
-<details>
-<summary>Patch 605.1-0012: 15/09/2022</summary>   
 
-- SD: Nella duplica fatture di vendita, ora si riporta anche la categoria agente se presente (#TT02409/22)      
-- Allineamento dell'esportazione di CashFlow alle nuove funzionalità      
-- Extradata: Extradati basati sulle fonti di dati con caso di propagazione      
-- FI: Cambiamento logica romena per 390      
-- SD: Corretto l'errore quando si cerca di aprire gli elementi della scheda su SalesDeliveryNote (#TT02485/22)      
-- SH: Datasrouces: rimozione la proprietà "AdvancedClass" non utilizzata dall'interfaccia utente      
-- CO: chiusura automatica conti: wrong calculations (#TT02397/22)      
-- FI: modifica stampa libro cespiti ammortizzabili in Fluentis2021 per gestione della visualizzazione cespiti venduti/distrutti (#TT02000/22)      
-- MPS: Fix MPS Definition: problema filtro Data (#TT02502/22)      
-- FI: ricalcolata l'IVA e le griglie del libro mastro quando viene modificato il tasso di cambio di registrazione (#TT02481/22)      
-- SCM: NIr: Correzione il time out all'apertura del modulo di modifica (#TT02512/22)      
-- CRM: risolta creazione attività da attività sospese inserite nel Workflow (#TT02480/22)      
+## Patch 605.1-0001: 06/28/2022  
 
-</details>
-
-<details>
-<summary>Patch 605.1-0013: 23/09/2022</summary>     
-
-- FI: chiusura automatica conti: wrong calculations (#TT02397/22)      
-- ARM: fix per allegati workflow      
-- ARM: New Table Validation: Il vecchio schema non deve essere nullo quando il nome della vecchia tabella non è vuoto.      
-- CO: Anomalia calcolo bilanci riclassificati (#TT02427/22)      
-
-</details>
+> - MPS: Resolved problem with the release of a production order with only one external phase in the cycle, now creates both production order and job order.         
+> - MES: Corrected release of planned orders for items with bill of materials containing fictitious items.

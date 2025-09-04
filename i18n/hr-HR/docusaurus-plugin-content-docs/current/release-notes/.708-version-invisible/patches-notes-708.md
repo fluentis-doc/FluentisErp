@@ -1,4 +1,4 @@
 ---
-title: Patch notes Versione 708
+title: Patch notes version 708 
 sidebar_position: 1
 ---
