@@ -1,1 +1,1 @@
-**Izbriši centre troška**: omogućuje brisanje odabranog retka centra troška
+**Cancella centri di costo**: permette di cancellare la riga centro di costo selezionata
