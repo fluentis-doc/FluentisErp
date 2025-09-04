@@ -1,1 +1,1 @@
-**Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente.
+**Izbriši rabate**: omogućuje brisanje odabranih rabata iz povezane tablice.
